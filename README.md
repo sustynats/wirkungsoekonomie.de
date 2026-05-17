@@ -16,7 +16,7 @@ Natalie Weber ist Begründerin der Wirkungsökonomie und Autorin des Grundlagenw
 
 ## Welche Rolle hat das Buch?
 
-„Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie“ ist das Grundlagenwerk der Wirkungsökonomie. Es soll frei als PDF verfügbar sein und unter `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` abgelegt werden.
+„Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie“ ist das Grundlagenwerk der Wirkungsökonomie. Es ist frei als PDF verfügbar und liegt unter `assets/pdf/die-neue-ordnung-des-wohlstands.pdf`.
 
 ## Nutzungshinweis
 
