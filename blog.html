@@ -1,8 +1,233 @@
 <!doctype html>
 <html lang="de">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Journal der Wirkungsökonomie</title><meta name="description" content="Analysen zu Wirkungsökonomie, Politik, Wirtschaft, Demokratie, Medien, KI, Produkten, Wohnen und Arbeit."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"></head>
-  <body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">WÖ</span><span>Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button><nav class="site-nav" id="site-nav"><a href="index.html">Start</a><a href="wirkungsoekonomie.html">Wirkungsökonomie</a><a href="buch.html">Das Buch</a><a href="modell.html">Modell</a><a href="anwendungen.html">Anwendungen</a><a class="active" href="blog.html">Blog</a><a href="akademie.html">Akademie</a><a href="mitmachen.html">Mitmachen</a></nav></header>
-    <main><section class="hero narrow-hero"><p class="eyebrow">Journal der Wirkungsökonomie</p><h1>Analysen für eine neue Ordnung des Wohlstands.</h1><p class="hero-text">Der Blog bündelt Grundsatztexte, politische Einordnungen und Anwendungen des Modells.</p></section>
-      <section class="section"><div class="category-row"><button class="pill active" type="button">Alle</button><button class="pill" type="button">Grundsatz</button><button class="pill" type="button">Politik</button><button class="pill" type="button">Wirtschaft</button><button class="pill" type="button">Demokratie</button><button class="pill" type="button">KI & Digitalisierung</button></div><div class="three-grid"><a class="blog-card" href="blog/artikel-1.html"><div class="blog-image placeholder"></div><p class="meta">Grundsatz · 8 Min. · Platzhalter</p><h3>Die alte Ordnung misst Bewegung, aber nicht Richtung</h3><p>Kurzthese für den später migrierten oder neu verfassten Beitrag.</p></a><a class="blog-card" href="blog/artikel-2.html"><div class="blog-image placeholder"></div><p class="meta">Wirtschaft · 7 Min. · Platzhalter</p><h3>Kapital als Werkzeug, nicht als Kompass</h3><p>Kurzthese für den später migrierten oder neu verfassten Beitrag.</p></a><article class="blog-card"><div class="blog-image placeholder"></div><p class="meta">Medien · 6 Min. · Platzhalter</p><h3>Öffentlichkeit braucht Wirkungsmaßstäbe</h3><p>Kurzthese für den später migrierten oder neu verfassten Beitrag.</p></article></div></section>
-    </main><footer class="site-footer"><div><p class="eyebrow">Abonnieren</p><h2>Analysen direkt erhalten.</h2><p>Newsletter und Blog-Abo werden später verbunden.</p></div><a class="button primary" href="mitmachen.html">Blog abonnieren</a><nav class="footer-nav"><a href="downloads.html">Downloads</a><a href="akademie.html">Akademie</a><a href="index.html">Start</a></nav></footer><script src="assets/js/main.js"></script></body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Wirkungsökonomie</title>
+    <meta name="description" content="Der Blog der Wirkungsökonomie bündelt Grundsatztexte, politische Einordnungen und Analysen zu Wirtschaft, Demokratie, Medien, KI, Wohnen, Arbeit und Europa.">
+    <link rel="canonical" href="https://www.wirkungsoekonomie.de/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="Blog - Wirkungsökonomie">
+    <meta property="og:description" content="Der Blog der Wirkungsökonomie bündelt Grundsatztexte, politische Einordnungen und Analysen zu Wirtschaft, Demokratie, Medien, KI, Wohnen, Arbeit und Europa.">
+    <meta property="og:url" content="https://www.wirkungsoekonomie.de/blog.html">
+    <meta property="og:image" content="https://www.wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Wirkungsökonomie">
+    <meta name="twitter:description" content="Der Blog der Wirkungsökonomie bündelt Grundsatztexte, politische Einordnungen und Analysen zu Wirtschaft, Demokratie, Medien, KI, Wohnen, Arbeit und Europa.">
+    <meta name="twitter:image" content="https://www.wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.wirkungsoekonomie.de/#website",
+            "url": "https://www.wirkungsoekonomie.de",
+            "name": "Wirkungsökonomie",
+            "inLanguage": "de",
+            "publisher": {
+              "@id": "https://www.wirkungsoekonomie.de/#organization"
+            },
+            "description": "Wirkung statt Kapital - für Mensch, Planet und Demokratie."
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://www.wirkungsoekonomie.de/#wirkungsoekonomie",
+            "name": "Wirkungsökonomie",
+            "description": "Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie zur zentralen Steuerungsgröße macht.",
+            "inDefinedTermSet": "https://www.wirkungsoekonomie.de/wirkungsoekonomie.html",
+            "termCode": "Wirkung statt Kapital"
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://www.wirkungsoekonomie.de/blog.html#blog",
+            "name": "Blog der Wirkungsökonomie",
+            "url": "https://www.wirkungsoekonomie.de/blog.html",
+            "inLanguage": "de",
+            "about": {
+              "@id": "https://www.wirkungsoekonomie.de/#wirkungsoekonomie"
+            },
+            "creator": {
+              "@id": "https://www.wirkungsoekonomie.de/#natalie-weber"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.wirkungsoekonomie.de/blog.html#webpage",
+            "url": "https://www.wirkungsoekonomie.de/blog.html",
+            "name": "Blog - Wirkungsökonomie",
+            "description": "Blogübersicht der Wirkungsökonomie.",
+            "inLanguage": "de",
+            "isPartOf": {
+              "@id": "https://www.wirkungsoekonomie.de/#website"
+            }
+          }
+        ]
+      }
+    </script>
+    <!-- Google tag (gtag.js) with Consent Mode -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBSME2T45Y"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-KBSME2T45Y', { 'send_page_view': false });
+    </script>
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+        <a href="buch.html">Das Buch</a>
+        <a href="modell.html">Modell</a>
+        <a href="anwendungen.html">Anwendungen</a>
+        <a class="active" href="blog.html">Blog</a>
+        <a href="akademie.html">Akademie</a>
+        <a href="mitmachen.html">Mitmachen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <p class="hero-kicker">Blog</p>
+            <h1 class="hero-title">Blog der Wirkungsökonomie</h1>
+            <p class="hero-subtitle">Analysen, Einordnungen und Essays aus der Perspektive der Wirkungsökonomie.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#beitraege">Beiträge ansehen</a>
+              <a class="btn btn-secondary" href="mitmachen.html">Updates erhalten</a>
+            </div>
+          </div>
+          <aside class="card">
+            <p class="card-kicker">Kommende Analysen</p>
+            <h2 class="card-title">Grundsatz, Politik, Wirtschaft und Demokratie.</h2>
+            <p class="card-text">Der Blog wird schrittweise mit fundierten Texten, Einordnungen und praktischen Anwendungen gefüllt.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="blog-erklaerung">
+        <div class="section-header">
+          <p class="hero-kicker">Einordnung</p>
+          <h2 id="blog-erklaerung">Ein Blog für Wirkung statt Lagerlogik</h2>
+          <p>Der Blog liest aktuelle Entwicklungen nicht nach Lagerlogik, sondern nach Wirkung. Er fragt, welche politischen, wirtschaftlichen und gesellschaftlichen Entscheidungen Mensch, Planet und Demokratie stärken - und welche ihre Grundlagen schwächen.</p>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="kategorien-title">
+        <div class="section-header">
+          <p class="hero-kicker">Kategorien</p>
+          <h2 id="kategorien-title">Themenfelder</h2>
+          <p>Die Kategorien dienen als redaktionelle Ordnung. Später können sie für Filter, Archivseiten oder thematische Serien genutzt werden.</p>
+        </div>
+        <div class="model-strip" aria-label="Blog Kategorien">
+          <span>Grundsatz</span>
+          <span>Politik</span>
+          <span>Wirtschaft</span>
+          <span>Demokratie</span>
+          <span>Medien</span>
+          <span>KI und Digitalisierung</span>
+          <span>Produkte und Preise</span>
+          <span>Wohnen</span>
+          <span>Arbeit und Soziales</span>
+          <span>Europa und Welt</span>
+        </div>
+      </section>
+
+      <section class="section" id="beitraege" aria-labelledby="beitraege-title">
+        <div class="section-header">
+          <p class="hero-kicker">Beiträge</p>
+          <h2 id="beitraege-title">Erste Blogbeiträge in Vorbereitung</h2>
+          <p>Die ersten Artikelseiten sind angelegt. So steht die Struktur bereits, während die finalen Analysen Schritt für Schritt entstehen.</p>
+        </div>
+        <div class="card-grid">
+          <article class="blog-card">
+            <p class="card-kicker">Grundsatz</p>
+            <h3 class="card-title">Warum Wirkung der bessere Maßstab ist</h3>
+            <p class="card-text">Kurzthese: Wachstum, Gewinn und Reichweite zeigen Aktivität. Wirkung zeigt, ob dadurch Zukunft entsteht.</p>
+            <p class="meta">17. Mai 2026 · 6 Min.</p>
+            <a class="text-link" href="blog/warum-wirkung-der-bessere-massstab-ist.html">Beitrag öffnen</a>
+          </article>
+          <article class="blog-card">
+            <p class="card-kicker">Produkte und Preise</p>
+            <h3 class="card-title">Was Preise heute verschweigen</h3>
+            <p class="card-text">Kurzthese: Preise zeigen Kosten und Nachfrage, aber oft nicht ökologische, soziale und demokratische Folgewirkungen.</p>
+            <p class="meta">17. Mai 2026 · 7 Min.</p>
+            <a class="text-link" href="blog/was-preise-heute-verschweigen.html">Beitrag öffnen</a>
+          </article>
+          <article class="blog-card">
+            <p class="card-kicker">Demokratie</p>
+            <h3 class="card-title">Demokratie als Wirkungsraum</h3>
+            <p class="card-text">Kurzthese: Demokratie ist nicht nur Rahmenbedingung. Sie wird selbst durch Medien, Plattformen, Sprache und Vertrauen stabilisiert oder geschwächt.</p>
+            <p class="meta">17. Mai 2026 · 8 Min.</p>
+            <a class="text-link" href="blog/demokratie-als-wirkungsraum.html">Beitrag öffnen</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <div class="section-header">
+            <p class="hero-kicker">Ausblick</p>
+            <h2>Kommende Analysen</h2>
+            <p>Der Blog wird nach und nach mit Grundsatztexten, politischen Einordnungen, Praxisanalysen und kurzen Kommentaren gefüllt. Neue Beiträge können statisch angelegt und über Codex in die Übersicht eingepflegt werden.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mitmachen.html">Updates erhalten</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Ein neues Gesellschafts- und Wirtschaftsmodell, das den Kompass von Kapital zu Wirkung verschiebt.</p>
+        </div>
+        <a class="btn btn-primary" href="buch.html">Buch lesen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+          <a href="buch.html">Das Buch</a>
+          <a href="modell.html">Modell</a>
+          <a href="anwendungen.html">Anwendungen</a>
+          <a href="blog.html">Blog</a>
+          <a href="akademie.html">Akademie</a>
+          <a href="mitmachen.html">Mitmachen</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="ueber.html">Über die Wirkungsökonomie</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

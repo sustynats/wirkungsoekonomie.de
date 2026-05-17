@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Styleguide - Wirkungsökonomie</title>
+    <meta name="description" content="Technischer Styleguide für die Website der Wirkungsökonomie.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google tag (gtag.js) with Consent Mode -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBSME2T45Y"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-KBSME2T45Y', { 'send_page_view': false });
+    </script>
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="assets/img/brand/signet.svg" alt="" aria-hidden="true"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+        <a href="buch.html">Das Buch</a>
+        <a href="modell.html">Modell</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <p class="hero-kicker">Styleguide</p>
+            <h1 class="hero-title">Ruhig, systemisch, hochwertig.</h1>
+            <p class="hero-subtitle">Diese Testseite zeigt Farben, Typografie, Buttons, Karten und Grundkomponenten des Designsystems.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#buttons">Primärer CTA</a>
+              <a class="btn btn-secondary" href="#cards">Sekundärer CTA</a>
+            </div>
+          </div>
+          <div class="card">
+            <p class="card-kicker">Hero-Komponente</p>
+            <h3 class="card-title">Digitale Grundlage statt Bilder-Sammlung</h3>
+            <p class="card-text">Der visuelle Rahmen hält Diagramme, Buch, Blog und Lernpfad zusammen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="logo">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Logo-System</p>
+            <h2>Drei Kreise, ein Wirkungszentrum.</h2>
+            <p>Das Signet verbindet Mensch, Planet und Demokratie in einer ruhigen, geometrischen Ordnung.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <p class="card-kicker">Hauptlogo</p>
+              <img src="assets/img/brand/logo-full.svg" alt="Hauptlogo der Wirkungsökonomie">
+            </article>
+            <article class="card">
+              <p class="card-kicker">Header-Logo</p>
+              <img src="assets/img/brand/logo-header.svg" alt="Header-Logo der Wirkungsökonomie">
+            </article>
+            <article class="card">
+              <p class="card-kicker">Signet</p>
+              <img src="assets/img/brand/signet.svg" alt="Signet der Wirkungsökonomie">
+            </article>
+            <article class="card">
+              <p class="card-kicker">Favicon</p>
+              <img src="assets/img/brand/favicon.svg" alt="Favicon der Wirkungsökonomie">
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="header-example">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Header-Beispiel</p>
+            <h2>Ruhige Navigation mit Signet und Wortmarke.</h2>
+          </div>
+          <div class="card">
+            <a class="brand" href="index.html" aria-label="Wirkungsökonomie Startseite">
+              <span class="brand-mark"><img src="assets/img/brand/signet.svg" alt="" aria-hidden="true"></span>
+              <span class="brand-name">Wirkungsökonomie</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="colors">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Farben</p>
+            <h2>Eine ruhige Systempalette.</h2>
+            <p>Die Farbwelt ist reduziert, kontrastreich und nicht auf eine einzelne Akzentfarbe verengt.</p>
+          </div>
+          <div class="styleguide-swatch-grid">
+            <div class="styleguide-swatch dark" style="background: var(--navy)">--navy<br>#0B1020</div>
+            <div class="styleguide-swatch" style="background: var(--ivory)">--ivory<br>#F6F1E8</div>
+            <div class="styleguide-swatch dark" style="background: var(--green)">--green<br>#2F7D5C</div>
+            <div class="styleguide-swatch" style="background: var(--gold)">--gold<br>#C89B3C</div>
+            <div class="styleguide-swatch dark" style="background: var(--coral)">--coral<br>#C85A4A</div>
+            <div class="styleguide-swatch dark" style="background: var(--text)">--text<br>#222222</div>
+            <div class="styleguide-swatch" style="background: var(--line)">--line<br>#E8E4DC</div>
+            <div class="styleguide-swatch" style="background: var(--white)">--white<br>#FFFFFF</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Typografie</p>
+            <h2>Headlines tragen den Anspruch, Body bleibt präzise lesbar.</h2>
+            <p>Source Serif 4 und Inter werden bevorzugt geladen. Ohne externe Fonts greifen robuste System-Fallbacks.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <p class="card-kicker">Headline</p>
+              <h3 class="card-title">Die neue Ordnung des Wohlstands</h3>
+              <p class="card-text">Serif, stark, ruhig, mit enger inhaltlicher Führung.</p>
+            </article>
+            <article class="card">
+              <p class="card-kicker">Body</p>
+              <p class="card-text">Fließtext bleibt sachlich, großzügig geführt und scanbar. Zeilenhöhe und Kontrast sind auf längere Erklärtexte ausgelegt.</p>
+            </article>
+            <article class="card">
+              <p class="card-kicker">Kicker</p>
+              <h3 class="card-title">Kleine Signale statt lauter Labels</h3>
+              <p class="card-text">Kicker strukturieren Bereiche, ohne die Seite magazinig zu überhitzen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="buttons">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Buttons</p>
+            <h2>Klare Handlungen.</h2>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#">Buch herunterladen</a>
+            <a class="btn btn-secondary" href="#">Mehr erfahren</a>
+            <a class="btn btn-secondary btn-small" href="#">Kleiner Button</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cards">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Karten</p>
+            <h2>Modulare Oberflächen.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <p class="card-kicker">Prinzip</p>
+              <h3 class="card-title">Wirkung vor Kapital</h3>
+              <p class="card-text">Kapital bleibt Werkzeug. Wirkung wird der Kompass.</p>
+            </article>
+            <article class="blog-card">
+              <div class="blog-image"></div>
+              <p class="meta">Blog · 8 Min.</p>
+              <h3 class="card-title">Warum Wirkung kein Berichtswort ist</h3>
+              <p class="card-text">Blogkarten tragen Titel, These, Kategorie und Bildsystem.</p>
+            </article>
+            <article class="download-card compact">
+              <p class="card-kicker">Download</p>
+              <h3 class="card-title">Grundlagenpapier</h3>
+              <p class="card-text">Dokumentkarten enthalten Titel, Kurzbeschreibung, Stand und klare Aktion.</p>
+              <p><a class="btn btn-secondary btn-small" href="#">Download</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div>
+          <div class="quote-block">
+            <blockquote>„Wir haben gelernt, alles zu messen - außer dem, was Zukunft schafft.“</blockquote>
+            <cite>Beispiel für einen Zitatblock</cite>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Modellstrip</p>
+            <h2>Begriffe als navigierbare Bausteine.</h2>
+          </div>
+          <div class="model-strip">
+            <span>Wirkungsrad</span>
+            <span>WÖk-ID</span>
+            <span>Scorecards</span>
+            <span>T-SROI</span>
+            <span>Wirkungssteuer</span>
+            <span>Wirkungsrat</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Footer</p>
+          <h2>Ein ruhiger Abschluss mit klarer nächster Handlung.</h2>
+          <p>Footer-Grid, Navigation und CTA bleiben systematisch wiederverwendbar.</p>
+        </div>
+        <a class="btn btn-primary" href="index.html">Zur Startseite</a>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="downloads.html">Downloads</a>
+          <a href="ueber.html">Über Natalie Weber</a>
+          <a href="mitmachen.html">Mitmachen</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
