@@ -333,6 +333,13 @@ h4 {
   background: var(--white);
 }
 
+.btn[aria-disabled="true"],
+.button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
 .btn-small,
 .button.small {
   min-height: 2.45rem;
@@ -576,6 +583,28 @@ h4 {
   font-weight: 800;
 }
 
+.model-graphic {
+  margin: 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.model-graphic svg {
+  width: 100%;
+  min-width: 720px;
+  height: auto;
+}
+
+.model-graphic text {
+  fill: var(--navy);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 800;
+}
+
 .footer,
 .site-footer {
   padding: clamp(3rem, 7vw, 5rem) var(--space-gutter);
@@ -625,40 +654,6 @@ h4 {
   font-size: 0.92rem;
   font-weight: 700;
   text-decoration: none;
-}
-
-.cookie-banner {
-  position: fixed;
-  right: var(--space-gutter);
-  bottom: var(--space-gutter);
-  left: var(--space-gutter);
-  z-index: 80;
-  display: grid;
-  gap: 1rem;
-  max-width: 680px;
-  margin-inline: auto;
-  padding: 1rem;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-card);
-}
-
-.cookie-banner p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.cookie-banner-title {
-  color: var(--navy) !important;
-  font-weight: 850;
-}
-
-.cookie-banner-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
 }
 
 .placeholder,
