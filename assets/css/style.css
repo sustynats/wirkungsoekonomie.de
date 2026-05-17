@@ -246,7 +246,6 @@ h4 {
 
 .hero-title {
   max-width: 960px;
-  hyphens: auto;
 }
 
 .hero-copy {
@@ -455,6 +454,14 @@ h4 {
 .download-card p,
 .book-card p {
   margin-top: 0.85rem;
+  color: var(--muted);
+}
+
+.clean-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.85rem 0 0;
+  padding-left: 1.1rem;
   color: var(--muted);
 }
 
