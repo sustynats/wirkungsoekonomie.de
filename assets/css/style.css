@@ -25,12 +25,14 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--ivory);
   color: var(--text);
   font-family: var(--font-body);
@@ -69,11 +71,11 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(3rem, 10vw, 6.75rem);
+  font-size: clamp(2.45rem, 5.2vw, 4.6rem);
 }
 
 h2 {
-  font-size: clamp(2.15rem, 6vw, 4.75rem);
+  font-size: clamp(1.9rem, 4.2vw, 3.45rem);
 }
 
 h3 {
@@ -243,7 +245,8 @@ h4 {
 }
 
 .hero-title {
-  max-width: 980px;
+  max-width: 960px;
+  hyphens: auto;
 }
 
 .hero-copy {
@@ -950,7 +953,7 @@ h4 {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1320px) {
   .site-nav {
     position: static;
     display: flex;
@@ -994,7 +997,9 @@ h4 {
   .nav-toggle {
     display: none;
   }
+}
 
+@media (min-width: 900px) {
   .hero-grid,
   .split-section,
   .two-grid,
