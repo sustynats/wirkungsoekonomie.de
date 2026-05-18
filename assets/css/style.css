@@ -429,6 +429,11 @@ h4 {
   transform: translateY(-2px);
 }
 
+.term-anchor {
+  color: inherit;
+  text-decoration: none;
+}
+
 .card-kicker,
 .meta {
   display: block;
@@ -506,6 +511,10 @@ h4 {
 
 .download-card.compact {
   display: block;
+}
+
+.download-card + .download-card {
+  margin-top: 1rem;
 }
 
 .blog-card {
@@ -587,6 +596,56 @@ h4 {
 
 .accordion-item[open] summary::after {
   content: "-";
+}
+
+.term-list,
+.abbr-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.term-list div,
+.abbr-list div {
+  display: grid;
+  gap: 0.65rem;
+  padding: clamp(1rem, 3vw, 1.4rem) 0;
+  border-top: 1px solid var(--line);
+}
+
+.term-list div:last-child,
+.abbr-list div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.term-list dt,
+.abbr-list dt {
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.abbr-list dt {
+  color: var(--green);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  letter-spacing: 0.02em;
+}
+
+.term-list dd,
+.abbr-list dd {
+  max-width: 900px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.term-list.compact dt {
+  font-size: clamp(1.08rem, 1.8vw, 1.35rem);
+}
+
+.term-list.compact dd {
+  line-height: 1.68;
 }
 
 .accordion-item p {
