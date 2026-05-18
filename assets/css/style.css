@@ -1139,6 +1139,45 @@ h4 {
   margin-top: 2rem;
 }
 
+.experience-path-grid,
+.everyday-grid,
+.quiz-lab-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.experience-path-card {
+  display: grid;
+  gap: 0.55rem;
+  min-height: 11rem;
+  align-content: start;
+  padding: clamp(1rem, 2.4vw, 1.35rem);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--navy);
+  text-decoration: none;
+  box-shadow: var(--shadow-card);
+}
+
+.experience-path-card span {
+  color: var(--green);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.experience-path-card strong {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.08;
+}
+
+.experience-path-card em {
+  color: var(--muted);
+  font-style: normal;
+}
+
 .simulator-shell {
   display: grid;
   gap: 1rem;
@@ -1523,6 +1562,125 @@ h4 {
   resize: vertical;
 }
 
+.media-lab-grid,
+.platform-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.media-lab-grid textarea {
+  min-height: 11rem;
+}
+
+.media-score-output {
+  display: grid;
+  gap: 1rem;
+}
+
+.media-dimensions,
+.media-scorecard-demo {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.media-dimension,
+.scorecard-field-row {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.9rem;
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.media-dimension-head,
+.scorecard-field-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.scorecard-field-body {
+  display: grid;
+  gap: 0.65rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.scorecard-field-body b {
+  color: var(--navy);
+}
+
+.scorecard-explainer,
+.scorecard-data-box {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+  padding: clamp(1rem, 2.5vw, 1.35rem);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.scorecard-data-box ul {
+  display: grid;
+  gap: 0.4rem;
+  padding-left: 1.15rem;
+  color: var(--muted);
+}
+
+.traffic-good {
+  color: var(--green);
+}
+
+.traffic-mid {
+  color: var(--gold);
+}
+
+.traffic-bad {
+  color: var(--coral);
+}
+
+.everyday-card {
+  display: grid;
+  gap: 0.55rem;
+  align-content: start;
+  min-height: 9rem;
+  padding: 1rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--navy);
+  cursor: pointer;
+  text-align: left;
+  box-shadow: var(--shadow-card);
+}
+
+.everyday-card.active {
+  border-color: rgba(47, 125, 92, 0.5);
+  background: rgba(47, 125, 92, 0.08);
+}
+
+.transfer-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.transfer-item {
+  padding: 0.85rem;
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.transfer-item strong {
+  color: var(--navy);
+}
+
 .calculator-output {
   display: grid;
   gap: 0.65rem;
@@ -1652,6 +1810,18 @@ h4 {
   height: 100%;
   background: var(--green);
   border-radius: inherit;
+}
+
+.mini-fill.tone-good {
+  background: var(--green);
+}
+
+.mini-fill.tone-mid {
+  background: var(--gold);
+}
+
+.mini-fill.tone-bad {
+  background: var(--coral);
 }
 
 .quiz-option,
@@ -2740,8 +2910,17 @@ h4 {
 
   .card-grid,
   .three-grid,
-  .tool-lab {
+  .tool-lab,
+  .experience-path-grid,
+  .everyday-grid,
+  .quiz-lab-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .media-lab-grid,
+  .platform-grid {
+    grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
+    align-items: start;
   }
 
   .inline-heading {

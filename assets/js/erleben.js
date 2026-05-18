@@ -769,6 +769,140 @@ const quizQuestions = [
   }
 ];
 
+const mediaExamples = {
+  constructive: {
+    title: "Sachlicher Medienbericht zur Wärmewende",
+    text: "Die kommunale Wärmewende bleibt umstritten. Der Bericht zeigt Kosten, Förderoptionen, Netzausbau und soziale Härten. Er zitiert Stadtwerk, Mieterverein und Energieberatung und erklärt, welche Annahmen noch unsicher sind.",
+    scores: {
+      "Wahrheit und Quellenklarheit": 2.2,
+      "Kontext und Einordnung": 2,
+      Emotionalisierung: 1.4,
+      Polarisierungspotenzial: 1.6,
+      Feindbildproduktion: 2.4,
+      Demokratiewirkung: 1.8,
+      Minderheitenschutz: 1.5,
+      Diskursqualität: 2.1,
+      "Transparenz von Meinung und Information": 2,
+      "Manipulations- oder Desinformationsrisiko": 1.9
+    },
+    explanation: "Der Beitrag trennt Information und Bewertung, nennt Unsicherheiten und macht mehrere Perspektiven sichtbar. Das stärkt Orientierung, ohne Konflikte zu glätten."
+  },
+  polarizing: {
+    title: "Polarisierende Schlagzeile zu Migration",
+    text: "Schon wieder versagt die Politik: Diese Gruppen zerstören unser Land. Was verschwiegen wird, zeigt die ganze Wahrheit. Teilen, bevor es gelöscht wird.",
+    scores: {
+      "Wahrheit und Quellenklarheit": -1.8,
+      "Kontext und Einordnung": -2.1,
+      Emotionalisierung: -2.6,
+      Polarisierungspotenzial: -2.7,
+      Feindbildproduktion: -2.5,
+      Demokratiewirkung: -2.2,
+      Minderheitenschutz: -2.4,
+      Diskursqualität: -2.5,
+      "Transparenz von Meinung und Information": -1.9,
+      "Manipulations- oder Desinformationsrisiko": -2.3
+    },
+    explanation: "Die Wirkung entsteht nicht dadurch, dass Meinung existiert, sondern durch Pauschalisierung, Feindbildlogik, Löschungsnarrativ und fehlende Quellenklarheit."
+  },
+  creator: {
+    title: "Konstruktiver Creator-Beitrag",
+    text: "Ich zeige heute drei Wege, wie Haushalte Energie sparen können, ohne jemanden zu beschämen. Die Zahlen stammen aus Verbraucherberatung und Stadtwerk. Schreibt eure Erfahrungen, ich ergänze Korrekturen.",
+    scores: {
+      "Wahrheit und Quellenklarheit": 1.7,
+      "Kontext und Einordnung": 1.4,
+      Emotionalisierung: 0.9,
+      Polarisierungspotenzial: 1.2,
+      Feindbildproduktion: 2.1,
+      Demokratiewirkung: 1.5,
+      Minderheitenschutz: 1.4,
+      Diskursqualität: 1.8,
+      "Transparenz von Meinung und Information": 1.6,
+      "Manipulations- oder Desinformationsrisiko": 1.5
+    },
+    explanation: "Der Beitrag erzeugt Handlungsfähigkeit und lädt zu Korrektur ein. Reichweite wird nicht über Gegnerlogik, sondern über Nützlichkeit gesucht."
+  }
+};
+
+const mediaSources = [
+  "sichtbarer Text",
+  "Quellenangaben",
+  "Pressekodex",
+  "Faktencheck-Datenbanken",
+  "Plattformdaten",
+  "Sentiment-Analyse",
+  "Hate-Speech-Muster",
+  "Netzwerkindikatoren"
+];
+
+const platformScenarios = {
+  factual: {
+    title: "Sachlicher Beitrag mit niedriger Erregung",
+    base: 1.6,
+    note: "Positive Orientierung entsteht, aber Plattformlogiken verstärken sie oft schwächer als Konflikt."
+  },
+  outrage: {
+    title: "Empörungsbeitrag mit Feindbild",
+    base: -1.4,
+    note: "Der Inhalt ist formal Meinung, kann aber durch algorithmische Verstärkung Vertrauen und Diskursqualität beschädigen."
+  },
+  correction: {
+    title: "Korrektur und Faktencheck",
+    base: 1.2,
+    note: "Korrekturen stabilisieren Wahrheit, erreichen aber häufig weniger Netzwerke als der ursprüngliche Erregungsimpuls."
+  }
+};
+
+const everydayExamples = [
+  ["Apfel regional vs. Import", "Regional kann Transportwirkung senken, Import kann saisonal sinnvoll sein. Entscheidend sind Lagerung, Anbau, Wasser, Arbeit und Verluste.", "Preis würde Herkunft, Saison und Lagerenergie abbilden."],
+  ["T-Shirt Fast Fashion vs. Fair Fashion", "Fast Fashion ist billig im Regal, aber teuer in Wasser, Arbeit, Chemie, Klima und Abfall.", "Steuern und Kapital würden langlebige, faire Lieferketten bevorzugen."],
+  ["Haferdrink vs. Kuhmilch", "Nicht Identität entscheidet, sondern Fläche, Methan, Wasser, Tierwohl, Nährwert und regionale Struktur.", "Preise würden Umwelt- und Gesundheitsfolgen sichtbarer machen."],
+  ["Kohle- vs. Solarstrom", "Kohle liefert planbare Leistung, aber hohe Klima- und Gesundheitskosten. Solar senkt Folgekosten, braucht Netze und Speicher.", "Kapital würde stärker in Systemresilienz statt Brennstoffabhängigkeit fließen."],
+  ["Günstige Mietwohnung vs. Leerstand", "Günstige Miete stabilisiert Teilhabe. Spekulativer Leerstand entzieht Wohnraum und erzeugt soziale Folgekosten.", "Wirkungssteuer würde Leerstand unattraktiver machen."],
+  ["Pflegearbeit vs. Finanzspekulation", "Pflege stabilisiert Leben, Angehörige und Arbeitsfähigkeit. Spekulation kann Kapital bewegen, ohne reale Wirkung zu erzeugen.", "Einkommen und Anerkennung würden stärker an systemischer Wirkung hängen."],
+  ["Sachlicher vs. polarisierender Medienbericht", "Sachlichkeit stärkt Orientierung. Polarisierung kann Reichweite erzeugen und Vertrauen beschädigen.", "Reichweitenlogiken würden Diskursqualität berücksichtigen."],
+  ["Konstruktiver Creator vs. destruktiver Host", "Creator:innen können Handlungsfähigkeit erzeugen oder Ressentiment monetarisieren.", "Plattformen würden nicht nur Watchtime, sondern Wirkungsrisiken messen."]
+];
+
+const mediaScorecardFields = [
+  ["Faktenbasis", 1.8, "Quellen, Belege, Korrekturen", "Orientierung", "Vertrauen", "Resilienz"],
+  ["Quellenqualität", 1.5, "Primärquellen, Transparenz", "Nachvollziehbarkeit", "Fehlerkorrektur", "Institutionelles Vertrauen"],
+  ["Kontext", 1.2, "Einordnung, Vergleichsdaten", "Verstehen", "Weniger Schein-Konflikt", "Bessere Entscheidungen"],
+  ["Sprache und Framing", -0.4, "Textanalyse, Framingmuster", "Emotion", "Normverschiebung", "Diskursklima"],
+  ["Emotionalisierung", -0.7, "Sentiment, Triggerwörter", "Aufmerksamkeit", "Erregungsspiralen", "Polarisierung"],
+  ["Polarisierung", -0.9, "Kommentar- und Teilungsmuster", "Konflikt", "Gruppenbindung", "Demokratische Ermüdung"],
+  ["Diskursqualität", 0.8, "Antwortfähigkeit, Fairness", "Gespräch", "Lernfähigkeit", "Öffentliche Vernunft"],
+  ["Demokratische Resilienz", 0.6, "Institutionenbezug", "Vertrauen", "Regelakzeptanz", "Stabilität"],
+  ["Vulnerable Gruppen", 0.4, "Minderheitenschutz", "Schutz", "Teilhabe", "Würde"],
+  ["Korrekturfähigkeit", 1.4, "Updates, Fehlerhinweise", "Transparenz", "Lernsignal", "Vertrauensaufbau"]
+];
+
+const quizModules = {
+  impact: {
+    question: "Welche Entscheidung erzeugt wahrscheinlich positive Systemwirkung?",
+    options: ["Kosten senken durch unbezahlte Risiken", "Folgekosten vermeiden und transparent machen", "Reichweite maximieren"],
+    answer: 1,
+    feedback: "Richtig: Wirkung fragt nach realen Zustandsveränderungen und vermiedenen Folgekosten."
+  },
+  product: {
+    question: "Welches Produkt schneidet wirkungsökonomisch besser ab?",
+    options: ["Das billigste Produkt", "Das Produkt mit bester Funktion plus geringeren Folgekosten", "Das Produkt mit größter Marke"],
+    answer: 1,
+    feedback: "Genau. Preis bleibt relevant, aber nicht ohne Klima, Arbeit, Gesundheit und Kreislauf."
+  },
+  media: {
+    question: "Welche Überschrift polarisiert stärker?",
+    options: ["Stadt erklärt Kosten und Förderung der Wärmewende", "Sie verschweigen euch die Wahrheit über diese Gruppen"],
+    answer: 1,
+    feedback: "Ja. Pauschalisierung, Feindbild und Verschwörungsrahmen erhöhen Polarisierungswirkung."
+  },
+  capital: {
+    question: "Was ist der Unterschied zwischen Kapital und Wirkung?",
+    options: ["Kapital ist Mittel, Wirkung ist Zustandsveränderung", "Kapital ist immer Wirkung", "Wirkung ist nur Reichweite"],
+    answer: 0,
+    feedback: "Richtig. Kapital kann Wirkung ermöglichen, ersetzt aber nicht die Bewertung realer Folgen."
+  }
+};
+
 let quizIndex = 0;
 let gameState = { round: 1, budget: 100, damage: 68, prevention: 18, trust: 50 };
 
@@ -1031,8 +1165,224 @@ function initQuiz() {
   render();
 }
 
+function average(values) {
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
+}
+
+function clampScore(score) {
+  return clamp(score, -3, 3);
+}
+
+function renderMediaScore(root, title, text, scores, explanation) {
+  const score = clampScore(average(Object.values(scores)));
+  const sorted = Object.entries(scores).sort((a, b) => a[1] - b[1]);
+  const harms = sorted.filter(([, value]) => value < 0).slice(0, 2).map(([label]) => label);
+  const benefits = sorted.filter(([, value]) => value > 0.8).slice(-2).map(([label]) => label);
+  const traffic = score >= 1 ? "grün" : score >= -0.5 ? "gelb" : "rot";
+  const trafficClass = score >= 1 ? "traffic-good" : score >= -0.5 ? "traffic-mid" : "traffic-bad";
+
+  root.querySelector("[data-media-title]").textContent = title;
+  const scoreEl = root.querySelector("[data-media-score]");
+  scoreEl.textContent = formatScore(score);
+  scoreEl.className = `score-pill ${toneFromScore(score)}`;
+  const trafficEl = root.querySelector("[data-media-traffic]");
+  trafficEl.textContent = traffic;
+  trafficEl.className = trafficClass;
+  root.querySelector("[data-media-harm]").textContent = harms.join(", ") || "keine dominante";
+  root.querySelector("[data-media-benefit]").textContent = benefits.join(", ") || "gering";
+  root.querySelector("[data-media-explanation]").textContent = explanation;
+  root.querySelector("[data-media-dimensions]").innerHTML = Object.entries(scores).map(([label, value]) => `
+    <div class="media-dimension">
+      <div class="media-dimension-head"><span>${label}</span><span>${formatScore(value)}</span></div>
+      <div class="mini-track"><div class="mini-fill ${toneFromScore(value)}" style="width:${((value + 3) / 6) * 100}%"></div></div>
+    </div>
+  `).join("");
+}
+
+function scoreCustomMediaText(text) {
+  const lowerText = text.toLowerCase();
+  const polarWords = ["verrat", "lüge", "feind", "zerstören", "alle", "immer", "nie", "verschwiegen", "gelöscht", "wahrheit"];
+  const sourceWords = ["quelle", "daten", "bericht", "studie", "laut", "pressekodex", "faktencheck", "unsicher"];
+  const constructiveWords = ["einordnung", "kontext", "korrigieren", "gemeinsam", "transparent", "abwägen", "lösung", "förderung"];
+  const polarHits = polarWords.filter((word) => lowerText.includes(word)).length;
+  const sourceHits = sourceWords.filter((word) => lowerText.includes(word)).length;
+  const constructiveHits = constructiveWords.filter((word) => lowerText.includes(word)).length;
+  const sourceScore = clampScore(-0.8 + sourceHits * 0.75 + (text.length > 180 ? 0.4 : 0));
+  const polarScore = clampScore(1.3 + constructiveHits * 0.25 - polarHits * 0.75);
+  return {
+    "Wahrheit und Quellenklarheit": sourceScore,
+    "Kontext und Einordnung": clampScore(-0.3 + constructiveHits * 0.55 + sourceHits * 0.25 - polarHits * 0.2),
+    Emotionalisierung: clampScore(1.1 - polarHits * 0.65),
+    Polarisierungspotenzial: polarScore,
+    Feindbildproduktion: clampScore(1.4 - polarHits * 0.8),
+    Demokratiewirkung: clampScore(0.4 + constructiveHits * 0.35 - polarHits * 0.45),
+    Minderheitenschutz: clampScore(0.5 - polarHits * 0.35),
+    Diskursqualität: clampScore(0.2 + constructiveHits * 0.45 + sourceHits * 0.15 - polarHits * 0.45),
+    "Transparenz von Meinung und Information": sourceScore,
+    "Manipulations- oder Desinformationsrisiko": clampScore(0.8 + sourceHits * 0.25 - polarHits * 0.65)
+  };
+}
+
+function initMediaLab() {
+  const root = document.querySelector("[data-media-lab]");
+  if (!root) return;
+  const select = root.querySelector("[data-media-example]");
+  const input = root.querySelector("[data-media-input]");
+  const output = root.querySelector(".media-score-output");
+  const modeButtons = Array.from(root.querySelectorAll("[data-media-mode]"));
+  let mode = "example";
+  select.innerHTML = Object.entries(mediaExamples).map(([key, item]) => `<option value="${key}">${item.title}</option>`).join("");
+
+  function render() {
+    modeButtons.forEach((button) => button.classList.toggle("active", button.dataset.mediaMode === mode));
+    if (mode === "example") {
+      const item = mediaExamples[select.value];
+      input.value = item.text;
+      renderMediaScore(output, item.title, item.text, item.scores, item.explanation);
+      return;
+    }
+    const text = input.value.trim();
+    const scores = scoreCustomMediaText(text);
+    renderMediaScore(output, "Eigener Text", text, scores, "Diese Bewertung nutzt einfache Textsignale: Quellenklarheit, Kontextwörter, Feindbild- und Erregungsmuster. Für reale Anwendungen müssten Datenquellen und Gewichtungen offengelegt werden.");
+  }
+
+  select.addEventListener("change", () => {
+    mode = "example";
+    render();
+  });
+  input.addEventListener("input", () => {
+    mode = "custom";
+    render();
+  });
+  modeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      mode = button.dataset.mediaMode;
+      render();
+    });
+  });
+  render();
+}
+
+function initPlatformLab() {
+  const root = document.querySelector("[data-platform-lab]");
+  if (!root) return;
+  const select = root.querySelector("[data-platform-scenario]");
+  const inputs = Array.from(root.querySelectorAll("[data-platform-input]"));
+  select.innerHTML = Object.entries(platformScenarios).map(([key, item]) => `<option value="${key}">${item.title}</option>`).join("");
+
+  function render() {
+    const scenario = platformScenarios[select.value];
+    const values = Object.fromEntries(inputs.map((input) => [input.name, Number(input.value)]));
+    const amplifier = 1 + (values.emotion * 0.012 + values.outrage * 0.014 + values.identity * 0.01 + values.comments * 0.009 + values.network * 0.012);
+    const reach = Math.round(1000 * amplifier * (scenario.base < 0 ? 1.35 : 0.8));
+    const polarization = clamp(Math.round(values.outrage * 0.35 + values.identity * 0.35 + values.emotion * 0.2), 0, 100);
+    const trust = clamp(Math.round(72 + scenario.base * 12 - polarization * 0.38), 0, 100);
+    const democracy = clampScore(scenario.base - (amplifier - 1) * (scenario.base < 0 ? 0.75 : 0.15));
+
+    root.querySelector("[data-platform-title]").textContent = scenario.title;
+    root.querySelector("[data-platform-base]").textContent = formatScore(scenario.base);
+    root.querySelector("[data-platform-factor]").textContent = `${amplifier.toLocaleString("de-DE", { maximumFractionDigits: 1 })}x`;
+    root.querySelector("[data-platform-reach]").textContent = reach.toLocaleString("de-DE");
+    root.querySelector("[data-platform-democracy]").textContent = formatScore(democracy);
+    root.querySelector("[data-platform-note]").textContent = scenario.note;
+    root.querySelector("[data-platform-bars]").innerHTML = [
+      ["Polarisierungswirkung", polarization],
+      ["Vertrauenswirkung", trust],
+      ["Kommentaraktivität", values.comments],
+      ["Netzwerkverstärkung", values.network]
+    ].map(([label, value]) => `
+      <div class="radar-axis">
+        <span><b>${label}</b><b>${value}</b></span>
+        <div class="mini-track"><div class="mini-fill" style="width:${value}%"></div></div>
+      </div>
+    `).join("");
+  }
+
+  select.addEventListener("change", render);
+  inputs.forEach((input) => input.addEventListener("input", render));
+  render();
+}
+
+function initEverydayLab() {
+  const root = document.querySelector("[data-everyday-lab]");
+  if (!root) return;
+  const grid = root.querySelector("[data-everyday-grid]");
+  const output = root.querySelector("[data-everyday-output]");
+  let active = 0;
+
+  function render() {
+    grid.innerHTML = everydayExamples.map(([title, text], index) => `
+      <button class="everyday-card${index === active ? " active" : ""}" type="button" data-everyday-index="${index}">
+        <span class="hero-kicker">Beispiel ${index + 1}</span>
+        <strong>${title}</strong>
+        <em>${text}</em>
+      </button>
+    `).join("");
+    const [title, text, transfer] = everydayExamples[active];
+    output.innerHTML = `
+      <p class="hero-kicker">Warum bewertet die Wirkungsökonomie so?</p>
+      <h3>${title}</h3>
+      <p>${text}</p>
+      <div class="transfer-grid">
+        <div class="transfer-item"><strong>Preis:</strong> ${transfer}</div>
+        <div class="transfer-item"><strong>Steuer:</strong> Negative Folgekosten würden nicht mehr unsichtbar bleiben.</div>
+        <div class="transfer-item"><strong>Kapital:</strong> Investitionen würden stärker in tragfähige Wirkung statt bloße Rendite fließen.</div>
+      </div>
+    `;
+  }
+
+  root.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-everyday-index]");
+    if (!button) return;
+    active = Number(button.dataset.everydayIndex);
+    render();
+  });
+  render();
+}
+
+function initMediaScorecardDemo() {
+  const root = document.querySelector("[data-media-scorecard]");
+  if (!root) return;
+  root.innerHTML = mediaScorecardFields.map(([field, score, source, first, second, third]) => `
+    <article class="scorecard-field-row">
+      <div class="scorecard-field-head"><span>${field}</span><span>${formatScore(score)}</span></div>
+      <div class="mini-track"><div class="mini-fill ${toneFromScore(score)}" style="width:${((score + 3) / 6) * 100}%"></div></div>
+      <div class="scorecard-field-body">
+        <span><b>Datenquelle:</b> ${source}</span>
+        <span><b>Wirkung erster Ordnung:</b> ${first}</span>
+        <span><b>Wirkung zweiter Ordnung:</b> ${second}</span>
+        <span><b>Wirkung dritter Ordnung:</b> ${third}</span>
+      </div>
+    </article>
+  `).join("");
+}
+
+function initQuizModules() {
+  document.querySelectorAll("[data-quiz-module]").forEach((root) => {
+    const data = quizModules[root.dataset.quizModule];
+    const options = root.querySelector("[data-module-options]");
+    const feedback = root.querySelector("[data-module-feedback]");
+    options.innerHTML = data.options.map((option, index) => `<button class="quiz-option" type="button" data-module-answer="${index}">${option}</button>`).join("");
+    root.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-module-answer]");
+      if (!button) return;
+      const selected = Number(button.dataset.moduleAnswer);
+      Array.from(options.children).forEach((child, index) => {
+        child.classList.toggle("correct", index === data.answer);
+        child.classList.toggle("wrong", index === selected && selected !== data.answer);
+      });
+      feedback.textContent = data.feedback;
+    });
+  });
+}
+
 initSimulator();
 initCompass();
+initMediaLab();
+initPlatformLab();
+initEverydayLab();
+initMediaScorecardDemo();
+initQuizModules();
 initKpiCalculator();
 initTsroiCalculator();
 initNwiCalculator();
