@@ -168,6 +168,7 @@ const products = {
             name: "Lieferant E (konventionell)",
             price: 4,
             indicators: [
+              indicator("CO2e Stahlrohteil", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [5, 3, 1], 4.4, "LCA"),
               indicator("Rezyklatanteil Stahl", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [20, 40, 90], 25, "Werkstoff"),
               indicator("Prozess-Ausschuss", "%", "Ressourcen & Kreislauf", "SDG 9", "GRI 302/306; ESRS E5", "lower", [15, 8, 2], 10, "Qualität")
             ]
@@ -177,6 +178,7 @@ const products = {
             name: "Lieferant F (Recyclingstahl)",
             price: 4.8,
             indicators: [
+              indicator("CO2e Stahlrohteil", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [5, 3, 1], 2.2, "LCA"),
               indicator("Rezyklatanteil Stahl", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [20, 40, 90], 70, "Werkstoff"),
               indicator("Prozess-Ausschuss", "%", "Ressourcen & Kreislauf", "SDG 9", "GRI 302/306; ESRS E5", "lower", [15, 8, 2], 3, "Qualität")
             ]
@@ -186,6 +188,7 @@ const products = {
             name: "Lieferant Q (Grünstahl)",
             price: 5.2,
             indicators: [
+              indicator("CO2e Stahlrohteil", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [5, 3, 1], 1, "LCA"),
               indicator("Rezyklatanteil Stahl", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [20, 40, 90], 85, "Werkstoff"),
               indicator("Prozess-Ausschuss", "%", "Ressourcen & Kreislauf", "SDG 9", "GRI 302/306; ESRS E5", "lower", [15, 8, 2], 2, "Qualität")
             ]
@@ -202,6 +205,7 @@ const products = {
             name: "Lieferant G (Standard-PVC)",
             price: 1.5,
             indicators: [
+              indicator("CO2e Griffbeschichtung", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [1.4, 0.8, 0.3], 1.2, "Energie"),
               indicator("REACH-Fälle", "pro Jahr", "Gesundheit & Sicherheit", "SDG 3", "GRI 416 / REACH", "zero", [6, 2, 0], 3, "Compliance"),
               indicator("Lösemittel-Recovery", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 306; ESRS E2/E5", "higher", [20, 50, 90], 35, "Umwelt")
             ]
@@ -211,6 +215,7 @@ const products = {
             name: "Lieferant H (Low-tox Coating)",
             price: 2,
             indicators: [
+              indicator("CO2e Griffbeschichtung", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [1.4, 0.8, 0.3], 0.45, "Energie"),
               indicator("REACH-Fälle", "pro Jahr", "Gesundheit & Sicherheit", "SDG 3", "GRI 416 / REACH", "zero", [6, 2, 0], 0, "Compliance"),
               indicator("Lösemittel-Recovery", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 306; ESRS E2/E5", "higher", [20, 50, 90], 75, "Umwelt")
             ]
@@ -227,6 +232,7 @@ const products = {
             name: "Standard (Karton + LKW)",
             price: 0.6,
             indicators: [
+              indicator("CO2e Verpackung & Transport", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [1.2, 0.7, 0.25], 0.9, "LCA"),
               indicator("Rezyklatgehalt Karton", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2", "higher", [30, 60, 95], 50, "LCA"),
               indicator("Arbeitsunfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 8", "GRI 403", "zero", [8, 3, 0], 3, "HSE")
             ]
@@ -236,6 +242,7 @@ const products = {
             name: "Optimiert (Re-Karton + Schiene)",
             price: 0.8,
             indicators: [
+              indicator("CO2e Verpackung & Transport", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [1.2, 0.7, 0.25], 0.3, "LCA"),
               indicator("Rezyklatgehalt Karton", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2", "higher", [30, 60, 95], 85, "LCA"),
               indicator("Arbeitsunfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 8", "GRI 403", "zero", [8, 3, 0], 1, "Ergonomie")
             ]
@@ -258,6 +265,7 @@ const products = {
             name: "Lieferant I (Standard-PCB)",
             price: 120,
             indicators: [
+              indicator("CO2e Hauptplatine", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [90, 55, 25], 75, "LCA"),
               indicator("Rezyklatanteil Metalle", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [10, 30, 80], 20, "Pass"),
               indicator("Rückrufe", "pro Jahr", "Gesundheit & Sicherheit", "SDG 3", "GRI 416", "zero", [6, 2, 0], 2, "QA"),
               indicator("Living-Wage-Coverage", "%", "Arbeit & Fairness", "SDG 8", "GRI 2-30/401; ESRS S1", "higher", [30, 50, 90], 45, "Audit")
@@ -268,6 +276,7 @@ const products = {
             name: "Lieferant J (Circular-PCB)",
             price: 140,
             indicators: [
+              indicator("CO2e Hauptplatine", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [90, 55, 25], 42, "LCA"),
               indicator("Rezyklatanteil Metalle", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [10, 30, 80], 65, "Pass"),
               indicator("Rückrufe", "pro Jahr", "Gesundheit & Sicherheit", "SDG 3", "GRI 416", "zero", [6, 2, 0], 0, "QA"),
               indicator("Living-Wage-Coverage", "%", "Arbeit & Fairness", "SDG 8", "GRI 2-30/401; ESRS S1", "higher", [30, 50, 90], 85, "Audit")
@@ -278,6 +287,7 @@ const products = {
             name: "Lieferant M (Low-impact + LW)",
             price: 150,
             indicators: [
+              indicator("CO2e Hauptplatine", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [90, 55, 25], 32, "LCA"),
               indicator("Rezyklatanteil Metalle", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [10, 30, 80], 75, "Pass"),
               indicator("Rückrufe", "pro Jahr", "Gesundheit & Sicherheit", "SDG 3", "GRI 416", "zero", [6, 2, 0], 0, "QA"),
               indicator("Living-Wage-Coverage", "%", "Arbeit & Fairness", "SDG 8", "GRI 2-30/401; ESRS S1", "higher", [30, 50, 90], 92, "Audit")
@@ -295,6 +305,7 @@ const products = {
             name: "Zellfertiger R (Standard)",
             price: 80,
             indicators: [
+              indicator("CO2e Batteriemodul", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [70, 40, 18], 58, "LCA"),
               indicator("Rezyklatanteil Co/Ni", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2", "higher", [5, 20, 60], 15, "Pass"),
               indicator("Unfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403", "zero", [8, 3, 0], 3, "HSE")
             ]
@@ -304,6 +315,7 @@ const products = {
             name: "Zellfertiger S (Re-Metalle)",
             price: 95,
             indicators: [
+              indicator("CO2e Batteriemodul", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [70, 40, 18], 25, "LCA"),
               indicator("Rezyklatanteil Co/Ni", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2", "higher", [5, 20, 60], 55, "Pass"),
               indicator("Unfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403", "zero", [8, 3, 0], 1, "Sicherheit")
             ]
@@ -320,6 +332,7 @@ const products = {
             name: "Lieferant K (Alu Druckguss)",
             price: 60,
             indicators: [
+              indicator("CO2e Gehäuse", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [45, 25, 10], 34, "LCA"),
               indicator("Rezyklatanteil Alu", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [20, 50, 90], 35, "Pass"),
               indicator("Unfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403", "zero", [8, 3, 0], 3, "HSE")
             ]
@@ -329,6 +342,7 @@ const products = {
             name: "Lieferant L (Re-Alu + Ergonomie)",
             price: 75,
             indicators: [
+              indicator("CO2e Gehäuse", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [45, 25, 10], 14, "LCA"),
               indicator("Rezyklatanteil Alu", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [20, 50, 90], 80, "Pass"),
               indicator("Unfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403", "zero", [8, 3, 0], 1, "Ergonomie")
             ]
