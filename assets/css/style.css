@@ -1563,7 +1563,8 @@ h4 {
 }
 
 .media-lab-grid,
-.platform-grid {
+.platform-grid,
+.risk-lab-grid {
   display: grid;
   gap: 1rem;
   margin-top: 1.5rem;
@@ -1631,6 +1632,48 @@ h4 {
   gap: 0.4rem;
   padding-left: 1.15rem;
   color: var(--muted);
+}
+
+.risk-output {
+  display: grid;
+  gap: 1rem;
+}
+
+.risk-flow {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  margin-top: 1rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.risk-flow div {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.95rem;
+  background: var(--ivory);
+}
+
+.risk-flow span {
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.risk-flow strong {
+  color: var(--navy);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.risk-thesis-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .traffic-good {
@@ -2918,9 +2961,18 @@ h4 {
   }
 
   .media-lab-grid,
-  .platform-grid {
+  .platform-grid,
+  .risk-lab-grid {
     grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
     align-items: start;
+  }
+
+  .risk-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .risk-thesis-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .inline-heading {

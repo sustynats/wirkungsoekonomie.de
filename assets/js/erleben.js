@@ -852,6 +852,27 @@ const platformScenarios = {
   }
 };
 
+const riskScenarios = {
+  retail: {
+    title: "Retail-Wertschöpfung unter Multikrisenstress",
+    exposure: 1.08,
+    explanation:
+      "Im Retail treffen Klima, Geopolitik, Ressourcenpreise, soziale Risiken und Kapitalmarktbewertung direkt auf Sortiment, Lieferfähigkeit, Marge und Kundennachfrage. WÖk macht sichtbar, wo präventive Steuerung günstiger ist als Krisenmodus."
+  },
+  industry: {
+    title: "Industrie mit energieintensiver Lieferkette",
+    exposure: 1.18,
+    explanation:
+      "Energiepreise, Rohstoffabhängigkeiten, Transportwege und regulatorische Transparenzinstrumente wirken nicht nacheinander, sondern gleichzeitig. Resilienz entsteht durch Datenintegration, Szenarien und robuste Lieferantenentwicklung."
+  },
+  food: {
+    title: "Lebensmittelkette zwischen Klima und Preisvolatilität",
+    exposure: 1.14,
+    explanation:
+      "Dürren, Ernteausfälle, Wasserstress, Arbeitsbedingungen und Transportkosten können Versorgung und Preise schnell verschieben. Wirkungsorientierte Steuerung verbindet ökologische Realität mit ökonomischer Stabilität."
+  }
+};
+
 const everydayExamples = [
   ["Apfel regional vs. Import", "Regional kann Transportwirkung senken, Import kann saisonal sinnvoll sein. Entscheidend sind Lagerung, Anbau, Wasser, Arbeit und Verluste.", "Preis würde Herkunft, Saison und Lagerenergie abbilden."],
   ["T-Shirt Fast Fashion vs. Fair Fashion", "Fast Fashion ist billig im Regal, aber teuer in Wasser, Arbeit, Chemie, Klima und Abfall.", "Steuern und Kapital würden langlebige, faire Lieferketten bevorzugen."],
@@ -1303,6 +1324,54 @@ function initPlatformLab() {
   render();
 }
 
+function initRiskLab() {
+  const root = document.querySelector("[data-risk-lab]");
+  if (!root) return;
+  const select = root.querySelector("[data-risk-scenario]");
+  const inputs = Array.from(root.querySelectorAll("[data-risk-input]"));
+  select.innerHTML = Object.entries(riskScenarios)
+    .map(([key, item]) => `<option value="${key}">${item.title}</option>`)
+    .join("");
+
+  function render() {
+    const scenario = riskScenarios[select.value];
+    const values = Object.fromEntries(inputs.map((input) => [input.name, Number(input.value)]));
+    const physicalStress = (values.geopolitics * 0.22 + values.energy * 0.28 + values.climate * 0.24 + values.social * 0.16) * scenario.exposure;
+    const riskReduction = values.transparency * 0.34 + values.timing * 0.38;
+    const systemRisk = clamp(Math.round(physicalStress - riskReduction * 0.52 + 18), 0, 100);
+    const decisionRoom = clamp(Math.round((100 - systemRisk) * 0.55 + values.timing * 0.45), 0, 100);
+    const financeCost = clamp(Math.round(18 + systemRisk * 0.72 - values.transparency * 0.25), 0, 100);
+    const resilience = clamp(Math.round(values.transparency * 0.42 + values.timing * 0.3 + (100 - systemRisk) * 0.28), 0, 100);
+    const stage = decisionRoom >= 68 ? "Frühes Handeln" : decisionRoom >= 42 ? "Spätes Handeln" : "Krisenmodus";
+    const financeLabel = financeCost >= 70 ? "Risikoprämien hoch" : financeCost >= 42 ? "Kapital wird selektiv" : "Kapitalzugang stabiler";
+    const resilienceLabel = resilience >= 70 ? "robust" : resilience >= 45 ? "verwundbar" : "instabil";
+
+    root.querySelector("[data-risk-title]").textContent = scenario.title;
+    root.querySelector("[data-risk-score]").textContent = `${systemRisk} / 100`;
+    root.querySelector("[data-risk-room]").textContent = stage;
+    root.querySelector("[data-risk-finance]").textContent = financeLabel;
+    root.querySelector("[data-risk-resilience]").textContent = resilienceLabel;
+    root.querySelector("[data-risk-explanation]").textContent = scenario.explanation;
+    root.querySelector("[data-risk-bars]").innerHTML = [
+      ["Systemrisiko", systemRisk],
+      ["Handlungsspielraum", decisionRoom],
+      ["Finanzierungsdruck", financeCost],
+      ["Lieferkettenresilienz", resilience],
+      ["Datentransparenz", values.transparency],
+      ["Timing-Vorteil", values.timing]
+    ].map(([label, value]) => `
+      <div class="radar-axis">
+        <span><b>${label}</b><b>${value}</b></span>
+        <div class="mini-track"><div class="mini-fill" style="width:${value}%"></div></div>
+      </div>
+    `).join("");
+  }
+
+  select.addEventListener("change", render);
+  inputs.forEach((input) => input.addEventListener("input", render));
+  render();
+}
+
 function initEverydayLab() {
   const root = document.querySelector("[data-everyday-lab]");
   if (!root) return;
@@ -1380,6 +1449,7 @@ initSimulator();
 initCompass();
 initMediaLab();
 initPlatformLab();
+initRiskLab();
 initEverydayLab();
 initMediaScorecardDemo();
 initQuizModules();
