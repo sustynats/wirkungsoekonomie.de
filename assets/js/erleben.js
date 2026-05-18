@@ -58,6 +58,7 @@ const products = {
             name: "Lieferant A (konventionell)",
             price: 2,
             indicators: [
+              indicator("CO2e Baumwolle", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [8, 5, 2], 7.2, "LCA"),
               indicator("Wasserintensität", "L/kg", "Ressourcen & Kreislauf", "SDG 6", "GRI 303; ESRS E3", "lower", [12000, 8000, 3000], 10000, "Werksreport"),
               indicator("Living-Wage-Coverage", "%", "Arbeit & Fairness", "SDG 8", "GRI 2-30/401; ESRS S1", "higher", [30, 50, 90], 40, "Sozialaudit"),
               indicator("Rezyklatanteil Faser", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [10, 30, 80], 15, "Materialpass")
@@ -68,6 +69,7 @@ const products = {
             name: "Lieferant B (verbessert)",
             price: 2.8,
             indicators: [
+              indicator("CO2e Baumwolle", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [8, 5, 2], 4.3, "LCA"),
               indicator("Wasserintensität", "L/kg", "Ressourcen & Kreislauf", "SDG 6", "GRI 303; ESRS E3", "lower", [12000, 8000, 3000], 4500, "LCA"),
               indicator("Living-Wage-Coverage", "%", "Arbeit & Fairness", "SDG 8", "GRI 2-30/401; ESRS S1", "higher", [30, 50, 90], 80, "Payroll"),
               indicator("Rezyklatanteil Faser", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [10, 30, 80], 55, "Materialpass")
@@ -78,6 +80,7 @@ const products = {
             name: "Lieferant Z (regenerativ / bio)",
             price: 3.2,
             indicators: [
+              indicator("CO2e Baumwolle", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [8, 5, 2], 2.2, "LCA"),
               indicator("Wasserintensität", "L/kg", "Ressourcen & Kreislauf", "SDG 6", "GRI 303; ESRS E3", "lower", [12000, 8000, 3000], 3200, "LCA"),
               indicator("Living-Wage-Coverage", "%", "Arbeit & Fairness", "SDG 8", "GRI 2-30/401; ESRS S1", "higher", [30, 50, 90], 92, "Audit"),
               indicator("Rezyklatanteil Faser", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 301-2; ESRS E5", "higher", [10, 30, 80], 70, "Materialpass")
@@ -95,6 +98,7 @@ const products = {
             name: "Dyehouse X (Standard)",
             price: 1.2,
             indicators: [
+              indicator("CO2e Färben", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [4, 2.5, 1], 3.7, "Energie"),
               indicator("Abwasser-COD", "mg/L", "Ressourcen & Kreislauf", "SDG 6", "GRI 303; ESRS E3", "lower", [250, 125, 50], 200, "WWTP"),
               indicator("Gefahrstoff-Substitution", "%", "Gesundheit & Sicherheit", "SDG 3", "GRI 416", "higher", [20, 50, 90], 30, "SDS")
             ]
@@ -104,6 +108,7 @@ const products = {
             name: "Dyehouse Y (Niedrig-Impact)",
             price: 1.6,
             indicators: [
+              indicator("CO2e Färben", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [4, 2.5, 1], 1.6, "Energie"),
               indicator("Abwasser-COD", "mg/L", "Ressourcen & Kreislauf", "SDG 6", "GRI 303; ESRS E3", "lower", [250, 125, 50], 90, "WWTP"),
               indicator("Gefahrstoff-Substitution", "%", "Gesundheit & Sicherheit", "SDG 3", "GRI 416", "higher", [20, 50, 90], 75, "SDS")
             ]
@@ -120,6 +125,7 @@ const products = {
             name: "Lieferant C (Standard)",
             price: 1.8,
             indicators: [
+              indicator("CO2e Veredelung", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [3, 1.8, 0.8], 2.5, "Energie"),
               indicator("Arbeitsunfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403; ESRS S1", "zero", [8, 3, 0], 4, "HSE"),
               indicator("Abfall-Reuse / Recycling", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 306; ESRS E5", "higher", [20, 50, 90], 40, "Abfall")
             ]
@@ -129,6 +135,7 @@ const products = {
             name: "Lieferant D (fortschrittlich)",
             price: 2.2,
             indicators: [
+              indicator("CO2e Veredelung", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [3, 1.8, 0.8], 1.1, "Energie"),
               indicator("Arbeitsunfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403; ESRS S1", "zero", [8, 3, 0], 1, "HSE"),
               indicator("Abfall-Reuse / Recycling", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 306; ESRS E5", "higher", [20, 50, 90], 85, "Bilanz")
             ]
@@ -138,6 +145,7 @@ const products = {
             name: "Lieferant E (Lean + LW)",
             price: 2,
             indicators: [
+              indicator("CO2e Veredelung", "kg", "Klima", "SDG 13", "GRI 305; ESRS E1", "lower", [3, 1.8, 0.8], 1.5, "Energie"),
               indicator("Arbeitsunfälle", "pro Mio. Std.", "Gesundheit & Sicherheit", "SDG 3", "GRI 403; ESRS S1", "zero", [8, 3, 0], 2, "HSE"),
               indicator("Abfall-Reuse / Recycling", "%", "Ressourcen & Kreislauf", "SDG 12", "GRI 306; ESRS E5", "higher", [20, 50, 90], 70, "Bilanz")
             ]
