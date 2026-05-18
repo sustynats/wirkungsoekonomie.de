@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <title>Weiterleitung | Wirkungsökonomie</title>
+    <script>
+      (function () {
+        var path = window.location.pathname.replace(/\/+$/, "");
+        var aliases = {
+          "/ueber-die-w-oek": "/ueber.html",
+          "/ueber-die-woek": "/ueber.html",
+          "/teil-i-grundlagen": "/akademie.html",
+          "/teil-ii-methoden-and-instrumente": "/akademie.html",
+          "/teil-iii-anwendung-and-praxis": "/akademie.html",
+          "/teil-iv-transformation-and-zukunft": "/akademie.html"
+        };
+        var topLevel = [
+          "akademie",
+          "anwendungen",
+          "blog",
+          "buch",
+          "datenschutz",
+          "downloads",
+          "erleben",
+          "glossar",
+          "impressum",
+          "mitmachen",
+          "modell",
+          "scorecard-dashboard",
+          "ueber",
+          "wirkungsoekonomie"
+        ];
+        var target = aliases[path];
+        if (!target) {
+          var slug = path.slice(1);
+          if (topLevel.indexOf(slug) !== -1) {
+            target = "/" + slug + ".html";
+          }
+        }
+        if (!target && path.indexOf("/blog/linkedin/") === 0 && path.slice(-5) !== ".html") {
+          target = path + ".html";
+        }
+        window.location.replace(target || "/");
+      }());
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background: #f4efe7;
+        color: #0d1323;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+      }
+      main {
+        max-width: 42rem;
+        padding: 2rem;
+      }
+      a {
+        color: #2f8561;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Diese Seite ist umgezogen.</h1>
+      <p>Du wirst automatisch zur passenden Seite der Wirkungsökonomie weitergeleitet.</p>
+      <p><a href="/">Zur Startseite</a></p>
+    </main>
+  </body>
+</html>
