@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wirkungsscorecard-Dashboard - Wirkungsökonomie</title>
+    <meta name="description" content="Interaktives Wirkungsscorecard-Dashboard mit zehn Produkt- und Dienstleistungsbeispielen, Datenquellen, externen Kosten und Drill-down.">
+    <link rel="canonical" href="https://www.wirkungsoekonomie.de/scorecard-dashboard.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="Wirkungsscorecard-Dashboard - Wirkungsökonomie">
+    <meta property="og:description" content="Zehn Beispiele zeigen Marktpreis, versteckte gesellschaftliche Kosten, Wirkungsscore, Datenquellen und Bewertungen.">
+    <meta property="og:url" content="https://www.wirkungsoekonomie.de/scorecard-dashboard.html">
+    <meta property="og:image" content="https://www.wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wirkungsscorecard-Dashboard - Wirkungsökonomie">
+    <meta name="twitter:description" content="Zehn Beispiele zeigen Marktpreis, versteckte gesellschaftliche Kosten, Wirkungsscore, Datenquellen und Bewertungen.">
+    <meta name="twitter:image" content="https://www.wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+        <a href="modell.html">Modell</a>
+        <a href="anwendungen.html">Anwendungen</a>
+        <a class="active" href="erleben.html">Erleben</a>
+        <a href="buch.html">Buch</a>
+        <a href="blog.html">Blog</a>
+        <a href="akademie.html">Akademie</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="mitmachen.html">Mitmachen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero scorecard-hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">Wirkungsscorecard</p>
+          <h1 class="hero-title">Externe Kosten sichtbar machen.</h1>
+          <p class="hero-subtitle">Zehn Beispiele aus Produkten und Dienstleistungen zeigen, welche Daten in die Bewertung eingehen, wo Quellen liegen und welche Kosten heute oft bei Gesellschaft, Umwelt oder Demokratie landen.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#dashboard">Dashboard öffnen</a>
+            <a class="btn btn-secondary" href="erleben.html">Zur Erlebnis-Seite</a>
+          </div>
+        </div>
+        <div class="hero-aside card">
+          <p class="hero-kicker">Demo-Daten</p>
+          <h2>Master-Items als Bewertungslogik.</h2>
+          <p class="card-text">Die Beispiele knüpfen an WOK-IDs, ESRS, GRI, GHG Protocol, ILO, OECD Due Diligence und Schwellenklassen der Master-Tabelle an. Werte sind didaktische Beispielwerte und als Modellannahmen gekennzeichnet.</p>
+        </div>
+      </section>
+
+      <section class="section" id="dashboard" data-scorecard-dashboard>
+        <div class="container-wide">
+          <div class="dashboard-toolbar">
+            <div>
+              <p class="hero-kicker">Interaktives Dashboard</p>
+              <h2>Produkte und Dienstleistungen im Wirkungsvergleich.</h2>
+            </div>
+            <div class="dashboard-filters" aria-label="Dashboard Filter">
+              <label class="control-label" for="scorecard-type">Typ
+                <select id="scorecard-type" data-filter-type>
+                  <option value="all">Alle</option>
+                  <option value="Produkt">Produkte</option>
+                  <option value="Dienstleistung">Dienstleistungen</option>
+                </select>
+              </label>
+              <label class="control-label" for="scorecard-sector">Sektor
+                <select id="scorecard-sector" data-filter-sector></select>
+              </label>
+            </div>
+          </div>
+
+          <div class="scorecard-dashboard-grid">
+            <aside class="scorecard-list" data-scorecard-list aria-label="Beispiele"></aside>
+
+            <section class="scorecard-detail" aria-label="Scorecard Detail">
+              <div class="scorecard-visual" data-scorecard-visual></div>
+              <div class="scorecard-kpis">
+                <div class="impact-kpi"><span>Marktpreis</span><strong data-kpi-market>-</strong></div>
+                <div class="impact-kpi"><span>Externe Kosten</span><strong data-kpi-external>-</strong></div>
+                <div class="impact-kpi"><span>Echter Preis</span><strong data-kpi-true>-</strong></div>
+                <div class="impact-kpi"><span>FinalScore</span><strong><span class="score-pill" data-kpi-score>-</span></strong></div>
+              </div>
+
+              <div class="scorecard-panels">
+                <article class="scorecard-panel">
+                  <p class="hero-kicker">Wirkungsscorecard</p>
+                  <div class="impact-bars" data-dimension-bars></div>
+                </article>
+                <article class="scorecard-panel">
+                  <p class="hero-kicker">Externe Kosten</p>
+                  <div class="impact-bars" data-cost-bars></div>
+                </article>
+              </div>
+
+              <article class="scorecard-panel">
+                <p class="hero-kicker">Daten und Bewertung</p>
+                <div class="scorecard-table-wrap">
+                  <table class="indicator-table scorecard-source-table">
+                    <thead>
+                      <tr>
+                        <th>WOK-ID</th>
+                        <th>Indikator</th>
+                        <th>Wert</th>
+                        <th>Score</th>
+                        <th>Quelle / Referenz</th>
+                        <th>Bewertung</th>
+                      </tr>
+                    </thead>
+                    <tbody data-source-table></tbody>
+                  </table>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Portal der Wirkungsökonomie: ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das den Kompass von Kapital zu Wirkung verschiebt.</p>
+          <p><a class="text-link" href="mailto:impact@wirkungsoekonomie.org">impact@wirkungsoekonomie.org</a></p>
+        </div>
+        <a class="btn btn-primary" href="wirkungsoekonomie.html">Wirkungsökonomie verstehen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+          <a href="modell.html">Modell</a>
+          <a href="anwendungen.html">Anwendungen</a>
+          <a href="erleben.html">Erleben</a>
+          <a href="scorecard-dashboard.html">Scorecard</a>
+          <a href="buch.html">Buch</a>
+          <a href="blog.html">Blog</a>
+          <a href="akademie.html">Akademie</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="glossar.html">Glossar</a>
+          <a href="mitmachen.html">Mitmachen</a>
+          <a href="ueber.html">Über die Wirkungsökonomie</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scorecard-dashboard.js"></script>
+  </body>
+</html>

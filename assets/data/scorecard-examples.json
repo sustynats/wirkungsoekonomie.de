@@ -1,0 +1,202 @@
+[
+  {
+    "id": "tshirt-fast-vs-fair",
+    "name": "T-Shirt",
+    "type": "Produkt",
+    "sector": "Textilien",
+    "image": "assets/img/linkedin/2025-10-24-von-werten-zu-wirkung-01-c3af2dca39.jpg",
+    "summary": "Fast-Fashion-Basismodell gegen Lieferkette mit Living Wage, geringer Wasserintensität und Recyclingfaser.",
+    "marketPrice": 7.99,
+    "truePrice": 13.42,
+    "externalCosts": 5.43,
+    "impactAdjustment": -1.2,
+    "score": -0.9,
+    "dimensions": { "Mensch": -1.4, "Planet": -1.1, "Demokratie": -0.2, "Datenqualität": 1.2 },
+    "costBreakdown": { "Klima": 0.72, "Wasser": 1.85, "Arbeit": 2.1, "Gesundheit": 0.46, "Demokratie": 0.3 },
+    "indicators": [
+      { "wokId": "WOK-SC-101", "label": "ESG-Spend-Coverage", "value": "38 %", "score": -2, "source": "ESRS S2; GRI 308/414; Lieferantenaudit", "assessment": "Zu geringe Abdeckung der Lieferkettendaten." },
+      { "wokId": "WOK-S-101", "label": "Living-Wage-Coverage", "value": "44 %", "score": -2, "source": "ESRS S1; GRI 401; Sozialaudit", "assessment": "Lebenslohn nicht flächig gesichert." },
+      { "wokId": "WOK-SC-103", "label": "Scope-3 Primärdaten", "value": "31 %", "score": -2, "source": "GHG Protocol; ESRS E1", "assessment": "Klimadaten überwiegend modelliert." }
+    ]
+  },
+  {
+    "id": "smartphone-repairable",
+    "name": "Smartphone",
+    "type": "Produkt",
+    "sector": "Elektronik",
+    "image": "assets/img/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-01-fa62fd6f9b.jpg",
+    "summary": "Kurzlebiges Elektronikprodukt gegen reparierbares Gerät mit Rücknahme, Ersatzteilen und Primärdaten zu Metallen.",
+    "marketPrice": 399,
+    "truePrice": 542,
+    "externalCosts": 143,
+    "impactAdjustment": -38,
+    "score": 0.4,
+    "dimensions": { "Mensch": -0.6, "Planet": 0.8, "Demokratie": 0.2, "Datenqualität": 1.3 },
+    "costBreakdown": { "Klima": 58, "Rohstoffe": 42, "Arbeit": 24, "E-Waste": 14, "Governance": 5 },
+    "indicators": [
+      { "wokId": "WOK-SC-102", "label": "Audits ohne Kinder-/Zwangsarbeit", "value": "91 %", "score": 2, "source": "ESRS S2; OECD Due Diligence", "assessment": "Gute Abdeckung, aber Hochrisiko-Länder bleiben kritisch." },
+      { "wokId": "WOK-SC-103", "label": "Scope-3 Primärdaten", "value": "62 %", "score": 2, "source": "GHG Protocol; ISO 14067", "assessment": "Solide Datenbasis für Bauteile." },
+      { "wokId": "WOK-G-102", "label": "Whistleblowing-Wirksamkeit", "value": "0,71", "score": 0, "source": "ESRS G1; GRI 205", "assessment": "Meldesystem vorhanden, Wirksamkeit mittleres Niveau." }
+    ]
+  },
+  {
+    "id": "laptop-circular",
+    "name": "Laptop",
+    "type": "Produkt",
+    "sector": "Elektronik",
+    "image": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-02-3b71fb1b26.jpg",
+    "summary": "Circular-PCB, Re-Aluminium und modulare Batterie senken Folgekosten über längere Nutzung.",
+    "marketPrice": 899,
+    "truePrice": 964,
+    "externalCosts": 65,
+    "impactAdjustment": -92,
+    "score": 1.8,
+    "dimensions": { "Mensch": 1.2, "Planet": 2.1, "Demokratie": 0.9, "Datenqualität": 2.0 },
+    "costBreakdown": { "Klima": 31, "Rohstoffe": 18, "Arbeit": 9, "E-Waste": 5, "Governance": 2 },
+    "indicators": [
+      { "wokId": "WOK-SC-103", "label": "Scope-3 Primärdaten", "value": "78 %", "score": 2, "source": "ESRS E1; GHG Protocol; Produktpass", "assessment": "Hohe Datenabdeckung für Hauptkomponenten." },
+      { "wokId": "WOK-S-103", "label": "LTIFR Fertigung", "value": "1,1", "score": 2, "source": "GRI 403; HSE-Bericht", "assessment": "Arbeitssicherheit im guten Bereich." },
+      { "wokId": "WOK-G-101", "label": "Antikorruptionsfälle", "value": "0,1 / 1.000 FTE", "score": 2, "source": "ESRS G1; GRI 205", "assessment": "Niedrige bestätigte Fallrate." }
+    ]
+  },
+  {
+    "id": "burger-industrial",
+    "name": "Burger",
+    "type": "Produkt",
+    "sector": "Ernährung",
+    "image": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-04-7c1f84b2eb.jpg",
+    "summary": "Billiges Fleischprodukt gegen regionales, regeneratives Angebot mit niedrigerem Flächen- und Klimadruck.",
+    "marketPrice": 4.49,
+    "truePrice": 8.11,
+    "externalCosts": 3.62,
+    "impactAdjustment": 0.74,
+    "score": -1.6,
+    "dimensions": { "Mensch": -0.7, "Planet": -2.3, "Demokratie": -0.8, "Datenqualität": 0.6 },
+    "costBreakdown": { "Klima": 1.55, "Biodiversität": 0.82, "Wasser": 0.36, "Gesundheit": 0.54, "Arbeit": 0.35 },
+    "indicators": [
+      { "wokId": "WOK-SC-103", "label": "Scope-3 Primärdaten", "value": "28 %", "score": -2, "source": "GHG Protocol; Lieferantendaten", "assessment": "Zu wenig Primärdaten zu Futtermitteln und Landnutzung." },
+      { "wokId": "WOK-S-101", "label": "Living-Wage-Coverage", "value": "52 %", "score": -2, "source": "ESRS S1; GRI 401", "assessment": "Niedrige Lohnabdeckung in Verarbeitung und Logistik." },
+      { "wokId": "WOK-SC-101", "label": "ESG-Spend-Coverage", "value": "41 %", "score": -2, "source": "ESRS S2; Einkaufsaudit", "assessment": "Lieferkette nur teilweise bewertbar." }
+    ]
+  },
+  {
+    "id": "coffee-regenerative",
+    "name": "Kaffee",
+    "type": "Produkt",
+    "sector": "Agrarhandel",
+    "image": "assets/img/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert-01-8060a44763.jpg",
+    "summary": "Standardkaffee gegen regenerative Kooperative mit Living Income, Schattenanbau und transparenter Prämie.",
+    "marketPrice": 3.29,
+    "truePrice": 4.1,
+    "externalCosts": 0.81,
+    "impactAdjustment": -0.52,
+    "score": 1.3,
+    "dimensions": { "Mensch": 1.8, "Planet": 1.4, "Demokratie": 0.8, "Datenqualität": 1.1 },
+    "costBreakdown": { "Klima": 0.22, "Boden": 0.18, "Wasser": 0.11, "Einkommen": 0.24, "Governance": 0.06 },
+    "indicators": [
+      { "wokId": "WOK-S-101", "label": "Living-Income-Coverage", "value": "82 %", "score": 2, "source": "ESRS S1/S2; Fairtrade/Living Income Referenz", "assessment": "Prämienmodell erreicht gute Einkommensabdeckung." },
+      { "wokId": "WOK-SC-101", "label": "ESG-Spend-Coverage", "value": "74 %", "score": 2, "source": "Kooperativenbericht; GRI 308/414", "assessment": "Hohe Abdeckung der Einkaufsvolumina." },
+      { "wokId": "WOK-G-102", "label": "Beschwerdemechanismus", "value": "0,77", "score": 2, "source": "ESRS G1; OECD Due Diligence", "assessment": "Kooperativer Rückkanal ist vorhanden." }
+    ]
+  },
+  {
+    "id": "cloud-datacenter",
+    "name": "Cloud-Hosting",
+    "type": "Dienstleistung",
+    "sector": "Digitale Infrastruktur",
+    "image": "assets/img/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann-01-a91791dc65.jpg",
+    "summary": "Rechenzentrum mit PUE, erneuerbarem Strom, Abwärmenutzung und transparenter Datenresidenz.",
+    "marketPrice": 29,
+    "truePrice": 31.9,
+    "externalCosts": 2.9,
+    "impactAdjustment": -1.4,
+    "score": 1.6,
+    "dimensions": { "Mensch": 0.4, "Planet": 2.2, "Demokratie": 1.5, "Datenqualität": 2.0 },
+    "costBreakdown": { "Strom": 1.1, "Wasser": 0.4, "Hardware": 0.7, "Datensouveränität": 0.3, "Abwärme": 0.4 },
+    "indicators": [
+      { "wokId": "WOK-E-201", "label": "PUE", "value": "1,24", "score": 2, "source": "ISO 30134; Betreiber-Messung", "assessment": "Effiziente Kühlung, aber noch nicht Spitzenwert." },
+      { "wokId": "WOK-SC-103", "label": "Scope-3 Primärdaten Hardware", "value": "67 %", "score": 2, "source": "GHG Protocol; Lieferanten-LCA", "assessment": "Gute Primärdaten für Serverflotte." },
+      { "wokId": "WOK-G-102", "label": "Governance / Datenresidenz", "value": "0,83", "score": 2, "source": "ESRS G1; ISO 27001; Vertragsprüfung", "assessment": "Verlässliche Daten- und Kontrollstruktur." }
+    ]
+  },
+  {
+    "id": "parcel-delivery",
+    "name": "Paketlieferung",
+    "type": "Dienstleistung",
+    "sector": "Logistik",
+    "image": "assets/img/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-03-ee209b5c66.jpg",
+    "summary": "Same-Day-Lieferung gegen gebündelte Zustellung mit fairer Arbeit, E-Flotte und Retourenreduktion.",
+    "marketPrice": 4.9,
+    "truePrice": 7.15,
+    "externalCosts": 2.25,
+    "impactAdjustment": 0.55,
+    "score": -0.8,
+    "dimensions": { "Mensch": -1.3, "Planet": -0.6, "Demokratie": -0.4, "Datenqualität": 1.0 },
+    "costBreakdown": { "Klima": 0.64, "Luft": 0.21, "Arbeit": 0.88, "Verkehr": 0.33, "Retouren": 0.19 },
+    "indicators": [
+      { "wokId": "WOK-S-102", "label": "Tarifbindung", "value": "46 %", "score": -2, "source": "ESRS S1; GRI 401; Subunternehmerprüfung", "assessment": "Tarifliche Abdeckung zu niedrig." },
+      { "wokId": "WOK-S-103", "label": "LTIFR Zustellung", "value": "4,8", "score": -2, "source": "GRI 403; HSE-Daten", "assessment": "Hohe Unfallrate im Zustellprozess." },
+      { "wokId": "WOK-SC-103", "label": "Scope-3 Daten", "value": "55 %", "score": 0, "source": "GHG Protocol; Flottendaten", "assessment": "Teils Primärdaten, teils Durchschnittsfaktoren." }
+    ]
+  },
+  {
+    "id": "social-feed",
+    "name": "Social-Media-Feed",
+    "type": "Dienstleistung",
+    "sector": "Medien",
+    "image": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-01-9022a24f56.jpg",
+    "summary": "Engagement-Optimierung gegen diskursstärkende Moderation, Kontextsignale und Reichweitenbremsen.",
+    "marketPrice": 0,
+    "truePrice": 1.8,
+    "externalCosts": 1.8,
+    "impactAdjustment": 0.35,
+    "score": -1.9,
+    "dimensions": { "Mensch": -1.2, "Planet": 0.2, "Demokratie": -2.8, "Datenqualität": 0.5 },
+    "costBreakdown": { "Polarisierung": 0.72, "Vertrauen": 0.54, "Gesundheit": 0.22, "Moderation": 0.18, "Energie": 0.14 },
+    "indicators": [
+      { "wokId": "WOK-G-102", "label": "Whistleblowing / Beschwerdewirksamkeit", "value": "0,42", "score": -2, "source": "ESRS G1; Plattform-Transparenzbericht", "assessment": "Beschwerdemechanismus wirkt begrenzt." },
+      { "wokId": "WOK-D-301", "label": "Vertrauens-/Orientierungsscore", "value": "38 / 100", "score": -2, "source": "Nutzerbefragung; Medienwirkungscheck", "assessment": "Orientierungswirkung schwach." },
+      { "wokId": "WOK-D-302", "label": "Polarisierungsrisiko", "value": "hoch", "score": -3, "source": "Content-Audit; Empfehlungslogik", "assessment": "Algorithmische Verstärkung bleibt Hauptkostenquelle." }
+    ]
+  },
+  {
+    "id": "rental-apartment",
+    "name": "Mietwohnung",
+    "type": "Dienstleistung",
+    "sector": "Wohnen",
+    "image": "assets/img/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil-01-c3005217d3.jpg",
+    "summary": "Maximierte Miete gegen wirkungsorientiertes Wohnen mit Sanierung, Bezahlbarkeit und Quartiersstabilität.",
+    "marketPrice": 980,
+    "truePrice": 1210,
+    "externalCosts": 230,
+    "impactAdjustment": -85,
+    "score": 0.9,
+    "dimensions": { "Mensch": 1.5, "Planet": 0.8, "Demokratie": 1.2, "Datenqualität": 0.7 },
+    "costBreakdown": { "Verdrängung": 88, "Energie": 54, "Gesundheit": 32, "Pendeln": 28, "Vertrauen": 28 },
+    "indicators": [
+      { "wokId": "WOK-S-201", "label": "Wohnkostenbelastung", "value": "31 %", "score": 0, "source": "Mietvertrag; Haushaltsdaten; kommunale Sozialdaten", "assessment": "Knapp über robuster Bezahlbarkeit." },
+      { "wokId": "WOK-E-101", "label": "Energieintensität", "value": "74 kWh/m²a", "score": 2, "source": "Energieausweis; ESRS E1", "assessment": "Sanierter Bestand mit guter Klimawirkung." },
+      { "wokId": "WOK-G-201", "label": "Quartiersstabilität", "value": "0,76", "score": 2, "source": "Kommunale Daten; Mieterwechselquote", "assessment": "Geringe Verdrängung, hohe Bindung." }
+    ]
+  },
+  {
+    "id": "care-hour",
+    "name": "Pflegestunde",
+    "type": "Dienstleistung",
+    "sector": "Pflege",
+    "image": "assets/img/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi-01-b7ce929474.jpg",
+    "summary": "Minutentakt-Pflege gegen präventive, würdeorientierte Pflege mit Fachkräftebindung und Angehörigenentlastung.",
+    "marketPrice": 38,
+    "truePrice": 44.5,
+    "externalCosts": 6.5,
+    "impactAdjustment": -8.2,
+    "score": 2.1,
+    "dimensions": { "Mensch": 2.6, "Planet": 0.1, "Demokratie": 1.8, "Datenqualität": 1.5 },
+    "costBreakdown": { "Gesundheit": 2.1, "Angehörige": 1.8, "Arbeitsausfall": 1.2, "Personalfluktuation": 1.1, "Vertrauen": 0.3 },
+    "indicators": [
+      { "wokId": "WOK-S-101", "label": "Living-Wage-Coverage", "value": "96 %", "score": 3, "source": "ESRS S1; Tarifdaten; Lohnabrechnung", "assessment": "Lebenslohn und Tarifdeckung stark." },
+      { "wokId": "WOK-S-103", "label": "LTIFR Pflegebetrieb", "value": "1,4", "score": 2, "source": "GRI 403; Arbeitsschutzbericht", "assessment": "Belastung bleibt, aber Risiko reduziert." },
+      { "wokId": "WOK-S-202", "label": "Präventionswirkung", "value": "0,82", "score": 2, "source": "Pflegedokumentation; Klinikvermeidungen", "assessment": "Weniger Folgekosten durch Stabilisierung." }
+    ]
+  }
+]
