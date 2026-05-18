@@ -513,6 +513,10 @@ h4 {
   display: block;
 }
 
+.download-card.compact .btn {
+  margin-top: 1rem;
+}
+
 .download-card + .download-card {
   margin-top: 1rem;
 }
