@@ -106,31 +106,78 @@ function renderList() {
 
 function renderDashboard(items) {
   const summaryTarget = dashboardRoot.querySelector("[data-dashboard-summary]");
+  const coreTarget = dashboardRoot.querySelector("[data-dashboard-core]");
+  const historyTarget = dashboardRoot.querySelector("[data-dashboard-history]");
   const rankingTarget = dashboardRoot.querySelector("[data-dashboard-ranking]");
+  const chainTarget = dashboardRoot.querySelector("[data-dashboard-chain]");
   const costsTarget = dashboardRoot.querySelector("[data-dashboard-costs]");
   const distributionTarget = dashboardRoot.querySelector("[data-dashboard-distribution]");
-  if (!summaryTarget || !rankingTarget || !costsTarget || !distributionTarget) return;
+  if (!summaryTarget || !coreTarget || !historyTarget || !rankingTarget || !chainTarget || !costsTarget || !distributionTarget) return;
 
   const totalExternal = sum(items.map((item) => item.externalCosts));
   const totalMarket = sum(items.map((item) => item.marketPrice));
   const averageScore = average(items.map((item) => item.score));
   const averageHiddenShare = totalMarket > 0 ? (totalExternal / totalMarket) * 100 : 0;
   const selectedItem = scorecardItems.find((entry) => entry.id === selectedScorecardId) || items[0];
+  const impactPoints = Math.max(0, Math.round((averageScore + 3) * 2450 + items.length * 95));
+  const netTax = Math.max(0, Math.round(totalExternal * 1828));
   const best = [...items].sort((a, b) => b.score - a.score)[0];
   const worst = [...items].sort((a, b) => a.score - b.score)[0];
 
   summaryTarget.innerHTML = [
-    ["Beispiele", String(items.length), "gefilterter Datensatz"],
-    ["Ø Wirkungsscore", scoreLabel(averageScore), scoreWord(averageScore)],
-    ["Versteckte Kosten", euro.format(totalExternal), `${averageHiddenShare.toFixed(1).replace(".", ",")} % vom Marktpreis`],
-    ["Aktiver Pass", selectedItem?.name || "-", selectedItem ? taxRateFromScore(selectedItem.score) + " Steuerklasse" : "-"]
-  ].map(([label, value, note]) => `
-    <article class="dashboard-metric">
-      <span>${label}</span>
-      <strong>${value}</strong>
-      <small>${note}</small>
+    ["Final Score", scoreLabel(averageScore), scoreWord(averageScore), averageScore],
+    ["Steuerklasse", selectedItem ? taxRateFromScore(selectedItem.score) : "-", selectedItem ? `${selectedItem.name} aktiv` : "-", selectedItem?.score || 0],
+    ["Wirkungspunkte", impactPoints.toLocaleString("de-DE"), "+2.350 vs. Vorjahr", averageScore],
+    ["Steuerlast (netto)", euro.format(netTax), "nach Wirkung", -averageScore]
+  ].map(([label, value, note, toneScore]) => {
+    const tone = toneScore >= 1 ? "metric-good" : toneScore >= 0 ? "metric-mid" : "metric-bad";
+    return `
+    <article class="dashboard-metric ${tone}">
+      <div>
+        <span>${label}</span>
+        <strong>${value}</strong>
+        <small>${note}</small>
+      </div>
+      <i aria-hidden="true">${label === "Final Score" ? "↗" : label === "Steuerklasse" ? "%" : label === "Wirkungspunkte" ? "☆" : "€"}</i>
     </article>
-  `).join("");
+  `;
+  }).join("");
+
+  const coreEntries = ["Klima", "Ressourcen & Kreislauf", "Arbeit & Fairness", "Gesundheit & Sicherheit"].map((label, index) => {
+    const key = index === 0 ? "Planet" : index === 1 ? "Datenqualität" : index === 2 ? "Mensch" : "Demokratie";
+    const value = average(items.map((item) => item.dimensions[key] ?? item.score));
+    return [label, value];
+  });
+  coreTarget.innerHTML = `
+    <h3>Scorecard - 4 Kernfelder</h3>
+    <div class="core-field-grid">
+      ${coreEntries.map(([label, value]) => `
+        <div class="core-field">
+          <span>${label}</span>
+          <strong class="${scoreTone(value)}">${scoreLabel(value)}</strong>
+          <div class="score-axis"><i style="left:${dimensionWidth(value)}%"></i></div>
+          <small>${scoreWord(value)}</small>
+        </div>
+      `).join("")}
+    </div>
+    <p class="formula-note">Reverse Merit Order: Das schwächste Feld begrenzt den Final Score.</p>
+  `;
+
+  const history = [-0.2, 0.4, 1.2, averageScore];
+  historyTarget.innerHTML = `
+    <h3>Entwicklung Final Score</h3>
+    <div class="score-history" aria-label="Final Score Entwicklung">
+      ${history.map((value, index) => `
+        <div class="score-point" style="left:${10 + index * 28}%; bottom:${18 + dimensionWidth(value) * 0.55}%">
+          <span>${scoreLabel(value)}</span>
+        </div>
+      `).join("")}
+      <svg viewBox="0 0 100 60" aria-hidden="true" preserveAspectRatio="none">
+        <polyline points="${history.map((value, index) => `${10 + index * 28},${52 - dimensionWidth(value) * 0.35}`).join(" ")}" />
+      </svg>
+    </div>
+    <div class="history-years"><span>2022</span><span>2023</span><span>2024</span><span>2025</span></div>
+  `;
 
   const rankedItems = [...items].sort((a, b) => b.score - a.score);
   rankingTarget.innerHTML = `
@@ -163,6 +210,20 @@ function renderDashboard(items) {
     <div class="impact-bars">${renderBars(costEntries, { money: true })}</div>
   `;
 
+  chainTarget.innerHTML = `
+    <h3>Wirkungskette (Auszug)</h3>
+    <div class="chain-flow">
+      ${["Rohstoffe", "Produktion", "Transport", "Nutzung", "Ende"].map((step, index) => `
+        <div class="chain-step">
+          <span>${index + 1}</span>
+          <strong>${step}</strong>
+          <em>${scoreLabel(averageScore + (index - 2) * 0.12)}</em>
+        </div>
+      `).join("")}
+    </div>
+    <a class="text-link" href="#dashboard">Gesamte Wirkungskette ansehen</a>
+  `;
+
   const typeCounts = items.reduce((map, item) => {
     map[item.type] = (map[item.type] || 0) + 1;
     return map;
@@ -172,7 +233,11 @@ function renderDashboard(items) {
     return map;
   }, {});
   distributionTarget.innerHTML = `
-    <h3>Portfolio-Verteilung</h3>
+    <h3>Wirkungspunkte</h3>
+    <div class="points-donut" style="--score:${Math.max(0, Math.min(100, dimensionWidth(averageScore)))}%">
+      <strong>${impactPoints.toLocaleString("de-DE")}</strong>
+      <span>Gesamt</span>
+    </div>
     <div class="distribution-block">
       <p class="hero-kicker">Typ</p>
       ${Object.entries(typeCounts).map(([label, count]) => `<div class="distribution-row"><span>${label}</span><strong>${count}</strong></div>`).join("")}

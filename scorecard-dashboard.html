@@ -63,84 +63,119 @@
 
       <section class="section" id="dashboard" data-scorecard-dashboard>
         <div class="container-wide">
-          <div class="dashboard-toolbar">
-            <div>
-              <p class="hero-kicker">Interaktiver Produktpass</p>
-              <h2>Produkte und Dienstleistungen im Wirkungsvergleich.</h2>
-            </div>
-            <div class="dashboard-filters" aria-label="Dashboard Filter">
-              <label class="control-label" for="scorecard-type">Typ
-                <select id="scorecard-type" data-filter-type>
-                  <option value="all">Alle</option>
-                  <option value="Produkt">Produkte</option>
-                  <option value="Dienstleistung">Dienstleistungen</option>
-                </select>
-              </label>
-              <label class="control-label" for="scorecard-sector">Sektor
-                <select id="scorecard-sector" data-filter-sector></select>
-              </label>
-            </div>
-          </div>
-
-          <section class="impact-dashboard" aria-label="Wirkungsdashboard">
-            <div class="dashboard-summary-grid" data-dashboard-summary></div>
-            <div class="dashboard-cockpit-grid">
-              <article class="dashboard-card dashboard-ranking" data-dashboard-ranking></article>
-              <article class="dashboard-card dashboard-costs" data-dashboard-costs></article>
-              <article class="dashboard-card dashboard-distribution" data-dashboard-distribution></article>
-            </div>
-          </section>
-
-          <div class="dashboard-section-heading">
-            <div>
-              <p class="hero-kicker">Produktpass-Drill-down</p>
-              <h3>Ein Beispiel auswählen und in die Tiefe gehen.</h3>
-            </div>
-            <p>Das Dashboard zeigt die Lage. Der Pass zeigt, warum ein einzelnes Produkt oder eine Dienstleistung so bewertet wird.</p>
-          </div>
-
-          <div class="scorecard-dashboard-grid">
-            <aside class="scorecard-list" data-scorecard-list aria-label="Beispiele"></aside>
-
-            <section class="scorecard-detail product-pass-sheet" aria-label="Produktpass Detail">
-              <div class="pass-overview" data-pass-overview></div>
-              <div class="scorecard-kpis">
-                <div class="impact-kpi"><span>Marktpreis</span><strong data-kpi-market>-</strong></div>
-                <div class="impact-kpi"><span>Versteckte Kosten</span><strong data-kpi-external>-</strong></div>
-                <div class="impact-kpi"><span>Echter Preis</span><strong data-kpi-true>-</strong></div>
-                <div class="impact-kpi"><span>Wirkungsscore</span><strong><span class="score-pill" data-kpi-score>-</span></strong></div>
+          <div class="wirkungskonto-shell">
+            <aside class="wirkungskonto-sidebar" aria-label="Wirkungskonto Navigation">
+              <div class="wirkungskonto-brand">
+                <span>WÖ</span>
+                <strong>Wirkungs<br>konto</strong>
+                <small>Wirkung als Maßstab.</small>
               </div>
-
-              <div class="product-pass-grid">
-                <article class="pass-panel pass-identity" data-pass-identity></article>
-                <article class="pass-panel pass-lifecycle" data-pass-lifecycle></article>
-                <article class="pass-panel pass-scorecard" data-pass-scorecard></article>
-                <article class="pass-panel pass-tax" data-pass-tax></article>
-                <article class="pass-panel pass-supply" data-pass-supply></article>
-                <article class="pass-panel pass-standards" data-pass-standards></article>
-                <article class="pass-panel pass-recommendations" data-pass-recommendations></article>
-                <article class="pass-panel pass-verification" data-pass-verification></article>
+              <nav>
+                <a class="active" href="#dashboard">Übersicht</a>
+                <a href="#dashboard">Scorecard</a>
+                <a href="#dashboard">Wirkungsketten</a>
+                <a href="#dashboard">Indikatoren</a>
+                <a href="#dashboard">Steuer & Abgaben</a>
+                <a href="#dashboard">Wirkungspunkte</a>
+              </nav>
+              <div class="account-card">
+                <span>Konto</span>
+                <strong>Beispiel Unternehmen GmbH</strong>
+                <small>NACE: C20.16<br>Kunststoffherstellung</small>
+                <button type="button">Konto wechseln</button>
               </div>
+            </aside>
 
-              <article class="pass-panel pass-drilldown">
-                <p class="hero-kicker">Daten und Bewertung</p>
-                <div class="scorecard-table-wrap">
-                  <table class="indicator-table scorecard-source-table">
-                    <thead>
-                      <tr>
-                        <th>WOK-ID</th>
-                        <th>Indikator</th>
-                        <th>Wert</th>
-                        <th>Score</th>
-                        <th>Quelle / Referenz</th>
-                        <th>Bewertung</th>
-                      </tr>
-                    </thead>
-                    <tbody data-source-table></tbody>
-                  </table>
+            <div class="wirkungskonto-main">
+              <div class="dashboard-toolbar">
+                <div>
+                  <p class="hero-kicker">Wirkungskonto - Übersicht</p>
+                  <h2>Wirkung messen. Steuern steuern. Zukunft gestalten.</h2>
                 </div>
-              </article>
-            </section>
+                <div class="dashboard-actions" aria-label="Dashboard Aktionen">
+                  <span>01.01.2025 - 31.12.2025</span>
+                  <button type="button">Export</button>
+                  <button type="button" aria-label="Benachrichtigungen">3</button>
+                </div>
+              </div>
+
+              <div class="dashboard-filters" aria-label="Dashboard Filter">
+                <label class="control-label" for="scorecard-type">Typ
+                  <select id="scorecard-type" data-filter-type>
+                    <option value="all">Alle</option>
+                    <option value="Produkt">Produkte</option>
+                    <option value="Dienstleistung">Dienstleistungen</option>
+                  </select>
+                </label>
+                <label class="control-label" for="scorecard-sector">Sektor
+                  <select id="scorecard-sector" data-filter-sector></select>
+                </label>
+              </div>
+
+              <section class="impact-dashboard" aria-label="Wirkungsdashboard">
+                <div class="dashboard-summary-grid" data-dashboard-summary></div>
+                <div class="dashboard-cockpit-grid">
+                  <article class="dashboard-card dashboard-core" data-dashboard-core></article>
+                  <article class="dashboard-card dashboard-history" data-dashboard-history></article>
+                  <article class="dashboard-card dashboard-ranking" data-dashboard-ranking></article>
+                  <article class="dashboard-card dashboard-chain" data-dashboard-chain></article>
+                  <article class="dashboard-card dashboard-costs" data-dashboard-costs></article>
+                  <article class="dashboard-card dashboard-distribution" data-dashboard-distribution></article>
+                </div>
+              </section>
+
+              <div class="dashboard-section-heading">
+                <div>
+                  <p class="hero-kicker">Produktpass-Drill-down</p>
+                  <h3>Ein Beispiel auswählen und in die Tiefe gehen.</h3>
+                </div>
+                <p>Das Wirkungskonto zeigt die Lage. Der Pass zeigt, warum ein einzelnes Produkt oder eine Dienstleistung so bewertet wird.</p>
+              </div>
+
+              <div class="scorecard-dashboard-grid">
+                <aside class="scorecard-list" data-scorecard-list aria-label="Beispiele"></aside>
+
+                <section class="scorecard-detail product-pass-sheet" aria-label="Produktpass Detail">
+                  <div class="pass-overview" data-pass-overview></div>
+                  <div class="scorecard-kpis">
+                    <div class="impact-kpi"><span>Marktpreis</span><strong data-kpi-market>-</strong></div>
+                    <div class="impact-kpi"><span>Versteckte Kosten</span><strong data-kpi-external>-</strong></div>
+                    <div class="impact-kpi"><span>Echter Preis</span><strong data-kpi-true>-</strong></div>
+                    <div class="impact-kpi"><span>Wirkungsscore</span><strong><span class="score-pill" data-kpi-score>-</span></strong></div>
+                  </div>
+
+                  <div class="product-pass-grid">
+                    <article class="pass-panel pass-identity" data-pass-identity></article>
+                    <article class="pass-panel pass-lifecycle" data-pass-lifecycle></article>
+                    <article class="pass-panel pass-scorecard" data-pass-scorecard></article>
+                    <article class="pass-panel pass-tax" data-pass-tax></article>
+                    <article class="pass-panel pass-supply" data-pass-supply></article>
+                    <article class="pass-panel pass-standards" data-pass-standards></article>
+                    <article class="pass-panel pass-recommendations" data-pass-recommendations></article>
+                    <article class="pass-panel pass-verification" data-pass-verification></article>
+                  </div>
+
+                  <article class="pass-panel pass-drilldown">
+                    <p class="hero-kicker">Daten und Bewertung</p>
+                    <div class="scorecard-table-wrap">
+                      <table class="indicator-table scorecard-source-table">
+                        <thead>
+                          <tr>
+                            <th>WOK-ID</th>
+                            <th>Indikator</th>
+                            <th>Wert</th>
+                            <th>Score</th>
+                            <th>Quelle / Referenz</th>
+                            <th>Bewertung</th>
+                          </tr>
+                        </thead>
+                        <tbody data-source-table></tbody>
+                      </table>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </div>
           </div>
         </div>
       </section>
