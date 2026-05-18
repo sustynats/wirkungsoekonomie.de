@@ -953,6 +953,16 @@ h4 {
   gap: 1rem;
 }
 
+.inline-heading h2 {
+  max-width: 820px;
+  font-size: clamp(1.95rem, 3.2vw, 3rem);
+  line-height: 1.08;
+}
+
+.inline-heading > .card-text {
+  max-width: 560px;
+}
+
 .category-row {
   display: flex;
   flex-wrap: wrap;
@@ -2728,7 +2738,7 @@ h4 {
   }
 
   .inline-heading {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.62fr);
     align-items: end;
   }
 }
