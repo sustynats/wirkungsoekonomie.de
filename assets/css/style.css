@@ -1439,7 +1439,8 @@ h4 {
 }
 
 .tool-card textarea,
-.tool-card input[type="text"] {
+.tool-card input[type="text"],
+.tool-card input[type="number"] {
   width: 100%;
   min-height: 3rem;
   padding: 0.75rem 0.85rem;
@@ -1453,6 +1454,40 @@ h4 {
 .tool-card textarea {
   min-height: 6.4rem;
   resize: vertical;
+}
+
+.calculator-output {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  background: var(--navy);
+  border-radius: var(--radius);
+  color: var(--ivory);
+}
+
+.calculator-output strong {
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  line-height: 1.05;
+}
+
+.calculator-output span {
+  color: rgba(246, 241, 232, 0.78);
+}
+
+.input-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.formula-note {
+  padding: 0.75rem;
+  background: rgba(47, 125, 92, 0.1);
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: var(--radius);
+  color: var(--navy);
+  font-size: 0.9rem;
 }
 
 .truth-comparison,

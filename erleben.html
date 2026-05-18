@@ -162,6 +162,72 @@
         </div>
       </section>
 
+      <section class="section" id="rechner">
+        <div class="container-wide">
+          <div class="inline-heading">
+            <div>
+              <p class="hero-kicker">Messlabor</p>
+              <h2>KPI-, T-SROI- und NWI-Rechner für Wirkung in Zahlen.</h2>
+            </div>
+            <p class="card-text">Drei vereinfachte Rechner übersetzen Wirkung in Score, Rückfluss und Wohlfahrtsbilanz. Sie sind Demo-Modelle, keine amtliche Berechnung.</p>
+          </div>
+
+          <div class="tool-lab">
+            <article class="tool-card" data-kpi-calculator>
+              <p class="hero-kicker">KPI-Rechner</p>
+              <h3>Wirkungsscore aus vier Kernindikatoren</h3>
+              <div class="input-grid">
+                <div class="range-field">
+                  <label for="kpi-human">Mensch</label>
+                  <input id="kpi-human" name="human" type="range" min="0" max="100" value="72">
+                </div>
+                <div class="range-field">
+                  <label for="kpi-planet">Planet</label>
+                  <input id="kpi-planet" name="planet" type="range" min="0" max="100" value="66">
+                </div>
+                <div class="range-field">
+                  <label for="kpi-democracy">Demokratie</label>
+                  <input id="kpi-democracy" name="democracy" type="range" min="0" max="100" value="58">
+                </div>
+                <div class="range-field">
+                  <label for="kpi-quality">Datenqualität</label>
+                  <input id="kpi-quality" name="quality" type="range" min="0" max="100" value="70">
+                </div>
+              </div>
+              <div class="calculator-output" data-kpi-output></div>
+              <p class="formula-note">Formel: 30 % Mensch, 30 % Planet, 25 % Demokratie, 15 % Datenqualität.</p>
+            </article>
+
+            <article class="tool-card" data-tsroi-calculator>
+              <p class="hero-kicker">T-SROI-Rechner</p>
+              <h3>Gesellschaftlicher Rückfluss pro investiertem Euro</h3>
+              <div class="input-grid">
+                <label class="control-label" for="tsroi-investment">Investition in Euro<input id="tsroi-investment" name="investment" type="number" min="1" value="100000"></label>
+                <label class="control-label" for="tsroi-benefit">Direkter Nutzen in Euro<input id="tsroi-benefit" name="benefit" type="number" min="0" value="145000"></label>
+                <label class="control-label" for="tsroi-avoided">Vermiedene Folgekosten in Euro<input id="tsroi-avoided" name="avoided" type="number" min="0" value="90000"></label>
+                <label class="control-label" for="tsroi-deadweight">Ohnehin-Effekt in Prozent<input id="tsroi-deadweight" name="deadweight" type="number" min="0" max="100" value="18"></label>
+              </div>
+              <div class="calculator-output" data-tsroi-output></div>
+              <p class="formula-note">Formel: (direkter Nutzen + vermiedene Folgekosten) × (1 - Ohnehin-Effekt) / Investition.</p>
+            </article>
+
+            <article class="tool-card" data-nwi-calculator>
+              <p class="hero-kicker">NWI-Rechner</p>
+              <h3>Wohlfahrt statt bloßer Aktivität</h3>
+              <div class="input-grid">
+                <label class="control-label" for="nwi-base">Konsum / Basiswert in Mrd. Euro<input id="nwi-base" name="base" type="number" min="0" value="2500"></label>
+                <label class="control-label" for="nwi-unpaid">Unbezahlte Sorgearbeit in Mrd. Euro<input id="nwi-unpaid" name="unpaid" type="number" min="0" value="520"></label>
+                <label class="control-label" for="nwi-inequality">Ungleichheitsabschlag in Prozent<input id="nwi-inequality" name="inequality" type="number" min="0" max="100" value="14"></label>
+                <label class="control-label" for="nwi-ecology">Ökologische Folgekosten in Mrd. Euro<input id="nwi-ecology" name="ecology" type="number" min="0" value="380"></label>
+                <label class="control-label" for="nwi-social">Soziale Folgekosten in Mrd. Euro<input id="nwi-social" name="social" type="number" min="0" value="210"></label>
+              </div>
+              <div class="calculator-output" data-nwi-output></div>
+              <p class="formula-note">Formel: Basiswert - Ungleichheitsabschlag + Sorgearbeit - ökologische und soziale Folgekosten.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="werkzeuge">
         <div class="container-wide">
           <div class="inline-heading">

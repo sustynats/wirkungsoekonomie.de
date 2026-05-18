@@ -790,6 +790,71 @@ function initPriceTruth() {
   render();
 }
 
+function initKpiCalculator() {
+  const root = document.querySelector("[data-kpi-calculator]");
+  if (!root) return;
+  const inputs = Array.from(root.querySelectorAll("input"));
+  const output = root.querySelector("[data-kpi-output]");
+
+  function render() {
+    const values = Object.fromEntries(inputs.map((input) => [input.name, Number(input.value)]));
+    const score = Math.round(values.human * 0.3 + values.planet * 0.3 + values.democracy * 0.25 + values.quality * 0.15);
+    const level = score >= 75 ? "wirkungsorientiert" : score >= 55 ? "entwicklungsfähig" : "kritisch";
+    output.innerHTML = `
+      <span>Wirkungs-KPI</span>
+      <strong>${score} / 100</strong>
+      <span>${level}: Der Score zeigt nicht nur Leistung, sondern ob Wirkung auf Mensch, Planet und Demokratie belastbar sichtbar wird.</span>
+    `;
+  }
+
+  inputs.forEach((input) => input.addEventListener("input", render));
+  render();
+}
+
+function initTsroiCalculator() {
+  const root = document.querySelector("[data-tsroi-calculator]");
+  if (!root) return;
+  const inputs = Array.from(root.querySelectorAll("input"));
+  const output = root.querySelector("[data-tsroi-output]");
+
+  function render() {
+    const values = Object.fromEntries(inputs.map((input) => [input.name, Number(input.value)]));
+    const adjustedBenefits = (values.benefit + values.avoided) * (1 - clamp(values.deadweight, 0, 100) / 100);
+    const ratio = values.investment > 0 ? adjustedBenefits / values.investment : 0;
+    const net = adjustedBenefits - values.investment;
+    output.innerHTML = `
+      <span>T-SROI</span>
+      <strong>${ratio.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} : 1</strong>
+      <span>Bereinigter Nutzen ${currencyFormatter.format(adjustedBenefits)} · Netto-Wirkungswert ${currencyFormatter.format(net)}.</span>
+    `;
+  }
+
+  inputs.forEach((input) => input.addEventListener("input", render));
+  render();
+}
+
+function initNwiCalculator() {
+  const root = document.querySelector("[data-nwi-calculator]");
+  if (!root) return;
+  const inputs = Array.from(root.querySelectorAll("input"));
+  const output = root.querySelector("[data-nwi-output]");
+
+  function render() {
+    const values = Object.fromEntries(inputs.map((input) => [input.name, Number(input.value)]));
+    const inequalityCost = values.base * (clamp(values.inequality, 0, 100) / 100);
+    const nwi = values.base - inequalityCost + values.unpaid - values.ecology - values.social;
+    const delta = nwi - values.base;
+    output.innerHTML = `
+      <span>Vereinfachter NWI</span>
+      <strong>${nwi.toLocaleString("de-DE", { maximumFractionDigits: 0 })} Mrd. €</strong>
+      <span>${delta >= 0 ? "+" : ""}${delta.toLocaleString("de-DE", { maximumFractionDigits: 0 })} Mrd. € gegenüber dem Basiswert. Wohlfahrt steigt, wenn unbezahlte positive Wirkung sichtbar wird und Folgekosten sinken.</span>
+    `;
+  }
+
+  inputs.forEach((input) => input.addEventListener("input", render));
+  render();
+}
+
 function initRadar() {
   const root = document.querySelector("[data-radar]");
   if (!root) return;
@@ -960,6 +1025,9 @@ function initQuiz() {
 
 initSimulator();
 initCompass();
+initKpiCalculator();
+initTsroiCalculator();
+initNwiCalculator();
 initPriceTruth();
 initRadar();
 initPolicyCheck();
