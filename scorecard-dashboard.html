@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wirkungsscorecard-Dashboard - Wirkungsökonomie</title>
-    <meta name="description" content="Interaktives Wirkungsscorecard-Dashboard mit zehn Produkt- und Dienstleistungsbeispielen, Datenquellen, externen Kosten und Drill-down.">
+    <title>Produktpass & Wirkungsscorecard - Wirkungsökonomie</title>
+    <meta name="description" content="Interaktiver Produktpass mit Wirkungsscorecard, Lebenszyklus, Lieferkette, Steuerklasse, externen Kosten und Drill-down für zehn Beispiele.">
     <link rel="canonical" href="https://www.wirkungsoekonomie.de/scorecard-dashboard.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
-    <meta property="og:title" content="Wirkungsscorecard-Dashboard - Wirkungsökonomie">
-    <meta property="og:description" content="Zehn Beispiele zeigen Marktpreis, versteckte gesellschaftliche Kosten, Wirkungsscore, Datenquellen und Bewertungen.">
+    <meta property="og:title" content="Produktpass & Wirkungsscorecard - Wirkungsökonomie">
+    <meta property="og:description" content="Zehn Beispiele zeigen Marktpreis, versteckte gesellschaftliche Kosten, Steuerklasse, Datenquellen und Bewertungen.">
     <meta property="og:url" content="https://www.wirkungsoekonomie.de/scorecard-dashboard.html">
     <meta property="og:image" content="https://www.wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Wirkungsscorecard-Dashboard - Wirkungsökonomie">
-    <meta name="twitter:description" content="Zehn Beispiele zeigen Marktpreis, versteckte gesellschaftliche Kosten, Wirkungsscore, Datenquellen und Bewertungen.">
+    <meta name="twitter:title" content="Produktpass & Wirkungsscorecard - Wirkungsökonomie">
+    <meta name="twitter:description" content="Zehn Beispiele zeigen Marktpreis, versteckte gesellschaftliche Kosten, Steuerklasse, Datenquellen und Bewertungen.">
     <meta name="twitter:image" content="https://www.wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -46,11 +46,11 @@
     <main>
       <section class="hero scorecard-hero">
         <div class="hero-copy">
-          <p class="hero-kicker">Wirkungsscorecard</p>
-          <h1 class="hero-title">Externe Kosten sichtbar machen.</h1>
-          <p class="hero-subtitle">Zehn Beispiele aus Produkten und Dienstleistungen zeigen, welche Daten in die Bewertung eingehen, wo Quellen liegen und welche Kosten heute oft bei Gesellschaft, Umwelt oder Demokratie landen.</p>
+          <p class="hero-kicker">Produktpass</p>
+          <h1 class="hero-title">Transparenz. Wirkung. Vertrauen.</h1>
+          <p class="hero-subtitle">Zehn Beispiele aus Produkten und Dienstleistungen zeigen Lebenszyklus, Lieferkette, Datenquellen, externe Kosten und die daraus abgeleitete Wirkungsklasse.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#dashboard">Dashboard öffnen</a>
+            <a class="btn btn-primary" href="#dashboard">Produktpass öffnen</a>
             <a class="btn btn-secondary" href="erleben.html">Zur Erlebnis-Seite</a>
           </div>
         </div>
@@ -65,7 +65,7 @@
         <div class="container-wide">
           <div class="dashboard-toolbar">
             <div>
-              <p class="hero-kicker">Interaktives Dashboard</p>
+              <p class="hero-kicker">Interaktiver Produktpass</p>
               <h2>Produkte und Dienstleistungen im Wirkungsvergleich.</h2>
             </div>
             <div class="dashboard-filters" aria-label="Dashboard Filter">
@@ -85,27 +85,27 @@
           <div class="scorecard-dashboard-grid">
             <aside class="scorecard-list" data-scorecard-list aria-label="Beispiele"></aside>
 
-            <section class="scorecard-detail" aria-label="Scorecard Detail">
-              <div class="scorecard-visual" data-scorecard-visual></div>
+            <section class="scorecard-detail product-pass-sheet" aria-label="Produktpass Detail">
+              <div class="pass-overview" data-pass-overview></div>
               <div class="scorecard-kpis">
                 <div class="impact-kpi"><span>Marktpreis</span><strong data-kpi-market>-</strong></div>
-                <div class="impact-kpi"><span>Externe Kosten</span><strong data-kpi-external>-</strong></div>
+                <div class="impact-kpi"><span>Versteckte Kosten</span><strong data-kpi-external>-</strong></div>
                 <div class="impact-kpi"><span>Echter Preis</span><strong data-kpi-true>-</strong></div>
-                <div class="impact-kpi"><span>FinalScore</span><strong><span class="score-pill" data-kpi-score>-</span></strong></div>
+                <div class="impact-kpi"><span>Wirkungsscore</span><strong><span class="score-pill" data-kpi-score>-</span></strong></div>
               </div>
 
-              <div class="scorecard-panels">
-                <article class="scorecard-panel">
-                  <p class="hero-kicker">Wirkungsscorecard</p>
-                  <div class="impact-bars" data-dimension-bars></div>
-                </article>
-                <article class="scorecard-panel">
-                  <p class="hero-kicker">Externe Kosten</p>
-                  <div class="impact-bars" data-cost-bars></div>
-                </article>
+              <div class="product-pass-grid">
+                <article class="pass-panel pass-identity" data-pass-identity></article>
+                <article class="pass-panel pass-lifecycle" data-pass-lifecycle></article>
+                <article class="pass-panel pass-scorecard" data-pass-scorecard></article>
+                <article class="pass-panel pass-tax" data-pass-tax></article>
+                <article class="pass-panel pass-supply" data-pass-supply></article>
+                <article class="pass-panel pass-standards" data-pass-standards></article>
+                <article class="pass-panel pass-recommendations" data-pass-recommendations></article>
+                <article class="pass-panel pass-verification" data-pass-verification></article>
               </div>
 
-              <article class="scorecard-panel">
+              <article class="pass-panel pass-drilldown">
                 <p class="hero-kicker">Daten und Bewertung</p>
                 <div class="scorecard-table-wrap">
                   <table class="indicator-table scorecard-source-table">
