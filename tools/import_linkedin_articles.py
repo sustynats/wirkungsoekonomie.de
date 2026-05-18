@@ -292,7 +292,7 @@ def description_for(article: SourceArticle) -> str:
 def render_article(article: SourceArticle) -> str:
     escaped_title = html.escape(article.title)
     description = html.escape(description_for(article), quote=True)
-    canonical = f"https://www.wirkungsoekonomie.de/blog/linkedin/{article.slug}.html"
+    canonical = f"https://wirkungsoekonomie.de/blog/linkedin/{article.slug}.html"
     source_link = (
         f'<p class="card-text">Zuerst veröffentlicht auf <a class="text-link" href="{html.escape(article.original_url, quote=True)}" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>'
         if article.original_url
@@ -312,11 +312,11 @@ def render_article(article: SourceArticle) -> str:
     <meta property="og:title" content="{escaped_title}">
     <meta property="og:description" content="{description}">
     <meta property="og:url" content="{canonical}">
-    <meta property="og:image" content="https://www.wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{escaped_title}">
     <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="https://www.wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
@@ -412,18 +412,18 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LinkedIn-Artikel - Wirkungsökonomie</title>
     <meta name="description" content="Archiv der von LinkedIn übernommenen Artikel von Natalie Weber zur Wirkungsökonomie, Demokratie, Nachhaltigkeit, Energie, KI und gesellschaftlicher Steuerung.">
-    <link rel="canonical" href="https://www.wirkungsoekonomie.de/blog/linkedin-artikel.html">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/blog/linkedin-artikel.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
     <meta property="og:title" content="LinkedIn-Artikel - Wirkungsökonomie">
     <meta property="og:description" content="Archiv der von LinkedIn übernommenen Artikel von Natalie Weber zur Wirkungsökonomie.">
-    <meta property="og:url" content="https://www.wirkungsoekonomie.de/blog/linkedin-artikel.html">
-    <meta property="og:image" content="https://www.wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/blog/linkedin-artikel.html">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LinkedIn-Artikel - Wirkungsökonomie">
     <meta name="twitter:description" content="Archiv der von LinkedIn übernommenen Artikel von Natalie Weber zur Wirkungsökonomie.">
-    <meta name="twitter:image" content="https://www.wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
@@ -511,10 +511,10 @@ def write_sitemap(articles: list[SourceArticle]) -> None:
         flags=re.S,
     )
     entries = ['  <!-- LinkedIn archive start -->']
-    entries.append('  <url><loc>https://www.wirkungsoekonomie.de/blog/linkedin-artikel.html</loc><lastmod>2026-05-18</lastmod></url>')
+    entries.append('  <url><loc>https://wirkungsoekonomie.de/blog/linkedin-artikel.html</loc><lastmod>2026-05-18</lastmod></url>')
     for article in articles:
         entries.append(
-            f"  <url><loc>https://www.wirkungsoekonomie.de/blog/linkedin/{article.slug}.html</loc><lastmod>2026-05-18</lastmod></url>"
+            f"  <url><loc>https://wirkungsoekonomie.de/blog/linkedin/{article.slug}.html</loc><lastmod>2026-05-18</lastmod></url>"
         )
     entries.append("  <!-- LinkedIn archive end -->")
     sitemap = sitemap.replace("\n</urlset>", "\n" + "\n".join(entries) + "\n</urlset>")
