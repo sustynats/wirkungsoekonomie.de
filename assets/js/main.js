@@ -89,3 +89,97 @@ try {
 } catch (error) {
   createAnalyticsBanner();
 }
+
+const blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
+const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
+const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
+const blogFilterStatus = document.querySelector(".blog-filter-status");
+
+function setActiveBlogLinks(type, value) {
+  blogFilterLinks.forEach((link) => {
+    const isActive = type === "category" && link.dataset.blogFilter === value;
+    const isAll = type === "all" && link.dataset.blogFilter === "all";
+    link.classList.toggle("active", isActive || isAll);
+  });
+
+  blogTagLinks.forEach((link) => {
+    link.classList.toggle("active", type === "tag" && link.dataset.blogTag === value);
+  });
+}
+
+function applyBlogFilter(type, value, label) {
+  if (!blogCards.length) {
+    return;
+  }
+
+  let visibleCount = 0;
+
+  blogCards.forEach((card) => {
+    const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
+    const isVisible =
+      type === "all" ||
+      (type === "category" && card.dataset.category === value) ||
+      (type === "tag" && tags.includes(value));
+
+    card.hidden = !isVisible;
+    if (isVisible) {
+      visibleCount += 1;
+    }
+  });
+
+  if (blogFilterStatus) {
+    blogFilterStatus.textContent =
+      type === "all" ? `${visibleCount} Beiträge werden angezeigt.` : `${visibleCount} Beiträge zu „${label}“.`;
+  }
+
+  setActiveBlogLinks(type, value);
+}
+
+function moveToBlogList(hash) {
+  if (hash) {
+    history.replaceState(null, "", hash);
+  }
+
+  document.querySelector("#beitraege")?.scrollIntoView({ block: "start" });
+}
+
+blogFilterLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const value = link.dataset.blogFilter;
+    const label = link.textContent.trim();
+
+    if (value === "all") {
+      applyBlogFilter("all", "all", label);
+      moveToBlogList("#beitraege");
+    } else {
+      applyBlogFilter("category", value, label);
+      moveToBlogList(`#thema-${value}`);
+    }
+  });
+});
+
+blogTagLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    applyBlogFilter("tag", link.dataset.blogTag, link.textContent.trim());
+    moveToBlogList(`#tag-${link.dataset.blogTag}`);
+  });
+});
+
+if (blogCards.length) {
+  const hash = decodeURIComponent(window.location.hash || "");
+  const categoryMatch = hash.match(/^#thema-(.+)$/);
+  const tagMatch = hash.match(/^#tag-(.+)$/);
+
+  if (categoryMatch) {
+    const link = document.querySelector(`[data-blog-filter="${categoryMatch[1]}"]`);
+    applyBlogFilter("category", categoryMatch[1], link?.textContent.trim() || categoryMatch[1]);
+  } else if (tagMatch) {
+    const link = document.querySelector(`[data-blog-tag="${tagMatch[1]}"]`);
+    applyBlogFilter("tag", tagMatch[1], link?.textContent.trim() || tagMatch[1]);
+  } else {
+    applyBlogFilter("all", "all", "Alle Beiträge");
+  }
+}
