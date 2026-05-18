@@ -966,6 +966,33 @@ h4 {
   font-weight: 750;
 }
 
+.linkedin-archive-grid {
+  align-items: stretch;
+}
+
+.linkedin-archive-card .card-title {
+  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  line-height: 1.18;
+}
+
+.linkedin-article-body figure {
+  margin: clamp(2rem, 5vw, 3rem) 0;
+}
+
+.linkedin-article-body figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.linkedin-article-body figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .text-link {
   display: inline-flex;
   margin-top: 1.25rem;
