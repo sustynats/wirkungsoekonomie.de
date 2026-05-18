@@ -58,6 +58,14 @@ function taxRateFromScore(score) {
   return active ? active.rate : "10 %";
 }
 
+function average(values) {
+  return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
+}
+
+function sum(values) {
+  return values.reduce((total, value) => total + value, 0);
+}
+
 function setSectors(items) {
   const sectorSelect = dashboardRoot.querySelector("[data-filter-sector]");
   const sectors = Array.from(new Set(items.map((item) => item.sector))).sort((a, b) => a.localeCompare(b, "de"));
@@ -92,7 +100,88 @@ function renderList() {
     </button>
   `).join("");
 
+  renderDashboard(items);
   renderDetail();
+}
+
+function renderDashboard(items) {
+  const summaryTarget = dashboardRoot.querySelector("[data-dashboard-summary]");
+  const rankingTarget = dashboardRoot.querySelector("[data-dashboard-ranking]");
+  const costsTarget = dashboardRoot.querySelector("[data-dashboard-costs]");
+  const distributionTarget = dashboardRoot.querySelector("[data-dashboard-distribution]");
+  if (!summaryTarget || !rankingTarget || !costsTarget || !distributionTarget) return;
+
+  const totalExternal = sum(items.map((item) => item.externalCosts));
+  const totalMarket = sum(items.map((item) => item.marketPrice));
+  const averageScore = average(items.map((item) => item.score));
+  const averageHiddenShare = totalMarket > 0 ? (totalExternal / totalMarket) * 100 : 0;
+  const selectedItem = scorecardItems.find((entry) => entry.id === selectedScorecardId) || items[0];
+  const best = [...items].sort((a, b) => b.score - a.score)[0];
+  const worst = [...items].sort((a, b) => a.score - b.score)[0];
+
+  summaryTarget.innerHTML = [
+    ["Beispiele", String(items.length), "gefilterter Datensatz"],
+    ["Ø Wirkungsscore", scoreLabel(averageScore), scoreWord(averageScore)],
+    ["Versteckte Kosten", euro.format(totalExternal), `${averageHiddenShare.toFixed(1).replace(".", ",")} % vom Marktpreis`],
+    ["Aktiver Pass", selectedItem?.name || "-", selectedItem ? taxRateFromScore(selectedItem.score) + " Steuerklasse" : "-"]
+  ].map(([label, value, note]) => `
+    <article class="dashboard-metric">
+      <span>${label}</span>
+      <strong>${value}</strong>
+      <small>${note}</small>
+    </article>
+  `).join("");
+
+  const rankedItems = [...items].sort((a, b) => b.score - a.score);
+  rankingTarget.innerHTML = `
+    <h3>Wirkungsranking</h3>
+    <div class="ranking-extremes">
+      <div><span>Stärkste Wirkung</span><strong>${best?.name || "-"}</strong><em class="${best ? scoreTone(best.score) : ""}">${best ? scoreLabel(best.score) : "-"}</em></div>
+      <div><span>Größte Belastung</span><strong>${worst?.name || "-"}</strong><em class="${worst ? scoreTone(worst.score) : ""}">${worst ? scoreLabel(worst.score) : "-"}</em></div>
+    </div>
+    <ol class="ranking-list">
+      ${rankedItems.slice(0, 5).map((item) => `
+        <li>
+          <button type="button" data-scorecard-id="${item.id}">
+            <span>${item.name}</span>
+            <strong class="${scoreTone(item.score)}">${scoreLabel(item.score)}</strong>
+          </button>
+        </li>
+      `).join("")}
+    </ol>
+  `;
+
+  const costTotals = {};
+  items.forEach((item) => {
+    Object.entries(item.costBreakdown).forEach(([label, value]) => {
+      costTotals[label] = (costTotals[label] || 0) + value;
+    });
+  });
+  const costEntries = Object.entries(costTotals).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  costsTarget.innerHTML = `
+    <h3>Externe Kostentreiber</h3>
+    <div class="impact-bars">${renderBars(costEntries, { money: true })}</div>
+  `;
+
+  const typeCounts = items.reduce((map, item) => {
+    map[item.type] = (map[item.type] || 0) + 1;
+    return map;
+  }, {});
+  const sectorCounts = items.reduce((map, item) => {
+    map[item.sector] = (map[item.sector] || 0) + 1;
+    return map;
+  }, {});
+  distributionTarget.innerHTML = `
+    <h3>Portfolio-Verteilung</h3>
+    <div class="distribution-block">
+      <p class="hero-kicker">Typ</p>
+      ${Object.entries(typeCounts).map(([label, count]) => `<div class="distribution-row"><span>${label}</span><strong>${count}</strong></div>`).join("")}
+    </div>
+    <div class="distribution-block">
+      <p class="hero-kicker">Sektoren</p>
+      ${Object.entries(sectorCounts).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([label, count]) => `<div class="distribution-row"><span>${label}</span><strong>${count}</strong></div>`).join("")}
+    </div>
+  `;
 }
 
 function renderBars(entries, options = {}) {
