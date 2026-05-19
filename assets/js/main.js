@@ -3,6 +3,21 @@ const siteNav = document.querySelector(".site-nav");
 const analyticsMeasurementId = "G-KBSME2T45Y";
 const analyticsConsentKey = "wirkungsoekonomie-analytics-consent";
 
+const mainElement = document.querySelector("main");
+
+if (mainElement) {
+  mainElement.id = mainElement.id || "main-content";
+  mainElement.setAttribute("tabindex", "-1");
+}
+
+if (mainElement && !document.querySelector(".skip-link")) {
+  const skipLink = document.createElement("a");
+  skipLink.className = "skip-link";
+  skipLink.href = "#main-content";
+  skipLink.textContent = "Zum Inhalt springen";
+  document.body.prepend(skipLink);
+}
+
 if (navToggle && siteNav) {
   const closeNavigation = () => {
     siteNav.classList.remove("open");
@@ -151,6 +166,16 @@ const blogFilterState = {
   limit: blogInitialLimit,
 };
 
+function setPressedState(links, activeValue, dataKey) {
+  links.forEach((link) => {
+    const value = link.dataset[dataKey] || "all";
+    const isActive = value === activeValue;
+    link.classList.toggle("active", isActive);
+    link.setAttribute("role", "button");
+    link.setAttribute("aria-pressed", String(isActive));
+  });
+}
+
 function getBlogCardTypes(card) {
   return Array.from(card.querySelectorAll(".blog-origin-badge")).map((badge) =>
     badge.textContent.trim().toLowerCase().replace(/\s+/g, "-"),
@@ -158,22 +183,10 @@ function getBlogCardTypes(card) {
 }
 
 function setActiveBlogLinks() {
-  blogFilterLinks.forEach((link) => {
-    link.classList.toggle("active", link.dataset.blogFilter === blogFilterState.category);
-  });
-
-  blogTagLinks.forEach((link) => {
-    link.classList.toggle("active", link.dataset.blogTag === blogFilterState.tag);
-  });
-
-  blogOriginLinks.forEach((link) => {
-    const origin = link.dataset.blogOriginFilter || "all";
-    link.classList.toggle("active", origin === blogFilterState.origin);
-  });
-
-  blogTypeLinks.forEach((link) => {
-    link.classList.toggle("active", link.dataset.blogTypeFilter === blogFilterState.type);
-  });
+  setPressedState(blogFilterLinks, blogFilterState.category, "blogFilter");
+  setPressedState(blogTagLinks, blogFilterState.tag, "blogTag");
+  setPressedState(blogOriginLinks, blogFilterState.origin, "blogOriginFilter");
+  setPressedState(blogTypeLinks, blogFilterState.type, "blogTypeFilter");
 }
 
 function getBlogFilterSummary(matchedCount, visibleCount) {
@@ -430,3 +443,75 @@ if (downloadSearchInput) {
 }
 
 applyDownloadFilter();
+
+function slugifyHeading(text) {
+  return text
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 72);
+}
+
+function getArticleReadMinutes() {
+  const kicker = document.querySelector(".hero-kicker")?.textContent || "";
+  const match = kicker.match(/(\d+)\s*Min\./i);
+  return match ? Number(match[1]) : 0;
+}
+
+function enhanceLongArticleToc() {
+  const articleBody = document.querySelector(".article-body");
+  if (!articleBody || document.querySelector(".article-toc")) {
+    return;
+  }
+
+  const headings = Array.from(articleBody.querySelectorAll("h2")).filter((heading) => heading.textContent.trim());
+  const readMinutes = getArticleReadMinutes();
+  const shouldAddToc = readMinutes >= 20 || headings.length >= 8;
+
+  if (!shouldAddToc || headings.length < 3) {
+    return;
+  }
+
+  const usedIds = new Set(Array.from(document.querySelectorAll("[id]")).map((element) => element.id));
+
+  headings.forEach((heading, index) => {
+    if (heading.id) {
+      return;
+    }
+
+    const base = slugifyHeading(heading.textContent) || `abschnitt-${index + 1}`;
+    let id = base;
+    let counter = 2;
+
+    while (usedIds.has(id)) {
+      id = `${base}-${counter}`;
+      counter += 1;
+    }
+
+    heading.id = id;
+    usedIds.add(id);
+  });
+
+  const toc = document.createElement("nav");
+  toc.className = "article-toc";
+  toc.setAttribute("aria-label", "Inhaltsverzeichnis");
+  toc.innerHTML = `
+    <p class="article-toc-title">Inhaltsverzeichnis</p>
+    <ol>
+      ${headings
+        .map((heading) => `<li><a href="#${heading.id}">${heading.textContent.trim()}</a></li>`)
+        .join("")}
+    </ol>
+  `;
+
+  articleBody.before(toc);
+}
+
+enhanceLongArticleToc();
