@@ -179,6 +179,18 @@ Prüflogik:
 - `Kohorte-2026-V1` = alte Kurse / alte Inhalte / alte Prüfungsstruktur
 - `Kohorte-2026-V2` = neue Akademie-Struktur / neue Inhalte / neuer Studienpfad
 
+Die Kursanzeige wird immer aus zwei Informationen berechnet:
+
+1. `cohort_key` bestimmt die Kursversion.
+2. `highest_stage_unlocked` bestimmt die sichtbaren Stufen.
+
+Beispiele:
+
+- `Kohorte-2026-V1` + `highest_stage_unlocked = 3` zeigt alte Stufe 1, alte Stufe 2 und alte Stufe 3.
+- `Kohorte-2026-V2` + `highest_stage_unlocked = 3` zeigt neue Stufe 1, neue Stufe 2 und neue Stufe 3.
+
+Die Stufennummern sind gleich. Die Inhalte kommen aus der jeweiligen Kursversion der Kohorte.
+
 Wenn ein User beide Kohortenrollen hat:
 
 - `Team` und `Mentor:in` dürfen beide Kursversionen sehen.
@@ -234,6 +246,8 @@ Logik:
 - `Akademie-Stufe-4` = Stufe 1, 2, 3 und 4 sichtbar
 
 Die höchste vorhandene Stufenrolle entscheidet. Hat ein User `Akademie-Stufe-3`, dann werden Stufe 1, 2 und 3 grundsätzlich angezeigt.
+
+Die Stufenrolle entscheidet nicht, ob alte oder neue Inhalte angezeigt werden. Sie entscheidet nur, bis zu welcher Stufe Inhalte sichtbar sind. Die Kursversion kommt ausschließlich aus `cohort_key`.
 
 Keine Discord-Rollen anlegen für:
 
@@ -422,6 +436,14 @@ create table public.course_versions (
   is_active boolean not null default true
 );
 ```
+
+Kursauswahl:
+
+- Die App wählt zuerst anhand von `user_access.cohort_key` die passende `course_versions`-Zeile.
+- Danach filtert sie `stages` dieser Kursversion nach `stage_number <= highest_stage_unlocked`.
+- Die gleiche Stufennummer kann in V1 und V2 unterschiedliche Inhalte haben.
+- Normale Student:innen sehen nie gemischte Inhalte aus V1 und V2.
+- Akademie-Leitung kann alle Kursversionen vergleichen.
 
 ### Aktualisierte Kursarchitektur ab V2: Stufen und Vorlesungen
 
@@ -694,11 +716,18 @@ Prüfung sichtbar, wenn:
 
 Nächste Stufe sichtbar, wenn:
 
-- Discord-Rolle für diese Stufe vorhanden ist
-- oder `user_access.highest_stage_unlocked` in Supabase entsprechend erhöht wurde
+- `user_access.highest_stage_unlocked` mindestens der Stufennummer entspricht
+- dieser Wert beim Login aus der höchsten Discord-Stufenrolle berechnet wurde
+- oder Akademie-Leitung den Wert in Supabase manuell erhöht hat
 - oder später nach bestandener Prüfung und Bestätigung durch Akademie-Leitung
 
-Für den MVP ist die Discord-Stufenrolle das Hauptkriterium. `highest_stage_unlocked` dient zusätzlich als Override durch Akademie-Leitung.
+Für den MVP wird `highest_stage_unlocked` beim Rollencheck aus den Discord-Stufenrollen berechnet und in Supabase gespeichert. Supabase kann zusätzlich als Override durch Akademie-Leitung dienen.
+
+Entscheidend:
+
+- `cohort_key` bestimmt die Kursversion.
+- `highest_stage_unlocked` bestimmt die sichtbare Stufentiefe.
+- `course_versions` + `stages.stage_number` liefern die konkreten Inhalte.
 
 ### academy_parts
 

@@ -89,6 +89,20 @@ Die höchste vorhandene Stufenrolle entscheidet:
 
 Zusätzlich kann `user_access.highest_stage_unlocked` in Supabase als Leitungs-Override genutzt werden.
 
+## Kursanzeige aus Kohorte und Stufe
+
+Die App berechnet die Kursanzeige immer aus zwei Informationen:
+
+1. `cohort_key` bestimmt die Kursversion.
+2. `highest_stage_unlocked` bestimmt die freigeschaltete Stufe.
+
+Beispiele:
+
+- User mit `Kohorte-2026-V1` und `Akademie-Stufe-3` sieht alte Stufe 1, alte Stufe 2 und alte Stufe 3.
+- User mit `Kohorte-2026-V2` und `Akademie-Stufe-3` sieht neue Stufe 1, neue Stufe 2 und neue Stufe 3.
+
+Die Stufennummern sind gleich. Die Inhalte kommen aus der jeweiligen Kursversion der Kohorte.
+
 ## Beispiel: neue Studierende
 
 Neue Studierende erhalten:
