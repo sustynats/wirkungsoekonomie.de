@@ -2,8 +2,8 @@ const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
-const analyticsMeasurementId = "G-KBSME2T45Y";
-const analyticsConsentKey = "wirkungsoekonomie-analytics-consent";
+const siteAnalyticsEndpoint = "https://akademie.wirkungsoekonomie.de/api/site-event";
+const siteAnalyticsSessionKey = "wirkungsoekonomie-site-session";
 
 const mainElement = document.querySelector("main");
 
@@ -77,76 +77,58 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
   }
 });
 
-function loadAnalytics() {
-  if (window.__wirkungAnalyticsLoaded) {
-    return;
-  }
-
-  window.__wirkungAnalyticsLoaded = true;
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag() {
-    window.dataLayer.push(arguments);
-  };
-
-  window.gtag("js", new Date());
-  window.gtag("config", analyticsMeasurementId);
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsMeasurementId}`;
-  document.head.append(script);
+function shouldSkipSiteAnalytics() {
+  return navigator.doNotTrack === "1" || window.doNotTrack === "1";
 }
 
-function createAnalyticsBanner() {
-  if (document.querySelector(".cookie-banner")) {
+function getSiteAnalyticsSessionId() {
+  try {
+    const existing = sessionStorage.getItem(siteAnalyticsSessionKey);
+    if (existing) {
+      return existing;
+    }
+
+    const sessionId =
+      window.crypto && "randomUUID" in window.crypto
+        ? window.crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    sessionStorage.setItem(siteAnalyticsSessionKey, sessionId);
+    return sessionId;
+  } catch (error) {
+    return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+  }
+}
+
+function sendSiteAnalyticsEvent(eventType) {
+  if (shouldSkipSiteAnalytics()) {
     return;
   }
 
-  const banner = document.createElement("section");
-  banner.className = "cookie-banner";
-  banner.setAttribute("aria-label", "Analytics-Einstellungen");
-  banner.innerHTML = `
-    <p class="cookie-banner-title">Analytics erlauben?</p>
-    <p>Wir nutzen Google Analytics, um zu verstehen, welche Inhalte gelesen werden. Die Messung startet erst nach Zustimmung.</p>
-    <div class="cookie-banner-actions">
-      <button class="btn btn-primary btn-small" type="button" data-analytics-consent="granted">Akzeptieren</button>
-      <button class="btn btn-secondary btn-small" type="button" data-analytics-consent="denied">Ablehnen</button>
-    </div>
-  `;
-
-  banner.addEventListener("click", (event) => {
-    if (!(event.target instanceof Element)) {
-      return;
-    }
-
-    const button = event.target.closest("[data-analytics-consent]");
-    if (!(button instanceof HTMLElement)) {
-      return;
-    }
-
-    const consent = button.dataset.analyticsConsent;
-    localStorage.setItem(analyticsConsentKey, consent);
-    banner.remove();
-
-    if (consent === "granted") {
-      loadAnalytics();
-    }
+  const payload = JSON.stringify({
+    eventType,
+    path: `${window.location.pathname}${window.location.search}`,
+    title: document.title,
+    referrer: document.referrer,
+    sessionId: getSiteAnalyticsSessionId(),
   });
 
-  document.body.append(banner);
-}
-
-try {
-  const analyticsConsent = localStorage.getItem(analyticsConsentKey);
-
-  if (analyticsConsent === "granted") {
-    loadAnalytics();
-  } else if (analyticsConsent !== "denied") {
-    createAnalyticsBanner();
+  if (navigator.sendBeacon) {
+    const sent = navigator.sendBeacon(siteAnalyticsEndpoint, new Blob([payload], { type: "application/json" }));
+    if (sent) {
+      return;
+    }
   }
-} catch (error) {
-  createAnalyticsBanner();
+
+  fetch(siteAnalyticsEndpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: payload,
+    keepalive: true,
+  }).catch(() => undefined);
 }
+
+sendSiteAnalyticsEvent("page_view");
+window.setInterval(() => sendSiteAnalyticsEvent("heartbeat"), 60000);
 
 const blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
