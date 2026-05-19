@@ -1674,7 +1674,49 @@ Stufe 2 bis 4 werden im MVP strukturell vorbereitet und über das Leitungsdashbo
 
 Nach vier abgeschlossenen Vorlesungen kann eine Prüfungsanfrage gestellt werden. Die Prüfung wird erst nach manueller Freigabe durch Akademie-Leitung sichtbar.
 
-## 14. Kurzfazit
+## 14. Datensparsame Analytics
+
+Google Analytics soll durch ein eigenes, kleines und datensparsames Analytics-System ersetzt werden.
+
+Die Architektur trennt zwei Bereiche:
+
+- öffentliche Website Analytics
+- Akademie Analytics
+
+Die öffentliche Website bleibt auf GitHub Pages und erhält nur ein kleines First-Party-Script. Dieses sendet datensparsame `page_view`- und optional `heartbeat`-Events an einen API-Endpunkt der Akademie-App:
+
+`https://akademie.wirkungsoekonomie.de/api/site-event`
+
+Die Akademie-App speichert zusätzlich personenbezogene Lernverwaltungsdaten, soweit sie für Login, Lernstand, Prüfungen, Betreuung und Zertifikate notwendig sind. Diese Daten sind nur für die Rolle `Akademie-Leitung` sichtbar.
+
+Grundsätze:
+
+- keine Werbeprofile
+- kein Google Analytics
+- kein Cross-Site-Tracking
+- keine Third-Party-Cookies
+- keine dauerhafte Speicherung vollständiger IP-Adressen
+- keine Vermischung von anonymen Website-Sessions und Akademie-Usern
+- keine öffentlichen Ranglisten
+- kein heimliches Lerntracking
+
+Vorgesehene Routen:
+
+- `/analytics` für öffentliche Website-Analytics
+- `/dozentin/analytics` oder langfristig `/leitung/analytics` für Akademie-Analytics
+
+Vorgesehene API-Endpunkte:
+
+- `POST /api/site-event`
+- `POST /api/academy-event`
+- `GET /api/analytics/site`
+- `GET /api/analytics/academy`
+
+Das vollständige Konzept steht in:
+
+`docs/analytics-konzept.md`
+
+## 15. Kurzfazit
 
 Die sauberste Architektur ist eine getrennte Akademie-App:
 
