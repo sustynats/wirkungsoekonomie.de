@@ -802,6 +802,43 @@ h4 {
   margin-top: auto;
 }
 
+.dossier-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.dossier-card {
+  align-content: start;
+}
+
+.dossier-links {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1.1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.blog-origin-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin: clamp(1.1rem, 3vw, 1.5rem) clamp(1.1rem, 3vw, 1.5rem) 0;
+  padding: 0.32rem 0.58rem;
+  border: 1px solid rgba(47, 125, 92, 0.28);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-load-more-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
 .blog-archive-note {
   display: grid;
   gap: 1rem;

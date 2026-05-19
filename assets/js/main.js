@@ -136,6 +136,9 @@ const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
 const blogOriginLinks = Array.from(document.querySelectorAll("[data-blog-origin-filter]"));
 const blogFilterStatus = document.querySelector(".blog-filter-status");
+const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
+const blogInitialLimit = 12;
+let blogExpanded = false;
 
 function setActiveBlogLinks(type, value) {
   blogFilterLinks.forEach((link) => {
@@ -159,24 +162,38 @@ function applyBlogFilter(type, value, label) {
   }
 
   let visibleCount = 0;
+  let matchedCount = 0;
 
   blogCards.forEach((card) => {
     const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
-    const isVisible =
+    const isMatch =
       type === "all" ||
       (type === "category" && card.dataset.category === value) ||
       (type === "tag" && tags.includes(value)) ||
       (type === "origin" && card.dataset.origin === value);
+    const isCollapsed = type === "all" && !blogExpanded && matchedCount >= blogInitialLimit;
 
-    card.hidden = !isVisible;
-    if (isVisible) {
+    if (isMatch) {
+      matchedCount += 1;
+    }
+
+    card.hidden = !isMatch || isCollapsed;
+    if (isMatch && !isCollapsed) {
       visibleCount += 1;
     }
   });
 
+  if (blogLoadMoreButton) {
+    blogLoadMoreButton.hidden = !(type === "all" && !blogExpanded && matchedCount > blogInitialLimit);
+  }
+
   if (blogFilterStatus) {
-    blogFilterStatus.textContent =
-      type === "all" ? `${visibleCount} Beiträge werden angezeigt.` : `${visibleCount} Beiträge zu „${label}“.`;
+    if (type === "all" && matchedCount > visibleCount) {
+      blogFilterStatus.textContent = `${visibleCount} von ${matchedCount} Beiträgen werden angezeigt.`;
+    } else {
+      blogFilterStatus.textContent =
+        type === "all" ? `${visibleCount} Beiträge werden angezeigt.` : `${visibleCount} Beiträge zu „${label}“.`;
+    }
   }
 
   setActiveBlogLinks(type, value);
@@ -198,9 +215,11 @@ blogFilterLinks.forEach((link) => {
     const label = link.textContent.trim();
 
     if (value === "all") {
+      blogExpanded = false;
       applyBlogFilter("all", "all", label);
       moveToBlogList("#beitraege");
     } else {
+      blogExpanded = true;
       applyBlogFilter("category", value, label);
       moveToBlogList(`#thema-${value}`);
     }
@@ -210,6 +229,7 @@ blogFilterLinks.forEach((link) => {
 blogTagLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
+    blogExpanded = true;
     applyBlogFilter("tag", link.dataset.blogTag, link.textContent.trim());
     moveToBlogList(`#tag-${link.dataset.blogTag}`);
   });
@@ -218,10 +238,18 @@ blogTagLinks.forEach((link) => {
 blogOriginLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
+    blogExpanded = true;
     applyBlogFilter("origin", link.dataset.blogOriginFilter, link.textContent.trim());
     moveToBlogList(`#${link.dataset.blogOriginFilter}-beitraege`);
   });
 });
+
+if (blogLoadMoreButton) {
+  blogLoadMoreButton.addEventListener("click", () => {
+    blogExpanded = true;
+    applyBlogFilter("all", "all", "Alle Beiträge");
+  });
+}
 
 if (blogCards.length) {
   const hash = decodeURIComponent(window.location.hash || "");
@@ -230,9 +258,11 @@ if (blogCards.length) {
 
   if (categoryMatch) {
     const link = document.querySelector(`[data-blog-filter="${categoryMatch[1]}"]`);
+    blogExpanded = true;
     applyBlogFilter("category", categoryMatch[1], link?.textContent.trim() || categoryMatch[1]);
   } else if (tagMatch) {
     const link = document.querySelector(`[data-blog-tag="${tagMatch[1]}"]`);
+    blogExpanded = true;
     applyBlogFilter("tag", tagMatch[1], link?.textContent.trim() || tagMatch[1]);
   } else {
     applyBlogFilter("all", "all", "Alle Beiträge");

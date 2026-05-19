@@ -398,6 +398,7 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
     for article in articles:
         cards.append(
             f"""          <article class="blog-card linkedin-archive-card" data-origin="linkedin">
+            <span class="blog-origin-badge">LinkedIn-Archiv</span>
             <p class="card-kicker">{html.escape(article.date_label)}</p>
             <h3 class="card-title">{html.escape(article.title)}</h3>
             <p class="card-text">{html.escape(description_for(article))}</p>
