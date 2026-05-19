@@ -869,10 +869,21 @@ h4 {
   margin-top: 1.5rem;
 }
 
+.blog-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: clamp(1.1rem, 3vw, 1.5rem) clamp(1.1rem, 3vw, 1.5rem) 0;
+}
+
+.editorial-feature-card .blog-badge-row,
+.dossier-card .blog-badge-row {
+  margin: 0;
+}
+
 .blog-origin-badge {
   display: inline-flex;
   width: fit-content;
-  margin: clamp(1.1rem, 3vw, 1.5rem) clamp(1.1rem, 3vw, 1.5rem) 0;
   padding: 0.32rem 0.58rem;
   border: 1px solid rgba(47, 125, 92, 0.28);
   border-radius: 999px;
@@ -902,6 +913,38 @@ h4 {
 
 .blog-origin-strip {
   margin-top: 1.25rem;
+}
+
+.blog-search {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 42rem;
+  margin-top: 1rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-search input {
+  width: 100%;
+  min-height: 3.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.blog-search input:focus {
+  outline: 3px solid rgba(47, 125, 92, 0.18);
+  border-color: rgba(47, 125, 92, 0.55);
 }
 
 .blog-filter-status {

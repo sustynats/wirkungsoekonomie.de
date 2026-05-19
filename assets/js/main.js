@@ -137,8 +137,10 @@ const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
 const blogOriginLinks = Array.from(document.querySelectorAll("[data-blog-origin-filter]"));
 const blogFilterStatus = document.querySelector(".blog-filter-status");
 const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
+const blogSearchInput = document.querySelector("[data-blog-search]");
 const blogInitialLimit = 12;
 let blogExpanded = false;
+let blogSearchQuery = "";
 
 function setActiveBlogLinks(type, value) {
   blogFilterLinks.forEach((link) => {
@@ -163,15 +165,26 @@ function applyBlogFilter(type, value, label) {
 
   let visibleCount = 0;
   let matchedCount = 0;
+  const hasSearch = blogSearchQuery.length >= 2;
 
   blogCards.forEach((card) => {
     const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
-    const isMatch =
+    const filterMatch =
       type === "all" ||
       (type === "category" && card.dataset.category === value) ||
       (type === "tag" && tags.includes(value)) ||
       (type === "origin" && card.dataset.origin === value);
-    const isCollapsed = type === "all" && !blogExpanded && matchedCount >= blogInitialLimit;
+    const haystack = [
+      card.textContent,
+      card.dataset.category,
+      card.dataset.origin,
+      card.dataset.tags,
+    ]
+      .join(" ")
+      .toLowerCase();
+    const searchMatch = !hasSearch || haystack.includes(blogSearchQuery);
+    const isMatch = filterMatch && searchMatch;
+    const isCollapsed = type === "all" && !blogExpanded && !hasSearch && matchedCount >= blogInitialLimit;
 
     if (isMatch) {
       matchedCount += 1;
@@ -184,11 +197,13 @@ function applyBlogFilter(type, value, label) {
   });
 
   if (blogLoadMoreButton) {
-    blogLoadMoreButton.hidden = !(type === "all" && !blogExpanded && matchedCount > blogInitialLimit);
+    blogLoadMoreButton.hidden = !(type === "all" && !blogExpanded && !hasSearch && matchedCount > blogInitialLimit);
   }
 
   if (blogFilterStatus) {
-    if (type === "all" && matchedCount > visibleCount) {
+    if (hasSearch) {
+      blogFilterStatus.textContent = `${visibleCount} Treffer für „${blogSearchQuery}“.`;
+    } else if (type === "all" && matchedCount > visibleCount) {
       blogFilterStatus.textContent = `${visibleCount} von ${matchedCount} Beiträgen werden angezeigt.`;
     } else {
       blogFilterStatus.textContent =
@@ -248,6 +263,14 @@ if (blogLoadMoreButton) {
   blogLoadMoreButton.addEventListener("click", () => {
     blogExpanded = true;
     applyBlogFilter("all", "all", "Alle Beiträge");
+  });
+}
+
+if (blogSearchInput) {
+  blogSearchInput.addEventListener("input", () => {
+    blogSearchQuery = blogSearchInput.value.trim().toLowerCase();
+    blogExpanded = blogSearchQuery.length >= 2;
+    applyBlogFilter("all", "all", "Suche");
   });
 }
 
