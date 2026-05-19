@@ -135,45 +135,90 @@ const blogCards = Array.from(document.querySelectorAll(".blog-card[data-category
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
 const blogOriginLinks = Array.from(document.querySelectorAll("[data-blog-origin-filter]"));
+const blogTypeLinks = Array.from(document.querySelectorAll("[data-blog-type-filter]"));
 const blogFilterStatus = document.querySelector(".blog-filter-status");
 const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
 const blogSearchInput = document.querySelector("[data-blog-search]");
+const blogResetButton = document.querySelector("[data-blog-reset]");
 const blogInitialLimit = 12;
-let blogExpanded = false;
-let blogSearchQuery = "";
+const blogLoadStep = 12;
+const blogFilterState = {
+  category: "all",
+  tag: "all",
+  origin: "all",
+  type: "all",
+  query: "",
+  limit: blogInitialLimit,
+};
 
-function setActiveBlogLinks(type, value) {
+function getBlogCardTypes(card) {
+  return Array.from(card.querySelectorAll(".blog-origin-badge")).map((badge) =>
+    badge.textContent.trim().toLowerCase().replace(/\s+/g, "-"),
+  );
+}
+
+function setActiveBlogLinks() {
   blogFilterLinks.forEach((link) => {
-    const isActive = type === "category" && link.dataset.blogFilter === value;
-    const isAll = type === "all" && link.dataset.blogFilter === "all";
-    link.classList.toggle("active", isActive || isAll);
+    link.classList.toggle("active", link.dataset.blogFilter === blogFilterState.category);
   });
 
   blogTagLinks.forEach((link) => {
-    link.classList.toggle("active", type === "tag" && link.dataset.blogTag === value);
+    link.classList.toggle("active", link.dataset.blogTag === blogFilterState.tag);
   });
 
   blogOriginLinks.forEach((link) => {
-    link.classList.toggle("active", type === "origin" && link.dataset.blogOriginFilter === value);
+    const origin = link.dataset.blogOriginFilter || "all";
+    link.classList.toggle("active", origin === blogFilterState.origin);
+  });
+
+  blogTypeLinks.forEach((link) => {
+    link.classList.toggle("active", link.dataset.blogTypeFilter === blogFilterState.type);
   });
 }
 
-function applyBlogFilter(type, value, label) {
+function getBlogFilterSummary(matchedCount, visibleCount) {
+  const activeParts = [];
+
+  if (blogFilterState.category !== "all") {
+    activeParts.push(`Kategorie: ${blogFilterState.category.replaceAll("-", " ")}`);
+  }
+  if (blogFilterState.tag !== "all") {
+    activeParts.push(`Tag: ${blogFilterState.tag}`);
+  }
+  if (blogFilterState.origin !== "all") {
+    activeParts.push(blogFilterState.origin === "redaktion" ? "Originale" : "LinkedIn-Archiv");
+  }
+  if (blogFilterState.type !== "all") {
+    activeParts.push(`Texttyp: ${blogFilterState.type.replaceAll("-", " ")}`);
+  }
+  if (blogFilterState.query.length >= 2) {
+    activeParts.push(`Suche: „${blogFilterState.query}“`);
+  }
+
+  const visibleText =
+    matchedCount > visibleCount
+      ? `${visibleCount} von ${matchedCount} Beiträgen werden angezeigt.`
+      : `${visibleCount} Beiträge gefunden.`;
+
+  return activeParts.length ? `${visibleText} Aktive Filter: ${activeParts.join(" · ")}.` : visibleText;
+}
+
+function applyBlogFilter({ scroll = false, hash = "" } = {}) {
   if (!blogCards.length) {
     return;
   }
 
   let visibleCount = 0;
   let matchedCount = 0;
-  const hasSearch = blogSearchQuery.length >= 2;
+  const hasSearch = blogFilterState.query.length >= 2;
 
   blogCards.forEach((card) => {
     const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
-    const filterMatch =
-      type === "all" ||
-      (type === "category" && card.dataset.category === value) ||
-      (type === "tag" && tags.includes(value)) ||
-      (type === "origin" && card.dataset.origin === value);
+    const types = getBlogCardTypes(card);
+    const categoryMatch = blogFilterState.category === "all" || card.dataset.category === blogFilterState.category;
+    const tagMatch = blogFilterState.tag === "all" || tags.includes(blogFilterState.tag);
+    const originMatch = blogFilterState.origin === "all" || card.dataset.origin === blogFilterState.origin;
+    const typeMatch = blogFilterState.type === "all" || types.includes(blogFilterState.type);
     const haystack = [
       card.textContent,
       card.dataset.category,
@@ -182,9 +227,9 @@ function applyBlogFilter(type, value, label) {
     ]
       .join(" ")
       .toLowerCase();
-    const searchMatch = !hasSearch || haystack.includes(blogSearchQuery);
-    const isMatch = filterMatch && searchMatch;
-    const isCollapsed = type === "all" && !blogExpanded && !hasSearch && matchedCount >= blogInitialLimit;
+    const searchMatch = !hasSearch || haystack.includes(blogFilterState.query);
+    const isMatch = categoryMatch && tagMatch && originMatch && typeMatch && searchMatch;
+    const isCollapsed = isMatch && matchedCount >= blogFilterState.limit;
 
     if (isMatch) {
       matchedCount += 1;
@@ -197,21 +242,33 @@ function applyBlogFilter(type, value, label) {
   });
 
   if (blogLoadMoreButton) {
-    blogLoadMoreButton.hidden = !(type === "all" && !blogExpanded && !hasSearch && matchedCount > blogInitialLimit);
+    blogLoadMoreButton.hidden = matchedCount <= blogFilterState.limit;
   }
 
   if (blogFilterStatus) {
-    if (hasSearch) {
-      blogFilterStatus.textContent = `${visibleCount} Treffer für „${blogSearchQuery}“.`;
-    } else if (type === "all" && matchedCount > visibleCount) {
-      blogFilterStatus.textContent = `${visibleCount} von ${matchedCount} Beiträgen werden angezeigt.`;
-    } else {
-      blogFilterStatus.textContent =
-        type === "all" ? `${visibleCount} Beiträge werden angezeigt.` : `${visibleCount} Beiträge zu „${label}“.`;
-    }
+    blogFilterStatus.textContent = getBlogFilterSummary(matchedCount, visibleCount);
   }
 
-  setActiveBlogLinks(type, value);
+  setActiveBlogLinks();
+
+  if (scroll) {
+    moveToBlogList(hash || "#beitraege");
+  }
+}
+
+function resetBlogFilters() {
+  blogFilterState.category = "all";
+  blogFilterState.tag = "all";
+  blogFilterState.origin = "all";
+  blogFilterState.type = "all";
+  blogFilterState.query = "";
+  blogFilterState.limit = blogInitialLimit;
+
+  if (blogSearchInput) {
+    blogSearchInput.value = "";
+  }
+
+  applyBlogFilter();
 }
 
 function moveToBlogList(hash) {
@@ -227,50 +284,62 @@ blogFilterLinks.forEach((link) => {
     event.preventDefault();
 
     const value = link.dataset.blogFilter;
-    const label = link.textContent.trim();
-
-    if (value === "all") {
-      blogExpanded = false;
-      applyBlogFilter("all", "all", label);
-      moveToBlogList("#beitraege");
-    } else {
-      blogExpanded = true;
-      applyBlogFilter("category", value, label);
-      moveToBlogList(`#thema-${value}`);
-    }
+    blogFilterState.category = value || "all";
+    blogFilterState.limit = blogInitialLimit;
+    applyBlogFilter({ scroll: true, hash: value === "all" ? "#beitraege" : `#thema-${value}` });
   });
 });
 
 blogTagLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    blogExpanded = true;
-    applyBlogFilter("tag", link.dataset.blogTag, link.textContent.trim());
-    moveToBlogList(`#tag-${link.dataset.blogTag}`);
+    const value = link.dataset.blogTag;
+    blogFilterState.tag = blogFilterState.tag === value ? "all" : value || "all";
+    blogFilterState.limit = blogInitialLimit;
+    applyBlogFilter({ scroll: true, hash: blogFilterState.tag === "all" ? "#beitraege" : `#tag-${value}` });
   });
 });
 
 blogOriginLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    blogExpanded = true;
-    applyBlogFilter("origin", link.dataset.blogOriginFilter, link.textContent.trim());
-    moveToBlogList(`#${link.dataset.blogOriginFilter}-beitraege`);
+    blogFilterState.origin = link.dataset.blogOriginFilter || "all";
+    blogFilterState.limit = blogInitialLimit;
+    applyBlogFilter({
+      scroll: true,
+      hash: blogFilterState.origin === "all" ? "#beitraege" : `#${blogFilterState.origin}-beitraege`,
+    });
+  });
+});
+
+blogTypeLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    blogFilterState.type = link.dataset.blogTypeFilter || "all";
+    blogFilterState.limit = blogInitialLimit;
+    applyBlogFilter({ scroll: true, hash: blogFilterState.type === "all" ? "#beitraege" : `#typ-${blogFilterState.type}` });
   });
 });
 
 if (blogLoadMoreButton) {
   blogLoadMoreButton.addEventListener("click", () => {
-    blogExpanded = true;
-    applyBlogFilter("all", "all", "Alle Beiträge");
+    blogFilterState.limit += blogLoadStep;
+    applyBlogFilter();
   });
 }
 
 if (blogSearchInput) {
   blogSearchInput.addEventListener("input", () => {
-    blogSearchQuery = blogSearchInput.value.trim().toLowerCase();
-    blogExpanded = blogSearchQuery.length >= 2;
-    applyBlogFilter("all", "all", "Suche");
+    blogFilterState.query = blogSearchInput.value.trim().toLowerCase();
+    blogFilterState.limit = blogInitialLimit;
+    applyBlogFilter();
+  });
+}
+
+if (blogResetButton) {
+  blogResetButton.addEventListener("click", () => {
+    resetBlogFilters();
+    moveToBlogList("#beitraege");
   });
 }
 
@@ -278,16 +347,15 @@ if (blogCards.length) {
   const hash = decodeURIComponent(window.location.hash || "");
   const categoryMatch = hash.match(/^#thema-(.+)$/);
   const tagMatch = hash.match(/^#tag-(.+)$/);
+  const typeMatch = hash.match(/^#typ-(.+)$/);
 
   if (categoryMatch) {
-    const link = document.querySelector(`[data-blog-filter="${categoryMatch[1]}"]`);
-    blogExpanded = true;
-    applyBlogFilter("category", categoryMatch[1], link?.textContent.trim() || categoryMatch[1]);
+    blogFilterState.category = categoryMatch[1];
   } else if (tagMatch) {
-    const link = document.querySelector(`[data-blog-tag="${tagMatch[1]}"]`);
-    blogExpanded = true;
-    applyBlogFilter("tag", tagMatch[1], link?.textContent.trim() || tagMatch[1]);
-  } else {
-    applyBlogFilter("all", "all", "Alle Beiträge");
+    blogFilterState.tag = tagMatch[1];
+  } else if (typeMatch) {
+    blogFilterState.type = typeMatch[1];
   }
+
+  applyBlogFilter();
 }
