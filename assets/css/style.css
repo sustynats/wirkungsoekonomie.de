@@ -51,6 +51,135 @@ a {
   color: inherit;
 }
 
+.glossary-term {
+  color: inherit;
+  border-radius: 3px;
+  cursor: help;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.glossary-term:hover,
+.glossary-term:focus-visible {
+  color: var(--green);
+  background: rgba(47, 125, 92, 0.08);
+}
+
+.glossary-card {
+  position: fixed;
+  z-index: 1200;
+  width: min(320px, calc(100vw - 2rem));
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 8px;
+  background: #fffaf1;
+  box-shadow: 0 18px 44px rgba(11, 16, 32, 0.14);
+  color: var(--navy);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.glossary-card[hidden],
+.glossary-sheet-backdrop[hidden] {
+  display: none;
+}
+
+.glossary-card-title,
+.glossary-sheet-title {
+  margin: 0 0 0.4rem;
+  color: var(--navy);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.glossary-card-definition,
+.glossary-sheet-definition {
+  margin: 0;
+  color: var(--text);
+}
+
+.glossary-card-link,
+.glossary-sheet-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: var(--green);
+  font-size: 0.86rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.glossary-card-link:hover,
+.glossary-card-link:focus-visible,
+.glossary-sheet-link:hover,
+.glossary-sheet-link:focus-visible {
+  text-decoration: underline;
+}
+
+.glossary-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(11, 16, 32, 0.22);
+}
+
+.glossary-sheet {
+  position: relative;
+  width: min(100%, 680px);
+  max-height: 45vh;
+  overflow: auto;
+  padding: 1.35rem 1.25rem 1.25rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 12px 12px 8px 8px;
+  background: #fffaf1;
+  box-shadow: 0 -18px 48px rgba(11, 16, 32, 0.18);
+  color: var(--navy);
+}
+
+.glossary-sheet-close {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.7rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.glossary-sheet-open {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glossary-term {
+    transition: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .glossary-card {
+    display: none !important;
+  }
+
+  .glossary-term {
+    cursor: pointer;
+  }
+}
+
 :focus {
   outline: none;
 }
