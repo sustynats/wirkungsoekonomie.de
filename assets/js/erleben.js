@@ -361,6 +361,8 @@ const weakestFieldEl = document.querySelector("[data-weakest-field]");
 const finalScoreEl = document.querySelector("[data-final-score]");
 const taxRateEl = document.querySelector("[data-tax-rate]");
 const totalPriceEl = document.querySelector("[data-total-price]");
+const productExplanationEl = document.querySelector("[data-product-explanation]");
+const productFeedbackEl = document.querySelector("[data-product-feedback]");
 const priceSummaryEl = document.querySelector("[data-price-summary]");
 const barsEl = document.querySelector("[data-impact-bars]");
 const presetButtons = Array.from(document.querySelectorAll("[data-preset]"));
@@ -576,6 +578,14 @@ function renderResults() {
   taxRateEl.textContent = `${Math.round(result.taxRate * 100)} %`;
   taxRateEl.className = `score-pill ${toneFromScore(result.finalScore)}`;
   totalPriceEl.textContent = currencyFormatter.format(result.totals.grand);
+  if (productExplanationEl) {
+    productExplanationEl.textContent = `Der Score folgt dem schwächsten Wirkungsfeld "${result.weakestField}". Dadurch wird sichtbar, wo die Lieferkette zuerst verbessert werden müsste.`;
+  }
+  if (productFeedbackEl) {
+    productFeedbackEl.textContent = result.finalScore < 0
+      ? "Negative Wirkung erzeugt Malus und Steuerdruck. Bessere Lieferanten würden Kostenrisiken senken und Kapital in resilientere Wertschöpfung lenken."
+      : "Positive Wirkung reduziert Belastungen. Gute Lieferanten werden nicht nur moralisch, sondern ökonomisch attraktiver.";
+  }
 
   priceSummaryEl.innerHTML = `
     <div class="price-row"><span>Summe netto</span><strong>${currencyFormatter.format(result.totals.net)}</strong></div>
@@ -663,11 +673,19 @@ function initCompass() {
   const inputs = Array.from(compass.querySelectorAll("input[type='range']"));
   const title = compass.querySelector("[data-compass-title]");
   const score = compass.querySelector("[data-compass-score]");
+  const weakest = compass.querySelector("[data-compass-weakest]");
   const text = compass.querySelector("[data-compass-text]");
+  const feedback = compass.querySelector("[data-compass-feedback]");
 
   function update() {
     const values = Object.fromEntries(inputs.map((input) => [input.name, Number(input.value)]));
     const impactScore = Math.round((values.tax + values.democracy + values.boundaries + (100 - values.price)) / 4);
+    const weakestSignal = [
+      ["Preisdominanz", 100 - values.price],
+      ["Wirkungssteuer", values.tax],
+      ["Demokratie", values.democracy],
+      ["Planetare Grenzen", values.boundaries]
+    ].sort((a, b) => a[1] - b[1])[0][0];
     let profile = "Berichtswesen";
     let description = "Wirkung wird sichtbar gemacht, aber sie verändert Preise und Prioritäten noch vorsichtig.";
 
@@ -681,7 +699,15 @@ function initCompass() {
 
     title.textContent = profile;
     score.textContent = `${impactScore} / 100`;
+    if (weakest) weakest.textContent = weakestSignal;
     text.textContent = description;
+    if (feedback) {
+      feedback.textContent = impactScore >= 72
+        ? "Steuern, Investitionen und Sprache würden Wirkung aktiv zurück in Entscheidungen spiegeln."
+        : impactScore < 45
+          ? "Die Rückkopplung bleibt schwach: Kosten, Reichweite oder Kapital dominieren weiter die Entscheidung."
+          : "Die Rückkopplung beginnt, braucht aber klarere Kriterien, Daten und Verantwortlichkeiten.";
+    }
   }
 
   inputs.forEach((input) => input.addEventListener("input", update));
@@ -1224,8 +1250,18 @@ function renderMediaScore(root, title, text, scores, explanation) {
   trafficEl.textContent = traffic;
   trafficEl.className = trafficClass;
   root.querySelector("[data-media-harm]").textContent = harms.join(", ") || "keine dominante";
-  root.querySelector("[data-media-benefit]").textContent = benefits.join(", ") || "gering";
+  root.querySelector("[data-media-benefit]").textContent = benefits.length
+    ? `stärkt ${benefits.join(", ")}`
+    : score < -0.5 ? "Vertrauensverlust möglich" : "abhängig von Reichweite";
   root.querySelector("[data-media-explanation]").textContent = explanation;
+  const feedbackEl = root.querySelector("[data-media-feedback]");
+  if (feedbackEl) {
+    feedbackEl.textContent = score < -0.5
+      ? "Bei hoher Reichweite könnten Vertrauen, Minderheitenschutz und Diskursqualität belastet werden."
+      : score >= 1
+        ? "Bei hoher Reichweite könnte der Beitrag Orientierung, Kontext und demokratische Resilienz stärken."
+        : "Die Wirkung ist ambivalent und hängt besonders von Reichweite, Kontext und Korrekturfähigkeit ab.";
+  }
   root.querySelector("[data-media-dimensions]").innerHTML = Object.entries(scores).map(([label, value]) => `
     <div class="media-dimension">
       <div class="media-dimension-head"><span>${label}</span><span>${formatScore(value)}</span></div>
@@ -1313,14 +1349,25 @@ function initPlatformLab() {
     const polarization = clamp(Math.round(values.outrage * 0.35 + values.identity * 0.35 + values.emotion * 0.2), 0, 100);
     const trust = clamp(Math.round(72 + scenario.base * 12 - polarization * 0.38), 0, 100);
     const democracy = clampScore(scenario.base - (amplifier - 1) * (scenario.base < 0 ? 0.75 : 0.15));
+    const weakSignals = [
+      ["Polarisierung", 100 - polarization],
+      ["Vertrauen", trust],
+      ["Demokratie", ((democracy + 3) / 6) * 100],
+      ["Reichweite", scenario.base < 0 ? 100 - clamp(reach / 120, 0, 100) : clamp(reach / 120, 0, 100)]
+    ].sort((a, b) => a[1] - b[1]);
 
     root.querySelector("[data-platform-title]").textContent = scenario.title;
     root.querySelector("[data-platform-base]").textContent = formatScore(scenario.base);
+    root.querySelector("[data-platform-weakest]").textContent = weakSignals[0][0];
     root.querySelector("[data-platform-factor]").textContent = `${amplifier.toLocaleString("de-DE", { maximumFractionDigits: 1 })}x`;
-    root.querySelector("[data-platform-reach]").textContent = reach.toLocaleString("de-DE");
     root.querySelector("[data-platform-democracy]").textContent = formatScore(democracy);
     root.querySelector("[data-platform-note]").textContent = scenario.note;
+    root.querySelector("[data-platform-explanation]").textContent = `Aus einer Grundwirkung von ${formatScore(scenario.base)} wird durch Algorithmusfaktoren ein Verstärkungsfaktor von ${amplifier.toLocaleString("de-DE", { maximumFractionDigits: 1 })}x und eine simulierte Reichweite von ${reach.toLocaleString("de-DE")}.`;
+    root.querySelector("[data-platform-feedback]").textContent = democracy < 0
+      ? "Die Rückkopplung kann Polarisierung und Vertrauensverlust vergrößern, obwohl der Inhalt formal als Meinung erscheint."
+      : "Die Rückkopplung kann Orientierung verstärken, wenn Reichweite nicht primär über Empörung und Feindbilder entsteht.";
     root.querySelector("[data-platform-bars]").innerHTML = [
+      ["Reichweitenwirkung", clamp(Math.round(reach / 120), 0, 100)],
       ["Polarisierungswirkung", polarization],
       ["Vertrauenswirkung", trust],
       ["Kommentaraktivität", values.comments],
@@ -1359,13 +1406,20 @@ function initRiskLab() {
     const stage = decisionRoom >= 68 ? "Frühes Handeln" : decisionRoom >= 42 ? "Spätes Handeln" : "Krisenmodus";
     const financeLabel = financeCost >= 70 ? "Risikoprämien hoch" : financeCost >= 42 ? "Kapital wird selektiv" : "Kapitalzugang stabiler";
     const resilienceLabel = resilience >= 70 ? "robust" : resilience >= 45 ? "verwundbar" : "instabil";
+    const weakestRisk = [
+      ["Systemrisiko", 100 - systemRisk],
+      ["Handlungsspielraum", decisionRoom],
+      ["Finanzierungsdruck", 100 - financeCost],
+      ["Lieferkettenresilienz", resilience]
+    ].sort((a, b) => a[1] - b[1])[0][0];
 
     root.querySelector("[data-risk-title]").textContent = scenario.title;
     root.querySelector("[data-risk-score]").textContent = `${systemRisk} / 100`;
-    root.querySelector("[data-risk-room]").textContent = stage;
+    root.querySelector("[data-risk-weakest]").textContent = weakestRisk;
     root.querySelector("[data-risk-finance]").textContent = financeLabel;
     root.querySelector("[data-risk-resilience]").textContent = resilienceLabel;
     root.querySelector("[data-risk-explanation]").textContent = scenario.explanation;
+    root.querySelector("[data-risk-feedback]").textContent = `${stage}: ${decisionRoom >= 68 ? "frühe Transparenz hält Optionen offen und kann Finanzierungskosten senken." : decisionRoom >= 42 ? "Entscheidungen bleiben möglich, werden aber teurer und konfliktanfälliger." : "Notlösungen dominieren, Lieferfähigkeit und Marge geraten unter Druck."}`;
     root.querySelector("[data-risk-bars]").innerHTML = [
       ["Systemrisiko", systemRisk],
       ["Handlungsspielraum", decisionRoom],
