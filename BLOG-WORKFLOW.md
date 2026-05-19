@@ -75,6 +75,8 @@ Sie gelten als veröffentlichte Seiten und dürfen nicht ersatzlos entfernt werd
 
 Das Importskript `tools/import_linkedin_articles.py` erzeugt neue LinkedIn-Archivseiten und aktualisiert `blog/linkedin-artikel.html`, löscht bestehende veröffentlichte HTML-Dateien aber nicht.
 
+Nach Importen wird `tools/sync_layout.py` ausgeführt, damit Header und Footer der neu erzeugten Seiten wieder dem zentralen Template unter `templates/` entsprechen.
+
 ## SEO-Daten pflegen
 
 Jede Artikelseite braucht:

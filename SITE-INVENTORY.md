@@ -36,7 +36,7 @@ Die Website ist eine statische HTML/CSS/JS-Site. Es gibt kein CMS, keine Build-P
 
 ## Strukturelle Beobachtungen
 
-- Navigation und Footer sind HTML-dupliziert. Eine spätere echte Vereinheitlichung sollte über Includes, einen Static-Site-Generator oder ein kleines Template-Skript erfolgen.
+- Navigation und Footer sind HTML-dupliziert, werden aber über `templates/header.html`, `templates/footer.html` und `tools/sync_layout.py` synchronisiert. Eine spätere echte Vereinheitlichung könnte über Includes oder einen Static-Site-Generator erfolgen.
 - Aktuell verbessert `assets/js/main.js` die Navigation clientseitig: aktive Navigationspunkte und `aria-current` werden aus der aktuellen URL abgeleitet.
 - Die Blogübersicht ist statisch, nutzt aber `data-category`, `data-tags` und `data-origin` als leichte Datenstruktur für Filter.
 - Das LinkedIn-Importskript darf keine veröffentlichten Artikel löschen. Neue Importe sollen ergänzen oder überschreiben, aber bestehende URLs nicht ersatzlos entfernen.
@@ -59,4 +59,3 @@ Diese Optimierung ändert keine bestehenden Artikel-URLs. Betroffen sind nur Dar
 - `https://wirkungsoekonomie.de/assets/css/style.css`
 - `https://wirkungsoekonomie.de/assets/js/main.js`
 - `tools/import_linkedin_articles.py` für künftige Importe.
-

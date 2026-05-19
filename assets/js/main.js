@@ -16,6 +16,16 @@ if (navToggle && siteNav) {
     navToggle.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
   });
 
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Node) || !siteNav.classList.contains("open")) {
+      return;
+    }
+
+    if (!siteNav.contains(event.target) && !navToggle.contains(event.target)) {
+      closeNavigation();
+    }
+  });
+
   siteNav.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
       closeNavigation();

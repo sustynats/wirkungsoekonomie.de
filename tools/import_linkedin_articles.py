@@ -586,6 +586,9 @@ def main() -> None:
     ARCHIVE_PATH.write_text(render_archive(articles, skipped), encoding="utf-8")
     update_blog_overview()
     write_sitemap(articles)
+    import sync_layout
+
+    sync_layout.main()
     print(f"Imported {len(articles)} articles; skipped {len(skipped)} files.")
     for source, reason in skipped:
         print(f"SKIP\t{reason}\t{source.name}")
