@@ -825,12 +825,71 @@ h4 {
   gap: 0.9rem;
 }
 
+.glossary-nav-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
+  gap: 1.25rem;
+  margin-top: clamp(1.5rem, 4vw, 2.4rem);
+  padding: clamp(1rem, 3vw, 1.35rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.glossary-keynav,
+.alphabet-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.glossary-keynav a,
+.alphabet-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.1rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.06);
+  color: var(--green-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.alphabet-nav a {
+  justify-content: center;
+  min-width: 2.15rem;
+  padding-inline: 0.5rem;
+}
+
+.glossary-keynav a:hover,
+.alphabet-nav a:hover {
+  border-color: rgba(47, 125, 92, 0.5);
+  background: rgba(47, 125, 92, 0.12);
+}
+
 .term-list div,
 .abbr-list div {
   display: grid;
   gap: 0.65rem;
   padding: clamp(1rem, 3vw, 1.4rem) 0;
   border-top: 1px solid var(--line);
+}
+
+.term-list div[id],
+.term-list dt[id],
+.abbr-list dt[id] {
+  scroll-margin-top: 110px;
+}
+
+.term-list div:target,
+.term-list dt:target {
+  border-radius: 8px;
+  outline: 2px solid rgba(47, 125, 92, 0.28);
+  outline-offset: 0.55rem;
 }
 
 .term-list div:last-child,
@@ -867,6 +926,30 @@ h4 {
 
 .term-list.compact dd {
   line-height: 1.68;
+}
+
+.definition-box {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1.6rem 0;
+  padding: clamp(1rem, 3vw, 1.35rem);
+  border: 1px solid rgba(200, 155, 60, 0.35);
+  border-radius: var(--radius);
+  background: rgba(200, 155, 60, 0.08);
+}
+
+.definition-box h3,
+.definition-box p {
+  margin: 0;
+}
+
+.definition-box h3 {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+}
+
+.definition-box p:last-child {
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .accordion-item p {
@@ -3459,6 +3542,10 @@ h4 {
 @media (max-width: 899px) {
   .demo-method-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glossary-nav-panel {
+    grid-template-columns: 1fr;
   }
 }
 
