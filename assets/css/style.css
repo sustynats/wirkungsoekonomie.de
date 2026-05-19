@@ -715,6 +715,19 @@ textarea {
   padding: clamp(1.25rem, 4vw, 2rem);
 }
 
+.book-card > img,
+.card > img[src*="assets/img/book/cover"] {
+  width: min(100%, 14rem);
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+.card > img[src*="assets/img/book/cover"] {
+  width: auto;
+  max-height: min(68vh, 34rem);
+}
+
 .founder-card {
   align-items: center;
 }
@@ -3650,6 +3663,10 @@ textarea {
 @media (min-width: 700px) {
   .book-card {
     grid-template-columns: 9rem 1fr;
+  }
+
+  .book-card > img {
+    width: 9rem;
   }
 
   .download-card {
