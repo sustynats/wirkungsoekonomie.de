@@ -115,8 +115,8 @@ Empfohlenes Vorgehen:
    `GET /guilds/{guild_id}/members/{discord_user_id}`
 
 4. Die Route prüft, ob in `roles` die konfigurierte Rollen-ID für `Akademie-Zugang` enthalten ist.
-5. Das Ergebnis wird in Supabase in `enrollments` gespeichert.
-6. Geschützte Seiten prüfen nicht nur eine Session, sondern auch den aktiven Enrollment-Status.
+5. Das Ergebnis wird in Supabase in `user_access` gespeichert.
+6. Geschützte Seiten prüfen nicht nur eine Session, sondern auch den aktiven Zugangs- und Kohortenstatus.
 
 Wichtig:
 
@@ -126,16 +126,153 @@ Wichtig:
 - Je nach Discord-Konfiguration kann der Server Members Intent nötig sein.
 - Der Discord Bot Token darf nie im Browser landen.
 
-### Rollen- und Statuslogik
+### Discord-Rollenmodell
 
-Mögliche Enrollment-Status:
+Aktuell existieren auf dem Discord-Server diese Rollen:
 
-- `pending`: Login vorhanden, Rolle noch nicht bestätigt
-- `active`: Rolle bestätigt, Zugang erlaubt
-- `revoked`: Zugang wurde entzogen
-- `completed`: Akademie abgeschlossen
+- Rookie
+- Standard
+- Level2
+- Akademie-Zugang
+- Kohorte-2026-V1
+- Kohorte-2026-V2
+- Student:in
+- Absolvent:in
+- Mentor:in
+- Team
+- @everyone
 
-Die App sollte die Rolle nicht nur beim ersten Login prüfen, sondern regelmäßig erneut:
+Für die Akademie-App relevant sind nur:
+
+- Akademie-Zugang
+- Kohorte-2026-V1
+- Kohorte-2026-V2
+- Student:in
+- Absolvent:in
+- Mentor:in
+- Team
+
+Die Rollen `Rookie`, `Standard` und `Level2` sind Community-/Discord-Level-Rollen und dürfen für die Akademie-App nicht als Zugangskriterium verwendet werden.
+
+#### Zugang
+
+Die Rolle `Akademie-Zugang` ist die Tür in den Studienraum. Ohne diese Rolle gibt es keinen Zugriff auf Dashboard, Module, Prüfungen oder Lernstand. Ausnahme: `Team` kann als interne Admin-/Redaktionsrolle Zugriff erhalten, auch wenn keine Kohorte gesetzt ist.
+
+Prüflogik:
+
+1. User loggt sich mit Discord ein.
+2. App prüft serverseitig Discord User ID, Servermitgliedschaft und Rollen.
+3. Ohne Servermitgliedschaft erscheint die Servermitgliedschaft-Meldung.
+4. Ohne `Akademie-Zugang` erscheint die Freischaltungs-Meldung.
+5. Mit `Akademie-Zugang` wird der User in Supabase angelegt oder aktualisiert.
+6. Danach entscheidet die Kohortenrolle, welche Kursversion angezeigt wird.
+
+#### Kohorten
+
+- `Kohorte-2026-V1` = alte Kurse / alte Inhalte / alte Prüfungsstruktur
+- `Kohorte-2026-V2` = neue Akademie-Struktur / neue Inhalte / neuer Studienpfad
+
+Wenn ein User beide Kohortenrollen hat:
+
+- `Team` und `Mentor:in` dürfen beide Kursversionen sehen.
+- Normale Student:innen sehen standardmäßig die neuere Kohorte, also `Kohorte-2026-V2`.
+
+Wenn ein User `Akademie-Zugang`, aber keine Kohortenrolle hat, erscheint:
+
+`Dein Akademie-Zugang ist aktiv, aber dir wurde noch keine Kohorte zugewiesen. Bitte melde dich im Discord-Server oder warte auf die Zuordnung.`
+
+#### Statusrollen
+
+- `Student:in` = aktiv eingeschrieben
+- `Absolvent:in` = Studium abgeschlossen
+- `Mentor:in` = darf perspektivisch andere begleiten oder erweiterte Einsicht erhalten
+- `Team` = Admin-/Redaktions-/Betreuungsrolle
+
+MVP-Berechtigungen:
+
+- `Akademie-Zugang` + `Kohorte-2026-V1` + `Student:in` -> Zugang zu alten Kursinhalten
+- `Akademie-Zugang` + `Kohorte-2026-V2` + `Student:in` -> Zugang zum neuen Studienpfad
+- `Akademie-Zugang` + `Absolvent:in` -> Zugang zu Archiv/Abschlussbereich, später Zertifikat
+- `Akademie-Zugang` + `Mentor:in` -> später Mentor:innen-Dashboard
+- `Team` -> Adminzugang bzw. interne Vorschau, unabhängig von Kohorte
+
+Für den MVP reicht:
+
+- `Akademie-Zugang` prüfen
+- Kohorte prüfen
+- `Student:in` optional als Status speichern
+- `Team` als Adminflag speichern
+
+#### Warum Lernstand nicht über Discord-Rollen läuft
+
+Discord regelt Zugang, Kohorte und groben Status. Supabase regelt Lernstand, Module, Prüfungen, Fortschritt und Freischaltungen.
+
+Es werden keine Modulrollen wie `Modul 1`, `Teil I` oder `Prüfung bestanden` in Discord angelegt. Modulfreischaltungen gehören in Supabase, weil sie personenbezogen, versioniert und prüfungsabhängig sind.
+
+#### Environment Variables für Rollen-IDs
+
+Rollen müssen über IDs geprüft werden, nicht über Namen. Rollennamen können später geändert werden.
+
+Erforderliche Werte:
+
+- `DISCORD_CLIENT_ID`
+- `DISCORD_CLIENT_SECRET`
+- `DISCORD_GUILD_ID`
+- `DISCORD_ROLE_AKADEMIE_ZUGANG_ID`
+- `DISCORD_ROLE_KOHORTE_2026_V1_ID`
+- `DISCORD_ROLE_KOHORTE_2026_V2_ID`
+- `DISCORD_ROLE_STUDENT_ID`
+- `DISCORD_ROLE_ABSOLVENT_ID`
+- `DISCORD_ROLE_MENTOR_ID`
+- `DISCORD_ROLE_TEAM_ID`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
+
+#### Serverseitige Prüfung
+
+Discord OAuth soll serverseitig ausgewertet werden. Voraussichtlich benötigte Scopes:
+
+- `identify`
+- `guilds`
+- `guilds.members.read`
+
+Supabase Auth übernimmt den Discord Login. Ob Supabase die benötigten Scopes und Rolleninformationen vollständig liefert, muss praktisch geprüft werden. Falls nicht, übernimmt die Next.js-App nach dem Login eine ergänzende serverseitige Prüfung über Discord API und Bot Token.
+
+Rollenprüfung darf niemals nur im Browser stattfinden.
+
+#### Fehlermeldungen
+
+Ohne Akademie-Zugang:
+
+`Dein Zugang zur WÖk-Akademie ist noch nicht freigeschaltet. Bitte melde dich im Discord-Server oder warte auf die Freischaltung.`
+
+Ohne Kohorte:
+
+`Dein Akademie-Zugang ist aktiv, aber dir wurde noch keine Kohorte zugewiesen. Bitte melde dich im Discord-Server oder warte auf die Zuordnung.`
+
+Bei fehlender Discord-Servermitgliedschaft:
+
+`Du bist noch nicht mit dem WÖk-Discord-Server verbunden. Bitte tritt dem Server bei und melde dich danach erneut an.`
+
+#### Alte und neue Kurse parallel führen
+
+Kursinhalte sollen versionierbar sein.
+
+- `Kohorte-2026-V1` sieht alte Inhalte.
+- `Kohorte-2026-V2` sieht neue Inhalte.
+- Alte Studierende werden nicht automatisch auf neue Inhalte umgestellt.
+- Neue Studierende starten in V2.
+
+Das Dashboard zeigt:
+
+- Name / Discord-Username
+- Rolle: Student:in, Mentor:in, Team oder Absolvent:in
+- Kohorte: 2026 V1 oder 2026 V2
+- aktueller Lernstand
+- freigeschaltete Module
+
+Die App sollte die Rollen nicht nur beim ersten Login prüfen, sondern regelmäßig erneut:
 
 - bei jedem Login
 - bei Zugriff auf geschützte Server-Seiten
@@ -152,25 +289,55 @@ create table public.users (
   id uuid primary key references auth.users(id) on delete cascade,
   discord_user_id text unique not null,
   discord_username text,
-  email text,
   avatar_url text,
   created_at timestamptz not null default now(),
   last_login_at timestamptz
 );
 ```
 
-### enrollments
+### user_access
 
-Speichert den Zugang zur Akademie.
+Speichert Zugang, Kohorte und Statusrollen aus Discord.
 
 ```sql
-create table public.enrollments (
+create table public.user_access (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null references public.users(id) on delete cascade,
-  status text not null default 'pending',
-  discord_role_verified_at timestamptz,
-  created_at timestamptz not null default now(),
+  has_akademie_zugang boolean not null default false,
+  cohort_key text,
+  is_student boolean not null default false,
+  is_absolvent boolean not null default false,
+  is_mentor boolean not null default false,
+  is_team boolean not null default false,
+  discord_roles_snapshot jsonb not null default '{}'::jsonb,
+  verified_at timestamptz,
+  updated_at timestamptz not null default now(),
   unique (user_id)
+);
+```
+
+### cohorts
+
+```sql
+create table public.cohorts (
+  id uuid primary key default gen_random_uuid(),
+  key text unique not null,
+  title text not null,
+  description text,
+  version text not null,
+  is_active boolean not null default true
+);
+```
+
+### course_versions
+
+```sql
+create table public.course_versions (
+  id uuid primary key default gen_random_uuid(),
+  cohort_key text not null references public.cohorts(key) on delete restrict,
+  title text not null,
+  description text,
+  is_active boolean not null default true
 );
 ```
 
@@ -567,7 +734,13 @@ Wichtig:
    - `DISCORD_CLIENT_SECRET`
    - `DISCORD_BOT_TOKEN`
    - `DISCORD_GUILD_ID`
-   - `DISCORD_ACADEMY_ROLE_ID`
+   - `DISCORD_ROLE_AKADEMIE_ZUGANG_ID`
+   - `DISCORD_ROLE_KOHORTE_2026_V1_ID`
+   - `DISCORD_ROLE_KOHORTE_2026_V2_ID`
+   - `DISCORD_ROLE_STUDENT_ID`
+   - `DISCORD_ROLE_ABSOLVENT_ID`
+   - `DISCORD_ROLE_MENTOR_ID`
+   - `DISCORD_ROLE_TEAM_ID`
    - `NEXT_PUBLIC_SUPABASE_URL`
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
    - `SUPABASE_SERVICE_ROLE_KEY`
