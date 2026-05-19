@@ -32,11 +32,11 @@ https://wirkungsoekonomie.de/blog/linkedin/2026-03-17-das-grote-missverstandnis-
 Status: prüfen
 Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Das größte Missverständnis bei Nachhaltigkeit.
 
-https://wirkungsoekonomie.de/blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-wie-hoch-ware-der-wirkungssteuersatz-auf-ihr-parteiprogramm.html
+https://wirkungsoekonomie.de/blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html
 Status: prüfen
 Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms.
 
-https://wirkungsoekonomie.de/blog/wirkung-statt-weltbild-afd-regierungsprogramm.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-wie-hoch-ware-der-wirkungssteuersatz-auf-ihr-parteiprogramm.html
+https://wirkungsoekonomie.de/blog/wirkung-statt-weltbild-afd-regierungsprogramm.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html
 Status: prüfen
 Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Wirkung statt Weltbild.
 
