@@ -715,6 +715,62 @@ textarea {
   padding: clamp(1.25rem, 4vw, 2rem);
 }
 
+.founder-card {
+  align-items: center;
+}
+
+.founder-portrait {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.founder-portrait img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.founder-portrait figcaption {
+  padding: 0.85rem 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.profile-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.profile-facts div {
+  padding: 1.15rem;
+  background: var(--white);
+}
+
+.profile-facts dt {
+  margin-bottom: 0.25rem;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.profile-facts dd {
+  margin: 0;
+  color: var(--navy);
+  font-weight: 760;
+  line-height: 1.35;
+}
+
 .book-cover {
   display: grid;
   min-height: 18rem;
@@ -3818,6 +3874,10 @@ textarea {
   }
 
   .impact-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-facts {
     grid-template-columns: 1fr;
   }
 
