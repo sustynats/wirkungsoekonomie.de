@@ -701,6 +701,66 @@ textarea {
   color: var(--muted);
 }
 
+.academy-part-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.academy-part-card {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.academy-part-card .card-text,
+.academy-part-card p {
+  margin-top: 0;
+}
+
+.module-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.module-pill-list li {
+  padding: 0.42rem 0.62rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(246, 241, 232, 0.72);
+  color: var(--navy);
+  font-size: 0.88rem;
+  font-weight: 760;
+  line-height: 1.25;
+}
+
+.competence-note {
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.competence-note strong {
+  color: var(--navy);
+}
+
+.status-note {
+  width: fit-content;
+  padding: 0.48rem 0.72rem;
+  border: 1px solid rgba(47, 125, 92, 0.24);
+  border-radius: var(--radius);
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .card-number {
   display: block;
   margin-bottom: 1rem;
@@ -3820,6 +3880,7 @@ textarea {
 
   .card-grid,
   .three-grid,
+  .academy-part-grid,
   .tool-lab,
   .experience-path-grid,
   .everyday-grid,
