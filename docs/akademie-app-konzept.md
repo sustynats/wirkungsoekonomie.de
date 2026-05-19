@@ -210,9 +210,44 @@ Für den MVP reicht:
 
 - `Akademie-Zugang` prüfen
 - Kohorte prüfen
+- höchste Akademie-Stufe aus Discord-Rollen ermitteln
 - `Student:in` optional als Status speichern
 - `Team` als Teamflag speichern
 - `Akademie-Leitung` als höchste Berechtigungsstufe speichern
+
+#### Stufenrollen
+
+Zusätzlich werden für die neue Akademie-Struktur diese Discord-Rollen vorgesehen:
+
+- `Akademie-Stufe-1`
+- `Akademie-Stufe-2`
+- `Akademie-Stufe-3`
+- `Akademie-Stufe-4`
+
+Diese Rollen steuern nur, welche Akademie-Stufe grundsätzlich sichtbar ist. Sie steuern nicht einzelne Vorlesungen, Prüfungen oder Lernschritte.
+
+Logik:
+
+- `Akademie-Stufe-1` = Stufe 1 sichtbar
+- `Akademie-Stufe-2` = Stufe 1 und 2 sichtbar
+- `Akademie-Stufe-3` = Stufe 1, 2 und 3 sichtbar
+- `Akademie-Stufe-4` = Stufe 1, 2, 3 und 4 sichtbar
+
+Die höchste vorhandene Stufenrolle entscheidet. Hat ein User `Akademie-Stufe-3`, dann werden Stufe 1, 2 und 3 grundsätzlich angezeigt.
+
+Keine Discord-Rollen anlegen für:
+
+- einzelne Vorlesungen
+- einzelne Prüfungen
+- einzelne Module
+- bestandene Prüfungen
+
+Begründung: Discord regelt Zugang, Kohorte und Stufe. Supabase regelt Vorlesungsfortschritt, Prüfungsanfragen, Prüfungsfreigaben, Prüfungsversuche und Zertifikate.
+
+Beispiele:
+
+- Neue Studierende: `Akademie-Zugang`, `Student:in`, `Kohorte-2026-V2`, `Akademie-Stufe-1`
+- Alte Studierende, die die ersten beiden alten Kurse bereits durchlaufen haben: `Akademie-Zugang`, `Student:in`, `Kohorte-2026-V1`, `Akademie-Stufe-3`
 
 #### Warum Lernstand nicht über Discord-Rollen läuft
 
@@ -237,6 +272,11 @@ Erforderliche Werte:
 - `DISCORD_ROLE_MENTOR_ID`
 - `DISCORD_ROLE_TEAM_ID`
 - `DISCORD_ROLE_AKADEMIE_LEITUNG_ID`
+- `DISCORD_ROLE_AKADEMIE_STUFE_1_ID`
+- `DISCORD_ROLE_AKADEMIE_STUFE_2_ID`
+- `DISCORD_ROLE_AKADEMIE_STUFE_3_ID`
+- `DISCORD_ROLE_AKADEMIE_STUFE_4_ID`
+- `DISCORD_EXAM_NOTIFICATION_WEBHOOK_URL` optional
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - `SUPABASE_SERVICE_ROLE_KEY`
@@ -265,7 +305,7 @@ Ohne Servermitgliedschaft:
 
 `Du bist noch nicht mit dem WÖk-Discord-Server verbunden. Bitte tritt dem Server bei und melde dich danach erneut an.`
 
-Ohne `Akademie-Leitung` bei `/dozentin`:
+Ohne `Akademie-Leitung` bei `/leitung`:
 
 `Dieser Bereich ist nur für die Akademie-Leitung freigeschaltet.`
 
@@ -280,6 +320,14 @@ Ohne Akademie-Zugang:
 Ohne Kohorte:
 
 `Dein Akademie-Zugang ist aktiv, aber dir wurde noch keine Kohorte zugewiesen. Bitte melde dich im Discord-Server oder warte auf die Zuordnung.`
+
+Ohne Stufenrolle:
+
+`Deine Akademie-Stufe wurde noch nicht freigeschaltet. Bitte warte auf die Freischaltung durch die Akademie-Leitung.`
+
+Prüfung noch nicht freigegeben:
+
+`Deine Prüfungsanmeldung wurde übermittelt. Die Akademie-Leitung prüft deinen Lernstand und schaltet die Prüfung anschließend frei.`
 
 Bei fehlender Discord-Servermitgliedschaft:
 
@@ -335,6 +383,7 @@ create table public.user_access (
   user_id uuid not null references public.users(id) on delete cascade,
   has_akademie_zugang boolean not null default false,
   cohort_key text,
+  highest_stage_unlocked int not null default 0,
   is_student boolean not null default false,
   is_absolvent boolean not null default false,
   is_mentor boolean not null default false,
@@ -373,6 +422,283 @@ create table public.course_versions (
   is_active boolean not null default true
 );
 ```
+
+### Aktualisierte Kursarchitektur ab V2: Stufen und Vorlesungen
+
+Für die neue Akademie-Struktur ersetzt die Stufen-/Vorlesungslogik die ältere Teil-/Modul-Logik im MVP.
+
+Die Akademie hat bis zur finalen Prüfung vier Stufen. Jede Stufe hat vier Vorlesungen.
+
+Jede Vorlesung enthält:
+
+- Online-Skript als Website-Inhalt, nicht PDF
+- YouTube-Video-Link
+- optional Begleittext
+- Button `Skript gelesen`
+- Button `Video angesehen`
+
+Vorlesungen werden innerhalb jeder Stufe nacheinander freigeschaltet:
+
+- Vorlesung 1 ist sichtbar, wenn die Stufe freigeschaltet ist.
+- Vorlesung 2 wird sichtbar, wenn Vorlesung 1 abgeschlossen ist.
+- Vorlesung 3 wird sichtbar, wenn Vorlesung 2 abgeschlossen ist.
+- Vorlesung 4 wird sichtbar, wenn Vorlesung 3 abgeschlossen ist.
+- Nach Vorlesung 4 kann die Prüfung angemeldet werden.
+
+#### stages
+
+```sql
+create table public.stages (
+  id uuid primary key default gen_random_uuid(),
+  course_version_id uuid not null references public.course_versions(id) on delete cascade,
+  stage_number int not null,
+  title text not null,
+  description text,
+  order_index int not null,
+  exam_required boolean not null default true,
+  final_exam boolean not null default false,
+  is_active boolean not null default true,
+  unique (course_version_id, stage_number)
+);
+```
+
+#### lectures
+
+```sql
+create table public.lectures (
+  id uuid primary key default gen_random_uuid(),
+  stage_id uuid not null references public.stages(id) on delete cascade,
+  lecture_number int not null,
+  title text not null,
+  slug text not null,
+  description text,
+  script_body_markdown text,
+  script_url text,
+  video_url text,
+  required_script boolean not null default true,
+  required_video boolean not null default true,
+  published boolean not null default false,
+  order_index int not null,
+  estimated_minutes int,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (stage_id, lecture_number),
+  unique (stage_id, slug)
+);
+```
+
+#### lecture_progress
+
+```sql
+create table public.lecture_progress (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.users(id) on delete cascade,
+  lecture_id uuid not null references public.lectures(id) on delete cascade,
+  script_opened_at timestamptz,
+  script_completed_at timestamptz,
+  video_opened_at timestamptz,
+  video_completed_at timestamptz,
+  completed_at timestamptz,
+  status text not null default 'not_started',
+  updated_at timestamptz not null default now(),
+  unique (user_id, lecture_id)
+);
+```
+
+Statuswerte:
+
+- `locked`
+- `not_started`
+- `in_progress`
+- `completed`
+
+#### exam_requests
+
+Prüfungen werden nicht automatisch sichtbar. Nach Abschluss der vier Vorlesungen einer Stufe kann eine Prüfungsanfrage gestellt werden.
+
+```sql
+create table public.exam_requests (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.users(id) on delete cascade,
+  stage_id uuid not null references public.stages(id) on delete cascade,
+  status text not null default 'requested',
+  requested_at timestamptz not null default now(),
+  approved_by_user_id uuid references public.users(id) on delete set null,
+  approved_at timestamptz,
+  rejected_by_user_id uuid references public.users(id) on delete set null,
+  rejected_at timestamptz,
+  rejection_reason text,
+  notes text
+);
+```
+
+Statuswerte:
+
+- `requested`
+- `approved`
+- `rejected`
+- `cancelled`
+
+### Inhaltsverwaltung
+
+Für den MVP wird Option A empfohlen:
+
+Skripte und Vorlesungsdaten werden in Supabase gespeichert:
+
+- `title`
+- `slug`
+- `description`
+- `script_body_markdown`
+- `video_url`
+- `published`
+- `order_index`
+
+Vorteil: Natalie kann Inhalte und YouTube-Links im Leitungsdashboard pflegen, ohne GitHub oder Deployment anfassen zu müssen.
+
+Option B für später: Skripte liegen als MDX/Markdown im GitHub-Repo und werden über Codex gepflegt.
+
+### Prüfungsanmeldung und Prüfungsfreigabe
+
+Workflow:
+
+1. Student:in schließt alle vier Vorlesungen einer Stufe ab.
+2. Button erscheint: `Zur Prüfung anmelden`.
+3. Student:in klickt den Button.
+4. Eine Prüfungsanfrage wird in `exam_requests` gespeichert.
+5. Akademie-Leitung sieht die Anfrage im Dashboard unter `Offene Prüfungsanfragen`.
+6. Optional erzeugt ein Discord-Webhook eine Nachricht in einem privaten Kanal.
+7. Akademie-Leitung prüft Lernstand.
+8. Akademie-Leitung klickt `Prüfung freigeben`.
+9. Erst danach sieht Student:in die Prüfungsfragen.
+10. Nach Bestehen wird die nächste Stufe durch Akademie-Leitung oder durch eine vorgeschlagene Aktion freigeschaltet.
+
+Die Prüfungsfreigabe wird in Supabase gespeichert, nicht als Discord-Rolle.
+
+Optionaler Discord-Webhook:
+
+- Environment Variable: `DISCORD_EXAM_NOTIFICATION_WEBHOOK_URL`
+- Beispielnachricht: `Neue Prüfungsanmeldung: [Discord-Username] - Stufe [X] - Kohorte [Y]`
+
+### Aktualisierte exams
+
+Für die Stufenlogik hängen Prüfungen an `stage_id`, nicht an einzelnen Modulen.
+
+```sql
+create table public.exams (
+  id uuid primary key default gen_random_uuid(),
+  stage_id uuid not null references public.stages(id) on delete cascade,
+  title text not null,
+  description text,
+  passing_score int not null default 80,
+  max_attempts int not null default 3,
+  published boolean not null default false,
+  is_final_exam boolean not null default false
+);
+```
+
+### Aktualisierte questions
+
+```sql
+create table public.questions (
+  id uuid primary key default gen_random_uuid(),
+  exam_id uuid not null references public.exams(id) on delete cascade,
+  type text not null,
+  question_text text not null,
+  options jsonb,
+  correct_answer jsonb,
+  explanation text,
+  order_index int not null,
+  published boolean not null default true,
+  unique (exam_id, order_index)
+);
+```
+
+Fragetypen:
+
+- `multiple_choice`
+- `single_choice`
+- `free_text`
+- `reflection`
+
+### Aktualisierte exam_attempts und exam_answers
+
+```sql
+create table public.exam_attempts (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.users(id) on delete cascade,
+  exam_id uuid not null references public.exams(id) on delete cascade,
+  stage_id uuid not null references public.stages(id) on delete cascade,
+  attempt_number int not null default 1,
+  score int,
+  passed boolean,
+  submitted_at timestamptz,
+  reviewed_by_user_id uuid references public.users(id) on delete set null,
+  reviewed_at timestamptz,
+  status text not null default 'started'
+);
+
+create table public.exam_answers (
+  id uuid primary key default gen_random_uuid(),
+  attempt_id uuid not null references public.exam_attempts(id) on delete cascade,
+  question_id uuid not null references public.questions(id) on delete cascade,
+  answer jsonb not null,
+  is_correct boolean,
+  feedback text
+);
+```
+
+Statuswerte für `exam_attempts`:
+
+- `started`
+- `submitted`
+- `passed`
+- `failed`
+- `needs_review`
+
+### activity_log
+
+```sql
+create table public.activity_log (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references public.users(id) on delete set null,
+  actor_user_id uuid references public.users(id) on delete set null,
+  type text not null,
+  entity_type text,
+  entity_id uuid,
+  message text,
+  created_at timestamptz not null default now()
+);
+```
+
+### Fortschrittsberechnung ab V2
+
+Vorlesung abgeschlossen, wenn:
+
+- `required_script = false` oder `script_completed_at` gesetzt ist
+- `required_video = false` oder `video_completed_at` gesetzt ist
+
+Stufe abgeschlossen, wenn:
+
+- alle vier Vorlesungen der Stufe abgeschlossen sind
+- Prüfung bestanden ist, falls `exam_required = true`
+
+Prüfung anmelden möglich, wenn:
+
+- alle vier Vorlesungen abgeschlossen sind
+- noch keine offene Prüfungsanfrage existiert
+- Prüfung noch nicht bestanden ist
+
+Prüfung sichtbar, wenn:
+
+- `exam_requests.status = approved`
+
+Nächste Stufe sichtbar, wenn:
+
+- Discord-Rolle für diese Stufe vorhanden ist
+- oder `user_access.highest_stage_unlocked` in Supabase entsprechend erhöht wurde
+- oder später nach bestandener Prüfung und Bestätigung durch Akademie-Leitung
+
+Für den MVP ist die Discord-Stufenrolle das Hauptkriterium. `highest_stage_unlocked` dient zusätzlich als Override durch Akademie-Leitung.
 
 ### academy_parts
 
@@ -533,7 +859,7 @@ create table public.exam_answers (
 
 ### student_progress_summary
 
-Für das Dozentinnen-Dashboard wird eine zusammengefasste View oder serverseitige Query vorgesehen:
+Für das Leitungsdashboard wird eine zusammengefasste View oder serverseitige Query vorgesehen:
 
 ```sql
 student_progress_summary:
@@ -605,7 +931,7 @@ Empfohlene Grundregeln:
 - Die Bewertung von Prüfungen muss serverseitig erfolgen.
 - Der Supabase Service Role Key darf nur in Vercel Server Routes verwendet werden.
 
-## Dozentinnen-Dashboard und Lernfortschritt
+## Leitungsdashboard und Lernfortschritt
 
 ### 1. Rolle Akademie-Leitung als Vollzugriff
 
@@ -619,18 +945,19 @@ Jede:r Student:in erhält eine persönliche Seite mit:
 
 - Begrüßung mit Discord-Username
 - Rolle und Kohorte
-- aktuellem Teil
-- aktuellem Modul
+- aktueller Stufe
+- aktueller Vorlesung
+- freigeschalteten Stufen
 - Gesamtfortschritt
-- Fortschritt im aktuellen Teil
-- Fortschritt im aktuellen Modul
+- Fortschritt in der aktuellen Stufe
 - bereits erledigten Inhalten
 - nächstem freigeschalteten Schritt
 - Kontakt zu Natalie via Discord `@natsnatalie`
+- Prüfungsstatus: noch nicht verfügbar, Anmeldung möglich, Anfrage gesendet, freigegeben, bestanden oder nicht bestanden
 
-### 3. Dozentinnen-Dashboard für Natalie
+### 3. Leitungsdashboard für Natalie
 
-Route: `/dozentin`
+Route: `/leitung`
 
 Zugriff nur für `Akademie-Leitung`. Ohne diese Rolle erscheint:
 
@@ -641,8 +968,10 @@ Die Übersicht zeigt:
 - Anzahl Studierende gesamt
 - Anzahl aktive Studierende
 - Anzahl je Kohorte
-- Anzahl abgeschlossener Module
+- Anzahl je Stufe
+- Anzahl abgeschlossener Vorlesungen
 - Anzahl bestandener Prüfungen
+- offene Prüfungsanfragen
 - Durchschnittlicher Fortschritt
 - Studierende ohne Aktivität seit X Tagen
 
@@ -653,9 +982,13 @@ Die Liste enthält:
 - Name / Discord-Username
 - Kohorte
 - Status: Student:in / Absolvent:in / Mentor:in
-- aktueller Teil
-- aktuelles Modul
+- höchste freigeschaltete Stufe
+- aktuelle Stufe
+- aktuelle Vorlesung
 - Fortschritt in Prozent
+- Fortschritt aktuelle Stufe in Prozent
+- offene Prüfungsanfrage ja/nein
+- Prüfung freigegeben ja/nein
 - zuletzt aktiv
 - Anzahl gelesener Inhalte
 - Anzahl abgeschlossener Videos
@@ -665,34 +998,52 @@ Die Liste enthält:
 Filter:
 
 - Kohorte
+- Stufe
 - Status
-- aktueller Teil
-- aktuelles Modul
+- Prüfungsanfrage offen
+- Prüfung freigegeben
 - Fortschritt
 - zuletzt aktiv
 - Suche nach Discord-Username
 
 ### 5. Einzelprofil pro Student:in
 
-Route: `/dozentin/studierende/[userId]`
+Route: `/leitung/studierende/[userId]`
 
 Das Einzelprofil zeigt:
 
 - Discord-Username
+- Discord-ID
 - Kohorte
 - Statusrollen
+- höchste freigeschaltete Stufe
+- aktuelle Stufe
+- aktuelle Vorlesung
 - letzter Login
 - gesamter Fortschritt
-- Fortschritt je Teil
-- Fortschritt je Modul
+- Fortschritt je Stufe
+- Fortschritt je Vorlesung
 - gelesene Inhalte
 - angesehene Videos
-- absolvierte Prüfungen
+- Prüfungsanfragen
+- Prüfungsfreigaben
 - Prüfungsversuche
 - bestandene und nicht bestandene Prüfungen
+- Zertifikate
 - aktuelle Aufgabe
-- nächste freigeschaltete Lektion
+- nächste freigeschaltete Vorlesung
 - Notizen später optional
+
+Aktionen:
+
+- Prüfung freigeben
+- Prüfung sperren
+- Prüfungsanfrage ablehnen
+- nächsten Versuch freigeben
+- Zertifikat ausstellen
+- Zertifikat widerrufen
+- manuelle Notiz hinzufügen
+- manuelle Fortschrittskorrektur, nur Akademie-Leitung
 
 ### 6. Tracking von Website-Skripten
 
@@ -717,17 +1068,18 @@ Prüfungen werden serverseitig ausgewertet. Gespeichert werden:
 
 ### 9. Fortschrittsberechnung
 
-- Modulfortschritt = abgeschlossene verpflichtende Inhalte / alle verpflichtenden Inhalte.
-- Teilfortschritt = abgeschlossene Module / alle Module des Teils.
-- Gesamtfortschritt = abgeschlossene Module / alle Module des zugewiesenen Kurses.
+- Vorlesung abgeschlossen = Skript gelesen und Video angesehen, sofern beide als verpflichtend markiert sind.
+- Stufenfortschritt = abgeschlossene Vorlesungen / vier Vorlesungen der Stufe, plus Prüfungsstatus falls Prüfung erforderlich ist.
+- Gesamtfortschritt = abgeschlossene Vorlesungen und bestandene Prüfungen / alle Anforderungen der freigeschalteten Stufen.
 
 Freischaltlogik:
 
-- Modul 1 ist nach Zugang freigeschaltet.
-- Modul 2 wird nach Abschluss von Modul 1 freigeschaltet.
-- Modul 3 wird nach Abschluss von Modul 2 freigeschaltet.
-- Modul 4 wird nach Abschluss von Modul 3 freigeschaltet.
-- Der nächste Teil wird freigeschaltet, wenn alle vier Module des vorherigen Teils abgeschlossen sind.
+- Vorlesung 1 ist sichtbar, wenn die Stufe freigeschaltet ist.
+- Vorlesung 2 wird nach Abschluss von Vorlesung 1 freigeschaltet.
+- Vorlesung 3 wird nach Abschluss von Vorlesung 2 freigeschaltet.
+- Vorlesung 4 wird nach Abschluss von Vorlesung 3 freigeschaltet.
+- Nach Vorlesung 4 kann die Prüfung angemeldet werden.
+- Die Prüfung wird erst nach Freigabe durch Akademie-Leitung sichtbar.
 - `Akademie-Leitung` sieht immer alles.
 - `Mentor:in` kann später optional Einblick bekommen, aber nicht im MVP.
 
@@ -735,7 +1087,7 @@ Freischaltlogik:
 
 Studierende müssen wissen, dass ihr Lernfortschritt gespeichert wird. Gespeichert wird nur, was für die Akademie notwendig ist.
 
-- Dozentinnenansicht nur für `Akademie-Leitung`.
+- Leitungsansicht nur für `Akademie-Leitung`.
 - keine öffentlichen Ranglisten.
 - keine unnötige Verhaltensüberwachung.
 - kein automatisches Time-Tracking im MVP.
@@ -777,45 +1129,74 @@ Anzeige:
 
 ## 6. MVP-Umfang
 
-Der MVP sollte nur Teil I abbilden.
+Der MVP bildet die neue Stufenlogik ab.
 
-### Teil I - Grundverständnis
+### Akademie-Struktur im MVP
 
-Vier Module:
+Die Akademie hat vier Stufen bis zur finalen Prüfung. Jede Stufe hat vier Vorlesungen.
+
+Stufe 1 startet für neue Studierende mit:
 
 1. Was ist Wirkungsökonomie?
 2. Erfolg und Zukunft
 3. Mensch, Planet und Demokratie
 4. Wirkung statt bloßer Absicht
 
+Die weiteren Stufen werden strukturell angelegt und können über das Leitungsdashboard mit Inhalten gefüllt werden.
+
 ### MVP-Funktionen
 
 - Discord Login
-- serverseitige Rollenprüfung `Akademie-Zugang`
+- serverseitige Rollenprüfung
+- `Akademie-Zugang`
+- Kohorte V1/V2
+- Stufenrollen 1 bis 4
 - persönliches Dashboard
-- Anzeige Teil I mit 4 Modulen
-- pro Modul:
+- 4 Stufen mit je 4 Vorlesungen
+- Online-Skripte
+- YouTube-Link pro Vorlesung
+- pro Vorlesung:
   - kurze Einführung
-  - Pflichtlektüre oder Dokument
+  - Online-Skript
   - Video-Link
-  - Button `gelesen`
-  - Button `angesehen`
-  - 3 bis 5 Prüfungsfragen
+  - Button `Skript gelesen`
+  - Button `Video angesehen`
 - Lernfortschritt speichern
-- nächstes Modul erst nach Abschluss freischalten
-- einfache Ergebnisanzeige
-- keine Zertifikatsautomatik
-- kein komplexer Adminbereich
+- nächste Vorlesung erst nach Abschluss freischalten
+- Fortschrittsbalken
+- Prüfungsanmeldung nach vier abgeschlossenen Vorlesungen
+- Prüfungsfreigabe durch Akademie-Leitung
+- Leitungsdashboard
+- Studierendenübersicht
+- Einzelprofil
+- Zertifikat manuell ausstellen
+- Zertifikatscode und Verifizierungsseite
+
+Nicht im MVP:
+
+- automatische Zertifikate
+- komplexe Notenverwaltung
+- Zahlungslogik
+- Ranglisten
+- vollautomatisches Video-Tracking
+- komplexe Mentoring-Funktionen
+- KI-Auswertung von Freitexten
+- eigene Video-Hosting-Infrastruktur
 
 ### Content-Pflege im MVP
 
-Natalie soll Inhalte möglichst über Codex/GitHub pflegen können. Deshalb empfiehlt sich:
+Natalie soll YouTube-Links und Skripte möglichst ohne manuelles Deployment pflegen können. Deshalb empfiehlt sich für den MVP Option A:
 
-- Inhalte zunächst als Markdown/MDX oder TypeScript-Daten im Repo pflegen.
-- Video-Links als externe URLs hinterlegen.
-- PDFs und öffentliche Lektüren auf der Hauptwebsite verlinken.
-- Quizfragen als strukturierte Seed-Daten pflegen.
-- Änderungen über Pull Requests prüfen und deployen.
+- Vorlesungsdaten in Supabase speichern.
+- Skripte als Markdown in Supabase speichern.
+- YouTube-Links im Leitungsdashboard bearbeiten.
+- Inhalte veröffentlichen oder unveröffentlicht setzen.
+- Reihenfolge über `order_index` pflegen.
+
+Option B für später:
+
+- Inhalte als MDX/Markdown im GitHub-Repo pflegen.
+- Änderungen über Codex, Pull Requests und Vercel deployen.
 
 Videos sollen im MVP nicht selbst gehostet werden. Geeignet sind:
 
@@ -827,8 +1208,8 @@ Videos sollen im MVP nicht selbst gehostet werden. Geeignet sind:
 
 ### Ausbau 1
 
-- alle 7 Teile mit je 4 Modulen
-- Fortschrittsübersicht pro Teil
+- alle vier Stufen vollständig mit je vier Vorlesungen befüllen
+- Fortschrittsübersicht pro Stufe
 - bessere Navigation im Studienraum
 - Wiederholungsmodus für Prüfungsfragen
 
@@ -850,12 +1231,11 @@ Videos sollen im MVP nicht selbst gehostet werden. Geeignet sind:
 
 ### Ausbau 4
 
-- Adminbereich
-- Teilnehmer:innen-Übersicht
-- Modulverwaltung
+- erweiterte Inhaltsverwaltung
 - Fragenverwaltung
 - manuelle Freischaltungen
 - Export von Fortschritten
+- optionale Discord-Benachrichtigungen bei Prüfungsanfragen
 
 ## 8. Deployment-Workflow mit GitHub, Codex und Vercel
 
@@ -876,7 +1256,7 @@ woek-akademie-app/
   components/
   content/
     academy/
-      teil-1/
+      seed/
   lib/
     discord/
     supabase/
@@ -1024,17 +1404,18 @@ Wichtig:
 
 ### Inhalte
 
-- Werden Module als MDX im Repo gepflegt oder direkt in Supabase gespeichert?
-- Empfehlung für MVP: Inhalte im Repo pflegen, Fortschritt in Supabase speichern.
+- Werden Skripte dauerhaft in Supabase gepflegt oder später zusätzlich als MDX im Repo versioniert?
+- Empfehlung für MVP: Skripte, Vorlesungsdaten und YouTube-Links direkt in Supabase speichern und im Leitungsdashboard pflegen.
 - Wo liegen Pflichtlektüren?
-- Welche Videos werden für Teil I genutzt?
+- Welche Videos werden für Stufe 1 genutzt?
 
 ### Prüfung
 
-- Wie viele Versuche pro Modul?
+- Wie viele Versuche pro Stufenprüfung?
 - Welche Punktzahl gilt als bestanden?
 - Dürfen Erklärungen direkt nach jeder Frage angezeigt werden?
 - Soll eine falsche Antwort später erneut gestellt werden?
+- Wann soll nach bestandener Prüfung die nächste Stufe freigeschaltet werden: manuell, automatisch vorgeschlagen oder später automatisiert?
 
 ### Zugang
 
@@ -1072,6 +1453,11 @@ Wichtig:
    - `DISCORD_ROLE_MENTOR_ID`
    - `DISCORD_ROLE_TEAM_ID`
    - `DISCORD_ROLE_AKADEMIE_LEITUNG_ID`
+   - `DISCORD_ROLE_AKADEMIE_STUFE_1_ID`
+   - `DISCORD_ROLE_AKADEMIE_STUFE_2_ID`
+   - `DISCORD_ROLE_AKADEMIE_STUFE_3_ID`
+   - `DISCORD_ROLE_AKADEMIE_STUFE_4_ID`
+   - `DISCORD_EXAM_NOTIFICATION_WEBHOOK_URL` optional
    - `NEXT_PUBLIC_SUPABASE_URL`
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
    - `SUPABASE_SERVICE_ROLE_KEY`
@@ -1083,20 +1469,34 @@ Wichtig:
 1. Supabase Migrationen für Tabellen erstellen.
 2. Row Level Security aktivieren.
 3. Policies für eigene Fortschritte schreiben.
-4. Seed-Daten für Teil I anlegen.
+4. Seed-Daten für vier Stufen mit je vier Vorlesungsplätzen anlegen.
 5. Testnutzer mit Discord Login prüfen.
 
 ### Phase 4: MVP Studienraum
 
 1. Dashboard bauen.
-2. Teil I mit vier Modulen anzeigen.
-3. Modul-Freischaltung nach Reihenfolge implementieren.
-4. Buttons `gelesen` und `angesehen` speichern.
-5. Quiz pro Modul serverseitig auswerten.
-6. Ergebnisanzeige bauen.
-7. Fortschrittsanzeige bauen.
+2. Vier Stufen mit je vier Vorlesungsplätzen anzeigen.
+3. Stufenfreigabe aus Discord-Rollen und Supabase Override berechnen.
+4. Vorlesungsfreischaltung nach Reihenfolge implementieren.
+5. Buttons `Skript gelesen` und `Video angesehen` speichern.
+6. Prüfungsanmeldung nach Abschluss der vier Vorlesungen bauen.
+7. Prüfungsfreigabe durch Akademie-Leitung bauen.
+8. Prüfung serverseitig auswerten.
+9. Ergebnisanzeige bauen.
+10. Fortschrittsanzeige bauen.
 
-### Phase 5: Deployment und Domain
+### Phase 5: Leitungsdashboard
+
+1. Route `/leitung` schützen.
+2. Studierendenliste mit Kohorte, Stufe, Vorlesung, Fortschritt und Prüfungsstatus bauen.
+3. Filter nach Kohorte, Stufe, Status und Prüfungsanfrage bauen.
+4. Einzelprofil `/leitung/studierende/[userId]` bauen.
+5. Offene Prüfungsanfragen anzeigen.
+6. Aktionen für Prüfung freigeben, sperren, ablehnen und nächsten Versuch freigeben bauen.
+7. Zertifikat manuell ausstellen und widerrufen vorbereiten.
+8. Inhaltsverwaltung `/leitung/inhalte` für Titel, Beschreibung, Skript und YouTube-Link bauen.
+
+### Phase 6: Deployment und Domain
 
 1. Vercel Preview prüfen.
 2. Production Deployment auf `main` aktivieren.
@@ -1105,47 +1505,43 @@ Wichtig:
 5. Vercel Domain Verification abwarten.
 6. SSL/HTTPS prüfen.
 
-### Phase 6: Qualitätssicherung
+### Phase 7: Qualitätssicherung
 
 1. Login mit Discord testen.
 2. Test ohne Rolle prüfen.
 3. Test mit Rolle `Akademie-Zugang` prüfen.
-4. Fortschritt speichern und erneut laden.
-5. Modul-Freischaltung prüfen.
-6. Quiz-Auswertung manipulierungssicher testen.
-7. Vercel Preview und Production vergleichen.
-8. Datenschutztexte für Akademie-App ergänzen.
+4. Test ohne Stufenrolle prüfen.
+5. Test mit Stufe 1 bis 4 prüfen.
+6. Fortschritt speichern und erneut laden.
+7. Vorlesungs-Freischaltung prüfen.
+8. Prüfungsanmeldung und Freigabe prüfen.
+9. Prüfungsauswertung manipulationssicher testen.
+10. Vercel Preview und Production vergleichen.
+11. Datenschutztexte für Akademie-App ergänzen.
 
 ## 13. MVP-Akademie-Struktur
 
-Die Gesamtakademie besteht perspektivisch aus sieben Teilen:
+Die operative App-Struktur besteht aus vier Akademie-Stufen bis zur finalen Prüfung.
 
-1. Teil I - Grundverständnis
-2. Teil II - Wirkungskompetenz
-3. Teil III - Maßstab und Bewertung
-4. Teil IV - Steuerung und Rückkopplung
-5. Teil V - Anwendung in Feldern
-6. Teil VI - Transformation und Systemdesign
-7. Teil VII - Praxisprojekt / Abschluss
+Jede Stufe enthält vier Vorlesungen:
 
-Der MVP startet nur mit Teil I.
+- Online-Skript
+- YouTube-Video-Link
+- optionaler Begleittext
+- Button `Skript gelesen`
+- Button `Video angesehen`
+- gespeicherter Fortschritt
 
-Teil I enthält:
+Stufe 1 startet inhaltlich mit:
 
 1. Was ist Wirkungsökonomie?
 2. Erfolg und Zukunft
 3. Mensch, Planet und Demokratie
 4. Wirkung statt bloßer Absicht
 
-Jedes Modul enthält:
+Stufe 2 bis 4 werden im MVP strukturell vorbereitet und über das Leitungsdashboard mit Inhalten befüllt.
 
-- Einführung
-- Pflichtlektüre oder Dokument
-- Video-Link
-- Status `gelesen`
-- Status `angesehen`
-- Quiz mit 3 bis 5 Fragen
-- gespeicherter Fortschritt
+Nach vier abgeschlossenen Vorlesungen kann eine Prüfungsanfrage gestellt werden. Die Prüfung wird erst nach manueller Freigabe durch Akademie-Leitung sichtbar.
 
 ## 14. Kurzfazit
 
@@ -1153,8 +1549,8 @@ Die sauberste Architektur ist eine getrennte Akademie-App:
 
 - öffentliche Hauptwebsite weiter auf GitHub Pages
 - geschützte Akademie-App auf Vercel
-- Discord als Zugangssystem
-- Supabase als Lernstand- und Prüfungsdatenbank
-- Inhalte wartungsarm über GitHub und Codex pflegbar
+- Discord steuert Zugang, Kohorte und Stufe
+- Supabase steuert Lernstand, Vorlesungen, Prüfungsanfragen, Prüfungsfreigaben, Prüfungsversuche und Zertifikate
+- Inhalte im MVP wartungsarm über das Leitungsdashboard pflegbar
 
 So bleibt die Website stabil, während die Akademie-App sicher wachsen kann.

@@ -1,5 +1,7 @@
 # Dozentinnen-Dashboard-Konzept
 
+Hinweis: Dieses Dokument beschreibt die erste Dashboard-Idee. Für die aktuelle Stufen-, Vorlesungs-, Prüfungsfreigabe- und Zertifikatslogik ist `docs/leitungsdashboard-konzept.md` maßgeblich. Die operative Route heißt künftig `/leitung`, nicht `/dozentin`.
+
 ## Ziel
 
 Natalie braucht einen geschützten Leitungsbereich für die WÖk-Akademie. Dort sieht sie alle Studierenden, Kohorten, Lernstände, Prüfungen und später Zertifikate.
@@ -41,7 +43,7 @@ Team ist nicht automatisch akademische Vollfreigabe.
 
 ## Seitenstruktur
 
-### `/dozentin`
+### `/leitung`
 
 Dashboard für Akademie-Leitung:
 
@@ -51,7 +53,7 @@ Dashboard für Akademie-Leitung:
 - Filter
 - Links zu Einzelprofilen
 
-### `/dozentin/studierende/[userId]`
+### `/leitung/studierende/[userId]`
 
 Einzelprofil:
 
