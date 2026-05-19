@@ -63,6 +63,29 @@ Neue Beiträge stehen oben. Ältere Beiträge wandern nach unten oder später in
 
 Wichtig: Veröffentlichte Blogseiten werden nicht gelöscht. Wenn ein Beitrag redaktionell konsolidiert wird, bleibt die URL erhalten oder erhält ein dokumentiertes Redirect-Mapping.
 
+## Blog-Löschregel
+
+Veröffentlichte Blogartikel werden nicht gelöscht.
+
+Stattdessen gilt:
+
+- Leitartikel sichtbar hervorheben.
+- Dossierartikel thematisch bündeln.
+- LinkedIn-Importe als Archiv behalten.
+- Dubletten prüfen und nur mit 301-Redirect konsolidieren.
+- Platzhalter aus dem Hauptfeed entfernen oder `noindex` setzen.
+- Kurze tagespolitische Beiträge als Zeitdiagnose archivieren.
+- Keine bestehenden URLs ohne Redirect brechen.
+
+Vor jeder Entfernung, Ausblendung oder Konsolidierung müssen diese Dateien beziehungsweise Prüfungen vorliegen:
+
+1. `blog-audit.md`
+2. `redirect-map.md`
+3. Liste betroffener interner Links
+4. Empfehlung je URL: behalten / archivieren / konsolidieren / noindex / redirect
+
+Keine technische Umsetzung von Redirects oder `noindex` erfolgt ohne vorherige redaktionelle Prüfung der betroffenen URLs und internen Links.
+
 ## LinkedIn-Archiv
 
 Übernommene LinkedIn-Beiträge liegen unter:
