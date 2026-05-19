@@ -140,6 +140,7 @@ Aktuell existieren auf dem Discord-Server diese Rollen:
 - Absolvent:in
 - Mentor:in
 - Team
+- Akademie-Leitung
 - @everyone
 
 Für die Akademie-App relevant sind nur:
@@ -151,12 +152,18 @@ Für die Akademie-App relevant sind nur:
 - Absolvent:in
 - Mentor:in
 - Team
+- Akademie-Leitung
 
 Die Rollen `Rookie`, `Standard` und `Level2` sind Community-/Discord-Level-Rollen und dürfen für die Akademie-App nicht als Zugangskriterium verwendet werden.
 
 #### Zugang
 
-Die Rolle `Akademie-Zugang` ist die Tür in den Studienraum. Ohne diese Rolle gibt es keinen Zugriff auf Dashboard, Module, Prüfungen oder Lernstand. Ausnahme: `Team` kann als interne Admin-/Redaktionsrolle Zugriff erhalten, auch wenn keine Kohorte gesetzt ist.
+Die Rolle `Akademie-Zugang` ist die Tür in den Studienraum. Ohne diese Rolle gibt es keinen Zugriff auf Dashboard, Module, Prüfungen oder Lernstand.
+
+Ausnahmen:
+
+- `Team` kann als interne Moderations-, Technik- oder Redaktionsrolle Zugriff auf Vorschau- und Arbeitsbereiche erhalten.
+- `Akademie-Leitung` ist die höchste App-Rolle und erhält Vollzugriff auf alle Kohorten, Inhalte, Studierendenprofile, Lernstände und spätere Zertifikatsverwaltung.
 
 Prüflogik:
 
@@ -175,6 +182,7 @@ Prüflogik:
 Wenn ein User beide Kohortenrollen hat:
 
 - `Team` und `Mentor:in` dürfen beide Kursversionen sehen.
+- `Akademie-Leitung` darf immer beide Kursversionen sehen und wird nicht durch Kohortenlogik eingeschränkt.
 - Normale Student:innen sehen standardmäßig die neuere Kohorte, also `Kohorte-2026-V2`.
 
 Wenn ein User `Akademie-Zugang`, aber keine Kohortenrolle hat, erscheint:
@@ -186,7 +194,8 @@ Wenn ein User `Akademie-Zugang`, aber keine Kohortenrolle hat, erscheint:
 - `Student:in` = aktiv eingeschrieben
 - `Absolvent:in` = Studium abgeschlossen
 - `Mentor:in` = darf perspektivisch andere begleiten oder erweiterte Einsicht erhalten
-- `Team` = Admin-/Redaktions-/Betreuungsrolle
+- `Team` = Moderation / Technik / Redaktion, optional eingeschränkter Zugriff
+- `Akademie-Leitung` = Vollzugriff, akademische Freigaben und Zertifikatsverwaltung
 
 MVP-Berechtigungen:
 
@@ -194,14 +203,16 @@ MVP-Berechtigungen:
 - `Akademie-Zugang` + `Kohorte-2026-V2` + `Student:in` -> Zugang zum neuen Studienpfad
 - `Akademie-Zugang` + `Absolvent:in` -> Zugang zu Archiv/Abschlussbereich, später Zertifikat
 - `Akademie-Zugang` + `Mentor:in` -> später Mentor:innen-Dashboard
-- `Team` -> Adminzugang bzw. interne Vorschau, unabhängig von Kohorte
+- `Team` -> interne Vorschau, Technik, Redaktion oder spätere Moderationsfunktionen
+- `Akademie-Leitung` -> Vollzugriff auf alle Studierenden, Kohorten, Inhalte, Lernstände und Zertifikate
 
 Für den MVP reicht:
 
 - `Akademie-Zugang` prüfen
 - Kohorte prüfen
 - `Student:in` optional als Status speichern
-- `Team` als Adminflag speichern
+- `Team` als Teamflag speichern
+- `Akademie-Leitung` als höchste Berechtigungsstufe speichern
 
 #### Warum Lernstand nicht über Discord-Rollen läuft
 
@@ -225,6 +236,7 @@ Erforderliche Werte:
 - `DISCORD_ROLE_ABSOLVENT_ID`
 - `DISCORD_ROLE_MENTOR_ID`
 - `DISCORD_ROLE_TEAM_ID`
+- `DISCORD_ROLE_AKADEMIE_LEITUNG_ID`
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - `SUPABASE_SERVICE_ROLE_KEY`
@@ -238,6 +250,24 @@ Discord OAuth soll serverseitig ausgewertet werden. Voraussichtlich benötigte S
 - `guilds.members.read`
 
 Supabase Auth übernimmt den Discord Login. Ob Supabase die benötigten Scopes und Rolleninformationen vollständig liefert, muss praktisch geprüft werden. Falls nicht, übernimmt die Next.js-App nach dem Login eine ergänzende serverseitige Prüfung über Discord API und Bot Token.
+
+#### Fehlermeldungen
+
+Ohne `Akademie-Zugang`:
+
+`Dein Zugang zur WÖk-Akademie ist noch nicht freigeschaltet. Bitte melde dich im Discord-Server oder warte auf die Freischaltung.`
+
+Ohne Kohorte:
+
+`Dein Akademie-Zugang ist aktiv, aber dir wurde noch keine Kohorte zugewiesen. Bitte melde dich im Discord-Server oder warte auf die Zuordnung.`
+
+Ohne Servermitgliedschaft:
+
+`Du bist noch nicht mit dem WÖk-Discord-Server verbunden. Bitte tritt dem Server bei und melde dich danach erneut an.`
+
+Ohne `Akademie-Leitung` bei `/dozentin`:
+
+`Dieser Bereich ist nur für die Akademie-Leitung freigeschaltet.`
 
 Rollenprüfung darf niemals nur im Browser stattfinden.
 
@@ -309,12 +339,15 @@ create table public.user_access (
   is_absolvent boolean not null default false,
   is_mentor boolean not null default false,
   is_team boolean not null default false,
+  is_akademie_leitung boolean not null default false,
   discord_roles_snapshot jsonb not null default '{}'::jsonb,
   verified_at timestamptz,
   updated_at timestamptz not null default now(),
   unique (user_id)
 );
 ```
+
+Für `Akademie-Leitung` gilt `is_akademie_leitung = true`. Diese Rolle ist nicht durch Kohortenlogik eingeschränkt.
 
 ### cohorts
 
@@ -435,6 +468,133 @@ create table public.answers (
 );
 ```
 
+### content_items
+
+Website-Skripte, Lektionen, Videos, Reflexionsaufgaben und Quiz-Elemente werden als Content Items geführt. Skripte sind Website-Seiten, keine PDFs.
+
+```sql
+create table public.content_items (
+  id uuid primary key default gen_random_uuid(),
+  module_id uuid not null references public.modules(id) on delete cascade,
+  title text not null,
+  slug text unique not null,
+  url text,
+  type text not null,
+  required boolean not null default true,
+  order_index int not null,
+  estimated_minutes int,
+  created_at timestamptz not null default now()
+);
+```
+
+### content_progress
+
+```sql
+create table public.content_progress (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.users(id) on delete cascade,
+  content_item_id uuid not null references public.content_items(id) on delete cascade,
+  status text not null default 'not_started',
+  opened_at timestamptz,
+  completed_at timestamptz,
+  last_seen_at timestamptz,
+  progress_percent int not null default 0,
+  time_spent_seconds int,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (user_id, content_item_id)
+);
+```
+
+Bei Website-Skripten setzt das Öffnen den Status auf `opened`. Erst der Button `Als gelesen markieren` setzt `completed`. Bei Videos reicht im MVP der Button `Video angesehen`. Kein heimliches Tracking.
+
+### exam_attempts und exam_answers
+
+```sql
+create table public.exam_attempts (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.users(id) on delete cascade,
+  exam_id uuid not null references public.exams(id) on delete cascade,
+  module_id uuid not null references public.modules(id) on delete cascade,
+  score int not null,
+  passed boolean not null,
+  submitted_at timestamptz not null default now(),
+  attempt_number int not null default 1
+);
+
+create table public.exam_answers (
+  id uuid primary key default gen_random_uuid(),
+  attempt_id uuid not null references public.exam_attempts(id) on delete cascade,
+  question_id uuid not null references public.questions(id) on delete cascade,
+  answer jsonb not null,
+  is_correct boolean not null
+);
+```
+
+### student_progress_summary
+
+Für das Dozentinnen-Dashboard wird eine zusammengefasste View oder serverseitige Query vorgesehen:
+
+```sql
+student_progress_summary:
+- user_id
+- discord_username
+- cohort_key
+- status
+- current_part
+- current_module
+- overall_progress_percent
+- current_part_progress_percent
+- current_module_progress_percent
+- completed_content_count
+- completed_video_count
+- passed_exam_count
+- last_activity_at
+```
+
+### certificate_types und certificates
+
+Zertifikate werden nicht automatisch erzeugt. Sie werden manuell durch `Akademie-Leitung` freigegeben.
+
+```sql
+create table public.certificate_types (
+  id uuid primary key default gen_random_uuid(),
+  key text unique not null,
+  title text not null,
+  description text
+);
+
+create table public.certificates (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.users(id) on delete cascade,
+  certificate_code text unique not null,
+  title text not null,
+  issued_by_user_id uuid references public.users(id) on delete set null,
+  issued_at timestamptz not null default now(),
+  status text not null,
+  revoked_at timestamptz,
+  revoked_reason text,
+  verification_slug text unique not null,
+  public_verification_enabled boolean not null default true,
+  notes text
+);
+```
+
+Statuswerte:
+
+- `gültig`
+- `widerrufen`
+- `ersetzt`
+- `abgelaufen` optional
+
+Mögliche Zertifikatstypen:
+
+- Wirkungskompetenz
+- WÖk-Practitioner
+- WÖk-Mentor:in
+
+Zertifikatscodes werden automatisch generiert, zum Beispiel `WOEK-2026-00017` oder `WOEK-PRACT-2026-017`. Die öffentliche Prüfung läuft später über `/zertifikat/[certificateCode]`. Ein QR-Code auf dem Zertifikat wird vorbereitet.
+
 ### Row Level Security
 
 Empfohlene Grundregeln:
@@ -444,6 +604,176 @@ Empfohlene Grundregeln:
 - Prüfungsfragen und richtige Antworten dürfen nicht vollständig an den Client ausgeliefert werden.
 - Die Bewertung von Prüfungen muss serverseitig erfolgen.
 - Der Supabase Service Role Key darf nur in Vercel Server Routes verwendet werden.
+
+## Dozentinnen-Dashboard und Lernfortschritt
+
+### 1. Rolle Akademie-Leitung als Vollzugriff
+
+Die Discord-Rolle `Akademie-Leitung` ist die höchste Berechtigungsstufe der Akademie-App. Sie darf alle Studierenden, Kohorten, Kursversionen, Inhalte, Lernstände und später Zertifikate sehen und verwalten.
+
+`Team` bleibt davon getrennt. Team steht für Moderation, Technik und Redaktion und kann später eingeschränkte interne Rechte erhalten. Akademische Freigaben, Zertifikate und Abschlussstatus liegen bei `Akademie-Leitung`.
+
+### 2. Persönliches Dashboard für Studierende
+
+Jede:r Student:in erhält eine persönliche Seite mit:
+
+- Begrüßung mit Discord-Username
+- Rolle und Kohorte
+- aktuellem Teil
+- aktuellem Modul
+- Gesamtfortschritt
+- Fortschritt im aktuellen Teil
+- Fortschritt im aktuellen Modul
+- bereits erledigten Inhalten
+- nächstem freigeschalteten Schritt
+- Kontakt zu Natalie via Discord `@natsnatalie`
+
+### 3. Dozentinnen-Dashboard für Natalie
+
+Route: `/dozentin`
+
+Zugriff nur für `Akademie-Leitung`. Ohne diese Rolle erscheint:
+
+`Dieser Bereich ist nur für die Akademie-Leitung freigeschaltet.`
+
+Die Übersicht zeigt:
+
+- Anzahl Studierende gesamt
+- Anzahl aktive Studierende
+- Anzahl je Kohorte
+- Anzahl abgeschlossener Module
+- Anzahl bestandener Prüfungen
+- Durchschnittlicher Fortschritt
+- Studierende ohne Aktivität seit X Tagen
+
+### 4. Studierendenliste
+
+Die Liste enthält:
+
+- Name / Discord-Username
+- Kohorte
+- Status: Student:in / Absolvent:in / Mentor:in
+- aktueller Teil
+- aktuelles Modul
+- Fortschritt in Prozent
+- zuletzt aktiv
+- Anzahl gelesener Inhalte
+- Anzahl abgeschlossener Videos
+- Anzahl bestandener Prüfungen
+- Link `Profil ansehen`
+
+Filter:
+
+- Kohorte
+- Status
+- aktueller Teil
+- aktuelles Modul
+- Fortschritt
+- zuletzt aktiv
+- Suche nach Discord-Username
+
+### 5. Einzelprofil pro Student:in
+
+Route: `/dozentin/studierende/[userId]`
+
+Das Einzelprofil zeigt:
+
+- Discord-Username
+- Kohorte
+- Statusrollen
+- letzter Login
+- gesamter Fortschritt
+- Fortschritt je Teil
+- Fortschritt je Modul
+- gelesene Inhalte
+- angesehene Videos
+- absolvierte Prüfungen
+- Prüfungsversuche
+- bestandene und nicht bestandene Prüfungen
+- aktuelle Aufgabe
+- nächste freigeschaltete Lektion
+- Notizen später optional
+
+### 6. Tracking von Website-Skripten
+
+Skripte sind Website-Seiten. Wenn Student:innen eine Skriptseite öffnen, wird `status = opened` gespeichert. Am Ende der Seite gibt es den Button `Als gelesen markieren`. Erst dieser Button setzt `status = completed`.
+
+Es gibt im MVP kein heimliches Time-Tracking.
+
+### 7. Tracking von Videos
+
+Video-Seite öffnen setzt `opened`. Der Button `Video angesehen` setzt `completed`. Eine echte Video-Tracking-Integration kann später ergänzt werden. Im MVP reicht die manuelle Bestätigung.
+
+### 8. Prüfungsfortschritt
+
+Prüfungen werden serverseitig ausgewertet. Gespeichert werden:
+
+- Versuch
+- Punktzahl
+- bestanden / nicht bestanden
+- Antworten
+- Zeitpunkt
+- Versuchszahl
+
+### 9. Fortschrittsberechnung
+
+- Modulfortschritt = abgeschlossene verpflichtende Inhalte / alle verpflichtenden Inhalte.
+- Teilfortschritt = abgeschlossene Module / alle Module des Teils.
+- Gesamtfortschritt = abgeschlossene Module / alle Module des zugewiesenen Kurses.
+
+Freischaltlogik:
+
+- Modul 1 ist nach Zugang freigeschaltet.
+- Modul 2 wird nach Abschluss von Modul 1 freigeschaltet.
+- Modul 3 wird nach Abschluss von Modul 2 freigeschaltet.
+- Modul 4 wird nach Abschluss von Modul 3 freigeschaltet.
+- Der nächste Teil wird freigeschaltet, wenn alle vier Module des vorherigen Teils abgeschlossen sind.
+- `Akademie-Leitung` sieht immer alles.
+- `Mentor:in` kann später optional Einblick bekommen, aber nicht im MVP.
+
+### 10. Datenschutz und minimale Datenspeicherung
+
+Studierende müssen wissen, dass ihr Lernfortschritt gespeichert wird. Gespeichert wird nur, was für die Akademie notwendig ist.
+
+- Dozentinnenansicht nur für `Akademie-Leitung`.
+- keine öffentlichen Ranglisten.
+- keine unnötige Verhaltensüberwachung.
+- kein automatisches Time-Tracking im MVP.
+- `gelesen` und `gesehen` werden aktiv per Button bestätigt.
+
+## Zertifikatslogik
+
+Zertifikate werden nicht automatisch erzeugt. Sie werden manuell durch `Akademie-Leitung` freigegeben.
+
+`Akademie-Leitung` darf:
+
+- Zertifikate ausstellen
+- Zertifikate widerrufen
+- Zertifikate neu erzeugen
+- Zertifikatsstatus ändern
+- Abschlussstatus setzen
+
+Jedes Zertifikat erhält:
+
+- eindeutige Zertifikats-ID
+- Zertifikatstitel
+- Ausstellungsdatum
+- Status
+- öffentliche Verifizierungsseite
+- optional später QR-Code
+
+Öffentliche Verifizierungsseite:
+
+`/zertifikat/[certificateCode]`
+
+Anzeige:
+
+- Name
+- Zertifikatstitel
+- Akademiepfad
+- Ausstellungsdatum
+- Status
+- Hinweis: `Dieses Zertifikat wurde durch die WÖk-Akademie verifiziert.`
 
 ## 6. MVP-Umfang
 
@@ -741,6 +1071,7 @@ Wichtig:
    - `DISCORD_ROLE_ABSOLVENT_ID`
    - `DISCORD_ROLE_MENTOR_ID`
    - `DISCORD_ROLE_TEAM_ID`
+   - `DISCORD_ROLE_AKADEMIE_LEITUNG_ID`
    - `NEXT_PUBLIC_SUPABASE_URL`
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
    - `SUPABASE_SERVICE_ROLE_KEY`

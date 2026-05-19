@@ -22,6 +22,7 @@ Aktueller Rollenstand:
 - Absolvent:in
 - Mentor:in
 - Team
+- Akademie-Leitung
 - @everyone
 
 ## Für die Akademie-App relevante Rollen
@@ -33,6 +34,7 @@ Aktueller Rollenstand:
 - Absolvent:in
 - Mentor:in
 - Team
+- Akademie-Leitung
 
 ## Rollen, die nicht für die Akademie-App genutzt werden
 
@@ -76,8 +78,15 @@ Diese Rollen sind Community-/Discord-Level-Rollen und dürfen nicht als Zugangsk
 ### Team
 
 1. Natalie vergibt `Team`.
-2. Team ist Admin-/Redaktions-/Betreuungsrolle.
-3. Team kann unabhängig von Kohorte interne Vorschauen und spätere Adminfunktionen erhalten.
+2. Team ist Moderation / Technik / Redaktion.
+3. Team kann interne Vorschauen und spätere eingeschränkte Arbeitsfunktionen erhalten.
+
+### Akademie-Leitung
+
+1. Natalie erhält `Akademie-Leitung`.
+2. Diese Rolle ist die höchste Berechtigungsstufe der Akademie-App.
+3. Akademie-Leitung darf alle Kohorten, Studierenden, Inhalte, Lernstände und später Zertifikate sehen und verwalten.
+4. Die Rollen-ID wird in Vercel als `DISCORD_ROLE_AKADEMIE_LEITUNG_ID` hinterlegt.
 
 ## Prioritätsregeln
 
@@ -88,6 +97,11 @@ Wenn normale Student:innen beide Kohortenrollen haben:
 Wenn `Team` oder `Mentor:in` beide Kohortenrollen haben:
 
 - Beide Kursversionen dürfen sichtbar sein.
+
+Wenn eine Person `Akademie-Leitung` hat:
+
+- Kohortenrollen sind für den Zugriff nicht erforderlich.
+- Alle Kursversionen und Studierendenprofile sind sichtbar.
 
 Wenn eine Person `Akademie-Zugang`, aber keine Kohortenrolle hat:
 
