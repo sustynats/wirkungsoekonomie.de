@@ -23,8 +23,18 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "Mensch, Planet und Demokratie",
     aliases: ["MPD"],
     definition:
-      "Der normative Maßstab der Wirkungsökonomie: Was Menschen stärkt, den Planeten schützt und Demokratie stabilisiert.",
+      "Der normative Maßstab der Wirkungsökonomie: SDGs rahmen Mensch und Planet, SDG+ ergänzt Demokratie.",
     url: "/glossar.html#begriff-mensch-planet-demokratie",
+    priority: 1,
+    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "sdgs",
+    label: "SDGs",
+    aliases: ["Sustainable Development Goals", "SDG"],
+    definition:
+      "Die Nachhaltigkeitsziele der Vereinten Nationen. Sie bilden in der Wirkungsökonomie den Zielrahmen für Mensch und Planet.",
+    url: "/glossar.html#begriff-sdgs",
     priority: 1,
     allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
   },
@@ -63,6 +73,16 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     definition:
       "Eine strukturierte Bewertung, die zeigt, wie ein Produkt, Unternehmen oder eine Entscheidung in verschiedenen Wirkungsfeldern abschneidet.",
     url: "/glossar.html#begriff-scorecard",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "wirkungsklasse",
+    label: "Wirkungsklasse",
+    aliases: ["Wirkungsklassen"],
+    definition:
+      "Die verdichtete Klasse von +3 bis -3, die aus Scorecard, Netto-Wirkung und Schutzregel entsteht.",
+    url: "/glossar.html#begriff-wirkungsklasse",
     priority: 2,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },

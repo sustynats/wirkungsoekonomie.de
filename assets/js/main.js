@@ -563,7 +563,7 @@ function loadGlossaryTermsAndInit() {
 
   const script = document.createElement("script");
   const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
-  script.src = new URL("glossaryTerms.js", baseUrl).href;
+  script.src = new URL("glossaryTerms.js?v=20260520-sdg-framework", baseUrl).href;
   script.defer = true;
   script.onload = () => initGlossarySystem(window.WIRKUNG_GLOSSARY_TERMS || []);
   document.head.append(script);
@@ -597,6 +597,8 @@ function initGlossarySystem(terms) {
     method: { perBlock: 2, global: 18 },
     page: { perBlock: 2, global: 16 },
   }[context] || { perBlock: 2, global: 16 };
+
+  const termsByKey = new Map(eligibleTerms.map((term) => [term.key, term]));
 
   const excludedSelector = [
     "a",
@@ -694,6 +696,27 @@ function initGlossarySystem(terms) {
     return link;
   }
 
+  function enhanceManualGlossaryLinks() {
+    mainElement.querySelectorAll("[data-glossary-key]").forEach((element) => {
+      if (!(element instanceof HTMLAnchorElement)) {
+        return;
+      }
+
+      const term = termsByKey.get(element.dataset.glossaryKey || "");
+      if (!term) {
+        return;
+      }
+
+      element.href = element.getAttribute("href") || term.url;
+      element.classList.add("glossary-term");
+      element.dataset.glossaryLabel = element.dataset.glossaryLabel || term.label;
+      element.dataset.glossaryDefinition = element.dataset.glossaryDefinition || term.definition;
+      element.dataset.glossaryUrl = element.dataset.glossaryUrl || term.url;
+      element.setAttribute("aria-haspopup", "dialog");
+      element.setAttribute("aria-label", `${term.label}: ${term.definition} Mehr im Glossar`);
+    });
+  }
+
   function markTermInNode(node, block, section) {
     const text = node.nodeValue || "";
     const match = findMatch(text, section);
@@ -753,6 +776,7 @@ function initGlossarySystem(terms) {
     }
   }
 
+  enhanceManualGlossaryLinks();
   Array.from(mainElement.querySelectorAll("p, li, dd, blockquote")).forEach(markBlock);
   initGlossaryCards();
 }
