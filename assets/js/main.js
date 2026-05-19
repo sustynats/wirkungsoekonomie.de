@@ -359,3 +359,74 @@ if (blogCards.length) {
 
   applyBlogFilter();
 }
+
+const downloadCards = Array.from(document.querySelectorAll("[data-download-card]"));
+const downloadFilterButtons = Array.from(document.querySelectorAll("[data-download-filter]"));
+const downloadSearchInput = document.querySelector("[data-download-search]");
+const downloadFilterStatus = document.querySelector(".download-filter-status");
+const downloadFilterState = {
+  category: "all",
+  query: "",
+};
+
+function applyDownloadFilter() {
+  if (!downloadCards.length) {
+    return;
+  }
+
+  let visibleCount = 0;
+  const hasSearch = downloadFilterState.query.length >= 2;
+
+  downloadCards.forEach((card) => {
+    const categories = (card.dataset.downloadCategory || "").split(" ").filter(Boolean);
+    const categoryMatch = downloadFilterState.category === "all" || categories.includes(downloadFilterState.category);
+    const haystack = [
+      card.dataset.downloadTitle,
+      card.dataset.downloadDescription,
+      card.textContent,
+    ].join(" ").toLowerCase();
+    const searchMatch = !hasSearch || haystack.includes(downloadFilterState.query);
+    const isVisible = categoryMatch && searchMatch;
+
+    card.hidden = !isVisible;
+    if (isVisible) {
+      visibleCount += 1;
+    }
+  });
+
+  downloadFilterButtons.forEach((button) => {
+    const isActive = button.dataset.downloadFilter === downloadFilterState.category;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  if (downloadFilterStatus) {
+    const labels = {
+      all: "alle Kategorien",
+      grundlagen: "Grundlagen",
+      "steuern-recht": "Steuern und Recht",
+      anwendungen: "Anwendungen",
+      "medien-demokratie": "Medien und Demokratie",
+      "daten-indikatoren": "Daten und Indikatoren",
+    };
+    const categoryLabel = labels[downloadFilterState.category] || downloadFilterState.category;
+    const queryLabel = hasSearch ? ` · Suche: „${downloadFilterState.query}“` : "";
+    downloadFilterStatus.textContent = `${visibleCount} Veröffentlichungen gefunden · ${categoryLabel}${queryLabel}`;
+  }
+}
+
+downloadFilterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    downloadFilterState.category = button.dataset.downloadFilter || "all";
+    applyDownloadFilter();
+  });
+});
+
+if (downloadSearchInput) {
+  downloadSearchInput.addEventListener("input", () => {
+    downloadFilterState.query = downloadSearchInput.value.trim().toLowerCase();
+    applyDownloadFilter();
+  });
+}
+
+applyDownloadFilter();
