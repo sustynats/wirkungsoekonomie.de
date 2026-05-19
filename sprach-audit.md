@@ -2,6 +2,10 @@
 
 Stand: 2026-05-19
 
+Nachtrag 2026-05-19:
+
+Die Einstiegssprache wurde noch stärker auf die Leitformulierung ausgerichtet: `Gewinn, Wachstum und Reichweite gelten heute als Erfolg. Aber sie sagen nicht, ob etwas unsere Zukunft schützt oder zerstört.` Diese Logik wurde auf Startseite, Wirkungsökonomie, Modell, Anwendungen, Buch, Blog, Akademie, Downloads, Mitmachen und Glossar nachgezogen.
+
 ## 1. Geprüfte Seiten
 
 - `index.html`
@@ -33,6 +37,8 @@ Reduziert oder vereinfacht wurden vor allem:
 - `Wirkungsdatenräume` -> `Datenräume für Wirkung`
 - `systemischer Wert` -> `Beitrag zur Stabilität des Ganzen`
 - `normativer Wert` -> `Abgleich mit Mensch, Planet und Demokratie`
+- `Maßstabskrise` -> `falsches Erfolgsbild` oder konkrete Frage nach Gewinn, Wachstum, Reichweite und Wirkung
+- `Rückkopplung` -> `verändert Preise, Steuern, Kapital und Entscheidungen` oder `Mögliche Folgen`
 
 Außerdem wurden sichtbare Gedankenstriche vereinheitlicht, damit die Sprache ruhiger und technisch konsistenter wirkt.
 
@@ -56,7 +62,8 @@ Die Reihenfolge wurde dort angepasst, wo es für den Einstieg wichtig ist: erst 
 Wichtige Änderungen:
 
 - Startseite: Einstieg von abstrakter System- und Aktivitätssprache auf eine klare Gegenüberstellung von Geld, Gewinn, Reichweite und Zukunftswirkung umgestellt.
-- Startseite: Karte `03 · Die Methode` neu formuliert als `Wirkung messen und zurückkoppeln`; T-SROI aus der Einstiegskarte entfernt.
+- Startseite: Leitformulierung `Gewinn, Wachstum und Reichweite gelten heute als Erfolg...` direkt im Hero verankert.
+- Startseite: Karte `03 · Die Methode` neu formuliert als `Wirkung messen und Entscheidungen verändern`; T-SROI aus der Einstiegskarte entfernt.
 - Startseite: Zielgruppen-Karten für Unternehmer:innen, Politik / Verwaltung und Investor:innen sprachlich vereinfacht.
 - Modellseite: Grundkreislauf beginnt nun mit Folgen für Mensch, Planet und Demokratie; Fachbegriffe werden danach eingeführt.
 - Wirkungsökonomie-Seite: Die alte Ordnung wird über Geld, Wachstum und Reichweite erklärt, nicht über abstrakte Aktivität.
@@ -64,6 +71,7 @@ Wichtige Änderungen:
 - Erleben-Seite: Erlebniswelt, Demos und Scanner sprechen zuerst von Bewertung, Folgen und Anreizen; technische Begriffe bleiben in Demo-Hinweisen und Vertiefungen.
 - Downloads-Seite: Hauptwerk, Lesereihenfolge und Paper-Teaser wurden auf Nutzen, Entscheidung und sichtbare Wirkung ausgerichtet.
 - Blogseite: Leitartikel und Dossiers wurden teilweise umbenannt, damit der Einstieg nicht mit Fachbegriffen beginnt.
+- Blogseite: Leitartikel, Blogeinordnung und zentrale Kurzthesen stärker auf `Was gilt als Erfolg - und was bewirkt es wirklich?` ausgerichtet.
 - Akademie-Seite: Lernpfad und Module erklären Fachbegriffe ausdrücklich erst nach der Grundidee.
 - Buchseite: Executive Summary, Leseschlüssel und Vorwort erklären zuerst die Idee und nennen danach die Fachbegriffe.
 
