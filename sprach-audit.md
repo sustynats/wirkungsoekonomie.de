@@ -6,6 +6,10 @@ Nachtrag 2026-05-19:
 
 Die Einstiegssprache wurde noch stärker auf die Leitformulierung ausgerichtet: `Gewinn, Wachstum und Reichweite gelten heute als Erfolg. Aber sie sagen nicht, ob etwas unsere Zukunft schützt oder zerstört.` Diese Logik wurde auf Startseite, Wirkungsökonomie, Modell, Anwendungen, Buch, Blog, Akademie, Downloads, Mitmachen und Glossar nachgezogen.
 
+Nachtrag 2026-05-19 Definitionsebene:
+
+Alle zentralen Einstiegsebenen beginnen nun klarer mit Frage und Definition: Was fragt die Wirkungsökonomie, was bewertet sie und warum ist Wirkung der Maßstab? Die Startseite nutzt die Dramaturgie `Wie viel Gewinn entsteht?` / `Welche Wirkung hat das auf unsere Zukunft?` und erklärt direkt danach: Positive Wirkung soll sich lohnen, schädliche Wirkung soll sichtbar und teurer werden. Das Glossar enthält einen prominenten Basisbegriff `Wirkungsökonomie` mit der vollständigen Definition und internen Verweisen auf Wirkung, Mensch, Planet und Demokratie, Wirkungssteuer, Netto-Wirkungs-Index, Scorecard, Wirkungsrat und T-SROI.
+
 ## 1. Geprüfte Seiten
 
 - `index.html`
@@ -16,8 +20,11 @@ Die Einstiegssprache wurde noch stärker auf die Leitformulierung ausgerichtet: 
 - `blog.html`
 - `downloads.html`
 - `erleben.html`
+- `mitmachen.html`
+- `anwendungen.html`
 - `scorecard-dashboard.html`
 - `akademie.html`
+- `glossar.html`
 - Stichproben in `veroeffentlichungen/index.html`, `fa-qs-und-links/index.html`, `leitbild/index.html`, `w-est-g-journal/index.html`
 
 ## 2. Reduzierte Fachbegriffe
@@ -62,6 +69,7 @@ Die Reihenfolge wurde dort angepasst, wo es für den Einstieg wichtig ist: erst 
 Wichtige Änderungen:
 
 - Startseite: Einstieg von abstrakter System- und Aktivitätssprache auf eine klare Gegenüberstellung von Geld, Gewinn, Reichweite und Zukunftswirkung umgestellt.
+- Startseite: Hero-Frage und Definition der Wirkungsökonomie vor Methode, Daten und Instrumenten gesetzt.
 - Startseite: Leitformulierung `Gewinn, Wachstum und Reichweite gelten heute als Erfolg...` direkt im Hero verankert.
 - Startseite: Karte `03 · Die Methode` neu formuliert als `Wirkung messen und Entscheidungen verändern`; T-SROI aus der Einstiegskarte entfernt.
 - Startseite: Zielgruppen-Karten für Unternehmer:innen, Politik / Verwaltung und Investor:innen sprachlich vereinfacht.
@@ -74,12 +82,16 @@ Wichtige Änderungen:
 - Blogseite: Leitartikel, Blogeinordnung und zentrale Kurzthesen stärker auf `Was gilt als Erfolg - und was bewirkt es wirklich?` ausgerichtet.
 - Akademie-Seite: Lernpfad und Module erklären Fachbegriffe ausdrücklich erst nach der Grundidee.
 - Buchseite: Executive Summary, Leseschlüssel und Vorwort erklären zuerst die Idee und nennen danach die Fachbegriffe.
+- Einstiegseiten: Wirkungsökonomie, Modell, Anwendungen, Erleben, Buch, Akademie, Blog, Downloads und Mitmachen verlinken den Begriff `Wirkungsökonomie` beim ersten relevanten Auftreten auf den Glossareintrag.
 
 ## 5. Ergänzte oder verbesserte Glossarlinks
 
 - Startseite verlinkt die Fachhinweise zu eindeutigen Wirkungskennzahlen, Wirkungsbewertungen und dem Prinzip des schwächsten Feldes.
 - Modellseite verlinkt WÖk-ID, Scorecard, Reverse Merit Order und Netto-Wirkungs-Index.
 - Glossar wurde um den Anker `begriff-nwi` beim Begriff `Netto-Wirkungs-Index (NWI)` ergänzt.
+- Glossar wurde um den prominenten Basisanker `begriff-wirkungsoekonomie` ergänzt.
+- Glossar erhielt zusätzliche Anker für `begriff-mensch-planet-demokratie` und `begriff-wirkungssteuer`.
+- Zentrale Einstiegseiten verlinken den Begriff `Wirkungsökonomie` auf `glossar.html#begriff-wirkungsoekonomie`.
 
 ## 6. Spätere redaktionelle Nacharbeit
 
