@@ -74,7 +74,9 @@ Einzelprofil pro Student:in.
 
 ### `/leitung/inhalte`
 
-Verwaltung von Stufen, Vorlesungen, Skripten und YouTube-Links.
+Verwaltung von Stufen, Vorlesungen, Veröffentlichung, Pflichtstatus und YouTube-Links.
+
+Vorlesungsskripte selbst werden als MDX oder Markdown im GitHub-Repo gepflegt. Word- oder PDF-Vorlagen werden durch Codex in hochwertige Lernseiten umgewandelt und nach Merge über Vercel veröffentlicht.
 
 ### `/zertifikat/[certificateCode]`
 
@@ -187,7 +189,7 @@ Funktionen:
 - Vorlesung auswählen
 - Titel bearbeiten
 - Kurzbeschreibung bearbeiten
-- Skriptinhalt bearbeiten oder Skript-URL hinterlegen
+- Skriptpfad prüfen oder hinterlegen
 - YouTube-Link hinterlegen
 - Video als required markieren
 - Skript als required markieren
@@ -196,7 +198,20 @@ Funktionen:
 
 ## Content-Modell im MVP
 
-Empfohlen: Inhalte in Supabase speichern.
+Empfohlen: hybride Content-Pflege.
+
+Skripte:
+
+- liegen als MDX oder Markdown im GitHub-Repo
+- werden von Codex aus Word/PDF in Website-Lernseiten umgewandelt
+- werden über Vercel nach Merge veröffentlicht
+- wirken wie hochwertige Lernseiten, nicht wie eingebettete PDFs
+
+YouTube-Links:
+
+- werden im Leitungsdashboard gepflegt
+- werden pro Vorlesung in Supabase gespeichert
+- können ohne Deployment aktualisiert werden
 
 Tabelle:
 
@@ -205,11 +220,15 @@ Tabelle:
 
 Wichtige Felder in `lectures`:
 
+- `course_version_id` über `stages`
+- `cohort_key` über `course_versions`
+- `stage_number` über `stages`
+- `lecture_number`
 - `title`
 - `slug`
 - `description`
-- `script_body_markdown`
-- `script_url`
+- `script_path`
+- `script_download_url`
 - `video_url`
 - `required_script`
 - `required_video`
@@ -218,7 +237,23 @@ Wichtige Felder in `lectures`:
 
 Vorteil:
 
-Natalie kann Skripte und YouTube-Links im Leitungsdashboard pflegen, ohne GitHub oder Vercel anfassen zu müssen.
+Skripte sind versioniert und redaktionell sauber. Natalie kann YouTube-Links, Veröffentlichung und Pflichtstatus im Leitungsdashboard pflegen, ohne GitHub oder Vercel anfassen zu müssen.
+
+## Lernseite pro Vorlesung
+
+Die Lernseite lädt das Skript aus dem GitHub-Repo und ergänzt die dynamischen Informationen aus Supabase.
+
+Sie zeigt:
+
+- Skript als Website-Inhalt
+- optionalen PDF-Download
+- eingebettetes YouTube-Video
+- Button `Skript gelesen`
+- Button `Video angesehen`
+- gespeicherten Status
+- nächste Vorlesung, falls freigeschaltet
+
+Die Hauptnutzung ist die Website-Lernseite. PDFs sind nur Ergänzung oder Download, nicht das primäre Lernformat.
 
 ## Zertifikate
 
@@ -259,7 +294,7 @@ Aktionen:
 - Prüfung ablehnen
 - Detailseite pro Student:in
 - Anzeige gelesener Skripte, Videos und Prüfungen
-- Inhalte und YouTube-Links pflegen
+- YouTube-Links und Veröffentlichungsstatus pflegen
 - Zertifikat manuell ausstellen
 
 ## Nicht im MVP

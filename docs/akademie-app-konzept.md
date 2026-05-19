@@ -459,6 +459,30 @@ Jede Vorlesung enthält:
 - Button `Skript gelesen`
 - Button `Video angesehen`
 
+Vorlesungsskripte werden als hochwertige Lernseiten im GitHub-Repo gepflegt. Word- oder PDF-Vorlagen werden durch Codex in saubere MDX- oder Markdown-Lernseiten umgewandelt und nach Merge automatisch über Vercel veröffentlicht.
+
+Bevorzugte Struktur:
+
+```text
+content/
+  v1/
+    stufe-1/
+      vorlesung-1.mdx
+      vorlesung-2.mdx
+      vorlesung-3.mdx
+      vorlesung-4.mdx
+  v2/
+    stufe-1/
+      vorlesung-1.mdx
+      vorlesung-2.mdx
+      vorlesung-3.mdx
+      vorlesung-4.mdx
+```
+
+Die Kohorte entscheidet, ob `v1` oder `v2` geladen wird. Die Akademie-Stufe entscheidet, welche Stufe freigeschaltet ist. Der individuelle Lernfortschritt entscheidet, welche Vorlesung innerhalb der Stufe anklickbar ist.
+
+PDFs können optional als Download angeboten werden. Die Hauptnutzung soll aber die Website-Lernseite sein, nicht ein eingebettetes PDF.
+
 Vorlesungen werden innerhalb jeder Stufe nacheinander freigeschaltet:
 
 - Vorlesung 1 ist sichtbar, wenn die Stufe freigeschaltet ist.
@@ -494,8 +518,8 @@ create table public.lectures (
   title text not null,
   slug text not null,
   description text,
-  script_body_markdown text,
-  script_url text,
+  script_path text not null,
+  script_download_url text,
   video_url text,
   required_script boolean not null default true,
   required_video boolean not null default true,
@@ -508,6 +532,30 @@ create table public.lectures (
   unique (stage_id, slug)
 );
 ```
+
+`script_path` zeigt auf die versionierte MDX-/Markdown-Datei im Repo, zum Beispiel `content/v2/stufe-1/vorlesung-1.mdx`.
+
+`video_url` wird nicht fest im Code eingebaut. Akademie-Leitung pflegt den YouTube-Link im Leitungsdashboard. Die Lernseite lädt das Skript aus dem Repo und kombiniert es zur Laufzeit mit dem Video-Link aus Supabase.
+
+Für Dashboard und Kursanzeige kann zusätzlich eine View genutzt werden:
+
+```sql
+lecture_catalog:
+- course_version_id
+- cohort_key
+- stage_number
+- lecture_number
+- title
+- slug
+- script_path
+- script_download_url
+- video_url
+- published
+- required_script
+- required_video
+```
+
+Diese View macht sichtbar, welche Skriptdatei und welcher Video-Link zu welcher Kohorte, Stufe und Vorlesung gehören.
 
 #### lecture_progress
 
@@ -563,21 +611,35 @@ Statuswerte:
 
 ### Inhaltsverwaltung
 
-Für den MVP wird Option A empfohlen:
+Für den MVP wird eine hybride Content-Logik empfohlen:
 
-Skripte und Vorlesungsdaten werden in Supabase gespeichert:
+1. Vorlesungsskripte liegen als MDX oder Markdown im GitHub-Repo.
+2. Codex wandelt Word- oder PDF-Skripte in saubere Lernseiten um.
+3. Vercel veröffentlicht Skripte automatisch nach Merge.
+4. Supabase speichert Metadaten, Pfad, YouTube-Link, Veröffentlichung und Pflichtstatus.
 
-- `title`
-- `slug`
-- `description`
-- `script_body_markdown`
+Supabase speichert pro Vorlesung:
+
+- Kursversion über `course_versions`
+- `cohort_key`
+- `stage_number`
+- `lecture_number`
+- `script_path`
 - `video_url`
 - `published`
-- `order_index`
+- `required_script`
+- `required_video`
+- `lecture_progress`
 
-Vorteil: Natalie kann Inhalte und YouTube-Links im Leitungsdashboard pflegen, ohne GitHub oder Deployment anfassen zu müssen.
+Technisch kann `cohort_key` über `course_versions` und `stage_number` über `stages` kommen. Für das Dashboard kann daraus eine View `lecture_catalog` gebaut werden.
 
-Option B für später: Skripte liegen als MDX/Markdown im GitHub-Repo und werden über Codex gepflegt.
+Vorteile:
+
+- Skripte sind sauber versioniert.
+- Codex kann Word/PDF in hochwertige Lernseiten umwandeln.
+- Änderungen an Skripten laufen über Pull Request und Vercel Deployment.
+- YouTube-Links bleiben flexibel im Leitungsdashboard pflegbar.
+- Supabase bleibt zuständig für Status, Fortschritt, Video-Link und Veröffentlichung.
 
 ### Prüfungsanmeldung und Prüfungsfreigabe
 
@@ -1214,18 +1276,50 @@ Nicht im MVP:
 
 ### Content-Pflege im MVP
 
-Natalie soll YouTube-Links und Skripte möglichst ohne manuelles Deployment pflegen können. Deshalb empfiehlt sich für den MVP Option A:
+Vorlesungsskripte sollen als hochwertige Website-Lernseiten wirken. Deshalb empfiehlt sich für den MVP die hybride Pflege:
 
-- Vorlesungsdaten in Supabase speichern.
-- Skripte als Markdown in Supabase speichern.
-- YouTube-Links im Leitungsdashboard bearbeiten.
-- Inhalte veröffentlichen oder unveröffentlicht setzen.
-- Reihenfolge über `order_index` pflegen.
+Skripte:
 
-Option B für später:
+- liegen als MDX oder Markdown im GitHub-Repo
+- werden aus Word- oder PDF-Vorlagen durch Codex in Lernseiten umgewandelt
+- liegen versioniert unter `content/v1/...` oder `content/v2/...`
+- werden nach Merge automatisch über Vercel veröffentlicht
 
-- Inhalte als MDX/Markdown im GitHub-Repo pflegen.
-- Änderungen über Codex, Pull Requests und Vercel deployen.
+YouTube-Links:
+
+- werden im Leitungsdashboard gepflegt
+- werden pro Vorlesung in Supabase gespeichert
+- werden auf der Lernseite eingebettet
+- können ohne GitHub-Änderung aktualisiert werden
+
+Supabase speichert zusätzlich:
+
+- `script_path`
+- `published`
+- `required_script`
+- `required_video`
+- `lecture_progress`
+
+Damit bleibt die redaktionelle Qualität der Skripte hoch, während Natalie Video-Links und Freigaben im Leitungsdashboard pflegen kann.
+
+### Lernseite pro Vorlesung
+
+Die Lernseite kombiniert zwei Quellen:
+
+1. MDX-/Markdown-Skript aus dem GitHub-Repo
+2. Vorlesungsmetadaten und YouTube-Link aus Supabase
+
+Die Seite zeigt:
+
+- Skript als Website-Inhalt
+- optionalen PDF-Download, falls vorhanden
+- YouTube-Video, wenn `video_url` gesetzt und `published = true`
+- Button `Skript gelesen`
+- Button `Video angesehen`
+- aktuellen Status der Vorlesung
+- Hinweis auf die nächste freigeschaltete Vorlesung
+
+Die nächste Vorlesung wird erst anklickbar, wenn die aktuelle Vorlesung abgeschlossen ist. Eine Vorlesung gilt als abgeschlossen, wenn alle verpflichtenden Bestandteile aktiv bestätigt wurden.
 
 Videos sollen im MVP nicht selbst gehostet werden. Geeignet sind:
 
@@ -1284,8 +1378,15 @@ woek-akademie-app/
     api/
   components/
   content/
-    academy/
-      seed/
+    v1/
+      stufe-1/
+        vorlesung-1.mdx
+        vorlesung-2.mdx
+        vorlesung-3.mdx
+        vorlesung-4.mdx
+    v2/
+      stufe-1/
+        vorlesung-1.mdx
   lib/
     discord/
     supabase/
@@ -1433,8 +1534,9 @@ Wichtig:
 
 ### Inhalte
 
-- Werden Skripte dauerhaft in Supabase gepflegt oder später zusätzlich als MDX im Repo versioniert?
-- Empfehlung für MVP: Skripte, Vorlesungsdaten und YouTube-Links direkt in Supabase speichern und im Leitungsdashboard pflegen.
+- Wie werden Word- und PDF-Vorlagen an Codex übergeben?
+- Welche MDX-Komponenten braucht eine gute Lernseite: Merkkasten, Reflexionsfrage, Prüfungshinweis, Downloadlink?
+- Sollen PDF-Originale zusätzlich als Downloadlink angeboten werden?
 - Wo liegen Pflichtlektüren?
 - Welche Videos werden für Stufe 1 genutzt?
 
