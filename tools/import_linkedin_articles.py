@@ -397,7 +397,7 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
     cards = []
     for article in articles:
         cards.append(
-            f"""          <article class="blog-card linkedin-archive-card">
+            f"""          <article class="blog-card linkedin-archive-card" data-origin="linkedin">
             <p class="card-kicker">{html.escape(article.date_label)}</p>
             <h3 class="card-title">{html.escape(article.title)}</h3>
             <p class="card-text">{html.escape(description_for(article))}</p>
@@ -557,7 +557,7 @@ def update_blog_overview() -> None:
         return
     marker = '        <div class="card-grid">\n'
     card = """        <div class="card-grid">
-          <article class="blog-card">
+          <article class="blog-card" data-origin="linkedin">
             <p class="card-kicker">Archiv</p>
             <h3 class="card-title">LinkedIn-Artikel</h3>
             <p class="card-text">Übernommene Artikel von Natalie Weber zur Wirkungsökonomie, Demokratie, Nachhaltigkeit, Energie, KI und gesellschaftlicher Steuerung.</p>
@@ -581,8 +581,6 @@ def main() -> None:
         return
 
     ARTICLE_DIR.mkdir(parents=True, exist_ok=True)
-    for stale in ARTICLE_DIR.glob("*.html"):
-        stale.unlink()
     for article in articles:
         (ARTICLE_DIR / f"{article.slug}.html").write_text(render_article(article), encoding="utf-8")
     ARCHIVE_PATH.write_text(render_archive(articles, skipped), encoding="utf-8")

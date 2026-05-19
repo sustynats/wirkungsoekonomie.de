@@ -4,6 +4,12 @@ const analyticsMeasurementId = "G-KBSME2T45Y";
 const analyticsConsentKey = "wirkungsoekonomie-analytics-consent";
 
 if (navToggle && siteNav) {
+  const closeNavigation = () => {
+    siteNav.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Menü öffnen");
+  };
+
   navToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
@@ -12,12 +18,37 @@ if (navToggle && siteNav) {
 
   siteNav.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
-      siteNav.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
-      navToggle.setAttribute("aria-label", "Menü öffnen");
+      closeNavigation();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("open")) {
+      closeNavigation();
+      navToggle.focus();
     }
   });
 }
+
+document.querySelectorAll(".site-nav a").forEach((link) => {
+  if (!(link instanceof HTMLAnchorElement)) {
+    return;
+  }
+
+  const pathParts = window.location.pathname.split("/").filter(Boolean);
+  const currentSection = pathParts[0] || "index.html";
+  const currentPath = pathParts[pathParts.length - 1] || "index.html";
+  const linkPath = link.pathname.split("/").pop() || "index.html";
+  const isBlogSection = currentSection === "blog" && linkPath === "blog.html";
+  const isCurrent = currentPath === linkPath || isBlogSection;
+
+  link.classList.toggle("active", isCurrent);
+  if (isCurrent) {
+    link.setAttribute("aria-current", "page");
+  } else {
+    link.removeAttribute("aria-current");
+  }
+});
 
 function loadAnalytics() {
   if (window.__wirkungAnalyticsLoaded) {
@@ -93,6 +124,7 @@ try {
 const blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
+const blogOriginLinks = Array.from(document.querySelectorAll("[data-blog-origin-filter]"));
 const blogFilterStatus = document.querySelector(".blog-filter-status");
 
 function setActiveBlogLinks(type, value) {
@@ -104,6 +136,10 @@ function setActiveBlogLinks(type, value) {
 
   blogTagLinks.forEach((link) => {
     link.classList.toggle("active", type === "tag" && link.dataset.blogTag === value);
+  });
+
+  blogOriginLinks.forEach((link) => {
+    link.classList.toggle("active", type === "origin" && link.dataset.blogOriginFilter === value);
   });
 }
 
@@ -119,7 +155,8 @@ function applyBlogFilter(type, value, label) {
     const isVisible =
       type === "all" ||
       (type === "category" && card.dataset.category === value) ||
-      (type === "tag" && tags.includes(value));
+      (type === "tag" && tags.includes(value)) ||
+      (type === "origin" && card.dataset.origin === value);
 
     card.hidden = !isVisible;
     if (isVisible) {
@@ -165,6 +202,14 @@ blogTagLinks.forEach((link) => {
     event.preventDefault();
     applyBlogFilter("tag", link.dataset.blogTag, link.textContent.trim());
     moveToBlogList(`#tag-${link.dataset.blogTag}`);
+  });
+});
+
+blogOriginLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    applyBlogFilter("origin", link.dataset.blogOriginFilter, link.textContent.trim());
+    moveToBlogList(`#${link.dataset.blogOriginFilter}-beitraege`);
   });
 });
 
