@@ -57,6 +57,19 @@ if (navToggle && siteNav) {
   });
 }
 
+if (siteNav && !siteNav.querySelector("[data-search-nav]") && !siteNav.querySelector('a[href$="suche.html"]')) {
+  const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
+  const searchLink = document.createElement("a");
+  searchLink.href = new URL("../../suche.html", baseUrl).href;
+  searchLink.dataset.searchNav = "true";
+  searchLink.textContent = "Suche";
+  if (window.location.pathname.endsWith("/suche.html")) {
+    searchLink.classList.add("active");
+    searchLink.setAttribute("aria-current", "page");
+  }
+  siteNav.append(searchLink);
+}
+
 document.querySelectorAll(".site-nav a").forEach((link) => {
   if (!(link instanceof HTMLAnchorElement)) {
     return;

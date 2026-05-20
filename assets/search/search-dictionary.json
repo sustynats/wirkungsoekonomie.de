@@ -1,0 +1,117 @@
+{
+  "terms": [
+    {
+      "key": "wirkungsoekonomie",
+      "label": "Wirkungsökonomie",
+      "aliases": ["WÖk", "Woek", "Wirkungsoekonomie", "Wirkungsökonomie", "wirkung ökonomie", "neue Ordnung des Wohlstands"],
+      "related": ["Wirkung", "Mensch, Planet und Demokratie", "Wirkungssteuer", "Modell", "Von Daten zum Steuersatz"],
+      "entrypoint": "wirkungsoekonomie-verstehen"
+    },
+    {
+      "key": "wirkungssteuer",
+      "label": "Wirkungssteuer",
+      "aliases": ["WStG", "WUStG", "Wirkungsumsatzsteuer", "Produktsteuer", "Produktbesteuerung", "Steuer nach Wirkung", "Steuersatz nach Wirkung", "Steuerklasse", "Wirkungsteuer"],
+      "related": ["Von Daten zum Steuersatz", "Steuerklassen", "Scorecard", "NWI", "Reverse Merit Order", "WStG", "WUStG"],
+      "entrypoint": "workflow"
+    },
+    {
+      "key": "nwi",
+      "label": "Netto-Wirkungs-Index",
+      "aliases": ["NWI", "Netto Wirkung", "Netto-Wirkung", "Wirkungsklasse", "Wirkungsscore", "FinalScore"],
+      "related": ["Scorecard", "Reverse Merit Order", "Wirkungssteuer", "Wirkungsklasse"],
+      "entrypoint": "modell"
+    },
+    {
+      "key": "t-sroi",
+      "label": "T-SROI",
+      "aliases": ["TSROI", "Transformational SROI", "Transformational Social Return on Investment", "Impact Controlling", "Transformationswirkung"],
+      "related": ["Kapital", "Investitionen", "Unternehmen", "Scorecard", "Transformation"],
+      "entrypoint": "scorecard-dashboard"
+    },
+    {
+      "key": "sdg",
+      "label": "SDG",
+      "aliases": ["Sustainable Development Goals", "Nachhaltigkeitsziele", "UN-Ziele", "SDGs"],
+      "related": ["SDG+", "GRI", "CSRD", "ESRS", "Wirkungsmessung", "globale Anschlussfähigkeit"],
+      "entrypoint": "workflow"
+    },
+    {
+      "key": "sdg-plus",
+      "label": "SDG+",
+      "aliases": ["Demokratie", "Medienqualität", "Rechtsstaatlichkeit", "gesellschaftlicher Zusammenhalt", "Diskursfähigkeit", "institutionelles Vertrauen"],
+      "related": ["Medien und Demokratie", "Wirkung politischer Sprache", "Narrative", "Vertrauen", "Faktencheck vs Wirkungsanalyse"],
+      "entrypoint": "sdg-medien-demokratie"
+    },
+    {
+      "key": "gri",
+      "label": "GRI",
+      "aliases": ["Global Reporting Initiative", "GRI Standards", "Reportingstandard", "Nachhaltigkeitsbericht"],
+      "related": ["CSRD", "ESRS", "Reporting", "Wirkungsdaten", "Von Daten zum Steuersatz"],
+      "entrypoint": "workflow"
+    },
+    {
+      "key": "csrd",
+      "label": "CSRD",
+      "aliases": ["Corporate Sustainability Reporting Directive", "Nachhaltigkeitsberichtspflicht", "EU-Berichtspflicht", "Nachhaltigkeitsdaten"],
+      "related": ["ESRS", "GRI", "Reporting", "Wirkungsdaten", "Rückkopplung"],
+      "entrypoint": "workflow"
+    },
+    {
+      "key": "esrs",
+      "label": "ESRS",
+      "aliases": ["European Sustainability Reporting Standards", "Nachhaltigkeitsstandards", "ESRS E1", "ESRS S1", "ESRS G1"],
+      "related": ["CSRD", "GRI", "Nachhaltigkeitsdaten", "Indikatoren", "Wirkungsbewertung"],
+      "entrypoint": "workflow"
+    },
+    {
+      "key": "gemeinwohl",
+      "label": "Gemeinwohlökonomie",
+      "aliases": ["GWÖ", "Gemeinwohl", "Gemeinwohlbilanz", "ECG", "Economy for the Common Good"],
+      "related": ["Wirkungsökonomie im Vergleich", "ESG", "Donut-Ökonomie", "Wirkung auf Mensch, Planet und Demokratie"],
+      "entrypoint": "vergleich"
+    },
+    {
+      "key": "donut",
+      "label": "Donut-Ökonomie",
+      "aliases": ["Doughnut Economics", "Donut", "planetare Grenzen", "soziales Fundament"],
+      "related": ["Wirkungsökonomie im Vergleich", "Wellbeing Economy", "Degrowth", "SDGs"],
+      "entrypoint": "vergleich"
+    },
+    {
+      "key": "wellbeing",
+      "label": "Wellbeing Economy",
+      "aliases": ["Wohlergehen", "Lebensqualität", "Beyond GDP", "Wohlbefinden"],
+      "related": ["Wirkungsökonomie im Vergleich", "Wohlstand", "Mensch", "Demokratie"],
+      "entrypoint": "vergleich"
+    },
+    {
+      "key": "degrowth",
+      "label": "Degrowth / Postwachstum",
+      "aliases": ["Postwachstum", "Degrowth", "Wachstumskritik"],
+      "related": ["Wirkungsökonomie im Vergleich", "Kapitalismus", "planetare Grenzen", "Wachstum"],
+      "entrypoint": "vergleich"
+    },
+    {
+      "key": "narrative",
+      "label": "Narrative",
+      "aliases": ["Framing", "Frame", "politische Sprache", "Sprachwirkung", "AfD", "Populismus", "rechte Narrative", "Demokratiegefährdung", "Wirkung politischer Sprache"],
+      "related": ["Wirkung politischer Sprache", "Wirkungspotenzial", "Medien und Demokratie", "Vertrauen", "Polarisierung", "Faktencheck vs Wirkungsanalyse"],
+      "entrypoint": "wirkung-politischer-sprache"
+    },
+    {
+      "key": "dpp",
+      "label": "Digitaler Produktpass",
+      "aliases": ["DPP", "Produktpass", "digital product passport", "Produktdaten"],
+      "related": ["Lieferkettendaten", "Produktwirkung", "Scorecard", "Von Daten zum Steuersatz"],
+      "entrypoint": "workflow"
+    }
+  ],
+  "typos": {
+    "wirkungsteuer": "Wirkungssteuer",
+    "wirkungsoekonomie": "Wirkungsökonomie",
+    "woek": "WÖk",
+    "tsroi": "T-SROI",
+    "netto wirkung": "Netto-Wirkungs-Index",
+    "produktpass": "Digitaler Produktpass"
+  }
+}
