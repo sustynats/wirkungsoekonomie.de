@@ -2921,6 +2921,155 @@ textarea {
   font-weight: 850;
 }
 
+.comparison-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.analysis-steps,
+.narrative-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.analysis-step-card,
+.narrative-card,
+.narrative-detail-card {
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.analysis-step-card {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.analysis-step-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 999px;
+  background: rgba(46, 132, 97, 0.12);
+  color: var(--green);
+  font-weight: 850;
+}
+
+.analysis-step-card h3,
+.narrative-card h3,
+.narrative-detail-card h3 {
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.1vw, 1.8rem);
+  line-height: 1.08;
+}
+
+.analysis-step-card p,
+.narrative-detail-card p {
+  color: var(--muted);
+}
+
+.narrative-detail-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.narrative-detail-card {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.narrative-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.narrative-detail-grid > div {
+  padding: 1rem;
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.narrative-detail-grid h4 {
+  color: var(--navy);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.radar-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.radar-visual {
+  --fear: 50%;
+  --anger: 50%;
+  --mistrust: 50%;
+  --enemy: 50%;
+  --control: 50%;
+  --simplify: 50%;
+  --authority: 50%;
+  --narrow: 50%;
+  --democracy: 50%;
+  --solidarity: 50%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.55rem;
+  padding: 1rem;
+  background:
+    linear-gradient(90deg, rgba(46, 132, 97, 0.08), rgba(201, 86, 68, 0.08)),
+    var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.radar-visual span {
+  display: block;
+  padding: 0.55rem 0.65rem;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(11, 15, 32, 0.09);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.impact-network {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.impact-network span {
+  padding: 0.62rem 0.85rem;
+  color: var(--navy);
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.impact-network .network-core {
+  color: #fff;
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
 .game-meter {
   display: grid;
   gap: 0.45rem;
@@ -4119,6 +4268,17 @@ textarea {
 }
 
 @media (max-width: 899px) {
+  .comparison-cards,
+  .analysis-steps,
+  .narrative-card-grid,
+  .narrative-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-visual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .demo-method-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4200,6 +4360,10 @@ textarea {
   }
 
   .check-score-row {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-visual {
     grid-template-columns: 1fr;
   }
 }

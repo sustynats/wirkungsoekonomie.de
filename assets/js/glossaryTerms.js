@@ -57,6 +57,76 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },
   {
+    key: "wirkungsraum",
+    label: "Wirkungsraum",
+    aliases: ["Wirkungsräume", "Wirkungsraeume"],
+    definition:
+      "Der Zusammenhang, in dem Wirkung entsteht. Eine Aussage oder Entscheidung wirkt je nach Kontext und Resonanzraum unterschiedlich.",
+    url: "/glossar.html#begriff-wirkungsraum",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "demokratie",
+    label: "Demokratie",
+    aliases: [],
+    definition:
+      "Der demokratische Wirkungsraum aus Rechtsstaatlichkeit, Vertrauen, Diskursfähigkeit, Medienqualität und Schutz vor Machtmissbrauch.",
+    url: "/glossar.html#begriff-demokratie",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "medienqualitaet",
+    label: "Medienqualität",
+    aliases: [],
+    definition:
+      "Die Qualität öffentlicher Information: Quellenklarheit, Kontext, Korrekturfähigkeit, Transparenz und Verantwortung für demokratische Öffentlichkeit.",
+    url: "/glossar.html#begriff-medienqualitaet",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "diskursfaehigkeit",
+    label: "Diskursfähigkeit",
+    aliases: ["Diskursfaehigkeit"],
+    definition:
+      "Die Fähigkeit einer Gesellschaft, Konflikte mit Fakten, Würde, Widerspruch und demokratischer Korrekturfähigkeit auszutragen.",
+    url: "/glossar.html#begriff-diskursfaehigkeit",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "wirkungsanalyse",
+    label: "Wirkungsanalyse",
+    aliases: ["Wirkungsanalysen"],
+    definition:
+      "Eine Prüfung möglicher Folgen: nicht nur, ob etwas stimmt, sondern welche Wirkung es in sozialen und demokratischen Räumen entfalten kann.",
+    url: "/glossar.html#begriff-wirkungsanalyse",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "narrativ",
+    label: "Narrativ",
+    aliases: ["Narrative", "Narrativen"],
+    definition:
+      "Eine wiedererkennbare Erzählstruktur, die Ereignisse deutet und Resonanzräume wie Angst, Vertrauen oder Zugehörigkeit öffnen kann.",
+    url: "/glossar.html#begriff-narrativ",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "frame",
+    label: "Frame",
+    aliases: ["Frames", "Framing"],
+    definition:
+      "Ein Deutungsrahmen, der festlegt, welche Aspekte eines Problems sichtbar werden und welche ausgeblendet bleiben.",
+    url: "/glossar.html#begriff-frame",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
     key: "nwi",
     label: "Netto-Wirkungs-Index",
     aliases: ["Netto-Wirkungs-Index / NWI", "NWI"],
