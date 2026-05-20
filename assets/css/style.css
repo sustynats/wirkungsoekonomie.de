@@ -592,6 +592,7 @@ textarea {
 .blog-card,
 .feature-card,
 .principle-card {
+  min-width: 0;
   background: rgba(255, 255, 255, 0.64);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -691,6 +692,7 @@ textarea {
 .book-card p {
   margin-top: 0.85rem;
   color: var(--muted);
+  overflow-wrap: break-word;
 }
 
 .clean-list {
@@ -2106,6 +2108,19 @@ textarea {
   margin-top: 1.25rem;
   color: var(--green);
   font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.card-text .text-link,
+.card p .text-link,
+.site-footer .text-link {
+  display: inline;
+  margin-top: 0;
+  word-break: break-word;
+}
+
+.legal-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
 }
 
 .experience-hero {
@@ -4072,6 +4087,10 @@ textarea {
   .everyday-grid,
   .quiz-lab-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .legal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .media-lab-grid,
