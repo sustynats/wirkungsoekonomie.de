@@ -212,7 +212,7 @@
 
 .narrative-visual-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
 }
 
@@ -283,28 +283,35 @@
 
 .network-map {
   position: relative;
-  display: grid;
-  grid-template-columns: 0.95fr 1.2fr 1.25fr;
-  gap: 0.75rem;
-  align-items: start;
-  padding: 0.85rem;
+  min-height: 31rem;
+  padding: 2.85rem 0.75rem 1rem;
   border: 1px solid rgba(11, 16, 32, 0.08);
   border-radius: var(--radius);
   background:
-    linear-gradient(90deg, transparent 31%, rgba(47, 125, 92, 0.18) 31.2%, transparent 31.8%),
-    linear-gradient(90deg, transparent 63%, rgba(47, 125, 92, 0.18) 63.2%, transparent 63.8%),
+    radial-gradient(circle at 12% 50%, rgba(154, 111, 18, 0.08), transparent 12%),
+    radial-gradient(circle at 47% 50%, rgba(47, 125, 92, 0.08), transparent 23%),
+    radial-gradient(circle at 82% 50%, rgba(47, 125, 92, 0.05), transparent 19%),
     rgba(246, 241, 232, 0.34);
+  overflow: hidden;
 }
 
-.network-column {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  align-content: start;
+.network-lines {
+  position: absolute;
+  inset: 2.65rem 0.75rem 1rem;
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 3.65rem);
+  pointer-events: none;
+}
+
+.network-lines line {
+  stroke: rgba(47, 125, 92, 0.26);
+  stroke-width: 0.42;
+  vector-effect: non-scaling-stroke;
 }
 
 .network-column-title {
-  width: 100%;
+  position: absolute;
+  top: 0.85rem;
   margin: 0 0 0.1rem;
   color: var(--muted);
   font-size: 0.74rem;
@@ -313,32 +320,58 @@
   text-transform: uppercase;
 }
 
+.network-column-title.core {
+  left: 0.95rem;
+}
+
+.network-column-title.direct {
+  left: 34%;
+}
+
+.network-column-title.second {
+  left: 68%;
+  max-width: 28%;
+}
+
 .network-node {
-  min-height: 2.3rem;
+  position: absolute;
+  left: var(--node-x);
+  top: var(--node-y);
+  z-index: 1;
+  width: clamp(5.6rem, 23%, 9.8rem);
+  min-height: 2.25rem;
   padding: 0.45rem 0.65rem;
-  text-align: left;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+  box-shadow: 0 0.35rem 1.1rem rgba(11, 16, 32, 0.04);
 }
 
 .network-node.core {
+  width: clamp(5.4rem, 18%, 8rem);
   border-color: rgba(154, 111, 18, 0.34);
   background: rgba(154, 111, 18, 0.10);
   color: var(--navy);
 }
 
 .network-node.direct {
+  width: clamp(5.8rem, 21%, 9.2rem);
   background: rgba(47, 125, 92, 0.07);
 }
 
 .network-node.second {
+  width: clamp(6.4rem, 24%, 10rem);
   border-color: rgba(47, 125, 92, 0.18);
   background: rgba(255, 255, 255, 0.78);
 }
 
 .network-links {
-  display: grid;
+  display: none;
   gap: 0.35rem;
-  max-height: 13rem;
-  overflow: auto;
+  max-height: none;
+  overflow: visible;
   padding: 0.7rem;
   border: 1px solid rgba(11, 16, 32, 0.08);
   border-radius: var(--radius);
@@ -425,7 +458,35 @@
   }
 
   .network-map {
+    min-height: auto;
+    padding: 2.8rem 0.85rem 0.85rem;
+    overflow: visible;
     background: rgba(246, 241, 232, 0.34);
+  }
+
+  .network-lines {
+    display: none;
+  }
+
+  .network-column-title {
+    position: static;
+    display: block;
+    margin-top: 0.9rem;
+  }
+
+  .network-column-title.core {
+    margin-top: 0;
+  }
+
+  .network-node {
+    position: static;
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0.25rem 0.25rem 0 0;
+    transform: none;
+    text-align: left;
   }
 
   .narrative-detail-panel h3 {

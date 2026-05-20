@@ -135,32 +135,52 @@
   }
 
   function renderNetwork(caseItem) {
-    const grouped = {
-      core: caseItem.network_nodes.filter((node) => node.level === "core"),
-      direct: caseItem.network_nodes.filter((node) => node.level === "direct"),
-      second: caseItem.network_nodes.filter((node) => node.level === "second")
-    };
+    const grouped = ["core", "direct", "second"].reduce((groups, level) => {
+      groups[level] = caseItem.network_nodes.filter((node) => node.level === level);
+      return groups;
+    }, {});
     const labelById = new Map(caseItem.network_nodes.map((node) => [node.id, node.label]));
+    const positionById = new Map();
+    const columns = {
+      core: { x: 12, minY: 50, maxY: 50 },
+      direct: { x: 47, minY: 15, maxY: 85 },
+      second: { x: 82, minY: 20, maxY: 80 }
+    };
+    Object.entries(grouped).forEach(([level, nodes]) => {
+      const column = columns[level];
+      const count = nodes.length;
+      nodes.forEach((node, index) => {
+        const y = count <= 1 ? column.minY : column.minY + ((column.maxY - column.minY) * index) / (count - 1);
+        positionById.set(node.id, { x: column.x, y });
+      });
+    });
     const renderNode = (node) => `
-      <button class="network-node ${escapeHtml(node.level)}" type="button" data-network-node="${escapeHtml(caseItem.id)}:${escapeHtml(node.id)}">
+      <button
+        class="network-node ${escapeHtml(node.level)}"
+        type="button"
+        data-network-node="${escapeHtml(caseItem.id)}:${escapeHtml(node.id)}"
+        style="--node-x: ${positionById.get(node.id)?.x || 50}%; --node-y: ${positionById.get(node.id)?.y || 50}%;"
+      >
         ${escapeHtml(node.label)}
       </button>
     `;
 
     return `
       <div class="network-map" aria-label="Wirkungsnetz ${escapeHtml(caseItem.title)}">
-        <div class="network-column">
-          <p class="network-column-title">Narrativ</p>
-          ${grouped.core.map(renderNode).join("")}
-        </div>
-        <div class="network-column">
-          <p class="network-column-title">Resonanzräume</p>
-          ${grouped.direct.map(renderNode).join("")}
-        </div>
-        <div class="network-column">
-          <p class="network-column-title">Systemursachen / Folgen</p>
-          ${grouped.second.map(renderNode).join("")}
-        </div>
+        <div class="network-column-title core">Narrativ</div>
+        <div class="network-column-title direct">Resonanzräume</div>
+        <div class="network-column-title second">Systemursachen / Folgen</div>
+        <svg class="network-lines" viewBox="0 0 100 100" aria-hidden="true" focusable="false" preserveAspectRatio="none">
+          ${caseItem.network_links
+            .map((link) => {
+              const source = positionById.get(link.source);
+              const target = positionById.get(link.target);
+              if (!source || !target) return "";
+              return `<line x1="${source.x}" y1="${source.y}" x2="${target.x}" y2="${target.y}"></line>`;
+            })
+            .join("")}
+        </svg>
+        ${caseItem.network_nodes.map(renderNode).join("")}
       </div>
       <div class="network-links" aria-label="Verbindungen im Wirkungsnetz">
         ${caseItem.network_links
