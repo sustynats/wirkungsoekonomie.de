@@ -69,7 +69,6 @@
         return `${point.x.toFixed(2)},${point.y.toFixed(2)}`;
       })
       .join(" ");
-    const labelRadius = mini ? 88 : 94;
 
     return `
       <svg class="${mini ? "mini-radar" : "radar-svg"}" viewBox="0 0 200 200" role="img" aria-label="Wirkungsradar für ${escapeHtml(caseItem.title)}">
@@ -79,10 +78,8 @@
         ${axes
           .map((axis, index) => {
             const end = polarPoint(index, 5, radius);
-            const label = polarPoint(index, 5, labelRadius);
             return `
               <line class="radar-axis-line" x1="100" y1="100" x2="${end.x.toFixed(2)}" y2="${end.y.toFixed(2)}"></line>
-              ${mini ? "" : `<text x="${label.x.toFixed(2)}" y="${label.y.toFixed(2)}" text-anchor="middle">${escapeHtml(axis)}</text>`}
             `;
           })
           .join("")}
@@ -143,8 +140,9 @@
       direct: caseItem.network_nodes.filter((node) => node.level === "direct"),
       second: caseItem.network_nodes.filter((node) => node.level === "second")
     };
+    const labelById = new Map(caseItem.network_nodes.map((node) => [node.id, node.label]));
     const renderNode = (node) => `
-      <button class="network-node ${node.level === "core" ? "core" : ""}" type="button" data-network-node="${escapeHtml(caseItem.id)}:${escapeHtml(node.id)}">
+      <button class="network-node ${escapeHtml(node.level)}" type="button" data-network-node="${escapeHtml(caseItem.id)}:${escapeHtml(node.id)}">
         ${escapeHtml(node.label)}
       </button>
     `;
@@ -163,6 +161,20 @@
           <p class="network-column-title">Systemursachen / Folgen</p>
           ${grouped.second.map(renderNode).join("")}
         </div>
+      </div>
+      <div class="network-links" aria-label="Verbindungen im Wirkungsnetz">
+        ${caseItem.network_links
+          .slice(0, 12)
+          .map(
+            (link) => `
+              <span>
+                <strong>${escapeHtml(labelById.get(link.source) || link.source)}</strong>
+                <em>wirkt auf</em>
+                <strong>${escapeHtml(labelById.get(link.target) || link.target)}</strong>
+              </span>
+            `
+          )
+          .join("")}
       </div>
       <div class="network-explanation" data-network-explanation="${escapeHtml(caseItem.id)}">
         <p>Wähle einen Knoten im Netz. Dann erscheint hier, welche Wirkung sichtbar wird und welche Systemfrage oft ausgeblendet bleibt.</p>

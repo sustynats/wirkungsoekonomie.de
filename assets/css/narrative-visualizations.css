@@ -114,12 +114,15 @@
   overflow: visible;
 }
 
-.mini-radar text,
-.radar-svg text {
-  fill: var(--muted);
-  font-family: var(--font-body);
-  font-size: 0.62rem;
-  font-weight: 750;
+.radar-svg {
+  display: block;
+  max-width: 380px;
+  margin: 0.1rem auto 0.2rem;
+}
+
+.mini-radar {
+  max-width: 180px;
+  justify-self: center;
 }
 
 .radar-grid {
@@ -216,6 +219,7 @@
 .radar-panel {
   display: grid;
   gap: 0.9rem;
+  align-content: start;
 }
 
 .radar-axis-buttons {
@@ -274,13 +278,22 @@
 .network-panel {
   display: grid;
   gap: 0.9rem;
+  align-content: start;
 }
 
 .network-map {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.65rem;
+  grid-template-columns: 0.95fr 1.2fr 1.25fr;
+  gap: 0.75rem;
   align-items: start;
+  padding: 0.85rem;
+  border: 1px solid rgba(11, 16, 32, 0.08);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(90deg, transparent 31%, rgba(47, 125, 92, 0.18) 31.2%, transparent 31.8%),
+    linear-gradient(90deg, transparent 63%, rgba(47, 125, 92, 0.18) 63.2%, transparent 63.8%),
+    rgba(246, 241, 232, 0.34);
 }
 
 .network-column {
@@ -312,8 +325,47 @@
   color: var(--navy);
 }
 
+.network-node.direct {
+  background: rgba(47, 125, 92, 0.07);
+}
+
+.network-node.second {
+  border-color: rgba(47, 125, 92, 0.18);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.network-links {
+  display: grid;
+  gap: 0.35rem;
+  max-height: 13rem;
+  overflow: auto;
+  padding: 0.7rem;
+  border: 1px solid rgba(11, 16, 32, 0.08);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.network-links span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.network-links em {
+  color: var(--green);
+  font-style: normal;
+  font-weight: 850;
+}
+
+.network-links strong {
+  color: var(--navy);
+}
+
 .network-explanation {
-  min-height: 8.5rem;
+  min-height: 0;
   padding: 0.85rem;
   border-radius: var(--radius);
   background: rgba(246, 241, 232, 0.74);
@@ -370,6 +422,10 @@
   .overall-network,
   .network-map {
     grid-template-columns: 1fr;
+  }
+
+  .network-map {
+    background: rgba(246, 241, 232, 0.34);
   }
 
   .narrative-detail-panel h3 {
