@@ -112,19 +112,16 @@ function sendSiteAnalyticsEvent(eventType) {
     sessionId: getSiteAnalyticsSessionId(),
   });
 
-  if (navigator.sendBeacon) {
-    const sent = navigator.sendBeacon(siteAnalyticsEndpoint, new Blob([payload], { type: "application/json" }));
-    if (sent) {
-      return;
-    }
-  }
-
   fetch(siteAnalyticsEndpoint, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "text/plain;charset=UTF-8" },
     body: payload,
     keepalive: true,
-  }).catch(() => undefined);
+  }).catch(() => {
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(siteAnalyticsEndpoint, new Blob([payload], { type: "text/plain;charset=UTF-8" }));
+    }
+  });
 }
 
 sendSiteAnalyticsEvent("page_view");
