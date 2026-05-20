@@ -785,7 +785,10 @@ textarea {
 
 .card > img[src*="assets/img/book/cover"] {
   width: auto;
+  max-width: min(100%, 20rem);
+  height: auto;
   max-height: min(68vh, 34rem);
+  object-fit: contain;
 }
 
 .founder-card {
@@ -903,6 +906,7 @@ textarea {
 .download-cover img {
   display: block;
   width: min(100%, 17rem);
+  height: auto;
   margin-inline: auto;
   border-radius: calc(var(--radius) * 0.7);
   box-shadow: var(--shadow-card);
