@@ -13,7 +13,8 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     key: "wirkung",
     label: "Wirkung",
     aliases: [],
-    definition: "Die reale Veränderung von Zuständen - positiv, negativ oder neutral - für Mensch, Planet und Demokratie.",
+    definition:
+      "Die reale Veränderung von Zuständen. Wirkung ist neutral, relational und wird in der WÖk an SDGs, Agenda 2030 und SDG+ bewertet.",
     url: "/glossar.html#begriff-wirkung",
     priority: 1,
     allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
@@ -23,7 +24,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "Mensch, Planet und Demokratie",
     aliases: ["MPD"],
     definition:
-      "Der normative Maßstab der Wirkungsökonomie: SDGs rahmen Mensch und Planet, SDG+ ergänzt Demokratie.",
+      "Der normative Maßstab der Wirkungsökonomie: SDGs und Agenda 2030 rahmen Mensch und Planet, SDG+ ergänzt Demokratie.",
     url: "/glossar.html#begriff-mensch-planet-demokratie",
     priority: 1,
     allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
@@ -33,7 +34,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "SDGs",
     aliases: ["Sustainable Development Goals", "SDG"],
     definition:
-      "Die Nachhaltigkeitsziele der Vereinten Nationen. Sie bilden in der Wirkungsökonomie den Zielrahmen für Mensch und Planet.",
+      "Die 17 Ziele der Agenda 2030. Sie bilden in der Wirkungsökonomie den global verhandelten Referenzrahmen für Mensch und Planet.",
     url: "/glossar.html#begriff-sdgs",
     priority: 1,
     allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
@@ -209,9 +210,39 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "SDG+",
     aliases: [],
     definition:
-      "Ergänzende Wirkungsfelder wie Demokratie, Medienqualität, Rechtsstaatlichkeit und gesellschaftlicher Zusammenhalt.",
+      "Eine WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit und digitale Selbstbestimmung.",
     url: "/glossar.html#begriff-sdg-plus",
     priority: 3,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "referenzrahmen",
+    label: "Referenzrahmen",
+    aliases: ["normativer Maßstab", "Agenda 2030"],
+    definition:
+      "Der Maßstab, an dem Wirkung bewertet wird: SDGs, Agenda 2030 und SDG+ statt persönlicher Moral.",
+    url: "/glossar.html#begriff-referenzrahmen",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "wirkungsempfaenger",
+    label: "Wirkungsempfänger",
+    aliases: ["Betroffene", "Wirkung für wen"],
+    definition:
+      "Menschen, Lebewesen, Gruppen, Ökosysteme, Institutionen oder zukünftige Generationen, die von Wirkung betroffen sind.",
+    url: "/glossar.html#begriff-wirkungsempfaenger",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "zielkonflikt",
+    label: "Zielkonflikt",
+    aliases: ["Trade-off", "Zielkonflikte"],
+    definition:
+      "Ein Konflikt, wenn eine Maßnahme in einem Wirkungsfeld stärkt und in einem anderen schädigt.",
+    url: "/glossar.html#begriff-zielkonflikt",
+    priority: 2,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },
   {

@@ -137,16 +137,16 @@
   {
     "id": "glossar",
     "title": "Glossar der Wirkungsökonomie: Wirkung verstehen",
-    "description": "Zentrale Begriffe wie Wirkung, Wirkstoff, Wirkungspotenzial, Nebenwirkung, Wechselwirkung, Wirkungsmanagement, Wirkungsarchitektur, WÖk-ID, Scorecard, NWI, Reverse Merit Order und Wirkungssteuer.",
+    "description": "Zentrale Begriffe wie Wirkung, Wirkungsempfänger, Wirkungsraum, Referenzrahmen, positive Wirkung, negative Wirkung, Wirkstoff, Wirkungspotenzial, Nebenwirkung, Wirkungsmanagement, WÖk-ID, Scorecard, NWI und Wirkungssteuer.",
     "url": "/glossar.html",
     "section": "Glossar",
     "type": "Glossarbegriff",
     "format": "Glossarbegriff",
     "impactSpaces": ["Mensch + Planet + Demokratie"],
     "standards": ["SDG", "SDG+", "GRI", "CSRD", "ESRS"],
-    "instruments": ["Wirkung", "Wirkstoff", "Wirkungspotenzial", "Nebenwirkung", "Wechselwirkung", "Wirkungsmanagement", "Wirkungsarchitektur", "Scorecard", "Netto-Wirkungs-Index / NWI", "Reverse Merit Order", "T-SROI", "Wirkungsrat"],
-    "tags": ["Begriffe", "Definitionen", "Abkürzungen", "Leseschlüssel", "Output", "Outcome", "Kausalität", "Fördercontrolling", "Dosis", "Wirkmechanismus", "Wirkungsprofil", "Rebound-Effekt"],
-    "aliases": ["Lexikon", "Definition", "Begriff", "NWI", "TSROI", "WÖk-ID", "Wirkung verstehen", "Medikamenten-Analogie", "Wirkstoff", "Wirkmechanismus", "Nebenwirkung", "Wechselwirkung", "Dosis", "Dosis Wirkung", "Wirkungsprofil", "Rebound", "Wirkungsnachweis", "Wirkungsmanagement", "Wirkungsarchitektur", "Output", "Outcome", "Kausalität und Zurechnung"],
+    "instruments": ["Wirkung", "Referenzrahmen", "Normativer Maßstab", "Wirkungsempfänger", "Zielkonflikt", "Wirkstoff", "Wirkungspotenzial", "Nebenwirkung", "Wechselwirkung", "Wirkungsmanagement", "Wirkungsarchitektur", "Scorecard", "Netto-Wirkungs-Index / NWI", "Reverse Merit Order", "T-SROI", "Wirkungsrat"],
+    "tags": ["Begriffe", "Definitionen", "Abkürzungen", "Leseschlüssel", "Output", "Outcome", "Kausalität", "Fördercontrolling", "Dosis", "Wirkmechanismus", "Wirkungsprofil", "Referenzrahmen", "Agenda 2030", "SDGs", "SDG+", "Wirkungsempfänger", "Zielkonflikt", "Rebound-Effekt"],
+    "aliases": ["Lexikon", "Definition", "Begriff", "NWI", "TSROI", "WÖk-ID", "Wirkung verstehen", "positive Wirkung", "negative Wirkung", "Wirkungsempfänger", "Wirkungsraum", "Zielkonflikt", "Referenzrahmen", "normativer Maßstab", "Agenda 2030", "Medikamenten-Analogie", "Wirkstoff", "Wirkmechanismus", "Nebenwirkung", "Wechselwirkung", "Dosis", "Dosis Wirkung", "Wirkungsprofil", "Rebound", "Wirkungsnachweis", "Wirkungsmanagement", "Wirkungsarchitektur", "Output", "Outcome", "Kausalität und Zurechnung"],
     "priority": 95
   },
   {
@@ -512,16 +512,16 @@
   {
     "id": "glossar-wirkung",
     "title": "Wirkung",
-    "description": "Die reale Veränderung von Zuständen - positiv, negativ oder neutral - für Mensch, Planet und Demokratie.",
+    "description": "Die reale Veränderung von Zuständen. Wirkung ist neutral, relational und wird in der WÖk an SDGs, Agenda 2030 und SDG+ bewertet.",
     "url": "/glossar.html#begriff-wirkung",
     "section": "Glossar",
     "type": "Glossarbegriff",
     "format": "Glossarbegriff",
     "impactSpaces": ["Mensch + Planet + Demokratie"],
-    "standards": ["SDG", "SDG+"],
-    "instruments": ["Wirkung"],
-    "tags": ["Definition", "Grundbegriff", "Zustandsveränderung"],
-    "aliases": ["Impact", "Folgen", "Nutzen", "Schaden"],
+    "standards": ["SDG", "SDG+", "Agenda 2030"],
+    "instruments": ["Wirkung", "Netto-Wirkung", "Nicht-Kompensation"],
+    "tags": ["Definition", "Grundbegriff", "Zustandsveränderung", "Referenzrahmen", "Wirkungsempfänger", "Zielkonflikt"],
+    "aliases": ["Impact", "Folgen", "Nutzen", "Schaden", "positive Wirkung", "negative Wirkung", "Wirkung für wen", "normativer Maßstab", "Referenzrahmen"],
     "priority": 97
   },
   {
