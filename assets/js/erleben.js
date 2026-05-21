@@ -878,7 +878,7 @@ const platformScenarios = {
   factual: {
     title: "Sachlicher Beitrag mit niedriger Erregung",
     base: 1.6,
-    note: "Positive Orientierung entsteht, aber Plattformlogiken verstärken sie oft schwächer als Konflikt."
+    note: "Positive Orientierung entsteht, aber Plattformlogiken verstärken sie häufig schwächer als Konflikt."
   },
   outrage: {
     title: "Empörungsbeitrag mit Feindbild",
