@@ -465,39 +465,108 @@
   }
 
   function renderOverallNetwork() {
-    const shared = [
-      "Misstrauen",
-      "Angst",
-      "Kontrolle",
-      "Schuld",
-      "Volk / Wir",
-      "Feindbild",
-      "Institutionen",
-      "Medien",
-      "Wahrheit",
-      "Demokratie",
-      "Rechtsstaat",
-      "Klimapolitik",
-      "Migration",
-      "Vielfalt",
-      "Energie",
-      "Freiheit"
+    const nodes = [
+      { id: "center", label: "gemeinsames Resonanzfeld", x: 500, y: 290, type: "center" },
+      { id: "misstrauen", label: "Misstrauen", x: 500, y: 84, type: "shared" },
+      { id: "angst", label: "Angst", x: 664, y: 106, type: "shared" },
+      { id: "kontrolle", label: "Kontrolle", x: 765, y: 192, type: "shared" },
+      { id: "schuld", label: "Schuld", x: 822, y: 292, type: "shared" },
+      { id: "volk", label: "Volk / Wir", x: 786, y: 396, type: "shared" },
+      { id: "feindbild", label: "Feindbild", x: 674, y: 482, type: "shared" },
+      { id: "institutionen", label: "Institutionen", x: 500, y: 508, type: "democracy" },
+      { id: "medien", label: "Medien", x: 326, y: 482, type: "media" },
+      { id: "wahrheit", label: "Wahrheit", x: 214, y: 396, type: "media" },
+      { id: "demokratie", label: "Demokratie", x: 178, y: 292, type: "democracy" },
+      { id: "rechtsstaat", label: "Rechtsstaat", x: 236, y: 192, type: "democracy" },
+      { id: "klimapolitik", label: "Klimapolitik", x: 336, y: 106, type: "topic" },
+      { id: "migration", label: "Migration", x: 664, y: 106, type: "topic", offsetY: 62 },
+      { id: "vielfalt", label: "Vielfalt", x: 164, y: 376, type: "topic" },
+      { id: "energie", label: "Energie", x: 336, y: 106, type: "topic", offsetY: -62 },
+      { id: "freiheit", label: "Freiheit", x: 664, y: 106, type: "topic", offsetY: -62 }
     ];
+    const nodeById = Object.fromEntries(nodes.map((node) => [node.id, { ...node, y: node.y + (node.offsetY || 0) }]));
+    const edges = [
+      ["center", "misstrauen", "verdichtet"],
+      ["center", "kontrolle", "ordnet"],
+      ["center", "schuld", "externalisiert"],
+      ["center", "feindbild", "markiert"],
+      ["center", "wahrheit", "konfligiert"],
+      ["misstrauen", "institutionen", "schwächt"],
+      ["institutionen", "medien", "verschiebt"],
+      ["medien", "wahrheit", "umkämpft"],
+      ["wahrheit", "demokratie", "stabilisiert oder beschädigt"],
+      ["demokratie", "rechtsstaat", "trägt"],
+      ["klimapolitik", "energie", "rahmt"],
+      ["energie", "freiheit", "koppelt"],
+      ["freiheit", "kontrolle", "spannt"],
+      ["angst", "kontrolle", "aktiviert"],
+      ["migration", "volk", "grenzt"],
+      ["volk", "schuld", "ordnet zu"],
+      ["schuld", "feindbild", "verstärkt"],
+      ["vielfalt", "demokratie", "prüft"],
+      ["vielfalt", "feindbild", "wird gerahmt"]
+    ];
+    const nodeMarkup = nodes
+      .map((node) => {
+        const point = nodeById[node.id];
+        const width = node.type === "center" ? 230 : 132;
+        const height = node.type === "center" ? 76 : 44;
+        const x = point.x - width / 2;
+        const y = point.y - height / 2;
+        const centerLabel =
+          node.type === "center"
+            ? `<text x="${point.x}" y="${point.y - 8}" text-anchor="middle"><tspan x="${point.x}">gemeinsames</tspan><tspan x="${point.x}" dy="28">Resonanzfeld</tspan></text>`
+            : `<text x="${point.x}" y="${point.y + 6}" text-anchor="middle">${escapeHtml(node.label)}</text>`;
+        return `
+          <g class="overall-node overall-node-${escapeHtml(node.type)}" data-overall-node="${escapeHtml(node.id)}">
+            <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}"></rect>
+            ${centerLabel}
+          </g>
+        `;
+      })
+      .join("");
+    const edgeMarkup = edges
+      .map(([from, to, verb], index) => {
+        const a = nodeById[from];
+        const b = nodeById[to];
+        if (!a || !b) return "";
+        const midX = (a.x + b.x) / 2;
+        const midY = (a.y + b.y) / 2;
+        return `
+          <g class="overall-edge" data-overall-edge="${index}">
+            <line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"></line>
+            <text x="${midX}" y="${midY - 6}" text-anchor="middle">${escapeHtml(verb)}</text>
+          </g>
+        `;
+      })
+      .join("");
     return `
       <section class="overall-network-panel" aria-labelledby="overall-network-title">
         <p class="hero-kicker">Gesamt-Wirkungsnetz</p>
         <h2 id="overall-network-title">Wie die Narrative zusammenwirken</h2>
         <p>Die Begriffe stehen nicht isoliert nebeneinander. Sie teilen Resonanzräume und bilden gemeinsam ein Feld aus Misstrauen, Kontrolle, Schuld, Feindbild und Wahrheitskonflikt.</p>
-        <div class="overall-web" aria-label="Gemeinsames Resonanzfeld">
-          <div class="overall-web-center">gemeinsames Resonanzfeld</div>
-          ${shared
-            .map((node, index) => {
-              const angle = -Math.PI / 2 + (Math.PI * 2 * index) / shared.length;
-              const x = 50 + Math.cos(angle) * 38;
-              const y = 50 + Math.sin(angle) * 40;
-              return `<span style="--x:${x.toFixed(1)}%; --y:${y.toFixed(1)}%;">${escapeHtml(node)}</span>`;
-            })
-            .join("")}
+        <div class="overall-web" aria-label="Gemeinsames Resonanzfeld mit Verbindungslinien">
+          <svg class="overall-web-svg" viewBox="0 0 1000 580" role="img" aria-labelledby="overall-svg-title overall-svg-desc">
+            <title id="overall-svg-title">Gesamt-Wirkungsnetz politischer Narrative</title>
+            <desc id="overall-svg-desc">Das Netz verbindet ein gemeinsames Resonanzfeld mit Knoten wie Misstrauen, Kontrolle, Schuld, Feindbild, Institutionen, Medien, Wahrheit, Demokratie, Migration, Klima, Energie und Freiheit.</desc>
+            <defs>
+              <radialGradient id="overall-soft-glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#eef5ee" stop-opacity="0.9"></stop>
+                <stop offset="100%" stop-color="#eef5ee" stop-opacity="0"></stop>
+              </radialGradient>
+            </defs>
+            <circle class="overall-glow" cx="500" cy="290" r="235"></circle>
+            <ellipse class="overall-ring" cx="500" cy="290" rx="348" ry="224"></ellipse>
+            <ellipse class="overall-ring overall-ring-inner" cx="500" cy="290" rx="230" ry="148"></ellipse>
+            ${edgeMarkup}
+            ${nodeMarkup}
+          </svg>
+          <ul class="overall-edge-list" aria-label="Lesbare Verbindungspfade">
+            ${edges
+              .slice(0, 10)
+              .map(([from, to, verb]) => `<li>${escapeHtml(nodeById[from]?.label || from)} <strong>${escapeHtml(verb)}</strong> ${escapeHtml(nodeById[to]?.label || to)}</li>`)
+              .join("")}
+          </ul>
         </div>
         <div class="overall-clusters">
           <article><h3>Institutionen</h3><p>Altparteien, Altparteiendiktatur und Medienframes verdichten Misstrauen gegen Verfahren, Konkurrenz und Kontrolle.</p></article>
