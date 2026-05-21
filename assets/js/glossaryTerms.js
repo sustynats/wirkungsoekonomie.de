@@ -14,7 +14,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "Wirkung",
     aliases: [],
     definition:
-      "Die reale Veränderung von Zuständen. Wirkung ist neutral, relational und wird in der WÖk an SDGs, Agenda 2030 und SDG+ bewertet.",
+      "Wirkung ist tatsächliche Zustandsveränderung. Sie kann positiv, negativ oder neutral sein.",
     url: "/glossar.html#begriff-wirkung",
     priority: 1,
     allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
@@ -52,7 +52,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     key: "wirkungspotenzial",
     label: "Wirkungspotenzial",
     aliases: ["Wirkungspotenziale", "Wirkungspotenzialen"],
-    definition: "Die Möglichkeit, dass eine Handlung, ein Produkt oder eine Aussage später Wirkung entfaltet.",
+    definition: "Möglichkeit, dass Wirkung eintreten kann - positiv, negativ oder ambivalent. Noch keine eingetretene Wirkung.",
     url: "/glossar.html#begriff-wirkungspotenzial",
     priority: 2,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
@@ -132,7 +132,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "Netto-Wirkungs-Index",
     aliases: ["Netto-Wirkungs-Index / NWI", "NWI"],
     definition:
-      "Eine Kennzahl, die positive und negative Wirkungen zusammenführt und sichtbar macht, ob unter dem Strich Nutzen oder Schaden entsteht.",
+      "Eine Kennzahl, die positive und negative Wirkungen zusammenführt und rote Linien berücksichtigt.",
     url: "/glossar.html#begriff-nwi",
     priority: 2,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
@@ -181,8 +181,28 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     label: "Wirkstoff",
     aliases: ["Wirkstoffe", "Wirkstoffen"],
     definition:
-      "Ein Bestandteil einer Handlung, Botschaft oder Struktur, der in einem Wirkungsraum Veränderungen auslösen kann.",
+      "Didaktische Analogie: ein Instrument, Produkt, Gesetz, Narrativ oder Preis mit Wirkungspotenzial. Noch keine Wirkung.",
     url: "/glossar.html#begriff-wirkstoff",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "netto-wirkung",
+    label: "Netto-Wirkung",
+    aliases: ["Netto Wirkung"],
+    definition:
+      "Zusammengeführte Bewertung positiver und negativer Wirkungen unter Berücksichtigung roter Linien.",
+    url: "/glossar.html#begriff-netto-wirkung",
+    priority: 2,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "wirkungsrisiko",
+    label: "Wirkungsrisiko",
+    aliases: ["Wirkungsrisiken"],
+    definition:
+      "Möglichkeit negativer oder destabilisierender Wirkung. Noch kein eingetretener Schaden.",
+    url: "/glossar.html#begriff-wirkungsrisiko",
     priority: 2,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },
