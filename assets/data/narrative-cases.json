@@ -2,377 +2,541 @@
   {
     "id": "altparteien",
     "title": "Altparteien",
-    "short_title": "Altparteien",
-    "source_title": "AfD-Regierungsprogramm",
-    "source_url": "https://www.afd-regierungsprogramm.de/",
-    "retrieved_at": "2026-05-20",
-    "context": "Pilotanalyse eines politischen Themenbegriffs aus einem öffentlichen Regierungsprogramm. Kurzauszug als Begriff, keine Vollzitation.",
-    "excerpt_short": "Altparteien",
-    "topic_cluster": "Institutionenvertrauen",
-    "status": "pilot",
+    "cluster": "Demokratie / Institutionen",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Altparteien",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff reduziert demokratische Parteienvielfalt auf einen geschlossenen Machtblock.",
     "mechanisms": ["Systemdelegitimierung", "Freund-Feind-Logik", "pauschale Schuldzuweisung"],
-    "psychological_effects": ["Wut", "Misstrauen", "Protestidentität"],
-    "democratic_effects": ["Vertrauensverlust", "Kompromissverlust", "Polarisierung"],
-    "woek_analysis": "Der Begriff kann demokratische Konkurrenz als geschlossenen Machtblock rahmen. Dadurch verschiebt sich Kritik von konkreten Entscheidungen hin zu Misstrauen gegenüber Institutionen und Verfahren.",
-    "counterframe": "Demokratische Kritik braucht harte Auseinandersetzung mit Entscheidungen, aber sie sollte Institutionen nicht pauschal als illegitim rahmen.",
+    "resonance_spaces": ["Misstrauen", "Wut", "Protestidentität", "Feindbild"],
+    "perception_shift": {
+      "visible": ["geschlossener Machtblock", "moralische Gegnerschaft", "Protest gegen ein System"],
+      "hidden": ["konkrete Verantwortlichkeiten", "Unterschiede zwischen Parteien", "Reformfragen in Verfahren und Institutionen"]
+    },
+    "democratic_effects": ["Vertrauensverlust", "Kompromissverlust", "Polarisierung", "Delegitimierung demokratischer Konkurrenz"],
     "system_questions": ["Welche Institutionen, Verfahren und Regeln stärken Vertrauen, ohne Kritik zu unterdrücken?"],
-    "related_topics": ["Institutionen", "Vertrauen", "demokratische Konkurrenz", "Kompromissfähigkeit"],
-    "radar_values": {
-      "Angst": 2,
-      "Wut": 4,
-      "Misstrauen": 5,
-      "Feindbild": 4,
-      "Kontrollsehnsucht": 3,
-      "Vereinfachung": 4,
-      "Autoritarismuspotenzial": 3,
-      "Diskursverengung": 4,
-      "Demokratierisiko": 4,
-      "Entsolidarisierung": 3
+    "woek_question": "Welche Verfahren, Transparenzregeln und Rechenschaftsformen stärken Vertrauen, ohne Kritik zu unterdrücken?",
+    "counterframe": "Demokratische Kritik bleibt konkret: Sie prüft Entscheidungen, Verantwortlichkeiten und Verfahren, ohne den demokratischen Wettbewerb als geschlossenen Machtblock zu rahmen.",
+    "radar": {
+      "angst": 2,
+      "wut": 4,
+      "misstrauen": 5,
+      "feindbild": 4,
+      "kontrollsehnsucht": 3,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 4,
+      "entsolidarisierung": 3
     },
-    "radar_explanations": {
-      "Angst": "Bedrohungsframes können das Gefühl verstärken, dass Sicherheit und Kontrolle verloren gehen.",
-      "Wut": "Schuldzuweisungen können emotionale Empörung auslösen oder verstärken.",
-      "Misstrauen": "Wenn komplexe Ursachen auf einfache Gegner reduziert werden, kann Vertrauen in Institutionen sinken.",
-      "Feindbild": "Kollektive Zuschreibungen können Gruppen oder politische Gegner als Problem markieren.",
-      "Kontrollsehnsucht": "Starke Kontrollversprechen können in unsicheren Situationen besonders anschlussfähig werden.",
-      "Vereinfachung": "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert.",
-      "Autoritarismuspotenzial": "Wenn einfache Ordnung gegen komplexe Verfahren gestellt wird, steigt die Anschlussfähigkeit für autoritäre Lösungen.",
-      "Diskursverengung": "Die Debatte wird enger, wenn nur noch Bedrohung, Abwehr oder Schuld im Vordergrund stehen.",
-      "Demokratierisiko": "Demokratische Stabilität kann leiden, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden.",
-      "Entsolidarisierung": "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft, gemeinsame Lösungen zu suchen."
-    },
-    "network_nodes": [
-      {"id": "altparteien", "label": "Altparteien", "level": "core", "explanation": "Der Begriff kann demokratische Konkurrenz als geschlossenen Machtblock rahmen.", "system_question": "Wie bleibt Kritik konkret statt pauschal delegitimierend?", "woek_question": "Wie bleibt demokratischer Streit hart, aber institutionell vertrauensfähig?"},
-      {"id": "misstrauen", "label": "Misstrauen", "level": "direct", "explanation": "Misstrauen kann sich von einzelnen Entscheidungen auf das ganze System ausweiten.", "system_question": "Welche Verfahren schaffen überprüfbares Vertrauen?", "woek_question": "Welche Transparenz stärkt Vertrauen ohne Kritik zu unterdrücken?"},
-      {"id": "institutionen", "label": "Institutionen", "level": "direct", "explanation": "Institutionen werden als Teil eines Blocks lesbar, nicht als demokratische Infrastruktur.", "system_question": "Welche Institutionen müssen besser erklärbar und rechenschaftspflichtig sein?", "woek_question": "Welche Regeln erhöhen Wirkung und Vertrauen zugleich?"},
-      {"id": "konkurrenz", "label": "demokratische Konkurrenz", "level": "direct", "explanation": "Wettbewerb kann als Freund-Feind-Konflikt erscheinen.", "system_question": "Wie bleibt politische Konkurrenz legitim?", "woek_question": "Wie wird Streit produktiv statt zerstörerisch?"},
-      {"id": "freund-feind", "label": "Freund-Feind-Logik", "level": "direct", "explanation": "Politische Unterschiede werden moralisch aufgeladen.", "system_question": "Welche Sprache hält Gegner als demokratisch legitim sichtbar?", "woek_question": "Welche Wirkung hat die Rahmung auf Diskursfähigkeit?"},
-      {"id": "systemdelegitimierung", "label": "Systemdelegitimierung", "level": "direct", "explanation": "Kritik kann Vertrauen in demokratische Verfahren schwächen.", "system_question": "Welche Kritik verbessert Verfahren statt sie pauschal zu zerstören?", "woek_question": "Welche Wirkung hat Kritik auf demokratische Stabilität?"},
-      {"id": "protestidentitaet", "label": "Protestidentität", "level": "direct", "explanation": "Zugehörigkeit entsteht durch Ablehnung des vermeintlichen Blocks.", "system_question": "Welche reale Beteiligung ersetzt reine Ablehnung?", "woek_question": "Wo entsteht Selbstwirksamkeit ohne Feindbild?"},
-      {"id": "kompromissverlust", "label": "Kompromissverlust", "level": "direct", "explanation": "Wer Gegner als Block liest, sieht Kompromisse leichter als Verrat.", "system_question": "Wie wird Kompromiss wieder als demokratische Leistung sichtbar?", "woek_question": "Welche Entscheidung stärkt langfristig Handlungsfähigkeit?"},
-      {"id": "polarisierung", "label": "Polarisierung", "level": "direct", "explanation": "Das Narrativ kann Lagerlogik verstärken.", "system_question": "Welche Räume verbinden Konflikt und Respekt?", "woek_question": "Welche Wirkung hat Sprache auf gesellschaftlichen Zusammenhalt?"},
-      {"id": "parlament", "label": "Parlament / Regierung / Verwaltung", "level": "second", "explanation": "Institutionen werden als einheitlicher Block gelesen.", "system_question": "Wie werden Unterschiede und Verantwortlichkeiten sichtbar?", "woek_question": "Welche Transparenz schafft Rechenschaft?"},
-      {"id": "wahlvertrauen", "label": "Wahlvertrauen / Medienvertrauen", "level": "second", "explanation": "Misstrauen kann Wahl- und Medienvertrauen berühren.", "system_question": "Welche Daten und Verfahren stärken Nachvollziehbarkeit?", "woek_question": "Welche Wirkung hat Vertrauen auf demokratische Stabilität?"},
-      {"id": "regierungsfaehigkeit", "label": "Regierungsfähigkeit", "level": "second", "explanation": "Kompromissverlust kann Regierungsfähigkeit schwächen.", "system_question": "Welche Verfahren ermöglichen handlungsfähige Koalitionen?", "woek_question": "Welche Regeln erzeugen stabile Wirkung?"},
-      {"id": "zugehoerigkeit-ablehnung", "label": "Zugehörigkeit durch Ablehnung", "level": "second", "explanation": "Protestidentität kann Zugehörigkeit ohne positive Lösung erzeugen.", "system_question": "Welche Beteiligung macht reale Lösungserfahrung möglich?", "woek_question": "Wo entsteht positive Wirkung statt bloßer Abgrenzung?"}
-    ],
-    "network_links": [
-      {"source": "altparteien", "target": "misstrauen"},
-      {"source": "altparteien", "target": "institutionen"},
-      {"source": "altparteien", "target": "konkurrenz"},
-      {"source": "altparteien", "target": "freund-feind"},
-      {"source": "altparteien", "target": "systemdelegitimierung"},
-      {"source": "altparteien", "target": "protestidentitaet"},
-      {"source": "altparteien", "target": "kompromissverlust"},
-      {"source": "altparteien", "target": "polarisierung"},
-      {"source": "institutionen", "target": "parlament"},
-      {"source": "misstrauen", "target": "wahlvertrauen"},
-      {"source": "kompromissverlust", "target": "regierungsfaehigkeit"},
-      {"source": "protestidentitaet", "target": "zugehoerigkeit-ablehnung"}
-    ]
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Altparteien", "type": "narrative"},
+        {"id": "frame", "label": "Parteienpluralismus als Machtblock", "type": "mechanism"},
+        {"id": "resonanz", "label": "Misstrauen", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Gegner statt Institutionen", "type": "perception"},
+        {"id": "demokratie", "label": "Kompromissfähigkeit", "type": "democracy"},
+        {"id": "system", "label": "Reform- und Verantwortungsfragen", "type": "system"},
+        {"id": "woek", "label": "Vertrauen durch Rechenschaft", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "rahmt"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "verengt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
   },
   {
     "id": "angst-vor-afd-wahlsieg",
     "title": "Angst vor AfD-Wahlsieg",
-    "short_title": "AfD-Wahlsieg",
-    "source_title": "AfD-Regierungsprogramm",
-    "source_url": "https://www.afd-regierungsprogramm.de/",
-    "retrieved_at": "2026-05-20",
-    "context": "Pilotanalyse eines politischen Themenbegriffs aus einem öffentlichen Regierungsprogramm. Kurzauszug als Begriff, keine Vollzitation.",
-    "excerpt_short": "Angst vor AfD-Wahlsieg",
-    "topic_cluster": "Opferframe und Kritikabwehr",
-    "status": "pilot",
-    "mechanisms": ["Opferinszenierung", "Bedrohungsumkehr", "Kritikabwehr"],
-    "psychological_effects": ["Mobilisierung", "Kränkung", "Selbstimmunisierung"],
-    "democratic_effects": ["Diskursverengung", "Faktenresistenz", "Polarisierung"],
-    "woek_analysis": "Die Formulierung kann Kritik an einer Partei in ein Bedrohungsbild gegen die Partei umdeuten. Dadurch verschiebt sich die Debatte von inhaltlicher Prüfung zu Loyalität und Abwehr.",
+    "cluster": "Kontrolle / Freiheit",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Angst vor AfD-Wahlsieg",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame dreht demokratische Kritik in eine Opfer- und Unterdrückungserzählung.",
+    "mechanisms": ["Opferframe", "Bedrohungsumkehr", "Kritikabwehr"],
+    "resonance_spaces": ["Kränkung", "Misstrauen", "Mobilisierung", "Selbstimmunisierung"],
+    "perception_shift": {
+      "visible": ["vermeintliche Unterdrückung", "Abwehr gegen Kritik", "Bedrohung durch Gegner"],
+      "hidden": ["prüfbare Machtansprüche", "inhaltliche Kritik", "Verantwortung für eigene Aussagen"]
+    },
+    "democratic_effects": ["Diskursverengung", "Faktenresistenz", "Polarisierung", "Kritikverlust"],
+    "system_questions": ["Wie bleibt Kritik möglich, ohne dass sie als Unterdrückung oder Opferrolle umgedeutet wird?"],
+    "woek_question": "Wie bleibt Kritik möglich, ohne dass sie als Verfolgungserzählung umgedeutet wird?",
     "counterframe": "Kritik ist kein Verbot. Demokratische Öffentlichkeit braucht überprüfbare Kritik, klare Grenzen und die Möglichkeit, Machtansprüche zu prüfen.",
-    "system_questions": ["Wie kann Kritik möglich bleiben, ohne dass sie als Unterdrückung oder Opferrolle umgedeutet wird?"],
-    "related_topics": ["Opferframe", "Medien", "Kritik", "Mobilisierung"],
-    "radar_values": {
-      "Angst": 3,
-      "Wut": 3,
-      "Misstrauen": 4,
-      "Feindbild": 3,
-      "Kontrollsehnsucht": 2,
-      "Vereinfachung": 3,
-      "Autoritarismuspotenzial": 2,
-      "Diskursverengung": 4,
-      "Demokratierisiko": 3,
-      "Entsolidarisierung": 3
+    "radar": {
+      "angst": 3,
+      "wut": 3,
+      "misstrauen": 4,
+      "feindbild": 3,
+      "kontrollsehnsucht": 2,
+      "vereinfachung": 3,
+      "autoritarismuspotenzial": 2,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 3
     },
-    "radar_explanations": {
-      "Angst": "Bedrohungsframes können das Gefühl verstärken, dass Sicherheit und Kontrolle verloren gehen.",
-      "Wut": "Schuldzuweisungen können emotionale Empörung auslösen oder verstärken.",
-      "Misstrauen": "Wenn komplexe Ursachen auf einfache Gegner reduziert werden, kann Vertrauen in Institutionen sinken.",
-      "Feindbild": "Kollektive Zuschreibungen können Gruppen oder politische Gegner als Problem markieren.",
-      "Kontrollsehnsucht": "Starke Kontrollversprechen können in unsicheren Situationen besonders anschlussfähig werden.",
-      "Vereinfachung": "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert.",
-      "Autoritarismuspotenzial": "Wenn einfache Ordnung gegen komplexe Verfahren gestellt wird, steigt die Anschlussfähigkeit für autoritäre Lösungen.",
-      "Diskursverengung": "Die Debatte wird enger, wenn nur noch Bedrohung, Abwehr oder Schuld im Vordergrund stehen.",
-      "Demokratierisiko": "Demokratische Stabilität kann leiden, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden.",
-      "Entsolidarisierung": "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft, gemeinsame Lösungen zu suchen."
-    },
-    "network_nodes": [
-      {"id": "angst-vor-afd-wahlsieg", "label": "Angst vor AfD-Wahlsieg", "level": "core", "explanation": "Der Frame kann Kritik als Angriff oder Unterdrückung lesbar machen.", "system_question": "Wie bleibt Kritik prüfbar und legitim?", "woek_question": "Wie kann Kritik möglich bleiben, ohne dass sie als Unterdrückung umgedeutet wird?"},
-      {"id": "opferframe", "label": "Opferframe", "level": "direct", "explanation": "Die politische Akteurin erscheint als Opfer einer mächtigen Gegenseite.", "system_question": "Welche Kritik ist begründet und welche wird abgewehrt?", "woek_question": "Welche Wirkung hat Opferkommunikation auf Diskursfähigkeit?"},
-      {"id": "selbstimmunisierung", "label": "Selbstimmunisierung", "level": "direct", "explanation": "Kritik kann als Beleg für die eigene Unterdrückung erscheinen.", "system_question": "Welche Formen von Kritik bleiben anschlussfähig?", "woek_question": "Wie bleibt demokratische Kontrolle wirksam?"},
-      {"id": "kritikabwehr", "label": "Kritikabwehr", "level": "direct", "explanation": "Inhaltliche Prüfung tritt hinter Abwehrreaktionen zurück.", "system_question": "Wie trennt man Kritik von Ausgrenzung?", "woek_question": "Welche Wirkung hat Kritik auf Vertrauen und Lernfähigkeit?"},
-      {"id": "mobilisierung", "label": "Mobilisierung", "level": "direct", "explanation": "Bedrohungsumkehr kann Anhänger emotional aktivieren.", "system_question": "Welche Mobilisierung stärkt demokratische Beteiligung?", "woek_question": "Welche Mobilisierung stabilisiert statt zu polarisieren?"},
-      {"id": "medien", "label": "Medien", "level": "direct", "explanation": "Medienkritik kann Reichweiten- und Empörungslogiken verstärken.", "system_question": "Welche Rolle spielt mediale Zuspitzung?", "woek_question": "Welche Medienwirkung stärkt Orientierung?"},
-      {"id": "demokratische-debatte", "label": "demokratische Debatte", "level": "direct", "explanation": "Die Debatte kann enger werden, wenn Kritik als Angriff gilt.", "system_question": "Wie bleibt Streit offen und überprüfbar?", "woek_question": "Welche Sprache hält Debattenräume offen?"},
-      {"id": "bedrohungsumkehr", "label": "Bedrohungsumkehr", "level": "direct", "explanation": "Der Angreifer wird als Bedrohter gerahmt.", "system_question": "Welche Machtverhältnisse müssen geprüft werden?", "woek_question": "Welche Wirkung hat die Umkehr auf Verantwortung?"},
-      {"id": "faktenresistenz", "label": "Faktenresistenz", "level": "second", "explanation": "Kritik kann als Teil des Angriffs erscheinen.", "system_question": "Welche Fakten bleiben akzeptierbar?", "woek_question": "Wie stärkt man gemeinsame Wirklichkeit?"},
-      {"id": "anhaengerbindung", "label": "Anhängerbindung", "level": "second", "explanation": "Der Opferframe kann Bindung durch gemeinsame Abwehr stärken.", "system_question": "Welche Zugehörigkeit braucht kein Feindbild?", "woek_question": "Welche Zugehörigkeit stabilisiert Demokratie?"},
-      {"id": "angreifer-opfer", "label": "Angreifer wird Opfer", "level": "second", "explanation": "Verantwortung wird durch Umkehr verschoben.", "system_question": "Welche Verantwortung bleibt sichtbar?", "woek_question": "Welche Wirkung hat Verantwortungsverschiebung?"},
-      {"id": "reichweitenlogik", "label": "Reichweitenlogik / Empörung", "level": "second", "explanation": "Empörung kann Sichtbarkeit erzeugen.", "system_question": "Welche Plattformlogik verstärkt den Frame?", "woek_question": "Welche Medienanreize stärken Diskursqualität?"}
-    ],
-    "network_links": [
-      {"source": "angst-vor-afd-wahlsieg", "target": "opferframe"},
-      {"source": "angst-vor-afd-wahlsieg", "target": "selbstimmunisierung"},
-      {"source": "angst-vor-afd-wahlsieg", "target": "kritikabwehr"},
-      {"source": "angst-vor-afd-wahlsieg", "target": "mobilisierung"},
-      {"source": "angst-vor-afd-wahlsieg", "target": "medien"},
-      {"source": "angst-vor-afd-wahlsieg", "target": "demokratische-debatte"},
-      {"source": "angst-vor-afd-wahlsieg", "target": "bedrohungsumkehr"},
-      {"source": "kritikabwehr", "target": "faktenresistenz"},
-      {"source": "opferframe", "target": "anhaengerbindung"},
-      {"source": "bedrohungsumkehr", "target": "angreifer-opfer"},
-      {"source": "medien", "target": "reichweitenlogik"}
-    ]
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Angst vor AfD-Wahlsieg", "type": "narrative"},
+        {"id": "frame", "label": "Kritik als Unterdrückung", "type": "mechanism"},
+        {"id": "resonanz", "label": "Kränkung und Mobilisierung", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Kritiker als Bedrohung", "type": "perception"},
+        {"id": "demokratie", "label": "prüfbare Kritik", "type": "democracy"},
+        {"id": "system", "label": "Macht- und Verantwortungsprüfung", "type": "system"},
+        {"id": "woek", "label": "Kritikfähigkeit ohne Opferrolle", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "dreht"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "verengt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
   },
   {
-    "id": "illegale-masseneinwanderung",
-    "title": "Illegale Masseneinwanderung",
-    "short_title": "Masseneinwanderung",
-    "source_title": "AfD-Regierungsprogramm",
-    "source_url": "https://www.afd-regierungsprogramm.de/",
-    "retrieved_at": "2026-05-20",
-    "context": "Pilotanalyse eines politischen Themenbegriffs aus einem öffentlichen Regierungsprogramm. Kurzauszug als Begriff, keine Vollzitation.",
-    "excerpt_short": "Illegale Masseneinwanderung",
-    "topic_cluster": "Migration, Sicherheit und Systemursachen",
-    "status": "pilot",
-    "mechanisms": ["Bedrohungsframe", "kollektive Zuschreibung", "Sicherheitsframe"],
-    "psychological_effects": ["Angst", "Kontrollsehnsucht", "Schuldabwehr"],
-    "democratic_effects": ["Diskursverengung", "Entsolidarisierung", "Radikalisierungspotenzial"],
-    "woek_analysis": "Der Begriff kann Migration primär als Kontroll- und Sicherheitsproblem rahmen. Die Verbindung von Illegalität und Masse kann Komplexität verdichten und eine kollektive Bedrohungsvorstellung aktivieren.",
-    "counterframe": "Migration muss regelbasiert, rechtsstaatlich und integrationsfähig gestaltet werden. Die Systemfrage umfasst auch Wohnen, Arbeit, Verwaltung, Bildung, Sicherheit und kommunale Infrastruktur.",
+    "id": "altparteiendiktatur",
+    "title": "Diktatur der Altparteien",
+    "cluster": "Demokratie / Institutionen",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Altparteiendiktatur / Diktatur der Altparteien",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff verschiebt demokratische Konflikte in einen Ausnahmezustand und delegitimiert Institutionen als Herrschaftsapparat.",
+    "mechanisms": ["Systemdelegitimierung", "Ausnahmezustandsframe", "Herrschaftsframe"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Ohnmacht", "Kontrollsehnsucht"],
+    "perception_shift": {
+      "visible": ["Diktaturbild", "vermeintliche Rechtlosigkeit", "radikaler Korrekturbedarf"],
+      "hidden": ["Wahlen", "Gewaltenteilung", "Rechtswege", "demokratische Korrekturmechanismen"]
+    },
+    "democratic_effects": ["Delegitimierung des Rechtsstaats", "sinkendes Wahlvertrauen", "radikale Anschlussfähigkeit", "Kompromissverlust"],
+    "system_questions": ["Welche demokratischen Korrekturmechanismen funktionieren - und wo müssen sie verbessert werden?"],
+    "woek_question": "Welche demokratischen Korrekturmechanismen funktionieren - und wo müssen sie verbessert werden?",
+    "counterframe": "Demokratische Systeme haben reale Defizite und reale Korrekturwege. Eine wirkungsorientierte Kritik benennt beides: Mängel und Verfahren ihrer Verbesserung.",
+    "radar": {
+      "angst": 3,
+      "wut": 4,
+      "misstrauen": 5,
+      "feindbild": 5,
+      "kontrollsehnsucht": 4,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 4,
+      "diskursverengung": 5,
+      "demokratierisiko": 5,
+      "entsolidarisierung": 4
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Altparteiendiktatur", "type": "narrative"},
+        {"id": "frame", "label": "Demokratie als Herrschaftsapparat", "type": "mechanism"},
+        {"id": "resonanz", "label": "Ohnmacht und Wut", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Ausnahmezustand statt Streit", "type": "perception"},
+        {"id": "demokratie", "label": "Rechtsstaat und Gewaltenteilung", "type": "democracy"},
+        {"id": "system", "label": "Korrekturwege und Kontrolle", "type": "system"},
+        {"id": "woek", "label": "wirksame demokratische Reparatur", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "delegitimiert"},
+        {"source": "frame", "target": "resonanz", "verb": "emotionalisiert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "masseneinwanderung",
+    "title": "Illegale / kulturfremde / inländerfeindliche Massenmigration",
+    "cluster": "Migration / Identität",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Illegale Masseneinwanderung",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Die Formulierung macht aus Menschen eine bedrohliche Masse und verschiebt Systemprobleme auf eine Gruppe.",
+    "mechanisms": ["Bedrohungsframe", "Massifizierung", "Sündenbocklogik"],
+    "resonance_spaces": ["Angst", "Kontrollsehnsucht", "Feindbild", "Schuldabwehr"],
+    "perception_shift": {
+      "visible": ["Masse", "Gefahr", "Kontrollverlust", "Gruppe als Ursache"],
+      "hidden": ["Wohnungsmarkt", "Verwaltungskapazität", "Arbeitsmarktregeln", "kommunale Infrastruktur"]
+    },
+    "democratic_effects": ["Entsolidarisierung", "Diskursverengung", "Minderheitenabwertung", "Radikalisierungsanschluss"],
     "system_questions": ["Welche Regeln, Verfahren, Integrationspfade, Wohnungs-, Arbeitsmarkt- und Sicherheitsstrukturen erzeugen reale Stabilität?"],
-    "related_topics": ["Migration", "Wohnen", "Arbeitsmarkt", "Sozialstaat", "Sicherheit"],
-    "radar_values": {
-      "Angst": 4,
-      "Wut": 2,
-      "Misstrauen": 3,
-      "Feindbild": 4,
-      "Kontrollsehnsucht": 5,
-      "Vereinfachung": 4,
-      "Autoritarismuspotenzial": 3,
-      "Diskursverengung": 4,
-      "Demokratierisiko": 3,
-      "Entsolidarisierung": 4
+    "woek_question": "Welche Regeln, Verfahren, Integrationspfade, Wohnungs-, Arbeitsmarkt- und Sicherheitsstrukturen erzeugen reale Stabilität?",
+    "counterframe": "Migration ist eine reale Steuerungsfrage. Wirkung entsteht durch rechtsstaatliche Verfahren, Integration, Wohnungsbau, Arbeitsmarktregeln, Bildung, Sicherheit und kommunale Kapazität.",
+    "radar": {
+      "angst": 4,
+      "wut": 2,
+      "misstrauen": 3,
+      "feindbild": 4,
+      "kontrollsehnsucht": 5,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 4
     },
-    "radar_explanations": {
-      "Angst": "Bedrohungsframes können das Gefühl verstärken, dass Sicherheit und Kontrolle verloren gehen.",
-      "Wut": "Schuldzuweisungen können emotionale Empörung auslösen oder verstärken.",
-      "Misstrauen": "Wenn komplexe Ursachen auf einfache Gegner reduziert werden, kann Vertrauen in Institutionen sinken.",
-      "Feindbild": "Kollektive Zuschreibungen können Gruppen oder politische Gegner als Problem markieren.",
-      "Kontrollsehnsucht": "Starke Kontrollversprechen können in unsicheren Situationen besonders anschlussfähig werden.",
-      "Vereinfachung": "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert.",
-      "Autoritarismuspotenzial": "Wenn einfache Ordnung gegen komplexe Verfahren gestellt wird, steigt die Anschlussfähigkeit für autoritäre Lösungen.",
-      "Diskursverengung": "Die Debatte wird enger, wenn nur noch Bedrohung, Abwehr oder Schuld im Vordergrund stehen.",
-      "Demokratierisiko": "Demokratische Stabilität kann leiden, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden.",
-      "Entsolidarisierung": "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft, gemeinsame Lösungen zu suchen."
-    },
-    "network_nodes": [
-      {"id": "illegale-masseneinwanderung", "label": "Illegale Masseneinwanderung", "level": "core", "explanation": "Das Narrativ kann Migration als massives Kontroll- und Sicherheitsproblem bündeln.", "system_question": "Welche Ursachenfelder werden zusammengezogen?", "woek_question": "Welche Regeln, Verfahren und Infrastrukturen erzeugen reale Stabilität?"},
-      {"id": "angst", "label": "Angst", "level": "direct", "explanation": "Bedrohung kann emotionale Dringlichkeit erzeugen.", "system_question": "Welche Risiken sind real, welche werden verdichtet?", "woek_question": "Welche Sicherheitspolitik wirkt ohne Feindbild?"},
-      {"id": "sicherheit", "label": "Sicherheit", "level": "direct", "explanation": "Sicherheitsfragen werden zentral gestellt.", "system_question": "Welche Verfahren schützen Rechtsstaat und Sicherheit zugleich?", "woek_question": "Welche Sicherheitsstruktur stabilisiert langfristig?"},
-      {"id": "wohnen", "label": "Wohnen", "level": "direct", "explanation": "Das Narrativ kann reale Wohnungsnot emotional mit Migration verknüpfen, obwohl Wohnungsmarkt, Bodenpolitik, Kapitalflüsse, Baukosten und kommunale Planung eigene Ursachenfelder haben.", "system_question": "Welche Wohnungs-, Boden- und Infrastrukturpolitik erzeugt reale Stabilität?", "woek_question": "Welche Wirkung hat Wohnungspolitik auf gesellschaftlichen Zusammenhalt?"},
-      {"id": "arbeitsmarkt", "label": "Arbeitsmarkt", "level": "direct", "explanation": "Konkurrenzgefühle können entstehen, obwohl Löhne, Qualifikation und Nachfrage eigene Wirkungsfelder sind.", "system_question": "Welche Arbeitsmarktregeln erzeugen faire Integration?", "woek_question": "Welche Arbeitspolitik stärkt Mensch und Demokratie?"},
-      {"id": "sozialstaat", "label": "Sozialstaat", "level": "direct", "explanation": "Verteilungskonflikte können personalisiert werden.", "system_question": "Welche Verteilungsregeln sind fair und stabil?", "woek_question": "Welche Sozialpolitik verhindert Entsolidarisierung?"},
-      {"id": "medien", "label": "Medien", "level": "direct", "explanation": "Wiederholung und Zuspitzung können das Bedrohungsgefühl verstärken.", "system_question": "Welche mediale Logik verstärkt Angst?", "woek_question": "Welche Medienqualität stärkt Orientierung?"},
-      {"id": "plattformverstaerkung", "label": "Plattformverstärkung", "level": "direct", "explanation": "Empörung kann algorithmisch sichtbarer werden.", "system_question": "Welche Plattformanreize fördern Zuspitzung?", "woek_question": "Welche Rückkopplung braucht Plattformmacht?"},
-      {"id": "vertrauen", "label": "Vertrauen", "level": "direct", "explanation": "Vertrauen in Verwaltung und Rechtsstaat kann sinken.", "system_question": "Welche Verfahren sind nachvollziehbar?", "woek_question": "Welche Transparenz stärkt Rechtsstaatlichkeit?"},
-      {"id": "rechtsstaat", "label": "Rechtsstaat", "level": "direct", "explanation": "Rechtsstaatliche Verfahren können als Hindernis erscheinen.", "system_question": "Wie bleiben Verfahren wirksam und gerecht?", "woek_question": "Welche Wirkung haben Verfahren auf Stabilität?"},
-      {"id": "demokratie", "label": "Demokratie", "level": "direct", "explanation": "Diskursfähigkeit kann leiden, wenn Gruppen pauschal gerahmt werden.", "system_question": "Wie bleibt Konflikt demokratisch?", "woek_question": "Welche Sprache schützt Minderheitenschutz und Zusammenhalt?"},
-      {"id": "radikalisierung", "label": "Radikalisierung", "level": "direct", "explanation": "Feindbilder können Gewaltpotenziale anschlussfähiger machen.", "system_question": "Welche Prävention wirkt vor Eskalation?", "woek_question": "Welche Wirkung hat Entfeindlichung?"},
-      {"id": "kontrollsehnsucht", "label": "Kontrollsehnsucht", "level": "second", "explanation": "Angst kann den Wunsch nach einfacher Kontrolle erhöhen.", "system_question": "Welche Kontrolle ist rechtsstaatlich und wirksam?", "woek_question": "Welche Kontrolle senkt reale Risiken?"},
-      {"id": "grenzpolitik", "label": "Grenzpolitik", "level": "second", "explanation": "Sicherheit wird auf Grenzen fokussiert.", "system_question": "Welche Verfahren wirken vor, an und nach Grenzen?", "woek_question": "Welche Regelkette erzeugt Stabilität?"},
-      {"id": "wohnungsmarkt", "label": "Wohnungsmarkt / Bodenpolitik", "level": "second", "explanation": "Wohnungsnot hat eigene ökonomische Ursachen.", "system_question": "Welche Boden- und Baupolitik senkt Druck?", "woek_question": "Welche Wohnlogik stärkt soziale Stabilität?"},
-      {"id": "loehne", "label": "Löhne / Konkurrenzgefühl", "level": "second", "explanation": "Arbeitskonkurrenz wird emotional verdichtet.", "system_question": "Welche Lohn- und Qualifikationspolitik wirkt?", "woek_question": "Welche Regeln schützen Arbeit und Integration?"},
-      {"id": "verteilung", "label": "Verteilungskonflikt", "level": "second", "explanation": "Sozialstaat wird als Nullsummenspiel gerahmt.", "system_question": "Welche Verteilung ist leistungs- und wirkungsgerecht?", "woek_question": "Welche Anreize stärken Zusammenhalt?"},
-      {"id": "algorithmus", "label": "Algorithmus / Empörung", "level": "second", "explanation": "Plattformen können Empörung belohnen.", "system_question": "Welche Plattformregeln senken Spaltung?", "woek_question": "Welche Medienwirkung braucht Rückkopplung?"}
-    ],
-    "network_links": [
-      {"source": "illegale-masseneinwanderung", "target": "angst"},
-      {"source": "illegale-masseneinwanderung", "target": "sicherheit"},
-      {"source": "illegale-masseneinwanderung", "target": "wohnen"},
-      {"source": "illegale-masseneinwanderung", "target": "arbeitsmarkt"},
-      {"source": "illegale-masseneinwanderung", "target": "sozialstaat"},
-      {"source": "illegale-masseneinwanderung", "target": "medien"},
-      {"source": "illegale-masseneinwanderung", "target": "plattformverstaerkung"},
-      {"source": "illegale-masseneinwanderung", "target": "vertrauen"},
-      {"source": "illegale-masseneinwanderung", "target": "rechtsstaat"},
-      {"source": "illegale-masseneinwanderung", "target": "demokratie"},
-      {"source": "illegale-masseneinwanderung", "target": "radikalisierung"},
-      {"source": "angst", "target": "kontrollsehnsucht"},
-      {"source": "sicherheit", "target": "grenzpolitik"},
-      {"source": "wohnen", "target": "wohnungsmarkt"},
-      {"source": "arbeitsmarkt", "target": "loehne"},
-      {"source": "sozialstaat", "target": "verteilung"},
-      {"source": "plattformverstaerkung", "target": "algorithmus"}
-    ]
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Massenmigration", "type": "narrative"},
+        {"id": "frame", "label": "Menschen als bedrohliche Masse", "type": "mechanism"},
+        {"id": "resonanz", "label": "Angst und Kontrollsehnsucht", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Gruppe als Ursache", "type": "perception"},
+        {"id": "demokratie", "label": "Minderheitenschutz", "type": "democracy"},
+        {"id": "system", "label": "Wohnen, Arbeit, Verwaltung, Sicherheit", "type": "system"},
+        {"id": "woek", "label": "Stabilität durch Verfahren und Infrastruktur", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "massifiziert"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
   },
   {
-    "id": "planwirtschaftliche-energiewende",
-    "title": "Planwirtschaftliche Energiewende",
-    "short_title": "Energiewende",
-    "source_title": "AfD-Regierungsprogramm",
-    "source_url": "https://www.afd-regierungsprogramm.de/",
-    "retrieved_at": "2026-05-20",
-    "context": "Pilotanalyse eines politischen Themenbegriffs aus einem öffentlichen Regierungsprogramm. Kurzauszug als Begriff, keine Vollzitation.",
-    "excerpt_short": "Planwirtschaftliche Energiewende",
-    "topic_cluster": "Transformation, Markt und Energie",
-    "status": "pilot",
-    "mechanisms": ["Sozialismusframe", "Kontrollframe", "Komplexitätsreduktion"],
-    "psychological_effects": ["Misstrauen", "Wut", "Angst vor Freiheitsverlust"],
-    "democratic_effects": ["Delegitimierung von Transformation", "Verengung der Energiefrage", "Investitionsunsicherheit"],
-    "woek_analysis": "Der Begriff kann notwendige Infrastruktur- und Transformationspolitik als Freiheitsverlust rahmen. Dadurch geraten reale Energieabhängigkeiten, Preisrisiken und Klimafolgen aus dem Blick.",
-    "counterframe": "Die Systemfrage ist nicht Staat gegen Markt. Sie lautet: Welche Mischung aus Markt, Investition, Standards und Rückkopplung senkt reale Risiken?",
-    "system_questions": ["Welche Markt-, Infrastruktur- und Investitionslogik senkt Energieabhängigkeit, Kostenrisiken und Klimafolgen?"],
-    "related_topics": ["Energie", "Klima", "Markt", "Investitionen", "fossile Abhängigkeit"],
-    "radar_values": {
-      "Angst": 3,
-      "Wut": 3,
-      "Misstrauen": 4,
-      "Feindbild": 3,
-      "Kontrollsehnsucht": 2,
-      "Vereinfachung": 5,
-      "Autoritarismuspotenzial": 2,
-      "Diskursverengung": 3,
-      "Demokratierisiko": 3,
-      "Entsolidarisierung": 2
+    "id": "remigration",
+    "title": "Remigration / Remigrationslotsen",
+    "cluster": "Migration / Identität",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Remigration / Remigrationslotsen",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
     },
-    "radar_explanations": {
-      "Angst": "Bedrohungsframes können das Gefühl verstärken, dass Sicherheit und Kontrolle verloren gehen.",
-      "Wut": "Schuldzuweisungen können emotionale Empörung auslösen oder verstärken.",
-      "Misstrauen": "Wenn komplexe Ursachen auf einfache Gegner reduziert werden, kann Vertrauen in Institutionen sinken.",
-      "Feindbild": "Kollektive Zuschreibungen können Gruppen oder politische Gegner als Problem markieren.",
-      "Kontrollsehnsucht": "Starke Kontrollversprechen können in unsicheren Situationen besonders anschlussfähig werden.",
-      "Vereinfachung": "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert.",
-      "Autoritarismuspotenzial": "Wenn einfache Ordnung gegen komplexe Verfahren gestellt wird, steigt die Anschlussfähigkeit für autoritäre Lösungen.",
-      "Diskursverengung": "Die Debatte wird enger, wenn nur noch Bedrohung, Abwehr oder Schuld im Vordergrund stehen.",
-      "Demokratierisiko": "Demokratische Stabilität kann leiden, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden.",
-      "Entsolidarisierung": "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft, gemeinsame Lösungen zu suchen."
+    "short_thesis": "Der Begriff normalisiert Rückführung und Ausschluss als verwaltbare Ordnungstechnik.",
+    "mechanisms": ["Ordnungstechnik-Frame", "Ausschlussnormalisierung", "Verwaltungsästhetik"],
+    "resonance_spaces": ["Scheinsicherheit", "Kontrollsehnsucht", "Abgrenzung", "Entlastung"],
+    "perception_shift": {
+      "visible": ["technische Lösung", "Rückführung als Ordnung", "Ausschluss als Verwaltung"],
+      "hidden": ["Rechtsstaat", "Menschenwürde", "Integrationserfolge", "Folgen für Zusammenhalt"]
     },
-    "network_nodes": [
-      {"id": "planwirtschaftliche-energiewende", "label": "Planwirtschaftliche Energiewende", "level": "core", "explanation": "Der Frame kann Transformation als Kontrolle statt Risikosenkung deuten.", "system_question": "Welche Risiken werden sichtbar, welche verdeckt?", "woek_question": "Welche Markt-, Infrastruktur- und Investitionslogik senkt reale Risiken?"},
-      {"id": "kontrollframe", "label": "Kontrollframe", "level": "direct", "explanation": "Politische Gestaltung erscheint als Freiheitsverlust.", "system_question": "Welche Regeln ermöglichen Freiheit durch Stabilität?", "woek_question": "Welche Steuerung senkt Risiken ohne unnötige Kontrolle?"},
-      {"id": "sozialismusframe", "label": "Sozialismusframe", "level": "direct", "explanation": "Transformation wird mit Planwirtschaft verbunden.", "system_question": "Welche Marktmechanik wirkt tatsächlich?", "woek_question": "Welche Rückkopplung macht Märkte ehrlicher?"},
-      {"id": "energiepreise", "label": "Energiepreise", "level": "direct", "explanation": "Preisdebatten können Ursachen wie Weltmarkt, Netze und Abhängigkeiten ausblenden.", "system_question": "Welche Kostenursachen wirken wirklich?", "woek_question": "Welche Energiepolitik senkt langfristige Kostenrisiken?"},
-      {"id": "transformation", "label": "Transformation", "level": "direct", "explanation": "Umbau wird als Zumutung statt als Risikomanagement gerahmt.", "system_question": "Welche Transformation senkt systemische Risiken?", "woek_question": "Welche Investitionen schaffen Resilienz?"},
-      {"id": "fossile-abhaengigkeit", "label": "fossile Abhängigkeit", "level": "direct", "explanation": "Abhängigkeit von fossilen Märkten kann unsichtbar werden.", "system_question": "Welche Abhängigkeiten erzeugen Volatilität?", "woek_question": "Welche Wirkung hat Energieunabhängigkeit?"},
-      {"id": "investitionssicherheit", "label": "Investitionssicherheit", "level": "direct", "explanation": "Unsichere Rahmung kann Investitionen verzögern.", "system_question": "Welche Regeln schaffen Planungssicherheit?", "woek_question": "Welche Signale lenken Kapital in Resilienz?"},
-      {"id": "klimarisiko", "label": "Klimarisiko", "level": "direct", "explanation": "Klimafolgen können aus der Kostenbetrachtung verschwinden.", "system_question": "Welche Folgekosten werden ausgelagert?", "woek_question": "Welche Preise zeigen Klimarisiken?"},
-      {"id": "staat", "label": "Staat", "level": "direct", "explanation": "Der Staat erscheint als Störer, nicht als Regelgeber.", "system_question": "Welche staatlichen Aufgaben sind Infrastruktur?", "woek_question": "Welche Regeln verbessern Marktsignale?"},
-      {"id": "markt", "label": "Markt", "level": "direct", "explanation": "Markt wird als Gegenpol zu Transformation gerahmt.", "system_question": "Welche Marktanreize fehlen?", "woek_question": "Wie bekommt der Markt bessere Signale?"},
-      {"id": "buerokratie", "label": "Bürokratie", "level": "direct", "explanation": "Umsetzungshürden werden mit Zielkritik vermischt.", "system_question": "Welche Verfahren müssen einfacher werden?", "woek_question": "Welche Regel senkt Aufwand und erhöht Wirkung?"},
-      {"id": "gasabhaengigkeit", "label": "Gasabhängigkeit / Netze / Weltmarkt", "level": "second", "explanation": "Energiepreise hängen an Abhängigkeiten und Infrastruktur.", "system_question": "Welche Infrastruktur senkt Preisvolatilität?", "woek_question": "Welche Investition senkt systemische Kosten?"},
-      {"id": "speicher", "label": "Infrastruktur / Speicher / Planung", "level": "second", "explanation": "Transformation braucht reale Infrastruktur.", "system_question": "Welche Infrastruktur fehlt?", "woek_question": "Welche Planung schafft Wirkung?"},
-      {"id": "russland", "label": "Russland / Preisvolatilität", "level": "second", "explanation": "Fossile Abhängigkeit erzeugt geopolitische Risiken.", "system_question": "Welche Lieferketten sind verwundbar?", "woek_question": "Welche Energiequellen stärken Resilienz?"},
-      {"id": "preissignale", "label": "Investitionen / Preissignale", "level": "second", "explanation": "Märkte reagieren auf Preise und Regeln.", "system_question": "Welche Signale fehlen?", "woek_question": "Wie wird Wirkung preisrelevant?"}
-    ],
-    "network_links": [
-      {"source": "planwirtschaftliche-energiewende", "target": "kontrollframe"},
-      {"source": "planwirtschaftliche-energiewende", "target": "sozialismusframe"},
-      {"source": "planwirtschaftliche-energiewende", "target": "energiepreise"},
-      {"source": "planwirtschaftliche-energiewende", "target": "transformation"},
-      {"source": "planwirtschaftliche-energiewende", "target": "fossile-abhaengigkeit"},
-      {"source": "planwirtschaftliche-energiewende", "target": "investitionssicherheit"},
-      {"source": "planwirtschaftliche-energiewende", "target": "klimarisiko"},
-      {"source": "planwirtschaftliche-energiewende", "target": "staat"},
-      {"source": "planwirtschaftliche-energiewende", "target": "markt"},
-      {"source": "planwirtschaftliche-energiewende", "target": "buerokratie"},
-      {"source": "energiepreise", "target": "gasabhaengigkeit"},
-      {"source": "transformation", "target": "speicher"},
-      {"source": "fossile-abhaengigkeit", "target": "russland"},
-      {"source": "markt", "target": "preissignale"}
-    ]
+    "democratic_effects": ["Normalisierung von Ausschluss", "Minderheitenschutz unter Druck", "Rechtsstaatsrisiko", "Entsolidarisierung"],
+    "system_questions": ["Welche Migrations-, Integrations- und Rückkehrpolitik schützt Rechtsstaat, Menschenwürde, Sicherheit und gesellschaftliche Stabilität zugleich?"],
+    "woek_question": "Welche Migrations-, Integrations- und Rückkehrpolitik schützt Rechtsstaat, Menschenwürde, Sicherheit und gesellschaftliche Stabilität zugleich?",
+    "counterframe": "Rechtsstaatliche Migrationspolitik unterscheidet Schutz, Aufenthalt, Integration, Rückkehr und Sicherheit präzise. Sie ersetzt keine Menschen durch Verwaltungssprache.",
+    "radar": {
+      "angst": 3,
+      "wut": 2,
+      "misstrauen": 3,
+      "feindbild": 4,
+      "kontrollsehnsucht": 5,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 4,
+      "diskursverengung": 4,
+      "demokratierisiko": 4,
+      "entsolidarisierung": 5
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Remigration", "type": "narrative"},
+        {"id": "frame", "label": "Ausschluss als Verwaltung", "type": "mechanism"},
+        {"id": "resonanz", "label": "Scheinsicherheit", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Ordnung statt Menschen", "type": "perception"},
+        {"id": "demokratie", "label": "Rechtsstaat und Menschenwürde", "type": "democracy"},
+        {"id": "system", "label": "Integration, Schutz, Rückkehr, Sicherheit", "type": "system"},
+        {"id": "woek", "label": "Stabilität ohne Entwürdigung", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "normalisiert"},
+        {"source": "frame", "target": "resonanz", "verb": "entlastet"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "belastet"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
   },
   {
     "id": "kehrtwende-180-grad",
     "title": "Kehrtwende um 180 Grad",
-    "short_title": "Kehrtwende",
-    "source_title": "AfD-Regierungsprogramm",
-    "source_url": "https://www.afd-regierungsprogramm.de/",
-    "retrieved_at": "2026-05-20",
-    "context": "Pilotanalyse eines politischen Themenbegriffs aus einem öffentlichen Regierungsprogramm. Kurzauszug als Begriff, keine Vollzitation.",
-    "excerpt_short": "Kehrtwende um 180 Grad",
-    "topic_cluster": "Kontrollversprechen und falsche Eindeutigkeit",
-    "status": "pilot",
+    "cluster": "Kontrolle / Freiheit",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Kehrtwende um 180 Grad",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Begriff verspricht Kontrolle durch radikalen Richtungswechsel und entwertet Lernen, Übergänge und differenzierte Lösungen.",
     "mechanisms": ["radikale Eindeutigkeit", "Kontrollversprechen", "Komplexitätsreduktion"],
-    "psychological_effects": ["Orientierung", "Kontrollsehnsucht", "emotionale Entlastung"],
-    "democratic_effects": ["Diskursverengung", "Lernverweigerung", "Risikoverschiebung"],
-    "woek_analysis": "Die Formulierung bietet Orientierung in komplexen Krisen, kann aber falsche Eindeutigkeit erzeugen. Sie ersetzt Lernfähigkeit durch das Bild einer einfachen Umkehr.",
-    "counterframe": "Nicht jede Veränderung ist Lösung. Entscheidend ist, ob eine Maßnahme echte Ursachen bearbeitet oder nur das Gefühl von Kontrolle erzeugt.",
+    "resonance_spaces": ["Kontrollsehnsucht", "emotionale Entlastung", "Scheinsicherheit", "Orientierung"],
+    "perception_shift": {
+      "visible": ["klarer Bruch", "einfache Richtung", "schnelle Kontrolle"],
+      "hidden": ["Übergänge", "Folgekosten", "Lernfähigkeit", "Systemrückkopplungen"]
+    },
+    "democratic_effects": ["Diskursverengung", "Lernverweigerung", "Risikoverschiebung", "Planbarkeitsillusion"],
     "system_questions": ["Welche Veränderung löst echte Ursachen - und welche erzeugt nur das Gefühl von Kontrolle?"],
-    "related_topics": ["Kontrolle", "Lernen", "Rückkopplung", "Risikoverschiebung"],
-    "radar_values": {
-      "Angst": 2,
-      "Wut": 3,
-      "Misstrauen": 3,
-      "Feindbild": 2,
-      "Kontrollsehnsucht": 5,
-      "Vereinfachung": 5,
-      "Autoritarismuspotenzial": 3,
-      "Diskursverengung": 4,
-      "Demokratierisiko": 3,
-      "Entsolidarisierung": 2
+    "woek_question": "Welche Veränderung löst echte Ursachen - und welche erzeugt nur das Gefühl von Kontrolle?",
+    "counterframe": "Nicht jede Kehrtwende ist Lösung. Entscheidend ist, welche Zustände sich verbessern, welche Risiken sinken und welche Folgekosten sichtbar bleiben.",
+    "radar": {
+      "angst": 2,
+      "wut": 3,
+      "misstrauen": 3,
+      "feindbild": 2,
+      "kontrollsehnsucht": 5,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 2
     },
-    "radar_explanations": {
-      "Angst": "Bedrohungsframes können das Gefühl verstärken, dass Sicherheit und Kontrolle verloren gehen.",
-      "Wut": "Schuldzuweisungen können emotionale Empörung auslösen oder verstärken.",
-      "Misstrauen": "Wenn komplexe Ursachen auf einfache Gegner reduziert werden, kann Vertrauen in Institutionen sinken.",
-      "Feindbild": "Kollektive Zuschreibungen können Gruppen oder politische Gegner als Problem markieren.",
-      "Kontrollsehnsucht": "Starke Kontrollversprechen können in unsicheren Situationen besonders anschlussfähig werden.",
-      "Vereinfachung": "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert.",
-      "Autoritarismuspotenzial": "Wenn einfache Ordnung gegen komplexe Verfahren gestellt wird, steigt die Anschlussfähigkeit für autoritäre Lösungen.",
-      "Diskursverengung": "Die Debatte wird enger, wenn nur noch Bedrohung, Abwehr oder Schuld im Vordergrund stehen.",
-      "Demokratierisiko": "Demokratische Stabilität kann leiden, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden.",
-      "Entsolidarisierung": "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft, gemeinsame Lösungen zu suchen."
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Kehrtwende", "type": "narrative"},
+        {"id": "frame", "label": "radikale Umkehr als Lösung", "type": "mechanism"},
+        {"id": "resonanz", "label": "Kontrollsehnsucht", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Eindeutigkeit statt Lernen", "type": "perception"},
+        {"id": "demokratie", "label": "Rückkopplung und Korrektur", "type": "democracy"},
+        {"id": "system", "label": "Folgekosten und Übergänge", "type": "system"},
+        {"id": "woek", "label": "Ursachenwirksame Veränderung", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "verspricht"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verengt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "blockiert"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "planwirtschaftliche-energiewende",
+    "title": "Planwirtschaftliche Energiewende",
+    "cluster": "Klima / Energie",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Planwirtschaftliche Energiewende",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
     },
-    "network_nodes": [
-      {"id": "kehrtwende-180-grad", "label": "Kehrtwende um 180 Grad", "level": "core", "explanation": "Der Frame verspricht klare Umkehr statt schrittweiser Problemlösung.", "system_question": "Welche Ursache wird gelöst?", "woek_question": "Welche Veränderung löst echte Ursachen - und welche erzeugt nur das Gefühl von Kontrolle?"},
-      {"id": "eindeutigkeit", "label": "Eindeutigkeit", "level": "direct", "explanation": "Komplexität wird emotional entlastet.", "system_question": "Welche Mehrdeutigkeit bleibt relevant?", "woek_question": "Welche Klarheit hilft, ohne Wirklichkeit zu verkürzen?"},
-      {"id": "kontrollversprechen", "label": "Kontrollversprechen", "level": "direct", "explanation": "Kontrolle wirkt attraktiv, wenn Systeme als unübersichtlich erlebt werden.", "system_question": "Welche Kontrolle ist wirksam?", "woek_question": "Welche Steuerung erzeugt echte Stabilität?"},
-      {"id": "komplexitaetsreduktion", "label": "Komplexitätsreduktion", "level": "direct", "explanation": "Ursachen werden auf eine Richtung reduziert.", "system_question": "Welche Ursachenfelder fehlen?", "woek_question": "Welche Daten zeigen das System?"},
-      {"id": "abbruchsehnsucht", "label": "politische Sehnsucht nach Abbruch", "level": "direct", "explanation": "Abbruch erscheint als Lösung.", "system_question": "Was entsteht nach dem Abbruch?", "woek_question": "Welche Folgewirkung hätte die Umkehr?"},
-      {"id": "lernverweigerung", "label": "Lernverweigerung", "level": "direct", "explanation": "Rückkopplung und Anpassung werden weniger attraktiv.", "system_question": "Welche Fehlerkorrektur braucht das System?", "woek_question": "Wie bleibt Politik lernfähig?"},
-      {"id": "radikale-umkehr", "label": "radikale Umkehr", "level": "direct", "explanation": "Schnelle Umkehr kann Stabilitätsrisiken erzeugen.", "system_question": "Welche Übergänge braucht Umsetzung?", "woek_question": "Welche Veränderung senkt statt verschiebt Risiken?"},
-      {"id": "planbarkeit", "label": "Planbarkeit", "level": "direct", "explanation": "Einfache Ansagen können Scheinsicherheit geben.", "system_question": "Welche Unsicherheiten bleiben?", "woek_question": "Welche Planung ist realitätsfähig?"},
-      {"id": "risikoverschiebung", "label": "Risikoverschiebung", "level": "direct", "explanation": "Folgekosten können unsichtbar werden.", "system_question": "Wer trägt die verschobenen Risiken?", "woek_question": "Welche Wirkung wird ausgelagert?"},
-      {"id": "emotionale-entlastung", "label": "emotionale Entlastung", "level": "second", "explanation": "Eindeutigkeit entlastet kurzfristig.", "system_question": "Welche Entlastung trägt langfristig?", "woek_question": "Welche Orientierung stärkt Handlungskompetenz?"},
-      {"id": "sicherheit", "label": "Sicherheit", "level": "second", "explanation": "Kontrolle wird mit Sicherheit verbunden.", "system_question": "Welche Sicherheit ist überprüfbar?", "woek_question": "Welche Sicherheit ist wirkungsstabil?"},
-      {"id": "instabilitaet", "label": "Instabilität", "level": "second", "explanation": "Radikale Umkehr kann neue Instabilität erzeugen.", "system_question": "Welche Übergangskosten entstehen?", "woek_question": "Welche Wirkung hat Geschwindigkeit?"},
-      {"id": "fehlende-rueckkopplung", "label": "fehlende Rückkopplung", "level": "second", "explanation": "Lernen wird erschwert, wenn nur Umkehr zählt.", "system_question": "Welche Daten korrigieren den Kurs?", "woek_question": "Wie lernt das System?"},
-      {"id": "folgekosten", "label": "Folgekosten", "level": "second", "explanation": "Risiken werden verschoben statt gelöst.", "system_question": "Welche Kosten entstehen später?", "woek_question": "Welche Kosten müssen sichtbar werden?"},
-      {"id": "scheinsicherheit", "label": "Scheinsicherheit", "level": "second", "explanation": "Planbarkeit kann behauptet statt erzeugt werden.", "system_question": "Welche Planung hält Störungen aus?", "woek_question": "Welche Resilienz entsteht wirklich?"}
-    ],
-    "network_links": [
-      {"source": "kehrtwende-180-grad", "target": "eindeutigkeit"},
-      {"source": "kehrtwende-180-grad", "target": "kontrollversprechen"},
-      {"source": "kehrtwende-180-grad", "target": "komplexitaetsreduktion"},
-      {"source": "kehrtwende-180-grad", "target": "abbruchsehnsucht"},
-      {"source": "kehrtwende-180-grad", "target": "lernverweigerung"},
-      {"source": "kehrtwende-180-grad", "target": "radikale-umkehr"},
-      {"source": "kehrtwende-180-grad", "target": "planbarkeit"},
-      {"source": "kehrtwende-180-grad", "target": "risikoverschiebung"},
-      {"source": "eindeutigkeit", "target": "emotionale-entlastung"},
-      {"source": "kontrollversprechen", "target": "sicherheit"},
-      {"source": "radikale-umkehr", "target": "instabilitaet"},
-      {"source": "lernverweigerung", "target": "fehlende-rueckkopplung"},
-      {"source": "risikoverschiebung", "target": "folgekosten"},
-      {"source": "planbarkeit", "target": "scheinsicherheit"}
-    ]
+    "short_thesis": "Der Frame rahmt Klimapolitik als sozialistische Kontrolle und verdeckt fossile Abhängigkeiten, Preisvolatilität und Klimafolgekosten.",
+    "mechanisms": ["Sozialismusframe", "Kontrollframe", "Freiheitsverlust-Frame"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Angst vor Freiheitsverlust", "Transformationsabwehr"],
+    "perception_shift": {
+      "visible": ["Staat als Kontrolle", "Markt gegen Klimapolitik", "Transformation als Zumutung"],
+      "hidden": ["fossile Abhängigkeit", "Klimafolgekosten", "Infrastrukturbedarf", "Investitionssicherheit"]
+    },
+    "democratic_effects": ["Delegitimierung von Transformation", "Verengung der Energiefrage", "Investitionsunsicherheit", "Misstrauen gegen Risikosteuerung"],
+    "system_questions": ["Welche Markt-, Infrastruktur- und Investitionslogik senkt Energieabhängigkeit, Kostenrisiken und Klimafolgen?"],
+    "woek_question": "Welche Markt-, Infrastruktur- und Investitionslogik senkt Energieabhängigkeit, Kostenrisiken und Klimafolgen?",
+    "counterframe": "Die Systemfrage ist nicht Staat gegen Markt. Sie lautet: Welche Mischung aus Markt, Investition, Standards und Rückkopplung senkt reale Risiken?",
+    "radar": {
+      "angst": 3,
+      "wut": 3,
+      "misstrauen": 4,
+      "feindbild": 3,
+      "kontrollsehnsucht": 2,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 2,
+      "diskursverengung": 3,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 2
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Planwirtschaftliche Energiewende", "type": "narrative"},
+        {"id": "frame", "label": "Klimapolitik als Kontrolle", "type": "mechanism"},
+        {"id": "resonanz", "label": "Misstrauen gegen Transformation", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Freiheit gegen Klimaschutz", "type": "perception"},
+        {"id": "demokratie", "label": "Transformationsfähigkeit", "type": "democracy"},
+        {"id": "system", "label": "Abhängigkeit, Netze, Preise, Folgekosten", "type": "system"},
+        {"id": "woek", "label": "Marktsignale für Resilienz", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "rahmt"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
+  },
+  {
+    "id": "klimadiktatur",
+    "title": "Klimadiktatur / Klimaextremismus / Klimapropaganda",
+    "cluster": "Klima / Energie",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Klimadiktatur / Klimaextremismus / Klimapropaganda",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame macht Klimaschutz zur Freiheitsbedrohung und verschiebt wissenschaftliche Risikosteuerung in einen Kulturkampf.",
+    "mechanisms": ["Freiheitsverlust-Frame", "Wissenschaftsmisstrauen", "Kulturkampf-Frame"],
+    "resonance_spaces": ["Angst", "Misstrauen", "Wut", "Abwehr gegen Transformation"],
+    "perception_shift": {
+      "visible": ["Bevormundung", "Propaganda", "Extremismusvorwurf"],
+      "hidden": ["Klimarisiko", "Gesundheit", "Versicherungsschäden", "Anpassungskosten"]
+    },
+    "democratic_effects": ["Wissenschaftsmisstrauen", "Diskursverengung", "Risikoverdrängung", "Blockade von Vorsorge"],
+    "system_questions": ["Welche Klimapolitik schützt Freiheit, Kaufkraft, Gesundheit und Lebensgrundlagen gleichzeitig?"],
+    "woek_question": "Welche Klimapolitik schützt Freiheit, Kaufkraft, Gesundheit und Lebensgrundlagen gleichzeitig?",
+    "counterframe": "Klimapolitik ist Risikosteuerung. Die Wirkungsfrage lautet, welche Maßnahmen Freiheit, Kaufkraft, Gesundheit, Versorgungssicherheit und Lebensgrundlagen zugleich schützen.",
+    "radar": {
+      "angst": 4,
+      "wut": 3,
+      "misstrauen": 4,
+      "feindbild": 4,
+      "kontrollsehnsucht": 4,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 4,
+      "entsolidarisierung": 3
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Klimadiktatur", "type": "narrative"},
+        {"id": "frame", "label": "Klimaschutz als Freiheitsverlust", "type": "mechanism"},
+        {"id": "resonanz", "label": "Wut und Abwehr", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Wissenschaft als Propaganda", "type": "perception"},
+        {"id": "demokratie", "label": "gemeinsame Risikowahrnehmung", "type": "democracy"},
+        {"id": "system", "label": "Klimarisiko, Gesundheit, Kosten", "type": "system"},
+        {"id": "woek", "label": "Freiheit durch Risikosenkung", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "emotionalisiert"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "verengt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
+  },
+  {
+    "id": "genderismus",
+    "title": "Genderismus / Regenbogenkult / politische Indoktrination",
+    "cluster": "Kulturkampf / Gesellschaft",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Genderismus / Regenbogenkult / politische Indoktrination",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame macht Vielfalt und Gleichberechtigung zur Bedrohung von Familie, Kindern und Normalität.",
+    "mechanisms": ["Kulturkampf-Frame", "Normalitätsframe", "Indoktrinationsframe"],
+    "resonance_spaces": ["Kränkung", "Kontrollverlust", "Angst um Kinder", "Zugehörigkeit durch Abgrenzung"],
+    "perception_shift": {
+      "visible": ["Bedrohung von Familie", "Normalität gegen Vielfalt", "Schule als Indoktrination"],
+      "hidden": ["Minderheitenschutz", "Selbstbestimmung", "Gewaltschutz", "pädagogische Sachlichkeit"]
+    },
+    "democratic_effects": ["Minderheitenabwertung", "Diskursverengung", "Entsolidarisierung", "Kulturkampfverstärkung"],
+    "system_questions": ["Welche Familien-, Bildungs- und Gleichstellungspolitik schützt Kinder, Würde, Vielfalt und Selbstbestimmung ohne Kulturkampf?"],
+    "woek_question": "Welche Familien-, Bildungs- und Gleichstellungspolitik schützt Kinder, Würde, Vielfalt und Selbstbestimmung ohne Kulturkampf?",
+    "counterframe": "Familie, Kinder und Würde werden nicht durch Abwertung geschützt. Eine wirkungsorientierte Bildungspolitik verbindet Schutz, Selbstbestimmung, Sachlichkeit und Respekt.",
+    "radar": {
+      "angst": 3,
+      "wut": 4,
+      "misstrauen": 3,
+      "feindbild": 4,
+      "kontrollsehnsucht": 3,
+      "vereinfachung": 5,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 4,
+      "demokratierisiko": 3,
+      "entsolidarisierung": 4
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Genderismus", "type": "narrative"},
+        {"id": "frame", "label": "Vielfalt als Indoktrination", "type": "mechanism"},
+        {"id": "resonanz", "label": "Angst um Kinder", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Normalität gegen Vielfalt", "type": "perception"},
+        {"id": "demokratie", "label": "Minderheitenschutz", "type": "democracy"},
+        {"id": "system", "label": "Bildung, Würde, Gewaltschutz", "type": "system"},
+        {"id": "woek", "label": "Schutz ohne Kulturkampf", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "rahmt"},
+        {"source": "frame", "target": "resonanz", "verb": "aktiviert"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "öffnet"}
+      ]
+    }
+  },
+  {
+    "id": "medien-zensur",
+    "title": "Zensurbehörden / betreute Meinung / ÖRR-Frame",
+    "cluster": "Medien / Wahrheit",
+    "source": {
+      "title": "AfD-Regierungsprogramm Sachsen-Anhalt",
+      "url": "https://www.afd-regierungsprogramm.de/",
+      "retrieved_at": "2026-05-21",
+      "excerpt": "Zensurbehörden / betreute Meinung / ÖRR",
+      "context": "Kurzer Begriffsauszug aus politischer Programmsprache. Pilotanalyse, keine Vollzitation."
+    },
+    "short_thesis": "Der Frame schwächt Vertrauen in Medien und journalistische Kontrolle, indem öffentliche Wahrheitsinfrastruktur als Manipulation gerahmt wird.",
+    "mechanisms": ["Wahrheitsinfrastruktur-Angriff", "Opferframe", "Medienmisstrauen"],
+    "resonance_spaces": ["Misstrauen", "Wut", "Selbstbestätigung", "Informationsabwehr"],
+    "perception_shift": {
+      "visible": ["Zensur", "betreute Meinung", "Manipulation durch Medien"],
+      "hidden": ["Quellenprüfung", "journalistische Kontrolle", "Pluralität", "Medienfehlerkorrektur"]
+    },
+    "democratic_effects": ["Medienvertrauensverlust", "Faktenresistenz", "Wahrheitsfragmentierung", "Diskursverengung"],
+    "system_questions": ["Welche Medienordnung stärkt Quellenklarheit, Pluralität, Kritikfähigkeit und demokratische Öffentlichkeit?"],
+    "woek_question": "Welche Medienordnung stärkt Quellenklarheit, Pluralität, Kritikfähigkeit und demokratische Öffentlichkeit?",
+    "counterframe": "Medienkritik ist notwendig. Wirkungsorientierte Medienkritik prüft Quellen, Macht, Fehlerkorrektur und Pluralität, ohne jede Wahrheitsinfrastruktur als Manipulation zu delegitimieren.",
+    "radar": {
+      "angst": 3,
+      "wut": 4,
+      "misstrauen": 5,
+      "feindbild": 4,
+      "kontrollsehnsucht": 4,
+      "vereinfachung": 4,
+      "autoritarismuspotenzial": 3,
+      "diskursverengung": 5,
+      "demokratierisiko": 5,
+      "entsolidarisierung": 3
+    },
+    "network": {
+      "nodes": [
+        {"id": "narrativ", "label": "Zensurbehörden", "type": "narrative"},
+        {"id": "frame", "label": "Medien als Manipulation", "type": "mechanism"},
+        {"id": "resonanz", "label": "Misstrauen", "type": "resonance"},
+        {"id": "wahrnehmung", "label": "Quellenkontrolle als Zensur", "type": "perception"},
+        {"id": "demokratie", "label": "gemeinsame Wirklichkeit", "type": "democracy"},
+        {"id": "system", "label": "Quellenklarheit und Pluralität", "type": "system"},
+        {"id": "woek", "label": "Kritikfähigkeit statt Wahrheitsbruch", "type": "woek"}
+      ],
+      "edges": [
+        {"source": "narrativ", "target": "frame", "verb": "delegitimiert"},
+        {"source": "frame", "target": "resonanz", "verb": "verstärkt"},
+        {"source": "resonanz", "target": "wahrnehmung", "verb": "verschiebt"},
+        {"source": "wahrnehmung", "target": "demokratie", "verb": "schwächt"},
+        {"source": "frame", "target": "system", "verb": "verdeckt"},
+        {"source": "system", "target": "woek", "verb": "führt zu"}
+      ]
+    }
   }
 ]

@@ -5,34 +5,39 @@
 
   if (!root) return;
 
-  const axes = [
-    "Angst",
-    "Wut",
-    "Misstrauen",
-    "Feindbild",
-    "Kontrollsehnsucht",
-    "Vereinfachung",
-    "Autoritarismuspotenzial",
-    "Diskursverengung",
-    "Demokratierisiko",
-    "Entsolidarisierung"
+  document.documentElement.classList.add("narrative-js");
+
+  const axisDefs = [
+    ["angst", "Angst", "Bedrohungsframes verstärken das Gefühl, dass Sicherheit und Kontrolle verloren gehen."],
+    ["wut", "Wut", "Schuldzuweisungen emotionalisieren Konflikte und erhöhen Empörungsenergie."],
+    ["misstrauen", "Misstrauen", "Wenn Ursachen auf Gegner reduziert werden, sinkt Vertrauen in Institutionen, Medien und Verfahren."],
+    ["feindbild", "Feindbild", "Kollektive Zuschreibungen markieren Gruppen oder politische Gegner als Problem."],
+    ["kontrollsehnsucht", "Kontrollsehnsucht", "Starke Kontrollversprechen werden anschlussfähig, wenn Unsicherheit dominiert."],
+    ["vereinfachung", "Vereinfachung", "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert."],
+    ["autoritarismuspotenzial", "Autoritarismuspotenzial", "Einfache Ordnung wird gegen komplexe demokratische Verfahren gestellt."],
+    ["diskursverengung", "Diskursverengung", "Die Debatte verengt sich, wenn Bedrohung, Abwehr oder Schuld im Vordergrund stehen."],
+    ["demokratierisiko", "Demokratierisiko", "Demokratische Stabilität leidet, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden."],
+    ["entsolidarisierung", "Entsolidarisierung", "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft zu gemeinsamen Lösungen."]
   ];
 
-  const sharedNodes = [
-    "Misstrauen",
-    "Kontrolle",
-    "Angst",
-    "Systemdelegitimierung",
-    "Vereinfachung",
-    "Medien",
-    "Demokratie",
-    "Vertrauen",
-    "Spaltung"
-  ];
+  const typeLabels = {
+    narrative: "Narrativ",
+    mechanism: "Sprachmechanik",
+    resonance: "Resonanzraum",
+    perception: "Wahrnehmungsverschiebung",
+    democracy: "demokratische Wirkung",
+    system: "ausgeblendete Systemfrage",
+    woek: "WÖk-Gegenfrage",
+    counterframe: "Gegenframe"
+  };
 
   const state = {
     cases: [],
-    activeId: null
+    activeId: null,
+    activeTab: "analyse",
+    activeFilter: "Alle",
+    compareA: null,
+    compareB: null
   };
 
   function escapeHtml(value) {
@@ -43,347 +48,576 @@
       .replace(/"/g, "&quot;");
   }
 
-  function polarPoint(index, value, radius) {
-    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / axes.length;
+  function slugAnchor(item) {
+    const map = {
+      altparteien: "narrativ-altparteien",
+      "angst-vor-afd-wahlsieg": "narrativ-angst-vor-afd-wahlsieg",
+      altparteiendiktatur: "narrativ-altparteiendiktatur",
+      masseneinwanderung: "narrativ-masseneinwanderung",
+      remigration: "narrativ-remigration",
+      "kehrtwende-180-grad": "narrativ-kehrtwende-180-grad",
+      "planwirtschaftliche-energiewende": "narrativ-planwirtschaftliche-energiewende",
+      klimadiktatur: "narrativ-klimadiktatur",
+      genderismus: "narrativ-genderismus",
+      "medien-zensur": "narrativ-medien-zensur"
+    };
+    return map[item.id] || `narrativ-${item.id}`;
+  }
+
+  function getActiveCase() {
+    return state.cases.find((item) => item.id === state.activeId) || state.cases[0];
+  }
+
+  function list(items, className = "narrative-chip-list") {
+    return `<ul class="${className}">${(items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+  }
+
+  function polar(index, value, radius, center = 125) {
+    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / axisDefs.length;
     const scaled = (value / 5) * radius;
     return {
-      x: 100 + Math.cos(angle) * scaled,
-      y: 100 + Math.sin(angle) * scaled
+      x: center + Math.cos(angle) * scaled,
+      y: center + Math.sin(angle) * scaled
     };
   }
 
-  function gridPoints(value, radius) {
-    return axes
+  function gridPoints(value, radius, center = 125) {
+    return axisDefs
       .map((_, index) => {
-        const point = polarPoint(index, value, radius);
-        return `${point.x.toFixed(2)},${point.y.toFixed(2)}`;
+        const point = polar(index, value, radius, center);
+        return `${point.x.toFixed(1)},${point.y.toFixed(1)}`;
       })
       .join(" ");
   }
 
-  function renderRadar(caseItem, mini = false) {
-    const radius = mini ? 72 : 76;
-    const points = axes
-      .map((axis, index) => {
-        const point = polarPoint(index, caseItem.radar_values[axis] || 0, radius);
-        return `${point.x.toFixed(2)},${point.y.toFixed(2)}`;
+  function renderRadar(item, mini = false) {
+    const radius = mini ? 72 : 88;
+    const center = 125;
+    const size = 250;
+    const values = item.radar || {};
+    const points = axisDefs
+      .map(([key], index) => {
+        const point = polar(index, values[key] || 0, radius, center);
+        return `${point.x.toFixed(1)},${point.y.toFixed(1)}`;
       })
       .join(" ");
+    const labels = mini
+      ? ""
+      : axisDefs
+          .map(([key, label], index) => {
+            const point = polar(index, 5.9, radius, center);
+            const anchor = point.x < center - 8 ? "end" : point.x > center + 8 ? "start" : "middle";
+            return `<text class="radar-label" x="${point.x.toFixed(1)}" y="${point.y.toFixed(1)}" text-anchor="${anchor}" data-axis-label="${escapeHtml(key)}">${escapeHtml(label)}</text>`;
+          })
+          .join("");
 
     return `
-      <svg class="${mini ? "mini-radar" : "radar-svg"}" viewBox="0 0 200 200" role="img" aria-label="Wirkungsradar für ${escapeHtml(caseItem.title)}">
-        <polygon class="radar-grid" points="${gridPoints(1, radius)}"></polygon>
-        <polygon class="radar-grid" points="${gridPoints(3, radius)}"></polygon>
-        <polygon class="radar-grid" points="${gridPoints(5, radius)}"></polygon>
-        ${axes
-          .map((axis, index) => {
-            const end = polarPoint(index, 5, radius);
-            return `
-              <line class="radar-axis-line" x1="100" y1="100" x2="${end.x.toFixed(2)}" y2="${end.y.toFixed(2)}"></line>
-            `;
+      <svg class="${mini ? "mini-radar" : "radar-svg"}" viewBox="0 0 ${size} ${size}" role="img" aria-label="Wirkungsradar für ${escapeHtml(item.title)}">
+        <polygon class="radar-grid" points="${gridPoints(1, radius, center)}"></polygon>
+        <polygon class="radar-grid" points="${gridPoints(3, radius, center)}"></polygon>
+        <polygon class="radar-grid radar-grid-outer" points="${gridPoints(5, radius, center)}"></polygon>
+        ${axisDefs
+          .map(([, ,], index) => {
+            const end = polar(index, 5, radius, center);
+            return `<line class="radar-axis-line" x1="${center}" y1="${center}" x2="${end.x.toFixed(1)}" y2="${end.y.toFixed(1)}"></line>`;
           })
           .join("")}
         <polygon class="radar-shape" points="${points}"></polygon>
-        ${axes
-          .map((axis, index) => {
-            const point = polarPoint(index, caseItem.radar_values[axis] || 0, radius);
-            return `<circle class="radar-point" cx="${point.x.toFixed(2)}" cy="${point.y.toFixed(2)}" r="${mini ? 2.5 : 3.5}"></circle>`;
+        ${axisDefs
+          .map(([key], index) => {
+            const point = polar(index, values[key] || 0, radius, center);
+            return `<circle class="radar-point" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="${mini ? 3 : 4.2}"></circle>`;
           })
           .join("")}
+        ${labels}
+        ${mini ? "" : '<text class="radar-scale" x="125" y="40" text-anchor="middle">5</text><text class="radar-scale" x="125" y="72" text-anchor="middle">3</text><text class="radar-scale" x="125" y="106" text-anchor="middle">1</text>'}
       </svg>
     `;
   }
 
-  function renderCaseCard(caseItem) {
-    const anchor = getDetailAnchor(caseItem);
+  function renderRadarPanel(item) {
+    const values = item.radar || {};
     return `
-      <button class="narrative-case-card" type="button" data-case-card="${escapeHtml(caseItem.id)}" aria-controls="${escapeHtml(anchor)}">
-        <span class="narrative-status">Pilotanalyse</span>
-        <h3>${escapeHtml(caseItem.title)}</h3>
-        <p>${escapeHtml(caseItem.topic_cluster)}</p>
-        <ul class="narrative-tag-list">
-          ${caseItem.mechanisms.slice(0, 3).map((tag) => `<li><span>${escapeHtml(tag)}</span></li>`).join("")}
-        </ul>
-        ${renderRadar(caseItem, true)}
-        <span class="text-link">Analyse ansehen</span>
-        <span class="visually-hidden">Springt zu ${escapeHtml(anchor)}</span>
-      </button>
-    `;
-  }
-
-  function renderRadarTable(caseItem) {
-    return `
-      <table class="radar-table">
-        <thead>
-          <tr><th>Achse</th><th>Wert</th><th>Erklärung</th></tr>
-        </thead>
-        <tbody>
-          ${axes
-            .map(
-              (axis) => `
-                <tr>
-                  <td>${escapeHtml(axis)}</td>
-                  <td>${caseItem.radar_values[axis] || 0} / 5</td>
-                  <td>${escapeHtml(caseItem.radar_explanations[axis])}</td>
-                </tr>
-              `
-            )
-            .join("")}
-        </tbody>
-      </table>
-    `;
-  }
-
-  function renderNetwork(caseItem) {
-    const grouped = ["core", "direct", "second"].reduce((groups, level) => {
-      groups[level] = caseItem.network_nodes.filter((node) => node.level === level);
-      return groups;
-    }, {});
-    const labelById = new Map(caseItem.network_nodes.map((node) => [node.id, node.label]));
-    const positionById = new Map();
-    const columns = {
-      core: { x: 12, minY: 50, maxY: 50 },
-      direct: { x: 47, minY: 15, maxY: 85 },
-      second: { x: 82, minY: 20, maxY: 80 }
-    };
-    Object.entries(grouped).forEach(([level, nodes]) => {
-      const column = columns[level];
-      const count = nodes.length;
-      nodes.forEach((node, index) => {
-        const y = count <= 1 ? column.minY : column.minY + ((column.maxY - column.minY) * index) / (count - 1);
-        positionById.set(node.id, { x: column.x, y });
-      });
-    });
-    const renderNode = (node) => `
-      <button
-        class="network-node ${escapeHtml(node.level)}"
-        type="button"
-        data-network-node="${escapeHtml(caseItem.id)}:${escapeHtml(node.id)}"
-        style="--node-x: ${positionById.get(node.id)?.x || 50}%; --node-y: ${positionById.get(node.id)?.y || 50}%;"
-      >
-        ${escapeHtml(node.label)}
-      </button>
-    `;
-
-    return `
-      <div class="network-map" aria-label="Wirkungsnetz ${escapeHtml(caseItem.title)}">
-        <div class="network-column-title core">Narrativ</div>
-        <div class="network-column-title direct">Resonanzräume</div>
-        <div class="network-column-title second">Systemursachen / Folgen</div>
-        <svg class="network-lines" viewBox="0 0 100 100" aria-hidden="true" focusable="false" preserveAspectRatio="none">
-          ${caseItem.network_links
-            .map((link) => {
-              const source = positionById.get(link.source);
-              const target = positionById.get(link.target);
-              if (!source || !target) return "";
-              return `<line x1="${source.x}" y1="${source.y}" x2="${target.x}" y2="${target.y}"></line>`;
-            })
-            .join("")}
-        </svg>
-        ${caseItem.network_nodes.map(renderNode).join("")}
+      <div class="radar-layout">
+        <div>
+          <h3>Wirkungsradar: ${escapeHtml(item.title)}</h3>
+          <p class="narrative-note">Die Werte zeigen eine wirkungsanalytische Einordnung. Sie bewerten nicht Wahrheit oder Zulässigkeit einer Aussage, sondern die Resonanzräume, die durch Sprache geöffnet werden.</p>
+          ${renderRadar(item)}
+          <div class="radar-legend" aria-label="Legende"><span>0 niedrig</span><span>3 deutlich</span><span>5 sehr stark</span></div>
+          <div class="radar-axis-buttons">
+            ${axisDefs.map(([key, label, text]) => `<button type="button" data-axis="${escapeHtml(key)}" data-axis-text="${escapeHtml(text)}">${escapeHtml(label)}</button>`).join("")}
+          </div>
+          <p class="radar-explanation" data-axis-explanation>Tippe oder fokussiere eine Achse, um ihre Wirkung zu lesen.</p>
+        </div>
+        <table class="radar-table">
+          <thead><tr><th>Achse</th><th>Wert</th><th>Erklärung</th></tr></thead>
+          <tbody>
+            ${axisDefs
+              .map(
+                ([key, label, text]) => `
+                  <tr>
+                    <td>${escapeHtml(label)}</td>
+                    <td><strong>${values[key] || 0} / 5</strong></td>
+                    <td>${escapeHtml(text)}</td>
+                  </tr>
+                `
+              )
+              .join("")}
+          </tbody>
+        </table>
       </div>
-      <div class="network-links" aria-label="Verbindungen im Wirkungsnetz">
-        ${caseItem.network_links
-          .slice(0, 12)
+    `;
+  }
+
+  function svgLabel(text) {
+    const words = String(text || "").split(/\s+/).filter(Boolean);
+    const lines = [];
+    let line = "";
+    words.forEach((word) => {
+      const next = line ? `${line} ${word}` : word;
+      if (next.length > 20 && line) {
+        lines.push(line);
+        line = word;
+      } else {
+        line = next;
+      }
+    });
+    if (line) lines.push(line);
+    return lines.slice(0, 3).map((part, index, all) => {
+      const y = (index - (all.length - 1) / 2) * 14;
+      return `<tspan x="0" y="${y}">${escapeHtml(part)}</tspan>`;
+    }).join("");
+  }
+
+  function renderCard(item) {
+    return `
+      <button class="narrative-case-card" type="button" data-case-card="${escapeHtml(item.id)}" aria-label="Analyse ${escapeHtml(item.title)} öffnen">
+        <span class="narrative-status">Pilotanalyse</span>
+        <span class="narrative-cluster">${escapeHtml(item.cluster)}</span>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.short_thesis)}</p>
+        ${list(item.mechanisms.slice(0, 3))}
+        ${renderRadar(item, true)}
+        <span class="narrative-card-action">Analyse ansehen</span>
+      </button>
+    `;
+  }
+
+  function renderFilters() {
+    const clusters = ["Alle", ...Array.from(new Set(state.cases.map((item) => item.cluster)))];
+    return `
+      <div class="narrative-filterbar" aria-label="Narrativfilter">
+        ${clusters
           .map(
-            (link) => `
-              <span>
-                <strong>${escapeHtml(labelById.get(link.source) || link.source)}</strong>
-                <em>wirkt auf</em>
-                <strong>${escapeHtml(labelById.get(link.target) || link.target)}</strong>
-              </span>
+            (cluster) => `
+              <button type="button" data-filter="${escapeHtml(cluster)}" class="${cluster === state.activeFilter ? "is-active" : ""}">
+                ${escapeHtml(cluster)}
+              </button>
             `
           )
           .join("")}
       </div>
-      <div class="network-explanation" data-network-explanation="${escapeHtml(caseItem.id)}">
-        <p>Wähle einen Knoten im Netz. Dann erscheint hier, welche Wirkung sichtbar wird und welche Systemfrage oft ausgeblendet bleibt.</p>
+    `;
+  }
+
+  function renderAnalysis(item) {
+    return `
+      <div class="narrative-analysis-grid">
+        <article class="analysis-box source-box">
+          <p class="box-kicker">Original / Quelle</p>
+          <blockquote>${escapeHtml(item.source.excerpt)}</blockquote>
+          <p>Quelle: <a class="text-link" href="${escapeHtml(item.source.url)}" rel="noopener noreferrer">${escapeHtml(item.source.title)}</a></p>
+          <p>Abruf: ${escapeHtml(item.source.retrieved_at)}</p>
+          <p>${escapeHtml(item.source.context)}</p>
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Sprachliche Mechanik</p>
+          ${list(item.mechanisms)}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Resonanzräume</p>
+          ${list(item.resonance_spaces)}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Demokratische Wirkung</p>
+          ${list(item.democratic_effects)}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Wahrnehmungsverschiebung</p>
+          <h4>macht sichtbar</h4>
+          ${list(item.perception_shift.visible)}
+          <h4>macht unsichtbar</h4>
+          ${list(item.perception_shift.hidden)}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Ausgeblendete Systemfragen</p>
+          ${list(item.system_questions, "narrative-list")}
+        </article>
+      </div>
+      <div class="woek-question-box">
+        <p class="box-kicker">WÖk-Gegenfrage</p>
+        <h3>${escapeHtml(item.woek_question)}</h3>
       </div>
     `;
   }
 
-  function renderDetail(caseItem) {
-    const question = caseItem.system_questions[0] || "";
-    const anchor = getDetailAnchor(caseItem);
+  function pathSteps(item) {
+    const firstMechanism = item.mechanisms[0] || "Frame";
+    const firstResonance = item.resonance_spaces[0] || "Resonanzraum";
+    const visible = item.perception_shift.visible[0] || "Wahrnehmung";
+    const hidden = item.perception_shift.hidden[0] || "Systemfrage";
+    const democracy = item.democratic_effects[0] || "demokratische Wirkung";
+    return [
+      ["Narrativ", item.title],
+      ["Frame", firstMechanism],
+      ["Resonanzraum", firstResonance],
+      ["Wahrnehmungsverschiebung", `${visible}; verdeckt: ${hidden}`],
+      ["demokratische Wirkung", democracy],
+      ["Systemfrage", item.system_questions[0]],
+      ["WÖk-Gegenfrage", item.woek_question]
+    ];
+  }
+
+  function renderPath(item) {
     return `
-      <article class="narrative-detail-panel" id="${escapeHtml(anchor)}" data-case-detail="${escapeHtml(caseItem.id)}">
-        <div>
-          <p class="hero-kicker">Detailanalyse · ${escapeHtml(caseItem.topic_cluster)}</p>
-          <h3>${escapeHtml(caseItem.title)}</h3>
-          <div class="narrative-detail-meta">
-            <span>Quelle: <a class="text-link" href="${escapeHtml(caseItem.source_url)}" rel="noopener noreferrer">${escapeHtml(caseItem.source_title)}</a></span>
-            <span>Abruf: ${escapeHtml(caseItem.retrieved_at)}</span>
-            <span>Status: Pilotanalyse</span>
-          </div>
-          <p class="formula-note">${escapeHtml(caseItem.context)}</p>
-        </div>
-
-        <div class="narrative-detail-columns">
-          <div>
-            <h4>Sprachliche Mechanik</h4>
-            <p>${escapeHtml(caseItem.mechanisms.join(", "))}</p>
-          </div>
-          <div>
-            <h4>Wirkungspotenzial</h4>
-            <p>${escapeHtml(caseItem.psychological_effects.join(", "))}</p>
-          </div>
-          <div>
-            <h4>Demokratische Wirkung</h4>
-            <p>${escapeHtml(caseItem.democratic_effects.join(", "))}</p>
-          </div>
-          <div>
-            <h4>Gegenframe</h4>
-            <p>${escapeHtml(caseItem.counterframe)}</p>
-          </div>
-        </div>
-
-        <div class="narrative-question-card">
-          <h4>Wirkungsökonomische Einordnung</h4>
-          <p>${escapeHtml(caseItem.woek_analysis)}</p>
-        </div>
-
-        <div class="narrative-question-card">
-          <h4>WÖk-Gegenfrage</h4>
-          <p>${escapeHtml(question)}</p>
-        </div>
-
-        <div class="narrative-visual-grid">
-          <section class="radar-panel" aria-labelledby="radar-${escapeHtml(caseItem.id)}">
-            <h4 id="radar-${escapeHtml(caseItem.id)}">Wirkungsradar</h4>
-            <p class="formula-note">Demo - wirkungsanalytische Einordnung, keine amtliche Bewertung.</p>
-            ${renderRadar(caseItem)}
-            <div class="radar-axis-buttons">
-              ${axes.map((axis) => `<button type="button" data-radar-axis="${escapeHtml(caseItem.id)}:${escapeHtml(axis)}">${escapeHtml(axis)}</button>`).join("")}
-            </div>
-            <p class="radar-explanation" data-radar-explanation="${escapeHtml(caseItem.id)}">Wähle eine Achse, um ihre Bedeutung zu sehen.</p>
-            ${renderRadarTable(caseItem)}
-          </section>
-
-          <section class="network-panel" aria-labelledby="network-${escapeHtml(caseItem.id)}">
-            <h4 id="network-${escapeHtml(caseItem.id)}">Wirkungsnetz</h4>
-            <p class="formula-note">Die Visualisierung zeigt Wirkungspotenziale. Sie ersetzt keinen Faktencheck und keine juristische Bewertung.</p>
-            ${renderNetwork(caseItem)}
-          </section>
-        </div>
-      </article>
+      <div class="impact-path" aria-label="Wirkungspfad ${escapeHtml(item.title)}">
+        ${pathSteps(item)
+          .map(
+            ([label, text], index) => `
+              <article class="impact-path-step">
+                <span>${String(index + 1).padStart(2, "0")}</span>
+                <p class="box-kicker">${escapeHtml(label)}</p>
+                <h3>${escapeHtml(text)}</h3>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
     `;
   }
 
-  function renderOverallNetwork() {
+  function nodePosition(index, total, radius, centerX, centerY, start = -Math.PI / 2) {
+    const angle = start + (Math.PI * 2 * index) / Math.max(total, 1);
+    return {
+      x: centerX + Math.cos(angle) * radius,
+      y: centerY + Math.sin(angle) * radius
+    };
+  }
+
+  function renderNetwork(item) {
+    const nodes = item.network?.nodes || [];
+    const edges = item.network?.edges || [];
+    const center = nodes.find((node) => node.type === "narrative") || nodes[0];
+    const ringNodes = nodes.filter((node) => node.id !== center?.id);
+    const positions = new Map();
+    const cx = 420;
+    const cy = 260;
+    positions.set(center.id, { x: cx, y: cy });
+    ringNodes.forEach((node, index) => {
+      const radius = node.type === "woek" || node.type === "counterframe" ? 245 : 190;
+      positions.set(node.id, nodePosition(index, ringNodes.length, radius, cx, cy));
+    });
+
+    const labelById = new Map(nodes.map((node) => [node.id, node.label]));
+    const typeById = new Map(nodes.map((node) => [node.id, node.type]));
+
     return `
-      <section class="narrative-overlap" aria-labelledby="overall-network-title">
-        <p class="hero-kicker">Gesamtansicht</p>
-        <h3 id="overall-network-title">Wie die Narrative zusammenhängen</h3>
-        <p>Die Begriffe wirken nicht getrennt. Sie teilen Resonanzräume und können gemeinsam ein Feld aus Misstrauen, Kontrolle, Vereinfachung und demokratischer Erschöpfung verstärken.</p>
-        <div class="overall-network">
-          ${state.cases.map((caseItem) => `<div class="overall-node">${escapeHtml(caseItem.short_title)}</div>`).join("")}
+      <div class="network-mode">
+        <div class="network-svg-wrap">
+          <svg class="impact-network-svg" viewBox="0 0 840 520" role="img" aria-label="Kuratiertes Wirkungsnetz für ${escapeHtml(item.title)}">
+            <defs>
+              <marker id="arrow-${escapeHtml(item.id)}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              </marker>
+            </defs>
+            <circle class="network-ring ring-one" cx="${cx}" cy="${cy}" r="190"></circle>
+            <circle class="network-ring ring-two" cx="${cx}" cy="${cy}" r="245"></circle>
+            ${edges
+              .map((edge, index) => {
+                const source = positions.get(edge.source);
+                const target = positions.get(edge.target);
+                if (!source || !target) return "";
+                const mx = (source.x + target.x) / 2;
+                const my = (source.y + target.y) / 2;
+                return `
+                  <g class="network-edge" data-edge="${index}">
+                    <line x1="${source.x}" y1="${source.y}" x2="${target.x}" y2="${target.y}" marker-end="url(#arrow-${escapeHtml(item.id)})"></line>
+                    <text x="${mx}" y="${my}" text-anchor="middle">${escapeHtml(edge.verb)}</text>
+                  </g>
+                `;
+              })
+              .join("")}
+            ${nodes
+              .map((node) => {
+                const point = positions.get(node.id);
+                return `
+                  <g class="network-node-svg ${escapeHtml(node.type)}" data-node-svg="${escapeHtml(node.id)}" transform="translate(${point.x} ${point.y})">
+                    <rect x="-78" y="-28" width="156" height="56" rx="18"></rect>
+                    <text text-anchor="middle">${svgLabel(node.label)}</text>
+                  </g>
+                `;
+              })
+              .join("")}
+          </svg>
         </div>
-        <div class="overall-shared">
-          ${sharedNodes.map((node) => `<span>${escapeHtml(node)}</span>`).join("")}
+        <div class="network-path-list">
+          ${edges
+            .map(
+              (edge) => `
+                <button type="button" data-path-edge="${escapeHtml(edge.source)}:${escapeHtml(edge.target)}">
+                  <strong>${escapeHtml(labelById.get(edge.source))}</strong>
+                  <span>${escapeHtml(edge.verb)}</span>
+                  <strong>${escapeHtml(labelById.get(edge.target))}</strong>
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+        <div class="network-node-legend" aria-label="Knotentypen">
+          ${Object.entries(typeLabels)
+            .filter(([key]) => nodes.some((node) => node.type === key))
+            .map(([key, label]) => `<span class="${escapeHtml(key)}">${escapeHtml(label)}</span>`)
+            .join("")}
+        </div>
+        <p class="narrative-note">Auf Mobile wird das Netz zusätzlich als lesbarer Wirkungspfad dargestellt. Die Visualisierung ersetzt keinen Faktencheck und keine juristische Bewertung.</p>
+      </div>
+    `;
+  }
+
+  function renderCounterframe(item) {
+    return `
+      <div class="counterframe-grid">
+        <article class="analysis-box">
+          <p class="box-kicker">Was der Frame sichtbar macht</p>
+          ${list(item.perception_shift.visible)}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Was der Frame verdeckt</p>
+          ${list(item.perception_shift.hidden)}
+        </article>
+        <article class="woek-question-box">
+          <p class="box-kicker">Gegenframe</p>
+          <h3>${escapeHtml(item.counterframe)}</h3>
+        </article>
+      </div>
+    `;
+  }
+
+  function renderSource(item) {
+    return `
+      <div class="analysis-box source-box">
+        <p class="box-kicker">Quelle und redaktionelle Grenze</p>
+        <blockquote>${escapeHtml(item.source.excerpt)}</blockquote>
+        <p>Quelle: <a class="text-link" href="${escapeHtml(item.source.url)}" rel="noopener noreferrer">${escapeHtml(item.source.title)}</a></p>
+        <p>Abrufdatum: ${escapeHtml(item.source.retrieved_at)}</p>
+        <p>${escapeHtml(item.source.context)}</p>
+        <p>Diese Seite analysiert Wirkungspotenziale. Sie behauptet keine Absicht, ersetzt keinen Faktencheck und trifft keine juristische Bewertung.</p>
+      </div>
+    `;
+  }
+
+  function renderFocus() {
+    const item = getActiveCase();
+    if (!item) return "";
+    const tabs = [
+      ["analyse", "Analyse"],
+      ["radar", "Radar"],
+      ["pfad", "Wirkungspfad"],
+      ["netz", "Wirkungsnetz"],
+      ["gegenframe", "Gegenframe"],
+      ["quelle", "Quelle"]
+    ];
+    const tabContent = {
+      analyse: renderAnalysis(item),
+      radar: renderRadarPanel(item),
+      pfad: renderPath(item),
+      netz: renderNetwork(item),
+      gegenframe: renderCounterframe(item),
+      quelle: renderSource(item)
+    }[state.activeTab];
+
+    return `
+      <section class="narrative-focus" id="${escapeHtml(slugAnchor(item))}" aria-labelledby="focus-title">
+        <div class="narrative-focus-head">
+          <div>
+            <p class="hero-kicker">${escapeHtml(item.cluster)} · Pilotanalyse</p>
+            <h2 id="focus-title">${escapeHtml(item.title)}</h2>
+            <p>${escapeHtml(item.short_thesis)}</p>
+          </div>
+          <a class="btn btn-secondary" href="#narrative-overview">Zur Übersicht</a>
+        </div>
+        <div class="narrative-tabs" role="tablist" aria-label="Analyseansichten">
+          ${tabs
+            .map(
+              ([key, label]) => `
+                <button type="button" role="tab" data-tab="${escapeHtml(key)}" aria-selected="${key === state.activeTab ? "true" : "false"}" class="${key === state.activeTab ? "is-active" : ""}">
+                  ${escapeHtml(label)}
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+        <div class="narrative-tab-panel" role="tabpanel">
+          ${tabContent}
         </div>
       </section>
     `;
   }
 
-  function getDetailAnchor(caseItem) {
-    const map = {
-      altparteien: "detail-altparteien",
-      "angst-vor-afd-wahlsieg": "detail-angst-wahlsieg",
-      "illegale-masseneinwanderung": "detail-masseneinwanderung",
-      "planwirtschaftliche-energiewende": "detail-energiewende",
-      "kehrtwende-180-grad": "detail-kehrtwende"
-    };
-    return map[caseItem.id] || `detail-${caseItem.id}`;
+  function renderOverallNetwork() {
+    const shared = [
+      "Misstrauen",
+      "Angst",
+      "Kontrolle",
+      "Schuld",
+      "Volk / Wir",
+      "Feindbild",
+      "Institutionen",
+      "Medien",
+      "Wahrheit",
+      "Demokratie",
+      "Rechtsstaat",
+      "Klimapolitik",
+      "Migration",
+      "Vielfalt",
+      "Energie",
+      "Freiheit"
+    ];
+    return `
+      <section class="overall-network-panel" aria-labelledby="overall-network-title">
+        <p class="hero-kicker">Gesamt-Wirkungsnetz</p>
+        <h2 id="overall-network-title">Wie die Narrative zusammenwirken</h2>
+        <p>Die Begriffe stehen nicht isoliert nebeneinander. Sie teilen Resonanzräume und bilden gemeinsam ein Feld aus Misstrauen, Kontrolle, Schuld, Feindbild und Wahrheitskonflikt.</p>
+        <div class="overall-web" aria-label="Gemeinsames Resonanzfeld">
+          <div class="overall-web-center">gemeinsames Resonanzfeld</div>
+          ${shared
+            .map((node, index) => {
+              const angle = -Math.PI / 2 + (Math.PI * 2 * index) / shared.length;
+              const x = 50 + Math.cos(angle) * 38;
+              const y = 50 + Math.sin(angle) * 40;
+              return `<span style="--x:${x.toFixed(1)}%; --y:${y.toFixed(1)}%;">${escapeHtml(node)}</span>`;
+            })
+            .join("")}
+        </div>
+        <div class="overall-clusters">
+          <article><h3>Institutionen</h3><p>Altparteien, Altparteiendiktatur und Medienframes verdichten Misstrauen gegen Verfahren, Konkurrenz und Kontrolle.</p></article>
+          <article><h3>Migration</h3><p>Massenmigration und Remigration verbinden Identität, Sicherheit und Ausschluss zu einer Ordnungserzählung.</p></article>
+          <article><h3>Klima</h3><p>Energiewende- und Klimadiktaturframes rahmen Risikosteuerung als Freiheitsverlust.</p></article>
+          <article><h3>Kulturkampf</h3><p>Genderismus-Frames koppeln Schutz von Kindern an Abwertung von Vielfalt.</p></article>
+        </div>
+      </section>
+    `;
   }
 
-  function setActiveCase(id, shouldScroll = false) {
+  function renderCompare() {
+    const options = state.cases.map((item) => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.title)}</option>`).join("");
+    const a = state.cases.find((item) => item.id === state.compareA) || state.cases[0];
+    const b = state.cases.find((item) => item.id === state.compareB) || state.cases[1] || state.cases[0];
+    const common = a && b ? a.resonance_spaces.filter((space) => b.resonance_spaces.includes(space)) : [];
+    return `
+      <section class="compare-panel" aria-labelledby="compare-title">
+        <p class="hero-kicker">Vergleichsmodus</p>
+        <h2 id="compare-title">Zwei Narrative vergleichen</h2>
+        <div class="compare-controls">
+          <label>Erstes Narrativ<select data-compare="a">${options}</select></label>
+          <label>Zweites Narrativ<select data-compare="b">${options}</select></label>
+        </div>
+        <div class="compare-result">
+          <div>${a ? renderRadar(a, true) : ""}<strong>${escapeHtml(a?.title || "")}</strong></div>
+          <div>${b ? renderRadar(b, true) : ""}<strong>${escapeHtml(b?.title || "")}</strong></div>
+          <article>
+            <p class="box-kicker">Gemeinsame Resonanzräume</p>
+            <p>${common.length ? escapeHtml(common.join(", ")) : "Keine identischen Resonanzräume in der Pilotstruktur."}</p>
+          </article>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderApp() {
+    const filtered =
+      state.activeFilter === "Alle" ? state.cases : state.cases.filter((item) => item.cluster === state.activeFilter);
+    root.innerHTML = `
+      <div class="narrative-lab">
+        <div class="narrative-controls" id="narrative-overview">
+          <div>
+            <p class="hero-kicker">Interaktive Analyseumgebung</p>
+            <h2>Zehn Narrative, ein gemeinsames Wirkungsfeld</h2>
+            <p class="card-text">Filtere die Begriffe, öffne eine Analyse und wechsle zwischen Radar, Wirkungspfad, Wirkungsnetz, Gegenframe und Quelle.</p>
+          </div>
+          ${renderFilters()}
+        </div>
+        <div class="narrative-interactive-grid">
+          ${filtered.map(renderCard).join("")}
+        </div>
+        ${renderFocus()}
+        ${renderOverallNetwork()}
+        ${renderCompare()}
+        <section class="method-limit-box">
+          <p class="hero-kicker">Methodische Grenze</p>
+          <h2>Wirkungsanalyse ersetzt keine Wahrheitsprüfung.</h2>
+          <p>Sie zeigt, welche Resonanzräume Sprache öffnet. Sie behauptet keine Absicht, bewertet keine Zulässigkeit und ersetzt keine juristische Prüfung.</p>
+        </section>
+      </div>
+    `;
+    bindInteractions();
+  }
+
+  function setActive(id, pushHash = false) {
+    if (!state.cases.some((item) => item.id === id)) return;
     state.activeId = id;
-    root.querySelectorAll("[data-case-card]").forEach((card) => {
-      card.classList.toggle("is-active", card.getAttribute("data-case-card") === id);
-    });
-    const select = root.querySelector("[data-narrative-select]");
-    if (select instanceof HTMLSelectElement) {
-      select.value = id;
+    if (pushHash) {
+      const item = getActiveCase();
+      history.replaceState(null, "", `#${slugAnchor(item)}`);
     }
-    if (shouldScroll) {
-      const caseItem = state.cases.find((item) => item.id === id);
-      const anchor = caseItem ? getDetailAnchor(caseItem) : `detail-${id}`;
-      document.querySelector(`#${CSS.escape(anchor)}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    renderApp();
+    if (pushHash) {
+      document.getElementById(slugAnchor(getActiveCase()))?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 
   function bindInteractions() {
-    root.querySelectorAll("[data-case-card]").forEach((card) => {
-      card.addEventListener("click", () => setActiveCase(card.getAttribute("data-case-card"), true));
+    root.querySelectorAll("[data-case-card]").forEach((button) => {
+      button.addEventListener("click", () => setActive(button.getAttribute("data-case-card"), true));
     });
-    root.querySelector("[data-narrative-select]")?.addEventListener("change", (event) => {
-      if (event.target instanceof HTMLSelectElement) {
-        setActiveCase(event.target.value, true);
-      }
+    root.querySelectorAll("[data-filter]").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.activeFilter = button.getAttribute("data-filter");
+        renderApp();
+      });
     });
-    root.querySelectorAll("[data-radar-axis]").forEach((button) => {
-      const showAxis = () => {
-        const [caseId, axis] = button.getAttribute("data-radar-axis").split(":");
-        const caseItem = state.cases.find((item) => item.id === caseId);
-        const target = root.querySelector(`[data-radar-explanation="${CSS.escape(caseId)}"]`);
-        if (caseItem && target) {
-          target.textContent = `${axis}: ${caseItem.radar_explanations[axis]}`;
-        }
+    root.querySelectorAll("[data-tab]").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.activeTab = button.getAttribute("data-tab");
+        renderApp();
+      });
+    });
+    root.querySelectorAll("[data-axis]").forEach((button) => {
+      const show = () => {
+        const target = root.querySelector("[data-axis-explanation]");
+        if (target) target.textContent = `${button.textContent}: ${button.getAttribute("data-axis-text")}`;
       };
-      button.addEventListener("click", showAxis);
-      button.addEventListener("mouseenter", showAxis);
-      button.addEventListener("focus", showAxis);
+      button.addEventListener("click", show);
+      button.addEventListener("focus", show);
+      button.addEventListener("mouseenter", show);
     });
-    root.querySelectorAll("[data-network-node]").forEach((button) => {
-      const showNode = () => {
-        const [caseId, nodeId] = button.getAttribute("data-network-node").split(":");
-        const caseItem = state.cases.find((item) => item.id === caseId);
-        const node = caseItem?.network_nodes.find((item) => item.id === nodeId);
-        const target = root.querySelector(`[data-network-explanation="${CSS.escape(caseId)}"]`);
-        if (!node || !target) return;
-        root.querySelectorAll(`[data-network-node^="${CSS.escape(caseId)}:"]`).forEach((item) => item.classList.remove("is-active"));
-        button.classList.add("is-active");
-        target.innerHTML = `
-          <h4>${escapeHtml(node.label)}</h4>
-          <p>${escapeHtml(node.explanation)}</p>
-          <p><strong>Ausgeblendete Systemfrage:</strong> ${escapeHtml(node.system_question)}</p>
-          <p><strong>WÖk-Gegenfrage:</strong> ${escapeHtml(node.woek_question)}</p>
-        `;
-      };
-      button.addEventListener("click", showNode);
-      button.addEventListener("focus", showNode);
+    root.querySelectorAll("[data-compare]").forEach((select) => {
+      if (select.getAttribute("data-compare") === "a") select.value = state.compareA;
+      if (select.getAttribute("data-compare") === "b") select.value = state.compareB;
+      select.addEventListener("change", () => {
+        if (select.getAttribute("data-compare") === "a") state.compareA = select.value;
+        if (select.getAttribute("data-compare") === "b") state.compareB = select.value;
+        renderApp();
+      });
     });
   }
 
-  function render() {
-    root.innerHTML = `
-      <div class="narrative-lab">
-        <div class="narrative-controls">
-          <div>
-            <p class="hero-kicker">Interaktive Vergleichsstruktur</p>
-            <h2>Fünf Narrative, ein gemeinsames Wirkungsfeld</h2>
-            <p class="card-text">Wähle ein Narrativ aus oder öffne eine Karte. Radar, Wirkungsnetz und Gegenfrage zeigen, welche Resonanzräume sichtbar werden.</p>
-          </div>
-          <label>Narrativ auswählen
-            <select data-narrative-select>
-              ${state.cases.map((caseItem) => `<option value="${escapeHtml(caseItem.id)}">${escapeHtml(caseItem.title)}</option>`).join("")}
-            </select>
-          </label>
-        </div>
-
-        <div class="narrative-interactive-grid">
-          ${state.cases.map(renderCaseCard).join("")}
-        </div>
-
-        <div class="narrative-detail-interactive">
-          ${state.cases.map(renderDetail).join("")}
-        </div>
-
-        ${renderOverallNetwork()}
-      </div>
-    `;
-    bindInteractions();
-    setActiveCase(state.cases[0]?.id || null);
+  function initFromHash() {
+    const hash = window.location.hash.replace("#", "");
+    const matched = state.cases.find((item) => slugAnchor(item) === hash);
+    state.activeId = matched?.id || state.cases[0]?.id || null;
+    state.compareA = state.cases[0]?.id || null;
+    state.compareB = state.cases[1]?.id || state.cases[0]?.id || null;
   }
 
   async function init() {
@@ -391,13 +625,22 @@
       const dataUrl = new URL("../data/narrative-cases.json", scriptUrl).href;
       const response = await fetch(dataUrl);
       state.cases = await response.json();
-      render();
+      initFromHash();
+      renderApp();
+      window.addEventListener("hashchange", () => {
+        const hash = window.location.hash.replace("#", "");
+        const matched = state.cases.find((item) => slugAnchor(item) === hash);
+        if (matched) {
+          state.activeId = matched.id;
+          renderApp();
+        }
+      });
     } catch (error) {
       root.innerHTML = `
         <article class="card">
           <p class="card-kicker">Hinweis</p>
           <h2>Die interaktive Analyse konnte nicht geladen werden.</h2>
-          <p>Die Seite bleibt inhaltlich nutzbar. Bitte versuche es später erneut.</p>
+          <p>Die statischen Kurzanalysen bleiben unterhalb des Moduls lesbar.</p>
         </article>
       `;
     }
