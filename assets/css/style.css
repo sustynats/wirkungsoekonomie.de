@@ -1444,6 +1444,24 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.comparison-grid .card {
+  align-content: start;
+}
+
+.comparison-grid ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
 .editorial-feature-card {
   display: flex;
   min-height: 100%;

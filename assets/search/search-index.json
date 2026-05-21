@@ -136,17 +136,17 @@
   },
   {
     "id": "glossar",
-    "title": "Glossar der Wirkungsökonomie",
-    "description": "Zentrale Begriffe wie Wirkung, Wirkungspotenzial, WÖk-ID, Scorecard, NWI, Reverse Merit Order, T-SROI, Wirkungsrat und Wirkungssteuer.",
+    "title": "Glossar der Wirkungsökonomie: Wirkung verstehen",
+    "description": "Zentrale Begriffe wie Wirkung, Handlung, Output, Outcome, Wirkungspotenzial, Wirkungsmanagement, Wirkungsarchitektur, WÖk-ID, Scorecard, NWI, Reverse Merit Order, T-SROI, Wirkungsrat und Wirkungssteuer.",
     "url": "/glossar.html",
     "section": "Glossar",
     "type": "Glossarbegriff",
     "format": "Glossarbegriff",
     "impactSpaces": ["Mensch + Planet + Demokratie"],
     "standards": ["SDG", "SDG+", "GRI", "CSRD", "ESRS"],
-    "instruments": ["Wirkung", "Wirkungspotenzial", "Scorecard", "Netto-Wirkungs-Index / NWI", "Reverse Merit Order", "T-SROI", "Wirkungsrat"],
-    "tags": ["Begriffe", "Definitionen", "Abkürzungen", "Leseschlüssel"],
-    "aliases": ["Lexikon", "Definition", "Begriff", "NWI", "TSROI", "WÖk-ID"],
+    "instruments": ["Wirkung", "Wirkungspotenzial", "Wirkungsmanagement", "Wirkungsarchitektur", "Scorecard", "Netto-Wirkungs-Index / NWI", "Reverse Merit Order", "T-SROI", "Wirkungsrat"],
+    "tags": ["Begriffe", "Definitionen", "Abkürzungen", "Leseschlüssel", "Output", "Outcome", "Kausalität", "Fördercontrolling"],
+    "aliases": ["Lexikon", "Definition", "Begriff", "NWI", "TSROI", "WÖk-ID", "Wirkung verstehen", "Wirkungsmanagement", "Wirkungsarchitektur", "Output", "Outcome", "Kausalität und Zurechnung"],
     "priority": 95
   },
   {
@@ -358,6 +358,21 @@
     "tags": ["Dossier", "Medien", "Demokratie", "Öffentlichkeit", "Plattformen", "Narrative"],
     "aliases": ["Medien und Demokratie", "Öffentlichkeit", "Diskursqualität"],
     "priority": 86
+  },
+  {
+    "id": "blog-wenn-alle-von-wirkung-sprechen",
+    "title": "Wenn alle von Wirkung sprechen: Warum Förderpolitik mehr braucht als Wirkungsmanagement",
+    "description": "Wirkung ist nicht Handlung, nicht Output und nicht Bericht. Warum Förderpolitik eine echte Wirkungsarchitektur braucht.",
+    "url": "/blog/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.html",
+    "section": "Blog",
+    "type": "Blogartikel",
+    "format": "Blogartikel",
+    "impactSpaces": ["Mensch + Planet + Demokratie"],
+    "standards": [],
+    "instruments": ["Wirkung", "Wirkungsmanagement", "Wirkungsarchitektur", "Wirkungspotenzial", "Netto-Wirkung", "Reverse Merit Order"],
+    "tags": ["Wirkung", "Wirkungsmanagement", "Förderpolitik", "Förderprogramme", "Wirkungsökonomie", "Kausalität", "Systemsteuerung"],
+    "aliases": ["Wirkung ist nicht Wirkungsmanagement", "Förderdschungel", "Fördercontrolling", "Wirkung ist nicht Output", "Wirkung ist nicht Bericht", "Wirkungsrhetorik", "Wirkungssimulation"],
+    "priority": 91
   },
   {
     "id": "blog-wirkungspotenzial-fakten",
