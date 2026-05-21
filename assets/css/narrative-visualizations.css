@@ -2,6 +2,42 @@
   display: none;
 }
 
+.narrative-page,
+.narrative-page .section > *,
+.narrative-page [data-narrative-app],
+.narrative-lab,
+.narrative-controls,
+.narrative-focus,
+.overall-network-panel,
+.compare-panel,
+.method-limit-box,
+.narrative-interactive-grid,
+.narrative-case-card,
+.narrative-tab-panel,
+.narrative-analysis-grid,
+.radar-layout,
+.counterframe-grid,
+.network-mode,
+.network-svg-wrap,
+.compare-result,
+.overall-clusters {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.narrative-page h1,
+.narrative-page h2,
+.narrative-page h3,
+.narrative-page p,
+.narrative-page a,
+.narrative-page li,
+.narrative-page blockquote,
+.narrative-page button,
+.narrative-page th,
+.narrative-page td {
+  overflow-wrap: anywhere;
+}
+
 .narrative-lab {
   display: grid;
   gap: clamp(1.25rem, 3vw, 2.25rem);
@@ -49,6 +85,7 @@
 .narrative-tabs button,
 .radar-axis-buttons button,
 .network-path-list button {
+  max-width: 100%;
   min-height: 44px;
   border: 1px solid rgba(47, 125, 92, 0.24);
   border-radius: 999px;
@@ -57,6 +94,7 @@
   font: inherit;
   font-size: 0.86rem;
   font-weight: 850;
+  white-space: normal;
   cursor: pointer;
 }
 
@@ -81,7 +119,7 @@
 
 .narrative-interactive-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr));
   gap: 1rem;
 }
 
@@ -89,6 +127,7 @@
   display: grid;
   gap: 0.78rem;
   align-content: start;
+  width: 100%;
   min-height: 100%;
   padding: 1rem;
   border: 1px solid rgba(11, 16, 32, 0.13);
@@ -168,6 +207,7 @@
 
 .narrative-chip-list li,
 .narrative-list li {
+  max-width: 100%;
   padding: 0.25rem 0.5rem;
   border-radius: 999px;
   background: rgba(47, 125, 92, 0.08);
@@ -186,6 +226,7 @@
 .radar-svg {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   overflow: visible;
 }
@@ -409,6 +450,7 @@
 .impact-network-svg {
   display: block;
   width: 100%;
+  max-width: 100%;
   min-height: 360px;
 }
 
@@ -503,33 +545,24 @@
 }
 
 .overall-web {
-  position: relative;
-  min-height: 34rem;
+  display: grid;
+  gap: 1rem;
   margin-block: 1.1rem;
+  padding: clamp(0.8rem, 2vw, 1.2rem);
   border: 1px solid rgba(11, 16, 32, 0.1);
   border-radius: var(--radius);
   background:
     radial-gradient(circle at 50% 50%, rgba(47, 125, 92, 0.12), transparent 34%),
     rgba(255, 255, 255, 0.62);
+  overflow: hidden;
 }
 
 .overall-web::before,
 .overall-web::after {
-  content: "";
-  position: absolute;
-  inset: 16%;
-  border: 1px solid rgba(47, 125, 92, 0.18);
-  border-radius: 999px;
-}
-
-.overall-web::after {
-  inset: 27%;
+  display: none;
 }
 
 .overall-web-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   display: grid;
   place-items: center;
   width: 12rem;
@@ -541,14 +574,10 @@
   color: var(--navy);
   font-weight: 900;
   text-align: center;
-  transform: translate(-50%, -50%);
 }
 
 .overall-web span {
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  transform: translate(-50%, -50%);
+  position: static;
 }
 
 .overall-clusters article,
@@ -602,8 +631,24 @@
 }
 
 @media (max-width: 720px) {
+  .narrative-page {
+    overflow-x: clip;
+  }
+
+  .narrative-lab {
+    gap: 1rem;
+  }
+
+  .narrative-controls,
+  .narrative-focus,
+  .overall-network-panel,
+  .compare-panel,
+  .method-limit-box {
+    padding: 0.95rem;
+  }
+
   .narrative-interactive-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .narrative-controls h2,
@@ -611,21 +656,72 @@
   .overall-network-panel h2,
   .compare-panel h2,
   .method-limit-box h2 {
-    font-size: clamp(1.85rem, 11vw, 2.75rem);
+    font-size: clamp(1.65rem, 10vw, 2.35rem);
+    line-height: 1.02;
   }
 
   .narrative-filterbar,
   .narrative-tabs,
   .radar-axis-buttons {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.2rem;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding-bottom: 0;
   }
 
   .narrative-filterbar button,
   .narrative-tabs button,
   .radar-axis-buttons button {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
+    justify-content: center;
+    min-width: min(100%, 7.5rem);
+    padding-inline: 0.6rem;
+    line-height: 1.25;
+  }
+
+  .narrative-case-card {
+    gap: 0.68rem;
+    padding: 0.95rem;
+  }
+
+  .narrative-case-card h3 {
+    font-size: clamp(1.22rem, 7vw, 1.55rem);
+  }
+
+  .narrative-chip-list,
+  .network-node-legend {
+    gap: 0.32rem;
+  }
+
+  .narrative-chip-list li,
+  .narrative-list li,
+  .network-node-legend span,
+  .overall-web span {
+    font-size: 0.74rem;
+    line-height: 1.28;
+  }
+
+  .source-box blockquote {
+    font-size: clamp(1.06rem, 6vw, 1.35rem);
+  }
+
+  .mini-radar {
+    max-width: min(100%, 178px);
+  }
+
+  .radar-svg {
+    max-width: min(100%, 420px);
+  }
+
+  .radar-legend {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .radar-table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .impact-network-svg {
@@ -637,11 +733,9 @@
   }
 
   .overall-web {
-    display: flex;
-    min-height: 0;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    padding: 7rem 0.85rem 0.85rem;
+    display: grid;
+    gap: 0.75rem;
+    padding: 0.75rem;
   }
 
   .overall-web::before,
@@ -655,8 +749,48 @@
   }
 
   .overall-web-center {
-    top: 0.9rem;
-    transform: translateX(-50%);
+    width: 100%;
+    min-height: 3.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .narrative-controls,
+  .narrative-focus,
+  .overall-network-panel,
+  .compare-panel,
+  .method-limit-box,
+  .analysis-box,
+  .woek-question-box,
+  .impact-path-step {
+    padding-inline: 0.82rem;
+  }
+
+  .narrative-controls h2,
+  .narrative-focus h2,
+  .overall-network-panel h2,
+  .compare-panel h2,
+  .method-limit-box h2 {
+    font-size: clamp(1.55rem, 9vw, 2.05rem);
+  }
+
+  .narrative-filterbar button,
+  .narrative-tabs button,
+  .radar-axis-buttons button {
+    flex-basis: 100%;
+  }
+
+  .impact-path-step {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .impact-path-step span,
+  .impact-path-step h3 {
+    grid-column: 1;
+  }
+
+  .impact-path-step::after {
+    left: 1.85rem;
   }
 }
 
