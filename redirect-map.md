@@ -34,7 +34,7 @@ Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassend
 
 https://wirkungsoekonomie.de/blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html
 Status: prüfen
-Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms.
+Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Wirkung statt Weltbild - eine wirkungsökonomische Analyse des AfD-Regierungsprogramms.
 
 https://wirkungsoekonomie.de/blog/wirkung-statt-weltbild-afd-regierungsprogramm.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html
 Status: prüfen
@@ -50,7 +50,7 @@ Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassend
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html
 Status: prüfen
-Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Die Wirkungsökonomie – Warum wir ein neues Gesellschaftsmodell brauchen.
+Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Die Wirkungsökonomie - Warum wir ein neues Gesellschaftsmodell brauchen.
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html
 Status: prüfen
@@ -62,11 +62,11 @@ Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassend
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html
 Status: prüfen
-Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Wenn Maschinen arbeiten – warum die Wirkungsökonomie keine Angst vor KI hat.
+Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Wenn Maschinen arbeiten - warum die Wirkungsökonomie keine Angst vor KI hat.
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.html -> https://wirkungsoekonomie.de/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html
 Status: prüfen
-Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Die Wirkungsökonomie – Warum wir Wirtschaft, Politik und Gesellschaft neu denken müssen.
+Begründung: Thematische Überschneidung; die Zielseite ist aktueller, umfassender oder bereits als kanonischer Schwerpunkt besser geeignet. Titel: Die Wirkungsökonomie - Warum wir Wirtschaft, Politik und Gesellschaft neu denken müssen.
 
 ## Archiv Behalten
 
@@ -82,7 +82,7 @@ Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertv
 
 https://wirkungsoekonomie.de/blog/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.html -> -
 Status: behalten
-Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Das Integritäts-Paradoxon – Warum Fakten uns nicht mehr retten..
+Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Das Integritäts-Paradoxon - Warum Fakten uns nicht mehr retten..
 
 https://wirkungsoekonomie.de/blog/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.html -> -
 Status: behalten
@@ -102,7 +102,7 @@ Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertv
 
 https://wirkungsoekonomie.de/blog/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.html -> -
 Status: behalten
-Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Wie setzt man die Wirkungsökonomie um – ohne das System zu überfordern?.
+Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Wie setzt man die Wirkungsökonomie um - ohne das System zu überfordern?.
 
 https://wirkungsoekonomie.de/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html -> -
 Status: behalten
@@ -114,11 +114,11 @@ Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertv
 
 https://wirkungsoekonomie.de/blog/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.html -> -
 Status: behalten
-Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Millionen Seiten – und trotzdem keine Verantwortung.
+Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Millionen Seiten - und trotzdem keine Verantwortung.
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.html -> -
 Status: behalten
-Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Die Grenzen der Zukunftsforschung – und ihr blinder Fleck.
+Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Die Grenzen der Zukunftsforschung - und ihr blinder Fleck.
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.html -> -
 Status: behalten
@@ -126,7 +126,7 @@ Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertv
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.html -> -
 Status: behalten
-Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Warum die freie Marktwirtschaft sich selbst zerstört – und wie sie zu retten ist.
+Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertvoll, aber primär im Archiv führen. Titel: Warum die freie Marktwirtschaft sich selbst zerstört - und wie sie zu retten ist.
 
 https://wirkungsoekonomie.de/blog/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.html -> -
 Status: behalten
