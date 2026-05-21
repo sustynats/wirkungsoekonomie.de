@@ -494,6 +494,44 @@ h4 {
   margin-top: 2rem;
 }
 
+.hero-audio {
+  width: min(100%, 620px);
+  margin-top: 1.6rem;
+  padding: 1rem;
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.audio-label {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.hero-audio audio {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+}
+
+.audio-transcript {
+  margin-top: 0.85rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.audio-transcript summary {
+  cursor: pointer;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.audio-transcript p {
+  margin: 0.75rem 0 0;
+}
+
 .hero-system-visual {
   width: min(100%, var(--container-wide));
   margin: clamp(2.5rem, 6vw, 5rem) auto 0;
