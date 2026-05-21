@@ -111,6 +111,34 @@
       "aliases": ["Methodik", "Datenbasis", "Wirkungsdaten", "Quellenregister", "Mapping-Register", "Indikator-Mapping", "Bewertungslogik", "Datenqualität", "Benchmark", "Archetypen"],
       "related": ["CSRD", "ESRS", "GRI", "SDG", "SDG+", "Scorecard", "NWI", "WÖk-ID", "Wirkungssteuer", "Von Daten zum Steuersatz"],
       "entrypoint": "methodik-datenbasis"
+    },
+    {
+      "key": "daten-standards-regularien",
+      "label": "Daten, Standards und Regularien",
+      "aliases": ["Datenstandards", "Regularien", "Welche Daten und Standards dahinterstehen", "Daten und Standards", "Berichtsdaten", "Steuerungsdaten", "Produktdaten", "Lieferkettendaten", "Wirkungsdaten", "Datenqualität"],
+      "related": ["CSRD", "ESRS", "GRI", "SDG", "SDG+", "EU-Taxonomie", "NACE", "Digitaler Produktpass", "DPP", "CSDDD", "ESPR", "EPD", "LCA", "GHG Protocol"],
+      "entrypoint": "methodik-daten-standards-regularien"
+    },
+    {
+      "key": "regularien",
+      "label": "Regularien und Standards",
+      "aliases": ["EU Regularien", "EU-Standards", "Nachhaltigkeitsregularien", "Sorgfaltspflichten", "Berichtspflichten"],
+      "related": ["CSRD", "ESRS", "EU-Taxonomie", "CSDDD", "ESPR", "DPP"],
+      "entrypoint": "methodik-daten-standards-regularien"
+    },
+    {
+      "key": "produktdaten",
+      "label": "Produktdaten",
+      "aliases": ["Digitaler Produktpass", "DPP", "EPD", "LCA", "Produktpass", "Produktdatenbasis"],
+      "related": ["DPP", "ESPR", "EPD", "LCA", "Scorecard", "Wirkungssteuer"],
+      "entrypoint": "methodik-daten-standards-regularien"
+    },
+    {
+      "key": "lieferkettendaten",
+      "label": "Lieferkettendaten",
+      "aliases": ["Lieferkette", "Wertschöpfungskette", "CSDDD", "ILO", "Arbeitsrechte"],
+      "related": ["CSDDD", "ILO", "ESRS S2", "Menschenrechte", "Produktwirkung"],
+      "entrypoint": "methodik-daten-standards-regularien"
     }
   ],
   "typos": {
@@ -121,6 +149,10 @@
     "netto wirkung": "Netto-Wirkungs-Index",
     "produktpass": "Digitaler Produktpass",
     "datenbasis": "Datenbasis und Methodik",
-    "wirkungsdaten": "Datenbasis und Methodik"
+    "wirkungsdaten": "Daten, Standards und Regularien",
+    "eu taxonomie": "EU-Taxonomie",
+    "digitaler produktpass": "Digitaler Produktpass",
+    "produkt daten": "Produktdaten",
+    "lieferketten daten": "Lieferkettendaten"
   }
 }
