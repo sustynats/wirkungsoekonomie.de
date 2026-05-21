@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sdg",
+    "name": "Sustainable Development Goals",
+    "type": "globaler Zielrahmen",
+    "official_url": "https://sdgs.un.org/goals",
+    "version": "Agenda 2030",
+    "description": "Weltweit anerkannter Zielrahmen für nachhaltige Entwicklung.",
+    "relevant_for": ["Mensch", "Planet", "Wirkungsfelder", "Zielrichtung"],
+    "notes": "Die WÖk nutzt die SDGs als Orientierungsrahmen, nicht als vollständige Bewertungslogik."
+  },
+  {
+    "id": "sdg-plus",
+    "name": "SDG+",
+    "type": "WÖk-Erweiterung",
+    "official_url": "https://wirkungsoekonomie.de/sdg-plus/medien-demokratie.html",
+    "version": "WÖk-Arbeitsstand 2026",
+    "description": "Ergänzende Wirkungsfelder für Demokratie, Medienqualität, Rechtsstaatlichkeit und Diskursfähigkeit.",
+    "relevant_for": ["Demokratie", "Medien", "Vertrauen", "Resonanzräume"],
+    "notes": "SDG+ ergänzt die SDGs dort, wo demokratische Wirkungsräume genauer beschrieben werden müssen."
+  },
+  {
+    "id": "csrd",
+    "name": "Corporate Sustainability Reporting Directive",
+    "type": "EU-Berichtspflicht",
+    "official_url": "https://eur-lex.europa.eu/eli/dir/2022/2464/oj",
+    "version": "Richtlinie 2022/2464",
+    "description": "Europäische Nachhaltigkeitsberichtspflicht für Unternehmensdaten.",
+    "relevant_for": ["Reporting", "Unternehmen", "Datenqualität"],
+    "notes": "Berichtsdaten können in WÖk-Indikatoren übersetzt werden."
+  },
+  {
+    "id": "esrs",
+    "name": "European Sustainability Reporting Standards",
+    "type": "EU-Berichtsstandards",
+    "official_url": "https://eur-lex.europa.eu/eli/reg_del/2023/2772/oj",
+    "version": "Delegierte Verordnung 2023/2772",
+    "description": "Europäische Standards für Nachhaltigkeitsangaben.",
+    "relevant_for": ["Klima", "Umwelt", "Soziales", "Governance", "Scorecards"],
+    "notes": "Die WÖk nutzt ESRS-Felder als mögliche Datenreferenz und Zuordnungshilfe."
+  },
+  {
+    "id": "gri",
+    "name": "Global Reporting Initiative Standards",
+    "type": "Reportingstandard",
+    "official_url": "https://www.globalreporting.org/standards/",
+    "version": "laufend aktualisiert",
+    "description": "International etablierte Standards für Nachhaltigkeitsberichterstattung.",
+    "relevant_for": ["Emissionen", "Arbeit", "Menschenrechte", "Gemeinschaften", "Governance"],
+    "notes": "Keine GRI-Texte spiegeln. Nur offizielle GRI-Quellen referenzieren."
+  },
+  {
+    "id": "eu-taxonomy",
+    "name": "EU-Taxonomie",
+    "type": "Klassifikationssystem",
+    "official_url": "https://eur-lex.europa.eu/eli/reg/2020/852/oj",
+    "version": "Verordnung 2020/852",
+    "description": "Rahmen für ökologisch nachhaltige Wirtschaftstätigkeiten.",
+    "relevant_for": ["Planet", "Mindestbedingungen", "Benchmarks"],
+    "notes": "Hilfreich für ökologische Schwellen und Mindestbedingungen."
+  },
+  {
+    "id": "nace",
+    "name": "NACE",
+    "type": "Wirtschaftsklassifikation",
+    "official_url": "https://ec.europa.eu/eurostat/web/nace",
+    "version": "NACE Rev. 2 / Aktualisierungen",
+    "description": "Europäische Klassifikation wirtschaftlicher Aktivitäten.",
+    "relevant_for": ["Branchen", "Benchmarks", "Archetypen"],
+    "notes": "Dient als Branchenreferenz für Vergleichsgruppen."
+  },
+  {
+    "id": "dpp",
+    "name": "Digitaler Produktpass",
+    "type": "Produktdateninfrastruktur",
+    "official_url": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj",
+    "version": "ESPR 2024/1781",
+    "description": "Produktbezogene Daten zu Material, Haltbarkeit, Reparierbarkeit, Kreislauf und Herkunft.",
+    "relevant_for": ["Produkte", "Scorecards", "Wirkungssteuer"],
+    "notes": "Bindeglied zwischen Produktdaten und Rückkopplung."
+  },
+  {
+    "id": "ilo",
+    "name": "International Labour Organization",
+    "type": "Arbeits- und Sozialdaten",
+    "official_url": "https://ilostat.ilo.org/",
+    "version": "laufend",
+    "description": "Arbeitsmarkt-, Beschäftigungs- und Arbeitsrechtsdaten.",
+    "relevant_for": ["Mensch", "Arbeit", "Fairness", "Menschenrechte"],
+    "notes": "Referenz für Arbeitsindikatoren und soziale Risiken."
+  },
+  {
+    "id": "who",
+    "name": "World Health Organization Data",
+    "type": "Gesundheitsdaten",
+    "official_url": "https://www.who.int/data",
+    "version": "laufend",
+    "description": "Gesundheitsdaten, Risikofaktoren und Indikatoren.",
+    "relevant_for": ["Mensch", "Gesundheit", "Sicherheit"],
+    "notes": "Referenz für Gesundheits- und Sicherheitswirkungen."
+  },
+  {
+    "id": "ipcc",
+    "name": "Intergovernmental Panel on Climate Change",
+    "type": "wissenschaftliche Klimabasis",
+    "official_url": "https://www.ipcc.ch/reports/",
+    "version": "Assessment Reports",
+    "description": "Wissenschaftliche Grundlagen zu Klimawandel, Emissionen, Risiken und Szenarien.",
+    "relevant_for": ["Planet", "Klima", "Schwellenwerte", "Risiken"],
+    "notes": "Referenz für Klimarisiken und Plausibilisierung."
+  },
+  {
+    "id": "ipbes",
+    "name": "Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services",
+    "type": "wissenschaftliche Biodiversitätsbasis",
+    "official_url": "https://www.ipbes.net/assessments",
+    "version": "Assessment Reports",
+    "description": "Wissenschaftliche Grundlagen zu Biodiversität, Ökosystemen und Naturbeiträgen.",
+    "relevant_for": ["Planet", "Biodiversität", "Ökosysteme"],
+    "notes": "Referenz für Natur- und Biodiversitätswirkungen."
+  }
+]

@@ -104,6 +104,13 @@
       "aliases": ["DPP", "Produktpass", "digital product passport", "Produktdaten"],
       "related": ["Lieferkettendaten", "Produktwirkung", "Scorecard", "Von Daten zum Steuersatz"],
       "entrypoint": "workflow"
+    },
+    {
+      "key": "datenbasis",
+      "label": "Datenbasis und Methodik",
+      "aliases": ["Methodik", "Datenbasis", "Wirkungsdaten", "Quellenregister", "Mapping-Register", "Indikator-Mapping", "Bewertungslogik", "Datenqualität", "Benchmark", "Archetypen"],
+      "related": ["CSRD", "ESRS", "GRI", "SDG", "SDG+", "Scorecard", "NWI", "WÖk-ID", "Wirkungssteuer", "Von Daten zum Steuersatz"],
+      "entrypoint": "methodik-datenbasis"
     }
   ],
   "typos": {
@@ -112,6 +119,8 @@
     "woek": "WÖk",
     "tsroi": "T-SROI",
     "netto wirkung": "Netto-Wirkungs-Index",
-    "produktpass": "Digitaler Produktpass"
+    "produktpass": "Digitaler Produktpass",
+    "datenbasis": "Datenbasis und Methodik",
+    "wirkungsdaten": "Datenbasis und Methodik"
   }
 }

@@ -1705,6 +1705,170 @@ textarea {
   text-decoration: none;
 }
 
+.methodik-hero {
+  min-height: auto;
+}
+
+.methodik-hero .hero-grid {
+  display: block;
+}
+
+.method-filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(11, 16, 32, 0.08);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.method-filter-bar label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.method-filter-bar select {
+  width: 100%;
+  min-height: 2.6rem;
+  border: 1px solid rgba(11, 16, 32, 0.16);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--navy);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.method-table {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(170px, 1fr) minmax(190px, 1.15fr) minmax(190px, 1.2fr) minmax(135px, 0.78fr) minmax(120px, 0.72fr);
+  border: 1px solid rgba(11, 16, 32, 0.10);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.method-table.compact {
+  grid-template-columns: minmax(150px, 1fr) minmax(160px, 1fr) minmax(150px, 0.85fr) minmax(140px, 0.8fr) minmax(130px, 0.75fr) minmax(150px, 0.95fr);
+}
+
+.method-table > div[role="columnheader"] {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.12);
+  background: rgba(246, 241, 232, 0.72);
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.method-table > article[role="row"] {
+  display: contents;
+}
+
+.method-table > article[role="row"] > * {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.08);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.method-table > article[role="row"] > strong {
+  color: var(--navy);
+  font-family: var(--font-display);
+  font-size: 1.03rem;
+}
+
+.method-table > article[role="row"]:last-child > * {
+  border-bottom: 0;
+}
+
+.method-table > article[hidden] {
+  display: none;
+}
+
+.method-chain {
+  margin-top: 1rem;
+}
+
+.method-indicator-card {
+  max-width: 860px;
+}
+
+.method-definition-list {
+  display: grid;
+  gap: 0;
+  margin: 1rem 0;
+  border: 1px solid rgba(11, 16, 32, 0.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.method-definition-list div {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.42fr) minmax(0, 1fr);
+}
+
+.method-definition-list dt,
+.method-definition-list dd {
+  margin: 0;
+  padding: 0.72rem 0.85rem;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.08);
+}
+
+.method-definition-list dt {
+  background: rgba(246, 241, 232, 0.62);
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.method-definition-list dd {
+  color: var(--muted);
+}
+
+.method-definition-list div:last-child dt,
+.method-definition-list div:last-child dd {
+  border-bottom: 0;
+}
+
+.method-quality-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.method-quality-grid article {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 1px solid rgba(11, 16, 32, 0.08);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.60);
+}
+
+.method-quality-grid strong {
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 0.95;
+}
+
+.method-quality-grid span {
+  color: var(--muted);
+}
+
 .placeholder,
 .compass-panel,
 .portrait {
@@ -4301,6 +4465,41 @@ textarea {
     right: 50%;
     bottom: -0.55rem;
     transform: translateX(50%) rotate(135deg);
+  }
+
+  .method-filter-bar,
+  .method-quality-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .method-table,
+  .method-table.compact {
+    display: block;
+    overflow: visible;
+  }
+
+  .method-table > div[role="columnheader"] {
+    display: none;
+  }
+
+  .method-table > article[role="row"] {
+    display: grid;
+    gap: 0.35rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(11, 16, 32, 0.10);
+  }
+
+  .method-table > article[role="row"] > * {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .method-definition-list div {
+    grid-template-columns: 1fr;
+  }
+
+  .method-definition-list dt {
+    border-bottom: 0;
   }
 }
 
