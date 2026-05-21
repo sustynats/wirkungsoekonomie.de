@@ -7,18 +7,70 @@
 
   document.documentElement.classList.add("narrative-js");
 
-  const axisDefs = [
-    ["angst", "Angst", "Bedrohungsframes verstärken das Gefühl, dass Sicherheit und Kontrolle verloren gehen."],
-    ["wut", "Wut", "Schuldzuweisungen emotionalisieren Konflikte und erhöhen Empörungsenergie."],
-    ["misstrauen", "Misstrauen", "Wenn Ursachen auf Gegner reduziert werden, sinkt Vertrauen in Institutionen, Medien und Verfahren."],
-    ["feindbild", "Feindbild", "Kollektive Zuschreibungen markieren Gruppen oder politische Gegner als Problem."],
-    ["kontrollsehnsucht", "Kontrollsehnsucht", "Starke Kontrollversprechen werden anschlussfähig, wenn Unsicherheit dominiert."],
-    ["vereinfachung", "Vereinfachung", "Komplexe Ursachen werden auf eine scheinbar eindeutige Erklärung reduziert."],
-    ["autoritarismuspotenzial", "Autoritarismuspotenzial", "Einfache Ordnung wird gegen komplexe demokratische Verfahren gestellt."],
-    ["diskursverengung", "Diskursverengung", "Die Debatte verengt sich, wenn Bedrohung, Abwehr oder Schuld im Vordergrund stehen."],
-    ["demokratierisiko", "Demokratierisiko", "Demokratische Stabilität leidet, wenn Vertrauen, Kompromissfähigkeit und Minderheitenschutz geschwächt werden."],
-    ["entsolidarisierung", "Entsolidarisierung", "Wenn Gruppen gegeneinander gestellt werden, sinkt die Bereitschaft zu gemeinsamen Lösungen."]
+  const radarAxisDefinitions = [
+    {
+      id: "angst",
+      label: "Angst",
+      shortLabel: "Angst",
+      description: "Bedrohungsframes aktivieren Unsicherheit, Abwehr oder Kontrollverlust."
+    },
+    {
+      id: "wut",
+      label: "Wut",
+      shortLabel: "Wut",
+      description: "Schuldzuweisungen verstärken Empörung und politische Erregung."
+    },
+    {
+      id: "misstrauen",
+      label: "Misstrauen",
+      shortLabel: "Misstrauen",
+      description: "Das Narrativ schwächt Vertrauen in Institutionen, Verfahren oder demokratische Akteure."
+    },
+    {
+      id: "feindbild",
+      label: "Feindbild",
+      shortLabel: "Feindbild",
+      description: "Gruppen, Institutionen oder politische Gegner werden als Problem oder Bedrohung markiert."
+    },
+    {
+      id: "kontrollsehnsucht",
+      label: "Kontrollsehnsucht",
+      shortLabel: "Kontrolle",
+      description: "Das Narrativ verstärkt das Bedürfnis nach einfachen, harten oder eindeutigen Lösungen."
+    },
+    {
+      id: "vereinfachung",
+      label: "Vereinfachung",
+      shortLabel: "Vereinfachung",
+      description: "Komplexe Ursachen werden auf scheinbar eindeutige Erklärungen reduziert."
+    },
+    {
+      id: "autoritarismuspotenzial",
+      label: "Autoritarismuspotenzial",
+      shortLabel: "Autoritarismus",
+      description: "Die Anschlussfähigkeit für Ordnung, Durchsetzung und Kontrolle steigt gegenüber demokratischer Aushandlung."
+    },
+    {
+      id: "diskursverengung",
+      label: "Diskursverengung",
+      shortLabel: "Diskurs",
+      description: "Der Debattenraum wird enger, weil Bedrohung, Schuld oder Abwehr dominieren."
+    },
+    {
+      id: "demokratierisiko",
+      label: "Demokratierisiko",
+      shortLabel: "Demokratie",
+      description: "Vertrauen, Minderheitenschutz, Kompromissfähigkeit oder institutionelle Stabilität werden geschwächt."
+    },
+    {
+      id: "entsolidarisierung",
+      label: "Entsolidarisierung",
+      shortLabel: "Entsolidarisierung",
+      description: "Gemeinsame Verantwortung wird geschwächt, weil Gruppen gegeneinander gestellt werden."
+    }
   ];
+
+  const radarAxisById = Object.fromEntries(radarAxisDefinitions.map((axis) => [axis.id, axis]));
 
   const typeLabels = {
     narrative: "Narrativ",
@@ -73,7 +125,7 @@
   }
 
   function polar(index, value, radius, center = 125) {
-    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / axisDefs.length;
+    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / radarAxisDefinitions.length;
     const scaled = (value / 5) * radius;
     return {
       x: center + Math.cos(angle) * scaled,
@@ -82,7 +134,7 @@
   }
 
   function gridPoints(value, radius, center = 125) {
-    return axisDefs
+    return radarAxisDefinitions
       .map((_, index) => {
         const point = polar(index, value, radius, center);
         return `${point.x.toFixed(1)},${point.y.toFixed(1)}`;
@@ -90,81 +142,140 @@
       .join(" ");
   }
 
-  function renderRadar(item, mini = false) {
+  function radarValue(item, axisId) {
+    const value = Number(item.radar?.[axisId] || 0);
+    return Number.isFinite(value) ? Math.max(0, Math.min(5, value)) : 0;
+  }
+
+  function strongestAxes(item, limit = 3) {
+    return radarAxisDefinitions
+      .map((axis, index) => ({ ...axis, value: radarValue(item, axis.id), order: index }))
+      .filter((axis) => axis.value > 0)
+      .sort((a, b) => b.value - a.value || a.order - b.order)
+      .slice(0, limit);
+  }
+
+  function renderStrongestAxes(item) {
+    const axes = strongestAxes(item, 3);
+    if (!axes.length) return "";
+    return `<p class="mini-radar-strongest"><span>Stärkste Ausschläge:</span> ${axes
+      .map((axis) => escapeHtml(axis.shortLabel))
+      .join(" · ")}</p>`;
+  }
+
+  function renderRadar(item, options = {}) {
+    const mini = typeof options === "boolean" ? options : Boolean(options.mini);
     const radius = mini ? 72 : 88;
     const center = 125;
     const size = 250;
-    const values = item.radar || {};
-    const points = axisDefs
-      .map(([key], index) => {
-        const point = polar(index, values[key] || 0, radius, center);
+    const points = radarAxisDefinitions
+      .map((axis, index) => {
+        const point = polar(index, radarValue(item, axis.id), radius, center);
         return `${point.x.toFixed(1)},${point.y.toFixed(1)}`;
       })
       .join(" ");
     const labels = mini
       ? ""
-      : axisDefs
-          .map(([key, label], index) => {
+      : radarAxisDefinitions
+          .map((axis, index) => {
             const point = polar(index, 5.9, radius, center);
             const anchor = point.x < center - 8 ? "end" : point.x > center + 8 ? "start" : "middle";
-            return `<text class="radar-label" x="${point.x.toFixed(1)}" y="${point.y.toFixed(1)}" text-anchor="${anchor}" data-axis-label="${escapeHtml(key)}">${escapeHtml(label)}</text>`;
+            return `
+              <g class="radar-axis-label-hit" tabindex="0" role="button" data-axis="${escapeHtml(axis.id)}" data-axis-value="${radarValue(item, axis.id)}" aria-label="${escapeHtml(axis.label)}: Wert ${radarValue(item, axis.id)} von 5. ${escapeHtml(axis.description)}">
+                <text class="radar-label" x="${point.x.toFixed(1)}" y="${point.y.toFixed(1)}" text-anchor="${anchor}" data-axis-label="${escapeHtml(axis.id)}">${escapeHtml(axis.shortLabel)}</text>
+                <title>${escapeHtml(axis.label)}: ${radarValue(item, axis.id)} von 5. ${escapeHtml(axis.description)}</title>
+              </g>
+            `;
           })
           .join("");
 
     return `
-      <svg class="${mini ? "mini-radar" : "radar-svg"}" viewBox="0 0 ${size} ${size}" role="img" aria-label="Wirkungsradar für ${escapeHtml(item.title)}">
+      <svg class="${mini ? "mini-radar" : "radar-svg"}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${mini ? "Resonanzprofil" : "Wirkungsradar"} für ${escapeHtml(item.title)}. Skala 0 innen bis 5 außen. Außen bedeutet stärker ausgeprägtes Wirkungspotenzial, nicht besser.">
+        <title>${mini ? "Resonanzprofil" : "Wirkungsradar"} für ${escapeHtml(item.title)}: 0 innen, 5 außen. Außen bedeutet stärker, nicht besser.</title>
         <polygon class="radar-grid" points="${gridPoints(1, radius, center)}"></polygon>
         <polygon class="radar-grid" points="${gridPoints(3, radius, center)}"></polygon>
         <polygon class="radar-grid radar-grid-outer" points="${gridPoints(5, radius, center)}"></polygon>
-        ${axisDefs
-          .map(([, ,], index) => {
+        ${radarAxisDefinitions
+          .map((axis, index) => {
             const end = polar(index, 5, radius, center);
-            return `<line class="radar-axis-line" x1="${center}" y1="${center}" x2="${end.x.toFixed(1)}" y2="${end.y.toFixed(1)}"></line>`;
+            return `<line class="radar-axis-line" x1="${center}" y1="${center}" x2="${end.x.toFixed(1)}" y2="${end.y.toFixed(1)}"><title>${escapeHtml(axis.label)}: ${escapeHtml(axis.description)}</title></line>`;
           })
           .join("")}
         <polygon class="radar-shape" points="${points}"></polygon>
-        ${axisDefs
-          .map(([key], index) => {
-            const point = polar(index, values[key] || 0, radius, center);
-            return `<circle class="radar-point" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="${mini ? 3 : 4.2}"></circle>`;
+        ${radarAxisDefinitions
+          .map((axis, index) => {
+            const value = radarValue(item, axis.id);
+            const point = polar(index, value, radius, center);
+            if (mini) {
+              return `<circle class="radar-point" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="3"><title>${escapeHtml(axis.label)}: ${value} von 5. ${escapeHtml(axis.description)}</title></circle>`;
+            }
+            return `
+              <circle class="radar-point radar-hit" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="4.4" tabindex="0" role="button" data-axis="${escapeHtml(axis.id)}" data-axis-value="${value}" aria-label="${escapeHtml(axis.label)}: Wert ${value} von 5. ${escapeHtml(axis.description)}">
+                <title>${escapeHtml(axis.label)}: ${value} von 5. ${escapeHtml(axis.description)}</title>
+              </circle>
+            `;
           })
           .join("")}
         ${labels}
-        ${mini ? "" : '<text class="radar-scale" x="125" y="40" text-anchor="middle">5</text><text class="radar-scale" x="125" y="72" text-anchor="middle">3</text><text class="radar-scale" x="125" y="106" text-anchor="middle">1</text>'}
+        ${mini ? "" : '<text class="radar-scale" x="125" y="40" text-anchor="middle">5</text><text class="radar-scale" x="125" y="72" text-anchor="middle">3</text><text class="radar-scale" x="125" y="106" text-anchor="middle">1</text><text class="radar-scale radar-scale-zero" x="125" y="128" text-anchor="middle">0</text>'}
       </svg>
     `;
   }
 
-  function renderRadarPanel(item) {
-    const values = item.radar || {};
+  function renderMiniRadarBlock(item) {
     return `
-      <div class="radar-layout">
+      <div class="mini-radar-block" aria-label="Resonanzprofil ${escapeHtml(item.title)}">
+        <span class="mini-radar-title">Resonanzprofil</span>
+        ${renderRadar(item, { mini: true })}
+        <span class="mini-radar-caption">0 innen · 5 außen</span>
+        <span class="mini-radar-caption">Außen = stärker, nicht besser</span>
+        ${renderStrongestAxes(item)}
+      </div>
+    `;
+  }
+
+  function renderRadarPanel(item) {
+    return `
+      <div class="radar-layout radar-panel">
         <div>
-          <h3>Wirkungsradar: ${escapeHtml(item.title)}</h3>
-          <p class="narrative-note">Die Werte zeigen eine wirkungsanalytische Einordnung. Sie bewerten nicht Wahrheit oder Zulässigkeit einer Aussage, sondern die Resonanzräume, die durch Sprache geöffnet werden.</p>
+          <h3>Wirkungsradar</h3>
+          <p class="radar-subtitle">Welche Resonanzräume werden durch dieses Narrativ besonders stark aktiviert?</p>
+          <p class="narrative-note">Dieses Radar bewertet nicht, ob eine Aussage wahr oder falsch ist. Es zeigt, welche Wirkungspotenziale die Formulierung im demokratischen Resonanzraum aktiviert.</p>
           ${renderRadar(item)}
-          <div class="radar-legend" aria-label="Legende"><span>0 niedrig</span><span>3 deutlich</span><span>5 sehr stark</span></div>
-          <div class="radar-axis-buttons">
-            ${axisDefs.map(([key, label, text]) => `<button type="button" data-axis="${escapeHtml(key)}" data-axis-text="${escapeHtml(text)}">${escapeHtml(label)}</button>`).join("")}
+          <div class="radar-legend" aria-label="Legende">
+            <span>0 innen · 5 außen</span>
+            <span>Außen bedeutet nicht besser, sondern stärker ausgeprägtes Wirkungspotenzial.</span>
           </div>
-          <p class="radar-explanation" data-axis-explanation>Tippe oder fokussiere eine Achse, um ihre Wirkung zu lesen.</p>
-        </div>
-        <table class="radar-table">
-          <thead><tr><th>Achse</th><th>Wert</th><th>Erklärung</th></tr></thead>
-          <tbody>
-            ${axisDefs
+          <p class="radar-scale-note">Skala: 0 = nicht ausgeprägt · 5 = sehr stark ausgeprägt.</p>
+          <div class="radar-axis-buttons">
+            ${radarAxisDefinitions
               .map(
-                ([key, label, text]) => `
-                  <tr>
-                    <td>${escapeHtml(label)}</td>
-                    <td><strong>${values[key] || 0} / 5</strong></td>
-                    <td>${escapeHtml(text)}</td>
-                  </tr>
-                `
+                (axis) =>
+                  `<button type="button" data-axis="${escapeHtml(axis.id)}" data-axis-value="${radarValue(item, axis.id)}">${escapeHtml(axis.shortLabel)}</button>`
               )
               .join("")}
-          </tbody>
-        </table>
+          </div>
+          <p class="radar-explanation" data-axis-explanation>Tippe, fokussiere oder fahre über eine Achse, um Wert und Bedeutung zu lesen.</p>
+        </div>
+        <details class="radar-values-details">
+          <summary>Radarwerte erklären</summary>
+          <table class="radar-table">
+            <thead><tr><th>Achse</th><th>Wert</th><th>Bedeutung</th></tr></thead>
+            <tbody>
+              ${radarAxisDefinitions
+                .map(
+                  (axis) => `
+                    <tr>
+                      <td>${escapeHtml(axis.label)}</td>
+                      <td><strong>${radarValue(item, axis.id)} / 5</strong></td>
+                      <td>${escapeHtml(axis.description)}</td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </details>
       </div>
     `;
   }
@@ -197,7 +308,7 @@
         <h3>${escapeHtml(item.title)}</h3>
         <p>${escapeHtml(item.short_thesis)}</p>
         ${list(item.mechanisms.slice(0, 3))}
-        ${renderRadar(item, true)}
+        ${renderMiniRadarBlock(item)}
         <span class="narrative-card-action">Analyse ansehen</span>
       </button>
     `;
@@ -592,8 +703,8 @@
           <label>Zweites Narrativ<select data-compare="b">${options}</select></label>
         </div>
         <div class="compare-result">
-          <div>${a ? renderRadar(a, true) : ""}<strong>${escapeHtml(a?.title || "")}</strong></div>
-          <div>${b ? renderRadar(b, true) : ""}<strong>${escapeHtml(b?.title || "")}</strong></div>
+          <div>${a ? renderMiniRadarBlock(a) : ""}<strong>${escapeHtml(a?.title || "")}</strong></div>
+          <div>${b ? renderMiniRadarBlock(b) : ""}<strong>${escapeHtml(b?.title || "")}</strong></div>
           <article>
             <p class="box-kicker">Gemeinsame Resonanzräume</p>
             <p>${common.length ? escapeHtml(common.join(", ")) : "Keine identischen Resonanzräume in der Pilotstruktur."}</p>
@@ -613,6 +724,10 @@
             <p class="hero-kicker">Interaktive Analyseumgebung</p>
             <h2>Zehn Narrative, ein gemeinsames Wirkungsfeld</h2>
             <p class="card-text">Filtere die Begriffe, öffne eine Analyse und wechsle zwischen Radar, Wirkungspfad, Wirkungsnetz, Gegenframe und Quelle.</p>
+            <div class="radar-reading-note">
+              <h3>Wie das Radar zu lesen ist</h3>
+              <p>Die Radare zeigen keine Wahrheitsskala und kein Qualitätsurteil. Sie zeigen, welche Resonanzräume ein Begriff oder Narrativ öffnet. Je weiter außen ein Punkt liegt, desto stärker ist das jeweilige Wirkungspotenzial ausgeprägt. Außen bedeutet also nicht besser, sondern stärker.</p>
+            </div>
           </div>
           ${renderFilters()}
         </div>
@@ -663,8 +778,12 @@
     });
     root.querySelectorAll("[data-axis]").forEach((button) => {
       const show = () => {
-        const target = root.querySelector("[data-axis-explanation]");
-        if (target) target.textContent = `${button.textContent}: ${button.getAttribute("data-axis-text")}`;
+        const axis = radarAxisById[button.getAttribute("data-axis")];
+        const value = button.getAttribute("data-axis-value");
+        const target = button.closest(".radar-panel")?.querySelector("[data-axis-explanation]");
+        if (target && axis) {
+          target.textContent = `${axis.label}: Wert ${value || 0} von 5. ${axis.description}`;
+        }
       };
       button.addEventListener("click", show);
       button.addEventListener("focus", show);
