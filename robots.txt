@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
+Disallow: /docs/
+Disallow: /assets/visuals/rejected/
+Disallow: /assets/visuals/archive/
+Disallow: /quellen/
+Disallow: /blog/linkedin/
+Disallow: /templates/
+Disallow: /content/
+Disallow: /fuer/wirkungssteuer.html
 
 Sitemap: https://wirkungsoekonomie.de/sitemap.xml
