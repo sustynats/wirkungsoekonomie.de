@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "status": "published",
+    "last_updated": "2026-05-22",
+    "draft_exclusion_rule": "Nur Inhalte mit status published oder explicitly_approved_for_compass dürfen gerendert werden."
+  },
+  "questions": [
+    {
+      "id": "bio-apfel-guenstiger",
+      "question": "Warum wäre ein Bio-Apfel in der WÖk günstiger?",
+      "aliases": [
+        "Warum ist ein Bio-Apfel günstiger?",
+        "Apfel Wirkungssteuer",
+        "Bio Apfel Wirkung",
+        "regionaler Bio-Apfel"
+      ],
+      "mode": "Analysieren",
+      "topic": "Produkte & Preise",
+      "answer_template_id": "bio-apfel-guenstiger",
+      "impact_path_id": "bio-apfel-guenstiger",
+      "related_knowledge_cards": [
+        "apfelbeispiel",
+        "wirkungssteuer",
+        "woek-id",
+        "scorecard",
+        "reverse-merit-order"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "desinformation-wirkung",
+      "question": "Wie wirkt Desinformation?",
+      "aliases": [
+        "Desinformation Wirkung",
+        "Was ist das Wirkungspotenzial von Desinformation?",
+        "Wie wirken Fake News?",
+        "Desinformation Demokratie"
+      ],
+      "mode": "Analysieren",
+      "topic": "Medien & Sprache",
+      "answer_template_id": "desinformation-wirkung",
+      "impact_path_id": "desinformation-wirkung",
+      "related_knowledge_cards": [
+        "sdg-plus",
+        "medien-demokratie",
+        "wirkungspotenzial",
+        "resonanzraum"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "woek-vs-esg",
+      "question": "Was unterscheidet WÖk von ESG?",
+      "aliases": [
+        "Warum reicht ESG nicht aus?",
+        "WÖk ESG Unterschied",
+        "ESG Vergleich Wirkungsökonomie"
+      ],
+      "mode": "Einordnen",
+      "topic": "Wirtschaft & Kapital",
+      "answer_template_id": "woek-vs-esg",
+      "impact_path_id": "woek-vs-esg",
+      "related_knowledge_cards": [
+        "vergleich",
+        "csrd-esrs-gri",
+        "wirkungsrueckkopplung"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "wirkung-bedeutung",
+      "question": "Was bedeutet Wirkung?",
+      "aliases": [
+        "Ist Wirkung immer positiv?",
+        "Was ist Wirkung?",
+        "Wirkung einfach erklärt"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "wirkung-bedeutung",
+      "impact_path_id": "wirkung-grundlogik",
+      "related_knowledge_cards": [
+        "glossar-wirkung",
+        "begriffsleitfaden",
+        "wirkungspotenzial"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "positive-netto-wirkung",
+      "question": "Was ist positive Netto-Wirkung?",
+      "aliases": [
+        "Netto-Wirkung",
+        "positive Wirkung",
+        "Zielgröße WÖk"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "positive-netto-wirkung",
+      "impact_path_id": "netto-wirkung",
+      "related_knowledge_cards": [
+        "netto-wirkung",
+        "scorecard",
+        "sdg-plus"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "wirkungsrueckkopplung",
+      "question": "Was bedeutet Wirkungsrückkopplung?",
+      "aliases": [
+        "Rückkopplung Wirkung",
+        "Wie wirkt Bewertung zurück?",
+        "Wirkungslenkung"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "wirkungsrueckkopplung",
+      "impact_path_id": "produkt-rueckkopplung",
+      "related_knowledge_cards": [
+        "wirkungssteuer",
+        "wirkungslenkung",
+        "wirkungsarchitektur"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "woek-id",
+      "question": "Was ist eine WÖk-ID?",
+      "aliases": [
+        "WÖk-ID erklären",
+        "Wirkungs-ID",
+        "Produktdaten ID"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "woek-id",
+      "impact_path_id": "produkt-rueckkopplung",
+      "related_knowledge_cards": [
+        "woek-id",
+        "scorecard",
+        "dpp"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "scorecard-steuerklasse",
+      "question": "Wie wird aus einer Scorecard eine Steuerklasse?",
+      "aliases": [
+        "Scorecard Steuerklasse",
+        "Wirkungssteuer Scorecard",
+        "Wie wird aus Daten eine Steuerklasse?"
+      ],
+      "mode": "Einordnen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "scorecard-steuerklasse",
+      "impact_path_id": "produkt-rueckkopplung",
+      "related_knowledge_cards": [
+        "scorecard",
+        "nwi",
+        "reverse-merit-order",
+        "wirkungssteuer"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "gemeinwohl-vergleich",
+      "question": "Worin unterscheidet sich die WÖk von der Gemeinwohlökonomie?",
+      "aliases": [
+        "WÖk GWÖ Unterschied",
+        "Gemeinwohlökonomie Vergleich",
+        "Economy for the Common Good WÖk"
+      ],
+      "mode": "Einordnen",
+      "topic": "Wirtschaft & Kapital",
+      "answer_template_id": "gemeinwohl-vergleich",
+      "impact_path_id": "vergleich-rueckkopplung",
+      "related_knowledge_cards": [
+        "vergleich",
+        "gemeinwohlökonomie",
+        "wirkungsrueckkopplung"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "donut-vergleich",
+      "question": "Worin unterscheidet sie sich von der Donut-Ökonomie?",
+      "aliases": [
+        "WÖk Donut Unterschied",
+        "Doughnut Economics Vergleich",
+        "planetare Grenzen WÖk"
+      ],
+      "mode": "Einordnen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "donut-vergleich",
+      "impact_path_id": "vergleich-rueckkopplung",
+      "related_knowledge_cards": [
+        "vergleich",
+        "donut-oekonomie",
+        "sdg-plus"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "scanner-vorbereitung",
+      "question": "Wirkungsanalyse starten",
+      "aliases": [
+        "Produkt scannen",
+        "Aussage analysieren",
+        "Lieferkette analysieren",
+        "Scanner Modus"
+      ],
+      "mode": "Analysieren",
+      "topic": "Akademie & Lernen",
+      "answer_template_id": "scanner-vorbereitung",
+      "impact_path_id": "scanner-vorbereitung",
+      "related_knowledge_cards": [
+        "scanner",
+        "wirkungsanalyse",
+        "datenbedarf"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "woek-kein-links-gruen",
+      "question": "Warum ist die WÖk kein links-grünes Programm?",
+      "aliases": [
+        "Ist die Wirkungsökonomie links-grün?",
+        "Ist die WÖk Planwirtschaft?",
+        "WÖk Ideologie",
+        "Wirkungsökonomie Moralwirtschaft"
+      ],
+      "mode": "Einordnen",
+      "topic": "Ordnungsupdate",
+      "answer_template_id": "woek-kein-links-gruen",
+      "impact_path_id": "ordnung-kein-links-gruen",
+      "related_knowledge_cards": [
+        "ordnung",
+        "kein-links-gruenes-programm",
+        "soziale-marktwirtschaft"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "woek-soziale-marktwirtschaft",
+      "question": "Wie entwickelt die WÖk die Soziale Marktwirtschaft weiter?",
+      "aliases": [
+        "Soziale Marktwirtschaft weiterdenken",
+        "Wirkungsökonomie und Soziale Marktwirtschaft",
+        "Ordnungsupdate Marktwirtschaft"
+      ],
+      "mode": "Einordnen",
+      "topic": "Ordnungsupdate",
+      "answer_template_id": "woek-soziale-marktwirtschaft",
+      "impact_path_id": "ordnung-soziale-marktwirtschaft",
+      "related_knowledge_cards": [
+        "soziale-marktwirtschaft-weiterdenken",
+        "ordnung",
+        "vergleich"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "demokratische-parteien-wirkung",
+      "question": "Warum könnten demokratische Parteien sich auf Wirkung einigen?",
+      "aliases": [
+        "demokratische Anschlussfähigkeit",
+        "Parteien und Wirkung",
+        "Wahlprogramme Wirkung",
+        "keine Wahlempfehlung"
+      ],
+      "mode": "Einordnen",
+      "topic": "Ordnungsupdate",
+      "answer_template_id": "demokratische-parteien-wirkung",
+      "impact_path_id": "ordnung-demokratische-parteien",
+      "related_knowledge_cards": [
+        "demokratische-anschlussfaehigkeit",
+        "fuer-politik",
+        "wahlprogramm-scanner"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-unternehmen",
+      "question": "Was bedeutet die WÖk für Unternehmen?",
+      "aliases": [
+        "Unternehmen",
+        "Was bedeutet die Wirkungsökonomie für mich?",
+        "Was bedeutet die Wirkungsökonomie für Unternehmen?"
+      ],
+      "mode": "Verstehen",
+      "topic": "Für wen?",
+      "answer_template_id": "fuer-unternehmen",
+      "impact_path_id": "zielgruppe-unternehmen",
+      "related_knowledge_cards": [
+        "fuer",
+        "kompass",
+        "scanner"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-politik",
+      "question": "Was bedeutet die WÖk für Politik und Verwaltung?",
+      "aliases": [
+        "Politik",
+        "Was bedeutet die Wirkungsökonomie für mich?",
+        "Was bedeutet die Wirkungsökonomie für Politik und Verwaltung?"
+      ],
+      "mode": "Verstehen",
+      "topic": "Für wen?",
+      "answer_template_id": "fuer-politik",
+      "impact_path_id": "zielgruppe-politik",
+      "related_knowledge_cards": [
+        "fuer",
+        "kompass",
+        "scanner"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-buerger",
+      "question": "Was bedeutet die WÖk für Bürger:innen?",
+      "aliases": [
+        "Bürger:in",
+        "Was bedeutet die Wirkungsökonomie für mich?",
+        "Was bedeutet die Wirkungsökonomie für Bürger:innen?"
+      ],
+      "mode": "Verstehen",
+      "topic": "Für wen?",
+      "answer_template_id": "fuer-buergerinnen",
+      "impact_path_id": "zielgruppe-buerger",
+      "related_knowledge_cards": [
+        "fuer",
+        "kompass",
+        "scanner"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-rente-einkommen",
+      "question": "Was bedeutet die WÖk für Rente und Einkommen?",
+      "aliases": [
+        "Rente / Einkommen",
+        "Was bedeutet die Wirkungsökonomie für mich?",
+        "Was bedeutet die Wirkungsökonomie für Rente und Einkommen?"
+      ],
+      "mode": "Verstehen",
+      "topic": "Für wen?",
+      "answer_template_id": "fuer-rente-einkommen",
+      "impact_path_id": "zielgruppe-rente-einkommen",
+      "related_knowledge_cards": [
+        "fuer",
+        "kompass",
+        "scanner"
+      ],
+      "status": "published"
+    }
+  ]
+}

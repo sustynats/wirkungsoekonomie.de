@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "product_sources": [
+    {
+      "id": "open-food-facts",
+      "title": "Open Food Facts API",
+      "source_type": "open product database / API",
+      "use_for": [
+        "Lebensmittel",
+        "Zutaten",
+        "Nutri-Score",
+        "Labels",
+        "Barcode-Lookup"
+      ],
+      "access_type": "open",
+      "license_note": "API- und Datenlizenz prüfen, Quelle nennen.",
+      "woek_use": "Produktdatenquelle für Lebensmittel; liefert Teilindikatoren, keine WÖk-Bewertung.",
+      "risks": "Daten können unvollständig, nutzergeneriert oder veraltet sein.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "eprel",
+      "title": "EPREL",
+      "source_type": "EU product registry / energy labels",
+      "use_for": [
+        "energiegelabelte Produkte",
+        "Energielabel",
+        "Effizienzklasse"
+      ],
+      "access_type": "open / API prüfen",
+      "license_note": "EU-Nutzungsbedingungen prüfen.",
+      "woek_use": "Energie- und Produktdaten für Planet-Indikatoren.",
+      "risks": "Nicht alle Produktgruppen; keine Gesamtwirkung.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "gs1-gtin-digital-link",
+      "title": "GS1 / GTIN / Digital Link",
+      "source_type": "product identification standard",
+      "use_for": [
+        "Produktidentifikation",
+        "Barcode",
+        "Digital Link"
+      ],
+      "access_type": "partly open / licensed",
+      "license_note": "GS1-Lizenz- und Lookup-Bedingungen prüfen.",
+      "woek_use": "Identifikationsschicht für WÖk-ID-Mapping.",
+      "risks": "Produktdaten selbst sind nicht immer offen.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "eu-dpp-espr",
+      "title": "EU Digital Product Passport / ESPR",
+      "source_type": "EU product data infrastructure",
+      "use_for": [
+        "Produktpass",
+        "Materialdaten",
+        "Reparierbarkeit",
+        "Kreislauf"
+      ],
+      "access_type": "rolling / not broadly available",
+      "license_note": "DPP-Spezifikationen und Zugänge prüfen.",
+      "woek_use": "Perspektivische Datenbasis für WÖk-ID und Scorecard.",
+      "risks": "Noch im Aufbau, sektorspezifisch.",
+      "status": "monitor"
+    },
+    {
+      "id": "epd-databases",
+      "title": "EPD-Datenbanken",
+      "source_type": "environmental product declarations",
+      "use_for": [
+        "Bauprodukte",
+        "Materialien",
+        "LCA",
+        "Umweltwirkungen"
+      ],
+      "access_type": "open / partly open / paid",
+      "license_note": "EPD-Programm- und Datenlizenz prüfen.",
+      "woek_use": "Planet-Daten, besonders Bau/Materialien.",
+      "risks": "Scope begrenzt; keine soziale/demokratische Wirkung.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "oekobaudat",
+      "title": "ÖKOBAUDAT",
+      "source_type": "building product LCA database",
+      "use_for": [
+        "Bauprodukte",
+        "LCA",
+        "EPD",
+        "Gebäude"
+      ],
+      "access_type": "open",
+      "license_note": "Nutzungsbedingungen prüfen.",
+      "woek_use": "Bau- und Gebäudedaten für Produkt-/Gebäude-Scorecards.",
+      "risks": "Branchenspezifisch.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "probas-uba",
+      "title": "ProBas / UBA",
+      "source_type": "process and product data database",
+      "use_for": [
+        "Prozessdaten",
+        "Emissionen",
+        "Materialien"
+      ],
+      "access_type": "open",
+      "license_note": "UBA-Nutzungsbedingungen prüfen.",
+      "woek_use": "Umwelt- und Prozessdaten als Benchmark.",
+      "risks": "Datenstand und Aktualität prüfen.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "eu-ecolabel",
+      "title": "EU Ecolabel",
+      "source_type": "product label",
+      "use_for": [
+        "Umweltlabel",
+        "Produktkriterien"
+      ],
+      "access_type": "open",
+      "license_note": "Keine Logos ohne Erlaubnis übernehmen.",
+      "woek_use": "Teilindikator und Nachweisquelle.",
+      "risks": "Label ist keine Netto-Wirkung.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "blauer-engel",
+      "title": "Blauer Engel",
+      "source_type": "product label",
+      "use_for": [
+        "Umweltzeichen",
+        "Produktkriterien"
+      ],
+      "access_type": "open",
+      "license_note": "Keine Logos ohne Erlaubnis übernehmen.",
+      "woek_use": "Teilindikator und Nachweisquelle.",
+      "risks": "Label ist keine WÖk-Bewertung.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "manufacturer-reports",
+      "title": "Herstellerberichte und Produktseiten",
+      "source_type": "manufacturer data",
+      "use_for": [
+        "Produktinformationen",
+        "Nachhaltigkeitsberichte",
+        "Materialangaben"
+      ],
+      "access_type": "open / partly open",
+      "license_note": "Nur kurz paraphrasieren, Quelle nennen.",
+      "woek_use": "Datenbasis B/E je Prüfbarkeit.",
+      "risks": "Selbstauskunft, Marketing, unvollständig.",
+      "status": "prepare_mapping"
+    },
+    {
+      "id": "csrd-esrs-gri-company-data",
+      "title": "GRI / ESRS / CSRD Unternehmensdaten",
+      "source_type": "reporting data",
+      "use_for": [
+        "Unternehmensdaten",
+        "Lieferketten",
+        "Emissionen",
+        "Governance"
+      ],
+      "access_type": "open / partly open",
+      "license_note": "Berichte nicht lange reproduzieren.",
+      "woek_use": "Unternehmens- und Lieferkettendaten für Produktkontext.",
+      "risks": "Nicht immer produktbezogen.",
+      "status": "prepare_mapping"
+    }
+  ],
+  "company_sources": [
+    {
+      "id": "company-website",
+      "title": "Unternehmenswebsite",
+      "source_type": "primary public company source",
+      "use_for": [
+        "Name",
+        "Geschäftsmodell",
+        "Produkte",
+        "Standorte",
+        "Berichte"
+      ],
+      "access_type": "open / partly open",
+      "limitation": "Selbstdarstellung, nicht automatisch geprüft."
+    },
+    {
+      "id": "annual-sustainability-report",
+      "title": "Geschäfts- und Nachhaltigkeitsbericht",
+      "source_type": "company report",
+      "use_for": [
+        "Strategie",
+        "Emissionen",
+        "Soziales",
+        "Governance",
+        "Risiken"
+      ],
+      "access_type": "open / partly open",
+      "limitation": "Prüfstatus, Berichtsumfang und Aktualität prüfen."
+    },
+    {
+      "id": "csrd-esrs-report",
+      "title": "CSRD-/ESRS-Bericht",
+      "source_type": "regulated sustainability report",
+      "use_for": [
+        "ESRS-Daten",
+        "doppelte Wesentlichkeit",
+        "EU-Taxonomie",
+        "Datenqualität"
+      ],
+      "access_type": "open / ESAP future",
+      "limitation": "Rechtsstand, Scope und Assurance prüfen."
+    },
+    {
+      "id": "gri-index",
+      "title": "GRI-Index",
+      "source_type": "reporting index",
+      "use_for": [
+        "GRI-Bezug",
+        "Datenstruktur",
+        "Indikatoren"
+      ],
+      "access_type": "open / partly open",
+      "limitation": "Reporting ersetzt keine WÖk-Bewertung."
+    },
+    {
+      "id": "cdp-sbti-tnfd-ungc",
+      "title": "CDP / SBTi / TNFD / UN Global Compact",
+      "source_type": "public sustainability frameworks",
+      "use_for": [
+        "Klima",
+        "Natur",
+        "Ziele",
+        "Principles"
+      ],
+      "access_type": "open / partly open",
+      "limitation": "Nur öffentlich verfügbare Informationen verwenden."
+    },
+    {
+      "id": "public-esg-ratings",
+      "title": "Öffentliche ESG-Ratinginformationen",
+      "source_type": "private ESG data provider public info",
+      "use_for": [
+        "Marktvergleich",
+        "Risikoperspektive",
+        "Methodikabgleich"
+      ],
+      "access_type": "open / proprietary",
+      "limitation": "Keine Scores scrapen; keine Rating-Ersetzung."
+    },
+    {
+      "id": "company-registers",
+      "title": "Handelsregister / Unternehmensregister / LEI / ISIN / Ticker",
+      "source_type": "identification and registry data",
+      "use_for": [
+        "Identifikation",
+        "Rechtsform",
+        "Ticker",
+        "LEI",
+        "ISIN"
+      ],
+      "access_type": "open / paid / jurisdiction-dependent",
+      "limitation": "Nutzungsrechte und Aktualität prüfen."
+    }
+  ]
+}

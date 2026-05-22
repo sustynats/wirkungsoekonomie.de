@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "title": "Interner WÖk-Quellen-Extraktionsplan",
+    "purpose": "Quellen aus aktuellem Buchstand und älteren WÖk-Dokumenten systematisch, prüfbar und nicht automatisch veröffentlichend in das Quellenregister überführen.",
+    "governing_sources": [
+      "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "Die neue Ordnung des Wohlstands",
+      "aktuelle Website / Glossar / Methodik"
+    ],
+    "rule": "Alte Dokumente sind Rohmaterial. Quellen werden extrahiert, aktualisiert, gegen den Begriffsleitfaden geprüft und erst danach für Website, Kompass oder Scanner freigegeben.",
+    "last_updated": "2026-05-22"
+  },
+  "extraction_targets": [
+    {
+      "id": "current-book-endnotes",
+      "source_title": "Die neue Ordnung des Wohlstands",
+      "source_type": "current_book",
+      "status": "pending_extraction",
+      "extract": [
+        "Endnoten",
+        "Literaturhinweise",
+        "Kapitelbezüge",
+        "externe Quellen",
+        "interne WÖk-Bezugslinien"
+      ],
+      "mapping_required": [
+        "Buchkapitel",
+        "gestützte WÖk-Aussage",
+        "Quellentyp",
+        "Freigabe für Website",
+        "Freigabe für Akademie",
+        "Freigabe für Kompass / Scanner"
+      ]
+    },
+    {
+      "id": "legacy-woek-documents",
+      "source_title": "Ältere WÖk-Dokumente, Whitepaper, Working Papers und Präsentationen",
+      "source_type": "legacy_internal_documents",
+      "status": "inventory_created_review_pending",
+      "extract": [
+        "zitierte externe Quellen",
+        "verwendete Datenquellen",
+        "Regulierungsbezüge",
+        "Studien",
+        "Grafik- und Tabellengrundlagen"
+      ],
+      "mapping_required": [
+        "aktueller Rechtsstand",
+        "Begriffsleitfaden-Konflikte",
+        "Lizenzhinweise",
+        "öffentliche Nutzbarkeit",
+        "nur historisch / Archiv"
+      ]
+    },
+    {
+      "id": "apfel-example-sources",
+      "source_title": "Apfelbeispiel / Produktwirkungslogik",
+      "source_type": "legacy_example",
+      "status": "pending_verification",
+      "expected_sources": [
+        "Eurostat / NACE",
+        "UN SDGs",
+        "CSRD / ESRS",
+        "GRI",
+        "Produkt- und Lieferkettendaten"
+      ],
+      "mapping_required": [
+        "WÖk-ID",
+        "Scorecard",
+        "Reverse Merit Order",
+        "Produktdatenqualität",
+        "SDG-/SDG+-Bezug"
+      ]
+    },
+    {
+      "id": "wstg-wustg-sources",
+      "source_title": "WStG / WUStG Arbeitsstände",
+      "source_type": "internal_legal_model",
+      "status": "do_not_publish_without_review",
+      "extract": [
+        "Rechtsquellen",
+        "Steuerlogik-Quellen",
+        "Datenquellen",
+        "Benchmarks",
+        "Wirkungsgrenzen"
+      ],
+      "mapping_required": [
+        "freigegebener Modellstand",
+        "keine ungeprüften Steuersätze",
+        "keine finale Rechtsbehauptung",
+        "Wirkungsrat / Governance"
+      ]
+    }
+  ]
+}

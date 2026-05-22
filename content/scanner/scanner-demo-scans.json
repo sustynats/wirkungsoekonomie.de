@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "demo_scans": [
+    {
+      "id": "demo-bio-apfel-importapfel",
+      "title": "Regionaler Bio-Apfel vs. Importapfel",
+      "mode": "product-scanner",
+      "data_quality": "D/E",
+      "recognized": "zwei Lebensmittelprodukte als Vergleichshypothese",
+      "available_data": [
+        "Produktkategorie: Apfel",
+        "Annahme regional vs. importiert",
+        "mögliche Labels / Anbauweise"
+      ],
+      "missing_data": [
+        "konkreter Herkunftsort",
+        "Transportmittel",
+        "Wasserstress am Anbauort",
+        "Pestizideinsatz",
+        "Arbeitsbedingungen",
+        "Lagerung",
+        "Verpackung",
+        "Biodiversitätsdaten"
+      ],
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": [
+        "SDG 2",
+        "SDG 6",
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG 15"
+      ],
+      "path_id": "product-path",
+      "hypothesis": "Regional und bio kann positiv wirken, ist aber nicht automatisch besser. Entscheidend sind geprüfte Daten zu Anbau, Transport, Wasser, Boden, Arbeit, Lagerung und Biodiversität.",
+      "notice": "Keine finale Steuerklasse; nur Datenlücken- und Wirkungspfad-Hypothese."
+    },
+    {
+      "id": "demo-desinformation-vertrauen",
+      "title": "Desinformation und demokratisches Vertrauen",
+      "mode": "text-article-scanner",
+      "data_quality": "E",
+      "recognized": "Text- oder Aussagenmuster zu Desinformation",
+      "available_data": [
+        "Textauszug",
+        "erkennbare Frames",
+        "mögliche Zielgruppe"
+      ],
+      "missing_data": [
+        "Reichweite",
+        "Publikum",
+        "Verbreitungskanal",
+        "empirische Wirkung",
+        "Kontext",
+        "Gegenrede / Korrekturmechanismen"
+      ],
+      "impact_spaces": [
+        "Demokratie",
+        "Mensch"
+      ],
+      "sdg": [
+        "SDG+ Medienqualität",
+        "SDG+ Diskursfähigkeit",
+        "SDG 16"
+      ],
+      "path_id": "text-narrative-path",
+      "hypothesis": "Desinformation erzeugt Wirkungspotenziale: Misstrauen, Polarisierung, Feindbilder und sinkende gemeinsame Wirklichkeitsbasis.",
+      "notice": "Keine vollständige Faktenprüfung; Analyse von Wirkungspotenzialen und Resonanzrisiken."
+    },
+    {
+      "id": "demo-fast-fashion-shirt",
+      "title": "Fast-Fashion-T-Shirt",
+      "mode": "product-scanner",
+      "data_quality": "D/E",
+      "recognized": "Textilprodukt / T-Shirt",
+      "available_data": [
+        "Produktkategorie",
+        "Preis-/Marktsegment als Hinweis",
+        "mögliche Materialangabe, falls eingegeben"
+      ],
+      "missing_data": [
+        "Materialherkunft",
+        "Färbung / Chemikalien",
+        "Produktionsland",
+        "Arbeitsbedingungen",
+        "Löhne",
+        "Wasserverbrauch",
+        "Emissionen",
+        "Retouren",
+        "Nutzungsdauer",
+        "Entsorgung / Recycling"
+      ],
+      "impact_spaces": [
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": [
+        "SDG 6",
+        "SDG 8",
+        "SDG 12",
+        "SDG 13",
+        "SDG 15"
+      ],
+      "path_id": "product-path",
+      "hypothesis": "Fast Fashion kann hohe Risiken bei Arbeit, Wasser, Chemikalien, Emissionen, Retouren und kurzer Nutzungsdauer haben. Ohne konkrete Daten bleibt es eine Branchenhypothese.",
+      "notice": "Keine Produktzertifizierung; nur wirkungsökonomische Ersteinschätzung."
+    }
+  ]
+}

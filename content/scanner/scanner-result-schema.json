@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Alle Scanner-Ergebnisse sind wirkungsökonomische Ersteinschätzungen mit Quellen, Datenlage, Unsicherheit und WÖk-Gegenfrage."
+  },
+  "common_result_sections": [
+    "Was wurde erkannt?",
+    "Welche Daten liegen vor?",
+    "Welche Daten fehlen?",
+    "Welche Wirkungsräume sind betroffen?",
+    "Welche SDGs / SDG+-Dimensionen sind betroffen?",
+    "Welche Wirkungspotenziale sind sichtbar?",
+    "Welcher Wirkpfad ergibt sich?",
+    "Welche Zielkonflikte bestehen?",
+    "Welche WÖk-Gegenfrage entsteht?",
+    "Welche Quellen wurden genutzt?",
+    "Welche Unsicherheit bleibt?"
+  ],
+  "required_source_panel": {
+    "title": "Grundlage dieser Analyse",
+    "source_types": [
+      "Eingabequelle",
+      "interne WÖk-Wissensbasis",
+      "Glossar",
+      "Begriffsleitfaden",
+      "WÖk-Beispiel / Methodikseite",
+      "externe Datenquelle",
+      "Unternehmensbericht",
+      "EU-/UN-/GRI-/ESRS-/CSRD-Quelle",
+      "Datenbank / API"
+    ],
+    "per_source_fields": [
+      "source_id",
+      "title",
+      "url",
+      "what_it_provided",
+      "data_status",
+      "limitations",
+      "last_checked",
+      "copying_policy"
+    ],
+    "rule": "Nicht nur Links anzeigen. Pro Quelle kurz angeben, was sie geliefert hat, welchen Stand sie hat und welche Limitierung gilt."
+  },
+  "required_after_scan_links": [
+    "passende Wissenskarten anzeigen",
+    "Glossarbegriffe anzeigen",
+    "Im WÖk-Kompass vertiefen",
+    "Welche Daten fehlen für eine echte Bewertung?",
+    "Wirkungspfad erklären"
+  ],
+  "standard_notices": {
+    "company": "Keine finale Unternehmensbewertung. Keine Anlageberatung. Keine ESG-Rating-Ersetzung. Keine amtliche WÖk-Bewertung.",
+    "product": "Keine finale Steuerklasse. Keine Produktzertifizierung. Nur wirkungsökonomische Ersteinschätzung.",
+    "article_or_website": "Keine vollständige Faktenprüfung. Analyse von Frames, Narrativen, Wirkungspotenzialen und Resonanzräumen.",
+    "election_program": "Keine Wahlempfehlung. Keine Parteiposition. Wirkungspotenzial- und Zielkonfliktanalyse.",
+    "general": "Diese Einschätzung ersetzt kein Audit und keine amtliche Bewertung."
+  }
+}

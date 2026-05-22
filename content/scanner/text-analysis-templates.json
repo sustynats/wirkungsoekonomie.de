@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "templates": [
+    {
+      "id": "article-narrative-analysis",
+      "mode": "text-article-scanner",
+      "sections": [
+        "Erkanntes Thema",
+        "Zentrale Aussage",
+        "Frame / Narrativ",
+        "Wirkungspotenzial",
+        "Resonanzraum",
+        "SDG+-Bezug",
+        "Wirkpfad",
+        "Ausgeblendete Systemfragen",
+        "WÖk-Gegenfrage",
+        "Unsicherheit / keine Faktenprüfung",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Die Analyse zeigt Wirkungspotenziale und Resonanzrisiken, keinen empirischen Wirkungsnachweis und keine vollständige Faktenprüfung.",
+      "copyright_rule": "Keine langen Texte reproduzieren; nur kurze Auszüge und Analyse.",
+      "url_fallback": "Diese Seite kann nicht automatisch gelesen werden. Bitte füge einen kurzen Textauszug ein."
+    },
+    {
+      "id": "election-program-analysis",
+      "mode": "election-program-scanner",
+      "sections": [
+        "zentrale politische Maßnahme",
+        "behauptetes Ziel",
+        "erwartete Wirkung laut Programm",
+        "wirkungsökonomische Prüfung",
+        "relevante SDGs / SDG+",
+        "mögliche positive Wirkung",
+        "mögliche negative Wirkung",
+        "Zielkonflikte",
+        "ausgeblendete Systemfragen",
+        "Datenbedarf",
+        "WÖk-Gegenfrage",
+        "marktwirtschaftliche Anschlussfähigkeit",
+        "soziale Wirkung",
+        "ökologische Wirkung",
+        "demokratische Wirkung",
+        "fiskalische Wirkung",
+        "Nicht-Kompensation",
+        "Wirkung auf künftige Generationen",
+        "Umsetzungstiefe",
+        "Rückkopplungslogik",
+        "keine Wahlempfehlung",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Keine Wahlempfehlung. Keine Parteienbewertung nach Gesinnung. Keine Personen-Scores. Analyse nur nach Wirkungspfaden, Zielkonflikten, Datenlage, Folgekosten, Risiken und Vereinbarkeit mit Mensch, Planet und Demokratie.",
+      "url_fallback": "Diese Seite oder dieses PDF kann nicht automatisch gelesen werden. Bitte füge einen kurzen Textauszug oder Abschnitt ein."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "templates": [
+    {
+      "id": "product-hypothesis-scan",
+      "mode": "product-scanner",
+      "sections": [
+        "Produkt erkannt",
+        "Datenlage",
+        "Relevante Wirkungsräume",
+        "SDG-/SDG+-Bezug",
+        "Wirkungspfad",
+        "Erste Wirkungshypothese",
+        "Was für eine echte Bewertung fehlt?",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Diese Einschätzung basiert auf begrenzter Datenqualität und ist keine finale WÖk-Bewertung. Eine finale WÖk-Scorecard benötigt geprüfte Produkt-, Lieferketten- und Unternehmensdaten."
+    },
+    {
+      "id": "company-profile-scan",
+      "mode": "company-scanner",
+      "sections": [
+        "Unternehmen erkannt",
+        "Datenlage",
+        "Datenqualität",
+        "Relevante Wirkungsräume",
+        "Relevante Wirkungsfelder",
+        "Wirkungspfad",
+        "Erste Wirkungshypothese",
+        "Was für eine echte Bewertung fehlt?",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Keine finale Unternehmensbewertung. Keine Anlageberatung. Keine ESG-Rating-Ersetzung. Keine amtliche WÖk-Bewertung."
+    },
+    {
+      "id": "decision-scan",
+      "mode": "decision-scanner",
+      "sections": [
+        "Was wurde erkannt?",
+        "Welche Daten liegen vor?",
+        "Welche Daten fehlen?",
+        "Wirkungsräume",
+        "SDGs / SDG+",
+        "Wirkungspotenziale",
+        "Wirkpfad",
+        "Zielkonflikte",
+        "WÖk-Gegenfrage",
+        "Quellenpanel",
+        "Unsicherheit"
+      ],
+      "standard_notice": "Wirkungsökonomische Ersteinschätzung, keine Rechts-, Steuer-, Anlage- oder Nachhaltigkeitsberatung."
+    }
+  ]
+}

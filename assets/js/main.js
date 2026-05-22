@@ -143,7 +143,6 @@ window.setInterval(() => sendSiteAnalyticsEvent("heartbeat"), 60000);
 const blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
-const blogOriginLinks = Array.from(document.querySelectorAll("[data-blog-origin-filter]"));
 const blogTypeLinks = Array.from(document.querySelectorAll("[data-blog-type-filter]"));
 const blogFilterStatus = document.querySelector(".blog-filter-status");
 const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
@@ -154,7 +153,6 @@ const blogLoadStep = 12;
 const blogFilterState = {
   category: "all",
   tag: "all",
-  origin: "all",
   type: "all",
   query: "",
   limit: blogInitialLimit,
@@ -179,7 +177,6 @@ function getBlogCardTypes(card) {
 function setActiveBlogLinks() {
   setPressedState(blogFilterLinks, blogFilterState.category, "blogFilter");
   setPressedState(blogTagLinks, blogFilterState.tag, "blogTag");
-  setPressedState(blogOriginLinks, blogFilterState.origin, "blogOriginFilter");
   setPressedState(blogTypeLinks, blogFilterState.type, "blogTypeFilter");
 }
 
@@ -191,9 +188,6 @@ function getBlogFilterSummary(matchedCount, visibleCount) {
   }
   if (blogFilterState.tag !== "all") {
     activeParts.push(`Tag: ${blogFilterState.tag}`);
-  }
-  if (blogFilterState.origin !== "all") {
-    activeParts.push(blogFilterState.origin === "redaktion" ? "Originale" : "LinkedIn-Archiv");
   }
   if (blogFilterState.type !== "all") {
     activeParts.push(`Texttyp: ${blogFilterState.type.replaceAll("-", " ")}`);
@@ -224,18 +218,16 @@ function applyBlogFilter({ scroll = false, hash = "" } = {}) {
     const types = getBlogCardTypes(card);
     const categoryMatch = blogFilterState.category === "all" || card.dataset.category === blogFilterState.category;
     const tagMatch = blogFilterState.tag === "all" || tags.includes(blogFilterState.tag);
-    const originMatch = blogFilterState.origin === "all" || card.dataset.origin === blogFilterState.origin;
     const typeMatch = blogFilterState.type === "all" || types.includes(blogFilterState.type);
     const haystack = [
       card.textContent,
       card.dataset.category,
-      card.dataset.origin,
       card.dataset.tags,
     ]
       .join(" ")
       .toLowerCase();
     const searchMatch = !hasSearch || haystack.includes(blogFilterState.query);
-    const isMatch = categoryMatch && tagMatch && originMatch && typeMatch && searchMatch;
+    const isMatch = categoryMatch && tagMatch && typeMatch && searchMatch;
     const isCollapsed = isMatch && matchedCount >= blogFilterState.limit;
 
     if (isMatch) {
@@ -266,7 +258,6 @@ function applyBlogFilter({ scroll = false, hash = "" } = {}) {
 function resetBlogFilters() {
   blogFilterState.category = "all";
   blogFilterState.tag = "all";
-  blogFilterState.origin = "all";
   blogFilterState.type = "all";
   blogFilterState.query = "";
   blogFilterState.limit = blogInitialLimit;
@@ -304,18 +295,6 @@ blogTagLinks.forEach((link) => {
     blogFilterState.tag = blogFilterState.tag === value ? "all" : value || "all";
     blogFilterState.limit = blogInitialLimit;
     applyBlogFilter({ scroll: true, hash: blogFilterState.tag === "all" ? "#beitraege" : `#tag-${value}` });
-  });
-});
-
-blogOriginLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    blogFilterState.origin = link.dataset.blogOriginFilter || "all";
-    blogFilterState.limit = blogInitialLimit;
-    applyBlogFilter({
-      scroll: true,
-      hash: blogFilterState.origin === "all" ? "#beitraege" : `#${blogFilterState.origin}-beitraege`,
-    });
   });
 });
 

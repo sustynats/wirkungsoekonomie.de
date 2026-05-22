@@ -3,149 +3,829 @@
     {
       "key": "wirkungsoekonomie",
       "label": "Wirkungsökonomie",
-      "aliases": ["WÖk", "Woek", "Wirkungsoekonomie", "Wirkungsökonomie", "wirkung ökonomie", "neue Ordnung des Wohlstands"],
-      "related": ["Wirkung", "Mensch, Planet und Demokratie", "Wirkungssteuer", "Modell", "Von Daten zum Steuersatz"],
+      "aliases": [
+        "WÖk",
+        "Woek",
+        "Wirkungsoekonomie",
+        "Wirkungsökonomie",
+        "wirkung ökonomie",
+        "neue Ordnung des Wohlstands"
+      ],
+      "related": [
+        "Wirkung",
+        "Mensch, Planet und Demokratie",
+        "Wirkungssteuer",
+        "Modell",
+        "Von Daten zum Steuersatz"
+      ],
       "entrypoint": "wirkungsoekonomie-verstehen"
     },
     {
       "key": "wirkung-verstehen",
       "label": "Wirkung verstehen",
-      "aliases": ["Wirkung", "Wirkstoff", "Medikamenten-Analogie", "Wirkungsmanagement", "Output", "Outcome", "Wirkungspotenzial", "Dosis", "Nebenwirkung", "Wechselwirkung", "Wirkmechanismus", "Wirkungsprofil", "Rebound-Effekt", "Wirkungsnachweis", "Kausalität", "Zurechnung", "Wirkungsarchitektur", "Wirkungscontrolling", "Fördercontrolling", "Förderpolitik", "Wirkungssimulation", "Wirkungswashing", "positive Wirkung", "negative Wirkung", "positive Netto-Wirkung", "Wirkungsempfänger", "Wirkungsraum", "Zielkonflikt", "Referenzrahmen", "normativer Maßstab", "Agenda 2030", "Wirkungsbewertung", "Wirkungsfeld", "Wirkungsindikator", "Wirkungskennzahl", "Transformationswirkung", "Wirkungspfad", "Wirkpfad", "Wirkungsnetz", "Wirkungsradar", "Resonanzprofil", "Resonanzrisiko", "Kapitalwirkung", "Wirkungskapital", "Wirkungsregister", "Wirkungsaudit", "Wirkungsassurance", "Wirkungshebel", "Systemhebel", "Wirkungsgrenze", "rote Linie", "Wirkungsblindheit", "wirkungsblind", "Wirkungswahrheit", "wirkungsunwahr", "Wirkungsrückkopplung", "Rückkopplung", "Wirkungsfähigkeit", "Wirkungskompetenz"],
-      "related": ["Glossar", "Medikamenten-Analogie", "Wirkungsmanagement vs Wirkungsökonomie", "Wirkungsarchitektur", "Wirkungsbewertung", "Wirkungsblindheit", "Wirkungswahrheit", "Wirkungsrückkopplung", "Netto-Wirkung", "Transformationswirkung", "Nicht-Kompensation", "SDGs", "SDG+"],
+      "aliases": [
+        "Wirkung",
+        "Wirkstoff",
+        "Medikamenten-Analogie",
+        "Wirkungsmanagement",
+        "Output",
+        "Outcome",
+        "Wirkungspotenzial",
+        "Dosis",
+        "Nebenwirkung",
+        "Wechselwirkung",
+        "Wirkmechanismus",
+        "Wirkungsprofil",
+        "Rebound-Effekt",
+        "Wirkungsnachweis",
+        "Kausalität",
+        "Zurechnung",
+        "Wirkungsarchitektur",
+        "Wirkungscontrolling",
+        "Fördercontrolling",
+        "Förderpolitik",
+        "Wirkungssimulation",
+        "Wirkungswashing",
+        "positive Wirkung",
+        "negative Wirkung",
+        "positive Netto-Wirkung",
+        "Wirkungsempfänger",
+        "Wirkungsraum",
+        "Zielkonflikt",
+        "Referenzrahmen",
+        "normativer Maßstab",
+        "Agenda 2030",
+        "Wirkungsbewertung",
+        "Wirkungsfeld",
+        "Wirkungsindikator",
+        "Wirkungskennzahl",
+        "Transformationswirkung",
+        "Wirkungspfad",
+        "Wirkpfad",
+        "Wirkungsnetz",
+        "Wirkungsradar",
+        "Resonanzprofil",
+        "Resonanzrisiko",
+        "Kapitalwirkung",
+        "Wirkungskapital",
+        "Wirkungsregister",
+        "Wirkungsaudit",
+        "Wirkungsassurance",
+        "Wirkungshebel",
+        "Systemhebel",
+        "Wirkungsgrenze",
+        "rote Linie",
+        "Wirkungsblindheit",
+        "wirkungsblind",
+        "Wirkungswahrheit",
+        "wirkungsunwahr",
+        "Wirkungsrückkopplung",
+        "Rückkopplung",
+        "Wirkungsfähigkeit",
+        "Wirkungskompetenz"
+      ],
+      "related": [
+        "Glossar",
+        "Medikamenten-Analogie",
+        "Wirkungsmanagement vs Wirkungsökonomie",
+        "Wirkungsarchitektur",
+        "Wirkungsbewertung",
+        "Wirkungsblindheit",
+        "Wirkungswahrheit",
+        "Wirkungsrückkopplung",
+        "Netto-Wirkung",
+        "Transformationswirkung",
+        "Nicht-Kompensation",
+        "SDGs",
+        "SDG+"
+      ],
       "entrypoint": "glossar"
     },
     {
       "key": "wirkungssteuer",
       "label": "Wirkungssteuer",
-      "aliases": ["WStG", "WUStG", "Wirkungsumsatzsteuer", "Produktsteuer", "Produktbesteuerung", "Steuer nach Wirkung", "Steuersatz nach Wirkung", "Steuerklasse", "Wirkungsteuer"],
-      "related": ["Von Daten zum Steuersatz", "Steuerklassen", "Scorecard", "NWI", "Reverse Merit Order", "WStG", "WUStG"],
+      "aliases": [
+        "WStG",
+        "WUStG",
+        "Wirkungsumsatzsteuer",
+        "Produktsteuer",
+        "Produktbesteuerung",
+        "Steuer nach Wirkung",
+        "Steuersatz nach Wirkung",
+        "Steuerklasse",
+        "Wirkungsteuer"
+      ],
+      "related": [
+        "Von Daten zum Steuersatz",
+        "Steuerklassen",
+        "Scorecard",
+        "NWI",
+        "Reverse Merit Order",
+        "WStG",
+        "WUStG"
+      ],
       "entrypoint": "workflow"
     },
     {
       "key": "nwi",
       "label": "Netto-Wirkungs-Index",
-      "aliases": ["NWI", "Netto Wirkung", "Netto-Wirkung", "Wirkungsklasse", "Wirkungsscore", "FinalScore"],
-      "related": ["Scorecard", "Reverse Merit Order", "Wirkungssteuer", "Wirkungsklasse"],
+      "aliases": [
+        "NWI",
+        "Netto Wirkung",
+        "Netto-Wirkung",
+        "Wirkungsklasse",
+        "Wirkungsscore",
+        "FinalScore"
+      ],
+      "related": [
+        "Scorecard",
+        "Reverse Merit Order",
+        "Wirkungssteuer",
+        "Wirkungsklasse"
+      ],
       "entrypoint": "modell"
     },
     {
       "key": "t-sroi",
       "label": "T-SROI",
-      "aliases": ["TSROI", "Transformational SROI", "Transformational Social Return on Investment", "Impact Controlling", "Transformationswirkung"],
-      "related": ["Kapital", "Investitionen", "Unternehmen", "Scorecard", "Transformation"],
+      "aliases": [
+        "TSROI",
+        "Transformational SROI",
+        "Transformational Social Return on Investment",
+        "Impact Controlling",
+        "Transformationswirkung"
+      ],
+      "related": [
+        "Kapital",
+        "Investitionen",
+        "Unternehmen",
+        "Scorecard",
+        "Transformation"
+      ],
       "entrypoint": "scorecard-dashboard"
     },
     {
       "key": "sdg",
       "label": "SDG",
-      "aliases": ["Sustainable Development Goals", "Nachhaltigkeitsziele", "UN-Ziele", "SDGs"],
-      "related": ["SDG+", "GRI", "CSRD", "ESRS", "Wirkungsmessung", "globale Anschlussfähigkeit"],
+      "aliases": [
+        "Sustainable Development Goals",
+        "Nachhaltigkeitsziele",
+        "UN-Ziele",
+        "SDGs"
+      ],
+      "related": [
+        "SDG+",
+        "GRI",
+        "CSRD",
+        "ESRS",
+        "Wirkungsmessung",
+        "globale Anschlussfähigkeit"
+      ],
       "entrypoint": "workflow"
     },
     {
       "key": "sdg-plus",
       "label": "SDG+",
-      "aliases": ["Demokratie", "Medienqualität", "Rechtsstaatlichkeit", "gesellschaftlicher Zusammenhalt", "Diskursfähigkeit", "institutionelles Vertrauen"],
-      "related": ["Medien und Demokratie", "Wirkung politischer Sprache", "Narrative", "Vertrauen", "Faktencheck vs Wirkungsanalyse"],
+      "aliases": [
+        "Demokratie",
+        "Medienqualität",
+        "Rechtsstaatlichkeit",
+        "gesellschaftlicher Zusammenhalt",
+        "Diskursfähigkeit",
+        "institutionelles Vertrauen"
+      ],
+      "related": [
+        "Medien und Demokratie",
+        "Wirkung politischer Sprache",
+        "Narrative",
+        "Vertrauen",
+        "Faktencheck vs Wirkungsanalyse"
+      ],
       "entrypoint": "sdg-medien-demokratie"
     },
     {
       "key": "gri",
       "label": "GRI",
-      "aliases": ["Global Reporting Initiative", "GRI Standards", "Reportingstandard", "Nachhaltigkeitsbericht"],
-      "related": ["CSRD", "ESRS", "Reporting", "Wirkungsdaten", "Von Daten zum Steuersatz"],
+      "aliases": [
+        "Global Reporting Initiative",
+        "GRI Standards",
+        "Reportingstandard",
+        "Nachhaltigkeitsbericht"
+      ],
+      "related": [
+        "CSRD",
+        "ESRS",
+        "Reporting",
+        "Wirkungsdaten",
+        "Von Daten zum Steuersatz"
+      ],
       "entrypoint": "workflow"
     },
     {
       "key": "csrd",
       "label": "CSRD",
-      "aliases": ["Corporate Sustainability Reporting Directive", "Nachhaltigkeitsberichtspflicht", "EU-Berichtspflicht", "Nachhaltigkeitsdaten"],
-      "related": ["ESRS", "GRI", "Reporting", "Wirkungsdaten", "Rückkopplung"],
+      "aliases": [
+        "Corporate Sustainability Reporting Directive",
+        "Nachhaltigkeitsberichtspflicht",
+        "EU-Berichtspflicht",
+        "Nachhaltigkeitsdaten"
+      ],
+      "related": [
+        "ESRS",
+        "GRI",
+        "Reporting",
+        "Wirkungsdaten",
+        "Rückkopplung"
+      ],
       "entrypoint": "workflow"
     },
     {
       "key": "esrs",
       "label": "ESRS",
-      "aliases": ["European Sustainability Reporting Standards", "Nachhaltigkeitsstandards", "ESRS E1", "ESRS S1", "ESRS G1"],
-      "related": ["CSRD", "GRI", "Nachhaltigkeitsdaten", "Indikatoren", "Wirkungsbewertung"],
+      "aliases": [
+        "European Sustainability Reporting Standards",
+        "Nachhaltigkeitsstandards",
+        "ESRS E1",
+        "ESRS S1",
+        "ESRS G1"
+      ],
+      "related": [
+        "CSRD",
+        "GRI",
+        "Nachhaltigkeitsdaten",
+        "Indikatoren",
+        "Wirkungsbewertung"
+      ],
       "entrypoint": "workflow"
     },
     {
       "key": "gemeinwohl",
       "label": "Gemeinwohlökonomie",
-      "aliases": ["GWÖ", "Gemeinwohl", "Gemeinwohlbilanz", "ECG", "Economy for the Common Good"],
-      "related": ["Wirkungsökonomie im Vergleich", "ESG", "Donut-Ökonomie", "Wirkung auf Mensch, Planet und Demokratie"],
+      "aliases": [
+        "GWÖ",
+        "Gemeinwohl",
+        "Gemeinwohlbilanz",
+        "ECG",
+        "Economy for the Common Good"
+      ],
+      "related": [
+        "Wirkungsökonomie im Vergleich",
+        "ESG",
+        "Donut-Ökonomie",
+        "Wirkung auf Mensch, Planet und Demokratie"
+      ],
       "entrypoint": "vergleich"
     },
     {
       "key": "donut",
       "label": "Donut-Ökonomie",
-      "aliases": ["Doughnut Economics", "Donut", "planetare Grenzen", "soziales Fundament"],
-      "related": ["Wirkungsökonomie im Vergleich", "Wellbeing Economy", "Degrowth", "SDGs"],
+      "aliases": [
+        "Doughnut Economics",
+        "Donut",
+        "planetare Grenzen",
+        "soziales Fundament"
+      ],
+      "related": [
+        "Wirkungsökonomie im Vergleich",
+        "Wellbeing Economy",
+        "Degrowth",
+        "SDGs"
+      ],
       "entrypoint": "vergleich"
     },
     {
       "key": "wellbeing",
       "label": "Wellbeing Economy",
-      "aliases": ["Wohlergehen", "Lebensqualität", "Beyond GDP", "Wohlbefinden"],
-      "related": ["Wirkungsökonomie im Vergleich", "Wohlstand", "Mensch", "Demokratie"],
+      "aliases": [
+        "Wohlergehen",
+        "Lebensqualität",
+        "Beyond GDP",
+        "Wohlbefinden"
+      ],
+      "related": [
+        "Wirkungsökonomie im Vergleich",
+        "Wohlstand",
+        "Mensch",
+        "Demokratie"
+      ],
       "entrypoint": "vergleich"
     },
     {
       "key": "degrowth",
       "label": "Degrowth / Postwachstum",
-      "aliases": ["Postwachstum", "Degrowth", "Wachstumskritik"],
-      "related": ["Wirkungsökonomie im Vergleich", "Kapitalismus", "planetare Grenzen", "Wachstum"],
+      "aliases": [
+        "Postwachstum",
+        "Degrowth",
+        "Wachstumskritik"
+      ],
+      "related": [
+        "Wirkungsökonomie im Vergleich",
+        "Kapitalismus",
+        "planetare Grenzen",
+        "Wachstum"
+      ],
       "entrypoint": "vergleich"
     },
     {
       "key": "narrative",
       "label": "Narrative",
-      "aliases": ["Framing", "Frame", "politische Sprache", "Sprachwirkung", "AfD", "Populismus", "rechte Narrative", "Demokratiegefährdung", "Wirkung politischer Sprache"],
-      "related": ["Wirkung politischer Sprache", "Wirkungspotenzial", "Medien und Demokratie", "Vertrauen", "Polarisierung", "Faktencheck vs Wirkungsanalyse"],
+      "aliases": [
+        "Framing",
+        "Frame",
+        "politische Sprache",
+        "Sprachwirkung",
+        "AfD",
+        "Populismus",
+        "rechte Narrative",
+        "Demokratiegefährdung",
+        "Wirkung politischer Sprache"
+      ],
+      "related": [
+        "Wirkung politischer Sprache",
+        "Wirkungspotenzial",
+        "Medien und Demokratie",
+        "Vertrauen",
+        "Polarisierung",
+        "Faktencheck vs Wirkungsanalyse"
+      ],
       "entrypoint": "wirkung-politischer-sprache"
     },
     {
       "key": "dpp",
       "label": "Digitaler Produktpass",
-      "aliases": ["DPP", "Produktpass", "digital product passport", "Produktdaten"],
-      "related": ["Lieferkettendaten", "Produktwirkung", "Scorecard", "Von Daten zum Steuersatz"],
+      "aliases": [
+        "DPP",
+        "Produktpass",
+        "digital product passport",
+        "Produktdaten"
+      ],
+      "related": [
+        "Lieferkettendaten",
+        "Produktwirkung",
+        "Scorecard",
+        "Von Daten zum Steuersatz"
+      ],
       "entrypoint": "workflow"
     },
     {
       "key": "datenbasis",
       "label": "Datenbasis und Methodik",
-      "aliases": ["Methodik", "Datenbasis", "Wirkungsdaten", "Quellenregister", "Mapping-Register", "Indikator-Mapping", "Bewertungslogik", "Datenqualität", "Benchmark", "Archetypen"],
-      "related": ["CSRD", "ESRS", "GRI", "SDG", "SDG+", "Scorecard", "NWI", "WÖk-ID", "Wirkungssteuer", "Von Daten zum Steuersatz"],
+      "aliases": [
+        "Methodik",
+        "Datenbasis",
+        "Wirkungsdaten",
+        "Quellenregister",
+        "Mapping-Register",
+        "Indikator-Mapping",
+        "Bewertungslogik",
+        "Datenqualität",
+        "Benchmark",
+        "Archetypen"
+      ],
+      "related": [
+        "CSRD",
+        "ESRS",
+        "GRI",
+        "SDG",
+        "SDG+",
+        "Scorecard",
+        "NWI",
+        "WÖk-ID",
+        "Wirkungssteuer",
+        "Von Daten zum Steuersatz"
+      ],
       "entrypoint": "methodik-datenbasis"
     },
     {
       "key": "daten-standards-regularien",
       "label": "Daten, Standards und Regularien",
-      "aliases": ["Datenstandards", "Regularien", "Welche Daten und Standards dahinterstehen", "Daten und Standards", "Berichtsdaten", "Steuerungsdaten", "Produktdaten", "Lieferkettendaten", "Wirkungsdaten", "Datenqualität"],
-      "related": ["CSRD", "ESRS", "GRI", "SDG", "SDG+", "EU-Taxonomie", "NACE", "Digitaler Produktpass", "DPP", "CSDDD", "ESPR", "EPD", "LCA", "GHG Protocol"],
+      "aliases": [
+        "Datenstandards",
+        "Regularien",
+        "Welche Daten und Standards dahinterstehen",
+        "Daten und Standards",
+        "Berichtsdaten",
+        "Steuerungsdaten",
+        "Produktdaten",
+        "Lieferkettendaten",
+        "Wirkungsdaten",
+        "Datenqualität"
+      ],
+      "related": [
+        "CSRD",
+        "ESRS",
+        "GRI",
+        "SDG",
+        "SDG+",
+        "EU-Taxonomie",
+        "NACE",
+        "Digitaler Produktpass",
+        "DPP",
+        "CSDDD",
+        "ESPR",
+        "EPD",
+        "LCA",
+        "GHG Protocol"
+      ],
       "entrypoint": "methodik-daten-standards-regularien"
     },
     {
       "key": "regularien",
       "label": "Regularien und Standards",
-      "aliases": ["EU Regularien", "EU-Standards", "Nachhaltigkeitsregularien", "Sorgfaltspflichten", "Berichtspflichten"],
-      "related": ["CSRD", "ESRS", "EU-Taxonomie", "CSDDD", "ESPR", "DPP"],
+      "aliases": [
+        "EU Regularien",
+        "EU-Standards",
+        "Nachhaltigkeitsregularien",
+        "Sorgfaltspflichten",
+        "Berichtspflichten"
+      ],
+      "related": [
+        "CSRD",
+        "ESRS",
+        "EU-Taxonomie",
+        "CSDDD",
+        "ESPR",
+        "DPP"
+      ],
       "entrypoint": "methodik-daten-standards-regularien"
     },
     {
       "key": "produktdaten",
       "label": "Produktdaten",
-      "aliases": ["Digitaler Produktpass", "DPP", "EPD", "LCA", "Produktpass", "Produktdatenbasis"],
-      "related": ["DPP", "ESPR", "EPD", "LCA", "Scorecard", "Wirkungssteuer"],
+      "aliases": [
+        "Digitaler Produktpass",
+        "DPP",
+        "EPD",
+        "LCA",
+        "Produktpass",
+        "Produktdatenbasis"
+      ],
+      "related": [
+        "DPP",
+        "ESPR",
+        "EPD",
+        "LCA",
+        "Scorecard",
+        "Wirkungssteuer"
+      ],
       "entrypoint": "methodik-daten-standards-regularien"
     },
     {
       "key": "lieferkettendaten",
       "label": "Lieferkettendaten",
-      "aliases": ["Lieferkette", "Wertschöpfungskette", "CSDDD", "ILO", "Arbeitsrechte"],
-      "related": ["CSDDD", "ILO", "ESRS S2", "Menschenrechte", "Produktwirkung"],
+      "aliases": [
+        "Lieferkette",
+        "Wertschöpfungskette",
+        "CSDDD",
+        "ILO",
+        "Arbeitsrechte"
+      ],
+      "related": [
+        "CSDDD",
+        "ILO",
+        "ESRS S2",
+        "Menschenrechte",
+        "Produktwirkung"
+      ],
       "entrypoint": "methodik-daten-standards-regularien"
+    },
+    {
+      "key": "beratungs-marktquellen",
+      "label": "Beratungs- und Marktquellen",
+      "aliases": [
+        "EY",
+        "KPMG",
+        "PwC",
+        "Deloitte",
+        "McKinsey",
+        "BCG",
+        "Bain",
+        "Accenture",
+        "Roland Berger",
+        "Oliver Wyman",
+        "Capgemini Invent",
+        "BearingPoint",
+        "Wavestone",
+        "Mazars",
+        "Grant Thornton",
+        "BDO",
+        "RSM",
+        "Forvis Mazars",
+        "ERM",
+        "EcoAct",
+        "South Pole",
+        "Quantis",
+        "Sphera",
+        "Anthesis",
+        "Ramboll",
+        "Arup",
+        "Systemiq",
+        "Guidehouse",
+        "WBCSD",
+        "Forum for the Future",
+        "Metabolic",
+        "Circle Economy",
+        "New Economics Foundation",
+        "Nachhaltigkeitsberatung",
+        "ESG-Beratung",
+        "CSRD-Beratung",
+        "Assurance",
+        "Professional Services"
+      ],
+      "related": [
+        "Externe Quellen",
+        "CSRD",
+        "ESRS",
+        "Sustainability Assurance",
+        "ESG Data Management",
+        "WÖk-Kompass Kontext"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "zertifizierungen-standards",
+      "label": "Zertifizierungen, Siegel und Standards",
+      "aliases": [
+        "ISO 14001",
+        "ISO 50001",
+        "ISO 45001",
+        "ISO 26000",
+        "ISO 14040",
+        "ISO 14067",
+        "ISO 27001",
+        "ISO 42001",
+        "DIN",
+        "EN",
+        "EMAS",
+        "B Corp",
+        "Cradle to Cradle",
+        "Fairtrade",
+        "FSC",
+        "PEFC",
+        "MSC",
+        "ASC",
+        "GOTS",
+        "OEKO-TEX",
+        "SA8000",
+        "Sedex",
+        "SMETA",
+        "EcoVadis",
+        "CDP",
+        "SBTi",
+        "TNFD",
+        "GHG Protocol",
+        "EPD",
+        "PEF",
+        "EU Ecolabel",
+        "Blauer Engel",
+        "DGNB",
+        "LEED",
+        "BREEAM",
+        "WELL",
+        "GRESB"
+      ],
+      "related": [
+        "Externe Quellen",
+        "Daten, Standards und Regularien",
+        "Zertifizierung",
+        "Label",
+        "Audit",
+        "Assurance",
+        "Scorecard"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "alternative-wirtschaftsmodelle",
+      "label": "Alternative Wirtschaftsmodelle",
+      "aliases": [
+        "Gemeinwohlökonomie",
+        "GWÖ",
+        "Economy for the Common Good",
+        "Gemeinwohl-Bilanz",
+        "Donut",
+        "Donut-Ökonomie",
+        "Doughnut Economics",
+        "Doughnut Economics Action Lab",
+        "Kate Raworth",
+        "Wellbeing Economy",
+        "WEAll",
+        "Beyond GDP",
+        "Degrowth",
+        "Postwachstum",
+        "Circular Economy",
+        "Regenerative Economy",
+        "Social Economy",
+        "Solidarity Economy",
+        "Impact Investing",
+        "BIP-Kritik",
+        "Care Economy",
+        "Feministische Ökonomie",
+        "Ökologische Ökonomie",
+        "Steward Ownership",
+        "Verantwortungseigentum"
+      ],
+      "related": [
+        "Wirkungsökonomie im Vergleich",
+        "Revival Monitor",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung",
+        "Wirkungsarchitektur"
+      ],
+      "entrypoint": "vergleich"
+    },
+    {
+      "key": "woek-kompass-quellenregel",
+      "label": "WÖk-Kompass Quellenregel",
+      "aliases": [
+        "WÖk-Kompass",
+        "KI-Assistent",
+        "Quellenregel",
+        "externe Quellen nutzen",
+        "Sekundärquelle",
+        "Praxisquelle",
+        "Marktquelle",
+        "link_only",
+        "kurz zusammenfassen",
+        "nicht normativ"
+      ],
+      "related": [
+        "Externe Quellen",
+        "Beratungsquellen",
+        "Zertifizierungen",
+        "alternative Modelle",
+        "positive Netto-Wirkung"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "eu-regularien-quellen",
+      "label": "EU-Regularien und Rechtsquellen",
+      "aliases": [
+        "EUR-Lex",
+        "EU-Kommission",
+        "EFRAG",
+        "ESMA",
+        "CSRD",
+        "ESRS",
+        "EU Omnibus",
+        "EU-Taxonomie",
+        "SFDR",
+        "EU Green Bond Standard",
+        "ESG Ratings Regulation",
+        "CSDDD",
+        "CBAM",
+        "EUDR",
+        "Forced Labour Regulation",
+        "ESPR",
+        "DPP",
+        "PPWR",
+        "REACH",
+        "CLP",
+        "EU ETS",
+        "Fit for 55",
+        "AI Act",
+        "DSA",
+        "DMA",
+        "Data Act",
+        "NIS2"
+      ],
+      "related": [
+        "Externe Quellen",
+        "Daten, Standards und Regularien",
+        "Rechtsstand prüfen",
+        "Sustainable Finance"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "un-sdg-datenquellen",
+      "label": "UN-, SDG- und globale Datenquellen",
+      "aliases": [
+        "UN Agenda 2030",
+        "UN SDG Goals",
+        "UNSD",
+        "UNSD SDG Indicators",
+        "UN Data",
+        "UNDP",
+        "UNEP",
+        "FAO",
+        "WHO",
+        "ILO",
+        "UNESCO",
+        "UN Habitat",
+        "World Bank",
+        "OECD",
+        "IPCC",
+        "IPBES",
+        "Paris Agreement",
+        "UNFCCC",
+        "CBD",
+        "Sendai Framework"
+      ],
+      "related": [
+        "SDG",
+        "SDG+",
+        "Wirkungsdaten",
+        "Referenzrahmen",
+        "globale Ziele"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "deutsche-kommunale-quellen",
+      "label": "Deutsche und kommunale Datenquellen",
+      "aliases": [
+        "Destatis",
+        "Umweltbundesamt",
+        "UBA",
+        "BMUV",
+        "BMWK",
+        "BMF",
+        "BMAS",
+        "BMDV",
+        "BMBF",
+        "dena",
+        "KfW Nachhaltigkeit",
+        "KfW SDG-Mapping",
+        "KfW Wirkungsmanagement",
+        "DNK",
+        "Rat für Nachhaltige Entwicklung",
+        "RNE",
+        "SDG-Portal Deutschland",
+        "Mannheim 2030",
+        "Mannheim Haushalt",
+        "Wirkungshaushalt",
+        "Voluntary Local Review"
+      ],
+      "related": [
+        "kommunale Daten",
+        "Haushaltsdaten",
+        "Wirkungslenkung",
+        "Wirkungshaushalt"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "produkt-lca-datenraeume",
+      "label": "Produktdaten, LCA, EPD und Datenräume",
+      "aliases": [
+        "ÖKOBAUDAT",
+        "ProBas",
+        "EPD International",
+        "PEP Ecopassport",
+        "Agribalyse",
+        "OpenLCA Nexus",
+        "Battery Pass",
+        "CIRPASS",
+        "Catena-X",
+        "Gaia-X",
+        "European Data Spaces",
+        "Product Environmental Footprint",
+        "PEF",
+        "OEF",
+        "EN 15804"
+      ],
+      "related": [
+        "Produktdaten",
+        "DPP",
+        "WÖk-ID",
+        "Scorecard",
+        "LCA",
+        "EPD"
+      ],
+      "entrypoint": "methodik-externe-quellen"
+    },
+    {
+      "key": "esg-rating-anbieter",
+      "label": "ESG-Ratingmethodiken und Nachhaltigkeitsdatenanbieter",
+      "aliases": [
+        "Morningstar Sustainalytics",
+        "MSCI ESG Ratings",
+        "S&P Global CSA",
+        "Sustainable1",
+        "ISS ESG",
+        "Moody’s ESG",
+        "Moody's ESG",
+        "LSEG",
+        "Refinitiv",
+        "FTSE Russell",
+        "EcoVadis",
+        "CDP Scores",
+        "Clarity AI",
+        "RepRisk",
+        "Bloomberg ESG",
+        "FactSet Truvalue",
+        "Arabesque",
+        "Covalence"
+      ],
+      "related": [
+        "ESG-Ratings",
+        "Sustainability Benchmarking",
+        "Marktquelle",
+        "nicht positive Netto-Wirkung"
+      ],
+      "entrypoint": "methodik-externe-quellen"
     }
   ],
   "typos": {
@@ -164,6 +844,34 @@
     "eu taxonomie": "EU-Taxonomie",
     "digitaler produktpass": "Digitaler Produktpass",
     "produkt daten": "Produktdaten",
-    "lieferketten daten": "Lieferkettendaten"
+    "lieferketten daten": "Lieferkettendaten",
+    "gwoe": "Gemeinwohlökonomie",
+    "gwö": "Gemeinwohlökonomie",
+    "doughnut": "Donut-Ökonomie",
+    "donut oekonomie": "Donut-Ökonomie",
+    "postwachstum": "Degrowth / Postwachstum",
+    "iso14001": "ISO 14001",
+    "oeko tex": "OEKO-TEX",
+    "oekotex": "OEKO-TEX",
+    "smeti": "SMETA",
+    "bcorp": "B Corp",
+    "well being economy": "Wellbeing Economy",
+    "esg beratung": "ESG-Beratung",
+    "csrd beratung": "CSRD-Beratung",
+    "eurlex": "EUR-Lex",
+    "eur lex": "EUR-Lex",
+    "oekobaudat": "ÖKOBAUDAT",
+    "oko baudat": "ÖKOBAUDAT",
+    "probas": "ProBas",
+    "cbam": "CBAM",
+    "csddd": "CSDDD",
+    "eudr": "EUDR",
+    "ppwr": "PPWR",
+    "unsd": "UNSD",
+    "ipbes": "IPBES",
+    "ipcc": "IPCC",
+    "openlca": "OpenLCA Nexus",
+    "catena x": "Catena-X",
+    "gaia x": "Gaia-X"
   }
 }

@@ -9,7 +9,8 @@ Der Blog ist ein statischer Bereich der Website. Neue Beiträge werden als eigen
 3. Codex ergänzt den Beitrag auf `blog.html` mit Kategorie, Herkunft (`data-origin`), Titel, Kurzthese, Datum, Lesedauer und Link.
 4. Falls ein Beitragsbild genutzt wird, legt Codex es unter `assets/img/blog/` ab.
 5. Codex pflegt Meta Title und Meta Description in der Artikelseite.
-6. Codex prüft lokal, ob die Blogübersicht, der neue Beitrag, Navigation, Footer und mobile Ansicht funktionieren.
+6. Codex führt `python3 tools/sync_layout.py` aus. Dabei werden Header/Footer synchronisiert und der Suchindex automatisch neu aus allen veröffentlichen HTML-Seiten aufgebaut.
+7. Codex prüft lokal, ob die Blogübersicht, der neue Beitrag, Navigation, Footer, Suche und mobile Ansicht funktionieren.
 
 ## Was Natalie liefern muss
 
@@ -27,6 +28,7 @@ Der Blog ist ein statischer Bereich der Website. Neue Beiträge werden als eigen
 
 - `blog/<slug>.html`
 - `blog.html`
+- `assets/search/search-index.json` wird automatisch neu erzeugt
 - optional `assets/img/blog/<dateiname>`
 - optional weitere interne Seiten, wenn ein Beitrag dort verlinkt werden soll
 
@@ -98,7 +100,23 @@ Sie gelten als veröffentlichte Seiten und dürfen nicht ersatzlos entfernt werd
 
 Das Importskript `tools/import_linkedin_articles.py` erzeugt neue LinkedIn-Archivseiten und aktualisiert `blog/linkedin-artikel.html`, löscht bestehende veröffentlichte HTML-Dateien aber nicht.
 
-Nach Importen wird `tools/sync_layout.py` ausgeführt, damit Header und Footer der neu erzeugten Seiten wieder dem zentralen Template unter `templates/` entsprechen.
+Nach Importen wird `tools/sync_layout.py` ausgeführt, damit Header und Footer der neu erzeugten Seiten wieder dem zentralen Template unter `templates/` entsprechen und neue Inhalte automatisch in `assets/search/search-index.json` erscheinen.
+
+## Suche automatisch aktualisieren
+
+Neue veröffentlichte HTML-Seiten werden über `tools/build_search_index.py` in die Website-Suche aufgenommen. Der normale Aktualisierungsschritt ist:
+
+```text
+python3 tools/sync_layout.py
+```
+
+Dieser Schritt ruft den Suchindex-Build automatisch mit auf. Wer nur die Suche neu erzeugen will, kann alternativ direkt ausführen:
+
+```text
+python3 tools/build_search_index.py
+```
+
+Ausgenommen bleiben Weiterleitungsseiten mit `noindex` und sehr kurze technische Seiten. Neue Blogartikel, Dossiers, Methodikseiten, SDG+-Seiten und normale statische Inhaltsseiten sind danach ohne manuelle Pflege im Suchindex auffindbar.
 
 ## SEO-Daten pflegen
 

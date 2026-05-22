@@ -22,6 +22,16 @@ Natalie Weber ist Begründerin der Wirkungsökonomie und Autorin des Grundlagenw
 
 Das Werk und das Modell dürfen gelesen, geteilt, zitiert und diskutiert werden. Die Autorinnenschaft und der Ursprung des Modells bleiben bei Natalie Weber. Bei Zitaten oder Weiterverwendung soll die Quelle sichtbar genannt werden.
 
+## Inhalte veröffentlichen
+
+Nach neuen oder geänderten HTML-Inhalten wird ausgeführt:
+
+```text
+python3 tools/sync_layout.py
+```
+
+Der Schritt synchronisiert Header/Footer und baut den Suchindex automatisch neu. Dadurch werden neue veröffentlichte Seiten, Blogartikel und ältere Beiträge ohne manuelle Indexpflege über `suche.html` auffindbar.
+
 ## Kontakt
 
 impact@wirkungsoekonomie.org

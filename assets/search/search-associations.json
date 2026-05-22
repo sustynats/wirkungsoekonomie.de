@@ -1,19 +1,323 @@
 {
-  "AfD": ["Wirkung politischer Sprache", "Narrative", "Wirkungspotenzial", "Medien und Demokratie", "Vertrauen", "Polarisierung", "Faktencheck vs Wirkungsanalyse"],
-  "Steuer": ["Wirkungssteuer", "Steuerklassen", "Von Daten zum Steuersatz", "Scorecard", "NWI", "Reverse Merit Order", "WStG", "WUStG"],
-  "Gemeinwohl": ["Wirkungsökonomie im Vergleich", "Gemeinwohlökonomie", "ESG", "Donut-Ökonomie", "Wirkung auf Mensch, Planet und Demokratie"],
-  "SDG": ["SDGs", "SDG+", "GRI", "CSRD", "ESRS", "Wirkungsmessung", "globale Anschlussfähigkeit"],
-  "Reporting": ["CSRD", "ESRS", "GRI", "Nachhaltigkeitsdaten", "Wirkungsdaten", "Rückkopplung", "Von Daten zum Steuersatz"],
-  "Wirkung": ["Wirkung verstehen", "Output", "Outcome", "Wirkungspotenzial", "Wirkungsblindheit", "Wirkungswahrheit", "Wirkungsrückkopplung", "Kausalität und Zurechnung", "Wirkungsmanagement", "Wirkungsarchitektur"],
-  "Wirkungsmanagement": ["Wirkung verstehen", "Wirkungsarchitektur", "Wirkungscontrolling", "Wirkungsmonitoring", "Fördercontrolling", "Wirkungssimulation", "Wirkungswashing"],
-  "Förderpolitik": ["Wirkung verstehen", "Wirkungsmanagement", "Förderlogik", "Fördercontrolling", "Wirkungsarchitektur", "Systemsteuerung"],
-  "Datenbasis": ["Methodik", "Quellenregister", "CSRD", "ESRS", "GRI", "SDGs", "Digitale Produktpässe", "Scorecard", "WÖk-ID", "Datenqualität"],
-  "Methodik": ["Datenbasis", "Indikator-Mapping", "WÖk-IDs", "Scorecard", "NWI", "Schutzregel", "Wirkungsklasse", "Steuerklasse"],
-  "Medien": ["Medienwirkung", "Wirkung politischer Sprache", "Narrative", "Diskursfähigkeit", "Demokratie", "Plattformlogik"],
-  "Produkt": ["Produktwirkung", "Digitaler Produktpass", "Scorecard", "Wirkungssteuer", "Steuerklasse", "Apfel", "T-Shirt"],
-  "Kapital": ["T-SROI", "Wirkungsökonomie im Vergleich", "Kapitalwirkung", "Wirkungskapital", "Wirkungsrückkopplung", "Finanzsystem", "Risiko", "Resilienz"],
-  "Wirkungsblindheit": ["Wirkungswahrheit", "Wirkungsbewertung", "Wirkungsarchitektur", "Wirkungsrückkopplung", "Wirkung verstehen"],
-  "Wirkungswahrheit": ["Wirkungsblindheit", "Wirkungsdaten", "Wirkungsanalyse", "Resonanzraum", "Wirkungsbewertung"],
-  "Wirkungsrückkopplung": ["Wirkungslenkung", "Wirkungsarchitektur", "Wirkungssteuer", "Wirkungshaushalt", "WÖk-ID"],
-  "Wirkungsgrenze": ["Nicht-Kompensation", "Reverse Merit Order", "Netto-Wirkung", "Wirkungsbewertung", "Rote Linien"]
+  "AfD": [
+    "Wirkung politischer Sprache",
+    "Narrative",
+    "Wirkungspotenzial",
+    "Medien und Demokratie",
+    "Vertrauen",
+    "Polarisierung",
+    "Faktencheck vs Wirkungsanalyse"
+  ],
+  "Steuer": [
+    "Wirkungssteuer",
+    "Steuerklassen",
+    "Von Daten zum Steuersatz",
+    "Scorecard",
+    "NWI",
+    "Reverse Merit Order",
+    "WStG",
+    "WUStG"
+  ],
+  "Gemeinwohl": [
+    "Wirkungsökonomie im Vergleich",
+    "Gemeinwohlökonomie",
+    "ESG",
+    "Donut-Ökonomie",
+    "Wirkung auf Mensch, Planet und Demokratie"
+  ],
+  "SDG": [
+    "SDGs",
+    "SDG+",
+    "GRI",
+    "CSRD",
+    "ESRS",
+    "Wirkungsmessung",
+    "globale Anschlussfähigkeit"
+  ],
+  "Reporting": [
+    "CSRD",
+    "ESRS",
+    "GRI",
+    "Nachhaltigkeitsdaten",
+    "Wirkungsdaten",
+    "Rückkopplung",
+    "Von Daten zum Steuersatz"
+  ],
+  "Wirkung": [
+    "Wirkung verstehen",
+    "Output",
+    "Outcome",
+    "Wirkungspotenzial",
+    "Wirkungsblindheit",
+    "Wirkungswahrheit",
+    "Wirkungsrückkopplung",
+    "Kausalität und Zurechnung",
+    "Wirkungsmanagement",
+    "Wirkungsarchitektur"
+  ],
+  "Wirkungsmanagement": [
+    "Wirkung verstehen",
+    "Wirkungsarchitektur",
+    "Wirkungscontrolling",
+    "Wirkungsmonitoring",
+    "Fördercontrolling",
+    "Wirkungssimulation",
+    "Wirkungswashing"
+  ],
+  "Förderpolitik": [
+    "Wirkung verstehen",
+    "Wirkungsmanagement",
+    "Förderlogik",
+    "Fördercontrolling",
+    "Wirkungsarchitektur",
+    "Systemsteuerung"
+  ],
+  "Datenbasis": [
+    "Methodik",
+    "Quellenregister",
+    "CSRD",
+    "ESRS",
+    "GRI",
+    "SDGs",
+    "Digitale Produktpässe",
+    "Scorecard",
+    "WÖk-ID",
+    "Datenqualität"
+  ],
+  "Methodik": [
+    "Datenbasis",
+    "Indikator-Mapping",
+    "WÖk-IDs",
+    "Scorecard",
+    "NWI",
+    "Schutzregel",
+    "Wirkungsklasse",
+    "Steuerklasse"
+  ],
+  "Medien": [
+    "Medienwirkung",
+    "Wirkung politischer Sprache",
+    "Narrative",
+    "Diskursfähigkeit",
+    "Demokratie",
+    "Plattformlogik"
+  ],
+  "Produkt": [
+    "Produktwirkung",
+    "Digitaler Produktpass",
+    "Scorecard",
+    "Wirkungssteuer",
+    "Steuerklasse",
+    "Apfel",
+    "T-Shirt"
+  ],
+  "Kapital": [
+    "T-SROI",
+    "Wirkungsökonomie im Vergleich",
+    "Kapitalwirkung",
+    "Wirkungskapital",
+    "Wirkungsrückkopplung",
+    "Finanzsystem",
+    "Risiko",
+    "Resilienz"
+  ],
+  "Wirkungsblindheit": [
+    "Wirkungswahrheit",
+    "Wirkungsbewertung",
+    "Wirkungsarchitektur",
+    "Wirkungsrückkopplung",
+    "Wirkung verstehen"
+  ],
+  "Wirkungswahrheit": [
+    "Wirkungsblindheit",
+    "Wirkungsdaten",
+    "Wirkungsanalyse",
+    "Resonanzraum",
+    "Wirkungsbewertung"
+  ],
+  "Wirkungsrückkopplung": [
+    "Wirkungslenkung",
+    "Wirkungsarchitektur",
+    "Wirkungssteuer",
+    "Wirkungshaushalt",
+    "WÖk-ID"
+  ],
+  "Wirkungsgrenze": [
+    "Nicht-Kompensation",
+    "Reverse Merit Order",
+    "Netto-Wirkung",
+    "Wirkungsbewertung",
+    "Rote Linien"
+  ],
+  "Beratung": [
+    "EY",
+    "KPMG",
+    "PwC",
+    "Deloitte",
+    "McKinsey",
+    "BCG",
+    "Accenture",
+    "ESG-Beratung",
+    "CSRD-Beratung",
+    "Assurance",
+    "Externe Quellen",
+    "Praxisquelle"
+  ],
+  "Professional Services": [
+    "Audit",
+    "Assurance",
+    "ESG Data Management",
+    "CSRD-Readiness",
+    "Double Materiality Assessment",
+    "Marktquelle"
+  ],
+  "Zertifizierung": [
+    "ISO",
+    "DIN",
+    "EMAS",
+    "B Corp",
+    "Fairtrade",
+    "FSC",
+    "EPD",
+    "GHG Protocol",
+    "SBTi",
+    "TNFD",
+    "Audit",
+    "Label",
+    "WÖk-Grenze"
+  ],
+  "Label": [
+    "EU Ecolabel",
+    "Blauer Engel",
+    "Cradle to Cradle",
+    "Fairtrade",
+    "FSC",
+    "PEFC",
+    "MSC",
+    "ASC",
+    "GOTS",
+    "OEKO-TEX",
+    "Labelwashing"
+  ],
+  "ISO": [
+    "ISO 14001",
+    "ISO 50001",
+    "ISO 45001",
+    "ISO 26000",
+    "ISO 14040",
+    "ISO 14067",
+    "ISO 27001",
+    "ISO 42001",
+    "Managementsystem"
+  ],
+  "Gemeinwohlökonomie": [
+    "GWÖ",
+    "Economy for the Common Good",
+    "Gemeinwohl-Bilanz",
+    "Gemeinwohl-Matrix",
+    "Wirkungsökonomie im Vergleich"
+  ],
+  "Donut": [
+    "Doughnut Economics",
+    "Doughnut Economics Action Lab",
+    "Kate Raworth",
+    "planetare Grenzen",
+    "soziales Fundament",
+    "Wirkungsökonomie im Vergleich"
+  ],
+  "Wellbeing Economy": [
+    "WEAll",
+    "Beyond GDP",
+    "Wohlergehen",
+    "Lebensqualität",
+    "OECD Well-being Framework",
+    "Wirkungsökonomie im Vergleich"
+  ],
+  "Degrowth": [
+    "Postwachstum",
+    "Wachstumskritik",
+    "BIP-Kritik",
+    "Suffizienz",
+    "planetare Grenzen",
+    "Wirkungsökonomie im Vergleich"
+  ],
+  "Circular Economy": [
+    "Kreislaufwirtschaft",
+    "DPP",
+    "Materialpass",
+    "Product Environmental Footprint",
+    "Cradle to Cradle",
+    "WÖk-ID"
+  ],
+  "Impact Investing": [
+    "GIIN",
+    "IRIS+",
+    "Social Value",
+    "SROI",
+    "T-SROI",
+    "Kapitalwirkung",
+    "positive Netto-Wirkung"
+  ],
+  "Assurance": [
+    "Sustainability Assurance",
+    "Audit",
+    "Wirkungsassurance",
+    "Datenqualität",
+    "CSRD",
+    "ESRS"
+  ],
+  "EUR-Lex": [
+    "EU-Rechtsakte",
+    "CSRD",
+    "ESRS",
+    "EU-Taxonomie",
+    "CSDDD",
+    "ESPR",
+    "Rechtsstand prüfen"
+  ],
+  "CBAM": [
+    "Carbon Border Adjustment Mechanism",
+    "EU Taxation and Customs",
+    "Emissionsdaten",
+    "Sustainable Finance"
+  ],
+  "UNSD": [
+    "SDG Indicators",
+    "SDG Data Portal",
+    "UN SDG Goals",
+    "Referenzrahmen",
+    "Wirkungsdaten"
+  ],
+  "ÖKOBAUDAT": [
+    "Bauprodukte",
+    "EPD",
+    "LCA",
+    "Produktdaten",
+    "Scorecard",
+    "WÖk-ID"
+  ],
+  "ESG-Ratings": [
+    "EU ESG Ratings Regulation",
+    "Sustainalytics",
+    "MSCI ESG",
+    "S&P Global CSA",
+    "ISS ESG",
+    "Moody's ESG",
+    "LSEG",
+    "EcoVadis",
+    "RepRisk",
+    "keine Scores kopieren"
+  ],
+  "KfW": [
+    "KfW SDG-Mapping",
+    "KfW Wirkungsmanagement",
+    "Sustainable Finance",
+    "Wirkungsdaten"
+  ],
+  "Mannheim 2030": [
+    "kommunale SDG-Indikatoren",
+    "Wirkungshaushalt",
+    "kommunale Daten",
+    "Wirkungslenkung"
+  ]
 }

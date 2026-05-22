@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Kondratieff-Wellen und Wirkungsökonomie als Betriebssystem</title>
+  <desc id="desc">Zeitachse mit Industrialisierung, Massenproduktion, Digitalisierung und Nachhaltigkeitstransformation. Die Wirkungsökonomie wird als Betriebssystem aus Daten, Bewertung, Rückkopplung und Lernen gezeigt.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f3ea}
+      .axis{stroke:#24312f;stroke-width:2;opacity:.45}
+      .wave1{fill:none;stroke:#6f7973;stroke-width:8;opacity:.45}
+      .wave2{fill:none;stroke:#4f6f78;stroke-width:8;opacity:.5}
+      .wave3{fill:none;stroke:#2f6f62;stroke-width:10;opacity:.58}
+      .wave4{fill:none;stroke:#18785f;stroke-width:14;opacity:.72}
+      .node{fill:#ffffff;stroke:#18785f;stroke-width:2}
+      .label{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;fill:#17211f}
+      .small{font-family:Inter,Arial,sans-serif;font-size:21px;fill:#36423f}
+      .tiny{font-family:Inter,Arial,sans-serif;font-size:18px;fill:#52615d}
+      .tag{fill:#ffffff;stroke:#d8d0c2;stroke-width:1.5}
+      .tag-text{font-family:Inter,Arial,sans-serif;font-size:20px;font-weight:700;fill:#23433b}
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="900"/>
+  <line class="axis" x1="120" y1="560" x2="1480" y2="560"/>
+  <path class="wave1" d="M130 560 C220 360 360 360 450 560"/>
+  <path class="wave2" d="M380 560 C500 300 680 300 800 560"/>
+  <path class="wave3" d="M720 560 C850 280 1030 280 1160 560"/>
+  <path class="wave4" d="M1040 560 C1180 210 1400 190 1500 560"/>
+  <g transform="translate(120 615)">
+    <text class="label" x="0" y="0">1.-2. Kondratieff</text>
+    <text class="small" x="0" y="36">Industrialisierung</text>
+    <text class="tiny" x="0" y="68">Dampf · Eisenbahn · Stahl</text>
+    <text class="tiny" x="0" y="96">Leitlogik: Kosten senken</text>
+  </g>
+  <g transform="translate(470 615)">
+    <text class="label" x="0" y="0">3.-4. Kondratieff</text>
+    <text class="small" x="0" y="36">Massenproduktion</text>
+    <text class="tiny" x="0" y="68">Elektrizität · Chemie · Automobil</text>
+    <text class="tiny" x="0" y="96">Leitlogik: Nutzen skalieren</text>
+  </g>
+  <g transform="translate(830 615)">
+    <text class="label" x="0" y="0">5. Kondratieff</text>
+    <text class="small" x="0" y="36">Digitalisierung</text>
+    <text class="tiny" x="0" y="68">IT · Kommunikation · Globalisierung</text>
+    <text class="tiny" x="0" y="96">Leitlogik: Effizienz und Vernetzung</text>
+  </g>
+  <g transform="translate(1120 145)">
+    <rect class="tag" x="-24" y="-48" rx="18" width="410" height="154"/>
+    <text class="label" x="0" y="0">6. Kondratieff</text>
+    <text class="small" x="0" y="38">Nachhaltigkeitstransformation</text>
+    <text class="tiny" x="0" y="70">Resilienz · Gesundheit · Kreisläufe · Wirkung</text>
+  </g>
+  <g transform="translate(1120 350)">
+    <circle class="node" cx="0" cy="0" r="18"/>
+    <circle class="node" cx="120" cy="-70" r="18"/>
+    <circle class="node" cx="250" cy="-10" r="18"/>
+    <circle class="node" cx="340" cy="85" r="18"/>
+    <circle class="node" cx="130" cy="115" r="18"/>
+    <path class="axis" d="M18 0 L102 -62 M138 -66 L232 -18 M266 0 L326 74 M322 90 L148 112 M118 104 L14 12"/>
+    <text class="tag-text" x="-40" y="-38">Daten</text>
+    <text class="tag-text" x="90" y="-100">Wirkung</text>
+    <text class="tag-text" x="220" y="-45">Mensch</text>
+    <text class="tag-text" x="320" y="130">Planet</text>
+    <text class="tag-text" x="70" y="155">Demokratie</text>
+  </g>
+  <g transform="translate(160 95)">
+    <text class="label" x="0" y="0">Die neue Welle braucht nicht nur neue Technologien.</text>
+    <text class="label" x="0" y="42">Sie braucht neue Signale.</text>
+  </g>
+  <g transform="translate(460 820)">
+    <rect class="tag" x="-34" y="-46" rx="20" width="680" height="78"/>
+    <text class="tag-text" x="0" y="0">WÖk als Betriebssystem: Daten → Bewertung → Rückkopplung → Lernen</text>
+  </g>
+</svg>

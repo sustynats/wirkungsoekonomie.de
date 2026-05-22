@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22"
+  },
+  "visuals": [
+    {
+      "visual_id": "daten-zur-scorecard",
+      "title": "Von Daten zur Scorecard",
+      "page": "/modell.html",
+      "visual_type": "prozessgrafik",
+      "based_on_sources": [
+        "eu-csrd-2022-2464",
+        "eu-esrs-2023-2772",
+        "gri-universal-standards-2021"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "geplante SVG/Infografik",
+      "data_sources": [
+        "CSRD",
+        "ESRS",
+        "GRI"
+      ],
+      "interpretation_notes": "Zeigt methodischen Prozess, keine Rechtsberatung.",
+      "license_notes": "Eigenes Visual; Quellen nennen.",
+      "alt_text": "Prozess von Datenquellen über Wirkungsindikatoren zur Scorecard.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "scorecard-zur-steuerklasse",
+      "title": "Von Scorecard zur Steuerklasse",
+      "page": "/fuer/wirkungssteuer.html",
+      "visual_type": "prozessgrafik",
+      "based_on_sources": [
+        "eu-csrd-2022-2464"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "geplante SVG/Infografik",
+      "data_sources": [
+        "WÖk-Modellstand, freizugebende WStG/WUStG-Dokumente"
+      ],
+      "interpretation_notes": "Keine Steuersätze ohne Freigabe.",
+      "license_notes": "Eigenes Visual; Modellstatus markieren.",
+      "alt_text": "Prozess von Scorecard über FinalScore und Wirkungsklasse zur Steuerlogik.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "wirkung-vs-wirkungspotenzial",
+      "title": "Wirkung vs. Wirkungspotenzial",
+      "page": "/glossar.html",
+      "visual_type": "erklärgrafik",
+      "based_on_sources": [
+        "claim-complex-systems-nonlinear"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "geplante SVG/Infografik",
+      "data_sources": [
+        "WÖk-Begriffsleitfaden"
+      ],
+      "interpretation_notes": "Begriffsgrafik, keine empirische Datenvisualisierung.",
+      "license_notes": "Eigenes Visual.",
+      "alt_text": "Unterscheidung von Auslöser, Wirkungspotenzial und eingetretener Zustandsveränderung.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "wirkungsarchitektur",
+      "title": "Wirkungsarchitektur",
+      "page": "/modell.html",
+      "visual_type": "systemdiagramm",
+      "based_on_sources": [
+        "meadows-thinking-systems",
+        "beer-brain-of-firm"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "kombinierte Grafik-Komponente",
+      "data_sources": [
+        "WÖk-Modell, Systemtheorie"
+      ],
+      "interpretation_notes": "Systemische Modellgrafik.",
+      "license_notes": "Eigenes Visual.",
+      "alt_text": "Systemdiagramm aus Daten, Regeln, Institutionen, Anreizen und Lernen.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "vergleich-modelle",
+      "title": "WÖk vs ESG vs GWÖ vs Donut vs Wellbeing",
+      "page": "/vergleich.html",
+      "visual_type": "vergleichsgrafik",
+      "based_on_sources": [
+        "raworth-doughnut-economics",
+        "stiglitz-sen-fitoussi-report"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "gestaltete SVG-Infografik",
+      "data_sources": [
+        "Vergleichsmodelle"
+      ],
+      "interpretation_notes": "Vergleichende Einordnung, keine Abwertung anderer Modelle.",
+      "license_notes": "Keine Logos übernehmen.",
+      "alt_text": "Vergleich mehrerer Wirtschafts- und Wirkungsmodelle.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "soziale-marktwirtschaft-vs-woek",
+      "title": "Soziale Marktwirtschaft vs. WÖk",
+      "page": "/ordnung/soziale-marktwirtschaft-weiterdenken.html",
+      "visual_type": "vergleichsgrafik",
+      "based_on_sources": [
+        "smith-wealth-nations",
+        "stiglitz-sen-fitoussi-report"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "gestaltete SVG-Infografik",
+      "data_sources": [
+        "Ordnungsquellen, WÖk-Modell"
+      ],
+      "interpretation_notes": "Ordnungspolitische Deutung.",
+      "license_notes": "Eigenes Visual.",
+      "alt_text": "Vergleich Markt plus Ausgleich mit Markt plus soziale Sicherheit, Planet und Demokratie.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "unternehmensfuehrung-roadmap",
+      "title": "Wirkungsorientierte Unternehmensführung als Roadmap",
+      "page": "/fuer/unternehmen.html",
+      "visual_type": "roadmap",
+      "based_on_sources": [
+        "change-kotter",
+        "change-prosci-adkar",
+        "eu-csrd-2022-2464"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "Roadmap-Infografik",
+      "data_sources": [
+        "Change Management, WÖk-Modell"
+      ],
+      "interpretation_notes": "Praxisstruktur, kein Zertifizierungsstandard.",
+      "license_notes": "Eigenes Visual.",
+      "alt_text": "Zehn Schritte zur wirkungsorientierten Unternehmensführung.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "kompass-scanner-logik",
+      "title": "WÖk-Kompass / Scanner-Logik",
+      "page": "/kompass.html",
+      "visual_type": "systemdiagramm",
+      "based_on_sources": [
+        "un-agenda-2030"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "UI-/Systemgrafik",
+      "data_sources": [
+        "WÖk-Kompass-Datenstruktur"
+      ],
+      "interpretation_notes": "Produktlogik, keine externe Datenvisualisierung.",
+      "license_notes": "Eigenes Visual.",
+      "alt_text": "Kompass erklärt, Scanner analysiert konkrete Beispiele.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "kondratieff-woek-betriebssystem",
+      "title": "Kondratieff-Wellen / Nachhaltigkeitstransformation / WÖk als Betriebssystem",
+      "page": "/wissen/sechster-kondratieff.html",
+      "visual_type": "hero_infographic",
+      "based_on_sources": [
+        "kondratieff-major-economic-cycles",
+        "kondratieff-long-waves-economic-life",
+        "schumpeter-theorie",
+        "meadows-limits-growth",
+        "un-agenda-2030",
+        "eu-csrd-2022-2464"
+      ],
+      "created_by": "WÖk Redaktion / später ggf. KI-generiert",
+      "generation_method": "Basisbild später separat; präzises SVG-/HTML-Overlay vorbereitet",
+      "data_sources": [
+        "wirtschaftshistorische Deutungsfigur",
+        "WÖk-Begriffsleitfaden",
+        "Buch Die neue Ordnung des Wohlstands",
+        "SDGs / Agenda 2030",
+        "CSRD / ESRS als Dateninfrastrukturbeispiel"
+      ],
+      "interpretation_notes": "Kondratieff-Zyklen werden als Deutungsmodell verwendet, nicht als deterministische Theorie. Texte und Labels werden als kontrolliertes Overlay gesetzt.",
+      "license_notes": "Keine Logos, keine Marken, keine falsche Datenpräzision; KI-Basisbild als Illustration kennzeichnen.",
+      "alt_text": "Infografik zu langen wirtschaftlichen Entwicklungswellen. Von links nach rechts zeigt eine Zeitachse frühere Wellen der Industrialisierung, Massenproduktion und Digitalisierung. Rechts öffnet sich eine größere sechste Welle mit Nachhaltigkeit, Resilienz, Gesundheit, Daten und Rückkopplung. Die Grafik stellt die Wirkungsökonomie als Betriebssystem der Nachhaltigkeitstransformation dar.",
+      "last_updated": "2026-05-22"
+    },
+    {
+      "visual_id": "wirkungspfad-politische-sprache",
+      "title": "Wirkungspfad politischer Sprache",
+      "page": "/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+      "visual_type": "wirkungspfad",
+      "based_on_sources": [
+        "eu-dsa-2022-2065",
+        "foerster-observing-systems"
+      ],
+      "created_by": "WÖk Redaktion",
+      "generation_method": "Wirkungspfad-Infografik",
+      "data_sources": [
+        "Medien-/Demokratiequellen, WÖk-Sprachlogik"
+      ],
+      "interpretation_notes": "Wirkungspotenzial und Resonanzrisiko, kein automatischer Wirkungsnachweis.",
+      "license_notes": "Eigenes Visual.",
+      "alt_text": "Pfad von Begriff oder Narrativ über Resonanzraum zu demokratischem Risiko.",
+      "last_updated": "2026-05-22"
+    }
+  ]
+}

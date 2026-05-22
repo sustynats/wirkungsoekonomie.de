@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WÖk-Kompass - Verstehe Wirkung</title>
+    <meta name="description" content="Der WÖk-Kompass ist ein interaktiver Wirkungsnavigator für Mensch, Planet und Demokratie: Wirkung verstehen, einordnen und analysieren.">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/kompass.html">
+    <meta name="search_title" content="WÖk-Kompass">
+    <meta name="search_description" content="Interaktiver Wirkungsnavigator mit Themenkacheln, kuratierten Fragen, Wirkungspfaden, SDG-/SDG+-Bezug, Glossar und Quellenpanel.">
+    <meta name="search_type" content="Tool / Demo">
+    <meta name="search_section" content="Kompass">
+    <meta name="search_tags" content="WÖk-Kompass, Wirkung verstehen, Wirkungspfad, SDG, SDG+, Wirkungsanalyse, Bio-Apfel, Desinformation, ESG, WÖk-ID, Scorecard, Reverse Merit Order">
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+        <a href="modell.html">Modell</a>
+        <a href="ordnung/">Ordnung</a>
+        <a href="fuer/">Für wen</a>
+        <a href="quellen/">Quellen</a>
+        <a href="kompass.html">Kompass</a>
+        <a href="anwendungen.html">Anwendungen</a>
+        <a href="erleben.html">Erleben</a>
+        <a href="buch.html">Buch</a>
+        <a href="blog.html">Blog</a>
+        <a href="akademie.html">Akademie</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="mitmachen.html">Mitmachen</a>
+        <a href="suche.html">Suche</a>
+      </nav>
+    </header>
+
+    <main class="kompass-page" data-pagefind-body data-kompass-root>
+      <section class="kompass-hero" aria-labelledby="kompass-title">
+        <div class="kompass-hero-inner">
+          <p class="hero-kicker">WÖk-Kompass</p>
+          <h1 id="kompass-title">Verstehe Wirkung.</h1>
+          <p class="hero-subtitle">Für Mensch, Planet und Demokratie.</p>
+          <p>Der WÖk-Kompass ist die Oberfläche des Wissensraums: kein Chatfenster, sondern ein strukturierter Denkraum für Wirkungspfade, Begriffe, SDG-/SDG+-Bezüge und Quellen.</p>
+          <div class="kompass-notice" role="note">
+            Der WÖk-Kompass erklärt die aktuelle Systematik der Wirkungsökonomie. Er ersetzt keine Rechts-, Steuer-, Anlage- oder Nachhaltigkeitsberatung. Analysen sind wirkungsökonomische Einordnungen, keine amtlichen Bewertungen.
+          </div>
+        </div>
+      </section>
+
+      <section class="section kompass-workspace" aria-labelledby="kompass-question-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Wirkungsnavigation</p>
+            <h2 id="kompass-question-title">Was möchtest du verstehen?</h2>
+          </div>
+
+          <section class="kompass-panel" aria-label="WÖk-Kompass Oberfläche">
+            <div class="kompass-control-band">
+              <div class="compass-mode-selector" data-compass-mode-selector aria-label="Modus auswählen">
+                <button type="button" class="active" data-mode="Verstehen" aria-pressed="true">Verstehen</button>
+                <button type="button" data-mode="Einordnen" aria-pressed="false">Einordnen</button>
+                <button type="button" data-mode="Analysieren" aria-pressed="false">Analysieren</button>
+              </div>
+              <div class="compass-question-input">
+                <label for="compass-query">Begriff, Frage oder Beispiel eingeben</label>
+                <div class="compass-search-row">
+                  <input id="compass-query" type="search" autocomplete="off" placeholder="z. B. Warum wäre ein Bio-Apfel günstiger? / Was ist Wirkungsrückkopplung? / Was bedeutet SDG+?">
+                  <button class="btn btn-primary" type="button" data-compass-submit>Wirkungspfad ansehen</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="compass-topic-grid" data-compass-topic-grid aria-label="Themen des WÖk-Kompasses"></div>
+
+            <div class="compass-suggestions" aria-label="Kuratierte Einstiegsfragen">
+              <div class="compass-suggestions-header">
+                <p class="hero-kicker">Startfragen</p>
+                <p data-compass-suggestion-count>Kuratiert und geprüft.</p>
+              </div>
+              <div class="compass-question-list" data-compass-question-list></div>
+            </div>
+          </section>
+
+          <section class="compass-answer-panel" data-compass-answer-panel aria-live="polite">
+            <div class="compass-empty-state">
+              <p class="hero-kicker">Denkraum</p>
+              <h3>Wähle eine Frage oder gib einen Begriff ein.</h3>
+              <p>Der Kompass zeigt danach Kurzantwort, Formel, Wirkungspfad, Mensch-Planet-Demokratie-Bezug, SDG-/SDG+-Bezug, zentrale Begriffe und Quellen.</p>
+            </div>
+          </section>
+
+          <section class="scanner-mode-panel" aria-labelledby="target-title">
+            <div>
+              <p class="hero-kicker">Zielgruppenmodus</p>
+              <h2 id="target-title">Aus welcher Perspektive möchtest du Wirkung verstehen?</h2>
+              <p>Unternehmen, Politik, Bürger:innen, Mieter:innen, Rente / Einkommen, Journalismus, Investor:innen, Kommunen und Akademie haben eigene Einstiege im Zielgruppen-Hub.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="fuer/">Zielgruppen öffnen</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="scanner-mode-panel" aria-labelledby="scanner-title">
+            <div>
+              <p class="hero-kicker">Analysemodus</p>
+              <h2 id="scanner-title">WÖk-Scanner als MVP vorbereitet</h2>
+              <p>Geplante Eingaben: Unternehmen, Produkt, Artikel, Website, Wahlprogramm, politische Aussage, Gesetz, Investition oder Alltagsentscheidung.</p>
+              <p>Ausgabe: Wirkungspotenziale, SDG-/SDG+-Bezug, Wirkungsfelder, Wirkungspfad, Zielkonflikte, Datenbedarf, Quellen und Grenzen der Analyse. Keine amtliche Bewertung.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="scanner.html">WÖk-Scanner öffnen</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Portal der Wirkungsökonomie: ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das den Kompass von Kapital zu Wirkung verschiebt.</p>
+          <p>Kontakt: <a class="text-link" href="mailto:impact@wirkungsoekonomie.org">impact@wirkungsoekonomie.org</a></p>
+        </div>
+        <a class="btn btn-primary" href="kompass.html">WÖk-Kompass öffnen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="index.html">Start</a>
+          <a href="wirkungsoekonomie.html">Wirkungsökonomie</a>
+          <a href="modell.html">Modell</a>
+          <a href="ordnung/">Ordnung</a>
+          <a href="fuer/">Für wen</a>
+          <a href="quellen/">Quellen</a>
+          <a href="kompass.html">Kompass</a>
+          <a href="scanner.html">Scanner</a>
+          <a href="anwendungen.html">Anwendungen</a>
+          <a href="erleben.html">Erleben</a>
+          <a href="buch.html">Buch</a>
+          <a href="blog.html">Blog</a>
+          <a href="akademie.html">Akademie</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="mitmachen.html">Mitmachen</a>
+          <a href="glossar.html">Glossar</a>
+          <a href="sdg-plus.html">SDG+</a>
+          <a href="sdg-plus/medien-demokratie.html">Medien & Demokratie</a>
+          <a href="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Wirkung politischer Sprache</a>
+          <a href="methodik/datenbasis.html">Methodik</a>
+          <a href="suche.html">Suche</a>
+          <a href="natalie-weber.html">Natalie Weber</a>
+          <a href="ueber.html">Über die Wirkungsökonomie</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js?v=20260522-kompass"></script>
+    <script src="assets/js/kompass.js?v=20260522-kompass-2"></script>
+  </body>
+</html>

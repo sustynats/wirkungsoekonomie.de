@@ -11,6 +11,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
+  const searchDataVersion = "20260522-full-index-2";
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;
@@ -25,7 +26,11 @@
     timer: null,
   };
 
-  const dataUrl = (fileName) => new URL(`../search/${fileName}`, searchScriptUrl).href;
+  const dataUrl = (fileName) => {
+    const url = new URL(`../search/${fileName}`, searchScriptUrl);
+    url.searchParams.set("v", searchDataVersion);
+    return url.href;
+  };
 
   function normalize(value) {
     return String(value || "")
@@ -87,7 +92,7 @@
   }
 
   function fuzzyTokenMatch(token, haystack) {
-    if (token.length < 4) {
+    if (token.length < 5) {
       return false;
     }
     return haystack.split(" ").some((word) => {
@@ -95,6 +100,15 @@
       const limit = token.length > 7 ? 2 : 1;
       return levenshtein(token, word) <= limit;
     });
+  }
+
+  function containsToken(value, token) {
+    const words = normalize(value).split(" ").filter(Boolean);
+    return words.some((word) => word === token || (token.length >= 4 && word.startsWith(token)));
+  }
+
+  function containsQuery(value, query) {
+    return query.includes(" ") ? normalize(value).includes(query) : containsToken(value, query);
   }
 
   function expandQuery(rawQuery) {
@@ -121,6 +135,10 @@
     return unique(Array.from(expanded).flatMap((term) => term.split(" "))).filter((token) => token.length > 1);
   }
 
+  function getQueryTokens(rawQuery) {
+    return normalize(rawQuery).split(" ").filter((token) => token.length > 1);
+  }
+
   function fieldContains(entry, field, selected) {
     if (!selected) return true;
     const needle = normalize(selected);
@@ -143,7 +161,28 @@
     });
   }
 
+  function entryMatchesQuery(entry, rawQuery) {
+    const query = normalize(rawQuery);
+    const queryTokens = getQueryTokens(rawQuery);
+    const haystack = entry._haystack || getEntryHaystack(entry);
+
+    if (!query) return true;
+    if (containsQuery(haystack, query)) return true;
+    if (queryTokens.length >= 3 && queryTokens.some((token) => /\d/.test(token))) {
+      return false;
+    }
+    if (queryTokens.length <= 1) {
+      const token = queryTokens[0] || query;
+      return containsToken(haystack, token) || fuzzyTokenMatch(token, haystack);
+    }
+    return queryTokens.every((token) => containsToken(haystack, token) || fuzzyTokenMatch(token, haystack));
+  }
+
   function scoreEntry(entry, rawQuery, tokens) {
+    if (!entryMatchesQuery(entry, rawQuery)) {
+      return 0;
+    }
+
     const query = normalize(rawQuery);
     const title = normalize(entry.title);
     const description = normalize(entry.description);
@@ -154,23 +193,42 @@
     const haystack = entry._haystack || getEntryHaystack(entry);
     let score = Number(entry.priority || 0);
 
-    if (title.includes(query)) score += 120;
-    if (aliases.includes(query)) score += 90;
-    if (description.includes(query)) score += 55;
-    if (tags.includes(query)) score += 40;
-    if (standards.includes(query) || instruments.includes(query)) score += 42;
-    if (haystack.includes(query)) score += 28;
+    if (containsQuery(title, query)) score += 120;
+    if (containsQuery(aliases, query)) score += 90;
+    if (containsQuery(description, query)) score += 55;
+    if (containsQuery(tags, query)) score += 40;
+    if (containsQuery(standards, query) || containsQuery(instruments, query)) score += 42;
+    if (containsQuery(haystack, query)) score += 80;
 
     tokens.forEach((token) => {
-      if (title.includes(token)) score += 30;
-      if (aliases.includes(token)) score += 24;
-      if (description.includes(token)) score += 14;
-      if (tags.includes(token) || standards.includes(token) || instruments.includes(token)) score += 12;
-      if (haystack.includes(token)) score += 4;
+      if (containsToken(title, token)) score += 30;
+      if (containsToken(aliases, token)) score += 24;
+      if (containsToken(description, token)) score += 14;
+      if (containsToken(tags, token) || containsToken(standards, token) || containsToken(instruments, token)) score += 12;
+      if (containsToken(haystack, token)) score += 4;
       else if (fuzzyTokenMatch(token, haystack)) score += 3;
     });
 
     return score;
+  }
+
+  function makeSnippet(entry, rawQuery) {
+    const fallback = entry.description || entry.body || "";
+    const body = String(entry.body || fallback);
+    const query = normalize(rawQuery);
+    if (!query || !body) return fallback;
+
+    const normalizedBody = normalize(body);
+    let index = normalizedBody.indexOf(query);
+    if (index < 0) {
+      const firstToken = getQueryTokens(rawQuery).find((token) => normalizedBody.includes(token));
+      index = firstToken ? normalizedBody.indexOf(firstToken) : -1;
+    }
+    if (index < 0) return fallback;
+
+    const start = Math.max(0, index - 140);
+    const end = Math.min(body.length, index + query.length + 220);
+    return `${start > 0 ? "..." : ""}${body.slice(start, end)}${end < body.length ? "..." : ""}`;
   }
 
   function findRecommended(rawQuery) {
@@ -260,7 +318,7 @@
     resultsList.innerHTML = results
       .map(({ entry }) => {
         const tags = unique([...asArray(entry.tags), ...asArray(entry.instruments), ...asArray(entry.standards)]).slice(0, 6);
-        const snippet = entry.description || entry.body || "";
+        const snippet = makeSnippet(entry, rawQuery);
         return `
           <li class="search-result-card">
             <article>

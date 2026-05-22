@@ -12,8 +12,8 @@ HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
 
 
-HEADER_RE = re.compile(r"    <header class=\"site-header\">.*?    </header>", re.S)
-FOOTER_RE = re.compile(r"    <footer class=\"footer\">.*?    </footer>", re.S)
+HEADER_RE = re.compile(r"    <header class=\"site-header\">.*?</header>", re.S)
+FOOTER_RE = re.compile(r"    <footer class=\"footer\">.*?</footer>", re.S)
 
 
 def base_for(path: Path) -> str:
@@ -56,6 +56,10 @@ def main() -> None:
     for path in changed:
         print(path.relative_to(SITE_ROOT))
     print(f"Updated {len(changed)} files.")
+
+    import build_search_index
+
+    build_search_index.main()
 
 
 if __name__ == "__main__":
