@@ -19,9 +19,10 @@ Die Hauptnavigation folgt jetzt der Denklogik Orientierung -> Verständnis -> Ve
 6. Anwendungen
 7. Ordnung
 8. Akademie
-9. Suche
+9. Mehr
+10. Suche
 
-Nach dem Live-Test im iframe wurde die Aufklapp-Navigation aus dem Header entfernt. Der Header ist jetzt bewusst flach und iframe-robust. Vertiefungslinks bleiben über Footer, Inhaltsseiten, Evidenz und die Anwendungen-Seite erreichbar.
+Nach dem Live-Test im iframe wurde die Aufklapp-Navigation aus dem Header entfernt. Der Header ist jetzt bewusst flach und iframe-robust. Anwendungen und Mehr sind normale Links auf Übersichtsseiten, auf denen die zweite Ebene weiterführt.
 
 ## Scanner
 
@@ -55,9 +56,11 @@ Akademie bleibt sichtbarer Hauptnavigationspunkt.
 
 Begründung: Die Akademie ist Kompetenzraum, Lernarchitektur, Studienpfad und institutioneller Bildungsraum. Sie signalisiert wissenschaftliche Ernsthaftigkeit und langfristige Wissensarchitektur.
 
-## Vertiefungen statt Mehr-Menü
+## Mehr als Übersichtsseite
 
-Das frühere Mehr-Menü wurde aus dem Header entfernt, weil Dropdowns in iframe-Umgebungen abgeschnitten werden können. Die Vertiefungs- und Projektbereiche bleiben im Footer und auf Inhaltsseiten erreichbar:
+Das frühere Mehr-Menü wurde als Dropdown entfernt, weil Aufklappbereiche in iframe-Umgebungen abgeschnitten werden können. Stattdessen führt `Mehr` als normaler Header-Link auf `mehr.html`.
+
+Die Vertiefungs- und Projektbereiche werden dort als ruhige Kartennavigation gebündelt:
 
 - Blog / Journal
 - Evidenz
@@ -69,7 +72,7 @@ Das frühere Mehr-Menü wurde aus dem Header entfernt, weil Dropdowns in iframe-
 - Mitmachen
 - Über die WÖk
 
-Quellen erscheinen nicht mehr als prominenter Hauptpunkt. Die frühere Quellenlogik ist über Evidenz gebündelt und bleibt über das Mehr-Menü, Footer und Evidenz-/Quellenbereiche erreichbar.
+Quellen erscheinen nicht mehr als prominenter Hauptpunkt. Die frühere Quellenlogik ist über Evidenz gebündelt und bleibt über Mehr, Footer und Evidenz-/Quellenbereiche erreichbar.
 
 ## Footer
 
@@ -87,12 +90,14 @@ Impressum und Datenschutz bleiben als separate rechtliche Footer-Zeile erhalten.
 Mobile nutzt dieselbe Reihenfolge wie Desktop.
 Es gibt keine aufklappbaren Header-Bereiche mehr.
 Der Scanner steht mobil nicht mehr als eigener Hauptpunkt, sondern wird über Anwendungen erreicht.
+Mehr ist mobil ebenfalls ein normaler Link auf die Vertiefungsseite.
 Der mobile Menüknopf wurde als klarer Touch-Button stabilisiert; unter sehr kleinen Viewports wird der Drawer auf eine handliche Breite begrenzt, damit keine Navigation horizontal abgeschnitten wird.
 
 ## Active State
 
 Active States werden zentral über `data-nav-match` und `assets/js/main.js` gesetzt.
 Anwendungen wird aktiv markiert, wenn eine zugeordnete Anwendungsseite wie Scanner, politische Sprache, Unternehmen, Wohnen, Rente oder Wirkungseinkommen aktiv ist.
+Mehr wird aktiv markiert, wenn Vertiefungsseiten wie Blog, Evidenz, SDG+, Methodik, Glossar, Buch, Downloads, Mitmachen oder Über die WÖk geöffnet sind.
 
 ## Abweichende Altlasten
 
@@ -107,12 +112,12 @@ Beim Audit wurden vier alte Wissens-Unterseiten mit verkürzter Navigation gefun
 
 ## Ergebnis
 
-Der finale Header wurde auf 177 HTML-Seiten geprüft. Alle gefundenen Header verwenden dieselbe Primärnavigation:
+Der finale Header wurde auf 178 HTML-Seiten geprüft. Alle gefundenen Header verwenden dieselbe Primärnavigation:
 
-Start -> Verstehen -> Modell -> Kompass -> Für wen? -> Anwendungen -> Ordnung -> Akademie -> Suche.
+Start -> Verstehen -> Modell -> Kompass -> Für wen? -> Anwendungen -> Ordnung -> Akademie -> Mehr -> Suche.
 
 Die Navigation führt jetzt:
 
-Verstehen -> Modell -> Orientierung -> Zielgruppen -> Anwendungen -> Ordnung -> Lernen.
+Verstehen -> Modell -> Orientierung -> Zielgruppen -> Anwendungen -> Ordnung -> Lernen -> Vertiefung.
 
 Die Website wirkt dadurch weniger wie ein Dokumentenarchiv oder Tool-Katalog und stärker wie ein geführter Denkraum der Wirkungsökonomie.
