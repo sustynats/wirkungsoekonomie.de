@@ -19,19 +19,20 @@ Die Hauptnavigation folgt jetzt der Denklogik Orientierung -> Verständnis -> Ve
 6. Anwendungen
 7. Ordnung
 8. Akademie
-9. Mehr
-10. Suche
+9. Suche
+
+Nach dem Live-Test im iframe wurde die Aufklapp-Navigation aus dem Header entfernt. Der Header ist jetzt bewusst flach und iframe-robust. Vertiefungslinks bleiben über Footer, Inhaltsseiten, Evidenz und die Anwendungen-Seite erreichbar.
 
 ## Scanner
 
 Der Scanner wurde aus der Hauptnavigation entfernt.
-Er ist jetzt der erste und prominenteste Unterpunkt im Anwendungen-Menü.
+Er ist jetzt der erste und prominenteste Einstieg auf der Anwendungen-Ebene.
 
 Begründung: Der Scanner ist ein Wirkungsanalyse-Tool und eine operative Anwendung der Wirkungsökonomie, aber nicht die Hauptidentität des Modells.
 
 ## Anwendungen-Menü
 
-Unter Anwendungen stehen jetzt:
+Die Anwendungen-Seite bündelt:
 
 - Scanner
 - Wirkung politischer Sprache
@@ -54,9 +55,9 @@ Akademie bleibt sichtbarer Hauptnavigationspunkt.
 
 Begründung: Die Akademie ist Kompetenzraum, Lernarchitektur, Studienpfad und institutioneller Bildungsraum. Sie signalisiert wissenschaftliche Ernsthaftigkeit und langfristige Wissensarchitektur.
 
-## Mehr-Menü
+## Vertiefungen statt Mehr-Menü
 
-Das Mehr-Menü enthält jetzt die Vertiefungs- und Projektbereiche:
+Das frühere Mehr-Menü wurde aus dem Header entfernt, weil Dropdowns in iframe-Umgebungen abgeschnitten werden können. Die Vertiefungs- und Projektbereiche bleiben im Footer und auf Inhaltsseiten erreichbar:
 
 - Blog / Journal
 - Evidenz
@@ -84,14 +85,14 @@ Impressum und Datenschutz bleiben als separate rechtliche Footer-Zeile erhalten.
 ## Mobile
 
 Mobile nutzt dieselbe Reihenfolge wie Desktop.
-Anwendungen und Mehr sind aufklappbare Bereiche.
-Der Scanner steht mobil nicht mehr als eigener Hauptpunkt, sondern als erster Link unter Anwendungen.
+Es gibt keine aufklappbaren Header-Bereiche mehr.
+Der Scanner steht mobil nicht mehr als eigener Hauptpunkt, sondern wird über Anwendungen erreicht.
 Der mobile Menüknopf wurde als klarer Touch-Button stabilisiert; unter sehr kleinen Viewports wird der Drawer auf eine handliche Breite begrenzt, damit keine Navigation horizontal abgeschnitten wird.
 
 ## Active State
 
 Active States werden zentral über `data-nav-match` und `assets/js/main.js` gesetzt.
-Dropdowns werden aktiv markiert, wenn eine untergeordnete Seite oder ein zugeordnetes Pfadmuster aktiv ist.
+Anwendungen wird aktiv markiert, wenn eine zugeordnete Anwendungsseite wie Scanner, politische Sprache, Unternehmen, Wohnen, Rente oder Wirkungseinkommen aktiv ist.
 
 ## Abweichende Altlasten
 
@@ -108,10 +109,10 @@ Beim Audit wurden vier alte Wissens-Unterseiten mit verkürzter Navigation gefun
 
 Der finale Header wurde auf 177 HTML-Seiten geprüft. Alle gefundenen Header verwenden dieselbe Primärnavigation:
 
-Start -> Verstehen -> Modell -> Kompass -> Für wen? -> Anwendungen -> Ordnung -> Akademie -> Mehr -> Suche.
+Start -> Verstehen -> Modell -> Kompass -> Für wen? -> Anwendungen -> Ordnung -> Akademie -> Suche.
 
 Die Navigation führt jetzt:
 
-Verstehen -> Modell -> Orientierung -> Zielgruppen -> Anwendungen -> Ordnung -> Lernen -> Vertiefung/Evidenz.
+Verstehen -> Modell -> Orientierung -> Zielgruppen -> Anwendungen -> Ordnung -> Lernen.
 
 Die Website wirkt dadurch weniger wie ein Dokumentenarchiv oder Tool-Katalog und stärker wie ein geführter Denkraum der Wirkungsökonomie.
