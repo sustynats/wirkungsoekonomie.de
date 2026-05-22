@@ -56,7 +56,7 @@
             <h1 class="hero-title">Wirkungseinkommen</h1>
             <p class="hero-subtitle">Wenn Maschinen Produktivität erzeugen, muss Produktivität gesellschaftlich zurückgekoppelt werden.</p>
             <p>Das Wirkungseinkommen beantwortet eine zentrale Frage der automatisierten Gesellschaft: Was passiert mit Einkommen, Sicherheit und Teilhabe, wenn KI, Robotik und Automatisierung Wertschöpfung erzeugen, ohne dass Erwerbsarbeit für alle im bisherigen Umfang nötig bleibt?</p><p>Die alte Ordnung koppelt Einkommen, Würde, Steuerbasis und soziale Sicherheit an Erwerbsarbeit. Die Wirkungsökonomie löst Einkommen nicht einfach von Arbeit. Sie bindet Einkommen an Wirkung zurück.</p>
-            <div class="scanner-notice" role="note"><strong>Status:</strong> needs_review. Diese Seite erklärt die aktuelle Systematik der Wirkungsökonomie. Sie ersetzt keine Rechts-, Steuer-, Anlage-, Leistungs- oder Politikberatung. Konkrete Zahlen und gesetzliche Ausgestaltungen gelten nur, wenn sie ausdrücklich als freigegebener Modellstand gekennzeichnet sind.</div>
+            <div class="scanner-notice" role="note"><strong>Konzeptstand:</strong> Diese Seite erklärt die aktuelle Systematik der Wirkungsökonomie. Sie ersetzt keine Rechts-, Steuer-, Anlage-, Leistungs- oder Politikberatung. Konkrete Zahlen und gesetzliche Ausgestaltungen gelten nur, wenn sie ausdrücklich als freigegebener Modellstand gekennzeichnet sind.</div>
           </div>
         </section>
 <section class="section">
@@ -82,8 +82,8 @@
 <section class="section">
           <div class="why-block">
             <p class="hero-kicker">Warum Reparatur nicht reicht</p>
-            <h2>Warum ESG, Reporting, Nachhaltigkeit oder Reparaturpolitik nicht ausreichen</h2>
-            <p>ESG, Reporting, Nachhaltigkeitsberatung oder Reparaturpolitik können Anschlussräume sein. Sie lösen den Kernfehler aber nicht, wenn sie Wirkung nur beschreiben, nachträglich dokumentieren oder Schäden erst reparieren.</p><p>Die Wirkungsökonomie setzt früher an: beim Maßstab, bei der Fehlsteuerung und bei der Rückkopplung in Preise, Kapital, Haushalte, Management, Medien und Entscheidungen.</p>
+            <h2>Warum Erwerbsarbeit als alleinige Einkommensbasis nicht reicht</h2>
+            <p>Erwerbsarbeit bleibt wichtig. Sie reicht aber nicht mehr als alleinige Einkommensbasis, wenn KI, Robotik und Plattformen Produktivität erzeugen, ohne dass menschliche Arbeitszeit proportional steigt.</p><p>Das Wirkungseinkommen koppelt Produktivität gesellschaftlich zurück: Grunddividende, Markteinkommen und Wirkungsbonus bilden eine Modellarchitektur für Teilhabe und Wirkleistung.</p>
           </div>
         </section>
 <section class="section">
@@ -143,18 +143,28 @@
         <h2>Bruttovolumen und Finanzierungsstack</h2>
         <p>Alle Werte sind Eingaben oder Modellstand. Der Rechner erzeugt keine Leistungszusage.</p>
       </div>
+      <div class="formula-box">
+        <p><strong>Bruttovolumen pro Jahr = Bevölkerung x monatliche Grunddividende x 12</strong></p>
+        <p>Netto-Finanzierungsbedarf = Bruttovolumen minus Transfers, Wirkungssteuer, Automatisierungsdividende, Kapitalwirkungsbeiträge, Subventionsabbau, internalisierte externe Kosten, vermiedene Reparaturausgaben und weitere freigegebene Modellbausteine.</p>
+      </div>
       <div class="model-calculator" data-calculator="income">
-        <div class="input-grid">
-          <label>Bevölkerung <input id="income-population" type="number" min="0" step="100000" value="83000000"></label>
-          <label>Grunddividende pro Monat <input id="income-dividend" type="number" min="0" step="50" value="2000"></label>
-          <label>Bestehende ersetzbare Transfers / Jahr <input id="income-transfers" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Wirkungssteuer-Einnahmen / Jahr <input id="income-tax" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Automatisierungsdividende / Jahr <input id="income-auto" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Kapitalwirkungsbeiträge / Jahr <input id="income-capital" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Abbau destruktiver Subventionen / Jahr <input id="income-subsidies" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Internalisierte externe Kosten / Jahr <input id="income-external" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Vermiedene Reparaturausgaben / Jahr <input id="income-repair" type="number" min="0" step="1000000000" value="0"></label>
-          <label>Sonstige freigegebene Modellbausteine / Jahr <input id="income-other" type="number" min="0" step="1000000000" value="0"></label>
+        <div class="calculator-input-card">
+          <fieldset class="calculator-fieldset">
+            <legend>Bruttovolumen</legend>
+            <label>Bevölkerung <input id="income-population" type="number" min="0" step="100000" value="83000000"></label>
+            <label>Grunddividende pro Monat <input id="income-dividend" type="number" min="0" step="50" value="2000"></label>
+          </fieldset>
+          <fieldset class="calculator-fieldset">
+            <legend>Finanzierungsstack pro Jahr</legend>
+            <label>Bestehende ersetzbare Transfers <input id="income-transfers" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Wirkungssteuer-Einnahmen <input id="income-tax" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Automatisierungsdividende <input id="income-auto" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Kapitalwirkungsbeiträge <input id="income-capital" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Abbau destruktiver Subventionen <input id="income-subsidies" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Internalisierte externe Kosten <input id="income-external" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Vermiedene Reparaturausgaben <input id="income-repair" type="number" min="0" step="1000000000" value="0"></label>
+            <label>Sonstige freigegebene Modellbausteine <input id="income-other" type="number" min="0" step="1000000000" value="0"></label>
+          </fieldset>
           <div class="calculator-status-grid" aria-label="Datenstatus der Finanzierungsbausteine">
             <label>Transfers <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
             <label>Wirkungssteuer <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
@@ -163,7 +173,7 @@
             <label>Externe Kosten / Reparatur <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
           </div>
         </div>
-        <div class="calculator-output" aria-live="polite">
+        <div class="calculator-output result-box" aria-live="polite">
           <span>Bruttovolumen pro Jahr</span><strong id="income-gross">-</strong>
           <span>Summe Finanzierungsbausteine</span><strong id="income-offsets">-</strong>
           <span>Netto-Finanzierungsbedarf nach Eingaben</span><strong id="income-net">-</strong>
@@ -215,7 +225,7 @@
         <h2>Grundlage dieser Seite</h2>
         <ul class="source-list"><li>Führender Begriffsleitfaden der Wirkungsökonomie v1.0</li><li>Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026</li><li>Systemmodell der Wirkungsökonomie</li><li>Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur</li><li>WStG / WUStG / technische Leitlinien</li><li>Die neue Ordnung des Wohlstands, Kapitel Arbeit, Automatisierung und Maschinenleistung, Wirkungseinkommen, Kapitalmärkte und Fonds</li><li>Arbeitspapier Wirkungseinkommensteuer</li><li>Systemmodell: Wirkungsfonds, Automatisierungsdividende, Wirkungsdividende</li></ul>
         <div class="source-meta">
-          <span>Status: needs_review</span>
+          <span>Konzeptstand / fachliche Prüfung läuft</span>
           <span>Stand: 22. Mai 2026</span>
           <span>Primärlogik WÖk; ESG/Standards nur Anschlussräume</span>
         </div>

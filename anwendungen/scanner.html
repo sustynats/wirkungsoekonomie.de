@@ -70,7 +70,7 @@
           </div>
           <div class="scanner-mvp-grid">
             <div class="scanner-input-panel">
-              <label for="scanner-mode">Scanner-Modus
+              <label class="sr-only" for="scanner-mode">Scanner-Modus
                 <select id="scanner-mode" data-scanner-mode>
                   <option value="text">Text / Artikel analysieren</option>
                   <option value="website">Website analysieren</option>
@@ -82,6 +82,16 @@
                   <option value="photo">Foto / Screenshot vorbereiten</option>
                 </select>
               </label>
+              <div class="scanner-mode-card-grid" data-scanner-mode-cards aria-label="Scanner-Modi">
+                <button type="button" class="scanner-mode-card active" data-mode-card="text"><span>Text / Artikel</span><small>Frame, Resonanzraum, Wirkungspotenzial</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="website"><span>Website</span><small>Seitenauszug, Quelle, Datenlage</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="election"><span>Wahlprogramm</span><small>Maßnahme, Zielkonflikte, WÖk-Gegenfrage</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="statement"><span>Politische Aussage</span><small>Frame und Resonanzrisiko</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="product"><span>Produkt</span><small>Datenqualität, SDG-Bezug, Scorecard-Hypothese</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="company"><span>Unternehmen</span><small>Wirkungssystem, Datenlücken, keine Bewertung</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="decision"><span>Entscheidung</span><small>Wirkpfad, Folgekosten, Rückkopplung</small></button>
+                <button type="button" class="scanner-mode-card" data-mode-card="photo"><span>Foto / Screenshot</span><small>Vorbereitung, keine Upload-Speicherung</small></button>
+              </div>
               <label for="scanner-input">Eingabe
                 <textarea id="scanner-input" data-scanner-input placeholder="Kurzen Auszug, Produktvergleich, Unternehmenshinweis oder eine Maßnahme einfügen."></textarea>
               </label>

@@ -636,6 +636,13 @@ h4 {
   margin: 0.75rem 0 0;
 }
 
+.audio-transcript-note {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 .hero-system-visual {
   width: min(100%, var(--container-wide));
   margin: clamp(2.5rem, 6vw, 5rem) auto 0;
@@ -2161,6 +2168,7 @@ textarea {
 .compass-box,
 .source-panel,
 .visual-brief,
+.formula-box,
 .model-calculator {
   display: grid;
   gap: 1rem;
@@ -2183,6 +2191,16 @@ textarea {
 .visual-brief p {
   margin: 0;
   color: var(--muted);
+}
+
+.formula-box {
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.formula-box p {
+  margin: 0;
+  color: var(--navy);
 }
 
 .content-list {
@@ -2215,6 +2233,26 @@ textarea {
   gap: 0.35rem;
   color: var(--navy);
   font-weight: 800;
+}
+
+.calculator-input-card,
+.calculator-fieldset {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.calculator-fieldset {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid rgba(11, 16, 32, 0.1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.calculator-fieldset legend {
+  padding: 0 0.35rem;
+  color: var(--green);
+  font-weight: 900;
 }
 
 .model-calculator input {
@@ -4619,6 +4657,36 @@ textarea {
   font-weight: 850;
 }
 
+.scanner-mode-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.scanner-mode-card-grid .scanner-mode-card {
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  cursor: pointer;
+  text-align: left;
+}
+
+.scanner-mode-card-grid .scanner-mode-card span {
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.scanner-mode-card-grid .scanner-mode-card small {
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.scanner-mode-card-grid .scanner-mode-card.active {
+  border-color: rgba(47, 125, 92, 0.42);
+  background: rgba(236, 244, 239, 0.86);
+}
+
 .scanner-mvp-tool textarea {
   min-height: 11rem;
   resize: vertical;
@@ -4684,10 +4752,19 @@ textarea {
 }
 
 .compass-topic-detail-grid,
-.knowledge-card-grid {
+.knowledge-card-grid,
+.compass-preview-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.compass-preview-grid {
+  align-items: stretch;
+}
+
+.compass-preview-grid .compass-answer-card {
+  align-content: start;
 }
 
 .compass-topic-detail h3,
@@ -6679,8 +6756,10 @@ textarea {
   }
 
   .scanner-mvp-grid,
+  .scanner-mode-card-grid,
   .compass-topic-detail-grid,
-  .knowledge-card-grid {
+  .knowledge-card-grid,
+  .compass-preview-grid {
     grid-template-columns: 1fr;
   }
 

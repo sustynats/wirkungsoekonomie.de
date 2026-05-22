@@ -7,6 +7,7 @@
   const runButton = root.querySelector("[data-scanner-run]");
   const resultPanel = root.querySelector("[data-scanner-result]");
   const demoButtons = Array.from(root.querySelectorAll("[data-scanner-demo]"));
+  const modeCards = Array.from(root.querySelectorAll("[data-mode-card]"));
 
   const modes = {
     text: {
@@ -316,6 +317,18 @@
       </article>`;
   }
 
+  function syncModeCards() {
+    modeCards.forEach((card) => {
+      const active = card.dataset.modeCard === modeSelect.value;
+      card.classList.toggle("active", active);
+      card.setAttribute("aria-pressed", String(active));
+    });
+  }
+
+  function updatePlaceholder() {
+    input.placeholder = `Kurzen ${modes[modeSelect.value]?.scope || "Auszug"} einfügen. Im MVP wird eine Demo-Ersteinschätzung erzeugt.`;
+  }
+
   function inferDemo() {
     const text = String(input.value || "").toLowerCase();
     if (modeSelect.value === "company" || text.includes("unternehmen")) return "unternehmen";
@@ -327,11 +340,25 @@
 
   runButton?.addEventListener("click", () => renderResult(inferDemo(), input.value.trim()));
   modeSelect?.addEventListener("change", () => {
-    input.placeholder = `Kurzen ${modes[modeSelect.value]?.scope || "Auszug"} einfügen. Im MVP wird eine Demo-Ersteinschätzung erzeugt.`;
+    updatePlaceholder();
+    syncModeCards();
+  });
+  modeCards.forEach((card) => {
+    card.setAttribute("aria-pressed", String(card.classList.contains("active")));
+    card.addEventListener("click", () => {
+      if (card.dataset.modeCard && modeSelect) {
+        modeSelect.value = card.dataset.modeCard;
+        updatePlaceholder();
+        syncModeCards();
+        renderResult(inferDemo(), input.value.trim());
+      }
+    });
   });
   demoButtons.forEach((button) => {
     button.addEventListener("click", () => renderResult(button.dataset.scannerDemo, ""));
   });
 
+  syncModeCards();
+  updatePlaceholder();
   renderResult("politische-sprache", "");
 })();

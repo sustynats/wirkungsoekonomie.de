@@ -56,7 +56,7 @@
             <h1 class="hero-title">Wirkungsrente</h1>
             <p class="hero-subtitle">Von Erwerbsbiografie zu Wirkungsbiografie.</p>
             <p>Das alte Rentensystem fragt vor allem: Wie lange hast du gearbeitet und wie viel hast du verdient?</p><p>Die Wirkungsrente fragt zusätzlich: Welche Wirkung hat dein Leben über die Zeit erzeugt?</p><p>Sie ersetzt nicht Würde, Solidarität oder den Generationenvertrag. Sie erweitert den Maßstab: von Erwerbsbiografie zu Wirkungsbiografie.</p>
-            <div class="scanner-notice" role="note"><strong>Status:</strong> needs_review. Diese Seite erklärt die aktuelle Systematik der Wirkungsökonomie. Sie ersetzt keine Rechts-, Steuer-, Anlage-, Leistungs- oder Politikberatung. Konkrete Zahlen und gesetzliche Ausgestaltungen gelten nur, wenn sie ausdrücklich als freigegebener Modellstand gekennzeichnet sind.</div>
+            <div class="scanner-notice" role="note"><strong>Konzeptstand:</strong> Diese Seite erklärt die aktuelle Systematik der Wirkungsökonomie. Sie ersetzt keine Rechts-, Steuer-, Anlage-, Leistungs- oder Politikberatung. Konkrete Zahlen und gesetzliche Ausgestaltungen gelten nur, wenn sie ausdrücklich als freigegebener Modellstand gekennzeichnet sind.</div>
           </div>
         </section>
 <section class="section">
@@ -82,8 +82,8 @@
 <section class="section">
           <div class="why-block">
             <p class="hero-kicker">Warum Reparatur nicht reicht</p>
-            <h2>Warum ESG, Reporting, Nachhaltigkeit oder Reparaturpolitik nicht ausreichen</h2>
-            <p>ESG, Reporting, Nachhaltigkeitsberatung oder Reparaturpolitik können Anschlussräume sein. Sie lösen den Kernfehler aber nicht, wenn sie Wirkung nur beschreiben, nachträglich dokumentieren oder Schäden erst reparieren.</p><p>Die Wirkungsökonomie setzt früher an: beim Maßstab, bei der Fehlsteuerung und bei der Rückkopplung in Preise, Kapital, Haushalte, Management, Medien und Entscheidungen.</p>
+            <h2>Warum Beitragssätze, Lebensarbeitszeit und klassische Kapitaldeckung nicht reichen</h2>
+            <p>Beitragssätze, Lebensarbeitszeit und klassische Kapitaldeckung verschieben die Stellschrauben des alten Systems. Sie messen aber weiterhin vor allem Erwerbseinkommen, Beitragsjahre und Kapitalertrag.</p><p>Die Wirkungsrente erweitert den Maßstab: von Erwerbsbiografie zu Wirkungsbiografie, mit Basisrente, Wirkungsdividende und Wirkungsfonds als Modellbausteinen.</p>
           </div>
         </section>
 <section class="section">
@@ -135,19 +135,30 @@
         <h2>Wirkungsrente als Modellrechnung</h2>
         <p>Arbeitsformel nach Master: keine Leistungszusage, keine finale gesetzliche oder fiskalische Bewertung.</p>
       </div>
+      <div class="formula-box">
+        <p><strong>Wirkungsrente = Basisrente + Wirkungsdividende + Fondsanteil</strong></p>
+        <p>Wirkungsdividende = Basisrente x (Wirkungspunkte / 100)</p>
+        <p>Wirkungspunkte = Einkommenspunkte x Wirkungsfaktor x Wirkungsjahre x Gewichtung x Lernfaktor</p>
+      </div>
       <div class="model-calculator" data-calculator="pension">
-        <div class="input-grid">
-          <label>Einkommen / Jahr <input id="pension-income" type="number" min="0" step="1000" value="35000"></label>
-          <label>Durchschnittseinkommen / Jahr <input id="pension-average" type="number" min="1" step="1000" value="50000"></label>
-          <label>Basisrente / Monat <input id="pension-base" type="number" min="0" step="50" value="1200"></label>
-          <label>Wirkungsfaktor (Arbeitspapier: -3 bis +3) <input id="pension-factor" type="number" min="-3" max="3" step="0.1" value="2.5"></label>
-          <label>Wirkungsjahre <input id="pension-years" type="number" min="0" step="1" value="40"></label>
-          <label>Gewichtung <input id="pension-weight" type="number" min="0" step="0.1" value="1.2"></label>
-          <label>Lernfaktor <input id="pension-learning" type="number" min="0" step="0.05" value="1.1"></label>
-          <label>Optionaler Fondsanteil / Monat <input id="pension-fund" type="number" min="0" step="50" value="0"></label>
+        <div class="calculator-input-card">
+          <fieldset class="calculator-fieldset">
+            <legend>Einkommen und Sockel</legend>
+            <label>Einkommen / Jahr <input id="pension-income" type="number" min="0" step="1000" value="35000"></label>
+            <label>Durchschnittseinkommen / Jahr <input id="pension-average" type="number" min="1" step="1000" value="50000"></label>
+            <label>Basisrente / Monat <input id="pension-base" type="number" min="0" step="50" value="1200"></label>
+          </fieldset>
+          <fieldset class="calculator-fieldset">
+            <legend>Wirkungsbiografie</legend>
+            <label>Wirkungsfaktor (Arbeitspapier: -3 bis +3) <input id="pension-factor" type="number" min="-3" max="3" step="0.1" value="2.5"></label>
+            <label>Wirkungsjahre <input id="pension-years" type="number" min="0" step="1" value="40"></label>
+            <label>Gewichtung <input id="pension-weight" type="number" min="0" step="0.1" value="1.2"></label>
+            <label>Lernfaktor <input id="pension-learning" type="number" min="0" step="0.05" value="1.1"></label>
+            <label>Optionaler Fondsanteil / Monat <input id="pension-fund" type="number" min="0" step="50" value="0"></label>
+          </fieldset>
           <p class="formula-note">Default-Werte sind Arbeitspapierstand: Basisrente 1.200 Euro, Durchschnittseinkommen 50.000 Euro/Jahr, Wirkungsjahre 40, Fondsanteil 0 Euro.</p>
         </div>
-        <div class="calculator-output" aria-live="polite">
+        <div class="calculator-output result-box" aria-live="polite">
           <span>Einkommenspunkte</span><strong id="pension-income-points">-</strong>
           <span>Wirkungspunkte</span><strong id="pension-impact-points">-</strong>
           <span>Wirkungsdividende / Monat</span><strong id="pension-dividend">-</strong>
@@ -198,7 +209,7 @@
         <h2>Grundlage dieser Seite</h2>
         <ul class="source-list"><li>Führender Begriffsleitfaden der Wirkungsökonomie v1.0</li><li>Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026</li><li>Systemmodell der Wirkungsökonomie</li><li>Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur</li><li>WStG / WUStG / technische Leitlinien</li><li>Die neue Ordnung des Wohlstands, Kapitel Wirkungsrente, Wirkungseinkommen, Kapitalmärkte und Fonds</li><li>WP_Rente</li><li>Arbeitspapier Wirkungseinkommensteuer</li></ul>
         <div class="source-meta">
-          <span>Status: needs_review</span>
+          <span>Konzeptstand / fachliche Prüfung läuft</span>
           <span>Stand: 22. Mai 2026</span>
           <span>Primärlogik WÖk; ESG/Standards nur Anschlussräume</span>
         </div>

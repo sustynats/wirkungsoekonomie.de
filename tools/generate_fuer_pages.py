@@ -27,6 +27,72 @@ SENSITIVE_TEXT = (
     "wenn sie ausdrücklich als freigegebener Modellstand gekennzeichnet sind."
 )
 
+WHY_NOT_HEADINGS = {
+    "unternehmen.html": "Warum ESG und Reporting nicht reichen",
+    "politik.html": "Warum Reparaturpolitik und Ressortlogik nicht reichen",
+    "buergerinnen.html": "Warum moralische Appelle nicht reichen",
+    "mieter.html": "Warum Mietrecht, Förderung und Sanierungspflichten allein nicht reichen",
+    "investoren.html": "Warum ESG-Ratings und Renditelogik nicht reichen",
+    "kommunen.html": "Warum Ressortsilos und Projektförderung nicht reichen",
+    "journalismus.html": "Warum Faktencheck allein nicht reicht",
+    "akademie.html": "Warum Wissen allein nicht reicht",
+    "wissenschaft-forschung.html": "Warum Publikationen und Drittmittel nicht reichen",
+    "gesundheit.html": "Warum Reparaturmedizin allein nicht reicht",
+    "rente.html": "Warum Beitragssätze, Lebensarbeitszeit und klassische Kapitaldeckung nicht reichen",
+    "wirkungseinkommen.html": "Warum Erwerbsarbeit als alleinige Einkommensbasis nicht reicht",
+}
+
+WHY_NOT_COPY = {
+    "unternehmen.html": [
+        "ESG und Reporting liefern Daten und Anschluss an Regulierung. Sie reichen aber nicht, wenn sie nur Berichtspflichten bleiben.",
+        "Wirkungsorientiertes Management verändert die Entscheidung selbst: Führung, Einkauf, Kapital, Innovation, Kultur und Lieferketten werden nach Wirkung rückgekoppelt.",
+    ],
+    "politik.html": [
+        "Reparaturpolitik setzt spät an: bei Schäden, Krisen, Sonderregeln und Haushaltslücken. Ressortlogik zerlegt Probleme, die im Leben zusammenhängen.",
+        "Die WÖk setzt früher an: Wirkung wird in Recht, Haushalt, Steuer, Beschaffung und Evaluation zurückgeführt.",
+    ],
+    "buergerinnen.html": [
+        "Moralische Appelle überfordern Menschen, wenn Preise, Werbung, Plattformen und Politik falsche Signale senden.",
+        "Die WÖk verlagert Verantwortung zurück in Systemsignale: Produkte, Preise, Daten, Medien und Politik werden verständlicher.",
+    ],
+    "mieter.html": [
+        "Mietrecht, Förderung und Sanierungspflichten greifen jeweils nur einen Ausschnitt. Wohnen wirkt aber zugleich auf Bezahlbarkeit, Gesundheit, Energie, Quartier und Demokratie.",
+        "Die WÖk macht diese Mehrfachwirkung sichtbar, damit Sanierung, Neubau, Boden, Miete und Quartier zusammen bewertet werden.",
+    ],
+    "investoren.html": [
+        "ESG-Ratings und Renditelogik können Risiken anzeigen, ersetzen aber keine Prüfung der Richtung, die Kapital verstärkt.",
+        "Die WÖk liest Kapital als Wirkungskraft: Rendite ohne Wirkung wird zum Zukunftsrisiko, Kapitalwirkung wird zur Resilienzfrage.",
+    ],
+    "kommunen.html": [
+        "Ressortsilos und Projektförderung teilen lokale Wirklichkeit in Zuständigkeiten auf. Hitze, Wohnen, Pflege, Mobilität, Bildung und Beteiligung wirken aber zusammen.",
+        "Die WÖk verbindet kommunale Daten, Haushalte und Beschaffung zu lokaler Wirkungssteuerung.",
+    ],
+    "journalismus.html": [
+        "Faktencheck prüft, ob Aussagen stimmen. Er zeigt aber nicht automatisch, welche Frames, Resonanzräume und Wirkungspotenziale entstehen.",
+        "Die WÖk ergänzt Faktenprüfung um Wirkungsanalyse: Sprache, Auswahl, Wiederholung, Reichweite und Plattformlogik werden demokratisch eingeordnet.",
+    ],
+    "akademie.html": [
+        "Wissen allein verändert keine Steuerungslogik. Menschen brauchen Wirkungskompetenz: Begriffe, Daten, Wirkpfade, Bewertung und Rückkopplung.",
+        "Die Akademie macht aus Information ein lernbares Verfahren für Entscheidungen.",
+    ],
+    "wissenschaft-forschung.html": [
+        "Publikationen, Zitationen und Drittmittel zeigen wissenschaftliche Aktivität, aber nicht automatisch Korrekturfähigkeit, Datenqualität oder gesellschaftliche Wirkung.",
+        "Die WÖk macht Wissenschaft als Wirkungsinfrastruktur sichtbar, ohne Forschungsfreiheit auf Nützlichkeit zu verkürzen.",
+    ],
+    "gesundheit.html": [
+        "Reparaturmedizin ist unverzichtbar, wenn Menschen krank sind. Sie reicht aber nicht, wenn Wohnumfeld, Arbeit, Klima, Ernährung, Einsamkeit und Pflege Krankheit erzeugen.",
+        "Die WÖk macht Gesundheit zur Systemwirkung und Prävention zur rückkoppelbaren Wirkleistung.",
+    ],
+    "rente.html": [
+        "Beitragssätze, Lebensarbeitszeit und klassische Kapitaldeckung verschieben Stellschrauben im alten System. Sie messen weiter vor allem Erwerbseinkommen, Beitragsjahre und Kapitalertrag.",
+        "Die Wirkungsrente erweitert den Maßstab: von Erwerbsbiografie zu Wirkungsbiografie, mit Basisrente, Wirkungsdividende und Wirkungsfonds als Modellbausteinen.",
+    ],
+    "wirkungseinkommen.html": [
+        "Erwerbsarbeit bleibt wichtig. Sie reicht aber nicht mehr als alleinige Einkommensbasis, wenn KI, Robotik und Plattformen Produktivität erzeugen, ohne dass menschliche Arbeitszeit proportional steigt.",
+        "Das Wirkungseinkommen koppelt Produktivität gesellschaftlich zurück: Grunddividende, Markteinkommen und Wirkungsbonus bilden eine Modellarchitektur für Teilhabe und Wirkleistung.",
+    ],
+}
+
 
 def e(value: object) -> str:
     return html.escape(str(value), quote=True)
@@ -179,14 +245,16 @@ def visual_brief(slug: str, data: dict[str, str]) -> str:
 def status_notice(page: dict[str, object]) -> str:
     if not page.get("sensitive"):
         return ""
-    status = str(page.get("status", "veröffentlicht"))
-    return f'<div class="scanner-notice" role="note"><strong>Status:</strong> {e(status)}. {e(SENSITIVE_TEXT)}</div>'
+    status = str(page.get("public_status", page.get("status", "Konzeptstand")))
+    return f'<div class="scanner-notice" role="note"><strong>{e(status)}:</strong> {e(SENSITIVE_TEXT)}</div>'
 
 
-def why_not_enough(page: dict[str, object]) -> str:
+def why_not_enough(page: dict[str, object], slug: str) -> str:
     custom = page.get("why_not_enough")
     if custom:
         return paragraphs(list(custom))
+    if slug in WHY_NOT_COPY:
+        return paragraphs(WHY_NOT_COPY[slug])
     return paragraphs([
         "ESG, Reporting, Nachhaltigkeitsberatung oder Reparaturpolitik können Anschlussräume sein. Sie lösen den Kernfehler aber nicht, wenn sie Wirkung nur beschreiben, nachträglich dokumentieren oder Schäden erst reparieren.",
         "Die Wirkungsökonomie setzt früher an: beim Maßstab, bei der Fehlsteuerung und bei der Rückkopplung in Preise, Kapital, Haushalte, Management, Medien und Entscheidungen.",
@@ -195,7 +263,7 @@ def why_not_enough(page: dict[str, object]) -> str:
 
 def source_panel(page: dict[str, object]) -> str:
     sources = list(COMMON_SOURCES) + list(page.get("sources", []))
-    status = str(page.get("status", "veröffentlicht"))
+    status = str(page.get("public_status", page.get("status", "veröffentlicht")))
     source_items = "".join(f"<li>{e(item)}</li>" for item in sources)
     return f"""<details class="source-panel" open>
       <summary>Grundlage dieser Seite</summary>
@@ -204,7 +272,7 @@ def source_panel(page: dict[str, object]) -> str:
         <h2>Grundlage dieser Seite</h2>
         <ul class="source-list">{source_items}</ul>
         <div class="source-meta">
-          <span>Status: {e(status)}</span>
+          <span>{e(status)}</span>
           <span>Stand: 22. Mai 2026</span>
           <span>Primärlogik WÖk; ESG/Standards nur Anschlussräume</span>
         </div>
@@ -686,7 +754,7 @@ PAGES: dict[str, dict[str, object]] = {
         "meta": "Die Wirkungsökonomie versteht Wissenschaft als Wirkungsinfrastruktur: Sie prüft Wirklichkeit, macht Unsicherheit sichtbar und entwickelt Modelle, Daten und Kritik für lernfähige Systeme.",
         "kicker": "Für wen · Wissenschaft und Forschung",
         "subtitle": "Wissenschaft ist nicht nur Wissensproduktion. Sie ist eine demokratische Wirkungsinfrastruktur.",
-        "status": "needs_review",
+        "status": "Fachliche Prüfung läuft",
         "sensitive": True,
         "noindex": True,
         "tags": "Wissenschaft Wirkungsinfrastruktur, Forschung, Datenqualität, Wirkungsrat, Forschung Wirkung, Unsicherheit",
@@ -732,7 +800,7 @@ PAGES: dict[str, dict[str, object]] = {
         "meta": "Die Wirkungsökonomie denkt Gesundheit nicht als Reparatur von Krankheit, sondern als Systemleistung: Prävention, Pflege, Psyche, Wohnen, Arbeit, Klima, Ernährung und Teilhabe.",
         "kicker": "Für wen · Gesundheit, Pflege und Prävention",
         "subtitle": "Ein Gesundheitssystem wirkt nicht erst, wenn Krankheit behandelt wird.",
-        "status": "needs_review",
+        "status": "Fachliche Prüfung läuft",
         "sensitive": True,
         "noindex": True,
         "tags": "Gesundheit als Systemwirkung, Prävention statt Reparatur, Pflege, One Health, kommunale Gesundheitsräume",
@@ -779,7 +847,7 @@ PAGES: dict[str, dict[str, object]] = {
         "meta": "Das Wirkungseinkommen verbindet Grunddividende, Markteinkommen und Wirkungsbonus. Es beantwortet die Frage, wie Einkommen in einer automatisierten Wirtschaft gesichert und an Wirkleistung zurückgekoppelt wird.",
         "kicker": "Für wen · Wirkungseinkommen",
         "subtitle": "Wenn Maschinen Produktivität erzeugen, muss Produktivität gesellschaftlich zurückgekoppelt werden.",
-        "status": "needs_review",
+        "status": "Konzeptstand / fachliche Prüfung läuft",
         "sensitive": True,
         "noindex": True,
         "tags": "Wirkungseinkommen, Grunddividende, Automatisierungsdividende, Wirkungsfonds, Markteinkommen, Wirkungsbonus",
@@ -828,7 +896,7 @@ PAGES: dict[str, dict[str, object]] = {
         "meta": "Die Wirkungsrente erweitert die alte Erwerbsbiografie zur Wirkungsbiografie. Sie kombiniert Basisrente, Wirkungsdividende und Wirkungsfonds.",
         "kicker": "Für wen · Wirkungsrente",
         "subtitle": "Von Erwerbsbiografie zu Wirkungsbiografie.",
-        "status": "needs_review",
+        "status": "Konzeptstand / fachliche Prüfung läuft",
         "sensitive": True,
         "noindex": True,
         "tags": "Wirkungsrente, Wirkungsbiografie, Wirkungsfonds, Wirkungspunkte, Basisrente, Wirkungsdividende",
@@ -916,8 +984,8 @@ def render_page(slug: str, page: dict[str, object]) -> str:
         f"""<section class="section">
           <div class="why-block">
             <p class="hero-kicker">Warum Reparatur nicht reicht</p>
-            <h2>Warum ESG, Reporting, Nachhaltigkeit oder Reparaturpolitik nicht ausreichen</h2>
-            {why_not_enough(page)}
+            <h2>{e(WHY_NOT_HEADINGS.get(slug, "Warum Reparatur allein nicht reicht"))}</h2>
+            {why_not_enough(page, slug)}
           </div>
         </section>""",
         f"""<section class="section">
