@@ -18,10 +18,11 @@ Die Seite `/fuer/unternehmen.html` wirkte noch zu kurz, zu ESG-/Reporting-nah un
 
 - Die Seite beginnt jetzt bei der Maßstabskrise der klassischen BWL: Umsatz, Marge, Kapitalrendite, Effizienz und KPI messen Bewegung, aber nicht Richtung.
 - Der Text erklärt klarer, dass wirkungsorientierte Unternehmensführung die betriebswirtschaftliche Konsequenz einer wirkungsökonomischen Ordnung ist.
-- ESG, CSRD und Reporting werden als Anschlussräume behandelt, nicht als Primärlogik.
+- ESG, CSRD und Reporting werden als Nebenprodukt bzw. Anschlussräume behandelt, nicht als Primärlogik.
 - Führung wird als Systemverantwortung beschrieben: Wirkungstransparenz, Regeln, Lernschleifen, Mitarbeitende, Kultur und Entscheidungsarchitektur.
+- Mitarbeiterführung, Ressourceneffizienz, Kreislauffähigkeit und Cradle-to-Cradle wurden als gleichrangige Führungsfelder ergänzt.
 - Resilienz in der Wertschöpfung wurde vertieft: physische Realität, ökonomische Realität, soziale Realität und demokratische Realität.
-- Der Change-Prozess wurde neu formuliert: Maßstab klären, Wirkungspfade lesen, Wertschöpfung kartieren, Daten/WÖk-ID anschließen, Wirkungslast bestimmen, Strategie/Portfolio/CAPEX priorisieren, Führung und Mitarbeitende befähigen, Pilotierung und Rückkopplung verankern.
+- Der Change-Prozess wurde neu formuliert: Maßstab klären, Wirkungspfade lesen, Mitarbeitende/Kultur einbeziehen, Wertschöpfung und Ressourcen kartieren, Kreislauffähigkeit/Cradle-to-Cradle prüfen, Daten/WÖk-ID anschließen, Wirkungslast bestimmen, Strategie/Portfolio/CAPEX priorisieren, Pilotierung und Rückkopplung verankern.
 - Die Missverständnisbox wurde korrigiert; die vorher wiederholten Standardtexte wurden durch spezifische Unternehmensabgrenzungen ersetzt.
 
 ## Visual-Korrekturen
@@ -32,8 +33,9 @@ Die Seite `/fuer/unternehmen.html` wirkte noch zu kurz, zu ESG-/Reporting-nah un
 - Das neue Visual zeigt:
   - alte Steuerung: Umsatz, Marge, KPI, Effizienz, Bericht
   - WÖk-Referenz: Wirkung als tatsächliche Zustandsveränderung
-  - neue Führung: Strategie, Geschäftsmodell, Kapital, Lieferketten, Kultur, Mitarbeitende
-  - Change-Prozess mit Maßstab, Wirkungspfaden, Wertschöpfung, Daten, WÖk-ID, Wirkungslast, Strategie, Führung, Mitarbeitenden, Pilot/Change und Rückkopplung
+  - neue Führung: Strategie, Produkt, Kapital, Ressourcen, Cradle-to-Cradle, Mitarbeitende
+  - Change-Prozess mit Maßstab, Wirkungspfaden, Mitarbeitenden, Wertschöpfung, Ressourcen, Kreislauffähigkeit, Daten, WÖk-ID, Wirkungslast, Strategie, Führung, Pilot/Change und Rückkopplung
+  - ESG als Nebenprodukt der resilienten Wirkungssteuerung
 
 ## Registry
 

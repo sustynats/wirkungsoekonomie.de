@@ -158,33 +158,35 @@ POLITIK = {
 PEOPLE = {
     "unternehmen.html": {
         "title": "Wirkungsorientierte Unternehmensführung",
-        "subtitle": "Vom Nachhaltigkeitsbericht zur Steuerungslogik für Resilienz, Kapitalfähigkeit und bessere Entscheidungen.",
-        "description": "Warum Unternehmen Wirkung nicht nur berichten, sondern steuern müssen.",
+        "subtitle": "Von Zielmanagement zu resilienter Wirkungssteuerung für Mitarbeitende, Ressourcen, Wertschöpfung und Kapital.",
+        "description": "Warum ESG nur Nebenprodukt wirkungsorientierter und resilienter Unternehmensführung ist.",
         "status": "veröffentlicht",
         "noindex": False,
-        "hero": "Unternehmen stehen vor härteren Lieferketten-, Energie-, Kapital- und Regulierungsrisiken. Reines Reporting reicht nicht mehr, wenn Wirkung über Resilienz, Finanzierung und Zukunftsfähigkeit entscheidet.",
-        "wrong": "Nachhaltigkeit wird oft als Berichtspflicht, Label oder Kostenstelle behandelt, obwohl die eigentlichen Risiken in Lieferketten, Produkten, Energie, Kapital und Geschäftsmodell entstehen.",
-        "not_enough": "ESG-Berichte, CSRD-Tabellen und einzelne CSR-Projekte beschreiben vieles, verändern aber noch nicht automatisch Einkauf, Innovation, Investitionen oder Strategie.",
+        "hero": "Unternehmen stehen vor härteren Lieferketten-, Energie-, Ressourcen-, Mitarbeiter-, Kapital- und Regulierungsrisiken. ESG ist nicht der Startpunkt, sondern Nebenprodukt einer Führung, die Wirkung und Resilienz im Kerngeschäft steuert.",
+        "wrong": "Nachhaltigkeit wird oft als Berichtspflicht, Label oder Kostenstelle behandelt, obwohl die eigentlichen Risiken in Mitarbeiterführung, Ressourcen, Kreislauffähigkeit, Lieferketten, Produkten, Kapital und Geschäftsmodell entstehen.",
+        "not_enough": "ESG-Berichte und CSRD-Tabellen beschreiben vieles. Sie verändern aber nicht automatisch Mitarbeiterführung, Ressourceneffizienz, Cradle-to-Cradle-Design, Einkauf, Innovation, Investitionen oder Strategie.",
         "need": "Unternehmen brauchen die WÖk, weil Wirkung zur Führungsinformation wird: Sie zeigt, wo ein Geschäftsmodell Zukunft schützt oder Risiken versteckt.",
         "shift": "Von Nachhaltigkeit als Pflicht zu Wirkung als Unternehmenssteuerung.",
         "issue_cards": [
-            {"title": "Reporting reicht nicht", "text": "Berichte schaffen Transparenz, aber ohne Rückkopplung bleiben Entscheidungen oft wirkungsblind."},
-            {"title": "Lieferketten werden fragiler", "text": "Günstige Beschaffung kann Wasser-, Arbeits-, Klima- oder Regulierungsrisiken verdecken."},
+            {"title": "ESG ist Folge", "text": "Belastbare ESG-Daten entstehen als Nebenprodukt resilienter Wirkungssteuerung, nicht als Führungsersatz."},
+            {"title": "Wertschöpfung wird fragiler", "text": "Günstige Beschaffung kann Wasser-, Material-, Arbeits-, Klima- oder Regulierungsrisiken verdecken."},
+            {"title": "Mitarbeitende tragen Wirkung", "text": "Führung, Kultur, Gesundheit, Lernen und Anreize entscheiden, ob ein Unternehmen anpassungsfähig bleibt."},
+            {"title": "Ressourcen wirken", "text": "Ressourceneffizienz, Kreislauffähigkeit und Cradle-to-Cradle sind Führungsfragen, keine Nebenprojekte."},
             {"title": "Kapital fragt nach Zukunft", "text": "Finanzierung wird schwieriger, wenn Risiken nicht belastbar, vergleichbar und steuerbar sind."},
-            {"title": "Greenwashing wird teuer", "text": "Unklare Nachhaltigkeitsversprechen beschädigen Vertrauen, Marke und Managementqualität."},
         ],
         "why_better": "Die WÖk ist kein moralischer Zusatz. Sie macht sichtbar, welche Wirkung ein Unternehmen erzeugt und wie diese Wirkung auf Risiken, Kapital, Innovation, Beschaffung und Strategie zurückwirkt.",
         "benefits": [
-            {"title": "Resilienz", "text": "Risiken in Lieferketten, Energie, Rohstoffen und Regulierung werden früher sichtbar."},
-            {"title": "Kapitalfähigkeit", "text": "Wirkungsdaten stärken die Anschlussfähigkeit an CSRD, ESRS, Taxonomie, DPP und Finanzierungsgespräche."},
+            {"title": "Resilienz", "text": "Risiken in Mitarbeitenden, Lieferketten, Energie, Rohstoffen, Kreisläufen und Regulierung werden früher sichtbar."},
+            {"title": "ESG als Nebenprodukt", "text": "Wirkungssteuerung erzeugt bessere ESG- und CSRD-Daten, ohne Reporting zum Führungszentrum zu machen."},
             {"title": "Bessere Entscheidungen", "text": "Management sieht nicht nur Kosten, sondern verdeckte Folgekosten, Chancen und Transformationsrisiken."},
             {"title": "Innovation", "text": "Produktentwicklung richtet sich stärker an Lösungen mit positiver Netto-Wirkung aus."},
             {"title": "Glaubwürdigkeit", "text": "Wirkung ersetzt pauschale Nachhaltigkeitsbehauptungen durch prüfbare Daten und Wirkungspfade."},
             {"title": "Arbeitgeberattraktivität", "text": "Sinn, Verantwortung und Zukunftsfähigkeit werden führbar statt nur kommunizierbar."},
         ],
         "compare": [
-            {"topic": "Nachhaltigkeit", "today": "Bericht, Pflicht, Risiko, Kostenstelle.", "woek": "Steuerungsdaten, Strategie, Resilienz, Innovation."},
+            {"topic": "ESG", "today": "Bericht, Pflicht, Risiko, Kostenstelle.", "woek": "Nebenprodukt resilienter Wirkungssteuerung."},
             {"topic": "Lieferkette", "today": "Preis und Verfügbarkeit dominieren.", "woek": "Wasserstress, Arbeit, Klima und Regulierung werden als Risiko sichtbar."},
+            {"topic": "Ressourcen", "today": "Material und Abfall gelten als Kostenpositionen.", "woek": "Ressourceneffizienz und Cradle-to-Cradle werden als Wirkungspfad geführt."},
             {"topic": "Gewinn", "today": "Gewinn steht isoliert im Zentrum.", "woek": "Gewinn bleibt wichtig, wird aber als Ergebnis tragfähiger Wirkung gelesen."},
         ],
         "not": [
@@ -193,7 +195,7 @@ PEOPLE = {
             {"title": "Keine Moralabteilung", "text": "Wirkung gehört in Strategie, Risiko, Einkauf, Produkt, Kapital und Governance."},
             {"title": "Kein reines CSR-Projekt", "text": "Die WÖk betrifft das Kerngeschäft, nicht nur Kommunikation oder Begleitmaßnahmen."},
         ],
-        "path": ["Geschäftsmodell", "Wirkungsfelder", "Datenbasis", "WÖk-ID-Mapping", "Baseline", "Risiko", "Strategie", "Rückkopplung"],
+        "path": ["Maßstab", "Wirkungspfade", "Mitarbeitende", "Wertschöpfung", "Ressourcen / C2C", "Datenbasis", "Wirkungslast", "Strategie", "Rückkopplung"],
         "example": "Ein scheinbar günstiger Lieferant bringt Wasserstress, Arbeitsrisiken und künftige Regulierungsrisiken in die Wertschöpfung. In der alten Logik ist er billig. In der WÖk-Logik wird sichtbar: Er ist ein verdecktes Risiko.",
         "steps": [
             {"title": "Readiness prüfen", "text": "Welche Daten liegen vor und wo entsteht Blindflug?"},
@@ -201,8 +203,7 @@ PEOPLE = {
             {"title": "Pilot starten", "text": "Eine Lieferkette, ein Produkt oder eine Investition wirkungslogisch prüfen."},
         ],
         "links": [("WÖk-Kompass öffnen", "../kompass.html"), ("Scanner vorbereiten", "../scanner.html"), ("Datenstandards verstehen", "../methodik/daten-standards-regularien.html"), ("Evidenz ansehen", "../evidenz/")],
-        "visual_after_steps": ("woek_08_unternehmen_change_roadmap", "Von ESG als Pflicht zu Wirkung als Steuerungslogik: Die Roadmap verbindet Daten, Risiko, Strategie, Kultur, Pilotierung und Rückkopplung.", True),
-        "tags": "Unternehmen, Unternehmensführung, WÖk Vorteile Unternehmen, CSRD, ESRS, Kapitalfähigkeit, Lieferkettenwirkung",
+        "tags": "Unternehmen, Unternehmensführung, WÖk Vorteile Unternehmen, ESG als Nebenprodukt, Ressourceneffizienz, Cradle-to-Cradle, Mitarbeiterführung, Kapitalfähigkeit, Lieferkettenwirkung",
     },
     "buergerinnen.html": {
         "title": "Wirkungsökonomie für Bürger:innen",
@@ -541,7 +542,7 @@ PEOPLE.update({
 
 
 HUB_CARDS = [
-    ("unternehmen.html", "Unternehmen", "ESG, CSRD und Lieferketten werden oft als Pflicht erlebt.", "Wirkung wird zur Steuerungsinformation für Risiko, Kapital und Innovation.", "Resilienz, Kapitalfähigkeit und bessere Entscheidungen."),
+    ("unternehmen.html", "Unternehmen", "ESG wird oft als Ziel oder Pflicht behandelt, obwohl es nur Nebenprodukt guter Steuerung ist.", "Wirkung wird zur Führungsinformation für Mitarbeitende, Ressourcen, Wertschöpfung, Kapital und Innovation.", "Resilienz, Kreislauffähigkeit, Kapitalfähigkeit und bessere Entscheidungen."),
     ("politik.html", "Politik", "Politik repariert zu viele Schäden nachträglich.", "Wirkung wird vorab geprüft und in Haushalt, Recht und Verwaltung zurückgekoppelt.", "Mehr Prävention, weniger Flickenteppich, bessere Nachvollziehbarkeit."),
     ("buergerinnen.html", "Bürger:innen", "Menschen sollen richtig handeln, obwohl Preise und Informationen falsche Signale senden.", "Wirkung wird in Preisen, Daten, Scannern, Politik und Produkten sichtbar.", "Weniger Überforderung, mehr Transparenz und Handlungsspielraum."),
     ("mieter.html", "Mieter:innen", "Wohnen wird nach Rendite gesteuert, obwohl es Grundbedürfnis und Quartier betrifft.", "Wohnmodelle werden nach Bezahlbarkeit, Energie, Gesundheit und Stabilität bewertet.", "Faire und klimastabile Wohnmodelle werden strukturell sichtbarer."),
