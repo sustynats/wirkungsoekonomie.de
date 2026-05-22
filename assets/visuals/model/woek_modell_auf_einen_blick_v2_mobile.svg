@@ -1,139 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1880" viewBox="0 0 900 1880" role="img" aria-labelledby="title desc">
-  <title id="title">Die Wirkungsökonomie auf einen Blick - mobile Ansicht</title>
-  <desc id="desc">Mobile Modellgrafik der Wirkungsökonomie mit Maßstabswechsel, Wirkungskreislauf als Schrittfolge, Datenleiste und Schutzregeln.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1484" viewBox="0 0 900 1484" role="img" aria-labelledby="title desc">
+  <title id="title">DIE WIRKUNGSÖKONOMIE AUF EINEN BLICK</title>
+  <desc id="desc">Wohlstand neu messen · Wirkung zurückkoppeln · Zukunft sichern</desc>
   <defs>
     <style>
-      .bg { fill: #f7f4ec; }
-      .navy { fill: #0b1b36; }
-      .muted { fill: #3d4656; }
-      .green { fill: #2d7f5f; }
-      .gold { fill: #c9932e; }
-      .coral { fill: #c95749; }
-      .line { stroke: #d7d0c1; stroke-width: 2; fill: none; }
-      .gold-line { stroke: #c9932e; stroke-width: 2.5; fill: none; }
-      .card { fill: rgba(255,255,255,0.58); stroke: #d7d0c1; stroke-width: 2; }
-      .soft-green { fill: #eaf3ee; stroke: #2d7f5f; stroke-width: 2; }
-      .soft-gold { fill: #f6edda; stroke: #c9932e; stroke-width: 2; }
-      .soft-navy { fill: #edf1f7; stroke: #0b1b36; stroke-width: 2; }
-      .soft-coral { fill: #f6e5e1; stroke: #c95749; stroke-width: 2; }
-      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 42px; font-weight: 700; letter-spacing: 3px; }
-      .subtitle { font-family: Georgia, 'Times New Roman', serif; font-size: 23px; letter-spacing: 1px; }
-      .kicker { font-family: Inter, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
-      .h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 28px; font-weight: 700; letter-spacing: 1px; }
-      .h3 { font-family: Inter, Arial, sans-serif; font-size: 22px; font-weight: 800; }
-      .body { font-family: Inter, Arial, sans-serif; font-size: 18px; line-height: 1.35; }
-      .small { font-family: Inter, Arial, sans-serif; font-size: 16px; line-height: 1.3; }
-      .tiny { font-family: Inter, Arial, sans-serif; font-size: 14px; line-height: 1.25; }
-      .num { font-family: Georgia, 'Times New Roman', serif; font-size: 30px; font-weight: 700; }
-    </style>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
-      <path d="M2 2 L10 6 L2 10 Z" fill="#c9932e"/>
-    </marker>
+.bg{fill:#F7F4EC}.navy{fill:#0B1B36}.green{fill:#2D7F5F}.gold{fill:#C9932E}.coral{fill:#C95749}.text{fill:#2E333C}
+.line{stroke:#D7D0C1;stroke-width:2;fill:none}.nline{stroke:#0B1B36;stroke-width:2.3;fill:none}.gline{stroke:#2D7F5F;stroke-width:2.3;fill:none}.oline{stroke:#C9932E;stroke-width:2.3;fill:none}.cline{stroke:#C95749;stroke-width:2.3;fill:none}
+.card{fill:#fffdfa;stroke:#D7D0C1;stroke-width:2}.softn{fill:#EEF2F7;stroke:#0B1B36;stroke-width:2}.softg{fill:#EAF3EE;stroke:#2D7F5F;stroke-width:2}.softo{fill:#F7EEDC;stroke:#C9932E;stroke-width:2}.softc{fill:#F7E6E2;stroke:#C95749;stroke-width:2}
+.title{font-family:Georgia,'Times New Roman',serif;font-size:54px;font-weight:700;letter-spacing:3.2px}.subtitle{font-family:Georgia,'Times New Roman',serif;font-size:28px;letter-spacing:.8px}
+.kicker{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase}.h{font-family:Inter,Arial,sans-serif;font-size:23px;font-weight:800}.body{font-family:Inter,Arial,sans-serif;font-size:17px}.small{font-family:Inter,Arial,sans-serif;font-size:14px}.num{font-family:Georgia,'Times New Roman',serif;font-size:32px;font-weight:700}
+</style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#C9932E"/></marker>
   </defs>
-  <rect class="bg" width="900" height="1880"/>
-  <rect x="24" y="24" width="852" height="1832" rx="18" fill="none" stroke="#d7d0c1" stroke-width="2"/>
-
-  <text x="450" y="78" class="title navy" text-anchor="middle">DIE WIRKUNGSÖKONOMIE</text>
-  <text x="450" y="126" class="title navy" text-anchor="middle">AUF EINEN BLICK</text>
-  <text x="450" y="164" class="subtitle gold" text-anchor="middle">Wohlstand neu messen. Zukunft sichern.</text>
-  <line x1="70" y1="190" x2="830" y2="190" class="line"/>
-
-  <g aria-label="Maßstabswechsel">
-    <text x="450" y="235" class="kicker gold" text-anchor="middle">DER MASSSTABSWECHSEL</text>
-    <rect x="78" y="266" width="318" height="118" rx="18" class="soft-navy"/>
-    <text x="110" y="305" class="h3 navy">Alte Ordnung</text>
-    <text x="110" y="338" class="body muted">Kapital · Gewinn</text>
-    <text x="110" y="364" class="body muted">Wachstum · Reichweite</text>
-    <text x="110" y="392" class="small muted">misst Bewegung, nicht Richtung</text>
-
-    <line x1="416" y1="326" x2="484" y2="326" class="gold-line" marker-end="url(#arrow)"/>
-
-    <rect x="504" y="266" width="318" height="118" rx="18" class="soft-green"/>
-    <text x="536" y="305" class="h3 navy">Neue Ordnung</text>
-    <text x="536" y="338" class="body muted">Wirkung</text>
-    <text x="536" y="364" class="small muted">tatsächliche Veränderung</text>
-    <text x="536" y="390" class="small green">positive Netto-Wirkung</text>
-  </g>
-
-  <g aria-label="Bewertungsräume" transform="translate(0 430)">
-    <circle cx="450" cy="75" r="58" fill="none" stroke="#0b1b36" stroke-width="3"/>
-    <circle cx="400" cy="93" r="47" fill="none" stroke="#2d7f5f" stroke-width="3"/>
-    <circle cx="500" cy="93" r="47" fill="none" stroke="#c9932e" stroke-width="3"/>
-    <text x="450" y="80" class="h3 navy" text-anchor="middle">Wirkung</text>
-    <text x="450" y="168" class="small muted" text-anchor="middle">Mensch · Planet · Demokratie</text>
-    <text x="450" y="194" class="tiny muted" text-anchor="middle">Bewertungsräume der WÖk</text>
-  </g>
-
-  <g aria-label="Wirkungskreislauf">
-    <text x="450" y="680" class="kicker gold" text-anchor="middle">DER WIRKUNGSKREISLAUF</text>
-    <rect x="196" y="708" width="508" height="110" rx="24" fill="#f7f4ec" stroke="#0b1b36" stroke-width="3"/>
-    <text x="450" y="749" class="h2 navy" text-anchor="middle">WIRKUNG</text>
-    <text x="450" y="780" class="body navy" text-anchor="middle">= tatsächliche Zustandsveränderung</text>
-    <text x="450" y="807" class="small muted" text-anchor="middle">nicht Absicht · nicht Image · nicht Output</text>
-
-    <g transform="translate(78 852)">
-      <rect width="744" height="72" rx="16" class="soft-navy"/>
-      <text x="24" y="46" class="num navy">1</text><text x="68" y="46" class="h3 navy">Auslöser</text>
-      <text x="270" y="46" class="small muted">Handlung · Produkt · Gesetz · Preis · Narrativ · Kapitalfluss</text>
-    </g>
-    <g transform="translate(78 934)">
-      <rect width="744" height="72" rx="16" class="soft-gold"/>
-      <text x="24" y="46" class="num gold">2</text><text x="68" y="46" class="h3 navy">Wirkungspotenzial</text>
-      <text x="306" y="46" class="small muted">Möglichkeit positiver, negativer oder ambivalenter Wirkung</text>
-    </g>
-    <g transform="translate(78 1016)">
-      <rect width="744" height="72" rx="16" class="soft-green"/>
-      <text x="24" y="46" class="num green">3</text><text x="68" y="46" class="h3 navy">Zustandsveränderung</text>
-      <text x="356" y="46" class="small muted">Was sich tatsächlich verändert</text>
-    </g>
-    <g transform="translate(78 1098)">
-      <rect width="744" height="72" rx="16" class="soft-navy"/>
-      <text x="24" y="46" class="num navy">4</text><text x="68" y="46" class="h3 navy">Wirkungsbewertung</text>
-      <text x="344" y="46" class="small muted">SDGs · Agenda 2030 · SDG+</text>
-    </g>
-    <g transform="translate(78 1180)">
-      <rect width="744" height="72" rx="16" class="soft-green"/>
-      <text x="24" y="46" class="num green">5</text><text x="68" y="46" class="h3 navy">Netto-Wirkung</text>
-      <text x="294" y="46" class="small muted">Positive und negative Wirkungen zusammen lesen</text>
-    </g>
-    <g transform="translate(78 1262)">
-      <rect width="744" height="72" rx="16" class="soft-gold"/>
-      <text x="24" y="46" class="num gold">6</text><text x="68" y="46" class="h3 navy">Wirkungslenkung</text>
-      <text x="326" y="46" class="small muted">Bewertung wird entscheidungsrelevant</text>
-    </g>
-    <g transform="translate(78 1344)">
-      <rect width="744" height="72" rx="16" class="soft-green"/>
-      <text x="24" y="46" class="num green">7</text><text x="68" y="46" class="h3 navy">Rückkopplung</text>
-      <text x="286" y="46" class="small muted">Preise · Steuern · Kapital · Haushalt · Management</text>
-    </g>
-    <g transform="translate(78 1426)">
-      <rect width="744" height="72" rx="16" class="soft-coral"/>
-      <text x="24" y="46" class="num coral">8</text><text x="68" y="46" class="h3 navy">Lernen</text>
-      <text x="192" y="46" class="small muted">Daten · Evaluation · Wirkungsrat · Anpassung</text>
-    </g>
-  </g>
-
-  <g aria-label="Daten- und Rückkopplungsleiste" transform="translate(78 1514)">
-    <rect width="744" height="100" rx="18" class="card"/>
-    <text x="34" y="38" class="h3 navy">Daten</text>
-    <text x="34" y="66" class="tiny muted">SDGs · CSRD · ESRS · GRI · NACE · DPP</text>
-    <line x1="142" y1="50" x2="704" y2="50" class="gold-line" marker-end="url(#arrow)"/>
-    <text x="194" y="82" class="tiny navy" text-anchor="middle">WÖk-ID</text>
-    <text x="300" y="82" class="tiny navy" text-anchor="middle">Scorecard</text>
-    <text x="424" y="82" class="tiny navy" text-anchor="middle">Schutzregel</text>
-    <text x="560" y="82" class="tiny navy" text-anchor="middle">Rückkopplung</text>
-    <text x="670" y="82" class="tiny navy" text-anchor="middle">Lernen</text>
-  </g>
-
-  <g aria-label="Schutzregeln" transform="translate(78 1634)">
-    <rect width="744" height="112" rx="18" class="card"/>
-    <text x="34" y="40" class="h3 navy">Schutzregeln</text>
-    <text x="34" y="72" class="small muted">Keine Schönrechnung. Keine Personenbewertung.</text>
-    <text x="34" y="98" class="small muted">Keine Kompensation kritischer Schäden. Lernende Kontrolle durch Wirkungsrat.</text>
-  </g>
-
-  <g transform="translate(78 1780)">
-    <rect width="744" height="42" rx="14" fill="#0b1b36"/>
-    <text x="372" y="28" class="small" fill="#f7f4ec" text-anchor="middle">Markt bleibt. Eigentum bleibt. Wettbewerb bleibt. <tspan fill="#c9932e">Der Kompass ändert sich.</tspan></text>
-  </g>
+  <rect class="bg" width="900" height="1484"/>
+  <rect x="28" y="28" width="844" height="1428" rx="18" fill="none" stroke="#D7D0C1" stroke-width="2"/>
+  <text x="450" y="74" class="title navy" text-anchor="middle">DIE WIRKUNGSÖKONOMIE AUF EINEN BLICK</text>
+<text x="450" y="116" class="subtitle gold" text-anchor="middle">Wohlstand neu messen · Wirkung zurückkoppeln · Zukunft sichern</text>
+<line x1="70" y1="146" x2="830" y2="146" class="line"/>
+<rect x="74" y="190" width="752" height="120" rx="18" class="softn"/>
+<text x="108" y="234" class="num navy">1</text>
+<text x="160" y="234" class="h navy">Alte Ordnung</text>
+<text x="160" y="268" class="small text">Kapital, Gewinn, Wachstum und Reichweite messen Bewegung, nicht</text>
+<text x="160" y="288" class="small text">Richtung.</text>
+<rect x="74" y="332" width="752" height="120" rx="18" class="softg"/>
+<text x="108" y="376" class="num green">2</text>
+<text x="160" y="376" class="h navy">Neue Ordnung</text>
+<text x="160" y="410" class="small text">Wirkung ist die tatsächliche Veränderung von Zuständen: positiv,</text>
+<text x="160" y="430" class="small text">negativ oder neutral.</text>
+<rect x="74" y="474" width="752" height="120" rx="18" class="softo"/>
+<text x="108" y="518" class="num gold">3</text>
+<text x="160" y="518" class="h navy">Bewertungsräume</text>
+<text x="160" y="552" class="small text">Mensch, Planet und Demokratie bilden die Räume der WÖk-Bewertung.</text>
+<rect x="74" y="616" width="752" height="120" rx="18" class="softg"/>
+<text x="108" y="660" class="num green">4</text>
+<text x="160" y="660" class="h navy">Zielgröße</text>
+<text x="160" y="694" class="small text">positive Netto-Wirkung wird zur gemeinsamen Zielgröße.</text>
+<rect x="74" y="758" width="752" height="120" rx="18" class="softn"/>
+<text x="108" y="802" class="num navy">5</text>
+<text x="160" y="802" class="h navy">Mechanik</text>
+<text x="160" y="836" class="small text">Daten -&gt; WÖk-ID -&gt; Scorecard -&gt; Schutzregel -&gt; Wirkungsklasse -&gt;</text>
+<text x="160" y="856" class="small text">Rückkopplung -&gt; Lernen.</text>
+<rect x="74" y="900" width="752" height="120" rx="18" class="softg"/>
+<text x="108" y="944" class="num green">6</text>
+<text x="160" y="944" class="h navy">Rückkopplung</text>
+<text x="160" y="978" class="small text">Preise, Steuern, Kapital, Haushalte, Beschaffung, Management und</text>
+<text x="160" y="998" class="small text">Innovation reagieren.</text>
+<rect x="74" y="1042" width="752" height="120" rx="18" class="softc"/>
+<text x="108" y="1086" class="num coral">7</text>
+<text x="160" y="1086" class="h navy">Schutzregeln</text>
+<text x="160" y="1120" class="small text">Keine Schönrechnung, keine Personenbewertung, keine Kompensation</text>
+<text x="160" y="1140" class="small text">kritischer Schäden.</text>
+<rect x="74" y="1184" width="752" height="120" rx="18" class="softo"/>
+<text x="108" y="1228" class="num gold">8</text>
+<text x="160" y="1228" class="h navy">Wirkungsrat</text>
+<text x="160" y="1262" class="small text">Lernende Kontrolle hält Begriffe, Daten und Rückkopplung prüfbar.</text>
+<rect x="74" y="1342" width="752" height="102" rx="18" class="card"/>
+<text x="108" y="1384" class="small navy">Markt bleibt. Eigentum bleibt. Wettbewerb bleibt. Gewinn bleibt. Aber</text>
+<text x="108" y="1405" class="small navy">der Kompass ändert sich.</text>
 </svg>

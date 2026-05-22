@@ -22,9 +22,9 @@ COMMON_SOURCES = [
 ]
 
 SENSITIVE_TEXT = (
-    "Diese Seite erklärt die aktuelle Systematik und Modelllogik. Sie ersetzt keine Rechts-, Steuer-, "
-    "Anlage-, Gesundheits- oder Sozialberatung. Konkrete Werte sind Konzept- oder Modellstand, sofern "
-    "nicht anders gekennzeichnet."
+    "Diese Seite erklärt die aktuelle Systematik der Wirkungsökonomie. Sie ersetzt keine Rechts-, Steuer-, "
+    "Anlage-, Leistungs- oder Politikberatung. Konkrete Zahlen und gesetzliche Ausgestaltungen gelten nur, "
+    "wenn sie ausdrücklich als freigegebener Modellstand gekennzeichnet sind."
 )
 
 
@@ -61,7 +61,112 @@ def buttons(items: list[tuple[str, str]]) -> str:
     ) + "</div>"
 
 
-def visual_brief(data: dict[str, str]) -> str:
+VISUAL_ASSIGNMENTS: dict[str, list[dict[str, str]]] = {
+    "journalismus": [{
+        "file": "../assets/visuals/flows/woek_journalismus_faktencheck_wirkungsanalyse.svg",
+        "mobile": "../assets/visuals/flows/woek_journalismus_faktencheck_wirkungsanalyse_mobile.svg",
+        "alt": "Flussgrafik Faktencheck plus Wirkungsanalyse mit Frame, Resonanzraum, Wirkungspotenzial, Vertrauen, Polarisierung und Demokratie.",
+        "caption": "Journalismus gewinnt eine zweite Ebene: nicht nur Richtigkeit, sondern Wirkungspotenzial."
+    }],
+    "unternehmen": [{
+        "file": "../assets/visuals/explainers/woek_unternehmen_wirkungssystem.svg",
+        "mobile": "../assets/visuals/explainers/woek_unternehmen_wirkungssystem_mobile.svg",
+        "alt": "Grafik Unternehmen als Wirkungssystem mit Führung, Kultur, Entscheidungen, Produkten, Lieferketten, Kapital, Kommunikation und Innovation.",
+        "caption": "Unternehmen werden nicht als ESG-Berichtseinheiten gelesen, sondern als Wirkungssysteme."
+    }],
+    "politik": [{
+        "file": "../assets/visuals/explainers/woek_politik_reparaturstaat_wirkungsarchitektur.svg",
+        "mobile": "../assets/visuals/explainers/woek_politik_reparaturstaat_wirkungsarchitektur_mobile.svg",
+        "alt": "Grafik vom Reparaturstaat zur Wirkungsarchitektur mit falschen Preisen, Schäden, Bürokratie, Wirkungsprüfung, Wirkungshaushalt, Wirkungssteuer und Rückkopplung.",
+        "caption": "Die Grafik zeigt Politik als Rückkopplungsarchitektur statt als späte Reparaturmaschine."
+    }],
+    "buergerinnen": [{
+        "file": "../assets/visuals/explainers/woek_buergerinnen_bessere_signale.svg",
+        "mobile": "../assets/visuals/explainers/woek_buergerinnen_bessere_signale_mobile.svg",
+        "alt": "Grafik von moralischer Überforderung zu besseren Signalen für Bürgerinnen und Bürger.",
+        "caption": "Die Wirkungsökonomie entlastet Bürger:innen von moralischer Einzelüberforderung."
+    }],
+    "mieter": [{
+        "file": "../assets/visuals/explainers/woek_wohnen_wirkungsraum.svg",
+        "mobile": "../assets/visuals/explainers/woek_wohnen_wirkungsraum_mobile.svg",
+        "alt": "Grafik Wohnen als Wirkungsraum mit Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe, Vertrauen und Demokratie.",
+        "caption": "Wohnraum wird als Wirkungsraum für Mensch, Planet und Demokratie lesbar."
+    }],
+    "investoren": [{
+        "file": "../assets/visuals/explainers/woek_kapitalwirkung_investoren.svg",
+        "mobile": "../assets/visuals/explainers/woek_kapitalwirkung_investoren_mobile.svg",
+        "alt": "Kapitalwirkungsgrafik für Investorinnen und Investoren mit Rendite, Risiko, Resilienz, T-SROI und positiver Netto-Wirkung.",
+        "caption": "Kapital wird als Verstärker von Richtung und als Rückkopplungssystem verstanden."
+    }],
+    "kommunen": [{
+        "file": "../assets/visuals/explainers/woek_kommunen_lokale_wirkungsraeume.svg",
+        "mobile": "../assets/visuals/explainers/woek_kommunen_lokale_wirkungsraeume_mobile.svg",
+        "alt": "Grafik Kommunen als lokale Wirkungsräume mit Hitze, Wasser, Wohnen, Mobilität, Bildung, Pflege, Begegnung und Wirkungshaushalt.",
+        "caption": "Kommunale Entscheidungen erzeugen Mehrfachwirkung in realen Lebensräumen."
+    }],
+    "akademie": [{
+        "file": "../assets/visuals/explainers/woek_akademie_lernpfad.svg",
+        "mobile": "../assets/visuals/explainers/woek_akademie_lernpfad_mobile.svg",
+        "alt": "Lernpfad der WÖk-Akademie von Verstehen über Bewerten und Zurückkoppeln bis Anwenden und Umsetzen.",
+        "caption": "Die Akademie übersetzt die WÖk in einen systemischen Lernpfad."
+    }],
+    "wissenschaft-forschung": [{
+        "file": "../assets/visuals/explainers/woek_wissenschaft_forschung.svg",
+        "mobile": "../assets/visuals/explainers/woek_wissenschaft_forschung_mobile.svg",
+        "alt": "Grafik Wissenschaft und Forschung als Wirkungsinfrastruktur mit Theorie, Daten, Modellen, Validierung, Anwendung und Transfer.",
+        "caption": "Wissenschaft ist das methodische Rückgrat lernfähiger Wirkungssteuerung."
+    }],
+    "gesundheit": [{
+        "file": "../assets/visuals/explainers/woek_gesundheit_wirkungssystem.svg",
+        "mobile": "../assets/visuals/explainers/woek_gesundheit_wirkungssystem_mobile.svg",
+        "alt": "Grafik Gesundheit als Wirkungssystem mit Prävention, Pflege, Psyche, Wohnumfeld, Ernährung, Arbeit, Klima und sozialen Beziehungen.",
+        "caption": "Gesundheit wird als Systemleistung verstanden, nicht nur als Reparatur von Krankheit."
+    }],
+    "wirkungseinkommen": [
+        {
+            "file": "../assets/visuals/explainers/woek_wirkungseinkommen_drei_ebenen.svg",
+            "mobile": "../assets/visuals/explainers/woek_wirkungseinkommen_drei_ebenen_mobile.svg",
+            "alt": "Grafik Wirkungseinkommen mit Grunddividende, Markteinkommen und Wirkungsbonus.",
+            "caption": "Das Wirkungseinkommen denkt Einkommen als Architektur aus Sockel, Markt und anerkannter Wirkleistung."
+        },
+        {
+            "file": "../assets/visuals/explainers/woek_wirkungseinkommen_finanzierungsstack.svg",
+            "mobile": "../assets/visuals/explainers/woek_wirkungseinkommen_finanzierungsstack_mobile.svg",
+            "alt": "Finanzierungsstack des Wirkungseinkommens mit Wirkungsfonds, Zuflüssen und Abflüssen.",
+            "caption": "Der Finanzierungsstack zeigt die Modelllogik, nicht eine beschlossene Leistung."
+        },
+    ],
+    "rente": [{
+        "file": "../assets/visuals/explainers/woek_wirkungsrente_wirkungsbiografie.svg",
+        "mobile": "../assets/visuals/explainers/woek_wirkungsrente_wirkungsbiografie_mobile.svg",
+        "alt": "Grafik Wirkungsrente von Erwerbsbiografie zu Wirkungsbiografie mit Basisrente, Wirkungsdividende und Wirkungsfonds.",
+        "caption": "Die Wirkungsrente erweitert die Erwerbsbiografie zur Wirkungsbiografie."
+    }],
+}
+
+
+def visual_brief(slug: str, data: dict[str, str]) -> str:
+    visuals = VISUAL_ASSIGNMENTS.get(slug.removesuffix(".html"))
+    if visuals:
+        figures = []
+        for visual in visuals:
+            figures.append(f"""<figure class="woek-visual-figure">
+          <div class="woek-visual-scroll">
+            <picture>
+              <source media="(max-width: 760px)" srcset="{e(visual["mobile"])}" type="image/svg+xml">
+              <img class="woek-visual" src="{e(visual["file"])}" alt="{e(visual["alt"])}" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption class="woek-visual-caption">{e(visual["caption"])}</figcaption>
+        </figure>""")
+        return f"""<section class="section">
+      <div class="section-header">
+        <p class="hero-kicker">Visual</p>
+        <h2>{e(data["title"])}</h2>
+        <p>{e(data["text"])}</p>
+      </div>
+      {"".join(figures)}
+    </section>"""
     return f"""<section class="section">
       <div class="visual-brief">
         <p class="hero-kicker">Visual-Vorschlag</p>
@@ -76,6 +181,16 @@ def status_notice(page: dict[str, object]) -> str:
         return ""
     status = str(page.get("status", "veröffentlicht"))
     return f'<div class="scanner-notice" role="note"><strong>Status:</strong> {e(status)}. {e(SENSITIVE_TEXT)}</div>'
+
+
+def why_not_enough(page: dict[str, object]) -> str:
+    custom = page.get("why_not_enough")
+    if custom:
+        return paragraphs(list(custom))
+    return paragraphs([
+        "ESG, Reporting, Nachhaltigkeitsberatung oder Reparaturpolitik können Anschlussräume sein. Sie lösen den Kernfehler aber nicht, wenn sie Wirkung nur beschreiben, nachträglich dokumentieren oder Schäden erst reparieren.",
+        "Die Wirkungsökonomie setzt früher an: beim Maßstab, bei der Fehlsteuerung und bei der Rückkopplung in Preise, Kapital, Haushalte, Management, Medien und Entscheidungen.",
+    ])
 
 
 def source_panel(page: dict[str, object]) -> str:
@@ -799,6 +914,13 @@ def render_page(slug: str, page: dict[str, object]) -> str:
           {cards(page["faults"])}
         </section>""",
         f"""<section class="section">
+          <div class="why-block">
+            <p class="hero-kicker">Warum Reparatur nicht reicht</p>
+            <h2>Warum ESG, Reporting, Nachhaltigkeit oder Reparaturpolitik nicht ausreichen</h2>
+            {why_not_enough(page)}
+          </div>
+        </section>""",
+        f"""<section class="section">
           <div class="section-header"><p class="hero-kicker">WÖk-Verschiebung</p><h2>Was die Wirkungsökonomie grundlegend verändert</h2>{paragraphs(page["shift"])}</div>
         </section>""",
         f"""<section class="section section-muted">
@@ -816,7 +938,7 @@ def render_page(slug: str, page: dict[str, object]) -> str:
         f"""<section class="section">
           <div class="example-box"><p class="hero-kicker">Konkretes Beispiel</p><h2>Die Logik im Anwendungsfall</h2><p>{e(page["example"])}</p></div>
         </section>""",
-        visual_brief(page["visual"]),
+        visual_brief(slug, page["visual"]),
         calculator(str(page.get("calculator", ""))),
         f"""<section class="section section-muted">
           <div class="compass-box">

@@ -5,7 +5,7 @@
     { "label": "Modell", "href": "modell.html", "match": ["modell.html", "modell/"] },
     { "label": "Kompass", "href": "kompass.html", "match": ["kompass.html"] },
     { "label": "Für wen?", "href": "fuer/", "match": ["fuer/"] },
-    { "label": "Anwendungen", "href": "anwendungen.html", "match": ["anwendungen.html", "anwendungen/", "scanner.html", "sdg-plus/medien-demokratie", "fuer/unternehmen.html", "fuer/mieter.html", "fuer/wirkungseinkommen.html", "fuer/rente.html", "fuer/kommunen.html", "glossar.html#begriff-t-sroi"] },
+    { "label": "Anwendungen", "href": "anwendungen.html", "match": ["anwendungen.html", "anwendungen/", "scanner.html", "sdg-plus/medien-demokratie", "glossar.html#begriff-t-sroi"] },
     { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
     { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
     { "label": "Mehr", "href": "mehr.html", "match": ["mehr.html", "blog.html", "blog/", "evidenz/", "quellen/", "sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/", "methodik/", "glossar.html", "glossar/", "buch.html", "buch/", "downloads.html", "downloads/", "mitmachen.html", "mitmachen/", "ueber.html", "ueber/"] },
@@ -14,16 +14,17 @@
   "applications": [
     { "label": "Scanner", "href": "scanner.html", "match": ["scanner.html"] },
     { "label": "Wirkung politischer Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
-    { "label": "Produkte", "href": "anwendungen.html#produkte", "match": ["anwendungen.html#produkte"] },
-    { "label": "Unternehmen", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
+    { "label": "Produkte und Preise", "href": "anwendungen.html#produkte", "match": ["anwendungen.html#produkte"] },
+    { "label": "Unternehmen und Management", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
     { "label": "Lieferketten", "href": "anwendungen.html#lieferketten", "match": ["anwendungen.html#lieferketten"] },
     { "label": "Wirkungshaushalt", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] },
     { "label": "Wohnen", "href": "fuer/mieter.html", "match": ["fuer/mieter.html"] },
     { "label": "Wirkungseinkommen", "href": "fuer/wirkungseinkommen.html", "match": ["fuer/wirkungseinkommen.html"] },
-    { "label": "Rente", "href": "fuer/rente.html", "match": ["fuer/rente.html"] },
-    { "label": "Medien & Demokratie", "href": "sdg-plus/medien-demokratie.html", "match": ["sdg-plus/medien-demokratie.html"] },
+    { "label": "Wirkungsrente", "href": "fuer/rente.html", "match": ["fuer/rente.html"] },
+    { "label": "Medien und Demokratie", "href": "sdg-plus/medien-demokratie.html", "match": ["sdg-plus/medien-demokratie.html"] },
     { "label": "T-SROI", "href": "glossar.html#begriff-t-sroi", "match": ["glossar.html#begriff-t-sroi"] },
-    { "label": "Weitere operative Beispiele", "href": "anwendungen.html#weitere-operative-beispiele", "match": ["anwendungen.html#weitere-operative-beispiele"] }
+    { "label": "Gesundheit", "href": "fuer/gesundheit.html", "match": ["fuer/gesundheit.html"] },
+    { "label": "Kommunen", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] }
   ],
   "more": [
     { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
@@ -75,10 +76,14 @@
         { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
         { "label": "Über die WÖk", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] }
       ]
+    },
+    {
+      "title": "Rechtliches",
+      "items": [
+        { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
+        { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
+      ]
     }
   ],
-  "footerLegal": [
-    { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
-    { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
-  ]
+  "footerLegal": []
 }
