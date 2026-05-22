@@ -331,42 +331,123 @@
     `;
   }
 
+  function immediateFrame(item) {
+    const frameNode = (item.network?.nodes || []).find((node) => node.type === "mechanism");
+    return frameNode?.label || item.mechanisms?.[0] || "Frame nicht gesetzt";
+  }
+
+  function problemDefinition(item) {
+    const visible = item.perception_shift?.visible || [];
+    if (!visible.length) return "Die Problemdefinition wird über den dominanten Frame verdichtet.";
+    return `Das Problem erscheint vor allem als ${visible.map((entry) => entry.toLowerCase()).join(", ")}.`;
+  }
+
+  function blameAttribution(item) {
+    const visible = item.perception_shift?.visible || [];
+    const mechanisms = item.mechanisms || [];
+    const hasBlameMechanism = mechanisms.some((entry) => /schuld|sündenbock|feind|delegitimierung|bedrohung/i.test(entry));
+    if (hasBlameMechanism) {
+      return "Verantwortung wird auf markierte Gruppen, Institutionen oder politische Gegner verdichtet, statt als Systemfrage prüfbar zu bleiben.";
+    }
+    if (visible.length) {
+      return `Verantwortung wird durch den Frame auf ${visible[0].toLowerCase()} zugespitzt.`;
+    }
+    return "Verantwortung wird auf eine scheinbar eindeutige Ursache zugespitzt.";
+  }
+
+  function sdgReferences(item) {
+    const base = [
+      "SDG+ Demokratie",
+      "SDG+ Medienqualität",
+      "SDG+ Diskursfähigkeit",
+      "SDG+ institutionelles Vertrauen",
+      "SDG 16 Frieden, Gerechtigkeit und starke Institutionen"
+    ];
+    const cluster = String(item.cluster || "").toLowerCase();
+    if (cluster.includes("klima") || cluster.includes("energie")) {
+      base.push("SDG 7 bezahlbare und saubere Energie", "SDG 13 Klimaschutz");
+    }
+    if (cluster.includes("migration") || cluster.includes("identität")) {
+      base.push("SDG 10 weniger Ungleichheiten", "SDG+ gesellschaftlicher Zusammenhalt");
+    }
+    if (cluster.includes("kulturkampf")) {
+      base.push("SDG 5 Geschlechtergerechtigkeit", "SDG+ Minderheitenschutz");
+    }
+    return base;
+  }
+
+  function analysisLimitsNote() {
+    return "Diese Struktur beschreibt Wirkungspotenziale und Resonanzrisiken, keinen automatisch nachgewiesenen Einzelschaden und keine Bewertung von Personen.";
+  }
+
   function renderAnalysis(item) {
     return `
       <div class="narrative-analysis-grid">
         <article class="analysis-box source-box">
-          <p class="box-kicker">Original / Quelle</p>
+          <p class="box-kicker">1. Originalbegriff / Formulierung</p>
           <blockquote>${escapeHtml(item.source.excerpt)}</blockquote>
           <p>Quelle: <a class="text-link" href="${escapeHtml(item.source.url)}" rel="noopener noreferrer">${escapeHtml(item.source.title)}</a></p>
           <p>Abruf: ${escapeHtml(item.source.retrieved_at)}</p>
           <p>${escapeHtml(item.source.context)}</p>
         </article>
         <article class="analysis-box">
-          <p class="box-kicker">Sprachliche Mechanik</p>
+          <p class="box-kicker">2. unmittelbarer Frame</p>
+          <h4>${escapeHtml(immediateFrame(item))}</h4>
           ${list(item.mechanisms)}
         </article>
         <article class="analysis-box">
-          <p class="box-kicker">Resonanzräume</p>
+          <p class="box-kicker">3. emotionaler Resonanzraum</p>
           ${list(item.resonance_spaces)}
         </article>
         <article class="analysis-box">
-          <p class="box-kicker">Demokratische Wirkung</p>
+          <p class="box-kicker">4. implizite Problemdefinition</p>
+          <p>${escapeHtml(problemDefinition(item))}</p>
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">5. implizite Schuldzuweisung</p>
+          <p>${escapeHtml(blameAttribution(item))}</p>
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">6. ausgeblendete Systemfragen</p>
+          ${list(item.system_questions, "narrative-list")}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">7. wahrscheinliche Wirkungspotenziale</p>
+          ${list(item.mechanisms)}
+          ${list(item.resonance_spaces)}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">8. SDG-/SDG+-Bezug</p>
+          ${list(sdgReferences(item), "narrative-list")}
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">9. demokratische Risiken</p>
           ${list(item.democratic_effects)}
         </article>
         <article class="analysis-box">
-          <p class="box-kicker">Wahrnehmungsverschiebung</p>
+          <p class="box-kicker">10. WÖk-Gegenfrage</p>
+          <h4>${escapeHtml(item.woek_question)}</h4>
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">Zusatz: mögliche Wahrnehmungsverschiebung</p>
           <h4>macht sichtbar</h4>
           ${list(item.perception_shift.visible)}
           <h4>macht unsichtbar</h4>
           ${list(item.perception_shift.hidden)}
         </article>
         <article class="analysis-box">
-          <p class="box-kicker">Ausgeblendete Systemfragen</p>
-          ${list(item.system_questions, "narrative-list")}
+          <p class="box-kicker">11. kurze Zusammenfassung</p>
+          <p>${escapeHtml(item.short_thesis)}</p>
+          <p>${escapeHtml(analysisLimitsNote())}</p>
+        </article>
+        <article class="analysis-box">
+          <p class="box-kicker">12. Quellen-/Materialhinweis</p>
+          <p>${escapeHtml(item.source.context)}</p>
+          <p>Kurzer Begriffsauszug, eigene wirkungsanalytische Einordnung. Keine Vollzitation und keine empirische Wirkungsbehauptung.</p>
         </article>
       </div>
       <div class="woek-question-box">
-        <p class="box-kicker">WÖk-Gegenfrage</p>
+        <p class="box-kicker">WÖk-Gegenfrage im Fokus</p>
         <h3>${escapeHtml(item.woek_question)}</h3>
       </div>
     `;
