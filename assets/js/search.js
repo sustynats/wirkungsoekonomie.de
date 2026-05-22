@@ -11,7 +11,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260522-full-index-2";
+  const searchDataVersion = "20260522-sprint3-tools";
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;
@@ -153,6 +153,16 @@
     return filterControls.every((control) => {
       if (!(control instanceof HTMLSelectElement) || !control.value) {
         return true;
+      }
+      if (control.dataset.searchFilter === "section") {
+        const selected = control.value;
+        const section = normalize(entry.section);
+        const type = normalize(entry.type || entry.format);
+        const tags = normalize(asArray(entry.tags).join(" "));
+        if (selected === "Seiten") return type.includes("seite");
+        if (selected === "Anwendungen") return ["anwendungen", "scanner", "erleben"].some((item) => section.includes(item)) || type.includes("tool");
+        if (selected === "Audio") return section.includes("audio") || type.includes("audio") || tags.includes("audio");
+        return fieldContains(entry, "section", selected);
       }
       if (control.dataset.searchFilter === "format") {
         return fieldContains(entry, "format", control.value) || fieldContains(entry, "type", control.value);

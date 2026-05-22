@@ -33,6 +33,14 @@
       .replace(/"/g, "&quot;");
   }
 
+  function normalizeText(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/[?!.:;]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
   async function loadJson(path) {
     const response = await fetch(path, { cache: "no-store" });
     if (!response.ok) throw new Error(`Kompass-Daten nicht verfügbar: ${path}`);
@@ -54,7 +62,14 @@
       renderTopics();
       renderQuestions();
       bindEvents();
-      selectQuestion("bio-apfel-guenstiger");
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get("q");
+      if (query) {
+        els.query.value = query;
+        selectFromInput();
+      } else {
+        selectQuestion("wirkung-bedeutung");
+      }
     } catch (error) {
       els.answerPanel.innerHTML = `<article class="confidence-notice"><strong>Kompass-Daten konnten nicht geladen werden.</strong><p>${escapeHtml(error.message)}</p></article>`;
     }
@@ -88,8 +103,10 @@
 
   function questionMatches(question, query) {
     if (!query) return true;
-    const haystack = [question.question, ...(question.aliases || []), question.topic, question.mode].join(" ").toLowerCase();
-    return haystack.includes(query);
+    const normalizedQuery = normalizeText(query);
+    const parts = [question.question, ...(question.aliases || []), question.topic, question.mode].map(normalizeText);
+    const haystack = parts.join(" ");
+    return haystack.includes(normalizedQuery) || parts.some((part) => part && normalizedQuery.includes(part));
   }
 
   function currentQuestions() {
@@ -135,7 +152,7 @@
   }
 
   function selectFromInput() {
-    const query = (els.query.value || "").trim().toLowerCase();
+    const query = normalizeText(els.query.value);
     const match = state.questions.find((question) => questionMatches(question, query));
     if (match) {
       selectQuestion(match.id);

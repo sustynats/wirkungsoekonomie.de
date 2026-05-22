@@ -86,6 +86,9 @@ def canonical_url(path):
     rel = path.relative_to(ROOT).as_posix()
     if rel == "index.html":
         return "/"
+    if path.name == "index.html":
+        parent = path.relative_to(ROOT).parent.as_posix()
+        return f"/{parent}/"
     return "/" + rel
 
 
@@ -146,10 +149,10 @@ def generated_entry(path):
     if len(text) < 80:
         return None
 
-    title = title_from_source(source, rel.stem.replace("-", " ").title())
-    description = meta_content(source, "description") or text[:240]
-    section = infer_section(rel)
-    format_name = infer_format(rel, section)
+    title = meta_content(source, "search_title") or title_from_source(source, rel.stem.replace("-", " ").title())
+    description = meta_content(source, "search_description") or meta_content(source, "description") or text[:240]
+    section = meta_content(source, "search_section") or infer_section(rel)
+    format_name = meta_content(source, "search_type") or infer_format(rel, section)
     url = canonical_url(path)
 
     return {

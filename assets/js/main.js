@@ -420,10 +420,14 @@ function applyDownloadFilter() {
     const labels = {
       all: "alle Kategorien",
       grundlagen: "Grundlagen",
+      methodik: "Methodik",
       "steuern-recht": "Steuern und Recht",
       anwendungen: "Anwendungen",
+      zielgruppen: "Zielgruppen",
+      akademie: "Akademie",
       "medien-demokratie": "Medien und Demokratie",
       "daten-indikatoren": "Daten und Indikatoren",
+      archiv: "Archiv / ältere Arbeitsstände",
     };
     const categoryLabel = labels[downloadFilterState.category] || downloadFilterState.category;
     const queryLabel = hasSearch ? ` · Suche: „${downloadFilterState.query}“` : "";
