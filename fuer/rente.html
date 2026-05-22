@@ -129,17 +129,19 @@
           <label>Einkommen / Jahr <input id="pension-income" type="number" min="0" step="1000" value="35000"></label>
           <label>Durchschnittseinkommen / Jahr <input id="pension-average" type="number" min="1" step="1000" value="50000"></label>
           <label>Basisrente / Monat <input id="pension-base" type="number" min="0" step="50" value="1200"></label>
-          <label>Wirkungsfaktor <input id="pension-factor" type="number" step="0.1" value="2.5"></label>
+          <label>Wirkungsfaktor (Arbeitspapier: -3 bis +3) <input id="pension-factor" type="number" min="-3" max="3" step="0.1" value="2.5"></label>
           <label>Wirkungsjahre <input id="pension-years" type="number" min="0" step="1" value="40"></label>
           <label>Gewichtung <input id="pension-weight" type="number" min="0" step="0.1" value="1.2"></label>
           <label>Lernfaktor <input id="pension-learning" type="number" min="0" step="0.05" value="1.1"></label>
           <label>Optionaler Fondsanteil / Monat <input id="pension-fund" type="number" min="0" step="50" value="0"></label>
+          <p class="formula-note">Default-Werte sind Arbeitspapierstand: Basisrente 1.200 Euro, Durchschnittseinkommen 50.000 Euro/Jahr, Wirkungsjahre 40, Fondsanteil 0 Euro.</p>
         </div>
         <div class="calculator-output" aria-live="polite">
           <span>Einkommenspunkte</span><strong id="pension-income-points">-</strong>
           <span>Wirkungspunkte</span><strong id="pension-impact-points">-</strong>
           <span>Wirkungsdividende / Monat</span><strong id="pension-dividend">-</strong>
           <span>Modellrente / Monat</span><strong id="pension-total">-</strong>
+          <span class="calculator-note">Arbeitspapier-Modellrechnung: keine Leistungszusage, keine finale Rechtsgrundlage, keine Personenbewertung und keine Social-Credit-Logik. Faktoren müssten demokratisch, rechtlich und methodisch validiert werden.</span>
         </div>
       </div>
     </section>
@@ -214,7 +216,7 @@
     <div class="footer-nav-group">
       <h3>Werkzeuge &amp; Anwendungen</h3>
       <div class="footer-nav-links">
-          <a href="../scanner.html" data-nav-match="scanner.html">Scanner</a>
+          <a href="../anwendungen/scanner.html" data-nav-match="scanner.html|anwendungen/scanner.html">Scanner</a>
           <a href="../sdg-plus/medien-demokratie/wirkung-politischer-sprache.html" data-nav-match="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Wirkung politischer Sprache</a>
           <a href="../anwendungen.html#produkte" data-nav-match="anwendungen.html#produkte">Produkte</a>
           <a href="../anwendungen.html#lieferketten" data-nav-match="anwendungen.html#lieferketten">Lieferketten</a>

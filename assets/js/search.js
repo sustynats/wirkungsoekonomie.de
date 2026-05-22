@@ -6,12 +6,13 @@
   const emptyState = document.querySelector("[data-search-empty]");
   const recommendedPanel = document.querySelector("[data-search-recommended]");
   const relatedPanel = document.querySelector("[data-search-related]");
+  const suggestionsPanel = document.querySelector("[data-search-suggestions]");
   const filterControls = Array.from(document.querySelectorAll("[data-search-filter]"));
   const resetButton = document.querySelector("[data-search-reset]");
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260522-sprint3-tools";
+  const searchDataVersion = "20260522-sprint4-tools";
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;
@@ -160,7 +161,9 @@
         const type = normalize(entry.type || entry.format);
         const tags = normalize(asArray(entry.tags).join(" "));
         if (selected === "Seiten") return type.includes("seite");
+        if (selected === "Wissenskarten") return section.includes("wissenskarten") || type.includes("wissenskarte");
         if (selected === "Anwendungen") return ["anwendungen", "scanner", "erleben"].some((item) => section.includes(item)) || type.includes("tool");
+        if (selected === "Zielgruppen") return section.includes("fuer") || section.includes("für wen") || String(entry.url || "").startsWith("/fuer/");
         if (selected === "Audio") return section.includes("audio") || type.includes("audio") || tags.includes("audio");
         return fieldContains(entry, "section", selected);
       }
@@ -324,6 +327,53 @@
     `;
   }
 
+  function renderSuggestions(rawQuery, tokens) {
+    if (!suggestionsPanel) return;
+    const query = normalize(rawQuery);
+    if (query.length < 2) {
+      suggestionsPanel.hidden = true;
+      suggestionsPanel.innerHTML = "";
+      return;
+    }
+    const dictionaryMatches = state.dictionary.terms
+      .filter((term) => {
+        const aliases = [term.label, term.key, ...asArray(term.aliases)].map(normalize);
+        return aliases.some((alias) => alias.includes(query) || query.includes(alias) || tokens.some((token) => alias.includes(token)));
+      })
+      .slice(0, 6)
+      .map((term) => ({ label: term.label, type: "Begriff", q: term.label }));
+    const entryMatches = state.index
+      .filter((entry) => entryMatchesQuery(entry, rawQuery))
+      .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0))
+      .slice(0, 6)
+      .map((entry) => ({ label: entry.title, type: entry.section || entry.type || "Treffer", q: entry.title }));
+    const suggestions = unique([...dictionaryMatches, ...entryMatches].map((item) => `${item.type}::${item.label}::${item.q}`))
+      .slice(0, 8)
+      .map((item) => {
+        const [type, label, q] = item.split("::");
+        return { type, label, q };
+      });
+    if (!suggestions.length) {
+      suggestionsPanel.hidden = true;
+      suggestionsPanel.innerHTML = "";
+      return;
+    }
+    suggestionsPanel.hidden = false;
+    suggestionsPanel.innerHTML = `
+      <p class="hero-kicker">Vorschläge</p>
+      <div class="search-suggestion-list">
+        ${suggestions.map((item) => `<button type="button" data-suggest-query="${escapeHtml(item.q)}"><span>${escapeHtml(item.label)}</span><small>${escapeHtml(item.type)}</small></button>`).join("")}
+      </div>
+    `;
+    suggestionsPanel.querySelectorAll("[data-suggest-query]").forEach((button) => {
+      button.addEventListener("click", () => {
+        input.value = button.dataset.suggestQuery || "";
+        input.focus();
+        runSearch();
+      });
+    });
+  }
+
   function renderResults(results, rawQuery, tokens) {
     resultsList.innerHTML = results
       .map(({ entry }) => {
@@ -403,6 +453,7 @@
 
     renderRecommended(queryLength >= 2 ? findRecommended(rawQuery) : null);
     renderRelated(queryLength >= 2 ? findRelated(rawQuery, tokens) : []);
+    renderSuggestions(rawQuery, tokens);
     renderResults(scored, rawQuery, tokens);
 
     const label = rawQuery ? ` für „${rawQuery}“` : "";

@@ -7,7 +7,7 @@
   "modes": [
     {
       "id": "text-article-scanner",
-      "title": "Text-/Artikel-/Website-Scanner",
+      "title": "Text / Artikel analysieren",
       "mvp_phase": 1,
       "priority": "high",
       "inputs": [
@@ -39,6 +39,60 @@
         "Wirkungspotenzial",
         "Resonanzraum",
         "SDG+/Demokratiebezug"
+      ]
+    },
+    {
+      "id": "political-statement-scanner",
+      "title": "Politische Aussage analysieren",
+      "mvp_phase": 1,
+      "priority": "high",
+      "inputs": [
+        "Begriff",
+        "Zitat",
+        "Slogan",
+        "kurzer Aussagen-Auszug"
+      ],
+      "analysis_outputs": [
+        "Faktenebene",
+        "Frame",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "demokratisches Risiko",
+        "SDG+-Bezug"
+      ],
+      "disclaimer": "Keine Parteibewertung und keine Gesinnungsprüfung. Analyse von Wirkungspotenzialen.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Wirkungspotenzial",
+        "Datenlage",
+        "Grenzen der Analyse"
+      ]
+    },
+    {
+      "id": "website-scanner",
+      "title": "Website analysieren",
+      "mvp_phase": 1,
+      "priority": "high",
+      "inputs": [
+        "URL",
+        "HTML-Auszug",
+        "Seitentext",
+        "Screenshot"
+      ],
+      "analysis_outputs": [
+        "Website-Thema",
+        "Quellenlage",
+        "Frame / Struktur",
+        "Wirkungspotenzial",
+        "Datenlücken",
+        "WÖk-Gegenfrage"
+      ],
+      "disclaimer": "Keine automatische Live-Bewertung. Im MVP bitte kurzen Auszug einfügen.",
+      "status": "draft",
+      "target_group_outputs": [
+        "Wirkungspotenzial",
+        "Datenlage",
+        "Grenzen der Analyse"
       ]
     },
     {

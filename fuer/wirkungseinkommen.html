@@ -141,30 +141,51 @@
           <label>Automatisierungsdividende / Jahr <input id="income-auto" type="number" min="0" step="1000000000" value="0"></label>
           <label>Kapitalwirkungsbeiträge / Jahr <input id="income-capital" type="number" min="0" step="1000000000" value="0"></label>
           <label>Abbau destruktiver Subventionen / Jahr <input id="income-subsidies" type="number" min="0" step="1000000000" value="0"></label>
+          <label>Internalisierte externe Kosten / Jahr <input id="income-external" type="number" min="0" step="1000000000" value="0"></label>
           <label>Vermiedene Reparaturausgaben / Jahr <input id="income-repair" type="number" min="0" step="1000000000" value="0"></label>
+          <label>Sonstige freigegebene Modellbausteine / Jahr <input id="income-other" type="number" min="0" step="1000000000" value="0"></label>
+          <div class="calculator-status-grid" aria-label="Datenstatus der Finanzierungsbausteine">
+            <label>Transfers <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
+            <label>Wirkungssteuer <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
+            <label>Automatisierungsdividende <select data-income-status><option>Modellwert</option><option>offizielle Quelle</option><option>Annahme</option><option>noch zu prüfen</option></select></label>
+            <label>Kapitalwirkungsbeiträge <select data-income-status><option>Modellwert</option><option>offizielle Quelle</option><option>Annahme</option><option>noch zu prüfen</option></select></label>
+            <label>Externe Kosten / Reparatur <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
+          </div>
         </div>
         <div class="calculator-output" aria-live="polite">
           <span>Bruttovolumen pro Jahr</span><strong id="income-gross">-</strong>
+          <span>Summe Finanzierungsbausteine</span><strong id="income-offsets">-</strong>
           <span>Netto-Finanzierungsbedarf nach Eingaben</span><strong id="income-net">-</strong>
-          <span>Formel: Bevölkerung x Grunddividende x 12 minus freigegebene Rückflüsse und Umschichtungen.</span>
+          <span>Jahresbetrag pro Person</span><strong id="income-year-person">-</strong>
+          <span class="calculator-note">Die 2.000 Euro sind Zielmodell / Modellwert, keine gesetzliche Leistungszusage. Der Rechner zeigt die Logik der Finanzierung und ersetzt keine fiskalische Gesamtprüfung.</span>
+          <span class="calculator-status-line" id="income-status-summary">Datenstatus: überwiegend Modellwert / noch zu prüfen.</span>
         </div>
       </div>
     </section>
     <script>
       (() => {
         const euro = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
-        const ids = ['population','dividend','transfers','tax','auto','capital','subsidies','repair'];
+        const ids = ['population','dividend','transfers','tax','auto','capital','subsidies','external','repair','other'];
         const el = Object.fromEntries(ids.map(id => [id, document.getElementById('income-' + id)]));
         const outGross = document.getElementById('income-gross');
+        const outOffsets = document.getElementById('income-offsets');
         const outNet = document.getElementById('income-net');
+        const outYearPerson = document.getElementById('income-year-person');
+        const outStatus = document.getElementById('income-status-summary');
+        const statusControls = Array.from(document.querySelectorAll('[data-income-status]'));
         function value(node) { return Number(node?.value || 0); }
         function update() {
           const gross = value(el.population) * value(el.dividend) * 12;
-          const offsets = value(el.transfers) + value(el.tax) + value(el.auto) + value(el.capital) + value(el.subsidies) + value(el.repair);
+          const offsets = value(el.transfers) + value(el.tax) + value(el.auto) + value(el.capital) + value(el.subsidies) + value(el.external) + value(el.repair) + value(el.other);
           outGross.textContent = euro.format(gross);
+          outOffsets.textContent = euro.format(offsets);
           outNet.textContent = euro.format(Math.max(0, gross - offsets));
+          outYearPerson.textContent = euro.format(value(el.dividend) * 12);
+          const statuses = Array.from(new Set(statusControls.map(control => control.value)));
+          outStatus.textContent = 'Datenstatus: ' + statuses.join(' / ') + '.';
         }
         Object.values(el).forEach(node => node && node.addEventListener('input', update));
+        statusControls.forEach(node => node && node.addEventListener('change', update));
         update();
       })();
     </script>
@@ -212,7 +233,7 @@
     <div class="footer-nav-group">
       <h3>Werkzeuge &amp; Anwendungen</h3>
       <div class="footer-nav-links">
-          <a href="../scanner.html" data-nav-match="scanner.html">Scanner</a>
+          <a href="../anwendungen/scanner.html" data-nav-match="scanner.html|anwendungen/scanner.html">Scanner</a>
           <a href="../sdg-plus/medien-demokratie/wirkung-politischer-sprache.html" data-nav-match="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Wirkung politischer Sprache</a>
           <a href="../anwendungen.html#produkte" data-nav-match="anwendungen.html#produkte">Produkte</a>
           <a href="../anwendungen.html#lieferketten" data-nav-match="anwendungen.html#lieferketten">Lieferketten</a>

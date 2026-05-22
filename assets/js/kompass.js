@@ -11,6 +11,7 @@
     questions: [],
     answers: [],
     paths: [],
+    knowledgeCards: [],
   };
 
   const publishedOnly = (item) => item.status === "published" || item.status === "explicitly_approved_for_compass";
@@ -49,22 +50,27 @@
 
   async function init() {
     try {
-      const [topics, questions, answers, paths] = await Promise.all([
+      const [topics, questions, answers, paths, knowledgeCards] = await Promise.all([
         loadJson("content/kompass/compass-topics.json"),
         loadJson("content/kompass/compass-questions.json"),
         loadJson("content/kompass/compass-answer-templates.json"),
         loadJson("content/kompass/impact-paths.json"),
+        loadJson("content/wissen/wissenskarten.json"),
       ]);
       state.topics = (topics.topics || []).filter(publishedOnly);
       state.questions = (questions.questions || []).filter(publishedOnly);
       state.answers = (answers.answers || []).filter(publishedOnly);
       state.paths = (paths.paths || []).filter(publishedOnly);
+      state.knowledgeCards = (knowledgeCards.cards || []).filter(publishedOnly);
       renderTopics();
       renderQuestions();
       bindEvents();
       const params = new URLSearchParams(window.location.search);
       const query = params.get("q");
-      if (query) {
+      const cardId = params.get("karte");
+      if (cardId) {
+        renderKnowledgeCard(cardId);
+      } else if (query) {
         els.query.value = query;
         selectFromInput();
       } else {
@@ -238,14 +244,47 @@
 
   function GlossaryTrail(items) {
     return `<section class="glossary-trail"><p class="hero-kicker">Zentrale Begriffe</p><div>${(items || [])
-      .map((term) => `<a href="glossar.html">${escapeHtml(term)}</a>`)
+      .map((term) => `<a href="glossar.html?q=${encodeURIComponent(term)}">${escapeHtml(term)}</a>`)
       .join("")}</div></section>`;
   }
 
   function RelatedKnowledgeCards(items) {
     return `<section class="related-knowledge-cards"><p class="hero-kicker">Mehr dazu</p><div>${(items || [])
-      .map((item) => `<article>${escapeHtml(item)}</article>`)
+      .map((item) => {
+        const card = state.knowledgeCards.find((candidate) => normalizeText(candidate.id) === normalizeText(item) || normalizeText(candidate.title) === normalizeText(item));
+        if (!card) return `<article>${escapeHtml(item)}</article>`;
+        return `<article><strong>${escapeHtml(card.title)}</strong><p>${escapeHtml(card.short_answer)}</p><a class="text-link" href="kompass.html?karte=${encodeURIComponent(card.id)}">Wissenskarte öffnen</a></article>`;
+      })
       .join("")}</div></section>`;
+  }
+
+  function renderKnowledgeCard(id) {
+    const card = state.knowledgeCards.find((item) => item.id === id);
+    if (!card) {
+      renderNoAnswer(id);
+      return;
+    }
+    state.questionId = "";
+    els.query.value = card.title;
+    els.answerPanel.innerHTML = `
+      <article class="compass-answer-card knowledge-card-detail">
+        <div class="compass-answer-head">
+          <div>
+            <p class="hero-kicker">Wissenskarte · ${escapeHtml(card.status)}</p>
+            <h2>${escapeHtml(card.title)}</h2>
+          </div>
+          <a class="btn btn-secondary" href="suche.html?q=${encodeURIComponent(card.title)}">In der Suche öffnen</a>
+        </div>
+        <section class="short-answer-box"><p class="hero-kicker">Kurzantwort</p><p>${escapeHtml(card.short_answer)}</p></section>
+        <section class="one-sentence-box"><p class="hero-kicker">In einem Satz</p><p>${escapeHtml(card.one_sentence)}</p></section>
+        <section class="confidence-notice"><p class="hero-kicker">Warum wichtig?</p><p>${escapeHtml(card.why_important)}</p></section>
+        <section class="impact-path-visualizer"><p class="hero-kicker">Wirkungspfad</p><ol>${(card.impact_path || []).map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol></section>
+        <section class="example-box"><p class="hero-kicker">Beispiel</p><p>${escapeHtml(card.example)}</p></section>
+        ${GlossaryTrail(card.terms)}
+        <section class="related-knowledge-cards"><p class="hero-kicker">Verwandte Seiten</p><div>${(card.related_pages || []).map((page) => `<article><a class="text-link" href="${escapeHtml(page)}">${escapeHtml(page)}</a></article>`).join("")}</div></section>
+        <details class="source-panel" open><summary>Grundlage dieser Wissenskarte</summary><div>${(card.sources || []).map((source) => `<article><strong>${escapeHtml(source)}</strong><p>MVP-Wissenskarte aus freigegebener WÖk-Systematik; keine amtliche Bewertung.</p></article>`).join("")}</div></details>
+      </article>`;
+    els.answerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function SourcePanel(sources) {

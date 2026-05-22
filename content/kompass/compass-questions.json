@@ -355,6 +355,234 @@
         "scanner"
       ],
       "status": "published"
+    },
+    {
+      "id": "wirkungspotenzial",
+      "question": "Was ist Wirkungspotenzial?",
+      "aliases": [
+        "Wirkungspotenzial erklären",
+        "Möglichkeit Wirkung",
+        "Wirkungspotenzial ist nicht Wirkung"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "wirkungspotenzial",
+      "impact_path_id": "wirkungspotenzial-path",
+      "related_knowledge_cards": [
+        "wirkungspotenzial",
+        "wirkung",
+        "wirkungsrisiko"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "sdg-plus",
+      "question": "Was ist SDG+?",
+      "aliases": [
+        "SDG plus",
+        "SDG+ erklären",
+        "Demokratie SDG+"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "sdg-plus",
+      "impact_path_id": "sdg-plus-path",
+      "related_knowledge_cards": [
+        "sdg+",
+        "demokratie",
+        "resonanzraum"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "woek-funktionsweise",
+      "question": "Wie funktioniert die Wirkungsökonomie?",
+      "aliases": [
+        "WÖk Funktionsweise",
+        "Wie funktioniert WÖk",
+        "Modell Wirkungsökonomie"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "woek-funktionsweise",
+      "impact_path_id": "woek-funktionsweise-path",
+      "related_knowledge_cards": [
+        "wök-id",
+        "scorecard",
+        "reverse-merit-order"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "woek-keine-planwirtschaft",
+      "question": "Warum ist die WÖk keine Planwirtschaft?",
+      "aliases": [
+        "Planwirtschaft",
+        "WÖk Planwirtschaft",
+        "Ist WÖk Sozialismus"
+      ],
+      "mode": "Einordnen",
+      "topic": "Ordnungsupdate",
+      "answer_template_id": "woek-keine-planwirtschaft",
+      "impact_path_id": "ordnung-kein-links-gruen",
+      "related_knowledge_cards": [
+        "markt",
+        "positive-netto-wirkung",
+        "wirkungsrückkopplung"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "markt-bleibt-kompass",
+      "question": "Was bedeutet „Markt bleibt, aber der Kompass ändert sich“?",
+      "aliases": [
+        "Markt bleibt Kompass ändert sich",
+        "Kapital bleibt Werkzeug",
+        "Kompass ändert sich"
+      ],
+      "mode": "Einordnen",
+      "topic": "Ordnungsupdate",
+      "answer_template_id": "markt-bleibt-kompass",
+      "impact_path_id": "ordnung-soziale-marktwirtschaft",
+      "related_knowledge_cards": [
+        "kapital",
+        "wirkungskapital",
+        "positive-netto-wirkung"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "reverse-merit-order",
+      "question": "Was ist Reverse Merit Order?",
+      "aliases": [
+        "Reverse Merit Order erklären",
+        "Schutzregel",
+        "Keine Kompensation kritischer Schäden"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "reverse-merit-order",
+      "impact_path_id": "reverse-merit-order-path",
+      "related_knowledge_cards": [
+        "reverse-merit-order",
+        "schutzregel",
+        "netto-wirkung"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-mieter",
+      "question": "Was bedeutet die WÖk für Mieter:innen?",
+      "aliases": [
+        "WÖk für Mieter",
+        "Wohnen Wirkung",
+        "Mieterinnen"
+      ],
+      "mode": "Einordnen",
+      "topic": "Für wen?",
+      "answer_template_id": "zielgruppe-mieter",
+      "impact_path_id": "zielgruppe-mieter-path",
+      "related_knowledge_cards": [
+        "wirkungsraum",
+        "wohnen",
+        "positive-netto-wirkung"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-journalismus",
+      "question": "Was bedeutet die WÖk für Journalist:innen?",
+      "aliases": [
+        "WÖk für Journalismus",
+        "Journalisten Wirkung",
+        "Faktencheck Folgencheck"
+      ],
+      "mode": "Einordnen",
+      "topic": "Für wen?",
+      "answer_template_id": "zielgruppe-journalismus",
+      "impact_path_id": "journalismus-path",
+      "related_knowledge_cards": [
+        "frame",
+        "resonanzraum",
+        "wirkungspotenzial"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "zielgruppe-investoren",
+      "question": "Was bedeutet die WÖk für Investor:innen?",
+      "aliases": [
+        "WÖk für Investoren",
+        "Kapitalwirkung Investoren",
+        "Impact Investing WÖk"
+      ],
+      "mode": "Einordnen",
+      "topic": "Für wen?",
+      "answer_template_id": "zielgruppe-investoren",
+      "impact_path_id": "investoren-path",
+      "related_knowledge_cards": [
+        "wirkungskapital",
+        "t-sroi",
+        "resilienz"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "scanner-funktionsweise",
+      "question": "Wie funktioniert der WÖk-Scanner?",
+      "aliases": [
+        "WÖk-Scanner erklären",
+        "Scanner MVP",
+        "Wie funktioniert Scanner"
+      ],
+      "mode": "Analysieren",
+      "topic": "Akademie & Lernen",
+      "answer_template_id": "scanner-funktionsweise",
+      "impact_path_id": "scanner-vorbereitung",
+      "related_knowledge_cards": [
+        "wök-scanner",
+        "datenqualität",
+        "wirkungspotenzial"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "daten-scorecard",
+      "question": "Wie wird aus Daten eine Scorecard?",
+      "aliases": [
+        "Daten Scorecard",
+        "Scorecard aus Daten",
+        "Wirkungsdaten Scorecard"
+      ],
+      "mode": "Einordnen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "daten-scorecard",
+      "impact_path_id": "produkt-rueckkopplung",
+      "related_knowledge_cards": [
+        "scorecard",
+        "wök-id",
+        "datenqualität"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "einkommen-rente-zusammenhang",
+      "question": "Wie funktionieren Wirkungseinkommen und Wirkungsrente?",
+      "aliases": [
+        "Wie hängen Wirkungseinkommen und Wirkungsrente zusammen?",
+        "Wirkungseinkommen Rente",
+        "Grunddividende Wirkungsrente"
+      ],
+      "mode": "Einordnen",
+      "topic": "Für wen?",
+      "answer_template_id": "einkommen-rente-zusammenhang",
+      "impact_path_id": "zielgruppe-rente-einkommen",
+      "related_knowledge_cards": [
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "wirkungsfonds"
+      ],
+      "status": "published"
     }
   ]
 }

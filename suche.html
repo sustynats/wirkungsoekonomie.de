@@ -57,6 +57,7 @@
           </div>
           <p id="search-help" class="search-help">Ab 2 Zeichen erscheinen Treffer, verwandte Themen und empfohlene Einstiege.</p>
           <p id="search-status" class="search-status" data-search-status aria-live="polite">Gib einen Suchbegriff ein.</p>
+          <div class="search-live-suggestions" data-search-suggestions hidden aria-label="Suchvorschläge"></div>
         </form>
 
         <div class="search-layout">
@@ -67,9 +68,11 @@
                 <label>Typ
                   <select data-search-filter="section">
                     <option value="">Alle</option>
-                    <option>Glossar</option>
                     <option>Seiten</option>
+                    <option>Glossar</option>
+                    <option>Wissenskarten</option>
                     <option>Anwendungen</option>
+                    <option>Zielgruppen</option>
                     <option>Akademie</option>
                     <option>Blog</option>
                     <option>Evidenz</option>
@@ -83,6 +86,7 @@
                     <option>Seite</option>
                     <option>Blogartikel</option>
                     <option>Glossarbegriff</option>
+                    <option>Wissenskarte</option>
                     <option>Download / Paper</option>
                     <option>Tool / Demo</option>
                     <option>Akademie-Modul</option>
@@ -219,7 +223,7 @@
     <div class="footer-nav-group">
       <h3>Werkzeuge &amp; Anwendungen</h3>
       <div class="footer-nav-links">
-          <a href="scanner.html" data-nav-match="scanner.html">Scanner</a>
+          <a href="anwendungen/scanner.html" data-nav-match="scanner.html|anwendungen/scanner.html">Scanner</a>
           <a href="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html" data-nav-match="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Wirkung politischer Sprache</a>
           <a href="anwendungen.html#produkte" data-nav-match="anwendungen.html#produkte">Produkte</a>
           <a href="anwendungen.html#lieferketten" data-nav-match="anwendungen.html#lieferketten">Lieferketten</a>
@@ -261,6 +265,6 @@
       </div>
     </footer>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/search.js?v=20260522-sprint3-tools"></script>
+    <script src="assets/js/search.js?v=20260522-sprint4-tools"></script>
   </body>
 </html>

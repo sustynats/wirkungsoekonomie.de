@@ -49,8 +49,48 @@
             Der WÖk-Scanner liefert eine wirkungsökonomische Ersteinschätzung. Er ersetzt keine Faktenprüfung, keine Rechtsberatung, keine Steuerberatung, keine Anlageberatung und keine amtliche Bewertung.
           </div>
           <div class="hero-actions">
+            <a class="btn btn-primary" href="anwendungen/scanner.html">Scanner-Anwendung öffnen</a>
             <a class="btn btn-primary" href="#demo-scans">Demo-Scans ansehen</a>
             <a class="btn btn-secondary" href="kompass.html">Im WÖk-Kompass vertiefen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="scanner-mvp-title">
+        <div class="scanner-mvp-tool" data-scanner-mvp-root>
+          <div class="section-header">
+            <p class="hero-kicker">Scanner MVP</p>
+            <h2 id="scanner-mvp-title">Strukturierte Ersteinschätzung starten</h2>
+            <p>Im MVP werden keine Live-Daten bewertet. Die Oberfläche zeigt, wie Eingaben künftig nach Datenlage, Wirkungspotenzialen, Wirkungsräumen, SDG-/SDG+-Bezug, Zielkonflikten, Quellen und Grenzen eingeordnet werden.</p>
+          </div>
+          <div class="scanner-mvp-grid">
+            <div class="scanner-input-panel">
+              <label for="scanner-mode">Scanner-Modus
+                <select id="scanner-mode" data-scanner-mode>
+                  <option value="text">Text / Artikel analysieren</option>
+                  <option value="website">Website analysieren</option>
+                  <option value="election">Wahlprogramm analysieren</option>
+                  <option value="statement">Politische Aussage analysieren</option>
+                  <option value="product">Produkt analysieren</option>
+                  <option value="company">Unternehmen analysieren</option>
+                  <option value="decision">Entscheidung / Maßnahme einordnen</option>
+                  <option value="photo">Foto / Screenshot vorbereiten</option>
+                </select>
+              </label>
+              <label for="scanner-input">Eingabe für die Ersteinschätzung
+                <textarea id="scanner-input" data-scanner-input placeholder="Kurzen Text, Produktvergleich, Unternehmenshinweis oder eine Maßnahme einfügen. Im MVP wird daraus eine Demo-Ersteinschätzung erzeugt."></textarea>
+              </label>
+              <div class="hero-actions">
+                <button class="btn btn-primary" type="button" data-scanner-run>Ersteinschätzung anzeigen</button>
+              </div>
+              <div class="scanner-demo-buttons" aria-label="Demo-Analysen">
+                <button type="button" data-scanner-demo="politische-sprache">Demo: politische Sprache</button>
+                <button type="button" data-scanner-demo="produkt-apfel">Demo: Produktwirkung</button>
+                <button type="button" data-scanner-demo="unternehmen">Demo: Unternehmen</button>
+              </div>
+              <div class="scanner-notice" role="note">Der WÖk-Scanner ist ein MVP. Er liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen, keine Rechtsberatung, keine Steuerberatung, keine Anlageberatung und keine finale WÖk-Zertifizierung.</div>
+            </div>
+            <div class="scanner-output-panel" data-scanner-result aria-live="polite"></div>
           </div>
         </div>
       </section>
@@ -70,44 +110,44 @@
         </figure>
         <div class="scanner-mode-grid">
           <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 1</p>
-            <h3>Artikel / Website / Text</h3>
-            <p>Analysiert URL, Text, HTML-Auszug, PDF, Screenshot oder Foto nach Thema, Frame, Narrativ, Resonanzraum, SDG+-Bezug und WÖk-Gegenfrage.</p>
+            <p class="card-kicker">MVP</p>
+            <h3>Text / Artikel analysieren</h3>
+            <p>Ordnet Aussage, Frame, Narrativ, Resonanzraum, Wirkungspotenzial, SDG+-Bezug und WÖk-Gegenfrage ein.</p>
           </article>
           <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 1</p>
+            <p class="card-kicker">MVP</p>
+            <h3>Website analysieren</h3>
+            <p>Bereitet URL-, Struktur- oder Seitenauszüge für Quellenpanel, Datenlage, Wirkungspfad und Grenzen der Analyse vor.</p>
+          </article>
+          <article class="scanner-mode-card">
+            <p class="card-kicker">MVP</p>
             <h3>Wahlprogramm</h3>
             <p>Ordnet politische Maßnahmen, Zielkonflikte, Wirkungspotenziale, Datenbedarf und ausgeblendete Systemfragen ein. Keine Wahlempfehlung.</p>
           </article>
           <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 1</p>
+            <p class="card-kicker">MVP</p>
             <h3>Politische Aussage</h3>
             <p>Trennt Faktenebene, Frame, Resonanzraum, Wirkungspotenzial und demokratisches Risiko. Keine Parteibewertung, keine Gesinnungsprüfung.</p>
           </article>
           <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 2</p>
-            <h3>Unternehmen</h3>
-            <p>Erstellt ein öffentliches WÖk-Unternehmensprofil aus Website, Berichten, CSRD/ESRS, GRI, NACE-Hinweisen und Quellenpanel.</p>
-          </article>
-          <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 3</p>
-            <h3>Produkt</h3>
+            <p class="card-kicker">MVP</p>
+            <h3>Produkt analysieren</h3>
             <p>Prüft Produktdaten, Labels, Open-Food-Facts-/EPREL-/GTIN-Anschluss, Datenlücken und Wirkungshypothesen. Keine finale Steuerklasse.</p>
           </article>
           <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 4</p>
+            <p class="card-kicker">MVP</p>
+            <h3>Unternehmen analysieren</h3>
+            <p>Ordnet öffentliche Berichte, CSRD/ESRS, GRI, NACE-Hinweise, Führung, Kultur, Lieferketten und Quellenpanel ein. Keine finale Bewertung.</p>
+          </article>
+          <article class="scanner-mode-card">
+            <p class="card-kicker">MVP</p>
             <h3>Entscheidung / Maßnahme</h3>
             <p>Ordnet politische, unternehmerische oder kommunale Maßnahmen nach Ziel, Datenlage, Wirkungspfad, Zielkonflikten und möglicher Rückkopplung ein.</p>
           </article>
           <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 4</p>
-            <h3>Foto / OCR / Barcode</h3>
-            <p>Vorbereitet für Verpackungen, Energielabel, Screenshots, QR-Codes, Zeitungsartikel und Programmauszüge mit Datenschutz-Hinweis.</p>
-          </article>
-          <article class="scanner-mode-card">
-            <p class="card-kicker">Phase 5</p>
-            <h3>DPP-ready Scanner</h3>
-            <p>Perspektivisch für Digital Product Passport, WÖk-ID-Mapping, geprüfte Datenräume und stärker strukturierte Scorecard-Hypothesen.</p>
+            <p class="card-kicker">Vorbereitet</p>
+            <h3>Foto / Screenshot vorbereiten</h3>
+            <p>Bereitet Verpackungen, Energielabel, Screenshots, QR-Codes, Zeitungsartikel und Programmauszüge mit Datenschutz-Hinweis vor.</p>
           </article>
         </div>
       </section>
@@ -131,7 +171,7 @@
       <section class="section" id="demo-scans" aria-labelledby="demo-title">
         <div class="section-header">
           <p class="hero-kicker">MVP-Demos</p>
-          <h2 id="demo-title">Drei Beispiel-Scans ohne Live-Daten</h2>
+          <h2 id="demo-title">Beispiel-Scans ohne Live-Daten</h2>
           <p>Die Demos zeigen die künftige Ergebnisstruktur. Sie sind keine echten Produkt-, Unternehmens- oder Artikelbewertungen.</p>
         </div>
         <div class="scanner-demo-grid">
@@ -269,7 +309,7 @@
     <div class="footer-nav-group">
       <h3>Werkzeuge &amp; Anwendungen</h3>
       <div class="footer-nav-links">
-          <a href="scanner.html" data-nav-match="scanner.html">Scanner</a>
+          <a href="anwendungen/scanner.html" data-nav-match="scanner.html|anwendungen/scanner.html">Scanner</a>
           <a href="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html" data-nav-match="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Wirkung politischer Sprache</a>
           <a href="anwendungen.html#produkte" data-nav-match="anwendungen.html#produkte">Produkte</a>
           <a href="anwendungen.html#lieferketten" data-nav-match="anwendungen.html#lieferketten">Lieferketten</a>
@@ -311,5 +351,6 @@
       </div>
     </footer>
     <script src="assets/js/main.js?v=20260522-scanner"></script>
+    <script src="assets/js/scanner-mvp.js?v=20260522-sprint4"></script>
   </body>
 </html>

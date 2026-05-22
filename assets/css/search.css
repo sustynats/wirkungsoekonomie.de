@@ -222,6 +222,17 @@
   padding: 0.55rem 0.85rem;
 }
 
+.search-suggestion-list button {
+  display: inline-grid;
+  gap: 0.1rem;
+  text-align: left;
+}
+
+.search-suggestion-list small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
 .search-topic-list,
 .search-tag-list {
   display: flex;

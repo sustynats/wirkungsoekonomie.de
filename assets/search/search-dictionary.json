@@ -847,6 +847,38 @@
         "Vergleich"
       ],
       "entrypoint": "audio-einfuehrungen"
+    },
+    {
+      "key": "wissenskarten",
+      "label": "Wissenskarten",
+      "aliases": [
+        "Knowledge Cards",
+        "Begriffskarten",
+        "Kompasskarten"
+      ],
+      "related": [
+        "Kompass",
+        "Glossar",
+        "Wirkung",
+        "Wirkungspotenzial"
+      ],
+      "entrypoint": "kompass"
+    },
+    {
+      "key": "gesundheit-systemwirkung",
+      "label": "Gesundheit als Systemwirkung",
+      "aliases": [
+        "Gesundheit",
+        "Prävention statt Reparatur",
+        "Pflege Gesundheit"
+      ],
+      "related": [
+        "Gesundheit",
+        "Kommunen",
+        "Wohnen",
+        "Prävention"
+      ],
+      "entrypoint": "gesundheit"
     }
   ],
   "typos": {
@@ -900,6 +932,11 @@
     "audio": "Audio-Einführungen",
     "podcast": "Audio-Einführungen",
     "ki": "KI und Automatisierung",
-    "rente": "Wirkungsrente"
+    "rente": "Wirkungsrente",
+    "gesundheit": "Gesundheit als Systemwirkung",
+    "kapital": "Wirkungskapital",
+    "steuer": "Wirkungssteuer",
+    "medien": "Wirkung politischer Sprache",
+    "unternehmen": "wirkungsorientiertes Management"
   }
 }

@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SEARCH_INDEX = ROOT / "assets/search/search-index.json"
+KNOWLEDGE_CARDS = ROOT / "content/wissen/wissenskarten.json"
 
 EXCLUDED_DIRS = {
     ".git",
@@ -184,7 +185,7 @@ def html_files():
 def merge_entries(curated, generated):
     by_url = {entry["url"]: dict(entry) for entry in generated}
     for entry in curated:
-        if str(entry.get("id", "")).startswith("page-"):
+        if str(entry.get("id", "")).startswith(("page-", "knowledge-card-")):
             continue
         existing = by_url.get(entry["url"])
         if existing:
@@ -197,10 +198,55 @@ def merge_entries(curated, generated):
     return sorted(by_url.values(), key=lambda item: (-int(item.get("priority", 0)), item.get("title", "")))
 
 
+def knowledge_card_entries():
+    if not KNOWLEDGE_CARDS.exists():
+        return []
+    data = json.loads(KNOWLEDGE_CARDS.read_text(encoding="utf-8"))
+    entries = []
+    for card in data.get("cards", []):
+        if card.get("status") != "published":
+            continue
+        body = " ".join(
+            clean_text(part)
+            for part in [
+                card.get("title", ""),
+                card.get("short_answer", ""),
+                card.get("one_sentence", ""),
+                card.get("why_important", ""),
+                card.get("example", ""),
+                " ".join(card.get("impact_path", [])),
+                " ".join(card.get("terms", [])),
+                " ".join(card.get("sources", [])),
+            ]
+        )
+        entries.append({
+            "id": "knowledge-card-" + re.sub(r"[^a-z0-9]+", "-", str(card.get("id", "")).lower()).strip("-"),
+            "title": card.get("title", ""),
+            "description": clean_text(card.get("short_answer", "")),
+            "url": "/kompass.html?karte=" + str(card.get("id", "")),
+            "section": "Wissenskarten",
+            "type": "Wissenskarte",
+            "format": "Wissenskarte",
+            "impactSpaces": ["Mensch", "Planet", "Demokratie"],
+            "standards": ["SDG", "SDG+"],
+            "instruments": card.get("terms", []),
+            "tags": sorted(set([card.get("title", ""), *card.get("terms", [])])),
+            "aliases": [card.get("one_sentence", "")],
+            "body": body,
+            "priority": 85,
+        })
+    return entries
+
+
 def main():
     curated = json.loads(SEARCH_INDEX.read_text(encoding="utf-8"))
-    curated_count = sum(1 for entry in curated if not str(entry.get("id", "")).startswith("page-"))
+    curated_count = sum(
+        1
+        for entry in curated
+        if not str(entry.get("id", "")).startswith(("page-", "knowledge-card-"))
+    )
     generated = [entry for entry in (generated_entry(path) for path in html_files()) if entry]
+    generated.extend(knowledge_card_entries())
     merged = merge_entries(curated, generated)
     SEARCH_INDEX.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {len(merged)} search entries from {len(generated)} HTML pages plus {curated_count} curated entries.")
