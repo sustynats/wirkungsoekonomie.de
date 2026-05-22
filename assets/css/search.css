@@ -6,7 +6,7 @@
 .search-hero {
   width: min(var(--container), calc(100% - 2 * var(--space-gutter)));
   margin: 0 auto;
-  padding: clamp(4rem, 10vw, 7rem) 0 clamp(2rem, 5vw, 4rem);
+  padding: clamp(2.4rem, 5vw, 4rem) 0 clamp(1.25rem, 3vw, 2rem);
 }
 
 .search-hero h1 {
@@ -14,14 +14,14 @@
   margin: 0;
   color: var(--navy);
   font-family: var(--font-heading);
-  font-size: clamp(3.2rem, 9vw, 7rem);
-  line-height: 0.95;
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
 .search-hero .hero-subtitle {
   max-width: 760px;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
 }
 
 .search-shell {
@@ -111,8 +111,8 @@
 
 .search-layout {
   display: grid;
-  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
-  gap: clamp(1rem, 3vw, 1.5rem);
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
   margin-top: clamp(1rem, 3vw, 1.5rem);
 }
 
@@ -132,21 +132,39 @@
 }
 
 .search-filters details {
-  position: sticky;
-  top: 5.5rem;
-  padding: 1rem;
+  position: static;
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
 }
 
 .search-filters summary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
   color: var(--navy);
   font-weight: 900;
   cursor: pointer;
+}
+
+.search-filters summary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(47, 125, 92, 0.18);
 }
 
 .filter-stack {
   display: grid;
   gap: 0.85rem;
   margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(11, 16, 32, 0.10);
+  border-radius: var(--radius);
+  background: var(--search-panel);
 }
 
 .filter-stack label {

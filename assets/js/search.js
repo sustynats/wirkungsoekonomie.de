@@ -7,6 +7,7 @@
   const recommendedPanel = document.querySelector("[data-search-recommended]");
   const relatedPanel = document.querySelector("[data-search-related]");
   const suggestionsPanel = document.querySelector("[data-search-suggestions]");
+  const filtersDetails = document.querySelector(".search-filters details");
   const filterControls = Array.from(document.querySelectorAll("[data-search-filter]"));
   const resetButton = document.querySelector("[data-search-reset]");
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
@@ -273,6 +274,40 @@
     return unique(topics).slice(0, 10);
   }
 
+  function getDefaultTopics() {
+    return [
+      "Wirkung",
+      "Wirkungspotenzial",
+      "positive Netto-Wirkung",
+      "SDG+",
+      "Wirkungsrückkopplung",
+      "Wirkung politischer Sprache",
+      "Wirkungseinkommen",
+      "Wirkungsrente",
+    ];
+  }
+
+  function getDefaultResults() {
+    const preferred = [
+      "/verstehen.html",
+      "/modell.html",
+      "/kompass.html",
+      "/fuer/",
+      "/anwendungen.html",
+      "/anwendungen/scanner.html",
+      "/glossar.html",
+      "/evidenz/",
+    ];
+    const byUrl = new Map(state.index.map((entry) => [String(entry.url || ""), entry]));
+    const seeded = preferred.map((url) => byUrl.get(url)).filter(Boolean);
+    const fallback = state.index
+      .slice()
+      .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0))
+      .filter((entry) => !seeded.includes(entry))
+      .slice(0, Math.max(0, 8 - seeded.length));
+    return [...seeded, ...fallback].slice(0, 8).map((entry) => ({ entry, score: Number(entry.priority || 0) }));
+  }
+
   function escapeHtml(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
@@ -434,11 +469,12 @@
     }
 
     if (queryLength < 2 && !filtersActive) {
-      resultsList.innerHTML = "";
       emptyState.hidden = false;
+      renderResults(getDefaultResults(), "", []);
       renderRecommended(null);
-      renderRelated([]);
-      status.textContent = "Gib einen Suchbegriff ein.";
+      renderRelated(getDefaultTopics());
+      renderSuggestions("", []);
+      status.textContent = "Empfohlene Einstiege";
       updateUrl("");
       return;
     }
@@ -490,6 +526,9 @@
       const control = filterControls.find((item) => item.dataset.searchFilter === field);
       if (control instanceof HTMLSelectElement) {
         control.value = value;
+        if (filtersDetails instanceof HTMLDetailsElement) {
+          filtersDetails.open = true;
+        }
       }
     });
   }
@@ -501,6 +540,16 @@
       runSearch();
     });
     filterControls.forEach((control) => control.addEventListener("change", runSearch));
+    filtersDetails?.addEventListener("toggle", () => {
+      const summary = filtersDetails.querySelector("summary");
+      if (summary) {
+        summary.textContent = filtersDetails.open ? "Filter ausblenden" : "Filter anzeigen";
+      }
+    });
+    if (filtersDetails instanceof HTMLDetailsElement && filtersDetails.open) {
+      const summary = filtersDetails.querySelector("summary");
+      if (summary) summary.textContent = "Filter ausblenden";
+    }
     resetButton?.addEventListener("click", () => {
       filterControls.forEach((control) => {
         if (control instanceof HTMLSelectElement) {

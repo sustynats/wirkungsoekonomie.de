@@ -197,6 +197,16 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },
   {
+    key: "positive-netto-wirkung",
+    label: "positive Netto-Wirkung",
+    aliases: ["Positive Netto-Wirkung", "positiver Netto-Wirkung", "positive Nettowirkung"],
+    definition:
+      "Zielgröße der Wirkungsökonomie: Nach Abwägung positiver und negativer Wirkungen bleibt ein Beitrag für Mensch, Planet und Demokratie.",
+    url: "/glossar.html#begriff-positive-netto-wirkung",
+    priority: 1,
+    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
+  },
+  {
     key: "wirkungsrisiko",
     label: "Wirkungsrisiko",
     aliases: ["Wirkungsrisiken"],
@@ -213,6 +223,16 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     definition:
       "Das schlechteste Wirkungsfeld bestimmt die Gesamtbewertung. Schaden kann nicht durch gute Werte an anderer Stelle versteckt werden.",
     url: "/glossar.html#begriff-reverse-merit-order",
+    priority: 3,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "nichtkompensationsprinzip",
+    label: "Nichtkompensationsprinzip",
+    aliases: ["Nicht-Kompensationsprinzip", "Nichtkompensation", "Nicht-Kompensation"],
+    definition:
+      "Schwere Schäden oder rote Linien dürfen nicht durch gute Werte in anderen Feldern verrechnet werden.",
+    url: "/glossar.html#begriff-nichtkompensationsprinzip",
     priority: 3,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },
@@ -272,6 +292,16 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     definition: "Die Rückwirkung von Bewertung auf Preise, Steuern, Förderung, Kapitalzugang und Entscheidungen.",
     url: "/glossar.html#begriff-wirkungslenkung",
     priority: 3,
+    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
+  },
+  {
+    key: "wirkungsarchitektur",
+    label: "Wirkungsarchitektur",
+    aliases: ["Wirkungsarchitekturen"],
+    definition:
+      "Ordnungslogik, die Wirkung in Regeln, Haushalte, Preise, Kapitalflüsse, Institutionen und Entscheidungen zurückführt.",
+    url: "/glossar.html#begriff-wirkungsarchitektur",
+    priority: 2,
     allowedContexts: ["page", "blog", "academy", "method", "glossary"],
   },
   {
@@ -479,7 +509,17 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     definition: "Eine eindeutige Kennnummer für eine Wirkungskennzahl.",
     url: "/glossar.html#begriff-woek-id",
     priority: 4,
-    allowedContexts: ["method", "academy", "glossary"],
+    allowedContexts: ["page", "method", "academy", "glossary"],
+  },
+  {
+    key: "modellstand",
+    label: "Modellstand",
+    aliases: ["Modellwert", "Modellrechnung", "Arbeitspapierstand", "Konzeptstand"],
+    definition:
+      "Kennzeichnung für Annahmen oder Rechenlogiken, die Orientierung geben, aber keine Leistungszusage oder finale Rechtsgrundlage sind.",
+    url: "/glossar.html#begriff-modellstand",
+    priority: 4,
+    allowedContexts: ["page", "method", "academy", "glossary"],
   },
   {
     key: "finalscore",
