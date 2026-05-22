@@ -272,8 +272,8 @@ PAGES: dict[str, dict[str, object]] = {
         "meta": "Warum Wohnen in der WÖk nicht als Anlageklasse, sondern als Wirkungsraum für Bezahlbarkeit, Energie, Gesundheit, Quartier und Demokratie gelesen wird.",
         "kicker": "Für wen · Wohnen",
         "subtitle": "Warum Miete, Boden, Sanierung und Quartier gemeinsam wirken.",
-        "status": "draft",
-        "noindex": True,
+        "status": "veröffentlicht",
+        "noindex": False,
         "tags": "WÖk für Mieter, Wohnen als Wirkungsraum, Wirkungsmiete, Quartiersresilienz, Boden, Sanierung, Bezahlbarkeit",
         "hero": [
             "Die Maßstabskrise des Wohnens entsteht, wenn Wohnungen primär als Anlageklasse gelesen werden. Rendite misst Kapitalbewegung, aber nicht, ob ein Quartier bezahlbar, gesund, energieeffizient und demokratisch stabil bleibt.",
