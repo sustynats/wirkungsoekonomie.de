@@ -8,7 +8,7 @@ Die Einstiegssprache wurde noch stärker auf die Leitformulierung ausgerichtet: 
 
 Nachtrag 2026-05-19 Definitionsebene:
 
-Alle zentralen Einstiegsebenen beginnen nun klarer mit Frage und Definition: Was fragt die Wirkungsökonomie, was bewertet sie und warum ist Wirkung der Maßstab? Die Startseite nutzt die Dramaturgie `Wie viel Gewinn entsteht?` / `Welche Wirkung hat das auf unsere Zukunft?` und erklärt direkt danach: Positive Wirkung soll sich lohnen, schädliche Wirkung soll sichtbar und teurer werden. Das Glossar enthält einen prominenten Basisbegriff `Wirkungsökonomie` mit der vollständigen Definition und internen Verweisen auf Wirkung, Mensch, Planet und Demokratie, Wirkungssteuer, Netto-Wirkungs-Index, Scorecard, Wirkungsrat und T-SROI.
+Alle zentralen Einstiegsebenen beginnen nun klarer mit Frage und Definition: Was fragt die Wirkungsökonomie, was bewertet sie und warum ist Wirkung der Maßstab? Die Startseite nutzt die Dramaturgie `Wie viel Gewinn entsteht?` / `Welche Wirkung hat das auf unsere Zukunft?` und erklärt direkt danach: Positive Netto-Wirkung soll sich lohnen, schädliche Wirkung soll sichtbar und teurer werden. Das Glossar enthält einen prominenten Basisbegriff `Wirkungsökonomie` mit der vollständigen Definition und internen Verweisen auf Wirkung, Mensch, Planet und Demokratie, Wirkungssteuer, Netto-Wirkungs-Index, Scorecard, Wirkungsrat und T-SROI.
 
 ## 1. Geprüfte Seiten
 
