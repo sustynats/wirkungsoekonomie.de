@@ -481,7 +481,7 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
         <div>
           <p class="hero-kicker">Wirkungsökonomie</p>
           <h2>Die neue Ordnung des Wohlstands</h2>
-          <p>Ein neues Gesellschafts- und Wirtschaftsmodell, das den Kompass von Kapital zu Wirkung verschiebt.</p>
+          <p>Ein neues Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht und in Entscheidungen zurückführt.</p>
         </div>
         <a class="btn btn-primary" href="../blog.html">Zum Blog</a>
         <nav class="footer-nav" aria-label="Footer Navigation">

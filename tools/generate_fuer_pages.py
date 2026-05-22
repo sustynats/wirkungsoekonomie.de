@@ -598,7 +598,7 @@ PAGES: dict[str, dict[str, object]] = {
         "gains": [
             "Wohnmodelle werden nach Wirkung unterscheidbar.",
             "Zielkonflikte zwischen Klimaschutz und Bezahlbarkeit werden sichtbar.",
-            "Faire Vermietung und energetische Qualität werden als positive Wirkung lesbar.",
+            "Faire Vermietung und energetische Qualität werden als Beitrag zu positiver Netto-Wirkung lesbar.",
             "Luxussanierung mit Verdrängung wird anders bewertet als Sanierung mit Mieterschutz und Quartiersnutzen.",
             "Kommunale Planung kann Wirkung statt bloßer Flächenzahlen priorisieren.",
         ],

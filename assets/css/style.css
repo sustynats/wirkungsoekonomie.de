@@ -3140,6 +3140,25 @@ textarea {
   line-height: 1.18;
 }
 
+.answer-depth-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.answer-depth-tabs span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .impact-path-visualizer ol {
   display: flex;
   flex-wrap: wrap;
