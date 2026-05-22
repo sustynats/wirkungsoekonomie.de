@@ -1,17 +1,22 @@
-# /fuer/ Bereich: Systemische Neuausrichtung Audit
+# /fuer/ Bereich: systemische Neuausrichtung Audit
 
 Stand: 2026-05-22
 
-## Ausgangslage
+## Ziel der Korrektur
 
-Der /fuer/-Bereich war strukturell vorhanden, wirkte aber auf mehreren Seiten noch zu stark wie Zielgruppen-Marketing, Nachhaltigkeitsberatung oder ESG-/Reporting-Einordnung. Besonders sichtbar war das bei Unternehmen und Investor:innen, aber auch Bürger:innen, Akademie, Kommunen und Hub nutzten noch zu viele Nutzen- und Anschlussformulierungen statt WÖk-Primärlogik.
+Der /fuer/-Bereich soll nicht wie Zielgruppen-Marketing, ESG-Beratung oder Nachhaltigkeitsinformation wirken. Jede Seite erklärt jetzt aus der Logik der Wirkungsökonomie:
 
-## Systemisch vertiefte Seiten
+1. welche Maßstabskrise die alte Ordnung erzeugt,
+2. welche Fehlsteuerung daraus folgt,
+3. warum Appelle, ESG, Reporting oder Reparaturpolitik nicht ausreichen,
+4. welche Rückkopplungslogik die WÖk verändert,
+5. welche neue Form von Führung, Politik, Öffentlichkeit, Wohnen, Kapital, Lernen oder sozialer Sicherheit daraus entsteht.
 
-Überarbeitet wurden:
+## Aktualisierte Seiten
+
+Zentral neu generiert wurden:
 
 - `/fuer/`
-- `/fuer/unternehmen.html`
 - `/fuer/politik.html`
 - `/fuer/buergerinnen.html`
 - `/fuer/mieter.html`
@@ -22,47 +27,61 @@ Der /fuer/-Bereich war strukturell vorhanden, wirkte aber auf mehreren Seiten no
 - `/fuer/kommunen.html`
 - `/fuer/akademie.html`
 
-## Ergänzte Primärlogik
+Die Seite `/fuer/unternehmen.html` bleibt als handkuratiertes Longform-Sonderlayout erhalten und wurde nicht vom Generator überschrieben. Sie ist der Qualitätsmaßstab für die zweite Phase: ESG als Nebenprodukt resilienter Wirkungssteuerung, Mitarbeitende, Ressourcen, Kreislauffähigkeit, Wertschöpfung, Kapital und Change Management.
 
-Alle Zielgruppen-Seiten beginnen jetzt mit einer Maßstabskrise:
+## Generator
 
-1. Was misst das alte System falsch?
-2. Welche Schäden entstehen daraus?
-3. Warum bleibt Nachhaltigkeit/ESG/Reparaturpolitik unterbestimmt?
-4. Welche Steuerungslogik verändert die WÖk?
-5. Welche neue Ordnung entsteht daraus?
+Die zentrale Datei ist:
 
-## Wirkung als Steuerungslogik
+- `/tools/generate_fuer_pages.py`
 
-Ergänzt wurde auf allen Seiten die Unterscheidung zwischen Aktivität, Bericht, Absicht und tatsächlicher Zustandsveränderung. Wirkung wird nicht als Nutzenversprechen, sondern als Steuerungslogik erklärt.
+Der Generator erzeugt jetzt den Hub und alle Zielgruppen-Seiten außer der handkuratierten Unternehmensseite. Dadurch wird verhindert, dass künftige Generatorläufe die Unternehmensseite wieder auf eine alte ESG-/Reporting-Logik zurücksetzen.
 
-## Rückkopplung
+## Systemische Vertiefungen
 
-Alle Seiten enthalten jetzt einen Rückkopplungsabschnitt mit Wirkungspfad. Wirkung bleibt nicht Bericht, Appell oder Image, sondern wird in Preise, Kapital, Recht, Haushalte, Management, Öffentlichkeit, Lernen oder Alltag zurückgeführt.
-
-## Nichttrivialität
-
-Alle Seiten enthalten einen expliziten Nichttrivialitäts-Hinweis: Komplexe Systeme reagieren nicht linear; Wirkung erster, zweiter und dritter Ordnung muss evaluiert und lernfähig korrigiert werden.
-
-## Wirkungskapital
-
-Wirkungskapital wurde als Querschnittslogik ergänzt: Kapital bleibt Werkzeug und wird danach gelesen, welche Richtung es verstärkt und ob es positive Netto-Wirkung ermöglicht. Besonders vertieft auf Unternehmen, Investor:innen, Rente und Wirkungseinkommen.
-
-## Seiten mit besonderer Umverortung
-
-- Unternehmen: von Nachhaltigkeitsmanagement zu wirkungsorientiertem Management.
-- Politik: von Verwaltung/Wirkungshaushalt zu Politik als Rückkopplungsarchitektur.
-- Bürger:innen: von nachhaltigem Konsum zu Entlastung von privatisierter Systemverantwortung.
-- Wohnen: von Wohnungsmarktpolitik zu Wohnen als Wirkungsraum.
-- Rente: von Rentenmodell zu gesellschaftlicher Stabilitätsleistung.
-- Wirkungseinkommen: von Grundeinkommen zu Einkommensarchitektur nach der Arbeitsgesellschaft.
-- Journalismus: von Medienkompetenz zu Öffentlichkeit als Wirkungsraum.
-- Investor:innen: von ESG-Investing zu Kapital als Verstärker von Richtung.
-- Kommunen: von kommunaler Nachhaltigkeit zu lokalen Wirkungsräumen.
+- Politik: von Programmen und Haushaltstiteln zu Politik als Rückkopplungsarchitektur.
+- Bürger:innen: von nachhaltigem Konsum zu Entlastung moralisch privatisierter Verantwortung.
+- Wohnen: von Anlageklasse zu Wirkungsraum für Bezahlbarkeit, Energie, Gesundheit, Quartier und Demokratie.
+- Rente: von Einzahlung zu gesellschaftlicher Stabilitätsleistung, Care und Wirkungskapital.
+- Wirkungseinkommen: von Transferidee zu Wirkungsarchitektur nach der alten Arbeitsgesellschaft.
+- Journalismus: von Faktencheck allein zu Öffentlichkeit als Wirkungsraum.
+- Investor:innen: von ESG-Risikosortierung zu Kapital als Verstärker von Richtung.
+- Kommunen: von kommunaler Nachhaltigkeit zu realen lokalen Wirkungsräumen.
 - Akademie: von Lernplattform zu Wirkungskompetenz komplexer Gesellschaften.
 
-## Noch offene Punkte
+## Ergänzte Pflichtlogik
 
-- Einzelne Seiten können später mit spezifischen Primärzitaten aus dem Buch und Begriffsleitfaden weiter angereichert werden.
-- Visuals und Quellenpanels sollten nach finaler Freigabe der Primärdokumente noch genauer gemappt werden.
-- `/fuer/wirkungssteuer.html` bleibt als Spezialseite draft und sollte separat mit freigegebenem WStG-/WUStG-Stand überarbeitet werden.
+Auf jeder aktualisierten Seite ergänzt:
+
+- Maßstabskrise
+- Fehlsteuerung
+- WÖk als Steuerungslogik
+- Rückkopplung statt Appell
+- Wirkungspfad
+- Nichttrivialität
+- Wirkung erster, zweiter und dritter Ordnung
+- Wirkungsräume Mensch, Planet und Demokratie
+- Wirkungskapital als Querschnittslogik
+- konkrete Beispiele
+- spezifische Missverständnisboxen
+- erste Schritte
+- Quellen-/Standpanel
+
+## ESG und Nachhaltigkeit
+
+ESG, CSRD, Standards und Nachhaltigkeitsframeworks werden nicht als Primärlogik verwendet. Sie bleiben Anschlussräume für Daten, Regulierung und Nachweis. Die Primärlogik ist:
+
+Wirkung → Bewertung → Wirkungslenkung → Rückkopplung → Lernen.
+
+## Status
+
+- `/fuer/buergerinnen.html`: veröffentlicht.
+- `/fuer/politik.html`, `/fuer/journalismus.html`, `/fuer/investoren.html`, `/fuer/kommunen.html`: `needs_review`.
+- `/fuer/mieter.html`, `/fuer/rente.html`, `/fuer/wirkungseinkommen.html`, `/fuer/akademie.html`: `draft`.
+- `/fuer/wirkungssteuer.html`: Spezialseite, weiterhin separat zu überarbeiten.
+
+## Offene Punkte
+
+- Einzelne Seiten können später mit direkten Buchzitaten und genauerem Quellenmapping vertieft werden.
+- Für Rente und Wirkungseinkommen bleiben konkrete Zahlen ausdrücklich gesperrt, solange kein freigegebener Modellstand vorliegt.
+- `/fuer/wirkungssteuer.html` braucht eine eigene WStG-/WUStG-Revision.
