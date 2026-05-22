@@ -4,6 +4,7 @@ const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
 const siteAnalyticsEndpoint = "https://akademie.wirkungsoekonomie.de/api/site-event";
 const siteAnalyticsSessionKey = "wirkungsoekonomie-site-session";
+const siteAnalyticsVisitorKey = "wirkungsoekonomie-site-visitor";
 
 const mainElement = document.querySelector("main");
 
@@ -155,6 +156,24 @@ function getSiteAnalyticsSessionId() {
   }
 }
 
+function getSiteAnalyticsVisitorId() {
+  try {
+    const existing = localStorage.getItem(siteAnalyticsVisitorKey);
+    if (existing) {
+      return existing;
+    }
+
+    const visitorId =
+      window.crypto && "randomUUID" in window.crypto
+        ? window.crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    localStorage.setItem(siteAnalyticsVisitorKey, visitorId);
+    return visitorId;
+  } catch (error) {
+    return null;
+  }
+}
+
 function sendSiteAnalyticsEvent(eventType) {
   if (shouldSkipSiteAnalytics()) {
     return;
@@ -166,6 +185,7 @@ function sendSiteAnalyticsEvent(eventType) {
     title: document.title,
     referrer: document.referrer,
     sessionId: getSiteAnalyticsSessionId(),
+    visitorId: getSiteAnalyticsVisitorId(),
   });
 
   fetch(siteAnalyticsEndpoint, {
