@@ -388,7 +388,7 @@ function renderTax(item) {
         `;
       }).join("")}
     </div>
-    <p class="formula-note">Aktive Steuerklasse: ${taxRateFromScore(item.score)}. Reverse Merit Order: positive Wirkung wird entlastet, negative Wirkung belastet.</p>
+    <p class="formula-note">Aktive Steuerklasse: ${taxRateFromScore(item.score)}. Reverse Merit Order: positive Netto-Wirkung kann entlastet, negative Wirkung belastet werden.</p>
   `;
 }
 

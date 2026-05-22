@@ -479,7 +479,7 @@ PAGES: dict[str, dict[str, object]] = {
             {"title": "Folgen werden privatisiert", "text": "Bürger:innen sollen Lieferketten, Klima, Arbeitsbedingungen, Gesundheit, Medienwirkung und Politik allein kompensieren."},
         ],
         "shift": [
-            "Die WÖk schafft Orientierung. Wirkung wird sichtbar, bewertet und zurückgekoppelt. Produkte werden verständlicher. Schädliche Wirkung wird teurer oder riskanter. Positive Netto-Wirkung wird günstiger oder leichter zugänglich.",
+            "Die WÖk schafft Orientierung. Wirkung wird sichtbar, bewertet und zurückgekoppelt. Produkte werden verständlicher. Schädliche Wirkung kann belastet oder riskanter werden. Positive Netto-Wirkung kann entlastet und leichter zugänglich werden.",
             "Politische Sprache wird nicht nur auf Wahrheit, sondern auf Wirkungspotenziale geprüft. Bürger:innen werden nicht zu Überwachungssubjekten, sondern zu handlungsfähigeren Mitwirkenden.",
         ],
         "gains": [
