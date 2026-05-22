@@ -134,8 +134,27 @@
       "CSRD/ESRS-Anschlusslogik",
       "Wirkungsorientierte Unternehmensführung"
     ],
-    "notes": "Roadmapgrafik; keine Unternehmensberatung im Einzelfall.",
+    "notes": "Legacy-Roadmapgrafik mit Headline-Layoutproblem; auf /fuer/unternehmen.html durch kontrolliertes SVG woek_unternehmensfuehrung_roadmap_v2 ersetzt. Nicht erneut prominent einbinden.",
     "alt": "Zehnstufige Roadmap von Readiness-Prüfung über Wirkungsfelder, Daten, Baseline und Risiko bis Rückkopplung."
+  },
+  {
+    "visual_id": "woek_unternehmensfuehrung_roadmap_v2",
+    "file": "woek_unternehmensfuehrung_roadmap_v2.svg",
+    "mobile": "woek_unternehmensfuehrung_roadmap_v2_mobile.svg",
+    "pages": [
+      "/fuer/unternehmen.html"
+    ],
+    "visual_type": "controlled_svg_model_visual",
+    "created_as": "custom_woek_svg",
+    "based_on": [
+      "Die neue Ordnung des Wohlstands, Teil V Unternehmen, Märkte und Kapital",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Systemmodell der Wirkungsökonomie",
+      "LinkedIn-Grundartikel Wirkungsorientierte Unternehmensführung",
+      "bestehende WÖk-Visuals im Modell- und Flow-System"
+    ],
+    "notes": "Ersetzt das alte PNG mit Headline-Überlagerung. Kontrolliertes SVG, damit Typografie, Begriffe, Prozesslogik und mobile Variante präzise bleiben.",
+    "alt": "Modellgrafik der wirkungsorientierten Unternehmensführung. Sie zeigt den Wechsel von alter Steuerung über Umsatz, Marge, KPI und Reporting zu Wirkung als Führungsgröße. Der Change-Prozess führt von Maßstab, Wirkungspfaden, Wertschöpfung, Daten, WÖk-ID und Wirkungslast zu Strategie, Führung, Mitarbeitenden, Pilotierung und Rückkopplung in Einkauf, Preise, Kapital und Management."
   },
   {
     "visual_id": "woek_09_scanner_ergebnislogik",
