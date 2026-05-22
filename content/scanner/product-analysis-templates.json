@@ -10,12 +10,15 @@
       "mode": "product-scanner",
       "sections": [
         "Produkt erkannt",
-        "Datenlage",
-        "Relevante Wirkungsräume",
-        "SDG-/SDG+-Bezug",
+        "Kategorie",
+        "verfügbare Daten",
+        "fehlende Daten",
+        "Datenqualität",
+        "relevante SDGs",
+        "mögliche WÖk-IDs",
         "Wirkungspfad",
-        "Erste Wirkungshypothese",
-        "Was für eine echte Bewertung fehlt?",
+        "Datenbedarf für echte Scorecard",
+        "keine finale Steuerklasse",
         "Quellenpanel"
       ],
       "standard_notice": "Diese Einschätzung basiert auf begrenzter Datenqualität und ist keine finale WÖk-Bewertung. Eine finale WÖk-Scorecard benötigt geprüfte Produkt-, Lieferketten- und Unternehmensdaten."
@@ -25,13 +28,15 @@
       "mode": "company-scanner",
       "sections": [
         "Unternehmen erkannt",
-        "Datenlage",
-        "Datenqualität",
-        "Relevante Wirkungsräume",
-        "Relevante Wirkungsfelder",
-        "Wirkungspfad",
-        "Erste Wirkungshypothese",
-        "Was für eine echte Bewertung fehlt?",
+        "Branche / mögliche NACE-Zuordnung",
+        "Geschäftsmodell grob",
+        "öffentliche Datenlage",
+        "Nachhaltigkeitsbericht / CSRD / GRI, falls verfügbar",
+        "relevante Wirkungsräume",
+        "Wirkungspotenziale",
+        "Datenlücken",
+        "mögliche WÖk-Fragen",
+        "keine finale Bewertung",
         "Quellenpanel"
       ],
       "standard_notice": "Keine finale Unternehmensbewertung. Keine Anlageberatung. Keine ESG-Rating-Ersetzung. Keine amtliche WÖk-Bewertung."

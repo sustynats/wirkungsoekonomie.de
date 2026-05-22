@@ -879,6 +879,60 @@
         "Prävention"
       ],
       "entrypoint": "gesundheit"
+    },
+    {
+      "key": "datenqualitaet",
+      "label": "Datenqualität",
+      "aliases": [
+        "Datenqualitätsmodell",
+        "Datenqualität A",
+        "Datenqualität B",
+        "Datenqualität C",
+        "Datenqualität D",
+        "Datenqualität E",
+        "Datenqualität F",
+        "Quellenstatus",
+        "Datenlücke",
+        "Unsicherheit",
+        "Datenstand"
+      ],
+      "related": [
+        "WÖk-Scanner",
+        "SourcePanel",
+        "Evidenz",
+        "Datenbasis",
+        "Wirkungspotenzial"
+      ],
+      "entrypoint": "scanner"
+    },
+    {
+      "key": "externe-datenquellen",
+      "label": "Externe Datenquellen",
+      "aliases": [
+        "Open Food Facts",
+        "EPREL",
+        "GS1",
+        "GTIN",
+        "DPP",
+        "ESPR",
+        "ESRS",
+        "GRI",
+        "Eurostat",
+        "Destatis",
+        "UBA",
+        "Wahlprogramm",
+        "URL Analyse",
+        "Produktdaten",
+        "Unternehmensdaten"
+      ],
+      "related": [
+        "WÖk-Scanner",
+        "Produktscanner",
+        "Unternehmensscanner",
+        "Wahlprogramm-Scanner",
+        "Evidenz"
+      ],
+      "entrypoint": "scanner"
     }
   ],
   "typos": {
@@ -937,6 +991,14 @@
     "kapital": "Wirkungskapital",
     "steuer": "Wirkungssteuer",
     "medien": "Wirkung politischer Sprache",
-    "unternehmen": "wirkungsorientiertes Management"
+    "unternehmen": "wirkungsorientiertes Management",
+    "datenqualität": "Datenqualität",
+    "datenqualitaet": "Datenqualität",
+    "datenlücke": "Datenlücken",
+    "datenluecke": "Datenlücken",
+    "open food facts": "Produktscanner",
+    "eprel": "Produktscanner",
+    "gtin": "WÖk-ID",
+    "wahlprogramm": "Wahlprogramm-Scanner"
   }
 }

@@ -13,42 +13,59 @@
       label: "Text / Artikel analysieren",
       demo: "politische-sprache",
       scope: "Text, Artikel oder kurzer Auszug",
+      status: "MVP · URL/Text vorbereitet",
     },
     website: {
       label: "Website analysieren",
       demo: "politische-sprache",
       scope: "Website-Struktur oder kopierter Seitenauszug",
+      status: "MVP · URL-Abruf später",
     },
     election: {
       label: "Wahlprogramm analysieren",
       demo: "politische-sprache",
       scope: "Programmabschnitt oder Maßnahme",
+      status: "Datenquelle vorbereitet",
     },
     statement: {
       label: "Politische Aussage analysieren",
       demo: "politische-sprache",
       scope: "Begriff, Slogan oder Aussage",
+      status: "MVP · Wirkungspotenzial",
     },
     product: {
       label: "Produkt analysieren",
       demo: "produkt-apfel",
       scope: "Produktname, Produktdaten oder Vergleich",
+      status: "Datenquelle vorbereitet",
     },
     company: {
       label: "Unternehmen analysieren",
       demo: "unternehmen",
       scope: "Unternehmensname, Website oder Berichtsauszug",
+      status: "Datenquelle vorbereitet",
     },
     decision: {
       label: "Entscheidung / Maßnahme einordnen",
       demo: "entscheidung",
       scope: "Gesetz, Investition, Beschluss oder Maßnahme",
+      status: "MVP · benötigt Prüfung",
     },
     photo: {
       label: "Foto / Screenshot vorbereiten",
       demo: "produkt-apfel",
       scope: "Beschreibung dessen, was auf dem Bild erkennbar wäre",
+      status: "Konzept · keine Upload-Speicherung",
     },
+  };
+
+  const qualityLevels = {
+    A: "geprüfte produkt- oder organisationsspezifische Primärdaten",
+    B: "veröffentlichte Berichts- oder Auditdaten",
+    C: "offene Datenbank / offizieller Standard / öffentliches Register",
+    D: "Branchenbenchmark / Kategorieannahme",
+    E: "unvollständige Annahme / Plausibilisierung",
+    F: "keine belastbare Datenbasis",
   };
 
   const demos = {
@@ -66,6 +83,55 @@
       counter: "Welche Systemfrage wird durch den Frame sichtbar oder verdeckt?",
       sources: "Begriffsleitfaden, SDG+ Medien & Demokratie, Wirkung politischer Sprache.",
       limits: "Diese Analyse beschreibt Wirkungspotenziale und Resonanzrisiken, keinen automatisch nachgewiesenen Einzelschaden.",
+      quality: "E",
+      sourcePanel: [
+        {
+          type: "Eingabequelle",
+          title: "Textauszug oder URL",
+          provided: "sichtbare Sprache, mögliche Frames, Kontext-Hinweise",
+          status: "MVP-Eingabe, nicht dauerhaft gespeichert",
+          limitation: "keine vollständige Faktenprüfung, keine Reichweiten- oder Wirkungsdaten",
+        },
+        {
+          type: "interne WÖk-Basis",
+          title: "SDG+ Medien & Demokratie",
+          provided: "Resonanzraum, Wirkungspotenzial, Demokratiebezug",
+          status: "published / WÖk-Systematik",
+          limitation: "ordnet Wirkungspotenziale ein, beweist keinen Einzelschaden",
+        },
+      ],
+    },
+    wahlprogramm: {
+      title: "Wahlprogramm / Maßnahme wirkungsökonomisch lesen",
+      recognized: "Ein politisches Versprechen oder Programmabschnitt mit behauptetem Ziel, Maßnahme, Zielkonflikten und Datenbedarf.",
+      central: "Wahlprogramme werden nach Wirkungspotenzialen, Datenlage und Systemfragen gelesen, nicht nach Parteipräferenz.",
+      data: "Offizieller Textauszug oder PDF-Kapitel kann Datenqualität B erreichen. Ohne offiziellen Kontext bleibt es eine unvollständige Eingabe.",
+      potentials: ["soziale Entlastung oder Folgekosten", "Klima- und Ressourcenwirkung", "Vertrauen oder Polarisierung", "Prävention oder Reparaturpolitik"],
+      spaces: ["Mensch", "Planet", "Demokratie"],
+      sdg: ["Agenda 2030", "SDG 8", "SDG 10", "SDG 11", "SDG 13", "SDG 16", "SDG+"],
+      path: ["behauptetes Ziel", "vorgeschlagene Maßnahme", "impliziter Maßstab", "Wirkungsfrage", "Zielkonflikte", "Folgekosten", "Rückkopplung", "WÖk-Gegenfrage"],
+      conflicts: "Eine Maßnahme kann kurzfristig Zustimmung erzeugen und langfristig Folgekosten, Verdrängung oder Vertrauensverlust auslösen.",
+      gaps: "Baseline, Finanzierung, betroffene Gruppen, Alternativen, Folgekosten, Umsetzungsdaten, Evaluationslogik.",
+      counter: "Welche Folgekosten, Zielkonflikte und Rückkopplungen werden in dieser Maßnahme sichtbar oder ausgeblendet?",
+      sources: "Offizielle Parteiseite oder Wahlprogramm-PDF, Politik mit Wirkung, Wirkungshaushalt, SDG+ Demokratie.",
+      limits: "Diese Analyse ist keine Wahlempfehlung. Sie zeigt Wirkungspotenziale, Zielkonflikte, Datenlage und offene Systemfragen.",
+      quality: "B",
+      sourcePanel: [
+        {
+          type: "Eingabequelle",
+          title: "offizielle Parteiseite, Wahlprogramm-PDF oder Textabschnitt",
+          provided: "behauptetes Ziel, vorgeschlagene Maßnahme, Wortlaut und Kontext",
+          status: "Datenquelle vorbereitet",
+          limitation: "keine Wahlempfehlung, keine parteipolitische Gesinnungsbewertung",
+        },
+        {
+          type: "interne WÖk-Basis",
+          title: "Politik mit Wirkung und Wirkungshaushalt",
+          provided: "alte Logik, Wirkungsräume, Zielkonflikte, Folgekosten, Rückkopplungslogik",
+          status: "published / Content-Master",
+          limitation: "keine Rechts-, Leistungs- oder Politikberatung",
+        },
+      ],
     },
     "produkt-apfel": {
       title: "Produktwirkung / Regionaler Bio-Apfel vs. importierter Apfel",
@@ -81,6 +147,23 @@
       counter: "Welche Wirkung bleibt im heutigen Preis unsichtbar?",
       sources: "Produktwirkung, WÖk-ID, Scorecard, Methodik und Datenstandards.",
       limits: "Keine finale Steuerklasse. Für eine echte Bewertung braucht es geprüfte Produkt-, Lieferketten- und Unternehmensdaten.",
+      quality: "D",
+      sourcePanel: [
+        {
+          type: "externe Datenquelle",
+          title: "Open Food Facts / GS1 / Produktseite",
+          provided: "mögliche Produktidentifikation, Kategorie, Zutaten, Labels oder Barcode",
+          status: "Datenquelle vorbereitet",
+          limitation: "liefert keine geprüfte vollständige Lieferkettenwirkung",
+        },
+        {
+          type: "interne WÖk-Basis",
+          title: "WÖk-ID, Scorecard, Produktwirkung",
+          provided: "Struktur für Wirkungspfad, Datenlücken und Scorecard-Hypothese",
+          status: "MVP",
+          limitation: "keine finale Steuerklasse ohne geprüfte Daten",
+        },
+      ],
     },
     unternehmen: {
       title: "Unternehmen als Wirkungssystem",
@@ -96,6 +179,23 @@
       counter: "Welche Entscheidung würde sich ändern, wenn Wirkung in Führung und Kapital zurückfließt?",
       sources: "Für Unternehmen, Wirkungskapital, T-SROI, Wirkungsmanagement.",
       limits: "Keine finale Unternehmensbewertung. Keine Anlageberatung. Keine ESG-Rating-Ersetzung.",
+      quality: "B",
+      sourcePanel: [
+        {
+          type: "externe Quelle",
+          title: "Unternehmenswebsite, Geschäftsbericht, Nachhaltigkeitsbericht, CSRD/ESRS/GRI",
+          provided: "öffentliche Datenlage, Geschäftsmodell, Berichtsindikatoren und mögliche NACE-Hinweise",
+          status: "Datenquelle vorbereitet",
+          limitation: "Selbstauskunft und Reporting ersetzen keine WÖk-Bewertung",
+        },
+        {
+          type: "interne WÖk-Basis",
+          title: "Unternehmen als Wirkungssystem",
+          provided: "Führung, Kultur, Produkte, Lieferketten, Kapital, Kommunikation, Daten, Innovation",
+          status: "published / Content-Master",
+          limitation: "keine Anlageberatung und keine ESG-Rating-Ersetzung",
+        },
+      ],
     },
     entscheidung: {
       title: "Entscheidung / Maßnahme",
@@ -111,6 +211,23 @@
       counter: "Welche Fehlsteuerung erzeugt das Problem, das die Maßnahme reparieren soll?",
       sources: "Politik mit Wirkung, Wirkungshaushalt, Wirkungsrückkopplung.",
       limits: "Keine Rechts-, Steuer-, Leistungs- oder Politikberatung. Keine Wahlempfehlung.",
+      quality: "E",
+      sourcePanel: [
+        {
+          type: "Eingabequelle",
+          title: "Maßnahmenbeschreibung, Gesetzesauszug oder Wahlprogrammabschnitt",
+          provided: "behauptetes Ziel, Maßnahme, betroffene Wirkungsräume",
+          status: "MVP-Eingabe",
+          limitation: "ohne Baseline, Kosten, Alternativen und Evaluationsdaten nur Ersteinschätzung",
+        },
+        {
+          type: "interne WÖk-Basis",
+          title: "Wirkungshaushalt und Wirkungsrückkopplung",
+          provided: "Prävention, Folgekosten, Zielkonflikte und Rückkopplungslogik",
+          status: "published / WÖk-Systematik",
+          limitation: "keine Wahlempfehlung, keine Politikberatung",
+        },
+      ],
     },
   };
 
@@ -130,6 +247,45 @@
     return `<ol class="scanner-path">${(items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>`;
   }
 
+  function inferInputSource(value) {
+    const trimmed = String(value || "").trim();
+    if (/^https?:\/\//i.test(trimmed)) {
+      return "URL-Eingabe erkannt. Im MVP wird kein Paywall-Bypass und kein vollständiger Fremdtext gespeichert; bei nicht abrufbarer URL bitte kurzen Auszug einfügen.";
+    }
+    if (trimmed.length > 0) {
+      return "Textauszug erkannt. Im MVP erfolgt nur eine lokale Demo-Einordnung; keine dauerhafte Speicherung.";
+    }
+    return "Demo ohne Nutzereingabe.";
+  }
+
+  function renderQuality(level) {
+    const label = qualityLevels[level] || qualityLevels.F;
+    return `<article class="scanner-quality-card"><h4>Datenqualität</h4><p><strong>${escapeHtml(level || "F")}</strong> - ${escapeHtml(label)}</p><p>Für belastbare WÖk-Bewertungen braucht es geprüfte Quellen, Datenstand, Limitierungen und nachvollziehbare Methodik.</p></article>`;
+  }
+
+  function renderSourcePanel(demo, inputSource) {
+    const sources = demo.sourcePanel || [];
+    return `
+      <details class="source-panel scanner-source-panel" open>
+        <summary>Grundlage dieser Analyse</summary>
+        <div>
+          <article>
+            <strong>Eingabequelle</strong>
+            <p>${escapeHtml(inputSource)}</p>
+            <p><em>Was diese Quelle nicht liefert:</em> keine geprüfte Gesamtwirkung, keine finale Bewertung, keine amtliche Einordnung.</p>
+          </article>
+          ${sources.map((source) => `
+            <article>
+              <strong>${escapeHtml(source.type)}: ${escapeHtml(source.title)}</strong>
+              <p><em>Was diese Quelle liefert:</em> ${escapeHtml(source.provided)}</p>
+              <p><em>Datenstand / Status:</em> ${escapeHtml(source.status)}</p>
+              <p><em>Limitierung:</em> ${escapeHtml(source.limitation)}</p>
+            </article>
+          `).join("")}
+        </div>
+      </details>`;
+  }
+
   function renderResult(demoKey, sourceText) {
     const mode = modes[modeSelect.value] || modes.text;
     const demo = demos[demoKey] || demos[mode.demo] || demos["politische-sprache"];
@@ -138,12 +294,13 @@
         <div class="scanner-result-head">
           <p class="card-kicker">MVP-Ersteinschätzung · ${escapeHtml(mode.label)}</p>
           <h3>${escapeHtml(demo.title)}</h3>
-          <span>Datenstatus: Demo / Annahme</span>
+          <span>Status: ${escapeHtml(mode.status)} · Datenqualität ${escapeHtml(demo.quality || "F")}</span>
         </div>
         <div class="scanner-result-sections">
           <article><h4>Was wurde erkannt?</h4><p>${escapeHtml(demo.recognized)}</p></article>
           <article><h4>Zentrale Aussage / Produkt / Organisation / Entscheidung</h4><p>${escapeHtml(sourceText || demo.central)}</p></article>
           <article><h4>Datenlage</h4><p>${escapeHtml(demo.data)}</p></article>
+          ${renderQuality(demo.quality)}
           <article><h4>Wirkungspotenziale</h4>${list(demo.potentials)}</article>
           <article><h4>Wirkungsräume: Mensch, Planet, Demokratie</h4>${list(demo.spaces)}</article>
           <article><h4>SDG-/SDG+-Bezug</h4>${list(demo.sdg)}</article>
@@ -154,12 +311,15 @@
           <article><h4>Quellen</h4><p>${escapeHtml(demo.sources)}</p></article>
           <article><h4>Grenzen der Analyse</h4><p>${escapeHtml(demo.limits)}</p></article>
         </div>
+        ${renderSourcePanel(demo, inferInputSource(sourceText))}
+        <p class="scanner-legal-note">Diese Analyse ist eine wirkungsökonomische Ersteinschätzung auf Basis verfügbarer Daten. Sie ersetzt keine amtliche Bewertung, keine Rechts-, Steuer-, Anlage- oder Politikberatung.</p>
       </article>`;
   }
 
   function inferDemo() {
     const text = String(input.value || "").toLowerCase();
     if (modeSelect.value === "company" || text.includes("unternehmen")) return "unternehmen";
+    if (modeSelect.value === "election" || text.includes("wahlprogramm")) return "wahlprogramm";
     if (modeSelect.value === "product" || text.includes("apfel") || text.includes("produkt")) return "produkt-apfel";
     if (modeSelect.value === "decision" || text.includes("maßnahme") || text.includes("gesetz")) return "entscheidung";
     return modes[modeSelect.value]?.demo || "politische-sprache";

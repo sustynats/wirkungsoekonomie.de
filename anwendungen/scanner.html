@@ -10,7 +10,7 @@
     <meta name="search_description" content="MVP-Anwendung für wirkungsökonomische Ersteinschätzungen: Text, Website, Wahlprogramm, Produkt, Unternehmen, Entscheidung oder Screenshot.">
     <meta name="search_type" content="Tool / MVP">
     <meta name="search_section" content="Anwendungen">
-    <meta name="search_tags" content="WÖk-Scanner, Scanner MVP, Wirkungspotenzial, Datenlage, Zielkonflikte, SDG+, Produktanalyse, Unternehmensanalyse, politische Sprache">
+    <meta name="search_tags" content="WÖk-Scanner, Scanner MVP, Datenqualität, Quellenstatus, Datenlücken, URL-Analyse, Wahlprogramm-Scanner, Produktscanner, Unternehmensscanner, Wirkungspotenzial, Datenlage, Zielkonflikte, SDG+, Produktanalyse, Unternehmensanalyse, politische Sprache">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -79,12 +79,43 @@
               </div>
               <div class="scanner-demo-buttons" aria-label="Demo-Analysen">
                 <button type="button" data-scanner-demo="politische-sprache">Demo: politische Sprache</button>
+                <button type="button" data-scanner-demo="wahlprogramm">Demo: Wahlprogramm</button>
                 <button type="button" data-scanner-demo="produkt-apfel">Demo: Produktwirkung</button>
                 <button type="button" data-scanner-demo="unternehmen">Demo: Unternehmen</button>
               </div>
             </div>
             <div class="scanner-output-panel" data-scanner-result aria-live="polite"></div>
           </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="data-architecture-title">
+        <div class="section-header">
+          <p class="hero-kicker">Sprint 5 · Datenfähigkeit</p>
+          <h2 id="data-architecture-title">Datenlage statt Scheinsicherheit</h2>
+          <p>Der Scanner bereitet externe Datenquellen, Quellenstatus und Datenqualität vor. Er zeigt, was bekannt ist, was unsicher bleibt und welche Daten für eine belastbare Bewertung fehlen.</p>
+        </div>
+        <div class="scanner-architecture">
+          <article>
+            <h3>URL / Text</h3>
+            <p>Artikel, Websites und Auszüge werden nach Thema, zentraler Aussage, Frame, Resonanzraum, Wirkungspotenzial, SDG+/Demokratiebezug und WÖk-Gegenfrage strukturiert. Kein Paywall-Bypass, keine Volltextreproduktion.</p>
+          </article>
+          <article>
+            <h3>Produktdaten</h3>
+            <p>Open Food Facts, EPREL, GS1/GTIN, DPP/ESPR, ÖKOBAUDAT, ProBas, EU Ecolabel und Blauer Engel sind als Anschlussquellen vorbereitet. Ergebnis bleibt Hypothese, keine finale Steuerklasse.</p>
+          </article>
+          <article>
+            <h3>Unternehmensdaten</h3>
+            <p>Websites, Geschäftsberichte, Nachhaltigkeitsberichte, CSRD/ESRS, GRI, EU-Taxonomie, CDP, SBTi und UN Global Compact werden als öffentliche Datenlage eingeordnet. Keine Anlageberatung, keine ESG-Rating-Ersetzung.</p>
+          </article>
+        </div>
+        <div class="scanner-quality-grid" aria-label="Datenqualitätsstufen">
+          <article><strong>A</strong><p>geprüfte Primärdaten</p></article>
+          <article><strong>B</strong><p>Berichts- oder Auditdaten</p></article>
+          <article><strong>C</strong><p>offene Datenbank / Register</p></article>
+          <article><strong>D</strong><p>Branchenbenchmark</p></article>
+          <article><strong>E</strong><p>Annahme / Plausibilisierung</p></article>
+          <article><strong>F</strong><p>keine belastbare Datenbasis</p></article>
         </div>
       </section>
 
@@ -166,6 +197,6 @@
       </div>
     </footer>
     <script src="../assets/js/main.js?v=20260522-scanner"></script>
-    <script src="../assets/js/scanner-mvp.js?v=20260522-sprint4"></script>
+    <script src="../assets/js/scanner-mvp.js?v=20260522-sprint5"></script>
   </body>
 </html>

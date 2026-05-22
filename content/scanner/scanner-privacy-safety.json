@@ -8,6 +8,8 @@
     "data_minimization": [
       "keine personenbezogenen Daten erforderlich",
       "Foto-/URL-/Texteingaben nicht dauerhaft speichern",
+      "keine dauerhafte Speicherung von Texteingaben ohne Einwilligung",
+      "keine Speicherung hochgeladener Dokumente im MVP",
       "optional lokale Verarbeitung prüfen",
       "keine Weitergabe an Dritte ohne Hinweis",
       "bei KI-Nutzung transparent machen"
@@ -23,6 +25,7 @@
       "keine Paywalls umgehen",
       "robots.txt und Zugriffsbeschränkungen respektieren",
       "keine langen Artikeltexte speichern",
+      "keine urheberrechtlich geschützten Texte vollständig reproduzieren",
       "Quelle anzeigen",
       "Fallback: kurze Textauszüge einfügen lassen"
     ],
@@ -35,6 +38,11 @@
       "keine finale WÖk-Steuerklasse",
       "keine Paywall-Umgehung",
       "keine urheberrechtlich geschützten Inhalte lang reproduzieren"
+    ],
+    "secrets": [
+      "keine externen API-Keys im Frontend offenlegen",
+      "API-Zugänge nur serverseitig oder über freigegebene Proxy-/Backend-Funktion",
+      "RAG- und URL-Analyse erst nach geprüfter Quellen- und Datenschutzlogik produktiv schalten"
     ]
   }
 }

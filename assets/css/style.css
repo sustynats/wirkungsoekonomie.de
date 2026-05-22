@@ -4653,6 +4653,21 @@ textarea {
   color: var(--muted);
 }
 
+.scanner-quality-card {
+  border-color: rgba(185, 143, 42, 0.32) !important;
+  background: rgba(255, 249, 233, 0.72) !important;
+}
+
+.scanner-source-panel {
+  margin-top: 1rem;
+}
+
+.scanner-legal-note {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .compass-topic-detail-grid,
 .knowledge-card-grid {
   display: grid;
