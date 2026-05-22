@@ -349,7 +349,7 @@
       "/wissen/sechster-kondratieff.html"
     ],
     "visual_type": "model",
-    "status": "active",
+    "status": "superseded",
     "created_as": "approved_brand_guide_infographic",
     "based_on": [
       "WÖk Brand Guide",
@@ -357,8 +357,27 @@
       "Die neue Ordnung des Wohlstands",
       "Systemmodell der Wirkungsökonomie"
     ],
-    "notes": "Vom Nutzer freigegebenes Kondratieff-Basisvisual. Ersetzt den zu knappen kontrollierten SVG-Entwurf auf der öffentlichen Seite.",
+    "notes": "Vom Nutzer freigegebenes Kondratieff-Basisvisual. Am 2026-05-22 durch woek_kondratieff_system_v2 ersetzt, um KI, Robotik und Automatisierung als Wachstumstreiber innerhalb der Agenda-2030-Nachhaltigkeitstransformation präziser einzuordnen.",
     "alt": "Infografik Die Kondratieff-Zyklen von industrieller Wertschöpfung zur nachhaltigen Wirkungsgesellschaft mit sechs langen Wellen und der Wirkungsökonomie als Betriebssystem der sechsten Welle."
+  },
+  {
+    "visual_id": "woek_kondratieff_system_v2",
+    "file": "woek_kondratieff_system_v2.svg",
+    "pages": [
+      "/wissen/sechster-kondratieff.html"
+    ],
+    "visual_type": "model",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie",
+      "Agenda 2030 / SDGs / SDG+"
+    ],
+    "notes": "Kontrolliertes SVG zur Präzisierung der sechsten Kondratieff-Welle: Nachhaltigkeitstransformation als Welle, KI/Robotik/Automatisierung und weitere Felder als Wachstumstreiber, Agenda 2030 als Richtung und Wirkungsökonomie als Steuerungs- und Rückkopplungslogik.",
+    "alt": "Modellgrafik zur sechsten Kondratieff-Welle: Nachhaltigkeitstransformation als Welle, KI, Robotik, Automatisierung, Datenräume, Kreislaufwirtschaft, erneuerbare Energien, biobasierte Innovationen, Bildung, Gesundheit und resiliente Wertschöpfung als Wachstumstreiber, Agenda 2030, SDGs, SDG+, Mensch, Planet und Demokratie als Ordnungsrahmen und die Wirkungsökonomie mit Wirkung, WÖk-ID, Scorecard, Rückkopplung und Lernen als Steuerungslogik."
   },
   {
     "visual_id": "woek_unternehmen_wirkungsnetz",
