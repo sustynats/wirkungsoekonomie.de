@@ -3,17 +3,20 @@
 
 from __future__ import annotations
 
+import json
 import re
+from html import escape
 from pathlib import Path
 
 
 SITE_ROOT = Path(__file__).resolve().parents[1]
+NAVIGATION = json.loads((SITE_ROOT / "assets/data/navigation.json").read_text(encoding="utf-8"))
 HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-8")
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
 
 
-HEADER_RE = re.compile(r"    <header class=\"site-header\">.*?</header>", re.S)
-FOOTER_RE = re.compile(r"    <footer class=\"footer\">.*?</footer>", re.S)
+HEADER_RE = re.compile(r"\s*<header class=\"site-header\">.*?</header>", re.S)
+FOOTER_RE = re.compile(r"\s*<footer class=\"footer\">.*?</footer>", re.S)
 
 
 def base_for(path: Path) -> str:
@@ -23,16 +26,102 @@ def base_for(path: Path) -> str:
     return "../" * len(relative_parent.parts)
 
 
+def nav_match(item: dict[str, object]) -> str:
+    return "|".join(str(token) for token in item.get("match", []))
+
+
+def nav_link(item: dict[str, object], base: str) -> str:
+    label = escape(str(item["label"]))
+    href = escape(f"{base}{item['href']}", quote=True)
+    match = escape(nav_match(item), quote=True)
+    return f'<a href="{href}" data-nav-match="{match}">{label}</a>'
+
+
+def nav_links(items: list[dict[str, object]], base: str) -> str:
+    return "\n".join(nav_link(item, base) for item in items)
+
+
+def nav_slug(label: str) -> str:
+    return (
+        label.lower()
+        .replace("ö", "oe")
+        .replace("ä", "ae")
+        .replace("ü", "ue")
+        .replace("ß", "ss")
+        .replace("&", "und")
+        .replace("/", "-")
+        .replace("?", "")
+        .replace(" ", "-")
+    )
+
+
+def header_item(item: dict[str, object], base: str) -> str:
+    children_ref = item.get("childrenRef")
+    if not children_ref:
+        return nav_link(item, base)
+
+    children = NAVIGATION[str(children_ref)]
+    label = escape(str(item["label"]))
+    match = escape(nav_match(item), quote=True)
+    slug = escape(nav_slug(str(item["label"])), quote=True)
+    panel = "\n".join(f"        {line}" for line in nav_links(children, base).splitlines())
+    return (
+        f'<details class="nav-more nav-{slug}" data-nav-match="{match}">\n'
+        f"  <summary>{label}</summary>\n"
+        f'  <div class="nav-more-panel">\n'
+        f"{panel}\n"
+        f"  </div>\n"
+        f"</details>"
+    )
+
+
+def header_nav(base: str) -> str:
+    return "\n".join(header_item(item, base) for item in NAVIGATION["header"])
+
+
+def footer_group(group: dict[str, object], base: str) -> str:
+    title = escape(str(group["title"]))
+    links = "\n".join(f"      {line}" for line in nav_links(group["items"], base).splitlines())
+    return (
+        '<div class="footer-nav-group">\n'
+        f"  <h3>{title}</h3>\n"
+        '  <div class="footer-nav-links">\n'
+        f"{links}\n"
+        "  </div>\n"
+        "</div>"
+    )
+
+
+def footer_nav(base: str) -> str:
+    return "\n".join(footer_group(group, base) for group in NAVIGATION["footerGroups"])
+
+
 def render(template: str, base: str) -> str:
-    return "\n".join(f"    {line}" if line else line for line in template.replace("{{BASE}}", base).splitlines())
+    rendered = (
+        template.replace("{{BASE}}", base)
+        .replace("{{HEADER_NAV}}", header_nav(base))
+        .replace("{{FOOTER_NAV}}", footer_nav(base))
+        .replace("{{FOOTER_LEGAL_NAV}}", nav_links(NAVIGATION["footerLegal"], base))
+    )
+    return "\n".join(f"    {line}" if line else line for line in rendered.splitlines())
+
+
+def insert_footer(text: str, footer: str) -> str:
+    main_end = text.rfind("</main>")
+    if main_end != -1:
+        insert_at = main_end + len("</main>")
+        return f"{text[:insert_at]}{footer}{text[insert_at:]}"
+    if "</body>" in text:
+        return text.replace("</body>", f"{footer}\n</body>", 1)
+    return text + footer
 
 
 def should_sync(path: Path, text: str) -> bool:
     if path.name == "404.html":
         return False
-    if path.name == "index.html" and path.parent != SITE_ROOT:
+    if path.relative_to(SITE_ROOT).parts[0] in {"templates"}:
         return False
-    return "<header class=\"site-header\">" in text and "<footer class=\"footer\">" in text
+    return "<header class=\"site-header\">" in text
 
 
 def sync(path: Path) -> bool:
@@ -41,8 +130,11 @@ def sync(path: Path) -> bool:
         return False
 
     base = base_for(path)
-    updated = HEADER_RE.sub(render(HEADER_TEMPLATE, base), text, count=1)
-    updated = FOOTER_RE.sub(render(FOOTER_TEMPLATE, base), updated, count=1)
+    updated = HEADER_RE.sub("\n" + render(HEADER_TEMPLATE, base), text, count=1)
+    footer = "\n" + render(FOOTER_TEMPLATE, base)
+    if FOOTER_RE.search(updated):
+        updated = FOOTER_RE.sub("", updated, count=1)
+    updated = insert_footer(updated, footer)
 
     if updated == text:
         return False

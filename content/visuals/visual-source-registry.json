@@ -1,207 +1,439 @@
-{
-  "metadata": {
-    "status": "draft",
-    "last_updated": "2026-05-22"
+[
+  {
+    "visual_id": "woek_01_kompass_mensch_planet_demokratie",
+    "file": "woek_01_kompass_mensch_planet_demokratie.png",
+    "webp": "woek_01_kompass_mensch_planet_demokratie.webp",
+    "pages": [
+      "/",
+      "/ordnung/"
+    ],
+    "visual_type": "concept_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Website /",
+      "Buch: Die neue Ordnung des Wohlstands"
+    ],
+    "notes": "Abstrakte eigene Infografik; keine externen Bildquellen; kein fremdes Logo; keine personenbezogene Darstellung.",
+    "alt": "Drei verbundene Kreise für Mensch, Planet und Demokratie mit positiver Netto-Wirkung im Zentrum."
   },
-  "visuals": [
-    {
-      "visual_id": "daten-zur-scorecard",
-      "title": "Von Daten zur Scorecard",
-      "page": "/modell.html",
-      "visual_type": "prozessgrafik",
-      "based_on_sources": [
-        "eu-csrd-2022-2464",
-        "eu-esrs-2023-2772",
-        "gri-universal-standards-2021"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "geplante SVG/Infografik",
-      "data_sources": [
-        "CSRD",
-        "ESRS",
-        "GRI"
-      ],
-      "interpretation_notes": "Zeigt methodischen Prozess, keine Rechtsberatung.",
-      "license_notes": "Eigenes Visual; Quellen nennen.",
-      "alt_text": "Prozess von Datenquellen über Wirkungsindikatoren zur Scorecard.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "scorecard-zur-steuerklasse",
-      "title": "Von Scorecard zur Steuerklasse",
-      "page": "/fuer/wirkungssteuer.html",
-      "visual_type": "prozessgrafik",
-      "based_on_sources": [
-        "eu-csrd-2022-2464"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "geplante SVG/Infografik",
-      "data_sources": [
-        "WÖk-Modellstand, freizugebende WStG/WUStG-Dokumente"
-      ],
-      "interpretation_notes": "Keine Steuersätze ohne Freigabe.",
-      "license_notes": "Eigenes Visual; Modellstatus markieren.",
-      "alt_text": "Prozess von Scorecard über FinalScore und Wirkungsklasse zur Steuerlogik.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "wirkung-vs-wirkungspotenzial",
-      "title": "Wirkung vs. Wirkungspotenzial",
-      "page": "/glossar.html",
-      "visual_type": "erklärgrafik",
-      "based_on_sources": [
-        "claim-complex-systems-nonlinear"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "geplante SVG/Infografik",
-      "data_sources": [
-        "WÖk-Begriffsleitfaden"
-      ],
-      "interpretation_notes": "Begriffsgrafik, keine empirische Datenvisualisierung.",
-      "license_notes": "Eigenes Visual.",
-      "alt_text": "Unterscheidung von Auslöser, Wirkungspotenzial und eingetretener Zustandsveränderung.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "wirkungsarchitektur",
-      "title": "Wirkungsarchitektur",
-      "page": "/modell.html",
-      "visual_type": "systemdiagramm",
-      "based_on_sources": [
-        "meadows-thinking-systems",
-        "beer-brain-of-firm"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "kombinierte Grafik-Komponente",
-      "data_sources": [
-        "WÖk-Modell, Systemtheorie"
-      ],
-      "interpretation_notes": "Systemische Modellgrafik.",
-      "license_notes": "Eigenes Visual.",
-      "alt_text": "Systemdiagramm aus Daten, Regeln, Institutionen, Anreizen und Lernen.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "vergleich-modelle",
-      "title": "WÖk vs ESG vs GWÖ vs Donut vs Wellbeing",
-      "page": "/vergleich.html",
-      "visual_type": "vergleichsgrafik",
-      "based_on_sources": [
-        "raworth-doughnut-economics",
-        "stiglitz-sen-fitoussi-report"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "gestaltete SVG-Infografik",
-      "data_sources": [
-        "Vergleichsmodelle"
-      ],
-      "interpretation_notes": "Vergleichende Einordnung, keine Abwertung anderer Modelle.",
-      "license_notes": "Keine Logos übernehmen.",
-      "alt_text": "Vergleich mehrerer Wirtschafts- und Wirkungsmodelle.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "soziale-marktwirtschaft-vs-woek",
-      "title": "Soziale Marktwirtschaft vs. WÖk",
-      "page": "/ordnung/soziale-marktwirtschaft-weiterdenken.html",
-      "visual_type": "vergleichsgrafik",
-      "based_on_sources": [
-        "smith-wealth-nations",
-        "stiglitz-sen-fitoussi-report"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "gestaltete SVG-Infografik",
-      "data_sources": [
-        "Ordnungsquellen, WÖk-Modell"
-      ],
-      "interpretation_notes": "Ordnungspolitische Deutung.",
-      "license_notes": "Eigenes Visual.",
-      "alt_text": "Vergleich Markt plus Ausgleich mit Markt plus soziale Sicherheit, Planet und Demokratie.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "unternehmensfuehrung-roadmap",
-      "title": "Wirkungsorientierte Unternehmensführung als Roadmap",
-      "page": "/fuer/unternehmen.html",
-      "visual_type": "roadmap",
-      "based_on_sources": [
-        "change-kotter",
-        "change-prosci-adkar",
-        "eu-csrd-2022-2464"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "Roadmap-Infografik",
-      "data_sources": [
-        "Change Management, WÖk-Modell"
-      ],
-      "interpretation_notes": "Praxisstruktur, kein Zertifizierungsstandard.",
-      "license_notes": "Eigenes Visual.",
-      "alt_text": "Zehn Schritte zur wirkungsorientierten Unternehmensführung.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "kompass-scanner-logik",
-      "title": "WÖk-Kompass / Scanner-Logik",
-      "page": "/kompass.html",
-      "visual_type": "systemdiagramm",
-      "based_on_sources": [
-        "un-agenda-2030"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "UI-/Systemgrafik",
-      "data_sources": [
-        "WÖk-Kompass-Datenstruktur"
-      ],
-      "interpretation_notes": "Produktlogik, keine externe Datenvisualisierung.",
-      "license_notes": "Eigenes Visual.",
-      "alt_text": "Kompass erklärt, Scanner analysiert konkrete Beispiele.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "kondratieff-woek-betriebssystem",
-      "title": "Kondratieff-Wellen / Nachhaltigkeitstransformation / WÖk als Betriebssystem",
-      "page": "/wissen/sechster-kondratieff.html",
-      "visual_type": "hero_infographic",
-      "based_on_sources": [
-        "kondratieff-major-economic-cycles",
-        "kondratieff-long-waves-economic-life",
-        "schumpeter-theorie",
-        "meadows-limits-growth",
-        "un-agenda-2030",
-        "eu-csrd-2022-2464"
-      ],
-      "created_by": "WÖk Redaktion / später ggf. KI-generiert",
-      "generation_method": "Basisbild später separat; präzises SVG-/HTML-Overlay vorbereitet",
-      "data_sources": [
-        "wirtschaftshistorische Deutungsfigur",
-        "WÖk-Begriffsleitfaden",
-        "Buch Die neue Ordnung des Wohlstands",
-        "SDGs / Agenda 2030",
-        "CSRD / ESRS als Dateninfrastrukturbeispiel"
-      ],
-      "interpretation_notes": "Kondratieff-Zyklen werden als Deutungsmodell verwendet, nicht als deterministische Theorie. Texte und Labels werden als kontrolliertes Overlay gesetzt.",
-      "license_notes": "Keine Logos, keine Marken, keine falsche Datenpräzision; KI-Basisbild als Illustration kennzeichnen.",
-      "alt_text": "Infografik zu langen wirtschaftlichen Entwicklungswellen. Von links nach rechts zeigt eine Zeitachse frühere Wellen der Industrialisierung, Massenproduktion und Digitalisierung. Rechts öffnet sich eine größere sechste Welle mit Nachhaltigkeit, Resilienz, Gesundheit, Daten und Rückkopplung. Die Grafik stellt die Wirkungsökonomie als Betriebssystem der Nachhaltigkeitstransformation dar.",
-      "last_updated": "2026-05-22"
-    },
-    {
-      "visual_id": "wirkungspfad-politische-sprache",
-      "title": "Wirkungspfad politischer Sprache",
-      "page": "/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
-      "visual_type": "wirkungspfad",
-      "based_on_sources": [
-        "eu-dsa-2022-2065",
-        "foerster-observing-systems"
-      ],
-      "created_by": "WÖk Redaktion",
-      "generation_method": "Wirkungspfad-Infografik",
-      "data_sources": [
-        "Medien-/Demokratiequellen, WÖk-Sprachlogik"
-      ],
-      "interpretation_notes": "Wirkungspotenzial und Resonanzrisiko, kein automatischer Wirkungsnachweis.",
-      "license_notes": "Eigenes Visual.",
-      "alt_text": "Pfad von Begriff oder Narrativ über Resonanzraum zu demokratischem Risiko.",
-      "last_updated": "2026-05-22"
-    }
-  ]
-}
+  {
+    "visual_id": "woek_02_grundkreislauf_wirkung",
+    "file": "woek_02_grundkreislauf_wirkung.png",
+    "webp": "woek_02_grundkreislauf_wirkung.webp",
+    "pages": [
+      "/modell.html"
+    ],
+    "visual_type": "cycle_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Website /modell.html",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Modellgrafik ohne externe Bildquellen oder Datenpräzision.",
+    "alt": "Kreisdiagramm von Auslöser über Wirkungspotenzial, Zustandsveränderung, Bewertung und Rückkopplung zum Lernen."
+  },
+  {
+    "visual_id": "woek_03_von_daten_zur_steuerklasse",
+    "file": "woek_03_von_daten_zur_steuerklasse.png",
+    "webp": "woek_03_von_daten_zur_steuerklasse.webp",
+    "pages": [
+      "/modell.html"
+    ],
+    "visual_type": "process_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Website /modell.html",
+      "Technische Leitlinien WUStG",
+      "Buch: Die neue Ordnung des Wohlstands"
+    ],
+    "notes": "Abstrakte eigene Infografik; keine externen Bildquellen; kein fremdes Logo; keine personenbezogene Darstellung.",
+    "alt": "Zehn Schritte von Maßstab und Daten über Scorecard und Schutzregel bis Steuerklasse, Preis und Lernen."
+  },
+  {
+    "visual_id": "woek_04_reverse_merit_order",
+    "file": "woek_04_reverse_merit_order.png",
+    "webp": "woek_04_reverse_merit_order.webp",
+    "pages": [
+      "/modell.html"
+    ],
+    "visual_type": "rule_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Website /modell.html",
+      "Reverse-Merit-Order-Konzept"
+    ],
+    "notes": "Modellgrafik mit illustrativen Werten; keine empirische Datendarstellung.",
+    "alt": "Balkendiagramm mit mehreren Wirkungsfeldern; das niedrigste Feld wird hervorgehoben."
+  },
+  {
+    "visual_id": "woek_05_wirkung_vs_wirkungspotenzial",
+    "file": "woek_05_wirkung_vs_wirkungspotenzial.png",
+    "webp": "woek_05_wirkung_vs_wirkungspotenzial.webp",
+    "pages": [
+      "/modell.html"
+    ],
+    "visual_type": "concept_comparison_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Glossar Wirkung und Wirkungspotenzial",
+      "Website /modell.html"
+    ],
+    "notes": "Begriffsgrafik; erklärt Systematik, keine Messdaten.",
+    "alt": "Gegenüberstellung von Wirkungspotenzial und eingetretener Wirkung mit Wirkmechanismus und Bewertungsrahmen."
+  },
+  {
+    "visual_id": "woek_06_soziale_marktwirtschaft_update",
+    "file": "woek_06_soziale_marktwirtschaft_update.png",
+    "webp": "woek_06_soziale_marktwirtschaft_update.webp",
+    "pages": [
+      "/ordnung/"
+    ],
+    "visual_type": "order_update_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /ordnung/",
+      "Buch: Die neue Ordnung des Wohlstands",
+      "Konzept Soziale Marktwirtschaft weiterdenken"
+    ],
+    "notes": "Abstrakte Ordnungsmodell-Grafik; keine amtliche Darstellung.",
+    "alt": "Vergleich zwischen Sozialer Marktwirtschaft 1.0 und Wirkungsökonomie mit zusätzlichen Ebenen Planet, Demokratie und Rückkopplung."
+  },
+  {
+    "visual_id": "woek_07_politik_reparaturstaat_wirkungsarchitektur",
+    "file": "woek_07_politik_reparaturstaat_wirkungsarchitektur.png",
+    "webp": "woek_07_politik_reparaturstaat_wirkungsarchitektur.webp",
+    "pages": [
+      "/fuer/politik.html"
+    ],
+    "visual_type": "policy_comparison_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /fuer/politik.html",
+      "Working-Paper Wirkungssteuergesetz",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Konzeptgrafik; keine Parteiposition und keine Rechtsberatung.",
+    "alt": "Vergleich Reparaturstaat mit Subventionen und Sonderregeln gegenüber Wirkungsarchitektur mit Prüfung, Haushalt und Evaluation."
+  },
+  {
+    "visual_id": "woek_08_unternehmen_change_roadmap",
+    "file": "woek_08_unternehmen_change_roadmap.png",
+    "webp": "woek_08_unternehmen_change_roadmap.webp",
+    "pages": [
+      "/fuer/unternehmen.html"
+    ],
+    "visual_type": "roadmap_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /fuer/unternehmen.html",
+      "CSRD/ESRS-Anschlusslogik",
+      "Wirkungsorientierte Unternehmensführung"
+    ],
+    "notes": "Roadmapgrafik; keine Unternehmensberatung im Einzelfall.",
+    "alt": "Zehnstufige Roadmap von Readiness-Prüfung über Wirkungsfelder, Daten, Baseline und Risiko bis Rückkopplung."
+  },
+  {
+    "visual_id": "woek_09_scanner_ergebnislogik",
+    "file": "woek_09_scanner_ergebnislogik.png",
+    "webp": "woek_09_scanner_ergebnislogik.webp",
+    "pages": [
+      "/kompass.html",
+      "/scanner.html"
+    ],
+    "visual_type": "scanner_logic_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /kompass.html",
+      "Website /scanner.html",
+      "Scanner-MVP-Konzept"
+    ],
+    "notes": "Konzeptgrafik; keine amtliche Bewertung, keine Rating-Zusage.",
+    "alt": "Darstellung von Eingabetypen wie Produkt, Website oder Wahlprogramm und strukturierter Ergebnislogik mit Datenlage und Quellen."
+  },
+  {
+    "visual_id": "woek_10_evidenzraum_quellenarchitektur",
+    "file": "woek_10_evidenzraum_quellenarchitektur.png",
+    "webp": "woek_10_evidenzraum_quellenarchitektur.webp",
+    "pages": [
+      "/evidenz/",
+      "/quellen/"
+    ],
+    "visual_type": "evidence_architecture_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Evidenzhub",
+      "Quellenregister",
+      "Visual-System-Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie"
+    ],
+    "notes": "Abstrakte Evidenzarchitektur; keine externen Logos oder Siegel.",
+    "alt": "Radiales Diagramm mit Theorie, Standards, Daten, Studien und WÖk-Grundlagen, die in den WÖk-Kompass münden."
+  },
+  {
+    "visual_id": "woek_11_wohnen_wirkungsraum",
+    "file": "woek_11_wohnen_wirkungsraum.png",
+    "webp": "woek_11_wohnen_wirkungsraum.webp",
+    "pages": [
+      "/fuer/mieter.html"
+    ],
+    "visual_type": "housing_impact_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /fuer/mieter.html",
+      "Wohnen-Dossier",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Konzeptgrafik; keine Mietrechts- oder Renditeprognose.",
+    "alt": "Vergleich von Wohnen als Anlageklasse mit Wohnen als Wirkungsraum für Bezahlbarkeit, Energie, Gesundheit und Quartier."
+  },
+  {
+    "visual_id": "woek_12_kondratieff_zyklen",
+    "file": "woek_12_kondratieff_zyklen.png",
+    "webp": "woek_12_kondratieff_zyklen.webp",
+    "pages": [],
+    "status": "legacy_replaced",
+    "visual_type": "historical_model_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /wissen/sechster-kondratieff.html",
+      "Kondratieff als Deutungsmodell",
+      "Schumpeter und Transformationslogik"
+    ],
+    "notes": "Legacy-Asset aus der ersten Visual-Lieferung. Auf /wissen/sechster-kondratieff.html durch woek_kondratieff_system ersetzt.",
+    "alt": "Zeitachse mit Kondratieff-Wellen von Industrialisierung bis Nachhaltigkeit und Wirkungsökonomie als Betriebssystem."
+  },
+  {
+    "visual_id": "woek_13_medien_sprache_wirkpfad",
+    "file": "woek_13_medien_sprache_wirkpfad.png",
+    "webp": "woek_13_medien_sprache_wirkpfad.webp",
+    "pages": [
+      "/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"
+    ],
+    "visual_type": "media_language_path_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+      "SDG+ Medien und Demokratie",
+      "Narrativanalyse"
+    ],
+    "notes": "Zeigt Wirkungspotenziale und Resonanzrisiken, keinen automatischen empirischen Einzelwirkungsnachweis.",
+    "alt": "Wirkungspfad von Begriff und Frame über Resonanzraum zu demokratischem Risiko und SDG+-Einordnung."
+  },
+  {
+    "visual_id": "woek_14_wirkungseinkommen_wirkungsrente_konzept",
+    "file": "woek_14_wirkungseinkommen_wirkungsrente_konzept.png",
+    "webp": "woek_14_wirkungseinkommen_wirkungsrente_konzept.webp",
+    "pages": [
+      "/fuer/wirkungseinkommen.html",
+      "/fuer/rente.html"
+    ],
+    "visual_type": "concept_status_infographic",
+    "created_as": "custom_woek_infographic",
+    "based_on": [
+      "Website /fuer/wirkungseinkommen.html",
+      "Website /fuer/rente.html",
+      "Wirkungseinkommen-Konzept",
+      "Wirkungsrente-Konzept"
+    ],
+    "notes": "Konzeptstatus; keine Leistungszusage; konkrete Zahlen nur mit freigegebenem Modellstand.",
+    "alt": "Vergleich der alten Kopplung Arbeit, Einkommen, Steuern, Rente mit einer Wirkungslogik für Sicherheit und Anerkennung."
+  },
+  {
+    "visual_id": "woek_modell_auf_einen_blick_v2",
+    "file": "woek_modell_auf_einen_blick_v2.svg",
+    "mobile_file": "woek_modell_auf_einen_blick_v2_mobile.svg",
+    "pages": [
+      "/modell.html",
+      "/buch.html"
+    ],
+    "visual_type": "controlled_svg_model_visual",
+    "status": "approved_after_review_required",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "Führender Begriffsleitfaden der Wirkungsökonomie v1.0",
+      "Die neue Ordnung des Wohlstands, Kapitel 10 bis 22",
+      "Technische Leitlinien WUStG",
+      "WStG Oktober 2025",
+      "bestehende WÖk-Visuals woek_02, woek_03, woek_04"
+    ],
+    "notes": "Diese Grafik ersetzt die zuvor KI-generierten Posterentwürfe. Sie ist als kontrolliertes SVG/Layout umgesetzt, damit Text, Begriffe, Typografie und WÖk-Stil präzise bleiben.",
+    "alt": "Modellgrafik der Wirkungsökonomie. Sie zeigt den Maßstabswechsel von Kapital, Gewinn, Wachstum und Reichweite zu Wirkung als tatsächlicher Zustandsveränderung. Der Wirkungskreislauf führt von Auslöser, Wirkungspotenzial und Zustandsveränderung über Wirkungsbewertung und Netto-Wirkung zu Wirkungslenkung, Rückkopplung und Lernen. Bewertungsräume sind Mensch, Planet und Demokratie."
+  },
+  {
+    "visual_id": "woek_start_hero_architecture",
+    "file": "woek_start_hero_architecture.svg",
+    "mobile_file": "woek_start_hero_architecture_mobile.svg",
+    "pages": [
+      "/"
+    ],
+    "visual_type": "hero",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Ruhige Modellgrafik Wirkung statt Kapital: Kapital, Gewinn und Wachstum bleiben Werkzeuge, positive Netto-Wirkung für Mensch, Planet und Demokratie wird zum Kompass."
+  },
+  {
+    "visual_id": "woek_funktionsweise_kreislauf",
+    "file": "woek_funktionsweise_kreislauf.svg",
+    "mobile_file": "woek_funktionsweise_kreislauf_mobile.svg",
+    "pages": [
+      "/funktionsweise/"
+    ],
+    "visual_type": "model",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Modellgrafik der Funktionsweise: Wirkung, Wirkungsbewertung, Netto-Wirkung, Schutzregel, Wirkungslenkung, Rückkopplung, Reverse Merit Order und Lernen."
+  },
+  {
+    "visual_id": "woek_wirkung_einfach_flow",
+    "file": "woek_wirkung_einfach_flow.svg",
+    "mobile_file": "woek_wirkung_einfach_flow_mobile.svg",
+    "pages": [
+      "/",
+      "/wirkungsoekonomie.html"
+    ],
+    "visual_type": "explainer",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Wirkung einfach erklärt: Auslöser, Wirkungspotenzial, Zustandsveränderung, SDG-Bezug, Netto-Wirkung und Entscheidung als ruhige Flussgrafik."
+  },
+  {
+    "visual_id": "woek_medien_demokratie_wirkpfade",
+    "file": "woek_medien_demokratie_wirkpfade.svg",
+    "mobile_file": "woek_medien_demokratie_wirkpfade_mobile.svg",
+    "pages": [
+      "/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"
+    ],
+    "visual_type": "flow",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Wirkungsflussgrafik politischer Sprache: Begriff oder Frame öffnet Resonanzräume, erzeugt Wirkungspotenziale, beeinflusst Desinformation, Vertrauen und Demokratie."
+  },
+  {
+    "visual_id": "woek_kondratieff_system",
+    "file": "woek_kondratieff_system.jpg",
+    "webp": "woek_kondratieff_system.webp",
+    "pages": [
+      "/wissen/sechster-kondratieff.html"
+    ],
+    "visual_type": "model",
+    "status": "active",
+    "created_as": "approved_brand_guide_infographic",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Vom Nutzer freigegebenes Kondratieff-Basisvisual. Ersetzt den zu knappen kontrollierten SVG-Entwurf auf der öffentlichen Seite.",
+    "alt": "Infografik Die Kondratieff-Zyklen von industrieller Wertschöpfung zur nachhaltigen Wirkungsgesellschaft mit sechs langen Wellen und der Wirkungsökonomie als Betriebssystem der sechsten Welle."
+  },
+  {
+    "visual_id": "woek_unternehmen_wirkungsnetz",
+    "file": "woek_unternehmen_wirkungsnetz.svg",
+    "mobile_file": "woek_unternehmen_wirkungsnetz_mobile.svg",
+    "pages": [
+      "/fuer/unternehmen.html"
+    ],
+    "visual_type": "flow",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Wirkungsnetz für Unternehmen: Lieferkette, WÖk-ID, Scorecard, T-SROI, Kapital und Management werden als Steuerungssystem verbunden."
+  },
+  {
+    "visual_id": "woek_politik_wirkungssteuerung",
+    "file": "woek_politik_wirkungssteuerung.svg",
+    "mobile_file": "woek_politik_wirkungssteuerung_mobile.svg",
+    "pages": [
+      "/fuer/politik.html"
+    ],
+    "visual_type": "flow",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Wirkungsflussgrafik für Politik: politisches Ziel, Wirkungsprüfung, Wirkungshaushalt, Wirkungsgesetz, Beschaffung und Evaluation werden zu einer Wirkungsarchitektur verbunden."
+  },
+  {
+    "visual_id": "woek_buerger_alltag_wirkung",
+    "file": "woek_buerger_alltag_wirkung.svg",
+    "mobile_file": "woek_buerger_alltag_wirkung_mobile.svg",
+    "pages": [
+      "/fuer/buergerinnen.html"
+    ],
+    "visual_type": "explainer",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Erklärungsgrafik Alltag und Wirkung: Wohnen, Konsum, Wirkungseinkommen, Wirkungsrente, Information und Handlungsspielraum werden als Systemsignale sichtbar."
+  },
+  {
+    "visual_id": "woek_akademie_lernarchitektur",
+    "file": "woek_akademie_lernarchitektur.svg",
+    "mobile_file": "woek_akademie_lernarchitektur_mobile.svg",
+    "pages": [
+      "/akademie.html"
+    ],
+    "visual_type": "model",
+    "status": "active",
+    "created_as": "controlled_svg_layout",
+    "based_on": [
+      "WÖk Brand Guide",
+      "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "Die neue Ordnung des Wohlstands",
+      "Systemmodell der Wirkungsökonomie"
+    ],
+    "notes": "Visual-Phase 1: kontrolliertes SVG im WÖk-Visual-System; keine KI-Textgrafik, keine Clipart-, Stock- oder SaaS-Optik.",
+    "alt": "Modellgrafik der Akademie: Begriffe, Daten lesen, Wirkungspfade, Anwendung, Zielkonflikte und Kompetenz bilden eine Lernarchitektur für Wirkungskompetenz."
+  }
+]

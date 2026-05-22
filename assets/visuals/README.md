@@ -1,10 +1,20 @@
-# Visual-System
+# WÖk Visual Asset Structure
 
-Dieser Ordner bündelt die visuellen Assets des WÖk-Wissensraums.
+This directory follows the Wirkungsökonomie visual system. New visuals must be categorized before creation and documented in:
 
-- `generated/`: hochwertige generierte Hero- und Erklärvisuals
-- `diagrams/`: Systemdiagramme, Prozessgrafiken und SVG-Infografiken
-- `tables/`: gestaltete Tabellen- und Vergleichsassets
-- `heroes/`: Hero-Visuals für zentrale Seiten
+- `content/visuals/visual-source-registry.json`
+- `docs/visual-registry.md`
+- `docs/visual-system-guide.md`
 
-Jede veröffentlichte Grafik braucht einen Eintrag in `content/visuals/visual-source-registry.json`.
+## Folders
+
+- `hero/` - atmospheric hero visuals with little or no text.
+- `model/` - controlled SVG/HTML/layout model graphics.
+- `flows/` - cause-effect and Wirkungspfad visuals.
+- `explainers/` - explanatory comparison visuals.
+- `data/` - scorecards, charts, benchmarks, radar and tax logic.
+- `icons/` - controlled WÖk icon system assets.
+- `rejected/` - failed or rejected visual drafts, not for public embedding.
+- `woek/` - current legacy/custom WÖk visual set; migrate into the category structure during future revisions.
+
+Text-heavy diagrams and model visuals must not be generated as AI images with embedded text.

@@ -27,6 +27,7 @@ SECTION_BY_PREFIX = {
     "glossar/": "Glossar",
     "ordnung/": "Ordnung",
     "fuer/": "Für wen",
+    "evidenz/": "Evidenz",
     "quellen/": "Quellen",
     "wissen/": "Wissen",
 }

@@ -1,0 +1,60 @@
+# Visual Registry
+
+Stand: 22. Mai 2026
+
+Diese Registry ist die redaktionelle Übersicht des WÖk-Visual-Systems. Die maschinenlesbare Quelle liegt in `content/visuals/visual-source-registry.json`.
+
+## Verbindliche Statuswerte
+
+- `active`: öffentlich eingebunden und nutzbar
+- `approved_after_review_required`: eingebunden oder vorbereitet, aber redaktionell noch final zu prüfen
+- `needs_mobile_variant`: fachlich nutzbar, aber Mobile-Variante fehlt oder ist nur skaliert
+- `legacy_review`: bestehendes Visual, das bei nächster Überarbeitung in die neue Kategorienstruktur überführt werden soll
+- `rejected`: nicht öffentlich einbinden
+
+## Registry
+
+| visual-id | Titel | Typ | Seite | Status | Quelle | Mobile-Version | Alt-Text | Stilprüfung |
+|---|---|---|---|---|---|---|---|---|
+| `woek_01_kompass_mensch_planet_demokratie` | Wirkung statt Kapital | Modellgrafik / Erklärungsgrafik | `/`, `/ordnung/` | `legacy_review` | Führender Begriffsleitfaden; Website; Die neue Ordnung des Wohlstands | nein | Drei verbundene Kreise für Mensch, Planet und Demokratie mit positiver Netto-Wirkung im Zentrum. | WÖk-Farbwelt, ruhig; bei Revision als SVG/HTML neu anlegen. |
+| `woek_02_grundkreislauf_wirkung` | Grundkreislauf der Wirkung | Modellgrafik | `/modell.html` | `legacy_review` | Führender Begriffsleitfaden; Systemmodell | nein | Kreisdiagramm von Auslöser über Wirkungspotenzial, Zustandsveränderung, Bewertung und Rückkopplung zum Lernen. | Inhaltlich passend; bei Revision Begriffe als kontrolliertes SVG setzen. |
+| `woek_03_von_daten_zur_steuerklasse` | Von Daten zur Steuerklasse | Datenvisualisierung / Modellgrafik | `/modell.html` | `needs_mobile_variant` | Technische Leitlinien WUStG; Buch; Website | nein | Zehn Schritte von Maßstab und Daten über Scorecard und Schutzregel bis Steuerklasse, Preis und Lernen. | Gute Prozesslogik; Mobile braucht eigene lineare Variante. |
+| `woek_04_reverse_merit_order` | Reverse Merit Order | Datenvisualisierung / Schutzregel | `/modell.html` | `legacy_review` | Reverse-Merit-Order-Konzept | nein | Balkendiagramm mit mehreren Wirkungsfeldern; das niedrigste Feld wird hervorgehoben. | Stil passend, keine empirische Datenbehauptung. |
+| `woek_05_wirkung_vs_wirkungspotenzial` | Wirkung vs. Wirkungspotenzial | Modellgrafik / Begriffsgrafik | `/modell.html` | `legacy_review` | Führender Begriffsleitfaden; Glossar | nein | Gegenüberstellung von Wirkungspotenzial und eingetretener Wirkung mit Wirkmechanismus und Bewertungsrahmen. | Inhaltlich wichtig; bei Revision kontrolliertes SVG bevorzugen. |
+| `woek_06_soziale_marktwirtschaft_update` | Ordnungsupdate | Modellgrafik | `/ordnung/` | `legacy_review` | Ordnungskapitel; Soziale Marktwirtschaft weiterdenken | nein | Vergleich zwischen Sozialer Marktwirtschaft 1.0 und Wirkungsökonomie mit zusätzlichen Ebenen Planet, Demokratie und Rückkopplung. | Ruhig und markenkonform; Mobile prüfen. |
+| `woek_07_politik_reparaturstaat_wirkungsarchitektur` | Politik mit Wirkung | Wirkungsflussgrafik / Erklärungsgrafik | `/fuer/politik.html` | `legacy_review` | Systemmodell; Working-Paper Wirkungssteuergesetz | nein | Vergleich Reparaturstaat mit Subventionen und Sonderregeln gegenüber Wirkungsarchitektur mit Prüfung, Haushalt und Evaluation. | Inhaltlich passend; kein Parteibild, keine Clipart-Dominanz. |
+| `woek_08_unternehmen_change_roadmap` | Wirkungsorientierte Unternehmensführung | Wirkungsflussgrafik / Roadmap | `/fuer/unternehmen.html` | `needs_mobile_variant` | CSRD/ESRS-Anschlusslogik; Unternehmensführung | nein | Zehnstufige Roadmap von Readiness-Prüfung über Wirkungsfelder, Daten, Baseline und Risiko bis Rückkopplung. | Gute Roadmap; Mobile braucht eigene Stapelung. |
+| `woek_09_scanner_ergebnislogik` | WÖk-Scanner Ergebnislogik | Modellgrafik / Datenvisualisierung | `/kompass.html`, `/scanner.html` | `legacy_review` | Scanner-MVP-Konzept | nein | Darstellung von Eingabetypen wie Produkt, Website oder Wahlprogramm und strukturierter Ergebnislogik mit Datenlage und Quellen. | Passend, keine amtliche Bewertung suggerieren. |
+| `woek_10_evidenzraum_quellenarchitektur` | Evidenzraum | Modellgrafik | `/evidenz/`, `/quellen/` | `legacy_review` | Evidenzhub; Quellenregister; Führender Begriffsleitfaden | nein | Radiales Diagramm mit Theorie, Standards, Daten, Studien und WÖk-Grundlagen, die in den WÖk-Kompass münden. | Gute Architekturwirkung; kein Quellenfriedhof. |
+| `woek_11_wohnen_wirkungsraum` | Wohnen als Wirkungsraum | Erklärungsgrafik | `/fuer/mieter.html` | `legacy_review` | Wohnen-Dossier; Systemmodell | nein | Vergleich von Wohnen als Anlageklasse mit Wohnen als Wirkungsraum für Bezahlbarkeit, Energie, Gesundheit und Quartier. | Passend, keine Rendite- oder Mietversprechen. |
+| `woek_12_kondratieff_zyklen` | Kondratieff-Zyklen | Erklärungsgrafik / historische Modellgrafik | nicht eingebunden | `legacy_replaced` | Kondratieff als Deutungsmodell; Schumpeter; Transformationslogik | nein | Zeitachse mit Kondratieff-Wellen von Industrialisierung bis Nachhaltigkeit und Wirkungsökonomie als Betriebssystem. | Legacy-Asset; auf der öffentlichen Seite durch `woek_kondratieff_system` ersetzt. |
+| `woek_13_medien_sprache_wirkpfad` | Sprache als Wirkungspotenzial | Wirkungsflussgrafik | `/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html` | `legacy_review` | SDG+ Medien und Demokratie; Narrativanalyse | nein | Wirkungspfad von Begriff und Frame über Resonanzraum zu demokratischem Risiko und SDG+-Einordnung. | Korrekt als Wirkungspotenzial, nicht als automatische Wirkung. |
+| `woek_14_wirkungseinkommen_wirkungsrente_konzept` | Arbeit, Einkommen, Wirkung | Erklärungsgrafik | `/fuer/wirkungseinkommen.html`, `/fuer/rente.html` | `legacy_review` | Wirkungseinkommen-Konzept; Wirkungsrente-Konzept | nein | Vergleich der alten Kopplung Arbeit, Einkommen, Steuern, Rente mit einer Wirkungslogik für Sicherheit und Anerkennung. | Klarer Konzeptstatus, keine Leistungszusage. |
+| `woek_modell_auf_einen_blick_v2` | Die Wirkungsökonomie auf einen Blick | Modellgrafik | `/modell.html`, `/buch.html` | `approved_after_review_required` | Führender Begriffsleitfaden v1.0; Die neue Ordnung des Wohlstands; Technische Leitlinien WUStG; WStG Oktober 2025; bestehende WÖk-Visuals `woek_02`, `woek_03`, `woek_04` | ja: `woek_modell_auf_einen_blick_v2_mobile.svg` | Modellgrafik der Wirkungsökonomie. Sie zeigt den Maßstabswechsel von Kapital, Gewinn, Wachstum und Reichweite zu Wirkung als tatsächlicher Zustandsveränderung. Der Wirkungskreislauf führt von Auslöser, Wirkungspotenzial und Zustandsveränderung über Wirkungsbewertung und Netto-Wirkung zu Wirkungslenkung, Rückkopplung und Lernen. Bewertungsräume sind Mensch, Planet und Demokratie. | Kontrolliertes SVG/Layout, keine KI-Textgrafik, markenkonform. |
+| `woek_start_hero_architecture` | Wirkung statt Kapital | Hero-Visual | `/` | `active` | WÖk Brand Guide; Führender Begriffsleitfaden; Systemmodell | ja: `woek_start_hero_architecture_mobile.svg` | Ruhige Modellgrafik Wirkung statt Kapital: Kapital, Gewinn und Wachstum bleiben Werkzeuge, positive Netto-Wirkung für Mensch, Planet und Demokratie wird zum Kompass. | Kontrolliertes SVG, keine Stock- oder KI-Posteroptik. |
+| `woek_funktionsweise_kreislauf` | Wirkung wird steuerbar | Modellgrafik | `/funktionsweise/` | `active` | Führender Begriffsleitfaden; Systemmodell; Reverse Merit Order | ja | Modellgrafik der Funktionsweise: Wirkung, Wirkungsbewertung, Netto-Wirkung, Schutzregel, Wirkungslenkung, Rückkopplung, Reverse Merit Order und Lernen. | Kontrolliertes SVG, Begriffe nach Leitlogik. |
+| `woek_wirkung_einfach_flow` | Wirkung einfach erklärt | Erklärungsgrafik | `/`, `/wirkungsoekonomie.html` | `active` | Führender Begriffsleitfaden; SDGs; Agenda 2030; SDG+ | ja | Wirkung einfach erklärt: Auslöser, Wirkungspotenzial, Zustandsveränderung, SDG-Bezug, Netto-Wirkung und Entscheidung als ruhige Flussgrafik. | Didaktisch, ruhig, keine Clipart. |
+| `woek_medien_demokratie_wirkpfade` | Sprache als Wirkungspotenzial | Wirkungsflussgrafik | `/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html` | `active` | SDG+ Medien und Demokratie; Narrativanalyse | ja | Wirkungsflussgrafik politischer Sprache: Begriff oder Frame öffnet Resonanzräume, erzeugt Wirkungspotenziale, beeinflusst Desinformation, Vertrauen und Demokratie. | Wirkungspotenzial statt moralische Bewertung. |
+| `woek_kondratieff_system` | Kondratieff-System | Modellgrafik | `/wissen/sechster-kondratieff.html` | `active` | Kondratieff als Deutungsmodell; Schumpeter; WÖk-Systemmodell | nein | Infografik Die Kondratieff-Zyklen von industrieller Wertschöpfung zur nachhaltigen Wirkungsgesellschaft mit sechs langen Wellen und der Wirkungsökonomie als Betriebssystem der sechsten Welle. | Nutzerfreigegebenes Brand-Guide-Visual; ersetzt den zu knappen SVG-Entwurf auf der öffentlichen Seite. |
+| `woek_unternehmen_wirkungsnetz` | Unternehmen als Wirkungssystem | Wirkungsflussgrafik | `/fuer/unternehmen.html` | `active` | CSRD/ESRS; T-SROI; Unternehmensführung | ja | Wirkungsnetz für Unternehmen: Lieferkette, WÖk-ID, Scorecard, T-SROI, Kapital und Management werden als Steuerungssystem verbunden. | Netzwerk statt Hierarchie, keine Business-Stockoptik. |
+| `woek_politik_wirkungssteuerung` | Politik als Wirkungsarchitektur | Wirkungsflussgrafik | `/fuer/politik.html` | `active` | WStG; Wirkungshaushalt; SDG-Steuerung | ja | Wirkungsflussgrafik für Politik: politisches Ziel, Wirkungsprüfung, Wirkungshaushalt, Wirkungsgesetz, Beschaffung und Evaluation werden zu einer Wirkungsarchitektur verbunden. | Steuerungslogik statt Bürokratiebild. |
+| `woek_buerger_alltag_wirkung` | Alltag und Wirkung | Erklärungsgrafik | `/fuer/buergerinnen.html` | `active` | Zielgruppenlogik Bürger:innen; Wohnen; Wirkungseinkommen; Wirkungsrente | ja | Erklärungsgrafik Alltag und Wirkung: Wohnen, Konsum, Wirkungseinkommen, Wirkungsrente, Information und Handlungsspielraum werden als Systemsignale sichtbar. | Keine Personenbewertung, keine Lifestyle-Illustration. |
+| `woek_akademie_lernarchitektur` | Akademie der Wirkungskompetenz | Modellgrafik | `/akademie.html` | `active` | Akademie-Konzept; Führender Begriffsleitfaden; Systemmodell | ja | Modellgrafik der Akademie: Begriffe, Daten lesen, Wirkungspfade, Anwendung, Zielkonflikte und Kompetenz bilden eine Lernarchitektur für Wirkungskompetenz. | Lernarchitektur, ruhig und editorial. |
+| `wirkungsoekonomie-modell-auf-einen-blick.ai-poster-rejected` | Abgelehnte KI-Poster-Variante | Rejected | keine öffentliche Seite | `rejected` | KI-Posterentwurf, ersetzt durch `woek_modell_auf_einen_blick_v2` | nein | nicht verwenden | Nach `assets/visuals/rejected/` verschoben; keine öffentliche Einbindung. |
+
+## Priorisierte Visual-Backlog-Seiten
+
+| Seite | Bedarf | Empfohlene Kategorie | Status |
+|---|---|---|---|
+| `/` | starkes Einstiegsvisual und Modellbrücke | Hero-Visual + Modellgrafik | offen |
+| `/modell.html` | bestehende Visuals mittelfristig als kontrollierte SVGs konsolidieren | Modellgrafik + Datenvisualisierung | teilweise umgesetzt |
+| `/funktionsweise/` | Wirkungskreislauf als Lernpfad | Modellgrafik / Wirkungsflussgrafik | offen |
+| `/wissen/sechster-kondratieff.html` | Mobile-Version der Zeitachse | Erklärungsgrafik | offen |
+| `/fuer/politik.html` | demokratische Wirkungsarchitektur vertiefen | Wirkungsflussgrafik | teilweise umgesetzt |
+| `/fuer/unternehmen.html` | Roadmap mobile | Wirkungsflussgrafik | offen |
+| `/fuer/mieter.html` | Wohnungsmarkt-Wirkungsraum weiter ausbauen | Erklärungsgrafik | teilweise umgesetzt |
+| `/fuer/rente.html` | Rentensystem vorsichtig visualisieren | Erklärungsgrafik | teilweise umgesetzt |
+| `/fuer/wirkungseinkommen.html` | Konzeptstatus sichtbar halten | Erklärungsgrafik | teilweise umgesetzt |
+| `/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html` | Resonanzräume / Wirkungspotenziale | Wirkungsflussgrafik | teilweise umgesetzt |
+| `/kompass.html` | Kompass als Navigations- und Lernsystem | Modellgrafik | offen |
+| `/akademie.html` | Wirkungskompetenz als Lernarchitektur | Hero-Visual / Erklärungsgrafik | offen |

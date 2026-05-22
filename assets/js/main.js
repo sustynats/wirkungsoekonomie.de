@@ -75,13 +75,43 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
     return;
   }
 
-  const pathParts = window.location.pathname.split("/").filter(Boolean);
-  const currentSection = pathParts[0] || "index.html";
-  const currentPath = pathParts[pathParts.length - 1] || "index.html";
-  const linkPath = link.pathname.split("/").pop() || "index.html";
-  const isBlogSection = currentSection === "blog" && linkPath === "blog.html";
-  const isCurrent = currentPath === linkPath || isBlogSection;
+  const normalizedPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  const matchTokens = (link.dataset.navMatch || "").split("|").filter(Boolean);
+  const linkPath = link.pathname.replace(/^\/+/, "") || "index.html";
+  const isCurrent = matchTokens.length
+    ? matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token))
+    : normalizedPath === linkPath || normalizedPath.endsWith(`/${linkPath}`);
 
+  link.classList.toggle("active", isCurrent);
+  if (isCurrent) {
+    link.setAttribute("aria-current", "page");
+    const more = link.closest(".nav-more");
+    if (more instanceof HTMLDetailsElement) {
+      more.classList.add("active");
+    }
+  } else {
+    link.removeAttribute("aria-current");
+  }
+});
+
+document.querySelectorAll(".site-nav .nav-more[data-nav-match]").forEach((details) => {
+  if (!(details instanceof HTMLDetailsElement)) {
+    return;
+  }
+
+  const normalizedPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  const matchTokens = (details.dataset.navMatch || "").split("|").filter(Boolean);
+  const isCurrent = matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token));
+  details.classList.toggle("active", isCurrent || details.classList.contains("active"));
+});
+
+document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) => {
+  if (!(link instanceof HTMLAnchorElement)) {
+    return;
+  }
+  const normalizedPath = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  const matchTokens = (link.dataset.navMatch || "").split("|").filter(Boolean);
+  const isCurrent = matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token));
   link.classList.toggle("active", isCurrent);
   if (isCurrent) {
     link.setAttribute("aria-current", "page");

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900" role="img" aria-labelledby="title desc">
+  <title id="title">Wirkung statt Kapital</title>
+  <desc id="desc">Der neue Kompass</desc>
+  <defs><style>
+  .bg{fill:#f7f4ec}.navy{fill:#0b1b36}.green{fill:#2d7f5f}.gold{fill:#c9932e}.coral{fill:#c95749}.muted{fill:#3d4656}
+  .line{stroke:#d7d0c1;stroke-width:2;fill:none}.nline{stroke:#0b1b36;stroke-width:2.4;fill:none}.gline{stroke:#2d7f5f;stroke-width:2.4;fill:none}.oline{stroke:#c9932e;stroke-width:2.4;fill:none}.cline{stroke:#c95749;stroke-width:2.4;fill:none}
+  .card{fill:rgba(255,255,255,.55);stroke:#d7d0c1;stroke-width:2}.softn{fill:#edf1f7;stroke:#0b1b36;stroke-width:2}.softg{fill:#eaf3ee;stroke:#2d7f5f;stroke-width:2}.softo{fill:#f6edda;stroke:#c9932e;stroke-width:2}.softc{fill:#f6e5e1;stroke:#c95749;stroke-width:2}
+  .title{font-family:Georgia,'Times New Roman',serif;font-size:54px;font-weight:700;letter-spacing:4px}.subtitle{font-family:Georgia,'Times New Roman',serif;font-size:28px;letter-spacing:1.1px}
+  .kicker{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.h{font-family:Inter,Arial,sans-serif;font-size:23px;font-weight:800}.body{font-family:Inter,Arial,sans-serif;font-size:17px}.small{font-family:Inter,Arial,sans-serif;font-size:14px}.num{font-family:Georgia,'Times New Roman',serif;font-size:32px;font-weight:700}
+</style><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#c9932e"/></marker></defs>
+  <rect class="bg" width="1800" height="900"/>
+  <rect x="28" y="28" width="1744" height="844" rx="18" fill="none" stroke="#d7d0c1" stroke-width="2"/>
+  
+  <text x="900" y="88" class="title navy" text-anchor="middle">WIRKUNG STATT KAPITAL</text>
+  <text x="900" y="128" class="subtitle gold" text-anchor="middle">Der neue Kompass für Mensch, Planet und Demokratie</text>
+  <line x1="160" y1="154" x2="1640" y2="154" class="line"/>
+
+  <g transform="translate(284 230)">
+    <rect x="0" y="0" width="360" height="320" rx="28" class="softn"/>
+    <text x="42" y="70" class="h navy">Alte Logik</text>
+    <text x="42" y="116" class="body muted">Kapital · Gewinn · Wachstum</text>
+    <text x="42" y="146" class="body muted">messen Bewegung, nicht Richtung.</text>
+    <line x1="50" y1="210" x2="300" y2="210" class="cline"/>
+  </g>
+  <g transform="translate(720 246)">
+    <circle cx="180" cy="148" r="122" fill="none" stroke="#0b1b36" stroke-width="4"/>
+    <circle cx="94" cy="184" r="92" fill="none" stroke="#2d7f5f" stroke-width="4"/>
+    <circle cx="266" cy="184" r="92" fill="none" stroke="#c9932e" stroke-width="4"/>
+    <text x="180" y="154" class="h navy" text-anchor="middle">positive</text>
+    <text x="180" y="184" class="h navy" text-anchor="middle">Netto-Wirkung</text>
+    <text x="180" y="24" class="body navy" text-anchor="middle">Mensch</text>
+    <text x="62" y="300" class="body green" text-anchor="middle">Planet</text>
+    <text x="298" y="300" class="body gold" text-anchor="middle">Demokratie</text>
+  </g>
+  <g transform="translate(1156 230)">
+    <rect x="0" y="0" width="360" height="320" rx="28" class="softg"/>
+    <text x="42" y="70" class="h navy">Neue Logik</text>
+    <text x="42" y="116" class="body muted">Wirkung zeigt, welche Zustände</text>
+    <text x="42" y="146" class="body muted">sich tatsächlich verändern.</text>
+    <line x1="50" y1="210" x2="300" y2="210" class="gline"/>
+  </g>
+  <path d="M660 390 C700 340 722 332 748 324" class="oline" marker-end="url(#arrow)"/>
+  <path d="M1052 324 C1092 332 1118 350 1146 390" class="oline" marker-end="url(#arrow)"/>
+  <rect x="350" y="710" width="1100" height="92" rx="22" class="card"/>
+  <text x="900" y="765" class="h navy" text-anchor="middle">Kapital bleibt Werkzeug. Wirkung wird Kompass.</text>
+
+</svg>

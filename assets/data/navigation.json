@@ -1,0 +1,84 @@
+{
+  "header": [
+    { "label": "Start", "href": "index.html", "match": ["index.html"] },
+    { "label": "Verstehen", "href": "wirkungsoekonomie.html", "match": ["wirkungsoekonomie.html", "wirkungsoekonomie/"] },
+    { "label": "Modell", "href": "modell.html", "match": ["modell.html", "modell/"] },
+    { "label": "Kompass", "href": "kompass.html", "match": ["kompass.html"] },
+    { "label": "Für wen?", "href": "fuer/", "match": ["fuer/"] },
+    { "label": "Anwendungen", "childrenRef": "applications", "match": ["anwendungen.html", "anwendungen/", "scanner.html", "sdg-plus/medien-demokratie", "fuer/unternehmen.html", "fuer/mieter.html", "fuer/wirkungseinkommen.html", "fuer/rente.html", "fuer/kommunen.html", "glossar.html#begriff-t-sroi"] },
+    { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
+    { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
+    { "label": "Mehr", "childrenRef": "more", "match": ["blog.html", "blog/", "evidenz/", "quellen/", "sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/", "methodik/", "glossar.html", "glossar/", "buch.html", "buch/", "downloads.html", "downloads/", "mitmachen.html", "mitmachen/", "ueber.html", "ueber/"] },
+    { "label": "Suche", "href": "suche.html", "match": ["suche.html"] }
+  ],
+  "applications": [
+    { "label": "Scanner", "href": "scanner.html", "match": ["scanner.html"] },
+    { "label": "Wirkung politischer Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
+    { "label": "Produkte", "href": "anwendungen.html#produkte", "match": ["anwendungen.html#produkte"] },
+    { "label": "Unternehmen", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
+    { "label": "Lieferketten", "href": "anwendungen.html#lieferketten", "match": ["anwendungen.html#lieferketten"] },
+    { "label": "Wirkungshaushalt", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] },
+    { "label": "Wohnen", "href": "fuer/mieter.html", "match": ["fuer/mieter.html"] },
+    { "label": "Wirkungseinkommen", "href": "fuer/wirkungseinkommen.html", "match": ["fuer/wirkungseinkommen.html"] },
+    { "label": "Rente", "href": "fuer/rente.html", "match": ["fuer/rente.html"] },
+    { "label": "Medien & Demokratie", "href": "sdg-plus/medien-demokratie.html", "match": ["sdg-plus/medien-demokratie.html"] },
+    { "label": "T-SROI", "href": "glossar.html#begriff-t-sroi", "match": ["glossar.html#begriff-t-sroi"] },
+    { "label": "Weitere operative Beispiele", "href": "anwendungen.html#weitere-operative-beispiele", "match": ["anwendungen.html#weitere-operative-beispiele"] }
+  ],
+  "more": [
+    { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
+    { "label": "Evidenz", "href": "evidenz/", "match": ["evidenz/", "quellen/"] },
+    { "label": "SDG+", "href": "sdg-plus.html", "match": ["sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/"] },
+    { "label": "Methodik", "href": "methodik/datenbasis.html", "match": ["methodik/"] },
+    { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] },
+    { "label": "Buch", "href": "buch.html", "match": ["buch.html", "buch/"] },
+    { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
+    { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
+    { "label": "Über die WÖk", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] }
+  ],
+  "footerGroups": [
+    {
+      "title": "Verstehen",
+      "items": [
+        { "label": "Wirkung einfach erklärt", "href": "wirkungsoekonomie.html", "match": ["wirkungsoekonomie.html", "wirkungsoekonomie/"] },
+        { "label": "Modell", "href": "modell.html", "match": ["modell.html", "modell/"] },
+        { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
+        { "label": "Für wen?", "href": "fuer/", "match": ["fuer/"] }
+      ]
+    },
+    {
+      "title": "Werkzeuge & Anwendungen",
+      "items": [
+        { "label": "Scanner", "href": "scanner.html", "match": ["scanner.html"] },
+        { "label": "Wirkung politischer Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
+        { "label": "Produkte", "href": "anwendungen.html#produkte", "match": ["anwendungen.html#produkte"] },
+        { "label": "Lieferketten", "href": "anwendungen.html#lieferketten", "match": ["anwendungen.html#lieferketten"] },
+        { "label": "Wirkungshaushalt", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] }
+      ]
+    },
+    {
+      "title": "Lernen",
+      "items": [
+        { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
+        { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] },
+        { "label": "Methodik", "href": "methodik/datenbasis.html", "match": ["methodik/"] },
+        { "label": "SDG+", "href": "sdg-plus.html", "match": ["sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/"] },
+        { "label": "Evidenz", "href": "evidenz/", "match": ["evidenz/", "quellen/"] }
+      ]
+    },
+    {
+      "title": "Projekt",
+      "items": [
+        { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
+        { "label": "Buch", "href": "buch.html", "match": ["buch.html", "buch/"] },
+        { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
+        { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
+        { "label": "Über die WÖk", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] }
+      ]
+    }
+  ],
+  "footerLegal": [
+    { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
+    { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
+  ]
+}
