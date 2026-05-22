@@ -22,6 +22,7 @@
 
 * {
   box-sizing: border-box;
+  min-width: 0;
 }
 
 html {
@@ -32,6 +33,8 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   background: var(--ivory);
   color: var(--text);
@@ -227,6 +230,28 @@ figure {
   margin: 0;
 }
 
+p,
+li,
+a,
+span,
+strong,
+small,
+label,
+button,
+input,
+textarea,
+select,
+td,
+th,
+.card-title,
+.hero-title,
+.hero-subtitle,
+.section-header,
+.section-heading,
+.brand-name {
+  overflow-wrap: anywhere;
+}
+
 h1,
 h2,
 h3,
@@ -237,6 +262,16 @@ h4 {
   font-weight: 650;
   line-height: 1.05;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.hero-title,
+.section-header h2,
+.section-heading h2,
+.card-title {
+  text-wrap: balance;
 }
 
 h1 {
@@ -287,10 +322,11 @@ h4 {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+  min-width: 0;
+  max-width: calc(100vw - 6.5rem);
   color: var(--navy);
   font-weight: 750;
   text-decoration: none;
-  white-space: nowrap;
 }
 
 .brand-mark {
@@ -319,6 +355,9 @@ h4 {
   letter-spacing: 0.09em;
   line-height: 1;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .site-nav,
@@ -395,6 +434,7 @@ h4 {
 .hero {
   padding: var(--space-section) var(--space-gutter);
   border-bottom: 1px solid var(--line);
+  overflow: clip;
 }
 
 .hero > * {
@@ -642,6 +682,7 @@ textarea {
 .section {
   padding: var(--space-section) var(--space-gutter);
   border-bottom: 1px solid var(--line);
+  overflow: clip;
 }
 
 .section > * {
@@ -2922,6 +2963,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
   min-height: 2.35rem;
   padding: 0.5rem 0.7rem;
   border: 1px solid rgba(47, 125, 92, 0.22);
@@ -2929,10 +2971,13 @@ textarea {
   background: rgba(236, 244, 239, 0.78);
   color: var(--navy);
   font-weight: 750;
+  line-height: 1.25;
+  text-align: left;
 }
 
 .scanner-path li:not(:last-child)::after {
   content: "→";
+  flex: 0 0 auto;
   color: var(--green);
   font-weight: 900;
 }
@@ -5694,6 +5739,179 @@ textarea {
 }
 
 @media (max-width: 520px) {
+  :root {
+    --space-gutter: clamp(0.9rem, 4vw, 1rem);
+    --mobile-readable-width: 21.4rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .site-header {
+    gap: 0.65rem;
+    padding-block: 0.72rem;
+  }
+
+  .brand {
+    gap: 0.55rem;
+  }
+
+  .brand-mark {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .brand-name {
+    max-width: 11rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
+  }
+
+  .nav-toggle {
+    width: 2.45rem;
+    height: 2.45rem;
+    flex: 0 0 auto;
+  }
+
+  h1 {
+    font-size: clamp(1.72rem, 7.8vw, 2.1rem);
+    line-height: 1.04;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-wrap: wrap !important;
+    text-wrap-mode: wrap !important;
+    text-wrap-style: auto !important;
+  }
+
+  h2 {
+    font-size: clamp(1.34rem, 6.2vw, 1.62rem);
+    line-height: 1.08;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-wrap: wrap !important;
+    text-wrap-mode: wrap !important;
+    text-wrap-style: auto !important;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 6vw, 1.65rem);
+  }
+
+  .hero,
+  .section,
+  .scanner-hero {
+    width: 100%;
+    max-width: 100vw;
+    padding-left: var(--space-gutter);
+    padding-right: var(--space-gutter);
+    overflow-x: hidden;
+  }
+
+  .hero-title,
+  .scanner-hero h1,
+  .kompass-hero h1 {
+    display: block;
+    width: 100%;
+    max-width: calc(100vw - (2 * var(--space-gutter)));
+    line-height: 1.04;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+    text-wrap: wrap !important;
+    text-wrap-mode: wrap !important;
+    text-wrap-style: auto !important;
+  }
+
+  .hero-kicker,
+  .card-kicker,
+  .eyebrow,
+  .meta {
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+  }
+
+  .hero-subtitle,
+  .hero-text,
+  .subtitle,
+  .section-header p,
+  .section-heading p {
+    display: block;
+    width: 100%;
+    max-width: calc(100vw - (2 * var(--space-gutter)));
+    font-size: 1rem;
+    line-height: 1.55;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-wrap: wrap !important;
+    text-wrap-mode: wrap !important;
+    text-wrap-style: auto !important;
+  }
+
+  .section-header h2,
+  .section-heading h2,
+  .card-title {
+    display: block;
+    width: 100%;
+    max-width: calc(100vw - (2 * var(--space-gutter)));
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+    text-wrap: wrap !important;
+    text-wrap-mode: wrap !important;
+    text-wrap-style: auto !important;
+  }
+
+  .section-header,
+  .section-heading,
+  .hero-copy,
+  .hero > *,
+  .section > *,
+  .scanner-hero > div,
+  .container,
+  .container-wide {
+    width: min(100%, var(--mobile-readable-width));
+    max-width: min(100%, var(--mobile-readable-width));
+    min-width: 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .card,
+  .feature-card,
+  .principle-card,
+  .tool-card,
+  .compare-card,
+  .scanner-result-card,
+  .scanner-mode-card,
+  .download-card,
+  .blog-card,
+  .book-card {
+    max-width: 100%;
+  }
+
+  .scanner-path li {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1rem;
+    justify-content: initial;
+    min-width: 0;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-break: anywhere;
+  }
+
+  .scanner-path li::after {
+    justify-self: end;
+  }
+
   .brand span:last-child {
     max-width: 11rem;
     overflow: hidden;
