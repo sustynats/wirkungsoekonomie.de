@@ -583,6 +583,21 @@ h4 {
   margin-top: 2rem;
 }
 
+.hero-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--green);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.hero-secondary-link:hover,
+.hero-secondary-link:focus-visible {
+  color: var(--navy);
+  outline: none;
+}
+
 .hero-audio {
   width: min(100%, 620px);
   margin-top: 1.6rem;
