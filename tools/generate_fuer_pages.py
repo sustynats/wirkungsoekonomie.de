@@ -83,7 +83,7 @@ def links(items: list[tuple[str, str]]) -> str:
 
 
 def status_note(slug: str, status: str) -> str:
-    if slug not in SENSITIVE and status == "veröffentlicht":
+    if status == "veröffentlicht":
         return ""
     return f'<div class="scanner-notice" role="note"><strong>Status:</strong> {e(status)}. {e(STATUS_TEXT)}</div>'
 
@@ -149,8 +149,8 @@ PAGES: dict[str, dict[str, object]] = {
         "meta": "Warum demokratische Politik nicht nur Programme beschließen, sondern Wirkung in Recht, Haushalt, Steuern, Beschaffung und Lernen zurückkoppeln muss.",
         "kicker": "Für wen · Politik",
         "subtitle": "Vom Reparaturstaat zum lernenden Staat.",
-        "status": "needs_review",
-        "noindex": True,
+        "status": "veröffentlicht",
+        "noindex": False,
         "tags": "Politik Wirkung, Rückkopplungsarchitektur, Reparaturstaat, Wirkungshaushalt, Wirkungsgesetz, lernender Staat, Gesetzesfolgenabschätzung",
         "hero": [
             "Politik steht heute unter Druck, immer mehr Krisen gleichzeitig zu reparieren: Klima, Wohnen, Pflege, Energie, Digitalisierung, Migration, Desinformation, Staatsfinanzen und Vertrauensverlust.",
