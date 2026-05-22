@@ -6493,6 +6493,7 @@ textarea {
     display: block;
     width: 100%;
     max-width: calc(100vw - (2 * var(--space-gutter)));
+    font-size: 2.05rem;
     line-height: 1.04;
     white-space: normal;
     overflow-wrap: anywhere;
@@ -6501,6 +6502,36 @@ textarea {
     text-wrap: wrap !important;
     text-wrap-mode: wrap !important;
     text-wrap-style: auto !important;
+  }
+
+  .kompass-hero,
+  .kompass-hero-inner,
+  .scanner-hero > *,
+  .hero > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .kompass-hero-inner {
+    width: calc(100vw - (2 * var(--space-gutter))) !important;
+    max-width: calc(100vw - (2 * var(--space-gutter))) !important;
+    margin-inline: 0;
+  }
+
+  .kompass-hero p,
+  .kompass-notice,
+  .hero-audio,
+  .hero-audio .audio-label,
+  .hero-audio p {
+    width: min(100%, 21rem) !important;
+    max-width: 21rem !important;
+    max-inline-size: 21rem !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .hero-audio {
+    overflow: hidden;
   }
 
   .hero-kicker,

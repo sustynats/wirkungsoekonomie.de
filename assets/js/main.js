@@ -20,6 +20,19 @@ if (mainElement && !document.querySelector(".skip-link")) {
   document.body.prepend(skipLink);
 }
 
+document.querySelectorAll(".article-page .article-body").forEach((articleBody) => {
+  if (articleBody.querySelector(".article-status-note")) {
+    return;
+  }
+
+  const note = document.createElement("div");
+  note.className = "scanner-notice article-status-note";
+  note.setAttribute("role", "note");
+  note.textContent =
+    "Artikelstatus: Blog- und Archivbeitrag. Führend für Begriffe, Modellstand, Zahlen und rechtliche Einordnung sind Begriffsleitfaden, aktuelle Website-Seiten, Evidenz und ausdrücklich freigegebene Modellstände.";
+  articleBody.prepend(note);
+});
+
 if (navToggle && siteNav) {
   const closeNavigation = () => {
     siteNav.classList.remove("open");
