@@ -393,7 +393,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
     <meta name="search_description" content="{escape(description)}">
     <meta name="search_section" content="Hauptwerk">
     <meta name="search_type" content="{escape(search_type)}">
-    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260523-reference">
+    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260523-fulltext-reader">
   </head>
   <body>
     <header class="site-header">
@@ -410,6 +410,8 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
       </nav>
     </header>
     {body}
+    <script src="{prefix}assets/js/main.js?v=20260523-reference-ux"></script>
+    <script src="{prefix}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>
   </body>
 </html>
 """
@@ -446,15 +448,24 @@ def render_fulltext(parsed: dict[str, object]) -> None:
     source_hash = parsed["sourceHash"]  # type: ignore[assignment]
     stats = parsed["stats"]  # type: ignore[assignment]
     fulltext_body = "".join(block.html for block in blocks)
-    body = f"""<main class="reference-work" data-pagefind-body>
+    body = f"""<main class="reference-work reference-fulltext" data-reference-reader data-pagefind-body>
+      <div class="reading-progress" aria-hidden="true"><span></span></div>
       <section class="hero compact-hero">
         <p class="hero-kicker">Wirkungsökonomie Online</p>
         <h1>Die neue Ordnung des Wohlstands</h1>
         <p class="hero-subtitle">Vollständige Web-Volltextansicht der bestätigten DOCX-Fassung.</p>
         <p><a class="button" href="../">Zum Referenzportal</a> <a class="button secondary" href="{PDF_URL}">Original-PDF öffnen</a></p>
       </section>
+      <nav class="fulltext-toolbar" aria-label="Volltext-Navigation">
+        <span>Volltext</span>
+        <a href="../">Referenzportal</a>
+        <a href="../kapitel/">Kapitelübersicht</a>
+        <a href="#woek-main-fulltext">Zum Text</a>
+        <a href="{PDF_URL}">Original-PDF</a>
+        <button type="button" data-print-page>Drucken</button>
+      </nav>
       {meta_panel(str(source_hash), f'<p>Absätze: {stats["paragraphs"]} · Überschriften: {stats["headings"]} · Tabellen: {stats["tables"]} · Abbildungen: {stats["figures"]}</p>')}
-      <article class="article-shell" id="woek-main-fulltext">{fulltext_body}</article>
+      <article class="article-shell fulltext-reader" id="woek-main-fulltext">{fulltext_body}</article>
     </main>"""
     out = REFERENCE_DIR / "volltext" / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)

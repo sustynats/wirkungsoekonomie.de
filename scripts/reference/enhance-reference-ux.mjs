@@ -163,7 +163,7 @@ function renderFooter(base) {
 
 function scriptsFor(base) {
   return `<script src="${base}assets/js/main.js?v=20260523-reference-ux"></script>
-    <script src="${base}assets/js/reference-reader.js?v=20260523-reader-modes"></script>`;
+    <script src="${base}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>`;
 }
 
 function page(file, { title, description, section = "Hauptwerk", type = "Live-Referenz", body, bodyClass = "" }) {
@@ -179,7 +179,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260523-reader-modes">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260523-fulltext-reader">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}
@@ -823,7 +823,38 @@ function enhanceDocument(file) {
 function enhanceFullText() {
   const file = "referenz/volltext/index.html";
   if (!fs.existsSync(file)) return;
-  const html = versionStatusBox(read(file));
+  let html = stripUxMarkers(read(file));
+  html = html.replace(/style\.css\?v=[^"']+/g, "style.css?v=20260523-fulltext-reader");
+  html = html.replace(/reference-reader\.js\?v=[^"']+/g, "reference-reader.js?v=20260523-fulltext-reader");
+  html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
+    const merged = [classes, "reference-fulltext"].join(" ").replace(/\s+/g, " ").trim();
+    const clean = [...new Set(merged.split(" "))].join(" ");
+    const withReader = rest.includes("data-reference-reader") ? rest : ` data-reference-reader${rest}`;
+    return `<main class="${clean}"${withReader}>`;
+  });
+  html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match) => {
+    if (html.includes("class=\"reading-progress\"")) return match;
+    return `${match}
+      <!-- reference-ux:start --><div class="reading-progress" aria-hidden="true"><span></span></div><!-- reference-ux:end -->`;
+  });
+  if (!html.includes("fulltext-toolbar")) {
+    html = html.replace(/(<\/section>\s*)(<section class="version-summary")/, `$1
+      <!-- reference-ux:start --><nav class="fulltext-toolbar" aria-label="Volltext-Navigation">
+        <span>Volltext</span>
+        <a href="../">Referenzportal</a>
+        <a href="../kapitel/">Kapitelübersicht</a>
+        <a href="#woek-main-fulltext">Zum Text</a>
+        <a href="../../assets/pdf/die-neue-ordnung-des-wohlstands.pdf">Original-PDF</a>
+        <button type="button" data-print-page>Drucken</button>
+      </nav><!-- reference-ux:end -->
+      $2`);
+  }
+  html = html.replace(/<article class="([^"]*article-shell[^"]*)" id="woek-main-fulltext">/, (match, classes) => {
+    const merged = [classes, "fulltext-reader"].join(" ").replace(/\s+/g, " ").trim();
+    const clean = [...new Set(merged.split(" "))].join(" ");
+    return `<article class="${clean}" id="woek-main-fulltext">`;
+  });
+  html = ensureScripts(versionStatusBox(html), file);
   write(file, html);
 }
 
