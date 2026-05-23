@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T20:44:48.461Z",
+  "generatedAt": "2026-05-23T22:32:22.023Z",
   "links": {
     "archetyp": {
       "label": "Archetyp",
@@ -191,7 +191,7 @@
       "label": "Netto-Wirkung",
       "slug": "netto-wirkung",
       "url": "/begriffe/netto-wirkung/",
-      "hoverDefinition": "Netto-Wirkung ist die bewertete Gesamtwirkung. Sie ist keine einfache Addition, weil schwere Schäden nicht beliebig kompensierbar sind.",
+      "hoverDefinition": "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
       "synonyms": [
         "Nettowirkung"
       ],
@@ -199,6 +199,22 @@
         "positive-netto-wirkung",
         "reverse-merit-order",
         "wirkungsgrenze"
+      ]
+    },
+    "nwi": {
+      "label": "NWI",
+      "slug": "nwi",
+      "url": "/begriffe/nwi/",
+      "hoverDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
+      "synonyms": [
+        "Netto-Wirkungs-Index",
+        "Netto-Wirkungs-Index / NWI"
+      ],
+      "relatedTerms": [
+        "netto-wirkung",
+        "finalscore",
+        "t-sroi",
+        "reverse-merit-order"
       ]
     },
     "neutrale-wirkung": {
@@ -217,7 +233,7 @@
       "label": "Nichtkompensationsprinzip",
       "slug": "nichtkompensationsprinzip",
       "url": "/begriffe/nichtkompensationsprinzip/",
-      "hoverDefinition": "Nicht-Kompensation heißt: Kritische Schäden dürfen nicht durch positive Effekte verdeckt werden.",
+      "hoverDefinition": "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.",
       "synonyms": [
         "Nicht-Kompensation",
         "Nichtkompensation"
@@ -232,7 +248,7 @@
       "label": "positive Netto-Wirkung",
       "slug": "positive-netto-wirkung",
       "url": "/begriffe/positive-netto-wirkung/",
-      "hoverDefinition": "Positive Netto-Wirkung heißt: Die bewertete Gesamtwirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden zu verdecken.",
+      "hoverDefinition": "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
       "synonyms": [
         "positive Nettowirkung",
         "positive netto Wirkung"
@@ -259,7 +275,7 @@
       "label": "Resonanzraum",
       "slug": "resonanzraum",
       "url": "/begriffe/resonanzraum/",
-      "hoverDefinition": "Ein Resonanzraum ist der Kontext, in dem Worte, Bilder oder Entscheidungen Wirkungspotenzial entfalten.",
+      "hoverDefinition": "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten.",
       "synonyms": [],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -271,7 +287,7 @@
       "label": "Reverse Merit Order",
       "slug": "reverse-merit-order",
       "url": "/begriffe/reverse-merit-order/",
-      "hoverDefinition": "Reverse Merit Order heißt: Das schwächste kritische Wirkungsfeld darf nicht von starken Teilwerten überdeckt werden.",
+      "hoverDefinition": "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
       "synonyms": [
         "Nichtkompensationsprinzip",
         "Minimum-Operator",
@@ -330,7 +346,7 @@
       "label": "T-SROI",
       "slug": "t-sroi",
       "url": "/begriffe/t-sroi/",
-      "hoverDefinition": "T-SROI macht sichtbar, welche Transformationswirkung ein Einsatz von Kapital, Zeit oder Ressourcen erzeugt.",
+      "hoverDefinition": "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
       "synonyms": [
         "Transformational Social Return on Investment",
         "Transformational SROI"
@@ -371,7 +387,7 @@
       "label": "Wirkstoff",
       "slug": "wirkstoff",
       "url": "/begriffe/wirkstoff/",
-      "hoverDefinition": "Wirkstoff meint als Analogie einen Auslöser mit Wirkungspotenzial. Er ist nicht selbst Wirkung.",
+      "hoverDefinition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
       "synonyms": [
         "gesellschaftlicher Wirkstoff"
       ],
@@ -386,7 +402,7 @@
       "label": "Wirkung",
       "slug": "wirkung",
       "url": "/begriffe/wirkung/",
-      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer einen Bezugspunkt.",
+      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
       "synonyms": [
         "Impact",
         "Zustandsveränderung"
@@ -402,7 +418,7 @@
       "label": "Wirkungsarchitektur",
       "slug": "wirkungsarchitektur",
       "url": "/begriffe/wirkungsarchitektur/",
-      "hoverDefinition": "Wirkungsarchitektur beschreibt das Gesamtsystem, das Wirkung sichtbar, bewertbar und rückkoppelbar macht.",
+      "hoverDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
       "synonyms": [],
       "relatedTerms": [
         "wirkungslenkung",
@@ -415,7 +431,7 @@
       "label": "Wirkungsbewertung",
       "slug": "wirkungsbewertung",
       "url": "/begriffe/wirkungsbewertung/",
-      "hoverDefinition": "Wirkungsbewertung prüft, ob Zustandsveränderungen positiv, negativ oder neutral für Mensch, Planet und Demokratie sind.",
+      "hoverDefinition": "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
       "synonyms": [
         "Impact Assessment"
       ],
@@ -485,7 +501,7 @@
       "label": "Wirkungsgrenze",
       "slug": "wirkungsgrenze",
       "url": "/begriffe/wirkungsgrenze/",
-      "hoverDefinition": "Wirkungsgrenzen schützen zentrale Lebens-, Sozial- und Demokratiefunktionen vor Verrechnung.",
+      "hoverDefinition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
       "synonyms": [
         "rote Linie",
         "Red Line"
@@ -524,7 +540,7 @@
       "label": "Wirkungslenkung",
       "slug": "wirkungslenkung",
       "url": "/begriffe/wirkungslenkung/",
-      "hoverDefinition": "Wirkungslenkung richtet Entscheidungen und Anreize bewusst auf positive Netto-Wirkung aus.",
+      "hoverDefinition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
       "synonyms": [],
       "relatedTerms": [
         "wirkungsrückkopplung",
@@ -548,7 +564,7 @@
       "label": "Wirkungspfad",
       "slug": "wirkungspfad",
       "url": "/begriffe/wirkungspfad/",
-      "hoverDefinition": "Ein Wirkungspfad zeigt, wie Wirkung entstehen kann. Er ist noch kein Nachweis eingetretener Wirkung.",
+      "hoverDefinition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
       "synonyms": [
         "Wirkpfad"
       ],
@@ -589,7 +605,7 @@
       "label": "Wirkungsrat",
       "slug": "wirkungsrat",
       "url": "/begriffe/wirkungsrat/",
-      "hoverDefinition": "Der Wirkungsrat soll Wirkungsmaßstäbe prüfen, weiterentwickeln und demokratisch kontrollierbar halten.",
+      "hoverDefinition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
       "synonyms": [],
       "relatedTerms": [
         "wirkungsarchitektur",
@@ -642,7 +658,7 @@
       "label": "Wirkungsrisiko",
       "slug": "wirkungsrisiko",
       "url": "/begriffe/wirkungsrisiko/",
-      "hoverDefinition": "Wirkungsrisiko beschreibt mögliche negative Folgen oder verfehlte positive Wirkung.",
+      "hoverDefinition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
       "synonyms": [],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -725,7 +741,7 @@
       "label": "Wirkungswahrheit",
       "slug": "wirkungswahrheit",
       "url": "/begriffe/wirkungswahrheit/",
-      "hoverDefinition": "Wirkungswahrheit ist keine absolute Wahrheitshoheit, sondern Transparenz über Folgen und Datenklarheit.",
+      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
       "synonyms": [
         "wirkungsnah"
       ],
@@ -739,7 +755,7 @@
       "label": "WÖk-ID",
       "slug": "woek-id",
       "url": "/begriffe/woek-id/",
-      "hoverDefinition": "Eine WÖk-ID macht Wirkungsindikatoren eindeutig, auffindbar und vergleichbar.",
+      "hoverDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
       "synonyms": [
         "WOK-ID",
         "Wok ID",
@@ -755,7 +771,7 @@
       "label": "WStG",
       "slug": "wstg",
       "url": "/begriffe/wstg/",
-      "hoverDefinition": "WStG ist die Kurzform für Wirkungssteuergesetz.",
+      "hoverDefinition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
       "synonyms": [
         "Wirkungssteuergesetz"
       ],
@@ -769,7 +785,7 @@
       "label": "WUStG",
       "slug": "wustg",
       "url": "/begriffe/wustg/",
-      "hoverDefinition": "WUStG ist die Kurzform für Wirkungsumsatzsteuergesetz.",
+      "hoverDefinition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
       "synonyms": [
         "Wirkungsumsatzsteuergesetz"
       ],

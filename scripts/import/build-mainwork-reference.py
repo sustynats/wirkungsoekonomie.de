@@ -29,8 +29,17 @@ PUBLIC_ASSET_PREFIX = "/public/assets/imported/woek-main-2026"
 PDF_URL = "/assets/pdf/die-neue-ordnung-des-wohlstands.pdf"
 DOC_ID = "woek-main-2026"
 SOURCE_VERSION = "2026.0"
-WEB_VERSION = "2026.1-import"
-REVIEW_STATUS = "partially-reviewed"
+WEB_VERSION = "2026.2-live-reference"
+REVIEW_STATUS = "partially-delta-reviewed"
+PART_TITLE_OVERRIDES = {
+    15: "Internationale Ordnung, Globalisierung und Geopolitik",
+    17: "Kritik, Missverständnisse und ideologische Projektionen",
+}
+CHAPTER_TITLE_OVERRIDES = {
+    17: "Wirkungsökonomie im Vergleich",
+    96: "Wirkungsökonomie als weltfähige Ordnung",
+    99: "Wirkungsökonomie im Alltag",
+}
 
 
 @dataclass
@@ -215,7 +224,7 @@ def parse_docx(docx_path: Path) -> dict[str, object]:
                 level = 2
             elif chapter_match:
                 chapter_no = int(chapter_match.group(1))
-                title = chapter_match.group(2).strip()
+                title = CHAPTER_TITLE_OVERRIDES.get(chapter_no, chapter_match.group(2).strip())
                 current_section_no = 0
                 current_chapter = Chapter(
                     chapter_no,
@@ -343,8 +352,8 @@ def normalize_parts(parts: list[Part], chapters: list[Chapter]) -> list[Part]:
             midpoint_start = previous_max + 1
             midpoint_end = next_min - 1
             carried = [chapter for chapter in chapters if midpoint_start <= chapter.number <= midpoint_end]
-        missing_title = "im Quelldokument ohne eigene Teilüberschrift"
-        missing = Part(number, int_to_roman(number), missing_title, f"teil-{number:02d}-ohne-eigene-teilueberschrift", [])
+        missing_title = PART_TITLE_OVERRIDES.get(number, "im Quelldokument ohne eigene Teilüberschrift")
+        missing = Part(number, int_to_roman(number), missing_title, f"teil-{number:02d}-{slugify(missing_title)}", [])
         for chapter in carried:
             if chapter in previous_part.chapters:
                 previous_part.chapters.remove(chapter)

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T20:44:48.433Z",
+  "generatedAt": "2026-05-23T22:32:21.997Z",
   "terms": [
     {
       "termId": "archetyp",
@@ -466,7 +466,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen.",
-      "hoverDefinition": "Netto-Wirkung ist die bewertete Gesamtwirkung. Sie ist keine einfache Addition, weil schwere Schäden nicht beliebig kompensierbar sind.",
+      "hoverDefinition": "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
       "longDefinition": "Netto-Wirkung ordnet Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Rote Linien, Wirkungsgrenzen und Nicht-Kompensation begrenzen die Verrechnung.",
       "usageNote": "Nicht als simple Summe formulieren.",
       "doNotConfuseWith": [
@@ -487,6 +487,47 @@
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "netto wirkung",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "nwi",
+      "canonicalLabel": "NWI",
+      "slug": "nwi",
+      "status": "führender-begriff",
+      "version": "1.1",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Instrumente",
+      "shortDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung.",
+      "hoverDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
+      "longDefinition": "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet.",
+      "usageNote": "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung.",
+      "doNotConfuseWith": [
+        "T-SROI",
+        "FinalScore",
+        "SROI"
+      ],
+      "synonyms": [
+        "Netto-Wirkungs-Index",
+        "Netto-Wirkungs-Index / NWI"
+      ],
+      "relatedTerms": [
+        "netto-wirkung",
+        "finalscore",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg"
+      ],
+      "examples": [],
+      "preferredUsage": "NWI als operative Netto-Wirkungskennzahl.",
+      "deprecatedUsage": [
+        "T-SROI als Netto-Wirkungskennzahl"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "netto wirkungs index",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
     },
@@ -532,7 +573,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Das Nichtkompensationsprinzip verhindert, dass schwere Schäden durch positive Teilwirkungen schöngerechnet werden.",
-      "hoverDefinition": "Nicht-Kompensation heißt: Kritische Schäden dürfen nicht durch positive Effekte verdeckt werden.",
+      "hoverDefinition": "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.",
       "longDefinition": "Das Prinzip verbindet Netto-Wirkung mit Wirkungsgrenzen und Reverse Merit Order. Es schützt zentrale Lebens-, Sozial- und Demokratiefunktionen.",
       "usageNote": "Als Schutzlogik, nicht als Anti-Bewertung formulieren.",
       "doNotConfuseWith": [
@@ -567,7 +608,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie.",
-      "hoverDefinition": "Positive Netto-Wirkung heißt: Die bewertete Gesamtwirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden zu verdecken.",
+      "hoverDefinition": "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
       "longDefinition": "Positive Netto-Wirkung verbindet tatsächliche Zustandsveränderungen, Bewertungsrahmen, Nicht-Kompensation und Rückkopplung in Entscheidungen.",
       "usageNote": "Als Zielgröße verwenden, nicht bloß Wirkung.",
       "doNotConfuseWith": [
@@ -634,7 +675,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Sprache und Medien",
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können.",
-      "hoverDefinition": "Ein Resonanzraum ist der Kontext, in dem Worte, Bilder oder Entscheidungen Wirkungspotenzial entfalten.",
+      "hoverDefinition": "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten.",
       "longDefinition": "Resonanzräume beeinflussen, ob Informationen, Narrative oder Entscheidungen aufgenommen, verstärkt, abgeschwächt oder umgedeutet werden.",
       "usageNote": "Nicht mit nachgewiesener Wirkung gleichsetzen.",
       "doNotConfuseWith": [
@@ -666,7 +707,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Reverse Merit Order stellt sicher, dass das schwächste kritische Wirkungsfeld die Bewertung begrenzt.",
-      "hoverDefinition": "Reverse Merit Order heißt: Das schwächste kritische Wirkungsfeld darf nicht von starken Teilwerten überdeckt werden.",
+      "hoverDefinition": "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
       "longDefinition": "Die Reverse Merit Order ist eine Schutzlogik gegen Schönrechnung. Sie macht kritische Schäden entscheidungsrelevant und verbindet Netto-Wirkung mit Nicht-Kompensation.",
       "usageNote": "Nicht als bloße Rechenregel ohne Schutzlogik verwenden.",
       "doNotConfuseWith": [
@@ -821,11 +862,12 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Instrumente",
       "shortDefinition": "T-SROI beschreibt transformationsbezogene Wirkung im Verhältnis zu eingesetzten Ressourcen.",
-      "hoverDefinition": "T-SROI macht sichtbar, welche Transformationswirkung ein Einsatz von Kapital, Zeit oder Ressourcen erzeugt.",
+      "hoverDefinition": "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
       "longDefinition": "Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite.",
       "usageNote": "Nicht mit einfacher Finanzrendite verwechseln.",
       "doNotConfuseWith": [
         "SROI",
+        "NWI",
         "Netto-Wirkung"
       ],
       "synonyms": [
@@ -924,7 +966,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
-      "hoverDefinition": "Wirkstoff meint als Analogie einen Auslöser mit Wirkungspotenzial. Er ist nicht selbst Wirkung.",
+      "hoverDefinition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
       "longDefinition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können.",
       "usageNote": "Nur als Analogie, nicht als harte Fachkategorie.",
       "doNotConfuseWith": [
@@ -962,7 +1004,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen.",
-      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer einen Bezugspunkt.",
+      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
       "longDefinition": "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+.",
       "usageNote": "Wirkung nicht automatisch positiv verwenden. Wenn die Zielgröße gemeint ist, meist positive Netto-Wirkung verwenden.",
       "doNotConfuseWith": [
@@ -1002,7 +1044,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen.",
-      "hoverDefinition": "Wirkungsarchitektur beschreibt das Gesamtsystem, das Wirkung sichtbar, bewertbar und rückkoppelbar macht.",
+      "hoverDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
       "longDefinition": "Wirkungsarchitektur ist keine Website und kein Diagramm, sondern die Ordnung, in der Daten, Regeln, Institutionen, Kapital, Preise, Steuern, Beschaffung und demokratische Kontrolle zusammenwirken.",
       "usageNote": "Nicht als reine Visualisierung oder Website-Struktur verwenden.",
       "doNotConfuseWith": [
@@ -1037,7 +1079,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkungsbewertung ordnet tatsächliche Zustandsveränderungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
-      "hoverDefinition": "Wirkungsbewertung prüft, ob Zustandsveränderungen positiv, negativ oder neutral für Mensch, Planet und Demokratie sind.",
+      "hoverDefinition": "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
       "longDefinition": "Wirkungsbewertung verbindet Daten, Indikatoren, Benchmarks, Wirkungsgrenzen und normative Rahmung.",
       "usageNote": "Nicht mit Reporting gleichsetzen.",
       "doNotConfuseWith": [
@@ -1209,7 +1251,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Eine Wirkungsgrenze markiert Schäden, die nicht beliebig kompensiert oder schöngerechnet werden dürfen.",
-      "hoverDefinition": "Wirkungsgrenzen schützen zentrale Lebens-, Sozial- und Demokratiefunktionen vor Verrechnung.",
+      "hoverDefinition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
       "longDefinition": "Wirkungsgrenzen betreffen unter anderem Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität.",
       "usageNote": "Immer mit Nicht-Kompensation verbinden.",
       "doNotConfuseWith": [
@@ -1308,7 +1350,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkungslenkung ist die bewusste Ausrichtung von Anreizen, Regeln und Entscheidungen auf positive Netto-Wirkung.",
-      "hoverDefinition": "Wirkungslenkung richtet Entscheidungen und Anreize bewusst auf positive Netto-Wirkung aus.",
+      "hoverDefinition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
       "longDefinition": "Wirkungslenkung nutzt Daten, Preise, Steuern, Kapital, Förderung, Beschaffung und Governance, um wirksame Entscheidungen wahrscheinlicher zu machen.",
       "usageNote": "Von Wirkungsrückkopplung unterscheiden.",
       "doNotConfuseWith": [
@@ -1372,7 +1414,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Ein Wirkungspfad beschreibt die nachvollziehbare Kette von Auslöser, Bedingungen, Wirkungspotenzial und möglicher Zustandsveränderung.",
-      "hoverDefinition": "Ein Wirkungspfad zeigt, wie Wirkung entstehen kann. Er ist noch kein Nachweis eingetretener Wirkung.",
+      "hoverDefinition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
       "longDefinition": "Wirkungspfade helfen, Annahmen, Daten, Risiken und Rückkopplungen in einer Wirkungsanalyse transparent zu machen.",
       "usageNote": "Bei Medien und Sprache oft Wirkungspotenzial, nicht Wirkung.",
       "doNotConfuseWith": [
@@ -1476,7 +1518,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Governance",
       "shortDefinition": "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben.",
-      "hoverDefinition": "Der Wirkungsrat soll Wirkungsmaßstäbe prüfen, weiterentwickeln und demokratisch kontrollierbar halten.",
+      "hoverDefinition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
       "longDefinition": "Er verbindet Expertise, öffentliche Nachvollziehbarkeit, Korrekturfähigkeit und Schutz vor Gaming the System.",
       "usageNote": "Nicht als technokratische Instanz oder Wahrheitsmonopol formulieren.",
       "doNotConfuseWith": [
@@ -1619,7 +1661,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkungsrisiko ist die Möglichkeit, dass eine Entscheidung negative Wirkung erzeugt oder positive Wirkung verfehlt.",
-      "hoverDefinition": "Wirkungsrisiko beschreibt mögliche negative Folgen oder verfehlte positive Wirkung.",
+      "hoverDefinition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
       "longDefinition": "Wirkungsrisiken können ökologisch, sozial, demokratisch, finanziell, infrastrukturell oder reputationsbezogen zurückkehren.",
       "usageNote": "Nicht mit eingetretener negativer Wirkung verwechseln.",
       "doNotConfuseWith": [
@@ -1831,7 +1873,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen.",
-      "hoverDefinition": "Wirkungswahrheit ist keine absolute Wahrheitshoheit, sondern Transparenz über Folgen und Datenklarheit.",
+      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
       "longDefinition": "Der Begriff beschreibt, ob Entscheidungen, Preise, Narrative oder Kennzahlen den tatsächlichen Folgen näherkommen oder sie verdecken.",
       "usageNote": "Nicht als Wahrheitsmonopol formulieren.",
       "doNotConfuseWith": [
@@ -1867,7 +1909,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Instrumente",
       "shortDefinition": "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems.",
-      "hoverDefinition": "Eine WÖk-ID macht Wirkungsindikatoren eindeutig, auffindbar und vergleichbar.",
+      "hoverDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
       "longDefinition": "WÖk-IDs verbinden SDGs, SDG+, Targets, Indikatorfamilien, Datenquellen und Bewertungslogik in einem Register.",
       "usageNote": "Schreibweise WÖk-ID verwenden, sofern Kontext eindeutig.",
       "doNotConfuseWith": [
@@ -1907,7 +1949,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Instrumente",
       "shortDefinition": "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung.",
-      "hoverDefinition": "WStG ist die Kurzform für Wirkungssteuergesetz.",
+      "hoverDefinition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
       "longDefinition": "Das WStG strukturiert die rechtliche Rahmung von Wirkungssteuerung und Wirkungsrückkopplung.",
       "usageNote": "Als Entwurf/Konzept kennzeichnen.",
       "doNotConfuseWith": [
@@ -1942,7 +1984,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Instrumente",
       "shortDefinition": "WUStG steht für Wirkungsumsatzsteuergesetz, den Entwurf für produkt- und leistungsbezogene Wirkungsrückkopplung.",
-      "hoverDefinition": "WUStG ist die Kurzform für Wirkungsumsatzsteuergesetz.",
+      "hoverDefinition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
       "longDefinition": "Das WUStG beschreibt, wie Produkt- und Leistungswirkung über Umsatzsteuerlogiken differenziert werden könnte.",
       "usageNote": "Als Entwurf/Konzept kennzeichnen.",
       "doNotConfuseWith": [
