@@ -3,8 +3,8 @@
   "sourceFile": "/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
   "documentId": "woek-main-2026",
   "sourceVersion": "2026.0",
-  "webVersion": "2026.1-import",
-  "reviewStatus": "partially-reviewed",
+  "webVersion": "2026.2-live-reference",
+  "reviewStatus": "partially-delta-reviewed",
   "route": "/referenz/",
   "fulltextRoute": "/referenz/volltext/",
   "stats": {
@@ -21,6 +21,11 @@
     "partRoutesGenerated": 18,
     "originalUnchanged": true,
     "commentsImplemented": false,
-    "backendImplemented": false
-  }
+    "backendImplemented": false,
+    "liveReferenceLayer": true
+  },
+  "importVersion": "2026.1-import",
+  "liveReferenceVersion": "2026.2-live-reference",
+  "terminologyBase": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+  "terminologyBaseDate": "2026-05-21"
 }

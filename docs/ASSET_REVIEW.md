@@ -17,7 +17,7 @@ Die Abbildungen sind in der Volltextansicht und den Kapitelseiten nahe der jewei
 | WStG Oktober 2025 | ja | ja | PDF-Textimport; Paragraphen und Seitenabschnitte mit IDs. |
 | Technische Leitlinien WUStG v2 | ja | ja | PDF-Textimport; komplexe Tabellen bleiben als Reviewpunkt markiert. |
 | Beispiel Apfel Wirkungssteuer Bonusregel | ja | ja | PDF-Textimport; Berechnungs-/Tabellenlogik bleibt Reviewpunkt. |
-| WÖk Master Items final v1.2 | ja | ja | PDF-Fallback vorhanden; XLSX fehlt für strukturiertes WÖk-ID-Register. |
+| WÖk Master Items final v1.2 | ja | ja | XLSX als führende Tabellenquelle importiert; 621 Zeilen als HTML-Tabelle und JSON verfügbar. PDF bleibt Fallback. |
 | Wirkungsrat Konzept | ja | ja | PDF-Textimport. |
 | Whitepaper T-SROI | ja | ja | PDF-Textimport. |
 | Wirkungsökonomie in der Lieferkette | ja | ja | PDF-Textimport. |
@@ -30,6 +30,5 @@ Die Abbildungen sind in der Volltextansicht und den Kapitelseiten nahe der jewei
 
 ## Offene Asset-Fragen
 
-- Für das WÖk-ID-Register wird `WOeK_Master_Items_final_v1.2.xlsx` benötigt.
 - Für `WP_Rente` und `Nachhaltigkeit-Systemarchitektur` fehlt eine aktuelle Originaldatei.
-- Für hochwertige Tabellenrekonstruktion in WUStG, Apfelbeispiel und WÖk Master Items sollten XLSX/DOCX-Quellen bevorzugt werden.
+- Für hochwertige Tabellenrekonstruktion in WUStG und Apfelbeispiel sollten XLSX/DOCX-Quellen bevorzugt werden.

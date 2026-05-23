@@ -12,9 +12,12 @@ Stand: 2026-05-23T19:10:28.988Z
 
 ## Fehlende erwartete Dateien für Phase 1 Restarbeiten
 
-- `WOeK_Master_Items_final_v1.2.xlsx` - nötig für ein strukturiertes WÖk-ID-Register aus der führenden Tabellenquelle. Aktuell ist nur der PDF-Fallback importiert.
 - aktuelle Fassung `WP_Rente` - nicht als eigenständige Originaldatei im Repository vorhanden.
 - aktuelle Fassung `Nachhaltigkeit-Systemarchitektur` - nicht als eigenständige Originaldatei im Repository vorhanden.
+
+## Nachgelieferte Dateien
+
+- `WOeK_Master_Items_final_v1.2.xlsx` wurde am 2026-05-23 nachgeliefert, nach `/public/downloads/originals/` übernommen und als strukturiertes WÖk-ID-Register mit 621 Zeilen importiert.
 
 Die vorhandenen PDF-/Archivfassungen wurden nicht als aktuelle führende Fassung umgedeutet.
 

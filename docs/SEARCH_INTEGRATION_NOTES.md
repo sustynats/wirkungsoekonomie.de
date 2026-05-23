@@ -58,10 +58,11 @@ Der Adapter `scripts/search/build-woek-search-index.mjs` erzeugt Suchdokumente a
 
 Die erzeugten Suchtreffer werden in `assets/search/search-index.json` im bestehenden Format ergänzt. Es entsteht keine zweite Suchdatei für die sichtbare Suche.
 
-Stand Phase 1 Abschluss:
+Stand Phase 1 Live-Reference-Abschluss:
 
-- `tools/build_search_index.py`: 3.787 reguläre und kuratierte Treffer nach Phase-1-Integration.
-- `scripts/search/build-woek-search-index.mjs`: 3.569 zusätzliche WÖk-Suchmetadaten in `public/data/woek-search-meta.json` und Integration in den bestehenden Index.
+- `tools/build_search_index.py`: bestehende HTML-/Karten-Suche bleibt führend und wird über `tools/sync_layout.py` weitergebaut.
+- `scripts/search/build-woek-search-index.mjs`: integriert die Live-Reference-Fassung `2026.2-live-reference`, Kapitelrouten, Arbeitspapiere, Glossar und das strukturierte WÖk-ID-Register in den bestehenden Index.
+- Aktueller Suchcheck: 3.567 Einträge im bestehenden Suchindex.
 
 ## WÖk-Mapping
 
@@ -104,6 +105,7 @@ WÖk-Suchintegration:
 
 ```bash
 node scripts/glossary/build-glossary-registry.mjs
+node scripts/review/build-delta-review.mjs
 node scripts/search/build-woek-search-index.mjs
 node scripts/quality/check-search-integration.mjs
 ```

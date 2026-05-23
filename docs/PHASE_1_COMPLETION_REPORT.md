@@ -33,7 +33,7 @@ Stand: 2026-05-23
 
 - Hauptwerk: 70 Abbildungen geprüft, eingebunden und mit kapitelbezogenen Alt-Texten/Captions versehen.
 - Arbeitspapiere: technische PDF-Webfassungen vorhanden; komplexe Tabellen bleiben als Reviewpunkt dokumentiert.
-- WÖk-ID-Register: PDF-Fallback vorhanden; strukturiertes XLSX fehlt.
+- WÖk-ID-Register: strukturiertes XLSX wurde importiert; 621 Registerzeilen sind als HTML-Tabelle, JSON-Daten und Suchinhalt verfügbar. Der PDF-Fallback bleibt verlinkt.
 
 ## Glossar
 
@@ -41,19 +41,21 @@ Das Glossar nutzt die zentrale Struktur `/src/data/glossary.terms.yml` und `/pub
 
 ## Suche
 
-Die bestehende Suche wurde über den bestehenden Suchindex erweitert. Referenzkapitel, Arbeitspapiere, Glossar und WÖk-Suchmetadaten sind integriert. Der aktuelle Suchcheck läuft mit 3.787 Einträgen. Es gibt keine zweite Suche.
+Die bestehende Suche wurde über den bestehenden Suchindex erweitert. Referenzkapitel, Arbeitspapiere, Glossar, WÖk-ID-Register und WÖk-Suchmetadaten sind integriert. Der aktuelle Suchcheck läuft mit 3.567 Einträgen. Es gibt keine zweite Suche.
 
 ## IDs und Manifest
 
-Das Manifest liegt unter `/public/data/content-manifest.json`. Es enthält aktuell 25.384 Einträge mit `documentId`, `route`, `sectionId`, `paragraphId`, Versionen, Reviewstatus, Content-Hash und Originaldatei-Hinweisen, soweit vorhanden.
+Das Manifest liegt unter `/public/data/content-manifest.json`. Es enthält aktuell 24.330 Einträge mit `documentId`, `route`, `sectionId`, `paragraphId`, Versionen, Reviewstatus, Content-Hash und Originaldatei-Hinweisen, soweit vorhanden.
 
 ## Versionierung und Review
 
 - Source-Version: `2026.0`
-- Web-Version: `2026.1-import`
-- Reviewstatus: `partially-reviewed`
+- Import-Version: `2026.1-import`
+- Live-Reference-Version: `2026.2-live-reference`
+- Reviewstatus: `delta-reviewed` / `partially-delta-reviewed`
 - Originaltexte bleiben unverändert zitierfähig.
 - Terminologiehinweise und Reviewlogik sind in `CONTENT_VERSIONING.md`, `TERMINOLOGY_REVIEW.md` und `IMPORT_REVIEW_NOTES.md` dokumentiert.
+- Live-Reference-Hinweise, Delta-Review, Changelog und Source-Hierarchy sind in `PHASE_1_LIVE_REFERENCE_COMPLETION.md`, `DELTA_REVIEW_REPORT.md`, `LOGIC_CONSISTENCY_REPORT.md`, `DRAFTING_ARTIFACTS_REPORT.md`, `SOURCE_LOGIC_REVIEW.md` und `LIVE_REFERENCE_SOURCE_HIERARCHY.md` dokumentiert.
 
 ## Offen für Phase 2
 
@@ -67,6 +69,5 @@ Das Manifest liegt unter `/public/data/content-manifest.json`. Es enthält aktue
 
 ## Fehlende oder unvollständige Quellen
 
-- `WOeK_Master_Items_final_v1.2.xlsx`
 - aktuelle Fassung `WP_Rente`
 - aktuelle Fassung `Nachhaltigkeit-Systemarchitektur`

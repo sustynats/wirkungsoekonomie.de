@@ -73,7 +73,13 @@ function entriesFromContent(file) {
     path.basename(file).replace(/\.[^.]+$/, "");
   const documentType = text.match(/^documentType:\s*["']?(.+?)["']?\s*$/m)?.[1] || "Referenz";
   const status = text.match(/^status:\s*["']?(.+?)["']?\s*$/m)?.[1] || "online-reviewed";
-  const version = text.match(/^webVersion:\s*["']?(.+?)["']?\s*$/m)?.[1] || "2026.1";
+  const version =
+    text.match(/<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i)?.[1] ||
+    text.match(/^webVersion:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
+    "2026.1";
+  const liveBoost = version === "2026.2-live-reference" ? 25 : 0;
+  const isReferenceChapter = /referenz\/kapitel-\d{3}-/.test(file);
+  const isRegister = /woek-master-items-final-v1-2/.test(file);
   const body = clean(text).slice(0, 18000);
   if (body.length < 80) return [];
   const sectionMatches = Array.from(text.matchAll(/<h([2-3])[^>]*id=["']([^"']+)["'][^>]*>(.*?)<\/h\1>/gi));
@@ -98,7 +104,7 @@ function entriesFromContent(file) {
     tags: [status, version, "WÖk-Referenz"],
     aliases: [],
     body,
-    priority: 70,
+    priority: 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
   for (const match of sectionMatches) {
@@ -108,7 +114,7 @@ function entriesFromContent(file) {
       id: `woek-section-${sectionId}`,
       title: `${title}: ${clean(match[3])}`,
       url: `${routeFor(file)}#${sectionId}`,
-      priority: 85,
+      priority: 85 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
     });
   }
   return entries.map((entry) => ({ entry, meta: { ...base, sectionId: entry.id.replace(/^woek-section-/, "") } }));
@@ -151,4 +157,3 @@ const merged = Array.from(byUrl.values()).sort((a, b) => Number(b.priority || 0)
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
 fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: meta }, null, 2)}\n`);
 console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);
-

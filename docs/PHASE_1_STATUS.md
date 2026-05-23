@@ -11,8 +11,9 @@ Phase 1 basiert auf dem bestehenden technischen Erstimport und wurde nicht neu b
 - Dokument: `Natalie-Weber_Die neue Ordnung des Wohlstands.docx`
 - Dokument-ID: `woek-main-2026`
 - Source-Version: `2026.0`
-- Web-Version: `2026.1-import`
-- Reviewstatus: `partially-reviewed`
+- Import-Version: `2026.1-import`
+- Live-Reference-Version: `2026.2-live-reference`
+- Reviewstatus: `partially-delta-reviewed`
 - Portal: `/referenz/`
 - Volltextansicht: `/referenz/volltext/`
 - Kapitelrouten: 108
@@ -61,9 +62,16 @@ Die bestehende Website-Suche bleibt die einzige Suche. Der bestehende statische 
 
 Das Glossar wird über `/src/data/glossary.terms.yml` und `/public/data/glossary.terms.json` als zentrale Begriffsschicht geführt. Es enthält führende Begriffe, Hoverdefinitionen, Synonyme, verwandte Begriffe und Reviewstatus. Die alphabetische Prüfung und Hover-Abdeckung laufen über die vorhandenen Glossarchecks.
 
+## Live-Reference-Schicht 2026.2
+
+- `2026.2-live-reference` ergänzt den technischen Erstimport um sichtbare Review-/Versionierungsmetadaten.
+- Prioritäre Kapitelcluster enthalten Live-Reference-Addenda zu Begriffssystem, Messlogik, Steuerlogik, Systemarchitektur, Automatisierung/Einkommen/Rente sowie Produkt- und Lieferkettenlogik.
+- `public/data/live-reference-changelog.json` und `docs/LIVE_REFERENCE_CHANGELOG.md` dokumentieren Änderungen gegenüber der Source-Original-Fassung.
+- Die Originalfassung bleibt unverändert über PDF/DOCX zitierfähig.
+
 ## Offene Phase-1-Restpunkte
 
-- WÖk-ID-Register: Das XLSX `WOeK_Master_Items_final_v1.2.xlsx` liegt nicht im Repository. Bis zur Lieferung bleibt das PDF als Fallback verlinkt.
+- WÖk-ID-Register: Das XLSX `WOeK_Master_Items_final_v1.2.xlsx` wurde nachgeliefert und als strukturierte Tabelle importiert.
 - WP_Rente und Nachhaltigkeit-Systemarchitektur liegen nicht als aktuelle Originaldateien im Repository vor.
 - Arbeitspapier-Tabellen aus PDFs sind als technischer Import sichtbar, aber nicht vollständig fachlich rekonstruiert.
 - Terminologie-Review ist als Erstprüfung/Markierung angelegt; keine vollständige redaktionelle Neuautorisierung.

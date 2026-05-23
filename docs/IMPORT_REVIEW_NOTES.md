@@ -11,7 +11,8 @@ Stand: 2026-05-23T18:04:43.655Z
 - Dokumentname: Die neue Ordnung des Wohlstands
 - Dokumenttyp: Hauptwerk
 - Originalversion: 2026.0 / source-original
-- erzeugte Webversion: 2026.1-import
+- erzeugte Importversion: 2026.1-import
+- Live-Reference-Version: 2026.2-live-reference
 - Webroute: `/referenz/`
 - Portalroute: `/referenz/`
 - Volltextroute: `/referenz/volltext/`
@@ -20,17 +21,18 @@ Stand: 2026-05-23T18:04:43.655Z
 - Originalquelle: `Natalie-Weber_Die neue Ordnung des Wohlstands.docx`
 - PDF-Link: `assets/pdf/die-neue-ordnung-des-wohlstands.pdf`
 - Importumfang Phase 1 Abschluss: 10.119 Absätze, 1.108 Überschriften, 30 Tabellen, 70 Abbildungen
-- Reviewstatus: source-original / technische Webfassung / partially-reviewed; terminologische Präzisierungen werden gesondert protokolliert
+- Reviewstatus: source-original / technische Webfassung / partially-delta-reviewed; prioritäre Kapitelcluster enthalten Live-Reference-Addenda und sind im Delta-/Changelog dokumentiert.
 
 ## Dokumentenbibliothek
 
 - Webfassungen: 20
 - Originaldateien: 20
 - Ergänzt in Phase 1 Abschluss: WStG Oktober 2025, WP Produkte, WP Einkommen, WP Wohnungsmarkt, Wenn Maschinen arbeiten, Leitbild Mensch Planet und Demokratie.
-- Noch offen: `WOeK_Master_Items_final_v1.2.xlsx`, aktuelle Fassung `WP_Rente`, aktuelle Fassung `Nachhaltigkeit-Systemarchitektur`.
+- Nachgeliefert: `WOeK_Master_Items_final_v1.2.xlsx` wurde als strukturiertes WÖk-ID-Register mit 621 Zeilen importiert.
+- Noch offen: aktuelle Fassung `WP_Rente`, aktuelle Fassung `Nachhaltigkeit-Systemarchitektur`.
 
 ## Befunde
 
-- **Wirkstoff** in `blog/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.html`: Wirkstoff muss als Analogie gerahmt werden. (needs-human-review)
-- **Wirkstoff** in `blog/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.html`: Wirkstoff muss als Analogie gerahmt werden. (needs-human-review)
-- **Wirkstoff** in `glossar.html`: Wirkstoff muss als Analogie gerahmt werden. (needs-human-review)
+- **Wirkstoff**: Die Live-Reference- und Glossarfassung rahmt den Begriff als didaktische Analogie. Ältere Blogstellen bleiben als Terminologie-Reviewpunkte markiert, sofern sie nicht Teil der führenden Referenzfassung sind.
+- **Drafting-Artefakte**: Zwei Chat-/Arbeitsartefakte in importierten Arbeitspapier-Webfassungen wurden aus der Live-Referenz entfernt und im Changelog dokumentiert; die Originaldateien bleiben unverändert.
+- **WÖk-ID-Register**: PDF-Fließtextimport wurde durch die strukturierte XLSX-Webfassung ergänzt.
