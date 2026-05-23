@@ -1,24 +1,45 @@
 (() => {
   const main = document.querySelector("[data-reference-reader], .reference-portal");
   if (!main) return;
+  const validModes = new Set(["lesen", "referenz", "quellen", "updates"]);
+  const modeLabels = {
+    lesen: "Lesemodus",
+    referenz: "Referenzmodus",
+    quellen: "Quellenmodus",
+    updates: "Aktualisierungsmodus",
+  };
+
+  const modeStatus = document.createElement("p");
+  modeStatus.className = "reader-mode-status sr-only";
+  modeStatus.setAttribute("aria-live", "polite");
+  main.prepend(modeStatus);
 
   function setReaderMode(mode) {
-    document.body.dataset.readerMode = mode;
+    if (mode === "print") {
+      window.print();
+      return;
+    }
+    const nextMode = validModes.has(mode) ? mode : "lesen";
+    document.documentElement.dataset.readerMode = nextMode;
+    document.body.dataset.readerMode = nextMode;
+    main.dataset.activeReaderMode = nextMode;
+    modeStatus.textContent = `${modeLabels[nextMode]} aktiviert`;
     try {
-      localStorage.setItem("woek-reference-reader-mode", mode);
+      localStorage.setItem("woek-reference-reader-mode", nextMode);
     } catch {
       // Local storage is optional.
     }
-    document.querySelectorAll("[data-reader-mode]").forEach((button) => {
-      const active = button.dataset.readerMode === mode;
+    document.querySelectorAll("button[data-reader-mode]").forEach((button) => {
+      const active = button.dataset.readerMode === nextMode;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
     });
-    if (mode === "print") window.print();
   }
 
   const storedMode = (() => {
     try {
+      const requestedMode = new URLSearchParams(location.search).get("modus") || new URLSearchParams(location.search).get("mode");
+      if (requestedMode) return requestedMode;
       return localStorage.getItem("woek-reference-reader-mode") || "lesen";
     } catch {
       return "lesen";
@@ -27,8 +48,9 @@
   setReaderMode(storedMode);
 
   document.addEventListener("click", (event) => {
-    const modeButton = event.target instanceof Element ? event.target.closest("[data-reader-mode]") : null;
+    const modeButton = event.target instanceof Element ? event.target.closest("button[data-reader-mode]") : null;
     if (modeButton instanceof HTMLButtonElement) {
+      event.preventDefault();
       setReaderMode(modeButton.dataset.readerMode || "lesen");
     }
 

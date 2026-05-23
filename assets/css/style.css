@@ -7864,7 +7864,22 @@ textarea {
 }
 
 body[data-reader-mode="lesen"] .reference-context-rail {
-  opacity: 0.72;
+  display: none;
+}
+
+body[data-reader-mode="lesen"] .reference-work.reference-reader {
+  grid-template-columns: minmax(0, 15rem) minmax(0, 48rem);
+  max-width: 72rem;
+}
+
+body[data-reader-mode="lesen"] .article-shell {
+  box-shadow: 0 18px 54px rgba(11, 16, 32, 0.06);
+}
+
+body[data-reader-mode="lesen"] .discussion-placeholder,
+body[data-reader-mode="lesen"] .version-summary,
+body[data-reader-mode="lesen"] .live-reference-notice {
+  display: none;
 }
 
 body[data-reader-mode="lesen"] .source-chip,
@@ -7873,14 +7888,42 @@ body[data-reader-mode="lesen"] .live-reference-patch {
   filter: saturate(0.78);
 }
 
+body[data-reader-mode="referenz"] .reference-context-rail {
+  outline: 2px solid rgba(47, 125, 92, 0.2);
+  outline-offset: 6px;
+}
+
 body[data-reader-mode="quellen"] .source-chip {
+  background: rgba(255, 244, 209, 0.95);
+  color: var(--navy);
   box-shadow: 0 0 0 3px rgba(154, 111, 18, 0.16);
+}
+
+body[data-reader-mode="quellen"] .source-chip::after {
+  content: " Quelle";
+  font-size: 0.72em;
+  font-weight: 800;
+  opacity: 0.72;
+}
+
+body[data-reader-mode="quellen"] .reference-context-rail .context-module:nth-of-type(2),
+body[data-reader-mode="quellen"] .article-shell h3[id*="quellen"],
+body[data-reader-mode="quellen"] .article-shell h3[id*="endnoten"] {
+  outline: 2px solid rgba(154, 111, 18, 0.18);
+  outline-offset: 6px;
 }
 
 body[data-reader-mode="updates"] .live-reference-addendum,
 body[data-reader-mode="updates"] .live-reference-patch,
-body[data-reader-mode="updates"] .logic-update-box {
+body[data-reader-mode="updates"] .logic-update-box,
+body[data-reader-mode="updates"] .version-summary,
+body[data-reader-mode="updates"] .live-reference-notice {
+  background: rgba(236, 244, 239, 0.86);
   box-shadow: 0 0 0 3px rgba(47, 125, 92, 0.18);
+}
+
+body[data-reader-mode="updates"] .discussion-placeholder {
+  opacity: 0.55;
 }
 
 @media (max-width: 1180px) {

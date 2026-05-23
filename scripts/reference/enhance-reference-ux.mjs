@@ -163,7 +163,7 @@ function renderFooter(base) {
 
 function scriptsFor(base) {
   return `<script src="${base}assets/js/main.js?v=20260523-reference-ux"></script>
-    <script src="${base}assets/js/reference-reader.js?v=20260523-reference-ux"></script>`;
+    <script src="${base}assets/js/reference-reader.js?v=20260523-reader-modes"></script>`;
 }
 
 function page(file, { title, description, section = "Hauptwerk", type = "Live-Referenz", body, bodyClass = "" }) {
@@ -179,7 +179,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260523-reference-ux">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260523-reader-modes">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}
