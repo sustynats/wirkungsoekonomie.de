@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SEARCH_INDEX = ROOT / "assets/search/search-index.json"
 KNOWLEDGE_CARDS = ROOT / "content/wissen/wissenskarten.json"
+BODY_LIMIT = 3500
 
 EXCLUDED_DIRS = {
     ".git",
@@ -169,7 +170,7 @@ def generated_entry(path):
         "instruments": [],
         "tags": tags_from_path(rel, source),
         "aliases": [],
-        "body": text[:12000],
+        "body": text[:BODY_LIMIT],
         "priority": 20 if section == "Blog" else 35,
     }
 

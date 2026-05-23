@@ -5,6 +5,9 @@ import crypto from "node:crypto";
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
 const glossaryPath = "public/data/glossary.terms.json";
+const PAGE_BODY_LIMIT = 3200;
+const SECTION_BODY_LIMIT = 1800;
+const FULLTEXT_BODY_LIMIT = 900;
 
 function clean(text) {
   return String(text || "")
@@ -67,6 +70,7 @@ function routeFor(file) {
 
 function entriesFromContent(file) {
   const text = fs.readFileSync(file, "utf8");
+  const route = routeFor(file);
   const title =
     text.match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     clean(text.match(/<h1[^>]*>(.*?)<\/h1>/i)?.[1]) ||
@@ -80,7 +84,9 @@ function entriesFromContent(file) {
   const liveBoost = version === "2026.2-live-reference" ? 25 : 0;
   const isReferenceChapter = /referenz\/kapitel-\d{3}-/.test(file);
   const isRegister = /woek-master-items-final-v1-2/.test(file);
-  const body = clean(text).slice(0, 18000);
+  const isFulltext = route === "/referenz/volltext/";
+  const bodyLimit = isFulltext ? FULLTEXT_BODY_LIMIT : PAGE_BODY_LIMIT;
+  const body = clean(text).slice(0, bodyLimit);
   if (body.length < 80) return [];
   const sectionMatches = Array.from(text.matchAll(/<h([2-3])[^>]*id=["']([^"']+)["'][^>]*>(.*?)<\/h\1>/gi));
   const base = {
@@ -94,7 +100,7 @@ function entriesFromContent(file) {
     id: `woek-page-${hash(file)}`,
     title,
     description: body.slice(0, 240),
-    url: routeFor(file),
+    url: route,
     section: documentType,
     type: documentType,
     format: documentType,
@@ -107,13 +113,26 @@ function entriesFromContent(file) {
     priority: 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
+  if (isFulltext) {
+    return entries.map((entry) => ({ entry, meta: { ...base, sectionId: "" } }));
+  }
   for (const match of sectionMatches) {
     const sectionId = match[2];
+    const sectionTitle = clean(match[3]);
+    const matchStart = match.index || 0;
+    const nextHeading = text.slice(matchStart + match[0].length).search(/<h[2-3]\b/i);
+    const sectionHtml =
+      nextHeading >= 0
+        ? text.slice(matchStart, matchStart + match[0].length + nextHeading)
+        : text.slice(matchStart, matchStart + 9000);
+    const sectionBody = clean(sectionHtml).slice(0, SECTION_BODY_LIMIT);
     entries.push({
       ...pageEntry,
       id: `woek-section-${sectionId}`,
-      title: `${title}: ${clean(match[3])}`,
-      url: `${routeFor(file)}#${sectionId}`,
+      title: `${title}: ${sectionTitle}`,
+      description: sectionBody.slice(0, 240) || pageEntry.description,
+      url: `${route}#${sectionId}`,
+      body: sectionBody || pageEntry.body,
       priority: 85 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
     });
   }

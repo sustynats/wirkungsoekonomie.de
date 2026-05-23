@@ -13,7 +13,9 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260523-reference-phase1";
+  const searchDataVersion = "20260523-search-performance";
+  const MAX_HAYSTACK_CHARS = 5000;
+  const MAX_SEARCH_SCAN = 1200;
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;
@@ -26,6 +28,7 @@
     entrypoints: [],
     ready: false,
     timer: null,
+    searchRun: 0,
   };
 
   const dataUrl = (fileName) => {
@@ -69,7 +72,7 @@
       ...asArray(entry.instruments),
       ...asArray(entry.impactSpaces),
       entry.body,
-    ].join(" "));
+    ].join(" ")).slice(0, MAX_HAYSTACK_CHARS);
   }
 
   function levenshtein(a, b) {
@@ -97,7 +100,7 @@
     if (token.length < 5) {
       return false;
     }
-    return haystack.split(" ").some((word) => {
+    return haystack.slice(0, MAX_HAYSTACK_CHARS).split(" ").some((word) => {
       if (Math.abs(word.length - token.length) > 2) return false;
       const limit = token.length > 7 ? 2 : 1;
       return levenshtein(token, word) <= limit;
@@ -378,6 +381,7 @@
       .slice(0, 6)
       .map((term) => ({ label: term.label, type: "Begriff", q: term.label }));
     const entryMatches = state.index
+      .slice(0, 500)
       .filter((entry) => entryMatchesQuery(entry, rawQuery))
       .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0))
       .slice(0, 6)
@@ -480,29 +484,54 @@
     }
 
     emptyState.hidden = true;
-    const scored = state.index
-      .filter(passesFilters)
-      .map((entry) => ({ entry, score: queryLength >= 2 ? scoreEntry(entry, rawQuery, tokens) : Number(entry.priority || 0) }))
-      .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score || String(a.entry.title).localeCompare(String(b.entry.title), "de"))
-      .slice(0, 40);
+    const runId = ++state.searchRun;
+    const filtered = state.index.filter(passesFilters);
+    const scored = [];
+    let cursor = 0;
 
-    renderRecommended(queryLength >= 2 ? findRecommended(rawQuery) : null);
-    renderRelated(queryLength >= 2 ? findRelated(rawQuery, tokens) : []);
-    renderSuggestions(rawQuery, tokens);
-    renderResults(scored, rawQuery, tokens);
+    status.textContent = "Suche läuft ...";
 
-    const label = rawQuery ? ` für „${rawQuery}“` : "";
-    status.textContent = `${scored.length} Treffer${label}`;
-    if (!scored.length) {
-      resultsList.innerHTML = `<li class="search-result-card"><h2>Keine Treffer gefunden</h2><p>Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.</p></li>`;
-    }
-    updateUrl(rawQuery);
+    const finishSearch = () => {
+      if (runId !== state.searchRun) return;
+      const finalResults = scored
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score || String(a.entry.title).localeCompare(String(b.entry.title), "de"))
+        .slice(0, 40);
+
+      renderRecommended(queryLength >= 2 ? findRecommended(rawQuery) : null);
+      renderRelated(queryLength >= 2 ? findRelated(rawQuery, tokens) : []);
+      renderSuggestions(rawQuery, tokens);
+      renderResults(finalResults, rawQuery, tokens);
+
+      const label = rawQuery ? ` für „${rawQuery}“` : "";
+      status.textContent = `${finalResults.length} Treffer${label}`;
+      if (!finalResults.length) {
+        resultsList.innerHTML = `<li class="search-result-card"><h2>Keine Treffer gefunden</h2><p>Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.</p></li>`;
+      }
+      updateUrl(rawQuery);
+    };
+
+    const processChunk = () => {
+      if (runId !== state.searchRun) return;
+      const end = Math.min(cursor + MAX_SEARCH_SCAN, filtered.length);
+      for (; cursor < end; cursor += 1) {
+        const entry = filtered[cursor];
+        const score = queryLength >= 2 ? scoreEntry(entry, rawQuery, tokens) : Number(entry.priority || 0);
+        if (score > 0) scored.push({ entry, score });
+      }
+      if (cursor < filtered.length) {
+        window.setTimeout(processChunk, 0);
+      } else {
+        finishSearch();
+      }
+    };
+
+    processChunk();
   }
 
   function scheduleSearch() {
     window.clearTimeout(state.timer);
-    state.timer = window.setTimeout(runSearch, 200);
+    state.timer = window.setTimeout(runSearch, 320);
   }
 
   function applyParams() {
@@ -575,7 +604,11 @@
         fetch(dataUrl("search-associations.json")).then((response) => response.json()),
         fetch(dataUrl("search-curated-entrypoints.json")).then((response) => response.json()),
       ]);
-      state.index = index.map((entry) => ({ ...entry, _haystack: getEntryHaystack(entry) }));
+      state.index = index.map((entry) => ({
+        ...entry,
+        body: String(entry.body || "").slice(0, MAX_HAYSTACK_CHARS),
+        _haystack: getEntryHaystack(entry),
+      }));
       state.dictionary = dictionary;
       state.associations = associations;
       state.entrypoints = entrypoints;
