@@ -13,7 +13,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260522-sprint4-tools";
+  const searchDataVersion = "20260523-reference-phase1";
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;

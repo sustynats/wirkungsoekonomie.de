@@ -1,0 +1,783 @@
+{
+  "generatedAt": "2026-05-23T18:05:22.466Z",
+  "links": {
+    "archetyp": {
+      "label": "Archetyp",
+      "slug": "archetyp",
+      "url": "/begriffe/archetyp/",
+      "hoverDefinition": "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten.",
+      "synonyms": [],
+      "relatedTerms": [
+        "benchmark",
+        "scorecard",
+        "woek-id"
+      ]
+    },
+    "benchmark": {
+      "label": "Benchmark",
+      "slug": "benchmark",
+      "url": "/begriffe/benchmark/",
+      "hoverDefinition": "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität.",
+      "synonyms": [
+        "Vergleichswert",
+        "Schwellenwert"
+      ],
+      "relatedTerms": [
+        "scorecard",
+        "finalscore",
+        "woek-id"
+      ]
+    },
+    "csrd": {
+      "label": "CSRD",
+      "slug": "csrd",
+      "url": "/begriffe/csrd/",
+      "hoverDefinition": "CSRD schafft Berichtsdaten; in der WÖk werden daraus erst durch Rückkopplung Steuerungsdaten.",
+      "synonyms": [
+        "Corporate Sustainability Reporting Directive"
+      ],
+      "relatedTerms": [
+        "esrs",
+        "esg",
+        "wirkungsdatenraum",
+        "reporting"
+      ]
+    },
+    "digitaler-produktpass": {
+      "label": "Digitaler Produktpass",
+      "slug": "digitaler-produktpass",
+      "url": "/begriffe/digitaler-produktpass/",
+      "hoverDefinition": "Der Digitale Produktpass kann Wirkungsdaten zu Produkten strukturiert verfügbar machen.",
+      "synonyms": [
+        "DPP",
+        "Digital Product Passport"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard"
+      ]
+    },
+    "esg": {
+      "label": "ESG",
+      "slug": "esg",
+      "url": "/begriffe/esg/",
+      "hoverDefinition": "ESG ist ein Anschlussraum der WÖk, aber nicht ihre Kernlogik.",
+      "synonyms": [
+        "Environmental Social Governance"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "nachhaltigkeit",
+        "wirkungsrisiko"
+      ]
+    },
+    "esrs": {
+      "label": "ESRS",
+      "slug": "esrs",
+      "url": "/begriffe/esrs/",
+      "hoverDefinition": "ESRS strukturieren Berichtsdaten, die in der WÖk zu Wirkungs- und Steuerungsdaten weiterentwickelt werden können.",
+      "synonyms": [
+        "European Sustainability Reporting Standards"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esg",
+        "wirkungsdatenraum"
+      ]
+    },
+    "eu-taxonomie": {
+      "label": "EU-Taxonomie",
+      "slug": "eu-taxonomie",
+      "url": "/begriffe/eu-taxonomie/",
+      "hoverDefinition": "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung.",
+      "synonyms": [
+        "EU Taxonomy"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "wirkungsrisiko",
+        "nachhaltigkeit"
+      ]
+    },
+    "finalscore": {
+      "label": "FinalScore",
+      "slug": "finalscore",
+      "url": "/begriffe/finalscore/",
+      "hoverDefinition": "Der FinalScore verdichtet Wirkungsinformationen, ohne rote Linien oder Nicht-Kompensation aufzuheben.",
+      "synonyms": [],
+      "relatedTerms": [
+        "scorecard",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ]
+    },
+    "gri": {
+      "label": "GRI",
+      "slug": "gri",
+      "url": "/begriffe/gri/",
+      "hoverDefinition": "GRI strukturiert Reporting; WÖk fragt zusätzlich nach bewerteter Wirkung und Rückkopplung.",
+      "synonyms": [
+        "Global Reporting Initiative"
+      ],
+      "relatedTerms": [
+        "reporting",
+        "csrd",
+        "esrs"
+      ]
+    },
+    "mensch-planet-demokratie": {
+      "label": "Mensch, Planet und Demokratie",
+      "slug": "mensch-planet-demokratie",
+      "url": "/begriffe/mensch-planet-demokratie/",
+      "hoverDefinition": "Mensch, Planet und Demokratie sind der Zielrahmen, an dem positive Netto-Wirkung ausgerichtet wird.",
+      "synonyms": [
+        "MPD"
+      ],
+      "relatedTerms": [
+        "sdg-plus",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ]
+    },
+    "nace": {
+      "label": "NACE",
+      "slug": "nace",
+      "url": "/begriffe/nace/",
+      "hoverDefinition": "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung.",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "woek-id",
+        "scorecard"
+      ]
+    },
+    "nachhaltigkeit": {
+      "label": "Nachhaltigkeit",
+      "slug": "nachhaltigkeit",
+      "url": "/begriffe/nachhaltigkeit/",
+      "hoverDefinition": "Nachhaltigkeit bedeutet in der WÖk: Ein System lebt nicht auf Verschleiß, sondern bleibt krisenfest und erzeugt dauerhaft positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "synonyms": [
+        "nachhaltig",
+        "nachhaltige Entwicklung",
+        "nachhaltige Wirtschaft",
+        "resiliente Wirtschaft"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsresilienz",
+        "esg",
+        "csrd",
+        "eu-taxonomie",
+        "stranded-assets"
+      ]
+    },
+    "negative-wirkung": {
+      "label": "negative Wirkung",
+      "slug": "negative-wirkung",
+      "url": "/begriffe/negative-wirkung/",
+      "hoverDefinition": "Negative Wirkung verschlechtert Zustände für Mensch, Planet oder Demokratie.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsrisiko",
+        "netto-wirkung"
+      ]
+    },
+    "netto-wirkung": {
+      "label": "Netto-Wirkung",
+      "slug": "netto-wirkung",
+      "url": "/begriffe/netto-wirkung/",
+      "hoverDefinition": "Netto-Wirkung ist die bewertete Gesamtwirkung. Sie ist keine einfache Addition, weil schwere Schäden nicht beliebig kompensierbar sind.",
+      "synonyms": [
+        "Nettowirkung"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "reverse-merit-order",
+        "wirkungsgrenze"
+      ]
+    },
+    "neutrale-wirkung": {
+      "label": "neutrale Wirkung",
+      "slug": "neutrale-wirkung",
+      "url": "/begriffe/neutrale-wirkung/",
+      "hoverDefinition": "Neutrale Wirkung verändert Zustände, wird aber im Referenzrahmen nicht positiv oder negativ bewertet.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkung",
+        "positive-wirkung",
+        "negative-wirkung"
+      ]
+    },
+    "nichtkompensationsprinzip": {
+      "label": "Nichtkompensationsprinzip",
+      "slug": "nichtkompensationsprinzip",
+      "url": "/begriffe/nichtkompensationsprinzip/",
+      "hoverDefinition": "Nicht-Kompensation heißt: Kritische Schäden dürfen nicht durch positive Effekte verdeckt werden.",
+      "synonyms": [
+        "Nicht-Kompensation",
+        "Nichtkompensation"
+      ],
+      "relatedTerms": [
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "netto-wirkung"
+      ]
+    },
+    "positive-netto-wirkung": {
+      "label": "positive Netto-Wirkung",
+      "slug": "positive-netto-wirkung",
+      "url": "/begriffe/positive-netto-wirkung/",
+      "hoverDefinition": "Positive Netto-Wirkung heißt: Die bewertete Gesamtwirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden zu verdecken.",
+      "synonyms": [
+        "positive Nettowirkung",
+        "positive netto Wirkung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "mensch-planet-demokratie"
+      ]
+    },
+    "positive-wirkung": {
+      "label": "positive Wirkung",
+      "slug": "positive-wirkung",
+      "url": "/begriffe/positive-wirkung/",
+      "hoverDefinition": "Positive Wirkung ist Wirkung, die am Referenzrahmen SDGs, Agenda 2030 und SDG+ positiv bewertet wird.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkung",
+        "negative-wirkung",
+        "neutrale-wirkung"
+      ]
+    },
+    "resonanzraum": {
+      "label": "Resonanzraum",
+      "slug": "resonanzraum",
+      "url": "/begriffe/resonanzraum/",
+      "hoverDefinition": "Ein Resonanzraum ist der Kontext, in dem Worte, Bilder oder Entscheidungen Wirkungspotenzial entfalten.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsnetz"
+      ]
+    },
+    "reverse-merit-order": {
+      "label": "Reverse Merit Order",
+      "slug": "reverse-merit-order",
+      "url": "/begriffe/reverse-merit-order/",
+      "hoverDefinition": "Reverse Merit Order heißt: Das schwächste kritische Wirkungsfeld darf nicht von starken Teilwerten überdeckt werden.",
+      "synonyms": [
+        "Nichtkompensationsprinzip",
+        "Minimum-Operator",
+        "Engpasslogik"
+      ],
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "netto-wirkung",
+        "wirkungsgrenze"
+      ]
+    },
+    "scorecard": {
+      "label": "Scorecard",
+      "slug": "scorecard",
+      "url": "/begriffe/scorecard/",
+      "hoverDefinition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
+      "synonyms": [],
+      "relatedTerms": [
+        "woek-id",
+        "benchmark",
+        "finalscore"
+      ]
+    },
+    "sdg-plus": {
+      "label": "SDG+",
+      "slug": "sdg-plus",
+      "url": "/begriffe/sdg-plus/",
+      "hoverDefinition": "SDG+ ist keine offizielle UN-Kategorie, sondern die WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit und digitale Selbstbestimmung.",
+      "synonyms": [
+        "SDG Plus",
+        "SDG-Plus"
+      ],
+      "relatedTerms": [
+        "mensch-planet-demokratie",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ]
+    },
+    "stranded-assets": {
+      "label": "Stranded Assets",
+      "slug": "stranded-assets",
+      "url": "/begriffe/stranded-assets/",
+      "hoverDefinition": "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt.",
+      "synonyms": [
+        "gestrandete Vermögenswerte"
+      ],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "nachhaltigkeit",
+        "transitionsrisiko",
+        "versicherbarkeit",
+        "kapitalzugang"
+      ]
+    },
+    "t-sroi": {
+      "label": "T-SROI",
+      "slug": "t-sroi",
+      "url": "/begriffe/t-sroi/",
+      "hoverDefinition": "T-SROI macht sichtbar, welche Transformationswirkung ein Einsatz von Kapital, Zeit oder Ressourcen erzeugt.",
+      "synonyms": [
+        "Transformational Social Return on Investment",
+        "Transformational SROI"
+      ],
+      "relatedTerms": [
+        "transformationswirkung",
+        "netto-wirkung",
+        "wirkungscontrolling"
+      ]
+    },
+    "transformationswirkung": {
+      "label": "Transformationswirkung",
+      "slug": "transformationswirkung",
+      "url": "/begriffe/transformationswirkung/",
+      "hoverDefinition": "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen.",
+      "synonyms": [],
+      "relatedTerms": [
+        "t-sroi",
+        "wirkungsarchitektur",
+        "wirkungslenkung"
+      ]
+    },
+    "wirkmechanismus": {
+      "label": "Wirkmechanismus",
+      "slug": "wirkmechanismus",
+      "url": "/begriffe/wirkmechanismus/",
+      "hoverDefinition": "Ein Wirkmechanismus erklärt, wie aus einem Auslöser unter bestimmten Bedingungen Wirkung entstehen kann.",
+      "synonyms": [
+        "Wirkungsmechanismus"
+      ],
+      "relatedTerms": [
+        "wirkstoff",
+        "wirkungspfad",
+        "wirkungspotenzial"
+      ]
+    },
+    "wirkstoff": {
+      "label": "Wirkstoff",
+      "slug": "wirkstoff",
+      "url": "/begriffe/wirkstoff/",
+      "hoverDefinition": "Wirkstoff meint als Analogie einen Auslöser mit Wirkungspotenzial. Er ist nicht selbst Wirkung.",
+      "synonyms": [
+        "gesellschaftlicher Wirkstoff"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungspfad",
+        "resonanzraum"
+      ]
+    },
+    "wirkung": {
+      "label": "Wirkung",
+      "slug": "wirkung",
+      "url": "/begriffe/wirkung/",
+      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer einen Bezugspunkt.",
+      "synonyms": [
+        "Impact",
+        "Zustandsveränderung"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ]
+    },
+    "wirkungsarchitektur": {
+      "label": "Wirkungsarchitektur",
+      "slug": "wirkungsarchitektur",
+      "url": "/begriffe/wirkungsarchitektur/",
+      "hoverDefinition": "Wirkungsarchitektur beschreibt das Gesamtsystem, das Wirkung sichtbar, bewertbar und rückkoppelbar macht.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "wirkungsrat",
+        "woek-id"
+      ]
+    },
+    "wirkungsbewertung": {
+      "label": "Wirkungsbewertung",
+      "slug": "wirkungsbewertung",
+      "url": "/begriffe/wirkungsbewertung/",
+      "hoverDefinition": "Wirkungsbewertung prüft, ob Zustandsveränderungen positiv, negativ oder neutral für Mensch, Planet und Demokratie sind.",
+      "synonyms": [
+        "Impact Assessment"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "scorecard"
+      ]
+    },
+    "wirkungsblindheit": {
+      "label": "Wirkungsblindheit",
+      "slug": "wirkungsblindheit",
+      "url": "/begriffe/wirkungsblindheit/",
+      "hoverDefinition": "Wirkungsblindheit heißt: Folgen werden erzeugt, aber nicht gesehen, bewertet oder zurückgekoppelt.",
+      "synonyms": [
+        "wirkungsblind"
+      ],
+      "relatedTerms": [
+        "wirkungswahrheit",
+        "wirkungsdatenraum",
+        "wirkungsrückkopplung"
+      ]
+    },
+    "wirkungsdatenraum": {
+      "label": "Wirkungsdatenraum",
+      "slug": "wirkungsdatenraum",
+      "url": "/begriffe/wirkungsdatenraum/",
+      "hoverDefinition": "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann.",
+      "synonyms": [
+        "Wirkungsdatenräume"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "woek-id"
+      ]
+    },
+    "wirkungseinkommen": {
+      "label": "Wirkungseinkommen",
+      "slug": "wirkungseinkommen",
+      "url": "/begriffe/wirkungseinkommen/",
+      "hoverDefinition": "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung.",
+      "synonyms": [
+        "Wirkungsdividende"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungslenkung"
+      ]
+    },
+    "wirkungsempfaenger": {
+      "label": "Wirkungsempfänger",
+      "slug": "wirkungsempfaenger",
+      "url": "/begriffe/wirkungsempfaenger/",
+      "hoverDefinition": "Wirkungsempfänger sind diejenigen, bei denen eine Zustandsveränderung ankommt.",
+      "synonyms": [
+        "Betroffene"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsraum",
+        "wirkungspfad"
+      ]
+    },
+    "wirkungsgrenze": {
+      "label": "Wirkungsgrenze",
+      "slug": "wirkungsgrenze",
+      "url": "/begriffe/wirkungsgrenze/",
+      "hoverDefinition": "Wirkungsgrenzen schützen zentrale Lebens-, Sozial- und Demokratiefunktionen vor Verrechnung.",
+      "synonyms": [
+        "rote Linie",
+        "Red Line"
+      ],
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ]
+    },
+    "wirkungshaushalt": {
+      "label": "Wirkungshaushalt",
+      "slug": "wirkungshaushalt",
+      "url": "/begriffe/wirkungshaushalt/",
+      "hoverDefinition": "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "positive-netto-wirkung"
+      ]
+    },
+    "wirkungskompetenz": {
+      "label": "Wirkungskompetenz",
+      "slug": "wirkungskompetenz",
+      "url": "/begriffe/wirkungskompetenz/",
+      "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsradar",
+        "wirkungsbewertung",
+        "wirkungsarchitektur"
+      ]
+    },
+    "wirkungslenkung": {
+      "label": "Wirkungslenkung",
+      "slug": "wirkungslenkung",
+      "url": "/begriffe/wirkungslenkung/",
+      "hoverDefinition": "Wirkungslenkung richtet Entscheidungen und Anreize bewusst auf positive Netto-Wirkung aus.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsrückkopplung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ]
+    },
+    "wirkungsnetz": {
+      "label": "Wirkungsnetz",
+      "slug": "wirkungsnetz",
+      "url": "/begriffe/wirkungsnetz/",
+      "hoverDefinition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspfad",
+        "resonanzraum",
+        "wirkungsarchitektur"
+      ]
+    },
+    "wirkungspfad": {
+      "label": "Wirkungspfad",
+      "slug": "wirkungspfad",
+      "url": "/begriffe/wirkungspfad/",
+      "hoverDefinition": "Ein Wirkungspfad zeigt, wie Wirkung entstehen kann. Er ist noch kein Nachweis eingetretener Wirkung.",
+      "synonyms": [
+        "Wirkpfad"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsnetz"
+      ]
+    },
+    "wirkungspotenzial": {
+      "label": "Wirkungspotenzial",
+      "slug": "wirkungspotenzial",
+      "url": "/begriffe/wirkungspotenzial/",
+      "hoverDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
+      "synonyms": [
+        "Wirkpotenzial"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungsrisiko",
+        "wirkstoff"
+      ]
+    },
+    "wirkungsradar": {
+      "label": "Wirkungsradar",
+      "slug": "wirkungsradar",
+      "url": "/begriffe/wirkungsradar/",
+      "hoverDefinition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungskompetenz",
+        "wirkungsbewertung"
+      ]
+    },
+    "wirkungsrat": {
+      "label": "Wirkungsrat",
+      "slug": "wirkungsrat",
+      "url": "/begriffe/wirkungsrat/",
+      "hoverDefinition": "Der Wirkungsrat soll Wirkungsmaßstäbe prüfen, weiterentwickeln und demokratisch kontrollierbar halten.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "benchmark",
+        "archetyp"
+      ]
+    },
+    "wirkungsraum": {
+      "label": "Wirkungsraum",
+      "slug": "wirkungsraum",
+      "url": "/begriffe/wirkungsraum/",
+      "hoverDefinition": "Ein Wirkungsraum ist ein Bereich, in dem Wirkung entsteht, sichtbar wird und zurückgekoppelt werden kann.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsempfaenger",
+        "wirkungspfad",
+        "wirkungsarchitektur"
+      ]
+    },
+    "wirkungsrente": {
+      "label": "Wirkungsrente",
+      "slug": "wirkungsrente",
+      "url": "/begriffe/wirkungsrente/",
+      "hoverDefinition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
+      "synonyms": [
+        "wirkungsbasierte Rente"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "positive-netto-wirkung"
+      ]
+    },
+    "wirkungsresilienz": {
+      "label": "Wirkungsresilienz",
+      "slug": "wirkungsresilienz",
+      "url": "/begriffe/wirkungsresilienz/",
+      "hoverDefinition": "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie.",
+      "synonyms": [
+        "Resilienz im WÖk-Sinn"
+      ],
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung"
+      ]
+    },
+    "wirkungsrisiko": {
+      "label": "Wirkungsrisiko",
+      "slug": "wirkungsrisiko",
+      "url": "/begriffe/wirkungsrisiko/",
+      "hoverDefinition": "Wirkungsrisiko beschreibt mögliche negative Folgen oder verfehlte positive Wirkung.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "stranded-assets",
+        "wirkungsradar"
+      ]
+    },
+    "wirkungsrueckkopplung": {
+      "label": "Wirkungsrückkopplung",
+      "slug": "wirkungsrueckkopplung",
+      "url": "/begriffe/wirkungsrueckkopplung/",
+      "hoverDefinition": "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert.",
+      "synonyms": [
+        "Rückkopplung"
+      ],
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ]
+    },
+    "wirkungssteuer": {
+      "label": "Wirkungssteuer",
+      "slug": "wirkungssteuer",
+      "url": "/begriffe/wirkungssteuer/",
+      "hoverDefinition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
+      "synonyms": [
+        "Steuer nach Wirkung"
+      ],
+      "relatedTerms": [
+        "wstg",
+        "wustg",
+        "wirkungsrueckkopplung"
+      ]
+    },
+    "wirkungssteuergesetz": {
+      "label": "Wirkungssteuergesetz",
+      "slug": "wirkungssteuergesetz",
+      "url": "/begriffe/wirkungssteuergesetz/",
+      "hoverDefinition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
+      "synonyms": [
+        "WStG",
+        "Wirkungssteuer-Rahmengesetz"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wstg",
+        "wustg"
+      ]
+    },
+    "wirkungstraeger": {
+      "label": "Wirkungsträger",
+      "slug": "wirkungstraeger",
+      "url": "/begriffe/wirkungstraeger/",
+      "hoverDefinition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkmechanismus"
+      ]
+    },
+    "wirkungsumsatzsteuer": {
+      "label": "Wirkungsumsatzsteuer",
+      "slug": "wirkungsumsatzsteuer",
+      "url": "/begriffe/wirkungsumsatzsteuer/",
+      "hoverDefinition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
+      "synonyms": [
+        "WUStG",
+        "Produktwirkungssteuer"
+      ],
+      "relatedTerms": [
+        "wustg",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ]
+    },
+    "wirkungswahrheit": {
+      "label": "Wirkungswahrheit",
+      "slug": "wirkungswahrheit",
+      "url": "/begriffe/wirkungswahrheit/",
+      "hoverDefinition": "Wirkungswahrheit ist keine absolute Wahrheitshoheit, sondern Transparenz über Folgen und Datenklarheit.",
+      "synonyms": [
+        "wirkungsnah"
+      ],
+      "relatedTerms": [
+        "wirkungsblindheit",
+        "wirkungsdatenraum",
+        "wirkungsrat"
+      ]
+    },
+    "woek-id": {
+      "label": "WÖk-ID",
+      "slug": "woek-id",
+      "url": "/begriffe/woek-id/",
+      "hoverDefinition": "Eine WÖk-ID macht Wirkungsindikatoren eindeutig, auffindbar und vergleichbar.",
+      "synonyms": [
+        "WOK-ID",
+        "Wok ID",
+        "WÖK ID"
+      ],
+      "relatedTerms": [
+        "scorecard",
+        "benchmark",
+        "wirkungsdatenraum"
+      ]
+    },
+    "wstg": {
+      "label": "WStG",
+      "slug": "wstg",
+      "url": "/begriffe/wstg/",
+      "hoverDefinition": "WStG ist die Kurzform für Wirkungssteuergesetz.",
+      "synonyms": [
+        "Wirkungssteuergesetz"
+      ],
+      "relatedTerms": [
+        "wirkungssteuergesetz",
+        "wirkungssteuer",
+        "wustg"
+      ]
+    },
+    "wustg": {
+      "label": "WUStG",
+      "slug": "wustg",
+      "url": "/begriffe/wustg/",
+      "hoverDefinition": "WUStG ist die Kurzform für Wirkungsumsatzsteuergesetz.",
+      "synonyms": [
+        "Wirkungsumsatzsteuergesetz"
+      ],
+      "relatedTerms": [
+        "wirkungsumsatzsteuer",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ]
+    }
+  }
+}

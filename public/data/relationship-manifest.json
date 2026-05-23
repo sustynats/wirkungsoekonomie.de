@@ -1,0 +1,497 @@
+{
+  "generatedAt": "2026-05-23T18:05:22.576Z",
+  "relationships": {
+    "archetyp": {
+      "terms": [
+        "benchmark",
+        "scorecard",
+        "woek-id"
+      ],
+      "documents": []
+    },
+    "benchmark": {
+      "terms": [
+        "scorecard",
+        "finalscore",
+        "woek-id"
+      ],
+      "documents": []
+    },
+    "csrd": {
+      "terms": [
+        "esrs",
+        "esg",
+        "wirkungsdatenraum",
+        "reporting"
+      ],
+      "documents": []
+    },
+    "digitaler-produktpass": {
+      "terms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard"
+      ],
+      "documents": []
+    },
+    "esg": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "nachhaltigkeit",
+        "wirkungsrisiko"
+      ],
+      "documents": []
+    },
+    "esrs": {
+      "terms": [
+        "csrd",
+        "esg",
+        "wirkungsdatenraum"
+      ],
+      "documents": []
+    },
+    "eu-taxonomie": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "wirkungsrisiko",
+        "nachhaltigkeit"
+      ],
+      "documents": []
+    },
+    "finalscore": {
+      "terms": [
+        "scorecard",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ],
+      "documents": []
+    },
+    "gri": {
+      "terms": [
+        "reporting",
+        "csrd",
+        "esrs"
+      ],
+      "documents": []
+    },
+    "mensch-planet-demokratie": {
+      "terms": [
+        "sdg-plus",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "nace": {
+      "terms": [
+        "eu-taxonomie",
+        "woek-id",
+        "scorecard"
+      ],
+      "documents": []
+    },
+    "nachhaltigkeit": {
+      "terms": [
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsresilienz",
+        "esg",
+        "csrd",
+        "eu-taxonomie",
+        "stranded-assets"
+      ],
+      "documents": [
+        "nachhaltigkeit-systemarchitektur"
+      ]
+    },
+    "negative-wirkung": {
+      "terms": [
+        "wirkung",
+        "wirkungsrisiko",
+        "netto-wirkung"
+      ],
+      "documents": []
+    },
+    "netto-wirkung": {
+      "terms": [
+        "positive-netto-wirkung",
+        "reverse-merit-order",
+        "wirkungsgrenze"
+      ],
+      "documents": []
+    },
+    "neutrale-wirkung": {
+      "terms": [
+        "wirkung",
+        "positive-wirkung",
+        "negative-wirkung"
+      ],
+      "documents": []
+    },
+    "nichtkompensationsprinzip": {
+      "terms": [
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "netto-wirkung"
+      ],
+      "documents": []
+    },
+    "positive-netto-wirkung": {
+      "terms": [
+        "wirkung",
+        "netto-wirkung",
+        "mensch-planet-demokratie"
+      ],
+      "documents": []
+    },
+    "positive-wirkung": {
+      "terms": [
+        "wirkung",
+        "negative-wirkung",
+        "neutrale-wirkung"
+      ],
+      "documents": []
+    },
+    "resonanzraum": {
+      "terms": [
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsnetz"
+      ],
+      "documents": []
+    },
+    "reverse-merit-order": {
+      "terms": [
+        "nichtkompensationsprinzip",
+        "netto-wirkung",
+        "wirkungsgrenze"
+      ],
+      "documents": [
+        "technische-leitlinien-wustg",
+        "beispiel-apfel-wirkungssteuer"
+      ]
+    },
+    "scorecard": {
+      "terms": [
+        "woek-id",
+        "benchmark",
+        "finalscore"
+      ],
+      "documents": []
+    },
+    "sdg-plus": {
+      "terms": [
+        "mensch-planet-demokratie",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "stranded-assets": {
+      "terms": [
+        "wirkungsrisiko",
+        "nachhaltigkeit",
+        "transitionsrisiko",
+        "versicherbarkeit",
+        "kapitalzugang"
+      ],
+      "documents": [
+        "wp-wohnungsmarkt",
+        "stranded-assets-gebaeudebestand"
+      ]
+    },
+    "t-sroi": {
+      "terms": [
+        "transformationswirkung",
+        "netto-wirkung",
+        "wirkungscontrolling"
+      ],
+      "documents": [
+        "whitepaper-t-sroi"
+      ]
+    },
+    "transformationswirkung": {
+      "terms": [
+        "t-sroi",
+        "wirkungsarchitektur",
+        "wirkungslenkung"
+      ],
+      "documents": []
+    },
+    "wirkmechanismus": {
+      "terms": [
+        "wirkstoff",
+        "wirkungspfad",
+        "wirkungspotenzial"
+      ],
+      "documents": []
+    },
+    "wirkstoff": {
+      "terms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungspfad",
+        "resonanzraum"
+      ],
+      "documents": []
+    },
+    "wirkung": {
+      "terms": [
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "wirkungsarchitektur": {
+      "terms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "wirkungsrat",
+        "woek-id"
+      ],
+      "documents": []
+    },
+    "wirkungsbewertung": {
+      "terms": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "scorecard"
+      ],
+      "documents": []
+    },
+    "wirkungsblindheit": {
+      "terms": [
+        "wirkungswahrheit",
+        "wirkungsdatenraum",
+        "wirkungsrückkopplung"
+      ],
+      "documents": []
+    },
+    "wirkungsdatenraum": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "woek-id"
+      ],
+      "documents": []
+    },
+    "wirkungseinkommen": {
+      "terms": [
+        "positive-netto-wirkung",
+        "wirkungslenkung"
+      ],
+      "documents": [
+        "wp-einkommen"
+      ]
+    },
+    "wirkungsempfaenger": {
+      "terms": [
+        "wirkung",
+        "wirkungsraum",
+        "wirkungspfad"
+      ],
+      "documents": []
+    },
+    "wirkungsgrenze": {
+      "terms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ],
+      "documents": []
+    },
+    "wirkungshaushalt": {
+      "terms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "wirkungskompetenz": {
+      "terms": [
+        "wirkungsradar",
+        "wirkungsbewertung",
+        "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
+    "wirkungslenkung": {
+      "terms": [
+        "wirkungsrückkopplung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "wirkungsnetz": {
+      "terms": [
+        "wirkungspfad",
+        "resonanzraum",
+        "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
+    "wirkungspfad": {
+      "terms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsnetz"
+      ],
+      "documents": []
+    },
+    "wirkungspotenzial": {
+      "terms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungsrisiko",
+        "wirkstoff"
+      ],
+      "documents": []
+    },
+    "wirkungsradar": {
+      "terms": [
+        "wirkungsrisiko",
+        "wirkungskompetenz",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "wirkungsrat": {
+      "terms": [
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "benchmark",
+        "archetyp"
+      ],
+      "documents": [
+        "wirkungsrat-konzept"
+      ]
+    },
+    "wirkungsraum": {
+      "terms": [
+        "wirkungsempfaenger",
+        "wirkungspfad",
+        "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
+    "wirkungsrente": {
+      "terms": [
+        "wirkungseinkommen",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "wp-rente"
+      ]
+    },
+    "wirkungsresilienz": {
+      "terms": [
+        "nachhaltigkeit",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": []
+    },
+    "wirkungsrisiko": {
+      "terms": [
+        "wirkungspotenzial",
+        "stranded-assets",
+        "wirkungsradar"
+      ],
+      "documents": []
+    },
+    "wirkungsrueckkopplung": {
+      "terms": [
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "wirkungssteuer": {
+      "terms": [
+        "wstg",
+        "wustg",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": [
+        "wstg-oktober-2025",
+        "technische-leitlinien-wustg"
+      ]
+    },
+    "wirkungssteuergesetz": {
+      "terms": [
+        "wirkungssteuer",
+        "wstg",
+        "wustg"
+      ],
+      "documents": [
+        "wstg-oktober-2025"
+      ]
+    },
+    "wirkungstraeger": {
+      "terms": [
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkmechanismus"
+      ],
+      "documents": []
+    },
+    "wirkungsumsatzsteuer": {
+      "terms": [
+        "wustg",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ],
+      "documents": [
+        "technische-leitlinien-wustg"
+      ]
+    },
+    "wirkungswahrheit": {
+      "terms": [
+        "wirkungsblindheit",
+        "wirkungsdatenraum",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "woek-id": {
+      "terms": [
+        "scorecard",
+        "benchmark",
+        "wirkungsdatenraum"
+      ],
+      "documents": [
+        "woek-master-items"
+      ]
+    },
+    "wstg": {
+      "terms": [
+        "wirkungssteuergesetz",
+        "wirkungssteuer",
+        "wustg"
+      ],
+      "documents": [
+        "wstg-oktober-2025"
+      ]
+    },
+    "wustg": {
+      "terms": [
+        "wirkungsumsatzsteuer",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ],
+      "documents": [
+        "technische-leitlinien-wustg"
+      ]
+    }
+  }
+}

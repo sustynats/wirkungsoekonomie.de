@@ -1,0 +1,969 @@
+{
+  "generatedAt": "2026-05-23T18:05:22.738Z",
+  "entries": {
+    "/begriffe/archetyp/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-archetyp",
+      "documentId": "archetyp",
+      "relatedTerms": [
+        "benchmark",
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/benchmark/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-benchmark",
+      "documentId": "benchmark",
+      "relatedTerms": [
+        "scorecard",
+        "finalscore",
+        "woek-id"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/csrd/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-csrd",
+      "documentId": "csrd",
+      "relatedTerms": [
+        "esrs",
+        "esg",
+        "wirkungsdatenraum",
+        "reporting"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/digitaler-produktpass/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-digitaler-produktpass",
+      "documentId": "digitaler-produktpass",
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/esg/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-esg",
+      "documentId": "esg",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "nachhaltigkeit",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/esrs/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-esrs",
+      "documentId": "esrs",
+      "relatedTerms": [
+        "csrd",
+        "esg",
+        "wirkungsdatenraum"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/eu-taxonomie/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-eu-taxonomie",
+      "documentId": "eu-taxonomie",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "wirkungsrisiko",
+        "nachhaltigkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/finalscore/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-finalscore",
+      "documentId": "finalscore",
+      "relatedTerms": [
+        "scorecard",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/gri/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-gri",
+      "documentId": "gri",
+      "relatedTerms": [
+        "reporting",
+        "csrd",
+        "esrs"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/mensch-planet-demokratie/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-mensch-planet-demokratie",
+      "documentId": "mensch-planet-demokratie",
+      "relatedTerms": [
+        "sdg-plus",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/nace/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nace",
+      "documentId": "nace",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "woek-id",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/nachhaltigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nachhaltigkeit",
+      "documentId": "nachhaltigkeit",
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsresilienz",
+        "esg",
+        "csrd",
+        "eu-taxonomie",
+        "stranded-assets"
+      ],
+      "relatedDocuments": [
+        "nachhaltigkeit-systemarchitektur"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/negative-wirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-negative-wirkung",
+      "documentId": "negative-wirkung",
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsrisiko",
+        "netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/netto-wirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-netto-wirkung",
+      "documentId": "netto-wirkung",
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "reverse-merit-order",
+        "wirkungsgrenze"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/neutrale-wirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-neutrale-wirkung",
+      "documentId": "neutrale-wirkung",
+      "relatedTerms": [
+        "wirkung",
+        "positive-wirkung",
+        "negative-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/nichtkompensationsprinzip/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-nichtkompensationsprinzip",
+      "documentId": "nichtkompensationsprinzip",
+      "relatedTerms": [
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/positive-netto-wirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-positive-netto-wirkung",
+      "documentId": "positive-netto-wirkung",
+      "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "mensch-planet-demokratie"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/positive-wirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-positive-wirkung",
+      "documentId": "positive-wirkung",
+      "relatedTerms": [
+        "wirkung",
+        "negative-wirkung",
+        "neutrale-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/resonanzraum/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-resonanzraum",
+      "documentId": "resonanzraum",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsnetz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/reverse-merit-order/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-reverse-merit-order",
+      "documentId": "reverse-merit-order",
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "netto-wirkung",
+        "wirkungsgrenze"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "beispiel-apfel-wirkungssteuer"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/scorecard/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-scorecard",
+      "documentId": "scorecard",
+      "relatedTerms": [
+        "woek-id",
+        "benchmark",
+        "finalscore"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/sdg-plus/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-sdg-plus",
+      "documentId": "sdg-plus",
+      "relatedTerms": [
+        "mensch-planet-demokratie",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/stranded-assets/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-stranded-assets",
+      "documentId": "stranded-assets",
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "nachhaltigkeit",
+        "transitionsrisiko",
+        "versicherbarkeit",
+        "kapitalzugang"
+      ],
+      "relatedDocuments": [
+        "wp-wohnungsmarkt",
+        "stranded-assets-gebaeudebestand"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/t-sroi/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-t-sroi",
+      "documentId": "t-sroi",
+      "relatedTerms": [
+        "transformationswirkung",
+        "netto-wirkung",
+        "wirkungscontrolling"
+      ],
+      "relatedDocuments": [
+        "whitepaper-t-sroi"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/transformationswirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-transformationswirkung",
+      "documentId": "transformationswirkung",
+      "relatedTerms": [
+        "t-sroi",
+        "wirkungsarchitektur",
+        "wirkungslenkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkmechanismus/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkmechanismus",
+      "documentId": "wirkmechanismus",
+      "relatedTerms": [
+        "wirkstoff",
+        "wirkungspfad",
+        "wirkungspotenzial"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkstoff/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkstoff",
+      "documentId": "wirkstoff",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungspfad",
+        "resonanzraum"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkung",
+      "documentId": "wirkung",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsarchitektur/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsarchitektur",
+      "documentId": "wirkungsarchitektur",
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "wirkungsrat",
+        "woek-id"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsbewertung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsbewertung",
+      "documentId": "wirkungsbewertung",
+      "relatedTerms": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsblindheit/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsblindheit",
+      "documentId": "wirkungsblindheit",
+      "relatedTerms": [
+        "wirkungswahrheit",
+        "wirkungsdatenraum",
+        "wirkungsrückkopplung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsdatenraum/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsdatenraum",
+      "documentId": "wirkungsdatenraum",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "woek-id"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungseinkommen/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungseinkommen",
+      "documentId": "wirkungseinkommen",
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungslenkung"
+      ],
+      "relatedDocuments": [
+        "wp-einkommen"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsempfaenger/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsempfaenger",
+      "documentId": "wirkungsempfaenger",
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsraum",
+        "wirkungspfad"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsgrenze/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsgrenze",
+      "documentId": "wirkungsgrenze",
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungshaushalt/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungshaushalt",
+      "documentId": "wirkungshaushalt",
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungskompetenz/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungskompetenz",
+      "documentId": "wirkungskompetenz",
+      "relatedTerms": [
+        "wirkungsradar",
+        "wirkungsbewertung",
+        "wirkungsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungslenkung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungslenkung",
+      "documentId": "wirkungslenkung",
+      "relatedTerms": [
+        "wirkungsrückkopplung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsnetz/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsnetz",
+      "documentId": "wirkungsnetz",
+      "relatedTerms": [
+        "wirkungspfad",
+        "resonanzraum",
+        "wirkungsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungspfad/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungspfad",
+      "documentId": "wirkungspfad",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsnetz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungspotenzial/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungspotenzial",
+      "documentId": "wirkungspotenzial",
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungsrisiko",
+        "wirkstoff"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsradar/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsradar",
+      "documentId": "wirkungsradar",
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungskompetenz",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsrat/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsrat",
+      "documentId": "wirkungsrat",
+      "relatedTerms": [
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "benchmark",
+        "archetyp"
+      ],
+      "relatedDocuments": [
+        "wirkungsrat-konzept"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsraum/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsraum",
+      "documentId": "wirkungsraum",
+      "relatedTerms": [
+        "wirkungsempfaenger",
+        "wirkungspfad",
+        "wirkungsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsrente/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsrente",
+      "documentId": "wirkungsrente",
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "wp-rente"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsresilienz/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsresilienz",
+      "documentId": "wirkungsresilienz",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsrisiko/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsrisiko",
+      "documentId": "wirkungsrisiko",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "stranded-assets",
+        "wirkungsradar"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsrueckkopplung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsrueckkopplung",
+      "documentId": "wirkungsrueckkopplung",
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungssteuer/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungssteuer",
+      "documentId": "wirkungssteuer",
+      "relatedTerms": [
+        "wstg",
+        "wustg",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025",
+        "technische-leitlinien-wustg"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungssteuergesetz/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungssteuergesetz",
+      "documentId": "wirkungssteuergesetz",
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wstg",
+        "wustg"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungstraeger/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungstraeger",
+      "documentId": "wirkungstraeger",
+      "relatedTerms": [
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkmechanismus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungsumsatzsteuer/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsumsatzsteuer",
+      "documentId": "wirkungsumsatzsteuer",
+      "relatedTerms": [
+        "wustg",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wirkungswahrheit/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungswahrheit",
+      "documentId": "wirkungswahrheit",
+      "relatedTerms": [
+        "wirkungsblindheit",
+        "wirkungsdatenraum",
+        "wirkungsrat"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/woek-id/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-woek-id",
+      "documentId": "woek-id",
+      "relatedTerms": [
+        "scorecard",
+        "benchmark",
+        "wirkungsdatenraum"
+      ],
+      "relatedDocuments": [
+        "woek-master-items"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wstg/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wstg",
+      "documentId": "wstg",
+      "relatedTerms": [
+        "wirkungssteuergesetz",
+        "wirkungssteuer",
+        "wustg"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/wustg/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wustg",
+      "documentId": "wustg",
+      "relatedTerms": [
+        "wirkungsumsatzsteuer",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg"
+      ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/quellen/bibliografie.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/bibliografie.html",
+      "contentHash": "c4b396e408f0de6d",
+      "sectionId": "woek-page-16ed3625b804cd9c"
+    },
+    "/quellen/bild-grafik-und-tabellennachweise.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/bild-grafik-und-tabellennachweise.html",
+      "contentHash": "375c10b294feaca7",
+      "sectionId": "woek-page-15a36b2f16e057f7"
+    },
+    "/quellen/grundlagen-denker.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/grundlagen-denker.html",
+      "contentHash": "0b464fb2d6fd76a0",
+      "sectionId": "woek-page-3f3f9171771b2d89"
+    },
+    "/quellen/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/index.html",
+      "contentHash": "a5c00315e61c0735",
+      "sectionId": "woek-page-8d7201452c394edc"
+    },
+    "/quellen/nachhaltigkeit-sdgs-planetare-grenzen.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/nachhaltigkeit-sdgs-planetare-grenzen.html",
+      "contentHash": "c6c1b829d48e21b8",
+      "sectionId": "woek-page-9fdcca43aa7f3be0"
+    },
+    "/quellen/oekonomie-innovation.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/oekonomie-innovation.html",
+      "contentHash": "fa24371d00da643b",
+      "sectionId": "woek-page-78c8e88927323ae4"
+    },
+    "/quellen/regulatorik-standards-daten.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/regulatorik-standards-daten.html",
+      "contentHash": "bfab98d95c8d2679",
+      "sectionId": "woek-page-da3dd5b02fda7958"
+    },
+    "/quellen/studien-und-berichte.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/studien-und-berichte.html",
+      "contentHash": "4ebb0cbb8df9513f",
+      "sectionId": "woek-page-68aa14eeab7bf645"
+    },
+    "/quellen/systemtheorie-kybernetik.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/systemtheorie-kybernetik.html",
+      "contentHash": "ca52279c5407d640",
+      "sectionId": "woek-page-77db8b2c6f6e0aef"
+    },
+    "/quellen/vergleichsmodelle.html": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellen/vergleichsmodelle.html",
+      "contentHash": "4a8aae0b0b08909a",
+      "sectionId": "woek-page-ce57851c6e44c6dd"
+    }
+  }
+}
