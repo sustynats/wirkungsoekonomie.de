@@ -4,7 +4,8 @@
   "version": "2026.1.0",
   "type": "module",
   "scripts": {
-    "build": "node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-pages.mjs && python3 tools/sync_layout.py && node scripts/review/build-delta-review.mjs && node scripts/import/build-relationships.mjs && node scripts/import/build-content-manifest.mjs && node scripts/search/build-woek-search-index.mjs",
+    "build": "node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-pages.mjs && python3 tools/sync_layout.py && node scripts/review/build-delta-review.mjs && node scripts/reference/enhance-reference-ux.mjs && node scripts/import/build-relationships.mjs && node scripts/import/build-content-manifest.mjs && node scripts/search/build-woek-search-index.mjs",
+    "reference:ux": "node scripts/reference/enhance-reference-ux.mjs",
     "preview": "python3 -m http.server 8765",
     "import:all": "node scripts/import/all.mjs",
     "import:mainwork": "python3 scripts/import/build-mainwork-reference.py",

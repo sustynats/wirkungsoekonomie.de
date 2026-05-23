@@ -8,7 +8,7 @@
     { "label": "Anwendungen", "href": "anwendungen.html", "match": ["anwendungen.html", "anwendungen/", "scanner.html", "sdg-plus/medien-demokratie", "glossar.html#begriff-t-sroi"] },
     { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
     { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
-    { "label": "Mehr", "href": "mehr.html", "match": ["mehr.html", "blog.html", "blog/", "evidenz/", "quellen/", "sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/", "methodik/", "glossar.html", "glossar/", "buch.html", "buch/", "downloads.html", "downloads/", "mitmachen.html", "mitmachen/", "ueber.html", "ueber/"] },
+    { "label": "Mehr", "href": "mehr.html", "match": ["mehr.html", "referenz/", "blog.html", "blog/", "evidenz/", "quellen/", "sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/", "methodik/", "glossar.html", "glossar/", "buch.html", "buch/", "downloads.html", "downloads/", "mitmachen.html", "mitmachen/", "ueber.html", "ueber/"] },
     { "label": "Suche", "href": "suche.html", "match": ["suche.html"] }
   ],
   "applications": [
@@ -27,6 +27,7 @@
     { "label": "Kommunen", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] }
   ],
   "more": [
+    { "label": "Referenz", "href": "referenz/", "match": ["referenz/"] },
     { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
     { "label": "Evidenz", "href": "evidenz/", "match": ["evidenz/", "quellen/"] },
     { "label": "SDG+", "href": "sdg-plus.html", "match": ["sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/"] },
@@ -61,6 +62,7 @@
       "title": "Lernen",
       "items": [
         { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
+        { "label": "WÖk-Referenz", "href": "referenz/", "match": ["referenz/"] },
         { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] },
         { "label": "Methodik", "href": "methodik/datenbasis.html", "match": ["methodik/"] },
         { "label": "SDG+", "href": "sdg-plus.html", "match": ["sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/"] },
@@ -71,6 +73,7 @@
       "title": "Projekt",
       "items": [
         { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
+        { "label": "Online-Referenz", "href": "referenz/", "match": ["referenz/"] },
         { "label": "Buch", "href": "buch.html", "match": ["buch.html", "buch/"] },
         { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
         { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },

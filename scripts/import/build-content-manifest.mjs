@@ -46,13 +46,14 @@ for (const file of roots.flatMap((dir) => walk(dir))) {
   const title = firstMatch(text, /^title:\s*["']?(.+?)["']?\s*$/m) || stripTags(firstMatch(text, /<h1[^>]*>(.*?)<\/h1>/is)) || path.basename(file);
   const defaultDocumentId = firstMatch(text, /^documentId:\s*["']?(.+?)["']?\s*$/m) || path.basename(file).replace(/\.[^.]+$/, "");
   const route = routeFor(file);
+  const isReferenceRoute = route.startsWith("/referenz/");
   const documentType = firstMatch(text, /^documentType:\s*["']?(.+?)["']?\s*$/m) || firstMatch(text, /<meta name="search_type" content="([^"]+)"/i, "referenz");
   const sourceVersion = firstMatch(text, /<dt>Source-Version<\/dt><dd>(.*?)<\/dd>/i, "2026.0");
   const importVersion = firstMatch(text, /<dt>Import-Version<\/dt><dd>(.*?)<\/dd>/i, "");
-  const liveReferenceVersion = firstMatch(text, /<dt>Live-Reference-Version<\/dt><dd>(.*?)<\/dd>/i, "");
-  const webVersion = firstMatch(text, /<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i, firstMatch(text, /^webVersion:\s*["']?(.+?)["']?\s*$/m, "2026.1"));
-  const reviewStatus = firstMatch(text, /<dt>Reviewstatus<\/dt><dd>(.*?)<\/dd>/i, "partially-reviewed");
-  const status = firstMatch(text, /^status:\s*["']?(.+?)["']?\s*$/m) || firstMatch(text, /<dt>Status<\/dt><dd>(.*?)<\/dd>/i, "online-reviewed");
+  const liveReferenceVersion = firstMatch(text, /<dt>Live-Reference-Version<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "2026.2-live-reference" : "");
+  const webVersion = firstMatch(text, /<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i, firstMatch(text, /^webVersion:\s*["']?(.+?)["']?\s*$/m, isReferenceRoute ? "2026.2-live-reference" : "2026.1"));
+  const reviewStatus = firstMatch(text, /<dt>Reviewstatus<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "partially-delta-reviewed" : "partially-reviewed");
+  const status = firstMatch(text, /^status:\s*["']?(.+?)["']?\s*$/m) || firstMatch(text, /<dt>Status<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "live-reference" : "online-reviewed");
   const originalFileUrl = firstMatch(text, /<a[^>]+href=["']([^"']+)["'][^>]*>(?:Original(?:datei|-PDF|-XLSX)? öffnen|Original-PDF öffnen|Original-XLSX öffnen)/i);
   const sourceFile = firstMatch(text, /<dt>Quelle<\/dt><dd>(.*?)<\/dd>/i) || firstMatch(text, /<dt>Originaldatei<\/dt><dd>(.*?)<\/dd>/i) || file;
   const chapterNumber = Number(firstMatch(text, /Kapitel\s+(\d{1,3})\s*[-:]/i, "0")) || undefined;
