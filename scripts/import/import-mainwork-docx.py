@@ -82,7 +82,12 @@ def extract_media(docx_path: Path) -> dict[str, str]:
             target = ASSET_DIR / target_name
             with archive.open(name) as src, target.open("wb") as dst:
                 shutil.copyfileobj(src, dst)
-            media[raw_name] = f"{PUBLIC_ASSET_PREFIX}/{target_name}"
+            web_target_name = target_name
+            if target.suffix.lower() in {".tif", ".tiff"}:
+                png_target = target.with_suffix(".png")
+                if png_target.exists():
+                    web_target_name = png_target.name
+            media[raw_name] = f"{PUBLIC_ASSET_PREFIX}/{web_target_name}"
     return media
 
 
@@ -270,4 +275,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
