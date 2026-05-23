@@ -1,6 +1,6 @@
 # Missing Assets
 
-Stand: 2026-05-23T18:17:33.900Z
+Stand: 2026-05-23T19:10:28.988Z
 
 ## Kanonisches Hauptwerk
 
@@ -12,20 +12,7 @@ Stand: 2026-05-23T18:17:33.900Z
 
 ## Fehlende erwartete Dateien
 
-- Grundlagenpapier-Wirkungsökonomie WÖk.pdf
-- WOeK_Master_Items_final_v1.2.pdf
-- Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf
-- Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf
-- Wirkungsrat_Konzept.pdf
-- Whitepaper-T-SROI.pdf
-- Wirkungsökonomie in der Lieferkette.pdf
-- Systemmodell-der-Wirkungsökonomie.pdf
-- Minifest_Wirkungsoekonomie.pdf
-- WÖk-Manifest.pdf
-- WÖK-Partei.pdf
-- NATS_WÖk@allgemein.pdf
-- Beispiel-Konzern.pdf
-- FAZ-Beitrag.docx
+Keine.
 
 ## Mögliche Hauptwerkskandidaten
 

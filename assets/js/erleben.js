@@ -1486,9 +1486,9 @@ function initMediaScorecardDemo() {
       <div class="mini-track"><div class="mini-fill ${toneFromScore(score)}" style="width:${((score + 3) / 6) * 100}%"></div></div>
       <div class="scorecard-field-body">
         <span><b>Datenquelle:</b> ${source}</span>
-        <span><b>Wirkung erster Ordnung:</b> ${first}</span>
-        <span><b>Wirkung zweiter Ordnung:</b> ${second}</span>
-        <span><b>Wirkung dritter Ordnung:</b> ${third}</span>
+        <span><b>Wirkungsebene 1:</b> ${first}</span>
+        <span><b>Wirkungsebene 2:</b> ${second}</span>
+        <span><b>Wirkungsebene 3:</b> ${third}</span>
       </div>
     </article>
   `).join("");

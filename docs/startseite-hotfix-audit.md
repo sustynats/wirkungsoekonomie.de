@@ -23,7 +23,7 @@ Neuer Hero:
 
 - Eyebrow: `Wirkung statt Kapital`
 - H1: `Gewinn und Wachstum reichen nicht mehr.`
-- Subheadline: erklärt, dass zentrale Kontrolle keine Lösung ist und die WÖk einen dritten Weg geht.
+- Subheadline: erklärt, dass zentrale Kontrolle keine Lösung ist und die WÖk kein neues Lager, sondern einen besseren Kompass für Märkte, Politik und Kapital anbietet.
 - Text: Markt, Eigentum, Wettbewerb, Innovation und Gewinn bleiben erhalten; positive Netto-Wirkung für Mensch, Planet und Demokratie wird zum Kompass.
 - Kernsatz: `Schädliche Wirkung darf nicht länger billig bleiben. Positive Netto-Wirkung muss sich lohnen.`
 - CTAs:

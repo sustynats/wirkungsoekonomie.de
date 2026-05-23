@@ -61,7 +61,7 @@ Fachlich:
 Systemisch:
 
 - Rückkopplung
-- Wirkung erster / zweiter / dritter Ordnung
+- Wirkung auf unmittelbarer, systemischer und langfristiger Ebene
 - Nichtlinearität
 - Interdependenzen
 - Wirkungsarchitektur

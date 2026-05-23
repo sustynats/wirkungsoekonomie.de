@@ -532,7 +532,7 @@
       "question": "Wie funktioniert der WÖk-Scanner?",
       "aliases": [
         "WÖk-Scanner erklären",
-        "Scanner MVP",
+        "Scanner",
         "Wie funktioniert Scanner"
       ],
       "mode": "Analysieren",
@@ -581,6 +581,29 @@
         "wirkungseinkommen",
         "wirkungsrente",
         "wirkungsfonds"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "nachhaltigkeit-woek",
+      "question": "Was bedeutet Nachhaltigkeit in der WÖk?",
+      "aliases": [
+        "Nachhaltigkeit",
+        "nachhaltig",
+        "nachhaltige Entwicklung",
+        "resiliente Wirtschaft",
+        "resiliente Gesellschaft",
+        "Was bedeutet Nachhaltigkeit wirkungsökonomisch?"
+      ],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "nachhaltigkeit-woek",
+      "impact_path_id": "nachhaltigkeit-rueckkopplung",
+      "related_knowledge_cards": [
+        "nachhaltigkeit",
+        "resilienz",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung"
       ],
       "status": "published"
     }

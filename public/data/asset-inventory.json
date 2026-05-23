@@ -1,7 +1,8 @@
 {
-  "generatedAt": "2026-05-23T18:17:33.898Z",
+  "generatedAt": "2026-05-23T19:10:28.986Z",
   "sourceRoots": [
     "source-assets/originals",
+    "public/downloads/originals",
     "assets/pdf",
     "[local Kerndokumente]"
   ],
@@ -59,6 +60,17 @@
       }
     },
     {
+      "expected": "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+      "found": {
+        "name": "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+        "path": "public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+        "sizeBytes": 353040,
+        "modifiedAt": "2025-08-06T17:07:45.740Z",
+        "extension": "pdf",
+        "sha256": "54b7239328a1ffb4327b01c4d5f5728ded88f5a30c58f78bd0878863e728a61d"
+      }
+    },
+    {
       "expected": "Die neue Ordnung des Wohlstands_2.pdf",
       "found": {
         "name": "Die neue Ordnung des Wohlstands_2.pdf",
@@ -92,6 +104,17 @@
       }
     },
     {
+      "expected": "WOeK_Master_Items_final_v1.2.pdf",
+      "found": {
+        "name": "WOeK_Master_Items_final_v1.2.pdf",
+        "path": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
+        "sizeBytes": 1032459,
+        "modifiedAt": "2025-10-12T07:58:04.769Z",
+        "extension": "pdf",
+        "sha256": "5219cbf88464c4918d0693c57b2ea132b68c098289089439c7aecf7986cb6ae9"
+      }
+    },
+    {
       "expected": "WStG_Oktober2025.pdf",
       "found": {
         "name": "WStG_Oktober2025.pdf",
@@ -100,6 +123,61 @@
         "modifiedAt": "2025-10-08T09:14:38.704Z",
         "extension": "pdf",
         "sha256": "9e1b57cab3c78363a4a1db0516c3e70f72e4aed2f3b02e440c6830e99b924b62"
+      }
+    },
+    {
+      "expected": "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+      "found": {
+        "name": "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+        "path": "public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+        "sizeBytes": 129424,
+        "modifiedAt": "2025-09-21T23:10:12.791Z",
+        "extension": "pdf",
+        "sha256": "5efc5ac3251b73084cf177fa5c77839988e049dcf0041cd9e23a75cb981c185b"
+      }
+    },
+    {
+      "expected": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "found": {
+        "name": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+        "path": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+        "sizeBytes": 199058,
+        "modifiedAt": "2025-09-21T23:10:22.808Z",
+        "extension": "pdf",
+        "sha256": "d3a583fc62e971c4ae0bbe262604ecc5fb0221347a07606636381db23eba7c06"
+      }
+    },
+    {
+      "expected": "Wirkungsrat_Konzept.pdf",
+      "found": {
+        "name": "Wirkungsrat_Konzept.pdf",
+        "path": "public/downloads/originals/Wirkungsrat_Konzept.pdf",
+        "sizeBytes": 251558,
+        "modifiedAt": "2025-09-06T14:48:18.785Z",
+        "extension": "pdf",
+        "sha256": "7d8304bb9232c95f3a1ca6c27a2c943c14b03bb0eb3bf1e1fb9f8901f8130799"
+      }
+    },
+    {
+      "expected": "Whitepaper-T-SROI.pdf",
+      "found": {
+        "name": "Whitepaper-T-SROI.pdf",
+        "path": "public/downloads/originals/Whitepaper-T-SROI.pdf",
+        "sizeBytes": 440210,
+        "modifiedAt": "2025-10-07T20:29:31.120Z",
+        "extension": "pdf",
+        "sha256": "461c55a900104711c6045d11db779bf8f0572da7a67086a8426dbcd284f5ed7d"
+      }
+    },
+    {
+      "expected": "Wirkungsökonomie in der Lieferkette.pdf",
+      "found": {
+        "name": "Wirkungsökonomie in der Lieferkette.pdf",
+        "path": "public/downloads/originals/Wirkungsökonomie in der Lieferkette.pdf",
+        "sizeBytes": 311520,
+        "modifiedAt": "2025-09-11T08:32:33.594Z",
+        "extension": "pdf",
+        "sha256": "124ecba92adec5273d13005d0bf70166e815fb006517e80c93fe12c1e103624d"
       }
     },
     {
@@ -158,6 +236,17 @@
       }
     },
     {
+      "expected": "Systemmodell-der-Wirkungsökonomie.pdf",
+      "found": {
+        "name": "Systemmodell-der-Wirkungsökonomie.pdf",
+        "path": "public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf",
+        "sizeBytes": 3034341,
+        "modifiedAt": "2025-12-01T12:35:53.851Z",
+        "extension": "pdf",
+        "sha256": "9e857385082f1eb4f3e7aa02fa4c2a821bc01e141f8b56007b0bbe6fc4772c36"
+      }
+    },
+    {
       "expected": "Nachhaltigkeit-Systemarchitektur.pdf",
       "found": {
         "name": "Nachhaltigkeit-Systemarchitektur.pdf",
@@ -189,24 +278,75 @@
         "extension": "pdf",
         "sha256": "fc349bfe673400647c3058f6ab885cefd523f2f42d1bd87e6f34192f9d39b7e5"
       }
+    },
+    {
+      "expected": "Minifest_Wirkungsoekonomie.pdf",
+      "found": {
+        "name": "Minifest_Wirkungsoekonomie.pdf",
+        "path": "public/downloads/originals/Minifest_Wirkungsoekonomie.pdf",
+        "sizeBytes": 74905,
+        "modifiedAt": "2025-08-27T08:26:50.000Z",
+        "extension": "pdf",
+        "sha256": "194b207e2a4951b44ccf3a5ee7874652ba03dc5fe027632a7a8bf33ff6780afc"
+      }
+    },
+    {
+      "expected": "WÖk-Manifest.pdf",
+      "found": {
+        "name": "WÖk-Manifest.pdf",
+        "path": "public/downloads/originals/WÖk-Manifest.pdf",
+        "sizeBytes": 2974575,
+        "modifiedAt": "2025-09-07T17:01:21.214Z",
+        "extension": "pdf",
+        "sha256": "3152f30057e1dda8777a61d3f9e1ba878961a51e1d9cf48f338b74697a787ca9"
+      }
+    },
+    {
+      "expected": "WÖK-Partei.pdf",
+      "found": {
+        "name": "WÖK-Partei.pdf",
+        "path": "public/downloads/originals/WÖK-Partei.pdf",
+        "sizeBytes": 4866874,
+        "modifiedAt": "2025-08-05T15:33:49.811Z",
+        "extension": "pdf",
+        "sha256": "b48e5269b47864b116f678b74458503efc02f5fab375ab76c5eb6de895248bad"
+      }
+    },
+    {
+      "expected": "NATS_WÖk@allgemein.pdf",
+      "found": {
+        "name": "NATS_WÖk@allgemein.pdf",
+        "path": "public/downloads/originals/NATS_WÖk@allgemein.pdf",
+        "sizeBytes": 9659312,
+        "modifiedAt": "2025-08-31T12:45:18.370Z",
+        "extension": "pdf",
+        "sha256": "35d00a6774260b0c7a4cdbf4960c4a2b33b45f575aeab918b61dc6bd2122e70c"
+      }
+    },
+    {
+      "expected": "Beispiel-Konzern.pdf",
+      "found": {
+        "name": "Beispiel-Konzern.pdf",
+        "path": "public/downloads/originals/Beispiel-Konzern.pdf",
+        "sizeBytes": 69159,
+        "modifiedAt": "2025-09-19T18:45:24.606Z",
+        "extension": "pdf",
+        "sha256": "6391cdf90e5da595250aed64358112f736fe233a63ee5142c22053e580f232f6"
+      }
+    },
+    {
+      "expected": "FAZ-Beitrag.docx",
+      "found": {
+        "name": "FAZ-Beitrag.docx",
+        "path": "public/downloads/originals/FAZ-Beitrag.docx",
+        "sizeBytes": 20004,
+        "modifiedAt": "2025-09-30T11:42:40.129Z",
+        "extension": "docx",
+        "sha256": "25fc320c4936ff1d0a8463f36671bb918cd3cab999994a8b59ede32ee021e9ac"
+      }
     }
   ],
-  "missing": [
-    "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
-    "WOeK_Master_Items_final_v1.2.pdf",
-    "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
-    "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
-    "Wirkungsrat_Konzept.pdf",
-    "Whitepaper-T-SROI.pdf",
-    "Wirkungsökonomie in der Lieferkette.pdf",
-    "Systemmodell-der-Wirkungsökonomie.pdf",
-    "Minifest_Wirkungsoekonomie.pdf",
-    "WÖk-Manifest.pdf",
-    "WÖK-Partei.pdf",
-    "NATS_WÖk@allgemein.pdf",
-    "Beispiel-Konzern.pdf",
-    "FAZ-Beitrag.docx"
-  ],
+  "missing": [],
   "canonicalMainWork": {
     "expected": "Natalie-Weber_Die neue Ordnung des Wohlstands.docx + Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
     "found": {
@@ -448,6 +588,118 @@
     "needsHumanDecision": false
   },
   "inventory": [
+    {
+      "name": "Beispiel-Konzern.pdf",
+      "path": "public/downloads/originals/Beispiel-Konzern.pdf",
+      "sizeBytes": 69159,
+      "modifiedAt": "2025-09-19T18:45:24.606Z",
+      "extension": "pdf",
+      "sha256": "6391cdf90e5da595250aed64358112f736fe233a63ee5142c22053e580f232f6"
+    },
+    {
+      "name": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "path": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "sizeBytes": 199058,
+      "modifiedAt": "2025-09-21T23:10:22.808Z",
+      "extension": "pdf",
+      "sha256": "d3a583fc62e971c4ae0bbe262604ecc5fb0221347a07606636381db23eba7c06"
+    },
+    {
+      "name": "FAZ-Beitrag.docx",
+      "path": "public/downloads/originals/FAZ-Beitrag.docx",
+      "sizeBytes": 20004,
+      "modifiedAt": "2025-09-30T11:42:40.129Z",
+      "extension": "docx",
+      "sha256": "25fc320c4936ff1d0a8463f36671bb918cd3cab999994a8b59ede32ee021e9ac"
+    },
+    {
+      "name": "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+      "path": "public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+      "sizeBytes": 353040,
+      "modifiedAt": "2025-08-06T17:07:45.740Z",
+      "extension": "pdf",
+      "sha256": "54b7239328a1ffb4327b01c4d5f5728ded88f5a30c58f78bd0878863e728a61d"
+    },
+    {
+      "name": "Minifest_Wirkungsoekonomie.pdf",
+      "path": "public/downloads/originals/Minifest_Wirkungsoekonomie.pdf",
+      "sizeBytes": 74905,
+      "modifiedAt": "2025-08-27T08:26:50.000Z",
+      "extension": "pdf",
+      "sha256": "194b207e2a4951b44ccf3a5ee7874652ba03dc5fe027632a7a8bf33ff6780afc"
+    },
+    {
+      "name": "NATS_WÖk@allgemein.pdf",
+      "path": "public/downloads/originals/NATS_WÖk@allgemein.pdf",
+      "sizeBytes": 9659312,
+      "modifiedAt": "2025-08-31T12:45:18.370Z",
+      "extension": "pdf",
+      "sha256": "35d00a6774260b0c7a4cdbf4960c4a2b33b45f575aeab918b61dc6bd2122e70c"
+    },
+    {
+      "name": "Systemmodell-der-Wirkungsökonomie.pdf",
+      "path": "public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf",
+      "sizeBytes": 3034341,
+      "modifiedAt": "2025-12-01T12:35:53.851Z",
+      "extension": "pdf",
+      "sha256": "9e857385082f1eb4f3e7aa02fa4c2a821bc01e141f8b56007b0bbe6fc4772c36"
+    },
+    {
+      "name": "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+      "path": "public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+      "sizeBytes": 129424,
+      "modifiedAt": "2025-09-21T23:10:12.791Z",
+      "extension": "pdf",
+      "sha256": "5efc5ac3251b73084cf177fa5c77839988e049dcf0041cd9e23a75cb981c185b"
+    },
+    {
+      "name": "WOeK_Master_Items_final_v1.2.pdf",
+      "path": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
+      "sizeBytes": 1032459,
+      "modifiedAt": "2025-10-12T07:58:04.769Z",
+      "extension": "pdf",
+      "sha256": "5219cbf88464c4918d0693c57b2ea132b68c098289089439c7aecf7986cb6ae9"
+    },
+    {
+      "name": "Whitepaper-T-SROI.pdf",
+      "path": "public/downloads/originals/Whitepaper-T-SROI.pdf",
+      "sizeBytes": 440210,
+      "modifiedAt": "2025-10-07T20:29:31.120Z",
+      "extension": "pdf",
+      "sha256": "461c55a900104711c6045d11db779bf8f0572da7a67086a8426dbcd284f5ed7d"
+    },
+    {
+      "name": "Wirkungsrat_Konzept.pdf",
+      "path": "public/downloads/originals/Wirkungsrat_Konzept.pdf",
+      "sizeBytes": 251558,
+      "modifiedAt": "2025-09-06T14:48:18.785Z",
+      "extension": "pdf",
+      "sha256": "7d8304bb9232c95f3a1ca6c27a2c943c14b03bb0eb3bf1e1fb9f8901f8130799"
+    },
+    {
+      "name": "Wirkungsökonomie in der Lieferkette.pdf",
+      "path": "public/downloads/originals/Wirkungsökonomie in der Lieferkette.pdf",
+      "sizeBytes": 311520,
+      "modifiedAt": "2025-09-11T08:32:33.594Z",
+      "extension": "pdf",
+      "sha256": "124ecba92adec5273d13005d0bf70166e815fb006517e80c93fe12c1e103624d"
+    },
+    {
+      "name": "WÖK-Partei.pdf",
+      "path": "public/downloads/originals/WÖK-Partei.pdf",
+      "sizeBytes": 4866874,
+      "modifiedAt": "2025-08-05T15:33:49.811Z",
+      "extension": "pdf",
+      "sha256": "b48e5269b47864b116f678b74458503efc02f5fab375ab76c5eb6de895248bad"
+    },
+    {
+      "name": "WÖk-Manifest.pdf",
+      "path": "public/downloads/originals/WÖk-Manifest.pdf",
+      "sizeBytes": 2974575,
+      "modifiedAt": "2025-09-07T17:01:21.214Z",
+      "extension": "pdf",
+      "sha256": "3152f30057e1dda8777a61d3f9e1ba878961a51e1d9cf48f338b74697a787ca9"
+    },
     {
       "name": "die-neue-ordnung-des-wohlstands.pdf",
       "path": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",

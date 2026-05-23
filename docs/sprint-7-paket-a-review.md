@@ -6,7 +6,7 @@ Paket A umfasst Einstieg und Grundverstaendnis. Ziel der Pruefung war, ob Mensch
 
 | URL | Seitentyp | Ziel der Seite | Status | Hauptproblem | konkrete Korrektur | Contentquelle | Visualstatus | Mobile-Status | SEO-Status | nächste Aktion |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `/` | Startseite | Einstieg, Problem und dritter Weg | approved | keine Blocker | bereits nach Hotfix beruhigt; Hero führt verständlich in Gewinn, Wachstum, Markt und Wirkung ein | Brand Guide, Begriffsleitfaden, Startseiten-Hotfix | professionell, keine Diagrammflut im Hero | ok | ok | Feinschliff nach Live-Test |
+| `/` | Startseite | Einstieg, Problem und besserer Kompass | approved | keine Blocker | bereits nach Hotfix beruhigt; Hero führt verständlich in Gewinn, Wachstum, Markt und Wirkung ein | Brand Guide, Begriffsleitfaden, Startseiten-Hotfix | professionell, keine Diagrammflut im Hero | ok | ok | Feinschliff nach Live-Test |
 | `/verstehen.html` | Grundverständnis | Wirkung einfach und neutral erklären | approved | keine Blocker | keine Korrektur nötig | Begriffsleitfaden, Buch | Visual und Audio stimmig | ok | ok | Transkript langfristig vervollständigen |
 | `/wirkungsoekonomie.html` | System-Erklärung | WÖk als Wirkungs-, Führungs-, Steuerungs- und Ordnungslogik erklären | approved | Hero und Audio-Transkript nutzten "Positive Wirkung" als Zielgrößenformel | korrigiert zu "Positive Netto-Wirkung soll sich lohnen" | Begriffsleitfaden, Buch | ok | ok | ok | keine |
 | `/modell.html` | Modellseite | Kreislauf, Wirkungspotenzial, Rückkopplung, Schutzregel erklären | approved | keine Blocker | keine Korrektur nötig | Begriffsleitfaden, Systemmodell, Visual Registry | kontrollierte SVG/HTML-Grafiken | ok | ok | weiter bei fachlicher Modellpflege |

@@ -185,7 +185,7 @@
     els.answerPanel.innerHTML = `<article class="confidence-notice">
       <p class="hero-kicker">Noch keine freigegebene Kompass-Antwort</p>
       <h3>Dazu existiert in der aktuellen WÖk-Systematik noch keine belastbare Bewertungslogik.</h3>
-      <p>Gesucht: ${escapeHtml(query)}. Der Kompass nutzt im MVP nur veröffentlichte oder ausdrücklich freigegebene Wissensbausteine.</p>
+      <p>Gesucht: ${escapeHtml(query)}. Der Kompass nutzt nur veröffentlichte oder ausdrücklich freigegebene Wissensbausteine.</p>
     </article>`;
   }
 
@@ -282,7 +282,7 @@
         <section class="example-box"><p class="hero-kicker">Beispiel</p><p>${escapeHtml(card.example)}</p></section>
         ${GlossaryTrail(card.terms)}
         <section class="related-knowledge-cards"><p class="hero-kicker">Verwandte Seiten</p><div>${(card.related_pages || []).map((page) => `<article><a class="text-link" href="${escapeHtml(page)}">${escapeHtml(page)}</a></article>`).join("")}</div></section>
-        <details class="source-panel" open><summary>Grundlage dieser Wissenskarte</summary><div>${(card.sources || []).map((source) => `<article><strong>${escapeHtml(source)}</strong><p>MVP-Wissenskarte aus freigegebener WÖk-Systematik; keine amtliche Bewertung.</p></article>`).join("")}</div></details>
+        <details class="source-panel" open><summary>Grundlage dieser Wissenskarte</summary><div>${(card.sources || []).map((source) => `<article><strong>${escapeHtml(source)}</strong><p>Wissenskarte aus freigegebener WÖk-Systematik; keine amtliche Bewertung.</p></article>`).join("")}</div></details>
       </article>`;
     els.answerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
   }

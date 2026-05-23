@@ -601,7 +601,7 @@ function loadGlossaryTermsAndInit() {
 
   const script = document.createElement("script");
   const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
-  script.src = new URL("glossaryTerms.js?v=20260520-sdg-framework", baseUrl).href;
+  script.src = new URL("glossaryTerms.js?v=20260523-nachhaltigkeit", baseUrl).href;
   script.defer = true;
   script.onload = () => initGlossarySystem(window.WIRKUNG_GLOSSARY_TERMS || []);
   document.head.append(script);
@@ -998,3 +998,18 @@ function initGlossaryCards() {
 }
 
 loadGlossaryTermsAndInit();
+
+function loadBlogJournal() {
+  if (window.__wirkungBlogJournalScriptLoaded) {
+    return;
+  }
+
+  window.__wirkungBlogJournalScriptLoaded = true;
+  const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
+  const script = document.createElement("script");
+  script.src = new URL("blog-journal.js?v=20260522-journal-hotfix", baseUrl).href;
+  script.defer = true;
+  document.body.append(script);
+}
+
+loadBlogJournal();

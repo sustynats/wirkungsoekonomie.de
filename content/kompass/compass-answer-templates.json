@@ -647,17 +647,17 @@
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
-          "short_answer": "Der WÖk-Scanner ist als MVP-Konzept angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenlage, SDG-/SDG+-Bezug, Wirkungspfad, Quellen und Unsicherheit ein. Er liefert keine amtliche oder rechnerische Bewertung.",
+          "short_answer": "Der WÖk-Scanner ist als wirkungsökonomischer Orientierungseinstieg angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenlage, SDG-/SDG+-Bezug, Wirkungspfad, Quellen und Unsicherheit ein. Er liefert keine amtliche oder rechnerische Bewertung.",
           "one_sentence": "Der Scanner ist ein Analysewerkzeug, keine Bewertungsmaschine."
         },
         "fachlich": {
           "label": "Fachlich",
-          "short_answer": "Der WÖk-Scanner ist als MVP-Konzept angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenbedarf, Zielkonflikten und Grenzen. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
+          "short_answer": "Der WÖk-Scanner ist als wirkungsökonomischer Orientierungseinstieg angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenbedarf, Zielkonflikten und Grenzen. Fachlich betrachtet braucht die WÖk dafür Datenqualität, WÖk-IDs, Scorecards, NWI und die Reverse Merit Order, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.",
           "one_sentence": "Der Scanner ist ein Analysewerkzeug, keine Bewertungsmaschine."
         },
         "systemisch": {
           "label": "Systemisch",
-          "short_answer": "Der WÖk-Scanner ist als MVP-Konzept angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenbedarf, Zielkonflikten und Grenzen. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
+          "short_answer": "Der WÖk-Scanner ist als wirkungsökonomischer Orientierungseinstieg angelegt. Er ordnet Texte, Wahlprogramme, Unternehmen, Produkte und Entscheidungen nach Wirkungspotenzialen, Datenbedarf, Zielkonflikten und Grenzen. Systemisch zählt nicht nur der direkte Effekt, sondern wie Daten, Bewertung, Anreize, Preise, Kapital, Verhalten und Institutionen in einer Wirkungsarchitektur zurückwirken.",
           "one_sentence": "Der Scanner ist ein Analysewerkzeug, keine Bewertungsmaschine."
         }
       },
@@ -692,7 +692,7 @@
         },
         {
           "type": "WÖk-Scanner",
-          "title": "WÖk-Scanner MVP",
+          "title": "WÖk-Scanner",
           "url": "scanner.html",
           "note": "zeigt die konzipierte Scanner-Oberfläche mit Modi, Datenqualität, Demo-Scans und Grenzen der Analyse."
         },
@@ -1120,7 +1120,7 @@
     {
       "id": "wirkungspotenzial",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1160,7 +1160,7 @@
         "Wirkungsrisiko",
         "Resonanzraum"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1185,7 +1185,7 @@
     {
       "id": "sdg-plus",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1225,7 +1225,7 @@
         "Resonanzraum",
         "Wirkungsbewertung"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1250,7 +1250,7 @@
     {
       "id": "woek-funktionsweise",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1291,7 +1291,7 @@
         "Reverse Merit Order",
         "Wirkungsrückkopplung"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1316,7 +1316,7 @@
     {
       "id": "woek-keine-planwirtschaft",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1354,7 +1354,7 @@
         "positive Netto-Wirkung",
         "Wirkungsrückkopplung"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1379,7 +1379,7 @@
     {
       "id": "markt-bleibt-kompass",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1418,7 +1418,7 @@
         "Wirkungskapital",
         "positive Netto-Wirkung"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1443,7 +1443,7 @@
     {
       "id": "reverse-merit-order",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1483,7 +1483,7 @@
         "Netto-Wirkung",
         "Scorecard"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1508,7 +1508,7 @@
     {
       "id": "zielgruppe-mieter",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1547,7 +1547,7 @@
         "Wohnen",
         "positive Netto-Wirkung"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1572,7 +1572,7 @@
     {
       "id": "zielgruppe-journalismus",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1612,7 +1612,7 @@
         "Wirkungspotenzial",
         "SDG+"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1637,7 +1637,7 @@
     {
       "id": "zielgruppe-investoren",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1677,7 +1677,7 @@
         "T-SROI",
         "Resilienz"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1702,7 +1702,7 @@
     {
       "id": "scanner-funktionsweise",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1740,7 +1740,7 @@
         "Datenqualität",
         "Wirkungspotenzial"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1765,7 +1765,7 @@
     {
       "id": "daten-scorecard",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1806,7 +1806,7 @@
         "Datenqualität",
         "Reverse Merit Order"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1831,7 +1831,7 @@
     {
       "id": "einkommen-rente-zusammenhang",
       "status": "published",
-      "confidence_notice": "MVP-Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; keine amtliche Bewertung.",
       "levels": {
         "einfach": {
           "label": "Einfach erklärt",
@@ -1870,7 +1870,7 @@
         "Wirkungsrente",
         "Wirkungsfonds"
       ],
-      "misunderstanding": "Diese Antwort ist Orientierung im MVP, keine finale Bewertung und keine Beratung.",
+      "misunderstanding": "Diese Antwort ist Orientierung im Kompass, keine finale Bewertung und keine Beratung.",
       "sources": [
         {
           "type": "WÖk-Begriffsleitfaden",
@@ -1889,6 +1889,79 @@
           "title": "Glossar der Wirkungsökonomie",
           "url": "glossar.html",
           "note": "ordnet die zentralen Begriffe und Abgrenzungen."
+        }
+      ]
+    },
+    {
+      "id": "nachhaltigkeit-woek",
+      "status": "published",
+      "confidence_notice": "Kompassantwort aus freigegebener WÖk-Systematik; Nachhaltigkeit ist Anschlussbegriff, nicht Kernlogik.",
+      "levels": {
+        "einfach": {
+          "label": "Einfach erklärt",
+          "short_answer": "Nachhaltigkeit heißt in der WÖk: Ein System lebt nicht auf Verschleiß, sondern bleibt krisenfest und erzeugt dauerhaft positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+          "one_sentence": "Nachhaltigkeit ist nicht die Kernlogik der WÖk, sondern das Ergebnis gelingender Wirkungsrückkopplung."
+        },
+        "fachlich": {
+          "label": "Fachlich",
+          "short_answer": "Nachhaltigkeit beschreibt die resiliente Fähigkeit eines Systems, Lebensgrundlagen, soziale Stabilität, wirtschaftliche Tragfähigkeit und demokratische Korrekturräume dauerhaft zu sichern.",
+          "one_sentence": "Nachhaltigkeit ist nicht die Kernlogik der WÖk, sondern das Ergebnis gelingender Wirkungsrückkopplung."
+        },
+        "systemisch": {
+          "label": "Systemisch",
+          "short_answer": "Nachhaltigkeit entsteht, wenn Preise, Steuern, Kapitalflüsse, Regeln und Entscheidungen so rückgekoppelt sind, dass Folgekosten sichtbar werden, Abhängigkeiten sinken und positive Netto-Wirkung wahrscheinlicher wird.",
+          "one_sentence": "Nachhaltigkeit ist nicht die Kernlogik der WÖk, sondern das Ergebnis gelingender Wirkungsrückkopplung."
+        }
+      },
+      "impact_path_id": "nachhaltigkeit-rueckkopplung",
+      "mpd": {
+        "Mensch": "Gesundheit, Bildung, Wohnen, Arbeit, soziale Stabilität und Vertrauen werden nicht auf Verschleiß gestellt.",
+        "Planet": "Klima, Wasser, Boden, Biodiversität und Ressourcen werden als Lebensgrundlagen erhalten und regeneriert.",
+        "Demokratie": "Korrekturfähigkeit, Rechtsstaatlichkeit, Öffentlichkeit und institutionelles Vertrauen bleiben belastbar."
+      },
+      "sdg_relations": [
+        "SDGs",
+        "Agenda 2030",
+        "SDG+"
+      ],
+      "glossary_terms": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung",
+        "SDGs",
+        "SDG+"
+      ],
+      "related_cards": [
+        "Führender Begriffsleitfaden",
+        "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur",
+        "Die neue Ordnung des Wohlstands"
+      ],
+      "misunderstanding": "Nachhaltigkeit ist in der WÖk kein Zusatzlabel, keine Berichtspflicht, keine ESG-Kernlogik und keine reine Umwelt- oder Verzichtsstrategie.",
+      "sources": [
+        {
+          "type": "WÖk-Begriffsleitfaden",
+          "title": "Führender Begriffsleitfaden",
+          "url": "glossar.html",
+          "note": "führt Wirkung, Wirkungsbewertung, Netto-Wirkung und Rückkopplung als Kernlogik."
+        },
+        {
+          "type": "Blog / Fachtext",
+          "title": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur",
+          "url": "blog/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.html",
+          "note": "fachliche Grundlage für Nachhaltigkeit als rückgekoppelte Systemarchitektur statt additiver ESG-/Reportinglogik."
+        },
+        {
+          "type": "Buch",
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "buch.html",
+          "note": "Grundlage der Zielgröße positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "type": "Zeitungs-/Erklärtext",
+          "title": "Was ist Nachhaltigkeit wirklich?",
+          "url": "",
+          "note": "bürgernahe Erklärungsebene; stützt die Formel, dass Nachhaltigkeit Zukunftsfähigkeit und Vorsorge bedeutet, ersetzt aber keine WÖk-Definition."
         }
       ]
     }

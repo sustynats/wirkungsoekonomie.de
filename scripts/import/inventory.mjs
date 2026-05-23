@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 const root = process.cwd();
 const sourceRoots = [
   path.join(root, "source-assets/originals"),
+  path.join(root, "public/downloads/originals"),
   path.join(root, "assets/pdf"),
   "/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente",
 ];

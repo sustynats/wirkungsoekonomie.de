@@ -34,7 +34,7 @@ Stand: 2026-05-17
 | `image17.png` | 1536x1024 | „Scheinleistung, Blindleistung, Verlustleistung, Wirkleistung“ | nachbauen | Akademie, Wirkungsökonomie-Seite; gute Lernmodulgrafik, aber besser als vier Karten |
 | `image18.png` | 1659x948 | „Das Begriffssystem der Wirkungsökonomie“: zentrale Begriffe und Instrumente | nachbauen | Modellseite als Architekturübersicht; direktes Bild ist zu dicht für mobile Nutzung |
 | `image19.jpeg` | 1536x1024 | „Klare Abgrenzung der Wirkungsökonomie“ gegenüber Sozialer Marktwirtschaft, Gemeinwohlökonomie, Donut-Ökonomie, Degrowth | nachbauen | Wirkungsökonomie-Seite; als responsive Vergleichstabelle neu aufbauen |
-| `image20.png` | 1659x948 | „Wirkungsordnungen“: 1., 2. und 3. Ordnung mit Beispielen | nachbauen | Modellseite, Akademie; als mehrstufiges Prozessdiagramm geeignet |
+| `image20.png` | 1659x948 | „Wirkungsordnungen“: 1., 2. und Wirkungsebene 3 mit Beispielen | nachbauen | Modellseite, Akademie; als mehrstufiges Prozessdiagramm geeignet |
 | `image21.png` | 1659x948 | „Nichttriviale Systeme“: triviale Maschine vs. komplexe Gesellschaft | nachbauen | Akademie, Modellseite; gute Lernpfadgrafik, aber Textdichte reduzieren |
 | `image22.png` | 1659x948 | „Das Wirkungsrad“ mit neun Segmenten, Ordnungen, Beispielen und Prinzipien | nachbauen | Modellseite als Leitgrafik; direkt zu komplex, Webversion sollte interaktiv oder abschnittsweise sein |
 | `image23.png` | 1659x948 | „Wirkungslenkung“: Daten, Bewertung, Lenkung, Transformation | nachbauen | Modellseite, Anwendungen, Downloads/Whitepaper; als Prozessgrafik sehr geeignet |

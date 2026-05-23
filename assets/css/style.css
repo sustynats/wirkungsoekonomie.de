@@ -55,15 +55,17 @@ a {
 }
 
 .glossary-term {
-  color: inherit;
-  border-radius: 3px;
+  color: var(--green-dark);
+  border-radius: 4px;
   cursor: help;
   text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
+  text-decoration-style: solid;
+  text-decoration-color: rgba(47, 125, 92, 0.38);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
   transition:
     background 160ms ease,
+    text-decoration-color 160ms ease,
     color 160ms ease;
 }
 
@@ -71,6 +73,9 @@ a {
 .glossary-term:focus-visible {
   color: var(--green);
   background: rgba(47, 125, 92, 0.08);
+  outline: 2px solid rgba(47, 125, 92, 0.18);
+  outline-offset: 2px;
+  text-decoration-color: currentColor;
 }
 
 .glossary-card {
@@ -955,15 +960,20 @@ textarea {
 }
 
 .status-note {
-  width: fit-content;
-  padding: 0.48rem 0.72rem;
-  border: 1px solid rgba(47, 125, 92, 0.24);
+  width: min(100%, 880px);
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(8, 26, 46, 0.1);
   border-radius: var(--radius);
-  color: var(--green);
-  font-size: 0.82rem;
+  background: rgba(255, 250, 241, 0.72);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.status-note strong {
+  color: var(--navy);
   font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .card-number {
@@ -1279,6 +1289,106 @@ textarea {
   margin-bottom: 1.2rem;
   background: linear-gradient(145deg, rgba(47, 125, 92, 0.12), rgba(200, 155, 60, 0.15));
   border-bottom: 1px solid var(--line);
+}
+
+.journal-home-section {
+  padding-top: clamp(2.25rem, 6vw, 4rem);
+}
+
+.journal-home {
+  display: grid;
+  gap: 1rem;
+}
+
+.journal-home-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.journal-side-list,
+.journal-related-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.journal-card {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+  min-width: 0;
+  padding: clamp(1.15rem, 3vw, 1.65rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 250, 241, 0.78);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.journal-card:hover,
+.journal-card:focus-within {
+  border-color: rgba(47, 125, 92, 0.35);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.journal-feature-card {
+  background:
+    linear-gradient(145deg, rgba(255, 250, 241, 0.92), rgba(238, 244, 237, 0.72)),
+    var(--ivory);
+}
+
+.journal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.journal-card .card-title {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  line-height: 1.08;
+}
+
+.journal-feature-card .card-title {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+}
+
+.journal-card .card-text {
+  margin: 0;
+}
+
+.journal-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.1rem;
+}
+
+.journal-chip-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid rgba(8, 26, 46, 0.11);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 780;
+}
+
+.journal-actions {
+  margin-top: 1rem;
+}
+
+.journal-related-section {
+  padding-top: clamp(2.5rem, 6vw, 4rem);
 }
 
 .quote-block {
@@ -6419,12 +6529,18 @@ textarea {
   .card-grid,
   .three-grid,
   .compare-card-grid,
+  .journal-related-grid,
   .academy-part-grid,
   .tool-lab,
   .experience-path-grid,
   .everyday-grid,
   .quiz-lab-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .journal-home-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    align-items: stretch;
   }
 
   .legal-grid {

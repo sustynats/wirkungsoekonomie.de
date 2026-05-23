@@ -24,7 +24,7 @@
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
 
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260522-status-cleanup">
   </head>
   <body>
     <header class="site-header">
@@ -168,12 +168,12 @@
             <label>Vermiedene Reparaturausgaben <input id="income-repair" type="number" min="0" step="1000000000" value="0"></label>
             <label>Sonstige freigegebene Modellbausteine <input id="income-other" type="number" min="0" step="1000000000" value="0"></label>
           </fieldset>
-          <div class="calculator-status-grid" aria-label="Datenstatus der Finanzierungsbausteine">
-            <label>Transfers <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
-            <label>Wirkungssteuer <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
-            <label>Automatisierungsdividende <select data-income-status><option>Modellwert</option><option>offizielle Quelle</option><option>Annahme</option><option>noch zu prüfen</option></select></label>
-            <label>Kapitalwirkungsbeiträge <select data-income-status><option>Modellwert</option><option>offizielle Quelle</option><option>Annahme</option><option>noch zu prüfen</option></select></label>
-            <label>Externe Kosten / Reparatur <select data-income-status><option>noch zu prüfen</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
+          <div class="calculator-status-grid" aria-label="Datenbasis der Finanzierungsbausteine">
+            <label>Transfers <select data-income-status><option>Plausibilisierung</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
+            <label>Wirkungssteuer <select data-income-status><option>Plausibilisierung</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
+            <label>Automatisierungsdividende <select data-income-status><option>Modellwert</option><option>offizielle Quelle</option><option>Annahme</option><option>Plausibilisierung</option></select></label>
+            <label>Kapitalwirkungsbeiträge <select data-income-status><option>Modellwert</option><option>offizielle Quelle</option><option>Annahme</option><option>Plausibilisierung</option></select></label>
+            <label>Externe Kosten / Reparatur <select data-income-status><option>Plausibilisierung</option><option>offizielle Quelle</option><option>Modellwert</option><option>Annahme</option></select></label>
           </div>
         </div>
         <div class="calculator-output result-box" aria-live="polite">
@@ -182,7 +182,7 @@
           <span>Netto-Finanzierungsbedarf nach Eingaben</span><strong id="income-net">-</strong>
           <span>Jahresbetrag pro Person</span><strong id="income-year-person">-</strong>
           <span class="calculator-note">Die 2.000 Euro sind Zielmodell / Modellwert, keine gesetzliche Leistungszusage. Der Rechner zeigt die Logik der Finanzierung und ersetzt keine fiskalische Gesamtprüfung.</span>
-          <span class="calculator-status-line" id="income-status-summary">Datenstatus: überwiegend Modellwert / noch zu prüfen.</span>
+          <span class="calculator-status-line" id="income-status-summary">Datenbasis: überwiegend Modellwert / Plausibilisierung.</span>
         </div>
       </div>
     </section>
@@ -206,7 +206,7 @@
           outNet.textContent = euro.format(Math.max(0, gross - offsets));
           outYearPerson.textContent = euro.format(value(el.dividend) * 12);
           const statuses = Array.from(new Set(statusControls.map(control => control.value)));
-          outStatus.textContent = 'Datenstatus: ' + statuses.join(' / ') + '.';
+          outStatus.textContent = 'Datenbasis: ' + statuses.join(' / ') + '.';
         }
         Object.values(el).forEach(node => node && node.addEventListener('input', update));
         statusControls.forEach(node => node && node.addEventListener('change', update));
@@ -224,11 +224,11 @@
 <section class="section"><details class="source-panel" open>
       <summary>Grundlage dieser Seite</summary>
       <div>
-        <p class="hero-kicker">Quellenbasis / Status</p>
+        <p class="hero-kicker">Quellenbasis / Einordnung</p>
         <h2>Grundlage dieser Seite</h2>
         <ul class="source-list"><li>Führender Begriffsleitfaden der Wirkungsökonomie v1.0</li><li>Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026</li><li>Systemmodell der Wirkungsökonomie</li><li>Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur</li><li>WStG / WUStG / technische Leitlinien</li><li>Die neue Ordnung des Wohlstands, Kapitel Arbeit, Automatisierung und Maschinenleistung, Wirkungseinkommen, Kapitalmärkte und Fonds</li><li>Arbeitspapier Wirkungseinkommensteuer</li><li>Systemmodell: Wirkungsfonds, Automatisierungsdividende, Wirkungsdividende</li></ul>
         <div class="source-meta">
-          <span>Konzeptstand / fachliche Prüfung läuft</span>
+          <span>Zielmodell / Modellrechnung. Keine Leistungszusage.</span>
           <span>Stand: 22. Mai 2026</span>
           <span>Primärlogik WÖk; ESG/Standards nur Anschlussräume</span>
         </div>
@@ -298,6 +298,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260522-zielgruppen-master-v1"></script>
+    <script src="../assets/js/main.js?v=20260523-nachhaltigkeit"></script>
   </body>
 </html>

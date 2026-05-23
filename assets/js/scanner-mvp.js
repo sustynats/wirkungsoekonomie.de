@@ -14,13 +14,13 @@
       label: "Text / Artikel analysieren",
       demo: "politische-sprache",
       scope: "Text, Artikel oder kurzer Auszug",
-      status: "MVP · URL/Text vorbereitet",
+      status: "URL/Text vorbereitet",
     },
     website: {
       label: "Website analysieren",
       demo: "politische-sprache",
       scope: "Website-Struktur oder kopierter Seitenauszug",
-      status: "MVP · URL-Abruf später",
+      status: "URL-Abruf vorbereitet",
     },
     election: {
       label: "Wahlprogramm analysieren",
@@ -32,7 +32,7 @@
       label: "Politische Aussage analysieren",
       demo: "politische-sprache",
       scope: "Begriff, Slogan oder Aussage",
-      status: "MVP · Wirkungspotenzial",
+      status: "Wirkungsökonomische Ersteinschätzung",
     },
     product: {
       label: "Produkt analysieren",
@@ -50,7 +50,7 @@
       label: "Entscheidung / Maßnahme einordnen",
       demo: "entscheidung",
       scope: "Gesetz, Investition, Beschluss oder Maßnahme",
-      status: "MVP · benötigt Prüfung",
+      status: "Methodische Einordnung",
     },
     photo: {
       label: "Foto / Screenshot vorbereiten",
@@ -90,7 +90,7 @@
           type: "Eingabequelle",
           title: "Textauszug oder URL",
           provided: "sichtbare Sprache, mögliche Frames, Kontext-Hinweise",
-          status: "MVP-Eingabe, nicht dauerhaft gespeichert",
+          status: "Eingabe, nicht dauerhaft gespeichert",
           limitation: "keine vollständige Faktenprüfung, keine Reichweiten- oder Wirkungsdaten",
         },
         {
@@ -161,7 +161,7 @@
           type: "interne WÖk-Basis",
           title: "WÖk-ID, Scorecard, Produktwirkung",
           provided: "Struktur für Wirkungspfad, Datenlücken und Scorecard-Hypothese",
-          status: "MVP",
+          status: "Demo-Ersteinschätzung",
           limitation: "keine finale Steuerklasse ohne geprüfte Daten",
         },
       ],
@@ -218,7 +218,7 @@
           type: "Eingabequelle",
           title: "Maßnahmenbeschreibung, Gesetzesauszug oder Wahlprogrammabschnitt",
           provided: "behauptetes Ziel, Maßnahme, betroffene Wirkungsräume",
-          status: "MVP-Eingabe",
+          status: "Eingabe",
           limitation: "ohne Baseline, Kosten, Alternativen und Evaluationsdaten nur Ersteinschätzung",
         },
         {
@@ -251,10 +251,10 @@
   function inferInputSource(value) {
     const trimmed = String(value || "").trim();
     if (/^https?:\/\//i.test(trimmed)) {
-      return "URL-Eingabe erkannt. Im MVP wird kein Paywall-Bypass und kein vollständiger Fremdtext gespeichert; bei nicht abrufbarer URL bitte kurzen Auszug einfügen.";
+      return "URL-Eingabe erkannt. Dabei wird kein Paywall-Bypass und kein vollständiger Fremdtext gespeichert; bei nicht abrufbarer URL bitte kurzen Auszug einfügen.";
     }
     if (trimmed.length > 0) {
-      return "Textauszug erkannt. Im MVP erfolgt nur eine lokale Demo-Einordnung; keine dauerhafte Speicherung.";
+      return "Textauszug erkannt. Es erfolgt nur eine lokale Demo-Einordnung; keine dauerhafte Speicherung.";
     }
     return "Demo ohne Nutzereingabe.";
   }
@@ -279,7 +279,7 @@
             <article>
               <strong>${escapeHtml(source.type)}: ${escapeHtml(source.title)}</strong>
               <p><em>Was diese Quelle liefert:</em> ${escapeHtml(source.provided)}</p>
-              <p><em>Datenstand / Status:</em> ${escapeHtml(source.status)}</p>
+              <p><em>Datenbasis:</em> ${escapeHtml(source.status)}</p>
               <p><em>Limitierung:</em> ${escapeHtml(source.limitation)}</p>
             </article>
           `).join("")}
@@ -293,9 +293,9 @@
     resultPanel.innerHTML = `
       <article class="scanner-result-card">
         <div class="scanner-result-head">
-          <p class="card-kicker">MVP-Ersteinschätzung · ${escapeHtml(mode.label)}</p>
+          <p class="card-kicker">Wirkungsökonomische Ersteinschätzung · ${escapeHtml(mode.label)}</p>
           <h3>${escapeHtml(demo.title)}</h3>
-          <span>Status: ${escapeHtml(mode.status)} · Datenqualität ${escapeHtml(demo.quality || "F")}</span>
+          <span>Einordnung: ${escapeHtml(mode.status)} · Datenqualität ${escapeHtml(demo.quality || "F")}</span>
         </div>
         <div class="scanner-result-sections">
           <article><h4>Was wurde erkannt?</h4><p>${escapeHtml(demo.recognized)}</p></article>
@@ -326,7 +326,7 @@
   }
 
   function updatePlaceholder() {
-    input.placeholder = `Kurzen ${modes[modeSelect.value]?.scope || "Auszug"} einfügen. Im MVP wird eine Demo-Ersteinschätzung erzeugt.`;
+    input.placeholder = `Kurzen ${modes[modeSelect.value]?.scope || "Auszug"} einfügen. Daraus wird eine Demo-Ersteinschätzung erzeugt.`;
   }
 
   function inferDemo() {

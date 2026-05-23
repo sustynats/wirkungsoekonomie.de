@@ -59,7 +59,7 @@ Auf jeder aktualisierten Seite ergänzt:
 - Rückkopplung statt Appell
 - Wirkungspfad
 - Nichttrivialität
-- Wirkung erster, zweiter und dritter Ordnung
+- Wirkung auf unmittelbarer, systemischer und langfristiger Ebene
 - Wirkungsräume Mensch, Planet und Demokratie
 - Wirkungskapital als Querschnittslogik
 - konkrete Beispiele
