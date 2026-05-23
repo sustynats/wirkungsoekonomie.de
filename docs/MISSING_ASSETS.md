@@ -10,9 +10,13 @@ Stand: 2026-05-23T19:10:28.988Z
 - Repository-PDF: `assets/pdf/die-neue-ordnung-des-wohlstands.pdf`
 - Entscheidung nötig: nein
 
-## Fehlende erwartete Dateien
+## Fehlende erwartete Dateien für Phase 1 Restarbeiten
 
-Keine.
+- `WOeK_Master_Items_final_v1.2.xlsx` - nötig für ein strukturiertes WÖk-ID-Register aus der führenden Tabellenquelle. Aktuell ist nur der PDF-Fallback importiert.
+- aktuelle Fassung `WP_Rente` - nicht als eigenständige Originaldatei im Repository vorhanden.
+- aktuelle Fassung `Nachhaltigkeit-Systemarchitektur` - nicht als eigenständige Originaldatei im Repository vorhanden.
+
+Die vorhandenen PDF-/Archivfassungen wurden nicht als aktuelle führende Fassung umgedeutet.
 
 ## Mögliche Hauptwerkskandidaten
 

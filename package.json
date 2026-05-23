@@ -7,15 +7,15 @@
     "build": "node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-pages.mjs && python3 tools/sync_layout.py && node scripts/import/build-relationships.mjs && node scripts/import/build-content-manifest.mjs && node scripts/search/build-woek-search-index.mjs",
     "preview": "python3 -m http.server 8765",
     "import:all": "node scripts/import/all.mjs",
-    "import:mainwork": "python3 scripts/import/import-mainwork-docx.py",
+    "import:mainwork": "python3 scripts/import/build-mainwork-reference.py",
     "import:workpapers": "python3 scripts/import/import-workpapers.py",
     "export:pdf": "node scripts/export/export-glossary.mjs && node scripts/export/export-mainwork.mjs && node scripts/export/export-document.mjs && node scripts/export/export-bundle.mjs",
     "build:search": "node scripts/search/build-woek-search-index.mjs",
     "check:search": "node scripts/quality/check-search-integration.mjs",
     "check:assets": "node scripts/quality/check-assets.mjs",
     "check:links": "python3 tools/build_search_index.py",
-    "check:manifest": "node scripts/import/build-content-manifest.mjs",
-    "check:ids": "node scripts/import/build-content-manifest.mjs",
+    "check:manifest": "node scripts/import/build-content-manifest.mjs && node scripts/quality/check-phase1.mjs",
+    "check:ids": "node scripts/quality/check-phase1.mjs",
     "check:size": "node scripts/quality/check-size.mjs",
     "review:terminology": "node scripts/review/terminology-review.mjs && node scripts/review/build-terminology-report.mjs",
     "review:versions": "node scripts/review/build-version-history.mjs",
@@ -31,6 +31,8 @@
     "check:glossary-alpha": "node scripts/glossary/check-glossary-alphabetical.mjs",
     "check:glossary-links": "node scripts/glossary/build-term-links.mjs",
     "check:hover-definitions": "node scripts/glossary/check-hover-coverage.mjs",
-    "check:term-duplicates": "node scripts/glossary/check-glossary-alphabetical.mjs"
+    "check:term-duplicates": "node scripts/glossary/check-glossary-alphabetical.mjs",
+    "check:search-integration": "node scripts/quality/check-search-integration.mjs",
+    "check:phase1": "node scripts/quality/check-phase1.mjs"
   }
 }

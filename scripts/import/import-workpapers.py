@@ -20,6 +20,14 @@ DATA_FILE = ROOT / "public" / "data" / "workpaper-imports.json"
 
 WORKPAPERS = [
     {
+        "title": "WStG Oktober 2025",
+        "slug": "wstg-oktober-2025",
+        "documentType": "gesetzesentwurf",
+        "status": "gesetzesentwurf",
+        "source": "assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf",
+        "originalName": "WStG_Oktober2025.pdf",
+    },
+    {
         "title": "Grundlagenpapier Wirkungsökonomie WÖk",
         "slug": "grundlagenpapier-wirkungsoekonomie-woek",
         "documentType": "arbeitspapier",
@@ -82,6 +90,46 @@ WORKPAPERS = [
         "status": "arbeitspapier",
         "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Systemmodell-der-Wirkungsökonomie.pdf",
         "originalName": "Systemmodell-der-Wirkungsökonomie.pdf",
+    },
+    {
+        "title": "WP Produkte",
+        "slug": "wp-produkte",
+        "documentType": "arbeitspapier",
+        "status": "arbeitspapier",
+        "source": "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf",
+        "originalName": "WP_Produkte.pdf",
+    },
+    {
+        "title": "WP Einkommen",
+        "slug": "wp-einkommen",
+        "documentType": "arbeitspapier",
+        "status": "arbeitspapier",
+        "source": "assets/pdf/whitepaper-wirkungseinkommen.pdf",
+        "originalName": "WP_Einkommen.pdf",
+    },
+    {
+        "title": "WP Wohnungsmarkt",
+        "slug": "wp-wohnungsmarkt",
+        "documentType": "arbeitspapier",
+        "status": "arbeitspapier",
+        "source": "assets/pdf/working-paper-wohnungsmarkt.pdf",
+        "originalName": "WP_Wohnungsmarkt_.pdf",
+    },
+    {
+        "title": "Wenn Maschinen arbeiten",
+        "slug": "wenn-maschinen-arbeiten",
+        "documentType": "arbeitspapier",
+        "status": "arbeitspapier",
+        "source": "assets/pdf/wenn-maschinen-arbeiten.pdf",
+        "originalName": "Wenn Maschinen arbeiten.pdf",
+    },
+    {
+        "title": "Leitbild für Mensch, Planet und Demokratie",
+        "slug": "leitbild-mensch-planet-demokratie",
+        "documentType": "leitbild",
+        "status": "arbeitspapier",
+        "source": "assets/pdf/leitbild-mensch-planet-demokratie.pdf",
+        "originalName": "Leitbild für Mensch Planet und Demokratie.pdf",
     },
     {
         "title": "Minifest Wirkungsökonomie",
@@ -150,6 +198,10 @@ def paragraph_id(slug: str, index: int) -> str:
     return f"{slug}-p{index:04d}"
 
 
+def section_id(slug: str, index: int) -> str:
+    return f"{slug}-s{index:04d}"
+
+
 def extract_pdf(path: Path) -> tuple[list[str], list[str]]:
     reader = PdfReader(str(path))
     paragraphs: list[str] = []
@@ -186,11 +238,22 @@ def extract_docx(path: Path) -> tuple[list[str], list[str]]:
 
 def render_page(item: dict, paragraphs: list[str], issues: list[str], original_href: str, source_hash: str) -> str:
     body_parts = []
+    current_section_id = section_id(item["slug"], 1)
     for idx, paragraph in enumerate(paragraphs, start=1):
         if re.fullmatch(r"(Seite|Tabelle)\s+\d+", paragraph):
-            body_parts.append(f'<h2 id="{escape(item["slug"])}-s{idx:04d}">{escape(paragraph)}</h2>')
+            current_section_id = section_id(item["slug"], idx)
+            body_parts.append(
+                f'<h2 id="{current_section_id}" data-document-id="{escape(item["slug"])}" '
+                f'data-section-id="{current_section_id}" data-version="2026.1-import" '
+                f'data-content-hash="{hashlib.sha256(paragraph.encode("utf-8")).hexdigest()[:16]}">{escape(paragraph)}</h2>'
+            )
         else:
-            body_parts.append(f'<p id="{paragraph_id(item["slug"], idx)}">{escape(paragraph)}</p>')
+            pid = paragraph_id(item["slug"], idx)
+            body_parts.append(
+                f'<p id="{pid}" data-document-id="{escape(item["slug"])}" data-section-id="{current_section_id}" '
+                f'data-paragraph-id="{pid}" data-version="2026.1-import" '
+                f'data-content-hash="{hashlib.sha256(paragraph.encode("utf-8")).hexdigest()[:16]}">{escape(paragraph)}</p>'
+            )
     issue_html = ""
     if issues:
         issue_html = "<section class=\"callout\"><h2>Konvertierungshinweise</h2><ul>" + "".join(
@@ -236,6 +299,8 @@ def render_page(item: dict, paragraphs: list[str], issues: list[str], original_h
             <dt>Status</dt><dd>{escape(item["status"])}</dd>
             <dt>Source-Version</dt><dd>2026.0</dd>
             <dt>Web-Version</dt><dd>2026.1-import</dd>
+            <dt>Reviewstatus</dt><dd>partially-reviewed</dd>
+            <dt>Terminologiebasis</dt><dd>WOeK_Begriffsleitfaden_fuehrend_v1.0.md</dd>
             <dt>Originaldatei</dt><dd>{escape(item["originalName"])}</dd>
             <dt>Source-Hash</dt><dd>{escape(source_hash)}</dd>
             <dt>Absätze/Textblöcke</dt><dd>{len(paragraphs)}</dd>
@@ -244,6 +309,7 @@ def render_page(item: dict, paragraphs: list[str], issues: list[str], original_h
         <section class="callout">
           <h2>Importstatus</h2>
           <p>Diese Webfassung ist ein technischer Volltextimport. Layout, Fußnotenpositionen, komplexe Tabellen und eingebettete Grafiken können vom Original abweichen; die Originaldatei bleibt die zitierfähige Fassung.</p>
+          <p>Diskurs zu einzelnen Abschnitten wird in Phase 2 aktiviert; die Abschnitts- und Absatz-IDs sind vorbereitet.</p>
         </section>
         {issue_html}
         <section>

@@ -54,9 +54,14 @@ Der Adapter `scripts/search/build-woek-search-index.mjs` erzeugt Suchdokumente a
 
 - `src/data/glossary.terms.yml`
 - `src/content/docs/**`
-- statischen Referenzseiten unter `/referenz/`, `/dokumente/`, `/begriffe/`, `/instrumente/`, `/beispiele/`, `/quellen/`, `/export/`, soweit vorhanden
+- statischen Referenzseiten unter `/referenz/`, `/referenz/volltext/`, `/referenz/kapitel-.../`, `/referenz/teil-.../`, `/dokumente/`, `/begriffe/`, `/instrumente/`, `/beispiele/`, `/quellen/`, `/export/`, soweit vorhanden
 
 Die erzeugten Suchtreffer werden in `assets/search/search-index.json` im bestehenden Format ergänzt. Es entsteht keine zweite Suchdatei für die sichtbare Suche.
+
+Stand Phase 1 Abschluss:
+
+- `tools/build_search_index.py`: 3.787 reguläre und kuratierte Treffer nach Phase-1-Integration.
+- `scripts/search/build-woek-search-index.mjs`: 3.569 zusätzliche WÖk-Suchmetadaten in `public/data/woek-search-meta.json` und Integration in den bestehenden Index.
 
 ## WÖk-Mapping
 
