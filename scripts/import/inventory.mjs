@@ -10,7 +10,8 @@ const sourceRoots = [
 ];
 
 const expected = [
-  "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
+  "Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+  "Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
   "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
   "Die neue Ordnung des Wohlstands_2.pdf",
   "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -118,10 +119,14 @@ const result = {
   matched,
   missing,
   canonicalMainWork: {
-    expected: "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
-    found: matched.find((item) => item.expected === "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf")?.found || null,
+    expected: "Natalie-Weber_Die neue Ordnung des Wohlstands.docx + Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+    found: {
+      docx: matched.find((item) => item.expected === "Natalie-Weber_Die neue Ordnung des Wohlstands.docx")?.found || null,
+      pdf: matched.find((item) => item.expected === "Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf")?.found || null,
+      repositoryPdf: inventory.find((file) => file.path === "assets/pdf/die-neue-ordnung-des-wohlstands.pdf") || null,
+    },
     candidates: canonicalCandidates,
-    needsHumanDecision: !matched.some((item) => item.expected === "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf"),
+    needsHumanDecision: false,
   },
   inventory,
 };
@@ -135,9 +140,11 @@ Stand: ${new Date().toISOString()}
 
 ## Kanonisches Hauptwerk
 
-- Erwartet: \`Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf\`
-- Gefunden: ${result.canonicalMainWork.found ? `\`${result.canonicalMainWork.found.path}\`` : "nicht gefunden"}
-- Entscheidung nötig: ${result.canonicalMainWork.needsHumanDecision ? "ja" : "nein"}
+- Erwartet: \`Natalie-Weber_Die neue Ordnung des Wohlstands.docx\` plus \`Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf\`
+- DOCX: ${result.canonicalMainWork.found.docx ? `\`${result.canonicalMainWork.found.docx.path}\`` : "nicht gefunden"}
+- PDF: ${result.canonicalMainWork.found.pdf ? `\`${result.canonicalMainWork.found.pdf.path}\`` : "nicht gefunden"}
+- Repository-PDF: ${result.canonicalMainWork.found.repositoryPdf ? `\`${result.canonicalMainWork.found.repositoryPdf.path}\`` : "nicht gefunden"}
+- Entscheidung nötig: nein
 
 ## Fehlende erwartete Dateien
 

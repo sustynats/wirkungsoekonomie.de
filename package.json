@@ -4,9 +4,10 @@
   "version": "2026.1.0",
   "type": "module",
   "scripts": {
-    "build": "python3 tools/sync_layout.py && node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-pages.mjs && node scripts/import/build-relationships.mjs && node scripts/import/build-content-manifest.mjs && node scripts/search/build-woek-search-index.mjs",
+    "build": "node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-pages.mjs && python3 tools/sync_layout.py && node scripts/import/build-relationships.mjs && node scripts/import/build-content-manifest.mjs && node scripts/search/build-woek-search-index.mjs",
     "preview": "python3 -m http.server 8765",
     "import:all": "node scripts/import/all.mjs",
+    "import:mainwork": "python3 scripts/import/import-mainwork-docx.py",
     "export:pdf": "node scripts/export/export-glossary.mjs && node scripts/export/export-mainwork.mjs && node scripts/export/export-document.mjs && node scripts/export/export-bundle.mjs",
     "build:search": "node scripts/search/build-woek-search-index.mjs",
     "check:search": "node scripts/quality/check-search-integration.mjs",
@@ -32,4 +33,3 @@
     "check:term-duplicates": "node scripts/glossary/check-glossary-alphabetical.mjs"
   }
 }
-

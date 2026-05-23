@@ -52,7 +52,6 @@ Kommentare, Discord-Login und Datenbank werden nicht implementiert. Vorbereitet 
 
 ## Bekannte Einschränkungen
 
-- Das kanonische PDF `Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf` wurde nicht gefunden.
-- Die angegebene DOCX-Neuauflage ist vorhanden, aber vor einer führenden Veröffentlichung muss die kanonische Fassung bestätigt werden.
+- Die kanonischen Hauptwerksquellen sind bestätigt: `Natalie-Weber_Die neue Ordnung des Wohlstands.docx` und `Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf`.
+- Die Webfassung unter `/referenz/` ist ein technischer Source-Original-Import aus der DOCX-Fassung und verlinkt auf das vorhandene Repository-PDF.
 - Das Repo ist noch keine Astro/Starlight-App. Eine Migration muss als separater technischer Schritt geplant werden, weil sie den bestehenden GitHub-Pages-Build und die Website-Struktur berührt.
-

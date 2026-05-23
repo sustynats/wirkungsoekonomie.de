@@ -108,6 +108,5 @@ Wenn `npm` in CI verfügbar ist, sind dieselben Schritte über `package.json` ab
 ## Einschränkungen
 
 - Lokal ist aktuell kein root-`npm` verfügbar; die Website ist im Bestand eine statische HTML-Site ohne Astro/Starlight-Projektstruktur.
-- Der kanonische Hauptwerks-PDF-Name `Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf` wurde lokal nicht gefunden. Vor einer führenden Hauptwerksveröffentlichung muss geklärt werden, ob die vorhandene DOCX-Neuauflage oder ein anderes PDF kanonisch ist.
+- Die kanonischen Hauptwerksquellen sind bestätigt: `Natalie-Weber_Die neue Ordnung des Wohlstands.docx` als Word-Quelle und `Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf` beziehungsweise das in `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` vorhandene PDF als PDF-Quelle.
 - Die bestehende Suche kann zusätzliche Metadaten nur darstellen, wenn `assets/js/search.js` erweitert wird. Phase 1A erzeugt die Metadaten bereits strukturiert.
-

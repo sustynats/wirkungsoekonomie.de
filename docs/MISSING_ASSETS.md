@@ -1,16 +1,17 @@
 # Missing Assets
 
-Stand: 2026-05-23T18:09:57.835Z
+Stand: 2026-05-23T18:17:33.900Z
 
 ## Kanonisches Hauptwerk
 
-- Erwartet: `Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf`
-- Gefunden: nicht gefunden
-- Entscheidung nötig: ja
+- Erwartet: `Natalie-Weber_Die neue Ordnung des Wohlstands.docx` plus `Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf`
+- DOCX: `[local Kerndokumente]/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands.docx`
+- PDF: `[local Kerndokumente]/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf`
+- Repository-PDF: `assets/pdf/die-neue-ordnung-des-wohlstands.pdf`
+- Entscheidung nötig: nein
 
 ## Fehlende erwartete Dateien
 
-- Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf
 - Grundlagenpapier-Wirkungsökonomie WÖk.pdf
 - WOeK_Master_Items_final_v1.2.pdf
 - Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf

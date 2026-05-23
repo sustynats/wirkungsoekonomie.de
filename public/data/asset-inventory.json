@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-05-23T18:09:57.834Z",
+  "generatedAt": "2026-05-23T18:17:33.898Z",
   "sourceRoots": [
     "source-assets/originals",
     "assets/pdf",
     "[local Kerndokumente]"
   ],
   "expected": [
-    "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
+    "Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+    "Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
     "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
     "Die neue Ordnung des Wohlstands_2.pdf",
     "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -35,6 +36,28 @@
     "FAZ-Beitrag.docx"
   ],
   "matched": [
+    {
+      "expected": "Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+      "found": {
+        "name": "Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+        "path": "[local Kerndokumente]/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+        "sizeBytes": 123834374,
+        "modifiedAt": "2026-05-18T00:04:42.262Z",
+        "extension": "docx",
+        "sha256": "f5779e4c35cd6b81080074b4bbbe33e0a2ea0c63fac39cff544630286a0f3ec4"
+      }
+    },
+    {
+      "expected": "Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+      "found": {
+        "name": "Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+        "path": "[local Kerndokumente]/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+        "sizeBytes": 85836750,
+        "modifiedAt": "2026-05-23T17:59:34.858Z",
+        "extension": "pdf",
+        "sha256": "514ada7ded85c48289679bab19be49dcce060074a15618602c0920a581b1d629"
+      }
+    },
     {
       "expected": "Die neue Ordnung des Wohlstands_2.pdf",
       "found": {
@@ -169,7 +192,6 @@
     }
   ],
   "missing": [
-    "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
     "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
     "WOeK_Master_Items_final_v1.2.pdf",
     "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
@@ -186,8 +208,33 @@
     "FAZ-Beitrag.docx"
   ],
   "canonicalMainWork": {
-    "expected": "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
-    "found": null,
+    "expected": "Natalie-Weber_Die neue Ordnung des Wohlstands.docx + Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+    "found": {
+      "docx": {
+        "name": "Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+        "path": "[local Kerndokumente]/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
+        "sizeBytes": 123834374,
+        "modifiedAt": "2026-05-18T00:04:42.262Z",
+        "extension": "docx",
+        "sha256": "f5779e4c35cd6b81080074b4bbbe33e0a2ea0c63fac39cff544630286a0f3ec4"
+      },
+      "pdf": {
+        "name": "Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+        "path": "[local Kerndokumente]/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands_small.pdf",
+        "sizeBytes": 85836750,
+        "modifiedAt": "2026-05-23T17:59:34.858Z",
+        "extension": "pdf",
+        "sha256": "514ada7ded85c48289679bab19be49dcce060074a15618602c0920a581b1d629"
+      },
+      "repositoryPdf": {
+        "name": "die-neue-ordnung-des-wohlstands.pdf",
+        "path": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
+        "sizeBytes": 85836750,
+        "modifiedAt": "2026-05-18T00:44:52.238Z",
+        "extension": "pdf",
+        "sha256": "683d60b90bd626e978edd7b8ec4facf932b61c26b1a7bffcb4cfd4147e9e8828"
+      }
+    },
     "candidates": [
       {
         "name": "die-neue-ordnung-des-wohlstands.pdf",
@@ -398,7 +445,7 @@
         "sha256": "10238fbfb6552e7cf867af2f623f3009a8243b8a46ad0ea4737f4f632490c47b"
       }
     ],
-    "needsHumanDecision": true
+    "needsHumanDecision": false
   },
   "inventory": [
     {
