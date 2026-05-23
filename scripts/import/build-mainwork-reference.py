@@ -433,6 +433,19 @@ def meta_panel(source_hash: str, extra: str = "") -> str:
     </section>"""
 
 
+def fulltext_status_panel(stats: dict[str, int]) -> str:
+    return f"""<section class="meta-box version-summary fulltext-status-summary">
+      <h2>Stand dieser Onlinefassung</h2>
+      <p>Diese Volltextansicht enthält das vollständige Grundlagenwerk als lesbare Webfassung. Die zitierfähige Originalfassung bleibt über das PDF erhalten; die Onlinefassung ist strukturiert, verlinkt und versioniert.</p>
+      <div class="version-summary-grid" aria-label="Versionsstatus">
+        <div><span>Original</span><strong>2026.0</strong><small>PDF bleibt zitierfähig</small></div>
+        <div><span>Onlinefassung</span><strong>2026.2</strong><small>Live-Referenz</small></div>
+        <div><span>Umfang</span><strong>{stats["paragraphs"]} Absätze</strong><small>{stats["headings"]} Überschriften · {stats["figures"]} Abbildungen</small></div>
+      </div>
+      <p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen und Reviewlogik ansehen</a></p>
+    </section>"""
+
+
 def discussion_placeholder(section_id: str, content_hash: str) -> str:
     return (
         f'<aside class="callout discussion-placeholder" data-document-id="{DOC_ID}" '
@@ -464,7 +477,7 @@ def render_fulltext(parsed: dict[str, object]) -> None:
         <a href="{PDF_URL}">Original-PDF</a>
         <button type="button" data-print-page>Drucken</button>
       </nav>
-      {meta_panel(str(source_hash), f'<p>Absätze: {stats["paragraphs"]} · Überschriften: {stats["headings"]} · Tabellen: {stats["tables"]} · Abbildungen: {stats["figures"]}</p>')}
+      {fulltext_status_panel(stats)}
       <article class="article-shell fulltext-reader" id="woek-main-fulltext">{fulltext_body}</article>
     </main>"""
     out = REFERENCE_DIR / "volltext" / "index.html"

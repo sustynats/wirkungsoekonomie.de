@@ -854,6 +854,11 @@ function enhanceFullText() {
     const clean = [...new Set(merged.split(" "))].join(" ");
     return `<article class="${clean}" id="woek-main-fulltext">`;
   });
+  html = html.replace(/<details class="technical-meta">[\s\S]*?<\/details>/g, "");
+  html = html.replace(
+    /<div class="version-summary-note"><p>Absätze: ([^<]+)<\/p><\/div>/,
+    `<p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen und Reviewlogik ansehen</a></p>`
+  );
   html = ensureScripts(versionStatusBox(html), file);
   write(file, html);
 }
