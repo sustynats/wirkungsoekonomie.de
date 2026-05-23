@@ -264,8 +264,55 @@ function statusBadges(reviewStatus = "partially-delta-reviewed") {
       <span>Originalfassung ${SOURCE_VERSION}</span>
       <span>Import-Version ${IMPORT_VERSION}</span>
       <span>Online-Referenz ${LIVE_VERSION}</span>
-      <strong>${esc(reviewStatus)}</strong>
+      <strong>${esc(reviewStatusLabel(reviewStatus))}</strong>
     </div>`;
+}
+
+function reviewStatusLabel(status = "") {
+  const normalized = String(status).trim().toLowerCase();
+  if (normalized === "delta-reviewed") return "fachlich geprüft";
+  if (normalized === "partially-delta-reviewed") return "erste Online-Prüfung";
+  if (normalized === "needs-human-review") return "redaktionelle Prüfung offen";
+  if (normalized === "source-only") return "Originalfassung";
+  if (normalized === "partially-reviewed") return "teilweise geprüft";
+  if (normalized === "reviewed") return "geprüft";
+  return status || "erste Online-Prüfung";
+}
+
+function versionStatusBox(html) {
+  return html.replace(/<section class="meta-box">\s*<h2>Version und Reviewstatus<\/h2>\s*<dl>([\s\S]*?)<\/dl>([\s\S]*?)<\/section>/g, (match, dl, trailingContent) => {
+    const value = (label, fallback = "") => stripTags(dl.match(new RegExp(`<dt>${label}<\\/dt><dd>(.*?)<\\/dd>`, "i"))?.[1] || fallback).trim();
+    const reviewStatus = value("Reviewstatus", "partially-delta-reviewed");
+    const sourceVersion = value("Source-Version", SOURCE_VERSION);
+    const importVersion = value("Import-Version", IMPORT_VERSION);
+    const liveVersion = value("Live-Reference-Version", value("Web-Version", LIVE_VERSION));
+    const terminologyBase = value("Terminologiebasis", "WOeK_Begriffsleitfaden_fuehrend_v1.0.md");
+    const terminologyDate = value("Terminologiebasis-Stand", "2026-05-21");
+    const documentId = value("Dokument-ID", "woek-main-2026");
+    const sourceHash = value("Source-Hash", "");
+    const statusText = reviewStatusLabel(reviewStatus);
+    const note = trailingContent.trim();
+    return `<section class="meta-box version-summary">
+      <h2>Stand dieser Onlinefassung</h2>
+      <p>Diese Seite ist Teil der lebenden Online-Referenz. Der Text basiert auf der zitierfähigen Originalfassung und wurde für die Webfassung strukturiert, verlinkt und gegen den aktuellen Begriffsstand eingeordnet.</p>
+      <div class="version-summary-grid" aria-label="Versionsstatus">
+        <div><span>Original</span><strong>${esc(sourceVersion)}</strong><small>bleibt zitierfähig</small></div>
+        <div><span>Onlinefassung</span><strong>${esc(liveVersion)}</strong><small>lesbar, verlinkt, versioniert</small></div>
+        <div><span>Prüfstand</span><strong>${esc(statusText)}</strong><small>weitere Delta-Reviews laufen</small></div>
+      </div>
+      ${note ? `<div class="version-summary-note">${note}</div>` : ""}
+      <details class="technical-meta">
+        <summary>Technische Versionsdaten anzeigen</summary>
+        <dl>
+          <dt>Dokument-ID</dt><dd>${esc(documentId)}</dd>
+          <dt>Import-Version</dt><dd>${esc(importVersion)}</dd>
+          <dt>Terminologiebasis</dt><dd>${esc(terminologyBase)}</dd>
+          <dt>Terminologiebasis-Stand</dt><dd>${esc(terminologyDate)}</dd>
+          ${sourceHash ? `<dt>Source-Hash</dt><dd>${esc(sourceHash)}</dd>` : ""}
+        </dl>
+      </details>
+    </section>`;
+  });
 }
 
 function pillList(items, className = "reference-pill-list") {
@@ -283,7 +330,7 @@ function chapterCard(chapter, relativePrefix = "") {
       <div class="chapter-card-meta">
         <span>${esc(chapter.cluster.label)}</span>
         <span>${chapter.priority ? "UX-priorisiert" : "strukturiert"}</span>
-        <span>${esc(chapter.reviewStatus)}</span>
+        <span>${esc(reviewStatusLabel(chapter.reviewStatus))}</span>
       </div>
       ${pillList(chapter.terms.slice(0, 4))}
     </article>`;
@@ -735,6 +782,7 @@ function enhanceChapter(chapter, chapters) {
   html = html.replace(/class="meta-box related-panel"/g, 'class="reference-context-rail related-panel"');
   html = html.replace(/(<aside class="reference-context-rail related-panel"[\s\S]*?)(<\/aside>\s*<\/main>)/, `$1${contextAdditions(chapter)}
         $2`);
+  html = versionStatusBox(html);
   const index = chapters.findIndex((item) => item.number === chapter.number);
   const previous = chapters[index - 1];
   const next = chapters[index + 1];
@@ -769,6 +817,13 @@ function enhanceDocument(file) {
   html = html.replace(/(<article class="article-shell">)/, `$1
         <!-- reference-ux:start -->${toc}<!-- reference-ux:end -->`);
   html = ensureScripts(html, file);
+  write(file, html);
+}
+
+function enhanceFullText() {
+  const file = "referenz/volltext/index.html";
+  if (!fs.existsSync(file)) return;
+  const html = versionStatusBox(read(file));
   write(file, html);
 }
 
@@ -970,6 +1025,7 @@ function main() {
   }
 
   for (const chapter of chapters) enhanceChapter(chapter, chapters);
+  enhanceFullText();
   for (const doc of fs.readdirSync("dokumente", { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
     const file = `dokumente/${doc.name}/index.html`;
     if (fs.existsSync(file)) enhanceDocument(file);

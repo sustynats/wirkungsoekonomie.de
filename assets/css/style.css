@@ -7590,6 +7590,81 @@ textarea {
   position: sticky;
 }
 
+.version-summary {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(47, 125, 92, 0.2);
+  border-radius: var(--radius);
+  background: rgba(236, 244, 239, 0.46);
+}
+
+.version-summary h2 {
+  font-size: clamp(1.05rem, 1.25vw, 1.25rem);
+  line-height: 1.2;
+}
+
+.version-summary p {
+  max-width: 64rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.version-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.version-summary-grid > div {
+  display: grid;
+  gap: 0.22rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(11, 16, 32, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.version-summary-grid span,
+.version-summary-grid small,
+.technical-meta summary {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.version-summary-grid strong {
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.version-summary-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.version-summary-note p {
+  margin: 0;
+}
+
+.technical-meta {
+  border-top: 1px solid rgba(11, 16, 32, 0.08);
+  padding-top: 0.8rem;
+}
+
+.technical-meta summary {
+  cursor: pointer;
+}
+
+.technical-meta dl {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.technical-meta dd {
+  overflow-wrap: anywhere;
+}
+
 .context-module {
   display: grid;
   gap: 0.45rem;
