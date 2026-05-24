@@ -870,6 +870,30 @@ h4 {
   gap: 1rem;
 }
 
+.sdg-reference-visual {
+  width: min(calc(100% - 2rem), 1240px);
+  margin: clamp(1.5rem, 4vw, 3rem) auto var(--space-section);
+}
+
+.sdg-reference-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(11, 27, 54, 0.12);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+
+.sdg-reference-visual figcaption {
+  max-width: 68rem;
+  margin: 0.75rem auto 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .portal-list {
   margin: 0.75rem 0 0;
   padding-left: 1.1rem;
@@ -8823,6 +8847,16 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     border: 0;
     box-shadow: none;
     background: #fff;
+  }
+
+  .sdg-reference-visual {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .sdg-reference-visual img {
+    border-color: #bbb;
+    box-shadow: none;
   }
 
   body {

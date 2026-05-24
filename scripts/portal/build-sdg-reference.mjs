@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-sdg-reference";
+const CSS_VERSION = "20260524-sdg-reference-graphic";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const DETAIL_MATRIX_PATH = path.join(ROOT, "data/sdg_detail_matrix_v0_3.json");
 const detailMatrix = fs.existsSync(DETAIL_MATRIX_PATH)
@@ -536,6 +536,10 @@ function overviewPage() {
         </aside>
       </div>
     </section>
+    <figure class="sdg-reference-visual" aria-labelledby="sdg-reference-visual-caption">
+      <img src="${href(base, "assets/img/generated/sdg-sdgplus-referenzrahmen.png")}" alt="Grafische Übersicht des SDG-/SDG+-Referenzrahmens mit den 17 SDGs und den sieben SDG+-Dimensionen Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung." loading="eager" width="1672" height="941">
+      <figcaption id="sdg-reference-visual-caption">Der SDG-/SDG+-Referenzrahmen verbindet die 17 Nachhaltigkeitsziele mit den demokratischen, medialen, rechtsstaatlichen und digitalen Voraussetzungen der Wirkungsökonomie.</figcaption>
+    </figure>
     <section class="section" aria-labelledby="sdg-list">
       <div class="section-header">
         <p class="hero-kicker">Agenda 2030</p>
