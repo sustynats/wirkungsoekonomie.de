@@ -48,8 +48,8 @@ function slugify(value) {
     .slice(0, 90);
 }
 
-function citeAnchor(id, label = "Zitierlink") {
-  return `<a class="cite-anchor no-print" href="#${id}" aria-label="${label} zu diesem Abschnitt">#</a>`;
+function citeAnchor(id, label = "Zitierlink zu diesem Abschnitt") {
+  return `<a class="cite-anchor no-print" href="#${id}" aria-label="${label}">#</a>`;
 }
 
 function placeholderHeader(base) {
