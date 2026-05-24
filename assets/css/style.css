@@ -836,7 +836,7 @@ h4 {
   z-index: 900;
   left: 0;
   bottom: calc(100% + 0.5rem);
-  width: min(22rem, 82vw);
+  width: min(24rem, 82vw);
   padding: 0.85rem 0.95rem;
   border: 1px solid rgba(11, 27, 54, 0.14);
   border-radius: 8px;
@@ -844,7 +844,13 @@ h4 {
   color: var(--navy);
   box-shadow: 0 20px 55px rgba(11, 16, 32, 0.18);
   font-size: 0.9rem;
+  font-weight: 500;
   line-height: 1.45;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
   opacity: 0;
   pointer-events: none;
   transform: translateY(0.25rem);
@@ -860,9 +866,11 @@ h4 {
 
 .sdg-ref-more {
   display: block;
-  margin-top: 0.45rem;
+  width: fit-content;
+  margin-top: 0.55rem;
   color: var(--green);
-  font-weight: 850;
+  font-weight: 750;
+  white-space: nowrap;
 }
 
 .sdg-reference-grid {

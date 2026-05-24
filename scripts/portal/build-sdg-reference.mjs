@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-sdg-reference-popover";
+const CSS_VERSION = "20260524-sdg-reference-popover-text";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const DETAIL_MATRIX_PATH = path.join(ROOT, "data/sdg_detail_matrix_v0_3.json");
 const SDG_HISTORY_TIMELINE_PATH = path.join(ROOT, "data/sdg_history_timeline_v0_1.json");
