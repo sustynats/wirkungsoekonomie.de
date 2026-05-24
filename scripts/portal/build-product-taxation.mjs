@@ -1235,6 +1235,51 @@ function calculatorPage() {
   });
 }
 
+function productArbeitsbibliothekPage() {
+  page({
+    rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/index.html",
+    title: "Produkte & Konsum in der Arbeitsbibliothek | Werkstatt der Wirkungsökonomie",
+    description: "Arbeitsbibliothek zu Produkte & Konsum: Konzeptpapier, Dossier, Beispiele, Leitlinien, Gesetze, Werkzeuge und Demos.",
+    searchSection: "Werkstatt",
+    searchType: "Arbeitsbibliothek",
+    body: (base, route) => `<section class="hero">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav>
+        <p class="hero-kicker">Arbeitsbibliothek · Wirkungsfeld</p>
+        <h1 class="hero-title">Produkte &amp; Konsum</h1>
+        <p class="hero-subtitle">Konzeptpapiere, Dossiers, Beispiele, Leitlinien und Werkzeuge zum ersten tiefen Modellbereich der Wirkungsökonomie.</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Produktportal öffnen</a>`)}
+      </div>
+    </section>
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section" aria-labelledby="produktbibliothek">
+      <div class="section-header">
+        <p class="hero-kicker">Regel</p>
+        ${sectionTitle("produktbibliothek", "Online lesen vor Download")}
+        <p>Konzepte und Dossiers werden hier als Arbeitsbibliothek-Einträge geführt. Der kanonische Zugang bleibt online lesbar und zitierfähig; Word/PDF-Dateien sind ergänzende Export- und Archivfassungen.</p>
+      </div>
+      ${cardGrid(base, [
+        { kicker: "Konzeptpapier", title: "Produktbesteuerung durch Wirkung", text: "Kanonische Online-Fassung des Konzeptpapiers zu NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Steuerklassen und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Online lesen" },
+        { kicker: "Dossier", title: "Dossier Produkte & Konsum", text: "Rechenmodell V0.1, Tarifmatrix, Apfelrechnung, T-Shirt-Rechnung, Lieferkettenlogik und Quellen online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/", label: "Online lesen" },
+        { kicker: "Werkstatt", title: "Whitepaper-Eintrag", text: "Werkstatt-Verweis auf das Produktpapier mit Online-Volltext und ergänzenden Downloadhinweisen.", href: "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/", label: "Werkstatt öffnen" },
+        { kicker: "Werkstatt", title: "Dossier-Eintrag", text: "Werkstatt-Verweis auf das Dossier Produkte & Konsum.", href: "werkstatt/dossiers/produkte-konsum/", label: "Werkstatt öffnen" },
+        { kicker: "Beispiel", title: "Regionaler Apfel vs. Chile-Apfel", text: "Produktscorecard und Wirkungssteuerlogik am Apfelbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/", label: "Online lesen" },
+        { kicker: "Beispiel", title: "T-Shirt / Textilbeispiel", text: "Modellseite für Textilien, Arbeit, Wasser, Chemie, Kreislauf und Produktwirkung.", href: "wirkungsfelder/produkte-konsum/t-shirt/", label: "Online lesen" },
+        { kicker: "Lieferkette", title: "Wirkungsökonomie in der Lieferkette", text: "Volltext zu Lieferketten, Vorsteuerlogik, Datenräumen und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten/", label: "Online lesen" },
+        { kicker: "Konzernbeispiel", title: "Von der CSRD zur Produktscorecard", text: "BASF-/Polyamid-Beispiel für Produktgruppen und Berichtsdaten.", href: "wirkungsfelder/produkte-konsum/basf-polyamid/", label: "Online lesen" },
+        { kicker: "Leitlinie", title: "Technische Leitlinien WUStG", text: "Online-Fassung der technischen Leitlinien als Werkstattquelle.", href: "werkstatt/leitlinien/wustg/", label: "Leitlinie lesen" },
+        { kicker: "Gesetz", title: "Wirkungssteuergesetz WStG", text: "LawReader mit Paragrafen, Kurzfassungen, Kommentar und Begründung.", href: "werkstatt/gesetze/wirkungssteuergesetz/", label: "Gesetz lesen" },
+        { kicker: "Demo", title: "Produktwirkungsrechner", text: "Modellhafte Simulation von Scores, FinalScore, Steuerklasse und Bruttopreis.", href: "erleben/produktwirkungsrechner/", label: "Demo öffnen" },
+        { kicker: "Archiv", title: "Working Paper PDF", text: "Bestehende PDF-Fassung bleibt als Archiv- und Exportfassung erreichbar.", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf", label: "PDF öffnen" },
+      ])}
+    </section>
+    ${toolCards(base)}
+    ${sdgBlock(base, "Die Arbeitsbibliothek ordnet Produktwirkung an SDGs und SDG+ an, ohne die SDGs als Menübaum zu behandeln. Entscheidend bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie.")}
+    ${bookBlock(base)}
+    ${downloadBlock(base, conceptDownloads)}`,
+  });
+}
+
 function updateSitemap() {
   const sitemapPath = path.join(ROOT, "sitemap.xml");
   if (!fs.existsSync(sitemapPath)) return;
@@ -1260,6 +1305,8 @@ function updateSitemap() {
     "werkstatt/leitlinien/wustg/",
     "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/",
     "werkstatt/dossiers/produkte-konsum/",
+    "werkstatt/arbeitsbibliothek/konzepte-dossiers/",
+    "werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/",
     "erleben/produktwirkungsrechner/",
   ];
   let sitemap = fs.readFileSync(sitemapPath, "utf8");
@@ -1330,6 +1377,7 @@ function build() {
   });
   calculatorPage();
   workshopAliasPages();
+  productArbeitsbibliothekPage();
   compactContextPage({
     rel: "wirkungsfelder/produkte-konsum/verbraucherinformation/index.html",
     title: "Verbraucherinformation",

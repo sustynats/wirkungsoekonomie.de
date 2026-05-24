@@ -403,7 +403,12 @@ const fields = [
     concepts: ["Produkte als Wirkungsträger", "Ehrliche Preise", "Produktscorecards", "Digitale Produktpässe"],
     actors: ["Verbraucher:innen", "Hersteller", "Handel", "Prüfstellen", "Politik"],
     demos: [{ label: "Produktwirkung erleben", href: "erleben.html#simulator" }, { label: "Scorecard-Demo", href: "scorecard-dashboard.html" }],
-    docs: [{ label: "Working Paper Produktbesteuerung", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf" }, { label: "Apfelbeispiel", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" }],
+    docs: [
+      { label: "Konzeptpapier Produktbesteuerung durch Wirkung", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+      { label: "Dossier Produkte & Konsum", href: "wirkungsfelder/produkte-konsum/dossier/" },
+      { label: "Working Paper Produktbesteuerung", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf" },
+      { label: "Apfelbeispiel", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
+    ],
     anchors: [{ label: "Produkte als Wirkungsträger", href: "referenz/kapitel-048-produkte-als-wirkungstraeger/" }, { label: "Ehrliche Preise", href: "referenz/kapitel-049-ehrliche-preise/" }, { label: "Produktscorecards", href: "referenz/kapitel-050-produktscorecards/" }, { label: "Apfelbeispiel", href: "referenz/kapitel-051-das-apfelbeispiel/" }],
   },
   {
@@ -1025,6 +1030,7 @@ function workshopPages() {
     ["Gesetze", "Wirkungssteuergesetz, WUStG, Wirkungshaushalt und rechtliche Prüfnotizen.", "werkstatt/arbeitsbibliothek/gesetze/"],
     ["Methodik", "WÖk-IDs, Scorecards, Datenstandards, Quellenlogik und Bewertungsregeln.", "werkstatt/arbeitsbibliothek/methodik/"],
     ["Whitepaper", "Grundlagen- und Methodenpapiere.", "werkstatt/arbeitsbibliothek/whitepaper/"],
+    ["Konzepte & Dossiers", "Online lesbare Konzeptpapiere, Dossiers und zitierfähige Arbeitsfassungen.", "werkstatt/arbeitsbibliothek/konzepte-dossiers/"],
     ["Praxis", "Produktbeispiele, Lieferketten, Konzernbeispiele und Use Cases.", "werkstatt/arbeitsbibliothek/praxis/"],
     ["Soziales", "Arbeit, Einkommen, Rente, Care und soziale Sicherung.", "werkstatt/arbeitsbibliothek/soziales/"],
     ["Recht", "Juristische Prüfnotizen, Risikolandkarten und Verfahrensmodelle.", "werkstatt/arbeitsbibliothek/recht/"],
@@ -1039,8 +1045,9 @@ function workshopPages() {
   const simplePages = [
     ["gesetze", "Gesetze und Rechtsentwürfe", [["Wirkungssteuergesetz WStG", "Rahmenentwurf zur Wirkungssteuerlogik.", "dokumente/wstg-oktober-2025/"], ["Technische Leitlinien WUStG", "Leitlinien zur Produktwirkungssteuer.", "dokumente/technische-leitlinien-wustg-v2/"], ["Wirkungsrat", "Governance und institutionelle Sicherung.", "dokumente/wirkungsrat-konzept/"]]],
     ["methodik", "Methodik", [["WÖk Master Items", "Indikatorenarchitektur und Master Items.", "dokumente/woek-master-items-final-v1-2/"], ["Datenbasis", "Methodik, Standards und Regularien.", "methodik/datenbasis.html"], ["Scorecard-Demo", "Operative Bewertung sichtbar machen.", "scorecard-dashboard.html"]]],
-    ["whitepaper", "Whitepaper", [["T-SROI", "Transformationswirkung und Impact Controlling.", "dokumente/whitepaper-t-sroi/"], ["Wirkung statt Kapital", "Grundlagen und Paradigmenwechsel.", "assets/pdf/whitepaper-wirkung-statt-kapital.pdf"], ["Wirkungseinkommen", "Einkommen und Wirkung.", "assets/pdf/whitepaper-wirkungseinkommen.pdf"]]],
-    ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Produktscorecard und Bonusregel.", "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "dokumente/wirkungsoekonomie-in-der-lieferkette/"], ["Beispiel Konzern", "Konzern- und Produktscorecard.", "dokumente/beispiel-konzern/"]]],
+    ["whitepaper", "Whitepaper", [["T-SROI", "Transformationswirkung und Impact Controlling.", "dokumente/whitepaper-t-sroi/"], ["Produktbesteuerung durch Wirkung", "Kanonische Online-Fassung des Produktpapiers.", "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"], ["Wirkung statt Kapital", "Grundlagen und Paradigmenwechsel.", "assets/pdf/whitepaper-wirkung-statt-kapital.pdf"], ["Wirkungseinkommen", "Einkommen und Wirkung.", "assets/pdf/whitepaper-wirkungseinkommen.pdf"]]],
+    ["konzepte-dossiers", "Konzepte & Dossiers", [["Produktbesteuerung durch Wirkung", "Online lesbares Konzeptpapier im Portal Produkte & Konsum.", "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"], ["Dossier Produkte & Konsum", "Rechenmodell, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.", "wirkungsfelder/produkte-konsum/dossier/"], ["Die Wirkungsschule", "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", "wirkungsfelder/bildung/wirkungsschule/"], ["Dossier Wohnen", "Öffentliches Dossier zum Wirkungsfeld Wohnen.", "blog/dossiers/wohnen.html"], ["Dossier Medien & Demokratie", "Öffentliches Dossier zu Medien, Demokratie und Wirkung.", "blog/dossiers/medien-demokratie.html"], ["Grundlagen-Dossier", "Projekt- und Grundlagenmaterialien.", "blog/dossiers/grundlagen.html"]]],
+    ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Produktscorecard und Bonusregel.", "wirkungsfelder/produkte-konsum/apfelbeispiel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "wirkungsfelder/produkte-konsum/lieferketten/"], ["Beispiel Konzern", "Konzern- und Produktscorecard.", "wirkungsfelder/produkte-konsum/basf-polyamid/"], ["T-Shirt / Textilbeispiel", "Modellseite für Textilien als Wirkungsträger.", "wirkungsfelder/produkte-konsum/t-shirt/"]]],
     ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "docs/soziales/Wirkungseinkommen_Grunddividende_v1.1_Zielmodell.md"]]],
     ["recht", "Recht", [["Juristische Risikolandkarte", "Rechtsprüfung und Risiken.", "docs/recht/WOeK_Juristische_Risikolandkarte_v1.1.md"], ["WStG Prüfnotiz", "Juristische Prüfung des WStG.", "docs/recht/WStG_2.0_Juristische_Pruefnotiz.md"], ["Wirkungsrat Prüfnotiz", "Governance und Rechtsrahmen.", "docs/recht/Wirkungsrat_Juristische_Pruefnotiz_Governance.md"]]],
     ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Nachhaltigkeit als Systemarchitektur", "Architekturpapier.", "docs/architektur/Nachhaltigkeit_als_Systemarchitektur_v1.1.md"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
