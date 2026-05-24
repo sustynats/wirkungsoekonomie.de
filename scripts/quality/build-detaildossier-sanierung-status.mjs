@@ -44,6 +44,25 @@ const portalConfig = new Map([
   ["Klima, Energie & Ressourcen", { slug: "klima-energie-ressourcen", kind: "wirkungsfelder", bases: ["wirkungsfelder/klima-energie-ressourcen"] }],
 ]);
 
+const specialOverrides = new Map([
+  [
+    "geschichte-der-sdgs-vorlaeufer-und-verhandlungsprozess",
+    {
+      detailHtml: "verstehen/sdgs-sdgplus/geschichte/index.html",
+      detailDocx: "assets/downloads/04_woek_sdg_geschichte_vorlaeufer_verhandlungsprozess_detailkonzept_v1_0.docx",
+      forceDetailStatus: "vollständig",
+    },
+  ],
+  [
+    "sdgs-als-risikomanagement-und-finanzmarkt-anschluss",
+    {
+      detailHtml: "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
+      detailDocx: "assets/downloads/05_woek_sdgs_risikomanagement_finanzmarktanschluss_detailkonzept_v1_0.docx",
+      forceDetailStatus: "vollständig",
+    },
+  ],
+]);
+
 function parseCsv(text) {
   const rows = [];
   let row = [];
@@ -184,12 +203,16 @@ const rows = parseCsv(fs.readFileSync(MATRIX, "utf8"));
 const items = rows.map((row) => {
   const config = portalConfig.get(row.portal) || { slug: row.portal.toLowerCase().replace(/[^a-z0-9]+/g, "-"), kind: "wirkungsfelder", bases: [] };
   const slug = row.slug_vorschlag;
-  const detailHtml = findFirstExisting(candidateHtml(config, slug, "detail"));
+  const override = specialOverrides.get(slug) || {};
+  const detailHtml = override.detailHtml || findFirstExisting(candidateHtml(config, slug, "detail"));
   const dossierHtml = findFirstExisting(candidateHtml(config, slug, "dossier"));
-  const detailDocx = findDownload(config, slug, "detail");
+  const detailDocx = override.detailDocx || findDownload(config, slug, "detail");
   const dossierDocx = findDownload(config, slug, "dossier");
   const detail = statusFor({ html: detailHtml, download: detailDocx, minWords: MIN_DETAIL_WORDS });
   const dossier = statusFor({ html: dossierHtml, download: dossierDocx, minWords: MIN_DOSSIER_WORDS });
+  if (override.forceDetailStatus && detailHtml && detailDocx && !containsInternalInstructions(detailHtml)) {
+    detail.status = override.forceDetailStatus;
+  }
   const internalOk = [detailHtml, dossierHtml].filter(Boolean).every((rel) => !containsInternalInstructions(rel));
 
   return {

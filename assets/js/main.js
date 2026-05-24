@@ -1091,10 +1091,10 @@ function initPublicationAccessFallback() {
   const detailHref = config.detail === "#detailkonzept" && !hasLocalDetail ? config.fallbackDetail : config.detail;
   const dossierHref = config.dossier === "#dossier" && !hasLocalDossier ? config.fallbackDossier : config.dossier;
   const cards = [
-    ["Langfassung", "Detailkonzept online lesen", "Die fachliche Langfassung ist online lesbar und zitierfähig.", detailHref, "Online lesen"],
-    ["Dossier", "Dossier online lesen", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Grenzen.", dossierHref, "Online lesen"],
-    ["Download", "Detailkonzept Word", "Exportfassung der langen Detailkonzepte.", config.detailDownload, "Herunterladen"],
-    ["Download", "Dossier Word", "Exportfassung des Dossiers oder Einzeldossier-Sets.", config.dossierDownload, "Herunterladen"],
+    ["Online-Fassung", "Vertiefung online lesen", "Je nach Bereich: Portal-Grundkonzept, Kurzüberblick, Arbeitsfassung oder freigegebene Detailfassung.", detailHref, "Online lesen"],
+    ["Praxisfassung", "Dossierbereich öffnen", "Anwendung, Annahmen, Bewertungslogik, Datenquellen, Beispiele oder Arbeitsstand.", dossierHref, "Online lesen"],
+    ["Download", "Konzept-Export", "Word-Export mit Dokumentstatus auf der Zielseite.", config.detailDownload, "Herunterladen"],
+    ["Download", "Dossier-Export", "Word-Export des Dossiers, Einzeldossier-Sets oder Arbeitsstands.", config.dossierDownload, "Herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {
@@ -1108,8 +1108,9 @@ function initPublicationAccessFallback() {
   section.innerHTML = `
     <div class="section-header">
       <p class="hero-kicker">Online lesen und herunterladen</p>
-      <h2 id="publikationszugang-title">Detailkonzepte und Dossiers <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-      <p>Die langen Fassungen sind direkt online lesbar und zitierfähig. Word-Dateien bleiben ergänzende Export- und Archivfassungen.</p>
+      <h2 id="publikationszugang-title">Publikationszugang <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Online-Fassungen sind der Hauptzugang. Word-Dateien bleiben ergänzende Export- und Archivfassungen.</p>
+      <p>Der Dokumentstatus unterscheidet Portal-Grundkonzept, Kurzüberblick, Methodenpapier, Detailkonzept, Dossier und Arbeitsstand.</p>
     </div>
     <div class="card-grid three">${cards.map(([kicker, title, text, link, label]) => `
       <article class="card">
@@ -1130,3 +1131,135 @@ function initPublicationAccessFallback() {
 }
 
 initPublicationAccessFallback();
+
+function initBestandsschutzStatus() {
+  if (!mainElement || document.querySelector(".bestandsschutz-status")) {
+    return;
+  }
+
+  const path = window.location.pathname.replace(/\/index\.html$/, "/");
+  const configs = [
+    {
+      prefixes: ["/verstehen/sdgs-sdgplus/"],
+      title: "Referenzportal mit gezielter Vertiefung",
+      text: "Die Übersicht bleibt Einstieg und Referenzportal. Die Go-3- und Go-4-Ausarbeitungen werden als Vertiefungen geführt; SDG+ bleibt Teil des gemeinsamen Referenzrahmens.",
+      badges: ["Referenzportal vorhanden", "Detailkonzepte veröffentlicht", "Unterzielmatrix veröffentlicht"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/produkte-konsum/"],
+      title: "Starke Arbeitspapiere bleiben Hauptgrundlage",
+      text: "Produktbesteuerung, Apfelbeispiel, Lieferketten und WUStG-Leitlinien bleiben erhalten. Kürzere Zwischenstände werden als Kurzüberblick oder Arbeitsstand eingeordnet.",
+      badges: ["Portal-Grundkonzept vorhanden", "Arbeitspapiere vorhanden", "Detailtiefe wird gezielt ergänzt"],
+    },
+    {
+      prefixes: ["/werkzeuge/impact-controlling/"],
+      title: "Methodenportal statt Fachdetailkonzept",
+      text: "T-SROI, NWI, WÖk-IDs, Scorecards und Reverse Merit Order sind Methoden- und Toolgrundlagen. Sie werden nicht als Fachdetailkonzepte etikettiert.",
+      badges: ["Methodenbasis vorhanden", "Toolstatus sichtbar", "Dossiers werden geprüft"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/staat-recht-demokratie/", "/werkstatt/dossiers/staat-recht-demokratie/"],
+      title: "Rechts- und Governance-Grundlagen sichern",
+      text: "WStG, Wirkungsrat und politische Anschlussfähigkeit bleiben die tragenden Grundlagen. Vertiefungen werden dort ergänzt, wo Rechtsschutz, Verhältnismäßigkeit oder Wirkungshaushalt zusätzliche Tiefe brauchen.",
+      badges: ["Portal-Grundkonzept vorhanden", "Rechtsgrundlagen vorhanden", "Vertiefung nach Bedarf"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/wirtschaft-unternehmen/"],
+      title: "Portaltext behalten, Unterbereiche sauber einordnen",
+      text: "Die Seite bleibt Einstieg in Wirtschaft und Unternehmen. Kurze Unterbereichstexte werden als Kurzprofile geführt; echte Detailkonzepte und Dossiers werden getrennt ausgewiesen.",
+      badges: ["Portal-Grundkonzept vorhanden", "Kurzprofile vorhanden", "Detailkonzepte in Prüfung"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/wohnen-stadt/"],
+      title: "Wohnungsmarkt-Arbeitspapiere weiterverwenden",
+      text: "Das Wohnungsmarkt-Working-Paper und die Investor:innen-/Vermieter:innen-Ausarbeitung bleiben Hauptgrundlagen. Weitere Unterbereiche werden daraus gezielt vertieft.",
+      badges: ["Portal-Grundkonzept vorhanden", "Starke Arbeitspapiere vorhanden", "Vertiefungen in Arbeit"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/arbeit-einkommen/"],
+      title: "Grundgedanken sichern, Fachlücken vertiefen",
+      text: "Die bestehende Portal-Logik bleibt erhalten. Unterbereichstexte werden als Kurzprofile eingeordnet, bis echte Detailkonzepte zu Sozialabgaben-Entkopplung, Wirkungseinkommen und Maschinenwertschöpfung vorliegen.",
+      badges: ["Portal-Grundkonzept vorhanden", "Kurzprofile vorhanden", "Detailkonzepte in Arbeit"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/rente-soziale-sicherung/"],
+      title: "WP Rente als starke Grundlage",
+      text: "Das umfangreiche Rentenpapier wird nicht ersetzt, sondern als Hauptgrundlage für Wirkungsrente, Lebenswirkungs-Konto und Fondslogik genutzt.",
+      badges: ["Portal-Grundkonzept vorhanden", "Arbeitspapier vorhanden", "Vertiefung gezielt"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/bildung/"],
+      title: "Bildungsportal erhalten und besser strukturieren",
+      text: "Das wirkungsökonomische Schulkonzept bleibt erhalten. Online-Lesen, Downloads und Unterbereichsstatus werden schrittweise klarer getrennt.",
+      badges: ["Portal-Grundkonzept vorhanden", "Kurzprofile vorhanden", "UX und Downloads in Prüfung"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/medien-oeffentlichkeit/"],
+      title: "Grobkonzept als Portalgrundlage",
+      text: "Das Medien-Grobkonzept bleibt Einstieg. Detailkonzepte werden gezielt für Plattformlogik, Journalismus, Desinformation, Creator-Verantwortung und Medienqualität ergänzt.",
+      badges: ["Portal-Grundkonzept vorhanden", "Kurzüberblicke vorhanden", "Vertiefung in Arbeit"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/gesundheit-pflege/"],
+      title: "Gesundheit und Pflege sauber labeln",
+      text: "Vorhandene Grundlagen bleiben erhalten. Flache Texte werden nicht als Detailkonzept bezeichnet, sondern als Kurzüberblick oder Arbeitsstand.",
+      badges: ["Portal-Grundkonzept vorhanden", "Kurzüberblicke vorhanden", "Detailkonzepte zu prüfen"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/wissenschaft-innovation-digitalisierung/"],
+      title: "Portalgrundlagen mit gezielter Vertiefung",
+      text: "Buchkapitel, Systemmodell und Portaltexte bleiben Grundlage. Detailkonzepte werden für Wissenschaft, Open Science, KI, Datenräume, Souveränität und Innovationswirkung ergänzt.",
+      badges: ["Portal-Grundkonzept vorhanden", "Themenlandkarte vorhanden", "Vertiefung in Arbeit"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/finanzsystem-kapital/"],
+      title: "Finanzsystem als Querschnitt behalten",
+      text: "Bestehende Kapital- und Finanzierungsunterlagen bleiben erhalten. Vertiefungen werden für Kapitalwirkung, Banken, Versicherungen, ESG-Ratings, Wirkungsfonds und Steuerarchitektur ergänzt.",
+      badges: ["Portal-Grundkonzept vorhanden", "Querschnitt vorhanden", "Detailkonzepte in Arbeit"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/klima-energie-ressourcen/"],
+      title: "Masterdokumente als Grundlage einordnen",
+      text: "Die vorhandenen Masterdokumente werden als Portal-Grundkonzept, Gesamtdossier, Themenlandkarte und Toolgrundlage geführt, nicht pauschal als Detailkonzepte je Unterbereich.",
+      badges: ["Masterdokumente vorhanden", "Themenlandkarte vorhanden", "Detailkonzepte gezielt"],
+    },
+    {
+      prefixes: ["/wirkungsfelder/kultur-identitaet-resonanz/"],
+      title: "Neuer Bereich mit sauberer Benennung",
+      text: "Kultur, Identität und Resonanz beginnt mit Portal-Grundkonzept und Themenlandkarte. Detailkonzepte werden nur für echte Fachunterbereiche ausgewiesen.",
+      badges: ["Portal-Grundkonzept vorgesehen", "Kurzprofile vorgesehen", "Detailkonzepte später"],
+    },
+  ];
+
+  const config = configs.find((item) => item.prefixes.some((prefix) => path.startsWith(prefix)));
+  if (!config) {
+    return;
+  }
+
+  const heroSection = document.querySelector(".portal-hero") || document.querySelector(".hero");
+  const section = document.createElement("section");
+  section.className = "section status-note bestandsschutz-status";
+  section.id = "publikationsstatus";
+  section.setAttribute("aria-labelledby", "publikationsstatus-title");
+  section.innerHTML = `
+    <div class="section-header">
+      <p class="hero-kicker">Publikationsstatus</p>
+      <h2 id="publikationsstatus-title">${config.title} <a class="cite-anchor no-print" href="#publikationsstatus" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>${config.text}</p>
+      <p>Bestehende Inhalte werden gesichert, richtig benannt und nur dort vertieft, wo fachliche Tiefe fehlt.</p>
+    </div>
+    <div class="model-strip" aria-label="Status dieser Seite">
+      ${config.badges.map((badge) => `<span class="prototype-badge">${badge}</span>`).join("")}
+    </div>
+  `;
+
+  if (heroSection?.parentNode) {
+    heroSection.insertAdjacentElement("afterend", section);
+  } else if (mainElement.firstElementChild) {
+    mainElement.firstElementChild.insertAdjacentElement("afterend", section);
+  } else {
+    mainElement.append(section);
+  }
+}
+
+initBestandsschutzStatus();
