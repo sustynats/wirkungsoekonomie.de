@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-sdg-reference-brief";
+const CSS_VERSION = "20260524-sdg-reference-depth";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const DETAIL_MATRIX_PATH = path.join(ROOT, "data/sdg_detail_matrix_v0_3.json");
 const SDG_HISTORY_TIMELINE_PATH = path.join(ROOT, "data/sdg_history_timeline_v0_1.json");
@@ -760,8 +760,7 @@ function sdgDetailPage(item) {
       <div class="section-header">
         <p class="hero-kicker">Kurz erklärt</p>
         ${sectionTitle("short", "Kurz erklärt")}
-        <p>${escapeHtml(item.officialDescription)}</p>
-        <p>Wirkung ist nicht automatisch positiv. Sie beschreibt tatsächliche Zustandsveränderungen, die im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv, negativ oder neutral eingeordnet werden können.</p>
+        ${shortExplanationBlock(item)}
       </div>
     </section>
     ${isPlus ? sdgPlusSections(item, base) : sdgSections(item, base)}
@@ -769,6 +768,16 @@ function sdgDetailPage(item) {
     ${officialReferencesBlock(item)}
     ${exportBlock()}`,
   });
+}
+
+function shortExplanationBlock(item) {
+  const paragraphs = [
+    item.officialDescription,
+    item.depthDescription,
+    `Bezug zur Wirkungsökonomie: ${item.woekMeaning}`,
+    "Wirkung ist dabei nicht automatisch positiv. Sie beschreibt tatsächliche Zustandsveränderungen, die im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv, negativ oder neutral eingeordnet werden können. Entscheidend ist, ob eine Maßnahme positive Netto-Wirkung für Mensch, Planet und Demokratie erzeugt oder diesen Rahmen schwächt.",
+  ].filter(Boolean);
+  return paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n        ");
 }
 
 function sdgSections(item, base) {
