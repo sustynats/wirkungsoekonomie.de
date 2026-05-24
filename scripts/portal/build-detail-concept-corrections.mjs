@@ -284,7 +284,7 @@ function sanitizePublicText(text) {
     .replace(/Öffentlicher CharakterDieses/g, "Öffentlicher Charakter. Dieses")
     .replace(/Kernformel([A-ZÄÖÜ])/g, "Kernformel. $1")
     .replace(/Website, Online-Volltext, Download und Dossier/g, "Website, Online-Volltext, Download und Dossier")
-    .replace(/öffentliche Arbeitsfassung/g, "öffentliche Webfassung")
+    .replace(/öffentliche Fassung/g, "öffentliche Webfassung")
     .replace(/Toolbezug/g, "Werkzeugbezug")
     .replace(/Tools/g, "Werkzeuge")
     .replace(/Tool-/g, "Werkzeug-/")
@@ -406,13 +406,7 @@ function hero(base, kicker, title, subtitle, text, actionHref, actionLabel) {
 }
 
 function metaCard(status) {
-  return `<aside class="card status-meta" aria-label="Dokumentstatus"><p class="card-kicker">Dokumentstatus</p><dl>
-    <div><dt>Autorin</dt><dd>Natalie Weber</dd></div>
-    <div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>
-    <div><dt>Stand</dt><dd>24.05.2026</dd></div>
-    <div><dt>Version</dt><dd>v0.2 / Korrekturfassung</dd></div>
-    <div><dt>Status</dt><dd>${escapeHtml(status)}</dd></div>
-  </dl></aside>`;
+  return "";
 }
 
 function tocBlock(items) {
@@ -602,7 +596,7 @@ function buildRank(rank) {
 function sanitizePublicHtml() {
   const roots = ["wirkungsfelder", "werkzeuge", "werkstatt", "erleben"];
   const replacements = [
-    [/Arbeitsfassung für Online-Volltext, Dossier, Portal und Codex-Umsetzung\./g, "Arbeitsfassung für Online-Volltext, Dossier und Portal."],
+    [/Fassung für Online-Volltext, Dossier, Portal und Codex-Umsetzung\./g, "Fassung für Online-Volltext, Dossier und Portal."],
     [/im Repository vorhanden sind/g, "als öffentliche Exportfassung verfügbar sind"],
     [/im Repository vorhanden ist/g, "als öffentliche Exportfassung verfügbar ist"],
     [/im Repository vorliegen/g, "als öffentliche Exportfassung vorliegen"],
@@ -610,7 +604,7 @@ function sanitizePublicHtml() {
     [/sobald die Datei im Repository liegt/g, "sobald die öffentliche Exportfassung freigegeben ist"],
     [/Noch nicht im Repository gefunden: ([^<]+)\. Der Downloadlink wird erst gesetzt, sobald die Datei vorhanden ist\./g, "Download in Vorbereitung: $1."],
     [/Noch nicht im Repository gefunden: ([^<]+)\. Es wird kein kaputter Downloadlink gesetzt\./g, "Download in Vorbereitung: $1."],
-    [/Im aktuellen Repository liegt/g, "Im aktuellen öffentlichen Arbeitsstand liegt"],
+    [/Im aktuellen Repository liegt/g, "In der aktuellen öffentlichen Fassung liegt"],
     [/Die angekündigten Word-Dokumente werden verlinkt, sobald sie im Repository vorhanden sind\./g, "Die angekündigten Word-Dokumente werden nach öffentlicher Freigabe ergänzt."],
     [/bis die gelieferten Word-Dokumente im Repository vorliegen/g, "bis die freigegebenen Word-Dokumente ergänzt sind"],
     [/wenn sie im Repository vorhanden sind/g, "wenn sie öffentlich freigegeben sind"],

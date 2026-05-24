@@ -46,6 +46,20 @@ const productSdgs = [
   "SDG 17 Partnerschaften",
 ];
 
+const productSdgRefs = [
+  ["SDG 2 Kein Hunger", "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/", "Produktwirkung berührt Ernährung, Landwirtschaft, Versorgungssicherheit, Wasser und faire Wertschöpfung."],
+  ["SDG 3 Gesundheit und Wohlergehen", "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/", "Produkte können Gesundheit schützen, belasten oder Risiken über Inhaltsstoffe, Nutzung und Information erzeugen."],
+  ["SDG 6 Sauberes Wasser", "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/", "Wasserverbrauch, Wasserstress, Chemikalien und Abwasser gehören zur Produktwirkung."],
+  ["SDG 8 Menschenwürdige Arbeit", "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/", "Lieferketten, Löhne, Arbeitsschutz und Mitbestimmung werden produktbezogen sichtbar."],
+  ["SDG 9 Industrie, Innovation und Infrastruktur", "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/", "Produktinnovation, Dateninfrastruktur, Reparaturfähigkeit und industrielle Transformation werden rückgekoppelt."],
+  ["SDG 10 Weniger Ungleichheiten", "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/", "Preise, Kaufkraftschutz, Zugang und Lieferkettenfairness betreffen Verteilungswirkung."],
+  ["SDG 12 Nachhaltige/r Konsum und Produktion", "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/", "SDG 12 ist der direkte Referenzanker für Produktwirkung, Scorecards, Produktpässe und ehrliche Preise."],
+  ["SDG 13 Klimaschutz", "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/", "Produktklima, Energie, Transport, Nutzung und Entsorgung werden als Systemrisiko sichtbar."],
+  ["SDG 15 Leben an Land", "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/", "Rohstoffe, Landnutzung, Biodiversität, Pestizide und Entwaldung wirken über Produkte in Ökosysteme."],
+  ["SDG 16 Frieden, Gerechtigkeit und starke Institutionen", "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/", "Produktwirkung braucht Rechtsschutz, transparente Institutionen, Korruptionsschutz und Zugang zu Information."],
+  ["SDG 17 Partnerschaften", "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/", "Datenräume, Standards, Lieferkettenkooperation und internationale Anschlussfähigkeit sind Umsetzungsbedingungen."],
+];
+
 const sdgPlus = [
   "SDG+ Demokratie",
   "SDG+ Medienqualität",
@@ -54,6 +68,16 @@ const sdgPlus = [
   "SDG+ institutionelles Vertrauen",
   "SDG+ gesellschaftlicher Zusammenhalt",
   "SDG+ digitale Selbstbestimmung",
+];
+
+const productSdgPlusRefs = [
+  ["SDG+ Demokratie", "verstehen/sdgs-sdgplus/#sdgplus-demokratie", "Demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung."],
+  ["SDG+ Medienqualität", "verstehen/sdgs-sdgplus/#sdgplus-medienqualitaet", "Produktinformation, Werbung und Green Claims brauchen Quellenklarheit und Korrekturfähigkeit."],
+  ["SDG+ Rechtsstaatlichkeit", "verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit", "Wirkungssteuerung braucht Grundrechte, Rechtsschutz, Verhältnismäßigkeit und transparente Verfahren."],
+  ["SDG+ Diskursfähigkeit", "verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit", "Zielkonflikte um Preise, Konsum, Klima, Kaufkraft und Übergänge müssen öffentlich verhandelbar bleiben."],
+  ["SDG+ institutionelles Vertrauen", "verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen", "Verbraucher:innen und Unternehmen brauchen Vertrauen in Daten, Prüfstellen, Wirkungsrat und Korrekturwege."],
+  ["SDG+ gesellschaftlicher Zusammenhalt", "verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt", "Ehrliche Preise müssen mit Kaufkraftschutz, Fairness, Übergängen und Teilhabe verbunden werden."],
+  ["SDG+ digitale Selbstbestimmung", "verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung", "Digitale Produktpässe und Verbraucherinformation dürfen keine Personenbewertung oder Konsumüberwachung erzeugen."],
 ];
 
 const contextualTools = [
@@ -127,6 +151,67 @@ const contextualTools = [
   },
 ];
 
+const go8ToolRegistry = {
+  Produktwirkungsrechner: {
+    title: "Produktwirkungsrechner",
+    type: "Demo",
+    status: "Prototyp vorhanden",
+    href: "erleben/produktwirkungsrechner/",
+    demoHref: "erleben/produktwirkungsrechner/",
+    bookHref: "referenz/kapitel-050-produktscorecards/",
+    short: "Modellhafte Simulation von Produktbeispiel, Scores, FinalScore, Steuerklasse und Bruttopreis.",
+    why: "Macht die Logik der Wirkungsumsatzsteuer erfahrbar, ohne eine amtliche Einstufung zu behaupten.",
+  },
+  "Wirkungssteuer-Simulator": {
+    title: "Wirkungssteuer-Simulator",
+    type: "Toolidee",
+    status: "Demo in Vorbereitung",
+    href: "",
+    short: "Soll unterschiedliche Steuerklassen, Übergangspfade, soziale Abfederung und politische Varianten vergleichbar machen.",
+    why: "Die WUSt-Logik braucht nachvollziehbare Szenarien, bevor konkrete Satzhöhen politisch entschieden werden.",
+  },
+  "Apfel-Rechner": {
+    title: "Apfel-Rechner",
+    type: "Beispielrechner",
+    status: "Demo in Vorbereitung",
+    href: "wirkungsfelder/produkte-konsum/apfelbeispiel/",
+    short: "Überträgt das Apfelbeispiel in eine nachvollziehbare Scorecard- und Steuerklassenlogik.",
+    why: "Das Beispiel zeigt, dass Produktwirkung kontextabhängig ist und nicht aus Herkunft oder Label allein folgt.",
+  },
+  "T-Shirt-Lieferkettenrechner": {
+    title: "T-Shirt-Lieferkettenrechner",
+    type: "Beispielrechner",
+    status: "Demo in Vorbereitung",
+    href: "wirkungsfelder/produkte-konsum/t-shirt/",
+    short: "Soll Textilwirkung über Baumwolle, Wasser, Chemie, Arbeit, Transport, Nutzung und Kreislauf modellieren.",
+    why: "Textilien zeigen besonders gut, warum Lieferkette, Nutzung und Ende gemeinsam bewertet werden müssen.",
+  },
+  "Produktscorecard-Generator": {
+    title: "Produktscorecard-Generator",
+    type: "Toolidee",
+    status: "Demo in Vorbereitung",
+    href: "werkzeuge/produktscorecards/",
+    short: "Soll Produktklassen, Indikatoren, Datenqualität, Scores und FinalScore strukturiert zusammenführen.",
+    why: "Ohne Scorecard-Generator bleibt Produktwirkung schwer vergleichbar und schlecht auditierbar.",
+  },
+  "DPP-Demo": {
+    title: "DPP-Demo",
+    type: "Dateninfrastruktur",
+    status: "Konzeptseite vorhanden",
+    href: "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/",
+    short: "Zeigt, wie digitale Produktpässe Produkt-, Material-, Lieferketten-, Reparatur- und Wirkungsdaten tragen können.",
+    why: "Produktwirkung braucht ein Produktgedächtnis, das über Hersteller, Handel, Nutzung und Entsorgung hinweg lesbar bleibt.",
+  },
+  "WÖk-ID-Browser": {
+    title: "WÖk-ID-Browser",
+    type: "Datenwerkzeug",
+    status: "Konzeptseite vorhanden",
+    href: "werkzeuge/woek-ids/",
+    short: "Soll Indikatorfamilien, Quellen, Einheiten, Schwellen, Versionen und SDG-/SDG+-Bezüge recherchierbar machen.",
+    why: "WÖk-IDs verhindern beliebige KPI-Namen und machen Produktwirkung prüfbar.",
+  },
+};
+
 const externalSources = [
   ["UN SDGs", "https://sdgs.un.org/goals"],
   ["UN SDG Indicators", "https://unstats.un.org/sdgs/indicators/indicators-list/"],
@@ -149,6 +234,51 @@ const conceptDownloads = [
     required: true,
   },
   { label: "Working Paper PDF", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf" },
+];
+
+const go8ProductDetails = [
+  {
+    no: "15",
+    rel: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/index.html",
+    source: "docs/produkte-konsum/go8-detailkonzepte/online_volltext_15_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_0.md",
+    title: "Produkte als Wirkungsträger | Produkte & Konsum",
+    h1: "Produkte als Wirkungsträger",
+    subtitle: "Produktwirkung über Lebenszyklus, Lieferkette, Nutzung und Ende denken.",
+    description: "Echtes Detailkonzept zu Produkten als Wirkungsträgern: Lebenszyklus, Lieferkette, Nutzung, Ende, WÖk-IDs, Produktverantwortung und Verbraucherinformation.",
+    hero: "Dieses Detailkonzept vertieft, warum Produkte in der Wirkungsökonomie nicht nur Waren sind, sondern verdichtete Wirkungsräume aus Rohstoffen, Herstellung, Nutzung, Reparatur, Entsorgung und Information.",
+    docx: "assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_0.pdf",
+    detailText: "Lebenszyklus, Produktverantwortung, Verbraucherinformation und Produktdaten als Grundlage ehrlicher Preise.",
+    tools: ["Produktwirkungsrechner", "WÖk-ID-Browser", "Produktscorecard-Generator", "DPP-Demo"],
+  },
+  {
+    no: "16",
+    rel: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html",
+    source: "docs/produkte-konsum/go8-detailkonzepte/online_volltext_16_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_0.md",
+    title: "Wirkungsumsatzsteuer / Produktwirkungssteuer | Produkte & Konsum",
+    h1: "Wirkungsumsatzsteuer / Produktwirkungssteuer",
+    subtitle: "Preise, Steuern und Produktwirkung als Rückkopplungsarchitektur.",
+    description: "Echtes Detailkonzept zur Wirkungsumsatzsteuer: FinalScore, Steuerklasse, Reverse Merit Order, Vorsteuerlogik, Kaufkraftschutz, KMU-Übergänge und Wirkungsrat.",
+    hero: "Diese Vertiefung erklärt die Produktwirkungssteuer als demokratisch kontrollierte Preisrückkopplung: Sie verbietet nicht, sondern macht sichtbar, was der alte Preis verschweigt.",
+    docx: "assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_0.pdf",
+    detailText: "FinalScore, Steuerklassen, Vorsteuerlogik, Nichtkompensation, Kaufkraftschutz und rechtliche Einbettung.",
+    tools: ["Wirkungssteuer-Simulator", "Produktwirkungsrechner", "Apfel-Rechner", "T-Shirt-Lieferkettenrechner"],
+  },
+  {
+    no: "17",
+    rel: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/index.html",
+    source: "docs/produkte-konsum/go8-detailkonzepte/online_volltext_17_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_0.md",
+    title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe | Produkte & Konsum",
+    h1: "Produktscorecards, Reverse Merit Order und digitale Produktpässe",
+    subtitle: "Methodik für Produktwirkung, Datenqualität, Engpasslogik und Markttransparenz.",
+    description: "Echtes Detailkonzept zu Produktscorecards, Reverse Merit Order, WÖk-IDs, Datenqualität, digitalen Produktpässen, Assurance und Verbraucherinformation.",
+    hero: "Diese Vertiefung beschreibt die operative Brücke zwischen Produktdaten und Wirkungssteuerung: Scorecards, WÖk-IDs, Engpasslogik und digitale Produktpässe.",
+    docx: "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_0.pdf",
+    detailText: "Scorecard-Aufbau, Datenqualität, Benchmarks, Reverse Merit Order, DPP und Assurance als Produktgedächtnis.",
+    tools: ["Produktscorecard-Generator", "DPP-Demo", "WÖk-ID-Browser", "Produktwirkungsrechner"],
+  },
 ];
 
 const productSingleDossiers = [
@@ -590,10 +720,7 @@ function sectionTitle(id, text) {
 }
 
 function statusMeta(items = []) {
-  return `<aside class="card status-meta" aria-label="Dokumentstatus">
-      <p class="card-kicker">Dokumentstatus</p>
-      <dl>${items.map(([term, desc]) => `<div><dt>${escapeHtml(term)}</dt><dd>${escapeHtml(desc)}</dd></div>`).join("")}</dl>
-    </aside>`;
+  return "";
 }
 
 function dataTable(headers, rows) {
@@ -628,7 +755,7 @@ function toolCards(base, tools = contextualTools) {
           <p class="card-text">${escapeHtml(tool.short)}</p>
           <p class="card-text"><strong>Warum hier relevant?</strong> ${escapeHtml(tool.why)}</p>
           <div class="portal-card-actions">
-            <a class="text-link" href="${href(base, tool.href)}">Erklärung öffnen</a>
+            ${tool.href ? `<a class="text-link" href="${href(base, tool.href)}">Erklärung öffnen</a>` : `<span class="prototype-badge">Demo in Vorbereitung</span>`}
             ${tool.demoHref ? `<a class="text-link" href="${href(base, tool.demoHref)}">Demo öffnen</a>` : ""}
             ${tool.lawHref ? `<a class="text-link" href="${href(base, tool.lawHref)}">Gesetz/Leitlinie</a>` : ""}
             ${tool.bookHref ? `<a class="text-link" href="${href(base, tool.bookHref)}">Buchanker</a>` : ""}
@@ -639,14 +766,22 @@ function toolCards(base, tools = contextualTools) {
 }
 
 function sdgBlock(base, explanation) {
+  const renderBadge = ([label, target, text], index) => {
+    const id = `product-sdg-${index}-${slugify(label)}`;
+    return `<span class="sdg-ref" data-sdg-id="${slugify(label)}">
+      <a class="sdg-ref-link" href="${href(base, target)}" aria-label="${escapeHtml(`${label}: ${text}`)}" aria-describedby="${id}">${escapeHtml(label)}</a>
+      <button class="sdg-ref-info" type="button" aria-label="${escapeHtml(`Kurzbeschreibung zu ${label}: ${text}`)}" aria-describedby="${id}">i</button>
+      <span class="sdg-ref-popover" id="${id}" role="tooltip">${escapeHtml(text)} <span class="sdg-ref-more">Details öffnen</span></span>
+    </span>`;
+  };
   return `<section class="section" aria-labelledby="sdg-title">
       <div class="portal-reference-block">
         <p class="hero-kicker">Referenzrahmen</p>
         ${sectionTitle("sdg-title", "SDG-/SDG+-Bezug")}
         <h3>Relevante SDGs</h3>
-        <div class="model-strip">${productSdgs.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+        <div class="model-strip">${productSdgRefs.map((item, index) => renderBadge(item, index + 1)).join("")}</div>
         <h3>Relevante SDG+-Dimensionen</h3>
-        <div class="model-strip">${sdgPlus.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+        <div class="model-strip">${productSdgPlusRefs.map((item, index) => renderBadge(item, index + 100)).join("")}</div>
         <p>${escapeHtml(explanation)}</p>
         <p>SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
       </div>
@@ -747,7 +882,7 @@ function productStatus(status = "Konzept / Online-Volltext") {
 
 function sourceNotice(label) {
   return `<div class="scanner-notice" role="note">
-    <strong>Online-Volltext.</strong> Diese Seite bildet die vorhandene Quelle ${escapeHtml(label)} online lesbar ab. Fachliche Inhalte wurden nicht als Gesetz behauptet; Pilot-, Entwurfs- und Modellstatus bleiben sichtbar.
+    <strong>Online-Volltext.</strong> Diese Seite macht das zugrunde liegende Konzept online lesbar. Fachliche Inhalte werden als Modellannahmen eingeordnet; rechtliche Grenzen bleiben transparent.
   </div>`;
 }
 
@@ -769,7 +904,7 @@ function fulltextPage(config) {
       actions: config.primaryAction ? `<a class="btn btn-primary" href="${href(base, config.primaryAction.href)}">${escapeHtml(config.primaryAction.label)}</a>` : "",
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
-    <section class="section narrow">${productStatus(config.status || "Online-Volltext / Arbeitsfassung")}</section>
+    <section class="section narrow">${productStatus(config.status || "Online-Volltext / Fassung")}</section>
     <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
       <article class="article-body fulltext-reader">
@@ -786,6 +921,37 @@ function fulltextPage(config) {
     ${externalSourcesBlock(base)}
     ${downloadBlock(base, config.downloads || [])}`,
   });
+}
+
+function toolsForGo8Detail(detail) {
+  return detail.tools
+    .map((name) => go8ToolRegistry[name])
+    .filter(Boolean);
+}
+
+function go8DetailConceptPages() {
+  for (const detail of go8ProductDetails) {
+    fulltextPage({
+      rel: detail.rel,
+      source: detail.source,
+      title: detail.title,
+      description: detail.description,
+      kicker: `Detailkonzept ${detail.no} · Produkte & Konsum`,
+      h1: detail.h1,
+      subtitle: detail.subtitle,
+      hero: detail.hero,
+      contextIntro: (base) =>
+        `Diese Vertiefung ergänzt das Produktportal und verknüpft ${toolRef(base, "WÖk-IDs", "werkzeuge/woek-ids/", "Indikatoren mit Quelle, Einheit, Schwelle und Version.")}, ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster für Produktwirkung.")}, ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Schwere negative Wirkung wird nicht schöngerechnet.")} und digitale Produktdaten mit der Wirkungsumsatzsteuer.`,
+      tools: toolsForGo8Detail(detail),
+      sdgText:
+        "Diese Vertiefung ordnet Produktwirkung an SDGs, Agenda 2030 und SDG+ ein. Wirkung ist neutral und relational; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      downloads: [
+        { label: "DOCX herunterladen", href: detail.docx, required: true },
+        { label: "PDF öffnen", href: detail.pdf, required: true },
+        { label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" },
+      ],
+    });
+  }
 }
 
 function relatedBlocks(base) {
@@ -849,6 +1015,9 @@ function productPortal() {
         <p>PDFs und Word-Dateien bleiben ergänzend. Der Hauptzugang liegt hier online lesbar in den Portalseiten.</p>
       </div>
       ${cardGrid(base, [
+        { title: "Produkte als Wirkungsträger", text: "Echtes Detailkonzept zu Lebenszyklus, Lieferkette, Nutzung, Ende, Produktverantwortung und Verbraucherinformation.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Detailkonzept lesen" },
+        { title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Echtes Detailkonzept zu FinalScore, Steuerklasse, Vorsteuerlogik, Kaufkraftschutz, KMU-Übergängen und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Detailkonzept lesen" },
+        { title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe", text: "Echtes Detailkonzept zu Scorecards, WÖk-IDs, DPP, Datenqualität, Assurance und Engpasslogik.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Detailkonzept lesen" },
         { title: "Produktbesteuerung durch Wirkung", text: "Vollständige Online-Fassung des Produktpapiers mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
         { title: "Regionaler Apfel vs. Chile-Apfel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
         { title: "T-Shirt / Textilbeispiel", text: "Modellseite für Baumwolle, Färbung, Arbeit, Transport, Nutzungsdauer und Kreislauffähigkeit.", href: "wirkungsfelder/produkte-konsum/t-shirt/" },
@@ -1204,11 +1373,11 @@ function dossierPage() {
       kicker: "Dossier",
       h1: "Dossier Produkte & Konsum",
       subtitle: "Rechenmodell V0.1, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.",
-      text: "Dieses Dossier macht die Tabellen und Modellannahmen online lesbar. Es ist eine Arbeitsfassung, keine amtliche Steuerberechnung und keine Steuerberatung.",
+      text: "Dieses Dossier macht die Tabellen und Modellannahmen online lesbar. Es ist eine Fassung, keine amtliche Steuerberechnung und keine Steuerberatung.",
       actions: `<a class="btn btn-primary" href="${href(base, "erleben/produktwirkungsrechner/")}">Produktwirkungsrechner öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${productStatus("Dossier / Arbeitsfassung")}</section>
+    <section class="section narrow">${productStatus("Dossier / Fassung")}</section>
     <section class="section narrow">
       <nav class="toc-card" aria-label="Inhaltsverzeichnis">
         <h2>Inhaltsverzeichnis</h2>
@@ -1487,6 +1656,9 @@ function productArbeitsbibliothekPage() {
         <p>Konzepte und Dossiers werden hier als Arbeitsbibliothek-Einträge geführt. Der kanonische Zugang bleibt online lesbar und zitierfähig; Word/PDF-Dateien sind ergänzende Export- und Archivfassungen.</p>
       </div>
       ${cardGrid(base, [
+        { kicker: "Detailkonzept", title: "Produkte als Wirkungsträger", text: "Go-8-Vertiefung zu Produktwirkung über Lebenszyklus, Lieferkette, Nutzung und Ende.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Go-8-Vertiefung zu FinalScore, Steuerklassen, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe", text: "Go-8-Vertiefung zu Scorecards, WÖk-IDs, DPP, Datenqualität und Engpasslogik.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Online lesen" },
         { kicker: "Konzeptpapier", title: "Produktbesteuerung durch Wirkung", text: "Kanonische Online-Fassung des Konzeptpapiers zu NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Steuerklassen und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Online lesen" },
         { kicker: "Dossier", title: "Dossier Produkte & Konsum", text: "Rechenmodell V0.1, Tarifmatrix, Apfelrechnung, T-Shirt-Rechnung, Lieferkettenlogik und Quellen online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/", label: "Online lesen" },
         { kicker: "Werkstatt", title: "Whitepaper-Eintrag", text: "Werkstatt-Verweis auf das Produktpapier mit Online-Volltext und ergänzenden Downloadhinweisen.", href: "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/", label: "Werkstatt öffnen" },
@@ -1514,6 +1686,7 @@ function updateSitemap() {
   if (!fs.existsSync(sitemapPath)) return;
   const urls = [
     "wirkungsfelder/produkte-konsum/",
+    ...go8ProductDetails.map((item) => item.rel.replace(/index\.html$/, "")),
     "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/",
     "wirkungsfelder/produkte-konsum/dossier/",
     "wirkungsfelder/produkte-konsum/apfelbeispiel/",
@@ -1551,6 +1724,7 @@ function updateSitemap() {
 
 function build() {
   productPortal();
+  go8DetailConceptPages();
   dossierPage();
   productSingleDossierPages();
   tShirtPage();
