@@ -58,15 +58,31 @@ function download(slug, type) {
   return `assets/downloads/woek_sdgs-sdgplus_${type}_${slug}_v0_4.docx`;
 }
 
+const go3PackageOne = {
+  "sdgs-und-agenda-2030-als-globaler-referenzrahmen": {
+    detailHtml: "verstehen/sdgs-sdgplus/agenda-2030/index.html",
+    detailDocx: "assets/downloads/01_woek_sdgs_agenda2030_referenzrahmen_detailkonzept_v1_0.docx",
+  },
+  "sdg-als-erweiterung-der-wirkungsoekonomie": {
+    detailHtml: "verstehen/sdgs-sdgplus/sdgplus/index.html",
+    detailDocx: "assets/downloads/02_woek_sdgplus_erweiterung_detailkonzept_v1_0.docx",
+  },
+  "sdg-unterziele-global-europa-und-deutschland": {
+    detailHtml: "verstehen/sdgs-sdgplus/unterziele/index.html",
+    detailDocx: "assets/downloads/03_woek_sdg_unterziele_global_europa_deutschland_detailkonzept_v1_0.docx",
+  },
+};
+
 const detailRows = parseCsv(fs.readFileSync(SOURCE, "utf8"));
 const packageRows = parseCsv(fs.readFileSync(PACKAGES, "utf8"));
 const methodRows = parseCsv(fs.readFileSync(METHOD, "utf8"));
 
 const items = detailRows.map((row) => {
   const slug = row.Slug;
-  const detailHtml = route(slug, "detailkonzepte");
+  const override = go3PackageOne[slug] || {};
+  const detailHtml = override.detailHtml || route(slug, "detailkonzepte");
   const dossierHtml = route(slug, "dossiers");
-  const detailDocx = download(slug, "detailkonzept");
+  const detailDocx = override.detailDocx || download(slug, "detailkonzept");
   const dossierDocx = download(slug, "dossier");
   return {
     gesamtfolge: Number(row.Gesamtfolge),
@@ -86,7 +102,7 @@ const items = detailRows.map((row) => {
     detailkonzept_docx: exists(detailDocx) ? `/${detailDocx}` : "",
     dossier_html: exists(dossierHtml) ? `/${dossierHtml.replace(/index\.html$/, "")}` : "",
     dossier_docx: exists(dossierDocx) ? `/${dossierDocx}` : "",
-    naechster_schritt: row["Nächster Schritt"],
+    naechster_schritt: override.detailHtml ? "Go-3-v1-Detailkonzept ist als Online-Volltext und DOCX-Download integriert; Dossier bleibt als ergänzende Arbeitsfassung verlinkt." : row["Nächster Schritt"],
   };
 });
 
