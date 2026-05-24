@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-bildung-download-fix";
+const CSS_VERSION = "20260524-bildung-reader-table-fix";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SRC = "docs/bildung-wirkungsschule";
 const SOURCE = `${SRC}/source`;
