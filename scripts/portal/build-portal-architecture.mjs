@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-portal-architecture";
+const CSS_VERSION = "20260524-portal-meta-readable";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
 const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
@@ -244,18 +244,19 @@ function exportBlock(base, pdfHref = "") {
 function cardGrid(base, items, cols = "three") {
   return `<div class="card-grid ${cols}">
 ${items
-  .map(
-    (item) => `            <article class="card">
-              ${item.kicker ? `<p class="card-kicker">${item.kicker}</p>` : ""}
-              <h3 class="card-title">${item.title}</h3>
-              <p class="card-text">${item.text}</p>
-              ${
-                item.href
-                  ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, item.href)}">${item.linkLabel || "Öffnen"}</a></div>`
-                  : ""
-              }
-            </article>`,
-  )
+  .map((item) => {
+    const lines = ['            <article class="card">'];
+    if (item.kicker) lines.push(`              <p class="card-kicker">${item.kicker}</p>`);
+    lines.push(`              <h3 class="card-title">${item.title}</h3>`);
+    lines.push(`              <p class="card-text">${item.text}</p>`);
+    if (item.href) {
+      lines.push(
+        `              <div class="portal-card-actions"><a class="text-link" href="${href(base, item.href)}">${item.linkLabel || "Öffnen"}</a></div>`,
+      );
+    }
+    lines.push("            </article>");
+    return lines.join("\n");
+  })
   .join("\n")}
           </div>`;
 }
