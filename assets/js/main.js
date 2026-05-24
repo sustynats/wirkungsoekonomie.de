@@ -1164,6 +1164,16 @@ function initBestandsschutzStatus() {
       badges: ["Portal-Grundkonzept vorhanden", "Rechtsgrundlagen vorhanden", "Vertiefung nach Bedarf"],
     },
     {
+      prefixes: [
+        "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/",
+        "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
+        "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+      ],
+      title: "Echtes Detailkonzept veröffentlicht",
+      text: "Diese Seite ist kein Kurzprofil mehr, sondern eine veröffentlichte Go-5-Vertiefung mit Online-Volltext, Downloadbereich, Werkzeugkarten, SDG-/SDG+-Bezug und Buchankern.",
+      badges: ["Detailkonzept veröffentlicht", "Dossier in Arbeit", "Tool/Demo in Vorbereitung"],
+    },
+    {
       prefixes: ["/wirkungsfelder/wirtschaft-unternehmen/"],
       title: "Portaltext behalten, Unterbereiche sauber einordnen",
       text: "Die Seite bleibt Einstieg in Wirtschaft und Unternehmen. Kurze Unterbereichstexte werden als Kurzprofile geführt; echte Detailkonzepte und Dossiers werden getrennt ausgewiesen.",
@@ -1263,3 +1273,92 @@ function initBestandsschutzStatus() {
 }
 
 initBestandsschutzStatus();
+
+function initGo5WirtschaftDetailkonzepte() {
+  if (!mainElement || document.querySelector(".go5-wirtschaft-detailkonzepte")) {
+    return;
+  }
+
+  const path = window.location.pathname.replace(/\/index\.html$/, "/");
+  if (path !== "/wirkungsfelder/wirtschaft-unternehmen/") {
+    return;
+  }
+
+  const detailPages = [
+    [
+      "Detailkonzept veröffentlicht",
+      "Unternehmen als Wirkungssysteme",
+      "Zweck, Geschäftsmodell, Wertschöpfung, WÖk-IDs, Steuerung und Rückkopplung als echtes Online-Detailkonzept.",
+      "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/",
+    ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Wirkungsorientierte Unternehmensführung",
+      "Führung, Mitarbeiterführung, Governance, Kultur und Anreizsysteme im wirkungsökonomischen Unternehmensmodell.",
+      "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
+    ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Risikomanagement, Resilienz und Finanzmarkt",
+      "ESG-Risiken, EBA-Anforderungen, Versicherbarkeit und Finanzmarktlogik als Wirkungsrisiko-Steuerung.",
+      "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+    ],
+  ];
+
+  const toolCards = [
+    ["Werkzeugseite vorhanden", "Unternehmens-Wirkungscheck", "Standortbestimmung für Zweck, Geschäftsmodell, Governance, Risiko und Wirkung.", "/werkzeuge/unternehmens-wirkungscheck/"],
+    ["Methodenseite vorhanden", "T-SROI-Rechner", "Transformationswirkung im Verhältnis zum Ressourceneinsatz bewerten.", "/werkzeuge/impact-controlling/t-sroi/"],
+    ["Werkzeugseite vorhanden", "Produktpass-/Produktscorecard-Demo", "Produktwirkung, Datenräume und Verbraucherinformation verbinden.", "/werkzeuge/produktscorecards/"],
+    ["Demo in Vorbereitung", "KII-Dashboard", "Kernwirkungsindikatoren statt nur klassische KPI im Management sichtbar machen.", ""],
+    ["Demo in Vorbereitung", "Wirkungsrisiko-Check", "Wirkungsrisiken in Enterprise Risk Management und Strategie integrieren.", ""],
+    ["Demo in Vorbereitung", "EBA-Kreditdaten-Check", "Bankfähige ESG- und Transformationsdaten für Kreditgespräche vorbereiten.", ""],
+  ];
+
+  const section = document.createElement("section");
+  section.className = "section go5-wirtschaft-detailkonzepte";
+  section.id = "echte-detailkonzepte";
+  section.setAttribute("aria-labelledby", "echte-detailkonzepte-title");
+  section.innerHTML = `
+    <div class="section-header">
+      <p class="hero-kicker">Vertiefung</p>
+      <h2 id="echte-detailkonzepte-title">Echte Detailkonzepte online lesen <a class="cite-anchor no-print" href="#echte-detailkonzepte" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Der Portaltext bleibt Einstieg und Themenlandkarte. Die folgenden Go-5-Seiten sind die fachlichen Detailkonzepte mit Online-Volltext und DOCX-/PDF-Download.</p>
+    </div>
+    <div class="card-grid three">
+      ${detailPages.map(([kicker, title, text, href]) => `
+        <article class="card">
+          <p class="card-kicker">${kicker}</p>
+          <h3 class="card-title">${title}</h3>
+          <p class="card-text">${text}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href}">Online lesen</a></div>
+        </article>
+      `).join("")}
+    </div>
+    <div class="section-header">
+      <p class="hero-kicker">Werkzeuge</p>
+      <h2>Werkzeuge in diesem Bereich</h2>
+      <p>Werkzeuge sind als vorhandene Zielseiten verlinkt oder transparent als Demo in Vorbereitung gekennzeichnet.</p>
+    </div>
+    <div class="card-grid three">
+      ${toolCards.map(([kicker, title, text, href]) => `
+        <article class="card">
+          <p class="card-kicker">${kicker}</p>
+          <h3 class="card-title">${title}</h3>
+          <p class="card-text">${text}</p>
+          <div class="portal-card-actions">${href ? `<a class="text-link" href="${href}">Öffnen</a>` : `<span class="prototype-badge">Demo in Vorbereitung</span>`}</div>
+        </article>
+      `).join("")}
+    </div>
+  `;
+
+  const statusSection = document.querySelector(".bestandsschutz-status");
+  const heroSection = document.querySelector(".portal-hero") || document.querySelector(".hero");
+  const anchor = statusSection || heroSection;
+  if (anchor?.parentNode) {
+    anchor.insertAdjacentElement("afterend", section);
+  } else {
+    mainElement.prepend(section);
+  }
+}
+
+initGo5WirtschaftDetailkonzepte();
