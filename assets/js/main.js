@@ -1171,6 +1171,9 @@ function initBestandsschutzStatus() {
         "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/",
         "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/",
         "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/",
+        "/wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/",
+        "/wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation-nach-wirkung/",
+        "/wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-tauglichkeit-uebergangspfade/",
       ],
       title: "Echtes Detailkonzept veröffentlicht",
       text: "Diese Seite ist kein Kurzprofil mehr, sondern eine veröffentlichte Go-Vertiefung mit Online-Volltext, Downloadbereich, Werkzeugkarten, SDG-/SDG+-Bezug und Buchankern.",
@@ -1324,6 +1327,24 @@ function initGo5WirtschaftDetailkonzepte() {
       "Produktwirkung in Entwicklung, Scorecards, digitalen Produktpässen und Verbraucherinformation rückkoppeln.",
       "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/",
     ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Marketing, Vertrieb und das fünfte P: Planet",
+      "Marketing, Vertrieb, Produktkommunikation, Green Claims und Resonanzrisiken an Wirkung ausrichten.",
+      "/wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/",
+    ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Bilanz, Finanzierung und Finanzkommunikation",
+      "CapEx, Finanzierung, Kapitalzugang, Stranded Assets und Finanzkommunikation nach Wirkung ordnen.",
+      "/wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation-nach-wirkung/",
+    ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Transformation, KMU-Tauglichkeit und Übergangspfade",
+      "Unternehmenswandel, KMU-Schutz, Übergangspfade, Pilotierung und Datenanforderungen praxistauglich gestalten.",
+      "/wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-tauglichkeit-uebergangspfade/",
+    ],
   ];
 
   const toolCards = [
@@ -1335,6 +1356,9 @@ function initGo5WirtschaftDetailkonzepte() {
     ["Demo in Vorbereitung", "KII-Dashboard", "Kernwirkungsindikatoren statt nur klassische KPI im Management sichtbar machen.", ""],
     ["Demo in Vorbereitung", "Lieferketten-Wirkungscheck", "Lieferkettenwirkung, Risiken, Datenqualität und Lieferantenentwicklung prüfen.", ""],
     ["Demo vorhanden", "Produktwirkungsrechner", "Produktbeispiele, FinalScore und Wirkungsumsatzsteuer modellhaft ausprobieren.", "/erleben/produktwirkungsrechner/"],
+    ["Demo in Vorbereitung", "Green-Claims-Check", "Wirkungsversprechen in Marketing und Vertrieb auf Datenbasis und Risiko prüfen.", ""],
+    ["Demo in Vorbereitung", "CapEx-Wirkungscheck", "Investitionen nach Zukunftsfähigkeit, Wirkung, Risiko und Resilienz bewerten.", ""],
+    ["Demo in Vorbereitung", "Übergangspfad-Generator", "Transformationspfade für KMU und Unternehmen vergleichbar strukturieren.", ""],
     ["Demo in Vorbereitung", "Wirkungsrisiko-Check", "Wirkungsrisiken in Enterprise Risk Management und Strategie integrieren.", ""],
     ["Demo in Vorbereitung", "EBA-Kreditdaten-Check", "Bankfähige ESG- und Transformationsdaten für Kreditgespräche vorbereiten.", ""],
   ];

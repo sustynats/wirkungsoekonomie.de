@@ -4,6 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const downloadsDir = "/Users/hagen/Downloads";
 const go6Dir = "/private/tmp/woek-go6-import/woek_go6_paket4_wirtschaft_unternehmen_v1_0";
+const go7Dir = "/private/tmp/woek-go7-import";
 
 const docs = [
   {
@@ -111,6 +112,72 @@ const docs = [
       ["Kreislauf-/Reparatur-Score", "", "Demo in Vorbereitung", "Reparierbarkeit, Langlebigkeit und Kreislauffähigkeit in Produktentscheidungen sichtbar machen."],
     ],
   },
+  {
+    number: "12",
+    slug: "marketing-vertrieb-fuenftes-p-planet",
+    title: "Marketing, Vertrieb und das fünfte P: Planet",
+    subtitle: "Marketing, Vertrieb, Produktkommunikation und Green Claims an Wirkung ausrichten",
+    source: "website/online_volltext_12_marketing-vertrieb-fuenftes-p-planet_detailkonzept_v1_0.md",
+    docx: "12_woek_wirtschaft_unternehmen_marketing_vertrieb_fuenftes_p_planet_detailkonzept_v1_0.docx",
+    pdf: "12_woek_wirtschaft_unternehmen_marketing_vertrieb_fuenftes_p_planet_detailkonzept_v1_0.pdf",
+    baseDir: go7Dir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
+    description:
+      "Echtes Detailkonzept zu Marketing, Vertrieb, dem fünften P Planet, Green Claims, Resonanzrisiken und verantwortlicher Produktkommunikation.",
+    bookFocus: ["kapitel-048-produkte-als-wirkungstraeger", "kapitel-052-konsumwirkung-und-verbraucherinformation"],
+    tools: [
+      ["5P-Wirkungscheck", "", "Demo in Vorbereitung", "Marketingentscheidungen um das fünfte P Planet erweitern und Wirkung sichtbar machen."],
+      ["Green-Claims-Check", "", "Demo in Vorbereitung", "Umwelt- und Wirkungsversprechen auf Nachvollziehbarkeit, Datenbasis und Risiko prüfen."],
+      ["Resonanzrisiko-Check", "", "Demo in Vorbereitung", "Reputations-, Vertrauens- und Diskursrisiken in Kommunikation und Vertrieb erkennen."],
+      ["Responsible-Sales-Check", "", "Konzept", "Vertriebslogiken auf Druck, Fehlanreize, Fairness und langfristige Wirkung prüfen."],
+      ["Produktkommunikations-Scorecard", "/werkzeuge/scorecards/", "Werkzeugseite vorhanden", "Produktkommunikation in eine Scorecard- und WÖk-ID-Logik einordnen."],
+    ],
+  },
+  {
+    number: "13",
+    slug: "bilanz-finanzierung-finanzkommunikation-nach-wirkung",
+    title: "Bilanz, Finanzierung und Finanzkommunikation nach Wirkung",
+    subtitle: "CapEx, Finanzierung, Kapitalzugang und Finanzkommunikation wirkungsökonomisch einordnen",
+    source: "website/online_volltext_13_bilanz-finanzierung-finanzkommunikation-nach-wirkung_detailkonzept_v1_0.md",
+    docx: "13_woek_wirtschaft_unternehmen_bilanz_finanzierung_finanzkommunikation_nach_wirkung_detailkonzept_v1_0.docx",
+    pdf: "13_woek_wirtschaft_unternehmen_bilanz_finanzierung_finanzkommunikation_nach_wirkung_detailkonzept_v1_0.pdf",
+    baseDir: go7Dir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
+    description:
+      "Echtes Detailkonzept zu Bilanz, Finanzierung, Finanzkommunikation, CapEx-Wirkung, Stranded Assets, Wirkungskreditprofil und Kapitalzugang.",
+    bookFocus: ["kapitel-044-wirkungscontrolling-im-unternehmen", "kapitel-047-unternehmensrisiko-und-transformation"],
+    tools: [
+      ["CapEx-Wirkungscheck", "", "Demo in Vorbereitung", "Investitionen nach Zukunftsfähigkeit, Wirkung, Risiko und Resilienz bewerten."],
+      ["Wirkungsbilanz-Canvas", "", "Konzept", "Bilanzlogik, immaterielle Wirkung, Risiken und Kapitalzugang systematisch verbinden."],
+      ["Stranded-Asset-Radar", "", "Demo in Vorbereitung", "Übergangsrisiken und Vermögenswerte mit sinkender Zukunftsfähigkeit sichtbar machen."],
+      ["Wirkungskreditprofil", "/wirkungsfelder/finanzsystem-kapital/banken-wirkungskredite/", "Kontextseite vorhanden", "Kreditfähigkeit, Transformationsdaten und Finanzmarktanforderungen zusammenführen."],
+      ["Finanzkommunikations-Check", "", "Demo in Vorbereitung", "Finanzkommunikation auf Datenklarheit, Greenwashing-Risiken und Wirkungskonsistenz prüfen."],
+    ],
+  },
+  {
+    number: "14",
+    slug: "transformation-kmu-tauglichkeit-uebergangspfade",
+    title: "Transformation, KMU-Tauglichkeit und Übergangspfade",
+    subtitle: "Unternehmenswandel, KMU-Schutz und realistische Übergangspfade wirkungsökonomisch gestalten",
+    source: "website/online_volltext_14_transformation-kmu-tauglichkeit-uebergangspfade_detailkonzept_v1_0.md",
+    docx: "14_woek_wirtschaft_unternehmen_transformation_kmu_tauglichkeit_uebergangspfade_detailkonzept_v1_0.docx",
+    pdf: "14_woek_wirtschaft_unternehmen_transformation_kmu_tauglichkeit_uebergangspfade_detailkonzept_v1_0.pdf",
+    baseDir: go7Dir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
+    description:
+      "Echtes Detailkonzept zu Transformation, KMU-Tauglichkeit, Übergangspfaden, Konversions-CapEx, Datenanforderungen und Pilotierung.",
+    bookFocus: ["kapitel-047-unternehmensrisiko-und-transformation", "kapitel-098-pilotierung-und-kommunen"],
+    tools: [
+      ["KMU-Wirkungscheck", "/werkzeuge/unternehmens-wirkungscheck/", "Werkzeugseite vorhanden", "Niederschwelliger Einstieg in Wirkung, Risiken und Transformationsprioritäten."],
+      ["Transformations-Reifegradmodell", "", "Konzept", "Reifegrade für Strategie, Daten, Governance, Finanzierung und Umsetzung sichtbar machen."],
+      ["Übergangspfad-Generator", "", "Demo in Vorbereitung", "Kurz-, mittel- und langfristige Transformationspfade vergleichbar strukturieren."],
+      ["Konversions-CapEx-Rechner", "", "Demo in Vorbereitung", "Investitionsbedarf, Risikoabbau und Wirkung von Umstellungspfaden modellieren."],
+      ["Datenanforderungs-Mapper", "/werkzeuge/woek-ids/", "Werkzeugseite vorhanden", "Datenpflichten, WÖk-IDs, CSRD/ESRS und Scorecards anschlussfähig ordnen."],
+    ],
+  },
 ];
 
 const sdgs = [
@@ -144,6 +211,13 @@ const bookAnchors = [
 ];
 
 const crossLinks = [
+  ["Wirtschaft & Unternehmen", "/wirkungsfelder/wirtschaft-unternehmen/", "Portal-Grundkonzept, Themenlandkarte und alle Detailkonzepte im Unternehmensbereich."],
+  ["Unternehmen als Wirkungssysteme", "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/", "Zweck, Geschäftsmodell, Wertschöpfung und Rückkopplung."],
+  ["Wirkungsorientierte Unternehmensführung", "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/", "Führung, Governance, Kultur und Anreizsysteme wirkungsorientiert ausrichten."],
+  ["Risikomanagement, Resilienz und Finanzmarkt", "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/", "Wirkungsrisiko, Finanzmarktanforderungen und Versicherbarkeit."],
+  ["Resiliente Wertschöpfungsketten und Einkauf", "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/", "Lieferketten, Einkauf, Supplier Scorecards und Resilienz."],
+  ["Wirkungscontrolling", "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/", "KII, NWI, T-SROI, Scorecards und Assurance im Unternehmen."],
+  ["Produktentwicklung, Produktscorecards und DPP", "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/", "Produktwirkung, digitale Produktpässe und Verbraucherinformation."],
   ["Produkte & Konsum", "/wirkungsfelder/produkte-konsum/", "Produktwirkung, Wirkungsumsatzsteuer, Scorecards und Konsumentscheidungen."],
   ["Wirkungsumsatzsteuer", "/werkzeuge/wirkungsumsatzsteuer/", "Produktwirkung an Preis- und Steuerlogik rückkoppeln."],
   ["WÖk-IDs", "/werkzeuge/woek-ids/", "Indikatoren, Quellen, SDGs, SDG+ und Bewertungslogik verbinden."],
@@ -460,7 +534,7 @@ function renderPage(doc, body, toc) {
     <meta property="og:url" content="https://wirkungsoekonomie.de/wirkungsfelder/wirtschaft-unternehmen/${doc.slug}/">
     <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260524-go6-wirtschaft-detailkonzepte">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260524-go7-wirtschaft-detailkonzepte">
   </head>
   <body>
     <header class="site-header">
@@ -598,7 +672,7 @@ function renderPage(doc, body, toc) {
         </nav>
       </div>
     </footer>
-    <script src="/assets/js/main.js?v=20260524-go6-wirtschaft-detailkonzepte" defer></script>
+    <script src="/assets/js/main.js?v=20260524-go7-wirtschaft-detailkonzepte" defer></script>
   </body>
 </html>`;
 }
@@ -623,6 +697,25 @@ if (fs.existsSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.json")))
   const publicRows = rows.map((row) => writeCsvLine(parseCsvLine(row).filter((_cell, index) => index !== internalIndex)));
   fs.writeFileSync(
     path.join(root, "data/wirtschaft-unternehmen/go6_detailkonzepte_index_v1_0.csv"),
+    `${[writeCsvLine(publicHeaders), ...publicRows].join("\n")}\n`
+  );
+}
+if (fs.existsSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.json"))) {
+  const indexJson = JSON.parse(fs.readFileSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.json"), "utf8"));
+  const publicIndexJson = indexJson.map(({ codex_url_hint: _internal, url_vorschlag: _internalUrl, ...entry }) => entry);
+  fs.writeFileSync(
+    path.join(root, "data/wirtschaft-unternehmen/go7_detailkonzepte_index_v1_0.json"),
+    `${JSON.stringify(publicIndexJson, null, 2)}\n`
+  );
+
+  const csv = fs.readFileSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.csv"), "utf8").trimEnd();
+  const [headerLine, ...rows] = csv.split(/\r?\n/);
+  const headers = parseCsvLine(headerLine);
+  const internalIndexes = new Set(["codex_url_hint", "url_vorschlag"].map((name) => headers.indexOf(name)).filter((index) => index >= 0));
+  const publicHeaders = headers.filter((_header, index) => !internalIndexes.has(index));
+  const publicRows = rows.map((row) => writeCsvLine(parseCsvLine(row).filter((_cell, index) => !internalIndexes.has(index))));
+  fs.writeFileSync(
+    path.join(root, "data/wirtschaft-unternehmen/go7_detailkonzepte_index_v1_0.csv"),
     `${[writeCsvLine(publicHeaders), ...publicRows].join("\n")}\n`
   );
 }
