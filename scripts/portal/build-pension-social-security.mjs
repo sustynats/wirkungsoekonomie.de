@@ -35,6 +35,16 @@ const docs = {
     rel: `${EXTRACT}/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.md`,
     download: "assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.docx",
   },
+  toolSpec: {
+    title: "Tool-Spezifikation Wirkungsrenten-Rechner",
+    rel: `${SOURCE}/tool_spezifikation_wirkungsrenten_rechner.md`,
+    download: "assets/downloads/tool_spezifikation_wirkungsrenten_rechner.md",
+  },
+  toolSpecSimulator: {
+    title: "Tool-Spezifikation Sozialabgaben-Entkopplungs-Simulator",
+    rel: `${SOURCE}/tool_spezifikation_wirkungsrentenrechner.md`,
+    download: "assets/downloads/tool_spezifikation_wirkungsrentenrechner.md",
+  },
 };
 
 const tools = [
@@ -184,13 +194,93 @@ ${body(base, canonical)}
 </html>`);
 }
 
+function isInternalHeading(line) {
+  return [
+    /^\d+\.\s*Online-Umsetzung$/i,
+    /^Online-Umsetzung$/i,
+    /^\d+\.\s*Website- und Dossierlogik$/i,
+    /^Website- und Dossierlogik$/i,
+  ].some((pattern) => pattern.test(line));
+}
+
+function isRecoveryHeading(line) {
+  return /^(\d+\.\s+[A-ZÄÖÜ][^.!?]{3,}|Dossier\s+\d+:|Quellen und Referenzen|Quellen und Datenbezug|Quellen)$/i.test(line);
+}
+
+function isInternalLine(line) {
+  return [
+    /CodeX|Codex|Repository|Build|Sitemap aktualisieren|Dateien anlegen|bitte prüfen|Toolaufruf|Prompt|ChatGPT|Python|interne Aufgabe|Abschlussbericht/i,
+    /sollte online .*veröffentlicht/i,
+    /soll online .*veröffentlicht/i,
+    /Seite benötigt .*Druckfunktion/i,
+    /^Für das Portal .* gilt: Die Online-Volltexte/i,
+    /^Dieses Dokument ist als öffentliche .*online lesbar.*Dossier-Download/i,
+  ].some((pattern) => pattern.test(line));
+}
+
 function cleanPublicText(text) {
-  return String(text)
-    .replace(/CodeX|Codex/g, "interne Arbeitsnotiz")
-    .replace(/Repository/g, "Projekt")
-    .replace(/Build|Sitemap aktualisieren|Dateien anlegen|bitte prüfen|Toolaufruf|Prompt|ChatGPT|Python|interne Aufgabe|Abschlussbericht/g, "")
-    .replace(/Technische Anweisungen[^.]*\./g, "")
+  const normalized = String(text).replace(/\r\n/g, "\n").replace(/^\uFEFF/, "");
+  const lines = normalized.split("\n");
+  const firstContent = lines.findIndex((line) => line.trim());
+  if (firstContent >= 0 && lines[firstContent].trim() === "---") {
+    const closing = lines.findIndex((line, index) => index > firstContent && line.trim() === "---");
+    if (closing > firstContent) {
+      text = [...lines.slice(0, firstContent), ...lines.slice(closing + 1)].join("\n");
+    }
+  }
+  const cleaned = [];
+  let skippingInternalSection = false;
+  for (const raw of String(text).replace(/\r\n/g, "\n").split("\n")) {
+    const line = raw.trim();
+    if (!line) {
+      if (!skippingInternalSection) cleaned.push(raw);
+      continue;
+    }
+    if (isInternalHeading(line)) {
+      skippingInternalSection = true;
+      continue;
+    }
+    if (skippingInternalSection) {
+      if (isRecoveryHeading(line) && !isInternalHeading(line)) {
+        skippingInternalSection = false;
+      } else {
+        continue;
+      }
+    }
+    if (isInternalLine(line)) continue;
+    cleaned.push(raw.replace(/interne Referenzpunkte/g, "methodische Referenzpunkte"));
+  }
+  return cleaned.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+function plainMarkdownText(value) {
+  return String(value)
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
     .trim();
+}
+
+function inlineHtml(value) {
+  const text = String(value).replace(/\*\*([^*]+)\*\*/g, "$1").replace(/`([^`]+)`/g, "$1");
+  const parts = [];
+  let last = 0;
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let match;
+  while ((match = pattern.exec(text))) {
+    parts.push(esc(text.slice(last, match.index)));
+    const label = plainMarkdownText(match[1]);
+    const url = match[2].trim();
+    if (url && !/^javascript:/i.test(url)) {
+      parts.push(`<a class="text-link" href="${esc(url)}">${esc(label)}</a>`);
+    } else {
+      parts.push(esc(label));
+    }
+    last = pattern.lastIndex;
+  }
+  parts.push(esc(text.slice(last)));
+  return parts.join("").replace(/\*([^*]+)\*/g, "$1");
 }
 
 function markdownishToHtml(markdown) {
@@ -217,12 +307,12 @@ function markdownishToHtml(markdown) {
     if (!paragraph.length) return;
     count += 1;
     const id = unique(`absatz-${String(count).padStart(3, "0")}`);
-    html.push(`<p id="${id}">${esc(paragraph.join(" ").replace(/\*\*/g, ""))} ${citeAnchor(id, "Zitierlink zu diesem Absatz")}</p>`);
+    html.push(`<p id="${id}">${inlineHtml(paragraph.join(" "))} ${citeAnchor(id, "Zitierlink zu diesem Absatz")}</p>`);
     paragraph = [];
   };
   const flushList = () => {
     if (!list.length) return;
-    html.push(`<ul>${list.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`);
+    html.push(`<ul>${list.map((item) => `<li>${inlineHtml(item)}</li>`).join("")}</ul>`);
     list = [];
   };
   const flushTable = () => {
@@ -230,15 +320,16 @@ function markdownishToHtml(markdown) {
     const rows = table.map((row) => row.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim())).filter((row) => !row.every((cell) => /^:?-{3,}:?$/.test(cell)));
     if (rows.length > 1) {
       const [head, ...body] = rows;
-      html.push(`<div class="table-wrap"><table class="data-table"><thead><tr>${head.map((cell) => `<th>${esc(cell)}</th>`).join("")}</tr></thead><tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+      html.push(`<div class="table-wrap"><table class="data-table"><thead><tr>${head.map((cell) => `<th>${inlineHtml(cell)}</th>`).join("")}</tr></thead><tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${inlineHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
     }
     table = [];
   };
   const heading = (level, text) => {
     flushParagraph(); flushList(); flushTable();
-    const id = unique(text);
-    toc.push({ level, text, id });
-    html.push(`<h${level} id="${id}">${esc(text)} ${citeAnchor(id)}</h${level}>`);
+    const cleanText = plainMarkdownText(text);
+    const id = unique(cleanText);
+    toc.push({ level, text: cleanText, id });
+    html.push(`<h${level} id="${id}">${esc(cleanText)} ${citeAnchor(id)}</h${level}>`);
   };
   for (const raw of lines) {
     const line = raw.trim();
@@ -262,7 +353,7 @@ function markdownishToHtml(markdown) {
     }
     if (/^[-*]\s+/.test(line) || /^\d+\.\s+/.test(line)) {
       flushParagraph(); flushTable();
-      list.push(line.replace(/^([-*]|\d+\.)\s+/, "").replace(/\*\*/g, ""));
+      list.push(line.replace(/^([-*]|\d+\.)\s+/, ""));
       continue;
     }
     paragraph.push(line);
@@ -293,7 +384,7 @@ function sectionFor(docText, index, prefix) {
 
 function tocBlock(items) {
   if (!items.length) return "";
-  return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><div class="toc-links">${items.slice(0, 36).map((item) => `<a class="toc-level-${item.level}" href="#${esc(item.id)}">${esc(item.text)}</a>`).join("")}</div></nav>`;
+  return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol class="toc-links">${items.slice(0, 36).map((item) => `<li class="toc-level-${item.level}"><a href="#${esc(item.id)}">${esc(item.text)}</a></li>`).join("")}</ol></nav>`;
 }
 
 function cards(base, items) {
@@ -365,7 +456,7 @@ function portalPage() {
     rel: "wirkungsfelder/rente-soziale-sicherung/index.html",
     title: "Rente & soziale Sicherung | Wirkungsökonomie",
     description: "Wirkungsrente, Lebenswirkung, Lebenswirkungs-Konto, soziale Sicherung, Automatisierung, Wirkungsdividende und Renten-Impact-Fonds.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld · Rang 7</p><h1>Rente & soziale Sicherung</h1><p class="hero-subtitle">Wirkungsrente, Lebenswirkung und soziale Stabilität.</p><p>Rente ist in der Wirkungsökonomie nicht nur Finanzierungsproblem, sondern Wirkungs- und Vertrauensfrage: Welche Lebensleistung bleibt unsichtbar, welche Risiken entstehen durch Automatisierung, und wie kann soziale Sicherung positive Netto-Wirkung für Mensch, Planet und Demokratie stabilisieren?</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "erleben/wirkungsrenten-rechner/")}">Wirkungsrenten-Rechner öffnen</a></div></div>${statusBox("Portal / Diskussionsfassung")}</div></section>${publicationAccess(base, [{ kicker: "Langfassung", title: "Detailkonzepte online lesen", text: "Umfangreiche Detailkonzepte zu allen Unterbereichen.", href: "wirkungsfelder/rente-soziale-sicherung/detailkonzepte/", label: "Online lesen" }, { kicker: "Dossier", title: "Einzeldossier-Set online lesen", text: "Einzeldossiers mit Anwendung, Annahmen, Bewertungslogik und Grenzen.", href: "wirkungsfelder/rente-soziale-sicherung/dossiers/", label: "Online lesen" }, { kicker: "Download", title: "Detailkonzepte Word", text: "Exportfassung der langen Detailkonzepte.", href: docs.detail.download, label: "Herunterladen" }, { kicker: "Download", title: "Einzeldossier-Set Word", text: "Exportfassung der Einzeldossiers.", href: docs.singleDossier.download, label: "Herunterladen" }])}${tocBlock(intro.toc)}<section class="section article-section"><article class="article-body fulltext-reader">${h2("online-volltext", "Online-Volltext")} ${intro.html}</article></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Online lesen")}</div>${cards(base, modules.map((m) => [m.title, "Unterbereich", m.shift, `wirkungsfelder/rente-soziale-sicherung/${m.slug}/`]))}</section><section class="section" aria-labelledby="dokumente"><div class="section-header"><p class="hero-kicker">Dokumente</p>${h2("dokumente", "Konzept, Dossier und Arbeitsbibliothek")}</div>${cards(base, [["Konzeptpapier online lesen", "Online-Volltext", "Konzeptpapier Rente & soziale Sicherung.", "wirkungsfelder/rente-soziale-sicherung/konzept/"], ["Gesamtdossier online lesen", "Online-Volltext", "Dossier mit Beispielen, Berechnungen, Datenquellen und Umsetzung.", "wirkungsfelder/rente-soziale-sicherung/dossier/"], ["Detailkonzepte online lesen", "Online-Volltext", "Umfangreiche Detailkonzepte zu allen Unterbereichen.", "wirkungsfelder/rente-soziale-sicherung/detailkonzepte/"], ["Einzeldossier-Set online lesen", "Online-Volltext", "Einzeldossiers mit Anwendung, Annahmen, Bewertungslogik und Grenzen.", "wirkungsfelder/rente-soziale-sicherung/dossiers/"], ["Arbeitsbibliothek öffnen", "Werkstatt", "Downloads, Online-Zugänge und Kontextverweise.", "werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/"]])}</section>${toolGrid(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock(base)}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Gesamtdossier Word", href: docs.dossier.download }, { label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossier-Set Word", href: docs.singleDossier.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld · Rang 7</p><h1>Rente & soziale Sicherung</h1><p class="hero-subtitle">Wirkungsrente, Lebenswirkung und soziale Stabilität.</p><p>Rente ist in der Wirkungsökonomie nicht nur Finanzierungsproblem, sondern Wirkungs- und Vertrauensfrage: Welche Lebensleistung bleibt unsichtbar, welche Risiken entstehen durch Automatisierung, und wie kann soziale Sicherung positive Netto-Wirkung für Mensch, Planet und Demokratie stabilisieren?</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "erleben/wirkungsrenten-rechner/")}">Wirkungsrenten-Rechner öffnen</a></div></div>${statusBox("Portal / Diskussionsfassung")}</div></section>${publicationAccess(base, [{ kicker: "Langfassung", title: "Detailkonzepte online lesen", text: "Umfangreiche Detailkonzepte zu allen Unterbereichen.", href: "wirkungsfelder/rente-soziale-sicherung/detailkonzepte/", label: "Online lesen" }, { kicker: "Dossier", title: "Einzeldossier-Set online lesen", text: "Einzeldossiers mit Anwendung, Annahmen, Bewertungslogik und Grenzen.", href: "wirkungsfelder/rente-soziale-sicherung/dossiers/", label: "Online lesen" }, { kicker: "Download", title: "Detailkonzepte Word", text: "Exportfassung der langen Detailkonzepte.", href: docs.detail.download, label: "Herunterladen" }, { kicker: "Download", title: "Einzeldossier-Set Word", text: "Exportfassung der Einzeldossiers.", href: docs.singleDossier.download, label: "Herunterladen" }, { kicker: "Download", title: "Tool-Spezifikation Rechner", text: "Spezifikation des Wirkungsrenten-Rechners.", href: docs.toolSpec.download, label: "Herunterladen" }, { kicker: "Download", title: "Tool-Spezifikation Simulator", text: "Spezifikation des Sozialabgaben-Entkopplungs-Simulators.", href: docs.toolSpecSimulator.download, label: "Herunterladen" }])}${tocBlock(intro.toc)}<section class="section article-section"><article class="article-body fulltext-reader">${h2("online-volltext", "Online-Volltext")} ${intro.html}</article></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Online lesen")}</div>${cards(base, modules.map((m) => [m.title, "Unterbereich", m.shift, `wirkungsfelder/rente-soziale-sicherung/${m.slug}/`]))}</section><section class="section" aria-labelledby="dokumente"><div class="section-header"><p class="hero-kicker">Dokumente</p>${h2("dokumente", "Konzept, Dossier und Arbeitsbibliothek")}</div>${cards(base, [["Konzeptpapier online lesen", "Online-Volltext", "Konzeptpapier Rente & soziale Sicherung.", "wirkungsfelder/rente-soziale-sicherung/konzept/"], ["Gesamtdossier online lesen", "Online-Volltext", "Dossier mit Beispielen, Berechnungen, Datenquellen und Umsetzung.", "wirkungsfelder/rente-soziale-sicherung/dossier/"], ["Detailkonzepte online lesen", "Online-Volltext", "Umfangreiche Detailkonzepte zu allen Unterbereichen.", "wirkungsfelder/rente-soziale-sicherung/detailkonzepte/"], ["Einzeldossier-Set online lesen", "Online-Volltext", "Einzeldossiers mit Anwendung, Annahmen, Bewertungslogik und Grenzen.", "wirkungsfelder/rente-soziale-sicherung/dossiers/"], ["Arbeitsbibliothek öffnen", "Werkstatt", "Downloads, Online-Zugänge und Kontextverweise.", "werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/"]])}</section>${toolGrid(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock(base)}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Gesamtdossier Word", href: docs.dossier.download }, { label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossier-Set Word", href: docs.singleDossier.download }, { label: "Tool-Spezifikation Rechner", href: docs.toolSpec.download }, { label: "Tool-Spezifikation Simulator", href: docs.toolSpecSimulator.download }])}`,
   });
 }
 
@@ -401,7 +492,7 @@ function calculatorPage() {
     description: "Modellhafte Demo zu Basisrente, Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende, Fondsanteil und Automatisierungs-Entkopplung.",
     section: "Erleben",
     type: "Demo",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "erleben.html")}">Erleben</a></nav><p class="hero-kicker">Demo · Modell V0.1</p><h1>Wirkungsrenten-Rechner</h1><p class="hero-subtitle">Basisrente, klassische Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende und Fondsanteil modellhaft zusammendenken.</p><p class="scanner-notice">Modellhafte Demonstration. Keine Rentenauskunft, keine Rechtsberatung, keine Steuerberatung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#rechenmodell">Rechenmodell ansehen</a></div></div></section><section class="section" aria-labelledby="rechenmodell"><div class="section-header"><p class="hero-kicker">Arbeitsformel</p>${h2("rechenmodell", "Rechenmodell V0.1")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Formel</th><td>Rente_modell = B + A + max(0, WB) + WD + F</td></tr><tr><th>B</th><td>Basisrente / Würdeebene</td></tr><tr><th>A</th><td>Klassischer Anwartschaftsanteil</td></tr><tr><th>LWF</th><td>Lebenswirkungs-Faktor, Pilotkorridor 1,00 bis 1,25</td></tr><tr><th>WB</th><td>B × (LWF - 1), keine negative Personenabsenkung unter die Würdeebene</td></tr><tr><th>WD / F</th><td>Wirkungsdividende und Fondsanteil aus Renten-Impact-Fonds</td></tr></tbody></table></div></section><section class="section" aria-labelledby="demo-module"><div class="section-header"><p class="hero-kicker">Module</p>${h2("demo-module", "Demo-Module")}</div>${cards(base, [["Alter-Rente-Vergleich", "Demo", "Vergleicht alte Logik und Wirkungslogik modellhaft.", ""], ["Lebenswirkungs-Konto", "Demo", "Zeigt Nachweisfelder für Care, Bildung, Pflege, Ehrenamt und Transformation.", "wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-konto/"], ["Renten-Impact-Fonds-Szenario", "Demo", "Verbindet Fondsparameter, Wirkungserträge, Rücklagen und Ausschüttung.", "wirkungsfelder/rente-soziale-sicherung/renten-impact-fonds/"], ["Automatisierungs-Entkopplung", "Demo", "Zeigt Maschinenleistung, Sozialabgabenbasis und Rückkopplungsquote.", "wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/"]])}</section><section class="section article-section"><article class="article-body fulltext-reader">${h2("spezifikation", "Tool-Spezifikation")}${spec.html}</article></section>${toolGrid(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock(base)}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "erleben.html")}">Erleben</a></nav><p class="hero-kicker">Demo · Modell V0.1</p><h1>Wirkungsrenten-Rechner</h1><p class="hero-subtitle">Basisrente, klassische Anwartschaft, Lebenswirkungs-Faktor, Wirkungsdividende und Fondsanteil modellhaft zusammendenken.</p><p class="scanner-notice">Modellhafte Demonstration. Keine Rentenauskunft, keine Rechtsberatung, keine Steuerberatung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#rechenmodell">Rechenmodell ansehen</a></div></div></section><section class="section" aria-labelledby="rechenmodell"><div class="section-header"><p class="hero-kicker">Arbeitsformel</p>${h2("rechenmodell", "Rechenmodell V0.1")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Formel</th><td>Rente_modell = B + A + max(0, WB) + WD + F</td></tr><tr><th>B</th><td>Basisrente / Würdeebene</td></tr><tr><th>A</th><td>Klassischer Anwartschaftsanteil</td></tr><tr><th>LWF</th><td>Lebenswirkungs-Faktor, Pilotkorridor 1,00 bis 1,25</td></tr><tr><th>WB</th><td>B × (LWF - 1), keine negative Personenabsenkung unter die Würdeebene</td></tr><tr><th>WD / F</th><td>Wirkungsdividende und Fondsanteil aus Renten-Impact-Fonds</td></tr></tbody></table></div></section><section class="section" aria-labelledby="demo-module"><div class="section-header"><p class="hero-kicker">Module</p>${h2("demo-module", "Demo-Module")}</div>${cards(base, [["Alter-Rente-Vergleich", "Demo", "Vergleicht alte Logik und Wirkungslogik modellhaft.", ""], ["Lebenswirkungs-Konto", "Demo", "Zeigt Nachweisfelder für Care, Bildung, Pflege, Ehrenamt und Transformation.", "wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-konto/"], ["Renten-Impact-Fonds-Szenario", "Demo", "Verbindet Fondsparameter, Wirkungserträge, Rücklagen und Ausschüttung.", "wirkungsfelder/rente-soziale-sicherung/renten-impact-fonds/"], ["Automatisierungs-Entkopplung", "Demo", "Zeigt Maschinenleistung, Sozialabgabenbasis und Rückkopplungsquote.", "wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/"]])}</section><section class="section narrow">${tocBlock(spec.toc)}</section><section class="section article-section"><article class="article-body fulltext-reader">${h2("spezifikation", "Tool-Spezifikation")}${spec.html}</article></section>${toolGrid(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock(base)}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Tool-Spezifikation Rechner", href: docs.toolSpec.download }, { label: "Tool-Spezifikation Simulator", href: docs.toolSpecSimulator.download }])}`,
   });
 }
 

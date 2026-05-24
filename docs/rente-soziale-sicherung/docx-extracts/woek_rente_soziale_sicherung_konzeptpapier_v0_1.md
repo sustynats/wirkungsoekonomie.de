@@ -36,8 +36,6 @@ Leitformel: Wirkung ist neutral und relational. Bewertet wird sie am Referenzrah
 
 Inhaltslogik
 
-Dieses Dokument ist als öffentliche Arbeits- und Diskussionsfassung angelegt. Es enthält ausschließlich fachliche Publikationsinhalte. Die Kapitel sind so strukturiert, dass sie online lesbar, zitierfähig, druckbar und mit SDG-/SDG+-Bezug, Buchankern, Dossier-Download und Kontext-Werkzeugen verbunden sind.
-
 Executive Summary
 
 Das Rentensystem ist nicht nur eine Finanzierungsfrage, sondern eine Vertrauensfrage. Die klassische Alterssicherung bewertet Einkommen, Beitragsjahre und Erwerbsbiografien. Sie sieht aber Lebenswirkung nur unvollständig: Care, Pflege, Bildung, Ehrenamt, Prävention, Demokratiearbeit, ökologische Regeneration und Transformationsleistung erscheinen häufig als Lücken, obwohl sie gesellschaftliche Stabilität tragen.
@@ -406,13 +404,9 @@ Schutz vor Technokratie
 
 Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Normative Entscheidungen bleiben demokratisch legitimiert.
 
-7. Website- und Dossierlogik
-
-Für das Portal Rente & soziale Sicherung gilt: Die Online-Volltexte sind der Hauptzugang. Word/PDF-Dokumente sind Export und Archiv. Jede Unterseite erhält einen SDG-/SDG+-Block, Buchanker, Kontext-Werkzeuge, politische Anschlussfähigkeit, Quellenregister, Druckfunktion und Downloadbereich.
-
 Quellen und Referenzen
 
-Die folgenden Quellen dienen als öffentliche und interne Referenzpunkte. Externe Links sind als Informationsquellen angegeben; die wirkungsökonomische Einordnung erfolgt im Rahmen der Wirkungsökonomie.
+Die folgenden Quellen dienen als öffentliche und methodische Referenzpunkte. Externe Links sind als Informationsquellen angegeben; die wirkungsökonomische Einordnung erfolgt im Rahmen der Wirkungsökonomie.
 
 WÖk-Arbeitspapier Rentensystem: WP_Rente.pdf, Natalie Weber, 2025
 
@@ -424,12 +418,12 @@ Systemmodell der Wirkungsökonomie: Natalie Weber, 2025, Finanzsystem & Kapital 
 
 Führender Begriffsleitfaden: Wirkung ist neutral und relational, SDGs/Agenda2030/SDG+ als Referenzrahmen
 
-BMAS Rentenversicherungsbericht 2025: https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2025/bundeskabinett-beschliesst-rentenversicherungsbericht-2025.html
+BMAS Rentenversicherungsbericht 2025: https://www.bmas.de/SharedDocs/Downloads/DE/Rente/rentenversicherungsbericht-2025.html
 
 Destatis Babyboomer und Erwerbspersonen 2025: https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/08/PD25_N048_13.html
 
 Destatis Altenquotient 2025: https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Aspekte/demografie-altenquotient.html
 
-Deutsche Rentenversicherung in Zahlen 2025: https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Statistiken-und-Berichte/statistikpublikationen/rv_in_zahlen.pdf
+Deutsche Rentenversicherung in Zahlen 2025: https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Statistiken-und-Berichte/statistikpublikationen/rv_in_zahlen.html
 
 OECD Pensions at a Glance 2025: Germany: https://www.oecd.org/en/publications/pensions-at-a-glance-2025-country-notes_8a53ef12-en/germany_c480c8fa-en.html
