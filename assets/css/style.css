@@ -1405,15 +1405,26 @@ textarea {
   display: grid;
   gap: 1.25rem;
   padding: clamp(1.25rem, 4vw, 2rem);
+  overflow-wrap: break-word;
+}
+
+.download-card > * {
+  min-width: 0;
 }
 
 .download-card.compact {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   align-content: start;
 }
 
 .download-card.compact .btn {
-  margin-top: 1rem;
+  margin-top: 0;
+}
+
+.download-card.compact .portal-card-actions {
+  max-width: 100%;
+  align-items: flex-start;
 }
 
 .download-card + .download-card {
@@ -7221,8 +7232,12 @@ textarea {
   }
 
   .download-card {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) minmax(0, fit-content(30rem));
     align-items: center;
+  }
+
+  .download-card.compact {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .comparison-table {
