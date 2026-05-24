@@ -28,29 +28,29 @@ Beispiele, Berechnungen, Datenquellen, Anreizlogik und politische Umsetzungsopti
 
 ## Inhaltsübersicht
 
-## 1. Zweck und Aufbau des Dossiers
+- 1. Zweck und Aufbau des Dossiers
 
-## 2. Bewertungsmodell WIX-VI
+- 2. Bewertungsmodell WIX-VI
 
-## 3. Fallstudie 1: verantwortliche Sanierung
+- 3. Fallstudie 1: verantwortliche Sanierung
 
-## 4. Fallstudie 2: Luxussanierung mit Verdrängungswirkung
+- 4. Fallstudie 2: Luxussanierung mit Verdrängungswirkung
 
-## 5. Fallstudie 3: spekulativer Leerstand
+- 5. Fallstudie 3: spekulativer Leerstand
 
-## 6. Fallstudie 4: Stranded Asset im Altbestand
+- 6. Fallstudie 4: Stranded Asset im Altbestand
 
-## 7. Fallstudie 5: Neubau mit sozialem Stranding-Risiko
+- 7. Fallstudie 5: Neubau mit sozialem Stranding-Risiko
 
-## 8. Musterrechnung WIX-VI
+- 8. Musterrechnung WIX-VI
 
-## 9. Anreizmatrix
+- 9. Anreizmatrix
 
-## 10. Datenquellen und Datenqualität
+- 10. Datenquellen und Datenqualität
 
-## 11. Politische Ausgestaltung
+- 11. Politische Ausgestaltung
 
-## 12. Online-Integration
+- 12. Online-Integration
 
 ## 1. Zweck und Aufbau des Dossiers
 

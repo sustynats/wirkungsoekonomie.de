@@ -28,37 +28,37 @@ Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz und Stranded-Asse
 
 ## Inhaltsübersicht
 
-## 1. Executive Summary
+- 1. Executive Summary
 
-## 2. Ausgangsdiagnose: Warum der alte Wohnungsmarkt falsch unterscheidet
+- 2. Ausgangsdiagnose: Warum der alte Wohnungsmarkt falsch unterscheidet
 
-## 3. Eigentum mit Wirkungspflicht
+- 3. Eigentum mit Wirkungspflicht
 
-## 4. Akteursgruppen und differenzierte Anreizlogik
+- 4. Akteursgruppen und differenzierte Anreizlogik
 
-## 5. Gute Vermietung, schlechte Vermietungswirkung
+- 5. Gute Vermietung, schlechte Vermietungswirkung
 
-## 6. Spekulation: Definition und Abgrenzung
+- 6. Spekulation: Definition und Abgrenzung
 
-## 7. Stranded Assets: alte Gebäude, neue Gebäude und Portfolios
+- 7. Stranded Assets: alte Gebäude, neue Gebäude und Portfolios
 
-## 8. Bestehende rechtliche Anschlussstellen heute
+- 8. Bestehende rechtliche Anschlussstellen heute
 
-## 9. WIX-VI: Vermietung und Investment messbar machen
+- 9. WIX-VI: Vermietung und Investment messbar machen
 
-## 10. Anreize für gute Vermieter:innen und verantwortliche Investoren
+- 10. Anreize für gute Vermieter:innen und verantwortliche Investoren
 
-## 11. Gegenanreize gegen Spekulationslogik
+- 11. Gegenanreize gegen Spekulationslogik
 
-## 12. Warmmietenneutralität als Schlüssel
+- 12. Warmmietenneutralität als Schlüssel
 
-## 13. Finanzierung und Kapitalzugang
+- 13. Finanzierung und Kapitalzugang
 
-## 14. Politische Anschlussfähigkeit
+- 14. Politische Anschlussfähigkeit
 
-## 15. Website- und Portalintegration
+- 15. Website- und Portalintegration
 
-## 16. Fazit
+- 16. Fazit
 
 ## 1. Executive Summary
 
