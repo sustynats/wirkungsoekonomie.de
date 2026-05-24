@@ -1,7 +1,8 @@
 {
-  "generatedAt": "2026-05-23T22:32:21.997Z",
+  "generatedAt": "2026-05-24T09:23:20.964Z",
   "terms": [
     {
+      "category": "Messbegriff",
       "termId": "archetyp",
       "canonicalLabel": "Archetyp",
       "slug": "archetyp",
@@ -34,6 +35,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "benchmark",
       "canonicalLabel": "Benchmark",
       "slug": "benchmark",
@@ -69,6 +71,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Datenbegriff",
       "termId": "csrd",
       "canonicalLabel": "CSRD",
       "slug": "csrd",
@@ -104,6 +107,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Datenbegriff",
       "termId": "digitaler-produktpass",
       "canonicalLabel": "Digitaler Produktpass",
       "slug": "digitaler-produktpass",
@@ -113,7 +117,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Daten und Standards",
       "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
-      "hoverDefinition": "Der Digitale Produktpass kann Wirkungsdaten zu Produkten strukturiert verfügbar machen.",
+      "hoverDefinition": "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus.",
       "longDefinition": "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung.",
       "usageNote": "Nicht als vollständige Wirkungsbewertung verstehen.",
       "doNotConfuseWith": [
@@ -139,6 +143,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "esg",
       "canonicalLabel": "ESG",
       "slug": "esg",
@@ -175,6 +180,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Datenbegriff",
       "termId": "esrs",
       "canonicalLabel": "ESRS",
       "slug": "esrs",
@@ -209,6 +215,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "eu-taxonomie",
       "canonicalLabel": "EU-Taxonomie",
       "slug": "eu-taxonomie",
@@ -244,6 +251,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "finalscore",
       "canonicalLabel": "FinalScore",
       "slug": "finalscore",
@@ -253,8 +261,8 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Instrumente",
       "shortDefinition": "Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung.",
-      "hoverDefinition": "Der FinalScore verdichtet Wirkungsinformationen, ohne rote Linien oder Nicht-Kompensation aufzuheben.",
-      "longDefinition": "Der FinalScore darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden; Grenzen und Reverse Merit Order bleiben wirksam.",
+      "hoverDefinition": "Der FinalScore ist die steuerungsrelevante Verdichtung von Einzelscores unter Berücksichtigung von Datenqualität, Reverse Merit Order und Nichtkompensation.",
+      "longDefinition": "Der FinalScore verdichtet Einzelscores, Datenqualität, rote Linien und Reverse Merit Order. Er darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden.",
       "usageNote": "Nicht als beliebigen Durchschnitt darstellen.",
       "doNotConfuseWith": [
         "Netto-Wirkung",
@@ -276,6 +284,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Datenbegriff",
       "termId": "gri",
       "canonicalLabel": "GRI",
       "slug": "gri",
@@ -311,6 +320,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Demokratiebegriff",
       "termId": "mensch-planet-demokratie",
       "canonicalLabel": "Mensch, Planet und Demokratie",
       "slug": "mensch-planet-demokratie",
@@ -345,6 +355,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Datenbegriff",
       "termId": "nace",
       "canonicalLabel": "NACE",
       "slug": "nace",
@@ -377,6 +388,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "nachhaltigkeit",
       "canonicalLabel": "Nachhaltigkeit",
       "slug": "nachhaltigkeit",
@@ -425,6 +437,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "negative-wirkung",
       "canonicalLabel": "negative Wirkung",
       "slug": "negative-wirkung",
@@ -434,7 +447,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Negative Wirkung ist eine Zustandsveränderung, die Mensch, Planet oder Demokratie schädigt oder destabilisiert.",
-      "hoverDefinition": "Negative Wirkung verschlechtert Zustände für Mensch, Planet oder Demokratie.",
+      "hoverDefinition": "Negative Wirkung liegt vor, wenn eine Veränderung SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört.",
       "longDefinition": "Negative Wirkung kann direkt, indirekt, kurzfristig oder langfristig auftreten und wird im Referenzrahmen bewertet.",
       "usageNote": "Nicht mit Risiko verwechseln: Risiko ist Möglichkeit, Wirkung ist eingetretene Veränderung.",
       "doNotConfuseWith": [
@@ -457,6 +470,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "netto-wirkung",
       "canonicalLabel": "Netto-Wirkung",
       "slug": "netto-wirkung",
@@ -491,6 +505,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "nwi",
       "canonicalLabel": "NWI",
       "slug": "nwi",
@@ -532,6 +547,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "neutrale-wirkung",
       "canonicalLabel": "neutrale Wirkung",
       "slug": "neutrale-wirkung",
@@ -541,7 +557,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Neutrale Wirkung ist eine feststellbare Zustandsveränderung, die im Bewertungsrahmen weder positiv noch negativ ins Gewicht fällt.",
-      "hoverDefinition": "Neutrale Wirkung verändert Zustände, wird aber im Referenzrahmen nicht positiv oder negativ bewertet.",
+      "hoverDefinition": "Neutrale Wirkung bedeutet, dass keine relevante positive oder negative Veränderung nachweisbar ist oder die Wirkung im Bewertungsrahmen neutral eingeordnet wird.",
       "longDefinition": "Neutrale Wirkung ist nicht Wirkungslosigkeit, sondern eine bewertete Veränderung ohne relevante positive oder negative Einordnung.",
       "usageNote": "Nicht mit keiner Wirkung verwechseln.",
       "doNotConfuseWith": [
@@ -564,6 +580,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "nichtkompensationsprinzip",
       "canonicalLabel": "Nichtkompensationsprinzip",
       "slug": "nichtkompensationsprinzip",
@@ -599,6 +616,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "positive-netto-wirkung",
       "canonicalLabel": "positive Netto-Wirkung",
       "slug": "positive-netto-wirkung",
@@ -634,6 +652,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "positive-wirkung",
       "canonicalLabel": "positive Wirkung",
       "slug": "positive-wirkung",
@@ -643,7 +662,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Positive Wirkung ist eine Zustandsveränderung, die im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv bewertet wird.",
-      "hoverDefinition": "Positive Wirkung ist Wirkung, die am Referenzrahmen SDGs, Agenda 2030 und SDG+ positiv bewertet wird.",
+      "hoverDefinition": "Positive Wirkung liegt vor, wenn eine Veränderung auf SDGs, Agenda 2030 und SDG+ einzahlt.",
       "longDefinition": "Positive Wirkung ist keine Behauptung guten Willens, sondern eine bewertete Zustandsveränderung mit Bezugspunkt.",
       "usageNote": "Referenzrahmen benennen.",
       "doNotConfuseWith": [
@@ -666,6 +685,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Architekturbegriff",
       "termId": "resonanzraum",
       "canonicalLabel": "Resonanzraum",
       "slug": "resonanzraum",
@@ -698,6 +718,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "reverse-merit-order",
       "canonicalLabel": "Reverse Merit Order",
       "slug": "reverse-merit-order",
@@ -740,6 +761,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "scorecard",
       "canonicalLabel": "Scorecard",
       "slug": "scorecard",
@@ -772,6 +794,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Demokratiebegriff",
       "termId": "sdg-plus",
       "canonicalLabel": "SDG+",
       "slug": "sdg-plus",
@@ -781,8 +804,8 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Bewertungsrahmen",
       "shortDefinition": "SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionelle und digitale Wirkungsfelder.",
-      "hoverDefinition": "SDG+ ist keine offizielle UN-Kategorie, sondern die WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit und digitale Selbstbestimmung.",
-      "longDefinition": "SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind.",
+      "hoverDefinition": "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie.",
+      "longDefinition": "SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind. SDG+ ist keine offizielle UN-Kategorie.",
       "usageNote": "Immer transparent machen: SDG+ ist eine WÖk-Erweiterung, nicht UN-Standard.",
       "doNotConfuseWith": [
         "SDGs",
@@ -807,6 +830,90 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Schutzbegriff",
+      "termId": "social-credit",
+      "canonicalLabel": "Social Credit",
+      "slug": "social-credit",
+      "status": "schutzbegriff",
+      "version": "1.1",
+      "source": "Schutzrahmen_Personenbewertung_Datenschutz_SocialCredit_v1.1.md",
+      "sourceDocument": "Schutzrahmen_Personenbewertung_Datenschutz_SocialCredit_v1.1.md",
+      "sourceSection": "Social-Credit-Abgrenzung",
+      "shortDefinition": "Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.",
+      "hoverDefinition": "Social Credit ist die umfassende Bewertung von Menschen nach Verhalten oder Konformität. Die Wirkungsökonomie zieht hier eine rote Linie.",
+      "longDefinition": "Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, öffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhänge.",
+      "usageNote": "Bei Personen-, Konsum-, Medien-, Einkommens- und Bonusmodellen immer abgrenzen.",
+      "doNotConfuseWith": [
+        "Wirkungsbewertung",
+        "Wirkungspunkte",
+        "Verbraucherinformation"
+      ],
+      "synonyms": [
+        "Sozialkredit",
+        "Social-Credit-System"
+      ],
+      "relatedTerms": [
+        "wirkungspunkte",
+        "wirkungswahrheit",
+        "wirkungsrat"
+      ],
+      "relatedDocuments": [
+        "schutzrahmen-personenbewertung"
+      ],
+      "examples": [],
+      "preferredUsage": "Als rote Linie und Missbrauchsschutz verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "social credit",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
+      "termId": "spekulationslogik",
+      "canonicalLabel": "Spekulationslogik",
+      "slug": "spekulationslogik",
+      "status": "arbeitsbegriff",
+      "version": "1.0",
+      "source": "Wohnen & Stadt · Investor:innen und Vermieter:innen",
+      "sourceDocument": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceSection": "Spekulation: Definition und Abgrenzung",
+      "shortDefinition": "Spekulationslogik bezeichnet Wertsteigerung, die aus Knappheit, Nichtnutzung, Intransparenz oder Verdrängung entsteht.",
+      "hoverDefinition": "Spekulationslogik ist nicht jede Rendite, sondern Rendite aus Verdrängung, Leerstand, Bodenhortung oder entkoppelter Knappheitsausnutzung.",
+      "longDefinition": "Die Wirkungsökonomie unterscheidet legitime Rendite aus guter Wohnwirkung von problematischer Spekulationslogik. Kritisch wird Wertsteigerung, wenn sie Wohnraum seiner Lebensfunktion entzieht oder negative Wirkung unsichtbar hält.",
+      "usageNote": "Nicht pauschal mit Eigentum, Investition oder Vermietung gleichsetzen.",
+      "doNotConfuseWith": [
+        "Rendite",
+        "Investition",
+        "Sanierung"
+      ],
+      "synonyms": [
+        "spekulative Verwertungslogik"
+      ],
+      "relatedTerms": [
+        "stranded-assets",
+        "wohnwirkung",
+        "wirkungspflicht-eigentum"
+      ],
+      "relatedDocuments": [
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
+      ],
+      "examples": [
+        "spekulativer Leerstand",
+        "Bodenhortung",
+        "Zweckentfremdung"
+      ],
+      "preferredUsage": "Als Wirkungsrisiko im Wohnungsmarkt verwenden.",
+      "deprecatedUsage": [
+        "jede private Vermietung"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "spekulationslogik",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
       "termId": "stranded-assets",
       "canonicalLabel": "Stranded Assets",
       "slug": "stranded-assets",
@@ -825,6 +932,7 @@
         "gesetzlicher Stichtag"
       ],
       "synonyms": [
+        "Stranded Asset",
         "gestrandete Vermögenswerte"
       ],
       "relatedTerms": [
@@ -853,6 +961,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "t-sroi",
       "canonicalLabel": "T-SROI",
       "slug": "t-sroi",
@@ -863,8 +972,8 @@
       "sourceSection": "Instrumente",
       "shortDefinition": "T-SROI beschreibt transformationsbezogene Wirkung im Verhältnis zu eingesetzten Ressourcen.",
       "hoverDefinition": "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
-      "longDefinition": "Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite.",
-      "usageNote": "Nicht mit einfacher Finanzrendite verwechseln.",
+      "longDefinition": "Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite. T-SROI ist keine operative Netto-Wirkungskennzahl. Diese Rolle liegt beim NWI.",
+      "usageNote": "Nicht mit NWI oder einfacher Finanzrendite verwechseln.",
       "doNotConfuseWith": [
         "SROI",
         "NWI",
@@ -891,6 +1000,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "transformationswirkung",
       "canonicalLabel": "Transformationswirkung",
       "slug": "transformationswirkung",
@@ -923,6 +1033,51 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
+      "termId": "warmmietenneutralitaet",
+      "canonicalLabel": "Warmmietenneutralität",
+      "slug": "warmmietenneutralitaet",
+      "status": "arbeitsbegriff",
+      "version": "1.0",
+      "source": "Wohnen & Stadt",
+      "sourceDocument": "woek_wohnen_stadt_konzeptpapier_v0_1.docx",
+      "sourceSection": "Sanierung, Energie und Warmmietenneutralität",
+      "shortDefinition": "Warmmietenneutralität bedeutet, dass Sanierung ökologische Wirkung erzeugt, ohne die reale Wohnkostenbelastung zu erhöhen.",
+      "hoverDefinition": "Warmmietenneutralität prüft, ob Energieeinsparung, Förderung und Miete zusammen die Haushalte nicht überlasten.",
+      "longDefinition": "In der Wirkungsökonomie ist Sanierung dann sozial tragfähig, wenn Klimawirkung, Betriebskosten, Förderung, Mietentwicklung und Härtefallschutz zusammen betrachtet werden.",
+      "usageNote": "Nicht als Garantie gleicher Kaltmiete verstehen.",
+      "doNotConfuseWith": [
+        "Mietendeckel",
+        "Modernisierungsumlage"
+      ],
+      "synonyms": [
+        "warmmietenneutrale Sanierung"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "wix-vi"
+      ],
+      "relatedDocuments": [
+        "woek_wohnen_stadt_konzeptpapier_v0_1",
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
+      ],
+      "examples": [
+        "sinkende Nebenkosten",
+        "Sanierungsbonus",
+        "Härtefallregel"
+      ],
+      "preferredUsage": "Als Schutz- und Bewertungslogik für Sanierung verwenden.",
+      "deprecatedUsage": [
+        "Sanierung ohne Kostenwirkung"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "warmmietenneutralitaet",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
       "termId": "wirkmechanismus",
       "canonicalLabel": "Wirkmechanismus",
       "slug": "wirkmechanismus",
@@ -932,7 +1087,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
-      "hoverDefinition": "Ein Wirkmechanismus erklärt, wie aus einem Auslöser unter bestimmten Bedingungen Wirkung entstehen kann.",
+      "hoverDefinition": "Ein Wirkmechanismus beschreibt, wie aus einem Auslöser Wirkung entstehen kann.",
       "longDefinition": "Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Resonanzräume und tatsächliche Zustandsveränderungen.",
       "usageNote": "Nicht als Wirkung selbst formulieren.",
       "doNotConfuseWith": [
@@ -957,6 +1112,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkstoff",
       "canonicalLabel": "Wirkstoff",
       "slug": "wirkstoff",
@@ -967,7 +1123,7 @@
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
       "hoverDefinition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
-      "longDefinition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können.",
+      "longDefinition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung.",
       "usageNote": "Nur als Analogie, nicht als harte Fachkategorie.",
       "doNotConfuseWith": [
         "Wirkung",
@@ -995,6 +1151,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkung",
       "canonicalLabel": "Wirkung",
       "slug": "wirkung",
@@ -1035,6 +1192,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Architekturbegriff",
       "termId": "wirkungsarchitektur",
       "canonicalLabel": "Wirkungsarchitektur",
       "slug": "wirkungsarchitektur",
@@ -1070,6 +1228,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungsbewertung",
       "canonicalLabel": "Wirkungsbewertung",
       "slug": "wirkungsbewertung",
@@ -1104,6 +1263,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungsblindheit",
       "canonicalLabel": "Wirkungsblindheit",
       "slug": "wirkungsblindheit",
@@ -1138,6 +1298,43 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Datenbegriff",
+      "termId": "wirkungsdaten",
+      "canonicalLabel": "Wirkungsdaten",
+      "slug": "wirkungsdaten",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Daten und Standards",
+      "shortDefinition": "Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar.",
+      "hoverDefinition": "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen.",
+      "longDefinition": "Wirkungsdaten können Primärdaten, geprüfte Sekundärdaten, Produktdaten, Lieferkettendaten, Benchmarks, Prüfstatus und Unsicherheiten umfassen. Sie sind Grundlage für Scorecards, FinalScore, NWI und spätere Rückkopplung.",
+      "usageNote": "Nicht jede Berichtszahl ist bereits Wirkungsdatum; Bezug zu Zustand, Bewertung oder Rückkopplung benennen.",
+      "doNotConfuseWith": [
+        "Reportingdaten",
+        "Wirkungsdatenraum"
+      ],
+      "synonyms": [
+        "Wirkungsdatenpunkte"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard",
+        "nwi"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Für prüfbare Daten mit Wirkungsbezug verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungsdaten",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Datenbegriff",
       "termId": "wirkungsdatenraum",
       "canonicalLabel": "Wirkungsdatenraum",
       "slug": "wirkungsdatenraum",
@@ -1173,6 +1370,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wirkungseinkommen",
       "canonicalLabel": "Wirkungseinkommen",
       "slug": "wirkungseinkommen",
@@ -1208,6 +1406,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungsempfaenger",
       "canonicalLabel": "Wirkungsempfänger",
       "slug": "wirkungsempfaenger",
@@ -1242,6 +1441,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Bewertungsbegriff",
       "termId": "wirkungsgrenze",
       "canonicalLabel": "Wirkungsgrenze",
       "slug": "wirkungsgrenze",
@@ -1277,6 +1477,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wirkungshaushalt",
       "canonicalLabel": "Wirkungshaushalt",
       "slug": "wirkungshaushalt",
@@ -1309,6 +1510,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungskompetenz",
       "canonicalLabel": "Wirkungskompetenz",
       "slug": "wirkungskompetenz",
@@ -1341,6 +1543,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Steuerungsbegriff",
       "termId": "wirkungslenkung",
       "canonicalLabel": "Wirkungslenkung",
       "slug": "wirkungslenkung",
@@ -1373,6 +1576,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Architekturbegriff",
       "termId": "wirkungsnetz",
       "canonicalLabel": "Wirkungsnetz",
       "slug": "wirkungsnetz",
@@ -1405,6 +1609,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungspfad",
       "canonicalLabel": "Wirkungspfad",
       "slug": "wirkungspfad",
@@ -1439,6 +1644,50 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
+      "termId": "wirkungspflicht-eigentum",
+      "canonicalLabel": "Wirkungspflicht des Eigentums",
+      "slug": "wirkungspflicht-des-eigentums",
+      "status": "arbeitsbegriff",
+      "version": "1.0",
+      "source": "Wohnen & Stadt · Investor:innen und Vermieter:innen",
+      "sourceDocument": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceSection": "Eigentum mit Wirkungspflicht",
+      "shortDefinition": "Die Wirkungspflicht des Eigentums beschreibt, dass Eigentum an Wohnraum an seine reale Wirkung auf Bezahlbarkeit, Gesundheit, Quartier und Vertrauen rückgebunden wird.",
+      "hoverDefinition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
+      "longDefinition": "Eigentum bleibt Freiheitsform, Investitionsgrundlage und Verantwortung. Bei Wohnraum betrifft es aber einen gesellschaftlichen Wirkungsraum und braucht daher transparente Schutzgrenzen, Rechtsschutz und demokratische Ausgestaltung.",
+      "usageNote": "Nicht als Enteignungsformel oder Totalregulierung formulieren.",
+      "doNotConfuseWith": [
+        "Enteignung",
+        "Renditeverbot"
+      ],
+      "synonyms": [
+        "Eigentum mit Wirkungspflicht"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "spekulationslogik"
+      ],
+      "relatedDocuments": [
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
+      ],
+      "examples": [
+        "Sanierungspfad",
+        "Leerstandsvermeidung",
+        "transparente Bewirtschaftung"
+      ],
+      "preferredUsage": "Als ordnungspolitische Rückbindung von Wohnraum an Wirkung verwenden.",
+      "deprecatedUsage": [
+        "Eigentum ohne Rendite"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungspflicht eigentum",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
       "termId": "wirkungspotenzial",
       "canonicalLabel": "Wirkungspotenzial",
       "slug": "wirkungspotenzial",
@@ -1477,6 +1726,47 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Praxisbegriff",
+      "termId": "wirkungspunkte",
+      "canonicalLabel": "Wirkungspunkte",
+      "slug": "wirkungspunkte",
+      "status": "schutzbegriff",
+      "version": "1.1",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Schutzbegriffe",
+      "shortDefinition": "Wirkungspunkte sind eine mögliche produktbezogene Informations- oder Bonuslogik, keine Personenbewertung.",
+      "hoverDefinition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
+      "longDefinition": "Wirkungspunkte dürfen nur als freiwillige, datensparsame und transparente Produkt- oder Bonusinformation gedacht werden. Sie dürfen keine Bürger:innen bewerten, keine Kaufprofile erzwingen und keine Nachteile bei Nichtteilnahme erzeugen.",
+      "usageNote": "Nur mit Social-Credit-Abgrenzung verwenden.",
+      "doNotConfuseWith": [
+        "Social Credit",
+        "Personenscore"
+      ],
+      "synonyms": [
+        "Wirkungsbonus",
+        "Bonusmodell"
+      ],
+      "relatedTerms": [
+        "social-credit",
+        "verbraucherinformation",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "schutzrahmen-personenbewertung"
+      ],
+      "examples": [],
+      "preferredUsage": "Produktbezogen und freiwillig, nie als Personenrating.",
+      "deprecatedUsage": [
+        "Bürger:innen sammeln Wirkungspunkte"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungspunkte",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
       "termId": "wirkungsradar",
       "canonicalLabel": "Wirkungsradar",
       "slug": "wirkungsradar",
@@ -1509,6 +1799,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Schutzbegriff",
       "termId": "wirkungsrat",
       "canonicalLabel": "Wirkungsrat",
       "slug": "wirkungsrat",
@@ -1544,6 +1835,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Architekturbegriff",
       "termId": "wirkungsraum",
       "canonicalLabel": "Wirkungsraum",
       "slug": "wirkungsraum",
@@ -1553,7 +1845,7 @@
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
       "shortDefinition": "Ein Wirkungsraum ist ein Bereich, in dem Entscheidungen Zustände für Mensch, Planet oder Demokratie verändern.",
-      "hoverDefinition": "Ein Wirkungsraum ist ein Bereich, in dem Wirkung entsteht, sichtbar wird und zurückgekoppelt werden kann.",
+      "hoverDefinition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
       "longDefinition": "Wohnen, Bildung, Gesundheit, Medien, Mobilität, Kultur oder Finanzsysteme können Wirkungsräume sein.",
       "usageNote": "Nicht mit Zielgruppe gleichsetzen.",
       "doNotConfuseWith": [
@@ -1580,6 +1872,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wirkungsrente",
       "canonicalLabel": "Wirkungsrente",
       "slug": "wirkungsrente",
@@ -1615,6 +1908,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungsresilienz",
       "canonicalLabel": "Wirkungsresilienz",
       "slug": "wirkungsresilienz",
@@ -1652,6 +1946,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungsrisiko",
       "canonicalLabel": "Wirkungsrisiko",
       "slug": "wirkungsrisiko",
@@ -1684,6 +1979,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungsrueckkopplung",
       "canonicalLabel": "Wirkungsrückkopplung",
       "slug": "wirkungsrueckkopplung",
@@ -1718,6 +2014,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wirkungssteuer",
       "canonicalLabel": "Wirkungssteuer",
       "slug": "wirkungssteuer",
@@ -1755,6 +2052,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wirkungssteuergesetz",
       "canonicalLabel": "Wirkungssteuergesetz",
       "slug": "wirkungssteuergesetz",
@@ -1792,6 +2090,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
       "termId": "wirkungstraeger",
       "canonicalLabel": "Wirkungsträger",
       "slug": "wirkungstraeger",
@@ -1824,6 +2123,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wirkungsumsatzsteuer",
       "canonicalLabel": "Wirkungsumsatzsteuer",
       "slug": "wirkungsumsatzsteuer",
@@ -1864,6 +2164,52 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
+      "termId": "wirkungsvermietung",
+      "canonicalLabel": "Wirkungsvermietung",
+      "slug": "wirkungsvermietung",
+      "status": "arbeitsbegriff",
+      "version": "1.0",
+      "source": "Wohnen & Stadt · Investor:innen und Vermieter:innen",
+      "sourceDocument": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceSection": "Gute Vermietung, schlechte Vermietungswirkung",
+      "shortDefinition": "Wirkungsvermietung beschreibt Vermietung, die Wohnwirkung auf Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe und Vertrauen sichtbar macht.",
+      "hoverDefinition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
+      "longDefinition": "In der Wirkungsökonomie wird gute Vermietung nicht moralisch behauptet, sondern an Zustandsveränderungen sichtbar: stabile Wohnkosten, gesunde Räume, transparente Kosten, sanierter Bestand, geringere Verdrängung und stärkere Quartierswirkung.",
+      "usageNote": "Nicht als Personenbewertung oder Vermieter:innen-Ranking verwenden.",
+      "doNotConfuseWith": [
+        "Mietspiegel",
+        "Bonitätsprüfung"
+      ],
+      "synonyms": [
+        "wirkungsorientierte Vermietung"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wix-vi",
+        "warmmietenneutralitaet",
+        "wirkungspflicht-eigentum"
+      ],
+      "relatedDocuments": [
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3",
+        "woek_wohnen_investoren_vermieter_dossier_v0_3"
+      ],
+      "examples": [
+        "warmmietenneutrale Sanierung",
+        "transparente Nebenkosten",
+        "verlässliche Instandhaltung"
+      ],
+      "preferredUsage": "Als Wirkungslogik für Vermietungsentscheidungen verwenden.",
+      "deprecatedUsage": [
+        "Score für Vermieter:innen"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungsvermietung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Schutzbegriff",
       "termId": "wirkungswahrheit",
       "canonicalLabel": "Wirkungswahrheit",
       "slug": "wirkungswahrheit",
@@ -1900,6 +2246,95 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Grundbegriff",
+      "termId": "wix-vi",
+      "canonicalLabel": "WIX-VI",
+      "slug": "wix-vi",
+      "status": "arbeitsbegriff",
+      "version": "1.0",
+      "source": "Wohnen & Stadt · Investor:innen und Vermieter:innen",
+      "sourceDocument": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceSection": "WIX-VI",
+      "shortDefinition": "WIX-VI ist ein Vermietungs- und Investmentmodul des Wohnwirkungsindex.",
+      "hoverDefinition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
+      "longDefinition": "WIX-VI bewertet keine Personen. Es macht sichtbar, wie Vermietungs- und Investmententscheidungen auf Wohnwirkung, Stranded-Asset-Risiken, Warmmietenneutralität, Quartier und Transparenz zurückwirken.",
+      "usageNote": "Immer als Arbeitsmatrix und nicht als amtliche Einstufung darstellen.",
+      "doNotConfuseWith": [
+        "Mietspiegel",
+        "Immobilienrating"
+      ],
+      "synonyms": [
+        "WIX Vermietung Investment",
+        "Vermietungs- und Investmentmodul"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "stranded-assets"
+      ],
+      "relatedDocuments": [
+        "woek_wohnen_investoren_vermieter_dossier_v0_3"
+      ],
+      "examples": [
+        "Portfolio-Check",
+        "Sanierungspfad",
+        "Leerstandsrisiko"
+      ],
+      "preferredUsage": "Als Untermodul des Wohnwirkungsindex verwenden.",
+      "deprecatedUsage": [
+        "Vermieter:innen-Score"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wix vi",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
+      "termId": "wohnwirkung",
+      "canonicalLabel": "Wohnwirkung",
+      "slug": "wohnwirkung",
+      "status": "arbeitsbegriff",
+      "version": "1.0",
+      "source": "Wohnen & Stadt",
+      "sourceDocument": "woek_wohnen_stadt_konzeptpapier_v0_1.docx",
+      "sourceSection": "Wohnen als Wirkungsraum",
+      "shortDefinition": "Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt.",
+      "hoverDefinition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
+      "longDefinition": "Wohnwirkung ist neutral und relational. Sie kann positiv, negativ oder neutral sein und wird im WÖk-Rahmen an Mensch, Planet und Demokratie rückgekoppelt.",
+      "usageNote": "Nicht als Bewertung von Mieter:innen oder Eigentümer:innen verwenden.",
+      "doNotConfuseWith": [
+        "Wohnqualität",
+        "Immobilienwert"
+      ],
+      "synonyms": [
+        "Wirkung von Wohnen"
+      ],
+      "relatedTerms": [
+        "wix-vi",
+        "warmmietenneutralitaet",
+        "wirkungsvermietung"
+      ],
+      "relatedDocuments": [
+        "woek_wohnen_stadt_gesamtdossier_v0_1"
+      ],
+      "examples": [
+        "Mietbelastung",
+        "Schimmel",
+        "Hitzeresilienz",
+        "Quartierszugang"
+      ],
+      "preferredUsage": "Als Zustandsveränderung im Wirkungsfeld Wohnen verwenden.",
+      "deprecatedUsage": [
+        "Wohnscore für Personen"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wohnwirkung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Datenbegriff",
       "termId": "woek-id",
       "canonicalLabel": "WÖk-ID",
       "slug": "woek-id",
@@ -1940,6 +2375,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wstg",
       "canonicalLabel": "WStG",
       "slug": "wstg",
@@ -1975,6 +2411,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Messbegriff",
       "termId": "wustg",
       "canonicalLabel": "WUStG",
       "slug": "wustg",

@@ -136,19 +136,19 @@ const COMMON = {
     label: "Wohnen & Stadt",
     rows: {
       "Aufgabe der Politik":
-        "Politik muss Wohnen als Wirkungsraum sichern: bezahlbar, gesund, klimaverträglich, rechtssicher und sozial eingebettet.",
+        "Politik muss Wohnen als Wirkungsraum sichern: bezahlbar, gesund, klimaverträglich, rechtssicher und sozial eingebettet. Eigentumsschutz und Wirkungspflicht müssen so verbunden werden, dass verantwortliche Vermietung gestärkt und destruktive Spekulation erschwert wird.",
       "Politische Rahmenbedingungen":
-        "Mietrecht, Bodenpolitik, Sanierungsförderung, Warmmietenneutralität, Leerstandsregeln, kommunale Wohnwirkungshaushalte und Quartierswirkung brauchen gemeinsame Logik.",
+        "Mietrecht, Bodenpolitik, Sanierungsförderung, Warmmietenneutralität, Leerstandsregeln, Grundsteuer C, Zweckentfremdungsrecht, kommunale Wohnwirkungshaushalte und Quartierswirkung brauchen gemeinsame Logik.",
       Ausgestaltungsspielraum:
-        "Parteien können Mieterschutz, Eigentumsförderung, Genossenschaften, öffentliche Wohnungswirtschaft, Marktanreize, Bodenpolitik und Förderung unterschiedlich gewichten.",
+        "Parteien können Mieterschutz, Eigentumsförderung, Genossenschaften, öffentliche Wohnungswirtschaft, Marktanreize, Bodenpolitik, Sanierungspflichten, steuerliche Entlastung und Förderung unterschiedlich gewichten.",
       Zielkonflikte:
-        "Klimaschutz, Bezahlbarkeit, Eigentumsrechte, Neubau, Bestandsschutz, Verdrängung, Finanzierung und kommunale Handlungsfähigkeit müssen austariert werden.",
+        "Klimaschutz, Bezahlbarkeit, Eigentumsrechte, Wirkungspflicht, Sanierungsfinanzierung, Neubau, Bestandsschutz, Verdrängung, Finanzierung und kommunale Handlungsfähigkeit müssen austariert werden.",
       Rollenverteilung:
-        "Bund, Länder, Kommunen, Vermieter:innen, Mieter:innen, Energieversorger, Wohnungswirtschaft und Zivilgesellschaft tragen je eigene Verantwortung.",
+        "Bundesrecht, Landesrecht und kommunale Satzungen setzen unterschiedliche Hebel. Vermieter:innen, Mieter:innen, Energieversorger, Wohnungswirtschaft, Finanzierer:innen, Wissenschaft und Zivilgesellschaft tragen je eigene Verantwortung.",
       "Übergang und Schutz":
-        "Warmmietenneutralität, Härtefallregeln, Sanierungsfahrpläne, Mieterschutz, Rechtsschutz und Förderlogik verhindern soziale Schieflagen.",
+        "Warmmietenneutralität, Härtefallregeln, Kleinvermieter:innen-Schutz, Sanierungsfahrpläne, Mieterschutz, Rechtsschutz, Verhältnismäßigkeit und Förderlogik verhindern soziale und wirtschaftliche Schieflagen.",
       "Evaluation und Korrektur":
-        "Wohnwirkungsindex, Mietbelastung, Sanierungswirkung, Leerstand und Quartiersindikatoren müssen regelmäßig überprüft werden.",
+        "Wohnwirkungsindex, WIX-VI, Mietbelastung, Sanierungswirkung, Leerstand, Zweckentfremdung, Stranded-Asset-Risiken und Quartiersindikatoren müssen regelmäßig überprüft werden.",
       "Parteipolitische Anschlussfähigkeit":
         "Kommunale, marktliche, genossenschaftliche, soziale und ökologische Wohnpolitiken können verschiedene Instrumente wählen.",
       "Schutz vor Technokratie":

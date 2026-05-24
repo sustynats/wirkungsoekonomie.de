@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-05-23T18:04:53.150Z
+Stand: 2026-05-23T23:52:44.986Z
 
 ## Archetyp
 
@@ -48,7 +48,7 @@ Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschut
 
 Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung.
 
-Der FinalScore darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden; Grenzen und Reverse Merit Order bleiben wirksam.
+Der FinalScore verdichtet Einzelscores, Datenqualität, rote Linien und Reverse Merit Order. Er darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden.
 
 ## GRI
 
@@ -85,6 +85,12 @@ Negative Wirkung kann direkt, indirekt, kurzfristig oder langfristig auftreten u
 Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen.
 
 Netto-Wirkung ordnet Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Rote Linien, Wirkungsgrenzen und Nicht-Kompensation begrenzen die Verrechnung.
+
+## NWI
+
+Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung.
+
+Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet.
 
 ## neutrale Wirkung
 
@@ -132,7 +138,13 @@ Scorecards verbinden WÖk-IDs, Benchmarks, Datenqualität, Wirkungsgrenzen und B
 
 SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionelle und digitale Wirkungsfelder.
 
-SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind.
+SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind. SDG+ ist keine offizielle UN-Kategorie.
+
+## Social Credit
+
+Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.
+
+Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, öffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhänge.
 
 ## Stranded Assets
 
@@ -144,7 +156,7 @@ In der WÖk zeigen Stranded Assets, dass negative oder verdrängte Wirkungen irg
 
 T-SROI beschreibt transformationsbezogene Wirkung im Verhältnis zu eingesetzten Ressourcen.
 
-Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite.
+Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite. T-SROI ist keine operative Netto-Wirkungskennzahl. Diese Rolle liegt beim NWI.
 
 ## Transformationswirkung
 
@@ -162,7 +174,7 @@ Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Reso
 
 Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.
 
-Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können.
+Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung.
 
 ## Wirkung
 
@@ -187,6 +199,12 @@ Wirkungsbewertung verbindet Daten, Indikatoren, Benchmarks, Wirkungsgrenzen und 
 Wirkungsblindheit entsteht, wenn Entscheidungen ihre tatsächlichen Folgen nicht sehen oder nicht berücksichtigen.
 
 Wirkungsblindheit kann in Preisen, Kennzahlen, Medien, Politik, Kapitalflüssen oder Institutionen entstehen.
+
+## Wirkungsdaten
+
+Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar.
+
+Wirkungsdaten können Primärdaten, geprüfte Sekundärdaten, Produktdaten, Lieferkettendaten, Benchmarks, Prüfstatus und Unsicherheiten umfassen. Sie sind Grundlage für Scorecards, FinalScore, NWI und spätere Rückkopplung.
 
 ## Wirkungsdatenraum
 
@@ -247,6 +265,12 @@ Wirkungspfade helfen, Annahmen, Daten, Risiken und Rückkopplungen in einer Wirk
 Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann.
 
 Wirkungspotenzial beschreibt erwartbare oder mögliche Zustandsveränderungen unter bestimmten Bedingungen. Es braucht spätere Prüfung, ob Wirkung tatsächlich eingetreten ist.
+
+## Wirkungspunkte
+
+Wirkungspunkte sind eine mögliche produktbezogene Informations- oder Bonuslogik, keine Personenbewertung.
+
+Wirkungspunkte dürfen nur als freiwillige, datensparsame und transparente Produkt- oder Bonusinformation gedacht werden. Sie dürfen keine Bürger:innen bewerten, keine Kaufprofile erzwingen und keine Nachteile bei Nichtteilnahme erzeugen.
 
 ## Wirkungsradar
 

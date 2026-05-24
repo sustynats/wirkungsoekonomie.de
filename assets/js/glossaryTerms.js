@@ -1,804 +1,1240 @@
 window.WIRKUNG_GLOSSARY_TERMS = [
   {
-    key: "wirkungsoekonomie",
-    label: "Wirkungsökonomie",
-    aliases: ["WÖk", "Wirkungsoekonomie"],
-    definition:
-      "Ein Wirtschafts- und Gesellschaftsmodell, das Erfolg danach bewertet, ob etwas Mensch, Planet und Demokratie stärkt oder schädigt.",
-    url: "/glossar.html#begriff-wirkungsoekonomie",
-    priority: 1,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
+    "key": "archetyp",
+    "label": "Archetyp",
+    "aliases": [],
+    "definition": "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten.",
+    "url": "/begriffe/archetyp/",
+    "priority": 1,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
   },
   {
-    key: "wirkung",
-    label: "Wirkung",
-    aliases: [],
-    definition:
-      "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
-    url: "/glossar.html#begriff-wirkung",
-    priority: 1,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "nachhaltigkeit",
-    label: "Nachhaltigkeit",
-    aliases: [
-      "nachhaltig",
-      "nachhaltiger",
-      "nachhaltigere",
-      "nachhaltige Entwicklung",
-      "Nachhaltigkeitstransformation",
-      "Nachhaltigkeitsstrategie",
-      "Nachhaltigkeitsmanagement",
-      "Nachhaltigkeitsbericht",
-      "nachhaltiges Wirtschaften",
-      "nachhaltige Produkte",
-      "nachhaltige Gesellschaft",
-      "regenerative Wirtschaft",
-      "krisenfest",
+    "key": "benchmark",
+    "label": "Benchmark",
+    "aliases": [
+      "Vergleichswert",
+      "Schwellenwert"
     ],
-    definition:
-      "Nachhaltigkeit bedeutet in der WÖk: Ein System bleibt langfristig tragfähig, kennt seine Risiken und berücksichtigt seine Wirkungen auf Mensch, Planet und Demokratie. Nicht gleich ESG oder Reporting.",
-    url: "/glossar.html#nachhaltigkeit",
-    priority: 2,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "resilienz",
-    label: "Resilienz",
-    aliases: ["resilient", "resiliente Wirtschaft", "resiliente Gesellschaft", "Wirkungsresilienz"],
-    definition:
-      "Resilienz heißt: Ein System bleibt unter Stress handlungsfähig, lernt und stärkt seine tragenden Lebens-, Sozial- und Demokratiefunktionen.",
-    url: "/glossar.html#begriff-resilienz",
-    priority: 2,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "mensch-planet-demokratie",
-    label: "Mensch, Planet und Demokratie",
-    aliases: ["MPD"],
-    definition:
-      "Der normative Maßstab der Wirkungsökonomie: SDGs und Agenda 2030 rahmen Mensch und Planet, SDG+ ergänzt Demokratie.",
-    url: "/glossar.html#begriff-mensch-planet-demokratie",
-    priority: 1,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "sdgs",
-    label: "SDGs",
-    aliases: ["Sustainable Development Goals", "SDG"],
-    definition:
-      "Die 17 Ziele der Agenda 2030. Sie bilden in der Wirkungsökonomie den global verhandelten Referenzrahmen für Mensch und Planet.",
-    url: "/glossar.html#begriff-sdgs",
-    priority: 1,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungssteuer",
-    label: "Wirkungssteuer",
-    aliases: ["Wirkungssteuern"],
-    definition: "Eine Steuerlogik, bei der nachweisbare positive Netto-Wirkung entlastet und schädliche Wirkung stärker belastet wird.",
-    url: "/glossar.html#begriff-wirkungssteuer",
-    priority: 1,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungspotenzial",
-    label: "Wirkungspotenzial",
-    aliases: ["Wirkungspotenziale", "Wirkungspotenzialen"],
-    definition: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
-    url: "/glossar.html#begriff-wirkungspotenzial",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsraum",
-    label: "Wirkungsraum",
-    aliases: ["Wirkungsräume", "Wirkungsraeume"],
-    definition:
-      "Der Zusammenhang, in dem Wirkung entsteht. Eine Aussage oder Entscheidung wirkt je nach Kontext und Resonanzraum unterschiedlich.",
-    url: "/glossar.html#begriff-wirkungsraum",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "demokratie",
-    label: "Demokratie",
-    aliases: [],
-    definition:
-      "Der demokratische Wirkungsraum aus Rechtsstaatlichkeit, Vertrauen, Diskursfähigkeit, Medienqualität und Schutz vor Machtmissbrauch.",
-    url: "/glossar.html#begriff-demokratie",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "medienqualitaet",
-    label: "Medienqualität",
-    aliases: [],
-    definition:
-      "Die Qualität öffentlicher Information: Quellenklarheit, Kontext, Korrekturfähigkeit, Transparenz und Verantwortung für demokratische Öffentlichkeit.",
-    url: "/glossar.html#begriff-medienqualitaet",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "diskursfaehigkeit",
-    label: "Diskursfähigkeit",
-    aliases: ["Diskursfaehigkeit"],
-    definition:
-      "Die Fähigkeit einer Gesellschaft, Konflikte mit Fakten, Würde, Widerspruch und demokratischer Korrekturfähigkeit auszutragen.",
-    url: "/glossar.html#begriff-diskursfaehigkeit",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsanalyse",
-    label: "Wirkungsanalyse",
-    aliases: ["Wirkungsanalysen"],
-    definition:
-      "Eine Prüfung möglicher Folgen: nicht nur, ob etwas stimmt, sondern welche Wirkung es in sozialen und demokratischen Räumen entfalten kann.",
-    url: "/glossar.html#begriff-wirkungsanalyse",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "narrativ",
-    label: "Narrativ",
-    aliases: ["Narrative", "Narrativen"],
-    definition:
-      "Eine wiedererkennbare Erzählstruktur, die Ereignisse deutet und Resonanzräume wie Angst, Vertrauen oder Zugehörigkeit öffnen kann.",
-    url: "/glossar.html#begriff-narrativ",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "frame",
-    label: "Frame",
-    aliases: ["Frames", "Framing"],
-    definition:
-      "Ein Deutungsrahmen, der festlegt, welche Aspekte eines Problems sichtbar werden und welche ausgeblendet bleiben.",
-    url: "/glossar.html#begriff-frame",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "resonanzraum",
-    label: "Resonanzraum",
-    aliases: ["Resonanzräume", "Resonanzraeume"],
-    definition:
-      "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten.",
-    url: "/glossar.html#begriff-resonanzraum",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "nwi",
-    label: "Netto-Wirkungs-Index",
-    aliases: ["Netto-Wirkungs-Index / NWI", "NWI"],
-    definition:
-      "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
-    url: "/glossar.html#begriff-nwi",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "scorecard",
-    label: "Scorecard",
-    aliases: ["Scorecards"],
-    definition:
-      "Eine strukturierte Bewertung, die zeigt, wie ein Produkt, Unternehmen oder eine Entscheidung in verschiedenen Wirkungsfeldern abschneidet.",
-    url: "/glossar.html#begriff-scorecard",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsklasse",
-    label: "Wirkungsklasse",
-    aliases: ["Wirkungsklassen"],
-    definition:
-      "Die verdichtete Klasse von +3 bis -3, die aus Scorecard, Netto-Wirkung und Schutzregel entsteht.",
-    url: "/glossar.html#begriff-wirkungsklasse",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsrat",
-    label: "Wirkungsrat",
-    aliases: [],
-    definition: "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
-    url: "/glossar.html#begriff-wirkungsrat",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungskompetenz",
-    label: "Wirkungskompetenz",
-    aliases: [],
-    definition:
-      "Die Fähigkeit, Folgen des eigenen Handelns für Mensch, Planet und Demokratie zu erkennen und verantwortungsvoll zu gestalten.",
-    url: "/glossar.html#begriff-wirkungskompetenz",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkstoff",
-    label: "Wirkstoff",
-    aliases: ["Wirkstoffe", "Wirkstoffen"],
-    definition:
-      "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
-    url: "/glossar.html#begriff-wirkstoff",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "netto-wirkung",
-    label: "Netto-Wirkung",
-    aliases: ["Netto Wirkung"],
-    definition:
-      "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
-    url: "/glossar.html#begriff-netto-wirkung",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "positive-netto-wirkung",
-    label: "positive Netto-Wirkung",
-    aliases: ["Positive Netto-Wirkung", "positiver Netto-Wirkung", "positive Nettowirkung"],
-    definition:
-      "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
-    url: "/glossar.html#begriff-positive-netto-wirkung",
-    priority: 1,
-    allowedContexts: ["home", "page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsrisiko",
-    label: "Wirkungsrisiko",
-    aliases: ["Wirkungsrisiken"],
-    definition:
-      "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
-    url: "/glossar.html#begriff-wirkungsrisiko",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "reverse-merit-order",
-    label: "Reverse Merit Order",
-    aliases: [],
-    definition:
-      "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
-    url: "/glossar.html#begriff-reverse-merit-order",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "nichtkompensationsprinzip",
-    label: "Nichtkompensationsprinzip",
-    aliases: ["Nicht-Kompensationsprinzip", "Nichtkompensation", "Nicht-Kompensation"],
-    definition:
-      "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.",
-    url: "/glossar.html#begriff-nichtkompensationsprinzip",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "t-sroi",
-    label: "T-SROI",
-    aliases: ["Transformational Social Return on Investment"],
-    definition: "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
-    url: "/glossar.html#begriff-t-sroi",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "sdg-plus",
-    label: "SDG+",
-    aliases: [],
-    definition:
-      "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung.",
-    url: "/glossar.html#begriff-sdg-plus",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "referenzrahmen",
-    label: "Referenzrahmen",
-    aliases: ["normativer Maßstab", "Agenda 2030"],
-    definition:
-      "Der Maßstab, an dem Wirkung bewertet wird: SDGs, Agenda 2030 und SDG+ statt persönlicher Moral.",
-    url: "/glossar.html#begriff-referenzrahmen",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsempfaenger",
-    label: "Wirkungsempfänger",
-    aliases: ["Betroffene", "Wirkung für wen"],
-    definition:
-      "Menschen, Lebewesen, Gruppen, Ökosysteme, Institutionen oder zukünftige Generationen, die von Wirkung betroffen sind.",
-    url: "/glossar.html#begriff-wirkungsempfaenger",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "zielkonflikt",
-    label: "Zielkonflikt",
-    aliases: ["Trade-off", "Zielkonflikte"],
-    definition:
-      "Ein Konflikt, wenn eine Maßnahme in einem Wirkungsfeld stärkt und in einem anderen schädigt.",
-    url: "/glossar.html#begriff-zielkonflikt",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungslenkung",
-    label: "Wirkungslenkung",
-    aliases: [],
-    definition: "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
-    url: "/glossar.html#begriff-wirkungslenkung",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsarchitektur",
-    label: "Wirkungsarchitektur",
-    aliases: ["Wirkungsarchitekturen"],
-    definition:
-      "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
-    url: "/glossar.html#begriff-wirkungsarchitektur",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsbewertung",
-    label: "Wirkungsbewertung",
-    aliases: [],
-    definition: "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
-    url: "/glossar.html#begriff-wirkungsbewertung",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsfeld",
-    label: "Wirkungsfeld",
-    aliases: ["Wirkungsfelder"],
-    definition: "Thematischer Bereich, in dem Wirkung entsteht oder bewertet wird.",
-    url: "/glossar.html#begriff-wirkungsfeld",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsindikator",
-    label: "Wirkungsindikator",
-    aliases: ["Wirkungsindikatoren"],
-    definition: "Messbare Kennzahl, die einen bestimmten Wirkungsaspekt abbildet.",
-    url: "/glossar.html#begriff-wirkungsindikator",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungskennzahl",
-    label: "Wirkungskennzahl",
-    aliases: ["KII", "Key Impact Indicator", "Wirkungskennzahlen"],
-    definition: "Messbare Größe zur Beobachtung oder Bewertung von Wirkung, nicht bloß Output oder Leistung.",
-    url: "/glossar.html#begriff-wirkungskennzahl",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "transformationswirkung",
-    label: "Transformationswirkung",
-    aliases: [],
-    definition: "Wirkung, die Strukturen, Anreize, Märkte, Regeln oder Handlungspfade dauerhaft verändert.",
-    url: "/glossar.html#begriff-transformationswirkung",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungspfad",
-    label: "Wirkungspfad",
-    aliases: ["Wirkpfad", "Wirkpfade", "Wirkungspfade"],
-    definition: "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
-    url: "/glossar.html#begriff-wirkungspfad",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsnetz",
-    label: "Wirkungsnetz",
-    aliases: ["Wirkungsnetze"],
-    definition: "Visualisiert, wie Wirkungspotenziale, Wirkungen, Resonanzräume und Rückkopplungen verbunden sind.",
-    url: "/glossar.html#begriff-wirkungsnetz",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsradar",
-    label: "Wirkungsradar",
-    aliases: [],
-    definition: "Spinnennetzdiagramm für mehrere Wirkungspotenziale oder Wirkungsfelder. Außen heißt nicht immer besser.",
-    url: "/glossar.html#begriff-wirkungsradar",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "resonanzprofil",
-    label: "Resonanzprofil",
-    aliases: [],
-    definition: "Zeigt, welche emotionalen, sozialen oder demokratischen Resonanzräume Kommunikation aktiviert.",
-    url: "/glossar.html#begriff-resonanzprofil",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "resonanzrisiko",
-    label: "Resonanzrisiko",
-    aliases: ["Resonanzrisiken"],
-    definition: "Risiko, dass Sprache, Bilder, Frames oder Plattformlogiken schädliche Resonanzräume verstärken.",
-    url: "/glossar.html#begriff-resonanzrisiko",
-    priority: 2,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "kapitalwirkung",
-    label: "Kapitalwirkung",
-    aliases: [],
-    definition: "Wirkung von Kapitalflüssen auf Mensch, Planet und Demokratie.",
-    url: "/glossar.html#begriff-kapitalwirkung",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungskapital",
-    label: "Wirkungskapital",
-    aliases: [],
-    definition: "Kapital, das gezielt zur Erzeugung positiver Netto-Wirkung eingesetzt wird.",
-    url: "/glossar.html#begriff-wirkungskapital",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsregister",
-    label: "Wirkungsregister",
-    aliases: [],
-    definition: "Geprüfte Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks und Versionen.",
-    url: "/glossar.html#begriff-wirkungsregister",
-    priority: 3,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "wirkungsaudit",
-    label: "Wirkungsaudit",
-    aliases: [],
-    definition: "Prüft Wirkungsdaten, Scorecards, Bewertungen und Nachweise auf Plausibilität und Regelkonformität.",
-    url: "/glossar.html#begriff-wirkungsaudit",
-    priority: 3,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "wirkungsassurance",
-    label: "Wirkungsassurance",
-    aliases: [],
-    definition: "Unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
-    url: "/glossar.html#begriff-wirkungsassurance",
-    priority: 3,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "wirkungshebel",
-    label: "Wirkungshebel",
-    aliases: ["Systemhebel"],
-    definition: "Eingriffspunkt, an dem eine Maßnahme besonders starke oder tiefgreifende Wirkung erzeugt.",
-    url: "/glossar.html#begriff-wirkungshebel",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsgrenze",
-    label: "Wirkungsgrenze",
-    aliases: ["Rote Linie", "Rote Linien"],
-    definition: "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
-    url: "/glossar.html#begriff-wirkungsgrenze",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsblindheit",
-    label: "Wirkungsblindheit",
-    aliases: ["wirkungsblind"],
-    definition: "Systeme messen Aktivität, Kapital oder Output, aber nicht die tatsächlichen Folgen.",
-    url: "/glossar.html#begriff-wirkungsblindheit",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungswahrheit",
-    label: "Wirkungswahrheit",
-    aliases: ["wirkungsunwahr", "Wirkungsunwahrheit"],
-    definition: "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
-    url: "/glossar.html#begriff-wirkungswahrheit",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungsrueckkopplung",
-    label: "Wirkungsrückkopplung",
-    aliases: ["Wirkungsrückkopplung", "Rückkopplung"],
-    definition: "Bewertete Wirkung verändert Preise, Steuern, Kapital oder Entscheidungen.",
-    url: "/glossar.html#begriff-wirkungsrueckkopplung",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungshaushalt",
-    label: "Wirkungshaushalt",
-    aliases: ["Wirkungshaushalte"],
-    definition: "Ein öffentlicher Haushalt, der Mittel danach priorisiert, wo sie belegbare positive Netto-Wirkung, Prävention und Resilienz erzeugen.",
-    url: "/glossar.html#begriff-wirkungshaushalt",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "wirkungseinkommen",
-    label: "Wirkungseinkommen",
-    aliases: [],
-    definition: "Ein Einkommensmodell, das reale Wirkleistung stärker anerkennt als bloßes Markteinkommen.",
-    url: "/glossar.html#begriff-wirkungseinkommen",
-    priority: 3,
-    allowedContexts: ["page", "blog", "academy", "method", "glossary"],
-  },
-  {
-    key: "woek-id",
-    label: "WÖk-ID",
-    aliases: ["WÖk-IDs"],
-    definition: "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
-    url: "/glossar.html#begriff-woek-id",
-    priority: 4,
-    allowedContexts: ["page", "method", "academy", "glossary"],
-  },
-  {
-    key: "wstg",
-    label: "WStG",
-    aliases: ["Wirkungssteuergesetz", "Wirkungssteuerrahmengesetz"],
-    definition:
-      "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
-    url: "/glossar.html#begriff-wstg",
-    priority: 3,
-    allowedContexts: ["page", "method", "academy", "glossary"],
-  },
-  {
-    key: "wustg",
-    label: "WUStG",
-    aliases: ["Wirkungsumsatzsteuer", "Wirkungsumsatzsteuergesetz", "Produktwirkungssteuer"],
-    definition:
-      "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
-    url: "/glossar.html#begriff-wustg",
-    priority: 3,
-    allowedContexts: ["page", "method", "academy", "glossary"],
-  },
-  {
-    key: "modellstand",
-    label: "Modellstand",
-    aliases: ["Modellwert", "Modellrechnung", "Arbeitspapierstand", "Konzeptstand"],
-    definition:
-      "Kennzeichnung für Annahmen oder Rechenlogiken, die Orientierung geben, aber keine Leistungszusage oder finale Rechtsgrundlage sind.",
-    url: "/glossar.html#begriff-modellstand",
-    priority: 4,
-    allowedContexts: ["page", "method", "academy", "glossary"],
-  },
-  {
-    key: "finalscore",
-    label: "FinalScore",
-    aliases: [],
-    definition: "Die verdichtete Gesamtbewertung einer Wirkungsbewertung.",
-    url: "/glossar.html#begriff-finalscore",
-    priority: 4,
-    allowedContexts: ["method", "academy", "glossary"],
-  },
-  {
-    key: "archetypen",
-    label: "Archetypen",
-    aliases: [],
-    definition: "Typische Wirkungsmuster, die Bewertungen vergleichbarer machen.",
-    url: "/glossar.html#begriff-archetypen",
-    priority: 4,
-    allowedContexts: ["method", "academy", "glossary"],
-  },
-  {
-    key: "benchmarks",
-    label: "Benchmarks",
-    aliases: ["Benchmark"],
-    definition: "Vergleichswerte, an denen eine Wirkung eingeordnet wird.",
-    url: "/glossar.html#begriff-benchmarks",
-    priority: 4,
-    allowedContexts: ["method", "academy", "glossary"],
-  },
-  {
-    key: "wirkungsdatenraum",
-    label: "Wirkungsdatenraum",
-    aliases: ["Wirkungsdatenräume"],
-    definition: "Ein Datenraum, in dem Wirkungsdaten prüfbar und geschützt geteilt werden können.",
-    url: "/glossar.html#begriff-wirkungsdatenraum",
-    priority: 4,
-    allowedContexts: ["method", "academy", "glossary"],
-  },
-  {
-    key: "csrd",
-    label: "CSRD",
-    aliases: ["Corporate Sustainability Reporting Directive", "Nachhaltigkeitsberichtspflicht"],
-    definition: "EU-Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen.",
-    url: "/glossar.html#begriff-csrd",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "esrs",
-    label: "ESRS",
-    aliases: ["European Sustainability Reporting Standards", "ESRS E1", "ESRS S1", "ESRS G1"],
-    definition: "Europäische Nachhaltigkeitsberichtsstandards zur CSRD.",
-    url: "/glossar.html#begriff-esrs",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "gri",
-    label: "GRI",
-    aliases: ["Global Reporting Initiative", "GRI Standards"],
-    definition: "Globaler Rahmen für Nachhaltigkeitsberichterstattung.",
-    url: "/glossar.html#begriff-gri",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "efrag",
-    label: "EFRAG",
-    aliases: ["European Financial Reporting Advisory Group"],
-    definition: "Fachlicher Referenzpunkt für ESRS-Struktur, Umsetzung und Datenlogik.",
-    url: "/glossar.html#begriff-efrag",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "esg",
-    label: "ESG",
-    aliases: ["Environmental Social Governance"],
-    definition: "Finanz- und Unternehmensbegriff für Umwelt, Soziales und Governance.",
-    url: "/glossar.html#begriff-esg",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "eu-taxonomie",
-    label: "EU-Taxonomie",
-    aliases: ["EU Taxonomie", "Taxonomie"],
-    definition: "EU-Klassifikationssystem für ökologisch nachhaltige wirtschaftliche Aktivitäten.",
-    url: "/glossar.html#begriff-eu-taxonomie",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "nace",
-    label: "NACE",
-    aliases: ["europäische Klassifikation wirtschaftlicher Aktivitäten"],
-    definition: "Europäische Klassifikation wirtschaftlicher Tätigkeiten.",
-    url: "/glossar.html#begriff-nace",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "dpp",
-    label: "Digitaler Produktpass",
-    aliases: ["DPP", "Produktpass", "Digital Product Passport"],
-    definition: "Produktbezogene Dateninfrastruktur für Materialien, Nachhaltigkeit, Haltbarkeit und weitere Eigenschaften.",
-    url: "/glossar.html#begriff-dpp",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "espr",
-    label: "ESPR",
-    aliases: ["Ecodesign for Sustainable Products Regulation"],
-    definition: "EU-Verordnung für nachhaltigere Produktgestaltung und Grundlage für den Digitalen Produktpass.",
-    url: "/glossar.html#begriff-espr",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "csddd",
-    label: "CSDDD",
-    aliases: ["Corporate Sustainability Due Diligence Directive", "Sorgfaltspflichten"],
-    definition: "EU-Richtlinie zu unternehmerischen Sorgfaltspflichten für Menschenrechte und Umwelt.",
-    url: "/glossar.html#begriff-csddd",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "doppelte-wesentlichkeit",
-    label: "Doppelte Wesentlichkeit",
-    aliases: ["Double Materiality", "Wesentlichkeit"],
-    definition: "Betrachtet finanzielle Auswirkungen auf das Unternehmen und Auswirkungen des Unternehmens auf Umwelt und Menschen.",
-    url: "/glossar.html#begriff-doppelte-wesentlichkeit",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "wirkungsdaten",
-    label: "Wirkungsdaten",
-    aliases: ["Impact Daten", "Wirkungsdatenbasis"],
-    definition: "Daten, die Folgen für Mensch, Planet und Demokratie erfassbar machen.",
-    url: "/glossar.html#begriff-wirkungsdaten",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "datenqualitaet",
-    label: "Datenqualität",
-    aliases: ["Datenqualitätsklasse"],
-    definition: "Belastbarkeit, Herkunft, Aktualität und Prüfbarkeit eines Datenwerts.",
-    url: "/glossar.html#begriff-datenqualitaet",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "lca",
-    label: "LCA",
-    aliases: ["Life Cycle Assessment", "Lebenszyklusanalyse"],
-    definition: "Lebenszyklusanalyse eines Produkts von Rohstoff bis Entsorgung.",
-    url: "/glossar.html#begriff-lca",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "epd",
-    label: "EPD",
-    aliases: ["Environmental Product Declaration", "Umweltproduktdeklaration"],
-    definition: "Umweltproduktdeklaration mit produktbezogenen Lebenszyklusinformationen.",
-    url: "/glossar.html#begriff-epd",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "ghg-protocol",
-    label: "GHG Protocol",
-    aliases: ["Greenhouse Gas Protocol", "Treibhausgasbilanzierung"],
-    definition: "Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
-    url: "/glossar.html#begriff-ghg-protocol",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "ilo",
-    label: "ILO",
-    aliases: ["International Labour Organization"],
-    definition: "Internationale Referenz für Arbeitsnormen und menschenwürdige Arbeit.",
-    url: "/glossar.html#begriff-ilo",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "who",
-    label: "WHO",
-    aliases: ["World Health Organization", "Weltgesundheitsorganisation"],
-    definition: "Zentrale Referenz für Gesundheit, Public Health und gesundheitliche Risiken.",
-    url: "/glossar.html#begriff-who",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "ipcc",
-    label: "IPCC",
-    aliases: ["Intergovernmental Panel on Climate Change"],
-    definition: "Zentrale wissenschaftliche Referenz zu Klimawandel.",
-    url: "/glossar.html#begriff-ipcc",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
-  {
-    key: "ipbes",
-    label: "IPBES",
-    aliases: ["Biodiversität", "Ökosystemleistungen"],
-    definition: "Wissenschaftlich-politische Plattform zu Biodiversität und Ökosystemleistungen.",
-    url: "/glossar.html#begriff-ipbes",
-    priority: 4,
-    allowedContexts: ["page", "method", "glossary"],
-  },
+    "definition": "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität.",
+    "url": "/begriffe/benchmark/",
+    "priority": 2,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "csrd",
+    "label": "CSRD",
+    "aliases": [
+      "Corporate Sustainability Reporting Directive"
+    ],
+    "definition": "CSRD schafft Berichtsdaten; in der WÖk werden daraus erst durch Rückkopplung Steuerungsdaten.",
+    "url": "/begriffe/csrd/",
+    "priority": 3,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "digitaler-produktpass",
+    "label": "Digitaler Produktpass",
+    "aliases": [
+      "DPP",
+      "Digital Product Passport"
+    ],
+    "definition": "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus.",
+    "url": "/begriffe/digitaler-produktpass/",
+    "priority": 4,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "esg",
+    "label": "ESG",
+    "aliases": [
+      "Environmental Social Governance"
+    ],
+    "definition": "ESG ist ein Anschlussraum der WÖk, aber nicht ihre Kernlogik.",
+    "url": "/begriffe/esg/",
+    "priority": 5,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "esrs",
+    "label": "ESRS",
+    "aliases": [
+      "European Sustainability Reporting Standards"
+    ],
+    "definition": "ESRS strukturieren Berichtsdaten, die in der WÖk zu Wirkungs- und Steuerungsdaten weiterentwickelt werden können.",
+    "url": "/begriffe/esrs/",
+    "priority": 6,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "eu-taxonomie",
+    "label": "EU-Taxonomie",
+    "aliases": [
+      "EU Taxonomy"
+    ],
+    "definition": "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung.",
+    "url": "/begriffe/eu-taxonomie/",
+    "priority": 7,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "finalscore",
+    "label": "FinalScore",
+    "aliases": [],
+    "definition": "Der FinalScore ist die steuerungsrelevante Verdichtung von Einzelscores unter Berücksichtigung von Datenqualität, Reverse Merit Order und Nichtkompensation.",
+    "url": "/begriffe/finalscore/",
+    "priority": 8,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "gri",
+    "label": "GRI",
+    "aliases": [
+      "Global Reporting Initiative"
+    ],
+    "definition": "GRI strukturiert Reporting; WÖk fragt zusätzlich nach bewerteter Wirkung und Rückkopplung.",
+    "url": "/begriffe/gri/",
+    "priority": 9,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "mensch-planet-demokratie",
+    "label": "Mensch, Planet und Demokratie",
+    "aliases": [
+      "MPD"
+    ],
+    "definition": "Mensch, Planet und Demokratie sind der Zielrahmen, an dem positive Netto-Wirkung ausgerichtet wird.",
+    "url": "/begriffe/mensch-planet-demokratie/",
+    "priority": 10,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "nace",
+    "label": "NACE",
+    "aliases": [],
+    "definition": "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung.",
+    "url": "/begriffe/nace/",
+    "priority": 11,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "nachhaltigkeit",
+    "label": "Nachhaltigkeit",
+    "aliases": [
+      "nachhaltig",
+      "nachhaltige Entwicklung",
+      "nachhaltige Wirtschaft",
+      "resiliente Wirtschaft"
+    ],
+    "definition": "Nachhaltigkeit bedeutet in der WÖk: Ein System lebt nicht auf Verschleiß, sondern bleibt krisenfest und erzeugt dauerhaft positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+    "url": "/begriffe/nachhaltigkeit/",
+    "priority": 12,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "negative-wirkung",
+    "label": "negative Wirkung",
+    "aliases": [],
+    "definition": "Negative Wirkung liegt vor, wenn eine Veränderung SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört.",
+    "url": "/begriffe/negative-wirkung/",
+    "priority": 13,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "netto-wirkung",
+    "label": "Netto-Wirkung",
+    "aliases": [
+      "Nettowirkung"
+    ],
+    "definition": "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
+    "url": "/begriffe/netto-wirkung/",
+    "priority": 14,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "nwi",
+    "label": "NWI",
+    "aliases": [
+      "Netto-Wirkungs-Index",
+      "Netto-Wirkungs-Index / NWI"
+    ],
+    "definition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
+    "url": "/begriffe/nwi/",
+    "priority": 15,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "neutrale-wirkung",
+    "label": "neutrale Wirkung",
+    "aliases": [],
+    "definition": "Neutrale Wirkung bedeutet, dass keine relevante positive oder negative Veränderung nachweisbar ist oder die Wirkung im Bewertungsrahmen neutral eingeordnet wird.",
+    "url": "/begriffe/neutrale-wirkung/",
+    "priority": 16,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "nichtkompensationsprinzip",
+    "label": "Nichtkompensationsprinzip",
+    "aliases": [
+      "Nicht-Kompensation",
+      "Nichtkompensation"
+    ],
+    "definition": "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.",
+    "url": "/begriffe/nichtkompensationsprinzip/",
+    "priority": 17,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "positive-netto-wirkung",
+    "label": "positive Netto-Wirkung",
+    "aliases": [
+      "positive Nettowirkung",
+      "positive netto Wirkung"
+    ],
+    "definition": "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
+    "url": "/begriffe/positive-netto-wirkung/",
+    "priority": 18,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "positive-wirkung",
+    "label": "positive Wirkung",
+    "aliases": [],
+    "definition": "Positive Wirkung liegt vor, wenn eine Veränderung auf SDGs, Agenda 2030 und SDG+ einzahlt.",
+    "url": "/begriffe/positive-wirkung/",
+    "priority": 19,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "resonanzraum",
+    "label": "Resonanzraum",
+    "aliases": [],
+    "definition": "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten.",
+    "url": "/begriffe/resonanzraum/",
+    "priority": 20,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "reverse-merit-order",
+    "label": "Reverse Merit Order",
+    "aliases": [
+      "Nichtkompensationsprinzip",
+      "Minimum-Operator",
+      "Engpasslogik"
+    ],
+    "definition": "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
+    "url": "/begriffe/reverse-merit-order/",
+    "priority": 21,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "scorecard",
+    "label": "Scorecard",
+    "aliases": [],
+    "definition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
+    "url": "/begriffe/scorecard/",
+    "priority": 22,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "sdg-plus",
+    "label": "SDG+",
+    "aliases": [
+      "SDG Plus",
+      "SDG-Plus"
+    ],
+    "definition": "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie.",
+    "url": "/begriffe/sdg-plus/",
+    "priority": 23,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "social-credit",
+    "label": "Social Credit",
+    "aliases": [
+      "Sozialkredit",
+      "Social-Credit-System"
+    ],
+    "definition": "Social Credit ist die umfassende Bewertung von Menschen nach Verhalten oder Konformität. Die Wirkungsökonomie zieht hier eine rote Linie.",
+    "url": "/begriffe/social-credit/",
+    "priority": 24,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "spekulationslogik",
+    "label": "Spekulationslogik",
+    "aliases": [
+      "spekulative Verwertungslogik"
+    ],
+    "definition": "Spekulationslogik ist nicht jede Rendite, sondern Rendite aus Verdrängung, Leerstand, Bodenhortung oder entkoppelter Knappheitsausnutzung.",
+    "url": "/begriffe/spekulationslogik/",
+    "priority": 25,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "stranded-assets",
+    "label": "Stranded Assets",
+    "aliases": [
+      "Stranded Asset",
+      "gestrandete Vermögenswerte"
+    ],
+    "definition": "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt.",
+    "url": "/begriffe/stranded-assets/",
+    "priority": 26,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "t-sroi",
+    "label": "T-SROI",
+    "aliases": [
+      "Transformational Social Return on Investment",
+      "Transformational SROI"
+    ],
+    "definition": "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
+    "url": "/begriffe/t-sroi/",
+    "priority": 27,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "transformationswirkung",
+    "label": "Transformationswirkung",
+    "aliases": [],
+    "definition": "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen.",
+    "url": "/begriffe/transformationswirkung/",
+    "priority": 28,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "warmmietenneutralitaet",
+    "label": "Warmmietenneutralität",
+    "aliases": [
+      "warmmietenneutrale Sanierung"
+    ],
+    "definition": "Warmmietenneutralität prüft, ob Energieeinsparung, Förderung und Miete zusammen die Haushalte nicht überlasten.",
+    "url": "/begriffe/warmmietenneutralitaet/",
+    "priority": 29,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkmechanismus",
+    "label": "Wirkmechanismus",
+    "aliases": [
+      "Wirkungsmechanismus"
+    ],
+    "definition": "Ein Wirkmechanismus beschreibt, wie aus einem Auslöser Wirkung entstehen kann.",
+    "url": "/begriffe/wirkmechanismus/",
+    "priority": 30,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkstoff",
+    "label": "Wirkstoff",
+    "aliases": [
+      "gesellschaftlicher Wirkstoff"
+    ],
+    "definition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
+    "url": "/begriffe/wirkstoff/",
+    "priority": 31,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkung",
+    "label": "Wirkung",
+    "aliases": [
+      "Impact",
+      "Zustandsveränderung"
+    ],
+    "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
+    "url": "/begriffe/wirkung/",
+    "priority": 32,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsarchitektur",
+    "label": "Wirkungsarchitektur",
+    "aliases": [],
+    "definition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
+    "url": "/begriffe/wirkungsarchitektur/",
+    "priority": 33,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsbewertung",
+    "label": "Wirkungsbewertung",
+    "aliases": [
+      "Impact Assessment"
+    ],
+    "definition": "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
+    "url": "/begriffe/wirkungsbewertung/",
+    "priority": 34,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsblindheit",
+    "label": "Wirkungsblindheit",
+    "aliases": [
+      "wirkungsblind"
+    ],
+    "definition": "Wirkungsblindheit heißt: Folgen werden erzeugt, aber nicht gesehen, bewertet oder zurückgekoppelt.",
+    "url": "/begriffe/wirkungsblindheit/",
+    "priority": 35,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsdaten",
+    "label": "Wirkungsdaten",
+    "aliases": [
+      "Wirkungsdatenpunkte"
+    ],
+    "definition": "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen.",
+    "url": "/begriffe/wirkungsdaten/",
+    "priority": 36,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsdatenraum",
+    "label": "Wirkungsdatenraum",
+    "aliases": [
+      "Wirkungsdatenräume"
+    ],
+    "definition": "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann.",
+    "url": "/begriffe/wirkungsdatenraum/",
+    "priority": 37,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungseinkommen",
+    "label": "Wirkungseinkommen",
+    "aliases": [
+      "Wirkungsdividende"
+    ],
+    "definition": "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung.",
+    "url": "/begriffe/wirkungseinkommen/",
+    "priority": 38,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsempfaenger",
+    "label": "Wirkungsempfänger",
+    "aliases": [
+      "Betroffene"
+    ],
+    "definition": "Wirkungsempfänger sind diejenigen, bei denen eine Zustandsveränderung ankommt.",
+    "url": "/begriffe/wirkungsempfaenger/",
+    "priority": 39,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsgrenze",
+    "label": "Wirkungsgrenze",
+    "aliases": [
+      "rote Linie",
+      "Red Line"
+    ],
+    "definition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
+    "url": "/begriffe/wirkungsgrenze/",
+    "priority": 40,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungshaushalt",
+    "label": "Wirkungshaushalt",
+    "aliases": [],
+    "definition": "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung.",
+    "url": "/begriffe/wirkungshaushalt/",
+    "priority": 41,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungskompetenz",
+    "label": "Wirkungskompetenz",
+    "aliases": [],
+    "definition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
+    "url": "/begriffe/wirkungskompetenz/",
+    "priority": 42,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungslenkung",
+    "label": "Wirkungslenkung",
+    "aliases": [],
+    "definition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
+    "url": "/begriffe/wirkungslenkung/",
+    "priority": 43,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsnetz",
+    "label": "Wirkungsnetz",
+    "aliases": [],
+    "definition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
+    "url": "/begriffe/wirkungsnetz/",
+    "priority": 44,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungspfad",
+    "label": "Wirkungspfad",
+    "aliases": [
+      "Wirkpfad"
+    ],
+    "definition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
+    "url": "/begriffe/wirkungspfad/",
+    "priority": 45,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungspflicht-eigentum",
+    "label": "Wirkungspflicht des Eigentums",
+    "aliases": [
+      "Eigentum mit Wirkungspflicht"
+    ],
+    "definition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
+    "url": "/begriffe/wirkungspflicht-des-eigentums/",
+    "priority": 46,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungspotenzial",
+    "label": "Wirkungspotenzial",
+    "aliases": [
+      "Wirkpotenzial"
+    ],
+    "definition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
+    "url": "/begriffe/wirkungspotenzial/",
+    "priority": 47,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungspunkte",
+    "label": "Wirkungspunkte",
+    "aliases": [
+      "Wirkungsbonus",
+      "Bonusmodell"
+    ],
+    "definition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
+    "url": "/begriffe/wirkungspunkte/",
+    "priority": 48,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsradar",
+    "label": "Wirkungsradar",
+    "aliases": [],
+    "definition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
+    "url": "/begriffe/wirkungsradar/",
+    "priority": 49,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsrat",
+    "label": "Wirkungsrat",
+    "aliases": [],
+    "definition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
+    "url": "/begriffe/wirkungsrat/",
+    "priority": 50,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsraum",
+    "label": "Wirkungsraum",
+    "aliases": [],
+    "definition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
+    "url": "/begriffe/wirkungsraum/",
+    "priority": 51,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsrente",
+    "label": "Wirkungsrente",
+    "aliases": [
+      "wirkungsbasierte Rente"
+    ],
+    "definition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
+    "url": "/begriffe/wirkungsrente/",
+    "priority": 52,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsresilienz",
+    "label": "Wirkungsresilienz",
+    "aliases": [
+      "Resilienz im WÖk-Sinn"
+    ],
+    "definition": "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie.",
+    "url": "/begriffe/wirkungsresilienz/",
+    "priority": 53,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsrisiko",
+    "label": "Wirkungsrisiko",
+    "aliases": [],
+    "definition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
+    "url": "/begriffe/wirkungsrisiko/",
+    "priority": 54,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsrueckkopplung",
+    "label": "Wirkungsrückkopplung",
+    "aliases": [
+      "Rückkopplung"
+    ],
+    "definition": "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert.",
+    "url": "/begriffe/wirkungsrueckkopplung/",
+    "priority": 55,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungssteuer",
+    "label": "Wirkungssteuer",
+    "aliases": [
+      "Steuer nach Wirkung"
+    ],
+    "definition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
+    "url": "/begriffe/wirkungssteuer/",
+    "priority": 56,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungssteuergesetz",
+    "label": "Wirkungssteuergesetz",
+    "aliases": [
+      "WStG",
+      "Wirkungssteuer-Rahmengesetz"
+    ],
+    "definition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
+    "url": "/begriffe/wirkungssteuergesetz/",
+    "priority": 57,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungstraeger",
+    "label": "Wirkungsträger",
+    "aliases": [],
+    "definition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
+    "url": "/begriffe/wirkungstraeger/",
+    "priority": 58,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsumsatzsteuer",
+    "label": "Wirkungsumsatzsteuer",
+    "aliases": [
+      "WUStG",
+      "Produktwirkungssteuer"
+    ],
+    "definition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
+    "url": "/begriffe/wirkungsumsatzsteuer/",
+    "priority": 59,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsvermietung",
+    "label": "Wirkungsvermietung",
+    "aliases": [
+      "wirkungsorientierte Vermietung"
+    ],
+    "definition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
+    "url": "/begriffe/wirkungsvermietung/",
+    "priority": 60,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungswahrheit",
+    "label": "Wirkungswahrheit",
+    "aliases": [
+      "wirkungsnah"
+    ],
+    "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
+    "url": "/begriffe/wirkungswahrheit/",
+    "priority": 61,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wix-vi",
+    "label": "WIX-VI",
+    "aliases": [
+      "WIX Vermietung Investment",
+      "Vermietungs- und Investmentmodul"
+    ],
+    "definition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
+    "url": "/begriffe/wix-vi/",
+    "priority": 62,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wohnwirkung",
+    "label": "Wohnwirkung",
+    "aliases": [
+      "Wirkung von Wohnen"
+    ],
+    "definition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
+    "url": "/begriffe/wohnwirkung/",
+    "priority": 63,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "woek-id",
+    "label": "WÖk-ID",
+    "aliases": [
+      "WOK-ID",
+      "Wok ID",
+      "WÖK ID"
+    ],
+    "definition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
+    "url": "/begriffe/woek-id/",
+    "priority": 64,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wstg",
+    "label": "WStG",
+    "aliases": [
+      "Wirkungssteuergesetz"
+    ],
+    "definition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
+    "url": "/begriffe/wstg/",
+    "priority": 65,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wustg",
+    "label": "WUStG",
+    "aliases": [
+      "Wirkungsumsatzsteuergesetz"
+    ],
+    "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
+    "url": "/begriffe/wustg/",
+    "priority": 66,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  }
 ];

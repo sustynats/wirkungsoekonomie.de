@@ -9,6 +9,8 @@ const CSS_VERSION = "20260524-wohnen-stadt";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SRC = "docs/wohnen-stadt/docx-extracts";
 const WEB = "docs/wohnen-stadt/source";
+const INVESTOR_SRC = "docs/wohnen-stadt/investoren-vermieter/docx-extracts";
+const INVESTOR_WEB = "docs/wohnen-stadt/investoren-vermieter/source";
 
 const areas = [
   ["wohnen-als-wirkungsraum", "wohnen_als_wirkungsraum", "Wohnen als Wirkungsraum", "Wohnraum als Grundlage von Sicherheit, Gesundheit, Zugehörigkeit, Teilhabe und Vertrauen."],
@@ -23,14 +25,21 @@ const areas = [
   ["finanzierung-foerderlogik-wirkungsfonds", "finanzierung_foerderlogik_wirkungsfonds", "Finanzierung, Förderlogik und Wirkungsfonds", "Öffentliche Mittel werden an reale Zustandsveränderung, Schutzgrenzen und lernende Evaluation rückgekoppelt."],
   ["mieterstrom-energie-gemeinschaften", "mieterstrom_energie_gemeinschaften", "Mieterstrom und Energie-Gemeinschaften", "Lokale Energie kann Wohnkosten, Klimawirkung, Resilienz und Teilhabe zugleich verändern."],
   ["gesundes-barrierefreies-resilientes-wohnen", "gesundes_barrierefreies_resilientes_wohnen", "Gesundes, barrierefreies und resilientes Wohnen", "Wohnen wirkt auf Gesundheit, Pflegefähigkeit, Sicherheit, Hitzeresilienz, Barrierefreiheit und Alltagssouveränität."],
+  ["investoren-vermieter", "investoren_vermieter", "Investor:innen & Vermieter:innen", "Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz und Stranded-Asset-Prävention im wirkungsökonomischen Wohnungsmarkt."],
 ];
 
 const tools = [
   ["Wohnwirkungsrechner", "Demo / Rechner", "Berechnet modellhaft Mietbelastung, Klima-/Energiescore, Sozialraumscore und WIX-Wohn.", "erleben/wohnwirkungsrechner/"],
   ["Wohnwirkungsindex WIX-Wohn", "Bewertungslogik", "Verbindet KlimaEnergieScore, MietfairnessScore und SozialraumScore.", "wirkungsfelder/wohnen-stadt/detailkonzepte/wohnwirkungsindex-wix-wohn/"],
+  ["WIX-VI Vermietung & Investment", "Bewertungsmodul", "Bewertet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen, ohne Eigentümer:innen oder Mieter:innen zu scoren.", "wirkungsfelder/wohnen-stadt/investoren-vermieter/#wix-vi"],
+  ["Vermieter:innen-Wirkungscheck", "Tool in Vorbereitung", "Ordnet gute Vermietung, Instandhaltung, Transparenz, Sanierung und soziale Stabilität ein.", "erleben/wohnwirkungsrechner/vermieter-check/"],
+  ["Stranded-Asset-Check", "Tool in Vorbereitung", "Prüft, ob Gebäude oder Portfolios durch Klima-, Energie-, Sozial-, Finanzierungs- oder Marktrisiken vorzeitig an Nutzbarkeit verlieren.", "erleben/wohnwirkungsrechner/stranded-asset-check/"],
+  ["Spekulationsrisiko-Monitor", "Schutzlogik", "Macht Leerstand, Zweckentfremdung, Bodenhortung, Umwandlungsdruck und Verdrängungsrisiken sichtbar.", "wirkungsfelder/wohnen-stadt/investoren-vermieter/#spekulationsschutz"],
   ["Mietbelastungsrechner", "Sozialindikator", "Macht Wohnkostenstress und rote Linien sichtbar, ohne Menschen zu bewerten.", "erleben/wohnwirkungsrechner/#mietbelastung"],
   ["Sanierungswirkungsrechner", "Transformationslogik", "Prüft CO2-Einsparung, Warmmietenneutralität und soziale Schutzgrenzen.", "erleben/wohnwirkungsrechner/#sanierung"],
+  ["Warmmietenneutralitätsrechner", "Sozialschutz", "Prüft, ob energetische Sanierung reale Wohnkosten senkt oder soziale Überlastung erzeugt.", "erleben/wohnwirkungsrechner/#sanierung"],
   ["Quartierswirkungscheck", "Sozialraumprofil", "Ordnet Grün, Hitze, Mobilität, Versorgung, Sozialmix, Barrierefreiheit und Teilhabe ein.", "wirkungsfelder/wohnen-stadt/detailkonzepte/quartier-stadt-sozialraumprofil/"],
+  ["T-SROI für Sanierung und Quartiersentwicklung", "Impact Controlling", "Bewertet Investitionen in Sanierung, Energie, Gesundheit und Quartier als Transformationswirkung.", "werkzeuge/impact-controlling/t-sroi/"],
   ["WÖk-IDs", "Datenarchitektur", "Verbinden SDGs, SDG+, Wohnindikatoren, Schwellen, Quellen und Prüfstatus.", "werkzeuge/woek-ids/"],
   ["Scorecards", "Bewertungsraster", "Übersetzen Wohn-, Gebäude-, Energie- und Quartiersdaten in nachvollziehbare Entscheidungsvorlagen.", "werkzeuge/scorecards/"],
   ["Wirkungsrat", "Institution", "Sichert Indikatorenpflege, Benchmarks, Evaluation, Missbrauchsschutz und Korrekturzyklen.", "werkzeuge/wirkungsrat/"],
@@ -57,6 +66,14 @@ const sourceLinks = [
   ["BBSR - Wohnungsmarkt und Wohnungsbedarf", "https://www.bbsr.bund.de/"],
   ["Umweltbundesamt - Gebäude und Wohnen", "https://www.umweltbundesamt.de/themen/klima-energie/gebaeude"],
   ["EU Energy Performance of Buildings Directive", "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/energy-performance-buildings-directive_en"],
+  ["Bundesregierung - Gebäudeenergiegesetz", "https://www.bundesregierung.de/breg-de/aktuelles/neues-gebaeudeenergiegesetz-2184942"],
+  ["Gesetze im Internet - CO2KostAufG", "https://www.gesetze-im-internet.de/co2kostaufg/"],
+  ["Gesetze im Internet - BGB Mietrecht", "https://www.gesetze-im-internet.de/bgb/"],
+  ["Europäische Kommission - EPBD", "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/energy-performance-buildings-directive_en"],
+  ["Europäische Kommission - EU Taxonomy Navigator", "https://ec.europa.eu/sustainable-finance-taxonomy/"],
+  ["Berlin - Zweckentfremdungsverbot", "https://www.berlin.de/sen/wohnen/rechtliches/zweckentfremdungsverbot/"],
+  ["Bundesfinanzministerium - Grundsteuer FAQ", "https://www.bundesfinanzministerium.de/Content/DE/FAQ/faq-die-neue-grundsteuer.html"],
+  ["CRREM - Stranding Risk im Gebäudesektor", "https://crrem.org/"],
   ["UN SDGs", "https://sdgs.un.org/goals"],
 ];
 
@@ -153,18 +170,37 @@ function mdToHtml(markdown) {
   const html = [];
   const toc = [];
   let p = [];
+  let table = [];
   const flush = () => {
     if (!p.length) return;
     const id = `absatz-${String(html.length + 1).padStart(3, "0")}`;
     html.push(`<p id="${id}">${escapeHtml(p.join(" ").replace(/\*\*/g, ""))} ${citeAnchor(id)}</p>`);
     p = [];
   };
+  const flushTable = () => {
+    if (!table.length) return;
+    const rows = table
+      .map((line) => line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()))
+      .filter((row) => !row.every((cell) => /^:?-{3,}:?$/.test(cell)));
+    if (rows.length) {
+      const [head, ...body] = rows;
+      html.push(`<div class="table-wrap"><table class="data-table"><thead><tr>${head.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("")}</tr></thead><tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+    }
+    table = [];
+  };
   for (const raw of lines) {
     const line = raw.trim();
     if (!line) {
       flush();
+      flushTable();
       continue;
     }
+    if (line.startsWith("|") && line.endsWith("|")) {
+      flush();
+      table.push(line);
+      continue;
+    }
+    flushTable();
     const heading = line.match(/^(#{1,4})\s+(.+)$/);
     if (heading) {
       flush();
@@ -184,6 +220,7 @@ function mdToHtml(markdown) {
     p.push(line);
   }
   flush();
+  flushTable();
   return { html: html.join("\n"), toc };
 }
 
@@ -223,6 +260,22 @@ function toolGrid(base) {
 function sourceBlock(base) {
   return `<section class="section" aria-labelledby="sources"><div class="card"><p class="hero-kicker">Quellen</p>${sectionTitle("sources", "Quellen und Datenbezug")}<p>Externe Quellen werden als Referenzpunkte verlinkt; die wirkungsökonomische Einordnung bleibt online auf wirkungsoekonomie.de lesbar.</p><ul>${sourceLinks.map(([label, link]) => `<li><a class="text-link" href="${link}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} (externe Quelle)</a></li>`).join("")}<li><a class="text-link" href="${href(base, "dokumente/wp-wohnungsmarkt/")}">WÖk Working-Paper Wohnungsmarkt</a></li><li><a class="text-link" href="${href(base, "dokumente/systemmodell-der-wirkungsoekonomie/")}">Systemmodell der Wirkungsökonomie</a></li></ul></div></section>`;
 }
+function legalReferencesBlock() {
+  const legal = [
+    ["Gebäudeenergiegesetz (GEG)", "https://www.bundesregierung.de/breg-de/aktuelles/neues-gebaeudeenergiegesetz-2184942", "Anforderungen an Energieeffizienz, Heizsysteme und Energieausweise."],
+    ["CO2KostAufG", "https://www.gesetze-im-internet.de/co2kostaufg/", "Aufteilung von CO2-Kosten zwischen Vermietenden und Mietenden."],
+    ["BGB §§ 535, 555b, 559", "https://www.gesetze-im-internet.de/bgb/", "Erhaltungspflichten, Modernisierung und Modernisierungsmieterhöhung."],
+    ["EPBD", "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/energy-performance-buildings-directive_en", "EU-Rahmen für Dekarbonisierung, Renovierung und Energieperformance von Gebäuden."],
+    ["EU Taxonomy Navigator", "https://ec.europa.eu/sustainable-finance-taxonomy/", "Sustainable-Finance-Anschluss für Neubau, Sanierung, Erwerb und Eigentum."],
+    ["Zweckentfremdungsverbot Berlin", "https://www.berlin.de/sen/wohnen/rechtliches/zweckentfremdungsverbot/", "Kommunaler Anschluss gegen Leerstand, Feriennutzung, Abriss und Zweckentfremdung."],
+    ["Grundsteuer C", "https://www.bundesfinanzministerium.de/Content/DE/FAQ/faq-die-neue-grundsteuer.html", "Anschlussinstrument gegen Spekulation mit baureifen Grundstücken."],
+    ["CRREM Stranding Risk", "https://crrem.org/", "Risiko- und Pfadlogik für Stranded Assets im Gebäudesektor."],
+    ["Destatis Wohnkostenüberbelastung", "https://www.destatis.de/Europa/DE/Thema/Bevoelkerung-Arbeit-Soziales/Soziales-Lebensbedingungen/Wohnkosten.html", "Referenzdaten zu Wohnkostenbelastung."],
+    ["BBSR Wohnungsmarkt", "https://www.bbsr.bund.de/", "Wohnungsmarkt, Bedarf, Stadtentwicklung und Raumbeobachtung."],
+    ["Umweltbundesamt Gebäudesektor", "https://www.umweltbundesamt.de/themen/klima-energie/gebaeude", "Emissionen, Energie und Gebäudebestand."],
+  ];
+  return `<section class="section" aria-labelledby="legal-references"><div class="card"><p class="hero-kicker">Rechtsanschluss</p>${sectionTitle("legal-references", "Bestehende Rechts- und Regulierungsanschlüsse")}<p>Der Unterbereich knüpft an bestehende Regelungen an. Die Verlinkung dient der Orientierung; die Wirkungsökonomie ersetzt keine Rechtsberatung.</p>${dataTable(["Anschluss", "Bedeutung"], legal.map(([label, link, text]) => [`${label} (${link})`, text]))}<ul class="source-list">${legal.map(([label, link]) => `<li><a class="text-link" href="${link}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} (externe Quelle)</a></li>`).join("")}</ul></div></section>`;
+}
 function downloadBlock(base, items) {
   const links = items.filter((x) => x.href && (x.href.startsWith("http") || exists(x.href)));
   return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${sectionTitle("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word-Dateien bleiben Export und Archiv.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.map((x) => `<a class="btn btn-secondary" href="${href(base, x.href)}">${escapeHtml(x.label)}</a>`).join("")}</div></div></section>`;
@@ -247,6 +300,42 @@ function fulltextPage({ rel, title, subtitle, mdRel, status, downloads = [], car
     ${bookBlock(base)}
     ${sourceBlock(base)}
     ${downloadBlock(base, downloads)}`,
+  });
+}
+
+function investorPortalPage() {
+  const rendered = mdToHtml(read(`${INVESTOR_WEB}/website_inhalt_wohnen_investoren_vermieter.md`));
+  page({
+    rel: "wirkungsfelder/wohnen-stadt/investoren-vermieter/index.html",
+    title: "Investor:innen & Vermieter:innen | Wohnen & Stadt",
+    description: "Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz und Stranded-Asset-Prävention im wirkungsökonomischen Wohnungsmarkt.",
+    searchSection: "Wirkungsfelder",
+    searchType: "Unterbereich",
+    body: (base, route) => `${hero(base, {
+      kicker: "Wohnen & Stadt",
+      title: "Investor:innen & Vermieter:innen",
+      subtitle: "Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz und Stranded-Asset-Prävention.",
+      text: "Die Wirkungsökonomie kritisiert nicht Eigentum und Vermietung als solche. Sie macht sichtbar, ob Wohnraum Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe und Vertrauen stärkt oder schwächt.",
+      action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wohnen-stadt/detailkonzepte/investoren-vermieter/")}">Detailkonzept online lesen</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${statusMeta("Unterbereich / Online-Volltext")}</section>
+    <section class="section article-section"><article class="article-body fulltext-reader">${rendered.html}</article></section>
+    <section class="section" aria-labelledby="read-more">${sectionTitle("read-more", "Online lesen")} ${cardGrid(base, [
+      { title: "Detailkonzept Investor:innen & Vermieter:innen", text: "Vollständige Online-Fassung mit Systemarchitektur, WIX-VI, Rechtsanschlüssen und politischer Umsetzung.", href: "wirkungsfelder/wohnen-stadt/detailkonzepte/investoren-vermieter/" },
+      { title: "Dossier Investor:innen & Vermieter:innen", text: "Modellrechnungen, Fallstudien, Datenquellen, Annahmen und Anreizlogik online lesen.", href: "wirkungsfelder/wohnen-stadt/dossiers/investoren-vermieter/" },
+      { title: "Stranded-Asset-Check", text: "Tool-Spezifikation und erster Zugang zum Gebäuderisiko-Modul.", href: "erleben/wohnwirkungsrechner/stranded-asset-check/" },
+    ])}</section>
+    ${legalReferencesBlock()}
+    ${toolGrid(base)}
+    ${politicalBlock()}
+    ${sdgBlock()}
+    ${bookBlock(base)}
+    ${sourceBlock(base)}
+    ${downloadBlock(base, [
+      { label: "Detailkonzept Word", href: "assets/downloads/woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx" },
+      { label: "Dossier Word", href: "assets/downloads/woek_wohnen_investoren_vermieter_dossier_v0_3.docx" },
+    ])}`,
   });
 }
 
@@ -316,6 +405,7 @@ function contentPages() {
     <section class="section">${cardGrid(base, areas.map(([slug, , title, text]) => ({ title, text, href: `wirkungsfelder/wohnen-stadt/dossiers/${slug}/`, label: "Einzeldossier lesen" })))}</section>`,
   });
   for (const [slug, sourceSlug, title, text] of areas) {
+    if (slug === "investoren-vermieter") continue;
     const detailName = `woek_detailkonzept_${sourceSlug}_v0_1`;
     const dossierName = `woek_einzeldossier_${sourceSlug}_v0_1`;
     fulltextPage({
@@ -338,6 +428,32 @@ function contentPages() {
       cards: [{ title: `Detailkonzept ${title}`, text: "Konzeptuelle Grundlegung des Unterbereichs.", href: `wirkungsfelder/wohnen-stadt/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" }],
     });
   }
+  investorPortalPage();
+  fulltextPage({
+    rel: "wirkungsfelder/wohnen-stadt/detailkonzepte/investoren-vermieter/index.html",
+    title: "Detailkonzept Investor:innen & Vermieter:innen",
+    subtitle: "Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz, WIX-VI und Stranded-Asset-Prävention.",
+    mdRel: `${INVESTOR_SRC}/woek_wohnen_investoren_vermieter_detailkonzept_v0_3.md`,
+    status: "Detailkonzept / Online-Volltext / v0.3",
+    downloads: [{ label: "Detailkonzept Word", href: "assets/downloads/woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx" }],
+    cards: [
+      { title: "Unterbereich Investor:innen & Vermieter:innen", text: "Öffentliche Portalunterseite mit Kurzfassung und Rechtsanschlüssen.", href: "wirkungsfelder/wohnen-stadt/investoren-vermieter/" },
+      { title: "Einzeldossier Investor:innen & Vermieter:innen", text: "Fallstudien, Modellrechnungen, Datenquellen und Anreizlogik.", href: "wirkungsfelder/wohnen-stadt/dossiers/investoren-vermieter/" },
+    ],
+  });
+  fulltextPage({
+    rel: "wirkungsfelder/wohnen-stadt/dossiers/investoren-vermieter/index.html",
+    title: "Dossier Investor:innen & Vermieter:innen",
+    subtitle: "Beispiele, Berechnungen, Datenquellen, Anreizlogik und politische Umsetzungsoptionen.",
+    mdRel: `${INVESTOR_SRC}/woek_wohnen_investoren_vermieter_dossier_v0_3.md`,
+    status: "Einzeldossier / Online-Volltext / v0.3",
+    searchType: "Dossier",
+    downloads: [{ label: "Dossier Word", href: "assets/downloads/woek_wohnen_investoren_vermieter_dossier_v0_3.docx" }],
+    cards: [
+      { title: "Unterbereich Investor:innen & Vermieter:innen", text: "Öffentliche Portalunterseite mit Kurzfassung und Rechtsanschlüssen.", href: "wirkungsfelder/wohnen-stadt/investoren-vermieter/" },
+      { title: "Detailkonzept Investor:innen & Vermieter:innen", text: "Systemarchitektur, WIX-VI und politische Anschlussfähigkeit.", href: "wirkungsfelder/wohnen-stadt/detailkonzepte/investoren-vermieter/" },
+    ],
+  });
 }
 
 function calculatorPage() {
@@ -403,6 +519,50 @@ function calculatorPage() {
   });
 }
 
+function investorToolPages() {
+  const checks = [
+    {
+      rel: "erleben/wohnwirkungsrechner/stranded-asset-check/index.html",
+      title: "Stranded-Asset-Check",
+      subtitle: "Gebäude- und Portfoliorisiken aus Klima, Energie, Bezahlbarkeit, Gesundheit, Markt und Recht sichtbar machen.",
+      text: "Der Check ist als Modul des Wohnwirkungsrechners vorbereitet. Er bewertet keine Eigentümer:innen, sondern Risikopfade von Gebäuden, Portfolios und Bewirtschaftungsentscheidungen.",
+      anchor: "stranded-asset-check",
+    },
+    {
+      rel: "erleben/wohnwirkungsrechner/vermieter-check/index.html",
+      title: "Vermieter:innen-Wirkungscheck",
+      subtitle: "Gute Vermietung, Instandhaltung, Warmmietenneutralität, Transparenz und soziale Stabilität modellhaft einordnen.",
+      text: "Der Check ist als WIX-VI-Modul vorbereitet. Er macht Vermietungswirkung sichtbar, ohne Personen zu bewerten oder Rechtsberatung zu ersetzen.",
+      anchor: "vermieter-check",
+    },
+  ];
+  for (const item of checks) {
+    page({
+      rel: item.rel,
+      title: `${item.title} | Wohnwirkungsrechner`,
+      description: item.subtitle,
+      searchSection: "Erleben",
+      searchType: "Tool-Spezifikation",
+      body: (base, route) => `${hero(base, {
+        kicker: "Tool in Vorbereitung · Wohnen & Stadt",
+        title: item.title,
+        subtitle: item.subtitle,
+        text: "Modellhafte Demonstration. Keine amtliche Einstufung, keine Rechts-, Steuer-, Anlage- oder Förderberatung.",
+        action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wohnen-stadt/investoren-vermieter/")}">Unterbereich öffnen</a>`,
+      })}
+      <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+      <section class="section narrow">${statusMeta("Tool-Spezifikation / in Vorbereitung")}</section>
+      <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle(item.anchor, item.title)}<p>${escapeHtml(item.text)}</p><h3 id="wix-vi-modul">WIX-VI-Modul ${citeAnchor("wix-vi-modul")}</h3><p>Das Modul knüpft an Klima & Energie, Bezahlbarkeit & Warmmiete, Gesundheit & Sicherheit, soziale Stabilität, Quartier & Teilhabe, Governance & Transparenz sowie Spekulations- und Leerstandsrisiken an.</p><h3 id="rote-linien">Rote Linien ${citeAnchor("rote-linien")}</h3><p>Nicht kompensierbar sind existenzielle Mietbelastung, gesundheitsgefährdender Schimmel, aktive Verdrängung, extreme Energiearmut, spekulativer Leerstand und fehlender Rechtsschutz.</p></article></section>
+      ${toolGrid(base)}
+      ${politicalBlock()}
+      ${sdgBlock()}
+      ${bookBlock(base)}
+      ${sourceBlock(base)}
+      ${downloadBlock(base, [])}`,
+    });
+  }
+}
+
 function workshopPages() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/index.html",
@@ -417,6 +577,9 @@ function workshopPages() {
       { title: "Konzeptpapier Wohnen & Stadt", text: "Konzeptpapier online lesbar.", href: "wirkungsfelder/wohnen-stadt/konzept/" },
       { title: "Gesamtdossier Wohnen & Stadt", text: "Gesamtdossier online lesbar.", href: "wirkungsfelder/wohnen-stadt/dossier/" },
       { title: "Wohnwirkungsrechner WIX-Wohn", text: "Tool-Demo und Spezifikation.", href: "erleben/wohnwirkungsrechner/" },
+      { title: "Investor:innen & Vermieter:innen", text: "Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz und Stranded-Asset-Prävention.", href: "wirkungsfelder/wohnen-stadt/investoren-vermieter/" },
+      { title: "Detailkonzept Investor:innen & Vermieter:innen", text: "Detailkonzept v0.3 online lesen.", href: "wirkungsfelder/wohnen-stadt/detailkonzepte/investoren-vermieter/" },
+      { title: "Dossier Investor:innen & Vermieter:innen", text: "Dossier v0.3 online lesen.", href: "wirkungsfelder/wohnen-stadt/dossiers/investoren-vermieter/" },
       ...areas.map(([slug, , title, text]) => ({ title, text, href: `wirkungsfelder/wohnen-stadt/detailkonzepte/${slug}/` })),
     ])}</section>
     ${downloadBlock(base, [
@@ -448,7 +611,10 @@ function updateSitemap() {
     "wirkungsfelder/wohnen-stadt/detailkonzepte/",
     "wirkungsfelder/wohnen-stadt/dossiers/",
     "erleben/wohnwirkungsrechner/",
+    "erleben/wohnwirkungsrechner/stranded-asset-check/",
+    "erleben/wohnwirkungsrechner/vermieter-check/",
     "werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/",
+    "wirkungsfelder/wohnen-stadt/investoren-vermieter/",
     ...areas.flatMap(([slug]) => [
       `wirkungsfelder/wohnen-stadt/detailkonzepte/${slug}/`,
       `wirkungsfelder/wohnen-stadt/dossiers/${slug}/`,
@@ -467,6 +633,7 @@ function build() {
   portalPage();
   contentPages();
   calculatorPage();
+  investorToolPages();
   workshopPages();
   updateSitemap();
 }

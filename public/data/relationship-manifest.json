@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T22:32:24.290Z",
+  "generatedAt": "2026-05-24T09:24:05.718Z",
   "relationships": {
     "archetyp": {
       "terms": [
@@ -200,6 +200,26 @@
       ],
       "documents": []
     },
+    "social-credit": {
+      "terms": [
+        "wirkungspunkte",
+        "wirkungswahrheit",
+        "wirkungsrat"
+      ],
+      "documents": [
+        "schutzrahmen-personenbewertung"
+      ]
+    },
+    "spekulationslogik": {
+      "terms": [
+        "stranded-assets",
+        "wohnwirkung",
+        "wirkungspflicht-eigentum"
+      ],
+      "documents": [
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
+      ]
+    },
     "stranded-assets": {
       "terms": [
         "wirkungsrisiko",
@@ -230,6 +250,17 @@
         "wirkungslenkung"
       ],
       "documents": []
+    },
+    "warmmietenneutralitaet": {
+      "terms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "wix-vi"
+      ],
+      "documents": [
+        "woek_wohnen_stadt_konzeptpapier_v0_1",
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
+      ]
     },
     "wirkmechanismus": {
       "terms": [
@@ -279,6 +310,15 @@
         "wirkungswahrheit",
         "wirkungsdatenraum",
         "wirkungsrückkopplung"
+      ],
+      "documents": []
+    },
+    "wirkungsdaten": {
+      "terms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard",
+        "nwi"
       ],
       "documents": []
     },
@@ -356,6 +396,16 @@
       ],
       "documents": []
     },
+    "wirkungspflicht-eigentum": {
+      "terms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "spekulationslogik"
+      ],
+      "documents": [
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
+      ]
+    },
     "wirkungspotenzial": {
       "terms": [
         "wirkung",
@@ -364,6 +414,16 @@
         "wirkstoff"
       ],
       "documents": []
+    },
+    "wirkungspunkte": {
+      "terms": [
+        "social-credit",
+        "verbraucherinformation",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "schutzrahmen-personenbewertung"
+      ]
     },
     "wirkungsradar": {
       "terms": [
@@ -466,6 +526,18 @@
         "technische-leitlinien-wustg"
       ]
     },
+    "wirkungsvermietung": {
+      "terms": [
+        "wohnwirkung",
+        "wix-vi",
+        "warmmietenneutralitaet",
+        "wirkungspflicht-eigentum"
+      ],
+      "documents": [
+        "woek_wohnen_investoren_vermieter_detailkonzept_v0_3",
+        "woek_wohnen_investoren_vermieter_dossier_v0_3"
+      ]
+    },
     "wirkungswahrheit": {
       "terms": [
         "wirkungsblindheit",
@@ -473,6 +545,26 @@
         "wirkungsrat"
       ],
       "documents": []
+    },
+    "wix-vi": {
+      "terms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "stranded-assets"
+      ],
+      "documents": [
+        "woek_wohnen_investoren_vermieter_dossier_v0_3"
+      ]
+    },
+    "wohnwirkung": {
+      "terms": [
+        "wix-vi",
+        "warmmietenneutralitaet",
+        "wirkungsvermietung"
+      ],
+      "documents": [
+        "woek_wohnen_stadt_gesamtdossier_v0_1"
+      ]
     },
     "woek-id": {
       "terms": [
