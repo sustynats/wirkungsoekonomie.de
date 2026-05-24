@@ -8,6 +8,8 @@ const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-portal-architecture";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
+const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
+const SCHOOL_MD = "docs/bildung/Wirkungsschule_Arbeitsfassung_v0_1.md";
 
 function routeFor(rel) {
   return rel.endsWith("/index.html") ? `/${rel.slice(0, -"/index.html".length)}/` : `/${rel}`;
@@ -22,6 +24,32 @@ function href(base, target) {
   if (!target) return "";
   if (/^(https?:|mailto:|#)/.test(target)) return target;
   return `${base}${target.replace(/^\/+/, "")}`;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function slugify(value) {
+  return String(value)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 90);
+}
+
+function citeAnchor(id, label = "Zitierlink") {
+  return `<a class="cite-anchor no-print" href="#${id}" aria-label="${label} zu diesem Abschnitt">#</a>`;
 }
 
 function placeholderHeader(base) {
@@ -91,6 +119,75 @@ function printActions(base, secondary = "") {
               <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
               ${secondary}
             </div>`;
+}
+
+function citationNotice(route) {
+  return `<aside class="citation-note" role="note">
+          <p class="card-kicker">Zitierfähig</p>
+          <h2>Online lesen, gezielt zitieren</h2>
+          <p>Diese Webfassung stellt neben dem Download stabile Abschnittsanker bereit. Der Link an einer Überschrift oder einem Absatz führt direkt zur zitierfähigen Stelle.</p>
+          <p><a class="text-link" href="${route}">Kanonische Seitenadresse öffnen</a></p>
+        </aside>`;
+}
+
+function markdownToReader(markdown) {
+  const lines = markdown
+    .replace(/\r\n/g, "\n")
+    .replace(/^---[\s\S]*?---\n/, "")
+    .split("\n");
+  const toc = [];
+  const html = [];
+  const used = new Set();
+  let paragraphCount = 0;
+
+  function uniqueId(base) {
+    let id = base || "abschnitt";
+    let counter = 2;
+    while (used.has(id)) {
+      id = `${base}-${counter}`;
+      counter += 1;
+    }
+    used.add(id);
+    return id;
+  }
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    const heading = line.match(/^(#{1,4})\s+(.+)$/);
+    if (heading) {
+      const level = heading[1].length;
+      const text = heading[2].replace(/\*\*/g, "").trim();
+      if (level === 1) continue;
+      const id = uniqueId(slugify(text));
+      toc.push({ level, text, id });
+      html.push(`<h${level} id="${id}">${escapeHtml(text)} ${citeAnchor(id)}</h${level}>`);
+      continue;
+    }
+    if (/^\*\*.+\*\*$/.test(line)) {
+      const text = line.replace(/^\*\*|\*\*$/g, "");
+      const id = uniqueId(slugify(text));
+      toc.push({ level: 3, text, id });
+      html.push(`<h3 id="${id}">${escapeHtml(text)} ${citeAnchor(id)}</h3>`);
+      continue;
+    }
+    paragraphCount += 1;
+    const id = uniqueId(`absatz-${String(paragraphCount).padStart(3, "0")}`);
+    html.push(`<p id="${id}">${escapeHtml(line)} ${citeAnchor(id, "Zitierlink zu diesem Absatz")}</p>`);
+  }
+
+  return { toc, html: html.join("\n") };
+}
+
+function tocList(base, toc) {
+  return `<nav class="toc-card" aria-label="Inhaltsverzeichnis">
+          <h2>Inhaltsverzeichnis</h2>
+          <div class="toc-links">
+            ${toc
+              .map((item) => `<a class="toc-level-${item.level}" href="#${item.id}">${escapeHtml(item.text)}</a>`)
+              .join("")}
+          </div>
+        </nav>`;
 }
 
 function linkList(base, items) {
@@ -412,7 +509,7 @@ function fieldOverview() {
     description:
       "Die Wirkungsfelder zeigen, wie die Wirkungsökonomie Bildung, Gesundheit, Wohnen, Arbeit, Unternehmen, Produkte, Kapital, Demokratie, Medien, Wissenschaft und Kultur neu ordnet.",
     searchSection: "Wirkungsfelder",
-    body: (base) => `<section class="hero">
+    body: (base, route) => `<section class="hero">
         <div class="hero-grid">
           <div>
             <p class="hero-kicker">Portalarchitektur</p>
@@ -480,7 +577,7 @@ function fieldPage(field) {
         ? "Das Bildungsportal der Wirkungsökonomie: Wirkungsschule, Wirkungspädagogik, Fach Zukunft, Fächervernetzung, Bewertung, Wirkungsförderung und digitale Mündigkeit."
         : field.short,
     searchSection: "Wirkungsfelder",
-    body: (base) => `<section class="hero">
+    body: (base, route) => `<section class="hero">
         <div class="hero-grid">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a><span aria-hidden="true">/</span><span>${field.title}</span></nav>
@@ -617,7 +714,7 @@ function schoolPage() {
       "Die Wirkungsschule denkt Schule als Wirkungsraum: Fächer, Unterricht, Bewertung, Förderung, Demokratie, digitale Mündigkeit und Zukunftskompetenz neu.",
     searchSection: "Wirkungsfelder",
     searchType: "Konzeptseite",
-    body: (base) => `<section class="hero">
+    body: (base, route) => `<section class="hero">
         <div class="hero-grid">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a><span aria-hidden="true">/</span><a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a><span aria-hidden="true">/</span><span>Wirkungsschule</span></nav>
@@ -625,7 +722,11 @@ function schoolPage() {
             <h1 class="hero-title">Die Wirkungsschule</h1>
             <p class="hero-subtitle">Ein wirkungsökonomisches Schulkonzept für Zukunft, Demokratie, Selbstwirksamkeit und Wirkungskompetenz.</p>
             <p class="hero-text">Die Wirkungsschule ist kein einzelnes Fach, keine Nachhilfe-Reform und kein neues Etikett für alte Schule. Sie ist ein Schulkonzept, das Schule als Wirkungsraum versteht. Entscheidend ist nicht nur, welche Inhalte vermittelt werden, sondern welche Zustände Schule verändert: Selbstwirksamkeit, Urteilskraft, demokratische Mündigkeit, Gesundheit, Teilhabe, digitale Souveränität, Beziehung, Lernfreude und Zukunftsfähigkeit.</p>
-            ${printActions(base, `<a class="btn btn-primary" href="${href(base, SCHOOL_DOC)}">Konzeptpapier herunterladen</a>`)}
+            ${printActions(
+              base,
+              `<a class="btn btn-primary" href="${href(base, SCHOOL_ONLINE)}">Konzeptpapier online lesen</a>
+              <a class="btn btn-secondary" href="${href(base, SCHOOL_DOC)}">Konzeptpapier herunterladen</a>`,
+            )}
           </div>
           <aside class="card">
             <p class="card-kicker">Arbeitsfassung</p>
@@ -698,12 +799,16 @@ function schoolPage() {
         <div class="download-card">
           <div>
             <p class="card-kicker">Konzeptpapier</p>
-            <h2 id="konzeptpapier">Konzeptpapier Wirkungsschule herunterladen</h2>
-            <p class="card-text">Die Word-Arbeitsfassung ist als Konzeptpapier verlinkt. Es wurde keine neue PDF-Exportpipeline ergänzt.</p>
+            <h2 id="konzeptpapier">Konzeptpapier Wirkungsschule online lesen und herunterladen ${citeAnchor("konzeptpapier")}</h2>
+            <p class="card-text">Die Online-Fassung ist der erste Zugang zum Konzeptpapier. Die Word-Arbeitsfassung bleibt ergänzend als Download und Archivfassung erhalten. Es wurde keine neue PDF-Exportpipeline ergänzt.</p>
           </div>
-          <a class="btn btn-primary" href="${href(base, SCHOOL_DOC)}">Konzeptpapier herunterladen</a>
+          <div class="portal-card-actions no-print">
+            <a class="btn btn-primary" href="${href(base, SCHOOL_ONLINE)}">Konzeptpapier online lesen</a>
+            <a class="btn btn-secondary" href="${href(base, SCHOOL_DOC)}">Konzeptpapier herunterladen</a>
+          </div>
         </div>
       </section>
+      ${citationNotice(route)}
       ${sdgBlock(base, {
         sdgs: fields[0].sdgs,
         plus: fields[0].plus,
@@ -971,16 +1076,7 @@ function workshopPages() {
       ],
     );
   }
-  simpleLibraryPage(
-    "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-    "Konzeptpapier Wirkungsschule",
-    "Wirkungsschule in der Arbeitsbibliothek",
-    "Arbeitsfassung und öffentliche Kurzfassung der Wirkungsschule.",
-    [
-      { title: "Konzeptpapier Wirkungsschule", text: "Word-Arbeitsfassung des wirkungsökonomischen Schulkonzepts.", href: SCHOOL_DOC, linkLabel: "DOCX öffnen" },
-      { title: "Kurzfassung Wirkungsschule", text: "Öffentliche Web-Kurzfassung.", href: "wirkungsfelder/bildung/wirkungsschule/", linkLabel: "Kurzfassung öffnen" },
-    ],
-  );
+  schoolWorkpaperPage();
 
   simpleLibraryPage(
     "werkstatt/arbeitsbibliothek/instrumente/index.html",
@@ -1027,6 +1123,74 @@ function simpleLibraryPage(rel, title, h1, subtitle, cards) {
         <div>
           <div class="section-header"><p class="hero-kicker">Materialien</p><h2 id="bibliothek-register">Zugeordnete Dokumente und Verweise</h2></div>
           ${cardGrid(base, cards)}
+        </div>
+      </section>
+      ${exportBlock(base)}`,
+  });
+}
+
+function schoolWorkpaperPage() {
+  const sourcePath = path.join(ROOT, SCHOOL_MD);
+  const markdown = fs.existsSync(sourcePath)
+    ? fs.readFileSync(sourcePath, "utf8")
+    : "# Wirkungsökonomisches Schulkonzept\n\nOnline-Volltext wird ergänzt.";
+  const reader = markdownToReader(markdown);
+  page({
+    rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
+    title: "Konzeptpapier Wirkungsschule online lesen | Werkstatt der Wirkungsökonomie",
+    description:
+      "Zitierfähige Online-Fassung des wirkungsökonomischen Schulkonzepts als Arbeitsfassung v0.1 mit Abschnittsankern und DOCX-Download.",
+    searchSection: "Werkstatt",
+    searchType: "Online-Volltext",
+    body: (base, route) => `<section class="hero">
+        <div class="hero-grid">
+          <div>
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung</a></nav>
+            <p class="hero-kicker">Online-Volltext · Arbeitsfassung v0.1</p>
+            <h1 class="hero-title">Wirkungsökonomisches Schulkonzept</h1>
+            <p class="hero-subtitle">Von der Schule als Sortiersystem zur Schule als Wirkungsraum.</p>
+            <p class="hero-text">Diese Seite macht das Konzeptpapier online lesbar und zitierfähig. Die DOCX-Datei bleibt als ergänzende Archiv- und Exportfassung erhalten.</p>
+            ${printActions(
+              base,
+              `<a class="btn btn-primary" href="#online-volltext">Online lesen</a>
+              <a class="btn btn-secondary" href="${href(base, SCHOOL_DOC)}">DOCX herunterladen</a>
+              <a class="btn btn-secondary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Kurzfassung öffnen</a>`,
+            )}
+          </div>
+          ${citationNotice(route)}
+        </div>
+      </section>
+      <section class="section" aria-labelledby="toc-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Lesefassung</p>
+            <h2 id="toc-title">Konzeptpapier online lesen ${citeAnchor("toc-title")}</h2>
+            <p>Alle Überschriften und Absätze haben stabile Anker. Dadurch können einzelne Thesen, Abschnitte oder Definitionen direkt zitiert und verlinkt werden.</p>
+          </div>
+          ${tocList(base, reader.toc)}
+        </div>
+      </section>
+      <section class="section" aria-labelledby="online-volltext">
+        <article class="fulltext-reader citation-reader">
+          <h2 id="online-volltext">Online-Volltext ${citeAnchor("online-volltext")}</h2>
+          ${reader.html}
+        </article>
+      </section>
+      ${sdgBlock(base, {
+        sdgs: fields[0].sdgs,
+        plus: fields[0].plus,
+        explanation:
+          "Das Schulkonzept betrifft Bildung, Gesundheit, Teilhabe, demokratische Institutionen, digitale Selbstbestimmung und Zukunftsfähigkeit als miteinander verbundene Wirkungsräume.",
+      })}
+      ${bookAnchorBlock(base, fields[0].anchors)}
+      <section class="section" aria-labelledby="download-title">
+        <div class="download-card">
+          <div>
+            <p class="card-kicker">Download & Archiv</p>
+            <h2 id="download-title">Originaldatei ergänzend herunterladen ${citeAnchor("download-title")}</h2>
+            <p class="card-text">Die Online-Fassung ist der Hauptzugang. Die DOCX-Arbeitsfassung bleibt für Archiv, Weitergabe und Bearbeitung erhalten.</p>
+          </div>
+          <a class="btn btn-primary no-print" href="${href(base, SCHOOL_DOC)}">DOCX herunterladen</a>
         </div>
       </section>
       ${exportBlock(base)}`,

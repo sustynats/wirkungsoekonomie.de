@@ -699,6 +699,83 @@ h4 {
   outline: none;
 }
 
+.cite-anchor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35em;
+  height: 1.35em;
+  margin-left: 0.25em;
+  border: 1px solid rgba(47, 125, 92, 0.28);
+  border-radius: 999px;
+  color: var(--green);
+  font-size: 0.62em;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.cite-anchor:hover,
+.cite-anchor:focus-visible {
+  border-color: var(--green);
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--navy);
+  outline: 2px solid rgba(47, 125, 92, 0.22);
+  outline-offset: 2px;
+}
+
+.citation-note {
+  padding: clamp(1.2rem, 2vw, 1.8rem);
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow-soft);
+}
+
+.citation-note h2 {
+  margin: 0.25rem 0 0.7rem;
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+}
+
+.citation-note p {
+  margin: 0.55rem 0 0;
+}
+
+.citation-reader :target,
+.fulltext-reader :target {
+  scroll-margin-top: 6rem;
+  background: rgba(201, 147, 46, 0.12);
+  box-shadow: 0 0 0 0.35rem rgba(201, 147, 46, 0.12);
+}
+
+.toc-links {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.toc-links a {
+  color: var(--navy);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.toc-links a:hover,
+.toc-links a:focus-visible {
+  color: var(--green);
+}
+
+.toc-links .toc-level-3 {
+  padding-left: 1rem;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.toc-links .toc-level-4 {
+  padding-left: 2rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .hero-audio {
   width: min(100%, 620px);
   margin-top: 1.6rem;
