@@ -1,0 +1,77 @@
+{
+  "portal": "rente-soziale-sicherung",
+  "version": "v0.1",
+  "formula": {
+    "WR": "BR + EA + WM + WD",
+    "WM": "alpha * WYears * Wi * S"
+  },
+  "modules": [
+    "alte_rentenlogik",
+    "wirkungsbiografie",
+    "automatisierungsdividende",
+    "wirkungsfonds",
+    "datenschutz"
+  ],
+  "sdgs": [
+    "SDG 1 Keine Armut",
+    "SDG 3 Gesundheit und Wohlergehen",
+    "SDG 4 Hochwertige Bildung",
+    "SDG 5 Geschlechtergleichstellung",
+    "SDG 8 Menschenwürdige Arbeit",
+    "SDG 10 Weniger Ungleichheiten",
+    "SDG 11 Nachhaltige Städte und Gemeinden",
+    "SDG 16 Frieden, Gerechtigkeit und starke Institutionen",
+    "SDG 17 Partnerschaften",
+    "SDG+ Demokratie",
+    "SDG+ institutionelles Vertrauen",
+    "SDG+ gesellschaftlicher Zusammenhalt",
+    "SDG+ digitale Selbstbestimmung"
+  ],
+  "bookAnchors": [
+    "Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung",
+    "Kapitel 57 – Wirkungseinkommen",
+    "Kapitel 58 – Wirkungsrente",
+    "Kapitel 59 – Kapitalmärkte und Fonds",
+    "Kapitel 69 – Pflege als Wirkung und soziale Infrastruktur",
+    "Kapitel 70 – Wohnen als Wirkungsraum",
+    "Exkurs: Warum die SDGs der Referenzrahmen der Wirkungsökonomie sind"
+  ],
+  "subareas": [
+    {
+      "title": "Wirkungsrente als neuer Generationenvertrag",
+      "summary": "Die Wirkungsrente liest Rente nicht als Nachzahlung für Erwerbsjahre, sondern als Generationenvertrag über Wirkung. Die Wirkenden sichern die Zukunft der Wirkenden."
+    },
+    {
+      "title": "Demografie, Automatisierung und Beitragsbasis",
+      "summary": "Demografie und Maschinenleistung schwächen die alte Beitragsbasis. Die Wirkungsökonomie trennt Erwerbsarbeit, Maschinenleistung und Wirkleistung."
+    },
+    {
+      "title": "Wirkungsbiografie und Wirkungskonto",
+      "summary": "Lebenswirkung wird über nachvollziehbare, datensparsame Wirkungskonten sichtbar: Erwerbsarbeit, Care, Bildung, Pflege, Engagement und Lernen."
+    },
+    {
+      "title": "Care, Pflege, Bildung und Gemeinwesen",
+      "summary": "Tätigkeiten mit hoher gesellschaftlicher Wirkleistung dürfen nicht als private Selbstverständlichkeit oder Rentenlücke erscheinen."
+    },
+    {
+      "title": "Wirkungseinkommen, Grunddividende und soziale Sicherung",
+      "summary": "Wirkungsrente schließt an Wirkungseinkommen an: Grundsicherheit, Markteinkommen und Wirkung werden in eine Lebenslogik gebracht."
+    },
+    {
+      "title": "Wirkungsfonds und Kapitalwirkung",
+      "summary": "Rentenfonds werden nicht nur kapitalgedeckt, sondern wirkungsgebunden. Kapital dient Zukunftsfähigkeit, nicht bloßer Rendite."
+    },
+    {
+      "title": "Sozialabgaben-Entkopplung und Automatisierungsdividende",
+      "summary": "Soziale Sicherung darf nicht an menschlicher Lohnarbeit kleben bleiben, wenn Wertschöpfung zunehmend maschinell entsteht."
+    },
+    {
+      "title": "Daten, WÖk-IDs, Datenschutz und Rechtsschutz",
+      "summary": "Die Wirkungsrente braucht belastbare Daten, aber keinen Social Credit. Bewertet werden Tätigkeitsfelder und Systeme, nicht der Wert von Menschen."
+    },
+    {
+      "title": "Politische Umsetzung und Übergangspfad",
+      "summary": "Die Wirkungsrente ist kein Schockmodell, sondern ein mehrstufiger Übergang mit Bestandsschutz, Pilotierung und demokratischer Korrektur."
+    }
+  ]
+}
