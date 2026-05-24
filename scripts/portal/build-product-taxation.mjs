@@ -202,17 +202,55 @@ function slugify(value) {
     .replace(/^-+|-+$/g, "");
 }
 
+function citeAnchor(id, label = "Zitierlink zu diesem Abschnitt") {
+  return `<a class="cite-anchor no-print" href="#${id}" aria-label="${escapeHtml(label)}">#</a>`;
+}
+
+function citeHeading(level, id, text) {
+  return `<h${level} id="${id}">${inlineMd(text)} ${citeAnchor(id)}</h${level}>`;
+}
+
+function citationNotice(route) {
+  return `<aside class="citation-note" role="note">
+      <p class="card-kicker">Zitierfähig</p>
+      <h2>Online lesen, gezielt zitieren</h2>
+      <p>Diese Webfassung ist der Hauptzugang. Zitierfähige Abschnitte haben stabile Ankerlinks; Downloads bleiben ergänzende Archiv- und Exportfassungen.</p>
+      <p><a class="text-link" href="${route}">Kanonische Seitenadresse öffnen</a></p>
+    </aside>`;
+}
+
 function mdToHtml(markdown, options = {}) {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const html = [];
   const toc = [];
+  const usedIds = new Set();
   let paragraph = [];
   let list = [];
   let table = [];
+  let paragraphCount = 0;
+
+  const uniqueId = (raw) => {
+    const base = raw || "abschnitt";
+    let id = base;
+    let counter = 2;
+    while (usedIds.has(id)) {
+      id = `${base}-${counter}`;
+      counter += 1;
+    }
+    usedIds.add(id);
+    return id;
+  };
 
   const flushParagraph = () => {
     if (!paragraph.length) return;
-    html.push(`<p>${inlineMd(paragraph.join(" "))}</p>`);
+    const text = paragraph.join(" ");
+    if (options.paragraphAnchors) {
+      paragraphCount += 1;
+      const id = uniqueId(`${options.paragraphPrefix || "absatz"}-${String(paragraphCount).padStart(3, "0")}`);
+      html.push(`<p id="${id}">${inlineMd(text)} ${citeAnchor(id, "Zitierlink zu diesem Absatz")}</p>`);
+    } else {
+      html.push(`<p>${inlineMd(text)}</p>`);
+    }
     paragraph = [];
   };
   const flushList = () => {
@@ -254,9 +292,9 @@ function mdToHtml(markdown, options = {}) {
       flushList();
       const level = heading[1].length;
       const text = heading[2].trim();
-      const id = options.anchorPrefix ? `${options.anchorPrefix}-${slugify(text)}` : slugify(text);
+      const id = uniqueId(options.anchorPrefix ? `${options.anchorPrefix}-${slugify(text)}` : slugify(text));
       toc.push({ level, text, id });
-      html.push(`<h${level} id="${id}">${inlineMd(text)}</h${level}>`);
+      html.push(options.citeAnchors ? citeHeading(level, id, text) : `<h${level} id="${id}">${inlineMd(text)}</h${level}>`);
       continue;
     }
 
@@ -376,11 +414,15 @@ ${items.map((item) => `<article class="card">
     </div>`;
 }
 
+function sectionTitle(id, text) {
+  return `<h2 id="${id}">${escapeHtml(text)} ${citeAnchor(id)}</h2>`;
+}
+
 function toolCards(base, tools = contextualTools) {
   return `<section class="section" aria-labelledby="context-tools">
       <div class="section-header">
         <p class="hero-kicker">Kontext-Werkzeuge</p>
-        <h2 id="context-tools">Werkzeuge in diesem Bereich</h2>
+        ${sectionTitle("context-tools", "Werkzeuge in diesem Bereich")}
         <p>Diese Methoden und Instrumente werden im Produktportal angewendet. Die kanonische Erklärung liegt jeweils im Methodenregister unter /werkzeuge/.</p>
       </div>
       <div class="card-grid three context-tool-grid">
@@ -404,7 +446,7 @@ function sdgBlock(base, explanation) {
   return `<section class="section" aria-labelledby="sdg-title">
       <div class="portal-reference-block">
         <p class="hero-kicker">Referenzrahmen</p>
-        <h2 id="sdg-title">SDG-/SDG+-Bezug</h2>
+        ${sectionTitle("sdg-title", "SDG-/SDG+-Bezug")}
         <h3>Relevante SDGs</h3>
         <div class="model-strip">${productSdgs.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
         <h3>Relevante SDG+-Dimensionen</h3>
@@ -419,7 +461,7 @@ function bookBlock(base, anchors = bookAnchors) {
   return `<section class="section" aria-labelledby="book-anchors">
       <div class="section-header">
         <p class="hero-kicker">Online-Buch</p>
-        <h2 id="book-anchors">Anker im Online-Buch</h2>
+        ${sectionTitle("book-anchors", "Anker im Online-Buch")}
         <p>Diese Kapitel bilden die inhaltliche Wirbelsäule für Produktwirkung, Scorecards, Wirkungssteuer und Markttransformation.</p>
       </div>
       <div class="model-strip">${anchors.map(([label, link]) => `<a href="${href(base, link)}">${escapeHtml(label)}</a>`).join("")}</div>
@@ -430,7 +472,7 @@ function downloadBlock(base, items = []) {
   return `<section class="section" aria-labelledby="downloads">
       <div class="card">
         <p class="hero-kicker">Export & Archiv</p>
-        <h2 id="downloads">Downloads und Druck</h2>
+        ${sectionTitle("downloads", "Downloads und Druck")}
         <p class="card-text">Der Online-Volltext ist der Hauptzugang. Downloads bleiben ergänzend als Archiv-, Export- oder Originalfassung erhalten.</p>
         <div class="portal-card-actions no-print">
           <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
@@ -480,14 +522,14 @@ function sourceNotice(label) {
 
 function fulltextPage(config) {
   const md = read(config.source).replace(/^# .+\n+/, "");
-  const rendered = mdToHtml(md);
+  const rendered = mdToHtml(md, { citeAnchors: true, paragraphAnchors: true });
   page({
     rel: config.rel,
     title: config.title,
     description: config.description,
     searchSection: "Wirkungsfelder",
     searchType: "Volltext",
-    body: (base) => `${introHero({
+    body: (base, route) => `${introHero({
       base,
       kicker: config.kicker,
       h1: config.h1,
@@ -495,10 +537,11 @@ function fulltextPage(config) {
       text: config.hero,
       actions: config.primaryAction ? `<a class="btn btn-primary" href="${href(base, config.primaryAction.href)}">${escapeHtml(config.primaryAction.label)}</a>` : "",
     })}
+    <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
     <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
       <article class="article-body fulltext-reader">
-        <h2 id="online-volltext">Online-Volltext</h2>
+        ${sectionTitle("online-volltext", "Online-Volltext")}
         ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
         ${rendered.html}
       </article>
@@ -515,7 +558,7 @@ function relatedBlocks(base) {
   return `<section class="section" aria-labelledby="related">
       <div class="section-header">
         <p class="hero-kicker">Kontext</p>
-        <h2 id="related">Verwandte Seiten</h2>
+        ${sectionTitle("related", "Verwandte Seiten")}
       </div>
       ${cardGrid(base, [
         { title: "Produkte & Konsum", text: "Portalübersicht für Produktwirkung, Preise, Lieferketten und Konsumentscheidungen.", href: "wirkungsfelder/produkte-konsum/" },
@@ -532,7 +575,7 @@ function productPortal() {
     description:
       "Wie die Wirkungsökonomie Produktwirkung sichtbar macht und Preise, Steuern, Lieferketten und Konsumentscheidungen an positiver Netto-Wirkung ausrichtet.",
     searchSection: "Wirkungsfelder",
-    body: (base) => `${introHero({
+    body: (base, route) => `${introHero({
       base,
       kicker: "Wirkungsfeld",
       h1: "Produkte & Konsum",
@@ -541,10 +584,11 @@ function productPortal() {
         "Der heutige Preis eines Produkts zeigt, was es kostet, aber nicht, was es bewirkt. Die Wirkungsökonomie macht Produktwirkung sichtbar und koppelt sie an Preise, Steuern, Lieferketten und Konsumentscheidungen zurück.",
       actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/")}">Modellbereich öffnen</a>`,
     })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section" aria-labelledby="price-lie">
       <div class="section-header">
         <p class="hero-kicker">Ausgangspunkt</p>
-        <h2 id="price-lie">Warum Preise heute lügen</h2>
+        ${sectionTitle("price-lie", "Warum Preise heute lügen")}
         <p>Preise zeigen Kapitalaufwand, Knappheit, Margen und Steuern. Sie zeigen aber nicht zuverlässig Wasserstress, Arbeitsbedingungen, Biodiversität, Gesundheitsfolgen, Datenintegrität oder demokratische Risiken.</p>
       </div>
       ${cardGrid(base, [
@@ -556,7 +600,7 @@ function productPortal() {
     <section class="section" aria-labelledby="how-it-works">
       <div class="section-header">
         <p class="hero-kicker">Modelllogik</p>
-        <h2 id="how-it-works">So funktioniert Produktbesteuerung durch Wirkung</h2>
+        ${sectionTitle("how-it-works", "So funktioniert Produktbesteuerung durch Wirkung")}
         <p>Die Bewertung beginnt nicht beim Bauchgefühl, sondern bei Daten, NACE-Zuordnung, ${toolRef(base, "WÖk-IDs", "werkzeuge/woek-ids/", "Eindeutige Indikatoren mit Quelle, Einheit, Schwelle und Version.")}, Produktscorecards, FinalScore, Reverse Merit Order, Steuerklasse, Vorsteuerlogik und Verbraucherinformation.</p>
       </div>
       <div class="process-steps">
@@ -566,7 +610,7 @@ function productPortal() {
     <section class="section" aria-labelledby="examples">
       <div class="section-header">
         <p class="hero-kicker">Online lesen</p>
-        <h2 id="examples">Produktbesteuerung als Volltext und Beispiele</h2>
+        ${sectionTitle("examples", "Produktbesteuerung als Volltext und Beispiele")}
         <p>PDFs und Word-Dateien bleiben ergänzend. Der Hauptzugang liegt hier online lesbar in den Portalseiten.</p>
       </div>
       ${cardGrid(base, [
@@ -583,7 +627,7 @@ function productPortal() {
     <section class="section" aria-labelledby="try">
       <div class="section-header">
         <p class="hero-kicker">Erleben</p>
-        <h2 id="try">Ausprobieren</h2>
+        ${sectionTitle("try", "Ausprobieren")}
         <p>Vorhandene Demos werden kontextbezogen verlinkt. Sie sind modellhafte Demonstrationen, keine amtliche Einstufung.</p>
       </div>
       ${cardGrid(base, [
@@ -595,7 +639,7 @@ function productPortal() {
     <section class="section" aria-labelledby="actors">
       <div class="section-header">
         <p class="hero-kicker">Akteursperspektiven</p>
-        <h2 id="actors">Für wen ist das relevant?</h2>
+        ${sectionTitle("actors", "Für wen ist das relevant?")}
       </div>
       ${cardGrid(base, [
         { title: "Für Konsument:innen", text: "Produktwirkung wird sichtbar, ohne Menschen selbst zu bewerten oder Kaufverhalten zu überwachen." },
@@ -622,7 +666,7 @@ function compactContextPage({ rel, title, subtitle, description, sections, relat
     title: `${title} | Produkte & Konsum`,
     description,
     searchSection: "Wirkungsfelder",
-    body: (base) => `${introHero({
+    body: (base, route) => `${introHero({
       base,
       kicker: "Produkte & Konsum",
       h1: title,
@@ -630,9 +674,13 @@ function compactContextPage({ rel, title, subtitle, description, sections, relat
       text: description,
       actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Zur Portalübersicht</a>`,
     })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section">
       <div class="feature-grid">
-        ${sections.map((section) => `<article class="card"><p class="card-kicker">${escapeHtml(section.kicker)}</p><h2 class="card-title">${escapeHtml(section.title)}</h2><p class="card-text">${escapeHtml(section.text)}</p></article>`).join("")}
+        ${sections.map((section) => {
+          const id = slugify(section.title);
+          return `<article class="card" id="${id}"><p class="card-kicker">${escapeHtml(section.kicker)}</p><h2 class="card-title">${escapeHtml(section.title)} ${citeAnchor(id)}</h2><p class="card-text">${escapeHtml(section.text)}</p></article>`;
+        }).join("")}
       </div>
     </section>
     ${toolCards(base, related || contextualTools)}
@@ -649,7 +697,7 @@ function toolPage({ rel, h1, subtitle, description, sections, appliedIn, tools =
     description,
     searchSection: "Werkzeuge",
     searchType: "Werkzeug",
-    body: (base) => `<section class="hero portal-hero">
+    body: (base, route) => `<section class="hero portal-hero">
       <div class="hero-content">
         <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkzeuge/">Werkzeuge</a></nav>
         <p class="hero-kicker">Methodenregister</p>
@@ -659,11 +707,15 @@ function toolPage({ rel, h1, subtitle, description, sections, appliedIn, tools =
         ${printActions(`<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Im Produktportal anwenden</a>`)}
       </div>
     </section>
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section">
-      <div class="feature-grid">${sections.map((section) => `<article class="card"><p class="card-kicker">${escapeHtml(section.kicker)}</p><h2 class="card-title">${escapeHtml(section.title)}</h2><p class="card-text">${section.text(base)}</p></article>`).join("")}</div>
+      <div class="feature-grid">${sections.map((section) => {
+        const id = slugify(section.title);
+        return `<article class="card" id="${id}"><p class="card-kicker">${escapeHtml(section.kicker)}</p><h2 class="card-title">${escapeHtml(section.title)} ${citeAnchor(id)}</h2><p class="card-text">${section.text(base)}</p></article>`;
+      }).join("")}</div>
     </section>
     <section class="section" aria-labelledby="applied">
-      <div class="section-header"><p class="hero-kicker">Kontext</p><h2 id="applied">Angewendet in</h2></div>
+      <div class="section-header"><p class="hero-kicker">Kontext</p>${sectionTitle("applied", "Angewendet in")}</div>
       ${cardGrid(base, appliedIn)}
     </section>
     ${sdgBlock(base, "Dieses Werkzeug dient der Bewertung und Rückkopplung von Produkt-, Lieferketten- und Marktwirkung. SDG+ wird als transparente WÖk-Erweiterung für Demokratie, Rechtsstaatlichkeit, Datenintegrität und institutionelles Vertrauen geführt.")}
@@ -675,7 +727,7 @@ function toolPage({ rel, h1, subtitle, description, sections, appliedIn, tools =
 function lawReader() {
   const md = read(sources.wstg);
   const intro = md.split("\n### § ")[0].replace(/^# .+\n+/, "");
-  const renderedIntro = mdToHtml(intro);
+  const renderedIntro = mdToHtml(intro, { citeAnchors: true });
   const matches = [...md.matchAll(/^### §\s+(\d+)\s+([^\n]+)\n([\s\S]*?)(?=^### §\s+\d+\s+|\n## Teil |\n$)/gm)];
   const sections = matches.map((match) => {
     const nr = match[1];
@@ -723,7 +775,7 @@ function lawReader() {
     description: "Online-Fassung des Wirkungssteuergesetzes mit Gesetzestext, Kommentaren, Begründungen und Verweisen zu WUStG, WEstG, Wirkungsrat und Wirkungshaushalt.",
     searchSection: "Werkstatt",
     searchType: "Gesetz",
-    body: (base) => `<section class="hero portal-hero">
+    body: (base, route) => `<section class="hero portal-hero">
       <div class="hero-content">
         <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a> / Gesetze</nav>
         <p class="hero-kicker">LawReader · Entwurf / Zielarchitektur</p>
@@ -733,6 +785,7 @@ function lawReader() {
         ${printActions(`<a class="btn btn-primary" href="${href(base, "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md")}">Markdown-Quelle öffnen</a>`)}
       </div>
     </section>
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${sourceNotice(sources.wstg)}
       <nav class="toc-card" aria-label="Inhaltsverzeichnis">
         <h2>Inhaltsverzeichnis</h2>
@@ -747,7 +800,7 @@ function lawReader() {
         ${renderedIntro.html}
         ${sections.map((section) => `<section class="law-section" id="${section.id}">
           <p class="card-kicker">§ ${section.nr} WStG</p>
-          <h2>§ ${section.nr} ${escapeHtml(section.title)}</h2>
+          <h2>§ ${section.nr} ${escapeHtml(section.title)} ${citeAnchor(section.id, `Zitierlink zu § ${section.nr} WStG`)}</h2>
           <div class="law-part law-summary"><h3>Kurzfassung</h3><p>${escapeHtml(section.summary)}.</p></div>
           <div class="law-part"><h3>Gesetzestext</h3>${section.gesetzestext || "<p>Kein eigener Gesetzestext in der Quelle ausgewiesen.</p>"}</div>
           <div class="law-part"><h3>Kommentar</h3>${section.kommentar || "<p>Kein Kommentar in der Quelle ausgewiesen.</p>"}</div>
@@ -765,14 +818,14 @@ function lawReader() {
 
 function guidelinesPage() {
   const md = read(sources.wustgGuidelines).replace(/^# .+\n+/, "");
-  const rendered = mdToHtml(md);
+  const rendered = mdToHtml(md, { citeAnchors: true, paragraphAnchors: true });
   page({
     rel: "werkstatt/leitlinien/wustg/index.html",
     title: "Technische Leitlinien WUStG | Wirkungsumsatzsteuer",
     description: "Vollständige Online-Fassung der Technischen Leitlinien zum WUStG mit WÖk-IDs, Scorecards, FinalScore, Reverse Merit Order, Datenqualität und Pilotlogik.",
     searchSection: "Werkstatt",
     searchType: "Leitlinie",
-    body: (base) => `<section class="hero portal-hero">
+    body: (base, route) => `<section class="hero portal-hero">
       <div class="hero-content">
         <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a> / Leitlinien</nav>
         <p class="hero-kicker">Leitlinie · Entwurf / Pilotmodell</p>
@@ -782,10 +835,11 @@ function guidelinesPage() {
         ${printActions(`<a class="btn btn-primary" href="${href(base, "dokumente/technische-leitlinien-wustg-v2/")}">Historische Webfassung öffnen</a>`)}
       </div>
     </section>
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${sourceNotice(sources.wustgGuidelines)}${tocBlock(base, rendered.toc)}</section>
     <section class="section article-section">
       <article class="article-body fulltext-reader">
-        <h2 id="online-volltext">Online-Volltext</h2>
+        ${sectionTitle("online-volltext", "Online-Volltext")}
         <p>Die Leitlinien beziehen sich unter anderem auf ${lawRef(base, "wustg3")}, ${lawRef(base, "wustg4")}, ${lawRef(base, "wustg5")}, ${lawRef(base, "wustg6")}, ${lawRef(base, "wustg7")} und ${lawRef(base, "wustg8")}. Da kein separater vollständiger WUStG-Gesetzestext in der aktuellen Quelle vorliegt, führen diese Verweise auf die passenden Leitlinienabschnitte.</p>
         ${rendered.html}
       </article>
@@ -805,7 +859,7 @@ function wustgConceptPage() {
       "Konzeptseite zum Wirkungsumsatzsteuergesetz: kein separater vollständiger Gesetzestext vorhanden; Verweise auf WStG, Produktpapier und Technische Leitlinien WUStG.",
     searchSection: "Werkstatt",
     searchType: "Gesetz",
-    body: (base) => `<section class="hero portal-hero">
+    body: (base, route) => `<section class="hero portal-hero">
       <div class="hero-content">
         <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a> / Gesetze</nav>
         <p class="hero-kicker">Konzept / in Ausarbeitung</p>
@@ -815,13 +869,14 @@ function wustgConceptPage() {
         ${printActions(`<a class="btn btn-primary" href="${href(base, "werkstatt/leitlinien/wustg/")}">Leitlinien lesen</a>`)}
       </div>
     </section>
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section" aria-labelledby="wustg-status">
       <div class="scanner-notice" role="note">
         <strong>Status:</strong> WUStG-Paragrafen wie ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")} werden als Referenzen auf die nächstbesten Leitlinienabschnitte geführt. Sie sind keine behauptete geltende Rechtsnorm.
       </div>
       <div class="section-header">
         <p class="hero-kicker">Einordnung</p>
-        <h2 id="wustg-status">Was diese Seite leistet</h2>
+        ${sectionTitle("wustg-status", "Was diese Seite leistet")}
         <p>Sie bündelt die vorhandene WUStG-Logik als Konzept- und Orientierungspunkt, bis ein vollständiger Gesetzestext vorliegt.</p>
       </div>
       ${cardGrid(base, [
