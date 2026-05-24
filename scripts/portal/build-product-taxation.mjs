@@ -210,6 +210,38 @@ const go8ToolRegistry = {
     short: "Soll Indikatorfamilien, Quellen, Einheiten, Schwellen, Versionen und SDG-/SDG+-Bezüge recherchierbar machen.",
     why: "WÖk-IDs verhindern beliebige KPI-Namen und machen Produktwirkung prüfbar.",
   },
+  "Lieferketten-Scorecard": {
+    title: "Lieferketten-Scorecard",
+    type: "Toolidee",
+    status: "Demo in Vorbereitung",
+    href: "wirkungsfelder/produkte-konsum/lieferketten/",
+    short: "Soll Lieferanten, Vorleistungen, Datenqualität, rote Linien und Verbesserungswege produktbezogen bewerten.",
+    why: "Produktwirkung entsteht häufig vor dem eigenen Werkstor; Lieferketten brauchen deshalb eine prüfbare Scorecard-Logik.",
+  },
+  "Vorsteuer- und Bonuslogik-Simulator": {
+    title: "Vorsteuer- und Bonuslogik-Simulator",
+    type: "Toolidee",
+    status: "Demo in Vorbereitung",
+    href: "",
+    short: "Soll zeigen, wie Vorleistungen, Importlogik, Bonusfähigkeit und negative Wirkung in der WUStG-Logik rückgekoppelt werden.",
+    why: "Die Wirkungsumsatzsteuer wird erst belastbar, wenn Lieferkettenwirkung nicht als Durchlaufposten verschwindet.",
+  },
+  "CSRD-zu-Produktscorecard-Demo": {
+    title: "CSRD-zu-Produktscorecard-Demo",
+    type: "Toolidee",
+    status: "Demo in Vorbereitung",
+    href: "wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+    short: "Soll Unternehmens- und Berichtsdaten in produktgruppenbezogene Scorecard-Felder übersetzen.",
+    why: "CSRD-Daten werden wirkungsökonomisch erst handlungsfähig, wenn sie auf Produktgruppen und Entscheidungen heruntergebrochen werden.",
+  },
+  "Produktpass-Mapping": {
+    title: "Produktpass-Mapping",
+    type: "Dateninfrastruktur",
+    status: "Konzeptseite vorhanden",
+    href: "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/",
+    short: "Verknüpft Produktpass-Felder mit WÖk-IDs, Scorecards, Lieferkettennachweisen und Verbraucherinformation.",
+    why: "Digitale Produktpässe brauchen eine Wirkungslogik, damit Daten nicht nur gesammelt, sondern für Rückkopplung genutzt werden.",
+  },
 };
 
 const externalSources = [
@@ -278,6 +310,51 @@ const go8ProductDetails = [
     pdf: "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_0.pdf",
     detailText: "Scorecard-Aufbau, Datenqualität, Benchmarks, Reverse Merit Order, DPP und Assurance als Produktgedächtnis.",
     tools: ["Produktscorecard-Generator", "DPP-Demo", "WÖk-ID-Browser", "Produktwirkungsrechner"],
+  },
+];
+
+const go9ProductDetails = [
+  {
+    no: "18",
+    rel: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/index.html",
+    source: "docs/produkte-konsum/go9-detailkonzepte/online_volltext_18_18_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_0.md",
+    title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum",
+    h1: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag",
+    subtitle: "Automatisierte Einstufung, Scorecard, Steuerklasse und Preisschild am kleinsten verständlichen Produktfall.",
+    description: "Echtes Detailkonzept zum Apfelbeispiel: Produktidentifikation, Scorecard, Steuerklasse, Preisschild, Verbraucherinformation und Produktwirkungsrechnung im Alltag.",
+    hero: "Diese Vertiefung macht die Wirkungsumsatzsteuer am einfachsten Produktfall greifbar: Ein Apfel wird nicht zum Symbol, sondern zum vollständigen Testfall für ehrliche Preise.",
+    docx: "assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_0.pdf",
+    detailText: "Apfelbeispiel, Produktwirkungsrechnung, Scorecard, Steuerklasse, Preisschild und Alltagstransparenz.",
+    tools: ["Apfel-Rechner", "Produktwirkungsrechner", "Produktscorecard-Generator", "DPP-Demo"],
+  },
+  {
+    no: "19",
+    rel: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html",
+    source: "docs/produkte-konsum/go9-detailkonzepte/online_volltext_19_19_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_0.md",
+    title: "Lieferketten, Importlogik und Wirkungsvorsteuer | Produkte & Konsum",
+    h1: "Lieferketten, Importlogik und Wirkungsvorsteuer",
+    subtitle: "Wie Wirkung entlang globaler Wertschöpfungsketten steuerlich rückgekoppelt wird.",
+    description: "Echtes Detailkonzept zu Lieferketten, Importlogik und Wirkungsvorsteuer: Vorleistungen, Bonuslogik, Importe, DPP, Lieferanten-Scorecards und rote Linien.",
+    hero: "Diese Vertiefung zeigt, warum Produktwirkung nicht an der Landesgrenze und nicht beim letzten Hersteller beginnt: Lieferkettenwirkung muss in Vorsteuer- und Bonuslogiken sichtbar bleiben.",
+    docx: "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_0.pdf",
+    detailText: "Lieferketten, Importlogik, Wirkungsvorsteuer, Bonusfähigkeit, Supplier Scorecards und globale Anschlussfähigkeit.",
+    tools: ["Lieferketten-Scorecard", "Vorsteuer- und Bonuslogik-Simulator", "T-Shirt-Lieferkettenrechner", "WÖk-ID-Browser"],
+  },
+  {
+    no: "20",
+    rel: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/index.html",
+    source: "docs/produkte-konsum/go9-detailkonzepte/online_volltext_20_20_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_0.md",
+    title: "Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum",
+    h1: "Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard",
+    subtitle: "Wie Nachhaltigkeitsberichte in produktbezogene Wirkungs- und Steuerungsdaten übersetzt werden können.",
+    description: "Echtes Detailkonzept zum Konzern- und Produktgruppenbeispiel: CSRD/ESRS, Produktgruppen, BASF/Polyamid-Modell, WÖk-IDs, DPP und Produktscorecards.",
+    hero: "Diese Vertiefung übersetzt die Berichtsebene in die Produktgruppenebene: Wirkung darf nicht im Konzernmittelwert verschwinden.",
+    docx: "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_0.pdf",
+    detailText: "CSRD-zu-Produktscorecard, Produktgruppen, WÖk-IDs, DPP, Assurance und Konzernsteuerung.",
+    tools: ["CSRD-zu-Produktscorecard-Demo", "Produktpass-Mapping", "WÖk-ID-Browser", "Produktscorecard-Generator"],
   },
 ];
 
@@ -954,6 +1031,31 @@ function go8DetailConceptPages() {
   }
 }
 
+function go9DetailConceptPages() {
+  for (const detail of go9ProductDetails) {
+    fulltextPage({
+      rel: detail.rel,
+      source: detail.source,
+      title: detail.title,
+      description: detail.description,
+      kicker: `Detailkonzept ${detail.no} · Produkte & Konsum`,
+      h1: detail.h1,
+      subtitle: detail.subtitle,
+      hero: detail.hero,
+      contextIntro: (base) =>
+        `Diese Vertiefung ergänzt das Produktportal und verknüpft ${toolRef(base, "Wirkungsumsatzsteuer", "werkzeuge/wirkungsumsatzsteuer/", "Produktwirkung als Preis- und Steuerfeedback.")}, ${toolRef(base, "WÖk-IDs", "werkzeuge/woek-ids/", "Indikatoren mit Quelle, Einheit, Schwelle und Version.")}, ${toolRef(base, "Scorecards", "werkzeuge/scorecards/", "Bewertungsraster für Produkt-, Lieferketten- und Organisationswirkung.")} und ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Schwere negative Wirkung wird nicht schöngerechnet.")}.`,
+      tools: toolsForGo8Detail(detail),
+      sdgText:
+        "Diese Vertiefung ordnet Produktwirkung, Lieferkettenwirkung und Produktdaten an SDGs, Agenda 2030 und SDG+ ein. Wirkung ist neutral und relational; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      downloads: [
+        { label: "DOCX herunterladen", href: detail.docx, required: true },
+        { label: "PDF öffnen", href: detail.pdf, required: true },
+        { label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" },
+      ],
+    });
+  }
+}
+
 function relatedBlocks(base) {
   return `<section class="section" aria-labelledby="related">
       <div class="section-header">
@@ -1018,6 +1120,9 @@ function productPortal() {
         { title: "Produkte als Wirkungsträger", text: "Echtes Detailkonzept zu Lebenszyklus, Lieferkette, Nutzung, Ende, Produktverantwortung und Verbraucherinformation.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Detailkonzept lesen" },
         { title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Echtes Detailkonzept zu FinalScore, Steuerklasse, Vorsteuerlogik, Kaufkraftschutz, KMU-Übergängen und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Detailkonzept lesen" },
         { title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe", text: "Echtes Detailkonzept zu Scorecards, WÖk-IDs, DPP, Datenqualität, Assurance und Engpasslogik.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Detailkonzept lesen" },
+        { title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag", text: "Go-9-Detailkonzept zu Produktidentifikation, Scorecard, Steuerklasse, Preisschild und Verbraucherinformation am Alltagsbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", label: "Detailkonzept lesen" },
+        { title: "Lieferketten, Importlogik und Wirkungsvorsteuer", text: "Go-9-Detailkonzept zu Vorleistungen, Importen, Bonuslogik, Supplier Scorecards, DPP und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/", label: "Detailkonzept lesen" },
+        { title: "Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard", text: "Go-9-Detailkonzept zur Übersetzung von CSRD-/ESRS-Daten in Produktgruppen-Scorecards.", href: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/", label: "Detailkonzept lesen" },
         { title: "Produktbesteuerung durch Wirkung", text: "Vollständige Online-Fassung des Produktpapiers mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
         { title: "Regionaler Apfel vs. Chile-Apfel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
         { title: "T-Shirt / Textilbeispiel", text: "Modellseite für Baumwolle, Färbung, Arbeit, Transport, Nutzungsdauer und Kreislauffähigkeit.", href: "wirkungsfelder/produkte-konsum/t-shirt/" },
@@ -1659,6 +1764,9 @@ function productArbeitsbibliothekPage() {
         { kicker: "Detailkonzept", title: "Produkte als Wirkungsträger", text: "Go-8-Vertiefung zu Produktwirkung über Lebenszyklus, Lieferkette, Nutzung und Ende.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Online lesen" },
         { kicker: "Detailkonzept", title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Go-8-Vertiefung zu FinalScore, Steuerklassen, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Online lesen" },
         { kicker: "Detailkonzept", title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe", text: "Go-8-Vertiefung zu Scorecards, WÖk-IDs, DPP, Datenqualität und Engpasslogik.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag", text: "Go-9-Vertiefung zu Scorecard, Steuerklasse, Preisschild und Produktwirkungsrechnung am Alltagsbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Lieferketten, Importlogik und Wirkungsvorsteuer", text: "Go-9-Vertiefung zu Vorleistungen, Importen, Bonuslogik, Supplier Scorecards und DPP.", href: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard", text: "Go-9-Vertiefung zu CSRD/ESRS, Produktgruppen, WÖk-IDs und Produktpass-Mapping.", href: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/", label: "Online lesen" },
         { kicker: "Konzeptpapier", title: "Produktbesteuerung durch Wirkung", text: "Kanonische Online-Fassung des Konzeptpapiers zu NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Steuerklassen und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Online lesen" },
         { kicker: "Dossier", title: "Dossier Produkte & Konsum", text: "Rechenmodell V0.1, Tarifmatrix, Apfelrechnung, T-Shirt-Rechnung, Lieferkettenlogik und Quellen online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/", label: "Online lesen" },
         { kicker: "Werkstatt", title: "Whitepaper-Eintrag", text: "Werkstatt-Verweis auf das Produktpapier mit Online-Volltext und ergänzenden Downloadhinweisen.", href: "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/", label: "Werkstatt öffnen" },
@@ -1687,6 +1795,7 @@ function updateSitemap() {
   const urls = [
     "wirkungsfelder/produkte-konsum/",
     ...go8ProductDetails.map((item) => item.rel.replace(/index\.html$/, "")),
+    ...go9ProductDetails.map((item) => item.rel.replace(/index\.html$/, "")),
     "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/",
     "wirkungsfelder/produkte-konsum/dossier/",
     "wirkungsfelder/produkte-konsum/apfelbeispiel/",
@@ -1725,6 +1834,7 @@ function updateSitemap() {
 function build() {
   productPortal();
   go8DetailConceptPages();
+  go9DetailConceptPages();
   dossierPage();
   productSingleDossierPages();
   tShirtPage();
@@ -1829,6 +1939,10 @@ function build() {
     appliedIn: [
       { title: "Produkte & Konsum", text: "Hauptportal für Produktwirkung, Preise und Konsumentscheidungen.", href: "wirkungsfelder/produkte-konsum/" },
       { title: "Produktbesteuerung durch Wirkung", text: "Volltext des Produktpapiers.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+      { title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Detailkonzept zu FinalScore, Steuerklassen, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/" },
+      { title: "Apfelbeispiel und Produktwirkungsrechnung", text: "Alltagsnaher Testfall für Scorecard, Steuerklasse und Verbraucherinformation.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/" },
+      { title: "Lieferketten und Wirkungsvorsteuer", text: "Vorsteuer-, Bonus-, Import- und Lieferantenlogik als Detailkonzept.", href: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/" },
+      { title: "CSRD zur Produktscorecard", text: "Konzern- und Produktgruppenbeispiel für produktbezogene Wirkungsdaten.", href: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/" },
       { title: "Lieferketten", text: "Vorsteuer-, Bonus- und Lieferantenlogik.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },
     ],
   });
