@@ -4841,6 +4841,37 @@ textarea {
   text-align: left;
 }
 
+.sdg-target-table {
+  min-width: 980px;
+  table-layout: fixed;
+}
+
+.sdg-target-table th:first-child,
+.sdg-target-table td:first-child {
+  width: 4.5rem;
+}
+
+.sdg-target-table th:last-child,
+.sdg-target-table td:last-child {
+  width: 9.5rem;
+}
+
+.sdg-target-table th:last-child {
+  white-space: nowrap;
+}
+
+.sdg-target-table td:last-child .text-link {
+  display: inline-block;
+  margin-top: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.sdg-target-table td:last-child .text-link + br + .text-link {
+  margin-top: 0.75rem;
+}
+
 .woek-id-table td:first-child,
 .woek-id-table th:first-child {
   min-width: 8rem;
