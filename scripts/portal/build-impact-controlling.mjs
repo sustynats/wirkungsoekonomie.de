@@ -360,6 +360,28 @@ function sdgBlock() {
   </section>`;
 }
 
+function politicalBlock(base, context = "dieser Methodenbereich") {
+  return `<section class="section" aria-labelledby="political-implementation">
+    <div class="card">
+      <p class="hero-kicker">Umsetzung</p>
+      ${sectionTitle("political-implementation", "Politische Anschlussfähigkeit und Umsetzungsoptionen")}
+      <p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit dieses Wirkungsfeld demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann. Unterschiedliche Parteien können innerhalb dieses Rahmens verschiedene Wege wählen. Entscheidend ist, dass die Wirkung sichtbar, überprüfbar und korrigierbar bleibt.</p>
+      ${dataTable(["Ebene", "Aufgabe für Politik und Umsetzung"], [
+        ["Aufgabe der Politik", `${context} braucht Mandat, Datenzugang, Prüfstandards, Verantwortlichkeiten und demokratische Korrekturwege.`],
+        ["Politische Rahmenbedingungen", "WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität und Assurance müssen in Gesetze, Haushalte, Förderlogiken und Berichtspflichten übersetzbar sein."],
+        ["Ausgestaltungsspielraum", "Parteien können unterschiedliche Prioritäten bei Tempo, Verbindlichkeit, Pilotierung, Förderung, Sanktionen und Rückverteilung setzen."],
+        ["Zielkonflikte", "Präzision, Bürokratiearmut, Datenschutz, KMU-Belastung, Innovationsschutz, Vergleichbarkeit und öffentliche Kontrolle müssen politisch austariert werden."],
+        ["Rollenverteilung", "EU, Bund, Länder, Kommunen, Verwaltung, Wirtschaft, Wissenschaft und Zivilgesellschaft tragen Daten, Standards, Evaluation, Beteiligung und Umsetzung gemeinsam."],
+        ["Übergang und Schutz", "Soziale Abfederung, KMU-Schutz, Rechtsschutz, Datenschutz, Beteiligung und klare Korrekturverfahren schützen vor Überforderung und technokratischer Verengung."],
+        ["Evaluation und Korrektur", "Wirkungsberichte, Revisionszyklen, unabhängige Assurance und öffentliche Konsultation halten die Methodik lernfähig."],
+        ["Parteipolitische Anschlussfähigkeit", "Konservative, liberale, sozialdemokratische, grüne, linke, kommunale und wirtschaftsnahe Perspektiven können unterschiedliche Umsetzungsoptionen wählen."],
+      ])}
+      <p>Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Normative Entscheidungen bleiben demokratisch legitimiert.</p>
+      <p><a class="text-link" href="${href(base, "wirkungsfelder/staat-recht-demokratie/")}">Staat, Recht &amp; Demokratie als Umsetzungsportal öffnen</a></p>
+    </div>
+  </section>`;
+}
+
 function bookBlock(base) {
   return `<section class="section" aria-labelledby="book-anchors">
     <div class="section-header">
@@ -440,6 +462,7 @@ function overviewPage() {
         label: "Dossier lesen",
       })))}
     </section>
+    ${politicalBlock(base)}
     ${sdgBlock()}
     ${bookBlock(base)}
     ${externalSourcesBlock()}
@@ -493,6 +516,7 @@ function dossierOverview() {
       </article>
     </section>
     ${toolGrid(base)}
+    ${politicalBlock(base)}
     ${sdgBlock()}
     ${bookBlock(base)}
     ${externalSourcesBlock()}
@@ -545,7 +569,8 @@ function singleDossierPages() {
         </article>
       </section>
       ${toolGrid(base, related.length ? related : tools.slice(0, 4))}
-      ${sdgBlock()}
+      ${politicalBlock(base)}
+    ${sdgBlock()}
       ${bookBlock(base)}
       ${externalSourcesBlock()}
       ${downloadBlock(base, [
@@ -582,7 +607,8 @@ function toolExplanationPages() {
         </div>
       </section>
       ${toolGrid(base, tools.filter((tool) => tool.href === rel.replace("index.html", "") || tool.title === title).length ? tools.filter((tool) => tool.href === rel.replace("index.html", "") || tool.title === title) : tools.slice(0, 4))}
-      ${sdgBlock()}
+      ${politicalBlock(base)}
+    ${sdgBlock()}
       ${bookBlock(base)}
       ${downloadBlock(base, [{ label: "Einzeldossier online lesen", href: dossier }, { label: "Gesamtdossier öffnen", href: "werkzeuge/impact-controlling/dossier/" }])}`,
     });
@@ -653,6 +679,7 @@ function calculatorPage() {
       </div>
     </section>
     ${toolGrid(base)}
+    ${politicalBlock(base)}
     ${sdgBlock()}
     ${bookBlock(base)}
     ${downloadBlock(base, [{ label: "Tool-Spezifikation online lesen", href: "werkzeuge/impact-controlling/dossier/#tool-spezifikation" }])}`,

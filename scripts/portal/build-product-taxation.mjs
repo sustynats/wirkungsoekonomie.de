@@ -653,6 +653,28 @@ function sdgBlock(base, explanation) {
     </section>`;
 }
 
+function politicalBlock(base, context = "dieser Bereich") {
+  return `<section class="section" aria-labelledby="political-implementation">
+      <div class="card">
+        <p class="hero-kicker">Umsetzung</p>
+        ${sectionTitle("political-implementation", "Politische Anschlussfähigkeit und Umsetzungsoptionen")}
+        <p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit dieses Wirkungsfeld demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann. Unterschiedliche Parteien können innerhalb dieses Rahmens verschiedene Wege wählen. Entscheidend ist, dass die Wirkung sichtbar, überprüfbar und korrigierbar bleibt.</p>
+        ${dataTable(["Ebene", "Aufgabe für Politik und Umsetzung"], [
+          ["Aufgabe der Politik", `${context} braucht demokratisch legitimierte Regeln, Datenzugänge, Zuständigkeiten und Korrekturverfahren.`],
+          ["Rahmenbedingungen", "Gesetze, technische Leitlinien, Wirkungsrat, Datenschutz, Rechtsschutz, föderale Zuständigkeiten und offene Standards müssen zusammenspielen."],
+          ["Ausgestaltungsspielraum", "Tempo, Pilotbereiche, Satzhöhen, Bonus- oder Bonus-Malus-Modelle, Rückverteilung und Branchenprioritäten bleiben politisch entscheidbar."],
+          ["Zielkonflikte", "Kaufkraft, Wettbewerbsfähigkeit, Datensparsamkeit, soziale Gerechtigkeit, Innovationsdruck und europäische Anschlussfähigkeit müssen transparent abgewogen werden."],
+          ["Rollenverteilung", "EU, Bund, Länder, Kommunen, Verwaltung, Wirtschaft, Wissenschaft und Zivilgesellschaft übernehmen unterschiedliche Aufgaben in Gesetzgebung, Prüfung, Pilotierung und Beteiligung."],
+          ["Übergang und Schutz", "Soziale Abfederung, KMU-Schutz, Rechtsschutz, Datenschutz, Kaufkraftschutz, Beteiligung und klare Einspruchswege sind Teil der Einführung."],
+          ["Evaluation und Korrektur", "Wirkungsberichte, öffentliche Konsultationen, Revisionszyklen und unabhängige Evaluation sichern, dass die Umsetzung lernfähig bleibt."],
+          ["Parteipolitische Anschlussfähigkeit", "Konservative, liberale, sozialdemokratische, grüne, linke, kommunale und wirtschaftsnahe Lesarten können unterschiedliche Instrumentenpfade wählen, ohne die Wirkungslogik aufzugeben."],
+        ])}
+        <p>Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Bewertet werden Maßnahmen, Strukturen, Produkte und Wirkungsräume, nicht Menschen.</p>
+        <p><a class="text-link" href="${href(base, "wirkungsfelder/staat-recht-demokratie/")}">Staat, Recht &amp; Demokratie als Umsetzungsportal öffnen</a></p>
+      </div>
+    </section>`;
+}
+
 function bookBlock(base, anchors = bookAnchors) {
   return `<section class="section" aria-labelledby="book-anchors">
       <div class="section-header">
@@ -758,6 +780,7 @@ function fulltextPage(config) {
     </section>
     ${toolCards(base, config.tools || contextualTools)}
     ${relatedBlocks(base)}
+    ${politicalBlock(base, "Produktbesteuerung und Produktwirkung")}
     ${sdgBlock(base, config.sdgText)}
     ${bookBlock(base)}
     ${externalSourcesBlock(base)}
@@ -865,6 +888,7 @@ function productPortal() {
         { title: "Für Politik und Verwaltung", text: "Pilotierung, Rechtsschutz, Datenschutz und Wirkungsrat sichern die Einführung ab." },
       ])}
     </section>
+    ${politicalBlock(base, "Das Produktportal")}
     ${sdgBlock(base, "Produktbesteuerung berührt Ernährung, Gesundheit, Wasser, Arbeit, Industrie, Ungleichheit, Konsum, Klima, Biodiversität, Institutionen und internationale Kooperation. SDG+ ergänzt dort, wo Produktdaten, Werbung, Plattformen, Transparenz und Vertrauen demokratische Wirkung entfalten.")}
     ${bookBlock(base)}
     ${externalSourcesBlock(base)}
@@ -901,6 +925,7 @@ function compactContextPage({ rel, title, subtitle, description, sections, relat
       </div>
     </section>
     ${toolCards(base, related || contextualTools)}
+    ${politicalBlock(base, "Diese Produktseite")}
     ${sdgBlock(base, "Diese Seite ordnet Produktwirkung in den Referenzrahmen aus SDGs und SDG+ ein. Entscheidend ist nicht Wirkung schlechthin, sondern positive Netto-Wirkung für Mensch, Planet und Demokratie.")}
     ${bookBlock(base)}
     ${downloadBlock(base, [{ label: "Produktpapier lesen", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" }])}`,
@@ -935,6 +960,7 @@ function toolPage({ rel, h1, subtitle, description, sections, appliedIn, tools =
       <div class="section-header"><p class="hero-kicker">Kontext</p>${sectionTitle("applied", "Angewendet in")}</div>
       ${cardGrid(base, appliedIn)}
     </section>
+    ${politicalBlock(base, "Dieses Werkzeug")}
     ${sdgBlock(base, "Dieses Werkzeug dient der Bewertung und Rückkopplung von Produkt-, Lieferketten- und Marktwirkung. SDG+ wird als transparente WÖk-Erweiterung für Demokratie, Rechtsstaatlichkeit, Datenintegrität und institutionelles Vertrauen geführt.")}
     ${bookBlock(base)}
     ${downloadBlock(base, [{ label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" }, { label: "WStG lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" }])}`,
@@ -1027,6 +1053,7 @@ function lawReader() {
       </article>
     </section>
     ${toolCards(base, contextualTools.filter((tool) => ["Wirkungsumsatzsteuer", "WÖk-IDs", "Reverse Merit Order", "Wirkungsrat"].includes(tool.title)))}
+    ${politicalBlock(base, "Das Wirkungssteuergesetz")}
     ${sdgBlock(base, "Das WStG rahmt steuerliche Rückkopplung für Produkte, Einkommen, Kapital, öffentliche Mittel und Governance. Es bezieht sich auf SDGs, Agenda 2030 und SDG+ als Bewertungsrahmen, nicht als Menübaum.")}
     ${bookBlock(base, bookAnchors.filter(([label]) => /Kapitel 36|Kapitel 37|Kapitel 38|Kapitel 39|Kapitel 40|Kapitel 31|Kapitel 32|Kapitel 33/.test(label)))}
     ${downloadBlock(base, [{ label: "Markdown-Quelle öffnen", href: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md" }, { label: "Downloads öffnen", href: "downloads.html" }])}`,
@@ -1062,6 +1089,7 @@ function guidelinesPage() {
       </article>
     </section>
     ${toolCards(base)}
+    ${politicalBlock(base, "Die WUStG-Leitlinien")}
     ${sdgBlock(base, "Die WUStG-Leitlinien beschreiben die technische Bewertung von Produktwirkung entlang von Konsum, Produktion, Lieferketten, Datenqualität, Rechtsstaatlichkeit und institutioneller Kontrolle.")}
     ${bookBlock(base)}
     ${downloadBlock(base, [{ label: "Historische PDF-Webfassung", href: "dokumente/technische-leitlinien-wustg-v2/" }, { label: "Markdown-Quelle öffnen", href: "docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md" }])}`,
@@ -1103,6 +1131,7 @@ function wustgConceptPage() {
       ])}
     </section>
     ${toolCards(base)}
+    ${politicalBlock(base, "Das WUStG-Konzept")}
     ${sdgBlock(base, "Das WUStG-Konzept betrifft Produktwirkung, Konsum, Lieferketten, Datenqualität, Rechtsstaatlichkeit und institutionelles Vertrauen. Verbindliche Anwendung setzt Gesetzgebung und Prüfung voraus.")}
     ${bookBlock(base, bookAnchors.filter(([label]) => /Kapitel 31|Kapitel 32|Kapitel 33|Kapitel 35|Kapitel 37|Kapitel 38|Kapitel 48|Kapitel 49|Kapitel 50|Kapitel 51|Kapitel 52|Kapitel 53/.test(label)))}
     ${downloadBlock(base, [{ label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" }, { label: "WStG lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" }])}`,
@@ -1155,6 +1184,7 @@ function tShirtPage() {
       ])}
     </section>
     ${toolCards(base, contextualTools.filter((tool) => ["Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Digitale Produktpässe und Wirkungsdatenräume", "Produktwirkungsrechner"].includes(tool.title)))}
+    ${politicalBlock(base, "Das Textilbeispiel")}
     ${sdgBlock(base, "Textilien berühren Arbeit, Wasser, Gesundheit, Chemikalien, Klima, Konsum, Industrie, Ungleichheit, Datenqualität und Verbraucherinformation.")}
     ${bookBlock(base)}
     ${externalSourcesBlock(base)}
@@ -1262,6 +1292,7 @@ function dossierPage() {
       </article>
     </section>
     ${toolCards(base)}
+    ${politicalBlock(base, "Das Produkt-Dossier")}
     ${sdgBlock(base, "Das Dossier verknüpft Produktpreise, Produktdaten, Lieferketten, Verbraucherinformation und Governance mit den SDGs und SDG+ als Referenzrahmen.")}
     ${bookBlock(base)}
     ${externalSourcesBlock(base)}
@@ -1311,6 +1342,7 @@ function productSingleDossierPages() {
         </article>
       </section>
       ${toolCards(base, selectedTools.length ? selectedTools : contextualTools)}
+      ${politicalBlock(base, "Dieses Einzeldossier")}
       ${sdgBlock(base, "Das Einzeldossier ordnet Produktwirkung an SDGs und SDG+ an. Wirkung wird als tatsächliche Zustandsveränderung verstanden; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.")}
       ${bookBlock(base)}
       ${externalSourcesBlock(base)}
@@ -1423,6 +1455,7 @@ function calculatorPage() {
       </div>
     </section>
     ${toolCards(base, contextualTools.filter((tool) => ["Wirkungsumsatzsteuer", "Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Digitale Produktpässe und Wirkungsdatenräume"].includes(tool.title)))}
+    ${politicalBlock(base, "Der Produktwirkungsrechner")}
     ${sdgBlock(base, "Der Rechner zeigt modellhaft, wie Produktwirkung entlang von Mensch, Planet, Demokratie und Datenqualität bewertet werden könnte.")}
     ${bookBlock(base)}
     ${downloadBlock(base, [{ label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossier/" }, { label: "Toolkontext öffnen", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" }])}
@@ -1469,6 +1502,7 @@ function productArbeitsbibliothekPage() {
       ])}
     </section>
     ${toolCards(base)}
+    ${politicalBlock(base, "Die Arbeitsbibliothek Produkte & Konsum")}
     ${sdgBlock(base, "Die Arbeitsbibliothek ordnet Produktwirkung an SDGs und SDG+ an, ohne die SDGs als Menübaum zu behandeln. Entscheidend bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie.")}
     ${bookBlock(base)}
     ${downloadBlock(base, conceptDownloads)}`,
