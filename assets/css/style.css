@@ -2,6 +2,7 @@
   --navy: #0B1020;
   --ivory: #F6F1E8;
   --cream: #FFF9EE;
+  --paper: #FFFCF5;
   --green: #2F7D5C;
   --green-dark: #1F5F45;
   --gold: #9A6F12;
@@ -832,16 +833,16 @@ h4 {
 
 .sdg-ref-popover {
   position: absolute;
-  z-index: 30;
+  z-index: 900;
   left: 0;
   bottom: calc(100% + 0.5rem);
   width: min(22rem, 82vw);
   padding: 0.85rem 0.95rem;
   border: 1px solid rgba(11, 27, 54, 0.14);
   border-radius: 8px;
-  background: var(--paper);
+  background: #FFFCF5;
   color: var(--navy);
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 20px 55px rgba(11, 16, 32, 0.18);
   font-size: 0.9rem;
   line-height: 1.45;
   opacity: 0;
