@@ -1,0 +1,504 @@
+# Finanzmarktanforderungen an Unternehmen
+
+Detailkonzept zur Einordnung von Banken, Börse, ESG-Ratings, Versicherungen und Wirkungsökonomie
+
+v0.2
+
+Detailkonzept - öffentliche Arbeitsfassung
+
+
+## Executive Summary
+
+Unternehmen werden bereits heute nicht mehr nur durch Kund:innen, Gesetzgeber oder Wettbewerber gesteuert, sondern zunehmend durch den Finanzmarkt. Banken, Versicherungen, Ratinganbieter, Investoren und Börsen übersetzen Nachhaltigkeits- und Transformationsrisiken in Kreditbedingungen, Kapitalkosten, Versicherbarkeit, Bewertungsmultiplikatoren und Zugang zu Finanzierung. Die Wirkungsökonomie ordnet diese Entwicklung nicht als Nebenregulierung ein, sondern als frühe Form der Rückkopplung: Wirkung wird bereits risiko-, kapital- und versicherungsrelevant, aber noch nicht ausreichend systemisch, transparent und demokratisch steuerbar.
+
+
+## Kernaussage
+
+ESG wird am Finanzmarkt heute vor allem als Risiko-, Reporting- und Kapitalzugangslogik behandelt. Die Wirkungsökonomie übersetzt diese Vorstufe in eine echte Steuerungsarchitektur: WÖk-IDs, Scorecards, NWI, T-SROI, Wirkungssteuern, Wirkungsfonds und Wirkungskapital.
+
+
+## 1. Warum dieses Detailkonzept notwendig ist
+
+Das bisherige Portal Wirtschaft & Unternehmen behandelt Unternehmensführung, Mitarbeiterführung, Marketing, Risiko und Lieferketten. Was noch deutlicher sichtbar werden muss: Unternehmen stehen bereits heute unter finanzmarktlicher Wirkungserwartung. Selbst wenn sie nicht direkt CSRD-pflichtig sind, können sie über Banken, Versicherungen, Lieferketten, öffentliche Beschaffung, Großkund:innen und ESG-Ratings indirekt betroffen sein.
+
+Für große börsennotierte Unternehmen wirken ESG-Ratings, Investorenanforderungen und Kapitalmarktkommunikation. Für kleine und mittlere Unternehmen wirken Banken, Kreditprozesse, Lieferantenfragebögen, Versicherungen und Anforderungen großer Abnehmer. Dadurch wird Wirkung nicht nur moralisch, sondern finanzierungsrelevant.
+
+
+## 2. Finanzmarktliche Anforderungen, die heute schon wirken
+
+
+### 2.1 CSRD und ESRS als Berichtsbasis
+
+Die CSRD verpflichtet betroffene Unternehmen zur Nachhaltigkeitsberichterstattung nach ESRS. Diese Berichte werden nicht nur für Öffentlichkeit und Aufsicht erstellt, sondern dienen Kreditgebern, Investoren, Ratinganbietern, Kunden und Versicherern als Datenquelle. Die Wirkungsökonomie nutzt diese Entwicklung als Datenfundament, kritisiert aber, dass Berichte allein keine Rückkopplung erzeugen.
+
+
+### 2.2 ESG-Ratings an Börsen und Kapitalmärkten
+
+ESG-Ratings beeinflussen Aktienbewertung, Indexzugehörigkeit, Fondsallokation, Reputation und Investorenkommunikation. Die neue EU-Regulierung zu ESG-Ratingaktivitäten stärkt Transparenz, Integrität und Vergleichbarkeit, löst aber nicht das grundlegende Problem: ESG-Ratings bewerten häufig Risiken für Unternehmen und Investor:innen, nicht zwingend die reale Netto-Wirkung auf Mensch, Planet und Demokratie.
+
+
+### 2.3 Banken und Kreditvergabe
+
+Banken müssen ESG-Risiken zunehmend in Governance, Strategie, Risikomanagement, Kreditvergabe und Monitoring einbeziehen. Die EBA-Leitlinien zum Management von ESG-Risiken gelten ab dem 11. Januar 2026 für die meisten Institute und ab spätestens 11. Januar 2027 für kleine und nicht komplexe Institute. Schon die EBA-Leitlinien zur Kreditvergabe und Kreditüberwachung haben ESG-Faktoren in Kreditpolitik und Risikobewertung verankert. Damit werden Unternehmensdaten zu Emissionen, Energie, Lieferketten, Governance, Standort- und Transformationsrisiken kreditrelevant.
+
+
+### 2.4 Versicherungen und Versicherbarkeit
+
+Versicherer betrachten Nachhaltigkeits- und Klimarisiken in ORSA, Stress Tests, Underwriting und Portfolio-Risiko. Für Unternehmen bedeutet das: Standorte, Lieferketten, Gebäudebestand, Arbeitsschutz, Cyberrisiken, Extremwetter, Haftung und Reputationsrisiken können die Versicherbarkeit beeinflussen. Die Wirkungsökonomie interpretiert dies als zweite Rückkopplung neben Kapitalzugang: Negative Wirkungen werden nicht nur teurer finanziert, sondern können auch schwieriger versicherbar werden.
+
+
+### 2.5 Lieferketten, Großkund:innen und indirekte Pflichten
+
+Auch Unternehmen unterhalb formaler Berichtsschwellen werden durch größere Kund:innen erfasst. Lieferantenfragebögen, CO2-Daten, Herkunftsnachweise, Compliance-Abfragen, Menschenrechts- und Umweltinformationen sowie Produktdaten werden Voraussetzung für Aufträge. Damit entsteht eine indirekte Wirkungsdatenpflicht entlang der Wertschöpfungskette.
+
+
+## 3. Wirkungsoekonomische Einordnung
+
+
+### 3.1 ESG als Vorstufe, nicht als Zielsystem
+
+ESG hat Nachhaltigkeit sichtbar, messbar und berichtspflichtig gemacht. Aber ESG bleibt oft im Koordinatensystem des Kapitals: Es fragt, welche Nachhaltigkeitsrisiken den Unternehmenswert gefährden. Die Wirkungsökonomie fragt zusätzlich, welche Wirkung Unternehmen, Produkte, Kapital und Entscheidungen auf Mensch, Planet und Demokratie erzeugen. Damit wird ESG nicht verworfen, sondern in eine umfassendere Rückkopplungsarchitektur integriert.
+
+
+### 3.2 Von Risikodaten zu Wirkungsdaten
+
+Finanzmarktanforderungen erzeugen Daten über Risiken. Die Wirkungsökonomie macht daraus Wirkungsdaten: Daten, die nicht nur Verluste vermeiden, sondern Entscheidungen lenken. Aus Kreditprüfungen werden Wirkungsrisikoprofile, aus ESG-Ratings werden Scorecards, aus Versicherungsrisiken werden Resilienzindikatoren, aus CSRD-Berichten werden steuerungsfähige WÖk-IDs.
+
+
+### 3.3 Kapitalzugang als Wirkungsfolge
+
+Im wirkungsökonomischen Modell ist Kapital nicht mehr bloßer Preis für Risiko, sondern Folge von Wirkung. Unternehmen mit nachweisbar positiver Netto-Wirkung erhalten besseren Kapitalzugang, geringere Risikokosten, bessere Versicherbarkeit, höhere öffentliche Förderfähigkeit und robustere Kundenbeziehungen. Unternehmen mit negativen Wirkungsprofilen zahlen nicht automatisch Strafe, werden aber über Preis, Steuer, Versicherung und Kapitalzugang mit ihren Folgekosten konfrontiert.
+
+
+## 4. Auswirkungen auf Unternehmen jeder Größe
+
+
+## Unternehmensgruppe
+
+Finanzmarktdruck
+
+WÖk-Folge
+
+Börsennotierte Unternehmen
+
+ESG-Ratings, CSRD/ESRS, Investoren, Analysten, Indexanbieter, Aktivismus
+
+Wirkungscontrolling muss kapitalmarktfähig werden; bloße Nachhaltigkeitskommunikation reicht nicht.
+
+Große nicht börsennotierte Unternehmen
+
+Banken, Großkunden, CSRD-Scope, Lieferkettenpflichten, Versicherungen
+
+Wirkungsdaten werden Teil von Kreditfähigkeit, Beschaffung und Risikomanagement.
+
+KMU in Lieferketten
+
+Banken, Kundenfragebögen, Förderprogramme, lokale Banken, Versicherungen
+
+Proportionale, einfache WÖk-Scorecards müssen KMU schützen und gleichzeitig anschlussfähig machen.
+
+Startups und Innovation
+
+Investoren, Fördermittel, Impact-Fonds, Taxonomie, Skalierungsrisiko
+
+T-SROI kann Innovation früh bewertbar machen, bevor klassische Gewinnkennzahlen greifen.
+
+Handwerk und lokale Unternehmen
+
+Hausbank, Energie, Gebäude, Fuhrpark, Fachkräfte, Kommune
+
+Wirkungsdaten dürfen nicht zur Bürokratielast werden, sondern müssen Förder- und Finanzierungszugang erleichtern.
+
+
+## 5. Integration in wirkungsorientierte Unternehmensführung
+
+
+### 5.1 Governance und Vorstandsebene
+
+Die Finanzierungsperspektive gehört in die Unternehmensführung. Vorstand, Geschäftsführung, Aufsichtsrat und Beirat müssen verstehen, dass Wirkung nicht nur Kommunikations- oder Nachhaltigkeitsthema ist. Wirkung beeinflusst Kapitalzugang, Versicherbarkeit, Produktpreise, Beschaffung, Mitarbeiterbindung und regulatorische Zukunftsfähigkeit.
+
+
+### 5.2 Controlling und Finance
+
+Finance und Controlling werden zu Schnittstellen zwischen klassischer Finanzsteuerung und Wirkungsteuerung. Neben Umsatz, EBIT, Cashflow und Verschuldung treten NWI, T-SROI, WÖk-ID-Abdeckung, Datenqualität, Transformationsrisiko und Wirkungsresilienz. Daraus entsteht ein KII/KPI-Dashboard: Key Impact Indicators ergänzen Key Performance Indicators.
+
+
+### 5.3 Risikomanagement und Resilienz
+
+ESG-Risiken werden im Enterprise Risk Management nicht als Sonderrisiken behandelt, sondern als Treiber bestehender Risikoarten: Kreditrisiko, Marktpreisrisiko, operatives Risiko, Lieferkettenrisiko, Reputationsrisiko, Rechtsrisiko, Versicherungsrisiko und strategisches Risiko. Die Wirkungsökonomie ergänzt: Ein Risiko ist nicht nur ein Risiko für das Unternehmen, sondern auch ein Risiko, das vom Unternehmen ausgeht.
+
+
+### 5.4 Resiliente Wertschöpfungskette
+
+Lieferketten müssen nicht nur effizient, sondern resilient, menschenwürdig, ressourcenschonend und demokratieverträglich sein. Dabei wirken EBA, CSRD, CSDDD, OECD-Sorgfaltspflichten, WUStG-Scorecards und Produktpässe zusammen. In der WÖk wird die Lieferkette nicht als Kostenkette, sondern als Wirkungskette gelesen.
+
+
+### 5.5 Mitarbeiterführung und Automatisierung
+
+Wenn Menschen durch Roboter, KI oder automatisierte Systeme ersetzt werden, entsteht ein Finanzierungskonflikt: Wertschöpfung bleibt oder steigt, aber lohngebundene Sozialabgaben sinken. Das ist kein Unternehmensversagen, sondern ein Systemproblem. Unternehmen brauchen deshalb eine wirkungsökonomische Sozial- und Steuerlogik, die Wertschöpfung und Wirkung erfasst, unabhängig davon, ob sie durch menschliche Arbeit oder Maschinen entsteht.
+
+
+### 5.6 Marketing und das fünfte P: Planet
+
+Marketing entscheidet nicht nur über Absatz, sondern über Wahrnehmung, Status, Konsumentscheidungen und Nachfragearchitektur. Das klassische Marketingmix aus Product, Price, Place und Promotion wird um Planet ergänzt: Welche ökologische, soziale und demokratische Wirkung erzeugt ein Produkt? Welche Wirkung wird kommuniziert, welche verschleiert? Marketing wird damit vom Absatzmotor zur Wirkungsübersetzung.
+
+
+## 6. Steuerliche Verlinkungen
+
+Steuer / Instrument
+
+Anwendungsbereich
+
+Unternehmensrelevanz
+
+Wirkungsumsatzsteuer / WUStG
+
+Produkte, Leistungen, Lieferketten
+
+Produktpreise werden nach Wirkung differenziert; Scorecards werden finanzierungs- und steuerrelevant.
+
+Wirkungseinkommensteuer / WEstG
+
+Einkommen aus Tätigkeiten und Kapital
+
+Einkommen wird nach Entstehungskontext und Wirkung eingeordnet; relevant für Führung, Boni, Kapitalerträge.
+
+Wirkungskörperschaftsteuer / WKStG
+
+Unternehmensgewinne
+
+Gewinn bleibt möglich, wird aber nach Wirkungsqualität, Reinvestition und Folgekosten differenziert.
+
+Wirkungsgewerbesteuer / WGewStG
+
+kommunale Wirtschaftstätigkeit
+
+Kommunen erhalten Anreize für lokale positive Wirkung und können Standortpolitik wirkungsorientiert gestalten.
+
+Automatisierungs- und Maschinenwertschöpfungsbeitrag
+
+Maschinen-, KI- und Robotik-Wertschöpfung
+
+Entkopplung von Sozialabgaben von menschlicher Arbeitsleistung; Finanzierung trotz sinkender Lohnbasis.
+
+Wirkungsvermögensteuer / Wirkungserbschaftsteuer
+
+Vermögen, Erbschaften, Kapitalkonzentration
+
+Kapitalbindung wird nach Wirkung, Teilhabe, Investition und demokratischem Risiko eingeordnet.
+
+
+## 7. Politische Anschlussfähigkeit
+
+Dieses Konzept ist kein Parteiprogramm. Es beschreibt den Rahmen, innerhalb dessen unterschiedliche politische Richtungen eigene Wege wählen können. Konservative Perspektiven können Rechts- und Planungssicherheit betonen. Liberale Perspektiven können Innovationsfreiheit und Bürokratiearmut betonen. Sozialdemokratische Perspektiven können gerechte Finanzierung und Beschäftigungsschutz betonen. Grüne Perspektiven können Transformationsgeschwindigkeit und planetare Grenzen betonen. Linke Perspektiven können Machtkonzentration, Umverteilung und öffentliche Kontrolle betonen. Wirtschaftsnahe Perspektiven können Verlässlichkeit, Übergänge und internationale Wettbewerbsfähigkeit betonen.
+
+Ebene
+
+Ausgestaltung
+
+Aufgabe der Politik
+
+Mandat, Datenzugang, proportionalen KMU-Rahmen, Prüfstandards und Korrekturwege schaffen.
+
+Ausgestaltungsspielraum
+
+Tempo, Verbindlichkeit, Förderlogik, Steuersätze, Übergangsfristen, Sanktionen und Anreize bleiben politisch verhandelbar.
+
+Zielkonflikte
+
+Bürokratiearmut vs. Prüfbarkeit, Datenschutz vs. Datenzugang, Wettbewerbsfähigkeit vs. Transformationsdruck, KMU-Schutz vs. Lieferkettenwirkung.
+
+Schutz vor Technokratie
+
+Wirkungsdaten bereiten Entscheidungen vor, ersetzen aber keine demokratische Entscheidung, keinen Rechtsschutz und keine Grundrechte.
+
+
+## 8. Tool-Logik: Finanzmarkt-Wirkungscheck
+
+Das vorgeschlagene Tool bewertet nicht, ob ein Unternehmen gut oder schlecht ist. Es zeigt, welche Finanzmarktanforderungen heute bereits relevant sind und wie gut ein Unternehmen auf Kredit-, Versicherungs-, Rating-, Lieferketten- und Wirkungssteueranforderungen vorbereitet ist.
+
+Modul
+
+Eingaben
+
+Ausgabe
+
+Bankfähigkeit
+
+Branche, Energie, Emissionen, Transformationsplan, Datenqualität, Kreditbedarf
+
+ESG-Kreditrisiko-Profil und Maßnahmenliste
+
+Versicherbarkeit
+
+Standorte, Extremwetter, Arbeitsschutz, Cyber, Gebäude, Lieferketten
+
+Versicherungs- und Resilienzprofil
+
+Kapitalmarkt / Rating
+
+CSRD/ESRS-Daten, Governance, Strategie, Kontroversen, Lieferketten
+
+ESG-/WÖk-Datenreife
+
+WÖk-Integration
+
+WÖk-IDs, Scorecards, NWI, T-SROI, Steuerschnittstellen
+
+Wirkungsreifegrad und Umsetzungsfahrplan
+
+
+## 9. Website- und Portal-Einordnung
+
+Dieser Unterbereich gehört in Rang 4 Wirtschaft & Unternehmen als Detailkonzept und Dossier. Gleichzeitig muss er quer verlinkt werden zu Rang 2 Impact Controlling, Rang 3 Staat/Recht/Demokratie, Rang 6 Arbeit/Einkommen/Automatisierung, Rang 12 Finanzsystem & Kapital sowie zum neuen Querschnitt Finanzierbarkeit & Wirkungsfonds.
+
+
+## Quellen und Referenzrahmen
+
+EBA - Guidelines on management of ESG risks: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks
+
+EBA - Guidelines on loan origination and monitoring: https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/credit-risk/guidelines-loan-origination-and-monitoring
+
+European Commission - Corporate sustainability reporting (CSRD/ESRS): https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en
+
+EFRAG - Sustainability reporting / ESRS: https://www.efrag.org/en/sustainability-reporting/about-sustainability-reporting
+
+European Commission - EU Taxonomy: https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en
+
+ESMA - ESG rating providers: https://www.esma.europa.eu/esmas-activities/investors-and-issuers/esg-rating-providers
+
+Regulation (EU) 2024/3005 - ESG ratings: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202403005
+
+EIOPA - Managing sustainability risks: https://www.eiopa.europa.eu/managing-sustainability-risks_en
+
+European Commission - Corporate sustainability due diligence: https://commission.europa.eu/topics/business-and-industry/doing-business-eu/sustainability-due-diligence-responsible-business/corporate-sustainability-due-diligence_en
+
+OECD Due Diligence Guidance for Responsible Business Conduct: https://www.oecd.org/en/publications/2018/02/oecd-due-diligence-guidance-for-responsible-business-conduct_c669bd57.html
+
+Wirkungsökonomie - SDG-/SDG+-Referenzrahmen: https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/
+
+Wirkungsökonomie - Online-Buch: https://wirkungsoekonomie.de/werkstatt/online-buch/
+
+
+## 10. Akteursarchitektur des Finanzmarktdrucks
+
+Die finanzmarktliche Wirkungsanforderung entsteht nicht an einer einzigen Stelle. Sie entsteht aus einer Akteursarchitektur, in der verschiedene Institutionen unterschiedliche Daten und Signale verarbeiten. Für Unternehmen ist entscheidend, diese Architektur nicht als chaotische Zusatzanforderung zu lesen, sondern als neues, noch unvollständiges Wirkungsrad des Kapitalmarktes.
+
+Akteur
+
+Was wird heute verlangt?
+
+WÖk-Einordnung
+
+Unternehmensreaktion
+
+Banken
+
+ESG-Risikodaten, Transformationspläne, sektorale Exponierung, Sicherheiten, Energiedaten
+
+Kreditrisiko wird zum Vorläufer von Wirkungsrisiko
+
+Finance, Risiko und Nachhaltigkeit müssen gemeinsam kreditfähige Wirkungsdaten liefern.
+
+Versicherungen
+
+Risikodaten zu Klima, Standorten, Arbeitsschutz, Cyber, Lieferketten, Gebäuden
+
+Versicherbarkeit wird zum Indikator für Wirkungsresilienz
+
+Risiko- und Präventionsdaten müssen in Betriebsführung und Investitionen zurückfließen.
+
+Börse und Investoren
+
+ESG-Ratings, CSRD-Daten, Strategie, Governance, Kontroversen, Transition
+
+Kapitalbewertung erkennt Wirkung teilweise als Risiko, aber noch nicht als vollständige Netto-Wirkung
+
+Investor Relations muss von Storytelling zu Wirkungsbeleg wechseln.
+
+Ratinganbieter
+
+Methodologien, Scoremodelle, Benchmarks, Kontroversen
+
+Ratings sind Informationsfilter, aber keine vollständige Wirkungsbewertung
+
+Unternehmen müssen Differenz zwischen Ratingoptimierung und echter Wirkung verstehen.
+
+Großkund:innen
+
+Lieferantendaten, CO2, Menschenrechte, Produktsicherheit, Auditnachweise
+
+Kund:innen werden zu Transmissionspunkten der Wirkungsanforderung
+
+Lieferantenfähigkeit wird Teil des Geschäftsmodells.
+
+Öffentliche Beschaffung
+
+Nachweise, Nachhaltigkeitskriterien, Vergabekriterien, Sozialstandards
+
+Staatliche Nachfrage kann Wirkungsmarkt erzeugen
+
+Unternehmen sollten Wirkungsdaten vergabefähig aufbereiten.
+
+
+## 11. Anforderungen an Unternehmensfunktionen
+
+Geschäftsführung und Aufsichtsorgan
+
+Sie müssen entscheiden, ob Nachhaltigkeits- und Wirkungsdaten rein defensiv zur Erfüllung externer Anforderungen genutzt werden oder strategisch zur Steuerung von Geschäftsmodell, Produktportfolio, Investitionsplanung, Personal, Beschaffung und Kapitalzugang.
+
+CFO und Treasury
+
+Sie übersetzen Wirkung in Finanzierung. Dazu gehören Kreditfähigkeit, Covenant-Risiken, Taxonomie-Anteile, Versicherbarkeit, Zinsmargen, Capex-Planung und Wirkungsinvestitionen. In der WÖk wird der CFO nicht nur Kapitalverwalter, sondern Rückkopplungsarchitekt.
+
+Risikomanagement
+
+ESG-Risiken sind Treiber vorhandener Risikokategorien. Wirkungsökonomisch kommt eine zweite Perspektive hinzu: Nicht nur welches Risiko trifft das Unternehmen, sondern welches Risiko erzeugt das Unternehmen für Mensch, Planet und Demokratie?
+
+Einkauf und Lieferkette
+
+Der Einkauf entscheidet künftig nicht nur über Kosten, Qualität und Lieferfähigkeit, sondern über Wirkungstransparenz, Steuerklassen, Vorsteuerfähigkeit, Menschenrechte, Klimarisiko und Resilienz.
+
+Personal und Führung
+
+Wirkungsorientierte Mitarbeiterführung verbindet Produktivität mit Gesundheit, Selbstwirksamkeit, Qualifizierung, gerechter Teilhabe und Automatisierungsübergang. Sie verhindert, dass Digitalisierung soziale Kosten externalisiert.
+
+Marketing und Vertrieb
+
+Marketing darf Wirkung nicht nur behaupten. Es muss Produktwirkung verständlich übersetzen, ohne Greenwashing, Manipulation oder Statusdruck zu erzeugen. Das fünfte P - Planet - erweitert Marketing um Wirkungsverantwortung.
+
+
+## 12. Reifegradmodell für Unternehmen
+
+Reifegrad
+
+Beschreibung
+
+Typische Risiken
+
+Nächster Schritt
+
+0 - Blind
+
+Keine strukturierten Nachhaltigkeits- oder Wirkungsdaten
+
+Bankfragen werden ad hoc beantwortet, Lieferantenfähigkeit sinkt
+
+Dateninventur und Verantwortlichkeiten.
+
+1 - Reporting
+
+Daten werden für Berichte gesammelt, aber kaum gesteuert
+
+Bericht erfüllt Formalien, aber kein Steuerungsnutzen
+
+WÖk-ID-Mapping und Scorecard-Pilot.
+
+2 - Risiko
+
+ESG-Risiken werden im Risikomanagement erfasst
+
+Defensivlogik, Fokus auf Vermeidung
+
+NWI und Wirkungsrisiko verbinden.
+
+3 - Steuerung
+
+Wirkungsdaten fließen in Investitionen, Einkauf, Produkte, Personal
+
+Datenqualität und Silos bleiben Engpass
+
+T-SROI und KII/KPI-Dashboard.
+
+4 - Rückkopplung
+
+Kapital, Steuern, Produkte, Führung und Wirkung sind verbunden
+
+Governance muss Missbrauch vermeiden
+
+Externe Assurance und Wirkungsberichte.
+
+5 - Transformation
+
+Unternehmen erzeugt messbar positive Netto-Wirkung und systemische Transformation
+
+Skalierung, Zielkonflikte, Transparenz
+
+Wirkung als Geschäftsmodell und Marktstandard.
+
+
+## 13. KMU-Tauglichkeit und Bürokratieschutz
+
+Viele Anforderungen des Finanzmarkts treffen KMU indirekt. Eine wirkungsökonomische Umsetzung muss deshalb zwischen Datenfähigkeit und Überforderung unterscheiden. Der Zweck ist nicht, KMU mit Berichtspflichten zu belasten, sondern ihnen Kredit-, Kunden- und Förderfähigkeit zu sichern. Dazu braucht es standardisierte Minimal-Scorecards, Branchenarchetypen, digitale Vorlagen, gemeinsame Datenräume und öffentliche Hilfen.
+
+One-page-Wirkungsprofil für Kleinstunternehmen
+
+Branchenarchetypen statt komplexer Vollberichte
+
+Hausbank-kompatible Datenpakete
+
+Förderfähige Transformationsfahrpläne
+
+Öffentliche Beratungs- und Dateninfrastruktur
+
+Schutz vor doppelten Fragebögen durch interoperable WÖk-IDs
+
+
+## 14. Abgrenzung: Was die WÖk nicht ist
+
+kein ESG-Ratinganbieter
+
+keine weitere Berichtspflicht ohne Rückkopplung
+
+keine Planwirtschaft
+
+kein Social-Credit-System
+
+keine Bestrafung von Unternehmen als Personenverband
+
+kein Ersatz für demokratische Gesetzgebung
+
+kein Ersatz für Bankenaufsicht, Steuerrecht oder Versicherungsaufsicht
+
+
+## 15. Umsetzungspfad
+
+Phase
+
+Zeithorizont
+
+Inhalt
+
+Ergebnis
+
+Phase 1
+
+0-6 Monate
+
+Dateninventur, Finanzmarktanforderungen, Bank- und Versicherungsfragen sammeln
+
+Finanzmarkt-Wirkungsprofil v0.1
+
+Phase 2
+
+6-12 Monate
+
+WÖk-ID-Mapping, Scorecard-Pilot, Transformationsplan
+
+Wirkungsdatenpaket für Banken und Kunden
+
+Phase 3
+
+12-24 Monate
+
+NWI, T-SROI, Lieferketten-Scorecards, Produktdaten
+
+Wirkungscontrolling im Unternehmen
+
+Phase 4
+
+24+ Monate
+
+Steuer-, Fonds-, Kapital- und Versicherungsintegration
+
+Rückkopplungsfähiges Wirkungsunternehmen

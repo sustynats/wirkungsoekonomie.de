@@ -489,14 +489,15 @@ function officialReferencesBlock(item) {
 }
 
 function exportBlock() {
+  const available = sdgDepthDownloads.filter((download) => fs.existsSync(path.join(ROOT, download.file)));
   return `<section class="section" aria-labelledby="export-title">
       <div class="card">
         <p class="hero-kicker">Dossier & Export</p>
         ${sectionTitle("export-title", "Seite sichern oder weitergeben")}
-        <p class="card-text">Diese Referenzseite kann über den Browserdruck als PDF gespeichert werden. Ein kuratiertes Dossier wird später ergänzt.</p>
+        <p class="card-text">Diese Referenzseite kann über den Browserdruck als PDF gespeichert werden. Vertiefungskonzept und SDG+-Arbeitspapier bleiben ergänzende Export- und Archivfassungen.</p>
         <div class="portal-card-actions no-print">
           <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
-          <span class="prototype-badge">Dossier in Vorbereitung</span>
+          ${available.map((download) => `<a class="btn btn-secondary" href="${download.href}">${escapeHtml(download.title)}</a>`).join("")}
         </div>
       </div>
     </section>`;
@@ -537,7 +538,7 @@ function overviewPage() {
       </div>
     </section>
     <figure class="sdg-reference-visual" aria-labelledby="sdg-reference-visual-caption">
-      <img src="${href(base, "assets/img/generated/sdg-sdgplus-referenzrahmen.png")}" alt="Grafische Übersicht des SDG-/SDG+-Referenzrahmens mit den 17 SDGs und den sieben SDG+-Dimensionen Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung." loading="eager" width="1672" height="941">
+      <img src="${href(base, "assets/img/generated/sdg_sdgplus_referenzrahmen_hero_v0_1.png")}" alt="SDG-/SDG+-Referenzrahmen der Wirkungsökonomie mit 17 SDG-Kacheln und sieben SDG+-Dimensionen: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung." loading="eager" width="1672" height="941">
       <figcaption id="sdg-reference-visual-caption">Der SDG-/SDG+-Referenzrahmen verbindet die 17 Nachhaltigkeitsziele mit den demokratischen, medialen, rechtsstaatlichen und digitalen Voraussetzungen der Wirkungsökonomie.</figcaption>
     </figure>
     <section class="section" aria-labelledby="sdg-list">
