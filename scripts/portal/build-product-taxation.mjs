@@ -151,6 +151,139 @@ const conceptDownloads = [
   { label: "Working Paper PDF", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf" },
 ];
 
+const productSingleDossiers = [
+  {
+    slug: "wirkungsumsatzsteuer",
+    title: "Einzeldossier Wirkungsumsatzsteuer",
+    subtitle: "Steuerklassen, FinalScore, Tarifmatrix und Produktwirkungssteuer im Produktportal.",
+    focus: "Die Wirkungsumsatzsteuer koppelt Produktpreise im Pilotmodell an geprüfte Produktwirkung. Sie bewertet nicht Konsument:innen, sondern Produkte, Leistungen und Lieferketten entlang von Mensch, Planet, Demokratie und Datenqualität.",
+    sections: [
+      ["Ausgangspunkt", "Klassische Umsatzsteuer behandelt Produkte weitgehend gleich, obwohl ihre Wirkungen sehr unterschiedlich sein können."],
+      ["Modelllogik", "WÖk-IDs, Produktscorecards, FinalScore und Reverse Merit Order führen zu einer modellhaften Steuerklasse."],
+      ["Grenze", "Ohne Gesetzgebung, Rechtsschutz, Datenqualität und Wirkungsrat bleibt die WUStG-Logik ein Pilot- und Konzeptmodell."],
+    ],
+    related: ["Wirkungsumsatzsteuer", "Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Wirkungsrat"],
+    canonical: "werkzeuge/wirkungsumsatzsteuer/",
+  },
+  {
+    slug: "produktscorecards",
+    title: "Einzeldossier Produktscorecards",
+    subtitle: "Wie Produktdaten in Scores, FinalScore und Steuerklassen übersetzt werden.",
+    focus: "Produktscorecards sind das Bewertungsraster der Produktwirkung. Sie machen sichtbar, welche Zustände ein Produkt verändert und welche Datenqualität hinter der Bewertung steht.",
+    sections: [
+      ["Score-Felder", "Kernfelder wie Mensch, Planet, Demokratie und Datenqualität werden von -3 bis +3 bewertet."],
+      ["FinalScore", "Der FinalScore darf kritische negative Wirkungen nicht durch positive Einzelwerte schöngerechnet überdecken."],
+      ["Prüfbarkeit", "Jeder Score braucht Quelle, Einheit, Schwelle, Version und Prüfstatus."],
+    ],
+    related: ["Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Digitale Produktpässe und Wirkungsdatenräume"],
+    canonical: "werkzeuge/produktscorecards/",
+  },
+  {
+    slug: "woek-ids-im-produktbereich",
+    title: "Einzeldossier WÖk-IDs im Produktbereich",
+    subtitle: "Indikatorenarchitektur für Produktwirkung, Lieferketten und Datenqualität.",
+    focus: "WÖk-IDs verbinden SDGs, SDG+, NACE, ESRS, GRI, Benchmarks und Produktdaten zu einer nachvollziehbaren Wirkungslogik.",
+    sections: [
+      ["Eindeutigkeit", "Eine WÖk-ID verhindert, dass dieselbe Wirkung unter beliebigen Namen mehrfach gezählt wird."],
+      ["Produktbezug", "Für Produkte braucht jede WÖk-ID Kontext: Branche, Produktgruppe, Lieferkette, Einheit und Bewertungszeitraum."],
+      ["Datenstatus", "Datenlücken werden sichtbar und dürfen nicht als positive Wirkung behandelt werden."],
+    ],
+    related: ["WÖk-IDs", "Digitale Produktpässe und Wirkungsdatenräume", "Produktscorecards"],
+    canonical: "werkzeuge/woek-ids/",
+  },
+  {
+    slug: "reverse-merit-order",
+    title: "Einzeldossier Reverse Merit Order",
+    subtitle: "Warum das schwächste kritische Wirkungsfeld die Einstufung begrenzt.",
+    focus: "Die Reverse Merit Order schützt vor Schönrechnung. Schwere negative Wirkungen bleiben entscheidungsrelevant, auch wenn andere Felder positive Werte zeigen.",
+    sections: [
+      ["Nicht-Kompensation", "Rote Linien wie schwere Menschenrechtsverletzungen oder massive ökologische Schäden können nicht durch Marketing- oder Effizienzwerte ausgeglichen werden."],
+      ["Produktwirkung", "Bei Produkten verhindert die Regel, dass ein positiver Teilscore eine kritische Lieferkettenwirkung verdeckt."],
+      ["Governance", "Die Regel braucht transparente Schwellen, öffentliche Begründung und unabhängige Evaluation."],
+    ],
+    related: ["Reverse Merit Order", "Produktscorecards", "Wirkungsrat"],
+    canonical: "werkzeuge/reverse-merit-order/",
+  },
+  {
+    slug: "apfelbeispiel",
+    title: "Einzeldossier Apfelbeispiel",
+    subtitle: "Regionaler Apfel vs. Chile-Apfel als didaktische Produktscorecard.",
+    focus: "Das Apfelbeispiel zeigt, dass Produktwirkung kontextabhängig ist. Regional, bio oder importiert ist nicht automatisch positiv oder negativ; Wasser, Arbeit, Transport, Biodiversität, Lagerung und Datenqualität müssen zusammen betrachtet werden.",
+    sections: [
+      ["NACE", "Kernobstbau wird als wirtschaftliche Aktivität eingeordnet und mit passenden Wirkungsfeldern verbunden."],
+      ["Scorecard", "Klima, Wasser, Biodiversität, Arbeit, Gesundheit und Datenqualität werden modellhaft bewertet."],
+      ["Verbraucherinformation", "Die Bewertung soll verständlich machen, warum ein Produkt entlastet oder belastet wird."],
+    ],
+    related: ["Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Wirkungsumsatzsteuer"],
+    canonical: "wirkungsfelder/produkte-konsum/apfelbeispiel/",
+  },
+  {
+    slug: "lieferketten",
+    title: "Einzeldossier Lieferketten",
+    subtitle: "Vorleistungen, Datenräume, Vorsteuerlogik und rote Linien in globalen Lieferketten.",
+    focus: "Viele Produktwirkungen entstehen vor dem Endprodukt. Lieferketten dürfen deshalb nicht als Schlupfloch für negative Wirkung dienen.",
+    sections: [
+      ["Vorleistungen", "Positive und negative Wirkung kann in Vorprodukten, Rohstoffen, Transporten, Energie und Arbeit entstehen."],
+      ["Vorsteuerlogik", "Positive Vorleistungen können begünstigt werden; negative Wirkungen bleiben sichtbar und können Abschläge auslösen."],
+      ["Datenräume", "Digitale Produktpässe und Wirkungsdatenräume schaffen die prüfbare Infrastruktur."],
+    ],
+    related: ["Digitale Produktpässe und Wirkungsdatenräume", "WÖk-IDs", "Reverse Merit Order", "Wirkungsrat"],
+    canonical: "wirkungsfelder/produkte-konsum/lieferketten/",
+  },
+  {
+    slug: "basf-polyamid",
+    title: "Einzeldossier BASF Polyamid",
+    subtitle: "Von Konzern- und ESRS-Daten zu Produktgruppen und Produktscorecards.",
+    focus: "Das Konzernbeispiel zeigt den methodischen Weg von Unternehmensdaten zu Produktgruppen. Es behauptet keine abschließende Echtbewertung eines Unternehmens.",
+    sections: [
+      ["Konzernmittelwert", "Unternehmensberichte können Wirkung verdecken, wenn sehr unterschiedliche Produktgruppen zusammenfallen."],
+      ["Produktgruppe", "NACE, ESRS-Daten, EPDs, Benchmarks und Produktpässe helfen bei der Übersetzung auf Produktgruppen."],
+      ["Impact Controlling", "Die Methode verbindet Produktbewertung mit Unternehmenssteuerung und Transformationsrisiko."],
+    ],
+    related: ["Produktscorecards", "Impact Controlling", "WÖk-IDs", "Digitale Produktpässe und Wirkungsdatenräume"],
+    canonical: "wirkungsfelder/produkte-konsum/basf-polyamid/",
+  },
+  {
+    slug: "verbraucherinformation",
+    title: "Einzeldossier Verbraucherinformation",
+    subtitle: "Wirkungspunkte, Produktlabel, Steuerklassen und Regaltransparenz.",
+    focus: "Verbraucherinformation macht Produktwirkung sichtbar, ohne Menschen zu bewerten oder Konsumverhalten zu überwachen.",
+    sections: [
+      ["Produktlabel", "Informationen müssen verständlich, knapp und prüfbar sein."],
+      ["Datenschutz", "Bewertet wird das Produkt, nicht die Person an der Kasse."],
+      ["Vertrauen", "Gute Verbraucherinformation braucht Quellenklarheit, Prüfstatus und institutionelle Kontrolle."],
+    ],
+    related: ["Wirkungsumsatzsteuer", "Produktscorecards", "WÖk-IDs", "Wirkungsrat"],
+    canonical: "wirkungsfelder/produkte-konsum/verbraucherinformation/",
+  },
+  {
+    slug: "unternehmen-produktentwicklung",
+    title: "Einzeldossier Unternehmen und Produktentwicklung",
+    subtitle: "Produktwirkung in Entwicklung, Einkauf, Controlling, Reporting und Lieferketten.",
+    focus: "Für Unternehmen wird Produktwirkung steuerungsrelevant: Materialwahl, Lieferanten, Datenqualität, Kreislauf, Risiko und Strategie werden miteinander verbunden.",
+    sections: [
+      ["Produktentwicklung", "Designentscheidungen wirken auf Reparierbarkeit, Energie, Material, Gesundheit und Kreislauf."],
+      ["Einkauf", "Lieferantenbewertung wird Wirkungs- und Datenqualitätsfrage."],
+      ["Reporting", "CSRD- und ESRS-Daten werden produktnäher und entscheidungsrelevant."],
+    ],
+    related: ["Impact Controlling", "Produktscorecards", "WÖk-IDs", "Digitale Produktpässe und Wirkungsdatenräume"],
+    canonical: "wirkungsfelder/produkte-konsum/unternehmen/",
+  },
+  {
+    slug: "politische-rahmenbedingungen",
+    title: "Einzeldossier politische Rahmenbedingungen",
+    subtitle: "WStG, WUStG, Wirkungsrat, Datenschutz, Pilotierung und soziale Abfederung.",
+    focus: "Produktbesteuerung durch Wirkung braucht einen demokratisch kontrollierten Rechts- und Institutionenrahmen.",
+    sections: [
+      ["Recht", "WStG und WUStG müssen Begriffe, Verfahren, Rechtsschutz und Missbrauchsschutz klären."],
+      ["Institutionen", "Der Wirkungsrat sichert Indikatoren, Benchmarks, Evaluation und Korrekturpfade."],
+      ["Übergang", "Pilotierung, KMU-Schutz, Kaufkraftschutz und europarechtliche Prüfung sind Teil der Einführung."],
+    ],
+    related: ["Wirkungssteuergesetz", "Wirkungsrat", "Wirkungsumsatzsteuer", "WÖk-IDs"],
+    canonical: "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/",
+  },
+];
+
 const lawRefs = {
   wstg1: {
     label: "§ 1 WStG",
@@ -1059,6 +1192,7 @@ function dossierPage() {
           <li><a href="#ei-bonus-malus">Ei-Bonus-/Malusbeispiel</a></li>
           <li><a href="#datenquellen">Datenquellen</a></li>
           <li><a href="#tool-spezifikation">Tool-Spezifikation</a></li>
+          <li><a href="#einzeldossiers">Einzeldossiers</a></li>
         </ol>
       </nav>
     </section>
@@ -1117,6 +1251,14 @@ function dossierPage() {
         <p>Für eine belastbare Anwendung kommen offizielle und prüfbare Quellen in Betracht: SDGs, UN-Indikatoren, CSRD, ESRS, GRI, NACE, EPDs, digitale Produktpässe, Lieferantendaten und unabhängige Prüfung.</p>
         ${sectionTitle("tool-spezifikation", "Tool-Spezifikation")}
         <p>Der Produktwirkungsrechner bildet die Logik minimal ab: Produktbeispiel wählen, Nettopreis setzen, Kernfeld-Scores prüfen, FinalScore als Minimum bilden, Modell-Steuersatz ableiten, Bruttopreis und Erklärung anzeigen.</p>
+        ${sectionTitle("einzeldossiers", "Einzeldossiers")}
+        <p>Die Einzeldossiers vertiefen die Bausteine des Produktportals. Sie sind online lesbar und zitierfähig; Downloads bleiben ergänzende Export- und Archivfassungen.</p>
+        ${cardGrid(base, productSingleDossiers.map((item) => ({
+          title: item.title,
+          text: item.subtitle,
+          href: `wirkungsfelder/produkte-konsum/dossiers/${item.slug}/`,
+          label: "Einzeldossier lesen",
+        })))}
       </article>
     </section>
     ${toolCards(base)}
@@ -1125,6 +1267,59 @@ function dossierPage() {
     ${externalSourcesBlock(base)}
     ${downloadBlock(base, conceptDownloads)}`,
   });
+}
+
+function productSingleDossierPages() {
+  for (const item of productSingleDossiers) {
+    const selectedTools = contextualTools.filter((tool) => item.related.includes(tool.title));
+    page({
+      rel: `wirkungsfelder/produkte-konsum/dossiers/${item.slug}/index.html`,
+      title: `${item.title} | Produkte & Konsum`,
+      description: `${item.subtitle} Online lesbares Einzeldossier mit Kontext-Werkzeugen, SDG-/SDG+-Bezug und Buchankern.`,
+      searchSection: "Wirkungsfelder",
+      searchType: "Dossier",
+      body: (base, route) => `${introHero({
+        base,
+        kicker: "Einzeldossier · Produkte & Konsum",
+        h1: item.title,
+        subtitle: item.subtitle,
+        text: item.focus,
+        actions: `<a class="btn btn-primary" href="${href(base, item.canonical)}">Kanonische Seite öffnen</a>`,
+      })}
+      <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+      <section class="section narrow">${productStatus("Einzeldossier / Webfassung v0.2")}</section>
+      <section class="section narrow">
+        <nav class="toc-card" aria-label="Inhaltsverzeichnis">
+          <h2>Inhaltsverzeichnis</h2>
+          <ol>
+            <li><a href="#kurzfassung">Kurzfassung</a></li>
+            ${item.sections.map(([title]) => `<li><a href="#${slugify(title)}">${escapeHtml(title)}</a></li>`).join("")}
+            <li><a href="#quellen-und-daten">Quellen und Datenquellen</a></li>
+          </ol>
+        </nav>
+      </section>
+      <section class="section article-section">
+        <article class="article-body fulltext-reader">
+          ${sectionTitle("kurzfassung", "Kurzfassung")}
+          <p id="kurzfassung-text">${escapeHtml(item.focus)} ${citeAnchor("kurzfassung-text", "Zitierlink zur Kurzfassung")}</p>
+          ${item.sections.map(([title, text]) => {
+            const id = slugify(title);
+            return `${sectionTitle(id, title)}<p id="${id}-text">${escapeHtml(text)} ${citeAnchor(`${id}-text`, `Zitierlink zu ${title}`)}</p>`;
+          }).join("")}
+          ${sectionTitle("quellen-und-daten", "Quellen und Datenquellen")}
+          <p>Dieses Einzeldossier verweist auf die vorhandenen Online-Volltexte des Produktportals, die Technischen Leitlinien WUStG, WStG, SDG-/SDG+-Referenzrahmen, CSRD/ESRS, GRI, NACE und die WÖk-ID-Logik. Nicht vorhandene Word-Dateien werden nicht verlinkt.</p>
+        </article>
+      </section>
+      ${toolCards(base, selectedTools.length ? selectedTools : contextualTools)}
+      ${sdgBlock(base, "Das Einzeldossier ordnet Produktwirkung an SDGs und SDG+ an. Wirkung wird als tatsächliche Zustandsveränderung verstanden; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.")}
+      ${bookBlock(base)}
+      ${externalSourcesBlock(base)}
+      ${downloadBlock(base, [
+        { label: "Dossier Produkte & Konsum", href: "wirkungsfelder/produkte-konsum/dossier/" },
+        { label: "Kanonische Seite", href: item.canonical },
+      ])}`,
+    });
+  }
 }
 
 function workshopAliasPages() {
@@ -1294,6 +1489,7 @@ function updateSitemap() {
     "wirkungsfelder/produkte-konsum/verbraucherinformation/",
     "wirkungsfelder/produkte-konsum/unternehmen/",
     "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/",
+    ...productSingleDossiers.map((item) => `wirkungsfelder/produkte-konsum/dossiers/${item.slug}/`),
     "werkzeuge/wirkungsumsatzsteuer/",
     "werkzeuge/produktscorecards/",
     "werkzeuge/woek-ids/",
@@ -1322,6 +1518,7 @@ function updateSitemap() {
 function build() {
   productPortal();
   dossierPage();
+  productSingleDossierPages();
   tShirtPage();
   fulltextPage({
     rel: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/index.html",
