@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const downloadsDir = "/Users/hagen/Downloads";
+const go6Dir = "/private/tmp/woek-go6-import/woek_go6_paket4_wirtschaft_unternehmen_v1_0";
 
 const docs = [
   {
@@ -40,6 +41,75 @@ const docs = [
     description:
       "Echtes Detailkonzept zu Risikomanagement, Resilienz, Finanzmarktanforderungen, EBA/ESG-Anschluss und Wirkungsrisiko.",
     bookFocus: ["kapitel-047-unternehmensrisiko-und-transformation", "kapitel-044-wirkungscontrolling-im-unternehmen"],
+  },
+  {
+    number: "09",
+    slug: "resiliente-wertschoepfungsketten-einkauf",
+    title: "Resiliente Wertschöpfungsketten und Einkauf nach Wirkung",
+    subtitle: "Lieferketten, Einkauf, Supplier Scorecards und Resilienz als Unternehmenswirkung steuern",
+    source: "website/online_volltext_09_resiliente-wertschoepfungsketten-und-einkauf-nach-wirkung_detailkonzept_v1_0.md",
+    docx: "09_woek_wirtschaft_unternehmen_resiliente_wertschoepfungsketten_einkauf_detailkonzept_v1_0.docx",
+    pdf: "09_woek_wirtschaft_unternehmen_resiliente_wertschoepfungsketten_einkauf_detailkonzept_v1_0.pdf",
+    baseDir: go6Dir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
+    description:
+      "Echtes Detailkonzept zu resilienten Wertschöpfungsketten, Lieferantenbewertung und wirkungsorientiertem Einkauf.",
+    bookFocus: ["kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung", "kapitel-047-unternehmensrisiko-und-transformation"],
+    tools: [
+      ["Lieferketten-Wirkungscheck", "", "Demo in Vorbereitung", "Lieferkettenwirkung, Risiken, Datenqualität und Lieferantenentwicklung strukturiert prüfen."],
+      ["Supplier Scorecard Generator", "", "Demo in Vorbereitung", "Lieferanten entlang sozialer, ökologischer, demokratischer und Resilienz-Kriterien bewerten."],
+      ["Sourcing-Szenario-Rechner", "", "Demo in Vorbereitung", "Beschaffungsoptionen nach Kosten, Wirkung, Risiko und Zukunftsfähigkeit vergleichen."],
+      ["Vorsteuer-/WUStG-Lieferkettenmodul", "/werkzeuge/wirkungsumsatzsteuer/", "Werkzeugseite vorhanden", "Lieferkettenwirkung mit Produktwirkung und Wirkungsumsatzsteuer verbinden."],
+      ["Critical Supplier Radar", "", "Demo in Vorbereitung", "Abhängigkeiten, Engpässe und kritische Lieferanten früh sichtbar machen."],
+      ["WÖk-IDs", "/werkzeuge/woek-ids/", "Werkzeugseite vorhanden", "Indikatoren, Quellen und Datenlogik der Lieferkettenwirkung strukturieren."],
+    ],
+  },
+  {
+    number: "10",
+    slug: "wirkungscontrolling",
+    title: "Wirkungscontrolling im Unternehmen",
+    subtitle: "KII, NWI, T-SROI, Scorecards und Assurance als Steuerungskreislauf im Unternehmen",
+    source: "website/online_volltext_10_wirkungscontrolling-im-unternehmen_detailkonzept_v1_0.md",
+    docx: "10_woek_wirtschaft_unternehmen_wirkungscontrolling_detailkonzept_v1_0.docx",
+    pdf: "10_woek_wirtschaft_unternehmen_wirkungscontrolling_detailkonzept_v1_0.pdf",
+    baseDir: go6Dir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
+    description:
+      "Echtes Detailkonzept zu Wirkungscontrolling, KII statt KPI, NWI, T-SROI, Scorecards, CapEx-Prüfung und Assurance.",
+    bookFocus: ["kapitel-044-wirkungscontrolling-im-unternehmen", "kapitel-031-woek-ids-und-indikatorenarchitektur"],
+    tools: [
+      ["KII-Dashboard", "", "Demo in Vorbereitung", "Kernwirkungsindikatoren statt nur klassische KPI im Management sichtbar machen."],
+      ["NWI-Rechner", "/werkzeuge/netto-wirkungs-index/", "Werkzeugseite vorhanden", "Positive, negative und neutrale Wirkung zu einer steuerbaren Netto-Wirkung verdichten."],
+      ["T-SROI-Rechner", "/werkzeuge/impact-controlling/t-sroi/", "Methodenseite vorhanden", "Transformationsnutzen, Kosten, Risiken und systemische Wirkung vergleichen."],
+      ["CapEx-Wirkungscheck", "", "Demo in Vorbereitung", "Investitionen nach Zukunftsfähigkeit, Wirkungsrisiko und Resilienz bewerten."],
+      ["Scorecard-Generator", "/werkzeuge/scorecards/", "Werkzeugseite vorhanden", "Bewertungsraster für Unternehmens- und Produktwirkung aufbauen."],
+      ["Assurance-Check", "/werkzeuge/datenqualitaet-assurance/", "Werkzeugseite vorhanden", "Datenqualität, Prüfpfade und Vertrauensstufen sichtbar machen."],
+    ],
+  },
+  {
+    number: "11",
+    slug: "produktentwicklung-produktscorecards-dpp",
+    title: "Produktentwicklung, Produktscorecards und digitale Produktpässe",
+    subtitle: "Produktwirkung in Entwicklung, Scorecards, DPP und Verbraucherinformation rückkoppeln",
+    source: "website/online_volltext_11_produktentwicklung-produktscorecards-und-digitale-produktpaesse_detailkonzept_v1_0.md",
+    docx: "11_woek_wirtschaft_unternehmen_produktentwicklung_produktscorecards_dpp_detailkonzept_v1_0.docx",
+    pdf: "11_woek_wirtschaft_unternehmen_produktentwicklung_produktscorecards_dpp_detailkonzept_v1_0.pdf",
+    baseDir: go6Dir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
+    description:
+      "Echtes Detailkonzept zu Produktentwicklung, Produktscorecards, digitalen Produktpässen, DPP-Reifegrad und Design for Impact.",
+    bookFocus: ["kapitel-048-produkte-als-wirkungstraeger", "kapitel-050-produktscorecards"],
+    tools: [
+      ["Produktscorecard-Generator", "/werkzeuge/produktscorecards/", "Werkzeugseite vorhanden", "Produktwirkung nach Material, Nutzung, Reparatur, Kreislauf, Lieferkette und SDG-Bezug strukturieren."],
+      ["DPP-Reifegradcheck", "/werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/", "Werkzeugseite vorhanden", "Digitale Produktpässe und Wirkungsdatenräume schrittweise anschlussfähig machen."],
+      ["Produktwirkungsrechner", "/erleben/produktwirkungsrechner/", "Demo vorhanden", "Produktbeispiele, FinalScore und Wirkungsumsatzsteuer modellhaft ausprobieren."],
+      ["Design-for-Impact-Check", "", "Demo in Vorbereitung", "Produktentscheidungen früh an positiver Netto-Wirkung ausrichten."],
+      ["Reverse-Merit-Order-Modul", "/werkzeuge/reverse-merit-order/", "Werkzeugseite vorhanden", "Schlechtere Wirkung systematisch nach hinten sortieren und bessere Wirkung bevorzugen."],
+      ["Kreislauf-/Reparatur-Score", "", "Demo in Vorbereitung", "Reparierbarkeit, Langlebigkeit und Kreislauffähigkeit in Produktentscheidungen sichtbar machen."],
+    ],
   },
 ];
 
@@ -120,7 +190,7 @@ function slugify(value) {
 }
 
 function sanitizeMarkdown(markdown) {
-  return markdown
+  let cleaned = markdown
     .replace(
       /Enthält keine internen CodeX-\/Repository-Anweisungen/g,
       "Öffentliche Webfassung ohne technische Arbeitsnotizen"
@@ -129,6 +199,10 @@ function sanitizeMarkdown(markdown) {
     .replace(/CodeX/g, "redaktionelle Arbeitsnotizen")
     .replace(/Codex/g, "redaktionelle Arbeitsnotizen")
     .replace(/Repository/g, "Projektarchiv");
+  while (/\|\s*\n\s*\n\s*\|/.test(cleaned)) {
+    cleaned = cleaned.replace(/\|\s*\n\s*\n\s*\|/g, "|\n|");
+  }
+  return cleaned;
 }
 
 function inlineMarkdown(text) {
@@ -264,8 +338,8 @@ function sitePathExists(sitePath) {
   return fs.existsSync(local);
 }
 
-function renderToolCards() {
-  return toolCards
+function renderToolCards(docTools = toolCards) {
+  return docTools
     .map(([title, href, status, text]) => {
       const activeHref = sitePathExists(href) ? href : "";
       return `<article class="card">
@@ -334,6 +408,37 @@ function renderDownloads(doc) {
   </div>`;
 }
 
+function parseCsvLine(line) {
+  const cells = [];
+  let cell = "";
+  let inQuotes = false;
+  for (let index = 0; index < line.length; index += 1) {
+    const char = line[index];
+    if (char === '"' && line[index + 1] === '"') {
+      cell += '"';
+      index += 1;
+    } else if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === "," && !inQuotes) {
+      cells.push(cell);
+      cell = "";
+    } else {
+      cell += char;
+    }
+  }
+  cells.push(cell);
+  return cells;
+}
+
+function writeCsvLine(cells) {
+  return cells
+    .map((cell) => {
+      const value = String(cell);
+      return /[",\n\r]/.test(value) ? `"${value.replaceAll('"', '""')}"` : value;
+    })
+    .join(",");
+}
+
 function renderPage(doc, body, toc) {
   return `<!doctype html>
 <html lang="de">
@@ -355,7 +460,7 @@ function renderPage(doc, body, toc) {
     <meta property="og:url" content="https://wirkungsoekonomie.de/wirkungsfelder/wirtschaft-unternehmen/${doc.slug}/">
     <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260524-go5-wirtschaft-detailkonzepte">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260524-go6-wirtschaft-detailkonzepte">
   </head>
   <body>
     <header class="site-header">
@@ -420,7 +525,7 @@ function renderPage(doc, body, toc) {
           <p class="hero-kicker">Kontext</p>
           <h2 id="tools">Werkzeuge in diesem Bereich <a class="cite-anchor no-print" href="#tools" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
         </div>
-        <div class="card-grid three">${renderToolCards()}</div>
+        <div class="card-grid three">${renderToolCards(doc.tools || toolCards)}</div>
       </section>
       <section class="section" aria-labelledby="sdg-bezug">
         <div class="portal-reference-block">
@@ -493,7 +598,7 @@ function renderPage(doc, body, toc) {
         </nav>
       </div>
     </footer>
-    <script src="/assets/js/main.js?v=20260524-go5-wirtschaft-detailkonzepte" defer></script>
+    <script src="/assets/js/main.js?v=20260524-go6-wirtschaft-detailkonzepte" defer></script>
   </body>
 </html>`;
 }
@@ -502,12 +607,32 @@ fs.mkdirSync(path.join(root, "assets/downloads"), { recursive: true });
 fs.mkdirSync(path.join(root, "data/wirtschaft-unternehmen"), { recursive: true });
 fs.copyFileSync(path.join(downloadsDir, "go5_detailkonzepte_index_v1_0.json"), path.join(root, "data/wirtschaft-unternehmen/go5_detailkonzepte_index_v1_0.json"));
 fs.copyFileSync(path.join(downloadsDir, "go5_detailkonzepte_index_v1_0.csv"), path.join(root, "data/wirtschaft-unternehmen/go5_detailkonzepte_index_v1_0.csv"));
+if (fs.existsSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.json"))) {
+  const indexJson = JSON.parse(fs.readFileSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.json"), "utf8"));
+  const publicIndexJson = indexJson.map(({ codex_url_hint: _internal, ...entry }) => entry);
+  fs.writeFileSync(
+    path.join(root, "data/wirtschaft-unternehmen/go6_detailkonzepte_index_v1_0.json"),
+    `${JSON.stringify(publicIndexJson, null, 2)}\n`
+  );
+
+  const csv = fs.readFileSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.csv"), "utf8").trimEnd();
+  const [headerLine, ...rows] = csv.split(/\r?\n/);
+  const headers = parseCsvLine(headerLine);
+  const internalIndex = headers.indexOf("codex_url_hint");
+  const publicHeaders = headers.filter((_header, index) => index !== internalIndex);
+  const publicRows = rows.map((row) => writeCsvLine(parseCsvLine(row).filter((_cell, index) => index !== internalIndex)));
+  fs.writeFileSync(
+    path.join(root, "data/wirtschaft-unternehmen/go6_detailkonzepte_index_v1_0.csv"),
+    `${[writeCsvLine(publicHeaders), ...publicRows].join("\n")}\n`
+  );
+}
 
 for (const doc of docs) {
-  fs.copyFileSync(path.join(downloadsDir, doc.docx), path.join(root, "assets/downloads", doc.docx));
-  fs.copyFileSync(path.join(downloadsDir, doc.pdf), path.join(root, "assets/downloads", doc.pdf));
+  const sourceBase = doc.baseDir || downloadsDir;
+  fs.copyFileSync(path.join(sourceBase, doc.docxSubdir || "", doc.docx), path.join(root, "assets/downloads", doc.docx));
+  fs.copyFileSync(path.join(sourceBase, doc.pdfSubdir || "", doc.pdf), path.join(root, "assets/downloads", doc.pdf));
 
-  const markdown = sanitizeMarkdown(fs.readFileSync(path.join(downloadsDir, doc.source), "utf8"));
+  const markdown = sanitizeMarkdown(fs.readFileSync(path.join(sourceBase, doc.source), "utf8"));
   const { headings, html } = renderMarkdown(markdown);
   const page = renderPage(doc, html, renderToc(headings));
   const targetDir = path.join(root, "wirkungsfelder/wirtschaft-unternehmen", doc.slug);

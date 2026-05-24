@@ -1168,9 +1168,12 @@ function initBestandsschutzStatus() {
         "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/",
         "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
         "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+        "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/",
+        "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/",
+        "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/",
       ],
       title: "Echtes Detailkonzept veröffentlicht",
-      text: "Diese Seite ist kein Kurzprofil mehr, sondern eine veröffentlichte Go-5-Vertiefung mit Online-Volltext, Downloadbereich, Werkzeugkarten, SDG-/SDG+-Bezug und Buchankern.",
+      text: "Diese Seite ist kein Kurzprofil mehr, sondern eine veröffentlichte Go-Vertiefung mit Online-Volltext, Downloadbereich, Werkzeugkarten, SDG-/SDG+-Bezug und Buchankern.",
       badges: ["Detailkonzept veröffentlicht", "Dossier in Arbeit", "Tool/Demo in Vorbereitung"],
     },
     {
@@ -1303,13 +1306,35 @@ function initGo5WirtschaftDetailkonzepte() {
       "ESG-Risiken, EBA-Anforderungen, Versicherbarkeit und Finanzmarktlogik als Wirkungsrisiko-Steuerung.",
       "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
     ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Resiliente Wertschöpfungsketten und Einkauf",
+      "Lieferketten, Einkauf, Supplier Scorecards, Sourcing-Szenarien und Resilienz als Unternehmenswirkung steuern.",
+      "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/",
+    ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Wirkungscontrolling im Unternehmen",
+      "KII, NWI, T-SROI, Scorecards, CapEx-Prüfung und Assurance als Steuerungskreislauf im Unternehmen.",
+      "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/",
+    ],
+    [
+      "Detailkonzept veröffentlicht",
+      "Produktentwicklung, Produktscorecards und DPP",
+      "Produktwirkung in Entwicklung, Scorecards, digitalen Produktpässen und Verbraucherinformation rückkoppeln.",
+      "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/",
+    ],
   ];
 
   const toolCards = [
     ["Werkzeugseite vorhanden", "Unternehmens-Wirkungscheck", "Standortbestimmung für Zweck, Geschäftsmodell, Governance, Risiko und Wirkung.", "/werkzeuge/unternehmens-wirkungscheck/"],
     ["Methodenseite vorhanden", "T-SROI-Rechner", "Transformationswirkung im Verhältnis zum Ressourceneinsatz bewerten.", "/werkzeuge/impact-controlling/t-sroi/"],
     ["Werkzeugseite vorhanden", "Produktpass-/Produktscorecard-Demo", "Produktwirkung, Datenräume und Verbraucherinformation verbinden.", "/werkzeuge/produktscorecards/"],
+    ["Werkzeugseite vorhanden", "WÖk-IDs", "Indikatoren, Quellen und Datenlogik für Unternehmenswirkung strukturieren.", "/werkzeuge/woek-ids/"],
+    ["Werkzeugseite vorhanden", "Reverse Merit Order", "Schlechtere Wirkung systematisch zurücksortieren und bessere Wirkung bevorzugen.", "/werkzeuge/reverse-merit-order/"],
     ["Demo in Vorbereitung", "KII-Dashboard", "Kernwirkungsindikatoren statt nur klassische KPI im Management sichtbar machen.", ""],
+    ["Demo in Vorbereitung", "Lieferketten-Wirkungscheck", "Lieferkettenwirkung, Risiken, Datenqualität und Lieferantenentwicklung prüfen.", ""],
+    ["Demo vorhanden", "Produktwirkungsrechner", "Produktbeispiele, FinalScore und Wirkungsumsatzsteuer modellhaft ausprobieren.", "/erleben/produktwirkungsrechner/"],
     ["Demo in Vorbereitung", "Wirkungsrisiko-Check", "Wirkungsrisiken in Enterprise Risk Management und Strategie integrieren.", ""],
     ["Demo in Vorbereitung", "EBA-Kreditdaten-Check", "Bankfähige ESG- und Transformationsdaten für Kreditgespräche vorbereiten.", ""],
   ];
@@ -1322,7 +1347,7 @@ function initGo5WirtschaftDetailkonzepte() {
     <div class="section-header">
       <p class="hero-kicker">Vertiefung</p>
       <h2 id="echte-detailkonzepte-title">Echte Detailkonzepte online lesen <a class="cite-anchor no-print" href="#echte-detailkonzepte" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-      <p>Der Portaltext bleibt Einstieg und Themenlandkarte. Die folgenden Go-5-Seiten sind die fachlichen Detailkonzepte mit Online-Volltext und DOCX-/PDF-Download.</p>
+      <p>Der Portaltext bleibt Einstieg und Themenlandkarte. Die folgenden Seiten sind fachliche Detailkonzepte mit Online-Volltext und DOCX-/PDF-Download.</p>
     </div>
     <div class="card-grid three">
       ${detailPages.map(([kicker, title, text, href]) => `
