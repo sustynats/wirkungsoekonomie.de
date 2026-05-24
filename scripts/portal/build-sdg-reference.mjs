@@ -57,6 +57,27 @@ const sdgDepthDownloads = [
   },
 ];
 
+const go3PackageOnePublications = [
+  {
+    title: "SDGs und Agenda 2030 als globaler Referenzrahmen",
+    slug: "sdgs-und-agenda-2030-als-globaler-referenzrahmen",
+    summary:
+      "Erklärt die SDGs als global verhandelten Anschlussrahmen der Wirkungsökonomie: normativ, aber nicht parteiideologisch; öffentlich prüfbar, aber demokratisch auszugestalten.",
+  },
+  {
+    title: "SDG+ als Erweiterung der Wirkungsökonomie",
+    slug: "sdg-als-erweiterung-der-wirkungsoekonomie",
+    summary:
+      "Vertieft SDG+ als transparente WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, Vertrauen, Zusammenhalt und digitale Selbstbestimmung.",
+  },
+  {
+    title: "SDG-Unterziele global, Europa und Deutschland",
+    slug: "sdg-unterziele-global-europa-und-deutschland",
+    summary:
+      "Macht die Unterziel-Logik zitierfähig: globale Zielcodes, Europa-/Deutschland-Bezug, Indikatorfamilien, WÖk-ID-Anschluss und politische Umsetzung.",
+  },
+];
+
 const sdgHistoryDownloads = [
   {
     title: "Geschichte der SDGs - Detailkonzept Word",
@@ -522,6 +543,35 @@ function officialReferencesBlock(item) {
     </section>`;
 }
 
+function go3PublicationBlock(base) {
+  return `<section class="section" aria-labelledby="go3-sdg-publications">
+      <div class="section-header">
+        <p class="hero-kicker">Go 3 · echte Detailkonzepte</p>
+        ${sectionTitle("go3-sdg-publications", "SDG-/SDG+-Fachdetailkonzepte online lesen")}
+        <p>Diese drei Fachdetailkonzepte bilden Paket 1 der Go-2-Produktionsreihenfolge. Der Online-Volltext ist der Hauptzugang; Word-Dateien sind ergänzende Export- und Archivfassungen. Zu jedem Detailkonzept gibt es zusätzlich ein praxisnahes Dossier.</p>
+      </div>
+      <div class="card-grid three">
+        ${go3PackageOnePublications.map((item) => {
+          const detailUrl = `verstehen/sdgs-sdgplus/detailkonzepte/${item.slug}/`;
+          const dossierUrl = `verstehen/sdgs-sdgplus/dossiers/${item.slug}/`;
+          const detailDocx = `assets/downloads/woek_sdgs-sdgplus_detailkonzept_${item.slug}_v0_4.docx`;
+          const dossierDocx = `assets/downloads/woek_sdgs-sdgplus_dossier_${item.slug}_v0_4.docx`;
+          return `<article class="card">
+          <p class="card-kicker">Detailkonzept + Dossier</p>
+          <h3 class="card-title">${escapeHtml(item.title)}</h3>
+          <p class="card-text">${escapeHtml(item.summary)}</p>
+          <div class="portal-card-actions no-print">
+            <a class="text-link" href="${href(base, detailUrl)}">Detailkonzept online lesen</a>
+            <a class="text-link" href="${href(base, dossierUrl)}">Dossier online lesen</a>
+            ${fs.existsSync(path.join(ROOT, detailDocx)) ? `<a class="text-link" href="${href(base, detailDocx)}">Detailkonzept DOCX</a>` : '<span class="prototype-badge">Detailkonzept DOCX folgt</span>'}
+            ${fs.existsSync(path.join(ROOT, dossierDocx)) ? `<a class="text-link" href="${href(base, dossierDocx)}">Dossier DOCX</a>` : '<span class="prototype-badge">Dossier DOCX folgt</span>'}
+          </div>
+        </article>`;
+        }).join("")}
+      </div>
+    </section>`;
+}
+
 function exportBlock() {
   const available = sdgDepthDownloads.filter((download) => fs.existsSync(path.join(ROOT, download.file)));
   return `<section class="section" aria-labelledby="export-title">
@@ -591,6 +641,7 @@ function overviewPage() {
         </div>
       </div>
     </section>
+    ${go3PublicationBlock(base)}
     <section class="section" aria-labelledby="sdg-list">
       <div class="section-header">
         <p class="hero-kicker">Agenda 2030</p>
