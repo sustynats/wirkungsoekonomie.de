@@ -32,6 +32,9 @@ SECTION_BY_PREFIX = {
     "evidenz/": "Evidenz",
     "quellen/": "Quellen",
     "wissen/": "Wissen",
+    "wirkungsfelder/": "Wirkungsfelder",
+    "werkzeuge/": "Werkzeuge",
+    "werkstatt/": "Werkstatt",
 }
 
 SECTION_BY_FILE = {
@@ -46,6 +49,9 @@ SECTION_BY_FILE = {
     "blog.html": "Blog",
     "glossar.html": "Glossar",
     "anwendungen.html": "Anwendungen",
+    "werkzeuge.html": "Werkzeuge",
+    "werkstatt.html": "Werkstatt",
+    "wirkungsfelder.html": "Wirkungsfelder",
     "scanner.html": "Scanner",
     "suche.html": "Suche",
 }

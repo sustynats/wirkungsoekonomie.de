@@ -2,13 +2,12 @@
   "header": [
     { "label": "Start", "href": "index.html", "match": ["index.html"] },
     { "label": "Verstehen", "href": "verstehen.html", "match": ["verstehen.html", "wirkungsoekonomie.html", "wirkungsoekonomie/"] },
-    { "label": "Modell", "href": "modell.html", "match": ["modell.html", "modell/"] },
-    { "label": "Kompass", "href": "kompass.html", "match": ["kompass.html"] },
-    { "label": "Für wen?", "href": "fuer/", "match": ["fuer/"] },
-    { "label": "Anwendungen", "href": "anwendungen.html", "match": ["anwendungen.html", "anwendungen/", "scanner.html", "sdg-plus/medien-demokratie", "glossar.html#begriff-t-sroi"] },
-    { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
+    { "label": "Wirkungsfelder", "href": "wirkungsfelder/", "match": ["wirkungsfelder/", "anwendungen.html", "fuer/gesundheit.html", "fuer/mieter.html", "fuer/rente.html", "fuer/wirkungseinkommen.html", "fuer/unternehmen.html", "fuer/investoren.html", "fuer/kommunen.html"] },
+    { "label": "Werkzeuge", "href": "werkzeuge/", "match": ["werkzeuge/", "scorecard-dashboard.html", "methodik/", "workflow.html", "glossar.html#begriff-t-sroi"] },
+    { "label": "Erleben", "href": "erleben.html", "match": ["erleben.html", "erleben/", "scanner.html", "anwendungen/scanner.html", "scorecard-dashboard.html", "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
+    { "label": "Werkstatt", "href": "werkstatt/", "match": ["werkstatt/", "downloads.html", "downloads/", "dokumente/", "referenz/", "buch.html", "buch/", "evidenz/", "quellen/"] },
     { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
-    { "label": "Mehr", "href": "mehr.html", "match": ["mehr.html", "referenz/", "blog.html", "blog/", "evidenz/", "quellen/", "sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/", "methodik/", "glossar.html", "glossar/", "buch.html", "buch/", "downloads.html", "downloads/", "mitmachen.html", "mitmachen/", "ueber.html", "ueber/"] },
+    { "label": "Journal", "href": "blog.html", "match": ["blog.html", "blog/", "wirkung-werte-journal/", "w-est-g-journal/"] },
     { "label": "Suche", "href": "suche.html", "match": ["suche.html"] }
   ],
   "applications": [
@@ -45,44 +44,63 @@
         { "label": "Wirkung einfach erklärt", "href": "wirkungsoekonomie.html", "match": ["wirkungsoekonomie.html", "wirkungsoekonomie/"] },
         { "label": "Modell", "href": "modell.html", "match": ["modell.html", "modell/"] },
         { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
-        { "label": "Für wen?", "href": "fuer/", "match": ["fuer/"] }
+        { "label": "Kompass", "href": "kompass.html", "match": ["kompass.html"] },
+        { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] }
       ]
     },
     {
-      "title": "Werkzeuge & Anwendungen",
+      "title": "Wirkungsfelder",
       "items": [
+        { "label": "Bildung", "href": "wirkungsfelder/bildung/", "match": ["wirkungsfelder/bildung/"] },
+        { "label": "Gesundheit & Pflege", "href": "wirkungsfelder/gesundheit-pflege/", "match": ["wirkungsfelder/gesundheit-pflege/"] },
+        { "label": "Wohnen & Stadt", "href": "wirkungsfelder/wohnen-stadt/", "match": ["wirkungsfelder/wohnen-stadt/"] },
+        { "label": "Arbeit & Einkommen", "href": "wirkungsfelder/arbeit-einkommen/", "match": ["wirkungsfelder/arbeit-einkommen/"] },
+        { "label": "Wirtschaft & Unternehmen", "href": "wirkungsfelder/wirtschaft-unternehmen/", "match": ["wirkungsfelder/wirtschaft-unternehmen/"] },
+        { "label": "Produkte & Konsum", "href": "wirkungsfelder/produkte-konsum/", "match": ["wirkungsfelder/produkte-konsum/"] },
+        { "label": "Staat, Recht & Demokratie", "href": "wirkungsfelder/staat-recht-demokratie/", "match": ["wirkungsfelder/staat-recht-demokratie/"] }
+      ]
+    },
+    {
+      "title": "Werkzeuge",
+      "items": [
+        { "label": "Impact Controlling", "href": "werkzeuge/impact-controlling/", "match": ["werkzeuge/impact-controlling/"] },
+        { "label": "T-SROI", "href": "werkzeuge/impact-controlling/t-sroi/", "match": ["werkzeuge/impact-controlling/t-sroi/"] },
+        { "label": "Scorecards", "href": "werkzeuge/scorecards/", "match": ["werkzeuge/scorecards/"] },
+        { "label": "WÖk-IDs", "href": "werkzeuge/woek-ids/", "match": ["werkzeuge/woek-ids/"] },
+        { "label": "Wirkungssteuergesetz", "href": "werkzeuge/wirkungssteuergesetz/", "match": ["werkzeuge/wirkungssteuergesetz/"] },
+        { "label": "Wirkungshaushalt", "href": "werkzeuge/wirkungshaushalt/", "match": ["werkzeuge/wirkungshaushalt/"] },
+        { "label": "Wirkungsrat", "href": "werkzeuge/wirkungsrat/", "match": ["werkzeuge/wirkungsrat/"] }
+      ]
+    },
+    {
+      "title": "Erleben & Lernen",
+      "items": [
+        { "label": "Erleben", "href": "erleben.html", "match": ["erleben.html", "erleben/"] },
         { "label": "Scanner", "href": "anwendungen/scanner.html", "match": ["scanner.html", "anwendungen/scanner.html"] },
-        { "label": "Wirkung politischer Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
-        { "label": "Produkte", "href": "anwendungen.html#produkte", "match": ["anwendungen.html#produkte"] },
-        { "label": "Lieferketten", "href": "anwendungen.html#lieferketten", "match": ["anwendungen.html#lieferketten"] },
-        { "label": "Wirkungshaushalt", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] }
+        { "label": "Produktwirkung", "href": "erleben.html#simulator", "match": ["erleben.html#simulator"] },
+        { "label": "Politische Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
+        { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] }
       ]
     },
     {
-      "title": "Lernen",
+      "title": "Werkstatt",
       "items": [
-        { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
-        { "label": "WÖk-Referenz", "href": "referenz/", "match": ["referenz/"] },
-        { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] },
-        { "label": "Methodik", "href": "methodik/datenbasis.html", "match": ["methodik/"] },
-        { "label": "SDG+", "href": "sdg-plus.html", "match": ["sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/"] },
-        { "label": "Evidenz", "href": "evidenz/", "match": ["evidenz/", "quellen/"] }
+        { "label": "Online-Buch", "href": "referenz/", "match": ["referenz/"] },
+        { "label": "Arbeitsbibliothek", "href": "werkstatt/arbeitsbibliothek/", "match": ["werkstatt/arbeitsbibliothek/"] },
+        { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
+        { "label": "Whitepaper", "href": "werkstatt/arbeitsbibliothek/whitepaper/", "match": ["werkstatt/arbeitsbibliothek/whitepaper/"] },
+        { "label": "Working Papers", "href": "wissen/working-papers/", "match": ["wissen/working-papers/"] },
+        { "label": "Gesetze", "href": "werkstatt/arbeitsbibliothek/gesetze/", "match": ["werkstatt/arbeitsbibliothek/gesetze/"] },
+        { "label": "Dossiers", "href": "blog/dossiers/grundlagen.html", "match": ["blog/dossiers/"] },
+        { "label": "Historische Dokumente", "href": "werkstatt/arbeitsbibliothek/historische-dokumente/", "match": ["werkstatt/arbeitsbibliothek/historische-dokumente/"] }
       ]
     },
     {
       "title": "Projekt",
       "items": [
-        { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
-        { "label": "Online-Referenz", "href": "referenz/", "match": ["referenz/"] },
-        { "label": "Buch", "href": "buch.html", "match": ["buch.html", "buch/"] },
-        { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
+        { "label": "Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
         { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
-        { "label": "Über die WÖk", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] }
-      ]
-    },
-    {
-      "title": "Rechtliches",
-      "items": [
+        { "label": "Über die Wirkungsökonomie", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] },
         { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
         { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
       ]
