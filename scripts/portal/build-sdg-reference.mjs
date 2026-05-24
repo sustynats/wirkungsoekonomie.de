@@ -9,12 +9,26 @@ const CSS_VERSION = "20260524-sdg-reference";
 const JS_VERSION = "20260523-nachhaltigkeit";
 
 const officialSources = [
+  { label: "United Nations - Agenda 2030", url: "https://sdgs.un.org/2030agenda" },
   { label: "UN Sustainable Development Goals", url: "https://sdgs.un.org/goals" },
   { label: "UN Statistics - SDG Indicators", url: "https://unstats.un.org/sdgs/indicators/indicators-list/" },
   { label: "Destatis - SDG-Indikatoren Deutschland", url: "https://sdg-indikatoren.de/" },
   { label: "DNS-Indikatoren - Deutsche Nachhaltigkeitsstrategie", url: "https://dns-indikatoren.de/" },
   { label: "Eurostat SDG Monitoring", url: "https://ec.europa.eu/eurostat/web/sdi" },
+  { label: "UNESCO ROAM-X Indicators", url: "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian" },
+  { label: "World Justice Project - Rule of Law Factors", url: "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law" },
+  { label: "V-Dem Democracy Reports", url: "https://www.v-dem.net/publications/democracy-reports/" },
+  { label: "Reporters Without Borders - Press Freedom Index Methodology", url: "https://rsf.org/en/index-methodologie-2022" },
+  { label: "OECD - Drivers of Trust in Public Institutions", url: "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html" },
 ];
+
+const sdgPlusDownload = {
+  title: "SDG+ Arbeitspapier herunterladen",
+  href: "/assets/downloads/sdgplus_referenzrahmen_wirkungsoekonomie_v0_1.docx",
+  file: "assets/downloads/sdgplus_referenzrahmen_wirkungsoekonomie_v0_1.docx",
+  description:
+    "Das Arbeitspapier enthält die ausführliche Begründung, Definitionen, Unterdimensionen, WÖk-ID-Anschluss, Hover-Texte, Website-Struktur und Quellen zum SDG+-Referenzrahmen.",
+};
 
 const sdgs = [
   [1, "Keine Armut", "Armut in allen Formen beenden und soziale Sicherung, Zugang zu Grundversorgung und faire Teilhabe stärken.", "Armut in allen Formen und überall beenden.", "Armut ist wirkungsökonomisch nicht nur Einkommensmangel, sondern ein Zustand eingeschränkter Handlungsfähigkeit, Gesundheit, Bildung, Sicherheit und demokratischer Teilhabe.", ["Arbeit & Einkommen", "Rente & soziale Sicherung", "Wohnen & Stadt"]],
@@ -96,8 +110,109 @@ const sdgPlus = [
   relatedBookAnchors: ["Demokratie als Wirkungsraum", "SDG+ als Erweiterung der Wirkungsökonomie", "Medienqualität und öffentliche Resonanz", "Wirkung als Rechtsprinzip", "Wirkungsrat"],
 }));
 
+const sdgPlusDetails = {
+  "sdgplus-demokratie": {
+    hoverText: "SDG+ Demokratie macht demokratische Stabilitaet, Teilhabe, Streitfaehigkeit und Korrekturfaehigkeit als Wirkungsbedingung sichtbar.",
+    woekMeaning: "Demokratie meint in der Wirkungsökonomie mehr als Wahlen und Institutionen. Sie ist ein Wirkungsraum, in dem Wahrheit, Rechtsstaatlichkeit, Beteiligung, Machtbegrenzung, Minderheitenschutz, öffentliche Korrektur und digitale Selbstbestimmung zusammenwirken.",
+    whyNeeded: "Die SDGs enthalten mit SDG 16 Frieden, Gerechtigkeit und starke Institutionen. Für eine Wirkungsordnung des 21. Jahrhunderts reicht das nicht aus, weil digitale Öffentlichkeit, Plattformmacht, Desinformation, algorithmische Steuerung, hybride Einflussnahme und Vertrauensverlust demokratische Korrekturfähigkeit beschädigen können.",
+    officialSdgConnection: "SDG 16 ist der direkte Anschluss. SDG 4, SDG 10, SDG 11 und SDG 17 sind wichtige Nebenanker, weil Bildung, Ungleichheit, lokale Räume und Partnerschaften demokratische Teilhabe prägen.",
+    relatedSdgs: ["sdg-16", "sdg-4", "sdg-10", "sdg-11", "sdg-17"],
+    subdimensions: ["freie und faire Wahlen", "Machtbegrenzung und Gewaltenteilung", "Beteiligung und Teilgabe", "Minderheitenschutz und Grundrechte", "demokratische Streitfaehigkeit", "Schutz vor Desinformation und Manipulation", "politische Transparenz und Rechenschaft", "demokratische Resilienz in Krisen"],
+    indicatorFamilies: ["Wahlfreiheit und Wahlfairness", "Beteiligungsquoten und Zugangsbarrieren", "Transparenz politischer Finanzierung", "Qualität öffentlicher Konsultationen", "Desinformations- und Manipulationsrisiken", "Vertrauen in demokratische Verfahren", "Schutz von Minderheiten und zivilgesellschaftlichem Raum"],
+    redLines: ["Wahlmanipulation", "systematische Einschüchterung politischer Gegner:innen", "Abbau unabhängiger Gerichte", "staatlich organisierte Desinformation", "Ausschluss von Minderheiten aus Teilhabe"],
+    fields: ["Staat, Recht & Demokratie", "Medien & Öffentlichkeit", "Bildung", "Wissenschaft, Innovation & Digitalisierung", "Kultur, Identität & Resonanz"],
+    tools: ["Wirkungsrat", "Wirkungshaushalt", "WÖk-IDs", "Medienwirkungscheck", "Wirkungsprüfung politischer Sprache"],
+  },
+  "sdgplus-medienqualitaet": {
+    hoverText: "SDG+ Medienqualität bewertet öffentliche Informationsräume: Quellenklarheit, journalistische Verantwortung, Desinformationsschutz und demokratische Orientierung.",
+    woekMeaning: "Medienqualität bezeichnet die Fähigkeit öffentlicher Informationsräume, überprüfbare, vielfältige, relevante und kontextualisierte Informationen bereitzustellen, ohne Aufmerksamkeit systematisch gegen Wahrheit, Würde oder Demokratie auszuspielen.",
+    whyNeeded: "Reichweite ist keine Orientierung. Medien und Plattformen können Aufmerksamkeit erzeugen und zugleich Vertrauen, Gesundheit, Demokratie oder Minderheitenschutz schwächen. Die klassische SDG-Systematik adressiert Informationsqualität nur indirekt.",
+    officialSdgConnection: "SDG 16 ist der institutionelle Anker. SDG 4 ist relevant für Medienbildung. SDG 10 und SDG 17 betreffen Zugang und Kooperation.",
+    relatedSdgs: ["sdg-16", "sdg-4", "sdg-10", "sdg-17"],
+    subdimensions: ["Quellenklarheit und Transparenz", "journalistische Sorgfalt", "redaktionelle Unabhängigkeit", "Faktenprüfung und Korrekturmechanismen", "Pluralität und Perspektivenvielfalt", "Schutz vor Desinformation", "algorithmische Verstärkungslogiken", "ökonomische Unabhängigkeit von Qualitätsjournalismus"],
+    indicatorFamilies: ["Anteil belegter Quellen", "Korrekturrate und Korrekturtransparenz", "Eigentümer- und Finanzierungsstrukturen", "Desinformations-Viralität", "Vielfalt der Quellen und Stimmen", "Trennung von Werbung, Meinung und Nachricht", "Verfügbarkeit lokaler und gemeinwohlorientierter Medien"],
+    redLines: ["koordinierte Desinformation", "nicht gekennzeichnete politische Werbung", "systematische Verleumdung von Gruppen", "Gewaltaufrufe", "algorithmische Verstärkung eindeutig falscher oder manipulativer Inhalte ohne Korrekturpfad"],
+    fields: ["Medien & Öffentlichkeit", "Staat, Recht & Demokratie", "Bildung", "Wissenschaft, Innovation & Digitalisierung"],
+    tools: ["Medienwirkungscheck", "Sprachwirkungsanalyse", "Quellenklarheits-Tool", "WÖk-IDs", "Agentur für Digitale Öffentlichkeit"],
+  },
+  "sdgplus-rechtsstaatlichkeit": {
+    hoverText: "SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht.",
+    woekMeaning: "Rechtsstaatlichkeit bezeichnet den Zustand, in dem Macht rechtlich begrenzt, Verfahren nachvollziehbar, Grundrechte wirksam, Gerichte unabhängig und Rechtsschutz zugänglich sind. Ohne Rechtsstaat wird Wirkungsmessung zur Machttechnik.",
+    whyNeeded: "Wirkung braucht Regeln, aber Regeln brauchen Grenzen. Daten, Scorecards, Steuern und Bewertung können missbraucht werden. Rechtsstaatlichkeit schützt davor, dass Wirkungssteuerung technokratisch, willkürlich oder repressiv wird.",
+    officialSdgConnection: "SDG 16 ist der direkte Anker. SDG 10 und SDG 17 sind relevant, weil Rechtszugang, faire Verfahren und internationale Kooperation Ungleichheit und Machtmissbrauch begrenzen.",
+    relatedSdgs: ["sdg-16", "sdg-10", "sdg-17"],
+    subdimensions: ["unabhängige Gerichte", "Grundrechte und Minderheitenschutz", "Verhältnismäßigkeit", "Rechtsschutz und Beschwerdewege", "Korruptionsprävention", "offene Verwaltung", "Rechtssicherheit", "Datenschutz und Schutz vor willkürlicher Überwachung"],
+    indicatorFamilies: ["Zugang zu Justiz", "Dauer und Fairness von Verfahren", "Unabhängigkeit der Justiz", "Korruptionsrisiko", "Transparenz staatlicher Entscheidungen", "Grundrechtsverletzungen", "Beschwerde- und Einspruchsmöglichkeiten bei automatisierten Entscheidungen"],
+    redLines: ["willkürliche Personenbewertung", "Social-Credit-Logik", "fehlender Rechtsschutz gegen automatisierte Entscheidungen", "politische Vereinnahmung von Gerichten", "diskriminierende Rechtsanwendung"],
+    fields: ["Staat, Recht & Demokratie", "Medien & Öffentlichkeit", "Finanzsystem & Kapital"],
+    tools: ["LawReader", "LawReference", "Wirkungsrat", "Wirkungsprüfung", "Rechtsfolgen-Check"],
+  },
+  "sdgplus-diskursfaehigkeit": {
+    hoverText: "SDG+ Diskursfähigkeit macht sichtbar, ob Gesellschaften Konflikte faktenbasiert, respektvoll und korrekturfähig bearbeiten können.",
+    woekMeaning: "Diskursfähigkeit beschreibt die soziale und institutionelle Fähigkeit, Widerspruch auszuhalten, Fakten zu prüfen, Zielkonflikte offen zu verhandeln und Entscheidungen so zu begründen, dass Korrektur möglich bleibt.",
+    whyNeeded: "Nachhaltigkeit erzeugt Zielkonflikte: Klima, soziale Sicherheit, Wirtschaft, Migration, Energie, Wohnen, Freiheit und Gesundheit stehen nicht immer spannungsfrei nebeneinander. Ohne Diskursfähigkeit werden Zielkonflikte zu Polarisierung statt zu Lernen.",
+    officialSdgConnection: "SDG 16 und SDG 17 sind zentrale Anker. SDG 4 ist relevant, weil Diskursfähigkeit gelernt werden muss.",
+    relatedSdgs: ["sdg-16", "sdg-17", "sdg-4"],
+    subdimensions: ["Faktenbezug und Quellenfähigkeit", "Respekt und Konfliktfähigkeit", "Ambiguitätstoleranz", "Deliberation und Beteiligung", "Polarisationserkennung", "Korrekturfähigkeit", "Schutz vor Dehumanisierung", "Übersetzung zwischen Fachsprache und Öffentlichkeit"],
+    indicatorFamilies: ["Anteil faktenbasierter Begründungen in Verfahren", "Qualität öffentlicher Konsultationen", "Polarisierungsmarker", "Hass- und Dehumanisierungsindikatoren", "Vielfalt der Beteiligten", "Korrektur- und Lernschleifen in politischen Prozessen"],
+    redLines: ["Aufruf zur Gewalt", "systematische Entmenschlichung", "gezielte Desinformation in Krisen", "Ausschluss betroffener Gruppen aus Debatten", "Manipulation von Beteiligungsverfahren"],
+    fields: ["Medien & Öffentlichkeit", "Bildung", "Staat, Recht & Demokratie", "Kultur, Identität & Resonanz"],
+    tools: ["Sprachwirkungsanalyse", "Diskursqualitäts-Check", "Moderations- und Beteiligungsformate", "Wirkungsprüfung politischer Kommunikation"],
+  },
+  "sdgplus-institutionelles-vertrauen": {
+    hoverText: "SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln.",
+    woekMeaning: "Institutionelles Vertrauen ist nicht blinder Gehorsam. Es ist die begründete Erwartung, dass Institutionen kompetent, fair, transparent, zugänglich, lernfähig und rechenschaftspflichtig handeln.",
+    whyNeeded: "Wirkungsökonomie braucht Daten, Institutionen und Rückkopplung. Wenn Menschen nicht vertrauen können, dass Datenqualität, Wirkungsrat, Steuerlogik und politische Entscheidungen fair sind, kippt Wirkungsmessung in Misstrauen.",
+    officialSdgConnection: "SDG 16 und SDG 17 sind direkte Anker. SDG 10 ist relevant, weil Ungleichheit Vertrauen schwächt.",
+    relatedSdgs: ["sdg-16", "sdg-17", "sdg-10"],
+    subdimensions: ["Kompetenz und Leistungsfähigkeit", "Integrität und Korruptionsschutz", "Fairness und Gleichbehandlung", "Offenheit und Transparenz", "Zugänglichkeit und Servicequalität", "Evidenzorientierung", "Fehlerkultur und Korrektur", "Zukunftsverantwortung"],
+    indicatorFamilies: ["Vertrauen in Regierung, Verwaltung, Gerichte und Medien", "wahrgenommene Fairness", "Transparenz von Entscheidungen", "Nutzung bester verfügbarer Evidenz", "Beschwerdezugang", "Integritäts- und Korruptionsindikatoren", "Dauer und Verständlichkeit von Verfahren"],
+    redLines: ["intransparente Datenverwendung", "politisch gekaperte Bewertung", "fehlender Beschwerdeweg", "Korruption", "Wirkungssimulation oder Greenwashing durch Institutionen"],
+    fields: ["Staat, Recht & Demokratie", "Gesundheit & Pflege", "Wohnen & Stadt", "Produkte & Konsum"],
+    tools: ["Wirkungsrat", "Wirkungsberichte", "Wirkungshaushalt", "Transparenzdashboard", "Wirkungsprüfung öffentlicher Mittel"],
+  },
+  "sdgplus-gesellschaftlicher-zusammenhalt": {
+    hoverText: "SDG+ gesellschaftlicher Zusammenhalt macht sichtbar, ob Teilhabe, Zugehörigkeit, Sicherheit, Fairness und Schutz vor Spaltung gestärkt werden.",
+    woekMeaning: "Gesellschaftlicher Zusammenhalt bezeichnet die Qualität sozialer Räume, Beziehungen und Verfahren, in denen Menschen sich zugehörig, sicher, beteiligt und fair behandelt fühlen. Er ist weder Homogenität noch Anpassungsdruck, sondern pluraler Zusammenhalt.",
+    whyNeeded: "Viele SDGs behandeln soziale Fragen, aber die systemische Qualität des Zusammenhalts ist mehr als die Summe einzelner Armuts-, Bildungs- oder Ungleichheitsindikatoren.",
+    officialSdgConnection: "SDG 1, 3, 4, 5, 8, 10, 11 und 16 sind besonders relevant. SDG+ verbindet diese Ziele über die Frage, ob Gesellschaft als gemeinsamer Wirkungsraum tragfähig bleibt.",
+    relatedSdgs: ["sdg-1", "sdg-3", "sdg-4", "sdg-5", "sdg-8", "sdg-10", "sdg-11", "sdg-16"],
+    subdimensions: ["Zugehörigkeit und Anerkennung", "soziale Sicherheit", "gerechte Teilhabe", "regionale Gleichwertigkeit", "Antidiskriminierung", "Generationengerechtigkeit", "öffentliche Räume", "Care, Familie und soziale Netze", "Resilienz gegen Spaltung"],
+    indicatorFamilies: ["Einsamkeit und soziale Isolation", "wahrgenommene Zugehörigkeit", "Diskriminierungserfahrungen", "Mietbelastung und Wohnstabilität", "Zugang zu Bildung, Gesundheit und Kultur", "regionale Lebensqualität", "Teilhabequoten", "Armuts- und Prekaritätsrisiken"],
+    redLines: ["systematische Ausgrenzung", "gruppenbezogene Menschenfeindlichkeit", "soziale Spaltung durch politische oder wirtschaftliche Anreize", "Verdrängung aus Grundbedarfsräumen", "Normalisierung von Hass oder Entwertung"],
+    fields: ["Wohnen & Stadt", "Gesundheit & Pflege", "Bildung", "Arbeit & Einkommen", "Kultur, Identität & Resonanz"],
+    tools: ["Wirkungsförderung", "Wirkungsrente", "Wirkungseinkommen", "kommunale Wirkungsbudgets", "Quartierswirkungscheck"],
+  },
+  "sdgplus-digitale-selbstbestimmung": {
+    hoverText: "SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation.",
+    woekMeaning: "Digitale Selbstbestimmung bezeichnet die Fähigkeit und das Recht, digitale Räume, Daten, Plattformen, KI-Systeme und algorithmische Entscheidungen zu verstehen, zu nutzen, zu kontrollieren und sich gegen Manipulation, Überwachung und Ausschluss zu schützen.",
+    whyNeeded: "Seit 2015 haben Plattformmacht, generative KI, Datenökonomien, algorithmische Empfehlungssysteme, Deepfakes und digitale Abhängigkeiten eine neue Wirkungsintensität erreicht. Digitale Selbstbestimmung ist Bedingung von Demokratie, Bildung, Arbeit, Gesundheit und Konsumfreiheit.",
+    officialSdgConnection: "SDG 4, SDG 9, SDG 10, SDG 16 und SDG 17 sind zentrale Anker. SDG+ präzisiert Datenrechte, algorithmische Fairness, Plattformmacht und Manipulationsschutz.",
+    relatedSdgs: ["sdg-4", "sdg-9", "sdg-10", "sdg-16", "sdg-17"],
+    subdimensions: ["Datenschutz und Datenrechte", "algorithmische Transparenz", "algorithmische Fairness", "Schutz vor Manipulation und Dark Patterns", "digitale Teilhabe und Barrierefreiheit", "KI-Kompetenz und Medienkompetenz", "Cyber- und Infrastruktursicherheit", "Schutz von Kindern und vulnerablen Gruppen", "Interoperabilität und offene digitale Infrastruktur"],
+    indicatorFamilies: ["Zugang zu digitalen Diensten", "digitale Kompetenzen", "Transparenz automatisierter Entscheidungen", "Beschwerdewege gegen algorithmische Entscheidungen", "Datenschutzverletzungen", "Manipulations- und Dark-Pattern-Risiken", "Cyberresilienz", "KI-Einsatzfolgenabschätzung"],
+    redLines: ["biometrische Massenüberwachung ohne Schutz und Rechtsweg", "manipulative Plattformarchitektur", "diskriminierende automatisierte Entscheidungen", "fehlende menschliche Kontrolle bei Hochrisikoentscheidungen", "Datenmissbrauch ohne wirksame Abhilfe"],
+    fields: ["Wissenschaft, Innovation & Digitalisierung", "Medien & Öffentlichkeit", "Bildung", "Staat, Recht & Demokratie", "Produkte & Konsum", "Gesundheit & Pflege"],
+    tools: ["KI-Wirkungsrisiko-Check", "Datenraum-Reifegradcheck", "Digitale Produktpässe", "Wirkungsscanner", "Algorithmic-Impact-Assessment"],
+  },
+};
+
+for (const item of sdgPlus) {
+  const detail = sdgPlusDetails[item.id];
+  Object.assign(item, detail, {
+    anchor: `#${item.id}`,
+    url: `/verstehen/sdgs-sdgplus/#${item.id}`,
+    legacyUrl: `/verstehen/sdgs-sdgplus/${item.slug}/`,
+    isOfficialUNGoal: false,
+    officialNote: "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    relatedWirkungsfelder: detail.fields.map((field) => ({ title: field, url: fieldUrl(field), why: `${item.title} ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung.` })),
+    relatedWerkzeuge: detail.tools.map((title) => ({ title, url: toolUrl(title) })),
+  });
+}
+
 const references = [...sdgs, ...sdgPlus];
 const byId = Object.fromEntries(references.map((item) => [item.id, item]));
+let badgeCounter = 0;
 
 function sdg4Targets() {
   return [
@@ -149,9 +264,28 @@ function fieldUrl(field) {
     "Finanzsystem & Kapital": "/wirkungsfelder/finanzsystem-kapital/",
     "Medien & Öffentlichkeit": "/wirkungsfelder/medien-oeffentlichkeit/",
     "Wissenschaft, Innovation & Digitalisierung": "/wirkungsfelder/wissenschaft-innovation-digitalisierung/",
+    "Kultur, Identität & Resonanz": "/wirkungsfelder/kultur-identitaet-resonanz/",
     "Klima, Energie & Ressourcen": "/wirkungsfelder/klima-energie-ressourcen/",
   };
   return map[field] || "/wirkungsfelder/";
+}
+
+function toolUrl(title) {
+  const map = {
+    "Wirkungsrat": "/werkzeuge/wirkungsrat/",
+    "Wirkungshaushalt": "/werkzeuge/wirkungshaushalt/",
+    "WÖk-IDs": "/werkzeuge/woek-ids/",
+    "Digitale Produktpässe": "/werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/",
+    "LawReader": "/werkstatt/gesetze/wirkungssteuergesetz/",
+    "LawReference": "/werkstatt/gesetze/wirkungssteuergesetz/",
+    "Wirkungsprüfung": "/werkzeuge/woek-ids/",
+    "Wirkungsberichte": "/werkstatt/",
+    "Wirkungsförderung": "/wirkungsfelder/bildung/",
+    "Wirkungsrente": "/wirkungsfelder/rente-soziale-sicherung/",
+    "Wirkungseinkommen": "/wirkungsfelder/arbeit-einkommen/",
+    "Wirkungsscanner": "/erleben.html",
+  };
+  return map[title] || "/werkzeuge/";
 }
 
 function shorten(title) {
@@ -301,10 +435,11 @@ function sectionTitle(id, text) {
 
 function badge(item, base = "") {
   const url = href(base, item.url);
+  const popoverId = `sdg-popover-${item.id}-${++badgeCounter}`;
   return `<span class="sdg-ref" data-sdg-id="${escapeHtml(item.id)}">
-    <a class="sdg-ref-link" href="${url}" aria-describedby="sdg-popover-${escapeHtml(item.id)}">${escapeHtml(item.shortTitle || item.title)}</a>
-    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu ${escapeHtml(item.shortTitle || item.title)} anzeigen" aria-describedby="sdg-popover-${escapeHtml(item.id)}">i</button>
-    <span class="sdg-ref-popover" id="sdg-popover-${escapeHtml(item.id)}" role="tooltip">${escapeHtml(item.hoverText)} <span class="sdg-ref-more">Details öffnen</span></span>
+    <a class="sdg-ref-link" href="${url}" aria-label="${escapeHtml(`${item.shortTitle || item.title}: ${item.hoverText}`)}" aria-describedby="${escapeHtml(popoverId)}">${escapeHtml(item.shortTitle || item.title)}</a>
+    <button class="sdg-ref-info" type="button" aria-label="${escapeHtml(`Kurzbeschreibung zu ${item.shortTitle || item.title}: ${item.hoverText}`)}" aria-describedby="${escapeHtml(popoverId)}">i</button>
+    <span class="sdg-ref-popover" id="${escapeHtml(popoverId)}" role="tooltip">${escapeHtml(item.hoverText)} <span class="sdg-ref-more">Details öffnen</span></span>
   </span>`;
 }
 
@@ -367,13 +502,14 @@ function overviewPage() {
           <p class="hero-kicker">Referenzrahmen</p>
           <h1>SDG-/SDG+-Referenzrahmen</h1>
           <p class="hero-subtitle">Wie die Wirkungsökonomie die 17 Nachhaltigkeitsziele, Agenda 2030 und SDG+ als Bewertungsrahmen nutzt.</p>
-          <p>Die Wirkungsökonomie bewertet Wirkung nicht aus privater Moral heraus. Sie braucht einen öffentlich nachvollziehbaren Referenzrahmen. Die 17 Ziele für nachhaltige Entwicklung der Vereinten Nationen bilden dafür den global verhandelten Ausgangspunkt.</p>
+          <p>Die Wirkungsökonomie bewertet Wirkung nicht aus privater Moral heraus. Sie braucht einen öffentlich nachvollziehbaren Referenzrahmen. Die 17 Ziele für nachhaltige Entwicklung der Vereinten Nationen bilden dafür den global verhandelten Ausgangspunkt. Sie beschreiben, welche Zustände weltweit verbessert werden sollen: Armut verringern, Gesundheit stärken, Bildung ermöglichen, Ungleichheiten abbauen, Klima und Ökosysteme schützen, Frieden und Institutionen sichern.</p>
+          <p>Die SDGs und SDG+ sind deshalb nicht nur Etiketten. Sie sind der Referenzrahmen, an dem positive, negative und neutrale Wirkung eingeordnet werden. Eine Wirkung ist in der Wirkungsökonomie dann positiv, wenn sie auf Mensch, Planet und Demokratie einzahlt. Sie ist negativ, wenn sie diesen Rahmen schwächt, blockiert oder zerstört.</p>
           ${printActions()}
         </div>
         <aside class="citation-note">
           <p class="card-kicker">SDG+ transparent</p>
           <h2>Keine offizielle UN-Kategorie</h2>
-          <p>SDG+ ist eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+          <p>SDG+ ist keine offizielle UN-Kategorie. SDG+ ist eine transparente Erweiterung der Wirkungsökonomie. Sie ergänzt die 17 SDGs um demokratische, mediale, rechtsstaatliche, soziale und digitale Voraussetzungen, ohne die positive Netto-Wirkung für Mensch, Planet und Demokratie nicht stabil erreicht werden kann.</p>
         </aside>
       </div>
     </section>
@@ -385,28 +521,142 @@ function overviewPage() {
       </div>
       <div class="sdg-reference-grid">${sdgs.map((item) => `<article class="card"><p class="card-kicker">SDG ${item.number}</p><h3 class="card-title">${escapeHtml(item.title)}</h3><p class="card-text">${escapeHtml(item.hoverText)}</p><div class="portal-card-actions">${badge(item, base)}</div></article>`).join("")}</div>
     </section>
-    <section class="section" id="sdgplus" aria-labelledby="sdgplus-list">
+    <section class="section" id="sdgplus" aria-labelledby="why-sdgplus">
       <div class="section-header">
         <p class="hero-kicker">WÖk-Erweiterung</p>
-        ${sectionTitle("sdgplus-list", "SDG+ der Wirkungsökonomie")}
-        <p>SDG+ ergänzt die 17 Ziele um demokratische, mediale, rechtsstaatliche und digitale Voraussetzungen. Diese Erweiterung ist notwendig, weil nachhaltige Entwicklung auf verlässliche Institutionen, öffentliche Wahrheit, demokratische Streitfähigkeit und digitale Selbstbestimmung angewiesen ist.</p>
+        ${sectionTitle("why-sdgplus", "Warum SDG+?")}
+        <p>Die SDGs sind für die Wirkungsökonomie notwendig, aber nicht vollständig ausreichend. Sie sind Zielräume, keine vollständige Rückkopplungsarchitektur. Sie sagen, welche Zustände verbessert werden sollen, erklären aber nicht allein, wie Wirkung in Preise, Steuern, Kapitalzugang, Beschaffung, Haushalt, Medien, Rechtsschutz und demokratische Korrektur zurückgeführt wird.</p>
+        <p>Zudem behandeln sie einige Wirkungsräume des 21. Jahrhunderts nicht in der Tiefe, die für Mensch, Planet und Demokratie notwendig ist: digitale Öffentlichkeit, Plattformmacht, Desinformation, algorithmische Manipulation, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung.</p>
+        <p><strong>SDG+ bedeutet daher nicht, die SDGs zu ersetzen. SDG+ bedeutet, sie wirkungsökonomisch zu erweitern.</strong></p>
+        <p>SDG+ macht sichtbar, dass eine Wirkung nicht ausreichend positiv sein kann, wenn sie ökologische oder soziale Vorteile erzeugt, aber demokratische Korrekturfähigkeit beschädigt. Ein digitales System kann effizient sein und zugleich Überwachung verstärken. Eine Plattform kann Bildung verbreiten und zugleich Desinformation skalieren. Ein Produkt kann emissionsarm sein und zugleich Menschenrechte verletzen.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="sdgplus-detail">
+      <div class="section-header">
+        <p class="hero-kicker">SDG+ im Detail</p>
+        ${sectionTitle("sdgplus-detail", "Sieben Erweiterungsdimensionen")}
+        <p class="scanner-notice"><strong>Pflichthinweis:</strong> SDG+ ist keine offizielle UN-Kategorie. SDG+ ist eine transparente Erweiterung der Wirkungsökonomie. Sie ergänzt die 17 SDGs um demokratische, mediale, rechtsstaatliche, soziale und digitale Voraussetzungen, ohne die positive Netto-Wirkung für Mensch, Planet und Demokratie nicht stabil erreicht werden kann.</p>
       </div>
       <div class="sdg-reference-grid">${sdgPlus.map((item) => `<article class="card"><p class="card-kicker">SDG+</p><h3 class="card-title">${escapeHtml(item.title)}</h3><p class="card-text">${escapeHtml(item.hoverText)}</p><div class="portal-card-actions">${badge(item, base)}</div></article>`).join("")}</div>
     </section>
+    ${sdgPlus.map((item) => sdgPlusInlineSection(item, base)).join("")}
     <section class="section" aria-labelledby="usage">
       <div class="section-header">
         <p class="hero-kicker">Website-Logik</p>
-        ${sectionTitle("usage", "Wie dieser Referenzrahmen genutzt wird")}
-        <p>Auf Wirkungsfeld- und Werkzeugseiten zeigen SDG-/SDG+-Blöcke, welche Ziele betroffen sind. Jeder Chip lässt sich anklicken, kurz erklären und mit einer Detailseite verbinden.</p>
+        ${sectionTitle("usage", "Wie SDG+ auf der Website verwendet wird")}
+        <p>Auf allen Wirkungsfeld- und Werkzeugseiten zeigen SDG-/SDG+-Blöcke nicht nur Badges an, sondern öffnen Referenzen: Hover, Fokus und Tap zeigen eine Kurzdefinition; ein Klick führt auf diese Referenzseite oder den passenden Anker.</p>
+        <p>Die Detailbereiche erklären Unterdimensionen, WÖk-Bedeutung, Quellen, Buchanker und Wirkungsgrenzen. Glossar-Begriffe wie SDG, SDG+, Agenda 2030, positive Netto-Wirkung und Mensch, Planet und Demokratie werden damit zitierfähig verknüpft.</p>
       </div>
     </section>
+    <section class="section" aria-labelledby="woekids-sdgplus">
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">WÖk-IDs</p>
+          ${sectionTitle("woekids-sdgplus", "WÖk-IDs und SDG+")}
+          <p class="card-text">WÖk-IDs sind der methodische Brückenschritt zwischen SDG-/SDG+-Referenzrahmen und messbarer Wirkungsbewertung. Für SDG+ werden Indikatorfamilien wie Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, Vertrauen, Zusammenhalt und digitale Selbstbestimmung anschlussfähig gemacht.</p>
+        </div>
+        <a class="btn btn-secondary no-print" href="${href(base, "werkzeuge/woek-ids/")}">WÖk-IDs öffnen</a>
+      </div>
+    </section>
+    ${sdgPlusDownloadBlock(base)}
     ${officialReferencesBlock({ officialSources })}
+    ${bookBlock(base, ["Exkurs: Warum die SDGs der Referenzrahmen der Wirkungsökonomie sind", "SDG+ als Erweiterung der Wirkungsökonomie", "Kapitel 28 - Demokratie als Wirkungsraum", "Kapitel 31 - WÖk-IDs und Indikatorenarchitektur", "Kapitel 32 - Benchmarks, Skalen und Scorecards", "Kapitel 33 - Reverse Merit Order", "Kapitel 36 - Wirkung als Rechtsprinzip", "Kapitel 40 - Wirkungsrat", "Kapitel 102 - Agenda 2030, SDGs, SDG+ und Verschwörungsnarrative"])}
+    <section class="section" aria-labelledby="glossary-anchors">
+      <div class="section-header">
+        <p class="hero-kicker">Glossar</p>
+        ${sectionTitle("glossary-anchors", "Glossar- und Begriffanker")}
+        <p>Die Begriffe SDGs, SDG+, Agenda 2030, SDG-/SDG+-Referenzrahmen und positive Netto-Wirkung werden im Glossar mit dieser Seite verknüpft.</p>
+        <div class="model-strip">
+          <a href="${href(base, "glossar.html#begriff-sdgs")}">SDGs</a>
+          <a href="${href(base, "glossar.html#begriff-sdg-plus")}">SDG+</a>
+          <a href="${href(base, "glossar.html#begriff-agenda-2030")}">Agenda 2030</a>
+          <a href="${href(base, "glossar.html#begriff-sdg-sdgplus-referenzrahmen")}">SDG-/SDG+-Referenzrahmen</a>
+          <a href="${href(base, "glossar.html#begriff-positive-netto-wirkung")}">Positive Netto-Wirkung</a>
+        </div>
+      </div>
+    </section>
     ${exportBlock()}`,
   });
 }
 
+function listBlock(title, items) {
+  return `<div class="card">
+        <h3 class="card-title">${escapeHtml(title)}</h3>
+        <ul class="portal-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </div>`;
+}
+
+function sdgPlusInlineSection(item, base) {
+  return `<section class="section" id="${escapeHtml(item.id)}" aria-labelledby="${escapeHtml(item.id)}-title">
+      <div class="section-header">
+        <p class="hero-kicker">SDG+ Dimension</p>
+        <h2 id="${escapeHtml(item.id)}-title">${escapeHtml(item.title)} ${citeAnchor(item.id, `Zitierlink zu ${item.title}`)}</h2>
+        <p>${escapeHtml(item.hoverText)}</p>
+      </div>
+      <div class="card-grid two">
+        <article class="card">
+          <h3 class="card-title">Definition</h3>
+          <p class="card-text">${escapeHtml(item.woekMeaning)}</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Warum diese Dimension nötig ist</h3>
+          <p class="card-text">${escapeHtml(item.whyNeeded)}</p>
+        </article>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Anschluss an offizielle SDGs</h3>
+        <p class="card-text">${escapeHtml(item.officialSdgConnection)}</p>
+        <div class="model-strip">${item.relatedSdgs.map((id) => badge(byId[id], base)).join("")}</div>
+      </div>
+      <div class="card-grid two">
+        ${listBlock("Unterdimensionen", item.subdimensions)}
+        ${listBlock("Mögliche Indikator- und WÖk-ID-Familien", item.indicatorFamilies)}
+        ${listBlock("Relevante Wirkungsfelder", item.fields)}
+        ${listBlock("Kontextbezogene Werkzeuge", item.tools)}
+      </div>
+      <div class="scanner-notice" role="note">
+        <strong>Wirkungsgrenzen / rote Linien:</strong>
+        <ul class="portal-list">${item.redLines.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>
+      </div>
+    </section>`;
+}
+
+function sdgPlusDownloadBlock(base) {
+  const exists = fs.existsSync(path.join(ROOT, sdgPlusDownload.file));
+  return `<section class="section" aria-labelledby="sdgplus-download">
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">Download / Dossier</p>
+          ${sectionTitle("sdgplus-download", "SDG+ Arbeitspapier")}
+          <p class="card-text">${escapeHtml(sdgPlusDownload.description)}</p>
+        </div>
+        ${exists
+          ? `<a class="btn btn-primary no-print" href="${href(base, sdgPlusDownload.href)}">${escapeHtml(sdgPlusDownload.title)}</a>`
+          : '<span class="prototype-badge">Arbeitsdokument folgt</span>'}
+      </div>
+    </section>`;
+}
+
 function sdgDetailPage(item) {
   const isPlus = item.type === "sdgplus";
+  if (isPlus) {
+    page({
+      rel: `verstehen/sdgs-sdgplus/${item.slug}/index.html`,
+      title: `${item.title} | Wirkungsökonomie`,
+      description: `${item.title} ist Teil der kanonischen SDG-/SDG+-Referenzseite.`,
+      canonicalOverride: `${SITE}/verstehen/sdgs-sdgplus/#${item.id}`,
+      headExtra: `<meta http-equiv="refresh" content="0; url=../#${item.id}">`,
+      body: (base) => `<section class="hero portal-hero">
+        <div class="hero-content">
+          <p class="hero-kicker">Weiterleitung</p>
+          <h1>${escapeHtml(item.title)}</h1>
+          <p class="hero-subtitle">SDG+ wird auf der kanonischen SDG-/SDG+-Referenzseite geführt.</p>
+          <p><a class="btn btn-primary" href="${href(base, `verstehen/sdgs-sdgplus/#${item.id}`)}">Zum Abschnitt ${escapeHtml(item.title)}</a></p>
+        </div>
+      </section>`,
+    });
+    return;
+  }
   page({
     rel: `verstehen/sdgs-sdgplus/${item.slug}/index.html`,
     title: `${item.title.replace(" - ", " ")} | Wirkungsökonomie`,
@@ -552,10 +802,20 @@ function dataFiles() {
     title: item.title,
     shortTitle: item.shortTitle,
     slug: item.slug,
+    anchor: item.anchor || "",
     url: item.url,
+    legacyUrl: item.legacyUrl || "",
+    isOfficialUNGoal: item.type === "sdg",
+    officialNote: item.officialNote || "",
     hoverText: item.hoverText,
     officialDescription: item.officialDescription,
     woekMeaning: item.woekMeaning,
+    whyNeeded: item.whyNeeded || "",
+    officialSdgConnection: item.officialSdgConnection || "",
+    relatedSdgs: item.relatedSdgs || [],
+    subdimensions: item.subdimensions || [],
+    indicatorFamilies: item.indicatorFamilies || [],
+    redLines: item.redLines || [],
     germanyEuropeRelevance: item.germanyEuropeRelevance,
     targets: item.targets,
     relevantTargetsGermanyEurope: item.relevantTargetsGermanyEurope || [],
@@ -577,15 +837,29 @@ function enhanceExistingBadges() {
   for (const rel of htmlFiles) {
     const file = path.join(ROOT, rel);
     let html = fs.readFileSync(file, "utf8");
-    if (!html.includes("portal-reference-block") || html.includes("sdg-ref")) continue;
+    if (!html.includes("portal-reference-block")) continue;
     const base = baseFor(rel);
-    const updated = html.replace(/<span>([^<]+)<\/span>/g, (match, label) => {
-      const item = findReference(label);
-      return item ? badge(item, base) : match;
-    }).replace(
+    let updated = html.replace(
+      /(<div class="portal-reference-block">[\s\S]*?<div class="model-strip">)([\s\S]*?)(<\/div>)/g,
+      (match, prefix, strip, suffix) => {
+        const ids = [...strip.matchAll(/data-sdg-id="([^"]+)"/g)].map((hit) => hit[1]);
+        const labels = [...strip.matchAll(/<span>([^<]+)<\/span>/g)].map((hit) => hit[1]);
+        const items = [...ids.map((id) => byId[id]).filter(Boolean), ...labels.map(findReference).filter(Boolean)];
+        return items.length ? `${prefix}${items.map((item) => badge(item, base)).join("")}${suffix}` : match;
+      },
+    ).replace(
       /SDG\+ ist keine offizielle UN-Kategorie/g,
       `<a class="text-link" href="${href(base, "verstehen/sdgs-sdgplus/#sdgplus")}">SDG+</a> ist keine offizielle UN-Kategorie`,
     );
+    updated = updated.replace(
+      /<span class="sdg-ref" data-sdg-id="([^"]+)">\s*<a class="sdg-ref-link"[\s\S]*?<\/a>\s*<button class="sdg-ref-info"[\s\S]*?<\/button>\s*<span class="sdg-ref-popover"[\s\S]*?<span class="sdg-ref-more">[\s\S]*?<\/span>\s*<\/span>\s*<\/span>/g,
+      (match, id) => byId[id] ? badge(byId[id], base) : match,
+    );
+    let cleaned;
+    do {
+      cleaned = updated;
+      updated = updated.replace(/(<\/span>\s*<\/span>\s*<\/span>\s*)<\/span>(?=\s*(?:<span class="sdg-ref"|<\/div>))/g, "$1");
+    } while (updated !== cleaned);
     if (updated !== html) fs.writeFileSync(file, updated, "utf8");
   }
 }
@@ -625,13 +899,21 @@ function enhanceGlossary() {
   if (!html.includes('id="begriff-agenda-2030"')) {
     html = html.replace('<div><dt id="begriff-sdgs">', `${agendaEntry}\n            <div><dt id="begriff-sdgs">`);
   }
+  const frameEntry = '<div><dt id="begriff-sdg-sdgplus-referenzrahmen">SDG-/SDG+-Referenzrahmen</dt><dd>Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen 17 Nachhaltigkeitsziele der Vereinten Nationen mit SDG+ als Wirkungsökonomie-Erweiterung. Er dient dazu, positive, negative und neutrale Wirkung öffentlich nachvollziehbar einzuordnen. <a class="text-link" href="verstehen/sdgs-sdgplus/">Referenzrahmen öffnen</a>.</dd></div>';
+  if (!html.includes('id="begriff-sdg-sdgplus-referenzrahmen"')) {
+    html = html.replace('<div><dt id="begriff-sdgs">', `${frameEntry}\n            <div><dt id="begriff-sdgs">`);
+  }
   html = html.replace(
     /<div><dt id="begriff-sdgs">SDGs<\/dt><dd>[\s\S]*?<\/dd><\/div>/,
     '<div><dt id="begriff-sdgs">SDGs</dt><dd>Die Sustainable Development Goals sind die 17 Ziele der Agenda 2030 der Vereinten Nationen. Sie bilden den global verhandelten Referenzrahmen für nachhaltige Entwicklung. In der Wirkungsökonomie dienen sie als zentrale Grundlage zur Bewertung, ob Wirkung Mensch, Planet und Demokratie stärkt oder schwächt. <a class="text-link" href="verstehen/sdgs-sdgplus/">Mehr zum SDG-/SDG+-Referenzrahmen</a>. Verwandt: <a class="text-link" href="#begriff-nachhaltigkeit">Nachhaltigkeit</a>, <a class="text-link" href="#begriff-sdg-plus">SDG+</a>.</dd></div>',
   );
   html = html.replace(
     /<div><dt id="begriff-sdg-plus">SDG\+<\/dt><dd>[\s\S]*?<\/dd><\/div>/,
-    '<div><dt id="begriff-sdg-plus">SDG+</dt><dd>SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Sie ergänzt die SDGs um Wirkungsfelder, die für demokratische Stabilität zentral sind: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, gesellschaftlicher Zusammenhalt, institutionelles Vertrauen und digitale Selbstbestimmung. Für Nachhaltigkeit präzisiert SDG+, dass resiliente Systeme auch demokratische Korrekturräume brauchen. <a class="text-link" href="verstehen/sdgs-sdgplus/#sdgplus">Mehr zu SDG+ im Referenzrahmen</a> · <a class="text-link" href="sdg-plus.html">SDG+ Übersicht</a> · <a class="text-link" href="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Wirkung politischer Sprache ansehen</a>.</dd></div>',
+    '<div><dt id="begriff-sdg-plus">SDG+</dt><dd>SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Sie ergänzt die SDGs um Wirkungsfelder, die für demokratische Stabilität zentral sind: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, gesellschaftlicher Zusammenhalt, institutionelles Vertrauen und digitale Selbstbestimmung. Für Nachhaltigkeit präzisiert SDG+, dass resiliente Systeme auch demokratische Korrekturräume brauchen. <a class="text-link" href="verstehen/sdgs-sdgplus/#sdgplus">Mehr zu SDG+ im Referenzrahmen</a>.</dd></div>',
+  );
+  html = html.replace(
+    /<div><dt id="begriff-positive-netto-wirkung">Positive Netto-Wirkung<\/dt><dd>[\s\S]*?<\/dd><\/div>/,
+    '<div><dt id="begriff-positive-netto-wirkung">Positive Netto-Wirkung</dt><dd>Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie: eine zusammengeführte Bewertung positiver und negativer Wirkungen für Mensch, Planet und Demokratie unter Beachtung von Wirkungsgrenzen und Nichtkompensation. Der SDG-/SDG+-Referenzrahmen macht öffentlich nachvollziehbar, woran diese Bewertung anschließt. <a class="text-link" href="verstehen/sdgs-sdgplus/">Mehr zum SDG-/SDG+-Referenzrahmen</a>.</dd></div>',
   );
   fs.writeFileSync(file, html, "utf8");
 }
@@ -640,7 +922,11 @@ function updateSitemap() {
   const sitemapPath = path.join(ROOT, "sitemap.xml");
   if (!fs.existsSync(sitemapPath)) return;
   let sitemap = fs.readFileSync(sitemapPath, "utf8");
-  const urls = ["verstehen/sdgs-sdgplus/", "referenzrahmen/sdgs-sdgplus/", ...references.map((item) => `verstehen/sdgs-sdgplus/${item.slug}/`)];
+  for (const item of sdgPlus) {
+    const rel = `verstehen/sdgs-sdgplus/${item.slug}`;
+    sitemap = sitemap.replace(new RegExp(`\\s*<url>\\s*<loc>${SITE}/${rel}/</loc>\\s*<lastmod>[^<]+</lastmod>\\s*</url>`, "g"), "");
+  }
+  const urls = ["verstehen/sdgs-sdgplus/", "referenzrahmen/sdgs-sdgplus/", ...sdgs.map((item) => `verstehen/sdgs-sdgplus/${item.slug}/`)];
   const additions = urls
     .filter((url) => !sitemap.includes(`${SITE}/${url}`))
     .map((url) => `  <url>\n    <loc>${SITE}/${url}</loc>\n    <lastmod>${DATE}</lastmod>\n  </url>`)

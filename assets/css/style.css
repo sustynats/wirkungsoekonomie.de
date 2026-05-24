@@ -870,6 +870,15 @@ h4 {
   gap: 1rem;
 }
 
+.portal-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.portal-list li + li {
+  margin-top: 0.35rem;
+}
+
 .hero-audio {
   width: min(100%, 620px);
   margin-top: 1.6rem;

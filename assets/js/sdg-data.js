@@ -6,10 +6,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 1 - Keine Armut",
     "shortTitle": "SDG 1 Keine Armut",
     "slug": "sdg-1-keine-armut",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Armut in allen Formen beenden und soziale Sicherung, Zugang zu Grundversorgung und faire Teilhabe stärken.",
     "officialDescription": "Armut in allen Formen und überall beenden.",
     "woekMeaning": "Armut ist wirkungsökonomisch nicht nur Einkommensmangel, sondern ein Zustand eingeschränkter Handlungsfähigkeit, Gesundheit, Bildung, Sicherheit und demokratischer Teilhabe.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -28,6 +38,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal1"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -42,6 +56,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -86,10 +120,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 2 - Kein Hunger",
     "shortTitle": "SDG 2 Kein Hunger",
     "slug": "sdg-2-kein-hunger",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Ernährungssicherheit, nachhaltige Landwirtschaft, gesunde Ernährung und resiliente Ernährungssysteme stärken.",
     "officialDescription": "Hunger beenden, Ernährungssicherheit erreichen und nachhaltige Landwirtschaft fördern.",
     "woekMeaning": "Ernährungssysteme sind Wirkungsketten: Boden, Wasser, Biodiversität, Arbeit, Gesundheit, Lieferketten und Preise wirken zusammen.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -108,6 +152,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal2"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -122,6 +170,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -166,10 +234,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 3 - Gesundheit und Wohlergehen",
     "shortTitle": "SDG 3 Gesundheit Wohlergehen",
     "slug": "sdg-3-gesundheit-wohlergehen",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Gesundes Leben und Wohlergehen für alle Menschen in allen Altersgruppen fördern.",
     "officialDescription": "Gesundheit und Wohlergehen für alle Menschen fördern.",
     "woekMeaning": "Gesundheit ist nicht nur Reparatur von Krankheit. Wirkungsökonomisch zählen Prävention, Resilienz, Pflege, Teilhabe, Umweltbedingungen und psychische Stabilität.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -188,6 +266,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal3"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -202,6 +284,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -246,10 +348,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 4 - Hochwertige Bildung",
     "shortTitle": "SDG 4 Hochwertige Bildung",
     "slug": "sdg-4-hochwertige-bildung",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Inklusive, chancengerechte und hochwertige Bildung sowie lebenslanges Lernen ermöglichen.",
     "officialDescription": "Inklusive, chancengerechte und hochwertige Bildung sowie lebenslanges Lernen fördern.",
     "woekMeaning": "Bildung ist eine Wirkungsinfrastruktur: Sie stärkt Selbstwirksamkeit, Urteilskraft, Demokratiekompetenz, Teilhabe, digitale Mündigkeit und Zukunftsfähigkeit.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -328,6 +440,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal4"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -342,6 +458,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -391,10 +527,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 5 - Geschlechtergleichstellung",
     "shortTitle": "SDG 5 Geschlechtergleichstellung",
     "slug": "sdg-5-geschlechtergleichstellung",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Gleichstellung der Geschlechter erreichen und Selbstbestimmung von Frauen und Mädchen stärken.",
     "officialDescription": "Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen.",
     "woekMeaning": "Geschlechtergerechtigkeit betrifft Zugang, Sicherheit, Care, Einkommen, Repräsentation, Rollenbilder und Schutz vor struktureller Diskriminierung.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -413,6 +559,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal5"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -427,6 +577,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -471,10 +641,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 6 - Sauberes Wasser und Sanitäreinrichtungen",
     "shortTitle": "SDG 6 Sauberes Wasser Sanitäreinrichtungen",
     "slug": "sdg-6-sauberes-wasser-sanitaereinrichtungen",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Verfügbarkeit und nachhaltige Bewirtschaftung von Wasser und Sanitärversorgung sichern.",
     "officialDescription": "Wasser und Sanitärversorgung für alle verfügbar machen und nachhaltig bewirtschaften.",
     "woekMeaning": "Wasser ist Lebensgrundlage, Gesundheitsfaktor, Produktionsbedingung und ökologische Grenze. Produkt- und Lieferkettenwirkung muss Wasserstress sichtbar machen.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -493,6 +673,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal6"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -507,6 +691,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -551,10 +755,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 7 - Bezahlbare und saubere Energie",
     "shortTitle": "SDG 7 Bezahlbare saubere Energie",
     "slug": "sdg-7-bezahlbare-saubere-energie",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie sichern.",
     "officialDescription": "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie sichern.",
     "woekMeaning": "Energie entscheidet über Teilhabe, Industrie, Wohnen, Gesundheit, Klima und Resilienz. Wirkungsökonomisch zählt Versorgungssicherheit innerhalb planetarer Grenzen.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -573,6 +787,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal7"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -587,6 +805,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -631,10 +869,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 8 - Menschenwürdige Arbeit und Wirtschaftswachstum",
     "shortTitle": "SDG 8 Menschenwürdige Arbeit Wirtschaftswachstum",
     "slug": "sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Menschenwürdige Arbeit, produktive Beschäftigung und nachhaltige wirtschaftliche Entwicklung fördern.",
     "officialDescription": "Dauerhaftes, inklusives und nachhaltiges Wirtschaften sowie menschenwürdige Arbeit fördern.",
     "woekMeaning": "Arbeit wird nicht nur als Erwerbslogik betrachtet, sondern als Wirkung auf Würde, Einkommen, Gesundheit, Teilhabe, Kompetenz und Automatisierungsfolgen.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -653,6 +901,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal8"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -667,6 +919,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -715,10 +987,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 9 - Industrie, Innovation und Infrastruktur",
     "shortTitle": "SDG 9 Industrie, Innovation Infrastruktur",
     "slug": "sdg-9-industrie-innovation-infrastruktur",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Widerstandsfähige Infrastruktur, nachhaltige Industrialisierung und Innovation fördern.",
     "officialDescription": "Widerstandsfähige Infrastruktur, nachhaltige Industrialisierung und Innovation fördern.",
     "woekMeaning": "Innovation erzeugt nicht automatisch positive Wirkung. Entscheidend ist, ob Infrastruktur und Technik positive Netto-Wirkung wahrscheinlicher machen.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -737,6 +1019,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal9"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -751,6 +1037,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -799,10 +1105,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 10 - Weniger Ungleichheiten",
     "shortTitle": "SDG 10 Weniger Ungleichheiten",
     "slug": "sdg-10-weniger-ungleichheiten",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Ungleichheiten innerhalb und zwischen Ländern verringern.",
     "officialDescription": "Ungleichheit innerhalb und zwischen Ländern verringern.",
     "woekMeaning": "Ungleichheit schwächt Chancen, Gesundheit, Vertrauen, Demokratie und Resilienz. Wirkungsökonomie fragt, welche Regeln Teilhabe erhöhen oder Ausschluss verstärken.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -821,6 +1137,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal10"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -835,6 +1155,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -879,10 +1219,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 11 - Nachhaltige Städte und Gemeinden",
     "shortTitle": "SDG 11 Nachhaltige Städte Gemeinden",
     "slug": "sdg-11-nachhaltige-staedte-gemeinden",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten.",
     "officialDescription": "Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten.",
     "woekMeaning": "Orte wirken: Wohnen, Mobilität, Hitze, Sicherheit, soziale Nähe, Bildung, Gesundheit und demokratische Beteiligung entstehen räumlich.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -901,6 +1251,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal11"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -915,6 +1269,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -959,10 +1333,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 12 - Nachhaltiger Konsum und Produktion",
     "shortTitle": "SDG 12 Konsum Produktion",
     "slug": "sdg-12-nachhaltiger-konsum-produktion",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Nachhaltige Konsum- und Produktionsmuster sicherstellen.",
     "officialDescription": "Nachhaltige Konsum- und Produktionsmuster sicherstellen.",
     "woekMeaning": "Produkte sind Wirkungsträger. SDG 12 ist zentral für Produktscorecards, WÖk-IDs, digitale Produktpässe, Lieferketten und Wirkungsumsatzsteuer.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -981,6 +1365,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal12"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -995,6 +1383,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -1043,10 +1451,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 13 - Klimaschutz",
     "shortTitle": "SDG 13 Klimaschutz",
     "slug": "sdg-13-klimaschutz",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Dringende Maßnahmen zur Bekämpfung des Klimawandels und seiner Folgen ergreifen.",
     "officialDescription": "Dringende Maßnahmen gegen Klimawandel und seine Folgen ergreifen.",
     "woekMeaning": "Klima ist Systembedingung. Wirkungsökonomisch müssen Emissionen, Anpassung, Risiko, Versicherbarkeit, soziale Abfederung und Transformationswirkung gemeinsam betrachtet werden.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -1065,6 +1483,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal13"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -1079,6 +1501,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -1127,10 +1569,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 14 - Leben unter Wasser",
     "shortTitle": "SDG 14 Leben unter Wasser",
     "slug": "sdg-14-leben-unter-wasser",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Ozeane, Meere und Meeresressourcen erhalten und nachhaltig nutzen.",
     "officialDescription": "Ozeane, Meere und Meeresressourcen erhalten und nachhaltig nutzen.",
     "woekMeaning": "Meere sind ökologische Stabilitätsräume. Produktketten, Chemikalien, Plastik, Ernährung, Energie und Klima wirken auf marine Systeme zurück.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -1149,6 +1601,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal14"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -1163,6 +1619,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -1202,10 +1678,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 15 - Leben an Land",
     "shortTitle": "SDG 15 Leben an Land",
     "slug": "sdg-15-leben-an-land",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Landökosysteme, Wälder, Böden und Biodiversität schützen, wiederherstellen und nachhaltig nutzen.",
     "officialDescription": "Landökosysteme schützen, wiederherstellen und nachhaltig nutzen.",
     "woekMeaning": "Biodiversität, Böden, Wälder und Landnutzung sind Grundlage von Ernährung, Gesundheit, Klimaresilienz und langfristiger Wertschöpfung.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -1224,6 +1710,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal15"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -1238,6 +1728,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -1282,10 +1792,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 16 - Frieden, Gerechtigkeit und starke Institutionen",
     "shortTitle": "SDG 16 Frieden, Gerechtigkeit starke Institutionen",
     "slug": "sdg-16-frieden-gerechtigkeit-starke-institutionen",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Friedliche, inklusive Gesellschaften, Rechtsstaatlichkeit, Zugang zu Recht und wirksame Institutionen fördern.",
     "officialDescription": "Friedliche und inklusive Gesellschaften, Zugang zur Justiz und wirksame Institutionen fördern.",
     "woekMeaning": "SDG 16 ist die Brücke zu SDG+: Ohne Rechtsstaatlichkeit, Vertrauen, Demokratie und öffentliche Wahrheit können nachhaltige Ziele nicht stabil erreicht werden.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -1304,6 +1824,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal16"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -1318,6 +1842,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -1366,10 +1910,20 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG 17 - Partnerschaften",
     "shortTitle": "SDG 17 Partnerschaften",
     "slug": "sdg-17-partnerschaften",
+    "anchor": "",
     "url": "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/",
+    "legacyUrl": "",
+    "isOfficialUNGoal": true,
+    "officialNote": "",
     "hoverText": "Globale Partnerschaften, Zusammenarbeit, Finanzierung, Daten und Umsetzungskraft für nachhaltige Entwicklung stärken.",
     "officialDescription": "Umsetzungsmittel stärken und globale Partnerschaften für nachhaltige Entwicklung beleben.",
     "woekMeaning": "Wirkung entsteht in Netzwerken: Daten, Finanzierung, Institutionen, Wissenschaft, Kommunen, Unternehmen und Zivilgesellschaft müssen rückkopplungsfähig zusammenarbeiten.",
+    "whyNeeded": "",
+    "officialSdgConnection": "",
+    "relatedSdgs": [],
+    "subdimensions": [],
+    "indicatorFamilies": [],
+    "redLines": [],
     "germanyEuropeRelevance": "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
     "targets": [
       {
@@ -1388,6 +1942,10 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://sdgs.un.org/goals/goal17"
       },
       {
+        "label": "UN Sustainable Development Goals",
+        "url": "https://sdgs.un.org/goals"
+      },
+      {
         "label": "UN Statistics - SDG Indicators",
         "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
       },
@@ -1402,6 +1960,26 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
+      },
+      {
+        "label": "UNESCO ROAM-X Indicators",
+        "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
+      },
+      {
+        "label": "World Justice Project - Rule of Law Factors",
+        "url": "https://worldjusticeproject.org/our-work/research-and-data/factors-rule-law"
+      },
+      {
+        "label": "V-Dem Democracy Reports",
+        "url": "https://www.v-dem.net/publications/democracy-reports/"
+      },
+      {
+        "label": "Reporters Without Borders - Press Freedom Index Methodology",
+        "url": "https://rsf.org/en/index-methodologie-2022"
+      },
+      {
+        "label": "OECD - Drivers of Trust in Public Institutions",
+        "url": "https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en.html"
       }
     ],
     "relatedWirkungsfelder": [
@@ -1450,10 +2028,49 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ Demokratie",
     "shortTitle": "SDG+ Demokratie",
     "slug": "sdgplus-demokratie",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-demokratie/",
-    "hoverText": "Demokratische Stabilität, Teilhabe, Streitfähigkeit, Minderheitenschutz und Korrekturfähigkeit als Voraussetzung positiver Netto-Wirkung.",
+    "anchor": "#sdgplus-demokratie",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-demokratie",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-demokratie/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ Demokratie macht demokratische Stabilitaet, Teilhabe, Streitfaehigkeit und Korrekturfaehigkeit als Wirkungsbedingung sichtbar.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Demokratie beschreibt die Fähigkeit einer Gesellschaft, Macht zu begrenzen, Konflikte friedlich zu bearbeiten, Minderheiten zu schützen und Entscheidungen korrigierbar zu halten.",
+    "woekMeaning": "Demokratie meint in der Wirkungsökonomie mehr als Wahlen und Institutionen. Sie ist ein Wirkungsraum, in dem Wahrheit, Rechtsstaatlichkeit, Beteiligung, Machtbegrenzung, Minderheitenschutz, öffentliche Korrektur und digitale Selbstbestimmung zusammenwirken.",
+    "whyNeeded": "Die SDGs enthalten mit SDG 16 Frieden, Gerechtigkeit und starke Institutionen. Für eine Wirkungsordnung des 21. Jahrhunderts reicht das nicht aus, weil digitale Öffentlichkeit, Plattformmacht, Desinformation, algorithmische Steuerung, hybride Einflussnahme und Vertrauensverlust demokratische Korrekturfähigkeit beschädigen können.",
+    "officialSdgConnection": "SDG 16 ist der direkte Anschluss. SDG 4, SDG 10, SDG 11 und SDG 17 sind wichtige Nebenanker, weil Bildung, Ungleichheit, lokale Räume und Partnerschaften demokratische Teilhabe prägen.",
+    "relatedSdgs": [
+      "sdg-16",
+      "sdg-4",
+      "sdg-10",
+      "sdg-11",
+      "sdg-17"
+    ],
+    "subdimensions": [
+      "freie und faire Wahlen",
+      "Machtbegrenzung und Gewaltenteilung",
+      "Beteiligung und Teilgabe",
+      "Minderheitenschutz und Grundrechte",
+      "demokratische Streitfaehigkeit",
+      "Schutz vor Desinformation und Manipulation",
+      "politische Transparenz und Rechenschaft",
+      "demokratische Resilienz in Krisen"
+    ],
+    "indicatorFamilies": [
+      "Wahlfreiheit und Wahlfairness",
+      "Beteiligungsquoten und Zugangsbarrieren",
+      "Transparenz politischer Finanzierung",
+      "Qualität öffentlicher Konsultationen",
+      "Desinformations- und Manipulationsrisiken",
+      "Vertrauen in demokratische Verfahren",
+      "Schutz von Minderheiten und zivilgesellschaftlichem Raum"
+    ],
+    "redLines": [
+      "Wahlmanipulation",
+      "systematische Einschüchterung politischer Gegner:innen",
+      "Abbau unabhängiger Gerichte",
+      "staatlich organisierte Desinformation",
+      "Ausschluss von Minderheiten aus Teilhabe"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1471,31 +2088,49 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
+        "why": "SDG+ Demokratie ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "why": "SDG+ Demokratie ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "why": "SDG+ Demokratie ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Wissenschaft, Innovation & Digitalisierung",
+        "url": "/wirkungsfelder/wissenschaft-innovation-digitalisierung/",
+        "why": "SDG+ Demokratie ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Kultur, Identität & Resonanz",
+        "url": "/wirkungsfelder/kultur-identitaet-resonanz/",
+        "why": "SDG+ Demokratie ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
-      {
-        "title": "WÖk-IDs",
-        "url": "/werkzeuge/woek-ids/"
-      },
       {
         "title": "Wirkungsrat",
         "url": "/werkzeuge/wirkungsrat/"
       },
       {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Wirkungshaushalt",
+        "url": "/werkzeuge/wirkungshaushalt/"
+      },
+      {
+        "title": "WÖk-IDs",
+        "url": "/werkzeuge/woek-ids/"
+      },
+      {
+        "title": "Medienwirkungscheck",
+        "url": "/werkzeuge/"
+      },
+      {
+        "title": "Wirkungsprüfung politischer Sprache",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
@@ -1514,10 +2149,48 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ Medienqualität",
     "shortTitle": "SDG+ Medienqualität",
     "slug": "sdgplus-medienqualitaet",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/",
-    "hoverText": "Qualität öffentlicher Information, journalistische Verantwortung, Quellenklarheit und Schutz vor Desinformation.",
+    "anchor": "#sdgplus-medienqualitaet",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-medienqualitaet",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ Medienqualität bewertet öffentliche Informationsräume: Quellenklarheit, journalistische Verantwortung, Desinformationsschutz und demokratische Orientierung.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Medienqualität beschreibt die Verlässlichkeit öffentlicher Information, Quellenklarheit, Kontext, Fehlerkorrektur und Schutz vor manipulativer Verzerrung.",
+    "woekMeaning": "Medienqualität bezeichnet die Fähigkeit öffentlicher Informationsräume, überprüfbare, vielfältige, relevante und kontextualisierte Informationen bereitzustellen, ohne Aufmerksamkeit systematisch gegen Wahrheit, Würde oder Demokratie auszuspielen.",
+    "whyNeeded": "Reichweite ist keine Orientierung. Medien und Plattformen können Aufmerksamkeit erzeugen und zugleich Vertrauen, Gesundheit, Demokratie oder Minderheitenschutz schwächen. Die klassische SDG-Systematik adressiert Informationsqualität nur indirekt.",
+    "officialSdgConnection": "SDG 16 ist der institutionelle Anker. SDG 4 ist relevant für Medienbildung. SDG 10 und SDG 17 betreffen Zugang und Kooperation.",
+    "relatedSdgs": [
+      "sdg-16",
+      "sdg-4",
+      "sdg-10",
+      "sdg-17"
+    ],
+    "subdimensions": [
+      "Quellenklarheit und Transparenz",
+      "journalistische Sorgfalt",
+      "redaktionelle Unabhängigkeit",
+      "Faktenprüfung und Korrekturmechanismen",
+      "Pluralität und Perspektivenvielfalt",
+      "Schutz vor Desinformation",
+      "algorithmische Verstärkungslogiken",
+      "ökonomische Unabhängigkeit von Qualitätsjournalismus"
+    ],
+    "indicatorFamilies": [
+      "Anteil belegter Quellen",
+      "Korrekturrate und Korrekturtransparenz",
+      "Eigentümer- und Finanzierungsstrukturen",
+      "Desinformations-Viralität",
+      "Vielfalt der Quellen und Stimmen",
+      "Trennung von Werbung, Meinung und Nachricht",
+      "Verfügbarkeit lokaler und gemeinwohlorientierter Medien"
+    ],
+    "redLines": [
+      "koordinierte Desinformation",
+      "nicht gekennzeichnete politische Werbung",
+      "systematische Verleumdung von Gruppen",
+      "Gewaltaufrufe",
+      "algorithmische Verstärkung eindeutig falscher oder manipulativer Inhalte ohne Korrekturpfad"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1533,33 +2206,46 @@ window.WOEK_SDG_REFERENCES = [
     ],
     "relatedWirkungsfelder": [
       {
-        "title": "Staat, Recht & Demokratie",
-        "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
-      },
-      {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "why": "SDG+ Medienqualität ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Staat, Recht & Demokratie",
+        "url": "/wirkungsfelder/staat-recht-demokratie/",
+        "why": "SDG+ Medienqualität ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "why": "SDG+ Medienqualität ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Wissenschaft, Innovation & Digitalisierung",
+        "url": "/wirkungsfelder/wissenschaft-innovation-digitalisierung/",
+        "why": "SDG+ Medienqualität ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
+      {
+        "title": "Medienwirkungscheck",
+        "url": "/werkzeuge/"
+      },
+      {
+        "title": "Sprachwirkungsanalyse",
+        "url": "/werkzeuge/"
+      },
+      {
+        "title": "Quellenklarheits-Tool",
+        "url": "/werkzeuge/"
+      },
       {
         "title": "WÖk-IDs",
         "url": "/werkzeuge/woek-ids/"
       },
       {
-        "title": "Wirkungsrat",
-        "url": "/werkzeuge/wirkungsrat/"
-      },
-      {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Agentur für Digitale Öffentlichkeit",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
@@ -1578,10 +2264,47 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ Rechtsstaatlichkeit",
     "shortTitle": "SDG+ Rechtsstaatlichkeit",
     "slug": "sdgplus-rechtsstaatlichkeit",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/",
-    "hoverText": "Verlässliche Regeln, Grundrechte, Minderheitenschutz, unabhängige Gerichte und Schutz vor Willkür.",
+    "anchor": "#sdgplus-rechtsstaatlichkeit",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Rechtsstaatlichkeit sichert Grundrechte, Verfahren, Rechtsschutz, Minderheitenschutz und Begrenzung willkürlicher Macht.",
+    "woekMeaning": "Rechtsstaatlichkeit bezeichnet den Zustand, in dem Macht rechtlich begrenzt, Verfahren nachvollziehbar, Grundrechte wirksam, Gerichte unabhängig und Rechtsschutz zugänglich sind. Ohne Rechtsstaat wird Wirkungsmessung zur Machttechnik.",
+    "whyNeeded": "Wirkung braucht Regeln, aber Regeln brauchen Grenzen. Daten, Scorecards, Steuern und Bewertung können missbraucht werden. Rechtsstaatlichkeit schützt davor, dass Wirkungssteuerung technokratisch, willkürlich oder repressiv wird.",
+    "officialSdgConnection": "SDG 16 ist der direkte Anker. SDG 10 und SDG 17 sind relevant, weil Rechtszugang, faire Verfahren und internationale Kooperation Ungleichheit und Machtmissbrauch begrenzen.",
+    "relatedSdgs": [
+      "sdg-16",
+      "sdg-10",
+      "sdg-17"
+    ],
+    "subdimensions": [
+      "unabhängige Gerichte",
+      "Grundrechte und Minderheitenschutz",
+      "Verhältnismäßigkeit",
+      "Rechtsschutz und Beschwerdewege",
+      "Korruptionsprävention",
+      "offene Verwaltung",
+      "Rechtssicherheit",
+      "Datenschutz und Schutz vor willkürlicher Überwachung"
+    ],
+    "indicatorFamilies": [
+      "Zugang zu Justiz",
+      "Dauer und Fairness von Verfahren",
+      "Unabhängigkeit der Justiz",
+      "Korruptionsrisiko",
+      "Transparenz staatlicher Entscheidungen",
+      "Grundrechtsverletzungen",
+      "Beschwerde- und Einspruchsmöglichkeiten bei automatisierten Entscheidungen"
+    ],
+    "redLines": [
+      "willkürliche Personenbewertung",
+      "Social-Credit-Logik",
+      "fehlender Rechtsschutz gegen automatisierte Entscheidungen",
+      "politische Vereinnahmung von Gerichten",
+      "diskriminierende Rechtsanwendung"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1599,31 +2322,39 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
+        "why": "SDG+ Rechtsstaatlichkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "why": "SDG+ Rechtsstaatlichkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
-        "title": "Bildung",
-        "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "title": "Finanzsystem & Kapital",
+        "url": "/wirkungsfelder/finanzsystem-kapital/",
+        "why": "SDG+ Rechtsstaatlichkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
       {
-        "title": "WÖk-IDs",
-        "url": "/werkzeuge/woek-ids/"
+        "title": "LawReader",
+        "url": "/werkstatt/gesetze/wirkungssteuergesetz/"
+      },
+      {
+        "title": "LawReference",
+        "url": "/werkstatt/gesetze/wirkungssteuergesetz/"
       },
       {
         "title": "Wirkungsrat",
         "url": "/werkzeuge/wirkungsrat/"
       },
       {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Wirkungsprüfung",
+        "url": "/werkzeuge/woek-ids/"
+      },
+      {
+        "title": "Rechtsfolgen-Check",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
@@ -1642,10 +2373,46 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ Diskursfähigkeit",
     "shortTitle": "SDG+ Diskursfähigkeit",
     "slug": "sdgplus-diskursfaehigkeit",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/",
-    "hoverText": "Die Fähigkeit einer Gesellschaft, Konflikte faktenbasiert, respektvoll und demokratisch zu bearbeiten.",
+    "anchor": "#sdgplus-diskursfaehigkeit",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ Diskursfähigkeit macht sichtbar, ob Gesellschaften Konflikte faktenbasiert, respektvoll und korrekturfähig bearbeiten können.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Diskursfähigkeit beschreibt, ob eine Gesellschaft streiten, zuhören, korrigieren und gemeinsame Wirklichkeit herstellen kann.",
+    "woekMeaning": "Diskursfähigkeit beschreibt die soziale und institutionelle Fähigkeit, Widerspruch auszuhalten, Fakten zu prüfen, Zielkonflikte offen zu verhandeln und Entscheidungen so zu begründen, dass Korrektur möglich bleibt.",
+    "whyNeeded": "Nachhaltigkeit erzeugt Zielkonflikte: Klima, soziale Sicherheit, Wirtschaft, Migration, Energie, Wohnen, Freiheit und Gesundheit stehen nicht immer spannungsfrei nebeneinander. Ohne Diskursfähigkeit werden Zielkonflikte zu Polarisierung statt zu Lernen.",
+    "officialSdgConnection": "SDG 16 und SDG 17 sind zentrale Anker. SDG 4 ist relevant, weil Diskursfähigkeit gelernt werden muss.",
+    "relatedSdgs": [
+      "sdg-16",
+      "sdg-17",
+      "sdg-4"
+    ],
+    "subdimensions": [
+      "Faktenbezug und Quellenfähigkeit",
+      "Respekt und Konfliktfähigkeit",
+      "Ambiguitätstoleranz",
+      "Deliberation und Beteiligung",
+      "Polarisationserkennung",
+      "Korrekturfähigkeit",
+      "Schutz vor Dehumanisierung",
+      "Übersetzung zwischen Fachsprache und Öffentlichkeit"
+    ],
+    "indicatorFamilies": [
+      "Anteil faktenbasierter Begründungen in Verfahren",
+      "Qualität öffentlicher Konsultationen",
+      "Polarisierungsmarker",
+      "Hass- und Dehumanisierungsindikatoren",
+      "Vielfalt der Beteiligten",
+      "Korrektur- und Lernschleifen in politischen Prozessen"
+    ],
+    "redLines": [
+      "Aufruf zur Gewalt",
+      "systematische Entmenschlichung",
+      "gezielte Desinformation in Krisen",
+      "Ausschluss betroffener Gruppen aus Debatten",
+      "Manipulation von Beteiligungsverfahren"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1661,33 +2428,42 @@ window.WOEK_SDG_REFERENCES = [
     ],
     "relatedWirkungsfelder": [
       {
-        "title": "Staat, Recht & Demokratie",
-        "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
-      },
-      {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "why": "SDG+ Diskursfähigkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "why": "SDG+ Diskursfähigkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Staat, Recht & Demokratie",
+        "url": "/wirkungsfelder/staat-recht-demokratie/",
+        "why": "SDG+ Diskursfähigkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Kultur, Identität & Resonanz",
+        "url": "/wirkungsfelder/kultur-identitaet-resonanz/",
+        "why": "SDG+ Diskursfähigkeit ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
       {
-        "title": "WÖk-IDs",
-        "url": "/werkzeuge/woek-ids/"
+        "title": "Sprachwirkungsanalyse",
+        "url": "/werkzeuge/"
       },
       {
-        "title": "Wirkungsrat",
-        "url": "/werkzeuge/wirkungsrat/"
+        "title": "Diskursqualitäts-Check",
+        "url": "/werkzeuge/"
       },
       {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Moderations- und Beteiligungsformate",
+        "url": "/werkzeuge/"
+      },
+      {
+        "title": "Wirkungsprüfung politischer Kommunikation",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
@@ -1706,10 +2482,47 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ institutionelles Vertrauen",
     "shortTitle": "SDG+ institutionelles Vertrauen",
     "slug": "sdgplus-institutionelles-vertrauen",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/",
-    "hoverText": "Vertrauen in Institutionen, Verfahren, Datenqualität, Transparenz und demokratische Korrekturmechanismen.",
+    "anchor": "#sdgplus-institutionelles-vertrauen",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Institutionelles Vertrauen entsteht, wenn Verfahren, Daten, Regeln und Verantwortlichkeiten nachvollziehbar, korrigierbar und fair sind.",
+    "woekMeaning": "Institutionelles Vertrauen ist nicht blinder Gehorsam. Es ist die begründete Erwartung, dass Institutionen kompetent, fair, transparent, zugänglich, lernfähig und rechenschaftspflichtig handeln.",
+    "whyNeeded": "Wirkungsökonomie braucht Daten, Institutionen und Rückkopplung. Wenn Menschen nicht vertrauen können, dass Datenqualität, Wirkungsrat, Steuerlogik und politische Entscheidungen fair sind, kippt Wirkungsmessung in Misstrauen.",
+    "officialSdgConnection": "SDG 16 und SDG 17 sind direkte Anker. SDG 10 ist relevant, weil Ungleichheit Vertrauen schwächt.",
+    "relatedSdgs": [
+      "sdg-16",
+      "sdg-17",
+      "sdg-10"
+    ],
+    "subdimensions": [
+      "Kompetenz und Leistungsfähigkeit",
+      "Integrität und Korruptionsschutz",
+      "Fairness und Gleichbehandlung",
+      "Offenheit und Transparenz",
+      "Zugänglichkeit und Servicequalität",
+      "Evidenzorientierung",
+      "Fehlerkultur und Korrektur",
+      "Zukunftsverantwortung"
+    ],
+    "indicatorFamilies": [
+      "Vertrauen in Regierung, Verwaltung, Gerichte und Medien",
+      "wahrgenommene Fairness",
+      "Transparenz von Entscheidungen",
+      "Nutzung bester verfügbarer Evidenz",
+      "Beschwerdezugang",
+      "Integritäts- und Korruptionsindikatoren",
+      "Dauer und Verständlichkeit von Verfahren"
+    ],
+    "redLines": [
+      "intransparente Datenverwendung",
+      "politisch gekaperte Bewertung",
+      "fehlender Beschwerdeweg",
+      "Korruption",
+      "Wirkungssimulation oder Greenwashing durch Institutionen"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1727,31 +2540,44 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
-        "title": "Medien & Öffentlichkeit",
-        "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "title": "Gesundheit & Pflege",
+        "url": "/wirkungsfelder/gesundheit-pflege/",
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
-        "title": "Bildung",
-        "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "title": "Wohnen & Stadt",
+        "url": "/wirkungsfelder/wohnen-stadt/",
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Produkte & Konsum",
+        "url": "/wirkungsfelder/produkte-konsum/",
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
-      {
-        "title": "WÖk-IDs",
-        "url": "/werkzeuge/woek-ids/"
-      },
       {
         "title": "Wirkungsrat",
         "url": "/werkzeuge/wirkungsrat/"
       },
       {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Wirkungsberichte",
+        "url": "/werkstatt/"
+      },
+      {
+        "title": "Wirkungshaushalt",
+        "url": "/werkzeuge/wirkungshaushalt/"
+      },
+      {
+        "title": "Transparenzdashboard",
+        "url": "/werkzeuge/"
+      },
+      {
+        "title": "Wirkungsprüfung öffentlicher Mittel",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
@@ -1770,10 +2596,54 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ gesellschaftlicher Zusammenhalt",
     "shortTitle": "SDG+ gesellschaftlicher Zusammenhalt",
     "slug": "sdgplus-gesellschaftlicher-zusammenhalt",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/",
-    "hoverText": "Soziale Bindung, Zugehörigkeit, Teilhabe, Sicherheit, Fairness und Schutz vor Spaltung.",
+    "anchor": "#sdgplus-gesellschaftlicher-zusammenhalt",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ gesellschaftlicher Zusammenhalt macht sichtbar, ob Teilhabe, Zugehörigkeit, Sicherheit, Fairness und Schutz vor Spaltung gestärkt werden.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Gesellschaftlicher Zusammenhalt beschreibt Zugehörigkeit, Sicherheit, Fairness, Teilhabe und die Fähigkeit, Differenzen auszuhalten.",
+    "woekMeaning": "Gesellschaftlicher Zusammenhalt bezeichnet die Qualität sozialer Räume, Beziehungen und Verfahren, in denen Menschen sich zugehörig, sicher, beteiligt und fair behandelt fühlen. Er ist weder Homogenität noch Anpassungsdruck, sondern pluraler Zusammenhalt.",
+    "whyNeeded": "Viele SDGs behandeln soziale Fragen, aber die systemische Qualität des Zusammenhalts ist mehr als die Summe einzelner Armuts-, Bildungs- oder Ungleichheitsindikatoren.",
+    "officialSdgConnection": "SDG 1, 3, 4, 5, 8, 10, 11 und 16 sind besonders relevant. SDG+ verbindet diese Ziele über die Frage, ob Gesellschaft als gemeinsamer Wirkungsraum tragfähig bleibt.",
+    "relatedSdgs": [
+      "sdg-1",
+      "sdg-3",
+      "sdg-4",
+      "sdg-5",
+      "sdg-8",
+      "sdg-10",
+      "sdg-11",
+      "sdg-16"
+    ],
+    "subdimensions": [
+      "Zugehörigkeit und Anerkennung",
+      "soziale Sicherheit",
+      "gerechte Teilhabe",
+      "regionale Gleichwertigkeit",
+      "Antidiskriminierung",
+      "Generationengerechtigkeit",
+      "öffentliche Räume",
+      "Care, Familie und soziale Netze",
+      "Resilienz gegen Spaltung"
+    ],
+    "indicatorFamilies": [
+      "Einsamkeit und soziale Isolation",
+      "wahrgenommene Zugehörigkeit",
+      "Diskriminierungserfahrungen",
+      "Mietbelastung und Wohnstabilität",
+      "Zugang zu Bildung, Gesundheit und Kultur",
+      "regionale Lebensqualität",
+      "Teilhabequoten",
+      "Armuts- und Prekaritätsrisiken"
+    ],
+    "redLines": [
+      "systematische Ausgrenzung",
+      "gruppenbezogene Menschenfeindlichkeit",
+      "soziale Spaltung durch politische oder wirtschaftliche Anreize",
+      "Verdrängung aus Grundbedarfsräumen",
+      "Normalisierung von Hass oder Entwertung"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1789,33 +2659,51 @@ window.WOEK_SDG_REFERENCES = [
     ],
     "relatedWirkungsfelder": [
       {
-        "title": "Staat, Recht & Demokratie",
-        "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
+        "title": "Wohnen & Stadt",
+        "url": "/wirkungsfelder/wohnen-stadt/",
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
-        "title": "Medien & Öffentlichkeit",
-        "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "title": "Gesundheit & Pflege",
+        "url": "/wirkungsfelder/gesundheit-pflege/",
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Arbeit & Einkommen",
+        "url": "/wirkungsfelder/arbeit-einkommen/",
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Kultur, Identität & Resonanz",
+        "url": "/wirkungsfelder/kultur-identitaet-resonanz/",
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
       {
-        "title": "WÖk-IDs",
-        "url": "/werkzeuge/woek-ids/"
+        "title": "Wirkungsförderung",
+        "url": "/wirkungsfelder/bildung/"
       },
       {
-        "title": "Wirkungsrat",
-        "url": "/werkzeuge/wirkungsrat/"
+        "title": "Wirkungsrente",
+        "url": "/wirkungsfelder/rente-soziale-sicherung/"
       },
       {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Wirkungseinkommen",
+        "url": "/wirkungsfelder/arbeit-einkommen/"
+      },
+      {
+        "title": "kommunale Wirkungsbudgets",
+        "url": "/werkzeuge/"
+      },
+      {
+        "title": "Quartierswirkungscheck",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
@@ -1834,10 +2722,51 @@ window.WOEK_SDG_REFERENCES = [
     "title": "SDG+ digitale Selbstbestimmung",
     "shortTitle": "SDG+ digitale Selbstbestimmung",
     "slug": "sdgplus-digitale-selbstbestimmung",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/",
-    "hoverText": "Schutz vor Manipulation, Datenrechte, algorithmische Fairness, digitale Teilhabe und souveräne Nutzung digitaler Räume.",
+    "anchor": "#sdgplus-digitale-selbstbestimmung",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/",
+    "isOfficialUNGoal": false,
+    "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
+    "hoverText": "SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation.",
     "officialDescription": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
-    "woekMeaning": "Digitale Selbstbestimmung beschreibt die Fähigkeit, digitale Räume, Daten, Plattformen und algorithmische Systeme informiert und souverän zu nutzen.",
+    "woekMeaning": "Digitale Selbstbestimmung bezeichnet die Fähigkeit und das Recht, digitale Räume, Daten, Plattformen, KI-Systeme und algorithmische Entscheidungen zu verstehen, zu nutzen, zu kontrollieren und sich gegen Manipulation, Überwachung und Ausschluss zu schützen.",
+    "whyNeeded": "Seit 2015 haben Plattformmacht, generative KI, Datenökonomien, algorithmische Empfehlungssysteme, Deepfakes und digitale Abhängigkeiten eine neue Wirkungsintensität erreicht. Digitale Selbstbestimmung ist Bedingung von Demokratie, Bildung, Arbeit, Gesundheit und Konsumfreiheit.",
+    "officialSdgConnection": "SDG 4, SDG 9, SDG 10, SDG 16 und SDG 17 sind zentrale Anker. SDG+ präzisiert Datenrechte, algorithmische Fairness, Plattformmacht und Manipulationsschutz.",
+    "relatedSdgs": [
+      "sdg-4",
+      "sdg-9",
+      "sdg-10",
+      "sdg-16",
+      "sdg-17"
+    ],
+    "subdimensions": [
+      "Datenschutz und Datenrechte",
+      "algorithmische Transparenz",
+      "algorithmische Fairness",
+      "Schutz vor Manipulation und Dark Patterns",
+      "digitale Teilhabe und Barrierefreiheit",
+      "KI-Kompetenz und Medienkompetenz",
+      "Cyber- und Infrastruktursicherheit",
+      "Schutz von Kindern und vulnerablen Gruppen",
+      "Interoperabilität und offene digitale Infrastruktur"
+    ],
+    "indicatorFamilies": [
+      "Zugang zu digitalen Diensten",
+      "digitale Kompetenzen",
+      "Transparenz automatisierter Entscheidungen",
+      "Beschwerdewege gegen algorithmische Entscheidungen",
+      "Datenschutzverletzungen",
+      "Manipulations- und Dark-Pattern-Risiken",
+      "Cyberresilienz",
+      "KI-Einsatzfolgenabschätzung"
+    ],
+    "redLines": [
+      "biometrische Massenüberwachung ohne Schutz und Rechtsweg",
+      "manipulative Plattformarchitektur",
+      "diskriminierende automatisierte Entscheidungen",
+      "fehlende menschliche Kontrolle bei Hochrisikoentscheidungen",
+      "Datenmissbrauch ohne wirksame Abhilfe"
+    ],
     "germanyEuropeRelevance": "Für Deutschland und Europa ist diese Dimension relevant, weil nachhaltige Entwicklung auf demokratische Stabilität, öffentliche Wahrheit, Rechtsstaatlichkeit, Vertrauen, Zusammenhalt und digitale Grundrechte angewiesen ist.",
     "targets": [],
     "relevantTargetsGermanyEurope": [],
@@ -1853,33 +2782,56 @@ window.WOEK_SDG_REFERENCES = [
     ],
     "relatedWirkungsfelder": [
       {
-        "title": "Staat, Recht & Demokratie",
-        "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "Institutionen, Recht, Beteiligung und öffentliche Verantwortung sind Kern dieser SDG+-Dimension."
+        "title": "Wissenschaft, Innovation & Digitalisierung",
+        "url": "/wirkungsfelder/wissenschaft-innovation-digitalisierung/",
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "Öffentliche Resonanz, Information und Diskursqualität wirken auf demokratische Stabilität."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "Demokratiekompetenz, Medienkompetenz und digitale Mündigkeit werden gelernt und praktiziert."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Staat, Recht & Demokratie",
+        "url": "/wirkungsfelder/staat-recht-demokratie/",
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Produkte & Konsum",
+        "url": "/wirkungsfelder/produkte-konsum/",
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+      },
+      {
+        "title": "Gesundheit & Pflege",
+        "url": "/wirkungsfelder/gesundheit-pflege/",
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
       {
-        "title": "WÖk-IDs",
-        "url": "/werkzeuge/woek-ids/"
+        "title": "KI-Wirkungsrisiko-Check",
+        "url": "/werkzeuge/"
       },
       {
-        "title": "Wirkungsrat",
-        "url": "/werkzeuge/wirkungsrat/"
+        "title": "Datenraum-Reifegradcheck",
+        "url": "/werkzeuge/"
       },
       {
-        "title": "Scorecards",
-        "url": "/werkzeuge/scorecards/"
+        "title": "Digitale Produktpässe",
+        "url": "/werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+      },
+      {
+        "title": "Wirkungsscanner",
+        "url": "/erleben.html"
+      },
+      {
+        "title": "Algorithmic-Impact-Assessment",
+        "url": "/werkzeuge/"
       }
     ],
     "relatedBookAnchors": [
