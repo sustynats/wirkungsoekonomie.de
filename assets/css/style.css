@@ -140,6 +140,74 @@ a {
   padding: 0.7rem 0.9rem;
 }
 
+.content-band {
+  margin-block: clamp(1.5rem, 4vw, 3rem);
+}
+
+.content-band > h2 {
+  margin-bottom: 1rem;
+}
+
+.az-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-block: 1.25rem 2rem;
+}
+
+.az-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2rem;
+  min-height: 2.2rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--green-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.az-nav a:hover,
+.az-nav a:focus-visible {
+  border-color: var(--green);
+  background: rgba(47, 125, 92, 0.1);
+}
+
+.info-card {
+  min-width: 0;
+  padding: clamp(1.1rem, 2.4vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.info-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.18rem, 1.4vw, 1.45rem);
+}
+
+.info-card h3 a {
+  color: var(--navy);
+  text-decoration-color: rgba(47, 125, 92, 0.38);
+  text-underline-offset: 0.15em;
+}
+
+.info-card p {
+  margin: 0;
+  color: var(--text);
+}
+
+.info-card p + p {
+  margin-top: 0.75rem;
+}
+
+.info-card .meta-line {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .reference-term-notice,
 .chapter-glossary {
   width: min(var(--container), calc(100% - (2 * var(--space-gutter))));

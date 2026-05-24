@@ -4,6 +4,17 @@ import path from "node:path";
 const data = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
 const outDir = "begriffe";
 fs.mkdirSync(outDir, { recursive: true });
+const categoryOrder = [
+  "Grundbegriff",
+  "Bewertungsbegriff",
+  "Messbegriff",
+  "Steuerungsbegriff",
+  "Architekturbegriff",
+  "Schutzbegriff",
+  "Datenbegriff",
+  "Demokratiebegriff",
+  "Praxisbegriff",
+];
 
 function esc(value) {
   return String(value ?? "")
@@ -21,7 +32,7 @@ function pageShell(title, body, depth = "") {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(title)} - Wirkungsökonomie</title>
     <meta name="description" content="Begriffsreferenz der Wirkungsökonomie: ${esc(title)}.">
-    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260523-reference">
+    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260524-begriffe-css-fix">
   </head>
   <body>
     <header class="site-header">
@@ -54,11 +65,24 @@ for (const term of data.terms) {
 }
 
 const nav = Array.from(groups.keys()).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
+const categories = categoryOrder.filter((category) => data.terms.some((term) => term.category === category));
 const indexBody = `      <section class="hero compact-hero">
         <p class="hero-kicker">WÖk-Referenzsystem</p>
         <h1>Begriffe der Wirkungsökonomie</h1>
         <p class="hero-subtitle">Alphabetische Begriffsschicht für Hoverdefinitionen, Crosslinks, Terminologieprüfung, Suche und spätere PDF-Glossare.</p>
-        <p class="notice">Phase 1: zentrale Glossarstruktur. Die bestehende Website-Suche bleibt die einzige Suche.</p>
+        <p class="notice">Die Begriffe dieser Seite folgen dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Ältere Projektdateien können frühere Begriffsverwendungen enthalten.</p>
+      </section>
+      <section class="content-band glossary-filter-panel" aria-labelledby="glossary-filter-title">
+        <h2 id="glossary-filter-title">Begriffe filtern</h2>
+        <label>
+          <span class="sr-only">Glossar durchsuchen</span>
+          <input type="search" placeholder="Begriff, Alias oder Definition suchen" data-glossary-search>
+        </label>
+        <div class="filter-chip-row" aria-label="Begriffskategorien">
+          <button type="button" class="active" data-glossary-category="all">Alle</button>
+          ${categories.map((category) => `<button type="button" data-glossary-category="${esc(category)}">${esc(category.replace("begriff", ""))}</button>`).join("")}
+        </div>
+        <p class="reference-filter-status" data-glossary-filter-status></p>
       </section>
       <nav class="az-nav" aria-label="Alphabetische Navigation">
         ${nav.map((letter) => `<a href="#${esc(letter)}">${esc(letter)}</a>`).join(" ")}
@@ -67,15 +91,43 @@ const indexBody = `      <section class="hero compact-hero">
         const items = groups.get(letter);
         return `<section id="${esc(letter)}" class="content-band">
         <h2>${esc(letter)}</h2>
-        <div class="card-grid">${items.map((term) => `<article class="info-card">
+        <div class="card-grid">${items.map((term) => `<article class="info-card" data-glossary-card data-category="${esc(term.category || "")}" data-search="${esc([term.canonicalLabel, term.shortDefinition, term.hoverDefinition, ...(term.synonyms || [])].join(" ").toLowerCase())}">
           <h3><a href="${esc(term.slug)}/">${esc(term.canonicalLabel)}</a></h3>
           <p>${esc(term.shortDefinition)}</p>
-          <p class="meta-line">${esc(term.status)} · Version ${esc(term.version)}</p>
+          <p class="meta-line">${esc(term.category || "Begriff")} · ${esc(term.status)} · Version ${esc(term.version)}</p>
         </article>`).join("")}</div>
       </section>`;
-      }).join("\n")}`;
+      }).join("\n")}
+      <script>
+        (() => {
+          const search = document.querySelector("[data-glossary-search]");
+          const buttons = Array.from(document.querySelectorAll("[data-glossary-category]"));
+          const cards = Array.from(document.querySelectorAll("[data-glossary-card]"));
+          const status = document.querySelector("[data-glossary-filter-status]");
+          let active = "all";
+          function apply() {
+            const q = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : "";
+            let visible = 0;
+            cards.forEach((card) => {
+              const categoryMatch = active === "all" || card.dataset.category === active;
+              const textMatch = !q || (card.dataset.search || card.textContent || "").toLowerCase().includes(q);
+              const show = categoryMatch && textMatch;
+              card.hidden = !show;
+              if (show) visible += 1;
+            });
+            if (status) status.textContent = visible + " Begriffe sichtbar";
+          }
+          buttons.forEach((button) => button.addEventListener("click", () => {
+            active = button.dataset.glossaryCategory || "all";
+            buttons.forEach((item) => item.classList.toggle("active", item === button));
+            apply();
+          }));
+          search?.addEventListener("input", apply);
+          apply();
+        })();
+      </script>`;
 
-fs.writeFileSync(path.join(outDir, "index.html"), pageShell("Begriffe", indexBody));
+fs.writeFileSync(path.join(outDir, "index.html"), pageShell("Begriffe", indexBody, "../"));
 
 for (const term of data.terms) {
   const dir = path.join(outDir, term.slug);
@@ -93,6 +145,10 @@ for (const term of data.terms) {
           <p>${esc(term.longDefinition)}</p>
         </section>
         <section>
+          <h2>Warum wichtig?</h2>
+          <p>${esc(term.preferredUsage || term.usageNote || "Der Begriff hilft, Wirkung, Bewertung und Rückkopplung präzise zu unterscheiden.")}</p>
+        </section>
+        <section>
           <h2>Verwendung in der WÖk</h2>
           <p>${esc(term.usageNote)}</p>
         </section>
@@ -104,9 +160,13 @@ for (const term of data.terms) {
           <h2>Verwandte Begriffe</h2>
           <p>${esc((term.relatedTerms || []).join(", ") || "Keine Einträge")}</p>
         </section>
+        <section>
+          <h2>Relevante Kapitel</h2>
+          <p>${esc((term.relatedChapters || []).join(", ") || "Siehe Kapitel-Navigator der Online-Referenz.")}</p>
+        </section>
         <section class="meta-box">
           <h2>Version und Quelle</h2>
-          <p>Status: ${esc(term.status)} · Version: ${esc(term.version)} · Review: ${esc(term.reviewStatus)}</p>
+          <p>Kategorie: ${esc(term.category || "Begriff")} · Status: ${esc(term.status)} · Version: ${esc(term.version)} · Review: ${esc(term.reviewStatus)}</p>
           <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
         </section>
       </article>`;
@@ -114,4 +174,3 @@ for (const term of data.terms) {
 }
 
 console.log(`Wrote glossary index and ${data.terms.length} term pages.`);
-
