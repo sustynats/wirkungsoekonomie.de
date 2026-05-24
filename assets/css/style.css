@@ -1400,6 +1400,21 @@ textarea {
   margin-top: 1rem;
 }
 
+.download-card.sdg-agenda-brief {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+
+.sdg-agenda-brief > div:first-child {
+  max-width: 76ch;
+}
+
+.sdg-agenda-brief .portal-card-actions {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  justify-content: flex-start;
+}
+
 .download-featured .section-header {
   margin-bottom: clamp(1.4rem, 4vw, 2.4rem);
 }
