@@ -8,8 +8,12 @@ const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-sdg-reference-graphic";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const DETAIL_MATRIX_PATH = path.join(ROOT, "data/sdg_detail_matrix_v0_3.json");
+const SDG_HISTORY_TIMELINE_PATH = path.join(ROOT, "data/sdg_history_timeline_v0_1.json");
 const detailMatrix = fs.existsSync(DETAIL_MATRIX_PATH)
   ? JSON.parse(fs.readFileSync(DETAIL_MATRIX_PATH, "utf8")).sdgs || []
+  : [];
+const sdgHistoryTimeline = fs.existsSync(SDG_HISTORY_TIMELINE_PATH)
+  ? JSON.parse(fs.readFileSync(SDG_HISTORY_TIMELINE_PATH, "utf8")).events || []
   : [];
 
 const officialSources = [
@@ -51,6 +55,36 @@ const sdgDepthDownloads = [
     href: sdgPlusDownload.href,
     file: sdgPlusDownload.file,
   },
+];
+
+const sdgHistoryDownloads = [
+  {
+    title: "Geschichte der SDGs - Detailkonzept Word",
+    href: "/assets/downloads/woek_sdgs_agenda2030_geschichte_detailkonzept_v0_1.docx",
+    file: "assets/downloads/woek_sdgs_agenda2030_geschichte_detailkonzept_v0_1.docx",
+  },
+  {
+    title: "Geschichte der SDGs - Dossier Word",
+    href: "/assets/downloads/woek_sdgs_agenda2030_geschichte_dossier_v0_1.docx",
+    file: "assets/downloads/woek_sdgs_agenda2030_geschichte_dossier_v0_1.docx",
+  },
+  {
+    title: "Timeline-Daten JSON",
+    href: "/data/sdg_history_timeline_v0_1.json",
+    file: "data/sdg_history_timeline_v0_1.json",
+  },
+];
+
+const sdgHistorySources = [
+  { label: "United Nations - Agenda 2030", url: "https://sdgs.un.org/2030agenda" },
+  { label: "United Nations - The 17 Sustainable Development Goals", url: "https://sdgs.un.org/goals" },
+  { label: "United Nations - The Future We Want", url: "https://sdgs.un.org/future-we-want" },
+  { label: "UN Statistics - Global SDG Indicator Framework", url: "https://unstats.un.org/sdgs/indicators/indicators-list/" },
+  { label: "Destatis - Nachhaltigkeitsindikatoren", url: "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html" },
+  { label: "Eurostat SDG Monitoring", url: "https://ec.europa.eu/eurostat/web/sdi" },
+  { label: "Europäische Kommission - CSRD/ESRS", url: "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en" },
+  { label: "EFRAG - ESRS Workstreams", url: "https://www.efrag.org/en/sustainability-reporting/esrs-workstreams" },
+  { label: "EBA - Guidelines on the management of ESG risks", url: "https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks" },
 ];
 
 const sdgs = detailMatrix.map((entry) => {
@@ -541,6 +575,22 @@ function overviewPage() {
       <img src="${href(base, "assets/img/generated/sdg_sdgplus_referenzrahmen_hero_v0_1.png")}" alt="SDG-/SDG+-Referenzrahmen der Wirkungsökonomie mit 17 SDG-Kacheln und sieben SDG+-Dimensionen: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung." loading="eager" width="1672" height="941">
       <figcaption id="sdg-reference-visual-caption">Der SDG-/SDG+-Referenzrahmen verbindet die 17 Nachhaltigkeitsziele mit den demokratischen, medialen, rechtsstaatlichen und digitalen Voraussetzungen der Wirkungsökonomie.</figcaption>
     </figure>
+    <section class="section" aria-labelledby="sdg-agenda-short">
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">Kurz erklärt</p>
+          ${sectionTitle("sdg-agenda-short", "SDGs und Agenda 2030")}
+          <p class="card-text">Die SDGs sind die 17 Ziele für nachhaltige Entwicklung der Vereinten Nationen. Sie wurden 2015 von allen UN-Mitgliedstaaten im Rahmen der Agenda 2030 beschlossen. Der Beschluss ist kein Weltgesetz und keine einheitliche Wirtschaftsideologie. Er ist ein globaler Zielrahmen, der beschreibt, welche Zustände die Weltgemeinschaft bis 2030 verbessern will: Armut, Hunger, Gesundheit, Bildung, Gleichstellung, Wasser, Energie, Arbeit, Infrastruktur, Ungleichheit, Städte, Konsum, Klima, Ökosysteme, Frieden, Institutionen und Partnerschaften.</p>
+          <p class="card-text">Die Wirkungsökonomie nutzt die SDGs als Referenzrahmen für Wirkungsbewertung. SDG+ ergänzt diesen Rahmen um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+          <p class="card-text"><strong>Merksatz:</strong> Die SDGs sind nicht der Ursprung der Wirkungsökonomie. Sie sind ihr globaler Anschlussstecker. Die Wirkungsökonomie übersetzt diesen Zielrahmen in Wirkungsdaten, Rückkopplung, Preise, Steuern, Kapitalzugang, Beschaffung, Haushalte und demokratische Korrektur.</p>
+        </div>
+        <div class="portal-card-actions no-print">
+          <a class="btn btn-primary" href="${href(base, "verstehen/sdgs-sdgplus/geschichte/")}">Geschichte der SDGs lesen</a>
+          <a class="btn btn-secondary" href="#sdg-list">Alle 17 Ziele im Detail ansehen</a>
+          <a class="btn btn-secondary" href="#sdgplus">Was ist SDG+?</a>
+        </div>
+      </div>
+    </section>
     <section class="section" aria-labelledby="sdg-list">
       <div class="section-header">
         <p class="hero-kicker">Agenda 2030</p>
@@ -889,6 +939,163 @@ function sdgPlusInteractionBlock(base, item) {
     </section>`;
 }
 
+function sdgHistoryPage() {
+  page({
+    rel: "verstehen/sdgs-sdgplus/geschichte/index.html",
+    title: "Die Geschichte der SDGs | Wirkungsökonomie",
+    description: "Vom globalen Umwelt- und Entwicklungsdialog zur Agenda 2030: Geschichte, Beschlusslogik und wirkungsökonomische Bedeutung der SDGs.",
+    body: (base) => `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}verstehen/sdgs-sdgplus/">SDG-/SDG+-Referenzrahmen</a></nav>
+        <p class="hero-kicker">Agenda 2030</p>
+        <h1>Die Geschichte der SDGs</h1>
+        <p class="hero-subtitle">Vom globalen Umwelt- und Entwicklungsdialog zum Referenzrahmen der Wirkungsökonomie.</p>
+        <p>Die SDGs wirken heute selbstverständlich: 17 bunte Kacheln, 169 Unterziele, ein weltweiter Zielrahmen. Doch sie sind nicht aus einer einzelnen Partei, Ideologie oder Regierung entstanden. Sie sind das Ergebnis jahrzehntelanger internationaler Verhandlungen über Umwelt, Entwicklung, Armut, Menschenrechte, Wirtschaft, Frieden und globale Zusammenarbeit.</p>
+        <p>Die Wirkungsökonomie nutzt die SDGs nicht, weil sie perfekt oder vollständig wären. Sie nutzt sie, weil sie der weltweit anschlussfähigste Referenzrahmen sind, um Wirkung auf Mensch, Planet und Demokratie einzuordnen. SDG+ ergänzt diesen Rahmen dort, wo moderne Wirkungsräume wie Demokratie, Medienqualität, digitale Selbstbestimmung und institutionelles Vertrauen in den 17 Zielen noch nicht ausreichend operationalisiert sind.</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "verstehen/sdgs-sdgplus/")}">Referenzrahmen öffnen</a>`)}
+      </div>
+    </section>
+    <section class="section" aria-labelledby="why-important">
+      <div class="section-header">
+        <p class="hero-kicker">Einordnung</p>
+        ${sectionTitle("why-important", "Warum diese Seite wichtig ist")}
+        <p>Die SDGs werden manchmal missverstanden: als grüne Ideologie, als Weltregierung, als Bevormundung oder als rein moralisches Programm. Diese Lesart greift zu kurz.</p>
+        <p>Die SDGs sind normativ, aber nicht parteiideologisch im engen Sinn. Sie sagen, dass Armut, Hunger, vermeidbare Krankheit, Bildungsarmut, Umweltzerstörung, extreme Ungleichheit, Klimarisiken und institutionelle Schwäche keine tragfähigen Zustände sind. Sie schreiben aber nicht vor, ob Staaten diese Ziele über Marktmechanismen, öffentliche Investitionen, Regulierung, Technologie, Sozialpolitik, Bildung, Innovation oder Mischformen erreichen.</p>
+        <p>Gerade deshalb sind sie wirkungsökonomisch relevant: Sie schaffen einen gemeinsamen Zielraum, ohne demokratische Ausgestaltung zu ersetzen.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="sdgs-one-sentence">
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">Merksatz</p>
+          ${sectionTitle("sdgs-one-sentence", "Die SDGs in einem Satz")}
+          <p class="card-text">Die SDGs sind ein global verhandelter Referenz- und Risikorahmen, der beschreibt, welche Zustände weltweit verbessert werden sollen, ohne demokratische Wege, Instrumente oder Wirtschaftsmodelle abschließend festzulegen.</p>
+        </div>
+        <a class="btn btn-secondary no-print" href="${href(base, "verstehen/sdgs-sdgplus/#sdg-list")}">Alle 17 Ziele ansehen</a>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="timeline">
+      <div class="section-header">
+        <p class="hero-kicker">Timeline</p>
+        ${sectionTitle("timeline", "Von Stockholm bis Agenda 2030")}
+      </div>
+      ${sdgHistoryTimelineTable()}
+    </section>
+    <section class="section" aria-labelledby="decision-2015">
+      <div class="section-header">
+        <p class="hero-kicker">Agenda 2030</p>
+        ${sectionTitle("decision-2015", "Was der Beschluss von 2015 bedeutet")}
+        <p>Die Agenda 2030 ist eine Resolution der UN-Generalversammlung. Sie ist kein direkt vollstreckbares Weltgesetz. Sie ist ein politischer Beschluss der Staatengemeinschaft: ein gemeinsamer Zielrahmen, der universell gilt, aber unterschiedliche nationale Realitäten, Kapazitäten und politische Prioritäten berücksichtigt.</p>
+        <p>Das ist entscheidend: Die SDGs verpflichten politisch zur Orientierung, aber sie lassen demokratischen Gestaltungsspielraum. Ein Land kann Ziele über öffentliche Investitionen, Marktmechanismen, Steuerpolitik, Regulierung, Bildung, Technologie oder Kombinationen verfolgen. Die Wirkungsökonomie ergänzt diesen Rahmen nicht durch einen dogmatischen Masterplan, sondern durch eine Frage: Welche Wirkung erzeugt eine Maßnahme wirklich, und wie wird diese Wirkung sichtbar, prüfbar, korrigierbar und rückgekoppelt?</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="not-ideology">
+      <div class="section-header">
+        <p class="hero-kicker">Normativ, nicht parteiideologisch</p>
+        ${sectionTitle("not-ideology", "Warum die SDGs keine grüne Ideologie sind")}
+        <p>Die SDGs wurden 2015 von Staaten mit sehr unterschiedlichen politischen, wirtschaftlichen und gesellschaftlichen Systemen angenommen. Das macht sie nicht wertfrei, aber es macht sie nicht zu einem engen Parteiprogramm.</p>
+        <p>Die SDGs sind nicht wertfrei. Sie enthalten normative Ziele: Armut, Hunger, vermeidbare Krankheit, Bildungsarmut, Umweltzerstörung, extreme Ungleichheit, Klimarisiken und institutionelle Schwäche gelten als nicht tragfähige Zustände. Aber sie sind nicht parteiideologisch im engen Sinn. Sie schreiben kein bestimmtes Wirtschaftsmodell vor. Staaten können unterschiedliche Wege wählen: Marktmechanismen, öffentliche Investitionen, Regulierung, Technologie, Sozialpolitik, Bildung, Innovation oder Mischformen.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="risk-management">
+      <div class="section-header">
+        <p class="hero-kicker">Risikomanagement</p>
+        ${sectionTitle("risk-management", "Die SDGs als strukturiertes Risikomanagement")}
+        <p>Wirkungsökonomisch lassen sich die SDGs als globale Stabilitäts- und Risikofelder lesen. Wasserstress ist Produktionsrisiko. Klimawandel ist Versicherungs-, Standort-, Lieferketten- und Infrastrukturisiko. Schlechte Arbeitsbedingungen sind Haftungs-, Reputations- und Beschaffungsrisiko. Biodiversitätsverlust ist Rohstoff- und Systemrisiko. Schwache Institutionen sind Investitions-, Rechts- und Demokratierisiko.</p>
+        <p>Die SDGs sind damit nicht „grün“ im parteipolitischen Sinn. Sie sind eine globale Stabilitätsmatrix: eine Ordnung, damit nicht jedes Land, jedes Unternehmen und jede Institution einen eigenen unverbundenen Zielwust erzeugt.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="finance-companies">
+      <div class="section-header">
+        <p class="hero-kicker">Finanzmarkt und Unternehmen</p>
+        ${sectionTitle("finance-companies", "Finanzmarkt, Unternehmen und SDGs")}
+        <p>Der Finanzmarkt hat viele dieser Themen bereits als Risiko erkannt. ESG-Ratings, Banken, Versicherungen, Nachhaltigkeitsberichte, EU-Taxonomie, CSRD, ESRS, GRI, Lieferkettenanforderungen und EBA-Leitlinien übersetzen Nachhaltigkeit zunehmend in Risiko-, Resilienz- und Datenfragen.</p>
+        <p>Die Wirkungsökonomie liest diese Entwicklung als Vorstufe: Daten entstehen bereits, aber sie bleiben oft im Reporting. Die WÖk fragt, wie diese Daten zu Rückkopplung werden: in Preisen, Steuern, Kapitalzugang, Versicherbarkeit, Beschaffung, öffentlichen Haushalten, Managemententscheidungen und demokratischer Korrektur.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="woek-reading">
+      <div class="section-header">
+        <p class="hero-kicker">Wirkungsökonomie</p>
+        ${sectionTitle("woek-reading", "Wirkungsökonomische Einordnung")}
+        <p>Die SDGs sind Zielräume. Die Wirkungsökonomie ist Rückkopplungsarchitektur.</p>
+        <p>Die SDGs sagen, welche Zustände verbessert werden sollen. Die Wirkungsökonomie fragt: Welche Handlung verändert welchen Zustand? Welche Wirkung ist positiv, negativ oder neutral? Welche Nebenwirkungen entstehen? Wo gibt es rote Linien und Nichtkompensation? Welche Daten zeigen Wirkung oder Wirkungsrisiko? Wie fließen diese Informationen in Preise, Steuern, Kapital, Beschaffung, Haushalte und Entscheidungen zurück? Wie bleibt das Ganze demokratisch korrigierbar?</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="why-sdgplus-history">
+      <div class="section-header">
+        <p class="hero-kicker">SDG+</p>
+        ${sectionTitle("why-sdgplus-history", "Warum SDG+ nötig ist")}
+        <p>Die 17 SDGs sind stark, aber nicht vollständig. Im 21. Jahrhundert entstehen Wirkungsrisiken auch in digitalen Öffentlichkeiten, Medienräumen, Plattformen, KI-Systemen, Vertrauensstrukturen und demokratischen Verfahren. Deshalb ergänzt die Wirkungsökonomie die SDGs durch SDG+: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung.</p>
+        <p><a class="text-link" href="${href(base, "verstehen/sdgs-sdgplus/#sdgplus")}">SDG+</a> ist keine offizielle UN-Kategorie. Es ist eine transparente Erweiterung der Wirkungsökonomie.</p>
+      </div>
+    </section>
+    ${officialReferencesBlock({ officialSources: sdgHistorySources })}
+    ${sdgHistoryInternalAnchors(base)}
+    ${bookBlock(base, ["Exkurs: Warum die SDGs der Referenzrahmen der Wirkungsökonomie sind", "SDG+ als Erweiterung der Wirkungsökonomie", "Kapitel 102 - Agenda 2030, SDGs, SDG+ und Verschwörungsnarrative"])}
+    ${sdgHistoryExportBlock(base)}`,
+  });
+}
+
+function sdgHistoryTimelineTable() {
+  const fallback = [
+    ["1972", "Stockholm-Konferenz", "Umwelt wird als globale politische Aufgabe sichtbar."],
+    ["1987", "Brundtland-Bericht", "Nachhaltige Entwicklung verbindet Gegenwart und Zukunft."],
+    ["1992", "Rio Earth Summit / Agenda 21", "Umwelt und Entwicklung werden gemeinsam verhandelt."],
+    ["2000", "Millennium Declaration / MDGs", "Kompakter Zielrahmen mit Fokus Entwicklung."],
+    ["2012", "Rio+20 / The Future We Want", "Mandat für universelle SDGs."],
+    ["2013-2014", "Open Working Group", "Multilaterale Aushandlung der Ziele und Unterziele."],
+    ["2015", "Agenda 2030", "17 Ziele und 169 Unterziele werden beschlossen."],
+    ["ab 2016", "Umsetzung und Monitoring", "UN-Indikatoren, nationale Strategien, EU-/deutsche Indikatoren, Finanzmarkt- und Unternehmensanschluss."],
+  ].map(([year, title, summary]) => ({ year, title, summary }));
+  const events = sdgHistoryTimeline.length ? sdgHistoryTimeline : fallback;
+  return `<div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th scope="col">Jahr</th><th scope="col">Station</th><th scope="col">Bedeutung</th></tr></thead>
+          <tbody>
+            ${events.map((event) => `<tr><th scope="row">${escapeHtml(event.year)}</th><td>${escapeHtml(event.title)}</td><td>${escapeHtml(event.summary)}</td></tr>`).join("")}
+          </tbody>
+        </table>
+      </div>`;
+}
+
+function sdgHistoryInternalAnchors(base) {
+  const links = [
+    { title: "SDG-/SDG+-Referenzrahmen", url: "verstehen/sdgs-sdgplus/", text: "Kanonische Übersicht mit 17 SDGs und SDG+." },
+    { title: "Produkte & Konsum", url: "wirkungsfelder/produkte-konsum/", text: "Produktbesteuerung durch Wirkung und Konsumwirkung." },
+    { title: "Wirtschaft & Unternehmen", url: "wirkungsfelder/wirtschaft-unternehmen/", text: "Unternehmen als Wirkungssysteme und Finanzmarktanforderungen." },
+    { title: "Staat, Recht & Demokratie", url: "wirkungsfelder/staat-recht-demokratie/", text: "WStG, Wirkungsrat und demokratische Sicherung." },
+    { title: "Bildung", url: "wirkungsfelder/bildung/", text: "Wirkungskompetenz, Wirkungsschule und SDG 4." },
+    { title: "Wohnen & Stadt", url: "wirkungsfelder/wohnen-stadt/", text: "Wohnen als Wirkungsraum und Wohnwirkungsindex." },
+    { title: "WÖk-IDs", url: "werkzeuge/woek-ids/", text: "Indikatorenarchitektur zwischen SDGs, SDG+ und Messung." },
+    { title: "Impact Controlling", url: "werkzeuge/impact-controlling/", text: "Methodik, T-SROI, NWI und Scorecards." },
+    { title: "Wirkungsrat", url: "werkzeuge/wirkungsrat/", text: "Institutionelle Korrektur und Qualitätssicherung." },
+  ];
+  return `<section class="section" aria-labelledby="internal-anchors">
+      <div class="section-header">
+        <p class="hero-kicker">Interne WÖk-Anker</p>
+        ${sectionTitle("internal-anchors", "Glossar, Buch, Wirkungsfelder und Werkzeuge")}
+      </div>
+      ${cardGrid(base, links, "three")}
+    </section>`;
+}
+
+function sdgHistoryExportBlock(base) {
+  const available = sdgHistoryDownloads.filter((download) => fs.existsSync(path.join(ROOT, download.file)));
+  return `<section class="section" aria-labelledby="history-export">
+      <div class="card">
+        <p class="hero-kicker">Dossier & Export</p>
+        ${sectionTitle("history-export", "Druck, Detailkonzept und Dossier")}
+        <p class="card-text">Diese Seite ist vollständig online lesbar. Word-Dokumente und Timeline-Daten dienen als ergänzende Export- und Archivfassung.</p>
+        <div class="portal-card-actions no-print">
+          <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
+          ${available.length
+            ? available.map((download) => `<a class="btn btn-secondary" href="${href(base, download.href)}">${escapeHtml(download.title)}</a>`).join("")
+            : '<span class="prototype-badge">Downloads in Vorbereitung</span>'}
+        </div>
+      </div>
+    </section>`;
+}
+
 function dataFiles() {
   const serializable = references.map((item) => ({
     id: item.id,
@@ -1029,7 +1236,7 @@ function updateSitemap() {
     const rel = `verstehen/sdgs-sdgplus/${item.slug}`;
     sitemap = sitemap.replace(new RegExp(`\\s*<url>\\s*<loc>${SITE}/${rel}/</loc>\\s*<lastmod>[^<]+</lastmod>\\s*</url>`, "g"), "");
   }
-  const urls = ["verstehen/sdgs-sdgplus/", "referenzrahmen/sdgs-sdgplus/", ...sdgs.map((item) => `verstehen/sdgs-sdgplus/${item.slug}/`)];
+  const urls = ["verstehen/sdgs-sdgplus/", "verstehen/sdgs-sdgplus/geschichte/", "referenzrahmen/sdgs-sdgplus/", ...sdgs.map((item) => `verstehen/sdgs-sdgplus/${item.slug}/`)];
   const additions = urls
     .filter((url) => !sitemap.includes(`${SITE}/${url}`))
     .map((url) => `  <url>\n    <loc>${SITE}/${url}</loc>\n    <lastmod>${DATE}</lastmod>\n  </url>`)
@@ -1042,6 +1249,7 @@ function run() {
   cleanupLegacySlugs();
   dataFiles();
   overviewPage();
+  sdgHistoryPage();
   aliasPage();
   for (const item of references) sdgDetailPage(item);
   enhanceExistingBadges();
