@@ -135,6 +135,51 @@ const tools = [
   },
 ];
 
+const go10MethodPapers = [
+  {
+    number: 21,
+    slug: "woek-ids-indikatorenarchitektur",
+    title: "WÖk-IDs und Indikatorenarchitektur",
+    subtitle: "Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden",
+    source: "docs/impact-controlling/go10-methodenpapiere/online_volltext_21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.md",
+    docx: "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.docx",
+    pdf: "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.pdf",
+    relatedTools: ["WÖk-IDs", "Scorecards", "Datenqualität & Assurance"],
+    relatedPages: ["werkzeuge/woek-ids/", "werkzeuge/impact-controlling/", "werkzeuge/scorecards/"],
+  },
+  {
+    number: 22,
+    slug: "scorecards-benchmarks-nwi",
+    title: "Scorecards, Benchmarks und Netto-Wirkungs-Index",
+    subtitle: "Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder Personenbewertung",
+    source: "docs/impact-controlling/go10-methodenpapiere/online_volltext_22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.md",
+    docx: "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.docx",
+    pdf: "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.pdf",
+    relatedTools: ["Scorecards", "Netto-Wirkungs-Index", "Reverse Merit Order", "Benchmarks & Archetypen"],
+    relatedPages: ["werkzeuge/scorecards/", "werkzeuge/netto-wirkungs-index/", "werkzeuge/reverse-merit-order/"],
+  },
+  {
+    number: 23,
+    slug: "t-sroi-transformationsmessung",
+    title: "T-SROI und Impact Controlling",
+    subtitle: "Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung",
+    source: "docs/impact-controlling/go10-methodenpapiere/online_volltext_23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.md",
+    docx: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.docx",
+    pdf: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf",
+    relatedTools: ["T-SROI", "Netto-Wirkungs-Index", "WÖk-IDs", "Scorecards"],
+    relatedPages: ["werkzeuge/t-sroi/", "werkzeuge/impact-controlling/t-sroi/", "werkzeuge/impact-controlling/"],
+  },
+];
+
+const go10ToolCards = [
+  ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen."],
+  ["Scorecard-Generator", "Demo in Vorbereitung", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
+  ["NWI-Rechner", "Demo in Vorbereitung", "werkzeuge/netto-wirkungs-index/", "Positive, negative und neutrale Wirkung ohne freie Kompensation zusammenführen."],
+  ["T-SROI-Rechner", "Demo in Vorbereitung", "werkzeuge/t-sroi/", "Investitionen, Transformationswirkung, Resilienzfaktor und Datenqualität modellhaft zusammenführen."],
+  ["Reverse-Merit-Order-Demo", "Demo in Vorbereitung", "werkzeuge/reverse-merit-order/", "Rote Linien und schwächste kritische Wirkungsfelder sichtbar machen."],
+  ["Datenqualitäts-/Assurance-Check", "Demo in Vorbereitung", "werkzeuge/datenqualitaet-assurance/", "Prüfstatus, Datenherkunft, Schätzungen und Revisionsbedarf transparent markieren."],
+];
+
 const dossierPages = [
   ["t-sroi", "T-SROI", "Transformational Social Return on Investment als Instrument für Investitionswirkung, Prävention, Transformation und systemische Rendite.", "T-SROI macht sichtbar, welche gesellschaftlichen, ökologischen und demokratischen Zustandsveränderungen durch Investitionen entstehen und wie sie im Verhältnis zum Ressourceneinsatz bewertet werden können."],
   ["nwi", "Netto-Wirkungs-Index", "Operative Kennzahl für positive, negative und neutrale Wirkung im WÖk-Rahmen.", "Der NWI verdichtet Wirkung nicht zu einer moralischen Behauptung, sondern ordnet geprüfte positive und negative Zustandsveränderungen transparent ein."],
@@ -150,6 +195,7 @@ const dossierPages = [
 
 const toolPages = [
   ["werkzeuge/impact-controlling/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.", "werkzeuge/impact-controlling/dossiers/t-sroi/"],
+  ["werkzeuge/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.", "werkzeuge/impact-controlling/dossiers/t-sroi/"],
   ["werkzeuge/netto-wirkungs-index/index.html", "Netto-Wirkungs-Index", "Kennzahl für positive, negative und neutrale Wirkung.", "Der Netto-Wirkungs-Index ordnet Wirkung im Referenzrahmen der SDGs, Agenda 2030 und SDG+ ein.", "werkzeuge/impact-controlling/dossiers/nwi/"],
   ["werkzeuge/woek-ids/index.html", "WÖk-IDs", "Indikatorenarchitektur der Wirkungsökonomie.", "WÖk-IDs verbinden Referenzrahmen, Datenquellen, Einheiten, Schwellen, Versionen und Prüfstatus.", "werkzeuge/impact-controlling/dossiers/woek-ids/"],
   ["werkzeuge/scorecards/index.html", "Scorecards", "Bewertungsraster für Wirkung.", "Scorecards machen Zustandsveränderungen, Nebenwirkungen, Datenqualität und Zielkonflikte entscheidungsfähig.", "werkzeuge/impact-controlling/dossiers/scorecards/"],
@@ -280,16 +326,7 @@ function citationNotice(route) {
 }
 
 function statusMeta(status) {
-  return `<aside class="card status-meta" aria-label="Dokumentstatus">
-      <p class="card-kicker">Dokumentstatus</p>
-      <dl>
-        <div><dt>Autorin</dt><dd>Natalie Weber</dd></div>
-        <div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>
-        <div><dt>Stand</dt><dd>24.05.2026</dd></div>
-        <div><dt>Version</dt><dd>v0.1 / Webfassung</dd></div>
-        <div><dt>Status</dt><dd>${escapeHtml(status)}</dd></div>
-      </dl>
-    </aside>`;
+  return "";
 }
 
 function cardGrid(base, items, cols = "three") {
@@ -308,6 +345,71 @@ function dataTable(headers, rows) {
     <thead><tr>${headers.map((h) => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead>
     <tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
   </table></div>`;
+}
+
+function inlineMarkdown(value) {
+  return escapeHtml(value)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function markdownBlocks(source, prefix) {
+  const lines = source.replace(/\r\n/g, "\n").split("\n");
+  const blocks = [];
+  let paragraph = [];
+  let list = [];
+  const headings = [];
+
+  const flushParagraph = () => {
+    if (!paragraph.length) return;
+    blocks.push(`<p>${inlineMarkdown(paragraph.join(" "))}</p>`);
+    paragraph = [];
+  };
+  const flushList = () => {
+    if (!list.length) return;
+    blocks.push(`<ul>${list.map((item) => `<li>${inlineMarkdown(item)}</li>`).join("")}</ul>`);
+    list = [];
+  };
+
+  for (const rawLine of lines) {
+    const line = rawLine.trimEnd();
+    if (!line.trim()) {
+      flushParagraph();
+      flushList();
+      continue;
+    }
+    const heading = /^(#{1,4})\s+(.+)$/.exec(line);
+    if (heading) {
+      flushParagraph();
+      flushList();
+      const level = heading[1].length;
+      const outputLevel = Math.min(level + 1, 4);
+      const text = heading[2].trim();
+      const id = `${prefix}-${slugify(text)}`;
+      headings.push({ level: outputLevel, text, id });
+      blocks.push(`<h${outputLevel} id="${id}">${inlineMarkdown(text)} ${citeAnchor(id)}</h${outputLevel}>`);
+      continue;
+    }
+    const bullet = /^[-*]\s+(.+)$/.exec(line);
+    if (bullet) {
+      flushParagraph();
+      list.push(bullet[1]);
+      continue;
+    }
+    paragraph.push(line.trim());
+  }
+  flushParagraph();
+  flushList();
+  return { html: blocks.join("\n"), headings };
+}
+
+function tocFromHeadings(headings) {
+  const filtered = headings.filter((heading) => heading.level >= 2 && heading.level <= 3);
+  if (!filtered.length) return "";
+  return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis">
+    <h2>Inhaltsverzeichnis</h2>
+    <ol>${filtered.map((heading) => `<li class="toc-level-${heading.level}"><a href="#${heading.id}">${escapeHtml(heading.text)}</a></li>`).join("")}</ol>
+  </nav>`;
 }
 
 function hero(base, { kicker, title, subtitle, text, action }) {
@@ -340,6 +442,24 @@ function toolGrid(base, selected = tools) {
           <a class="text-link" href="${href(base, tool.href)}">Toolseite öffnen</a>
           <a class="text-link" href="${href(base, tool.dossier)}">Dossier lesen</a>
         </div>
+      </article>`).join("")}
+    </div>
+  </section>`;
+}
+
+function go10ToolGrid(base) {
+  return `<section class="section" aria-labelledby="go10-tools">
+    <div class="section-header">
+      <p class="hero-kicker">Tool-Suite</p>
+      ${sectionTitle("go10-tools", "Methoden in Werkzeuglogik übersetzen")}
+      <p>Die Methodenpapiere beschreiben die fachliche Logik. Die Toolkarten zeigen, welche digitalen Hilfen bereits als Methodenseite vorhanden sind und welche als Demo vorbereitet werden.</p>
+    </div>
+    <div class="card-grid three context-tool-grid">
+      ${go10ToolCards.map(([title, status, link, text]) => `<article class="card context-tool-card">
+        <p class="card-kicker">${escapeHtml(status)}</p>
+        <h3 class="card-title">${escapeHtml(title)}</h3>
+        <p class="card-text">${escapeHtml(text)}</p>
+        <div class="portal-card-actions"><a class="text-link" href="${href(base, link)}">Methodenseite öffnen</a></div>
       </article>`).join("")}
     </div>
   </section>`;
@@ -411,14 +531,72 @@ function downloadBlock(base, items = impactDownloads) {
     <div class="card">
       <p class="hero-kicker">Dossier & Export</p>
       ${sectionTitle("downloads", "Downloads und Druck")}
-      <p class="card-text">Online-Volltext ist der Hauptzugang. Word/PDF-Dateien werden nur verlinkt, wenn sie im Repository vorhanden sind.</p>
+      <p class="card-text">Online-Volltext ist der Hauptzugang. Word/PDF-Dateien werden nur verlinkt, wenn sie als Download vorhanden sind.</p>
       <div class="portal-card-actions no-print">
         <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
         ${available.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("")}
       </div>
-      ${missing.length ? `<p class="card-text">Noch nicht im Repository gefunden: ${missing.map((item) => escapeHtml(item.label)).join(", ")}. Es wird kein kaputter Downloadlink gesetzt.</p>` : ""}
+      ${missing.length ? `<p class="card-text">Noch nicht als Download vorhanden: ${missing.map((item) => escapeHtml(item.label)).join(", ")}. Es wird kein kaputter Downloadlink gesetzt.</p>` : ""}
     </div>
   </section>`;
+}
+
+function methodPaperCardGrid(base) {
+  return `<div class="card-grid three">
+    ${go10MethodPapers.map((paper) => `<article class="card">
+      <p class="card-kicker">Methodenpapier ${paper.number}</p>
+      <h3 class="card-title">${escapeHtml(paper.title)}</h3>
+      <p class="card-text">${escapeHtml(paper.subtitle)}</p>
+      <div class="portal-card-actions">
+        <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Online lesen</a>
+        <a class="text-link" href="${href(base, paper.docx)}">DOCX</a>
+        <a class="text-link" href="${href(base, paper.pdf)}">PDF</a>
+      </div>
+    </article>`).join("")}
+  </div>`;
+}
+
+function impactCrossLinks(base) {
+  return `<section class="section" aria-labelledby="impact-crosslinks">
+    <div class="section-header">
+      <p class="hero-kicker">Querverlinkung</p>
+      ${sectionTitle("impact-crosslinks", "Methodenanschluss in Wirkungsfeldern")}
+      <p>Impact Controlling ist eine Querschnittsmethodik. Die folgenden Portale zeigen typische Anwendungsräume.</p>
+    </div>
+    ${cardGrid(base, [
+      { title: "SDG-/SDG+-Referenzrahmen", text: "Ziel- und Risikorahmen für positive, negative und neutrale Wirkung.", href: "verstehen/sdgs-sdgplus/", label: "Öffnen" },
+      { title: "Produkte & Konsum", text: "WUStG, Produktscorecards, Lieferketten und Produktpässe.", href: "wirkungsfelder/produkte-konsum/", label: "Öffnen" },
+      { title: "Wirtschaft & Unternehmen", text: "Wirkungscontrolling, Risiko, Finanzierung, Führung und Transformation.", href: "wirkungsfelder/wirtschaft-unternehmen/", label: "Öffnen" },
+      { title: "Staat, Recht & Demokratie", text: "Wirkungsrat, Wirkungshaushalt, WStG und rechtsstaatliche Korrektur.", href: "wirkungsfelder/staat-recht-demokratie/", label: "Öffnen" },
+      { title: "Finanzsystem & Kapital", text: "Kapitalwirkung, Wirkungsfonds, Banken, Versicherungen und Portfolio-Steuerung.", href: "wirkungsfelder/finanzsystem-kapital/", label: "Öffnen" },
+      { title: "Bildung", text: "Wirkungskompetenz, Bildungswirkung, Schulentwicklung und Schutz vor Personenbewertung.", href: "wirkungsfelder/bildung/", label: "Öffnen" },
+      { title: "Gesundheit & Pflege", text: "Prävention, Pflege, Gesundheitswirkung und T-SROI für öffentliche Investitionen.", href: "wirkungsfelder/gesundheit-pflege/", label: "Öffnen" },
+      { title: "Wohnen & Stadt", text: "Wohnwirkungsindex, Warmmietenneutralität, Sanierung und Quartierswirkung.", href: "wirkungsfelder/wohnen-stadt/", label: "Öffnen" },
+      { title: "Klima, Energie & Ressourcen", text: "Emissionspfade, Ressourcenwirkung, Energieinfrastruktur und Systemgrenzen.", href: "wirkungsfelder/klima-energie-ressourcen/", label: "Öffnen" },
+    ])}
+  </section>`;
+}
+
+function methodPaperDownloadItems(paper) {
+  return [
+    { label: `${paper.title} DOCX`, href: paper.docx, required: true },
+    { label: `${paper.title} PDF`, href: paper.pdf, required: true },
+    { label: "Impact Controlling öffnen", href: "werkzeuge/impact-controlling/" },
+    { label: "Impact-Controlling-Rechner öffnen", href: "erleben/impact-controlling-rechner/" },
+  ];
+}
+
+function methodPapersForTool(title) {
+  const normalized = title.toLowerCase();
+  return go10MethodPapers.filter((paper) => {
+    const paperTitle = paper.title.toLowerCase();
+    return paperTitle.includes(normalized)
+      || (normalized.includes("wök") && paper.slug.includes("woek-ids"))
+      || (normalized.includes("score") && paper.slug.includes("scorecards"))
+      || (normalized.includes("netto") && paper.slug.includes("nwi"))
+      || (normalized.includes("t-sroi") && paper.slug.includes("t-sroi"))
+      || (normalized.includes("reverse") && paper.slug.includes("scorecards"));
+  });
 }
 
 function overviewPage() {
@@ -449,11 +627,21 @@ function overviewPage() {
       ])}
     </section>
     ${toolGrid(base)}
+    <section class="section" aria-labelledby="methodenpapiere">
+      <div class="section-header">
+        <p class="hero-kicker">Go 10 · Methodenpapiere</p>
+        ${sectionTitle("methodenpapiere", "Ausführliche Methodenpapiere")}
+        <p>Diese Veröffentlichungen sind Methodenpapiere für Impact Controlling, WÖk-IDs, Scorecards, NWI und T-SROI. Sie sind keine Ausarbeitungen eines einzelnen Wirkungsfelds, sondern methodische Grundlagen für mehrere Wirkungsfelder.</p>
+      </div>
+      ${methodPaperCardGrid(base)}
+    </section>
+    ${go10ToolGrid(base)}
+    ${impactCrossLinks(base)}
     <section class="section" aria-labelledby="dossiers">
       <div class="section-header">
         <p class="hero-kicker">Online-Volltexte</p>
         ${sectionTitle("dossiers", "Dossiers online lesen")}
-        <p>Alle Dossiers sind als Webfassung mit Ankern angelegt. Die angekündigten Word-Dateien werden ergänzt, sobald sie im Repository vorliegen.</p>
+        <p>Alle Dossiers sind als Webfassung mit Ankern angelegt. Word-Dateien werden ergänzt, sobald sie als Download verfügbar sind.</p>
       </div>
       ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
         title,
@@ -466,7 +654,10 @@ function overviewPage() {
     ${sdgBlock()}
     ${bookBlock(base)}
     ${externalSourcesBlock()}
-    ${downloadBlock(base)}`,
+    ${downloadBlock(base, [
+      ...impactDownloads,
+      ...go10MethodPapers.flatMap(methodPaperDownloadItems),
+    ])}`,
   });
 }
 
@@ -481,7 +672,7 @@ function dossierOverview() {
       kicker: "Gesamtdossier",
       title: "Gesamtdossier Impact Controlling",
       subtitle: "T-SROI, NWI, WÖk-IDs, Scorecards und Wirkungsdatenräume.",
-      text: "Dieses Dossier bündelt die Methodenarchitektur des Impact Controllings. Es ist eine Online-Arbeitsfassung, bis die gelieferten Word-Dokumente im Repository vorliegen.",
+      text: "Dieses Dossier bündelt die Methodenarchitektur des Impact Controllings. Es ist eine Online-Fassung, bis die gelieferten Word-Dokumente im Repository vorliegen.",
       action: `<a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Rechner öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
@@ -515,13 +706,111 @@ function dossierOverview() {
         <p>Der Impact-Controlling-Rechner startet als einfache Demo mit Scorecard-, NWI- und T-SROI-Modul. Er ist keine Prüfung, keine Beratung und keine amtliche Einstufung.</p>
       </article>
     </section>
+    <section class="section" aria-labelledby="methodenpapiere">
+      <div class="section-header">
+        <p class="hero-kicker">Go 10 · Methodenpapiere</p>
+        ${sectionTitle("methodenpapiere", "Methodenpapiere als Grundlage")}
+        <p>Die folgenden Papiere vertiefen die Methodenlogik hinter WÖk-IDs, Scorecards, NWI und T-SROI.</p>
+      </div>
+      ${methodPaperCardGrid(base)}
+    </section>
     ${toolGrid(base)}
     ${politicalBlock(base)}
     ${sdgBlock()}
     ${bookBlock(base)}
     ${externalSourcesBlock()}
-    ${downloadBlock(base)}`,
+    ${downloadBlock(base, [
+      ...impactDownloads,
+      ...go10MethodPapers.flatMap(methodPaperDownloadItems),
+    ])}`,
   });
+}
+
+function methodPaperOverviewPage() {
+  page({
+    rel: "werkzeuge/impact-controlling/methodenpapiere/index.html",
+    title: "Methodenpapiere Impact Controlling | Wirkungsökonomie",
+    description: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI und T-SROI als Online-Volltext mit DOCX- und PDF-Downloads.",
+    searchSection: "Werkzeuge",
+    searchType: "Methodenpapier",
+    body: (base, route) => `${hero(base, {
+      kicker: "Methodenpapiere · Go 10",
+      title: "Methodenpapiere Impact Controlling",
+      subtitle: "WÖk-IDs, Scorecards, NWI und T-SROI als methodische Grundlage.",
+      text: "Diese Papiere sind keine Lebensbereichs-Detailkonzepte. Sie erklären die Methodenarchitektur, die in Produkten, Unternehmen, Staat, Kapital, Bildung, Gesundheit, Wohnen, Klima und weiteren Wirkungsfeldern genutzt wird.",
+      action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Impact Controlling öffnen</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section" aria-labelledby="methodenpapier-liste">
+      <div class="section-header">
+        <p class="hero-kicker">Online-Volltexte</p>
+        ${sectionTitle("methodenpapier-liste", "Methodenpapiere online lesen")}
+        <p>Online-Volltext ist der Hauptzugang; DOCX und PDF sind Export- und Archivfassungen.</p>
+      </div>
+      ${methodPaperCardGrid(base)}
+    </section>
+    ${go10ToolGrid(base)}
+    ${impactCrossLinks(base)}
+    ${politicalBlock(base, "das Methodenpaket Impact Controlling")}
+    ${sdgBlock()}
+    ${bookBlock(base)}
+    ${externalSourcesBlock()}
+    ${downloadBlock(base, go10MethodPapers.flatMap(methodPaperDownloadItems))}`,
+  });
+}
+
+function methodPaperPages() {
+  for (const paper of go10MethodPapers) {
+    const sourcePath = path.join(ROOT, paper.source);
+    const source = fs.existsSync(sourcePath) ? fs.readFileSync(sourcePath, "utf8") : `# ${paper.title}\n\n${paper.subtitle}`;
+    const rendered = markdownBlocks(source, `method-${paper.number}`);
+    const relatedTools = tools.filter((tool) => paper.relatedTools.includes(tool.title));
+    page({
+      rel: `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/index.html`,
+      title: `${paper.title} | Methodenpapier Impact Controlling`,
+      description: `${paper.subtitle}. Online-Volltext des Methodenpapiers der Wirkungsökonomie.`,
+      searchSection: "Werkzeuge",
+      searchType: "Methodenpapier",
+      body: (base, route) => `${hero(base, {
+        kicker: `Methodenpapier ${paper.number} · Go 10`,
+        title: paper.title,
+        subtitle: paper.subtitle,
+        text: "Dieses Dokument ist ein ausführliches Methodenpapier für den Werkzeugbereich Impact Controlling. Es ist keine fachliche Ausarbeitung eines einzelnen Wirkungsfelds.",
+        action: `<a class="btn btn-primary" href="${href(base, paper.docx)}">DOCX herunterladen</a><a class="btn btn-secondary" href="${href(base, paper.pdf)}">PDF herunterladen</a>`,
+      })}
+      <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+      <section class="section narrow">${tocFromHeadings(rendered.headings)}</section>
+      <section class="section article-section" aria-labelledby="volltext">
+        <article class="article-body fulltext-reader">
+          <h2 id="volltext">Online-Volltext ${citeAnchor("volltext")}</h2>
+          ${rendered.html}
+        </article>
+      </section>
+      <section class="section" aria-labelledby="querverweise">
+        <div class="section-header">
+          <p class="hero-kicker">Querverlinkung</p>
+          ${sectionTitle("querverweise", "Verwandte Methoden und Wirkungsfelder")}
+          <p>Methodenpapiere dienen als Rückgrat für mehrere Portale. Die folgenden Links führen zu den wichtigsten Anschlussstellen.</p>
+        </div>
+        ${cardGrid(base, [
+          ...paper.relatedPages.map((link) => ({ title: link.replaceAll("/", " ").trim(), text: "Kanonische Anschlussseite der Methodik.", href: link, label: "Öffnen" })),
+          { title: "SDG-/SDG+-Referenzrahmen", text: "Referenzrahmen für positive, negative und neutrale Wirkung.", href: "verstehen/sdgs-sdgplus/", label: "Öffnen" },
+          { title: "Produkte & Konsum", text: "Wirkungsumsatzsteuer, Produktwirkung und Scorecards.", href: "wirkungsfelder/produkte-konsum/", label: "Öffnen" },
+          { title: "Wirtschaft & Unternehmen", text: "Impact Controlling im Unternehmen, Risiko, Lieferketten und Transformation.", href: "wirkungsfelder/wirtschaft-unternehmen/", label: "Öffnen" },
+          { title: "Staat, Recht & Demokratie", text: "Wirkungsrat, Wirkungshaushalt, WStG und demokratische Korrektur.", href: "wirkungsfelder/staat-recht-demokratie/", label: "Öffnen" },
+          { title: "Finanzsystem & Kapital", text: "Kapitalwirkung, Wirkungsfonds und Finanzmarktanschluss.", href: "wirkungsfelder/finanzsystem-kapital/", label: "Öffnen" },
+        ])}
+      </section>
+      ${toolGrid(base, relatedTools.length ? relatedTools : tools.slice(0, 4))}
+      ${go10ToolGrid(base)}
+      ${impactCrossLinks(base)}
+      ${politicalBlock(base, `das Methodenpapier ${paper.title}`)}
+      ${sdgBlock()}
+      ${bookBlock(base)}
+      ${externalSourcesBlock()}
+      ${downloadBlock(base, methodPaperDownloadItems(paper))}`,
+    });
+  }
 }
 
 function singleDossierPages() {
@@ -584,6 +873,7 @@ function singleDossierPages() {
 
 function toolExplanationPages() {
   for (const [rel, title, subtitle, description, dossier] of toolPages) {
+    const relatedPapers = methodPapersForTool(title);
     page({
       rel,
       title: `${title} | Wirkungsökonomie`,
@@ -606,11 +896,34 @@ function toolExplanationPages() {
           <article class="card" id="grenze"><p class="card-kicker">Grenze</p><h2 class="card-title">Nicht als Schönrechnung ${citeAnchor("grenze")}</h2><p class="card-text">Das Werkzeug darf negative Wirkung, Datenlücken oder rote Linien nicht verdecken.</p></article>
         </div>
       </section>
+      ${relatedPapers.length ? `<section class="section" aria-labelledby="methodenpapier">
+        <div class="section-header">
+          <p class="hero-kicker">Methodenpapier</p>
+          ${sectionTitle("methodenpapier", "Ausführliches Methodenpapier online lesen")}
+          <p>Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit DOCX- und PDF-Download.</p>
+        </div>
+        <div class="card-grid three">${relatedPapers.map((paper) => `<article class="card">
+          <p class="card-kicker">Methodenpapier ${paper.number}</p>
+          <h3 class="card-title">${escapeHtml(paper.title)}</h3>
+          <p class="card-text">${escapeHtml(paper.subtitle)}</p>
+          <div class="portal-card-actions">
+            <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Online lesen</a>
+            <a class="text-link" href="${href(base, paper.docx)}">DOCX</a>
+            <a class="text-link" href="${href(base, paper.pdf)}">PDF</a>
+          </div>
+        </article>`).join("")}</div>
+      </section>` : ""}
       ${toolGrid(base, tools.filter((tool) => tool.href === rel.replace("index.html", "") || tool.title === title).length ? tools.filter((tool) => tool.href === rel.replace("index.html", "") || tool.title === title) : tools.slice(0, 4))}
+      ${go10ToolGrid(base)}
+      ${impactCrossLinks(base)}
       ${politicalBlock(base)}
     ${sdgBlock()}
       ${bookBlock(base)}
-      ${downloadBlock(base, [{ label: "Einzeldossier online lesen", href: dossier }, { label: "Gesamtdossier öffnen", href: "werkzeuge/impact-controlling/dossier/" }])}`,
+      ${downloadBlock(base, [
+        { label: "Einzeldossier online lesen", href: dossier },
+        { label: "Gesamtdossier öffnen", href: "werkzeuge/impact-controlling/dossier/" },
+        ...relatedPapers.flatMap(methodPaperDownloadItems),
+      ])}`,
     });
   }
 }
@@ -710,7 +1023,9 @@ function workshopPages() {
       ${cardGrid(base, [
         { title: "Impact Controlling", text: "Portal-/Werkzeug-Startseite.", href: "werkzeuge/impact-controlling/" },
         { title: "Gesamtdossier Impact Controlling", text: "Methodenarchitektur, Rechenlogik, Einzeldossiers und Tool-Spezifikation.", href: "werkzeuge/impact-controlling/dossier/" },
+        { title: "Methodenpapiere Go 10", text: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI und T-SROI.", href: "werkzeuge/impact-controlling/methodenpapiere/" },
         { title: "Impact-Controlling-Rechner", text: "Scorecard-, NWI- und T-SROI-Demo.", href: "erleben/impact-controlling-rechner/" },
+        ...go10MethodPapers.map((paper) => ({ title: paper.title, text: paper.subtitle, href: `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/` })),
         ...dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/` })),
       ])}
     </section>
@@ -739,10 +1054,13 @@ function workshopPages() {
         <p>Alle zitierfähigen Konzepte und Dossiers erhalten stabile Online-Adressen mit Abschnittsankern. Word/PDF-Dateien bleiben ergänzend.</p>
       </div>
       ${cardGrid(base, [
-        { kicker: "Rang 1", title: "Produktbesteuerung durch Wirkung", text: "Konzeptpapier online im Portal Produkte & Konsum.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
-        { kicker: "Rang 1", title: "Dossier Produkte & Konsum", text: "Rechenmodell, Tarifmatrix, Beispiele und Quellen.", href: "wirkungsfelder/produkte-konsum/dossier/" },
-        { kicker: "Rang 2", title: "Impact Controlling", text: "Methodenportal zu T-SROI, NWI, WÖk-IDs und Scorecards.", href: "werkzeuge/impact-controlling/" },
-        { kicker: "Rang 2", title: "Gesamtdossier Impact Controlling", text: "Gesamtdossier mit Einzeldossiers und Tool-Spezifikation.", href: "werkzeuge/impact-controlling/dossier/" },
+        { kicker: "", title: "Produktbesteuerung durch Wirkung", text: "Konzeptpapier online im Portal Produkte & Konsum.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+        { kicker: "", title: "Dossier Produkte & Konsum", text: "Rechenmodell, Tarifmatrix, Beispiele und Quellen.", href: "wirkungsfelder/produkte-konsum/dossier/" },
+        { kicker: "", title: "Impact Controlling", text: "Methodenportal zu T-SROI, NWI, WÖk-IDs und Scorecards.", href: "werkzeuge/impact-controlling/" },
+        { kicker: "", title: "Gesamtdossier Impact Controlling", text: "Gesamtdossier mit Einzeldossiers und Tool-Spezifikation.", href: "werkzeuge/impact-controlling/dossier/" },
+        { kicker: "Methodenpapier", title: "WÖk-IDs und Indikatorenarchitektur", text: "Go-10-Methodenpapier online lesen.", href: "werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/" },
+        { kicker: "Methodenpapier", title: "Scorecards, Benchmarks und NWI", text: "Go-10-Methodenpapier online lesen.", href: "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/" },
+        { kicker: "Methodenpapier", title: "T-SROI und Impact Controlling", text: "Go-10-Methodenpapier online lesen.", href: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/" },
         { kicker: "Bildung", title: "Die Wirkungsschule", text: "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", href: "wirkungsfelder/bildung/wirkungsschule/" },
       ])}
     </section>
@@ -760,8 +1078,11 @@ function updateSitemap() {
   const urls = [
     "werkzeuge/impact-controlling/",
     "werkzeuge/impact-controlling/dossier/",
+    "werkzeuge/impact-controlling/methodenpapiere/",
+    ...go10MethodPapers.map((paper) => `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`),
     ...dossierPages.map(([slug]) => `werkzeuge/impact-controlling/dossiers/${slug}/`),
     "werkzeuge/impact-controlling/t-sroi/",
+    "werkzeuge/t-sroi/",
     "werkzeuge/netto-wirkungs-index/",
     "werkzeuge/woek-ids/",
     "werkzeuge/scorecards/",
@@ -787,6 +1108,8 @@ function updateSitemap() {
 function build() {
   overviewPage();
   dossierOverview();
+  methodPaperOverviewPage();
+  methodPaperPages();
   singleDossierPages();
   toolExplanationPages();
   calculatorPage();
