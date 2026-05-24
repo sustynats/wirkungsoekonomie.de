@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-05-24T09:33:16.738Z",
+  "generatedAt": "2026-05-24T09:46:53.477Z",
   "entries": {
+    "/begriffe/agenda-2030/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-agenda-2030",
+      "documentId": "agenda-2030",
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "searchBoost": 110
+    },
     "/begriffe/archetyp/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -277,9 +294,12 @@
       "relatedTerms": [
         "wirkung",
         "netto-wirkung",
-        "mensch-planet-demokratie"
+        "mensch-planet-demokratie",
+        "sdg-plus"
       ],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 140
     },
@@ -353,13 +373,52 @@
       "sectionId": "begriff-sdg-plus",
       "documentId": "sdg-plus",
       "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
         "mensch-planet-demokratie",
         "positive-netto-wirkung",
         "wirkungsbewertung"
       ],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 140
+    },
+    "/begriffe/sdg-sdgplus-referenzrahmen/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-sdg-sdgplus-referenzrahmen",
+      "documentId": "sdg-sdgplus-referenzrahmen",
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"
+      ],
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "searchBoost": 140
+    },
+    "/begriffe/sdgs/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-sdgs",
+      "documentId": "sdgs",
+      "relatedTerms": [
+        "agenda-2030",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "searchBoost": 110
     },
     "/begriffe/social-credit/": {
       "documentType": "begriff",

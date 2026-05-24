@@ -7,12 +7,17 @@ const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-sdg-reference";
 const JS_VERSION = "20260523-nachhaltigkeit";
+const DETAIL_MATRIX_PATH = path.join(ROOT, "data/sdg_detail_matrix_v0_3.json");
+const detailMatrix = fs.existsSync(DETAIL_MATRIX_PATH)
+  ? JSON.parse(fs.readFileSync(DETAIL_MATRIX_PATH, "utf8")).sdgs || []
+  : [];
 
 const officialSources = [
   { label: "United Nations - Agenda 2030", url: "https://sdgs.un.org/2030agenda" },
   { label: "UN Sustainable Development Goals", url: "https://sdgs.un.org/goals" },
   { label: "UN Statistics - SDG Indicators", url: "https://unstats.un.org/sdgs/indicators/indicators-list/" },
   { label: "Destatis - SDG-Indikatoren Deutschland", url: "https://sdg-indikatoren.de/" },
+  { label: "Destatis - Nachhaltigkeitsindikatoren", url: "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html" },
   { label: "DNS-Indikatoren - Deutsche Nachhaltigkeitsstrategie", url: "https://dns-indikatoren.de/" },
   { label: "Eurostat SDG Monitoring", url: "https://ec.europa.eu/eurostat/web/sdi" },
   { label: "UNESCO ROAM-X Indicators", url: "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian" },
@@ -30,26 +35,37 @@ const sdgPlusDownload = {
     "Das Arbeitspapier enthält die ausführliche Begründung, Definitionen, Unterdimensionen, WÖk-ID-Anschluss, Hover-Texte, Website-Struktur und Quellen zum SDG+-Referenzrahmen.",
 };
 
-const sdgs = [
-  [1, "Keine Armut", "Armut in allen Formen beenden und soziale Sicherung, Zugang zu Grundversorgung und faire Teilhabe stärken.", "Armut in allen Formen und überall beenden.", "Armut ist wirkungsökonomisch nicht nur Einkommensmangel, sondern ein Zustand eingeschränkter Handlungsfähigkeit, Gesundheit, Bildung, Sicherheit und demokratischer Teilhabe.", ["Arbeit & Einkommen", "Rente & soziale Sicherung", "Wohnen & Stadt"]],
-  [2, "Kein Hunger", "Ernährungssicherheit, nachhaltige Landwirtschaft, gesunde Ernährung und resiliente Ernährungssysteme stärken.", "Hunger beenden, Ernährungssicherheit erreichen und nachhaltige Landwirtschaft fördern.", "Ernährungssysteme sind Wirkungsketten: Boden, Wasser, Biodiversität, Arbeit, Gesundheit, Lieferketten und Preise wirken zusammen.", ["Produkte & Konsum", "Klima, Energie & Ressourcen", "Gesundheit & Pflege"]],
-  [3, "Gesundheit und Wohlergehen", "Gesundes Leben und Wohlergehen für alle Menschen in allen Altersgruppen fördern.", "Gesundheit und Wohlergehen für alle Menschen fördern.", "Gesundheit ist nicht nur Reparatur von Krankheit. Wirkungsökonomisch zählen Prävention, Resilienz, Pflege, Teilhabe, Umweltbedingungen und psychische Stabilität.", ["Gesundheit & Pflege", "Bildung", "Wohnen & Stadt"]],
-  [4, "Hochwertige Bildung", "Inklusive, chancengerechte und hochwertige Bildung sowie lebenslanges Lernen ermöglichen.", "Inklusive, chancengerechte und hochwertige Bildung sowie lebenslanges Lernen fördern.", "Bildung ist eine Wirkungsinfrastruktur: Sie stärkt Selbstwirksamkeit, Urteilskraft, Demokratiekompetenz, Teilhabe, digitale Mündigkeit und Zukunftsfähigkeit.", ["Bildung", "Wissenschaft, Innovation & Digitalisierung", "Arbeit & Einkommen"]],
-  [5, "Geschlechtergleichstellung", "Gleichstellung der Geschlechter erreichen und Selbstbestimmung von Frauen und Mädchen stärken.", "Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen.", "Geschlechtergerechtigkeit betrifft Zugang, Sicherheit, Care, Einkommen, Repräsentation, Rollenbilder und Schutz vor struktureller Diskriminierung.", ["Bildung", "Arbeit & Einkommen", "Staat, Recht & Demokratie"]],
-  [6, "Sauberes Wasser und Sanitäreinrichtungen", "Verfügbarkeit und nachhaltige Bewirtschaftung von Wasser und Sanitärversorgung sichern.", "Wasser und Sanitärversorgung für alle verfügbar machen und nachhaltig bewirtschaften.", "Wasser ist Lebensgrundlage, Gesundheitsfaktor, Produktionsbedingung und ökologische Grenze. Produkt- und Lieferkettenwirkung muss Wasserstress sichtbar machen.", ["Klima, Energie & Ressourcen", "Produkte & Konsum", "Gesundheit & Pflege"]],
-  [7, "Bezahlbare und saubere Energie", "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie sichern.", "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie sichern.", "Energie entscheidet über Teilhabe, Industrie, Wohnen, Gesundheit, Klima und Resilienz. Wirkungsökonomisch zählt Versorgungssicherheit innerhalb planetarer Grenzen.", ["Klima, Energie & Ressourcen", "Wohnen & Stadt", "Wirtschaft & Unternehmen"]],
-  [8, "Menschenwürdige Arbeit und Wirtschaftswachstum", "Menschenwürdige Arbeit, produktive Beschäftigung und nachhaltige wirtschaftliche Entwicklung fördern.", "Dauerhaftes, inklusives und nachhaltiges Wirtschaften sowie menschenwürdige Arbeit fördern.", "Arbeit wird nicht nur als Erwerbslogik betrachtet, sondern als Wirkung auf Würde, Einkommen, Gesundheit, Teilhabe, Kompetenz und Automatisierungsfolgen.", ["Arbeit & Einkommen", "Wirtschaft & Unternehmen", "Produkte & Konsum"]],
-  [9, "Industrie, Innovation und Infrastruktur", "Widerstandsfähige Infrastruktur, nachhaltige Industrialisierung und Innovation fördern.", "Widerstandsfähige Infrastruktur, nachhaltige Industrialisierung und Innovation fördern.", "Innovation erzeugt nicht automatisch positive Wirkung. Entscheidend ist, ob Infrastruktur und Technik positive Netto-Wirkung wahrscheinlicher machen.", ["Wissenschaft, Innovation & Digitalisierung", "Wirtschaft & Unternehmen", "Produkte & Konsum"]],
-  [10, "Weniger Ungleichheiten", "Ungleichheiten innerhalb und zwischen Ländern verringern.", "Ungleichheit innerhalb und zwischen Ländern verringern.", "Ungleichheit schwächt Chancen, Gesundheit, Vertrauen, Demokratie und Resilienz. Wirkungsökonomie fragt, welche Regeln Teilhabe erhöhen oder Ausschluss verstärken.", ["Bildung", "Arbeit & Einkommen", "Rente & soziale Sicherung"]],
-  [11, "Nachhaltige Städte und Gemeinden", "Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten.", "Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten.", "Orte wirken: Wohnen, Mobilität, Hitze, Sicherheit, soziale Nähe, Bildung, Gesundheit und demokratische Beteiligung entstehen räumlich.", ["Wohnen & Stadt", "Bildung", "Klima, Energie & Ressourcen"]],
-  [12, "Nachhaltiger Konsum und Produktion", "Nachhaltige Konsum- und Produktionsmuster sicherstellen.", "Nachhaltige Konsum- und Produktionsmuster sicherstellen.", "Produkte sind Wirkungsträger. SDG 12 ist zentral für Produktscorecards, WÖk-IDs, digitale Produktpässe, Lieferketten und Wirkungsumsatzsteuer.", ["Produkte & Konsum", "Wirtschaft & Unternehmen", "Finanzsystem & Kapital"]],
-  [13, "Klimaschutz", "Dringende Maßnahmen zur Bekämpfung des Klimawandels und seiner Folgen ergreifen.", "Dringende Maßnahmen gegen Klimawandel und seine Folgen ergreifen.", "Klima ist Systembedingung. Wirkungsökonomisch müssen Emissionen, Anpassung, Risiko, Versicherbarkeit, soziale Abfederung und Transformationswirkung gemeinsam betrachtet werden.", ["Klima, Energie & Ressourcen", "Wohnen & Stadt", "Finanzsystem & Kapital"]],
-  [14, "Leben unter Wasser", "Ozeane, Meere und Meeresressourcen erhalten und nachhaltig nutzen.", "Ozeane, Meere und Meeresressourcen erhalten und nachhaltig nutzen.", "Meere sind ökologische Stabilitätsräume. Produktketten, Chemikalien, Plastik, Ernährung, Energie und Klima wirken auf marine Systeme zurück.", ["Klima, Energie & Ressourcen", "Produkte & Konsum"]],
-  [15, "Leben an Land", "Landökosysteme, Wälder, Böden und Biodiversität schützen, wiederherstellen und nachhaltig nutzen.", "Landökosysteme schützen, wiederherstellen und nachhaltig nutzen.", "Biodiversität, Böden, Wälder und Landnutzung sind Grundlage von Ernährung, Gesundheit, Klimaresilienz und langfristiger Wertschöpfung.", ["Klima, Energie & Ressourcen", "Produkte & Konsum", "Wohnen & Stadt"]],
-  [16, "Frieden, Gerechtigkeit und starke Institutionen", "Friedliche, inklusive Gesellschaften, Rechtsstaatlichkeit, Zugang zu Recht und wirksame Institutionen fördern.", "Friedliche und inklusive Gesellschaften, Zugang zur Justiz und wirksame Institutionen fördern.", "SDG 16 ist die Brücke zu SDG+: Ohne Rechtsstaatlichkeit, Vertrauen, Demokratie und öffentliche Wahrheit können nachhaltige Ziele nicht stabil erreicht werden.", ["Staat, Recht & Demokratie", "Medien & Öffentlichkeit", "Bildung"]],
-  [17, "Partnerschaften", "Globale Partnerschaften, Zusammenarbeit, Finanzierung, Daten und Umsetzungskraft für nachhaltige Entwicklung stärken.", "Umsetzungsmittel stärken und globale Partnerschaften für nachhaltige Entwicklung beleben.", "Wirkung entsteht in Netzwerken: Daten, Finanzierung, Institutionen, Wissenschaft, Kommunen, Unternehmen und Zivilgesellschaft müssen rückkopplungsfähig zusammenarbeiten.", ["Staat, Recht & Demokratie", "Wissenschaft, Innovation & Digitalisierung", "Wirtschaft & Unternehmen"]],
-].map(([number, title, hoverText, officialDescription, woekMeaning, fields]) => {
+const sdgDepthDownloads = [
+  {
+    title: "Vertiefungskonzept als Word-Datei",
+    href: "/assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+    file: "assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+  },
+  {
+    title: "Vertiefungskonzept als PDF",
+    href: "/assets/downloads/exports/sdg-sdgplus/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
+    file: "assets/downloads/exports/sdg-sdgplus/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
+  },
+  {
+    title: sdgPlusDownload.title,
+    href: sdgPlusDownload.href,
+    file: sdgPlusDownload.file,
+  },
+];
+
+const sdgs = detailMatrix.map((entry) => {
+  const number = entry.num;
+  const title = entry.title;
   const slug = sdgSlug(number);
+  const targets = (entry.targets || []).map(([code, globalTarget, euDe, woekTranslation]) => ({
+    code,
+    title: globalTarget,
+    summary: globalTarget,
+    germanyEurope: euDe,
+    indicatorLogic: woekTranslation,
+    officialUrl: `https://sdgs.un.org/goals/goal${number}`,
+    indicatorsUrl: "https://unstats.un.org/sdgs/indicators/indicators-list/",
+  }));
   return {
     id: `sdg-${number}`,
     type: "sdg",
@@ -58,15 +74,16 @@ const sdgs = [
     shortTitle: `SDG ${number} ${shorten(title)}`,
     slug,
     url: `/verstehen/sdgs-sdgplus/${slug}/`,
-    hoverText,
-    officialDescription,
-    woekMeaning,
-    germanyEuropeRelevance:
-      "Für Deutschland und Europa sind nationale Nachhaltigkeitsindikatoren, europäische SDG-Berichte, soziale und ökologische Transformationspfade, Datenqualität und gerechte Übergänge relevant.",
-    targets: number === 4 ? sdg4Targets() : [{ code: `${number}.x`, title: "Offizielle Unterziele", summary: "Die vollständige deutschsprachige Kuratierung der Unterziele wird ergänzt. Bis dahin führt die UN-Zielseite zur offiziellen Target-Liste.", officialUrl: `https://sdgs.un.org/goals/goal${number}` }],
-    relevantTargetsGermanyEurope: number === 4 ? ["4.1", "4.2", "4.3", "4.4", "4.5", "4.7", "4.a"] : ["wird ergänzt"],
+    hoverText: firstSentence(entry.depth) || entry.official,
+    officialDescription: entry.official,
+    depthDescription: entry.depth,
+    woekMeaning: entry.woek,
+    germanyEuropeRelevance: entry.eu_de,
+    targets,
+    relevantTargetsGermanyEurope: targets.map((target) => target.code),
+    wokIndicatorFamilies: entry.wok,
     officialSources: officialSourcesFor(number),
-    relatedWirkungsfelder: fields.map((field) => ({ title: field, url: fieldUrl(field), why: `${title} berührt dieses Wirkungsfeld als Bewertungs- und Anschlussrahmen.` })),
+    relatedWirkungsfelder: (entry.portals || []).map((field) => ({ title: field, url: fieldUrl(field), why: `${title} berührt dieses Wirkungsfeld als Bewertungs- und Anschlussrahmen.` })),
     relatedWerkzeuge: relatedToolsFor(number),
     relatedBookAnchors: bookAnchorsFor(number),
   };
@@ -112,12 +129,12 @@ const sdgPlus = [
 
 const sdgPlusDetails = {
   "sdgplus-demokratie": {
-    hoverText: "SDG+ Demokratie macht demokratische Stabilitaet, Teilhabe, Streitfaehigkeit und Korrekturfaehigkeit als Wirkungsbedingung sichtbar.",
+    hoverText: "SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar.",
     woekMeaning: "Demokratie meint in der Wirkungsökonomie mehr als Wahlen und Institutionen. Sie ist ein Wirkungsraum, in dem Wahrheit, Rechtsstaatlichkeit, Beteiligung, Machtbegrenzung, Minderheitenschutz, öffentliche Korrektur und digitale Selbstbestimmung zusammenwirken.",
     whyNeeded: "Die SDGs enthalten mit SDG 16 Frieden, Gerechtigkeit und starke Institutionen. Für eine Wirkungsordnung des 21. Jahrhunderts reicht das nicht aus, weil digitale Öffentlichkeit, Plattformmacht, Desinformation, algorithmische Steuerung, hybride Einflussnahme und Vertrauensverlust demokratische Korrekturfähigkeit beschädigen können.",
     officialSdgConnection: "SDG 16 ist der direkte Anschluss. SDG 4, SDG 10, SDG 11 und SDG 17 sind wichtige Nebenanker, weil Bildung, Ungleichheit, lokale Räume und Partnerschaften demokratische Teilhabe prägen.",
     relatedSdgs: ["sdg-16", "sdg-4", "sdg-10", "sdg-11", "sdg-17"],
-    subdimensions: ["freie und faire Wahlen", "Machtbegrenzung und Gewaltenteilung", "Beteiligung und Teilgabe", "Minderheitenschutz und Grundrechte", "demokratische Streitfaehigkeit", "Schutz vor Desinformation und Manipulation", "politische Transparenz und Rechenschaft", "demokratische Resilienz in Krisen"],
+    subdimensions: ["freie und faire Wahlen", "Machtbegrenzung und Gewaltenteilung", "Beteiligung und Teilgabe", "Minderheitenschutz und Grundrechte", "demokratische Streitfähigkeit", "Schutz vor Desinformation und Manipulation", "politische Transparenz und Rechenschaft", "demokratische Resilienz in Krisen"],
     indicatorFamilies: ["Wahlfreiheit und Wahlfairness", "Beteiligungsquoten und Zugangsbarrieren", "Transparenz politischer Finanzierung", "Qualität öffentlicher Konsultationen", "Desinformations- und Manipulationsrisiken", "Vertrauen in demokratische Verfahren", "Schutz von Minderheiten und zivilgesellschaftlichem Raum"],
     redLines: ["Wahlmanipulation", "systematische Einschüchterung politischer Gegner:innen", "Abbau unabhängiger Gerichte", "staatlich organisierte Desinformation", "Ausschluss von Minderheiten aus Teilhabe"],
     fields: ["Staat, Recht & Demokratie", "Medien & Öffentlichkeit", "Bildung", "Wissenschaft, Innovation & Digitalisierung", "Kultur, Identität & Resonanz"],
@@ -297,6 +314,12 @@ function shorten(title) {
     .replace("Frieden, Gerechtigkeit und starke ", "");
 }
 
+function firstSentence(value) {
+  const text = String(value || "").trim();
+  const match = text.match(/^(.+?[.!?])(?:\s|$)/);
+  return match ? match[1] : text;
+}
+
 function slugify(value) {
   return String(value)
     .toLowerCase()
@@ -415,7 +438,7 @@ ${body(base, route)}
   </body>
 </html>
 `;
-  fs.writeFileSync(out, html, "utf8");
+  fs.writeFileSync(out, html.replace(/[ \t]+$/gm, ""), "utf8");
 }
 
 function printActions(extra = "") {
@@ -618,21 +641,25 @@ function sdgPlusInlineSection(item, base) {
         <strong>Wirkungsgrenzen / rote Linien:</strong>
         <ul class="portal-list">${item.redLines.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>
       </div>
+      ${politicalImplementationBlock(item)}
     </section>`;
 }
 
 function sdgPlusDownloadBlock(base) {
-  const exists = fs.existsSync(path.join(ROOT, sdgPlusDownload.file));
+  const available = sdgDepthDownloads.filter((download) => fs.existsSync(path.join(ROOT, download.file)));
   return `<section class="section" aria-labelledby="sdgplus-download">
       <div class="download-card">
         <div>
           <p class="card-kicker">Download / Dossier</p>
-          ${sectionTitle("sdgplus-download", "SDG+ Arbeitspapier")}
+          ${sectionTitle("sdgplus-download", "Vertiefungskonzept und Arbeitspapiere")}
+          <p class="card-text">Der vollständige Referenzbereich ist online lesbar. Downloads dienen als ergänzende Export- und Archivfassung.</p>
           <p class="card-text">${escapeHtml(sdgPlusDownload.description)}</p>
         </div>
-        ${exists
-          ? `<a class="btn btn-primary no-print" href="${href(base, sdgPlusDownload.href)}">${escapeHtml(sdgPlusDownload.title)}</a>`
-          : '<span class="prototype-badge">Arbeitsdokument folgt</span>'}
+        <div class="portal-card-actions no-print">
+          ${available.length
+            ? available.map((download) => `<a class="btn btn-primary" href="${href(base, download.href)}">${escapeHtml(download.title)}</a>`).join("")
+            : '<span class="prototype-badge">Arbeitsdokument folgt</span>'}
+        </div>
       </div>
     </section>`;
 }
@@ -693,23 +720,49 @@ function sdgSections(item, base) {
   return `<section class="section" aria-labelledby="targets">
       <div class="section-header">
         <p class="hero-kicker">UN-Zielstruktur</p>
-        ${sectionTitle("targets", "Offizielle Unterziele")}
-        <p>Die Unterziele werden bewusst kurz paraphrasiert und mit der offiziellen UN-Zielseite verlinkt. Lange offizielle Texte werden nicht kopiert.</p>
+        ${sectionTitle("targets", "Globale Unterziele")}
+        <p>Die Unterziele werden bewusst kurz paraphrasiert und mit der offiziellen UN-Zielseite sowie der UN-Indicators-Liste verlinkt. Lange offizielle Texte werden nicht kopiert.</p>
       </div>
-      ${cardGrid(base, item.targets.map((target) => ({ title: target.code + " " + target.title, text: target.summary, url: target.officialUrl })))}
+      ${targetsTable(item)}
     </section>
     <section class="section" aria-labelledby="de-eu">
       <div class="section-header">
         <p class="hero-kicker">Deutschland und Europa</p>
-        ${sectionTitle("de-eu", "Relevanz für Deutschland und Europa")}
+        ${sectionTitle("de-eu", "Europa-/Deutschland-Bezug")}
         <p>${escapeHtml(item.germanyEuropeRelevance)}</p>
-        <p>Relevante Unterziele im deutschen/europäischen Kontext: ${escapeHtml(item.relevantTargetsGermanyEurope.join(", "))}.</p>
+        <p>Relevante Unterziel-Codes im deutschen/europäischen Kontext: ${escapeHtml(item.relevantTargetsGermanyEurope.join(", "))}. Die konkrete Fortschrittsbeobachtung erfolgt über Destatis-SDG-Indikatoren, DNS-Indikatoren, Eurostat SDG Monitoring, EU-Rechtsrahmen und nationale Politikfelder.</p>
       </div>
     </section>
     ${woekMeaningBlock(item)}
+    ${woekIdsBlock(base, item)}
     ${relationsBlock(base, item)}
-    ${woekIdsBlock(base)}
+    ${politicalImplementationBlock(item)}
     ${sdgPlusInteractionBlock(base, item)}`;
+}
+
+function targetsTable(item) {
+  return `<div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Target</th>
+              <th scope="col">Globales Unterziel</th>
+              <th scope="col">Europa / Deutschland</th>
+              <th scope="col">Indikator- und Wirkungslogik</th>
+              <th scope="col">Quelle</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${item.targets.map((target) => `<tr id="target-${escapeHtml(target.code.replace(".", "-"))}">
+              <th scope="row">${escapeHtml(target.code)}</th>
+              <td>${escapeHtml(target.title || target.summary)}</td>
+              <td>${escapeHtml(target.germanyEurope || "Kontext wird fortlaufend präzisiert.")}</td>
+              <td>${escapeHtml(target.indicatorLogic || "Indikatorlogik wird über UN Indicators, Destatis, Eurostat und WÖk-ID-Familien angeschlossen.")}</td>
+              <td><a class="text-link" href="${escapeHtml(target.officialUrl)}" target="_blank" rel="noopener noreferrer">UN-Zielseite <span class="sr-only">(externe Quelle)</span></a><br><a class="text-link" href="${escapeHtml(target.indicatorsUrl)}" target="_blank" rel="noopener noreferrer">UN Indicators <span class="sr-only">(externe Quelle)</span></a></td>
+            </tr>`).join("")}
+          </tbody>
+        </table>
+      </div>`;
 }
 
 function sdgPlusSections(item, base) {
@@ -730,7 +783,8 @@ function sdgPlusSections(item, base) {
       </div>
     </section>
     ${relationsBlock(base, item)}
-    ${woekIdsBlock(base)}`;
+    ${woekIdsBlock(base, item)}
+    ${politicalImplementationBlock(item)}`;
 }
 
 function sdgPlusNotice() {
@@ -769,17 +823,53 @@ function relationsBlock(base, item) {
     </section>`;
 }
 
-function woekIdsBlock(base) {
+function woekIdsBlock(base, item = null) {
+  const families = item?.wokIndicatorFamilies || item?.indicatorFamilies?.join("; ") || "";
   return `<section class="section" aria-labelledby="woek-ids">
       <div class="download-card">
         <div>
           <p class="card-kicker">WÖk-IDs</p>
-          ${sectionTitle("woek-ids", "Relevante WÖk-IDs")}
-          <p class="card-text">Die maschinenlesbare SDG-/WÖk-ID-Verknüpfung wird weiter ausgebaut. WÖk-IDs sind der methodische Brückenschritt zwischen SDG-/SDG+-Referenzrahmen und messbarer Wirkungsbewertung.</p>
+          ${sectionTitle("woek-ids", "WÖk-ID-/Indikatorenbezug")}
+          <p class="card-text">WÖk-IDs sind der methodische Brückenschritt zwischen SDG-/SDG+-Referenzrahmen und messbarer Wirkungsbewertung. Sie verbinden Zielräume, Indikatorfamilien, Datenquellen, Scorecards und Rückkopplung in Entscheidungen.</p>
+          ${families ? `<p class="card-text"><strong>Relevante Indikatorfamilien:</strong> ${escapeHtml(families)}</p>` : '<p class="card-text">Die detaillierte maschinenlesbare SDG-/WÖk-ID-Verknüpfung wird weiter ausgebaut.</p>'}
         </div>
         <a class="btn btn-secondary no-print" href="${href(base, "werkzeuge/woek-ids/")}">WÖk-IDs öffnen</a>
       </div>
     </section>`;
+}
+
+function politicalImplementationBlock(item) {
+  const rows = politicalRows(item);
+  const id = `political-implementation-${item.id}`;
+  return `<section class="section" aria-labelledby="${escapeHtml(id)}">
+      <div class="section-header">
+        <p class="hero-kicker">Demokratische Umsetzung</p>
+        ${sectionTitle(id, "Politische Anschlussfähigkeit")}
+        <p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit dieses Ziel demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann. Unterschiedliche Parteien können innerhalb dieses Rahmens verschiedene Wege wählen. Entscheidend ist, dass Wirkung sichtbar, überprüfbar, korrigierbar und grundrechtskonform bleibt.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <tbody>
+            ${rows.map(([label, value]) => `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`).join("")}
+          </tbody>
+        </table>
+      </div>
+    </section>`;
+}
+
+function politicalRows(item) {
+  const title = item.title.replace(/^SDG\+?\s*\d*\s*-\s*/, "").replace(/^SDG\+\s*/, "");
+  const fields = (item.relatedWirkungsfelder || []).map((field) => field.title).slice(0, 4).join(", ");
+  return [
+    ["Aufgabe der Politik", `${title} in Regeln, Budgets, Standards, Beschaffung, Förderung und institutionelle Verantwortung übersetzen, ohne demokratische Abwägung durch Daten zu ersetzen.`],
+    ["Politische Rahmenbedingungen", `Messbare Zielpfade, verlässliche Daten, transparente Zuständigkeiten, Rechtsschutz, Datenschutz und Anschluss an UN-, EU-, Destatis-, DNS- und Eurostat-Indikatoren schaffen.`],
+    ["Ausgestaltungsspielraum", "Parteien können unterschiedliche Mischungen aus Marktanreizen, Regulierung, öffentlicher Infrastruktur, Förderung, Steuerlogik, kommunalen Modellen und internationaler Kooperation wählen."],
+    ["Zielkonflikte", "Kosten, Freiheit, Geschwindigkeit, soziale Abfederung, Wettbewerbsfähigkeit, Verteilung, Datenschutz und langfristige Resilienz müssen sichtbar gemacht und demokratisch entschieden werden."],
+    ["Rollenverteilung", `Bund, Länder, Kommunen, EU, Verwaltung, Wirtschaft, Wissenschaft und Zivilgesellschaft tragen je eigene Verantwortung. Besonders berührte Wirkungsfelder: ${fields || "mehrere Wirkungsfelder"}.`],
+    ["Übergang und Schutz", "Übergänge brauchen soziale Abfederung, KMU-Schutz, Schutz vulnerabler Gruppen, klare Fristen, Beteiligung und keine Bewertung von Menschen, sondern von Strukturen, Regeln, Produkten und Wirkungsräumen."],
+    ["Evaluation und Korrektur", "Politische Maßnahmen müssen beobachtet, veröffentlicht, korrigiert und bei Nebenwirkungen angepasst werden; Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht."],
+    ["Schutz vor Technokratie", "Normative Entscheidungen bleiben demokratisch legitimiert. Scorecards, WÖk-IDs und Indikatoren sind Hilfsmittel, keine automatische politische Wahrheit."],
+  ];
 }
 
 function sdgPlusInteractionBlock(base, item) {
@@ -819,6 +909,7 @@ function dataFiles() {
     germanyEuropeRelevance: item.germanyEuropeRelevance,
     targets: item.targets,
     relevantTargetsGermanyEurope: item.relevantTargetsGermanyEurope || [],
+    wokIndicatorFamilies: item.wokIndicatorFamilies || "",
     officialSources: item.officialSources,
     relatedWirkungsfelder: item.relatedWirkungsfelder,
     relatedWerkzeuge: item.relatedWerkzeuge,

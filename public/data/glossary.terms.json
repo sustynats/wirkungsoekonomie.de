@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-05-24T09:23:20.964Z",
+  "generatedAt": "2026-05-24T09:42:38.754Z",
   "terms": [
+    {
+      "category": "Grundbegriff",
+      "termId": "agenda-2030",
+      "canonicalLabel": "Agenda 2030",
+      "slug": "agenda-2030",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "SDG-/SDG+-Referenzrahmen",
+      "sourceDocument": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "sourceSection": "Referenzrahmen",
+      "shortDefinition": "Die Agenda 2030 ist der internationale Rahmen der Vereinten Nationen für nachhaltige Entwicklung.",
+      "hoverDefinition": "Die Agenda 2030 umfasst die 17 SDGs und bildet den globalen Zielrahmen, an den die Wirkungsökonomie anschließt.",
+      "longDefinition": "Die Agenda 2030 beschreibt weltweit verhandelte Zielräume für nachhaltige Entwicklung. Die Wirkungsökonomie nutzt diese Zielräume als Referenzrahmen, um positive, negative und neutrale Wirkung öffentlich nachvollziehbar einzuordnen.",
+      "usageNote": "Als offizieller UN-Rahmen beschreiben; SDG+ klar als WÖk-Erweiterung trennen.",
+      "doNotConfuseWith": [
+        "SDG+",
+        "Wirkungsökonomie"
+      ],
+      "synonyms": [
+        "UN Agenda 2030"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
+      "examples": [],
+      "preferredUsage": "Agenda 2030 als globalen Zielrahmen der SDGs benennen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "agenda 2030",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
     {
       "category": "Messbegriff",
       "termId": "archetyp",
@@ -640,9 +677,12 @@
       "relatedTerms": [
         "wirkung",
         "netto-wirkung",
-        "mensch-planet-demokratie"
+        "mensch-planet-demokratie",
+        "sdg-plus"
       ],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
       "examples": [],
       "preferredUsage": "Zielgröße der WÖk ist positive Netto-Wirkung.",
       "deprecatedUsage": [],
@@ -816,18 +856,101 @@
         "SDG-Plus"
       ],
       "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
         "mensch-planet-demokratie",
         "positive-netto-wirkung",
         "wirkungsbewertung"
       ],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
       "examples": [],
       "preferredUsage": "SDG+ als WÖk-Erweiterung erklären.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "sdg plus",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-23"
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
+      "termId": "sdg-sdgplus-referenzrahmen",
+      "canonicalLabel": "SDG-/SDG+-Referenzrahmen",
+      "slug": "sdg-sdgplus-referenzrahmen",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "source": "SDG-/SDG+-Referenzrahmen",
+      "sourceDocument": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "sourceSection": "Referenzrahmen",
+      "shortDefinition": "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen SDGs mit SDG+ als transparenter WÖk-Erweiterung.",
+      "hoverDefinition": "Der SDG-/SDG+-Referenzrahmen ordnet positive, negative und neutrale Wirkung öffentlich nachvollziehbar ein.",
+      "longDefinition": "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen 17 Nachhaltigkeitsziele der Vereinten Nationen mit SDG+ als Wirkungsökonomie-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.",
+      "usageNote": "SDG+ immer als transparente WÖk-Erweiterung kennzeichnen.",
+      "doNotConfuseWith": [
+        "ESG",
+        "SDG+ als UN-Ziel"
+      ],
+      "synonyms": [
+        "Referenzrahmen",
+        "SDG Referenzrahmen",
+        "SDG+ Referenzrahmen"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"
+      ],
+      "examples": [],
+      "preferredUsage": "Als Bewertungsrahmen der Wirkungsökonomie verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "sdg sdgplus referenzrahmen",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
+    },
+    {
+      "category": "Grundbegriff",
+      "termId": "sdgs",
+      "canonicalLabel": "SDGs",
+      "slug": "sdgs",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "SDG-/SDG+-Referenzrahmen",
+      "sourceDocument": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "sourceSection": "Die 17 SDGs",
+      "shortDefinition": "Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030.",
+      "hoverDefinition": "Die SDGs bilden den offiziellen globalen Zielrahmen für nachhaltige Entwicklung.",
+      "longDefinition": "Die Sustainable Development Goals beschreiben Zielräume für Armut, Ernährung, Gesundheit, Bildung, Gleichstellung, Wasser, Energie, Arbeit, Industrie, Ungleichheit, Städte, Konsum, Klima, Ökosysteme, Frieden und Partnerschaften. Die Wirkungsökonomie nutzt sie als Referenzrahmen, nicht als dekorative Ziel-Liste.",
+      "usageNote": "Offizielle UN-Ziele nicht mit SDG+ vermischen.",
+      "doNotConfuseWith": [
+        "SDG+",
+        "ESG"
+      ],
+      "synonyms": [
+        "Sustainable Development Goals",
+        "Nachhaltigkeitsziele",
+        "UN-Nachhaltigkeitsziele"
+      ],
+      "relatedTerms": [
+        "agenda-2030",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [
+        "sdg-sdgplus-referenzrahmen"
+      ],
+      "examples": [],
+      "preferredUsage": "SDGs als offizielle 17 Ziele der Agenda 2030 verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "sdgs",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-24"
     },
     {
       "category": "Schutzbegriff",

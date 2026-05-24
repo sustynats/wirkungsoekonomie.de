@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-05-24T09:23:24.037Z",
+  "generatedAt": "2026-05-24T09:42:52.177Z",
   "links": {
+    "agenda-2030": {
+      "label": "Agenda 2030",
+      "slug": "agenda-2030",
+      "url": "/begriffe/agenda-2030/",
+      "hoverDefinition": "Die Agenda 2030 umfasst die 17 SDGs und bildet den globalen Zielrahmen, an den die Wirkungsökonomie anschließt.",
+      "shortDefinition": "Die Agenda 2030 ist der internationale Rahmen der Vereinten Nationen für nachhaltige Entwicklung.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "UN Agenda 2030"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ]
+    },
     "archetyp": {
       "label": "Archetyp",
       "slug": "archetyp",
@@ -292,7 +308,8 @@
       "relatedTerms": [
         "wirkung",
         "netto-wirkung",
-        "mensch-planet-demokratie"
+        "mensch-planet-demokratie",
+        "sdg-plus"
       ]
     },
     "positive-wirkung": {
@@ -367,9 +384,48 @@
         "SDG-Plus"
       ],
       "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
         "mensch-planet-demokratie",
         "positive-netto-wirkung",
         "wirkungsbewertung"
+      ]
+    },
+    "sdg-sdgplus-referenzrahmen": {
+      "label": "SDG-/SDG+-Referenzrahmen",
+      "slug": "sdg-sdgplus-referenzrahmen",
+      "url": "/begriffe/sdg-sdgplus-referenzrahmen/",
+      "hoverDefinition": "Der SDG-/SDG+-Referenzrahmen ordnet positive, negative und neutrale Wirkung öffentlich nachvollziehbar ein.",
+      "shortDefinition": "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen SDGs mit SDG+ als transparenter WÖk-Erweiterung.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Referenzrahmen",
+        "SDG Referenzrahmen",
+        "SDG+ Referenzrahmen"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030",
+        "positive-netto-wirkung"
+      ]
+    },
+    "sdgs": {
+      "label": "SDGs",
+      "slug": "sdgs",
+      "url": "/begriffe/sdgs/",
+      "hoverDefinition": "Die SDGs bilden den offiziellen globalen Zielrahmen für nachhaltige Entwicklung.",
+      "shortDefinition": "Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Sustainable Development Goals",
+        "Nachhaltigkeitsziele",
+        "UN-Nachhaltigkeitsziele"
+      ],
+      "relatedTerms": [
+        "agenda-2030",
+        "sdg-plus",
+        "positive-netto-wirkung"
       ]
     },
     "social-credit": {
