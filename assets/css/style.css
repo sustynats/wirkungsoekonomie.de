@@ -776,6 +776,100 @@ h4 {
   font-weight: 600;
 }
 
+.sdg-ref {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: 100%;
+}
+
+.sdg-ref-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.52rem 0.78rem;
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--navy);
+  font-size: 0.88rem;
+  font-weight: 850;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.sdg-ref-link:hover,
+.sdg-ref-link:focus-visible {
+  border-color: var(--green);
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green);
+  outline: 2px solid rgba(47, 125, 92, 0.22);
+  outline-offset: 2px;
+}
+
+.sdg-ref-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border: 1px solid rgba(11, 27, 54, 0.18);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 850;
+  cursor: help;
+}
+
+.sdg-ref-info:hover,
+.sdg-ref-info:focus-visible {
+  color: var(--navy);
+  outline: 2px solid rgba(47, 125, 92, 0.22);
+  outline-offset: 2px;
+}
+
+.sdg-ref-popover {
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  bottom: calc(100% + 0.5rem);
+  width: min(22rem, 82vw);
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(11, 27, 54, 0.14);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--navy);
+  box-shadow: var(--shadow-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.25rem);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.sdg-ref:hover .sdg-ref-popover,
+.sdg-ref:focus-within .sdg-ref-popover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.sdg-ref-more {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--green);
+  font-weight: 850;
+}
+
+.sdg-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
 .hero-audio {
   width: min(100%, 620px);
   margin-top: 1.6rem;
@@ -8546,6 +8640,8 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   .portal-card-actions,
   .tool-reference-info,
   .law-reference-info,
+  .sdg-ref-info,
+  .sdg-ref-popover,
   .reference-popover,
   .reader-mode-dock,
   .fulltext-toolbar,
