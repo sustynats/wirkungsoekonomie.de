@@ -609,6 +609,7 @@ function overviewPage() {
         <p>SDG+ macht sichtbar, dass eine Wirkung nicht ausreichend positiv sein kann, wenn sie ökologische oder soziale Vorteile erzeugt, aber demokratische Korrekturfähigkeit beschädigt. Ein digitales System kann effizient sein und zugleich Überwachung verstärken. Eine Plattform kann Bildung verbreiten und zugleich Desinformation skalieren. Ein Produkt kann emissionsarm sein und zugleich Menschenrechte verletzen.</p>
       </div>
     </section>
+    ${sdgPlusPublicationBlock(base)}
     <section class="section" aria-labelledby="sdgplus-detail">
       <div class="section-header">
         <p class="hero-kicker">SDG+ im Detail</p>
@@ -618,6 +619,7 @@ function overviewPage() {
       <div class="sdg-reference-grid">${sdgPlus.map((item) => `<article class="card"><p class="card-kicker">SDG+</p><h3 class="card-title">${escapeHtml(item.title)}</h3><p class="card-text">${escapeHtml(item.hoverText)}</p><div class="portal-card-actions">${badge(item, base)}</div></article>`).join("")}</div>
     </section>
     ${sdgPlus.map((item) => sdgPlusInlineSection(item, base)).join("")}
+    ${sdgPlusDossierBlock()}
     <section class="section" aria-labelledby="usage">
       <div class="section-header">
         <p class="hero-kicker">Website-Logik</p>
@@ -697,6 +699,73 @@ function sdgPlusInlineSection(item, base) {
         <ul class="portal-list">${item.redLines.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>
       </div>
       ${politicalImplementationBlock(item)}
+    </section>`;
+}
+
+function sdgPlusPublicationBlock(base) {
+  const detailWordAvailable = fs.existsSync(path.join(ROOT, "assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx"));
+  const detailPdfAvailable = fs.existsSync(path.join(ROOT, "assets/downloads/exports/sdg-sdgplus/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf"));
+  const workpaperAvailable = fs.existsSync(path.join(ROOT, sdgPlusDownload.file));
+  return `<section class="section" aria-labelledby="sdgplus-publications">
+      <div class="section-header">
+        <p class="hero-kicker">Online lesen & Downloads</p>
+        ${sectionTitle("sdgplus-publications", "Detailkonzept und Dossier zu SDG+")}
+        <p>SDG+ wird auf dieser Seite vollständig online geführt. Downloads sind ergänzende Export- und Archivfassungen, nicht der Hauptzugang.</p>
+      </div>
+      <div class="card-grid four">
+        <article class="card">
+          <p class="card-kicker">Online-Volltext</p>
+          <h3>Detailkonzept online lesen</h3>
+          <p class="card-text">Definition, Begründung, sieben Dimensionen, Unterdimensionen, Indikatorfamilien, Wirkungsgrenzen und politische Anschlussfähigkeit.</p>
+          <a class="text-link" href="#sdgplus-detail">Zum Detailkonzept</a>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Download</p>
+          <h3>Detailkonzept herunterladen</h3>
+          <p class="card-text">Die Lesefassung des vertieften SDG-/SDG+-Referenzrahmens als Word-Datei und, sofern vorhanden, als PDF.</p>
+          <div class="portal-card-actions no-print">
+            ${detailWordAvailable ? `<a class="btn btn-secondary" href="${href(base, "assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx")}">Word</a>` : '<span class="prototype-badge">Word folgt</span>'}
+            ${detailPdfAvailable ? `<a class="btn btn-secondary" href="${href(base, "assets/downloads/exports/sdg-sdgplus/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf")}">PDF</a>` : '<span class="prototype-badge">PDF folgt</span>'}
+          </div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Online-Dossier</p>
+          <h3>SDG+ Dossier online lesen</h3>
+          <p class="card-text">Das Dossier bündelt Zweck, Anwendung auf der Website, WÖk-ID-Anschluss, rote Linien, Quellen und Buchanker.</p>
+          <a class="text-link" href="#sdgplus-dossier">Zum Online-Dossier</a>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Download</p>
+          <h3>SDG+ Arbeitspapier</h3>
+          <p class="card-text">Das Arbeitspapier enthält Begründung, Definitionen, Unterdimensionen, WÖk-ID-Anschluss, Hover-Texte und Quellen.</p>
+          ${workpaperAvailable ? `<a class="text-link" href="${href(base, sdgPlusDownload.href)}">Arbeitspapier herunterladen</a>` : '<span class="prototype-badge">Arbeitsdokument folgt</span>'}
+          <p class="card-text"><span class="prototype-badge">Separater Dossier-Download in Vorbereitung</span></p>
+        </article>
+      </div>
+    </section>`;
+}
+
+function sdgPlusDossierBlock() {
+  return `<section class="section" id="sdgplus-dossier" aria-labelledby="sdgplus-dossier-title">
+      <div class="section-header">
+        <p class="hero-kicker">Dossier</p>
+        ${sectionTitle("sdgplus-dossier-title", "SDG+ Dossier online lesen")}
+        <p>Das SDG+-Dossier ordnet die Erweiterung als öffentliche Arbeits- und Quellenebene ein. Es ersetzt keine offiziellen UN-Ziele, sondern erklärt, warum Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung als Wirkungsbedingungen sichtbar bleiben müssen.</p>
+      </div>
+      <div class="card-grid three">
+        <article class="card">
+          <h3>Was das Dossier bündelt</h3>
+          <p class="card-text">Begründung von SDG+, sieben Dimensionen, Anschluss an SDG 16 und SDG 17, WÖk-ID-/Indikatorfamilien, rote Linien, politische Anschlussfähigkeit und Quellen.</p>
+        </article>
+        <article class="card">
+          <h3>Wie es genutzt wird</h3>
+          <p class="card-text">Portalseiten und Werkzeugseiten nutzen SDG+ als Referenzrahmen für Wirkungen, die demokratische Korrektur, öffentliche Wahrheit, Rechtsstaatlichkeit, Zusammenhalt oder digitale Selbstbestimmung betreffen.</p>
+        </article>
+        <article class="card">
+          <h3>Grenze der Einordnung</h3>
+          <p class="card-text">SDG+ ist keine offizielle UN-Kategorie und keine automatische Bewertungsmaschine. Wirkungsdaten bereiten Entscheidungen vor, ersetzen aber keine demokratische Abwägung.</p>
+        </article>
+      </div>
     </section>`;
 }
 
