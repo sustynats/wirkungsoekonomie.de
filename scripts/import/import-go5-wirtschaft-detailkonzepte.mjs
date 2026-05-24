@@ -2,9 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const downloadsDir = "/Users/hagen/Downloads";
-const go6Dir = "/private/tmp/woek-go6-import/woek_go6_paket4_wirtschaft_unternehmen_v1_0";
-const go7Dir = "/private/tmp/woek-go7-import";
+const packageDir = "/private/tmp/woek-wu-gesamt-v11/woek_wirtschaft_unternehmen_gesamtpaket_go5_go6_go7_v1_1";
 
 const docs = [
   {
@@ -12,9 +10,12 @@ const docs = [
     slug: "unternehmen-als-wirkungssysteme",
     title: "Unternehmen als Wirkungssysteme",
     subtitle: "Unternehmenszweck, Geschäftsmodell, Wertschöpfung und Rückkopplung in der Wirkungsökonomie",
-    source: "online_volltext_06_unternehmen_als_wirkungssysteme_detailkonzept_v1_0.md",
+    source: "website/online_volltext_06_unternehmen_als_wirkungssysteme_detailkonzept_v1_0.md",
     docx: "06_woek_wirtschaft_unternehmen_unternehmen_als_wirkungssysteme_detailkonzept_v1_0.docx",
     pdf: "06_woek_wirtschaft_unternehmen_unternehmen_als_wirkungssysteme_detailkonzept_v1_0.pdf",
+    baseDir: packageDir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
     description:
       "Echtes Detailkonzept zu Unternehmen als Wirkungssysteme: Zweck, Geschäftsmodell, Wertschöpfung, WÖk-IDs, Steuerung und Rückkopplung.",
     bookFocus: ["kapitel-042-unternehmen-als-wirkungssysteme", "kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung"],
@@ -22,11 +23,14 @@ const docs = [
   {
     number: "07",
     slug: "wirkungsorientierte-unternehmensfuehrung",
-    title: "Wirkungsorientierte Unternehmensführung",
+    title: "Wirkungsorientierte Unternehmensführung inkl. Mitarbeiterführung",
     subtitle: "Führung, Mitarbeitendenverantwortung, Governance und Anreizsysteme wirkungsökonomisch ausrichten",
-    source: "online_volltext_07_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.md",
+    source: "website/online_volltext_07_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.md",
     docx: "07_woek_wirtschaft_unternehmen_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.docx",
     pdf: "07_woek_wirtschaft_unternehmen_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.pdf",
+    baseDir: packageDir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
     description:
       "Echtes Detailkonzept zu wirkungsorientierter Unternehmensführung inklusive Mitarbeiterführung, Governance, Kultur und Anreizsystemen.",
     bookFocus: ["kapitel-043-wirkungsorientierte-unternehmensfuehrung", "kapitel-045-organisation-kultur-und-verantwortung"],
@@ -36,22 +40,25 @@ const docs = [
     slug: "risikomanagement-resilienz-finanzmarkt",
     title: "Wirkungsorientiertes Risikomanagement, Resilienz und Finanzmarktanforderungen",
     subtitle: "ESG-Risiken, Finanzmarktanforderungen, Versicherbarkeit und Resilienz in eine Wirkungslogik übersetzen",
-    source: "online_volltext_08_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.md",
+    source: "website/online_volltext_08_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.md",
     docx: "08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.docx",
     pdf: "08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.pdf",
+    baseDir: packageDir,
+    docxSubdir: "word",
+    pdfSubdir: "pdf",
     description:
       "Echtes Detailkonzept zu Risikomanagement, Resilienz, Finanzmarktanforderungen, EBA/ESG-Anschluss und Wirkungsrisiko.",
     bookFocus: ["kapitel-047-unternehmensrisiko-und-transformation", "kapitel-044-wirkungscontrolling-im-unternehmen"],
   },
   {
     number: "09",
-    slug: "resiliente-wertschoepfungsketten-einkauf",
+    slug: "wertschoepfungsketten-einkauf",
     title: "Resiliente Wertschöpfungsketten und Einkauf nach Wirkung",
     subtitle: "Lieferketten, Einkauf, Supplier Scorecards und Resilienz als Unternehmenswirkung steuern",
     source: "website/online_volltext_09_resiliente-wertschoepfungsketten-und-einkauf-nach-wirkung_detailkonzept_v1_0.md",
     docx: "09_woek_wirtschaft_unternehmen_resiliente_wertschoepfungsketten_einkauf_detailkonzept_v1_0.docx",
     pdf: "09_woek_wirtschaft_unternehmen_resiliente_wertschoepfungsketten_einkauf_detailkonzept_v1_0.pdf",
-    baseDir: go6Dir,
+    baseDir: packageDir,
     docxSubdir: "word",
     pdfSubdir: "pdf",
     description:
@@ -74,7 +81,7 @@ const docs = [
     source: "website/online_volltext_10_wirkungscontrolling-im-unternehmen_detailkonzept_v1_0.md",
     docx: "10_woek_wirtschaft_unternehmen_wirkungscontrolling_detailkonzept_v1_0.docx",
     pdf: "10_woek_wirtschaft_unternehmen_wirkungscontrolling_detailkonzept_v1_0.pdf",
-    baseDir: go6Dir,
+    baseDir: packageDir,
     docxSubdir: "word",
     pdfSubdir: "pdf",
     description:
@@ -91,13 +98,13 @@ const docs = [
   },
   {
     number: "11",
-    slug: "produktentwicklung-produktscorecards-dpp",
+    slug: "produktentwicklung-produktscorecards-produktpaesse",
     title: "Produktentwicklung, Produktscorecards und digitale Produktpässe",
     subtitle: "Produktwirkung in Entwicklung, Scorecards, DPP und Verbraucherinformation rückkoppeln",
     source: "website/online_volltext_11_produktentwicklung-produktscorecards-und-digitale-produktpaesse_detailkonzept_v1_0.md",
     docx: "11_woek_wirtschaft_unternehmen_produktentwicklung_produktscorecards_dpp_detailkonzept_v1_0.docx",
     pdf: "11_woek_wirtschaft_unternehmen_produktentwicklung_produktscorecards_dpp_detailkonzept_v1_0.pdf",
-    baseDir: go6Dir,
+    baseDir: packageDir,
     docxSubdir: "word",
     pdfSubdir: "pdf",
     description:
@@ -120,7 +127,7 @@ const docs = [
     source: "website/online_volltext_12_marketing-vertrieb-fuenftes-p-planet_detailkonzept_v1_0.md",
     docx: "12_woek_wirtschaft_unternehmen_marketing_vertrieb_fuenftes_p_planet_detailkonzept_v1_0.docx",
     pdf: "12_woek_wirtschaft_unternehmen_marketing_vertrieb_fuenftes_p_planet_detailkonzept_v1_0.pdf",
-    baseDir: go7Dir,
+    baseDir: packageDir,
     docxSubdir: "word",
     pdfSubdir: "pdf",
     description:
@@ -136,13 +143,13 @@ const docs = [
   },
   {
     number: "13",
-    slug: "bilanz-finanzierung-finanzkommunikation-nach-wirkung",
+    slug: "bilanz-finanzierung-finanzkommunikation",
     title: "Bilanz, Finanzierung und Finanzkommunikation nach Wirkung",
     subtitle: "CapEx, Finanzierung, Kapitalzugang und Finanzkommunikation wirkungsökonomisch einordnen",
     source: "website/online_volltext_13_bilanz-finanzierung-finanzkommunikation-nach-wirkung_detailkonzept_v1_0.md",
     docx: "13_woek_wirtschaft_unternehmen_bilanz_finanzierung_finanzkommunikation_nach_wirkung_detailkonzept_v1_0.docx",
     pdf: "13_woek_wirtschaft_unternehmen_bilanz_finanzierung_finanzkommunikation_nach_wirkung_detailkonzept_v1_0.pdf",
-    baseDir: go7Dir,
+    baseDir: packageDir,
     docxSubdir: "word",
     pdfSubdir: "pdf",
     description:
@@ -158,13 +165,13 @@ const docs = [
   },
   {
     number: "14",
-    slug: "transformation-kmu-tauglichkeit-uebergangspfade",
+    slug: "transformation-kmu-uebergangspfade",
     title: "Transformation, KMU-Tauglichkeit und Übergangspfade",
     subtitle: "Unternehmenswandel, KMU-Schutz und realistische Übergangspfade wirkungsökonomisch gestalten",
     source: "website/online_volltext_14_transformation-kmu-tauglichkeit-uebergangspfade_detailkonzept_v1_0.md",
     docx: "14_woek_wirtschaft_unternehmen_transformation_kmu_tauglichkeit_uebergangspfade_detailkonzept_v1_0.docx",
     pdf: "14_woek_wirtschaft_unternehmen_transformation_kmu_tauglichkeit_uebergangspfade_detailkonzept_v1_0.pdf",
-    baseDir: go7Dir,
+    baseDir: packageDir,
     docxSubdir: "word",
     pdfSubdir: "pdf",
     description:
@@ -215,9 +222,9 @@ const crossLinks = [
   ["Unternehmen als Wirkungssysteme", "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/", "Zweck, Geschäftsmodell, Wertschöpfung und Rückkopplung."],
   ["Wirkungsorientierte Unternehmensführung", "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/", "Führung, Governance, Kultur und Anreizsysteme wirkungsorientiert ausrichten."],
   ["Risikomanagement, Resilienz und Finanzmarkt", "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/", "Wirkungsrisiko, Finanzmarktanforderungen und Versicherbarkeit."],
-  ["Resiliente Wertschöpfungsketten und Einkauf", "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/", "Lieferketten, Einkauf, Supplier Scorecards und Resilienz."],
+  ["Resiliente Wertschöpfungsketten und Einkauf", "/wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/", "Lieferketten, Einkauf, Supplier Scorecards und Resilienz."],
   ["Wirkungscontrolling", "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/", "KII, NWI, T-SROI, Scorecards und Assurance im Unternehmen."],
-  ["Produktentwicklung, Produktscorecards und DPP", "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/", "Produktwirkung, digitale Produktpässe und Verbraucherinformation."],
+  ["Produktentwicklung, Produktscorecards und Produktpässe", "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/", "Produktwirkung, digitale Produktpässe und Verbraucherinformation."],
   ["Produkte & Konsum", "/wirkungsfelder/produkte-konsum/", "Produktwirkung, Wirkungsumsatzsteuer, Scorecards und Konsumentscheidungen."],
   ["Wirkungsumsatzsteuer", "/werkzeuge/wirkungsumsatzsteuer/", "Produktwirkung an Preis- und Steuerlogik rückkoppeln."],
   ["WÖk-IDs", "/werkzeuge/woek-ids/", "Indikatoren, Quellen, SDGs, SDG+ und Bewertungslogik verbinden."],
@@ -679,17 +686,25 @@ function renderPage(doc, body, toc) {
 
 fs.mkdirSync(path.join(root, "assets/downloads"), { recursive: true });
 fs.mkdirSync(path.join(root, "data/wirtschaft-unternehmen"), { recursive: true });
-fs.copyFileSync(path.join(downloadsDir, "go5_detailkonzepte_index_v1_0.json"), path.join(root, "data/wirtschaft-unternehmen/go5_detailkonzepte_index_v1_0.json"));
-fs.copyFileSync(path.join(downloadsDir, "go5_detailkonzepte_index_v1_0.csv"), path.join(root, "data/wirtschaft-unternehmen/go5_detailkonzepte_index_v1_0.csv"));
-if (fs.existsSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.json"))) {
-  const indexJson = JSON.parse(fs.readFileSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.json"), "utf8"));
+fs.copyFileSync(path.join(packageDir, "data/go5_detailkonzepte_index_v1_0.json"), path.join(root, "data/wirtschaft-unternehmen/go5_detailkonzepte_index_v1_0.json"));
+fs.writeFileSync(
+  path.join(root, "data/wirtschaft-unternehmen/go5_detailkonzepte_index_v1_0.csv"),
+  fs.readFileSync(path.join(packageDir, "data/go5_detailkonzepte_index_v1_0.csv"), "utf8").replace(/\r\n/g, "\n")
+);
+fs.copyFileSync(path.join(packageDir, "data/wirtschaft_unternehmen_detailkonzepte_gesamtindex_v1_1.json"), path.join(root, "data/wirtschaft-unternehmen/wirtschaft_unternehmen_detailkonzepte_gesamtindex_v1_1.json"));
+fs.writeFileSync(
+  path.join(root, "data/wirtschaft-unternehmen/wirtschaft_unternehmen_detailkonzepte_gesamtindex_v1_1.csv"),
+  fs.readFileSync(path.join(packageDir, "data/wirtschaft_unternehmen_detailkonzepte_gesamtindex_v1_1.csv"), "utf8").replace(/\r\n/g, "\n")
+);
+if (fs.existsSync(path.join(packageDir, "data/go6_detailkonzepte_index_v1_0.json"))) {
+  const indexJson = JSON.parse(fs.readFileSync(path.join(packageDir, "data/go6_detailkonzepte_index_v1_0.json"), "utf8"));
   const publicIndexJson = indexJson.map(({ codex_url_hint: _internal, ...entry }) => entry);
   fs.writeFileSync(
     path.join(root, "data/wirtschaft-unternehmen/go6_detailkonzepte_index_v1_0.json"),
     `${JSON.stringify(publicIndexJson, null, 2)}\n`
   );
 
-  const csv = fs.readFileSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.csv"), "utf8").trimEnd();
+  const csv = fs.readFileSync(path.join(packageDir, "data/go6_detailkonzepte_index_v1_0.csv"), "utf8").trimEnd();
   const [headerLine, ...rows] = csv.split(/\r?\n/);
   const headers = parseCsvLine(headerLine);
   const internalIndex = headers.indexOf("codex_url_hint");
@@ -700,15 +715,15 @@ if (fs.existsSync(path.join(go6Dir, "data/go6_detailkonzepte_index_v1_0.json")))
     `${[writeCsvLine(publicHeaders), ...publicRows].join("\n")}\n`
   );
 }
-if (fs.existsSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.json"))) {
-  const indexJson = JSON.parse(fs.readFileSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.json"), "utf8"));
+if (fs.existsSync(path.join(packageDir, "data/go7_detailkonzepte_index_v1_0.json"))) {
+  const indexJson = JSON.parse(fs.readFileSync(path.join(packageDir, "data/go7_detailkonzepte_index_v1_0.json"), "utf8"));
   const publicIndexJson = indexJson.map(({ codex_url_hint: _internal, url_vorschlag: _internalUrl, ...entry }) => entry);
   fs.writeFileSync(
     path.join(root, "data/wirtschaft-unternehmen/go7_detailkonzepte_index_v1_0.json"),
     `${JSON.stringify(publicIndexJson, null, 2)}\n`
   );
 
-  const csv = fs.readFileSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.csv"), "utf8").trimEnd();
+  const csv = fs.readFileSync(path.join(packageDir, "data/go7_detailkonzepte_index_v1_0.csv"), "utf8").trimEnd();
   const [headerLine, ...rows] = csv.split(/\r?\n/);
   const headers = parseCsvLine(headerLine);
   const internalIndexes = new Set(["codex_url_hint", "url_vorschlag"].map((name) => headers.indexOf(name)).filter((index) => index >= 0));
@@ -721,7 +736,7 @@ if (fs.existsSync(path.join(go7Dir, "data/go7_detailkonzepte_index_v1_0.json")))
 }
 
 for (const doc of docs) {
-  const sourceBase = doc.baseDir || downloadsDir;
+  const sourceBase = doc.baseDir || packageDir;
   fs.copyFileSync(path.join(sourceBase, doc.docxSubdir || "", doc.docx), path.join(root, "assets/downloads", doc.docx));
   fs.copyFileSync(path.join(sourceBase, doc.pdfSubdir || "", doc.pdf), path.join(root, "assets/downloads", doc.pdf));
 

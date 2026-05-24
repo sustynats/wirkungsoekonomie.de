@@ -1168,11 +1168,15 @@ function initBestandsschutzStatus() {
         "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/",
         "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
         "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+        "/wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/",
         "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/",
         "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/",
+        "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/",
         "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/",
         "/wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/",
+        "/wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation/",
         "/wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation-nach-wirkung/",
+        "/wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-uebergangspfade/",
         "/wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-tauglichkeit-uebergangspfade/",
       ],
       title: "Echtes Detailkonzept veröffentlicht",
@@ -1299,7 +1303,7 @@ function initGo5WirtschaftDetailkonzepte() {
     ],
     [
       "Detailkonzept veröffentlicht",
-      "Wirkungsorientierte Unternehmensführung",
+      "Wirkungsorientierte Unternehmensführung inkl. Mitarbeiterführung",
       "Führung, Mitarbeiterführung, Governance, Kultur und Anreizsysteme im wirkungsökonomischen Unternehmensmodell.",
       "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
     ],
@@ -1313,7 +1317,7 @@ function initGo5WirtschaftDetailkonzepte() {
       "Detailkonzept veröffentlicht",
       "Resiliente Wertschöpfungsketten und Einkauf",
       "Lieferketten, Einkauf, Supplier Scorecards, Sourcing-Szenarien und Resilienz als Unternehmenswirkung steuern.",
-      "/wirkungsfelder/wirtschaft-unternehmen/resiliente-wertschoepfungsketten-einkauf/",
+      "/wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/",
     ],
     [
       "Detailkonzept veröffentlicht",
@@ -1325,7 +1329,7 @@ function initGo5WirtschaftDetailkonzepte() {
       "Detailkonzept veröffentlicht",
       "Produktentwicklung, Produktscorecards und DPP",
       "Produktwirkung in Entwicklung, Scorecards, digitalen Produktpässen und Verbraucherinformation rückkoppeln.",
-      "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-dpp/",
+      "/wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/",
     ],
     [
       "Detailkonzept veröffentlicht",
@@ -1337,13 +1341,13 @@ function initGo5WirtschaftDetailkonzepte() {
       "Detailkonzept veröffentlicht",
       "Bilanz, Finanzierung und Finanzkommunikation",
       "CapEx, Finanzierung, Kapitalzugang, Stranded Assets und Finanzkommunikation nach Wirkung ordnen.",
-      "/wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation-nach-wirkung/",
+      "/wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation/",
     ],
     [
       "Detailkonzept veröffentlicht",
       "Transformation, KMU-Tauglichkeit und Übergangspfade",
       "Unternehmenswandel, KMU-Schutz, Übergangspfade, Pilotierung und Datenanforderungen praxistauglich gestalten.",
-      "/wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-tauglichkeit-uebergangspfade/",
+      "/wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-uebergangspfade/",
     ],
   ];
 
