@@ -6607,6 +6607,188 @@ textarea {
   display: none;
 }
 
+.toc-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow-card);
+}
+
+.toc-card ol {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.toc-card a {
+  color: var(--navy);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.toc-card a:hover,
+.toc-card a:focus-visible {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.toc-level-3 {
+  margin-left: 0.8rem;
+}
+
+.article-section {
+  padding-top: 0;
+}
+
+.fulltext-reader,
+.law-reader {
+  max-width: 78ch;
+  margin-inline: auto;
+  padding: clamp(1rem, 2.5vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-card);
+}
+
+.fulltext-reader h2,
+.law-reader h2 {
+  margin-top: 1.9rem;
+}
+
+.fulltext-reader h2:first-child,
+.law-reader h2:first-child {
+  margin-top: 0;
+}
+
+.fulltext-reader h3,
+.law-reader h3 {
+  margin-top: 1.35rem;
+}
+
+.fulltext-reader p,
+.law-reader p,
+.fulltext-reader li,
+.law-reader li {
+  line-height: 1.74;
+}
+
+.fulltext-reader blockquote,
+.law-reader blockquote {
+  margin: 1.2rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--green);
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--ink);
+}
+
+.context-tool-grid .card {
+  align-content: start;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+}
+
+.tool-reference,
+.law-reference {
+  position: relative;
+  display: inline-flex;
+  gap: 0.25rem;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.tool-reference-link,
+.law-reference-link {
+  color: var(--green);
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.tool-reference-info,
+.law-reference-info {
+  display: inline-grid;
+  place-items: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  padding: 0;
+  border: 1px solid rgba(47, 125, 92, 0.35);
+  border-radius: 50%;
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green);
+  cursor: help;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.reference-popover {
+  position: absolute;
+  z-index: 20;
+  bottom: calc(100% + 0.45rem);
+  left: 0;
+  width: min(20rem, 78vw);
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: var(--shadow-card);
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.25rem);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  white-space: normal;
+}
+
+.tool-reference:hover .reference-popover,
+.tool-reference:focus-within .reference-popover,
+.law-reference:hover .reference-popover,
+.law-reference:focus-within .reference-popover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.law-section {
+  scroll-margin-top: 6rem;
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.law-part {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: var(--radius);
+  background: rgba(247, 248, 245, 0.84);
+}
+
+.law-part h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.law-summary {
+  border-color: rgba(47, 125, 92, 0.22);
+  background: rgba(47, 125, 92, 0.08);
+}
+
 @media (min-width: 700px) {
   .book-card {
     grid-template-columns: 9rem 1fr;
@@ -8285,6 +8467,9 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   .hero-actions,
   .button-row,
   .portal-card-actions,
+  .tool-reference-info,
+  .law-reference-info,
+  .reference-popover,
   .reader-mode-dock,
   .fulltext-toolbar,
   .chapter-mini-map,
@@ -8361,7 +8546,11 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   .card,
   .download-card,
   .feature-card,
-  .portal-reference-block {
+  .portal-reference-block,
+  .toc-card,
+  .fulltext-reader,
+  .law-reader,
+  .law-part {
     margin: 0 0 7mm;
     padding: 0;
     border: 0;

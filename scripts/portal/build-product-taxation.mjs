@@ -1,0 +1,996 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const SITE = "https://wirkungsoekonomie.de";
+const DATE = "2026-05-24";
+const CSS_VERSION = "20260524-produktsteuer";
+const JS_VERSION = "20260523-nachhaltigkeit";
+
+const sources = {
+  productTax: "docs/praxis/Produktbesteuerung_durch_Wirkung_v1.1.md",
+  apple: "docs/praxis/Apfelbeispiel_Produktscorecard_v1.1.md",
+  supplyChain: "docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md",
+  basf: "docs/praxis/Konzern_Produktscorecard_BASF_Polyamid_v1.1.md",
+  wstg: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md",
+  wustgGuidelines: "docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md",
+};
+
+const bookAnchors = [
+  ["Kapitel 31 - WÖk-IDs und Indikatorenarchitektur", "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/"],
+  ["Kapitel 32 - Benchmarks, Skalen und Scorecards", "referenz/kapitel-032-benchmarks-skalen-und-scorecards/"],
+  ["Kapitel 33 - Reverse Merit Order", "referenz/kapitel-033-reverse-merit-order/"],
+  ["Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume", "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/"],
+  ["Kapitel 37 - Wirkungssteuergesetz", "referenz/kapitel-037-das-wirkungssteuergesetz-wstg/"],
+  ["Kapitel 38 - WUStG und Produktwirkungssteuer", "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/"],
+  ["Kapitel 48 - Produkte als Wirkungsträger", "referenz/kapitel-048-produkte-als-wirkungstraeger/"],
+  ["Kapitel 49 - Ehrliche Preise", "referenz/kapitel-049-ehrliche-preise/"],
+  ["Kapitel 50 - Produktscorecards", "referenz/kapitel-050-produktscorecards/"],
+  ["Kapitel 51 - Apfelbeispiel", "referenz/kapitel-051-das-apfelbeispiel/"],
+  ["Kapitel 52 - Konsumwirkung und Verbraucherinformation", "referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/"],
+  ["Kapitel 53 - Markttransformation", "referenz/kapitel-053-markttransformation/"],
+];
+
+const productSdgs = [
+  "SDG 2 Kein Hunger",
+  "SDG 3 Gesundheit und Wohlergehen",
+  "SDG 6 Sauberes Wasser",
+  "SDG 8 Menschenwürdige Arbeit",
+  "SDG 9 Industrie, Innovation und Infrastruktur",
+  "SDG 10 Weniger Ungleichheiten",
+  "SDG 12 Nachhaltige/r Konsum und Produktion",
+  "SDG 13 Klimaschutz",
+  "SDG 15 Leben an Land",
+  "SDG 16 Frieden, Gerechtigkeit und starke Institutionen",
+  "SDG 17 Partnerschaften",
+];
+
+const sdgPlus = [
+  "Demokratie",
+  "Medienqualität",
+  "Rechtsstaatlichkeit",
+  "Diskursfähigkeit",
+  "institutionelles Vertrauen",
+  "gesellschaftlicher Zusammenhalt",
+  "digitale Selbstbestimmung",
+];
+
+const contextualTools = [
+  {
+    title: "Wirkungsumsatzsteuer",
+    type: "Gesetz / Steuerlogik",
+    status: "Erklärung vorhanden",
+    href: "werkzeuge/wirkungsumsatzsteuer/",
+    lawHref: "werkstatt/leitlinien/wustg/",
+    bookHref: "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/",
+    short: "Koppelt Produkt- und Leistungsbesteuerung im Pilotmodell an geprüfte Wirkung.",
+    why: "Im Produktportal ist sie die Rückkopplung zwischen Scorecard, Steuerklasse, Preis und Konsumentscheidung.",
+  },
+  {
+    title: "Produktscorecards",
+    type: "Bewertungsmethode",
+    status: "Erklärung vorhanden",
+    href: "werkzeuge/produktscorecards/",
+    demoHref: "scorecard-dashboard.html",
+    bookHref: "referenz/kapitel-050-produktscorecards/",
+    short: "Übersetzen Produktdaten, WÖk-IDs und Benchmarks in nachvollziehbare Einzelscores.",
+    why: "Sie machen sichtbar, in welchen Feldern ein Produkt positive, negative oder neutrale Wirkung zeigt.",
+  },
+  {
+    title: "WÖk-IDs",
+    type: "Datenarchitektur",
+    status: "Erklärung vorhanden",
+    href: "werkzeuge/woek-ids/",
+    bookHref: "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/",
+    short: "Eindeutige Kennungen für Wirkungsindikatoren mit Quelle, Einheit, Schwelle und Version.",
+    why: "Sie verhindern, dass Produktwirkung beliebig benannt, doppelt gezählt oder ohne Prüfstatus verwendet wird.",
+  },
+  {
+    title: "Reverse Merit Order",
+    type: "Schutzregel",
+    status: "Erklärung vorhanden",
+    href: "werkzeuge/reverse-merit-order/",
+    lawHref: "werkstatt/leitlinien/wustg/#teil-3-bewertungsrahmen",
+    bookHref: "referenz/kapitel-033-reverse-merit-order/",
+    short: "Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
+    why: "Schwere negative Wirkungen dürfen bei Produkten nicht durch gute Einzelwerte schöngerechnet werden.",
+  },
+  {
+    title: "Digitale Produktpässe und Wirkungsdatenräume",
+    type: "Dateninfrastruktur",
+    status: "Erklärung vorhanden",
+    href: "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/",
+    bookHref: "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/",
+    short: "Bündeln Produkt-, Lieferketten-, Prüf- und Wirkungsdaten interoperabel.",
+    why: "Ohne prüfbare Datenräume bleibt Produktbesteuerung entweder grob, streitanfällig oder nicht auditierbar.",
+  },
+  {
+    title: "Wirkungsrat",
+    type: "Institution",
+    status: "Erklärung vorhanden",
+    href: "werkzeuge/wirkungsrat/",
+    lawHref: "werkstatt/gesetze/wirkungssteuergesetz/#paragraf-29",
+    bookHref: "referenz/kapitel-040-der-wirkungsrat/",
+    short: "Unabhängige Instanz für Evaluation, Indikatoren, Benchmarks und Missbrauchsschutz.",
+    why: "Produktsteuerlogik braucht öffentliche Kontrolle, Korrekturpfade und Schutz vor Lobby- oder Datenmanipulation.",
+  },
+];
+
+const lawRefs = {
+  wstg1: {
+    label: "§ 1 WStG",
+    href: "werkstatt/gesetze/wirkungssteuergesetz/#paragraf-1",
+    text: "Zweck des Gesetzes: Rahmen für steuerliche Rückkopplung nach geprüfter Wirkung.",
+  },
+  wustg3: {
+    label: "§ 3 WUStG",
+    href: "werkstatt/leitlinien/wustg/#teil-4-woek-ids-und-indikatorenarchitektur",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben Register und WÖk-ID-Architektur.",
+  },
+  wustg4: {
+    label: "§ 4 WUStG",
+    href: "werkstatt/leitlinien/wustg/#teil-7-scorecards",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben Scorecards je Produkt oder Aktivität.",
+  },
+  wustg5: {
+    label: "§ 5 WUStG",
+    href: "werkstatt/leitlinien/wustg/#teil-8-finalscore",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben FinalScore und Modell-Steuerklassen.",
+  },
+  wustg6: {
+    label: "§ 6 WUStG",
+    href: "werkstatt/leitlinien/wustg/#teil-3-bewertungsrahmen",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben Nichtkompensation und rote Linien.",
+  },
+  wustg7: {
+    label: "§ 7 WUStG",
+    href: "werkstatt/leitlinien/wustg/#teil-10-vorsteuer-lieferketten-und-anrechnungslogik",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben Vorsteuer- und Lieferkettenlogik als Pilotmodell.",
+  },
+  wustg8: {
+    label: "§ 8 WUStG",
+    href: "werkstatt/leitlinien/wustg/#teil-13-governance-wirkungsrat-und-evaluation",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben Evaluation und Wirkungsrat-Governance.",
+  },
+};
+
+function read(rel) {
+  return fs.readFileSync(path.join(ROOT, rel), "utf8");
+}
+
+function routeFor(rel) {
+  return rel.endsWith("/index.html") ? `/${rel.slice(0, -"/index.html".length)}/` : `/${rel}`;
+}
+
+function baseFor(rel) {
+  const depth = path.dirname(rel).split("/").filter(Boolean).length;
+  return "../".repeat(depth);
+}
+
+function href(base, target) {
+  if (!target) return "";
+  if (/^(https?:|mailto:|#)/.test(target)) return target;
+  return `${base}${target.replace(/^\/+/, "")}`;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function inlineMd(value) {
+  return escapeHtml(value)
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function slugify(value) {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ö/g, "oe")
+    .replace(/ä/g, "ae")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/§\s*/g, "paragraf-")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function mdToHtml(markdown, options = {}) {
+  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const html = [];
+  const toc = [];
+  let paragraph = [];
+  let list = [];
+  let table = [];
+
+  const flushParagraph = () => {
+    if (!paragraph.length) return;
+    html.push(`<p>${inlineMd(paragraph.join(" "))}</p>`);
+    paragraph = [];
+  };
+  const flushList = () => {
+    if (!list.length) return;
+    html.push(`<ul>${list.map((item) => `<li>${inlineMd(item)}</li>`).join("")}</ul>`);
+    list = [];
+  };
+  const flushTable = () => {
+    if (!table.length) return;
+    const rows = table.map((line) => line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
+    const dividerIndex = rows.findIndex((row) => row.every((cell) => /^:?-{3,}:?$/.test(cell)));
+    const header = dividerIndex > 0 ? rows[0] : null;
+    const bodyRows = dividerIndex > 0 ? rows.slice(dividerIndex + 1) : rows;
+    html.push(`<div class="table-wrap"><table class="data-table">`);
+    if (header) {
+      html.push(`<thead><tr>${header.map((cell) => `<th>${inlineMd(cell)}</th>`).join("")}</tr></thead>`);
+    }
+    html.push(`<tbody>${bodyRows.map((row) => `<tr>${row.map((cell) => `<td>${inlineMd(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+    table = [];
+  };
+  const flushAll = () => {
+    flushParagraph();
+    flushList();
+    flushTable();
+  };
+
+  for (const line of lines) {
+    if (/^\|/.test(line.trim())) {
+      flushParagraph();
+      flushList();
+      table.push(line);
+      continue;
+    }
+    flushTable();
+
+    const heading = line.match(/^(#{2,4})\s+(.+)$/);
+    if (heading) {
+      flushParagraph();
+      flushList();
+      const level = heading[1].length;
+      const text = heading[2].trim();
+      const id = options.anchorPrefix ? `${options.anchorPrefix}-${slugify(text)}` : slugify(text);
+      toc.push({ level, text, id });
+      html.push(`<h${level} id="${id}">${inlineMd(text)}</h${level}>`);
+      continue;
+    }
+
+    if (/^\s*[-*]\s+/.test(line)) {
+      flushParagraph();
+      list.push(line.replace(/^\s*[-*]\s+/, ""));
+      continue;
+    }
+
+    if (/^\s*\d+\.\s+/.test(line)) {
+      flushParagraph();
+      list.push(line.replace(/^\s*\d+\.\s+/, ""));
+      continue;
+    }
+
+    if (/^>\s?/.test(line)) {
+      flushParagraph();
+      flushList();
+      html.push(`<blockquote>${inlineMd(line.replace(/^>\s?/, ""))}</blockquote>`);
+      continue;
+    }
+
+    if (!line.trim()) {
+      flushParagraph();
+      flushList();
+      continue;
+    }
+
+    paragraph.push(line.trim());
+  }
+  flushAll();
+  return { html: html.join("\n"), toc };
+}
+
+function page({ rel, title, description, searchSection, searchType = "Portal", body }) {
+  const route = routeFor(rel);
+  const base = baseFor(rel);
+  const canonical = `${SITE}${route}`;
+  const out = path.join(ROOT, rel);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  const html = `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${escapeHtml(title)}</title>
+    <meta name="description" content="${escapeHtml(description)}">
+    <meta name="search_title" content="${escapeHtml(title.replace(/\s+\|.*$/, ""))}">
+    <meta name="search_description" content="${escapeHtml(description)}">
+    <meta name="search_section" content="${escapeHtml(searchSection)}">
+    <meta name="search_type" content="${escapeHtml(searchType)}">
+    <link rel="canonical" href="${canonical}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="${escapeHtml(title.replace(/\s+\|.*$/, ""))}">
+    <meta property="og:description" content="${escapeHtml(description)}">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title.replace(/\s+\|.*$/, ""))}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="${base}index.html">Start</a>
+      </nav>
+    </header>
+    <main>
+      <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
+${body(base, route)}
+    </main>
+    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+  </body>
+</html>
+`;
+  fs.writeFileSync(out, html, "utf8");
+  return rel;
+}
+
+function printActions(extra = "") {
+  return `<div class="hero-actions no-print">
+      <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
+      ${extra}
+    </div>`;
+}
+
+function tocBlock(base, toc, label = "Inhaltsverzeichnis") {
+  const filtered = toc.filter((item) => item.level <= 3);
+  if (!filtered.length) return "";
+  return `<nav class="toc-card" aria-label="${label}">
+      <h2>${label}</h2>
+      <ol>${filtered.map((item) => `<li class="toc-level-${item.level}"><a href="#${item.id}">${escapeHtml(item.text)}</a></li>`).join("")}</ol>
+    </nav>`;
+}
+
+function cardGrid(base, items, cols = "three") {
+  return `<div class="card-grid ${cols}">
+${items.map((item) => `<article class="card">
+        ${item.kicker ? `<p class="card-kicker">${escapeHtml(item.kicker)}</p>` : ""}
+        <h3 class="card-title">${escapeHtml(item.title)}</h3>
+        <p class="card-text">${escapeHtml(item.text)}</p>
+        ${item.href ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, item.href)}">${escapeHtml(item.label || "Online lesen")}</a></div>` : ""}
+      </article>`).join("\n")}
+    </div>`;
+}
+
+function toolCards(base, tools = contextualTools) {
+  return `<section class="section" aria-labelledby="context-tools">
+      <div class="section-header">
+        <p class="hero-kicker">Kontext-Werkzeuge</p>
+        <h2 id="context-tools">Werkzeuge in diesem Bereich</h2>
+        <p>Diese Methoden und Instrumente werden im Produktportal angewendet. Die kanonische Erklärung liegt jeweils im Methodenregister unter /werkzeuge/.</p>
+      </div>
+      <div class="card-grid three context-tool-grid">
+        ${tools.map((tool) => `<article class="card context-tool-card">
+          <p class="card-kicker">${escapeHtml(tool.type)} · ${escapeHtml(tool.status)}</p>
+          <h3 class="card-title">${escapeHtml(tool.title)}</h3>
+          <p class="card-text">${escapeHtml(tool.short)}</p>
+          <p class="card-text"><strong>Warum hier relevant?</strong> ${escapeHtml(tool.why)}</p>
+          <div class="portal-card-actions">
+            <a class="text-link" href="${href(base, tool.href)}">Erklärung öffnen</a>
+            ${tool.demoHref ? `<a class="text-link" href="${href(base, tool.demoHref)}">Demo öffnen</a>` : ""}
+            ${tool.lawHref ? `<a class="text-link" href="${href(base, tool.lawHref)}">Gesetz/Leitlinie</a>` : ""}
+            ${tool.bookHref ? `<a class="text-link" href="${href(base, tool.bookHref)}">Buchanker</a>` : ""}
+          </div>
+        </article>`).join("")}
+      </div>
+    </section>`;
+}
+
+function sdgBlock(base, explanation) {
+  return `<section class="section" aria-labelledby="sdg-title">
+      <div class="portal-reference-block">
+        <p class="hero-kicker">Referenzrahmen</p>
+        <h2 id="sdg-title">SDG-/SDG+-Bezug</h2>
+        <h3>Relevante SDGs</h3>
+        <div class="model-strip">${productSdgs.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+        <h3>Relevante SDG+-Dimensionen</h3>
+        <div class="model-strip">${sdgPlus.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+        <p>${escapeHtml(explanation)}</p>
+        <p>SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+      </div>
+    </section>`;
+}
+
+function bookBlock(base, anchors = bookAnchors) {
+  return `<section class="section" aria-labelledby="book-anchors">
+      <div class="section-header">
+        <p class="hero-kicker">Online-Buch</p>
+        <h2 id="book-anchors">Anker im Online-Buch</h2>
+        <p>Diese Kapitel bilden die inhaltliche Wirbelsäule für Produktwirkung, Scorecards, Wirkungssteuer und Markttransformation.</p>
+      </div>
+      <div class="model-strip">${anchors.map(([label, link]) => `<a href="${href(base, link)}">${escapeHtml(label)}</a>`).join("")}</div>
+    </section>`;
+}
+
+function downloadBlock(base, items = []) {
+  return `<section class="section" aria-labelledby="downloads">
+      <div class="card">
+        <p class="hero-kicker">Export & Archiv</p>
+        <h2 id="downloads">Downloads und Druck</h2>
+        <p class="card-text">Der Online-Volltext ist der Hauptzugang. Downloads bleiben ergänzend als Archiv-, Export- oder Originalfassung erhalten.</p>
+        <div class="portal-card-actions no-print">
+          <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
+          ${items.length ? items.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("") : `<span class="prototype-badge">Dossier in Vorbereitung</span>`}
+        </div>
+      </div>
+    </section>`;
+}
+
+function lawRef(base, key) {
+  const ref = lawRefs[key];
+  const id = `lawref-${slugify(ref.label)}-${key}`;
+  return `<span class="law-reference">
+    <a class="law-reference-link" href="${href(base, ref.href)}" aria-describedby="${id}">${escapeHtml(ref.label)}</a>
+    <button class="law-reference-info" type="button" aria-label="Kurzbeschreibung zu ${escapeHtml(ref.label)} anzeigen" aria-describedby="${id}">i</button>
+    <span class="reference-popover" id="${id}" role="tooltip">${escapeHtml(ref.text)}</span>
+  </span>`;
+}
+
+function toolRef(base, label, hrefTarget, description) {
+  const id = `toolref-${slugify(label)}`;
+  return `<span class="tool-reference">
+    <a class="tool-reference-link" href="${href(base, hrefTarget)}" aria-describedby="${id}">${escapeHtml(label)}</a>
+    <button class="tool-reference-info" type="button" aria-label="Kurzbeschreibung zu ${escapeHtml(label)} anzeigen" aria-describedby="${id}">i</button>
+    <span class="reference-popover" id="${id}" role="tooltip">${escapeHtml(description)}</span>
+  </span>`;
+}
+
+function introHero({ base, kicker, h1, subtitle, text, actions = "" }) {
+  return `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsfelder/">Wirkungsfelder</a> / Produkte &amp; Konsum</nav>
+        <p class="hero-kicker">${escapeHtml(kicker)}</p>
+        <h1>${escapeHtml(h1)}</h1>
+        <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+        <p>${escapeHtml(text)}</p>
+        ${printActions(actions)}
+      </div>
+    </section>`;
+}
+
+function sourceNotice(label) {
+  return `<div class="scanner-notice" role="note">
+    <strong>Online-Volltext.</strong> Diese Seite bildet die vorhandene Quelle ${escapeHtml(label)} online lesbar ab. Fachliche Inhalte wurden nicht als Gesetz behauptet; Pilot-, Entwurfs- und Modellstatus bleiben sichtbar.
+  </div>`;
+}
+
+function fulltextPage(config) {
+  const md = read(config.source).replace(/^# .+\n+/, "");
+  const rendered = mdToHtml(md);
+  page({
+    rel: config.rel,
+    title: config.title,
+    description: config.description,
+    searchSection: "Wirkungsfelder",
+    searchType: "Volltext",
+    body: (base) => `${introHero({
+      base,
+      kicker: config.kicker,
+      h1: config.h1,
+      subtitle: config.subtitle,
+      text: config.hero,
+      actions: config.primaryAction ? `<a class="btn btn-primary" href="${href(base, config.primaryAction.href)}">${escapeHtml(config.primaryAction.label)}</a>` : "",
+    })}
+    <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
+    <section class="section article-section" aria-labelledby="online-volltext">
+      <article class="article-body fulltext-reader">
+        <h2 id="online-volltext">Online-Volltext</h2>
+        ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
+        ${rendered.html}
+      </article>
+    </section>
+    ${toolCards(base, config.tools || contextualTools)}
+    ${relatedBlocks(base)}
+    ${sdgBlock(base, config.sdgText)}
+    ${bookBlock(base)}
+    ${downloadBlock(base, config.downloads || [])}`,
+  });
+}
+
+function relatedBlocks(base) {
+  return `<section class="section" aria-labelledby="related">
+      <div class="section-header">
+        <p class="hero-kicker">Kontext</p>
+        <h2 id="related">Verwandte Seiten</h2>
+      </div>
+      ${cardGrid(base, [
+        { title: "Produkte & Konsum", text: "Portalübersicht für Produktwirkung, Preise, Lieferketten und Konsumentscheidungen.", href: "wirkungsfelder/produkte-konsum/" },
+        { title: "Wirkungsumsatzsteuer", text: "Kanonische Erklärung der produktbezogenen Steuerlogik.", href: "werkzeuge/wirkungsumsatzsteuer/" },
+        { title: "Technische Leitlinien WUStG", text: "Methodik für Scorecards, WÖk-IDs, FinalScore und Pilotierung.", href: "werkstatt/leitlinien/wustg/" },
+      ])}
+    </section>`;
+}
+
+function productPortal() {
+  page({
+    rel: "wirkungsfelder/produkte-konsum/index.html",
+    title: "Produkte & Konsum | Wirkungsökonomie",
+    description:
+      "Wie die Wirkungsökonomie Produktwirkung sichtbar macht und Preise, Steuern, Lieferketten und Konsumentscheidungen an positiver Netto-Wirkung ausrichtet.",
+    searchSection: "Wirkungsfelder",
+    body: (base) => `${introHero({
+      base,
+      kicker: "Wirkungsfeld",
+      h1: "Produkte & Konsum",
+      subtitle: "Wie die Wirkungsökonomie Preise, Märkte und Kaufentscheidungen neu ordnet.",
+      text:
+        "Der heutige Preis eines Produkts zeigt, was es kostet, aber nicht, was es bewirkt. Die Wirkungsökonomie macht Produktwirkung sichtbar und koppelt sie an Preise, Steuern, Lieferketten und Konsumentscheidungen zurück.",
+      actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/")}">Modellbereich öffnen</a>`,
+    })}
+    <section class="section" aria-labelledby="price-lie">
+      <div class="section-header">
+        <p class="hero-kicker">Ausgangspunkt</p>
+        <h2 id="price-lie">Warum Preise heute lügen</h2>
+        <p>Preise zeigen Kapitalaufwand, Knappheit, Margen und Steuern. Sie zeigen aber nicht zuverlässig Wasserstress, Arbeitsbedingungen, Biodiversität, Gesundheitsfolgen, Datenintegrität oder demokratische Risiken.</p>
+      </div>
+      ${cardGrid(base, [
+        { title: "Produkt als Wirkungsträger", text: "Ein Produkt trägt Wirkung über Rohstoffe, Herstellung, Nutzung, Lieferkette, Verpackung, Entsorgung und Information." },
+        { title: "Steuer als Rückkopplung", text: "Steuern werden nicht als bloße Einnahmequelle gedacht, sondern als Feedback auf geprüfte Produktwirkung." },
+        { title: "Wettbewerb um positive Netto-Wirkung", text: "Bessere Produkte sollen nicht nur moralisch gelobt, sondern preislich und systemisch anschlussfähig werden." },
+      ])}
+    </section>
+    <section class="section" aria-labelledby="how-it-works">
+      <div class="section-header">
+        <p class="hero-kicker">Modelllogik</p>
+        <h2 id="how-it-works">So funktioniert Produktbesteuerung durch Wirkung</h2>
+        <p>Die Bewertung beginnt nicht beim Bauchgefühl, sondern bei Daten, NACE-Zuordnung, ${toolRef(base, "WÖk-IDs", "werkzeuge/woek-ids/", "Eindeutige Indikatoren mit Quelle, Einheit, Schwelle und Version.")}, Produktscorecards, FinalScore, Reverse Merit Order, Steuerklasse, Vorsteuerlogik und Verbraucherinformation.</p>
+      </div>
+      <div class="process-steps">
+        ${["Produkt identifizieren", "NACE und Wirkungsfelder zuordnen", "WÖk-IDs und Datenquellen prüfen", "Scorecard bewerten", "Reverse Merit Order anwenden", "FinalScore und Steuerklasse modellieren", "Verbraucherinformation ausgeben"].map((step, index) => `<article class="card"><p class="card-kicker">Schritt ${index + 1}</p><h3 class="card-title">${escapeHtml(step)}</h3></article>`).join("")}
+      </div>
+    </section>
+    <section class="section" aria-labelledby="examples">
+      <div class="section-header">
+        <p class="hero-kicker">Online lesen</p>
+        <h2 id="examples">Produktbesteuerung als Volltext und Beispiele</h2>
+        <p>PDFs und Word-Dateien bleiben ergänzend. Der Hauptzugang liegt hier online lesbar in den Portalseiten.</p>
+      </div>
+      ${cardGrid(base, [
+        { title: "Produktbesteuerung durch Wirkung", text: "Vollständige Online-Fassung des Produktpapiers mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+        { title: "Regionaler Apfel vs. Chile-Apfel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
+        { title: "Wirkungsökonomie in der Lieferkette", text: "Warum Vorleistungen, Lieferanten, DPPs und rote Linien in der Kette entscheidend sind.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },
+        { title: "Von der CSRD zur Produktscorecard", text: "Konzern-/BASF-Polyamid-Beispiel für den Weg von Berichtsdaten zu Produktgruppen.", href: "wirkungsfelder/produkte-konsum/basf-polyamid/" },
+        { title: "Verbraucherinformation", text: "Wirkungspunkte, Steuerklassen, Produktlabel und Regaltransparenz ohne Personenbewertung.", href: "wirkungsfelder/produkte-konsum/verbraucherinformation/" },
+        { title: "Unternehmen", text: "Was Produktwirkung für Produktentwicklung, Einkauf, Controlling, Reporting und Lieferketten bedeutet.", href: "wirkungsfelder/produkte-konsum/unternehmen/" },
+        { title: "Politische Rahmenbedingungen", text: "WStG, WUStG, Wirkungsrat, Leitlinien, Übergänge, Datenschutz und Kaufkraftschutz.", href: "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/" },
+      ], "three")}
+    </section>
+    ${toolCards(base)}
+    <section class="section" aria-labelledby="try">
+      <div class="section-header">
+        <p class="hero-kicker">Erleben</p>
+        <h2 id="try">Ausprobieren</h2>
+        <p>Vorhandene Demos werden kontextbezogen verlinkt. Sie sind modellhafte Demonstrationen, keine amtliche Einstufung.</p>
+      </div>
+      ${cardGrid(base, [
+        { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Demo öffnen" },
+        { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Demo öffnen" },
+        { title: "Wirkungsscanner", text: "Scanner für erste Wirkungsfragen im Alltag und in Organisationen.", href: "anwendungen/scanner.html", label: "Scanner öffnen" },
+      ])}
+    </section>
+    <section class="section" aria-labelledby="actors">
+      <div class="section-header">
+        <p class="hero-kicker">Akteursperspektiven</p>
+        <h2 id="actors">Für wen ist das relevant?</h2>
+      </div>
+      ${cardGrid(base, [
+        { title: "Für Konsument:innen", text: "Produktwirkung wird sichtbar, ohne Menschen selbst zu bewerten oder Kaufverhalten zu überwachen." },
+        { title: "Für Hersteller", text: "Produktentwicklung, Materialwahl und Lieferketten werden auf positive Netto-Wirkung rückgekoppelt." },
+        { title: "Für Handel", text: "Regaltransparenz, Steuerklasse und Produktdaten können Kaufentscheidungen verständlicher machen." },
+        { title: "Für Lieferanten", text: "Datenqualität, faire Übergänge und Verbesserungswege ersetzen pauschale Ausschlüsse." },
+        { title: "Für Prüfer:innen", text: "Assurance, WÖk-IDs und DPPs schaffen prüfbare Bewertungswege." },
+        { title: "Für Politik und Verwaltung", text: "Pilotierung, Rechtsschutz, Datenschutz und Wirkungsrat sichern die Einführung ab." },
+      ])}
+    </section>
+    ${sdgBlock(base, "Produktbesteuerung berührt Ernährung, Gesundheit, Wasser, Arbeit, Industrie, Ungleichheit, Konsum, Klima, Biodiversität, Institutionen und internationale Kooperation. SDG+ ergänzt dort, wo Produktdaten, Werbung, Plattformen, Transparenz und Vertrauen demokratische Wirkung entfalten.")}
+    ${bookBlock(base)}
+    ${downloadBlock(base, [
+      { label: "Downloads öffnen", href: "downloads.html" },
+      { label: "WStG online lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
+      { label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" },
+    ])}`,
+  });
+}
+
+function compactContextPage({ rel, title, subtitle, description, sections, related }) {
+  page({
+    rel,
+    title: `${title} | Produkte & Konsum`,
+    description,
+    searchSection: "Wirkungsfelder",
+    body: (base) => `${introHero({
+      base,
+      kicker: "Produkte & Konsum",
+      h1: title,
+      subtitle,
+      text: description,
+      actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Zur Portalübersicht</a>`,
+    })}
+    <section class="section">
+      <div class="feature-grid">
+        ${sections.map((section) => `<article class="card"><p class="card-kicker">${escapeHtml(section.kicker)}</p><h2 class="card-title">${escapeHtml(section.title)}</h2><p class="card-text">${escapeHtml(section.text)}</p></article>`).join("")}
+      </div>
+    </section>
+    ${toolCards(base, related || contextualTools)}
+    ${sdgBlock(base, "Diese Seite ordnet Produktwirkung in den Referenzrahmen aus SDGs und SDG+ ein. Entscheidend ist nicht Wirkung schlechthin, sondern positive Netto-Wirkung für Mensch, Planet und Demokratie.")}
+    ${bookBlock(base)}
+    ${downloadBlock(base, [{ label: "Produktpapier lesen", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" }])}`,
+  });
+}
+
+function toolPage({ rel, h1, subtitle, description, sections, appliedIn, tools = contextualTools }) {
+  page({
+    rel,
+    title: `${h1} | Wirkungsökonomie`,
+    description,
+    searchSection: "Werkzeuge",
+    searchType: "Werkzeug",
+    body: (base) => `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkzeuge/">Werkzeuge</a></nav>
+        <p class="hero-kicker">Methodenregister</p>
+        <h1>${escapeHtml(h1)}</h1>
+        <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+        <p>${description}</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Im Produktportal anwenden</a>`)}
+      </div>
+    </section>
+    <section class="section">
+      <div class="feature-grid">${sections.map((section) => `<article class="card"><p class="card-kicker">${escapeHtml(section.kicker)}</p><h2 class="card-title">${escapeHtml(section.title)}</h2><p class="card-text">${section.text(base)}</p></article>`).join("")}</div>
+    </section>
+    <section class="section" aria-labelledby="applied">
+      <div class="section-header"><p class="hero-kicker">Kontext</p><h2 id="applied">Angewendet in</h2></div>
+      ${cardGrid(base, appliedIn)}
+    </section>
+    ${sdgBlock(base, "Dieses Werkzeug dient der Bewertung und Rückkopplung von Produkt-, Lieferketten- und Marktwirkung. SDG+ wird als transparente WÖk-Erweiterung für Demokratie, Rechtsstaatlichkeit, Datenintegrität und institutionelles Vertrauen geführt.")}
+    ${bookBlock(base)}
+    ${downloadBlock(base, [{ label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" }, { label: "WStG lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" }])}`,
+  });
+}
+
+function lawReader() {
+  const md = read(sources.wstg);
+  const intro = md.split("\n### § ")[0].replace(/^# .+\n+/, "");
+  const renderedIntro = mdToHtml(intro);
+  const matches = [...md.matchAll(/^### §\s+(\d+)\s+([^\n]+)\n([\s\S]*?)(?=^### §\s+\d+\s+|\n## Teil |\n$)/gm)];
+  const sections = matches.map((match) => {
+    const nr = match[1];
+    const title = match[2].trim();
+    const body = match[3].trim();
+    const parts = {};
+    let current = "gesetzestext";
+    parts[current] = [];
+    for (const raw of body.split("\n")) {
+      const line = raw.trim();
+      if (/^\*\*Gesetzestext:\*\*/.test(line)) {
+        current = "gesetzestext";
+        parts[current] = [];
+        continue;
+      }
+      if (/^\*\*Kommentar:\*\*/.test(line)) {
+        current = "kommentar";
+        parts[current] = [];
+        continue;
+      }
+      if (/^\*\*Begruendung:\*\*|^\*\*Begründung:\*\*/.test(line)) {
+        current = "begruendung";
+        parts[current] = [];
+        continue;
+      }
+      if (!parts[current]) parts[current] = [];
+      parts[current].push(raw);
+    }
+    const lawText = (parts.gesetzestext || []).join("\n").trim();
+    const summary = lawText.split(/\.\s+/)[0]?.replace(/\s+/g, " ").slice(0, 240) || `Paragraf ${nr} des WStG.`;
+    return {
+      nr,
+      title,
+      id: `paragraf-${nr}`,
+      summary,
+      gesetzestext: mdToHtml(lawText).html,
+      kommentar: mdToHtml((parts.kommentar || []).join("\n").trim()).html,
+      begruendung: mdToHtml((parts.begruendung || []).join("\n").trim()).html,
+    };
+  });
+
+  page({
+    rel: "werkstatt/gesetze/wirkungssteuergesetz/index.html",
+    title: "Wirkungssteuergesetz WStG | Online-Gesetzestext mit Kommentaren",
+    description: "Online-Fassung des Wirkungssteuergesetzes mit Gesetzestext, Kommentaren, Begründungen und Verweisen zu WUStG, WEstG, Wirkungsrat und Wirkungshaushalt.",
+    searchSection: "Werkstatt",
+    searchType: "Gesetz",
+    body: (base) => `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a> / Gesetze</nav>
+        <p class="hero-kicker">LawReader · Entwurf / Zielarchitektur</p>
+        <h1>Wirkungssteuergesetz WStG</h1>
+        <p class="hero-subtitle">Online-Gesetzestext mit Kurzfassungen, Kommentaren und Begründungen.</p>
+        <p>Das WStG 2.0 ist kein geltendes Recht, sondern eine Rahmenfassung für steuerliche Rückkopplung nach positiver Netto-Wirkung für Mensch, Planet und Demokratie.</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md")}">Markdown-Quelle öffnen</a>`)}
+      </div>
+    </section>
+    <section class="section narrow">${sourceNotice(sources.wstg)}
+      <nav class="toc-card" aria-label="Inhaltsverzeichnis">
+        <h2>Inhaltsverzeichnis</h2>
+        <ol>
+          <li><a href="#praeambel">Präambel und Einordnung</a></li>
+          ${sections.map((section) => `<li><a href="#${section.id}">§ ${section.nr} ${escapeHtml(section.title)}</a></li>`).join("")}
+        </ol>
+      </nav>
+    </section>
+    <section class="section article-section">
+      <article class="article-body law-reader">
+        ${renderedIntro.html}
+        ${sections.map((section) => `<section class="law-section" id="${section.id}">
+          <p class="card-kicker">§ ${section.nr} WStG</p>
+          <h2>§ ${section.nr} ${escapeHtml(section.title)}</h2>
+          <div class="law-part law-summary"><h3>Kurzfassung</h3><p>${escapeHtml(section.summary)}.</p></div>
+          <div class="law-part"><h3>Gesetzestext</h3>${section.gesetzestext || "<p>Kein eigener Gesetzestext in der Quelle ausgewiesen.</p>"}</div>
+          <div class="law-part"><h3>Kommentar</h3>${section.kommentar || "<p>Kein Kommentar in der Quelle ausgewiesen.</p>"}</div>
+          <div class="law-part"><h3>Begründung</h3>${section.begruendung || "<p>Keine Begründung in der Quelle ausgewiesen.</p>"}</div>
+          <div class="law-part"><h3>Verweise</h3><p><a href="${href(base, "werkstatt/gesetze/wirkungssteuergesetz/#paragraf-1")}">§ 1 WStG</a> · <a href="${href(base, "werkstatt/leitlinien/wustg/")}">Technische Leitlinien WUStG</a> · <a href="${href(base, "werkzeuge/wirkungssteuergesetz/")}">Werkzeugseite Wirkungssteuergesetz</a></p></div>
+        </section>`).join("")}
+      </article>
+    </section>
+    ${toolCards(base, contextualTools.filter((tool) => ["Wirkungsumsatzsteuer", "WÖk-IDs", "Reverse Merit Order", "Wirkungsrat"].includes(tool.title)))}
+    ${sdgBlock(base, "Das WStG rahmt steuerliche Rückkopplung für Produkte, Einkommen, Kapital, öffentliche Mittel und Governance. Es bezieht sich auf SDGs, Agenda 2030 und SDG+ als Bewertungsrahmen, nicht als Menübaum.")}
+    ${bookBlock(base, bookAnchors.filter(([label]) => /Kapitel 36|Kapitel 37|Kapitel 38|Kapitel 39|Kapitel 40|Kapitel 31|Kapitel 32|Kapitel 33/.test(label)))}
+    ${downloadBlock(base, [{ label: "Markdown-Quelle öffnen", href: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md" }, { label: "Downloads öffnen", href: "downloads.html" }])}`,
+  });
+}
+
+function guidelinesPage() {
+  const md = read(sources.wustgGuidelines).replace(/^# .+\n+/, "");
+  const rendered = mdToHtml(md);
+  page({
+    rel: "werkstatt/leitlinien/wustg/index.html",
+    title: "Technische Leitlinien WUStG | Wirkungsumsatzsteuer",
+    description: "Vollständige Online-Fassung der Technischen Leitlinien zum WUStG mit WÖk-IDs, Scorecards, FinalScore, Reverse Merit Order, Datenqualität und Pilotlogik.",
+    searchSection: "Werkstatt",
+    searchType: "Leitlinie",
+    body: (base) => `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a> / Leitlinien</nav>
+        <p class="hero-kicker">Leitlinie · Entwurf / Pilotmodell</p>
+        <h1>Technische Leitlinien WUStG</h1>
+        <p class="hero-subtitle">Methodikentwurf für Produktscorecards, FinalScore, NWI, digitale Produktpässe und wirkungsbezogene Umsatzsteuer-Pilotierung.</p>
+        <p>Diese Online-Fassung ist der Hauptzugang zu den Leitlinien. Sie ersetzt keine Rechtsnorm und erfindet keinen separaten WUStG-Gesetzestext.</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "dokumente/technische-leitlinien-wustg-v2/")}">Historische Webfassung öffnen</a>`)}
+      </div>
+    </section>
+    <section class="section narrow">${sourceNotice(sources.wustgGuidelines)}${tocBlock(base, rendered.toc)}</section>
+    <section class="section article-section">
+      <article class="article-body fulltext-reader">
+        <h2 id="online-volltext">Online-Volltext</h2>
+        <p>Die Leitlinien beziehen sich unter anderem auf ${lawRef(base, "wustg3")}, ${lawRef(base, "wustg4")}, ${lawRef(base, "wustg5")}, ${lawRef(base, "wustg6")}, ${lawRef(base, "wustg7")} und ${lawRef(base, "wustg8")}. Da kein separater vollständiger WUStG-Gesetzestext in der aktuellen Quelle vorliegt, führen diese Verweise auf die passenden Leitlinienabschnitte.</p>
+        ${rendered.html}
+      </article>
+    </section>
+    ${toolCards(base)}
+    ${sdgBlock(base, "Die WUStG-Leitlinien beschreiben die technische Bewertung von Produktwirkung entlang von Konsum, Produktion, Lieferketten, Datenqualität, Rechtsstaatlichkeit und institutioneller Kontrolle.")}
+    ${bookBlock(base)}
+    ${downloadBlock(base, [{ label: "Historische PDF-Webfassung", href: "dokumente/technische-leitlinien-wustg-v2/" }, { label: "Markdown-Quelle öffnen", href: "docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md" }])}`,
+  });
+}
+
+function wustgConceptPage() {
+  page({
+    rel: "werkstatt/gesetze/wirkungsumsatzsteuergesetz/index.html",
+    title: "Wirkungsumsatzsteuergesetz WUStG | Konzept und Leitlinien",
+    description:
+      "Konzeptseite zum Wirkungsumsatzsteuergesetz: kein separater vollständiger Gesetzestext vorhanden; Verweise auf WStG, Produktpapier und Technische Leitlinien WUStG.",
+    searchSection: "Werkstatt",
+    searchType: "Gesetz",
+    body: (base) => `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a> / Gesetze</nav>
+        <p class="hero-kicker">Konzept / in Ausarbeitung</p>
+        <h1>Wirkungsumsatzsteuergesetz WUStG</h1>
+        <p class="hero-subtitle">Konzeptseite zum Produkt- und Umsatzsteuer-Modul der Wirkungsökonomie.</p>
+        <p>Im aktuellen Repository liegt kein separater vollständiger WUStG-Gesetzestext vor. Deshalb werden hier keine Paragrafen erfunden. Die Seite verweist auf den WStG-Rahmen, die Technischen Leitlinien und das Produktpapier.</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "werkstatt/leitlinien/wustg/")}">Leitlinien lesen</a>`)}
+      </div>
+    </section>
+    <section class="section" aria-labelledby="wustg-status">
+      <div class="scanner-notice" role="note">
+        <strong>Status:</strong> WUStG-Paragrafen wie ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")} werden als Referenzen auf die nächstbesten Leitlinienabschnitte geführt. Sie sind keine behauptete geltende Rechtsnorm.
+      </div>
+      <div class="section-header">
+        <p class="hero-kicker">Einordnung</p>
+        <h2 id="wustg-status">Was diese Seite leistet</h2>
+        <p>Sie bündelt die vorhandene WUStG-Logik als Konzept- und Orientierungspunkt, bis ein vollständiger Gesetzestext vorliegt.</p>
+      </div>
+      ${cardGrid(base, [
+        { title: "WStG als Rahmen", text: "Das Wirkungssteuerrahmengesetz definiert Begriffe, Governance, Rechtsschutz und Pilotierung.", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
+        { title: "Technische Leitlinien WUStG", text: "Die Leitlinien beschreiben WÖk-IDs, Scorecards, FinalScore, Reverse Merit Order, Datenqualität und Pilotlogik.", href: "werkstatt/leitlinien/wustg/" },
+        { title: "Produktbesteuerung durch Wirkung", text: "Das Produktpapier erklärt den Modellbereich online lesbar im Portal Produkte & Konsum.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+      ])}
+    </section>
+    ${toolCards(base)}
+    ${sdgBlock(base, "Das WUStG-Konzept betrifft Produktwirkung, Konsum, Lieferketten, Datenqualität, Rechtsstaatlichkeit und institutionelles Vertrauen. Verbindliche Anwendung setzt Gesetzgebung und Prüfung voraus.")}
+    ${bookBlock(base, bookAnchors.filter(([label]) => /Kapitel 31|Kapitel 32|Kapitel 33|Kapitel 35|Kapitel 37|Kapitel 38|Kapitel 48|Kapitel 49|Kapitel 50|Kapitel 51|Kapitel 52|Kapitel 53/.test(label)))}
+    ${downloadBlock(base, [{ label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" }, { label: "WStG lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" }])}`,
+  });
+}
+
+function build() {
+  productPortal();
+  fulltextPage({
+    rel: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/index.html",
+    source: sources.productTax,
+    title: "Produktbesteuerung durch Wirkung | Wirkungsumsatzsteuer",
+    description: "Vollständige Online-Fassung zur Produktbesteuerung durch Wirkung: NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Steuerklassen und Vorsteuerlogik.",
+    kicker: "Online-Volltext",
+    h1: "Produktbesteuerung durch Wirkung",
+    subtitle: "Wie Produkte nach ihrer Wirkung auf Mensch, Planet und Demokratie besteuert werden können.",
+    hero: "Diese Seite bildet das Produktpapier vollständig online ab. Der Hauptzugang ist der Webtext; Downloads bleiben Archiv und Export.",
+    contextIntro: (base) => `Die Bewertung erfolgt über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster, das Produktdaten in Scores von -3 bis +3 übersetzt.")}, deren FinalScore nach der ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt die Einstufung.")} gebildet wird. Die technische Ausgestaltung verweist auf ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.`,
+    sdgText: "Produktbesteuerung durch Wirkung verknüpft Konsum, Produktion, Arbeit, Gesundheit, Klima, Biodiversität, Datenqualität und institutionelle Prüfung. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+    downloads: [{ label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" }, { label: "Downloads öffnen", href: "downloads.html" }],
+  });
+  fulltextPage({
+    rel: "wirkungsfelder/produkte-konsum/apfelbeispiel/index.html",
+    source: sources.apple,
+    title: "Regionaler Apfel vs. Chile-Apfel | Wirkungssteuer-Beispiel",
+    description: "Wie ein regionaler Bio-Apfel und ein importierter Apfel anhand von SDGs, CSRD/ESRS-Daten, Scorecards und Wirkungssteuer unterschiedlich eingestuft werden.",
+    kicker: "Beispiel",
+    h1: "Regionaler Apfel vs. Chile-Apfel",
+    subtitle: "Wie eine Wirkungssteuer Produkte automatisch und nachvollziehbar einstuft.",
+    hero: "Das Apfelbeispiel zeigt didaktisch, dass regional, bio oder importiert nicht automatisch positiv oder negativ ist. Kontext, Datenqualität und rote Linien entscheiden.",
+    contextIntro: (base) => `Das Beispiel nutzt NACE 01.24, WÖk-IDs, Scorecard, FinalScore, ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste Wirkungsfeld entscheidet.")} und modellhafte Wirkungsumsatzsteuer. Es ist keine amtliche Einstufung.`,
+    sdgText: "Das Apfelbeispiel berührt Ernährung, Wasser, Biodiversität, Arbeit, Gesundheit, Transport, Verpackung und Konsumtransparenz.",
+    downloads: [{ label: "Alte Webfassung öffnen", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" }, { label: "Scorecard-Demo öffnen", href: "scorecard-dashboard.html" }],
+  });
+  fulltextPage({
+    rel: "wirkungsfelder/produkte-konsum/lieferketten/index.html",
+    source: sources.supplyChain,
+    title: "Wirkungsökonomie in der Lieferkette | Produkte & Konsum",
+    description: "Warum globale Lieferketten nicht länger Schlupflöcher für negative Wirkung sein dürfen.",
+    kicker: "Online-Volltext",
+    h1: "Wirkungsökonomie in der Lieferkette",
+    subtitle: "Warum globale Lieferketten nicht länger Schlupflöcher für negative Wirkung sein dürfen.",
+    hero: "Lieferketten tragen Wirkung lange vor dem Endprodukt. Diese Seite macht Vorleistungen, rote Linien, Datenqualität, DPPs und faire Übergänge online lesbar.",
+    contextIntro: (base) => `Lieferkettenbewertung verweist auf ${lawRef(base, "wustg7")} und ${lawRef(base, "wustg8")}. Vorsteuerlogik bleibt Pilotmodell und setzt Gesetzgebung, Rechtsschutz und Dateninfrastruktur voraus.`,
+    sdgText: "Lieferkettenwirkung berührt Arbeit, Ressourcen, Wasser, Klima, Biodiversität, Rechtsstaatlichkeit, Datenintegrität und globale Fairness.",
+    downloads: [{ label: "Alte Webfassung öffnen", href: "dokumente/wirkungsoekonomie-in-der-lieferkette/" }, { label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" }],
+  });
+  fulltextPage({
+    rel: "wirkungsfelder/produkte-konsum/basf-polyamid/index.html",
+    source: sources.basf,
+    title: "Von der CSRD zur Produktscorecard | BASF Polyamid",
+    description: "Wie Unternehmensdaten auf Produktgruppen heruntergebrochen werden können - Beispiel Polyamid.",
+    kicker: "Konzernbeispiel",
+    h1: "Von der CSRD zur Produktscorecard",
+    subtitle: "Wie Unternehmensdaten auf Produktgruppen heruntergebrochen werden können - Beispiel Polyamid.",
+    hero: "Das Beispiel zeigt illustrativ, warum Konzernmittelwerte keine Produktwahrheit sind und wie Produktgruppen über WÖk-IDs, EPDs, DPPs und Scorecards bewertet werden können.",
+    contextIntro: (base) => `Die Seite verbindet Produktportal, ${toolRef(base, "Impact Controlling", "werkzeuge/impact-controlling/", "Dachbereich für Wirkung in Steuerung, Reporting, Risiko und Entscheidung.")}, T-SROI und Lieferkettensteuerung. Sie behauptet keine ungesicherten Echtwerte zu BASF oder Polyamid.`,
+    sdgText: "Das Konzernbeispiel berührt Industrie, Innovation, Chemikalien, Klima, Kreislauf, Lieferketten, Datenqualität und Unternehmensverantwortung.",
+    downloads: [{ label: "Konzernbeispiel öffnen", href: "dokumente/beispiel-konzern/" }, { label: "Impact Controlling öffnen", href: "werkzeuge/impact-controlling/" }],
+  });
+  compactContextPage({
+    rel: "wirkungsfelder/produkte-konsum/verbraucherinformation/index.html",
+    title: "Verbraucherinformation",
+    subtitle: "Wirkungspunkte, Steuerklassen, Produktlabel und Regaltransparenz ohne Personenbewertung.",
+    description: "Verbraucherinformation macht Produktwirkung sichtbar, bewertet aber keine Menschen. Sie zeigt Produktklasse, Datenqualität und Wirkungsfelder datensparsam am Produkt, im Regal oder auf dem Kassenbon.",
+    sections: [
+      { kicker: "Prinzip", title: "Produkt statt Person", text: "Die Wirkungsökonomie bewertet Produkte, Dienstleistungen und Lieferketten, nicht individuelles Kaufverhalten." },
+      { kicker: "Transparenz", title: "Wirkungspunkte und Steuerklasse", text: "Wirkungspunkte können erklären, warum ein Produkt entlastet, neutral behandelt oder belastet wird." },
+      { kicker: "Schutz", title: "Keine Konsumüberwachung", text: "Freiwillige Bonusmodelle dürfen nur datensparsam, transparent und ohne Personenbewertung gedacht werden." },
+    ],
+  });
+  compactContextPage({
+    rel: "wirkungsfelder/produkte-konsum/unternehmen/index.html",
+    title: "Unternehmen und Produktwirkung",
+    subtitle: "Was Produktbesteuerung für Produktentwicklung, Einkauf, Lieferketten, Controlling und Reporting bedeutet.",
+    description: "Für Unternehmen verschiebt Produktbesteuerung den Blick von pauschalem Umsatz zu Produktgruppen, Lieferketten, Datenqualität und positiven Netto-Wirkungen.",
+    sections: [
+      { kicker: "Steuerung", title: "Produktentwicklung", text: "Materialwahl, Reparierbarkeit, Kreislauffähigkeit und Lieferantenentwicklung werden steuerungsrelevant." },
+      { kicker: "Reporting", title: "Von CSRD zu Produktgruppen", text: "Konzernberichte werden durch produkt- und anlagennahe Daten ergänzt." },
+      { kicker: "Controlling", title: "Wirkung in Entscheidungen", text: "Impact Controlling verbindet Produktdaten, Risiken, Investitionen und Transformation." },
+    ],
+  });
+  compactContextPage({
+    rel: "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/index.html",
+    title: "Politische Rahmenbedingungen",
+    subtitle: "Was Politik, Verwaltung, Wirkungsrat und Steuerrecht schaffen müssen.",
+    description: "Produktbesteuerung durch Wirkung braucht Rahmengesetz, technische Leitlinien, Wirkungsrat, Datenschutz, Rechtsschutz, Pilotierung, soziale Abfederung und europarechtliche Prüfung.",
+    sections: [
+      { kicker: "Recht", title: "WStG und WUStG", text: "Das WStG setzt die Rahmenordnung; WUStG-Leitlinien konkretisieren Produktbewertung und Pilotlogik." },
+      { kicker: "Governance", title: "Wirkungsrat", text: "Indikatoren, Benchmarks und Bewertungslogik brauchen unabhängige Evaluation." },
+      { kicker: "Übergang", title: "Kaufkraft- und KMU-Schutz", text: "Basisgüter, kleine Unternehmen, Datenlücken und soziale Übergänge müssen berücksichtigt werden." },
+    ],
+  });
+  toolPage({
+    rel: "werkzeuge/wirkungsumsatzsteuer/index.html",
+    h1: "Wirkungsumsatzsteuer",
+    subtitle: "Produktwirkungssteuer der Wirkungsökonomie.",
+    description: "Die Wirkungsumsatzsteuer koppelt Steuersätze im Pilotmodell an die messbare Wirkung von Produkten und Dienstleistungen auf Mensch, Planet und Demokratie.",
+    sections: [
+      { kicker: "Abgrenzung", title: "Nicht pauschal nach Umsatz", text: (base) => `Die Steuerlogik betrachtet Produktwirkung über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster für Produktwirkung.")}, WÖk-IDs, FinalScore und Reverse Merit Order.` },
+      { kicker: "Rechtsstatus", title: "Pilot- und Modelllogik", text: (base) => `Eine verbindliche Anwendung setzt Gesetzgebung, Rechtsschutz und Dateninfrastruktur voraus. Siehe ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.` },
+      { kicker: "Ziel", title: "Positive Netto-Wirkung", text: () => "Die Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie, nicht Wirkung schlechthin." },
+    ],
+    appliedIn: [
+      { title: "Produkte & Konsum", text: "Hauptportal für Produktwirkung, Preise und Konsumentscheidungen.", href: "wirkungsfelder/produkte-konsum/" },
+      { title: "Produktbesteuerung durch Wirkung", text: "Volltext des Produktpapiers.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+      { title: "Lieferketten", text: "Vorsteuer-, Bonus- und Lieferantenlogik.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },
+    ],
+  });
+  toolPage({
+    rel: "werkzeuge/produktscorecards/index.html",
+    h1: "Produktscorecards",
+    subtitle: "Bewertungsraster für Produktwirkung.",
+    description: "Produktscorecards übersetzen Produkt-, Lieferketten- und Benchmarkdaten in nachvollziehbare Scores, Datenqualität und FinalScore.",
+    sections: [
+      { kicker: "Funktion", title: "Von Daten zu Scores", text: () => "Werte werden nicht moralisch behauptet, sondern über Indikatoren, Einheiten, Schwellen, Quellen und Prüfstatus bewertet." },
+      { kicker: "Schutzregel", title: "Reverse Merit Order", text: (base) => `Der FinalScore berücksichtigt die ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt die Einstufung.")}.` },
+      { kicker: "Daten", title: "WÖk-IDs", text: (base) => `Jede Bewertung braucht eindeutige ${toolRef(base, "WÖk-IDs", "werkzeuge/woek-ids/", "Indikatorenarchitektur mit Quelle, Einheit, Schwelle und Version.")}.` },
+    ],
+    appliedIn: [
+      { title: "Apfelbeispiel", text: "Didaktische Produktscorecard für Kernobst.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
+      { title: "BASF Polyamid", text: "Von Konzern- zu Produktgruppendaten.", href: "wirkungsfelder/produkte-konsum/basf-polyamid/" },
+      { title: "Scorecard-Demo", text: "Interaktive Modellansicht.", href: "scorecard-dashboard.html" },
+    ],
+  });
+  toolPage({
+    rel: "werkzeuge/woek-ids/index.html",
+    h1: "WÖk-IDs",
+    subtitle: "Indikatorenarchitektur für prüfbare Wirkung.",
+    description: "WÖk-IDs verbinden SDGs, SDG+, NACE, ESRS, GRI, Datenquellen, Einheiten, Schwellenwerte und Versionen in einer prüfbaren Wirkungslogik.",
+    sections: [
+      { kicker: "Eindeutigkeit", title: "Keine beliebigen KPI-Namen", text: () => "Eine WÖk-ID macht sichtbar, welcher Indikator gemeint ist, welche Quelle gilt und welche Version verwendet wird." },
+      { kicker: "Anschluss", title: "Standards verbinden", text: () => "NACE, ESRS, GRI, EU-Taxonomie, EPDs und digitale Produktpässe werden über Indikatorfamilien anschlussfähig." },
+      { kicker: "Prüfung", title: "Datenqualität", text: () => "Datenqualität, Prüfstatus und Gültigkeitszeitraum verhindern Scheingenauigkeit." },
+    ],
+    appliedIn: [
+      { title: "Produktbesteuerung", text: "Grundlage für Produktwirkung und Steuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+      { title: "WUStG-Leitlinien", text: "Technische Ausgestaltung der Indikatoren.", href: "werkstatt/leitlinien/wustg/" },
+      { title: "WÖk Master Items", text: "Vorhandenes Register als Ausgangsquelle.", href: "dokumente/woek-master-items-final-v1-2/" },
+    ],
+  });
+  toolPage({
+    rel: "werkzeuge/reverse-merit-order/index.html",
+    h1: "Reverse Merit Order",
+    subtitle: "Das schwächste Wirkungsfeld entscheidet.",
+    description: "Die Reverse Merit Order verhindert, dass schwere negative Wirkung durch positive Einzelwerte schöngerechnet wird.",
+    sections: [
+      { kicker: "Prinzip", title: "Nichtkompensation", text: () => "Kinderarbeit, Zwangsarbeit, schwere Umweltzerstörung oder demokratische Schäden dürfen eine Gesamtbewertung begrenzen." },
+      { kicker: "Produktsteuer", title: "Schutz vor Greenwashing", text: (base) => `Im WUStG-Kontext verweist die Schutzregel auf ${lawRef(base, "wustg6")}.` },
+      { kicker: "Bewertung", title: "FinalScore begrenzen", text: () => "Gute Klima- oder Kreislaufwerte können rote Linien in Arbeit, Gesundheit oder Biodiversität nicht einfach ausgleichen." },
+    ],
+    appliedIn: [
+      { title: "Produkte & Konsum", text: "Schutzregel der Produktbewertung.", href: "wirkungsfelder/produkte-konsum/" },
+      { title: "Apfelbeispiel", text: "Illustrative Anwendung bei Lebensmitteln.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
+      { title: "Lieferketten", text: "Rote Linien entlang der Supply Chain.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },
+    ],
+  });
+  guidelinesPage();
+  wustgConceptPage();
+  lawReader();
+}
+
+build();

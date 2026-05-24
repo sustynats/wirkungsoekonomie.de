@@ -1,173 +1,676 @@
 # WStG 2.0 - Wirkungssteuerrahmengesetz
 
-Entwurf einer Zielarchitektur, Version 2.0
-Stand: 2026-05-23
-Autorin der Quellkonzeption: Natalie Weber
+Entwurf einer Rahmenfassung fuer die steuerliche Rueckkopplung nach positiver Netto-Wirkung
 
-## Einordnung
+**Autorin:** Natalie Weber
+**Projekt:** Wirkungsoekonomie
+**Status:** Entwurf / Zielarchitektur
+**Version:** 2.0
+**Datum:** 2026-05-24
+**Hinweis:** Nicht geltendes Recht; konzeptionelle Rahmenfassung.
 
-Dieses Dokument ist eine neue Entwurfsfassung. Es ersetzt nicht die historische PDF-Fassung `WStG_Oktober2025.pdf`, sondern strukturiert das WStG als Rahmengesetz neu. Das WStG 2.0 ist kein geltendes Recht. Es beschreibt eine stufenweise einführbare Zielarchitektur für steuerliche Wirkungsrückkopplung, Pilotierung, Governance, Datenqualität und Rechtsschutz.
+## Hinweis zur Version 2.0
 
-Die Grundformel lautet:
+Diese Fassung ersetzt nicht automatisch fruehere Dokumente. Sie aktualisiert den Ansatz des Wirkungssteuergesetzes auf Grundlage der aktuellen Begriffssystematik der Wirkungsoekonomie und des fuehrenden Begriffsstands vom 21. Mai 2026.
 
-> Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Die Wirkungsökonomie bewertet Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ und richtet Wirtschaft, Politik, Kapital, Medien und Entscheidungen auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.
+Die Fassung Oktober 2025 bleibt als historische Arbeitsfassung zitierfaehig. Das WStG 2.0 ist dagegen als Rahmengesetz angelegt: Es regelt Begriffe, Prinzipien, Datenarchitektur, Governance, Rechtsschutz, Pilotierung und Modulstruktur. Die konkrete Ausgestaltung einzelner Steuerarten erfolgt in spaeteren Einzelgesetzen und technischen Leitlinien.
 
-## Präambel
+Leitformel dieser Fassung:
 
-Die Wirkungsökonomie ordnet Wirtschaft nicht gegen Freiheit, Markt oder Demokratie, sondern ergänzt ihre Mess- und Rückkopplungslogik. Kapital bleibt ein wichtiges Werkzeug. Es darf aber nicht der einzige Maßstab für gesellschaftliche Steuerung sein. Entscheidend ist, welche Zustände wirtschaftliche, politische und institutionelle Entscheidungen tatsächlich verändern.
+> Wirkung ist die tatsaechliche Veraenderung von Zustaenden. Sie kann positiv, negativ oder neutral sein. Die Wirkungsoekonomie bewertet Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ und richtet Wirtschaft, Politik, Kapital, Medien und Entscheidungen auf positive Netto-Wirkung fuer Mensch, Planet und Demokratie aus.
 
-Ziel dieses Rahmengesetzes ist eine lernende Ordnung, in der positive Netto-Wirkung für Mensch, Planet und Demokratie erkennbar, prüfbar und rückkoppelbar wird. Das Gesetz achtet Rechtsstaatlichkeit, Freiheit, Eigentum, Datenschutz, demokratische Kontrolle, Verhältnismäßigkeit und Fehlbarkeit. Es schafft keine moralische Zentralinstanz und kein Wahrheitsmonopol.
+## Praeambel
 
-Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Dienstleistungen, Organisationen, Tätigkeiten, Kapitalflüsse, Datenlagen und nachweisbare Wirkungszusammenhänge. Personenbezogene Daten dürfen nur begrenzt, verhältnismäßig, überprüfbar, anfechtbar und grundrechtlich geschützt verwendet werden.
+Im Bewusstsein der Verantwortung gegenueber heutigen und kommenden Generationen, im Anschluss an den Schutzauftrag fuer die natuerlichen Lebensgrundlagen und Tiere, wie er unter anderem in Artikel 20a des Grundgesetzes angelegt ist, und im Respekt vor Freiheit, Demokratie, Rechtsstaatlichkeit und Verhaeltnismaessigkeit wird mit diesem Entwurf eine Rahmenordnung fuer steuerliche Rueckkopplung nach positiver Netto-Wirkung beschrieben.
+
+Die Wirkungsoekonomie geht davon aus, dass Kapital, Preise und Steuern nicht nur finanzielle Bewegungen abbilden duerfen. Sie muessen auch sichtbar machen, ob wirtschaftliches Handeln Mensch, Planet und Demokratie staerkt oder schwaecht. Wirkung ist dabei keine automatisch gute Groesse. Sie bezeichnet tatsaechliche Veraenderung von Zustaenden. Dieses Gesetz richtet steuerliche Rueckkopplung deshalb nicht auf Wirkung schlechthin, sondern auf positive Netto-Wirkung aus.
+
+Das WStG 2.0 versteht sich als lernende Ordnung. Es setzt nicht auf eine sofortige Vollumstellung, sondern auf Pilotierung, Evaluation, Datenqualitaet, Rechtsschutz, Fehlerkorrektur und Reversibilitaet. Es soll Wirkungssimulation, Greenwashing und blosse Symbolsteuerung verhindern, ohne Freiheit, Innovation, Unternehmertum oder demokratische Offenheit zu ersticken.
 
 ## Teil 1 - Allgemeine Bestimmungen
 
-### § 1 Zweck
+### § 1 Zweck des Gesetzes
 
-Zweck des Wirkungssteuerrahmengesetzes ist es, die rechtlichen, methodischen und institutionellen Grundlagen für steuerliche Wirkungsrückkopplung zu schaffen. Es richtet Steuer- und Abgabensysteme schrittweise darauf aus, positive Netto-Wirkung zu erleichtern und negative Wirkung angemessen sichtbar zu machen.
+**Gesetzestext:**
+Zweck dieses Gesetzes ist die Schaffung eines Rahmens fuer steuerliche Rueckkopplung nach gepruefter Wirkung. Zielgroesse ist positive Netto-Wirkung fuer Mensch, Planet und Demokratie.
 
-### § 2 Geltungsbereich
+Das Gesetz bestimmt Oberbegriffe, Grundprinzipien, Bewertungsrahmen, Datenarchitektur, Governance, Rechtsschutz und Pilotierungsregeln fuer spaetere Einzelgesetze und Module. Es bewirkt keine sofortige Totalumstellung des Steuersystems.
 
-Das Rahmengesetz gilt als Zielarchitektur für Einzelmodule der Wirkungsbesteuerung. Es regelt selbst keine vollständige Umstellung des Steuersystems und setzt keine beliebigen neuen Steuersätze unmittelbar in Kraft.
+**Kommentar:**
+Das WStG 2.0 ist kein Detailgesetz fuer jede Steuerart. Es schafft die Klammer, in der spaeter WUStG, WEstG, WKStG, WGewStG, Wirkungskapitalmodul und Wirkungshaushaltsmodul entwickelt werden koennen.
 
-### § 3 Verhältnis zu bestehenden Steuergesetzen
+**Begruendung:**
+Eine wirkungsbasierte Steuerordnung kann nur tragfaehig sein, wenn sie begrifflich praezise, datenbasiert, rechtsschutzfaehig und schrittweise einfuehrbar ist.
 
-Bestehende Steuergesetze bleiben unberührt, bis Einzelgesetze, Pilotregelungen oder Übergangsvorschriften ausdrücklich etwas anderes bestimmen. Das WStG bildet die Klammer für spätere Module, insbesondere WUStG, WEstG, WKStG, WGewStG, Wirkungskapitalmodul und Wirkungshaushaltsmodul.
+### § 2 Geltungsbereich und Rahmencharakter
 
-### § 4 Rahmencharakter und Stufenmodell
+**Gesetzestext:**
+Dieses Gesetz gilt als Rahmen fuer wirtschaftliche Taetigkeiten, Produkte, Dienstleistungen, Organisationen, Kapitalfluesse, oeffentliche Mittel, Foerderungen, Beschaffung und nachweisbare Wirkungszusammenhaenge.
 
-Die Einführung erfolgt stufenweise. Vorrang haben Pilotsektoren mit hoher Datenverfügbarkeit, klaren Wirkungsfeldern, überprüfbaren Indikatoren und geringem Risiko sozialer Überforderung.
+Die konkrete Anwendung erfolgt durch Einzelgesetze, Pilotvorhaben, Ausfuehrungsbestimmungen und technische Leitlinien. Jede Anwendung hat Verhaeltnismaessigkeit, KMU-Schutz, Datenschutz, Rechtsschutz sowie europarechtliche und internationale Anschlussfaehigkeit zu pruefen.
 
-## Teil 2 - Begriffe
+**Kommentar:**
+Der Rahmencharakter verhindert, dass komplexe Steuermechaniken vorschnell in ein einziges Gesetz gepresst werden.
 
-### § 5 Wirkung
+**Begruendung:**
+Wirkungsbasierte Rueckkopplung braucht unterschiedliche Instrumente fuer Produkte, Einkommen, Kapital, Unternehmen, oeffentliche Haushalte und Beschaffung.
 
-Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer einen Bezugspunkt.
+### § 3 Verhaeltnis zu bestehenden Steuergesetzen
 
-### § 6 Positive, negative und neutrale Wirkung
+**Gesetzestext:**
+Das WStG ergaenzt bestehende Steuergesetze. Es ersetzt Einkommensteuer-, Umsatzsteuer-, Koerperschaftsteuer-, Gewerbesteuer- oder Haushaltsrecht nicht automatisch.
 
-Positive Wirkung ist Wirkung, die am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ positiv bewertet wird. Negative Wirkung verschlechtert Zustände für Mensch, Planet oder Demokratie. Neutrale Wirkung verändert Zustände, wird aber im Referenzrahmen nicht positiv oder negativ bewertet.
+Einzelne Wirkungssteuermodule sind jeweils durch eigenstaendige gesetzliche Grundlagen einzufuehren. Konflikte mit bestehendem Recht werden durch spaetere Ausfuehrungsgesetze, Uebergangsregeln und gerichtliche Kontrolle geklaert.
 
-### § 7 Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus
+**Kommentar:**
+Das WStG ist eine Zielarchitektur, kein sofortiger Systembruch.
 
-Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung. Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet. Ein Wirkmechanismus beschreibt, wie aus einem Auslöser unter bestimmten Bedingungen Wirkung entstehen kann.
+**Begruendung:**
+Rechtssicherheit, Verwaltungspraxis und europaeische Anschlussfaehigkeit verlangen eine stufenweise Einfuehrung.
 
-Ein Wirkstoff ist nur als didaktische Analogie zu verstehen: Ein Wirkstoff ist ein Auslöser mit Wirkungspotenzial, zum Beispiel ein Gesetz, Produkt, Preis, Narrativ, Algorithmus oder Kapitalfluss. Er ist nicht selbst Wirkung.
+## Teil 2 - Begriffsbestimmungen
 
-### § 8 Wirkungsbewertung, Netto-Wirkung und positive Netto-Wirkung
+### § 4 Wirkung
 
-Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien, Wirkungsgrenzen und Nichtkompensationsprinzip bleiben wirksam. Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.
+**Gesetzestext:**
+Wirkung ist die tatsaechliche Veraenderung von Zustaenden. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.
 
-### § 9 Transformationswirkung
+**Kommentar:**
+Wirkung ist nicht Absicht, Image, Output, Bericht, moralische Haltung oder blosse Behauptung.
 
-Transformationswirkung beschreibt, ob geprüfte Netto-Wirkung Systemlogiken, Standards, Märkte, Anreize, Infrastrukturen, Pfade, Resilienz oder zukünftige Entscheidungen verändert.
+**Begruendung:**
+Nur eine neutrale Wirkungsdefinition verhindert, dass jede behauptete gute Absicht bereits als positive Wirkung behandelt wird.
 
-### § 10 Instrumente und Kennzahlen
+### § 5 Positive, negative und neutrale Wirkung
 
-WÖk-ID bezeichnet eine eindeutige Kennung für einen Wirkungsindikator. Scorecards strukturieren Wirkungsfelder, Datenqualität und Bewertungslogik. Der FinalScore verdichtet operative Wirkungsinformationen unter Reverse Merit Order und Nichtkompensation. Der Netto-Wirkungs-Index (NWI) bewertet operative Netto-Wirkung. T-SROI bewertet Transformationswirkung auf Grundlage geprüfter Netto-Wirkung. WIF kann als optionaler steuerlicher Anpassungsfaktor in Einkommen-, Körperschaft- oder Gewerbemodulen verwendet werden.
+**Gesetzestext:**
+Positive Wirkung liegt vor, wenn eine Veraenderung die SDGs, die Agenda 2030 oder SDG+ staerkt. Negative Wirkung liegt vor, wenn eine Veraenderung diese Referenzrahmen schwaecht, blockiert oder zerstoert. Neutrale Wirkung liegt vor, wenn keine relevante Veraenderung nachweisbar ist oder eine Veraenderung im Bewertungsrahmen neutral eingeordnet wird.
 
-Die Skala -3 bis +3 ist die operative Primärlogik für Einzelscores. Eine Skala -100 bis +100 kann höchstens als Darstellungs-, Verwaltungs- oder Normierungsebene verwendet werden, nicht als Ersatz für Schutzlogik und Reverse Merit Order.
+**Kommentar:**
+Die Einordnung haengt vom Bezugspunkt, von Datenqualitaet und von Bewertungsregeln ab.
+
+**Begruendung:**
+Die Wirkungsoekonomie benoetigt eine gemeinsame Sprache, um positive, negative und neutrale Wirkungen unterscheidbar zu machen.
+
+### § 6 Positive Netto-Wirkung
+
+**Gesetzestext:**
+Positive Netto-Wirkung ist die bewertete Gesamtwirkung, die Mensch, Planet und Demokratie staerkt, ohne kritische Schaeden durch positive Einzelwerte zu verdecken.
+
+**Kommentar:**
+Positive Netto-Wirkung ist die Zielgroesse dieses Gesetzes. Sie ist keine einfache Addition positiver und negativer Einzelwirkungen.
+
+**Begruendung:**
+Schwere negative Wirkungen duerfen nicht durch gute Einzelwerte an anderer Stelle unsichtbar werden.
+
+### § 7 Wirkungspotenzial und Wirkungsrisiko
+
+**Gesetzestext:**
+Wirkungspotenzial bezeichnet die Moeglichkeit, dass Wirkung eintreten kann. Wirkungsrisiko bezeichnet die Moeglichkeit, dass eine Handlung, Struktur, Entscheidung, Technik, Sprache, Plattform, Organisation oder ein Kapitalfluss negative oder destabilisierende Wirkung entfaltet.
+
+**Kommentar:**
+Bei Medien, Sprache, Politik, Narrativen, KI und Plattformen ist besonders zu unterscheiden, ob nur Wirkungspotenzial, ein Wirkpfad, ein Wirkungsrisiko oder bereits nachgewiesene Wirkung vorliegt.
+
+**Begruendung:**
+Diese Unterscheidung schuetzt vor Ueberbehauptung und vor einer mechanischen Wirkungssprache.
+
+### § 8 Wirkungsbewertung
+
+**Gesetzestext:**
+Wirkungsbewertung ist die Einordnung von Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ unter Beachtung von Datenqualitaet, Kontext, Wirkungsgrenzen und Nichtkompensation.
+
+**Kommentar:**
+Wirkungsbewertung ersetzt keine demokratische Entscheidung. Sie stellt entscheidungsrelevante Wirkungsinformationen bereit.
+
+**Begruendung:**
+Steuerliche Rueckkopplung braucht nachvollziehbare Kriterien, nicht blosse Meinung.
+
+### § 9 Netto-Wirkung und NWI
+
+**Gesetzestext:**
+Netto-Wirkung ist die zusammengefuehrte Bewertung positiver und negativer Wirkungen unter Beachtung von Mindestbedingungen, roten Linien, Datenqualitaet und Nichtkompensation.
+
+Der Netto-Wirkungs-Index, kurz NWI, ist die operative Kennzahl fuer gepruefte Netto-Wirkung.
+
+**Kommentar:**
+Der NWI ist die operative Verdichtung, nicht die Behauptung einer mathematisch vollstaendigen Gesamtwahrheit.
+
+**Begruendung:**
+Eine steuerliche Rueckkopplung braucht eine arbeitsfaehige Kennzahl, muss aber Unsicherheit und Grenzen offenlegen.
+
+### § 10 Transformationswirkung und T-SROI
+
+**Gesetzestext:**
+Transformationswirkung bezeichnet die Veraenderung von Standards, Maerkten, Anreizen, Infrastrukturen, Pfaden, Resilienz oder zukuenftigen Entscheidungen.
+
+Der Transformational Social Return on Investment, kurz T-SROI, ist eine Kennzahl oder ein Analyseinstrument fuer Transformationswirkung auf Grundlage gepruefter Netto-Wirkung.
+
+**Kommentar:**
+T-SROI misst nicht noch einmal operative Netto-Wirkung. Diese Rolle liegt beim NWI.
+
+**Begruendung:**
+Die Trennung verhindert, dass operative Bewertung und systemische Transformationsanalyse methodisch vermischt werden.
+
+### § 11 SDG+
+
+**Gesetzestext:**
+SDG+ ist die transparente Erweiterung der Wirkungsoekonomie um Demokratie, Medienqualitaet, Rechtsstaatlichkeit, Diskursfaehigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.
+
+SDG+ ist keine offizielle UN-Kategorie.
+
+**Kommentar:**
+SDG+ dient dazu, demokratie- und informationsbezogene Wirkungen sichtbar zu machen, die in den SDGs anschlussfaehig, aber nicht immer ausreichend explizit abgebildet sind.
+
+**Begruendung:**
+Eine moderne Wirkungsordnung muss demokratische Stabilitaet, mediale Resonanzraeume und digitale Selbstbestimmung beruecksichtigen, ohne den Status der UN-SDGs falsch darzustellen.
+
+### § 12 WÖk-ID
+
+**Gesetzestext:**
+Eine WÖk-ID ist eine eindeutige Kennung fuer einen Wirkungsindikator innerhalb der Wirkungsoekonomie.
+
+**Kommentar:**
+WÖk-IDs verbinden Indikatoren mit Referenzrahmen, Datenquellen, Bewertungslogik, Versionen und Zustaendigkeiten.
+
+**Begruendung:**
+Ohne eindeutige Kennungen werden Wirkungsdaten nicht pruefbar, vergleichbar oder versionierbar.
+
+### § 13 FinalScore
+
+**Gesetzestext:**
+Der FinalScore ist die verdichtete steuerungsrelevante Bewertung eines Produkts, einer Dienstleistung, Taetigkeit oder Organisation auf Grundlage von Einzelscores, WÖk-IDs, Datenqualitaet und Reverse Merit Order.
+
+**Kommentar:**
+Der FinalScore ist keine simple Durchschnittszahl. Kritische Defizite koennen die Gesamtbewertung begrenzen.
+
+**Begruendung:**
+Steuerliche Rueckkopplung muss handhabbar sein, darf aber schwere negative Wirkungen nicht nivellieren.
+
+### § 14 Reverse Merit Order und Nichtkompensationsprinzip
+
+**Gesetzestext:**
+Die Reverse Merit Order bedeutet, dass das schwaechste kritische Wirkungsfeld die Gesamtbewertung begrenzt. Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkung durch positive Wirkung an anderer Stelle verdeckt wird.
+
+Die Reverse Merit Order ist streng in der Wirkung, aber proportional in der Verantwortung.
+
+**Kommentar:**
+Das Prinzip bewertet kritische Wirkungsdefizite, nicht den moralischen Wert einzelner Menschen.
+
+**Begruendung:**
+Ohne Nichtkompensation koennte positive Wirkung als Ablasslogik fuer schwere Schaeden missbraucht werden.
+
+### § 15 Wirkungsgrenzen
+
+**Gesetzestext:**
+Wirkungsgrenzen sind rote Linien, die nicht beliebig verrechnet werden duerfen. Hierzu gehoeren insbesondere Menschenwuerde, Kinderrechte, oekologische Lebensgrundlagen, Tiere, Biodiversitaet, Rechtsstaatlichkeit und demokratische Stabilitaet.
+
+**Kommentar:**
+Wirkungsgrenzen markieren Bereiche, in denen Kompensation rechtlich, ethisch oder systemisch unzureichend ist.
+
+**Begruendung:**
+Positive Netto-Wirkung kann nicht behauptet werden, wenn tragende Schutzgueter verletzt werden.
+
+### § 16 Wirkungslenkung
+
+**Gesetzestext:**
+Wirkungslenkung ist die Rueckfuehrung von Wirkungsbewertungen in Preise, Steuern, Kapitalzugang, Foerderung, Beschaffung, Versicherbarkeit oder Entscheidungen.
+
+**Kommentar:**
+Wirkungslenkung ist keine Gesinnungssteuerung. Sie betrifft bewertbare Wirkungszusammenhaenge.
+
+**Begruendung:**
+Bewertung bleibt folgenlos, wenn sie nicht in oekonomische und institutionelle Rueckkopplungen uebersetzt wird.
+
+### § 17 Wirkungsarchitektur
+
+**Gesetzestext:**
+Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle, Rechtsschutz und lernender Rueckkopplung.
+
+**Kommentar:**
+Wirkungsarchitektur bezeichnet nicht nur eine Website, ein Diagramm oder ein Register.
+
+**Begruendung:**
+Eine wirkungsbasierte Ordnung entsteht nur, wenn Messung, Bewertung, Entscheidung, Kontrolle und Lernen zusammenwirken.
 
 ## Teil 3 - Bewertungsrahmen
 
-### § 11 Referenzrahmen
+### § 18 Referenzrahmen
 
-Der Bewertungsrahmen umfasst die SDGs, die Agenda 2030 und SDG+. SDG+ ist eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie.
+**Gesetzestext:**
+Der Bewertungsrahmen dieses Gesetzes umfasst die SDGs, die Agenda 2030, SDG+ sowie die drei Dimensionen Mensch, Planet und Demokratie.
 
-### § 12 Mensch, Planet und Demokratie
+**Kommentar:**
+Der Referenzrahmen ist oeffentlich, nachvollziehbar und versionierbar.
 
-Mensch, Planet und Demokratie bilden den Zielrahmen positiver Netto-Wirkung. Eine Bewertung muss sichtbar machen, welche Zustände gestärkt, geschwächt oder nicht hinreichend belegt werden.
+**Begruendung:**
+Steuerliche Wirkung darf nicht auf private Moral oder wechselnde Imageziele gestuetzt werden.
 
-### § 13 Wirkungsgrenzen
+### § 19 Mensch, Planet und Demokratie
 
-Nicht beliebig kompensierbar sind insbesondere Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Tiere, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität.
+**Gesetzestext:**
+Die Dimension Mensch umfasst insbesondere Wuerde, Gesundheit, Sicherheit, Teilhabe, Bildung, faire Arbeit, Gleichstellung und soziale Stabilitaet.
+
+Die Dimension Planet umfasst insbesondere Klima, Biodiversitaet, Wasser, Boden, Luft, Ressourcen, Kreislaeufe und Regeneration.
+
+Die Dimension Demokratie umfasst insbesondere Rechtsstaatlichkeit, Medienqualitaet, Diskursfaehigkeit, institutionelles Vertrauen, Transparenz und digitale Selbstbestimmung.
+
+**Kommentar:**
+Die drei Dimensionen sind keine voneinander isolierten Silos.
+
+**Begruendung:**
+Menschenwuerde, oekologische Lebensgrundlagen und demokratische Stabilitaet bedingen einander.
+
+### § 20 Nichtadditivitaet der Dimensionen
+
+**Gesetzestext:**
+Mensch, Planet und Demokratie duerfen nicht als beliebige Additionsliste behandelt werden. Positive Werte in einer Dimension koennen kritische Schaeden in einer anderen Dimension nicht automatisch ausgleichen.
+
+**Kommentar:**
+Die Bewertungslogik ist interdependent und nicht rein summativ.
+
+**Begruendung:**
+Eine robuste Wirkungsordnung muss Zielkonflikte sichtbar halten.
+
+### § 21 Rote Linien und Mindestbedingungen
+
+**Gesetzestext:**
+Bestimmte Mindestbedingungen muessen erfuellt sein, bevor positive Netto-Wirkung angenommen werden kann. Werden rote Linien verletzt, ist eine positive Gesamtbewertung ausgeschlossen oder nur unter strengen Korrektur- und Uebergangsauflagen zulaessig.
+
+**Kommentar:**
+Mindestbedingungen koennen branchenspezifisch, sektorspezifisch oder wirkungsfeldbezogen ausgestaltet werden.
+
+**Begruendung:**
+Ohne rote Linien wuerde die Wirkungsoekonomie ihre Schutzfunktion verlieren.
 
 ## Teil 4 - Mess- und Datenarchitektur
 
-### § 14 WÖk-IDs und Scorecards
+### § 22 WÖk-ID-Register
 
-WÖk-IDs und Scorecards schaffen nachvollziehbare Bewertungsstrukturen. Jede relevante Bewertung muss Indikatoren, Datenquellen, Datenqualität, Unsicherheit und Prüfstatus offenlegen.
+**Gesetzestext:**
+Das WÖk-ID-Register fuehrt Wirkungsindikatoren, Versionen, Datenquellen, Bewertungslogiken, Zuordnungen zu SDGs, SDG+, NACE, ESRS, GRI, EU-Taxonomie und weiteren Standards sowie Zustaendigkeiten fuer Pflege und Pruefung.
 
-### § 15 Datenqualität
+**Kommentar:**
+Das Register muss oeffentlich nachvollziehbar und versioniert sein.
 
-Daten werden nach Primärdaten, geprüften Sekundärdaten, konservativen Ersatzwerten und unsicheren Schätzungen unterschieden. Fehlende oder schwache Daten dürfen nicht zu unbegründeten Vorteilen führen. Datenlückenabschläge sind konservativ, überprüfbar und anfechtbar zu gestalten.
+**Begruendung:**
+Nur ein transparentes Register verhindert willkuerliche Indikatorwahl und nachtraegliche Zielverschiebung.
 
-### § 16 Wirkungsdatenräume und Register
+### § 23 Datenquellen und Datenqualitaet
 
-Wirkungsdatenräume verbinden Berichtsdaten, Produktdaten, Lieferkettendaten, Standards, Register und Prüfverfahren. Sie müssen interoperabel, auditierbar, datenschutzkonform und nachvollziehbar sein.
+**Gesetzestext:**
+Daten werden nach Qualitaetsstufen geordnet:
+
+1. gepruefte Primaerdaten,
+2. gepruefte Sekundaerdaten,
+3. anerkannte Branchenwerte,
+4. konservative Ersatzwerte bei Datenluecken,
+5. unsichere Daten mit Abschlag oder Unsicherheitskennzeichnung.
+
+**Kommentar:**
+Datenluecken duerfen nicht belohnt werden. Ersatzwerte muessen konservativ, begruendet und korrigierbar sein.
+
+**Begruendung:**
+Eine Wirkungsteuer darf nicht davon abhaengen, wer die besten Datenluecken ausnutzt.
+
+### § 24 Scorecards
+
+**Gesetzestext:**
+Scorecards enthalten Einzelscores von -3 bis +3, Branchen- und Kontextbenchmarks, Datenqualitaetsstufen, WÖk-ID-Bezuege, FinalScore-Logik und NWI-Bezug.
+
+**Kommentar:**
+Die -3/+3-Skala ist die operative Einzelbewertung. Sie kann fuer Verwaltung und Kommunikation normiert werden, bleibt aber die methodische Primaerebene.
+
+**Begruendung:**
+Eine klare Scorelogik verbindet fachliche Bewertung mit administrativer Handhabbarkeit.
+
+### § 25 Digitale Produktpaesse und Wirkungsdatenraeume
+
+**Gesetzestext:**
+Digitale Produktpaesse und Wirkungsdatenraeume koennen zur Dokumentation von Produktgeschichte, Lieferketten, Datenqualitaet, Auditierbarkeit, Zugriffskontrolle, Datenschutz und Interoperabilitaet eingesetzt werden.
+
+**Kommentar:**
+Der digitale Produktpass ist ein Produktgedaechtnis, kein automatischer Wahrheitsbeweis.
+
+**Begruendung:**
+Wirkungsdaten muessen entlang von Produkten und Wertschöpfungsketten nachvollziehbar bleiben.
+
+### § 26 Unsicherheit und Fehlbarkeit
+
+**Gesetzestext:**
+Unsicherheit ist zu markieren. Schaetzungen muessen erkennbar sein. Methoden, Datenquellen und Bewertungsregeln muessen ueberpruefbar, korrigierbar und versionierbar sein.
+
+**Kommentar:**
+Das System ist lernend, nicht unfehlbar.
+
+**Begruendung:**
+Fehlbarkeit ist kein Mangel der Wirkungsarchitektur, sondern Voraussetzung ihrer demokratischen Kontrollierbarkeit.
 
 ## Teil 5 - Nichtkompensation und Reverse Merit Order
 
-### § 17 Nichtkompensation
+### § 27 Grundsatz der Nichtkompensation
 
-Schwere negative Wirkungen dürfen nicht durch positive Werte an anderer Stelle verdeckt werden. Das Nichtkompensationsprinzip verhindert Ablasshandel und Schönrechnung.
+**Gesetzestext:**
+Positive Wirkungen duerfen schwere negative Wirkungen nicht beliebig verdecken. Kritische Schaeden bleiben sichtbar und koennen Ausgleich, Sanierung, Ausschluss, Abschlag oder besondere Auflagen ausloesen.
 
-### § 18 Reverse Merit Order
+**Kommentar:**
+Nichtkompensation verhindert Ablasshandel.
 
-Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung. Sie ist streng in der Wirkung, aber proportional in der Verantwortung. Sie bewertet kritische Wirkungsdefizite, nicht den moralischen Wert einzelner Menschen.
+**Begruendung:**
+Ein wirksames System muss vermeiden, dass gute Einzelwerte als Freibrief fuer schaedliche Kernwirkungen genutzt werden.
 
-## Teil 6 - Steuerliche Rückkopplung
+### § 28 Anwendung der Reverse Merit Order
 
-### § 19 Modularchitektur
+**Gesetzestext:**
+Die Reverse Merit Order findet insbesondere Anwendung bei Produkten, Dienstleistungen, Lieferketten, Organisationen, oeffentlichen Mitteln und Kapitalfluessen. Bei Personenbezug gilt sie nur proportional und unter strenger Beachtung von Grundrechten, Datenschutz und Verhaeltnismaessigkeit.
 
-Das WStG bildet den Rahmen für:
+**Kommentar:**
+Wirkungsdefizite werden dort adressiert, wo Verantwortung, Steuerbarkeit und Datenlage bestehen.
 
-- WUStG: Wirkungsumsatzsteuer / Produktwirkungssteuer,
-- WEstG: Wirkungseinkommensteuer,
-- WKStG: Wirkungskörperschaftsteuer,
-- WGewStG: kommunale oder gewerbesteuerliche Wirkungslogik,
-- Wirkungskapitalmodul: Kapitalerträge, Fonds und Portfolio-Wirkung,
-- Wirkungshaushaltsmodul: öffentliche Mittel, Förderungen und Beschaffung,
-- Technische Leitlinien: WÖk-IDs, Scorecards, Benchmarks, Datenqualität und Prüfverfahren.
+**Begruendung:**
+Strenge in der Wirkung darf nicht zu pauschaler persoenlicher Schuldzuweisung werden.
 
-### § 20 Haushaltsneutralität und Evaluation
+### § 29 Schutz vor Greenwashing und Wirkungssimulation
 
-Haushaltsneutralität ist ein Ziel der Gestaltung, keine unbelegte Garantie. Jede Einführung braucht Pilotierung, Verteilungsprüfung, Evaluation, Korrekturmöglichkeiten und demokratische Entscheidung.
+**Gesetzestext:**
+Wirkungssimulation, SDG-Washing, Impact-Washing, KPI-Gaming und manipulative Datenwahl sind durch Pruefpflichten, nachvollziehbare Methoden, offene Bewertungslogik, Auditierung und Sanktionen zu begrenzen.
+
+**Kommentar:**
+Ein gutes Narrativ ersetzt keine gepruefte Wirkung.
+
+**Begruendung:**
+Wirkungsbasierte Rueckkopplung ist nur glaubwuerdig, wenn sie Manipulation erkennt und korrigiert.
+
+## Teil 6 - Steuerliche Rueckkopplung
+
+### § 30 Rahmen der steuerlichen Rueckkopplung
+
+**Gesetzestext:**
+Das WStG bildet die Klammer fuer steuerliche Rueckkopplung. Es legt nicht alle Steuersaetze, Schwellenwerte oder Detailmechaniken selbst fest.
+
+**Kommentar:**
+Konkrete Steuerwirkungen werden in Modulen, Pilotierungen und Ausfuehrungsgesetzen geregelt.
+
+**Begruendung:**
+So bleibt das Rahmengesetz stabil, waehrend einzelne Module lernend weiterentwickelt werden koennen.
+
+### § 31 Module
+
+**Gesetzestext:**
+Die steuerliche Rueckkopplung kann insbesondere durch folgende Module umgesetzt werden:
+
+1. WUStG - Wirkungsumsatzsteuer / Produktwirkungssteuer,
+2. WEstG - Wirkungseinkommensteuer,
+3. WKStG - Wirkungskoerperschaftsteuer,
+4. WGewStG - Wirkungsgewerbesteuer oder kommunale Wirkungslogik,
+5. Wirkungskapitalmodul fuer Kapitalertraege, Fonds und Portfolio-Wirkung,
+6. Wirkungshaushaltsmodul fuer oeffentliche Mittel, Foerderungen und Beschaffung,
+7. technische Leitlinien fuer WÖk-IDs, Scorecards, Benchmarks, Datenqualitaet und Pruefverfahren.
+
+**Kommentar:**
+Die Module koennen unterschiedliche Datenlagen, Rechtsgrundlagen und Einfuehrungspfade haben.
+
+**Begruendung:**
+Produkte, Einkommen, Kapital, Unternehmen und oeffentliche Mittel wirken unterschiedlich und brauchen unterschiedliche Rueckkopplungslogiken.
+
+### § 32 Haushaltsneutralitaet
+
+**Gesetzestext:**
+Die Einfuehrung wirkungsbasierter Rueckkopplung soll grundsaetzlich so ausgestaltet werden, dass oeffentliche Haushalte planbar bleiben und die Verteilung der Steuerlast nach Wirkung verschoben wird, ohne unkontrollierte Einnahmeausfaelle zu erzeugen.
+
+**Kommentar:**
+Haushaltsneutralitaet ist Ziel- und Pruefbedingung, keine unbewiesene Garantie.
+
+**Begruendung:**
+Wirkungssteuerung darf oeffentliche Handlungsfaehigkeit nicht untergraben.
+
+### § 33 Soziale Abfederung und Kaufkraftschutz
+
+**Gesetzestext:**
+Wirkungsbasierte Rueckkopplung hat Basisgueter, einkommensschwache Haushalte, Uebergangsfristen, Rueckverteilungsmechanismen und Kaufkraftschutz zu beruecksichtigen.
+
+**Kommentar:**
+Lenkung darf keine Schocklogik fuer Haushalte erzeugen, die keine realistische Ausweichmoeglichkeit haben.
+
+**Begruendung:**
+Eine Wirkungsteuer verliert Legitimation, wenn sie soziale Stabilitaet schwaecht.
+
+### § 34 KMU-Schutz und Verhaeltnismaessigkeit
+
+**Gesetzestext:**
+Kleine und mittlere Unternehmen sind durch abgestufte Pflichten, vereinfachte Scorecards, Branchenstandardwerte, Beratung, Uebergangsfristen und verhaeltnismaessige Nachweisanforderungen zu schuetzen.
+
+**Kommentar:**
+KMU-Schutz bedeutet nicht Wirkungsblindheit, sondern angemessene Umsetzung.
+
+**Begruendung:**
+Ein Wirkungssystem muss auch fuer kleinere Akteure handhabbar bleiben.
 
 ## Teil 7 - Wirkungsrat
 
-### § 21 Aufgaben
+### § 35 Einrichtung und Stellung
 
-Der Wirkungsrat entwickelt WÖk-IDs, Benchmarks, Datenqualitätsregeln und Evaluationslogiken weiter. Er veröffentlicht Versionen, dokumentiert Änderungen, prüft Missbrauchsrisiken und führt öffentliche Konsultationen durch.
+**Gesetzestext:**
+Der Wirkungsrat ist als unabhaengiges, plural zusammengesetztes Gremium vorzusehen. Er soll wissenschaftliche, zivilgesellschaftliche, wirtschaftliche, verwaltungstechnische und buergerschaftliche Perspektiven einbeziehen.
 
-### § 22 Unabhängigkeit und Kontrolle
+Keine Gruppe darf die Methodenentwicklung oder Indikatorpflege dominieren.
 
-Der Wirkungsrat muss unabhängig, plural, transparent und demokratisch kontrollierbar sein. Lobby-Einflüsse, Interessenkonflikte und Gaming the System sind offenzulegen und institutionell zu begrenzen. Whistleblower-Schutz ist vorzusehen.
+**Kommentar:**
+Der Wirkungsrat ist kein Ersatzparlament und keine technokratische Letztinstanz.
+
+**Begruendung:**
+Methodenautoritaet braucht Unabhaengigkeit, Pluralitaet und demokratische Kontrolle.
+
+### § 36 Aufgaben
+
+**Gesetzestext:**
+Der Wirkungsrat pflegt das WÖk-ID-Register, entwickelt Benchmarks weiter, evaluiert Methoden, veroeffentlicht Wirkungsberichte, fuehrt Konsultationen durch, staerkt Missbrauchsschutz und gibt Empfehlungen zu Pilotierung und Skalierung.
+
+**Kommentar:**
+Der Wirkungsrat arbeitet versioniert, nachvollziehbar und oeffentlich begruendet.
+
+**Begruendung:**
+Wirkungsbewertung darf nicht hinter verschlossenen Tueren entstehen.
+
+### § 37 Unabhaengigkeit und Lobby-Schutz
+
+**Gesetzestext:**
+Zur Sicherung der Unabhaengigkeit sind Offenlegungspflichten, Cooling-off-Regeln, oeffentliche Protokolle, Interessenkonfliktregeln, Whistleblower-Schutz und unabhaengige Finanzierung vorzusehen.
+
+**Kommentar:**
+Einflussnahme muss sichtbar, begrenzt und kontrollierbar sein.
+
+**Begruendung:**
+Wirkungsindikatoren koennen wirtschaftliche Verteilungswirkungen haben und sind deshalb besonders lobbyanfaellig.
+
+### § 38 Versionierung und oeffentliche Konsultation
+
+**Gesetzestext:**
+Methodenaenderungen, WÖk-ID-Aenderungen, Benchmark-Aenderungen und Bewertungsregeln werden versioniert. Wesentliche Aenderungen sind oeffentlich zu konsultieren; wissenschaftliche Stellungnahmen und Einspruchsmoeglichkeiten sind vorzusehen.
+
+**Kommentar:**
+Versionierung macht Fortschreibung nachvollziehbar.
+
+**Begruendung:**
+Eine lebende Ordnung braucht Aenderbarkeit ohne Willkuer.
 
 ## Teil 8 - Rechtsschutz, Grundrechte und Datenschutz
 
-### § 23 Transparenz und Begründungspflicht
+### § 39 Grundrechtsschutz
 
-Betroffene Organisationen müssen nachvollziehen können, welche Daten, Indikatoren, Annahmen und Prüfstände zu einer Bewertung geführt haben.
+**Gesetzestext:**
+Alle Anwendungen dieses Gesetzes haben Verhaeltnismaessigkeit, Freiheit, Eigentum, Berufsfreiheit, Gleichbehandlung, Datenschutz, Demokratieprinzip und Rechtsstaatlichkeit zu beachten.
 
-### § 24 Einspruch, Datenkorrektur und gerichtliche Überprüfbarkeit
+**Kommentar:**
+Wirkungslenkung ist nur legitim, wenn sie grundrechtlich begrenzt und ueberpruefbar bleibt.
 
-Bewertungen müssen korrigierbar und anfechtbar sein. Datenfehler, falsche Zuordnungen und veraltete Standards dürfen nicht dauerhaft steuerlich fortwirken.
+**Begruendung:**
+Eine Wirkungsteuer darf nicht selbst negative Wirkung auf Freiheit und Demokratie erzeugen.
 
-### § 25 Personenbewertungsschutz
+### § 40 Keine Personenbewertung
 
-Das WStG begründet keine Personenbewertung, keine Gesinnungsbewertung und keine Lebensstilpolizei. Automatisierte Bewertungen müssen auditierbar, fair, verhältnismäßig und grundrechtlich kontrollierbar sein.
+**Gesetzestext:**
+Dieses Gesetz bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Dienstleistungen, Organisationen, Taetigkeiten, Kapitalfluesse, oeffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhaenge.
 
-## Teil 9 - Pilotierung und Übergang
+**Kommentar:**
+Personenbezogene Daten duerfen nur begrenzt, verhaeltnismaessig, ueberpruefbar, anfechtbar und grundrechtlich geschuetzt verwendet werden.
 
-### § 26 Pilotsektoren
+**Begruendung:**
+Die Wirkungsoekonomie ist kein Social-Credit-System.
 
-Pilotierungen beginnen in datenreichen Branchen, etwa Produktgruppen mit digitalen Produktpässen, CSRD-/ESRS-Anschluss, klaren Lieferketten oder öffentlichen Beschaffungsfeldern.
+### § 41 Datenschutz und Datenminimierung
 
-### § 27 KMU-Schutz und soziale Abfederung
+**Gesetzestext:**
+Personenbezogene Daten duerfen nur verarbeitet werden, soweit dies zwingend erforderlich, zweckgebunden, transparent, verhaeltnismaessig und rechtlich ueberpruefbar ist. Zugriffsbeschraenkungen, Loeschfristen und Datenschutz-Folgenabschaetzungen sind vorzusehen.
 
-Pflichten werden nach Größe, Datenfähigkeit und Risiko abgestuft. KMU erhalten vereinfachte Scorecards, Branchenstandardwerte, Unterstützungsangebote und Übergangsfristen. Basisgüter, Kaufkraft und einkommensschwache Haushalte sind besonders zu schützen.
+**Kommentar:**
+Datenarmut kann in sensiblen Bereichen ein Schutzprinzip sein.
 
-### § 28 Europarechtskonforme Ausgestaltung
+**Begruendung:**
+Wirkungsdaten duerfen nicht zu einer Infrastruktur persoenlicher Ueberwachung werden.
 
-Einzelmodule müssen binnenmarkt-, beihilfe-, zoll-, umsatzsteuer- und datenschutzrechtlich geprüft werden. Pilotierungen sind reversibel, evaluierbar und rechtsschutzfähig auszugestalten.
+### § 42 Begruendung, Einspruch und Korrektur
+
+**Gesetzestext:**
+Betroffene muessen Bewertungen nachvollziehen koennen. Bewertungen sind zu begruenden. Fehlerhafte Daten muessen korrigierbar sein. Einspruchsverfahren und gerichtliche Ueberpruefbarkeit sind sicherzustellen.
+
+**Kommentar:**
+Eine Bewertung ohne Korrekturmoeglichkeit ist keine rechtsstaatliche Bewertung.
+
+**Begruendung:**
+Fehler in Wirkungsdaten koennen erhebliche wirtschaftliche Folgen haben.
+
+### § 43 Algorithmische Systeme
+
+**Gesetzestext:**
+Algorithmische Systeme duerfen keine unerklaerbaren Blackbox-Entscheidungen ueber wesentliche Rechtsfolgen treffen. Erklaerbarkeit, Auditierbarkeit, Bias-Pruefung, menschliche Ueberpruefung und klare Verantwortlichkeit sind vorzusehen.
+
+**Kommentar:**
+Automatisierung kann Verfahren stuetzen, darf Verantwortung aber nicht aufloesen.
+
+**Begruendung:**
+Wirkungsarchitektur braucht digitale Infrastruktur, aber auch demokratische und rechtliche Kontrolle.
+
+## Teil 9 - Pilotierung, Uebergang und Evaluation
+
+### § 44 Stufenweise Einfuehrung
+
+**Gesetzestext:**
+Die Einfuehrung erfolgt stufenweise ueber Pilotsektoren, freiwillige Testphasen, regulatorische Sandboxes, datenreiche Branchen und Evaluation vor Skalierung.
+
+**Kommentar:**
+Pilotierung ist Bestandteil des Gesetzes, nicht bloss ein politischer Vorlauf.
+
+**Begruendung:**
+Komplexe Wirkungsrueckkopplung muss unter realen Bedingungen lernend geprueft werden.
+
+### § 45 Pilotsektoren
+
+**Gesetzestext:**
+Pilotsektoren koennen insbesondere Lebensmittel und Agrarprodukte, Energie, Textil und Fast Fashion, Gebaeude und Wohnen, Mobilitaet sowie oeffentliche Beschaffung sein.
+
+**Kommentar:**
+Pilotsektoren sollen datenreich, wirkungsrelevant und gesellschaftlich nachvollziehbar sein.
+
+**Begruendung:**
+Erste Anwendungen muessen zeigen, ob Daten, Verwaltung, Rechtsschutz und soziale Abfederung zusammen funktionieren.
+
+### § 46 Evaluation
+
+**Gesetzestext:**
+Pilotierungen und Module sind regelmaessig zu evaluieren. Der Wirkungsrat, der Gesetzgeber, die Oeffentlichkeit und wissenschaftliche Begleitung sind einzubeziehen. Fehlsteuerungen muessen korrigierbar sein; Reversibilitaet ist vorzusehen.
+
+**Kommentar:**
+Evaluation prueft nicht nur Wirkungserfolge, sondern auch Nebenwirkungen, Buerokratie, soziale Folgen und Datenqualitaet.
+
+**Begruendung:**
+Eine lernende Ordnung muss sich selbst pruefen koennen.
+
+### § 47 Europaeische und internationale Anschlussfaehigkeit
+
+**Gesetzestext:**
+Bei jeder Einfuehrung sind EU-Recht, Binnenmarkt, Mehrwertsteuerrecht, Zoll, Einfuhrumsatzsteuer, CBAM-Anschluss, CSRD, ESRS, digitale Produktpaesse, Handelsfragen und internationale Kompatibilitaet zu pruefen.
+
+**Kommentar:**
+Diese Fassung behauptet keine abschliessende Vereinbarkeit mit allen europaeischen oder internationalen Rechtsfragen.
+
+**Begruendung:**
+Wirkungsbasierte Rueckkopplung soll anschlussfaehig sein, ohne rechtliche Pruefungen zu ueberspringen.
 
 ## Teil 10 - Schlussbestimmungen
 
-### § 29 Berichtspflichten und Versionierung
+### § 48 Berichtspflichten
 
-Jede Fassung des WStG und seiner Module wird versioniert. Änderungen an Begriffen, Indikatoren, Scores oder Datenqualitätsregeln sind öffentlich zu dokumentieren.
+**Gesetzestext:**
+Es sind regelmaessige Berichte zu Wirkung, Datenqualitaet, sozialen Folgen, Buerokratieeffekten, Rechtsstreitigkeiten, Einspruchsverfahren, Haushaltswirkung und Methodenaenderungen vorzusehen.
 
-### § 30 Inkrafttreten als Stufenmodell
+**Kommentar:**
+Berichte muessen oeffentlich, verstaendlich und pruefbar sein.
 
-Das WStG 2.0 ist ein Entwurf für eine stufenweise Einführung. Ein Inkrafttreten setzt demokratische Gesetzgebung, juristische Prüfung, Pilotierung und Evaluation voraus.
+**Begruendung:**
+Die Oeffentlichkeit muss erkennen koennen, ob das System seine Ziele erreicht oder Fehlsteuerungen erzeugt.
+
+### § 49 Inkrafttreten als Stufenmodell
+
+**Gesetzestext:**
+Das Inkrafttreten erfolgt nicht als sofortige Vollumstellung. Zunaechst sind Pilotierungen, Modulgesetze, technische Leitlinien, Dateninfrastruktur und Rechtsschutzverfahren aufzubauen.
+
+**Kommentar:**
+Die Reihenfolge lautet: pruefen, pilotieren, evaluieren, ausweiten.
+
+**Begruendung:**
+Ein zu schneller Systemwechsel wuerde Vertrauen und Verwaltungsfaehigkeit gefaehrden.
+
+### § 50 Uebergangsbestimmungen
+
+**Gesetzestext:**
+Bestehende Steuer- und Verwaltungssysteme bleiben zunaechst anwendbar. Die Wirkungslogik wird ergaenzend getestet, ausgewertet und schrittweise in geeignete Module ueberfuehrt. Schockeffekte fuer Haushalte, Unternehmen und Verwaltung sind zu vermeiden.
+
+**Kommentar:**
+Uebergang bedeutet nicht Stillstand, sondern kontrollierte Transformation.
+
+**Begruendung:**
+Wirkungssteuerung soll Handlungsfaehigkeit erhoehen, nicht Systemunsicherheit erzeugen.
+
+## Historischer Bezug zur Fassung Oktober 2025
+
+Die Fassung Oktober 2025 war ein wichtiges Working Paper. Sie enthielt bereits zentrale Impulse wie Wirkung statt Kapital, Haushaltsneutralitaet, WIF, SDG+, Wirkungsrat und Steuerklassen.
+
+Diese Version 2.0 praezisiert jedoch:
+
+- Wirkung wird neutral definiert.
+- Positive Netto-Wirkung wird als Zielgroesse gesetzt.
+- Das WStG wird als Rahmengesetz gefasst.
+- WUStG, WEstG, WKStG, WGewStG, Wirkungskapital und Wirkungshaushalt werden als Module getrennt.
+- NWI ersetzt T-SROI als operative Kennzahl fuer Netto-Wirkung.
+- T-SROI wird als Transformationskennzahl gefuehrt.
+- -3/+3, FinalScore und NWI bilden die Primaerlogik.
+- -100/+100 ist hoechstens optionale Darstellungs- oder Verwaltungsskala.
+- Grundrechte, Datenschutz, Rechtsschutz, Einspruch, Korrektur und Personenbewertungsschutz werden deutlich gestaerkt.
+
+Die historische PDF-Fassung bleibt unveraendert zitierfaehig. Dieser Entwurf ist eine neue Rahmenfassung, keine stille Aenderung des Originals.
+
+## Kurzschema der Steuerarchitektur
+
+| Ebene | Funktion | Primaere Kennzahl / Logik |
+|---|---|---|
+| WÖk-ID | Indikatoridentifikation | eindeutige Kennung |
+| Messwert | Rohdatenebene | Primaerdaten / Sekundaerdaten / Ersatzwerte |
+| Einzelscore | operative Einzelbewertung | -3 bis +3 |
+| FinalScore | steuerungsrelevante Verdichtung | Reverse Merit Order |
+| NWI | operative Netto-Wirkung | gepruefte Netto-Wirkung |
+| T-SROI | Transformationswirkung | systemische Hebelwirkung |
+| WIF | steuerlicher Anpassungsfaktor | nur in bestimmten Steuerarten |
+| -100/+100 | optionale Verwaltungsskala | keine Primaerlogik |
+
+Die Primaerbewertung erfolgt ueber WÖk-IDs, Einzelscores, FinalScore und NWI. Eine -100/+100-Skala kann als Verwaltungsskala oder Leseskala verwendet werden, ersetzt aber nicht die operative Score-Architektur.
+
+## Zentrale Schutzformeln
+
+1. Wirkung ist neutral; Zielgroesse ist positive Netto-Wirkung.
+2. SDG+ ist eine transparente Erweiterung der Wirkungsoekonomie, keine offizielle UN-Kategorie.
+3. Keine positive Einzelwirkung darf schwere negative Wirkung verdecken.
+4. Die Reverse Merit Order ist streng in der Wirkung, aber proportional in der Verantwortung.
+5. Das WStG bewertet keine Personen, keine Gesinnungen und keine Lebensstile.
+6. Wirkungsdaten muessen ueberpruefbar, korrigierbar und anfechtbar sein.
+7. Die Wirkungsoekonomie ist eine lernende Ordnung, kein unfehlbares System.
+8. Pilotierung, Evaluation und Reversibilitaet sind Bestandteile des Gesetzes.
