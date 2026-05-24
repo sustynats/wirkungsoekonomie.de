@@ -47,13 +47,13 @@ const productSdgs = [
 ];
 
 const sdgPlus = [
-  "Demokratie",
-  "Medienqualität",
-  "Rechtsstaatlichkeit",
-  "Diskursfähigkeit",
-  "institutionelles Vertrauen",
-  "gesellschaftlicher Zusammenhalt",
-  "digitale Selbstbestimmung",
+  "SDG+ Demokratie",
+  "SDG+ Medienqualität",
+  "SDG+ Rechtsstaatlichkeit",
+  "SDG+ Diskursfähigkeit",
+  "SDG+ institutionelles Vertrauen",
+  "SDG+ gesellschaftlicher Zusammenhalt",
+  "SDG+ digitale Selbstbestimmung",
 ];
 
 const contextualTools = [
@@ -115,6 +115,40 @@ const contextualTools = [
     short: "Unabhängige Instanz für Evaluation, Indikatoren, Benchmarks und Missbrauchsschutz.",
     why: "Produktsteuerlogik braucht öffentliche Kontrolle, Korrekturpfade und Schutz vor Lobby- oder Datenmanipulation.",
   },
+  {
+    title: "Produktwirkungsrechner",
+    type: "Demo",
+    status: "Prototyp vorhanden",
+    href: "erleben/produktwirkungsrechner/",
+    demoHref: "erleben/produktwirkungsrechner/",
+    bookHref: "referenz/kapitel-050-produktscorecards/",
+    short: "Modellhafte Simulation von Scores, FinalScore, Steuerklasse und Bruttopreis.",
+    why: "Der Rechner macht die Logik der Wirkungsumsatzsteuer erfahrbar, ohne eine amtliche Einstufung zu behaupten.",
+  },
+];
+
+const externalSources = [
+  ["UN SDGs", "https://sdgs.un.org/goals"],
+  ["UN SDG Indicators", "https://unstats.un.org/sdgs/indicators/indicators-list/"],
+  ["European Commission CSRD", "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"],
+  ["EFRAG ESRS", "https://www.efrag.org/en/sustainability-reporting"],
+  ["GRI Standards", "https://www.globalreporting.org/standards/"],
+  ["Eurostat NACE", "https://ec.europa.eu/eurostat/web/nace"],
+  ["Destatis SDG-Indikatoren", "https://sdg-indikatoren.de/"],
+];
+
+const conceptDownloads = [
+  {
+    label: "Konzeptpapier Word",
+    href: "assets/downloads/woek_produkte_konsum_wirkungsumsatzsteuer_konzeptpapier_v0_1.docx",
+    required: true,
+  },
+  {
+    label: "Dossier Word",
+    href: "assets/downloads/woek_produkte_konsum_wirkungsumsatzsteuer_dossier_v0_1.docx",
+    required: true,
+  },
+  { label: "Working Paper PDF", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf" },
 ];
 
 const lawRefs = {
@@ -172,6 +206,10 @@ function href(base, target) {
   if (!target) return "";
   if (/^(https?:|mailto:|#)/.test(target)) return target;
   return `${base}${target.replace(/^\/+/, "")}`;
+}
+
+function fileExists(rel) {
+  return fs.existsSync(path.join(ROOT, rel));
 }
 
 function escapeHtml(value) {
@@ -418,6 +456,31 @@ function sectionTitle(id, text) {
   return `<h2 id="${id}">${escapeHtml(text)} ${citeAnchor(id)}</h2>`;
 }
 
+function statusMeta(items = []) {
+  return `<aside class="card status-meta" aria-label="Dokumentstatus">
+      <p class="card-kicker">Dokumentstatus</p>
+      <dl>${items.map(([term, desc]) => `<div><dt>${escapeHtml(term)}</dt><dd>${escapeHtml(desc)}</dd></div>`).join("")}</dl>
+    </aside>`;
+}
+
+function dataTable(headers, rows) {
+  return `<div class="table-wrap"><table class="data-table">
+    <thead><tr>${headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}</tr></thead>
+    <tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${inlineMd(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+function externalSourcesBlock(base) {
+  return `<section class="section" aria-labelledby="external-sources">
+      <div class="card">
+        <p class="hero-kicker">Externe Quellen</p>
+        ${sectionTitle("external-sources", "Offizielle und methodische Referenzen")}
+        <p class="card-text">Diese Links führen zu externen Quellen. Die wirkungsökonomische Einordnung steht auf dieser Website online lesbar.</p>
+        <div class="model-strip">${externalSources.map(([label, url]) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} <span class="sr-only">(externe Quelle)</span></a>`).join("")}</div>
+      </div>
+    </section>`;
+}
+
 function toolCards(base, tools = contextualTools) {
   return `<section class="section" aria-labelledby="context-tools">
       <div class="section-header">
@@ -469,6 +532,8 @@ function bookBlock(base, anchors = bookAnchors) {
 }
 
 function downloadBlock(base, items = []) {
+  const available = items.filter((item) => !item.required || fileExists(item.href));
+  const missing = items.filter((item) => item.required && !fileExists(item.href));
   return `<section class="section" aria-labelledby="downloads">
       <div class="card">
         <p class="hero-kicker">Export & Archiv</p>
@@ -476,8 +541,9 @@ function downloadBlock(base, items = []) {
         <p class="card-text">Der Online-Volltext ist der Hauptzugang. Downloads bleiben ergänzend als Archiv-, Export- oder Originalfassung erhalten.</p>
         <div class="portal-card-actions no-print">
           <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
-          ${items.length ? items.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("") : `<span class="prototype-badge">Dossier in Vorbereitung</span>`}
+          ${available.length ? available.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("") : `<span class="prototype-badge">Dossier in Vorbereitung</span>`}
         </div>
+        ${missing.length ? `<p class="card-text">Noch nicht im Repository gefunden: ${missing.map((item) => escapeHtml(item.label)).join(", ")}. Der Downloadlink wird erst gesetzt, sobald die Datei vorhanden ist.</p>` : ""}
       </div>
     </section>`;
 }
@@ -514,6 +580,16 @@ function introHero({ base, kicker, h1, subtitle, text, actions = "" }) {
     </section>`;
 }
 
+function productStatus(status = "Konzept / Online-Volltext") {
+  return statusMeta([
+    ["Autorin", "Natalie Weber"],
+    ["Referenz", "Wirkungsökonomie"],
+    ["Stand", "24.05.2026"],
+    ["Version", "v0.1 / Webfassung"],
+    ["Status", status],
+  ]);
+}
+
 function sourceNotice(label) {
   return `<div class="scanner-notice" role="note">
     <strong>Online-Volltext.</strong> Diese Seite bildet die vorhandene Quelle ${escapeHtml(label)} online lesbar ab. Fachliche Inhalte wurden nicht als Gesetz behauptet; Pilot-, Entwurfs- und Modellstatus bleiben sichtbar.
@@ -538,6 +614,7 @@ function fulltextPage(config) {
       actions: config.primaryAction ? `<a class="btn btn-primary" href="${href(base, config.primaryAction.href)}">${escapeHtml(config.primaryAction.label)}</a>` : "",
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
+    <section class="section narrow">${productStatus(config.status || "Online-Volltext / Arbeitsfassung")}</section>
     <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
       <article class="article-body fulltext-reader">
@@ -550,6 +627,7 @@ function fulltextPage(config) {
     ${relatedBlocks(base)}
     ${sdgBlock(base, config.sdgText)}
     ${bookBlock(base)}
+    ${externalSourcesBlock(base)}
     ${downloadBlock(base, config.downloads || [])}`,
   });
 }
@@ -585,6 +663,7 @@ function productPortal() {
       actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/")}">Modellbereich öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${productStatus("Portal / erster tiefer Modellbereich")}</section>
     <section class="section" aria-labelledby="price-lie">
       <div class="section-header">
         <p class="hero-kicker">Ausgangspunkt</p>
@@ -616,8 +695,10 @@ function productPortal() {
       ${cardGrid(base, [
         { title: "Produktbesteuerung durch Wirkung", text: "Vollständige Online-Fassung des Produktpapiers mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
         { title: "Regionaler Apfel vs. Chile-Apfel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
+        { title: "T-Shirt / Textilbeispiel", text: "Modellseite für Baumwolle, Färbung, Arbeit, Transport, Nutzungsdauer und Kreislauffähigkeit.", href: "wirkungsfelder/produkte-konsum/t-shirt/" },
         { title: "Wirkungsökonomie in der Lieferkette", text: "Warum Vorleistungen, Lieferanten, DPPs und rote Linien in der Kette entscheidend sind.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },
         { title: "Von der CSRD zur Produktscorecard", text: "Konzern-/BASF-Polyamid-Beispiel für den Weg von Berichtsdaten zu Produktgruppen.", href: "wirkungsfelder/produkte-konsum/basf-polyamid/" },
+        { title: "Dossier Produkte & Konsum", text: "Rechenmodell V0.1, Tarifmatrix, Beispieltabellen, Datenquellen und Tool-Spezifikation online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/" },
         { title: "Verbraucherinformation", text: "Wirkungspunkte, Steuerklassen, Produktlabel und Regaltransparenz ohne Personenbewertung.", href: "wirkungsfelder/produkte-konsum/verbraucherinformation/" },
         { title: "Unternehmen", text: "Was Produktwirkung für Produktentwicklung, Einkauf, Controlling, Reporting und Lieferketten bedeutet.", href: "wirkungsfelder/produkte-konsum/unternehmen/" },
         { title: "Politische Rahmenbedingungen", text: "WStG, WUStG, Wirkungsrat, Leitlinien, Übergänge, Datenschutz und Kaufkraftschutz.", href: "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/" },
@@ -631,6 +712,7 @@ function productPortal() {
         <p>Vorhandene Demos werden kontextbezogen verlinkt. Sie sind modellhafte Demonstrationen, keine amtliche Einstufung.</p>
       </div>
       ${cardGrid(base, [
+        { title: "Produktwirkungsrechner", text: "Bio-Apfel, Chile-Apfel, T-Shirt oder Polyamid auswählen, Scores prüfen und Steuerklasse simulieren.", href: "erleben/produktwirkungsrechner/", label: "Rechner öffnen" },
         { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Demo öffnen" },
         { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Demo öffnen" },
         { title: "Wirkungsscanner", text: "Scanner für erste Wirkungsfragen im Alltag und in Organisationen.", href: "anwendungen/scanner.html", label: "Scanner öffnen" },
@@ -652,8 +734,10 @@ function productPortal() {
     </section>
     ${sdgBlock(base, "Produktbesteuerung berührt Ernährung, Gesundheit, Wasser, Arbeit, Industrie, Ungleichheit, Konsum, Klima, Biodiversität, Institutionen und internationale Kooperation. SDG+ ergänzt dort, wo Produktdaten, Werbung, Plattformen, Transparenz und Vertrauen demokratische Wirkung entfalten.")}
     ${bookBlock(base)}
+    ${externalSourcesBlock(base)}
     ${downloadBlock(base, [
       { label: "Downloads öffnen", href: "downloads.html" },
+      ...conceptDownloads,
       { label: "WStG online lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
       { label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" },
     ])}`,
@@ -892,8 +976,306 @@ function wustgConceptPage() {
   });
 }
 
+function tShirtPage() {
+  page({
+    rel: "wirkungsfelder/produkte-konsum/t-shirt/index.html",
+    title: "T-Shirt / Textilbeispiel | Produkte & Konsum",
+    description: "Modellseite zur Wirkungsbewertung eines T-Shirts: Baumwolle, Wasser, Färbung, Arbeit, Transport, Nutzung, Kreislauf und Produktscorecard.",
+    searchSection: "Wirkungsfelder",
+    searchType: "Beispiel",
+    body: (base, route) => `${introHero({
+      base,
+      kicker: "Beispiel",
+      h1: "T-Shirt / Textilbeispiel",
+      subtitle: "Wie Textilien als Wirkungsträger lesbar werden.",
+      text: "Ein T-Shirt wirkt nicht erst an der Kasse. Baumwolle, Wasser, Chemikalien, Arbeit, Färbung, Transport, Nutzungsdauer und Kreislauf bestimmen, welche Zustände ein Produkt verändert.",
+      actions: `<a class="btn btn-primary" href="${href(base, "erleben/produktwirkungsrechner/")}">Im Rechner ausprobieren</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${productStatus("Beispiel / Modellfassung")}</section>
+    <section class="section" aria-labelledby="textilmodell">
+      <div class="section-header">
+        <p class="hero-kicker">Modellbeispiel</p>
+        ${sectionTitle("textilmodell", "Vom Produktpreis zur Produktwirkung")}
+        <p>Das Textilbeispiel ist bewusst als Modellfassung gekennzeichnet. Es zeigt, welche Datenfelder eine Produktscorecard braucht; es behauptet keine amtliche Einstufung eines konkreten Herstellers.</p>
+      </div>
+      ${dataTable(["Kernfeld", "Typische Frage", "Mögliche Datenquelle"], [
+        ["Rohstoff", "Wie hoch sind Wasserstress, Pestizid- und Flächenwirkung?", "Lieferantendaten, EPDs, Zertifizierung, Benchmarks"],
+        ["Arbeit", "Sind Löhne, Arbeitsschutz, Arbeitszeiten und Vereinigungsfreiheit prüfbar?", "Auditdaten, Beschwerdemechanismen, GRI/ESRS"],
+        ["Chemie & Gesundheit", "Welche Färbe-, Veredelungs- und Reststoffwirkungen entstehen?", "Materialdaten, REACH, Prüfberichte"],
+        ["Klima & Energie", "Welche Emissionen entstehen entlang der Kette?", "LCA, Energiedaten, Transportdaten"],
+        ["Nutzung & Kreislauf", "Wie langlebig, reparierbar, recyclingfähig und schadstoffarm ist das Produkt?", "Produktpass, Materialpass, Rücknahmedaten"],
+      ])}
+    </section>
+    <section class="section" aria-labelledby="textil-score">
+      <div class="section-header">
+        <p class="hero-kicker">Scorecard</p>
+        ${sectionTitle("textil-score", "Scorecard-Logik für Textilien")}
+        <p>Die Produktscorecard bewertet Einzelfelder von -3 bis +3. Der FinalScore wird nicht als Durchschnitt schöngerechnet, sondern durch kritische Mindestfelder und die Reverse Merit Order begrenzt.</p>
+      </div>
+      ${dataTable(["Feld", "Beispielscore", "Begründung in Kurzform"], [
+        ["Wasser", "-1", "Hoher regionaler Wasserstress kann die Bewertung begrenzen."],
+        ["Arbeit", "0", "Daten vorhanden, aber keine gesicherte positive Wirkung."],
+        ["Chemikalien", "-1", "Färbung und Veredelung benötigen zusätzliche Prüfung."],
+        ["Klima", "0", "Transport und Energie bleiben relevant, aber nicht allein entscheidend."],
+        ["Kreislauf", "+1", "Langlebigkeit oder Rücknahme kann positive Teilwirkung erzeugen."],
+      ])}
+    </section>
+    ${toolCards(base, contextualTools.filter((tool) => ["Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Digitale Produktpässe und Wirkungsdatenräume", "Produktwirkungsrechner"].includes(tool.title)))}
+    ${sdgBlock(base, "Textilien berühren Arbeit, Wasser, Gesundheit, Chemikalien, Klima, Konsum, Industrie, Ungleichheit, Datenqualität und Verbraucherinformation.")}
+    ${bookBlock(base)}
+    ${externalSourcesBlock(base)}
+    ${downloadBlock(base, [{ label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossier/" }, { label: "Produktwirkungsrechner öffnen", href: "erleben/produktwirkungsrechner/" }, ...conceptDownloads])}`,
+  });
+}
+
+function dossierPage() {
+  page({
+    rel: "wirkungsfelder/produkte-konsum/dossier/index.html",
+    title: "Dossier Produkte & Konsum | Wirkungsumsatzsteuer",
+    description: "Online-Dossier zur Wirkungsumsatzsteuer mit Rechenmodell V0.1, Tarifmatrix, Apfelrechnung, T-Shirt, Lieferkettenlogik, BASF Polyamid und Datenquellen.",
+    searchSection: "Wirkungsfelder",
+    searchType: "Dossier",
+    body: (base, route) => `${introHero({
+      base,
+      kicker: "Dossier",
+      h1: "Dossier Produkte & Konsum",
+      subtitle: "Rechenmodell V0.1, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.",
+      text: "Dieses Dossier macht die Tabellen und Modellannahmen online lesbar. Es ist eine Arbeitsfassung, keine amtliche Steuerberechnung und keine Steuerberatung.",
+      actions: `<a class="btn btn-primary" href="${href(base, "erleben/produktwirkungsrechner/")}">Produktwirkungsrechner öffnen</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${productStatus("Dossier / Arbeitsfassung")}</section>
+    <section class="section narrow">
+      <nav class="toc-card" aria-label="Inhaltsverzeichnis">
+        <h2>Inhaltsverzeichnis</h2>
+        <ol>
+          <li><a href="#rechenmodell">Rechenmodell V0.1</a></li>
+          <li><a href="#tarifmatrix">Tarifmatrix</a></li>
+          <li><a href="#apfelrechnung">Apfelrechnung</a></li>
+          <li><a href="#t-shirt-rechnung">T-Shirt-Rechnung</a></li>
+          <li><a href="#lieferketten-vorsteuer">Lieferketten-/Vorsteuerbeispiel</a></li>
+          <li><a href="#basf-polyamid-scorecard">BASF Polyamid Scorecard</a></li>
+          <li><a href="#ei-bonus-malus">Ei-Bonus-/Malusbeispiel</a></li>
+          <li><a href="#datenquellen">Datenquellen</a></li>
+          <li><a href="#tool-spezifikation">Tool-Spezifikation</a></li>
+        </ol>
+      </nav>
+    </section>
+    <section class="section article-section">
+      <article class="article-body fulltext-reader">
+        ${sectionTitle("rechenmodell", "Rechenmodell V0.1")}
+        <p>Das Modell setzt einen Nettopreis, mehrere Kernfeld-Scores und einen FinalScore in Beziehung. Der FinalScore entspricht in dieser Demo dem niedrigsten Kernfeldscore, damit schwere negative Wirkung nicht durch positive Einzelwerte verdeckt wird.</p>
+        ${dataTable(["Schritt", "Berechnung", "Hinweis"], [
+          ["1", "Nettopreis erfassen", "Preis ohne modellhafte Wirkungsumsatzsteuer."],
+          ["2", "Kernfelder von -3 bis +3 bewerten", "Mensch, Planet, Demokratie und Datenqualität als Mindestlogik."],
+          ["3", "FinalScore = Minimum der Kernfelder", "Reverse-Merit-Order-Demo, kein amtliches Verfahren."],
+          ["4", "Steuersatz aus Tarifmatrix ableiten", "Pilotmatrix V0.1."],
+          ["5", "Bruttopreis berechnen", "Nettopreis + modellhafte Steuer."],
+        ])}
+        ${sectionTitle("tarifmatrix", "Tarifmatrix")}
+        ${dataTable(["FinalScore", "Modell-Steuersatz"], [
+          ["+3", "0 %"],
+          ["+2", "5 %"],
+          ["+1", "10 %"],
+          ["0", "15 %"],
+          ["-1", "20 %"],
+          ["-2", "25 %"],
+          ["-3", "25-30 %"],
+        ])}
+        ${sectionTitle("apfelrechnung", "Apfelrechnung")}
+        ${dataTable(["Beispiel", "Nettopreis", "Kernfelder", "FinalScore", "Modell-Steuersatz", "Bruttopreis"], [
+          ["Regionaler Bio-Apfel", "1,00 EUR", "+2 / +1 / +2 / +1", "+1", "10 %", "1,10 EUR"],
+          ["Importierter Chile-Apfel", "1,00 EUR", "0 / -1 / 0 / +1", "-1", "20 %", "1,20 EUR"],
+        ])}
+        ${sectionTitle("t-shirt-rechnung", "T-Shirt-Rechnung")}
+        ${dataTable(["Beispiel", "Nettopreis", "Kritisches Feld", "FinalScore", "Modell-Steuersatz", "Bruttopreis"], [
+          ["Robustes Fair-Textil", "30,00 EUR", "Kreislauf +1, Arbeit +1", "+1", "10 %", "33,00 EUR"],
+          ["Fast-Fashion-Modell", "12,00 EUR", "Arbeit/Wasser -2", "-2", "25 %", "15,00 EUR"],
+        ])}
+        ${sectionTitle("lieferketten-vorsteuer", "Lieferketten-/Vorsteuerbeispiel")}
+        <p>Vorsteuer- und Bonuslogiken bleiben in dieser Fassung Pilotlogik. Positive Vorleistungen können entlastend wirken; schwere negative Wirkungen bleiben in der Kette sichtbar und können Nichtanrechnung, Prüfpflichten oder Abschläge auslösen.</p>
+        ${dataTable(["Vorleistung", "Score", "Mögliche Wirkung im Modell"], [
+          ["Geprüfte Recyclingfaser", "+2", "Bonusfähig oder stärker anrechenbar."],
+          ["Unklare Chemikalienvorleistung", "-1", "Prüfpflicht und Abschlag."],
+          ["Schwere Menschenrechtsverletzung", "-3", "Rote Linie; keine Schönrechnung."],
+        ])}
+        ${sectionTitle("basf-polyamid-scorecard", "BASF Polyamid Scorecard")}
+        <p>Das Polyamid-Beispiel zeigt den methodischen Weg von Konzern- und ESRS-Daten zu Produktgruppen. Es behauptet keine abschließende Echtbewertung eines Unternehmens.</p>
+        ${dataTable(["Schritt", "Datenbasis", "Wirkungsökonomischer Zweck"], [
+          ["NACE-Zuordnung", "Branche / Aktivität", "Vergleichbarkeit herstellen."],
+          ["CSRD/ESRS-Daten", "Konzern- und Standortdaten", "Berichtsdaten produktnäher machen."],
+          ["EPDs / Benchmarks", "Material- und Emissionsdaten", "Produktgruppen bewertbar machen."],
+          ["Scorecard", "WÖk-IDs und Schwellen", "FinalScore ableiten."],
+        ])}
+        ${sectionTitle("ei-bonus-malus", "Ei-Bonus-/Malusbeispiel")}
+        ${dataTable(["Produkt", "Positive Wirkung", "Negative Wirkung", "Modellhinweis"], [
+          ["Ei aus transparenter Freilandhaltung", "Tierwohl, regionale Daten, kurze Wege", "Flächen- und Futterwirkung bleiben relevant", "Mögliche Entlastung nur bei geprüften Daten."],
+          ["Billig-Ei mit unklarer Lieferkette", "Günstiger Marktpreis", "Tierwohl, Arbeit, Datenlücken", "Datenlücken werden nicht belohnt."],
+        ])}
+        ${sectionTitle("datenquellen", "Datenquellen")}
+        <p>Für eine belastbare Anwendung kommen offizielle und prüfbare Quellen in Betracht: SDGs, UN-Indikatoren, CSRD, ESRS, GRI, NACE, EPDs, digitale Produktpässe, Lieferantendaten und unabhängige Prüfung.</p>
+        ${sectionTitle("tool-spezifikation", "Tool-Spezifikation")}
+        <p>Der Produktwirkungsrechner bildet die Logik minimal ab: Produktbeispiel wählen, Nettopreis setzen, Kernfeld-Scores prüfen, FinalScore als Minimum bilden, Modell-Steuersatz ableiten, Bruttopreis und Erklärung anzeigen.</p>
+      </article>
+    </section>
+    ${toolCards(base)}
+    ${sdgBlock(base, "Das Dossier verknüpft Produktpreise, Produktdaten, Lieferketten, Verbraucherinformation und Governance mit den SDGs und SDG+ als Referenzrahmen.")}
+    ${bookBlock(base)}
+    ${externalSourcesBlock(base)}
+    ${downloadBlock(base, conceptDownloads)}`,
+  });
+}
+
+function workshopAliasPages() {
+  page({
+    rel: "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/index.html",
+    title: "Whitepaper Produktbesteuerung durch Wirkung | Werkstatt",
+    description: "Werkstatt-Einordnung des Whitepapers Produktbesteuerung durch Wirkung mit kanonischer Online-Fassung im Portal Produkte & Konsum.",
+    searchSection: "Werkstatt",
+    searchType: "Whitepaper",
+    body: (base, route) => `${introHero({
+      base,
+      kicker: "Werkstatt · Whitepaper",
+      h1: "Produktbesteuerung durch Wirkung",
+      subtitle: "Kanonische Online-Fassung im Portal Produkte & Konsum.",
+      text: "Die Werkstatt führt dieses Whitepaper als Dokumenten- und Quellenebene. Der Hauptzugang ist die online lesbare Fassung im Produktportal.",
+      actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/")}">Online lesen</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${productStatus("Werkstatt-Verweis / Whitepaper")}</section>
+    ${relatedBlocks(base)}
+    ${downloadBlock(base, [{ label: "Online-Volltext öffnen", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" }, ...conceptDownloads])}`,
+  });
+  page({
+    rel: "werkstatt/dossiers/produkte-konsum/index.html",
+    title: "Dossier Produkte & Konsum | Werkstatt",
+    description: "Werkstatt-Einordnung des Dossiers Produkte & Konsum mit kanonischer Online-Fassung im Produktportal.",
+    searchSection: "Werkstatt",
+    searchType: "Dossier",
+    body: (base, route) => `${introHero({
+      base,
+      kicker: "Werkstatt · Dossier",
+      h1: "Dossier Produkte & Konsum",
+      subtitle: "Rechenmodell, Tarifmatrix, Beispiele und Quellen.",
+      text: "Die Werkstatt führt das Dossier als Arbeits- und Exportebene. Der Hauptzugang ist die online lesbare Dossierseite im Produktportal.",
+      actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/dossier/")}">Dossier online lesen</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${productStatus("Werkstatt-Verweis / Dossier")}</section>
+    ${downloadBlock(base, [{ label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossier/" }, ...conceptDownloads])}`,
+  });
+}
+
+function calculatorPage() {
+  page({
+    rel: "erleben/produktwirkungsrechner/index.html",
+    title: "Produktwirkungsrechner | Wirkungsumsatzsteuer erleben",
+    description: "Modellhafte Demo: Produktbeispiel wählen, Nettopreis und Scores setzen, FinalScore, Wirkungssteuersatz und Bruttopreis berechnen.",
+    searchSection: "Erleben",
+    searchType: "Demo",
+    body: (base, route) => `<section class="hero portal-hero">
+      <div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}erleben.html">Erleben</a></nav>
+        <p class="hero-kicker">Demo · Modell V0.1</p>
+        <h1>Produktwirkungsrechner</h1>
+        <p class="hero-subtitle">Scores, FinalScore, Steuerklasse und Bruttopreis modellhaft ausprobieren.</p>
+        <p>Die Demo zeigt, wie die Wirkungsumsatzsteuer als Rückkopplung gedacht werden kann. Sie ist keine amtliche Einstufung und keine Steuerberatung.</p>
+        ${printActions(`<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Produktportal öffnen</a>`)}
+      </div>
+    </section>
+    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+    <section class="section narrow">${productStatus("Demo / Prototyp")}</section>
+    <section class="section product-calculator-section" aria-labelledby="calculator-title">
+      <div class="product-calculator" data-product-impact-calculator>
+        <div class="section-header">
+          <p class="hero-kicker">Rechner</p>
+          ${sectionTitle("calculator-title", "Produktwirkung simulieren")}
+          <p>FinalScore = niedrigster Score der Kernfelder. Für FinalScore -3 wird in der Demo mit 30 % gerechnet; der Modellkorridor lautet 25-30 %.</p>
+        </div>
+        <div class="calculator-grid">
+          <form class="card calculator-form">
+            <label>Produktbeispiel
+              <select name="product">
+                <option value="bioApfel">Bio-Apfel regional</option>
+                <option value="chileApfel">Chile-Apfel importiert</option>
+                <option value="tshirt">T-Shirt</option>
+                <option value="polyamid">Polyamid Produktgruppe</option>
+              </select>
+            </label>
+            <label>Nettopreis in EUR
+              <input name="netPrice" type="number" min="0" step="0.01" value="1.00">
+            </label>
+            <div class="score-inputs" aria-label="Kernfeld-Scores">
+              ${["mensch", "planet", "demokratie", "daten"].map((field) => `<label>${field[0].toUpperCase()}${field.slice(1)}
+                <input name="${field}" type="number" min="-3" max="3" step="1" value="0">
+              </label>`).join("")}
+            </div>
+          </form>
+          <aside class="card calculator-result" aria-live="polite">
+            <p class="card-kicker">Ergebnis</p>
+            <h2 id="calc-product-name">Bio-Apfel regional</h2>
+            <dl>
+              <div><dt>FinalScore</dt><dd data-result="finalScore">+1</dd></div>
+              <div><dt>Modell-Steuersatz</dt><dd data-result="taxRate">10 %</dd></div>
+              <div><dt>Nettopreis</dt><dd data-result="netPrice">1,00 EUR</dd></div>
+              <div><dt>Bruttopreis</dt><dd data-result="grossPrice">1,10 EUR</dd></div>
+            </dl>
+            <p data-result="explanation">Der FinalScore wird durch das schwächste Kernfeld begrenzt.</p>
+            <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Keine amtliche Einstufung. Keine Steuerberatung.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+    ${toolCards(base, contextualTools.filter((tool) => ["Wirkungsumsatzsteuer", "Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Digitale Produktpässe und Wirkungsdatenräume"].includes(tool.title)))}
+    ${sdgBlock(base, "Der Rechner zeigt modellhaft, wie Produktwirkung entlang von Mensch, Planet, Demokratie und Datenqualität bewertet werden könnte.")}
+    ${bookBlock(base)}
+    ${downloadBlock(base, [{ label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossier/" }, { label: "Toolkontext öffnen", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" }])}
+    <script src="${base}assets/js/produktwirkungsrechner.js?v=20260524-produktrechner"></script>`,
+  });
+}
+
+function updateSitemap() {
+  const sitemapPath = path.join(ROOT, "sitemap.xml");
+  if (!fs.existsSync(sitemapPath)) return;
+  const urls = [
+    "wirkungsfelder/produkte-konsum/",
+    "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/",
+    "wirkungsfelder/produkte-konsum/dossier/",
+    "wirkungsfelder/produkte-konsum/apfelbeispiel/",
+    "wirkungsfelder/produkte-konsum/t-shirt/",
+    "wirkungsfelder/produkte-konsum/lieferketten/",
+    "wirkungsfelder/produkte-konsum/basf-polyamid/",
+    "wirkungsfelder/produkte-konsum/verbraucherinformation/",
+    "wirkungsfelder/produkte-konsum/unternehmen/",
+    "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/",
+    "werkzeuge/wirkungsumsatzsteuer/",
+    "werkzeuge/produktscorecards/",
+    "werkzeuge/woek-ids/",
+    "werkzeuge/reverse-merit-order/",
+    "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/",
+    "werkzeuge/wirkungsrat/",
+    "werkstatt/gesetze/wirkungssteuergesetz/",
+    "werkstatt/gesetze/wirkungsumsatzsteuergesetz/",
+    "werkstatt/leitlinien/wustg/",
+    "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/",
+    "werkstatt/dossiers/produkte-konsum/",
+    "erleben/produktwirkungsrechner/",
+  ];
+  let sitemap = fs.readFileSync(sitemapPath, "utf8");
+  for (const rel of urls) {
+    sitemap = sitemap.replace(new RegExp(`\\s*<url>\\s*<loc>${SITE}/${rel}</loc>\\s*<lastmod>[^<]+</lastmod>\\s*</url>`, "g"), "");
+    sitemap = sitemap.replace(new RegExp(`\\s*<url><loc>${SITE}/${rel}</loc><lastmod>[^<]+</lastmod></url>`, "g"), "");
+  }
+  const entries = urls.map((rel) => `  <url><loc>${SITE}/${rel}</loc><lastmod>${DATE}</lastmod></url>`).join("\n");
+  sitemap = sitemap.replace("</urlset>", `${entries}\n</urlset>`);
+  fs.writeFileSync(sitemapPath, sitemap, "utf8");
+}
+
 function build() {
   productPortal();
+  dossierPage();
+  tShirtPage();
   fulltextPage({
     rel: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/index.html",
     source: sources.productTax,
@@ -946,6 +1328,8 @@ function build() {
     sdgText: "Das Konzernbeispiel berührt Industrie, Innovation, Chemikalien, Klima, Kreislauf, Lieferketten, Datenqualität und Unternehmensverantwortung.",
     downloads: [{ label: "Konzernbeispiel öffnen", href: "dokumente/beispiel-konzern/" }, { label: "Impact Controlling öffnen", href: "werkzeuge/impact-controlling/" }],
   });
+  calculatorPage();
+  workshopAliasPages();
   compactContextPage({
     rel: "wirkungsfelder/produkte-konsum/verbraucherinformation/index.html",
     title: "Verbraucherinformation",
@@ -1046,6 +1430,7 @@ function build() {
   guidelinesPage();
   wustgConceptPage();
   lawReader();
+  updateSitemap();
 }
 
 build();

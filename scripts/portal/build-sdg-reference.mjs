@@ -848,6 +848,13 @@ function enhanceExistingBadges() {
         return items.length ? `${prefix}${items.map((item) => badge(item, base)).join("")}${suffix}` : match;
       },
     ).replace(
+      /(<div class="model-strip">)(\s*(?:<span>[^<]+<\/span>\s*)+)(<\/div>)/g,
+      (match, prefix, strip, suffix) => {
+        const labels = [...strip.matchAll(/<span>([^<]+)<\/span>/g)].map((hit) => hit[1]);
+        const items = labels.map(findReference).filter(Boolean);
+        return items.length === labels.length ? `${prefix}${items.map((item) => badge(item, base)).join("")}${suffix}` : match;
+      },
+    ).replace(
       /SDG\+ ist keine offizielle UN-Kategorie/g,
       `<a class="text-link" href="${href(base, "verstehen/sdgs-sdgplus/#sdgplus")}">SDG+</a> ist keine offizielle UN-Kategorie`,
     );

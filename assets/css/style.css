@@ -7001,6 +7001,119 @@ textarea {
   background: rgba(47, 125, 92, 0.08);
 }
 
+.status-meta dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--line);
+}
+
+.status-meta dl div {
+  min-width: 0;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.status-meta dt {
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.status-meta dd {
+  margin: 0.25rem 0 0;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.product-calculator {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.8fr);
+  gap: clamp(1rem, 3vw, 1.6rem);
+  align-items: start;
+}
+
+.calculator-form,
+.calculator-result {
+  display: grid;
+  gap: 1rem;
+}
+
+.calculator-form label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.calculator-form input,
+.calculator-form select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+}
+
+.score-inputs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.calculator-result dl {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 16, 48, 0.18);
+  border-radius: var(--radius);
+  background: rgba(11, 16, 48, 0.18);
+}
+
+.calculator-result dl div {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.calculator-result dt {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.calculator-result dd {
+  margin: 0;
+  color: var(--navy);
+  font-weight: 950;
+}
+
+@media (max-width: 780px) {
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .score-inputs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 700px) {
   .book-card {
     grid-template-columns: 9rem 1fr;
