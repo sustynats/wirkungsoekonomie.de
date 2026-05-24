@@ -572,6 +572,9 @@ function getGlossaryContext() {
   if (filename === "glossar.html") {
     return "glossary";
   }
+  if (path.includes("/referenz/") || path.includes("/begriffe/")) {
+    return "reference";
+  }
   if (
     [
       "modell.html",
@@ -633,6 +636,7 @@ function initGlossarySystem(terms) {
     blog: { perBlock: 2, global: 26 },
     academy: { perBlock: 2, global: 22 },
     method: { perBlock: 2, global: 18 },
+    reference: { perBlock: 1, global: 8 },
     page: { perBlock: 2, global: 16 },
   }[context] || { perBlock: 2, global: 16 };
 
@@ -930,18 +934,23 @@ function initGlossaryCards() {
     activeTrigger = null;
   }
 
-  document.addEventListener("pointerover", (event) => {
+  function handleTermEnter(event) {
     const trigger = event.target instanceof Element ? event.target.closest(".glossary-term") : null;
     if (trigger instanceof HTMLAnchorElement) {
       showCard(trigger);
     }
-  });
+  }
 
-  document.addEventListener("pointerout", (event) => {
+  function handleTermLeave(event) {
     if (event.target instanceof Element && event.target.closest(".glossary-term")) {
       hideCard();
     }
-  });
+  }
+
+  document.addEventListener("pointerover", handleTermEnter);
+  document.addEventListener("mouseover", handleTermEnter);
+  document.addEventListener("pointerout", handleTermLeave);
+  document.addEventListener("mouseout", handleTermLeave);
 
   card.addEventListener("pointerover", () => {
     window.clearTimeout(hideTimer);
@@ -1013,3 +1022,111 @@ function loadBlogJournal() {
 }
 
 loadBlogJournal();
+
+function initPublicationAccessFallback() {
+  if (document.getElementById("publikationszugang")) {
+    return;
+  }
+
+  const path = window.location.pathname.replace(/\/index\.html$/, "/");
+  const areas = [
+    {
+      prefixes: ["/wirkungsfelder/produkte-konsum/"],
+      detail: "/wirkungsfelder/produkte-konsum/detailkonzepte/",
+      dossier: "/wirkungsfelder/produkte-konsum/dossiers/",
+      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.docx",
+    },
+    {
+      prefixes: ["/werkzeuge/impact-controlling/"],
+      detail: "/werkzeuge/impact-controlling/detailkonzepte/",
+      dossier: "/werkzeuge/impact-controlling/dossiers/",
+      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.docx",
+    },
+    {
+      prefixes: ["/wirkungsfelder/staat-recht-demokratie/", "/werkstatt/dossiers/staat-recht-demokratie/"],
+      detail: "/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/",
+      dossier: "/werkstatt/dossiers/staat-recht-demokratie/dossiers/",
+      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.docx",
+      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.docx",
+    },
+    {
+      prefixes: ["/wirkungsfelder/wirtschaft-unternehmen/", "/werkstatt/dossiers/wirtschaft-unternehmen/"],
+      detail: "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/",
+      dossier: "/wirkungsfelder/wirtschaft-unternehmen/dossiers/",
+      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.docx",
+      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx",
+    },
+    {
+      prefixes: ["/wirkungsfelder/wohnen-stadt/"],
+      detail: "/wirkungsfelder/wohnen-stadt/detailkonzepte/",
+      dossier: "/wirkungsfelder/wohnen-stadt/dossiers/",
+      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.docx",
+      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.docx",
+    },
+    {
+      prefixes: ["/wirkungsfelder/arbeit-einkommen/"],
+      detail: "#detailkonzept",
+      dossier: "#dossier",
+      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx",
+      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.docx",
+      fallbackDetail: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
+      fallbackDossier: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
+    },
+    {
+      prefixes: ["/wirkungsfelder/rente-soziale-sicherung/"],
+      detail: "/wirkungsfelder/rente-soziale-sicherung/detailkonzepte/",
+      dossier: "/wirkungsfelder/rente-soziale-sicherung/dossiers/",
+      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.docx",
+      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.docx",
+    },
+  ];
+
+  const config = areas.find((area) => area.prefixes.some((prefix) => path.startsWith(prefix)));
+  if (!config) {
+    return;
+  }
+
+  const hasLocalDetail = Boolean(document.getElementById("detailkonzept"));
+  const hasLocalDossier = Boolean(document.getElementById("dossier"));
+  const detailHref = config.detail === "#detailkonzept" && !hasLocalDetail ? config.fallbackDetail : config.detail;
+  const dossierHref = config.dossier === "#dossier" && !hasLocalDossier ? config.fallbackDossier : config.dossier;
+  const cards = [
+    ["Langfassung", "Detailkonzept online lesen", "Die fachliche Langfassung ist online lesbar und zitierfähig.", detailHref, "Online lesen"],
+    ["Dossier", "Dossier online lesen", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Grenzen.", dossierHref, "Online lesen"],
+    ["Download", "Detailkonzept Word", "Exportfassung der langen Detailkonzepte.", config.detailDownload, "Herunterladen"],
+    ["Download", "Dossier Word", "Exportfassung des Dossiers oder Einzeldossier-Sets.", config.dossierDownload, "Herunterladen"],
+  ].filter((card) => card[3]);
+
+  if (!cards.length) {
+    return;
+  }
+
+  const section = document.createElement("section");
+  section.className = "section";
+  section.id = "publikationszugang";
+  section.setAttribute("aria-labelledby", "publikationszugang-title");
+  section.innerHTML = `
+    <div class="section-header">
+      <p class="hero-kicker">Online lesen und herunterladen</p>
+      <h2 id="publikationszugang-title">Detailkonzepte und Dossiers <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Die langen Fassungen sind direkt online lesbar und zitierfähig. Word-Dateien bleiben ergänzende Export- und Archivfassungen.</p>
+    </div>
+    <div class="card-grid three">${cards.map(([kicker, title, text, link, label]) => `
+      <article class="card">
+        <p class="card-kicker">${kicker}</p>
+        <h3 class="card-title">${title}</h3>
+        <p class="card-text">${text}</p>
+        <div class="portal-card-actions"><a class="text-link" href="${link}">${label}</a></div>
+      </article>
+    `).join("")}</div>
+  `;
+
+  const citationSection = document.querySelector(".citation-note")?.closest(".section");
+  const heroSection = document.querySelector(".portal-hero")?.closest(".section");
+  const anchor = citationSection || heroSection;
+  if (anchor?.parentNode) {
+    anchor.insertAdjacentElement("afterend", section);
+  }
+}
+
+initPublicationAccessFallback();
