@@ -30,9 +30,60 @@ def read_docx(path: Path) -> str:
     return "\n".join(parts)
 
 
+def read_markdown(path: Path) -> str:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    meta_title = ""
+    meta_subtitle = ""
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end >= 0:
+            block = text[3:end].strip()
+            for line in block.splitlines():
+                match = re.match(r"^([A-Za-z0-9_-]+):\s*(.*)$", line)
+                if not match:
+                    continue
+                key = match.group(1).lower()
+                value = match.group(2).strip().strip("\"'")
+                if key == "title":
+                    meta_title = value
+                if key == "subtitle":
+                    meta_subtitle = value
+            text = text[end + 4 :]
+
+    out: list[str] = [value for value in [meta_title, meta_subtitle] if value]
+    in_fence = False
+    for raw in text.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        line = raw.strip()
+        if line.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            out.append(line)
+            continue
+        if not line:
+            out.append("")
+            continue
+        if re.fullmatch(r"\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?", line):
+            continue
+        line = re.sub(r"^#{1,6}\s+", "", line)
+        line = re.sub(r"^>\s?", "", line)
+        line = re.sub(r"^[-*+]\s+", "", line)
+        line = re.sub(r"^\d+[.)]\s+", "", line)
+        line = re.sub(r"`([^`]+)`", r"\1", line)
+        line = re.sub(r"\*\*([^*]+)\*\*", r"\1", line)
+        line = re.sub(r"\*([^*]+)\*", r"\1", line)
+        if "|" in line and line.startswith("|"):
+            cells = [cell.strip() for cell in line.strip("|").split("|")]
+            line = " | ".join(cells)
+        out.append(line)
+    return "\n".join(out)
+
+
 def read_text(path: Path) -> str:
     if path.suffix.lower() == ".docx":
         return read_docx(path)
+    if path.suffix.lower() in {".md", ".markdown"}:
+        return read_markdown(path)
     return path.read_text(encoding="utf-8", errors="replace")
 
 
@@ -41,6 +92,8 @@ def normalize(text: str) -> str:
     for raw in text.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
         line = re.sub(r"\s+", " ", raw).strip()
         if not line:
+            continue
+        if re.match(r"^(Autorin|Referenz|Version|Stand|Status):\s+", line, re.I):
             continue
         if re.fullmatch(r"(seite|page)\s+\d+(\s+von\s+\d+)?", line, re.I):
             continue
