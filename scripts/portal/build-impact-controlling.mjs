@@ -5,8 +5,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-impact-controlling";
-const JS_VERSION = "20260523-nachhaltigkeit";
+const CSS_VERSION = "20260525-result-interpretation";
+const JS_VERSION = "20260525-result-interpretation";
 
 const impactDownloads = [
   { label: "Konzeptpapier Word", href: "assets/downloads/woek_impact_controlling_konzeptpapier_v0_1.docx", required: true },

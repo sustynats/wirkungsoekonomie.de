@@ -4857,6 +4857,47 @@ textarea {
   line-height: 1.2;
 }
 
+.result-interpretation {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.85rem;
+  padding: 0.72rem 0.78rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 10px;
+  background: rgba(248, 250, 252, 0.92);
+  color: var(--text-muted, #475569);
+  font-size: 0.88rem;
+  line-height: 1.48;
+}
+
+.result-interpretation p {
+  margin: 0;
+}
+
+.result-interpretation strong {
+  color: var(--text, #0f172a);
+  font-weight: 850;
+}
+
+.impact-kpi .result-interpretation {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(246, 241, 232, 0.84);
+  font-size: 0.78rem;
+}
+
+.impact-kpi .result-interpretation strong {
+  color: var(--white, #fff);
+}
+
+.calculator-result dl > div .result-interpretation {
+  grid-column: 1 / -1;
+}
+
+.scanner-quality-card .result-interpretation {
+  margin-top: 0.65rem;
+}
+
 .result-explainer-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

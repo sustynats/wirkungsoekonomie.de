@@ -5,8 +5,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-arbeit-einkommen-qgate";
-const JS_VERSION = "20260523-nachhaltigkeit";
+const CSS_VERSION = "20260525-result-interpretation";
+const JS_VERSION = "20260525-result-interpretation";
 const SRC = "docs/arbeit-einkommen/docx-extracts";
 const WEB = "docs/arbeit-einkommen/source";
 

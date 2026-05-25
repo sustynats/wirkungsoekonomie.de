@@ -1562,6 +1562,238 @@ const ToolExplanationLayer = (() => {
   return { init, renderBefore, renderAfter };
 })();
 
+const ResultInterpretationLayer = (() => {
+  const fallback = {
+    meaning: "Dieser Wert ist eine modellhafte Orientierung innerhalb der Demo.",
+    relevance: "Er macht sichtbar, welche Wirkungsfrage hinter einer Zahl, einem Score oder einer Ampel steht.",
+    change: "Im WÖk-System würde der Wert nicht allein berichtet, sondern mit Datenqualität, Rückkopplung und Korrekturwegen verbunden.",
+    limit: "Der Wert ist eine Demo-Aussage, keine amtliche Bewertung, keine Beratung und keine Personenbewertung."
+  };
+
+  const rules = [
+    {
+      match: ["finalscore", "final score"],
+      meaning: "Der FinalScore zeigt das schwächste relevante Wirkungsfeld und verhindert, dass negative Wirkung durch positive Einzelwerte verdeckt wird.",
+      relevance: "So wird sichtbar, wo Produkt-, Projekt- oder Organisationswirkung zuerst verbessert werden müsste.",
+      change: "Im WÖk-System könnte der FinalScore Preise, Prioritäten, Förderfähigkeit oder Korrekturpfade beeinflussen.",
+      limit: "Der Score ist modellhaft und hängt von Datenqualität, Schwellen, Quellen und politischer Ausgestaltung ab."
+    },
+    {
+      match: ["modell-steuersatz", "steuersatz", "taxrate", "steuerklasse"],
+      meaning: "Der Wert zeigt modellhaft, wie eine Wirkungseinstufung in einen Preis- oder Steuerimpuls übersetzt werden könnte.",
+      relevance: "Damit wird Wirkung nicht nur beschrieben, sondern als Anreiz sichtbar.",
+      change: "Bessere Wirkung könnte entlasten, schädliche Wirkung könnte teurer werden oder Korrekturpflichten auslösen.",
+      limit: "Das ist keine amtliche Steuerklasse und keine Steuerberatung."
+    },
+    {
+      match: ["bruttopreis", "grossprice"],
+      meaning: "Der Preis zeigt, wie ein Wirkungsaufschlag oder eine Entlastung im Endpreis sichtbar werden könnte.",
+      relevance: "Heute bleiben Folgekosten oft außerhalb des Preises; die Demo macht diese Rückkopplung anschaulich.",
+      change: "Im WÖk-System könnten Kaufentscheidungen, Produktentwicklung und Lieferketten stärker an Wirkung gekoppelt werden.",
+      limit: "Der Betrag ist eine Modellrechnung, kein realer Marktpreis und keine amtliche Abgabe."
+    },
+    {
+      match: ["nettopreis", "netprice"],
+      meaning: "Der Nettopreis ist der Ausgangswert vor modellhafter Wirkungsrückkopplung.",
+      relevance: "Er trennt den heutigen Preis von der Frage, welche externen Wirkungen noch nicht eingepreist sind.",
+      change: "Im WÖk-System würde dieser Ausgangswert mit Wirkung, Datenqualität und Rückkopplung zusammengedacht.",
+      limit: "Der Wert sagt allein noch nichts über tatsächliche Produktwirkung aus."
+    },
+    {
+      match: ["nwi", "netto-wirkungs-index"],
+      meaning: "Der NWI verdichtet positive und negative Wirkung modellhaft zu einer Netto-Sicht.",
+      relevance: "So wird sichtbar, ob eine Maßnahme unterm Strich stärkt, neutral bleibt oder Folgekosten erzeugt.",
+      change: "Im WÖk-System könnten Budgets, Investitionen oder Korrekturen stärker an positiver Netto-Wirkung ausgerichtet werden.",
+      limit: "Der NWI ist nur so belastbar wie Daten, Gewichtung und Bewertungsrahmen."
+    },
+    {
+      match: ["t-sroi", "tsroi"],
+      meaning: "T-SROI zeigt modellhaft, welcher Wirkungswert einem eingesetzten Euro gegenübersteht.",
+      relevance: "Er macht Prävention, vermiedene Folgekosten und Transformationsnutzen vergleichbarer.",
+      change: "Im WÖk-System könnten Förderungen und Investitionen stärker auf nachweisbare Transformationswirkung ausgerichtet werden.",
+      limit: "Die Quote ist eine Annahme, kein geprüfter Finanz- oder Sozialertrag."
+    },
+    {
+      match: ["wirkungswert", "totalvalue"],
+      meaning: "Der Wert zeigt modellhaft die Summe angenommener positiver Wirkungen über den betrachteten Zeitraum.",
+      relevance: "Er hilft, Folgekostenvermeidung und gesellschaftlichen Nutzen sichtbar zu machen.",
+      change: "Im WÖk-System könnte dieser Wert in Budget-, Fonds- oder Priorisierungsentscheidungen zurückfließen.",
+      limit: "Der Betrag ist eine Plausibilisierung, keine Bilanz und kein Zahlungsanspruch."
+    },
+    {
+      match: ["betroffene fte", "affectedfte"],
+      meaning: "Der Wert zeigt, wie viele Vollzeitäquivalente im Modell von Automatisierung betroffen wären.",
+      relevance: "Er macht sichtbar, dass Automatisierung nicht nur Kosten senkt, sondern Übergänge, Einkommen und Sicherungssysteme berührt.",
+      change: "Im WÖk-System würde daraus ein Bedarf für Qualifizierung, Versetzung, Beteiligung oder Rückkopplung entstehen.",
+      limit: "Die Zahl ist eine Modellannahme und keine Aussage über einzelne Beschäftigte."
+    },
+    {
+      match: ["wegfallende lohnsumme", "lostpayroll"],
+      meaning: "Dieser Wert zeigt, welche Lohnsumme im alten System als Beitrags- und Einkommensbasis gefährdet wäre.",
+      relevance: "Automatisierung kann Wertschöpfung erhalten oder steigern, während Lohnarbeit als Finanzierungsbasis sinkt.",
+      change: "Im WÖk-System müsste ein Teil der neuen Wertschöpfung in Sicherung, Weiterbildung oder Wirkungseinkommen zurückfließen.",
+      limit: "Der Betrag ist eine Modellrechnung, keine Prognose und keine Unternehmensbewertung."
+    },
+    {
+      match: ["beitragslücke", "potenzielle beitragslücke", "contributiongap"],
+      meaning: "Im alten System wäre dieser Betrag gefährdet, weil Sozialbeiträge an Lohnarbeit hängen.",
+      relevance: "Automatisierung kann Wertschöpfung erhalten oder steigern, aber die klassische Beitragsbasis schwächen.",
+      change: "Ein Teil der automatisierten Wertschöpfung könnte über Rückkopplungsmechanismen in soziale Sicherung, Weiterbildung oder Wirkungseinkommen fließen.",
+      limit: "Dieser Wert ist eine Modellannahme, keine amtliche Berechnung."
+    },
+    {
+      match: ["maschinenwertschöpfungsbeitrag", "beitrag", "machinecontribution"],
+      meaning: "Der Betrag zeigt modellhaft, welcher Anteil automatisierter Wertschöpfung gesellschaftlich rückgekoppelt werden könnte.",
+      relevance: "So wird Produktivitätsgewinn als Finanzierungsfrage sichtbar, nicht nur als Kapitalrendite.",
+      change: "Im WÖk-System könnte der Beitrag Sicherungssysteme, Wirkungsfonds, Weiterbildung oder Übergangsschutz stabilisieren.",
+      limit: "Der Betrag ist keine Steuerfestsetzung und keine Rechts- oder Sozialberatung."
+    },
+    {
+      match: ["wirkungsfaktor", "faktor", "impactfactor"],
+      meaning: "Der Faktor zeigt, ob eine Wirkung im Modell entlastend, neutral oder belastend berücksichtigt wird.",
+      relevance: "Nicht jede Automatisierung wirkt gleich: Entscheidend ist, ob sie stärkt, beteiligt, verdrängt oder extraktiv ist.",
+      change: "Im WÖk-System könnte ein positiver Faktor entlasten und ein negativer Faktor stärkere Rückkopplung auslösen.",
+      limit: "Der Faktor ist eine Demo-Skala, keine amtliche Einstufung."
+    },
+    {
+      match: ["transformationsbonus", "bonus"],
+      meaning: "Der Bonus zeigt, wie stark soziale Abfederung und faire Übergänge den Beitrag modellhaft senken.",
+      relevance: "Er macht sichtbar, dass Weiterbildung, Versetzung, Arbeitszeitmodelle und Beteiligung reale Wirkungsunterschiede erzeugen.",
+      change: "Im WÖk-System würden entlastende Transformationspfade wirtschaftlich belohnt oder weniger stark belastet.",
+      limit: "Der Bonus ist eine Modellannahme und kein Anspruch."
+    },
+    {
+      match: ["reduzierter beitrag", "reducedcontribution"],
+      meaning: "Der Wert zeigt den Beitrag nach Berücksichtigung des Transformationsbonus.",
+      relevance: "So wird sichtbar, dass gleiche Automatisierungsgewinne unterschiedlich wirken können.",
+      change: "Im WÖk-System würde gute Übergangsgestaltung die Rückkopplung verändern.",
+      limit: "Der Wert ist keine verbindliche Beitragsberechnung."
+    },
+    {
+      match: ["wirkungsprofil", "profile", "ampel", "risikoampel"],
+      meaning: "Das Profil ordnet die Richtung der Wirkung ein: entlastend, neutral, verdrängend, extraktiv oder risikobehaftet.",
+      relevance: "Eine Ampel oder Kategorie hilft, Handlungsbedarf schnell zu erkennen.",
+      change: "Im WÖk-System würde daraus eine Korrektur-, Prüf- oder Förderlogik entstehen.",
+      limit: "Die Einordnung ist eine Demo-Heuristik und ersetzt keine Prüfung."
+    },
+    {
+      match: ["gesamteinkommen", "totalincome"],
+      meaning: "Der Wert zeigt ein mögliches Einkommen aus mehreren Quellen statt nur aus Erwerbsarbeit.",
+      relevance: "Er macht sichtbar, wie Teilhabe stabilisiert werden könnte, wenn Arbeit und Wertschöpfung auseinanderfallen.",
+      change: "Im WÖk-System könnten Grundsicherheit, Markteinkommen, Wirkungsbonus und Fondsanteil zusammen gedacht werden.",
+      limit: "Der Wert ist kein Anspruch, kein Sozialbescheid und keine persönliche Bewertung."
+    },
+    {
+      match: ["grundsicherheit", "baseshare"],
+      meaning: "Der Anteil zeigt, welcher Teil des Modells aus stabiler Grundsicherung stammt.",
+      relevance: "Grundsicherheit kann Übergänge abfedern und Teilhabe sichern.",
+      change: "Im WÖk-System wäre Grundsicherheit Teil einer breiteren Einkommensarchitektur.",
+      limit: "Der Anteil ist eine Modellgröße, keine politische Festlegung."
+    },
+    {
+      match: ["markt", "marketshare"],
+      meaning: "Der Anteil zeigt, welcher Teil weiterhin aus Markteinkommen stammt.",
+      relevance: "Die Demo trennt Markteinkommen von Grundsicherheit, Wirkung und Fondsrückflüssen.",
+      change: "Im WÖk-System bleibt Marktleistung relevant, wird aber nicht zum einzigen Maßstab.",
+      limit: "Der Anteil ist eine Szenarioannahme."
+    },
+    {
+      match: ["wirkung/fonds", "impactshare", "fondsanteil"],
+      meaning: "Der Anteil zeigt, welcher Teil aus Wirkungsbonus oder Fondsrückfluss stammen könnte.",
+      relevance: "Damit wird gesellschaftliche Rückkopplung als Einkommensquelle sichtbar.",
+      change: "Im WÖk-System könnten Wirkungsfonds und Boni Teilhabe und Transformation finanzieren.",
+      limit: "Der Anteil ist kein garantierter Anspruch."
+    },
+    {
+      match: ["datenqualität", "dataquality"],
+      meaning: "Die Datenqualität zeigt, wie belastbar eine Ersteinschätzung ist.",
+      relevance: "Ohne Quellen, Prüfstatus und Datenstand kann ein Score Scheinsicherheit erzeugen.",
+      change: "Im WÖk-System würde niedrige Datenqualität Nachweispflichten, Vorsicht oder weitere Prüfung auslösen.",
+      limit: "Die Stufe bewertet die Datenlage, nicht automatisch die Sache selbst."
+    },
+    {
+      match: ["score"],
+      meaning: "Der Score ordnet eine Wirkung modellhaft auf einer Skala ein.",
+      relevance: "Scores machen unterschiedliche Wirkungsfelder vergleichbarer, ohne sie zu endgültigen Wahrheiten zu machen.",
+      change: "Im WÖk-System könnten Scores Anreize, Prüfbedarf oder Korrekturpfade auslösen.",
+      limit: "Der Score ist abhängig von Methode, Datenqualität und Bewertungsrahmen."
+    }
+  ];
+
+  function normalize(value) {
+    return String(value || "").toLowerCase().replace(/[^\p{L}\p{N}+/%-]+/gu, " ").trim();
+  }
+
+  function findRule(key, label) {
+    const haystack = normalize(`${key || ""} ${label || ""}`);
+    return rules.find((rule) => rule.match.some((needle) => haystack.includes(normalize(needle)))) || fallback;
+  }
+
+  function render(rule) {
+    return `
+      <div class="result-interpretation" data-result-interpretation>
+        <p><strong>Bedeutung:</strong> ${rule.meaning}</p>
+        <p><strong>Warum relevant?</strong> ${rule.relevance}</p>
+        <p><strong>Was würde sich ändern?</strong> ${rule.change}</p>
+        <p><strong>Grenze der Aussage:</strong> ${rule.limit}</p>
+      </div>
+    `;
+  }
+
+  function labelForDataElement(el) {
+    const parent = el.closest("div, article, li, p") || el.parentElement;
+    const dt = parent?.querySelector("dt");
+    const span = parent?.querySelector("span");
+    const heading = el.closest("article")?.querySelector("h2, h3, h4");
+    return dt?.textContent || span?.textContent || heading?.textContent || el.getAttribute("data-result") || el.getAttribute("data-auto-result") || "";
+  }
+
+  function applyToDataResults(scope) {
+    scope.querySelectorAll("[data-result], [data-auto-result]").forEach((el) => {
+      if (el.matches("p[data-result], p[data-auto-result]")) return;
+      const host = el.closest("dl > div, .impact-kpi") || el.parentElement;
+      if (!host || host.querySelector(":scope > [data-result-interpretation]")) return;
+      const key = el.getAttribute("data-result") || el.getAttribute("data-auto-result") || "";
+      host.insertAdjacentHTML("beforeend", render(findRule(key, labelForDataElement(el))));
+    });
+  }
+
+  function applyToImpactKpis(scope) {
+    scope.querySelectorAll(".impact-kpi").forEach((host) => {
+      if (host.querySelector(":scope > [data-result-interpretation]")) return;
+      const valueEl = host.querySelector("strong");
+      if (!valueEl) return;
+      const key = Array.from(valueEl.attributes || [])
+        .filter((attr) => attr.name.startsWith("data-"))
+        .map((attr) => attr.name.replace(/^data-/, ""))
+        .join(" ");
+      host.insertAdjacentHTML("beforeend", render(findRule(key, labelForDataElement(valueEl))));
+    });
+  }
+
+  function applyToScanner(scope) {
+    scope.querySelectorAll(".scanner-quality-card").forEach((cardEl) => {
+      if (cardEl.querySelector("[data-result-interpretation]")) return;
+      cardEl.insertAdjacentHTML("beforeend", render(findRule("datenqualität", "Datenqualität")));
+    });
+  }
+
+  function apply(scope = document) {
+    applyToDataResults(scope);
+    applyToImpactKpis(scope);
+    applyToScanner(scope);
+  }
+
+  function init() {
+    apply();
+    const observer = new MutationObserver(() => apply());
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+  return { init, apply };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
+  ResultInterpretationLayer.init();
 });

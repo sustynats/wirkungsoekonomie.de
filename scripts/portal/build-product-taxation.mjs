@@ -5,8 +5,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-produktsteuer";
-const JS_VERSION = "20260523-nachhaltigkeit";
+const CSS_VERSION = "20260525-result-interpretation";
+const JS_VERSION = "20260525-result-interpretation";
 
 const sources = {
   productTax: "docs/praxis/Produktbesteuerung_durch_Wirkung_v1.1.md",
