@@ -9590,3 +9590,68 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     display: none;
   }
 }
+
+
+/* Rang 15 Migration & Vielfalt */
+.reading-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 0.65fr);
+  gap: 1rem;
+}
+.side-nav .model-strip {
+  margin-top: 1rem;
+}
+.toc-card {
+  border: 1px solid rgba(12, 18, 34, 0.12);
+  border-radius: 8px;
+  background: #fff;
+}
+.toc-card summary {
+  cursor: pointer;
+  padding: 0.85rem 1rem;
+  color: var(--navy);
+  font-weight: 900;
+}
+.toc-card ol {
+  margin: 0;
+  padding: 0 1rem 1rem 1.8rem;
+}
+.toc-card li {
+  margin: 0.35rem 0;
+}
+.toc-level-3 {
+  margin-left: 0.75rem;
+  font-size: 0.94rem;
+}
+.rang15-article {
+  max-width: 78ch;
+}
+.rang15-article h2,
+.rang15-article h3,
+.rang15-article h4 {
+  margin-top: 2rem;
+}
+.portal-meta-grid.compact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+.portal-meta-grid.compact dt {
+  color: var(--green);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.portal-meta-grid.compact dd {
+  margin: 0;
+  color: var(--navy);
+}
+@media (max-width: 860px) {
+  .reading-layout {
+    grid-template-columns: 1fr;
+  }
+  .toc-card:not([open]) {
+    margin-bottom: 0;
+  }
+}
