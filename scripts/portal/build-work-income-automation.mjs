@@ -61,14 +61,14 @@ const topDocuments = [
   ["konzeptpapier", "Konzeptpapier", "woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.md", "woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "Grundlogik des Wirkungsfelds Arbeit & Einkommen: Automatisierung, Maschinenleistung, Wirkungseinkommen, Sozialabgaben-Entkopplung und politische Anschlussfähigkeit."],
   ["gesamtdossier", "Gesamtdossier", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.md", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "Arbeitsdossier mit Modelllogik, Annahmen, Quellen, Querverlinkungen und Umsetzungspfaden."],
   ["detailkonzepte", "Detailkonzepte", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.md", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "Langfassung der Detailkonzepte für die Unterbereiche des Portals."],
-  ["dossiers", "Einzeldossier-Set", "woek_arbeit_einkommen_einzeldossier_set_v0_1.md", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx", "Einzeldossiers mit Praxisfragen, Bewertungslogik, Annahmen, Grenzen, Toolbezug und politischer Umsetzung."],
+  ["dossiers", "Dossiers", "woek_arbeit_einkommen_einzeldossier_set_v0_1.md", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx", "Dossiers mit Praxisfragen, Bewertungslogik, Annahmen, Grenzen, Toolbezug und politischer Umsetzung."],
 ];
 
 const downloadLabels = {
   "woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx": "Konzeptpapier herunterladen",
   "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx": "Gesamtdossier herunterladen",
   "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx": "Detailkonzepte herunterladen",
-  "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx": "Einzeldossier-Set herunterladen",
+  "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx": "Dossiers herunterladen",
 };
 
 const sdgRefs = {
@@ -179,6 +179,43 @@ function mdToHtml(markdown, prefix = "") {
   flush(); flushTable();
   return { toc, html: html.join("\n") };
 }
+function stripFrontMatterText(markdown, firstHeading) {
+  const normalized = markdown.replace(/\r\n/g, "\n");
+  const match = normalized.match(firstHeading);
+  return match ? normalized.slice(match.index).trim() : normalized.trim();
+}
+const detailSummaryBySlug = {
+  "arbeit-einkommen-wirkung": "Dieses Detailkonzept erklärt, warum Erwerbsarbeit, Einkommen, Automatisierung, Care, Weiterbildung und Maschinenleistung wirkungsökonomisch neu bewertet werden müssen. Es zeigt, was das alte System übersieht und welche Rückkopplungen möglich werden.",
+};
+const detailSublineBySlug = {
+  "arbeit-einkommen-wirkung": "Wie Leistung sichtbar wird, wenn Einkommen allein nicht mehr beweist, dass gesellschaftlich positive Wirkung entsteht.",
+};
+const leverTexts = {
+  "Leistung als Wirkung statt bloßer Aktivität": "Leistung wird nicht mehr nur daran gemessen, wie viel gearbeitet, verdient oder produziert wird. Entscheidend ist, welche Zustände sich verbessern oder verschlechtern: Sicherheit, Teilhabe, Gesundheit, Vertrauen, Finanzierung öffentlicher Systeme und Zukunftsfähigkeit.",
+  "Erwerbsarbeit, Wirkleistung und Scheinleistung": "Erwerbsarbeit bleibt wichtig, ist aber nicht die einzige Form gesellschaftlicher Leistung. Care, Bildung, Ehrenamt, Stabilisierung und Prävention erzeugen Wirkung, während manche bezahlten Aktivitäten Schäden oder bloße Scheinleistung produzieren können.",
+  "Markteinkommen und Wirkungskontext": "Markteinkommen zeigt, was am Markt bezahlt wird. Es zeigt nicht automatisch, ob eine Tätigkeit gesellschaftlich stabilisiert, ökologische Schäden verursacht oder demokratisches Vertrauen stärkt.",
+  "Wirkungsbiografien statt bloßer Erwerbsbiografien": "Eine Erwerbsbiografie zeigt bezahlte Beschäftigung. Eine Wirkungsbiografie fragt zusätzlich, welche Lern-, Pflege-, Sorge-, Innovations- und Gemeinwesenbeiträge Menschen und Organisationen im Lebensverlauf ermöglichen.",
+  "Politische Anschlussfähigkeit": "Politische Anschlussfähigkeit bedeutet, dass unterschiedliche demokratische Wege möglich bleiben. Die Wirkungsökonomie gibt einen Bewertungsrahmen, aber keinen fertigen Parteiprogrammtext vor.",
+};
+function cleanDetailMarkdown(markdown) {
+  let text = stripFrontMatterText(markdown, /^##\s+Leitfrage/m)
+    .replaceAll("Leistung als Wirkung statt Bewegung", "Leistung als Wirkung statt bloßer Aktivität")
+    .replaceAll("Inputs", "Eingaben");
+  const lines = text.split("\n");
+  let currentHeading = "";
+  return lines.map((line) => {
+    const heading = line.match(/^##\s+(.+)$/);
+    if (heading) currentHeading = heading[1].trim().replace(/^\d+\.\s+/, "");
+    const generic = line.match(/^(.+?) wird in diesem Unterbereich als eigenständiger Wirkungshebel verstanden\. Entscheidend ist, welche Zustände verändert werden:.+$/);
+    if (generic && leverTexts[currentHeading]) return leverTexts[currentHeading];
+    return line;
+  }).join("\n");
+}
+function cleanDossierMarkdown(markdown) {
+  return stripFrontMatterText(markdown, /^##\s+Kurzfassung/m)
+    .replaceAll("Leistung als Wirkung statt Bewegung", "Leistung als Wirkung statt bloßer Aktivität")
+    .replaceAll("Inputs", "Eingaben");
+}
 function stripPortalOperationalSections(markdown) {
   const cut = markdown.search(/^##\s+(Werkzeuge in diesem Bereich|Politische Anschlussfähigkeit|SDG-|Anker im Online-Buch|Online lesen)/m);
   return cut >= 0 ? markdown.slice(0, cut).trim() : markdown;
@@ -187,6 +224,11 @@ function stripPortalOperationalSections(markdown) {
 function toc(t) {
   if (!t.length) return "";
   return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol>${t.map((i) => `<li class="toc-level-${esc(i.level)}"><a href="#${esc(i.id)}">${esc(i.text)}</a></li>`).join("")}</ol></nav>`;
+}
+function readingToc(items, title = "Auf dieser Seite") {
+  const filtered = items.filter((i) => i.level === 2).slice(0, 8);
+  if (!filtered.length) return "";
+  return `<details class="toc-card reading-toc no-print"><summary>${esc(title)}</summary><ol>${filtered.map((i) => `<li><a href="#${esc(i.id)}">${esc(i.text)}</a></li>`).join("")}</ol></details>`;
 }
 function ctaLabelFor(url, fallback = "Vertiefung lesen") {
   const value = String(url || "");
@@ -218,7 +260,7 @@ function publicationAccess(b, heading = "Online lesen und herunterladen") {
     text,
     `wirkungsfelder/arbeit-einkommen/${slugName}/`,
   ]);
-  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", heading)}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben ergänzende Export- und Archivfassungen.</p></div>${cards(b, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Einzeldossier-Set bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${topDocuments.map(([, , , doc]) => exists(`assets/downloads/${doc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${doc}`)}">${esc(downloadLabels[doc] || "Download")}</a>` : "").join("")}</div></div></section>`;
+  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", heading)}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben ergänzende Export- und Archivfassungen.</p></div>${cards(b, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Dossiers bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${topDocuments.map(([, , , doc]) => exists(`assets/downloads/${doc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${doc}`)}">${esc(downloadLabels[doc] || "Download")}</a>` : "").join("")}</div></div></section>`;
 }
 function pagePublicationAccess(b, detailDoc, dossierDoc) {
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Online lesen, gezielt zitieren</p>${h2("publikationszugang-title", "Detailkonzept und Dossier")}<p class="card-text">Diese Unterseite enthält Detailkonzept und Einzeldossier vollständig online. Die Abschnittsanker können direkt zitiert werden; Downloads bleiben ergänzende Exportfassungen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Detailkonzept herunterladen</a>` : ""}${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>`;
@@ -300,13 +342,51 @@ ${toolRefs(b)}${referenceBlock(b)}<section class="section" aria-labelledby="unte
 
 function topicPage(item) {
   const [slugName, title, summary, detailMd, dossierMd, detailDoc, dossierDoc] = item;
-  const detail = mdToHtml(read(`${SRC}/${detailMd}`), "detail-");
-  const dossier = mdToHtml(read(`${SRC}/${dossierMd}`), "dossier-");
+  const detail = mdToHtml(cleanDetailMarkdown(read(`${SRC}/${detailMd}`)), "detail-");
+  const dossier = mdToHtml(cleanDossierMarkdown(read(`${SRC}/${dossierMd}`)), "dossier-");
+  const subline = detailSublineBySlug[slugName] || summary;
+  const summaryText = detailSummaryBySlug[slugName] || `Dieses Detailkonzept erklärt den Unterbereich "${title}" im Wirkungsfeld Arbeit & Einkommen. Es zeigt, welche alte Logik zu kurz greift, welche Wirkungsfragen relevant werden und welche demokratischen Schutzgrenzen gelten.`;
+  const keyPoints = [
+    "Einkommen ist nicht automatisch gesellschaftlich positive Leistung.",
+    "Erwerbsarbeit bleibt wichtig, ist aber nicht die einzige Wirkleistung.",
+    "Automatisierung verschiebt Wertschöpfung und damit Finanzierungsfragen.",
+    "Die WÖk koppelt Wertschöpfung, Wirkung und soziale Sicherung neu.",
+    "Bewertet werden Kontexte und Systeme, nicht der Wert einzelner Menschen.",
+  ];
+  const levers = [
+    ["Leistung als Wirkung statt bloßer Aktivität", leverTexts["Leistung als Wirkung statt bloßer Aktivität"], "Nicht Arbeitsstunden allein, sondern Folgen und Zustandsveränderungen werden sichtbar.", "Keine Personenbewertung, keine Überwachung einzelner Beschäftigter."],
+    ["Erwerbsarbeit, Wirkleistung und Scheinleistung", leverTexts["Erwerbsarbeit, Wirkleistung und Scheinleistung"], "So werden unbezahlte Stabilisierung und schädliche bezahlte Aktivität unterscheidbar.", "Der menschliche Wert bleibt unantastbar; bewertet werden Tätigkeits- und Systemkontexte."],
+    ["Markteinkommen und Wirkungskontext", leverTexts["Markteinkommen und Wirkungskontext"], "Einkommen wird nicht abgeschafft, aber um Wirkungs- und Folgekosten ergänzt.", "Kein automatisches Einkommensranking und keine moralische Bewertung von Personen."],
+    ["Wirkungsbiografien statt bloßer Erwerbsbiografien", leverTexts["Wirkungsbiografien statt bloßer Erwerbsbiografien"], "Lebensleistung kann breiter sichtbar werden als Lohnarbeitszeit.", "Nur mit Datenschutz, Freiwilligkeit, Rechtsschutz und demokratischer Kontrolle."],
+    ["Politische Anschlussfähigkeit", leverTexts["Politische Anschlussfähigkeit"], "So kann Wirkung politisch nutzbar werden, ohne technokratisch zu entscheiden.", "Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht."],
+  ];
   page({
     rel: `wirkungsfelder/arbeit-einkommen/${slugName}/index.html`,
     title: `${title} | Arbeit & Einkommen`,
     description: summary,
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Arbeit & Einkommen</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a></div></div></section>${pagePublicationAccess(b, detailDoc, dossierDoc)}${toc([...detail.toc, ...dossier.toc])}<section class="section" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Kurzfassung")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Alte Logik</h3><p class="card-text">Menschliche Erwerbsarbeit trägt Einkommen, Sozialabgaben und Status, während unbezahlte Wirkleistung und automatisierte Wertschöpfung nur teilweise sichtbar werden.</p></article><article class="card"><h3 class="card-title">Perspektivwechsel</h3><p class="card-text">Bewertet wird die tatsächliche Zustandsveränderung. Maschinenleistung, Care, Weiterbildung, Einkommen und Kapitalwirkung werden in eine gemeinsame Rückkopplung gebracht.</p></article><article class="card"><h3 class="card-title">Schutzgrenze</h3><p class="card-text">Keine Personenbewertung, keine Leistungsüberwachung einzelner Beschäftigter und keine Robotersteuer als Fortschrittsstrafe.</p></article></div></section><section class="section" aria-labelledby="detailkonzept"><div class="prose"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", "Detailkonzept online lesen")} ${detail.html}</div></section><section class="section" aria-labelledby="dossier"><div class="prose"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier online lesen")} ${dossier.html}</div></section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, [detailDoc, dossierDoc])}`,
+    type: "Detailkonzept",
+    body: (b) => `<section class="hero portal-hero reading-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Detailkonzept</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(subline)}</p><div class="summary-box"><p>${esc(summaryText)}</p></div><div class="hero-actions no-print"><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a><a class="btn btn-primary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Downloadfassung herunterladen</a>` : ""}</div></div></section>
+${readingToc(detail.toc)}
+<section class="section reading-page" aria-labelledby="leitfrage-box"><article class="key-question-box"><p class="hero-kicker">Leitfrage</p>${h2("leitfrage-box", "Was klärt dieses Detailkonzept?")}<p>Wie wird Leistung sichtbar, wenn Einkommen allein nicht mehr beweist, dass gesellschaftlich positive Wirkung entsteht?</p></article></section>
+<section class="section reading-page" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Auf einen Blick")}</div><div class="card-grid three">${keyPoints.map((point) => `<article class="card key-point-card"><p>${esc(point)}</p></article>`).join("")}</div></section>
+<section class="section reading-page" aria-labelledby="logikvergleich"><div class="section-header"><p class="hero-kicker">Einordnung</p>${h2("logikvergleich", "Alte Logik vs. WÖk-Logik")}</div><div class="comparison-grid"><article class="card"><p class="card-kicker">Alte Logik</p><ul><li>Erwerbsarbeit beweist Leistung.</li><li>Einkommen zeigt gesellschaftlichen Wert.</li><li>Automatisierung ist vor allem Effizienz oder Jobverlust.</li><li>Unbezahlte Wirkleistung bleibt am Rand.</li></ul></article><article class="card"><p class="card-kicker">WÖk-Logik</p><ul><li>Leistung wird an tatsächlicher Wirkung gelesen.</li><li>Einkommen wird im Wirkungskontext betrachtet.</li><li>Automatisierte Wertschöpfung wird gesellschaftlich rückgekoppelt.</li><li>Care, Bildung und Gemeinwesen werden sichtbar, ohne Personen zu bewerten.</li></ul></article></div></section>
+<section class="section reading-page" aria-labelledby="wirkungshebel"><div class="section-header"><p class="hero-kicker">Zentrale Wirkungshebel</p>${h2("wirkungshebel", "Was verändert sich?")}</div><div class="card-grid three">${levers.map(([leverTitle, text, why, guard]) => `<article class="card"><h3 class="card-title">${esc(leverTitle)}</h3><p class="card-text">${esc(text)}</p><p class="interpretation-note"><strong>Warum relevant?</strong> ${esc(why)}</p><p class="why-relevant"><strong>Schutzgrenze:</strong> ${esc(guard)}</p></article>`).join("")}</div></section>
+<section class="section reading-page" aria-labelledby="detailkonzept"><div class="prose readable-prose"><p class="hero-kicker">Onlinefassung</p>${h2("detailkonzept", "Detailkonzept lesen")} ${detail.html}</div></section>
+<section class="section reading-page" aria-labelledby="schutz"><div class="section-header"><p class="hero-kicker">Risiken und Schutz</p>${h2("schutz", "Schutzmechanismen")}</div><div class="card-grid three">${["Keine Personenbewertung", "Kein Leistungsmonitoring einzelner Beschäftigter", "Datenschutz und Datensparsamkeit", "Demokratische Kontrolle", "Rechtsbehelf und Korrektur", "Pilotierung vor Ausweitung"].map((item) => `<article class="card"><h3 class="card-title">${esc(item)}</h3><p class="card-text">Diese Schutzgrenze verhindert, dass Wirkungsbewertung zu Überwachung, Ranking oder automatischer Entscheidung wird.</p></article>`).join("")}</div></section>
+${political()}${referenceBlock(b)}
+<section class="section reading-page" aria-labelledby="materialien"><div class="download-card"><div><p class="hero-kicker">Weiterlesen und anwenden</p>${h2("materialien", "Verwandte Seiten und Materialien")}<p class="card-text">Das Dossier dokumentiert Beispiele, Annahmen, Datenlogik und Grenzen. Downloads und Quellen stehen gesammelt am Ende.</p></div><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a><a class="btn btn-primary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a><a class="btn btn-secondary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner nutzen</a><a class="btn btn-secondary" href="${href(b, "begriffe/wirkungseinkommen/")}">Begriff Wirkungseinkommen erklären</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Downloadfassung herunterladen</a>` : ""}</div></div></section>
+<section class="section reading-page" aria-labelledby="transparenz"><div class="card metadata-card"><p class="hero-kicker">Dokumentstand und Transparenz</p>${h2("transparenz", "Transparenz und Stand")}<dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Stand</dt><dd>Mai 2026</dd></div><div><dt>Status</dt><dd>Arbeits- und Diskussionsfassung</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl><p>Diese Onlinefassung ist eine Arbeits- und Diskussionsfassung der Wirkungsökonomie. Sie dient der fachlichen Weiterentwicklung und öffentlichen Nachvollziehbarkeit.</p></div></section>${bookBlock(b)}${sourceBlock()}${downloads(b, [detailDoc, dossierDoc])}`,
+  });
+  page({
+    rel: `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/index.html`,
+    title: `${title} Dossier | Arbeit & Einkommen`,
+    description: `Dossier zu ${title}: Beispiele, Annahmen, Bewertungslogik, Grenzen und Materialien.`,
+    type: "Dossier",
+    body: (b) => `<section class="hero portal-hero reading-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a> / <a href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">${esc(title)}</a></nav><p class="hero-kicker">Dossier</p><h1>${esc(title)}: Dossier</h1><p class="hero-subtitle">Praxisfrage, Daten, Annahmen, Bewertungslogik und Grenzen zum Detailkonzept.</p><div class="summary-box"><p>Dieses Dossier ergänzt das Detailkonzept. Es dokumentiert Beispiele, Datenquellen, Annahmen, mögliche Indikatoren, Risiken, politische Optionen und Werkzeugbezug.</p></div><div class="hero-actions no-print"><a class="btn btn-secondary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">Detailkonzept lesen</a><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a>${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-primary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>
+${readingToc(dossier.toc)}
+<section class="section reading-page" aria-labelledby="dossier"><div class="prose readable-prose"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier lesen")} ${dossier.html}</div></section>
+<section class="section reading-page" aria-labelledby="dossier-materialien"><div class="download-card"><div><p class="hero-kicker">Materialien</p>${h2("dossier-materialien", "Weiterlesen und herunterladen")}<p class="card-text">Detailkonzept lesen oder die Dossierfassung herunterladen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">Detailkonzept lesen</a>${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>
+<section class="section reading-page" aria-labelledby="dossier-transparenz"><div class="card metadata-card"><p class="hero-kicker">Dokumentstand und Transparenz</p>${h2("dossier-transparenz", "Transparenz und Stand")}<dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Stand</dt><dd>Mai 2026</dd></div><div><dt>Status</dt><dd>Arbeits- und Diskussionsfassung</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl><p>Diese Onlinefassung ist eine Arbeits- und Diskussionsfassung der Wirkungsökonomie. Sie dient der fachlichen Weiterentwicklung und öffentlichen Nachvollziehbarkeit.</p></div></section>${sourceBlock()}${downloads(b, [dossierDoc])}`,
   });
 }
 
@@ -635,6 +715,7 @@ function updateSitemap() {
     "wirkungsfelder/arbeit-einkommen/",
     ...topDocuments.map(([slugName]) => `wirkungsfelder/arbeit-einkommen/${slugName}/`),
     ...pages.map(([slugName]) => `wirkungsfelder/arbeit-einkommen/${slugName}/`),
+    ...pages.map(([slugName]) => `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`),
     "erleben/automatisierungs-wirkungseinkommensrechner/",
     "werkzeuge/wirkungsfonds/",
     "werkzeuge/maschinenwertschoepfungsbeitrag/",
