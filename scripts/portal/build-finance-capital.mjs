@@ -11,6 +11,7 @@ const SRC = "docs/finanzsystem-kapital";
 const SOURCE = `${SRC}/source`;
 const EXTRACT = `${SRC}/docx-extracts`;
 const GO13 = `${SRC}/go13-detailkonzepte`;
+const GO14 = `${SRC}/go14-detailkonzepte`;
 
 const documents = [
   {
@@ -114,6 +115,41 @@ const go13DetailConcepts = [
   },
 ];
 
+const go14DetailConcepts = [
+  {
+    number: "33",
+    slug: "esg-ratings-boersen-impact-exchange",
+    title: "ESG-Ratings, Börsen und Impact Exchange",
+    subtitle: "ESG-Ratings werden vom Risikosignal zur überprüfbaren Kapitalwirkungslogik weiterentwickelt: mit Markttransparenz, WÖk-Mapping und Schutz vor Rating-Arbitrage.",
+    md: `${GO14}/online_volltext_33_esg-ratings-boersen-impact-exchange_detailkonzept_v1_0.md`,
+    docx: "33_woek_finanzsystem_kapital_esg_ratings_boersen_impact_exchange_detailkonzept_v1_0.docx",
+    pdf: "33_woek_finanzsystem_kapital_esg_ratings_boersen_impact_exchange_detailkonzept_v1_0.pdf",
+    tools: ["ESG-zu-WÖk-Mapping", "Portfolio-Wirkungsrating", "Kapitalwirkungscheck", "WÖk-IDs", "Scorecards"],
+  },
+  {
+    number: "34",
+    slug: "buergerinnenfonds-wirkungsrente-kapitalteilhabe",
+    title: "Bürger:innenfonds, Wirkungsrente und Teilhabe am Kapital",
+    subtitle: "Kapitalteilhabe, Wirkungsrente und Bürger:innenfonds verbinden Vorsorge, Beteiligung und Gemeinwohlfinanzierung ohne Anlageberatung oder Personenbewertung.",
+    md: `${GO14}/online_volltext_34_buergerinnenfonds-wirkungsrente-kapitalteilhabe_detailkonzept_v1_0.md`,
+    docx: "34_woek_finanzsystem_kapital_buergerinnenfonds_wirkungsrente_kapitalteilhabe_detailkonzept_v1_0.docx",
+    pdf: "34_woek_finanzsystem_kapital_buergerinnenfonds_wirkungsrente_kapitalteilhabe_detailkonzept_v1_0.pdf",
+    tools: ["Bürger:innenfonds- und Wirkungsdividenden-Simulator", "Wirkungsfonds-Simulator", "Vermögenswirkungscheck", "Erbschaftswirkungscheck", "T-SROI"],
+  },
+  {
+    number: "35",
+    slug: "steuer-abgabenarchitektur-kapital",
+    title: "Wirkungsorientierte Steuer- und Abgabenarchitektur des Kapitals",
+    subtitle: "Kapitalbezogene Steuern, Abgaben und Fonds werden als demokratisch gestaltbare Rückkopplungsarchitektur beschrieben, nicht als fertige Steuerberatung.",
+    md: `${GO14}/online_volltext_35_steuer-abgabenarchitektur-kapital_detailkonzept_v1_0.md`,
+    docx: "35_woek_finanzsystem_kapital_steuer_abgabenarchitektur_kapital_detailkonzept_v1_0.docx",
+    pdf: "35_woek_finanzsystem_kapital_steuer_abgabenarchitektur_kapital_detailkonzept_v1_0.pdf",
+    tools: ["Steuerarchitektur-Navigator", "Automatisierungsdividenden-Rechner", "Maschinenwertschöpfungsbeitrag-Rechner", "Vermögenswirkungscheck", "Erbschaftswirkungscheck"],
+  },
+];
+
+const financeDetailConcepts = [...go13DetailConcepts, ...go14DetailConcepts];
+
 const toolPages = [
   ["kapitalwirkungscheck", "Kapitalwirkungscheck", "Check", "Macht sichtbar, ob eine Kapitalentscheidung positive Netto-Wirkung ermöglicht oder negative Wirkung skaliert.", "Spezifikation online"],
   ["portfolio-wirkungsrating", "Portfolio-Wirkungsrating", "Rating", "Bewertet Portfolios nach NWI, T-SROI, Resilienz, Datenqualität, Transformationspfad und roten Linien.", "Spezifikation online"],
@@ -127,10 +163,16 @@ const toolPages = [
 const contextTools = [
   ...toolPages.map(([slug, title, type, text, status]) => ({ title, type, text, href: `werkzeuge/${slug}/`, status })),
   { title: "KMU-Datencheck / ESG-zu-WÖk-Mapping", type: "Mapping", text: "Übersetzt vorhandene ESG-, CSRD-, ESRS- und KMU-Datenanforderungen in einfache WÖk-Datenpfade.", href: "werkzeuge/esg-zu-woek-mapping/", status: "Demo in Vorbereitung" },
+  { title: "Scorecards", type: "Methode", text: "Machen Indikatoren, Gewichtungen, rote Linien und Bewertungslogik für Produkte, Unternehmen und Kapital vergleichbar.", href: "werkzeuge/scorecards/", status: "Erklärung vorhanden" },
   { title: "T-SROI", type: "Methode", text: "Bewertet Transformationswirkung und Systemhebel im Verhältnis zum Ressourceneinsatz.", href: "werkzeuge/impact-controlling/t-sroi/", status: "Erklärung vorhanden" },
   { title: "NWI", type: "Index", text: "Ordnet operative Netto-Wirkung über positive, negative und neutrale Wirkungen ein.", href: "werkzeuge/netto-wirkungs-index/", status: "Erklärung vorhanden" },
   { title: "WÖk-IDs", type: "Datenarchitektur", text: "Verbinden Wirkungsindikatoren, SDGs, SDG+, Quellen, Standards und Bewertungslogik.", href: "werkzeuge/woek-ids/", status: "Erklärung vorhanden" },
   { title: "Reverse Merit Order", type: "Schutzlogik", text: "Sorgt dafür, dass schwere negative Wirkung nicht durch positive Einzelwerte schöngerechnet wird.", href: "werkzeuge/reverse-merit-order/", status: "Erklärung vorhanden" },
+  { title: "Maschinenwertschöpfungsbeitrag-Rechner", type: "Rechner", text: "Modelliert, wie Maschinenleistung und Automatisierungsgewinne sozial, fiskalisch und innovationsfreundlich rückgekoppelt werden könnten.", href: "", status: "Demo in Vorbereitung" },
+  { title: "Vermögenswirkungscheck", type: "Check", text: "Prüft modellhaft, ob Kapitalbestände positive Netto-Wirkung ermöglichen, blockieren oder risikoreich konzentrieren.", href: "", status: "Demo in Vorbereitung" },
+  { title: "Erbschaftswirkungscheck", type: "Check", text: "Ordnet Erbschafts- und Vermögensübergänge nach Teilhabe, Gemeinwohlfinanzierung, Eigentumsschutz und demokratischer Zumutbarkeit ein.", href: "", status: "Demo in Vorbereitung" },
+  { title: "Bürger:innenfonds- und Wirkungsdividenden-Simulator", type: "Simulator", text: "Zeigt modellhaft, wie Kapitalerträge, Fondsarchitektur und Wirkungsdividenden für breite Teilhabe zusammenspielen könnten.", href: "", status: "Demo in Vorbereitung" },
+  { title: "Steuerarchitektur-Navigator", type: "Navigator", text: "Verknüpft WStG, WUStG, WEstG, kapitalbezogene Steuern, Abgabenlogik und Wirkungsfonds als Orientierungsmodell.", href: "", status: "Demo in Vorbereitung" },
 ];
 
 const sdgRefs = [
@@ -461,15 +503,15 @@ function documentUrl(doc) {
 }
 
 function publicationAccess(base) {
-  const go13Items = go13DetailConcepts.map((concept) => [concept.title, "Detailkonzept v1.0", concept.subtitle, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`, "Online lesen"]);
-  const items = [...go13Items, ...documents.map((doc) => [doc.shortTitle, "Online-Volltext", doc.description, documentUrl(doc), "Online lesen"])];
-  const go13Rows = go13DetailConcepts.map((concept) => `<tr><th scope="row">${esc(concept.title)}</th><td><a href="${href(base, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`)}">online lesen</a></td><td>${[concept.docx, concept.pdf].filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>")}</td></tr>`).join("");
-  const tableRows = `${go13Rows}${documents.map((doc) => `<tr><th scope="row">${esc(doc.shortTitle)}</th><td><a href="${href(base, documentUrl(doc))}">online lesen</a></td><td>${doc.downloads.filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>") || "Online-Seite"}</td></tr>`).join("")}`;
+  const detailItems = financeDetailConcepts.map((concept) => [concept.title, "Detailkonzept v1.0", concept.subtitle, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`, "Online lesen"]);
+  const items = [...detailItems, ...documents.map((doc) => [doc.shortTitle, "Online-Volltext", doc.description, documentUrl(doc), "Online lesen"])];
+  const detailRows = financeDetailConcepts.map((concept) => `<tr><th scope="row">${esc(concept.title)}</th><td><a href="${href(base, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`)}">online lesen</a></td><td>${[concept.docx, concept.pdf].filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>")}</td></tr>`).join("");
+  const tableRows = `${detailRows}${documents.map((doc) => `<tr><th scope="row">${esc(doc.shortTitle)}</th><td><a href="${href(base, documentUrl(doc))}">online lesen</a></td><td>${doc.downloads.filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>") || "Online-Seite"}</td></tr>`).join("")}`;
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", "Online lesen und herunterladen")}<p>Alle zentralen Dokumente sind online lesbar und über Abschnittsanker zitierfähig. Downloads sind Export und Archiv, nicht der Hauptzugang.</p></div>${cards(base, items)}<div class="table-wrap no-print" role="region" aria-label="Publikationszugang: Online lesen und herunterladen" tabindex="0"><table class="data-table"><thead><tr><th>Dokument</th><th>Online lesen</th><th>Download</th></tr></thead><tbody>${tableRows}</tbody></table></div></section>`;
 }
 
 function go13DetailGrid(base) {
-  return `<section class="section" aria-labelledby="go13-detailkonzepte"><div class="section-header"><p class="hero-kicker">Vertiefungen v1.0</p>${h2("go13-detailkonzepte", "Neue Detailkonzepte zu Finanzsystem & Kapital")}<p>Diese drei Fassungen sind die neuen fachlichen Vertiefungen für Kapitalwirkung, Wirkungsfonds und Kapitalzugang. Bestehende Portaltexte bleiben als Einstieg und Themenlandkarte erhalten.</p></div><div class="card-grid three">${go13DetailConcepts.map((concept) => `<article class="card"><p class="card-kicker">Detailkonzept · v1.0</p><h3 class="card-title">${esc(concept.title)}</h3><p class="card-text">${esc(concept.subtitle)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`)}">Online lesen</a><a class="text-link" href="${href(base, `assets/downloads/${concept.pdf}`)}">PDF</a><a class="text-link" href="${href(base, `assets/downloads/${concept.docx}`)}">Word</a></div></article>`).join("")}</div></section>`;
+  return `<section class="section" aria-labelledby="finance-detailkonzepte"><div class="section-header"><p class="hero-kicker">Vertiefungen v1.0</p>${h2("finance-detailkonzepte", "Echte Detailkonzepte zu Finanzsystem & Kapital")}<p>Diese Fassungen sind fachliche Vertiefungen mit vollständigem Online-Volltext. Bestehende Portaltexte bleiben als Einstieg und Themenlandkarte erhalten.</p></div><div class="card-grid three">${financeDetailConcepts.map((concept) => `<article class="card"><p class="card-kicker">Detailkonzept · v1.0</p><h3 class="card-title">${esc(concept.title)}</h3><p class="card-text">${esc(concept.subtitle)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`)}">Online lesen</a><a class="text-link" href="${href(base, `assets/downloads/${concept.pdf}`)}">PDF</a><a class="text-link" href="${href(base, `assets/downloads/${concept.docx}`)}">Word</a></div></article>`).join("")}</div></section>`;
 }
 
 function sdgBadge(base, [id, label, text, url], index) {
@@ -638,7 +680,7 @@ function updateSitemap() {
     "wirkungsfelder/finanzsystem-kapital/quellen/",
     "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/",
     ...modules.map(([slug]) => `wirkungsfelder/finanzsystem-kapital/${slug}/`),
-    ...go13DetailConcepts.map(({ slug }) => `wirkungsfelder/finanzsystem-kapital/${slug}/`),
+    ...financeDetailConcepts.map(({ slug }) => `wirkungsfelder/finanzsystem-kapital/${slug}/`),
     ...toolPages.map(([slug]) => `werkzeuge/${slug}/`),
   ]));
   let xml = fs.readFileSync(sitemap, "utf8");
@@ -652,7 +694,7 @@ function updateSitemap() {
 portalPage();
 for (const doc of documents) documentPage(doc);
 modules.forEach(modulePage);
-go13DetailConcepts.forEach(go13DetailPage);
+financeDetailConcepts.forEach(go13DetailPage);
 for (const tool of toolPages) toolPage(tool);
 libraryPage();
 updateSitemap();
