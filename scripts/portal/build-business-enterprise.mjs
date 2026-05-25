@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-wirtschaft-unternehmen";
-const JS_VERSION = "20260523-nachhaltigkeit";
+const JS_VERSION = "20260525-sprint-2";
 const SRC = "docs/wirtschaft-unternehmen/docx-extracts";
 
 const areas = [
@@ -329,14 +329,23 @@ function portalPage() {
       title: "Wirtschaft & Unternehmen",
       subtitle: "Unternehmen als Wirkungssysteme: Führung, Controlling, Wertschöpfung, Marketing und Risiko neu denken.",
       text: "Unternehmen organisieren Wirkung täglich. Die Wirkungsökonomie fragt, welche Zustandsveränderungen entstehen und wie Strategie, Kapital, Daten, Führung und Wertschöpfung auf positive Netto-Wirkung für Mensch, Planet und Demokratie ausgerichtet werden können.",
-      action: `<a class="btn btn-primary" href="${href(base, "werkstatt/dossiers/wirtschaft-unternehmen/")}">Gesamtdossier lesen</a>`,
+      action: `<a class="btn btn-primary" href="#subareas">Konzepte ansehen</a><a class="btn btn-secondary" href="#material">Arbeitsmaterial</a>`,
     })}
-    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section" aria-labelledby="subareas"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${sectionTitle("subareas", "Zentrale Unterbereiche")}<p>Jeder Unterbereich hat ein Detailkonzept und ein Einzeldossier als Online-Volltext.</p></div>${cardGrid(base, areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" })))}</section>
+    <section class="section" aria-labelledby="why-business"><div class="section-header"><p class="hero-kicker">Warum wichtig?</p>${sectionTitle("why-business", "Warum Wirtschaft & Unternehmen ein Wirkungsfeld sind")}<p>Unternehmen treffen täglich Entscheidungen über Produkte, Arbeit, Kapital, Daten, Einkauf, Kommunikation und Risiko. Damit prägen sie, welche Folgen für Menschen, Ökosysteme, Institutionen und Demokratie entstehen.</p></div>${cardGrid(base, [
+      { title: "Unternehmen steuern Wirkungsströme", text: "Beschaffung, Produktion, Vertrieb und Finanzierung erzeugen Zustandsveränderungen weit über die Organisation hinaus." },
+      { title: "Wertschöpfung braucht Rückkopplung", text: "Gewinn bleibt wichtig, reicht als alleiniger Maßstab aber nicht aus, wenn Schäden externalisiert werden." },
+      { title: "Management wird lernfähig", text: "Daten, Controlling und Governance können Wirkung sichtbar machen, ohne Entscheidungen zu automatisieren." },
+    ])}</section>
+    <section class="section" aria-labelledby="business-logic"><div class="section-header"><p class="hero-kicker">Systemblick</p>${sectionTitle("business-logic", "Alte Logik vs. WÖk-Logik")}</div><div class="comparison-grid"><article class="card"><p class="card-kicker">Heutige Logik</p><h3 class="card-title">Was oft zu eng gemessen wird</h3><ul class="clean-list"><li>Erfolg wird primär über Umsatz, Marge und Wachstum gelesen.</li><li>Risiken erscheinen oft erst in Berichtspflichten oder Krisen.</li><li>Lieferketten- und Produktwirkung bleiben vom Steuerungsalltag getrennt.</li></ul></article><article class="card"><p class="card-kicker">WÖk-Logik</p><h3 class="card-title">Was zusätzlich steuerbar wird</h3><ul class="clean-list"><li>Strategie, Risiko, Kapital und Controlling werden an Wirkung gekoppelt.</li><li>Negative Wirkung wird als Kosten-, Vertrauens- und Zukunftsrisiko sichtbar.</li><li>Positive Netto-Wirkung wird zu einem Management- und Investitionssignal.</li></ul></article></div></section>
+    <section class="section" id="subareas" aria-labelledby="subareas-title"><div class="section-header"><p class="hero-kicker">Zentrale Konzepte</p>${sectionTitle("subareas-title", "Zentrale Unterbereiche")}<p>Die Karten führen in die wichtigsten Konzepte. Downloadfassungen und Dossiers stehen am Ende.</p></div>${cardGrid(base, areas.map(([slug, title, text]) => ({ title, text: `${text} Warum relevant? Der Unterbereich zeigt, wie Unternehmensentscheidungen an Wirkung rückgekoppelt werden können.`, href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/`, label: "Konzept lesen" })))}</section>
     ${toolGrid(base)}
     ${politicalBlock()}
     ${sdgBlock()}
     ${bookBlock(base)}
+    <section class="section" id="material" aria-labelledby="material-title"><div class="section-header"><p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>${sectionTitle("material-title", "Onlinefassungen, Dossiers und Downloads")}<p>Hier findest du die fachlichen Langfassungen und Downloadmaterialien.</p></div>${cardGrid(base, [
+      { title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Praxisfragen, Bewertungslogik und politische Anschlussfähigkeit.", href: "werkstatt/dossiers/wirtschaft-unternehmen/", label: "Dossier lesen" },
+      { title: "Arbeitsbibliothek", text: "Übersicht der Materialien zu diesem Wirkungsfeld.", href: "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/", label: "Arbeitsmaterial ansehen" },
+    ])}</section>
     ${downloadBlock(base, [
       { label: "Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" },
       { label: "Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" },

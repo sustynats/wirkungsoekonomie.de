@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260525-result-interpretation";
-const JS_VERSION = "20260525-result-interpretation";
+const JS_VERSION = "20260525-sprint-2";
 
 const sources = {
   productTax: "docs/praxis/Produktbesteuerung_durch_Wirkung_v1.1.md",
@@ -1084,54 +1084,61 @@ function productPortal() {
       subtitle: "Wie die Wirkungsökonomie Preise, Märkte und Kaufentscheidungen neu ordnet.",
       text:
         "Der heutige Preis eines Produkts zeigt, was es kostet, aber nicht, was es bewirkt. Die Wirkungsökonomie macht Produktwirkung sichtbar und koppelt sie an Preise, Steuern, Lieferketten und Konsumentscheidungen zurück.",
-      actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/")}">Modellbereich öffnen</a>`,
+      actions: `<a class="btn btn-primary" href="#konzepte">Konzepte ansehen</a><a class="btn btn-secondary" href="#material">Arbeitsmaterial</a>`,
     })}
-    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${productStatus("Portal / erster tiefer Modellbereich")}</section>
     <section class="section" aria-labelledby="price-lie">
       <div class="section-header">
-        <p class="hero-kicker">Ausgangspunkt</p>
-        ${sectionTitle("price-lie", "Warum Preise heute lügen")}
-        <p>Preise zeigen Kapitalaufwand, Knappheit, Margen und Steuern. Sie zeigen aber nicht zuverlässig Wasserstress, Arbeitsbedingungen, Biodiversität, Gesundheitsfolgen, Datenintegrität oder demokratische Risiken.</p>
+        <p class="hero-kicker">Warum wichtig?</p>
+        ${sectionTitle("price-lie", "Warum Produkte & Konsum ein Wirkungsfeld sind")}
+        <p>Produkte bündeln Rohstoffe, Arbeit, Energie, Transport, Nutzung, Entsorgung, Werbung und Daten. Konsumentscheidungen wirken deshalb nicht nur privat, sondern auf Lieferketten, Gesundheit, Klima, Arbeitsrechte und Vertrauen.</p>
       </div>
       ${cardGrid(base, [
-        { title: "Produkt als Wirkungsträger", text: "Ein Produkt trägt Wirkung über Rohstoffe, Herstellung, Nutzung, Lieferkette, Verpackung, Entsorgung und Information." },
-        { title: "Steuer als Rückkopplung", text: "Steuern werden nicht als bloße Einnahmequelle gedacht, sondern als Feedback auf geprüfte Produktwirkung." },
-        { title: "Wettbewerb um positive Netto-Wirkung", text: "Bessere Produkte sollen nicht nur moralisch gelobt, sondern preislich und systemisch anschlussfähig werden." },
+        { title: "Preise zeigen nicht alles", text: "Der Verkaufspreis bildet Kosten, Margen und Steuern ab, aber kaum Wasserstress, Gesundheitsfolgen, Biodiversität, Arbeitsbedingungen oder Datenqualität." },
+        { title: "Produkte tragen Wirkung", text: "Jedes Produkt wirkt über Material, Herstellung, Lieferkette, Nutzung, Reparierbarkeit, Entsorgung und Verbraucherinformation." },
+        { title: "Konsum steuert Märkte", text: "Wenn Wirkung sichtbar wird, können Wettbewerb, Beschaffung, Steuern und Kaufentscheidungen bessere Produkte belohnen." },
       ])}
     </section>
-    <section class="section" aria-labelledby="how-it-works">
+    <section class="section" aria-labelledby="old-vs-woek">
       <div class="section-header">
-        <p class="hero-kicker">Modelllogik</p>
-        ${sectionTitle("how-it-works", "So funktioniert Produktbesteuerung durch Wirkung")}
-        <p>Die Bewertung beginnt nicht beim Bauchgefühl, sondern bei Daten, NACE-Zuordnung, ${toolRef(base, "WÖk-IDs", "werkzeuge/woek-ids/", "Eindeutige Indikatoren mit Quelle, Einheit, Schwelle und Version.")}, Produktscorecards, FinalScore, Reverse Merit Order, Steuerklasse, Vorsteuerlogik und Verbraucherinformation.</p>
+        <p class="hero-kicker">Systemblick</p>
+        ${sectionTitle("old-vs-woek", "Alte Logik vs. WÖk-Logik")}
       </div>
-      <div class="process-steps">
-        ${["Produkt identifizieren", "NACE und Wirkungsfelder zuordnen", "WÖk-IDs und Datenquellen prüfen", "Scorecard bewerten", "Reverse Merit Order anwenden", "FinalScore und Steuerklasse modellieren", "Verbraucherinformation ausgeben"].map((step, index) => `<article class="card"><p class="card-kicker">Schritt ${index + 1}</p><h3 class="card-title">${escapeHtml(step)}</h3></article>`).join("")}
+      <div class="comparison-grid">
+        <article class="card">
+          <p class="card-kicker">Heutige Logik</p>
+          <h3 class="card-title">Was oft unsichtbar bleibt</h3>
+          <ul class="clean-list">
+            <li>Preis zeigt meist Kosten, Marge und Steuer.</li>
+            <li>Lieferkettenwirkung bleibt verteilt und schwer prüfbar.</li>
+            <li>Schäden können billig bleiben, wenn sie externalisiert werden.</li>
+            <li>Verbraucherinformation ist oft zu grob oder werblich.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <p class="card-kicker">WÖk-Logik</p>
+          <h3 class="card-title">Was anders bewertet wird</h3>
+          <ul class="clean-list">
+            <li>Produktwirkung wird entlang des Lebenszyklus sichtbar.</li>
+            <li>Datenqualität, Scorecards und WÖk-IDs machen Annahmen prüfbar.</li>
+            <li>Negative Wirkung begrenzt Entlastung statt schöngerechnet zu werden.</li>
+            <li>Preise, Steuern und Beschaffung werden an Wirkung rückgekoppelt.</li>
+          </ul>
+        </article>
       </div>
     </section>
-    <section class="section" aria-labelledby="examples">
+    <section class="section" id="konzepte" aria-labelledby="concepts">
       <div class="section-header">
-        <p class="hero-kicker">Online lesen</p>
-        ${sectionTitle("examples", "Produktbesteuerung als Volltext und Beispiele")}
-        <p>PDFs und Word-Dateien bleiben ergänzend. Der Hauptzugang liegt hier online lesbar in den Portalseiten.</p>
+        <p class="hero-kicker">Zentrale Konzepte</p>
+        ${sectionTitle("concepts", "Was Produkte & Konsum neu sichtbar machen")}
+        <p>Die Konzepte sind Einstiegskarten. Vertiefungen und Arbeitsmaterial stehen unten.</p>
       </div>
       ${cardGrid(base, [
-        { title: "Produkte als Wirkungsträger", text: "Echtes Detailkonzept zu Lebenszyklus, Lieferkette, Nutzung, Ende, Produktverantwortung und Verbraucherinformation.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Detailkonzept lesen" },
-        { title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Echtes Detailkonzept zu FinalScore, Steuerklasse, Vorsteuerlogik, Kaufkraftschutz, KMU-Übergängen und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Detailkonzept lesen" },
-        { title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe", text: "Echtes Detailkonzept zu Scorecards, WÖk-IDs, DPP, Datenqualität, Assurance und Engpasslogik.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Detailkonzept lesen" },
-        { title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag", text: "Go-9-Detailkonzept zu Produktidentifikation, Scorecard, Steuerklasse, Preisschild und Verbraucherinformation am Alltagsbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", label: "Detailkonzept lesen" },
-        { title: "Lieferketten, Importlogik und Wirkungsvorsteuer", text: "Go-9-Detailkonzept zu Vorleistungen, Importen, Bonuslogik, Supplier Scorecards, DPP und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/", label: "Detailkonzept lesen" },
-        { title: "Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard", text: "Go-9-Detailkonzept zur Übersetzung von CSRD-/ESRS-Daten in Produktgruppen-Scorecards.", href: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/", label: "Detailkonzept lesen" },
-        { title: "Produktbesteuerung durch Wirkung", text: "Vollständige Online-Fassung des Produktpapiers mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
-        { title: "Regionaler Apfel vs. Chile-Apfel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
-        { title: "T-Shirt / Textilbeispiel", text: "Modellseite für Baumwolle, Färbung, Arbeit, Transport, Nutzungsdauer und Kreislauffähigkeit.", href: "wirkungsfelder/produkte-konsum/t-shirt/" },
-        { title: "Wirkungsökonomie in der Lieferkette", text: "Warum Vorleistungen, Lieferanten, DPPs und rote Linien in der Kette entscheidend sind.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },
-        { title: "Von der CSRD zur Produktscorecard", text: "Konzern-/BASF-Polyamid-Beispiel für den Weg von Berichtsdaten zu Produktgruppen.", href: "wirkungsfelder/produkte-konsum/basf-polyamid/" },
-        { title: "Dossier Produkte & Konsum", text: "Rechenmodell V0.1, Tarifmatrix, Beispieltabellen, Datenquellen und Tool-Spezifikation online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/" },
-        { title: "Verbraucherinformation", text: "Wirkungspunkte, Steuerklassen, Produktlabel und Regaltransparenz ohne Personenbewertung.", href: "wirkungsfelder/produkte-konsum/verbraucherinformation/" },
-        { title: "Unternehmen", text: "Was Produktwirkung für Produktentwicklung, Einkauf, Controlling, Reporting und Lieferketten bedeutet.", href: "wirkungsfelder/produkte-konsum/unternehmen/" },
-        { title: "Politische Rahmenbedingungen", text: "WStG, WUStG, Wirkungsrat, Leitlinien, Übergänge, Datenschutz und Kaufkraftschutz.", href: "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/" },
+        { title: "Produkte als Wirkungsträger", text: "Produkte wirken über Rohstoffe, Herstellung, Transport, Nutzung, Reparatur, Entsorgung und Information. Warum relevant? Wirkung wird vom Einzelkauf bis zur Lieferkette sichtbar.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Konzept lesen" },
+        { title: "Wirkungsumsatzsteuer", text: "Steuerlogik wird als Rückkopplung auf geprüfte Produktwirkung verstanden. Warum relevant? Schädliche Wirkung soll sich nicht länger rechnen.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Konzept lesen" },
+        { title: "Produktscorecards", text: "Scorecards bündeln Indikatoren, Datenqualität und Engpasslogik. Warum relevant? Sie machen Bewertungen nachvollziehbar und prüfbar.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Konzept lesen" },
+        { title: "Reverse Merit Order", text: "Schwere negative Wirkung kann positive Teilwerte begrenzen. Warum relevant? Schäden werden nicht durch gute Einzelwerte überdeckt.", href: "werkzeuge/reverse-merit-order/", label: "Methodik lesen" },
+        { title: "Digitale Produktpässe", text: "Produktdaten werden als Nachweis- und Lerninfrastruktur verstanden. Warum relevant? Ohne Datenqualität bleibt Wirkung Behauptung.", href: "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/", label: "Methodik lesen" },
+        { title: "Verbraucherinformation", text: "Wirkungspunkte, Steuerklassen und Hinweise sollen verständlich werden, ohne Menschen zu bewerten. Warum relevant? Kaufentscheidungen brauchen klare Information.", href: "wirkungsfelder/produkte-konsum/verbraucherinformation/", label: "Vertiefung lesen" },
       ], "three")}
     </section>
     ${toolCards(base)}
@@ -1143,8 +1150,8 @@ function productPortal() {
       </div>
       ${cardGrid(base, [
         { title: "Produktwirkungsrechner", text: "Bio-Apfel, Chile-Apfel, T-Shirt oder Polyamid auswählen, Scores prüfen und Steuerklasse simulieren.", href: "erleben/produktwirkungsrechner/", label: "Rechner öffnen" },
-        { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Demo öffnen" },
-        { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Demo öffnen" },
+        { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Tool testen" },
+        { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Beispiel ansehen" },
         { title: "Wirkungsscanner", text: "Scanner für erste Wirkungsfragen im Alltag und in Organisationen.", href: "anwendungen/scanner.html", label: "Scanner öffnen" },
       ])}
     </section>
@@ -1162,10 +1169,22 @@ function productPortal() {
         { title: "Für Politik und Verwaltung", text: "Pilotierung, Rechtsschutz, Datenschutz und Wirkungsrat sichern die Einführung ab." },
       ])}
     </section>
-    ${politicalBlock(base, "Das Produktportal")}
+    ${politicalBlock(base, "Dieses Wirkungsfeld")}
     ${sdgBlock(base, "Produktbesteuerung berührt Ernährung, Gesundheit, Wasser, Arbeit, Industrie, Ungleichheit, Konsum, Klima, Biodiversität, Institutionen und internationale Kooperation. SDG+ ergänzt dort, wo Produktdaten, Werbung, Plattformen, Transparenz und Vertrauen demokratische Wirkung entfalten.")}
     ${bookBlock(base)}
     ${externalSourcesBlock(base)}
+    <section class="section" id="material" aria-labelledby="material-title">
+      <div class="section-header">
+        <p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>
+        ${sectionTitle("material-title", "Onlinefassung, Beispiele und Downloads")}
+        <p>Die Materialien stehen am Ende, damit die Seite zuerst Orientierung gibt und dann in die fachliche Vertiefung führt.</p>
+      </div>
+      ${cardGrid(base, [
+        { title: "Onlinefassung Produktbesteuerung", text: "Langfassung mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Onlinefassung lesen" },
+        { title: "Apfelbeispiel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/", label: "Beispiel ansehen" },
+        { title: "Lieferketten", text: "Vertiefung zu Vorleistungen, Lieferanten, Produktpässen und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten/", label: "Vertiefung lesen" },
+      ])}
+    </section>
     ${downloadBlock(base, [
       { label: "Downloads öffnen", href: "downloads.html" },
       ...conceptDownloads,
