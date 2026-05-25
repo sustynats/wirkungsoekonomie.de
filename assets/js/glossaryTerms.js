@@ -797,6 +797,26 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "wirkungsfonds",
+    "label": "Wirkungsfonds",
+    "aliases": [
+      "Transformationsfonds",
+      "Rückkopplungsfonds"
+    ],
+    "definition": "Ein Wirkungsfonds ist ein transparenter Fondsmechanismus für Rückflüsse aus Wertschöpfung, Beiträgen oder Wirkungssteuerlogik.",
+    "url": "/begriffe/wirkungsfonds/",
+    "priority": 43,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "wirkungsgrenze",
     "label": "Wirkungsgrenze",
     "aliases": [
@@ -805,7 +825,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
     "url": "/begriffe/wirkungsgrenze/",
-    "priority": 43,
+    "priority": 44,
     "allowedContexts": [
       "home",
       "page",
@@ -822,7 +842,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung.",
     "url": "/begriffe/wirkungshaushalt/",
-    "priority": 44,
+    "priority": 45,
     "allowedContexts": [
       "home",
       "page",
@@ -839,7 +859,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
     "url": "/begriffe/wirkungskompetenz/",
-    "priority": 45,
+    "priority": 46,
     "allowedContexts": [
       "home",
       "page",
@@ -856,7 +876,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
     "url": "/begriffe/wirkungslenkung/",
-    "priority": 46,
+    "priority": 47,
     "allowedContexts": [
       "home",
       "page",
@@ -873,7 +893,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
     "url": "/begriffe/wirkungsnetz/",
-    "priority": 47,
+    "priority": 48,
     "allowedContexts": [
       "home",
       "page",
@@ -892,7 +912,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
     "url": "/begriffe/wirkungspfad/",
-    "priority": 48,
+    "priority": 49,
     "allowedContexts": [
       "home",
       "page",
@@ -911,7 +931,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
     "url": "/begriffe/wirkungspflicht-des-eigentums/",
-    "priority": 49,
+    "priority": 50,
     "allowedContexts": [
       "home",
       "page",
@@ -930,7 +950,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
     "url": "/begriffe/wirkungspotenzial/",
-    "priority": 50,
+    "priority": 51,
     "allowedContexts": [
       "home",
       "page",
@@ -950,7 +970,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
     "url": "/begriffe/wirkungspunkte/",
-    "priority": 51,
+    "priority": 52,
     "allowedContexts": [
       "home",
       "page",
@@ -967,7 +987,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
     "url": "/begriffe/wirkungsradar/",
-    "priority": 52,
+    "priority": 53,
     "allowedContexts": [
       "home",
       "page",
@@ -984,7 +1004,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
     "url": "/begriffe/wirkungsrat/",
-    "priority": 53,
+    "priority": 54,
     "allowedContexts": [
       "home",
       "page",
@@ -1001,7 +1021,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
     "url": "/begriffe/wirkungsraum/",
-    "priority": 54,
+    "priority": 55,
     "allowedContexts": [
       "home",
       "page",
@@ -1020,7 +1040,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
     "url": "/begriffe/wirkungsrente/",
-    "priority": 55,
+    "priority": 56,
     "allowedContexts": [
       "home",
       "page",
@@ -1039,7 +1059,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungsresilienz/",
-    "priority": 56,
+    "priority": 57,
     "allowedContexts": [
       "home",
       "page",
@@ -1056,7 +1076,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
     "url": "/begriffe/wirkungsrisiko/",
-    "priority": 57,
+    "priority": 58,
     "allowedContexts": [
       "home",
       "page",
@@ -1075,7 +1095,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert.",
     "url": "/begriffe/wirkungsrueckkopplung/",
-    "priority": 58,
+    "priority": 59,
     "allowedContexts": [
       "home",
       "page",
@@ -1094,7 +1114,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
     "url": "/begriffe/wirkungssteuer/",
-    "priority": 59,
+    "priority": 60,
     "allowedContexts": [
       "home",
       "page",
@@ -1114,7 +1134,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
     "url": "/begriffe/wirkungssteuergesetz/",
-    "priority": 60,
+    "priority": 61,
     "allowedContexts": [
       "home",
       "page",
@@ -1131,7 +1151,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
     "url": "/begriffe/wirkungstraeger/",
-    "priority": 61,
+    "priority": 62,
     "allowedContexts": [
       "home",
       "page",
@@ -1151,7 +1171,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
     "url": "/begriffe/wirkungsumsatzsteuer/",
-    "priority": 62,
+    "priority": 63,
     "allowedContexts": [
       "home",
       "page",
@@ -1170,7 +1190,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
     "url": "/begriffe/wirkungsvermietung/",
-    "priority": 63,
+    "priority": 64,
     "allowedContexts": [
       "home",
       "page",
@@ -1189,7 +1209,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
     "url": "/begriffe/wirkungswahrheit/",
-    "priority": 64,
+    "priority": 65,
     "allowedContexts": [
       "home",
       "page",
@@ -1209,7 +1229,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
     "url": "/begriffe/wix-vi/",
-    "priority": 65,
+    "priority": 66,
     "allowedContexts": [
       "home",
       "page",
@@ -1228,7 +1248,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
     "url": "/begriffe/wohnwirkung/",
-    "priority": 66,
+    "priority": 67,
     "allowedContexts": [
       "home",
       "page",
@@ -1249,7 +1269,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
     "url": "/begriffe/woek-id/",
-    "priority": 67,
+    "priority": 68,
     "allowedContexts": [
       "home",
       "page",
@@ -1268,7 +1288,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
     "url": "/begriffe/wstg/",
-    "priority": 68,
+    "priority": 69,
     "allowedContexts": [
       "home",
       "page",
@@ -1287,7 +1307,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
-    "priority": 69,
+    "priority": 70,
     "allowedContexts": [
       "home",
       "page",

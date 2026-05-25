@@ -28,6 +28,10 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Website-Integration/g, "Einordnung auf der Website"],
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
   [/Demo in Vorbereitung/g, "Methodenseite"],
+  [/Portal der Wirkungsökonomie/g, "Website der Wirkungsökonomie"],
+  [/Produktportal/g, "Produktbereich"],
+  [/Erklärung vorhanden/g, "Methodik"],
+  [/Download wird ergänzt/g, "Arbeitsmaterial"],
   [/Toolkarte öffnen/g, "Toolkarte ansehen"],
   [/Audio verfügbar\. Transkript in Bearbeitung\./g, "Audio verfügbar."],
   [/Methodendokumentation folgt/g, "Methodik und Annahmen"],
@@ -41,6 +45,8 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Detailkonzept \+ Dossier/g, "Vertiefung"],
   [/Einzeldossier-Set/g, "Einzeldossiers"],
   [/Dossier & Export/g, "Vertiefung"],
+  [/Export & Archiv/g, "Arbeitsmaterial"],
+  [/Dokumentenmatrix/g, "Materialübersicht"],
   [/Export- und Archivfassungen/g, "ergänzende Downloadfassungen"],
   [/Export- und Archiv/g, "Download"],
   [/Export und Archiv/g, "Download"],
@@ -75,6 +81,29 @@ function publicSearchValue(value) {
     return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, publicSearchValue(item)]));
   }
   return value;
+}
+
+function normalizeSearchRoute(url) {
+  return String(url || "").replace(/#.*$/, "").replace(/\/index\.html$/, "/");
+}
+
+function isLowValueEntry(entry) {
+  const route = normalizeSearchRoute(entry.url);
+  const title = String(entry.title || "");
+  const section = String(entry.section || "");
+  if (/\/(impressum|datenschutz|ueber|mitmachen)(\.html|\/)?$/i.test(route)) return true;
+  if (/footer|navigation|kontakt/i.test(title) || /footer|navigation/i.test(section)) return true;
+  if (/^\/referenz\/kapitel-\d{3}-.+#/i.test(String(entry.url || "")) && /Endnoten|Quellen/i.test(title)) return true;
+  return false;
+}
+
+function normalizePriority(entry) {
+  if (!isLowValueEntry(entry)) return entry;
+  return {
+    ...entry,
+    priority: Math.min(Number(entry.priority || 0), 8),
+    tags: [...(Array.isArray(entry.tags) ? entry.tags : []), "Suchindex nachrangig"],
+  };
 }
 
 function hash(value) {
@@ -232,6 +261,7 @@ const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsW
 for (const entry of generated) byUrl.set(entry.url, entry);
 const merged = Array.from(byUrl.values())
   .map(publicSearchValue)
+  .map(normalizePriority)
   .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
 
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);

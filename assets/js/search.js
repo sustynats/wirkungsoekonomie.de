@@ -41,6 +41,13 @@
     downloads: 14,
     weitere: 0,
   };
+  const CURATED_QUERY_ROUTES = {
+    wirkung: ["/begriffe/wirkung/", "/modell.html", "/kompass.html", "/wirkungsoekonomie.html"],
+    "netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
+    "positive netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
+    wirkungseinkommen: ["/begriffe/wirkungseinkommen/", "/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/"],
+    bildung: ["/wirkungsfelder/bildung/", "/begriffe/wirkungskompetenz/"],
+  };
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;
@@ -166,6 +173,28 @@
       return "grundlagen";
     }
     return "weitere";
+  }
+
+  function normalizeRoute(url) {
+    return String(url || "").replace(/#.*$/, "").replace(/\/index\.html$/, "/");
+  }
+
+  function isLowValueSearchEntry(entry) {
+    const route = normalizeRoute(entry.url);
+    const title = normalize(entry.title);
+    const section = normalize(entry.section);
+    if (/\/(impressum|datenschutz|ueber|mitmachen)(\.html|\/)?$/i.test(route)) return true;
+    if (title.includes("footer") || title.includes("navigation") || title.includes("kontakt")) return true;
+    if (section.includes("footer") || section.includes("navigation")) return true;
+    return false;
+  }
+
+  function curatedRouteBoost(entry, rawQuery) {
+    const query = normalize(rawQuery);
+    const route = normalizeRoute(entry.url);
+    const routes = CURATED_QUERY_ROUTES[query] || [];
+    const index = routes.indexOf(route);
+    return index >= 0 ? 360 - index * 45 : 0;
   }
 
   function getGroupLabel(groupId) {
@@ -334,6 +363,8 @@
     const keywordHaystack = entry._keywordHaystack || getEntryKeywordHaystack(entry);
     const groupId = entry._group || classifyEntry(entry);
     let score = Number(entry.priority || 0) + Number(GROUP_SCORE_BONUS[groupId] || 0);
+    if (isLowValueSearchEntry(entry)) score -= 500;
+    score += curatedRouteBoost(entry, rawQuery);
 
     if (containsQuery(title, query)) score += 120;
     if (containsQuery(aliases, query)) score += 90;
@@ -443,18 +474,19 @@
 
   function getDefaultResults() {
     const preferred = [
-      "/verstehen.html",
-      "/modell.html",
+      "/begriffe/wirkung/",
       "/kompass.html",
-      "/fuer/",
-      "/anwendungen.html",
+      "/modell.html",
+      "/wirkungsoekonomie.html",
+      "/wirkungsfelder/",
+      "/erleben.html",
       "/anwendungen/scanner.html",
-      "/glossar.html",
-      "/evidenz/",
+      "/begriffe/positive-netto-wirkung/",
     ];
     const byUrl = new Map(state.index.map((entry) => [String(entry.url || ""), entry]));
     const seeded = preferred.map((url) => byUrl.get(url)).filter(Boolean);
     const fallback = state.index
+      .filter((entry) => !isLowValueSearchEntry(entry))
       .slice()
       .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0))
       .filter((entry) => !seeded.includes(entry))

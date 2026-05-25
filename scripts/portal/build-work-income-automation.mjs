@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260525-result-interpretation";
-const JS_VERSION = "20260525-result-interpretation";
+const JS_VERSION = "20260525-sprint-2";
 const SRC = "docs/arbeit-einkommen/docx-extracts";
 const WEB = "docs/arbeit-einkommen/source";
 
@@ -466,9 +466,9 @@ function automationCalculator(b) {
         <label>Arbeitnehmer-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.0" data-auto-input="employeeRate"></label>
         <label>erwartete Automatisierungsquote in Prozent<input type="range" min="0" max="100" step="1" value="35" data-auto-input="automationRate"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">Beispielwerte aktiv</strong></div>
         </div>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, welcher Finanzierungsanteil im alten System gefährdet wäre, wenn Lohnarbeit wegfällt.</p>
         <p class="why-relevant"><strong>Warum relevant?</strong> Sozialstaatliche Stabilität hängt heute stark an Lohnsumme und Erwerbsarbeit.</p>
@@ -481,8 +481,8 @@ function automationCalculator(b) {
         <label>${termTip("Rückkopplungsquote", "Der Anteil automatisierter Wertschöpfung, der in soziale Sicherung oder Wirkungsfonds zurückgeführt wird.")} in Prozent<input type="number" min="0" max="100" step="0.1" value="6" data-auto-input="feedbackRate"></label>
         <label>${termTip("Wirkungsfaktor", "Ein Zu- oder Abschlag, der zeigt, ob Automatisierung eher entlastet, neutral wirkt, verdrängt oder extraktiv ist.")} von -3 bis +3<input type="range" min="-3" max="3" step="1" value="0" data-auto-input="impactFactor"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>Beitrag</span><strong data-auto-result="machineContribution">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>Faktor</span><strong data-auto-result="impactFactorLabel">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Beitrag</span><strong data-auto-result="machineContribution">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Faktor</span><strong data-auto-result="impactFactorLabel">Beispielwerte aktiv</strong></div>
         </div>
         <p class="card-text" data-auto-result="impactReason">Der Wirkungsfaktor verändert den Beitrag je nach Entlastung oder Belastung.</p>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, welcher Betrag modellhaft aus automatisierter Wertschöpfung zurückgeführt werden könnte.</p>
@@ -497,9 +497,9 @@ function automationCalculator(b) {
         <label>Anteil Produktivitätsgewinn an Beschäftigte / Kund:innen / Fonds<input type="number" min="0" max="100" step="1" value="35" data-auto-input="sharedGain"></label>
         <label>regionale Stabilisierung<select data-auto-input="regionalStability"><option value="low">niedrig</option><option value="medium" selected>mittel</option><option value="high">hoch</option></select></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>Transformationsbonus</span><strong data-auto-result="bonus">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>reduzierter Beitrag</span><strong data-auto-result="reducedContribution">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>Wirkungsprofil</span><strong data-auto-result="profile">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Transformationsbonus</span><strong data-auto-result="bonus">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>reduzierter Beitrag</span><strong data-auto-result="reducedContribution">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Wirkungsprofil</span><strong data-auto-result="profile">Beispielwerte aktiv</strong></div>
         </div>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, ob Automatisierung sozial abgefedert wird oder eher verdrängend wirkt.</p>
         <p class="why-relevant"><strong>Warum relevant?</strong> Die WÖk unterscheidet zwischen entlastender und verdrängender Automatisierung.</p>
@@ -512,10 +512,10 @@ function automationCalculator(b) {
         <label>Wirkungsbonus<input type="number" min="0" step="50" value="250" data-auto-input="impactBonus"></label>
         <label>Fondsanteil (${termTip("Wirkungsfonds", "Ein Fonds, der Rückflüsse aus Wertschöpfung in Bildung, Sicherung, Weiterbildung und Transformation lenken könnte.")})<input type="number" min="0" step="50" value="150" data-auto-input="fundShare"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>Gesamteinkommen</span><strong data-auto-result="totalIncome">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>Grundsicherheit</span><strong data-auto-result="baseShare">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>Markt</span><strong data-auto-result="marketShare">wird berechnet</strong></div>
-          <div class="impact-kpi"><span>Wirkung/Fonds</span><strong data-auto-result="impactShare">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Gesamteinkommen</span><strong data-auto-result="totalIncome">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Grundsicherheit</span><strong data-auto-result="baseShare">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Markt</span><strong data-auto-result="marketShare">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Wirkung/Fonds</span><strong data-auto-result="impactShare">Beispielwerte aktiv</strong></div>
         </div>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt ein mögliches Einkommensmodell, das nicht nur Erwerbsarbeit berücksichtigt, sondern auch Grundsicherheit, Wirkung und gesellschaftliche Rückkopplung.</p>
         <p class="why-relevant"><strong>Warum relevant?</strong> Einkommen wird als Teilhabe-, Sicherungs- und Wirkungsfrage lesbar, nicht nur als Lohnfrage.</p>

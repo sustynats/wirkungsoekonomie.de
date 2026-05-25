@@ -31,12 +31,12 @@ document.querySelectorAll(".article-status-note").forEach((note) => note.remove(
 if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
-    ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/"],
+    ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
-    ["Werkzeuge", "werkzeuge/", "werkzeuge/|erleben.html|erleben/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
+    ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
-    ["Werkstatt / Downloads", "werkstatt/", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/"],
-    ["Mitmachen", "mitmachen.html", "mitmachen.html|mitmachen/|ueber.html|ueber/"],
+    ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
+    ["Suche", "suche.html", "suche.html"],
   ];
   siteNav.innerHTML = navItems
     .map(([label, url, match]) => `<a href="${relativeSiteUrl(url)}" data-nav-match="${match}">${label}</a>`)
@@ -80,7 +80,7 @@ if (navToggle && siteNav) {
   });
 }
 
-if (siteNav && !document.querySelector(".site-search-shortcut")) {
+if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(siteNav.querySelectorAll("a")).some((link) => /suche\.html/.test(link.getAttribute("href") || ""))) {
   const searchLink = document.createElement("a");
   searchLink.href = relativeSiteUrl("suche.html");
   searchLink.className = "site-search-shortcut";
@@ -1157,6 +1157,9 @@ function initGo5WirtschaftDetailkonzepte() {
 
   const path = window.location.pathname.replace(/\/index\.html$/, "/");
   if (path !== "/wirkungsfelder/wirtschaft-unternehmen/") {
+    return;
+  }
+  if (document.querySelector("#why-business, #business-logic, #subareas")) {
     return;
   }
 
