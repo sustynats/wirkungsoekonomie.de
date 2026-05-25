@@ -130,6 +130,8 @@ def shade_cell(cell, fill: str) -> None:
 
 
 def add_title_page(document: Document, meta: dict[str, str | bool], signet: Path | None) -> None:
+    if not meta.get("title") and not meta.get("subtitle"):
+        return
     if signet and signet.exists():
         paragraph = document.add_paragraph()
         paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
@@ -139,7 +141,7 @@ def add_title_page(document: Document, meta: dict[str, str | bool], signet: Path
         except Exception:
             pass
 
-    title = str(meta.get("title") or "Wirkungsökonomie Dokument")
+    title = str(meta.get("title") or "")
     paragraph = document.add_paragraph(style="Title")
     paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
     paragraph.add_run(title)
@@ -185,7 +187,10 @@ def split_table_row(line: str) -> list[str]:
 
 
 def is_table_separator(line: str) -> bool:
-    return bool(re.fullmatch(r"\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?", line.strip()))
+    if "|" not in line:
+        return False
+    cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+    return bool(cells) and all(re.fullmatch(r":?-{3,}:?", cell or "") for cell in cells)
 
 
 def add_markdown_body(document: Document, body: str) -> None:
@@ -221,16 +226,30 @@ def add_markdown_body(document: Document, body: str) -> None:
         heading = re.match(r"^(#{1,6})\s+(.+)$", line)
         if heading:
             level = min(len(heading.group(1)), 3)
-            document.add_paragraph(heading.group(2).strip(), style=f"Heading {level}")
+            document.add_paragraph(clean_inline(heading.group(2).strip()), style=f"Heading {level}")
             i += 1
             continue
 
-        if line.startswith("|") and i + 1 < len(lines) and is_table_separator(lines[i + 1]):
+        if line.startswith("|"):
+            separator_index = i + 1
+            while separator_index < len(lines) and not lines[separator_index].strip():
+                separator_index += 1
+        if line.startswith("|") and separator_index < len(lines) and is_table_separator(lines[separator_index]):
             header = split_table_row(line)
             rows: list[list[str]] = []
-            i += 2
-            while i < len(lines) and lines[i].strip().startswith("|"):
-                rows.append(split_table_row(lines[i]))
+            i = separator_index + 1
+            while i < len(lines):
+                row_line = lines[i].strip()
+                if not row_line:
+                    i += 1
+                    continue
+                if not row_line.startswith("|"):
+                    break
+                if not is_table_separator(row_line):
+                    row_values = split_table_row(row_line)
+                    if len(row_values) != len(header):
+                        break
+                    rows.append(row_values)
                 i += 1
             table = document.add_table(rows=1, cols=len(header))
             table.style = "Table Grid"
@@ -251,7 +270,12 @@ def add_markdown_body(document: Document, body: str) -> None:
             continue
 
         if line.startswith(">"):
-            document.add_paragraph(re.sub(r"^>\s?", "", line), style="Quote")
+            document.add_paragraph(clean_inline(re.sub(r"^>\s?", "", line)), style="Quote")
+            i += 1
+            continue
+
+        if re.match(r"^\*\*[^*]+:\*\*", line):
+            document.add_paragraph(clean_inline(line), style="Normal")
             i += 1
             continue
 
@@ -302,9 +326,24 @@ def inspect_reference(path: Path) -> int:
     return 0
 
 
+def convert_docx(input_path: Path, output_path: Path) -> int:
+    document = Document(str(input_path))
+    configure_styles(document)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    document.save(output_path)
+    return 0
+
+
 def convert(input_path: Path, output_path: Path, reference_doc: Path | None, signet: Path | None) -> int:
+    if input_path.suffix.lower() == ".docx":
+        return convert_docx(input_path, output_path)
     text = input_path.read_text(encoding="utf-8", errors="replace")
     meta, body = parse_frontmatter(text)
+    if not meta.get("title"):
+        first_heading = re.search(r"(?m)^#\s+(.+)$", body)
+        if first_heading and not body[: first_heading.start()].strip():
+            meta["title"] = first_heading.group(1).strip()
+            body = body[: first_heading.start()] + body[first_heading.end() :]
     document = Document(str(reference_doc)) if reference_doc and reference_doc.exists() else Document()
     clear_document_body(document)
     configure_styles(document)

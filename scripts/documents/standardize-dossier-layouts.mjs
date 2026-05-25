@@ -32,6 +32,7 @@ const excludedTypes = new Set([
 const roots = ["docs", "content"];
 const explicitFiles = process.argv.slice(2).filter((arg) => !arg.startsWith("--"));
 const dryRun = process.argv.includes("--dry-run");
+const layoutApproved = process.argv.includes("--layout-approved") || process.env.WOEK_LAYOUT_APPROVED === "1";
 const reportPath = path.join(repoRoot, "layout-standardization-report.md");
 const candidatesPath = path.join(repoRoot, "docs", "document-standardization-candidates.md");
 const referenceDoc = path.join(repoRoot, "templates", "word", "woek-reference.docx");
@@ -82,6 +83,22 @@ function readMeta(file) {
 
 function docType(meta) {
   return String(meta.type || meta.document_type || meta.documentType || meta.dokumenttyp || "").trim().toLowerCase();
+}
+
+function inferDocumentType(file) {
+  const rel = path.relative(repoRoot, file).toLowerCase();
+  const base = path.basename(file).toLowerCase();
+  const excludedPattern = /(manifest|minifest|buchmanuskript|buch|parteiprogramm|presse|gastbeitrag|blog|website[_-]?inhalt|tool[_-]?spezifikation|quellenregister|glossar|suchindex|audit|report|bericht|checkliste|readme|changelog|notizen|notes|migration|template|layout[_-]?standardization[_-]?smoke)/i;
+  if (excludedPattern.test(rel)) return { type: "", excluded: true, reason: "Dateiname oder Pfad liegt außerhalb des freigegebenen Dokumentlayout-Scopes." };
+  if (/(einzel)?dossier|gesamtdossier/.test(base) || /\/dossiers?\//.test(rel)) return { type: "dossier", excluded: false };
+  if (/detailkonzept|konzeptpapier|konzept/.test(base)) return { type: "konzeptpapier", excluded: false };
+  if (/whitepaper/.test(base)) return { type: "whitepaper", excluded: false };
+  if (/working[-_ ]?paper/.test(base)) return { type: "working-paper", excluded: false };
+  if (/arbeitspapier/.test(base)) return { type: "arbeitspapier", excluded: false };
+  if (/leitlinie/.test(base)) return { type: "technische-leitlinie", excluded: false };
+  if (/fallstudie|beispielpapier|case[-_ ]?study/.test(base)) return { type: "fallstudie", excluded: false };
+  if (/grundlagenpapier/.test(base)) return { type: "whitepaper", excluded: false };
+  return { type: "", excluded: false, reason: "Kein erlaubter Dokumenttyp aus Metadaten oder Dateiname ableitbar." };
 }
 
 function titleOf(file, meta) {
@@ -160,7 +177,8 @@ function ensureReferenceCopy() {
 }
 
 function outputName(file) {
-  return path.basename(file).replace(/\.(md|markdown|docx)$/i, "").replace(/[^A-Za-z0-9._-]+/g, "_");
+  const rel = path.relative(repoRoot, file).replace(/\.(md|markdown|docx)$/i, "");
+  return rel.replace(/[^A-Za-z0-9._-]+/g, "_").replace(/^_+|_+$/g, "");
 }
 
 function runPandoc(pandoc, input, output) {
@@ -201,11 +219,16 @@ function classify(file) {
     return { file, rel, title: rel, type: "unbekannt", marked: false, decision: "blockiert", reason: "Datei nicht gefunden." };
   }
   const meta = readMeta(file);
-  const type = docType(meta);
+  const explicitType = docType(meta);
+  const inferred = inferDocumentType(file);
+  const type = explicitType || (layoutApproved && !inferred.excluded ? inferred.type : "");
   const title = titleOf(file, meta);
-  const marked = meta.standardize_layout === true || meta.standardize_layout === "true";
+  const marked = meta.standardize_layout === true || meta.standardize_layout === "true" || (layoutApproved && Boolean(type));
   if (!marked) {
-    return { file, rel, title, type: type || "-", marked, decision: "übersprungen", reason: "standardize_layout ist nicht true." };
+    return { file, rel, title, type: explicitType || inferred.type || "-", marked, decision: "übersprungen", reason: layoutApproved ? (inferred.reason || "Kein freigegebener Dokumenttyp erkannt.") : "standardize_layout ist nicht true." };
+  }
+  if (layoutApproved && inferred.excluded && !explicitType) {
+    return { file, rel, title, type: "-", marked: false, decision: "übersprungen", reason: inferred.reason };
   }
   if (excludedTypes.has(type)) {
     return { file, rel, title, type, marked, decision: "übersprungen", reason: "Dokumenttyp ist explizit ausgeschlossen." };
@@ -261,17 +284,14 @@ for (const item of allowedCandidates) {
     blocked.push({ ...item, reason: "Technischer Blocker: Referenzlayout oder Konverter fehlt." });
     continue;
   }
-  if (ext === ".docx") {
-    review.push({ ...item, conversion: "DOCX -> DOCX", reason: "DOCX-zu-DOCX-Standardisierung ist getrennt auszuarbeiten und wurde nicht ohne gesonderten Inhaltsschutz ausgeführt." });
-    continue;
-  }
-
   const output = path.join(outDir, `${outputName(item.file)}.docx`);
   const comparisonReport = path.join(comparisonDir, `${outputName(item.file)}.comparison.md`);
-  const conversion = pandoc.available ? runPandoc(pandoc, item.file, output) : runFallback(item.file, output);
-  const converter = pandoc.available ? "pandoc" : "python-docx-fallback";
+  const isDocxSource = ext === ".docx";
+  const conversion = !isDocxSource && pandoc.available ? runPandoc(pandoc, item.file, output) : runFallback(item.file, output);
+  const converter = isDocxSource ? "python-docx-style-fallback" : pandoc.available ? "pandoc" : "python-docx-fallback";
+  const conversionLabel = isDocxSource ? "DOCX -> DOCX" : "Markdown -> DOCX";
   if (conversion.status !== 0) {
-    review.push({ ...item, conversion: "Markdown -> DOCX", converter, reason: `Konvertierung fehlgeschlagen: ${(conversion.stderr || conversion.stdout || "").trim()}` });
+    review.push({ ...item, conversion: conversionLabel, converter, reason: `Konvertierung fehlgeschlagen: ${(conversion.stderr || conversion.stdout || "").trim()}` });
     continue;
   }
 
@@ -279,7 +299,7 @@ for (const item of allowedCandidates) {
   const comparisonPassed = comparison.status === 0;
   const result = {
     ...item,
-    conversion: "Markdown -> DOCX",
+    conversion: conversionLabel,
     converter,
     output: path.relative(repoRoot, output),
     comparisonReport: path.relative(repoRoot, comparisonReport),
@@ -306,6 +326,7 @@ const candidateLines = [
   `Stand: ${new Date().toISOString()}`,
   "",
   `Gefundene Dateien: ${candidates.length}`,
+  `Layout-Freigabemodus: ${layoutApproved ? "ja" : "nein"}`,
   `Markierte Kandidaten: ${markedCandidates.length}`,
   `Erlaubte Kandidaten: ${allowedCandidates.length}`,
   `Übersprungene Kandidaten: ${skippedCandidates.length}`,
@@ -327,11 +348,14 @@ const candidateLines = [
 fs.mkdirSync(path.dirname(candidatesPath), { recursive: true });
 fs.writeFileSync(candidatesPath, candidateLines.join("\n"), "utf8");
 
-const generatedCount = processed.length + review.filter((item) => item.output).length;
+const generatedItems = processed.concat(review.filter((item) => item.output));
+const generatedCount = generatedItems.length;
+const generatedMarkdownCount = generatedItems.filter((item) => item.conversion === "Markdown -> DOCX").length;
+const generatedDocxCount = generatedItems.filter((item) => item.conversion === "DOCX -> DOCX").length;
 const passedCount = processed.length;
 const failedCount = review.filter((item) => item.comparisonPassed === false).length;
 let status = "STANDARDISIERT";
-let statusReason = "Mindestens eine Datei wurde standardisiert und der Textvergleich wurde bestanden.";
+let statusReason = "Alle erzeugten DOCX-Dateien wurden standardisiert und haben den Textvergleich bestanden.";
 if (!converterAvailable) {
   status = "BLOCKIERT";
   statusReason = "Pandoc fehlt und es ist kein funktionierender Ersatz verfügbar.";
@@ -344,6 +368,9 @@ if (!converterAvailable) {
 } else if (!allowedCandidates.length) {
   status = "BLOCKIERT";
   statusReason = "Es wurden markierte Dateien gefunden, aber keine davon ist im erlaubten Scope.";
+} else if (failedCount > 0) {
+  status = "REVIEW-PFLICHTIG";
+  statusReason = "Mindestens ein erzeugtes DOCX hat den Textvergleich nicht bestanden und wurde nicht freigegeben.";
 } else if (!processed.length && review.length) {
   status = "REVIEW-PFLICHTIG";
   statusReason = "Es wurden Kandidaten verarbeitet oder geprüft, aber keine Datei wurde freigegeben.";
@@ -385,6 +412,7 @@ const lines = [
   `- Pandoc-Version: ${pandoc.version || "-"}`,
   `- Python-Fallback vorhanden: ${fallback.available ? "ja" : "nein"}`,
   `- Python-Fallback: ${fallback.available ? `${fallback.bin} / python-docx ${fallback.version}` : fallback.reason || "-"}`,
+  `- Layout-Freigabemodus: ${layoutApproved ? "ja" : "nein"}`,
   `- Kandidaten gefunden: ${markedCandidates.length}`,
   `- Kandidaten erlaubt: ${allowedCandidates.length}`,
   `- Kandidaten übersprungen: ${skippedCandidates.length}`,
@@ -396,8 +424,8 @@ const lines = [
   "",
   "## Verarbeitung",
   "",
-  `- Markdown -> DOCX erzeugt: ${generatedCount}`,
-  `- DOCX -> DOCX erzeugt: 0`,
+  `- Markdown -> DOCX erzeugt: ${generatedMarkdownCount}`,
+  `- DOCX -> DOCX erzeugt: ${generatedDocxCount}`,
   `- Übersprungene Dateien: ${skippedCandidates.length}`,
   `- Blockierte Dateien: ${blocked.length}`,
   `- Review-pflichtige Dateien: ${review.length}`,

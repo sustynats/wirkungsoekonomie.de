@@ -1,0 +1,8 @@
+# Document Text Comparison
+
+Original: `/Users/hagen/Documents/New project/docs/finanzsystem-kapital/go13-detailkonzepte/online_volltext_30_30_woek_finanzsystem_kapital_kapitalwirkung_statt_kapitalrendite_detailkonzept_v1_0.md`
+Candidate: `/Users/hagen/Documents/New project/dist/documents/docs_finanzsystem-kapital_go13-detailkonzepte_online_volltext_30_30_woek_finanzsystem_kapital_kapitalwirkung_statt_kapitalrendite_detailkonzept_v1_0.docx`
+Result: OK
+
+Original characters: 17524
+Candidate characters: 17524

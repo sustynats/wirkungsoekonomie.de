@@ -1,0 +1,8 @@
+# Document Text Comparison
+
+Original: `/Users/hagen/Documents/New project/docs/staat-recht-demokratie/go12-detailkonzepte/online_volltext_29_29_woek_staat_recht_demokratie_demokratie_rechtsstaat_sdgplus_wirkungsraum_detailkonzept_v1_0.md`
+Candidate: `/Users/hagen/Documents/New project/dist/documents/docs_staat-recht-demokratie_go12-detailkonzepte_online_volltext_29_29_woek_staat_recht_demokratie_demokratie_rechtsstaat_sdgplus_wirkungsraum_detailkonzept_v1_0.docx`
+Result: OK
+
+Original characters: 12277
+Candidate characters: 12277
