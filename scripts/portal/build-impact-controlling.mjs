@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260525-result-interpretation";
-const JS_VERSION = "20260525-result-interpretation";
+const JS_VERSION = "20260525-cta-cleanup";
 
 const impactDownloads = [
   { label: "Konzeptpapier Word", href: "assets/downloads/woek_impact_controlling_konzeptpapier_v0_1.docx", required: true },
@@ -318,10 +318,9 @@ function printActions(extra = "") {
 
 function citationNotice(route) {
   return `<aside class="citation-note" role="note">
-      <p class="card-kicker">Zitierfähig</p>
-      <h2>Online lesen, gezielt zitieren</h2>
-      <p>Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen und Dossiers stehen weiter unten gesammelt bereit.</p>
-      <p><a class="text-link" href="${route}">Seitenadresse öffnen</a></p>
+      <p class="card-kicker">Onlinefassung</p>
+      <h2>Du liest die Onlinefassung</h2>
+      <p>Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.</p>
     </aside>`;
 }
 
@@ -335,7 +334,7 @@ function cardGrid(base, items, cols = "three") {
       ${item.kicker ? `<p class="card-kicker">${escapeHtml(item.kicker)}</p>` : ""}
       <h3 class="card-title">${escapeHtml(item.title)}</h3>
       <p class="card-text">${escapeHtml(item.text)}</p>
-      ${item.href ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, item.href)}">${escapeHtml(item.label || "Online lesen")}</a></div>` : ""}
+      ${item.href ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, item.href)}">${escapeHtml(item.label || "Mehr erfahren")}</a></div>` : ""}
     </article>`).join("")}
   </div>`;
 }
@@ -406,10 +405,10 @@ function markdownBlocks(source, prefix) {
 function tocFromHeadings(headings) {
   const filtered = headings.filter((heading) => heading.level >= 2 && heading.level <= 3);
   if (!filtered.length) return "";
-  return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis">
-    <h2>Inhaltsverzeichnis</h2>
+  return `<details class="toc-card no-print" aria-label="Inhaltsverzeichnis">
+    <summary class="card-title">Inhaltsverzeichnis anzeigen</summary>
     <ol>${filtered.map((heading) => `<li class="toc-level-${heading.level}"><a href="#${heading.id}">${escapeHtml(heading.text)}</a></li>`).join("")}</ol>
-  </nav>`;
+  </details>`;
 }
 
 function hero(base, { kicker, title, subtitle, text, action }) {
@@ -434,7 +433,7 @@ function toolGrid(base, selected = tools) {
     </div>
     <div class="card-grid three context-tool-grid">
       ${selected.map((tool) => `<article class="card context-tool-card">
-        <p class="card-kicker">${escapeHtml(tool.type)} · ${escapeHtml(tool.status)}</p>
+        <p class="card-kicker">${escapeHtml(tool.type)}</p>
         <h3 class="card-title">${escapeHtml(tool.title)}</h3>
         <p class="card-text">${escapeHtml(tool.short)}</p>
         <p class="card-text"><strong>Warum hier relevant?</strong> ${escapeHtml(tool.why)}</p>
@@ -530,8 +529,8 @@ function downloadBlock(base, items = impactDownloads) {
   return `<section class="section" aria-labelledby="downloads">
     <div class="card">
       <p class="hero-kicker">Downloads</p>
-      ${sectionTitle("downloads", "Downloads und Druck")}
-      <p class="card-text">Online-Volltext ist der Hauptzugang. Word/PDF-Dateien werden nur verlinkt, wenn sie als Download vorhanden sind.</p>
+      ${sectionTitle("downloads", "Vertiefung und Arbeitsmaterial")}
+      <p class="card-text">Du liest die Onlinefassung. Word/PDF-Dateien und Druckfunktion ergänzen sie als Arbeitsmaterial.</p>
       <div class="portal-card-actions no-print">
         <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
         ${available.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("")}
@@ -548,7 +547,7 @@ function methodPaperCardGrid(base) {
       <h3 class="card-title">${escapeHtml(paper.title)}</h3>
       <p class="card-text">${escapeHtml(paper.subtitle)}</p>
       <div class="portal-card-actions">
-        <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Online lesen</a>
+        <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Methodenpapier lesen</a>
         <a class="text-link" href="${href(base, paper.docx)}">DOCX</a>
         <a class="text-link" href="${href(base, paper.pdf)}">PDF</a>
       </div>
@@ -561,7 +560,7 @@ function impactCrossLinks(base) {
     <div class="section-header">
       <p class="hero-kicker">Querverlinkung</p>
       ${sectionTitle("impact-crosslinks", "Methodenanschluss in Wirkungsfeldern")}
-      <p>Impact Controlling ist eine Querschnittsmethodik. Die folgenden Portale zeigen typische Anwendungsräume.</p>
+      <p>Impact Controlling ist eine Querschnittsmethodik. Die folgenden Bereiche zeigen typische Anwendungsräume.</p>
     </div>
     ${cardGrid(base, [
       { title: "SDG-/SDG+-Referenzrahmen", text: "Ziel- und Risikorahmen für positive, negative und neutrale Wirkung.", href: "verstehen/sdgs-sdgplus/", label: "Öffnen" },
@@ -582,7 +581,7 @@ function methodPaperDownloadItems(paper) {
     { label: `${paper.title} DOCX`, href: paper.docx, required: true },
     { label: `${paper.title} PDF`, href: paper.pdf, required: true },
     { label: "Impact Controlling öffnen", href: "werkzeuge/impact-controlling/" },
-    { label: "Impact-Controlling-Rechner öffnen", href: "erleben/impact-controlling-rechner/" },
+    { label: "Impact-Controlling-Demo öffnen", href: "erleben/impact-controlling-rechner/" },
   ];
 }
 
@@ -672,21 +671,21 @@ function dossierOverview() {
       kicker: "Gesamtdossier",
       title: "Gesamtdossier Impact Controlling",
       subtitle: "T-SROI, NWI, WÖk-IDs, Scorecards und Wirkungsdatenräume.",
-      text: "Dieses Dossier bündelt die Methodenarchitektur des Impact Controllings. Es ist eine Online-Fassung, bis die gelieferten Word-Dokumente im Repository vorliegen.",
-      action: `<a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Rechner öffnen</a>`,
+      text: "Dieses Dossier bündelt die Methodenarchitektur des Impact Controllings und verweist auf passende Demos, Einzeldossiers und Arbeitsmaterialien.",
+      action: `<a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Demo öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta("Gesamtdossier / Webfassung")}</section>
     <section class="section narrow">
-      <nav class="toc-card" aria-label="Inhaltsverzeichnis">
-        <h2>Inhaltsverzeichnis</h2>
+      <details class="toc-card no-print" aria-label="Inhaltsverzeichnis">
+        <summary class="card-title">Inhaltsverzeichnis anzeigen</summary>
         <ol>
           <li><a href="#methodenarchitektur">Methodenarchitektur</a></li>
           <li><a href="#rechenlogik">Rechenlogik</a></li>
           <li><a href="#einzeldossiers">Einzeldossiers</a></li>
-          <li><a href="#tool-spezifikation">Tool-Spezifikation</a></li>
+          <li><a href="#methodik-demo">Methodik und Demo-Grenzen</a></li>
         </ol>
-      </nav>
+      </details>
     </section>
     <section class="section article-section">
       <article class="article-body fulltext-reader">
@@ -702,7 +701,7 @@ function dossierOverview() {
         ${sectionTitle("einzeldossiers", "Einzeldossiers")}
         <p>Die Einzeldossiers vertiefen die Methodik. Jede Seite ist online lesbar, druckbar und mit Buchankern verbunden.</p>
         ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/`, label: "Einzeldossier lesen" })))}
-        ${sectionTitle("tool-spezifikation", "Tool-Spezifikation")}
+        ${sectionTitle("methodik-demo", "Methodik und Demo-Grenzen")}
         <p>Der Impact-Controlling-Rechner startet als einfache Demo mit Scorecard-, NWI- und T-SROI-Modul. Er ist keine Prüfung, keine Beratung und keine amtliche Einstufung.</p>
       </article>
     </section>
@@ -790,10 +789,10 @@ function methodPaperPages() {
         <div class="section-header">
           <p class="hero-kicker">Querverlinkung</p>
           ${sectionTitle("querverweise", "Verwandte Methoden und Wirkungsfelder")}
-          <p>Methodenpapiere dienen als Rückgrat für mehrere Portale. Die folgenden Links führen zu den wichtigsten Anschlussstellen.</p>
+          <p>Methodenpapiere dienen als Rückgrat für mehrere Wirkungsfelder. Die folgenden Links führen zu den wichtigsten Anschlussstellen.</p>
         </div>
         ${cardGrid(base, [
-          ...paper.relatedPages.map((link) => ({ title: link.replaceAll("/", " ").trim(), text: "Kanonische Anschlussseite der Methodik.", href: link, label: "Öffnen" })),
+          ...paper.relatedPages.map((link) => ({ title: link.replaceAll("/", " ").trim(), text: "Anschlussseite der Methodik.", href: link, label: "Öffnen" })),
           { title: "SDG-/SDG+-Referenzrahmen", text: "Referenzrahmen für positive, negative und neutrale Wirkung.", href: "verstehen/sdgs-sdgplus/", label: "Öffnen" },
           { title: "Produkte & Konsum", text: "Wirkungsumsatzsteuer, Produktwirkung und Scorecards.", href: "wirkungsfelder/produkte-konsum/", label: "Öffnen" },
           { title: "Wirtschaft & Unternehmen", text: "Impact Controlling im Unternehmen, Risiko, Lieferketten und Transformation.", href: "wirkungsfelder/wirtschaft-unternehmen/", label: "Öffnen" },
@@ -811,6 +810,41 @@ function methodPaperPages() {
       ${downloadBlock(base, methodPaperDownloadItems(paper))}`,
     });
   }
+}
+
+function singleDossiersIndexPage() {
+  page({
+    rel: "werkzeuge/impact-controlling/dossiers/index.html",
+    title: "Einzeldossiers Impact Controlling | Wirkungsökonomie",
+    description: "Übersicht der Einzeldossiers zu T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Datenqualität und Beispielrechnungen.",
+    searchSection: "Werkzeuge",
+    searchType: "Dossier-Übersicht",
+    body: (base) => `${hero(base, {
+      kicker: "Einzeldossiers",
+      title: "Einzeldossiers Impact Controlling",
+      subtitle: "Praxisfragen, Bewertungswege, Annahmen, Datenquellen und Grenzen.",
+      text: "Diese Übersicht führt zu den einzelnen Dossiers des Impact Controllings. Jedes Dossier vertieft eine Methode oder ein Anwendungsmuster.",
+      action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Zur Übersicht Impact Controlling</a>`,
+    })}
+    <section class="section narrow">${citationNotice(`${SITE}/werkzeuge/impact-controlling/dossiers/`)}</section>
+    <section class="section">
+      <div class="section-header">
+        <p class="hero-kicker">Dossiers</p>
+        ${sectionTitle("dossier-list", "Dossiers auswählen")}
+        <p>Die Karten führen zu eigenständigen Dossierseiten. Downloads stehen auf den jeweiligen Seiten am Ende.</p>
+      </div>
+      ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
+        title,
+        text,
+        href: `werkzeuge/impact-controlling/dossiers/${slug}/`,
+        label: "Dossier lesen",
+      })))}
+    </section>
+    ${politicalBlock(base)}
+    ${sdgBlock()}
+    ${bookBlock(base)}
+    ${downloadBlock(base)}`,
+  });
 }
 
 function singleDossierPages() {
@@ -832,8 +866,8 @@ function singleDossierPages() {
       <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
       <section class="section narrow">${statusMeta("Einzeldossier / Webfassung")}</section>
       <section class="section narrow">
-        <nav class="toc-card" aria-label="Inhaltsverzeichnis">
-          <h2>Inhaltsverzeichnis</h2>
+        <details class="toc-card no-print" aria-label="Inhaltsverzeichnis">
+          <summary class="card-title">Inhaltsverzeichnis anzeigen</summary>
           <ol>
             <li><a href="#definition">Definition</a></li>
             <li><a href="#warum-noetig">Warum nötig?</a></li>
@@ -841,7 +875,7 @@ function singleDossierPages() {
             <li><a href="#grenzen">Wirkungsgrenzen</a></li>
             <li><a href="#quellen">Quellen und Daten</a></li>
           </ol>
-        </nav>
+        </details>
       </section>
       <section class="section article-section">
         <article class="article-body fulltext-reader">
@@ -863,8 +897,8 @@ function singleDossierPages() {
       ${bookBlock(base)}
       ${externalSourcesBlock()}
       ${downloadBlock(base, [
-        { label: "Gesamtdossier online lesen", href: "werkzeuge/impact-controlling/dossier/" },
-        { label: "Impact-Controlling-Rechner öffnen", href: "erleben/impact-controlling-rechner/" },
+        { label: "Gesamtdossier lesen", href: "werkzeuge/impact-controlling/dossier/" },
+        { label: "Impact-Controlling-Demo öffnen", href: "erleben/impact-controlling-rechner/" },
         { label: `Einzeldossier ${title} Word`, href: `assets/downloads/woek_einzeldossier_${slug.replaceAll("-", "_")}_v0_1.docx`, required: true },
       ])}`,
     });
@@ -888,7 +922,7 @@ function toolExplanationPages() {
         action: `<a class="btn btn-primary" href="${href(base, dossier)}">Dossier lesen</a>`,
       })}
       <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-      <section class="section narrow">${statusMeta("Kanonische Toolseite / Webfassung")}</section>
+      <section class="section narrow">${statusMeta("Methodenseite / Webfassung")}</section>
       <section class="section">
         <div class="feature-grid">
           <article class="card" id="was-es-leistet"><p class="card-kicker">Funktion</p><h2 class="card-title">Was es leistet ${citeAnchor("was-es-leistet")}</h2><p class="card-text">${escapeHtml(description)}</p></article>
@@ -899,7 +933,7 @@ function toolExplanationPages() {
       ${relatedPapers.length ? `<section class="section" aria-labelledby="methodenpapier">
         <div class="section-header">
           <p class="hero-kicker">Methodenpapier</p>
-          ${sectionTitle("methodenpapier", "Ausführliches Methodenpapier online lesen")}
+          ${sectionTitle("methodenpapier", "Ausführliches Methodenpapier")}
           <p>Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit DOCX- und PDF-Download.</p>
         </div>
         <div class="card-grid three">${relatedPapers.map((paper) => `<article class="card">
@@ -907,7 +941,7 @@ function toolExplanationPages() {
           <h3 class="card-title">${escapeHtml(paper.title)}</h3>
           <p class="card-text">${escapeHtml(paper.subtitle)}</p>
           <div class="portal-card-actions">
-            <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Online lesen</a>
+            <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Methodenpapier lesen</a>
             <a class="text-link" href="${href(base, paper.docx)}">DOCX</a>
             <a class="text-link" href="${href(base, paper.pdf)}">PDF</a>
           </div>
@@ -920,7 +954,7 @@ function toolExplanationPages() {
     ${sdgBlock()}
       ${bookBlock(base)}
       ${downloadBlock(base, [
-        { label: "Einzeldossier online lesen", href: dossier },
+        { label: "Einzeldossier lesen", href: dossier },
         { label: "Gesamtdossier öffnen", href: "werkzeuge/impact-controlling/dossier/" },
         ...relatedPapers.flatMap(methodPaperDownloadItems),
       ])}`,
@@ -937,14 +971,14 @@ function calculatorPage() {
     searchType: "Demo",
     extraScript: "assets/js/impact-controlling-rechner.js?v=20260524-impact",
     body: (base, route) => `${hero(base, {
-      kicker: "Demo · Modell V0.1",
+      kicker: "Demo",
       title: "Impact-Controlling-Rechner",
       subtitle: "Scorecard, NWI und T-SROI modellhaft ausprobieren.",
       text: "Die Demo zeigt die Grundlogik der Methoden. Sie ist keine Prüfung, keine Beratung und keine amtliche Einstufung.",
       action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Methodik öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Demo / Prototyp")}</section>
+    <section class="section narrow">${statusMeta("Demo")}</section>
     <section class="section product-calculator-section" aria-labelledby="impact-calculator-title">
       <div class="product-calculator" data-impact-controlling-calculator>
         <div class="section-header">
@@ -995,7 +1029,7 @@ function calculatorPage() {
     ${politicalBlock(base)}
     ${sdgBlock()}
     ${bookBlock(base)}
-    ${downloadBlock(base, [{ label: "Tool-Spezifikation online lesen", href: "werkzeuge/impact-controlling/dossier/#tool-spezifikation" }])}`,
+    ${downloadBlock(base, [{ label: "Methodik und Grenzen lesen", href: "werkzeuge/impact-controlling/dossier/#methodik-demo" }])}`,
   });
 }
 
@@ -1010,19 +1044,19 @@ function workshopPages() {
       kicker: "Arbeitsbibliothek · Instrumente",
       title: "Impact Controlling",
       subtitle: "Konzept, Dossiers, Einzeldossiers und Demo.",
-      text: "Konzepte und Dossiers werden hier automatisch als Werkstatt-/Arbeitsbibliothek-Einträge geführt. Online lesen ist der Hauptzugang.",
+      text: "Diese Arbeitsbibliothek bündelt Onlinefassungen, Dossiers, Methodenpapiere und ergänzende Downloads.",
       action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Methodenbereich öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section">
       <div class="section-header">
         <p class="hero-kicker">Arbeitsbibliothek</p>
-        ${sectionTitle("impact-library", "Online lesen vor Download")}
-        <p>Die angekündigten Word-Dokumente werden verlinkt, sobald sie im Repository vorhanden sind. Bis dahin stehen die Webfassungen stabil bereit.</p>
+        ${sectionTitle("impact-library", "Onlinefassungen und Arbeitsmaterial")}
+        <p>Die Webfassungen führen in die Inhalte. Downloads ergänzen sie dort, wo Dateien vorhanden sind.</p>
       </div>
       ${cardGrid(base, [
-        { title: "Impact Controlling", text: "Portal-/Werkzeug-Startseite.", href: "werkzeuge/impact-controlling/" },
-        { title: "Gesamtdossier Impact Controlling", text: "Methodenarchitektur, Rechenlogik, Einzeldossiers und Tool-Spezifikation.", href: "werkzeuge/impact-controlling/dossier/" },
+        { title: "Impact Controlling", text: "Methodenbereich und Einstieg.", href: "werkzeuge/impact-controlling/" },
+        { title: "Gesamtdossier Impact Controlling", text: "Methodenarchitektur, Rechenlogik, Einzeldossiers und Demo-Grenzen.", href: "werkzeuge/impact-controlling/dossier/" },
         { title: "Methodenpapiere Go 10", text: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI und T-SROI.", href: "werkzeuge/impact-controlling/methodenpapiere/" },
         { title: "Impact-Controlling-Rechner", text: "Scorecard-, NWI- und T-SROI-Demo.", href: "erleben/impact-controlling-rechner/" },
         ...go10MethodPapers.map((paper) => ({ title: paper.title, text: paper.subtitle, href: `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/` })),
@@ -1042,7 +1076,7 @@ function workshopPages() {
     body: (base, route) => `${hero(base, {
       kicker: "Arbeitsbibliothek",
       title: "Konzepte & Dossiers",
-      subtitle: "Online lesen, zitieren, drucken, später exportieren.",
+      subtitle: "Onlinefassungen, Dossiers, Methodenpapiere und Downloads.",
       text: "Konzepte und Dossiers sind online lesbar. Downloads ergänzen den Online-Zugang, ersetzen ihn aber nicht.",
       action: `<a class="btn btn-primary" href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek öffnen</a>`,
     })}
@@ -1050,14 +1084,14 @@ function workshopPages() {
     <section class="section">
       <div class="section-header">
         <p class="hero-kicker">Grundsatz</p>
-        ${sectionTitle("online-first", "Online-Volltext ist Hauptzugang")}
-        <p>Alle zitierfähigen Konzepte und Dossiers erhalten stabile Online-Adressen mit Abschnittsankern. Word/PDF-Dateien bleiben ergänzend.</p>
+        ${sectionTitle("online-first", "Onlinefassungen und Arbeitsmaterial")}
+        <p>Konzepte und Dossiers haben stabile Online-Adressen mit Abschnittsankern. Word/PDF-Dateien ergänzen sie als Arbeitsmaterial.</p>
       </div>
       ${cardGrid(base, [
-        { kicker: "", title: "Produktbesteuerung durch Wirkung", text: "Konzeptpapier online im Portal Produkte & Konsum.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
+        { kicker: "", title: "Produktbesteuerung durch Wirkung", text: "Konzeptpapier im Bereich Produkte & Konsum.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
         { kicker: "", title: "Dossier Produkte & Konsum", text: "Rechenmodell, Tarifmatrix, Beispiele und Quellen.", href: "wirkungsfelder/produkte-konsum/dossier/" },
-        { kicker: "", title: "Impact Controlling", text: "Methodenportal zu T-SROI, NWI, WÖk-IDs und Scorecards.", href: "werkzeuge/impact-controlling/" },
-        { kicker: "", title: "Gesamtdossier Impact Controlling", text: "Gesamtdossier mit Einzeldossiers und Tool-Spezifikation.", href: "werkzeuge/impact-controlling/dossier/" },
+        { kicker: "", title: "Impact Controlling", text: "Methodenbereich zu T-SROI, NWI, WÖk-IDs und Scorecards.", href: "werkzeuge/impact-controlling/" },
+        { kicker: "", title: "Gesamtdossier Impact Controlling", text: "Gesamtdossier mit Einzeldossiers und Demo-Grenzen.", href: "werkzeuge/impact-controlling/dossier/" },
         { kicker: "Methodenpapier", title: "WÖk-IDs und Indikatorenarchitektur", text: "Go-10-Methodenpapier online lesen.", href: "werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/" },
         { kicker: "Methodenpapier", title: "Scorecards, Benchmarks und NWI", text: "Go-10-Methodenpapier online lesen.", href: "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/" },
         { kicker: "Methodenpapier", title: "T-SROI und Impact Controlling", text: "Go-10-Methodenpapier online lesen.", href: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/" },
@@ -1106,13 +1140,14 @@ function updateSitemap() {
 }
 
 function build() {
-  overviewPage();
-  dossierOverview();
-  methodPaperOverviewPage();
-  methodPaperPages();
-  singleDossierPages();
-  toolExplanationPages();
-  calculatorPage();
+overviewPage();
+dossierOverview();
+methodPaperOverviewPage();
+methodPaperPages();
+singleDossiersIndexPage();
+singleDossierPages();
+toolExplanationPages();
+calculatorPage();
   workshopPages();
   updateSitemap();
 }

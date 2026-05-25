@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-korrektur-detailkonzepte";
-const JS_VERSION = "20260523-nachhaltigkeit";
+const JS_VERSION = "20260525-cta-cleanup";
 const EXTRACT = "docs/korrektur-detailkonzepte/docx-extracts";
 
 const detailChapters = [
@@ -21,7 +21,7 @@ const detailChapters = [
   "Risiken, Nebenwirkungen und Schutzmechanismen",
   "Umsetzung und Pilotierung",
   "SDG-/SDG+-Bezug und WÖk-ID-Bezug",
-  "Buchanker, Glossar, Werkzeuge und Online-Verknüpfungen",
+  "Buchanker, Glossar, Werkzeuge und Verknüpfungen",
 ];
 
 const dossierChapters = [
@@ -36,7 +36,7 @@ const dossierChapters = [
   "Politische Umsetzungsoptionen",
   "Tool-/Rechnerbezug",
   "Grenzen und Missbrauchsschutz",
-  "Online-Volltext, Druck, Download",
+  "Download und Arbeitsmaterial",
 ];
 
 const sharedTools = [
@@ -392,6 +392,9 @@ ${body(base, route)}
 }
 
 function hero(base, kicker, title, subtitle, text, actionHref, actionLabel) {
+  const action = actionHref && actionLabel
+    ? `<a class="btn btn-primary" href="${href(base, actionHref)}">${escapeHtml(actionLabel)}</a>`
+    : "";
   return `<section class="hero portal-hero"><div class="hero-content">
     <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkstatt/">Werkstatt</a></nav>
     <p class="hero-kicker">${escapeHtml(kicker)}</p>
@@ -400,7 +403,7 @@ function hero(base, kicker, title, subtitle, text, actionHref, actionLabel) {
     <p>${escapeHtml(text)}</p>
     <div class="hero-actions no-print">
       <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
-      <a class="btn btn-primary" href="${href(base, actionHref)}">${escapeHtml(actionLabel)}</a>
+      ${action}
     </div>
   </div></section>`;
 }
@@ -410,7 +413,12 @@ function metaCard(status) {
 }
 
 function tocBlock(items) {
-  return `<nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol>${items.map(([id, title]) => `<li><a href="#${id}">${escapeHtml(title)}</a></li>`).join("")}</ol></nav>`;
+  return `<details class="toc-card no-print" aria-label="Inhaltsverzeichnis"><summary class="card-title">Inhaltsverzeichnis anzeigen</summary><ol>${items.map(([id, title]) => `<li><a href="#${id}">${escapeHtml(title)}</a></li>`).join("")}</ol></details>`;
+}
+
+function readingNotice(kind) {
+  const label = kind === "Dossier" ? "dieses Dossiers" : "dieses Detailkonzepts";
+  return `<aside class="citation-note" role="note"><p class="card-kicker">Onlinefassung</p><h2>Du liest die Onlinefassung</h2><p>Du liest die Onlinefassung ${label}. Die Downloadfassung und die Druckfunktion findest du am Ende der Seite.</p></aside>`;
 }
 
 function referenceBlock(base, rank) {
@@ -431,7 +439,7 @@ function bookBlock(base, rank) {
 }
 
 function toolsBlock(base) {
-  return `<section class="section" aria-labelledby="context-tools"><div class="section-header"><p class="hero-kicker">Werkzeuge</p>${heading(2, "context-tools", "Kontext-Werkzeuge")}</div><div class="card-grid three">${sharedTools.map(([title, type, target]) => `<article class="card"><p class="card-kicker">${escapeHtml(type)}</p><h3>${escapeHtml(title)}</h3><p>Dieses Werkzeug macht Wirkung sichtbar, bewertbar oder korrigierbar. Es bereitet Entscheidungen vor, ersetzt sie aber nicht.</p><a class="text-link" href="${href(base, target)}">Werkzeug öffnen</a></article>`).join("")}</div></section>`;
+  return `<section class="section" aria-labelledby="context-tools"><div class="section-header"><p class="hero-kicker">Werkzeuge</p>${heading(2, "context-tools", "Kontext-Werkzeuge")}</div><div class="card-grid three">${sharedTools.map(([title, type, target]) => `<article class="card"><p class="card-kicker">${escapeHtml(type)}</p><h3>${escapeHtml(title)}</h3><p>Dieses Werkzeug macht Wirkung sichtbar, bewertbar oder korrigierbar. Es bereitet Entscheidungen vor, ersetzt sie aber nicht.</p><a class="text-link" href="${href(base, target)}">Methode lesen</a></article>`).join("")}</div></section>`;
 }
 
 function politicalBlock() {
@@ -452,15 +460,20 @@ function downloadBlock(base, rank, extra = []) {
     ["Publikationsstandard Word", "assets/downloads/woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"],
     ...extra,
   ].filter(([, target]) => fs.existsSync(path.join(ROOT, target)) || /^https?:/.test(target));
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${heading(2, "downloads", "Online-Volltext, Druck und Download")}<p>Online-Volltext ist der Hauptzugang. Word-Dateien dienen als Export- und Archivfassung.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${items.map(([label, target]) => `<a class="btn btn-secondary" href="${href(base, target)}">${escapeHtml(label)}</a>`).join("")}</div></div></section>`;
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${heading(2, "downloads", "Vertiefung und Arbeitsmaterial")}<p>Du liest die Onlinefassung. Downloads und Druckfunktion ergänzen die Webfassung als Arbeitsmaterial.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${items.map(([label, target]) => `<a class="btn btn-secondary" href="${href(base, target)}">${escapeHtml(label)}</a>`).join("")}</div></div></section>`;
 }
 
-function relatedBlock(base, rank, slug) {
-  return `<section class="section" aria-labelledby="related"><div class="section-header"><p class="hero-kicker">Verknüpfung</p>${heading(2, "related", "Verwandte Portal- und Dossierseiten")}</div><div class="card-grid three">
-    <article class="card"><h3>Portal</h3><p>Der Bereich bündelt öffentliche Einstiege, Werkzeuge, Beispiele und Werkstattverweise.</p><a class="text-link" href="${href(base, rank.portal)}">Portal öffnen</a></article>
-    <article class="card"><h3>Detailkonzept</h3><p>Fachliche und systemische Logik des Unterbereichs.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept öffnen</a></article>
-    <article class="card"><h3>Einzeldossier</h3><p>Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, Beispiel und Grenzen.</p><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Einzeldossier öffnen</a></article>
-  </div></section>`;
+function relatedBlock(base, rank, slug, currentKind = "detail") {
+  const cards = [
+    `<article class="card"><h3>Übersicht</h3><p>Der Bereich bündelt Einstiege, Methoden, Beispiele und Arbeitsmaterial.</p><a class="text-link" href="${href(base, rank.portal)}">Zur Übersicht</a></article>`,
+  ];
+  if (currentKind !== "detail") {
+    cards.push(`<article class="card"><h3>Detailkonzept</h3><p>Fachliche und systemische Logik des Unterbereichs.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a></article>`);
+  }
+  if (currentKind !== "dossier") {
+    cards.push(`<article class="card"><h3>Einzeldossier</h3><p>Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, Beispiel und Grenzen.</p><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Dossier lesen</a></article>`);
+  }
+  return `<section class="section" aria-labelledby="related"><div class="section-header"><p class="hero-kicker">Verknüpfung</p>${heading(2, "related", "Verwandte Seiten und Materialien")}</div><div class="card-grid three">${cards.join("")}</div></section>`;
 }
 
 function detailSupplement(rank, title, summary) {
@@ -469,14 +482,14 @@ function detailSupplement(rank, title, summary) {
     "Ausgangslage und alte Logik": `Die alte Logik betrachtet ${title} häufig über isolierte Kennzahlen, Kosten, formale Zuständigkeiten oder kurzfristige Effizienz. Dadurch bleiben Nebenwirkungen, Folgekosten, Verdrängungen, Datenlücken und demokratische Rückkopplungen unsichtbar.`,
     "Begriffliche Einordnung": `${summary} Wirkung bedeutet hier die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und wird nicht automatisch als Fortschritt behandelt.`,
     "Wirkungsökonomischer Perspektivwechsel": `Der neue Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie. Entscheidungen werden nicht nur danach bewertet, ob sie zulässig oder profitabel sind, sondern welche Zustandsveränderungen sie erzeugen und welche Risiken sichtbar bleiben müssen.`,
-    "Systemarchitektur": `Akteur:innen, Wirkungsträger, Wirkungsempfänger, Datenquellen, Regeln, Preise, Budgets, Förderlogiken und Korrekturverfahren werden als zusammenhängende Architektur verstanden. Der Unterbereich wird mit Portal, Werkstatt, Werkzeugen, Buchankern und öffentlichen Quellen verbunden.`,
+    "Systemarchitektur": `Akteur:innen, Wirkungsträger, Wirkungsempfänger, Datenquellen, Regeln, Preise, Budgets, Förderlogiken und Korrekturverfahren werden als zusammenhängende Architektur verstanden. Der Unterbereich wird mit Übersicht, Arbeitsmaterial, Werkzeugen, Buchankern und öffentlichen Quellen verbunden.`,
     "Mess-, Daten- und Bewertungslogik": `WÖk-IDs, Scorecards, Benchmarks, Vertrauensstufen, NWI, T-SROI und Reverse Merit Order schaffen eine nachvollziehbare Bewertungslogik. Datenlücken werden als Datenlücken ausgewiesen und nicht als positive Wirkung interpretiert.`,
     "Politische Anschlussfähigkeit und Ausgestaltungsspielräume": `Der Unterbereich beschreibt keinen fertigen Parteibeschluss. Politik schafft Verfahren, Standards, Schutzrechte, Finanzierung, Evaluation und Korrektur. Unterschiedliche demokratische Wege bleiben möglich, solange Wirkung sichtbar, überprüfbar und korrigierbar bleibt.`,
     "Akteursperspektiven": `Relevant sind Bürger:innen, betroffene Gruppen, Unternehmen, Verwaltung, Politik, Wissenschaft, Zivilgesellschaft, Kommunen und Prüfinstitutionen. Jede Perspektive erhält andere Aufgaben, Rechte, Datenbedarfe und Schutzinteressen.`,
     "Risiken, Nebenwirkungen und Schutzmechanismen": `Risiken liegen in Scheingenauigkeit, Datenmissbrauch, Überbürokratisierung, Benachteiligung kleiner Akteure, Lobbyeinfluss, technokratischer Übersteuerung und sozialer Schieflage. Schutz brauchen Grundrechte, Rechtsschutz, Transparenz, Beteiligung und Nicht-Kompensation schwerer negativer Wirkung.`,
     "Umsetzung und Pilotierung": `Umsetzung beginnt mit klar begrenzten Piloträumen, öffentlich erklärten Annahmen, dokumentierten Datenquellen, unabhängiger Evaluation und Korrekturzyklen. Pilotierung bedeutet lernen, nicht endgültig festschreiben.`,
     "SDG-/SDG+-Bezug und WÖk-ID-Bezug": `SDGs und SDG+ bilden den Referenzrahmen. SDG+ ist eine transparente Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. WÖk-IDs übersetzen diesen Rahmen in überprüfbare Indikatorfamilien.`,
-    "Buchanker, Glossar, Werkzeuge und Online-Verknüpfungen": `Die Online-Fassung ist mit Online-Buch, Glossar, Kontext-Werkzeugen, Dossiers, Downloads und relevanten Portalen verbunden. Jeder Abschnitt erhält einen stabilen Anker für Zitate und Quellenarbeit.`,
+    "Buchanker, Glossar, Werkzeuge und Verknüpfungen": `Die Onlinefassung ist mit Online-Buch, Glossar, Kontext-Werkzeugen, Dossiers, Downloads und relevanten Übersichten verbunden. Jeder Abschnitt erhält einen stabilen Anker für Zitate und Quellenarbeit.`,
   };
   return detailChapters.map((chapter) => `<section class="reader-subsection">${heading(2, slugify(chapter), chapter)}${paragraph(texts[chapter])}</section>`).join("");
 }
@@ -492,9 +505,9 @@ function dossierBody(rank, title, summary) {
     "Ergebnisinterpretation": `Das Ergebnis ist eine Entscheidungsvorlage, keine moralische Endbewertung. Es zeigt, wo positive Netto-Wirkung wahrscheinlich ist, wo Risiken bestehen und wo Nachprüfung nötig bleibt.`,
     "Bedeutung für Akteur:innen": `Bürger:innen erhalten Verständlichkeit, Organisationen Steuerungswissen, Politik bessere Entscheidungsgrundlagen, Verwaltung Prüfpfade und Wissenschaft Anschlussfähigkeit an Daten und Methoden.`,
     "Politische Umsetzungsoptionen": `Möglich sind Marktanreize, Regulierung, Förderung, öffentliche Infrastruktur, kommunale Pilotierung, soziale Abfederung, Datenstandards, Beschaffung und Rechtsschutz. Die konkrete Gewichtung bleibt demokratisch.`,
-    "Tool-/Rechnerbezug": `Relevante Werkzeuge sind WÖk-IDs, Scorecards, Reverse Merit Order, NWI, T-SROI und passende Portalrechner. Sie dienen der Nachvollziehbarkeit und nicht der automatischen Entscheidung.`,
+    "Tool-/Rechnerbezug": `Relevante Werkzeuge sind WÖk-IDs, Scorecards, Reverse Merit Order, NWI, T-SROI und passende Demos oder Methoden. Sie dienen der Nachvollziehbarkeit und nicht der automatischen Entscheidung.`,
     "Grenzen und Missbrauchsschutz": `Grenzen liegen bei Scheingenauigkeit, Datenlücken, Manipulation, Übertragung auf Personen, Diskriminierung und politischer Verkürzung. Missbrauchsschutz braucht Transparenz, Prüfbarkeit, Einspruch und Evaluation.`,
-    "Online-Volltext, Druck, Download": `Diese Seite ist die öffentlich lesbare Fassung mit Abschnittsankern. Die Druckfunktion und Word-Downloads dienen Export, Archiv und Zitierarbeit.`,
+    "Download und Arbeitsmaterial": `Diese Seite ist die öffentlich lesbare Fassung mit Abschnittsankern. Druckfunktion und Downloads ergänzen sie als Arbeitsmaterial.`,
   };
   return dossierChapters.map((chapter) => `<section class="reader-subsection">${heading(2, slugify(chapter), chapter)}${paragraph(texts[chapter])}</section>`).join("");
 }
@@ -509,8 +522,8 @@ function detailPage(rank, topic, detailHtml, detailToc) {
     description: `Vollständiges öffentliches Detailkonzept zu ${title}.`,
     section: rank.label,
     type: "Detailkonzept",
-    body: (base, route) => `${hero(base, `Detailkonzept · ${rank.label}`, `Detailkonzept ${title}`, summary, "Vollständige öffentliche Webfassung mit zitierfähigen Abschnittsankern, politischer Anschlussfähigkeit, Werkzeugbezug und Download.", dossierHref(rank, slug), "Einzeldossier öffnen")}
-      <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Diese Webfassung ist der Hauptzugang. Jeder Abschnitt besitzt einen stabilen Anker für Quellenarbeit.</p><p><a class="text-link" href="${SITE}${route}">${SITE}${route}</a></p></aside></section>
+    body: (base, route) => `${hero(base, `Detailkonzept · ${rank.label}`, `Detailkonzept ${title}`, summary, "Fachliche Onlinefassung mit politischer Anschlussfähigkeit, Werkzeugbezug und Arbeitsmaterial.", dossierHref(rank, slug), "Dossier lesen")}
+      <section class="section narrow">${readingNotice("Detailkonzept")}</section>
       <section class="section narrow">${metaCard("Korrekturfassung / vollständiges Detailkonzept")}</section>
       <section class="section narrow">${tocBlock(fullToc)}</section>
       <section class="section article-section"><article class="article-body fulltext-reader">${detailSupplement(rank, title, summary)}${heading(2, "kompendiumsauszug", "Auszug aus der umfangreichen Korrekturfassung")}${detailHtml}</article></section>
@@ -518,7 +531,7 @@ function detailPage(rank, topic, detailHtml, detailToc) {
       ${toolsBlock(base)}
       ${referenceBlock(base, rank)}
       ${bookBlock(base, rank)}
-      ${relatedBlock(base, rank, slug)}
+      ${relatedBlock(base, rank, slug, "detail")}
       ${downloadBlock(base, rank)}`,
   });
 }
@@ -533,8 +546,8 @@ function dossierPage(rank, topic) {
     description: `Vollständiges öffentliches Einzeldossier zu ${title}.`,
     section: rank.label,
     type: "Einzeldossier",
-    body: (base, route) => `${hero(base, `Einzeldossier · ${rank.label}`, `Einzeldossier ${title}`, summary, "Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen als online lesbare Fassung.", `${rank.base}/detailkonzepte/${slug}/`, "Detailkonzept öffnen")}
-      <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Diese Dossierseite ist vollständig online lesbar. Die Downloadfassung ergänzt den öffentlichen Volltext.</p><p><a class="text-link" href="${SITE}${route}">${SITE}${route}</a></p></aside></section>
+    body: (base, route) => `${hero(base, `Einzeldossier · ${rank.label}`, `Einzeldossier ${title}`, summary, "Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen.", `${rank.base}/detailkonzepte/${slug}/`, "Detailkonzept lesen")}
+      <section class="section narrow">${readingNotice("Dossier")}</section>
       <section class="section narrow">${metaCard("Korrekturfassung / vollständiges Einzeldossier")}</section>
       <section class="section narrow">${tocBlock(fullToc)}</section>
       <section class="section article-section"><article class="article-body fulltext-reader">${dossierBody(rank, title, summary)}</article></section>
@@ -542,22 +555,31 @@ function dossierPage(rank, topic) {
       ${toolsBlock(base)}
       ${referenceBlock(base, rank)}
       ${bookBlock(base, rank)}
-      ${relatedBlock(base, rank, slug)}
+      ${relatedBlock(base, rank, slug, "dossier")}
       ${downloadBlock(base, rank)}`,
   });
 }
 
 function indexPage(rank) {
   const rel = `${rank.base}/detailkonzepte/index.html`;
+  const isImpact = rank.id === "impact";
+  const title = isImpact ? "Detailkonzepte Impact Controlling" : `Detailkonzepte ${rank.label}`;
+  const subtitle = isImpact
+    ? "WÖk-IDs, Scorecards, NWI, T-SROI, Reverse Merit Order, Datenqualität und digitale Produktpässe."
+    : "Zentrale Konzepte als Onlinefassungen, Dossiers und Arbeitsmaterial.";
+  const intro = isImpact
+    ? "Diese Übersicht führt zu den zentralen Konzepten des wirkungsorientierten Controllings: WÖk-IDs, Scorecards, NWI, T-SROI, Reverse Merit Order, Datenqualität und digitale Produktpässe."
+    : "Diese Übersicht führt zu den zentralen Konzepten des Bereichs. Downloads und Arbeitsmaterial stehen am Seitenende.";
   page({
     rel,
-    title: `Detailkonzepte ${rank.label} | Wirkungsökonomie`,
+    title: `${title} | Wirkungsökonomie`,
     description: `Öffentliche Langfassungen der Detailkonzepte im Bereich ${rank.label}.`,
     section: rank.label,
     type: "Detailkonzepte",
-    body: (base, route) => `${hero(base, `Detailkonzepte · ${rank.label}`, `Detailkonzepte ${rank.label}`, "Öffentliche Langfassungen mit Pflichtkapiteln, Ankern, Dossiers und Downloads.", "Die bisherigen Kurzfassungen werden durch vollständige Online-Volltexte ergänzt. Downloads bleiben Export und Archiv.", rank.portal, "Portal öffnen")}
-      <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Werkstattstandard</p><h2>Online-Volltext ist Hauptzugang</h2><p>Jeder Unterbereich besitzt eine Detailkonzept-Seite und ein Einzeldossier mit stabilen Abschnittsankern.</p></aside></section>
+    body: (base, route) => `${hero(base, `Detailkonzepte · ${rank.label}`, title, subtitle, intro, rank.portal, "Zur Übersicht")}
+      ${isImpact ? `<section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Worum geht es?</p><h2>Impact Controlling übersetzt Wirkung in Steuerung</h2><p>Impact Controlling übersetzt Wirkung in Steuerung: für Strategie, Risiko, Budgetierung, Beschaffung, Berichtswesen und politische Entscheidungen.</p></aside></section>` : `<section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Orientierung</p><h2>Detailkonzepte und Dossiers</h2><p>Jeder Unterbereich besitzt eine Detailkonzept-Seite und ein Dossier. Downloads ergänzen die Onlinefassungen am Seitenende.</p></aside></section>`}
       <section class="section"><div class="card-grid three">${rank.topics.map(([slug, title, summary]) => `<article class="card"><p class="card-kicker">Detailkonzept</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Dossier lesen</a></div></article>`).join("")}</div></section>
+      ${isImpact ? `<section class="section" aria-labelledby="politics-index"><div class="card"><p class="hero-kicker">Umsetzung</p>${heading(2, "politics-index", "Was muss Politik hier tun?")}<div class="card-grid three"><article class="card"><h3>Datenzugang sichern</h3><p>Wirkungsdaten brauchen klare Zugänge, Standards und Schutzregeln.</p></article><article class="card"><h3>Prüfstandards definieren</h3><p>Bewertungen müssen nachvollziehbar, versioniert und überprüfbar bleiben.</p></article><article class="card"><h3>Datenschutz und Geschäftsgeheimnisse schützen</h3><p>Transparenz darf nicht zu Personenbewertung oder Offenlegung legitimer Schutzinteressen werden.</p></article><article class="card"><h3>KMU entlasten</h3><p>Kleine Organisationen brauchen einfache Nachweise, Hilfen und stufenweise Pfade.</p></article><article class="card"><h3>Beschaffung nach Wirkung ermöglichen</h3><p>Öffentliche Vergabe kann Wirkung berücksichtigen, ohne demokratische Entscheidung zu automatisieren.</p></article><article class="card"><h3>Evaluation und Korrektur sichern</h3><p>Wirkungsdaten bereiten Entscheidungen vor. Rechtsschutz, Evaluation und Korrektur bleiben notwendig.</p></article></div></div></section>` : ""}
       ${downloadBlock(base, rank)}`,
   });
 }
@@ -569,12 +591,12 @@ function workshopPage(rank) {
     description: `Arbeitsbibliothek für ${rank.label}: Detailkonzepte, Dossiers, Downloads und öffentliche Volltexte.`,
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base, route) => `${hero(base, "Arbeitsbibliothek", rank.label, "Konzepte, Detailkonzepte, Dossiers, Downloads und Volltexte.", "Konzepte und Dossiers werden zusätzlich in der Werkstatt geführt. Online lesen bleibt der Hauptzugang.", rank.portal, "Portal öffnen")}
+    body: (base, route) => `${hero(base, "Arbeitsbibliothek", rank.label, "Konzepte, Detailkonzepte, Dossiers, Downloads und Volltexte.", "Diese Seite bündelt Onlinefassungen und ergänzende Arbeitsmaterialien des Bereichs.", rank.portal, "Zur Übersicht")}
       <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Werkstatt</p><h2>Öffentlich lesbare Arbeitsbibliothek</h2><p>Diese Seite bündelt die Webfassungen und Exportdateien des Bereichs.</p></aside></section>
       <section class="section"><div class="card-grid three">
-        <article class="card"><p class="card-kicker">Portal</p><h3>${escapeHtml(rank.label)}</h3><p>Portalstart und Kontextzugang.</p><a class="text-link" href="${href(base, rank.portal)}">Portal öffnen</a></article>
+        <article class="card"><p class="card-kicker">Übersicht</p><h3>${escapeHtml(rank.label)}</h3><p>Einstieg und Kontextzugang.</p><a class="text-link" href="${href(base, rank.portal)}">Zur Übersicht</a></article>
         <article class="card"><p class="card-kicker">Detailkonzepte</p><h3>Langfassungen</h3><p>Alle Unterbereiche als öffentliche Webfassung.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/`)}">Detailkonzepte öffnen</a></article>
-        ${rank.topics.map(([slug, title, summary]) => `<article class="card"><p class="card-kicker">Unterbereich</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Online lesen</a></article>`).join("")}
+        ${rank.topics.map(([slug, title, summary]) => `<article class="card"><p class="card-kicker">Unterbereich</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a></article>`).join("")}
       </div></section>
       ${downloadBlock(base, rank)}`,
   });
@@ -596,7 +618,7 @@ function buildRank(rank) {
 function sanitizePublicHtml() {
   const roots = ["wirkungsfelder", "werkzeuge", "werkstatt", "erleben"];
   const replacements = [
-    [/Fassung für Online-Volltext, Dossier, Portal und Codex-Umsetzung\./g, "Fassung für Online-Volltext, Dossier und Portal."],
+    [/Fassung für Online-Volltext, Dossier, Portal und Codex-Umsetzung\./g, "Fassung für Onlinefassung, Dossier und Arbeitsmaterial."],
     [/im Repository vorhanden sind/g, "als öffentliche Exportfassung verfügbar sind"],
     [/im Repository vorhanden ist/g, "als öffentliche Exportfassung verfügbar ist"],
     [/im Repository vorliegen/g, "als öffentliche Exportfassung vorliegen"],

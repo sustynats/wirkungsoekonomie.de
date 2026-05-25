@@ -3,8 +3,19 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const TARGETS = ["erleben", "anwendungen", "werkzeuge", "wirkungsfelder", "akademie", "portale", "downloads"];
-const ROOT_HTML_FILES = ["workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
+const TARGETS = [
+  "erleben",
+  "anwendungen",
+  "werkzeuge",
+  "wirkungsfelder",
+  "werkstatt",
+  "verstehen",
+  "akademie",
+  "portale",
+  "downloads",
+  "assets/downloads",
+];
+const ROOT_HTML_FILES = ["anwendungen.html", "workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
 
 const replacements = [
   [/Tool-Spezifikation und Rechenmodell/g, "Methodik und Annahmen"],
@@ -24,7 +35,19 @@ const replacements = [
   [/\bv0\.1\b/g, "Modellfassung"],
   [/Toolseite öffnen/g, "Methodik lesen"],
   [/Publikationszugang/g, "Vertiefung"],
+  [/Portal öffnen/g, "Zur Übersicht"],
+  [/Verwandte Portal- und Dossierseiten/g, "Verwandte Seiten und Materialien"],
+  [/Portaltext online lesen/g, "Onlinefassung"],
+  [/Portaltext/g, "Onlinefassung"],
+  [/Online-Volltext ist der Hauptzugang/g, "Du liest die Onlinefassung"],
+  [/Online-Volltext ist Hauptzugang/g, "Du liest die Onlinefassung"],
+  [/Online lesen, gezielt zitieren/g, "Onlinefassung und Quellenarbeit"],
+  [/Online lesen und herunterladen/g, "Vertiefung und Arbeitsmaterial"],
+  [/online lesen und herunterladen/gi, "Vertiefung und Arbeitsmaterial"],
+  [/Online lesen/g, "Onlinefassung lesen"],
+  [/Online-Volltext, Druck und Download/g, "Vertiefung und Arbeitsmaterial"],
   [/Portalstruktur/g, "Übersicht"],
+  [/Portalarchitektur/g, "Systemlandkarte"],
   [/Tool-Architektur/g, "Werkzeuglogik"],
   [/Einzeldossier-Set/g, "Einzeldossiers"],
   [/Dossier & Export/g, "Vertiefung"],
@@ -32,6 +55,9 @@ const replacements = [
   [/Export- und Archiv/g, "Download"],
   [/Export und Archiv/g, "Download"],
   [/kanonische Seitenadresse/gi, "Seitenadresse"],
+  [/kanonische Portalstruktur/gi, "öffentliche Systemlandkarte"],
+  [/Kanonische Seitenadresse öffnen/g, "Seitenadresse"],
+  [/Seitenadresse öffnen/g, "Seitenadresse"],
   [/Kanonische Seite öffnen/g, "Seite öffnen"],
   [/kanonisch/gi, "öffentlich"],
   [/in Vorbereitung/g, "wird ergänzt"],

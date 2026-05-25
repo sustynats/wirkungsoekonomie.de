@@ -1100,11 +1100,20 @@ function initPublicationAccessFallback() {
   const hasLocalDossier = Boolean(document.getElementById("dossier"));
   const detailHref = config.detail === "#detailkonzept" && !hasLocalDetail ? config.fallbackDetail : config.detail;
   const dossierHref = config.dossier === "#dossier" && !hasLocalDossier ? config.fallbackDossier : config.dossier;
+  const normalizePath = (value) => {
+    if (!value || value.startsWith("#") || value.startsWith("http") || value.startsWith("mailto:")) return value;
+    try {
+      return new URL(value, window.location.origin).pathname.replace(/\/+$/, "") || "/";
+    } catch {
+      return value.replace(/\/+$/, "") || "/";
+    }
+  };
+  const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
   const cards = [
-    ["Online-Fassung", "Vertiefung online lesen", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Online lesen"],
-    ["Praxisfassung", "Dossierbereich öffnen", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Online lesen"],
-    ["Download", "Konzept-Export", "Ergänzende Word-Datei für Archiv, Weiterarbeit und Druck.", config.detailDownload, "Herunterladen"],
-    ["Download", "Dossier-Export", "Ergänzende Word-Datei für Archiv, Weiterarbeit und Druck.", config.dossierDownload, "Herunterladen"],
+    ["Onlinefassung", "Detailkonzepte", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Detailkonzept lesen"],
+    ["Praxisfassung", "Dossiers", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Dossier lesen"],
+    ["Download", "Konzept-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.detailDownload, "Herunterladen"],
+    ["Download", "Dossier-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.dossierDownload, "Herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {
@@ -1117,16 +1126,16 @@ function initPublicationAccessFallback() {
   section.setAttribute("aria-labelledby", "publikationszugang-title");
   section.innerHTML = `
     <div class="section-header">
-      <p class="hero-kicker">Online lesen und herunterladen</p>
-      <h2 id="publikationszugang-title">Online lesen <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-      <p>Online-Fassungen sind der Hauptzugang. Word-Dateien bleiben ergänzende Export- und Archivfassungen.</p>
+      <p class="hero-kicker">Vertiefung</p>
+      <h2 id="publikationszugang-title">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Die Seite führt zuerst in das Thema ein. Detailkonzepte, Dossiers und Downloads sind hier als weiterführende Materialien gebündelt.</p>
     </div>
     <div class="card-grid three">${cards.map(([kicker, title, text, link, label]) => `
       <article class="card">
         <p class="card-kicker">${kicker}</p>
         <h3 class="card-title">${title}</h3>
         <p class="card-text">${text}</p>
-        <div class="portal-card-actions"><a class="text-link" href="${link}">${label}</a></div>
+        <div class="portal-card-actions">${normalizePath(link) === currentPath ? `<span class="text-note is-current" aria-current="page">Du bist auf dieser Seite.</span>` : `<a class="text-link" href="${link}">${label}</a>`}</div>
       </article>
     `).join("")}</div>
   `;
