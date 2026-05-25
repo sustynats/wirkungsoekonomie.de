@@ -50,6 +50,13 @@
     "check:public-language": "node scripts/check-public-language.js",
     "layout:import-template": "node scripts/documents/import-woek-dossier-template.mjs",
     "layout:standardize": "node scripts/documents/standardize-dossier-layouts.mjs",
-    "layout:standardize:dry-run": "node scripts/documents/standardize-dossier-layouts.mjs --dry-run"
+    "layout:standardize:dry-run": "node scripts/documents/standardize-dossier-layouts.mjs --dry-run",
+    "audit:ux": "node scripts/quality/audit-page-types.mjs",
+    "audit:ctas": "node scripts/quality/audit-public-ctas.mjs",
+    "audit:tools": "node scripts/quality/audit-tools.mjs",
+    "audit:terms": "node scripts/quality/audit-term-coverage.mjs",
+    "audit:search": "node scripts/quality/check-search-contamination.mjs",
+    "audit:links": "node scripts/quality/check-local-links.mjs",
+    "audit:all": "node scripts/quality/audit-page-types.mjs && node scripts/quality/audit-public-ctas.mjs && node scripts/check-public-language.js && node scripts/quality/audit-tools.mjs && node scripts/quality/audit-term-coverage.mjs && node scripts/quality/check-search-contamination.mjs && node scripts/quality/check-local-links.mjs"
   }
 }

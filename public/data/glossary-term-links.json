@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T19:36:25.918Z",
+  "generatedAt": "2026-05-25T19:56:17.247Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -160,6 +160,42 @@
         "reporting",
         "csrd",
         "esrs"
+      ]
+    },
+    "maschinenwertschoepfungsbeitrag": {
+      "label": "Maschinenwertschöpfungsbeitrag",
+      "slug": "maschinenwertschoepfungsbeitrag",
+      "url": "/begriffe/maschinenwertschoepfungsbeitrag/",
+      "hoverDefinition": "Der Maschinenwertschöpfungsbeitrag koppelt automatisierte Wertschöpfung modellhaft in soziale Sicherung, Weiterbildung oder Wirkungsfonds zurück.",
+      "shortDefinition": "Ein Maschinenwertschöpfungsbeitrag beschreibt modellhaft, wie automatisierte Wertschöpfung an sozialer Sicherung und Transformation beteiligt werden könnte.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Automatisierungsbeitrag",
+        "Maschinenbeitrag"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsfonds",
+        "wirkungsrückkopplung",
+        "wirkungshaushalt"
+      ]
+    },
+    "medienwirkung": {
+      "label": "Medienwirkung",
+      "slug": "medienwirkung",
+      "url": "/begriffe/medienwirkung/",
+      "hoverDefinition": "Medienwirkung fragt, wie Inhalte Vertrauen, Polarisierung, Aufmerksamkeit, Quellenklarheit und demokratische Diskursfähigkeit beeinflussen können.",
+      "shortDefinition": "Medienwirkung beschreibt Wirkungspotenziale von Sprache, Frames, Reichweite, Quellenklarheit und Resonanzräumen auf Vertrauen, Diskurs und Demokratie.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Medienwirkungspotenzial",
+        "Resonanzwirkung"
+      ],
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "sdg-plus"
       ]
     },
     "mensch-planet-demokratie": {
@@ -691,6 +727,24 @@
         "wirkung",
         "wirkungsraum",
         "wirkungspfad"
+      ]
+    },
+    "wirkungsfonds": {
+      "label": "Wirkungsfonds",
+      "slug": "wirkungsfonds",
+      "url": "/begriffe/wirkungsfonds/",
+      "hoverDefinition": "Ein Wirkungsfonds ist ein Finanzierungsgefäß für Wirkung: Prävention, Transformation, soziale Sicherung, Resilienz oder Regeneration.",
+      "shortDefinition": "Ein Wirkungsfonds bündelt Mittel für Vorhaben, die positive Netto-Wirkung erzeugen, Risiken senken oder Übergänge finanzieren.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Impact-Fonds",
+        "WÖk-Fonds"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsrückkopplung",
+        "wirkungshaushalt",
+        "maschinenwertschoepfungsbeitrag"
       ]
     },
     "wirkungsgrenze": {

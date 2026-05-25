@@ -10,6 +10,8 @@ const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
 const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Bildungsportal öffnen/g, "Wirkungsfeld öffnen"],
+  [/Produktportal öffnen/g, "Produktwirkung verstehen"],
+  [/[A-Za-zÄÖÜäöüß-]*portal öffnen/gi, "Zur Übersicht"],
   [/Portal öffnen/g, "Wirkungsfeld öffnen"],
   [/Portalarchitektur/g, "Systemlandkarte"],
   [/Grundstruktur vorhanden/g, "Wirkungsfeld"],
@@ -36,6 +38,7 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/\bv0\.1\b/g, "Modellfassung"],
   [/Toolseite öffnen/g, "Methodik lesen"],
   [/Publikationszugang/g, "Vertiefung"],
+  [/Portaltexts?/g, "Onlinefassung"],
   [/Portalstruktur/g, "Übersicht"],
   [/Tool-Architektur/g, "Werkzeuglogik"],
   [/Detailkonzept \+ Dossier/g, "Vertiefung"],

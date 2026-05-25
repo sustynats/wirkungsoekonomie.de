@@ -105,7 +105,7 @@ const bookAnchors = {
     ["Kapitel 31 - WÖk-IDs und Indikatorenarchitektur", "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/"],
     ["Kapitel 32 - Benchmarks, Skalen und Scorecards", "referenz/kapitel-032-benchmarks-skalen-und-scorecards/"],
     ["Kapitel 39 - Wirkungshaushalt und öffentliche Mittel", "referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/"],
-    ["Kapitel 70 - Wohnen als Wirkungsfaktor", "referenz/kapitel-070-wohnen-als-wirkungsfaktor/"],
+    ["Kapitel 70 - Wohnen", "referenz/kapitel-070-wohnen/"],
     ["Working-Paper Wohnungsmarkt", "dokumente/wp-wohnungsmarkt/"],
   ],
 };

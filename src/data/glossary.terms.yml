@@ -459,6 +459,29 @@ terms:
     glossaryOrderKey: "resonanzraum"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: medienwirkung
+    canonicalLabel: "Medienwirkung"
+    slug: "medienwirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Sprache und Medien"
+    shortDefinition: "Medienwirkung beschreibt Wirkungspotenziale von Sprache, Frames, Reichweite, Quellenklarheit und Resonanzräumen auf Vertrauen, Diskurs und Demokratie."
+    hoverDefinition: "Medienwirkung fragt, wie Inhalte Vertrauen, Polarisierung, Aufmerksamkeit, Quellenklarheit und demokratische Diskursfähigkeit beeinflussen können."
+    longDefinition: "Medienwirkung ist keine Wahrheitseinstufung einzelner Aussagen. Sie macht sichtbar, welche Wirkungspfade durch Framing, Emotionalisierung, Quellenlage, Plattformlogik und Resonanzräume entstehen können."
+    usageNote: "Als Wirkungspotenzial beschreiben, nicht als Zensur- oder Wahrheitsurteil."
+    doNotConfuseWith: ["Faktencheck", "Zensur", "Personenbewertung"]
+    synonyms: ["Medienwirkungspotenzial", "Resonanzwirkung"]
+    relatedTerms: ["resonanzraum", "wirkungspotenzial", "wirkungsrisiko", "sdg-plus"]
+    relatedDocuments: ["medien-oeffentlichkeit"]
+    examples: ["Medienwirkung testen", "WÖk-Scanner für politische Aussagen"]
+    preferredUsage: "Bei Medien, Öffentlichkeit und politischer Sprache als Wirkungspotenzial verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "medienwirkung"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-25"
   - termId: reverse-merit-order
     canonicalLabel: "Reverse Merit Order"
     slug: "reverse-merit-order"
@@ -1011,6 +1034,52 @@ terms:
     glossaryOrderKey: "wirkungseinkommen"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: maschinenwertschoepfungsbeitrag
+    canonicalLabel: "Maschinenwertschöpfungsbeitrag"
+    slug: "maschinenwertschoepfungsbeitrag"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Ein Maschinenwertschöpfungsbeitrag beschreibt modellhaft, wie automatisierte Wertschöpfung an sozialer Sicherung und Transformation beteiligt werden könnte."
+    hoverDefinition: "Der Maschinenwertschöpfungsbeitrag koppelt automatisierte Wertschöpfung modellhaft in soziale Sicherung, Weiterbildung oder Wirkungsfonds zurück."
+    longDefinition: "Der Begriff markiert eine mögliche Rückkopplung, wenn Maschinen, KI oder Automatisierung Wertschöpfung erzeugen, ohne dass diese Wertschöpfung weiterhin über Lohnarbeit und Sozialbeiträge finanziert wird."
+    usageNote: "Als Modellannahme und Finanzierungslogik beschreiben, nicht als fertige Steuerzusage."
+    doNotConfuseWith: ["Robotersteuer", "Personenbewertung", "Strafe für Innovation"]
+    synonyms: ["Automatisierungsbeitrag", "Maschinenbeitrag"]
+    relatedTerms: ["wirkungseinkommen", "wirkungsfonds", "wirkungsrückkopplung", "wirkungshaushalt"]
+    relatedDocuments: ["arbeit-einkommen-automatisierung"]
+    examples: ["Automatisierungs- und Wirkungseinkommensrechner"]
+    preferredUsage: "Als Rückkopplung automatisierter Wertschöpfung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "maschinenwertschoepfungsbeitrag"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-25"
+  - termId: wirkungsfonds
+    canonicalLabel: "Wirkungsfonds"
+    slug: "wirkungsfonds"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Ein Wirkungsfonds bündelt Mittel für Vorhaben, die positive Netto-Wirkung erzeugen, Risiken senken oder Übergänge finanzieren."
+    hoverDefinition: "Ein Wirkungsfonds ist ein Finanzierungsgefäß für Wirkung: Prävention, Transformation, soziale Sicherung, Resilienz oder Regeneration."
+    longDefinition: "Wirkungsfonds können Rückkopplungen aus Steuern, Beiträgen, Kapitalerträgen oder öffentlichen Budgets aufnehmen und in überprüfbare Wirkungspfade investieren."
+    usageNote: "Nicht als Geld aus dem Nichts darstellen; immer Herkunft, Zweckbindung, Governance und Grenzen erklären."
+    doNotConfuseWith: ["Subvention", "Spendenfonds", "Vermögensverwaltung ohne Wirkungskriterien"]
+    synonyms: ["Impact-Fonds", "WÖk-Fonds"]
+    relatedTerms: ["positive-netto-wirkung", "wirkungsrückkopplung", "wirkungshaushalt", "maschinenwertschoepfungsbeitrag"]
+    relatedDocuments: ["finanzsystem-kapital-wirkungsfonds"]
+    examples: ["Renten-Impact-Fonds", "Gesundheitsfonds", "Transformationsfonds"]
+    preferredUsage: "Als zweckgebundene Finanzierungsarchitektur für Wirkung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsfonds"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-25"
   - termId: wirkungsgrenze
     canonicalLabel: "Wirkungsgrenze"
     slug: "wirkungsgrenze"

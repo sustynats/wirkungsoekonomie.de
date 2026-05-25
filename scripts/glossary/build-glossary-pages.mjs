@@ -110,6 +110,9 @@ const termTargetLinks = new Map([
   ["wirkungsrat", "../../werkzeuge/wirkungsrat/"],
   ["wirkungshaushalt", "../../werkzeuge/wirkungshaushalt/"],
   ["wirkungsdatenraum", "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"],
+  ["wirkungsfonds", "../../wirkungsfelder/finanzsystem-kapital/finanzierbarkeit-wirkungsfonds/"],
+  ["maschinenwertschoepfungsbeitrag", "../../erleben/automatisierungs-wirkungseinkommensrechner/"],
+  ["medienwirkung", "../../erleben.html#medienwirkung"],
   ["digitaler-produktpass", "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"],
   ["wirkungseinkommen", "../../wirkungsfelder/arbeit-einkommen/wirkungseinkommen/"],
   ["wirkungsrente", "../../wirkungsfelder/rente-soziale-sicherung/"],
@@ -210,6 +213,18 @@ function termUsageHtml(term) {
     return `<p>Mensch, Planet und Demokratie nicht als Zusatz-Ziel neben den SDGs verwenden. Der Dreiklang ist die öffentliche Übersetzung des fachlichen Referenzrahmens und bleibt an Wirkung, Wirkungsbewertung und positive Netto-Wirkung gebunden.</p>`;
   }
   return `<p>${esc(term.usageNote)}</p>`;
+}
+
+function examplesHtml(term) {
+  if (Array.isArray(term.examples) && term.examples.length) return listItems(term.examples);
+  return `<p>Ein praktisches Beispiel findest du über die verknüpften Wirkungsfelder, Werkzeuge oder Dossiers.</p>`;
+}
+
+function misunderstandingsHtml(term) {
+  const items = Array.isArray(term.doNotConfuseWith) && term.doNotConfuseWith.length
+    ? term.doNotConfuseWith.map((item) => `${term.canonicalLabel} bedeutet nicht automatisch ${item}.`)
+    : ["Der Begriff ist kein Freifahrtschein für Personenbewertung, Automatisierung von Entscheidungen oder Heilsversprechen."];
+  return listItems(items);
 }
 
 function detailLinks(term) {
@@ -322,11 +337,30 @@ for (const term of data.terms) {
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">Abgrenzung</p>
-            <h2>Nicht verwechseln mit</h2>
+            <h2>Was es nicht bedeutet</h2>
             ${listItems(term.doNotConfuseWith)}
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">Beispiel</p>
+            <h2>Wie sieht das praktisch aus?</h2>
+            ${examplesHtml(term)}
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">Missverständnisse</p>
+            <h2>Typische Missverständnisse</h2>
+            ${misunderstandingsHtml(term)}
           </section>
         </div>
 ${termExtraBlock(term)}
+        <section class="term-link-section" aria-labelledby="application-title">
+          <div>
+            <p class="section-eyebrow">Anwendung</p>
+            <h2 id="application-title">Wo wird der Begriff praktisch?</h2>
+          </div>
+          <div class="portal-card-actions">
+            ${detailLinks(term)}
+          </div>
+        </section>
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
             <p class="section-eyebrow">Verknüpfungen</p>
