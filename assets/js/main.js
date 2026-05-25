@@ -1519,8 +1519,9 @@ const ToolExplanationLayer = (() => {
     return href.startsWith("/") ? `${prefix}${href.slice(1)}` : href;
   }
 
-  function card(title, text) {
-    return `<article class="tool-explanation-card"><h3>${title}</h3><p>${text}</p></article>`;
+  function card(title, text, extraClass = "") {
+    const className = extraClass ? `tool-explanation-card ${extraClass}` : "tool-explanation-card";
+    return `<article class="${className}"><h3>${title}</h3><p>${text}</p></article>`;
   }
 
   function ToolPurposeBox(config) {
@@ -1537,7 +1538,7 @@ const ToolExplanationLayer = (() => {
     return `
       <div class="tool-explanation-grid tool-journey-grid">
         ${card("2. Was sieht das heutige System nicht?", config.blindSpot || defaults.blindSpot)}
-        ${card("3. Was betrachtet die WÖk anders?", config.difference || defaults.difference)}
+        ${card("3. Was macht die Wirkungsökonomie anders?", config.difference || defaults.difference)}
       </div>
     `;
   }
@@ -1567,7 +1568,7 @@ const ToolExplanationLayer = (() => {
   }
 
   function ResultInterpretationCard(config) {
-    return card("6. Was bedeuten die Ergebniswerte?", config.values || defaults.values);
+    return card("6. Was bedeuten die Ergebniswerte?", config.values || defaults.values, "tool-result-interpretation");
   }
 
   function MeaningCard(config) {
@@ -1575,7 +1576,7 @@ const ToolExplanationLayer = (() => {
   }
 
   function LimitsOfDemoBox(config) {
-    return card("8. Was diese Demo nicht beweist", config.limits || defaults.limits);
+    return card("8. Was diese Demo nicht leistet", config.limits || defaults.limits);
   }
 
   function FundingSourceBox(config) {
