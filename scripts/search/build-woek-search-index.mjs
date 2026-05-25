@@ -26,9 +26,25 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Website-Integration/g, "Einordnung auf der Website"],
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
   [/Demo in Vorbereitung/g, "Methodenseite"],
+  [/Toolkarte öffnen/g, "Toolkarte ansehen"],
+  [/Audio verfügbar\. Transkript in Bearbeitung\./g, "Audio verfügbar."],
   [/Methodendokumentation folgt/g, "Methodik und Annahmen"],
   [/Datenquellen vorbereitet/g, "Datenquellen und Grenzen"],
   [/Version v0\.1/g, "Modellhafte Fassung"],
+  [/\bv0\.1\b/g, "Modellfassung"],
+  [/Toolseite öffnen/g, "Methodik lesen"],
+  [/Publikationszugang/g, "Vertiefung"],
+  [/Portalstruktur/g, "Übersicht"],
+  [/Tool-Architektur/g, "Werkzeuglogik"],
+  [/Einzeldossier-Set/g, "Einzeldossiers"],
+  [/Dossier & Export/g, "Vertiefung"],
+  [/Export- und Archivfassungen/g, "ergänzende Downloadfassungen"],
+  [/Export- und Archiv/g, "Download"],
+  [/Export und Archiv/g, "Download"],
+  [/kanonische Seitenadresse/gi, "Seitenadresse"],
+  [/Kanonische Seite öffnen/g, "Seite öffnen"],
+  [/kanonisch/gi, "öffentlich"],
+  [/in Vorbereitung/g, "wird ergänzt"],
   [/Prototypen/g, "Demos"],
   [/Prototyp/g, "Modellhafte Demo"],
 ];
@@ -37,6 +53,9 @@ function clean(text) {
   return String(text || "")
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<header[\s\S]*?<\/header>/gi, " ")
+    .replace(/<footer[\s\S]*?<\/footer>/gi, " ")
+    .replace(/<nav[\s\S]*?<\/nav>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();

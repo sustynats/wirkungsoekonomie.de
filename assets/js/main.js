@@ -86,6 +86,7 @@ if (siteNav && !document.querySelector(".site-search-shortcut")) {
   searchLink.className = "site-search-shortcut";
   searchLink.textContent = "Suche";
   searchLink.setAttribute("aria-label", "Website-Suche öffnen");
+  searchLink.setAttribute("title", "Suche");
   if (window.location.pathname.endsWith("/suche.html")) {
     searchLink.classList.add("active");
     searchLink.setAttribute("aria-current", "page");
@@ -1213,14 +1214,14 @@ function initGo5WirtschaftDetailkonzepte() {
     ["Werkzeugseite vorhanden", "Produktpass-/Produktscorecard-Demo", "Produktwirkung, Datenräume und Verbraucherinformation verbinden.", "/werkzeuge/produktscorecards/"],
     ["Werkzeugseite vorhanden", "WÖk-IDs", "Indikatoren, Quellen und Datenlogik für Unternehmenswirkung strukturieren.", "/werkzeuge/woek-ids/"],
     ["Werkzeugseite vorhanden", "Reverse Merit Order", "Schlechtere Wirkung systematisch zurücksortieren und bessere Wirkung bevorzugen.", "/werkzeuge/reverse-merit-order/"],
-    ["Demo in Vorbereitung", "KII-Dashboard", "Kernwirkungsindikatoren statt nur klassische KPI im Management sichtbar machen.", ""],
-    ["Demo in Vorbereitung", "Lieferketten-Wirkungscheck", "Lieferkettenwirkung, Risiken, Datenqualität und Lieferantenentwicklung prüfen.", ""],
+    ["Methodik", "KII-Dashboard", "Kernwirkungsindikatoren statt nur klassische KPI im Management sichtbar machen.", ""],
+    ["Methodik", "Lieferketten-Wirkungscheck", "Lieferkettenwirkung, Risiken, Datenqualität und Lieferantenentwicklung prüfen.", ""],
     ["Demo vorhanden", "Produktwirkungsrechner", "Produktbeispiele, FinalScore und Wirkungsumsatzsteuer modellhaft ausprobieren.", "/erleben/produktwirkungsrechner/"],
-    ["Demo in Vorbereitung", "Green-Claims-Check", "Wirkungsversprechen in Marketing und Vertrieb auf Datenbasis und Risiko prüfen.", ""],
-    ["Demo in Vorbereitung", "CapEx-Wirkungscheck", "Investitionen nach Zukunftsfähigkeit, Wirkung, Risiko und Resilienz bewerten.", ""],
-    ["Demo in Vorbereitung", "Übergangspfad-Generator", "Transformationspfade für KMU und Unternehmen vergleichbar strukturieren.", ""],
-    ["Demo in Vorbereitung", "Wirkungsrisiko-Check", "Wirkungsrisiken in Enterprise Risk Management und Strategie integrieren.", ""],
-    ["Demo in Vorbereitung", "EBA-Kreditdaten-Check", "Bankfähige ESG- und Transformationsdaten für Kreditgespräche vorbereiten.", ""],
+    ["Methodik", "Green-Claims-Check", "Wirkungsversprechen in Marketing und Vertrieb auf Datenbasis und Risiko prüfen.", ""],
+    ["Methodik", "CapEx-Wirkungscheck", "Investitionen nach Zukunftsfähigkeit, Wirkung, Risiko und Resilienz bewerten.", ""],
+    ["Methodik", "Übergangspfad-Generator", "Transformationspfade für KMU und Unternehmen vergleichbar strukturieren.", ""],
+    ["Methodik", "Wirkungsrisiko-Check", "Wirkungsrisiken in Enterprise Risk Management und Strategie integrieren.", ""],
+    ["Methodik", "EBA-Kreditdaten-Check", "Bankfähige ESG- und Transformationsdaten für Kreditgespräche vorbereiten.", ""],
   ];
 
   const section = document.createElement("section");
@@ -1246,7 +1247,7 @@ function initGo5WirtschaftDetailkonzepte() {
     <div class="section-header">
       <p class="hero-kicker">Werkzeuge</p>
       <h2>Werkzeuge in diesem Bereich</h2>
-      <p>Werkzeuge sind als vorhandene Zielseiten verlinkt oder transparent als Demo in Vorbereitung gekennzeichnet.</p>
+      <p>Interaktive Werkzeuge sind direkt verlinkt. Statische Karten führen als Methodik weiter und versprechen keine Bedienoberfläche.</p>
     </div>
     <div class="card-grid three">
       ${toolCards.map(([kicker, title, text, href]) => `
@@ -1254,7 +1255,7 @@ function initGo5WirtschaftDetailkonzepte() {
           <p class="card-kicker">${kicker}</p>
           <h3 class="card-title">${title}</h3>
           <p class="card-text">${text}</p>
-          <div class="portal-card-actions">${href ? `<a class="text-link" href="${href}">Öffnen</a>` : `<span class="prototype-badge">Demo in Vorbereitung</span>`}</div>
+          <div class="portal-card-actions">${href ? `<a class="text-link" href="${href}">Öffnen</a>` : `<span class="prototype-badge">Methodik</span>`}</div>
         </article>
       `).join("")}
     </div>

@@ -173,11 +173,11 @@ const go10MethodPapers = [
 
 const go10ToolCards = [
   ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen."],
-  ["Scorecard-Generator", "Demo in Vorbereitung", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
-  ["NWI-Rechner", "Demo in Vorbereitung", "werkzeuge/netto-wirkungs-index/", "Positive, negative und neutrale Wirkung ohne freie Kompensation zusammenführen."],
-  ["T-SROI-Rechner", "Demo in Vorbereitung", "werkzeuge/t-sroi/", "Investitionen, Transformationswirkung, Resilienzfaktor und Datenqualität modellhaft zusammenführen."],
-  ["Reverse-Merit-Order-Demo", "Demo in Vorbereitung", "werkzeuge/reverse-merit-order/", "Rote Linien und schwächste kritische Wirkungsfelder sichtbar machen."],
-  ["Datenqualitäts-/Assurance-Check", "Demo in Vorbereitung", "werkzeuge/datenqualitaet-assurance/", "Prüfstatus, Datenherkunft, Schätzungen und Revisionsbedarf transparent markieren."],
+  ["Scorecard-Generator", "Methodik", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
+  ["NWI-Rechner", "Methodik", "werkzeuge/netto-wirkungs-index/", "Positive, negative und neutrale Wirkung ohne freie Kompensation zusammenführen."],
+  ["T-SROI-Rechner", "Methodik", "werkzeuge/t-sroi/", "Investitionen, Transformationswirkung, Resilienzfaktor und Datenqualität modellhaft zusammenführen."],
+  ["Reverse-Merit-Order-Demo", "Methodik", "werkzeuge/reverse-merit-order/", "Rote Linien und schwächste kritische Wirkungsfelder sichtbar machen."],
+  ["Datenqualitäts-/Assurance-Check", "Methodik", "werkzeuge/datenqualitaet-assurance/", "Prüfstatus, Datenherkunft, Schätzungen und Revisionsbedarf transparent markieren."],
 ];
 
 const dossierPages = [
@@ -320,8 +320,8 @@ function citationNotice(route) {
   return `<aside class="citation-note" role="note">
       <p class="card-kicker">Zitierfähig</p>
       <h2>Online lesen, gezielt zitieren</h2>
-      <p>Online-Volltext ist der Hauptzugang. Abschnittsanker können direkt zitiert werden; Downloads sind ergänzende Export- und Archivfassungen.</p>
-      <p><a class="text-link" href="${route}">Kanonische Seitenadresse öffnen</a></p>
+      <p>Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen und Dossiers stehen weiter unten gesammelt bereit.</p>
+      <p><a class="text-link" href="${route}">Seitenadresse öffnen</a></p>
     </aside>`;
 }
 
@@ -430,7 +430,7 @@ function toolGrid(base, selected = tools) {
     <div class="section-header">
       <p class="hero-kicker">Kontext-Werkzeuge</p>
       ${sectionTitle("context-tools", "Werkzeuge in diesem Bereich")}
-      <p>Impact Controlling ist der Methodenrahmen. Die Toolseiten bleiben kanonische Erklärorte; Dossiers vertiefen die jeweilige Anwendung.</p>
+      <p>Impact Controlling ist der Methodenrahmen. Interaktive Rechner werden als Rechner bezeichnet; statische Zielseiten führen als Methodik oder Dossier weiter.</p>
     </div>
     <div class="card-grid three context-tool-grid">
       ${selected.map((tool) => `<article class="card context-tool-card">
@@ -439,7 +439,7 @@ function toolGrid(base, selected = tools) {
         <p class="card-text">${escapeHtml(tool.short)}</p>
         <p class="card-text"><strong>Warum hier relevant?</strong> ${escapeHtml(tool.why)}</p>
         <div class="portal-card-actions">
-          <a class="text-link" href="${href(base, tool.href)}">Toolseite öffnen</a>
+          <a class="text-link" href="${href(base, tool.href)}">Methodik lesen</a>
           <a class="text-link" href="${href(base, tool.dossier)}">Dossier lesen</a>
         </div>
       </article>`).join("")}
@@ -452,14 +452,14 @@ function go10ToolGrid(base) {
     <div class="section-header">
       <p class="hero-kicker">Tool-Suite</p>
       ${sectionTitle("go10-tools", "Methoden in Werkzeuglogik übersetzen")}
-      <p>Die Methodenpapiere beschreiben die fachliche Logik. Die Toolkarten zeigen, welche digitalen Hilfen bereits als Methodenseite vorhanden sind und welche als Demo vorbereitet werden.</p>
+      <p>Die Methodenpapiere beschreiben die fachliche Logik. Die Karten führen zu Methodenseiten; sie versprechen keine Interaktion, wenn keine Bedienoberfläche vorhanden ist.</p>
     </div>
     <div class="card-grid three context-tool-grid">
       ${go10ToolCards.map(([title, status, link, text]) => `<article class="card context-tool-card">
         <p class="card-kicker">${escapeHtml(status)}</p>
         <h3 class="card-title">${escapeHtml(title)}</h3>
         <p class="card-text">${escapeHtml(text)}</p>
-        <div class="portal-card-actions"><a class="text-link" href="${href(base, link)}">Methodenseite öffnen</a></div>
+        <div class="portal-card-actions"><a class="text-link" href="${href(base, link)}">Methodik lesen</a></div>
       </article>`).join("")}
     </div>
   </section>`;
@@ -529,7 +529,7 @@ function downloadBlock(base, items = impactDownloads) {
   const missing = items.filter((item) => item.required && !fileExists(item.href));
   return `<section class="section" aria-labelledby="downloads">
     <div class="card">
-      <p class="hero-kicker">Dossier & Export</p>
+      <p class="hero-kicker">Downloads</p>
       ${sectionTitle("downloads", "Downloads und Druck")}
       <p class="card-text">Online-Volltext ist der Hauptzugang. Word/PDF-Dateien werden nur verlinkt, wenn sie als Download vorhanden sind.</p>
       <div class="portal-card-actions no-print">
@@ -641,7 +641,7 @@ function overviewPage() {
       <div class="section-header">
         <p class="hero-kicker">Online-Volltexte</p>
         ${sectionTitle("dossiers", "Dossiers online lesen")}
-        <p>Alle Dossiers sind als Webfassung mit Ankern angelegt. Word-Dateien werden ergänzt, sobald sie als Download verfügbar sind.</p>
+        <p>Alle Dossiers sind als Webfassung mit Ankern angelegt. Downloads stehen gesammelt am Seitenende.</p>
       </div>
       ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
         title,
@@ -745,7 +745,7 @@ function methodPaperOverviewPage() {
       <div class="section-header">
         <p class="hero-kicker">Online-Volltexte</p>
         ${sectionTitle("methodenpapier-liste", "Methodenpapiere online lesen")}
-        <p>Online-Volltext ist der Hauptzugang; DOCX und PDF sind Export- und Archivfassungen.</p>
+        <p>Online-Volltext ist der Hauptzugang; DOCX und PDF sind ergänzende Downloadfassungen.</p>
       </div>
       ${methodPaperCardGrid(base)}
     </section>
@@ -1043,7 +1043,7 @@ function workshopPages() {
       kicker: "Arbeitsbibliothek",
       title: "Konzepte & Dossiers",
       subtitle: "Online lesen, zitieren, drucken, später exportieren.",
-      text: "Konzepte und Dossiers landen automatisch in der Werkstatt. Downloads sind Archiv und Export, nicht Hauptzugang.",
+      text: "Konzepte und Dossiers sind online lesbar. Downloads ergänzen den Online-Zugang, ersetzen ihn aber nicht.",
       action: `<a class="btn btn-primary" href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>

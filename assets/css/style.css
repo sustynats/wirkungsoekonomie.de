@@ -9578,17 +9578,110 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
 @media (max-width: 760px) {
   .site-header {
-    gap: 0.7rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 0.45rem;
+    min-height: 3.65rem;
+    padding: 0.45rem var(--space-gutter);
+  }
+
+  .brand {
+    max-width: none;
+    gap: 0.45rem;
+  }
+
+  .brand-mark {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .brand-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .brand::after {
+    content: "WÖk";
+    color: var(--navy);
+    font-family: var(--font-heading);
+    font-size: 1.02rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
   }
 
   .site-search-shortcut {
-    margin-left: auto;
-    padding-inline: 0.75rem;
+    position: static;
+    justify-self: end;
+    width: 2.45rem;
+    min-width: 2.45rem;
+    height: 2.45rem;
+    min-height: 2.45rem;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .site-search-shortcut::before {
+    content: "⌕";
+    color: var(--navy);
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .nav-toggle {
+    position: static !important;
+    inset: auto !important;
+    justify-self: end;
+    width: 2.45rem;
+    height: 2.45rem;
+    margin-left: 0;
+  }
+
+  .nav-toggle-icon {
+    font-size: 1.25rem;
+  }
+
+  .site-nav {
+    top: calc(100% + 0.35rem);
+    right: var(--space-gutter);
+    left: var(--space-gutter);
+    max-height: calc(100vh - 4.75rem);
   }
 
   .site-nav.open + .site-search-shortcut {
     display: none;
   }
+
+  .hero-actions button[onclick*="print"],
+  .portal-card-actions button[onclick*="print"],
+  [data-print-page] {
+    display: none !important;
+  }
+}
+
+.chip-row,
+.sdg-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  margin-top: 0.85rem;
+}
+
+.sdg-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.85rem;
+  padding: 0.28rem 0.58rem;
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1.15;
 }
 
 

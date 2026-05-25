@@ -254,10 +254,10 @@ function topicMatrix(config) {
   const rows = topicRows(config);
   if (!rows.length) return "";
   return `<div class="table-wrap publication-matrix-wrap"><table class="data-table publication-matrix"><thead><tr><th>Unterbereich</th><th>Detailkonzept</th><th>Detail-Download</th><th>Dossier</th><th>Dossier-Download</th></tr></thead><tbody>${rows.map((row) => {
-    const detailOnline = exists(row.detailRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.detailRel.replace(/index\.html$/, ""))}">online lesen</a>` : "in Vorbereitung";
-    const dossierOnline = exists(row.dossierRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierRel.replace(/index\.html$/, ""))}">online lesen</a>` : "in Vorbereitung";
-    const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "Gesamtset" : "Word"}</a>` : "in Vorbereitung";
-    const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "Gesamtset" : "Word"}</a>` : "in Vorbereitung";
+    const detailOnline = exists(row.detailRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.detailRel.replace(/index\.html$/, ""))}">online lesen</a>` : "wird ergänzt";
+    const dossierOnline = exists(row.dossierRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierRel.replace(/index\.html$/, ""))}">online lesen</a>` : "wird ergänzt";
+    const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
+    const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
     return `<tr><th scope="row">${escapeHtml(row.title)}</th><td>${detailOnline}</td><td>${detailDownload}</td><td>${dossierOnline}</td><td>${dossierDownload}</td></tr>`;
   }).join("")}</tbody></table></div>`;
 }
@@ -266,9 +266,9 @@ function hub(config) {
   return `<!-- publication-access-hub:start -->
 <section class="section publication-access-hub" id="publikationszugang" aria-labelledby="publikationszugang-title">
   <div class="section-header">
-    <p class="hero-kicker">Publikationszugang</p>
-    <h2 id="publikationszugang-title">Online lesen und herunterladen <a class="cite-anchor no-print" href="#publikationszugang-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-    <p>Online-Volltext ist der Hauptzugang. Jede Quelle muss direkt lesbar, zitierfähig und bei Bedarf als Word-Datei exportierbar sein.</p>
+    <p class="hero-kicker">Vertiefung</p>
+    <h2 id="publikationszugang-title">Weiterlesen und vertiefen <a class="cite-anchor no-print" href="#publikationszugang-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+    <p>Die Seite führt zuerst in das Thema ein. Dossiers, Detailkonzepte und Downloads sind hier als weiterführende Vertiefung gebündelt.</p>
   </div>
   ${compactAccess(config)}
   <div class="section-header compact">

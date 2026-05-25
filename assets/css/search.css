@@ -374,6 +374,14 @@
     position: static;
   }
 
+  .search-filters {
+    order: 2;
+  }
+
+  .search-results-panel {
+    order: 1;
+  }
+
   .search-live-suggestions {
     max-height: min(58vh, 32rem);
     overflow: auto;

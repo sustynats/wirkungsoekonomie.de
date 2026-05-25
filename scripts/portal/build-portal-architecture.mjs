@@ -230,7 +230,7 @@ function exportBlock(base, pdfHref = "") {
     : "";
   return `<section class="section" aria-labelledby="export-title">
         <div class="card">
-          <p class="hero-kicker">Dossier & Export</p>
+          <p class="hero-kicker">Vertiefung</p>
           <h2 id="export-title">Seite sichern oder weitergeben</h2>
           <p class="card-text">Diese Übersicht kann direkt gedruckt oder als Orientierung für die Vertiefungen genutzt werden.</p>
           <div class="portal-card-actions no-print">
@@ -248,7 +248,10 @@ ${items
     const lines = ['            <article class="card">'];
     if (item.kicker) lines.push(`              <p class="card-kicker">${item.kicker}</p>`);
     lines.push(`              <h3 class="card-title">${item.title}</h3>`);
-    lines.push(`              <p class="card-text">${item.text}</p>`);
+    const textMarkup = String(item.text || "").includes("<div")
+      ? `<div class="card-text">${item.text}</div>`
+      : `<p class="card-text">${item.text}</p>`;
+    lines.push(`              ${textMarkup}`);
     if (item.href) {
       lines.push(
         `              <div class="portal-card-actions"><a class="text-link" href="${href(base, item.href)}">${item.linkLabel || "Öffnen"}</a></div>`,
@@ -302,7 +305,7 @@ const fields = [
       ["Wirkungsförderung", "Förderung darf nicht erst beginnen, wenn Kinder scheitern. Sie stärkt Potenziale, verhindert Lernabbrüche und verbindet schulische und außerschulische Unterstützung."],
       ["Digitale Mündigkeit", "Digitale Bildung bedeutet nicht nur Geräteausstattung, sondern Urteilskraft über Daten, Plattformen, KI, Manipulation, Aufmerksamkeit und digitale Selbstbestimmung."],
       ["Demokratiekompetenz", "Demokratie wird nicht nur erklärt, sondern praktiziert: Streitfähigkeit, Minderheitenschutz, Medienkompetenz, Beteiligung, Verantwortung und Rechtsstaatlichkeit."],
-      ["Schule als Wirkungsraum", "Gebäude, Zeitstruktur, Beziehung, Ernährung, Bewegung, Beteiligung, Ruhe, Sicherheit und Inklusion wirken auf Lernen."],
+      ["Schule als Wirkungsraum", "Gebäude, Zeitstruktur, Beziehung, Ernährung, Gesundheit, Beteiligung, Ruhe, Sicherheit und Inklusion wirken auf Lernen."],
       ["Pilotmodell", "Die Wirkungsschule kann als Modellprojekt, Schulprofil oder kommunales Bildungsnetzwerk erprobt werden."],
     ],
     actors: ["Schüler:innen", "Eltern", "Lehrkräfte", "Schulleitungen", "Kommunen", "Bildungspolitik", "Wissenschaft"],
@@ -509,6 +512,13 @@ function normalizedField(field) {
 }
 
 function fieldOverview() {
+  const fieldChipMarkup = (field) => `<div class="sdg-chip-row" aria-label="SDG- und SDG+-Bezüge">${[
+    ...field.sdgs.slice(0, 3),
+    ...(field.plus || sdgPlusDefault).slice(0, 2).map((item) => `SDG+ ${item}`),
+  ]
+    .map((item) => `<span class="sdg-chip">${escapeHtml(item)}</span>`)
+    .join("")}</div>`;
+
   return page({
     rel: "wirkungsfelder/index.html",
     title: "Wirkungsfelder der Wirkungsökonomie | Wirkungsoekonomie.de",
@@ -544,11 +554,7 @@ function fieldOverview() {
             fields.map((field) => ({
               kicker: "Wirkungsfeld",
               title: field.title,
-              text: `${field.short}<br><br><strong>SDG-/SDG+-Bezug:</strong> ${field.sdgs.slice(0, 3).join(", ")}; SDG+ ${(
-                field.plus || sdgPlusDefault
-              )
-                .slice(0, 2)
-                .join(", ")}.`,
+              text: `${field.short}${fieldChipMarkup(field)}`,
               href: `wirkungsfelder/${field.slug}/`,
               linkLabel: "Wirkungsfeld öffnen",
             })),
@@ -591,11 +597,7 @@ function fieldPage(field) {
             <p class="hero-kicker">Wirkungsfeld</p>
             <h1 class="hero-title">${data.pageTitle}</h1>
             <p class="hero-subtitle">${data.subtitle}</p>
-            <dl class="portal-meta-grid">
-              <div><dt>Kurzdefinition</dt><dd>${field.short}</dd></div>
-              <div><dt>Zentrale Frage</dt><dd>${field.question}</dd></div>
-              <div><dt>Status</dt><dd>${field.status}</dd></div>
-            </dl>
+            <p class="hero-text">${field.short}</p>
             ${printActions(base)}
           </div>
           <aside class="card">
@@ -603,6 +605,15 @@ function fieldPage(field) {
             <h2 class="card-title">Positive Netto-Wirkung wird entscheidungsrelevant.</h2>
             <p class="card-text">Wirkung kann positiv, negativ oder neutral sein. Dieses Portal fragt, welche Netto-Wirkung für Mensch, Planet und Demokratie entsteht und welche Risiken sichtbar bleiben müssen.</p>
           </aside>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="worum-geht-es">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Worum geht es?</p>
+            <h2 id="worum-geht-es">Die zentrale Frage</h2>
+            <p>${field.question}</p>
+          </div>
         </div>
       </section>
       <section class="section" aria-labelledby="alte-logik">
@@ -616,6 +627,15 @@ function fieldPage(field) {
             { title: "Was gemessen wird", text: "Gemessen werden vor allem Mittel, Fallzahlen, Abschlüsse, Berichte, Budgets, Reichweite oder Aktivität. Diese Werte sind nützlich, aber nicht ausreichend." },
             { title: "Was unsichtbar bleibt", text: "Unsichtbar bleiben Nebenwirkungen, Prävention, Vertrauen, Teilhabe, Resilienz, langfristige Folgekosten und die Frage, wer die Lasten trägt." },
           ])}
+        </div>
+      </section>
+      <section class="section" aria-labelledby="beispiel">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Beispiel</p>
+            <h2 id="beispiel">Woran die Verschiebung sichtbar wird</h2>
+            <p>Eine Entscheidung in diesem Wirkungsfeld ist nicht nur gut, weil sie Aktivität, Reichweite oder Geldflüsse erzeugt. Sie wird wirkungsökonomisch besser, wenn sie nachvollziehbar positive Folgen stärkt, negative Nebenwirkungen reduziert und Zielkonflikte offenlegt.</p>
+          </div>
         </div>
       </section>
       <section class="section" aria-labelledby="perspektivwechsel">
@@ -690,7 +710,7 @@ function fieldPage(field) {
           ${
             data.demos.length
               ? linkList(base, data.demos)
-              : '<p class="card-text">Demo in Vorbereitung. Bis dahin führen Werkzeuge, Buchanker und Werkstatt-Dokumente in die Logik des Wirkungsfelds ein.</p>'
+              : '<p class="card-text">Passende Beispiele und Methoden werden über die verknüpften Werkzeuge, Buchanker und Werkstatt-Dokumente erschlossen.</p>'
           }
         </div>
       </section>
@@ -792,7 +812,7 @@ function schoolPage() {
             {
               title: "Schulorganisation, Zeit und Lernräume",
               text:
-                "Auch Räume wirken. Zeitstrukturen, Pausen, Ernährung, Bewegung, Licht, Lärm, Beteiligung, Beziehung, Sicherheit und Inklusion beeinflussen Lernen. Eine Wirkungsschule betrachtet deshalb nicht nur Unterricht, sondern den ganzen Schulalltag: Wie fühlt sich Schule an? Wer wird gesehen? Wer wird beschämt? Wer kann mitgestalten? Welche Routinen stärken Vertrauen, Konzentration und Verantwortung?",
+                "Auch Räume wirken. Zeitstrukturen, Pausen, Ernährung, Gesundheit, Licht, Lärm, Beteiligung, Beziehung, Sicherheit und Inklusion beeinflussen Lernen. Eine Wirkungsschule betrachtet deshalb nicht nur Unterricht, sondern den ganzen Schulalltag: Wie fühlt sich Schule an? Wer wird gesehen? Wer wird beschämt? Wer kann mitgestalten? Welche Routinen stärken Vertrauen, Konzentration und Verantwortung?",
             },
             {
               title: "Pilotmodell Wirkungsschule",
@@ -807,7 +827,7 @@ function schoolPage() {
           <div>
             <p class="card-kicker">Konzeptpapier</p>
             <h2 id="konzeptpapier">Konzeptpapier Wirkungsschule online lesen und herunterladen ${citeAnchor("konzeptpapier")}</h2>
-            <p class="card-text">Die Online-Fassung ist der erste Zugang zum Konzeptpapier. Die Word-Datei bleibt ergänzend als Download und Archivfassung erhalten. Es wurde keine neue PDF-Exportpipeline ergänzt.</p>
+            <p class="card-text">Die Online-Fassung ist der erste Zugang zum Konzeptpapier. Die Word-Datei bleibt ergänzend als Downloadfassung erhalten.</p>
           </div>
           <div class="portal-card-actions no-print">
             <a class="btn btn-primary" href="${href(base, SCHOOL_ONLINE)}">Konzeptpapier online lesen</a>
@@ -946,7 +966,7 @@ function toolPage(tool) {
       <section class="section" aria-labelledby="demo">
         <div>
           <div class="section-header"><p class="hero-kicker">Erleben</p><h2 id="demo">Demo und Prototypen</h2></div>
-          ${demoLinks.length ? linkList(base, demoLinks) : '<p class="card-text">Demo in Vorbereitung.</p>'}
+          ${demoLinks.length ? linkList(base, demoLinks) : '<p class="card-text">Passende Anwendungen werden hier ergänzt, sobald sie öffentlich nutzbar sind.</p>'}
         </div>
       </section>
       <section class="section" aria-labelledby="werkstatt-docs">
@@ -1148,17 +1168,17 @@ function schoolWorkpaperPage() {
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
     title: "Konzeptpapier Wirkungsschule online lesen | Werkstatt der Wirkungsökonomie",
     description:
-      "Zitierfähige Online-Fassung des wirkungsökonomischen Schulkonzepts als Fassung v0.1 mit Abschnittsankern und DOCX-Download.",
+      "Zitierfähige Online-Fassung des wirkungsökonomischen Schulkonzepts mit Abschnittsankern und DOCX-Download.",
     searchSection: "Werkstatt",
     searchType: "Online-Volltext",
     body: (base, route) => `<section class="hero">
         <div class="hero-grid">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung</a></nav>
-            <p class="hero-kicker">Online-Volltext · Fassung v0.1</p>
+            <p class="hero-kicker">Online-Volltext</p>
             <h1 class="hero-title">Wirkungsökonomisches Schulkonzept</h1>
             <p class="hero-subtitle">Von der Schule als Sortiersystem zur Schule als Wirkungsraum.</p>
-            <p class="hero-text">Diese Seite macht das Konzeptpapier online lesbar und zitierfähig. Die DOCX-Datei bleibt als ergänzende Archiv- und Exportfassung erhalten.</p>
+            <p class="hero-text">Diese Seite macht das Konzeptpapier online lesbar und zitierfähig. Die DOCX-Datei bleibt als ergänzende Downloadfassung erhalten.</p>
             ${printActions(
               base,
               `<a class="btn btn-primary" href="#online-volltext">Online lesen</a>
