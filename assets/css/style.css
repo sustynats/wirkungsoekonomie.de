@@ -9742,18 +9742,21 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     var(--surface, #fff);
 }
 
-.tool-explanation-head {
+.tool-explanation-head,
+.tool-purpose-box {
   max-width: 76ch;
   margin-bottom: 1rem;
 }
 
-.tool-explanation-head h2 {
+.tool-explanation-head h2,
+.tool-purpose-box h2 {
   margin: 0.2rem 0 0.45rem;
   font-size: clamp(1.45rem, 2.4vw, 2rem);
   letter-spacing: 0;
 }
 
 .tool-explanation-head p,
+.tool-purpose-box p,
 .tool-explanation-card p,
 .tool-explanation-card li {
   color: var(--text-muted, #475569);
@@ -9787,6 +9790,15 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 .tool-explanation-card ol {
   margin: 0;
   padding-left: 1.15rem;
+}
+
+.tool-journey-grid {
+  margin-top: 0.85rem;
+}
+
+.how-to-use-steps ol {
+  display: grid;
+  gap: 0.35rem;
 }
 
 .tool-special-box {

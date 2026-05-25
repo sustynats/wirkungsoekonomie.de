@@ -1280,6 +1280,7 @@ const ToolExplanationLayer = (() => {
     difference: "Die Wirkungsökonomie bewertet nicht nur Aktivität, sondern Zustandsveränderungen: positiv, negativ oder neutral. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
     steps: ["Wähle ein Beispiel oder gib eigene Werte ein.", "Verändere die Regler oder Textfelder.", "Lies Ergebnis, Erklärung und Grenzen zusammen."],
     values: "Die Werte sind Orientierungshilfen. Sie zeigen Richtung, Größenordnung, schwächstes Feld oder mögliche Rückkopplung.",
+    behindScenes: "Im Hintergrund werden Eingaben, Beispielannahmen, Datenqualität und Wirkungsdimensionen zu einer modellhaften Einordnung verbunden.",
     consequence: "Im WÖk-System würden gute Wirkung, Risiken und Folgekosten nicht nur beschrieben, sondern in Preise, Prioritäten, Finanzierung oder Korrekturwege zurückgeführt.",
     limits: "Die Demo ist keine amtliche Bewertung, keine Beratung, kein Audit und keine Personenbewertung. Sie ersetzt keine geprüften Daten und keine demokratische Entscheidung.",
     special: "Heute bleiben viele Folgen hinter Preis, Reichweite, Kosten oder Reporting verborgen. Die WÖk-Logik macht sichtbar, welche Zustände sich verändern und wie diese Wirkung in bessere Entscheidungen zurückfließen könnte.",
@@ -1504,46 +1505,90 @@ const ToolExplanationLayer = (() => {
     return `<article class="tool-explanation-card"><h3>${title}</h3><p>${text}</p></article>`;
   }
 
-  function renderBefore(config) {
+  function ToolPurposeBox(config) {
+    return `
+      <section class="tool-purpose-box" aria-label="Problem verstehen">
+        <p class="hero-kicker">1. Problem verstehen</p>
+        <h2>${config.title || "Warum dieses Tool?"}</h2>
+        <p>${config.purpose || defaults.purpose}</p>
+      </section>
+    `;
+  }
+
+  function TodayVsWoekBox(config) {
+    return `
+      <div class="tool-explanation-grid tool-journey-grid">
+        ${card("2. Was sieht das heutige System nicht?", config.blindSpot || defaults.blindSpot)}
+        ${card("3. Was betrachtet die WÖk anders?", config.difference || defaults.difference)}
+      </div>
+    `;
+  }
+
+  function HowToUseSteps(config) {
     const steps = (config.steps || defaults.steps).slice(0, 3).map((step) => `<li>${step}</li>`).join("");
-    const special = config.special || defaults.special;
+    return `
+      <article class="tool-explanation-card how-to-use-steps">
+        <h3>4. So nutzt du das Tool</h3>
+        <ol>${steps}</ol>
+      </article>
+    `;
+  }
+
+  function WhatHappensBehindTheScenes(config) {
+    return card("Was passiert im Hintergrund?", config.behindScenes || defaults.behindScenes);
+  }
+
+  function WhyItMattersBox(config) {
+    return `
+      <article class="tool-special-box why-it-matters-box" aria-label="Warum ist das besonders?">
+        <p class="hero-kicker">WÖk-Unterschied</p>
+        <h2>Warum ist das besonders?</h2>
+        <p>${config.special || defaults.special}</p>
+      </article>
+    `;
+  }
+
+  function ResultInterpretationCard(config) {
+    return card("6. Was bedeuten die Werte?", config.values || defaults.values);
+  }
+
+  function LimitsOfDemoBox(config) {
+    return card("8. Was diese Demo nicht beweist", config.limits || defaults.limits);
+  }
+
+  function RelatedLearningPath(config) {
+    const links = (config.links || defaults.links).map(([label, href]) => `<a class="text-link" href="${absoluteHref(href)}">${label}</a>`).join("");
+    return `
+      <article class="tool-explanation-card related-learning-path">
+        <h3>9. Passende Vertiefungen</h3>
+        <div class="tool-explanation-links">${links}</div>
+      </article>
+    `;
+  }
+
+  function renderBefore(config) {
     return `
       <aside class="tool-explanation-layer tool-explanation-before" aria-label="Werkzeugerklaerung">
-        <div class="tool-explanation-head">
-          <p class="hero-kicker">Werkzeug verstehen</p>
-          <h2>${config.title || "Warum dieses Tool?"}</h2>
-          <p>${config.purpose || defaults.purpose}</p>
-        </div>
-        <div class="tool-explanation-grid">
+        ${ToolPurposeBox(config)}
+        ${TodayVsWoekBox(config)}
+        <div class="tool-explanation-grid tool-journey-grid">
           ${card("Worum geht es?", config.question || defaults.question)}
-          ${card("Was sieht das heutige System nicht?", config.blindSpot || defaults.blindSpot)}
-          ${card("Was macht die Wirkungsökonomie anders?", config.difference || defaults.difference)}
-          <article class="tool-explanation-card">
-            <h3>So nutzt du das Tool</h3>
-            <ol>${steps}</ol>
-          </article>
+          ${HowToUseSteps(config)}
+          ${WhatHappensBehindTheScenes(config)}
         </div>
-        <article class="tool-special-box" aria-label="Warum ist das besonders?">
-          <p class="hero-kicker">WÖk-Unterschied</p>
-          <h2>Warum ist das besonders?</h2>
-          <p>${special}</p>
-        </article>
+        ${WhyItMattersBox(config)}
       </aside>
     `;
   }
 
   function renderAfter(config) {
-    const links = (config.links || defaults.links).map(([label, href]) => `<a class="text-link" href="${absoluteHref(href)}">${label}</a>`).join("");
     return `
       <aside class="tool-explanation-layer tool-explanation-after" aria-label="Ergebnis einordnen">
         <div class="tool-explanation-grid">
-          ${card("Was bedeuten die Werte?", config.values || defaults.values)}
-          ${card("Was würde sich im WÖk-System ändern?", config.consequence || defaults.consequence)}
-          ${card("Was diese Demo nicht leistet", config.limits || defaults.limits)}
-          <article class="tool-explanation-card">
-            <h3>Weiterführende Links</h3>
-            <div class="tool-explanation-links">${links}</div>
-          </article>
+          ${ResultInterpretationCard(config)}
+          ${card("7. Was würde daraus folgen?", config.consequence || defaults.consequence)}
+          ${LimitsOfDemoBox(config)}
+          ${RelatedLearningPath(config)}
         </div>
       </aside>
     `;
@@ -1870,13 +1915,7 @@ const ToolSpecialBoxLayer = (() => {
   }
 
   function render(text) {
-    return `
-      <aside class="tool-special-box section" aria-label="Warum ist das besonders?">
-        <p class="hero-kicker">WÖk-Unterschied</p>
-        <h2>Warum ist das besonders?</h2>
-        <p>${text}</p>
-      </aside>
-    `;
+    return ToolExplanationLayer.renderBefore({ special: text });
   }
 
   function init() {
@@ -1885,6 +1924,7 @@ const ToolSpecialBoxLayer = (() => {
       const target = document.querySelector(config.target);
       if (!target || target.dataset.specialBoxReady === "true") return;
       target.insertAdjacentHTML("beforebegin", render(config.text));
+      target.insertAdjacentHTML("afterend", ToolExplanationLayer.renderAfter(config));
       target.dataset.specialBoxReady = "true";
     });
   }
