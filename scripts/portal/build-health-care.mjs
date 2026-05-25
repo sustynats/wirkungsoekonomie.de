@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260524-gesundheit-pflege";
+const CSS_VERSION = "20260525-gesundheit-pflege-landing";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SRC = "docs/gesundheit-pflege";
 const EXTRACT = `${SRC}/docx-extracts`;
@@ -38,8 +38,8 @@ const documents = [
   },
   {
     key: "dossiers",
-    title: "Einzeldossier-Set Gesundheit & Pflege",
-    shortTitle: "Einzeldossier-Set",
+    title: "Einzeldossiers Gesundheit & Pflege",
+    shortTitle: "Einzeldossiers",
     md: `${EXTRACT}/woek_gesundheit_pflege_einzeldossier_set_v0_2.md`,
     download: "woek_gesundheit_pflege_einzeldossier_set_v0_2.docx",
     description: "Einzeldossiers mit Praxisfragen, Bewertungslogik, Datenquellen, Annahmen, Toolbezug und Grenzen.",
@@ -69,16 +69,75 @@ const moduleAnchorTargets = {
 };
 
 const tools = [
-  ["gesundheitswirkungscheck", "Gesundheitswirkungscheck", "Check", "Bewertet Programme, Räume oder Maßnahmen nach Gesundheitsgewinn, Prävention, Teilhabe, Resilienz, Datenqualität und Nebenwirkungen.", "Demo in Vorbereitung"],
-  ["praeventionswirkungsrechner", "Präventionswirkungsrechner", "Rechner", "Macht vermiedene Schäden, Lebensqualitätsnutzen, Resilienzbeitrag, Umsetzungskosten und Unsicherheit modellhaft sichtbar.", "Spezifikation online"],
-  ["pflegewirkungscheck", "Pflegewirkungscheck", "Check", "Prüft Pflege als Würde-, Autonomie-, Beziehungs- und Stabilitätsinfrastruktur, ohne Menschen zu bewerten.", "Demo in Vorbereitung"],
-  ["kommunaler-gesundheitsraum-check", "Kommunaler Gesundheitsraum-Check", "Kommunal-Tool", "Verbindet Hitze, Lärm, Grün, Versorgung, Begegnung, Barrierefreiheit und soziale Lage in einem Quartiersblick.", "Spezifikation online"],
+  ["gesundheitswirkungscheck", "Gesundheitswirkungscheck", "Check", "Bewertet Programme, Räume oder Maßnahmen nach Gesundheitsgewinn, Prävention, Teilhabe, Resilienz, Datenqualität und Nebenwirkungen."],
+  ["praeventionswirkungsrechner", "Präventionswirkungslogik", "Methode", "Macht vermiedene Schäden, Lebensqualitätsnutzen, Resilienzbeitrag, Umsetzungskosten und Unsicherheit modellhaft sichtbar."],
+  ["pflegewirkungscheck", "Pflegewirkungscheck", "Check", "Prüft Pflege als Würde-, Autonomie-, Beziehungs- und Stabilitätsinfrastruktur, ohne Menschen zu bewerten."],
+  ["kommunaler-gesundheitsraum-check", "Kommunaler Gesundheitsraum-Check", "Check", "Verbindet Hitze, Lärm, Grün, Versorgung, Begegnung, Barrierefreiheit und soziale Lage in einem Quartiersblick."],
   ["mental-health-reflexionstool", "Mental-Health-Reflexionstool", "Reflexion", "Nicht-diagnostisches Reflexionsmodul für Belastungsräume, Schutzfaktoren und niedrigschwellige Unterstützungswege.", "Nicht-diagnostisch"],
-  ["one-health-score", "One-Health-Score", "Scorecard", "Verbindet Klima, Umwelt, Ernährung, Wasser, Biodiversität und Gesundheit in einer gemeinsamen Wirkungslogik.", "Konzept vorhanden"],
-  ["gesundheitsdatenraum-privacy-by-design", "Gesundheitsdatenraum / Privacy-by-Design-Modul", "Datenarchitektur", "Prüft Zweckbindung, Datensparsamkeit, Pseudonymisierung, Einwilligung, Governance und Korrekturwege.", "Konzept vorhanden"],
-  ["wirkungshaushalt-gesundheit", "Wirkungshaushalt Gesundheit", "Haushalt", "Macht Prävention, Pflegeentlastung und Gesundheitsresilienz haushaltsfähig statt nur Reparaturkosten sichtbar.", "Anschluss an Wirkungshaushalt"],
-  ["wirkungsfonds-gesundheit-pflege", "Wirkungsfonds Gesundheit & Pflege", "Fonds", "Bündelt Mittel für Prävention, Pflege, Quartiere, psychische Stabilität und Gesundheitsgerechtigkeit.", "in Ausarbeitung"],
-  ["t-sroi-praevention-gesundheitsinvestitionen", "T-SROI für Präventions- und Gesundheitsinvestitionen", "Impact Controlling", "Bewertet Transformationsnutzen über vermiedene Schäden, Resilienz, Teilhabe und Folgekosten.", "Methode vorhanden"],
+  ["one-health-score", "One-Health-Logik", "Modell", "Verbindet Klima, Umwelt, Ernährung, Wasser, Biodiversität und Gesundheit in einer gemeinsamen Wirkungslogik."],
+  ["gesundheitsdatenraum-privacy-by-design", "Gesundheitsdatenraum / Privacy-by-Design", "Datenlogik", "Prüft Zweckbindung, Datensparsamkeit, Pseudonymisierung, Einwilligung, Governance und Korrekturwege."],
+  ["wirkungshaushalt-gesundheit", "Wirkungshaushalt Gesundheit", "Wirkungshaushalt", "Macht Prävention, Pflegeentlastung und Gesundheitsresilienz haushaltsfähig statt nur Reparaturkosten sichtbar."],
+  ["wirkungsfonds-gesundheit-pflege", "Wirkungsfonds Gesundheit & Pflege", "Fondsmodell", "Bündelt Mittel für Prävention, Pflege, Quartiere, psychische Stabilität und Gesundheitsgerechtigkeit."],
+  ["t-sroi-praevention-gesundheitsinvestitionen", "T-SROI für Präventions- und Gesundheitsinvestitionen", "Methode", "Bewertet Transformationsnutzen über vermiedene Schäden, Resilienz, Teilhabe und Folgekosten."],
+];
+
+const conceptCards = [
+  {
+    title: "Gesundheit als gesellschaftliches Wirkungsfeld",
+    text: "Gesundheit entsteht nicht erst in Arztpraxen oder Kliniken. Sie entsteht in Lebensbedingungen: Wohnen, Arbeit, Bildung, Umwelt, Ernährung, Sicherheit, Beziehung und Vertrauen.",
+    relevance: "Das macht Gesundheit politisch, kommunal und wirtschaftlich steuerbar.",
+    tags: ["SDG 3", "One Health", "Wirkungshaushalt", "Gesundheitswirkungsindex"],
+    anchor: "gesundheit-als-gesellschaftliches-wirkungsfeld",
+  },
+  {
+    title: "Prävention, Gesundheitskassen und Wirkungshaushalt",
+    text: "Prävention wird sichtbar, obwohl der vermiedene Schaden nicht eintritt. Die WÖk fragt, wie vermiedene Krankheit, Pflegebedarf und Krisenlast haushaltsfähig werden.",
+    relevance: "Heute wird Reparatur oft besser finanziert als Vorbeugung.",
+    tags: ["Prävention", "Wirkungshaushalt", "Gesundheitsfonds", "kommunale Budgets"],
+    anchor: "pravention-gesundheitskassen-und-wirkungshaushalt",
+  },
+  {
+    title: "Pflege als Wirkungsinfrastruktur",
+    text: "Pflege ist keine private Restzuständigkeit, sondern Wirkleistung für Würde, Autonomie, Beziehung und soziale Stabilität.",
+    relevance: "Gute Pflege verhindert Eskalationen, entlastet Angehörige und stabilisiert Gemeinschaften.",
+    tags: ["Pflegewirkung", "Care-Arbeit", "Würde", "soziale Stabilität"],
+    anchor: "pflege-als-wirkleistung-und-pflegeokosystem",
+  },
+  {
+    title: "Psychische Gesundheit und soziale Stabilität",
+    text: "Erschöpfung, Einsamkeit, Angst, digitale Gewalt, Mobbing, Armut, Wohnstress und Diskursvergiftung sind nicht nur private Belastungen. Sie wirken auf Arbeit, Bildung, Familien, Vertrauen und Demokratie.",
+    relevance: "Psychische Stabilität ist auch ein demokratischer und wirtschaftlicher Stabilitätsfaktor.",
+    tags: ["Mental Health", "Resilienz", "Medienwirkung", "Arbeit"],
+    anchor: "psychische-gesundheit-und-soziale-stabilitat",
+  },
+  {
+    title: "Kommunale Gesundheitsräume und Quartiere",
+    text: "Gesundheit entsteht im Nahraum: durch Grün, Schatten, Begegnung, Mobilität, Versorgung, Sicherheit, Barrierefreiheit und soziale Einbettung.",
+    relevance: "Kommunen sind natürliche Reallabore für Gesundheitswirkung.",
+    tags: ["Quartier", "Hitze", "Mobilität", "Versorgung", "Teilhabe"],
+    anchor: "versorgungsraume-kliniken-und-gesundheitsnetzwerke",
+  },
+  {
+    title: "One Health, Klima, Umwelt und Ernährung",
+    text: "Menschliche Gesundheit hängt mit Klima, Wasser, Boden, Biodiversität, Tieren, Pflanzen und Ernährungssystemen zusammen.",
+    relevance: "Umweltpolitik, Landwirtschaft, Ernährung und Gesundheit können nicht getrennt gesteuert werden.",
+    tags: ["One Health", "Klima", "Ernährung", "Biodiversität", "Wasser"],
+    anchor: "one-health-klima-umwelt-und-ernahrung",
+  },
+  {
+    title: "Gesundheitsdaten, KI und Datenschutz",
+    text: "Gesundheitsdaten können Prävention, Frühwarnung und Versorgungsgerechtigkeit verbessern, aber nur unter strengem Schutz von Würde, Zweckbindung und digitaler Selbstbestimmung.",
+    relevance: "Gesundheitsdaten dürfen nicht zu Kontrolle oder Personenbewertung werden.",
+    tags: ["Privacy by Design", "KI", "Datenraum", "Rechtsstaatlichkeit"],
+    anchor: "gesundheitsdaten-ki-und-burgerkontrolle",
+  },
+  {
+    title: "Finanzierung, Wirkungsfonds und Gesundheitsgrundsicherung",
+    text: "Gesundheit braucht eine Finanzierungslogik, die Prävention, Pflege, psychische Stabilität und kommunale Resilienz nicht schlechter stellt als Reparatur.",
+    relevance: "Sonst investiert eine Stelle, während eine andere Stelle spart.",
+    tags: ["Wirkungsfonds", "Gesundheitshaushalt", "Sozialabgaben", "Prävention"],
+    anchor: "finanzierung-wirkungsfonds-und-gesundheitskassen",
+  },
 ];
 
 const sdgRefs = [
@@ -329,7 +388,7 @@ function mdToHtml(markdown, prefix = "") {
 
 function toc(items) {
   if (!items.length) return "";
-  return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol>${items.map((item) => `<li class="toc-level-${esc(item.level)}"><a href="#${esc(item.id)}">${esc(item.text)}</a></li>`).join("")}</ol></nav>`;
+  return `<details class="toc-card no-print" aria-label="Inhaltsverzeichnis"><summary class="card-title">Inhaltsverzeichnis anzeigen</summary><ol>${items.map((item) => `<li class="toc-level-${esc(item.level)}"><a href="#${esc(item.id)}">${esc(item.text)}</a></li>`).join("")}</ol></details>`;
 }
 
 function cards(base, items) {
@@ -341,12 +400,12 @@ function downloads(base) {
     .filter((doc) => exists(`assets/downloads/${doc.download}`))
     .map((doc) => `<a class="btn btn-secondary" href="${href(base, `assets/downloads/${doc.download}`)}">${esc(doc.shortTitle)} herunterladen</a>`)
     .join("");
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${h2("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word-Dateien bleiben ergänzende Export- und Archivfassungen.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links}</div></div></section>`;
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${h2("downloads", "Downloads und Druck")}<p>Die Seite bleibt der Einstieg. Word-Dateien und Druckfassung sind ergänzende Arbeitsmaterialien für Vertiefung, Zitation und Weiterarbeit.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links}</div></div></section>`;
 }
 
 function publicationAccess(base) {
-  const items = documents.map((doc) => [doc.shortTitle, "Online-Volltext", doc.description, `wirkungsfelder/gesundheit-pflege/${doc.key}/`, "Online lesen"]);
-  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", "Online lesen und herunterladen")}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads sind Export und Archiv, nicht der Hauptzugang.</p></div>${cards(base, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Einzeldossier-Set bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${documents.map((doc) => exists(`assets/downloads/${doc.download}`) ? `<a class="btn btn-secondary" href="${href(base, `assets/downloads/${doc.download}`)}">${esc(doc.shortTitle)} herunterladen</a>` : "").join("")}</div></div></section>`;
+  const items = documents.map((doc) => [doc.shortTitle, "Vertiefung", doc.description, `wirkungsfelder/gesundheit-pflege/${doc.key}/`, "Online lesen"]);
+  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("publikationszugang-title", "Vertiefung und Arbeitsmaterial")}<p>Hier liegen die ausführlichen Online-Fassungen, Dossiers, Methodik und ergänzende Downloads. Sie vertiefen die Landingpage, ohne den Einstieg zu überladen.</p></div>${cards(base, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Fassungen</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Einzeldossiers bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${documents.map((doc) => exists(`assets/downloads/${doc.download}`) ? `<a class="btn btn-secondary" href="${href(base, `assets/downloads/${doc.download}`)}">${esc(doc.shortTitle)} herunterladen</a>` : "").join("")}</div></div></section>`;
 }
 
 function sdgBadge(base, [id, label, text, url], index) {
@@ -372,15 +431,49 @@ function politicalBlock() {
   return `<section class="section" aria-labelledby="politik"><div class="section-header"><p class="hero-kicker">Demokratische Umsetzung</p>${h2("politik", "Politische Anschlussfähigkeit und Umsetzungsoptionen")}<p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit Gesundheit & Pflege demokratisch, rechtsstaatlich und praktisch umgesetzt werden können.</p></div><div class="table-wrap"><table class="data-table"><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></section>`;
 }
 
+function policyActionBox() {
+  const actions = [
+    ["Prävention haushaltsfähig machen", "Vermiedene Schäden, vermiedene Pflegebedarfe und gewonnene Lebensqualität müssen in Haushalten sichtbar werden."],
+    ["Pflege als Infrastruktur behandeln", "Pflege darf nicht nur als Kostenstelle verwaltet werden. Sie ist Würde-, Autonomie-, Beziehungs- und Stabilitätsleistung."],
+    ["Kommunen stärken", "Quartiere, Hitzeschutz, Mobilität, Grünflächen, Begegnungsräume, Versorgung und Barrierefreiheit müssen gemeinsam geplant werden."],
+    ["Gesundheitsdaten schützen und nutzen", "Daten dürfen Prävention und Frühwarnung ermöglichen, aber keine Personenbewertung, keine Diskriminierung und keine Überwachung erzeugen."],
+    ["Finanzierungslogik ändern", "Kassen, Kommunen, Bund, Länder und Fonds müssen so gekoppelt werden, dass Prävention nicht an Zuständigkeitsgrenzen scheitert."],
+    ["Wirkung demokratisch kontrollieren", "Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Rechtsschutz, Pilotierung, Evaluation und Wirkungsrat bleiben notwendig."],
+  ];
+  return `<section class="section policy-action-section" aria-labelledby="politik-handeln"><div class="section-header"><p class="hero-kicker">Umsetzung</p>${h2("politik-handeln", "Was muss Politik hier tun?")}<p>Gesundheit & Pflege werden nicht durch ein einzelnes Gesetz gelöst. Politik muss den Rahmen schaffen, damit Prävention, Pflege, psychische Stabilität und kommunale Gesundheitsräume als Wirkung sichtbar und finanzierbar werden.</p></div><div class="card-grid three">${actions.map(([title, text]) => `<article class="card"><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div><p class="section-link-row"><a class="text-link" href="#politik">Umsetzungsoptionen lesen</a></p></section>`;
+}
+
+function conceptGrid(base) {
+  return `<section class="section" aria-labelledby="zentrale-konzepte"><div class="section-header"><p class="hero-kicker">Konzepte</p>${h2("zentrale-konzepte", "Zentrale Konzepte")}<p>Die Konzepte sind Einstiegspunkte. Die Langfassungen liegen in den Vertiefungen am Seitenende.</p></div><div class="card-grid two concept-card-grid">${conceptCards.map((item) => `<article class="card concept-card"><h3 class="card-title">${esc(item.title)}</h3><p class="card-text">${esc(item.text)}</p><p class="card-text"><strong>Warum relevant?</strong> ${esc(item.relevance)}</p><div class="chip-list" aria-label="Anschluss">${item.tags.map((tag) => `<span class="badge">${esc(tag)}</span>`).join("")}</div><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/gesundheit-pflege/detailkonzepte/#detail-${item.anchor}`)}">Konzept ansehen</a></div></article>`).join("")}</div></section>`;
+}
+
+function comparisonBox() {
+  const oldLogic = [
+    "Krankheit wird finanziert, wenn sie eingetreten ist.",
+    "Prävention erscheint als Kostenblock.",
+    "Pflege gilt als Kostenstelle.",
+    "Psychische Gesundheit wird reaktiv behandelt.",
+    "Daten dienen oft Abrechnung und Kontrolle.",
+  ];
+  const woekLogic = [
+    "Gesundheit wird erzeugt, erhalten und präventiv geschützt.",
+    "Vermiedene Schäden werden als Wirkung sichtbar.",
+    "Pflege ist Wirkleistung für Würde, Autonomie und Stabilität.",
+    "Psychische Stabilität wird als Systembedingung betrachtet.",
+    "Daten dienen Prävention, Frühwarnung und gerechter Ressourcensteuerung.",
+  ];
+  return `<section class="section" aria-labelledby="alte-logik"><div class="section-header"><p class="hero-kicker">Systemwechsel</p>${h2("alte-logik", "Was das heutige System falsch sieht")}</div><div class="comparison-grid"><article class="card"><p class="card-kicker">Alte Logik</p><ul class="clean-list">${oldLogic.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">WÖk-Logik</p><ul class="clean-list">${woekLogic.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></section>`;
+}
+
 function toolGrid(base) {
-  const items = tools.map(([slug, title, type, text, status]) => [title, `${type} · ${status}`, text, `wirkungsfelder/gesundheit-pflege/tools/${slug}/`, "Toolseite öffnen"]);
-  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Kontext-Werkzeuge</p>${h2("tools", "Werkzeuge in diesem Bereich")}<p>Die Werkzeuge sind Modell- und Planungshilfen. Sie sind keine medizinische Diagnostik, keine Therapieempfehlung und keine Personenbewertung.</p></div>${cards(base, items)}</section>`;
+  const items = tools.map(([slug, title, type, text]) => [title, type, text, `wirkungsfelder/gesundheit-pflege/tools/${slug}/`, "Methodik lesen"]);
+  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Methoden</p>${h2("tools", "Werkzeuge und Methoden in diesem Bereich")}<p>Die folgenden Ansätze sind Modell- und Planungshilfen. Sie sind keine medizinische Diagnostik, keine Therapieempfehlung und keine Personenbewertung.</p></div>${cards(base, items)}</section>`;
 }
 
 function moduleGrid(base) {
-  return `<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Zentrale Unterbereiche online lesen")}<p>Jeder Unterbereich ist im Detailkonzept-Set und im Einzeldossier-Set online zitierfähig ausgearbeitet.</p></div><div class="card-grid three">${modules.map(([, title, text]) => {
+  return `<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("unterbereiche", "Vertiefende Unterbereiche")}<p>Diese Unterbereiche führen tiefer in die Wirkungslogik, ohne die Einstiegsseite zu überladen.</p></div><div class="card-grid three">${modules.map(([, title, text]) => {
     const anchor = slugify(moduleAnchorTargets[title] || title);
-    return `<article class="card"><p class="card-kicker">Detailkonzept + Dossier</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/gesundheit-pflege/detailkonzepte/#detail-${anchor}`)}">Detailkonzept lesen</a><a class="text-link" href="${href(base, `wirkungsfelder/gesundheit-pflege/dossiers/#dossiers-${anchor}`)}">Dossier lesen</a></div></article>`;
+    return `<article class="card"><p class="card-kicker">Vertiefung</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/gesundheit-pflege/detailkonzepte/#detail-${anchor}`)}">Vertiefung lesen</a></div></article>`;
   }).join("")}</div></section>`;
 }
 
@@ -409,14 +502,22 @@ function crossLinks(base) {
 }
 
 function portalPage() {
-  const md = read(`${SOURCE}/website_inhalt_gesundheit_pflege.md`);
-  const usable = md.split("\n## Werkzeuge in diesem Bereich")[0];
-  const { toc: t, html } = mdToHtml(usable, "portal-");
+  const t = [
+    { level: 2, text: "Leitsatz", id: "leitsatz" },
+    { level: 2, text: "Was das heutige System falsch sieht", id: "alte-logik" },
+    { level: 2, text: "Zentrale Konzepte", id: "zentrale-konzepte" },
+    { level: 2, text: "Was muss Politik hier tun?", id: "politik-handeln" },
+    { level: 2, text: "Vertiefende Unterbereiche", id: "unterbereiche" },
+    { level: 2, text: "Werkzeuge und Methoden", id: "tools" },
+    { level: 2, text: "Vertiefung und Arbeitsmaterial", id: "publikationszugang-title" },
+    { level: 2, text: "SDG-/SDG+-Bezug", id: "sdg-ref" },
+    { level: 2, text: "Schutzgrenzen", id: "schutz" },
+  ];
   page({
     rel: "wirkungsfelder/gesundheit-pflege/index.html",
     title: "Gesundheit & Pflege | Wirkungsökonomie",
     description: "Gesundheit & Pflege als Wirkungsfeld: Prävention, Pflege, Lebensqualität, Gesundheitsräume, One Health, Datenschutz und Wirkungshaushalt.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Gesundheit & Pflege</h1><p class="hero-subtitle">Vom System, das Krankheit finanziert, zu einem System, das Gesundheit, Prävention, Pflege, Resilienz und Teilhabe erzeugt.</p><p>Gesundheit ist kein medizinisches Ereignis, sondern ein gesellschaftlicher Zustand. Pflege ist keine Kostenstelle, sondern Beziehungs-, Würde- und Stabilitätsinfrastruktur.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#publikationszugang">Online lesen</a><a class="btn btn-secondary" href="#tools">Tools öffnen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Gesundheit wird erzeugt, geschützt und gerecht zugänglich gemacht.</h2><p class="card-text">Behandlung bleibt notwendig. Aber Prävention, Pflege, psychische Stabilität, kommunale Gesundheitsräume und One Health werden entscheidungsrelevant.</p></aside></div></section>${publicationAccess(base)}${toc(t)}<section class="section" aria-labelledby="portaltext"><div class="prose">${h2("portaltext", "Portaltext online lesen")}${html}</div></section>${moduleGrid(base)}${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${crossLinks(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Gesundheit & Pflege</h1><p class="hero-subtitle">Vom System, das Krankheit finanziert, zu einem System, das Gesundheit, Prävention, Pflege, Resilienz und Teilhabe erzeugt.</p><p>Gesundheit ist kein medizinisches Einzelereignis, sondern ein gesellschaftlicher Zustand. Pflege ist keine Kostenstelle, sondern Beziehungs-, Würde- und Stabilitätsinfrastruktur.</p></div><aside class="card" id="leitsatz"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Gesundheit wird erzeugt, geschützt und gerecht zugänglich gemacht.</h2><p class="card-text">Behandlung bleibt notwendig. Aber Prävention, Pflege, psychische Stabilität, kommunale Gesundheitsräume und One Health müssen entscheidungsrelevant werden.</p></aside></div></section>${toc(t)}${comparisonBox()}${conceptGrid(base)}${policyActionBox()}${moduleGrid(base)}${toolGrid(base)}${publicationAccess(base)}${referenceBlock(base)}${bookBlock(base)}${crossLinks(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
   });
 }
 
@@ -434,7 +535,7 @@ function documentPage(doc) {
   });
 }
 
-function toolPage([slug, title, type, description, status]) {
+function toolPage([slug, title, type, description]) {
   const spec = read(`${SOURCE}/tool_spezifikation_gesundheitswirkungs_tool_suite.md`);
   const { toc: t, html } = mdToHtml(trimCover(spec, ["Zweck"]), `tool-${slug}-`);
   page({
@@ -442,7 +543,7 @@ function toolPage([slug, title, type, description, status]) {
     title: `${title} | Gesundheit & Pflege`,
     description: `${title} im Gesundheits- und Pflegeportal der Wirkungsökonomie: Modelllogik, Schutzgrenzen, Datenannahmen und Umsetzungshinweise.`,
     type: "Werkzeug",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Gesundheit & Pflege</a></nav><p class="hero-kicker">${esc(type)} · ${esc(status)}</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(description)}</p><p>Modellhafte Demonstration. Keine medizinische Beratung, keine Diagnostik, keine Rechts- oder Förderberatung und keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#spezifikation">Spezifikation online lesen</a><a class="btn btn-secondary" href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Portal öffnen</a></div></div><aside class="card"><p class="card-kicker">Schutzgrenze</p><h2 class="card-title">Strukturen bewerten, nicht Menschen.</h2><p class="card-text">Das Werkzeug betrachtet Programme, Räume, Organisationen oder politische Maßnahmen. Gesundheitsdaten brauchen Datenschutz, Zweckbindung und Korrekturwege.</p></aside></div></section>${toc(t)}<section class="section" id="spezifikation" aria-labelledby="spezifikation-title"><div class="prose">${h2("spezifikation-title", "Tool-Spezifikation online lesen")}${html}</div></section>${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Gesundheit & Pflege</a></nav><p class="hero-kicker">${esc(type)}</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(description)}</p><p>Modellhafte Methodenseite. Keine medizinische Beratung, keine Diagnostik, keine Rechts- oder Förderberatung und keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#methodik">Methodik lesen</a><a class="btn btn-secondary" href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Zurück zum Wirkungsfeld</a></div></div><aside class="card"><p class="card-kicker">Schutzgrenze</p><h2 class="card-title">Strukturen bewerten, nicht Menschen.</h2><p class="card-text">Die Methode betrachtet Programme, Räume, Organisationen oder politische Maßnahmen. Gesundheitsdaten brauchen Datenschutz, Zweckbindung und Korrekturwege.</p></aside></div></section>${toc(t)}<section class="section" id="methodik" aria-labelledby="methodik-title"><div class="prose">${h2("methodik-title", "Methodik lesen")}${html}</div></section>${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
   });
 }
 
@@ -453,7 +554,7 @@ function libraryPage() {
     description: "Arbeitsbibliothek zum Wirkungsfeld Gesundheit & Pflege mit Konzeptpapier, Gesamtdossier, Detailkonzepten, Einzeldossiers und Tool-Spezifikation.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Werkstatt · Wirkungsfeld</p><h1>Gesundheit & Pflege</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Tool-Spezifikationen online lesen und herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Portal öffnen</a></div></div><aside class="card"><p class="card-kicker">Arbeitsbibliothek</p><h2 class="card-title">Online-Volltext vor Download.</h2><p class="card-text">Die Werkstatt sammelt die öffentlichen Fassungen, ohne die Website zum Dateiablageort zu machen.</p></aside></div></section>${publicationAccess(base)}${moduleGrid(base)}${toolGrid(base)}${referenceBlock(base)}${bookBlock(base)}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Werkstatt · Wirkungsfeld</p><h1>Gesundheit & Pflege</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodiken online lesen und herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Wirkungsfeld öffnen</a></div></div><aside class="card"><p class="card-kicker">Arbeitsbibliothek</p><h2 class="card-title">Online-Volltext vor Download.</h2><p class="card-text">Die Werkstatt sammelt die öffentlichen Fassungen, ohne die Website zum Dateiablageort zu machen.</p></aside></div></section>${publicationAccess(base)}${moduleGrid(base)}${toolGrid(base)}${referenceBlock(base)}${bookBlock(base)}${downloads(base)}`,
   });
 }
 
