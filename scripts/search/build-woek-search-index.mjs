@@ -5,9 +5,20 @@ import crypto from "node:crypto";
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
 const glossaryPath = "public/data/glossary.terms.json";
-const PAGE_BODY_LIMIT = 3200;
-const SECTION_BODY_LIMIT = 1800;
-const FULLTEXT_BODY_LIMIT = 900;
+const PAGE_BODY_LIMIT = 1600;
+const SECTION_BODY_LIMIT = 900;
+const FULLTEXT_BODY_LIMIT = 500;
+const PUBLIC_SEARCH_REPLACEMENTS = [
+  [/Bildungsportal öffnen/g, "Wirkungsfeld öffnen"],
+  [/Portal öffnen/g, "Wirkungsfeld öffnen"],
+  [/Portalarchitektur/g, "Systemlandkarte"],
+  [/Grundstruktur vorhanden/g, "Wirkungsfeld"],
+  [/Working Paper vorhanden/g, "Vertiefung"],
+  [/Konzept vorhanden/g, "Vertiefung"],
+  [/ausgebaut \/ erster Schwerpunkt/g, "Wirkungsfeld"],
+  [/kanonische Portalstruktur/g, "Systemlandkarte"],
+  [/Dossier in Vorbereitung/g, "Weiterführende Vertiefung"],
+];
 
 function clean(text) {
   return String(text || "")
@@ -16,6 +27,19 @@ function clean(text) {
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function publicSearchText(text) {
+  return PUBLIC_SEARCH_REPLACEMENTS.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), String(text || ""));
+}
+
+function publicSearchValue(value) {
+  if (typeof value === "string") return publicSearchText(value);
+  if (Array.isArray(value)) return value.map(publicSearchValue);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, publicSearchValue(item)]));
+  }
+  return value;
 }
 
 function hash(value) {
@@ -171,7 +195,9 @@ for (const file of contentFiles) {
 
 const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
 for (const entry of generated) byUrl.set(entry.url, entry);
-const merged = Array.from(byUrl.values()).sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
+const merged = Array.from(byUrl.values())
+  .map(publicSearchValue)
+  .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
 
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
 fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: meta }, null, 2)}\n`);

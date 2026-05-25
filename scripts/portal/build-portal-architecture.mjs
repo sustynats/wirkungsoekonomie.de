@@ -9,7 +9,7 @@ const CSS_VERSION = "20260524-portal-meta-readable";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
 const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
-const SCHOOL_MD = "docs/bildung/Wirkungsschule_Arbeitsfassung_v0_1.md";
+const SCHOOL_MD = "docs/bildung/Wirkungsschule_Fassung_v0_1.md";
 
 function routeFor(rel) {
   return rel.endsWith("/index.html") ? `/${rel.slice(0, -"/index.html".length)}/` : `/${rel}`;
@@ -216,8 +216,8 @@ function bookAnchorBlock(base, anchors) {
         <div>
           <div class="section-header">
             <p class="hero-kicker">Online-Buch</p>
-            <h2 id="book-anchors">Anker im Online-Buch</h2>
-            <p>Die präzisen Kapitelanker können weiter verfeinert werden. Bis dahin führen die Links auf vorhandene Referenzkapitel oder auf die Buch-Hauptseite.</p>
+            <h2 id="book-anchors">Weiterführende Vertiefung</h2>
+            <p>Die folgenden Kapitel und Referenzseiten vertiefen die Systemlogik der Wirkungsfelder.</p>
           </div>
           ${linkList(base, anchors)}
         </div>
@@ -227,12 +227,12 @@ function bookAnchorBlock(base, anchors) {
 function exportBlock(base, pdfHref = "") {
   const dossier = pdfHref
     ? `<a class="btn btn-secondary" href="${href(base, pdfHref)}">Dossier herunterladen</a>`
-    : `<p class="card-text">Dossier in Vorbereitung</p>`;
+    : "";
   return `<section class="section" aria-labelledby="export-title">
         <div class="card">
           <p class="hero-kicker">Dossier & Export</p>
           <h2 id="export-title">Seite sichern oder weitergeben</h2>
-          <p class="card-text">Diese Seite kann direkt gedruckt werden. Ein eigenes Dossier wird verlinkt, sobald eine geprüfte PDF-Fassung vorliegt.</p>
+          <p class="card-text">Diese Übersicht kann direkt gedruckt oder als Orientierung für die Vertiefungen genutzt werden.</p>
           <div class="portal-card-actions no-print">
             <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
             ${dossier}
@@ -515,14 +515,15 @@ function fieldOverview() {
     description:
       "Die Wirkungsfelder zeigen, wie die Wirkungsökonomie Bildung, Gesundheit, Wohnen, Arbeit, Unternehmen, Produkte, Kapital, Demokratie, Medien, Wissenschaft und Kultur neu ordnet.",
     searchSection: "Wirkungsfelder",
+    searchType: "Übersicht",
     body: (base, route) => `<section class="hero">
         <div class="hero-grid">
           <div>
-            <p class="hero-kicker">Portalarchitektur</p>
+            <p class="hero-kicker">Systemlandkarte</p>
             <h1 class="hero-title">Wirkungsfelder</h1>
             <p class="hero-subtitle">Lebens- und Systembereiche der Wirkungsökonomie</p>
             <p class="hero-text">Die Wirkungsökonomie ist kein einzelnes Instrument und keine lose Sammlung von Konzepten. Sie ist eine neue Steuerungslogik für gesellschaftliche Wirkungsfelder: Bildung, Gesundheit, Wohnen, Arbeit, Unternehmen, Produkte, Kapital, Demokratie, Medien, Wissenschaft, Kultur und ökologische Lebensgrundlagen. Jedes Wirkungsfeld fragt: Welche Zustandsveränderungen entstehen und wie können Preise, Regeln, Förderung, Kapital und Entscheidungen auf positive Netto-Wirkung für Mensch, Planet und Demokratie ausgerichtet werden?</p>
-            ${printActions(base, `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Bildungsportal öffnen</a>`)}
+            ${printActions(base)}
           </div>
           <aside class="card">
             <p class="card-kicker">Begriffslogik</p>
@@ -536,12 +537,12 @@ function fieldOverview() {
           <div class="section-header">
             <p class="hero-kicker">Register</p>
             <h2 id="felder-register">Lebens- und Systembereiche</h2>
-            <p>Die Karten ordnen vorhandene Inhalte neu. Bestehende Seiten bleiben erreichbar; die kanonische Portalstruktur liegt hier.</p>
+            <p>Diese Übersicht zeigt zentrale Lebens- und Systembereiche, in denen die Wirkungsökonomie Wirkung sichtbar, bewertbar und in bessere Entscheidungen zurückführbar macht.</p>
           </div>
           ${cardGrid(
             base,
             fields.map((field) => ({
-              kicker: field.status,
+              kicker: "Wirkungsfeld",
               title: field.title,
               text: `${field.short}<br><br><strong>SDG-/SDG+-Bezug:</strong> ${field.sdgs.slice(0, 3).join(", ")}; SDG+ ${(
                 field.plus || sdgPlusDefault
@@ -549,7 +550,7 @@ function fieldOverview() {
                 .slice(0, 2)
                 .join(", ")}.`,
               href: `wirkungsfelder/${field.slug}/`,
-              linkLabel: "Portal öffnen",
+              linkLabel: "Wirkungsfeld öffnen",
             })),
           )}
         </div>
@@ -735,9 +736,9 @@ function schoolPage() {
             )}
           </div>
           <aside class="card">
-            <p class="card-kicker">Arbeitsfassung</p>
+            <p class="card-kicker">Online-Fassung</p>
             <h2 class="card-title">Öffentliche Kurzfassung</h2>
-            <p class="card-text">Diese Seite fasst die Logik verständlich zusammen und verweist auf das Konzeptpapier als Arbeitsfassung. Sie ersetzt keine vollständige Langfassung.</p>
+            <p class="card-text">Diese Seite fasst die Logik verständlich zusammen und verweist auf das Konzeptpapier. Sie ersetzt keine vollständige Langfassung.</p>
           </aside>
         </div>
       </section>
@@ -806,7 +807,7 @@ function schoolPage() {
           <div>
             <p class="card-kicker">Konzeptpapier</p>
             <h2 id="konzeptpapier">Konzeptpapier Wirkungsschule online lesen und herunterladen ${citeAnchor("konzeptpapier")}</h2>
-            <p class="card-text">Die Online-Fassung ist der erste Zugang zum Konzeptpapier. Die Word-Arbeitsfassung bleibt ergänzend als Download und Archivfassung erhalten. Es wurde keine neue PDF-Exportpipeline ergänzt.</p>
+            <p class="card-text">Die Online-Fassung ist der erste Zugang zum Konzeptpapier. Die Word-Datei bleibt ergänzend als Download und Archivfassung erhalten. Es wurde keine neue PDF-Exportpipeline ergänzt.</p>
           </div>
           <div class="portal-card-actions no-print">
             <a class="btn btn-primary" href="${href(base, SCHOOL_ONLINE)}">Konzeptpapier online lesen</a>
@@ -979,13 +980,13 @@ function workshopPages() {
     ["Online-Buch", "Die Referenzfassung der Wirkungsökonomie mit Kapiteln, Teilen und Volltext.", "referenz/"],
     ["Arbeitsbibliothek", "Kuratiertes Arbeitsregal für Whitepaper, Working Papers, Gesetze, Methodik und Dossiers.", "werkstatt/arbeitsbibliothek/"],
     ["Whitepaper", "Vertiefende Papiere zu Wirkung, T-SROI, Produkten, Einkommen und Systemarchitektur.", "werkstatt/arbeitsbibliothek/whitepaper/"],
-    ["Working Papers", "Arbeitsstände und Konzeptpapiere, die Modelle und Anwendungsfelder vertiefen.", "wissen/working-papers/"],
+    ["Working Papers", "Vertiefende Papiere, die Modelle und Anwendungsfelder einordnen.", "wissen/working-papers/"],
     ["Gesetze und Rechtsentwürfe", "WStG, WUStG, WEstG und juristische Prüfnotizen.", "werkstatt/arbeitsbibliothek/gesetze/"],
     ["Methodik", "Datenbasis, Standards, Regularien, WÖk-IDs, Scorecards und Evidenzlogik.", "werkstatt/arbeitsbibliothek/methodik/"],
     ["Praxisbeispiele", "Apfelbeispiel, Lieferketten, Konzernbeispiel und kommunale Use Cases.", "werkstatt/arbeitsbibliothek/praxis/"],
     ["Architektur", "Systemmodell und Nachhaltigkeit als Systemarchitektur.", "werkstatt/arbeitsbibliothek/architektur/"],
     ["Dossiers", "Öffentliche Dossiers aus Journal und Werkstatt.", "blog/dossiers/grundlagen.html"],
-    ["Historische Dokumente", "Ältere Arbeitsstände bleiben auffindbar und werden als historisch eingeordnet.", "werkstatt/arbeitsbibliothek/historische-dokumente/"],
+    ["Historische Dokumente", "Ältere Materialien bleiben auffindbar und werden historisch eingeordnet.", "werkstatt/arbeitsbibliothek/historische-dokumente/"],
     ["Downloads", "Bestehende Download-Seite mit PDFs und Originaldateien.", "downloads.html"],
   ].map(([title, text, href]) => ({ title, text, href, linkLabel: "Öffnen" }));
 
@@ -1005,7 +1006,7 @@ function workshopPages() {
             ${printActions(base)}
           </div>
           <aside class="card">
-            <p class="card-kicker">Bestandsschutz</p>
+            <p class="card-kicker">Downloads</p>
             <h2 class="card-title">Downloads bleiben erhalten.</h2>
             <p class="card-text">Die bestehende Download-Seite bleibt erreichbar und wird als Teil der Werkstatt verlinkt.</p>
           </aside>
@@ -1031,7 +1032,7 @@ function workshopPages() {
     ["Gesetze", "Wirkungssteuergesetz, WUStG, Wirkungshaushalt und rechtliche Prüfnotizen.", "werkstatt/arbeitsbibliothek/gesetze/"],
     ["Methodik", "WÖk-IDs, Scorecards, Datenstandards, Quellenlogik und Bewertungsregeln.", "werkstatt/arbeitsbibliothek/methodik/"],
     ["Whitepaper", "Grundlagen- und Methodenpapiere.", "werkstatt/arbeitsbibliothek/whitepaper/"],
-    ["Konzepte & Dossiers", "Online lesbare Konzeptpapiere, Dossiers und zitierfähige Arbeitsfassungen.", "werkstatt/arbeitsbibliothek/konzepte-dossiers/"],
+    ["Konzepte & Dossiers", "Online lesbare Konzeptpapiere, Dossiers und zitierfähige Fassungen.", "werkstatt/arbeitsbibliothek/konzepte-dossiers/"],
     ["Praxis", "Produktbeispiele, Lieferketten, Konzernbeispiele und Use Cases.", "werkstatt/arbeitsbibliothek/praxis/"],
     ["Soziales", "Arbeit, Einkommen, Rente, Care und soziale Sicherung.", "werkstatt/arbeitsbibliothek/soziales/"],
     ["Recht", "Juristische Prüfnotizen, Risikolandkarten und Verfahrensmodelle.", "werkstatt/arbeitsbibliothek/recht/"],
@@ -1052,7 +1053,7 @@ function workshopPages() {
     ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "docs/soziales/Wirkungseinkommen_Grunddividende_v1.1_Zielmodell.md"]]],
     ["recht", "Recht", [["Juristische Risikolandkarte", "Rechtsprüfung und Risiken.", "docs/recht/WOeK_Juristische_Risikolandkarte_v1.1.md"], ["WStG Prüfnotiz", "Juristische Prüfung des WStG.", "docs/recht/WStG_2.0_Juristische_Pruefnotiz.md"], ["Wirkungsrat Prüfnotiz", "Governance und Rechtsrahmen.", "docs/recht/Wirkungsrat_Juristische_Pruefnotiz_Governance.md"]]],
     ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Nachhaltigkeit als Systemarchitektur", "Architekturpapier.", "docs/architektur/Nachhaltigkeit_als_Systemarchitektur_v1.1.md"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
-    ["historische-dokumente", "Historische Dokumente", [["Manifest", "Historischer und normativer Ausgangspunkt.", "dokumente/woek-manifest/"], ["Minifest", "Kurzfassung und Arbeitsstand.", "dokumente/minifest-wirkungsoekonomie/"], ["Archivhinweis", "Historische Dokumente einordnen.", "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.md"]]],
+    ["historische-dokumente", "Historische Dokumente", [["Manifest", "Historischer und normativer Ausgangspunkt.", "dokumente/woek-manifest/"], ["Minifest", "Kurzfassung und Orientierung.", "dokumente/minifest-wirkungsoekonomie/"], ["Archivhinweis", "Historische Dokumente einordnen.", "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.md"]]],
   ];
   for (const [slug, title, docs] of simplePages) {
     simpleLibraryPage(
@@ -1147,14 +1148,14 @@ function schoolWorkpaperPage() {
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
     title: "Konzeptpapier Wirkungsschule online lesen | Werkstatt der Wirkungsökonomie",
     description:
-      "Zitierfähige Online-Fassung des wirkungsökonomischen Schulkonzepts als Arbeitsfassung v0.1 mit Abschnittsankern und DOCX-Download.",
+      "Zitierfähige Online-Fassung des wirkungsökonomischen Schulkonzepts als Fassung v0.1 mit Abschnittsankern und DOCX-Download.",
     searchSection: "Werkstatt",
     searchType: "Online-Volltext",
     body: (base, route) => `<section class="hero">
         <div class="hero-grid">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a><span aria-hidden="true">/</span><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung</a></nav>
-            <p class="hero-kicker">Online-Volltext · Arbeitsfassung v0.1</p>
+            <p class="hero-kicker">Online-Volltext · Fassung v0.1</p>
             <h1 class="hero-title">Wirkungsökonomisches Schulkonzept</h1>
             <p class="hero-subtitle">Von der Schule als Sortiersystem zur Schule als Wirkungsraum.</p>
             <p class="hero-text">Diese Seite macht das Konzeptpapier online lesbar und zitierfähig. Die DOCX-Datei bleibt als ergänzende Archiv- und Exportfassung erhalten.</p>
@@ -1196,7 +1197,7 @@ function schoolWorkpaperPage() {
           <div>
             <p class="card-kicker">Download & Archiv</p>
             <h2 id="download-title">Originaldatei ergänzend herunterladen ${citeAnchor("download-title")}</h2>
-            <p class="card-text">Die Online-Fassung ist der Hauptzugang. Die DOCX-Arbeitsfassung bleibt für Archiv, Weitergabe und Bearbeitung erhalten.</p>
+            <p class="card-text">Die Online-Fassung ist der Hauptzugang. Die DOCX-Datei bleibt für Archiv, Weitergabe und Bearbeitung erhalten.</p>
           </div>
           <a class="btn btn-primary no-print" href="${href(base, SCHOOL_DOC)}">DOCX herunterladen</a>
         </div>
