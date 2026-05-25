@@ -591,7 +591,8 @@ def update_sitemap() -> None:
 
 def main() -> None:
     if not PACKAGE.exists():
-        raise SystemExit(f"Package not found: {PACKAGE}")
+        print(f"Rang 24 release package not found; keeping committed release pages: {PACKAGE}")
+        return
     copy_release_assets()
     register = load_json("WOeK_Rang24_master_downloadregister_v1.0.json")
     active = load_json("WOeK_Rang24_active_source_packages_v1.0.json")
