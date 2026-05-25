@@ -278,7 +278,27 @@
 
 .search-result-list {
   display: grid;
-  gap: 0.9rem;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-result-group {
+  min-width: 0;
+}
+
+.search-result-group > h2 {
+  margin: 0 0 0.7rem;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+  line-height: 1.08;
+}
+
+.search-result-group-list {
+  display: grid;
+  gap: 0.85rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -309,11 +329,12 @@
   overflow-wrap: anywhere;
 }
 
-.search-result-card h2 {
+.search-result-card h2,
+.search-result-card h3 {
   margin: 0;
   color: var(--navy);
   font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   line-height: 1.05;
 }
 
