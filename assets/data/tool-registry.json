@@ -1,0 +1,101 @@
+[
+  {
+    "id": "automation-income-calculator",
+    "title": "Automatisierungs- und Wirkungseinkommensrechner",
+    "route": "/erleben/automatisierungs-wirkungseinkommensrechner/",
+    "type": "calculator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Rechner öffnen",
+    "priority": 1
+  },
+  {
+    "id": "woek-scanner",
+    "title": "WÖk-Scanner",
+    "route": "/anwendungen/scanner.html",
+    "type": "scanner",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Ersteinschätzung anzeigen",
+    "priority": 1
+  },
+  {
+    "id": "product-impact-simulator",
+    "title": "Produktwirkung und Wirkungssteuer-Simulator",
+    "route": "/erleben.html#simulator",
+    "type": "simulator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Produktdemo testen",
+    "priority": 1
+  },
+  {
+    "id": "media-impact-check",
+    "title": "Medienwirkung testen",
+    "route": "/erleben.html#medienwirkung",
+    "type": "scanner",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Medienwirkung testen",
+    "priority": 1
+  },
+  {
+    "id": "risk-resilience-simulation",
+    "title": "Risiko- und Resilienz-Simulation",
+    "route": "/erleben.html#risikolabor",
+    "type": "simulator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Simulation starten",
+    "priority": 1
+  },
+  {
+    "id": "impact-controlling-calculators",
+    "title": "KPI-, NWI- und T-SROI-Rechner",
+    "route": "/erleben.html#scanner",
+    "type": "calculator-suite",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Rechner öffnen",
+    "priority": 2
+  },
+  {
+    "id": "wirkungsfonds-method",
+    "title": "Wirkungsfonds",
+    "route": "/werkzeuge/wirkungsfonds/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "publicCta": "Methodik lesen",
+    "priority": 3
+  },
+  {
+    "id": "machine-value-method",
+    "title": "Maschinenwertschöpfungsbeitrag",
+    "route": "/werkzeuge/maschinenwertschoepfungsbeitrag/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "publicCta": "Methodik lesen",
+    "priority": 3
+  },
+  {
+    "id": "automation-dividend-method",
+    "title": "Automatisierungsdividende",
+    "route": "/werkzeuge/automatisierungsdividende/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "publicCta": "Methodik lesen",
+    "priority": 3
+  }
+]

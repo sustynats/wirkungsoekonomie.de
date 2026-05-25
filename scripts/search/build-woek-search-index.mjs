@@ -18,6 +18,19 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/ausgebaut \/ erster Schwerpunkt/g, "Wirkungsfeld"],
   [/kanonische Portalstruktur/g, "Systemlandkarte"],
   [/Dossier in Vorbereitung/g, "Weiterführende Vertiefung"],
+  [/Tool-Spezifikation und Rechenmodell/g, "Methodik und Annahmen"],
+  [/Tool-Spezifikation:/g, "Methodik:"],
+  [/Tool-Spezifikation/g, "Methodik"],
+  [/\bInputs\b/g, "Eingaben"],
+  [/\bOutputs\b/g, "Ergebnisse"],
+  [/Website-Integration/g, "Einordnung auf der Website"],
+  [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
+  [/Demo in Vorbereitung/g, "Methodenseite"],
+  [/Methodendokumentation folgt/g, "Methodik und Annahmen"],
+  [/Datenquellen vorbereitet/g, "Datenquellen und Grenzen"],
+  [/Version v0\.1/g, "Modellhafte Fassung"],
+  [/Prototypen/g, "Demos"],
+  [/Prototyp/g, "Modellhafte Demo"],
 ];
 
 function clean(text) {

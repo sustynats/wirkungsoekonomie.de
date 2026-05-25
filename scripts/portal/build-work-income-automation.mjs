@@ -245,10 +245,10 @@ function toolRefs(b) {
 }
 function crossLinks(b) {
   const links = [
-    ["Staat, Recht & Demokratie", "Rang 3", "WStG, WEstG, Wirkungshaushalt und Wirkungsrat als Rechts- und Institutionenrahmen.", "wirkungsfelder/staat-recht-demokratie/"],
-    ["Wirtschaft & Unternehmen", "Rang 4", "Automatisierung, Mitbestimmung, Finanzmarktanforderungen und Unternehmenswirkung.", "wirkungsfelder/wirtschaft-unternehmen/"],
-    ["Rente & soziale Sicherung", "Rang 7", "Wirkungsrente, Lebensleistung und soziale Sicherung jenseits reiner Beitragsbiografie.", "wirkungsfelder/rente-soziale-sicherung/"],
-    ["Finanzsystem & Kapital", "Rang 12", "Wirkungsfonds, Kapitalwirkung, Automatisierungsdividende und Finanzierbarkeit.", "wirkungsfelder/finanzsystem-kapital/finanzierbarkeit-wirkungsfonds/"],
+    ["Staat, Recht & Demokratie", "", "WStG, WEstG, Wirkungshaushalt und Wirkungsrat als Rechts- und Institutionenrahmen.", "wirkungsfelder/staat-recht-demokratie/"],
+    ["Wirtschaft & Unternehmen", "", "Automatisierung, Mitbestimmung, Finanzmarktanforderungen und Unternehmenswirkung.", "wirkungsfelder/wirtschaft-unternehmen/"],
+    ["Rente & soziale Sicherung", "", "Wirkungsrente, Lebensleistung und soziale Sicherung jenseits reiner Beitragsbiografie.", "wirkungsfelder/rente-soziale-sicherung/"],
+    ["Finanzsystem & Kapital", "", "Wirkungsfonds, Kapitalwirkung, Automatisierungsdividende und Finanzierbarkeit.", "wirkungsfelder/finanzsystem-kapital/finanzierbarkeit-wirkungsfonds/"],
   ];
   return `<section class="section" aria-labelledby="vernetzung"><div class="section-header"><p class="hero-kicker">Vernetzung</p>${h2("vernetzung", "Querverlinkungen")}</div>${cards(b, links)}</section>`;
 }
@@ -260,7 +260,7 @@ function portal() {
     rel: "wirkungsfelder/arbeit-einkommen/index.html",
     title: "Arbeit & Einkommen | Automatisierung und Wirkungseinkommen",
     description: "Arbeit, Einkommen, Automatisierung, Maschinenleistung, Wirkungseinkommen, Sozialabgaben-Entkopplung und Wirkungsfonds wirkungsökonomisch einordnen.",
-    body: (b) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld · Rang 6</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Automatisierung, Maschinenleistung, Wirkungseinkommen und soziale Sicherung neu rückkoppeln.</p><p>Die alte Ordnung koppelt Einkommen, soziale Sicherung, Renten und staatliche Finanzierung an menschliche Erwerbsarbeit. KI, Robotik, Plattformen und Automatisierung verändern diese Grundlage. Die Wirkungsökonomie antwortet nicht mit Maschinenfeindschaft, sondern mit Rückkopplung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner öffnen</a><a class="btn btn-secondary" href="#publikationszugang">Online lesen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Nicht die Maschine ist das Problem.</h2><p class="card-text">Das Problem ist eine Ordnung, die soziale Sicherung fast nur an menschlicher Arbeit festmacht.</p></aside></div></section>${publicationAccess(b)}${toc(t)}<section class="section" aria-labelledby="online-volltext"><div class="prose">${h2("online-volltext", "Portaltext online lesen")} ${html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Unterbereiche online lesen")}</div>${cards(b, pages.map(([slug, title, text]) => [title, "Detailkonzept + Dossier", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Automatisierung, Maschinenleistung, Wirkungseinkommen und soziale Sicherung neu rückkoppeln.</p><p>Die alte Ordnung koppelt Einkommen, soziale Sicherung, Renten und staatliche Finanzierung an menschliche Erwerbsarbeit. KI, Robotik, Plattformen und Automatisierung verändern diese Grundlage. Die Wirkungsökonomie antwortet nicht mit Maschinenfeindschaft, sondern mit Rückkopplung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner öffnen</a><a class="btn btn-secondary" href="#publikationszugang">Online lesen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Nicht die Maschine ist das Problem.</h2><p class="card-text">Das Problem ist eine Ordnung, die soziale Sicherung fast nur an menschlicher Arbeit festmacht.</p></aside></div></section>${publicationAccess(b)}${toc(t)}<section class="section" aria-labelledby="online-volltext"><div class="prose">${h2("online-volltext", "Portaltext online lesen")} ${html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Unterbereiche online lesen")}</div>${cards(b, pages.map(([slug, title, text]) => [title, "Detailkonzept + Dossier", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
   });
 }
 
@@ -278,16 +278,16 @@ function topicPage(item) {
 
 function toolPage([slugName, title, type, summary]) {
   const rel = slugName === "automatisierungs-wirkungseinkommensrechner" ? `erleben/${slugName}/index.html` : `werkzeuge/${slugName}/index.html`;
-  const spec = slugName === "automatisierungs-wirkungseinkommensrechner"
-    ? mdToHtml(read(`${WEB}/tool_spezifikation_automatisierung_wirkungseinkommen_rechner.md`))
-    : mdToHtml(read(`${WEB}/tool_spezifikation_wirkungseinkommen_automatisierungsdividende.md`));
+  const isCalculator = slugName === "automatisierungs-wirkungseinkommensrechner";
   page({
     rel,
     title: `${title} | Wirkungsökonomie`,
     description: summary,
-    section: slugName === "automatisierungs-wirkungseinkommensrechner" ? "Erleben" : "Werkzeuge",
-    type,
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">${esc(type)}</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><p class="scanner-notice">Modellhafte Demonstration. Keine amtliche Einstufung. Keine Rechts-, Steuer- oder Sozialberatung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#modell">Modell ansehen</a></div></div></section>${toolDemo(b, slugName)}<section class="section" aria-labelledby="modell"><div class="prose">${h2("modell", "Tool-Spezifikation und Rechenmodell")} ${spec.html}</div></section>${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx"])}`,
+    section: isCalculator ? "Erleben" : "Werkzeuge",
+    type: isCalculator ? "Interaktiver Rechner" : "Methodenseite",
+    body: (b) => isCalculator
+      ? `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Interaktiver Rechner</p><h1>${esc(title)}</h1><p class="hero-subtitle">Diese Demo zeigt modellhaft, wie Automatisierung die alte Kette Arbeit - Einkommen - Sozialbeiträge belastet und wie eine wirkungsökonomische Rückkopplung aussehen könnte.</p><p class="scanner-notice">Modellhafte Demonstration. Keine amtliche Einstufung. Keine Rechts-, Steuer- oder Sozialberatung. Keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#rechner">Rechner nutzen</a></div></div></section>${automationCalculator(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx"])}`
+      : `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Methodenseite</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><p class="scanner-notice">Methodische Einordnung. Keine amtliche Einstufung. Keine Rechts-, Steuer- oder Sozialberatung. Keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#methodik">Methodik lesen</a></div></div></section>${methodToolPage(title, summary)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx"])}`,
   });
 }
 
@@ -303,18 +303,179 @@ function documentPage([slugName, title, mdFile, docFile, summary]) {
 }
 
 function toolDemo(b, slugName) {
-  if (slugName !== "automatisierungs-wirkungseinkommensrechner") return `<section class="section"><div class="card"><p class="hero-kicker">Status</p><h2>Erklärseite</h2><p>Die Demo-Logik ist in Vorbereitung. Der methodische Anschluss ist bereits online lesbar.</p></div></section>`;
-  return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Demo V0.1</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>FTE, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
+  if (slugName !== "automatisierungs-wirkungseinkommensrechner") return `<section class="section"><div class="card"><p class="hero-kicker">Methodik</p><h2>Erklärseite</h2><p>Diese Seite ordnet die Methode ein und verweist auf nutzbare Demos, sobald eine Bedienoberfläche vorhanden ist.</p></div></section>`;
+  return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Modellhafte Demo</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>FTE, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
+}
+
+function methodToolPage(title, summary) {
+  return `<section class="section" id="methodik" aria-labelledby="methodik-title">
+    <div class="section-header">
+      <p class="hero-kicker">Methodik</p>
+      ${h2("methodik-title", `${title} verstehen`)}
+      <p>${esc(summary)} Diese Seite beschreibt den methodischen Zusammenhang und verweist auf den interaktiven Automatisierungs- und Wirkungseinkommensrechner.</p>
+    </div>
+    <div class="card-grid three">
+      <article class="card"><h3 class="card-title">Was wird betrachtet?</h3><p class="card-text">Automatisierte Wertschöpfung, Lohnsummenwirkung, Sozialfinanzierung, Transformationsschutz und Fondslogik werden als Systemzusammenhang gelesen.</p></article>
+      <article class="card"><h3 class="card-title">Was entscheidet die Seite nicht?</h3><p class="card-text">Sie berechnet keine amtlichen Beiträge, keine Steuerlast, keine Unternehmensbewertung und keine personenbezogene Einstufung.</p></article>
+      <article class="card"><h3 class="card-title">Wie weiter?</h3><p class="card-text">Für eine modellhafte Berechnung steht der Rechner als Demo bereit; rechtliche und politische Ausgestaltung bleiben demokratische Aufgabe.</p></article>
+    </div>
+    <div class="portal-card-actions no-print">
+      <a class="btn btn-primary" href="../../erleben/automatisierungs-wirkungseinkommensrechner/">Rechner öffnen</a>
+    </div>
+  </section>`;
+}
+
+function automationCalculator(b) {
+  return `<section class="section" id="rechner" aria-labelledby="rechner-title">
+    <div class="section-header">
+      <p class="hero-kicker">Rechner</p>
+      ${h2("rechner-title", "Automatisierung modellhaft durchrechnen")}
+      <p>Alle Werte werden lokal im Browser berechnet. Es werden keine Eingaben gespeichert oder übertragen.</p>
+    </div>
+    <div class="hero-actions no-print">
+      <button class="btn btn-primary" type="button" data-auto-example>Beispielwerte laden</button>
+      <button class="btn btn-secondary" type="button" data-auto-reset>Zurücksetzen</button>
+    </div>
+    <div class="card-grid two" data-auto-calculator>
+      <article class="card">
+        <p class="card-kicker">Modul 1</p>
+        <h3 class="card-title">Beitragslücke</h3>
+        <label>Anzahl betroffener FTE<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
+        <label>durchschnittlicher Bruttolohn pro Jahr<input type="number" min="0" step="1000" value="52000" data-auto-input="wage"></label>
+        <label>Arbeitgeber-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.5" data-auto-input="employerRate"></label>
+        <label>Arbeitnehmer-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.0" data-auto-input="employeeRate"></label>
+        <label>erwartete Automatisierungsquote in Prozent<input type="range" min="0" max="100" step="1" value="35" data-auto-input="automationRate"></label>
+        <div class="impact-kpis">
+          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">-</strong></div>
+          <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">-</strong></div>
+          <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">-</strong></div>
+        </div>
+        <p class="card-text">Betroffene Sozialbereiche: Rente, Gesundheit, Pflege und Arbeitslosenversicherung.</p>
+      </article>
+      <article class="card">
+        <p class="card-kicker">Modul 2</p>
+        <h3 class="card-title">Maschinenwertschöpfungsbeitrag</h3>
+        <label>automatisierte Wertschöpfung pro Jahr<input type="number" min="0" step="10000" value="3800000" data-auto-input="machineValue"></label>
+        <label>Rückkopplungsquote in Prozent<input type="number" min="0" max="100" step="0.1" value="6" data-auto-input="feedbackRate"></label>
+        <label>Wirkungsfaktor von -3 bis +3<input type="range" min="-3" max="3" step="1" value="0" data-auto-input="impactFactor"></label>
+        <div class="impact-kpis">
+          <div class="impact-kpi"><span>Beitrag</span><strong data-auto-result="machineContribution">-</strong></div>
+          <div class="impact-kpi"><span>Faktor</span><strong data-auto-result="impactFactorLabel">-</strong></div>
+        </div>
+        <p class="card-text" data-auto-result="impactReason">Der Wirkungsfaktor verändert den Beitrag je nach Entlastung oder Belastung.</p>
+      </article>
+      <article class="card">
+        <p class="card-kicker">Modul 3</p>
+        <h3 class="card-title">Transformationsbonus</h3>
+        <label>Weiterbildungsquote in Prozent<input type="number" min="0" max="100" step="1" value="45" data-auto-input="trainingRate"></label>
+        <label>interne Versetzungsquote in Prozent<input type="number" min="0" max="100" step="1" value="25" data-auto-input="redeploymentRate"></label>
+        <label>Arbeitszeitmodell vorhanden<select data-auto-input="workingTimeModel"><option value="yes">ja</option><option value="no">nein</option></select></label>
+        <label>Anteil Produktivitätsgewinn an Beschäftigte / Kund:innen / Fonds<input type="number" min="0" max="100" step="1" value="35" data-auto-input="sharedGain"></label>
+        <label>regionale Stabilisierung<select data-auto-input="regionalStability"><option value="low">niedrig</option><option value="medium" selected>mittel</option><option value="high">hoch</option></select></label>
+        <div class="impact-kpis">
+          <div class="impact-kpi"><span>Transformationsbonus</span><strong data-auto-result="bonus">-</strong></div>
+          <div class="impact-kpi"><span>reduzierter Beitrag</span><strong data-auto-result="reducedContribution">-</strong></div>
+          <div class="impact-kpi"><span>Wirkungsprofil</span><strong data-auto-result="profile">-</strong></div>
+        </div>
+      </article>
+      <article class="card">
+        <p class="card-kicker">Modul 4</p>
+        <h3 class="card-title">Wirkungseinkommensmodell</h3>
+        <label>Grunddividende<input type="number" min="0" step="100" value="900" data-auto-input="baseDividend"></label>
+        <label>Markteinkommen<input type="number" min="0" step="100" value="2400" data-auto-input="marketIncome"></label>
+        <label>Wirkungsbonus<input type="number" min="0" step="50" value="250" data-auto-input="impactBonus"></label>
+        <label>Fondsanteil<input type="number" min="0" step="50" value="150" data-auto-input="fundShare"></label>
+        <div class="impact-kpis">
+          <div class="impact-kpi"><span>Gesamteinkommen</span><strong data-auto-result="totalIncome">-</strong></div>
+          <div class="impact-kpi"><span>Grundsicherheit</span><strong data-auto-result="baseShare">-</strong></div>
+          <div class="impact-kpi"><span>Markt</span><strong data-auto-result="marketShare">-</strong></div>
+          <div class="impact-kpi"><span>Wirkung/Fonds</span><strong data-auto-result="impactShare">-</strong></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="annahmen">
+    <details class="card" open>
+      <summary><h2 id="annahmen" class="card-title">Methodik und Annahmen</h2></summary>
+      <p>Die Demo nutzt lineare Modellannahmen. Beitragslücken, Rückkopplungsquoten und Boni sind keine amtlichen Werte, sondern zeigen die Logik einer möglichen Rückkopplung.</p>
+      <p>Grenzen: keine Rechts-, Steuer- oder Sozialberatung, keine Personenbewertung, keine Leistungsüberwachung einzelner Beschäftigter, keine automatische Entscheidung.</p>
+    </details>
+  </section>
+  <script>
+  (() => {
+    const root = document.querySelector("[data-auto-calculator]");
+    if (!root) return;
+    const defaults = {
+      fte: 120, wage: 52000, employerRate: 20.5, employeeRate: 20, automationRate: 35,
+      machineValue: 3800000, feedbackRate: 6, impactFactor: 0,
+      trainingRate: 45, redeploymentRate: 25, workingTimeModel: "yes", sharedGain: 35, regionalStability: "medium",
+      baseDividend: 900, marketIncome: 2400, impactBonus: 250, fundShare: 150
+    };
+    const examples = { ...defaults, fte: 250, wage: 58000, automationRate: 42, machineValue: 9200000, feedbackRate: 7.5, impactFactor: 1, trainingRate: 68, redeploymentRate: 44, sharedGain: 55, regionalStability: "high", baseDividend: 1050, marketIncome: 2200, impactBonus: 420, fundShare: 260 };
+    const factorMap = { "-3": 1.30, "-2": 1.20, "-1": 1.10, "0": 1.00, "1": 0.85, "2": 0.70, "3": 0.50 };
+    const money = (value) => new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value || 0);
+    const number = (value) => new Intl.NumberFormat("de-DE", { maximumFractionDigits: 1 }).format(value || 0);
+    const percent = (value) => number(value) + " %";
+    const input = (name) => root.querySelector("[data-auto-input=\\"" + name + "\\"]");
+    const output = (name, value) => { const el = root.querySelector("[data-auto-result=\\"" + name + "\\"]"); if (el) el.textContent = value; };
+    const value = (name) => {
+      const el = input(name);
+      if (!el) return 0;
+      if (el.tagName === "SELECT") return el.value;
+      return Number(el.value || 0);
+    };
+    const setValues = (values) => {
+      Object.entries(values).forEach(([name, val]) => { const el = input(name); if (el) el.value = val; });
+      calculate();
+    };
+    const calculate = () => {
+      const affectedFte = value("fte") * value("automationRate") / 100;
+      const lostPayroll = affectedFte * value("wage");
+      const employerGap = lostPayroll * value("employerRate") / 100;
+      const employeeGap = lostPayroll * value("employeeRate") / 100;
+      const contributionGap = employerGap + employeeGap;
+      const impactFactor = String(value("impactFactor"));
+      const adjustment = factorMap[impactFactor] || 1;
+      const machineContribution = value("machineValue") * value("feedbackRate") / 100 * adjustment;
+      let bonusScore = Math.min(30, value("trainingRate") * 0.08 + value("redeploymentRate") * 0.07 + value("sharedGain") * 0.07);
+      if (value("workingTimeModel") === "yes") bonusScore += 5;
+      if (value("regionalStability") === "medium") bonusScore += 4;
+      if (value("regionalStability") === "high") bonusScore += 8;
+      bonusScore = Math.max(0, Math.min(30, bonusScore));
+      const reducedContribution = machineContribution * (1 - bonusScore / 100);
+      const profile = bonusScore >= 24 && Number(impactFactor) > 0 ? "entlastend" : bonusScore >= 14 ? "neutral" : Number(impactFactor) < 0 ? "extraktiv" : "verdrängend";
+      const totalIncome = value("baseDividend") + value("marketIncome") + value("impactBonus") + value("fundShare");
+      output("affectedFte", number(affectedFte));
+      output("lostPayroll", money(lostPayroll));
+      output("contributionGap", money(contributionGap));
+      output("machineContribution", money(machineContribution));
+      output("impactFactorLabel", impactFactor + " / Anpassung " + number(adjustment));
+      output("impactReason", Number(impactFactor) < 0 ? "Negative Wirkung erhöht den Beitrag, weil Verdrängung und Folgekosten stärker rückgekoppelt werden." : Number(impactFactor) > 0 ? "Positive Wirkung senkt den Beitrag, weil Weiterbildung, Teilhabe oder Resilienz entlastend wirken." : "Neutraler Wirkungsfaktor: Die Rückkopplungsquote wird ohne Zu- oder Abschlag angewendet.");
+      output("bonus", percent(bonusScore));
+      output("reducedContribution", money(reducedContribution));
+      output("profile", profile);
+      output("totalIncome", money(totalIncome));
+      output("baseShare", percent(totalIncome ? value("baseDividend") / totalIncome * 100 : 0));
+      output("marketShare", percent(totalIncome ? value("marketIncome") / totalIncome * 100 : 0));
+      output("impactShare", percent(totalIncome ? (value("impactBonus") + value("fundShare")) / totalIncome * 100 : 0));
+    };
+    root.querySelectorAll("[data-auto-input]").forEach((el) => el.addEventListener("input", calculate));
+    root.querySelectorAll("[data-auto-input]").forEach((el) => el.addEventListener("change", calculate));
+    document.querySelector("[data-auto-example]")?.addEventListener("click", () => setValues(examples));
+    document.querySelector("[data-auto-reset]")?.addEventListener("click", () => setValues(defaults));
+    calculate();
+  })();
+  </script>`;
 }
 
 function workLibrary() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/index.html",
     title: "Arbeitsbibliothek Arbeit & Einkommen | Wirkungsökonomie",
-    description: "Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Tool-Spezifikationen zum Wirkungsfeld Arbeit & Einkommen.",
+    description: "Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodenmaterial zum Wirkungsfeld Arbeit & Einkommen.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}werkstatt/">Werkstatt</a></nav><p class="hero-kicker">Arbeitsbibliothek</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Tool-Spezifikationen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Portal öffnen</a></div></div></section>${publicationAccess(b, "Dokumente online lesen")}<section class="section" aria-labelledby="docs"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("docs", "Detailkonzepte und Einzeldossiers")}</div>${cards(b, pages.map(([slugName, title, summary]) => [title, "Online-Volltext", summary, `wirkungsfelder/arbeit-einkommen/${slugName}/`]))}</section>${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}werkstatt/">Werkstatt</a></nav><p class="hero-kicker">Arbeitsbibliothek</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodenmaterial.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Wirkungsfeld öffnen</a></div></div></section>${publicationAccess(b, "Dokumente online lesen")}<section class="section" aria-labelledby="docs"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("docs", "Detailkonzepte und Einzeldossiers")}</div>${cards(b, pages.map(([slugName, title, summary]) => [title, "Online-Volltext", summary, `wirkungsfelder/arbeit-einkommen/${slugName}/`]))}</section>${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
   });
 }
 
@@ -332,7 +493,7 @@ function patchPortalLinks() {
     let html = fs.readFileSync(file, "utf8");
     if (html.includes('id="arbeit-einkommen-link"')) continue;
     const b = base(rel);
-    const block = `<section class="section" aria-labelledby="arbeit-einkommen-link"><div class="download-card"><div><p class="card-kicker">Rang 6</p>${h2("arbeit-einkommen-link", title)}<p class="card-text">${esc(text)}</p></div><a class="btn btn-secondary no-print" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Arbeit & Einkommen öffnen</a></div></section>`;
+    const block = `<section class="section" aria-labelledby="arbeit-einkommen-link"><div class="download-card"><div><p class="card-kicker"></p>${h2("arbeit-einkommen-link", title)}<p class="card-text">${esc(text)}</p></div><a class="btn btn-secondary no-print" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Arbeit & Einkommen öffnen</a></div></section>`;
     html = html.replace("</main>", `${block}\n    </main>`);
     fs.writeFileSync(file, html, "utf8");
   }
