@@ -188,8 +188,18 @@ function toc(t) {
   if (!t.length) return "";
   return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol>${t.map((i) => `<li class="toc-level-${esc(i.level)}"><a href="#${esc(i.id)}">${esc(i.text)}</a></li>`).join("")}</ol></nav>`;
 }
-function cards(b, items) {
-  return `<div class="card-grid three">${items.map(([title, type, text, url]) => `<article class="card"><p class="card-kicker">${esc(type || "Kontext")}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text || "")}</p><div class="portal-card-actions"><a class="text-link" href="${href(b, url)}">Öffnen</a></div></article>`).join("")}</div>`;
+function ctaLabelFor(url, fallback = "Vertiefung lesen") {
+  const value = String(url || "");
+  if (/erleben\/automatisierungs-wirkungseinkommensrechner/.test(value)) return "Rechner nutzen";
+  if (/\/dossiers\/|\/dossier\//.test(value)) return "Dossier lesen";
+  if (/detailkonzepte|konzept/.test(value)) return "Konzept lesen";
+  if (/werkzeuge\//.test(value)) return "Methodik lesen";
+  if (/wirkungsfelder\/arbeit-einkommen\/.+/.test(value)) return "Vertiefung lesen";
+  if (/wirkungsfelder\//.test(value)) return "Wirkungsfeld ansehen";
+  return fallback;
+}
+function cards(b, items, fallbackLabel = "Vertiefung lesen") {
+  return `<div class="card-grid three">${items.map(([title, type, text, url, label]) => `<article class="card"><p class="card-kicker">${esc(type || "Kontext")}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text || "")}</p>${url ? `<div class="portal-card-actions"><a class="text-link" href="${href(b, url)}">${esc(label || ctaLabelFor(url, fallbackLabel))}</a></div>` : ""}</article>`).join("")}</div>`;
 }
 function downloads(b, files) {
   const labelForDownload = (file) => {
@@ -199,7 +209,7 @@ function downloads(b, files) {
     return file.replace(/^woek_/, "").replaceAll("_", " ").replace(/\.docx$/, "");
   };
   const links = files.filter(Boolean).filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${file}`)}">${esc(labelForDownload(file))}</a>`);
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${h2("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word-Dateien bleiben Export und Archiv.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.join("")}</div></div></section>`;
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${h2("downloads", "Vertiefung und Arbeitsmaterial")}<p>Hier findest du ergänzende Downloadfassungen und die Druckfunktion. Die inhaltliche Orientierung steht auf der Seite selbst.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.join("")}</div></div></section>`;
 }
 function publicationAccess(b, heading = "Online lesen und herunterladen") {
   const items = topDocuments.map(([slugName, title, , doc, text]) => [
@@ -254,13 +264,37 @@ function crossLinks(b) {
 }
 
 function portal() {
-  const intro = stripPortalOperationalSections(read(`${WEB}/website_inhalt_arbeit_einkommen_automatisierung.md`));
-  const { toc: t, html } = mdToHtml(intro);
+  const conceptCards = [
+    ["Arbeit, Einkommen und Wirkung", "Konzept", "Arbeit ist nicht automatisch Wirkung. Einkommen beweist nicht automatisch Leistung. Sichtbar wird, welche Tätigkeiten Zustände wirklich verbessern.", "wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/"],
+    ["Automatisierung und Maschinenleistung", "Konzept", "Automatisierung ersetzt Tätigkeiten, aber nicht zwingend Wertschöpfung. Entscheidend ist, wie Produktivitätsgewinne rückgekoppelt werden.", "wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/"],
+    ["Sozialabgaben entkoppeln", "Konzept", "Soziale Sicherung darf nicht nur an menschlicher Lohnarbeit hängen, wenn Maschinen und KI einen wachsenden Teil der Wertschöpfung übernehmen.", "wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/"],
+    ["Wirkungseinkommen", "Konzept", "Einkommen kann aus Grundsicherheit, Markteinkommen, Wirkungsbonus und Fondsanteil zusammengedacht werden.", "wirkungsfelder/arbeit-einkommen/wirkungseinkommen/"],
+    ["Wirkungsfonds und Automatisierungsdividende", "Konzept", "Automatisierungsüberschüsse und negative Wirkung können in Fonds zurückfließen, die Weiterbildung, Care und soziale Stabilität finanzieren.", "wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/"],
+    ["Care, Bildung, Ehrenamt und Gemeinwesen", "Konzept", "Unbezahlte oder unterbezahlte Wirkleistungen werden sichtbar, ohne Menschen zu überwachen oder zu bewerten.", "wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/"],
+  ];
+  const whyCards = [
+    ["Arbeit finanziert mehr als Lohn", "Aus Erwerbsarbeit entstehen Einkommen, Sozialbeiträge, Rentenansprüche, Status und Teilhabe. Wenn diese Basis schrumpft, betrifft das das ganze System."],
+    ["Automatisierung verschiebt Wertschöpfung", "KI und Maschinen können Produktivität erhalten oder steigern, während Lohnsumme und klassische Beitragsbasis sinken."],
+    ["Wirkleistung bleibt oft unsichtbar", "Care, Bildung, Ehrenamt, Weiterbildung und Stabilisierung erzeugen gesellschaftliche Wirkung, erscheinen aber häufig nicht als Einkommen oder Investition."],
+  ];
+  const policyCards = [
+    ["Rahmen schaffen", "Automatisierung, Maschinenwertschöpfung, Wirkungseinkommen und Wirkungsfonds rechtlich und demokratisch gestaltbar machen."],
+    ["Finanzierung an Wirkung koppeln", "Sozialfinanzierung nicht allein über Lohnarbeit organisieren, sondern Wertschöpfung, Wirkung und Transformationsschutz berücksichtigen."],
+    ["Datenzugang und Datenschutz sichern", "Arbeitsmarkt-, Automatisierungs- und Wirkungsdaten nutzen, ohne Personen-Scoring, Überwachung oder Diskriminierung zu erzeugen."],
+    ["Piloträume ermöglichen", "Kommunen, Branchen, Sozialversicherungen und Unternehmen mit klaren Schutzregeln erproben lassen."],
+    ["Evaluation und Korrektur festlegen", "Beitragslücken, Verdrängung, Weiterbildung und Fondslogik regelmäßig prüfen und demokratisch korrigieren."],
+    ["Grundrechte schützen", "Wirkungsdaten bereiten Entscheidungen vor, ersetzen aber keine Mitbestimmung, keinen Rechtsschutz und keine politische Verantwortung."],
+  ];
   page({
     rel: "wirkungsfelder/arbeit-einkommen/index.html",
     title: "Arbeit & Einkommen | Automatisierung und Wirkungseinkommen",
     description: "Arbeit, Einkommen, Automatisierung, Maschinenleistung, Wirkungseinkommen, Sozialabgaben-Entkopplung und Wirkungsfonds wirkungsökonomisch einordnen.",
-    body: (b) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Automatisierung, Maschinenleistung, Wirkungseinkommen und soziale Sicherung neu rückkoppeln.</p><p>Die alte Ordnung koppelt Einkommen, soziale Sicherung, Renten und staatliche Finanzierung an menschliche Erwerbsarbeit. KI, Robotik, Plattformen und Automatisierung verändern diese Grundlage. Die Wirkungsökonomie antwortet nicht mit Maschinenfeindschaft, sondern mit Rückkopplung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner öffnen</a><a class="btn btn-secondary" href="#publikationszugang">Online lesen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Nicht die Maschine ist das Problem.</h2><p class="card-text">Das Problem ist eine Ordnung, die soziale Sicherung fast nur an menschlicher Arbeit festmacht.</p></aside></div></section>${publicationAccess(b)}${toc(t)}<section class="section" aria-labelledby="online-volltext"><div class="prose">${h2("online-volltext", "Portaltext online lesen")} ${html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Unterbereiche online lesen")}</div>${cards(b, pages.map(([slug, title, text]) => [title, "Detailkonzept + Dossier", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Automatisierung, Maschinenleistung, Wirkungseinkommen und soziale Sicherung neu rückkoppeln.</p><p>Die alte Ordnung koppelt Einkommen, soziale Sicherung, Renten und staatliche Finanzierung stark an menschliche Erwerbsarbeit. KI, Robotik, Plattformen und Automatisierung verändern diese Grundlage. Die Wirkungsökonomie fragt, wie Wertschöpfung, Teilhabe und soziale Sicherung neu rückgekoppelt werden können.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner nutzen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Nicht die Maschine ist das Problem.</h2><p class="card-text">Das Problem ist eine Ordnung, die soziale Sicherung fast nur an menschlicher Arbeit festmacht.</p></aside></div></section>
+<section class="section" aria-labelledby="warum-wichtig"><div class="section-header"><p class="hero-kicker">Warum wichtig?</p>${h2("warum-wichtig", "Warum Arbeit und Einkommen ein Wirkungsfeld sind")}<p>Arbeit, Einkommen und Automatisierung entscheiden darüber, ob Produktivität in Teilhabe, Sicherheit und Zukunftsfähigkeit übersetzt wird.</p></div><div class="card-grid three">${whyCards.map(([title, text]) => `<article class="card"><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div></section>
+<section class="section" aria-labelledby="alte-logik"><div class="section-header"><p class="hero-kicker">Systemwechsel</p>${h2("alte-logik", "Alte Logik vs. WÖk-Logik")}</div><div class="comparison-grid"><article class="card"><p class="card-kicker">Alte Logik</p><ul><li>Arbeit wird vor allem als Erwerbsarbeit gezählt.</li><li>Soziale Sicherung hängt an Lohnsumme und Beiträgen.</li><li>Automatisierung erscheint als Effizienz- oder Jobrisiko.</li><li>Care, Bildung und Gemeinwesen bleiben oft unterbewertet.</li><li>Kapital- und Maschinenwertschöpfung tragen weniger direkt zur Sozialbasis bei.</li></ul></article><article class="card"><p class="card-kicker">WÖk-Logik</p><ul><li>Entscheidend ist die tatsächliche Zustandsveränderung.</li><li>Wertschöpfung wird mit Wirkung und sozialer Stabilität rückgekoppelt.</li><li>Automatisierung wird nach Verdrängung, Entlastung und Beteiligung unterschieden.</li><li>Wirkleistung wird sichtbar, ohne Personen zu bewerten.</li><li>Fonds, Boni und Beiträge können Produktivitätsgewinne gesellschaftlich zurückführen.</li></ul></article></div></section>
+<section class="section" aria-labelledby="konzepte"><div class="section-header"><p class="hero-kicker">Zentrale Konzepte</p>${h2("konzepte", "Konzepte kurz erklärt")}<p>Diese Konzepte sind Einstiege. Die Langfassungen stehen unten als Arbeitsmaterial und auf eigenen Vertiefungsseiten.</p></div>${cards(b, conceptCards, "Konzept lesen")}</section>
+<section class="section" aria-labelledby="politik"><div class="section-header"><p class="hero-kicker">Umsetzung</p>${h2("politik", "Was muss Politik hier tun?")}<p>Politik muss einen Rahmen schaffen, der Automatisierung ermöglicht, soziale Sicherung stabilisiert und Menschen vor Überwachung oder Personenbewertung schützt.</p></div><div class="card-grid three">${policyCards.map(([title, text]) => `<article class="card"><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div></section>
+${toolRefs(b)}${referenceBlock(b)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefende Unterbereiche</p>${h2("unterbereiche", "Vertiefungen lesen")}</div>${cards(b, pages.map(([slug, title, text]) => [title, "Vertiefung", text, `wirkungsfelder/arbeit-einkommen/${slug}/`, "Vertiefung lesen"]))}</section>${crossLinks(b)}${bookBlock(b)}${sourceBlock()}<section class="section" aria-labelledby="arbeitsmaterial"><div class="section-header"><p class="hero-kicker">Arbeitsmaterial</p>${h2("arbeitsmaterial", "Vertiefung und Arbeitsmaterial")}<p>Für längere Onlinefassungen, Konzeptpapier, Dossiers und ergänzende Materialien.</p></div>${cards(b, [["Konzeptpapier", "Onlinefassung", "Grundlogik des Wirkungsfelds Arbeit & Einkommen.", "wirkungsfelder/arbeit-einkommen/konzeptpapier/", "Onlinefassung lesen"], ["Gesamtdossier", "Dossier", "Arbeitsdossier mit Modelllogik, Annahmen, Quellen und Umsetzungspfaden.", "wirkungsfelder/arbeit-einkommen/gesamtdossier/", "Dossier lesen"], ["Detailkonzepte", "Vertiefung", "Langfassung der Detailkonzepte für die Unterbereiche.", "wirkungsfelder/arbeit-einkommen/detailkonzepte/", "Konzept lesen"], ["Einzeldossiers", "Dossier", "Einzeldossiers mit Praxisfragen, Bewertungslogik und Grenzen.", "wirkungsfelder/arbeit-einkommen/dossiers/", "Dossier lesen"]])}</section>${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
   });
 }
 
@@ -320,7 +354,7 @@ function methodToolPage(title, summary) {
       <article class="card"><h3 class="card-title">Wie weiter?</h3><p class="card-text">Für eine modellhafte Berechnung steht der Rechner als Demo bereit; rechtliche und politische Ausgestaltung bleiben demokratische Aufgabe.</p></article>
     </div>
     <div class="portal-card-actions no-print">
-      <a class="btn btn-primary" href="../../erleben/automatisierungs-wirkungseinkommensrechner/">Rechner öffnen</a>
+      <a class="btn btn-primary" href="../../erleben/automatisierungs-wirkungseinkommensrechner/">Rechner nutzen</a>
     </div>
   </section>`;
 }
@@ -432,9 +466,9 @@ function automationCalculator(b) {
         <label>Arbeitnehmer-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.0" data-auto-input="employeeRate"></label>
         <label>erwartete Automatisierungsquote in Prozent<input type="range" min="0" max="100" step="1" value="35" data-auto-input="automationRate"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">-</strong></div>
-          <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">-</strong></div>
-          <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">-</strong></div>
+          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">wird berechnet</strong></div>
         </div>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, welcher Finanzierungsanteil im alten System gefährdet wäre, wenn Lohnarbeit wegfällt.</p>
         <p class="why-relevant"><strong>Warum relevant?</strong> Sozialstaatliche Stabilität hängt heute stark an Lohnsumme und Erwerbsarbeit.</p>
@@ -447,8 +481,8 @@ function automationCalculator(b) {
         <label>${termTip("Rückkopplungsquote", "Der Anteil automatisierter Wertschöpfung, der in soziale Sicherung oder Wirkungsfonds zurückgeführt wird.")} in Prozent<input type="number" min="0" max="100" step="0.1" value="6" data-auto-input="feedbackRate"></label>
         <label>${termTip("Wirkungsfaktor", "Ein Zu- oder Abschlag, der zeigt, ob Automatisierung eher entlastet, neutral wirkt, verdrängt oder extraktiv ist.")} von -3 bis +3<input type="range" min="-3" max="3" step="1" value="0" data-auto-input="impactFactor"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>Beitrag</span><strong data-auto-result="machineContribution">-</strong></div>
-          <div class="impact-kpi"><span>Faktor</span><strong data-auto-result="impactFactorLabel">-</strong></div>
+          <div class="impact-kpi"><span>Beitrag</span><strong data-auto-result="machineContribution">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Faktor</span><strong data-auto-result="impactFactorLabel">wird berechnet</strong></div>
         </div>
         <p class="card-text" data-auto-result="impactReason">Der Wirkungsfaktor verändert den Beitrag je nach Entlastung oder Belastung.</p>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, welcher Betrag modellhaft aus automatisierter Wertschöpfung zurückgeführt werden könnte.</p>
@@ -463,9 +497,9 @@ function automationCalculator(b) {
         <label>Anteil Produktivitätsgewinn an Beschäftigte / Kund:innen / Fonds<input type="number" min="0" max="100" step="1" value="35" data-auto-input="sharedGain"></label>
         <label>regionale Stabilisierung<select data-auto-input="regionalStability"><option value="low">niedrig</option><option value="medium" selected>mittel</option><option value="high">hoch</option></select></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>Transformationsbonus</span><strong data-auto-result="bonus">-</strong></div>
-          <div class="impact-kpi"><span>reduzierter Beitrag</span><strong data-auto-result="reducedContribution">-</strong></div>
-          <div class="impact-kpi"><span>Wirkungsprofil</span><strong data-auto-result="profile">-</strong></div>
+          <div class="impact-kpi"><span>Transformationsbonus</span><strong data-auto-result="bonus">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>reduzierter Beitrag</span><strong data-auto-result="reducedContribution">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Wirkungsprofil</span><strong data-auto-result="profile">wird berechnet</strong></div>
         </div>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, ob Automatisierung sozial abgefedert wird oder eher verdrängend wirkt.</p>
         <p class="why-relevant"><strong>Warum relevant?</strong> Die WÖk unterscheidet zwischen entlastender und verdrängender Automatisierung.</p>
@@ -478,10 +512,10 @@ function automationCalculator(b) {
         <label>Wirkungsbonus<input type="number" min="0" step="50" value="250" data-auto-input="impactBonus"></label>
         <label>Fondsanteil (${termTip("Wirkungsfonds", "Ein Fonds, der Rückflüsse aus Wertschöpfung in Bildung, Sicherung, Weiterbildung und Transformation lenken könnte.")})<input type="number" min="0" step="50" value="150" data-auto-input="fundShare"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>Gesamteinkommen</span><strong data-auto-result="totalIncome">-</strong></div>
-          <div class="impact-kpi"><span>Grundsicherheit</span><strong data-auto-result="baseShare">-</strong></div>
-          <div class="impact-kpi"><span>Markt</span><strong data-auto-result="marketShare">-</strong></div>
-          <div class="impact-kpi"><span>Wirkung/Fonds</span><strong data-auto-result="impactShare">-</strong></div>
+          <div class="impact-kpi"><span>Gesamteinkommen</span><strong data-auto-result="totalIncome">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Grundsicherheit</span><strong data-auto-result="baseShare">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Markt</span><strong data-auto-result="marketShare">wird berechnet</strong></div>
+          <div class="impact-kpi"><span>Wirkung/Fonds</span><strong data-auto-result="impactShare">wird berechnet</strong></div>
         </div>
         <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt ein mögliches Einkommensmodell, das nicht nur Erwerbsarbeit berücksichtigt, sondern auch Grundsicherheit, Wirkung und gesellschaftliche Rückkopplung.</p>
         <p class="why-relevant"><strong>Warum relevant?</strong> Einkommen wird als Teilhabe-, Sicherungs- und Wirkungsfrage lesbar, nicht nur als Lohnfrage.</p>
@@ -569,7 +603,7 @@ function workLibrary() {
     description: "Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodenmaterial zum Wirkungsfeld Arbeit & Einkommen.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}werkstatt/">Werkstatt</a></nav><p class="hero-kicker">Arbeitsbibliothek</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodenmaterial.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Wirkungsfeld öffnen</a></div></div></section>${publicationAccess(b, "Dokumente online lesen")}<section class="section" aria-labelledby="docs"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("docs", "Detailkonzepte und Einzeldossiers")}</div>${cards(b, pages.map(([slugName, title, summary]) => [title, "Online-Volltext", summary, `wirkungsfelder/arbeit-einkommen/${slugName}/`]))}</section>${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}werkstatt/">Werkstatt</a></nav><p class="hero-kicker">Arbeitsbibliothek</p><h1>Arbeit & Einkommen</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodenmaterial.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zur Übersicht</a></div></div></section>${publicationAccess(b, "Dokumente online lesen")}<section class="section" aria-labelledby="docs"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("docs", "Detailkonzepte und Einzeldossiers")}</div>${cards(b, pages.map(([slugName, title, summary]) => [title, "Onlinefassung", summary, `wirkungsfelder/arbeit-einkommen/${slugName}/`]))}</section>${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx"])}`,
   });
 }
 

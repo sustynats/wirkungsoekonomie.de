@@ -51,7 +51,7 @@ const bookAnchors = [
   ["Kapitel 32 - Benchmarks, Skalen und Scorecards", "referenz/kapitel-032-benchmarks-skalen-und-scorecards/"],
   ["Kapitel 39 - Wirkungshaushalt und öffentliche Mittel", "referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/"],
   ["Kapitel 52 - Konsumwirkung und Verbraucherinformation", "referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/"],
-  ["Kapitel 70 - Wohnen als Wirkungsfaktor", "referenz/kapitel-070-wohnen-als-wirkungsfaktor/"],
+  ["Kapitel 70 - Wohnen", "referenz/kapitel-070-wohnen/"],
   ["Working-Paper Wohnungsmarkt", "dokumente/wp-wohnungsmarkt/"],
   ["Systemmodell der Wirkungsökonomie", "dokumente/systemmodell-der-wirkungsoekonomie/"],
 ];

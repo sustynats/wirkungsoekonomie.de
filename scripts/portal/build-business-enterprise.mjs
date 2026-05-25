@@ -136,6 +136,21 @@ function exists(rel) {
 function read(rel) {
   return fs.readFileSync(path.join(ROOT, rel), "utf8");
 }
+function cleanPublicMarkdown(markdown) {
+  return String(markdown)
+    .split(/\r?\n/)
+    .filter((line) => !/Arbeitsfassung für Onlinefassung|Arbeitsfassung für Webfassung|Arbeitsfassung für .*Portal/i.test(line))
+    .join("\n")
+    .replace(/Unterbereiche des Portals/g, "Zentrale Unterbereiche")
+    .replace(/Online- und Dossierlogik/g, "Vertiefung und Dossierlogik")
+    .replace(/Interne und externe Referenzen/g, "Referenzen und Quellen")
+    .replace(/Die Portalseite erklärt/g, "Die Übersicht erklärt")
+    .replace(/Portal und/g, "Umsetzung und")
+    .replace(/Portal-/g, "Bereichs-")
+    .replace(/Portal/g, "Übersicht")
+    .replace(/HTML\/Volltext/g, "HTML")
+    .replace(/PDF dienen/g, "PDFs dienen");
+}
 function write(rel, content) {
   const out = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(out), { recursive: true });
@@ -238,7 +253,7 @@ function tocBlock(toc) {
   return `<nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol>${toc.slice(0, 22).map((x) => `<li class="toc-level-${x.level}"><a href="#${x.id}">${escapeHtml(x.text)}</a></li>`).join("")}</ol></nav>`;
 }
 function citationNotice(route) {
-  return `<aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Online-Volltext ist der Hauptzugang. Abschnittsanker können direkt zitiert werden; Downloads bleiben ergänzende Export- und Archivfassungen.</p><p><a class="text-link" href="${route}">Kanonische Seitenadresse öffnen</a></p></aside>`;
+  return `<aside class="citation-note" role="note"><p class="card-kicker">Onlinefassung</p><h2>Du liest die Onlinefassung.</h2><p>Abschnittsanker können direkt zitiert werden. Ergänzende Downloadfassungen stehen am Ende der Seite.</p></aside>`;
 }
 function statusMeta(status) {
   return "";
@@ -266,11 +281,11 @@ function bookBlock(base) {
   return `<section class="section" aria-labelledby="book-anchors"><div class="section-header"><p class="hero-kicker">Online-Buch</p>${sectionTitle("book-anchors", "Anker im Online-Buch")}</div><div class="model-strip">${bookAnchors.map(([label, link]) => `<a href="${href(base, link)}">${escapeHtml(label)}</a>`).join("")}</div></section>`;
 }
 function toolGrid(base) {
-  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Werkzeuge</p>${sectionTitle("tools", "Werkzeuge in diesem Bereich")}<p>Werkzeuge erklären Methoden. Entscheidungen bleiben unternehmerisch, rechtlich und demokratisch verantwortet.</p></div>${cardGrid(base, tools.map(([title, kicker, text, link]) => ({ title, kicker, text, href: link, label: "Öffnen" })))}</section>`;
+  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Werkzeuge</p>${sectionTitle("tools", "Werkzeuge in diesem Bereich")}<p>Werkzeuge erklären Methoden. Entscheidungen bleiben unternehmerisch, rechtlich und demokratisch verantwortet.</p></div>${cardGrid(base, tools.map(([title, kicker, text, link]) => ({ title, kicker, text, href: link, label: link.includes("erleben/") ? "Tool testen" : "Methodik lesen" })))}</section>`;
 }
 function downloadBlock(base, items) {
   const links = items.filter((x) => x.href && exists(x.href));
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${sectionTitle("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word-Dateien bleiben Export und Archiv.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.map((x) => `<a class="btn btn-secondary" href="${href(base, x.href)}">${escapeHtml(x.label)}</a>`).join("")}</div></div></section>`;
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${sectionTitle("downloads", "Vertiefung und Arbeitsmaterial")}<p>Ergänzende Downloadfassungen und Druckfunktion stehen hier am Ende der Seite.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.map((x) => `<a class="btn btn-secondary" href="${href(base, x.href)}">${escapeHtml(x.label)}</a>`).join("")}</div></div></section>`;
 }
 
 function docName(prefix, slug) {
@@ -283,18 +298,18 @@ function areaBySlug(slug) {
 }
 
 function fulltextPage({ rel, title, subtitle, mdRel, status, downloads = [], cards = [], searchSection = "Wirkungsfelder", searchType = "Volltext", backHref = "wirkungsfelder/wirtschaft-unternehmen/" }) {
-  const rendered = mdToHtml(read(mdRel));
+  const rendered = mdToHtml(cleanPublicMarkdown(read(mdRel)));
   page({
     rel,
     title: `${title} | Wirkungsökonomie`,
     description: subtitle,
     searchSection,
     searchType,
-    body: (base, route) => `${hero(base, { kicker: status, title, subtitle, text: subtitle, action: `<a class="btn btn-primary" href="${href(base, backHref)}">Portal öffnen</a>` })}
+    body: (base, route) => `${hero(base, { kicker: status.replace(/\/\s*Online-Volltext/g, ""), title, subtitle, text: subtitle, action: `<a class="btn btn-primary" href="${href(base, backHref)}">Zur Übersicht</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta(status)}</section>
     <section class="section narrow">${tocBlock(rendered.toc)}</section>
-    <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("online-volltext", "Online-Volltext")}${rendered.html}</article></section>
+    <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("online-volltext", "Onlinefassung")}${rendered.html}</article></section>
     ${cards.length ? `<section class="section" aria-labelledby="related">${sectionTitle("related", "Verwandte Online-Bereiche")}${cardGrid(base, cards)}</section>` : ""}
     ${toolGrid(base)}
     ${politicalBlock()}
@@ -317,7 +332,6 @@ function portalPage() {
       action: `<a class="btn btn-primary" href="${href(base, "werkstatt/dossiers/wirtschaft-unternehmen/")}">Gesamtdossier lesen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Portal")}</section>
     <section class="section" aria-labelledby="subareas"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${sectionTitle("subareas", "Zentrale Unterbereiche")}<p>Jeder Unterbereich hat ein Detailkonzept und ein Einzeldossier als Online-Volltext.</p></div>${cardGrid(base, areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" })))}</section>
     ${toolGrid(base)}
     ${politicalBlock()}
@@ -337,7 +351,7 @@ function businessPages() {
     title: "Konzeptpapier Wirtschaft & Unternehmen",
     subtitle: "Unternehmen als Wirkungssysteme im Rahmen der Wirkungsökonomie.",
     mdRel: `${SRC}/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.md`,
-    status: "Konzeptpapier / Online-Volltext",
+    status: "Konzeptpapier",
     downloads: [{ label: "Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" }],
   });
   fulltextPage({
@@ -345,7 +359,7 @@ function businessPages() {
     title: "Gesamtdossier Wirtschaft & Unternehmen",
     subtitle: "Beispiele, Datenquellen, Berechnungslogik, Tools und politische Anschlussfähigkeit.",
     mdRel: `${SRC}/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.md`,
-    status: "Gesamtdossier / Online-Volltext",
+    status: "Gesamtdossier",
     searchSection: "Werkstatt",
     searchType: "Dossier",
     downloads: [{ label: "Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" }],
@@ -359,7 +373,7 @@ function businessPages() {
       title: `Detailkonzept ${title}`,
       subtitle: text,
       mdRel: `${SRC}/${detailName}.md`,
-      status: "Detailkonzept / Online-Volltext",
+      status: "Detailkonzept",
       downloads: [{ label: "Detailkonzept Word", href: `assets/downloads/${detailName}.docx` }],
       cards: [{ title: `Einzeldossier ${title}`, text: "Vertiefung mit Beispielen, Datenquellen und Umsetzungshinweisen.", href: `wirkungsfelder/wirtschaft-unternehmen/dossiers/${slug}/`, label: "Einzeldossier lesen" }],
     });
@@ -368,7 +382,7 @@ function businessPages() {
       title: `Einzeldossier ${title}`,
       subtitle: text,
       mdRel: `${SRC}/${dossierName}.md`,
-      status: "Einzeldossier / Online-Volltext",
+      status: "Einzeldossier",
       downloads: [{ label: "Einzeldossier Word", href: `assets/downloads/${dossierName}.docx` }],
       cards: [{ title: `Detailkonzept ${title}`, text: "Konzeptuelle Grundlegung des Unterbereichs.", href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" }],
     });
@@ -380,13 +394,12 @@ function demoPage() {
   page({
     rel: "erleben/unternehmens-wirkungscheck/index.html",
     title: "Unternehmens-Wirkungscheck | Wirkungsökonomie erleben",
-    description: "Tool-Spezifikation und erste Demo-Struktur für Unternehmenswirkung, Risiko, Lieferketten, KII und Transformation.",
+    description: "Methodische Demo-Struktur für Unternehmenswirkung, Risiko, Lieferketten, KII und Transformation.",
     searchSection: "Erleben",
     searchType: "Demo",
-    body: (base, route) => `${hero(base, { kicker: "Demo · Spezifikation", title: "Unternehmens-Wirkungscheck", subtitle: "Unternehmenswirkung, Wirkungsrisiko und Transformationsreife modellhaft prüfen.", text: "Die erste Version ist als Online-Spezifikation angelegt. Sie ist keine Prüfung, keine Beratung und keine amtliche Einstufung.", action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wirtschaft-unternehmen/")}">Portal öffnen</a>` })}
+    body: (base, route) => `${hero(base, { kicker: "Methodik", title: "Unternehmens-Wirkungscheck", subtitle: "Unternehmenswirkung, Wirkungsrisiko und Transformationsreife modellhaft verstehen.", text: "Diese Seite erklärt die Methodik. Sie ist keine Prüfung, keine Beratung und keine amtliche Einstufung.", action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wirtschaft-unternehmen/")}">Zur Übersicht</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Tool-Spezifikation / Demo in Vorbereitung")}</section>
-    <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("tool-spezifikation", "Tool-Spezifikation")}${spec.html}</article></section>
+    <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("methodik", "Methodik und Annahmen")}${spec.html}</article></section>
     ${toolGrid(base)}
     ${politicalBlock()}
     ${sdgBlock()}
@@ -399,12 +412,11 @@ function toolPage() {
   page({
     rel: "werkzeuge/unternehmens-wirkungscheck/index.html",
     title: "Unternehmens-Wirkungscheck | Wirkungsökonomie",
-    description: "Kanonische Werkzeugseite für den Unternehmens-Wirkungscheck als kontextbezogenes Prüf- und Lernwerkzeug.",
+    description: "Werkzeugseite für den Unternehmens-Wirkungscheck als kontextbezogenes Prüf- und Lernwerkzeug.",
     searchSection: "Werkzeuge",
     searchType: "Werkzeug",
-    body: (base, route) => `${hero(base, { kicker: "Methodenregister", title: "Unternehmens-Wirkungscheck", subtitle: "Wirkungsprofil, Risikologik, Lieferkette, KII und Transformation.", text: "Der Check macht Unternehmenswirkung sichtbar, ohne Unternehmen automatisch moralisch zu sortieren. Bewertet werden Wirkungsräume, Datenqualität, Risiken und Veränderungspfade.", action: `<a class="btn btn-primary" href="${href(base, "erleben/unternehmens-wirkungscheck/")}">Demo-Spezifikation öffnen</a>` })}
+    body: (base, route) => `${hero(base, { kicker: "Methode", title: "Unternehmens-Wirkungscheck", subtitle: "Wirkungsprofil, Risikologik, Lieferkette, KII und Transformation.", text: "Der Check macht Unternehmenswirkung sichtbar, ohne Unternehmen automatisch moralisch zu sortieren. Bewertet werden Wirkungsräume, Datenqualität, Risiken und Veränderungspfade.", action: `<a class="btn btn-primary" href="${href(base, "erleben/unternehmens-wirkungscheck/")}">Methodik lesen</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Kanonische Toolseite / Webfassung")}</section>
     <section class="section">${cardGrid(base, [
       { kicker: "Modul", title: "Wirkungsprofil", text: "Ordnet Geschäftsmodell, Produkte, Lieferketten, Führung und Risiko ein." },
       { kicker: "Modul", title: "ERM-Erweiterung", text: "Verbindet Wirkungsschwere, Eintrittswahrscheinlichkeit, Rückkopplungsnähe und Datenunsicherheit." },
@@ -428,7 +440,7 @@ function retroDetailPages() {
         description: `Rückwirkend ergänztes Online-Detailkonzept zu ${title}.`,
         searchSection: group.label.includes("Impact") ? "Werkzeuge" : "Wirkungsfelder",
         searchType: "Detailkonzept",
-        body: (base, route) => `${hero(base, { kicker: `Fachvertiefung · ${group.label}`, title: `${title}`, subtitle: "Online-Volltext und zitierfähige Fassung.", text: `Diese Fachvertiefung ergänzt den bestehenden Bereich ${group.label}. Sie ordnet Zweck, Einsatz, Datenbedarf, Grenzen und politische Ausgestaltungsspielräume ein.`, action: `<a class="btn btn-primary" href="${href(base, `${group.base}/dossiers/${slug}/`)}">Dossier öffnen</a>` })}
+        body: (base, route) => `${hero(base, { kicker: `Fachvertiefung · ${group.label}`, title: `${title}`, subtitle: "Onlinefassung und zitierfähige Fassung.", text: `Diese Fachvertiefung ergänzt den bestehenden Bereich ${group.label}. Sie ordnet Zweck, Einsatz, Datenbedarf, Grenzen und politische Ausgestaltungsspielräume ein.`, action: `<a class="btn btn-primary" href="${href(base, `${group.base}/dossiers/${slug}/`)}">Dossier lesen</a>` })}
         <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
         <section class="section narrow">${statusMeta("Rückwirkend ergänztes Detailkonzept / Webfassung")}</section>
         <section class="section article-section"><article class="article-body fulltext-reader">
@@ -454,16 +466,16 @@ function workshopPages() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/index.html",
     title: "Wirtschaft & Unternehmen in der Arbeitsbibliothek | Werkstatt",
-    description: "Arbeitsbibliothek zu Wirtschaft & Unternehmen: Konzept, Gesamtdossier, Detailkonzepte, Einzeldossiers, Tool-Spezifikation und Downloads.",
+    description: "Arbeitsbibliothek zu Wirtschaft & Unternehmen: Konzept, Gesamtdossier, Detailkonzepte, Einzeldossiers, Methodik und Downloads.",
     searchSection: "Werkstatt",
     searchType: "Arbeitsbibliothek",
-    body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek · Wirkungsfeld", title: "Wirtschaft & Unternehmen", subtitle: "Konzept, Dossiers, Detailkonzepte und Unternehmens-Wirkungscheck.", text: "Konzepte und Dossiers landen automatisch in der Werkstatt. Online lesen ist der Hauptzugang.", action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wirtschaft-unternehmen/")}">Portal öffnen</a>` })}
+    body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek · Wirkungsfeld", title: "Wirtschaft & Unternehmen", subtitle: "Konzept, Dossiers, Detailkonzepte und Unternehmens-Wirkungscheck.", text: "Diese Bibliothek bündelt Vertiefungen und Materialien zu Wirtschaft & Unternehmen.", action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wirtschaft-unternehmen/")}">Zur Übersicht</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section">${cardGrid(base, [
-      { title: "Portal Wirtschaft & Unternehmen", text: "Rang-4-Portal mit Unterbereichen.", href: "wirkungsfelder/wirtschaft-unternehmen/" },
+      { title: "Wirtschaft & Unternehmen", text: "Übersicht mit zentralen Unterbereichen.", href: "wirkungsfelder/wirtschaft-unternehmen/", label: "Zur Übersicht" },
       { title: "Konzeptpapier Wirtschaft & Unternehmen", text: "Konzeptpapier online lesbar.", href: "wirkungsfelder/wirtschaft-unternehmen/konzeptpapier/" },
       { title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Gesamtdossier online lesbar.", href: "werkstatt/dossiers/wirtschaft-unternehmen/" },
-      { title: "Unternehmens-Wirkungscheck", text: "Tool-Spezifikation und Demo-Struktur.", href: "erleben/unternehmens-wirkungscheck/" },
+      { title: "Unternehmens-Wirkungscheck", text: "Methodische Demo-Struktur.", href: "erleben/unternehmens-wirkungscheck/", label: "Methodik lesen" },
       ...areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/` })),
     ])}</section>
     ${downloadBlock(base, [
@@ -479,12 +491,12 @@ function workshopPages() {
     description: "Online lesbare Konzeptpapiere, Gesamtdossiers, Detailkonzepte und Einzeldossiers der Wirkungsökonomie.",
     searchSection: "Werkstatt",
     searchType: "Arbeitsbibliothek",
-    body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek", title: "Konzepte & Dossiers", subtitle: "Online lesen, zitieren, drucken, später exportieren.", text: "Konzepte, Detailkonzepte und Dossiers landen automatisch in der Werkstatt. Downloads sind Archiv und Export, nicht Hauptzugang.", action: `<a class="btn btn-primary" href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek öffnen</a>` })}
+    body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek", title: "Konzepte & Dossiers", subtitle: "Online lesen, zitieren und drucken.", text: "Konzepte, Detailkonzepte und Dossiers sind als Onlinefassungen und Arbeitsmaterial geordnet.", action: `<a class="btn btn-primary" href="${href(base, "werkstatt/arbeitsbibliothek/")}">Zur Arbeitsbibliothek</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section">${cardGrid(base, [
       { kicker: "", title: "Produkte & Konsum", text: "Produktbesteuerung durch Wirkung, Dossier und Detailkonzepte.", href: "wirkungsfelder/produkte-konsum/" },
       { kicker: "", title: "Impact Controlling", text: "Methodenportal mit Dossier und Detailkonzepten.", href: "werkzeuge/impact-controlling/" },
-      { kicker: "", title: "Staat, Recht & Demokratie", text: "Portal, Gesetzesarchitektur und Dossiers.", href: "wirkungsfelder/staat-recht-demokratie/" },
+      { kicker: "", title: "Staat, Recht & Demokratie", text: "Gesetzesarchitektur und Dossiers.", href: "wirkungsfelder/staat-recht-demokratie/" },
       { kicker: "", title: "Wirtschaft & Unternehmen", text: "Unternehmen als Wirkungssysteme mit Detailkonzepten und Dossiers.", href: "wirkungsfelder/wirtschaft-unternehmen/" },
       { kicker: "", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Gesamtdossier online lesen.", href: "werkstatt/dossiers/wirtschaft-unternehmen/" },
     ])}</section>
