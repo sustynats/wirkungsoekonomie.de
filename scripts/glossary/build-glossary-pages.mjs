@@ -57,14 +57,16 @@ function renderFooter(base) {
     .replace("{{FOOTER_LEGAL_NAV}}", (navigation.footerLegal || []).map((item) => navLink(item, base)).join("\n"));
 }
 
-function pageShell(title, body, depth = "") {
+function pageShell(title, body, depth = "", options = {}) {
+  const metaTitle = options.metaTitle || `${title} - Wirkungsökonomie`;
+  const metaDescription = options.metaDescription || `Begriffsreferenz der Wirkungsökonomie: ${title}.`;
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${esc(title)} - Wirkungsökonomie</title>
-    <meta name="description" content="Begriffsreferenz der Wirkungsökonomie: ${esc(title)}.">
+    <title>${esc(metaTitle)}</title>
+    <meta name="description" content="${esc(metaDescription)}">
     <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260524-begriffe-css-fix">
   </head>
   <body>
@@ -132,6 +134,82 @@ function termLink(slug) {
 function listItems(values, fallback = "Keine Einträge") {
   if (!Array.isArray(values) || values.length === 0) return `<p>${esc(fallback)}</p>`;
   return `<ul class="clean-list">${values.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
+}
+
+function termExtraBlock(term) {
+  if (term.termId !== "mensch-planet-demokratie") return "";
+  return `<section class="term-summary-card" aria-labelledby="sdg-context-title">
+          <h2 id="sdg-context-title">Warum nicht einfach nur SDGs sagen?</h2>
+          <p>Die SDGs und die Agenda 2030 sind der globale Referenzrahmen. Sie sind fachlich wichtig und politisch anschlussfähig. In der öffentlichen Kommunikation sind sie jedoch oft zu abstrakt. Viele Menschen kennen weder die Agenda 2030 noch die Bedeutung der einzelnen SDGs.</p>
+          <p>Die Wirkungsökonomie nutzt deshalb den Dreiklang Mensch, Planet und Demokratie. Er macht verständlich, was die Zielstruktur bedeutet: gutes Leben und Teilhabe für Menschen, Schutz und Regeneration des Planeten sowie starke demokratische Institutionen, Medienqualität, Rechtsstaatlichkeit und gesellschaftlichen Zusammenhalt.</p>
+          <p>SDG+ ist keine UN-Kategorie. SDG+ ist eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+          <p>Mensch, Planet und Demokratie ist damit die kommunikative Übersetzung von SDGs, Agenda 2030 und SDG+.</p>
+          <div class="table-wrap" role="region" aria-label="Verhältnis von Referenzrahmen, Übersetzung und Zielgröße" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ebene</th>
+                  <th>Bezeichnung</th>
+                  <th>Bedeutung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fachlicher Referenzrahmen</td>
+                  <td><a class="text-link" href="../../begriffe/sdgs/">SDGs</a>, <a class="text-link" href="../../begriffe/agenda-2030/">Agenda 2030</a> und <a class="text-link" href="../../begriffe/sdg-plus/">SDG+</a></td>
+                  <td>Globale Nachhaltigkeitsziele plus transparente WÖk-Erweiterung für demokratische Voraussetzungen nachhaltiger Entwicklung.</td>
+                </tr>
+                <tr>
+                  <td>Kommunikative Übersetzung</td>
+                  <td>Mensch, Planet und Demokratie</td>
+                  <td>Drei verständliche Oberbegriffe für soziale, ökologische und demokratische Wirkung.</td>
+                </tr>
+                <tr>
+                  <td>Zielgröße der Wirkungsökonomie</td>
+                  <td><a class="text-link" href="../../begriffe/positive-netto-wirkung/">Positive Netto-Wirkung</a> für Mensch, Planet und Demokratie</td>
+                  <td>Handlungen, Produkte, Institutionen, Kapitalflüsse und Entscheidungen werden daran ausgerichtet, diese drei Dimensionen zu stärken.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>`;
+}
+
+function termLead(term) {
+  if (term.termId === "mensch-planet-demokratie") {
+    return "Mensch, Planet und Demokratie sind die verständliche Zusammenfassung der SDGs, der Agenda 2030 und der SDG+-Erweiterung der Wirkungsökonomie. Der Dreiklang übersetzt den fachlichen Referenzrahmen in eine Sprache, die öffentlich anschlussfähig ist.";
+  }
+  return term.shortDefinition;
+}
+
+function termSummary(term) {
+  if (term.termId === "mensch-planet-demokratie") {
+    return "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst. Fachlich bleibt der Referenzrahmen SDGs, Agenda 2030 und SDG+. Kommunikativ wird daraus: Wirkung für Mensch, Planet und Demokratie.";
+  }
+  return term.hoverDefinition;
+}
+
+function termDefinitionHtml(term) {
+  if (term.termId === "mensch-planet-demokratie") {
+    return `<p>Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+            <p>Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele. Sie sind die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.</p>`;
+  }
+  return `<p>${esc(term.longDefinition)}</p>`;
+}
+
+function termWhyHtml(term) {
+  if (term.termId === "mensch-planet-demokratie") {
+    return `<p>Die SDGs und die Agenda 2030 sind fachlich zentral, aber in der Bevölkerung wenig bekannt. Für öffentliche Kommunikation braucht die Wirkungsökonomie deshalb eine einfache, klare und wiedererkennbare Sprache. Mensch, Planet und Demokratie macht sichtbar, worum es geht: nicht um abstrakte Zielnummern, sondern um Lebensqualität, ökologische Stabilität und demokratische Handlungsfähigkeit.</p>
+            <p>Der Dreiklang ersetzt die SDGs nicht. Er übersetzt sie.</p>`;
+  }
+  return `<p>${esc(term.preferredUsage || term.usageNote || "Der Begriff hilft, Wirkung, Bewertung und Rückkopplung präzise zu unterscheiden.")}</p>`;
+}
+
+function termUsageHtml(term) {
+  if (term.termId === "mensch-planet-demokratie") {
+    return `<p>Mensch, Planet und Demokratie nicht als Zusatz-Ziel neben den SDGs verwenden. Der Dreiklang ist die öffentliche Übersetzung des fachlichen Referenzrahmens und bleibt an Wirkung, Wirkungsbewertung und positive Netto-Wirkung gebunden.</p>`;
+  }
+  return `<p>${esc(term.usageNote)}</p>`;
 }
 
 function detailLinks(term) {
@@ -216,33 +294,31 @@ for (const term of data.terms) {
         <header class="term-detail-hero">
           <p class="hero-kicker">${esc(term.category || "Begriff")}</p>
           <h1>${esc(term.canonicalLabel)}</h1>
-          <p class="lead">${esc(term.shortDefinition)}</p>
-          <div class="term-meta-row" aria-label="Begriffsstatus">
-            <span>Status: ${esc(term.status)}</span>
+          <p class="lead">${esc(termLead(term))}</p>
+          <div class="term-meta-row" aria-label="Begriffsinformation">
             <span>Version ${esc(term.version)}</span>
-            <span>Review: ${esc(term.reviewStatus)}</span>
           </div>
           <div class="term-action-row">${detailLinks(term)}</div>
         </header>
         <section class="term-summary-card" aria-labelledby="term-summary-title">
           <h2 id="term-summary-title">Auf einen Blick</h2>
-          <p>${esc(term.hoverDefinition)}</p>
+          <p>${esc(termSummary(term))}</p>
         </section>
         <div class="term-section-grid">
           <section class="term-section-card">
             <p class="section-eyebrow">Definition</p>
             <h2>Was bedeutet der Begriff?</h2>
-            <p>${esc(term.longDefinition)}</p>
+            ${termDefinitionHtml(term)}
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">Wirkungsökonomie</p>
             <h2>Warum ist das wichtig?</h2>
-            <p>${esc(term.preferredUsage || term.usageNote || "Der Begriff hilft, Wirkung, Bewertung und Rückkopplung präzise zu unterscheiden.")}</p>
+            ${termWhyHtml(term)}
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">Verwendung</p>
             <h2>So wird der Begriff genutzt</h2>
-            <p>${esc(term.usageNote)}</p>
+            ${termUsageHtml(term)}
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">Abgrenzung</p>
@@ -250,6 +326,7 @@ for (const term of data.terms) {
             ${listItems(term.doNotConfuseWith)}
           </section>
         </div>
+${termExtraBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
             <p class="section-eyebrow">Verknüpfungen</p>
@@ -272,11 +349,17 @@ for (const term of data.terms) {
         </section>
         <section class="meta-box">
           <h2>Version und Quelle</h2>
-          <p>Kategorie: ${esc(term.category || "Begriff")} · Status: ${esc(term.status)} · Version: ${esc(term.version)} · Review: ${esc(term.reviewStatus)}</p>
+          <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
           <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
         </section>
       </article>`;
-  fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../"));
+  const pageOptions = term.termId === "mensch-planet-demokratie"
+    ? {
+        metaTitle: "Mensch, Planet und Demokratie - verständliche Übersetzung von SDGs und SDG+",
+        metaDescription: "Mensch, Planet und Demokratie sind die drei Oberbegriffe, mit denen die Wirkungsökonomie SDGs, Agenda 2030 und SDG+ öffentlich verständlich zusammenfasst.",
+      }
+    : {};
+  fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 
 console.log(`Wrote glossary index and ${data.terms.length} term pages.`);

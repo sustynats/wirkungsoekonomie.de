@@ -193,7 +193,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "MPD"
     ],
-    "definition": "Mensch, Planet und Demokratie sind der Zielrahmen, an dem positive Netto-Wirkung ausgerichtet wird.",
+    "definition": "Mensch, Planet und Demokratie übersetzt SDGs, Agenda 2030 und SDG+ in drei verständliche Wirkungsdimensionen.",
     "url": "/begriffe/mensch-planet-demokratie/",
     "priority": 11,
     "allowedContexts": [

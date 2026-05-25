@@ -1,6 +1,12 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-05-23T23:52:44.986Z
+Stand: 2026-05-25T10:32:02.081Z
+
+## Agenda 2030
+
+Die Agenda 2030 ist der internationale Rahmen der Vereinten Nationen für nachhaltige Entwicklung.
+
+Die Agenda 2030 beschreibt weltweit verhandelte Zielräume für nachhaltige Entwicklung. Die Wirkungsökonomie nutzt diese Zielräume als Referenzrahmen, um positive, negative und neutrale Wirkung öffentlich nachvollziehbar einzuordnen.
 
 ## Archetyp
 
@@ -58,9 +64,9 @@ Die Global Reporting Initiative stellt Standards zur Offenlegung von Nachhaltigk
 
 ## Mensch, Planet und Demokratie
 
-Mensch, Planet und Demokratie bilden den normativen Wirkungsrahmen der Wirkungsökonomie.
+Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst.
 
-Der Rahmen erweitert die klassischen Nachhaltigkeitsziele um demokratische Korrekturfähigkeit, Rechtsstaatlichkeit, Diskursfähigkeit und institutionelles Vertrauen.
+Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung. Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele, sondern die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.
 
 ## NACE
 
@@ -140,11 +146,29 @@ SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionell
 
 SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind. SDG+ ist keine offizielle UN-Kategorie.
 
+## SDG-/SDG+-Referenzrahmen
+
+Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen SDGs mit SDG+ als transparenter WÖk-Erweiterung.
+
+Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen 17 Nachhaltigkeitsziele der Vereinten Nationen mit SDG+ als Wirkungsökonomie-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.
+
+## SDGs
+
+Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030.
+
+Die Sustainable Development Goals beschreiben Zielräume für Armut, Ernährung, Gesundheit, Bildung, Gleichstellung, Wasser, Energie, Arbeit, Industrie, Ungleichheit, Städte, Konsum, Klima, Ökosysteme, Frieden und Partnerschaften. Die Wirkungsökonomie nutzt sie als Referenzrahmen, nicht als dekorative Ziel-Liste.
+
 ## Social Credit
 
 Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.
 
 Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, öffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhänge.
+
+## Spekulationslogik
+
+Spekulationslogik bezeichnet Wertsteigerung, die aus Knappheit, Nichtnutzung, Intransparenz oder Verdrängung entsteht.
+
+Die Wirkungsökonomie unterscheidet legitime Rendite aus guter Wohnwirkung von problematischer Spekulationslogik. Kritisch wird Wertsteigerung, wenn sie Wohnraum seiner Lebensfunktion entzieht oder negative Wirkung unsichtbar hält.
 
 ## Stranded Assets
 
@@ -163,6 +187,12 @@ Transformational Social Return on Investment ist ein Instrument zur Betrachtung 
 Transformationswirkung verändert Systemlogiken, Standards, Anreize oder Handlungspfade.
 
 Transformationswirkung beschreibt, ob eine Maßnahme Strukturen, Märkte, Regeln, Technologien oder kulturelle Muster so verändert, dass positive Netto-Wirkung wahrscheinlicher wird.
+
+## Warmmietenneutralität
+
+Warmmietenneutralität bedeutet, dass Sanierung ökologische Wirkung erzeugt, ohne die reale Wohnkostenbelastung zu erhöhen.
+
+In der Wirkungsökonomie ist Sanierung dann sozial tragfähig, wenn Klimawirkung, Betriebskosten, Förderung, Mietentwicklung und Härtefallschutz zusammen betrachtet werden.
 
 ## Wirkmechanismus
 
@@ -260,6 +290,12 @@ Ein Wirkungspfad beschreibt die nachvollziehbare Kette von Auslöser, Bedingunge
 
 Wirkungspfade helfen, Annahmen, Daten, Risiken und Rückkopplungen in einer Wirkungsanalyse transparent zu machen.
 
+## Wirkungspflicht des Eigentums
+
+Die Wirkungspflicht des Eigentums beschreibt, dass Eigentum an Wohnraum an seine reale Wirkung auf Bezahlbarkeit, Gesundheit, Quartier und Vertrauen rückgebunden wird.
+
+Eigentum bleibt Freiheitsform, Investitionsgrundlage und Verantwortung. Bei Wohnraum betrifft es aber einen gesellschaftlichen Wirkungsraum und braucht daher transparente Schutzgrenzen, Rechtsschutz und demokratische Ausgestaltung.
+
 ## Wirkungspotenzial
 
 Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann.
@@ -338,11 +374,29 @@ Die Wirkungsumsatzsteuer ist ein Konzept, Umsatzsteuerlogik nach Produkt- oder L
 
 Die WUStG-Logik nutzt Wirkungsdaten, WÖk-IDs, Scorecards und Reverse Merit Order für steuerliche Rückkopplung.
 
+## Wirkungsvermietung
+
+Wirkungsvermietung beschreibt Vermietung, die Wohnwirkung auf Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe und Vertrauen sichtbar macht.
+
+In der Wirkungsökonomie wird gute Vermietung nicht moralisch behauptet, sondern an Zustandsveränderungen sichtbar: stabile Wohnkosten, gesunde Räume, transparente Kosten, sanierter Bestand, geringere Verdrängung und stärkere Quartierswirkung.
+
 ## Wirkungswahrheit
 
 Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen.
 
 Der Begriff beschreibt, ob Entscheidungen, Preise, Narrative oder Kennzahlen den tatsächlichen Folgen näherkommen oder sie verdecken.
+
+## WIX-VI
+
+WIX-VI ist ein Vermietungs- und Investmentmodul des Wohnwirkungsindex.
+
+WIX-VI bewertet keine Personen. Es macht sichtbar, wie Vermietungs- und Investmententscheidungen auf Wohnwirkung, Stranded-Asset-Risiken, Warmmietenneutralität, Quartier und Transparenz zurückwirken.
+
+## Wohnwirkung
+
+Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt.
+
+Wohnwirkung ist neutral und relational. Sie kann positiv, negativ oder neutral sein und wird im WÖk-Rahmen an Mensch, Planet und Demokratie rückgekoppelt.
 
 ## WÖk-ID
 
