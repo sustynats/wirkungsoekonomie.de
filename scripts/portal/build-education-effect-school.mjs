@@ -37,15 +37,15 @@ const documents = {
     route: "wirkungsfelder/bildung/detailkonzepte/index.html",
   },
   singleDossiers: {
-    title: "Einzeldossier-Set Bildung & Wirkungsschule",
-    shortTitle: "Einzeldossier-Set",
+    title: "Einzeldossiers Bildung & Wirkungsschule",
+    shortTitle: "Einzeldossiers",
     md: `${EXTRACT}/woek_bildung_wirkungsschule_einzeldossier_set_v0_1.md`,
     download: "assets/downloads/woek_bildung_wirkungsschule_einzeldossier_set_v0_1.docx",
     route: "wirkungsfelder/bildung/dossiers/index.html",
   },
   toolSuite: {
-    title: "Tool-Spezifikation Wirkungsschule-Tool-Suite",
-    shortTitle: "Tool-Spezifikation",
+    title: "Methodik Wirkungsschule-Tool-Suite",
+    shortTitle: "Methodik",
     md: `${SOURCE}/tool_spezifikation_wirkungsschule_tool_suite.md`,
     download: "assets/downloads/tool_spezifikation_wirkungsschule_tool_suite.md",
     route: "wirkungsfelder/bildung/tools/index.html",
@@ -61,6 +61,93 @@ const toolEntries = [
   ["bildungswirkungsindex-bwk", "Bildungswirkungsindex / BWK", "Werkzeug", "Rahmen für Bildungswirkung auf Wissen, Selbstwirksamkeit, Demokratie, Gesundheit, Teilhabe, digitale Mündigkeit und Resilienz.", "werkzeuge/bildungswirkungsindex-bwk/"],
   ["woek-ids", "WÖk-IDs", "Datenarchitektur", "Verbinden SDG-/SDG+-Referenzen mit messbaren Bildungsindikatoren, Schutzgrenzen und Datenqualität.", "werkzeuge/woek-ids/"],
   ["scorecards", "Scorecards", "Methode", "Übersetzen Wirkungsdaten in transparente Bewertungsraster. Im Bildungsbereich nur für Strukturen und Maßnahmen, nicht für Menschen.", "werkzeuge/scorecards/"],
+];
+
+const conceptCards = [
+  {
+    title: "Bildung als Wirkungsinfrastruktur",
+    text: "Bildung wirkt nicht erst am Arbeitsmarkt. Sie stärkt Selbstwirksamkeit, Urteilskraft, Teilhabe, Gesundheit, Demokratie und Zukunftsfähigkeit.",
+    why: "So wird Bildung als gesellschaftliche Infrastruktur sichtbar, nicht nur als Unterrichtsleistung.",
+    tags: ["SDG 4", "Teilhabe", "Wirkungskompetenz"],
+    url: "wirkungsfelder/bildung/bildung-als-wirkungsinfrastruktur/",
+  },
+  {
+    title: "Die Wirkungsschule",
+    text: "Schule wird als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum verstanden. Entscheidend sind Strukturen, Schutz, Beziehung und Lernentwicklung.",
+    why: "Schule erzeugt Wirkung weit über Noten und Abschlüsse hinaus.",
+    tags: ["Schulraum", "Demokratie", "Gesundheit"],
+    url: "wirkungsfelder/bildung/wirkungsschule/",
+  },
+  {
+    title: "Wirkungspädagogik",
+    text: "Wirkungspädagogik verbindet Fachlernen, Reflexion, Verantwortung und konkrete Veränderung. Kinder und Jugendliche werden nicht gerankt.",
+    why: "Lernen wird mit Selbstwirksamkeit und Verantwortung verbunden.",
+    tags: ["Pädagogik", "Selbstwirksamkeit", "Schutz"],
+    url: "wirkungsfelder/bildung/wirkungspaedagogik/",
+  },
+  {
+    title: "Fächer neu denken und vernetzen",
+    text: "Fächer behalten Tiefe, werden aber stärker mit realen Fragen verbunden: Klima, Gesundheit, Medien, Arbeit, Demokratie und Technik.",
+    why: "Komplexe Probleme lassen sich selten aus einem Fach allein verstehen.",
+    tags: ["Fächer", "Systemdenken", "Transfer"],
+    url: "wirkungsfelder/bildung/faecher-neu-denken/",
+  },
+  {
+    title: "Fach oder Lernfeld Zukunft",
+    text: "Ein Zukunftslernfeld bündelt Wirkungskompetenz, Medienkompetenz, Demokratiepraxis, KI-Verständnis und nachhaltige Entwicklung.",
+    why: "Zukunftsfähigkeit braucht Raum im Curriculum.",
+    tags: ["Zukunft", "KI", "SDG+"],
+    url: "wirkungsfelder/bildung/fach-zukunft/",
+  },
+  {
+    title: "Bewertung, Noten und Wirkungsportfolio",
+    text: "Bewertung soll Leistung sichtbar machen, ohne Entwicklung zu beschämen. Portfolios können Lernwege, Reflexion und Wirkung dokumentieren.",
+    why: "Das reduziert die Verengung auf Einzelleistungen und Momentaufnahmen.",
+    tags: ["Portfolio", "Bewertung", "Lernweg"],
+    url: "wirkungsfelder/bildung/bewertung-wirkungsportfolio/",
+  },
+  {
+    title: "Wirkungsförderung",
+    text: "Förderung beginnt nicht erst beim Defizit. Sie erkennt Potenziale, Belastungen, Teilhaberisiken und Unterstützungsbedarfe früher.",
+    why: "Prävention wird sichtbarer und fairer finanzierbar.",
+    tags: ["Förderung", "Prävention", "Teilhabe"],
+    url: "wirkungsfelder/bildung/wirkungsfoerderung/",
+  },
+  {
+    title: "Digitale Mündigkeit und KI-Kompetenz",
+    text: "Digitale Bildung meint nicht nur Geräte. Sie umfasst Datenverständnis, Quellenklarheit, Plattformlogik, KI, Datenschutz und Selbstbestimmung.",
+    why: "Digitale Räume prägen Lernen, Öffentlichkeit und Demokratie.",
+    tags: ["KI", "Datenschutz", "Medienqualität"],
+    url: "wirkungsfelder/bildung/digitale-muendigkeit-ki-kompetenz/",
+  },
+  {
+    title: "Demokratie-, Medien- und Wirkungskompetenz",
+    text: "Schüler:innen lernen, Informationen zu prüfen, Konflikte auszuhalten, Wirkung zu reflektieren und demokratisch handlungsfähig zu bleiben.",
+    why: "Demokratie braucht gelernte Urteilskraft und Diskursfähigkeit.",
+    tags: ["Demokratie", "Medien", "Diskurs"],
+    url: "wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/",
+  },
+  {
+    title: "Schule als Lebens-, Gesundheits- und Wirkungsraum",
+    text: "Räume, Pausen, Bewegung, Ernährung, Lärm, Hitze, Sicherheit und Beziehung wirken direkt auf Lernen und Wohlbefinden.",
+    why: "Gesundheit und Bildung werden gemeinsam steuerbar.",
+    tags: ["Gesundheit", "Raum", "Resilienz"],
+    url: "wirkungsfelder/bildung/schule-als-lebensraum/",
+  },
+  {
+    title: "Inklusion, Vielfalt, Migration und Begabung",
+    text: "Vielfalt wird als Bildungswirklichkeit verstanden. Entscheidend sind Sprache, Teilhabe, Schutz, Förderung und hohe Erwartungen ohne Beschämung.",
+    why: "Gerechte Bildung hängt an Zugängen, nicht an Herkunft.",
+    tags: ["Inklusion", "Vielfalt", "Migration"],
+    url: "wirkungsfelder/bildung/inklusion-vielfalt-migration-begabung/",
+  },
+  {
+    title: "Lehrkräfte, Schulleitung, Teams und Bildungsnetzwerke",
+    text: "Wirkung entsteht nicht durch Einzelheld:innen. Lehrkräfte, multiprofessionelle Teams, Leitung, Eltern, Kommune und Partner brauchen passende Strukturen.",
+    why: "Entlastung und Kooperation sind Wirkungsvoraussetzungen.",
+    tags: ["Teams", "Netzwerke", "Entlastung"],
+    url: "wirkungsfelder/bildung/lehrkraefte-schulleitung-teams-netzwerke/",
+  },
 ];
 
 const sdgRefs = [
@@ -370,30 +457,57 @@ function tocBlock(items) {
 }
 
 function cards(base, items) {
-  return `<div class="card-grid three">${items.map(([title, kicker, text, url, label = "Öffnen"]) => `<article class="card"><p class="card-kicker">${esc(kicker)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text || "")}</p><div class="portal-card-actions">${url ? `<a class="text-link" href="${href(base, url)}">${esc(label)}</a>` : `<span class="badge">in Vorbereitung</span>`}</div></article>`).join("")}</div>`;
+  return `<div class="card-grid three">${items.map(([title, kicker, text, url, label = "Mehr lesen"]) => `<article class="card"><p class="card-kicker">${esc(kicker)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text || "")}</p>${url ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, url)}">${esc(label)}</a></div>` : ""}</article>`).join("")}</div>`;
+}
+
+function chipList(items) {
+  return `<div class="model-strip">${items.map((item) => `<span class="badge">${esc(item)}</span>`).join("")}</div>`;
+}
+
+function conceptCardGrid(base) {
+  return `<div class="card-grid three">${conceptCards.map((item) => `<article class="card concept-card"><p class="card-kicker">Konzept</p><h3 class="card-title">${esc(item.title)}</h3><p class="card-text">${esc(item.text)}</p><p class="card-text"><strong>Warum relevant?</strong> ${esc(item.why)}</p>${chipList(item.tags)}${exists(`${item.url}index.html`) ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, item.url)}">Konzept lesen</a></div>` : ""}</article>`).join("")}</div>`;
+}
+
+function politicsLandingBox() {
+  const points = [
+    ["Bildung als Wirkungsinfrastruktur anerkennen", "Schule, Förderung, Ganztag, Sozialraum, Demokratiebildung und digitale Mündigkeit gehören zusammen."],
+    ["Lehrpläne an Wirkungskompetenz anbinden", "Standards müssen Wissen, Urteilskraft, Medienkompetenz, Selbstwirksamkeit und demokratische Handlungsfähigkeit verbinden."],
+    ["Förderung präventiv finanzieren", "Unterstützung darf nicht erst einsetzen, wenn Defizite verfestigt sind."],
+    ["Datenschutz und Schutz vor Kinder-Scoring sichern", "Daten dürfen Lernen unterstützen, aber keine Kinder, Familien oder Lehrkräfte ranken."],
+    ["Teams entlasten", "Lehrkräfte, Schulleitungen und multiprofessionelle Teams brauchen Zeit, Ressourcen und klare Zuständigkeiten."],
+    ["Modellschulen und Pilotregionen ermöglichen", "Wirkungsschulen brauchen erprobte Räume, Evaluation und lernende Korrektur."],
+    ["Wirkung demokratisch kontrollieren", "Wirkungsdaten bereiten Entscheidungen vor, ersetzen aber keine pädagogische und demokratische Verantwortung."],
+  ];
+  return `<section class="section" aria-labelledby="politik-landing"><div class="section-header"><p class="hero-kicker">Umsetzung</p>${h2("politik-landing", "Was muss Politik hier tun?")}<p>Bildung verändert sich nicht durch ein einzelnes Gesetz. Politik muss den Rahmen schaffen, damit Wirkungskompetenz, Prävention, Schutz und Teilhabe praktisch möglich werden.</p></div><div class="card-grid three">${points.map(([title, text]) => `<article class="card"><p class="card-kicker">Handlungspunkt</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div></section>`;
+}
+
+function logicComparisonBox() {
+  const oldItems = ["Schule als Stoffvermittlung", "Noten als Hauptmaßstab", "Förderung erst bei Defiziten", "Digitalisierung als Gerätefrage", "Bildung als Kostenblock"];
+  const newItems = ["Schule als Wirkungsraum", "Kompetenzen, Urteilskraft und Selbstwirksamkeit", "Prävention und Potenzialförderung", "digitale Mündigkeit und KI-Kompetenz", "Bildung als gesellschaftliche Infrastruktur"];
+  return `<section class="section" aria-labelledby="alte-logik"><div class="section-header"><p class="hero-kicker">Vergleich</p>${h2("alte-logik", "Alte Logik vs. WÖk-Logik")}</div><div class="comparison-grid"><article class="card"><h3 class="card-title">Was das heutige System oft falsch sieht</h3><ul>${oldItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><h3 class="card-title">Was die Wirkungsökonomie anders betrachtet</h3><ul>${newItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></section>`;
 }
 
 function downloadBlock(base, entries) {
   const links = entries.filter(Boolean).filter((entry) => exists(entry.href)).map((entry) => `<a class="btn btn-secondary" href="${href(base, entry.href)}">${esc(entry.label)}</a>`);
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${h2("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word- und Markdown-Dateien bleiben ergänzende Export- und Archivfassungen.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.join("")}</div></div></section>`;
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${h2("downloads", "Downloads und Druck")}<p>Du liest die Onlinefassung. Die Dateien stehen ergänzend für Druck, Weitergabe und Arbeitsmaterial bereit.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.join("")}</div></div></section>`;
 }
 
 function publicationAccess(base, mode = "portal") {
   const online = [
-    ["Konzeptpapier", "Online-Volltext", "Das Konzeptpapier online lesen, zitieren und zusätzlich herunterladen.", "wirkungsfelder/bildung/konzept/"],
-    ["Gesamtdossier", "Online-Volltext", "Das Gesamtdossier mit Beispielen, Bewertungslogik, Datenquellen und Tool-Architektur online lesen.", "wirkungsfelder/bildung/dossier/"],
-    ["Detailkonzepte", "Online-Volltext", "Die langen Detailkonzepte zu allen Unterbereichen online lesen.", "wirkungsfelder/bildung/detailkonzepte/"],
-    ["Einzeldossier-Set", "Online-Volltext", "Einzeldossiers mit Praxisfrage, Bewertungslogik, Annahmen, Toolbezug und Grenzen.", "wirkungsfelder/bildung/dossiers/"],
-    ["Tool-Spezifikation", "Online-Volltext", "Die Wirkungsschule-Tool-Suite online lesen.", "wirkungsfelder/bildung/tools/"],
+    ["Konzeptpapier", "Onlinefassung", "Das Konzeptpapier als vertiefende Onlinefassung lesen.", "wirkungsfelder/bildung/konzept/"],
+    ["Gesamtdossier", "Dossier", "Das Gesamtdossier mit Beispielen, Bewertungslogik, Datenquellen und Grenzen lesen.", "wirkungsfelder/bildung/dossier/"],
+    ["Detailkonzepte", "Vertiefung", "Die Detailkonzepte zu allen Unterbereichen lesen.", "wirkungsfelder/bildung/detailkonzepte/"],
+    ["Einzeldossiers", "Dossier", "Einzeldossiers mit Praxisfrage, Bewertungslogik, Annahmen und Grenzen.", "wirkungsfelder/bildung/dossiers/"],
+    ["Methodik", "Methode", "Die Methodik der Wirkungsschule-Tool-Suite lesen.", "wirkungsfelder/bildung/tools/"],
   ];
   const downloadLinks = [
     ["Konzeptpapier herunterladen", documents.concept.download],
     ["Gesamtdossier herunterladen", documents.dossier.download],
     ["Detailkonzepte herunterladen", documents.details.download],
-    ["Einzeldossier-Set herunterladen", documents.singleDossiers.download],
-    ["Tool-Spezifikation herunterladen", documents.toolSuite.download],
+    ["Einzeldossiers herunterladen", documents.singleDossiers.download],
+    ["Methodik herunterladen", documents.toolSuite.download],
   ];
-  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", mode === "subpage" ? "Detailkonzept und Dossier online lesen" : "Online lesen und herunterladen")}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben Export und Archiv, nicht der Hauptzugang.</p></div>${cards(base, online.map((item) => [...item, "Online lesen"]))}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Die bereitgestellten Dateien bleiben als Exportfassungen verfügbar.</p></div><div class="portal-card-actions">${downloadLinks.map(([label, file]) => exists(file) ? `<a class="btn btn-secondary" href="${href(base, file)}">${esc(label)}</a>` : "").join("")}</div></div></section>`;
+  return `<section class="section" id="vertiefung-arbeitsmaterial" aria-labelledby="vertiefung-arbeitsmaterial-title"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("vertiefung-arbeitsmaterial-title", mode === "subpage" ? "Weiterführende Fassungen und Downloads" : "Vertiefung und Arbeitsmaterial")}<p>Die Übersicht führt in das Wirkungsfeld ein. Langfassungen, Dossiers und Downloads stehen hier für vertiefendes Lesen bereit.</p></div>${cards(base, online.map((item) => [...item, item[1] === "Methode" ? "Methodik lesen" : item[1] === "Dossier" ? "Dossier lesen" : "Onlinefassung lesen"]))}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Dateien herunterladen</h3><p class="card-text">Die Dateien ergänzen die Onlinefassungen als Arbeitsmaterial.</p></div><div class="portal-card-actions">${downloadLinks.map(([label, file]) => exists(file) ? `<a class="btn btn-secondary" href="${href(base, file)}">${esc(label)}</a>` : "").join("")}</div></div></section>`;
 }
 
 function sdgBadge(base, [id, label, text, url], index) {
@@ -420,8 +534,14 @@ function politicalBlock() {
   return `<section class="section" aria-labelledby="politik"><div class="section-header"><p class="hero-kicker">Demokratische Umsetzung</p>${h2("politik", "Politische Anschlussfähigkeit und Umsetzungsoptionen")}<p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit Bildung demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann.</p></div><div class="table-wrap"><table class="data-table"><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></section>`;
 }
 
-function toolBlock(base) {
-  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Kontext-Werkzeuge</p>${h2("tools", "Werkzeuge in diesem Bereich")}<p>Die Werkzeuge sind modellhafte Reflexionshilfen für Schulen, Kommunen, Träger und Politik. Sie treffen keine Schulaufsichtsentscheidung und bewerten keine Kinder, Lehrkräfte oder Familien.</p></div>${cards(base, toolEntries.map(([, title, kicker, text, url]) => [title, kicker, text, url]))}</section>`;
+function toolBlock(base, excludeUrl = "") {
+  const visibleTools = toolEntries.filter(([, , , , url]) => url !== excludeUrl.replace(/index\.html$/, "").replace(/\/$/, "/"));
+  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Methoden</p>${h2("tools", "Werkzeuge und Methoden")}<p>Die Karten zeigen Reflexionshilfen für Schulen, Kommunen, Träger und Politik. Sie treffen keine Schulaufsichtsentscheidung und bewerten keine Kinder, Lehrkräfte oder Familien.</p></div><div class="card-grid three">${visibleTools.map(([, title, kicker, text, url]) => {
+    const isInteractive = url.startsWith("erleben/");
+    const cta = isInteractive ? "Tool testen" : "Methodik lesen";
+    const type = isInteractive ? "Tool" : "Methode";
+    return `<article class="card"><p class="card-kicker">${esc(type)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text"><strong>Was zeigt es?</strong> ${esc(text)}</p><p class="card-text"><strong>Für wen?</strong> Schulen, Träger, Kommunen, Politik und Bildungsnetzwerke.</p><p class="card-text"><strong>Was ist keine Bewertung?</strong> Keine Bewertung einzelner Kinder, Familien oder Lehrkräfte.</p><div class="portal-card-actions"><a class="text-link" href="${href(base, url)}">${esc(cta)}</a></div></article>`;
+  }).join("")}</div></section>`;
 }
 
 function bookBlock(base) {
@@ -450,12 +570,11 @@ function protectionBlock() {
 }
 
 function portalPage() {
-  const intro = markdownishToHtml(read(`${SOURCE}/website_inhalt_bildung_wirkungsschule.md`));
   page({
     rel: "wirkungsfelder/bildung/index.html",
     title: "Bildung & Wirkungsschule | Wirkungsökonomie",
     description: "Bildung als Wirkungsinfrastruktur: Wirkungsschule, Wirkungspädagogik, Fach Zukunft, Portfolios, Wirkungsförderung, digitale Mündigkeit und Demokratiekompetenz.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Bildung als Wirkungsinfrastruktur</h1><p class="hero-subtitle">Wie die Wirkungsökonomie Schule, Förderung, Fächer, Bewertung und Zukunftskompetenz neu denkt.</p><p>Bildung ist nicht nur Schule, Noten oder Arbeitsmarktfähigkeit. Bildung ist eine gesellschaftliche Wirkungsinfrastruktur: Sie stärkt Selbstwirksamkeit, Urteilskraft, Demokratie, Gesundheit, Teilhabe, digitale Mündigkeit, systemisches Denken und Zukunftsfähigkeit.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/detailkonzepte/")}">Detailkonzepte online lesen</a><a class="btn btn-secondary" href="#publikationszugang">Downloads</a></div></div>${statusBox("Portal")}</div></section>${publicationAccess(base)}${tocBlock(intro.toc)}<section class="section article-section" aria-labelledby="online-volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Portaltext</p>${h2("online-volltext", "Online-Volltext")} ${intro.html}</article></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Zentrale Unterbereiche online lesen")}<p>Jeder Unterbereich besitzt eine Online-Seite mit Detailkonzept, Einzeldossier, Download, SDG-/SDG+-Block, Buchankern, Quellen und Werkzeugbezug.</p></div>${cards(base, modules.map((module) => [module.name, "Detailkonzept + Dossier", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Online lesen"]))}</section>${toolBlock(base)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${sourceBlock()}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossier-Set Word", href: documents.singleDossiers.download }, { label: "Tool-Spezifikation Markdown", href: documents.toolSuite.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Bildung als Wirkungsinfrastruktur</h1><p class="hero-subtitle">Wie die Wirkungsökonomie Schule, Förderung, Fächer, Bewertung und Zukunftskompetenz neu denkt.</p><p>Bildung ist nicht nur Schule, Noten oder Arbeitsmarktfähigkeit. Sie stärkt Selbstwirksamkeit, Urteilskraft, Demokratie, Gesundheit, Teilhabe, digitale Mündigkeit, systemisches Denken und Zukunftsfähigkeit.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button></div></div>${statusBox("Wirkungsfeld")}</div></section><nav class="toc-card no-print" aria-label="Seitennavigation"><h2 class="card-title">Auf dieser Seite</h2><ol class="toc-links"><li><a href="#warum-bildung">Warum wichtig?</a></li><li><a href="#alte-logik">WÖk-Logik</a></li><li><a href="#konzepte">Konzepte</a></li><li><a href="#politik-landing">Politik</a></li><li><a href="#tools">Werkzeuge</a></li><li><a href="#vertiefung-arbeitsmaterial">Vertiefung</a></li></ol></nav><section class="section" aria-labelledby="warum-bildung"><div class="section-header"><p class="hero-kicker">Relevanz</p>${h2("warum-bildung", "Warum Bildung ein Wirkungsfeld ist")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Bildung wirkt vor dem Arbeitsmarkt</h3><p class="card-text">Sie prägt Sprache, Selbstwirksamkeit, Gesundheit, Teilhabe, Vertrauen und Zukunftsfähigkeit lange bevor Erwerbsarbeit beginnt.</p></article><article class="card"><h3 class="card-title">Schule ist auch Lebensraum</h3><p class="card-text">Schule wirkt auf Gesundheit, Demokratie, Beziehung, Sicherheit, Medienkompetenz und soziale Stabilität.</p></article><article class="card"><h3 class="card-title">Wirkungskompetenz wird Zukunftskompetenz</h3><p class="card-text">Menschen müssen Folgen, Zielkonflikte, Daten, Medien und Systeme verstehen, um handlungsfähig zu bleiben.</p></article></div></section>${logicComparisonBox()}<section class="section" aria-labelledby="konzepte"><div class="section-header"><p class="hero-kicker">Konzepte</p>${h2("konzepte", "Zentrale Konzepte")}<p>Die Konzepte geben Orientierung. Langfassungen, Dossiers und Downloads stehen am Ende der Seite.</p></div>${conceptCardGrid(base)}</section>${politicsLandingBox()}<section class="section" aria-labelledby="sdg-chips"><div class="portal-reference-block"><p class="hero-kicker">Referenzrahmen</p>${h2("sdg-chips", "SDG-/SDG+-Bezug")}<div class="model-strip">${sdgRefs.map(([, label]) => `<span class="badge">${esc(label)}</span>`).join("")}</div><p>SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p></div></section>${toolBlock(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("unterbereiche", "Vertiefende Unterbereiche")}<p>Die Unterbereiche führen jeweils zu einer eigenen Vertiefung mit Detailkonzept und Dossier.</p></div>${cards(base, modules.map((module) => [module.name, "Vertiefung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${publicationAccess(base)}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${sourceBlock()}`,
   });
 }
 
@@ -474,12 +593,13 @@ function modulePage(module) {
 function fulltextPage(key, rel, status) {
   const doc = documents[key];
   const rendered = markdownishToHtml(read(doc.md));
+  const publicStatus = status.replaceAll("Online-Volltext", "Onlinefassung").replaceAll("Einzeldossier-Set", "Einzeldossiers");
   page({
     rel,
     title: `${doc.title} | Wirkungsökonomie`,
-    description: `${doc.title} als öffentlicher Online-Volltext mit Zitierankern, Druckfunktion und Download.`,
-    type: status,
-    body: (base, canonical) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">${esc(status)}</p><h1>${esc(doc.title)}</h1><p class="hero-subtitle">Online-Volltext ist der Hauptzugang. Downloads bleiben Export und Archiv.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a><a class="btn btn-secondary" href="${href(base, doc.download)}">Download</a></div></div></section><section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Abschnittsanker können direkt zitiert werden. Die kanonische Adresse bleibt stabil.</p><p><a class="text-link" href="${canonical}">Kanonische Seitenadresse öffnen</a></p></aside></section>${publicationAccess(base)}<section class="section narrow">${statusBox(status)}</section><section class="section narrow">${tocBlock(rendered.toc)}</section><section class="section article-section" aria-labelledby="volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Online-Volltext</p>${h2("volltext", `${doc.title} online lesen`)}${rendered.html}</article></section>${toolBlock(base)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${sourceBlock()}${downloadBlock(base, [{ label: `${doc.title} herunterladen`, href: doc.download }])}`,
+    description: `${doc.title} als öffentliche Onlinefassung mit Zitierankern, Druckfunktion und Download.`,
+    type: publicStatus,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">${esc(publicStatus)}</p><h1>${esc(doc.title)}</h1><p class="hero-subtitle">Du liest die Onlinefassung. Downloads stehen am Ende der Seite bereit.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-secondary" href="${href(base, doc.download)}">Download</a></div></div></section><section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Onlinefassung</h2><p>Abschnittsanker können direkt zitiert werden. Die Seitenadresse bleibt stabil.</p></aside></section><section class="section narrow">${statusBox(publicStatus)}</section><section class="section narrow">${tocBlock(rendered.toc)}</section><section class="section article-section" aria-labelledby="volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Onlinefassung</p>${h2("volltext", `${doc.title} lesen`)}${rendered.html}</article></section>${toolBlock(base)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${sourceBlock()}${downloadBlock(base, [{ label: `${doc.title} herunterladen`, href: doc.download }])}`,
   });
 }
 
@@ -488,10 +608,10 @@ function toolSpecPage() {
   page({
     rel: documents.toolSuite.route,
     title: `${documents.toolSuite.title} | Wirkungsökonomie`,
-    description: "Tool-Spezifikation der Wirkungsschule-Tool-Suite als Online-Volltext mit Download.",
+    description: "Methodik der Wirkungsschule-Tool-Suite als Onlinefassung mit Download.",
     section: "Werkzeuge",
-    type: "Tool-Spezifikation",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">Tool-Spezifikation</p><h1>${esc(documents.toolSuite.title)}</h1><p class="hero-subtitle">Modellhafte Tools zur Schulentwicklung, Unterrichtsplanung, Förderlogik und Portfolioarbeit.</p><p class="scanner-notice">Keine Schulaufsichtsentscheidung, keine Rechtsberatung und keine personenbezogene Bewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Spezifikation lesen</a><a class="btn btn-secondary" href="${href(base, documents.toolSuite.download)}">Download</a></div></div></section>${tocBlock(rendered.toc)}<section class="section article-section" aria-labelledby="volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Online-Volltext</p>${h2("volltext", "Tool-Spezifikation online lesen")}${rendered.html}</article></section>${toolBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Tool-Spezifikation Markdown", href: documents.toolSuite.download }])}`,
+    type: "Methodik",
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">Methodik</p><h1>${esc(documents.toolSuite.title)}</h1><p class="hero-subtitle">Modellhafte Methoden zur Schulentwicklung, Unterrichtsplanung, Förderlogik und Portfolioarbeit.</p><p class="scanner-notice">Keine Schulaufsichtsentscheidung, keine Rechtsberatung und keine personenbezogene Bewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-secondary" href="${href(base, documents.toolSuite.download)}">Download</a></div></div></section>${tocBlock(rendered.toc)}<section class="section article-section" aria-labelledby="volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Onlinefassung</p>${h2("volltext", "Methodik lesen")}${rendered.html}</article></section>${toolBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Methodik Markdown", href: documents.toolSuite.download }])}`,
   });
 }
 
@@ -502,7 +622,7 @@ function simpleToolPage(slug, title, description, route) {
     description,
     section: route.startsWith("erleben/") ? "Erleben" : "Werkzeuge",
     type: route.startsWith("erleben/") ? "Demo" : "Werkzeug",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">${route.startsWith("erleben/") ? "Demo" : "Werkzeug"} · Wirkungsschule</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(description)}</p><p class="scanner-notice">Modellhafte Demonstration. Keine Schulaufsichtsentscheidung. Keine Rechtsberatung. Keine personenbezogene Bewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#demo">Demo ansehen</a><a class="btn btn-secondary" href="${href(base, "wirkungsfelder/bildung/tools/")}">Tool-Spezifikation lesen</a></div></div></section><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol class="toc-links"><li><a href="#demo-title">Modellhafte Struktur</a></li><li><a href="#schutz">Schutzlinien</a></li><li><a href="#politik">Politische Anschlussfähigkeit</a></li></ol></nav><section class="section" id="demo" aria-labelledby="demo-title"><div class="section-header"><p class="hero-kicker">Arbeitsmodell</p>${h2("demo-title", "Modellhafte Struktur")}</div><div class="card-grid three"><article class="card"><p class="card-kicker">Eingabe</p><h3 class="card-title">Systemebene wählen</h3><p class="card-text">Schule, Klasse, Projekt, Förderangebot, Raum, Curriculum oder kommunales Bildungsnetzwerk. Keine Person wird gerankt.</p></article><article class="card"><p class="card-kicker">Bewertung</p><h3 class="card-title">Reifegrad statt Score für Menschen</h3><p class="card-text">0 = nicht angelegt, 1 = punktuell, 2 = strukturiert, 3 = integriert, 4 = lernend evaluiert.</p></article><article class="card"><p class="card-kicker">Ausgabe</p><h3 class="card-title">Verbesserungspfad</h3><p class="card-text">Das Ergebnis zeigt Schutzgrenzen, nächste Schritte, Datenqualität und Korrekturrunde.</p></article></div><div class="card"><form class="calculator-form"><label>Basiskompetenzen und Lernentwicklung <input type="range" min="0" max="4" value="2"></label><label>Teilhabe und Schutz vor Beschämung <input type="range" min="0" max="4" value="2"></label><label>Demokratie-, Medien- und Wirkungskompetenz <input type="range" min="0" max="4" value="2"></label><label>Datenethik und Datenschutz <input type="range" min="0" max="4" value="2"></label></form><p class="card-text"><strong>Hinweis:</strong> Die Demo ist bewusst einfach. Sie ersetzt keine pädagogische, rechtliche oder schulaufsichtliche Prüfung.</p></div></section>${toolBlock(base)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${downloadBlock(base, [{ label: "Tool-Spezifikation Markdown", href: documents.toolSuite.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">${route.startsWith("erleben/") ? "Demo" : "Methode"} · Wirkungsschule</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(description)}</p><p class="scanner-notice">Modellhafte Demonstration. Keine Schulaufsichtsentscheidung. Keine Rechtsberatung. Keine personenbezogene Bewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#demo">Demo ansehen</a><a class="btn btn-secondary" href="${href(base, "wirkungsfelder/bildung/tools/")}">Methodik lesen</a></div></div></section><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol class="toc-links"><li><a href="#demo-title">Modellhafte Struktur</a></li><li><a href="#schutz">Schutzlinien</a></li><li><a href="#politik">Politische Anschlussfähigkeit</a></li></ol></nav><section class="section" id="demo" aria-labelledby="demo-title"><div class="section-header"><p class="hero-kicker">Arbeitsmodell</p>${h2("demo-title", "Modellhafte Struktur")}</div><div class="card-grid three"><article class="card"><p class="card-kicker">Eingabe</p><h3 class="card-title">Systemebene wählen</h3><p class="card-text">Schule, Klasse, Projekt, Förderangebot, Raum, Curriculum oder kommunales Bildungsnetzwerk. Keine Person wird gerankt.</p></article><article class="card"><p class="card-kicker">Bewertung</p><h3 class="card-title">Reifegrad statt Score für Menschen</h3><p class="card-text">0 = nicht angelegt, 1 = punktuell, 2 = strukturiert, 3 = integriert, 4 = lernend evaluiert.</p></article><article class="card"><p class="card-kicker">Ausgabe</p><h3 class="card-title">Verbesserungspfad</h3><p class="card-text">Das Ergebnis zeigt Schutzgrenzen, nächste Schritte, Datenqualität und Korrekturrunde.</p></article></div><div class="card"><form class="calculator-form"><label>Basiskompetenzen und Lernentwicklung <input type="range" min="0" max="4" value="2"></label><label>Teilhabe und Schutz vor Beschämung <input type="range" min="0" max="4" value="2"></label><label>Demokratie-, Medien- und Wirkungskompetenz <input type="range" min="0" max="4" value="2"></label><label>Datenethik und Datenschutz <input type="range" min="0" max="4" value="2"></label></form><p class="card-text"><strong>Hinweis:</strong> Die Demo ist bewusst einfach. Sie ersetzt keine pädagogische, rechtliche oder schulaufsichtliche Prüfung.</p></div></section>${toolBlock(base, route)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${downloadBlock(base, [{ label: "Methodik Markdown", href: documents.toolSuite.download }])}`,
   });
 }
 
@@ -510,10 +630,10 @@ function libraryPage() {
   page({
     rel: "werkstatt/dossiers/bildung/index.html",
     title: "Dossiers Bildung & Wirkungsschule | Wirkungsökonomie",
-    description: "Arbeitsbibliothek und Dossierhub zu Bildung, Wirkungsschule, Detailkonzepten, Einzeldossiers und Tool-Spezifikation.",
+    description: "Arbeitsbibliothek und Dossierhub zu Bildung, Wirkungsschule, Detailkonzepten, Einzeldossiers und Methodik.",
     section: "Werkstatt",
     type: "Dossier",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/")}">Werkstatt</a></nav><p class="hero-kicker">Werkstatt · Dossiers</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossier-Set, Tool-Spezifikation und Online-Zugänge.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Portal öffnen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers")}</div>${cards(base, modules.map((module) => [module.name, "Online lesen", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Öffnen"]))}</section>${toolBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossier-Set Word", href: documents.singleDossiers.download }, { label: "Tool-Spezifikation Markdown", href: documents.toolSuite.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/")}">Werkstatt</a></nav><p class="hero-kicker">Werkstatt · Dossiers</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers, Methodik und Onlinefassungen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Zur Übersicht Bildung</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers")}</div>${cards(base, modules.map((module) => [module.name, "Onlinefassung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${toolBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossiers Word", href: documents.singleDossiers.download }, { label: "Methodik Markdown", href: documents.toolSuite.download }])}`,
   });
 }
 
@@ -521,18 +641,18 @@ function workLibraryPage() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
     title: "Bildung in der Arbeitsbibliothek | Wirkungsökonomie",
-    description: "Arbeitsbibliothek zu Bildung, Wirkungsschule, Konzeptpapier, Gesamtdossier, Detailkonzepten, Einzeldossiers und Tool-Spezifikation.",
+    description: "Arbeitsbibliothek zu Bildung, Wirkungsschule, Konzeptpapier, Gesamtdossier, Detailkonzepten, Einzeldossiers und Methodik.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Wirkungsfeld</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Alle öffentlichen Konzepte, Dossiers, Detailkonzepte, Einzeldossiers und Tool-Spezifikationen zum Bildungsportal.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Portal öffnen</a><a class="btn btn-secondary" href="${href(base, "werkstatt/dossiers/bildung/")}">Dossierhub öffnen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers in der Arbeitsbibliothek")}</div>${cards(base, modules.map((module) => [module.name, "Online lesen", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Öffnen"]))}</section>${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossier-Set Word", href: documents.singleDossiers.download }, { label: "Tool-Spezifikation Markdown", href: documents.toolSuite.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Wirkungsfeld</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Alle öffentlichen Konzepte, Dossiers, Detailkonzepte, Einzeldossiers und Methoden zur Bildung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Zur Übersicht Bildung</a><a class="btn btn-secondary" href="${href(base, "werkstatt/dossiers/bildung/")}">Dossiers ansehen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers in der Arbeitsbibliothek")}</div>${cards(base, modules.map((module) => [module.name, "Onlinefassung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossiers Word", href: documents.singleDossiers.download }, { label: "Methodik Markdown", href: documents.toolSuite.download }])}`,
   });
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
     title: "Wirkungsschule in der Arbeitsbibliothek | Wirkungsökonomie",
-    description: "Arbeitsbibliothek zur Wirkungsschule mit Online-Volltexten, Detailkonzept, Dossier und Downloads.",
+    description: "Arbeitsbibliothek zur Wirkungsschule mit Onlinefassungen, Detailkonzept, Dossier und Downloads.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung in der Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Unterbereich</p><h1>Die Wirkungsschule</h1><p class="hero-subtitle">Detailkonzept und Einzeldossier zur Schule als Wirkungsraum online lesen und als Export herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Online-Volltext öffnen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte herunterladen</a></div></div></section><section class="section" aria-labelledby="zugang"><div class="download-card"><div><p class="card-kicker">Kanonischer Volltext</p>${h2("zugang", "Detailkonzept und Dossier online lesen")}<p class="card-text">Die öffentliche Langfassung liegt auf der kanonischen Unterseite. Diese Arbeitsbibliothek-Seite bündelt Archiv, Export und Verweise.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Wirkungsschule online lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte Word</a><a class="btn btn-secondary" href="${href(base, documents.singleDossiers.download)}">Einzeldossier-Set Word</a></div></div></section>${publicationAccess(base, "subpage")}${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossier-Set Word", href: documents.singleDossiers.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung in der Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Unterbereich</p><h1>Die Wirkungsschule</h1><p class="hero-subtitle">Detailkonzept und Einzeldossier zur Schule als Wirkungsraum lesen und als Arbeitsmaterial herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Vertiefung lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte herunterladen</a></div></div></section><section class="section" aria-labelledby="zugang"><div class="download-card"><div><p class="card-kicker">Onlinefassung</p>${h2("zugang", "Detailkonzept und Dossier lesen")}<p class="card-text">Die öffentliche Langfassung liegt auf der Unterseite. Diese Arbeitsbibliothek-Seite bündelt Arbeitsmaterial und Verweise.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Wirkungsschule lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte Word</a><a class="btn btn-secondary" href="${href(base, documents.singleDossiers.download)}">Einzeldossiers Word</a></div></div></section>${publicationAccess(base, "subpage")}${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossiers Word", href: documents.singleDossiers.download }])}`,
   });
 }
 
@@ -569,10 +689,10 @@ function updateSitemap() {
 
 function run() {
   portalPage();
-  fulltextPage("concept", documents.concept.route, "Konzeptpapier / Online-Volltext");
-  fulltextPage("dossier", documents.dossier.route, "Gesamtdossier / Online-Volltext");
-  fulltextPage("details", documents.details.route, "Detailkonzepte / Online-Volltext");
-  fulltextPage("singleDossiers", documents.singleDossiers.route, "Einzeldossier-Set / Online-Volltext");
+  fulltextPage("concept", documents.concept.route, "Konzeptpapier / Onlinefassung");
+  fulltextPage("dossier", documents.dossier.route, "Gesamtdossier / Onlinefassung");
+  fulltextPage("details", documents.details.route, "Detailkonzepte / Onlinefassung");
+  fulltextPage("singleDossiers", documents.singleDossiers.route, "Einzeldossiers / Onlinefassung");
   toolSpecPage();
   modules.forEach(modulePage);
   simpleToolPage("wirkungsschule-check", "Wirkungsschule-Check", "Schulentwicklung wirkungsorientiert prüfen: Basiskompetenzen, Wirkungskompetenz, Förderung, Räume, Demokratiepraxis und Datenethik.", "erleben/wirkungsschule-check/index.html");

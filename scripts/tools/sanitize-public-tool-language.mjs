@@ -48,6 +48,8 @@ const replacements = [
   [/Portaltext/g, "Onlinefassung"],
   [/Online-Volltext ist der Hauptzugang/g, "Du liest die Onlinefassung"],
   [/Online-Volltext ist Hauptzugang/g, "Du liest die Onlinefassung"],
+  [/Online-Volltexte/g, "Onlinefassungen"],
+  [/Online-Volltext/g, "Onlinefassung"],
   [/Online lesen, gezielt zitieren/g, "Onlinefassung und Quellenarbeit"],
   [/Online lesen und herunterladen/g, "Vertiefung und Arbeitsmaterial"],
   [/online lesen und herunterladen/gi, "Vertiefung und Arbeitsmaterial"],
@@ -74,6 +76,7 @@ const replacements = [
   [/kanonische Adresse/gi, "Seitenadresse"],
   [/kanonisch/gi, "öffentlich"],
   [/in Vorbereitung/g, "wird ergänzt"],
+  [/in Ausarbeitung/g, "Methodik"],
   [/Prototypen/g, "Demos"],
   [/Prototyp/g, "Modellhafte Demo"],
 ];

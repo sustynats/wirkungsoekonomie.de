@@ -37,7 +37,7 @@ const portals = [
     rel: "wirkungsfelder/staat-recht-demokratie/index.html",
     basePath: "werkstatt/dossiers/staat-recht-demokratie",
     label: "Staat, Recht & Demokratie",
-    concept: ["Portal online lesen", "wirkungsfelder/staat-recht-demokratie/"],
+    concept: ["Übersicht ansehen", "wirkungsfelder/staat-recht-demokratie/"],
     dossier: ["Dossierbereich online lesen", "werkstatt/dossiers/staat-recht-demokratie/"],
     detailIndex: ["Detailkonzepte online lesen", "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/"],
     dossierIndex: ["Einzeldossiers online lesen", "werkstatt/dossiers/staat-recht-demokratie/dossiers/"],
@@ -202,7 +202,7 @@ function findDownload(prefix, slug) {
 function linkButton(config, label, target, className = "btn btn-secondary") {
   if (!target) return "";
   if (!/^(https?:|mailto:|#)/.test(target) && !exists(target.replace(/\/$/, "/index.html"))) {
-    if (!exists(target)) return "";
+    if (target.endsWith("/") || !exists(target)) return "";
   }
   return `<a class="${className}" href="${routeToRel(config.rel, target)}">${escapeHtml(label)}</a>`;
 }
@@ -229,22 +229,22 @@ function compactAccess(config) {
   const cards = [];
   if (config.concept) {
     cards.push(card(config, "Konzept", "Konzeptpapier", "Grundlage online lesen und bei Bedarf als Word-Datei exportieren.", [
-      linkButton(config, "Online lesen", config.concept[1], "text-link"),
+      linkButton(config, "Onlinefassung lesen", config.concept[1], "text-link"),
       ...(config.extraDownloads || []).filter(([label]) => /Konzept/i.test(label)).map(([label, href]) => linkButton(config, label, href, "text-link")),
     ]));
   }
   if (config.dossier) {
     cards.push(card(config, "Dossier", "Gesamtdossier", "Vertiefung mit Beispielen, Datenquellen, Bewertungswegen und Umsetzungsoptionen.", [
-      linkButton(config, "Online lesen", config.dossier[1], "text-link"),
+      linkButton(config, "Dossier lesen", config.dossier[1], "text-link"),
       ...(config.extraDownloads || []).filter(([label]) => /Gesamt|Dossier/i.test(label)).map(([label, href]) => linkButton(config, label, href, "text-link")),
     ]));
   }
   cards.push(card(config, "Detailkonzepte", "Alle Detailkonzepte", "Langfassungen der Unterbereiche mit zitierfähigen Abschnittsankern.", [
-    linkButton(config, "Online lesen", config.detailIndex?.[1], "text-link"),
+    linkButton(config, "Detailkonzepte ansehen", config.detailIndex?.[1], "text-link"),
     linkButton(config, "Detailkonzepte herunterladen", config.detailDownload, "text-link"),
   ]));
   cards.push(card(config, "Einzeldossiers", "Alle Einzeldossiers", "Praxisfälle, Bewertungslogik, Annahmen, Datenquellen, Toolbezug und Grenzen.", [
-    linkButton(config, "Online lesen", config.dossierIndex?.[1], "text-link"),
+    linkButton(config, "Einzeldossiers ansehen", config.dossierIndex?.[1], "text-link"),
     linkButton(config, "Einzeldossiers herunterladen", config.dossierDownload, "text-link"),
   ]));
   return `<div class="card-grid three">${cards.join("")}</div>`;
@@ -254,8 +254,8 @@ function topicMatrix(config) {
   const rows = topicRows(config);
   if (!rows.length) return "";
   return `<div class="table-wrap publication-matrix-wrap"><table class="data-table publication-matrix"><thead><tr><th>Unterbereich</th><th>Detailkonzept</th><th>Detail-Download</th><th>Dossier</th><th>Dossier-Download</th></tr></thead><tbody>${rows.map((row) => {
-    const detailOnline = exists(row.detailRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.detailRel.replace(/index\.html$/, ""))}">online lesen</a>` : "wird ergänzt";
-    const dossierOnline = exists(row.dossierRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierRel.replace(/index\.html$/, ""))}">online lesen</a>` : "wird ergänzt";
+    const detailOnline = exists(row.detailRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.detailRel.replace(/index\.html$/, ""))}">Konzept lesen</a>` : "";
+    const dossierOnline = exists(row.dossierRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierRel.replace(/index\.html$/, ""))}">Dossier lesen</a>` : "";
     const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
     const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
     return `<tr><th scope="row">${escapeHtml(row.title)}</th><td>${detailOnline}</td><td>${detailDownload}</td><td>${dossierOnline}</td><td>${dossierDownload}</td></tr>`;
@@ -264,10 +264,10 @@ function topicMatrix(config) {
 
 function hub(config) {
   return `<!-- publication-access-hub:start -->
-<section class="section publication-access-hub" id="publikationszugang" aria-labelledby="publikationszugang-title">
+<section class="section publication-access-hub" id="vertiefung-arbeitsmaterial" aria-labelledby="vertiefung-arbeitsmaterial-title">
   <div class="section-header">
     <p class="hero-kicker">Vertiefung</p>
-    <h2 id="publikationszugang-title">Weiterlesen und vertiefen <a class="cite-anchor no-print" href="#publikationszugang-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+    <h2 id="vertiefung-arbeitsmaterial-title">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#vertiefung-arbeitsmaterial-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
     <p>Die Seite führt zuerst in das Thema ein. Dossiers, Detailkonzepte und Downloads sind hier als weiterführende Vertiefung gebündelt.</p>
   </div>
   ${compactAccess(config)}
@@ -284,12 +284,11 @@ function hub(config) {
 function applyHub(config) {
   if (!exists(config.rel)) return false;
   let html = fs.readFileSync(abs(config.rel), "utf8");
-  if (config.keepExisting && html.includes('id="publikationszugang"')) return false;
+  if (config.keepExisting && (html.includes('id="publikationszugang"') || html.includes('id="vertiefung-arbeitsmaterial"'))) return false;
   html = html.replace(/<!-- publication-access-hub:start -->[\s\S]*?<!-- publication-access-hub:end -->\n?/, "");
-  const mainIndex = html.indexOf("<main");
-  const firstSectionEnd = html.indexOf("</section>", mainIndex);
-  if (firstSectionEnd === -1) return false;
-  const insertAt = firstSectionEnd + "</section>".length;
+  const beforeClosingMain = html.lastIndexOf("</main>");
+  if (beforeClosingMain === -1) return false;
+  const insertAt = beforeClosingMain;
   html = `${html.slice(0, insertAt)}\n${hub(config)}\n${html.slice(insertAt)}`;
   fs.writeFileSync(abs(config.rel), html, "utf8");
   return true;
