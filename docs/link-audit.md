@@ -1,6 +1,6 @@
 # Link- und CTA-Audit
 
-Stand: 2026-05-25T19:05:38.269Z
+Stand: 2026-05-25T19:11:58.703Z
 
 ## Zusammenfassung
 
