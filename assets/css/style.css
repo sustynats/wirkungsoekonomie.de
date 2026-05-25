@@ -9789,6 +9789,35 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   padding-left: 1.15rem;
 }
 
+.tool-special-box {
+  margin-top: 1rem;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(240, 253, 244, 0.9), rgba(255, 255, 255, 0.92)),
+    var(--surface, #fff);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.055);
+}
+
+.tool-special-box.section {
+  margin-top: clamp(1.2rem, 3vw, 2rem);
+  margin-bottom: clamp(1.2rem, 3vw, 2rem);
+}
+
+.tool-special-box h2 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  letter-spacing: 0;
+}
+
+.tool-special-box p:last-child {
+  max-width: 78ch;
+  margin-bottom: 0;
+  color: var(--text-muted, #475569);
+  line-height: 1.65;
+}
+
 .tool-explanation-links {
   display: flex;
   flex-wrap: wrap;

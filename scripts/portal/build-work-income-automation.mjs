@@ -395,9 +395,12 @@ function automationIntro() {
       ${h2("was-bedeuten-die-ergebnisse", "Was bedeuten die Ergebnisse?")}
       <p>Die Ergebniswerte sind keine amtlichen Beträge. Sie sind Lesespuren: Sie zeigen, wo das alte System anfällig wird und wie eine Rückkopplung aus Wertschöpfung, Wirkung und Übergangsschutz aussehen könnte.</p>
 
-      ${h2("was-ist-besonders", "Was ist daran besonders?")}
-      <p>Klassische Systeme fragen: Wie viele Menschen arbeiten, und wie hoch sind ihre Löhne? Die Wirkungsökonomie fragt zusätzlich: Welche Wertschöpfung entsteht, welche Wirkung hat sie, und wie wird sie in gesellschaftliche Stabilität zurückgeführt?</p>
-      <p>Damit wird Automatisierung nicht einfach bestraft. Entscheidend ist, ob sie Menschen verdrängt, stärkt, beteiligt oder entlastet.</p>
+      <article class="tool-special-box section" aria-label="Warum ist das besonders?">
+        <p class="hero-kicker">WÖk-Unterschied</p>
+        <h2 id="warum-ist-das-besonders">Warum ist das besonders?</h2>
+        <p>Klassische Systeme fragen: Wie viele Menschen arbeiten, und wie hoch sind ihre Löhne? Die Wirkungsökonomie fragt zusätzlich: Welche Wertschöpfung entsteht, welche Wirkung hat sie, und wie wird sie in gesellschaftliche Stabilität zurückgeführt?</p>
+        <p>Damit wird Automatisierung nicht einfach bestraft. Entscheidend ist, ob sie Menschen verdrängt, stärkt, beteiligt oder entlastet.</p>
+      </article>
 
       ${h2("was-diese-demo-nicht-sagt", "Was diese Demo nicht sagt")}
       <p>Diese Demo ist kein fertiges Steuer- oder Sozialmodell. Sie berechnet keine amtlichen Ansprüche, keine echte Steuerlast und keine persönliche Bewertung. Sie zeigt nur die Logik einer möglichen Rückkopplung: Wenn Arbeit als Finanzierungsbasis sinkt, muss Wertschöpfung selbst stärker in Verantwortung genommen werden.</p>

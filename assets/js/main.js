@@ -1282,6 +1282,7 @@ const ToolExplanationLayer = (() => {
     values: "Die Werte sind Orientierungshilfen. Sie zeigen Richtung, Größenordnung, schwächstes Feld oder mögliche Rückkopplung.",
     consequence: "Im WÖk-System würden gute Wirkung, Risiken und Folgekosten nicht nur beschrieben, sondern in Preise, Prioritäten, Finanzierung oder Korrekturwege zurückgeführt.",
     limits: "Die Demo ist keine amtliche Bewertung, keine Beratung, kein Audit und keine Personenbewertung. Sie ersetzt keine geprüften Daten und keine demokratische Entscheidung.",
+    special: "Heute bleiben viele Folgen hinter Preis, Reichweite, Kosten oder Reporting verborgen. Die WÖk-Logik macht sichtbar, welche Zustände sich verändern und wie diese Wirkung in bessere Entscheidungen zurückfließen könnte.",
     links: [
       ["Wirkung verstehen", "/wirkungsoekonomie.html"],
       ["SDG-/SDG+-Referenz", "/verstehen/sdgs-sdgplus/"],
@@ -1304,6 +1305,7 @@ const ToolExplanationLayer = (() => {
       steps: ["Gib Beschäftigung, Lohnsumme und Automatisierungsquote ein.", "Ergänze automatisierte Wertschöpfung, Rückkopplungsquote und Wirkungsfaktor.", "Prüfe, wie Transformationsbonus und Wirkungseinkommen das Ergebnis verändern."],
       values: "Beitragslücke zeigt die mögliche Lücke in Sozialbeiträgen. Maschinenwertschöpfungsbeitrag zeigt eine modellhafte Rückkopplung. Transformationsbonus zeigt, ob Übergänge entlastend gestaltet werden.",
       consequence: "Im WÖk-System würde Automatisierung nicht pauschal bestraft. Entscheidend wäre, ob Produktivitätsgewinne Beschäftigte, Sozialversicherung, Weiterbildung, regionale Stabilität und positive Netto-Wirkung mittragen.",
+      special: "Heute hängt Einkommen stark an Erwerbsarbeit. Das Tool zeigt, wie Einkommen und soziale Sicherung auch dann gedacht werden können, wenn Maschinen Wertschöpfung übernehmen.",
       links: [
         ["Arbeit & Einkommen", "/wirkungsfelder/arbeit-einkommen/"],
         ["Rente & soziale Sicherung", "/wirkungsfelder/rente-soziale-sicherung/"],
@@ -1323,6 +1325,7 @@ const ToolExplanationLayer = (() => {
       steps: ["Wähle den passenden Analysemodus.", "Füge Text, URL-Hinweis, Produkt- oder Unternehmensbeschreibung ein.", "Starte die Ersteinschätzung und lies Ergebnis, Datenlücken und Grenzen zusammen."],
       values: "Frames, Datenqualitätsstufen und Risikohinweise sind Lesespuren. Sie zeigen, wo Wirkung geprüft werden müsste - nicht, dass ein endgültiges Urteil feststeht.",
       consequence: "Im WÖk-System würde aus einer unklaren Aussage oder einem Produktversprechen eine prüfbare Wirkungsfrage: Welche Daten fehlen, wer ist betroffen, welche Rückkopplung wäre angemessen?",
+      special: "Heute werden Texte, Produkte oder Unternehmen oft isoliert betrachtet. Der Scanner zeigt, welche Wirkungspfade, Datenlücken und Zielkonflikte geprüft werden müssten, bevor eine belastbare Bewertung möglich ist.",
       links: [
         ["Wirkung", "/begriffe/wirkung/"],
         ["Wirkungsbewertung", "/begriffe/wirkungsbewertung/"],
@@ -1405,7 +1408,8 @@ const ToolExplanationLayer = (() => {
       difference: "Die Wirkungsökonomie koppelt Wirkung zurück: Schlechte Wirkung wird teurer, bessere Wirkung kann entlastet werden. Das schwächste Feld kann nicht durch gute Durchschnittswerte verdeckt werden.",
       steps: ["Wähle ein Produkt.", "Wähle Lieferanten oder nutze eine Schnellauswahl.", "Vergleiche Score, schwächstes Feld, Steuerklasse und Gesamtpreis."],
       values: "Score und Steuerklasse zeigen keine amtliche Einstufung. Sie zeigen modellhaft, wie die schlechteste relevante Wirkung den Gesamtpreis beeinflussen könnte.",
-      consequence: "Im WÖk-System hätten Unternehmen einen wirtschaftlichen Grund, bessere Lieferanten, Materialien und Prozesse zu wählen, weil Wirkung im Preis sichtbar wird."
+      consequence: "Im WÖk-System hätten Unternehmen einen wirtschaftlichen Grund, bessere Lieferanten, Materialien und Prozesse zu wählen, weil Wirkung im Preis sichtbar wird.",
+      special: "Heute zeigt der Preis meist nur Kosten, Marge und Steuer. Das Tool zeigt, welche sozialen, ökologischen und gesundheitlichen Wirkungen im Preis unsichtbar bleiben."
     },
     media: {
       selector: "#medienwirkung",
@@ -1418,7 +1422,8 @@ const ToolExplanationLayer = (() => {
       difference: "Die Wirkungsökonomie bewertet nicht, ob eine Meinung erlaubt ist. Sie fragt, welche Zustandsveränderungen ein Beitrag im öffentlichen Raum wahrscheinlicher macht.",
       steps: ["Wähle ein Beispiel oder gib eigenen Text ein.", "Schalte zwischen Beispiel und eigenem Text um.", "Lies Score, Ampel, schwächstes Feld und Erklärung gemeinsam."],
       values: "Score und Ampel sind Wirkungspotenziale. Sie sind keine Faktenprüfung, keine Zensurentscheidung und kein Urteil über eine Person.",
-      consequence: "Im WÖk-System würden Medienqualität, Quellenklarheit und Diskursfähigkeit als demokratische Infrastruktur sichtbar und überprüfbar."
+      consequence: "Im WÖk-System würden Medienqualität, Quellenklarheit und Diskursfähigkeit als demokratische Infrastruktur sichtbar und überprüfbar.",
+      special: "Heute zählt vor allem Reichweite. Das Tool zeigt, dass Sprache, Frames, Emotionalisierung und Quellenklarheit Wirkungspotenziale für Vertrauen, Polarisierung und Demokratie erzeugen können."
     },
     platform: {
       selector: "#plattformwirkung",
@@ -1444,7 +1449,8 @@ const ToolExplanationLayer = (() => {
       difference: "Die Wirkungsökonomie macht Risiken früher sichtbar und verbindet sie mit Daten, Prioritäten und Rückkopplungen.",
       steps: ["Wähle eine Branche oder Lage.", "Verändere die Stressfaktoren.", "Lies Score, schwächstes Feld, Finanzierungswirkung und Resilienz zusammen."],
       values: "Die Werte zeigen keine Prognose. Sie zeigen, wie Stressfaktoren zusammenspielen und wo der Engpass liegt.",
-      consequence: "Im WÖk-System würden frühe Resilienzmaßnahmen günstiger und plausibler als spätere Notlösungen."
+      consequence: "Im WÖk-System würden frühe Resilienzmaßnahmen günstiger und plausibler als spätere Notlösungen.",
+      special: "Heute wird Nachhaltigkeit oft als Berichtspflicht verstanden. Das Tool zeigt, dass Wirkung auch Risikomanagement ist: Lieferketten, Klima, Energie und Geopolitik beeinflussen Kosten, Kapitalzugang und Zukunftsfähigkeit."
     },
     calculators: {
       selector: "#scanner",
@@ -1500,6 +1506,7 @@ const ToolExplanationLayer = (() => {
 
   function renderBefore(config) {
     const steps = (config.steps || defaults.steps).slice(0, 3).map((step) => `<li>${step}</li>`).join("");
+    const special = config.special || defaults.special;
     return `
       <aside class="tool-explanation-layer tool-explanation-before" aria-label="Werkzeugerklaerung">
         <div class="tool-explanation-head">
@@ -1516,6 +1523,11 @@ const ToolExplanationLayer = (() => {
             <ol>${steps}</ol>
           </article>
         </div>
+        <article class="tool-special-box" aria-label="Warum ist das besonders?">
+          <p class="hero-kicker">WÖk-Unterschied</p>
+          <h2>Warum ist das besonders?</h2>
+          <p>${special}</p>
+        </article>
       </aside>
     `;
   }
@@ -1793,7 +1805,95 @@ const ResultInterpretationLayer = (() => {
   return { init, apply };
 })();
 
+const ToolSpecialBoxLayer = (() => {
+  const boxes = [
+    {
+      pagePath: "/erleben/produktwirkungsrechner/",
+      target: ".product-calculator-section",
+      text: "Heute zeigt der Preis meist nur Kosten, Marge und Steuer. Das Tool zeigt, welche sozialen, ökologischen und gesundheitlichen Wirkungen im Preis unsichtbar bleiben."
+    },
+    {
+      pagePath: "/erleben/impact-controlling-rechner/",
+      target: ".product-calculator-section",
+      text: "Heute wird Wirkung oft nachträglich berichtet. Das Tool zeigt, wie Scorecard, Netto-Wirkungs-Index und T-SROI Entscheidungen früher strukturieren können: vor Budget, Investition oder Korrektur."
+    },
+    {
+      pagePath: "/erleben/medienwirkungscheck/",
+      target: "main section.section",
+      text: "Heute zählt vor allem Reichweite. Das Tool zeigt, dass Sprache, Frames, Emotionalisierung und Quellenklarheit Wirkungspotenziale für Vertrauen, Polarisierung und Demokratie erzeugen können."
+    },
+    {
+      pagePath: "/erleben/unternehmens-wirkungscheck/",
+      target: "main section.section",
+      text: "Heute werden Unternehmen oft über Umsatz, Kosten, Risiko oder Compliance gelesen. Das Tool zeigt, wie Wertschöpfung, Lieferketten, Beschäftigung, Governance und Datenqualität als Wirkungssystem zusammenhängen."
+    },
+    {
+      pagePath: "/erleben/wirkungsrenten-rechner/",
+      target: "main section.section",
+      text: "Heute hängt soziale Sicherung stark an Erwerbsbiografien und Beitragsjahren. Das Tool zeigt, wie Care, Bildung, Engagement, Fondsanteile und automatisierte Wertschöpfung als ergänzende Sicherungslogik denkbar werden."
+    },
+    {
+      pagePath: "/erleben/wohnwirkungsrechner/",
+      target: "main section.section",
+      text: "Heute wird Wohnen oft über Miete, Quadratmeter und Rendite betrachtet. Das Tool zeigt, dass Wohnkosten, Energie, Gesundheit, Verdrängung, Quartier und Resilienz gemeinsam über Wohnwirkung entscheiden."
+    },
+    {
+      pagePath: "/erleben/wirkungsschule-check/",
+      target: "main section.section",
+      text: "Heute wird Bildung häufig über Noten, Abschlüsse und Output gemessen. Das Tool zeigt, wie Lernräume, Teilhabe, Förderung, Demokratiepraxis und Datenethik als Wirkungsbedingungen sichtbar werden - ohne Kinder zu bewerten."
+    },
+    {
+      pagePath: "/erleben/wirkungsportfolio-generator/",
+      target: "main section.section",
+      text: "Heute dokumentieren Portfolios oft Leistungen nachträglich. Das Tool zeigt, wie Lernwege, Feedback, Reflexion und Wirkungskompetenz als Entwicklungspfad sichtbar werden, ohne daraus ein Personenranking zu machen."
+    },
+    {
+      pagePath: "/erleben/fach-zukunft-generator/",
+      target: "main section.section",
+      text: "Heute werden Fächer oft getrennt geplant. Das Tool zeigt, wie lokale Fragen, SDGs, Demokratiebezug und Ergebnisformate zu Lernfeldern verbunden werden können."
+    },
+    {
+      pagePath: "/erleben/wirkungsfoerderungs-check/",
+      target: "main section.section",
+      text: "Heute setzt Förderung häufig erst ein, wenn Defizite sichtbar werden. Das Tool zeigt, wie Prävention, Potenzialförderung, Mentoring und Teilhabe früher und würdiger strukturiert werden können."
+    },
+    {
+      pagePath: "/scorecard-dashboard.html",
+      target: "#dashboard",
+      text: "Heute bleiben Produktpässe, Scorecards und Lieferkettendaten oft getrennte Informationsinseln. Das Dashboard zeigt, wie Preis, Wirkung, Datenqualität und Rückkopplung als zusammenhängende Entscheidungsarchitektur lesbar werden."
+    }
+  ];
+
+  function matchesPage(config) {
+    if (!config.pagePath) return true;
+    return window.location.pathname.replace(/\/$/, "") === config.pagePath.replace(/\/$/, "");
+  }
+
+  function render(text) {
+    return `
+      <aside class="tool-special-box section" aria-label="Warum ist das besonders?">
+        <p class="hero-kicker">WÖk-Unterschied</p>
+        <h2>Warum ist das besonders?</h2>
+        <p>${text}</p>
+      </aside>
+    `;
+  }
+
+  function init() {
+    boxes.forEach((config) => {
+      if (!matchesPage(config)) return;
+      const target = document.querySelector(config.target);
+      if (!target || target.dataset.specialBoxReady === "true") return;
+      target.insertAdjacentHTML("beforebegin", render(config.text));
+      target.dataset.specialBoxReady = "true";
+    });
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
+  ToolSpecialBoxLayer.init();
   ResultInterpretationLayer.init();
 });
