@@ -1,6 +1,6 @@
 # Document Standardization Candidates
 
-Stand: 2026-05-25T20:31:23.752Z
+Stand: 2026-05-25T20:36:42.437Z
 
 Gefundene Dateien: 450
 Markierte Kandidaten: 1
