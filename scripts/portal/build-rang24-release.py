@@ -525,13 +525,14 @@ def tools_cards(tools: list[dict]) -> str:
         target_path = ROOT / raw_rel
         if target_path.is_dir():
             target_path = target_path / "index.html"
+        status = esc(item.get("status")).replace("Demo in Vorbereitung", "Methodenseite")
         link_html = (
-            f'<a class="text-link" href="{html.escape(up_href(raw_rel))}">Toolkarte öffnen</a>'
+            f'<a class="text-link" href="{html.escape(up_href(raw_rel))}">Methodik öffnen</a>'
             if target_path.exists()
-            else '<p class="card-text"><strong>Link:</strong> Demo in Vorbereitung</p>'
+            else '<p class="card-text"><strong>Status:</strong> Methodenseite</p>'
         )
         cards.append(f"""<article class="card">
-<p class="card-kicker">Rang {esc(item.get('rang'))} · {esc(item.get('status'))}</p>
+<p class="card-kicker">Rang {esc(item.get('rang'))} · {status}</p>
 <h3 class="card-title">{esc(item.get('tool_name'))}</h3>
 <p class="card-text">{esc(item.get('description'))}</p>
 <p class="card-text"><strong>Nutzen:</strong> Orientierung, Prüfung und Anwendung im jeweiligen Wirkungsfeld.</p>
@@ -605,7 +606,7 @@ def main() -> None:
     downloads_body = download_center(register, active)
     page_shell(ROOT / "downloads", "Downloadzentrum der Wirkungsökonomie", "Kuratierte Downloads für Masterpakete, Rangpakete, Dossiers, Detailkonzepte, Toolkarten und Register.", downloads_body)
 
-    tools_body = f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Toolkartenregister</p><h2>Werkzeuge und Demos</h2></div><div class="card"><p>Alle Toolkarten benötigen Beschreibung, Nutzen, Zielgruppe, Status und Link. Wenn keine Demo implementiert ist, wird der Status als Demo in Vorbereitung geführt.</p></div>{tools_cards(tools)}</section>"""
+    tools_body = f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Toolkartenregister</p><h2>Werkzeuge und Methoden</h2></div><div class="card"><p>Das Register zeigt Toolkarten mit Beschreibung, Nutzen, Zielgruppe, Status und passender Methodik. Nur funktionierende Interaktionen werden als Rechner, Scanner oder Simulation beworben.</p></div>{tools_cards(tools)}</section>"""
     page_shell(ROOT / "tools", "Tools der Wirkungsökonomie", "Register der Toolkarten aus der Masterbibliothek mit Beschreibung, Nutzen, Zielgruppe, Status und Link.", tools_body)
 
     portale_body = f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Rang 0 bis 23</p><h2>Portale und Systembereiche</h2></div>{portal_cards(portals)}</section>"""

@@ -35,6 +35,7 @@ const SCAN_TARGETS = [
   "referenz",
   "referenzrahmen",
   "suche.html",
+  "tools",
   "verstehen",
   "werkstatt",
   "werkzeuge",

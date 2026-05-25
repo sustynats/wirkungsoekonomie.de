@@ -15,7 +15,7 @@ const ROOTS = [
   "anwendungen",
 ];
 
-const CTA_PATTERN = /Online lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Rechner öffnen|Simulation starten|Seite öffnen|Mehr erfahren|Methodik öffnen|Demo öffnen/i;
+const CTA_PATTERN = /Online lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Rechner öffnen|Simulation starten|Seite öffnen|Seitenadresse|Mehr erfahren|Methodik öffnen|Demo öffnen/i;
 const TOOL_CLAIM_PATTERN = /Tool öffnen|Rechner öffnen|Simulation starten|Tool testen|Demo testen/i;
 const INTERACTIVE_HINT_PATTERN = /<(form|input|select|textarea|button)\b|data-[a-z0-9-]*(calculator|scanner|tool|quiz|simulation)|<script\b/i;
 
@@ -52,6 +52,10 @@ function attr(tag, name) {
 
 function normalizeHref(currentRel, href) {
   if (!href || href === "#") return href || "";
+  if (/^https?:\/\/(www\.)?wirkungsoekonomie\.de\//i.test(href)) {
+    const url = new URL(href);
+    return `${url.pathname}${url.hash || ""}`;
+  }
   if (/^(https?:|mailto:|tel:|javascript:)/i.test(href)) return href;
   const [targetPath, hash = ""] = href.split("#");
   if (!targetPath) return `${routeFor(currentRel)}#${hash}`;
