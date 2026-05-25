@@ -163,7 +163,48 @@ const go11DetailConcepts = [
   },
 ];
 
-const go11ToolCards = [
+const go12DetailConcepts = [
+  {
+    number: 27,
+    cluster: "Go 12",
+    slug: "staat-als-wirkungsarchitektur-resilienzstaat",
+    title: "Staat als Wirkungsarchitektur und Resilienzstaat",
+    subtitle: "Vom Reparaturstaat zur lernenden öffentlichen Rückkopplungsarchitektur für Mensch, Planet und Demokratie.",
+    source: "docs/staat-recht-demokratie/go12-detailkonzepte/online_volltext_27_27_woek_staat_recht_demokratie_staat_als_wirkungsarchitektur_resilienzstaat_detailkonzept_v1_0.md",
+    docx: "assets/downloads/27_woek_staat_recht_demokratie_staat_als_wirkungsarchitektur_resilienzstaat_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/27_woek_staat_recht_demokratie_staat_als_wirkungsarchitektur_resilienzstaat_detailkonzept_v1_0.pdf",
+    relatedTools: ["Resilienzstaat-Check", "Wirkungsfolgenabschätzungs-Check", "Wirkungshaushalt-Demo"],
+    relatedPages: ["wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/", "wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/", "wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/"],
+  },
+  {
+    number: 28,
+    cluster: "Go 12",
+    slug: "grundrechte-verhaeltnismaessigkeit-technokratieschutz",
+    title: "Grundrechte, Verhältnismäßigkeit und Schutz vor Technokratie",
+    subtitle: "Wie eine wirkungsbasierte Ordnung Freiheit, Rechtsschutz, Datenschutz und demokratische Entscheidung schützt.",
+    source: "docs/staat-recht-demokratie/go12-detailkonzepte/online_volltext_28_28_woek_staat_recht_demokratie_grundrechte_verhaeltnismaessigkeit_technokratieschutz_detailkonzept_v1_0.md",
+    docx: "assets/downloads/28_woek_staat_recht_demokratie_grundrechte_verhaeltnismaessigkeit_technokratieschutz_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/28_woek_staat_recht_demokratie_grundrechte_verhaeltnismaessigkeit_technokratieschutz_detailkonzept_v1_0.pdf",
+    relatedTools: ["Verhältnismäßigkeitsmatrix", "Technokratieschutz-Check", "LawReader / WStG-Navigator"],
+    relatedPages: ["wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/", "wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/", "wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/"],
+  },
+  {
+    number: 29,
+    cluster: "Go 12",
+    slug: "demokratie-rechtsstaat-sdgplus-wirkungsraum",
+    title: "Demokratie, Rechtsstaat und SDG+ als Wirkungsraum",
+    subtitle: "Warum demokratische Stabilität, Rechtsstaatlichkeit und SDG+ zentrale Wirkungsbedingungen sind.",
+    source: "docs/staat-recht-demokratie/go12-detailkonzepte/online_volltext_29_29_woek_staat_recht_demokratie_demokratie_rechtsstaat_sdgplus_wirkungsraum_detailkonzept_v1_0.md",
+    docx: "assets/downloads/29_woek_staat_recht_demokratie_demokratie_rechtsstaat_sdgplus_wirkungsraum_detailkonzept_v1_0.docx",
+    pdf: "assets/downloads/29_woek_staat_recht_demokratie_demokratie_rechtsstaat_sdgplus_wirkungsraum_detailkonzept_v1_0.pdf",
+    relatedTools: ["Demokratie-Wirkungscheck", "SDG+-Referenzcheck", "Wirkungsrat-Schema"],
+    relatedPages: ["wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/", "wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/", "wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/"],
+  },
+];
+
+const stateDetailConcepts = [...go11DetailConcepts.map((concept) => ({ ...concept, cluster: "Go 11" })), ...go12DetailConcepts];
+
+const stateToolCards = [
   ["LawReader / WStG-Navigator", "Online vorhanden", "werkstatt/gesetze/wirkungssteuergesetz/", "Gesetzestext, Paragrafenanker, Begründung und Verweise lesbar machen."],
   ["Wirkungsfolgenabschätzungs-Check", "Demo in Vorbereitung", "werkzeuge/politische-wirkungspruefung/", "Gesetze, Programme und Haushalte vorab auf Wirkungsprofil, Nebenwirkungen und Korrekturbedarf prüfen."],
   ["Wirkungshaushalt-Demo", "Demo in Vorbereitung", "werkzeuge/wirkungshaushalt/", "Öffentliche Mittel nach Zielrahmen, WÖk-ID-Bezug, Wirkungspfad und Evaluation strukturieren."],
@@ -171,6 +212,11 @@ const go11ToolCards = [
   ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Indikatoren, Quellen, Versionen und Datenqualität als nachvollziehbare Wirkungsadressen ordnen."],
   ["Scorecard-Register", "Methodenseite vorhanden", "werkzeuge/scorecards/", "Bewertungsraster, Benchmarks und Nichtkompensation für Recht, Haushalt und Regulierung sichtbar machen."],
   ["T-SROI-Modul", "Methodenseite vorhanden", "werkzeuge/t-sroi/", "Prävention, Transformationswirkung und öffentliche Investitionswirkung modellhaft bewerten."],
+  ["Resilienzstaat-Check", "Demo in Vorbereitung", "werkzeuge/politische-wirkungspruefung/", "Kritische öffentliche Wirkungsfunktionen, Verwundbarkeit und Vorsorgepfade sichtbar machen."],
+  ["Verhältnismäßigkeitsmatrix", "Demo in Vorbereitung", "werkzeuge/politische-wirkungspruefung/", "Eingriff, Zweck, Datenqualität, Alternativen, Rechtsschutz und Zumutbarkeit strukturiert prüfen."],
+  ["Technokratieschutz-Check", "Demo in Vorbereitung", "werkzeuge/wirkungsrat/", "Sicherstellen, dass Wirkungsdaten Entscheidungen vorbereiten, aber Demokratie und Gerichte nicht ersetzen."],
+  ["Demokratie-Wirkungscheck", "Demo in Vorbereitung", "wirkungsfelder/medien-oeffentlichkeit/", "Demokratische Stabilität, Diskursfähigkeit, Institutionenvertrauen und Schutz vor Manipulation betrachten."],
+  ["SDG+-Referenzcheck", "Referenzseite vorhanden", "verstehen/sdgs-sdgplus/", "SDG+ als WÖk-Erweiterung mit Demokratie, Rechtsstaatlichkeit und digitaler Selbstbestimmung einordnen."],
 ];
 
 const tools = [
@@ -445,13 +491,13 @@ function toolGrid(base) {
   return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Werkzeuge</p>${sectionTitle("tools", "Werkzeuge in diesem Bereich")}<p>Diese Werkzeuge erklären Methoden und Institutionen. Sie ersetzen keine demokratische Entscheidung.</p></div>${cardGrid(base, tools.map(([title, type, text, hrefTarget, dossier]) => ({ kicker: type, title, text, href: hrefTarget, label: "Werkzeug öffnen" })).concat([{ kicker: "LawReader", title: "WStG online lesen", text: "Gesetzestext mit Paragrafen, Kurzfassung, Kommentar und Begründung.", href: "werkstatt/gesetze/wirkungssteuergesetz/", label: "LawReader öffnen" }]))}</section>`;
 }
 
-function go11ToolGrid(base, concept) {
-  const selected = concept?.relatedTools?.length ? go11ToolCards.filter(([title]) => concept.relatedTools.includes(title)) : go11ToolCards;
+function stateToolGrid(base, concept) {
+  const selected = concept?.relatedTools?.length ? stateToolCards.filter(([title]) => concept.relatedTools.includes(title)) : stateToolCards;
   return `<section class="section" aria-labelledby="go11-tools"><div class="section-header"><p class="hero-kicker">Tool- und Methodenbezug</p>${sectionTitle("go11-tools", "Kontext-Werkzeuge")}<p>Die Toolkarten zeigen, wo die Detailkonzepte methodisch anschließen. Wo noch keine Demo existiert, ist die Funktion als Vorbereitung gekennzeichnet.</p></div>${cardGrid(base, selected.map(([title, type, hrefTarget, text]) => ({ kicker: type, title, text, href: hrefTarget, label: "Öffnen" })))}</section>`;
 }
 
 function detailConceptCardGrid(base) {
-  return `<div class="card-grid three">${go11DetailConcepts.map((concept) => `<article class="card">
+  return `<div class="card-grid three">${stateDetailConcepts.map((concept) => `<article class="card">
     <p class="card-kicker">Fachdetailkonzept</p>
     <h3 class="card-title">${escapeHtml(concept.title)}</h3>
     <p class="card-text">${escapeHtml(concept.subtitle)}</p>
@@ -473,6 +519,8 @@ function crossLinkGrid(base) {
     ["Produkte & Konsum", "Produktwirkung, WUStG und Lieferkettenlogik.", "wirkungsfelder/produkte-konsum/"],
     ["Wirtschaft & Unternehmen", "Unternehmenswirkung, Governance, Risiko und Finanzmarktanschluss.", "wirkungsfelder/wirtschaft-unternehmen/"],
     ["Finanzsystem & Kapital", "Kapitalwirkung, Wirkungsfonds und Finanzierbarkeit.", "wirkungsfelder/finanzsystem-kapital/"],
+    ["Medien & Öffentlichkeit", "Medienqualität, Plattformlogik, Desinformation und demokratische Öffentlichkeit.", "wirkungsfelder/medien-oeffentlichkeit/"],
+    ["Wissenschaft, Innovation & Digitalisierung", "Datenräume, KI, Wissenschaftsintegrität und digitale öffentliche Infrastruktur.", "wirkungsfelder/wissenschaft-innovation-digitalisierung/"],
     ["Arbeit & Einkommen", "WEstG, Automatisierung und Sozialabgaben-Entkopplung.", "wirkungsfelder/arbeit-einkommen/"],
     ["Rente & soziale Sicherung", "Wirkungsrente, Lebenswirkungs-Konto und Fondslogik.", "wirkungsfelder/rente-soziale-sicherung/"],
     ["Wohnen & Stadt", "Wirkungshaushalt, kommunale Umsetzung und Rechtsschutz im Wohnraum.", "wirkungsfelder/wohnen-stadt/"],
@@ -509,7 +557,7 @@ function portalPage() {
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta("Portal")}</section>
-    <section class="section" aria-labelledby="go11-detailkonzepte"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${sectionTitle("go11-detailkonzepte", "Neue Fachdetailkonzepte")}<p>Die folgenden Fachdetailkonzepte vertiefen zentrale Rechts-, Haushalts- und Governance-Fragen des Portals. Sie ergänzen die Übersicht um vollständige fachliche Langfassungen.</p></div>${detailConceptCardGrid(base)}</section>
+    <section class="section" aria-labelledby="go11-detailkonzepte"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${sectionTitle("go11-detailkonzepte", "Neue Detailkonzepte")}<p>Der Staats-/Rechtscluster verbindet die Grundlagen zu WStG, Wirkungshaushalt und Wirkungsrat mit den Vertiefungen zu Resilienzstaat, Grundrechten, Verhältnismäßigkeit, Technokratieschutz, Demokratie und SDG+.</p></div>${detailConceptCardGrid(base)}</section>
     <section class="section" aria-labelledby="concepts"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${sectionTitle("concepts", "Zentrale Unterbereiche")}<p>Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Bewertet werden Maßnahmen, Strukturen und Wirkungsräume, nicht Menschen.</p></div>${cardGrid(base, dossiers.map((d) => ({ title: d.title, text: d.subtitle, href: `werkstatt/dossiers/staat-recht-demokratie/${d.slug}/`, label: "Dossier lesen" })))}</section>
     <section class="section narrow"><div class="scanner-notice"><strong>LawReference:</strong> Beispiele: ${lawRef(base, "§ 1 WStG", "werkstatt/gesetze/wirkungssteuergesetz/#paragraf-1", "Zweck des Gesetzes: Steuerung nach Wirkung auf Mensch, Planet und Demokratie.")} ${lawRef(base, "§ 5 WUStG", "werkstatt/leitlinien/wustg/#teil-8-finalscore", "FinalScore bestimmt die Wirkungssteuerklasse im Leitlinienmodell.")} ${lawRef(base, "§ 8 WUStG", "werkstatt/leitlinien/wustg/#teil-13-governance-wirkungsrat-und-evaluation", "Evaluation und Wirkungsrat-Governance im Leitlinienmodell.")}</div></section>
     ${toolGrid(base)}
@@ -568,12 +616,13 @@ function detailConceptPage(concept) {
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section"><div class="feature-grid">
       <article class="card"><p class="card-kicker">Einordnung</p><h2 class="card-title">Ausführliches Fachdetailkonzept</h2><p class="card-text">Diese Seite ist keine Kurznotiz und kein Portalintro. Sie enthält die vollständige öffentliche Langfassung mit Kapitelankern, Tabellen, Quellen und Downloads.</p></article>
-      <article class="card"><p class="card-kicker">Download</p><h2 class="card-title">DOCX und PDF</h2><p class="card-text">Die Downloadfassungen ergänzen den Online-Volltext als Export und Archiv.</p><div class="portal-card-actions no-print">${fileExists(concept.docx) ? `<a class="text-link" href="${href(base, concept.docx)}">DOCX herunterladen</a>` : ""}${fileExists(concept.pdf) ? `<a class="text-link" href="${href(base, concept.pdf)}">PDF herunterladen</a>` : ""}</div></article>
-      <article class="card"><p class="card-kicker">Demokratische Grenze</p><h2 class="card-title">Keine automatische Entscheidung</h2><p class="card-text">Wirkungsdaten bereiten Entscheidungen vor, ersetzen aber weder Gesetzgebung, Verwaltungsermessen noch Rechtsschutz.</p></article>
+      <article class="card"><p class="card-kicker">Download</p><h2 class="card-title">DOCX und PDF</h2><p class="card-text">Dokumenttyp: Fachdetailkonzept · Version v1.0 · öffentliche Lesefassung. Die Downloads ergänzen den Online-Volltext als Export und Archiv.</p><div class="portal-card-actions no-print">${fileExists(concept.docx) ? `<a class="text-link" href="${href(base, concept.docx)}">DOCX herunterladen</a>` : ""}${fileExists(concept.pdf) ? `<a class="text-link" href="${href(base, concept.pdf)}">PDF herunterladen</a>` : ""}</div></article>
+      <article class="card"><p class="card-kicker">Schutzbox</p><h2 class="card-title">Keine Personenbewertung</h2><p class="card-text">Kein Social Credit, keine automatische Entscheidung, keine Rechtsberatung. Wirkungsdaten bereiten Entscheidungen vor; Grundrechte, Rechtsschutz und demokratische Kontrolle bleiben erhalten.</p></article>
     </div></section>
     <section class="section narrow">${tocBlock(rendered.toc)}</section>
     <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("online-volltext", "Online-Volltext")}${rendered.html}</article></section>
-    ${go11ToolGrid(base, concept)}
+    <section class="section" aria-labelledby="state-cluster"><div class="section-header"><p class="hero-kicker">Staats-/Rechtscluster</p>${sectionTitle("state-cluster", "Verknüpfte Detailkonzepte")}</div>${detailConceptCardGrid(base)}</section>
+    ${stateToolGrid(base, concept)}
     ${crossLinkGrid(base)}
     ${politicalBlock(base)}
     ${sdgBlock()}
@@ -596,7 +645,7 @@ function toolPage(rel, title, subtitle, description, linkedDossier) {
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta("Kanonische Toolseite / Webfassung")}</section>
     <section class="section"><div class="feature-grid"><article class="card" id="funktion"><p class="card-kicker">Funktion</p><h2 class="card-title">Was es leistet ${citeAnchor("funktion")}</h2><p class="card-text">${escapeHtml(description)}</p></article><article class="card" id="grenze"><p class="card-kicker">Grenze</p><h2 class="card-title">Keine automatische Politikmaschine ${citeAnchor("grenze")}</h2><p class="card-text">Das Werkzeug bereitet Entscheidungen vor. Es ersetzt weder Parlament, Rechtsschutz noch demokratischen Diskurs.</p></article><article class="card" id="anwendung"><p class="card-kicker">Anwendung</p><h2 class="card-title">Angewendet in ${citeAnchor("anwendung")}</h2><p class="card-text">Staat, Recht & Demokratie, Produktbesteuerung, Impact Controlling, Haushalt, Gesetzgebung und Verwaltung.</p></article></div></section>
-    <section class="section" aria-labelledby="tool-detailkonzepte"><div class="section-header"><p class="hero-kicker">Fachgrundlage</p>${sectionTitle("tool-detailkonzepte", "Neue Fachdetailkonzepte")}</div>${detailConceptCardGrid(base)}</section>
+    <section class="section" aria-labelledby="tool-detailkonzepte"><div class="section-header"><p class="hero-kicker">Fachgrundlage</p>${sectionTitle("tool-detailkonzepte", "Neue Detailkonzepte")}</div>${detailConceptCardGrid(base)}</section>
     ${politicalBlock(base)}
     ${sdgBlock()}
     ${bookBlock(base)}
@@ -617,7 +666,7 @@ function workshopLibraryPage() {
       { title: "Portal Staat, Recht & Demokratie", text: "Rang-3-Portal mit Unterbereichen und Werkzeugen.", href: "wirkungsfelder/staat-recht-demokratie/" },
       { title: "Gesamtdossier Staat, Recht & Demokratie", text: "Gesamtdossier online lesbar.", href: "werkstatt/dossiers/staat-recht-demokratie/" },
       { title: "Wirkungssteuergesetz WStG", text: "LawReader mit Paragrafenankern.", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
-      ...go11DetailConcepts.map((concept) => ({ title: concept.title, text: concept.subtitle, href: `wirkungsfelder/staat-recht-demokratie/${concept.slug}/` })),
+      ...stateDetailConcepts.map((concept) => ({ title: concept.title, text: concept.subtitle, href: `wirkungsfelder/staat-recht-demokratie/${concept.slug}/` })),
       ...dossiers.map((d) => ({ title: d.title, text: d.subtitle, href: `werkstatt/dossiers/staat-recht-demokratie/${d.slug}/` })),
     ])}</section>
     ${downloadBlock(base, [
@@ -653,7 +702,7 @@ function workshopLibraryPage() {
         { kicker: "", title: "Gesamtdossier Impact Controlling", text: "Gesamtdossier mit Einzeldossiers und Tool-Spezifikation.", href: "werkzeuge/impact-controlling/dossier/" },
         { kicker: "", title: "Staat, Recht & Demokratie", text: "Portal zu Wirkung als Rechtsprinzip, WStG, Wirkungsrat und Wirkungshaushalt.", href: "wirkungsfelder/staat-recht-demokratie/" },
         { kicker: "", title: "Gesamtdossier Staat, Recht & Demokratie", text: "Gesetzesarchitektur, politische Anschlussfähigkeit, Wirkungsrat und Umsetzungsoptionen.", href: "werkstatt/dossiers/staat-recht-demokratie/" },
-        ...go11DetailConcepts.map((concept) => ({ kicker: "Staat, Recht & Demokratie", title: concept.title, text: concept.subtitle, href: `wirkungsfelder/staat-recht-demokratie/${concept.slug}/` })),
+        ...stateDetailConcepts.map((concept) => ({ kicker: "Staat, Recht & Demokratie", title: concept.title, text: concept.subtitle, href: `wirkungsfelder/staat-recht-demokratie/${concept.slug}/` })),
         { kicker: "Bildung", title: "Die Wirkungsschule", text: "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", href: "wirkungsfelder/bildung/wirkungsschule/" },
       ])}
     </section>
@@ -673,7 +722,7 @@ function updateSitemap() {
   if (!fs.existsSync(sitemapPath)) return;
   const urls = [
     "wirkungsfelder/staat-recht-demokratie/",
-    ...go11DetailConcepts.map((concept) => `wirkungsfelder/staat-recht-demokratie/${concept.slug}/`),
+    ...stateDetailConcepts.map((concept) => `wirkungsfelder/staat-recht-demokratie/${concept.slug}/`),
     "werkstatt/dossiers/staat-recht-demokratie/",
     ...dossiers.map((d) => `werkstatt/dossiers/staat-recht-demokratie/${d.slug}/`),
     "werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/",
@@ -692,7 +741,7 @@ function updateSitemap() {
 
 function build() {
   portalPage();
-  for (const concept of go11DetailConcepts) detailConceptPage(concept);
+  for (const concept of stateDetailConcepts) detailConceptPage(concept);
   dossierPage({}, true);
   for (const dossier of dossiers) dossierPage(dossier);
   toolPage("werkzeuge/wirkungsrat/index.html", "Wirkungsrat", "Wächterinstitution der Wirkungslogik.", "Der Wirkungsrat pflegt WÖk-IDs, Benchmarks, Archetypen und Evaluationslogik und schützt die Wirkungslogik vor Greenwashing, Lobbyverzerrung und technokratischer Erstarrung.", "werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/");
