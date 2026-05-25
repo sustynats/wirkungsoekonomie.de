@@ -10,6 +10,7 @@ const JS_VERSION = "20260523-nachhaltigkeit";
 const SRC = "docs/finanzsystem-kapital";
 const SOURCE = `${SRC}/source`;
 const EXTRACT = `${SRC}/docx-extracts`;
+const GO13 = `${SRC}/go13-detailkonzepte`;
 
 const documents = [
   {
@@ -80,6 +81,39 @@ const modules = [
   ["finanzkompetenz-2-0", "Finanzkompetenz 2.0 und demokratische Kontrolle", "Bürger:innen, Analyst:innen, Banken, Fonds und Aufsicht brauchen Wirkungskompetenz, Systemdenken, Datenkompetenz und KI-Finanzethik.", "Finanzkompetenz-Check"],
 ];
 
+const go13DetailConcepts = [
+  {
+    number: "30",
+    slug: "kapitalwirkung",
+    title: "Kapital als Wirkungskraft und Kapitalwirkung statt Kapitalrendite",
+    subtitle: "Kapital bleibt Werkzeug, wird aber nicht länger zum Kompass. Entscheidend ist, welche Zustandsveränderung Kapitalflüsse auslösen.",
+    md: `${GO13}/online_volltext_30_30_woek_finanzsystem_kapital_kapitalwirkung_statt_kapitalrendite_detailkonzept_v1_0.md`,
+    docx: "30_woek_finanzsystem_kapital_kapitalwirkung_statt_kapitalrendite_detailkonzept_v1_0.docx",
+    pdf: "30_woek_finanzsystem_kapital_kapitalwirkung_statt_kapitalrendite_detailkonzept_v1_0.pdf",
+    tools: ["Kapitalwirkungscheck", "Portfolio-Wirkungsrating", "WÖk-IDs", "Scorecards", "T-SROI"],
+  },
+  {
+    number: "31",
+    slug: "wirkungsfonds",
+    title: "Wirkungsfonds als Dacharchitektur",
+    subtitle: "Wirkungsfonds bündeln Kapital für Prävention, Transformation, Resilienz und Zukunftsinfrastruktur, ohne demokratische Prioritäten durch Kennzahlen zu ersetzen.",
+    md: `${GO13}/online_volltext_31_31_woek_finanzsystem_kapital_wirkungsfonds_dacharchitektur_detailkonzept_v1_0.md`,
+    docx: "31_woek_finanzsystem_kapital_wirkungsfonds_dacharchitektur_detailkonzept_v1_0.docx",
+    pdf: "31_woek_finanzsystem_kapital_wirkungsfonds_dacharchitektur_detailkonzept_v1_0.pdf",
+    tools: ["Wirkungsfonds-Simulator", "T-SROI", "NWI", "Wirkungskredit-Rechner", "WÖk-IDs"],
+  },
+  {
+    number: "32",
+    slug: "portfolio-banken-versicherungen-kapitalzugang",
+    title: "Portfolio-Wirkungsrating, Banken, Versicherungen und Kapitalzugang",
+    subtitle: "Portfolio-, Kredit- und Versicherungslogik werden mit Wirkung, Datenqualität, Resilienz und Finanzmarktanforderungen verbunden.",
+    md: `${GO13}/online_volltext_32_32_woek_finanzsystem_kapital_portfolio_banken_versicherungen_kapitalzugang_detailkonzept_v1_0.md`,
+    docx: "32_woek_finanzsystem_kapital_portfolio_banken_versicherungen_kapitalzugang_detailkonzept_v1_0.docx",
+    pdf: "32_woek_finanzsystem_kapital_portfolio_banken_versicherungen_kapitalzugang_detailkonzept_v1_0.pdf",
+    tools: ["Portfolio-Wirkungsrating", "Wirkungskredit-Rechner", "Versicherbarkeits-/Resilienzcheck", "ESG-zu-WÖk-Mapping", "KMU-Datencheck / ESG-zu-WÖk-Mapping"],
+  },
+];
+
 const toolPages = [
   ["kapitalwirkungscheck", "Kapitalwirkungscheck", "Check", "Macht sichtbar, ob eine Kapitalentscheidung positive Netto-Wirkung ermöglicht oder negative Wirkung skaliert.", "Spezifikation online"],
   ["portfolio-wirkungsrating", "Portfolio-Wirkungsrating", "Rating", "Bewertet Portfolios nach NWI, T-SROI, Resilienz, Datenqualität, Transformationspfad und roten Linien.", "Spezifikation online"],
@@ -92,6 +126,7 @@ const toolPages = [
 
 const contextTools = [
   ...toolPages.map(([slug, title, type, text, status]) => ({ title, type, text, href: `werkzeuge/${slug}/`, status })),
+  { title: "KMU-Datencheck / ESG-zu-WÖk-Mapping", type: "Mapping", text: "Übersetzt vorhandene ESG-, CSRD-, ESRS- und KMU-Datenanforderungen in einfache WÖk-Datenpfade.", href: "werkzeuge/esg-zu-woek-mapping/", status: "Demo in Vorbereitung" },
   { title: "T-SROI", type: "Methode", text: "Bewertet Transformationswirkung und Systemhebel im Verhältnis zum Ressourceneinsatz.", href: "werkzeuge/impact-controlling/t-sroi/", status: "Erklärung vorhanden" },
   { title: "NWI", type: "Index", text: "Ordnet operative Netto-Wirkung über positive, negative und neutrale Wirkungen ein.", href: "werkzeuge/netto-wirkungs-index/", status: "Erklärung vorhanden" },
   { title: "WÖk-IDs", type: "Datenarchitektur", text: "Verbinden Wirkungsindikatoren, SDGs, SDG+, Quellen, Standards und Bewertungslogik.", href: "werkzeuge/woek-ids/", status: "Erklärung vorhanden" },
@@ -401,9 +436,24 @@ function downloadLinks(base, doc) {
     .join("");
 }
 
+function go13DownloadLinks(base, concept) {
+  return [concept.docx, concept.pdf]
+    .filter((file) => exists(`assets/downloads/${file}`))
+    .map((file) => `<a class="btn btn-secondary" href="${href(base, `assets/downloads/${file}`)}">${file.endsWith(".pdf") ? "PDF herunterladen" : "Word herunterladen"}</a>`)
+    .join("");
+}
+
+function go13DownloadBlock(base, concept) {
+  const rows = [
+    ["DOCX", concept.docx],
+    ["PDF", concept.pdf],
+  ].map(([type, file]) => `<tr><th scope="row">${esc(type)}</th><td>${exists(`assets/downloads/${file}`) ? `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>` : "in Vorbereitung"}</td></tr>`).join("");
+  return `<section class="section" aria-labelledby="go13-downloads"><div class="card"><p class="hero-kicker">Download / Export</p>${h2("go13-downloads", "Detailkonzept herunterladen")}<p>Der Online-Volltext ist der Hauptzugang. DOCX und PDF ergänzen die Lesefassung als Export und Archiv.</p><div class="table-wrap" role="region" aria-label="Downloads zum Detailkonzept" tabindex="0"><table class="data-table"><tbody>${rows}</tbody></table></div></div></section>`;
+}
+
 function downloads(base) {
-  const rows = documents.map((doc) => `<tr><th scope="row">${esc(doc.shortTitle)}</th><td>${doc.key === "quellen" ? "Online-Quellenregister" : "Arbeitsfassung"}</td><td>${doc.downloads.filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>") || "Kein separater Download erforderlich"}</td></tr>`).join("");
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${h2("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word- und Markdown-Dateien bleiben ergänzende Export- und Archivfassungen.</p><div class="table-wrap" role="region" aria-label="Downloadbereich" tabindex="0"><table class="data-table"><thead><tr><th>Dokument</th><th>Status</th><th>Download</th></tr></thead><tbody>${rows}</tbody></table></div><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button></div></div></section>`;
+  const rows = documents.map((doc) => `<tr><th scope="row">${esc(doc.shortTitle)}</th><td>${doc.key === "quellen" ? "Online-Quellenregister" : "Fassung"}</td><td>${doc.downloads.filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>") || "Kein separater Download erforderlich"}</td></tr>`).join("");
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Dossier & Export</p>${h2("downloads", "Downloads und Druck")}<p>Online-Volltext ist der Hauptzugang. Word- und Markdown-Dateien bleiben ergänzende Export- und Archivfassungen.</p><div class="table-wrap" role="region" aria-label="Downloadbereich" tabindex="0"><table class="data-table"><thead><tr><th>Dokument</th><th>Fassung</th><th>Download</th></tr></thead><tbody>${rows}</tbody></table></div><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button></div></div></section>`;
 }
 
 function documentUrl(doc) {
@@ -411,9 +461,15 @@ function documentUrl(doc) {
 }
 
 function publicationAccess(base) {
-  const items = documents.map((doc) => [doc.shortTitle, "Online-Volltext", doc.description, documentUrl(doc), "Online lesen"]);
-  const tableRows = documents.map((doc) => `<tr><th scope="row">${esc(doc.shortTitle)}</th><td><a href="${href(base, documentUrl(doc))}">online lesen</a></td><td>${doc.downloads.filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>") || "Online-Seite"}</td></tr>`).join("");
+  const go13Items = go13DetailConcepts.map((concept) => [concept.title, "Detailkonzept v1.0", concept.subtitle, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`, "Online lesen"]);
+  const items = [...go13Items, ...documents.map((doc) => [doc.shortTitle, "Online-Volltext", doc.description, documentUrl(doc), "Online lesen"])];
+  const go13Rows = go13DetailConcepts.map((concept) => `<tr><th scope="row">${esc(concept.title)}</th><td><a href="${href(base, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`)}">online lesen</a></td><td>${[concept.docx, concept.pdf].filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>")}</td></tr>`).join("");
+  const tableRows = `${go13Rows}${documents.map((doc) => `<tr><th scope="row">${esc(doc.shortTitle)}</th><td><a href="${href(base, documentUrl(doc))}">online lesen</a></td><td>${doc.downloads.filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a href="${href(base, `assets/downloads/${file}`)}">${esc(file)}</a>`).join("<br>") || "Online-Seite"}</td></tr>`).join("")}`;
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", "Online lesen und herunterladen")}<p>Alle zentralen Dokumente sind online lesbar und über Abschnittsanker zitierfähig. Downloads sind Export und Archiv, nicht der Hauptzugang.</p></div>${cards(base, items)}<div class="table-wrap no-print" role="region" aria-label="Publikationszugang: Online lesen und herunterladen" tabindex="0"><table class="data-table"><thead><tr><th>Dokument</th><th>Online lesen</th><th>Download</th></tr></thead><tbody>${tableRows}</tbody></table></div></section>`;
+}
+
+function go13DetailGrid(base) {
+  return `<section class="section" aria-labelledby="go13-detailkonzepte"><div class="section-header"><p class="hero-kicker">Vertiefungen v1.0</p>${h2("go13-detailkonzepte", "Neue Detailkonzepte zu Finanzsystem & Kapital")}<p>Diese drei Fassungen sind die neuen fachlichen Vertiefungen für Kapitalwirkung, Wirkungsfonds und Kapitalzugang. Bestehende Portaltexte bleiben als Einstieg und Themenlandkarte erhalten.</p></div><div class="card-grid three">${go13DetailConcepts.map((concept) => `<article class="card"><p class="card-kicker">Detailkonzept · v1.0</p><h3 class="card-title">${esc(concept.title)}</h3><p class="card-text">${esc(concept.subtitle)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/finanzsystem-kapital/${concept.slug}/`)}">Online lesen</a><a class="text-link" href="${href(base, `assets/downloads/${concept.pdf}`)}">PDF</a><a class="text-link" href="${href(base, `assets/downloads/${concept.docx}`)}">Word</a></div></article>`).join("")}</div></section>`;
 }
 
 function sdgBadge(base, [id, label, text, url], index) {
@@ -445,6 +501,12 @@ function toolGrid(base) {
   return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Kontext-Werkzeuge</p>${h2("tools", "Werkzeuge in diesem Bereich")}<p>Die Werkzeuge sind Modell- und Planungshilfen. Sie ersetzen keine Anlageberatung, keine Kreditentscheidung, keine Steuerberatung, kein Versicherungsrating und keine Aufsichtsentscheidung.</p></div>${cards(base, items)}</section>`;
 }
 
+function go13ToolGrid(base, concept) {
+  const wanted = new Set(concept.tools);
+  const tools = contextTools.filter((tool) => wanted.has(tool.title));
+  return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Kontext-Werkzeuge</p>${h2("tools", "Werkzeuge zu diesem Detailkonzept")}<p>Die Werkzeuge sind Modell- und Planungshilfen. Sie ersetzen keine Anlageberatung, keine Kreditentscheidung, keine Steuerberatung, kein Versicherungsrating und keine Aufsichtsentscheidung.</p></div>${cards(base, tools.map((tool) => [tool.title, `${tool.type} · ${tool.status}`, tool.text, tool.href, "Toolseite öffnen"]))}</section>`;
+}
+
 function moduleGrid(base) {
   return `<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Zentrale Unterbereiche online lesen")}<p>Jeder Unterbereich besitzt eine eigene Online-Seite mit Detailkonzept, Einzeldossier, Downloads, SDG-/SDG+-Block, Buchankern und Toolbezug.</p></div><div class="card-grid three">${modules.map(([slug, title, text]) => `<article class="card"><p class="card-kicker">Detailkonzept + Dossier</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `wirkungsfelder/finanzsystem-kapital/${slug}/`)}">Online lesen</a><a class="text-link" href="${href(base, `wirkungsfelder/finanzsystem-kapital/detailkonzepte/#detail-${slugify(title)}`)}">Detailkonzept</a><a class="text-link" href="${href(base, `wirkungsfelder/finanzsystem-kapital/dossiers/#dossier-einzeldossier-${slugify(title)}`)}">Dossier</a></div></article>`).join("")}</div></section>`;
 }
@@ -463,17 +525,17 @@ function relatedBlock(base) {
 
 function rankBlock() {
   const rows = [
-    ["Produktbesteuerung / WUStG", "Rang 1 Produkte & Konsum + Rang 3 Staat/Recht"],
-    ["Impact Controlling / WÖk-IDs", "Rang 2 Werkzeuge"],
-    ["WStG / Wirkungsrat / Wirkungshaushalt", "Rang 3 Staat, Recht & Demokratie"],
-    ["Unternehmenssteuern / Kapitalmarktdruck", "Rang 4 Wirtschaft & Unternehmen + Rang 12 Finanzsystem & Kapital"],
-    ["Sozialabgaben-Entkopplung / Automatisierung", "Rang 6 Arbeit & Einkommen + Rang 4 Unternehmen + Rang 12 Finanzierbarkeit"],
-    ["Wirkungsrente", "Rang 7 Rente & soziale Sicherung"],
+    ["Produktbesteuerung / WUStG", "Produkte & Konsum + Staat/Recht"],
+    ["Impact Controlling / WÖk-IDs", "Werkzeuge"],
+    ["WStG / Wirkungsrat / Wirkungshaushalt", "Staat, Recht & Demokratie"],
+    ["Unternehmenssteuern / Kapitalmarktdruck", "Wirtschaft & Unternehmen + Finanzsystem & Kapital"],
+    ["Sozialabgaben-Entkopplung / Automatisierung", "Arbeit & Einkommen + Unternehmen + Finanzierbarkeit"],
+    ["Wirkungsrente", "Rente & soziale Sicherung"],
     ["Bildung, Gesundheit, Wohnen", "Jeweilige Wirkungsfelder plus Finanzierungsseite"],
-    ["Wirkungsvermögensteuer / Wirkungserbschaftsteuer", "Rang 12 Finanzsystem & Kapital + Rang 3 Staat/Recht"],
-    ["Wirkungsfonds", "Rang 12 Finanzsystem & Kapital als Querschnitt, zusätzlich in allen Fachportalen verlinkt"],
+    ["Wirkungsvermögensteuer / Wirkungserbschaftsteuer", "Finanzsystem & Kapital + Staat/Recht"],
+    ["Wirkungsfonds", "Finanzsystem & Kapital als Querschnitt, zusätzlich in allen Fachportalen verlinkt"],
   ];
-  return `<section class="section" aria-labelledby="rang-zuordnung"><div class="card"><p class="hero-kicker">Portalzuordnung</p>${h2("rang-zuordnung", "Rang- und Querschnittslogik")}<div class="table-wrap" role="region" aria-label="Rang- und Portalzuordnung" tabindex="0"><table class="data-table"><thead><tr><th>Thema</th><th>Zuordnung</th></tr></thead><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></div></section>`;
+  return `<section class="section" aria-labelledby="portal-zuordnung"><div class="card"><p class="hero-kicker">Portalzuordnung</p>${h2("portal-zuordnung", "Portal- und Querschnittslogik")}<div class="table-wrap" role="region" aria-label="Portal- und Querschnittszuordnung" tabindex="0"><table class="data-table"><thead><tr><th>Thema</th><th>Zuordnung</th></tr></thead><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></div></section>`;
 }
 
 function protectionBlock() {
@@ -490,7 +552,7 @@ function portalPage() {
     rel: "wirkungsfelder/finanzsystem-kapital/index.html",
     title: "Finanzsystem & Kapital | Wirkungsökonomie",
     description: "Kapital als Wirkungskraft: Banken, Versicherungen, Fonds, Portfolio-Wirkungsrating, Steuer- und Abgabenarchitektur und demokratische Finanzaufsicht.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld · Rang 12</p><h1>Finanzsystem & Kapital</h1><p class="hero-subtitle">Kapital als Wirkungskraft: Banken, Versicherungen, Fonds, Portfolio-Wirkungsrating, Steuerarchitektur und demokratische Finanzaufsicht.</p><p>Kapital ist in der Wirkungsökonomie kein Feind. Es ist ein Werkzeug. Entscheidend ist, welche Zustände durch Kapitalflüsse wahrscheinlicher werden.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#publikationszugang">Online lesen</a><a class="btn btn-secondary" href="#tools">Tools öffnen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Rendite ist Folge, nicht Ziel.</h2><p class="card-text">Wirkung ist der Maßstab; Rendite bleibt ein Tragfähigkeitssignal. Finanzierbar werden soll, was positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher macht.</p></aside></div></section>${publicationAccess(base)}${toc(t)}<section class="section" aria-labelledby="portaltext"><div class="prose">${h2("portaltext", "Portaltext online lesen")}${html}</div></section>${moduleGrid(base)}${toolGrid(base)}${rankBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Finanzsystem & Kapital</h1><p class="hero-subtitle">Kapital als Wirkungskraft: Banken, Versicherungen, Fonds, Portfolio-Wirkungsrating, Steuerarchitektur und demokratische Finanzaufsicht.</p><p>Kapital ist in der Wirkungsökonomie kein Feind. Es ist ein Werkzeug. Entscheidend ist, welche Zustände durch Kapitalflüsse wahrscheinlicher werden.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#publikationszugang">Online lesen</a><a class="btn btn-secondary" href="#tools">Tools öffnen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Rendite ist Folge, nicht Ziel.</h2><p class="card-text">Wirkung ist der Maßstab; Rendite bleibt ein Tragfähigkeitssignal. Finanzierbar werden soll, was positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher macht.</p></aside></div></section>${publicationAccess(base)}${go13DetailGrid(base)}${toc(t)}<section class="section" aria-labelledby="portaltext"><div class="prose">${h2("portaltext", "Portaltext online lesen")}${html}</div></section>${moduleGrid(base)}${toolGrid(base)}${rankBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
   });
 }
 
@@ -505,7 +567,7 @@ function documentPage(doc) {
     title: `${doc.title} | Wirkungsökonomie`,
     description: `${doc.title} online lesen: zitierfähige Volltextfassung mit Download, SDG-/SDG+-Bezug, Buchankern, Quellen und Druckfunktion.`,
     type: "Online-Volltext",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/finanzsystem-kapital/")}">Finanzsystem & Kapital</a></nav><p class="hero-kicker">Online-Volltext · Arbeitsfassung</p><h1>${esc(doc.title)}</h1><p class="hero-subtitle">${esc(doc.description)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a>${downloadLinks(base, doc)}</div></div><aside class="card"><p class="card-kicker">Zitierfähig</p><h2 class="card-title">Online lesen, gezielt zitieren</h2><p class="card-text">Diese Fassung ist vollständig online lesbar. Abschnittsanker können direkt zitiert werden; Dateien bleiben Export- und Archivfassungen.</p></aside></div></section>${toc(t)}<section class="section" id="volltext" aria-labelledby="volltext-title"><div class="prose">${h2("volltext-title", `${doc.shortTitle} online lesen`)}${html}</div></section>${doc.key === "tools" || doc.key === "quellen" ? "" : moduleGrid(base)}${toolGrid(base)}${rankBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/finanzsystem-kapital/")}">Finanzsystem & Kapital</a></nav><p class="hero-kicker">Online-Volltext</p><h1>${esc(doc.title)}</h1><p class="hero-subtitle">${esc(doc.description)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a>${downloadLinks(base, doc)}</div></div><aside class="card"><p class="card-kicker">Zitierfähig</p><h2 class="card-title">Online lesen, gezielt zitieren</h2><p class="card-text">Diese Fassung ist vollständig online lesbar. Abschnittsanker können direkt zitiert werden; Dateien bleiben Export- und Archivfassungen.</p></aside></div></section>${toc(t)}<section class="section" id="volltext" aria-labelledby="volltext-title"><div class="prose">${h2("volltext-title", `${doc.shortTitle} online lesen`)}${html}</div></section>${doc.key === "tools" || doc.key === "quellen" ? "" : moduleGrid(base)}${toolGrid(base)}${rankBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
   });
 }
 
@@ -540,6 +602,18 @@ function toolPage([slug, title, type, description, status]) {
   });
 }
 
+function go13DetailPage(concept) {
+  const raw = trimCover(read(concept.md), ["## Executive Summary", "Executive Summary"]);
+  const { toc: t, html } = mdToHtml(raw, `go13-${concept.slug}-`);
+  page({
+    rel: `wirkungsfelder/finanzsystem-kapital/${concept.slug}/index.html`,
+    title: `${concept.title} | Finanzsystem & Kapital`,
+    description: `${concept.title} online lesen: vollständiges Detailkonzept mit Downloads, Quellen, Toolbezug, SDG-/SDG+-Referenz und politischer Anschlussfähigkeit.`,
+    type: "Detailkonzept",
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/finanzsystem-kapital/")}">Finanzsystem & Kapital</a></nav><p class="hero-kicker">Detailkonzept · v1.0</p><h1>${esc(concept.title)}</h1><p class="hero-subtitle">${esc(concept.subtitle)}</p><p>Öffentliche Lesefassung. Keine Rechts-, Steuer-, Anlage-, Kredit- oder Finanzberatung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a>${go13DownloadLinks(base, concept)}</div></div><aside class="card"><p class="card-kicker">Online-Volltext</p><h2 class="card-title">Vollständig lesbar und zitierfähig.</h2><p class="card-text">Abschnittsanker ermöglichen direkte Zitate; Downloads bleiben Export und Archiv.</p></aside></div></section>${toc(t)}<section class="section" id="volltext" aria-labelledby="volltext-title"><div class="prose">${h2("volltext-title", "Detailkonzept online lesen")}${html}</div></section>${go13ToolGrid(base, concept)}${rankBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${go13DownloadBlock(base, concept)}`,
+  });
+}
+
 function libraryPage() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
@@ -547,14 +621,14 @@ function libraryPage() {
     description: "Arbeitsbibliothek zum Wirkungsfeld Finanzsystem & Kapital mit Konzeptpapier, Gesamtdossier, Detailkonzepten, Einzeldossiers und Tool-Spezifikation.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Werkstatt · Wirkungsfeld</p><h1>Finanzsystem & Kapital</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Tool-Spezifikation online lesen und herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/finanzsystem-kapital/")}">Portal öffnen</a></div></div><aside class="card"><p class="card-kicker">Arbeitsbibliothek</p><h2 class="card-title">Online-Volltext vor Download.</h2><p class="card-text">Die Werkstatt sammelt die öffentlichen Arbeitsfassungen, ohne die Website zum Dateiablageort zu machen.</p></aside></div></section>${publicationAccess(base)}${moduleGrid(base)}${toolGrid(base)}${referenceBlock(base)}${bookBlock(base)}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Werkstatt · Wirkungsfeld</p><h1>Finanzsystem & Kapital</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Tool-Spezifikation online lesen und herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/finanzsystem-kapital/")}">Portal öffnen</a></div></div><aside class="card"><p class="card-kicker">Arbeitsbibliothek</p><h2 class="card-title">Online-Volltext vor Download.</h2><p class="card-text">Die Werkstatt sammelt die öffentlichen Fassungen, ohne die Website zum Dateiablageort zu machen.</p></aside></div></section>${publicationAccess(base)}${moduleGrid(base)}${toolGrid(base)}${referenceBlock(base)}${bookBlock(base)}${downloads(base)}`,
   });
 }
 
 function updateSitemap() {
   const sitemap = path.join(ROOT, "sitemap.xml");
   if (!fs.existsSync(sitemap)) return;
-  const rels = [
+  const rels = Array.from(new Set([
     "wirkungsfelder/finanzsystem-kapital/",
     "wirkungsfelder/finanzsystem-kapital/konzept/",
     "wirkungsfelder/finanzsystem-kapital/dossier/",
@@ -564,8 +638,9 @@ function updateSitemap() {
     "wirkungsfelder/finanzsystem-kapital/quellen/",
     "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/",
     ...modules.map(([slug]) => `wirkungsfelder/finanzsystem-kapital/${slug}/`),
+    ...go13DetailConcepts.map(({ slug }) => `wirkungsfelder/finanzsystem-kapital/${slug}/`),
     ...toolPages.map(([slug]) => `werkzeuge/${slug}/`),
-  ];
+  ]));
   let xml = fs.readFileSync(sitemap, "utf8");
   for (const rel of rels) {
     xml = xml.replace(new RegExp(`\\s*<url>\\s*<loc>${SITE}/${rel}</loc>\\s*<lastmod>[^<]+</lastmod>\\s*</url>`, "g"), "");
@@ -577,6 +652,7 @@ function updateSitemap() {
 portalPage();
 for (const doc of documents) documentPage(doc);
 modules.forEach(modulePage);
+go13DetailConcepts.forEach(go13DetailPage);
 for (const tool of toolPages) toolPage(tool);
 libraryPage();
 updateSitemap();
