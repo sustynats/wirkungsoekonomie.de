@@ -1293,6 +1293,7 @@ const ToolExplanationLayer = (() => {
     automation: {
       selector: "body",
       pagePath: "/erleben/automatisierungs-wirkungseinkommensrechner/",
+      skipIf: "[data-static-tool-intro='automation-income']",
       beforeTarget: "#rechner",
       afterTarget: "#rechner",
       title: "Warum dieser Rechner?",
@@ -1543,6 +1544,7 @@ const ToolExplanationLayer = (() => {
 
   function insert(config) {
     if (!matchesPage(config)) return;
+    if (config.skipIf && document.querySelector(config.skipIf)) return;
     const root = document.querySelector(config.selector || "body");
     if (!root || root.dataset.toolExplanationReady === "true") return;
     const beforeTarget = document.querySelector(config.beforeTarget);

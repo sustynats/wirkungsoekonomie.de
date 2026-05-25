@@ -286,7 +286,7 @@ function toolPage([slugName, title, type, summary]) {
     section: isCalculator ? "Erleben" : "Werkzeuge",
     type: isCalculator ? "Interaktiver Rechner" : "Methodenseite",
     body: (b) => isCalculator
-      ? `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Interaktiver Rechner</p><h1>${esc(title)}</h1><p class="hero-subtitle">Diese Demo zeigt modellhaft, wie Automatisierung die alte Kette Arbeit - Einkommen - Sozialbeiträge belastet und wie eine wirkungsökonomische Rückkopplung aussehen könnte.</p><p class="scanner-notice">Modellhafte Demonstration. Keine amtliche Einstufung. Keine Rechts-, Steuer- oder Sozialberatung. Keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#rechner">Rechner nutzen</a></div></div></section>${automationCalculator(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx"])}`
+      ? `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Interaktiver Rechner</p><h1>${esc(title)}</h1><p class="hero-subtitle">Diese Demo zeigt modellhaft, wie Automatisierung die alte Kette Arbeit - Einkommen - Sozialbeiträge belastet und wie eine wirkungsökonomische Rückkopplung aussehen könnte.</p><p class="scanner-notice">Modellhafte Demonstration. Keine amtliche Einstufung. Keine Rechts-, Steuer- oder Sozialberatung. Keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#rechner">Rechner nutzen</a></div></div></section>${automationIntro()}${automationCalculator(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx"])}`
       : `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Methodenseite</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><p class="scanner-notice">Methodische Einordnung. Keine amtliche Einstufung. Keine Rechts-, Steuer- oder Sozialberatung. Keine Personenbewertung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#methodik">Methodik lesen</a></div></div></section>${methodToolPage(title, summary)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, ["woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx"])}`,
   });
 }
@@ -325,6 +325,86 @@ function methodToolPage(title, summary) {
   </section>`;
 }
 
+function termTip(label, text) {
+  return `<span class="inline-help" tabindex="0" aria-label="${esc(`${label}: ${text}`)}" data-help="${esc(text)}">${esc(label)}</span>`;
+}
+
+function automationIntro() {
+  const contributionGap = termTip("Beitragslücke", "Die modellhafte Lücke, die entsteht, wenn Lohnsumme und damit Sozialbeiträge wegfallen.");
+  const machineContribution = termTip("Maschinenwertschöpfungsbeitrag", "Ein modellhafter Beitrag aus automatisierter Wertschöpfung, der soziale Sicherung, Weiterbildung oder Fonds stabilisieren könnte.");
+  const feedbackRate = termTip("Rückkopplungsquote", "Der Anteil automatisierter Wertschöpfung, der in soziale Sicherung oder Wirkungsfonds zurückgeführt wird.");
+  const impactFactor = termTip("Wirkungsfaktor", "Ein Zu- oder Abschlag, der zeigt, ob Automatisierung eher entlastet, neutral wirkt, verdrängt oder extraktiv ist.");
+  const transformationBonus = termTip("Transformationsbonus", "Eine modellhafte Entlastung, wenn Unternehmen Weiterbildung, Versetzung, Arbeitszeitmodelle oder faire Beteiligung ermöglichen.");
+  const impactIncome = termTip("Wirkungseinkommen", "Ein Einkommensmodell aus Grundsicherheit, Markteinkommen, Wirkungsbonus und Fondsanteil.");
+  const impactFund = termTip("Wirkungsfonds", "Ein Fonds, der Rückflüsse aus Wertschöpfung in Bildung, Sicherung, Weiterbildung und Transformation lenken könnte.");
+
+  return `<section class="section automation-explainer" data-static-tool-intro="automation-income" aria-labelledby="warum-rechner">
+    <div class="prose">
+      ${h2("warum-rechner", "Warum dieser Rechner?")}
+      <p>Unser heutiges Sozialsystem hängt stark an menschlicher Erwerbsarbeit. Aus Löhnen entstehen Einkommensteuer, Sozialbeiträge und Rentenansprüche. Wenn Automatisierung menschliche Arbeit ersetzt, verschwindet nicht unbedingt Wertschöpfung. Aber ein Teil der alten Finanzierungsbasis bricht weg.</p>
+      <p><strong>Die zentrale Frage lautet deshalb:</strong> Wenn Maschinen, KI und Automatisierung produktiver werden, wie bleibt gesellschaftliche Teilhabe, Einkommen und soziale Sicherung finanzierbar?</p>
+
+      ${h2("was-macht-woek-anders", "Was macht die Wirkungsökonomie anders?")}
+      <p>Die Wirkungsökonomie koppelt Einkommen und soziale Sicherung nicht nur an Erwerbsarbeit, sondern an Wirkung und Wertschöpfung. Automatisierungsgewinne würden nicht einfach vollständig beim Kapital verbleiben, sondern teilweise in eine gesellschaftliche Rückkopplung fließen: etwa über ${machineContribution}, Wirkungssteuer, ${transformationBonus} oder ein ${impactIncome}.</p>
+      <p><strong>Wichtig:</strong> Das Tool erzeugt kein Geld. Es zeigt modellhaft, wie bestehende und neue Wertschöpfung anders verteilt und rückgekoppelt werden könnte.</p>
+    </div>
+
+    <div class="section-header">
+      ${h2("woher-kaeme-das-geld", "Woher käme das Geld?")}
+      <p>Das Schaubild zeigt den Unterschied zwischen alter Sozialfinanzierung, Automatisierungsbruch und wirkungsökonomischer Rückkopplung.</p>
+    </div>
+    <div class="system-flow-diagram" aria-label="Altes System vs. WÖk-System">
+      <article class="flow-lane">
+        <p class="card-kicker">Alte Logik</p>
+        <h3>Menschliche Arbeit trägt Sicherung</h3>
+        <div class="flow-steps">
+          <span>Menschliche Arbeit</span><span>Lohn</span><span>Sozialbeiträge</span><span>Rente, Gesundheit, Pflege, Arbeitslosenversicherung</span>
+        </div>
+      </article>
+      <article class="flow-lane flow-lane-warning">
+        <p class="card-kicker">Problem bei Automatisierung</p>
+        <h3>Wert bleibt, Beiträge sinken</h3>
+        <div class="flow-steps">
+          <span>Maschine / KI ersetzt Arbeit</span><span>Lohnsumme sinkt</span><span>Sozialbeiträge sinken</span><span>${contributionGap} entsteht</span>
+        </div>
+      </article>
+      <article class="flow-lane flow-lane-positive">
+        <p class="card-kicker">WÖk-Logik</p>
+        <h3>Wertschöpfung wird rückgekoppelt</h3>
+        <div class="flow-steps">
+          <span>Automatisierte Wertschöpfung</span><span>${machineContribution} / Wirkungssteuer / ${impactFund}</span><span>soziale Sicherung, ${impactIncome}, Weiterbildung, Transformation</span>
+        </div>
+      </article>
+    </div>
+    <div class="card automation-money-note">
+      <p>Das Geld käme nicht aus dem Nichts, sondern aus der Wertschöpfung, die durch Automatisierung entsteht. Die WÖk-Frage lautet: Bleibt dieser Produktivitätsgewinn ausschließlich Kapitalrendite - oder wird ein Teil davon in gesellschaftliche Stabilität zurückgeführt?</p>
+    </div>
+
+    <div class="section-header">
+      ${h2("was-berechnet-das-tool", "Was berechnet das Tool?")}
+      <p>Die vier Module zeigen unterschiedliche Stellen derselben Wirkungsfrage: Was fällt im alten System weg, was könnte neu rückgekoppelt werden, und wie würde soziale Abfederung sichtbar?</p>
+    </div>
+    <div class="card-grid four module-explainer-grid">
+      <article class="card"><p class="card-kicker">1</p><h3>${contributionGap}</h3><p>Zeigt, wie viel klassische Sozialfinanzierung wegfallen könnte, wenn Lohnarbeit automatisiert wird.</p></article>
+      <article class="card"><p class="card-kicker">2</p><h3>${machineContribution}</h3><p>Zeigt modellhaft, welcher Anteil automatisierter Wertschöpfung in soziale Sicherung oder Wirkungsfonds zurückgeführt werden könnte. Grundlage sind ${feedbackRate} und ${impactFactor}.</p></article>
+      <article class="card"><p class="card-kicker">3</p><h3>${transformationBonus}</h3><p>Zeigt, warum nicht jede Automatisierung gleich behandelt würde. Unternehmen, die Weiterbildung, Versetzung, Arbeitszeitverkürzung oder faire Beteiligung ermöglichen, würden entlastet.</p></article>
+      <article class="card"><p class="card-kicker">4</p><h3>${impactIncome}</h3><p>Zeigt, wie Einkommen aus mehreren Quellen bestehen könnte: Grundsicherung, Markteinkommen, Wirkungsbonus und Fondsanteil.</p></article>
+    </div>
+
+    <div class="prose">
+      ${h2("was-bedeuten-die-ergebnisse", "Was bedeuten die Ergebnisse?")}
+      <p>Die Ergebniswerte sind keine amtlichen Beträge. Sie sind Lesespuren: Sie zeigen, wo das alte System anfällig wird und wie eine Rückkopplung aus Wertschöpfung, Wirkung und Übergangsschutz aussehen könnte.</p>
+
+      ${h2("was-ist-besonders", "Was ist daran besonders?")}
+      <p>Klassische Systeme fragen: Wie viele Menschen arbeiten, und wie hoch sind ihre Löhne? Die Wirkungsökonomie fragt zusätzlich: Welche Wertschöpfung entsteht, welche Wirkung hat sie, und wie wird sie in gesellschaftliche Stabilität zurückgeführt?</p>
+      <p>Damit wird Automatisierung nicht einfach bestraft. Entscheidend ist, ob sie Menschen verdrängt, stärkt, beteiligt oder entlastet.</p>
+
+      ${h2("was-diese-demo-nicht-sagt", "Was diese Demo nicht sagt")}
+      <p>Diese Demo ist kein fertiges Steuer- oder Sozialmodell. Sie berechnet keine amtlichen Ansprüche, keine echte Steuerlast und keine persönliche Bewertung. Sie zeigt nur die Logik einer möglichen Rückkopplung: Wenn Arbeit als Finanzierungsbasis sinkt, muss Wertschöpfung selbst stärker in Verantwortung genommen werden.</p>
+    </div>
+  </section>`;
+}
+
 function automationCalculator(b) {
   return `<section class="section" id="rechner" aria-labelledby="rechner-title">
     <div class="section-header">
@@ -339,7 +419,7 @@ function automationCalculator(b) {
     <div class="card-grid two" data-auto-calculator>
       <article class="card">
         <p class="card-kicker">Modul 1</p>
-        <h3 class="card-title">Beitragslücke</h3>
+        <h3 class="card-title">${termTip("Beitragslücke", "Die modellhafte Lücke, die entsteht, wenn Lohnsumme und damit Sozialbeiträge wegfallen.")}</h3>
         <label>Anzahl betroffener FTE<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
         <label>durchschnittlicher Bruttolohn pro Jahr<input type="number" min="0" step="1000" value="52000" data-auto-input="wage"></label>
         <label>Arbeitgeber-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.5" data-auto-input="employerRate"></label>
@@ -350,23 +430,27 @@ function automationCalculator(b) {
           <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">-</strong></div>
           <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">-</strong></div>
         </div>
+        <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, welcher Finanzierungsanteil im alten System gefährdet wäre, wenn Lohnarbeit wegfällt.</p>
+        <p class="why-relevant"><strong>Warum relevant?</strong> Sozialstaatliche Stabilität hängt heute stark an Lohnsumme und Erwerbsarbeit.</p>
         <p class="card-text">Betroffene Sozialbereiche: Rente, Gesundheit, Pflege und Arbeitslosenversicherung.</p>
       </article>
       <article class="card">
         <p class="card-kicker">Modul 2</p>
-        <h3 class="card-title">Maschinenwertschöpfungsbeitrag</h3>
+        <h3 class="card-title">${termTip("Maschinenwertschöpfungsbeitrag", "Ein modellhafter Beitrag aus automatisierter Wertschöpfung, der soziale Sicherung, Weiterbildung oder Fonds stabilisieren könnte.")}</h3>
         <label>automatisierte Wertschöpfung pro Jahr<input type="number" min="0" step="10000" value="3800000" data-auto-input="machineValue"></label>
-        <label>Rückkopplungsquote in Prozent<input type="number" min="0" max="100" step="0.1" value="6" data-auto-input="feedbackRate"></label>
-        <label>Wirkungsfaktor von -3 bis +3<input type="range" min="-3" max="3" step="1" value="0" data-auto-input="impactFactor"></label>
+        <label>${termTip("Rückkopplungsquote", "Der Anteil automatisierter Wertschöpfung, der in soziale Sicherung oder Wirkungsfonds zurückgeführt wird.")} in Prozent<input type="number" min="0" max="100" step="0.1" value="6" data-auto-input="feedbackRate"></label>
+        <label>${termTip("Wirkungsfaktor", "Ein Zu- oder Abschlag, der zeigt, ob Automatisierung eher entlastet, neutral wirkt, verdrängt oder extraktiv ist.")} von -3 bis +3<input type="range" min="-3" max="3" step="1" value="0" data-auto-input="impactFactor"></label>
         <div class="impact-kpis">
           <div class="impact-kpi"><span>Beitrag</span><strong data-auto-result="machineContribution">-</strong></div>
           <div class="impact-kpi"><span>Faktor</span><strong data-auto-result="impactFactorLabel">-</strong></div>
         </div>
         <p class="card-text" data-auto-result="impactReason">Der Wirkungsfaktor verändert den Beitrag je nach Entlastung oder Belastung.</p>
+        <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, welcher Betrag modellhaft aus automatisierter Wertschöpfung zurückgeführt werden könnte.</p>
+        <p class="why-relevant"><strong>Warum relevant?</strong> Produktivitätsgewinne werden als gesellschaftliche Finanzierungsfrage sichtbar, nicht nur als Kapitalrendite.</p>
       </article>
       <article class="card">
         <p class="card-kicker">Modul 3</p>
-        <h3 class="card-title">Transformationsbonus</h3>
+        <h3 class="card-title">${termTip("Transformationsbonus", "Eine modellhafte Entlastung, wenn Unternehmen Weiterbildung, Versetzung, Arbeitszeitmodelle oder faire Beteiligung ermöglichen.")}</h3>
         <label>Weiterbildungsquote in Prozent<input type="number" min="0" max="100" step="1" value="45" data-auto-input="trainingRate"></label>
         <label>interne Versetzungsquote in Prozent<input type="number" min="0" max="100" step="1" value="25" data-auto-input="redeploymentRate"></label>
         <label>Arbeitszeitmodell vorhanden<select data-auto-input="workingTimeModel"><option value="yes">ja</option><option value="no">nein</option></select></label>
@@ -377,20 +461,24 @@ function automationCalculator(b) {
           <div class="impact-kpi"><span>reduzierter Beitrag</span><strong data-auto-result="reducedContribution">-</strong></div>
           <div class="impact-kpi"><span>Wirkungsprofil</span><strong data-auto-result="profile">-</strong></div>
         </div>
+        <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt, ob Automatisierung sozial abgefedert wird oder eher verdrängend wirkt.</p>
+        <p class="why-relevant"><strong>Warum relevant?</strong> Die WÖk unterscheidet zwischen entlastender und verdrängender Automatisierung.</p>
       </article>
       <article class="card">
         <p class="card-kicker">Modul 4</p>
-        <h3 class="card-title">Wirkungseinkommensmodell</h3>
+        <h3 class="card-title">${termTip("Wirkungseinkommen", "Ein Einkommensmodell aus Grundsicherheit, Markteinkommen, Wirkungsbonus und Fondsanteil.")}</h3>
         <label>Grunddividende<input type="number" min="0" step="100" value="900" data-auto-input="baseDividend"></label>
         <label>Markteinkommen<input type="number" min="0" step="100" value="2400" data-auto-input="marketIncome"></label>
         <label>Wirkungsbonus<input type="number" min="0" step="50" value="250" data-auto-input="impactBonus"></label>
-        <label>Fondsanteil<input type="number" min="0" step="50" value="150" data-auto-input="fundShare"></label>
+        <label>Fondsanteil (${termTip("Wirkungsfonds", "Ein Fonds, der Rückflüsse aus Wertschöpfung in Bildung, Sicherung, Weiterbildung und Transformation lenken könnte.")})<input type="number" min="0" step="50" value="150" data-auto-input="fundShare"></label>
         <div class="impact-kpis">
           <div class="impact-kpi"><span>Gesamteinkommen</span><strong data-auto-result="totalIncome">-</strong></div>
           <div class="impact-kpi"><span>Grundsicherheit</span><strong data-auto-result="baseShare">-</strong></div>
           <div class="impact-kpi"><span>Markt</span><strong data-auto-result="marketShare">-</strong></div>
           <div class="impact-kpi"><span>Wirkung/Fonds</span><strong data-auto-result="impactShare">-</strong></div>
         </div>
+        <p class="interpretation-note"><strong>Was bedeutet das?</strong> Dieser Wert zeigt ein mögliches Einkommensmodell, das nicht nur Erwerbsarbeit berücksichtigt, sondern auch Grundsicherheit, Wirkung und gesellschaftliche Rückkopplung.</p>
+        <p class="why-relevant"><strong>Warum relevant?</strong> Einkommen wird als Teilhabe-, Sicherungs- und Wirkungsfrage lesbar, nicht nur als Lohnfrage.</p>
       </article>
     </div>
   </section>
