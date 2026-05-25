@@ -1282,6 +1282,7 @@ const ToolExplanationLayer = (() => {
     values: "Die Werte sind Orientierungshilfen. Sie zeigen Richtung, Größenordnung, schwächstes Feld oder mögliche Rückkopplung.",
     behindScenes: "Im Hintergrund werden Eingaben, Beispielannahmen, Datenqualität und Wirkungsdimensionen zu einer modellhaften Einordnung verbunden.",
     consequence: "Im WÖk-System würden gute Wirkung, Risiken und Folgekosten nicht nur beschrieben, sondern in Preise, Prioritäten, Finanzierung oder Korrekturwege zurückgeführt.",
+    funding: "",
     limits: "Die Demo ist keine amtliche Bewertung, keine Beratung, kein Audit und keine Personenbewertung. Sie ersetzt keine geprüften Daten und keine demokratische Entscheidung.",
     special: "Heute bleiben viele Folgen hinter Preis, Reichweite, Kosten oder Reporting verborgen. Die WÖk-Logik macht sichtbar, welche Zustände sich verändern und wie diese Wirkung in bessere Entscheidungen zurückfließen könnte.",
     links: [
@@ -1306,6 +1307,7 @@ const ToolExplanationLayer = (() => {
       steps: ["Gib Beschäftigung, Lohnsumme und Automatisierungsquote ein.", "Ergänze automatisierte Wertschöpfung, Rückkopplungsquote und Wirkungsfaktor.", "Prüfe, wie Transformationsbonus und Wirkungseinkommen das Ergebnis verändern."],
       values: "Beitragslücke zeigt die mögliche Lücke in Sozialbeiträgen. Maschinenwertschöpfungsbeitrag zeigt eine modellhafte Rückkopplung. Transformationsbonus zeigt, ob Übergänge entlastend gestaltet werden.",
       consequence: "Im WÖk-System würde Automatisierung nicht pauschal bestraft. Entscheidend wäre, ob Produktivitätsgewinne Beschäftigte, Sozialversicherung, Weiterbildung, regionale Stabilität und positive Netto-Wirkung mittragen.",
+      funding: "Aus der Wertschöpfung, die durch Automatisierung entsteht. Wenn Maschinen Arbeit ersetzen, verschwindet nicht automatisch der wirtschaftliche Nutzen. Er verschiebt sich nur: weg von Lohnarbeit hin zu Kapital- und Produktivitätsgewinnen. Die Wirkungsökonomie fragt, welcher Teil dieser Gewinne in soziale Sicherung, Weiterbildung, Transformation und Wirkungseinkommen zurückgeführt werden müsste. Das ist eine Steuer-, Beitrags-, Bonus- oder Fondsrückkopplung im Modell, keine fertige Finanzierungszusage.",
       special: "Heute hängt Einkommen stark an Erwerbsarbeit. Das Tool zeigt, wie Einkommen und soziale Sicherung auch dann gedacht werden können, wenn Maschinen Wertschöpfung übernehmen.",
       links: [
         ["Arbeit & Einkommen", "/wirkungsfelder/arbeit-einkommen/"],
@@ -1366,6 +1368,7 @@ const ToolExplanationLayer = (() => {
       steps: ["Lies zuerst die Fondslogik.", "Öffne bei Bedarf den Automatisierungsrechner.", "Prüfe politische Ausgestaltung, Schutzregeln und Grenzen getrennt."],
       values: "Diese Seite berechnet keine Fondsquote. Sie erklärt, welche Wirkungsfragen vor einer echten Ausgestaltung geklärt werden müssten.",
       consequence: "Im WÖk-System würden Fonds nicht als abstrakte Geldtöpfe erscheinen, sondern als lernfähige Brücke zwischen Wertschöpfung, Wirkung und sozialem Übergangsschutz.",
+      funding: "Angenommen wird ein Fondsmechanismus: bestehende Wertschöpfung, Kapitalerträge, Wirkungssteuern, Beiträge oder Rückflüsse aus vermiedenen Folgekosten könnten in einen Wirkungsfonds gelenkt werden. Negative Wirkung würde tendenziell höher belastet, positive Wirkung könnte entlastet oder gefördert werden. Die konkrete Finanzierung wäre eine demokratische Steuer-, Beitrags-, Bonus- oder Kapitalentscheidung, keine Zusage dieser Methodenseite.",
       limits: "Keine Rechts-, Steuer-, Anlage- oder Sozialberatung. Die konkrete Ausgestaltung bleibt demokratische Aufgabe."
     },
     machineContribution: {
@@ -1381,6 +1384,7 @@ const ToolExplanationLayer = (() => {
       steps: ["Lies die Logik des Beitrags.", "Nutze den Rechner für eine modellhafte Beispielrechnung.", "Trenne Beispielwerte, politische Entscheidung und rechtliche Ausgestaltung."],
       values: "Methodische Faktoren zeigen Richtung und Wirkungsprofil, keine amtliche Beitragshöhe.",
       consequence: "Im WÖk-System könnten Automatisierungsgewinne dort rückgekoppelt werden, wo sie Sozialbeiträge, Weiterbildung, Teilhabe und Resilienz stützen.",
+      funding: "Das Geld käme aus automatisierter Wertschöpfung, also aus Produktivitätsgewinnen, die heute häufig als Kapital- oder Unternehmensgewinn erscheinen. Der Maschinenwertschöpfungsbeitrag wäre eine modellhafte Beitrags- oder Steuerrückkopplung. Positive Übergangsgestaltung könnte entlasten, verdrängende oder extraktive Wirkung stärker belasten. Das ist keine Steuerfestsetzung und keine Finanzierungszusage.",
       limits: "Keine Steuer- oder Rechtsberatung, keine Unternehmensbewertung und keine Personenbewertung."
     },
     automationDividend: {
@@ -1396,6 +1400,7 @@ const ToolExplanationLayer = (() => {
       steps: ["Lies die Verteilungslogik.", "Vergleiche sie mit Wirkungseinkommen und Wirkungsfonds.", "Nutze Rechner nur als modellhafte Orientierung."],
       values: "Dividenden- und Fondslogiken sind Szenarien. Sie zeigen mögliche Rückkopplungen, keine garantierten Ansprüche.",
       consequence: "Im WÖk-System könnte Automatisierung stärker als Quelle gemeinsamer Zukunftsfähigkeit sichtbar werden.",
+      funding: "Die Dividende würde nicht aus dem Nichts entstehen. Sie setzt voraus, dass ein Teil automatisierter Produktivitätsgewinne, Kapitalerträge oder wirkungsbezogener Rückflüsse in einen Fonds oder Verteilmechanismus gelenkt wird. Negative Wirkung könnte höhere Rückkopplung auslösen, positive Wirkung Entlastung oder Boni. Die Demo beschreibt eine mögliche Architektur, keine Auszahlungsgarantie.",
       limits: "Keine Sozial-, Rechts-, Steuer- oder Finanzberatung. Keine automatische Entscheidung über Menschen."
     },
     product: {
@@ -1556,6 +1561,18 @@ const ToolExplanationLayer = (() => {
     return card("8. Was diese Demo nicht beweist", config.limits || defaults.limits);
   }
 
+  function FundingSourceBox(config) {
+    const text = config.funding || defaults.funding;
+    if (!text) return "";
+    return `
+      <article class="funding-source-box" aria-label="Woher kommt das Geld?">
+        <p class="hero-kicker">Finanzierungslogik</p>
+        <h3>Woher kommt das Geld?</h3>
+        <p>${text}</p>
+      </article>
+    `;
+  }
+
   function RelatedLearningPath(config) {
     const links = (config.links || defaults.links).map(([label, href]) => `<a class="text-link" href="${absoluteHref(href)}">${label}</a>`).join("");
     return `
@@ -1587,6 +1604,7 @@ const ToolExplanationLayer = (() => {
         <div class="tool-explanation-grid">
           ${ResultInterpretationCard(config)}
           ${card("7. Was würde daraus folgen?", config.consequence || defaults.consequence)}
+          ${FundingSourceBox(config)}
           ${LimitsOfDemoBox(config)}
           ${RelatedLearningPath(config)}
         </div>
@@ -1932,8 +1950,60 @@ const ToolSpecialBoxLayer = (() => {
   return { init };
 })();
 
+const FundingSourceLayer = (() => {
+  const defaultText = "Die Wirkungsökonomie nimmt kein Geld aus dem Nichts an. Finanzierungslogiken entstehen durch Rückkopplung bestehender Wertschöpfung: negative Wirkung kann höher belastet werden, positive Wirkung kann entlastet oder als Bonus sichtbar werden, und Fondsmechanismen können Mittel für soziale Sicherung, Transformation, Weiterbildung oder Wirkungseinkommen bündeln. Ob daraus Steuer, Beitrag, Bonus, Fonds oder Kapitalrückfluss wird, bleibt politische und rechtliche Ausgestaltung. Diese Demo ist keine fertige Finanzierungszusage.";
+  const automationText = "Aus der Wertschöpfung, die durch Automatisierung entsteht. Wenn Maschinen Arbeit ersetzen, verschwindet nicht automatisch der wirtschaftliche Nutzen. Er verschiebt sich nur: weg von Lohnarbeit hin zu Kapital- und Produktivitätsgewinnen. Die Wirkungsökonomie fragt, welcher Teil dieser Gewinne in soziale Sicherung, Weiterbildung, Transformation und Wirkungseinkommen zurückgeführt werden müsste.";
+
+  const entries = [
+    {
+      patterns: ["automatisierungs-wirkungseinkommensrechner", "automatisierung", "maschinenwertschoepfung", "maschinenwertschöpfung"],
+      text: `${automationText} Je nach Ausgestaltung könnte das als Steuer-, Beitrags-, Bonus- oder Fondsrückkopplung modelliert werden. Die Demo berechnet keine amtliche Zahlung und keine Finanzierungszusage.`
+    },
+    {
+      patterns: ["wirkungsfonds", "fonds"],
+      text: "Angenommen wird ein Fondsmechanismus: bestehende Wertschöpfung, Kapitalerträge, Wirkungssteuern, Beiträge oder Rückflüsse aus vermiedenen Folgekosten könnten gebündelt werden. Negative Wirkung kann höhere Rückkopplung auslösen, positive Wirkung kann entlastet oder gefördert werden. Die konkrete Fondsfinanzierung ist eine politische, rechtliche und demokratische Entscheidung, keine Zusage dieser Seite."
+    },
+    {
+      patterns: ["rente", "wirkungsrente", "soziale-sicherung", "sozialabgaben", "sozialstaat"],
+      text: "Im Renten- und Sozialstaatskontext kommt Geld nicht aus einer neuen Versprechensquelle, sondern aus einer anderen Rückkopplung von Beiträgen, Steuern, Fondsanteilen, Kapitalerträgen und Wirkungserträgen. Die WÖk-Frage lautet, welche Wertschöpfung soziale Sicherung trägt, wenn Erwerbsbiografien, Care-Arbeit, Automatisierung und Kapitalwirkung auseinanderfallen. Die Demo ist keine Rentenauskunft, keine Beitragsberechnung und keine Finanzierungszusage."
+    },
+    {
+      patterns: ["wirkungseinkommen", "arbeit-einkommen", "einkommen", "automatisierungsdividende"],
+      text: "Für Wirkungseinkommen wird angenommen, dass bestehende und neue Wertschöpfung anders rückgekoppelt wird: über Steuer-, Beitrags-, Bonus-, Fonds- oder Kapitalmechanismen. Negative Wirkung könnte stärker belastet werden, positive Wirkung entlastet oder vergütet. Das Modell beschreibt eine Finanzierungslogik, aber keine garantierte Auszahlung und keine fertige Sozialleistung."
+    }
+  ];
+
+  function pathText() {
+    const path = decodeURIComponent(window.location.pathname.toLowerCase());
+    const match = entries.find((entry) => entry.patterns.some((pattern) => path.includes(pattern)));
+    return match?.text || "";
+  }
+
+  function render(text) {
+    return `
+      <aside class="funding-source-box section" aria-label="Woher kommt das Geld?">
+        <p class="hero-kicker">Finanzierungslogik</p>
+        <h2>Woher kommt das Geld?</h2>
+        <p>${text}</p>
+      </aside>
+    `;
+  }
+
+  function init() {
+    if (document.querySelector(".funding-source-box")) return;
+    const text = pathText();
+    if (!text) return;
+    const target = document.querySelector(".tool-explanation-after") || document.querySelector(".citation-note") || document.querySelector("main > .section:nth-of-type(2)") || document.querySelector("main > .section");
+    if (!target) return;
+    target.insertAdjacentHTML(target.classList.contains("tool-explanation-after") ? "beforebegin" : "afterend", render(text));
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
+  FundingSourceLayer.init();
   ResultInterpretationLayer.init();
 });

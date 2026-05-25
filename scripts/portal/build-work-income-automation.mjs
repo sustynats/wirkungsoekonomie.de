@@ -350,7 +350,7 @@ function automationIntro() {
     </div>
 
     <div class="section-header">
-      ${h2("woher-kaeme-das-geld", "Woher käme das Geld?")}
+      ${h2("woher-kommt-das-geld", "Woher kommt das Geld?")}
       <p>Das Schaubild zeigt den Unterschied zwischen alter Sozialfinanzierung, Automatisierungsbruch und wirkungsökonomischer Rückkopplung.</p>
     </div>
     <div class="system-flow-diagram" aria-label="Altes System vs. WÖk-System">
@@ -376,8 +376,11 @@ function automationIntro() {
         </div>
       </article>
     </div>
-    <div class="card automation-money-note">
-      <p>Das Geld käme nicht aus dem Nichts, sondern aus der Wertschöpfung, die durch Automatisierung entsteht. Die WÖk-Frage lautet: Bleibt dieser Produktivitätsgewinn ausschließlich Kapitalrendite - oder wird ein Teil davon in gesellschaftliche Stabilität zurückgeführt?</p>
+    <div class="funding-source-box automation-money-note">
+      <p class="hero-kicker">Finanzierungslogik</p>
+      <h3>Woher kommt das Geld?</h3>
+      <p>Aus der Wertschöpfung, die durch Automatisierung entsteht. Wenn Maschinen Arbeit ersetzen, verschwindet nicht automatisch der wirtschaftliche Nutzen. Er verschiebt sich nur: weg von Lohnarbeit hin zu Kapital- und Produktivitätsgewinnen. Die Wirkungsökonomie fragt, welcher Teil dieser Gewinne in soziale Sicherung, Weiterbildung, Transformation und Wirkungseinkommen zurückgeführt werden müsste.</p>
+      <p>Je nach Ausgestaltung kann das als Steuer-, Beitrags-, Bonus-, Fonds- oder Kapitalrückkopplung gedacht werden. Negative Wirkung könnte höher belastet werden, positive Wirkung entlastet. Die Demo ist keine fertige Finanzierungszusage.</p>
     </div>
 
     <div class="section-header">

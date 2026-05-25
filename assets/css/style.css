@@ -9830,6 +9830,44 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   line-height: 1.65;
 }
 
+.funding-source-box {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  border: 1px solid rgba(185, 94, 30, 0.22);
+  border-left: 4px solid rgba(185, 94, 30, 0.72);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(255, 247, 237, 0.88), rgba(255, 255, 255, 0.94)),
+    var(--surface, #fff);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.055);
+}
+
+.funding-source-box.section {
+  margin-top: clamp(1.2rem, 3vw, 2rem);
+  margin-bottom: clamp(1.2rem, 3vw, 2rem);
+}
+
+.funding-source-box h2,
+.funding-source-box h3 {
+  margin: 0.2rem 0 0.5rem;
+  letter-spacing: 0;
+}
+
+.funding-source-box h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+}
+
+.funding-source-box h3 {
+  font-size: 1rem;
+}
+
+.funding-source-box p:last-child {
+  max-width: 82ch;
+  margin-bottom: 0;
+  color: var(--text-muted, #475569);
+  line-height: 1.65;
+}
+
 .tool-card-overview .tool-summary-card {
   display: flex;
   flex-direction: column;
