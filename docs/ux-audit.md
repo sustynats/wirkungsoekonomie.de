@@ -1,6 +1,6 @@
 # UX-, Seitenrollen- und Template-Audit
 
-Stand: 2026-05-25T19:56:40.795Z
+Stand: 2026-05-25T20:12:23.441Z
 
 ## Seitentypen
 

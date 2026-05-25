@@ -1,6 +1,6 @@
 # Term Coverage Audit
 
-Stand: 2026-05-25T19:56:40.333Z
+Stand: 2026-05-25T20:12:25.177Z
 
 - Pflichtbegriffe: 25
 - Im Begriffsregister: 25

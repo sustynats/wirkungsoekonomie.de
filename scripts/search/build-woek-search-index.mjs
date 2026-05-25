@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
 const glossaryPath = "public/data/glossary.terms.json";
+const contentRegistryPath = "assets/data/content-registry.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
@@ -108,7 +109,42 @@ function entryFromTerm(term) {
     tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || [])].filter(Boolean),
     aliases: [...(term.synonyms || []), term.hoverDefinition],
     body,
-    priority: term.status === "führender-begriff" ? 140 : 110,
+    priority: term.status === "führender-begriff" ? 1000 : 900,
+  };
+}
+
+function entryFromRegistry(item) {
+  if (!item?.url || item.pageType === "begriff" || !item.isSearchable) return null;
+  const priority = {
+    wirkungsfeld: 820,
+    tool: item.status === "interactive" ? 780 : 520,
+    kompass: 720,
+    verstehen: 680,
+    akademie: 620,
+    landing: item.url === "/" ? 700 : 540,
+    methode: 500,
+    detailkonzept: 420,
+    dossier: 340,
+    "download-bibliothek": 300,
+    journal: 260,
+    legal: 80,
+    suche: 100,
+  }[item.pageType] || 300;
+  return {
+    id: `woek-registry-${hash(item.url)}`,
+    title: item.title,
+    description: item.description || item.title,
+    url: item.url,
+    section: publicSectionLabel(item.pageType, item.pageType),
+    type: item.pageType,
+    format: item.pageType,
+    impactSpaces: [],
+    standards: (item.topics || []).filter((topic) => /^SDG/i.test(topic)),
+    instruments: item.relatedTools || [],
+    tags: [item.pageType, item.status, ...(item.terms || []), ...(item.topics || [])].filter(Boolean),
+    aliases: [...(item.terms || []), ...(item.relatedTerms || [])],
+    body: [item.title, item.description, ...(item.terms || []), ...(item.topics || [])].join(" "),
+    priority,
   };
 }
 
@@ -133,6 +169,8 @@ function routeFor(file) {
 function entriesFromContent(file) {
   const text = fs.readFileSync(file, "utf8");
   const route = routeFor(file);
+  const registryItem = contentRegistryByUrl.get(route);
+  if (registryItem && ["hidden", "draft"].includes(registryItem.status)) return [];
   const title =
     text.match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     clean(text.match(/<h1[^>]*>(.*?)<\/h1>/i)?.[1]) ||
@@ -158,21 +196,31 @@ function entriesFromContent(file) {
     sourceFile: file,
     contentHash: hash(text),
   };
+  const pageType = registryItem?.pageType || documentType;
+  const statusForSearch = registryItem?.status || status;
+  const registryBoost =
+    pageType === "begriff" ? 80 :
+    pageType === "wirkungsfeld" ? 45 :
+    pageType === "tool" && statusForSearch === "interactive" ? 50 :
+    pageType === "methode" ? 20 :
+    pageType === "akademie" || pageType === "kompass" || pageType === "verstehen" ? 30 :
+    pageType === "dossier" || pageType === "download-bibliothek" ? -20 :
+    statusForSearch === "archive" ? -35 : 0;
   const pageEntry = {
     id: `woek-page-${hash(file)}`,
     title,
     description: body.slice(0, 240),
     url: route,
-    section: documentType,
-    type: documentType,
+    section: publicSectionLabel(pageType, documentType),
+    type: pageType,
     format: documentType,
     impactSpaces: [],
     standards: [],
     instruments: [],
-    tags: [status, version, "WÖk-Referenz"],
+    tags: [statusForSearch, pageType, version, "WÖk-Referenz"],
     aliases: [],
     body,
-    priority: 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
+    priority: 70 + liveBoost + registryBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
   if (isFulltext) {
@@ -195,14 +243,16 @@ function entriesFromContent(file) {
       description: sectionBody.slice(0, 240) || pageEntry.description,
       url: `${route}#${sectionId}`,
       body: sectionBody || pageEntry.body,
-      priority: 85 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
+      priority: 85 + liveBoost + registryBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
     });
   }
-  return entries.map((entry) => ({ entry, meta: { ...base, sectionId: entry.id.replace(/^woek-section-/, "") } }));
+  return entries.map((entry) => ({ entry, meta: { ...base, pageType, status: statusForSearch, sectionId: entry.id.replace(/^woek-section-/, "") } }));
 }
 
 const existing = fs.existsSync(indexPath) ? JSON.parse(fs.readFileSync(indexPath, "utf8")) : [];
 const glossary = fs.existsSync(glossaryPath) ? JSON.parse(fs.readFileSync(glossaryPath, "utf8")).terms : [];
+const contentRegistry = fs.existsSync(contentRegistryPath) ? JSON.parse(fs.readFileSync(contentRegistryPath, "utf8")).entries || [] : [];
+const contentRegistryByUrl = new Map(contentRegistry.map((entry) => [entry.url, entry]));
 const generated = [];
 const meta = {};
 
@@ -222,6 +272,24 @@ for (const term of glossary) {
   };
 }
 
+for (const item of contentRegistry) {
+  const entry = entryFromRegistry(item);
+  if (!entry) continue;
+  generated.push(entry);
+  meta[entry.url] = {
+    documentType: item.pageType,
+    pageType: item.pageType,
+    status: item.status,
+    version: "2026.1",
+    sectionId: item.id,
+    documentId: item.id,
+    relatedTerms: item.relatedTerms || [],
+    relatedDocuments: [],
+    sourceFile: item.sourceFile,
+    searchBoost: entry.priority,
+  };
+}
+
 const contentFiles = ["src/content/docs", "referenz", "dokumente", "instrumente", "beispiele", "quellen", "export"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
@@ -234,9 +302,30 @@ for (const file of contentFiles) {
 const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
 for (const entry of generated) byUrl.set(entry.url, entry);
 const merged = Array.from(byUrl.values())
+  .filter((entry) => {
+    const registryItem = contentRegistryByUrl.get(String(entry.url || "").replace(/#.*$/, ""));
+    return !registryItem || !["hidden", "draft"].includes(registryItem.status);
+  })
   .map(publicSearchValue)
   .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
 
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
 fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: meta }, null, 2)}\n`);
 console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);
+
+function publicSectionLabel(pageType, fallback) {
+  return {
+    begriff: "Begriffe",
+    wirkungsfeld: "Wirkungsfelder",
+    tool: "Werkzeuge",
+    methode: "Methoden",
+    akademie: "Akademie",
+    kompass: "Verstehen",
+    verstehen: "Verstehen",
+    dossier: "Veröffentlichungen",
+    detailkonzept: "Detailkonzepte",
+    "download-bibliothek": "Bibliothek",
+    suche: "Suche",
+    landing: "Grundlagen",
+  }[pageType] || fallback;
+}

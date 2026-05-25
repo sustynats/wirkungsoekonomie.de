@@ -33,10 +33,10 @@ if (siteNav) {
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/"],
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
-    ["Werkzeuge", "werkzeuge/", "werkzeuge/|erleben.html|erleben/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
+    ["Ausprobieren", "erleben.html", "erleben.html|erleben/|anwendungen/|scanner.html|anwendungen/scanner.html|werkzeuge/|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
-    ["Werkstatt / Downloads", "werkstatt/", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/"],
-    ["Mitmachen", "mitmachen.html", "mitmachen.html|mitmachen/|ueber.html|ueber/"],
+    ["Bibliothek", "fachbibliothek/", "fachbibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|werkstatt/|evidenz/|quellen/"],
+    ["Suche", "suche.html", "suche.html"],
   ];
   siteNav.innerHTML = navItems
     .map(([label, url, match]) => `<a href="${relativeSiteUrl(url)}" data-nav-match="${match}">${label}</a>`)
