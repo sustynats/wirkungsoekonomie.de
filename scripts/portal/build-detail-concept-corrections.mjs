@@ -105,7 +105,7 @@ const bookAnchors = {
     ["Kapitel 31 - WÖk-IDs und Indikatorenarchitektur", "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/"],
     ["Kapitel 32 - Benchmarks, Skalen und Scorecards", "referenz/kapitel-032-benchmarks-skalen-und-scorecards/"],
     ["Kapitel 39 - Wirkungshaushalt und öffentliche Mittel", "referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/"],
-    ["Kapitel 70 - Wohnen als Wirkungsfaktor", "referenz/kapitel-070-wohnen-als-wirkungsfaktor/"],
+    ["Kapitel 70 - Wohnen", "referenz/kapitel-070-wohnen/"],
     ["Working-Paper Wohnungsmarkt", "dokumente/wp-wohnungsmarkt/"],
   ],
 };
@@ -283,7 +283,14 @@ function sanitizePublicText(text) {
   return String(text)
     .replace(/Öffentlicher CharakterDieses/g, "Öffentlicher Charakter. Dieses")
     .replace(/Kernformel([A-ZÄÖÜ])/g, "Kernformel. $1")
-    .replace(/Website, Online-Volltext, Download und Dossier/g, "Website, Online-Volltext, Download und Dossier")
+    .replace(/Website, Online-Volltext, Download und Dossier/g, "Website, Onlinefassung, Download und Dossier")
+    .replace(/innerhalb des Portals „([^“]+)“/g, "im Bereich „$1“")
+    .replace(/innerhalb des Portals/g, "im Bereich")
+    .replace(/Portals/g, "Bereichs")
+    .replace(/Portal/g, "Bereich")
+    .replace(/öffentliche Arbeitsfassung/g, "öffentliche Onlinefassung")
+    .replace(/öffentlichen Arbeitsfassung/g, "öffentlichen Onlinefassung")
+    .replace(/Online-Volltext/g, "Onlinefassung")
     .replace(/öffentliche Fassung/g, "öffentliche Webfassung")
     .replace(/Toolbezug/g, "Werkzeugbezug")
     .replace(/Tools/g, "Werkzeuge")
@@ -478,7 +485,7 @@ function relatedBlock(base, rank, slug, currentKind = "detail") {
 
 function detailSupplement(rank, title, summary) {
   const texts = {
-    "Kurzfassung und Ziel": `${title} wird als vollständiger Unterbereich der Wirkungsökonomie online lesbar gemacht. Ziel ist, die bisherige Kurzfassung durch eine öffentliche Langfassung mit fachlicher Einordnung, Bewertungspfad, politischem Rahmen und zitierfähigen Ankern zu ersetzen.`,
+    "Kurzfassung und Ziel": `${title} wird als fachlicher Unterbereich der Wirkungsökonomie online erklärt. Ziel ist eine öffentliche Langfassung mit fachlicher Einordnung, Bewertungspfad, politischem Rahmen und zitierfähigen Ankern.`,
     "Ausgangslage und alte Logik": `Die alte Logik betrachtet ${title} häufig über isolierte Kennzahlen, Kosten, formale Zuständigkeiten oder kurzfristige Effizienz. Dadurch bleiben Nebenwirkungen, Folgekosten, Verdrängungen, Datenlücken und demokratische Rückkopplungen unsichtbar.`,
     "Begriffliche Einordnung": `${summary} Wirkung bedeutet hier die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und wird nicht automatisch als Fortschritt behandelt.`,
     "Wirkungsökonomischer Perspektivwechsel": `Der neue Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie. Entscheidungen werden nicht nur danach bewertet, ob sie zulässig oder profitabel sind, sondern welche Zustandsveränderungen sie erzeugen und welche Risiken sichtbar bleiben müssen.`,
@@ -619,6 +626,13 @@ function sanitizePublicHtml() {
   const roots = ["wirkungsfelder", "werkzeuge", "werkstatt", "erleben"];
   const replacements = [
     [/Fassung für Online-Volltext, Dossier, Portal und Codex-Umsetzung\./g, "Fassung für Onlinefassung, Dossier und Arbeitsmaterial."],
+    [/innerhalb des Portals „([^“]+)“/g, "im Bereich „$1“"],
+    [/innerhalb des Portals/g, "im Bereich"],
+    [/Portals/g, "Bereichs"],
+    [/Portal/g, "Bereich"],
+    [/öffentliche Arbeitsfassung/g, "öffentliche Onlinefassung"],
+    [/öffentlichen Arbeitsfassung/g, "öffentlichen Onlinefassung"],
+    [/Online-Volltext/g, "Onlinefassung"],
     [/im Repository vorhanden sind/g, "als öffentliche Exportfassung verfügbar sind"],
     [/im Repository vorhanden ist/g, "als öffentliche Exportfassung verfügbar ist"],
     [/im Repository vorliegen/g, "als öffentliche Exportfassung vorliegen"],

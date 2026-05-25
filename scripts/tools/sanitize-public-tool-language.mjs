@@ -20,7 +20,7 @@ const TARGETS = [
   "downloads",
   "assets/downloads",
 ];
-const ROOT_HTML_FILES = ["anwendungen.html", "workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
+const ROOT_HTML_FILES = ["index.html", "erleben.html", "suche.html", "akademie.html", "downloads.html", "kompass.html", "modell.html", "glossar.html", "anwendungen.html", "workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
 
 const replacements = [
   [/Tool-Spezifikation und Rechenmodell/g, "Methodik und Annahmen"],
@@ -33,6 +33,9 @@ const replacements = [
   [/Website-Integration/g, "Einordnung auf der Website"],
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
   [/Demo in Vorbereitung/g, "Methodenseite"],
+  [/Methodenseite vorhanden/g, "Methode"],
+  [/Konzeptseite vorhanden/g, "Konzept"],
+  [/Spezifikation online/g, "Methodik"],
   [/Toolkarte öffnen/g, "Toolkarte ansehen"],
   [/Audio verfügbar\. Transkript in Bearbeitung\./g, "Audio verfügbar."],
   [/Methodendokumentation folgt/g, "Methodik und Annahmen"],
@@ -43,6 +46,11 @@ const replacements = [
   [/Toolseite öffnen/g, "Methodik lesen"],
   [/Publikationszugang/g, "Vertiefung"],
   [/Portal öffnen/g, "Zur Übersicht"],
+  [/Produktportal öffnen/g, "Produktwirkung verstehen"],
+  [/Bildungsportal öffnen/g, "Wirkungsfeld öffnen"],
+  [/Erklärung öffnen/g, "Methodik lesen"],
+  [/Demo öffnen/g, "Beispiel ansehen"],
+  [/Demo testen/g, "Beispiel ansehen"],
   [/Verwandte Portal- und Dossierseiten/g, "Verwandte Seiten und Materialien"],
   [/Portaltext online lesen/g, "Onlinefassung"],
   [/Portaltext/g, "Onlinefassung"],
@@ -81,6 +89,34 @@ const replacements = [
   [/Prototyp/g, "Modellhafte Demo"],
 ];
 
+function ctaLabelForHref(href) {
+  const value = String(href || "");
+  if (!value || value === "#") return "";
+  if (/assets\/downloads|\/downloads\/|\.pdf($|#|\?)|\.docx($|#|\?)/i.test(value)) return "Herunterladen";
+  if (/\/begriffe\//i.test(value)) return "Glossarbegriff erklären";
+  if (/\/wirkungsfelder\//i.test(value)) return "Wirkungsfeld ansehen";
+  if (/\/werkzeuge\//i.test(value)) return "Methodik lesen";
+  if (/\/erleben\/|\/anwendungen\/scanner\.html|scanner\.html/i.test(value)) return "Tool testen";
+  if (/\/akademie/i.test(value)) return "Lernpfad ansehen";
+  if (/\/verstehen\/|\/modell\.html|\/referenz\//i.test(value)) return "Vertiefung lesen";
+  if (/\/werkstatt\/|\/fachbibliothek\/|\/downloads/i.test(value)) return "Arbeitsmaterial ansehen";
+  return "Mehr erfahren";
+}
+
+function sanitizeCtaText(html) {
+  return html.replace(/<a\b([^>]*)>(\s*)([^<]*(?:Öffnen|öffnen))(\s*)<\/a>/g, (match, attrs, before, text, after) => {
+    const href = attrs.match(/\bhref\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/i);
+    const rawHref = href ? (href[2] || href[3] || href[4] || "") : "";
+    let label = ctaLabelForHref(rawHref);
+    if (/rechner/i.test(text) && /erleben|werkzeuge/i.test(rawHref)) label = "Rechner nutzen";
+    if (/dossier/i.test(text)) label = "Dossier lesen";
+    if (/konzept/i.test(text)) label = "Konzept lesen";
+    if (/method/i.test(text)) label = "Methodik lesen";
+    if (/portal/i.test(text)) label = "Zur Übersicht";
+    return label ? `<a${attrs}>${before}${label}${after}</a>` : match;
+  });
+}
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -99,7 +135,7 @@ const htmlFiles = [
 
 for (const file of htmlFiles) {
   const before = fs.readFileSync(file, "utf8");
-  const after = replacements.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), before);
+  const after = sanitizeCtaText(replacements.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), before));
   if (after !== before) {
     fs.writeFileSync(file, after, "utf8");
     changed += 1;

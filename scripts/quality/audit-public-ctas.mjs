@@ -15,7 +15,7 @@ const ROOTS = [
   "anwendungen",
 ];
 
-const CTA_PATTERN = /Online lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Rechner öffnen|Simulation starten|Seite öffnen|Seitenadresse|Mehr erfahren|Methodik öffnen|Demo öffnen/i;
+const CTA_PATTERN = /Online lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Rechner öffnen|Rechner nutzen|Simulation starten|Seite öffnen|Seitenadresse|Mehr erfahren|Methodik öffnen|Demo öffnen|Demo ansehen|Öffnen/i;
 const TOOL_CLAIM_PATTERN = /Tool öffnen|Rechner öffnen|Simulation starten|Tool testen|Demo testen/i;
 const INTERACTIVE_HINT_PATTERN = /<(form|input|select|textarea|button)\b|data-[a-z0-9-]*(calculator|scanner|tool|quiz|simulation)|<script\b/i;
 
@@ -57,6 +57,7 @@ function normalizeHref(currentRel, href) {
     return `${url.pathname}${url.hash || ""}`;
   }
   if (/^(https?:|mailto:|tel:|javascript:)/i.test(href)) return href;
+  if (href.startsWith("/")) return href;
   const [targetPath, hash = ""] = href.split("#");
   if (!targetPath) return `${routeFor(currentRel)}#${hash}`;
   const currentDir = path.dirname(currentRel);
@@ -65,7 +66,8 @@ function normalizeHref(currentRel, href) {
 }
 
 function targetLooksInteractive(route, cache) {
-  const rel = route === "/" ? "index.html" : `${route.replace(/^\/+|\/+$/g, "")}/index.html`;
+  const cleanRoute = route.replace(/[?#].*$/, "").replace(/^\/+|\/+$/g, "");
+  const rel = route === "/" ? "index.html" : cleanRoute.endsWith(".html") ? cleanRoute : `${cleanRoute}/index.html`;
   if (!cache.has(rel)) {
     const abs = path.join(ROOT, rel);
     cache.set(rel, fs.existsSync(abs) ? fs.readFileSync(abs, "utf8") : "");
@@ -101,6 +103,9 @@ function audit() {
       if (!hrefRaw || hrefRaw === "#") {
         findings.push({ severity: "error", rel, text, href: hrefRaw || "(leer)", issue: "CTA ohne echtes Ziel" });
         continue;
+      }
+      if (/^Öffnen$/i.test(text)) {
+        findings.push({ severity: "warning", rel, text, href: hrefRaw, issue: "Generischer CTA ohne klare Nutzerhandlung" });
       }
       if (samePage && !normalized.includes("#")) {
         findings.push({ severity: "error", rel, text, href: hrefRaw, issue: "Self-Link auf aktuelle Seite" });

@@ -485,7 +485,7 @@ const fields = [
     sdgs: ["SDG 6 Wasser", "SDG 7 Energie", "SDG 12 Konsum und Produktion", "SDG 13 Klima", "SDG 15 Leben an Land"],
     concepts: ["Planetare Grenzen", "Regeneration", "Kreislaufwirtschaft", "Energie als Infrastruktur"],
     actors: ["Bürger:innen", "Unternehmen", "Energieversorger", "Landwirtschaft", "Politik"],
-    docs: [{ label: "Nachhaltigkeit als Systemarchitektur", href: "docs/architektur/Nachhaltigkeit_als_Systemarchitektur_v1.1.md" }, { label: "Planet, Koexistenz statt Extraktion", href: "referenz/kapitel-027-planet-koexistenz-statt-extraktion/" }],
+    docs: [{ label: "Klima, Energie und Ressourcen", href: "wirkungsfelder/klima-energie-ressourcen/" }, { label: "Planet, Koexistenz statt Extraktion", href: "referenz/kapitel-027-planet-koexistenz-statt-extraktion/" }],
     anchors: [{ label: "Planet, Koexistenz statt Extraktion", href: "referenz/kapitel-027-planet-koexistenz-statt-extraktion/" }, { label: "Wachstum innerhalb planetarer Grenzen", href: "referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/" }, bookMain],
   },
 ];
@@ -1072,7 +1072,7 @@ function workshopPages() {
     ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Produktscorecard und Bonusregel.", "wirkungsfelder/produkte-konsum/apfelbeispiel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "wirkungsfelder/produkte-konsum/lieferketten/"], ["Beispiel Konzern", "Konzern- und Produktscorecard.", "wirkungsfelder/produkte-konsum/basf-polyamid/"], ["T-Shirt / Textilbeispiel", "Modellseite für Textilien als Wirkungsträger.", "wirkungsfelder/produkte-konsum/t-shirt/"]]],
     ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "docs/soziales/Wirkungseinkommen_Grunddividende_v1.1_Zielmodell.md"]]],
     ["recht", "Recht", [["Juristische Risikolandkarte", "Rechtsprüfung und Risiken.", "docs/recht/WOeK_Juristische_Risikolandkarte_v1.1.md"], ["WStG Prüfnotiz", "Juristische Prüfung des WStG.", "docs/recht/WStG_2.0_Juristische_Pruefnotiz.md"], ["Wirkungsrat Prüfnotiz", "Governance und Rechtsrahmen.", "docs/recht/Wirkungsrat_Juristische_Pruefnotiz_Governance.md"]]],
-    ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Nachhaltigkeit als Systemarchitektur", "Architekturpapier.", "docs/architektur/Nachhaltigkeit_als_Systemarchitektur_v1.1.md"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
+    ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Klima, Energie und Ressourcen", "Wirkungsfeld für ökologische Systemarchitektur.", "wirkungsfelder/klima-energie-ressourcen/"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
     ["historische-dokumente", "Historische Dokumente", [["Manifest", "Historischer und normativer Ausgangspunkt.", "dokumente/woek-manifest/"], ["Minifest", "Kurzfassung und Orientierung.", "dokumente/minifest-wirkungsoekonomie/"], ["Archivhinweis", "Historische Dokumente einordnen.", "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.md"]]],
   ];
   for (const [slug, title, docs] of simplePages) {

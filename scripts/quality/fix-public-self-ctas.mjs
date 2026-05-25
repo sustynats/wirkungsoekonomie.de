@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const TARGETS = ["erleben", "anwendungen", "werkzeuge", "wirkungsfelder", "werkstatt", "portale"];
-const CTA_PATTERN = /Online lesen|Onlinefassung lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Rechner öffnen|Simulation starten|Seite öffnen|Seitenadresse|Mehr erfahren|Methodik lesen|Methodik öffnen|Öffnen/i;
+const CTA_PATTERN = /Online lesen|Onlinefassung lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Tool testen|Rechner öffnen|Rechner nutzen|Simulation starten|Seite öffnen|Seitenadresse|Mehr erfahren|Methodik lesen|Methodik öffnen|Wirkungsfeld ansehen|Öffnen/i;
 
 function walk(dir, files = []) {
   const abs = path.join(ROOT, dir);
@@ -37,6 +37,7 @@ function normalizeHref(currentRel, href) {
     return `${url.pathname}${url.hash || ""}`;
   }
   if (/^(https?:|mailto:|tel:|javascript:)/i.test(href)) return href;
+  if (href.startsWith("/")) return href;
   const [targetPath, hash = ""] = href.split("#");
   if (!targetPath) return `${routeFor(currentRel)}#${hash}`;
   const currentDir = path.dirname(currentRel);
@@ -50,6 +51,7 @@ function currentLabel(text) {
   if (/Detailkonzept/i.test(text)) return "Du liest dieses Detailkonzept.";
   if (/Dossier/i.test(text)) return "Du liest dieses Dossier.";
   if (/Methodik|Werkzeug/i.test(text)) return "Du bist auf dieser Methodenseite.";
+  if (/Tool|Rechner|Simulation/i.test(text)) return "Du nutzt diese Demo.";
   return "Aktuelle Seite";
 }
 
