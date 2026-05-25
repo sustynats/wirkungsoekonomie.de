@@ -1271,3 +1271,295 @@ function initGo5WirtschaftDetailkonzepte() {
 }
 
 initGo5WirtschaftDetailkonzepte();
+
+const ToolExplanationLayer = (() => {
+  const defaults = {
+    purpose: "Dieses Werkzeug macht eine Wirkungsfrage anschaulich, die im Alltag oft unsichtbar bleibt.",
+    question: "Welche Folgen entstehen - und wie würden sie sichtbar, wenn Wirkung in Entscheidungen zurückfließt?",
+    blindSpot: "Das heutige System betrachtet häufig Preis, Kosten, Reichweite oder Output. Folgekosten, Risiken und demokratische Nebenwirkungen bleiben leicht außerhalb der Entscheidung.",
+    difference: "Die Wirkungsökonomie bewertet nicht nur Aktivität, sondern Zustandsveränderungen: positiv, negativ oder neutral. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+    steps: ["Wähle ein Beispiel oder gib eigene Werte ein.", "Verändere die Regler oder Textfelder.", "Lies Ergebnis, Erklärung und Grenzen zusammen."],
+    values: "Die Werte sind Orientierungshilfen. Sie zeigen Richtung, Größenordnung, schwächstes Feld oder mögliche Rückkopplung.",
+    consequence: "Im WÖk-System würden gute Wirkung, Risiken und Folgekosten nicht nur beschrieben, sondern in Preise, Prioritäten, Finanzierung oder Korrekturwege zurückgeführt.",
+    limits: "Die Demo ist keine amtliche Bewertung, keine Beratung, kein Audit und keine Personenbewertung. Sie ersetzt keine geprüften Daten und keine demokratische Entscheidung.",
+    links: [
+      ["Wirkung verstehen", "/wirkungsoekonomie.html"],
+      ["SDG-/SDG+-Referenz", "/verstehen/sdgs-sdgplus/"],
+      ["Glossar", "/glossar.html"]
+    ]
+  };
+
+  const tools = {
+    automation: {
+      selector: "body",
+      pagePath: "/erleben/automatisierungs-wirkungseinkommensrechner/",
+      beforeTarget: "#rechner",
+      afterTarget: "#rechner",
+      title: "Warum dieser Rechner?",
+      purpose: "Der Rechner zeigt, warum Automatisierung nicht nur eine Produktivitätsfrage ist. Wenn Arbeit verschwindet, geraten Einkommen, Sozialbeiträge und Teilhabe unter Druck.",
+      question: "Wie groß kann die Beitragslücke werden - und wie könnte automatisierte Wertschöpfung wirkungsökonomisch rückgekoppelt werden?",
+      blindSpot: "Das heutige System misst oft Effizienzgewinn und Personalkostenersparnis. Es sieht seltener, wer die wegfallenden Sozialbeiträge, Weiterbildungskosten und Übergangsrisiken trägt.",
+      difference: "Die Wirkungsökonomie fragt, ob Automatisierung Menschen entlastet, verdrängt oder extraktiv wirkt. Der Beitrag sinkt modellhaft, wenn Weiterbildung, Versetzung, Teilhabe und regionale Stabilisierung sichtbar werden.",
+      steps: ["Gib Beschäftigung, Lohnsumme und Automatisierungsquote ein.", "Ergänze automatisierte Wertschöpfung, Rückkopplungsquote und Wirkungsfaktor.", "Prüfe, wie Transformationsbonus und Wirkungseinkommen das Ergebnis verändern."],
+      values: "Beitragslücke zeigt die mögliche Lücke in Sozialbeiträgen. Maschinenwertschöpfungsbeitrag zeigt eine modellhafte Rückkopplung. Transformationsbonus zeigt, ob Übergänge entlastend gestaltet werden.",
+      consequence: "Im WÖk-System würde Automatisierung nicht pauschal bestraft. Entscheidend wäre, ob Produktivitätsgewinne Beschäftigte, Sozialversicherung, Weiterbildung, regionale Stabilität und positive Netto-Wirkung mittragen.",
+      links: [
+        ["Arbeit & Einkommen", "/wirkungsfelder/arbeit-einkommen/"],
+        ["Rente & soziale Sicherung", "/wirkungsfelder/rente-soziale-sicherung/"],
+        ["Finanzsystem & Kapital", "/wirkungsfelder/finanzsystem-kapital/"]
+      ]
+    },
+    scanner: {
+      selector: "body",
+      pagePath: "/anwendungen/scanner.html",
+      beforeTarget: "[data-scanner-mvp-root]",
+      afterTarget: "[data-scanner-mvp-root]",
+      title: "Warum dieser Scanner?",
+      purpose: "Der Scanner hilft, Texte, Produkte, Unternehmen oder Maßnahmen als Wirkungsfrage zu lesen. Er sortiert Hinweise, Risiken und Datenlücken, statt sofort eine finale Bewertung zu behaupten.",
+      question: "Welche Wirkungspotenziale, Datenlücken und Gegenfragen werden sichtbar?",
+      blindSpot: "Klassische Suche oder Analyse findet Wörter, Themen oder Quellen. Sie erklärt aber selten, welche Systemfolgen, demokratischen Risiken oder Datenlücken damit verbunden sind.",
+      difference: "Die Wirkungsökonomie trennt Wirkungspotenzial, Datenqualität und Bewertung. Der Scanner zeigt deshalb Hinweise und Gegenfragen, keine Wahrheitseinstufung und kein Personen-Scoring.",
+      steps: ["Wähle den passenden Analysemodus.", "Füge Text, URL-Hinweis, Produkt- oder Unternehmensbeschreibung ein.", "Starte die Ersteinschätzung und lies Ergebnis, Datenlücken und Grenzen zusammen."],
+      values: "Frames, Datenqualitätsstufen und Risikohinweise sind Lesespuren. Sie zeigen, wo Wirkung geprüft werden müsste - nicht, dass ein endgültiges Urteil feststeht.",
+      consequence: "Im WÖk-System würde aus einer unklaren Aussage oder einem Produktversprechen eine prüfbare Wirkungsfrage: Welche Daten fehlen, wer ist betroffen, welche Rückkopplung wäre angemessen?",
+      links: [
+        ["Wirkung", "/begriffe/wirkung/"],
+        ["Wirkungsbewertung", "/begriffe/wirkungsbewertung/"],
+        ["SDG+", "/begriffe/sdg-plus/"]
+      ]
+    },
+    impactControlling: {
+      selector: "body",
+      pagePath: "/werkzeuge/impact-controlling/",
+      beforeTarget: "main > .section",
+      afterTarget: "main > .section",
+      title: "Warum dieser Methodenbereich?",
+      purpose: "Impact Controlling erklärt, wie Wirkung von einer Beschreibung zu einer steuerungsrelevanten Größe wird.",
+      question: "Welche Daten, Bewertungslogiken und Rückkopplungen braucht eine Entscheidung, damit sie positive Netto-Wirkung berücksichtigen kann?",
+      blindSpot: "Klassisches Controlling sieht häufig Kosten, Umsatz, Output und Berichtspflichten. Es sieht seltener, ob Zustände für Mensch, Planet und Demokratie besser oder schlechter werden.",
+      difference: "Die Wirkungsökonomie verbindet WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität und Assurance zu einer prüfbaren Wirkungssprache.",
+      steps: ["Starte mit der Überblickslogik.", "Öffne danach passende Dossiers oder Methodenseiten.", "Nutze interaktive Rechner nur dort, wo eine echte Bedienoberfläche vorhanden ist."],
+      values: "Kennzahlen sind nur aussagekräftig, wenn Quelle, Einheit, Schwelle, Unsicherheit und Datenqualität sichtbar bleiben.",
+      consequence: "Im WÖk-System würde Controlling nicht nur berichten, sondern Budgets, Investitionen, Produktentscheidungen und Korrekturzyklen beeinflussen.",
+      limits: "Diese Seite ist ein Methodenbereich. Sie ersetzt kein Audit, keine Unternehmensbewertung, keine Anlageberatung und keine amtliche Prüfung.",
+      links: [
+        ["WÖk-IDs", "/werkzeuge/woek-ids/"],
+        ["Scorecards", "/werkzeuge/scorecards/"],
+        ["T-SROI", "/werkzeuge/impact-controlling/t-sroi/"]
+      ]
+    },
+    wirkungsfonds: {
+      selector: "body",
+      pagePath: "/werkzeuge/wirkungsfonds/",
+      beforeTarget: "main > .section",
+      afterTarget: "main > .section",
+      title: "Warum diese Methodik?",
+      purpose: "Die Wirkungsfonds-Methodik zeigt, wie Rückflüsse aus Automatisierung, Kapitalwirkung oder Steuerlogik in öffentliche Zukunftsaufgaben gelenkt werden könnten.",
+      question: "Wie kann Wertschöpfung, die heute privat oder sektoral anfällt, in Bildung, Gesundheit, Wohnen, Rente und demokratische Resilienz zurückfließen?",
+      blindSpot: "Das heutige System trennt Gewinn, Steuer, Sozialversicherung und Folgekosten oft voneinander. Dadurch fehlen stabile Brücken zwischen Produktivität und Gemeinwohl.",
+      difference: "Die Wirkungsökonomie denkt Fonds als Rückkopplungsarchitektur: Mittel sollen dort wirken, wo sie positive Netto-Wirkung stärken und Folgekosten senken.",
+      steps: ["Lies zuerst die Fondslogik.", "Öffne bei Bedarf den Automatisierungsrechner.", "Prüfe politische Ausgestaltung, Schutzregeln und Grenzen getrennt."],
+      values: "Diese Seite berechnet keine Fondsquote. Sie erklärt, welche Wirkungsfragen vor einer echten Ausgestaltung geklärt werden müssten.",
+      consequence: "Im WÖk-System würden Fonds nicht als abstrakte Geldtöpfe erscheinen, sondern als lernfähige Brücke zwischen Wertschöpfung, Wirkung und sozialem Übergangsschutz.",
+      limits: "Keine Rechts-, Steuer-, Anlage- oder Sozialberatung. Die konkrete Ausgestaltung bleibt demokratische Aufgabe."
+    },
+    machineContribution: {
+      selector: "body",
+      pagePath: "/werkzeuge/maschinenwertschoepfungsbeitrag/",
+      beforeTarget: "main > .section",
+      afterTarget: "main > .section",
+      title: "Warum diese Methodik?",
+      purpose: "Die Methodik zeigt, warum automatisierte Wertschöpfung eine Rückkopplungsfrage ist, sobald Sozialbeiträge und Einkommen weiter an menschlicher Arbeit hängen.",
+      question: "Wie könnte Maschinenwertschöpfung sichtbar werden, ohne Innovation pauschal zu bestrafen?",
+      blindSpot: "Heute sieht Automatisierung oft wie reine Effizienz aus. Unsichtbar bleiben Beitragslücken, Übergangskosten, regionale Stabilität und Verdrängungsrisiken.",
+      difference: "Die Wirkungsökonomie unterscheidet entlastende, neutrale, verdrängende und extraktive Automatisierung.",
+      steps: ["Lies die Logik des Beitrags.", "Nutze den Rechner für eine modellhafte Beispielrechnung.", "Trenne Beispielwerte, politische Entscheidung und rechtliche Ausgestaltung."],
+      values: "Methodische Faktoren zeigen Richtung und Wirkungsprofil, keine amtliche Beitragshöhe.",
+      consequence: "Im WÖk-System könnten Automatisierungsgewinne dort rückgekoppelt werden, wo sie Sozialbeiträge, Weiterbildung, Teilhabe und Resilienz stützen.",
+      limits: "Keine Steuer- oder Rechtsberatung, keine Unternehmensbewertung und keine Personenbewertung."
+    },
+    automationDividend: {
+      selector: "body",
+      pagePath: "/werkzeuge/automatisierungsdividende/",
+      beforeTarget: "main > .section",
+      afterTarget: "main > .section",
+      title: "Warum diese Methodik?",
+      purpose: "Die Automatisierungsdividende fragt, wie Produktivitätsgewinne gesellschaftlich anschlussfähig verteilt werden können.",
+      question: "Wer profitiert, wenn Maschinen, Software und KI Wertschöpfung erhöhen - und wie bleibt der Übergang sozial stabil?",
+      blindSpot: "Klassische Produktivitätslogik betrachtet häufig Gewinn, Effizienz und Skalierung. Weniger sichtbar sind Kaufkraft, Lebensleistung, Care-Arbeit und demokratisches Vertrauen.",
+      difference: "Die Wirkungsökonomie koppelt Produktivität an positive Netto-Wirkung und Schutz vor Verdrängung.",
+      steps: ["Lies die Verteilungslogik.", "Vergleiche sie mit Wirkungseinkommen und Wirkungsfonds.", "Nutze Rechner nur als modellhafte Orientierung."],
+      values: "Dividenden- und Fondslogiken sind Szenarien. Sie zeigen mögliche Rückkopplungen, keine garantierten Ansprüche.",
+      consequence: "Im WÖk-System könnte Automatisierung stärker als Quelle gemeinsamer Zukunftsfähigkeit sichtbar werden.",
+      limits: "Keine Sozial-, Rechts-, Steuer- oder Finanzberatung. Keine automatische Entscheidung über Menschen."
+    },
+    product: {
+      selector: "#simulator",
+      beforeTarget: ".experience-tool",
+      afterTarget: ".component-list",
+      title: "Warum diese Produktdemo?",
+      purpose: "Die Demo zeigt, warum ein billiges Produkt im Laden teuer für Umwelt, Arbeit, Gesundheit oder Vertrauen sein kann.",
+      question: "Wie verändert sich ein Produktpreis, wenn Lieferkette, schwächstes Wirkungsfeld und Bonus/Malus sichtbar werden?",
+      blindSpot: "Der heutige Preis zeigt Einkauf, Marge und Steuer. Er zeigt oft nicht Wasserverbrauch, Arbeitsbedingungen, Chemikalien, Reparierbarkeit oder Lieferkettenrisiken.",
+      difference: "Die Wirkungsökonomie koppelt Wirkung zurück: Schlechte Wirkung wird teurer, bessere Wirkung kann entlastet werden. Das schwächste Feld kann nicht durch gute Durchschnittswerte verdeckt werden.",
+      steps: ["Wähle ein Produkt.", "Wähle Lieferanten oder nutze eine Schnellauswahl.", "Vergleiche Score, schwächstes Feld, Steuerklasse und Gesamtpreis."],
+      values: "Score und Steuerklasse zeigen keine amtliche Einstufung. Sie zeigen modellhaft, wie die schlechteste relevante Wirkung den Gesamtpreis beeinflussen könnte.",
+      consequence: "Im WÖk-System hätten Unternehmen einen wirtschaftlichen Grund, bessere Lieferanten, Materialien und Prozesse zu wählen, weil Wirkung im Preis sichtbar wird."
+    },
+    media: {
+      selector: "#medienwirkung",
+      beforeTarget: ".media-lab-grid",
+      afterTarget: ".media-lab-grid",
+      title: "Warum dieser Mediencheck?",
+      purpose: "Der Mediencheck zeigt, dass Öffentlichkeit nicht nur Reichweite ist. Inhalte können Orientierung, Vertrauen und Diskursfähigkeit stärken oder beschädigen.",
+      question: "Welche Wirkungspotenziale hat ein Beitrag auf Quellenklarheit, Framing, Erregung und demokratische Stabilität?",
+      blindSpot: "Plattformen messen Klicks, Shares und Verweildauer. Gesellschaftliche Folgen wie Polarisierung, Quellenverwirrung oder Vertrauensverlust werden seltener sichtbar.",
+      difference: "Die Wirkungsökonomie bewertet nicht, ob eine Meinung erlaubt ist. Sie fragt, welche Zustandsveränderungen ein Beitrag im öffentlichen Raum wahrscheinlicher macht.",
+      steps: ["Wähle ein Beispiel oder gib eigenen Text ein.", "Schalte zwischen Beispiel und eigenem Text um.", "Lies Score, Ampel, schwächstes Feld und Erklärung gemeinsam."],
+      values: "Score und Ampel sind Wirkungspotenziale. Sie sind keine Faktenprüfung, keine Zensurentscheidung und kein Urteil über eine Person.",
+      consequence: "Im WÖk-System würden Medienqualität, Quellenklarheit und Diskursfähigkeit als demokratische Infrastruktur sichtbar und überprüfbar."
+    },
+    platform: {
+      selector: "#plattformwirkung",
+      beforeTarget: ".platform-grid",
+      afterTarget: ".platform-grid",
+      title: "Warum diese Plattform-Simulation?",
+      purpose: "Die Simulation macht sichtbar, dass ein Inhalt anders wirkt, wenn ein Algorithmus ihn verstärkt.",
+      question: "Wie verändern Erregung, Wiederholung und Netzwerkverstärkung die demokratische Wirkung eines Inhalts?",
+      blindSpot: "Das heutige System sieht häufig Engagement und Reichweite. Es sieht weniger, ob Verstärkung Vertrauen, Respekt und Orientierung fördert oder Polarisierung skaliert.",
+      difference: "Die Wirkungsökonomie betrachtet nicht nur den Inhalt, sondern den Wirkungspfad: Wer sieht ihn, wie oft, in welchem Resonanzraum und mit welcher Folge?",
+      steps: ["Wähle ein Szenario.", "Verändere Erregung, Konflikt, Gruppenzugehörigkeit, Kommentare und Netzwerkverstärkung.", "Vergleiche Verstärkungsfaktor und Demokratiewirkung."],
+      values: "Der Verstärkungsfaktor zeigt modellhaft, wie Plattformlogik Wirkung skaliert. Er ist kein reales Plattform-Audit.",
+      consequence: "Im WÖk-System müssten Plattformen nicht Inhalte zentral bewerten, sondern Verstärkungslogiken, Transparenz, Beschwerdewege und Systemrisiken offenlegen."
+    },
+    risk: {
+      selector: "#risikolabor",
+      beforeTarget: ".risk-lab-grid",
+      afterTarget: ".risk-lab-grid",
+      title: "Warum diese Risiko-Simulation?",
+      purpose: "Die Simulation zeigt, dass Nachhaltigkeit längst ein Risiko- und Resilienzthema ist.",
+      question: "Wie verändern Klima, Energie, Geopolitik, Arbeit, Transparenz und Timing den Handlungsspielraum?",
+      blindSpot: "Das heutige System erkennt Risiken oft erst, wenn Preise, Lieferfähigkeit, Versicherungen oder Finanzierung bereits reagieren.",
+      difference: "Die Wirkungsökonomie macht Risiken früher sichtbar und verbindet sie mit Daten, Prioritäten und Rückkopplungen.",
+      steps: ["Wähle eine Branche oder Lage.", "Verändere die Stressfaktoren.", "Lies Score, schwächstes Feld, Finanzierungswirkung und Resilienz zusammen."],
+      values: "Die Werte zeigen keine Prognose. Sie zeigen, wie Stressfaktoren zusammenspielen und wo der Engpass liegt.",
+      consequence: "Im WÖk-System würden frühe Resilienzmaßnahmen günstiger und plausibler als spätere Notlösungen."
+    },
+    calculators: {
+      selector: "#scanner",
+      beforeTarget: ".tool-lab",
+      afterTarget: ".tool-lab",
+      title: "Warum diese Rechner?",
+      purpose: "Die Rechner zeigen, wie unterschiedliche Wirkungslogiken in Zahlen übersetzt werden können, ohne sie als endgültige Wahrheit auszugeben.",
+      question: "Wie unterscheiden sich Wirkungsscore, Wohlfahrtsbilanz und gesellschaftlicher Nutzen pro investiertem Euro?",
+      blindSpot: "Klassische Kennzahlen messen oft Output, Kosten oder BIP. Sie zeigen selten Verteilung, Folgekosten, Care-Arbeit, Datenqualität und langfristige Wirkung.",
+      difference: "Die Wirkungsökonomie macht sichtbar, welche Annahmen in einer Bewertung stecken und wo Datenqualität die Aussage begrenzt.",
+      steps: ["Verändere die Eingaben im gewünschten Rechner.", "Beobachte, wie sich Ergebnis und Interpretation ändern.", "Nutze die Zahl als Gesprächsanlass, nicht als finale Entscheidung."],
+      values: "KPI, NWI und T-SROI zeigen unterschiedliche Perspektiven: Wirkungsscore, Wohlfahrtsbilanz und Nutzen-Verhältnis.",
+      consequence: "Im WÖk-System würden Kennzahlen nicht allein berichten. Sie würden Prioritäten, Budgetlogik, Wirkungshaushalte und Investitionsentscheidungen mitprägen."
+    },
+    learning: {
+      selector: "#lernmodule",
+      beforeTarget: ".quiz-lab-grid",
+      afterTarget: ".quiz-lab-grid",
+      title: "Warum diese Lernmodule?",
+      purpose: "Die Lernmodule trainieren den Unterschied zwischen Preis, Reichweite, Gewinn und Wirkung.",
+      question: "Kannst du erkennen, was nur Aktivität ist - und was echte Zustandsveränderung beschreibt?",
+      blindSpot: "Im Alltag wird Wirkung oft mit guter Absicht, Leistung, Lautstärke oder Wachstum verwechselt.",
+      difference: "Die Wirkungsökonomie fragt nach tatsächlichen Folgen für Mensch, Planet und Demokratie.",
+      steps: ["Wähle eine Antwort.", "Lies die Rückmeldung.", "Übertrage die Logik auf Produkte, Medien, Politik oder Kapital."],
+      values: "Feedback ist didaktisch. Es zeigt Denkfehler und bessere Fragen, keine Zertifizierung.",
+      consequence: "Im WÖk-System ist Wirkungskompetenz eine Grundfähigkeit: Menschen sollen Zahlen, Versprechen und Folgen besser unterscheiden können."
+    },
+    miniTools: {
+      selector: "#werkzeuge",
+      beforeTarget: ".tool-lab",
+      afterTarget: ".tool-lab",
+      title: "Warum diese Mini-Werkzeuge?",
+      purpose: "Die Mini-Werkzeuge übersetzen abstrakte Wirkungsökonomie in kurze Alltagserfahrungen.",
+      question: "Welche Frage verändert sich, wenn nicht Preis, Reichweite oder kurzfristiger Nutzen im Mittelpunkt stehen?",
+      blindSpot: "Viele Entscheidungen wirken klein, erzeugen aber Folgekosten, Anreize und Nebenwirkungen an anderer Stelle.",
+      difference: "Die Wirkungsökonomie macht diese Rückkopplungen sichtbar und fragt nach positiven Netto-Folgen.",
+      steps: ["Wähle Thema, Aussage oder Handlung.", "Lass die Demo eine Wirkungsperspektive anzeigen.", "Lies die Grenzen und weiterführenden Fragen."],
+      values: "Die Ergebnisse sind Lernsignale. Sie ersetzen keine Prüfung und keine politische oder wirtschaftliche Entscheidung.",
+      consequence: "Im WÖk-System würden solche Fragen früher gestellt: vor Beschaffung, Kommunikation, Regulierung, Finanzierung oder Produktdesign."
+    }
+  };
+
+  function absoluteHref(href) {
+    if (!href || href.startsWith("http") || href.startsWith("#")) return href;
+    const depth = window.location.pathname.split("/").filter(Boolean).length;
+    const prefix = depth ? "../".repeat(depth) : "";
+    return href.startsWith("/") ? `${prefix}${href.slice(1)}` : href;
+  }
+
+  function card(title, text) {
+    return `<article class="tool-explanation-card"><h3>${title}</h3><p>${text}</p></article>`;
+  }
+
+  function renderBefore(config) {
+    const steps = (config.steps || defaults.steps).slice(0, 3).map((step) => `<li>${step}</li>`).join("");
+    return `
+      <aside class="tool-explanation-layer tool-explanation-before" aria-label="Werkzeugerklaerung">
+        <div class="tool-explanation-head">
+          <p class="hero-kicker">Werkzeug verstehen</p>
+          <h2>${config.title || "Warum dieses Tool?"}</h2>
+          <p>${config.purpose || defaults.purpose}</p>
+        </div>
+        <div class="tool-explanation-grid">
+          ${card("Worum geht es?", config.question || defaults.question)}
+          ${card("Was sieht das heutige System nicht?", config.blindSpot || defaults.blindSpot)}
+          ${card("Was macht die Wirkungsökonomie anders?", config.difference || defaults.difference)}
+          <article class="tool-explanation-card">
+            <h3>So nutzt du das Tool</h3>
+            <ol>${steps}</ol>
+          </article>
+        </div>
+      </aside>
+    `;
+  }
+
+  function renderAfter(config) {
+    const links = (config.links || defaults.links).map(([label, href]) => `<a class="text-link" href="${absoluteHref(href)}">${label}</a>`).join("");
+    return `
+      <aside class="tool-explanation-layer tool-explanation-after" aria-label="Ergebnis einordnen">
+        <div class="tool-explanation-grid">
+          ${card("Was bedeuten die Werte?", config.values || defaults.values)}
+          ${card("Was würde sich im WÖk-System ändern?", config.consequence || defaults.consequence)}
+          ${card("Was diese Demo nicht leistet", config.limits || defaults.limits)}
+          <article class="tool-explanation-card">
+            <h3>Weiterführende Links</h3>
+            <div class="tool-explanation-links">${links}</div>
+          </article>
+        </div>
+      </aside>
+    `;
+  }
+
+  function matchesPage(config) {
+    if (!config.pagePath) return true;
+    return window.location.pathname.replace(/\/$/, "") === config.pagePath.replace(/\/$/, "");
+  }
+
+  function insert(config) {
+    if (!matchesPage(config)) return;
+    const root = document.querySelector(config.selector || "body");
+    if (!root || root.dataset.toolExplanationReady === "true") return;
+    const beforeTarget = document.querySelector(config.beforeTarget);
+    const afterTarget = document.querySelector(config.afterTarget);
+    if (!beforeTarget && !afterTarget) return;
+    if (beforeTarget) beforeTarget.insertAdjacentHTML("beforebegin", renderBefore({ ...defaults, ...config }));
+    if (afterTarget) afterTarget.insertAdjacentHTML("afterend", renderAfter({ ...defaults, ...config }));
+    root.dataset.toolExplanationReady = "true";
+  }
+
+  function init() {
+    Object.values(tools).forEach(insert);
+  }
+
+  return { init, renderBefore, renderAfter };
+})();
+
+document.addEventListener("DOMContentLoaded", () => {
+  ToolExplanationLayer.init();
+});
