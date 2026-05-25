@@ -2001,9 +2001,276 @@ const FundingSourceLayer = (() => {
   return { init };
 })();
 
+const ToolTermInlineLayer = (() => {
+  const terms = [
+    {
+      key: "beitragsluecke",
+      label: "Beitragslücke",
+      aliases: ["Beitragslücke"],
+      definition: "Eine modellhafte Lücke, die entsteht, wenn Lohnarbeit wegfällt und dadurch Sozialbeiträge oder Ansprüche schwächer werden.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "automatisierte-wertschoepfung",
+      label: "automatisierte Wertschöpfung",
+      aliases: ["automatisierte Wertschöpfung", "Automatisierte Wertschöpfung"],
+      definition: "Wirtschaftlicher Wert, der durch Maschinen, Software oder KI entsteht, statt direkt durch menschliche Arbeitszeit.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "maschinenwertschoepfungsbeitrag",
+      label: "Maschinenwertschöpfungsbeitrag",
+      aliases: ["Maschinenwertschöpfungsbeitrag"],
+      definition: "Ein modellhafter Beitrag aus automatisierter Wertschöpfung, der soziale Sicherung, Weiterbildung oder Fonds stützen könnte.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "rueckkopplungsquote",
+      label: "Rückkopplungsquote",
+      aliases: ["Rückkopplungsquote"],
+      definition: "Der angenommene Anteil einer Wertschöpfung, der wieder in Sicherung, Fonds, Korrektur oder Transformation zurückfließt.",
+      url: "/begriffe/wirkungsrueckkopplung/"
+    },
+    {
+      key: "wirkungsfaktor",
+      label: "Wirkungsfaktor",
+      aliases: ["Wirkungsfaktor"],
+      definition: "Ein Zu- oder Abschlag im Modell: Er zeigt, ob eine Wirkung eher belastet, neutral bleibt oder entlastet.",
+      url: "/begriffe/wirkungsbewertung/"
+    },
+    {
+      key: "transformationsbonus",
+      label: "Transformationsbonus",
+      aliases: ["Transformationsbonus"],
+      definition: "Eine modellhafte Entlastung, wenn ein Übergang fair gestaltet wird, etwa durch Weiterbildung, Versetzung oder Beteiligung.",
+      url: "/begriffe/transformationswirkung/"
+    },
+    {
+      key: "wirkungseinkommen",
+      label: "Wirkungseinkommen",
+      aliases: ["Wirkungseinkommen"],
+      definition: "Ein Einkommensmodell, das Grundsicherheit, Markteinkommen, Wirkungsbonus und Fondsanteile zusammendenkt.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "grunddividende",
+      label: "Grunddividende",
+      aliases: ["Grunddividende"],
+      definition: "Ein modellhafter Grundanteil am Einkommen, der Teilhabe absichern soll. Er ist keine zugesagte Auszahlung.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "wirkungsbonus",
+      label: "Wirkungsbonus",
+      aliases: ["Wirkungsbonus"],
+      definition: "Ein möglicher Bonus, wenn eine Tätigkeit, ein Produkt oder ein Übergang positive Wirkung sichtbar stärkt.",
+      url: "/begriffe/positive-netto-wirkung/"
+    },
+    {
+      key: "fondsanteil",
+      label: "Fondsanteil",
+      aliases: ["Fondsanteil"],
+      definition: "Ein modellhafter Anteil aus einem Fonds. Er zeigt eine Rückflusslogik, aber keinen garantierten Anspruch.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "wirkungsfonds",
+      label: "Wirkungsfonds",
+      aliases: ["Wirkungsfonds"],
+      definition: "Ein Fonds, der Mittel für positive Wirkung, Übergänge oder soziale Sicherung bündeln könnte.",
+      url: "/begriffe/wirkungseinkommen/"
+    },
+    {
+      key: "score",
+      label: "Score",
+      aliases: ["Score", "Scores"],
+      definition: "Eine Modellzahl, die eine Einschätzung verdichtet. Sie ist eine Orientierung, keine endgültige Wahrheit.",
+      url: "/begriffe/scorecard/"
+    },
+    {
+      key: "ampel",
+      label: "Ampel",
+      aliases: ["Ampel"],
+      definition: "Eine einfache Farblogik für Orientierung: grün, gelb oder rot. Sie ersetzt keine genaue Prüfung.",
+      url: "/begriffe/wirkungsbewertung/"
+    },
+    {
+      key: "schwaechstes-feld",
+      label: "schwächstes Feld",
+      aliases: ["schwächstes Feld", "schwächste Feld"],
+      definition: "Das Wirkungsfeld mit dem größten Risiko oder der niedrigsten Bewertung. Es kann die Gesamtbewertung begrenzen.",
+      url: "/begriffe/reverse-merit-order/"
+    },
+    {
+      key: "reverse-merit-order",
+      label: "Reverse Merit Order",
+      aliases: ["Reverse Merit Order"],
+      definition: "Das schwächste relevante Wirkungsfeld begrenzt die Gesamtbewertung. Gute Werte verdecken schwere Risiken nicht.",
+      url: "/begriffe/reverse-merit-order/"
+    },
+    {
+      key: "wirkungspotenzial",
+      label: "Wirkungspotenzial",
+      aliases: ["Wirkungspotenzial"],
+      definition: "Die mögliche Wirkung einer Handlung, bevor sicher ist, was tatsächlich passiert.",
+      url: "/begriffe/wirkungspotenzial/"
+    },
+    {
+      key: "datenqualitaet",
+      label: "Datenqualität",
+      aliases: ["Datenqualität"],
+      definition: "Sie zeigt, wie belastbar die verwendeten Daten sind: geprüft, berichtet, geschätzt oder lückenhaft.",
+      url: "/begriffe/wirkungsdaten/"
+    },
+    {
+      key: "ersteinschaetzung",
+      label: "Ersteinschätzung",
+      aliases: ["Ersteinschätzung"],
+      definition: "Eine schnelle Orientierung auf Basis weniger Angaben. Sie ist keine amtliche Bewertung und keine Beratung.",
+      url: "/begriffe/wirkungsbewertung/"
+    }
+  ];
+
+  const allowedPathParts = ["/erleben/", "/werkzeuge/", "/anwendungen/", "/wirkungsfelder/"];
+  const excludedSelector = [
+    "a",
+    "button",
+    "nav",
+    "footer",
+    "header",
+    "form",
+    "input",
+    "textarea",
+    "select",
+    "option",
+    "script",
+    "style",
+    "code",
+    "pre",
+    ".glossary-term",
+    ".inline-help",
+    ".glossary-card",
+    ".glossary-sheet",
+    "[data-no-glossary]",
+    "[data-no-tooltips]"
+  ].join(",");
+
+  function shouldRun() {
+    const path = window.location.pathname;
+    return allowedPathParts.some((part) => path.includes(part)) || path.endsWith("/scorecard-dashboard.html");
+  }
+
+  function escapeRegex(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function absoluteHref(href) {
+    if (!href || href.startsWith("http") || href.startsWith("#")) return href;
+    const depth = window.location.pathname.split("/").filter(Boolean).length;
+    const prefix = depth ? "../".repeat(depth) : "";
+    return href.startsWith("/") ? `${prefix}${href.slice(1)}` : href;
+  }
+
+  function createTermLink(term, text) {
+    const link = document.createElement("a");
+    link.href = absoluteHref(term.url || "/glossar.html");
+    link.className = "glossary-term tool-term-tooltip";
+    link.dataset.glossaryKey = term.key;
+    link.dataset.glossaryLabel = term.label;
+    link.dataset.glossaryDefinition = term.definition.slice(0, 280);
+    link.dataset.glossaryUrl = link.href;
+    link.setAttribute("aria-haspopup", "dialog");
+    link.setAttribute("aria-label", `${term.label}: ${link.dataset.glossaryDefinition} Mehr im Glossar`);
+    link.textContent = text;
+    return link;
+  }
+
+  function findMatch(text, used) {
+    let best = null;
+    terms.forEach((term) => {
+      if (used.has(term.key)) return;
+      term.aliases.forEach((alias) => {
+        const pattern = new RegExp(`(^|[^\\p{L}\\p{N}_-])(${escapeRegex(alias)})(?![\\p{L}\\p{N}_-])`, "u");
+        const match = text.match(pattern);
+        if (!match || match.index === undefined) return;
+        const start = match.index + match[1].length;
+        const candidate = { term, start, text: match[2] };
+        if (!best || candidate.start < best.start || (candidate.start === best.start && candidate.text.length > best.text.length)) {
+          best = candidate;
+        }
+      });
+    });
+    return best;
+  }
+
+  function markNode(node, used) {
+    const text = node.nodeValue || "";
+    const match = findMatch(text, used);
+    if (!match) return false;
+
+    const fragment = document.createDocumentFragment();
+    const before = text.slice(0, match.start);
+    const after = text.slice(match.start + match.text.length);
+    if (before) fragment.append(document.createTextNode(before));
+    fragment.append(createTermLink(match.term, match.text));
+    if (after) fragment.append(document.createTextNode(after));
+    node.parentNode?.replaceChild(fragment, node);
+    used.add(match.term.key);
+    return true;
+  }
+
+  function appendLabelHints(used) {
+    mainElement.querySelectorAll("label, dt, th, .impact-kpi span").forEach((element) => {
+      if (!(element instanceof HTMLElement) || element.closest(".glossary-term, .inline-help, [data-no-tooltips]")) return;
+      const text = element.textContent || "";
+      const term = terms.find((candidate) => !used.has(candidate.key) && candidate.aliases.some((alias) => text.includes(alias)));
+      if (!term) return;
+
+      const hint = document.createElement("span");
+      hint.className = "inline-help tool-label-help";
+      hint.tabIndex = 0;
+      hint.dataset.help = term.definition.slice(0, 280);
+      hint.setAttribute("aria-label", `${term.label}: ${hint.dataset.help}`);
+      hint.textContent = "?";
+      element.append(document.createTextNode(" "), hint);
+      used.add(term.key);
+    });
+  }
+
+  function init() {
+    if (!shouldRun() || !mainElement || mainElement.dataset.toolTermsReady === "true") return;
+    const used = new Set();
+    const blocks = Array.from(mainElement.querySelectorAll("p, li, dd, span, small"));
+    for (const block of blocks) {
+      if (!(block instanceof HTMLElement) || block.closest(excludedSelector)) continue;
+      const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+          const parent = node.parentElement;
+          if (!parent || parent.closest(excludedSelector) || !node.nodeValue?.trim()) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      for (const node of nodes) {
+        markNode(node, used);
+        if (used.size >= terms.length) break;
+      }
+      if (used.size >= terms.length) break;
+    }
+    appendLabelHints(used);
+    mainElement.dataset.toolTermsReady = "true";
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
   FundingSourceLayer.init();
   ResultInterpretationLayer.init();
+  ToolTermInlineLayer.init();
 });

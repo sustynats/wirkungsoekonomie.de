@@ -10012,6 +10012,21 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   text-decoration: none;
 }
 
+.tool-label-help {
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.25rem;
+  border: 1px solid rgba(47, 125, 92, 0.28);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green-dark, #1F5F45);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1;
+  vertical-align: middle;
+}
+
 .inline-help::after {
   content: attr(data-help);
   position: absolute;
