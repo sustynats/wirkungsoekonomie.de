@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="Die Akademie der Wirkungsökonomie übersetzt das Grundlagenwerk in einen offenen Lernpfad: Wirkung verstehen, Mensch, Planet und Demokratie, Messung, Anwendung und Wirkungskompetenz.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/style.css?v=20260522-status-cleanup">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260525-ux-finish">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -46,6 +46,28 @@
             "about": {
               "@id": "https://wirkungsoekonomie.de/#wirkungsoekonomie"
             }
+          },
+          {
+            "@type": "Course",
+            "@id": "https://wirkungsoekonomie.de/akademie.html#grundpfad",
+            "name": "Grundpfad der Akademie der Wirkungsökonomie",
+            "description": "Offener Online-Lernpfad zur Wirkungsökonomie mit sieben Teilen, Übungen und interner Zertifikatslogik.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Wirkungsökonomie",
+              "url": "https://wirkungsoekonomie.de"
+            },
+            "isAccessibleForFree": true,
+            "educationalCredentialAwarded": "Internes Zertifikat der Akademie der Wirkungsökonomie, nicht staatlich anerkannt"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://wirkungsoekonomie.de/akademie.html#faq-schema",
+            "mainEntity": [
+              {"@type": "Question", "name": "Ist die Akademie kostenlos?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Der Zugang zu Vorlesungen, Skripten und Übungen ist als freier Online-Lernraum angelegt."}},
+              {"@type": "Question", "name": "Ist das Zertifikat staatlich anerkannt?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Die Zertifikate sind interne Qualifikationsbezeichnungen der Akademie und keine staatlich anerkannten Abschlüsse."}},
+              {"@type": "Question", "name": "Für wen ist der Grundpfad geeignet?", "acceptedAnswer": {"@type": "Answer", "text": "Für Menschen aus Alltag, Unternehmen, Politik, Verwaltung, Medien, Bildung, Wissenschaft, Kapitalmarkt und Kommunen, die Wirkung verstehen und anwenden wollen."}}
+            ]
           }
         ]
       }
@@ -63,7 +85,7 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
         <a href="index.html" data-nav-match="index.html">Start</a>
-    <a href="verstehen.html" data-nav-match="verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/">Verstehen</a>
+    <a href="verstehen.html" data-nav-match="verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/">Verstehen</a>
     <a href="wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html|fuer/gesundheit.html|fuer/mieter.html|fuer/rente.html|fuer/wirkungseinkommen.html|fuer/unternehmen.html|fuer/investoren.html|fuer/kommunen.html">Wirkungsfelder</a>
     <a href="werkzeuge/" data-nav-match="werkzeuge/|scorecard-dashboard.html|methodik/|workflow.html|glossar.html#begriff-t-sroi">Werkzeuge</a>
     <a href="erleben.html" data-nav-match="erleben.html|erleben/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|sdg-plus/medien-demokratie/wirkung-politischer-sprache.html">Erleben</a>
@@ -113,6 +135,22 @@
         </picture>
         <figcaption>Die Akademie übersetzt die WÖk in einen systemischen Lernpfad: verstehen, bewerten, zurückkoppeln, anwenden und umsetzen.</figcaption>
       </figure>
+
+      <section class="section section-soft academy-trust-section" aria-labelledby="akademie-vertrauen-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Vertrauensrahmen</p>
+            <h2 id="akademie-vertrauen-title">Offen lernen, klar einordnen.</h2>
+            <p>Die Akademie ist frei zugänglich, online nutzbar und fachlich an das Grundlagenwerk, Glossar und die öffentlichen Wirkungsfelder angebunden.</p>
+          </div>
+          <div class="trust-box">
+            <article><span>Online</span><p>Alle Grundinhalte sind als Web-Lernpfad gedacht und können im eigenen Tempo genutzt werden.</p></article>
+            <article><span>Kostenlos</span><p>Vorlesungen, Skripte und Übungen bleiben ohne Kursgebühr und ohne Bezahlschranke zugänglich.</p></article>
+            <article><span>Intern zertifiziert</span><p>Zertifikate sind interne Qualifikationsnachweise der Akademie mit eindeutiger ID.</p></article>
+            <article><span>Nicht staatlich anerkannt</span><p>Die Akademie vergibt keine staatlichen oder akademischen Grade. Das wird offen ausgewiesen.</p></article>
+          </div>
+        </div>
+      </section>
 
       <section class="section" aria-labelledby="idee-title">
         <div>
@@ -265,6 +303,15 @@
               <p class="status-note">Module folgen</p>
             </article>
           </div>
+          <div class="learning-progress" aria-label="Lernpfad-Fortschritt">
+            <span>Teil 1: Grundverständnis</span>
+            <span>Teil 2: Wirkungskompetenz</span>
+            <span>Teil 3: Maßstab</span>
+            <span>Teil 4: Rückkopplung</span>
+            <span>Teil 5: Anwendung</span>
+            <span>Teil 6: Systemdesign</span>
+            <span>Teil 7: Praxisprojekt</span>
+          </div>
         </div>
       </section>
 
@@ -370,6 +417,49 @@
         </div>
       </section>
 
+      <section class="section" id="faq" aria-labelledby="akademie-faq-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">FAQ</p>
+            <h2 id="akademie-faq-title">Häufige Fragen zur Akademie</h2>
+          </div>
+          <div class="faq-accordion">
+            <details>
+              <summary>Ist die Akademie kostenlos?</summary>
+              <p>Ja. Die Akademie ist als freier Online-Lernraum angelegt. Vorlesungen, Skripte und Übungen bleiben ohne Kursgebühr verfügbar.</p>
+            </details>
+            <details>
+              <summary>Ist das Zertifikat staatlich anerkannt?</summary>
+              <p>Nein. Zertifikate der Akademie sind interne Qualifikationsbezeichnungen der Wirkungsökonomie und keine staatlich anerkannten Abschlüsse.</p>
+            </details>
+            <details>
+              <summary>Was bedeutet WÖk-ID?</summary>
+              <p>WÖk-IDs verbinden Wirkungsindikatoren, Quellen, Standards und Bewertungslogik, damit Wirkungen nachvollziehbar und vergleichbar werden.</p>
+            </details>
+            <details>
+              <summary>Wie läuft die Prüfung?</summary>
+              <p>Der Grundpfad ist auf kurze Tests, Transferfragen, Reflexion und ein eigenes Praxisprojekt angelegt. Konkrete Prüfungsformate werden je Modul ausgewiesen.</p>
+            </details>
+            <details>
+              <summary>Was ist Ph.WÖk?</summary>
+              <p>Ph.WÖk ist eine interne Meisterstufe der Akademie, kein akademischer Grad. Sie richtet sich an Menschen, die die Wirkungsökonomie vertieft reflektieren, lehren oder weiterentwickeln möchten.</p>
+            </details>
+            <details>
+              <summary>Für wen ist der Grundpfad geeignet?</summary>
+              <p>Für Bürger:innen, Unternehmen, Politik und Verwaltung, Medien, Wissenschaft, Bildung, Kapitalmarkt, Kommunen und alle, die Wirkungskompetenz aufbauen möchten.</p>
+            </details>
+            <details>
+              <summary>Wie viel Zeit sollte man einplanen?</summary>
+              <p>Der Lernpfad ist modular gedacht. Einzelne Module können kompakt bearbeitet werden; für den vollständigen Grundpfad ist ein ruhiger, mehrwöchiger Lernrhythmus sinnvoll.</p>
+            </details>
+            <details>
+              <summary>Wie funktioniert der Discord-Campus?</summary>
+              <p>Der Discord-Campus ergänzt die Website als Austauschraum für Fragen, Diskussion und Weiterentwicklung. Die fachlichen Kerninhalte bleiben öffentlich auf der Website zugänglich.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-soft" aria-labelledby="austausch-title">
         <div class="inline-heading">
           <div>
@@ -408,6 +498,7 @@
           <a href="ordnung/" data-nav-match="ordnung/">Ordnung</a>
           <a href="kompass.html" data-nav-match="kompass.html">Kompass</a>
           <a href="glossar.html" data-nav-match="glossar.html|glossar/">Glossar</a>
+          <a href="verstehen/sdgs-sdgplus/" data-nav-match="verstehen/sdgs-sdgplus/|referenzrahmen/sdgs-sdgplus/">SDG-/SDG+-Referenzrahmen</a>
       </div>
     </div>
     <div class="footer-nav-group">
@@ -475,6 +566,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="assets/js/main.js?v=20260523-nachhaltigkeit"></script>
+    <script src="assets/js/main.js?v=20260525-ux-finish"></script>
   </body>
 </html>

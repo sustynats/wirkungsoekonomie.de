@@ -351,12 +351,32 @@
 }
 
 @media (max-width: 900px) {
+  .search-page .search-hero {
+    padding-top: clamp(2rem, 8vw, 4rem);
+  }
+
+  .search-shell {
+    margin-inline: calc(var(--page-gutter) * -0.25);
+  }
+
+  .search-box {
+    position: sticky;
+    top: 0.75rem;
+    z-index: 20;
+    box-shadow: 0 18px 45px rgba(12, 18, 34, 0.12);
+  }
+
   .search-layout {
     grid-template-columns: 1fr;
   }
 
   .search-filters details {
     position: static;
+  }
+
+  .search-live-suggestions {
+    max-height: min(58vh, 32rem);
+    overflow: auto;
   }
 }
 

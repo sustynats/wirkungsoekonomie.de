@@ -13,7 +13,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260525-search-knowledge-groups";
+  const searchDataVersion = "20260525-ux-finish-knowledge-search";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 700;
   const MAX_VISIBLE_RESULTS = 24;

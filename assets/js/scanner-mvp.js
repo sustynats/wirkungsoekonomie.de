@@ -232,6 +232,32 @@
     },
   };
 
+  function modeFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const rawMode = String(params.get("mode") || "").trim().toLowerCase();
+    const aliases = {
+      "politische-aussage": "statement",
+      politik: "statement",
+      statement: "statement",
+      aussage: "statement",
+      produkt: "product",
+      product: "product",
+      unternehmen: "company",
+      company: "company",
+      firma: "company",
+      wahlprogramm: "election",
+      election: "election",
+      website: "website",
+      text: "text",
+      entscheidung: "decision",
+      massnahme: "decision",
+      maßnahme: "decision",
+      foto: "photo",
+      screenshot: "photo"
+    };
+    return aliases[rawMode] || "";
+  }
+
   function escapeHtml(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
@@ -336,6 +362,11 @@
     if (modeSelect.value === "product" || text.includes("apfel") || text.includes("produkt")) return "produkt-apfel";
     if (modeSelect.value === "decision" || text.includes("maßnahme") || text.includes("gesetz")) return "entscheidung";
     return modes[modeSelect.value]?.demo || "politische-sprache";
+  }
+
+  const initialMode = modeFromUrl();
+  if (initialMode && modeSelect && modes[initialMode]) {
+    modeSelect.value = initialMode;
   }
 
   runButton?.addEventListener("click", () => renderResult(inferDemo(), input.value.trim()));

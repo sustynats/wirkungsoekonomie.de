@@ -370,6 +370,37 @@ const presetButtons = Array.from(document.querySelectorAll("[data-preset]"));
 let currentProductKey = "tshirt";
 let selections = {};
 
+function getExperienceParams() {
+  return new URLSearchParams(window.location.search);
+}
+
+function scenarioFromUrl() {
+  const rawScenario = String(getExperienceParams().get("scenario") || "").trim().toLowerCase();
+  const aliases = {
+    tshirt: "tshirt",
+    "t-shirt": "tshirt",
+    shirt: "tshirt",
+    textil: "tshirt",
+    laptop: "laptop",
+    notebook: "laptop",
+    zange: "pliers",
+    pliers: "pliers"
+  };
+  return aliases[rawScenario] || "";
+}
+
+function routeExperienceDeepLink() {
+  const params = getExperienceParams();
+  const tool = String(params.get("tool") || "").trim().toLowerCase();
+  const scenario = String(params.get("scenario") || "").trim().toLowerCase();
+  if (tool !== "produkt" && tool !== "product") return;
+  if (scenario === "apfel" && !window.location.hash) {
+    window.location.hash = "alltag";
+  } else if (!window.location.hash) {
+    window.location.hash = "simulator";
+  }
+}
+
 function indicator(label, unit, core, sdg, gri, archetype, thresholds, value, source) {
   return { label, unit, core, sdg, gri, archetype, thresholds, value, source };
 }
@@ -641,6 +672,11 @@ function applyPreset(type) {
 
 function initSimulator() {
   if (!simulator) return;
+  const linkedScenario = scenarioFromUrl();
+  if (linkedScenario && products[linkedScenario]) {
+    currentProductKey = linkedScenario;
+    selections = {};
+  }
   renderProductOptions();
   ensureSelections();
   refreshSimulator();
@@ -1513,6 +1549,7 @@ function initQuizModules() {
   });
 }
 
+routeExperienceDeepLink();
 initSimulator();
 initCompass();
 initMediaLab();
