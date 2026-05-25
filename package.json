@@ -47,6 +47,9 @@
     "check:term-duplicates": "node scripts/glossary/check-glossary-alphabetical.mjs",
     "check:search-integration": "node scripts/quality/check-search-integration.mjs",
     "check:phase1": "node scripts/quality/check-phase1.mjs",
-    "check:public-language": "node scripts/check-public-language.js"
+    "check:public-language": "node scripts/check-public-language.js",
+    "layout:import-template": "node scripts/documents/import-woek-dossier-template.mjs",
+    "layout:standardize": "node scripts/documents/standardize-dossier-layouts.mjs",
+    "layout:standardize:dry-run": "node scripts/documents/standardize-dossier-layouts.mjs --dry-run"
   }
 }

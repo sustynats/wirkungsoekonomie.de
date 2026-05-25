@@ -1,0 +1,103 @@
+brand:
+  name: Wirkungsökonomie
+  tagline: Wirkung statt Kapital. Für Mensch, Planet und Demokratie.
+  colors:
+    navy: "#0B1020"
+    ivory: "#F6F1E8"
+    green: "#2F7D5C"
+    gold: "#C89B3C"
+    coral: "#C85A4A"
+    text: "#22242C"
+  fonts:
+    headings: "Playfair Display"
+    body_print_pdf: "Merriweather"
+    tables_numbers: "Source Sans 3"
+
+scope:
+  standardize_layout_true_types:
+    - arbeitspapier
+    - konzeptpapier
+    - dossier
+    - whitepaper
+    - working-paper
+    - technische-leitlinie
+    - fallstudie
+  never_standardize:
+    - praesentation
+    - foliensatz
+    - buch
+    - buchmanuskript
+    - manifest
+    - minifest
+    - parteiprogramm
+    - presseartikel
+    - gastbeitrag
+    - website-text
+    - blog
+    - social-media
+
+content_lock:
+  allow:
+    - layout
+    - formatvorlagen
+    - titelblatt
+    - logo
+    - kopfzeile
+    - fusszeile
+    - tabellenoptik
+    - inhaltsverzeichnis
+    - seitenumbrueche
+    - dateimetadaten
+  deny:
+    - kuerzung
+    - umschreibung
+    - sprachliche_harmonisierung
+    - neue_argumentation
+    - entfernte_absaetze
+    - geaenderte_ueberschriften
+    - geaenderte_tabelleninhalte
+    - geaenderte_zahlen
+    - geaenderte_quellen
+    - geaenderte_begriffe
+
+word_styles:
+  title: "Title"
+  subtitle: "Subtitle"
+  document_type: "WÖk Dokumenttyp"
+  lead: "WÖk Lead"
+  h1: "Heading 1"
+  h2: "Heading 2"
+  h3: "Heading 3"
+  h4: "Heading 4"
+  body: "Normal"
+  metadata_label: "WÖk Metadaten Label"
+  metadata_value: "WÖk Metadaten Wert"
+  leitformel: "WÖk Leitformel"
+  callout: "WÖk Hinweisbox"
+  quote: "WÖk Quote"
+  table_header: "WÖk Tabellenkopf"
+  table_cell: "WÖk Tabellenzelle"
+  caption: "WÖk Caption"
+  footer: "WÖk Fußzeile"
+
+placeholders:
+  title: "{TITEL DES DOKUMENTS}"
+  subtitle: "{UNTERTITEL / EINORDNUNG}"
+  document_type: "{DOKUMENTTYP}"
+  version: "{VERSION}"
+  status: "{FASSUNG}"
+  stand: "{MONAT JAHR}"
+  author: "{AUTORIN}"
+  reference: "{REFERENZ / PROJEKT}"
+  scope: "{Öffentliche Konzept- und Dossierfassung / Interne Arbeitsfassung}"
+
+verification:
+  normalized_text_diff_required: true
+  fail_on_removed_headings: true
+  fail_on_removed_paragraphs: true
+  fail_on_removed_table_cells: true
+  ignore_only:
+    - whitespace
+    - linebreaks
+    - page_numbers
+    - running_headers_footers
