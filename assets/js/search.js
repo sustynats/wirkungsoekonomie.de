@@ -42,11 +42,11 @@
     weitere: 0,
   };
   const CURATED_QUERY_ROUTES = {
-    wirkung: ["/begriffe/wirkung/", "/modell.html", "/kompass.html", "/wirkungsoekonomie.html"],
-    "netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
-    "positive netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
-    wirkungseinkommen: ["/begriffe/wirkungseinkommen/", "/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/"],
-    bildung: ["/wirkungsfelder/bildung/", "/begriffe/wirkungskompetenz/"],
+    wirkung: [["/begriffe/wirkung/", 1200], ["/modell.html", 980], ["/kompass.html", 940], ["/wirkungsoekonomie.html", 900]],
+    "netto wirkung": [["/begriffe/positive-netto-wirkung/", 1150], ["/modell.html", 920], ["/kompass.html", 880]],
+    "positive netto wirkung": [["/begriffe/positive-netto-wirkung/", 1150], ["/modell.html", 920], ["/kompass.html", 880]],
+    wirkungseinkommen: [["/begriffe/wirkungseinkommen/", 1150], ["/erleben/automatisierungs-wirkungseinkommensrechner/", 940], ["/wirkungsfelder/arbeit-einkommen/", 880]],
+    bildung: [["/wirkungsfelder/bildung/", 980], ["/begriffe/wirkungskompetenz/", 860]],
   };
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
@@ -193,8 +193,8 @@
     const query = normalize(rawQuery);
     const route = normalizeRoute(entry.url);
     const routes = CURATED_QUERY_ROUTES[query] || [];
-    const index = routes.indexOf(route);
-    return index >= 0 ? 360 - index * 45 : 0;
+    const match = routes.find(([itemRoute]) => itemRoute === route);
+    return match ? match[1] : 0;
   }
 
   function getGroupLabel(groupId) {
@@ -365,6 +365,7 @@
     let score = Number(entry.priority || 0) + Number(GROUP_SCORE_BONUS[groupId] || 0);
     if (isLowValueSearchEntry(entry)) score -= 500;
     score += curatedRouteBoost(entry, rawQuery);
+    if (normalizeRoute(entry.url) === "/glossar.html" && normalize(rawQuery) !== "glossar") score -= 260;
 
     if (containsQuery(title, query)) score += 120;
     if (containsQuery(aliases, query)) score += 90;
