@@ -343,16 +343,15 @@ def normalize_parts(parts: list[Part], chapters: list[Chapter]) -> list[Part]:
         previous_max = max((chapter.number for chapter in previous_part.chapters), default=0)
         next_min = min((chapter.number for chapter in next_part.chapters), default=previous_max + 1)
         # If the source jumps from e.g. XIV to XVI, the DOCX has no explicit
-        # title for the missing structural part. In the current mainwork this
-        # happens for two six-chapter blocks. Keep the source transparent by
-        # creating an untitled part route and moving that contiguous block out
-        # of the previous explicit part.
+        # part heading for the missing structural block. The live reference
+        # keeps that import fact visible in metadata, but uses editorially
+        # approved overrides so the public navigation is not left generic.
         carried = [chapter for chapter in previous_part.chapters if max(previous_max - 5, 1) <= chapter.number < next_min]
         if not carried:
             midpoint_start = previous_max + 1
             midpoint_end = next_min - 1
             carried = [chapter for chapter in chapters if midpoint_start <= chapter.number <= midpoint_end]
-        missing_title = PART_TITLE_OVERRIDES.get(number, "im Quelldokument ohne eigene Teilüberschrift")
+        missing_title = PART_TITLE_OVERRIDES.get(number, "redaktionell ergänzte Teilstruktur")
         missing = Part(number, int_to_roman(number), missing_title, f"teil-{number:02d}-{slugify(missing_title)}", [])
         for chapter in carried:
             if chapter in previous_part.chapters:
@@ -446,23 +445,17 @@ def fulltext_status_panel(stats: dict[str, int]) -> str:
     return f"""<section class="meta-box version-summary fulltext-status-summary">
       <h2>Stand dieser Onlinefassung</h2>
       <p>Diese Volltextansicht enthält das vollständige Grundlagenwerk als lesbare Webfassung. Die zitierfähige Originalfassung bleibt über das PDF erhalten; die Onlinefassung ist strukturiert, verlinkt und versioniert.</p>
-      <div class="version-summary-grid" aria-label="Versionsstatus">
+      <div class="version-summary-grid" aria-label="Versionsinformationen">
         <div><span>Original</span><strong>2026.0</strong><small>PDF bleibt zitierfähig</small></div>
         <div><span>Onlinefassung</span><strong>2026.2</strong><small>Live-Referenz</small></div>
         <div><span>Umfang</span><strong>{stats["paragraphs"]} Absätze</strong><small>{stats["headings"]} Überschriften · {stats["figures"]} Abbildungen</small></div>
       </div>
-      <p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen und Reviewlogik ansehen</a></p>
+      <p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen ansehen</a></p>
     </section>"""
 
 
 def discussion_placeholder(section_id: str, content_hash: str) -> str:
-    return (
-        f'<aside class="callout discussion-placeholder" data-document-id="{DOC_ID}" '
-        f'data-section-id="{section_id}" data-version="{WEB_VERSION}" data-content-hash="{content_hash}">'
-        f"<p>Diskurs zu diesem Abschnitt wird in Phase 2 aktiviert.</p>"
-        f"<p><strong>Abschnitts-ID:</strong> {escape(section_id)}</p>"
-        f"</aside>"
-    )
+    return ""
 
 
 def render_fulltext(parsed: dict[str, object]) -> None:

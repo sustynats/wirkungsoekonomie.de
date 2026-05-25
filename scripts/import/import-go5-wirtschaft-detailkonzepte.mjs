@@ -581,19 +581,6 @@ function renderPage(doc, body, toc) {
           </div>
         </div>
       </section>
-      <section class="section narrow">
-        <aside class="card status-meta" aria-label="Dokumentstatus">
-          <p class="card-kicker">Publikationsstatus</p>
-          <dl>
-            <div><dt>Detailkonzept</dt><dd>veröffentlicht</dd></div>
-            <div><dt>Dossier</dt><dd>in Arbeit</dd></div>
-            <div><dt>Tool/Demo</dt><dd>in Vorbereitung</dd></div>
-            <div><dt>Autorin</dt><dd>Natalie Weber</dd></div>
-            <div><dt>Version</dt><dd>v1.0</dd></div>
-            <div><dt>Stand</dt><dd>24.05.2026</dd></div>
-          </dl>
-        </aside>
-      </section>
       <section class="section" aria-labelledby="toc">
         <div class="section-header">
           <p class="hero-kicker">Online-Volltext</p>

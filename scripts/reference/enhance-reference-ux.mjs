@@ -14,6 +14,11 @@ const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const changelog = fs.existsSync("public/data/live-reference-changelog.json")
   ? JSON.parse(fs.readFileSync("public/data/live-reference-changelog.json", "utf8"))
   : { changes: [] };
+const glossary = fs.existsSync("public/data/glossary.terms.json")
+  ? JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8")).terms || []
+  : [];
+const glossaryById = new Map(glossary.map((term) => [term.termId, term]));
+const glossaryByLabel = new Map(glossary.map((term) => [String(term.canonicalLabel || "").toLowerCase(), term]));
 const workpapers = fs.existsSync("public/data/workpaper-imports.json")
   ? JSON.parse(fs.readFileSync("public/data/workpaper-imports.json", "utf8")).documents || []
   : [];
@@ -57,6 +62,41 @@ const termByCluster = {
   kritik: ["Technokratie", "Wirkungssimulation", "Fehlbarkeit", "Gaming the System"],
 };
 
+const partTitleCorrections = {
+  15: "Internationale Ordnung, Globalisierung und Geopolitik",
+  17: "Kritik, Missverständnisse und ideologische Projektionen",
+};
+
+const partSlugCorrections = {
+  15: "teil-15-internationale-ordnung-globalisierung-und-geopolitik",
+  17: "teil-17-kritik-missverstaendnisse-und-ideologische-projektionen",
+};
+
+const chapterTitleCorrections = {
+  17: "Wirkungsökonomie im Vergleich",
+  96: "Wirkungsökonomie als weltfähige Ordnung",
+  99: "Wirkungsökonomie im Alltag",
+};
+
+const chapterTermOverrides = {
+  10: ["wirkung", "positive-wirkung", "negative-wirkung", "neutrale-wirkung", "wirkungsbewertung", "wirkungsempfaenger", "wirkungsraum"],
+  11: ["wirkungspotenzial", "wirkungsrisiko", "resonanzraum", "wirkungspfad", "wirkmechanismus", "wirkung"],
+  16: ["netto-wirkung", "positive-netto-wirkung", "transformationswirkung", "wirkungslenkung", "wirkungsarchitektur", "wirkungsdaten", "wirkungsrisiko"],
+  31: ["woek-id", "wirkungsdaten", "sdg-plus", "nace", "esrs", "gri"],
+  32: ["scorecard", "finalscore", "nwi", "benchmark", "netto-wirkung"],
+  33: ["reverse-merit-order", "nichtkompensationsprinzip", "wirkungsgrenze", "netto-wirkung"],
+  34: ["t-sroi", "nwi", "transformationswirkung"],
+  35: ["digitaler-produktpass", "wirkungsdatenraum", "woek-id"],
+  37: ["wstg", "wirkungssteuergesetz", "wirkungsrat", "positive-netto-wirkung", "nichtkompensationsprinzip"],
+  38: ["finalscore", "nwi", "reverse-merit-order", "wirkungsumsatzsteuer"],
+  40: ["wirkungsrat", "benchmark", "woek-id", "wirkungswahrheit"],
+  52: ["wirkungspunkte", "social-credit", "positive-netto-wirkung", "wirkungsbewertung"],
+  57: ["wirkungseinkommen", "positive-netto-wirkung", "social-credit"],
+  103: ["social-credit", "wirkungswahrheit", "wirkungsrat", "wirkungsdatenraum"],
+  105: ["wirkungslenkung", "positive-netto-wirkung", "wirkungsarchitektur"],
+  106: ["wirkungswahrheit", "wirkungsrat", "wirkungsrisiko", "wirkungspotenzial"],
+};
+
 const relatedDocsByCluster = {
   methodik: ["WOeK_Master_Items_final_v1.2", "Whitepaper-T-SROI", "Technische Leitlinien WUStG"],
   "recht-staat": ["WStG_Oktober2025", "Wirkungsrat_Konzept", "Technische Leitlinien WUStG"],
@@ -84,6 +124,16 @@ function stripTags(value = "") {
 
 function cleanTitle(value = "") {
   return stripTags(value).replace(/\s+-\s+Wirkungsökonomie.*$/i, "").trim();
+}
+
+function cleanChapterTitle(number, value = "") {
+  const corrected = chapterTitleCorrections[number];
+  const base = cleanTitle(value)
+    .replace(/^Kapitel\s+\d+\s*[-:]\s*/i, "")
+    .replace(/^Kapitel\s+\d+\s+Kapitel\s+\d+\s*[-:]\s*/i, "")
+    .trim();
+  if (corrected) return corrected;
+  return base || `Kapitel ${number}`;
 }
 
 function slugify(value = "") {
@@ -213,15 +263,30 @@ function collectParts() {
   const dirs = fs.readdirSync("referenz", { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && entry.name.startsWith("teil-"))
     .map((entry) => entry.name)
-    .sort();
-  return dirs.map((dir) => {
+    .sort((a, b) => {
+      const aNumber = Number(a.match(/^teil-(\d+)/)?.[1] || 0);
+      const bNumber = Number(b.match(/^teil-(\d+)/)?.[1] || 0);
+      if (aNumber === bNumber) {
+        if (a === partSlugCorrections[aNumber]) return 1;
+        if (b === partSlugCorrections[bNumber]) return -1;
+      }
+      return a.localeCompare(b);
+    });
+  const seen = new Set();
+  const parts = [];
+  for (const dir of dirs) {
     const file = `referenz/${dir}/index.html`;
     const html = read(file);
     const number = Number(dir.match(/^teil-(\d+)/)?.[1] || 0);
-    const title = cleanTitle(html.match(/<h1[^>]*>(.*?)<\/h1>/is)?.[1] || `Teil ${roman(number)}`);
+    if (!number || seen.has(number)) continue;
+    seen.add(number);
+    const rawTitle = cleanTitle(html.match(/<h1[^>]*>(.*?)<\/h1>/is)?.[1] || `Teil ${roman(number)}`);
+    const title = partTitleCorrections[number] || rawTitle;
+    const slug = partSlugCorrections[number] || dir;
     const chapterSlugs = [...html.matchAll(/href=["']\.\.\/(kapitel-[^/"']+)\/["']/g)].map((m) => m[1]);
-    return { number, roman: roman(number), title, slug: dir, route: `/referenz/${dir}/`, chapterSlugs };
-  });
+    parts.push({ number, roman: roman(number), title, slug, legacySlug: dir, route: `/referenz/${slug}/`, chapterSlugs });
+  }
+  return parts.sort((a, b) => a.number - b.number);
 }
 
 function collectChapters(parts) {
@@ -236,11 +301,12 @@ function collectChapters(parts) {
       const html = read(file);
       const h1 = cleanTitle(html.match(/<h1[^>]*>(.*?)<\/h1>/is)?.[1] || entry.name);
       const number = Number(entry.name.match(/^kapitel-(\d+)/)?.[1] || h1.match(/Kapitel\s+(\d+)/)?.[1] || 0);
-      const title = h1.replace(/^Kapitel\s+\d+\s*[-:]\s*/i, "");
+      const title = cleanChapterTitle(number, h1);
       const cluster = clusterFor(number);
       const part = partByChapterSlug.get(entry.name) || null;
       const reviewStatus = stripTags(html.match(/<dt>Reviewstatus<\/dt><dd>(.*?)<\/dd>/i)?.[1] || "partially-delta-reviewed");
-      const terms = termByCluster[cluster.key] || ["Wirkung", "Mensch, Planet und Demokratie"];
+      const terms = (chapterTermOverrides[number] || (termByCluster[cluster.key] || ["Wirkung", "Mensch, Planet und Demokratie"]))
+        .map((termIdOrLabel) => glossaryById.get(termIdOrLabel)?.canonicalLabel || termIdOrLabel);
       return {
         number,
         title,
@@ -295,7 +361,7 @@ function versionStatusBox(html) {
     return `<section class="meta-box version-summary">
       <h2>Stand dieser Onlinefassung</h2>
       <p>Diese Seite ist Teil der lebenden Online-Referenz. Der Text basiert auf der zitierfähigen Originalfassung und wurde für die Webfassung strukturiert, verlinkt und gegen den aktuellen Begriffsstand eingeordnet.</p>
-      <div class="version-summary-grid" aria-label="Versionsstatus">
+      <div class="version-summary-grid" aria-label="Versionsinformationen">
         <div><span>Original</span><strong>${esc(sourceVersion)}</strong><small>bleibt zitierfähig</small></div>
         <div><span>Onlinefassung</span><strong>${esc(liveVersion)}</strong><small>lesbar, verlinkt, versioniert</small></div>
         <div><span>Prüfstand</span><strong>${esc(statusText)}</strong><small>weitere Delta-Reviews laufen</small></div>
@@ -319,6 +385,21 @@ function pillList(items, className = "reference-pill-list") {
   return `<ul class="${className}">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
 }
 
+function termFor(item) {
+  const normalized = String(item || "").toLowerCase();
+  return glossaryById.get(normalized) || glossaryByLabel.get(normalized) || null;
+}
+
+function termLink(item, prefix = "../../") {
+  const term = termFor(item);
+  if (!term) return `<span>${esc(item)}</span>`;
+  return `<a class="glossary-term" href="${prefix}begriffe/${esc(term.slug)}/" data-glossary-key="${esc(term.termId)}" data-glossary-label="${esc(term.canonicalLabel)}" data-glossary-definition="${esc(term.hoverDefinition)}" data-glossary-url="${prefix}begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a>`;
+}
+
+function termPillList(items, prefix = "../../", className = "reference-pill-list") {
+  return `<ul class="${className}">${items.map((item) => `<li>${termLink(item, prefix)}</li>`).join("")}</ul>`;
+}
+
 function chapterCard(chapter, relativePrefix = "") {
   const href = `${relativePrefix}${chapter.slug}/`;
   return `<article class="chapter-card" data-cluster="${chapter.cluster.key}" data-title="${esc(`${chapter.number} ${chapter.title}`.toLowerCase())}">
@@ -332,7 +413,7 @@ function chapterCard(chapter, relativePrefix = "") {
         <span>${chapter.priority ? "UX-priorisiert" : "strukturiert"}</span>
         <span>${esc(reviewStatusLabel(chapter.reviewStatus))}</span>
       </div>
-      ${pillList(chapter.terms.slice(0, 4))}
+      ${termPillList(chapter.terms.slice(0, 4), relativePrefix ? "../../" : "../")}
     </article>`;
 }
 
@@ -377,6 +458,7 @@ function portalHtml(chapters, parts) {
         <span>70 Abbildungen · 30 Tabellen · vollständiger Volltext</span>
       </aside>
     </section>
+    ${terminologyNotice()}
 
     <section class="reference-section">
       <div class="section-header">
@@ -446,6 +528,7 @@ function chapterIndexHtml(chapters) {
         ${statusBadges("partially-delta-reviewed")}
       </div>
     </section>
+    ${terminologyNotice()}
     <section class="reference-section">
       ${chapterFilters()}
       <div class="chapter-card-grid" data-chapter-grid>
@@ -465,6 +548,7 @@ function partsIndexHtml(parts) {
         <p class="hero-subtitle">Die Architektur des Grundlagenwerks als Atlas der Wirkungsökonomie.</p>
       </div>
     </section>
+    ${terminologyNotice()}
     <section class="reference-section">
       <div class="part-card-grid">
         ${parts.map((part) => `<a class="part-card" href="../${part.slug}/"><span>Teil ${part.roman}</span><h3>${esc(part.title.replace(/^Teil\s+[IVXLCDM]+\s*[-:]\s*/i, ""))}</h3><p>${part.chapterSlugs.length} Kapitel</p></a>`).join("")}
@@ -511,6 +595,13 @@ function guidedReadingHtml(chapters) {
 
 function sourcesHtml(chapters) {
   const sourceMap = new Map();
+  function sourceCategory(id, text) {
+    if (id.startsWith("I-")) return "WÖk-interne Quelle";
+    const normalized = text.toLowerCase();
+    if (/\b(csrd|esrs|gri|nace|taxonomie|taxonomy|produktpass|dpp|verordnung|richtlinie|standard|iso|eu)\b/i.test(normalized)) return "Daten-/Standardquelle";
+    if (/\b(working paper|whitepaper|wirkungsökonomie|wök|hauptwerk|manifest|leitfaden)\b/i.test(normalized)) return "Historische Quelle";
+    return "Anschlussquelle";
+  }
   for (const chapter of chapters) {
     const html = read(chapter.file);
     for (const paragraph of html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)) {
@@ -523,9 +614,11 @@ function sourcesHtml(chapters) {
         sourceText = "Quelle im Kapitelquellenblock des Hauptwerks. Die Originalformulierung bleibt im Kapitel erhalten.";
       }
       if (!sourceMap.has(id)) {
+        const category = sourceCategory(id, sourceText);
         sourceMap.set(id, {
           id,
           type: id.startsWith("I-") ? "Interne Quelle" : "Externe Quelle",
+          category,
           text: sourceText.slice(0, 420),
           chapter,
         });
@@ -539,12 +632,14 @@ function sourcesHtml(chapters) {
         <p class="hero-kicker">Quellenregister</p>
         <h1>Quellen und Backlinks</h1>
         <p class="hero-subtitle">Interne und externe Quellen werden als Karten sichtbar gemacht. Roh-URLs bleiben im Original erhalten; im Reader erscheinen Quellen-IDs als Chips.</p>
+        <p class="notice">Quellenkategorien ordnen Lesbarkeit, nicht Beweiskraft: Kernquelle, Anschlussquelle, WÖk-interne Quelle, Daten-/Standardquelle und historische Quelle bleiben unterscheidbar. Interne Quellen dokumentieren Projektentwicklung und ersetzen keine externen Belege.</p>
+        <p class="notice">Interne Quellen dokumentieren die Entwicklung der Wirkungsökonomie. Externe Quellen belegen Anschlussfähigkeit, Standards, Daten oder regulatorische Rahmen. Einige Quellen und Rechtsfragen bleiben für spätere Prüfungen markiert. Die finale Quellenfassung liegt als Dokumentation unter <code>docs/release/WOeK_v1.1_Quellenregister_final.md</code>.</p>
       </div>
     </section>
     <section class="reference-section">
       <div class="source-card-grid">
         ${[...sourceMap.values()].map((source) => `<article class="source-card" id="${slugify(source.id)}">
-          <span>${esc(source.type)}</span>
+          <span>${esc(source.category)} · ${esc(source.type)}</span>
           <h2>${esc(source.id)}</h2>
           <p>${esc(source.text || "Quelle im Kapitelquellenblock des Hauptwerks.")}</p>
           <a href="../${source.chapter.slug}/#woek-main-2026-k${String(source.chapter.number).padStart(3, "0")}">Verwendet in Kapitel ${source.chapter.number}</a>
@@ -562,6 +657,7 @@ function glossaryHtml() {
         <p class="hero-kicker">Begriffsschicht</p>
         <h1>Glossar und Hoverdefinitionen</h1>
         <p class="hero-subtitle">Das Glossar ist die führende Begriffsschicht der Online-Referenz. Die bestehenden Begriffseiten, Hovers, Synonyme und Crosslinks bleiben zentral unter /begriffe/ gepflegt und werden hier als Referenzmodus eingebunden.</p>
+        <p class="notice">Die Begriffe folgen dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Ältere Projektdateien können frühere Begriffsverwendungen enthalten.</p>
         <div class="hero-actions reference-actions">
           <a class="btn btn-primary" href="../../begriffe/">Alphabetisches Glossar öffnen</a>
           <a class="btn btn-secondary" href="../../glossar.html">Klassisches Glossar öffnen</a>
@@ -597,12 +693,86 @@ function versionsHtml() {
         <article><span>${SOURCE_VERSION}</span><h2>Source-Original</h2><p>Bestätigte DOCX-/PDF-Fassung des Hauptwerks. Unverändert zitierfähig.</p></article>
         <article><span>${IMPORT_VERSION}</span><h2>Technischer Import</h2><p>Volltext, Kapitelrouten, Dokumentenbibliothek, Suchindex, Bilder und Manifest.</p></article>
         <article><span>${LIVE_VERSION}</span><h2>Lebende Online-Referenz</h2><p>Delta-Review, Glossar- und Logikschärfung, Changelog und sichtbare Addenda.</p></article>
+        <article><span>1.1 RC</span><h2>Begriffliche Präzisierung und Referenzordnung</h2><p>Release Candidate auf Grundlage des Führenden Begriffsleitfadens v1.0. Wirkung wird neutral verstanden, Zielgröße ist positive Netto-Wirkung, NWI und T-SROI werden getrennt, ältere Dokumente werden historisch eingeordnet.</p><a class="text-link" href="../version-1-1/">Release-Seite öffnen</a></article>
       </div>
     </section>
     <section class="reference-section">
       <div class="section-header"><h2>Changelog</h2><p>Die wichtigsten Änderungen der Live-Reference-Schicht.</p></div>
       <div class="update-list">
         ${(changelog.changes || []).map((change) => `<article id="${esc(change.changeId)}"><span>${esc(change.changeId)}</span><h3>${esc(change.type)}</h3><p>${esc(change.reason)}</p><small>${esc(change.sourceForChange || "")}</small></article>`).join("")}
+      </div>
+    </section>
+  </main>`;
+}
+
+function releaseV11Html() {
+  return `<main class="reference-portal" data-pagefind-body>
+    <section class="reference-hero compact-reference-hero">
+      <div>
+        <nav class="breadcrumb"><a href="../">Referenz</a> / <a href="../versionen/">Versionen</a> / Version 1.1</nav>
+        <p class="hero-kicker">Release Candidate</p>
+        <h1>Version 1.1 – Begriffliche Präzisierung und Referenzordnung</h1>
+        <p class="hero-subtitle">Release Candidate der Wirkungsökonomie auf Grundlage des Führenden Begriffsleitfadens, Stand 21. Mai 2026.</p>
+      </div>
+    </section>
+    ${terminologyNotice()}
+    <section class="reference-section reference-split">
+      <div>
+        <h2>Status</h2>
+        <p>Version 1.1 ist eine begriffliche, methodische und dokumentarische Aktualisierung der Wirkungsökonomie. Sie ist kein geltendes Recht und keine amtliche Methodik.</p>
+        <h2>Warum Version 1.1?</h2>
+        <p>Diese Version präzisiert zentrale Begriffe, ordnet ältere Projektdateien ein und macht Quellen, offene Prüfungen, Changelog und Release-Dokumentation sichtbar.</p>
+      </div>
+      <aside class="reference-emphasis">
+        <strong>Terminologiebasis</strong>
+        <p>Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026.</p>
+      </aside>
+    </section>
+    <section class="reference-section">
+      <div class="section-header"><h2>Wichtigste Änderungen</h2></div>
+      <ul class="reference-check-list">
+        <li>Wirkung wird neutral definiert.</li>
+        <li>Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</li>
+        <li>Wirkungspotenzial wird von Wirkung getrennt.</li>
+        <li>Wirkstoff wird als Analogie eingeordnet.</li>
+        <li>SDG+ wird als WÖk-Erweiterung erklärt, nicht als offizielle UN-Kategorie.</li>
+        <li>NWI und T-SROI werden getrennt.</li>
+        <li>FinalScore, NWI, T-SROI und WIF werden eingeordnet.</li>
+        <li>WStG wird als Rahmengesetz verstanden; WUStG und WEstG werden als Module eingeordnet.</li>
+        <li>Personenbewertung, Gesinnungsbewertung, Lebensstilbewertung und Social Credit werden ausgeschlossen.</li>
+        <li>Fehlbarkeit, Pilotierung, Evaluation und Reversibilität werden hervorgehoben.</li>
+        <li>Glossar, Hoverdefinitionen, Quellenregister, Referenz-Metadaten und Changelog wurden verbessert.</li>
+      </ul>
+    </section>
+    <section class="reference-section reference-split">
+      <div>
+        <h2>Führende Dokumente</h2>
+        ${pillList(["Führender Begriffsleitfaden v1.0", "Die neue Ordnung des Wohlstands / Online-Referenz", "WÖk Master Items v1.2", "WStG 2.0", "WUStG v2.1", "T-SROI v2.0", "Schutzrahmen Social Credit"])}
+      </div>
+      <aside class="reference-emphasis">
+        <h2>Was Version 1.1 nicht ist</h2>
+        <ul>
+          <li>kein geltendes Recht</li>
+          <li>keine verbindlichen Steuersätze</li>
+          <li>keine finale juristische Prüfung</li>
+          <li>keine amtliche Methodik</li>
+          <li>keine Finanzierungszusage</li>
+          <li>keine Personenbewertung</li>
+          <li>kein Social-Credit-System</li>
+        </ul>
+      </aside>
+    </section>
+    <section class="reference-section">
+      <div class="section-header"><h2>Offene Punkte</h2></div>
+      ${pillList(["juristische Vertiefungsprüfung", "EU-Steuerrechtsprüfung", "Datenschutzprüfung", "externe Quellenvalidierung", "finale Linkprüfung", "PDF/EPUB/Druckexport", "Barrierefreiheitsprüfung", "Lektorat"])}
+    </section>
+    <section class="reference-section">
+      <div class="section-header"><h2>Dokumentationsdateien</h2></div>
+      <div class="export-card-grid">
+        <article class="export-card"><h3>Release Notes</h3><p><code>docs/release/WOeK_v1.1_Release_Notes_final.md</code></p></article>
+        <article class="export-card"><h3>Quellenregister</h3><p><code>docs/release/WOeK_v1.1_Quellenregister_final.md</code></p></article>
+        <article class="export-card"><h3>Offene Prüfungen</h3><p><code>docs/release/WOeK_v1.1_Offene_Pruefungen.md</code></p></article>
+        <article class="export-card"><h3>Historische Dokumente</h3><p><code>docs/release/WOeK_v1.1_Historische_Dokumente.md</code></p></article>
       </div>
     </section>
   </main>`;
@@ -676,6 +846,28 @@ function partPageHtml(part, chapters) {
   </main>`;
 }
 
+function legacyPartRedirectHtml(part) {
+  return `<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=../${esc(part.slug)}/">
+    <title>Teil ${esc(part.roman)} - ${esc(part.title)} - Wirkungsökonomie</title>
+    <meta name="description" content="Weiterleitung zur korrigierten Referenzroute für Teil ${esc(part.roman)}.">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="../${esc(part.slug)}/">
+  </head>
+  <body>
+    <main>
+      <h1>Teil ${esc(part.roman)} - ${esc(part.title)}</h1>
+      <p>Diese frühere Referenzroute wurde durch eine sprechende Route ersetzt.</p>
+      <p><a href="../${esc(part.slug)}/">Zur korrigierten Teilseite wechseln</a></p>
+    </main>
+  </body>
+</html>`;
+}
+
 function sourceChips(html) {
   const saved = [];
   let next = html.replace(/<a\b[^>]*class=["'][^"']*source-chip[^"']*["'][\s\S]*?<\/a>/gi, (match) => {
@@ -707,6 +899,20 @@ function stripUxMarkers(html) {
   return html.replace(/<!-- reference-ux:start -->[\s\S]*?<!-- reference-ux:end -->/g, "");
 }
 
+function applyChapterMetadataCorrections(html, chapter) {
+  const corrected = chapterTitleCorrections[chapter.number];
+  if (!corrected) return html;
+  const full = `Kapitel ${chapter.number} - ${corrected}`;
+  let next = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(full)} - Wirkungsökonomie</title>`);
+  next = next.replace(/<meta name="search_title" content="[^"]*">/, `<meta name="search_title" content="${esc(full)}">`);
+  next = next.replace(/<h1\b([^>]*)>[\s\S]*?<\/h1>/, `<h1$1>${esc(full)}</h1>`);
+  next = next.replace(
+    new RegExp(`(<h2\\b[^>]*>\\s*)Kapitel\\s+${chapter.number}(?:\\s+Kapitel\\s+${chapter.number})?(\\s*</h2>)`, "i"),
+    `$1${esc(full)}$2`
+  );
+  return next;
+}
+
 function modeBar(chapter) {
   return `<!-- reference-ux:start --><div class="reading-progress" aria-hidden="true"><span></span></div>
       <div class="reader-mode-dock" data-reader-modes>
@@ -736,6 +942,30 @@ function chapterToolbar(chapter) {
     </div><!-- reference-ux:end -->`;
 }
 
+function terminologyNotice() {
+  return `<!-- reference-ux:start --><aside class="reference-term-notice" data-no-glossary>
+      <strong>Terminologiebasis</strong>
+      <p>Diese Online-Referenz folgt dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Wo Zielgrößen gemeint sind, spricht die aktuelle Fassung von positiver Netto-Wirkung für Mensch, Planet und Demokratie.</p>
+    </aside><!-- reference-ux:end -->`;
+}
+
+function chapterGlossary(chapter) {
+  const terms = chapter.terms
+    .map((label) => termFor(label))
+    .filter(Boolean)
+    .slice(0, 8);
+  if (!terms.length) return "";
+  return `<!-- reference-ux:start --><section class="chapter-glossary" aria-labelledby="chapter-glossary-${chapter.number}">
+      <h2 id="chapter-glossary-${chapter.number}">Zentrale Begriffe dieses Kapitels</h2>
+      <div class="chapter-glossary-grid">
+        ${terms.map((term) => `<article>
+          <h3><a href="../../begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a></h3>
+          <p>${esc(term.shortDefinition || term.hoverDefinition)}</p>
+        </article>`).join("")}
+      </div>
+    </section><!-- reference-ux:end -->`;
+}
+
 function chapterFooter(chapter, previous, next) {
   return `<!-- reference-ux:start --><nav class="chapter-bottom-nav" aria-label="Kapitel Navigation">
       ${previous ? `<a href="../${previous.slug}/"><span>Vorheriges Kapitel</span><strong>${previous.number}. ${esc(previous.title)}</strong></a>` : "<span></span>"}
@@ -752,7 +982,7 @@ function contextAdditions(chapter) {
     </section>
     <section class="context-module">
       <h3>Zentrale Begriffe</h3>
-      ${pillList(chapter.terms)}
+      ${termPillList(chapter.terms, "../../")}
     </section>
     <section class="context-module">
       <h3>Verwandte Kapitel</h3>
@@ -770,6 +1000,7 @@ function contextAdditions(chapter) {
 
 function enhanceChapter(chapter, chapters) {
   let html = stripUxMarkers(read(chapter.file));
+  html = applyChapterMetadataCorrections(html, chapter);
   html = sourceChips(html);
   html = html.replace(
     /<main class="([^"]*reference-work[^"]*)"([^>]*)>/,
@@ -786,7 +1017,9 @@ function enhanceChapter(chapter, chapters) {
   const index = chapters.findIndex((item) => item.number === chapter.number);
   const previous = chapters[index - 1];
   const next = chapters[index + 1];
-  html = html.replace("</article>", `${chapterFooter(chapter, previous, next)}
+  html = html.replace("</article>", `${terminologyNotice()}
+          ${chapterGlossary(chapter)}
+          ${chapterFooter(chapter, previous, next)}
           </article>`);
   html = ensureScripts(html, chapter.file);
   write(chapter.file, html);
@@ -857,7 +1090,7 @@ function enhanceFullText() {
   html = html.replace(/<details class="technical-meta">[\s\S]*?<\/details>/g, "");
   html = html.replace(
     /<div class="version-summary-note"><p>Absätze: ([^<]+)<\/p><\/div>/,
-    `<p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen und Reviewlogik ansehen</a></p>`
+    `<p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen ansehen</a></p>`
   );
   html = ensureScripts(versionStatusBox(html), file);
   write(file, html);
@@ -1042,6 +1275,14 @@ function main() {
     bodyClass: "reference-ux-page",
   }));
 
+  write("referenz/version-1-1/index.html", page("referenz/version-1-1/index.html", {
+    title: "Version 1.1 - Begriffliche Präzisierung und Referenzordnung",
+    description: "Release Candidate der Wirkungsökonomie auf Grundlage des Führenden Begriffsleitfadens.",
+    type: "Release Candidate",
+    body: releaseV11Html(),
+    bodyClass: "reference-ux-page",
+  }));
+
   write("referenz/export/index.html", page("referenz/export/index.html", {
     title: "Export und Zitierfähigkeit",
     description: "Exportbereich für Originalfassungen und Live-Referenzstände.",
@@ -1058,6 +1299,9 @@ function main() {
       body: partPageHtml(part, chapters),
       bodyClass: "reference-ux-page",
     }));
+    if (part.legacySlug && part.legacySlug !== part.slug) {
+      write(`referenz/${part.legacySlug}/index.html`, legacyPartRedirectHtml(part));
+    }
   }
 
   for (const chapter of chapters) enhanceChapter(chapter, chapters);

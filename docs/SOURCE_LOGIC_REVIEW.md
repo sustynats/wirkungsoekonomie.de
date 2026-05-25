@@ -1,6 +1,6 @@
 # Source-Logic-Review
 
-Stand: 2026-05-23
+Stand: 2026-05-25
 
 Ordnet interne Quellen nach Webfassung, Originaldatei und Status ein.
 

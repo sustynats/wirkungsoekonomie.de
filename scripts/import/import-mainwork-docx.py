@@ -240,7 +240,7 @@ def render_page(docx_path: Path) -> dict[str, object]:
       </article>
       <section class="callout" id="woek-main-discussion-placeholder">
         <h2>Diskurs</h2>
-        <p>Diskurs zu diesem Abschnitt wird in einer späteren Phase aktiviert.</p>
+
       </section>
     </main>
   </body>

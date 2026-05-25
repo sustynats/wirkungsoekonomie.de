@@ -102,7 +102,7 @@ const items = detailRows.map((row) => {
     detailkonzept_docx: exists(detailDocx) ? `/${detailDocx}` : "",
     dossier_html: exists(dossierHtml) ? `/${dossierHtml.replace(/index\.html$/, "")}` : "",
     dossier_docx: exists(dossierDocx) ? `/${dossierDocx}` : "",
-    naechster_schritt: override.detailHtml ? "Go-3-v1-Detailkonzept ist als Online-Volltext und DOCX-Download integriert; Dossier bleibt als ergänzende Arbeitsfassung verlinkt." : row["Nächster Schritt"],
+    naechster_schritt: override.detailHtml ? "Go-3-v1-Detailkonzept ist als Online-Volltext und DOCX-Download integriert; Dossier bleibt als ergänzende Fassung verlinkt." : row["Nächster Schritt"],
   };
 });
 

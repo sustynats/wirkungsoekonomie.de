@@ -330,7 +330,7 @@ const md = [
   "",
   `Stand: ${TODAY}`,
   "",
-  "Dieses Register trennt Portal-Einstieg, Kurzüberblick, Methodenpapier, Detailkonzept, Dossier und Arbeitsstand. Bestehende Inhalte werden nicht pauschal ersetzt, sondern fachlich richtig eingeordnet.",
+  "Dieses Register trennt Portal-Einstieg, Überblick, Methodenpapier, Fachvertiefung, Dossier und aktuelle Fassung. Vorhandene Inhalte werden nicht pauschal ersetzt, sondern fachlich richtig eingeordnet.",
   "",
   "## Zusammenfassung",
   "",

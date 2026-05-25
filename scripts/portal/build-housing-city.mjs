@@ -231,7 +231,7 @@ function citationNotice(route) {
   return `<aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Online-Volltext ist der Hauptzugang. Abschnittsanker können direkt zitiert werden; Downloads bleiben ergänzende Export- und Archivfassungen.</p><p><a class="text-link" href="${route}">Kanonische Seitenadresse öffnen</a></p></aside>`;
 }
 function statusMeta(status) {
-  return `<aside class="card status-meta" aria-label="Dokumentstatus"><p class="card-kicker">Dokumentstatus</p><dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div><div><dt>Stand</dt><dd>24.05.2026</dd></div><div><dt>Version</dt><dd>v0.1 / Webfassung</dd></div><div><dt>Status</dt><dd>${escapeHtml(status)}</dd></div></dl></aside>`;
+  return "";
 }
 function cardGrid(base, items) {
   return `<div class="card-grid three">${items.map((x) => `<article class="card">${x.kicker ? `<p class="card-kicker">${escapeHtml(x.kicker)}</p>` : ""}<h3 class="card-title">${escapeHtml(x.title)}</h3><p class="card-text">${escapeHtml(x.text)}</p>${x.href ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, x.href)}">${escapeHtml(x.label || "Online lesen")}</a></div>` : ""}</article>`).join("")}</div>`;
@@ -345,14 +345,14 @@ function portalPage() {
     title: "Wohnen & Stadt | Wirkungsökonomie",
     description: "Wie die Wirkungsökonomie bezahlbare, gesunde, nachhaltige und resiliente Lebensräume neu ordnet.",
     body: (base, route) => `${hero(base, {
-      kicker: "Wirkungsfeld · Rang 5",
+      kicker: "Wirkungsfeld",
       title: "Wohnen & Stadt",
       subtitle: "Wie die Wirkungsökonomie bezahlbare, gesunde, nachhaltige und resiliente Lebensräume neu ordnet.",
       text: "Der heutige Wohnungsmarkt fragt zu oft: Wie viel Rendite bringt Wohnraum? Die Wirkungsökonomie fragt: Welche Wirkung entfaltet Wohnraum für Mensch, Planet und Demokratie?",
       action: `<a class="btn btn-primary" href="${href(base, "erleben/wohnwirkungsrechner/")}">Wohnwirkungsrechner öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Portal / Rang 5")}</section>
+    <section class="section narrow">${statusMeta("Portal")}</section>
     <section class="section article-section"><article class="article-body fulltext-reader">${mdToHtml(read(`${WEB}/website_inhalt_wohnen_stadt.md`)).html}</article></section>
     <section class="section" aria-labelledby="subareas"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${sectionTitle("subareas", "Zentrale Unterbereiche")}<p>Jeder Unterbereich hat ein Detailkonzept und ein Einzeldossier als Online-Volltext.</p></div>${cardGrid(base, areas.map(([slug, , title, text]) => ({ title, text, href: `wirkungsfelder/wohnen-stadt/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" })))}</section>
     ${toolGrid(base)}
@@ -591,10 +591,10 @@ function workshopPages() {
   const conceptsPath = path.join(ROOT, "werkstatt/arbeitsbibliothek/konzepte-dossiers/index.html");
   if (fs.existsSync(conceptsPath)) {
     let html = fs.readFileSync(conceptsPath, "utf8");
-    if (!html.includes("Rang 5")) {
-      html = html.replace("</main>", `<section class="section"><div class="section-header"><p class="hero-kicker">Rang 5</p><h2>Wohnen & Stadt</h2><p>Wohnen & Stadt ist mit Konzept, Dossier, Detailkonzepten, Einzeldossiers und Wohnwirkungsrechner in der Arbeitsbibliothek verfügbar.</p></div>${cardGrid("../../../", [
-        { kicker: "Rang 5", title: "Wohnen & Stadt", text: "Portal mit Detailkonzepten, Dossiers und Wohnwirkungsrechner.", href: "wirkungsfelder/wohnen-stadt/" },
-        { kicker: "Rang 5", title: "Gesamtdossier Wohnen & Stadt", text: "Gesamtdossier online lesen.", href: "wirkungsfelder/wohnen-stadt/dossier/" },
+    if (!html.includes("")) {
+      html = html.replace("</main>", `<section class="section"><div class="section-header"><p class="hero-kicker"></p><h2>Wohnen & Stadt</h2><p>Wohnen & Stadt ist mit Konzept, Dossier, Detailkonzepten, Einzeldossiers und Wohnwirkungsrechner in der Arbeitsbibliothek verfügbar.</p></div>${cardGrid("../../../", [
+        { kicker: "", title: "Wohnen & Stadt", text: "Portal mit Detailkonzepten, Dossiers und Wohnwirkungsrechner.", href: "wirkungsfelder/wohnen-stadt/" },
+        { kicker: "", title: "Gesamtdossier Wohnen & Stadt", text: "Gesamtdossier online lesen.", href: "wirkungsfelder/wohnen-stadt/dossier/" },
       ])}</section>\n</main>`);
       fs.writeFileSync(conceptsPath, html, "utf8");
     }

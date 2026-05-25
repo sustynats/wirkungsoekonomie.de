@@ -1,6 +1,6 @@
 # Phase 1 Live-Reference Completion
 
-Stand: 2026-05-23
+Stand: 2026-05-25
 
 ## Was war 2026.1-import?
 

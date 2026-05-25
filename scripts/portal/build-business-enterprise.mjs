@@ -241,7 +241,7 @@ function citationNotice(route) {
   return `<aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Online-Volltext ist der Hauptzugang. Abschnittsanker können direkt zitiert werden; Downloads bleiben ergänzende Export- und Archivfassungen.</p><p><a class="text-link" href="${route}">Kanonische Seitenadresse öffnen</a></p></aside>`;
 }
 function statusMeta(status) {
-  return `<aside class="card status-meta" aria-label="Dokumentstatus"><p class="card-kicker">Dokumentstatus</p><dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div><div><dt>Stand</dt><dd>24.05.2026</dd></div><div><dt>Version</dt><dd>v0.1 / Webfassung</dd></div><div><dt>Status</dt><dd>${escapeHtml(status)}</dd></div></dl></aside>`;
+  return "";
 }
 function cardGrid(base, items) {
   return `<div class="card-grid three">${items.map((x) => `<article class="card">${x.kicker ? `<p class="card-kicker">${escapeHtml(x.kicker)}</p>` : ""}<h3 class="card-title">${escapeHtml(x.title)}</h3><p class="card-text">${escapeHtml(x.text)}</p>${x.href ? `<div class="portal-card-actions"><a class="text-link" href="${href(base, x.href)}">${escapeHtml(x.label || "Online lesen")}</a></div>` : ""}</article>`).join("")}</div>`;
@@ -310,14 +310,14 @@ function portalPage() {
     title: "Wirtschaft & Unternehmen | Wirkungsökonomie",
     description: "Unternehmen als Wirkungssysteme: Führung, Controlling, Wertschöpfung, Marketing und Risiko neu denken.",
     body: (base, route) => `${hero(base, {
-      kicker: "Wirkungsfeld · Rang 4",
+      kicker: "Wirkungsfeld",
       title: "Wirtschaft & Unternehmen",
       subtitle: "Unternehmen als Wirkungssysteme: Führung, Controlling, Wertschöpfung, Marketing und Risiko neu denken.",
       text: "Unternehmen organisieren Wirkung täglich. Die Wirkungsökonomie fragt, welche Zustandsveränderungen entstehen und wie Strategie, Kapital, Daten, Führung und Wertschöpfung auf positive Netto-Wirkung für Mensch, Planet und Demokratie ausgerichtet werden können.",
       action: `<a class="btn btn-primary" href="${href(base, "werkstatt/dossiers/wirtschaft-unternehmen/")}">Gesamtdossier lesen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Portal / Rang 4")}</section>
+    <section class="section narrow">${statusMeta("Portal")}</section>
     <section class="section" aria-labelledby="subareas"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${sectionTitle("subareas", "Zentrale Unterbereiche")}<p>Jeder Unterbereich hat ein Detailkonzept und ein Einzeldossier als Online-Volltext.</p></div>${cardGrid(base, areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" })))}</section>
     ${toolGrid(base)}
     ${politicalBlock()}
@@ -428,7 +428,7 @@ function retroDetailPages() {
         description: `Rückwirkend ergänztes Online-Detailkonzept zu ${title}.`,
         searchSection: group.label.includes("Impact") ? "Werkzeuge" : "Wirkungsfelder",
         searchType: "Detailkonzept",
-        body: (base, route) => `${hero(base, { kicker: `Detailkonzept · ${group.label}`, title: `Detailkonzept ${title}`, subtitle: "Online-Volltext und zitierfähiger Arbeitsstand.", text: `Dieses Detailkonzept ergänzt den bestehenden Bereich ${group.label}. Es ordnet Zweck, Einsatz, Datenbedarf, Grenzen und politische Ausgestaltungsspielräume ein.`, action: `<a class="btn btn-primary" href="${href(base, `${group.base}/dossiers/${slug}/`)}">Einzeldossier öffnen</a>` })}
+        body: (base, route) => `${hero(base, { kicker: `Fachvertiefung · ${group.label}`, title: `${title}`, subtitle: "Online-Volltext und zitierfähige Fassung.", text: `Diese Fachvertiefung ergänzt den bestehenden Bereich ${group.label}. Sie ordnet Zweck, Einsatz, Datenbedarf, Grenzen und politische Ausgestaltungsspielräume ein.`, action: `<a class="btn btn-primary" href="${href(base, `${group.base}/dossiers/${slug}/`)}">Dossier öffnen</a>` })}
         <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
         <section class="section narrow">${statusMeta("Rückwirkend ergänztes Detailkonzept / Webfassung")}</section>
         <section class="section article-section"><article class="article-body fulltext-reader">
@@ -482,11 +482,11 @@ function workshopPages() {
     body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek", title: "Konzepte & Dossiers", subtitle: "Online lesen, zitieren, drucken, später exportieren.", text: "Konzepte, Detailkonzepte und Dossiers landen automatisch in der Werkstatt. Downloads sind Archiv und Export, nicht Hauptzugang.", action: `<a class="btn btn-primary" href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek öffnen</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section">${cardGrid(base, [
-      { kicker: "Rang 1", title: "Produkte & Konsum", text: "Produktbesteuerung durch Wirkung, Dossier und Detailkonzepte.", href: "wirkungsfelder/produkte-konsum/" },
-      { kicker: "Rang 2", title: "Impact Controlling", text: "Methodenportal mit Dossier und Detailkonzepten.", href: "werkzeuge/impact-controlling/" },
-      { kicker: "Rang 3", title: "Staat, Recht & Demokratie", text: "Portal, Gesetzesarchitektur und Dossiers.", href: "wirkungsfelder/staat-recht-demokratie/" },
-      { kicker: "Rang 4", title: "Wirtschaft & Unternehmen", text: "Unternehmen als Wirkungssysteme mit Detailkonzepten und Dossiers.", href: "wirkungsfelder/wirtschaft-unternehmen/" },
-      { kicker: "Rang 4", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Gesamtdossier online lesen.", href: "werkstatt/dossiers/wirtschaft-unternehmen/" },
+      { kicker: "", title: "Produkte & Konsum", text: "Produktbesteuerung durch Wirkung, Dossier und Detailkonzepte.", href: "wirkungsfelder/produkte-konsum/" },
+      { kicker: "", title: "Impact Controlling", text: "Methodenportal mit Dossier und Detailkonzepten.", href: "werkzeuge/impact-controlling/" },
+      { kicker: "", title: "Staat, Recht & Demokratie", text: "Portal, Gesetzesarchitektur und Dossiers.", href: "wirkungsfelder/staat-recht-demokratie/" },
+      { kicker: "", title: "Wirtschaft & Unternehmen", text: "Unternehmen als Wirkungssysteme mit Detailkonzepten und Dossiers.", href: "wirkungsfelder/wirtschaft-unternehmen/" },
+      { kicker: "", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Gesamtdossier online lesen.", href: "werkstatt/dossiers/wirtschaft-unternehmen/" },
     ])}</section>
     ${downloadBlock(base, [
       { label: "Wirtschaft-Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" },

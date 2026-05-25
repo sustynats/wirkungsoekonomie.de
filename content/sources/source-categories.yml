@@ -1,5 +1,27 @@
-version: 2026-05-22
-status: draft
+version: 2026-05-24
+status: release-candidate
+referenceCategories:
+  - id: kernquelle
+    title: Kernquelle
+    description: "Trägt die Hauptaussage eines Abschnitts oder Begriffs."
+  - id: anschlussquelle
+    title: Anschlussquelle
+    description: "Stellt wissenschaftliche, regulatorische oder politische Anschlussfähigkeit her."
+  - id: woek_interne_quelle
+    title: WÖk-interne Quelle
+    description: "Dokumentiert die Entwicklung innerhalb des Projekts und ersetzt keine externen Belege."
+  - id: daten_standardquelle
+    title: Daten-/Standardquelle
+    description: "Liefert Datenstandard, Klassifikation, Norm, Indikator oder Reportingrahmen."
+  - id: historische_quelle
+    title: Historische Quelle
+    description: "Frühere Fassungen, alte Whitepaper oder alte Working Papers."
+  - id: juristische_regulatorische_pruefstelle
+    title: Juristische / regulatorische Prüfstelle
+    description: "Quelle oder Thema, das vor verbindlicher Nutzung juristisch oder regulatorisch vertieft geprüft werden muss."
+  - id: pruefen_unklar
+    title: Prüfen / Unklar
+    description: "Quelle ist vorhanden, aber Rolle, Aktualität, Belastbarkeit oder Zuordnung ist noch unklar."
 categories:
   - id: eu_regulations_and_official_data
     title: Eu Regulations And Official Data

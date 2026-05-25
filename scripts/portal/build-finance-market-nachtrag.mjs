@@ -52,15 +52,15 @@ const financeTools = [
 ];
 
 const rankRows = [
-  ["Produktbesteuerung / WUStG", "Rang 1 Produkte & Konsum + Rang 3 Staat/Recht"],
-  ["Impact Controlling / WÖk-IDs", "Rang 2 Werkzeuge"],
-  ["WStG / Wirkungsrat / Wirkungshaushalt", "Rang 3 Staat, Recht & Demokratie"],
-  ["Unternehmenssteuern / Kapitalmarktdruck", "Rang 4 Wirtschaft & Unternehmen + Rang 12 Finanzsystem & Kapital"],
-  ["Sozialabgaben-Entkopplung / Automatisierung", "Rang 6 Arbeit & Einkommen + Rang 4 Unternehmen + Rang 12 Finanzierbarkeit"],
-  ["Wirkungsrente", "Rang 7 Rente & soziale Sicherung"],
+  ["Produktbesteuerung / WUStG", "Produkte & Konsum + Staat/Recht"],
+  ["Impact Controlling / WÖk-IDs", "Werkzeuge"],
+  ["WStG / Wirkungsrat / Wirkungshaushalt", "Staat, Recht & Demokratie"],
+  ["Unternehmenssteuern / Kapitalmarktdruck", "Wirtschaft & Unternehmen + Finanzsystem & Kapital"],
+  ["Sozialabgaben-Entkopplung / Automatisierung", "Arbeit & Einkommen + Unternehmen + Finanzierbarkeit"],
+  ["Wirkungsrente", "Rente & soziale Sicherung"],
   ["Bildung, Gesundheit, Wohnen", "Jeweilige Wirkungsfelder plus Finanzierungsseite"],
-  ["Wirkungsvermögensteuer / Wirkungserbschaftsteuer", "Rang 12 Finanzsystem & Kapital + Rang 3 Staat/Recht"],
-  ["Wirkungsfonds", "Rang 12 Finanzsystem & Kapital als Querschnitt, zusätzlich in Fachportalen verlinkt"],
+  ["Wirkungsvermögensteuer / Wirkungserbschaftsteuer", "Finanzsystem & Kapital + Staat/Recht"],
+  ["Wirkungsfonds", "Finanzsystem & Kapital als Querschnitt, zusätzlich in Fachportalen verlinkt"],
 ];
 
 function escapeHtml(value) {

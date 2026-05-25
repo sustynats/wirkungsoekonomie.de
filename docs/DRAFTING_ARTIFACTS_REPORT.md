@@ -1,6 +1,6 @@
 # Drafting-Artifacts-Report
 
-Stand: 2026-05-23
+Stand: 2026-05-25
 
 Sucht nach Chat-, Prompt-, TODO- und Rohentwurfsartefakten in der Live-Referenz.
 

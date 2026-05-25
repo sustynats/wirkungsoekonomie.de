@@ -1,6 +1,16 @@
 {
-  "generatedAt": "2026-05-24T09:24:05.718Z",
+  "generatedAt": "2026-05-25T15:47:48.762Z",
   "relationships": {
+    "agenda-2030": {
+      "terms": [
+        "sdgs",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "sdg-sdgplus-referenzrahmen"
+      ]
+    },
     "archetyp": {
       "terms": [
         "benchmark",
@@ -78,7 +88,10 @@
     },
     "mensch-planet-demokratie": {
       "terms": [
+        "sdgs",
+        "agenda-2030",
         "sdg-plus",
+        "wirkung",
         "positive-netto-wirkung",
         "wirkungsbewertung"
       ],
@@ -153,9 +166,12 @@
       "terms": [
         "wirkung",
         "netto-wirkung",
-        "mensch-planet-demokratie"
+        "mensch-planet-demokratie",
+        "sdg-plus"
       ],
-      "documents": []
+      "documents": [
+        "sdg-sdgplus-referenzrahmen"
+      ]
     },
     "positive-wirkung": {
       "terms": [
@@ -194,11 +210,36 @@
     },
     "sdg-plus": {
       "terms": [
+        "sdgs",
+        "agenda-2030",
         "mensch-planet-demokratie",
         "positive-netto-wirkung",
         "wirkungsbewertung"
       ],
-      "documents": []
+      "documents": [
+        "sdg-sdgplus-referenzrahmen"
+      ]
+    },
+    "sdg-sdgplus-referenzrahmen": {
+      "terms": [
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"
+      ]
+    },
+    "sdgs": {
+      "terms": [
+        "agenda-2030",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "sdg-sdgplus-referenzrahmen"
+      ]
     },
     "social-credit": {
       "terms": [
