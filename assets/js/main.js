@@ -453,6 +453,11 @@ function applyDownloadFilter() {
     }
   });
 
+  document.querySelectorAll("[data-library-group]").forEach((group) => {
+    const hasVisibleCards = Array.from(group.querySelectorAll("[data-download-card]")).some((card) => !card.hidden);
+    group.hidden = !hasVisibleCards;
+  });
+
   downloadFilterButtons.forEach((button) => {
     const isActive = button.dataset.downloadFilter === downloadFilterState.category;
     button.classList.toggle("active", isActive);
@@ -471,6 +476,11 @@ function applyDownloadFilter() {
       "medien-demokratie": "Medien und Demokratie",
       "daten-indikatoren": "Daten und Indikatoren",
       archiv: "Archiv / ältere Arbeitsstände",
+      buch: "Bücher und Grundlagenwerke",
+      ausarbeitung: "lange Ausarbeitungen",
+      thesenpapier: "Thesenpapiere und kurze Konzepte",
+      beispiel: "Beispiele und Fallnotizen",
+      recht: "Rechts- und Steuerungsentwürfe",
       langfassung: "Langfassungen",
       "buch-langform": "Buch / Langform",
       "mittlere-ausarbeitung": "mittlere Ausarbeitungen",

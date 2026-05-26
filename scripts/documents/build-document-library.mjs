@@ -173,11 +173,125 @@ function documentScope(document) {
   };
 }
 
+const libraryGroups = [
+  {
+    key: "buch",
+    title: "Bücher und Grundlagenwerke",
+    intro: "Lange Grundlagen, Buchfassungen und tragende Referenzen. Für zusammenhängende Lektüre und Orientierung im Gesamtmodell.",
+  },
+  {
+    key: "ausarbeitung",
+    title: "Lange Ausarbeitungen",
+    intro: "Umfangreiche Arbeitspapiere, Konzepte und Dossiers werden öffentlich einheitlich als Ausarbeitungen geführt. Sie sind online lesbar und als PDF verfügbar.",
+  },
+  {
+    key: "thesenpapier",
+    title: "Thesenpapiere und kurze Konzepte",
+    intro: "Kompakte Einstiege, die ein Thema öffnen, erste Annahmen zeigen oder eine spätere Ausarbeitung vorbereiten.",
+  },
+  {
+    key: "beispiel",
+    title: "Beispiele und Fallnotizen",
+    intro: "Konkrete Fälle, kurze Analysen und Anwendungsskizzen. Sie zeigen, wie die Logik praktisch gelesen werden kann.",
+  },
+  {
+    key: "methodik",
+    title: "Methodik, Register und Lernmaterial",
+    intro: "Methodische Grundlagen, Bewertungsbausteine, Register und Lernmaterialien für Anwendung, Akademie und Werkzeuge.",
+  },
+  {
+    key: "recht",
+    title: "Rechts- und Steuerungsentwürfe",
+    intro: "Modellhafte Gesetzes-, Steuerungs- und Governance-Entwürfe. Keine amtlichen Fassungen und keine Rechtsberatung.",
+  },
+];
+
+const libraryGroupOrder = new Map(libraryGroups.map((group, index) => [group.key, index]));
+
+function publicDocumentRole(document) {
+  const scope = documentScope(document);
+  const type = String(document.type || "").toLowerCase();
+  const categories = (document.category || []).map((item) => String(item).toLowerCase());
+
+  if (document.id === "die-neue-ordnung-des-wohlstands" || type.includes("grundlagenwerk") || type === "buch") {
+    return {
+      key: "buch",
+      label: "Buch / Grundlagenwerk",
+      note: "Lange Referenz für zusammenhängende Lektüre.",
+    };
+  }
+
+  if (type.includes("gesetz") || categories.includes("recht") || categories.includes("steuern")) {
+    return {
+      key: "recht",
+      label: "Rechts- und Steuerungsentwurf",
+      note: "Modellhafter Entwurf, keine amtliche Fassung.",
+    };
+  }
+
+  if (type.includes("method") || type.includes("register") || type.includes("handbuch")) {
+    return {
+      key: "methodik",
+      label: "Methodik / Lernmaterial",
+      note: "Hilft beim Anwenden, Prüfen oder Lernen.",
+    };
+  }
+
+  if (type.includes("fallstudie") || type.includes("use case") || type.includes("essay") || document.id.includes("beispiel") || document.id.includes("kampagnenanalyse")) {
+    return {
+      key: "beispiel",
+      label: "Beispiel / Fallnotiz",
+      note: "Konkrete Anwendung oder kurze Analyse.",
+    };
+  }
+
+  if (scope.key === "langfassung" || scope.key === "mittlere-ausarbeitung" || type.includes("dossier") || type.includes("whitepaper") || type.includes("working paper") || type.includes("arbeitspapier") || type.includes("detailkonzept")) {
+    return {
+      key: scope.key === "kurzpapier" ? "thesenpapier" : "ausarbeitung",
+      label: scope.key === "kurzpapier" ? "Thesenpapier / kurzes Konzept" : "Ausarbeitung",
+      note: scope.key === "kurzpapier"
+        ? "Kompakter Einstieg; noch keine umfassende Langfassung."
+        : "Ausgearbeiteter Text, online lesbar und als PDF verfügbar.",
+    };
+  }
+
+  return {
+    key: "thesenpapier",
+    label: "Thesenpapier / kurzes Konzept",
+    note: "Kompakter Einstieg; noch keine umfassende Langfassung.",
+  };
+}
+
+function publicDocumentSummary(document) {
+  const role = publicDocumentRole(document);
+  const replacement = role.key === "thesenpapier" ? "Dieses Thesenpapier" : "Diese Ausarbeitung";
+  return String(document.summary || "")
+    .replace(/^Das Dossier\b/, replacement)
+    .replace(/^Ein Dossier\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung")
+    .replace(/^Das Arbeitspapier\b/, replacement)
+    .replace(/^Ein Arbeitspapier\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung")
+    .replace(/^Das Konzeptpapier\b/, replacement)
+    .replace(/^Ein Konzeptpapier\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung")
+    .replace(/^Das Whitepaper\b/, replacement)
+    .replace(/^Ein Whitepaper\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung");
+}
+
+function sortedDocuments(documents) {
+  return [...documents].sort((a, b) => {
+    const groupA = publicDocumentRole(a);
+    const groupB = publicDocumentRole(b);
+    const groupDelta = (libraryGroupOrder.get(groupA.key) ?? 99) - (libraryGroupOrder.get(groupB.key) ?? 99);
+    if (groupDelta) return groupDelta;
+    return String(a.title).localeCompare(String(b.title), "de");
+  });
+}
+
 function documentScopeMarkup(document) {
   const scope = documentScope(document);
+  const role = publicDocumentRole(document);
   return `<div class="document-scope-row document-scope-${escapeHtml(scope.key)}">
-    <span class="document-scope-badge">${escapeHtml(scope.label)}</span>
-    <span class="document-scope-note">${escapeHtml(scope.description)}</span>
+    <span class="document-scope-badge">${escapeHtml(role.label)}</span>
+    <span class="document-scope-note">${escapeHtml(scope.label)} · ${escapeHtml(role.note)} ${escapeHtml(scope.description)}</span>
   </div>`;
 }
 
@@ -234,7 +348,7 @@ function documentOnlineText(document) {
     </div>`;
   }
   return `
-    <p>${escapeHtml(document.summary)}</p>
+    <p>${escapeHtml(publicDocumentSummary(document))}</p>
     <h3>Warum ist das relevant?</h3>
     <p>Das Dokument hilft, Wirkung nicht als Nebenthema zu behandeln, sondern als Grundlage für bessere Entscheidungen. Es verbindet Begriffe, Bewertungslogik und Anwendung so, dass Nutzer:innen den Zusammenhang zwischen Problem, Wirkung und möglicher Rückkopplung nachvollziehen können.</p>
     <h3>Für wen ist das Material gedacht?</h3>
@@ -313,7 +427,7 @@ function documentJsonLd(document) {
       downloadUrl: document.pdfUrl ? siteLink(document.pdfUrl) : undefined,
       encodingFormat: document.pdfUrl ? "application/pdf" : "text/html",
       dateModified: document.stand,
-      description: document.summary,
+      description: publicDocumentSummary(document),
     },
     null,
     2,
@@ -333,27 +447,31 @@ function documentActions(document, primary = true) {
 
 function documentCard(document) {
   const scope = documentScope(document);
+  const role = publicDocumentRole(document);
+  const summary = publicDocumentSummary(document);
   const searchText = [
     document.title,
-    document.summary,
+    summary,
     document.type,
+    role.label,
+    role.note,
     scope.label,
     scope.description,
     ...(document.category || []),
     ...(document.relatedTerms || []),
     ...(document.audience || []),
   ].join(" ");
-  return `<article class="download-card compact" data-download-card data-download-category="${escapeHtml([...(document.category || []), scope.key].join(" ").toLowerCase())}" data-download-title="${escapeHtml(document.title)}" data-download-description="${escapeHtml(searchText)}">
-    <p class="card-kicker">${escapeHtml(document.type)} · ${document.isArchive ? "Archiv" : "Aktuell"}</p>
+  return `<article class="download-card compact" data-download-card data-download-group="${escapeHtml(role.key)}" data-download-category="${escapeHtml([...(document.category || []), scope.key, role.key].join(" ").toLowerCase())}" data-download-title="${escapeHtml(document.title)}" data-download-description="${escapeHtml(searchText)}">
+    <p class="card-kicker">${escapeHtml(role.label)} · ${document.isArchive ? "Archiv" : "Aktuell"}</p>
     <h3 class="card-title">${escapeHtml(document.title)}</h3>
     ${documentScopeMarkup(document)}
     <dl class="download-meta">
-      <div><dt>Typ</dt><dd>${escapeHtml(document.type)}</dd></div>
+      <div><dt>Rolle</dt><dd>${escapeHtml(role.label)}</dd></div>
       <div><dt>Umfang</dt><dd>${escapeHtml(scope.label)}</dd></div>
       <div><dt>Stand</dt><dd>${escapeHtml(document.stand)}</dd></div>
       ${document.fileSize ? `<div><dt>Dateigröße</dt><dd>${escapeHtml(document.fileSize)}</dd></div>` : ""}
     </dl>
-    <p class="card-text">${escapeHtml(document.summary)}</p>
+    <p class="card-text">${escapeHtml(summary)}</p>
     ${tagList(document.category)}
     <div class="download-related"><span>Passend dazu</span>${(document.relatedTerms || []).slice(0, 3).map((term) => `<a href="${escapeHtml(termHref(term))}">${escapeHtml(relationLabelFromTerm(term))}</a>`).join("")}${(document.relatedFields || []).slice(0, 1).map((field) => `<a href="${escapeHtml(field)}">${escapeHtml(slugToLabel(field))}</a>`).join("")}</div>
     ${document.isArchive || !document.onlineUrl ? `<p class="document-archive-badge">Archivmaterial · PDF-only</p>` : ""}
@@ -361,7 +479,47 @@ function documentCard(document) {
   </article>`;
 }
 
+function groupedDocumentSections(documents) {
+  const grouped = new Map(libraryGroups.map((group) => [group.key, []]));
+  for (const document of sortedDocuments(documents)) {
+    const role = publicDocumentRole(document);
+    if (!grouped.has(role.key)) grouped.set(role.key, []);
+    grouped.get(role.key).push(document);
+  }
+
+  return libraryGroups
+    .map((group) => {
+      const items = grouped.get(group.key) || [];
+      if (!items.length) return "";
+      return `<section class="library-group" id="gruppe-${escapeHtml(group.key)}" data-library-group="${escapeHtml(group.key)}">
+        <div class="library-group-header">
+          <div>
+            <p class="hero-kicker">${escapeHtml(items.length)} ${items.length === 1 ? "Dokument" : "Dokumente"}</p>
+            <h3>${escapeHtml(group.title)}</h3>
+            <p>${escapeHtml(group.intro)}</p>
+          </div>
+        </div>
+        <div class="download-library-grid" data-download-list>${items.map(documentCard).join("\n")}</div>
+      </section>`;
+    })
+    .filter(Boolean)
+    .join("\n");
+}
+
 function buildDownloadsPage() {
+  const groupCards = libraryGroups
+    .map((group) => {
+      const count = currentDocuments.filter((document) => publicDocumentRole(document).key === group.key).length;
+      if (!count) return "";
+      return `<a class="library-overview-card" href="#gruppe-${escapeHtml(group.key)}" data-download-filter="${escapeHtml(group.key)}">
+        <span>${escapeHtml(count)} ${count === 1 ? "Dokument" : "Dokumente"}</span>
+        <strong>${escapeHtml(group.title)}</strong>
+        <em>${escapeHtml(group.intro)}</em>
+      </a>`;
+    })
+    .filter(Boolean)
+    .join("");
+
   const jsonLd = `<script type="application/ld+json">${JSON.stringify(
     {
       "@context": "https://schema.org",
@@ -405,16 +563,18 @@ function buildDownloadsPage() {
       <section class="section section-muted" aria-labelledby="reading-path-title">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Lesepfade</p>
-            <h2 id="reading-path-title">Vom Einstieg zur Anwendung.</h2>
-            <p>Für den schnellen Einstieg helfen diese Pfade. Wer ein einzelnes Dokument sucht, nutzt die Suche oder die Dokumentkarten darunter.</p>
+            <p class="hero-kicker">Dokumentarten</p>
+            <h2 id="reading-path-title">Was suche ich gerade?</h2>
+            <p>Die Bibliothek sortiert Materialien nach öffentlicher Rolle: ob ein Text kurz einführt, ausführlich ausarbeitet, ein Beispiel zeigt oder als Methode beziehungsweise Entwurf dient.</p>
           </div>
-          <ol class="reading-order">
-            <li><span>1</span><strong>Grundlagen</strong><em>Leitbild, Grundlagenwerk und Wirkung statt Kapital lesen.</em></li>
-            <li><span>2</span><strong>Methodik</strong><em>Prozessarchitektur, Master Items und Scorecard-Logik verstehen.</em></li>
-            <li><span>3</span><strong>Anwendungen</strong><em>Arbeit, Produkte, Wohnen, Medien und Kommunen vertiefen.</em></li>
-            <li><span>4</span><strong>Recht und Steuerung</strong><em>Gesetzesentwürfe und Use Cases als Arbeitsmaterial nutzen.</em></li>
-          </ol>
+          <div class="library-overview-grid">
+            ${groupCards}
+            <a class="library-overview-card" href="/erleben.html">
+              <span>Interaktiv</span>
+              <strong>Tools und Rechner</strong>
+              <em>Rechner, Scanner und Demos stehen im Bereich Ausprobieren. Die Bibliothek verlinkt passende Tools dort, wo Dokumente dazu gehören.</em>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -423,7 +583,7 @@ function buildDownloadsPage() {
           <div class="section-header">
             <p class="hero-kicker">Aktuelle Dokumente</p>
             <h2>Onlinefassungen zuerst, PDFs als Download.</h2>
-            <p>Aktuelle Veröffentlichungen haben eine lesbare Onlinefassung. Die Karten zeigen zusätzlich, ob es sich um eine umfangreiche Langfassung, eine mittlere Ausarbeitung oder nur um ein kurzes Thesen- bzw. Konzeptpapier handelt.</p>
+            <p>Aktuelle Veröffentlichungen haben eine lesbare Onlinefassung. PDFs sind die Downloadfassung. Editierbare Arbeitsdateien werden öffentlich nicht angeboten.</p>
           </div>
           <div class="download-library-controls" aria-label="Bibliothek filtern">
             <label class="download-search" for="download-search">
@@ -432,21 +592,21 @@ function buildDownloadsPage() {
             </label>
             <div class="category-row" aria-label="Dokumentkategorien">
               <button class="pill active" type="button" data-download-filter="all">Alle Dokumente</button>
-              <button class="pill" type="button" data-download-filter="grundlagen">Grundlagen</button>
+              <button class="pill" type="button" data-download-filter="buch">Bücher</button>
+              <button class="pill" type="button" data-download-filter="ausarbeitung">Lange Ausarbeitungen</button>
+              <button class="pill" type="button" data-download-filter="thesenpapier">Thesenpapiere</button>
+              <button class="pill" type="button" data-download-filter="beispiel">Beispiele</button>
               <button class="pill" type="button" data-download-filter="methodik">Methodik</button>
+              <button class="pill" type="button" data-download-filter="recht">Recht / Entwürfe</button>
+              <button class="pill" type="button" data-download-filter="grundlagen">Grundlagen</button>
               <button class="pill" type="button" data-download-filter="arbeit">Arbeit</button>
               <button class="pill" type="button" data-download-filter="produkte">Produkte</button>
               <button class="pill" type="button" data-download-filter="medien">Medien</button>
               <button class="pill" type="button" data-download-filter="kommunen">Kommunen</button>
-              <button class="pill" type="button" data-download-filter="langfassung">Langfassungen</button>
-              <button class="pill" type="button" data-download-filter="mittlere-ausarbeitung">Mittlere Ausarbeitungen</button>
-              <button class="pill" type="button" data-download-filter="kurzpapier">Kurze Konzepte</button>
             </div>
             <p class="download-filter-status" aria-live="polite"></p>
           </div>
-          <div class="download-library-grid" data-download-list>
-            ${currentDocuments.map(documentCard).join("\n")}
-          </div>
+          ${groupedDocumentSections(currentDocuments)}
         </div>
       </section>
 
@@ -466,8 +626,9 @@ function buildDownloadsPage() {
 
 function buildDocumentPage(document) {
   const scope = documentScope(document);
+  const role = publicDocumentRole(document);
   const keyPoints = (document.keyPoints || [])
-    .map((point) => `<li>${escapeHtml(point)}</li>`)
+    .map((point) => `<li>${escapeHtml(publicDocumentSummary({ ...document, summary: point }))}</li>`)
     .join("");
   const sourceLink = document.sourceOnlineUrl
     ? `<p class="card-text">Für weiterführende Kapitel und bestehende Lesefassungen siehe auch <a class="text-link" href="${escapeHtml(document.sourceOnlineUrl)}">die thematisch passende Onlinefassung</a>.</p>`
@@ -475,9 +636,9 @@ function buildDocumentPage(document) {
   const main = `
       <section class="hero document-hero">
         <div>
-          <p class="hero-kicker">${escapeHtml(document.type)} · ${escapeHtml(scope.label)}</p>
+          <p class="hero-kicker">${escapeHtml(role.label)} · ${escapeHtml(scope.label)}</p>
           <h1 class="hero-title">${escapeHtml(document.title)}</h1>
-          <p class="hero-subtitle">${escapeHtml(document.summary)}</p>
+          <p class="hero-subtitle">${escapeHtml(publicDocumentSummary(document))}</p>
           <dl class="download-meta document-hero-meta">
             <div><dt>Stand</dt><dd>${escapeHtml(document.stand)}</dd></div>
             <div><dt>Status</dt><dd>${document.isArchive ? "Archiv" : "Aktuelle Onlinefassung"}</dd></div>
@@ -547,7 +708,7 @@ function buildDocumentPage(document) {
     path.join(outDir, "index.html"),
     pageShell({
       title: document.title,
-      description: document.summary,
+      description: publicDocumentSummary(document),
       canonicalPath: document.onlineUrl,
       main,
       extraHead: documentJsonLd(document),
