@@ -24,6 +24,29 @@ const labelBySlug = new Map([
   ["mensch-planet-demokratie", "Mensch, Planet und Demokratie"],
 ]);
 
+const explicitScopeById = new Map([
+  ["die-neue-ordnung-des-wohlstands", {
+    key: "buch-langform",
+    label: "Buch / Langform",
+    description: "Umfangreiche Buchfassung für längere Lektüre und Nachschlagen.",
+  }],
+  ["woek-master-items-v1-2", {
+    key: "register",
+    label: "Register / Nachschlagewerk",
+    description: "Strukturierte Referenz, nicht als klassischer Lesetext gedacht.",
+  }],
+  ["live-impact-rating-konzept", {
+    key: "kurzpapier",
+    label: "Kurzes Thesenpapier / Konzept",
+    description: "Knapper Konzeptstand. Gute Orientierung, aber noch keine Langfassung.",
+  }],
+  ["milram-kampagnenanalyse", {
+    key: "kurzbeispiel",
+    label: "Kurzbeispiel / Fallnotiz",
+    description: "Kurze Fallnotiz zur Veranschaulichung, keine umfassende Studie.",
+  }],
+]);
+
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
@@ -60,6 +83,102 @@ function slugToLabel(value) {
 function tagList(items) {
   if (!items?.length) return "";
   return `<div class="document-tag-list">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>`;
+}
+
+function parseFileSizeMb(value) {
+  const raw = String(value || "").trim().replace(",", ".");
+  const number = Number.parseFloat(raw);
+  if (!Number.isFinite(number)) return 0;
+  if (/kb/i.test(raw)) return number / 1024;
+  if (/mb/i.test(raw)) return number;
+  return 0;
+}
+
+function wordCount(document) {
+  if (!document.contentHtmlPath || !fs.existsSync(document.contentHtmlPath)) return 0;
+  return fs
+    .readFileSync(document.contentHtmlPath, "utf8")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z0-9#]+;/gi, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+}
+
+function documentScope(document) {
+  if (explicitScopeById.has(document.id)) return explicitScopeById.get(document.id);
+
+  const words = wordCount(document);
+  const fileMb = parseFileSizeMb(document.fileSize);
+  const type = String(document.type || "").toLowerCase();
+
+  if (type.includes("handout")) {
+    return {
+      key: "kurzpapier",
+      label: "Handout / Kurzüberblick",
+      description: "Kompakter Überblick für schnellen Einstieg, Unterricht oder Weitergabe.",
+    };
+  }
+
+  if (type.includes("fallstudie") || type.includes("use case") || type.includes("essay")) {
+    return words > 3000
+      ? {
+          key: "mittlere-ausarbeitung",
+          label: "Mittlere Ausarbeitung",
+          description: "Mehr als ein Kurzpapier, aber bewusst noch kompakt lesbar.",
+        }
+      : {
+          key: "kurzbeispiel",
+          label: "Kurzbeispiel / Fallnotiz",
+          description: "Kurzes Beispiel zur Veranschaulichung, keine vollständige Langstudie.",
+        };
+  }
+
+  if (type.includes("gesetz")) {
+    return {
+      key: fileMb >= 1.5 || words >= 5000 ? "langfassung" : "mittlere-ausarbeitung",
+      label: fileMb >= 1.5 || words >= 5000 ? "Ausführlicher Entwurf" : "Kompakter Entwurf",
+      description: "Fachlicher Modell- oder Gesetzesentwurf, keine amtliche Fassung.",
+    };
+  }
+
+  if (words >= 12000 || fileMb >= 4) {
+    return {
+      key: "langfassung",
+      label: "Umfangreiche Langfassung",
+      description: "Ausführlich ausgearbeitet; geeignet für vertiefte Lektüre, Zitation und Facharbeit.",
+    };
+  }
+
+  if (words >= 4500 || fileMb >= 1.2 || type.includes("dossier") || type.includes("whitepaper") || type.includes("working paper") || type.includes("handbuch")) {
+    return {
+      key: "mittlere-ausarbeitung",
+      label: "Mittlere bis längere Ausarbeitung",
+      description: "Mehr als ein Kurzpapier; enthält bereits Kontext, Argumentation und Anwendung.",
+    };
+  }
+
+  if (words >= 1800 || fileMb >= 0.12 || type.includes("arbeitspapier") || type.includes("konzeptpapier") || type.includes("leitbild") || type.includes("methodenpapier")) {
+    return {
+      key: "kurzpapier",
+      label: "Kurzes Thesenpapier / Konzept",
+      description: "Kompakter Stand mit These, Logik und ersten Bausteinen; noch keine Langfassung.",
+    };
+  }
+
+  return {
+    key: "kurzpapier",
+    label: "Kurzer Konzeptstand",
+    description: "Kurzer öffentlicher Stand zur Orientierung; noch keine vollständige Ausarbeitung.",
+  };
+}
+
+function documentScopeMarkup(document) {
+  const scope = documentScope(document);
+  return `<div class="document-scope-row document-scope-${escapeHtml(scope.key)}">
+    <span class="document-scope-badge">${escapeHtml(scope.label)}</span>
+    <span class="document-scope-note">${escapeHtml(scope.description)}</span>
+  </div>`;
 }
 
 function linkList(items, labeler = slugToLabel) {
@@ -213,19 +332,24 @@ function documentActions(document, primary = true) {
 }
 
 function documentCard(document) {
+  const scope = documentScope(document);
   const searchText = [
     document.title,
     document.summary,
     document.type,
+    scope.label,
+    scope.description,
     ...(document.category || []),
     ...(document.relatedTerms || []),
     ...(document.audience || []),
   ].join(" ");
-  return `<article class="download-card compact" data-download-card data-download-category="${escapeHtml((document.category || []).join(" ").toLowerCase())}" data-download-title="${escapeHtml(document.title)}" data-download-description="${escapeHtml(searchText)}">
+  return `<article class="download-card compact" data-download-card data-download-category="${escapeHtml([...(document.category || []), scope.key].join(" ").toLowerCase())}" data-download-title="${escapeHtml(document.title)}" data-download-description="${escapeHtml(searchText)}">
     <p class="card-kicker">${escapeHtml(document.type)} · ${document.isArchive ? "Archiv" : "Aktuell"}</p>
     <h3 class="card-title">${escapeHtml(document.title)}</h3>
+    ${documentScopeMarkup(document)}
     <dl class="download-meta">
       <div><dt>Typ</dt><dd>${escapeHtml(document.type)}</dd></div>
+      <div><dt>Umfang</dt><dd>${escapeHtml(scope.label)}</dd></div>
       <div><dt>Stand</dt><dd>${escapeHtml(document.stand)}</dd></div>
       ${document.fileSize ? `<div><dt>Dateigröße</dt><dd>${escapeHtml(document.fileSize)}</dd></div>` : ""}
     </dl>
@@ -299,7 +423,7 @@ function buildDownloadsPage() {
           <div class="section-header">
             <p class="hero-kicker">Aktuelle Dokumente</p>
             <h2>Onlinefassungen zuerst, PDFs als Download.</h2>
-            <p>Aktuelle Veröffentlichungen haben eine lesbare Onlinefassung. PDFs bleiben als Download und Zitierfassung verfügbar.</p>
+            <p>Aktuelle Veröffentlichungen haben eine lesbare Onlinefassung. Die Karten zeigen zusätzlich, ob es sich um eine umfangreiche Langfassung, eine mittlere Ausarbeitung oder nur um ein kurzes Thesen- bzw. Konzeptpapier handelt.</p>
           </div>
           <div class="download-library-controls" aria-label="Bibliothek filtern">
             <label class="download-search" for="download-search">
@@ -314,6 +438,9 @@ function buildDownloadsPage() {
               <button class="pill" type="button" data-download-filter="produkte">Produkte</button>
               <button class="pill" type="button" data-download-filter="medien">Medien</button>
               <button class="pill" type="button" data-download-filter="kommunen">Kommunen</button>
+              <button class="pill" type="button" data-download-filter="langfassung">Langfassungen</button>
+              <button class="pill" type="button" data-download-filter="mittlere-ausarbeitung">Mittlere Ausarbeitungen</button>
+              <button class="pill" type="button" data-download-filter="kurzpapier">Kurze Konzepte</button>
             </div>
             <p class="download-filter-status" aria-live="polite"></p>
           </div>
@@ -338,6 +465,7 @@ function buildDownloadsPage() {
 }
 
 function buildDocumentPage(document) {
+  const scope = documentScope(document);
   const keyPoints = (document.keyPoints || [])
     .map((point) => `<li>${escapeHtml(point)}</li>`)
     .join("");
@@ -347,15 +475,20 @@ function buildDocumentPage(document) {
   const main = `
       <section class="hero document-hero">
         <div>
-          <p class="hero-kicker">${escapeHtml(document.type)}</p>
+          <p class="hero-kicker">${escapeHtml(document.type)} · ${escapeHtml(scope.label)}</p>
           <h1 class="hero-title">${escapeHtml(document.title)}</h1>
           <p class="hero-subtitle">${escapeHtml(document.summary)}</p>
           <dl class="download-meta document-hero-meta">
             <div><dt>Stand</dt><dd>${escapeHtml(document.stand)}</dd></div>
             <div><dt>Status</dt><dd>${document.isArchive ? "Archiv" : "Aktuelle Onlinefassung"}</dd></div>
+            <div><dt>Umfang</dt><dd>${escapeHtml(scope.label)}</dd></div>
             <div><dt>Autorin</dt><dd>Natalie Weber</dd></div>
           </dl>
           ${tagList(document.category)}
+          <div class="document-scope-box">
+            <strong>Einordnung: ${escapeHtml(scope.label)}</strong>
+            <p>${escapeHtml(scope.description)}</p>
+          </div>
           <div class="hero-actions">
             ${document.pdfUrl ? `<a class="btn btn-primary" href="${escapeHtml(document.pdfUrl)}" target="_blank" rel="noopener">PDF herunterladen</a>` : ""}
             <a class="btn btn-secondary" href="/downloads.html">Zur Bibliothek</a>
@@ -380,6 +513,7 @@ function buildDocumentPage(document) {
             <section id="auf-einen-blick" class="summary-box">
               <p class="hero-kicker">Auf einen Blick</p>
               <h2>Worum geht es?</h2>
+              <p><strong>Dokumentumfang:</strong> ${escapeHtml(scope.label)}. ${escapeHtml(scope.description)}</p>
               <ul class="clean-list">${keyPoints}</ul>
             </section>
 
@@ -474,7 +608,8 @@ function writeAudit() {
       const onlineExists = document.onlineUrl ? fs.existsSync(path.join(document.onlineUrl.replace(/^\/|\/$/g, ""), "index.html")) : false;
       const linkedOnPages = document.pdfUrl && linkedPdfs.has(document.pdfUrl) ? linkedPdfs.get(document.pdfUrl).size : 0;
       const status = pdfExists && onlineExists ? "ok" : !onlineExists ? "fehlt online" : "fehlt PDF";
-      return `| ${document.id} | ${document.title} | ${pdfExists ? "ja" : "nein"} | ${onlineExists ? "ja" : "nein"} | ja | ${linkedOnPages} | ${status} |`;
+      const scope = documentScope(document);
+      return `| ${document.id} | ${document.title} | ${scope.label} | ${pdfExists ? "ja" : "nein"} | ${onlineExists ? "ja" : "nein"} | ja | ${linkedOnPages} | ${status} |`;
     })
     .join("\n");
 
@@ -506,12 +641,22 @@ Stand: ${new Date().toISOString().slice(0, 10)}
 - Aktuelle PDF-only Dokumente: ${currentDocuments.filter((document) => !document.onlineUrl).length}
 - Rang- und Paketdateien in \`assets/downloads/\`: ${packageCount}
 
+## Umfangseinordnung
+
+| Umfang | Dokumente |
+| --- | ---: |
+${[...publicDocuments.reduce((acc, document) => {
+  const scope = documentScope(document);
+  acc.set(scope.label, (acc.get(scope.label) || 0) + 1);
+  return acc;
+}, new Map()).entries()].map(([label, count]) => `| ${label} | ${count} |`).join("\n")}
+
 Die Registry bündelt die öffentlichen Kernmaterialien aus \`assets/pdf/\`. Rangpakete, ZIPs und umfangreiche Arbeitsmaterialien bleiben in den bestehenden Downloadbereichen und werden als separater Paketbestand geführt.
 
 ## Registry-Prüfung
 
-| id | Titel | PDF vorhanden | Onlinefassung vorhanden | Bibliothek | PDF auf Einzelseiten verlinkt | Status |
-| --- | --- | --- | --- | --- | --- | --- |
+| id | Titel | Umfang | PDF vorhanden | Onlinefassung vorhanden | Bibliothek | PDF auf Einzelseiten verlinkt | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 ${registryRows}
 
 ## PDFs ohne Registry-Eintrag

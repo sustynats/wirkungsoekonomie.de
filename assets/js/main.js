@@ -471,6 +471,12 @@ function applyDownloadFilter() {
       "medien-demokratie": "Medien und Demokratie",
       "daten-indikatoren": "Daten und Indikatoren",
       archiv: "Archiv / ältere Arbeitsstände",
+      langfassung: "Langfassungen",
+      "buch-langform": "Buch / Langform",
+      "mittlere-ausarbeitung": "mittlere Ausarbeitungen",
+      kurzpapier: "kurze Thesen- und Konzeptpapiere",
+      kurzbeispiel: "Kurzbeispiele und Fallnotizen",
+      register: "Register / Nachschlagewerke",
     };
     const categoryLabel = labels[downloadFilterState.category] || downloadFilterState.category;
     const queryLabel = hasSearch ? ` · Suche: „${downloadFilterState.query}“` : "";
@@ -1110,10 +1116,10 @@ function initPublicationAccessFallback() {
   };
   const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
   const cards = [
-    ["Onlinefassung", "Detailkonzepte", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Detailkonzept lesen"],
-    ["Praxisfassung", "Dossiers", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Dossier lesen"],
-    ["PDF", "Detailkonzepte als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.detailDownload, "PDF herunterladen"],
-    ["PDF", "Dossiers als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.dossierDownload, "PDF herunterladen"],
+    ["Langfassung", "Detailkonzepte", "Längere fachliche Ausarbeitung mit Quellen, Beispielen und weiterführenden Materialien.", detailHref, "Detailkonzept lesen"],
+    ["Praxisdossier", "Dossiers", "Praxisfrage, Anwendung, Annahmen, Bewertungslogik, Datenquellen und Grenzen.", dossierHref, "Dossier lesen"],
+    ["PDF-Langfassung", "Detailkonzepte als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.detailDownload, "PDF herunterladen"],
+    ["PDF-Dossier", "Dossiers als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.dossierDownload, "PDF herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {
@@ -1128,7 +1134,7 @@ function initPublicationAccessFallback() {
     <div class="section-header">
       <p class="hero-kicker">Vertiefung</p>
       <h2 id="publikationszugang-title">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-      <p>Die Seite führt zuerst in das Thema ein. Detailkonzepte, Dossiers und Downloads sind hier als weiterführende Materialien gebündelt.</p>
+      <p>Die Seite führt zuerst in das Thema ein. Die Karten unterscheiden klar zwischen Langfassung, Praxisdossier und PDF-Arbeitsmaterial.</p>
     </div>
     <div class="card-grid three">${cards.map(([kicker, title, text, link, label]) => `
       <article class="card">
