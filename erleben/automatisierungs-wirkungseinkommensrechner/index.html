@@ -124,13 +124,14 @@
       <article class="card">
         <p class="card-kicker">Modul 1</p>
         <h3 class="card-title"><span class="inline-help" tabindex="0" aria-label="Beitragslücke: Die modellhafte Lücke, die entsteht, wenn Lohnsumme und damit Sozialbeiträge wegfallen." data-help="Die modellhafte Lücke, die entsteht, wenn Lohnsumme und damit Sozialbeiträge wegfallen.">Beitragslücke</span></h3>
-        <label>Anzahl betroffener FTE<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
+        <label>Beschäftigte, umgerechnet auf Vollzeitstellen<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
+        <p class="field-help">Eine Vollzeitstelle = 1. Zwei halbe Stellen = 1. Dieser Wert ist eine Modellannahme.</p>
         <label>durchschnittlicher Bruttolohn pro Jahr<input type="number" min="0" step="1000" value="52000" data-auto-input="wage"></label>
         <label>Arbeitgeber-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.5" data-auto-input="employerRate"></label>
         <label>Arbeitnehmer-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.0" data-auto-input="employeeRate"></label>
         <label>erwartete Automatisierungsquote in Prozent<input type="range" min="0" max="100" step="1" value="35" data-auto-input="automationRate"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Betroffene Vollzeitstellen</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
           <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">Beispielwerte aktiv</strong></div>
           <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">Beispielwerte aktiv</strong></div>
         </div>

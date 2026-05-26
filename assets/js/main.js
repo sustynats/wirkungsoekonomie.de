@@ -32,10 +32,7 @@ if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
-    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
-    ["Für wen?", "fuer/", "fuer/|ordnung/anschlussfaehigkeit/|ordnung/demokratische-anschlussfaehigkeit.html"],
-    ["SDGs & SDG+", "verstehen/sdgs-sdgplus/", "verstehen/sdgs-sdgplus/|referenzrahmen/sdgs-sdgplus/|sdg-plus.html|sdg-plus/|sdg-sdgplus/|sdg-und-sdg-plus/"],
-    ["Regeln & Standards", "verstehen/regularien-standards/", "verstehen/regularien-standards/|methodik/daten-standards-regularien.html|methodik/datenbasis.html"],
+    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|anwendungen.html|fuer/"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
@@ -1925,7 +1922,7 @@ const ResultInterpretationLayer = (() => {
       limit: "Der Betrag ist eine Plausibilisierung, keine Bilanz und kein Zahlungsanspruch."
     },
     {
-      match: ["betroffene fte", "affectedfte"],
+      match: ["betroffene vollzeitstellen", "vollzeitstellen", "affectedfte"],
       meaning: "Der Wert zeigt, wie viele Vollzeitäquivalente im Modell von Automatisierung betroffen wären.",
       relevance: "Er macht sichtbar, dass Automatisierung nicht nur Kosten senkt, sondern Übergänge, Einkommen und Sicherungssysteme berührt.",
       change: "Im WÖk-System würde daraus ein Bedarf für Qualifizierung, Versetzung, Beteiligung oder Rückkopplung entstehen.",
