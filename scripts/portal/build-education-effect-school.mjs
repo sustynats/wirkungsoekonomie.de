@@ -19,28 +19,28 @@ const documents = {
     title: "Konzeptpapier Bildung & Wirkungsschule",
     shortTitle: "Konzeptpapier",
     md: `${EXTRACT}/woek_bildung_wirkungsschule_konzeptpapier_v0_1.md`,
-    download: "assets/downloads/woek_bildung_wirkungsschule_konzeptpapier_v0_1.docx",
+    download: "assets/downloads/woek_bildung_wirkungsschule_konzeptpapier_v0_1.pdf",
     route: "wirkungsfelder/bildung/konzept/index.html",
   },
   dossier: {
     title: "Gesamtdossier Bildung & Wirkungsschule",
     shortTitle: "Gesamtdossier",
     md: `${EXTRACT}/woek_bildung_wirkungsschule_gesamtdossier_v0_1.md`,
-    download: "assets/downloads/woek_bildung_wirkungsschule_gesamtdossier_v0_1.docx",
+    download: "assets/downloads/woek_bildung_wirkungsschule_gesamtdossier_v0_1.pdf",
     route: "wirkungsfelder/bildung/dossier/index.html",
   },
   details: {
-    title: "Detailkonzepte Bildung & Wirkungsschule",
-    shortTitle: "Detailkonzepte",
+    title: "Konzeptpapiere Bildung & Wirkungsschule",
+    shortTitle: "Konzeptpapiere",
     md: `${EXTRACT}/woek_bildung_wirkungsschule_detailkonzepte_umfangreich_v0_1.md`,
-    download: "assets/downloads/woek_bildung_wirkungsschule_detailkonzepte_umfangreich_v0_1.docx",
+    download: "assets/downloads/woek_bildung_wirkungsschule_detailkonzepte_umfangreich_v0_1.pdf",
     route: "wirkungsfelder/bildung/detailkonzepte/index.html",
   },
   singleDossiers: {
     title: "Einzeldossiers Bildung & Wirkungsschule",
     shortTitle: "Einzeldossiers",
     md: `${EXTRACT}/woek_bildung_wirkungsschule_einzeldossier_set_v0_1.md`,
-    download: "assets/downloads/woek_bildung_wirkungsschule_einzeldossier_set_v0_1.docx",
+    download: "assets/downloads/woek_bildung_wirkungsschule_einzeldossier_set_v0_1.pdf",
     route: "wirkungsfelder/bildung/dossiers/index.html",
   },
   toolSuite: {
@@ -264,9 +264,9 @@ function cleanPublicText(text) {
   let value = String(text || "").replace(/\r\n/g, "\n").replace(/^\uFEFF/, "");
   value = value
     .replaceAll("Öffentliche Konzept- und Dossierfassung. Interne Umsetzungsanweisungen sind nicht Bestandteil dieses Dokuments.", "Öffentliche Konzept- und Dossierfassung.")
-    .replaceAll("Publikationsstandard Dieses Dokument bündelt die umfangreichen Detailkonzepte der Unterbereiche. Auf der Website sollen daraus jeweils eigenständige Online-Volltextseiten und Download-Dokumente entstehen. Es enthält keine internen technischen Anweisungen.", "Publikationsstandard Dieses Dokument bündelt die umfangreichen Detailkonzepte der Unterbereiche.")
+    .replace(/Publikationsstandard Dieses Dokument bündelt die umfangreichen .*? Es enthält keine internen technischen Anweisungen\./s, "Publikationsstandard Dieses Dokument bündelt die vertiefenden Konzeptpapiere der Unterbereiche.")
     .replaceAll("Website-Pfad:", "Online-Zugang:")
-    .replaceAll("Das Dossier soll dort vollständig online lesbar sein und zusätzlich als Word/PDF downloadbar bleiben.", "Die Dossierfassung ist online lesbar; Downloads dienen als Export und Archiv.");
+    .replace(/Das Dossier soll dort vollständig online lesbar sein und zusätzlich als .*? downloadbar bleiben\./, "Die Dossierfassung ist online lesbar; Downloads dienen als Export und Archiv.");
   return value
     .split("\n")
     .map((line) => line.trim())
@@ -496,14 +496,14 @@ function publicationAccess(base, mode = "portal") {
   const online = [
     ["Konzeptpapier", "Onlinefassung", "Das Konzeptpapier als vertiefende Onlinefassung lesen.", "wirkungsfelder/bildung/konzept/"],
     ["Gesamtdossier", "Dossier", "Das Gesamtdossier mit Beispielen, Bewertungslogik, Datenquellen und Grenzen lesen.", "wirkungsfelder/bildung/dossier/"],
-    ["Detailkonzepte", "Vertiefung", "Die Detailkonzepte zu allen Unterbereichen lesen.", "wirkungsfelder/bildung/detailkonzepte/"],
+    ["Konzeptpapiere", "Vertiefung", "Die Konzeptpapiere zu allen Unterbereichen lesen.", "wirkungsfelder/bildung/detailkonzepte/"],
     ["Einzeldossiers", "Dossier", "Einzeldossiers mit Praxisfrage, Bewertungslogik, Annahmen und Grenzen.", "wirkungsfelder/bildung/dossiers/"],
     ["Methodik", "Methode", "Die Methodik der Wirkungsschule-Tool-Suite lesen.", "wirkungsfelder/bildung/tools/"],
   ];
   const downloadLinks = [
     ["Konzeptpapier herunterladen", documents.concept.download],
     ["Gesamtdossier herunterladen", documents.dossier.download],
-    ["Detailkonzepte herunterladen", documents.details.download],
+    ["Konzeptpapiere als PDF herunterladen", documents.details.download],
     ["Einzeldossiers herunterladen", documents.singleDossiers.download],
     ["Methodik herunterladen", documents.toolSuite.download],
   ];
@@ -586,7 +586,7 @@ function modulePage(module) {
     title: `${module.name} | Bildung & Wirkungsschule`,
     description: module.thesis,
     type: "Unterbereich",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">Bildung & Wirkungsschule</p><h1>${esc(module.name)}</h1><p class="hero-subtitle">${esc(module.thesis)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#konzeptpapier">Konzeptpapier lesen</a><a class="btn btn-secondary" href="#dossier">Dossier lesen</a></div></div></section><section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Lesefassung</p>${h2("publikationszugang-title", "Konzeptpapier und Dossier")}<p class="card-text">Diese Seite enthält die Onlinefassung des Konzeptpapiers und eine ergänzende Dossierfassung. PDF-Downloads stehen im Materialbereich am Ende.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#konzeptpapier">Konzeptpapier lesen</a><a class="btn btn-secondary" href="#dossier">Dossier lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte herunterladen</a><a class="btn btn-secondary" href="${href(base, documents.singleDossiers.download)}">Einzeldossier-Set herunterladen</a></div></div></section>${tocBlock([...detail.toc, ...dossier.toc])}<section class="section" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Kurzfassung und Wirkungspfad")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Worum es geht</h3><p class="card-text">${esc(module.thesis)}</p></article><article class="card"><h3 class="card-title">Werkzeugbezug</h3><p class="card-text">${esc(module.tool)}</p></article><article class="card"><h3 class="card-title">Schutzlinie</h3><p class="card-text">Bewertet werden Lernräume, Strukturen, Unterstützungsangebote und Wirkungspfade. Keine Kinder-, Lehrkräfte- oder Familien-Scores.</p></article></div></section><section class="section article-section" aria-labelledby="konzeptpapier"><article class="article-body fulltext-reader"><p class="hero-kicker">Konzeptpapier</p><span id="detailkonzept" class="anchor-alias no-print" aria-hidden="true"></span>${h2("konzeptpapier", "Konzeptpapier lesen")}${detail.html}</article></section><section class="section article-section" aria-labelledby="dossier"><article class="article-body fulltext-reader"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier lesen")}${dossier.html}</article></section>${toolBlock(base)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${sourceBlock()}${downloadBlock(base, [{ label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossier-Set Word", href: documents.singleDossiers.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/bildung/")}">Bildung</a></nav><p class="hero-kicker">Bildung & Wirkungsschule</p><h1>${esc(module.name)}</h1><p class="hero-subtitle">${esc(module.thesis)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#konzeptpapier">Konzeptpapier lesen</a><a class="btn btn-secondary" href="#dossier">Dossier lesen</a></div></div></section><section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Lesefassung</p>${h2("publikationszugang-title", "Konzeptpapier und Dossier")}<p class="card-text">Diese Seite enthält die Onlinefassung des Konzeptpapiers und eine ergänzende Dossierfassung. PDF-Downloads stehen im Materialbereich am Ende.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#konzeptpapier">Konzeptpapier lesen</a><a class="btn btn-secondary" href="#dossier">Dossier lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Konzeptpapiere als PDF herunterladen</a><a class="btn btn-secondary" href="${href(base, documents.singleDossiers.download)}">Dossiers als PDF herunterladen</a></div></div></section>${tocBlock([...detail.toc, ...dossier.toc])}<section class="section" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Kurzfassung und Wirkungspfad")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Worum es geht</h3><p class="card-text">${esc(module.thesis)}</p></article><article class="card"><h3 class="card-title">Werkzeugbezug</h3><p class="card-text">${esc(module.tool)}</p></article><article class="card"><h3 class="card-title">Schutzlinie</h3><p class="card-text">Bewertet werden Lernräume, Strukturen, Unterstützungsangebote und Wirkungspfade. Keine Kinder-, Lehrkräfte- oder Familien-Scores.</p></article></div></section><section class="section article-section" aria-labelledby="konzeptpapier"><article class="article-body fulltext-reader"><p class="hero-kicker">Konzeptpapier</p><span id="detailkonzept" class="anchor-alias no-print" aria-hidden="true"></span>${h2("konzeptpapier", "Konzeptpapier lesen")}${detail.html}</article></section><section class="section article-section" aria-labelledby="dossier"><article class="article-body fulltext-reader"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier lesen")}${dossier.html}</article></section>${toolBlock(base)}${protectionBlock()}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${sourceBlock()}${downloadBlock(base, [{ label: "Konzeptpapiere als PDF herunterladen", href: documents.details.download }, { label: "Dossiers als PDF herunterladen", href: documents.singleDossiers.download }])}`,
   });
 }
 
@@ -630,10 +630,10 @@ function libraryPage() {
   page({
     rel: "werkstatt/dossiers/bildung/index.html",
     title: "Dossiers Bildung & Wirkungsschule | Wirkungsökonomie",
-    description: "Arbeitsbibliothek und Dossierhub zu Bildung, Wirkungsschule, Detailkonzepten, Einzeldossiers und Methodik.",
+    description: "Arbeitsbibliothek und Dossierhub zu Bildung, Wirkungsschule, Konzeptpapieren, Dossiers und Methodik.",
     section: "Werkstatt",
     type: "Dossier",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/")}">Werkstatt</a></nav><p class="hero-kicker">Werkstatt · Dossiers</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers, Methodik und Onlinefassungen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Zur Übersicht Bildung</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers")}</div>${cards(base, modules.map((module) => [module.name, "Onlinefassung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${toolBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossiers Word", href: documents.singleDossiers.download }, { label: "Methodik Markdown", href: documents.toolSuite.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/")}">Werkstatt</a></nav><p class="hero-kicker">Werkstatt · Dossiers</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Konzeptpapiere der Unterbereiche, Dossiers, Methodik und Onlinefassungen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Zur Übersicht Bildung</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Konzeptpapiere und Dossiers")}</div>${cards(base, modules.map((module) => [module.name, "Onlinefassung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${toolBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier als PDF herunterladen", href: documents.concept.download }, { label: "Gesamtdossier als PDF herunterladen", href: documents.dossier.download }, { label: "Konzeptpapiere als PDF herunterladen", href: documents.details.download }, { label: "Dossiers als PDF herunterladen", href: documents.singleDossiers.download }, { label: "Methodik lesen", href: documents.toolSuite.download }])}`,
   });
 }
 
@@ -641,18 +641,18 @@ function workLibraryPage() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
     title: "Bildung in der Arbeitsbibliothek | Wirkungsökonomie",
-    description: "Arbeitsbibliothek zu Bildung, Wirkungsschule, Konzeptpapier, Gesamtdossier, Detailkonzepten, Einzeldossiers und Methodik.",
+    description: "Arbeitsbibliothek zu Bildung, Wirkungsschule, Konzeptpapier, Gesamtdossier, Konzeptpapieren, Dossiers und Methodik.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Wirkungsfeld</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Alle öffentlichen Konzepte, Dossiers, Detailkonzepte, Einzeldossiers und Methoden zur Bildung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Zur Übersicht Bildung</a><a class="btn btn-secondary" href="${href(base, "werkstatt/dossiers/bildung/")}">Dossiers ansehen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers in der Arbeitsbibliothek")}</div>${cards(base, modules.map((module) => [module.name, "Onlinefassung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier Word", href: documents.concept.download }, { label: "Gesamtdossier Word", href: documents.dossier.download }, { label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossiers Word", href: documents.singleDossiers.download }, { label: "Methodik Markdown", href: documents.toolSuite.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/")}">Werkstatt</a> / <a href="${href(base, "werkstatt/arbeitsbibliothek/")}">Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Wirkungsfeld</p><h1>Bildung & Wirkungsschule</h1><p class="hero-subtitle">Alle öffentlichen Konzepte, Dossiers, Konzeptpapiere der Unterbereiche und Methoden zur Bildung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/")}">Zur Übersicht Bildung</a><a class="btn btn-secondary" href="${href(base, "werkstatt/dossiers/bildung/")}">Dossiers ansehen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Konzeptpapiere und Dossiers in der Arbeitsbibliothek")}</div>${cards(base, modules.map((module) => [module.name, "Onlinefassung", module.thesis, `wirkungsfelder/bildung/${module.slug}/`, "Vertiefung lesen"]))}</section>${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapier als PDF herunterladen", href: documents.concept.download }, { label: "Gesamtdossier als PDF herunterladen", href: documents.dossier.download }, { label: "Konzeptpapiere als PDF herunterladen", href: documents.details.download }, { label: "Dossiers als PDF herunterladen", href: documents.singleDossiers.download }, { label: "Methodik lesen", href: documents.toolSuite.download }])}`,
   });
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
     title: "Wirkungsschule in der Arbeitsbibliothek | Wirkungsökonomie",
-    description: "Arbeitsbibliothek zur Wirkungsschule mit Onlinefassungen, Detailkonzept, Dossier und Downloads.",
+    description: "Arbeitsbibliothek zur Wirkungsschule mit Onlinefassungen, Konzeptpapier, Dossier und Downloads.",
     section: "Werkstatt",
     type: "Arbeitsbibliothek",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung in der Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Unterbereich</p><h1>Die Wirkungsschule</h1><p class="hero-subtitle">Detailkonzept und Einzeldossier zur Schule als Wirkungsraum lesen und als Arbeitsmaterial herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Vertiefung lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte herunterladen</a></div></div></section><section class="section" aria-labelledby="zugang"><div class="download-card"><div><p class="card-kicker">Onlinefassung</p>${h2("zugang", "Konzeptpapier und Dossier lesen")}<p class="card-text">Die öffentliche Langfassung liegt auf der Unterseite. Diese Arbeitsbibliothek-Seite bündelt Arbeitsmaterial und Verweise.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Wirkungsschule lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Detailkonzepte Word</a><a class="btn btn-secondary" href="${href(base, documents.singleDossiers.download)}">Einzeldossiers Word</a></div></div></section>${publicationAccess(base, "subpage")}${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Detailkonzepte Word", href: documents.details.download }, { label: "Einzeldossiers Word", href: documents.singleDossiers.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/")}">Bildung in der Arbeitsbibliothek</a></nav><p class="hero-kicker">Arbeitsbibliothek · Unterbereich</p><h1>Die Wirkungsschule</h1><p class="hero-subtitle">Konzeptpapier und Dossier zur Schule als Wirkungsraum lesen und als Arbeitsmaterial herunterladen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Vertiefung lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Konzeptpapiere als PDF herunterladen</a></div></div></section><section class="section" aria-labelledby="zugang"><div class="download-card"><div><p class="card-kicker">Onlinefassung</p>${h2("zugang", "Konzeptpapier und Dossier lesen")}<p class="card-text">Die öffentliche Langfassung liegt auf der Unterseite. Diese Arbeitsbibliothek-Seite bündelt Arbeitsmaterial und Verweise.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="${href(base, "wirkungsfelder/bildung/wirkungsschule/")}">Wirkungsschule lesen</a><a class="btn btn-secondary" href="${href(base, documents.details.download)}">Konzeptpapiere als PDF herunterladen</a><a class="btn btn-secondary" href="${href(base, documents.singleDossiers.download)}">Dossiers als PDF herunterladen</a></div></div></section>${publicationAccess(base, "subpage")}${toolBlock(base)}${referenceBlock(base)}${bookBlock(base)}${downloadBlock(base, [{ label: "Konzeptpapiere als PDF herunterladen", href: documents.details.download }, { label: "Dossiers als PDF herunterladen", href: documents.singleDossiers.download }])}`,
   });
 }
 
@@ -691,7 +691,7 @@ function run() {
   portalPage();
   fulltextPage("concept", documents.concept.route, "Konzeptpapier / Onlinefassung");
   fulltextPage("dossier", documents.dossier.route, "Gesamtdossier / Onlinefassung");
-  fulltextPage("details", documents.details.route, "Detailkonzepte / Onlinefassung");
+  fulltextPage("details", documents.details.route, "Konzeptpapiere / Onlinefassung");
   fulltextPage("singleDossiers", documents.singleDossiers.route, "Einzeldossiers / Onlinefassung");
   toolSpecPage();
   modules.forEach(modulePage);
