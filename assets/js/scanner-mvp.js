@@ -75,13 +75,15 @@
       recognized: "Ein politischer Begriff oder eine Aussage erzeugt Angst, Kontrollverlust oder Schuldzuweisung.",
       central: "Sprache als Auslöser mit Wirkungspotenzial, nicht als automatisch nachgewiesener Einzelschaden.",
       data: "Textauszug, erkennbare Frames und Kontext reichen für eine erste Wirkungsfrage; Reichweite, Publikum und empirische Wirkung fehlen.",
+      facts: "Der Scanner ersetzt keinen journalistischen Faktencheck. Er markiert Quellenklarheit, Kontextbedarf und fehlende Belege als Grundlage für weitere Prüfung.",
+      frame: "Die Aussage kann über Angst, Kontrollverlust oder Schuldzuweisung gerahmt sein. Das ist ein Hinweis auf Resonanzrisiko, kein Wahrheitsurteil.",
       potentials: ["Angstverdichtung", "Schuldzuweisung", "Polarisierung", "sinkendes Vertrauen"],
       spaces: ["Mensch", "Demokratie"],
       sdg: ["SDG 16", "SDG+ Medienqualität", "SDG+ Diskursfähigkeit"],
       path: ["Begriff / Aussage", "Frame", "Resonanzraum", "Wirkungspotenzial", "Wahrnehmungsverschiebung", "mögliches Demokratierisiko", "SDG+-Bezug"],
       conflicts: "Zuspitzung kann Aufmerksamkeit schaffen, aber Orientierung und Vertrauen schwächen.",
       gaps: "Reichweite, Zielgruppe, Verbreitungskanal, Korrekturmechanismen und empirische Wirkung.",
-      counter: "Welche Systemfrage wird durch den Frame sichtbar oder verdeckt?",
+      counter: ["Welche Quelle belegt die Behauptung?", "Welche Gruppen werden sichtbar oder unsichtbar?", "Welche Emotion wird verstärkt?", "Welche Systemfrage wird durch den Frame sichtbar oder verdeckt?"],
       sources: "Begriffsleitfaden, SDG+ Medien & Demokratie, Wirkung politischer Sprache.",
       limits: "Diese Analyse beschreibt Wirkungspotenziale und Resonanzrisiken, keinen automatisch nachgewiesenen Einzelschaden.",
       quality: "E",
@@ -270,6 +272,11 @@
     return `<ul>${(items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
   }
 
+  function textOrList(value) {
+    if (Array.isArray(value)) return list(value);
+    return `<p>${escapeHtml(value)}</p>`;
+  }
+
   function path(items) {
     return `<ol class="scanner-path">${(items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>`;
   }
@@ -326,17 +333,18 @@
         <div class="scanner-result-sections">
           <article><h4>Was wurde erkannt?</h4><p>${escapeHtml(demo.recognized)}</p></article>
           <article><h4>Zentrale Aussage / Produkt / Organisation / Entscheidung</h4><p>${escapeHtml(sourceText || demo.central)}</p></article>
-          <article><h4>Datenlage</h4><p>${escapeHtml(demo.data)}</p></article>
+          <article><h4>Faktenlage / Quellenklarheit</h4><p>${escapeHtml(demo.facts || demo.data)}</p></article>
+          <article><h4>Möglicher Frame</h4><p>${escapeHtml(demo.frame || demo.conflicts)}</p></article>
           ${renderQuality(demo.quality)}
           <article><h4>Wirkungspotenziale</h4>${list(demo.potentials)}</article>
-          <article><h4>Wirkungsräume: Mensch, Planet, Demokratie</h4>${list(demo.spaces)}</article>
+          <article><h4>Betroffene Wirkungsräume</h4>${list(demo.spaces)}</article>
           <article><h4>SDG-/SDG+-Bezug</h4>${list(demo.sdg)}</article>
           <article><h4>Wirkungspfad</h4>${path(demo.path)}</article>
           <article><h4>Zielkonflikte</h4><p>${escapeHtml(demo.conflicts)}</p></article>
           <article><h4>Datenlücken</h4><p>${escapeHtml(demo.gaps)}</p></article>
-          <article><h4>WÖk-Gegenfrage</h4><p>${escapeHtml(demo.counter)}</p></article>
+          <article><h4>Gegenfragen</h4>${textOrList(demo.counter)}</article>
           <article><h4>Quellen</h4><p>${escapeHtml(demo.sources)}</p></article>
-          <article><h4>Grenzen der Analyse</h4><p>${escapeHtml(demo.limits)}</p></article>
+          <article><h4>Grenzen der Einschätzung</h4><p>${escapeHtml(demo.limits)}</p></article>
         </div>
         ${renderSourcePanel(demo, inferInputSource(sourceText))}
         <p class="scanner-legal-note">Diese Analyse ist eine wirkungsökonomische Ersteinschätzung auf Basis verfügbarer Daten. Sie ersetzt keine amtliche Bewertung, keine Rechts-, Steuer-, Anlage- oder Politikberatung.</p>

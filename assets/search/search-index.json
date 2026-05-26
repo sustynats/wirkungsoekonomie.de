@@ -371,6 +371,57 @@
     "priority": 140
   },
   {
+    "id": "woek-term-folgencheck",
+    "title": "Folgencheck",
+    "description": "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann.",
+    "url": "/begriffe/folgencheck/",
+    "section": "Begriffe",
+    "type": "Begriff",
+    "format": "Glossarbegriff",
+    "impactSpaces": [
+      "Mensch",
+      "Planet",
+      "Demokratie"
+    ],
+    "standards": [
+      "sdg-plus"
+    ],
+    "instruments": [
+      "faktencheck",
+      "wirkung",
+      "wirkungspotenzial",
+      "wirkungsrisiko",
+      "wirkungsbewertung",
+      "wirkungsrueckkopplung",
+      "resonanzraum",
+      "sdg-plus"
+    ],
+    "tags": [
+      "führender-begriff",
+      "1.0",
+      "approved",
+      "WÖk-Folgencheck",
+      "Wirkungsfolgen",
+      "Folgenabschätzung",
+      "Wirkungsfolgenabschätzung",
+      "politische Aussage prüfen",
+      "Medienwirkung",
+      "Desinformation"
+    ],
+    "aliases": [
+      "WÖk-Folgencheck",
+      "Wirkungsfolgen",
+      "Folgenabschätzung",
+      "Wirkungsfolgenabschätzung",
+      "politische Aussage prüfen",
+      "Medienwirkung",
+      "Desinformation",
+      "Der Folgencheck fragt: Was kann das auslösen? Er macht Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen sichtbar."
+    ],
+    "body": "Folgencheck Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann. Der Folgencheck fragt: Was kann das auslösen? Er macht Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen sichtbar. Der Folgencheck ist ein wirkungsökonomisches Prüfverfahren. Er fragt nicht nur, ob etwas stimmt, erlaubt oder profitabel ist, sondern welche Folgen daraus entstehen können: für Menschen, Ökosysteme, Institutionen, Märkte, Vertrauen, Demokratie und zukünftige Generationen. Der Folgencheck bewertet nicht Menschen, sondern mögliche Wirkungen von Aussagen, Entscheidungen, Produkten, Maßnahmen, Technologien oder Systemen. WÖk-Folgencheck Wirkungsfolgen Folgenabschätzung Wirkungsfolgenabschätzung politische Aussage prüfen Medienwirkung Desinformation faktencheck wirkung wirkungspotenzial wirkungsrisiko wirkungsbewertung wirkungsrueckkopplung resonanzraum sdg-plus",
+    "priority": 140
+  },
+  {
     "id": "woek-term-mensch-planet-demokratie",
     "title": "Mensch, Planet und Demokratie",
     "description": "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst.",
@@ -3700,6 +3751,49 @@
       "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung."
     ],
     "body": "EU-Taxonomie Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien. Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung. Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen. EU Taxonomy csrd esrs wirkungsrisiko nachhaltigkeit",
+    "priority": 110
+  },
+  {
+    "id": "woek-term-faktencheck",
+    "title": "Faktencheck",
+    "description": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
+    "url": "/begriffe/faktencheck/",
+    "section": "Begriffe",
+    "type": "Anschlussbegriff",
+    "format": "Glossarbegriff",
+    "impactSpaces": [
+      "Mensch",
+      "Planet",
+      "Demokratie"
+    ],
+    "standards": [
+      "sdg-plus"
+    ],
+    "instruments": [
+      "folgencheck",
+      "wirkungspotenzial",
+      "wirkungsrisiko",
+      "resonanzraum",
+      "wirkungsbewertung",
+      "sdg-plus"
+    ],
+    "tags": [
+      "anschlussbegriff",
+      "1.0",
+      "approved",
+      "Fact-Checking",
+      "Faktenprüfung",
+      "Quellenprüfung",
+      "Stimmt das"
+    ],
+    "aliases": [
+      "Fact-Checking",
+      "Faktenprüfung",
+      "Quellenprüfung",
+      "Stimmt das",
+      "Ein Faktencheck fragt: Stimmt das? Er prüft Behauptungen anhand von Quellen, Daten, Dokumenten oder Expertise."
+    ],
+    "body": "Faktencheck Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird. Ein Faktencheck fragt: Stimmt das? Er prüft Behauptungen anhand von Quellen, Daten, Dokumenten oder Expertise. Faktenchecks vergleichen Behauptungen mit überprüfbaren Quellen, Daten, Dokumenten oder Expert:innenwissen. Sie fragen, ob eine Aussage wahr, falsch, unbelegt, verkürzt oder aus dem Zusammenhang gerissen ist. Ein Faktencheck ist notwendig, aber nicht ausreichend. Er prüft die sachliche Richtigkeit einer Aussage, aber nicht automatisch ihre möglichen Folgen für Vertrauen, Polarisierung, Demokratie, Gesundheit, Märkte oder gesellschaftliche Stabilität. Fact-Checking Faktenprüfung Quellenprüfung Stimmt das folgencheck wirkungspotenzial wirkungsrisiko resonanzraum wirkungsbewertung sdg-plus",
     "priority": 110
   },
   {
@@ -72886,6 +72980,7 @@
       "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
+      "Suchindex nachrangig",
       "Suchindex nachrangig"
     ],
     "aliases": [],
@@ -72905,6 +73000,7 @@
     "instruments": [],
     "tags": [
       "impressum",
+      "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
@@ -75259,6 +75355,7 @@
       "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
+      "Suchindex nachrangig",
       "Suchindex nachrangig"
     ],
     "aliases": [
@@ -75282,6 +75379,7 @@
     "instruments": [],
     "tags": [
       "ueber",
+      "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",

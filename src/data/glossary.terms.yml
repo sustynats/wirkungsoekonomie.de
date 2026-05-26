@@ -91,6 +91,52 @@ terms:
     glossaryOrderKey: "digitaler produktpass"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: faktencheck
+    canonicalLabel: "Faktencheck"
+    slug: "faktencheck"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffssystem_Website_2026"
+    sourceDocument: "Website-Begriffssystem"
+    sourceSection: "Faktencheck und Folgencheck"
+    shortDefinition: "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird."
+    hoverDefinition: "Ein Faktencheck fragt: Stimmt das? Er prüft Behauptungen anhand von Quellen, Daten, Dokumenten oder Expertise."
+    longDefinition: "Faktenchecks vergleichen Behauptungen mit überprüfbaren Quellen, Daten, Dokumenten oder Expert:innenwissen. Sie fragen, ob eine Aussage wahr, falsch, unbelegt, verkürzt oder aus dem Zusammenhang gerissen ist."
+    usageNote: "Ein Faktencheck ist notwendig, aber nicht ausreichend. Er prüft die sachliche Richtigkeit einer Aussage, aber nicht automatisch ihre möglichen Folgen für Vertrauen, Polarisierung, Demokratie, Gesundheit, Märkte oder gesellschaftliche Stabilität."
+    doNotConfuseWith: ["Folgencheck", "Wirkungsbewertung", "Meinung", "Zensur"]
+    synonyms: ["Fact-Checking", "Faktenprüfung", "Quellenprüfung", "Stimmt das"]
+    relatedTerms: ["folgencheck", "wirkungspotenzial", "wirkungsrisiko", "resonanzraum", "wirkungsbewertung", "sdg-plus"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Anschlussbegriff verwenden. Faktencheck fragt: Stimmt das? Folgencheck fragt: Was kann das auslösen?"
+    deprecatedUsage: ["Faktencheck als vollständige Wirkungsbewertung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "faktencheck"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
+  - termId: folgencheck
+    canonicalLabel: "Folgencheck"
+    slug: "folgencheck"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffssystem_Website_2026"
+    sourceDocument: "Website-Begriffssystem"
+    sourceSection: "Faktencheck und Folgencheck"
+    shortDefinition: "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann."
+    hoverDefinition: "Der Folgencheck fragt: Was kann das auslösen? Er macht Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen sichtbar."
+    longDefinition: "Der Folgencheck ist ein wirkungsökonomisches Prüfverfahren. Er fragt nicht nur, ob etwas stimmt, erlaubt oder profitabel ist, sondern welche Folgen daraus entstehen können: für Menschen, Ökosysteme, Institutionen, Märkte, Vertrauen, Demokratie und zukünftige Generationen."
+    usageNote: "Der Folgencheck bewertet nicht Menschen, sondern mögliche Wirkungen von Aussagen, Entscheidungen, Produkten, Maßnahmen, Technologien oder Systemen."
+    doNotConfuseWith: ["Faktencheck", "Zensur", "Personenbewertung", "Wahrheitsmonopol", "finale Prognose"]
+    synonyms: ["WÖk-Folgencheck", "Wirkungsfolgen", "Folgenabschätzung", "Wirkungsfolgenabschätzung", "politische Aussage prüfen", "Medienwirkung", "Desinformation"]
+    relatedTerms: ["faktencheck", "wirkung", "wirkungspotenzial", "wirkungsrisiko", "wirkungsbewertung", "wirkungsrueckkopplung", "resonanzraum", "sdg-plus"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als WÖk-spezifischen Prüfbegriff für Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen verwenden."
+    deprecatedUsage: ["Folgencheck als Zensur", "Folgencheck als Wahrheitsmonopol", "Folgencheck als Personenbewertung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "folgencheck"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
   - termId: esg
     canonicalLabel: "ESG"
     slug: "esg"

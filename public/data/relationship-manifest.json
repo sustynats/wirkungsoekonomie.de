@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T05:24:47.310Z",
+  "generatedAt": "2026-05-26T13:02:00.190Z",
   "relationships": {
     "agenda-2030": {
       "terms": [
@@ -70,11 +70,35 @@
       ],
       "documents": []
     },
+    "faktencheck": {
+      "terms": [
+        "folgencheck",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "resonanzraum",
+        "wirkungsbewertung",
+        "sdg-plus"
+      ],
+      "documents": []
+    },
     "finalscore": {
       "terms": [
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung"
+      ],
+      "documents": []
+    },
+    "folgencheck": {
+      "terms": [
+        "faktencheck",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "resonanzraum",
+        "sdg-plus"
       ],
       "documents": []
     },

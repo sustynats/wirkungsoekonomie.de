@@ -152,6 +152,8 @@ const centralTermDetails = new Map([
   ["wirkungshaushalt", ["Er zeigt, ob öffentliche Mittel Zustände verbessern oder nur ausgegeben werden.", "Ein Wirkungshaushalt ersetzt keine Parlamente und kein Haushaltsrecht.", "Vermiedene Krankheit kann als Präventionswirkung in Haushalten sichtbar werden.", ["Wirkungshaushalte brauchen Evaluation.", "Grundrechte dürfen nicht durch Kennzahlen ersetzt werden."], [["Wirkungshaushalt", "../../werkzeuge/wirkungshaushalt/"]], [["Gesundheit & Pflege", "../../wirkungsfelder/gesundheit-pflege/"]]]],
   ["wirkungsdatenraum", ["Er macht Wirkung prüfbar, ohne Datenschutz und Zweckbindung aufzugeben.", "Ein Wirkungsdatenraum ist kein ungeschützter Datenpool und kein Personen-Scoring.", "Ein Produktpass kann Klima- und Lieferkettendaten bereitstellen, ohne personenbezogene Daten offenzulegen.", ["Mehr Daten sind nicht automatisch bessere Wirkung.", "Rechte und Datenqualität sind Teil der Wirkung."], [["Digitale Produktpässe", "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"]], [["Digitalisierung & KI", "../../portale/digitalisierung-ki-wirkungsdatenraeume/"]]]],
   ["wirkungskompetenz", ["Sie macht Menschen und Organisationen fähig, Folgen, Zielkonflikte und Datenqualität zu verstehen.", "Wirkungskompetenz ist keine Ideologie und keine zentrale Wissensverwaltung.", "Schüler:innen lernen zu unterscheiden, ob ein Projekt nur Output erzeugt oder Zustände verbessert.", ["Kompetenz heißt nicht Kontrolle.", "Sie stärkt Urteilskraft und Teilhabe."], [["Akademie", "../../akademie.html"], ["Wirkungsschule-Check", "../../erleben/wirkungsschule-check/"]], [["Bildung", "../../wirkungsfelder/bildung/"]]]],
+  ["faktencheck", ["Er ist die Grundlage für verlässliche öffentliche Debatte, weil er Behauptungen an Quellen, Daten und Kontext prüft.", "Ein Faktencheck ist keine vollständige Wirkungsanalyse und keine Bewertung möglicher gesellschaftlicher Folgen.", "Die Aussage, eine Zahl sei gesunken, kann sachlich stimmen. Trotzdem muss geprüft werden, welche Gruppen dadurch sichtbar oder unsichtbar werden.", ["Faktencheck fragt nach Richtigkeit.", "Folgencheck fragt nach möglichen Wirkungen."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Folgencheck", "../../begriffe/folgencheck/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
+  ["folgencheck", ["Er ergänzt Faktenprüfung, Rechtmäßigkeit und Wirtschaftlichkeit um die Frage, welche Wirkungen ausgelöst werden könnten.", "Der Folgencheck ist keine Zensur, kein Wahrheitsmonopol und keine Bewertung von Personen.", "Ein Produkt kann klimaneutral beworben werden. Der Folgencheck fragt zusätzlich nach Wasser, Biodiversität, Arbeitsrechten, Gesundheit und Rebound-Effekten.", ["Mögliche Wirkung ist keine finale Prognose.", "Kritische Einordnung ist kein Verbot."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Politik-Folgencheck", "../../erleben.html#werkzeuge"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"], ["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
 ]);
 
 function linkedChips(items, fallback = "Keine Einträge") {
@@ -214,6 +216,134 @@ function termExtraBlock(term) {
               </tbody>
             </table>
           </div>
+        </section>`;
+}
+
+function faktencheckExtraBlock(term) {
+  if (term.slug !== "faktencheck") return "";
+  return `<section class="term-summary-card" aria-labelledby="faktencheck-boundary-title">
+          <h2 id="faktencheck-boundary-title">Faktencheck und Folgencheck gehören zusammen</h2>
+          <p>Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird. Das ist notwendig, aber noch keine Wirkungsanalyse.</p>
+          <p>Die Wirkungsökonomie ergänzt diese Prüfung um den Folgencheck: Welche Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken oder Schutzgrenzen werden durch eine Aussage, Entscheidung oder Maßnahme sichtbar?</p>
+          <div class="table-wrap" role="region" aria-label="Faktencheck und Folgencheck im Vergleich" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Prüfung</th>
+                  <th>Leitfrage</th>
+                  <th>Ergebnis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Faktencheck</td>
+                  <td>Stimmt das?</td>
+                  <td>Wahr, falsch, unbelegt, verkürzt oder irreführend.</td>
+                </tr>
+                <tr>
+                  <td><a class="text-link" href="../../begriffe/folgencheck/">Folgencheck</a></td>
+                  <td>Was kann das auslösen?</td>
+                  <td>Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>`;
+}
+
+function folgencheckDeepBlock(term) {
+  if (term.slug !== "folgencheck") return "";
+  const steps = [
+    ["Gegenstand klären", "Was wird geprüft: Aussage, Maßnahme, Gesetz, Produkt, Technologie, Kapitalfluss oder Medienbeitrag?"],
+    ["Ausgangszustand beschreiben", "Welche Situation besteht vorher und welche Maßstäbe werden bereits genutzt?"],
+    ["Wirkungsempfänger bestimmen", "Wer oder was ist direkt, indirekt oder später betroffen?"],
+    ["Wirkungspfade sichtbar machen", "Über welche Mechanismen können Folgen entstehen oder verstärkt werden?"],
+    ["Folgen nach Ordnung unterscheiden", "Welche Folgen sind direkt, indirekt, zeitverzögert oder systemisch?"],
+    ["Nebenwirkungen und Rebound prüfen", "Wird Schaden verlagert, verstärkt oder nur unsichtbar gemacht?"],
+    ["Datenqualität und Unsicherheit markieren", "Was ist belegt, plausibel, unklar oder unbekannt?"],
+    ["Einordnung und Handlungsoptionen", "Welche Wirkungspotenziale, Risiken, Schutzgrenzen und nächsten Schritte ergeben sich?"],
+  ];
+  const examples = [
+    ["Politische Aussage", "Faktencheck: Stimmt die Arbeitslosenzahl? Folgencheck: Werden prekäre Beschäftigung, Teilzeit, stille Reserve oder soziale Unsicherheit verdeckt?"],
+    ["Produkt", "Faktencheck: Welche Klimabilanz und Kompensation liegen zugrunde? Folgencheck: Werden Wasser, Biodiversität, Arbeitsrechte oder Gesundheit verdeckt?"],
+    ["Gesetz", "Faktencheck: Stimmt die fiskalische Annahme? Folgencheck: Wer profitiert, wer zahlt langfristig und welche Fehlanreize entstehen?"],
+    ["Plattform", "Faktencheck: Stimmt die Reichweitenzahl? Folgencheck: Verstärkt der Mechanismus Polarisierung, Sucht, Desinformation oder demokratische Teilhabe?"],
+  ];
+  const nonGoals = ["keine Zensur", "kein Wahrheitsmonopol", "keine Personenbewertung", "kein Ersatz für demokratische Entscheidung", "keine finale Prognose", "kein moralisches Urteil über Absichten"];
+  const applications = ["WÖk-Scanner", "Medienwirkung", "politische Sprache", "Gesetzesfolgenabschätzung", "Produktwirkung", "Wirkungshaushalt", "Wirkungsrat", "Akademie und Wirkungskompetenz"];
+  const tools = [
+    ["WÖk-Scanner", "../../anwendungen/scanner.html"],
+    ["Kommunikations-Wirkungscheck", "../../erleben.html#medienwirkung"],
+    ["Politik-Folgencheck", "../../erleben.html#werkzeuge"],
+    ["Produktwirkung", "../../erleben.html#simulator"],
+    ["Risiko-/Resilienz-Simulation", "../../erleben.html#resilienz"],
+  ];
+  return `<section class="term-summary-card" aria-labelledby="folgencheck-model-title">
+          <h2 id="folgencheck-model-title">Faktencheck vs. Folgencheck</h2>
+          <p>Faktencheck, Folgencheck, Wirkungsbewertung und Wirkungsrückkopplung beantworten unterschiedliche Fragen. Erst zusammen entsteht eine verantwortliche Prüfung.</p>
+          <div class="table-wrap" role="region" aria-label="Prüfebenen im Vergleich" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ebene</th>
+                  <th>Leitfrage</th>
+                  <th>Prüft</th>
+                  <th>Ergebnis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a class="text-link" href="../../begriffe/faktencheck/">Faktencheck</a></td>
+                  <td>Stimmt das?</td>
+                  <td>Quellen, Daten, Belege, Kontext, Richtigkeit</td>
+                  <td>Wahr, falsch, unbelegt, verkürzt oder irreführend.</td>
+                </tr>
+                <tr>
+                  <td>Folgencheck</td>
+                  <td>Was kann das auslösen?</td>
+                  <td>Wirkungspotenziale, Risiken, Nebenwirkungen, Betroffene, Systemfolgen</td>
+                  <td>Positive, negative, neutrale oder ambivalente Wirkungspotenziale, Datenlücken und Schutzgrenzen.</td>
+                </tr>
+                <tr>
+                  <td><a class="text-link" href="../../begriffe/wirkungsbewertung/">Wirkungsbewertung</a></td>
+                  <td>Wie ist die Wirkung einzuordnen?</td>
+                  <td>SDGs, SDG+, Mensch, Planet, Demokratie</td>
+                  <td>Einordnung im Referenzrahmen.</td>
+                </tr>
+                <tr>
+                  <td><a class="text-link" href="../../begriffe/wirkungsrueckkopplung/">Wirkungsrückkopplung</a></td>
+                  <td>Was folgt daraus?</td>
+                  <td>Entscheidungen, Preise, Regeln, Förderung, Kommunikation, Korrektur</td>
+                  <td>Handlungsoptionen und mögliche Rückkopplung.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-steps-title">
+          <h2 id="folgencheck-steps-title">Das 8-Schritte-Modell des Folgenchecks</h2>
+          <div class="term-section-grid">
+            ${steps.map(([title, text], index) => `<section class="term-section-card"><p class="section-eyebrow">Schritt ${index + 1}</p><h3>${esc(title)}</h3><p>${esc(text)}</p></section>`).join("")}
+          </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-examples-title">
+          <h2 id="folgencheck-examples-title">Beispiele</h2>
+          <div class="term-section-grid">
+            ${examples.map(([title, text]) => `<section class="term-section-card"><h3>${esc(title)}</h3><p>${esc(text)}</p></section>`).join("")}
+          </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-limits-title">
+          <h2 id="folgencheck-limits-title">Was der Folgencheck nicht ist</h2>
+          ${listItems(nonGoals)}
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-application-title">
+          <h2 id="folgencheck-application-title">Anwendung in der Wirkungsökonomie</h2>
+          <p>Der Folgencheck wird dort relevant, wo Aussagen, Produkte, Technologien, Regeln oder Kapitalflüsse mehr auslösen können, als ein Faktencheck, ein Preis oder ein KPI allein sichtbar macht.</p>
+          <div class="term-chip-row">${applications.map((item) => `<span class="term-chip muted">${esc(item)}</span>`).join("")}</div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-tools-title">
+          <h2 id="folgencheck-tools-title">Passende Tools</h2>
+          ${linkedChips(tools)}
         </section>`;
 }
 
@@ -370,6 +500,8 @@ for (const term of data.terms) {
         </div>
 ${termExtraBlock(term)}
 ${learningBlock(term)}
+${faktencheckExtraBlock(term)}
+${folgencheckDeepBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
             <p class="section-eyebrow">Verknüpfungen</p>
