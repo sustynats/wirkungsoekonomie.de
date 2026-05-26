@@ -713,8 +713,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "wirkung",
     "label": "Wirkung",
     "aliases": [
-      "Impact",
-      "Zustandsveränderung"
+      "Impact"
     ],
     "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
     "url": "/begriffe/wirkung/",
@@ -1372,6 +1371,26 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
     "priority": 73,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "zustandsveraenderung",
+    "label": "Zustandsveränderung",
+    "aliases": [
+      "Veränderung von Zuständen",
+      "tatsächliche Veränderung"
+    ],
+    "definition": "Eine Zustandsveränderung ist die tatsächliche Veränderung eines Zustands bei Menschen, Lebensgrundlagen, Institutionen oder Systemen.",
+    "url": "/begriffe/zustandsveraenderung/",
+    "priority": 74,
     "allowedContexts": [
       "home",
       "page",

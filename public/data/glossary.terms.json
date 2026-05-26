@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T16:02:55.310Z",
+  "generatedAt": "2026-05-26T17:26:20.760Z",
   "terms": [
     {
       "category": "Grundbegriff",
@@ -1449,8 +1449,7 @@
         "Image"
       ],
       "synonyms": [
-        "Impact",
-        "Zustandsveränderung"
+        "Impact"
       ],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -2765,6 +2764,47 @@
       "glossaryOrderKey": "wustg",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "category": "Grundbegriff",
+      "termId": "zustandsveraenderung",
+      "canonicalLabel": "Zustandsveränderung",
+      "slug": "zustandsveraenderung",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Führende Mini-Definitionen",
+      "shortDefinition": "Zustandsveränderung beschreibt, was sich durch eine Handlung, Entscheidung oder Struktur tatsächlich verändert.",
+      "hoverDefinition": "Eine Zustandsveränderung ist die tatsächliche Veränderung eines Zustands bei Menschen, Lebensgrundlagen, Institutionen oder Systemen.",
+      "longDefinition": "In der Wirkungsökonomie ist Zustandsveränderung die beobachtbare Veränderung, an der Wirkung überhaupt erkennbar wird. Sie ist noch keine Bewertung. Erst der Bezug zu SDGs, Agenda 2030 und SDG+ ordnet ein, ob eine Veränderung positiv, negativ oder neutral wirkt.",
+      "usageNote": "Als erklärenden Begriff verwenden, wenn der Unterschied zwischen Aktivität, Absicht und tatsächlicher Veränderung sichtbar werden soll.",
+      "doNotConfuseWith": [
+        "Absicht",
+        "Output",
+        "Wirkungspotenzial",
+        "Wirkungsbewertung"
+      ],
+      "synonyms": [
+        "Veränderung von Zuständen",
+        "tatsächliche Veränderung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsbewertung",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Zustandsveränderung als beobachtbare Veränderung verwenden.",
+      "deprecatedUsage": [
+        "Zustandsveränderung als automatisch positive Wirkung"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "zustandsveränderung",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-26"
     }
   ]
 }
