@@ -39,6 +39,7 @@ const SCAN_TARGETS = [
   "verstehen",
   "werkstatt",
   "werkzeuge",
+  "website-1-0-release",
   "wirkungsoekonomie.html",
   "wirkungsfelder",
   "wissen",
@@ -68,6 +69,19 @@ const BLOCKED_TERMS = [
   "Einzeldossier-Set",
   "online zitierfähig als CTA",
   "Export und Archiv im Einstieg",
+  "DOCX herunterladen",
+  "Word herunterladen",
+  "Dokument als Word",
+  "Word-Version",
+  "Word-Datei",
+  "Word-Export",
+  "Arbeitsfassung herunterladen",
+  "Dokument bearbeiten",
+  "Dateiformat DOCX",
+  "Dateiformat Word",
+  "PDF und DOCX",
+  "PDF/DOCX",
+  "DOCX",
 ];
 
 const TECHNICAL_CANONICAL_RE = /<link\b[^>]*rel=["']canonical["'][^>]*>/gi;

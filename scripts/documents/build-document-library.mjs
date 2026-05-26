@@ -202,10 +202,12 @@ function documentJsonLd(document) {
 }
 
 function documentActions(document, primary = true) {
+  if (document.docxUrl && document.allowPublicDocx !== true) {
+    throw new Error(`Public DOCX download is not allowed for document ${document.id}`);
+  }
   return `<div class="download-actions">
     ${primary && document.onlineUrl ? `<a class="btn btn-primary" href="${escapeHtml(document.onlineUrl)}">Onlinefassung lesen</a>` : ""}
     ${document.pdfUrl ? `<a class="btn btn-secondary" href="${escapeHtml(document.pdfUrl)}" target="_blank" rel="noopener">PDF herunterladen</a>` : ""}
-    ${document.docxUrl ? `<a class="btn btn-secondary" href="${escapeHtml(document.docxUrl)}" target="_blank" rel="noopener">DOCX herunterladen</a>` : ""}
     ${document.relatedTools?.[0] ? `<a class="text-link" href="${escapeHtml(document.relatedTools[0])}">${escapeHtml(relatedActionLabel(document.relatedTools[0]))}</a>` : ""}
   </div>`;
 }
