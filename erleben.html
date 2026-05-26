@@ -373,28 +373,58 @@
                 <select id="risk-scenario" data-risk-scenario></select>
               </label>
               <div class="range-field">
-                <label for="risk-geopolitics">Geopolitische Instabilität</label>
+                <div class="range-label-row">
+                  <label for="risk-geopolitics">Geopolitische Instabilität</label>
+                  <output for="risk-geopolitics" data-risk-value="geopolitics">58 · erhöht</output>
+                </div>
+                <p class="control-help">Wie stark Konflikte, Sanktionen, Abhängigkeiten oder politische Spannungen Lieferfähigkeit und Planungssicherheit belasten.</p>
                 <input id="risk-geopolitics" data-risk-input name="geopolitics" type="range" min="0" max="100" value="58">
+                <p class="range-live-note" data-risk-hint="geopolitics" aria-live="polite"></p>
               </div>
               <div class="range-field">
-                <label for="risk-energy">Energie- und Ressourcenstress</label>
+                <div class="range-label-row">
+                  <label for="risk-energy">Energie- und Ressourcenstress</label>
+                  <output for="risk-energy" data-risk-value="energy">62 · hoch</output>
+                </div>
+                <p class="control-help">Wie stark Energiepreise, Rohstoffe, Wasser, Materialknappheit oder Transportkosten das Geschäftsmodell unter Druck setzen.</p>
                 <input id="risk-energy" data-risk-input name="energy" type="range" min="0" max="100" value="62">
+                <p class="range-live-note" data-risk-hint="energy" aria-live="polite"></p>
               </div>
               <div class="range-field">
-                <label for="risk-climate">Klima- und Extremwetterrisiko</label>
+                <div class="range-label-row">
+                  <label for="risk-climate">Klima- und Extremwetterrisiko</label>
+                  <output for="risk-climate" data-risk-value="climate">54 · erhöht</output>
+                </div>
+                <p class="control-help">Wie stark Hitze, Flut, Dürre, Stürme oder Standortausfälle Produktion, Logistik, Versicherung und Nachfrage treffen können.</p>
                 <input id="risk-climate" data-risk-input name="climate" type="range" min="0" max="100" value="54">
+                <p class="range-live-note" data-risk-hint="climate" aria-live="polite"></p>
               </div>
               <div class="range-field">
-                <label for="risk-social">Arbeits- und Menschenrechtsdruck</label>
+                <div class="range-label-row">
+                  <label for="risk-social">Arbeits- und Menschenrechtsdruck</label>
+                  <output for="risk-social" data-risk-value="social">46 · mittel</output>
+                </div>
+                <p class="control-help">Wie stark Arbeitsbedingungen, Löhne, Sicherheit, Menschenrechte oder lokale Konflikte in der Lieferkette zum Risiko werden.</p>
                 <input id="risk-social" data-risk-input name="social" type="range" min="0" max="100" value="46">
+                <p class="range-live-note" data-risk-hint="social" aria-live="polite"></p>
               </div>
               <div class="range-field">
-                <label for="risk-transparency">Daten- und Lieferkettentransparenz</label>
+                <div class="range-label-row">
+                  <label for="risk-transparency">Daten- und Lieferkettentransparenz</label>
+                  <output for="risk-transparency" data-risk-value="transparency">38 · schwach</output>
+                </div>
+                <p class="control-help">Wie gut das Unternehmen Lieferanten, Materialien, Standorte, Abhängigkeiten und Frühwarnsignale wirklich kennt.</p>
                 <input id="risk-transparency" data-risk-input name="transparency" type="range" min="0" max="100" value="38">
+                <p class="range-live-note" data-risk-hint="transparency" aria-live="polite"></p>
               </div>
               <div class="range-field">
-                <label for="risk-timing">Zeitpunkt der Entscheidung</label>
+                <div class="range-label-row">
+                  <label for="risk-timing">Zeitpunkt der Entscheidung</label>
+                  <output for="risk-timing" data-risk-value="timing">42 · noch steuerbar</output>
+                </div>
+                <p class="control-help">Wie früh gehandelt wird. Niedrige Werte heißen: erst reagieren, wenn Kosten, Ausfälle oder Auflagen schon sichtbar sind.</p>
                 <input id="risk-timing" data-risk-input name="timing" type="range" min="0" max="100" value="42">
+                <p class="range-live-note" data-risk-hint="timing" aria-live="polite"></p>
               </div>
             </aside>
 
@@ -423,8 +453,10 @@
               </div>
               <div class="radar-bars" data-risk-bars></div>
               <div class="result-explainer-grid">
-                <div><span>Erklärung</span><p data-risk-explanation></p></div>
-                <div><span>Mögliche Folgen</span><p data-risk-feedback>Je später Risiken erkannt werden, desto stärker steigen Kosten, Prämien und Notlösungsdruck.</p></div>
+                <div><span>Erklärung</span><p data-risk-explanation aria-live="polite"></p></div>
+                <div><span>Mögliche Folgen</span><p data-risk-feedback aria-live="polite">Je später Risiken erkannt werden, desto stärker steigen Kosten, Prämien und Notlösungsdruck.</p></div>
+                <div><span>Was treibt das Ergebnis?</span><p data-risk-driver aria-live="polite"></p></div>
+                <div><span>Was wäre der nächste Hebel?</span><p data-risk-action aria-live="polite"></p></div>
               </div>
             </section>
           </div>
@@ -952,6 +984,6 @@
       </div>
     </footer>
     <script src="assets/js/main.js?v=20260525-cta-cleanup"></script>
-    <script src="assets/js/erleben.js?v=20260525-ux-finish"></script>
+    <script src="assets/js/erleben.js?v=20260526-risk-explainers"></script>
   </body>
 </html>
