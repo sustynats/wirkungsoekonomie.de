@@ -340,6 +340,10 @@ for (const file of files) {
   const html = fs.readFileSync(file, "utf8");
   if (!html.includes("<main")) continue;
   if (/data-no-political-standard/.test(html)) continue;
+  if (html.includes("dossier-reading-section") && html.includes('id="dossier-politik"')) {
+    already += 1;
+    continue;
+  }
   const block = renderPoliticalBlock(contextFor(rel));
   let next = replaceExisting(html, block);
   if (!next.includes('id="political-implementation"')) {

@@ -169,6 +169,18 @@ function insertSection(html, section) {
 function applyToFile(rel) {
   const abs = path.join(ROOT, rel);
   const original = fs.readFileSync(abs, "utf8");
+  if (
+    original.includes("dossier-reading-section") &&
+    original.includes('id="dossier-weiterlesen"')
+  ) {
+    return {
+      rel,
+      title: pageTitle(original, rel),
+      status: "skipped-self-contained-dossier",
+      groups: [],
+      count: 0,
+    };
+  }
   const { groups, refs } = referencesFor(rel);
   if (!refs.length) {
     return { rel, title: pageTitle(original, rel), status: "skipped-no-refs", groups: groups.map((group) => group.id), count: 0 };

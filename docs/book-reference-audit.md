@@ -9,8 +9,8 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 ## Zusammenfassung
 
 - Zielseiten geprüft: 488
-- Buchbezug vorhanden nach Lauf: 488
-- Im aktuellen Lauf ergänzt oder ersetzt: 291
+- Buchbezug vorhanden nach Lauf: 478
+- Im aktuellen Lauf ergänzt oder ersetzt: 281
 - Bereits unverändert: 197
 - Ohne passende Referenz übersprungen: 0
 - Ohne Einfügepunkt übersprungen: 0
@@ -26,7 +26,6 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | staat-recht-demokratie | 30 |
 | default | 29 |
 | finanzsystem-kapital | 28 |
-| arbeit-einkommen | 26 |
 | medien-oeffentlichkeit | 23 |
 | kritik-schutz | 21 |
 | internationale-ordnung | 20 |
@@ -36,8 +35,10 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | digitalisierung-ki-wirkungsdatenraeume | 19 |
 | akademie-bibliothek | 19 |
 | zukunftsbilder | 19 |
+| arbeit-einkommen | 16 |
 | gesundheit-pflege | 16 |
 | rente-soziale-sicherung | 16 |
+| none | 10 |
 | marketing-planet | 3 |
 | kultur-identitaet-resonanz | 2 |
 | wirkungsfelder-overview | 1 |
@@ -88,30 +89,20 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | replaced | /werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/ | Kurz-Dossier Wirkungssteuergesetz WStG | 7 |
 | replaced | /werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ | Kurz-Dossier Wirkungsumsatzsteuer im Rechtsrahmen | 7 |
 | replaced | /werkstatt/dossiers/wirtschaft-unternehmen/ | Gesamtdossier Wirtschaft &amp;amp; Unternehmen | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/ | Arbeit, Einkommen und Wirkung: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/ | Arbeit, Einkommen und Wirkung | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/ | Automatisierung und Maschinenleistung: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/ | Automatisierung und Maschinenleistung | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/ | Care, Bildung, Ehrenamt und Gemeinwesen: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/ | Care, Bildung, Ehrenamt und Gemeinwesen | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/detailkonzepte/ | Detailkonzepte | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/dossiers/ | Dossiers | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/gesamtdossier/ | Gesamtdossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/ | Arbeit &amp; Einkommen | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/konzeptpapier/ | Konzeptpapier | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/ | Politische Anschlussfähigkeit: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/ | Sozialabgaben entkoppeln: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/ | Sozialabgaben entkoppeln | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/ | Übergangsarbeitsmarkt und Weiterbildung: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/ | Übergangsarbeitsmarkt und Weiterbildung | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/ | Unternehmen, Roboter und Mitbestimmung: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/ | Unternehmen, Roboter und Mitbestimmung | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/ | Wirkungseinkommen: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/ | Wirkungseinkommen | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/ | Wirkungseinkommensteuer WEstG: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/ | Wirkungseinkommensteuer WEstG | 6 |
-| inserted-before-section | /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/ | Wirkungsfonds und Automatisierungsdividende: Dossier | 6 |
 | replaced | /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/ | Wirkungsfonds und Automatisierungsdividende | 6 |
 | replaced | /wirkungsfelder/bildung/bewertung-noten-portfolios/ | Bewertung, Noten und Wirkungsportfolio | 6 |
 | replaced | /wirkungsfelder/bildung/bildung-als-wirkungsinfrastruktur/ | Bildung als Wirkungsinfrastruktur | 6 |
@@ -562,30 +553,30 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | replaced | staat-recht-demokratie | /werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/ | Kurz-Dossier Wirkungssteuergesetz WStG | 7 |
 | replaced | staat-recht-demokratie | /werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ | Kurz-Dossier Wirkungsumsatzsteuer im Rechtsrahmen | 7 |
 | replaced | default | /werkstatt/dossiers/wirtschaft-unternehmen/ | Gesamtdossier Wirtschaft &amp;amp; Unternehmen | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/ | Arbeit, Einkommen und Wirkung: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/ | Arbeit, Einkommen und Wirkung: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/ | Arbeit, Einkommen und Wirkung | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/ | Automatisierung und Maschinenleistung: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/ | Automatisierung und Maschinenleistung: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/ | Automatisierung und Maschinenleistung | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/ | Care, Bildung, Ehrenamt und Gemeinwesen: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/ | Care, Bildung, Ehrenamt und Gemeinwesen: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/ | Care, Bildung, Ehrenamt und Gemeinwesen | 6 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/detailkonzepte/ | Detailkonzepte | 6 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/dossiers/ | Dossiers | 6 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/gesamtdossier/ | Gesamtdossier | 6 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/ | Arbeit &amp; Einkommen | 6 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/konzeptpapier/ | Konzeptpapier | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/ | Politische Anschlussfähigkeit: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/ | Politische Anschlussfähigkeit: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/ | Sozialabgaben entkoppeln: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/ | Sozialabgaben entkoppeln: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/ | Sozialabgaben entkoppeln | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/ | Übergangsarbeitsmarkt und Weiterbildung: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/ | Übergangsarbeitsmarkt und Weiterbildung: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/ | Übergangsarbeitsmarkt und Weiterbildung | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/ | Unternehmen, Roboter und Mitbestimmung: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/ | Unternehmen, Roboter und Mitbestimmung: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/ | Unternehmen, Roboter und Mitbestimmung | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/ | Wirkungseinkommen: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/ | Wirkungseinkommen: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/ | Wirkungseinkommen | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/ | Wirkungseinkommensteuer WEstG: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/ | Wirkungseinkommensteuer WEstG: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/ | Wirkungseinkommensteuer WEstG | 6 |
-| inserted-before-section | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/ | Wirkungsfonds und Automatisierungsdividende: Dossier | 6 |
+| skipped-self-contained-dossier | none | /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/ | Wirkungsfonds und Automatisierungsdividende: Dossier | 0 |
 | replaced | arbeit-einkommen | /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/ | Wirkungsfonds und Automatisierungsdividende | 6 |
 | replaced | bildung | /wirkungsfelder/bildung/bewertung-noten-portfolios/ | Bewertung, Noten und Wirkungsportfolio | 6 |
 | replaced | bildung | /wirkungsfelder/bildung/bildung-als-wirkungsinfrastruktur/ | Bildung als Wirkungsinfrastruktur | 6 |
