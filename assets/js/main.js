@@ -35,6 +35,7 @@ if (siteNav) {
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
     ["Für wen?", "fuer/", "fuer/|ordnung/anschlussfaehigkeit/|ordnung/demokratische-anschlussfaehigkeit.html"],
     ["SDGs & SDG+", "verstehen/sdgs-sdgplus/", "verstehen/sdgs-sdgplus/|referenzrahmen/sdgs-sdgplus/|sdg-plus.html|sdg-plus/|sdg-sdgplus/|sdg-und-sdg-plus/"],
+    ["Regeln & Standards", "verstehen/regularien-standards/", "verstehen/regularien-standards/|methodik/daten-standards-regularien.html|methodik/datenbasis.html"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
