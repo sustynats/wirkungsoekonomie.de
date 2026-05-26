@@ -523,7 +523,10 @@ function getArticleReadMinutes() {
 
 function enhanceLongArticleToc() {
   const articleBody = document.querySelector(".article-body");
-  if (!articleBody || document.querySelector(".article-toc")) {
+  const existingTemplateToc = document.querySelector(
+    ".toc-card, .toc-links[aria-label='Inhaltsverzeichnis'], nav[aria-label='Inhaltsverzeichnis'], details[aria-label='Inhaltsverzeichnis']"
+  );
+  if (!articleBody || document.querySelector(".article-toc") || existingTemplateToc) {
     return;
   }
 

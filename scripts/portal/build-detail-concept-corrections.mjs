@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-korrektur-detailkonzepte";
-const JS_VERSION = "20260526-doc-downloads";
+const JS_VERSION = "20260526-tocfix";
 const EXTRACT = "docs/korrektur-detailkonzepte/docx-extracts";
 
 const detailChapters = [
@@ -462,6 +462,37 @@ function paragraph(text) {
   return `<p>${escapeHtml(text)}</p>`;
 }
 
+function cleanHeadingTitle(title) {
+  return title.replace(/^\s*\d{1,3}[\.)]\s+/, "").trim();
+}
+
+function isSourceTocEntry(line) {
+  return (
+    /^Inhaltsverzeichnis$/i.test(line) ||
+    /^\d{1,3}[\.)]\s+/.test(line) ||
+    /^[-*]\s+\[?[^\]]+\]?\(#/.test(line) ||
+    /^\[[^\]]+\]\(#/.test(line)
+  );
+}
+
+function stripSourceTocLines(lines) {
+  const out = [];
+  let skippingToc = false;
+  for (const line of lines) {
+    if (/^Inhaltsverzeichnis$/i.test(line) || /^#{1,6}\s+Inhaltsverzeichnis$/i.test(line)) {
+      skippingToc = true;
+      continue;
+    }
+    if (skippingToc) {
+      if (!line.trim()) continue;
+      if (isSourceTocEntry(line)) continue;
+      skippingToc = false;
+    }
+    out.push(line);
+  }
+  return out;
+}
+
 function mdishToHtml(lines, topicTitle) {
   const html = [];
   const toc = [];
@@ -477,17 +508,20 @@ function mdishToHtml(lines, topicTitle) {
     const markdownHeading = line.match(/^#{1,3}\s+(.+)$/);
     if (markdownHeading) {
       flush();
-      const id = slugify(markdownHeading[1]);
-      toc.push([id, markdownHeading[1]]);
-      html.push(heading(2, id, markdownHeading[1]));
+      const title = cleanHeadingTitle(markdownHeading[1]);
+      if (/^Inhaltsverzeichnis$/i.test(title)) continue;
+      const id = slugify(title);
+      toc.push([id, title]);
+      html.push(heading(2, id, title));
       continue;
     }
     const numbered = line.match(/^(\d{1,2})\.\s+(.+)$/);
     if (numbered) {
       flush();
-      const id = slugify(numbered[2]);
-      toc.push([id, numbered[2]]);
-      html.push(heading(2, id, numbered[2]));
+      const title = cleanHeadingTitle(numbered[2]);
+      const id = slugify(title);
+      toc.push([id, title]);
+      html.push(heading(2, id, title));
     } else if (/^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß /&+-]{2,80}$/.test(line) && !line.endsWith(".")) {
       flush();
       html.push(`<p class="card-kicker">${escapeHtml(line)}</p>`);
@@ -513,7 +547,7 @@ function sourceQuality(rel) {
 }
 
 function cleanSourceLines(rel, title) {
-  return sanitizePublicText(read(rel))
+  const lines = sanitizePublicText(read(rel))
     .split(/\n+/)
     .map((line) => line.trim())
     .map((line) => line
@@ -533,6 +567,7 @@ function cleanSourceLines(rel, title) {
     .filter((line) => !/^#\s*Online-HTML-Version/i.test(line))
     .filter((line) => !/Dieses Dossier soll vollständig online lesbar sein/i.test(line))
     .filter((line) => !/Codex/i.test(line));
+  return stripSourceTocLines(lines);
 }
 
 function renderSourceMarkdown(rel, title) {
