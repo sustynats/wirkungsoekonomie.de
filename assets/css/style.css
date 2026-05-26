@@ -4750,8 +4750,10 @@ textarea {
   }
 
   .woek-visual-scroll .woek-visual {
-    width: 920px;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
+    margin-block: 1.25rem;
+    border-radius: 14px;
   }
 
   .woek-system-visual {
