@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T05:24:47.310Z",
+  "generatedAt": "2026-05-26T15:43:53.071Z",
   "relationships": {
     "agenda-2030": {
       "terms": [
@@ -70,6 +70,19 @@
       ],
       "documents": []
     },
+    "faktencheck": {
+      "terms": [
+        "folgencheck",
+        "medienwirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "resonanzraum",
+        "wirkungsbewertung"
+      ],
+      "documents": [
+        "folgencheck-faktencheck"
+      ]
+    },
     "finalscore": {
       "terms": [
         "scorecard",
@@ -78,6 +91,21 @@
       ],
       "documents": []
     },
+    "folgencheck": {
+      "terms": [
+        "faktencheck",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "medienwirkung",
+        "resonanzraum",
+        "sdg-plus"
+      ],
+      "documents": [
+        "folgencheck-faktencheck"
+      ]
+    },
     "gri": {
       "terms": [
         "reporting",
@@ -85,6 +113,18 @@
         "esrs"
       ],
       "documents": []
+    },
+    "idgs": {
+      "terms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "wirkungspotenzial",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": [
+        "handbuch-wirkungskompetenz"
+      ]
     },
     "mensch-planet-demokratie": {
       "terms": [

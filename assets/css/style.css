@@ -10669,3 +10669,125 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     width: min(100% - 1.35rem, 100%);
   }
 }
+
+/* Public UX polish: distinguish cards, keep long reading pages calm, and prevent mobile clipping. */
+.is-link-card {
+  position: relative;
+}
+
+.is-link-card:hover {
+  border-color: rgba(47, 125, 92, 0.34);
+  box-shadow: 0 16px 34px rgba(11, 16, 32, 0.08);
+}
+
+.is-link-card::after {
+  content: "Weiter";
+  position: absolute;
+  right: 1rem;
+  bottom: 0.85rem;
+  color: var(--green);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.is-static-card {
+  box-shadow: none;
+}
+
+.is-document-card {
+  border-left: 4px solid rgba(47, 125, 92, 0.5);
+  background:
+    linear-gradient(90deg, rgba(47, 125, 92, 0.045), rgba(255, 255, 255, 0) 38%),
+    var(--surface);
+}
+
+.is-document-card .card-kicker,
+.is-document-card .hero-kicker {
+  color: var(--green-dark);
+}
+
+.toc-card.is-secondary-toc {
+  margin-top: 0.8rem;
+  opacity: 0.88;
+}
+
+.toc-card.is-secondary-toc > h2,
+.toc-card.is-secondary-toc > .card-title {
+  font-size: 1rem;
+}
+
+.table-wrap,
+.auto-table-wrap {
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrap table,
+.auto-table-wrap table {
+  table-layout: auto;
+}
+
+.data-table th,
+.data-table td,
+.table-wrap th,
+.table-wrap td {
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.prose table:not(.data-table),
+.article-body table:not(.data-table),
+.readable-prose table:not(.data-table) {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prose table:not(.data-table) th,
+.prose table:not(.data-table) td,
+.article-body table:not(.data-table) th,
+.article-body table:not(.data-table) td,
+.readable-prose table:not(.data-table) th,
+.readable-prose table:not(.data-table) td {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  vertical-align: top;
+}
+
+@media (max-width: 760px) {
+  .is-link-card::after {
+    position: static;
+    display: inline-block;
+    margin-top: 0.85rem;
+  }
+
+  .is-secondary-toc:not([open]) {
+    display: none;
+  }
+
+  .toc-card.is-enhanced-toc:not([open]) {
+    padding: 0;
+  }
+
+  .toc-card.is-enhanced-toc summary,
+  .toc-card summary {
+    min-height: 44px;
+  }
+
+  .table-wrap {
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .table-wrap:not(:has(.sdg-target-table)):not(:has(.policy-table)):not(.auto-table-wrap) {
+    overflow-x: auto;
+  }
+
+  .table-wrap:not(:has(.sdg-target-table)):not(:has(.policy-table)) table {
+    min-width: min(680px, 180vw);
+  }
+}

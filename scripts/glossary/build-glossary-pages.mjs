@@ -147,6 +147,9 @@ const centralTermDetails = new Map([
   ["t-sroi", ["Er macht vermiedene Schäden, Transformation und Stabilität als Investitionslogik diskutierbar.", "T-SROI ist keine sichere Renditeprognose und keine Anlageberatung.", "Prävention kann Folgekosten vermeiden, obwohl Kosten und Nutzen in verschiedenen Haushalten liegen.", ["Monetarisierung ist Hilfssprache.", "Unsicherheit muss sichtbar bleiben."], [["T-SROI", "../../werkzeuge/impact-controlling/t-sroi/"]], [["Gesundheit & Pflege", "../../wirkungsfelder/gesundheit-pflege/"]]]],
   ["woek-id", ["Sie macht Indikatoren nachvollziehbar, versioniert und prüfbar.", "Eine WÖk-ID ist keine Personen-ID und kein Trackinginstrument.", "Ein Wasserindikator braucht Einheit, Quelle, Zeitraum, Schwelle und Bewertungslogik.", ["Die ID bewertet nicht selbst.", "Sie macht die Datenbasis prüfbar."], [["WÖk-IDs", "../../werkzeuge/woek-ids/"]], [["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
   ["scorecard", ["Sie zeigt starke, schwache und kritische Wirkungsfelder nebeneinander.", "Eine Scorecard ist kein Urteil über Menschen und kein endgültiges Gütesiegel.", "Eine Produktscorecard kann Klima, Wasser, Arbeit, Gesundheit und Kreislauf getrennt darstellen.", ["Der Gesamtscore darf Schwachstellen nicht verdecken.", "Scorecards brauchen Interpretation."], [["Scorecards", "../../werkzeuge/scorecards/"], ["Produktwirkung testen", "../../erleben.html#simulator"]], [["Wirtschaft & Unternehmen", "../../wirkungsfelder/wirtschaft-unternehmen/"]]]],
+  ["faktencheck", ["Er schützt gemeinsame Wirklichkeit, indem er Behauptungen an Quellen, Daten und Kontext zurückbindet.", "Ein Faktencheck ist keine Folgenbewertung und keine Garantie, dass eine Aussage gesellschaftlich unschädlich wirkt.", "Die Aussage 'Die Arbeitslosenquote ist gesunken' wird mit Statistik, Erhebungsmethode und Kontext abgeglichen.", ["Faktencheck ersetzt nicht Folgencheck.", "Richtigkeit allein beantwortet noch nicht die Wirkungsfrage."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
+  ["folgencheck", ["Er macht mögliche Wirkungen sichtbar, bevor Schäden, Nebenwirkungen oder Systemfolgen vollständig eingetreten sind.", "Der Folgencheck ist keine Zensur, keine Personenbewertung und kein Wahrheitsmonopol.", "Eine faktisch richtige Aussage kann trotzdem polarisierend wirken, wenn sie einseitig gerahmt, strategisch wiederholt oder aus dem Kontext gelöst wird.", ["Folgencheck prüft Wirkungspotenziale, keine Gesinnungen.", "Er ersetzt demokratische Entscheidungen nicht, sondern bereitet sie besser vor."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Medienwirkung prüfen", "../../erleben.html#medienwirkung"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"], ["Staat, Recht & Demokratie", "../../wirkungsfelder/staat-recht-demokratie/"]]]],
+  ["idgs", ["Sie beschreiben innere und soziale Fähigkeiten, die Menschen und Organisationen brauchen, damit Transformation nicht nur als Ziel, sondern als Fähigkeit entsteht.", "IDGs sind kein Ersatz für SDGs, SDG+ oder Wirkungskompetenz und kein offizieller UN-Zielrahmen.", "Eine Verwaltung kann IDG-Kompetenzen nutzen, um Konflikte, Unsicherheit und Kooperation in Transformationsprozessen besser zu tragen.", ["IDGs sind kein Messsystem für Wirkung.", "Sie erklären Fähigkeiten, nicht Zielerreichung."], [["Akademie", "../../akademie.html"], ["Kompass", "../../kompass.html"]], [["Bildung", "../../wirkungsfelder/bildung/"], ["Wissenschaft & Innovation", "../../wirkungsfelder/wissenschaft-innovation-digitalisierung/"]]]],
   ["wirkungseinkommen", ["Es zeigt, wie Einkommen und Teilhabe auch jenseits reiner Erwerbsarbeit gedacht werden können.", "Es ist kein fertiges Grundeinkommen und keine Finanzierungszusage.", "Automatisierte Wertschöpfung kann modellhaft in Fonds, Weiterbildung und Einkommensanteile zurückgeführt werden.", ["Das Tool erzeugt kein Geld.", "Es zeigt Rückkopplungslogik, keine amtlichen Ansprüche."], [["Automatisierungsrechner", "../../erleben/automatisierungs-wirkungseinkommensrechner/"]], [["Arbeit & Einkommen", "../../wirkungsfelder/arbeit-einkommen/"]]]],
   ["wirkungsfonds", ["Er bündelt Rückflüsse, damit Prävention, Bildung, Transformation oder Sicherung finanzierbar werden.", "Ein Wirkungsfonds ist kein Geld aus dem Nichts und kein Schattenhaushalt.", "Rückflüsse aus automatisierter Wertschöpfung können Weiterbildung und Übergangsschutz finanzieren.", ["Fonds ersetzen keine Haushaltsentscheidungen.", "Finanzierungsquellen müssen offen bleiben."], [["Wirkungsfonds", "../../werkzeuge/wirkungsfonds/"], ["Automatisierungsrechner", "../../erleben/automatisierungs-wirkungseinkommensrechner/"]], [["Arbeit & Einkommen", "../../wirkungsfelder/arbeit-einkommen/"]]]],
   ["wirkungshaushalt", ["Er zeigt, ob öffentliche Mittel Zustände verbessern oder nur ausgegeben werden.", "Ein Wirkungshaushalt ersetzt keine Parlamente und kein Haushaltsrecht.", "Vermiedene Krankheit kann als Präventionswirkung in Haushalten sichtbar werden.", ["Wirkungshaushalte brauchen Evaluation.", "Grundrechte dürfen nicht durch Kennzahlen ersetzt werden."], [["Wirkungshaushalt", "../../werkzeuge/wirkungshaushalt/"]], [["Gesundheit & Pflege", "../../wirkungsfelder/gesundheit-pflege/"]]]],
@@ -179,6 +182,66 @@ function learningBlock(term) {
 }
 
 function termExtraBlock(term) {
+  if (term.termId === "folgencheck") {
+    const steps = [
+      ["1. Gegenstand klären", "Was wird geprüft: Aussage, Maßnahme, Gesetz, Produkt, Technologie, Kapitalfluss oder Medienbeitrag?"],
+      ["2. Ausgangszustand beschreiben", "Welche Situation besteht vorher und welche Vergleichsbasis ist relevant?"],
+      ["3. Wirkungsempfänger bestimmen", "Wer oder was kann betroffen sein: Menschen, Gruppen, Institutionen, Märkte, Ökosysteme oder Demokratie?"],
+      ["4. Wirkstoffe erkennen", "Welche Sprache, Anreize, Technik, Preise, Regeln oder Frames können Wirkung auslösen?"],
+      ["5. Wirkungspfade sichtbar machen", "Über welche Mechanismen entstehen direkte, indirekte oder zeitverzögerte Folgen?"],
+      ["6. Wirkungsräume prüfen", "In welchen Räumen wirkt es: sozial, ökologisch, wirtschaftlich, medial, politisch, digital oder kommunal?"],
+      ["7. Nebenwirkungen und Rebound prüfen", "Wird Schaden verlagert, verstärkt oder nur unsichtbar gemacht?"],
+      ["8. Datenqualität markieren", "Was ist belegt, plausibel, unklar oder unbekannt?"],
+      ["9. Schutzgrenzen prüfen", "Wo dürfen Grundrechte, Würde, Datenschutz, Minderheitenschutz oder demokratische Kontrolle nicht überschritten werden?"],
+      ["10. Handlungsoptionen ableiten", "Welche nächsten Fragen, Korrekturen, Gegenmaßnahmen oder Rückkopplungen ergeben sich?"],
+    ];
+    return `<section class="term-summary-card" aria-labelledby="folgencheck-compare">
+          <h2 id="folgencheck-compare">Faktencheck vs. Folgencheck</h2>
+          <div class="table-wrap" role="region" aria-label="Faktencheck und Folgencheck im Vergleich" tabindex="0">
+            <table>
+              <thead><tr><th>Prüfung</th><th>Leitfrage</th><th>Prüft</th><th>Ergebnis</th></tr></thead>
+              <tbody>
+                <tr><td>Faktencheck</td><td>Stimmt das?</td><td>Quellen, Daten, Belege, Kontext, Richtigkeit.</td><td>Wahr, falsch, unbelegt, verkürzt oder irreführend.</td></tr>
+                <tr><td>Folgencheck</td><td>Was kann das auslösen?</td><td>Wirkstoffe, Wirkungspotenziale, Wirkungspfade, Betroffene, Systemfolgen und Datenlücken.</td><td>Positive, negative, neutrale oder ambivalente Wirkungspotenziale sowie Schutzgrenzen.</td></tr>
+                <tr><td>Wirkungsbewertung</td><td>Wie ist die Wirkung einzuordnen?</td><td>SDGs, SDG+, Mensch, Planet, Demokratie und definierte Wirkungsgrenzen.</td><td>Einordnung im Referenzrahmen.</td></tr>
+                <tr><td>Wirkungsrückkopplung</td><td>Was folgt daraus?</td><td>Entscheidungen, Preise, Regeln, Förderung, Kommunikation oder Korrektur.</td><td>Handlungsoptionen und Verantwortungspunkte.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-steps">
+          <h2 id="folgencheck-steps">10-Schritte-Modell des Folgenchecks</h2>
+          <div class="term-section-grid">
+            ${steps.map(([title, text]) => `<section class="term-section-card"><h3>${esc(title)}</h3><p>${esc(text)}</p></section>`).join("")}
+          </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="folgencheck-examples">
+          <h2 id="folgencheck-examples">Beispiele</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Politische Aussage</h3><p><strong>Faktencheck:</strong> Stimmt die Zahl? <strong>Folgencheck:</strong> Wer wird sichtbar oder unsichtbar, etwa prekäre Beschäftigung, Teilzeit oder stille Reserve?</p></section>
+            <section class="term-section-card"><h3>Produkt</h3><p><strong>Faktencheck:</strong> Welche Bilanz liegt vor? <strong>Folgencheck:</strong> Werden Wasser, Biodiversität, Arbeitsrechte oder Gesundheit verdeckt?</p></section>
+            <section class="term-section-card"><h3>Gesetz</h3><p><strong>Faktencheck:</strong> Stimmt die fiskalische Annahme? <strong>Folgencheck:</strong> Wer profitiert, wer trägt Kosten und welche Fehlanreize entstehen?</p></section>
+            <section class="term-section-card"><h3>Plattform</h3><p><strong>Faktencheck:</strong> Stimmt die Reichweitenzahl? <strong>Folgencheck:</strong> Verstärkt der Mechanismus Polarisierung, Sucht, Desinformation oder demokratische Teilhabe?</p></section>
+          </div>
+        </section>`;
+  }
+  if (term.termId === "faktencheck") {
+    return `<section class="term-summary-card" aria-labelledby="facts-and-effects">
+          <h2 id="facts-and-effects">Warum Faktencheck und Folgencheck zusammengehören</h2>
+          <p>Ein Faktencheck ist die Grundlage: Ohne überprüfbare Quellen, Kontext und Richtigkeit entsteht keine belastbare öffentliche Orientierung. Die Wirkungsökonomie ergänzt diese Prüfung um den Folgencheck, weil auch faktisch richtige Aussagen Wirkungen entfalten können.</p>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Faktencheck fragt</h3><p>Stimmt das? Ist es belegt, verkürzt, irreführend oder aus dem Zusammenhang gerissen?</p></section>
+            <section class="term-section-card"><h3>Folgencheck fragt</h3><p>Was kann das auslösen? Welche Wirkungspotenziale, Zielkonflikte, Datenlücken oder Schutzgrenzen werden sichtbar?</p></section>
+          </div>
+        </section>`;
+  }
+  if (term.termId === "idgs") {
+    return `<section class="term-summary-card" aria-labelledby="idgs-wirkungskompetenz">
+          <h2 id="idgs-wirkungskompetenz">Verhältnis zu Wirkungskompetenz</h2>
+          <p>Die IDGs beschreiben wichtige innere und soziale Entwicklungsfähigkeiten. Wirkungskompetenz knüpft daran an, geht aber weiter: Sie verbindet innere Entwicklung mit Daten, Systemen, Demokratie, Technologie, Institutionen, Wirkungsmessung und Rückkopplung.</p>
+          <p>In der Wirkungsökonomie sind IDGs deshalb ein Anschlussrahmen. Wirkungskompetenz ist die operative Fähigkeit, Wirkungen, Wirkungspotenziale, Nebenwirkungen, Unsicherheit und Verantwortung in konkreten Entscheidungen zu erkennen und zu gestalten.</p>
+        </section>`;
+  }
   if (term.termId !== "mensch-planet-demokratie") return "";
   return `<section class="term-summary-card" aria-labelledby="sdg-context-title">
           <h2 id="sdg-context-title">Warum nicht einfach nur SDGs sagen?</h2>

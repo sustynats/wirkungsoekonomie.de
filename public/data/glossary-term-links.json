@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T05:24:40.820Z",
+  "generatedAt": "2026-05-26T15:43:45.195Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -132,6 +132,27 @@
         "nachhaltigkeit"
       ]
     },
+    "faktencheck": {
+      "label": "Faktencheck",
+      "slug": "faktencheck",
+      "url": "/begriffe/faktencheck/",
+      "hoverDefinition": "Faktencheck fragt: Stimmt das? Er prüft Quellen, Daten, Belege und Kontext, aber nicht automatisch gesellschaftliche Folgen.",
+      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
+      "category": "Prüfbegriff",
+      "synonyms": [
+        "Fact-Checking",
+        "Faktenprüfung",
+        "Quellenprüfung"
+      ],
+      "relatedTerms": [
+        "folgencheck",
+        "medienwirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "resonanzraum",
+        "wirkungsbewertung"
+      ]
+    },
     "finalscore": {
       "label": "FinalScore",
       "slug": "finalscore",
@@ -144,6 +165,30 @@
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung"
+      ]
+    },
+    "folgencheck": {
+      "label": "Folgencheck",
+      "slug": "folgencheck",
+      "url": "/begriffe/folgencheck/",
+      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkungspotenziale, Wirkungspfade, Betroffene, Datenlücken und Schutzgrenzen.",
+      "shortDefinition": "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann.",
+      "category": "Prüfbegriff",
+      "synonyms": [
+        "WÖk-Folgencheck",
+        "Wirkungsfolgencheck",
+        "Wirkungsfolgenprüfung",
+        "Folgenprüfung"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "medienwirkung",
+        "resonanzraum",
+        "sdg-plus"
       ]
     },
     "gri": {
@@ -160,6 +205,26 @@
         "reporting",
         "csrd",
         "esrs"
+      ]
+    },
+    "idgs": {
+      "label": "Inner Development Goals (IDGs)",
+      "slug": "idgs",
+      "url": "/begriffe/idgs/",
+      "hoverDefinition": "IDGs sind ein Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeit; in der WÖk sind sie Anschluss an Wirkungskompetenz.",
+      "shortDefinition": "Die Inner Development Goals beschreiben innere und soziale Fähigkeiten, die Menschen und Organisationen für Transformation brauchen.",
+      "category": "Kompetenzbegriff",
+      "synonyms": [
+        "IDG",
+        "IDGs",
+        "Inner Development Goals"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "wirkungspotenzial",
+        "wirkungsrueckkopplung"
       ]
     },
     "mensch-planet-demokratie": {
@@ -748,7 +813,7 @@
       "url": "/begriffe/wirkungskompetenz/",
       "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
       "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken und Rückkopplungen zu erkennen und zu gestalten.",
-      "category": "Grundbegriff",
+      "category": "Kompetenzbegriff",
       "synonyms": [],
       "relatedTerms": [
         "wirkungsradar",

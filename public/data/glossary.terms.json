@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T05:24:40.791Z",
+  "generatedAt": "2026-05-26T15:43:45.162Z",
   "terms": [
     {
       "category": "Grundbegriff",
@@ -288,6 +288,54 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "category": "Prüfbegriff",
+      "termId": "faktencheck",
+      "canonicalLabel": "Faktencheck",
+      "slug": "faktencheck",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Folgencheck/Faktencheck v1.1",
+      "sourceDocument": "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1",
+      "sourceSection": "Medien, Öffentlichkeit und Prüfung",
+      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
+      "hoverDefinition": "Faktencheck fragt: Stimmt das? Er prüft Quellen, Daten, Belege und Kontext, aber nicht automatisch gesellschaftliche Folgen.",
+      "longDefinition": "Faktenchecks vergleichen Behauptungen mit überprüfbaren Quellen, Daten, Dokumenten oder Expert:innenwissen. Sie fragen, ob eine Aussage wahr, falsch, unbelegt, verkürzt oder aus dem Zusammenhang gerissen ist.",
+      "usageNote": "Faktencheck als notwendige Grundlage verwenden, aber klar vom Folgencheck unterscheiden.",
+      "doNotConfuseWith": [
+        "Folgencheck",
+        "Wirkungsbewertung",
+        "Wahrheitsmonopol"
+      ],
+      "synonyms": [
+        "Fact-Checking",
+        "Faktenprüfung",
+        "Quellenprüfung"
+      ],
+      "relatedTerms": [
+        "folgencheck",
+        "medienwirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "resonanzraum",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [
+        "folgencheck-faktencheck"
+      ],
+      "examples": [
+        "\"Eine politische Zahl wird mit Primärquellen",
+        "Statistik und Kontext geprüft.\""
+      ],
+      "preferredUsage": "Faktencheck prüft die sachliche Richtigkeit einer Aussage.",
+      "deprecatedUsage": [
+        "Faktencheck als vollständige Folgenbewertung"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "faktencheck",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-26"
+    },
+    {
       "category": "Messbegriff",
       "termId": "finalscore",
       "canonicalLabel": "FinalScore",
@@ -319,6 +367,60 @@
       "glossaryOrderKey": "finalscore",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "category": "Prüfbegriff",
+      "termId": "folgencheck",
+      "canonicalLabel": "Folgencheck",
+      "slug": "folgencheck",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "source": "Folgencheck/Faktencheck v1.1",
+      "sourceDocument": "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1",
+      "sourceSection": "Medien, Öffentlichkeit und Prüfung",
+      "shortDefinition": "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann.",
+      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkungspotenziale, Wirkungspfade, Betroffene, Datenlücken und Schutzgrenzen.",
+      "longDefinition": "Der Folgencheck ist ein wirkungsökonomisches Prüfverfahren. Er fragt nicht nur, ob etwas stimmt, erlaubt oder profitabel ist, sondern welche Folgen daraus entstehen können: für Menschen, Ökosysteme, Institutionen, Märkte, Vertrauen, Demokratie und zukünftige Generationen.",
+      "usageNote": "Folgencheck vorsorgend als Ex-ante-Prüfung erklären; keine Zensur, keine Personenbewertung, kein Wahrheitsmonopol.",
+      "doNotConfuseWith": [
+        "Faktencheck",
+        "Personenbewertung",
+        "Zensur",
+        "Wahrheitsmonopol"
+      ],
+      "synonyms": [
+        "WÖk-Folgencheck",
+        "Wirkungsfolgencheck",
+        "Wirkungsfolgenprüfung",
+        "Folgenprüfung"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "medienwirkung",
+        "resonanzraum",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "folgencheck-faktencheck"
+      ],
+      "examples": [
+        "\"Eine faktisch richtige Aussage wird darauf geprüft",
+        "welche Gruppen sichtbar oder unsichtbar werden und welche Wirkungspfade entstehen können.\""
+      ],
+      "preferredUsage": "Folgencheck prüft mögliche Wirkungen, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen.",
+      "deprecatedUsage": [
+        "Folgencheck als Zensur",
+        "Folgencheck als Personenbewertung",
+        "Folgencheck als Wahrheitsmonopol"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "folgencheck",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-26"
     },
     {
       "category": "Datenbegriff",
@@ -355,6 +457,55 @@
       "glossaryOrderKey": "gri",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "category": "Kompetenzbegriff",
+      "termId": "idgs",
+      "canonicalLabel": "Inner Development Goals (IDGs)",
+      "slug": "idgs",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "SDG-/SDG+-Referenzrahmen",
+      "sourceDocument": "SDG-/SDG+-Referenzrahmen der Wirkungsökonomie",
+      "sourceSection": "Kompetenz und Bildung",
+      "shortDefinition": "Die Inner Development Goals beschreiben innere und soziale Fähigkeiten, die Menschen und Organisationen für Transformation brauchen.",
+      "hoverDefinition": "IDGs sind ein Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeit; in der WÖk sind sie Anschluss an Wirkungskompetenz.",
+      "longDefinition": "Die Inner Development Goals beschreiben Fähigkeiten wie Selbstwahrnehmung, Beziehung, Zusammenarbeit, Denken und Handeln. In der Wirkungsökonomie sind sie kein dritter Zielrahmen neben SDGs und SDG+, sondern ein anschlussfähiger Kompetenzrahmen für Transformation.",
+      "usageNote": "IDGs als Kompetenzrahmen einordnen, nicht als Ersatz für SDGs, SDG+ oder Wirkungskompetenz.",
+      "doNotConfuseWith": [
+        "SDGs",
+        "SDG+",
+        "Wirkungskompetenz"
+      ],
+      "synonyms": [
+        "IDG",
+        "IDGs",
+        "Inner Development Goals"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "wirkungspotenzial",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [
+        "handbuch-wirkungskompetenz"
+      ],
+      "examples": [
+        "\"Ein Team stärkt Reflexion",
+        "Zusammenarbeit und Entscheidungsfähigkeit",
+        "damit Transformationsziele praktisch umgesetzt werden können.\""
+      ],
+      "preferredUsage": "IDGs als Anschlussrahmen für innere und kollektive Entwicklungsfähigkeiten.",
+      "deprecatedUsage": [
+        "IDGs als offizielles Nachhaltigkeitsziel",
+        "IDGs als Ersatz für Wirkungskompetenz"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "inner development goals",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-26"
     },
     {
       "category": "Demokratiebegriff",
@@ -1675,7 +1826,7 @@
       "lastUpdated": "2026-05-23"
     },
     {
-      "category": "Grundbegriff",
+      "category": "Kompetenzbegriff",
       "termId": "wirkungskompetenz",
       "canonicalLabel": "Wirkungskompetenz",
       "slug": "wirkungskompetenz",
