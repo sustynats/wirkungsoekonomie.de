@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T05:24:40.820Z",
+  "generatedAt": "2026-05-26T13:02:00.088Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -132,6 +132,28 @@
         "nachhaltigkeit"
       ]
     },
+    "faktencheck": {
+      "label": "Faktencheck",
+      "slug": "faktencheck",
+      "url": "/begriffe/faktencheck/",
+      "hoverDefinition": "Ein Faktencheck fragt: Stimmt das? Er prüft Behauptungen anhand von Quellen, Daten, Dokumenten oder Expertise.",
+      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Fact-Checking",
+        "Faktenprüfung",
+        "Quellenprüfung",
+        "Stimmt das"
+      ],
+      "relatedTerms": [
+        "folgencheck",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "resonanzraum",
+        "wirkungsbewertung",
+        "sdg-plus"
+      ]
+    },
     "finalscore": {
       "label": "FinalScore",
       "slug": "finalscore",
@@ -144,6 +166,33 @@
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung"
+      ]
+    },
+    "folgencheck": {
+      "label": "Folgencheck",
+      "slug": "folgencheck",
+      "url": "/begriffe/folgencheck/",
+      "hoverDefinition": "Der Folgencheck fragt: Was kann das auslösen? Er macht Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen sichtbar.",
+      "shortDefinition": "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann.",
+      "category": "Bewertungsbegriff",
+      "synonyms": [
+        "WÖk-Folgencheck",
+        "Wirkungsfolgen",
+        "Folgenabschätzung",
+        "Wirkungsfolgenabschätzung",
+        "politische Aussage prüfen",
+        "Medienwirkung",
+        "Desinformation"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "resonanzraum",
+        "sdg-plus"
       ]
     },
     "gri": {
