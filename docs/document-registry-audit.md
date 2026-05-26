@@ -5,24 +5,25 @@ Stand: 2026-05-26
 ## Zusammenfassung
 
 - PDFs in `assets/pdf/`: 14
-- Dokumente in der Registry: 29
-- Aktuelle Dokumente: 29
+- Dokumente in der Registry: 32
+- Aktuelle Dokumente: 32
 - Archivdokumente: 0
-- Dokumente mit Onlinefassung: 29
+- Dokumente mit Onlinefassung: 32
 - Aktuelle PDF-only Dokumente: 0
-- Rang- und Paketdateien in `assets/downloads/`: 364
+- Rang- und Paketdateien in `assets/downloads/`: 368
 
 ## Umfangseinordnung
 
 | Umfang | Dokumente |
 | --- | ---: |
-| Mittlere bis längere Ausarbeitung | 11 |
+| Mittlere bis längere Ausarbeitung | 10 |
 | Ausführlicher Entwurf | 2 |
 | Umfangreiche Langfassung | 3 |
 | Register / Nachschlagewerk | 1 |
 | Buch / Langform | 1 |
 | Kurzes Thesenpapier / Konzept | 5 |
 | Kurzbeispiel / Fallnotiz | 5 |
+| Buch / Praxisleitfaden | 4 |
 | Handout / Kurzüberblick | 1 |
 
 Die Registry bündelt die öffentlichen Kernmaterialien aus `assets/pdf/`. Rangpakete, ZIPs und umfangreiche Arbeitsmaterialien bleiben in den bestehenden Downloadbereichen und werden als separater Paketbestand geführt.
@@ -44,7 +45,10 @@ Die Registry bündelt die öffentlichen Kernmaterialien aus `assets/pdf/`. Rangp
 | t-sroi-standard-impact-controlling | T-SROI: Der neue Standard für Impact-Controlling | Umfangreiche Langfassung | ja | ja | ja | 2 | ok |
 | groesster-denkfehler-klimadebatte | Der größte Denkfehler in der Klimadebatte | Kurzbeispiel / Fallnotiz | ja | ja | ja | 2 | ok |
 | kommunale-wirkungsgewerbesteuer | Use Case Kommunale Wirkungsgewerbesteuer | Kurzbeispiel / Fallnotiz | ja | ja | ja | 2 | ok |
-| nachhaltiges-marketing-mix | Nachhaltiges Marketing-Mix | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
+| nachhaltiges-marketing-mix | Nachhaltiges Marketing-Mix | Buch / Praxisleitfaden | ja | ja | ja | 2 | ok |
+| nachhaltiger-einzelhandel | Nachhaltiger Einzelhandel | Buch / Praxisleitfaden | ja | ja | ja | 2 | ok |
+| nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen | Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen | Buch / Praxisleitfaden | ja | ja | ja | 2 | ok |
+| nachhaltigkeitstransformation-im-handwerk | Nachhaltigkeitstransformation im Handwerk | Buch / Praxisleitfaden | ja | ja | ja | 2 | ok |
 | host-tsi-transformational-system-impact | HOST-TSI: Transformational System Impact | Kurzes Thesenpapier / Konzept | ja | ja | ja | 2 | ok |
 | live-impact-rating-konzept | Live-Impact-Rating | Kurzes Thesenpapier / Konzept | ja | ja | ja | 2 | ok |
 | medien-und-wirkung | Medien und Wirkung | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
