@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
 const glossaryPath = "public/data/glossary.terms.json";
+const documentRegistryPath = "assets/data/document-registry.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
@@ -138,6 +139,34 @@ function entryFromTerm(term) {
   };
 }
 
+function entryFromDocument(document) {
+  const body = [
+    document.title,
+    document.type,
+    document.summary,
+    ...(document.category || []),
+    ...(document.audience || []),
+    ...(document.keyPoints || []),
+    ...(document.relatedTerms || []),
+  ].join(" ");
+  return {
+    id: `woek-document-${document.id}`,
+    title: document.title,
+    description: document.summary,
+    url: document.onlineUrl || document.pdfUrl,
+    section: "Bibliothek",
+    type: document.type,
+    format: document.pdfUrl ? "Onlinefassung und PDF" : "Onlinefassung",
+    impactSpaces: ["Mensch", "Planet", "Demokratie"],
+    standards: (document.relatedTerms || []).filter((item) => /sdg|csrd|esrs|taxonomie|gri/i.test(item)),
+    instruments: document.relatedTerms || [],
+    tags: [document.status, ...(document.category || []), ...(document.audience || [])].filter(Boolean),
+    aliases: [document.pdfUrl, document.sourceOnlineUrl].filter(Boolean),
+    body,
+    priority: document.isArchive ? 58 : 138,
+  };
+}
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -229,6 +258,9 @@ function entriesFromContent(file) {
 
 const existing = fs.existsSync(indexPath) ? JSON.parse(fs.readFileSync(indexPath, "utf8")) : [];
 const glossary = fs.existsSync(glossaryPath) ? JSON.parse(fs.readFileSync(glossaryPath, "utf8")).terms : [];
+const documents = fs.existsSync(documentRegistryPath)
+  ? JSON.parse(fs.readFileSync(documentRegistryPath, "utf8")).filter((document) => document.isPublic !== false)
+  : [];
 const generated = [];
 const meta = {};
 
@@ -244,6 +276,24 @@ for (const term of glossary) {
     relatedTerms: term.relatedTerms || [],
     relatedDocuments: term.relatedDocuments || [],
     sourceFile: term.sourceDocument,
+    searchBoost: entry.priority,
+  };
+}
+
+for (const document of documents) {
+  const entry = entryFromDocument(document);
+  generated.push(entry);
+  meta[entry.url] = {
+    documentType: "bibliothek",
+    status: document.status,
+    version: document.stand,
+    sectionId: `document-${document.id}`,
+    documentId: document.id,
+    relatedTerms: document.relatedTerms || [],
+    relatedDocuments: [],
+    relatedFields: document.relatedFields || [],
+    relatedTools: document.relatedTools || [],
+    sourceFile: documentRegistryPath,
     searchBoost: entry.priority,
   };
 }
