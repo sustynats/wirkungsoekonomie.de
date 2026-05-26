@@ -132,7 +132,14 @@ function sanitizeHtml(html, file) {
     return "";
   });
   const beforeTerms = blockedPhrases.reduce((sum, term) => sum + (changed.match(new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi")) || []).length, 0);
+  const protectedTags = [];
+  changed = changed.replace(/<[^>]+>/g, (match) => {
+    const token = `@@WOEK-TAG-${protectedTags.length}@@`;
+    protectedTags.push(match);
+    return token;
+  });
   changed = sanitizeText(changed);
+  changed = changed.replace(/@@WOEK-TAG-(\d+)@@/g, (_, index) => protectedTags[Number(index)] || "");
   const visibleDocx = (changed.match(/(?:href=["'][^"']+\.docx|\.docx\b|\.doc\b)/gi) || []).length;
   return {
     html: changed,
