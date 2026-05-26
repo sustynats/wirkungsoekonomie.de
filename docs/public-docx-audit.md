@@ -1,6 +1,6 @@
 # Public DOCX Audit
 
-Stand: 2026-05-26T09:15:41.261Z
+Stand: 2026-05-26T09:48:44.997Z
 
 ## Policy
 
@@ -12,8 +12,8 @@ Stand: 2026-05-26T09:15:41.261Z
 
 - Geprüfte HTML-Dateien: 1110
 - Gefundene öffentliche DOCX-/Word-Assets: 4
-- Entfernte öffentliche DOCX-/Word-Links: 87
-- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 109
+- Entfernte öffentliche DOCX-/Word-Links: 83
+- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 108
 - Suchindex DOCX-/Word-Treffer vor Bereinigung: 3
 - Verbleibende HTML-Dateien mit öffentlichen DOCX-Downloadmustern: 0
 
@@ -28,7 +28,6 @@ Stand: 2026-05-26T09:15:41.261Z
 
 | Datei | entfernte Links | Begriffe vor Bereinigung | Restmuster |
 | --- | ---: | ---: | ---: |
-| `downloads/index.html` | 4 | 0 | 0 |
 | `erleben/wirkungsrenten-rechner/index.html` | 0 | 2 | 0 |
 | `erleben/wohnwirkungsrechner/index.html` | 0 | 2 | 0 |
 | `erleben/wohnwirkungsrechner/stranded-asset-check/index.html` | 0 | 2 | 0 |

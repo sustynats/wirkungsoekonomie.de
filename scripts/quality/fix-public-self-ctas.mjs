@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const TARGETS = ["erleben", "anwendungen", "werkzeuge", "wirkungsfelder", "werkstatt", "portale"];
+const TARGETS = ["erleben", "anwendungen", "werkzeuge", "wirkungsfelder", "werkstatt", "portale", "downloads", "fachbibliothek", "tools"];
 const CTA_PATTERN = /Online lesen|Onlinefassung lesen|Vertiefung online lesen|Online-Volltext lesen|Detailkonzept lesen|Detailkonzept öffnen|Dossier lesen|Dossier öffnen|Portal öffnen|Werkzeug öffnen|Tool öffnen|Tool testen|Rechner öffnen|Rechner nutzen|Simulation starten|Seite öffnen|Seitenadresse|Mehr erfahren|Methodik lesen|Methodik öffnen|Wirkungsfeld ansehen|Öffnen/i;
 
 function walk(dir, files = []) {
@@ -48,7 +48,7 @@ function normalizeHref(currentRel, href) {
 function currentLabel(text) {
   if (/Online lesen|Onlinefassung|Online-Volltext/i.test(text)) return "Du liest diese Onlinefassung.";
   if (/Seitenadresse/i.test(text)) return "Du liest diese Onlinefassung.";
-  if (/Detailkonzept/i.test(text)) return "Du liest dieses Detailkonzept.";
+  if (/Detailkonzept|Konzeptpapier/i.test(text)) return "Du liest dieses Konzeptpapier.";
   if (/Dossier/i.test(text)) return "Du liest dieses Dossier.";
   if (/Methodik|Werkzeug/i.test(text)) return "Du bist auf dieser Methodenseite.";
   if (/Tool|Rechner|Simulation/i.test(text)) return "Du nutzt diese Demo.";
@@ -63,11 +63,27 @@ function fixFile(rel) {
 
   html = html
     .replace(/Spezifikation online lesen/g, "Methodik anzeigen")
-    .replace(/Detailkonzept online lesen/g, "Zum Detailkonzept")
-    .replace(/Dossier online lesen/g, "Zum Dossier")
+    .replace(/Detailkonzepte online lesen/g, "Konzeptpapiere lesen")
+    .replace(/Detailkonzept online lesen/g, "Konzeptpapier lesen")
+    .replace(/Dossier online lesen/g, "Dossier lesen")
+    .replace(/Einzeldossier online lesen/g, "Dossier lesen")
+    .replace(/Zum Detailkonzept/g, "Konzeptpapier lesen")
+    .replace(/Zum Dossier/g, "Dossier lesen")
+    .replace(/DETAILKONZEPTE/g, "KONZEPTPAPIERE")
+    .replace(/DETAILKONZEPT/g, "KONZEPTPAPIER")
+    .replace(/Detailkonzepte/g, "Konzeptpapiere")
+    .replace(/Detailkonzept/g, "Konzeptpapier")
+    .replace(/Einzeldossier-Set/g, "Dossier-Sammlung")
+    .replace(/Einzeldossiers/g, "Dossiers")
+    .replace(/Einzeldossier/g, "Dossier")
     .replace(/Online-Volltext lesen/g, "Onlinefassung lesen")
-    .replace(/(<a\b[^>]*href=["']#detailkonzept["'][^>]*>)Detailkonzept lesen(<\/a>)/gi, "$1Detailabschnitt anzeigen$2")
+    .replace(/Online-Volltext/g, "Onlinefassung")
+    .replace(/Toolseite öffnen/g, "Methodik lesen")
+    .replace(/Portal öffnen/g, "Zur Übersicht")
+    .replace(/(<a\b[^>]*href=["']#detailkonzept["'][^>]*>)Konzeptpapier lesen(<\/a>)/gi, "$1Konzeptabschnitt anzeigen$2")
+    .replace(/(<a\b[^>]*href=["']#detailkonzept["'][^>]*>)Detailkonzept lesen(<\/a>)/gi, "$1Konzeptabschnitt anzeigen$2")
     .replace(/(<a\b[^>]*href=["']#einzeldossier["'][^>]*>)Dossier lesen(<\/a>)/gi, "$1Dossierabschnitt anzeigen$2")
+    .replace(/(<a\b[^>]*href=["']#dossier["'][^>]*>)Dossier lesen(<\/a>)/gi, "$1Dossierabschnitt anzeigen$2")
     .replace(/(<a\b[^>]*href=["']#risikolabor["'][^>]*>)Risiko-Simulation starten(<\/a>)/gi, "$1Risikolabor ansehen$2");
 
   html = html.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi, (full, tag, body) => {

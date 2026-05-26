@@ -14,14 +14,14 @@ Stand: 25. Mai 2026
 
 ## Ziel
 
-Die Masterbibliothek ist das oeffentliche Wissensarchiv der Wirkungsökonomie. Sie fuehrt Website, Buch, Akademie, Dossiers, Portale, Detailkonzepte, Toolkarten, Downloads, Glossar und Quellen in einer konsistenten Struktur zusammen.
+Die Masterbibliothek ist das oeffentliche Wissensarchiv der Wirkungsökonomie. Sie fuehrt Website, Buch, Akademie, Dossiers, Portale, Konzeptpapiere, Toolkarten, Downloads, Glossar und Quellen in einer konsistenten Struktur zusammen.
 
 ## Leitprinzipien
 
 1. Jede Datei braucht eine Onlinefassung.
-2. Jede Onlinefassung braucht PDF- und DOCX-Download.
+2. Jede Onlinefassung braucht PDF- und PDF-Download.
 3. Jede Downloadkarte braucht Status, Version, Stand, Autorin und Referenz.
-4. Keine kurzen Grobtexte duerfen als Detailkonzept erscheinen.
+4. Keine kurzen Grobtexte duerfen als Konzeptpapier erscheinen.
 5. Jedes Fachportal braucht SDG-/SDG+-Block und politische Anschlussfaehigkeit.
 6. Jedes Tool braucht Beschreibung, Nutzen, Zielgruppe, Status und Link.
 7. Jedes Dokument muss suchbar und filterbar sein.
@@ -33,15 +33,15 @@ Die Bibliothek verwendet drei Hauptebenen.
 
 ### Ebene 1 - Portal
 
-Ein Portal ist ein thematischer Wirkungsraum, zum Beispiel Wohnen, Arbeit, Gesundheit, Migration oder Digitalisierung. Ein Portal besitzt Startseite, Konzeptpapier, Gesamtdossier, Detailkonzepte, Downloads, Toolkarten, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Buchanker und Glossarlinks.
+Ein Portal ist ein thematischer Wirkungsraum, zum Beispiel Wohnen, Arbeit, Gesundheit, Migration oder Digitalisierung. Ein Portal besitzt Startseite, Konzeptpapier, Gesamtdossier, Konzeptpapiere, Downloads, Toolkarten, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Buchanker und Glossarlinks.
 
 ### Ebene 2 - Dokument
 
-Ein Dokument ist ein einzelner Inhalt mit klarer Fassung. Dokumenttypen sind: Portalstartseite, Konzeptpapier, Gesamtdossier, Detailkonzept, Toolkarte, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Quellen, Glossar, Integrationsgrundlage, Releasebericht.
+Ein Dokument ist ein einzelner Inhalt mit klarer Fassung. Dokumenttypen sind: Portalstartseite, Konzeptpapier, Gesamtdossier, Konzeptpapier, Toolkarte, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Quellen, Glossar, Integrationsgrundlage, Releasebericht.
 
 ### Ebene 3 - Format
 
-Ein Dokument kann mehrere Formate besitzen: Onlinefassung, PDF, DOCX, HTML, Markdown, JSON, XLSX oder ZIP. Fuer Website 1.0 sind Onlinefassung, PDF und DOCX Pflicht, sofern es sich um oeffentliche Fachtexte handelt.
+Ein Dokument kann mehrere Formate besitzen: Onlinefassung, PDF, PDF, HTML, Markdown, JSON, XLSX oder ZIP. Fuer Website 1.0 sind Onlinefassung, PDF Pflicht, sofern es sich um oeffentliche Fachtexte handelt.
 
 ## Versionierung
 

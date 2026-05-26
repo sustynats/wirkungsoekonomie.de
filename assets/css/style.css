@@ -10763,7 +10763,9 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 .readable-prose .cite-anchor,
-.reading-page .cite-anchor {
+.reading-page .cite-anchor,
+.article-body .cite-anchor,
+.fulltext-reader .cite-anchor {
   opacity: 0;
   transform: translateX(-0.08rem);
   transition: opacity 160ms ease, transform 160ms ease;
@@ -10776,7 +10778,19 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 .readable-prose h3:focus-within .cite-anchor,
 .readable-prose h4:focus-within .cite-anchor,
 .reading-page h2:hover .cite-anchor,
-.reading-page h2:focus-within .cite-anchor {
+.reading-page h2:focus-within .cite-anchor,
+.article-body h2:hover .cite-anchor,
+.article-body h3:hover .cite-anchor,
+.article-body h4:hover .cite-anchor,
+.article-body h2:focus-within .cite-anchor,
+.article-body h3:focus-within .cite-anchor,
+.article-body h4:focus-within .cite-anchor,
+.fulltext-reader h2:hover .cite-anchor,
+.fulltext-reader h3:hover .cite-anchor,
+.fulltext-reader h4:hover .cite-anchor,
+.fulltext-reader h2:focus-within .cite-anchor,
+.fulltext-reader h3:focus-within .cite-anchor,
+.fulltext-reader h4:focus-within .cite-anchor {
   opacity: 0.72;
   transform: none;
 }
@@ -10815,6 +10829,8 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
   .readable-prose .cite-anchor,
   .reading-page .cite-anchor,
+  .article-body .cite-anchor,
+  .fulltext-reader .cite-anchor,
   .cite-anchor {
     display: none;
   }

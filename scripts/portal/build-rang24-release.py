@@ -125,6 +125,22 @@ def clean(value: object) -> str:
     text = text.replace("internen Adminbereich", "geschützten Arbeitsbereich")
     text = text.replace("internem Adminbereich", "geschützten Arbeitsbereich")
     text = text.replace("GO24", "Website 1.0")
+    text = text.replace("Detailkonzepte", "Konzeptpapiere")
+    text = text.replace("Detailkonzept", "Konzeptpapier")
+    text = text.replace("Einzeldossier-Set", "Dossier-Sammlung")
+    text = text.replace("Einzeldossiers", "Dossiers")
+    text = text.replace("Einzeldossier", "Dossier")
+    text = text.replace("Online-Volltext", "Onlinefassung")
+    text = text.replace("Portal öffnen", "Zur Übersicht")
+    text = text.replace("Portaltext", "Kurzkonzept")
+    text = text.replace("Website-Integration", "Website-Einordnung")
+    text = text.replace("Demo in Vorbereitung", "Methodik vorbereitet")
+    text = text.replace("PDF und DOCX", "PDF")
+    text = text.replace("PDF/DOCX", "PDF")
+    text = text.replace("DOCX-Dateien", "PDF-Dateien")
+    text = text.replace("DOCX-Downloads", "PDF-Downloads")
+    text = text.replace("DOCX-Download", "PDF-Download")
+    text = text.replace("DOCX", "PDF")
     text = text.replace("–", "-").replace("—", "-")
     text = re.sub(r"\s+", " ", text).strip()
     return text
@@ -452,6 +468,8 @@ def library_cards(register: list[dict]) -> str:
         rang_raw = clean(item.get("rang", 0))
         rang_num = int(rang_raw) if rang_raw.isdigit() else -1
         ext = clean(item.get("extension"))
+        if ext.lower() in {"doc", "docx"}:
+            continue
         doc_type = clean(item.get("document_type"))
         portal = f"Rang {rang_raw}" if rang_num >= 0 else "Grundlagen"
         online = up_href(PORTAL_URLS.get(rang_num, "fachbibliothek/"))
@@ -459,8 +477,7 @@ def library_cards(register: list[dict]) -> str:
         title = clean(item.get("file_name"))
         desc = f"{doc_type} aus {clean(item.get('source_package'))}."
         pdf = "ja" if ext == "pdf" else "nein"
-        docx = "ja" if ext == "docx" else "nein"
-        cards.append(f"""<article class="card library-card" data-rang="{html.escape(rang_raw)}" data-portal="{html.escape(portal)}" data-type="{html.escape(doc_type)}" data-status="{esc(item.get('qa_status'))}" data-format="{html.escape(ext)}" data-online="ja" data-pdf="{pdf}" data-docx="{docx}">
+        cards.append(f"""<article class="card library-card" data-rang="{html.escape(rang_raw)}" data-portal="{html.escape(portal)}" data-type="{html.escape(doc_type)}" data-status="{esc(item.get('qa_status'))}" data-format="{html.escape(ext)}" data-online="ja" data-pdf="{pdf}">
 <p class="card-kicker">{html.escape(portal)} · {html.escape(doc_type)} · {html.escape(ext.upper())}</p>
 <h3 class="card-title">{html.escape(title)}</h3>
 <p class="card-text">{html.escape(desc)}</p>
@@ -555,8 +572,7 @@ def download_center(register: list[dict], active: list[dict]) -> str:
         ("WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0", "Offene Punkte und QA-Risiken"),
     ]:
         pdf = up_href(f"{ASSET_REL}/{stem}.pdf")
-        docx = up_href(f"{ASSET_REL}/{stem}.docx")
-        master_links.append(f"""<article class="card"><p class="card-kicker">Masterdownload · PDF/DOCX</p><h3 class="card-title">{html.escape(label)}</h3><p class="card-text">Öffentliche Releasefassung mit Version, Stand, Autorin und Referenz.</p><div class="hero-actions"><a class="btn btn-secondary" href="{pdf}" target="_blank" rel="noopener noreferrer">PDF</a><a class="btn btn-secondary" href="{docx}" target="_blank" rel="noopener noreferrer">DOCX</a></div></article>""")
+        master_links.append(f"""<article class="card"><p class="card-kicker">Masterdownload · PDF</p><h3 class="card-title">{html.escape(label)}</h3><p class="card-text">Öffentliche Releasefassung mit Version, Stand, Autorin und Referenz.</p><div class="hero-actions"><a class="btn btn-secondary" href="{pdf}" target="_blank" rel="noopener noreferrer">PDF herunterladen</a></div></article>""")
     zip_link = up_href(f"{ASSET_REL}/WOeK_Rang24_Website-1.0_Releasepaket_public_v1.0.zip")
     return f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Master-Downloads</p><h2>Website-1.0-Releasepaket</h2></div><div class="card"><p>Das öffentliche Releasepaket enthält bereinigte Register, Masterberichte und Qualitätsübersichten für Leser:innen.</p><a class="btn btn-primary" href="{zip_link}" target="_blank" rel="noopener noreferrer">Öffentliches ZIP herunterladen</a></div><div class="card-grid two">{''.join(master_links)}</div></section>
 <section class="section"><div class="section-header"><p class="hero-kicker">Rangpakete</p><h2>Aktive Downloadseiten</h2></div><div class="card-grid three">{''.join(packages)}</div></section>"""
@@ -602,10 +618,10 @@ def main() -> None:
     qa = load_json("WOeK_Rang24_qa_checkliste_v1.0.json")
 
     library_body = f"""<section class="section"><div class="card"><p class="hero-kicker">Begriffslogik</p><h2>Referenzrahmen Website 1.0</h2><p>Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen und kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Mensch, Planet und Demokratie ist die kommunikative Übersetzung der SDGs, der Agenda 2030 und SDG+.</p></div></section>{filter_ui()}<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Masterregister</p><h2>Fachbibliothek</h2></div><div class="card-grid three">{library_cards(register)}</div></section>"""
-    page_shell(ROOT / "fachbibliothek", "Fachbibliothek der Wirkungsökonomie", "Filterbare Masterbibliothek für Portale, Dossiers, Detailkonzepte, Downloads, Toolkarten, Glossar und Quellen.", library_body, filter_script())
+    page_shell(ROOT / "fachbibliothek", "Fachbibliothek der Wirkungsökonomie", "Filterbare Masterbibliothek für Bereiche, Dossiers, Konzeptpapiere, Downloads, Toolkarten, Glossar und Quellen.", library_body, filter_script())
 
     downloads_body = download_center(register, active)
-    page_shell(ROOT / "downloads", "Downloadzentrum der Wirkungsökonomie", "Kuratierte Downloads für Masterpakete, Rangpakete, Dossiers, Detailkonzepte, Toolkarten und Register.", downloads_body)
+    page_shell(ROOT / "downloads", "Downloadzentrum der Wirkungsökonomie", "Kuratierte Downloads für Masterpakete, Rangpakete, Dossiers, Konzeptpapiere, Toolkarten und Register.", downloads_body)
 
     tools_body = f"""<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Toolkartenregister</p><h2>Werkzeuge und Methoden</h2></div><div class="card"><p>Das Register zeigt Toolkarten mit Beschreibung, Nutzen, Zielgruppe, Status und passender Methodik. Nur funktionierende Interaktionen werden als Rechner, Scanner oder Simulation beworben.</p></div>{tools_cards(tools)}</section>"""
     page_shell(ROOT / "tools", "Tools der Wirkungsökonomie", "Register der Toolkarten aus der Masterbibliothek mit Beschreibung, Nutzen, Zielgruppe, Status und Link.", tools_body)

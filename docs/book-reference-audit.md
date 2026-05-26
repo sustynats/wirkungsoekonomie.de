@@ -333,67 +333,67 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 
 | Status | Gruppe | Seite | Titel | Referenzen |
 | --- | --- | --- | --- | ---: |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/ | Detailkonzept: Algorithmische Fairness und digitale Rechte | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ | Detailkonzept: Audit, Assurance und Datenqualität | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/cyberresilienz/ | Detailkonzept: Cyberresilienz der Wirkungsarchitektur | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/digitale-produktpaesse/ | Detailkonzept: Digitale Produktpässe als Produktgedächtnis | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/digitale-souveraenitaet/ | Detailkonzept: Digitale Souveränität | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/ | Konzeptpapier: Algorithmische Fairness und digitale Rechte | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ | Konzeptpapier: Audit, Assurance und Datenqualität | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/cyberresilienz/ | Konzeptpapier: Cyberresilienz der Wirkungsarchitektur | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/digitale-produktpaesse/ | Konzeptpapier: Digitale Produktpässe als Produktgedächtnis | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/digitale-souveraenitaet/ | Konzeptpapier: Digitale Souveränität | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/downloads/ | Downloads Rang 17 | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ | Gesamtdossier Rang 17 | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/ | Rang 17: Digitalisierung, KI und Wirkungsdatenräume | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/interoperabilitaet-register/ | Detailkonzept: Interoperabilität, Register und Schnittstellen | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/ki-governance/ | Detailkonzept: KI-Governance | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/interoperabilitaet-register/ | Konzeptpapier: Interoperabilität, Register und Schnittstellen | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/ki-governance/ | Konzeptpapier: KI-Governance | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/ | Konzeptpapier Rang 17 | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/plattformlogik/ | Detailkonzept: Plattformlogik und Resonanzräume | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/plattformlogik/ | Konzeptpapier: Plattformlogik und Resonanzräume | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit Rang 17 | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/quellen-glossar/ | Quellen und Glossarlinks Rang 17 | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/sdg-sdgplus/ | SDG-/SDG+-Block Rang 17 | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/toolkarten/ | Toolkarten Rang 17 | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsdatenraeume/ | Detailkonzept: Wirkungsdatenräume | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsdatenraeume/ | Konzeptpapier: Wirkungsdatenräume | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsindikatoren/ | Wirkungsindikatoren Rang 17 | 6 |
-| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsscanner/ | Detailkonzept: Wirkungsscanner und Bürger:innen-Instrumente | 6 |
+| unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsscanner/ | Konzeptpapier: Wirkungsscanner und Bürger:innen-Instrumente | 6 |
 | inserted-before-main-close | default | /portale/ | Portale der Wirkungsökonomie | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/buchanker-querverlinkungen/ | Buchanker und Querverlinkungen Rang 19 | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ | Detailkonzept: CBAM, Grenzausgleich und externe Kosten | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/datenstandards-interoperabilitaet/ | Detailkonzept: Globale WÖk-IDs, Datenstandards und Interoperabilität | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ | Konzeptpapier: CBAM, Grenzausgleich und externe Kosten | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/datenstandards-interoperabilitaet/ | Konzeptpapier: Globale WÖk-IDs, Datenstandards und Interoperabilität | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/downloads/ | Downloads Rang 19 | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/entwicklungspartnerschaften-wirkungsfonds/ | Detailkonzept: Entwicklungspartnerschaften und Wirkungsfonds | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/europa-als-wirkungsraum/ | Detailkonzept: Europa als Wirkungsraum | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ | Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/entwicklungspartnerschaften-wirkungsfonds/ | Konzeptpapier: Entwicklungspartnerschaften und Wirkungsfonds | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/europa-als-wirkungsraum/ | Konzeptpapier: Europa als Wirkungsraum | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ | Konzeptpapier: Geopolitische Wirkungsrisiken, Desinformation und Demokratie | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ | Gesamtdossier Rang 19: Internationale Ordnung, Globalisierung und Geopolitik | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ | Detailkonzept: Globale Resilienz und Frühwarnkooperation | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/globale-wirkungsgovernance/ | Detailkonzept: Globale Wirkungsgovernance ohne Weltregierung | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ | Konzeptpapier: Globale Resilienz und Frühwarnkooperation | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/globale-wirkungsgovernance/ | Konzeptpapier: Globale Wirkungsgovernance ohne Weltregierung | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/ | Portalstartseite Rang 19: Internationale Ordnung, Globalisierung und Geopolitik | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/klimagerechtigkeit-ressourcenfairness/ | Detailkonzept: Klimagerechtigkeit und Ressourcenfairness | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/klimagerechtigkeit-ressourcenfairness/ | Konzeptpapier: Klimagerechtigkeit und Ressourcenfairness | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/konzeptpapier/ | Konzeptpapier Rang 19: Internationale Ordnung, Globalisierung und Geopolitik | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/ | Detailkonzept: Multipolare Ordnung und kulturelle Anschlussfähigkeit | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/ | Konzeptpapier: Multipolare Ordnung und kulturelle Anschlussfähigkeit | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit Rang 19 | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/quellen-glossar/ | Quellen und Glossarlinks Rang 19 | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/sdg-sdgplus/ | SDG- und SDG+-Block Rang 19 | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/toolkarten/ | Toolkarten Rang 19 | 6 |
-| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/wirkungsbasierter-handel-lieferketten/ | Detailkonzept: Wirkungsbasierter Handel und Lieferketten | 6 |
+| unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/wirkungsbasierter-handel-lieferketten/ | Konzeptpapier: Wirkungsbasierter Handel und Lieferketten | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/wirkungsindikatoren/ | Wirkungsindikatoren Rang 19 | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/datenmacht-datenschutz/ | Detailkonzept 7: Datenmacht, Datenschutz und demokratische Begrenzung | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/datenmacht-datenschutz/ | Konzeptpapier 7: Datenmacht, Datenschutz und demokratische Begrenzung | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/downloads/ | Downloads Rang 21 | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/ | FAQ Rang 21: Missverständnisse und Gegenframes | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/fehlbarkeit-korrektur/ | Detailkonzept 6: Fehlbarkeit, Unsicherheit und lernende Korrektur | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/freiheit-markt-planwirtschaft/ | Detailkonzept 5: Freiheit, Markt und der Vorwurf der Planwirtschaft | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/fehlbarkeit-korrektur/ | Konzeptpapier 6: Fehlbarkeit, Unsicherheit und lernende Korrektur | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/freiheit-markt-planwirtschaft/ | Konzeptpapier 5: Freiheit, Markt und der Vorwurf der Planwirtschaft | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/gesamtdossier/ | Gesamtdossier Rang 21: Kritik, Missverständnisse und Schutzarchitektur | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/ | Portalstartseite Rang 21: Kritik, Missverständnisse und Schutzarchitektur | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/kommunikation-framing-akzeptanz/ | Detailkonzept 8: Kommunikation, Framing und Akzeptanz | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/kommunikation-framing-akzeptanz/ | Konzeptpapier 8: Kommunikation, Framing und Akzeptanz | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/konzeptpapier/ | Konzeptpapier Rang 21: Kritik, Missverständnisse und Schutzarchitektur | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/kritikwerkstatt-beteiligung/ | Detailkonzept 10: Kritikwerkstatt, Beteiligung und oeffentliche Rueckkopplung | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/missbrauchsschutz-rechtsschutz-governance/ | Detailkonzept 9: Missbrauchsschutz, Rechtsschutz und Governance | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/kritikwerkstatt-beteiligung/ | Konzeptpapier 10: Kritikwerkstatt, Beteiligung und oeffentliche Rueckkopplung | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/missbrauchsschutz-rechtsschutz-governance/ | Konzeptpapier 9: Missbrauchsschutz, Rechtsschutz und Governance | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit Rang 21 | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/quellen-glossar/ | Quellen und Glossarlinks Rang 21 | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/risiko-und-schutzmatrix/ | Risiko- und Schutzmatrix Rang 21 | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/sdg-sdgplus/ | SDG-/SDG+-Block Rang 21 | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/sdgs-verschwoerungsnarrativ/ | Detailkonzept 2: SDGs zwischen Kooperation und Verschwoerungsnarrativ | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/technokratie-social-credit/ | Detailkonzept 3: Technokratie, Ueberwachung und Social Credit als rote Linie | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/sdgs-verschwoerungsnarrativ/ | Konzeptpapier 2: SDGs zwischen Kooperation und Verschwoerungsnarrativ | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/technokratie-social-credit/ | Konzeptpapier 3: Technokratie, Ueberwachung und Social Credit als rote Linie | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/toolkarten/ | Toolkarten Rang 21 | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/widerstand-neue-massstaebe/ | Detailkonzept 1: Widerstand gegen neue Massstaebe | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/widerstand-neue-massstaebe/ | Konzeptpapier 1: Widerstand gegen neue Massstaebe | 6 |
 | unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/wirkungsindikatoren/ | Wirkungsindikatoren Rang 21 | 6 |
-| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/wirkungssimulation-manipulation/ | Detailkonzept 4: Wirkungsmessung, Manipulation und Wirkungssimulation | 6 |
+| unchanged | kritik-schutz | /portale/kritik-missverstaendnisse-schutzarchitektur/wirkungssimulation-manipulation/ | Konzeptpapier 4: Wirkungsmessung, Manipulation und Wirkungssimulation | 6 |
 | unchanged | migration-vielfalt | /portale/migration-vielfalt/arbeitsmarkt-fachkraefte-demografie/ | Arbeitsmarkt, Fachkräfte und Demografie | 6 |
 | unchanged | migration-vielfalt | /portale/migration-vielfalt/bestands-und-nachlieferliste/ | Publikationsübersicht | 6 |
 | unchanged | migration-vielfalt | /portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/ | Bildung, Sprache und Wirkungskompetenz | 6 |
@@ -436,82 +436,82 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | unchanged | default | /portale/sicherheit-resilienz/toolkarten/ | Toolkarten | 6 |
 | unchanged | default | /portale/sicherheit-resilienz/wirkungsrisiken/ | Wirkungsrisiken und Resilienzindikatoren | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/downloads/ | Downloads Rang 20 | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/evaluation-rechtsschutz-lernschleifen/ | Detailkonzept Evaluation, Rechtsschutz und Lernschleifen | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/evaluation-rechtsschutz-lernschleifen/ | Konzeptpapier Evaluation, Rechtsschutz und Lernschleifen | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/gesamtdossier/ | Gesamtdossier Rang 20 | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/ | Rang 20: Transformation, Übergänge und Implementierung | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/kommunikation-change-partizipation/ | Detailkonzept Kommunikation, Change und Partizipation | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/kommunikation-change-partizipation/ | Konzeptpapier Kommunikation, Change und Partizipation | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/konzeptpapier/ | Konzeptpapier Rang 20 | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/pilotkommunen/ | Detailkonzept Pilotkommunen und kommunale Wirkungshaushalte | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/pilotkommunen/ | Konzeptpapier Pilotkommunen und kommunale Wirkungshaushalte | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit Rang 20 | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/produkt-und-beschaffungspiloten/ | Detailkonzept Produkt- und Beschaffungspiloten | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/produkt-und-beschaffungspiloten/ | Konzeptpapier Produkt- und Beschaffungspiloten | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/quellen-glossar/ | Quellen und Glossarlinks Rang 20 | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/reallabore-regulatory-sandboxes/ | Detailkonzept Reallabore und regulatorische Sandboxes | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/roadmap-2030-2050/ | Detailkonzept Roadmap 2030 und 2050 | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/reallabore-regulatory-sandboxes/ | Konzeptpapier Reallabore und regulatorische Sandboxes | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/roadmap-2030-2050/ | Konzeptpapier Roadmap 2030 und 2050 | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/sdg-sdgplus/ | SDG-/SDG+-Block Rang 20 | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/soziale-abfederung-kaufkraftschutz/ | Detailkonzept Soziale Abfederung und Kaufkraftschutz | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/soziale-abfederung-kaufkraftschutz/ | Konzeptpapier Soziale Abfederung und Kaufkraftschutz | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/toolkarten/ | Toolkarten Rang 20 | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/umsetzungspfad/ | Detailkonzept Umsetzungspfad und Transformationsdramaturgie | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/unternehmens-transformationspfade/ | Detailkonzept Unternehmens-Transformationspfade | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/wirkungsdaten-versionierung-register/ | Detailkonzept Wirkungsdaten, Versionierung und Register | 6 |
-| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/wirkungsfonds-brueckenfinanzierung/ | Detailkonzept Wirkungsfonds und Brückenfinanzierung | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/umsetzungspfad/ | Konzeptpapier Umsetzungspfad und Transformationsdramaturgie | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/unternehmens-transformationspfade/ | Konzeptpapier Unternehmens-Transformationspfade | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/wirkungsdaten-versionierung-register/ | Konzeptpapier Wirkungsdaten, Versionierung und Register | 6 |
+| unchanged | transformation | /portale/transformation-uebergaenge-implementierung/wirkungsfonds-brueckenfinanzierung/ | Konzeptpapier Wirkungsfonds und Brückenfinanzierung | 6 |
 | unchanged | transformation | /portale/transformation-uebergaenge-implementierung/wirkungsindikatoren/ | Wirkungsindikatoren Rang 20 | 6 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/community-kritikwerkstatt/ | Detailkonzept Community, Beteiligung und Kritikwerkstatt | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/community-kritikwerkstatt/ | Konzeptpapier Community, Beteiligung und Kritikwerkstatt | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/downloads/ | Downloads Rang 23 | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/fachbibliothek-wissensarchiv/ | Detailkonzept Fachbibliothek und Wissensarchiv | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/fachbibliothek-wissensarchiv/ | Konzeptpapier Fachbibliothek und Wissensarchiv | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/gesamtdossier/ | Gesamtdossier Rang 23 - Wirkungsakademie, Fachbibliothek und Wirkungskompetenz | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/glossar-versionierung/ | Detailkonzept Glossar, Begriffe und Versionierung | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/glossar-versionierung/ | Konzeptpapier Glossar, Begriffe und Versionierung | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/ | Portalstartseite Rang 23 - Wirkungsakademie, Fachbibliothek und Wirkungskompetenz | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/konzeptpapier/ | Konzeptpapier Rang 23 - Wirkungsakademie, Fachbibliothek und Wirkungskompetenz | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/lernpfade-zertifikate/ | Detailkonzept Didaktik, Lernpfade und Zertifikate | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/online-volltexte-downloads/ | Detailkonzept Onlinefassungen und Download-Governance | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/lernpfade-zertifikate/ | Konzeptpapier Didaktik, Lernpfade und Zertifikate | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/online-volltexte-downloads/ | Konzeptpapier Onlinefassungen und Download-Governance | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit Rang 23 | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/publikationsworkflow/ | Detailkonzept Publikationsworkflow, Redaktion und Website-Betrieb | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/quellen-evidenz/ | Detailkonzept Quellen, Evidenz und Qualitätsprüfung | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/publikationsworkflow/ | Konzeptpapier Publikationsworkflow, Redaktion und Website-Betrieb | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/quellen-evidenz/ | Konzeptpapier Quellen, Evidenz und Qualitätsprüfung | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/quellen-glossar/ | Quellen und Glossarlinks Rang 23 | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/sdg-sdgplus/ | SDG-/SDG+-Block Rang 23 | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/toolkarten-governance/ | Detailkonzept Toolkarten und Demo-Governance | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/toolkarten-governance/ | Konzeptpapier Toolkarten und Demo-Governance | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/toolkarten/ | Toolkarten Rang 23 | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/wirkungsakademie-curricula/ | Detailkonzept Wirkungsakademie und Curricula | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/wirkungsakademie-curricula/ | Konzeptpapier Wirkungsakademie und Curricula | 5 |
 | unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/wirkungsindikatoren/ | Wirkungsindikatoren Rang 23 | 5 |
-| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/wirkungskompetenz/ | Detailkonzept Wirkungskompetenz als Querschnittskompetenz | 5 |
+| unchanged | akademie-bibliothek | /portale/wirkungsakademie-fachbibliothek/wirkungskompetenz/ | Konzeptpapier Wirkungskompetenz als Querschnittskompetenz | 5 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/downloads/ | Downloads Rang 18 | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/forschungsbewertung-wirkungsindikatoren/ | Detailkonzept Forschungsbewertung und Wissenschafts-Wirkungsindikatoren | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/forschungsdaten-replikation-qualitaet/ | Detailkonzept Forschungsdaten, Replikation und Qualitätssicherung | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/forschungsbewertung-wirkungsindikatoren/ | Konzeptpapier Forschungsbewertung und Wissenschafts-Wirkungsindikatoren | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/forschungsdaten-replikation-qualitaet/ | Konzeptpapier Forschungsdaten, Replikation und Qualitätssicherung | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/gesamtdossier/ | Gesamtdossier Rang 18: Wissen, Wissenschaft, Forschung und Wirkungsinnovation | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/ | Rang 18: Wissen, Wissenschaft, Forschung und Wirkungsinnovation | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/konzeptpapier/ | Konzeptpapier Rang 18: Wissen, Wissenschaft, Forschung und Wirkungsinnovation | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/mission-oriented-research-wirkungsinnovation/ | Detailkonzept Mission-oriented Research und Wirkungsinnovation | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/open-science-wissensinfrastruktur/ | Detailkonzept Open Science und öffentliche Wissensinfrastruktur | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/mission-oriented-research-wirkungsinnovation/ | Konzeptpapier Mission-oriented Research und Wirkungsinnovation | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/open-science-wissensinfrastruktur/ | Konzeptpapier Open Science und öffentliche Wissensinfrastruktur | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/politische-anschlussfaehigkeit/ | Politische Anschlussfähigkeit Rang 18 | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/quellen-glossar/ | Quellen und Glossarlinks Rang 18 | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/rechtsprechung-sachverstaendige-wirkungsrecht/ | Detailkonzept Rechtsprechung, Sachverständige und Wirkungsrecht | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/science-for-policy-statistik/ | Detailkonzept Science for Policy und öffentliche Statistik | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/rechtsprechung-sachverstaendige-wirkungsrecht/ | Konzeptpapier Rechtsprechung, Sachverständige und Wirkungsrecht | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/science-for-policy-statistik/ | Konzeptpapier Science for Policy und öffentliche Statistik | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/sdg-sdgplus/ | SDG- und SDG+-Bezug Rang 18 | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/toolkarten/ | Toolkarten Rang 18 | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/transdisziplinaritaet-citizen-science/ | Detailkonzept Transdisziplinarität und Citizen Science | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/transdisziplinaritaet-citizen-science/ | Konzeptpapier Transdisziplinarität und Citizen Science | 7 |
 | unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wirkungsindikatoren/ | Wirkungsindikatoren Rang 18 | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wirkungskompetenz-akademie/ | Detailkonzept Wirkungskompetenz-Akademie und Wissensbildung | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wissenschaft-als-wirklichkeitspruefung/ | Detailkonzept Wissenschaft als Wirklichkeitsprüfung | 7 |
-| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wissensrat-integritaet/ | Detailkonzept Wissensrat und wissenschaftliche Integrität | 7 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/alltag-2035/ | Detailkonzept 1: Alltag 2035 und wirkungsfaehiger Alltag | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/buergerinnen-co-autorinnen/ | Detailkonzept 6: Buerger innen als Co Autor innen der Wirkung | 5 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wirkungskompetenz-akademie/ | Konzeptpapier Wirkungskompetenz-Akademie und Wissensbildung | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wissenschaft-als-wirklichkeitspruefung/ | Konzeptpapier Wissenschaft als Wirklichkeitsprüfung | 7 |
+| unchanged | wissenschaft-innovation-digitalisierung | /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wissensrat-integritaet/ | Konzeptpapier Wissensrat und wissenschaftliche Integrität | 7 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/alltag-2035/ | Konzeptpapier 1: Alltag 2035 und wirkungsfaehiger Alltag | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/buergerinnen-co-autorinnen/ | Konzeptpapier 6: Buerger innen als Co Autor innen der Wirkung | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/downloads/ | Downloads Rang 22 | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/ | Gesamtdossier Zukunftsbilder Wirkungswohlstand | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/globale-ordnung-2050/ | Detailkonzept 4: Globale Ordnung 2050 und weltfaehige Rueckkopplung | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/globale-ordnung-2050/ | Konzeptpapier 4: Globale Ordnung 2050 und weltfaehige Rueckkopplung | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/ | Portalstartseite Zukunftsbilder Wirkungswohlstand | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/konzeptpapier/ | Konzeptpapier Zukunftsbilder Wirkungswohlstand | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/ | Politische Anschlussfaehigkeit | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/quellen-glossar/ | Quellen und Glossarlinks | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/schlussbild/ | Detailkonzept 10: Schlussbild und zivilisatorische Perspektive | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/schlussbild/ | Konzeptpapier 10: Schlussbild und zivilisatorische Perspektive | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/sdg-sdgplus/ | SDG SDGplus Block | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/staat-2035/ | Detailkonzept 3: Staat 2035 Wirkungshaushalt und lernende Verwaltung | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/staat-2035/ | Konzeptpapier 3: Staat 2035 Wirkungshaushalt und lernende Verwaltung | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/toolkarten/ | Toolkarten | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/unternehmen-2035/ | Detailkonzept 2: Unternehmen 2035 und wirkungsorientierte Fuehrung | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungs-bip-verlustleistung/ | Detailkonzept 9: Wohlstandsmessung Wirkungs BIP und Verlustleistung | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/unternehmen-2035/ | Konzeptpapier 2: Unternehmen 2035 und wirkungsorientierte Fuehrung | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungs-bip-verlustleistung/ | Konzeptpapier 9: Wohlstandsmessung Wirkungs BIP und Verlustleistung | 5 |
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungsindikatoren/ | Wirkungsindikatoren | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungspraxis/ | Detailkonzept 7: Wirkungspraxis in Konsum Arbeit Wohnen und Mobilitaet | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungswohlstand/ | Detailkonzept 5: Wirkungswohlstand und Wohlstand ohne Zerstoerung | 5 |
-| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/zukunftskommunikation/ | Detailkonzept 8: Zukunftskommunikation Narrative und Resonanzraeume | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungspraxis/ | Konzeptpapier 7: Wirkungspraxis in Konsum Arbeit Wohnen und Mobilitaet | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/wirkungswohlstand/ | Konzeptpapier 5: Wirkungswohlstand und Wohlstand ohne Zerstoerung | 5 |
+| unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/zukunftskommunikation/ | Konzeptpapier 8: Zukunftskommunikation Narrative und Resonanzraeume | 5 |
 | inserted-before-section | arbeit-einkommen | /werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/ | Arbeit &amp; Einkommen | 6 |
 | replaced | bildung | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/ | Bildung &amp; Wirkungsschule | 6 |
 | replaced | bildung | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/ | Die Wirkungsschule | 6 |

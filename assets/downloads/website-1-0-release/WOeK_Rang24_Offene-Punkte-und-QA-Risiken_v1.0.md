@@ -20,7 +20,7 @@ Die Paketproduktion ist weit fortgeschritten, aber die Website 1.0 ist erst dann
 
 ### 1. Rang 0 bis 14 pruefen
 
-Viele fruehe Portale und Dokumente sind nutzbar, aber nicht alle erfuellen automatisch den spaeter gesetzten Qualitaetsstandard. Kurze Texte muessen als Ueberblick, Kurzkonzept, Portaltext oder Einfuehrung bezeichnet werden. Echte Detailkonzepte brauchen Langfassung, Beispiele, Datenlogik, SDG-/SDG+-Bezug, politische Anschlussfaehigkeit und Quellen.
+Viele fruehe Portale und Dokumente sind nutzbar, aber nicht alle erfuellen automatisch den spaeter gesetzten Qualitaetsstandard. Kurze Texte muessen als Ueberblick, Kurzkonzept, Kurzkonzept oder Einfuehrung bezeichnet werden. Echte Konzeptpapiere brauchen Langfassung, Beispiele, Datenlogik, SDG-/SDG+-Bezug, politische Anschlussfaehigkeit und Quellen.
 
 ### 2. Rang 17 Dubletten bereinigen
 
@@ -32,7 +32,7 @@ Rang 23 hat die Fachbibliothek konzipiert. Rang 24 liefert das Register. Fachtea
 
 ### 4. Downloads pruefen
 
-Jede Downloadkarte braucht PDF und DOCX. ZIP-Pakete muessen sichtbar sein. Keine leeren Buttons. Keine toten Links.
+Jede Downloadkarte braucht PDF. ZIP-Pakete muessen sichtbar sein. Keine leeren Buttons. Keine toten Links.
 
 ### 5. Onlinefassungen pruefen
 

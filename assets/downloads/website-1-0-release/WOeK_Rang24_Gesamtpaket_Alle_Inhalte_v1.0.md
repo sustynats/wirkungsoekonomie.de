@@ -28,7 +28,7 @@ Die Website 1.0 ist erst dann fertig, wenn alle Inhalte nicht nur als ZIP oder P
 
 ## Fuehrende Release-Definition
 
-Website 1.0 gilt als releasefaehig, wenn alle Portale von Rang 0 bis Rang 23 online lesbar sind, alle Downloads als PDF und DOCX funktionieren, alle Toolkarten sauber beschrieben sind, SDGs, Agenda 2030 und SDG+ konsistent erklaert werden, politische Anschlussfaehigkeit auf den Wirkungsfeldseiten eingebaut ist, keine fachlichen Arbeitsvermerke sichtbar sind und Build, Linkcheck, Mobile-Check und Downloadcheck bestanden sind.
+Website 1.0 gilt als releasefaehig, wenn alle Portale von Rang 0 bis Rang 23 online lesbar sind, alle Downloads als PDF funktionieren, alle Toolkarten sauber beschrieben sind, SDGs, Agenda 2030 und SDG+ konsistent erklaert werden, politische Anschlussfaehigkeit auf den Wirkungsfeldseiten eingebaut ist, keine fachlichen Arbeitsvermerke sichtbar sind und Build, Linkcheck, Mobile-Check und Downloadcheck bestanden sind.
 
 ## Fuehrende Begriffslogik
 
@@ -39,12 +39,12 @@ Mensch, Planet und Demokratie sind die kommunikative Uebersetzung dieses Referen
 ## Was Rang 24 leistet
 
 1. Masterbibliothek mit Dokumentregister.
-2. Downloadzentrum mit PDF, DOCX, ZIP, HTML und Onlinefassung.
+2. Downloadzentrum mit PDF, PDF, ZIP, HTML und Onlinefassung.
 3. Seitenregister fuer alle Portale und globalen Seiten.
 4. Toolkartenregister mit Status und Zielslug.
 5. QA-Checkliste fuer Website 1.0.
 6. Liste offener Punkte und Risiken.
-7. Integrationsgrundlage fuer Website-Integration.
+7. Integrationsgrundlage fuer Website-Einordnung.
 8. Release-Gates fuer Abnahme.
 
 ## Abgrenzung
@@ -59,11 +59,11 @@ Die aktiven Source-Pakete fuer Rang 15 bis Rang 23 sind im Masterregister enthal
 
 ### Gate 1 - Inhaltliche Vollstaendigkeit
 
-Alle Portalstartseiten, Konzeptpapiere, Gesamtdossiers, Detailkonzepte, Toolkarten, SDG-/SDG+-Bloecke, politische Anschlussfaehigkeitsseiten und Downloadseiten sind angelegt.
+Alle Portalstartseiten, Konzeptpapiere, Gesamtdossiers, Konzeptpapiere, Toolkarten, SDG-/SDG+-Bloecke, politische Anschlussfaehigkeitsseiten und Downloadseiten sind angelegt.
 
 ### Gate 2 - Dateivollstaendigkeit
 
-Jede oeffentlich sichtbare Downloadkarte hat mindestens PDF und DOCX. ZIP-Pakete sind fuer Rangpakete verfuegbar. HTML-Onlinefassungen sind vorhanden und vollstaendig lesbar.
+Jede oeffentlich sichtbare Downloadkarte hat mindestens PDF. ZIP-Pakete sind fuer Rangpakete verfuegbar. HTML-Onlinefassungen sind vorhanden und vollstaendig lesbar.
 
 ### Gate 3 - Begriffs- und SDG-Konsistenz
 
@@ -75,7 +75,7 @@ Auf jeder Wirkungsfeldseite existiert der Pflichtblock mit Aufgabe der Politik, 
 
 ### Gate 5 - UX und Technik
 
-Mobile Inhaltsverzeichnisse funktionieren, Tabellen sind responsiv oder als Cards umgesetzt, Druckfunktion ist vorhanden, Downloadbuttons funktionieren, PDFs und DOCX-Dateien oeffnen korrekt, Website-Links haben keine 404-Fehler.
+Mobile Inhaltsverzeichnisse funktionieren, Tabellen sind responsiv oder als Cards umgesetzt, Druckfunktion ist vorhanden, Downloadbuttons funktionieren, PDFs und PDF-Dateien oeffnen korrekt, Website-Links haben keine 404-Fehler.
 
 ### Gate 6 - Website-Sauberkeit
 
@@ -87,7 +87,7 @@ Build erfolgreich. Lint erfolgreich oder dokumentierte Ausnahmen. Linkcheck erfo
 
 ## Masterbibliothek 1.0
 
-Die Fachbibliothek ist nicht nur ein Archiv. Sie ist die zentrale Navigations- und Vertrauensstruktur der Website. Sie muss Inhalte nach Rang, Portal, Dokumenttyp, Version, Status, Onlinefassung, PDF, DOCX, SDG-Bezug, SDG+-Bezug, Toolkarten, Buchanker und Glossarbegriffen auffindbar machen.
+Die Fachbibliothek ist nicht nur ein Archiv. Sie ist die zentrale Navigations- und Vertrauensstruktur der Website. Sie muss Inhalte nach Rang, Portal, Dokumenttyp, Version, Status, Onlinefassung, PDF, PDF, SDG-Bezug, SDG+-Bezug, Toolkarten, Buchanker und Glossarbegriffen auffindbar machen.
 
 ### Pflichtfilter
 
@@ -103,7 +103,7 @@ Die Fachbibliothek ist nicht nur ein Archiv. Sie ist die zentrale Navigations- u
 - Zielgruppe
 - Online lesbar
 - PDF vorhanden
-- DOCX vorhanden
+- PDF vorhanden
 - Toolbezug
 - Buchanker
 
@@ -120,7 +120,7 @@ Die Fachbibliothek ist nicht nur ein Archiv. Sie ist die zentrale Navigations- u
 - Autorin
 - Referenz
 - PDF-Link
-- DOCX-Link
+- PDF-Link
 - Onlinefassung
 - HTML-Link
 - Markdown-Quelle optional
@@ -139,7 +139,7 @@ Die Fachbibliothek ist nicht nur ein Archiv. Sie ist die zentrale Navigations- u
 1. Rang 0 bis Rang 14 muessen gegen die neuen Qualitaetsstandards geprueft werden.
 2. Alle alten Kurztexte muessen umbenannt oder durch Langfassungen ersetzt werden.
 3. Alle Rangpakete muessen in die Fachbibliothek importiert werden.
-4. Alle PDF- und DOCX-Links muessen funktionieren.
+4. Alle PDF- und PDF-Links muessen funktionieren.
 5. Alle Onlinefassungen muessen vollstaendig lesbar sein.
 6. Alle Toolkarten muessen Beschreibung, Nutzen, Status und Link haben.
 7. Glossar und Begriffsseiten muessen nach dem fuehrenden Begriffsleitfaden aktualisiert sein.
@@ -161,14 +161,14 @@ Stand: 25. Mai 2026
 
 ## Ziel
 
-Die Masterbibliothek ist das oeffentliche Wissensarchiv der Wirkungsökonomie. Sie fuehrt Website, Buch, Akademie, Dossiers, Portale, Detailkonzepte, Toolkarten, Downloads, Glossar und Quellen in einer konsistenten Struktur zusammen.
+Die Masterbibliothek ist das oeffentliche Wissensarchiv der Wirkungsökonomie. Sie fuehrt Website, Buch, Akademie, Dossiers, Portale, Konzeptpapiere, Toolkarten, Downloads, Glossar und Quellen in einer konsistenten Struktur zusammen.
 
 ## Leitprinzipien
 
 1. Jede Datei braucht eine Onlinefassung.
-2. Jede Onlinefassung braucht PDF- und DOCX-Download.
+2. Jede Onlinefassung braucht PDF- und PDF-Download.
 3. Jede Downloadkarte braucht Status, Version, Stand, Autorin und Referenz.
-4. Keine kurzen Grobtexte duerfen als Detailkonzept erscheinen.
+4. Keine kurzen Grobtexte duerfen als Konzeptpapier erscheinen.
 5. Jedes Fachportal braucht SDG-/SDG+-Block und politische Anschlussfaehigkeit.
 6. Jedes Tool braucht Beschreibung, Nutzen, Zielgruppe, Status und Link.
 7. Jedes Dokument muss suchbar und filterbar sein.
@@ -180,15 +180,15 @@ Die Bibliothek verwendet drei Hauptebenen.
 
 ### Ebene 1 - Portal
 
-Ein Portal ist ein thematischer Wirkungsraum, zum Beispiel Wohnen, Arbeit, Gesundheit, Migration oder Digitalisierung. Ein Portal besitzt Startseite, Konzeptpapier, Gesamtdossier, Detailkonzepte, Downloads, Toolkarten, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Buchanker und Glossarlinks.
+Ein Portal ist ein thematischer Wirkungsraum, zum Beispiel Wohnen, Arbeit, Gesundheit, Migration oder Digitalisierung. Ein Portal besitzt Startseite, Konzeptpapier, Gesamtdossier, Konzeptpapiere, Downloads, Toolkarten, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Buchanker und Glossarlinks.
 
 ### Ebene 2 - Dokument
 
-Ein Dokument ist ein einzelner Inhalt mit klarer Fassung. Dokumenttypen sind: Portalstartseite, Konzeptpapier, Gesamtdossier, Detailkonzept, Toolkarte, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Quellen, Glossar, Integrationsgrundlage, Releasebericht.
+Ein Dokument ist ein einzelner Inhalt mit klarer Fassung. Dokumenttypen sind: Portalstartseite, Konzeptpapier, Gesamtdossier, Konzeptpapier, Toolkarte, SDG-/SDG+-Block, politische Anschlussfaehigkeit, Quellen, Glossar, Integrationsgrundlage, Releasebericht.
 
 ### Ebene 3 - Format
 
-Ein Dokument kann mehrere Formate besitzen: Onlinefassung, PDF, DOCX, HTML, Markdown, JSON, XLSX oder ZIP. Fuer Website 1.0 sind Onlinefassung, PDF und DOCX Pflicht, sofern es sich um oeffentliche Fachtexte handelt.
+Ein Dokument kann mehrere Formate besitzen: Onlinefassung, PDF, PDF, HTML, Markdown, JSON, XLSX oder ZIP. Fuer Website 1.0 sind Onlinefassung, PDF Pflicht, sofern es sich um oeffentliche Fachtexte handelt.
 
 ## Versionierung
 
@@ -260,7 +260,7 @@ Die Paketproduktion ist weit fortgeschritten, aber die Website 1.0 ist erst dann
 
 ### 1. Rang 0 bis 14 pruefen
 
-Viele fruehe Portale und Dokumente sind nutzbar, aber nicht alle erfuellen automatisch den spaeter gesetzten Qualitaetsstandard. Kurze Texte muessen als Ueberblick, Kurzkonzept, Portaltext oder Einfuehrung bezeichnet werden. Echte Detailkonzepte brauchen Langfassung, Beispiele, Datenlogik, SDG-/SDG+-Bezug, politische Anschlussfaehigkeit und Quellen.
+Viele fruehe Portale und Dokumente sind nutzbar, aber nicht alle erfuellen automatisch den spaeter gesetzten Qualitaetsstandard. Kurze Texte muessen als Ueberblick, Kurzkonzept, Kurzkonzept oder Einfuehrung bezeichnet werden. Echte Konzeptpapiere brauchen Langfassung, Beispiele, Datenlogik, SDG-/SDG+-Bezug, politische Anschlussfaehigkeit und Quellen.
 
 ### 2. Rang 17 Dubletten bereinigen
 
@@ -272,7 +272,7 @@ Rang 23 hat die Fachbibliothek konzipiert. Rang 24 liefert das Register. Fachtea
 
 ### 4. Downloads pruefen
 
-Jede Downloadkarte braucht PDF und DOCX. ZIP-Pakete muessen sichtbar sein. Keine leeren Buttons. Keine toten Links.
+Jede Downloadkarte braucht PDF. ZIP-Pakete muessen sichtbar sein. Keine leeren Buttons. Keine toten Links.
 
 ### 5. Onlinefassungen pruefen
 
@@ -321,7 +321,7 @@ Es liegt ein Rang-24-Releasepaket vor:
 WÖk_Rang24_Masterbibliothek-Website-1.0-Releasepaket_v1.0.zip
 
 Ziel:
-Baue aus den vorhandenen Portalen, Rangpaketen, Dossiers, Detailkonzepten, PDFs, DOCX-Dateien, Onlinefassungen, Toolkarten, Glossarbegriffen und Quellen eine releasefaehige Website 1.0.
+Baue aus den vorhandenen Portalen, Rangpaketen, Dossiers, Konzeptpapieren, PDFs, PDF-Dateien, Onlinefassungen, Toolkarten, Glossarbegriffen und Quellen eine releasefaehige Website 1.0.
 
 Wichtig:
 Rang 24 ist kein weiteres Fachportal. Rang 24 ist die Gesamt-QA und Integrationsschicht fuer Website 1.0.
@@ -366,7 +366,7 @@ Pflichtfilter:
 - Zielgruppe
 - Online lesbar
 - PDF vorhanden
-- DOCX vorhanden
+- PDF vorhanden
 - Toolbezug
 - Buchanker
 
@@ -383,7 +383,7 @@ Jede Bibliothekskarte braucht:
 - Referenz
 - Onlinefassung
 - PDF-Download
-- DOCX-Download
+- PDF-Download
 - optional ZIP-Download
 - Toolbezug
 - Glossarbezug
@@ -397,12 +397,12 @@ Erstelle ein Downloadzentrum mit:
 - Rangpakete
 - Grundlagen
 - Dossiers
-- Detailkonzepte
+- Konzeptpapiere
 - Toolkarten
 
 Keine leeren Buttons.
 Keine toten Links.
-PDF und DOCX immer gemeinsam anbieten, wenn beide vorhanden sind.
+PDF immer gemeinsam anbieten, wenn beide vorhanden sind.
 
 AUFGABE 4 - Aktive Versionen verwenden
 Wenn mehrere Pakete eines Rangs existieren, nur die aktive Fassung aus dem Masterregister prominent verlinken. Aeltere Pakete als superseded markieren oder nicht oeffentlich anzeigen.
@@ -412,7 +412,7 @@ Pruefe alle bestehenden Portale 0 bis 14:
 - Gibt es Portalstartseite?
 - Gibt es Onlinefassung?
 - Gibt es PDF?
-- Gibt es DOCX?
+- Gibt es PDF?
 - Gibt es Toolkarten?
 - Gibt es SDG-/SDG+-Block?
 - Gibt es politische Anschlussfaehigkeit?
@@ -473,7 +473,7 @@ Route:
 /tools/
 
 Alle Toolkarten aus dem Masterregister anzeigen.
-Jede Toolkarte braucht Beschreibung, Nutzen, Zielgruppe, Status und Link oder Demo in Vorbereitung.
+Jede Toolkarte braucht Beschreibung, Nutzen, Zielgruppe, Status und Link oder Methodik vorbereitet.
 Keine Toolkarte darf nur aus einem Namen bestehen.
 
 AUFGABE 11 - UX und Technik
@@ -481,7 +481,7 @@ AUFGABE 11 - UX und Technik
 2. Responsive Tabellen oder Card-Darstellung.
 3. Breadcrumbs.
 4. Druckfunktion.
-5. PDF und DOCX in neuem Tab.
+5. PDF in neuem Tab.
 6. Downloadbuttons sichtbar.
 7. SEO-Metadaten.
 8. Suchfunktion oder Filterfunktion fuer Bibliothek.
@@ -491,7 +491,7 @@ AUFGABE 11 - UX und Technik
 AUFGABE 12 - QA ausfuehren
 1. Build ausfuehren.
 2. Linkcheck ausfuehren.
-3. Downloadcheck PDF/DOCX/ZIP ausfuehren.
+3. Downloadcheck PDF/ZIP ausfuehren.
 4. Mobile Check ausfuehren.
 5. Website nach fachlichen Arbeitsvermerken durchsuchen.
 6. Nach en dashes suchen und ersetzen.
@@ -504,7 +504,7 @@ Website 1.0 gilt erst als fertig, wenn:
 - alle Portale Rang 0 bis 23 sichtbar sind
 - Fachbibliothek online ist
 - Downloadzentrum online ist
-- PDF und DOCX funktionieren
+- PDF funktionieren
 - ZIP-Pakete funktionieren
 - Onlinefassungen vollstaendig lesbar sind
 - Toolkarten vollstaendig sind

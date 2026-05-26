@@ -781,7 +781,7 @@ function sdgPlusPublicationBlock(base) {
           <p class="card-kicker">Onlinefassung</p>
           <h3>Detailkonzept online lesen</h3>
           <p class="card-text">Definition, Begründung, sieben Dimensionen, Unterdimensionen, Indikatorfamilien, Wirkungsgrenzen und politische Anschlussfähigkeit.</p>
-          <a class="text-link" href="#sdgplus-detail">Zum Detailkonzept</a>
+          <a class="text-link" href="#sdgplus-detail">Konzeptabschnitt anzeigen</a>
         </article>
         <article class="card">
           <p class="card-kicker">Download</p>

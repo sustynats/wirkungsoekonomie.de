@@ -86,7 +86,21 @@ function slugToLabel(value) {
 
 function tagList(items) {
   if (!items?.length) return "";
-  return `<div class="document-tag-list">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>`;
+  return `<div class="document-tag-list">${items.map((item) => `<span>${escapeHtml(publicLabel(item))}</span>`).join("")}</div>`;
+}
+
+function publicLabel(value) {
+  return String(value || "")
+    .replace(/Detailkonzepte/g, "Konzeptpapiere")
+    .replace(/Detailkonzept/g, "Konzeptpapier")
+    .replace(/Einzeldossier-Set/g, "Dossier-Sammlung")
+    .replace(/Einzeldossiers/g, "Dossiers")
+    .replace(/Einzeldossier/g, "Dossier")
+    .replace(/Online-Volltext/g, "Onlinefassung");
+}
+
+function publicDocumentTitle(document) {
+  return publicLabel(document.title);
 }
 
 function parseFileSizeMb(value) {
@@ -277,7 +291,13 @@ function publicDocumentSummary(document) {
     .replace(/^Das Konzeptpapier\b/, replacement)
     .replace(/^Ein Konzeptpapier\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung")
     .replace(/^Das Whitepaper\b/, replacement)
-    .replace(/^Ein Whitepaper\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung");
+    .replace(/^Ein Whitepaper\b/, role.key === "thesenpapier" ? "Ein Thesenpapier" : "Eine Ausarbeitung")
+    .replace(/Detailkonzepte/g, "Konzeptpapiere")
+    .replace(/Detailkonzept/g, "Konzeptpapier")
+    .replace(/Einzeldossier-Set/g, "Dossier-Sammlung")
+    .replace(/Einzeldossiers/g, "Dossiers")
+    .replace(/Einzeldossier/g, "Dossier")
+    .replace(/Online-Volltext/g, "Onlinefassung");
 }
 
 function sortedDocuments(documents) {
@@ -423,7 +443,7 @@ function documentJsonLd(document) {
     {
       "@context": "https://schema.org",
       "@type": "CreativeWork",
-      name: document.title,
+      name: publicDocumentTitle(document),
       author: { "@type": "Person", name: "Natalie Weber" },
       about: { "@type": "Thing", name: "Wirkungsökonomie" },
       isAccessibleForFree: true,
@@ -453,21 +473,23 @@ function documentCard(document) {
   const scope = documentScope(document);
   const role = publicDocumentRole(document);
   const summary = publicDocumentSummary(document);
+  const title = publicDocumentTitle(document);
+  const categories = (document.category || []).map(publicLabel);
   const searchText = [
-    document.title,
+    title,
     summary,
-    document.type,
+    publicLabel(document.type),
     role.label,
     role.note,
     scope.label,
     scope.description,
-    ...(document.category || []),
+    ...categories,
     ...(document.relatedTerms || []),
     ...(document.audience || []),
   ].join(" ");
-  return `<article class="download-card compact" data-download-card data-download-group="${escapeHtml(role.key)}" data-download-category="${escapeHtml([...(document.category || []), scope.key, role.key].join(" ").toLowerCase())}" data-download-title="${escapeHtml(document.title)}" data-download-description="${escapeHtml(searchText)}">
+  return `<article class="download-card compact" data-download-card data-download-group="${escapeHtml(role.key)}" data-download-category="${escapeHtml([...categories, scope.key, role.key].join(" ").toLowerCase())}" data-download-title="${escapeHtml(title)}" data-download-description="${escapeHtml(searchText)}">
     <p class="card-kicker">${escapeHtml(role.label)} · ${document.isArchive ? "Archiv" : "Aktuell"}</p>
-    <h3 class="card-title">${escapeHtml(document.title)}</h3>
+    <h3 class="card-title">${escapeHtml(title)}</h3>
     ${documentScopeMarkup(document)}
     <dl class="download-meta">
       <div><dt>Rolle</dt><dd>${escapeHtml(role.label)}</dd></div>
@@ -476,7 +498,7 @@ function documentCard(document) {
       ${document.fileSize ? `<div><dt>Dateigröße</dt><dd>${escapeHtml(document.fileSize)}</dd></div>` : ""}
     </dl>
     <p class="card-text">${escapeHtml(summary)}</p>
-    ${tagList(document.category)}
+    ${tagList(categories)}
     <div class="download-related"><span>Passend dazu</span>${(document.relatedTerms || []).slice(0, 3).map((term) => `<a href="${escapeHtml(termHref(term))}">${escapeHtml(relationLabelFromTerm(term))}</a>`).join("")}${(document.relatedFields || []).slice(0, 1).map((field) => `<a href="${escapeHtml(field)}">${escapeHtml(slugToLabel(field))}</a>`).join("")}</div>
     ${document.isArchive || !document.onlineUrl ? `<p class="document-archive-badge">Archivmaterial · PDF-only</p>` : ""}
     ${documentActions(document, !document.isArchive && Boolean(document.onlineUrl))}
@@ -534,7 +556,7 @@ function buildDownloadsPage() {
       description: "Zentrale Dokumentenbibliothek der Wirkungsökonomie mit Onlinefassungen, PDFs, Dossiers und verwandten Begriffen.",
       hasPart: publicDocuments.map((document) => ({
         "@type": "CreativeWork",
-        name: document.title,
+        name: publicDocumentTitle(document),
         url: siteLink(document.onlineUrl),
         downloadUrl: document.pdfUrl ? siteLink(document.pdfUrl) : undefined,
         encodingFormat: document.pdfUrl ? "application/pdf" : "text/html",
