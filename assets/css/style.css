@@ -9446,6 +9446,70 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     min-width: 660px;
   }
 
+  .sdg-target-table,
+  .policy-table,
+  .sdg-target-table thead,
+  .policy-table thead,
+  .sdg-target-table tbody,
+  .policy-table tbody,
+  .sdg-target-table tr,
+  .policy-table tr,
+  .sdg-target-table th,
+  .policy-table th,
+  .sdg-target-table td,
+  .policy-table td {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+  }
+
+  .table-wrap:has(.sdg-target-table),
+  .table-wrap:has(.policy-table) {
+    overflow-x: visible;
+  }
+
+  .sdg-target-table,
+  .policy-table {
+    min-width: 0;
+  }
+
+  .sdg-target-table thead,
+  .policy-table thead {
+    display: none;
+  }
+
+  .sdg-target-table tr,
+  .policy-table tr {
+    margin: 0 0 0.9rem;
+    border: 1px solid rgba(11, 16, 32, 0.12);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.78);
+    overflow: hidden;
+  }
+
+  .sdg-target-table th,
+  .policy-table th,
+  .sdg-target-table td,
+  .policy-table td {
+    border-right: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .sdg-target-table th::before,
+  .policy-table th::before,
+  .sdg-target-table td::before,
+  .policy-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--green);
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
   .sdg-ref-popover {
     left: 50%;
     width: min(20rem, calc(100vw - 2rem));
