@@ -334,14 +334,16 @@ a {
   background: rgba(47, 125, 92, 0.14);
 }
 
-.term-document-grid {
+.term-document-grid,
+.term-chapter-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(0.9rem, 2vw, 1.2rem);
   margin-top: 1rem;
 }
 
-.term-document-card {
+.term-document-card,
+.term-chapter-card {
   min-width: 0;
   padding: clamp(1rem, 2vw, 1.3rem);
   border: 1px solid rgba(11, 16, 32, 0.1);
@@ -349,13 +351,23 @@ a {
   background: rgba(246, 241, 232, 0.42);
 }
 
-.term-document-card h3 {
+.term-chapter-card {
+  background: linear-gradient(135deg, rgba(246, 241, 232, 0.72), rgba(255, 255, 255, 0.88));
+}
+
+.term-document-card h3,
+.term-chapter-card h3 {
   margin: 0 0 0.55rem;
   font-size: clamp(1.1rem, 1.5vw, 1.35rem);
 }
 
-.term-document-card p {
+.term-document-card p,
+.term-chapter-card p {
   overflow-wrap: anywhere;
+}
+
+.term-chapter-card .btn {
+  margin-top: 0.35rem;
 }
 
 .term-document-meta {
@@ -398,7 +410,8 @@ a {
 @media (max-width: 760px) {
   .term-section-grid,
   .term-link-section,
-  .term-document-grid {
+  .term-document-grid,
+  .term-chapter-grid {
     grid-template-columns: 1fr;
   }
 

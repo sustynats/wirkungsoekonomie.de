@@ -158,6 +158,89 @@ const centralTermDetails = new Map([
   ["wirkungskompetenz", ["Sie macht Menschen und Organisationen fähig, Folgen, Zielkonflikte und Datenqualität zu verstehen.", "Wirkungskompetenz ist keine Ideologie und keine zentrale Wissensverwaltung.", "Schüler:innen lernen zu unterscheiden, ob ein Projekt nur Output erzeugt oder Zustände verbessert.", ["Kompetenz heißt nicht Kontrolle.", "Sie stärkt Urteilskraft und Teilhabe."], [["Akademie", "../../akademie.html"], ["Wirkungsschule-Check", "../../erleben/wirkungsschule-check/"]], [["Bildung", "../../wirkungsfelder/bildung/"]]]],
 ]);
 
+const termChapterLinks = new Map([
+  ["wirkung", [{ title: "Kapitel 10: Wirkung", href: "../../referenz/kapitel-010-wirkung/", why: "Grundlagenkapitel dazu, warum Wirkung als tatsächliche Zustandsveränderung verstanden wird und nicht als bloße Aktivität." }]],
+  ["wirkungspotenzial", [{ title: "Kapitel 11: Wirkungspotenzial", href: "../../referenz/kapitel-011-wirkungspotenzial/", why: "Erklärt, wie mögliche Wirkungspfade gelesen werden, bevor eine belastbare Wirkungsmessung vorliegt." }]],
+  ["wirkungsrueckkopplung", [{ title: "Kapitel 12: Handlung, Unterlassen und Rückkopplung", href: "../../referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/", why: "Zeigt, wie Wirkung in Preise, Regeln, Budgets und Entscheidungen zurückgeführt werden kann." }]],
+  ["wirkungstraeger", [{ title: "Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume", href: "../../referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/", why: "Ordnet, wer oder was Wirkung auslöst, wer betroffen ist und in welchem Raum Wirkung entsteht." }]],
+  ["wirkungsempfaenger", [{ title: "Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume", href: "../../referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/", why: "Ordnet, wer oder was Wirkung auslöst, wer betroffen ist und in welchem Raum Wirkung entsteht." }]],
+  ["wirkungsraum", [{ title: "Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume", href: "../../referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/", why: "Ordnet, wer oder was Wirkung auslöst, wer betroffen ist und in welchem Raum Wirkung entsteht." }]],
+  ["wirkmechanismus", [{ title: "Kapitel 20: Systemhebel, Engpässe und Interdependenzen", href: "../../referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/", why: "Vertieft, wie Wirkmechanismen in komplexen Systemen entstehen und warum einfache Ursache-Wirkung-Ketten oft nicht reichen." }]],
+  ["wirkungsnetz", [{ title: "Kapitel 20: Systemhebel, Engpässe und Interdependenzen", href: "../../referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/", why: "Vertieft, wie Wirkungen über Abhängigkeiten, Rückkopplungen und Engpässe miteinander verbunden sind." }]],
+  ["wirkungsradar", [{ title: "Kapitel 21: Das Wirkungsrad", href: "../../referenz/kapitel-021-das-wirkungsrad/", why: "Zeigt, wie Wirkungsdimensionen systematisch sichtbar gemacht und miteinander verglichen werden." }]],
+  ["wirkungslenkung", [{ title: "Kapitel 22: Wirkungslenkung", href: "../../referenz/kapitel-022-wirkungslenkung/", why: "Erklärt, wie Wirkung nicht nur gemessen, sondern in Steuerung, Anreize und Entscheidungen übersetzt wird." }]],
+  ["wirkungsrisiko", [{ title: "Kapitel 23: Wirkungsrisiko und Wirkungsresilienz", href: "../../referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/", why: "Verbindet Wirkung mit Risiko, Resilienz, Krisenfestigkeit und Zukunftsfähigkeit." }]],
+  ["wirkungsresilienz", [{ title: "Kapitel 23: Wirkungsrisiko und Wirkungsresilienz", href: "../../referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/", why: "Verbindet Wirkung mit Risiko, Resilienz, Krisenfestigkeit und Zukunftsfähigkeit." }]],
+  ["wirkungsblindheit", [{ title: "Kapitel 2: Die Maßstabskrise", href: "../../referenz/kapitel-002-die-massstabskrise/", why: "Erklärt, warum heutige Maßstäbe viele soziale, ökologische und demokratische Folgen nicht sichtbar machen." }]],
+  ["positive-netto-wirkung", [{ title: "Kapitel 30: Von Wirkung zu Messung", href: "../../referenz/kapitel-030-von-wirkung-zu-messung/", why: "Zeigt, wie positive, negative und neutrale Wirkung bewertbar werden, ohne kritische Schäden wegzurechnen." }]],
+  ["netto-wirkung", [{ title: "Kapitel 30: Von Wirkung zu Messung", href: "../../referenz/kapitel-030-von-wirkung-zu-messung/", why: "Zeigt, wie positive, negative und neutrale Wirkung bewertbar werden, ohne kritische Schäden wegzurechnen." }]],
+  ["wirkungsbewertung", [{ title: "Kapitel 30: Von Wirkung zu Messung", href: "../../referenz/kapitel-030-von-wirkung-zu-messung/", why: "Grundlagenkapitel zur Frage, wie Wirkung aus Daten, Kriterien, Grenzen und Interpretation entsteht." }]],
+  ["woek-id", [{ title: "Kapitel 31: WÖk-IDs und Indikatorenarchitektur", href: "../../referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/", why: "Erklärt die Daten- und Indikatorenlogik hinter Wirkungskennzahlen, Quellen, Einheiten und Versionierung." }]],
+  ["scorecard", [{ title: "Kapitel 32: Benchmarks, Skalen und Scorecards", href: "../../referenz/kapitel-032-benchmarks-skalen-und-scorecards/", why: "Zeigt, wie Scorecards Wirkung sichtbar machen, ohne einzelne Schwachstellen im Gesamtscore verschwinden zu lassen." }]],
+  ["benchmark", [{ title: "Kapitel 32: Benchmarks, Skalen und Scorecards", href: "../../referenz/kapitel-032-benchmarks-skalen-und-scorecards/", why: "Ordnet ein, wie Benchmarks und Vergleichsskalen im Wirkungscontrolling genutzt werden können." }]],
+  ["reverse-merit-order", [{ title: "Kapitel 33: Reverse Merit Order", href: "../../referenz/kapitel-033-reverse-merit-order/", why: "Vertieft das Nicht-Kompensationsprinzip: kritische Schäden dürfen nicht durch gute Werte an anderer Stelle verdeckt werden." }]],
+  ["nichtkompensationsprinzip", [{ title: "Kapitel 33: Reverse Merit Order", href: "../../referenz/kapitel-033-reverse-merit-order/", why: "Vertieft, warum bestimmte Schäden Grenzen setzen und nicht einfach verrechnet werden dürfen." }]],
+  ["t-sroi", [{ title: "Kapitel 34: T-SROI und systemische Transformationsmessung", href: "../../referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/", why: "Erklärt, wie Transformationsnutzen, vermiedene Schäden und systemische Wirkung als Investitionslogik gelesen werden." }]],
+  ["wirkungsdatenraum", [{ title: "Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume", href: "../../referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/", why: "Zeigt, wie Datenräume, Produktpässe und Datenschutz zusammenspielen, damit Wirkung prüfbar wird." }]],
+  ["digitaler-produktpass", [{ title: "Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume", href: "../../referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/", why: "Zeigt, wie Produktinformationen, Datenqualität und Wirkungsbewertung technisch anschlussfähig werden." }]],
+  ["wirkungssteuer", [{ title: "Kapitel 37: Das Wirkungssteuergesetz WStG", href: "../../referenz/kapitel-037-das-wirkungssteuergesetz-wstg/", why: "Ordnet ein, wie steuerliche Rückkopplung an Wirkung gedacht werden kann, ohne demokratische Kontrolle zu ersetzen." }]],
+  ["wirkungssteuergesetz", [{ title: "Kapitel 37: Das Wirkungssteuergesetz WStG", href: "../../referenz/kapitel-037-das-wirkungssteuergesetz-wstg/", why: "Ordnet ein, wie steuerliche Rückkopplung an Wirkung gedacht werden kann, ohne demokratische Kontrolle zu ersetzen." }]],
+  ["wstg", [{ title: "Kapitel 37: Das Wirkungssteuergesetz WStG", href: "../../referenz/kapitel-037-das-wirkungssteuergesetz-wstg/", why: "Ordnet ein, wie steuerliche Rückkopplung an Wirkung gedacht werden kann, ohne demokratische Kontrolle zu ersetzen." }]],
+  ["wirkungsumsatzsteuer", [{ title: "Kapitel 38: Das WUStG und die Produktwirkungssteuer", href: "../../referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/", why: "Vertieft die Logik ehrlicher Produktpreise, Produktwirkung und steuerlicher Rückkopplung." }]],
+  ["wustg", [{ title: "Kapitel 38: Das WUStG und die Produktwirkungssteuer", href: "../../referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/", why: "Vertieft die Logik ehrlicher Produktpreise, Produktwirkung und steuerlicher Rückkopplung." }]],
+  ["wirkungshaushalt", [{ title: "Kapitel 39: Wirkungshaushalt und öffentliche Mittel", href: "../../referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/", why: "Erklärt, wie öffentliche Mittel nicht nur nach Ausgabe, sondern nach vermiedenen Schäden und erzeugter Wirkung gelesen werden." }]],
+  ["wirkungsrat", [{ title: "Kapitel 40: Der Wirkungsrat", href: "../../referenz/kapitel-040-der-wirkungsrat/", why: "Beschreibt die demokratische Schutz- und Prüfarchitektur für Wirkungsdaten und Wirkungsentscheidungen." }]],
+  ["wirkungsarchitektur", [{ title: "Kapitel 41: Verwaltung, Rechtsschutz und Körperschaftslogik", href: "../../referenz/kapitel-041-verwaltung-rechtsschutz-und-koerperschaftslogik/", why: "Ordnet, welche institutionellen Schutz- und Umsetzungsstrukturen die Wirkungsökonomie braucht." }]],
+  ["nwi", [{ title: "Kapitel 44: Wirkungscontrolling im Unternehmen", href: "../../referenz/kapitel-044-wirkungscontrolling-im-unternehmen/", why: "Zeigt, wie NWI, KII, Scorecards und Assurance im Unternehmenskontext eingesetzt werden." }]],
+  ["wirkungswahrheit", [{ title: "Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit", href: "../../referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/", why: "Vertieft, warum belastbare Daten, öffentliche Wahrheit und Korrekturfähigkeit für Wirkung zentral sind." }]],
+  ["sdgs", [{ title: "Kapitel 102: Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ", href: "../../referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/", why: "Ordnet die SDGs als globalen Referenzrahmen ein und grenzt sie von Verschwörungsnarrativen ab." }]],
+  ["agenda-2030", [{ title: "Kapitel 102: Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ", href: "../../referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/", why: "Ordnet die Agenda 2030 als globalen Referenzrahmen ein und grenzt sie von Verschwörungsnarrativen ab." }]],
+  ["sdg-plus", [{ title: "Kapitel 102: Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ", href: "../../referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/", why: "Zeigt, warum die Wirkungsökonomie die offiziellen SDGs transparent um demokratische Schutzdimensionen ergänzt." }]],
+  ["wirkungsdaten", [{ title: "Kapitel 81: Wirkungsdatenräume", href: "../../referenz/kapitel-081-wirkungsdatenraeume/", why: "Vertieft, wie Wirkungsdatenräume Datenqualität, Schutzrechte und Prüfbarkeit verbinden." }]],
+  ["wirkungskompetenz", [{ title: "Kapitel 67: Bildung", href: "../../referenz/kapitel-067-bildung/", why: "Zeigt, warum Wirkungskompetenz als Bildungs- und Zukunftskompetenz verstanden wird." }]],
+  ["wirkungseinkommen", [{ title: "Kapitel 57: Wirkungseinkommen", href: "../../referenz/kapitel-057-wirkungseinkommen/", why: "Vertieft im Grundlagenwerk, wie Einkommen, automatisierte Wertschöpfung, Fondslogik und soziale Sicherung neu zusammengedacht werden." }]],
+  ["wirkungsrente", [{ title: "Kapitel 58: Wirkungsrente", href: "../../referenz/kapitel-058-wirkungsrente/", why: "Vertieft, wie Lebensleistung, Care, Erwerbsarbeit und gesellschaftliche Wirkung für Rente und Sicherung zusammengedacht werden." }]],
+  ["wirkungsfonds", [{ title: "Kapitel 59: Kapitalmärkte und Fonds", href: "../../referenz/kapitel-059-kapitalmaerkte-und-fonds/", why: "Erklärt, wie Kapital, Fonds und Rückflüsse in gesellschaftliche Stabilität und Transformation eingebunden werden können." }]],
+]);
+
+function chapterLinksForTerm(term) {
+  const explicit = termChapterLinks.get(term.slug);
+  if (explicit?.length) return explicit.map((chapter) => ({ book: "Die neue Ordnung des Wohlstands", cta: "Kapitel im Grundlagenbuch lesen", ...chapter }));
+  if (Array.isArray(term.relatedChapters) && term.relatedChapters.length) {
+    return term.relatedChapters.map((chapter) => ({
+      title: chapter,
+      href: "../../referenz/kapitel/",
+      book: "Die neue Ordnung des Wohlstands",
+      why: "Der Kapitel-Navigator führt zum passenden Abschnitt im Online-Grundlagenwerk.",
+      cta: "Im Kapitel-Navigator suchen",
+    }));
+  }
+  return [{
+    title: "Kapitel-Navigator des Grundlagenwerks",
+    href: "../../referenz/kapitel/",
+    book: "Die neue Ordnung des Wohlstands",
+    why: "Öffnet die Kapitelübersicht des Online-Buchs, wenn noch kein eindeutiger Kapitelanker für diesen Begriff hinterlegt ist.",
+    cta: "Kapitel-Navigator öffnen",
+  }];
+}
+
+function relatedChaptersBlock(term) {
+  const chapters = chapterLinksForTerm(term);
+  return `<section class="term-summary-card term-chapters" aria-labelledby="chapters-title">
+          <p class="section-eyebrow">Online-Buch</p>
+          <h2 id="chapters-title">Relevante Kapitel im Grundlagenwerk</h2>
+          <p>Diese Verweise führen in das Online-Buch <strong>Die neue Ordnung des Wohlstands</strong>. Sie vertiefen den Begriff im größeren Zusammenhang der Wirkungsökonomie.</p>
+          <div class="term-chapter-grid">
+            ${chapters.map((chapter) => `<article class="term-chapter-card">
+              <p class="section-eyebrow">${esc(chapter.book)}</p>
+              <h3>${esc(chapter.title)}</h3>
+              <p>${esc(chapter.why)}</p>
+              <a class="btn btn-secondary" href="${esc(chapter.href)}">${esc(chapter.cta)}</a>
+            </article>`).join("")}
+          </div>
+        </section>`;
+}
+
 function linkedChips(items, fallback = "Keine Einträge") {
   if (!Array.isArray(items) || items.length === 0) return `<p>${esc(fallback)}</p>`;
   return `<div class="term-chip-row">${items.map(([label, href]) => `<a class="term-chip" href="${esc(href)}">${esc(label)}</a>`).join("")}</div>`;
@@ -474,17 +557,7 @@ ${relatedDocumentsBlock(term)}
             ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
           </div>
         </section>
-        <section class="term-link-section" aria-labelledby="chapters-title">
-          <div>
-            <p class="section-eyebrow">Online-Buch</p>
-            <h2 id="chapters-title">Relevante Kapitel</h2>
-          </div>
-          <div class="term-chip-row">
-            ${(term.relatedChapters || []).length
-              ? term.relatedChapters.map((chapter) => `<span class="term-chip muted">${esc(chapter)}</span>`).join("")
-              : `<a class="term-chip" href="../../referenz/">Kapitel-Navigator öffnen</a>`}
-          </div>
-        </section>
+${relatedChaptersBlock(term)}
         <section class="meta-box">
           <h2>Version und Quelle</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
