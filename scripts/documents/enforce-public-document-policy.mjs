@@ -51,6 +51,10 @@ const blockedPhrases = [
   "Dokument bearbeiten",
   "Dateiformat DOCX",
   "Dateiformat Word",
+  "Konzept-Download",
+  "Detail-Download",
+  "Dossier-Download",
+  "Weiterarbeit",
 ];
 
 function walk(entry, predicate, out = []) {
@@ -102,6 +106,11 @@ function sanitizeText(value) {
     .replace(/Word bleibt Download/gi, "PDF bleibt Download")
     .replace(/Dateiformat DOCX/gi, "Dateiformat PDF")
     .replace(/Dateiformat Word/gi, "Dateiformat PDF")
+    .replace(/Konzept-Download/gi, "Konzept als PDF")
+    .replace(/Detail-Download/gi, "Konzept-PDF")
+    .replace(/Dossier-Download/gi, "Dossier als PDF")
+    .replace(/Weiterarbeit/gi, "Vertiefung")
+    .replace(/Herunterladen(?=<\/a>)/gi, "PDF herunterladen")
     .replace(/DOCX herunterladen/gi, "PDF herunterladen")
     .replace(/Word herunterladen/gi, "PDF herunterladen")
     .replace(/Arbeitsfassung herunterladen/gi, "PDF herunterladen")

@@ -228,7 +228,7 @@ function topicRows(config) {
 function compactAccess(config) {
   const cards = [];
   if (config.concept) {
-    cards.push(card(config, "Konzept", "Konzeptpapier", "Grundlage online lesen und bei Bedarf als Word-Datei exportieren.", [
+    cards.push(card(config, "Konzept", "Konzeptpapier", "Grundlage online lesen; PDF-Fassungen dienen Druck, Zitation und Weitergabe.", [
       linkButton(config, "Onlinefassung lesen", config.concept[1], "text-link"),
       ...(config.extraDownloads || []).filter(([label]) => /Konzept/i.test(label)).map(([label, href]) => linkButton(config, label, href, "text-link")),
     ]));
@@ -253,11 +253,11 @@ function compactAccess(config) {
 function topicMatrix(config) {
   const rows = topicRows(config);
   if (!rows.length) return "";
-  return `<div class="table-wrap publication-matrix-wrap"><table class="data-table publication-matrix"><thead><tr><th>Unterbereich</th><th>Detailkonzept</th><th>Detail-Download</th><th>Dossier</th><th>Dossier-Download</th></tr></thead><tbody>${rows.map((row) => {
+  return `<div class="table-wrap publication-matrix-wrap"><table class="data-table publication-matrix"><thead><tr><th>Unterbereich</th><th>Detailkonzept</th><th>Konzept-PDF</th><th>Dossier</th><th>Dossier-PDF</th></tr></thead><tbody>${rows.map((row) => {
     const detailOnline = exists(row.detailRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.detailRel.replace(/index\.html$/, ""))}">Konzept lesen</a>` : "";
     const dossierOnline = exists(row.dossierRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierRel.replace(/index\.html$/, ""))}">Dossier lesen</a>` : "";
-    const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
-    const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
+    const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "PDF-Gesamtset" : "PDF"}</a>` : "PDF folgt";
+    const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "PDF-Gesamtset" : "PDF"}</a>` : "PDF folgt";
     return `<tr><th scope="row">${escapeHtml(row.title)}</th><td>${detailOnline}</td><td>${detailDownload}</td><td>${dossierOnline}</td><td>${dossierDownload}</td></tr>`;
   }).join("")}</tbody></table></div>`;
 }

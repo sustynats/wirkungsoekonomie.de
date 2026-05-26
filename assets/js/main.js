@@ -1044,41 +1044,41 @@ function initPublicationAccessFallback() {
       prefixes: ["/wirkungsfelder/produkte-konsum/"],
       detail: "/wirkungsfelder/produkte-konsum/detailkonzepte/",
       dossier: "/wirkungsfelder/produkte-konsum/dossiers/",
-      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.docx",
+      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.pdf",
     },
     {
       prefixes: ["/werkzeuge/impact-controlling/"],
       detail: "/werkzeuge/impact-controlling/detailkonzepte/",
       dossier: "/werkzeuge/impact-controlling/dossiers/",
-      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.docx",
+      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/staat-recht-demokratie/", "/werkstatt/dossiers/staat-recht-demokratie/"],
       detail: "/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/",
       dossier: "/werkstatt/dossiers/staat-recht-demokratie/dossiers/",
-      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/wirtschaft-unternehmen/", "/werkstatt/dossiers/wirtschaft-unternehmen/"],
       detail: "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/",
       dossier: "/wirkungsfelder/wirtschaft-unternehmen/dossiers/",
-      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/wohnen-stadt/"],
       detail: "/wirkungsfelder/wohnen-stadt/detailkonzepte/",
       dossier: "/wirkungsfelder/wohnen-stadt/dossiers/",
-      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/arbeit-einkommen/"],
       detail: "#detailkonzept",
       dossier: "#dossier",
-      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx",
-      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.pdf",
+      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.pdf",
       fallbackDetail: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
       fallbackDossier: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
     },
@@ -1086,8 +1086,8 @@ function initPublicationAccessFallback() {
       prefixes: ["/wirkungsfelder/rente-soziale-sicherung/"],
       detail: "/wirkungsfelder/rente-soziale-sicherung/detailkonzepte/",
       dossier: "/wirkungsfelder/rente-soziale-sicherung/dossiers/",
-      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.docx",
-      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.pdf",
+      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.pdf",
     },
   ];
 
@@ -1112,8 +1112,8 @@ function initPublicationAccessFallback() {
   const cards = [
     ["Onlinefassung", "Detailkonzepte", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Detailkonzept lesen"],
     ["Praxisfassung", "Dossiers", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Dossier lesen"],
-    ["Download", "Konzept-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.detailDownload, "Herunterladen"],
-    ["Download", "Dossier-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.dossierDownload, "Herunterladen"],
+    ["PDF", "Detailkonzepte als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.detailDownload, "PDF herunterladen"],
+    ["PDF", "Dossiers als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.dossierDownload, "PDF herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {

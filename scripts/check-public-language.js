@@ -45,6 +45,7 @@ const SCAN_TARGETS = [
   "wissen",
   "workflow.html",
   "assets/downloads",
+  "assets/js/main.js",
 ];
 
 const BLOCKED_TERMS = [
@@ -79,6 +80,10 @@ const BLOCKED_TERMS = [
   "Dokument bearbeiten",
   "Dateiformat DOCX",
   "Dateiformat Word",
+  "Konzept-Download",
+  "Detail-Download",
+  "Dossier-Download",
+  "Weiterarbeit",
   "PDF und DOCX",
   "PDF/DOCX",
   "DOCX",
@@ -95,7 +100,7 @@ function walk(entry, files = []) {
       if (child.name === "node_modules" || child.name === ".git") continue;
       walk(path.join(entry, child.name), files);
     }
-  } else if (entry.endsWith(".html")) {
+  } else if (entry.endsWith(".html") || entry.endsWith(".js")) {
     files.push(full);
   }
   return files;
