@@ -415,6 +415,16 @@ ${main}
 }
 
 function documentJsonLd(document) {
+  const downloadUrl = document.pdfUrl
+    ? siteLink(document.pdfUrl)
+    : document.allowPublicDocx === true && document.docxUrl
+      ? siteLink(document.docxUrl)
+      : undefined;
+  const encodingFormat = document.pdfUrl
+    ? "application/pdf"
+    : document.allowPublicDocx === true && document.docxUrl
+      ? "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      : "text/html";
   return `<script type="application/ld+json">${JSON.stringify(
     {
       "@context": "https://schema.org",
@@ -424,8 +434,8 @@ function documentJsonLd(document) {
       about: { "@type": "Thing", name: "Wirkungsökonomie" },
       isAccessibleForFree: true,
       url: siteLink(document.onlineUrl),
-      downloadUrl: document.pdfUrl ? siteLink(document.pdfUrl) : undefined,
-      encodingFormat: document.pdfUrl ? "application/pdf" : "text/html",
+      downloadUrl,
+      encodingFormat,
       dateModified: document.stand,
       description: publicDocumentSummary(document),
     },
@@ -441,6 +451,7 @@ function documentActions(document, primary = true) {
   return `<div class="download-actions">
     ${primary && document.onlineUrl ? `<a class="btn btn-primary" href="${escapeHtml(document.onlineUrl)}">Onlinefassung lesen</a>` : ""}
     ${document.pdfUrl ? `<a class="btn btn-secondary" href="${escapeHtml(document.pdfUrl)}" target="_blank" rel="noopener">PDF herunterladen</a>` : ""}
+    ${document.docxUrl && document.allowPublicDocx === true ? `<a class="btn btn-secondary" href="${escapeHtml(document.docxUrl)}" target="_blank" rel="noopener">DOCX herunterladen</a>` : ""}
     ${document.relatedTools?.[0] ? `<a class="text-link" href="${escapeHtml(document.relatedTools[0])}">${escapeHtml(relatedActionLabel(document.relatedTools[0]))}</a>` : ""}
   </div>`;
 }
@@ -532,8 +543,16 @@ function buildDownloadsPage() {
         "@type": "CreativeWork",
         name: document.title,
         url: siteLink(document.onlineUrl),
-        downloadUrl: document.pdfUrl ? siteLink(document.pdfUrl) : undefined,
-        encodingFormat: document.pdfUrl ? "application/pdf" : "text/html",
+        downloadUrl: document.pdfUrl
+          ? siteLink(document.pdfUrl)
+          : document.allowPublicDocx === true && document.docxUrl
+            ? siteLink(document.docxUrl)
+            : undefined,
+        encodingFormat: document.pdfUrl
+          ? "application/pdf"
+          : document.allowPublicDocx === true && document.docxUrl
+            ? "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            : "text/html",
       })),
     },
     null,
@@ -662,6 +681,7 @@ function buildDocumentPage(document) {
           </div>
           <div class="hero-actions">
             ${document.pdfUrl ? `<a class="btn btn-primary" href="${escapeHtml(document.pdfUrl)}" target="_blank" rel="noopener">PDF herunterladen</a>` : ""}
+            ${document.docxUrl && document.allowPublicDocx === true ? `<a class="btn ${document.pdfUrl ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(document.docxUrl)}" target="_blank" rel="noopener">DOCX herunterladen</a>` : ""}
             <a class="btn btn-secondary" href="/downloads.html">Zur Bibliothek</a>
           </div>
         </div>

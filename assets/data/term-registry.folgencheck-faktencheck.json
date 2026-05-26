@@ -1,0 +1,77 @@
+[
+  {
+    "id": "folgencheck",
+    "label": "Folgencheck",
+    "type": "woek-term",
+    "url": "/begriffe/folgencheck/",
+    "definition": "Ein Folgencheck prüft im Vorfeld, welche Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume in einer Aussage, Entscheidung, Maßnahme, Technologie, einem Produkt oder Kapitalfluss angelegt sind.",
+    "related": [
+      "faktencheck",
+      "wirkstoff",
+      "wirkungspotenzial",
+      "wirkungsraum",
+      "wirkungspfad"
+    ]
+  },
+  {
+    "id": "faktencheck",
+    "label": "Faktencheck",
+    "type": "anschlussbegriff",
+    "url": "/begriffe/faktencheck/",
+    "definition": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
+    "related": [
+      "folgencheck",
+      "quellenklarheit",
+      "medienwirkung"
+    ]
+  },
+  {
+    "id": "wirkstoff",
+    "label": "Wirkstoff",
+    "type": "praezisierungsbegriff",
+    "url": "/begriffe/wirkstoff/",
+    "definition": "Ein Wirkstoff ist ein Auslöser mit Wirkungspotenzial. Er ist nicht die Wirkung selbst.",
+    "related": [
+      "folgencheck",
+      "wirkungspotenzial",
+      "wirkungsraum"
+    ]
+  },
+  {
+    "id": "wirkungsraum",
+    "label": "Wirkungsraum",
+    "type": "praezisierungsbegriff",
+    "url": "/begriffe/wirkungsraum/",
+    "definition": "Ein Wirkungsraum ist der Kontext, in dem Wirkung entstehen kann.",
+    "related": [
+      "folgencheck",
+      "wirkstoff",
+      "wirkungspfad"
+    ]
+  },
+  {
+    "id": "wirkungspfad",
+    "label": "Wirkungspfad",
+    "type": "praezisierungsbegriff",
+    "url": "/begriffe/wirkungspfad/",
+    "definition": "Ein Wirkungspfad beschreibt, wie aus einem Wirkstoff über bestimmte Mechanismen Wirkung entstehen kann.",
+    "related": [
+      "folgencheck",
+      "wirkungspotenzial",
+      "wirkungsraum"
+    ]
+  },
+  {
+    "id": "wirkungspotenzial",
+    "label": "Wirkungspotenzial",
+    "type": "praezisierungsbegriff",
+    "url": "/begriffe/wirkungspotenzial/",
+    "definition": "Wirkungspotenzial ist die Möglichkeit, dass aus einem Wirkstoff Wirkung entstehen kann. Es ist noch keine eingetretene Wirkung.",
+    "related": [
+      "folgencheck",
+      "wirkstoff",
+      "wirkungsraum",
+      "wirkungspfad"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "faktencheck": {
+    "term": "Faktencheck",
+    "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
+    "definition": "Faktenchecks vergleichen Behauptungen mit überprüfbaren Quellen, Daten, Dokumenten oder Expert:innenwissen. Sie sind notwendig, prüfen aber nicht automatisch, welche Wirkung eine Aussage auslösen kann.",
+    "related": [
+      "Folgencheck",
+      "Medienwirkung",
+      "Quellenklarheit"
+    ]
+  },
+  "folgencheck": {
+    "term": "Folgencheck",
+    "shortDefinition": "Ein Folgencheck prüft im Vorfeld, welche Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume in einem Gegenstand angelegt sind.",
+    "definition": "Der Folgencheck ist ein vorsorgendes Prüfverfahren der Wirkungsökonomie. Er fragt nicht nur, ob etwas stimmt, erlaubt oder profitabel ist, sondern was dadurch direkt, indirekt, zeitverzögert oder systemisch ausgelöst werden kann.",
+    "related": [
+      "Faktencheck",
+      "Wirkstoff",
+      "Wirkungspotenzial",
+      "Wirkungsraum",
+      "Wirkungspfad",
+      "Wirkungsrisiko"
+    ]
+  },
+  "wirkstoff": {
+    "term": "Wirkstoff",
+    "shortDefinition": "Ein Wirkstoff ist ein Auslöser mit Wirkungspotenzial.",
+    "definition": "Ein Wirkstoff kann in Sprache, Produkten, Regeln, Preisen, Algorithmen oder Kapitalflüssen liegen. Er ist nicht die Wirkung selbst, sondern der mögliche Auslöser.",
+    "related": [
+      "Folgencheck",
+      "Wirkungspotenzial",
+      "Wirkungsraum"
+    ]
+  },
+  "wirkungsraum": {
+    "term": "Wirkungsraum",
+    "shortDefinition": "Ein Wirkungsraum ist der Kontext, in dem Wirkung entstehen kann.",
+    "definition": "Wirkungsräume sind zum Beispiel Öffentlichkeit, Markt, Demokratie, Gesundheit, Bildung, Arbeit, Kommune, Lieferkette, Ökosystem, Kapitalmarkt oder digitaler Raum.",
+    "related": [
+      "Folgencheck",
+      "Wirkstoff",
+      "Wirkungspfad"
+    ]
+  },
+  "wirkungspfad": {
+    "term": "Wirkungspfad",
+    "shortDefinition": "Ein Wirkungspfad beschreibt, wie aus einem Wirkstoff über bestimmte Mechanismen Wirkung entstehen kann.",
+    "definition": "Der Wirkungspfad verbindet Gegenstand, Wirkstoff, Wirkungsempfänger, Wirkungsraum und mögliche Zustandsveränderung.",
+    "related": [
+      "Folgencheck",
+      "Wirkungspotenzial",
+      "Wirkungsraum"
+    ]
+  },
+  "wirkungspotenzial": {
+    "term": "Wirkungspotenzial",
+    "shortDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung entstehen kann.",
+    "definition": "Wirkungspotenzial ist noch keine eingetretene Wirkung. Es beschreibt, welche Zustandsveränderungen durch einen Wirkstoff plausibel werden könnten.",
+    "related": [
+      "Folgencheck",
+      "Wirkstoff",
+      "Wirkungsraum",
+      "Wirkungspfad"
+    ]
+  }
+}

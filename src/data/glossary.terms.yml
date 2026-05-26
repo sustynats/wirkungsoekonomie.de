@@ -804,29 +804,75 @@ terms:
     glossaryOrderKey: "transformationswirkung"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: faktencheck
+    canonicalLabel: "Faktencheck"
+    slug: "faktencheck"
+    status: "anschlussbegriff"
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
+    sourceSection: "Begriffssystem Folgencheck/Faktencheck"
+    shortDefinition: "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird."
+    hoverDefinition: "Faktencheck fragt: Stimmt das? Er prüft Quellen, Daten, Belege und Kontext."
+    longDefinition: "Faktenchecks vergleichen Behauptungen mit überprüfbaren Quellen, Daten, Dokumenten oder Expert:innenwissen. Sie sind notwendig, prüfen aber nicht automatisch, welche Wirkung eine Aussage auslösen kann."
+    usageNote: "Als Anschlussbegriff verwenden: Faktencheck ist Grundlage, Folgencheck ist Ergänzung."
+    doNotConfuseWith: ["Folgencheck", "Wirkungsbewertung", "Wahrheitsmonopol"]
+    synonyms: ["Factchecking", "Quellenprüfung"]
+    relatedTerms: ["folgencheck", "medienwirkung", "wirkungspotenzial", "resonanzraum", "diskursqualitaet"]
+    relatedDocuments: ["folgencheck-faktencheck"]
+    examples: ["Eine Statistik wird gegen Primärquellen geprüft.", "Ein Zitat wird im Originalkontext gelesen."]
+    preferredUsage: "Faktencheck prüft Richtigkeit; Folgencheck prüft mögliche Wirkungen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "faktencheck"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
+  - termId: folgencheck
+    canonicalLabel: "Folgencheck"
+    slug: "folgencheck"
+    status: "führender-begriff"
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
+    sourceSection: "Begriffssystem Folgencheck/Faktencheck"
+    shortDefinition: "Ein Folgencheck prüft im Vorfeld, welche Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume in einem Gegenstand angelegt sind."
+    hoverDefinition: "Folgencheck fragt: Was kann das auslösen - bevor Schäden oder Systemfolgen vollständig eingetreten sind?"
+    longDefinition: "Der Folgencheck ist ein vorsorgendes Ex-ante-Prüfverfahren der Wirkungsökonomie. Er fragt nicht nur, ob etwas stimmt, erlaubt oder profitabel ist, sondern welche Folgen dadurch direkt, indirekt, zeitverzögert oder systemisch ausgelöst werden können."
+    usageNote: "Als vorsorgende Wirkungsprüfung verwenden, nicht als nachträgliches Urteil."
+    doNotConfuseWith: ["Faktencheck", "Zensur", "Personenbewertung", "Wahrheitsmonopol"]
+    synonyms: ["WÖk-Folgencheck", "Wirkungsfolgencheck", "Wirkungsfolgenabschätzung"]
+    relatedTerms: ["faktencheck", "wirkstoff", "wirkungspotenzial", "wirkungspfad", "wirkungsraum", "wirkungsrisiko", "wirkungsbewertung", "wirkungsrueckkopplung", "medienwirkung", "resonanzraum"]
+    relatedDocuments: ["folgencheck-faktencheck"]
+    examples: ["Eine politische Aussage wird auf betroffene Wirkungsräume geprüft.", "Ein Produktclaim wird auf Wirkstoffe und Datenlücken geprüft."]
+    preferredUsage: "Der Folgencheck macht vor einer Entscheidung sichtbar, welche Wirkungen plausibel ausgelöst werden können."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "folgencheck"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
   - termId: wirkstoff
     canonicalLabel: "Wirkstoff"
     slug: "wirkstoff"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial."
-    hoverDefinition: "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus."
-    longDefinition: "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung."
-    usageNote: "Nur als Analogie, nicht als harte Fachkategorie."
-    doNotConfuseWith: ["Wirkung", "Wirkungspotenzial", "Wirkmechanismus"]
-    synonyms: ["gesellschaftlicher Wirkstoff"]
-    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungspfad", "resonanzraum"]
-    relatedDocuments: []
-    examples: []
-    preferredUsage: "gesellschaftlicher Wirkstoff als Analogie"
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
+    sourceSection: "Begriffssystem Folgencheck/Faktencheck"
+    shortDefinition: "Ein Wirkstoff ist ein Auslöser mit Wirkungspotenzial."
+    hoverDefinition: "Ein Wirkstoff kann in Sprache, Produkten, Regeln, Preisen, Algorithmen oder Kapitalflüssen liegen."
+    longDefinition: "Ein Wirkstoff ist nicht die Wirkung selbst, sondern ein möglicher Auslöser. In der Wirkungsökonomie beschreibt der Begriff, welche Elemente eines Gegenstands Wirkungspotenziale entfalten können."
+    usageNote: "Als gesellschaftliche Analogie verwenden: Auslöser sichtbar machen, nicht Wirkung behaupten."
+    doNotConfuseWith: ["Wirkung", "Wirkungsnachweis", "medizinischer Wirkstoff"]
+    synonyms: ["gesellschaftlicher Wirkstoff", "Wirkungsauslöser"]
+    relatedTerms: ["folgencheck", "wirkungspotenzial", "wirkungspfad", "wirkungsraum", "wirkmechanismus"]
+    relatedDocuments: ["folgencheck-faktencheck"]
+    examples: ["Ein Angstframe in Sprache.", "Ein Preisrabatt mit Rebound-Potenzial.", "Ein Algorithmus, der Reichweite verstärkt."]
+    preferredUsage: "Wirkstoff als möglicher Auslöser mit Wirkungspotenzial."
     deprecatedUsage: ["Wirkstoff als Wirkung"]
     reviewStatus: "approved"
     glossaryOrderKey: "wirkstoff"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-26"
   - termId: wirkung
     canonicalLabel: "Wirkung"
     slug: "wirkung"
@@ -1176,48 +1222,48 @@ terms:
     canonicalLabel: "Wirkungspfad"
     slug: "wirkungspfad"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Ein Wirkungspfad beschreibt die nachvollziehbare Kette von Auslöser, Bedingungen, Wirkungspotenzial und möglicher Zustandsveränderung."
-    hoverDefinition: "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann."
-    longDefinition: "Wirkungspfade helfen, Annahmen, Daten, Risiken und Rückkopplungen in einer Wirkungsanalyse transparent zu machen."
-    usageNote: "Bei Medien und Sprache oft Wirkungspotenzial, nicht Wirkung."
-    doNotConfuseWith: ["Wirkung", "Kausalnachweis"]
-    synonyms: ["Wirkpfad"]
-    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungsnetz"]
-    relatedDocuments: []
-    examples: []
-    preferredUsage: "Wirkungspfad als analytische Pfadbeschreibung verwenden."
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
+    sourceSection: "Begriffssystem Folgencheck/Faktencheck"
+    shortDefinition: "Ein Wirkungspfad beschreibt, wie aus einem Wirkstoff über bestimmte Mechanismen Wirkung entstehen kann."
+    hoverDefinition: "Der Wirkungspfad verbindet Gegenstand, Wirkstoff, Wirkungsempfänger, Wirkungsraum und mögliche Zustandsveränderung."
+    longDefinition: "Wirkungspfade machen sichtbar, über welche Mechanismen Folgen entstehen können. Sie zeigen Annahmen, Datenlücken, zeitliche Verzögerungen, indirekte Effekte und mögliche Rückkopplungen."
+    usageNote: "Bei Ex-ante-Prüfungen als nachvollziehbare Pfadbeschreibung verwenden."
+    doNotConfuseWith: ["Kausalnachweis", "fertige Prognose", "Wirkung"]
+    synonyms: ["Wirkpfad", "Wirkungskette"]
+    relatedTerms: ["folgencheck", "wirkstoff", "wirkungspotenzial", "wirkungsraum", "wirkmechanismus"]
+    relatedDocuments: ["folgencheck-faktencheck"]
+    examples: ["Frame -> Emotion -> Teilen -> Polarisierungspotenzial.", "Rabatt -> Mehrkauf -> Ressourcenverbrauch."]
+    preferredUsage: "Wirkungspfad als plausible, prüfbare Pfadannahme verwenden."
     deprecatedUsage: []
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungspfad"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-26"
   - termId: wirkungspotenzial
     canonicalLabel: "Wirkungspotenzial"
     slug: "wirkungspotenzial"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann."
-    hoverDefinition: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung."
-    longDefinition: "Wirkungspotenzial beschreibt erwartbare oder mögliche Zustandsveränderungen unter bestimmten Bedingungen. Es braucht spätere Prüfung, ob Wirkung tatsächlich eingetreten ist."
-    usageNote: "Nicht mit eingetretener Wirkung verwechseln."
-    doNotConfuseWith: ["Wirkung", "Wirkungsnachweis", "Absicht"]
-    synonyms: ["Wirkpotenzial"]
-    relatedTerms: ["wirkung", "wirkungspfad", "wirkungsrisiko", "wirkstoff"]
-    relatedDocuments: []
-    examples: []
-    preferredUsage: "Bei erwarteter, möglicher oder wahrscheinlicher Wirkung verwenden."
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
+    sourceSection: "Begriffssystem Folgencheck/Faktencheck"
+    shortDefinition: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung entstehen kann."
+    hoverDefinition: "Wirkungspotenzial ist noch keine eingetretene Wirkung. Es beschreibt, welche Zustandsveränderungen plausibel werden könnten."
+    longDefinition: "Wirkungspotenzial beschreibt mögliche oder erwartbare Zustandsveränderungen unter bestimmten Bedingungen. Es ist besonders wichtig für vorsorgende Prüfungen, weil Schäden, Risiken oder positive Chancen sichtbar werden können, bevor sie vollständig eingetreten sind."
+    usageNote: "Bei möglichen, plausiblen oder erwartbaren Folgen verwenden; nie als endgültigen Wirkungsnachweis ausgeben."
+    doNotConfuseWith: ["Wirkung", "Wirkungsnachweis", "Faktencheck", "finaler Score"]
+    synonyms: ["Wirkpotenzial", "Folgenpotenzial"]
+    relatedTerms: ["folgencheck", "wirkstoff", "wirkungspfad", "wirkungsraum", "wirkungsrisiko", "wirkung"]
+    relatedDocuments: ["folgencheck-faktencheck"]
+    examples: ["Ein Beitrag kann Vertrauens-, Polarisierungs- oder Lernpotenzial haben.", "Ein Produkt kann Gesundheits- oder Rebound-Potenzial haben."]
+    preferredUsage: "Wirkungspotenzial als Möglichkeit, nicht als Nachweis verwenden."
     deprecatedUsage: ["Potenzial als Wirkung"]
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungspotenzial"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-26"
   - termId: wirkungsradar
     canonicalLabel: "Wirkungsradar"
     slug: "wirkungsradar"
@@ -1383,25 +1429,25 @@ terms:
     canonicalLabel: "Wirkungsraum"
     slug: "wirkungsraum"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Ein Wirkungsraum ist ein Bereich, in dem Entscheidungen Zustände für Mensch, Planet oder Demokratie verändern."
-    hoverDefinition: "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet."
-    longDefinition: "Wohnen, Bildung, Gesundheit, Medien, Mobilität, Kultur oder Finanzsysteme können Wirkungsräume sein."
-    usageNote: "Nicht mit Zielgruppe gleichsetzen."
-    doNotConfuseWith: ["Marktsegment", "Zielgruppe"]
-    synonyms: []
-    relatedTerms: ["wirkungsempfaenger", "wirkungspfad", "wirkungsarchitektur"]
-    relatedDocuments: []
-    examples: ["Wohnen", "Medien", "Mobilität"]
-    preferredUsage: "Als systemischen Raum von Wirkung verwenden."
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
+    sourceSection: "Begriffssystem Folgencheck/Faktencheck"
+    shortDefinition: "Ein Wirkungsraum ist der Kontext, in dem Wirkung entstehen kann."
+    hoverDefinition: "Wirkungsräume sind zum Beispiel Öffentlichkeit, Markt, Demokratie, Gesundheit, Bildung, Arbeit, Kommune, Lieferkette, Ökosystem oder digitaler Raum."
+    longDefinition: "Ein Wirkungsraum beschreibt, wo Wirkstoffe und Wirkungspfade Folgen entfalten können. Er kann räumlich, sozial, institutionell, ökologisch, medial, digital oder wirtschaftlich verstanden werden."
+    usageNote: "Bei Folgenchecks nutzen, um betroffene Kontexte sauber zu benennen."
+    doNotConfuseWith: ["Zielgruppe", "Marktsegment", "bloßer Ort"]
+    synonyms: ["Folgenraum", "Wirkungsfeld im engeren Kontext"]
+    relatedTerms: ["folgencheck", "wirkstoff", "wirkungspfad", "wirkungspotenzial", "wirkungsempfaenger"]
+    relatedDocuments: ["folgencheck-faktencheck"]
+    examples: ["Öffentlichkeit", "Kommune", "Lieferkette", "Kapitalmarkt", "Schule"]
+    preferredUsage: "Wirkungsraum als Kontext möglicher Folgen verwenden."
     deprecatedUsage: []
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungsraum"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-26"
   - termId: wirkungssteuer
     canonicalLabel: "Wirkungssteuer"
     slug: "wirkungssteuer"
