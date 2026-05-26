@@ -70,6 +70,16 @@ function siteLink(value) {
   return `${siteUrl}${normalizePath(value)}`;
 }
 
+function displayStand(document) {
+  const value = String(document?.stand || "").trim();
+  if (!value) return "nicht hinterlegt";
+  if (/^\d{4}$/.test(value)) {
+    if (value === "2026") return "Mai 2026";
+    return `Jahr ${value} · genauer Stand offen`;
+  }
+  return value;
+}
+
 function slugToLabel(value) {
   return String(value || "")
     .replace(/^\/|\/$/g, "")
@@ -390,6 +400,7 @@ function pageShell({ title, description, canonicalPath, main, extraHead = "" }) 
         <a href="/">Start</a>
         <a href="/verstehen.html">Verstehen</a>
         <a href="/wirkungsfelder/">Wirkungsfelder</a>
+        <a href="/fuer/">Für wen?</a>
         <a href="/erleben.html">Ausprobieren</a>
         <a href="/akademie.html">Akademie</a>
         <a href="/downloads.html">Bibliothek</a>
@@ -468,7 +479,7 @@ function documentCard(document) {
     <dl class="download-meta">
       <div><dt>Rolle</dt><dd>${escapeHtml(role.label)}</dd></div>
       <div><dt>Umfang</dt><dd>${escapeHtml(scope.label)}</dd></div>
-      <div><dt>Stand</dt><dd>${escapeHtml(document.stand)}</dd></div>
+      <div><dt>Stand</dt><dd>${escapeHtml(displayStand(document))}</dd></div>
       ${document.fileSize ? `<div><dt>Dateigröße</dt><dd>${escapeHtml(document.fileSize)}</dd></div>` : ""}
     </dl>
     <p class="card-text">${escapeHtml(summary)}</p>
@@ -650,7 +661,7 @@ function buildDocumentPage(document) {
           <h1 class="hero-title">${escapeHtml(document.title)}</h1>
           <p class="hero-subtitle">${escapeHtml(publicDocumentSummary(document))}</p>
           <dl class="download-meta document-hero-meta">
-            <div><dt>Stand</dt><dd>${escapeHtml(document.stand)}</dd></div>
+            <div><dt>Stand</dt><dd>${escapeHtml(displayStand(document))}</dd></div>
             <div><dt>Status</dt><dd>${document.isArchive ? "Archiv" : "Aktuelle Onlinefassung"}</dd></div>
             <div><dt>Umfang</dt><dd>${escapeHtml(scope.label)}</dd></div>
             <div><dt>Autorin</dt><dd>Natalie Weber</dd></div>
@@ -706,7 +717,7 @@ function buildDocumentPage(document) {
               <h2>Material herunterladen oder weiter lesen.</h2>
               <p>Diese Onlinefassung ist der öffentliche Einstieg. Die Downloadfassung steht ergänzend zur Verfügung.</p>
               ${documentActions(document, false)}
-              <p class="card-text">Referenz: Wirkungsökonomie. Autorin: Natalie Weber. Stand: ${escapeHtml(document.stand)}.</p>
+              <p class="card-text">Referenz: Wirkungsökonomie. Autorin: Natalie Weber. Stand: ${escapeHtml(displayStand(document))}.</p>
             </section>
           </article>
         </div>

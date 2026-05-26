@@ -10,7 +10,7 @@ Stand: 2026-05-26
 - Archivdokumente: 0
 - Dokumente mit Onlinefassung: 29
 - Aktuelle PDF-only Dokumente: 0
-- Rang- und Paketdateien in `assets/downloads/`: 368
+- Rang- und Paketdateien in `assets/downloads/`: 364
 
 ## Umfangseinordnung
 
