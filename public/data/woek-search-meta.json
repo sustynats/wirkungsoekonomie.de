@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T08:02:54.913Z",
+  "generatedAt": "2026-05-26T08:32:03.592Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -33,7 +33,7 @@
       "relatedDocuments": [
         "sdg-sdgplus-referenzrahmen"
       ],
-      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
       "searchBoost": 110
     },
     "/begriffe/archetyp/": {
@@ -421,7 +421,7 @@
       "relatedDocuments": [
         "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"
       ],
-      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
       "searchBoost": 140
     },
     "/begriffe/sdgs/": {
@@ -438,7 +438,7 @@
       "relatedDocuments": [
         "sdg-sdgplus-referenzrahmen"
       ],
-      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
       "searchBoost": 110
     },
     "/begriffe/social-credit/": {
@@ -472,7 +472,7 @@
       "relatedDocuments": [
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
       "searchBoost": 110
     },
     "/begriffe/stranded-assets/": {
@@ -542,7 +542,7 @@
         "woek_wohnen_stadt_konzeptpapier_v0_1",
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ],
-      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.docx",
+      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.pdf",
       "searchBoost": 110
     },
     "/begriffe/wirkmechanismus/": {
@@ -821,7 +821,7 @@
       "relatedDocuments": [
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
       "searchBoost": 110
     },
     "/begriffe/wirkungspotenzial/": {
@@ -1051,7 +1051,7 @@
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3",
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
       "searchBoost": 110
     },
     "/begriffe/wirkungswahrheit/": {
@@ -1083,7 +1083,7 @@
       "relatedDocuments": [
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
       "searchBoost": 110
     },
     "/begriffe/wohnwirkung/": {
@@ -1100,7 +1100,7 @@
       "relatedDocuments": [
         "woek_wohnen_stadt_gesamtdossier_v0_1"
       ],
-      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.docx",
+      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.pdf",
       "searchBoost": 110
     },
     "/begriffe/woek-id/": {
@@ -1356,6 +1356,51 @@
       "relatedFields": [
         "/wirkungsfelder/finanzsystem-kapital/",
         "/wirkungsfelder/wirtschaft-unternehmen/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltiger-einzelhandel/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2023",
+      "sectionId": "document-nachhaltiger-einzelhandel",
+      "documentId": "nachhaltiger-einzelhandel",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "kreislaufwirtschaft",
+        "sdgs"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/",
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltigkeitstransformation-im-handwerk/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2023",
+      "sectionId": "document-nachhaltigkeitstransformation-im-handwerk",
+      "documentId": "nachhaltigkeitstransformation-im-handwerk",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "sdgs",
+        "kreislaufwirtschaft",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/",
+        "/wirkungsfelder/produkte-konsum/"
       ],
       "relatedTools": [
         "/werkzeuge/impact-controlling/"
@@ -1718,6 +1763,28 @@
       ],
       "relatedTools": [
         "/erleben.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2023",
+      "sectionId": "document-nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+      "documentId": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+      "relatedTerms": [
+        "sdgs",
+        "esg",
+        "nachhaltigkeit",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
       ],
       "sourceFile": "assets/data/document-registry.json",
       "searchBoost": 138

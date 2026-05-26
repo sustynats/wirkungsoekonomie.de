@@ -6,7 +6,7 @@ Stand: 2026-05-26
 
 - Dateien im lokalen Dokumentenbestand: 581
 - Review-Kandidaten nach Heuristik: 136
-- In diesem Lauf importiert: 15
+- In diesem Lauf importiert: 18
 - Blockiert: 0
 - Weiter review-pflichtig: 116
 
@@ -17,6 +17,9 @@ Die Heuristik schließt private, amtliche und offensichtlich fremde Dateien aus.
 | id | Titel | PDF | Absätze | Quelle |
 | --- | --- | --- | ---: | --- |
 | nachhaltiges-marketing-mix | Nachhaltiges Marketing-Mix | bestehende PDF übernommen | 194 | `/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Downloads/Nachhaltiges Marketing-Mix - Natalie Weber.docx` |
+| nachhaltiger-einzelhandel | Nachhaltiger Einzelhandel | PDF aus Textauszug erzeugt | 138 | `/Users/hagen/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents/Nachhaltiger Einzelhandel.epub` |
+| nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen | Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen | PDF aus Textauszug erzeugt | 214 | `/Users/hagen/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents/Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen.epub` |
+| nachhaltigkeitstransformation-im-handwerk | Nachhaltigkeitstransformation im Handwerk | PDF aus Textauszug erzeugt | 372 | `/Users/hagen/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents/Nachhaltigkeitstransformation im Handwerk.epub` |
 | nachhaltigkeit-systemarchitektur | Nachhaltigkeit als Systemarchitektur | PDF aus Textauszug erzeugt | 216 | `/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Desktop/Nachhaltigkeit-Systemarchitektur.docx` |
 | nachhaltigkeit-kapitalzentriertes-steuerungsmodell | Warum Nachhaltigkeit im kapitalszentrierten Steuerungsmodell strukturell unterbestimmt bleibt | PDF aus Textauszug erzeugt | 251 | `/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Desktop/Warum Nachhaltigkeit im kapitalszentrierten Steuerungsmodell strukturell unterbestimmt bleibt.docx` |
 | groesster-denkfehler-klimadebatte | Der größte Denkfehler in der Klimadebatte | PDF aus Textauszug erzeugt | 132 | `/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Desktop/Der größte Denkfehler in der Klimadebatte.docx` |

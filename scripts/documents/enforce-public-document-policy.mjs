@@ -97,6 +97,11 @@ function sanitizeText(value) {
     .replace(/PDF\/DOCX/gi, "PDF")
     .replace(/DOCX und PDF/gi, "PDF")
     .replace(/Word und PDF/gi, "PDF")
+    .replace(/Word\/PDFs/gi, "PDFs")
+    .replace(/PDF\/PDFs/gi, "PDFs")
+    .replace(/PDF\/PDF-Dateien/gi, "PDF-Dateien")
+    .replace(/PDF\/PDF-Downloads/gi, "PDF-Downloads")
+    .replace(/PDF\/PDF\/HTML/gi, "PDF/HTML")
     .replace(/DOCX-Dateien/gi, "PDF-Dateien")
     .replace(/Word-Dateien/gi, "PDF-Dateien")
     .replace(/DOCX-Datei/gi, "PDF-Datei")
@@ -122,7 +127,11 @@ function sanitizeText(value) {
     .replace(/\bDOCX\b/g, "PDF")
     .replace(/\bWord\b/g, "PDF")
     .replace(/\.docx\b/gi, ".pdf")
-    .replace(/\.doc\b/gi, ".pdf");
+    .replace(/\.doc\b/gi, ".pdf")
+    .replace(/PDF\/PDFs/gi, "PDFs")
+    .replace(/PDF\/PDF-Dateien/gi, "PDF-Dateien")
+    .replace(/PDF\/PDF-Downloads/gi, "PDF-Downloads")
+    .replace(/PDF\/PDF\/HTML/gi, "PDF/HTML");
 }
 
 function sanitizeHtml(html, file) {

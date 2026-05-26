@@ -51,6 +51,10 @@ function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
+function writeHtml(file, html) {
+  fs.writeFileSync(file, html.replace(/[ \t]+$/gm, ""), "utf8");
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -622,7 +626,7 @@ function buildDownloadsPage() {
 
       ${archiveSection}
 `;
-  fs.writeFileSync(
+  writeHtml(
     downloadsPath,
     pageShell({
       title: "Bibliothek der Wirkungsökonomie",
@@ -714,7 +718,7 @@ function buildDocumentPage(document) {
 `;
   const outDir = path.join(libraryRoot, document.slug);
   ensureDir(outDir);
-  fs.writeFileSync(
+  writeHtml(
     path.join(outDir, "index.html"),
     pageShell({
       title: document.title,
@@ -728,7 +732,7 @@ function buildDocumentPage(document) {
 
 function buildLibraryIndex() {
   ensureDir(libraryRoot);
-  fs.writeFileSync(
+  writeHtml(
     path.join(libraryRoot, "index.html"),
     pageShell({
       title: "Bibliothek",

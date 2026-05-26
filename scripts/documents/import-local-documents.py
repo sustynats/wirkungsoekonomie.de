@@ -4,6 +4,7 @@ import json
 import re
 import shutil
 import textwrap
+import zipfile
 from pathlib import Path
 
 from docx import Document
@@ -61,6 +62,44 @@ def extract_pdf_paragraphs(path: Path):
         text = page.extract_text() or ""
         for block in re.split(r"\n{2,}", text):
             clean = norm_text(block)
+            if clean.startswith("Unbekannt "):
+                clean = clean.removeprefix("Unbekannt ").strip()
+            if clean == "Unbekannt":
+                continue
+            if clean:
+                paragraphs.append(clean)
+    return paragraphs
+
+
+def extract_epub_paragraphs(path: Path):
+    html_files = []
+    if path.is_dir():
+        html_files = sorted(
+            file for file in path.rglob("*")
+            if file.suffix.lower() in {".html", ".xhtml", ".htm"}
+        )
+        raw_docs = [(file.name, file.read_text(encoding="utf-8", errors="ignore")) for file in html_files]
+    else:
+        raw_docs = []
+        with zipfile.ZipFile(path) as archive:
+            for name in sorted(archive.namelist()):
+                if name.lower().endswith((".html", ".xhtml", ".htm")):
+                    raw_docs.append((name, archive.read(name).decode("utf-8", errors="ignore")))
+
+    paragraphs = []
+    for name, raw in raw_docs:
+        if "titlepage" in name.lower():
+            continue
+        raw = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", raw, flags=re.I | re.S)
+        raw = re.sub(r"</(h[1-6]|p|li|div|section|article)>", "\n\n", raw, flags=re.I)
+        text = re.sub(r"<[^>]+>", " ", raw)
+        text = html.unescape(text)
+        for block in re.split(r"\n{2,}", text):
+            clean = norm_text(block)
+            if clean.startswith("Unbekannt "):
+                clean = clean.removeprefix("Unbekannt ").strip()
+            if clean == "Unbekannt":
+                continue
             if clean:
                 paragraphs.append(clean)
     return paragraphs
@@ -71,6 +110,8 @@ def paragraphs_for(path: Path):
         return extract_docx_paragraphs(path)
     if path.suffix.lower() == ".pdf":
         return extract_pdf_paragraphs(path)
+    if path.suffix.lower() == ".epub":
+        return extract_epub_paragraphs(path)
     if path.suffix.lower() in {".md", ".html"}:
         return [norm_text(path.read_text(encoding="utf-8", errors="ignore"))]
     return []
@@ -196,10 +237,9 @@ def main():
             "relatedPages": item.get("relatedPages", []),
             "isArchive": False,
             "isPublic": True,
-            "importSource": str(source),
         }
         by_id[item["id"]] = entry
-        imported.append((entry, pdf_note, len(paragraphs)))
+        imported.append((entry, pdf_note, len(paragraphs), str(source)))
 
     merged = list(by_id.values())
     merged.sort(key=lambda item: (item.get("isArchive", False), item.get("category", [""])[0], item["title"]))
@@ -207,7 +247,7 @@ def main():
 
     candidates = scan_candidates()
     review = [item for item in candidates if item["decision"] == "review"]
-    imported_paths = {entry["importSource"] for entry, _, _ in imported}
+    imported_paths = {source_path for _, _, _, source_path in imported}
     for item in imports:
         if item.get("preferredPdfPath"):
             imported_paths.add(item["preferredPdfPath"])
@@ -233,8 +273,8 @@ def main():
         "| id | Titel | PDF | Absätze | Quelle |",
         "| --- | --- | --- | ---: | --- |",
     ]
-    for entry, pdf_note, para_count in imported:
-        audit_lines.append(f"| {entry['id']} | {entry['title']} | {pdf_note} | {para_count} | `{entry['importSource']}` |")
+    for entry, pdf_note, para_count, source_path in imported:
+        audit_lines.append(f"| {entry['id']} | {entry['title']} | {pdf_note} | {para_count} | `{source_path}` |")
 
     audit_lines.extend(["", "## Blockiert", ""])
     if blocked:
