@@ -639,6 +639,7 @@ function buildDownloadsPage() {
 }
 
 function buildDocumentPage(document) {
+  if (!document.onlineUrl?.startsWith("/bibliothek/")) return;
   const scope = documentScope(document);
   const role = publicDocumentRole(document);
   const keyPoints = (document.keyPoints || [])

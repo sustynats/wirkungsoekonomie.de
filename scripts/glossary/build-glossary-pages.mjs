@@ -2,6 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 const data = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
+const documentRegistry = fs.existsSync("assets/data/document-registry.json")
+  ? JSON.parse(fs.readFileSync("assets/data/document-registry.json", "utf8"))
+  : [];
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
@@ -91,6 +94,7 @@ for (const term of data.terms) {
 const nav = Array.from(groups.keys()).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
 const categories = categoryOrder.filter((category) => data.terms.some((term) => term.category === category));
 const termsBySlug = new Map(data.terms.map((term) => [term.slug, term]));
+const publicDocuments = documentRegistry.filter((document) => document.isPublic !== false && document.status !== "hidden" && document.status !== "draft");
 const termTargetLinks = new Map([
   ["agenda-2030", "../../verstehen/sdgs-sdgplus/geschichte/"],
   ["sdg-sdgplus-referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
@@ -157,6 +161,96 @@ const centralTermDetails = new Map([
 function linkedChips(items, fallback = "Keine Einträge") {
   if (!Array.isArray(items) || items.length === 0) return `<p>${esc(fallback)}</p>`;
   return `<div class="term-chip-row">${items.map(([label, href]) => `<a class="term-chip" href="${esc(href)}">${esc(label)}</a>`).join("")}</div>`;
+}
+
+function termRelativeHref(value) {
+  if (!value) return "";
+  if (/^(https?:|mailto:)/.test(value)) return value;
+  return `../../${String(value).replace(/^\/+/, "")}`;
+}
+
+function documentKindLabel(document) {
+  const type = String(document.type || "Dokument");
+  if (/detailkonzept/i.test(type)) return "Detailkonzept";
+  if (/dossier/i.test(type)) return "Dossier / Ausarbeitung";
+  if (/whitepaper|arbeitspapier|working paper/i.test(type)) return "Ausarbeitung";
+  if (/gesetz/i.test(type)) return "Rechts-/Steuerungsentwurf";
+  if (/buch|grundlagenwerk/i.test(type)) return "Buch / Grundlagenwerk";
+  return type;
+}
+
+function documentPriority(document) {
+  const label = documentKindLabel(document);
+  if (label === "Detailkonzept") return 0;
+  if (label.startsWith("Dossier")) return 1;
+  if (label === "Ausarbeitung") return 2;
+  if (label.startsWith("Rechts")) return 3;
+  return 4;
+}
+
+function documentSpecificity(document, term) {
+  const termPage = `/begriffe/${term.slug}/`;
+  const haystack = `${document.id || ""} ${document.slug || ""} ${document.title || ""} ${document.onlineUrl || ""}`;
+  let score = 0;
+  if ((document.relatedPages || []).includes(termPage)) score -= 8;
+  if (document.id === term.slug || document.slug === term.slug) score -= 7;
+  if (haystack.includes(term.slug)) score -= 5;
+  const normalizedLabel = term.canonicalLabel.toLowerCase().replace(/\s+/g, "-");
+  if (haystack.toLowerCase().includes(normalizedLabel)) score -= 4;
+  if ((document.relatedTerms || [])[0] === term.slug) score -= 2;
+  return score;
+}
+
+function documentMatchesTerm(document, term) {
+  const slug = term.slug;
+  const termPage = `/begriffe/${slug}/`;
+  return (document.relatedTerms || []).includes(slug)
+    || (document.relatedPages || []).includes(termPage)
+    || String(document.onlineUrl || "").includes(`/begriffe/${slug}/`);
+}
+
+function documentsForTerm(term) {
+  const seen = new Set();
+  return publicDocuments
+    .filter((document) => documentMatchesTerm(document, term))
+    .filter((document) => document.onlineUrl || document.sourceOnlineUrl || document.pdfUrl)
+    .filter((document) => {
+      const key = `${document.onlineUrl || document.sourceOnlineUrl || ""}|${document.pdfUrl || ""}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a, b) => documentSpecificity(a, term) - documentSpecificity(b, term) || documentPriority(a) - documentPriority(b) || String(a.title).localeCompare(String(b.title), "de"))
+    .slice(0, 12);
+}
+
+function relatedDocumentsBlock(term) {
+  const documents = documentsForTerm(term);
+  if (!documents.length) return "";
+  return `<section class="term-summary-card term-documents" aria-labelledby="documents-${esc(term.slug)}">
+          <p class="section-eyebrow">Dokumente und Onlinefassungen</p>
+          <h2 id="documents-${esc(term.slug)}">Weiterlesen zu ${esc(term.canonicalLabel)}</h2>
+          <p>Hier werden die zugeordneten Langfassungen, Detailkonzepte, Dossiers und PDFs aus der zentralen Dokumenten-Registry angezeigt. Detailkonzepte erklären die fachliche Logik; Dossiers und Ausarbeitungen dokumentieren Anwendung, Annahmen und Grenzen.</p>
+          <div class="term-document-grid">
+            ${documents.map((document) => {
+              const onlineHref = termRelativeHref(document.onlineUrl || document.sourceOnlineUrl);
+              const pdfHref = termRelativeHref(document.pdfUrl);
+              return `<article class="term-document-card">
+                <p class="section-eyebrow">${esc(documentKindLabel(document))}${document.stand ? ` · ${esc(document.stand)}` : ""}</p>
+                <h3>${esc(document.title)}</h3>
+                <p>${esc(document.summary || "Zugeordnetes Material der Wirkungsökonomie.")}</p>
+                <div class="term-document-meta">
+                  ${document.onlineUrl || document.sourceOnlineUrl ? "<span>Online lesbar</span>" : ""}
+                  ${document.pdfUrl ? "<span>PDF verfügbar</span>" : ""}
+                </div>
+                <div class="term-action-row">
+                  ${onlineHref ? `<a class="btn btn-primary" href="${esc(onlineHref)}">Onlinefassung lesen</a>` : ""}
+                  ${pdfHref ? `<a class="btn btn-secondary" href="${esc(pdfHref)}">PDF herunterladen</a>` : ""}
+                </div>
+              </article>`;
+            }).join("")}
+          </div>
+        </section>`;
 }
 
 function learningBlock(term) {
@@ -370,6 +464,7 @@ for (const term of data.terms) {
         </div>
 ${termExtraBlock(term)}
 ${learningBlock(term)}
+${relatedDocumentsBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
             <p class="section-eyebrow">Verknüpfungen</p>
