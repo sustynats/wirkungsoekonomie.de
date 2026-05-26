@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T22:04:23.992Z",
+  "generatedAt": "2026-05-26T17:05:42.744Z",
   "relationships": {
     "agenda-2030": {
       "terms": [
@@ -70,6 +70,17 @@
       ],
       "documents": []
     },
+    "faktencheck": {
+      "terms": [
+        "folgencheck",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungspfad"
+      ],
+      "documents": [
+        "faktencheck-folgencheck-v1-1"
+      ]
+    },
     "finalscore": {
       "terms": [
         "scorecard",
@@ -78,6 +89,18 @@
       ],
       "documents": []
     },
+    "folgencheck": {
+      "terms": [
+        "faktencheck",
+        "wirkstoff",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungspotenzial"
+      ],
+      "documents": [
+        "faktencheck-folgencheck-v1-1"
+      ]
+    },
     "gri": {
       "terms": [
         "reporting",
@@ -85,6 +108,17 @@
         "esrs"
       ],
       "documents": []
+    },
+    "idgs": {
+      "terms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030"
+      ],
+      "documents": [
+        "sdg-sdgplus-referenzrahmen"
+      ]
     },
     "mensch-planet-demokratie": {
       "terms": [

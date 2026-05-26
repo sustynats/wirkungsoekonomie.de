@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T22:04:17.418Z",
+  "generatedAt": "2026-05-26T17:05:35.724Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -132,6 +132,24 @@
         "nachhaltigkeit"
       ]
     },
+    "faktencheck": {
+      "label": "Faktencheck",
+      "slug": "faktencheck",
+      "url": "/begriffe/faktencheck/",
+      "hoverDefinition": "Faktencheck fragt: Stimmt das? Er prüft Belege, Quellen, Kontext und Nachvollziehbarkeit.",
+      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage, Zahl, Quelle oder Behauptung stimmt.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Fact Check",
+        "Richtigkeitsprüfung"
+      ],
+      "relatedTerms": [
+        "folgencheck",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungspfad"
+      ]
+    },
     "finalscore": {
       "label": "FinalScore",
       "slug": "finalscore",
@@ -144,6 +162,26 @@
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung"
+      ]
+    },
+    "folgencheck": {
+      "label": "Folgencheck",
+      "slug": "folgencheck",
+      "url": "/begriffe/folgencheck/",
+      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume ex ante.",
+      "shortDefinition": "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Folgenprüfung",
+        "Ex-ante-Folgenprüfung",
+        "Wirkungsfolgencheck"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "wirkstoff",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungspotenzial"
       ]
     },
     "gri": {
@@ -160,6 +198,25 @@
         "reporting",
         "csrd",
         "esrs"
+      ]
+    },
+    "idgs": {
+      "label": "IDGs",
+      "slug": "idgs",
+      "url": "/begriffe/idgs/",
+      "hoverDefinition": "Inner Development Goals beschreiben Fähigkeiten, die Menschen und Organisationen für Transformation brauchen. Sie ersetzen SDGs oder SDG+ nicht.",
+      "shortDefinition": "IDGs sind ein anschlussfähiger Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeiten.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Inner Development Goals",
+        "IDG",
+        "innere Entwicklungsziele"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030"
       ]
     },
     "mensch-planet-demokratie": {

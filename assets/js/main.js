@@ -1727,8 +1727,8 @@ const ResultInterpretationLayer = (() => {
       limit: "Der Betrag ist eine Plausibilisierung, keine Bilanz und kein Zahlungsanspruch."
     },
     {
-      match: ["betroffene fte", "affectedfte"],
-      meaning: "Der Wert zeigt, wie viele Vollzeitäquivalente im Modell von Automatisierung betroffen wären.",
+      match: ["betroffene vollzeitstellen", "vollzeitstellen", "affectedfte"],
+      meaning: "Der Wert zeigt, wie viele Beschäftigte, umgerechnet auf Vollzeitstellen, im Modell von Automatisierung betroffen wären.",
       relevance: "Er macht sichtbar, dass Automatisierung nicht nur Kosten senkt, sondern Übergänge, Einkommen und Sicherungssysteme berührt.",
       change: "Im WÖk-System würde daraus ein Bedarf für Qualifizierung, Versetzung, Beteiligung oder Rückkopplung entstehen.",
       limit: "Die Zahl ist eine Modellannahme und keine Aussage über einzelne Beschäftigte."

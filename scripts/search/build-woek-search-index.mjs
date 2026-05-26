@@ -46,10 +46,17 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Einzeldossier-Set/g, "Einzeldossiers"],
   [/Dossier & Export/g, "Vertiefung"],
   [/Export & Archiv/g, "Arbeitsmaterial"],
+  [/Downloads und Druck/g, "Materialien und Downloads"],
+  [/Onlinefassung, Druck und Export/g, "Materialien und Downloads"],
+  [/Du liest die Onlinefassung\.?/g, "Die Seite ist online lesbar."],
+  [/Der Die Seite ist online lesbar\.?/g, "Die Seite ist online lesbar."],
+  [/Der Du liest die Onlinefassung\.?/g, "Die Seite ist online lesbar."],
+  [/Online-Volltext/g, "Onlinefassung"],
   [/Dokumentenmatrix/g, "Materialübersicht"],
   [/Export- und Archivfassungen/g, "ergänzende Downloadfassungen"],
   [/Export- und Archiv/g, "Download"],
   [/Export und Archiv/g, "Download"],
+  [/Portaltext/g, "Seitentext"],
   [/kanonische Seitenadresse/gi, "Seitenadresse"],
   [/Kanonische Seite öffnen/g, "Seite öffnen"],
   [/kanonisch/gi, "öffentlich"],
@@ -248,7 +255,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "referenz", "dokumente", "instrumente", "beispiele", "quellen", "export"]
+const contentFiles = ["src/content/docs", "referenz", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "anwendungen", "verstehen"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
   for (const { entry, meta: itemMeta } of entriesFromContent(file)) {

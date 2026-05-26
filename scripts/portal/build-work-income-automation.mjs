@@ -61,14 +61,14 @@ const topDocuments = [
   ["konzeptpapier", "Konzeptpapier", "woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.md", "woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx", "Grundlogik des Wirkungsfelds Arbeit & Einkommen: Automatisierung, Maschinenleistung, Wirkungseinkommen, Sozialabgaben-Entkopplung und politische Anschlussfähigkeit."],
   ["gesamtdossier", "Gesamtdossier", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.md", "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx", "Arbeitsdossier mit Modelllogik, Annahmen, Quellen, Querverlinkungen und Umsetzungspfaden."],
   ["detailkonzepte", "Detailkonzepte", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.md", "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx", "Langfassung der Detailkonzepte für die Unterbereiche des Portals."],
-  ["dossiers", "Einzeldossier-Set", "woek_arbeit_einkommen_einzeldossier_set_v0_1.md", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx", "Einzeldossiers mit Praxisfragen, Bewertungslogik, Annahmen, Grenzen, Toolbezug und politischer Umsetzung."],
+  ["dossiers", "Einzeldossiers", "woek_arbeit_einkommen_einzeldossier_set_v0_1.md", "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx", "Einzeldossiers mit Praxisfragen, Bewertungslogik, Annahmen, Grenzen, Toolbezug und politischer Umsetzung."],
 ];
 
 const downloadLabels = {
   "woek_arbeit_einkommen_automatisierung_konzeptpapier_v0_1.docx": "Konzeptpapier herunterladen",
   "woek_arbeit_einkommen_automatisierung_gesamtdossier_v0_1.docx": "Gesamtdossier herunterladen",
   "woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx": "Detailkonzepte herunterladen",
-  "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx": "Einzeldossier-Set herunterladen",
+  "woek_arbeit_einkommen_einzeldossier_set_v0_1.docx": "Einzeldossiers herunterladen",
 };
 
 const sdgRefs = {
@@ -99,6 +99,13 @@ function read(rel) { return fs.existsSync(path.join(ROOT, rel)) ? fs.readFileSyn
 function write(rel, html) { const out = path.join(ROOT, rel); fs.mkdirSync(path.dirname(out), { recursive: true }); fs.writeFileSync(out, html.replace(/[ \t]+$/gm, ""), "utf8"); }
 function cite(id) { return `<a class="cite-anchor no-print" href="#${esc(id)}" aria-label="Zitierlink zu diesem Abschnitt">#</a>`; }
 function h2(id, text) { return `<h2 id="${esc(id)}">${esc(text)} ${cite(id)}</h2>`; }
+function publicText(value) {
+  return String(value || "")
+    .replace(/\bInputs\b/g, "Eingaben")
+    .replace(/\bOutputs\b/g, "Ergebnisse")
+    .replace(/\bv0\.1\b/g, "Modellfassung")
+    .replace(/Einzeldossier-Set/g, "Einzeldossiers");
+}
 
 function page({ rel, title, description, section = "Wirkungsfelder", type = "Portal", body }) {
   const b = base(rel);
@@ -144,7 +151,7 @@ function mdToHtml(markdown, prefix = "") {
   const flush = () => {
     if (!p.length) return;
     const id = `${prefix}absatz-${String(html.length + 1).padStart(3, "0")}`;
-    html.push(`<p id="${id}">${esc(p.join(" ").replace(/\*\*/g, ""))} ${cite(id)}</p>`);
+    html.push(`<p id="${id}">${esc(publicText(p.join(" ").replace(/\*\*/g, "")))} ${cite(id)}</p>`);
     p = [];
   };
   const flushTable = () => {
@@ -165,13 +172,13 @@ function mdToHtml(markdown, prefix = "") {
     if (m) {
       flush();
       const level = Math.max(2, Math.min(4, m[1].length));
-      const text = m[2].trim();
+      const text = publicText(m[2].trim());
       const id = `${prefix}${slug(text)}`;
       toc.push({ level, text, id });
       html.push(`<h${level} id="${id}">${esc(text)} ${cite(id)}</h${level}>`);
     } else if (/^[-*]\s+/.test(line) || /^\d+\.\s+/.test(line)) {
       flush();
-      html.push(`<p>${esc(line.replace(/^([-*]|\d+\.)\s+/, "").replace(/\*\*/g, ""))}</p>`);
+      html.push(`<p>${esc(publicText(line.replace(/^([-*]|\d+\.)\s+/, "").replace(/\*\*/g, "")))}</p>`);
     } else {
       p.push(line);
     }
@@ -186,7 +193,7 @@ function stripPortalOperationalSections(markdown) {
 
 function toc(t) {
   if (!t.length) return "";
-  return `<nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol>${t.map((i) => `<li class="toc-level-${esc(i.level)}"><a href="#${esc(i.id)}">${esc(i.text)}</a></li>`).join("")}</ol></nav>`;
+  return `<details class="toc-card no-print" aria-label="Inhaltsverzeichnis"><summary class="card-title">Auf dieser Seite</summary><ol>${t.map((i) => `<li class="toc-level-${esc(i.level)}"><a href="#${esc(i.id)}">${esc(i.text)}</a></li>`).join("")}</ol></details>`;
 }
 function ctaLabelFor(url, fallback = "Vertiefung lesen") {
   const value = String(url || "");
@@ -218,10 +225,39 @@ function publicationAccess(b, heading = "Online lesen und herunterladen") {
     text,
     `wirkungsfelder/arbeit-einkommen/${slugName}/`,
   ]);
-  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", heading)}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben ergänzende Export- und Archivfassungen.</p></div>${cards(b, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Einzeldossier-Set bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${topDocuments.map(([, , , doc]) => exists(`assets/downloads/${doc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${doc}`)}">${esc(downloadLabels[doc] || "Download")}</a>` : "").join("")}</div></div></section>`;
+  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", heading)}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben ergänzende Export- und Archivfassungen.</p></div>${cards(b, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Einzeldossiers bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${topDocuments.map(([, , , doc]) => exists(`assets/downloads/${doc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${doc}`)}">${esc(downloadLabels[doc] || "Download")}</a>` : "").join("")}</div></div></section>`;
 }
 function pagePublicationAccess(b, detailDoc, dossierDoc) {
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Online lesen, gezielt zitieren</p>${h2("publikationszugang-title", "Detailkonzept und Dossier")}<p class="card-text">Diese Unterseite enthält Detailkonzept und Einzeldossier vollständig online. Die Abschnittsanker können direkt zitiert werden; Downloads bleiben ergänzende Exportfassungen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Detailkonzept herunterladen</a>` : ""}${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>`;
+}
+
+function articleFromFirstHeading(html, id) {
+  const index = html.indexOf(`<h2 id="${id}"`);
+  return index >= 0 ? html.slice(index) : html;
+}
+
+function detailReadingIntro(b, slugName, title, summary, detailDoc, dossierDoc) {
+  return `<section class="section" aria-labelledby="kurzfassung">
+    <div class="section-header">
+      <p class="hero-kicker">Kurzfassung</p>
+      ${h2("kurzfassung", "Auf einen Blick")}
+      <p>${esc(summary)}</p>
+    </div>
+    <div class="card-grid three">
+      <article class="card"><h3 class="card-title">Leitfrage</h3><p class="card-text">Wie wird sichtbar, ob Arbeit, Einkommen oder Automatisierung reale Zustandsveränderungen erzeugen, statt nur Tätigkeit oder Lohnsumme zu zählen?</p></article>
+      <article class="card"><h3 class="card-title">Perspektivwechsel</h3><p class="card-text">Bewertet wird nicht die Person, sondern der Wirkungszusammenhang: Tätigkeit, Organisation, Maschinenleistung, Finanzierung, Übergangsschutz und Rückkopplung.</p></article>
+      <article class="card"><h3 class="card-title">Schutzgrenze</h3><p class="card-text">Keine Personenbewertung, keine Leistungsüberwachung einzelner Beschäftigter und keine automatische Entscheidung.</p></article>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="old-vs-woek"><div class="section-header"><p class="hero-kicker">Systemblick</p>${h2("old-vs-woek", "Alte Logik vs. WÖk-Logik")}</div><div class="comparison-grid"><article class="card"><p class="card-kicker">Alte Logik</p><h3 class="card-title">Was oft zu eng gemessen wird</h3><ul class="clean-list"><li>Arbeit wird über Stunden, Lohn und Beschäftigung gezählt.</li><li>Einkommen gilt schnell als Beweis für Leistung.</li><li>Unbezahlte Wirkleistung und automatisierte Wertschöpfung bleiben schwach rückgekoppelt.</li></ul></article><article class="card"><p class="card-kicker">WÖk-Logik</p><h3 class="card-title">Was zusätzlich sichtbar wird</h3><ul class="clean-list"><li>Entscheidend ist die tatsächliche Wirkung auf Mensch, Planet und Demokratie.</li><li>Automatisierung wird nach Übergangsschutz, Beteiligung und Wertschöpfungsrückfluss bewertet.</li><li>Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht.</li></ul></article></div></section>
+  <section class="section" aria-labelledby="hebel"><div class="section-header"><p class="hero-kicker">Wirkungshebel</p>${h2("hebel", "Zentrale Wirkungshebel")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Leistung als Wirkung</h3><p class="card-text">Leistung wird daran gelesen, welche Zustände verbessert, stabilisiert oder geschädigt werden.</p></article><article class="card"><h3 class="card-title">Maschinenleistung rückkoppeln</h3><p class="card-text">Automatisierte Wertschöpfung kann Sicherung, Weiterbildung, Beteiligung und Wirkungsfonds mittragen.</p></article><article class="card"><h3 class="card-title">Wirkungseinkommen</h3><p class="card-text">Einkommen wird als Mischung aus Grundsicherheit, Marktanteil, Wirkungsbonus und Fondsanteil modellhaft lesbar.</p></article></div></section>
+  <section class="section" aria-labelledby="politik"><div class="card"><p class="hero-kicker">Politische Anschlussfähigkeit</p>${h2("politik", "Was muss Politik hier klären?")}<p>Politik muss Übergangsschutz, Sozialfinanzierung, Datenqualität, Mitbestimmung, KMU-Tauglichkeit, Rechtsschutz und demokratische Kontrolle zusammenbringen. Die Wirkungsökonomie liefert dafür einen Bewertungsrahmen, keinen fertigen Parteibeschluss.</p></div></section>
+  <section class="section" aria-labelledby="risiken"><div class="card"><p class="hero-kicker">Schutzgrenzen</p>${h2("risiken", "Risiken und Schutzgrenzen")}<p>Risiken liegen in Personen-Scoring, Scheingenauigkeit, Überwachung, ungerechten Übergängen, technokratischer Steuerung und nicht geprüften Modellannahmen. Schutz brauchen Menschenwürde, Datenschutz, Beteiligung, Einspruchsrechte und transparente Annahmen.</p></div></section>`;
+}
+
+function detailReadingOutro(b, slugName, detailDoc, dossierDoc) {
+  return `<section class="section" id="materialien" aria-labelledby="materialien-title"><div class="section-header"><p class="hero-kicker">Materialien</p>${h2("materialien-title", "Materialien und Downloads")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Dossier lesen</h3><p class="card-text">Das Dossier dokumentiert Anwendung, Annahmen, Datenlogik und Beispiele auf einer eigenen Seite.</p><div class="portal-card-actions"><a class="text-link" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a></div></article>${exists(`assets/downloads/${detailDoc}`) ? `<article class="card"><h3 class="card-title">Detailkonzept herunterladen</h3><p class="card-text">Ergänzende Exportfassung für Druck und Weiterarbeit.</p><div class="portal-card-actions"><a class="text-link" href="${href(b, `assets/downloads/${detailDoc}`)}">Herunterladen</a></div></article>` : ""}${exists(`assets/downloads/${dossierDoc}`) ? `<article class="card"><h3 class="card-title">Dossier herunterladen</h3><p class="card-text">Ergänzende Exportfassung für Druck und Weiterarbeit.</p><div class="portal-card-actions"><a class="text-link" href="${href(b, `assets/downloads/${dossierDoc}`)}">Herunterladen</a></div></article>` : ""}</div></section>
+  <section class="section" aria-labelledby="transparenz"><div class="meta-box"><h2 id="transparenz">Dokumentstand und Transparenz</h2><p>Stand: Mai 2026. Modellhafte Arbeitsfassung der Wirkungsökonomie. Autorin: Natalie Weber. Diese Seite ist keine amtliche Bewertung und keine Rechts-, Steuer- oder Sozialberatung.</p></div></section>`;
 }
 function sdgBadge(b, label, index) {
   const [id, url, text] = sdgRefs[label] || [slug(label), "verstehen/sdgs-sdgplus/", `${label} im SDG-/SDG+-Referenzrahmen der Wirkungsökonomie.`];
@@ -306,7 +342,15 @@ function topicPage(item) {
     rel: `wirkungsfelder/arbeit-einkommen/${slugName}/index.html`,
     title: `${title} | Arbeit & Einkommen`,
     description: summary,
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Arbeit & Einkommen</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a></div></div></section>${pagePublicationAccess(b, detailDoc, dossierDoc)}${toc([...detail.toc, ...dossier.toc])}<section class="section" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Kurzfassung")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Alte Logik</h3><p class="card-text">Menschliche Erwerbsarbeit trägt Einkommen, Sozialabgaben und Status, während unbezahlte Wirkleistung und automatisierte Wertschöpfung nur teilweise sichtbar werden.</p></article><article class="card"><h3 class="card-title">Perspektivwechsel</h3><p class="card-text">Bewertet wird die tatsächliche Zustandsveränderung. Maschinenleistung, Care, Weiterbildung, Einkommen und Kapitalwirkung werden in eine gemeinsame Rückkopplung gebracht.</p></article><article class="card"><h3 class="card-title">Schutzgrenze</h3><p class="card-text">Keine Personenbewertung, keine Leistungsüberwachung einzelner Beschäftigter und keine Robotersteuer als Fortschrittsstrafe.</p></article></div></section><section class="section" aria-labelledby="detailkonzept"><div class="prose"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", "Detailkonzept online lesen")} ${detail.html}</div></section><section class="section" aria-labelledby="dossier"><div class="prose"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier online lesen")} ${dossier.html}</div></section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, [detailDoc, dossierDoc])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Detailkonzept</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Konzept lesen</a><a class="btn btn-secondary" href="#materialien">Materialien</a></div></div></section>${toc(detail.toc)}${detailReadingIntro(b, slugName, title, summary, detailDoc, dossierDoc)}<section class="section" aria-labelledby="detailkonzept"><div class="prose"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", title)} ${articleFromFirstHeading(detail.html, "detail-leitfrage")}</div></section>${toolRefs(b)}${crossLinks(b)}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${detailReadingOutro(b, slugName, detailDoc, dossierDoc)}`,
+  });
+  page({
+    rel: `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/index.html`,
+    title: `${title} | Dossier`,
+    description: `Dossier zu ${title}: Anwendung, Annahmen, Datenlogik, Grenzen und Anschlussstellen.`,
+    section: "Wirkungsfelder",
+    type: "Dossier",
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/${slugName}/">${esc(title)}</a></nav><p class="hero-kicker">Dossier</p><h1>${esc(title)}: Dossier</h1><p class="hero-subtitle">Anwendung, Annahmen, Datenlogik, Grenzen und Anschlussstellen.</p><div class="hero-actions no-print"><a class="btn btn-primary" href="${b}wirkungsfelder/arbeit-einkommen/${slugName}/">Detailkonzept lesen</a>${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>${toc(dossier.toc)}<section class="section" aria-labelledby="dossier"><div class="prose"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier lesen")} ${articleFromFirstHeading(dossier.html, "dossier-kurzfassung")}</div></section><section class="section" aria-labelledby="transparenz"><div class="meta-box"><h2 id="transparenz">Dokumentstand und Transparenz</h2><p>Stand: Mai 2026. Modellhafte Arbeitsfassung der Wirkungsökonomie. Autorin: Natalie Weber. Diese Seite ist keine amtliche Bewertung und keine Rechts-, Steuer- oder Sozialberatung.</p></div></section>${toolRefs(b)}${referenceBlock(b)}${sourceBlock()}`,
   });
 }
 
@@ -338,7 +382,7 @@ function documentPage([slugName, title, mdFile, docFile, summary]) {
 
 function toolDemo(b, slugName) {
   if (slugName !== "automatisierungs-wirkungseinkommensrechner") return `<section class="section"><div class="card"><p class="hero-kicker">Methodik</p><h2>Erklärseite</h2><p>Diese Seite ordnet die Methode ein und verweist auf nutzbare Demos, sobald eine Bedienoberfläche vorhanden ist.</p></div></section>`;
-  return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Modellhafte Demo</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>FTE, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
+  return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Modellhafte Demo</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>Beschäftigte, umgerechnet auf Vollzeitstellen, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
 }
 
 function methodToolPage(title, summary) {
@@ -460,13 +504,13 @@ function automationCalculator(b) {
       <article class="card">
         <p class="card-kicker">Modul 1</p>
         <h3 class="card-title">${termTip("Beitragslücke", "Die modellhafte Lücke, die entsteht, wenn Lohnsumme und damit Sozialbeiträge wegfallen.")}</h3>
-        <label>Anzahl betroffener FTE<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
+        <label>Beschäftigte, umgerechnet auf Vollzeitstellen<input type="number" min="0" step="1" value="120" data-auto-input="fte"><small class="field-help">Eine Vollzeitstelle = 1. Zwei halbe Stellen = 1. Dieser Wert ist eine Modellannahme.</small></label>
         <label>durchschnittlicher Bruttolohn pro Jahr<input type="number" min="0" step="1000" value="52000" data-auto-input="wage"></label>
         <label>Arbeitgeber-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.5" data-auto-input="employerRate"></label>
         <label>Arbeitnehmer-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.0" data-auto-input="employeeRate"></label>
         <label>erwartete Automatisierungsquote in Prozent<input type="range" min="0" max="100" step="1" value="35" data-auto-input="automationRate"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Betroffene Vollzeitstellen</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
           <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">Beispielwerte aktiv</strong></div>
           <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">Beispielwerte aktiv</strong></div>
         </div>

@@ -903,9 +903,9 @@ function downloadBlock(base, items = []) {
   const missing = items.filter((item) => item.required && !fileExists(item.href));
   return `<section class="section" aria-labelledby="downloads">
       <div class="card">
-        <p class="hero-kicker">Export & Archiv</p>
-        ${sectionTitle("downloads", "Downloads und Druck")}
-        <p class="card-text">Der Online-Volltext ist der Hauptzugang. Downloads bleiben ergänzend als Archiv-, Export- oder Originalfassung erhalten.</p>
+        <p class="hero-kicker">Arbeitsmaterial</p>
+        ${sectionTitle("downloads", "Materialien und Downloads")}
+        <p class="card-text">Vertiefungen, Dateien und Druckfunktion stehen gesammelt am Ende der Seite.</p>
         <div class="portal-card-actions no-print">
           <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
           ${available.length ? available.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("") : `<span class="prototype-badge">Dossier in Vorbereitung</span>`}
@@ -947,7 +947,7 @@ function introHero({ base, kicker, h1, subtitle, text, actions = "" }) {
     </section>`;
 }
 
-function productStatus(status = "Konzept / Online-Volltext") {
+function productStatus(status = "Konzept / Lesefassung") {
   return statusMeta([
     ["Autorin", "Natalie Weber"],
     ["Referenz", "Wirkungsökonomie"],
@@ -959,7 +959,7 @@ function productStatus(status = "Konzept / Online-Volltext") {
 
 function sourceNotice(label) {
   return `<div class="scanner-notice" role="note">
-    <strong>Online-Volltext.</strong> Diese Seite macht das zugrunde liegende Konzept online lesbar. Fachliche Inhalte werden als Modellannahmen eingeordnet; rechtliche Grenzen bleiben transparent.
+      <strong>Lesefassung.</strong> Diese Seite macht das zugrunde liegende Konzept online lesbar. Fachliche Inhalte werden als Modellannahmen eingeordnet; rechtliche Grenzen bleiben transparent.
   </div>`;
 }
 
@@ -981,11 +981,11 @@ function fulltextPage(config) {
       actions: config.primaryAction ? `<a class="btn btn-primary" href="${href(base, config.primaryAction.href)}">${escapeHtml(config.primaryAction.label)}</a>` : "",
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
-    <section class="section narrow">${productStatus(config.status || "Online-Volltext / Fassung")}</section>
+    <section class="section narrow">${productStatus(config.status || "Lesefassung")}</section>
     <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
       <article class="article-body fulltext-reader">
-        ${sectionTitle("online-volltext", "Online-Volltext")}
+        ${sectionTitle("online-volltext", "Konzept lesen")}
         ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
         ${rendered.html}
       </article>
@@ -1176,17 +1176,17 @@ function productPortal() {
     <section class="section" id="material" aria-labelledby="material-title">
       <div class="section-header">
         <p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>
-        ${sectionTitle("material-title", "Onlinefassung, Beispiele und Downloads")}
+        ${sectionTitle("material-title", "Vertiefung, Beispiele und Materialien")}
         <p>Die Materialien stehen am Ende, damit die Seite zuerst Orientierung gibt und dann in die fachliche Vertiefung führt.</p>
       </div>
       ${cardGrid(base, [
-        { title: "Onlinefassung Produktbesteuerung", text: "Langfassung mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Onlinefassung lesen" },
+        { title: "Produktbesteuerung durch Wirkung", text: "Langfassung mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Onlinefassung lesen" },
         { title: "Apfelbeispiel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/", label: "Beispiel ansehen" },
         { title: "Lieferketten", text: "Vertiefung zu Vorleistungen, Lieferanten, Produktpässen und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten/", label: "Vertiefung lesen" },
       ])}
     </section>
     ${downloadBlock(base, [
-      { label: "Downloads öffnen", href: "downloads.html" },
+      { label: "Zur Bibliothek", href: "downloads.html" },
       ...conceptDownloads,
       { label: "WStG online lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
       { label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" },
@@ -1349,7 +1349,7 @@ function lawReader() {
     ${politicalBlock(base, "Das Wirkungssteuergesetz")}
     ${sdgBlock(base, "Das WStG rahmt steuerliche Rückkopplung für Produkte, Einkommen, Kapital, öffentliche Mittel und Governance. Es bezieht sich auf SDGs, Agenda 2030 und SDG+ als Bewertungsrahmen, nicht als Menübaum.")}
     ${bookBlock(base, bookAnchors.filter(([label]) => /Kapitel 36|Kapitel 37|Kapitel 38|Kapitel 39|Kapitel 40|Kapitel 31|Kapitel 32|Kapitel 33/.test(label)))}
-    ${downloadBlock(base, [{ label: "Markdown-Quelle öffnen", href: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md" }, { label: "Downloads öffnen", href: "downloads.html" }])}`,
+    ${downloadBlock(base, [{ label: "Markdown-Quelle ansehen", href: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md" }, { label: "Zur Bibliothek", href: "downloads.html" }])}`,
   });
 }
 
@@ -1868,7 +1868,7 @@ function build() {
     hero: "Diese Seite bildet das Produktpapier vollständig online ab. Der Hauptzugang ist der Webtext; Downloads bleiben Archiv und Export.",
     contextIntro: (base) => `Die Bewertung erfolgt über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster, das Produktdaten in Scores von -3 bis +3 übersetzt.")}, deren FinalScore nach der ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt die Einstufung.")} gebildet wird. Die technische Ausgestaltung verweist auf ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.`,
     sdgText: "Produktbesteuerung durch Wirkung verknüpft Konsum, Produktion, Arbeit, Gesundheit, Klima, Biodiversität, Datenqualität und institutionelle Prüfung. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
-    downloads: [{ label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" }, { label: "Downloads öffnen", href: "downloads.html" }],
+    downloads: [{ label: "Zum Wirkungsfeld", href: "wirkungsfelder/produkte-konsum/" }, { label: "Zur Bibliothek", href: "downloads.html" }],
   });
   fulltextPage({
     rel: "wirkungsfelder/produkte-konsum/apfelbeispiel/index.html",

@@ -937,6 +937,21 @@ h4 {
   line-height: 1;
   text-decoration: none;
   vertical-align: middle;
+  opacity: 0;
+  transition: opacity 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.article-body h2:hover .cite-anchor,
+.article-body h3:hover .cite-anchor,
+.article-body h4:hover .cite-anchor,
+.prose h2:hover .cite-anchor,
+.prose h3:hover .cite-anchor,
+.prose h4:hover .cite-anchor,
+.section-header h2:hover .cite-anchor,
+.card h2:hover .cite-anchor,
+.meta-box h2:hover .cite-anchor,
+.cite-anchor:focus-visible {
+  opacity: 1;
 }
 
 .cite-anchor:hover,
@@ -7462,6 +7477,14 @@ textarea {
   font-weight: 850;
 }
 
+.field-help {
+  display: block;
+  color: var(--text-muted, #475569);
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
 .calculator-form input,
 .calculator-form select {
   width: 100%;
@@ -10112,6 +10135,10 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 @media (max-width: 680px) {
+  .cite-anchor {
+    display: none;
+  }
+
   .tool-explanation-layer {
     margin: 1rem 0;
     padding: 0.9rem;

@@ -653,6 +653,21 @@ function overviewPage() {
       </div>
     </section>
     ${go3PublicationBlock(base)}
+    <section class="section" aria-labelledby="idg-wirkungskompetenz">
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">Kompetenzrahmen</p>
+          ${sectionTitle("idg-wirkungskompetenz", "Von Zielen zu Fähigkeiten: IDGs und Wirkungskompetenz")}
+          <p class="card-text">SDGs und Agenda 2030 sind der globale Zielrahmen. SDG+ ist die WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+          <p class="card-text">IDGs sind dazu anschlussfähig, aber kein dritter gleichrangiger Zielkatalog. Sie beschreiben innere und kollektive Entwicklungsfähigkeiten, die Menschen und Organisationen brauchen, um Transformation verantwortlicher zu gestalten.</p>
+          <p class="card-text">Wirkungskompetenz ist die WÖk-spezifische Fähigkeit, Wirkung, Wirkungspotenziale, Nebenwirkungen, Datenqualität, Unsicherheit, Systemzusammenhänge und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.</p>
+        </div>
+        <div class="portal-card-actions no-print">
+          <a class="btn btn-primary" href="${href(base, "begriffe/wirkungskompetenz/")}">Wirkungskompetenz lesen</a>
+          <a class="btn btn-secondary" href="${href(base, "begriffe/idgs/")}">IDGs einordnen</a>
+        </div>
+      </div>
+    </section>
     <section class="section" aria-labelledby="sdg-list">
       <div class="section-header">
         <p class="hero-kicker">Agenda 2030</p>
@@ -714,6 +729,8 @@ function overviewPage() {
           <a href="${href(base, "glossar.html#begriff-agenda-2030")}">Agenda 2030</a>
           <a href="${href(base, "glossar.html#begriff-sdg-sdgplus-referenzrahmen")}">SDG-/SDG+-Referenzrahmen</a>
           <a href="${href(base, "glossar.html#begriff-positive-netto-wirkung")}">Positive Netto-Wirkung</a>
+          <a href="${href(base, "begriffe/wirkungskompetenz/")}">Wirkungskompetenz</a>
+          <a href="${href(base, "begriffe/idgs/")}">IDGs</a>
         </div>
       </div>
     </section>
@@ -856,14 +873,14 @@ function sdgDetailPage(item) {
     page({
       rel: `verstehen/sdgs-sdgplus/${item.slug}/index.html`,
       title: `${item.title} | Wirkungsökonomie`,
-      description: `${item.title} ist Teil der kanonischen SDG-/SDG+-Referenzseite.`,
+      description: `${item.title} ist Teil der zentralen SDG-/SDG+-Referenzseite.`,
       canonicalOverride: `${SITE}/verstehen/sdgs-sdgplus/#${item.id}`,
       headExtra: `<meta http-equiv="refresh" content="0; url=../#${item.id}">`,
       body: (base) => `<section class="hero portal-hero">
         <div class="hero-content">
           <p class="hero-kicker">Weiterleitung</p>
           <h1>${escapeHtml(item.title)}</h1>
-          <p class="hero-subtitle">SDG+ wird auf der kanonischen SDG-/SDG+-Referenzseite geführt.</p>
+          <p class="hero-subtitle">SDG+ wird auf der zentralen SDG-/SDG+-Referenzseite geführt.</p>
           <p><a class="btn btn-primary" href="${href(base, `verstehen/sdgs-sdgplus/#${item.id}`)}">Zum Abschnitt ${escapeHtml(item.title)}</a></p>
         </div>
       </section>`,
@@ -1200,7 +1217,7 @@ function sdgHistoryTimelineTable() {
 
 function sdgHistoryInternalAnchors(base) {
   const links = [
-    { title: "SDG-/SDG+-Referenzrahmen", url: "verstehen/sdgs-sdgplus/", text: "Kanonische Übersicht mit 17 SDGs und SDG+." },
+    { title: "SDG-/SDG+-Referenzrahmen", url: "verstehen/sdgs-sdgplus/", text: "Zentrale Übersicht mit 17 SDGs und SDG+." },
     { title: "Produkte & Konsum", url: "wirkungsfelder/produkte-konsum/", text: "Produktbesteuerung durch Wirkung und Konsumwirkung." },
     { title: "Wirtschaft & Unternehmen", url: "wirkungsfelder/wirtschaft-unternehmen/", text: "Unternehmen als Wirkungssysteme und Finanzmarktanforderungen." },
     { title: "Staat, Recht & Demokratie", url: "wirkungsfelder/staat-recht-demokratie/", text: "WStG, Wirkungsrat und demokratische Sicherung." },
@@ -1327,14 +1344,14 @@ function aliasPage() {
   page({
     rel: "referenzrahmen/sdgs-sdgplus/index.html",
     title: "SDG-/SDG+-Referenzrahmen | Wirkungsökonomie",
-    description: "Alias zur kanonischen SDG-/SDG+-Referenzrahmen-Seite.",
+    description: "Alias zur zentralen SDG-/SDG+-Referenzrahmen-Seite.",
     canonicalOverride: `${SITE}/verstehen/sdgs-sdgplus/`,
     headExtra: '<meta http-equiv="refresh" content="0; url=../../verstehen/sdgs-sdgplus/">',
     body: (base) => `<section class="hero portal-hero">
       <div class="hero-content">
         <p class="hero-kicker">Alias</p>
         <h1>SDG-/SDG+-Referenzrahmen</h1>
-        <p class="hero-subtitle">Diese Seite verweist auf die kanonische Referenz unter /verstehen/sdgs-sdgplus/.</p>
+        <p class="hero-subtitle">Diese Seite verweist auf die zentrale Referenz unter /verstehen/sdgs-sdgplus/.</p>
         <p><a class="btn btn-primary" href="${href(base, "verstehen/sdgs-sdgplus/")}">Referenzrahmen öffnen</a></p>
       </div>
     </section>`,
