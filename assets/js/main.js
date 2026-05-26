@@ -33,6 +33,8 @@ if (siteNav) {
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
+    ["Für wen?", "fuer/", "fuer/|ordnung/anschlussfaehigkeit/|ordnung/demokratische-anschlussfaehigkeit.html"],
+    ["SDGs & SDG+", "verstehen/sdgs-sdgplus/", "verstehen/sdgs-sdgplus/|referenzrahmen/sdgs-sdgplus/|sdg-plus.html|sdg-plus/|sdg-sdgplus/|sdg-und-sdg-plus/"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
@@ -127,6 +129,45 @@ document.querySelectorAll(".site-nav .nav-more[data-nav-match]").forEach((detail
   const matchTokens = (details.dataset.navMatch || "").split("|").filter(Boolean);
   const isCurrent = matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token));
   details.classList.toggle("active", isCurrent || details.classList.contains("active"));
+});
+
+document.querySelectorAll(".footer-nav").forEach((footerNav) => {
+  const existingText = footerNav.textContent || "";
+  const footerGroups = [
+    {
+      title: "Für wen?",
+      links: [
+        ["Zielgruppen-Hub", "fuer/"],
+        ["Bürger:innen", "fuer/buergerinnen.html"],
+        ["Journalismus", "fuer/journalismus.html"],
+        ["Unternehmen", "fuer/unternehmen.html"],
+        ["Politik / Parteien", "fuer/politik.html"],
+        ["Verwaltung / Kommunen", "fuer/kommunen.html"],
+        ["Investor:innen", "fuer/investoren.html"],
+        ["Wissenschaft / Akademie", "fuer/wissenschaft-forschung.html"],
+      ],
+    },
+    {
+      title: "SDGs & SDG+",
+      links: [
+        ["Referenzrahmen", "verstehen/sdgs-sdgplus/"],
+        ["Alle 17 SDGs", "verstehen/sdgs-sdgplus/#sdg-list"],
+        ["SDG+ verstehen", "verstehen/sdgs-sdgplus/#sdgplus"],
+        ["Agenda 2030", "verstehen/sdgs-sdgplus/agenda-2030/"],
+        ["Unterziele", "verstehen/sdgs-sdgplus/unterziele/"],
+        ["SDG+ Demokratie", "verstehen/sdgs-sdgplus/sdgplus-demokratie/"],
+      ],
+    },
+  ];
+  footerGroups.forEach((group) => {
+    if (existingText.includes(group.title)) return;
+    const wrapper = document.createElement("div");
+    wrapper.className = "footer-nav-group";
+    wrapper.innerHTML = `<h3>${group.title}</h3><div class="footer-nav-links">${group.links
+      .map(([label, url]) => `<a href="${relativeSiteUrl(url)}" data-nav-match="${url.replace(/^\//, "")}">${label}</a>`)
+      .join("")}</div>`;
+    footerNav.append(wrapper);
+  });
 });
 
 document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) => {

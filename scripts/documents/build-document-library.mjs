@@ -569,6 +569,16 @@ function buildDownloadsPage() {
           </div>
           <div class="library-overview-grid">
             ${groupCards}
+            <a class="library-overview-card" href="/verstehen/sdgs-sdgplus/">
+              <span>Referenzrahmen</span>
+              <strong>SDGs &amp; SDG+</strong>
+              <em>Die SDGs und SDG+ erklären, worauf Wirkung bezogen wird: globaler UN-Zielrahmen plus demokratische, mediale, rechtsstaatliche und digitale WÖk-Erweiterungen.</em>
+            </a>
+            <a class="library-overview-card" href="/fuer/">
+              <span>Perspektiven</span>
+              <strong>Für wen?</strong>
+              <em>Zielgruppeneinstiege für Bürger:innen, Journalismus, Unternehmen, Politik, Kommunen, Investor:innen und Akademie.</em>
+            </a>
             <a class="library-overview-card" href="/erleben.html">
               <span>Interaktiv</span>
               <strong>Tools und Rechner</strong>

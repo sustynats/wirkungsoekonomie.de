@@ -167,6 +167,59 @@ function entryFromDocument(document) {
   };
 }
 
+function curatedIaEntries() {
+  return [
+    {
+      id: "woek-curated-fuer-wen",
+      title: "Für wen? Zielgruppen der Wirkungsökonomie",
+      description: "Einstiege für Bürger:innen, Journalismus, Unternehmen, Politik, Parteien, Verwaltung, Kommunen, Investor:innen, Wissenschaft und Akademie.",
+      url: "/fuer/",
+      section: "Zielgruppen",
+      type: "Zielgruppen-Hub",
+      format: "Orientierungsseite",
+      impactSpaces: ["Mensch", "Planet", "Demokratie"],
+      standards: ["SDG", "SDG+"],
+      instruments: ["WÖk-Kompass", "WÖk-Scanner"],
+      tags: ["Zielgruppen", "Bürger:innen", "Journalismus", "Unternehmen", "Politik", "Parteien", "Kommunen", "Investor:innen", "Akademie"],
+      aliases: ["Für wen", "Bürger", "Journalisten", "Unternehmer", "Politiker", "Parteien"],
+      body: "Der Zielgruppen-Hub übersetzt die Wirkungsökonomie in konkrete Perspektiven und führt zu passenden Seiten, Tools, Begriffen und Wirkungsfeldern.",
+      priority: 145,
+    },
+    {
+      id: "woek-curated-demokratische-anschlussfaehigkeit",
+      title: "Demokratische Anschlussfähigkeit",
+      description: "Neutraler Einstieg zu Politik, Parteien und Programmen als Vergleichs- und Übersetzungsraum der Wirkungsökonomie.",
+      url: "/ordnung/demokratische-anschlussfaehigkeit.html",
+      section: "Zielgruppen",
+      type: "Politik und Parteien",
+      format: "Orientierungsseite",
+      impactSpaces: ["Demokratie"],
+      standards: ["SDG 16", "SDG+", "Rechtsstaatlichkeit"],
+      instruments: ["Wirkungsrat", "Wirkungshaushalt", "Wirkungsprüfung"],
+      tags: ["Politik", "Parteien", "Demokratie", "Anschlussfähigkeit", "Wahlprogramme"],
+      aliases: ["Parteienseiten", "Politiker:innen", "Parteiprogramme", "CDU", "SPD", "Grüne", "FDP", "Linke"],
+      body: "Die Wirkungsökonomie ist kein Parteiprogramm. Sie macht politische Programme entlang gemeinsamer Wirkungsfragen vergleichbarer.",
+      priority: 142,
+    },
+    {
+      id: "woek-curated-sdg-sdgplus",
+      title: "SDGs & SDG+",
+      description: "Referenzrahmen für Wirkung: 17 UN-Ziele, Agenda 2030 und SDG+ als Erweiterung der Wirkungsökonomie.",
+      url: "/verstehen/sdgs-sdgplus/",
+      section: "SDG-/SDG+-Referenzrahmen",
+      type: "Referenzrahmen",
+      format: "Übersicht",
+      impactSpaces: ["Mensch", "Planet", "Demokratie"],
+      standards: ["SDG", "SDG+", "Agenda 2030"],
+      instruments: ["WÖk-ID", "Scorecard", "Wirkungsbewertung"],
+      tags: ["SDG", "SDGs", "SDG+", "Agenda 2030", "UN-Ziele", "Demokratie", "Medienqualität"],
+      aliases: ["Sustainable Development Goals", "Nachhaltigkeitsziele", "SDG Plus"],
+      body: "Der Referenzrahmen erklärt die offiziellen SDGs sowie SDG+ für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, Zusammenhalt und digitale Selbstbestimmung.",
+      priority: 150,
+    },
+  ];
+}
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -263,6 +316,16 @@ const documents = fs.existsSync(documentRegistryPath)
   : [];
 const generated = [];
 const meta = {};
+
+for (const entry of curatedIaEntries()) {
+  generated.push(entry);
+  meta[entry.url] = {
+    documentType: entry.type,
+    status: "published",
+    sectionId: entry.id,
+    searchBoost: entry.priority,
+  };
+}
 
 for (const term of glossary) {
   const entry = entryFromTerm(term);
