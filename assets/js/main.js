@@ -630,11 +630,67 @@ enhanceLongArticleToc();
 function enhancePublicCards() {
   document.querySelectorAll(".card, .info-card, .download-card, .library-card").forEach((card) => {
     const text = (card.textContent || "").toLowerCase();
-    const hasLink = Boolean(card.querySelector("a[href], button"));
-    const isDocument = /pdf|onlinefassung|download|bibliothek|dossier|konzeptpapier|arbeitspapier|thesenpapier/.test(text);
+    const primaryAction = card.querySelector("a[href], button");
+    const href = primaryAction instanceof HTMLAnchorElement ? primaryAction.getAttribute("href") || "" : "";
+    const actionText = (primaryAction?.textContent || "").toLowerCase();
+    const actionSignal = `${href} ${actionText}`;
+    const hasLink = Boolean(primaryAction);
+    const isDownload = /\.pdf(?:$|[?#])|pdf herunterladen|download/.test(actionSignal);
+    const isChapter = /\/referenz\/|kapitel-\d+|buchkapitel|online-buch|grundlagenwerk/.test(actionSignal);
+    const isTool = card.classList.contains("tool-card") || /\/erleben\/|\/anwendungen\/scanner|\/werkzeuge\/|tool testen|rechner nutzen|scanner|simulation/.test(actionSignal);
+    const isTerm = /\/begriffe\/|glossar|begriff erklären|begriff:/.test(actionSignal);
+    const isDocument = isDownload || /onlinefassung|bibliothek|dossier|konzeptpapier|arbeitspapier|thesenpapier|ausarbeitung|whitepaper|fallstudie/.test(text);
+    const isReference = /wök-relevanz|offizielle quellen|reguliert|standard|regularien|studien/.test(text) && card.classList.contains("is-document-card");
+    const isDocumentShell = card.classList.contains("download-card") || card.classList.contains("library-card");
+    const isExternal = hasLink && href && /^https?:\/\//.test(href) && !href.includes("wirkungsoekonomie.de");
+    let role = "info";
+    let label = "Einordnung";
+    let action = "";
+
+    if (isDownload) {
+      role = "download";
+      label = "Download";
+      action = "PDF öffnen";
+    } else if (isDocumentShell || isDocument) {
+      role = "document";
+      label = "Dokument";
+      action = "Onlinefassung lesen";
+    } else if (isReference) {
+      role = "reference";
+      label = "Referenz";
+      action = "Detailseite lesen";
+    } else if (isTool) {
+      role = "tool";
+      label = "Tool";
+      action = "Tool nutzen";
+    } else if (isChapter) {
+      role = "chapter";
+      label = "Buchkapitel";
+      action = "Kapitel lesen";
+    } else if (isTerm) {
+      role = "term";
+      label = "Begriff";
+      action = "Begriff erklären";
+    } else if (isExternal) {
+      role = "source";
+      label = "Quelle";
+      action = "Quelle öffnen";
+    } else if (hasLink) {
+      role = "link";
+      label = "Weiterführung";
+      action = "Weiterlesen";
+    }
+
     card.classList.toggle("is-link-card", hasLink);
     card.classList.toggle("is-static-card", !hasLink);
     card.classList.toggle("is-document-card", isDocument);
+    card.dataset.cardRole = role;
+    card.dataset.cardLabel = label;
+    if (action) {
+      card.dataset.cardAction = action;
+    } else {
+      delete card.dataset.cardAction;
+    }
   });
 }
 
