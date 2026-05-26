@@ -5,6 +5,7 @@ import crypto from "node:crypto";
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
 const glossaryPath = "public/data/glossary.terms.json";
+const documentRegistryPath = "assets/data/document-registry.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
@@ -138,6 +139,87 @@ function entryFromTerm(term) {
   };
 }
 
+function entryFromDocument(document) {
+  const body = [
+    document.title,
+    document.type,
+    document.summary,
+    ...(document.category || []),
+    ...(document.audience || []),
+    ...(document.keyPoints || []),
+    ...(document.relatedTerms || []),
+  ].join(" ");
+  return {
+    id: `woek-document-${document.id}`,
+    title: document.title,
+    description: document.summary,
+    url: document.onlineUrl || document.pdfUrl,
+    section: "Bibliothek",
+    type: document.type,
+    format: document.pdfUrl ? "Onlinefassung und PDF" : "Onlinefassung",
+    impactSpaces: ["Mensch", "Planet", "Demokratie"],
+    standards: (document.relatedTerms || []).filter((item) => /sdg|csrd|esrs|taxonomie|gri/i.test(item)),
+    instruments: document.relatedTerms || [],
+    tags: [document.status, ...(document.category || []), ...(document.audience || [])].filter(Boolean),
+    aliases: [document.pdfUrl, document.sourceOnlineUrl].filter(Boolean),
+    body,
+    priority: document.isArchive ? 58 : 138,
+  };
+}
+
+function curatedIaEntries() {
+  return [
+    {
+      id: "woek-curated-fuer-wen",
+      title: "Für wen? Zielgruppen der Wirkungsökonomie",
+      description: "Einstiege für Bürger:innen, Journalismus, Unternehmen, Politik, Parteien, Verwaltung, Kommunen, Investor:innen, Wissenschaft und Akademie.",
+      url: "/fuer/",
+      section: "Zielgruppen",
+      type: "Zielgruppen-Hub",
+      format: "Orientierungsseite",
+      impactSpaces: ["Mensch", "Planet", "Demokratie"],
+      standards: ["SDG", "SDG+"],
+      instruments: ["WÖk-Kompass", "WÖk-Scanner"],
+      tags: ["Zielgruppen", "Bürger:innen", "Journalismus", "Unternehmen", "Politik", "Parteien", "Kommunen", "Investor:innen", "Akademie"],
+      aliases: ["Für wen", "Bürger", "Journalisten", "Unternehmer", "Politiker", "Parteien"],
+      body: "Der Zielgruppen-Hub übersetzt die Wirkungsökonomie in konkrete Perspektiven und führt zu passenden Seiten, Tools, Begriffen und Wirkungsfeldern.",
+      priority: 145,
+    },
+    {
+      id: "woek-curated-demokratische-anschlussfaehigkeit",
+      title: "Demokratische Anschlussfähigkeit",
+      description: "Neutraler Einstieg zu Politik, Parteien und Programmen als Vergleichs- und Übersetzungsraum der Wirkungsökonomie.",
+      url: "/ordnung/demokratische-anschlussfaehigkeit.html",
+      section: "Zielgruppen",
+      type: "Politik und Parteien",
+      format: "Orientierungsseite",
+      impactSpaces: ["Demokratie"],
+      standards: ["SDG 16", "SDG+", "Rechtsstaatlichkeit"],
+      instruments: ["Wirkungsrat", "Wirkungshaushalt", "Wirkungsprüfung"],
+      tags: ["Politik", "Parteien", "Demokratie", "Anschlussfähigkeit", "Wahlprogramme"],
+      aliases: ["Parteienseiten", "Politiker:innen", "Parteiprogramme", "CDU", "SPD", "Grüne", "FDP", "Linke"],
+      body: "Die Wirkungsökonomie ist kein Parteiprogramm. Sie macht politische Programme entlang gemeinsamer Wirkungsfragen vergleichbarer.",
+      priority: 142,
+    },
+    {
+      id: "woek-curated-sdg-sdgplus",
+      title: "SDGs & SDG+",
+      description: "Referenzrahmen für Wirkung: 17 UN-Ziele, Agenda 2030 und SDG+ als Erweiterung der Wirkungsökonomie.",
+      url: "/verstehen/sdgs-sdgplus/",
+      section: "SDG-/SDG+-Referenzrahmen",
+      type: "Referenzrahmen",
+      format: "Übersicht",
+      impactSpaces: ["Mensch", "Planet", "Demokratie"],
+      standards: ["SDG", "SDG+", "Agenda 2030"],
+      instruments: ["WÖk-ID", "Scorecard", "Wirkungsbewertung"],
+      tags: ["SDG", "SDGs", "SDG+", "Agenda 2030", "UN-Ziele", "Demokratie", "Medienqualität"],
+      aliases: ["Sustainable Development Goals", "Nachhaltigkeitsziele", "SDG Plus"],
+      body: "Der Referenzrahmen erklärt die offiziellen SDGs sowie SDG+ für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, Zusammenhalt und digitale Selbstbestimmung.",
+      priority: 150,
+    },
+  ];
+}
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -229,8 +311,21 @@ function entriesFromContent(file) {
 
 const existing = fs.existsSync(indexPath) ? JSON.parse(fs.readFileSync(indexPath, "utf8")) : [];
 const glossary = fs.existsSync(glossaryPath) ? JSON.parse(fs.readFileSync(glossaryPath, "utf8")).terms : [];
+const documents = fs.existsSync(documentRegistryPath)
+  ? JSON.parse(fs.readFileSync(documentRegistryPath, "utf8")).filter((document) => document.isPublic !== false)
+  : [];
 const generated = [];
 const meta = {};
+
+for (const entry of curatedIaEntries()) {
+  generated.push(entry);
+  meta[entry.url] = {
+    documentType: entry.type,
+    status: "published",
+    sectionId: entry.id,
+    searchBoost: entry.priority,
+  };
+}
 
 for (const term of glossary) {
   const entry = entryFromTerm(term);
@@ -244,6 +339,24 @@ for (const term of glossary) {
     relatedTerms: term.relatedTerms || [],
     relatedDocuments: term.relatedDocuments || [],
     sourceFile: term.sourceDocument,
+    searchBoost: entry.priority,
+  };
+}
+
+for (const document of documents) {
+  const entry = entryFromDocument(document);
+  generated.push(entry);
+  meta[entry.url] = {
+    documentType: "bibliothek",
+    status: document.status,
+    version: document.stand,
+    sectionId: `document-${document.id}`,
+    documentId: document.id,
+    relatedTerms: document.relatedTerms || [],
+    relatedDocuments: [],
+    relatedFields: document.relatedFields || [],
+    relatedTools: document.relatedTools || [],
+    sourceFile: documentRegistryPath,
     searchBoost: entry.priority,
   };
 }

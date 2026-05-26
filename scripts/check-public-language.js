@@ -39,11 +39,13 @@ const SCAN_TARGETS = [
   "verstehen",
   "werkstatt",
   "werkzeuge",
+  "website-1-0-release",
   "wirkungsoekonomie.html",
   "wirkungsfelder",
   "wissen",
   "workflow.html",
   "assets/downloads",
+  "assets/js/main.js",
 ];
 
 const BLOCKED_TERMS = [
@@ -68,6 +70,23 @@ const BLOCKED_TERMS = [
   "Einzeldossier-Set",
   "online zitierfähig als CTA",
   "Export und Archiv im Einstieg",
+  "DOCX herunterladen",
+  "Word herunterladen",
+  "Dokument als Word",
+  "Word-Version",
+  "Word-Datei",
+  "Word-Export",
+  "Arbeitsfassung herunterladen",
+  "Dokument bearbeiten",
+  "Dateiformat DOCX",
+  "Dateiformat Word",
+  "Konzept-Download",
+  "Detail-Download",
+  "Dossier-Download",
+  "Weiterarbeit",
+  "PDF und DOCX",
+  "PDF/DOCX",
+  "DOCX",
 ];
 
 const TECHNICAL_CANONICAL_RE = /<link\b[^>]*rel=["']canonical["'][^>]*>/gi;
@@ -81,7 +100,7 @@ function walk(entry, files = []) {
       if (child.name === "node_modules" || child.name === ".git") continue;
       walk(path.join(entry, child.name), files);
     }
-  } else if (entry.endsWith(".html")) {
+  } else if (entry.endsWith(".html") || entry.endsWith(".js")) {
     files.push(full);
   }
   return files;

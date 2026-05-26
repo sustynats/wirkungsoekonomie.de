@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-wirtschaft-unternehmen";
-const JS_VERSION = "20260525-sprint-2";
+const JS_VERSION = "20260526-doc-downloads";
 const SRC = "docs/wirtschaft-unternehmen/docx-extracts";
 
 const areas = [
@@ -133,6 +133,12 @@ function sectionTitle(id, text) {
 function exists(rel) {
   return fs.existsSync(path.join(ROOT, rel));
 }
+function publicPdf(target) {
+  if (!target) return "";
+  if (/^https?:/.test(target)) return target;
+  const pdf = target.replace(/\.(docx|doc)$/i, ".pdf");
+  return exists(pdf) ? pdf : "";
+}
 function read(rel) {
   return fs.readFileSync(path.join(ROOT, rel), "utf8");
 }
@@ -249,6 +255,18 @@ function mdToHtml(markdown) {
   return { html: html.join("\n"), toc };
 }
 
+function publicMethodMarkdown(markdown) {
+  return markdown
+    .replace(/^#\s*Tool-Spezifikation:\s*/m, "# Methodik: ")
+    .replace(/^\*\*Autorin:\*\*.*$/gm, "")
+    .replace(/^\*\*Referenz:\*\*.*$/gm, "")
+    .replace(/^\*\*Version:\*\*.*$/gm, "")
+    .replace(/^\*\*Stand:\*\*.*$/gm, "")
+    .replace(/\bv0\.1\b/g, "")
+    .replace(/Einzeldossiers/g, "Dossiers")
+    .replace(/Einzeldossier/g, "Dossier");
+}
+
 function tocBlock(toc) {
   return `<nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol>${toc.slice(0, 22).map((x) => `<li class="toc-level-${x.level}"><a href="#${x.id}">${escapeHtml(x.text)}</a></li>`).join("")}</ol></nav>`;
 }
@@ -284,8 +302,10 @@ function toolGrid(base) {
   return `<section class="section" aria-labelledby="tools"><div class="section-header"><p class="hero-kicker">Werkzeuge</p>${sectionTitle("tools", "Werkzeuge in diesem Bereich")}<p>Werkzeuge erklären Methoden. Entscheidungen bleiben unternehmerisch, rechtlich und demokratisch verantwortet.</p></div>${cardGrid(base, tools.map(([title, kicker, text, link]) => ({ title, kicker, text, href: link, label: link.includes("erleben/") ? "Tool testen" : "Methodik lesen" })))}</section>`;
 }
 function downloadBlock(base, items) {
-  const links = items.filter((x) => x.href && exists(x.href));
-  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${sectionTitle("downloads", "Vertiefung und Arbeitsmaterial")}<p>Ergänzende Downloadfassungen und Druckfunktion stehen hier am Ende der Seite.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.map((x) => `<a class="btn btn-secondary" href="${href(base, x.href)}">${escapeHtml(x.label)}</a>`).join("")}</div></div></section>`;
+  const links = items
+    .map((x) => ({ ...x, href: publicPdf(x.href) || x.href }))
+    .filter((x) => x.href && !/\.(docx|doc)$/i.test(x.href) && exists(x.href));
+  return `<section class="section" aria-labelledby="downloads"><div class="section-header"><p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>${sectionTitle("downloads", "Downloads und Materialien")}<p>PDFs und Druckfunktion stehen am Ende der Seite. Konzept-PDFs erklären die fachliche Logik; Dossier-PDFs zeigen Anwendung, Annahmen, Bewertungsweg und Grenzen.</p></div><div class="card-grid three"><article class="card"><p class="card-kicker">Druck</p><h3>Seite drucken</h3><p>Erzeugt eine Druckfassung der aktuell gelesenen Onlinefassung.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button></div></article>${links.map((x) => `<article class="card"><p class="card-kicker">${escapeHtml(x.kicker || "PDF")}</p><h3>${escapeHtml(x.title || x.label)}</h3><p>${escapeHtml(x.text || "Öffentlich freigegebene PDF-Fassung.")}</p><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(base, x.href)}">${escapeHtml(x.label || "PDF herunterladen")}</a></div></article>`).join("")}</div></section>`;
 }
 
 function docName(prefix, slug) {
@@ -347,9 +367,9 @@ function portalPage() {
       { title: "Arbeitsbibliothek", text: "Übersicht der Materialien zu diesem Wirkungsfeld.", href: "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/", label: "Arbeitsmaterial ansehen" },
     ])}</section>
     ${downloadBlock(base, [
-      { label: "Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" },
-      { label: "Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" },
-      { label: "Standard Detailkonzepte Word", href: "assets/downloads/woek_standard_detailkonzepte_einzeldossiers_v0_2.docx" },
+      { kicker: "Konzept-PDF", title: "Konzeptpapier Wirtschaft & Unternehmen", text: "Fachliche PDF-Fassung zum Wirkungsfeld Wirtschaft & Unternehmen.", label: "Konzept-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.pdf" },
+      { kicker: "Dossier-PDF", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Praxisnahe PDF-Fassung mit Beispielen, Datenlogik und Umsetzungshinweisen.", label: "Dossier-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf" },
+      { kicker: "PDF-Sammlung", title: "Detailkonzepte und Kurz-Dossiers", text: "Sammel-PDF mit mehreren Unterbereichen.", label: "PDF-Sammlung herunterladen", href: "assets/downloads/woek_standard_detailkonzepte_einzeldossiers_v0_2.pdf" },
     ])}`,
   });
 }
@@ -361,7 +381,7 @@ function businessPages() {
     subtitle: "Unternehmen als Wirkungssysteme im Rahmen der Wirkungsökonomie.",
     mdRel: `${SRC}/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.md`,
     status: "Konzeptpapier",
-    downloads: [{ label: "Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" }],
+    downloads: [{ kicker: "Konzept-PDF", title: "Konzeptpapier Wirtschaft & Unternehmen", text: "Fachliche PDF-Fassung dieses Konzeptpapiers.", label: "Konzept-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.pdf" }],
   });
   fulltextPage({
     rel: "werkstatt/dossiers/wirtschaft-unternehmen/index.html",
@@ -371,8 +391,8 @@ function businessPages() {
     status: "Gesamtdossier",
     searchSection: "Werkstatt",
     searchType: "Dossier",
-    downloads: [{ label: "Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" }],
-    cards: areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/dossiers/${slug}/`, label: "Einzeldossier lesen" })),
+    downloads: [{ kicker: "Dossier-PDF", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Praxisnahe PDF-Fassung mit Beispielen, Datenlogik und Umsetzungshinweisen.", label: "Dossier-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf" }],
+    cards: areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/dossiers/${slug}/`, label: "Dossier lesen" })),
   });
   for (const [slug, title, text] of areas) {
     const detailName = docName("woek_detailkonzept", slug);
@@ -383,23 +403,23 @@ function businessPages() {
       subtitle: text,
       mdRel: `${SRC}/${detailName}.md`,
       status: "Detailkonzept",
-      downloads: [{ label: "Detailkonzept Word", href: `assets/downloads/${detailName}.docx` }],
-      cards: [{ title: `Einzeldossier ${title}`, text: "Vertiefung mit Beispielen, Datenquellen und Umsetzungshinweisen.", href: `wirkungsfelder/wirtschaft-unternehmen/dossiers/${slug}/`, label: "Einzeldossier lesen" }],
+      downloads: [{ kicker: "Konzept-PDF", title: `Detailkonzept ${title}`, text: "Fachliche PDF-Fassung: Problem, WÖk-Perspektive, Methodik, politische Anschlussfähigkeit und Schutzgrenzen.", label: "Konzept-PDF herunterladen", href: `assets/downloads/${detailName}.pdf` }],
+      cards: [{ title: `Kurz-Dossier ${title}`, text: "Kurzer Praxiszugang mit Beispielen, Datenquellen und Umsetzungshinweisen.", href: `wirkungsfelder/wirtschaft-unternehmen/dossiers/${slug}/`, label: "Dossier lesen" }],
     });
     fulltextPage({
       rel: `wirkungsfelder/wirtschaft-unternehmen/dossiers/${slug}/index.html`,
-      title: `Einzeldossier ${title}`,
+      title: `Kurz-Dossier ${title}`,
       subtitle: text,
       mdRel: `${SRC}/${dossierName}.md`,
-      status: "Einzeldossier",
-      downloads: [{ label: "Einzeldossier Word", href: `assets/downloads/${dossierName}.docx` }],
+      status: "Kurz-Dossier",
+      downloads: [{ kicker: "Dossier-PDF", title: `Kurz-Dossier ${title}`, text: "Kurze PDF-Fassung: Beispiel, Daten, Annahmen, Bewertungsweg, Ergebnisinterpretation und Grenzen. Keine umfassende Langfassung.", label: "Dossier-PDF herunterladen", href: `assets/downloads/${dossierName}.pdf` }],
       cards: [{ title: `Detailkonzept ${title}`, text: "Konzeptuelle Grundlegung des Unterbereichs.", href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/`, label: "Detailkonzept lesen" }],
     });
   }
 }
 
 function demoPage() {
-  const spec = mdToHtml(read("docs/wirtschaft-unternehmen/tool_spezifikation_unternehmens_wirkungscheck.md"));
+  const spec = mdToHtml(publicMethodMarkdown(read("docs/wirtschaft-unternehmen/tool_spezifikation_unternehmens_wirkungscheck.md")));
   page({
     rel: "erleben/unternehmens-wirkungscheck/index.html",
     title: "Unternehmens-Wirkungscheck | Wirkungsökonomie erleben",
@@ -465,7 +485,7 @@ function retroDetailPages() {
         ${politicalBlock()}
         ${sdgBlock()}
         ${bookBlock(base)}
-        ${downloadBlock(base, [{ label: "Einzeldossier online lesen", href: `${group.base}/dossiers/${slug}/` }])}`,
+        ${downloadBlock(base, [{ label: "Dossier online lesen", href: `${group.base}/dossiers/${slug}/` }])}`,
       });
     }
   }
@@ -475,7 +495,7 @@ function workshopPages() {
   page({
     rel: "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/index.html",
     title: "Wirtschaft & Unternehmen in der Arbeitsbibliothek | Werkstatt",
-    description: "Arbeitsbibliothek zu Wirtschaft & Unternehmen: Konzept, Gesamtdossier, Detailkonzepte, Einzeldossiers, Methodik und Downloads.",
+    description: "Arbeitsbibliothek zu Wirtschaft & Unternehmen: Konzept, Gesamtdossier, Detailkonzepte, Kurz-Dossiers, Methodik und Downloads.",
     searchSection: "Werkstatt",
     searchType: "Arbeitsbibliothek",
     body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek · Wirkungsfeld", title: "Wirtschaft & Unternehmen", subtitle: "Konzept, Dossiers, Detailkonzepte und Unternehmens-Wirkungscheck.", text: "Diese Bibliothek bündelt Vertiefungen und Materialien zu Wirtschaft & Unternehmen.", action: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/wirtschaft-unternehmen/")}">Zur Übersicht</a>` })}
@@ -488,16 +508,16 @@ function workshopPages() {
       ...areas.map(([slug, title, text]) => ({ title, text, href: `wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/${slug}/` })),
     ])}</section>
     ${downloadBlock(base, [
-      { label: "Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" },
-      { label: "Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" },
-      { label: "Standard Detailkonzepte Word", href: "assets/downloads/woek_standard_detailkonzepte_einzeldossiers_v0_2.docx" },
+      { kicker: "Konzept-PDF", title: "Konzeptpapier Wirtschaft & Unternehmen", text: "Fachliche PDF-Fassung zum Wirkungsfeld.", label: "Konzept-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.pdf" },
+      { kicker: "Dossier-PDF", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Praxisnahe PDF-Fassung mit Beispielen und Umsetzungshinweisen.", label: "Dossier-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf" },
+      { kicker: "PDF-Sammlung", title: "Detailkonzepte und Kurz-Dossiers", text: "Sammel-PDF mit mehreren Unterbereichen.", label: "PDF-Sammlung herunterladen", href: "assets/downloads/woek_standard_detailkonzepte_einzeldossiers_v0_2.pdf" },
     ])}`,
   });
 
   page({
     rel: "werkstatt/arbeitsbibliothek/konzepte-dossiers/index.html",
     title: "Konzepte & Dossiers | Arbeitsbibliothek der Wirkungsökonomie",
-    description: "Online lesbare Konzeptpapiere, Gesamtdossiers, Detailkonzepte und Einzeldossiers der Wirkungsökonomie.",
+    description: "Online lesbare Konzeptpapiere, Gesamtdossiers, Detailkonzepte und Dossiers der Wirkungsökonomie.",
     searchSection: "Werkstatt",
     searchType: "Arbeitsbibliothek",
     body: (base, route) => `${hero(base, { kicker: "Arbeitsbibliothek", title: "Konzepte & Dossiers", subtitle: "Online lesen, zitieren und drucken.", text: "Konzepte, Detailkonzepte und Dossiers sind als Onlinefassungen und Arbeitsmaterial geordnet.", action: `<a class="btn btn-primary" href="${href(base, "werkstatt/arbeitsbibliothek/")}">Zur Arbeitsbibliothek</a>` })}
@@ -510,8 +530,8 @@ function workshopPages() {
       { kicker: "", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Gesamtdossier online lesen.", href: "werkstatt/dossiers/wirtschaft-unternehmen/" },
     ])}</section>
     ${downloadBlock(base, [
-      { label: "Wirtschaft-Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" },
-      { label: "Wirtschaft-Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" },
+      { kicker: "Konzept-PDF", title: "Konzeptpapier Wirtschaft & Unternehmen", text: "Fachliche PDF-Fassung zum Wirkungsfeld.", label: "Konzept-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.pdf" },
+      { kicker: "Dossier-PDF", title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Praxisnahe PDF-Fassung mit Beispielen und Umsetzungshinweisen.", label: "Dossier-PDF herunterladen", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf" },
     ])}`,
   });
 }

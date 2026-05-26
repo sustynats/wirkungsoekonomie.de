@@ -146,6 +146,15 @@ function exists(rel) {
   return rel && fs.existsSync(abs(rel));
 }
 
+function publicDownload(rel) {
+  if (!rel) return "";
+  if (/\.docx?$/i.test(rel)) {
+    const pdfRel = rel.replace(/\.docx?$/i, ".pdf");
+    return exists(pdfRel) ? pdfRel : "";
+  }
+  return rel;
+}
+
 function routeToRel(fromRel, target) {
   if (!target) return "";
   if (/^(https?:|mailto:|#)/.test(target)) return target;
@@ -192,15 +201,16 @@ function childPages(dirRel) {
 
 function findDownload(prefix, slug) {
   const candidates = [
-    `assets/downloads/${prefix}_${slug}_v0_1.docx`,
-    `assets/downloads/${prefix}_${slug.replaceAll("-", "_")}_v0_1.docx`,
-    `assets/downloads/${prefix}_${slug.replaceAll("_", "-")}_v0_1.docx`,
+    `assets/downloads/${prefix}_${slug}_v0_1.pdf`,
+    `assets/downloads/${prefix}_${slug.replaceAll("-", "_")}_v0_1.pdf`,
+    `assets/downloads/${prefix}_${slug.replaceAll("_", "-")}_v0_1.pdf`,
   ];
   return candidates.find(exists) || "";
 }
 
 function linkButton(config, label, target, className = "btn btn-secondary") {
   if (!target) return "";
+  if (/\.docx?$/i.test(target)) return "";
   if (!/^(https?:|mailto:|#)/.test(target) && !exists(target.replace(/\/$/, "/index.html"))) {
     if (target.endsWith("/") || !exists(target)) return "";
   }
@@ -219,8 +229,8 @@ function topicRows(config) {
     const detailRel = `${config.basePath}/detailkonzepte/${slug}/index.html`;
     const dossierRel = `${config.basePath}/dossiers/${slug}/index.html`;
     const title = config.topicAliases?.[slug] || pageTitle(detailRel, pageTitle(dossierRel, slugLabel(slug)));
-    const detailDownload = config.downloadAliases?.[slug]?.detail || findDownload("woek_detailkonzept", slug) || config.detailDownload || "";
-    const dossierDownload = config.downloadAliases?.[slug]?.dossier || findDownload("woek_einzeldossier", slug) || config.dossierDownload || "";
+    const detailDownload = publicDownload(config.downloadAliases?.[slug]?.detail) || findDownload("woek_detailkonzept", slug) || publicDownload(config.detailDownload) || "";
+    const dossierDownload = publicDownload(config.downloadAliases?.[slug]?.dossier) || findDownload("woek_einzeldossier", slug) || publicDownload(config.dossierDownload) || "";
     return { slug, title, detailRel, dossierRel, detailDownload, dossierDownload };
   });
 }
@@ -228,22 +238,22 @@ function topicRows(config) {
 function compactAccess(config) {
   const cards = [];
   if (config.concept) {
-    cards.push(card(config, "Konzept", "Konzeptpapier", "Grundlage online lesen und bei Bedarf als Word-Datei exportieren.", [
+    cards.push(card(config, "Kurzes Konzept / Einstieg", "Konzeptpapier", "Kompakter Einstieg in die Grundlogik. Für längere Ausarbeitung Detailkonzepte und Dossiers nutzen.", [
       linkButton(config, "Onlinefassung lesen", config.concept[1], "text-link"),
       ...(config.extraDownloads || []).filter(([label]) => /Konzept/i.test(label)).map(([label, href]) => linkButton(config, label, href, "text-link")),
     ]));
   }
   if (config.dossier) {
-    cards.push(card(config, "Dossier", "Gesamtdossier", "Vertiefung mit Beispielen, Datenquellen, Bewertungswegen und Umsetzungsoptionen.", [
+    cards.push(card(config, "Langfassung / Dossier", "Gesamtdossier", "Ausführlichere Vertiefung mit Beispielen, Datenquellen, Bewertungswegen und Umsetzungsoptionen.", [
       linkButton(config, "Dossier lesen", config.dossier[1], "text-link"),
       ...(config.extraDownloads || []).filter(([label]) => /Gesamt|Dossier/i.test(label)).map(([label, href]) => linkButton(config, label, href, "text-link")),
     ]));
   }
-  cards.push(card(config, "Detailkonzepte", "Alle Detailkonzepte", "Langfassungen der Unterbereiche mit zitierfähigen Abschnittsankern.", [
+  cards.push(card(config, "Langfassungen", "Alle Detailkonzepte", "Längere Fachausarbeitungen der Unterbereiche mit Abschnittsankern und Kontext.", [
     linkButton(config, "Detailkonzepte ansehen", config.detailIndex?.[1], "text-link"),
     linkButton(config, "Detailkonzepte herunterladen", config.detailDownload, "text-link"),
   ]));
-  cards.push(card(config, "Einzeldossiers", "Alle Einzeldossiers", "Praxisfälle, Bewertungslogik, Annahmen, Datenquellen, Toolbezug und Grenzen.", [
+  cards.push(card(config, "Praxisdossiers", "Alle Einzeldossiers", "Praxisfälle, Bewertungslogik, Annahmen, Datenquellen, Toolbezug und Grenzen.", [
     linkButton(config, "Einzeldossiers ansehen", config.dossierIndex?.[1], "text-link"),
     linkButton(config, "Einzeldossiers herunterladen", config.dossierDownload, "text-link"),
   ]));
@@ -253,11 +263,11 @@ function compactAccess(config) {
 function topicMatrix(config) {
   const rows = topicRows(config);
   if (!rows.length) return "";
-  return `<div class="table-wrap publication-matrix-wrap"><table class="data-table publication-matrix"><thead><tr><th>Unterbereich</th><th>Detailkonzept</th><th>Detail-Download</th><th>Dossier</th><th>Dossier-Download</th></tr></thead><tbody>${rows.map((row) => {
+  return `<div class="table-wrap publication-matrix-wrap"><table class="data-table publication-matrix"><thead><tr><th>Unterbereich</th><th>Detailkonzept</th><th>Konzept-PDF</th><th>Dossier</th><th>Dossier-PDF</th></tr></thead><tbody>${rows.map((row) => {
     const detailOnline = exists(row.detailRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.detailRel.replace(/index\.html$/, ""))}">Konzept lesen</a>` : "";
     const dossierOnline = exists(row.dossierRel) ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierRel.replace(/index\.html$/, ""))}">Dossier lesen</a>` : "";
-    const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
-    const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "Gesamtset" : "Word"}</a>` : "wird ergänzt";
+    const detailDownload = row.detailDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.detailDownload)}">${row.detailDownload === config.detailDownload ? "PDF-Gesamtset" : "PDF"}</a>` : "PDF folgt";
+    const dossierDownload = row.dossierDownload ? `<a class="text-link" href="${routeToRel(config.rel, row.dossierDownload)}">${row.dossierDownload === config.dossierDownload ? "PDF-Gesamtset" : "PDF"}</a>` : "PDF folgt";
     return `<tr><th scope="row">${escapeHtml(row.title)}</th><td>${detailOnline}</td><td>${detailDownload}</td><td>${dossierOnline}</td><td>${dossierDownload}</td></tr>`;
   }).join("")}</tbody></table></div>`;
 }
@@ -268,13 +278,13 @@ function hub(config) {
   <div class="section-header">
     <p class="hero-kicker">Vertiefung</p>
     <h2 id="vertiefung-arbeitsmaterial-title">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#vertiefung-arbeitsmaterial-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-    <p>Die Seite führt zuerst in das Thema ein. Dossiers, Detailkonzepte und Downloads sind hier als weiterführende Vertiefung gebündelt.</p>
+    <p>Die Seite führt zuerst in das Thema ein. Die Karten unterscheiden klar zwischen kurzem Konzept, Langfassung, Praxisdossier und PDF-Arbeitsmaterial.</p>
   </div>
   ${compactAccess(config)}
   <div class="section-header compact">
     <p class="hero-kicker">Dokumentenmatrix</p>
     <h3>Detailkonzepte und Dossiers pro Unterbereich</h3>
-    <p>Diese Matrix führt pro Unterthema die Online-Fassung und den Download zusammen. So ist sofort sichtbar, wo gelesen und wo exportiert wird.</p>
+    <p>Diese Matrix führt pro Unterthema Online-Fassung und Download zusammen. So ist sofort sichtbar, was kurze Orientierung, was Langfassung und was Praxisdossier ist.</p>
   </div>
   ${topicMatrix(config)}
 </section>

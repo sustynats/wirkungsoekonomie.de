@@ -33,6 +33,8 @@ if (siteNav) {
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
+    ["Für wen?", "fuer/", "fuer/|ordnung/anschlussfaehigkeit/|ordnung/demokratische-anschlussfaehigkeit.html"],
+    ["SDGs & SDG+", "verstehen/sdgs-sdgplus/", "verstehen/sdgs-sdgplus/|referenzrahmen/sdgs-sdgplus/|sdg-plus.html|sdg-plus/|sdg-sdgplus/|sdg-und-sdg-plus/"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
@@ -127,6 +129,45 @@ document.querySelectorAll(".site-nav .nav-more[data-nav-match]").forEach((detail
   const matchTokens = (details.dataset.navMatch || "").split("|").filter(Boolean);
   const isCurrent = matchTokens.some((token) => normalizedPath === token || normalizedPath.startsWith(token));
   details.classList.toggle("active", isCurrent || details.classList.contains("active"));
+});
+
+document.querySelectorAll(".footer-nav").forEach((footerNav) => {
+  const existingText = footerNav.textContent || "";
+  const footerGroups = [
+    {
+      title: "Für wen?",
+      links: [
+        ["Zielgruppen-Hub", "fuer/"],
+        ["Bürger:innen", "fuer/buergerinnen.html"],
+        ["Journalismus", "fuer/journalismus.html"],
+        ["Unternehmen", "fuer/unternehmen.html"],
+        ["Politik / Parteien", "fuer/politik.html"],
+        ["Verwaltung / Kommunen", "fuer/kommunen.html"],
+        ["Investor:innen", "fuer/investoren.html"],
+        ["Wissenschaft / Akademie", "fuer/wissenschaft-forschung.html"],
+      ],
+    },
+    {
+      title: "SDGs & SDG+",
+      links: [
+        ["Referenzrahmen", "verstehen/sdgs-sdgplus/"],
+        ["Alle 17 SDGs", "verstehen/sdgs-sdgplus/#sdg-list"],
+        ["SDG+ verstehen", "verstehen/sdgs-sdgplus/#sdgplus"],
+        ["Agenda 2030", "verstehen/sdgs-sdgplus/agenda-2030/"],
+        ["Unterziele", "verstehen/sdgs-sdgplus/unterziele/"],
+        ["SDG+ Demokratie", "verstehen/sdgs-sdgplus/sdgplus-demokratie/"],
+      ],
+    },
+  ];
+  footerGroups.forEach((group) => {
+    if (existingText.includes(group.title)) return;
+    const wrapper = document.createElement("div");
+    wrapper.className = "footer-nav-group";
+    wrapper.innerHTML = `<h3>${group.title}</h3><div class="footer-nav-links">${group.links
+      .map(([label, url]) => `<a href="${relativeSiteUrl(url)}" data-nav-match="${url.replace(/^\//, "")}">${label}</a>`)
+      .join("")}</div>`;
+    footerNav.append(wrapper);
+  });
 });
 
 document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) => {
@@ -453,6 +494,11 @@ function applyDownloadFilter() {
     }
   });
 
+  document.querySelectorAll("[data-library-group]").forEach((group) => {
+    const hasVisibleCards = Array.from(group.querySelectorAll("[data-download-card]")).some((card) => !card.hidden);
+    group.hidden = !hasVisibleCards;
+  });
+
   downloadFilterButtons.forEach((button) => {
     const isActive = button.dataset.downloadFilter === downloadFilterState.category;
     button.classList.toggle("active", isActive);
@@ -471,6 +517,17 @@ function applyDownloadFilter() {
       "medien-demokratie": "Medien und Demokratie",
       "daten-indikatoren": "Daten und Indikatoren",
       archiv: "Archiv / ältere Arbeitsstände",
+      buch: "Bücher und Grundlagenwerke",
+      ausarbeitung: "lange Ausarbeitungen",
+      thesenpapier: "Thesenpapiere und kurze Konzepte",
+      beispiel: "Beispiele und Fallnotizen",
+      recht: "Rechts- und Steuerungsentwürfe",
+      langfassung: "Langfassungen",
+      "buch-langform": "Buch / Langform",
+      "mittlere-ausarbeitung": "mittlere Ausarbeitungen",
+      kurzpapier: "kurze Thesen- und Konzeptpapiere",
+      kurzbeispiel: "Kurzbeispiele und Fallnotizen",
+      register: "Register / Nachschlagewerke",
     };
     const categoryLabel = labels[downloadFilterState.category] || downloadFilterState.category;
     const queryLabel = hasSearch ? ` · Suche: „${downloadFilterState.query}“` : "";
@@ -517,7 +574,10 @@ function getArticleReadMinutes() {
 
 function enhanceLongArticleToc() {
   const articleBody = document.querySelector(".article-body");
-  if (!articleBody || document.querySelector(".article-toc")) {
+  const existingTemplateToc = document.querySelector(
+    ".toc-card, .toc-links[aria-label='Inhaltsverzeichnis'], nav[aria-label='Inhaltsverzeichnis'], details[aria-label='Inhaltsverzeichnis']"
+  );
+  if (!articleBody || document.querySelector(".article-toc") || existingTemplateToc) {
     return;
   }
 
@@ -1044,41 +1104,41 @@ function initPublicationAccessFallback() {
       prefixes: ["/wirkungsfelder/produkte-konsum/"],
       detail: "/wirkungsfelder/produkte-konsum/detailkonzepte/",
       dossier: "/wirkungsfelder/produkte-konsum/dossiers/",
-      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.docx",
+      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.pdf",
     },
     {
       prefixes: ["/werkzeuge/impact-controlling/"],
       detail: "/werkzeuge/impact-controlling/detailkonzepte/",
       dossier: "/werkzeuge/impact-controlling/dossiers/",
-      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.docx",
+      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/staat-recht-demokratie/", "/werkstatt/dossiers/staat-recht-demokratie/"],
       detail: "/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/",
       dossier: "/werkstatt/dossiers/staat-recht-demokratie/dossiers/",
-      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/wirtschaft-unternehmen/", "/werkstatt/dossiers/wirtschaft-unternehmen/"],
       detail: "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/",
       dossier: "/wirkungsfelder/wirtschaft-unternehmen/dossiers/",
-      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/wohnen-stadt/"],
       detail: "/wirkungsfelder/wohnen-stadt/detailkonzepte/",
       dossier: "/wirkungsfelder/wohnen-stadt/dossiers/",
-      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/arbeit-einkommen/"],
       detail: "#detailkonzept",
       dossier: "#dossier",
-      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx",
-      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.pdf",
+      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.pdf",
       fallbackDetail: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
       fallbackDossier: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
     },
@@ -1086,13 +1146,16 @@ function initPublicationAccessFallback() {
       prefixes: ["/wirkungsfelder/rente-soziale-sicherung/"],
       detail: "/wirkungsfelder/rente-soziale-sicherung/detailkonzepte/",
       dossier: "/wirkungsfelder/rente-soziale-sicherung/dossiers/",
-      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.docx",
-      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.pdf",
+      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.pdf",
     },
   ];
 
   const config = areas.find((area) => area.prefixes.some((prefix) => path.startsWith(prefix)));
   if (!config) {
+    return;
+  }
+  if (/\/(?:detailkonzepte|dossiers)\//.test(path)) {
     return;
   }
 
@@ -1110,10 +1173,10 @@ function initPublicationAccessFallback() {
   };
   const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
   const cards = [
-    ["Onlinefassung", "Detailkonzepte", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Detailkonzept lesen"],
-    ["Praxisfassung", "Dossiers", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Dossier lesen"],
-    ["Download", "Konzept-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.detailDownload, "Herunterladen"],
-    ["Download", "Dossier-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.dossierDownload, "Herunterladen"],
+    ["Langfassung", "Detailkonzepte", "Längere fachliche Ausarbeitung mit Quellen, Beispielen und weiterführenden Materialien.", detailHref, "Detailkonzept lesen"],
+    ["Praxisdossier", "Dossiers", "Praxisfrage, Anwendung, Annahmen, Bewertungslogik, Datenquellen und Grenzen.", dossierHref, "Dossier lesen"],
+    ["PDF-Langfassung", "Detailkonzepte als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.detailDownload, "PDF herunterladen"],
+    ["PDF-Dossier", "Dossiers als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.dossierDownload, "PDF herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {
@@ -1128,7 +1191,7 @@ function initPublicationAccessFallback() {
     <div class="section-header">
       <p class="hero-kicker">Vertiefung</p>
       <h2 id="publikationszugang-title">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-      <p>Die Seite führt zuerst in das Thema ein. Detailkonzepte, Dossiers und Downloads sind hier als weiterführende Materialien gebündelt.</p>
+      <p>Die Seite führt zuerst in das Thema ein. Die Karten unterscheiden klar zwischen Langfassung, Praxisdossier und PDF-Arbeitsmaterial.</p>
     </div>
     <div class="card-grid three">${cards.map(([kicker, title, text, link, label]) => `
       <article class="card">

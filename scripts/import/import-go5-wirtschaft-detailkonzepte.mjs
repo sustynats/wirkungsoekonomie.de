@@ -283,7 +283,46 @@ function sanitizeMarkdown(markdown) {
   while (/\|\s*\n\s*\n\s*\|/.test(cleaned)) {
     cleaned = cleaned.replace(/\|\s*\n\s*\n\s*\|/g, "|\n|");
   }
-  return cleaned;
+  return stripSourceTableOfContents(cleaned);
+}
+
+function stripSourceTableOfContents(markdown) {
+  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const output = [];
+  let skippingToc = false;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    const isTocHeading = /^(#{1,6}\s*)?Inhaltsverzeichnis\s*$/i.test(trimmed);
+
+    if (isTocHeading) {
+      skippingToc = true;
+      continue;
+    }
+
+    if (skippingToc) {
+      if (!trimmed) continue;
+      if (isTocEntry(trimmed)) continue;
+      skippingToc = false;
+    }
+
+    output.push(line);
+  }
+
+  return output.join("\n");
+}
+
+function isTocEntry(value) {
+  return (
+    /^\d{1,3}[\.)]\s+/.test(value) ||
+    /^[-*]\s+\[?[^\]]+\]?\(#/.test(value) ||
+    /^\[[^\]]+\]\(#/.test(value) ||
+    /^#{1,6}\s+\d{1,3}[\.)]\s+/.test(value)
+  );
+}
+
+function cleanHeadingText(value) {
+  return value.replace(/^\s*\d{1,3}[\.)]\s+/, "").trim();
 }
 
 function inlineMarkdown(text) {
@@ -365,12 +404,12 @@ function renderMarkdown(markdown) {
       flushParagraph();
       flushList();
       const depth = headingMatch[1].length;
-      const text = headingMatch[2].replace(/\s+#+$/, "");
+      const text = cleanHeadingText(headingMatch[2].replace(/\s+#+$/, ""));
       if (depth === 1) {
         continue;
       }
       const level = Math.min(depth, 3);
-      const idBase = slugify(text.replace(/^\d+\.\s*/, ""));
+      const idBase = slugify(text);
       let id = idBase || `abschnitt-${headings.length + 1}`;
       let suffix = 2;
       while (headings.some((heading) => heading.id === id)) {
