@@ -8744,8 +8744,13 @@ textarea {
 .section-header h2,
 .reference-section h2 {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  line-height: 1;
+  font-size: clamp(1.65rem, 3.3vw, 2.75rem);
+  line-height: 1.06;
+}
+
+.implementation-title {
+  font-size: clamp(1.45rem, 2.6vw, 2.25rem);
+  line-height: 1.1;
 }
 
 .section-header p {
