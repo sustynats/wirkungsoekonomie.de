@@ -111,6 +111,7 @@ function sanitizeText(value) {
     .replace(/Dossier-Download/gi, "Dossier als PDF")
     .replace(/Weiterarbeit/gi, "Vertiefung")
     .replace(/Herunterladen(?=<\/a>)/gi, "PDF herunterladen")
+    .replace(/\b(Konzept-PDF|Dossier-PDF|Methodik-PDF|PDF-Sammlung)(?: PDF)+ herunterladen/gi, "$1 herunterladen")
     .replace(/DOCX herunterladen/gi, "PDF herunterladen")
     .replace(/Word herunterladen/gi, "PDF herunterladen")
     .replace(/Arbeitsfassung herunterladen/gi, "PDF herunterladen")

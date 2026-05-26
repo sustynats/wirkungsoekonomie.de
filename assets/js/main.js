@@ -1101,6 +1101,9 @@ function initPublicationAccessFallback() {
   if (!config) {
     return;
   }
+  if (/\/(?:detailkonzepte|dossiers)\//.test(path)) {
+    return;
+  }
 
   const hasLocalDetail = Boolean(document.getElementById("detailkonzept"));
   const hasLocalDossier = Boolean(document.getElementById("dossier"));
