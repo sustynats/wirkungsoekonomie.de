@@ -411,6 +411,27 @@ a {
   margin-top: 0.45rem;
 }
 
+.document-online-text {
+  margin-block: 1rem 1.4rem;
+}
+
+.document-online-text h3 {
+  margin-top: 1.35rem;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.18rem, 2.2vw, 1.55rem);
+  line-height: 1.15;
+}
+
+.document-online-text ul {
+  margin: 0.8rem 0 1.1rem;
+  padding-left: 1.2rem;
+}
+
+.document-online-text li + li {
+  margin-top: 0.35rem;
+}
+
 .archive-library {
   width: min(var(--container), calc(100% - (2 * var(--space-gutter))));
   margin: clamp(2rem, 5vw, 4rem) auto;

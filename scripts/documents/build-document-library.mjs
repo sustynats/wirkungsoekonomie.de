@@ -108,6 +108,22 @@ function relationLinks(document) {
     </div>`;
 }
 
+function documentOnlineText(document) {
+  if (document.contentHtmlPath && fs.existsSync(document.contentHtmlPath)) {
+    return `<div class="readable-prose document-online-text">
+      ${fs.readFileSync(document.contentHtmlPath, "utf8")}
+    </div>`;
+  }
+  return `
+    <p>${escapeHtml(document.summary)}</p>
+    <h3>Warum ist das relevant?</h3>
+    <p>Das Dokument hilft, Wirkung nicht als Nebenthema zu behandeln, sondern als Grundlage für bessere Entscheidungen. Es verbindet Begriffe, Bewertungslogik und Anwendung so, dass Nutzer:innen den Zusammenhang zwischen Problem, Wirkung und möglicher Rückkopplung nachvollziehen können.</p>
+    <h3>Für wen ist das Material gedacht?</h3>
+    <p>${escapeHtml((document.audience || []).join(", "))}. Die Onlinefassung dient als schneller Einstieg. Die PDF-Fassung bleibt für vertiefte Lektüre, Ablage und Weitergabe verfügbar.</p>
+    <h3>Wie wird es in der Wirkungsökonomie genutzt?</h3>
+    <p>Die Veröffentlichung verknüpft fachliche Begriffe mit Wirkungsfeldern, Methoden und passenden Anwendungen. Dadurch bleibt das Dokument nicht nur ein Download, sondern wird Teil der öffentlichen Wissensstruktur der Wirkungsökonomie.</p>`;
+}
+
 function pageShell({ title, description, canonicalPath, main, extraHead = "" }) {
   return `<!doctype html>
 <html lang="de">
@@ -368,13 +384,7 @@ function buildDocumentPage(document) {
             <section id="online-text">
               <p class="hero-kicker">Online-Text</p>
               <h2>${escapeHtml(document.title)} verständlich eingeordnet</h2>
-              <p>${escapeHtml(document.summary)}</p>
-              <h3>Warum ist das relevant?</h3>
-              <p>Das Dokument hilft, Wirkung nicht als Nebenthema zu behandeln, sondern als Grundlage für bessere Entscheidungen. Es verbindet Begriffe, Bewertungslogik und Anwendung so, dass Nutzer:innen den Zusammenhang zwischen Problem, Wirkung und möglicher Rückkopplung nachvollziehen können.</p>
-              <h3>Für wen ist das Material gedacht?</h3>
-              <p>${escapeHtml((document.audience || []).join(", "))}. Die Onlinefassung dient als schneller Einstieg. Die PDF-Fassung bleibt für vertiefte Lektüre, Ablage und Weitergabe verfügbar.</p>
-              <h3>Wie wird es in der Wirkungsökonomie genutzt?</h3>
-              <p>Die Veröffentlichung verknüpft fachliche Begriffe mit Wirkungsfeldern, Methoden und passenden Anwendungen. Dadurch bleibt das Dokument nicht nur ein Download, sondern wird Teil der öffentlichen Wissensstruktur der Wirkungsökonomie.</p>
+              ${documentOnlineText(document)}
               ${sourceLink}
             </section>
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T04:03:22.678Z",
+  "generatedAt": "2026-05-26T04:34:35.776Z",
   "entries": {
     "/begriffe/agenda-2030/": {
       "documentType": "begriff",
@@ -1137,6 +1137,152 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 140
     },
+    "/bibliothek/handbuch-wirkungskompetenz/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-handbuch-wirkungskompetenz",
+      "documentId": "handbuch-wirkungskompetenz",
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "wirkungspotenzial",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/bildung/"
+      ],
+      "relatedTools": [
+        "/erleben/wirkungsschule-check/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/wirkungseinkommen/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-wirkungseinkommen",
+      "documentId": "wirkungseinkommen",
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsfonds",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/arbeit-einkommen/"
+      ],
+      "relatedTools": [
+        "/erleben/automatisierungs-wirkungseinkommensrechner/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/wirkungseinkommensteuergesetz-westg/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-wirkungseinkommensteuergesetz-westg",
+      "documentId": "wirkungseinkommensteuergesetz-westg",
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsfonds",
+        "wirkungssteuer"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/arbeit-einkommen/"
+      ],
+      "relatedTools": [
+        "/erleben/automatisierungs-wirkungseinkommensrechner/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/wenn-maschinen-arbeiten/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-wenn-maschinen-arbeiten",
+      "documentId": "wenn-maschinen-arbeiten",
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsfonds",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/arbeit-einkommen/"
+      ],
+      "relatedTools": [
+        "/erleben/automatisierungs-wirkungseinkommensrechner/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/woek-master-items-v1-2/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-woek-master-items-v1-2",
+      "documentId": "woek-master-items-v1-2",
+      "relatedTerms": [
+        "woek-id",
+        "scorecard",
+        "wirkungsdatenraum"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/demokratie-schuetzen/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-demokratie-schuetzen",
+      "documentId": "demokratie-schuetzen",
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungsresilienz",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/staat-recht-demokratie/",
+        "/wirkungsfelder/medien-oeffentlichkeit/"
+      ],
+      "relatedTools": [
+        "/anwendungen/scanner.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/energiepolitik-2026/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-energiepolitik-2026",
+      "documentId": "energiepolitik-2026",
+      "relatedTerms": [
+        "transformationswirkung",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/klima-energie-ressourcen/"
+      ],
+      "relatedTools": [],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
     "/bibliothek/die-neue-ordnung-des-wohlstands/": {
       "documentType": "bibliothek",
       "status": "current",
@@ -1199,21 +1345,20 @@
       "sourceFile": "assets/data/document-registry.json",
       "searchBoost": 138
     },
-    "/bibliothek/prozessarchitektur-wirkungsoekonomie/": {
+    "/bibliothek/t-sroi-standard-impact-controlling/": {
       "documentType": "bibliothek",
       "status": "current",
       "version": "2026",
-      "sectionId": "document-prozessarchitektur-wirkungsoekonomie",
-      "documentId": "prozessarchitektur-wirkungsoekonomie",
+      "sectionId": "document-t-sroi-standard-impact-controlling",
+      "documentId": "t-sroi-standard-impact-controlling",
       "relatedTerms": [
-        "scorecard",
-        "woek-id",
-        "wirkungsbewertung",
-        "wirkungsdaten"
+        "t-sroi",
+        "nwi",
+        "scorecard"
       ],
       "relatedDocuments": [],
       "relatedFields": [
-        "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        "/wirkungsfelder/wirtschaft-unternehmen/"
       ],
       "relatedTools": [
         "/werkzeuge/impact-controlling/"
@@ -1221,170 +1366,22 @@
       "sourceFile": "assets/data/document-registry.json",
       "searchBoost": 138
     },
-    "/bibliothek/wirkungssteuergesetz-wstg/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2025",
-      "sectionId": "document-wirkungssteuergesetz-wstg",
-      "documentId": "wirkungssteuergesetz-wstg",
-      "relatedTerms": [
-        "wirkungssteuer",
-        "wstg",
-        "wirkungsrueckkopplung"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/staat-recht-demokratie/",
-        "/wirkungsfelder/produkte-konsum/"
-      ],
-      "relatedTools": [
-        "/erleben.html"
-      ],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/wenn-maschinen-arbeiten/": {
+    "/bibliothek/groesster-denkfehler-klimadebatte/": {
       "documentType": "bibliothek",
       "status": "current",
       "version": "2026",
-      "sectionId": "document-wenn-maschinen-arbeiten",
-      "documentId": "wenn-maschinen-arbeiten",
+      "sectionId": "document-groesster-denkfehler-klimadebatte",
+      "documentId": "groesster-denkfehler-klimadebatte",
       "relatedTerms": [
-        "wirkungseinkommen",
-        "wirkungsfonds",
-        "wirkungsrueckkopplung"
+        "wirkungsresilienz",
+        "transformationswirkung",
+        "negative-wirkung"
       ],
       "relatedDocuments": [],
       "relatedFields": [
-        "/wirkungsfelder/arbeit-einkommen/"
-      ],
-      "relatedTools": [
-        "/erleben/automatisierungs-wirkungseinkommensrechner/"
-      ],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/wirkungseinkommen/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2026",
-      "sectionId": "document-wirkungseinkommen",
-      "documentId": "wirkungseinkommen",
-      "relatedTerms": [
-        "wirkungseinkommen",
-        "wirkungsfonds",
-        "wirkungsrueckkopplung"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/arbeit-einkommen/"
-      ],
-      "relatedTools": [
-        "/erleben/automatisierungs-wirkungseinkommensrechner/"
-      ],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/working-paper-wohnungsmarkt/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2026",
-      "sectionId": "document-working-paper-wohnungsmarkt",
-      "documentId": "working-paper-wohnungsmarkt",
-      "relatedTerms": [
-        "wohnwirkung",
-        "wirkungsvermietung",
-        "warmmietenneutralitaet"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/wohnen-stadt/"
+        "/wirkungsfelder/klima-energie-ressourcen/"
       ],
       "relatedTools": [],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/produktbesteuerung-durch-wirkung/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2026",
-      "sectionId": "document-produktbesteuerung-durch-wirkung",
-      "documentId": "produktbesteuerung-durch-wirkung",
-      "relatedTerms": [
-        "wirkungssteuer",
-        "scorecard",
-        "digitaler-produktpass"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/produkte-konsum/"
-      ],
-      "relatedTools": [
-        "/erleben.html"
-      ],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/woek-master-items-v1-2/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2026",
-      "sectionId": "document-woek-master-items-v1-2",
-      "documentId": "woek-master-items-v1-2",
-      "relatedTerms": [
-        "woek-id",
-        "scorecard",
-        "wirkungsdatenraum"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
-      ],
-      "relatedTools": [
-        "/werkzeuge/impact-controlling/"
-      ],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/wirkungseinkommensteuergesetz-westg/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2026",
-      "sectionId": "document-wirkungseinkommensteuergesetz-westg",
-      "documentId": "wirkungseinkommensteuergesetz-westg",
-      "relatedTerms": [
-        "wirkungseinkommen",
-        "wirkungsfonds",
-        "wirkungssteuer"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/arbeit-einkommen/"
-      ],
-      "relatedTools": [
-        "/erleben/automatisierungs-wirkungseinkommensrechner/"
-      ],
-      "sourceFile": "assets/data/document-registry.json",
-      "searchBoost": 138
-    },
-    "/bibliothek/medien-und-wirkung/": {
-      "documentType": "bibliothek",
-      "status": "current",
-      "version": "2026",
-      "sectionId": "document-medien-und-wirkung",
-      "documentId": "medien-und-wirkung",
-      "relatedTerms": [
-        "resonanzraum",
-        "wirkungspotenzial",
-        "wirkungsbewertung"
-      ],
-      "relatedDocuments": [],
-      "relatedFields": [
-        "/wirkungsfelder/medien-oeffentlichkeit/"
-      ],
-      "relatedTools": [
-        "/anwendungen/scanner.html"
-      ],
       "sourceFile": "assets/data/document-registry.json",
       "searchBoost": 138
     },
@@ -1410,24 +1407,340 @@
       "sourceFile": "assets/data/document-registry.json",
       "searchBoost": 138
     },
-    "/bibliothek/handbuch-wirkungskompetenz/": {
+    "/bibliothek/nachhaltiges-marketing-mix/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2024",
+      "sectionId": "document-nachhaltiges-marketing-mix",
+      "documentId": "nachhaltiges-marketing-mix",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "wirkungsbewertung",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/",
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/host-tsi-transformational-system-impact/": {
       "documentType": "bibliothek",
       "status": "current",
       "version": "2026",
-      "sectionId": "document-handbuch-wirkungskompetenz",
-      "documentId": "handbuch-wirkungskompetenz",
+      "sectionId": "document-host-tsi-transformational-system-impact",
+      "documentId": "host-tsi-transformational-system-impact",
       "relatedTerms": [
-        "wirkungskompetenz",
+        "resonanzraum",
         "wirkungspotenzial",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/medien-oeffentlichkeit/"
+      ],
+      "relatedTools": [
+        "/anwendungen/scanner.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/live-impact-rating-konzept/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-live-impact-rating-konzept",
+      "documentId": "live-impact-rating-konzept",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "resonanzraum",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/medien-oeffentlichkeit/"
+      ],
+      "relatedTools": [
+        "/anwendungen/scanner.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/medien-und-wirkung/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-medien-und-wirkung",
+      "documentId": "medien-und-wirkung",
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/medien-oeffentlichkeit/"
+      ],
+      "relatedTools": [
+        "/anwendungen/scanner.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/milram-kampagnenanalyse/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-milram-kampagnenanalyse",
+      "documentId": "milram-kampagnenanalyse",
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/medien-oeffentlichkeit/"
+      ],
+      "relatedTools": [
+        "/anwendungen/scanner.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/prozessarchitektur-wirkungsoekonomie/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-prozessarchitektur-wirkungsoekonomie",
+      "documentId": "prozessarchitektur-wirkungsoekonomie",
+      "relatedTerms": [
+        "scorecard",
+        "woek-id",
+        "wirkungsbewertung",
         "wirkungsdaten"
       ],
       "relatedDocuments": [],
       "relatedFields": [
-        "/wirkungsfelder/bildung/"
+        "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
       ],
       "relatedTools": [
-        "/erleben/wirkungsschule-check/"
+        "/werkzeuge/impact-controlling/"
       ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltigkeit-systemarchitektur/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-nachhaltigkeit-systemarchitektur",
+      "documentId": "nachhaltigkeit-systemarchitektur",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "wirkungsresilienz",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/",
+        "/wirkungsfelder/klima-energie-ressourcen/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-nachhaltigkeit-kapitalzentriertes-steuerungsmodell",
+      "documentId": "nachhaltigkeit-kapitalzentriertes-steuerungsmodell",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/finanzsystem-kapital/",
+        "/wirkungsfelder/wirtschaft-unternehmen/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/leitbild-deutschland-2030-woek/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-leitbild-deutschland-2030-woek",
+      "documentId": "leitbild-deutschland-2030-woek",
+      "relatedTerms": [
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/staat-recht-demokratie/"
+      ],
+      "relatedTools": [],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-beispiel-zange-sdg-esrs-mit-steuer-und-links",
+      "documentId": "beispiel-zange-sdg-esrs-mit-steuer-und-links",
+      "relatedTerms": [
+        "sdg-plus",
+        "esrs",
+        "wirkungssteuer",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/erleben/produktwirkungsrechner/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/beispiel-zange-sdg-esrs-fussnoten/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-beispiel-zange-sdg-esrs-fussnoten",
+      "documentId": "beispiel-zange-sdg-esrs-fussnoten",
+      "relatedTerms": [
+        "sdgs",
+        "esrs",
+        "digitaler-produktpass"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/produktbesteuerung-durch-wirkung/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-produktbesteuerung-durch-wirkung",
+      "documentId": "produktbesteuerung-durch-wirkung",
+      "relatedTerms": [
+        "wirkungssteuer",
+        "scorecard",
+        "digitaler-produktpass"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/erleben.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/agenda2030-sdg-esg-handout/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-agenda2030-sdg-esg-handout",
+      "documentId": "agenda2030-sdg-esg-handout",
+      "relatedTerms": [
+        "agenda-2030",
+        "sdgs",
+        "esg",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+      ],
+      "relatedTools": [],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/wirkungssteuergesetz-wstg/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2025",
+      "sectionId": "document-wirkungssteuergesetz-wstg",
+      "documentId": "wirkungssteuergesetz-wstg",
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wstg",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/staat-recht-demokratie/",
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/erleben.html"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt",
+      "documentId": "wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt",
+      "relatedTerms": [
+        "wirkungsresilienz",
+        "wirkungsrisiko",
+        "impact-controlling"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/working-paper-wohnungsmarkt/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2026",
+      "sectionId": "document-working-paper-wohnungsmarkt",
+      "documentId": "working-paper-wohnungsmarkt",
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "warmmietenneutralitaet"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wohnen-stadt/"
+      ],
+      "relatedTools": [],
       "sourceFile": "assets/data/document-registry.json",
       "searchBoost": 138
     },
