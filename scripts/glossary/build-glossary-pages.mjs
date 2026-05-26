@@ -123,6 +123,11 @@ const termTargetLinks = new Map([
   ["esrs", "../../wirkungsfelder/wirtschaft-unternehmen/finanzmarktanforderungen/"],
   ["eu-taxonomie", "../../wirkungsfelder/finanzsystem-kapital/"],
   ["esg", "../../wirkungsfelder/wirtschaft-unternehmen/finanzmarktanforderungen/"],
+  ["folgencheck", "../../bibliothek/folgencheck-faktencheck/"],
+  ["faktencheck", "../../bibliothek/folgencheck-faktencheck/"],
+  ["wirkstoff", "../../bibliothek/folgencheck-faktencheck/"],
+  ["wirkungspfad", "../../bibliothek/folgencheck-faktencheck/"],
+  ["wirkungsraum", "../../bibliothek/folgencheck-faktencheck/"],
 ]);
 
 function termLink(slug) {
@@ -138,6 +143,10 @@ function listItems(values, fallback = "Keine Einträge") {
 
 const centralTermDetails = new Map([
   ["wirkung", ["Sie macht sichtbar, ob sich Zustände tatsächlich verändern, statt nur Aktivität, Geld oder Reichweite zu zählen.", "Nicht jede Wirkung ist positiv. Der Begriff ist neutral und braucht Bewertung.", "Ein billiges Produkt kann verkauft werden und trotzdem Wasser, Gesundheit oder Arbeitsrechte belasten.", ["Wirkung ist kein Gütesiegel.", "Wirkung ersetzt keine demokratische Entscheidung."], [["Kompass", "../../kompass.html"], ["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Wirkungsfelder", "../../wirkungsfelder/"]]]],
+  ["faktencheck", ["Er schützt die sachliche Grundlage öffentlicher Debatten, indem Quellen, Daten, Belege und Kontext geprüft werden.", "Ein Faktencheck ist noch keine Wirkungsprüfung und sagt nicht automatisch, was eine Aussage auslösen kann.", "Eine Behauptung über Arbeitslosigkeit kann faktisch richtig sein und trotzdem wichtige Gruppen unsichtbar machen.", ["Stimmt das? ist nicht dasselbe wie: Was kann das auslösen?", "Faktencheck ersetzt keine Folgenprüfung."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
+  ["folgencheck", ["Er macht mögliche Folgen sichtbar, bevor Schäden, Nebenwirkungen oder Systemeffekte vollständig eingetreten sind.", "Der Folgencheck ist keine Zensur, keine Personenbewertung und kein Wahrheitsmonopol.", "Ein Produktclaim kann faktisch belegbar sein und trotzdem Wasser, Biodiversität, Arbeitsrechte oder Vertrauen verdecken.", ["Folgencheck ist kein Faktencheck.", "Eine Frühwarnung ist kein finales Urteil."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Folgencheck-Paper", "../../bibliothek/folgencheck-faktencheck/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"], ["Staat, Recht & Demokratie", "../../wirkungsfelder/staat-recht-demokratie/"]]]],
+  ["wirkstoff", ["Er benennt Auslöser, die Wirkungspotenziale in Sprache, Produkten, Regeln, Preisen, Algorithmen oder Kapitalflüssen aktivieren können.", "Ein Wirkstoff ist nicht die Wirkung selbst und kein harter Kausalnachweis.", "Ein Angstframe in einer politischen Aussage kann als Wirkstoff für Polarisierungspotenzial wirken.", ["Wirkstoff ist eine Analogie.", "Der Begriff behauptet noch keine eingetretene Wirkung."], [["Folgencheck-Paper", "../../bibliothek/folgencheck-faktencheck/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
+  ["wirkungspfad", ["Er zeigt, über welche Mechanismen ein Wirkstoff zu möglichen Zustandsveränderungen führen kann.", "Ein Wirkungspfad ist keine sichere Prognose und kein abgeschlossener Nachweis.", "Frame, Emotion, Teilen, Reichweite und Vertrauensverlust können als möglicher Wirkungspfad beschrieben werden.", ["Plausibilität ersetzt keinen Nachweis.", "Datenlücken müssen sichtbar bleiben."], [["Folgencheck-Paper", "../../bibliothek/folgencheck-faktencheck/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["wirkungspotenzial", ["Es hilft, frühe Hinweise zu Wirkungspfaden zu erkennen, ohne eine endgültige Bewertung vorzutäuschen.", "Potenzial ist keine Faktenprüfung, keine Zertifizierung und kein fertiger Score.", "Ein Medienbeitrag kann Polarisierungspotenzial haben, ohne dass jede Reaktion vorhergesagt wird.", ["Potenzial ist nicht Ergebnis.", "Ein Prüfhinweis ist kein Urteil."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["positive-netto-wirkung", ["Sie verhindert, dass einzelne gute Effekte schwere Schäden überdecken.", "Positive Netto-Wirkung ist keine Schönrechnung und kein einfacher Durchschnitt.", "Ein klimafreundliches Produkt kann wegen schwerer Arbeitsrechtsprobleme trotzdem kritisch bleiben.", ["Netto heißt nicht, dass alles verrechnet werden darf.", "Wirkungsgrenzen bleiben wirksam."], [["Reverse Merit Order", "../../werkzeuge/reverse-merit-order/"], ["Scorecards", "../../werkzeuge/scorecards/"]], [["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
   ["wirkungsrueckkopplung", ["Sie macht Wirkung entscheidungsrelevant, indem sie in Preise, Budgets, Kapital oder Regeln zurückgeführt wird.", "Sie ist keine zentrale Planwirtschaft und keine automatische Entscheidung.", "Eine Produktsteuer kann steigen oder sinken, wenn geprüfte Produktwirkung schlechter oder besser wird.", ["Rückkopplung ist nicht nur Strafe.", "Rechtsschutz und demokratische Kontrolle bleiben nötig."], [["Wirkungsumsatzsteuer", "../../werkzeuge/wirkungsumsatzsteuer/"], ["Automatisierungsrechner", "../../erleben/automatisierungs-wirkungseinkommensrechner/"]], [["Arbeit & Einkommen", "../../wirkungsfelder/arbeit-einkommen/"]]]],
@@ -151,6 +160,7 @@ const centralTermDetails = new Map([
   ["wirkungsfonds", ["Er bündelt Rückflüsse, damit Prävention, Bildung, Transformation oder Sicherung finanzierbar werden.", "Ein Wirkungsfonds ist kein Geld aus dem Nichts und kein Schattenhaushalt.", "Rückflüsse aus automatisierter Wertschöpfung können Weiterbildung und Übergangsschutz finanzieren.", ["Fonds ersetzen keine Haushaltsentscheidungen.", "Finanzierungsquellen müssen offen bleiben."], [["Wirkungsfonds", "../../werkzeuge/wirkungsfonds/"], ["Automatisierungsrechner", "../../erleben/automatisierungs-wirkungseinkommensrechner/"]], [["Arbeit & Einkommen", "../../wirkungsfelder/arbeit-einkommen/"]]]],
   ["wirkungshaushalt", ["Er zeigt, ob öffentliche Mittel Zustände verbessern oder nur ausgegeben werden.", "Ein Wirkungshaushalt ersetzt keine Parlamente und kein Haushaltsrecht.", "Vermiedene Krankheit kann als Präventionswirkung in Haushalten sichtbar werden.", ["Wirkungshaushalte brauchen Evaluation.", "Grundrechte dürfen nicht durch Kennzahlen ersetzt werden."], [["Wirkungshaushalt", "../../werkzeuge/wirkungshaushalt/"]], [["Gesundheit & Pflege", "../../wirkungsfelder/gesundheit-pflege/"]]]],
   ["wirkungsdatenraum", ["Er macht Wirkung prüfbar, ohne Datenschutz und Zweckbindung aufzugeben.", "Ein Wirkungsdatenraum ist kein ungeschützter Datenpool und kein Personen-Scoring.", "Ein Produktpass kann Klima- und Lieferkettendaten bereitstellen, ohne personenbezogene Daten offenzulegen.", ["Mehr Daten sind nicht automatisch bessere Wirkung.", "Rechte und Datenqualität sind Teil der Wirkung."], [["Digitale Produktpässe", "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"]], [["Digitalisierung & KI", "../../portale/digitalisierung-ki-wirkungsdatenraeume/"]]]],
+  ["wirkungsraum", ["Er macht sichtbar, in welchem Kontext ein Wirkstoff oder eine Entscheidung Folgen entfalten kann.", "Ein Wirkungsraum ist keine Zielgruppe und kein bloßer Ort.", "Öffentlichkeit, Kommune, Lieferkette, Schule oder Kapitalmarkt können Wirkungsräume sein.", ["Wirkungsraum ist Kontext, nicht Urteil.", "Ein Raum kann mehrere Wirkungsempfänger enthalten."], [["Folgencheck-Paper", "../../bibliothek/folgencheck-faktencheck/"]], [["Wirkungsfelder", "../../wirkungsfelder/"]]]],
   ["wirkungskompetenz", ["Sie macht Menschen und Organisationen fähig, Folgen, Zielkonflikte und Datenqualität zu verstehen.", "Wirkungskompetenz ist keine Ideologie und keine zentrale Wissensverwaltung.", "Schüler:innen lernen zu unterscheiden, ob ein Projekt nur Output erzeugt oder Zustände verbessert.", ["Kompetenz heißt nicht Kontrolle.", "Sie stärkt Urteilskraft und Teilhabe."], [["Akademie", "../../akademie.html"], ["Wirkungsschule-Check", "../../erleben/wirkungsschule-check/"]], [["Bildung", "../../wirkungsfelder/bildung/"]]]],
 ]);
 
@@ -179,6 +189,41 @@ function learningBlock(term) {
 }
 
 function termExtraBlock(term) {
+  if (term.termId === "folgencheck") {
+    return `<section class="term-summary-card" aria-labelledby="folgencheck-model-title">
+          <h2 id="folgencheck-model-title">Das 10-Schritte-Modell des Folgenchecks</h2>
+          <p>Der Folgencheck ist vor allem eine Ex-ante-Prüfung: Er fragt vor einer Entscheidung oder Veröffentlichung, welche Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume angelegt sind.</p>
+          <ol class="clean-list">
+            <li><strong>Gegenstand klären:</strong> Aussage, Maßnahme, Gesetz, Produkt, Technologie, Kapitalfluss oder Medienbeitrag benennen.</li>
+            <li><strong>Wirkstoffe identifizieren:</strong> Auslöser sichtbar machen, etwa Frames, Preise, Regeln, Algorithmen, Anreize oder Produktmerkmale.</li>
+            <li><strong>Wirkungsraum bestimmen:</strong> Prüfen, wo Folgen entstehen können: Öffentlichkeit, Markt, Kommune, Gesundheit, Demokratie, Lieferkette oder digitaler Raum.</li>
+            <li><strong>Wirkungsempfänger benennen:</strong> Wer oder was ist betroffen: Menschen, Gruppen, Institutionen, Ökosysteme, Märkte oder zukünftige Generationen?</li>
+            <li><strong>Wirkungspfade sichtbar machen:</strong> Beschreiben, über welche Mechanismen Folgen entstehen könnten.</li>
+            <li><strong>Wirkungspotenziale einordnen:</strong> Positive, negative, ambivalente oder unklare Potenziale markieren.</li>
+            <li><strong>Nebenwirkungen und Rebound prüfen:</strong> Verlagerungen, Verstärkungen und verdeckte Schäden sichtbar machen.</li>
+            <li><strong>Datenqualität und Unsicherheit markieren:</strong> Belegt, plausibel, unklar oder unbekannt unterscheiden.</li>
+            <li><strong>Schutzgrenzen prüfen:</strong> Personenbewertung, Diskriminierung, Überwachung, Grundrechte und demokratische Kontrolle berücksichtigen.</li>
+            <li><strong>Handlungsoptionen ableiten:</strong> Gegenfragen, Korrekturen, Vorsorge, Kommunikation oder weitere Prüfung benennen.</li>
+          </ol>
+          <div class="table-wrap" role="region" aria-label="Faktencheck und Folgencheck im Vergleich" tabindex="0">
+            <table>
+              <thead><tr><th>Prüfung</th><th>Leitfrage</th><th>Ergebnis</th></tr></thead>
+              <tbody>
+                <tr><td>Faktencheck</td><td>Stimmt das?</td><td>Richtig, falsch, unbelegt, verkürzt oder irreführend.</td></tr>
+                <tr><td>Folgencheck</td><td>Was kann das auslösen?</td><td>Wirkstoffe, Wirkungspotenziale, Datenlücken, Schutzgrenzen und Handlungsoptionen.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Grenze:</strong> Der Folgencheck ist keine Zensur, keine Personenbewertung, kein Wahrheitsmonopol und keine finale Prognose. Er macht mögliche Wirkungen sichtbar, damit bessere Entscheidungen möglich werden.</p>
+        </section>`;
+  }
+  if (term.termId === "faktencheck") {
+    return `<section class="term-summary-card" aria-labelledby="facts-vs-effects-title">
+          <h2 id="facts-vs-effects-title">Faktencheck und Folgencheck gehören zusammen</h2>
+          <p>Ein Faktencheck prüft die sachliche Richtigkeit einer Aussage. Die Wirkungsökonomie ergänzt diese Prüfung durch den Folgencheck: Welche Wirkstoffe, Wirkungspotenziale und Wirkungsräume können durch Aussage, Maßnahme, Produkt oder Entscheidung berührt werden?</p>
+          <p><a class="text-link" href="../../begriffe/folgencheck/">Folgencheck erklären</a> · <a class="text-link" href="../../bibliothek/folgencheck-faktencheck/">Whitepaper online lesen</a></p>
+        </section>`;
+  }
   if (term.termId !== "mensch-planet-demokratie") return "";
   return `<section class="term-summary-card" aria-labelledby="sdg-context-title">
           <h2 id="sdg-context-title">Warum nicht einfach nur SDGs sagen?</h2>

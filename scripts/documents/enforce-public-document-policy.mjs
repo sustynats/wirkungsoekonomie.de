@@ -8,6 +8,7 @@ const htmlTargets = [
   "anwendungen.html",
   "assets/downloads",
   "audio",
+  "bibliothek/folgencheck-faktencheck",
   "begriffe",
   "blog",
   "blog.html",
@@ -56,6 +57,12 @@ const blockedPhrases = [
   "Dossier-Download",
   "Weiterarbeit",
 ];
+
+const publicDocxExceptionRe = /folgencheck|faktencheck|WOeK_Folgencheck_und_Faktencheck/i;
+
+function allowsPublicDocxException(value) {
+  return publicDocxExceptionRe.test(value);
+}
 
 function walk(entry, predicate, out = []) {
   const full = path.join(root, entry);
@@ -127,7 +134,9 @@ function sanitizeText(value) {
 
 function sanitizeHtml(html, file) {
   let removedLinks = 0;
-  let changed = html.replace(/<a\b[^>]*href=["'][^"']+\.(?:docx|doc)(?:[#?][^"']*)?["'][^>]*>[\s\S]*?<\/a>/gi, () => {
+  const allowPublicDocx = allowsPublicDocxException(html) && /(?:downloads\.html|bibliothek[\\/]+folgencheck-faktencheck[\\/]+index\.html)$/i.test(file);
+  let changed = html.replace(/<a\b[^>]*href=["'][^"']+\.(?:docx|doc)(?:[#?][^"']*)?["'][^>]*>[\s\S]*?<\/a>/gi, (match) => {
+    if (allowPublicDocx && allowsPublicDocxException(match)) return match;
     removedLinks += 1;
     return "";
   });
@@ -138,6 +147,13 @@ function sanitizeHtml(html, file) {
     protectedTags.push(match);
     return token;
   });
+  if (allowPublicDocx) {
+    changed = changed.replace(/(?:https:\/\/wirkungsoekonomie\.de)?\/assets\/documents\/WOeK_Folgencheck_und_Faktencheck_Paper_v1\.1\.docx|WOeK_Folgencheck_und_Faktencheck_Paper_v1\.1\.docx|DOCX herunterladen|application\/vnd\.openxmlformats-officedocument\.wordprocessingml\.document/g, (match) => {
+      const token = `@@WOEK-TAG-${protectedTags.length}@@`;
+      protectedTags.push(match);
+      return token;
+    });
+  }
   changed = sanitizeText(changed);
   changed = changed.replace(/@@WOEK-TAG-(\d+)@@/g, (_, index) => protectedTags[Number(index)] || "");
   const visibleDocx = (changed.match(/(?:href=["'][^"']+\.docx|\.docx\b|\.doc\b)/gi) || []).length;
@@ -146,6 +162,7 @@ function sanitizeHtml(html, file) {
     removedLinks,
     beforeTerms,
     visibleDocx,
+    allowPublicDocx,
     changed: changed !== html,
     file: rel(file),
   };
@@ -186,10 +203,15 @@ for (const file of publicDocxFiles) {
 }
 
 const remainingHtmlDocx = [];
+const allowedHtmlDocx = [];
 for (const file of htmlFiles) {
   const text = fs.readFileSync(file, "utf8");
   if (/href=["'][^"']+\.(?:docx|doc)\b|DOCX herunterladen|Word herunterladen|Dateiformat DOCX|Dateiformat Word/i.test(text)) {
-    remainingHtmlDocx.push(rel(file));
+    if (allowsPublicDocxException(text) && /(?:downloads\.html|bibliothek[\\/]+folgencheck-faktencheck[\\/]+index\.html)$/i.test(file)) {
+      allowedHtmlDocx.push(rel(file));
+    } else {
+      remainingHtmlDocx.push(rel(file));
+    }
   }
 }
 
@@ -203,6 +225,7 @@ const lines = [
   "- Öffentliche Dokumentformate: Onlinefassung und PDF.",
   "- Nicht öffentliche Formate: DOCX, Word, Markdown, Roh-Export und editierbare Arbeitsfassungen.",
   "- DOCX darf intern als Quelle bleiben, wird aber nicht öffentlich verlinkt oder als Download gerendert.",
+  "- Ausnahme: Folgencheck/Faktencheck v1.1 darf laut Integrationsauftrag öffentlich als DOCX angeboten werden.",
   "",
   "## Zusammenfassung",
   "",
@@ -211,7 +234,8 @@ const lines = [
   `- Entfernte öffentliche DOCX-/Word-Links: ${removedLinks}`,
   `- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: ${htmlFindings.length}`,
   `- Suchindex DOCX-/Word-Treffer vor Bereinigung: ${searchResult.docxHits}`,
-  `- Verbleibende HTML-Dateien mit öffentlichen DOCX-Downloadmustern: ${remainingHtmlDocx.length}`,
+  `- Erlaubte öffentliche DOCX-Ausnahme-Dateien: ${allowedHtmlDocx.length}`,
+  `- Verbleibende nicht erlaubte HTML-Dateien mit öffentlichen DOCX-Downloadmustern: ${remainingHtmlDocx.length}`,
   "",
   "## Öffentliche DOCX-/Word-Assets",
   "",
@@ -221,7 +245,11 @@ const lines = [
   "",
   htmlFindings.length ? "| Datei | entfernte Links | Begriffe vor Bereinigung | Restmuster |\n| --- | ---: | ---: | ---: |\n" + htmlFindings.map((finding) => `| \`${finding.file}\` | ${finding.removedLinks} | ${finding.beforeTerms} | ${finding.visibleDocx} |`).join("\n") : "- Keine",
   "",
-  "## Verbleibende öffentliche DOCX-Downloadmuster",
+  "## Erlaubte öffentliche DOCX-Ausnahme",
+  "",
+  allowedHtmlDocx.length ? allowedHtmlDocx.map((file) => `- \`${file}\``).join("\n") : "- Keine",
+  "",
+  "## Verbleibende nicht erlaubte öffentliche DOCX-Downloadmuster",
   "",
   remainingHtmlDocx.length ? remainingHtmlDocx.map((file) => `- \`${file}\``).join("\n") : "- Keine",
   "",

@@ -46,6 +46,7 @@ const SCAN_TARGETS = [
   "workflow.html",
   "assets/downloads",
   "assets/js/main.js",
+  "bibliothek/folgencheck-faktencheck",
 ];
 
 const BLOCKED_TERMS = [
@@ -90,6 +91,29 @@ const BLOCKED_TERMS = [
 ];
 
 const TECHNICAL_CANONICAL_RE = /<link\b[^>]*rel=["']canonical["'][^>]*>/gi;
+const PUBLIC_DOCX_EXCEPTION_RE = /folgencheck|faktencheck|WOeK_Folgencheck_und_Faktencheck/i;
+const PUBLIC_DOCX_TERMS = new Set([
+  "DOCX herunterladen",
+  "Word herunterladen",
+  "Dokument als Word",
+  "Word-Version",
+  "Word-Datei",
+  "Word-Export",
+  "Arbeitsfassung herunterladen",
+  "Dokument bearbeiten",
+  "Dateiformat DOCX",
+  "Dateiformat Word",
+  "PDF und DOCX",
+  "PDF/DOCX",
+  "DOCX",
+]);
+
+function isAllowedPublicDocxFinding(file, term, context) {
+  const normalized = path.relative(ROOT, file).replaceAll(path.sep, "/");
+  if (!["downloads.html", "bibliothek/folgencheck-faktencheck/index.html"].includes(normalized)) return false;
+  if (normalized === "bibliothek/folgencheck-faktencheck/index.html" && PUBLIC_DOCX_TERMS.has(term)) return true;
+  return PUBLIC_DOCX_TERMS.has(term) && PUBLIC_DOCX_EXCEPTION_RE.test(context);
+}
 
 function walk(entry, files = []) {
   const full = path.join(ROOT, entry);
@@ -154,6 +178,7 @@ for (const file of files) {
   for (const term of BLOCKED_TERMS) {
     const hits = contexts(text, term);
     for (const context of hits) {
+      if (isAllowedPublicDocxFinding(file, term, context)) continue;
       findings.push({
         file: path.relative(ROOT, file),
         term,
