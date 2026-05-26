@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T17:20:44.478Z",
+  "generatedAt": "2026-05-26T17:26:21.410Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -1213,6 +1213,22 @@
       "relatedDocuments": [
         "technische-leitlinien-wustg"
       ],
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 140
+    },
+    "/begriffe/zustandsveraenderung/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-zustandsveraenderung",
+      "documentId": "zustandsveraenderung",
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsbewertung",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 140
     },

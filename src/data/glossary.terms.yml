@@ -909,7 +909,7 @@ terms:
     longDefinition: "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+."
     usageNote: "Wirkung nicht automatisch positiv verwenden. Wenn die Zielgröße gemeint ist, meist positive Netto-Wirkung verwenden."
     doNotConfuseWith: ["Wirkungspotenzial", "Absicht", "Output", "Image"]
-    synonyms: ["Impact", "Zustandsveränderung"]
+    synonyms: ["Impact"]
     relatedTerms: ["wirkungspotenzial", "netto-wirkung", "positive-netto-wirkung", "wirkungsbewertung"]
     relatedDocuments: []
     examples: []
@@ -919,6 +919,29 @@ terms:
     glossaryOrderKey: "wirkung"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: zustandsveraenderung
+    canonicalLabel: "Zustandsveränderung"
+    slug: "zustandsveraenderung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Zustandsveränderung beschreibt, was sich durch eine Handlung, Entscheidung oder Struktur tatsächlich verändert."
+    hoverDefinition: "Eine Zustandsveränderung ist die tatsächliche Veränderung eines Zustands bei Menschen, Lebensgrundlagen, Institutionen oder Systemen."
+    longDefinition: "In der Wirkungsökonomie ist Zustandsveränderung die beobachtbare Veränderung, an der Wirkung überhaupt erkennbar wird. Sie ist noch keine Bewertung. Erst der Bezug zu SDGs, Agenda 2030 und SDG+ ordnet ein, ob eine Veränderung positiv, negativ oder neutral wirkt."
+    usageNote: "Als erklärenden Begriff verwenden, wenn der Unterschied zwischen Aktivität, Absicht und tatsächlicher Veränderung sichtbar werden soll."
+    doNotConfuseWith: ["Absicht", "Output", "Wirkungspotenzial", "Wirkungsbewertung"]
+    synonyms: ["Veränderung von Zuständen", "tatsächliche Veränderung"]
+    relatedTerms: ["wirkung", "wirkungspotenzial", "wirkungsbewertung", "positive-netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Zustandsveränderung als beobachtbare Veränderung verwenden."
+    deprecatedUsage: ["Zustandsveränderung als automatisch positive Wirkung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "zustandsveränderung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
   - termId: wirkungsarchitektur
     canonicalLabel: "Wirkungsarchitektur"
     slug: "wirkungsarchitektur"
