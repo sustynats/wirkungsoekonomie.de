@@ -2255,6 +2255,87 @@ textarea {
   content: "-";
 }
 
+.reader-disclosure {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 54px rgba(11, 16, 32, 0.06);
+}
+
+.reader-disclosure summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--navy);
+  cursor: pointer;
+  list-style: none;
+}
+
+.reader-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.reader-disclosure summary span {
+  color: var(--green);
+  font-size: 0.86rem;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.reader-disclosure summary small {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.reader-disclosure summary::after {
+  content: "+";
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(47, 125, 92, 0.24);
+  border-radius: 999px;
+  color: var(--green);
+  font-weight: 950;
+}
+
+.reader-disclosure[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.reader-disclosure[open] summary::after {
+  content: "-";
+}
+
+.reader-disclosure > .article-body,
+.reader-disclosure > .prose,
+.reader-disclosure > .readable-prose {
+  width: 100%;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+@media (max-width: 760px) {
+  .reader-disclosure {
+    width: min(100% - 1rem, 100%);
+  }
+
+  .reader-disclosure summary {
+    align-items: flex-start;
+  }
+
+  .reader-disclosure summary small {
+    display: block;
+  }
+}
+
 .term-list,
 .abbr-list {
   display: grid;
@@ -10734,7 +10815,8 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 .readable-prose .cite-anchor,
-.reading-page .cite-anchor {
+.reading-page .cite-anchor,
+.fulltext-reader .cite-anchor {
   opacity: 0;
   transform: translateX(-0.08rem);
   transition: opacity 160ms ease, transform 160ms ease;
@@ -10747,7 +10829,13 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 .readable-prose h3:focus-within .cite-anchor,
 .readable-prose h4:focus-within .cite-anchor,
 .reading-page h2:hover .cite-anchor,
-.reading-page h2:focus-within .cite-anchor {
+.reading-page h2:focus-within .cite-anchor,
+.fulltext-reader h2:hover .cite-anchor,
+.fulltext-reader h3:hover .cite-anchor,
+.fulltext-reader h4:hover .cite-anchor,
+.fulltext-reader h2:focus-within .cite-anchor,
+.fulltext-reader h3:focus-within .cite-anchor,
+.fulltext-reader h4:focus-within .cite-anchor {
   opacity: 0.72;
   transform: none;
 }
