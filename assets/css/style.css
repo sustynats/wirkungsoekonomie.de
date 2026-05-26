@@ -4548,6 +4548,51 @@ textarea {
   font-weight: 900;
 }
 
+.scanner-path.explained-path {
+  counter-reset: explained-path;
+  gap: 0.7rem;
+}
+
+.scanner-path.explained-path li {
+  counter-increment: explained-path;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.35rem 0.75rem;
+  align-items: start;
+  justify-content: initial;
+  min-height: 0;
+  padding: 0.85rem 1rem;
+}
+
+.scanner-path.explained-path li::before {
+  content: counter(explained-path);
+  display: inline-grid;
+  place-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.12);
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.scanner-path.explained-path li::after {
+  content: none;
+}
+
+.scanner-path.explained-path strong {
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.scanner-path.explained-path span {
+  grid-column: 2;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
 @media (max-width: 1020px) {
   .scanner-mode-grid,
   .scanner-demo-grid,
