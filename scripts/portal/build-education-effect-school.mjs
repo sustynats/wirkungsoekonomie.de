@@ -521,17 +521,17 @@ function referenceBlock(base) {
 
 function politicalBlock() {
   const rows = portalMatrix.politics || [
-    ["Aufgabe der Politik", "Bildung als Wirkungsinfrastruktur ermöglichen: Basiskompetenzen sichern, Wirkungskompetenz aufbauen, Teilhabe stärken und Schulentwicklung systematisch unterstützen."],
-    ["Politische Rahmenbedingungen", "Lehrpläne, Bildungsstandards, Bewertungsrecht, Ganztag, Startchancen, Lehrkräftebildung, digitale Infrastruktur, Datenschutz, Schulsozialarbeit und Förderlogiken müssen wirkungsorientiert anschlussfähig werden."],
-    ["Ausgestaltungsspielraum", "Parteien können unterschiedlich gewichten: Noten oder Portfolios, Schulautonomie oder Standards, Ganztag oder Wahlfreiheit, staatliche Förderung oder Trägerpluralität, Pilotierung oder flächendeckende Einführung."],
-    ["Zielkonflikte", "Vergleichbarkeit, Datenschutz, Lernunterstützung, Leistungsprinzip, Inklusion, Entlastung, Schulautonomie und Mindeststandards müssen demokratisch abgewogen werden."],
-    ["Rollenverteilung", "Länder, Kommunen, Bund, Schulen, Lehrkräfte, Eltern, Schüler:innen, Wissenschaft, Kultur, Wirtschaft und Zivilgesellschaft tragen unterschiedliche Verantwortung."],
-    ["Übergang und Schutz", "Modellschulen, Pilotregionen, Lehrkräfteentlastung, Schutz vor Kinder-Scoring, klare Datenregeln, Fortbildung und finanzierte Übergänge sind notwendig."],
-    ["Evaluation und Korrektur", "Bildungswirkungsberichte, Schulklima, Lernentwicklung, Teilhabe, Übergänge, Demokratiekompetenz und Wirkungskompetenz müssen überprüft werden, ohne Kinder zu bewerten."],
-    ["Parteipolitische Anschlussfähigkeit", "Unterschiedliche demokratische Perspektiven können innerhalb des Rahmens verschiedene Wege wählen."],
-    ["Schutz vor Technokratie", "Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Normative Entscheidungen bleiben demokratisch legitimiert."],
+    ["Aufgabe der Politik", "Politik muss Schulen in die Lage versetzen, nicht nur Stoff zu vermitteln, sondern Lernfähigkeit, Teilhabe, Demokratiepraxis, Gesundheit und Zukunftskompetenz verlässlich zu stärken."],
+    ["Was sich an Lehrplänen ändern müsste", "Lehrpläne bleiben notwendig. Sie sollten aber sichtbar machen, welche Wirkung ein Fach erzeugen soll: Basiskompetenzen sichern, Urteilskraft trainieren, Medienkompetenz stärken, Zusammenarbeit üben und Folgen von Entscheidungen verstehen."],
+    ["Was bei Bewertung geklärt werden muss", "Noten, Portfolios und Kompetenzraster brauchen klare Rollen: Sie sollen Lernen verbessern und Übergänge fairer machen, aber keine Kinderprofile, Familienrankings oder automatisierte Schullabel erzeugen."],
+    ["Was Schulen dafür brauchen", "Schulen brauchen Zeit, Fortbildung, digitale Grundausstattung, Schulsozialarbeit, Datenregeln und verlässliche Förderung. Wirkungsschule darf keine Zusatzaufgabe ohne Personal, Budget und Entlastung werden."],
+    ["Wo Politik entscheiden muss", "Länder und Parteien können unterschiedlich gewichten: mehr Ganztag oder mehr Wahlfreiheit, mehr Standards oder mehr Schulautonomie, zuerst Modellschulen oder schneller in die Fläche. Diese Entscheidungen müssen offen benannt werden."],
+    ["Zielkonflikte", "Vergleichbarkeit hilft gegen Beliebigkeit, kann aber pädagogische Freiheit einengen. Datenschutz schützt Kinder, kann aber frühe Hilfe erschweren. Leistungsanspruch, Inklusion und Entlastung müssen praktisch austariert werden."],
+    ["Rollenverteilung", "Länder setzen Regeln und Prüfungsrahmen. Kommunen sichern Räume, Sozialraum und Infrastruktur. Schulen gestalten Praxis. Lehrkräfte, Eltern und Schüler:innen geben Rückmeldung. Wissenschaft prüft, ob die Wirkung wirklich eintritt."],
+    ["Übergang und Schutz", "Start mit Modellschulen und Pilotregionen, keine personenbezogenen Scores, keine Sanktionen gegen Kinder oder Lehrkräfte, klare Zweckbindung der Daten und finanzierte Fortbildung vor neuen Pflichten."],
+    ["Evaluation und Korrektur", "Geprüft werden Schulklima, Lernentwicklung, Teilhabe, Übergänge, Demokratiekompetenz und Wirkungskompetenz. Wenn ein Instrument Druck erhöht statt Lernen verbessert, muss es geändert oder beendet werden."],
   ];
-  return `<section class="section" aria-labelledby="politik"><div class="section-header"><p class="hero-kicker">Demokratische Umsetzung</p>${h2("politik", "Politische Anschlussfähigkeit und Umsetzungsoptionen")}<p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit Bildung demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann.</p></div><div class="table-wrap"><table class="data-table"><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></section>`;
+  return `<section class="section" aria-labelledby="politik" data-no-political-standard><div class="section-header"><p class="hero-kicker">Demokratische Umsetzung</p>${h2("politik", "Politische Anschlussfähigkeit und Umsetzung")}<p>Dieser Block ist kein Parteiprogramm. Er zeigt, welche Entscheidungen politisch geklärt werden müssen, damit Bildung wirkungsorientierter wird, ohne Kinder, Familien oder Lehrkräfte zu bewerten.</p></div><div class="table-wrap"><table class="data-table political-implementation-table"><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></section>`;
 }
 
 function toolBlock(base, excludeUrl = "") {

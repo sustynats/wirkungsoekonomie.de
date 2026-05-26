@@ -159,21 +159,25 @@ const COMMON = {
     label: "Bildung",
     rows: {
       "Aufgabe der Politik":
-        "Politik muss Bildungswirkung ermöglichen, ohne Kinder zu bewerten oder Schule auf Kennzahlen zu reduzieren.",
-      "Politische Rahmenbedingungen":
-        "Lehrpläne, Bewertungsrecht, Schulfinanzierung, Modellschulen, Förderbudgets, Datenschutz und Länderzuständigkeiten müssen geklärt werden.",
+        "Politik muss Schulen in die Lage versetzen, nicht nur Stoff zu vermitteln, sondern Lernfähigkeit, Teilhabe, Demokratiepraxis, Gesundheit und Zukunftskompetenz verlässlich zu stärken.",
+      "Was sich an Lehrplänen ändern müsste":
+        "Lehrpläne bleiben notwendig. Sie sollten aber sichtbar machen, welche Wirkung ein Fach erzeugen soll: Basiskompetenzen sichern, Urteilskraft trainieren, Medienkompetenz stärken, Zusammenarbeit üben und Folgen von Entscheidungen verstehen.",
+      "Was bei Bewertung geklärt werden muss":
+        "Noten, Portfolios und Kompetenzraster brauchen klare Rollen: Sie sollen Lernen verbessern und Übergänge fairer machen, aber keine Kinderprofile, Familienrankings oder automatisierte Schullabel erzeugen.",
+      "Was Schulen dafür brauchen":
+        "Schulen brauchen Zeit, Fortbildung, digitale Grundausstattung, Schulsozialarbeit, Datenregeln und verlässliche Förderung. Wirkungsschule darf keine Zusatzaufgabe ohne Personal, Budget und Entlastung werden.",
       Ausgestaltungsspielraum:
-        "Länder können Fächervernetzung, Fach Zukunft, Portfolios, Modellschulen, Ganztag, Förderung und digitale Bildung unterschiedlich ausgestalten.",
+        "Länder und Parteien können unterschiedlich gewichten: mehr Ganztag oder mehr Wahlfreiheit, mehr Standards oder mehr Schulautonomie, zuerst Modellschulen oder schneller in die Fläche. Diese Entscheidungen müssen offen benannt werden.",
       Zielkonflikte:
-        "Vergleichbarkeit, pädagogische Freiheit, Noten, Inklusion, Datenschutz, Leistungsdruck, Ressourcen und Chancengerechtigkeit stehen in Spannung.",
+        "Vergleichbarkeit hilft gegen Beliebigkeit, kann aber pädagogische Freiheit einengen. Datenschutz schützt Kinder, kann aber frühe Hilfe erschweren. Leistungsanspruch, Inklusion und Entlastung müssen praktisch austariert werden.",
       Rollenverteilung:
-        "Länder, Kommunen, Schulen, Lehrkräfte, Eltern, Schüler:innen, Wissenschaft und Zivilgesellschaft tragen unterschiedliche Aufgaben.",
+        "Länder setzen Regeln und Prüfungsrahmen. Kommunen sichern Räume, Sozialraum und Infrastruktur. Schulen gestalten Praxis. Lehrkräfte, Eltern und Schüler:innen geben Rückmeldung. Wissenschaft prüft, ob die Wirkung wirklich eintritt.",
       "Übergang und Schutz":
-        "Schutz vor Kinder-Scoring, klare Datenschutzregeln, pädagogische Evaluation, Beteiligung und Piloträume sind zwingend.",
+        "Start mit Modellschulen und Pilotregionen, keine personenbezogenen Scores, keine Sanktionen gegen Kinder oder Lehrkräfte, klare Zweckbindung der Daten und finanzierte Fortbildung vor neuen Pflichten.",
       "Evaluation und Korrektur":
-        "Modellschulen, Portfolios, Förderung und Wirkungskompetenz müssen lernend ausgewertet werden, ohne Kinder auf Scores zu reduzieren.",
+        "Geprüft werden Schulklima, Lernentwicklung, Teilhabe, Übergänge, Demokratiekompetenz und Wirkungskompetenz. Wenn ein Instrument Druck erhöht statt Lernen verbessert, muss es geändert oder beendet werden.",
       "Parteipolitische Anschlussfähigkeit":
-        "Bildungsgerechtigkeit, Leistungsorientierung, digitale Mündigkeit, Demokratiebildung und kommunale Bildungsnetze können verschieden kombiniert werden.",
+        "Bildungsgerechtigkeit, Leistungsorientierung, digitale Mündigkeit, Demokratiebildung und kommunale Bildungsnetze können verschieden kombiniert werden, solange Schutzgrenzen und Verantwortlichkeiten klar bleiben.",
       "Schutz vor Technokratie":
         "Wirkungsdaten dürfen Kinder nicht klassifizieren. Sie helfen, Lernräume, Förderung und Strukturen besser zu gestalten.",
     },
@@ -291,7 +295,7 @@ function renderPoliticalBlock(context) {
   return `<section class="section" aria-labelledby="political-implementation">
     <div class="card">
       <p class="hero-kicker">Umsetzung</p>
-      <h2 id="political-implementation">Politische Anschlussfähigkeit und Umsetzungsoptionen <a class="cite-anchor no-print" href="#political-implementation" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <h2 id="political-implementation" class="implementation-title">Politische Anschlussfähigkeit und Umsetzung <a class="cite-anchor no-print" href="#political-implementation" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
       <p>${escapeHtml(STANDARD_INTRO)}</p>
       <div class="table-wrap"><table class="data-table political-implementation-table">
         <thead><tr><th>Ebene</th><th>Konkrete Ausgestaltung für ${escapeHtml(context.label)}</th></tr></thead>
