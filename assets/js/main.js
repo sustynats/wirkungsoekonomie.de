@@ -32,7 +32,8 @@ if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
-    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|anwendungen.html|fuer/"],
+    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|anwendungen.html"],
+    ["Für wen?", "fuer/", "fuer/|ordnung/anschlussfaehigkeit/|ordnung/demokratische-anschlussfaehigkeit.html|parteien.html"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
