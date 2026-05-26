@@ -217,6 +217,22 @@ function curatedIaEntries() {
       body: "Der Referenzrahmen erklärt die offiziellen SDGs sowie SDG+ für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, Zusammenhalt und digitale Selbstbestimmung.",
       priority: 150,
     },
+    {
+      id: "woek-curated-folgencheck",
+      title: "Folgencheck",
+      description: "WÖk-Prüfbegriff: Faktencheck fragt, ob etwas stimmt. Folgencheck fragt, was es auslösen kann.",
+      url: "/begriffe/folgencheck/",
+      section: "Begriffe",
+      type: "Prüfbegriff",
+      format: "Begriffseite",
+      impactSpaces: ["Mensch", "Planet", "Demokratie"],
+      standards: ["SDG", "SDG+"],
+      instruments: ["WÖk-Scanner", "Wirkungsbewertung", "Wirkungsrückkopplung"],
+      tags: ["Faktencheck", "Folgencheck", "WÖk-Folgencheck", "Wirkungsfolgen", "Wirkungspotenzial", "politische Aussage prüfen", "Medienwirkung", "Desinformation", "Folgenabschätzung"],
+      aliases: ["Was kann das auslösen", "Wirkungsfolgenabschätzung", "Folgenprüfung", "Wirkungsrisiko", "Resonanzraum"],
+      body: "Der Folgencheck prüft Wirkungspotenziale, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen von Aussagen, Entscheidungen, Produkten, Technologien, Maßnahmen und Kapitalflüssen. Er ist keine Zensur, keine Personenbewertung und kein Wahrheitsmonopol.",
+      priority: 151,
+    },
   ];
 }
 

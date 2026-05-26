@@ -22,8 +22,8 @@ function categoryFor(term) {
   if (["wirkungssteuer", "wirkungssteuergesetz", "wirkungsumsatzsteuer", "wirkungslenkung", "wirkungshaushalt"].includes(id)) return "Steuerungsbegriff";
   if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum"].includes(id)) return "Architekturbegriff";
   if (["sdg-plus", "mensch-planet-demokratie", "demokratie"].includes(id)) return "Demokratiebegriff";
-  if (["positive-netto-wirkung", "netto-wirkung", "positive-wirkung", "negative-wirkung", "neutrale-wirkung", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungsgrenze"].includes(id)) return "Bewertungsbegriff";
-  if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte"].includes(id)) return "Praxisbegriff";
+  if (["positive-netto-wirkung", "netto-wirkung", "positive-wirkung", "negative-wirkung", "neutrale-wirkung", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungsgrenze", "folgencheck"].includes(id)) return "Bewertungsbegriff";
+  if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte", "faktencheck"].includes(id)) return "Praxisbegriff";
   return "Grundbegriff";
 }
 
