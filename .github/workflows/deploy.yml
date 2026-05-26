@@ -29,10 +29,22 @@ jobs:
         run: npm run build
       - name: Check site size
         run: npm run check:size
+      - name: Package Pages artifact
+        run: |
+          tar \
+            --dereference \
+            --hard-dereference \
+            --exclude-vcs \
+            --exclude='.git' \
+            --exclude='./artifact.tar' \
+            -cf "${{ runner.temp }}/artifact.tar" .
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
-          path: .
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          if-no-files-found: error
+          retention-days: 1
 
   deploy:
     needs: build
