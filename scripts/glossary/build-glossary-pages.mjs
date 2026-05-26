@@ -178,6 +178,127 @@ function learningBlock(term) {
         </section>`;
 }
 
+function wirkungskompetenzDeepBlock(term) {
+  if (term.slug !== "wirkungskompetenz") return "";
+  const competencies = [
+    [
+      "Wahrnehmungskompetenz",
+      "Folgen, Nebenwirkungen und blinde Flecken wahrnehmen, bevor sie als Krise sichtbar werden.",
+    ],
+    [
+      "Systemkompetenz",
+      "Zusammenhänge zwischen Menschen, Organisationen, Märkten, Institutionen, Daten, Technologie und Natur verstehen.",
+    ],
+    [
+      "Analysekompetenz",
+      "Wirkungspotenziale, Datenqualität, Unsicherheit, Zielkonflikte und Bewertungsgrenzen einordnen.",
+    ],
+    [
+      "Kommunikationskompetenz",
+      "Wirkung verständlich, fair und korrekturfähig erklären, ohne Menschen zu beschämen oder Konflikte zu verkürzen.",
+    ],
+    [
+      "Entscheidungskompetenz",
+      "Handlungsoptionen abwägen, Rückkopplungen gestalten und Verantwortung demokratisch, rechtlich und praktisch absichern.",
+    ],
+  ];
+  const examples = [
+    [
+      "Produktentscheidung",
+      "Nicht nur Preis und Nutzen prüfen, sondern auch Klima, Wasser, Arbeit, Gesundheit, Kreislauf und Datenqualität mitdenken.",
+    ],
+    [
+      "Politische Aussage",
+      "Nicht nur Zustimmung oder Ablehnung messen, sondern prüfen, welche Wirkung Sprache auf Vertrauen, Faktenklarheit und demokratische Streitfähigkeit hat.",
+    ],
+    [
+      "Unternehmensentscheidung",
+      "Nicht nur Marge und Risiko sehen, sondern auch Lieferketten, Beschäftigung, Resilienz, Datenlage und gesellschaftliche Rückkopplung.",
+    ],
+    [
+      "Bildungsentscheidung",
+      "Nicht nur Noten oder Abschlüsse betrachten, sondern Selbstwirksamkeit, Urteilskraft, Gesundheit, Teilhabe und Zukunftsfähigkeit.",
+    ],
+    [
+      "Medienwirkung",
+      "Nicht nur Reichweite zählen, sondern Framing, Quellenklarheit, Emotionalisierung, Resonanzräume und Polarisierungsrisiken einordnen.",
+    ],
+  ];
+  const applications = [
+    "Schule",
+    "Unternehmen",
+    "Verwaltung",
+    "Medien",
+    "Bürger:innenalltag",
+    "Akademie",
+  ];
+  const related = [
+    ["SDG-/SDG+-Referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
+    ["Wirkungsfeld Bildung", "../../wirkungsfelder/bildung/"],
+    ["Akademie", "../../akademie.html"],
+    ["Kompass", "../../kompass.html"],
+    ["Glossar", "../../glossar.html"],
+    ["Begriff Wirkung", "../../begriffe/wirkung/"],
+    ["Begriff Wirkungspotenzial", "../../begriffe/wirkungspotenzial/"],
+    ["Begriff Wirkungsrückkopplung", "../../begriffe/wirkungsrueckkopplung/"],
+    ["WÖk-Scanner", "../../anwendungen/scanner.html"],
+    ["Wirkungsschule-Check", "../../erleben/wirkungsschule-check/"],
+  ];
+  return `<section class="term-summary-card" aria-labelledby="wirkungskompetenz-detail-title">
+          <h2 id="wirkungskompetenz-detail-title">Wirkungskompetenz als Lern- und Bürgerkompetenz</h2>
+          <p>Wirkungskompetenz ist die WÖk-spezifische Fähigkeit, Wirkung, Wirkungspotenziale, Nebenwirkungen, Datenqualität, Unsicherheit, Systemzusammenhänge und Verantwortung zu erkennen, zu bewerten und handlungsfähig damit umzugehen.</p>
+          <div class="term-section-grid">
+            <section class="term-section-card">
+              <p class="section-eyebrow">Definition</p>
+              <h3>Was bedeutet Wirkungskompetenz?</h3>
+              <p>Sie verbindet innere Entwicklung mit Daten, Systemen, Demokratie, Technologie, Institutionen, Wirkungsmessung und Rückkopplung. Damit wird Nachhaltigkeit nicht nur als Wissen gelernt, sondern als verantwortliche Urteilskraft und Gestaltungsfähigkeit.</p>
+            </section>
+            <section class="term-section-card">
+              <p class="section-eyebrow">IDGs</p>
+              <h3>Verhältnis zu Inner Development Goals</h3>
+              <p>Die IDGs beschreiben wichtige innere und soziale Entwicklungsfähigkeiten. Wirkungskompetenz knüpft daran an, ist aber nicht identisch damit: Sie ergänzt diese Fähigkeiten um Wirkungsdaten, Systemanalyse, demokratische Schutzgrenzen und praktische Rückkopplung.</p>
+            </section>
+          </div>
+          <section class="term-link-section" aria-labelledby="wirkungskompetenz-fuenf">
+            <div>
+              <p class="section-eyebrow">Teilkompetenzen</p>
+              <h3 id="wirkungskompetenz-fuenf">Die fünf Teilkompetenzen</h3>
+            </div>
+            <div class="card-grid">
+              ${competencies.map(([title, text]) => `<article class="info-card"><h4>${esc(title)}</h4><p>${esc(text)}</p></article>`).join("")}
+            </div>
+          </section>
+          <section class="term-link-section" aria-labelledby="wirkungskompetenz-beispiele">
+            <div>
+              <p class="section-eyebrow">Beispiele</p>
+              <h3 id="wirkungskompetenz-beispiele">Wo Wirkungskompetenz praktisch wird</h3>
+            </div>
+            <div class="card-grid">
+              ${examples.map(([title, text]) => `<article class="info-card"><h4>${esc(title)}</h4><p>${esc(text)}</p></article>`).join("")}
+            </div>
+          </section>
+          <div class="term-section-grid">
+            <section class="term-section-card">
+              <p class="section-eyebrow">Grenzen</p>
+              <h3>Was Wirkungskompetenz nicht ist</h3>
+              ${listItems(["keine Gesinnungskontrolle", "keine Personenbewertung", "keine moralische Selbstüberhöhung", "keine bloße Nachhaltigkeitsbildung"])}
+            </section>
+            <section class="term-section-card">
+              <p class="section-eyebrow">Anwendung</p>
+              <h3>Wo sie gebraucht wird</h3>
+              ${listItems(applications)}
+            </section>
+          </div>
+          <section class="term-link-section" aria-labelledby="wirkungskompetenz-links">
+            <div>
+              <p class="section-eyebrow">Passende Tools und Seiten</p>
+              <h3 id="wirkungskompetenz-links">Weiterlesen und anwenden</h3>
+            </div>
+            ${linkedChips(related)}
+          </section>
+        </section>`;
+}
+
 function termExtraBlock(term) {
   if (term.termId !== "mensch-planet-demokratie") return "";
   return `<section class="term-summary-card" aria-labelledby="sdg-context-title">
@@ -370,6 +491,7 @@ for (const term of data.terms) {
         </div>
 ${termExtraBlock(term)}
 ${learningBlock(term)}
+${wirkungskompetenzDeepBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
             <p class="section-eyebrow">Verknüpfungen</p>

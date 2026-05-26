@@ -586,6 +586,76 @@ function go3PublicationBlock(base) {
     </section>`;
 }
 
+function idgWirkungskompetenzBlock(base) {
+  const rows = [
+    [
+      "SDGs / Agenda 2030",
+      "Welche Ziele sollen erreicht werden?",
+      "Globaler Zielrahmen für nachhaltige Entwicklung.",
+    ],
+    [
+      "SDG+",
+      "Welche demokratischen und institutionellen Bedingungen braucht Zielerreichung?",
+      "WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, Vertrauen und digitale Selbstbestimmung.",
+    ],
+    [
+      "IDGs",
+      "Welche inneren und sozialen Fähigkeiten brauchen Menschen für Transformation?",
+      "Anschlussfähiger Kompetenzrahmen für persönliche und kollektive Entwicklungsfähigkeit.",
+    ],
+    [
+      "Wirkungskompetenz",
+      "Wie erkennen, bewerten und gestalten wir Wirkung verantwortlich?",
+      "Operative Kompetenz der Wirkungsökonomie: Wirkung lesen, Nebenwirkungen erkennen, Daten einordnen, Systemzusammenhänge verstehen und Entscheidungen verantwortlich treffen.",
+    ],
+  ];
+  const links = [
+    ["Begriff Wirkungskompetenz", "begriffe/wirkungskompetenz/"],
+    ["Wirkungsfeld Bildung", "wirkungsfelder/bildung/"],
+    ["Akademie", "akademie.html"],
+    ["Kompass", "kompass.html"],
+    ["Glossar SDG+", "begriffe/sdg-plus/"],
+    ["Begriff Wirkung", "begriffe/wirkung/"],
+    ["Begriff Wirkungspotenzial", "begriffe/wirkungspotenzial/"],
+    ["Begriff Wirkungsrückkopplung", "begriffe/wirkungsrueckkopplung/"],
+  ];
+  return `<section class="section" aria-labelledby="idg-wirkungskompetenz">
+      <div class="section-header">
+        <p class="hero-kicker">Kompetenzen für Umsetzung</p>
+        ${sectionTitle("idg-wirkungskompetenz", "Von Zielen zu Fähigkeiten: IDGs und Wirkungskompetenz")}
+        <p>Die SDGs beschreiben, welche Ziele erreicht werden sollen. SDG+ ergänzt die demokratischen, medialen, rechtsstaatlichen und institutionellen Voraussetzungen dafür. Die Inner Development Goals zeigen, welche inneren und sozialen Fähigkeiten Menschen brauchen, um Wandel tragen zu können. Die Wirkungsökonomie verbindet diese Ebene mit Wirkungskompetenz: der Fähigkeit, Wirkungen, Wirkungspotenziale, Nebenwirkungen, Datenqualität, Unsicherheit, Systemzusammenhänge und Verantwortung zu erkennen und handlungsfähig damit umzugehen.</p>
+      </div>
+      <div class="table-wrap" role="region" aria-label="SDGs, SDG+, IDGs und Wirkungskompetenz im Vergleich" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Ebene</th>
+              <th>Leitfrage</th>
+              <th>Rolle in der Wirkungsökonomie</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map(([level, question, role]) => `<tr>
+              <td>${escapeHtml(level)}</td>
+              <td>${escapeHtml(question)}</td>
+              <td>${escapeHtml(role)}</td>
+            </tr>`).join("")}
+          </tbody>
+        </table>
+      </div>
+      <aside class="download-card" aria-labelledby="wirkungskompetenz-mehr-als-idg">
+        <div>
+          <p class="card-kicker">Einordnung</p>
+          <h3 id="wirkungskompetenz-mehr-als-idg">Warum Wirkungskompetenz mehr ist als IDG</h3>
+          <p class="card-text">Die IDGs beschreiben wichtige innere und soziale Entwicklungsfähigkeiten. Wirkungskompetenz knüpft daran an, geht aber weiter: Sie verbindet innere Entwicklung mit Daten, Systemen, Demokratie, Technologie, Institutionen, Wirkungsmessung und Rückkopplung. Sie ist deshalb die zentrale Bildungs- und Bürgerkompetenz der Wirkungsökonomie.</p>
+        </div>
+        <div class="portal-card-actions no-print">
+          ${links.map(([label, target]) => `<a class="text-link" href="${href(base, target)}">${escapeHtml(label)}</a>`).join("")}
+        </div>
+      </aside>
+    </section>`;
+}
+
 function exportBlock() {
   const available = sdgDepthDownloads.filter((download) => fs.existsSync(path.join(ROOT, download.file)));
   return `<section class="section" aria-labelledby="export-title">
@@ -655,6 +725,7 @@ function overviewPage() {
         </div>
       </div>
     </section>
+    ${idgWirkungskompetenzBlock(base)}
     ${go3PublicationBlock(base)}
     <section class="section" aria-labelledby="sdg-list">
       <div class="section-header">
