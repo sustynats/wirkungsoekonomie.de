@@ -626,6 +626,84 @@ function enhanceLongArticleToc() {
 
 enhanceLongArticleToc();
 
+function enhancePublicCards() {
+  document.querySelectorAll(".card, .info-card, .download-card, .library-card").forEach((card) => {
+    const text = (card.textContent || "").toLowerCase();
+    const hasLink = Boolean(card.querySelector("a[href], button"));
+    const isDocument = /pdf|onlinefassung|download|bibliothek|dossier|konzeptpapier|arbeitspapier|thesenpapier/.test(text);
+    card.classList.toggle("is-link-card", hasLink);
+    card.classList.toggle("is-static-card", !hasLink);
+    card.classList.toggle("is-document-card", isDocument);
+  });
+}
+
+function enhanceTocUsability() {
+  const tocCards = Array.from(document.querySelectorAll(".toc-card, nav[aria-label='Inhaltsverzeichnis']"));
+  tocCards.forEach((toc, index) => {
+    if (index > 0 && toc.closest(".article-toc") === null) {
+      toc.classList.add("is-secondary-toc");
+    }
+    if (toc instanceof HTMLDetailsElement) {
+      if (window.matchMedia("(max-width: 760px)").matches) {
+        toc.removeAttribute("open");
+      }
+      const summary = toc.querySelector("summary");
+      if (summary && /Inhaltsverzeichnis$/.test(summary.textContent.trim())) {
+        summary.textContent = "Inhaltsverzeichnis anzeigen";
+      }
+      return;
+    }
+    const links = toc.querySelectorAll("a[href^='#']");
+    if (links.length < 8 || toc.querySelector("details")) {
+      return;
+    }
+    const details = document.createElement("details");
+    details.className = toc.className || "toc-card";
+    details.classList.add("is-enhanced-toc");
+    details.setAttribute("aria-label", "Inhaltsverzeichnis");
+    if (!window.matchMedia("(max-width: 760px)").matches) {
+      details.setAttribute("open", "");
+    }
+    const summary = document.createElement("summary");
+    summary.className = "card-title";
+    summary.textContent = "Inhaltsverzeichnis anzeigen";
+    details.append(summary);
+    Array.from(toc.childNodes).forEach((child) => {
+      if (child.nodeType === Node.ELEMENT_NODE && child.matches("h2, .card-title")) {
+        return;
+      }
+      details.append(child);
+    });
+    toc.replaceWith(details);
+  });
+}
+
+function enhanceResponsiveTables() {
+  document.querySelectorAll("table").forEach((table) => {
+    if (!table.closest(".table-wrap")) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "table-wrap auto-table-wrap";
+      wrapper.setAttribute("role", "region");
+      wrapper.setAttribute("tabindex", "0");
+      table.before(wrapper);
+      wrapper.append(table);
+    }
+    const headers = Array.from(table.querySelectorAll("thead th")).map((cell) => cell.textContent.trim());
+    if (!headers.length) return;
+    table.querySelectorAll("tbody tr").forEach((row) => {
+      Array.from(row.children).forEach((cell, index) => {
+        if (!cell.getAttribute("data-label") && headers[index]) {
+          cell.setAttribute("data-label", headers[index]);
+        }
+      });
+    });
+  });
+}
+
+enhancePublicCards();
+enhanceTocUsability();
+enhanceResponsiveTables();
+
 function getGlossaryContext() {
   const path = window.location.pathname;
   const filename = path.split("/").filter(Boolean).pop() || "index.html";
