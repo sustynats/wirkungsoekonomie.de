@@ -10946,8 +10946,15 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 .library-card[data-card-label]::before {
   content: attr(data-card-label);
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  justify-self: start;
   width: fit-content;
+  height: auto;
+  min-height: 1.65rem;
   max-width: 100%;
+  box-sizing: border-box;
   margin-bottom: 0.85rem;
   padding: 0.22rem 0.55rem;
   border: 1px solid rgba(11, 16, 32, 0.12);
@@ -10960,6 +10967,11 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   letter-spacing: 0.06em;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.target-card[data-card-label]::before {
+  content: none;
+  display: none;
 }
 
 .card[data-card-role="link"]::before,
