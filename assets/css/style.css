@@ -5501,7 +5501,38 @@ textarea {
   font-weight: 850;
 }
 
+.range-label-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.range-label-row output {
+  flex: 0 0 auto;
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.control-help,
+.range-live-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.range-live-note {
+  padding: 0.68rem 0.78rem;
+  background: rgba(47, 125, 92, 0.08);
+  border: 1px solid rgba(47, 125, 92, 0.16);
+  border-radius: 8px;
+}
+
 .range-field input {
+  width: 100%;
   accent-color: var(--green);
 }
 
@@ -6086,6 +6117,13 @@ textarea {
   color: var(--navy);
   font-size: 0.88rem;
   font-weight: 850;
+}
+
+.radar-axis p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.38;
 }
 
 .comparison-cards {
@@ -8397,6 +8435,16 @@ textarea {
   .result-explainer-grid,
   .compact-result-kpis {
     grid-template-columns: 1fr;
+  }
+
+  .range-label-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .range-label-row output {
+    white-space: normal;
   }
 
   .download-meta {
