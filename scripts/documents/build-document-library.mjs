@@ -13,6 +13,8 @@ const currentDocuments = publicDocuments.filter((document) => document.status ==
 const archiveDocuments = publicDocuments.filter((document) => document.status !== "current" || document.isArchive);
 const labelBySlug = new Map([
   ["sdg-plus", "SDG+"],
+  ["sdgs", "SDGs"],
+  ["esg", "ESG"],
   ["woek-id", "WÖk-ID"],
   ["t-sroi", "T-SROI"],
   ["nwi", "NWI"],
@@ -29,6 +31,26 @@ const explicitScopeById = new Map([
     key: "buch-langform",
     label: "Buch / Langform",
     description: "Umfangreiche Buchfassung für längere Lektüre und Nachschlagen.",
+  }],
+  ["nachhaltiges-marketing-mix", {
+    key: "buch-kurzform",
+    label: "Buch / Praxisleitfaden",
+    description: "Frühe Buchfassung mit konkreter Anwendungsperspektive.",
+  }],
+  ["nachhaltiger-einzelhandel", {
+    key: "buch-kurzform",
+    label: "Buch / Praxisleitfaden",
+    description: "Frühe Buchfassung mit konkreter Anwendungsperspektive.",
+  }],
+  ["nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen", {
+    key: "buch-kurzform",
+    label: "Buch / Praxisleitfaden",
+    description: "Frühe Buchfassung mit konkreter Anwendungsperspektive.",
+  }],
+  ["nachhaltigkeitstransformation-im-handwerk", {
+    key: "buch-kurzform",
+    label: "Buch / Praxisleitfaden",
+    description: "Frühe Buchfassung mit konkreter Anwendungsperspektive.",
   }],
   ["woek-master-items-v1-2", {
     key: "register",
@@ -223,7 +245,7 @@ function publicDocumentRole(document) {
   const type = String(document.type || "").toLowerCase();
   const categories = (document.category || []).map((item) => String(item).toLowerCase());
 
-  if (document.id === "die-neue-ordnung-des-wohlstands" || type.includes("grundlagenwerk") || type === "buch") {
+  if (document.id === "die-neue-ordnung-des-wohlstands" || type.includes("grundlagenwerk") || type === "buch" || type.startsWith("buch /")) {
     return {
       key: "buch",
       label: "Buch / Grundlagenwerk",
@@ -460,6 +482,8 @@ function documentCard(document) {
   const scope = documentScope(document);
   const role = publicDocumentRole(document);
   const summary = publicDocumentSummary(document);
+  const archiveBadge = document.isArchive || !document.onlineUrl ? `    <p class="document-archive-badge">Archivmaterial · PDF-only</p>
+` : "";
   const searchText = [
     document.title,
     summary,
@@ -485,8 +509,7 @@ function documentCard(document) {
     <p class="card-text">${escapeHtml(summary)}</p>
     ${tagList(document.category)}
     <div class="download-related"><span>Passend dazu</span>${(document.relatedTerms || []).slice(0, 3).map((term) => `<a href="${escapeHtml(termHref(term))}">${escapeHtml(relationLabelFromTerm(term))}</a>`).join("")}${(document.relatedFields || []).slice(0, 1).map((field) => `<a href="${escapeHtml(field)}">${escapeHtml(slugToLabel(field))}</a>`).join("")}</div>
-    ${document.isArchive || !document.onlineUrl ? `<p class="document-archive-badge">Archivmaterial · PDF-only</p>` : ""}
-    ${documentActions(document, !document.isArchive && Boolean(document.onlineUrl))}
+${archiveBadge}    ${documentActions(document, !document.isArchive && Boolean(document.onlineUrl))}
   </article>`;
 }
 

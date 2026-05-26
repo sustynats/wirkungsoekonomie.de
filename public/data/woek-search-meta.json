@@ -1,17 +1,11 @@
 {
-  "generatedAt": "2026-05-26T18:50:06.270Z",
+  "generatedAt": "2026-05-26T20:44:08.037Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
       "status": "published",
       "sectionId": "woek-curated-fuer-wen",
       "searchBoost": 145
-    },
-    "/fuer/kommunen/mannheim-sdg-haushalt/": {
-      "documentType": "Fallstudie",
-      "status": "published",
-      "sectionId": "woek-case-mannheim-sdg-haushalt",
-      "searchBoost": 138
     },
     "/ordnung/demokratische-anschlussfaehigkeit.html": {
       "documentType": "Politik und Parteien",
@@ -1518,6 +1512,73 @@
         "nachhaltigkeit",
         "wirkungsbewertung",
         "scorecard"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/",
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltiger-einzelhandel/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2023",
+      "sectionId": "document-nachhaltiger-einzelhandel",
+      "documentId": "nachhaltiger-einzelhandel",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "kreislaufwirtschaft",
+        "sdgs"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/",
+        "/wirkungsfelder/produkte-konsum/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2023",
+      "sectionId": "document-nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+      "documentId": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+      "relatedTerms": [
+        "sdgs",
+        "esg",
+        "nachhaltigkeit",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "relatedFields": [
+        "/wirkungsfelder/wirtschaft-unternehmen/"
+      ],
+      "relatedTools": [
+        "/werkzeuge/impact-controlling/"
+      ],
+      "sourceFile": "assets/data/document-registry.json",
+      "searchBoost": 138
+    },
+    "/bibliothek/nachhaltigkeitstransformation-im-handwerk/": {
+      "documentType": "bibliothek",
+      "status": "current",
+      "version": "2023",
+      "sectionId": "document-nachhaltigkeitstransformation-im-handwerk",
+      "documentId": "nachhaltigkeitstransformation-im-handwerk",
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "sdgs",
+        "kreislaufwirtschaft",
+        "wirkungsbewertung"
       ],
       "relatedDocuments": [],
       "relatedFields": [
