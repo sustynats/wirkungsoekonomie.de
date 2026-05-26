@@ -10670,7 +10670,70 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   }
 }
 
-/* Public UX polish: distinguish cards, keep long reading pages calm, and prevent mobile clipping. */
+/* Public UX polish: distinguish card roles, keep long reading pages calm, and prevent mobile clipping. */
+.card[data-card-role],
+.info-card[data-card-role],
+.download-card[data-card-role],
+.library-card[data-card-role] {
+  position: relative;
+}
+
+.card[data-card-label]::before,
+.info-card[data-card-label]::before,
+.download-card[data-card-label]::before,
+.library-card[data-card-label]::before {
+  content: attr(data-card-label);
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: 0.85rem;
+  padding: 0.22rem 0.55rem;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: 999px;
+  background: rgba(11, 16, 32, 0.035);
+  color: rgba(11, 16, 32, 0.74);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.card[data-card-role="link"]::before,
+.card[data-card-role="source"]::before,
+.info-card[data-card-role="link"]::before,
+.info-card[data-card-role="source"]::before {
+  border-color: rgba(47, 125, 92, 0.24);
+  background: rgba(47, 125, 92, 0.075);
+  color: var(--green-dark);
+}
+
+.card[data-card-role="document"]::before,
+.card[data-card-role="download"]::before,
+.card[data-card-role="reference"]::before,
+.download-card[data-card-role]::before,
+.library-card[data-card-role="document"]::before,
+.library-card[data-card-role="download"]::before {
+  border-color: rgba(200, 155, 60, 0.34);
+  background: rgba(200, 155, 60, 0.12);
+  color: #6d5118;
+}
+
+.card[data-card-role="tool"]::before,
+.tool-card[data-card-role]::before {
+  border-color: rgba(200, 90, 74, 0.32);
+  background: rgba(200, 90, 74, 0.11);
+  color: #8a3428;
+}
+
+.card[data-card-role="chapter"]::before,
+.card[data-card-role="term"]::before {
+  border-color: rgba(47, 125, 92, 0.28);
+  background: rgba(47, 125, 92, 0.11);
+  color: var(--green-dark);
+}
+
 .is-link-card {
   position: relative;
 }
@@ -10681,7 +10744,7 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 .is-link-card::after {
-  content: "Weiter";
+  content: attr(data-card-action);
   position: absolute;
   right: 1rem;
   bottom: 0.85rem;
@@ -10692,6 +10755,11 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   opacity: 0.72;
+}
+
+.is-link-card:not([data-card-action])::after {
+  content: "";
+  display: none;
 }
 
 .is-static-card {
