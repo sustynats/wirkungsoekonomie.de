@@ -10644,6 +10644,28 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   font-weight: 760;
 }
 
+.dossier-reading-section .section-header {
+  max-width: 78ch;
+}
+
+.dossier-info-card {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+}
+
+.dossier-info-card .card-title {
+  overflow-wrap: anywhere;
+}
+
+.dossier-info-card .card-text {
+  margin: 0;
+}
+
+.source-card {
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+}
+
 .metadata-card dl {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

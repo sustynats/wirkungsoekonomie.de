@@ -198,9 +198,12 @@ const leverTexts = {
   "Politische Anschlussfähigkeit": "Politische Anschlussfähigkeit bedeutet, dass unterschiedliche demokratische Wege möglich bleiben. Die Wirkungsökonomie gibt einen Bewertungsrahmen, aber keinen fertigen Parteiprogrammtext vor.",
 };
 function cleanDetailMarkdown(markdown) {
-  let text = stripFrontMatterText(markdown, /^##\s+Leitfrage/m)
+  let text = stripFrontMatterText(markdown, /^##\s+Leitfrage/m);
+  if (text === markdown.trim()) text = stripFrontMatterText(markdown, /^##\s+/m);
+  text = text
     .replaceAll("Leistung als Wirkung statt Bewegung", "Leistung als Wirkung statt bloßer Aktivität")
-    .replaceAll("Inputs", "Eingaben");
+    .replaceAll("Inputs", "Eingaben")
+    .replaceAll("v0.1", "Arbeitsstand");
   const lines = text.split("\n");
   let currentHeading = "";
   return lines.map((line) => {
@@ -215,6 +218,173 @@ function cleanDossierMarkdown(markdown) {
   return stripFrontMatterText(markdown, /^##\s+Kurzfassung/m)
     .replaceAll("Leistung als Wirkung statt Bewegung", "Leistung als Wirkung statt bloßer Aktivität")
     .replaceAll("Inputs", "Eingaben");
+}
+function cleanPublicDocumentMarkdown(markdown) {
+  return stripFrontMatterText(markdown, /^##\s+/m)
+    .replaceAll("Leistung als Wirkung statt Bewegung", "Leistung als Wirkung statt bloßer Aktivität")
+    .replaceAll("v0.1", "Arbeitsstand")
+    .replaceAll("Word-Datei", "PDF-Fassung")
+    .replaceAll("Word-Export", "PDF-Export");
+}
+function splitDossierSections(markdown) {
+  const sections = [];
+  let current = null;
+  for (const raw of markdown.replace(/\r\n/g, "\n").split("\n")) {
+    const line = raw.trim();
+    const heading = line.match(/^##\s+(.+)$/);
+    if (heading) {
+      current = { title: heading[1].trim(), id: `dossier-${slug(heading[1].trim())}`, lines: [] };
+      sections.push(current);
+    } else if (current && line) {
+      current.lines.push(line);
+    }
+  }
+  return sections;
+}
+function findSection(sections, pattern) {
+  return sections.find((section) => pattern.test(section.title)) || { title: "", id: "", lines: [] };
+}
+function cleanDossierLine(line) {
+  return String(line || "")
+    .replace(/^[-*•]\s*/, "")
+    .replace(/^\d+\.\s*/, "")
+    .replace(/\*\*/g, "")
+    .trim();
+}
+function dossierPairs(lines, skip = 0) {
+  const clean = lines.map(cleanDossierLine).filter(Boolean).slice(skip);
+  const pairs = [];
+  for (let i = 0; i < clean.length; i += 2) {
+    const label = clean[i];
+    const text = clean[i + 1] || "";
+    if (label && text) pairs.push([label, text]);
+  }
+  return pairs;
+}
+function dossierBullets(lines) {
+  return lines.map(cleanDossierLine).filter(Boolean);
+}
+function renderPairCards(pairs, fallbackKicker = "Datenpunkt") {
+  if (!pairs.length) return "";
+  return `<div class="card-grid three">${pairs.map(([label, text]) => `<article class="card dossier-info-card"><p class="card-kicker">${esc(fallbackKicker)}</p><h3 class="card-title">${esc(label)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div>`;
+}
+function renderPairTable(pairs) {
+  if (!pairs.length) return "";
+  return `<div class="table-wrap"><table class="data-table"><tbody>${pairs.map(([label, text]) => `<tr><th scope="row">${esc(label)}</th><td>${esc(text)}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function renderListCards(items, kicker = "Punkt") {
+  if (!items.length) return "";
+  return `<div class="card-grid three">${items.map((item) => `<article class="card dossier-info-card"><p class="card-kicker">${esc(kicker)}</p><p class="card-text">${esc(item)}</p></article>`).join("")}</div>`;
+}
+function bookAnchorHref(label) {
+  const normalized = String(label || "").toLowerCase();
+  const match = bookAnchors.find(([bookLabel]) => {
+    const chapter = bookLabel.match(/kapitel\s+(\d+)/i);
+    return chapter && normalized.includes(`kapitel ${chapter[1]}`);
+  });
+  return match ? match[1] : "";
+}
+function toolHrefFor(label) {
+  const normalized = String(label || "").toLowerCase();
+  if (normalized.includes("wirkungseinkommen")) return "erleben/automatisierungs-wirkungseinkommensrechner/";
+  if (normalized.includes("automatisierungsdividende")) return "werkzeuge/automatisierungsdividende/";
+  if (normalized.includes("sozialabgaben")) return "wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/";
+  if (normalized.includes("scorecard")) return "werkzeuge/scorecards/";
+  if (normalized.includes("care")) return "wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/";
+  return "";
+}
+function publicDownloadFile(file) {
+  if (!file) return "";
+  const pdf = file.replace(/\.docx$/i, ".pdf").replace(/\.md$/i, ".pdf");
+  if (exists(`assets/downloads/${pdf}`)) return pdf;
+  if (!/\.docx$/i.test(file) && exists(`assets/downloads/${file}`)) return file;
+  return "";
+}
+function renderStructuredDossier(markdown, { title, summary, slugName }) {
+  const sections = splitDossierSections(markdown);
+  const kurz = findSection(sections, /^Kurzfassung$/i);
+  const data = findSection(sections, /Datenquellen/i);
+  const score = findSection(sections, /Scorecard/i);
+  const model = findSection(sections, /Modellrechnung/i);
+  const risks = findSection(sections, /Risiken/i);
+  const toolsSection = findSection(sections, /Tool-Bezug/i);
+  const politics = findSection(sections, /Politische Anschlussfähigkeit/i);
+  const sdg = findSection(sections, /SDG-/i);
+  const book = findSection(sections, /Anker im Online-Buch/i);
+  const source = findSection(sections, /^Quellen und Anschlussstellen$/i);
+  const dataPairs = dossierPairs(data.lines, 2);
+  const scorePairs = dossierPairs(score.lines, 2);
+  const modelIntro = cleanDossierLine(model.lines[0] || "");
+  const modelPairs = dossierPairs(model.lines, modelIntro ? 3 : 2);
+  const riskItems = dossierBullets(risks.lines);
+  const toolItems = dossierBullets(toolsSection.lines);
+  const politicsIntro = cleanDossierLine(politics.lines[0] || "");
+  const politicsPairs = dossierPairs(politics.lines, politicsIntro ? 3 : 2);
+  const sdgPairs = dossierPairs(sdg.lines, 2);
+  const bookItems = dossierBullets(book.lines);
+  const sourceItems = dossierBullets(source.lines);
+  const toc = [
+    { level: 2, text: "Auf einen Blick", id: "dossier-auf-einen-blick" },
+    { level: 2, text: "Daten und Indikatoren", id: "dossier-daten" },
+    { level: 2, text: "Bewertungslogik", id: "dossier-bewertung" },
+    { level: 2, text: "Modellrechnung", id: "dossier-modellrechnung" },
+    { level: 2, text: "Risiken und Schutz", id: "dossier-risiken" },
+    { level: 2, text: "Politische Anschlussfähigkeit", id: "dossier-politik" },
+    { level: 2, text: "SDG-/SDG+-Bezug", id: "dossier-sdg" },
+    { level: 2, text: "Weiterlesen und Quellen", id: "dossier-weiterlesen" },
+  ];
+  return {
+    toc,
+    html: `<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-auf-einen-blick">
+  <div class="section-header"><p class="hero-kicker">Dossier</p>${h2("dossier-auf-einen-blick", "Auf einen Blick")}<p>${esc(kurz.lines[0] || summary)}</p></div>
+  <div class="card-grid three">
+    <article class="card key-point-card"><p>Dieses Dossier übersetzt das Detailkonzept in Daten, Annahmen, Bewertungslogik und politische Anschlussfragen.</p></article>
+    <article class="card key-point-card"><p>Es ist kein fertiges Gesetz, keine amtliche Berechnung und keine Bewertung einzelner Personen.</p></article>
+    <article class="card key-point-card"><p>Es zeigt, welche Informationen gebraucht würden, um Wirkungseinkommen praktisch und grundrechtskonform zu prüfen.</p></article>
+  </div>
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-daten">
+  <div class="section-header"><p class="hero-kicker">Datenbasis</p>${h2("dossier-daten", "Daten und Indikatoren")}<p>Die Daten werden nicht als Roharchiv ausgespielt, sondern nach ihrer Funktion im Modell geordnet.</p></div>
+  ${renderPairCards(dataPairs, "Datenfeld")}
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-bewertung">
+  <div class="section-header"><p class="hero-kicker">Scorecard</p>${h2("dossier-bewertung", "Bewertungslogik")}<p>Die Scorecard beschreibt Wirkungspotenziale. Sie ist kein Wahrheitsurteil und kein Personen-Scoring.</p></div>
+  ${renderPairCards(scorePairs, "Wirkungsfeld")}
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-modellrechnung">
+  <div class="section-header"><p class="hero-kicker">Modellrechnung</p>${h2("dossier-modellrechnung", "Was wird modellhaft berechnet?")}<p>${esc(modelIntro || "Die Modellrechnung dient der öffentlichen Nachvollziehbarkeit und ersetzt keine amtliche Berechnung.")}</p></div>
+  ${renderPairTable(modelPairs)}
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-risiken">
+  <div class="section-header"><p class="hero-kicker">Schutzgrenzen</p>${h2("dossier-risiken", "Risiken und Schutzmechanismen")}<p>Wirkungsdaten dürfen Entscheidungen vorbereiten, aber keine Überwachung, keine Diskriminierung und keine automatische Entscheidung erzeugen.</p></div>
+  ${renderListCards(riskItems, "Schutz")}
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-tools">
+  <div class="section-header"><p class="hero-kicker">Anwendung</p>${h2("dossier-tools", "Passende Werkzeuge und Checks")}<p>Diese Verweise führen zu nutzbaren Rechnern oder zu Methodikseiten. Kein Link verspricht mehr als die Zielseite leisten kann.</p></div>
+  <div class="card-grid three">${toolItems.map((item) => {
+    const target = toolHrefFor(item);
+    const targetUrl = `/${target.replace(/^\/+/, "")}`;
+    return `<article class="card"><h3 class="card-title">${esc(item)}</h3><p class="card-text">Passender Anschluss für Prüfung, Beispielrechnung oder Methodik.</p>${target ? `<div class="portal-card-actions"><a class="text-link" href="${esc(targetUrl)}">${esc(ctaLabelFor(target))}</a></div>` : ""}</article>`;
+  }).join("")}</div>
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-politik">
+  <div class="section-header"><p class="hero-kicker">Demokratische Umsetzung</p>${h2("dossier-politik", "Politische Anschlussfähigkeit")}<p>${esc(politicsIntro || "Die folgenden Punkte markieren den Rahmen für demokratische, rechtsstaatliche und praktische Umsetzung.")}</p></div>
+  ${renderPairTable(politicsPairs)}
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-sdg">
+  <div class="section-header"><p class="hero-kicker">Referenzrahmen</p>${h2("dossier-sdg", "SDG-/SDG+-Bezug")}<p>SDGs und SDG+ zeigen, welche Schutz- und Zielräume vom Thema berührt werden.</p></div>
+  ${renderPairCards(sdgPairs, "Ebene")}
+</section>
+<section class="section reading-page dossier-reading-section" aria-labelledby="dossier-weiterlesen">
+  <div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("dossier-weiterlesen", "Weiterlesen und Quellen")}<p>Buchanker und Quellen stehen als Orientierung am Ende der Leseseite.</p></div>
+  <div class="card-grid three">${bookItems.map((item) => {
+    const target = bookAnchorHref(item);
+    const targetUrl = `/${target.replace(/^\/+/, "")}`;
+    return `<article class="card"><p class="card-kicker">Buchanker</p><h3 class="card-title">${esc(item)}</h3>${target ? `<div class="portal-card-actions"><a class="text-link" href="${esc(targetUrl)}">Buchkapitel lesen</a></div>` : ""}</article>`;
+  }).join("")}</div>
+  ${sourceItems.length ? `<div class="card source-card"><h3 class="card-title">Quellen und Anschlussstellen</h3><ul class="source-list">${sourceItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>` : ""}
+</section>`,
+  };
 }
 function stripPortalOperationalSections(markdown) {
   const cut = markdown.search(/^##\s+(Werkzeuge in diesem Bereich|Politische Anschlussfähigkeit|SDG-|Anker im Online-Buch|Online lesen)/m);
@@ -245,12 +415,21 @@ function cards(b, items, fallbackLabel = "Vertiefung lesen") {
 }
 function downloads(b, files) {
   const labelForDownload = (file) => {
+    if (/\.pdf$/i.test(file)) {
+      if (file.includes("detailkonzept")) return "Konzept-PDF herunterladen";
+      if (file.includes("einzeldossier") || file.includes("gesamtdossier")) return "Dossier-PDF herunterladen";
+      return "PDF herunterladen";
+    }
     if (downloadLabels[file]) return downloadLabels[file];
     if (file.startsWith("woek_detailkonzept_")) return "Detailkonzept herunterladen";
     if (file.startsWith("woek_einzeldossier_")) return "Dossier herunterladen";
     return file.replace(/^woek_/, "").replaceAll("_", " ").replace(/\.docx$/, "");
   };
-  const links = files.filter(Boolean).filter((file) => exists(`assets/downloads/${file}`)).map((file) => `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${file}`)}">${esc(labelForDownload(file))}</a>`);
+  const links = files
+    .filter(Boolean)
+    .map(publicDownloadFile)
+    .filter(Boolean)
+    .map((file) => `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${file}`)}">${esc(labelForDownload(file))}</a>`);
   return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${h2("downloads", "Vertiefung und Arbeitsmaterial")}<p>Hier findest du ergänzende Downloadfassungen und die Druckfunktion. Die inhaltliche Orientierung steht auf der Seite selbst.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${links.join("")}</div></div></section>`;
 }
 function publicationAccess(b, heading = "Online lesen und herunterladen") {
@@ -260,7 +439,10 @@ function publicationAccess(b, heading = "Online lesen und herunterladen") {
     text,
     `wirkungsfelder/arbeit-einkommen/${slugName}/`,
   ]);
-  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", heading)}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben ergänzende Export- und Archivfassungen.</p></div>${cards(b, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Dossiers bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${topDocuments.map(([, , , doc]) => exists(`assets/downloads/${doc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${doc}`)}">${esc(downloadLabels[doc] || "Download")}</a>` : "").join("")}</div></div></section>`;
+  return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", heading)}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. PDF-Downloads bleiben ergänzende Export- und Archivfassungen.</p></div>${cards(b, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">PDF und Archiv</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Dossiers bleiben als PDF-Dateien verfügbar.</p></div><div class="portal-card-actions">${topDocuments.map(([, , , doc]) => {
+    const file = publicDownloadFile(doc);
+    return file ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${file}`)}">PDF herunterladen</a>` : "";
+  }).join("")}</div></div></section>`;
 }
 function pagePublicationAccess(b, detailDoc, dossierDoc) {
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Online lesen, gezielt zitieren</p>${h2("publikationszugang-title", "Detailkonzept und Dossier")}<p class="card-text">Diese Unterseite enthält Detailkonzept und Einzeldossier vollständig online. Die Abschnittsanker können direkt zitiert werden; Downloads bleiben ergänzende Exportfassungen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Detailkonzept herunterladen</a>` : ""}${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>`;
@@ -343,7 +525,10 @@ ${toolRefs(b)}${referenceBlock(b)}<section class="section" aria-labelledby="unte
 function topicPage(item) {
   const [slugName, title, summary, detailMd, dossierMd, detailDoc, dossierDoc] = item;
   const detail = mdToHtml(cleanDetailMarkdown(read(`${SRC}/${detailMd}`)), "detail-");
-  const dossier = mdToHtml(cleanDossierMarkdown(read(`${SRC}/${dossierMd}`)), "dossier-");
+  const dossierMarkdown = cleanDossierMarkdown(read(`${SRC}/${dossierMd}`));
+  const dossier = renderStructuredDossier(dossierMarkdown, { title, summary, slugName });
+  const detailDownload = publicDownloadFile(detailDoc);
+  const dossierDownload = publicDownloadFile(dossierDoc);
   const subline = detailSublineBySlug[slugName] || summary;
   const summaryText = detailSummaryBySlug[slugName] || `Dieses Detailkonzept erklärt den Unterbereich "${title}" im Wirkungsfeld Arbeit & Einkommen. Es zeigt, welche alte Logik zu kurz greift, welche Wirkungsfragen relevant werden und welche demokratischen Schutzgrenzen gelten.`;
   const keyPoints = [
@@ -365,7 +550,7 @@ function topicPage(item) {
     title: `${title} | Arbeit & Einkommen`,
     description: summary,
     type: "Detailkonzept",
-    body: (b) => `<section class="hero portal-hero reading-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Detailkonzept</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(subline)}</p><div class="summary-box"><p>${esc(summaryText)}</p></div><div class="hero-actions no-print"><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a><a class="btn btn-primary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Downloadfassung herunterladen</a>` : ""}</div></div></section>
+    body: (b) => `<section class="hero portal-hero reading-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Detailkonzept</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(subline)}</p><div class="summary-box"><p>${esc(summaryText)}</p></div><div class="hero-actions no-print"><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a><a class="btn btn-primary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a>${detailDownload ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDownload}`)}">Konzept-PDF herunterladen</a>` : ""}</div></div></section>
 ${readingToc(detail.toc)}
 <section class="section reading-page" aria-labelledby="leitfrage-box"><article class="key-question-box"><p class="hero-kicker">Leitfrage</p>${h2("leitfrage-box", "Was klärt dieses Detailkonzept?")}<p>Wie wird Leistung sichtbar, wenn Einkommen allein nicht mehr beweist, dass gesellschaftlich positive Wirkung entsteht?</p></article></section>
 <section class="section reading-page" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Auf einen Blick")}</div><div class="card-grid three">${keyPoints.map((point) => `<article class="card key-point-card"><p>${esc(point)}</p></article>`).join("")}</div></section>
@@ -374,7 +559,7 @@ ${readingToc(detail.toc)}
 <section class="section reading-page" aria-labelledby="detailkonzept"><div class="prose readable-prose"><p class="hero-kicker">Onlinefassung</p>${h2("detailkonzept", "Detailkonzept lesen")} ${detail.html}</div></section>
 <section class="section reading-page" aria-labelledby="schutz"><div class="section-header"><p class="hero-kicker">Risiken und Schutz</p>${h2("schutz", "Schutzmechanismen")}</div><div class="card-grid three">${["Keine Personenbewertung", "Kein Leistungsmonitoring einzelner Beschäftigter", "Datenschutz und Datensparsamkeit", "Demokratische Kontrolle", "Rechtsbehelf und Korrektur", "Pilotierung vor Ausweitung"].map((item) => `<article class="card"><h3 class="card-title">${esc(item)}</h3><p class="card-text">Diese Schutzgrenze verhindert, dass Wirkungsbewertung zu Überwachung, Ranking oder automatischer Entscheidung wird.</p></article>`).join("")}</div></section>
 ${political()}${referenceBlock(b)}
-<section class="section reading-page" aria-labelledby="materialien"><div class="download-card"><div><p class="hero-kicker">Weiterlesen und anwenden</p>${h2("materialien", "Verwandte Seiten und Materialien")}<p class="card-text">Das Dossier dokumentiert Beispiele, Annahmen, Datenlogik und Grenzen. Downloads und Quellen stehen gesammelt am Ende.</p></div><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a><a class="btn btn-primary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a><a class="btn btn-secondary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner nutzen</a><a class="btn btn-secondary" href="${href(b, "begriffe/wirkungseinkommen/")}">Begriff Wirkungseinkommen erklären</a>${exists(`assets/downloads/${detailDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDoc}`)}">Downloadfassung herunterladen</a>` : ""}</div></div></section>
+<section class="section reading-page" aria-labelledby="materialien"><div class="download-card"><div><p class="hero-kicker">Weiterlesen und anwenden</p>${h2("materialien", "Verwandte Seiten und Materialien")}<p class="card-text">Das Dossier dokumentiert Beispiele, Annahmen, Datenlogik und Grenzen. Downloads und Quellen stehen gesammelt am Ende.</p></div><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a><a class="btn btn-primary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/`)}">Dossier lesen</a><a class="btn btn-secondary" href="${href(b, "erleben/automatisierungs-wirkungseinkommensrechner/")}">Rechner nutzen</a><a class="btn btn-secondary" href="${href(b, "begriffe/wirkungseinkommen/")}">Begriff Wirkungseinkommen erklären</a>${detailDownload ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${detailDownload}`)}">Konzept-PDF herunterladen</a>` : ""}</div></div></section>
 <section class="section reading-page" aria-labelledby="transparenz"><div class="card metadata-card"><p class="hero-kicker">Dokumentstand und Transparenz</p>${h2("transparenz", "Transparenz und Stand")}<dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Stand</dt><dd>Mai 2026</dd></div><div><dt>Status</dt><dd>Arbeits- und Diskussionsfassung</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl><p>Diese Onlinefassung ist eine Arbeits- und Diskussionsfassung der Wirkungsökonomie. Sie dient der fachlichen Weiterentwicklung und öffentlichen Nachvollziehbarkeit.</p></div></section>${bookBlock(b)}${sourceBlock()}${downloads(b, [detailDoc, dossierDoc])}`,
   });
   page({
@@ -382,11 +567,11 @@ ${political()}${referenceBlock(b)}
     title: `${title} Dossier | Arbeit & Einkommen`,
     description: `Dossier zu ${title}: Beispiele, Annahmen, Bewertungslogik, Grenzen und Materialien.`,
     type: "Dossier",
-    body: (b) => `<section class="hero portal-hero reading-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a> / <a href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">${esc(title)}</a></nav><p class="hero-kicker">Dossier</p><h1>${esc(title)}: Dossier</h1><p class="hero-subtitle">Praxisfrage, Daten, Annahmen, Bewertungslogik und Grenzen zum Detailkonzept.</p><div class="summary-box"><p>Dieses Dossier ergänzt das Detailkonzept. Es dokumentiert Beispiele, Datenquellen, Annahmen, mögliche Indikatoren, Risiken, politische Optionen und Werkzeugbezug.</p></div><div class="hero-actions no-print"><a class="btn btn-secondary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">Detailkonzept lesen</a><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a>${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-primary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>
+    body: (b) => `<section class="hero portal-hero reading-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a> / <a href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">${esc(title)}</a></nav><p class="hero-kicker">Dossier</p><h1>${esc(title)}: Dossier</h1><p class="hero-subtitle">Praxisfrage, Daten, Annahmen, Bewertungslogik und Grenzen zum Detailkonzept.</p><div class="summary-box"><p>Dieses Dossier ergänzt das Detailkonzept. Es dokumentiert Beispiele, Datenquellen, Annahmen, mögliche Indikatoren, Risiken, politische Optionen und Werkzeugbezug.</p></div><div class="hero-actions no-print"><a class="btn btn-secondary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">Detailkonzept lesen</a><a class="btn btn-secondary" href="${href(b, "wirkungsfelder/arbeit-einkommen/")}">Zurück zum Wirkungsfeld</a>${dossierDownload ? `<a class="btn btn-primary" href="${href(b, `assets/downloads/${dossierDownload}`)}">Dossier-PDF herunterladen</a>` : ""}</div></div></section>
 ${readingToc(dossier.toc)}
-<section class="section reading-page" aria-labelledby="dossier"><div class="prose readable-prose"><p class="hero-kicker">Dossier</p>${h2("dossier", "Dossier lesen")} ${dossier.html}</div></section>
-<section class="section reading-page" aria-labelledby="dossier-materialien"><div class="download-card"><div><p class="hero-kicker">Materialien</p>${h2("dossier-materialien", "Weiterlesen und herunterladen")}<p class="card-text">Detailkonzept lesen oder die Dossierfassung herunterladen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">Detailkonzept lesen</a>${exists(`assets/downloads/${dossierDoc}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDoc}`)}">Dossier herunterladen</a>` : ""}</div></div></section>
-<section class="section reading-page" aria-labelledby="dossier-transparenz"><div class="card metadata-card"><p class="hero-kicker">Dokumentstand und Transparenz</p>${h2("dossier-transparenz", "Transparenz und Stand")}<dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Stand</dt><dd>Mai 2026</dd></div><div><dt>Status</dt><dd>Arbeits- und Diskussionsfassung</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl><p>Diese Onlinefassung ist eine Arbeits- und Diskussionsfassung der Wirkungsökonomie. Sie dient der fachlichen Weiterentwicklung und öffentlichen Nachvollziehbarkeit.</p></div></section>${sourceBlock()}${downloads(b, [dossierDoc])}`,
+${dossier.html}
+<section class="section reading-page" aria-labelledby="dossier-materialien"><div class="download-card"><div><p class="hero-kicker">Materialien</p>${h2("dossier-materialien", "Weiterlesen und herunterladen")}<p class="card-text">Detailkonzept lesen, die Seite drucken oder die Dossierfassung als PDF herunterladen.</p></div><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-secondary" href="${href(b, `wirkungsfelder/arbeit-einkommen/${slugName}/`)}">Detailkonzept lesen</a>${dossierDownload ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${dossierDownload}`)}">Dossier-PDF herunterladen</a>` : ""}</div></div></section>
+<section class="section reading-page" aria-labelledby="dossier-transparenz"><div class="card metadata-card"><p class="hero-kicker">Dokumentstand und Transparenz</p>${h2("dossier-transparenz", "Transparenz und Stand")}<dl><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Stand</dt><dd>Mai 2026</dd></div><div><dt>Status</dt><dd>Arbeits- und Diskussionsfassung</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl><p>Diese Onlinefassung ist eine Arbeits- und Diskussionsfassung der Wirkungsökonomie. Sie dient der fachlichen Weiterentwicklung und öffentlichen Nachvollziehbarkeit.</p></div></section>`,
   });
 }
 
@@ -406,13 +591,14 @@ function toolPage([slugName, title, type, summary]) {
 }
 
 function documentPage([slugName, title, mdFile, docFile, summary]) {
-  const content = mdToHtml(read(`${SRC}/${mdFile}`), "doc-");
+  const content = mdToHtml(cleanPublicDocumentMarkdown(read(`${SRC}/${mdFile}`)), "doc-");
+  const docDownload = publicDownloadFile(docFile);
   page({
     rel: `wirkungsfelder/arbeit-einkommen/${slugName}/index.html`,
     title: `${title} | Arbeit & Einkommen`,
     description: summary,
     type: "Online-Volltext",
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Online-Volltext</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a>${exists(`assets/downloads/${docFile}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docFile}`)}">${esc(downloadLabels[docFile] || "Download")}</a>` : ""}</div></div></section>${toc(content.toc)}<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Zitierfähig</p>${h2("publikationszugang-title", "Online lesen, gezielt zitieren")}<p class="card-text">Diese Fassung ist vollständig online lesbar. Abschnittsanker können direkt zitiert werden; die Word-Datei bleibt Export- und Archivfassung.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#volltext">Zum Volltext</a>${exists(`assets/downloads/${docFile}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docFile}`)}">${esc(downloadLabels[docFile] || "Download")}</a>` : ""}</div></div></section><section class="section" aria-labelledby="volltext"><div class="prose"><p class="hero-kicker">Arbeit & Einkommen</p>${h2("volltext", `${title} online lesen`)}${content.html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefungen</p>${h2("unterbereiche", "Unterbereiche mit Detailkonzept und Dossier")}</div>${cards(b, pages.map(([slug, pageTitle, text]) => [pageTitle, "Unterbereich", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, [docFile])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Onlinefassung</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Onlinefassung lesen</a>${docDownload ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docDownload}`)}">PDF herunterladen</a>` : ""}</div></div></section>${toc(content.toc)}<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Onlinefassung</p>${h2("publikationszugang-title", "Online lesen, gezielt zitieren")}<p class="card-text">Diese Fassung ist vollständig online lesbar. Abschnittsanker können direkt zitiert werden; die PDF-Fassung bleibt die öffentliche Downloadfassung.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#volltext">Zum Volltext</a>${docDownload ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docDownload}`)}">PDF herunterladen</a>` : ""}</div></div></section><section class="section" aria-labelledby="volltext"><div class="prose"><p class="hero-kicker">Arbeit & Einkommen</p>${h2("volltext", `${title} online lesen`)}${content.html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefungen</p>${h2("unterbereiche", "Unterbereiche mit Detailkonzept und Dossier")}</div>${cards(b, pages.map(([slug, pageTitle, text]) => [pageTitle, "Unterbereich", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, [docFile])}`,
   });
 }
 
