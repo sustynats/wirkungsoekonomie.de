@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T07:33:28.244Z",
+  "generatedAt": "2026-05-26T15:14:46.190Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -144,6 +144,26 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 110
     },
+    "/begriffe/faktencheck/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-faktencheck",
+      "documentId": "faktencheck",
+      "relatedTerms": [
+        "folgencheck",
+        "medienwirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "resonanzraum",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [
+        "folgencheck-faktencheck"
+      ],
+      "sourceFile": "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1",
+      "searchBoost": 110
+    },
     "/begriffe/finalscore/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -159,6 +179,28 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 140
     },
+    "/begriffe/folgencheck/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-folgencheck",
+      "documentId": "folgencheck",
+      "relatedTerms": [
+        "faktencheck",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "medienwirkung",
+        "resonanzraum",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "folgencheck-faktencheck"
+      ],
+      "sourceFile": "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1",
+      "searchBoost": 140
+    },
     "/begriffe/gri/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -172,6 +214,25 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 110
+    },
+    "/begriffe/idgs/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-idgs",
+      "documentId": "idgs",
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "wirkungspotenzial",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [
+        "handbuch-wirkungskompetenz"
+      ],
+      "sourceFile": "SDG-/SDG+-Referenzrahmen der Wirkungsökonomie",
       "searchBoost": 110
     },
     "/begriffe/mensch-planet-demokratie/": {

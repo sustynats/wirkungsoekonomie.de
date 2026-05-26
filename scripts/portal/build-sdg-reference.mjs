@@ -561,8 +561,8 @@ function go3PublicationBlock(base) {
   return `<section class="section" aria-labelledby="go3-sdg-publications">
       <div class="section-header">
         <p class="hero-kicker">Fachliche Vertiefung</p>
-        ${sectionTitle("go3-sdg-publications", "SDG-/SDG+-Fachdetailkonzepte online lesen")}
-        <p>Diese drei Fachdetailkonzepte erklären den Referenzrahmen, die SDG+-Erweiterung und die Unterzielmatrix. Die Onlinefassung ist der öffentliche Hauptzugang; PDF und Datendateien sind ergänzende Arbeitsmaterialien.</p>
+        ${sectionTitle("go3-sdg-publications", "SDG-/SDG+-Vertiefungen online lesen")}
+        <p>Diese drei Vertiefungen erklären den Referenzrahmen, die SDG+-Erweiterung und die Unterzielmatrix. Die Onlinefassung ist der öffentliche Hauptzugang; PDF und Datendateien sind ergänzende Arbeitsmaterialien.</p>
       </div>
       <div class="card-grid three">
         ${go3PackageOnePublications.map((item) => {
@@ -572,7 +572,7 @@ function go3PublicationBlock(base) {
               : `<span class="prototype-badge">${escapeHtml(download.label)} folgt</span>`
           ).join("");
           return `<article class="card">
-          <p class="card-kicker">Detailkonzept v1.0</p>
+          <p class="card-kicker">Vertiefung v1.0</p>
           <h3 class="card-title">${escapeHtml(item.title)}</h3>
           <p class="card-text">${escapeHtml(item.summary)}</p>
           <div class="portal-card-actions no-print">
@@ -596,6 +596,63 @@ function exportBlock() {
         <div class="portal-card-actions no-print">
           <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
           ${available.map((download) => `<a class="btn btn-secondary" href="${download.href}">${escapeHtml(download.title)}</a>`).join("")}
+        </div>
+      </div>
+    </section>`;
+}
+
+function idgCompetenceBlock(base) {
+  return `<section class="section" aria-labelledby="idg-wirkungskompetenz">
+      <div class="section-header">
+        <p class="hero-kicker">Kompetenzrahmen</p>
+        ${sectionTitle("idg-wirkungskompetenz", "Von Zielen zu Fähigkeiten: IDGs und Wirkungskompetenz")}
+        <p>Die SDGs beschreiben, welche Ziele erreicht werden sollen. SDG+ ergänzt die demokratischen, medialen, rechtsstaatlichen und institutionellen Voraussetzungen dafür. Die Inner Development Goals zeigen, welche inneren und sozialen Fähigkeiten Menschen brauchen, um Wandel tragen zu können. Die Wirkungsökonomie verbindet diese Ebene mit Wirkungskompetenz: der Fähigkeit, Wirkungen, Wirkungspotenziale, Nebenwirkungen, Datenqualität, Unsicherheit, Systemzusammenhänge und Verantwortung zu erkennen und handlungsfähig damit umzugehen.</p>
+      </div>
+      <div class="table-wrap" role="region" aria-label="SDGs, SDG+, IDGs und Wirkungskompetenz im Vergleich" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Ebene</th>
+              <th>Leitfrage</th>
+              <th>Rolle in der Wirkungsökonomie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SDGs / Agenda 2030</td>
+              <td>Welche Ziele sollen erreicht werden?</td>
+              <td>Globaler Zielrahmen für nachhaltige Entwicklung.</td>
+            </tr>
+            <tr>
+              <td>SDG+</td>
+              <td>Welche demokratischen und institutionellen Bedingungen braucht Zielerreichung?</td>
+              <td>WÖk-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, Vertrauen und digitale Selbstbestimmung.</td>
+            </tr>
+            <tr>
+              <td>IDGs</td>
+              <td>Welche inneren und sozialen Fähigkeiten brauchen Menschen für Transformation?</td>
+              <td>Anschlussfähiger Kompetenzrahmen für persönliche und kollektive Entwicklungsfähigkeit.</td>
+            </tr>
+            <tr>
+              <td>Wirkungskompetenz</td>
+              <td>Wie erkennen, bewerten und gestalten wir Wirkung verantwortlich?</td>
+              <td>Operative Kompetenz der Wirkungsökonomie: Wirkung lesen, Nebenwirkungen erkennen, Daten einordnen, Systemzusammenhänge verstehen und Entscheidungen verantwortlich treffen.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">Einordnung</p>
+          ${sectionTitle("idg-competence-difference", "Warum Wirkungskompetenz mehr ist als IDG")}
+          <p class="card-text">Die IDGs beschreiben wichtige innere und soziale Entwicklungsfähigkeiten. Wirkungskompetenz knüpft daran an, geht aber weiter: Sie verbindet innere Entwicklung mit Daten, Systemen, Demokratie, Technologie, Institutionen, Wirkungsmessung und Rückkopplung. Sie ist deshalb die zentrale Bildungs- und Bürgerkompetenz der Wirkungsökonomie.</p>
+        </div>
+        <div class="portal-card-actions no-print">
+          <a class="btn btn-primary" href="${href(base, "begriffe/wirkungskompetenz/")}">Wirkungskompetenz verstehen</a>
+          <a class="btn btn-secondary" href="${href(base, "begriffe/idgs/")}">IDGs einordnen</a>
+          <a class="btn btn-secondary" href="${href(base, "wirkungsfelder/bildung/")}">Wirkungsfeld Bildung</a>
+          <a class="btn btn-secondary" href="${href(base, "akademie.html")}">Akademie</a>
+          <a class="btn btn-secondary" href="${href(base, "kompass.html")}">Kompass</a>
         </div>
       </div>
     </section>`;
@@ -655,6 +712,7 @@ function overviewPage() {
         </div>
       </div>
     </section>
+    ${idgCompetenceBlock(base)}
     ${go3PublicationBlock(base)}
     <section class="section" aria-labelledby="sdg-list">
       <div class="section-header">
@@ -710,13 +768,15 @@ function overviewPage() {
       <div class="section-header">
         <p class="hero-kicker">Glossar</p>
         ${sectionTitle("glossary-anchors", "Glossar- und Begriffanker")}
-        <p>Die Begriffe SDGs, SDG+, Agenda 2030, SDG-/SDG+-Referenzrahmen und positive Netto-Wirkung werden im Glossar mit dieser Seite verknüpft.</p>
+        <p>Die Begriffe SDGs, SDG+, Agenda 2030, IDGs, Wirkungskompetenz, SDG-/SDG+-Referenzrahmen und positive Netto-Wirkung werden im Glossar mit dieser Seite verknüpft.</p>
         <div class="model-strip">
           <a href="${href(base, "glossar.html#begriff-sdgs")}">SDGs</a>
           <a href="${href(base, "glossar.html#begriff-sdg-plus")}">SDG+</a>
           <a href="${href(base, "glossar.html#begriff-agenda-2030")}">Agenda 2030</a>
           <a href="${href(base, "glossar.html#begriff-sdg-sdgplus-referenzrahmen")}">SDG-/SDG+-Referenzrahmen</a>
           <a href="${href(base, "glossar.html#begriff-positive-netto-wirkung")}">Positive Netto-Wirkung</a>
+          <a href="${href(base, "begriffe/idgs/")}">IDGs</a>
+          <a href="${href(base, "begriffe/wirkungskompetenz/")}">Wirkungskompetenz</a>
         </div>
       </div>
     </section>
@@ -773,19 +833,19 @@ function sdgPlusPublicationBlock(base) {
   return `<section class="section" aria-labelledby="sdgplus-publications">
       <div class="section-header">
         <p class="hero-kicker">Online lesen und vertiefen</p>
-        ${sectionTitle("sdgplus-publications", "Detailkonzept und Dossier zu SDG+")}
+        ${sectionTitle("sdgplus-publications", "SDG+-Vertiefung und Materialien")}
         <p>SDG+ wird auf dieser Website vollständig online geführt. PDFs sind stabile Lesefassungen; editierbare Arbeitsformate bleiben intern.</p>
       </div>
       <div class="card-grid four">
         <article class="card">
           <p class="card-kicker">Onlinefassung</p>
-          <h3>Detailkonzept online lesen</h3>
+          <h3>SDG+ online erklären</h3>
           <p class="card-text">Definition, Begründung, sieben Dimensionen, Unterdimensionen, Indikatorfamilien, Wirkungsgrenzen und politische Anschlussfähigkeit.</p>
-          <a class="text-link" href="#sdgplus-detail">Zum Detailkonzept</a>
+          <a class="text-link" href="#sdgplus-detail">SDG+-Logik lesen</a>
         </article>
         <article class="card">
           <p class="card-kicker">Download</p>
-          <h3>Detailkonzept herunterladen</h3>
+          <h3>Vertiefung als PDF</h3>
           <p class="card-text">Die Lesefassung des vertieften SDG-/SDG+-Referenzrahmens als PDF.</p>
           <div class="portal-card-actions no-print">
             ${detailPdfAvailable ? `<a class="btn btn-secondary" href="${href(base, "assets/downloads/exports/sdg-sdgplus/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf")}">PDF herunterladen</a>` : '<span class="prototype-badge">PDF folgt</span>'}
