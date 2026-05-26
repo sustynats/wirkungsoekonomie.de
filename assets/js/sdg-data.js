@@ -4265,8 +4265,8 @@ window.WOEK_SDG_REFERENCES = [
     "id": "sdgplus-institutionelles-vertrauen",
     "type": "sdgplus",
     "number": null,
-    "title": "SDG+ institutionelles Vertrauen",
-    "shortTitle": "SDG+ institutionelles Vertrauen",
+    "title": "SDG+ Institutionelles Vertrauen",
+    "shortTitle": "SDG+ Institutionelles Vertrauen",
     "slug": "sdgplus-institutionelles-vertrauen",
     "anchor": "#sdgplus-institutionelles-vertrauen",
     "url": "/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/",
@@ -4327,22 +4327,22 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Gesundheit & Pflege",
         "url": "/wirkungsfelder/gesundheit-pflege/",
-        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Wohnen & Stadt",
         "url": "/wirkungsfelder/wohnen-stadt/",
-        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Produkte & Konsum",
         "url": "/wirkungsfelder/produkte-konsum/",
-        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
@@ -4380,8 +4380,8 @@ window.WOEK_SDG_REFERENCES = [
     "id": "sdgplus-gesellschaftlicher-zusammenhalt",
     "type": "sdgplus",
     "number": null,
-    "title": "SDG+ gesellschaftlicher Zusammenhalt",
-    "shortTitle": "SDG+ gesellschaftlicher Zusammenhalt",
+    "title": "SDG+ Gesellschaftlicher Zusammenhalt",
+    "shortTitle": "SDG+ Gesellschaftlicher Zusammenhalt",
     "slug": "sdgplus-gesellschaftlicher-zusammenhalt",
     "anchor": "#sdgplus-gesellschaftlicher-zusammenhalt",
     "url": "/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/",
@@ -4449,27 +4449,27 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Wohnen & Stadt",
         "url": "/wirkungsfelder/wohnen-stadt/",
-        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Gesundheit & Pflege",
         "url": "/wirkungsfelder/gesundheit-pflege/",
-        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Arbeit & Einkommen",
         "url": "/wirkungsfelder/arbeit-einkommen/",
-        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Kultur, Identität & Resonanz",
         "url": "/wirkungsfelder/kultur-identitaet-resonanz/",
-        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
@@ -4507,8 +4507,8 @@ window.WOEK_SDG_REFERENCES = [
     "id": "sdgplus-digitale-selbstbestimmung",
     "type": "sdgplus",
     "number": null,
-    "title": "SDG+ digitale Selbstbestimmung",
-    "shortTitle": "SDG+ digitale Selbstbestimmung",
+    "title": "SDG+ Digitale Selbstbestimmung",
+    "shortTitle": "SDG+ Digitale Selbstbestimmung",
     "slug": "sdgplus-digitale-selbstbestimmung",
     "anchor": "#sdgplus-digitale-selbstbestimmung",
     "url": "/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/",
@@ -4573,32 +4573,32 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Wissenschaft, Innovation & Digitalisierung",
         "url": "/wirkungsfelder/wissenschaft-innovation-digitalisierung/",
-        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Produkte & Konsum",
         "url": "/wirkungsfelder/produkte-konsum/",
-        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Gesundheit & Pflege",
         "url": "/wirkungsfelder/gesundheit-pflege/",
-        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [

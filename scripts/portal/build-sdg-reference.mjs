@@ -143,9 +143,9 @@ const sdgPlus = [
   ["medienqualitaet", "Medienqualität", "Qualität öffentlicher Information, journalistische Verantwortung, Quellenklarheit und Schutz vor Desinformation.", "Medienqualität beschreibt die Verlässlichkeit öffentlicher Information, Quellenklarheit, Kontext, Fehlerkorrektur und Schutz vor manipulativer Verzerrung."],
   ["rechtsstaatlichkeit", "Rechtsstaatlichkeit", "Verlässliche Regeln, Grundrechte, Minderheitenschutz, unabhängige Gerichte und Schutz vor Willkür.", "Rechtsstaatlichkeit sichert Grundrechte, Verfahren, Rechtsschutz, Minderheitenschutz und Begrenzung willkürlicher Macht."],
   ["diskursfaehigkeit", "Diskursfähigkeit", "Die Fähigkeit einer Gesellschaft, Konflikte faktenbasiert, respektvoll und demokratisch zu bearbeiten.", "Diskursfähigkeit beschreibt, ob eine Gesellschaft streiten, zuhören, korrigieren und gemeinsame Wirklichkeit herstellen kann."],
-  ["institutionelles-vertrauen", "institutionelles Vertrauen", "Vertrauen in Institutionen, Verfahren, Datenqualität, Transparenz und demokratische Korrekturmechanismen.", "Institutionelles Vertrauen entsteht, wenn Verfahren, Daten, Regeln und Verantwortlichkeiten nachvollziehbar, korrigierbar und fair sind."],
-  ["gesellschaftlicher-zusammenhalt", "gesellschaftlicher Zusammenhalt", "Soziale Bindung, Zugehörigkeit, Teilhabe, Sicherheit, Fairness und Schutz vor Spaltung.", "Gesellschaftlicher Zusammenhalt beschreibt Zugehörigkeit, Sicherheit, Fairness, Teilhabe und die Fähigkeit, Differenzen auszuhalten."],
-  ["digitale-selbstbestimmung", "digitale Selbstbestimmung", "Schutz vor Manipulation, Datenrechte, algorithmische Fairness, digitale Teilhabe und souveräne Nutzung digitaler Räume.", "Digitale Selbstbestimmung beschreibt die Fähigkeit, digitale Räume, Daten, Plattformen und algorithmische Systeme informiert und souverän zu nutzen."],
+  ["institutionelles-vertrauen", "Institutionelles Vertrauen", "Vertrauen in Institutionen, Verfahren, Datenqualität, Transparenz und demokratische Korrekturmechanismen.", "Institutionelles Vertrauen entsteht, wenn Verfahren, Daten, Regeln und Verantwortlichkeiten nachvollziehbar, korrigierbar und fair sind."],
+  ["gesellschaftlicher-zusammenhalt", "Gesellschaftlicher Zusammenhalt", "Soziale Bindung, Zugehörigkeit, Teilhabe, Sicherheit, Fairness und Schutz vor Spaltung.", "Gesellschaftlicher Zusammenhalt beschreibt Zugehörigkeit, Sicherheit, Fairness, Teilhabe und die Fähigkeit, Differenzen auszuhalten."],
+  ["digitale-selbstbestimmung", "Digitale Selbstbestimmung", "Schutz vor Manipulation, Datenrechte, algorithmische Fairness, digitale Teilhabe und souveräne Nutzung digitaler Räume.", "Digitale Selbstbestimmung beschreibt die Fähigkeit, digitale Räume, Daten, Plattformen und algorithmische Systeme informiert und souverän zu nutzen."],
 ].map(([key, title, hoverText, definition]) => ({
   id: `sdgplus-${key}`,
   type: "sdgplus",
@@ -901,10 +901,11 @@ function shortExplanationBlock(item) {
 }
 
 function sdgSections(item, base) {
+  const readableTitle = item.title.replace(" - ", " ");
   return `<section class="section" aria-labelledby="meaning-basic">
       <div class="section-header">
         <p class="hero-kicker">Grundbedeutung</p>
-        ${sectionTitle("meaning-basic", `Was bedeutet ${item.shortTitle}?`)}
+        ${sectionTitle("meaning-basic", `Was bedeutet ${readableTitle}?`)}
         <p>${escapeHtml(item.depthDescription || item.hoverText || item.officialDescription)}</p>
         <p>In einfacher Sprache: Dieses Ziel beschreibt einen Zustand, der weltweit verbessert werden soll. Es geht nicht nur um ein einzelnes Politikfeld, sondern um Lebensbedingungen, Risiken, Teilhabe und Zukunftsfähigkeit.</p>
       </div>
