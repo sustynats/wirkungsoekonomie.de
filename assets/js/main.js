@@ -755,9 +755,86 @@ function enhanceResponsiveTables() {
   });
 }
 
+function enhanceConceptDossierReaders() {
+  const readerTitles = new Map([
+    ["konzeptpapier lesen", "Konzeptpapier"],
+    ["detailkonzept lesen", "Detailkonzept"],
+    ["detailkonzept online lesen", "Detailkonzept"],
+    ["dossier lesen", "Dossier"],
+    ["einzeldossier online lesen", "Dossier"],
+    ["konzeptpapier online lesen", "Konzeptpapier"],
+  ]);
+  const collapsibleIds = new Set(["konzeptpapier", "detailkonzept", "dossier", "einzeldossier"]);
+  const hashTarget = window.location.hash ? document.getElementById(decodeURIComponent(window.location.hash.slice(1))) : null;
+
+  function normalizedText(element) {
+    const clone = element.cloneNode(true);
+    clone.querySelectorAll?.(".cite-anchor").forEach((anchor) => anchor.remove());
+    return (clone.textContent || "").trim().replace(/\s+/g, " ");
+  }
+
+  function setHeadingText(heading, label) {
+    const anchors = Array.from(heading.querySelectorAll(".cite-anchor"));
+    heading.textContent = label;
+    anchors.forEach((anchor) => {
+      heading.append(document.createTextNode(" "));
+      heading.append(anchor);
+    });
+  }
+
+  document.querySelectorAll("h1, h2, h3").forEach((heading) => {
+    if (!(heading instanceof HTMLElement)) return;
+    const key = normalizedText(heading).toLowerCase();
+    const label = readerTitles.get(key);
+    if (label) setHeadingText(heading, label);
+  });
+
+  document.querySelectorAll("a[href^='#']").forEach((link) => {
+    if (!(link instanceof HTMLAnchorElement)) return;
+    const target = link.getAttribute("href")?.slice(1) || "";
+    const text = (link.textContent || "").trim().toLowerCase();
+    if (!collapsibleIds.has(target) || !["konzeptpapier lesen", "dossier lesen", "detailkonzept lesen"].includes(text)) return;
+    if (!link.closest(".hero-actions, .portal-card-actions")) return;
+    const wrapper = link.closest(".portal-card-actions, .hero-actions");
+    link.remove();
+    if (wrapper && !wrapper.querySelector("a, button")) {
+      wrapper.remove();
+    }
+  });
+
+  document.querySelectorAll("section.article-section, section#detailkonzept, section#einzeldossier, section#konzeptpapier, section#dossier").forEach((section) => {
+    if (!(section instanceof HTMLElement) || section.querySelector(":scope > .reader-disclosure")) return;
+    const id = section.id || section.getAttribute("aria-labelledby") || "";
+    const firstReader = section.querySelector(".fulltext-reader, .prose, .readable-prose");
+    if (!firstReader || !["konzeptpapier", "detailkonzept", "dossier", "einzeldossier"].some((token) => id.includes(token))) return;
+
+    const title = id.includes("dossier") ? "Dossier" : id.includes("detailkonzept") ? "Detailkonzept" : "Konzeptpapier";
+    const details = document.createElement("details");
+    details.className = "reader-disclosure";
+    const summary = document.createElement("summary");
+    summary.innerHTML = `<span>${title}</span><small>Kapitel anzeigen</small>`;
+    details.append(summary);
+    Array.from(section.childNodes).forEach((child) => details.append(child));
+    section.append(details);
+    if (hashTarget && section.contains(hashTarget)) {
+      details.open = true;
+    }
+  });
+
+  if (hashTarget) {
+    document.querySelectorAll("details.reader-disclosure").forEach((details) => {
+      if (!(details instanceof HTMLDetailsElement)) return;
+      if (details === hashTarget || details.contains(hashTarget)) {
+        details.open = true;
+      }
+    });
+  }
+}
+
 enhancePublicCards();
 enhanceTocUsability();
 enhanceResponsiveTables();
+enhanceConceptDossierReaders();
 
 function getGlossaryContext() {
   const path = window.location.pathname;
