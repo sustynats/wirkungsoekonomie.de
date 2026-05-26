@@ -90,6 +90,12 @@ const sdgRefs = {
 };
 
 function esc(v) { return String(v).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;"); }
+function publicText(v = "") {
+  return String(v)
+    .replace(/Anzahl ersetzter FTE/g, "Anzahl ersetzter Vollzeitstellen")
+    .replace(/Beschäftigte \/ FTE/g, "Beschäftigte, umgerechnet auf Vollzeitstellen")
+    .replace(/\bFTE\b/g, "Vollzeitstellen");
+}
 function slug(v) { return String(v).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
 function route(rel) { return rel.endsWith("/index.html") ? `/${rel.slice(0, -"/index.html".length)}/` : `/${rel}`; }
 function base(rel) { return "../".repeat(path.dirname(rel).split("/").filter(Boolean).length); }
@@ -136,7 +142,7 @@ ${body(b)}
 }
 
 function mdToHtml(markdown, prefix = "") {
-  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const lines = publicText(markdown).replace(/\r\n/g, "\n").split("\n");
   const html = [];
   const toc = [];
   let p = [];
@@ -180,7 +186,7 @@ function mdToHtml(markdown, prefix = "") {
   return { toc, html: html.join("\n") };
 }
 function stripFrontMatterText(markdown, firstHeading) {
-  const normalized = markdown.replace(/\r\n/g, "\n");
+  const normalized = publicText(markdown).replace(/\r\n/g, "\n");
   const match = normalized.match(firstHeading);
   return match ? normalized.slice(match.index).trim() : normalized.trim();
 }
@@ -412,13 +418,13 @@ function documentPage([slugName, title, mdFile, docFile, summary]) {
     title: `${title} | Arbeit & Einkommen`,
     description: summary,
     type: "Online-Volltext",
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Online-Volltext</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a>${exists(`assets/downloads/${docFile}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docFile}`)}">${esc(downloadLabels[docFile] || "Download")}</a>` : ""}</div></div></section>${toc(content.toc)}<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Zitierfähig</p>${h2("publikationszugang-title", "Online lesen, gezielt zitieren")}<p class="card-text">Diese Fassung ist vollständig online lesbar. Abschnittsanker können direkt zitiert werden; die Word-Datei bleibt Export- und Archivfassung.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#volltext">Zum Volltext</a>${exists(`assets/downloads/${docFile}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docFile}`)}">${esc(downloadLabels[docFile] || "Download")}</a>` : ""}</div></div></section><section class="section" aria-labelledby="volltext"><div class="prose"><p class="hero-kicker">Arbeit & Einkommen</p>${h2("volltext", `${title} online lesen`)}${content.html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefungen</p>${h2("unterbereiche", "Unterbereiche mit Detailkonzept und Dossier")}</div>${cards(b, pages.map(([slug, pageTitle, text]) => [pageTitle, "Unterbereich", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, [docFile])}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Online lesbar</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a>${exists(`assets/downloads/${docFile}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docFile}`)}">${esc(downloadLabels[docFile] || "Download")}</a>` : ""}</div></div></section>${toc(content.toc)}<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Zitierfähig</p>${h2("publikationszugang-title", "Online lesen, gezielt zitieren")}<p class="card-text">Diese Fassung ist vollständig online lesbar. Abschnittsanker können direkt zitiert werden; die Datei bleibt als ergänzende Downloadfassung verfügbar.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#volltext">Zum Volltext</a>${exists(`assets/downloads/${docFile}`) ? `<a class="btn btn-secondary" href="${href(b, `assets/downloads/${docFile}`)}">${esc(downloadLabels[docFile] || "Download")}</a>` : ""}</div></div></section><section class="section" aria-labelledby="volltext"><div class="prose"><p class="hero-kicker">Arbeit & Einkommen</p>${h2("volltext", `${title} online lesen`)}${content.html}</div></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Vertiefungen</p>${h2("unterbereiche", "Unterbereiche mit Detailkonzept und Dossier")}</div>${cards(b, pages.map(([slug, pageTitle, text]) => [pageTitle, "Unterbereich", text, `wirkungsfelder/arbeit-einkommen/${slug}/`]))}</section>${toolRefs(b)}${crossLinks(b)}${political()}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${downloads(b, [docFile])}`,
   });
 }
 
 function toolDemo(b, slugName) {
   if (slugName !== "automatisierungs-wirkungseinkommensrechner") return `<section class="section"><div class="card"><p class="hero-kicker">Methodik</p><h2>Erklärseite</h2><p>Diese Seite ordnet die Methode ein und verweist auf nutzbare Demos, sobald eine Bedienoberfläche vorhanden ist.</p></div></section>`;
-  return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Modellhafte Demo</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>FTE, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
+  return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Modellhafte Demo</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>Vollzeitstellen, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
 }
 
 function methodToolPage(title, summary) {
@@ -540,13 +546,14 @@ function automationCalculator(b) {
       <article class="card">
         <p class="card-kicker">Modul 1</p>
         <h3 class="card-title">${termTip("Beitragslücke", "Die modellhafte Lücke, die entsteht, wenn Lohnsumme und damit Sozialbeiträge wegfallen.")}</h3>
-        <label>Anzahl betroffener FTE<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
+        <label>Beschäftigte, umgerechnet auf Vollzeitstellen<input type="number" min="0" step="1" value="120" data-auto-input="fte"></label>
+        <p class="field-help">Eine Vollzeitstelle = 1. Zwei halbe Stellen = 1. Dieser Wert ist eine Modellannahme.</p>
         <label>durchschnittlicher Bruttolohn pro Jahr<input type="number" min="0" step="1000" value="52000" data-auto-input="wage"></label>
         <label>Arbeitgeber-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.5" data-auto-input="employerRate"></label>
         <label>Arbeitnehmer-Sozialbeitrag in Prozent<input type="number" min="0" max="100" step="0.1" value="20.0" data-auto-input="employeeRate"></label>
         <label>erwartete Automatisierungsquote in Prozent<input type="range" min="0" max="100" step="1" value="35" data-auto-input="automationRate"></label>
         <div class="impact-kpis">
-          <div class="impact-kpi"><span>betroffene FTE</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
+          <div class="impact-kpi"><span>Betroffene Vollzeitstellen</span><strong data-auto-result="affectedFte">Beispielwerte aktiv</strong></div>
           <div class="impact-kpi"><span>wegfallende Lohnsumme</span><strong data-auto-result="lostPayroll">Beispielwerte aktiv</strong></div>
           <div class="impact-kpi"><span>potenzielle Beitragslücke</span><strong data-auto-result="contributionGap">Beispielwerte aktiv</strong></div>
         </div>
