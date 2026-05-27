@@ -78,6 +78,14 @@ Erfolgreich:
 - `node scripts/quality/audit-public-ctas.mjs`
 - lokaler HTTP-Smoke fuer die Live-Pruefseiten.
 
+## Live-Deploy
+
+- PR: `#56` - `Publish sprint 3 integration, abstracts and media paper`
+- Merge-Commit auf `main`: `3ac07ffc0517b0c039ed6888b17e65a4a756e0b5`
+- GitHub-Pages-Workflow: `26528432501`, erfolgreich am 2026-05-27.
+- Live geprueft: `/`, `/downloads.html`, `/suche.html`, `/erleben/automatisierungs-wirkungseinkommensrechner/` und `/wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/`.
+- Live-Ergebnis: HTTP 200; Entscheidungsblock, Merksatz, Download-Abstracts, Medien-Onlinefassung und Vollzeitstellen-Erklaerung sind auf der echten Domain sichtbar.
+
 ## Restpunkte
 
 - Visuelle Mobile-Pruefung im Browser sollte nach dem Live-Deploy stichprobenartig im echten Browser nachgezogen werden, weil der In-App-Browser in dieser Session nicht verfuegbar war.
