@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T13:23:24.318Z",
+  "generatedAt": "2026-05-27T13:57:28.005Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -362,6 +362,76 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "beschwerdemechanismus-access-to-remedy",
+      "termId": "beschwerdemechanismus-access-to-remedy",
+      "label": "Beschwerdemechanismus / Access to Remedy",
+      "canonicalLabel": "Beschwerdemechanismus / Access to Remedy",
+      "slug": "beschwerdemechanismus-access-to-remedy",
+      "aliases": [
+        "Beschwerdemechanismus / Access to Remedy",
+        "Beschwerdemechanismus",
+        "Access to Remedy",
+        "Zugang zu Abhilfe",
+        "Abhilfe",
+        "Remedy",
+        "Whistleblower-Schutz",
+        "FPIC",
+        "Free Prior and Informed Consent",
+        "Rechte indigener Gemeinschaften",
+        "Land Grabbing"
+      ],
+      "synonyms": [
+        "Beschwerdemechanismus / Access to Remedy",
+        "Beschwerdemechanismus",
+        "Access to Remedy",
+        "Zugang zu Abhilfe",
+        "Abhilfe",
+        "Remedy",
+        "Whistleblower-Schutz",
+        "FPIC",
+        "Free Prior and Informed Consent",
+        "Rechte indigener Gemeinschaften",
+        "Land Grabbing"
+      ],
+      "shortDefinition": "Beschwerdemechanismen und Access to Remedy sichern, dass Betroffene negative Wirkungen melden und Abhilfe erhalten können.",
+      "definition": "Betroffene brauchen sichere, zugängliche, faire und wirksame Wege, um Schäden, Missstände oder Rechtsverletzungen zu melden und Korrektur zu erreichen.",
+      "longDefinition": "Betroffene brauchen sichere, zugängliche, faire und wirksame Wege, um Schäden, Missstände oder Rechtsverletzungen zu melden und Korrektur zu erreichen.",
+      "woekRelation": "Für die WÖk ist Abhilfe ein Schutz gegen blinde Wirkungsbewertung: Einspruch, Korrektur und Lernschleifen gehören dazu.",
+      "statusNote": "Ein Formular allein ist kein wirksamer Beschwerdemechanismus. Entscheidend sind Schutz, Reaktion, Korrektur und Vertrauen.",
+      "usageNote": "Ein Formular allein ist kein wirksamer Beschwerdemechanismus. Entscheidend sind Schutz, Reaktion, Korrektur und Vertrauen.",
+      "categories": [
+        "anschlussbegriff",
+        "lieferketten-sorgfalt"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "human-rights-due-diligence",
+        "un-guiding-principles",
+        "lksg",
+        "csddd",
+        "wirkungsrat"
+      ],
+      "officialSources": [
+        "OHCHR - UN Guiding Principles on Business and Human Rights|https://www.ohchr.org/documents/publications/guidingprinciplesbusinesshr_en.pdf"
+      ],
+      "pageUrl": "/begriffe/beschwerdemechanismus-access-to-remedy/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Beschwerdemechanismen und Access to Remedy sichern, dass Betroffene negative Wirkungen melden und Abhilfe erhalten können.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Beschwerdemechanismus / Access to Remedy",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "biodiversitaetsrisiko",
       "termId": "biodiversitaetsrisiko",
       "label": "Biodiversitätsrisiko",
@@ -424,6 +494,66 @@
       "glossaryOrderKey": "Biodiversitätsrisiko",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "biodiversity-net-gain-no-net-loss",
+      "termId": "biodiversity-net-gain-no-net-loss",
+      "label": "Biodiversity Net Gain / No Net Loss",
+      "canonicalLabel": "Biodiversity Net Gain / No Net Loss",
+      "slug": "biodiversity-net-gain-no-net-loss",
+      "aliases": [
+        "Biodiversity Net Gain / No Net Loss",
+        "Biodiversity Net Gain",
+        "BNG",
+        "No Net Loss",
+        "Netto-Biodiversitätsgewinn",
+        "Netto-Biodiversitaetsgewinn",
+        "Naturgewinn"
+      ],
+      "synonyms": [
+        "Biodiversity Net Gain / No Net Loss",
+        "Biodiversity Net Gain",
+        "BNG",
+        "No Net Loss",
+        "Netto-Biodiversitätsgewinn",
+        "Netto-Biodiversitaetsgewinn",
+        "Naturgewinn"
+      ],
+      "shortDefinition": "Biodiversity Net Gain und No Net Loss beschreiben Ziele, Biodiversitätsverluste mindestens auszugleichen oder netto zu verbessern.",
+      "definition": "No Net Loss will verhindern, dass Biodiversität nach Eingriffen insgesamt schlechter dasteht. Biodiversity Net Gain verlangt einen zusätzlichen messbaren Gewinn.",
+      "longDefinition": "No Net Loss will verhindern, dass Biodiversität nach Eingriffen insgesamt schlechter dasteht. Biodiversity Net Gain verlangt einen zusätzlichen messbaren Gewinn.",
+      "woekRelation": "Die WÖk nutzt diese Begriffe vorsichtig: Ein Naturgewinn zählt nur, wenn kritische Schäden nicht verdeckt werden.",
+      "statusNote": "Nicht jeder Ausgleich ist gleichwertig. Schwere oder irreversible Schäden dürfen nicht durch einfache Punkte-Logik legitimiert werden.",
+      "usageNote": "Nicht jeder Ausgleich ist gleichwertig. Schwere oder irreversible Schäden dürfen nicht durch einfache Punkte-Logik legitimiert werden.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "biodiversitaetsrisiko"
+      ],
+      "officialSources": [
+        "European Commission - Nature and biodiversity|https://environment.ec.europa.eu/topics/nature-and-biodiversity_en"
+      ],
+      "pageUrl": "/begriffe/biodiversity-net-gain-no-net-loss/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Biodiversity Net Gain und No Net Loss beschreiben Ziele, Biodiversitätsverluste mindestens auszugleichen oder netto zu verbessern.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Biodiversity Net Gain / No Net Loss",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "carbon-credits",
@@ -659,6 +789,65 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "commons-gemeingueter",
+      "termId": "commons-gemeingueter",
+      "label": "Commons / Gemeingüter",
+      "canonicalLabel": "Commons / Gemeingüter",
+      "slug": "commons-gemeingueter",
+      "aliases": [
+        "Commons / Gemeingüter",
+        "Commons",
+        "Gemeingüter",
+        "Gemeingueter",
+        "Allmende",
+        "öffentliche Güter",
+        "oeffentliche Gueter"
+      ],
+      "synonyms": [
+        "Commons / Gemeingüter",
+        "Commons",
+        "Gemeingüter",
+        "Gemeingueter",
+        "Allmende",
+        "öffentliche Güter",
+        "oeffentliche Gueter"
+      ],
+      "shortDefinition": "Commons sind gemeinsam getragene Ressourcen, Infrastrukturen oder Wissensbestände, die nicht rein privat oder staatlich verstanden werden.",
+      "definition": "Commons können Wasser, Wissen, Daten, öffentliche Räume, Atmosphäre, Biodiversität, digitale Infrastruktur oder Kultur betreffen. Entscheidend sind Zugang, Pflege, Regeln und Verantwortung.",
+      "longDefinition": "Commons können Wasser, Wissen, Daten, öffentliche Räume, Atmosphäre, Biodiversität, digitale Infrastruktur oder Kultur betreffen. Entscheidend sind Zugang, Pflege, Regeln und Verantwortung.",
+      "woekRelation": "Die WÖk braucht Commons, weil viele Wirkungen an gemeinsamen Lebensgrundlagen entstehen und nicht allein über Marktpreise sichtbar werden.",
+      "statusNote": "Commons bedeuten nicht Nutzung ohne Regeln. Sie brauchen Governance, Schutz und faire Teilhabe.",
+      "usageNote": "Commons bedeuten nicht Nutzung ohne Regeln. Sie brauchen Governance, Schutz und faire Teilhabe.",
+      "categories": [
+        "anschlussbegriff",
+        "demokratie-governance"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "resonanzraum"
+      ],
+      "officialSources": [
+        "UN-Habitat - Public space|https://unhabitat.org/topic/public-space"
+      ],
+      "pageUrl": "/begriffe/commons-gemeingueter/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Commons sind gemeinsam getragene Ressourcen, Infrastrukturen oder Wissensbestände, die nicht rein privat oder staatlich verstanden werden.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Commons / Gemeingüter",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "conflict-minerals-regulation",
       "termId": "conflict-minerals-regulation",
       "label": "Conflict Minerals Regulation",
@@ -834,6 +1023,62 @@
       "glossaryOrderKey": "csrd",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "daseinsvorsorge",
+      "termId": "daseinsvorsorge",
+      "label": "Daseinsvorsorge",
+      "canonicalLabel": "Daseinsvorsorge",
+      "slug": "daseinsvorsorge",
+      "aliases": [
+        "Daseinsvorsorge",
+        "öffentliche Daseinsvorsorge",
+        "oeffentliche Daseinsvorsorge",
+        "Grundversorgung",
+        "Pflegeinfrastruktur",
+        "Barrierefreiheit"
+      ],
+      "synonyms": [
+        "Daseinsvorsorge",
+        "öffentliche Daseinsvorsorge",
+        "oeffentliche Daseinsvorsorge",
+        "Grundversorgung",
+        "Pflegeinfrastruktur",
+        "Barrierefreiheit"
+      ],
+      "shortDefinition": "Daseinsvorsorge umfasst grundlegende öffentliche Leistungen und Infrastrukturen für ein würdiges, sicheres und teilhabefähiges Leben.",
+      "definition": "Dazu gehören Wohnen, Wasser, Energie, Mobilität, Gesundheit, Pflege, Bildung, Sicherheit, Verwaltung, digitale Zugänge und öffentliche Räume.",
+      "longDefinition": "Dazu gehören Wohnen, Wasser, Energie, Mobilität, Gesundheit, Pflege, Bildung, Sicherheit, Verwaltung, digitale Zugänge und öffentliche Räume.",
+      "woekRelation": "Für die WÖk ist Daseinsvorsorge ein zentraler Wirkungsraum, weil öffentliche Mittel langfristige Wirkung erzeugen.",
+      "statusNote": "Daseinsvorsorge ist kein bloßer Kostenblock. Sie muss nach Wirkung, Zugang, Resilienz und Gerechtigkeit bewertet werden.",
+      "usageNote": "Daseinsvorsorge ist kein bloßer Kostenblock. Sie muss nach Wirkung, Zugang, Resilienz und Gerechtigkeit bewertet werden.",
+      "categories": [
+        "anschlussbegriff",
+        "staat-verwaltung-recht"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungshaushalt"
+      ],
+      "officialSources": [
+        "UN-Habitat - Public space|https://unhabitat.org/topic/public-space"
+      ],
+      "pageUrl": "/begriffe/daseinsvorsorge/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Daseinsvorsorge umfasst grundlegende öffentliche Leistungen und Infrastrukturen für ein würdiges, sicheres und teilhabefähiges Leben.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Daseinsvorsorge",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "datenluecke",
@@ -1248,6 +1493,67 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "energiearmut",
+      "termId": "energiearmut",
+      "label": "Energiearmut",
+      "canonicalLabel": "Energiearmut",
+      "slug": "energiearmut",
+      "aliases": [
+        "Energiearmut",
+        "Energy Poverty",
+        "Haushaltsenergie",
+        "Heizenergie",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf",
+        "Heizlast"
+      ],
+      "synonyms": [
+        "Energiearmut",
+        "Energy Poverty",
+        "Haushaltsenergie",
+        "Heizenergie",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf",
+        "Heizlast"
+      ],
+      "shortDefinition": "Energiearmut beschreibt fehlenden oder unerschwinglichen Zugang zu ausreichender, sicherer und bezahlbarer Energie.",
+      "definition": "Energiearmut entsteht, wenn Haushalte Heizung, Kühlung, Strom, Warmwasser oder Geräte nicht angemessen nutzen können, ohne andere Grundbedürfnisse zu gefährden.",
+      "longDefinition": "Energiearmut entsteht, wenn Haushalte Heizung, Kühlung, Strom, Warmwasser oder Geräte nicht angemessen nutzen können, ohne andere Grundbedürfnisse zu gefährden.",
+      "woekRelation": "Die WÖk muss Energiearmut beachten, wenn Wirkungssteuern, Gebäudetransformation oder Klimapolitik gestaltet werden.",
+      "statusNote": "Preissteuerung braucht Kaufkraftschutz, Sanierung, Beratung und Zugang zu wirksamen Alternativen.",
+      "usageNote": "Preissteuerung braucht Kaufkraftschutz, Sanierung, Beratung und Zugang zu wirksamen Alternativen.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wohnwirkung",
+        "warmmietenneutralitaet"
+      ],
+      "officialSources": [
+        "European Commission - Energy poverty in the EU|https://energy.ec.europa.eu/topics/markets-and-consumers/energy-consumer-rights/energy-poverty-eu_en"
+      ],
+      "pageUrl": "/begriffe/energiearmut/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Energiearmut beschreibt fehlenden oder unerschwinglichen Zugang zu ausreichender, sicherer und bezahlbarer Energie.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Energiearmut",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "epd",
       "termId": "epd",
       "label": "EPD / Environmental Product Declaration",
@@ -1359,6 +1665,64 @@
       "glossaryOrderKey": "Ermöglichende Tätigkeit",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "ernaehrungssouveraenitaet",
+      "termId": "ernaehrungssouveraenitaet",
+      "label": "Ernährungssouveränität",
+      "canonicalLabel": "Ernährungssouveränität",
+      "slug": "ernaehrungssouveraenitaet",
+      "aliases": [
+        "Ernährungssouveränität",
+        "Ernaehrungssouveraenitaet",
+        "Food Sovereignty",
+        "Ernährungssysteme",
+        "Saatgutsouveränität",
+        "Saatgutsouveraenitaet"
+      ],
+      "synonyms": [
+        "Ernährungssouveränität",
+        "Ernaehrungssouveraenitaet",
+        "Food Sovereignty",
+        "Ernährungssysteme",
+        "Saatgutsouveränität",
+        "Saatgutsouveraenitaet"
+      ],
+      "shortDefinition": "Ernährungssouveränität fragt, wer Ernährungssysteme, Saatgut, Böden, Produktion und Zugang zu gesunder Nahrung mitgestaltet.",
+      "definition": "Der Begriff geht über Ernährungssicherheit hinaus und betrachtet Macht, lokale Produktion, bäuerliche Rechte, Landzugang, Saatgut, gesunde Ernährung und ökologische Grenzen.",
+      "longDefinition": "Der Begriff geht über Ernährungssicherheit hinaus und betrachtet Macht, lokale Produktion, bäuerliche Rechte, Landzugang, Saatgut, gesunde Ernährung und ökologische Grenzen.",
+      "woekRelation": "Die WÖk kann Ernährungssouveränität nutzen, um Produktdaten, Lieferkettendaten, Gesundheit, Biodiversität und Teilhabe gemeinsam zu bewerten.",
+      "statusNote": "Ernährungssouveränität ist politisch geprägt und muss plural, rechtsstaatlich und datenbasiert eingeordnet werden.",
+      "usageNote": "Ernährungssouveränität ist politisch geprägt und muss plural, rechtsstaatlich und datenbasiert eingeordnet werden.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "produktdaten",
+        "lieferkettendaten",
+        "biodiversitaetsrisiko"
+      ],
+      "officialSources": [
+        "FAO - Food sovereignty and family farming|https://www.fao.org/family-farming/detail/en/c/877809/"
+      ],
+      "pageUrl": "/begriffe/ernaehrungssouveraenitaet/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Ernährungssouveränität fragt, wer Ernährungssysteme, Saatgut, Böden, Produktion und Zugang zu gesunder Nahrung mitgestaltet.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Ernährungssouveränität",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "esap",
@@ -2410,6 +2774,175 @@
       "glossaryOrderKey": "Forced Labour Regulation",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "generationengerechtigkeit",
+      "termId": "generationengerechtigkeit",
+      "label": "Generationengerechtigkeit",
+      "canonicalLabel": "Generationengerechtigkeit",
+      "slug": "generationengerechtigkeit",
+      "aliases": [
+        "Generationengerechtigkeit",
+        "Intergenerational Justice",
+        "intergenerationelle Gerechtigkeit",
+        "Gerechtigkeit zwischen Generationen"
+      ],
+      "synonyms": [
+        "Generationengerechtigkeit",
+        "Intergenerational Justice",
+        "intergenerationelle Gerechtigkeit",
+        "Gerechtigkeit zwischen Generationen"
+      ],
+      "shortDefinition": "Generationengerechtigkeit fragt, ob heutige Entscheidungen künftige Menschen fair berücksichtigen.",
+      "definition": "Sie betrifft Schulden, Klima, Biodiversität, Infrastruktur, Bildung, Frieden, Demokratie, Pflege, digitale Räume und natürliche Lebensgrundlagen.",
+      "longDefinition": "Sie betrifft Schulden, Klima, Biodiversität, Infrastruktur, Bildung, Frieden, Demokratie, Pflege, digitale Räume und natürliche Lebensgrundlagen.",
+      "woekRelation": "Die WÖk übersetzt Generationengerechtigkeit in Wirkungszeit, Kosten des Nicht-Handelns, Wirkungshaushalte und Rechte künftiger Generationen.",
+      "statusNote": "Künftige Menschen können heute nicht direkt mitentscheiden. Deshalb braucht der Begriff faire Verfahren und Schutzgrenzen.",
+      "usageNote": "Künftige Menschen können heute nicht direkt mitentscheiden. Deshalb braucht der Begriff faire Verfahren und Schutzgrenzen.",
+      "categories": [
+        "anschlussbegriff",
+        "demokratie-governance"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungshaushalt"
+      ],
+      "officialSources": [
+        "OECD - Youth empowerment and intergenerational justice|https://www.oecd.org/en/topics/youth-empowerment-and-intergenerational-justice.html"
+      ],
+      "pageUrl": "/begriffe/generationengerechtigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Generationengerechtigkeit fragt, ob heutige Entscheidungen künftige Menschen fair berücksichtigen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Generationengerechtigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "geplante-obsoleszenz",
+      "termId": "geplante-obsoleszenz",
+      "label": "Geplante Obsoleszenz",
+      "canonicalLabel": "Geplante Obsoleszenz",
+      "slug": "geplante-obsoleszenz",
+      "aliases": [
+        "Geplante Obsoleszenz",
+        "planned obsolescence",
+        "Obsoleszenz",
+        "vorzeitiger Verschleiß",
+        "vorzeitiger Verschleiss"
+      ],
+      "synonyms": [
+        "Geplante Obsoleszenz",
+        "planned obsolescence",
+        "Obsoleszenz",
+        "vorzeitiger Verschleiß",
+        "vorzeitiger Verschleiss"
+      ],
+      "shortDefinition": "Geplante Obsoleszenz bezeichnet Produktgestaltung, die kurze Nutzungsdauer oder vorzeitigen Ersatz begünstigt.",
+      "definition": "Sie kann durch Bauteile, fehlende Ersatzteile, Softwarebegrenzungen, verklebte Konstruktionen, modische Zyklen oder unklare Reparaturinformationen entstehen.",
+      "longDefinition": "Sie kann durch Bauteile, fehlende Ersatzteile, Softwarebegrenzungen, verklebte Konstruktionen, modische Zyklen oder unklare Reparaturinformationen entstehen.",
+      "woekRelation": "Die WÖk bewertet geplante Obsoleszenz als negative Produktwirkung, weil sie Scheinnachfrage, Ressourcenverbrauch und Folgekosten erzeugt.",
+      "statusNote": "Nicht jeder Defekt ist geplant. Der Begriff sollte anhand von Design, Reparierbarkeit und Nutzungsdaten geprüft werden.",
+      "usageNote": "Nicht jeder Defekt ist geplant. Der Begriff sollte anhand von Design, Reparierbarkeit und Nutzungsdaten geprüft werden.",
+      "categories": [
+        "anschlussbegriff",
+        "wirtschaft-produkte-konsum"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "material-footprint",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "European Commission - Empowering consumers for the green transition|https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law/empowering-consumers-green-transition_en"
+      ],
+      "pageUrl": "/begriffe/geplante-obsoleszenz/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Geplante Obsoleszenz bezeichnet Produktgestaltung, die kurze Nutzungsdauer oder vorzeitigen Ersatz begünstigt.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Geplante Obsoleszenz",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "gesundheitsgerechtigkeit",
+      "termId": "gesundheitsgerechtigkeit",
+      "label": "Gesundheitsgerechtigkeit",
+      "canonicalLabel": "Gesundheitsgerechtigkeit",
+      "slug": "gesundheitsgerechtigkeit",
+      "aliases": [
+        "Gesundheitsgerechtigkeit",
+        "Health Equity",
+        "gesundheitliche Chancengleichheit",
+        "Gesundheitschancengleichheit",
+        "Mental Health",
+        "psychische Gesundheit",
+        "Einsamkeit",
+        "soziale Isolation"
+      ],
+      "synonyms": [
+        "Gesundheitsgerechtigkeit",
+        "Health Equity",
+        "gesundheitliche Chancengleichheit",
+        "Gesundheitschancengleichheit",
+        "Mental Health",
+        "psychische Gesundheit",
+        "Einsamkeit",
+        "soziale Isolation"
+      ],
+      "shortDefinition": "Gesundheitsgerechtigkeit fragt, ob Menschen faire Chancen auf Gesundheit, Schutz und Versorgung haben.",
+      "definition": "Einkommen, Wohnort, Alter, Behinderung, Arbeit, Bildung, Diskriminierung, Hitze, Luftqualität und Zugang zu Versorgung beeinflussen Risiken und Chancen.",
+      "longDefinition": "Einkommen, Wohnort, Alter, Behinderung, Arbeit, Bildung, Diskriminierung, Hitze, Luftqualität und Zugang zu Versorgung beeinflussen Risiken und Chancen.",
+      "woekRelation": "Für die WÖk ist Gesundheitsgerechtigkeit ein Prüfpunkt dafür, wer positive oder negative Wirkung tatsächlich trägt.",
+      "statusNote": "Gesundheitsgerechtigkeit umfasst auch Umwelt, Wohnen, Arbeit, Ernährung und soziale Bedingungen.",
+      "usageNote": "Gesundheitsgerechtigkeit umfasst auch Umwelt, Wohnen, Arbeit, Ernährung und soziale Bedingungen.",
+      "categories": [
+        "anschlussbegriff",
+        "gesundheit-soziales"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "health-impact-assessment",
+        "hitzestress"
+      ],
+      "officialSources": [
+        "WHO - Health equity|https://www.who.int/health-topics/health-equity"
+      ],
+      "pageUrl": "/begriffe/gesundheitsgerechtigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Gesundheitsgerechtigkeit fragt, ob Menschen faire Chancen auf Gesundheit, Schutz und Versorgung haben.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Gesundheitsgerechtigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "ghg-protocol",
@@ -3477,7 +4010,9 @@
         "Gesundheitswirkungsanalyse",
         "Hygiene",
         "Sanitärversorgung",
-        "Sanitaerversorgung"
+        "Sanitaerversorgung",
+        "Public Health",
+        "Gesundheitsfolgenabschaetzung"
       ],
       "synonyms": [
         "Health Impact Assessment / HIA",
@@ -3488,7 +4023,9 @@
         "Gesundheitswirkungsanalyse",
         "Hygiene",
         "Sanitärversorgung",
-        "Sanitaerversorgung"
+        "Sanitaerversorgung",
+        "Public Health",
+        "Gesundheitsfolgenabschaetzung"
       ],
       "shortDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
       "definition": "HIA bewertet gesundheitliche Folgen und ihre Verteilung in der Bevölkerung, besonders für vulnerable Gruppen. Es verbindet Daten, Beteiligung, Empfehlungen, Monitoring und Evaluation.",
@@ -3509,7 +4046,9 @@
         "wirkungsbewertung",
         "sdgs",
         "hitzestress",
-        "health-co-benefits"
+        "health-co-benefits",
+        "gesundheitsgerechtigkeit",
+        "one-health"
       ],
       "officialSources": [
         "World Health Organization: Health impact assessment|https://www.who.int/health-topics/health-impact-assessment",
@@ -3532,7 +4071,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "health impact assessment / hia",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "hebelpunkt",
@@ -3995,7 +4535,10 @@
         "hitzeschutz-hitzeaktionsplan",
         "health-impact-assessment",
         "physical-climate-risk",
-        "wirkungsresilienz"
+        "wirkungsresilienz",
+        "gesundheitsgerechtigkeit",
+        "klimagerechtigkeit",
+        "umweltgerechtigkeit"
       ],
       "officialSources": [
         "World Health Organization: Heat and health|https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health",
@@ -4018,7 +4561,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "hitzestress",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "hochwasserrisiko",
@@ -4163,7 +4707,14 @@
         "HRDD",
         "menschenrechtliche Sorgfaltspflicht",
         "menschenrechtliche Sorgfaltspflichten",
-        "human rights due diligence"
+        "human rights due diligence",
+        "Sorgfaltspflicht",
+        "Due Diligence",
+        "Responsible Purchasing",
+        "Supplier Engagement",
+        "Lieferkettenresilienz",
+        "geopolitisches Lieferkettenrisiko",
+        "Einkaufspraktiken"
       ],
       "synonyms": [
         "Human Rights Due Diligence / HRDD",
@@ -4171,7 +4722,14 @@
         "HRDD",
         "menschenrechtliche Sorgfaltspflicht",
         "menschenrechtliche Sorgfaltspflichten",
-        "human rights due diligence"
+        "human rights due diligence",
+        "Sorgfaltspflicht",
+        "Due Diligence",
+        "Responsible Purchasing",
+        "Supplier Engagement",
+        "Lieferkettenresilienz",
+        "geopolitisches Lieferkettenrisiko",
+        "Einkaufspraktiken"
       ],
       "shortDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
       "definition": "HRDD ist ein internationaler Anschlussbegriff aus den UN-Leitprinzipien und OECD-Leitsätzen. Er umfasst das Erkennen tatsächlicher und möglicher negativer Menschenrechtswirkungen, Gegenmaßnahmen, Wirksamkeitskontrolle, Kommunikation und Abhilfe.",
@@ -4192,7 +4750,8 @@
         "oecd-leitsaetze",
         "ilo-kernarbeitsnormen",
         "csddd",
-        "lksg"
+        "lksg",
+        "beschwerdemechanismus-access-to-remedy"
       ],
       "officialSources": [
         "OHCHR: UN Guiding Principles on Business and Human Rights|https://www.ohchr.org/documents/publications/guidingprinciplesbusinesshr_en.pdf",
@@ -4215,7 +4774,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "human rights due diligence / hrdd",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "human-rights-impact-assessment",
@@ -4296,7 +4856,11 @@
         "Bodenhumus",
         "Bodenorganische Substanz",
         "Soil Organic Carbon Aufbau",
-        "SOC-Aufbau"
+        "SOC-Aufbau",
+        "Bodenfruchtbarkeit",
+        "Bodengesundheit",
+        "Bodenversiegelung",
+        "Entsiegelung"
       ],
       "synonyms": [
         "Humusaufbau",
@@ -4305,7 +4869,11 @@
         "Bodenhumus",
         "Bodenorganische Substanz",
         "Soil Organic Carbon Aufbau",
-        "SOC-Aufbau"
+        "SOC-Aufbau",
+        "Bodenfruchtbarkeit",
+        "Bodengesundheit",
+        "Bodenversiegelung",
+        "Entsiegelung"
       ],
       "shortDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
       "definition": "Humus entsteht aus umgewandelter organischer Substanz im Boden. Sein Aufbau hängt von Bewirtschaftung, Pflanzenresten, Bodenleben, Erosion, Wasserhaushalt und Nutzung ab.",
@@ -4325,7 +4893,9 @@
         "biodiversitaetsrisiko",
         "wasserstress",
         "positive-netto-wirkung",
-        "lca"
+        "lca",
+        "regeneration",
+        "renaturierung"
       ],
       "officialSources": [
         "FAO Global Soil Partnership: What is soil organic carbon?|https://www.fao.org/global-soil-partnership/areas-of-work/recsoil/what-is-soc/en/",
@@ -4348,7 +4918,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "humusaufbau",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "hunger-hungerbekaempfung",
@@ -4435,7 +5006,14 @@
         "Hydrooekologie",
         "harmful algal blooms",
         "schädliche Algenblüten",
-        "schaedliche Algenblueten"
+        "schaedliche Algenblueten",
+        "Wasserhaushalt",
+        "Grundwasserneubildung",
+        "Wasserrückhalt",
+        "Wasserrueckhalt",
+        "Schwammstadt",
+        "blau-grüne Infrastruktur",
+        "blau-gruene Infrastruktur"
       ],
       "synonyms": [
         "Hydrologischer Kreislauf",
@@ -4449,7 +5027,14 @@
         "Hydrooekologie",
         "harmful algal blooms",
         "schädliche Algenblüten",
-        "schaedliche Algenblueten"
+        "schaedliche Algenblueten",
+        "Wasserhaushalt",
+        "Grundwasserneubildung",
+        "Wasserrückhalt",
+        "Wasserrueckhalt",
+        "Schwammstadt",
+        "blau-grüne Infrastruktur",
+        "blau-gruene Infrastruktur"
       ],
       "shortDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
       "definition": "Der Wasserkreislauf verbindet Niederschlag, Verdunstung, Versickerung, Abfluss, Grundwasser, Speicher, Ökosysteme und menschliche Wasserentnahme. Klima, Landnutzung und Böden verändern ihn.",
@@ -4469,7 +5054,9 @@
         "wasserstress",
         "humusaufbau",
         "hitzestress",
-        "biodiversitaetsrisiko"
+        "biodiversitaetsrisiko",
+        "naturbasierte-loesungen",
+        "renaturierung"
       ],
       "officialSources": [
         "UN-Water: Water and climate change|https://www.unwater.org/water-facts/water-and-climate-change",
@@ -4492,7 +5079,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "hydrologischer kreislauf",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "idgs",
@@ -4788,12 +5376,16 @@
       "aliases": [
         "Inside-out / Outside-in",
         "Inside-out",
-        "Outside-in"
+        "Outside-in",
+        "Doppelte Materialität vs. doppelte Wirkung",
+        "doppelte Wirkung"
       ],
       "synonyms": [
         "Inside-out / Outside-in",
         "Inside-out",
-        "Outside-in"
+        "Outside-in",
+        "Doppelte Materialität vs. doppelte Wirkung",
+        "doppelte Wirkung"
       ],
       "shortDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
       "definition": "Die WÖk braucht beide Blickrichtungen, übersetzt sie aber in Wirkungsbewertung, Steuerung und Rückkopplung.",
@@ -4834,7 +5426,64 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Inside-out / Outside-in",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
+    },
+    {
+      "id": "intersektionalitaet",
+      "termId": "intersektionalitaet",
+      "label": "Intersektionalität",
+      "canonicalLabel": "Intersektionalität",
+      "slug": "intersektionalitaet",
+      "aliases": [
+        "Intersektionalität",
+        "Intersektionalitaet",
+        "Intersectionality",
+        "Mehrfachdiskriminierung",
+        "Diskriminierung",
+        "intergenerationelle Armut",
+        "Bildungsgerechtigkeit"
+      ],
+      "synonyms": [
+        "Intersektionalität",
+        "Intersektionalitaet",
+        "Intersectionality",
+        "Mehrfachdiskriminierung",
+        "Diskriminierung",
+        "intergenerationelle Armut",
+        "Bildungsgerechtigkeit"
+      ],
+      "shortDefinition": "Intersektionalität beschreibt, dass Benachteiligungen sich überlagern und gegenseitig verstärken können.",
+      "definition": "Armut, Geschlecht, Herkunft, Alter, Behinderung, Wohnort, Bildung, digitale Teilhabe, Gesundheit oder Aufenthaltsstatus wirken nicht getrennt.",
+      "longDefinition": "Armut, Geschlecht, Herkunft, Alter, Behinderung, Wohnort, Bildung, digitale Teilhabe, Gesundheit oder Aufenthaltsstatus wirken nicht getrennt.",
+      "woekRelation": "Die WÖk nutzt Intersektionalität, um Wirkungsempfänger nicht abstrakt zu behandeln. Wirkung kann für Gruppen sehr unterschiedlich ausfallen.",
+      "statusNote": "Intersektionalität ersetzt keine Einzelfallprüfung, hilft aber, blinde Flecken in Daten und Politik zu erkennen.",
+      "usageNote": "Intersektionalität ersetzt keine Einzelfallprüfung, hilft aber, blinde Flecken in Daten und Politik zu erkennen.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [],
+      "officialSources": [
+        "UN Women - Intersectionality resource guide|https://www.unwomen.org/en/digital-library/publications/2022/01/intersectionality-resource-guide-and-toolkit"
+      ],
+      "pageUrl": "/begriffe/intersektionalitaet/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Intersektionalität beschreibt, dass Benachteiligungen sich überlagern und gegenseitig verstärken können.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Intersektionalität",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "ipbes",
@@ -5183,6 +5832,116 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "kipppunkt-systemschwelle",
+      "termId": "kipppunkt-systemschwelle",
+      "label": "Kipppunkt / Systemschwelle",
+      "canonicalLabel": "Kipppunkt / Systemschwelle",
+      "slug": "kipppunkt-systemschwelle",
+      "aliases": [
+        "Kipppunkt / Systemschwelle",
+        "Kipppunkt",
+        "Tipping Point",
+        "Systemschwelle",
+        "soziale Kipppunkte",
+        "soziale Kippunkte"
+      ],
+      "synonyms": [
+        "Kipppunkt / Systemschwelle",
+        "Kipppunkt",
+        "Tipping Point",
+        "Systemschwelle",
+        "soziale Kipppunkte",
+        "soziale Kippunkte"
+      ],
+      "shortDefinition": "Ein Kipppunkt ist ein Schwellenbereich, ab dem ein System in einen anderen Zustand wechseln kann.",
+      "definition": "Kipppunkte können in Klima, Biodiversität, Finanzmärkten, Gesundheitssystemen, Demokratien oder sozialen Beziehungen auftreten. Sie zeigen, dass Wirkung nicht immer linear wächst.",
+      "longDefinition": "Kipppunkte können in Klima, Biodiversität, Finanzmärkten, Gesundheitssystemen, Demokratien oder sozialen Beziehungen auftreten. Sie zeigen, dass Wirkung nicht immer linear wächst.",
+      "woekRelation": "Die WÖk nutzt Kipppunkte, um Wirkungsrisiken, Vorsorge, Nicht-Kompensation und frühe Rückkopplung zu begründen.",
+      "statusNote": "Kipppunkte sind oft unsicher und kontextabhängig. Sie sollten als Risikohinweis genutzt werden, nicht als Scheingenauigkeit.",
+      "usageNote": "Kipppunkte sind oft unsicher und kontextabhängig. Sie sollten als Risikohinweis genutzt werden, nicht als Scheingenauigkeit.",
+      "categories": [
+        "anschlussbegriff",
+        "systemrisiko"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungspfad",
+        "wirkungsresilienz"
+      ],
+      "officialSources": [
+        "IPCC Reports|https://www.ipcc.ch/reports/"
+      ],
+      "pageUrl": "/begriffe/kipppunkt-systemschwelle/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Ein Kipppunkt ist ein Schwellenbereich, ab dem ein System in einen anderen Zustand wechseln kann.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Kipppunkt / Systemschwelle",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "klimagerechtigkeit",
+      "termId": "klimagerechtigkeit",
+      "label": "Klimagerechtigkeit",
+      "canonicalLabel": "Klimagerechtigkeit",
+      "slug": "klimagerechtigkeit",
+      "aliases": [
+        "Klimagerechtigkeit",
+        "Climate Justice",
+        "Klimaverteilungsgerechtigkeit",
+        "gerechte Klimapolitik"
+      ],
+      "synonyms": [
+        "Klimagerechtigkeit",
+        "Climate Justice",
+        "Klimaverteilungsgerechtigkeit",
+        "gerechte Klimapolitik"
+      ],
+      "shortDefinition": "Klimagerechtigkeit betrachtet Klimaschutz und Klimafolgen als Verantwortungs-, Verteilungs- und Generationenfrage.",
+      "definition": "Nicht alle tragen gleich zur Klimakrise bei, und nicht alle sind gleich betroffen. Klimagerechtigkeit fragt nach historischer Verantwortung, Einkommen, Regionen, Generationen und fairem Übergang.",
+      "longDefinition": "Nicht alle tragen gleich zur Klimakrise bei, und nicht alle sind gleich betroffen. Klimagerechtigkeit fragt nach historischer Verantwortung, Einkommen, Regionen, Generationen und fairem Übergang.",
+      "woekRelation": "Die WÖk muss Klimagerechtigkeit einbeziehen, damit Wirkungssteuer, Transformation und Investitionen nicht neue Ungerechtigkeiten erzeugen.",
+      "statusNote": "Klimagerechtigkeit ist normativ und braucht transparente Kriterien, Daten und demokratische Abwägung.",
+      "usageNote": "Klimagerechtigkeit ist normativ und braucht transparente Kriterien, Daten und demokratische Abwägung.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "just-transition-mechanism"
+      ],
+      "officialSources": [
+        "UNDP - Climate justice|https://climatepromise.undp.org/news-and-stories/climate-justice-what-it-and-why-it-matters"
+      ],
+      "pageUrl": "/begriffe/klimagerechtigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Klimagerechtigkeit betrachtet Klimaschutz und Klimafolgen als Verantwortungs-, Verteilungs- und Generationenfrage.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Klimagerechtigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "klimaneutralitaet",
       "termId": "klimaneutralitaet",
       "label": "Klimaneutralität",
@@ -5288,6 +6047,65 @@
       "glossaryOrderKey": "Konservative Annahme",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "kosten-des-nicht-handelns",
+      "termId": "kosten-des-nicht-handelns",
+      "label": "Kosten des Nicht-Handelns",
+      "canonicalLabel": "Kosten des Nicht-Handelns",
+      "slug": "kosten-des-nicht-handelns",
+      "aliases": [
+        "Kosten des Nicht-Handelns",
+        "Cost of inaction",
+        "Kosten der Untätigkeit",
+        "Kosten der Untaetigkeit",
+        "Nicht-Handeln",
+        "Untätigkeitskosten",
+        "Untaetigkeitskosten"
+      ],
+      "synonyms": [
+        "Kosten des Nicht-Handelns",
+        "Cost of inaction",
+        "Kosten der Untätigkeit",
+        "Kosten der Untaetigkeit",
+        "Nicht-Handeln",
+        "Untätigkeitskosten",
+        "Untaetigkeitskosten"
+      ],
+      "shortDefinition": "Kosten des Nicht-Handelns sind Schäden und Folgekosten, die entstehen, wenn notwendige Vorsorge oder Transformation ausbleibt.",
+      "definition": "Untätigkeit erzeugt Wirkung: Klimaschäden, Gesundheitskosten, Vertrauensverlust, Reparaturausgaben, Produktivitätsverluste, Konflikte oder Biodiversitätsverlust.",
+      "longDefinition": "Untätigkeit erzeugt Wirkung: Klimaschäden, Gesundheitskosten, Vertrauensverlust, Reparaturausgaben, Produktivitätsverluste, Konflikte oder Biodiversitätsverlust.",
+      "woekRelation": "Die WÖk macht Nicht-Handeln als Entscheidung sichtbar. Wirkungshaushalte und T-SROI sollten späte Reparaturlasten einbeziehen.",
+      "statusNote": "Nicht-Handlungskosten sind oft modelliert. Sie brauchen transparente Annahmen und Unsicherheitsangaben.",
+      "usageNote": "Nicht-Handlungskosten sind oft modelliert. Sie brauchen transparente Annahmen und Unsicherheitsangaben.",
+      "categories": [
+        "grundbegriff",
+        "staat-verwaltung-recht"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "European Environment Agency - Climate risks and adaptation|https://www.eea.europa.eu/en/topics/in-depth/climate-change-impacts-risks-and-adaptation"
+      ],
+      "pageUrl": "/begriffe/kosten-des-nicht-handelns/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Kosten des Nicht-Handelns sind Schäden und Folgekosten, die entstehen, wenn notwendige Vorsorge oder Transformation ausbleibt.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Kosten des Nicht-Handelns",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "lca",
@@ -5586,6 +6404,68 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "lock-in-pfadabhaengigkeit",
+      "termId": "lock-in-pfadabhaengigkeit",
+      "label": "Lock-in / Pfadabhängigkeit",
+      "canonicalLabel": "Lock-in / Pfadabhängigkeit",
+      "slug": "lock-in-pfadabhaengigkeit",
+      "aliases": [
+        "Lock-in / Pfadabhängigkeit",
+        "Lock-in",
+        "Lock-In",
+        "Pfadabhängigkeit",
+        "Pfadabhaengigkeit",
+        "Carbon Lock-in",
+        "fossiler Lock-in",
+        "Infrastruktur-Lock-in"
+      ],
+      "synonyms": [
+        "Lock-in / Pfadabhängigkeit",
+        "Lock-in",
+        "Lock-In",
+        "Pfadabhängigkeit",
+        "Pfadabhaengigkeit",
+        "Carbon Lock-in",
+        "fossiler Lock-in",
+        "Infrastruktur-Lock-in"
+      ],
+      "shortDefinition": "Lock-in beschreibt, dass heutige Entscheidungen künftige Alternativen verengen oder verteuern.",
+      "definition": "Infrastruktur, Gebäude, Plattformen, Lieferketten, Subventionen, Gewohnheiten und Investitionen können Pfade festlegen, aus denen später schwer auszusteigen ist.",
+      "longDefinition": "Infrastruktur, Gebäude, Plattformen, Lieferketten, Subventionen, Gewohnheiten und Investitionen können Pfade festlegen, aus denen später schwer auszusteigen ist.",
+      "woekRelation": "Die WÖk bewertet Lock-ins als Wirkung über Zeit: Eine Entscheidung kann heute günstig wirken, aber künftige Schäden fixieren.",
+      "statusNote": "Nicht jede stabile Struktur ist ein Lock-in. Entscheidend ist, ob sie schädliche Pfade verfestigt und Alternativen blockiert.",
+      "usageNote": "Nicht jede stabile Struktur ist ein Lock-in. Entscheidend ist, ob sie schädliche Pfade verfestigt und Alternativen blockiert.",
+      "categories": [
+        "anschlussbegriff",
+        "wirtschaft-produkte-konsum"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "transition-risk",
+        "stranded-assets",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "IPCC Reports|https://www.ipcc.ch/reports/"
+      ],
+      "pageUrl": "/begriffe/lock-in-pfadabhaengigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Lock-in beschreibt, dass heutige Entscheidungen künftige Alternativen verengen oder verteuern.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Lock-in / Pfadabhängigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "material-footprint",
       "termId": "material-footprint",
       "label": "Material Footprint",
@@ -5759,6 +6639,63 @@
       "glossaryOrderKey": "Mindestschutz / Minimum Safeguards",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "mobilitaetsarmut",
+      "termId": "mobilitaetsarmut",
+      "label": "Mobilitätsarmut",
+      "canonicalLabel": "Mobilitätsarmut",
+      "slug": "mobilitaetsarmut",
+      "aliases": [
+        "Mobilitätsarmut",
+        "Mobilitaetsarmut",
+        "Mobility Poverty",
+        "Transport Poverty",
+        "Verkehrsarmut",
+        "Mobilitätsbenachteiligung"
+      ],
+      "synonyms": [
+        "Mobilitätsarmut",
+        "Mobilitaetsarmut",
+        "Mobility Poverty",
+        "Transport Poverty",
+        "Verkehrsarmut",
+        "Mobilitätsbenachteiligung"
+      ],
+      "shortDefinition": "Mobilitätsarmut liegt vor, wenn Menschen zentrale Orte und Chancen nicht verlässlich erreichen können.",
+      "definition": "Sie betrifft Zugang zu Arbeit, Bildung, Gesundheit, Einkauf, Kultur, Verwaltung und sozialen Beziehungen. Ursachen können Kosten, Entfernung, Barrieren oder fehlender ÖPNV sein.",
+      "longDefinition": "Sie betrifft Zugang zu Arbeit, Bildung, Gesundheit, Einkauf, Kultur, Verwaltung und sozialen Beziehungen. Ursachen können Kosten, Entfernung, Barrieren oder fehlender ÖPNV sein.",
+      "woekRelation": "Für die WÖk ist Mobilitätsarmut ein Beispiel dafür, dass Preise und Infrastruktur reale Handlungsspielräume bestimmen.",
+      "statusNote": "Mobilitätsarmut berührt Wohnen, Raumordnung, Arbeit, Gesundheit und Demokratie.",
+      "usageNote": "Mobilitätsarmut berührt Wohnen, Raumordnung, Arbeit, Gesundheit und Demokratie.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "handlungsfaehigkeit",
+        "handlungsspielraum"
+      ],
+      "officialSources": [
+        "European Commission - Access to transport for all|https://transport.ec.europa.eu/transport-themes/social-issues-equality-and-attractiveness-transport-sector/social-issues/access-transport-all_en"
+      ],
+      "pageUrl": "/begriffe/mobilitaetsarmut/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Mobilitätsarmut liegt vor, wenn Menschen zentrale Orte und Chancen nicht verlässlich erreichen können.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Mobilitätsarmut",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "nace",
@@ -5945,6 +6882,117 @@
       "glossaryOrderKey": "Nachhaltigkeitslabel",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "naturbasierte-loesungen",
+      "termId": "naturbasierte-loesungen",
+      "label": "Naturbasierte Lösungen",
+      "canonicalLabel": "Naturbasierte Lösungen",
+      "slug": "naturbasierte-loesungen",
+      "aliases": [
+        "Naturbasierte Lösungen",
+        "Naturbasierte Loesungen",
+        "Nature-based Solutions",
+        "Nature Based Solutions",
+        "NbS",
+        "naturbasierte Infrastruktur"
+      ],
+      "synonyms": [
+        "Naturbasierte Lösungen",
+        "Naturbasierte Loesungen",
+        "Nature-based Solutions",
+        "Nature Based Solutions",
+        "NbS",
+        "naturbasierte Infrastruktur"
+      ],
+      "shortDefinition": "Naturbasierte Lösungen nutzen und stärken Ökosysteme, um Klima-, Wasser-, Gesundheits- oder Resilienzprobleme zu lösen.",
+      "definition": "Beispiele sind Stadtgrün gegen Hitze, Auenrenaturierung gegen Hochwasser, Moore für Wasserhaushalt oder vielfältige Agrarlandschaften.",
+      "longDefinition": "Beispiele sind Stadtgrün gegen Hitze, Auenrenaturierung gegen Hochwasser, Moore für Wasserhaushalt oder vielfältige Agrarlandschaften.",
+      "woekRelation": "Für die WÖk sind naturbasierte Lösungen interessant, weil sie oft mehrere Wirkungsfelder gleichzeitig berühren.",
+      "statusNote": "Sie sind nur wirksam, wenn ökologische Integrität, soziale Gerechtigkeit und langfristige Pflege berücksichtigt werden.",
+      "usageNote": "Sie sind nur wirksam, wenn ökologische Integrität, soziale Gerechtigkeit und langfristige Pflege berücksichtigt werden.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "hitzeschutz-hitzeaktionsplan",
+        "hydrologischer-kreislauf"
+      ],
+      "officialSources": [
+        "IUCN - Nature-based solutions|https://iucn.org/our-work/nature-based-solutions"
+      ],
+      "pageUrl": "/begriffe/naturbasierte-loesungen/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Naturbasierte Lösungen nutzen und stärken Ökosysteme, um Klima-, Wasser-, Gesundheits- oder Resilienzprobleme zu lösen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Naturbasierte Lösungen",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "nature-positive",
+      "termId": "nature-positive",
+      "label": "Nature Positive",
+      "canonicalLabel": "Nature Positive",
+      "slug": "nature-positive",
+      "aliases": [
+        "Nature Positive",
+        "Nature-positive",
+        "naturpositiv",
+        "natur-positive Wirkung"
+      ],
+      "synonyms": [
+        "Nature Positive",
+        "Nature-positive",
+        "naturpositiv",
+        "natur-positive Wirkung"
+      ],
+      "shortDefinition": "Nature Positive beschreibt das Ziel, Naturverluste zu stoppen und Natur messbar wieder aufzubauen.",
+      "definition": "Der Begriff wird international als Zielbild genutzt. Dafür braucht es Baselines, Zeitpfade, Daten, klare Grenzen und Nachweis über reale ökologische Verbesserung.",
+      "longDefinition": "Der Begriff wird international als Zielbild genutzt. Dafür braucht es Baselines, Zeitpfade, Daten, klare Grenzen und Nachweis über reale ökologische Verbesserung.",
+      "woekRelation": "Die WÖk kann Nature Positive als Anschlussbegriff für Biodiversitätswirkung nutzen, muss ihn aber gegen Greenwashing und bloße Kompensation absichern.",
+      "statusNote": "Ohne Baseline, Zusätzlichkeit, Zeitbezug und Nicht-Kompensation bleibt der Begriff riskant.",
+      "usageNote": "Ohne Baseline, Zusätzlichkeit, Zeitbezug und Nicht-Kompensation bleibt der Begriff riskant.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nichtkompensationsprinzip",
+        "greenwashing"
+      ],
+      "officialSources": [
+        "IUCN - Nature Positive|https://iucn.org/our-work/biodiversity/nature-positive"
+      ],
+      "pageUrl": "/begriffe/nature-positive/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Nature Positive beschreibt das Ziel, Naturverluste zu stoppen und Natur messbar wieder aufzubauen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Nature Positive",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "nature-related-risks",
@@ -6364,7 +7412,10 @@
       "relatedTerms": [
         "reverse-merit-order",
         "wirkungsgrenze",
-        "netto-wirkung"
+        "netto-wirkung",
+        "planetare-grenzen",
+        "nature-positive",
+        "zielkonflikt"
       ],
       "officialSources": [
         "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
@@ -6389,7 +7440,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "nichtkompensationsprinzip",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "oecd-leitsaetze",
@@ -6566,6 +7618,122 @@
       "glossaryOrderKey": "Offsetting / Kompensation",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "oekosystemleistungen",
+      "termId": "oekosystemleistungen",
+      "label": "Ökosystemleistungen / Ökosystemfunktionen",
+      "canonicalLabel": "Ökosystemleistungen / Ökosystemfunktionen",
+      "slug": "oekosystemleistungen",
+      "aliases": [
+        "Ökosystemleistungen / Ökosystemfunktionen",
+        "Oekosystemleistungen",
+        "Ecosystem Services",
+        "Ökosystemfunktionen",
+        "Oekosystemfunktionen",
+        "Bestäubungsleistung",
+        "Bestaeubungsleistung",
+        "Biodiversitäts-Fußabdruck",
+        "Biodiversitaets-Fussabdruck"
+      ],
+      "synonyms": [
+        "Ökosystemleistungen / Ökosystemfunktionen",
+        "Oekosystemleistungen",
+        "Ecosystem Services",
+        "Ökosystemfunktionen",
+        "Oekosystemfunktionen",
+        "Bestäubungsleistung",
+        "Bestaeubungsleistung",
+        "Biodiversitäts-Fußabdruck",
+        "Biodiversitaets-Fussabdruck"
+      ],
+      "shortDefinition": "Ökosystemleistungen beschreiben Beiträge der Natur zu Wasser, Ernährung, Klima, Gesundheit, Schutz und Lebensqualität.",
+      "definition": "Der Begriff macht sichtbar, dass Wälder, Böden, Feuchtgebiete, Artenvielfalt und Gewässer tragende Funktionen erfüllen. Natur darf aber nicht nur als Dienstleisterin reduziert werden.",
+      "longDefinition": "Der Begriff macht sichtbar, dass Wälder, Böden, Feuchtgebiete, Artenvielfalt und Gewässer tragende Funktionen erfüllen. Natur darf aber nicht nur als Dienstleisterin reduziert werden.",
+      "woekRelation": "Die WÖk nutzt Ökosystemleistungen, um ökologische Wirkung einzubeziehen, verbindet sie aber mit Wirkungsgrenzen und Nicht-Kompensation.",
+      "statusNote": "Nicht alles an Naturwert lässt sich in Dienstleistungen oder Geld übersetzen.",
+      "usageNote": "Nicht alles an Naturwert lässt sich in Dienstleistungen oder Geld übersetzen.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks"
+      ],
+      "officialSources": [
+        "IPBES - Global Assessment Report|https://www.ipbes.net/global-assessment"
+      ],
+      "pageUrl": "/begriffe/oekosystemleistungen/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Ökosystemleistungen beschreiben Beiträge der Natur zu Wasser, Ernährung, Klima, Gesundheit, Schutz und Lebensqualität.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Ökosystemleistungen / Ökosystemfunktionen",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "one-health",
+      "termId": "one-health",
+      "label": "One Health",
+      "canonicalLabel": "One Health",
+      "slug": "one-health",
+      "aliases": [
+        "One Health",
+        "One-Health",
+        "Eine Gesundheit",
+        "Mensch-Tier-Umwelt-Gesundheit"
+      ],
+      "synonyms": [
+        "One Health",
+        "One-Health",
+        "Eine Gesundheit",
+        "Mensch-Tier-Umwelt-Gesundheit"
+      ],
+      "shortDefinition": "One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.",
+      "definition": "One Health verbindet Humanmedizin, Tiergesundheit, Ökosysteme, Ernährung, Wasser, Landwirtschaft, Biodiversität und Prävention.",
+      "longDefinition": "One Health verbindet Humanmedizin, Tiergesundheit, Ökosysteme, Ernährung, Wasser, Landwirtschaft, Biodiversität und Prävention.",
+      "woekRelation": "Für die WÖk ist One Health ein Brückenbegriff: Gesundheit entsteht nicht nur im Gesundheitssystem, sondern in Wirkungsräumen.",
+      "statusNote": "One Health ersetzt keine WÖk-Gesundheitsbewertung, liefert aber einen anerkannten Anschlussrahmen.",
+      "usageNote": "One Health ersetzt keine WÖk-Gesundheitsbewertung, liefert aber einen anerkannten Anschlussrahmen.",
+      "categories": [
+        "anschlussbegriff",
+        "gesundheit-soziales"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "health-impact-assessment"
+      ],
+      "officialSources": [
+        "WHO - One Health|https://www.who.int/health-topics/one-health"
+      ],
+      "pageUrl": "/begriffe/one-health/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "One Health",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "pai",
@@ -6817,13 +7985,25 @@
         "Physical Climate Risk",
         "Physical Risk",
         "physisches Klimarisiko",
-        "physisches Risiko"
+        "physisches Risiko",
+        "Anpassungslücke",
+        "Anpassungsluecke",
+        "Klimaanpassung",
+        "Urban Heat Island",
+        "städtische Hitzeinsel",
+        "staedtische Hitzeinsel"
       ],
       "synonyms": [
         "Physical Climate Risk",
         "Physical Risk",
         "physisches Klimarisiko",
-        "physisches Risiko"
+        "physisches Risiko",
+        "Anpassungslücke",
+        "Anpassungsluecke",
+        "Klimaanpassung",
+        "Urban Heat Island",
+        "städtische Hitzeinsel",
+        "staedtische Hitzeinsel"
       ],
       "shortDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
       "definition": "Diese Risiken betreffen Gesundheit, Infrastruktur, Lieferketten, Versicherbarkeit, Kapital und öffentliche Haushalte.",
@@ -6843,7 +8023,9 @@
         "tcfd",
         "transition-risk",
         "ipcc",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "hitzestress",
+        "hitzeschutz-hitzeaktionsplan"
       ],
       "officialSources": [
         "TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"
@@ -6865,7 +8047,116 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Physical Climate Risk",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
+    },
+    {
+      "id": "planetare-grenzen",
+      "termId": "planetare-grenzen",
+      "label": "Planetare Grenzen",
+      "canonicalLabel": "Planetare Grenzen",
+      "slug": "planetare-grenzen",
+      "aliases": [
+        "Planetare Grenzen",
+        "Planetary Boundaries",
+        "ökologische Belastungsgrenzen",
+        "oekologische Belastungsgrenzen",
+        "Belastungsgrenzen"
+      ],
+      "synonyms": [
+        "Planetare Grenzen",
+        "Planetary Boundaries",
+        "ökologische Belastungsgrenzen",
+        "oekologische Belastungsgrenzen",
+        "Belastungsgrenzen"
+      ],
+      "shortDefinition": "Planetare Grenzen beschreiben ökologische Schwellen, deren Überschreitung die Stabilität von Erdsystemen gefährden kann.",
+      "definition": "Das Konzept macht sichtbar, dass Klima, Biodiversität, Landnutzung, Süßwasser, Nährstoffkreisläufe und andere Erdsysteme nicht beliebig belastbar sind.",
+      "longDefinition": "Das Konzept macht sichtbar, dass Klima, Biodiversität, Landnutzung, Süßwasser, Nährstoffkreisläufe und andere Erdsysteme nicht beliebig belastbar sind.",
+      "woekRelation": "Planetare Grenzen begründen Wirkungsgrenzen, Nicht-Kompensation und Reverse Merit Order.",
+      "statusNote": "Planetare Grenzen sind ein wissenschaftlicher Referenzrahmen, kein fertiges WÖk-Bewertungsschema.",
+      "usageNote": "Planetare Grenzen sind ein wissenschaftlicher Referenzrahmen, kein fertiges WÖk-Bewertungsschema.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ],
+      "officialSources": [
+        "Stockholm Resilience Centre - Planetary Boundaries|https://www.stockholmresilience.org/research/planetary-boundaries.html"
+      ],
+      "pageUrl": "/begriffe/planetare-grenzen/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Planetare Grenzen beschreiben ökologische Schwellen, deren Überschreitung die Stabilität von Erdsystemen gefährden kann.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Planetare Grenzen",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "planetary-health",
+      "termId": "planetary-health",
+      "label": "Planetary Health",
+      "canonicalLabel": "Planetary Health",
+      "slug": "planetary-health",
+      "aliases": [
+        "Planetary Health",
+        "planetare Gesundheit",
+        "Planetare Gesundheit"
+      ],
+      "synonyms": [
+        "Planetary Health",
+        "planetare Gesundheit",
+        "Planetare Gesundheit"
+      ],
+      "shortDefinition": "Planetary Health beschreibt die Abhängigkeit menschlicher Gesundheit von stabilen natürlichen Systemen.",
+      "definition": "Planetary Health fragt, wie Klima, Biodiversität, Wasser, Ernährung, Luftqualität, Städte und Ökosysteme menschliche Gesundheit ermöglichen oder gefährden.",
+      "longDefinition": "Planetary Health fragt, wie Klima, Biodiversität, Wasser, Ernährung, Luftqualität, Städte und Ökosysteme menschliche Gesundheit ermöglichen oder gefährden.",
+      "woekRelation": "Die WÖk nutzt Planetary Health, um Gesundheit als Systemwirkung zu verstehen, nicht nur als medizinische Leistung.",
+      "statusNote": "Planetary Health ist ein wissenschaftlicher und politischer Anschlussbegriff, kein einzelner Indikator.",
+      "usageNote": "Planetary Health ist ein wissenschaftlicher und politischer Anschlussbegriff, kein einzelner Indikator.",
+      "categories": [
+        "anschlussbegriff",
+        "gesundheit-soziales"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "hitzestress"
+      ],
+      "officialSources": [
+        "Planetary Health Alliance - About|https://planetaryhealthalliance.org/about-us/"
+      ],
+      "pageUrl": "/begriffe/planetary-health/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Planetary Health beschreibt die Abhängigkeit menschlicher Gesundheit von stabilen natürlichen Systemen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Planetary Health",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "positive-netto-wirkung",
@@ -6876,12 +8167,16 @@
       "aliases": [
         "positive Netto-Wirkung",
         "positive Nettowirkung",
-        "positive netto Wirkung"
+        "positive netto Wirkung",
+        "Lebensqualität",
+        "Lebensqualitaet"
       ],
       "synonyms": [
         "positive Netto-Wirkung",
         "positive Nettowirkung",
-        "positive netto Wirkung"
+        "positive netto Wirkung",
+        "Lebensqualität",
+        "Lebensqualitaet"
       ],
       "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie.",
       "definition": "Positive Netto-Wirkung verbindet tatsächliche Zustandsveränderungen, Bewertungsrahmen, Nicht-Kompensation und Rückkopplung in Entscheidungen.",
@@ -6898,7 +8193,8 @@
         "wirkung",
         "netto-wirkung",
         "mensch-planet-demokratie",
-        "sdg-plus"
+        "sdg-plus",
+        "zukunftsfaehigkeit"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/positive-netto-wirkung/",
@@ -6924,6 +8220,7 @@
       "glossaryOrderKey": "positive netto wirkung",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -6979,6 +8276,62 @@
       "dataStandardsGroup": ""
     },
     {
+      "id": "praevention",
+      "termId": "praevention",
+      "label": "Prävention",
+      "canonicalLabel": "Prävention",
+      "slug": "praevention",
+      "aliases": [
+        "Prävention",
+        "Praevention",
+        "Vorsorge",
+        "Präventionswirkung",
+        "vermeidende Wirkung"
+      ],
+      "synonyms": [
+        "Prävention",
+        "Praevention",
+        "Vorsorge",
+        "Präventionswirkung",
+        "vermeidende Wirkung"
+      ],
+      "shortDefinition": "Prävention verhindert Schäden, bevor sie entstehen oder sich verfestigen.",
+      "definition": "Prävention kann Gesundheitskosten, Klimaschäden, Bildungsabbrüche, Pflegebelastung, Extremismus, Wohnungsnot oder Infrastrukturschäden vermeiden.",
+      "longDefinition": "Prävention kann Gesundheitskosten, Klimaschäden, Bildungsabbrüche, Pflegebelastung, Extremismus, Wohnungsnot oder Infrastrukturschäden vermeiden.",
+      "woekRelation": "Die WÖk macht Prävention als Wirkleistung sichtbar: vermiedene Schäden und Folgekosten gehören in Wirkungshaushalte und T-SROI.",
+      "statusNote": "Prävention braucht plausible Wirkungspfade, Datenqualität und Evaluation, weil vermiedene Schäden nicht direkt beobachtbar sind.",
+      "usageNote": "Prävention braucht plausible Wirkungspfade, Datenqualität und Evaluation, weil vermiedene Schäden nicht direkt beobachtbar sind.",
+      "categories": [
+        "grundbegriff",
+        "gesundheit-soziales"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "t-sroi",
+        "health-impact-assessment"
+      ],
+      "officialSources": [
+        "WHO - Health equity|https://www.who.int/health-topics/health-equity"
+      ],
+      "pageUrl": "/begriffe/praevention/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Prävention verhindert Schäden, bevor sie entstehen oder sich verfestigen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Prävention",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "produktdaten",
       "termId": "produktdaten",
       "label": "Produktdaten",
@@ -6993,7 +8346,13 @@
         "HCV",
         "High Carbon Stock",
         "HCS",
-        "Higg Index"
+        "Higg Index",
+        "Traceability",
+        "Rückverfolgbarkeit",
+        "Rueckverfolgbarkeit",
+        "Chain of Custody",
+        "Mass Balance",
+        "Book-and-Claim"
       ],
       "synonyms": [
         "Produktdaten",
@@ -7004,7 +8363,13 @@
         "HCV",
         "High Carbon Stock",
         "HCS",
-        "Higg Index"
+        "Higg Index",
+        "Traceability",
+        "Rückverfolgbarkeit",
+        "Rueckverfolgbarkeit",
+        "Chain of Custody",
+        "Mass Balance",
+        "Book-and-Claim"
       ],
       "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
       "definition": "Die WÖk nutzt Produktdaten, um Produktwirkung, Preiswahrheit und Konsument:inneninformation zu ermöglichen.",
@@ -7026,7 +8391,8 @@
         "pef-product-environmental-footprint",
         "pcf-product-carbon-footprint",
         "herkunftstransparenz",
-        "hotspot-analyse"
+        "hotspot-analyse",
+        "rohstoffkritikalitaet"
       ],
       "officialSources": [
         "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
@@ -7048,7 +8414,174 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Produktdaten",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
+    },
+    {
+      "id": "qualitaetssicherung",
+      "termId": "qualitaetssicherung",
+      "label": "Qualitätssicherung",
+      "canonicalLabel": "Qualitätssicherung",
+      "slug": "qualitaetssicherung",
+      "aliases": [
+        "Qualitätssicherung",
+        "Qualitaetssicherung",
+        "Quality Assurance",
+        "Qualitätsprüfung",
+        "Qualitaetspruefung"
+      ],
+      "synonyms": [
+        "Qualitätssicherung",
+        "Qualitaetssicherung",
+        "Quality Assurance",
+        "Qualitätsprüfung",
+        "Qualitaetspruefung"
+      ],
+      "shortDefinition": "Qualitätssicherung sorgt dafür, dass Daten, Verfahren, Aussagen oder Bewertungen überprüfbar und belastbar bleiben.",
+      "definition": "Qualitätssicherung umfasst Standards, Prüfung, Versionierung, Dokumentation, Fehlerkorrektur und klare Verantwortlichkeiten.",
+      "longDefinition": "Qualitätssicherung umfasst Standards, Prüfung, Versionierung, Dokumentation, Fehlerkorrektur und klare Verantwortlichkeiten.",
+      "woekRelation": "Die WÖk braucht Qualitätssicherung, damit Wirkungsdaten, Scorecards, Folgenchecks und Demos nachvollziehbar bleiben.",
+      "statusNote": "Qualitätssicherung garantiert keine richtige Wirkung, reduziert aber Fehler und macht Unsicherheit sichtbar.",
+      "usageNote": "Qualitätssicherung garantiert keine richtige Wirkung, reduziert aber Fehler und macht Unsicherheit sichtbar.",
+      "categories": [
+        "anschlussbegriff",
+        "daten-standards-regularien"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "relatedTerms": [
+        "datenqualitaet",
+        "assurance",
+        "wirkungsbewertung",
+        "scorecard",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "ISO - Management system standards|https://www.iso.org/management-system-standards.html"
+      ],
+      "pageUrl": "/begriffe/qualitaetssicherung/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Daten, Standards und WÖk-Übersetzung",
+      "hoverDefinition": "Qualitätssicherung sorgt dafür, dass Daten, Verfahren, Aussagen oder Bewertungen überprüfbar und belastbar bleiben.",
+      "reviewStatus": "approved",
+      "category": "Grundbegriff",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "glossaryOrderKey": "Qualitätssicherung",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "quartierswirkung",
+      "termId": "quartierswirkung",
+      "label": "Quartierswirkung",
+      "canonicalLabel": "Quartierswirkung",
+      "slug": "quartierswirkung",
+      "aliases": [
+        "Quartierswirkung",
+        "Nachbarschaftswirkung",
+        "Quartier",
+        "Quartiersentwicklung"
+      ],
+      "synonyms": [
+        "Quartierswirkung",
+        "Nachbarschaftswirkung",
+        "Quartier",
+        "Quartiersentwicklung"
+      ],
+      "shortDefinition": "Quartierswirkung beschreibt, wie Maßnahmen in einem Stadtteil Alltag, Wohnen, Gesundheit, Mobilität, Klima und Zusammenhalt verändern.",
+      "definition": "Im Quartier treffen Wohnkosten, Hitze, Grünflächen, Pflege, Schulen, Mobilität, Nahversorgung, Sicherheit, soziale Netze und Verwaltung zusammen.",
+      "longDefinition": "Im Quartier treffen Wohnkosten, Hitze, Grünflächen, Pflege, Schulen, Mobilität, Nahversorgung, Sicherheit, soziale Netze und Verwaltung zusammen.",
+      "woekRelation": "Die WÖk kann Quartierswirkung nutzen, um kommunale Entscheidungen konkret und erfahrbar zu machen.",
+      "statusNote": "Quartierswirkung braucht lokale Daten und Beteiligung, weil Durchschnittswerte kleinräumige Unterschiede verdecken.",
+      "usageNote": "Quartierswirkung braucht lokale Daten und Beteiligung, weil Durchschnittswerte kleinräumige Unterschiede verdecken.",
+      "categories": [
+        "anschlussbegriff",
+        "staat-verwaltung-recht"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wohnwirkung",
+        "hitzeschutz-hitzeaktionsplan",
+        "wirkungshaushalt"
+      ],
+      "officialSources": [
+        "UN-Habitat - Public space|https://unhabitat.org/topic/public-space"
+      ],
+      "pageUrl": "/begriffe/quartierswirkung/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Quartierswirkung beschreibt, wie Maßnahmen in einem Stadtteil Alltag, Wohnen, Gesundheit, Mobilität, Klima und Zusammenhalt verändern.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Quartierswirkung",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "quellenklarheit",
+      "termId": "quellenklarheit",
+      "label": "Quellenklarheit",
+      "canonicalLabel": "Quellenklarheit",
+      "slug": "quellenklarheit",
+      "aliases": [
+        "Quellenklarheit",
+        "Source clarity",
+        "Quellentransparenz",
+        "Nachvollziehbarkeit von Quellen"
+      ],
+      "synonyms": [
+        "Quellenklarheit",
+        "Source clarity",
+        "Quellentransparenz",
+        "Nachvollziehbarkeit von Quellen"
+      ],
+      "shortDefinition": "Quellenklarheit bedeutet, dass Herkunft, Qualität und Aussagegrenzen von Informationen erkennbar sind.",
+      "definition": "Quellenklarheit zeigt, wo Daten, Aussagen, Zahlen oder Dokumente herkommen, wie aktuell sie sind und welche Unsicherheit besteht.",
+      "longDefinition": "Quellenklarheit zeigt, wo Daten, Aussagen, Zahlen oder Dokumente herkommen, wie aktuell sie sind und welche Unsicherheit besteht.",
+      "woekRelation": "Die WÖk nutzt Quellenklarheit als Schutz vor Wirkungsbehauptungen ohne belastbare Grundlage.",
+      "statusNote": "Quellenklarheit ersetzt keine Prüfung, ist aber Voraussetzung für Vertrauen und Kritikfähigkeit.",
+      "usageNote": "Quellenklarheit ersetzt keine Prüfung, ist aber Voraussetzung für Vertrauen und Kritikfähigkeit.",
+      "categories": [
+        "anschlussbegriff",
+        "daten-standards-regularien"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "relatedTerms": [
+        "faktencheck",
+        "folgencheck",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "OECD - Recommendation on Information Integrity|https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0497"
+      ],
+      "pageUrl": "/begriffe/quellenklarheit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Daten, Standards und WÖk-Übersetzung",
+      "hoverDefinition": "Quellenklarheit bedeutet, dass Herkunft, Qualität und Aussagegrenzen von Informationen erkennbar sind.",
+      "reviewStatus": "approved",
+      "category": "Grundbegriff",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "glossaryOrderKey": "Quellenklarheit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "reasonable-assurance",
@@ -7111,6 +8644,63 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "rechte-kuenftiger-generationen",
+      "termId": "rechte-kuenftiger-generationen",
+      "label": "Rechte künftiger Generationen",
+      "canonicalLabel": "Rechte künftiger Generationen",
+      "slug": "rechte-kuenftiger-generationen",
+      "aliases": [
+        "Rechte künftiger Generationen",
+        "Rechte kuenftiger Generationen",
+        "future generations",
+        "künftige Generationen",
+        "kuenftige Generationen",
+        "Young Generations"
+      ],
+      "synonyms": [
+        "Rechte künftiger Generationen",
+        "Rechte kuenftiger Generationen",
+        "future generations",
+        "künftige Generationen",
+        "kuenftige Generationen",
+        "Young Generations"
+      ],
+      "shortDefinition": "Rechte künftiger Generationen schützen Interessen von Menschen, die von heutigen Entscheidungen betroffen sein werden.",
+      "definition": "Der Begriff verweist auf langfristige Verantwortung für Klima, Biodiversität, Staatsfinanzen, Infrastruktur, Frieden, Demokratie und Wissen.",
+      "longDefinition": "Der Begriff verweist auf langfristige Verantwortung für Klima, Biodiversität, Staatsfinanzen, Infrastruktur, Frieden, Demokratie und Wissen.",
+      "woekRelation": "Die WÖk macht diese Verantwortung über Wirkungszeit, Wirkungsgrenzen, Wirkungshaushalt und lernende Evaluation operationaler.",
+      "statusNote": "Die konkrete rechtliche Ausgestaltung ist politisch und verfassungsrechtlich unterschiedlich.",
+      "usageNote": "Die konkrete rechtliche Ausgestaltung ist politisch und verfassungsrechtlich unterschiedlich.",
+      "categories": [
+        "anschlussbegriff",
+        "demokratie-governance"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsgrenze",
+        "wirkungshaushalt"
+      ],
+      "officialSources": [
+        "United Nations - Pact for the Future|https://www.un.org/pact-for-the-future/en"
+      ],
+      "pageUrl": "/begriffe/rechte-kuenftiger-generationen/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Rechte künftiger Generationen schützen Interessen von Menschen, die von heutigen Entscheidungen betroffen sein werden.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Rechte künftiger Generationen",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "recyclingquote",
       "termId": "recyclingquote",
       "label": "Recyclingquote",
@@ -7162,6 +8752,196 @@
       "glossaryOrderKey": "Recyclingquote",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "regeneration",
+      "termId": "regeneration",
+      "label": "Regeneration / regenerative Wirkung",
+      "canonicalLabel": "Regeneration / regenerative Wirkung",
+      "slug": "regeneration",
+      "aliases": [
+        "Regeneration / regenerative Wirkung",
+        "Regeneration",
+        "regenerative Wirkung",
+        "regenerative Wirtschaft",
+        "Wiederherstellung von Lebensgrundlagen"
+      ],
+      "synonyms": [
+        "Regeneration / regenerative Wirkung",
+        "Regeneration",
+        "regenerative Wirkung",
+        "regenerative Wirtschaft",
+        "Wiederherstellung von Lebensgrundlagen"
+      ],
+      "shortDefinition": "Regeneration bedeutet, geschädigte Lebensgrundlagen, soziale Räume oder institutionelles Vertrauen wieder aufzubauen.",
+      "definition": "Regeneration geht über Schadensminderung hinaus. Sie fragt, ob Böden, Wasser, Biodiversität, Gesundheit, soziale Beziehungen, Demokratie oder Wissenstrukturen wieder tragfähiger werden.",
+      "longDefinition": "Regeneration geht über Schadensminderung hinaus. Sie fragt, ob Böden, Wasser, Biodiversität, Gesundheit, soziale Beziehungen, Demokratie oder Wissenstrukturen wieder tragfähiger werden.",
+      "woekRelation": "Regeneration schärft positive Netto-Wirkung: Gute Wirkung repariert nicht nur Symptome, sondern stärkt Zukunftsfähigkeit.",
+      "statusNote": "Regeneration ist kein geschützter Claim. Sie braucht Baseline, Daten, Zeitbezug und Abgrenzung von bloßer Nachhaltigkeitskommunikation.",
+      "usageNote": "Regeneration ist kein geschützter Claim. Sie braucht Baseline, Daten, Zeitbezug und Abgrenzung von bloßer Nachhaltigkeitskommunikation.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsresilienz"
+      ],
+      "officialSources": [
+        "UNEP - Sustainable consumption and production|https://www.unep.org/explore-topics/resource-efficiency/what-we-do/policy-and-strategy/sustainable-consumption-and"
+      ],
+      "pageUrl": "/begriffe/regeneration/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Regeneration bedeutet, geschädigte Lebensgrundlagen, soziale Räume oder institutionelles Vertrauen wieder aufzubauen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Regeneration / regenerative Wirkung",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "renaturierung",
+      "termId": "renaturierung",
+      "label": "Renaturierung",
+      "canonicalLabel": "Renaturierung",
+      "slug": "renaturierung",
+      "aliases": [
+        "Renaturierung",
+        "Restoration",
+        "Nature restoration",
+        "Wiederherstellung von Natur",
+        "Moorschutz",
+        "Wiedervernässung",
+        "Wiedervernaessung",
+        "ökologische Korridore",
+        "oekologische Korridore",
+        "invasive Arten"
+      ],
+      "synonyms": [
+        "Renaturierung",
+        "Restoration",
+        "Nature restoration",
+        "Wiederherstellung von Natur",
+        "Moorschutz",
+        "Wiedervernässung",
+        "Wiedervernaessung",
+        "ökologische Korridore",
+        "oekologische Korridore",
+        "invasive Arten"
+      ],
+      "shortDefinition": "Renaturierung stellt geschädigte natürliche Lebensräume und ökologische Funktionen wieder her.",
+      "definition": "Renaturierung kann Flüsse, Moore, Wälder, Böden, Küsten, Stadtgrün oder Agrarlandschaften betreffen und Wasserhaushalt, Biodiversität und Kühlung verbessern.",
+      "longDefinition": "Renaturierung kann Flüsse, Moore, Wälder, Böden, Küsten, Stadtgrün oder Agrarlandschaften betreffen und Wasserhaushalt, Biodiversität und Kühlung verbessern.",
+      "woekRelation": "Die WÖk behandelt Renaturierung als potenziell regenerative Wirkung über mehrere Wirkungsfelder und Zeithorizonte.",
+      "statusNote": "Renaturierung darf nicht als einfache Kompensation für neue Zerstörung missverstanden werden.",
+      "usageNote": "Renaturierung darf nicht als einfache Kompensation für neue Zerstörung missverstanden werden.",
+      "categories": [
+        "anschlussbegriff",
+        "natur-klima-wasser-boden"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "hydrologischer-kreislauf",
+        "habitatfragmentierung"
+      ],
+      "officialSources": [
+        "European Environment Agency - Nature protection and restoration|https://www.eea.europa.eu/en/topics/in-depth/nature-protection-and-restoration"
+      ],
+      "pageUrl": "/begriffe/renaturierung/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Renaturierung stellt geschädigte natürliche Lebensräume und ökologische Funktionen wieder her.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Renaturierung",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "reparierbarkeit-recht-auf-reparatur",
+      "termId": "reparierbarkeit-recht-auf-reparatur",
+      "label": "Reparierbarkeit / Recht auf Reparatur",
+      "canonicalLabel": "Reparierbarkeit / Recht auf Reparatur",
+      "slug": "reparierbarkeit-recht-auf-reparatur",
+      "aliases": [
+        "Reparierbarkeit / Recht auf Reparatur",
+        "Reparierbarkeit",
+        "Recht auf Reparatur",
+        "Right to Repair",
+        "Langlebigkeit",
+        "Nutzungsdauer",
+        "Wiederverwendung",
+        "Refurbishment",
+        "Wiederaufbereitung",
+        "Produktlebensdauer",
+        "Nutzungsintensität",
+        "Nutzungsintensitaet"
+      ],
+      "synonyms": [
+        "Reparierbarkeit / Recht auf Reparatur",
+        "Reparierbarkeit",
+        "Recht auf Reparatur",
+        "Right to Repair",
+        "Langlebigkeit",
+        "Nutzungsdauer",
+        "Wiederverwendung",
+        "Refurbishment",
+        "Wiederaufbereitung",
+        "Produktlebensdauer",
+        "Nutzungsintensität",
+        "Nutzungsintensitaet"
+      ],
+      "shortDefinition": "Reparierbarkeit beschreibt, ob Produkte einfach, bezahlbar und dauerhaft instand gehalten werden können.",
+      "definition": "Reparierbarkeit und das Recht auf Reparatur stärken längere Nutzung, weniger Abfall, geringeren Ressourcenverbrauch und mehr Konsument:innenrechte.",
+      "longDefinition": "Reparierbarkeit und das Recht auf Reparatur stärken längere Nutzung, weniger Abfall, geringeren Ressourcenverbrauch und mehr Konsument:innenrechte.",
+      "woekRelation": "Die WÖk kann Reparierbarkeit als Produktwirkung über Produktdaten, Materialverbrauch und positive Netto-Wirkung erfassen.",
+      "statusNote": "Reparierbarkeit braucht faire Preise, Ersatzteile und transparente Informationen.",
+      "usageNote": "Reparierbarkeit braucht faire Preise, Ersatzteile und transparente Informationen.",
+      "categories": [
+        "anschlussbegriff",
+        "wirtschaft-produkte-konsum"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "Council of the EU - Right to repair|https://www.consilium.europa.eu/en/policies/right-to-repair-products/"
+      ],
+      "pageUrl": "/begriffe/reparierbarkeit-recht-auf-reparatur/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Reparierbarkeit beschreibt, ob Produkte einfach, bezahlbar und dauerhaft instand gehalten werden können.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Reparierbarkeit / Recht auf Reparatur",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "residual-emissions",
@@ -7238,7 +9018,48 @@
         "Hybride Kriegsfuehrung",
         "Halluzinationen von KI",
         "KI-Halluzinationen",
-        "Host-Verantwortung"
+        "Host-Verantwortung",
+        "Systemvertrauen",
+        "soziale Kohäsion",
+        "soziale Kohaesion",
+        "gesellschaftlicher Zusammenhalt",
+        "demokratische Resilienz",
+        "Digitale Selbstbestimmung",
+        "Algorithmische Verantwortung",
+        "Algorithmic Accountability",
+        "Algorithmische Diskriminierung",
+        "Erklärbarkeit",
+        "Explainability",
+        "Dark Patterns",
+        "Sucht-Design",
+        "addictive design",
+        "Aufmerksamkeitsökonomie",
+        "Aufmerksamkeitsoekonomie",
+        "Informationsintegrität",
+        "Informationsintegritaet",
+        "Epistemische Sicherheit",
+        "Vertrauensinfrastruktur",
+        "Demokratische Öffentlichkeit",
+        "demokratische Oeffentlichkeit",
+        "Öffentliche Wahrheit",
+        "Oeffentliche Wahrheit",
+        "Diskursverschmutzung",
+        "Radikalisierungspfad",
+        "Polarisierungsdynamik",
+        "Feindbildproduktion",
+        "Dehumanisierung",
+        "demokratische Korrekturfähigkeit",
+        "demokratische Korrekturfaehigkeit",
+        "institutionelles Vertrauen",
+        "Civic Literacy",
+        "demokratische Mündigkeit",
+        "demokratische Muendigkeit",
+        "Medienkompetenz",
+        "KI-Halluzination",
+        "Deepfake",
+        "synthetische Medien",
+        "Botnetz",
+        "koordinierte Manipulation"
       ],
       "synonyms": [
         "Resonanzraum",
@@ -7249,7 +9070,48 @@
         "Hybride Kriegsfuehrung",
         "Halluzinationen von KI",
         "KI-Halluzinationen",
-        "Host-Verantwortung"
+        "Host-Verantwortung",
+        "Systemvertrauen",
+        "soziale Kohäsion",
+        "soziale Kohaesion",
+        "gesellschaftlicher Zusammenhalt",
+        "demokratische Resilienz",
+        "Digitale Selbstbestimmung",
+        "Algorithmische Verantwortung",
+        "Algorithmic Accountability",
+        "Algorithmische Diskriminierung",
+        "Erklärbarkeit",
+        "Explainability",
+        "Dark Patterns",
+        "Sucht-Design",
+        "addictive design",
+        "Aufmerksamkeitsökonomie",
+        "Aufmerksamkeitsoekonomie",
+        "Informationsintegrität",
+        "Informationsintegritaet",
+        "Epistemische Sicherheit",
+        "Vertrauensinfrastruktur",
+        "Demokratische Öffentlichkeit",
+        "demokratische Oeffentlichkeit",
+        "Öffentliche Wahrheit",
+        "Oeffentliche Wahrheit",
+        "Diskursverschmutzung",
+        "Radikalisierungspfad",
+        "Polarisierungsdynamik",
+        "Feindbildproduktion",
+        "Dehumanisierung",
+        "demokratische Korrekturfähigkeit",
+        "demokratische Korrekturfaehigkeit",
+        "institutionelles Vertrauen",
+        "Civic Literacy",
+        "demokratische Mündigkeit",
+        "demokratische Muendigkeit",
+        "Medienkompetenz",
+        "KI-Halluzination",
+        "Deepfake",
+        "synthetische Medien",
+        "Botnetz",
+        "koordinierte Manipulation"
       ],
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können.",
       "definition": "Resonanzräume beeinflussen, ob Informationen, Narrative oder Entscheidungen aufgenommen, verstärkt, abgeschwächt oder umgedeutet werden.",
@@ -7265,7 +9127,9 @@
       "relatedTerms": [
         "wirkungspotenzial",
         "wirkungspfad",
-        "wirkungsnetz"
+        "wirkungsnetz",
+        "zielkonflikt",
+        "quellenklarheit"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/resonanzraum/",
@@ -7289,6 +9153,7 @@
       "glossaryOrderKey": "resonanzraum",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -7385,7 +9250,9 @@
       "relatedTerms": [
         "nichtkompensationsprinzip",
         "netto-wirkung",
-        "wirkungsgrenze"
+        "wirkungsgrenze",
+        "planetare-grenzen",
+        "zielkonflikt"
       ],
       "officialSources": [
         "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
@@ -7416,7 +9283,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "reverse merit order",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "rezyklatanteil",
@@ -7471,6 +9339,69 @@
       "glossaryOrderKey": "Rezyklatanteil",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "rohstoffkritikalitaet",
+      "termId": "rohstoffkritikalitaet",
+      "label": "Rohstoffkritikalität",
+      "canonicalLabel": "Rohstoffkritikalität",
+      "slug": "rohstoffkritikalitaet",
+      "aliases": [
+        "Rohstoffkritikalität",
+        "Rohstoffkritikalitaet",
+        "critical raw materials",
+        "kritische Rohstoffe",
+        "Konfliktrohstoffe",
+        "Rohstoffgerechtigkeit",
+        "Materialpass",
+        "Produktpassdaten"
+      ],
+      "synonyms": [
+        "Rohstoffkritikalität",
+        "Rohstoffkritikalitaet",
+        "critical raw materials",
+        "kritische Rohstoffe",
+        "Konfliktrohstoffe",
+        "Rohstoffgerechtigkeit",
+        "Materialpass",
+        "Produktpassdaten"
+      ],
+      "shortDefinition": "Rohstoffkritikalität beschreibt Risiken bei Verfügbarkeit, Konzentration, Umweltwirkung, Menschenrechten oder strategischer Abhängigkeit von Rohstoffen.",
+      "definition": "Kritische Rohstoffe können für Energiewende, Digitalisierung und Industrie wichtig sein, aber ökologische Schäden, Menschenrechtsrisiken und geopolitische Abhängigkeiten erzeugen.",
+      "longDefinition": "Kritische Rohstoffe können für Energiewende, Digitalisierung und Industrie wichtig sein, aber ökologische Schäden, Menschenrechtsrisiken und geopolitische Abhängigkeiten erzeugen.",
+      "woekRelation": "Die WÖk verbindet Rohstoffkritikalität mit Lieferkettendaten, Produktpässen, Kreislauffähigkeit, Menschenrechten und Kapitalwirkung.",
+      "statusNote": "Kritikalität ist kontextabhängig: Ein Rohstoff kann technisch wichtig, sozial riskant und ökologisch problematisch zugleich sein.",
+      "usageNote": "Kritikalität ist kontextabhängig: Ein Rohstoff kann technisch wichtig, sozial riskant und ökologisch problematisch zugleich sein.",
+      "categories": [
+        "anschlussbegriff",
+        "lieferketten-sorgfalt"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "lieferkettendaten",
+        "digitaler-produktpass",
+        "human-rights-due-diligence",
+        "material-footprint"
+      ],
+      "officialSources": [
+        "European Commission - Critical Raw Materials Act|https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/critical-raw-materials-act_en"
+      ],
+      "pageUrl": "/begriffe/rohstoffkritikalitaet/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Rohstoffkritikalität beschreibt Risiken bei Verfügbarkeit, Konzentration, Umweltwirkung, Menschenrechten oder strategischer Abhängigkeit von Rohstoffen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Rohstoffkritikalität",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "sbti",
@@ -8413,6 +10344,78 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "suffizienz",
+      "termId": "suffizienz",
+      "label": "Suffizienz",
+      "canonicalLabel": "Suffizienz",
+      "slug": "suffizienz",
+      "aliases": [
+        "Suffizienz",
+        "Sufficiency",
+        "Genug",
+        "genug statt mehr",
+        "weniger aber besser",
+        "Bedürfnis vs. Nachfrage",
+        "Beduerfnis vs. Nachfrage",
+        "Überkonsum",
+        "Ueberkonsum",
+        "Rebound-Falle",
+        "Nudging",
+        "Entscheidungsarchitektur",
+        "Konsumfreiheit",
+        "Konsumentscheidung"
+      ],
+      "synonyms": [
+        "Suffizienz",
+        "Sufficiency",
+        "Genug",
+        "genug statt mehr",
+        "weniger aber besser",
+        "Bedürfnis vs. Nachfrage",
+        "Beduerfnis vs. Nachfrage",
+        "Überkonsum",
+        "Ueberkonsum",
+        "Rebound-Falle",
+        "Nudging",
+        "Entscheidungsarchitektur",
+        "Konsumfreiheit",
+        "Konsumentscheidung"
+      ],
+      "shortDefinition": "Suffizienz fragt, welches Maß an Nutzung, Konsum oder Produktion genug ist.",
+      "definition": "Effizienz macht Prozesse sparsamer. Suffizienz fragt, ob der Umfang selbst tragfähig ist: Wohnen, Mobilität, Energie, Konsum und Materialverbrauch.",
+      "longDefinition": "Effizienz macht Prozesse sparsamer. Suffizienz fragt, ob der Umfang selbst tragfähig ist: Wohnen, Mobilität, Energie, Konsum und Materialverbrauch.",
+      "woekRelation": "Für die WÖk ist Suffizienz kein Verzichtsprogramm, sondern eine Wirkungsfrage nach Bedürfnissen, Schäden und Lebensqualität.",
+      "statusNote": "Suffizienz darf nicht moralisch verengt werden. Sie braucht soziale Abfederung, Wahlmöglichkeiten und Gerechtigkeit.",
+      "usageNote": "Suffizienz darf nicht moralisch verengt werden. Sie braucht soziale Abfederung, Wahlmöglichkeiten und Gerechtigkeit.",
+      "categories": [
+        "anschlussbegriff",
+        "wirtschaft-produkte-konsum"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "UNEP - Sustainable consumption and production|https://www.unep.org/explore-topics/resource-efficiency/what-we-do/policy-and-strategy/sustainable-consumption-and"
+      ],
+      "pageUrl": "/begriffe/suffizienz/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Suffizienz fragt, welches Maß an Nutzung, Konsum oder Produktion genug ist.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Suffizienz",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "sustainable-finance",
       "termId": "sustainable-finance",
       "label": "Sustainable Finance",
@@ -9064,7 +11067,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "transition finance",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "transition-plan",
@@ -9233,6 +11237,60 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "umweltgerechtigkeit",
+      "termId": "umweltgerechtigkeit",
+      "label": "Umweltgerechtigkeit",
+      "canonicalLabel": "Umweltgerechtigkeit",
+      "slug": "umweltgerechtigkeit",
+      "aliases": [
+        "Umweltgerechtigkeit",
+        "Environmental Justice",
+        "Umweltbelastungsgerechtigkeit",
+        "Umweltverteilungsgerechtigkeit"
+      ],
+      "synonyms": [
+        "Umweltgerechtigkeit",
+        "Environmental Justice",
+        "Umweltbelastungsgerechtigkeit",
+        "Umweltverteilungsgerechtigkeit"
+      ],
+      "shortDefinition": "Umweltgerechtigkeit fragt, wer Umweltbelastungen trägt und wer Zugang zu gesunder Umwelt hat.",
+      "definition": "Luftverschmutzung, Lärm, Hitze, Industriebelastung, Hochwasser, fehlendes Grün oder giftige Stoffe treffen Menschen unterschiedlich.",
+      "longDefinition": "Luftverschmutzung, Lärm, Hitze, Industriebelastung, Hochwasser, fehlendes Grün oder giftige Stoffe treffen Menschen unterschiedlich.",
+      "woekRelation": "Die WÖk nutzt Umweltgerechtigkeit, um negative Wirkung nicht nur als Gesamtschaden, sondern als ungleich verteilte Belastung sichtbar zu machen.",
+      "statusNote": "Umweltgerechtigkeit braucht kleinräumige Daten und Beteiligung, weil Durchschnittswerte Belastung verdecken.",
+      "usageNote": "Umweltgerechtigkeit braucht kleinräumige Daten und Beteiligung, weil Durchschnittswerte Belastung verdecken.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "hitzestress",
+        "wasserstress",
+        "wohnwirkung"
+      ],
+      "officialSources": [
+        "European Environment Agency - Healthy environment, healthy lives|https://www.eea.europa.eu/publications/healthy-environment-healthy-lives"
+      ],
+      "pageUrl": "/begriffe/umweltgerechtigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Umweltgerechtigkeit fragt, wer Umweltbelastungen trägt und wer Zugang zu gesunder Umwelt hat.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Umweltgerechtigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "un-guiding-principles",
       "termId": "un-guiding-principles",
       "label": "UN Guiding Principles on Business and Human Rights",
@@ -9285,6 +11343,66 @@
       "glossaryOrderKey": "UN Guiding Principles on Business and Human Rights",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "vermeidene-schaeden-folgekosten",
+      "termId": "vermeidene-schaeden-folgekosten",
+      "label": "Vermeidene Schäden / vermiedene Folgekosten",
+      "canonicalLabel": "Vermeidene Schäden / vermiedene Folgekosten",
+      "slug": "vermeidene-schaeden-folgekosten",
+      "aliases": [
+        "Vermeidene Schäden / vermiedene Folgekosten",
+        "vermeidene Schäden",
+        "vermiedene Schaeden",
+        "vermiedene Folgekosten",
+        "avoided damages",
+        "avoided costs",
+        "vermiedene Reparaturkosten"
+      ],
+      "synonyms": [
+        "Vermeidene Schäden / vermiedene Folgekosten",
+        "vermeidene Schäden",
+        "vermiedene Schaeden",
+        "vermiedene Folgekosten",
+        "avoided damages",
+        "avoided costs",
+        "vermiedene Reparaturkosten"
+      ],
+      "shortDefinition": "Vermeidene Schäden sind negative Wirkungen, die durch Vorsorge, Prävention oder gute Gestaltung gar nicht erst entstehen.",
+      "definition": "Vermiedene Schäden sind schwer sichtbar, weil der Schaden nicht eintritt. Trotzdem sind sie für Gesundheit, Klima, Bildung, Pflege, Infrastruktur und Demokratie zentral.",
+      "longDefinition": "Vermiedene Schäden sind schwer sichtbar, weil der Schaden nicht eintritt. Trotzdem sind sie für Gesundheit, Klima, Bildung, Pflege, Infrastruktur und Demokratie zentral.",
+      "woekRelation": "Die WÖk behandelt vermiedene Folgekosten als Teil von Wirkleistung, T-SROI und Wirkungshaushalt.",
+      "statusNote": "Die Bewertung braucht Gegenfaktum, Annahmen, Datenqualität und Plausibilitätsprüfung.",
+      "usageNote": "Die Bewertung braucht Gegenfaktum, Annahmen, Datenqualität und Plausibilitätsprüfung.",
+      "categories": [
+        "grundbegriff",
+        "staat-verwaltung-recht"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "t-sroi",
+        "wirkungshaushalt",
+        "health-impact-assessment"
+      ],
+      "officialSources": [
+        "OECD - Cost-benefit analysis and the environment|https://www.oecd.org/en/publications/cost-benefit-analysis-and-the-environment_9789264085169-en.html"
+      ],
+      "pageUrl": "/begriffe/vermeidene-schaeden-folgekosten/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Vermeidene Schäden sind negative Wirkungen, die durch Vorsorge, Prävention oder gute Gestaltung gar nicht erst entstehen.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Vermeidene Schäden / vermiedene Folgekosten",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "vsme",
@@ -9458,7 +11576,9 @@
         "nature-related-risks",
         "tnfd",
         "produktdaten",
-        "hydrologischer-kreislauf"
+        "hydrologischer-kreislauf",
+        "planetare-grenzen",
+        "umweltgerechtigkeit"
       ],
       "officialSources": [
         "World Resources Institute Aqueduct|https://www.wri.org/aqueduct"
@@ -9480,7 +11600,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Wasserstress",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "wesentlicher-beitrag",
@@ -9489,10 +11610,12 @@
       "canonicalLabel": "Wesentlicher Beitrag",
       "slug": "wesentlicher-beitrag",
       "aliases": [
-        "Wesentlicher Beitrag"
+        "Wesentlicher Beitrag",
+        "Wesentlichkeitsschwelle"
       ],
       "synonyms": [
-        "Wesentlicher Beitrag"
+        "Wesentlicher Beitrag",
+        "Wesentlichkeitsschwelle"
       ],
       "shortDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
       "definition": "Die WÖk liest den wesentlichen Beitrag als Teilinformation und prüft, ob zugleich Schäden, Nebenwirkungen und Rückkopplungen berücksichtigt sind.",
@@ -9533,7 +11656,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Wesentlicher Beitrag",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "who",
@@ -9935,11 +12059,29 @@
       "slug": "wirkungsdaten",
       "aliases": [
         "Wirkungsdaten",
-        "Wirkungsdatenpunkte"
+        "Wirkungsdatenpunkte",
+        "Wirkungsbeschaffung",
+        "Public Procurement by Impact",
+        "Vergabewirkung",
+        "Fördermittelwirkung",
+        "Foerdermittelwirkung",
+        "Mitnahmeeffekt",
+        "Subventionswirkung",
+        "Bürokratieblindleistung",
+        "Buerokratieblindleistung"
       ],
       "synonyms": [
         "Wirkungsdaten",
-        "Wirkungsdatenpunkte"
+        "Wirkungsdatenpunkte",
+        "Wirkungsbeschaffung",
+        "Public Procurement by Impact",
+        "Vergabewirkung",
+        "Fördermittelwirkung",
+        "Foerdermittelwirkung",
+        "Mitnahmeeffekt",
+        "Subventionswirkung",
+        "Bürokratieblindleistung",
+        "Buerokratieblindleistung"
       ],
       "shortDefinition": "Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar.",
       "definition": "Wirkungsdaten können Primärdaten, geprüfte Sekundärdaten, Produktdaten, Lieferkettendaten, Benchmarks, Prüfstatus und Unsicherheiten umfassen. Sie sind Grundlage für Scorecards, FinalScore, NWI und spätere Rückkopplung.",
@@ -9988,7 +12130,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungsdaten",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27"
     },
     {
       "id": "wirkungsdatenraum",
@@ -10287,7 +12430,10 @@
         "wirkungsorientierter Haushalt",
         "SDG-Budgetierung",
         "SDG-Haushalt",
-        "Wirkungsbudget"
+        "Wirkungsbudget",
+        "Transformationskosten",
+        "Transformationsdividende",
+        "Resilienzdividende"
       ],
       "synonyms": [
         "Wirkungshaushalt",
@@ -10296,7 +12442,10 @@
         "wirkungsorientierter Haushalt",
         "SDG-Budgetierung",
         "SDG-Haushalt",
-        "Wirkungsbudget"
+        "Wirkungsbudget",
+        "Transformationskosten",
+        "Transformationsdividende",
+        "Resilienzdividende"
       ],
       "shortDefinition": "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar.",
       "definition": "Der Wirkungshaushalt fragt, welche Zustände öffentliche Mittel verändern, welche Risiken entstehen und welche positive Netto-Wirkung erzeugt wird.",
@@ -10313,7 +12462,10 @@
         "wirkungslenkung",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "haushaltsneutralitaet"
+        "haushaltsneutralitaet",
+        "praevention",
+        "vermeidene-schaeden-folgekosten",
+        "kosten-des-nicht-handelns"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungshaushalt/",
@@ -10337,6 +12489,7 @@
       "glossaryOrderKey": "wirkungshaushalt",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -10936,10 +13089,28 @@
       "canonicalLabel": "Wirkungsrat",
       "slug": "wirkungsrat",
       "aliases": [
-        "Wirkungsrat"
+        "Wirkungsrat",
+        "Rechtsschutz",
+        "Verhältnismäßigkeit",
+        "Verhaeltnismaessigkeit",
+        "demokratische Legitimation",
+        "Bürgerrat",
+        "Buergerrat",
+        "Co-Governance",
+        "Rechenschaftspflicht",
+        "Accountability"
       ],
       "synonyms": [
-        "Wirkungsrat"
+        "Wirkungsrat",
+        "Rechtsschutz",
+        "Verhältnismäßigkeit",
+        "Verhaeltnismaessigkeit",
+        "demokratische Legitimation",
+        "Bürgerrat",
+        "Buergerrat",
+        "Co-Governance",
+        "Rechenschaftspflicht",
+        "Accountability"
       ],
       "shortDefinition": "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben.",
       "definition": "Er verbindet Expertise, öffentliche Nachvollziehbarkeit, Korrekturfähigkeit und Schutz vor Gaming the System.",
@@ -10982,6 +13153,7 @@
       "glossaryOrderKey": "wirkungsrat",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -11157,11 +13329,25 @@
       "slug": "wirkungsresilienz",
       "aliases": [
         "Wirkungsresilienz",
-        "Resilienz im WÖk-Sinn"
+        "Resilienz im WÖk-Sinn",
+        "Adaptive Kapazität",
+        "Adaptive Kapazitaet",
+        "Vulnerabilität",
+        "Vulnerabilitaet",
+        "Verwundbarkeit",
+        "Exposition",
+        "Resilienzdividende"
       ],
       "synonyms": [
         "Wirkungsresilienz",
-        "Resilienz im WÖk-Sinn"
+        "Resilienz im WÖk-Sinn",
+        "Adaptive Kapazität",
+        "Adaptive Kapazitaet",
+        "Vulnerabilität",
+        "Vulnerabilitaet",
+        "Verwundbarkeit",
+        "Exposition",
+        "Resilienzdividende"
       ],
       "shortDefinition": "Wirkungsresilienz ist die Fähigkeit eines Systems, unter Stress handlungsfähig zu bleiben und positive Netto-Wirkung zu sichern.",
       "definition": "Wirkungsresilienz ist normativ gebunden. Auch destruktive Systeme können robust sein; im WÖk-Sinn ist Resilienz nur positiv, wenn sie Mensch, Planet und Demokratie stärkt.",
@@ -11178,7 +13364,9 @@
         "resilienz",
         "nachhaltigkeit",
         "positive-netto-wirkung",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "kipppunkt-systemschwelle",
+        "zukunftsfaehigkeit"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungsresilienz/",
@@ -11204,6 +13392,7 @@
       "glossaryOrderKey": "wirkungsresilienz",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -11391,7 +13580,10 @@
         "Harmful Subsidies",
         "umweltschädliche Subventionen",
         "umweltschaedliche Subventionen",
-        "schädliche Subventionen"
+        "schädliche Subventionen",
+        "Kaufkraftschutz",
+        "Risikointernalisierung",
+        "Folgekostenrisiko"
       ],
       "synonyms": [
         "Wirkungssteuer",
@@ -11399,7 +13591,10 @@
         "Harmful Subsidies",
         "umweltschädliche Subventionen",
         "umweltschaedliche Subventionen",
-        "schädliche Subventionen"
+        "schädliche Subventionen",
+        "Kaufkraftschutz",
+        "Risikointernalisierung",
+        "Folgekostenrisiko"
       ],
       "shortDefinition": "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück.",
       "definition": "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen.",
@@ -11416,7 +13611,10 @@
         "wstg",
         "wustg",
         "wirkungsrueckkopplung",
-        "haushaltsneutralitaet"
+        "haushaltsneutralitaet",
+        "energiearmut",
+        "mobilitaetsarmut",
+        "klimagerechtigkeit"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungssteuer/",
@@ -11443,6 +13641,7 @@
       "glossaryOrderKey": "wirkungssteuer",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -11816,7 +14015,11 @@
         "Heizenergie",
         "Heizwärmebedarf",
         "Heizwaermebedarf",
-        "Heizlast"
+        "Heizlast",
+        "Wohnkostenbelastung",
+        "Verdrängung",
+        "Verdraengung",
+        "Gentrifizierung"
       ],
       "synonyms": [
         "Wohnwirkung",
@@ -11828,7 +14031,11 @@
         "Heizenergie",
         "Heizwärmebedarf",
         "Heizwaermebedarf",
-        "Heizlast"
+        "Heizlast",
+        "Wohnkostenbelastung",
+        "Verdrängung",
+        "Verdraengung",
+        "Gentrifizierung"
       ],
       "shortDefinition": "Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt.",
       "definition": "Wohnwirkung ist neutral und relational. Sie kann positiv, negativ oder neutral sein und wird im WÖk-Rahmen an Mensch, Planet und Demokratie rückgekoppelt.",
@@ -11844,7 +14051,9 @@
       "relatedTerms": [
         "wix-vi",
         "warmmietenneutralitaet",
-        "wirkungsvermietung"
+        "wirkungsvermietung",
+        "energiearmut",
+        "quartierswirkung"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wohnwirkung/",
@@ -11877,6 +14086,7 @@
       "glossaryOrderKey": "wohnwirkung",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27",
+      "updatedAt": "2026-05-27",
       "dataStandardsGroup": ""
     },
     {
@@ -12119,6 +14329,356 @@
       "glossaryOrderKey": "xbrl",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "youth-jugendbeteiligung",
+      "termId": "youth-jugendbeteiligung",
+      "label": "Youth / Jugendbeteiligung",
+      "canonicalLabel": "Youth / Jugendbeteiligung",
+      "slug": "youth-jugendbeteiligung",
+      "aliases": [
+        "Youth / Jugendbeteiligung",
+        "Youth",
+        "Jugendbeteiligung",
+        "junge Generationen",
+        "Young Generations",
+        "Jugendpartizipation"
+      ],
+      "synonyms": [
+        "Youth / Jugendbeteiligung",
+        "Youth",
+        "Jugendbeteiligung",
+        "junge Generationen",
+        "Young Generations",
+        "Jugendpartizipation"
+      ],
+      "shortDefinition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
+      "definition": "Junge Menschen tragen viele Zukunftswirkungen heutiger Politik, etwa bei Klima, Bildung, Wohnen, Digitalisierung, Schulden, Demokratie und Gesundheit.",
+      "longDefinition": "Junge Menschen tragen viele Zukunftswirkungen heutiger Politik, etwa bei Klima, Bildung, Wohnen, Digitalisierung, Schulden, Demokratie und Gesundheit.",
+      "woekRelation": "Die WÖk verbindet Jugendbeteiligung mit Generationengerechtigkeit, Wirkungskompetenz und Rechten künftiger Generationen.",
+      "statusNote": "Jugendbeteiligung ist nur wirksam, wenn sie reale Einflussmöglichkeiten, verständliche Verfahren und Rückmeldung bekommt.",
+      "usageNote": "Jugendbeteiligung ist nur wirksam, wenn sie reale Einflussmöglichkeiten, verständliche Verfahren und Rückmeldung bekommt.",
+      "categories": [
+        "anschlussbegriff",
+        "demokratie-governance"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungskompetenz"
+      ],
+      "officialSources": [
+        "OECD - Youth empowerment and intergenerational justice|https://www.oecd.org/en/topics/youth-empowerment-and-intergenerational-justice.html"
+      ],
+      "pageUrl": "/begriffe/youth-jugendbeteiligung/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Youth / Jugendbeteiligung",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "zeitwirkung",
+      "termId": "zeitwirkung",
+      "label": "Zeitwirkung",
+      "canonicalLabel": "Zeitwirkung",
+      "slug": "zeitwirkung",
+      "aliases": [
+        "Zeitwirkung",
+        "Wirkung über Zeit",
+        "Wirkung ueber Zeit",
+        "Langzeitwirkung",
+        "Zeithorizont",
+        "Wirkungszeit"
+      ],
+      "synonyms": [
+        "Zeitwirkung",
+        "Wirkung über Zeit",
+        "Wirkung ueber Zeit",
+        "Langzeitwirkung",
+        "Zeithorizont",
+        "Wirkungszeit"
+      ],
+      "shortDefinition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
+      "definition": "Manche Wirkungen treten sofort ein, andere erst nach Jahren oder Generationen. Zeitwirkung ist wichtig bei Klima, Bildung, Gesundheit, Pflege, Infrastruktur und Vertrauen.",
+      "longDefinition": "Manche Wirkungen treten sofort ein, andere erst nach Jahren oder Generationen. Zeitwirkung ist wichtig bei Klima, Bildung, Gesundheit, Pflege, Infrastruktur und Vertrauen.",
+      "woekRelation": "Die WÖk nutzt Zeitwirkung, um kurzfristige Gewinne und langfristige Folgekosten vergleichbarer zu machen.",
+      "statusNote": "Zeitwirkung braucht Szenarien und Unsicherheitsangaben, weil langfristige Wirkungen selten exakt vorhersehbar sind.",
+      "usageNote": "Zeitwirkung braucht Szenarien und Unsicherheitsangaben, weil langfristige Wirkungen selten exakt vorhersehbar sind.",
+      "categories": [
+        "grundbegriff",
+        "systemrisiko"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungspfad",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "OECD - Long-term governance|https://www.oecd.org/governance/long-term-governance/"
+      ],
+      "pageUrl": "/begriffe/zeitwirkung/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Zeitwirkung",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "zielkonflikt",
+      "termId": "zielkonflikt",
+      "label": "Zielkonflikt",
+      "canonicalLabel": "Zielkonflikt",
+      "slug": "zielkonflikt",
+      "aliases": [
+        "Zielkonflikt",
+        "Zielkonflikte",
+        "Trade-off",
+        "Tradeoff",
+        "Abwägungskonflikt",
+        "Abwaegungskonflikt"
+      ],
+      "synonyms": [
+        "Zielkonflikt",
+        "Zielkonflikte",
+        "Trade-off",
+        "Tradeoff",
+        "Abwägungskonflikt",
+        "Abwaegungskonflikt"
+      ],
+      "shortDefinition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
+      "definition": "Zielkonflikte treten etwa zwischen Klimaschutz und Bezahlbarkeit, Datenschutz und Lernunterstützung, Naturschutz und Infrastruktur oder Effizienz und Resilienz auf.",
+      "longDefinition": "Zielkonflikte treten etwa zwischen Klimaschutz und Bezahlbarkeit, Datenschutz und Lernunterstützung, Naturschutz und Infrastruktur oder Effizienz und Resilienz auf.",
+      "woekRelation": "Die WÖk nutzt Zielkonflikte, um Wirkung nicht eindimensional zu bewerten. Reverse Merit Order, Schutzgrenzen und demokratische Abwägung helfen.",
+      "statusNote": "Zielkonflikte sind kein Scheitern. Problematisch wird es, wenn sie unsichtbar bleiben oder ein Ziel alle anderen verdrängt.",
+      "usageNote": "Zielkonflikte sind kein Scheitern. Problematisch wird es, wenn sie unsichtbar bleiben oder ein Ziel alle anderen verdrängt.",
+      "categories": [
+        "grundbegriff",
+        "demokratie-governance"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsrat"
+      ],
+      "officialSources": [
+        "UNDP - SDG integration and trade-offs|https://sdgintegration.undp.org/"
+      ],
+      "pageUrl": "/begriffe/zielkonflikt/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Zielkonflikt",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "zirkularitaet",
+      "termId": "zirkularitaet",
+      "label": "Zirkularität",
+      "canonicalLabel": "Zirkularität",
+      "slug": "zirkularitaet",
+      "aliases": [
+        "Zirkularität",
+        "Zirkularitaet",
+        "Circularity",
+        "Kreislauffähigkeit",
+        "Kreislauffaehigkeit",
+        "Zirkularitätsgrad",
+        "Zirkularitaetsgrad",
+        "Sekundärrohstoffquote",
+        "Sekundaerrohstoffquote",
+        "Sharing Economy",
+        "Product-as-a-Service"
+      ],
+      "synonyms": [
+        "Zirkularität",
+        "Zirkularitaet",
+        "Circularity",
+        "Kreislauffähigkeit",
+        "Kreislauffaehigkeit",
+        "Zirkularitätsgrad",
+        "Zirkularitaetsgrad",
+        "Sekundärrohstoffquote",
+        "Sekundaerrohstoffquote",
+        "Sharing Economy",
+        "Product-as-a-Service"
+      ],
+      "shortDefinition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
+      "definition": "Zirkularität umfasst Wiederverwendung, Reparatur, Recycling, langlebiges Design, Sekundärrohstoffe, Produktpässe und neue Nutzungsmodelle.",
+      "longDefinition": "Zirkularität umfasst Wiederverwendung, Reparatur, Recycling, langlebiges Design, Sekundärrohstoffe, Produktpässe und neue Nutzungsmodelle.",
+      "woekRelation": "Die WÖk prüft Zirkularität als Wirkung, nicht als Label: Kreislaufmodelle müssen Ressourcen, Arbeit, Energie und Rebound beachten.",
+      "statusNote": "Nicht jeder Kreislauf ist automatisch positiv. Hoher Energiebedarf oder schlechte Materialqualität können Wirkung schwächen.",
+      "usageNote": "Nicht jeder Kreislauf ist automatisch positiv. Hoher Energiebedarf oder schlechte Materialqualität können Wirkung schwächen.",
+      "categories": [
+        "anschlussbegriff",
+        "wirtschaft-produkte-konsum"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "material-footprint",
+        "recyclingquote"
+      ],
+      "officialSources": [
+        "European Commission - Circular economy action plan|https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en"
+      ],
+      "pageUrl": "/begriffe/zirkularitaet/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Zirkularität",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "zugangsgerechtigkeit",
+      "termId": "zugangsgerechtigkeit",
+      "label": "Zugangsgerechtigkeit",
+      "canonicalLabel": "Zugangsgerechtigkeit",
+      "slug": "zugangsgerechtigkeit",
+      "aliases": [
+        "Zugangsgerechtigkeit",
+        "Access Justice",
+        "gerechter Zugang",
+        "Zugang zu Leistungen",
+        "accessibility justice"
+      ],
+      "synonyms": [
+        "Zugangsgerechtigkeit",
+        "Access Justice",
+        "gerechter Zugang",
+        "Zugang zu Leistungen",
+        "accessibility justice"
+      ],
+      "shortDefinition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
+      "definition": "Ein Angebot wirkt nur, wenn Menschen es nutzen können: finanziell, räumlich, digital, sprachlich, rechtlich, körperlich und sozial.",
+      "longDefinition": "Ein Angebot wirkt nur, wenn Menschen es nutzen können: finanziell, räumlich, digital, sprachlich, rechtlich, körperlich und sozial.",
+      "woekRelation": "Die WÖk nutzt Zugangsgerechtigkeit, um formale Angebote von realen Handlungsspielräumen zu unterscheiden.",
+      "statusNote": "Zugangsgerechtigkeit ist nicht nur Gleichbehandlung. Unterschiedliche Ausgangslagen können unterschiedliche Unterstützung erfordern.",
+      "usageNote": "Zugangsgerechtigkeit ist nicht nur Gleichbehandlung. Unterschiedliche Ausgangslagen können unterschiedliche Unterstützung erfordern.",
+      "categories": [
+        "anschlussbegriff",
+        "gerechtigkeit-alltag"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "handlungsspielraum"
+      ],
+      "officialSources": [
+        "UN DESA - Disability and accessibility|https://social.desa.un.org/issues/disability"
+      ],
+      "pageUrl": "/begriffe/zugangsgerechtigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Zugangsgerechtigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
+      "id": "zukunftsfaehigkeit",
+      "termId": "zukunftsfaehigkeit",
+      "label": "Zukunftsfähigkeit",
+      "canonicalLabel": "Zukunftsfähigkeit",
+      "slug": "zukunftsfaehigkeit",
+      "aliases": [
+        "Zukunftsfähigkeit",
+        "Zukunftsfaehigkeit",
+        "future fitness",
+        "Zukunftsfestigkeit",
+        "Zukunftsfähig"
+      ],
+      "synonyms": [
+        "Zukunftsfähigkeit",
+        "Zukunftsfaehigkeit",
+        "future fitness",
+        "Zukunftsfestigkeit",
+        "Zukunftsfähig"
+      ],
+      "shortDefinition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
+      "definition": "Zukunftsfähigkeit verbindet Resilienz, Regeneration, Innovationsfähigkeit, Gerechtigkeit, ökologische Grenzen, demokratische Stabilität und Lernfähigkeit.",
+      "longDefinition": "Zukunftsfähigkeit verbindet Resilienz, Regeneration, Innovationsfähigkeit, Gerechtigkeit, ökologische Grenzen, demokratische Stabilität und Lernfähigkeit.",
+      "woekRelation": "Die WÖk bewertet Wirtschaft und Politik danach, ob sie positive Netto-Wirkung und Zukunftsfähigkeit erzeugen.",
+      "statusNote": "Zukunftsfähigkeit ist kein einzelner Score. Sie braucht mehrere Wirkungsdimensionen und Unsicherheitsangaben.",
+      "usageNote": "Zukunftsfähigkeit ist kein einzelner Score. Sie braucht mehrere Wirkungsdimensionen und Unsicherheitsangaben.",
+      "categories": [
+        "grundbegriff",
+        "systemrisiko"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsresilienz"
+      ],
+      "officialSources": [
+        "United Nations - Sustainable Development Goals|https://sdgs.un.org/goals"
+      ],
+      "pageUrl": "/begriffe/zukunftsfaehigkeit/",
+      "priority": 2,
+      "updatedAt": "2026-05-27",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "source": "WÖk-Brückenbegriff",
+      "hoverDefinition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
+      "reviewStatus": "approved",
+      "dataStandardsGroup": "",
+      "category": "Grundbegriff",
+      "sourceSection": "WÖk-Brückenbegriff",
+      "glossaryOrderKey": "Zukunftsfähigkeit",
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     }
   ]
 }

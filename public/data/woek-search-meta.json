@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T13:23:54.542Z",
+  "generatedAt": "2026-05-27T13:57:59.259Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -118,6 +118,22 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/beschwerdemechanismus-access-to-remedy/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-beschwerdemechanismus-access-to-remedy",
+      "documentId": "beschwerdemechanismus-access-to-remedy",
+      "relatedTerms": [
+        "human-rights-due-diligence",
+        "un-guiding-principles",
+        "lksg",
+        "csddd",
+        "wirkungsrat"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/biodiversitaetsrisiko/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -135,6 +151,20 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/biodiversity-net-gain-no-net-loss/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-biodiversity-net-gain-no-net-loss",
+      "documentId": "biodiversity-net-gain-no-net-loss",
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "biodiversitaetsrisiko"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/carbon-credits/": {
       "documentType": "begriff",
@@ -202,6 +232,19 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/commons-gemeingueter/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-commons-gemeingueter",
+      "documentId": "commons-gemeingueter",
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "resonanzraum"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/conflict-minerals-regulation/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -254,6 +297,18 @@
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 164
+    },
+    "/begriffe/daseinsvorsorge/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-daseinsvorsorge",
+      "documentId": "daseinsvorsorge",
+      "relatedTerms": [
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/datenluecke/": {
       "documentType": "begriff",
@@ -369,6 +424,21 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/energiearmut/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-energiearmut",
+      "documentId": "energiearmut",
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wohnwirkung",
+        "warmmietenneutralitaet"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/epd/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -399,6 +469,20 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/ernaehrungssouveraenitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ernaehrungssouveraenitaet",
+      "documentId": "ernaehrungssouveraenitaet",
+      "relatedTerms": [
+        "produktdaten",
+        "lieferkettendaten",
+        "biodiversitaetsrisiko"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/esap/": {
       "documentType": "begriff",
@@ -696,6 +780,45 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/generationengerechtigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-generationengerechtigkeit",
+      "documentId": "generationengerechtigkeit",
+      "relatedTerms": [
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/geplante-obsoleszenz/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-geplante-obsoleszenz",
+      "documentId": "geplante-obsoleszenz",
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "material-footprint",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/gesundheitsgerechtigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-gesundheitsgerechtigkeit",
+      "documentId": "gesundheitsgerechtigkeit",
+      "relatedTerms": [
+        "health-impact-assessment",
+        "hitzestress"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/ghg-protocol/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -982,7 +1105,9 @@
         "wirkungsbewertung",
         "sdgs",
         "hitzestress",
-        "health-co-benefits"
+        "health-co-benefits",
+        "gesundheitsgerechtigkeit",
+        "one-health"
       ],
       "relatedDocuments": [],
       "sourceFile": "Wirkungsökonomie Glossar",
@@ -1098,7 +1223,10 @@
         "hitzeschutz-hitzeaktionsplan",
         "health-impact-assessment",
         "physical-climate-risk",
-        "wirkungsresilienz"
+        "wirkungsresilienz",
+        "gesundheitsgerechtigkeit",
+        "klimagerechtigkeit",
+        "umweltgerechtigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Wirkungsökonomie Glossar",
@@ -1148,7 +1276,8 @@
         "oecd-leitsaetze",
         "ilo-kernarbeitsnormen",
         "csddd",
-        "lksg"
+        "lksg",
+        "beschwerdemechanismus-access-to-remedy"
       ],
       "relatedDocuments": [],
       "sourceFile": "Wirkungsökonomie Glossar",
@@ -1181,7 +1310,9 @@
         "biodiversitaetsrisiko",
         "wasserstress",
         "positive-netto-wirkung",
-        "lca"
+        "lca",
+        "regeneration",
+        "renaturierung"
       ],
       "relatedDocuments": [],
       "sourceFile": "Wirkungsökonomie Glossar",
@@ -1214,7 +1345,9 @@
         "wasserstress",
         "humusaufbau",
         "hitzestress",
-        "biodiversitaetsrisiko"
+        "biodiversitaetsrisiko",
+        "naturbasierte-loesungen",
+        "renaturierung"
       ],
       "relatedDocuments": [],
       "sourceFile": "Wirkungsökonomie Glossar",
@@ -1317,6 +1450,16 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/intersektionalitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-intersektionalitaet",
+      "documentId": "intersektionalitaet",
+      "relatedTerms": [],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/ipbes/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -1408,6 +1551,32 @@
       "sourceFile": "EU-Kommission Just Transition Mechanism",
       "searchBoost": 164
     },
+    "/begriffe/kipppunkt-systemschwelle/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-kipppunkt-systemschwelle",
+      "documentId": "kipppunkt-systemschwelle",
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungspfad",
+        "wirkungsresilienz"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/klimagerechtigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-klimagerechtigkeit",
+      "documentId": "klimagerechtigkeit",
+      "relatedTerms": [
+        "just-transition-mechanism"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/klimaneutralitaet/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -1438,6 +1607,19 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/kosten-des-nicht-handelns/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-kosten-des-nicht-handelns",
+      "documentId": "kosten-des-nicht-handelns",
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/lca/": {
       "documentType": "begriff",
@@ -1519,6 +1701,20 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/lock-in-pfadabhaengigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-lock-in-pfadabhaengigkeit",
+      "documentId": "lock-in-pfadabhaengigkeit",
+      "relatedTerms": [
+        "transition-risk",
+        "stranded-assets",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/material-footprint/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -1569,6 +1765,19 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/mobilitaetsarmut/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-mobilitaetsarmut",
+      "documentId": "mobilitaetsarmut",
+      "relatedTerms": [
+        "handlungsfaehigkeit",
+        "handlungsspielraum"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/nace/": {
       "documentType": "begriff",
@@ -1622,6 +1831,33 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/naturbasierte-loesungen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-naturbasierte-loesungen",
+      "documentId": "naturbasierte-loesungen",
+      "relatedTerms": [
+        "hitzeschutz-hitzeaktionsplan",
+        "hydrologischer-kreislauf"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/nature-positive/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nature-positive",
+      "documentId": "nature-positive",
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nichtkompensationsprinzip",
+        "greenwashing"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/nature-related-risks/": {
       "documentType": "begriff",
@@ -1741,7 +1977,10 @@
       "relatedTerms": [
         "reverse-merit-order",
         "wirkungsgrenze",
-        "netto-wirkung"
+        "netto-wirkung",
+        "planetare-grenzen",
+        "nature-positive",
+        "zielkonflikt"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -1794,6 +2033,32 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/oekosystemleistungen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-oekosystemleistungen",
+      "documentId": "oekosystemleistungen",
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/one-health/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-one-health",
+      "documentId": "one-health",
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "health-impact-assessment"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/pai/": {
       "documentType": "begriff",
@@ -1868,11 +2133,41 @@
         "tcfd",
         "transition-risk",
         "ipcc",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "hitzestress",
+        "hitzeschutz-hitzeaktionsplan"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/planetare-grenzen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-planetare-grenzen",
+      "documentId": "planetare-grenzen",
+      "relatedTerms": [
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/planetary-health/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-planetary-health",
+      "documentId": "planetary-health",
+      "relatedTerms": [
+        "hitzestress"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/positive-netto-wirkung/": {
       "documentType": "begriff",
@@ -1884,7 +2179,8 @@
         "wirkung",
         "netto-wirkung",
         "mensch-planet-demokratie",
-        "sdg-plus"
+        "sdg-plus",
+        "zukunftsfaehigkeit"
       ],
       "relatedDocuments": [
         "sdg-sdgplus-referenzrahmen"
@@ -1907,6 +2203,20 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/praevention/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-praevention",
+      "documentId": "praevention",
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "t-sroi",
+        "health-impact-assessment"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/produktdaten/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -1919,10 +2229,55 @@
         "pef-product-environmental-footprint",
         "pcf-product-carbon-footprint",
         "herkunftstransparenz",
-        "hotspot-analyse"
+        "hotspot-analyse",
+        "rohstoffkritikalitaet"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/qualitaetssicherung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-qualitaetssicherung",
+      "documentId": "qualitaetssicherung",
+      "relatedTerms": [
+        "datenqualitaet",
+        "assurance",
+        "wirkungsbewertung",
+        "scorecard",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 164
+    },
+    "/begriffe/quartierswirkung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-quartierswirkung",
+      "documentId": "quartierswirkung",
+      "relatedTerms": [
+        "wohnwirkung",
+        "hitzeschutz-hitzeaktionsplan",
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/quellenklarheit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-quellenklarheit",
+      "documentId": "quellenklarheit",
+      "relatedTerms": [
+        "faktencheck",
+        "folgencheck",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 164
     },
     "/begriffe/reasonable-assurance/": {
@@ -1940,6 +2295,19 @@
       "sourceFile": "CSRD und Prüfungsstandards",
       "searchBoost": 164
     },
+    "/begriffe/rechte-kuenftiger-generationen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-rechte-kuenftiger-generationen",
+      "documentId": "rechte-kuenftiger-generationen",
+      "relatedTerms": [
+        "wirkungsgrenze",
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/recyclingquote/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -1954,6 +2322,46 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/regeneration/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-regeneration",
+      "documentId": "regeneration",
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsresilienz"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/renaturierung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-renaturierung",
+      "documentId": "renaturierung",
+      "relatedTerms": [
+        "hydrologischer-kreislauf",
+        "habitatfragmentierung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/reparierbarkeit-recht-auf-reparatur/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-reparierbarkeit-recht-auf-reparatur",
+      "documentId": "reparierbarkeit-recht-auf-reparatur",
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/residual-emissions/": {
       "documentType": "begriff",
@@ -1980,7 +2388,9 @@
       "relatedTerms": [
         "wirkungspotenzial",
         "wirkungspfad",
-        "wirkungsnetz"
+        "wirkungsnetz",
+        "zielkonflikt",
+        "quellenklarheit"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -2011,7 +2421,9 @@
       "relatedTerms": [
         "nichtkompensationsprinzip",
         "netto-wirkung",
-        "wirkungsgrenze"
+        "wirkungsgrenze",
+        "planetare-grenzen",
+        "zielkonflikt"
       ],
       "relatedDocuments": [
         "technische-leitlinien-wustg",
@@ -2035,6 +2447,21 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/rohstoffkritikalitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-rohstoffkritikalitaet",
+      "documentId": "rohstoffkritikalitaet",
+      "relatedTerms": [
+        "lieferkettendaten",
+        "digitaler-produktpass",
+        "human-rights-due-diligence",
+        "material-footprint"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/sbti/": {
       "documentType": "begriff",
@@ -2305,6 +2732,18 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 164
     },
+    "/begriffe/suffizienz/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-suffizienz",
+      "documentId": "suffizienz",
+      "relatedTerms": [
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/sustainable-finance/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -2538,6 +2977,20 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/umweltgerechtigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-umweltgerechtigkeit",
+      "documentId": "umweltgerechtigkeit",
+      "relatedTerms": [
+        "hitzestress",
+        "wasserstress",
+        "wohnwirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/un-guiding-principles/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -2553,6 +3006,20 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
+    },
+    "/begriffe/vermeidene-schaeden-folgekosten/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-vermeidene-schaeden-folgekosten",
+      "documentId": "vermeidene-schaeden-folgekosten",
+      "relatedTerms": [
+        "t-sroi",
+        "wirkungshaushalt",
+        "health-impact-assessment"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/begriffe/vsme/": {
       "documentType": "begriff",
@@ -2598,7 +3065,9 @@
         "nature-related-risks",
         "tnfd",
         "produktdaten",
-        "hydrologischer-kreislauf"
+        "hydrologischer-kreislauf",
+        "planetare-grenzen",
+        "umweltgerechtigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
@@ -2836,7 +3305,10 @@
         "wirkungslenkung",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "haushaltsneutralitaet"
+        "haushaltsneutralitaet",
+        "praevention",
+        "vermeidene-schaeden-folgekosten",
+        "kosten-des-nicht-handelns"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -3080,7 +3552,9 @@
         "resilienz",
         "nachhaltigkeit",
         "positive-netto-wirkung",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "kipppunkt-systemschwelle",
+        "zukunftsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -3144,7 +3618,10 @@
         "wstg",
         "wustg",
         "wirkungsrueckkopplung",
-        "haushaltsneutralitaet"
+        "haushaltsneutralitaet",
+        "energiearmut",
+        "mobilitaetsarmut",
+        "klimagerechtigkeit"
       ],
       "relatedDocuments": [
         "wstg-oktober-2025",
@@ -3263,7 +3740,9 @@
       "relatedTerms": [
         "wix-vi",
         "warmmietenneutralitaet",
-        "wirkungsvermietung"
+        "wirkungsvermietung",
+        "energiearmut",
+        "quartierswirkung"
       ],
       "relatedDocuments": [
         "woek_wohnen_stadt_gesamtdossier_v0_1"
@@ -3340,6 +3819,86 @@
       "relatedDocuments": [],
       "sourceFile": "XBRL International",
       "searchBoost": 164
+    },
+    "/begriffe/youth-jugendbeteiligung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-youth-jugendbeteiligung",
+      "documentId": "youth-jugendbeteiligung",
+      "relatedTerms": [
+        "wirkungskompetenz"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/zeitwirkung/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-zeitwirkung",
+      "documentId": "zeitwirkung",
+      "relatedTerms": [
+        "wirkungspfad",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/zielkonflikt/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-zielkonflikt",
+      "documentId": "zielkonflikt",
+      "relatedTerms": [
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsrat"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/zirkularitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-zirkularitaet",
+      "documentId": "zirkularitaet",
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "material-footprint",
+        "recyclingquote"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/zugangsgerechtigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-zugangsgerechtigkeit",
+      "documentId": "zugangsgerechtigkeit",
+      "relatedTerms": [
+        "handlungsspielraum"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/zukunftsfaehigkeit/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-zukunftsfaehigkeit",
+      "documentId": "zukunftsfaehigkeit",
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsresilienz"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
     },
     "/bibliothek/handbuch-wirkungskompetenz/": {
       "documentType": "bibliothek",
@@ -6136,7 +6695,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "3fcf424769e46c59",
+      "contentHash": "13158bee2a4310d3",
       "sectionId": "woek-page-2afe7308732a6cbb"
     },
     "/begriffe/#glossary-filter-title": {
@@ -6144,7 +6703,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "3fcf424769e46c59",
+      "contentHash": "13158bee2a4310d3",
       "sectionId": "glossary-filter-title"
     },
     "/begriffe/#related-questions-title-begriffe": {
@@ -6152,7 +6711,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "3fcf424769e46c59",
+      "contentHash": "13158bee2a4310d3",
       "sectionId": "related-questions-title-begriffe"
     },
     "/begriffe/interdependenz/": {
@@ -6705,14 +7264,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/platform-on-sustainable-finance/index.html",
       "contentHash": "9dcd5984f1e84d0c",
-      "sectionId": ""
-    },
-    "/begriffe/praevention/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/praevention/index.html",
-      "contentHash": "49932a51f36b64a4",
       "sectionId": ""
     },
     "/begriffe/praevention-als-wirkleistung/": {
@@ -7912,7 +8463,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungszeit/index.html",
-      "contentHash": "0645ea66a9388c5d",
+      "contentHash": "310cf5b3058ae013",
       "sectionId": ""
     },
     "/begriffe/wirkungszeit-2/": {
@@ -8009,14 +8560,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/zertifizierung/index.html",
       "contentHash": "d877a8483a57b4cd",
-      "sectionId": ""
-    },
-    "/begriffe/zielkonflikt/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/zielkonflikt/index.html",
-      "contentHash": "f8e0c1d8aa07c64a",
       "sectionId": ""
     },
     "/begriffe/zielzustand/": {

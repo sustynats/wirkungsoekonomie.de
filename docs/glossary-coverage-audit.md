@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-27T13:24:46.419Z
+Stand: 2026-05-27T13:58:29.093Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 201 |
-| Begriffe im Bereich Daten/Standards/Regularien | 135 |
-| Alias-Einträge | 647 |
+| Begriffe im klassischen Glossar | 240 |
+| Begriffe im Bereich Daten/Standards/Regularien | 137 |
+| Alias-Einträge | 1013 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -32,14 +32,18 @@ Stand: 2026-05-27T13:24:46.419Z
 | Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Benchmark | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Berichtsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Beschwerdemechanismus / Access to Remedy | Grundbegriff | ja | - | ja | ja | ok |
 | Biodiversitätsrisiko | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Biodiversity Net Gain / No Net Loss | Grundbegriff | ja | - | ja | ja | ok |
 | Carbon Credits | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | CBAM / Carbon Border Adjustment Mechanism | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Clean Industrial Deal | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Climate Neutral Claim | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Commons / Gemeingüter | Grundbegriff | ja | - | ja | ja | ok |
 | Conflict Minerals Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | CSDDD | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | CSRD | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Daseinsvorsorge | Grundbegriff | ja | - | ja | ja | ok |
 | Datenlücke | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Datenqualität | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Digitaler Produktpass | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
@@ -47,8 +51,10 @@ Stand: 2026-05-27T13:24:46.419Z
 | Doppelte Wesentlichkeit | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | EFRAG | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Empowering Consumers for the Green Transition | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Energiearmut | Grundbegriff | ja | - | ja | ja | ok |
 | EPD / Environmental Product Declaration | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Ermöglichende Tätigkeit | Sustainable Finance | ja | ja | ja | ja | ok |
+| Ernährungssouveränität | Grundbegriff | ja | - | ja | ja | ok |
 | ESAP / European Single Access Point | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | ESEF | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | ESG | Sustainable Finance | ja | ja | ja | ja | ok |
@@ -66,6 +72,9 @@ Stand: 2026-05-27T13:24:46.419Z
 | Fit for 55 | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Folgencheck | Grundbegriff | ja | - | ja | ja | ok |
 | Forced Labour Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Generationengerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
+| Geplante Obsoleszenz | Grundbegriff | ja | - | ja | ja | ok |
+| Gesundheitsgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | GHG Protocol | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Green Claims Directive | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Green Deal Industrial Plan | EU-Politikrahmen | ja | ja | ja | ja | ok |
@@ -104,25 +113,33 @@ Stand: 2026-05-27T13:24:46.419Z
 | Impact-Washing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Insetting | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Inside-out / Outside-in | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Intersektionalität | Grundbegriff | ja | - | ja | ja | ok |
 | IPBES | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | IPCC | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | IRO / Impacts, Risks and Opportunities | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | ISO 14040 / ISO 14044 | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | ISSB / IFRS S1 und IFRS S2 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Just Transition Mechanism | EU-Politikrahmen | ja | ja | ja | ja | ok |
+| Kipppunkt / Systemschwelle | Grundbegriff | ja | - | ja | ja | ok |
+| Klimagerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Klimaneutralität | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Konservative Annahme | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Kosten des Nicht-Handelns | Grundbegriff | ja | - | ja | ja | ok |
 | LCA / Life Cycle Assessment | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Liability Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Lieferkettendaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Limited Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | LkSG / Lieferkettensorgfaltspflichtengesetz | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Lock-in / Pfadabhängigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Material Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Mensch, Planet und Demokratie | Demokratiebegriff | ja | - | ja | ja | ok |
 | Mindestschutz / Minimum Safeguards | Sustainable Finance | ja | ja | ja | ja | ok |
+| Mobilitätsarmut | Grundbegriff | ja | - | ja | ja | ok |
 | NACE | Sustainable Finance | ja | ja | ja | ja | ok |
 | Nachhaltigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Nachhaltigkeitslabel | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Naturbasierte Lösungen | Grundbegriff | ja | - | ja | ja | ok |
+| Nature Positive | Grundbegriff | ja | - | ja | ja | ok |
 | Nature-related Risks | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | negative Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Net Zero | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
@@ -134,21 +151,34 @@ Stand: 2026-05-27T13:24:46.419Z
 | OECD-Leitsätze | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | OEF / Organisation Environmental Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Offsetting / Kompensation | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Ökosystemleistungen / Ökosystemfunktionen | Grundbegriff | ja | - | ja | ja | ok |
+| One Health | Grundbegriff | ja | - | ja | ja | ok |
 | PAI / Principal Adverse Impacts | Sustainable Finance | ja | ja | ja | ja | ok |
 | PCF / Product Carbon Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | PCR / Product Category Rules | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | PEF / Product Environmental Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Physical Climate Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Planetare Grenzen | Grundbegriff | ja | - | ja | ja | ok |
+| Planetary Health | Grundbegriff | ja | - | ja | ja | ok |
 | positive Netto-Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | positive Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
+| Prävention | Grundbegriff | ja | - | ja | ja | ok |
 | Produktdaten | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Qualitätssicherung | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Quartierswirkung | Grundbegriff | ja | - | ja | ja | ok |
+| Quellenklarheit | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Reasonable Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Rechte künftiger Generationen | Grundbegriff | ja | - | ja | ja | ok |
 | Recyclingquote | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Regeneration / regenerative Wirkung | Grundbegriff | ja | - | ja | ja | ok |
+| Renaturierung | Grundbegriff | ja | - | ja | ja | ok |
+| Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Residual Emissions | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Resonanzraum | Architekturbegriff | ja | - | ja | ja | ok |
 | Responsible Marketing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Reverse Merit Order | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Rezyklatanteil | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Rohstoffkritikalität | Grundbegriff | ja | - | ja | ja | ok |
 | SBTi | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Scope 1 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Scope 2 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
@@ -164,6 +194,7 @@ Stand: 2026-05-27T13:24:46.419Z
 | Spekulationslogik | Grundbegriff | ja | - | ja | ja | ok |
 | Steuerungsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Stranded Assets | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Suffizienz | Grundbegriff | ja | - | ja | ja | ok |
 | Sustainable Finance | Sustainable Finance | ja | ja | ja | ja | ok |
 | T-SROI | Messbegriff | ja | - | ja | ja | ok |
 | Taxonomie-KPIs | Sustainable Finance | ja | ja | ja | ja | ok |
@@ -178,7 +209,9 @@ Stand: 2026-05-27T13:24:46.419Z
 | Transition Plan | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Transition Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Übergangstätigkeit | Sustainable Finance | ja | ja | ja | ja | ok |
+| Umweltgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | UN Guiding Principles on Business and Human Rights | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Vermeidene Schäden / vermiedene Folgekosten | Grundbegriff | ja | - | ja | ja | ok |
 | VSME | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Warmmietenneutralität | Grundbegriff | ja | - | ja | ja | ok |
 | Wasserstress | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
@@ -227,3 +260,9 @@ Stand: 2026-05-27T13:24:46.419Z
 | WStG | Messbegriff | ja | - | ja | ja | ok |
 | WUStG | Messbegriff | ja | - | ja | ja | ok |
 | XBRL | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Youth / Jugendbeteiligung | Grundbegriff | ja | - | ja | ja | ok |
+| Zeitwirkung | Grundbegriff | ja | - | ja | ja | ok |
+| Zielkonflikt | Grundbegriff | ja | - | ja | ja | ok |
+| Zirkularität | Grundbegriff | ja | - | ja | ja | ok |
+| Zugangsgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
+| Zukunftsfähigkeit | Grundbegriff | ja | - | ja | ja | ok |
