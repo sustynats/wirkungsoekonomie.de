@@ -19,10 +19,8 @@ function categoryFor(term) {
   if (section.includes("governance") || ["wirkungsrat", "wirkungswahrheit", "social-credit"].includes(id)) return "Schutzbegriff";
   if (section.includes("daten") || ["woek-id", "digitaler-produktpass", "wirkungsdaten", "wirkungsdatenraum", "nace", "esrs", "gri", "csrd"].includes(id)) return "Datenbegriff";
   if (section.includes("instrument") || ["nwi", "t-sroi", "finalscore", "scorecard", "benchmark"].includes(id)) return "Messbegriff";
-  if (["faktencheck", "folgencheck"].includes(id)) return "Prüfbegriff";
   if (["wirkungssteuer", "wirkungssteuergesetz", "wirkungsumsatzsteuer", "wirkungslenkung", "wirkungshaushalt"].includes(id)) return "Steuerungsbegriff";
-  if (["idgs", "wirkungskompetenz"].includes(id)) return "Kompetenzbegriff";
-  if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum"].includes(id)) return "Architekturbegriff";
+  if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum", "social-taxonomy"].includes(id)) return "Architekturbegriff";
   if (["sdg-plus", "mensch-planet-demokratie", "demokratie"].includes(id)) return "Demokratiebegriff";
   if (["positive-netto-wirkung", "netto-wirkung", "positive-wirkung", "negative-wirkung", "neutrale-wirkung", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungsgrenze"].includes(id)) return "Bewertungsbegriff";
   if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte"].includes(id)) return "Praxisbegriff";
