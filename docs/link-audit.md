@@ -1,13 +1,13 @@
 # Link- und CTA-Audit
 
-Stand: 2026-05-26T17:20:51.793Z
+Stand: 2026-05-27T08:08:28.611Z
 
 ## Zusammenfassung
 
 - Geprüfte HTML-Dateien: 373
-- Geprüfte CTA-/Button-Links: 10898
+- Geprüfte CTA-/Button-Links: 11215
 - Fehler: 0
-- Warnungen: 68
+- Warnungen: 44
 - Self-Links: 0
 - Treffer mit "Portal öffnen": 0
 
@@ -15,30 +15,6 @@ Stand: 2026-05-26T17:20:51.793Z
 
 | Schwere | Datei | Linktext | href | Befund |
 | --- | --- | --- | --- | --- |
-| warning | `wirkungsfelder/bildung/bewertung-noten-portfolios/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/bewertung-noten-portfolios/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/bildung-als-wirkungsinfrastruktur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/bildung-als-wirkungsinfrastruktur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/digitale-muendigkeit-ki/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/digitale-muendigkeit-ki/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/fach-zukunft/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/fach-zukunft/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/faecher-neu-denken/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/faecher-neu-denken/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/inklusion-vielfalt-begabung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/inklusion-vielfalt-begabung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/lehrkraefte-schulentwicklung-netzwerke/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/lehrkraefte-schulentwicklung-netzwerke/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/schule-als-wirkungsraum/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/schule-als-wirkungsraum/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/wirkungsfoerderung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/wirkungsfoerderung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/wirkungspaedagogik/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/wirkungspaedagogik/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/wirkungsschule/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
-| warning | `wirkungsfelder/bildung/wirkungsschule/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
 | warning | `wirkungsfelder/medien-oeffentlichkeit/creator-hosts/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
 | warning | `wirkungsfelder/medien-oeffentlichkeit/creator-hosts/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
 | warning | `wirkungsfelder/medien-oeffentlichkeit/desinformation-deepfakes/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |

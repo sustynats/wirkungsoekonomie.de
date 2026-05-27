@@ -1,5 +1,5 @@
 # Usability Audit
-Stand: 2026-05-27T07:31:25.452Z
+Stand: 2026-05-27T08:06:31.127Z
 ## Durchgeführte Korrekturen
 - alte öffentliche Labels wie „Detailkonzept“ wurden in nutzerverständlichere „Konzeptpapier“-Sprache überführt.
 - „Einzeldossier“ wurde zu „Praxisdossier“ geglättet.
