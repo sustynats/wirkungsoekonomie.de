@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import argparse
 import shutil
 import subprocess
 import sys
@@ -45,6 +46,8 @@ def display_path(path: Path) -> str:
 
 
 def convert_with_libreoffice(binary: str, source: Path, target: Path) -> None:
+    source = source.resolve()
+    target = target.resolve()
     with tempfile.TemporaryDirectory(prefix="woek-docx-pdf-") as tmp:
         tmp_dir = Path(tmp)
         subprocess.run(
@@ -61,6 +64,7 @@ def convert_with_libreoffice(binary: str, source: Path, target: Path) -> None:
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
+            timeout=180,
         )
         generated = tmp_dir / f"{source.stem}.pdf"
         if not is_pdf(generated):
@@ -73,6 +77,8 @@ def convert_with_libreoffice(binary: str, source: Path, target: Path) -> None:
 
 
 def convert_with_word(source: Path, target: Path) -> None:
+    source = source.resolve()
+    target = target.resolve()
     target.parent.mkdir(parents=True, exist_ok=True)
     script = """
 on run argv
@@ -95,6 +101,7 @@ end run
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
+        timeout=180,
     )
     if not is_pdf(target):
         raise RuntimeError("Microsoft Word did not produce a valid PDF")
@@ -182,7 +189,22 @@ def registry_jobs() -> list[tuple[Path, Path, str]]:
     return jobs
 
 
+def should_convert(source: Path, target: Path, force: bool) -> bool:
+    if force:
+        return True
+    if not is_pdf(target):
+        return True
+    try:
+        return source.stat().st_mtime > target.stat().st_mtime + 1
+    except OSError:
+        return False
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Render public DOCX/Word sources to template-preserving PDFs.")
+    parser.add_argument("--force", action="store_true", help="Re-render PDFs even when an existing PDF is present.")
+    args = parser.parse_args()
+
     renderer = find_renderer()
     public_docx_files = sorted(
         file
@@ -201,7 +223,7 @@ def main() -> None:
         failed.extend((source, target, "Kein Office-Renderer gefunden: LibreOffice/soffice oder Microsoft Word wird benötigt") for source, target, _kind in jobs if not is_pdf(target))
     else:
         for source, target, kind in jobs:
-            if is_pdf(target):
+            if not should_convert(source, target, args.force):
                 existing.append((source, target, kind))
                 continue
             try:
@@ -222,6 +244,7 @@ def main() -> None:
         "## Zusammenfassung",
         "",
         f"- Renderer: {renderer[0] if renderer else 'nicht gefunden'}",
+        f"- Force-Modus: {'ja' if args.force else 'nein'}",
         f"- Öffentliche DOCX-/Word-Quellen gefunden: {len(public_docx_files)}",
         f"- Registry-DOCX-Quellen mit PDF-Ziel: {len(jobs) - len(public_jobs)}",
         f"- PDF bereits vorhanden: {len(existing)}",
