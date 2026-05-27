@@ -1,6 +1,6 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-27T10:04:52.135Z
+Stand: 2026-05-27T10:45:19.484Z
 
 ## Zusammenfassung
 
@@ -8,7 +8,7 @@ Stand: 2026-05-27T10:04:52.135Z
 | --- | ---: |
 | Begriffe im klassischen Glossar | 174 |
 | Begriffe im Bereich Daten/Standards/Regularien | 117 |
-| Alias-Einträge | 390 |
+| Alias-Einträge | 395 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |

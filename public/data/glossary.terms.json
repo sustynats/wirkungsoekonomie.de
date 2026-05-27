@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T09:59:49.524Z",
+  "generatedAt": "2026-05-27T10:41:48.066Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -6527,19 +6527,29 @@
       "aliases": [
         "Sustainable Finance",
         "nachhaltige Finanzierung",
-        "Sustainable-Finance-Architektur"
+        "nachhaltige Finanzwirtschaft",
+        "EU Sustainable Finance",
+        "Sustainable-Finance-Architektur",
+        "Sustainable-Finance-Strategie",
+        "Finanzierung der Transformation",
+        "Financing sustainable growth"
       ],
       "synonyms": [
         "Sustainable Finance",
         "nachhaltige Finanzierung",
-        "Sustainable-Finance-Architektur"
+        "nachhaltige Finanzwirtschaft",
+        "EU Sustainable Finance",
+        "Sustainable-Finance-Architektur",
+        "Sustainable-Finance-Strategie",
+        "Finanzierung der Transformation",
+        "Financing sustainable growth"
       ],
-      "shortDefinition": "Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen.",
-      "definition": "Für die WÖk ist Sustainable Finance ein zentraler Anschlussraum. Die WÖk ersetzt diese Architektur nicht, sondern nutzt Berichtsdaten, Taxonomieinformationen und Risikodaten als Grundlage für Kapitalwirkung und Wirkungsrückkopplung.",
-      "longDefinition": "Für die WÖk ist Sustainable Finance ein zentraler Anschlussraum. Die WÖk ersetzt diese Architektur nicht, sondern nutzt Berichtsdaten, Taxonomieinformationen und Risikodaten als Grundlage für Kapitalwirkung und Wirkungsrückkopplung.",
-      "woekRelation": "Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss.",
-      "statusNote": "Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss.",
-      "usageNote": "Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss.",
+      "shortDefinition": "Sustainable Finance bezeichnet Finanzmarktregeln, Produkte und Daten, die Umwelt-, Sozial- und Governance-Aspekte in Investitions-, Kredit- und Offenlegungsentscheidungen einbeziehen.",
+      "definition": "Sustainable Finance verbindet Kapitalmärkte mit Nachhaltigkeitszielen, Risiken, Offenlegung und Transformationsfinanzierung. In der EU gehören dazu unter anderem EU-Taxonomie, SFDR, CSRD/ESRS, PAI, ESAP, Transition Finance und der EU Green Bond Standard. Für die Wirkungsökonomie ist Sustainable Finance ein wichtiger Anschlussraum: Die WÖk ersetzt diese Regeln nicht, sondern nutzt Taxonomie-, Reporting-, Risiko- und Kapitalmarktdaten, um Kapitalwirkung, Wirkungsbewertung und Wirkungsrückkopplung präziser zu machen.",
+      "longDefinition": "Sustainable Finance verbindet Kapitalmärkte mit Nachhaltigkeitszielen, Risiken, Offenlegung und Transformationsfinanzierung. In der EU gehören dazu unter anderem EU-Taxonomie, SFDR, CSRD/ESRS, PAI, ESAP, Transition Finance und der EU Green Bond Standard. Für die Wirkungsökonomie ist Sustainable Finance ein wichtiger Anschlussraum: Die WÖk ersetzt diese Regeln nicht, sondern nutzt Taxonomie-, Reporting-, Risiko- und Kapitalmarktdaten, um Kapitalwirkung, Wirkungsbewertung und Wirkungsrückkopplung präziser zu machen.",
+      "woekRelation": "Sustainable Finance liefert Daten, Begriffe und Kapitalmarktanschluss. Die WÖk übersetzt diese Grundlagen weiter in Wirkung: Welche Finanzierung stärkt Mensch, Planet und Demokratie, welche Risiken werden nur berichtet und welche Folgen werden tatsächlich in Preise, Kapitalzugang, Beschaffung oder Steuerung zurückgekoppelt?",
+      "statusNote": "Sustainable Finance ist ein Dach- und Anschlussbegriff, kein eigenes WÖk-Bewertungssystem und kein Synonym für ESG, Impact Investing oder Wirkungsökonomie.",
+      "usageNote": "Als Finanzmarkt- und Regulierungsanschluss verwenden: Sustainable Finance beschreibt Transparenz, Risiko, Taxonomie und Transformationsfinanzierung; die WÖk fragt zusätzlich nach Netto-Wirkung und Rückkopplung.",
       "categories": [
         "daten-standards-regularien",
         "sustainable-finance"
@@ -6554,10 +6564,24 @@
         "pai",
         "esap",
         "csrd",
-        "transition-finance"
+        "esrs",
+        "eu-green-bond-standard",
+        "transition-finance",
+        "taxonomy-navigator",
+        "esg",
+        "wirkungsdaten",
+        "steuerungsdaten",
+        "wirkungsrueckkopplung"
       ],
       "officialSources": [
-        "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
+        "EU-Kommission: Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance/overview-sustainable-finance_en",
+        "EU-Kommission: EU-Taxonomie|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "EU-Kommission: SFDR|https://finance.ec.europa.eu/regulation-and-supervision/financial-services-legislation/implementing-and-delegated-acts/sustainable-finance-disclosures-regulation_en",
+        "EU-Kommission: EU Green Bond Standard|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/european-green-bond-standard-supporting-transition_en",
+        "EU-Kommission: Platform on Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance/overview-sustainable-finance/platform-sustainable-finance_en",
+        "EUR-Lex: Taxonomy Regulation|https://eur-lex.europa.eu/eli/reg/2020/852/oj/eng",
+        "EUR-Lex: SFDR|https://eur-lex.europa.eu/eli/reg/2019/2088/oj/eng",
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
       ],
       "pageUrl": "/begriffe/sustainable-finance/",
       "priority": 6,
@@ -6567,14 +6591,22 @@
       "source": "Sustainable Finance",
       "sourceDocument": "EU-Kommission Sustainable Finance",
       "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
-      "hoverDefinition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung.",
+      "hoverDefinition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung.",
       "doNotConfuseWith": [
         "Wirkungsökonomie",
-        "Impact Investing"
+        "ESG",
+        "Impact Investing",
+        "EU-Taxonomie als Einzelinstrument"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Dachbegriff für Finanzmarktanschluss verwenden.",
+      "relatedDocuments": [
+        "social-taxonomy-wirkungsoekonomie"
+      ],
+      "examples": [
+        "Eine Bank nutzt EU-Taxonomie- und CSRD-Daten, um Investitionen in Transformation besser einzuordnen.",
+        "Ein Fonds legt nach SFDR nachhaltigkeitsbezogene Informationen offen; die WÖk fragt zusätzlich, welche Wirkung dadurch tatsächlich rückgekoppelt wird.",
+        "Ein Unternehmen verbindet Transition Finance mit messbaren Investitionen in Energieeffizienz, Lieferketten, Arbeitsbedingungen und Datenqualität."
+      ],
+      "preferredUsage": "Als Dachbegriff für Finanzmarktanschluss verwenden und immer von WÖk-Wirkungsbewertung unterscheiden.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "sustainable finance",

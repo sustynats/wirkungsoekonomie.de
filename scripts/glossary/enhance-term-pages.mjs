@@ -127,9 +127,13 @@ function labelsOverlap(a, b) {
 }
 
 function firstSentence(value) {
-  const text = decodeEntities(stripTags(value));
+  const text = decodeEntities(stripTags(value)).replace(/\s+/g, " ").trim();
   const match = text.match(/^(.{24,240}?[.!?])(\s|$)/);
-  return match ? match[1].trim() : text.slice(0, 220).trim();
+  if (match) return match[1].trim();
+  if (text.length <= 220) return text;
+  const clipped = text.slice(0, 220).trim();
+  const wordSafe = clipped.replace(/\s+\S*$/, "").trim();
+  return `${wordSafe || clipped} ...`;
 }
 
 function phraseCount(text, phrase) {
