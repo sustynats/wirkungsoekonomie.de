@@ -4,11 +4,11 @@ Stand: 2026-05-27
 
 ## Zusammenfassung
 
-- PDFs in `assets/pdf/`: 14
-- Dokumente in der Registry: 32
-- Aktuelle Dokumente: 32
+- PDFs in `assets/pdf/`: 15
+- Dokumente in der Registry: 33
+- Aktuelle Dokumente: 33
 - Archivdokumente: 0
-- Dokumente mit Onlinefassung: 32
+- Dokumente mit Onlinefassung: 33
 - Aktuelle PDF-only Dokumente: 0
 - Rang- und Paketdateien in `assets/downloads/`: 364
 
@@ -16,7 +16,7 @@ Stand: 2026-05-27
 
 | Umfang | Dokumente |
 | --- | ---: |
-| Mittlere bis längere Ausarbeitung | 10 |
+| Mittlere bis längere Ausarbeitung | 11 |
 | Ausführlicher Entwurf | 2 |
 | Umfangreiche Langfassung | 3 |
 | Register / Nachschlagewerk | 1 |
@@ -64,6 +64,7 @@ Die Registry bündelt die öffentlichen Kernmaterialien aus `assets/pdf/`. Rangp
 | wirkungssteuergesetz-wstg | Wirkungssteuergesetz WStG | Ausführlicher Entwurf | ja | ja | ja | 2 | ok |
 | wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt | Risikomanagement, Resilienz und Finanzmarkt | Kurzes Thesenpapier / Konzept | ja | ja | ja | 2 | ok |
 | working-paper-wohnungsmarkt | Working Paper Wohnungsmarkt | Umfangreiche Langfassung | ja | ja | ja | 2 | ok |
+| social-taxonomy-wirkungsoekonomie | Social Taxonomy | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
 
 ## PDFs ohne Registry-Eintrag
 

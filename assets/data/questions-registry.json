@@ -1,0 +1,2608 @@
+{
+  "pageType": "faq",
+  "title": "Fragen & Einwände zur Wirkungsökonomie",
+  "subline": "Antworten auf die wichtigsten Fragen zu Markt, Freiheit, Wirkungsmessung, Datenschutz, Bürokratie, Finanzierung, Demokratie und Umsetzung.",
+  "intro": "Die Wirkungsökonomie wirft berechtigte Fragen auf: zu Markt, Freiheit, Wirkungsmessung, Datenschutz, Finanzierung, Bürokratie, Demokratie und Umsetzung. Diese Seite bündelt die wichtigsten Antworten - kurz verständlich, ausführlich einordnend und mit Links zur Vertiefung.",
+  "categories": [
+    "Grundverständnis",
+    "Markt, Freiheit und Planwirtschaft",
+    "Wirkungsmessung, Daten und Unsicherheit",
+    "Steuern, Preise und Wirtschaft",
+    "Arbeit, Einkommen und Automatisierung",
+    "Demokratie, Datenschutz und Missbrauchsschutz",
+    "Faktencheck, Folgencheck und Medienwirkung",
+    "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+    "Umsetzung, Pilotierung und Grenzen",
+    "Mitmachen, Akademie und Rolle der Initiative"
+  ],
+  "questions": [
+    {
+      "id": "ein-satz",
+      "category": "Grundverständnis",
+      "question": "Was ist Wirkungsökonomie in einem Satz?",
+      "shortAnswer": "Die Wirkungsökonomie richtet Preise, Steuern, Kapital und Entscheidungen stärker danach aus, welche Folgen sie für Menschen, Planet und Demokratie haben.",
+      "longAnswer": "Heute zeigen Preise, Gewinne oder Wachstumszahlen oft nicht, ob ein Produkt, eine Entscheidung oder ein Geschäftsmodell Schäden verursacht oder Zukunft stärkt. Die Wirkungsökonomie will diese blinden Flecken sichtbar machen und in Entscheidungen zurückführen: in Preise, Steuern, Förderung, Beschaffung, Kapitalzugang und politische Steuerung.",
+      "whyItMatters": "Viele Besucher:innen begegnen der WÖk zum ersten Mal und brauchen eine einfache Orientierung, bevor sie Begriffe wie WÖk-ID, Scorecard, Reverse Merit Order oder Wirkungsrückkopplung verstehen.",
+      "limits": "Die Wirkungsökonomie ist kein fertiges Gesetzespaket und keine perfekte Maschine. Sie ist ein Ordnungs- und Steuerungsmodell, das pilotiert, demokratisch kontrolliert und weiterentwickelt werden muss.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkung",
+            "url": "/begriffe/wirkung/"
+          },
+          {
+            "label": "Positive Netto-Wirkung",
+            "url": "/begriffe/positive-netto-wirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Kompass",
+            "url": "/kompass.html"
+          },
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          },
+          {
+            "label": "Wirkungsfelder",
+            "url": "/wirkungsfelder/"
+          },
+          {
+            "label": "Bibliothek",
+            "url": "/bibliothek/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 1,
+      "showOnPages": [
+        "/"
+      ],
+      "keywords": [
+        "Was ist WÖk",
+        "Definition"
+      ]
+    },
+    {
+      "id": "planwirtschaft",
+      "category": "Markt, Freiheit und Planwirtschaft",
+      "question": "Ist die Wirkungsökonomie Planwirtschaft?",
+      "shortAnswer": "Nein. Die Wirkungsökonomie ersetzt Märkte nicht durch zentrale Planung. Sie verändert, was Märkte zurückmelden: nicht nur Preis, Gewinn und Nachfrage, sondern auch Wirkung.",
+      "longAnswer": "Märkte bleiben Suchprozesse. Unternehmen, Bürger:innen und Institutionen treffen weiterhin dezentrale Entscheidungen. Der Unterschied liegt in den Signalen: Heute sind viele Preise wirkungsblind. Sie zeigen nicht, ob Klima, Gesundheit, Arbeitsbedingungen, Ressourcen, Vertrauen oder Demokratie belastet werden. Die WÖk will diese Folgen sichtbar machen und als Rückkopplung in Preise, Steuern, Kapital, Förderung und Beschaffung integrieren.",
+      "whyItMatters": "Viele Menschen befürchten bei Wirkungsmessung sofort Bevormundung, Zentralsteuerung oder Bürokratie. Diese Sorge muss ernst genommen werden.",
+      "limits": "Die konkrete Ausgestaltung muss rechtsstaatlich, demokratisch, überprüfbar und verhältnismäßig bleiben. Wirkungsmessung darf politische Entscheidung nicht automatisieren.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsrückkopplung",
+            "url": "/begriffe/wirkungsrueckkopplung/"
+          },
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Wirkungsrat",
+            "url": "/begriffe/wirkungsrat/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell der Wirkungsökonomie",
+            "url": "/modell.html"
+          },
+          {
+            "label": "Social Credit?",
+            "url": "/fragen/#social-credit"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 2,
+      "showOnPages": [
+        "/"
+      ],
+      "keywords": [
+        "Planwirtschaft",
+        "Zentralplanung",
+        "Markt"
+      ]
+    },
+    {
+      "id": "wirkung-statt-kapital",
+      "category": "Grundverständnis",
+      "question": "Bedeutet 'Wirkung statt Kapital', dass Kapital unwichtig wird?",
+      "shortAnswer": "Nein. Kapital bleibt wichtig, aber es verliert seine Rolle als alleiniger Kompass.",
+      "longAnswer": "Kapital ist ein Werkzeug. Es ermöglicht Investitionen, Innovation, Infrastruktur und wirtschaftliche Entwicklung. Problematisch wird es, wenn Kapitalvermehrung zur obersten Zielgröße wird und die Wirkungen auf Menschen, Planet und Demokratie unsichtbar bleiben. Die WÖk fragt deshalb nicht, ob Kapital abgeschafft werden soll, sondern welche Richtung Kapital erhält.",
+      "whyItMatters": "Der Begriff kann missverstanden werden als Anti-Markt- oder Anti-Kapital-Position. Gemeint ist eine Verschiebung des Maßstabs, nicht die Abschaffung wirtschaftlicher Mittel.",
+      "limits": "Kapitalwirkung muss sorgfältig bewertet werden. Nicht jede Investition mit gutem Anspruch erzeugt positive Netto-Wirkung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Kapitalwirkung",
+            "url": "/begriffe/kapitalwirkung/"
+          },
+          {
+            "label": "Positive Netto-Wirkung",
+            "url": "/begriffe/positive-netto-wirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Finanzsystem & Kapital",
+            "url": "/wirkungsfelder/finanzsystem-kapital/"
+          },
+          {
+            "label": "Wirtschaft & Unternehmen",
+            "url": "/wirkungsfelder/wirtschaft-unternehmen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Impact Controlling",
+            "url": "/werkzeuge/impact-controlling/"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 3,
+      "showOnPages": [
+        "/"
+      ],
+      "keywords": [
+        "Kapital",
+        "Wirkung statt Kapital"
+      ]
+    },
+    {
+      "id": "wer-entscheidet",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Wer entscheidet, was positive Wirkung ist?",
+      "shortAnswer": "Nicht eine Einzelperson. Die WÖk orientiert sich an öffentlich nachvollziehbaren Referenzrahmen wie SDGs, Agenda 2030 und SDG+ sowie an Daten, Standards, demokratischer Kontrolle und Evaluation.",
+      "longAnswer": "Positive Wirkung ist in der Wirkungsökonomie nicht private Moral. Sie wird am Referenzrahmen von Mensch, Planet und Demokratie eingeordnet. Die SDGs und Agenda 2030 bilden den globalen Zielrahmen. SDG+ ergänzt Bereiche wie Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung. Die Bewertung braucht transparente Daten, prüfbare Methoden und Korrekturmöglichkeiten.",
+      "whyItMatters": "Ohne klare Governance könnte Wirkungsmessung als willkürlich, politisch manipulierbar oder technokratisch wahrgenommen werden.",
+      "limits": "Nicht jede Wirkung ist eindeutig messbar. Deshalb braucht es Unsicherheitsangaben, Widerspruchsmöglichkeiten, Pilotierung und lernende Evaluation.",
+      "related": {
+        "terms": [
+          {
+            "label": "SDG+",
+            "url": "/begriffe/sdg-plus/"
+          },
+          {
+            "label": "Wirkungsbewertung",
+            "url": "/begriffe/wirkungsbewertung/"
+          },
+          {
+            "label": "Wirkungsrat",
+            "url": "/begriffe/wirkungsrat/"
+          },
+          {
+            "label": "Positive Netto-Wirkung",
+            "url": "/begriffe/positive-netto-wirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "SDGs & SDG+",
+            "url": "/verstehen/sdgs-sdgplus/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 4,
+      "showOnPages": [],
+      "keywords": [
+        "wer entscheidet",
+        "positive Wirkung",
+        "Governance"
+      ]
+    },
+    {
+      "id": "social-credit",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Ist das Social Credit?",
+      "shortAnswer": "Nein. Die Wirkungsökonomie bewertet keine Menschen als Personen. Personenbewertung ist eine rote Linie.",
+      "longAnswer": "Die WÖk betrachtet Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, Entscheidungen, Wirkungspfade und Systemfolgen. Es geht nicht darum, Bürger:innen zu bewerten oder persönliches Verhalten zu überwachen. Gerade weil Wirkungsmessung missbraucht werden könnte, braucht die WÖk klare Schutzgrenzen: Datenschutz, Rechtsstaatlichkeit, Zweckbindung, keine Personenbewertung, keine Gesinnungsbewertung, keine automatisierte soziale Rangordnung.",
+      "whyItMatters": "Der Social-Credit-Vorwurf wird wahrscheinlich häufig kommen. Wenn diese Grenze nicht früh erklärt wird, entsteht Misstrauen.",
+      "limits": "Jede technische Umsetzung muss Datenschutz, Grundrechte, Transparenz, Rechtsbehelf und demokratische Kontrolle einbauen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Social Credit",
+            "url": "/begriffe/social-credit/"
+          },
+          {
+            "label": "Wirkungsgrenze",
+            "url": "/begriffe/wirkungsgrenze/"
+          },
+          {
+            "label": "Wirkungsdatenraum",
+            "url": "/begriffe/wirkungsdatenraum/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Datenschutz",
+            "url": "/datenschutz.html"
+          },
+          {
+            "label": "Fehlbewertungen",
+            "url": "/fragen/#fehlbewertungen"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 5,
+      "showOnPages": [
+        "/"
+      ],
+      "keywords": [
+        "Social Credit",
+        "Personenbewertung",
+        "Überwachung"
+      ]
+    },
+    {
+      "id": "wirkung-messen",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Kann man Wirkung überhaupt messen?",
+      "shortAnswer": "Nicht perfekt, aber besser als bisher. Die WÖk unterscheidet zwischen Daten, Annahmen, Unsicherheit, Wirkungspotenzialen und tatsächlich eingetretenen Wirkungen.",
+      "longAnswer": "Viele Wirkungen sind bereits messbar: Emissionen, Wasserverbrauch, Energieintensität, Arbeitsstandards, Lieferkettenrisiken, Gesundheitsrisiken, Biodiversitätsindikatoren, Datenqualität oder Governance-Kriterien. Andere Wirkungen sind schwieriger: Vertrauen, Diskursqualität, psychische Stabilität oder demokratische Resilienz. Die WÖk behauptet nicht, alles exakt messen zu können. Sie verlangt aber, Wirkungen nicht länger unsichtbar zu lassen.",
+      "whyItMatters": "Wenn Wirkungsmessung übertrieben exakt wirkt, verliert sie Vertrauen. Wenn sie als unmöglich abgetan wird, bleibt das alte System blind.",
+      "limits": "Messung braucht Versionierung, Unsicherheitsangaben, Datenqualität, Prüfung, öffentliche Kritik und Korrekturmöglichkeiten.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkung",
+            "url": "/begriffe/wirkung/"
+          },
+          {
+            "label": "Wirkungspotenzial",
+            "url": "/begriffe/wirkungspotenzial/"
+          },
+          {
+            "label": "Wirkungsdaten",
+            "url": "/begriffe/wirkungsdaten/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Netto-Wirkungs-Index",
+            "url": "/begriffe/netto-wirkungs-index/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Methodik",
+            "url": "/wissen/methodik/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Impact Controlling",
+            "url": "/werkzeuge/impact-controlling/"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 6,
+      "showOnPages": [],
+      "keywords": [
+        "Wirkung messen",
+        "Messbarkeit",
+        "Daten"
+      ]
+    },
+    {
+      "id": "buerokratie",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Wird das nicht Bürokratie pur?",
+      "shortAnswer": "Falsch umgesetzt: ja. Richtig umgesetzt: eher weniger Flickwerk, weil viele Einzelkorrekturen durch eine einheitlichere Wirkungslogik ersetzt werden können.",
+      "longAnswer": "Heute entstehen viele Bürokratien, weil Preise und Anreize falsche Signale geben. Dann müssen Staaten mit Förderprogrammen, Sonderregeln, Ausnahmen, Nachweisen und Korrekturgesetzen gegensteuern. Die WÖk will die Ursache früher adressieren: Wenn Wirkung direkt in Preise, Steuern, Kapitalzugang und Beschaffung zurückwirkt, können manche Einzelkorrekturen entfallen. Dafür müssen Verfahren digital, standardisiert, verständlich und KMU-tauglich sein.",
+      "whyItMatters": "Viele Menschen erleben Nachhaltigkeitsregulierung bereits als Papierlast. Die WÖk darf diesen Fehler nicht wiederholen.",
+      "limits": "Die Umsetzung kann tatsächlich Bürokratie erzeugen, wenn sie schlecht gebaut wird. Deshalb braucht es Standardwerte, digitale Produktpässe, einfache Schwellen, Piloträume und Evaluierung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsrückkopplung",
+            "url": "/begriffe/wirkungsrueckkopplung/"
+          },
+          {
+            "label": "Digitaler Produktpass",
+            "url": "/begriffe/digitaler-produktpass/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirtschaft & Unternehmen",
+            "url": "/wirkungsfelder/wirtschaft-unternehmen/"
+          },
+          {
+            "label": "Kleine Unternehmen",
+            "url": "/fragen/#kleine-unternehmen"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 7,
+      "showOnPages": [],
+      "keywords": [
+        "Bürokratie",
+        "Papierlast",
+        "KMU"
+      ]
+    },
+    {
+      "id": "wird-alles-teurer",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Wird dadurch alles teurer?",
+      "shortAnswer": "Nicht alles. Schädliche Wirkung soll teurer werden, positive Netto-Wirkung günstiger. Ziel sind ehrlichere Preise, nicht pauschal höhere Preise.",
+      "longAnswer": "Heute sind viele Produkte billig, weil Folgekosten ausgelagert werden: auf Umwelt, Gesundheit, Arbeitsbedingungen, Kommunen, kommende Generationen oder demokratische Stabilität. Die WÖk will solche Kosten sichtbarer machen. Gleichzeitig sollen Produkte mit positiver Netto-Wirkung entlastet werden. Ein regionales, ressourcenschonendes, fair produziertes Produkt kann dadurch günstiger werden, während stark schädliche Alternativen teurer werden.",
+      "whyItMatters": "Preisfragen sind sozial sensibel. Eine wirkungsorientierte Steuerlogik darf Haushalte mit geringem Einkommen nicht überfordern.",
+      "limits": "Es braucht soziale Abfederung, Kaufkraftschutz, Übergänge und demokratische Ausgestaltung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Soziale Abfederung",
+            "url": "/fragen/#soziale-abfederung"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Ausprobieren",
+            "url": "/erleben.html"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 8,
+      "showOnPages": [
+        "/wirkungsfelder/produkte-konsum/",
+        "/werkzeuge/wirkungsumsatzsteuer/"
+      ],
+      "keywords": [
+        "teurer",
+        "Preise",
+        "Kaufkraft"
+      ]
+    },
+    {
+      "id": "kleine-unternehmen",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Was passiert mit kleinen Unternehmen?",
+      "shortAnswer": "Kleine Unternehmen brauchen einfache Verfahren, Standardwerte, Übergangsfristen und Unterstützung. Die WÖk darf nicht so umgesetzt werden, dass nur große Konzerne sie bewältigen können.",
+      "longAnswer": "Große Unternehmen haben mehr Daten, Compliance-Abteilungen und Berichtsroutinen. Kleine Unternehmen brauchen deshalb vereinfachte Scorecards, Branchenbenchmarks, Standardannahmen, digitale Hilfen und Beratung. Eine gute WÖk-Umsetzung muss KMU schützen, nicht überfordern.",
+      "whyItMatters": "Ohne KMU-Tauglichkeit würde die WÖk genau die Konzentration verstärken, die sie eigentlich begrenzen will.",
+      "limits": "Welche Schwellen, Vereinfachungen und Übergangsregeln sinnvoll sind, muss pilotiert und branchenspezifisch getestet werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "WÖk-ID",
+            "url": "/begriffe/woek-id/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirtschaft & Unternehmen",
+            "url": "/wirkungsfelder/wirtschaft-unternehmen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Impact Controlling",
+            "url": "/werkzeuge/impact-controlling/"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 9,
+      "showOnPages": [],
+      "keywords": [
+        "KMU",
+        "kleine Unternehmen"
+      ]
+    },
+    {
+      "id": "wirkungseinkommen",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Was ist Wirkungseinkommen?",
+      "shortAnswer": "Wirkungseinkommen ist ein Modell, das Einkommen nicht nur an Erwerbsarbeit koppelt, sondern auch an Wirkung, Wertschöpfung und gesellschaftliche Rückkopplung - besonders in einer Welt von KI und Automatisierung.",
+      "longAnswer": "Wenn Maschinen und KI mehr Wertschöpfung übernehmen, kann die alte Kette Arbeit, Lohn, Sozialbeiträge und soziale Sicherung schwächer werden. Wirkungseinkommen fragt, wie Einkommen und soziale Stabilität gedacht werden können, wenn Produktivität nicht mehr allein an menschlicher Erwerbsarbeit hängt. Es kombiniert Grundsicherheit, Markteinkommen, Wirkungsbonus und mögliche Fondsanteile.",
+      "whyItMatters": "Automatisierung kann Wertschöpfung erhöhen, aber die soziale Finanzierungsbasis unter Druck setzen.",
+      "limits": "Wirkungseinkommen ist ein Modell, keine geltende Leistung und keine fertige Finanzierungszusage.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungseinkommen",
+            "url": "/begriffe/wirkungseinkommen/"
+          },
+          {
+            "label": "Wirkungsfonds",
+            "url": "/begriffe/wirkungsfonds/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Arbeit & Einkommen",
+            "url": "/wirkungsfelder/arbeit-einkommen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Automatisierungsrechner",
+            "url": "/erleben/automatisierungs-wirkungseinkommensrechner/"
+          }
+        ],
+        "documents": [
+          {
+            "label": "Whitepaper Wirkungseinkommen",
+            "url": "/bibliothek/wirkungseinkommen/"
+          }
+        ]
+      },
+      "priority": 10,
+      "showOnPages": [
+        "/erleben/automatisierungs-wirkungseinkommensrechner/",
+        "/akademie.html"
+      ],
+      "keywords": [
+        "Wirkungseinkommen",
+        "BGE",
+        "Automatisierung"
+      ]
+    },
+    {
+      "id": "geld-wirkungseinkommen",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Woher kommt das Geld für Wirkungseinkommen?",
+      "shortAnswer": "Nicht aus dem Nichts. Es geht um die Rückführung von Wertschöpfung, die heute durch Kapital, Automatisierung, Produktivität oder negative Wirkung ungleich verteilt wird.",
+      "longAnswer": "Wenn Automatisierung Arbeit ersetzt, verschwindet der wirtschaftliche Nutzen nicht automatisch. Er verschiebt sich: von Lohnarbeit hin zu Kapital-, Maschinen- oder Plattformwertschöpfung. Die WÖk fragt, welcher Teil dieser Wertschöpfung in soziale Sicherung, Weiterbildung, Transformationsfonds oder Wirkungseinkommen zurückgeführt werden könnte. Möglich wären Maschinenwertschöpfungsbeiträge, Wirkungssteuern, Wirkungsfonds oder Kapitalrückkopplungen.",
+      "whyItMatters": "Ohne klare Finanzierungslogik wirkt Wirkungseinkommen wie ein ungedecktes Versprechen.",
+      "limits": "Die konkrete Finanzierung ist politisch auszugestalten, zu pilotieren und haushaltsrechtlich zu prüfen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsfonds",
+            "url": "/begriffe/wirkungsfonds/"
+          },
+          {
+            "label": "Wirkungseinkommen",
+            "url": "/begriffe/wirkungseinkommen/"
+          },
+          {
+            "label": "Maschinenwertschöpfungsbeitrag",
+            "url": "/begriffe/maschinenwertschoepfungsbeitrag/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Arbeit & Einkommen",
+            "url": "/wirkungsfelder/arbeit-einkommen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Automatisierungsrechner",
+            "url": "/erleben/automatisierungs-wirkungseinkommensrechner/"
+          }
+        ],
+        "documents": [
+          {
+            "label": "Whitepaper Wirkungseinkommen",
+            "url": "/bibliothek/wirkungseinkommen/"
+          }
+        ]
+      },
+      "priority": 11,
+      "showOnPages": [
+        "/erleben/automatisierungs-wirkungseinkommensrechner/"
+      ],
+      "keywords": [
+        "Geld",
+        "Finanzierung",
+        "Robotersteuer"
+      ]
+    },
+    {
+      "id": "esg-unterschied",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Was ist der Unterschied zu ESG?",
+      "shortAnswer": "ESG beschreibt häufig Risiken, Berichte und Unternehmensdaten. Die Wirkungsökonomie fragt, wie Wirkung in Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückwirkt.",
+      "longAnswer": "ESG kann wichtige Informationen liefern, bleibt aber oft auf Reporting, Rating oder Risikomanagement beschränkt. Die WÖk geht einen Schritt weiter: Sie will Wirkung nicht nur berichten, sondern in Anreize, Preise und Entscheidungen zurückführen. Reporting beschreibt. Wirkungsrückkopplung verändert.",
+      "whyItMatters": "Viele Stakeholder kennen ESG, CSRD oder Taxonomie. Die WÖk muss anschlussfähig sein, aber klar zeigen, was sie anders macht.",
+      "limits": "Die WÖk kann ESG-Daten nutzen, darf aber nicht bloß ein neues Label für bestehende Nachhaltigkeitskommunikation werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "ESG",
+            "url": "/begriffe/esg/"
+          },
+          {
+            "label": "Wirkungsrückkopplung",
+            "url": "/begriffe/wirkungsrueckkopplung/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "WÖk-ID",
+            "url": "/begriffe/woek-id/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirtschaft & Unternehmen",
+            "url": "/wirkungsfelder/wirtschaft-unternehmen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Impact Controlling",
+            "url": "/werkzeuge/impact-controlling/"
+          }
+        ],
+        "documents": [
+          {
+            "label": "Social Taxonomy",
+            "url": "/bibliothek/social-taxonomy-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 12,
+      "showOnPages": [
+        "/",
+        "/wirkungsfelder/wirtschaft-unternehmen/"
+      ],
+      "keywords": [
+        "ESG Unterschied",
+        "CSRD",
+        "Taxonomie"
+      ]
+    },
+    {
+      "id": "wirkung",
+      "category": "Grundverständnis",
+      "question": "Was bedeutet Wirkung?",
+      "shortAnswer": "Wirkung ist die tatsächliche Veränderung von Zuständen - positiv, negativ oder neutral.",
+      "longAnswer": "Wirkung beschreibt nicht Absicht, Image oder Aktivität. Entscheidend ist, ob sich Gesundheit, Bildung, Klima, Vertrauen, Arbeitsbedingungen, Teilhabe oder andere Zustände tatsächlich verändern.",
+      "whyItMatters": "Ohne diesen Unterschied werden Output und Fortschritt verwechselt.",
+      "limits": "Wirkung braucht Bezugspunkt, Datenlage und Kontext.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkung",
+            "url": "/begriffe/wirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "In 5 Minuten verstehen",
+            "url": "/wirkungsoekonomie.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 20,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "positive-netto-wirkung",
+      "category": "Grundverständnis",
+      "question": "Was ist positive Netto-Wirkung?",
+      "shortAnswer": "Positive Netto-Wirkung bedeutet: Die Gesamtwirkung stärkt Mensch, Planet und Demokratie, ohne schwere Schäden zu verdecken.",
+      "longAnswer": "Die WÖk betrachtet nicht nur einzelne gute Effekte, sondern auch Nebenwirkungen, rote Linien und Verlagerungen. Ein guter Klimawert kann schwere Arbeitsrechtsverletzungen nicht einfach ausgleichen.",
+      "whyItMatters": "Sonst entsteht Schönrechnung.",
+      "limits": "Netto heißt nicht, dass alles beliebig verrechnet werden darf.",
+      "related": {
+        "terms": [
+          {
+            "label": "Positive Netto-Wirkung",
+            "url": "/begriffe/positive-netto-wirkung/"
+          },
+          {
+            "label": "Nichtkompensationsprinzip",
+            "url": "/begriffe/nichtkompensationsprinzip/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 21,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkung-absicht-output",
+      "category": "Grundverständnis",
+      "question": "Was ist der Unterschied zwischen Wirkung, Absicht und Output?",
+      "shortAnswer": "Absicht beschreibt, was gewollt ist. Output beschreibt, was getan oder geliefert wurde. Wirkung beschreibt, was sich dadurch verändert.",
+      "longAnswer": "Ein Förderprogramm kann ausgezahlt, ein Kurs durchgeführt oder ein Produkt verkauft werden. Das sagt noch nicht, ob Lebensqualität, Lernchancen, Wasserqualität oder Vertrauen besser werden.",
+      "whyItMatters": "Viele Systeme zählen Aktivität und halten sie für Wirkung.",
+      "limits": "Zurechnung bleibt schwierig, besonders in komplexen Systemen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Output",
+            "url": "/begriffe/output/"
+          },
+          {
+            "label": "Outcome",
+            "url": "/begriffe/outcome/"
+          },
+          {
+            "label": "Wirkung",
+            "url": "/begriffe/wirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Akademie",
+            "url": "/akademie.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 22,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "reporting-reicht-nicht",
+      "category": "Grundverständnis",
+      "question": "Warum reicht Reporting nicht?",
+      "shortAnswer": "Reporting beschreibt Zustände und Daten. Es verändert noch nicht automatisch Entscheidungen.",
+      "longAnswer": "Berichte können Transparenz schaffen, aber folgenlos bleiben. Die WÖk fragt, wie Daten in Preise, Beschaffung, Kapitalzugang, Förderung, Steuern oder Managemententscheidungen zurückwirken.",
+      "whyItMatters": "Viele Nachhaltigkeitsberichte erzeugen Papier, aber keine Steuerungsänderung.",
+      "limits": "Reporting bleibt wichtig als Datenquelle, darf aber nicht mit Wirkung verwechselt werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Berichtsdaten",
+            "url": "/begriffe/berichtsdaten/"
+          },
+          {
+            "label": "Wirkungsrückkopplung",
+            "url": "/begriffe/wirkungsrueckkopplung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Bibliothek",
+            "url": "/downloads.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 23,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkung-neutral",
+      "category": "Grundverständnis",
+      "question": "Was bedeutet 'Wirkung ist neutral'?",
+      "shortAnswer": "Wirkung heißt zunächst nur Veränderung. Ob sie gut oder schlecht ist, wird erst im Referenzrahmen bewertet.",
+      "longAnswer": "Ein Produkt, Gesetz oder Narrativ kann positive, negative oder ambivalente Folgen haben. Die Bewertung kommt nicht aus dem Wort Wirkung selbst, sondern aus SDGs, SDG+, Daten, Schutzgrenzen und demokratischer Einordnung.",
+      "whyItMatters": "Das verhindert, Wirkung als Werbewort zu missbrauchen.",
+      "limits": "Auch neutrale Beschreibung kann politische Entscheidungen nicht ersetzen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkung",
+            "url": "/begriffe/wirkung/"
+          },
+          {
+            "label": "Wirkungsbewertung",
+            "url": "/begriffe/wirkungsbewertung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "SDGs & SDG+",
+            "url": "/verstehen/sdgs-sdgplus/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 24,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wettbewerb-eigentum",
+      "category": "Markt, Freiheit und Planwirtschaft",
+      "question": "Bleiben Wettbewerb und Eigentum erhalten?",
+      "shortAnswer": "Ja. Die WÖk will Wettbewerb und Eigentum nicht abschaffen, sondern ihre Wirkungen sichtbarer machen.",
+      "longAnswer": "Eigentum, Unternehmertum und Wettbewerb können starke Innovationskräfte sein. Die WÖk fragt, welche Folgekosten, Risiken und Nutzen damit verbunden sind und wie Verantwortung in Regeln, Preisen und Kapitalzugang sichtbar wird.",
+      "whyItMatters": "Ohne diese Klärung wirkt die WÖk schnell wie Enteignungs- oder Verbotslogik.",
+      "limits": "Eigentumspflichten, Grenzen und Anreize müssen demokratisch festgelegt werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungspflicht des Eigentums",
+            "url": "/begriffe/wirkungspflicht-des-eigentums/"
+          },
+          {
+            "label": "Kapitalwirkung",
+            "url": "/begriffe/kapitalwirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirtschaft & Unternehmen",
+            "url": "/wirkungsfelder/wirtschaft-unternehmen/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 25,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "bevormundung",
+      "category": "Markt, Freiheit und Planwirtschaft",
+      "question": "Führt die WÖk zu Bevormundung?",
+      "shortAnswer": "Sie darf es nicht. Ziel ist bessere Rückmeldung über Wirkungen, nicht moralische Kontrolle des Alltags.",
+      "longAnswer": "Menschen sollen weiterhin wählen können. Aber Preise und Informationen sollen ehrlicher zeigen, ob Entscheidungen Schäden auslagern oder Zukunft stärken.",
+      "whyItMatters": "Freiheit braucht verlässliche Informationen und faire Rahmenbedingungen.",
+      "limits": "Grenzen entstehen dort, wo Daten, Sprache oder Steuerung Menschen überwachen oder entmündigen würden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsgrenze",
+            "url": "/begriffe/wirkungsgrenze/"
+          },
+          {
+            "label": "Social Credit",
+            "url": "/begriffe/social-credit/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Fragen zu Social Credit",
+            "url": "/fragen/#social-credit"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 26,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "ideologie",
+      "category": "Markt, Freiheit und Planwirtschaft",
+      "question": "Ist die Wirkungsökonomie eine Ideologie?",
+      "shortAnswer": "Sie ist ein Modell mit normativem Referenzrahmen, aber sie soll offen prüfbar bleiben.",
+      "longAnswer": "Die WÖk bekennt ihre Maßstäbe: Mensch, Planet und Demokratie, SDGs, Agenda 2030 und SDG+. Sie wird ideologisch, wenn sie Kritik abwehrt, Daten ignoriert oder Unsicherheit verschweigt. Deshalb braucht sie offene Quellen, Evaluation und Widerspruch.",
+      "whyItMatters": "Jedes Steuerungsmodell enthält Wertentscheidungen. Entscheidend ist, ob sie offenliegen.",
+      "limits": "Die WÖk darf sich nicht als fertige Wahrheit ausgeben.",
+      "related": {
+        "terms": [
+          {
+            "label": "Referenzrahmen",
+            "url": "/begriffe/referenzrahmen/"
+          },
+          {
+            "label": "SDG+",
+            "url": "/begriffe/sdg-plus/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "SDGs & SDG+",
+            "url": "/verstehen/sdgs-sdgplus/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 27,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "regeln-setzen",
+      "category": "Markt, Freiheit und Planwirtschaft",
+      "question": "Wer setzt die Regeln?",
+      "shortAnswer": "Regeln müssen demokratisch, transparent und überprüfbar gesetzt werden.",
+      "longAnswer": "Methodische Vorarbeiten können aus Wissenschaft, Zivilgesellschaft, Wirtschaft und Praxis kommen. Verbindliche Steuerung gehört aber in rechtsstaatliche Verfahren: Parlamente, Verwaltung, Gerichte, unabhängige Prüfung und öffentliche Konsultation.",
+      "whyItMatters": "Sonst entsteht der Eindruck privater Normsetzung.",
+      "limits": "Die konkrete Governance ist noch auszugestalten und zu testen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsrat",
+            "url": "/begriffe/wirkungsrat/"
+          },
+          {
+            "label": "Wirkungsgovernance",
+            "url": "/begriffe/wirkungsgovernance/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Staat, Recht & Demokratie",
+            "url": "/wirkungsfelder/staat-recht-demokratie/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 28,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "maerkte-wirkung",
+      "category": "Markt, Freiheit und Planwirtschaft",
+      "question": "Können Märkte mit Wirkung umgehen?",
+      "shortAnswer": "Ja, wenn Wirkung als verständliches Signal in Preise, Risiken, Nachfrage und Kapitalzugang eingeht.",
+      "longAnswer": "Märkte verarbeiten Informationen. Wenn wichtige Wirkungen fehlen, optimieren sie an falschen Signalen. Die WÖk will nicht alles planen, sondern bessere Signale bereitstellen.",
+      "whyItMatters": "Damit bleibt Marktdynamik erhalten, aber Blindheit nimmt ab.",
+      "limits": "Falsche Daten erzeugen falsche Signale. Deshalb sind Prüfung und Korrektur nötig.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsmarkt",
+            "url": "/begriffe/wirkungsmarkt/"
+          },
+          {
+            "label": "Wirkungsrückkopplung",
+            "url": "/begriffe/wirkungsrueckkopplung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 29,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "daten-fehlen",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Was passiert, wenn Daten fehlen?",
+      "shortAnswer": "Dann darf keine Scheingenauigkeit entstehen. Die WÖk arbeitet mit Datenqualitätsklassen, Standardannahmen und Unsicherheitsmarkierung.",
+      "longAnswer": "Fehlende Daten sind selbst eine Information. Sie können zu konservativer Einstufung, Prüfauftrag, Standardwert oder Pilotstatus führen. Wichtig ist, Datenlücken sichtbar zu machen.",
+      "whyItMatters": "Unsichtbare Datenlücken begünstigen Greenwashing und falsche Steuerung.",
+      "limits": "Zu strenge Regeln bei fehlenden Daten können kleine Akteure überfordern.",
+      "related": {
+        "terms": [
+          {
+            "label": "Datenqualität",
+            "url": "/begriffe/datenqualitaet/"
+          },
+          {
+            "label": "Wirkungsdaten",
+            "url": "/begriffe/wirkungsdaten/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Impact Controlling",
+            "url": "/werkzeuge/impact-controlling/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 30,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "greenwashing",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Wie verhindert man Greenwashing?",
+      "shortAnswer": "Durch offene Kriterien, Datenprüfung, Nicht-Kompensation und die Reverse Merit Order.",
+      "longAnswer": "Greenwashing entsteht, wenn gute Einzelwerte schwere Schäden verdecken. Die WÖk begrenzt diese Logik: rote Linien, Datenqualität, Prüfstatus und Engpasslogik machen kritische Felder sichtbar.",
+      "whyItMatters": "Sonst wird Wirkung zur neuen Werbesprache.",
+      "limits": "Keine Methode verhindert Manipulation vollständig. Es braucht Kontrolle und Sanktionen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Greenwashing",
+            "url": "/begriffe/greenwashing/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Scorecards",
+            "url": "/werkzeuge/scorecards/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 31,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "reverse-merit-order",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Was ist die Reverse Merit Order?",
+      "shortAnswer": "Die schlechteste relevante Kernwirkung begrenzt die Gesamtbewertung.",
+      "longAnswer": "Die Logik verhindert, dass ein sehr guter Wert in einem Feld schwere Schäden in einem anderen Feld ausgleicht. Gute Klimawerte kompensieren keine Kinderarbeit, und soziale Nützlichkeit kompensiert keine schweren Datenschutzverletzungen.",
+      "whyItMatters": "Sie schützt vor Schönrechnung.",
+      "limits": "Es muss klar festgelegt werden, welche Felder Kernfelder und rote Linien sind.",
+      "related": {
+        "terms": [
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          },
+          {
+            "label": "Nichtkompensationsprinzip",
+            "url": "/begriffe/nichtkompensationsprinzip/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Reverse Merit Order Tool",
+            "url": "/werkzeuge/reverse-merit-order/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 32,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "nicht-kompensation",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Was bedeutet Nicht-Kompensation?",
+      "shortAnswer": "Schwere negative Wirkungen dürfen nicht durch positive Teilwirkungen schöngerechnet werden.",
+      "longAnswer": "Nicht-Kompensation setzt Schutzgrenzen. Ein Produkt oder Projekt kann in vielen Bereichen gut sein und trotzdem kritisch bleiben, wenn es in einem zentralen Feld schwere Schäden verursacht.",
+      "whyItMatters": "Ohne diese Regel entsteht Ablasslogik.",
+      "limits": "Die Definition schwerer Schäden braucht transparente Kriterien und demokratische Legitimation.",
+      "related": {
+        "terms": [
+          {
+            "label": "Nichtkompensationsprinzip",
+            "url": "/begriffe/nichtkompensationsprinzip/"
+          },
+          {
+            "label": "Wirkungsgrenze",
+            "url": "/begriffe/wirkungsgrenze/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 33,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "unsicherheit",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Wie geht die WÖk mit Unsicherheit um?",
+      "shortAnswer": "Sie macht Unsicherheit sichtbar statt sie zu verstecken.",
+      "longAnswer": "Wirkungsbewertung kann mit Evidenzstufen, Datenqualitätsklassen, Szenarien, Bandbreiten und Review-Zyklen arbeiten. Eine unsichere Bewertung ist kein Scheitern, solange sie als unsicher markiert wird.",
+      "whyItMatters": "Politik und Märkte entscheiden oft trotz Unsicherheit. Besser ist transparente Unsicherheit als blinde Sicherheit.",
+      "limits": "Unsicherheit darf weder zur Blockade noch zur Beliebigkeit führen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Datenqualitätsklasse",
+            "url": "/begriffe/datenqualitaetsklasse/"
+          },
+          {
+            "label": "Wirkungsrisiko",
+            "url": "/begriffe/wirkungsrisiko/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Bibliothek",
+            "url": "/downloads.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 34,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkungspotenzial-vs-wirkung",
+      "category": "Wirkungsmessung, Daten und Unsicherheit",
+      "question": "Was ist der Unterschied zwischen Wirkungspotenzial und eingetretener Wirkung?",
+      "shortAnswer": "Wirkungspotenzial ist eine plausible Möglichkeit. Eingetretene Wirkung ist eine beobachtete Zustandsveränderung.",
+      "longAnswer": "Ein Gesetz, Produkt oder Narrativ kann Wirkungspotenzial haben, bevor Folgen vollständig sichtbar sind. Der Folgencheck arbeitet deshalb vorsorgend. Erst wenn sich Zustände verändern, sprechen wir von eingetretener Wirkung.",
+      "whyItMatters": "So kann man früh handeln, ohne endgültige Gewissheit vorzutäuschen.",
+      "limits": "Potenziale müssen als Potenziale markiert werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungspotenzial",
+            "url": "/begriffe/wirkungspotenzial/"
+          },
+          {
+            "label": "Wirkung",
+            "url": "/begriffe/wirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Scanner",
+            "url": "/anwendungen/scanner.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 35,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "co2-preis-unterschied",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Wie unterscheidet sich die Wirkungssteuer vom CO2-Preis?",
+      "shortAnswer": "Der CO2-Preis fokussiert Klimaemissionen. Eine Wirkungssteuer betrachtet mehrere Wirkungsfelder.",
+      "longAnswer": "CO2 ist wichtig, aber nicht die ganze Wirkung. Produkte können auch Wasser, Biodiversität, Gesundheit, Arbeitsrechte, Demokratie oder Datenräume beeinflussen. Die Wirkungssteuer würde breiter prüfen.",
+      "whyItMatters": "Sonst wird ein Teilproblem zum Gesamtmaßstab.",
+      "limits": "Mehr Dimensionen erhöhen Komplexität. Deshalb braucht es Scorecards und klare Kernfelder.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 36,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "subventionen",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Was passiert mit Subventionen?",
+      "shortAnswer": "Subventionen würden stärker danach geprüft, ob sie positive Wirkung erzeugen oder Schäden stabilisieren.",
+      "longAnswer": "Heute fördern Staaten teilweise Ziele, die sich widersprechen. Die WÖk fragt, ob Förderung Prävention, Teilhabe, Klima, Resilienz und demokratische Stabilität stärkt oder Reparaturkosten verlängert.",
+      "whyItMatters": "Öffentliches Geld sollte nicht wirkungsblind eingesetzt werden.",
+      "limits": "Subventionsumbau braucht Übergänge und demokratische Entscheidungen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Förderlogik",
+            "url": "/begriffe/foerderlogik/"
+          },
+          {
+            "label": "Wirkungshaushalt",
+            "url": "/begriffe/wirkungshaushalt/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Staat, Recht & Demokratie",
+            "url": "/wirkungsfelder/staat-recht-demokratie/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 37,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "lieferketten",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Wie werden Lieferketten berücksichtigt?",
+      "shortAnswer": "Lieferketten werden Teil der Wirkungsbewertung, weil viele Folgen vor oder nach dem Verkauf entstehen.",
+      "longAnswer": "Ein Produkt trägt Wirkung aus Rohstoffen, Produktion, Transport, Nutzung und Entsorgung. Die WÖk nutzt Lieferkettendaten, Produktpässe, WÖk-IDs und Scorecards, um diese Wirkung nicht am Werkstor enden zu lassen.",
+      "whyItMatters": "Sonst bleiben ausgelagerte Schäden unsichtbar.",
+      "limits": "Daten aus globalen Lieferketten sind oft lückenhaft und manipulationsanfällig.",
+      "related": {
+        "terms": [
+          {
+            "label": "Lieferkettenwirkung",
+            "url": "/begriffe/lieferkettenwirkung/"
+          },
+          {
+            "label": "Digitaler Produktpass",
+            "url": "/begriffe/digitaler-produktpass/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 38,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkungsvorsteuer",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Wie funktioniert Vorsteuerlogik nach Wirkung?",
+      "shortAnswer": "Vorsteuerlogik nach Wirkung würde Vorleistungen nicht nur finanziell, sondern auch nach ihrer geprüften Wirkung berücksichtigen.",
+      "longAnswer": "In einer erweiterten Produktsteuerlogik könnten gute oder schlechte Wirkungen aus Lieferketten in die Produktbewertung einfließen. Dadurch würden Unternehmen Anreize bekommen, bessere Vorprodukte und Lieferanten zu wählen.",
+      "whyItMatters": "Viele Produktwirkungen entstehen vor dem Verkauf.",
+      "limits": "Die genaue Steuertechnik ist Modell und müsste juristisch geprüft werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsumsatzsteuer",
+            "url": "/begriffe/wirkungsumsatzsteuer/"
+          },
+          {
+            "label": "Lieferkettenwirkung",
+            "url": "/begriffe/lieferkettenwirkung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Produktbesteuerung",
+            "url": "/wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 39,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "international",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Kann das international funktionieren?",
+      "shortAnswer": "Nur schrittweise. Wirkungslogik braucht Übersetzung in EU-Regeln, Handelsbeziehungen, Lieferketten und globale Standards.",
+      "longAnswer": "Ein Land allein kann vieles pilotieren, aber globale Lieferketten brauchen Anschlussfähigkeit: SDGs, EU-Taxonomie, CSRD, ILO, OECD, Produktpässe und Branchenstandards.",
+      "whyItMatters": "Wirkung endet nicht an Grenzen.",
+      "limits": "Internationale Harmonisierung ist langsam und konfliktträchtig.",
+      "related": {
+        "terms": [
+          {
+            "label": "SDGs",
+            "url": "/begriffe/sdgs/"
+          },
+          {
+            "label": "EU-Taxonomie",
+            "url": "/begriffe/eu-taxonomie/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "SDGs & SDG+",
+            "url": "/verstehen/sdgs-sdgplus/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 40,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "negative-branchen",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Was passiert mit Branchen, die heute negativ wirken?",
+      "shortAnswer": "Sie werden nicht automatisch abgeschaltet. Entscheidend sind Übergangspfade, rote Linien und Transformation.",
+      "longAnswer": "Branchen mit hohen Schäden brauchen klare Signale: schädliche Wirkung darf nicht dauerhaft billig bleiben, aber Beschäftigte, Regionen und Versorgung brauchen Übergänge, Innovation und Schutz.",
+      "whyItMatters": "Sonst entstehen soziale Brüche und politische Abwehr.",
+      "limits": "Rote Linien bleiben nötig, wenn Schäden schwer oder irreversibel sind.",
+      "related": {
+        "terms": [
+          {
+            "label": "Transformation",
+            "url": "/begriffe/transformation/"
+          },
+          {
+            "label": "Wirkungsrisiko",
+            "url": "/begriffe/wirkungsrisiko/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirkungsfelder",
+            "url": "/wirkungsfelder/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 41,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "bge",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Ist Wirkungseinkommen ein bedingungsloses Grundeinkommen?",
+      "shortAnswer": "Nicht identisch. Wirkungseinkommen kann Grundsicherungselemente enthalten, ist aber stärker mit Wertschöpfung und Rückkopplung verbunden.",
+      "longAnswer": "Ein BGE zahlt typischerweise bedingungslos an alle. Wirkungseinkommen fragt zusätzlich, wie automatisierte Wertschöpfung, gesellschaftliche Wirkung, Care, Bildung oder Transformation in Einkommenslogiken eingehen können.",
+      "whyItMatters": "Der Unterschied verhindert falsche Erwartungen.",
+      "limits": "Die genaue Ausgestaltung ist offen und politisch zu entscheiden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungseinkommen",
+            "url": "/begriffe/wirkungseinkommen/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Arbeit & Einkommen",
+            "url": "/wirkungsfelder/arbeit-einkommen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Automatisierungsrechner",
+            "url": "/erleben/automatisierungs-wirkungseinkommensrechner/"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 42,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "arbeit-entwertet",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Wird Arbeit dadurch entwertet?",
+      "shortAnswer": "Nein. Die WÖk will Arbeit nicht entwerten, sondern Wertschöpfung und gesellschaftliche Leistung breiter sichtbar machen.",
+      "longAnswer": "Erwerbsarbeit bleibt wichtig. Gleichzeitig leisten Care, Bildung, Ehrenamt, Pflege, Prävention und demokratische Arbeit oft hohe Wirkung, ohne im Einkommen angemessen sichtbar zu sein.",
+      "whyItMatters": "Sonst bleibt nur bezahlte Marktleistung relevant.",
+      "limits": "Neue Einkommensmodelle dürfen Erwerbsarbeit, Tarifbindung und soziale Sicherung nicht gegeneinander ausspielen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Care als Wirkleistung",
+            "url": "/begriffe/care-als-wirkleistung/"
+          },
+          {
+            "label": "Wirkleistung",
+            "url": "/begriffe/wirkleistung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Arbeit & Einkommen",
+            "url": "/wirkungsfelder/arbeit-einkommen/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 43,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "automatisierung-bestrafen",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Wird Automatisierung bestraft?",
+      "shortAnswer": "Nein. Automatisierung soll nicht bestraft werden. Ihr Nutzen soll fairer rückgekoppelt werden.",
+      "longAnswer": "KI und Maschinen können gefährliche, monotone oder ineffiziente Arbeit reduzieren. Problematisch wird es, wenn Wertschöpfung steigt, aber Löhne, Sozialbeiträge und Teilhabe erodieren. Dann braucht es neue Rückkopplung.",
+      "whyItMatters": "Sonst wird technischer Fortschritt sozial instabil.",
+      "limits": "Beiträge dürfen Innovation nicht abwürgen; sie müssen klug skaliert werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungseinkommen",
+            "url": "/begriffe/wirkungseinkommen/"
+          },
+          {
+            "label": "Wirkungsfonds",
+            "url": "/begriffe/wirkungsfonds/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Automatisierungsrechner",
+            "url": "/erleben/automatisierungs-wirkungseinkommensrechner/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 44,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "maschinenwertschoepfungsbeitrag",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Was ist ein Maschinenwertschöpfungsbeitrag?",
+      "shortAnswer": "Ein Maschinenwertschöpfungsbeitrag wäre ein Modell, um automatisierte Wertschöpfung teilweise in soziale Sicherung und Transformation zurückzuführen.",
+      "longAnswer": "Wenn Maschinen oder KI menschliche Arbeit ersetzen oder stark ergänzen, entsteht Wertschöpfung anders. Der Beitrag wäre keine pauschale Roboterstrafe, sondern eine mögliche Rückkopplung an Fonds, Weiterbildung oder Wirkungseinkommen.",
+      "whyItMatters": "Der Begriff beantwortet die Finanzierungsfrage bei Automatisierung.",
+      "limits": "Die genaue Bemessung ist offen und muss wirtschaftlich geprüft werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsfonds",
+            "url": "/begriffe/wirkungsfonds/"
+          },
+          {
+            "label": "Wirkungseinkommen",
+            "url": "/begriffe/wirkungseinkommen/"
+          },
+          {
+            "label": "Maschinenwertschöpfungsbeitrag",
+            "url": "/begriffe/maschinenwertschoepfungsbeitrag/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Arbeit & Einkommen",
+            "url": "/wirkungsfelder/arbeit-einkommen/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 45,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkungsfonds",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Was ist ein Wirkungsfonds?",
+      "shortAnswer": "Ein Wirkungsfonds bündelt Rückflüsse für Prävention, Übergänge, Bildung, Transformation oder soziale Sicherung.",
+      "longAnswer": "Statt Einnahmen nur im allgemeinen System verschwinden zu lassen, kann ein Fonds sichtbar machen, welche Mittel für welche Wirkung eingesetzt werden. Er bleibt aber an Haushalt, Kontrolle und Zweckbindung gebunden.",
+      "whyItMatters": "Fonds machen Rückkopplung praktisch nachvollziehbar.",
+      "limits": "Ein Fonds ersetzt keine demokratische Haushaltsentscheidung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsfonds",
+            "url": "/begriffe/wirkungsfonds/"
+          },
+          {
+            "label": "Wirkungshaushalt",
+            "url": "/begriffe/wirkungshaushalt/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Staat, Recht & Demokratie",
+            "url": "/wirkungsfelder/staat-recht-demokratie/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 46,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "care-bildung-pflege",
+      "category": "Arbeit, Einkommen und Automatisierung",
+      "question": "Was passiert mit Care-Arbeit, Bildung und Pflege?",
+      "shortAnswer": "Sie werden als zentrale Wirkleistungen sichtbar, nicht als nachrangige Kostenblöcke.",
+      "longAnswer": "Pflege, Bildung, Betreuung, Prävention und Gemeinwesenarbeit stabilisieren Gesellschaft und vermeiden spätere Reparaturkosten. Die WÖk will diese Wirkung in Haushalten, Einkommen, Förderung und Anerkennung besser berücksichtigen.",
+      "whyItMatters": "Diese Bereiche sind oft unterbewertet, obwohl sie Systemstabilität erzeugen.",
+      "limits": "Bewertung darf keine Personen oder Kinder ranken.",
+      "related": {
+        "terms": [
+          {
+            "label": "Care als Wirkleistung",
+            "url": "/begriffe/care-als-wirkleistung/"
+          },
+          {
+            "label": "Prävention",
+            "url": "/begriffe/praevention/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Bildung",
+            "url": "/wirkungsfelder/bildung/"
+          },
+          {
+            "label": "Gesundheit & Pflege",
+            "url": "/wirkungsfelder/gesundheit-pflege/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 47,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "kontrolle",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Wer kontrolliert die Wirkungsmessung?",
+      "shortAnswer": "Kontrolle braucht mehrere Ebenen: offene Methodik, unabhängige Prüfung, demokratische Aufsicht, Rechtsbehelf und öffentliche Kritik.",
+      "longAnswer": "Keine einzelne Stelle sollte allein bestimmen. Je stärker Bewertungen wirtschaftliche Folgen haben, desto wichtiger werden Transparenz, Prüfpflichten und Anfechtbarkeit.",
+      "whyItMatters": "Kontrolle entscheidet über Vertrauen.",
+      "limits": "Die Institutionen sind Modellvorschläge und müssen demokratisch ausgestaltet werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsrat",
+            "url": "/begriffe/wirkungsrat/"
+          },
+          {
+            "label": "Wirkungsaudit",
+            "url": "/begriffe/wirkungsaudit/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Staat, Recht & Demokratie",
+            "url": "/wirkungsfelder/staat-recht-demokratie/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 48,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkungsrat",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Was ist der Wirkungsrat?",
+      "shortAnswer": "Der Wirkungsrat ist ein Modell für eine unabhängige, plural besetzte Instanz zur Prüfung und Weiterentwicklung von Wirkungslogiken.",
+      "longAnswer": "Er könnte Kriterien, Datenqualität, Schutzgrenzen und Revisionen begleiten. Wichtig ist Pluralität: Wissenschaft, Praxis, Zivilgesellschaft, Unternehmen, Verwaltung und Betroffene dürfen nicht durch eine Einzelperspektive ersetzt werden.",
+      "whyItMatters": "Ohne Governance wirken Wirkungsbewertungen willkürlich.",
+      "limits": "Der Wirkungsrat ist ein Vorschlag, keine bestehende staatliche Institution.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsrat",
+            "url": "/begriffe/wirkungsrat/"
+          },
+          {
+            "label": "Wirkungsgovernance",
+            "url": "/begriffe/wirkungsgovernance/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 49,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "datenschutz",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Wie werden Datenschutz und Grundrechte geschützt?",
+      "shortAnswer": "Durch Zweckbindung, Datensparsamkeit, keine Personenbewertung, Transparenz, Rechtsbehelf und demokratische Kontrolle.",
+      "longAnswer": "Die WÖk braucht Daten über Produkte, Prozesse, Organisationen und Wirkungen. Sie braucht keine umfassende Überwachung privater Lebensführung. Personenbezogene Daten müssen geschützt bleiben.",
+      "whyItMatters": "Wirkungsdaten dürfen nicht in Überwachungslogik kippen.",
+      "limits": "Technische Systeme müssen von Anfang an datenschutzfreundlich gebaut werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsdatenraum",
+            "url": "/begriffe/wirkungsdatenraum/"
+          },
+          {
+            "label": "Social Credit",
+            "url": "/begriffe/social-credit/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Datenschutz",
+            "url": "/datenschutz.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 50,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "fehlbewertungen",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Was passiert bei Fehlbewertungen?",
+      "shortAnswer": "Fehlbewertungen müssen korrigierbar sein: mit Einspruch, Prüfung, Transparenz und Revision.",
+      "longAnswer": "Wirkungsbewertungen können falsch, unvollständig oder veraltet sein. Deshalb braucht es Versionen, Begründungen, Datenqualitätsangaben, Audit und Korrekturverfahren.",
+      "whyItMatters": "Wenn Bewertungen wirtschaftliche Folgen haben, ist Rechtsschutz zentral.",
+      "limits": "Korrekturverfahren dürfen nicht so schwer sein, dass kleine Akteure sie nicht nutzen können.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsbewertung",
+            "url": "/begriffe/wirkungsbewertung/"
+          },
+          {
+            "label": "Wirkungsaudit",
+            "url": "/begriffe/wirkungsaudit/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Staat, Recht & Demokratie",
+            "url": "/wirkungsfelder/staat-recht-demokratie/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 51,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "rechtsbehelf",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Gibt es Rechtsbehelf?",
+      "shortAnswer": "In einer verbindlichen Umsetzung müsste es Rechtsbehelf geben.",
+      "longAnswer": "Wenn Wirkungsklassen Steuern, Förderung, Beschaffung oder Kapitalzugang beeinflussen, müssen Betroffene Bewertungen prüfen und anfechten können. Das ist kein Zusatz, sondern rechtsstaatliche Grundbedingung.",
+      "whyItMatters": "Ohne Rechtsbehelf wird Wirkungsmessung Macht ohne Kontrolle.",
+      "limits": "Die genaue Ausgestaltung hängt vom jeweiligen Instrument ab.",
+      "related": {
+        "terms": [
+          {
+            "label": "Rechtsschutzfähigkeit",
+            "url": "/begriffe/wirkungsgovernance/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Staat, Recht & Demokratie",
+            "url": "/wirkungsfelder/staat-recht-demokratie/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 52,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "technokratie",
+      "category": "Demokratie, Datenschutz und Missbrauchsschutz",
+      "question": "Wie wird Technokratie verhindert?",
+      "shortAnswer": "Indem Daten Entscheidungen informieren, aber demokratische Abwägung nicht ersetzen.",
+      "longAnswer": "Technokratie entsteht, wenn Kennzahlen politische Konflikte scheinbar automatisch entscheiden. Die WÖk muss deshalb Zielkonflikte sichtbar machen, nicht unsichtbar. Parlamente, Gerichte, Öffentlichkeit und Betroffene bleiben relevant.",
+      "whyItMatters": "Wirkung darf nicht als neutraler Automat erscheinen.",
+      "limits": "Je stärker automatisiert wird, desto höher müssen Begründung und Kontrolle sein.",
+      "related": {
+        "terms": [
+          {
+            "label": "Zielkonflikt",
+            "url": "/begriffe/zielkonflikt/"
+          },
+          {
+            "label": "Wirkungsrat",
+            "url": "/begriffe/wirkungsrat/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 53,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "faktencheck-folgencheck",
+      "category": "Faktencheck, Folgencheck und Medienwirkung",
+      "question": "Was ist der Unterschied zwischen Faktencheck und Folgencheck?",
+      "shortAnswer": "Der Faktencheck fragt: Stimmt das? Der Folgencheck fragt: Was kann das auslösen?",
+      "longAnswer": "Eine Aussage kann faktisch richtig und trotzdem einseitig gerahmt, riskant verstärkt oder aus dem Kontext gelöst sein. Der Folgencheck prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume.",
+      "whyItMatters": "Medienwirkung entsteht nicht nur aus Wahrheit, sondern auch aus Rahmen, Timing, Wiederholung und Resonanz.",
+      "limits": "Folgencheck darf Faktencheck nicht ersetzen und muss Unsicherheit markieren.",
+      "related": {
+        "terms": [
+          {
+            "label": "Faktencheck",
+            "url": "/begriffe/faktencheck/"
+          },
+          {
+            "label": "Folgencheck",
+            "url": "/begriffe/folgencheck/"
+          },
+          {
+            "label": "Wirkungspfad",
+            "url": "/begriffe/wirkungspfad/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Scanner",
+            "url": "/anwendungen/scanner.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 54,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "zensur",
+      "category": "Faktencheck, Folgencheck und Medienwirkung",
+      "question": "Ist Folgencheck Zensur?",
+      "shortAnswer": "Nein. Folgencheck soll Wirkungspotenziale sichtbar machen, nicht Aussagen verbieten.",
+      "longAnswer": "Er ist eine vorsorgende Analyse: Welche Wirkstoffe, Resonanzen, Nebenwirkungen oder Risiken könnten entstehen? Er bewertet keine Gesinnungen und ersetzt keine freie Debatte.",
+      "whyItMatters": "Medienwirkung ist sensibel, weil Schutz vor Manipulation nicht zur Kontrolle von Meinung werden darf.",
+      "limits": "Jede Anwendung braucht klare Grundrechtsgrenzen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Folgencheck",
+            "url": "/begriffe/folgencheck/"
+          },
+          {
+            "label": "Diskursfähigkeit",
+            "url": "/begriffe/diskursfaehigkeit/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Medien & Öffentlichkeit",
+            "url": "/wirkungsfelder/medien-oeffentlichkeit/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Scanner",
+            "url": "/anwendungen/scanner.html"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 55,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkstoff",
+      "category": "Faktencheck, Folgencheck und Medienwirkung",
+      "question": "Was ist ein Wirkstoff?",
+      "shortAnswer": "Ein Wirkstoff ist eine Handlung, Aussage, Regel, Technologie oder ein Preisimpuls, der Wirkung auslösen kann.",
+      "longAnswer": "Die Analogie hilft, zwischen Auslöser, Dosis, Kontext, Nebenwirkung und tatsächlicher Wirkung zu unterscheiden. Ein politisches Narrativ kann ein Wirkstoff sein, wenn es Verhalten, Vertrauen oder Konflikte beeinflusst.",
+      "whyItMatters": "So wird Wirkung früher prüfbar.",
+      "limits": "Die Analogie darf nicht medizinisch überdehnt werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkstoff",
+            "url": "/begriffe/wirkstoff/"
+          },
+          {
+            "label": "Dosis",
+            "url": "/begriffe/dosis/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Folgencheck",
+            "url": "/begriffe/folgencheck/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 56,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wirkungsraum",
+      "category": "Faktencheck, Folgencheck und Medienwirkung",
+      "question": "Was ist ein Wirkungsraum?",
+      "shortAnswer": "Ein Wirkungsraum ist der Kontext, in dem Wirkung entstehen kann.",
+      "longAnswer": "Das kann ein Markt, eine Schule, ein Quartier, eine Plattform, ein Medienraum oder eine Verwaltung sein. Derselbe Wirkstoff kann in verschiedenen Räumen anders wirken.",
+      "whyItMatters": "Ohne Wirkungsraum bleibt Analyse abstrakt.",
+      "limits": "Wirkungsräume überschneiden sich und sind nicht immer klar abgrenzbar.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsraum",
+            "url": "/begriffe/wirkungsraum/"
+          },
+          {
+            "label": "Anwendungskontext",
+            "url": "/begriffe/anwendungskontext/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirkungsfelder",
+            "url": "/wirkungsfelder/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 57,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "richtige-aussage-folgen",
+      "category": "Faktencheck, Folgencheck und Medienwirkung",
+      "question": "Warum kann eine faktisch richtige Aussage problematische Folgen haben?",
+      "shortAnswer": "Weil Wirkung nicht nur von Richtigkeit abhängt, sondern auch von Kontext, Frame, Auswahl, Wiederholung und Resonanz.",
+      "longAnswer": "Eine richtige Zahl kann irreführend wirken, wenn Vergleichsmaßstab, Unsicherheit oder Gegenkontext fehlen. Der Folgencheck fragt, welche Deutung, Emotion oder Handlung dadurch ausgelöst werden kann.",
+      "whyItMatters": "Demokratische Öffentlichkeit braucht Wahrheit und Verantwortung.",
+      "limits": "Diese Prüfung darf nicht zur Unterdrückung unbequemer Fakten werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Frame",
+            "url": "/begriffe/frame/"
+          },
+          {
+            "label": "Resonanzraum",
+            "url": "/begriffe/resonanzraum/"
+          },
+          {
+            "label": "Folgencheck",
+            "url": "/begriffe/folgencheck/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Medien & Öffentlichkeit",
+            "url": "/wirkungsfelder/medien-oeffentlichkeit/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 58,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "scanner",
+      "category": "Faktencheck, Folgencheck und Medienwirkung",
+      "question": "Wie hilft der WÖk-Scanner?",
+      "shortAnswer": "Der Scanner ist eine Demo, die Fragen zu Wirkung, Nebenwirkung, Datenlage und Schutzgrenzen strukturiert.",
+      "longAnswer": "Er ersetzt keine amtliche Bewertung. Er hilft, blinde Flecken sichtbar zu machen: Was wird behauptet, wer ist betroffen, welche Wirkungspfade sind plausibel, welche Daten fehlen?",
+      "whyItMatters": "Viele Nutzer:innen brauchen einen einfachen Einstieg in Folgencheck-Logik.",
+      "limits": "Die Demo liefert Orientierung, keine endgültige Entscheidung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Folgencheck",
+            "url": "/begriffe/folgencheck/"
+          },
+          {
+            "label": "Wirkungspotenzial",
+            "url": "/begriffe/wirkungspotenzial/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Scanner",
+            "url": "/anwendungen/scanner.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 59,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "gemeinwohloekonomie",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Was ist der Unterschied zur Gemeinwohlökonomie?",
+      "shortAnswer": "Die Gemeinwohlökonomie ist ein wichtiger Vergleichsansatz. Die WÖk fokussiert stärker auf Rückkopplung in Preise, Steuern, Kapital und Entscheidungen.",
+      "longAnswer": "Beide fragen nach Wirtschaft jenseits reiner Gewinnlogik. Die WÖk legt besonderen Schwerpunkt auf WÖk-IDs, Scorecards, Nichtkompensation, Wirkungsrückkopplung und Systemarchitektur.",
+      "whyItMatters": "Verwandte Konzepte sollen nicht gegeneinander ausgespielt werden.",
+      "limits": "Die Unterschiede müssen weiter fachlich sauber herausgearbeitet werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Gemeinwohlökonomie",
+            "url": "/begriffe/gemeinwohloekonomie/"
+          },
+          {
+            "label": "Wirkungsrückkopplung",
+            "url": "/begriffe/wirkungsrueckkopplung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 60,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "donut-oekonomie",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Was ist der Unterschied zur Donut-Ökonomie?",
+      "shortAnswer": "Die Donut-Ökonomie beschreibt einen Zielraum zwischen sozialem Fundament und planetaren Grenzen. Die WÖk fragt zusätzlich nach operativer Rückkopplung.",
+      "longAnswer": "Der Donut ist stark als Bild für Grenzen und Grundlagen. Die WÖk versucht, daraus Steuerungslogik für Produkte, Kapital, Haushalte, Steuern, Daten und Entscheidungen zu entwickeln.",
+      "whyItMatters": "Viele kennen den Donut als intuitiven Einstieg.",
+      "limits": "Die WÖk sollte Anschluss suchen, nicht Abgrenzung um der Abgrenzung willen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Donut-Ökonomie",
+            "url": "/begriffe/donut-oekonomie/"
+          },
+          {
+            "label": "Wirkungsarchitektur",
+            "url": "/begriffe/wirkungsarchitektur/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Modell",
+            "url": "/modell.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 61,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "sroi",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Was ist der Unterschied zu SROI?",
+      "shortAnswer": "SROI monetarisiert soziale Wirkung häufig als Verhältnis von Nutzen zu Kosten. Die WÖk ist breiter und arbeitet mit Schutzgrenzen.",
+      "longAnswer": "SROI kann helfen, Prävention und sozialen Nutzen sichtbar zu machen. Die WÖk ergänzt: Nicht alles darf monetarisiert oder verrechnet werden, und demokratische, ökologische oder soziale rote Linien bleiben eigenständig relevant.",
+      "whyItMatters": "Monetarisierung ist nützlich, aber gefährlich, wenn sie alles verrechnet.",
+      "limits": "SROI-Ergebnisse hängen stark von Annahmen ab.",
+      "related": {
+        "terms": [
+          {
+            "label": "SROI",
+            "url": "/begriffe/sroi/"
+          },
+          {
+            "label": "T-SROI",
+            "url": "/begriffe/t-sroi/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "T-SROI",
+            "url": "/werkzeuge/impact-controlling/t-sroi/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 62,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "t-sroi",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Was ist der Unterschied zu T-SROI?",
+      "shortAnswer": "T-SROI ist ein WÖk-nahes Instrument, um Transformations- und Präventionswirkung investitionsfähig zu machen.",
+      "longAnswer": "Während klassische Rendite kurzfristige finanzielle Rückflüsse betont, fragt T-SROI nach vermiedenen Schäden, Stabilität, Prävention und langfristiger Wirkung. Er bleibt ein Werkzeug innerhalb der WÖk, nicht das ganze Modell.",
+      "whyItMatters": "Viele Zukunftsinvestitionen rechnen sich im alten System zu spät.",
+      "limits": "T-SROI ist keine sichere Renditeprognose.",
+      "related": {
+        "terms": [
+          {
+            "label": "T-SROI",
+            "url": "/begriffe/t-sroi/"
+          },
+          {
+            "label": "Prävention",
+            "url": "/begriffe/praevention/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "T-SROI",
+            "url": "/werkzeuge/impact-controlling/t-sroi/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "T-SROI Standard",
+            "url": "/bibliothek/t-sroi-standard-impact-controlling/"
+          }
+        ]
+      },
+      "priority": 63,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "warum-sdgs",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Warum SDGs?",
+      "shortAnswer": "Die SDGs liefern einen global anerkannten Zielrahmen für Nachhaltigkeit und Entwicklung.",
+      "longAnswer": "Die WÖk nutzt die SDGs nicht als perfekte Lösung, sondern als öffentliche Referenz. Sie helfen, Wirkung nicht privat zu definieren, sondern an bestehende Ziele anzuschließen.",
+      "whyItMatters": "Ohne Referenzrahmen wirkt Wirkung beliebig.",
+      "limits": "Die SDGs sind breit, teils unpräzise und brauchen Operationalisierung.",
+      "related": {
+        "terms": [
+          {
+            "label": "SDGs",
+            "url": "/begriffe/sdgs/"
+          },
+          {
+            "label": "Referenzrahmen",
+            "url": "/begriffe/referenzrahmen/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "SDGs & SDG+",
+            "url": "/verstehen/sdgs-sdgplus/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 64,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "warum-sdg-plus",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Warum SDG+?",
+      "shortAnswer": "SDG+ ergänzt Bereiche, die für moderne Demokratien besonders wirkungsrelevant sind.",
+      "longAnswer": "Dazu gehören Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung. Diese Themen sind in den SDGs angelegt, aber nicht immer operativ genug.",
+      "whyItMatters": "Wirkung auf Demokratie und Öffentlichkeit ist heute zentral.",
+      "limits": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente WÖk-Erweiterung.",
+      "related": {
+        "terms": [
+          {
+            "label": "SDG+",
+            "url": "/begriffe/sdg-plus/"
+          },
+          {
+            "label": "Demokratie",
+            "url": "/begriffe/demokratie/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "SDGs & SDG+",
+            "url": "/verstehen/sdgs-sdgplus/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 65,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "idgs-wirkungskompetenz",
+      "category": "Verhältnis zu ESG, Gemeinwohlökonomie und Donut-Ökonomie",
+      "question": "Welche Rolle spielen IDGs und Wirkungskompetenz?",
+      "shortAnswer": "IDGs beschreiben Fähigkeiten für Transformation. Wirkungskompetenz beschreibt die Fähigkeit, Wirkung verantwortlich zu erkennen, zu bewerten und zu gestalten.",
+      "longAnswer": "Die WÖk unterscheidet Zielrahmen und Kompetenzrahmen: SDGs und SDG+ sagen, worauf Wirkung bezogen wird; IDGs und Wirkungskompetenz helfen Menschen und Organisationen, damit umgehen zu können.",
+      "whyItMatters": "Transformation braucht nicht nur Ziele, sondern Fähigkeiten.",
+      "limits": "IDGs ersetzen SDGs oder SDG+ nicht.",
+      "related": {
+        "terms": [
+          {
+            "label": "IDGs",
+            "url": "/begriffe/idgs/"
+          },
+          {
+            "label": "Wirkungskompetenz",
+            "url": "/begriffe/wirkungskompetenz/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Akademie",
+            "url": "/akademie.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 66,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "geltendes-recht",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Ist die WÖk schon geltendes Recht?",
+      "shortAnswer": "Nein. Die Wirkungsökonomie ist ein Modell- und Vorschlagsraum, kein geltendes Recht.",
+      "longAnswer": "Einzelne Anschlussstellen existieren: Nachhaltigkeitsberichtspflichten, Taxonomie, Lieferkettenregeln, Haushaltslogik, Beschaffung, Förderrecht. Die WÖk verbindet diese zu einem weitergehenden Modell.",
+      "whyItMatters": "Diese Klarheit verhindert falsche Autorität.",
+      "limits": "Was rechtlich umgesetzt wird, muss demokratisch entschieden werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuergesetz",
+            "url": "/begriffe/wirkungssteuergesetz/"
+          },
+          {
+            "label": "EU-Taxonomie",
+            "url": "/begriffe/eu-taxonomie/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Bibliothek",
+            "url": "/downloads.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 67,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "modell-demo-vorschlag",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Was ist Modell, was ist Demo, was ist Vorschlag?",
+      "shortAnswer": "Modell heißt Denk- und Ordnungsrahmen. Demo heißt Ausprobierhilfe. Vorschlag heißt mögliche politische oder organisatorische Umsetzung.",
+      "longAnswer": "Die Website trennt Wissensseiten, Begriffseiten, Tools, Demos und Bibliothek. Demos sind keine amtlichen Bewertungen, sondern modellhafte Ersteinschätzungen.",
+      "whyItMatters": "Nutzer:innen müssen wissen, was verbindlich ist und was nicht.",
+      "limits": "Die Trennung muss auf der Website weiter gepflegt werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssimulation",
+            "url": "/begriffe/wirkungssimulation/"
+          },
+          {
+            "label": "Wirkungsbewertung",
+            "url": "/begriffe/wirkungsbewertung/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Über die Wirkungsökonomie",
+            "url": "/ueber.html"
+          },
+          {
+            "label": "Ausprobieren",
+            "url": "/erleben.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 68,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "einfuehrung",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Wie könnte eine Einführung beginnen?",
+      "shortAnswer": "Mit Piloträumen, freiwilligen Anwendungen, sektoralen Scorecards und öffentlichen Lernprozessen.",
+      "longAnswer": "Sinnvoll wären Bereiche mit hoher Wirkung und vorhandenen Daten: Produkte, Beschaffung, kommunale Haushalte, Pflege, Bildung, Wohnen, Lieferketten oder Automatisierung. Erst testen, dann skalieren.",
+      "whyItMatters": "Ein großer Sofortumbau wäre riskant.",
+      "limits": "Pilotierung darf nicht zur Dauer-Ausrede werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Wirkungshaushalt",
+            "url": "/begriffe/wirkungshaushalt/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirkungsfelder",
+            "url": "/wirkungsfelder/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 69,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "groesste-risiken",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Was sind die größten Risiken?",
+      "shortAnswer": "Fehlmessung, Bürokratie, Machtkonzentration, Datenmissbrauch, politische Vereinnahmung und Scheingenauigkeit.",
+      "longAnswer": "Die WÖk muss ihre eigenen Risiken ernst nehmen. Gerade ein Modell, das Wirkung sichtbar machen will, muss Fehlanreize, Datenlücken und Machtfragen offen behandeln.",
+      "whyItMatters": "Vertrauen entsteht nicht durch perfekte Versprechen, sondern durch ernsthafte Grenzen.",
+      "limits": "Einige Risiken lassen sich nur durch Praxis, Evaluation und Korrektur wirklich testen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsrisiko",
+            "url": "/begriffe/wirkungsrisiko/"
+          },
+          {
+            "label": "Wirkungsgrenze",
+            "url": "/begriffe/wirkungsgrenze/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Berechtigte Kritik",
+            "url": "/fragen/#kritik"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 70,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "was-offen",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Was ist noch offen?",
+      "shortAnswer": "Vieles: Datenstandards, Governance, Rechtsform, Übergänge, Finanzierung, internationale Anschlussfähigkeit und konkrete Schwellenwerte.",
+      "longAnswer": "Die WÖk ist weit ausgearbeitet, aber nicht fertig. Einige Bausteine sind Theorie, andere Demo, andere politische Vorschläge. Offenheit ist Teil der Seriosität.",
+      "whyItMatters": "Überbehauptung würde dem Modell schaden.",
+      "limits": "Offene Punkte brauchen Roadmap, Priorisierung und externe Prüfung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsarchitektur",
+            "url": "/begriffe/wirkungsarchitektur/"
+          },
+          {
+            "label": "Wirkungsgovernance",
+            "url": "/begriffe/wirkungsgovernance/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Mitmachen",
+            "url": "/mitmachen.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 71,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "mitarbeiten",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Wie kann ich mitarbeiten?",
+      "shortAnswer": "Durch Feedback, fachliche Kritik, Pilotideen, Datenhinweise, Praxisfälle, Lehre, Forschung oder politische Gespräche.",
+      "longAnswer": "Die WÖk lebt davon, dass Begriffe, Demos, Wirkungsfelder und Dokumente geprüft und verbessert werden. Besonders wertvoll sind konkrete Beispiele aus Kommunen, Unternehmen, Bildung, Pflege, Medien oder Produktketten.",
+      "whyItMatters": "Ein lernendes System braucht Kritik von außen.",
+      "limits": "Mitwirkung ersetzt keine demokratische Legitimation verbindlicher Regeln.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungskompetenz",
+            "url": "/begriffe/wirkungskompetenz/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Mitmachen",
+            "url": "/mitmachen.html"
+          },
+          {
+            "label": "Akademie",
+            "url": "/akademie.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 72,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "wer-steht-dahinter",
+      "category": "Mitmachen, Akademie und Rolle der Initiative",
+      "question": "Wer steht hinter der Wirkungsökonomie?",
+      "shortAnswer": "Die Website ist ein offener Wissens-, Lern- und Anwendungsraum zur Wirkungsökonomie und wird als Initiative aufgebaut.",
+      "longAnswer": "Sie bündelt Theorie, Begriffe, Wirkungsfelder, Demos, Akademie und Materialien. Die Demos sind modellhafte Ersteinschätzungen und keine amtlichen Bewertungen.",
+      "whyItMatters": "Institutionelle Klarheit schafft Vertrauen.",
+      "limits": "Rollen, Trägerschaft, Kooperationen und Governance sollten weiter transparent ausgebaut werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsökonomie",
+            "url": "/begriffe/wirkungsoekonomie/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Über die Wirkungsökonomie",
+            "url": "/ueber.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 73,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "akademie-kostenlos",
+      "category": "Mitmachen, Akademie und Rolle der Initiative",
+      "question": "Ist die Akademie kostenlos?",
+      "shortAnswer": "Die öffentlich zugänglichen Lern- und Wissensinhalte sollen frei nutzbar sein; konkrete Formate können unterschiedlich geregelt werden.",
+      "longAnswer": "Die Akademie soll Wirkungskompetenz aufbauen. Öffentliche Inhalte, Glossar und Bibliothek bleiben niedrigschwellig. Spätere Kurse, Zertifikate oder Kooperationen können eigene Bedingungen brauchen.",
+      "whyItMatters": "Kostenfragen beeinflussen Zugang und Vertrauen.",
+      "limits": "Aktuelle Angebote müssen jeweils transparent gekennzeichnet werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungskompetenz",
+            "url": "/begriffe/wirkungskompetenz/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Akademie",
+            "url": "/akademie.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 74,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "zertifikate",
+      "category": "Mitmachen, Akademie und Rolle der Initiative",
+      "question": "Sind Zertifikate staatlich anerkannt?",
+      "shortAnswer": "Nein, sofern nicht ausdrücklich anders angegeben. WÖk-Zertifikate wären zunächst Bildungs- oder Teilnahmeformate, keine staatliche Anerkennung.",
+      "longAnswer": "Zertifikate können Lernfortschritt oder Teilnahme sichtbar machen. Sie dürfen aber nicht als amtliche Qualifikation, amtliche Bewertung oder staatliche Prüfung erscheinen, wenn das nicht der Fall ist.",
+      "whyItMatters": "Das verhindert falsche Erwartungen.",
+      "limits": "Anerkennungsfragen müssten mit Bildungsträgern oder öffentlichen Stellen gesondert geklärt werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungskompetenz",
+            "url": "/begriffe/wirkungskompetenz/"
+          },
+          {
+            "label": "Wirkungsnachweis",
+            "url": "/begriffe/wirkungsnachweis/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Akademie",
+            "url": "/akademie.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 75,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "feedback",
+      "category": "Mitmachen, Akademie und Rolle der Initiative",
+      "question": "Wie kann ich Feedback geben?",
+      "shortAnswer": "Über Kontakt, konkrete Hinweise zu Seiten, Dokumenten, Begriffen, Demos oder Praxisfällen.",
+      "longAnswer": "Hilfreich sind präzise Rückmeldungen: Welche Aussage ist unklar, welcher Link fehlt, welche Annahme stimmt nicht, welcher Praxisfall sollte aufgenommen werden?",
+      "whyItMatters": "Die Website soll besser werden, nicht nur größer.",
+      "limits": "Feedback muss redaktionell geprüft und priorisiert werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungskompetenz",
+            "url": "/begriffe/wirkungskompetenz/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Mitmachen",
+            "url": "/mitmachen.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 76,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "politik-kontakt",
+      "category": "Mitmachen, Akademie und Rolle der Initiative",
+      "question": "Wie kann Politik oder Verwaltung Kontakt aufnehmen?",
+      "shortAnswer": "Über die Kontakt- und Mitmachwege der Website, idealerweise mit konkretem Anliegen oder Pilotkontext.",
+      "longAnswer": "Mögliche Anlässe sind kommunale Wirkungshaushalte, Beschaffung, Folgencheck, Bildung, Gesundheit, Wohnen, Förderlogik oder Wirkungsdaten.",
+      "whyItMatters": "Politik und Verwaltung brauchen konkrete, anschlussfähige Formate.",
+      "limits": "Die Initiative ersetzt keine amtliche Beratung oder demokratische Beschlussfassung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungshaushalt",
+            "url": "/begriffe/wirkungshaushalt/"
+          },
+          {
+            "label": "Folgencheck",
+            "url": "/begriffe/folgencheck/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Für Kommunen",
+            "url": "/fuer/kommunen.html"
+          },
+          {
+            "label": "Mitmachen",
+            "url": "/mitmachen.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 77,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "unternehmen-testen",
+      "category": "Mitmachen, Akademie und Rolle der Initiative",
+      "question": "Wie können Unternehmen die WÖk testen?",
+      "shortAnswer": "Über Scorecards, Impact Controlling, Lieferkettenfragen, Produktwirkung, Beschaffung und erste Demos.",
+      "longAnswer": "Unternehmen können mit einem Produkt, einer Lieferkette, einem Geschäftsmodell, einer Beschaffungsentscheidung oder einer Investition beginnen. Wichtig ist: Die Demo ersetzt keine Zertifizierung.",
+      "whyItMatters": "Praxisfälle zeigen, ob das Modell verständlich und nützlich ist.",
+      "limits": "Unternehmensdaten, Wettbewerb und Haftungsfragen brauchen klare Vertraulichkeit und Methodik.",
+      "related": {
+        "terms": [
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Impact Controlling",
+            "url": "/begriffe/wirkungscontrolling/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Wirtschaft & Unternehmen",
+            "url": "/wirkungsfelder/wirtschaft-unternehmen/"
+          }
+        ],
+        "tools": [
+          {
+            "label": "Impact Controlling",
+            "url": "/werkzeuge/impact-controlling/"
+          }
+        ],
+        "documents": []
+      },
+      "priority": 78,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "soziale-abfederung",
+      "category": "Steuern, Preise und Wirtschaft",
+      "question": "Wie werden Haushalte mit geringem Einkommen geschützt?",
+      "shortAnswer": "Durch Übergänge, Entlastung positiver Wirkung, gezielte Rückverteilung und soziale Ausgleichsmechanismen.",
+      "longAnswer": "Ehrlichere Preise dürfen nicht heißen, dass Menschen mit wenig Einkommen die Transformation allein tragen. Einnahmen aus schädlicher Wirkung können in Kaufkraftschutz, Grundversorgung, Wirkungseinkommen oder kommunale Entlastung zurückfließen.",
+      "whyItMatters": "Preiswahrheit ohne Sozialschutz wäre politisch und sozial instabil.",
+      "limits": "Die konkrete Verteilung ist eine demokratische Haushaltsfrage.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungsfonds",
+            "url": "/begriffe/wirkungsfonds/"
+          },
+          {
+            "label": "Wirkungseinkommen",
+            "url": "/begriffe/wirkungseinkommen/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Arbeit & Einkommen",
+            "url": "/wirkungsfelder/arbeit-einkommen/"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 79,
+      "showOnPages": [],
+      "keywords": []
+    },
+    {
+      "id": "tool-demo",
+      "category": "Umsetzung, Pilotierung und Grenzen",
+      "question": "Was leistet eine Demo - und was nicht?",
+      "shortAnswer": "Eine Demo erklärt Logik und zeigt erste Modellwerte. Sie ist keine amtliche Bewertung.",
+      "longAnswer": "Tools auf der Website helfen, Zusammenhänge zu verstehen: Annahmen verändern, Folgen sehen, Begriffe lernen. Sie ersetzen keine Beratung, kein Gutachten und keine rechtsverbindliche Entscheidung.",
+      "whyItMatters": "Ohne diese Grenze wirken Tools schnell übermächtig.",
+      "limits": "Demos müssen klar sagen, welche Annahmen und Grenzen sie haben.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssimulation",
+            "url": "/begriffe/wirkungssimulation/"
+          },
+          {
+            "label": "Datenqualität",
+            "url": "/begriffe/datenqualitaet/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Ausprobieren",
+            "url": "/erleben.html"
+          }
+        ],
+        "tools": [],
+        "documents": []
+      },
+      "priority": 80,
+      "showOnPages": [],
+      "keywords": []
+    }
+  ],
+  "criticism": [
+    {
+      "title": "Messung kann fehlerhaft sein.",
+      "answer": "Deshalb braucht es Datenqualität, offene Annahmen, Prüfung, Widerspruch und Evaluation."
+    },
+    {
+      "title": "Wirkung kann politisiert werden.",
+      "answer": "Deshalb braucht es transparente Referenzrahmen, demokratische Kontrolle, unabhängige Prüfung und einen Wirkungsrat."
+    },
+    {
+      "title": "Bürokratie kann wachsen.",
+      "answer": "Deshalb müssen Verfahren digital, standardisiert, einfach und KMU-tauglich sein."
+    },
+    {
+      "title": "Große Unternehmen könnten Vorteile haben.",
+      "answer": "Deshalb braucht es Standardwerte, Unterstützung, Übergangsregeln und offene Methoden."
+    },
+    {
+      "title": "Datenschutz kann gefährdet sein.",
+      "answer": "Deshalb sind Personenbewertung, Überwachung und Social-Credit-Logik ausgeschlossen."
+    },
+    {
+      "title": "Wirkung ist nie vollständig sicher.",
+      "answer": "Deshalb unterscheidet die WÖk zwischen Wirkungspotenzial, Wirkungsrisiko, Unsicherheit und eingetretener Wirkung."
+    },
+    {
+      "title": "Internationale Einführung ist schwierig.",
+      "answer": "Deshalb braucht es Piloträume, sektorale Tests, EU-Anschlussfähigkeit und globale Übersetzbarkeit."
+    },
+    {
+      "title": "Die WÖk kann selbst Fehlanreize erzeugen.",
+      "answer": "Deshalb ist sie als lernende Architektur mit Evaluation, Revision und demokratischer Kontrolle gedacht."
+    },
+    {
+      "title": "Wirkungsmessung kann manipuliert werden.",
+      "answer": "Deshalb sind Reverse Merit Order, Datenprüfung, offene Annahmen und Missbrauchsschutz nötig."
+    },
+    {
+      "title": "Nicht alles lässt sich quantifizieren.",
+      "answer": "Deshalb kombiniert die WÖk quantitative Daten mit qualitativer Einordnung, Unsicherheitsmarkierung und demokratischer Abwägung."
+    }
+  ]
+}

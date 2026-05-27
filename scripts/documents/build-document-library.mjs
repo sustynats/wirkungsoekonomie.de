@@ -14,6 +14,10 @@ const archiveDocuments = publicDocuments.filter((document) => document.status !=
 const labelBySlug = new Map([
   ["sdg-plus", "SDG+"],
   ["sdgs", "SDGs"],
+  ["eu-taxonomie", "EU-Taxonomie"],
+  ["social-taxonomy", "Social Taxonomy"],
+  ["csrd", "CSRD"],
+  ["esrs", "ESRS"],
   ["esg", "ESG"],
   ["woek-id", "WÖk-ID"],
   ["t-sroi", "T-SROI"],
@@ -24,6 +28,9 @@ const labelBySlug = new Map([
   ["wirkungsrueckkopplung", "Wirkungsrückkopplung"],
   ["positive-netto-wirkung", "Positive Netto-Wirkung"],
   ["mensch-planet-demokratie", "Mensch, Planet und Demokratie"],
+  ["finanzsystem-kapital", "Finanzsystem & Kapital"],
+  ["wirtschaft-unternehmen", "Wirtschaft & Unternehmen"],
+  ["produkte-konsum", "Produkte & Konsum"],
 ]);
 
 const explicitScopeById = new Map([
@@ -103,11 +110,13 @@ function displayStand(document) {
 }
 
 function slugToLabel(value) {
-  return String(value || "")
+  const slug = String(value || "")
     .replace(/^\/|\/$/g, "")
     .split("/")
     .filter(Boolean)
-    .pop()
+    .pop();
+  if (labelBySlug.has(slug)) return labelBySlug.get(slug);
+  return slug
     ?.replace(/-/g, " ")
     .replace(/\b\w/g, (char) => char.toUpperCase()) || "Seite";
 }

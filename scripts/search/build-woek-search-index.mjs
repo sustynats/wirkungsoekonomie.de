@@ -6,6 +6,7 @@ const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
 const glossaryPath = "public/data/glossary.terms.json";
 const documentRegistryPath = "assets/data/document-registry.json";
+const questionRegistryPath = "assets/data/questions-registry.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
@@ -177,6 +178,39 @@ function entryFromDocument(document) {
   };
 }
 
+function entryFromQuestion(question) {
+  const related = question.related || {};
+  const body = [
+    question.question,
+    question.shortAnswer,
+    question.longAnswer,
+    question.whyItMatters,
+    question.limits,
+    question.category,
+    ...(question.keywords || []),
+    ...(related.terms || []).map((item) => item.label),
+    ...(related.pages || []).map((item) => item.label),
+    ...(related.tools || []).map((item) => item.label),
+    ...(related.documents || []).map((item) => item.label),
+  ].join(" ");
+  return {
+    id: `woek-question-${question.id}`,
+    title: question.question,
+    description: question.shortAnswer,
+    url: `/fragen/#${question.id}`,
+    section: "Fragen & Einwände",
+    type: "Frage",
+    format: "FAQ / Einwand",
+    impactSpaces: ["Mensch", "Planet", "Demokratie"],
+    standards: body.match(/SDG\+?|ESG|CSRD|Taxonomie|IDG/gi) || [],
+    instruments: [...(related.terms || []), ...(related.tools || [])].map((item) => item.label),
+    tags: [question.category, ...(question.keywords || [])].filter(Boolean),
+    aliases: question.keywords || [],
+    body,
+    priority: Number(question.priority || 100) <= 12 ? 174 : 148,
+  };
+}
+
 function curatedIaEntries() {
   return [
     {
@@ -335,6 +369,9 @@ const glossary = fs.existsSync(glossaryPath) ? JSON.parse(fs.readFileSync(glossa
 const documents = fs.existsSync(documentRegistryPath)
   ? JSON.parse(fs.readFileSync(documentRegistryPath, "utf8")).filter((document) => document.isPublic !== false)
   : [];
+const questions = fs.existsSync(questionRegistryPath)
+  ? JSON.parse(fs.readFileSync(questionRegistryPath, "utf8")).questions || []
+  : [];
 const generated = [];
 const meta = {};
 
@@ -378,6 +415,22 @@ for (const document of documents) {
     relatedFields: document.relatedFields || [],
     relatedTools: document.relatedTools || [],
     sourceFile: documentRegistryPath,
+    searchBoost: entry.priority,
+  };
+}
+
+for (const question of questions) {
+  const entry = entryFromQuestion(question);
+  generated.push(entry);
+  meta[entry.url] = {
+    documentType: "fragen",
+    status: "published",
+    version: "2026.2",
+    sectionId: question.id,
+    documentId: `question-${question.id}`,
+    relatedTerms: (question.related?.terms || []).map((item) => item.url).filter(Boolean),
+    relatedDocuments: (question.related?.documents || []).map((item) => item.url).filter(Boolean),
+    sourceFile: questionRegistryPath,
     searchBoost: entry.priority,
   };
 }

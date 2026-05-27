@@ -123,6 +123,7 @@ const termTargetLinks = new Map([
   ["esrs", "../../wirkungsfelder/wirtschaft-unternehmen/finanzmarktanforderungen/"],
   ["eu-taxonomie", "../../wirkungsfelder/finanzsystem-kapital/"],
   ["esg", "../../wirkungsfelder/wirtschaft-unternehmen/finanzmarktanforderungen/"],
+  ["social-taxonomy", "../../bibliothek/social-taxonomy-wirkungsoekonomie/"],
 ]);
 
 function termLink(slug) {
