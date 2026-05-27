@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-27T12:47:10.505Z
+Stand: 2026-05-27T13:24:46.419Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 175 |
-| Begriffe im Bereich Daten/Standards/Regularien | 118 |
-| Alias-Einträge | 407 |
+| Begriffe im klassischen Glossar | 201 |
+| Begriffe im Bereich Daten/Standards/Regularien | 135 |
+| Alias-Einträge | 647 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -71,7 +71,33 @@ Stand: 2026-05-27T12:47:10.505Z
 | Green Deal Industrial Plan | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Greenwashing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | GRI | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Habitatfragmentierung | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Habitatverlust | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Haltung | WÖk-Begriff | ja | - | ja | ja | ok |
+| Handlung | WÖk-Begriff | ja | - | ja | ja | ok |
+| Handlungsdruck | WÖk-Begriff | ja | - | ja | ja | ok |
+| Handlungsfähigkeit | WÖk-Begriff | ja | - | ja | ja | ok |
+| Handlungspfad | WÖk-Begriff | ja | - | ja | ja | ok |
+| Handlungsspielraum | WÖk-Begriff | ja | - | ja | ja | ok |
+| Hard-to-abate-Sektoren | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Haushaltsneutralität | WÖk-Begriff | ja | - | ja | ja | ok |
+| Hazardous Substances / gefährliche Stoffe | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Health Co-Benefits / Gesundheits-Co-Benefits | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Health Impact Assessment / HIA | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hebel / Hebelpunkt | WÖk-Begriff | ja | - | ja | ja | ok |
+| Hebelwirkung | WÖk-Begriff | ja | - | ja | ja | ok |
 | Herkunftsnachweis / HKN | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Herkunftstransparenz | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| HFCs / Hydrofluorocarbons | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hitzeschutz / Hitzeaktionsplan | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hitzestress | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hochwasserrisiko | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hotspot-Analyse | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Human Rights Due Diligence / HRDD | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Human Rights Impact Assessment / HRIA | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Humusaufbau | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hunger / Hungerbekämpfung | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Hydrologischer Kreislauf | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | IDGs | Grundbegriff | ja | - | ja | ja | ok |
 | ILO | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | ILO-Kernarbeitsnormen | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |

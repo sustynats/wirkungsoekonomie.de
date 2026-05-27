@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T12:46:56.012Z",
+  "generatedAt": "2026-05-27T13:23:24.318Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -368,10 +368,18 @@
       "canonicalLabel": "Biodiversitätsrisiko",
       "slug": "biodiversitaetsrisiko",
       "aliases": [
-        "Biodiversitätsrisiko"
+        "Biodiversitätsrisiko",
+        "High Conservation Value",
+        "HCV",
+        "High Carbon Stock",
+        "HCS"
       ],
       "synonyms": [
-        "Biodiversitätsrisiko"
+        "Biodiversitätsrisiko",
+        "High Conservation Value",
+        "HCV",
+        "High Carbon Stock",
+        "HCS"
       ],
       "shortDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
       "definition": "Die WÖk betrachtet Biodiversität als Wirkungsraum und Schutzgrenze, nicht nur als Umweltkennzahl.",
@@ -391,7 +399,9 @@
         "tnfd",
         "nature-related-risks",
         "ipbes",
-        "eudr"
+        "eudr",
+        "habitatverlust",
+        "habitatfragmentierung"
       ],
       "officialSources": [
         "IPBES Global Assessment|https://www.ipbes.net/global-assessment"
@@ -942,13 +952,17 @@
         "Digitaler Produktpass",
         "DPP",
         "Digital Product Passport",
-        "Produktpass"
+        "Produktpass",
+        "Herkunftsdaten im Produktpass",
+        "Produktpass Herkunft"
       ],
       "synonyms": [
         "Digitaler Produktpass",
         "DPP",
         "Digital Product Passport",
-        "Produktpass"
+        "Produktpass",
+        "Herkunftsdaten im Produktpass",
+        "Produktpass Herkunft"
       ],
       "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
       "definition": "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung.",
@@ -971,7 +985,8 @@
         "espr",
         "produktdaten",
         "pcf-product-carbon-footprint",
-        "material-footprint"
+        "material-footprint",
+        "herkunftstransparenz"
       ],
       "officialSources": [
         "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
@@ -1007,12 +1022,20 @@
       "aliases": [
         "DNSH / Do No Significant Harm",
         "DNSH",
-        "Do No Significant Harm"
+        "Do No Significant Harm",
+        "Harm",
+        "Do no significant harm",
+        "keinen erheblichen Schaden verursachen",
+        "erheblicher Schaden"
       ],
       "synonyms": [
         "DNSH / Do No Significant Harm",
         "DNSH",
-        "Do No Significant Harm"
+        "Do No Significant Harm",
+        "Harm",
+        "Do no significant harm",
+        "keinen erheblichen Schaden verursachen",
+        "erheblicher Schaden"
       ],
       "shortDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
       "definition": "DNSH ist anschlussfähig für Nicht-Kompensation: Positive Wirkung in einem Bereich darf schwere Schäden an anderer Stelle nicht verdecken.",
@@ -2674,6 +2697,966 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "habitatfragmentierung",
+      "termId": "habitatfragmentierung",
+      "label": "Habitatfragmentierung",
+      "canonicalLabel": "Habitatfragmentierung",
+      "slug": "habitatfragmentierung",
+      "aliases": [
+        "Habitatfragmentierung",
+        "Habitat Fragmentation",
+        "Lebensraumfragmentierung",
+        "Zerschneidung von Lebensräumen",
+        "Habitat-Zerschneidung"
+      ],
+      "synonyms": [
+        "Habitatfragmentierung",
+        "Habitat Fragmentation",
+        "Lebensraumfragmentierung",
+        "Zerschneidung von Lebensräumen",
+        "Habitat-Zerschneidung"
+      ],
+      "shortDefinition": "Habitatfragmentierung beschreibt die Zerschneidung zusammenhängender Lebensräume in kleinere, isolierte Teilflächen.",
+      "definition": "Fragmentierung kann Artenwanderung, genetischen Austausch, Nahrungssuche und ökologische Stabilität schwächen, auch wenn noch Restflächen vorhanden sind.",
+      "longDefinition": "Fragmentierung kann Artenwanderung, genetischen Austausch, Nahrungssuche und ökologische Stabilität schwächen, auch wenn noch Restflächen vorhanden sind.",
+      "woekRelation": "Die WÖk betrachtet Fragmentierung als Wirkungsrisiko, das in Infrastruktur, Raumplanung, Lieferketten und Flächennutzung nicht durch einfache Ausgleichslogik verdeckt werden darf.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 76,
+      "relatedTerms": [
+        "habitatverlust",
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "ipbes"
+      ],
+      "officialSources": [
+        "IPBES: Global Assessment Report on Biodiversity and Ecosystem Services|https://www.ipbes.net/global-assessment",
+        "UNEP/GEF: Habitat and species loss|https://www.unep.org/gef/focal-areas/biodiversity/our-work/habitat-and-species-loss"
+      ],
+      "pageUrl": "/begriffe/habitatfragmentierung/",
+      "priority": 145,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Biodiversitätsbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Habitatfragmentierung beschreibt die Zerschneidung zusammenhängender Lebensräume in kleinere, isolierte Teilflächen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "habitatfragmentierung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "habitatverlust",
+      "termId": "habitatverlust",
+      "label": "Habitatverlust",
+      "canonicalLabel": "Habitatverlust",
+      "slug": "habitatverlust",
+      "aliases": [
+        "Habitatverlust",
+        "Habitat Loss",
+        "Lebensraumverlust",
+        "Verlust von Lebensräumen",
+        "Lebensraumzerstörung",
+        "Herdenschutz"
+      ],
+      "synonyms": [
+        "Habitatverlust",
+        "Habitat Loss",
+        "Lebensraumverlust",
+        "Verlust von Lebensräumen",
+        "Lebensraumzerstörung",
+        "Herdenschutz"
+      ],
+      "shortDefinition": "Habitatverlust bezeichnet den Verlust oder die starke Schädigung von Lebensräumen für Arten und Ökosysteme.",
+      "definition": "Habitatverlust entsteht etwa durch Landnutzungsänderung, Entwaldung, Versiegelung, Infrastruktur, Landwirtschaft, Rohstoffabbau oder Verschmutzung. Er ist ein zentraler Treiber von Biodiversitätsverlust.",
+      "longDefinition": "Habitatverlust entsteht etwa durch Landnutzungsänderung, Entwaldung, Versiegelung, Infrastruktur, Landwirtschaft, Rohstoffabbau oder Verschmutzung. Er ist ein zentraler Treiber von Biodiversitätsverlust.",
+      "woekRelation": "Die WÖk macht Habitatverlust als nicht kompensierbare Naturwirkung sichtbar, besonders bei Produkten, Lieferketten, Flächenverbrauch und Investitionen.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 75,
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "habitatfragmentierung",
+        "nature-related-risks",
+        "ipbes",
+        "eudr"
+      ],
+      "officialSources": [
+        "IPBES: Global Assessment Report on Biodiversity and Ecosystem Services|https://www.ipbes.net/global-assessment",
+        "UNEP/GEF: Habitat and species loss|https://www.unep.org/gef/focal-areas/biodiversity/our-work/habitat-and-species-loss"
+      ],
+      "pageUrl": "/begriffe/habitatverlust/",
+      "priority": 165,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Biodiversitätsbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Habitatverlust bezeichnet den Verlust oder die starke Schädigung von Lebensräumen für Arten und Ökosysteme.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "habitatverlust",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "haltung",
+      "termId": "haltung",
+      "label": "Haltung",
+      "canonicalLabel": "Haltung",
+      "slug": "haltung",
+      "aliases": [
+        "Haltung",
+        "moralische Haltung",
+        "Einstellung",
+        "Mindset"
+      ],
+      "synonyms": [
+        "Haltung",
+        "moralische Haltung",
+        "Einstellung",
+        "Mindset"
+      ],
+      "shortDefinition": "Haltung beschreibt eine innere Orientierung. Sie kann Wirkungspotenzial prägen, ist aber nicht automatisch Wirkung.",
+      "definition": "Haltung meint Werte, Perspektiven und Bereitschaften, aus denen Entscheidungen entstehen können. Wirkung entsteht erst, wenn sich durch Handlungen oder Strukturen reale Zustände verändern.",
+      "longDefinition": "Haltung meint Werte, Perspektiven und Bereitschaften, aus denen Entscheidungen entstehen können. Wirkung entsteht erst, wenn sich durch Handlungen oder Strukturen reale Zustände verändern.",
+      "woekRelation": "Die WÖk grenzt Wirkung von bloßer Haltung ab. Eine Haltung kann wichtig sein, ersetzt aber keine Prüfung von Folgen, Nebenwirkungen und Rückkopplungen.",
+      "statusNote": "",
+      "usageNote": "Nicht moralisch überhöhen: Gute Haltung ist kein Nachweis guter Wirkung.",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungskompetenz",
+        "folgencheck"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/haltung/",
+      "priority": 205,
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Haltung kann Wirkung vorbereiten, beweist aber noch keine reale Zustandsveränderung.",
+      "doNotConfuseWith": [
+        "Wirkung",
+        "Wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "haltung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "handlung",
+      "termId": "handlung",
+      "label": "Handlung",
+      "canonicalLabel": "Handlung",
+      "slug": "handlung",
+      "aliases": [
+        "Handlung",
+        "Action",
+        "Eingriff",
+        "Entscheidungshandlung"
+      ],
+      "synonyms": [
+        "Handlung",
+        "Action",
+        "Eingriff",
+        "Entscheidungshandlung"
+      ],
+      "shortDefinition": "Handlung ist ein Eingriff in ein System. Sie kann Wirkung auslösen, ist aber nicht selbst schon Wirkung.",
+      "definition": "Handlung bezeichnet eine Entscheidung, Maßnahme oder Tätigkeit, die Zustände verändern kann. In der WÖk ist wichtig: Eine Handlung ist der Ausgangspunkt, Wirkung ist die tatsächliche Zustandsveränderung danach.",
+      "longDefinition": "Handlung bezeichnet eine Entscheidung, Maßnahme oder Tätigkeit, die Zustände verändern kann. In der WÖk ist wichtig: Eine Handlung ist der Ausgangspunkt, Wirkung ist die tatsächliche Zustandsveränderung danach.",
+      "woekRelation": "Die WÖk trennt Handlung, Absicht, Output und Wirkung. Dadurch wird sichtbar, ob eine gut gemeinte Handlung reale positive Netto-Wirkung erzeugt oder Nebenwirkungen auslöst.",
+      "statusNote": "",
+      "usageNote": "Nicht als Synonym für Wirkung verwenden. Handlung beschreibt das Tun, Wirkung beschreibt die Veränderung.",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsbewertung"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/handlung/",
+      "priority": 210,
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Handlung ist das Tun oder Entscheiden, das Wirkung auslösen kann, aber noch nicht die Wirkung selbst ist.",
+      "doNotConfuseWith": [
+        "Wirkung",
+        "Output",
+        "Absicht"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "handlung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "handlungsdruck",
+      "termId": "handlungsdruck",
+      "label": "Handlungsdruck",
+      "canonicalLabel": "Handlungsdruck",
+      "slug": "handlungsdruck",
+      "aliases": [
+        "Handlungsdruck",
+        "Entscheidungsdruck",
+        "Transformationsdruck",
+        "Krisendruck"
+      ],
+      "synonyms": [
+        "Handlungsdruck",
+        "Entscheidungsdruck",
+        "Transformationsdruck",
+        "Krisendruck"
+      ],
+      "shortDefinition": "Handlungsdruck ist ein durch Risiken, Daten, Krisen oder Zielverfehlungen erzeugter Entscheidungsdruck.",
+      "definition": "Handlungsdruck entsteht, wenn bestehende Zustände nicht tragfähig bleiben: etwa durch Klimarisiken, soziale Folgekosten, Datenlücken, Gesundheitsbelastungen oder Vertrauensverlust.",
+      "longDefinition": "Handlungsdruck entsteht, wenn bestehende Zustände nicht tragfähig bleiben: etwa durch Klimarisiken, soziale Folgekosten, Datenlücken, Gesundheitsbelastungen oder Vertrauensverlust.",
+      "woekRelation": "Die WÖk unterscheidet Handlungsdruck von Wirkung. Druck kann gute Entscheidungen auslösen, kann aber auch Fehlsteuerung, Aktionismus oder Verdrängung erzeugen.",
+      "statusNote": "",
+      "usageNote": "Nicht mit Wirkung verwechseln: Handlungsdruck beschreibt den Anlass, nicht das Ergebnis.",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "folgencheck",
+        "wirkungsresilienz"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/handlungsdruck/",
+      "priority": 160,
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Handlungsdruck ist ein durch Risiken, Daten, Krisen oder Zielverfehlungen erzeugter Entscheidungsdruck.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "handlungsdruck",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "handlungsfaehigkeit",
+      "termId": "handlungsfaehigkeit",
+      "label": "Handlungsfähigkeit",
+      "canonicalLabel": "Handlungsfähigkeit",
+      "slug": "handlungsfaehigkeit",
+      "aliases": [
+        "Handlungsfähigkeit",
+        "agency",
+        "Handlungsvermögen",
+        "kollektive Handlungsfähigkeit"
+      ],
+      "synonyms": [
+        "Handlungsfähigkeit",
+        "agency",
+        "Handlungsvermögen",
+        "kollektive Handlungsfähigkeit"
+      ],
+      "shortDefinition": "Handlungsfähigkeit ist die Fähigkeit von Menschen, Institutionen oder Systemen, wirksam auf Risiken, Krisen und Chancen zu reagieren.",
+      "definition": "Handlungsfähigkeit beschreibt, ob Akteure reale Mittel, Rechte, Kompetenzen, Informationen und Spielräume haben, um Zustände zu verändern. Sie ist eine Voraussetzung für Resilienz und demokratische Teilhabe.",
+      "longDefinition": "Handlungsfähigkeit beschreibt, ob Akteure reale Mittel, Rechte, Kompetenzen, Informationen und Spielräume haben, um Zustände zu verändern. Sie ist eine Voraussetzung für Resilienz und demokratische Teilhabe.",
+      "woekRelation": "In der WÖk zeigt Handlungsfähigkeit, ob Wirkung nicht nur gefordert, sondern praktisch möglich gemacht wird: durch Daten, Ressourcen, Bildung, Rechte, Finanzierung und Schutzgrenzen.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "handlungsspielraum",
+        "wirkungsresilienz",
+        "wirkungskompetenz"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/handlungsfaehigkeit/",
+      "priority": 200,
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Handlungsfähigkeit ist die Fähigkeit von Menschen, Institutionen oder Systemen, wirksam auf Risiken, Krisen und Chancen zu reagieren.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "handlungsfahigkeit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "handlungspfad",
+      "termId": "handlungspfad",
+      "label": "Handlungspfad",
+      "canonicalLabel": "Handlungspfad",
+      "slug": "handlungspfad",
+      "aliases": [
+        "Handlungspfad",
+        "Action Pathway",
+        "Entscheidungspfad",
+        "Maßnahmenpfad",
+        "Massnahmenpfad"
+      ],
+      "synonyms": [
+        "Handlungspfad",
+        "Action Pathway",
+        "Entscheidungspfad",
+        "Maßnahmenpfad",
+        "Massnahmenpfad"
+      ],
+      "shortDefinition": "Ein Handlungspfad beschreibt, wie Entscheidungen und Maßnahmen in spätere Wirkungsräume führen.",
+      "definition": "Handlungspfade verbinden Ziele, Maßnahmen, Ressourcen, Zuständigkeiten und erwartete Folgen. Sie zeigen, welche Abfolge von Entscheidungen Wirkung wahrscheinlicher macht oder Risiken verstärkt.",
+      "longDefinition": "Handlungspfade verbinden Ziele, Maßnahmen, Ressourcen, Zuständigkeiten und erwartete Folgen. Sie zeigen, welche Abfolge von Entscheidungen Wirkung wahrscheinlicher macht oder Risiken verstärkt.",
+      "woekRelation": "In der WÖk ergänzt der Handlungspfad den Wirkungspfad: Der Handlungspfad beschreibt das Vorgehen, der Wirkungspfad beschreibt die Veränderungskette und Rückkopplung.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungspfad",
+        "handlung",
+        "folgencheck",
+        "wirkungsraum"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/handlungspfad/",
+      "priority": 155,
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Ein Handlungspfad beschreibt, wie Entscheidungen und Maßnahmen in spätere Wirkungsräume führen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "handlungspfad",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "handlungsspielraum",
+      "termId": "handlungsspielraum",
+      "label": "Handlungsspielraum",
+      "canonicalLabel": "Handlungsspielraum",
+      "slug": "handlungsspielraum",
+      "aliases": [
+        "Handlungsspielraum",
+        "Handlungsoptionen",
+        "realer Spielraum",
+        "Option Space"
+      ],
+      "synonyms": [
+        "Handlungsspielraum",
+        "Handlungsoptionen",
+        "realer Spielraum",
+        "Option Space"
+      ],
+      "shortDefinition": "Handlungsspielraum beschreibt, welche realen Optionen Menschen, Organisationen oder Institutionen tatsächlich haben.",
+      "definition": "Handlungsspielraum ist mehr als formale Freiheit. Er hängt von Einkommen, Zeit, Bildung, Gesundheit, Datenzugang, Infrastruktur, Recht, Machtverhältnissen und Risiken ab.",
+      "longDefinition": "Handlungsspielraum ist mehr als formale Freiheit. Er hängt von Einkommen, Zeit, Bildung, Gesundheit, Datenzugang, Infrastruktur, Recht, Machtverhältnissen und Risiken ab.",
+      "woekRelation": "Die WÖk nutzt Handlungsspielraum, um soziale und demokratische Wirkung konkret zu fassen: Eine Maßnahme wirkt anders, wenn Menschen real wählen können oder nur theoretisch.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "handlungsfaehigkeit",
+        "wirkung",
+        "wirkungskompetenz",
+        "mensch-planet-demokratie"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/handlungsspielraum/",
+      "priority": 198,
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Handlungsspielraum beschreibt, welche realen Optionen Menschen, Organisationen oder Institutionen tatsächlich haben.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "handlungsspielraum",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "hard-to-abate-sektoren",
+      "termId": "hard-to-abate-sektoren",
+      "label": "Hard-to-abate-Sektoren",
+      "canonicalLabel": "Hard-to-abate-Sektoren",
+      "slug": "hard-to-abate-sektoren",
+      "aliases": [
+        "Hard-to-abate-Sektoren",
+        "Hard to abate",
+        "hard-to-abate sectors",
+        "schwer dekarbonisierbare Sektoren",
+        "schwer vermeidbare Emissionen",
+        "schwer zu dekarbonisierende Sektoren",
+        "H2",
+        "Hydrogen",
+        "Wasserstoff",
+        "grüner Wasserstoff",
+        "gruener Wasserstoff",
+        "H2-ready",
+        "HVO",
+        "Hydrotreated Vegetable Oil"
+      ],
+      "synonyms": [
+        "Hard-to-abate-Sektoren",
+        "Hard to abate",
+        "hard-to-abate sectors",
+        "schwer dekarbonisierbare Sektoren",
+        "schwer vermeidbare Emissionen",
+        "schwer zu dekarbonisierende Sektoren",
+        "H2",
+        "Hydrogen",
+        "Wasserstoff",
+        "grüner Wasserstoff",
+        "gruener Wasserstoff",
+        "H2-ready",
+        "HVO",
+        "Hydrotreated Vegetable Oil"
+      ],
+      "shortDefinition": "Hard-to-abate-Sektoren sind Bereiche, in denen Emissionen technisch, wirtschaftlich oder infrastrukturell besonders schwer zu senken sind.",
+      "definition": "Dazu zählen häufig Teile der Grundstoffindustrie und des Langstreckentransports, etwa Stahl, Zement, Chemie, Schifffahrt, Luftfahrt oder Schwerlastverkehr.",
+      "longDefinition": "Dazu zählen häufig Teile der Grundstoffindustrie und des Langstreckentransports, etwa Stahl, Zement, Chemie, Schifffahrt, Luftfahrt oder Schwerlastverkehr.",
+      "woekRelation": "Die WÖk nutzt den Begriff, um Transformation realistisch zu bewerten: Nicht jede negative Wirkung ist sofort vermeidbar, aber Fortschritt, Pfade, Investitionen und Schutzgrenzen müssen sichtbar bleiben.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 79,
+      "relatedTerms": [
+        "transition-risk",
+        "transition-finance",
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ],
+      "officialSources": [
+        "International Energy Agency: CCUS in the transition to net-zero emissions|https://www.iea.org/reports/ccus-in-clean-energy-transitions/ccus-in-the-transition-to-net-zero-emissions"
+      ],
+      "pageUrl": "/begriffe/hard-to-abate-sektoren/",
+      "priority": 155,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Klima- und Transformationsbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Hard-to-abate-Sektoren sind Bereiche, in denen Emissionen technisch, wirtschaftlich oder infrastrukturell besonders schwer zu senken sind.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hard-to-abate-sektoren",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "haushaltsneutralitaet",
+      "termId": "haushaltsneutralitaet",
+      "label": "Haushaltsneutralität",
+      "canonicalLabel": "Haushaltsneutralität",
+      "slug": "haushaltsneutralitaet",
+      "aliases": [
+        "Haushaltsneutralität",
+        "haushaltsneutral",
+        "fiskalisch neutral",
+        "budgetneutral",
+        "aufkommensneutral",
+        "revenue neutral"
+      ],
+      "synonyms": [
+        "Haushaltsneutralität",
+        "haushaltsneutral",
+        "fiskalisch neutral",
+        "budgetneutral",
+        "aufkommensneutral",
+        "revenue neutral"
+      ],
+      "shortDefinition": "Haushaltsneutralität bedeutet, dass ein Staat nicht zwingend mehr einnimmt, sondern Einnahmen und Lasten anders verteilt.",
+      "definition": "Eine haushaltsneutrale Steuer- oder Förderlogik verändert die Verteilung von Belastungen und Entlastungen, ohne automatisch den Gesamthaushalt auszuweiten. Entscheidend ist, welche Wirkungen teurer oder günstiger werden.",
+      "longDefinition": "Eine haushaltsneutrale Steuer- oder Förderlogik verändert die Verteilung von Belastungen und Entlastungen, ohne automatisch den Gesamthaushalt auszuweiten. Entscheidend ist, welche Wirkungen teurer oder günstiger werden.",
+      "woekRelation": "Bei Wirkungssteuern ist Haushaltsneutralität wichtig: Die WÖk kann Steuerlasten nach Wirkung verschieben, ohne daraus pauschal ein Mehrbelastungsmodell zu machen.",
+      "statusNote": "",
+      "usageNote": "Haushaltsneutralität ist ein Ausgestaltungsprinzip, keine automatische Garantie für jede einzelne Umsetzung.",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/haushaltsneutralitaet/",
+      "priority": 185,
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Steuerung und Haushalt",
+      "hoverDefinition": "Haushaltsneutralität bedeutet, dass ein Staat nicht zwingend mehr einnimmt, sondern Einnahmen und Lasten anders verteilt.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "haushaltsneutralitat",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "hazardous-substances",
+      "termId": "hazardous-substances",
+      "label": "Hazardous Substances / gefährliche Stoffe",
+      "canonicalLabel": "Hazardous Substances / gefährliche Stoffe",
+      "slug": "hazardous-substances",
+      "aliases": [
+        "Hazardous Substances / gefährliche Stoffe",
+        "Hazardous Substances",
+        "gefährliche Stoffe",
+        "gefaehrliche Stoffe",
+        "Schadstoffe",
+        "Chemikalienrisiko",
+        "substances of concern",
+        "Havarie",
+        "Umwelthavarie",
+        "halogenierte Treibhausgase"
+      ],
+      "synonyms": [
+        "Hazardous Substances / gefährliche Stoffe",
+        "Hazardous Substances",
+        "gefährliche Stoffe",
+        "gefaehrliche Stoffe",
+        "Schadstoffe",
+        "Chemikalienrisiko",
+        "substances of concern",
+        "Havarie",
+        "Umwelthavarie",
+        "halogenierte Treibhausgase"
+      ],
+      "shortDefinition": "Hazardous Substances sind Stoffe, die Risiken für Gesundheit, Umwelt, Arbeitsschutz oder Ökosysteme verursachen können.",
+      "definition": "Gefährliche Stoffe werden in Chemikalienrecht, Produktdaten, Arbeitsschutz, Umweltrecht und Lieferketten relevant. Ihre Wirkung hängt von Eigenschaften, Exposition, Nutzung, Entsorgung und Risikomanagement ab.",
+      "longDefinition": "Gefährliche Stoffe werden in Chemikalienrecht, Produktdaten, Arbeitsschutz, Umweltrecht und Lieferketten relevant. Ihre Wirkung hängt von Eigenschaften, Exposition, Nutzung, Entsorgung und Risikomanagement ab.",
+      "woekRelation": "Die WÖk behandelt gefährliche Stoffe als Produkt- und Lieferkettenwirkung. Risiken dürfen nicht hinter Preis, Marketing oder Kompensation verschwinden.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "produkt-und-lebenszyklusdaten",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 26,
+      "relatedTerms": [
+        "lca",
+        "produktdaten",
+        "digitaler-produktpass",
+        "pef-product-environmental-footprint"
+      ],
+      "officialSources": [
+        "European Chemicals Agency: Understanding REACH|https://www.echa.europa.eu/regulations/reach/understanding-reach"
+      ],
+      "pageUrl": "/begriffe/hazardous-substances/",
+      "priority": 150,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Chemikalien- und Produktdatenbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "hoverDefinition": "Hazardous Substances sind Stoffe, die Risiken für Gesundheit, Umwelt, Arbeitsschutz oder Ökosysteme verursachen können.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hazardous substances / gefahrliche stoffe",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "health-co-benefits",
+      "termId": "health-co-benefits",
+      "label": "Health Co-Benefits / Gesundheits-Co-Benefits",
+      "canonicalLabel": "Health Co-Benefits / Gesundheits-Co-Benefits",
+      "slug": "health-co-benefits",
+      "aliases": [
+        "Health Co-Benefits / Gesundheits-Co-Benefits",
+        "Health Co-Benefits",
+        "Gesundheits-Co-Benefits",
+        "Gesundheitsnutzen",
+        "gesundheitliche Zusatznutzen",
+        "Co-Benefits Gesundheit"
+      ],
+      "synonyms": [
+        "Health Co-Benefits / Gesundheits-Co-Benefits",
+        "Health Co-Benefits",
+        "Gesundheits-Co-Benefits",
+        "Gesundheitsnutzen",
+        "gesundheitliche Zusatznutzen",
+        "Co-Benefits Gesundheit"
+      ],
+      "shortDefinition": "Health Co-Benefits sind gesundheitliche Zusatznutzen von Maßnahmen, die primär aus anderen Gründen ergriffen werden, etwa Klima- oder Verkehrspolitik.",
+      "definition": "Klimaschutz, saubere Luft, aktive Mobilität, Hitzeschutz oder bessere Gebäude können gleichzeitig Gesundheitsbelastungen senken. Diese zusätzlichen positiven Folgen werden als Health Co-Benefits bezeichnet.",
+      "longDefinition": "Klimaschutz, saubere Luft, aktive Mobilität, Hitzeschutz oder bessere Gebäude können gleichzeitig Gesundheitsbelastungen senken. Diese zusätzlichen positiven Folgen werden als Health Co-Benefits bezeichnet.",
+      "woekRelation": "Die WÖk macht solche Nebenwirkungen sichtbar, damit positive Netto-Wirkung nicht zu eng auf ein Einzelziel reduziert wird.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 71,
+      "relatedTerms": [
+        "health-impact-assessment",
+        "sdgs",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "officialSources": [
+        "World Health Organization: Health and air pollution co-benefits of climate change mitigation|https://www.who.int/publications/i/item/B09460",
+        "World Health Organization: Heat and health|https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health"
+      ],
+      "pageUrl": "/begriffe/health-co-benefits/",
+      "priority": 145,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Gesundheits- und Klimabegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Health Co-Benefits sind gesundheitliche Zusatznutzen von Maßnahmen, die primär aus anderen Gründen ergriffen werden, etwa Klima- oder Verkehrspolitik.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "health co-benefits / gesundheits-co-benefits",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "health-impact-assessment",
+      "termId": "health-impact-assessment",
+      "label": "Health Impact Assessment / HIA",
+      "canonicalLabel": "Health Impact Assessment / HIA",
+      "slug": "health-impact-assessment",
+      "aliases": [
+        "Health Impact Assessment / HIA",
+        "Health Impact Assessment",
+        "HIA",
+        "Gesundheitsfolgenabschätzung",
+        "Gesundheits-Folgenabschätzung",
+        "Gesundheitswirkungsanalyse",
+        "Hygiene",
+        "Sanitärversorgung",
+        "Sanitaerversorgung"
+      ],
+      "synonyms": [
+        "Health Impact Assessment / HIA",
+        "Health Impact Assessment",
+        "HIA",
+        "Gesundheitsfolgenabschätzung",
+        "Gesundheits-Folgenabschätzung",
+        "Gesundheitswirkungsanalyse",
+        "Hygiene",
+        "Sanitärversorgung",
+        "Sanitaerversorgung"
+      ],
+      "shortDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
+      "definition": "HIA bewertet gesundheitliche Folgen und ihre Verteilung in der Bevölkerung, besonders für vulnerable Gruppen. Es verbindet Daten, Beteiligung, Empfehlungen, Monitoring und Evaluation.",
+      "longDefinition": "HIA bewertet gesundheitliche Folgen und ihre Verteilung in der Bevölkerung, besonders für vulnerable Gruppen. Es verbindet Daten, Beteiligung, Empfehlungen, Monitoring und Evaluation.",
+      "woekRelation": "Die WÖk nutzt HIA als Anschlussmethode, um Gesundheitswirkung nicht als Nebenthema, sondern als messbare und vorsorgende Wirkung in Entscheidungen einzubauen.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 70,
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "sdgs",
+        "hitzestress",
+        "health-co-benefits"
+      ],
+      "officialSources": [
+        "World Health Organization: Health impact assessment|https://www.who.int/health-topics/health-impact-assessment",
+        "World Health Organization: Health impact assessment methods|https://www.who.int/tools/health-impact-assessments"
+      ],
+      "pageUrl": "/begriffe/health-impact-assessment/",
+      "priority": 175,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Gesundheits- und Methodenbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "health impact assessment / hia",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hebelpunkt",
+      "termId": "hebelpunkt",
+      "label": "Hebel / Hebelpunkt",
+      "canonicalLabel": "Hebel / Hebelpunkt",
+      "slug": "hebelpunkt",
+      "aliases": [
+        "Hebel / Hebelpunkt",
+        "Hebel",
+        "Hebelpunkt",
+        "Systemhebel",
+        "Wirkungshebel",
+        "Leverage Point",
+        "Leverage Points"
+      ],
+      "synonyms": [
+        "Hebel / Hebelpunkt",
+        "Hebel",
+        "Hebelpunkt",
+        "Systemhebel",
+        "Wirkungshebel",
+        "Leverage Point",
+        "Leverage Points"
+      ],
+      "shortDefinition": "Ein Hebelpunkt ist eine Stelle im System, an der eine Veränderung besonders starke Folgewirkungen auslösen kann.",
+      "definition": "Hebelpunkte sind Eingriffspunkte, an denen Regeln, Anreize, Daten, Preise, Routinen oder Machtverteilungen verändert werden können. Kleine Änderungen können dort große Wirkung entfalten.",
+      "longDefinition": "Hebelpunkte sind Eingriffspunkte, an denen Regeln, Anreize, Daten, Preise, Routinen oder Machtverteilungen verändert werden können. Kleine Änderungen können dort große Wirkung entfalten.",
+      "woekRelation": "Die WÖk sucht Hebelpunkte nicht nur in Verhalten, sondern in Rückkopplungen: Preise, Steuern, Kapitalflüsse, Beschaffung, Standards, Datenräume und politische Steuerung.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "hebelwirkung",
+        "wirkungsrueckkopplung",
+        "wirkungspfad",
+        "wirkungssteuer"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/hebelpunkt/",
+      "priority": 195,
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Ein Hebelpunkt ist eine Stelle im System, an der eine Veränderung besonders starke Folgewirkungen auslösen kann.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hebel / hebelpunkt",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "hebelwirkung",
+      "termId": "hebelwirkung",
+      "label": "Hebelwirkung",
+      "canonicalLabel": "Hebelwirkung",
+      "slug": "hebelwirkung",
+      "aliases": [
+        "Hebelwirkung",
+        "Leverage",
+        "Systemwirkung eines Hebels",
+        "Wirkungsverstärkung"
+      ],
+      "synonyms": [
+        "Hebelwirkung",
+        "Leverage",
+        "Systemwirkung eines Hebels",
+        "Wirkungsverstärkung"
+      ],
+      "shortDefinition": "Hebelwirkung beschreibt, wie stark ein Eingriff spätere Anreize, Routinen, Daten, Preise oder Entscheidungen verändert.",
+      "definition": "Hebelwirkung entsteht, wenn eine Maßnahme nicht nur direkt wirkt, sondern weitere Entscheidungen und Rückkopplungen verändert. Dadurch kann Wirkung verstärkt, abgeschwächt oder in eine falsche Richtung gelenkt werden.",
+      "longDefinition": "Hebelwirkung entsteht, wenn eine Maßnahme nicht nur direkt wirkt, sondern weitere Entscheidungen und Rückkopplungen verändert. Dadurch kann Wirkung verstärkt, abgeschwächt oder in eine falsche Richtung gelenkt werden.",
+      "woekRelation": "Für die WÖk ist Hebelwirkung zentral, weil Wirkung nicht punktuell bleibt. Sie entfaltet sich über Rückkopplungen in Märkten, Institutionen, Medien, Kapital und Verhalten.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "grundbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "hebelpunkt",
+        "wirkungsrueckkopplung",
+        "wirkungspfad",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/hebelwirkung/",
+      "priority": 190,
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "category": "WÖk-Begriff",
+      "source": "WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Grundbegriffe",
+      "hoverDefinition": "Hebelwirkung beschreibt, wie stark ein Eingriff spätere Anreize, Routinen, Daten, Preise oder Entscheidungen verändert.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hebelwirkung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
       "id": "herkunftsnachweis-hkn",
       "termId": "herkunftsnachweis-hkn",
       "label": "Herkunftsnachweis / HKN",
@@ -2691,7 +3674,9 @@
         "GoO",
         "Ökostromnachweis",
         "Gruenstromnachweis",
-        "Grünstromnachweis"
+        "Grünstromnachweis",
+        "Herkunftstracking",
+        "Strom-Herkunftsnachweis"
       ],
       "synonyms": [
         "Herkunftsnachweis / HKN",
@@ -2705,7 +3690,9 @@
         "GoO",
         "Ökostromnachweis",
         "Gruenstromnachweis",
-        "Grünstromnachweis"
+        "Grünstromnachweis",
+        "Herkunftstracking",
+        "Strom-Herkunftsnachweis"
       ],
       "shortDefinition": "Ein Herkunftsnachweis ist ein elektronischer Nachweis dafür, wo und wie eine bestimmte Menge Strom aus erneuerbaren Energien erzeugt wurde.",
       "definition": "Herkunftsnachweise werden in Deutschland über das Herkunftsnachweisregister des Umweltbundesamts verwaltet. Stromversorger müssen Herkunftsnachweise entwerten, wenn sie gelieferte Strommengen als erneuerbaren Strom kennzeichnen.",
@@ -2729,7 +3716,8 @@
         "greenwashing",
         "produktdaten",
         "wirkungsdaten",
-        "digitaler-produktpass"
+        "digitaler-produktpass",
+        "herkunftstransparenz"
       ],
       "officialSources": [
         "Umweltbundesamt: Herkunftsnachweisregister für Strom|https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/herkunftsnachweisregister-fuer-strom",
@@ -2766,6 +3754,743 @@
       ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "Herkunftsnachweis HKN",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "herkunftstransparenz",
+      "termId": "herkunftstransparenz",
+      "label": "Herkunftstransparenz",
+      "canonicalLabel": "Herkunftstransparenz",
+      "slug": "herkunftstransparenz",
+      "aliases": [
+        "Herkunftstransparenz",
+        "Herkunftsdaten",
+        "Herkunftsrisiko",
+        "Origin Transparency",
+        "Provenance Transparency",
+        "Nachvollziehbarkeit der Herkunft"
+      ],
+      "synonyms": [
+        "Herkunftstransparenz",
+        "Herkunftsdaten",
+        "Herkunftsrisiko",
+        "Origin Transparency",
+        "Provenance Transparency",
+        "Nachvollziehbarkeit der Herkunft"
+      ],
+      "shortDefinition": "Herkunftstransparenz macht sichtbar, woher ein Produkt, Rohstoff, Energieanteil oder Datenpunkt stammt.",
+      "definition": "Herkunftstransparenz verbindet Lieferketten, Produktdaten und Nachweise. Sie zeigt Herkunft, Vorleistungen, Risiken, Zertifikate und Datenqualität entlang einer Wertschöpfungskette.",
+      "longDefinition": "Herkunftstransparenz verbindet Lieferketten, Produktdaten und Nachweise. Sie zeigt Herkunft, Vorleistungen, Risiken, Zertifikate und Datenqualität entlang einer Wertschöpfungskette.",
+      "woekRelation": "Die WÖk braucht Herkunftstransparenz, um Produktwirkung, Lieferkettenwirkung, Green Claims und digitale Produktpässe prüfbar zu machen.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "produkt-und-lebenszyklusdaten",
+        "lieferketten-und-sorgfaltspflichten"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 24,
+      "relatedTerms": [
+        "herkunftsnachweis-hkn",
+        "digitaler-produktpass",
+        "produktdaten",
+        "lieferkettendaten",
+        "eudr"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html",
+        "OECD: Due diligence for responsible business conduct|https://www.oecd.org/en/topics/sub-issues/due-diligence-guidance-for-responsible-business-conduct.html"
+      ],
+      "pageUrl": "/begriffe/herkunftstransparenz/",
+      "priority": 170,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Daten- und Lieferkettenbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "hoverDefinition": "Herkunftstransparenz macht sichtbar, woher ein Produkt, Rohstoff, Energieanteil oder Datenpunkt stammt.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "herkunftstransparenz",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hfcs-hydrofluorocarbons",
+      "termId": "hfcs-hydrofluorocarbons",
+      "label": "HFCs / Hydrofluorocarbons",
+      "canonicalLabel": "HFCs / Hydrofluorocarbons",
+      "slug": "hfcs-hydrofluorocarbons",
+      "aliases": [
+        "HFCs / Hydrofluorocarbons",
+        "HFCs",
+        "Hydrofluorocarbons",
+        "teilfluorierte Kohlenwasserstoffe",
+        "teilfluorierte Fluorkohlenwasserstoffe",
+        "F-Gase",
+        "fluorierte Treibhausgase"
+      ],
+      "synonyms": [
+        "HFCs / Hydrofluorocarbons",
+        "HFCs",
+        "Hydrofluorocarbons",
+        "teilfluorierte Kohlenwasserstoffe",
+        "teilfluorierte Fluorkohlenwasserstoffe",
+        "F-Gase",
+        "fluorierte Treibhausgase"
+      ],
+      "shortDefinition": "HFCs sind synthetische fluorierte Gase, die häufig als Kältemittel genutzt werden und als Treibhausgase klimawirksam sein können.",
+      "definition": "Hydrofluorocarbons wurden unter anderem als Ersatzstoffe für ozonschädigende Substanzen eingesetzt. Viele HFCs haben hohe Treibhauswirkung und sind daher für Klimabilanzen, Kühlung, Gebäude und Industrie relevant.",
+      "longDefinition": "Hydrofluorocarbons wurden unter anderem als Ersatzstoffe für ozonschädigende Substanzen eingesetzt. Viele HFCs haben hohe Treibhauswirkung und sind daher für Klimabilanzen, Kühlung, Gebäude und Industrie relevant.",
+      "woekRelation": "Die WÖk ordnet HFCs als Stoff- und Klimawirkung ein: Nicht nur Energieverbrauch, sondern auch Kältemittel, Leckagen, Lebensdauer und Ersatzpfade zählen.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 80,
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3",
+        "physical-climate-risk"
+      ],
+      "officialSources": [
+        "IPCC AR6 WGI Chapter 2: Hydrofluorocarbons|https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-2/"
+      ],
+      "pageUrl": "/begriffe/hfcs-hydrofluorocarbons/",
+      "priority": 130,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Klima- und Stoffbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "HFCs sind synthetische fluorierte Gase, die häufig als Kältemittel genutzt werden und als Treibhausgase klimawirksam sein können.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hfcs / hydrofluorocarbons",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hitzeschutz-hitzeaktionsplan",
+      "termId": "hitzeschutz-hitzeaktionsplan",
+      "label": "Hitzeschutz / Hitzeaktionsplan",
+      "canonicalLabel": "Hitzeschutz / Hitzeaktionsplan",
+      "slug": "hitzeschutz-hitzeaktionsplan",
+      "aliases": [
+        "Hitzeschutz / Hitzeaktionsplan",
+        "Hitzeschutz",
+        "Hitzeaktionsplan",
+        "Heat-Health Action Plan",
+        "HHAP",
+        "Hitze-Gesundheits-Aktionsplan",
+        "Heat Action Plan"
+      ],
+      "synonyms": [
+        "Hitzeschutz / Hitzeaktionsplan",
+        "Hitzeschutz",
+        "Hitzeaktionsplan",
+        "Heat-Health Action Plan",
+        "HHAP",
+        "Hitze-Gesundheits-Aktionsplan",
+        "Heat Action Plan"
+      ],
+      "shortDefinition": "Hitzeschutz bündelt Maßnahmen, die Menschen und Institutionen vor Gesundheitsrisiken durch Hitze schützen.",
+      "definition": "Hitzeaktionspläne verbinden Frühwarnung, Gesundheitsinformation, Schutz vulnerabler Gruppen, Innenraumkühlung, Pflege- und Gesundheitssysteme, Stadtplanung, Monitoring und Evaluation.",
+      "longDefinition": "Hitzeaktionspläne verbinden Frühwarnung, Gesundheitsinformation, Schutz vulnerabler Gruppen, Innenraumkühlung, Pflege- und Gesundheitssysteme, Stadtplanung, Monitoring und Evaluation.",
+      "woekRelation": "Die WÖk betrachtet Hitzeschutz als kommunale und gesundheitliche Wirkleistung: Prävention verhindert Schäden, Folgekosten und soziale Ungleichheit.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 73,
+      "relatedTerms": [
+        "hitzestress",
+        "health-impact-assessment",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
+      ],
+      "officialSources": [
+        "WHO/Europe: Planning heat-health action|https://www.who.int/europe/health-topics/climate-change/planning-heat-health-action",
+        "World Health Organization: Heat and health|https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health"
+      ],
+      "pageUrl": "/begriffe/hitzeschutz-hitzeaktionsplan/",
+      "priority": 168,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Klima- und Gesundheitsbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Hitzeschutz bündelt Maßnahmen, die Menschen und Institutionen vor Gesundheitsrisiken durch Hitze schützen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hitzeschutz / hitzeaktionsplan",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hitzestress",
+      "termId": "hitzestress",
+      "label": "Hitzestress",
+      "canonicalLabel": "Hitzestress",
+      "slug": "hitzestress",
+      "aliases": [
+        "Hitzestress",
+        "Heat Stress",
+        "Hitzerisiko",
+        "Hitzebelastung",
+        "extreme Hitze"
+      ],
+      "synonyms": [
+        "Hitzestress",
+        "Heat Stress",
+        "Hitzerisiko",
+        "Hitzebelastung",
+        "extreme Hitze"
+      ],
+      "shortDefinition": "Hitzestress beschreibt gesundheitliche, soziale und infrastrukturelle Belastungen durch hohe Temperaturen und Hitzeereignisse.",
+      "definition": "Hitzestress kann Gesundheit, Arbeit, Pflege, Bildung, Wohnen, Stadtplanung und Infrastruktur belasten. Besonders betroffen sind ältere Menschen, Kinder, chronisch Kranke, Schwangere, Menschen im Freien und schlecht geschützte Haushalte.",
+      "longDefinition": "Hitzestress kann Gesundheit, Arbeit, Pflege, Bildung, Wohnen, Stadtplanung und Infrastruktur belasten. Besonders betroffen sind ältere Menschen, Kinder, chronisch Kranke, Schwangere, Menschen im Freien und schlecht geschützte Haushalte.",
+      "woekRelation": "Für die WÖk ist Hitzestress ein Beispiel dafür, dass Klimawirkung sozial, gesundheitlich und kommunal rückgekoppelt werden muss.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 72,
+      "relatedTerms": [
+        "hitzeschutz-hitzeaktionsplan",
+        "health-impact-assessment",
+        "physical-climate-risk",
+        "wirkungsresilienz"
+      ],
+      "officialSources": [
+        "World Health Organization: Heat and health|https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health",
+        "WHO/Europe: Planning heat-health action|https://www.who.int/europe/health-topics/climate-change/planning-heat-health-action"
+      ],
+      "pageUrl": "/begriffe/hitzestress/",
+      "priority": 170,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Klima- und Gesundheitsbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Hitzestress beschreibt gesundheitliche, soziale und infrastrukturelle Belastungen durch hohe Temperaturen und Hitzeereignisse.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hitzestress",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hochwasserrisiko",
+      "termId": "hochwasserrisiko",
+      "label": "Hochwasserrisiko",
+      "canonicalLabel": "Hochwasserrisiko",
+      "slug": "hochwasserrisiko",
+      "aliases": [
+        "Hochwasserrisiko",
+        "Hochwasser",
+        "Flood Risk",
+        "Überflutungsrisiko",
+        "Ueberflutungsrisiko",
+        "Starkregenrisiko"
+      ],
+      "synonyms": [
+        "Hochwasserrisiko",
+        "Hochwasser",
+        "Flood Risk",
+        "Überflutungsrisiko",
+        "Ueberflutungsrisiko",
+        "Starkregenrisiko"
+      ],
+      "shortDefinition": "Hochwasserrisiko beschreibt die Wahrscheinlichkeit und mögliche Schwere von Schäden durch Überflutung, Starkregen oder steigende Wasserstände.",
+      "definition": "Hochwasserrisiko betrifft Menschen, Gebäude, Infrastruktur, Versicherbarkeit, Wasserqualität, Kommunalhaushalte und soziale Verwundbarkeit. Es verbindet Klimaanpassung, Raumplanung und Vorsorge.",
+      "longDefinition": "Hochwasserrisiko betrifft Menschen, Gebäude, Infrastruktur, Versicherbarkeit, Wasserqualität, Kommunalhaushalte und soziale Verwundbarkeit. Es verbindet Klimaanpassung, Raumplanung und Vorsorge.",
+      "woekRelation": "Die WÖk ordnet Hochwasserrisiko als physisches Klimarisiko ein, das in Haushalt, Bau, Versicherung, Beschaffung und kommunale Resilienz rückgekoppelt werden muss.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 74,
+      "relatedTerms": [
+        "physical-climate-risk",
+        "wasserstress",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
+      ],
+      "officialSources": [
+        "UN-Water: Water and climate change|https://www.unwater.org/water-facts/water-and-climate-change",
+        "World Health Organization: Heat and health|https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health"
+      ],
+      "pageUrl": "/begriffe/hochwasserrisiko/",
+      "priority": 150,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Klima- und Risikobegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Hochwasserrisiko beschreibt die Wahrscheinlichkeit und mögliche Schwere von Schäden durch Überflutung, Starkregen oder steigende Wasserstände.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hochwasserrisiko",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hotspot-analyse",
+      "termId": "hotspot-analyse",
+      "label": "Hotspot-Analyse",
+      "canonicalLabel": "Hotspot-Analyse",
+      "slug": "hotspot-analyse",
+      "aliases": [
+        "Hotspot-Analyse",
+        "Hotspotanalyse",
+        "Hotspot Analysis",
+        "Wirkungshotspot",
+        "Impact Hotspot",
+        "LCA Hotspot"
+      ],
+      "synonyms": [
+        "Hotspot-Analyse",
+        "Hotspotanalyse",
+        "Hotspot Analysis",
+        "Wirkungshotspot",
+        "Impact Hotspot",
+        "LCA Hotspot"
+      ],
+      "shortDefinition": "Hotspot-Analyse identifiziert, wo entlang eines Produkts, Prozesses oder Systems die größten Wirkungen oder Risiken entstehen.",
+      "definition": "Eine Hotspot-Analyse hilft, knappe Aufmerksamkeit auf die wirkungsstärksten Stellen zu lenken: etwa Rohstoffe, Energie, Transport, Nutzung, Entsorgung, Wasserstress oder Arbeitsbedingungen.",
+      "longDefinition": "Eine Hotspot-Analyse hilft, knappe Aufmerksamkeit auf die wirkungsstärksten Stellen zu lenken: etwa Rohstoffe, Energie, Transport, Nutzung, Entsorgung, Wasserstress oder Arbeitsbedingungen.",
+      "woekRelation": "Für die WÖk ist Hotspot-Analyse ein praktischer Einstieg in Wirkung: Erst die größten Wirkungsstellen finden, dann Daten verbessern, Scorecards schärfen und Rückkopplung setzen.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "produkt-und-lebenszyklusdaten",
+        "woek-uebersetzung"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 25,
+      "relatedTerms": [
+        "lca",
+        "pef-product-environmental-footprint",
+        "produktdaten",
+        "wirkungsbewertung",
+        "reverse-merit-order"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+      ],
+      "pageUrl": "/begriffe/hotspot-analyse/",
+      "priority": 165,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Methodenbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "hoverDefinition": "Hotspot-Analyse identifiziert, wo entlang eines Produkts, Prozesses oder Systems die größten Wirkungen oder Risiken entstehen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hotspot-analyse",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "human-rights-due-diligence",
+      "termId": "human-rights-due-diligence",
+      "label": "Human Rights Due Diligence / HRDD",
+      "canonicalLabel": "Human Rights Due Diligence / HRDD",
+      "slug": "human-rights-due-diligence",
+      "aliases": [
+        "Human Rights Due Diligence / HRDD",
+        "Human Rights Due Diligence",
+        "HRDD",
+        "menschenrechtliche Sorgfaltspflicht",
+        "menschenrechtliche Sorgfaltspflichten",
+        "human rights due diligence"
+      ],
+      "synonyms": [
+        "Human Rights Due Diligence / HRDD",
+        "Human Rights Due Diligence",
+        "HRDD",
+        "menschenrechtliche Sorgfaltspflicht",
+        "menschenrechtliche Sorgfaltspflichten",
+        "human rights due diligence"
+      ],
+      "shortDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
+      "definition": "HRDD ist ein internationaler Anschlussbegriff aus den UN-Leitprinzipien und OECD-Leitsätzen. Er umfasst das Erkennen tatsächlicher und möglicher negativer Menschenrechtswirkungen, Gegenmaßnahmen, Wirksamkeitskontrolle, Kommunikation und Abhilfe.",
+      "longDefinition": "HRDD ist ein internationaler Anschlussbegriff aus den UN-Leitprinzipien und OECD-Leitsätzen. Er umfasst das Erkennen tatsächlicher und möglicher negativer Menschenrechtswirkungen, Gegenmaßnahmen, Wirksamkeitskontrolle, Kommunikation und Abhilfe.",
+      "woekRelation": "Die WÖk nutzt HRDD als Daten- und Schutzlogik für Lieferkettenwirkung. Menschenrechte sind keine kompensierbare Nebenbedingung, sondern Schutzgrenze.",
+      "statusNote": "HRDD ist ein internationaler Sorgfaltsstandard. Konkrete Pflichten hängen von Rechtsrahmen wie LkSG oder CSDDD ab.",
+      "usageNote": "HRDD ist ein internationaler Sorgfaltsstandard. Konkrete Pflichten hängen von Rechtsrahmen wie LkSG oder CSDDD ab.",
+      "categories": [
+        "daten-standards-regularien",
+        "lieferketten-und-sorgfaltspflichten"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Lieferketten und Sorgfaltspflichten",
+      "dataStandardsOrder": 45,
+      "relatedTerms": [
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "csddd",
+        "lksg"
+      ],
+      "officialSources": [
+        "OHCHR: UN Guiding Principles on Business and Human Rights|https://www.ohchr.org/documents/publications/guidingprinciplesbusinesshr_en.pdf",
+        "OECD: Due diligence for responsible business conduct|https://www.oecd.org/en/topics/sub-issues/due-diligence-guidance-for-responsible-business-conduct.html"
+      ],
+      "pageUrl": "/begriffe/human-rights-due-diligence/",
+      "priority": 180,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Menschenrechts- und Lieferkettenbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfaltspflichten",
+      "hoverDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "human rights due diligence / hrdd",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "human-rights-impact-assessment",
+      "termId": "human-rights-impact-assessment",
+      "label": "Human Rights Impact Assessment / HRIA",
+      "canonicalLabel": "Human Rights Impact Assessment / HRIA",
+      "slug": "human-rights-impact-assessment",
+      "aliases": [
+        "Human Rights Impact Assessment / HRIA",
+        "Human Rights Impact Assessment",
+        "HRIA",
+        "Menschenrechtsfolgenabschätzung",
+        "Menschenrechts-Folgenabschätzung",
+        "menschenrechtliche Wirkungsanalyse"
+      ],
+      "synonyms": [
+        "Human Rights Impact Assessment / HRIA",
+        "Human Rights Impact Assessment",
+        "HRIA",
+        "Menschenrechtsfolgenabschätzung",
+        "Menschenrechts-Folgenabschätzung",
+        "menschenrechtliche Wirkungsanalyse"
+      ],
+      "shortDefinition": "Ein HRIA untersucht mögliche oder tatsächliche Menschenrechtswirkungen von Projekten, Produkten, Lieferketten oder politischen Entscheidungen.",
+      "definition": "Human Rights Impact Assessment ist eine Methode, um menschenrechtliche Risiken und Betroffenheiten systematisch zu prüfen. Es betrachtet Rechteinhaber:innen, vulnerable Gruppen, Ursachen, Abhilfe und Beteiligung.",
+      "longDefinition": "Human Rights Impact Assessment ist eine Methode, um menschenrechtliche Risiken und Betroffenheiten systematisch zu prüfen. Es betrachtet Rechteinhaber:innen, vulnerable Gruppen, Ursachen, Abhilfe und Beteiligung.",
+      "woekRelation": "Die WÖk kann HRIA nutzen, um soziale Schutzgrenzen in Wirkungspfaden sichtbar zu machen. Menschenrechtliche Risiken dürfen nicht durch ökologische oder finanzielle Vorteile überdeckt werden.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "lieferketten-und-sorgfaltspflichten"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Lieferketten und Sorgfaltspflichten",
+      "dataStandardsOrder": 46,
+      "relatedTerms": [
+        "human-rights-due-diligence",
+        "un-guiding-principles",
+        "csddd",
+        "lksg",
+        "wirkungsbewertung"
+      ],
+      "officialSources": [
+        "OHCHR: UN Guiding Principles on Business and Human Rights|https://www.ohchr.org/documents/publications/guidingprinciplesbusinesshr_en.pdf",
+        "OECD: Due diligence for responsible business conduct|https://www.oecd.org/en/topics/sub-issues/due-diligence-guidance-for-responsible-business-conduct.html"
+      ],
+      "pageUrl": "/begriffe/human-rights-impact-assessment/",
+      "priority": 150,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Menschenrechts- und Methodenbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfaltspflichten",
+      "hoverDefinition": "Ein HRIA untersucht mögliche oder tatsächliche Menschenrechtswirkungen von Projekten, Produkten, Lieferketten oder politischen Entscheidungen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "human rights impact assessment / hria",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "humusaufbau",
+      "termId": "humusaufbau",
+      "label": "Humusaufbau",
+      "canonicalLabel": "Humusaufbau",
+      "slug": "humusaufbau",
+      "aliases": [
+        "Humusaufbau",
+        "Humus",
+        "Soil Organic Matter Aufbau",
+        "Bodenhumus",
+        "Bodenorganische Substanz",
+        "Soil Organic Carbon Aufbau",
+        "SOC-Aufbau"
+      ],
+      "synonyms": [
+        "Humusaufbau",
+        "Humus",
+        "Soil Organic Matter Aufbau",
+        "Bodenhumus",
+        "Bodenorganische Substanz",
+        "Soil Organic Carbon Aufbau",
+        "SOC-Aufbau"
+      ],
+      "shortDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
+      "definition": "Humus entsteht aus umgewandelter organischer Substanz im Boden. Sein Aufbau hängt von Bewirtschaftung, Pflanzenresten, Bodenleben, Erosion, Wasserhaushalt und Nutzung ab.",
+      "longDefinition": "Humus entsteht aus umgewandelter organischer Substanz im Boden. Sein Aufbau hängt von Bewirtschaftung, Pflanzenresten, Bodenleben, Erosion, Wasserhaushalt und Nutzung ab.",
+      "woekRelation": "Die WÖk nutzt Humusaufbau als Beispiel für positive Netto-Wirkung in Landwirtschaft: Klima, Wasser, Boden, Biodiversität, Erträge und Resilienz können zusammenwirken.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 77,
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "wasserstress",
+        "positive-netto-wirkung",
+        "lca"
+      ],
+      "officialSources": [
+        "FAO Global Soil Partnership: What is soil organic carbon?|https://www.fao.org/global-soil-partnership/areas-of-work/recsoil/what-is-soc/en/",
+        "FAO: The importance of soil organic matter|https://www.fao.org/3/a0100e/a0100e05.htm"
+      ],
+      "pageUrl": "/begriffe/humusaufbau/",
+      "priority": 160,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Boden- und Landwirtschaftsbegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "humusaufbau",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hunger-hungerbekaempfung",
+      "termId": "hunger-hungerbekaempfung",
+      "label": "Hunger / Hungerbekämpfung",
+      "canonicalLabel": "Hunger / Hungerbekämpfung",
+      "slug": "hunger-hungerbekaempfung",
+      "aliases": [
+        "Hunger / Hungerbekämpfung",
+        "Hunger",
+        "Hungerbekämpfung",
+        "Zero Hunger",
+        "SDG 2",
+        "Ernährungssicherheit",
+        "Food Security"
+      ],
+      "synonyms": [
+        "Hunger / Hungerbekämpfung",
+        "Hunger",
+        "Hungerbekämpfung",
+        "Zero Hunger",
+        "SDG 2",
+        "Ernährungssicherheit",
+        "Food Security"
+      ],
+      "shortDefinition": "Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernährungssysteme nachhaltig, resilient und gerecht zu gestalten.",
+      "definition": "Hunger ist nicht nur ein Mangel an Kalorien. Er hängt mit Armut, Konflikten, Landwirtschaft, Klima, Preisen, Lieferketten, Wasser, Gesundheit und politischer Stabilität zusammen.",
+      "longDefinition": "Hunger ist nicht nur ein Mangel an Kalorien. Er hängt mit Armut, Konflikten, Landwirtschaft, Klima, Preisen, Lieferketten, Wasser, Gesundheit und politischer Stabilität zusammen.",
+      "woekRelation": "Die WÖk verbindet Hungerbekämpfung mit Wirkung in Ernährungssystemen: Preise, Landwirtschaft, Böden, Lieferketten, Gesundheit, Einkommen und Resilienz müssen gemeinsam bewertet werden.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 81,
+      "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
+        "humusaufbau",
+        "wasserstress",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "United Nations: Sustainable Development Goal 2|https://sdgs.un.org/goals/goal2"
+      ],
+      "pageUrl": "/begriffe/hunger-hungerbekaempfung/",
+      "priority": 140,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "SDG- und Ernährungssystembegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernährungssysteme nachhaltig, resilient und gerecht zu gestalten.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hunger / hungerbekampfung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "id": "hydrologischer-kreislauf",
+      "termId": "hydrologischer-kreislauf",
+      "label": "Hydrologischer Kreislauf",
+      "canonicalLabel": "Hydrologischer Kreislauf",
+      "slug": "hydrologischer-kreislauf",
+      "aliases": [
+        "Hydrologischer Kreislauf",
+        "Wasserkreislauf",
+        "Water Cycle",
+        "hydrological cycle",
+        "regionaler Wasserkreislauf",
+        "Hydropower",
+        "Wasserkraft",
+        "Hydroökologie",
+        "Hydrooekologie",
+        "harmful algal blooms",
+        "schädliche Algenblüten",
+        "schaedliche Algenblueten"
+      ],
+      "synonyms": [
+        "Hydrologischer Kreislauf",
+        "Wasserkreislauf",
+        "Water Cycle",
+        "hydrological cycle",
+        "regionaler Wasserkreislauf",
+        "Hydropower",
+        "Wasserkraft",
+        "Hydroökologie",
+        "Hydrooekologie",
+        "harmful algal blooms",
+        "schädliche Algenblüten",
+        "schaedliche Algenblueten"
+      ],
+      "shortDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
+      "definition": "Der Wasserkreislauf verbindet Niederschlag, Verdunstung, Versickerung, Abfluss, Grundwasser, Speicher, Ökosysteme und menschliche Wasserentnahme. Klima, Landnutzung und Böden verändern ihn.",
+      "longDefinition": "Der Wasserkreislauf verbindet Niederschlag, Verdunstung, Versickerung, Abfluss, Grundwasser, Speicher, Ökosysteme und menschliche Wasserentnahme. Klima, Landnutzung und Böden verändern ihn.",
+      "woekRelation": "Die WÖk braucht den hydrologischen Kreislauf, um Wasserwirkung nicht nur als Verbrauchszahl, sondern als Systemwirkung von Böden, Städten, Landwirtschaft, Klima und Gesundheit zu betrachten.",
+      "statusNote": "",
+      "usageNote": "",
+      "categories": [
+        "daten-standards-regularien",
+        "klima-natur-und-risiken"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 78,
+      "relatedTerms": [
+        "wasserstress",
+        "humusaufbau",
+        "hitzestress",
+        "biodiversitaetsrisiko"
+      ],
+      "officialSources": [
+        "UN-Water: Water and climate change|https://www.unwater.org/water-facts/water-and-climate-change",
+        "FAO Global Soil Partnership: What is soil organic carbon?|https://www.fao.org/global-soil-partnership/areas-of-work/recsoil/what-is-soc/en/"
+      ],
+      "pageUrl": "/begriffe/hydrologischer-kreislauf/",
+      "priority": 145,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Wasser- und Systembegriff",
+      "source": "Anschlussstandard / WÖk-Übersetzung",
+      "sourceDocument": "Wirkungsökonomie Glossar",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "hoverDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Kontextbezogen verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "hydrologischer kreislauf",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
     },
@@ -3922,11 +5647,15 @@
       "slug": "mensch-planet-demokratie",
       "aliases": [
         "Mensch, Planet und Demokratie",
-        "MPD"
+        "MPD",
+        "Human Security",
+        "menschliche Sicherheit"
       ],
       "synonyms": [
         "Mensch, Planet und Demokratie",
-        "MPD"
+        "MPD",
+        "Human Security",
+        "menschliche Sicherheit"
       ],
       "shortDefinition": "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst.",
       "definition": "Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung. Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele, sondern die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.",
@@ -5256,10 +6985,26 @@
       "canonicalLabel": "Produktdaten",
       "slug": "produktdaten",
       "aliases": [
-        "Produktdaten"
+        "Produktdaten",
+        "Herkunftsdaten",
+        "Herkunftsrisiko",
+        "Hochrisikogebiet",
+        "High Conservation Value",
+        "HCV",
+        "High Carbon Stock",
+        "HCS",
+        "Higg Index"
       ],
       "synonyms": [
-        "Produktdaten"
+        "Produktdaten",
+        "Herkunftsdaten",
+        "Herkunftsrisiko",
+        "Hochrisikogebiet",
+        "High Conservation Value",
+        "HCV",
+        "High Carbon Stock",
+        "HCS",
+        "Higg Index"
       ],
       "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
       "definition": "Die WÖk nutzt Produktdaten, um Produktwirkung, Preiswahrheit und Konsument:inneninformation zu ermöglichen.",
@@ -5279,7 +7024,9 @@
         "digitaler-produktpass",
         "produktwirkung",
         "pef-product-environmental-footprint",
-        "pcf-product-carbon-footprint"
+        "pcf-product-carbon-footprint",
+        "herkunftstransparenz",
+        "hotspot-analyse"
       ],
       "officialSources": [
         "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
@@ -5483,10 +7230,26 @@
       "canonicalLabel": "Resonanzraum",
       "slug": "resonanzraum",
       "aliases": [
-        "Resonanzraum"
+        "Resonanzraum",
+        "Hate Speech",
+        "Hassrede",
+        "hybride Bedrohungen",
+        "hybride Kriegsführung",
+        "Hybride Kriegsfuehrung",
+        "Halluzinationen von KI",
+        "KI-Halluzinationen",
+        "Host-Verantwortung"
       ],
       "synonyms": [
-        "Resonanzraum"
+        "Resonanzraum",
+        "Hate Speech",
+        "Hassrede",
+        "hybride Bedrohungen",
+        "hybride Kriegsführung",
+        "Hybride Kriegsfuehrung",
+        "Halluzinationen von KI",
+        "KI-Halluzinationen",
+        "Host-Verantwortung"
       ],
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können.",
       "definition": "Resonanzräume beeinflussen, ob Informationen, Narrative oder Entscheidungen aufgenommen, verstärkt, abgeschwächt oder umgedeutet werden.",
@@ -6174,13 +7937,19 @@
         "SDGs",
         "Sustainable Development Goals",
         "Nachhaltigkeitsziele",
-        "UN-Nachhaltigkeitsziele"
+        "UN-Nachhaltigkeitsziele",
+        "HLPF",
+        "High-level Political Forum",
+        "High Level Political Forum"
       ],
       "synonyms": [
         "SDGs",
         "Sustainable Development Goals",
         "Nachhaltigkeitsziele",
-        "UN-Nachhaltigkeitsziele"
+        "UN-Nachhaltigkeitsziele",
+        "HLPF",
+        "High-level Political Forum",
+        "High Level Political Forum"
       ],
       "shortDefinition": "Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030.",
       "definition": "Die Sustainable Development Goals beschreiben Zielräume für Armut, Ernährung, Gesundheit, Bildung, Gleichstellung, Wasser, Energie, Arbeit, Industrie, Ungleichheit, Städte, Konsum, Klima, Ökosysteme, Frieden und Partnerschaften. Die Wirkungsökonomie nutzt sie als Referenzrahmen, nicht als dekorative Ziel-Liste.",
@@ -6196,7 +7965,8 @@
       "relatedTerms": [
         "agenda-2030",
         "sdg-plus",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "hunger-hungerbekaempfung"
       ],
       "officialSources": [
         "United Nations: Sustainable Development Goals|https://sdgs.un.org/goals",
@@ -7585,11 +9355,19 @@
       "slug": "warmmietenneutralitaet",
       "aliases": [
         "Warmmietenneutralität",
-        "warmmietenneutrale Sanierung"
+        "warmmietenneutrale Sanierung",
+        "Heizkostenneutralität",
+        "Heizkostenneutralitaet",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf"
       ],
       "synonyms": [
         "Warmmietenneutralität",
-        "warmmietenneutrale Sanierung"
+        "warmmietenneutrale Sanierung",
+        "Heizkostenneutralität",
+        "Heizkostenneutralitaet",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf"
       ],
       "shortDefinition": "Warmmietenneutralität bedeutet, dass Sanierung ökologische Wirkung erzeugt, ohne die reale Wohnkostenbelastung zu erhöhen.",
       "definition": "In der Wirkungsökonomie ist Sanierung dann sozial tragfähig, wenn Klimawirkung, Betriebskosten, Förderung, Mietentwicklung und Härtefallschutz zusammen betrachtet werden.",
@@ -7647,10 +9425,20 @@
       "canonicalLabel": "Wasserstress",
       "slug": "wasserstress",
       "aliases": [
-        "Wasserstress"
+        "Wasserstress",
+        "High-Water-Stress",
+        "High Water Stress",
+        "hoher Wasserstress",
+        "extrem hoher Wasserstress",
+        "area of high water stress"
       ],
       "synonyms": [
-        "Wasserstress"
+        "Wasserstress",
+        "High-Water-Stress",
+        "High Water Stress",
+        "hoher Wasserstress",
+        "extrem hoher Wasserstress",
+        "area of high water stress"
       ],
       "shortDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
       "definition": "Wasserstress ist ein wichtiger Standort- und Lieferkettenindikator für Produktwirkung und regionale Resilienz.",
@@ -7669,7 +9457,8 @@
       "relatedTerms": [
         "nature-related-risks",
         "tnfd",
-        "produktdaten"
+        "produktdaten",
+        "hydrologischer-kreislauf"
       ],
       "officialSources": [
         "World Resources Institute Aqueduct|https://www.wri.org/aqueduct"
@@ -8492,10 +10281,22 @@
       "canonicalLabel": "Wirkungshaushalt",
       "slug": "wirkungshaushalt",
       "aliases": [
-        "Wirkungshaushalt"
+        "Wirkungshaushalt",
+        "Haushalt, wirkungsbasiert",
+        "wirkungsbasierter Haushalt",
+        "wirkungsorientierter Haushalt",
+        "SDG-Budgetierung",
+        "SDG-Haushalt",
+        "Wirkungsbudget"
       ],
       "synonyms": [
-        "Wirkungshaushalt"
+        "Wirkungshaushalt",
+        "Haushalt, wirkungsbasiert",
+        "wirkungsbasierter Haushalt",
+        "wirkungsorientierter Haushalt",
+        "SDG-Budgetierung",
+        "SDG-Haushalt",
+        "Wirkungsbudget"
       ],
       "shortDefinition": "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar.",
       "definition": "Der Wirkungshaushalt fragt, welche Zustände öffentliche Mittel verändern, welche Risiken entstehen und welche positive Netto-Wirkung erzeugt wird.",
@@ -8510,8 +10311,9 @@
       "showInCategoryGlossary": false,
       "relatedTerms": [
         "wirkungslenkung",
-        "wirkungsrückkopplung",
-        "positive-netto-wirkung"
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "haushaltsneutralitaet"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungshaushalt/",
@@ -8598,10 +10400,24 @@
       "canonicalLabel": "Wirkungskompetenz",
       "slug": "wirkungskompetenz",
       "aliases": [
-        "Wirkungskompetenz"
+        "Wirkungskompetenz",
+        "Human Capital",
+        "Humankapital",
+        "menschliche Fähigkeiten",
+        "Human-centered AI",
+        "menschenzentrierte KI",
+        "Human-in-the-loop",
+        "Mensch in der Schleife"
       ],
       "synonyms": [
-        "Wirkungskompetenz"
+        "Wirkungskompetenz",
+        "Human Capital",
+        "Humankapital",
+        "menschliche Fähigkeiten",
+        "Human-centered AI",
+        "menschenzentrierte KI",
+        "Human-in-the-loop",
+        "Mensch in der Schleife"
       ],
       "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.",
       "definition": "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit, demokratische Streitfähigkeit und praktische Steuerung. Im Bildungsbereich ist sie die Fähigkeit, reale Wirkungsfragen zu analysieren, Perspektiven einzubeziehen, Zielkonflikte offenzulegen, Nebenwirkungen zu prüfen und handlungsfähige Lösungen zu entwickeln.",
@@ -8709,10 +10525,22 @@
       "canonicalLabel": "Wirkungsnetz",
       "slug": "wirkungsnetz",
       "aliases": [
-        "Wirkungsnetz"
+        "Wirkungsnetz",
+        "Holismus",
+        "holistische Betrachtung",
+        "Heterarchie",
+        "Hierarchie",
+        "Hierarchiekritik",
+        "horizontale Kooperation"
       ],
       "synonyms": [
-        "Wirkungsnetz"
+        "Wirkungsnetz",
+        "Holismus",
+        "holistische Betrachtung",
+        "Heterarchie",
+        "Hierarchie",
+        "Hierarchiekritik",
+        "horizontale Kooperation"
       ],
       "shortDefinition": "Ein Wirkungsnetz beschreibt miteinander verbundene Wirkpfade, Akteure, Räume und Rückkopplungen.",
       "definition": "Wirkungsnetze machen sichtbar, dass Wirkung selten linear entsteht und oft über Wechselwirkungen, Nebenwirkungen und Systemhebel läuft.",
@@ -9559,11 +11387,19 @@
       "slug": "wirkungssteuer",
       "aliases": [
         "Wirkungssteuer",
-        "Steuer nach Wirkung"
+        "Steuer nach Wirkung",
+        "Harmful Subsidies",
+        "umweltschädliche Subventionen",
+        "umweltschaedliche Subventionen",
+        "schädliche Subventionen"
       ],
       "synonyms": [
         "Wirkungssteuer",
-        "Steuer nach Wirkung"
+        "Steuer nach Wirkung",
+        "Harmful Subsidies",
+        "umweltschädliche Subventionen",
+        "umweltschaedliche Subventionen",
+        "schädliche Subventionen"
       ],
       "shortDefinition": "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück.",
       "definition": "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen.",
@@ -9579,7 +11415,8 @@
       "relatedTerms": [
         "wstg",
         "wustg",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "haushaltsneutralitaet"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungssteuer/",
@@ -9971,11 +11808,27 @@
       "slug": "wohnwirkung",
       "aliases": [
         "Wohnwirkung",
-        "Wirkung von Wohnen"
+        "Wirkung von Wohnen",
+        "Haushaltsfußabdruck",
+        "Haushaltsfussabdruck",
+        "Household Footprint",
+        "Haushaltsenergie",
+        "Heizenergie",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf",
+        "Heizlast"
       ],
       "synonyms": [
         "Wohnwirkung",
-        "Wirkung von Wohnen"
+        "Wirkung von Wohnen",
+        "Haushaltsfußabdruck",
+        "Haushaltsfussabdruck",
+        "Household Footprint",
+        "Haushaltsenergie",
+        "Heizenergie",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf",
+        "Heizlast"
       ],
       "shortDefinition": "Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt.",
       "definition": "Wohnwirkung ist neutral und relational. Sie kann positiv, negativ oder neutral sein und wird im WÖk-Rahmen an Mensch, Planet und Demokratie rückgekoppelt.",
