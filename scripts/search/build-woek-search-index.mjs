@@ -145,7 +145,7 @@ function entryFromTerm(term) {
     tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || [])].filter(Boolean),
     aliases: [...(term.synonyms || []), term.hoverDefinition],
     body,
-    priority: term.status === "führender-begriff" ? 140 : 110,
+    priority: term.status === "führender-begriff" ? 175 : 155,
   };
 }
 
@@ -255,7 +255,11 @@ function entriesFromContent(file) {
     text.match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     clean(text.match(/<h1[^>]*>(.*?)<\/h1>/i)?.[1]) ||
     path.basename(file).replace(/\.[^.]+$/, "");
-  const documentType = text.match(/^documentType:\s*["']?(.+?)["']?\s*$/m)?.[1] || "Referenz";
+  const isTermPage = /^\/begriffe\/[^/]+\/$/.test(route);
+  const isTermIndex = route === "/begriffe/";
+  const documentType = isTermPage || isTermIndex
+    ? "Begriffe"
+    : text.match(/^documentType:\s*["']?(.+?)["']?\s*$/m)?.[1] || "Referenz";
   const status = text.match(/^status:\s*["']?(.+?)["']?\s*$/m)?.[1] || "online-reviewed";
   const version =
     text.match(/<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i)?.[1] ||
@@ -281,18 +285,25 @@ function entriesFromContent(file) {
     title,
     description: body.slice(0, 240),
     url: route,
-    section: documentType,
-    type: documentType,
-    format: documentType,
+    section: isTermPage || isTermIndex ? "Begriffe" : documentType,
+    type: isTermPage ? "Begriff" : isTermIndex ? "Begriffsübersicht" : documentType,
+    format: isTermPage ? "Begriffseite" : isTermIndex ? "Übersicht" : documentType,
     impactSpaces: [],
     standards: [],
     instruments: [],
     tags: [status, version, "WÖk-Referenz"],
     aliases: [],
     body,
-    priority: 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
+    priority: isTermPage
+      ? 132
+      : isTermIndex
+        ? 118
+        : 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
+  if (isTermPage) {
+    return entries.map((entry) => ({ entry, meta: { ...base, sectionId: "" } }));
+  }
   if (isFulltext) {
     return entries.map((entry) => ({ entry, meta: { ...base, sectionId: "" } }));
   }
@@ -371,10 +382,12 @@ for (const document of documents) {
   };
 }
 
-const contentFiles = ["src/content/docs", "referenz", "dokumente", "instrumente", "beispiele", "quellen", "export"]
+const glossaryUrls = new Set(glossary.map((term) => `/begriffe/${term.slug}/`));
+const contentFiles = ["src/content/docs", "begriffe", "referenz", "dokumente", "instrumente", "beispiele", "quellen", "export"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
   for (const { entry, meta: itemMeta } of entriesFromContent(file)) {
+    if (glossaryUrls.has(entry.url)) continue;
     generated.push(entry);
     meta[entry.url] = itemMeta;
   }
