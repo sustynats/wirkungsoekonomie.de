@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T09:13:32.012Z",
+  "generatedAt": "2026-05-27T10:04:51.682Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -18,6 +18,22 @@
       "status": "published",
       "sectionId": "woek-curated-sdg-sdgplus",
       "searchBoost": 150
+    },
+    "/begriffe/fuenftes-p-planet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-fuenftes-p-planet",
+      "documentId": "fuenftes-p-planet",
+      "relatedTerms": [
+        "responsible-marketing",
+        "greenwashing",
+        "produktdaten",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Wirkungsökonomie Glossar",
+      "searchBoost": 164
     },
     "/begriffe/agenda-2030/": {
       "documentType": "begriff",
@@ -547,7 +563,10 @@
         "technische-bewertungskriterien",
         "nace",
         "mindestschutz-minimum-safeguards",
-        "taxonomy-kpis"
+        "taxonomy-kpis",
+        "uebergangstaetigkeit",
+        "ermoeglichende-taetigkeit",
+        "sustainable-finance"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx",
@@ -583,7 +602,8 @@
         "eu-taxonomie",
         "csrd",
         "esrs",
-        "cbam"
+        "cbam",
+        "green-deal-industrial-plan"
       ],
       "relatedDocuments": [],
       "sourceFile": "EU-Kommission European Green Deal",
@@ -704,6 +724,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/green-deal-industrial-plan/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-green-deal-industrial-plan",
+      "documentId": "green-deal-industrial-plan",
+      "relatedTerms": [
+        "european-green-deal",
+        "clean-industrial-deal",
+        "fit-for-55",
+        "transition-finance"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission Green Deal Industrial Plan",
       "searchBoost": 164
     },
     "/begriffe/greenwashing/": {
@@ -972,6 +1008,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/liability-risk/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-liability-risk",
+      "documentId": "liability-risk",
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "stranded-assets",
+        "greenwashing"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "TCFD Recommendations",
       "searchBoost": 164
     },
     "/begriffe/lieferkettendaten/": {
@@ -1456,6 +1508,22 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 164
     },
+    "/begriffe/residual-emissions/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-residual-emissions",
+      "documentId": "residual-emissions",
+      "relatedTerms": [
+        "net-zero",
+        "offsetting-kompensation",
+        "carbon-credits",
+        "greenwashing"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "SBTi Net-Zero Standard",
+      "searchBoost": 164
+    },
     "/begriffe/resonanzraum/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -1470,6 +1538,22 @@
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/responsible-marketing/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-responsible-marketing",
+      "documentId": "responsible-marketing",
+      "relatedTerms": [
+        "greenwashing",
+        "impact-washing",
+        "green-claims-directive",
+        "fuenftes-p-planet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU Green Claims",
+      "searchBoost": 164
     },
     "/begriffe/reverse-merit-order/": {
       "documentType": "begriff",
@@ -4871,7 +4955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/adoe/index.html",
-      "contentHash": "c99d9b010c5abe0d",
+      "contentHash": "7f480a79a8203347",
       "sectionId": ""
     },
     "/begriffe/ai-act/": {
@@ -4879,7 +4963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ai-act/index.html",
-      "contentHash": "324732fed78884bc",
+      "contentHash": "a298f7df2e6b984f",
       "sectionId": ""
     },
     "/begriffe/anwendungskontext/": {
@@ -4887,7 +4971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/anwendungskontext/index.html",
-      "contentHash": "639a72905a5ae5b1",
+      "contentHash": "4aa4ea2d261a12eb",
       "sectionId": ""
     },
     "/begriffe/anwendungskontext-2/": {
@@ -4895,7 +4979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/anwendungskontext-2/index.html",
-      "contentHash": "1d60ea3ce933bfd9",
+      "contentHash": "1c392784242082eb",
       "sectionId": ""
     },
     "/begriffe/archetypen/": {
@@ -4903,7 +4987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/archetypen/index.html",
-      "contentHash": "ee8ecf96a6b2f961",
+      "contentHash": "a2fa51631d080731",
       "sectionId": ""
     },
     "/begriffe/audit/": {
@@ -4911,7 +4995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/audit/index.html",
-      "contentHash": "38dca803222a8fdb",
+      "contentHash": "2d8a0bcb66ece1ed",
       "sectionId": ""
     },
     "/begriffe/benchmarks/": {
@@ -4919,7 +5003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/benchmarks/index.html",
-      "contentHash": "3b6ec602a77f4459",
+      "contentHash": "2a29c835f77434ef",
       "sectionId": ""
     },
     "/begriffe/bestandsimmobilie/": {
@@ -4927,7 +5011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/bestandsimmobilie/index.html",
-      "contentHash": "6378346ff32bdb7c",
+      "contentHash": "f63c778a7ebca6e1",
       "sectionId": ""
     },
     "/begriffe/biodiversitaet/": {
@@ -4935,7 +5019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/biodiversitaet/index.html",
-      "contentHash": "b98af44fa40d9cca",
+      "contentHash": "c80df9a53d648960",
       "sectionId": ""
     },
     "/begriffe/biodiversitaet-2/": {
@@ -4943,7 +5027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/biodiversitaet-2/index.html",
-      "contentHash": "af1c246abfcce858",
+      "contentHash": "a4498452a3caa9d6",
       "sectionId": ""
     },
     "/begriffe/bip/": {
@@ -4951,7 +5035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/bip/index.html",
-      "contentHash": "b6bff1d394b3f199",
+      "contentHash": "d2fe7747ae332330",
       "sectionId": ""
     },
     "/begriffe/blindleistung/": {
@@ -4959,7 +5043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/blindleistung/index.html",
-      "contentHash": "77596a3bc4c5adf3",
+      "contentHash": "d2f3756f277f9396",
       "sectionId": ""
     },
     "/begriffe/blindleistung-2/": {
@@ -4967,7 +5051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/blindleistung-2/index.html",
-      "contentHash": "56fc71074799f61a",
+      "contentHash": "7f255a0e8ba5013b",
       "sectionId": ""
     },
     "/begriffe/bne/": {
@@ -4975,7 +5059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/bne/index.html",
-      "contentHash": "1551b7c1f60518f1",
+      "contentHash": "c88facab28e7ed1e",
       "sectionId": ""
     },
     "/begriffe/c2c/": {
@@ -4983,7 +5067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/c2c/index.html",
-      "contentHash": "b6769873fc65738c",
+      "contentHash": "00f87e4dfaaf7ae2",
       "sectionId": ""
     },
     "/begriffe/capex-plan/": {
@@ -4991,7 +5075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/capex-plan/index.html",
-      "contentHash": "cf3d5ff5f1853e24",
+      "contentHash": "db55678a4ed22c8c",
       "sectionId": ""
     },
     "/begriffe/care-als-wirkleistung/": {
@@ -4999,7 +5083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/care-als-wirkleistung/index.html",
-      "contentHash": "190b5fb985e368a9",
+      "contentHash": "5133b6d231820873",
       "sectionId": ""
     },
     "/begriffe/care-feministische-oekonomie/": {
@@ -5007,7 +5091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/care-feministische-oekonomie/index.html",
-      "contentHash": "fdc93f8642d445e5",
+      "contentHash": "49e090907c093e02",
       "sectionId": ""
     },
     "/begriffe/circular-regenerative-economy/": {
@@ -5015,7 +5099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/circular-regenerative-economy/index.html",
-      "contentHash": "cc9ca9caedf550be",
+      "contentHash": "e9ceb0daff2c6c48",
       "sectionId": ""
     },
     "/begriffe/co2e/": {
@@ -5023,7 +5107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/co2e/index.html",
-      "contentHash": "392ff6ec9e705967",
+      "contentHash": "46e2881d860553a8",
       "sectionId": ""
     },
     "/begriffe/crrem/": {
@@ -5031,7 +5115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/crrem/index.html",
-      "contentHash": "1ccd79c36aba3bfd",
+      "contentHash": "455ec274112e62de",
       "sectionId": ""
     },
     "/begriffe/csddd-2/": {
@@ -5039,7 +5123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/csddd-2/index.html",
-      "contentHash": "0ee46876b0f243b6",
+      "contentHash": "7757980414e925fb",
       "sectionId": ""
     },
     "/begriffe/csrd-2/": {
@@ -5047,7 +5131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/csrd-2/index.html",
-      "contentHash": "7ccf64f6bb57d5c9",
+      "contentHash": "b05cf7506d0899c4",
       "sectionId": ""
     },
     "/begriffe/d-und-o/": {
@@ -5055,7 +5139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/d-und-o/index.html",
-      "contentHash": "b786dd4ccaef51bb",
+      "contentHash": "199d539d41bd9367",
       "sectionId": ""
     },
     "/begriffe/datenqualitaetsklasse/": {
@@ -5063,7 +5147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/datenqualitaetsklasse/index.html",
-      "contentHash": "f39283f196b52ead",
+      "contentHash": "2d57066a1dcf6e1b",
       "sectionId": ""
     },
     "/begriffe/datenstandard/": {
@@ -5071,7 +5155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/datenstandard/index.html",
-      "contentHash": "472d6e9c0a3c8b83",
+      "contentHash": "1a418a0b1cceea86",
       "sectionId": ""
     },
     "/begriffe/deal/": {
@@ -5079,7 +5163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/deal/index.html",
-      "contentHash": "350b7d9a988dcc55",
+      "contentHash": "09d334cff0da6335",
       "sectionId": ""
     },
     "/begriffe/degrowth-postwachstum/": {
@@ -5087,7 +5171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/degrowth-postwachstum/index.html",
-      "contentHash": "0ac41fdc4896c5dd",
+      "contentHash": "d470b3e914ad861f",
       "sectionId": ""
     },
     "/begriffe/demokratie/": {
@@ -5095,7 +5179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/demokratie/index.html",
-      "contentHash": "721700c7b0d4d446",
+      "contentHash": "c67c28c47aa81da8",
       "sectionId": ""
     },
     "/begriffe/demokratie-2/": {
@@ -5103,7 +5187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/demokratie-2/index.html",
-      "contentHash": "897fa29b4a8df94f",
+      "contentHash": "a3ed6b80fe2f6f84",
       "sectionId": ""
     },
     "/begriffe/desinformation/": {
@@ -5111,7 +5195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/desinformation/index.html",
-      "contentHash": "eaa8a4b631d408a9",
+      "contentHash": "7e1de7cdc6a5900e",
       "sectionId": ""
     },
     "/begriffe/digital-ki-plattform-standards/": {
@@ -5119,7 +5203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/digital-ki-plattform-standards/index.html",
-      "contentHash": "de2e51984fba1c44",
+      "contentHash": "aa09e555c7463cf7",
       "sectionId": ""
     },
     "/begriffe/diskursfaehigkeit/": {
@@ -5127,7 +5211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/diskursfaehigkeit/index.html",
-      "contentHash": "d6037ae119de55e6",
+      "contentHash": "311e1799d2fbdea2",
       "sectionId": ""
     },
     "/begriffe/diskursfaehigkeit-2/": {
@@ -5135,7 +5219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/diskursfaehigkeit-2/index.html",
-      "contentHash": "66773a377620792f",
+      "contentHash": "37fd488985a9d548",
       "sectionId": ""
     },
     "/begriffe/diskurskultur/": {
@@ -5143,7 +5227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/diskurskultur/index.html",
-      "contentHash": "5a78515339327ee6",
+      "contentHash": "cab1dc50e3935d16",
       "sectionId": ""
     },
     "/begriffe/dnsh-2/": {
@@ -5151,7 +5235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dnsh-2/index.html",
-      "contentHash": "a57375ac8f1e743f",
+      "contentHash": "d6d2f65cd92fb4e7",
       "sectionId": ""
     },
     "/begriffe/donut-oekonomie/": {
@@ -5159,7 +5243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/donut-oekonomie/index.html",
-      "contentHash": "f156d0670cfb0e95",
+      "contentHash": "7428031072245dee",
       "sectionId": ""
     },
     "/begriffe/dora/": {
@@ -5167,7 +5251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dora/index.html",
-      "contentHash": "eee650fe284bc5ed",
+      "contentHash": "607ecba1ea2524e1",
       "sectionId": ""
     },
     "/begriffe/dosis/": {
@@ -5175,7 +5259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dosis/index.html",
-      "contentHash": "5ec64e1eea05f9a7",
+      "contentHash": "ab0f28eaf3e954b2",
       "sectionId": ""
     },
     "/begriffe/dosis-2/": {
@@ -5183,7 +5267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dosis-2/index.html",
-      "contentHash": "97780b2ea25c402a",
+      "contentHash": "a418263b3ccd2921",
       "sectionId": ""
     },
     "/begriffe/dosis-wirkungs-beziehung/": {
@@ -5191,7 +5275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dosis-wirkungs-beziehung/index.html",
-      "contentHash": "4178f3ecbc8eb956",
+      "contentHash": "86545646a96fe9b2",
       "sectionId": ""
     },
     "/begriffe/dosis-wirkungs-beziehung-2/": {
@@ -5199,7 +5283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dosis-wirkungs-beziehung-2/index.html",
-      "contentHash": "7775cdc12c4eec1b",
+      "contentHash": "eee9545afb964fda",
       "sectionId": ""
     },
     "/begriffe/dpp/": {
@@ -5207,7 +5291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dpp/index.html",
-      "contentHash": "8e821abb5f9bd8a0",
+      "contentHash": "ea442c9a960e5188",
       "sectionId": ""
     },
     "/begriffe/dpp-2/": {
@@ -5215,7 +5299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dpp-2/index.html",
-      "contentHash": "0d54b16a1974361a",
+      "contentHash": "3c0612a7aa0baf0c",
       "sectionId": ""
     },
     "/begriffe/dsa/": {
@@ -5223,7 +5307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dsa/index.html",
-      "contentHash": "f2c9e5a19c4c2531",
+      "contentHash": "4568fe1197139e81",
       "sectionId": ""
     },
     "/begriffe/dsgvo/": {
@@ -5231,7 +5315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/dsgvo/index.html",
-      "contentHash": "1cfdf10f46f51ca0",
+      "contentHash": "97caef7aab0b96b9",
       "sectionId": ""
     },
     "/begriffe/eba/": {
@@ -5239,7 +5323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/eba/index.html",
-      "contentHash": "0e2afb0030840f9d",
+      "contentHash": "26bf96ac0157c880",
       "sectionId": ""
     },
     "/begriffe/eba-esg-risikomanagement/": {
@@ -5247,7 +5331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/eba-esg-risikomanagement/index.html",
-      "contentHash": "2151b4dd6cba982d",
+      "contentHash": "88c47a12f1cbb84b",
       "sectionId": ""
     },
     "/begriffe/ecg/": {
@@ -5255,7 +5339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ecg/index.html",
-      "contentHash": "dae464dad6a8abe8",
+      "contentHash": "a6dea6a03e3bfbaf",
       "sectionId": ""
     },
     "/begriffe/efrag-2/": {
@@ -5263,7 +5347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/efrag-2/index.html",
-      "contentHash": "6058eb40440d5ba4",
+      "contentHash": "e23fb67e0899c7cf",
       "sectionId": ""
     },
     "/begriffe/ehrliche-preise/": {
@@ -5271,7 +5355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ehrliche-preise/index.html",
-      "contentHash": "e335e47c24725e22",
+      "contentHash": "c857b5dd2a78560a",
       "sectionId": ""
     },
     "/begriffe/eiopa/": {
@@ -5279,7 +5363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/eiopa/index.html",
-      "contentHash": "61c065331cbcb40d",
+      "contentHash": "e7b302521aeee18c",
       "sectionId": ""
     },
     "/begriffe/energetische-sanierung/": {
@@ -5287,7 +5371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/energetische-sanierung/index.html",
-      "contentHash": "f3374f0286573bd7",
+      "contentHash": "18e5b4625a957e5b",
       "sectionId": ""
     },
     "/begriffe/engpasslogik/": {
@@ -5295,7 +5379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/engpasslogik/index.html",
-      "contentHash": "5000ec1c8cce0bea",
+      "contentHash": "0d55e0bee5dde6cb",
       "sectionId": ""
     },
     "/begriffe/epbd/": {
@@ -5303,7 +5387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/epbd/index.html",
-      "contentHash": "4b6fbbbbd62f9ec8",
+      "contentHash": "4f5b8d976b304d08",
       "sectionId": ""
     },
     "/begriffe/epd-2/": {
@@ -5311,7 +5395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/epd-2/index.html",
-      "contentHash": "e88e9aadc8bb65b1",
+      "contentHash": "94e082ca8ef5ffd8",
       "sectionId": ""
     },
     "/begriffe/erm/": {
@@ -5319,7 +5403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/erm/index.html",
-      "contentHash": "736567a931b02936",
+      "contentHash": "ff0e3f0191b6b598",
       "sectionId": ""
     },
     "/begriffe/erwuenschte-wirkung/": {
@@ -5327,7 +5411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/erwuenschte-wirkung/index.html",
-      "contentHash": "b105e6025f57168a",
+      "contentHash": "944c023057c23c7d",
       "sectionId": ""
     },
     "/begriffe/erwuenschte-wirkung-2/": {
@@ -5335,7 +5419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/erwuenschte-wirkung-2/index.html",
-      "contentHash": "5739303b9def1b10",
+      "contentHash": "0d93b4cdbd2877bb",
       "sectionId": ""
     },
     "/begriffe/esg-2/": {
@@ -5343,7 +5427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/esg-2/index.html",
-      "contentHash": "34d5bf06dd84bf28",
+      "contentHash": "4f2cbbd6378ed24a",
       "sectionId": ""
     },
     "/begriffe/esg-beratung/": {
@@ -5351,7 +5435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/esg-beratung/index.html",
-      "contentHash": "6b4265740bd8a1e8",
+      "contentHash": "891ad41167e873d5",
       "sectionId": ""
     },
     "/begriffe/esg-rating/": {
@@ -5359,7 +5443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/esg-rating/index.html",
-      "contentHash": "8d95642d4fd24ab8",
+      "contentHash": "2370349307b959ca",
       "sectionId": ""
     },
     "/begriffe/esma/": {
@@ -5367,7 +5451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/esma/index.html",
-      "contentHash": "841ac6165de4694f",
+      "contentHash": "ec3569c708196b51",
       "sectionId": ""
     },
     "/begriffe/espr-2/": {
@@ -5375,7 +5459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/espr-2/index.html",
-      "contentHash": "d5e02301cc68b8be",
+      "contentHash": "57de6cd39dcf7273",
       "sectionId": ""
     },
     "/begriffe/esrs-2/": {
@@ -5383,7 +5467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/esrs-2/index.html",
-      "contentHash": "6f8ea04638264f00",
+      "contentHash": "4b12f9251aa3a472",
       "sectionId": ""
     },
     "/begriffe/ets/": {
@@ -5391,7 +5475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ets/index.html",
-      "contentHash": "aa3c2778047476c2",
+      "contentHash": "999d739146a5f235",
       "sectionId": ""
     },
     "/begriffe/eu/": {
@@ -5399,7 +5483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/eu/index.html",
-      "contentHash": "a3fb45be0b6d1c3f",
+      "contentHash": "bdab2bdbe563911e",
       "sectionId": ""
     },
     "/begriffe/eu-taxonomie-2/": {
@@ -5407,7 +5491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/eu-taxonomie-2/index.html",
-      "contentHash": "11120ba7d98ff019",
+      "contentHash": "69292f499407af02",
       "sectionId": ""
     },
     "/begriffe/eu-taxonomie-immobilien/": {
@@ -5415,7 +5499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/eu-taxonomie-immobilien/index.html",
-      "contentHash": "c32eebfe6a5a0b63",
+      "contentHash": "2f52731904ac4a1a",
       "sectionId": ""
     },
     "/begriffe/fach-zukunft/": {
@@ -5423,7 +5507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/fach-zukunft/index.html",
-      "contentHash": "6b272cd70001e237",
+      "contentHash": "30583a99d813a6dd",
       "sectionId": ""
     },
     "/begriffe/foerdercontrolling/": {
@@ -5431,7 +5515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/foerdercontrolling/index.html",
-      "contentHash": "0bd54cf2a6290c00",
+      "contentHash": "ff8a3cb7ec0581d8",
       "sectionId": ""
     },
     "/begriffe/foerdercontrolling-2/": {
@@ -5439,7 +5523,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/foerdercontrolling-2/index.html",
-      "contentHash": "ea91cd44167b139a",
+      "contentHash": "4a45ac796bcf3bcf",
       "sectionId": ""
     },
     "/begriffe/foerderlogik/": {
@@ -5447,7 +5531,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/foerderlogik/index.html",
-      "contentHash": "41bffe7c8b718194",
+      "contentHash": "289650714d2455bc",
       "sectionId": ""
     },
     "/begriffe/foerderlogik-2/": {
@@ -5455,7 +5539,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/foerderlogik-2/index.html",
-      "contentHash": "f78b911c804fb6c4",
+      "contentHash": "64412c3ec339d21e",
       "sectionId": ""
     },
     "/begriffe/frame/": {
@@ -5463,7 +5547,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/frame/index.html",
-      "contentHash": "289010088732532a",
+      "contentHash": "5e90b8aaa5abf7f3",
       "sectionId": ""
     },
     "/begriffe/frame-2/": {
@@ -5471,7 +5555,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/frame-2/index.html",
-      "contentHash": "dadfee7308323a12",
+      "contentHash": "b1db51dec430e1e9",
       "sectionId": ""
     },
     "/begriffe/gebaeudeenergieperformance/": {
@@ -5479,7 +5563,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/gebaeudeenergieperformance/index.html",
-      "contentHash": "f10f154b57d01906",
+      "contentHash": "d53160d9c0eb6dcb",
       "sectionId": ""
     },
     "/begriffe/gebaeudestandards/": {
@@ -5487,7 +5571,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/gebaeudestandards/index.html",
-      "contentHash": "6c7c019366373c94",
+      "contentHash": "03e0a8d7b941ba77",
       "sectionId": ""
     },
     "/begriffe/gemeinwohloekonomie/": {
@@ -5495,7 +5579,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/gemeinwohloekonomie/index.html",
-      "contentHash": "2796ff1b1e976232",
+      "contentHash": "9330d781c2a92088",
       "sectionId": ""
     },
     "/begriffe/ghg-protocol-2/": {
@@ -5503,7 +5587,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ghg-protocol-2/index.html",
-      "contentHash": "5a806abeb95c41e7",
+      "contentHash": "ca219c6890a68572",
       "sectionId": ""
     },
     "/begriffe/globale-wirkungsordnung/": {
@@ -5511,7 +5595,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/globale-wirkungsordnung/index.html",
-      "contentHash": "433d764940137e31",
+      "contentHash": "7202681ebec7c172",
       "sectionId": ""
     },
     "/begriffe/gri-2/": {
@@ -5519,7 +5603,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/gri-2/index.html",
-      "contentHash": "061a7cf48f63279c",
+      "contentHash": "78f627fa8483c107",
       "sectionId": ""
     },
     "/begriffe/gsbp/": {
@@ -5527,7 +5611,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/gsbp/index.html",
-      "contentHash": "976468649bf9afb7",
+      "contentHash": "12c9f3812540ed39",
       "sectionId": ""
     },
     "/begriffe/handlung/": {
@@ -5535,7 +5619,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/handlung/index.html",
-      "contentHash": "e75e5e4e439c93f2",
+      "contentHash": "250bd16b22b1c985",
       "sectionId": ""
     },
     "/begriffe/handlung-2/": {
@@ -5543,7 +5627,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/handlung-2/index.html",
-      "contentHash": "d95a4eccfbbdc47c",
+      "contentHash": "807f7258f5629a98",
       "sectionId": ""
     },
     "/begriffe/hybride-kriegsfuehrung/": {
@@ -5551,7 +5635,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/hybride-kriegsfuehrung/index.html",
-      "contentHash": "dd18bd6e72410c8a",
+      "contentHash": "182d046bb74950cb",
       "sectionId": ""
     },
     "/begriffe/iea/": {
@@ -5559,7 +5643,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/iea/index.html",
-      "contentHash": "4beba7a128a69e44",
+      "contentHash": "77f28e030545e339",
       "sectionId": ""
     },
     "/begriffe/ilo-2/": {
@@ -5567,7 +5651,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ilo-2/index.html",
-      "contentHash": "019b0cb0e1aea836",
+      "contentHash": "0e1671b41c4f6662",
       "sectionId": ""
     },
     "/begriffe/immobilien/": {
@@ -5575,7 +5659,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/immobilien/index.html",
-      "contentHash": "d51b7453fca9118f",
+      "contentHash": "f97b0fa417f31751",
       "sectionId": ""
     },
     "/begriffe/impact-governance-frameworks/": {
@@ -5583,7 +5667,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/impact-governance-frameworks/index.html",
-      "contentHash": "fe385284f10b52df",
+      "contentHash": "4a64bd7d33b4641e",
       "sectionId": ""
     },
     "/begriffe/impact-investing/": {
@@ -5591,7 +5675,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/impact-investing/index.html",
-      "contentHash": "5820bdda9b0b08a8",
+      "contentHash": "a4ad77605b9bfa26",
       "sectionId": ""
     },
     "/begriffe/": {
@@ -5599,7 +5683,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "650a4183f51a56dd",
+      "contentHash": "a84426a8302679d3",
       "sectionId": "woek-page-2afe7308732a6cbb"
     },
     "/begriffe/#glossary-filter-title": {
@@ -5607,7 +5691,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "650a4183f51a56dd",
+      "contentHash": "a84426a8302679d3",
       "sectionId": "glossary-filter-title"
     },
     "/begriffe/#related-questions-title-begriffe": {
@@ -5615,7 +5699,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "650a4183f51a56dd",
+      "contentHash": "a84426a8302679d3",
       "sectionId": "related-questions-title-begriffe"
     },
     "/begriffe/interdependenz/": {
@@ -5623,7 +5707,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/interdependenz/index.html",
-      "contentHash": "64977b3013b8b1ec",
+      "contentHash": "f59f048bae009186",
       "sectionId": ""
     },
     "/begriffe/ipbes-2/": {
@@ -5631,7 +5715,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ipbes-2/index.html",
-      "contentHash": "e63b633a95d01151",
+      "contentHash": "61a2e5636a11635f",
       "sectionId": ""
     },
     "/begriffe/ipcc-2/": {
@@ -5639,7 +5723,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ipcc-2/index.html",
-      "contentHash": "31f0be2281df1b27",
+      "contentHash": "bf7e66476a971d3a",
       "sectionId": ""
     },
     "/begriffe/iro-impacts-risks-opportunities/": {
@@ -5647,7 +5731,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/iro-impacts-risks-opportunities/index.html",
-      "contentHash": "1a0b32013d7d4c76",
+      "contentHash": "c7c3bab903c93bcb",
       "sectionId": ""
     },
     "/begriffe/iso/": {
@@ -5655,7 +5739,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/iso/index.html",
-      "contentHash": "0c5cb37db7726829",
+      "contentHash": "d7b34259f5c8a38c",
       "sectionId": ""
     },
     "/begriffe/kapital/": {
@@ -5663,7 +5747,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kapital/index.html",
-      "contentHash": "27bfcca00174f5cc",
+      "contentHash": "12ca53bb0833869b",
       "sectionId": ""
     },
     "/begriffe/kapital-2/": {
@@ -5671,7 +5755,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kapital-2/index.html",
-      "contentHash": "3e801f247d84f718",
+      "contentHash": "1f46ecb9144ec7b9",
       "sectionId": ""
     },
     "/begriffe/kapitalwirkung/": {
@@ -5679,7 +5763,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kapitalwirkung/index.html",
-      "contentHash": "8bf4d9c0bff92d67",
+      "contentHash": "edc048ee9affa4cc",
       "sectionId": ""
     },
     "/begriffe/kapitalzugang/": {
@@ -5687,7 +5771,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kapitalzugang/index.html",
-      "contentHash": "2e22a6c8003faca7",
+      "contentHash": "3de9661738f3441f",
       "sectionId": ""
     },
     "/begriffe/kausalitaet-und-zurechnung/": {
@@ -5695,7 +5779,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kausalitaet-und-zurechnung/index.html",
-      "contentHash": "fbbcfc4d8d4826e5",
+      "contentHash": "6f08f9ed9bb4420a",
       "sectionId": ""
     },
     "/begriffe/kausalitaet-zurechnung/": {
@@ -5703,7 +5787,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kausalitaet-zurechnung/index.html",
-      "contentHash": "9e6731a4873c3ab6",
+      "contentHash": "44cd1521a0a18ab8",
       "sectionId": ""
     },
     "/begriffe/ki/": {
@@ -5711,7 +5795,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ki/index.html",
-      "contentHash": "026c5f4b8a9b3f29",
+      "contentHash": "b9cfb504ae999e00",
       "sectionId": ""
     },
     "/begriffe/kii/": {
@@ -5719,7 +5803,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kii/index.html",
-      "contentHash": "05067d17ff6bf2ae",
+      "contentHash": "f4112ebc6cabaee1",
       "sectionId": ""
     },
     "/begriffe/kinderarbeit-zwangsarbeit/": {
@@ -5727,7 +5811,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kinderarbeit-zwangsarbeit/index.html",
-      "contentHash": "43633b2775125e70",
+      "contentHash": "781ceb189208ee43",
       "sectionId": ""
     },
     "/begriffe/klimastandards/": {
@@ -5735,7 +5819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/klimastandards/index.html",
-      "contentHash": "c4ed54fddb49c402",
+      "contentHash": "77d1e1e6d4aa56ff",
       "sectionId": ""
     },
     "/begriffe/kontraindikation/": {
@@ -5743,7 +5827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kontraindikation/index.html",
-      "contentHash": "f708c70fc92c8991",
+      "contentHash": "5a7231f1c16b992b",
       "sectionId": ""
     },
     "/begriffe/kontraindikation-2/": {
@@ -5751,7 +5835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kontraindikation-2/index.html",
-      "contentHash": "6d971987a088b48a",
+      "contentHash": "b511314d07220edd",
       "sectionId": ""
     },
     "/begriffe/kpi/": {
@@ -5759,7 +5843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kpi/index.html",
-      "contentHash": "44ce820adfac8ca9",
+      "contentHash": "21ef3bdae67ddb37",
       "sectionId": ""
     },
     "/begriffe/kulturelle-anschlussfaehigkeit/": {
@@ -5767,7 +5851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/kulturelle-anschlussfaehigkeit/index.html",
-      "contentHash": "d3747d5bb16f8eb8",
+      "contentHash": "9d8e5f6b8cc846b7",
       "sectionId": ""
     },
     "/begriffe/label-siegel/": {
@@ -5775,7 +5859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/label-siegel/index.html",
-      "contentHash": "cbd5fe7cbbc38d45",
+      "contentHash": "f20430ef9c524540",
       "sectionId": ""
     },
     "/begriffe/labelwashing/": {
@@ -5783,7 +5867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/labelwashing/index.html",
-      "contentHash": "d6e301c57216aac6",
+      "contentHash": "0fa16f7ee7c3e99d",
       "sectionId": ""
     },
     "/begriffe/lca-2/": {
@@ -5791,7 +5875,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/lca-2/index.html",
-      "contentHash": "f821d200b8ef5aa9",
+      "contentHash": "4377bcafdb39ef3f",
       "sectionId": ""
     },
     "/begriffe/leistung/": {
@@ -5799,7 +5883,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/leistung/index.html",
-      "contentHash": "ef0b7dde53705d74",
+      "contentHash": "8abff42ed1e5ba00",
       "sectionId": ""
     },
     "/begriffe/leistung-2/": {
@@ -5807,7 +5891,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/leistung-2/index.html",
-      "contentHash": "abae609473b30338",
+      "contentHash": "71f002130fb4267c",
       "sectionId": ""
     },
     "/begriffe/lieferkettenrisiko/": {
@@ -5815,7 +5899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/lieferkettenrisiko/index.html",
-      "contentHash": "e0d8a5f3d5153a90",
+      "contentHash": "deec9fef0e1772a8",
       "sectionId": ""
     },
     "/begriffe/lieferkettenwirkung/": {
@@ -5823,7 +5907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/lieferkettenwirkung/index.html",
-      "contentHash": "7d604e7b948d8993",
+      "contentHash": "45ce484ef25852c9",
       "sectionId": ""
     },
     "/begriffe/living-wage/": {
@@ -5831,7 +5915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/living-wage/index.html",
-      "contentHash": "cb8b50f29f4b9639",
+      "contentHash": "2fd11334d14d5652",
       "sectionId": ""
     },
     "/begriffe/lock-in-effekt/": {
@@ -5839,7 +5923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/lock-in-effekt/index.html",
-      "contentHash": "47c7fa959c94c079",
+      "contentHash": "cbdc040885c13bd5",
       "sectionId": ""
     },
     "/begriffe/managementsysteme/": {
@@ -5847,7 +5931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/managementsysteme/index.html",
-      "contentHash": "7a9315f048547b84",
+      "contentHash": "b332826812294874",
       "sectionId": ""
     },
     "/begriffe/medienqualitaet/": {
@@ -5855,7 +5939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/medienqualitaet/index.html",
-      "contentHash": "97133e0f6ce402a9",
+      "contentHash": "14613113cbc3bb86",
       "sectionId": ""
     },
     "/begriffe/medienqualitaet-2/": {
@@ -5863,7 +5947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/medienqualitaet-2/index.html",
-      "contentHash": "9c2d13d2385f2010",
+      "contentHash": "3f80d6a2fd23b6ed",
       "sectionId": ""
     },
     "/begriffe/mensch-planet-und-demokratie/": {
@@ -5871,7 +5955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/mensch-planet-und-demokratie/index.html",
-      "contentHash": "c8ff786790105c14",
+      "contentHash": "7ae0e84c250c5ac4",
       "sectionId": ""
     },
     "/begriffe/menschenrechte-in-der-lieferkette/": {
@@ -5879,7 +5963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/menschenrechte-in-der-lieferkette/index.html",
-      "contentHash": "4c421bcab993d88f",
+      "contentHash": "76705c0795ff79a4",
       "sectionId": ""
     },
     "/begriffe/misalignment-year/": {
@@ -5887,7 +5971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/misalignment-year/index.html",
-      "contentHash": "1ac0e126c2adedbe",
+      "contentHash": "5bc44c7e78b37a59",
       "sectionId": ""
     },
     "/begriffe/mpd/": {
@@ -5895,7 +5979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/mpd/index.html",
-      "contentHash": "e1cb7673da098335",
+      "contentHash": "bbbae18b8c3b9bf6",
       "sectionId": ""
     },
     "/begriffe/msci-esg-ratings/": {
@@ -5903,7 +5987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/msci-esg-ratings/index.html",
-      "contentHash": "34b7cb7f091e2ebb",
+      "contentHash": "4d7e6ae9a1da6710",
       "sectionId": ""
     },
     "/begriffe/nace-2/": {
@@ -5911,7 +5995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nace-2/index.html",
-      "contentHash": "8e428b1a8ff4628e",
+      "contentHash": "a3a94fcca6da22e6",
       "sectionId": ""
     },
     "/begriffe/narrativ/": {
@@ -5919,7 +6003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/narrativ/index.html",
-      "contentHash": "2c9827a1d99450be",
+      "contentHash": "8559bdb1633cca5d",
       "sectionId": ""
     },
     "/begriffe/narrativ-2/": {
@@ -5927,7 +6011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/narrativ-2/index.html",
-      "contentHash": "7c8e4c439c0aed7b",
+      "contentHash": "118111d61f5a9739",
       "sectionId": ""
     },
     "/begriffe/natur-labels/": {
@@ -5935,7 +6019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/natur-labels/index.html",
-      "contentHash": "8e28dc9f044255ae",
+      "contentHash": "5a8f52ab1ac935d4",
       "sectionId": ""
     },
     "/begriffe/nebenwirkung/": {
@@ -5943,7 +6027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nebenwirkung/index.html",
-      "contentHash": "08c085af08867f45",
+      "contentHash": "6698919521001cbf",
       "sectionId": ""
     },
     "/begriffe/nebenwirkung-2/": {
@@ -5951,7 +6035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nebenwirkung-2/index.html",
-      "contentHash": "8690b39758d75eb2",
+      "contentHash": "688589782c5b5aba",
       "sectionId": ""
     },
     "/begriffe/negative-wirkung-2/": {
@@ -5959,7 +6043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/negative-wirkung-2/index.html",
-      "contentHash": "d3899e1ee6dc624d",
+      "contentHash": "d7f49ca1e61d4088",
       "sectionId": ""
     },
     "/begriffe/neoklassische-foerderlogik/": {
@@ -5967,7 +6051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/neoklassische-foerderlogik/index.html",
-      "contentHash": "b4d7d18161deadd7",
+      "contentHash": "236f0b77039c0a0b",
       "sectionId": ""
     },
     "/begriffe/neoklassische-foerderlogik-2/": {
@@ -5975,7 +6059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/neoklassische-foerderlogik-2/index.html",
-      "contentHash": "53231bb4ac55edfb",
+      "contentHash": "45aab1a5e5d4d998",
       "sectionId": ""
     },
     "/begriffe/netto-wirkung-2/": {
@@ -5983,7 +6067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/netto-wirkung-2/index.html",
-      "contentHash": "b8e88b73e3bc638d",
+      "contentHash": "7c3350a6ffc52025",
       "sectionId": ""
     },
     "/begriffe/netto-wirkungs-index/": {
@@ -5991,7 +6075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/netto-wirkungs-index/index.html",
-      "contentHash": "5d4648bbe6f2688d",
+      "contentHash": "073395666d7f75eb",
       "sectionId": ""
     },
     "/begriffe/ngo/": {
@@ -5999,7 +6083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ngo/index.html",
-      "contentHash": "08084dbcdf634235",
+      "contentHash": "a9520ce334e16351",
       "sectionId": ""
     },
     "/begriffe/nicht-kompensation/": {
@@ -6007,7 +6091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nicht-kompensation/index.html",
-      "contentHash": "b4b01d1a9029f249",
+      "contentHash": "71d925e109a2f113",
       "sectionId": ""
     },
     "/begriffe/nicht-kompensation-2/": {
@@ -6015,7 +6099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nicht-kompensation-2/index.html",
-      "contentHash": "90736c2531a2c423",
+      "contentHash": "01be6a3982ad0656",
       "sectionId": ""
     },
     "/begriffe/nichttriviales-system/": {
@@ -6023,7 +6107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nichttriviales-system/index.html",
-      "contentHash": "ac125be912fdc4a3",
+      "contentHash": "f480f8f877f08a3d",
       "sectionId": ""
     },
     "/begriffe/normativer-massstab/": {
@@ -6031,7 +6115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/normativer-massstab/index.html",
-      "contentHash": "8e87e4ddecf7d9a0",
+      "contentHash": "dded36bcf1a9bbfb",
       "sectionId": ""
     },
     "/begriffe/normativer-massstab-2/": {
@@ -6039,7 +6123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/normativer-massstab-2/index.html",
-      "contentHash": "5edf12a7d510bc53",
+      "contentHash": "922abc09c53f8953",
       "sectionId": ""
     },
     "/begriffe/normativer-wert/": {
@@ -6047,7 +6131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/normativer-wert/index.html",
-      "contentHash": "14ca6100f39e9ec1",
+      "contentHash": "303cd85aa4815668",
       "sectionId": ""
     },
     "/begriffe/normativer-wert-2/": {
@@ -6055,7 +6139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/normativer-wert-2/index.html",
-      "contentHash": "888810191fff8947",
+      "contentHash": "8ecb31331832a9e9",
       "sectionId": ""
     },
     "/begriffe/nwi-2/": {
@@ -6063,7 +6147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/nwi-2/index.html",
-      "contentHash": "6ad629e556be25ad",
+      "contentHash": "5e92098ab87b6ed9",
       "sectionId": ""
     },
     "/begriffe/oecd/": {
@@ -6071,7 +6155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/oecd/index.html",
-      "contentHash": "6a571181d52d9a2a",
+      "contentHash": "284d0c2f4ab81388",
       "sectionId": ""
     },
     "/begriffe/oeffentliche-wahrheit/": {
@@ -6079,7 +6163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/oeffentliche-wahrheit/index.html",
-      "contentHash": "5a83080e8dc0e2e6",
+      "contentHash": "51e8eaf48fecb574",
       "sectionId": ""
     },
     "/begriffe/oekologische-oekonomie/": {
@@ -6087,7 +6171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/oekologische-oekonomie/index.html",
-      "contentHash": "863cb192e619c50e",
+      "contentHash": "3f1c2d7af3193560",
       "sectionId": ""
     },
     "/begriffe/outcome/": {
@@ -6095,7 +6179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/outcome/index.html",
-      "contentHash": "ecfdb14147a89a73",
+      "contentHash": "7150be777be28cb8",
       "sectionId": ""
     },
     "/begriffe/outcome-2/": {
@@ -6103,7 +6187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/outcome-2/index.html",
-      "contentHash": "c88f15d0b6767649",
+      "contentHash": "095b119755a996e9",
       "sectionId": ""
     },
     "/begriffe/output/": {
@@ -6111,7 +6195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/output/index.html",
-      "contentHash": "ca10976261bc07a4",
+      "contentHash": "4d705afb2dae22ce",
       "sectionId": ""
     },
     "/begriffe/output-2/": {
@@ -6119,7 +6203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/output-2/index.html",
-      "contentHash": "89eb9f8b885f6731",
+      "contentHash": "4b6abf9129dbbff6",
       "sectionId": ""
     },
     "/begriffe/pai-principal-adverse-impacts/": {
@@ -6127,7 +6211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/pai-principal-adverse-impacts/index.html",
-      "contentHash": "75cd5ea24e3c67ba",
+      "contentHash": "4bff648d68dd6932",
       "sectionId": ""
     },
     "/begriffe/pcf/": {
@@ -6135,7 +6219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/pcf/index.html",
-      "contentHash": "756c82bc76d00f44",
+      "contentHash": "673e3da3c9cf1601",
       "sectionId": ""
     },
     "/begriffe/physisches-klimarisiko/": {
@@ -6143,7 +6227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/physisches-klimarisiko/index.html",
-      "contentHash": "9db91a3e8eff40a0",
+      "contentHash": "19d47deff2591c25",
       "sectionId": ""
     },
     "/begriffe/planet/": {
@@ -6151,7 +6235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/planet/index.html",
-      "contentHash": "202ea1b628039c74",
+      "contentHash": "aa7e960161f9f616",
       "sectionId": ""
     },
     "/begriffe/planet-2/": {
@@ -6159,7 +6243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/planet-2/index.html",
-      "contentHash": "f24ca3e6e4f8402b",
+      "contentHash": "482f8b3d0b5791d6",
       "sectionId": ""
     },
     "/begriffe/platform-on-sustainable-finance/": {
@@ -6167,7 +6251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/platform-on-sustainable-finance/index.html",
-      "contentHash": "0b7bd8729cc3959d",
+      "contentHash": "9dcd5984f1e84d0c",
       "sectionId": ""
     },
     "/begriffe/praevention/": {
@@ -6175,7 +6259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/praevention/index.html",
-      "contentHash": "8107e1bff99346a5",
+      "contentHash": "49932a51f36b64a4",
       "sectionId": ""
     },
     "/begriffe/praevention-als-wirkleistung/": {
@@ -6183,7 +6267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/praevention-als-wirkleistung/index.html",
-      "contentHash": "b59d7240ea91a5d0",
+      "contentHash": "aa76cfd0a8f6da52",
       "sectionId": ""
     },
     "/begriffe/praevention-als-wirkleistung-2/": {
@@ -6191,7 +6275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/praevention-als-wirkleistung-2/index.html",
-      "contentHash": "8591c17535a78259",
+      "contentHash": "f7ce95b3aeaac93d",
       "sectionId": ""
     },
     "/begriffe/produkt-labels/": {
@@ -6199,7 +6283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/produkt-labels/index.html",
-      "contentHash": "b2994dc2fee61329",
+      "contentHash": "cad59707783c228f",
       "sectionId": ""
     },
     "/begriffe/produktscorecard/": {
@@ -6207,7 +6291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/produktscorecard/index.html",
-      "contentHash": "6cb44a64c6b82042",
+      "contentHash": "f3ce3f08db55694f",
       "sectionId": ""
     },
     "/begriffe/programmatik-praxis-luecke/": {
@@ -6215,7 +6299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/programmatik-praxis-luecke/index.html",
-      "contentHash": "8b05a93f82d6c87a",
+      "contentHash": "6a1f73209f21266e",
       "sectionId": ""
     },
     "/begriffe/programmatik-praxis-luecke-2/": {
@@ -6223,7 +6307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/programmatik-praxis-luecke-2/index.html",
-      "contentHash": "5ab520077785d18b",
+      "contentHash": "80ff16607a4a498b",
       "sectionId": ""
     },
     "/begriffe/reach/": {
@@ -6231,7 +6315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/reach/index.html",
-      "contentHash": "309c98a4c6785f10",
+      "contentHash": "f87942e9713a303e",
       "sectionId": ""
     },
     "/begriffe/rebound-effekt/": {
@@ -6239,7 +6323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/rebound-effekt/index.html",
-      "contentHash": "94ceb3777324652c",
+      "contentHash": "1f5f84923482614e",
       "sectionId": ""
     },
     "/begriffe/rebound-effekt-2/": {
@@ -6247,7 +6331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/rebound-effekt-2/index.html",
-      "contentHash": "35a0086d61a9852b",
+      "contentHash": "06b017a8a37a55b3",
       "sectionId": ""
     },
     "/begriffe/referenzrahmen/": {
@@ -6255,7 +6339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/referenzrahmen/index.html",
-      "contentHash": "fb4022dc1b05bdf9",
+      "contentHash": "3f1e0f74654995b4",
       "sectionId": ""
     },
     "/begriffe/reparaturwohlstand/": {
@@ -6263,7 +6347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/reparaturwohlstand/index.html",
-      "contentHash": "6a1b45681201cc18",
+      "contentHash": "e7338db913510457",
       "sectionId": ""
     },
     "/begriffe/reparaturwohlstand-2/": {
@@ -6271,7 +6355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/reparaturwohlstand-2/index.html",
-      "contentHash": "cc143ac7c462b06f",
+      "contentHash": "2f03f2bb625c60e4",
       "sectionId": ""
     },
     "/begriffe/resilienz/": {
@@ -6279,7 +6363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/resilienz/index.html",
-      "contentHash": "066df1a151078d8d",
+      "contentHash": "bf8e4cd9fd01c884",
       "sectionId": ""
     },
     "/begriffe/resilienz-2/": {
@@ -6287,7 +6371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/resilienz-2/index.html",
-      "contentHash": "98157329b48089e9",
+      "contentHash": "b8112e3d24a786c4",
       "sectionId": ""
     },
     "/begriffe/resonanzprofil/": {
@@ -6295,7 +6379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/resonanzprofil/index.html",
-      "contentHash": "fe252cf6c77f7980",
+      "contentHash": "fe8c0fd2971742c5",
       "sectionId": ""
     },
     "/begriffe/resonanzrisiko/": {
@@ -6303,7 +6387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/resonanzrisiko/index.html",
-      "contentHash": "1cb8706a1f513f48",
+      "contentHash": "b0f0691e980881a9",
       "sectionId": ""
     },
     "/begriffe/reverse-merit-order-2/": {
@@ -6311,7 +6395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/reverse-merit-order-2/index.html",
-      "contentHash": "093f1c69fe1a5b97",
+      "contentHash": "800ec771dbd2d478",
       "sectionId": ""
     },
     "/begriffe/rmo/": {
@@ -6319,7 +6403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/rmo/index.html",
-      "contentHash": "16035ea85820ee8c",
+      "contentHash": "6e37c5b15f53205c",
       "sectionId": ""
     },
     "/begriffe/roi/": {
@@ -6327,7 +6411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/roi/index.html",
-      "contentHash": "943c5109efd0afd8",
+      "contentHash": "a338bbad76718e86",
       "sectionId": ""
     },
     "/begriffe/rote-linien/": {
@@ -6335,7 +6419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/rote-linien/index.html",
-      "contentHash": "a869d65302b6eb4e",
+      "contentHash": "bb2e5e972fe00940",
       "sectionId": ""
     },
     "/begriffe/rueckkopplung/": {
@@ -6343,7 +6427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/rueckkopplung/index.html",
-      "contentHash": "1a6a3f98b13f79d6",
+      "contentHash": "29d7771845ccbf55",
       "sectionId": ""
     },
     "/begriffe/rueckkopplung-2/": {
@@ -6351,7 +6435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/rueckkopplung-2/index.html",
-      "contentHash": "d9f19d89072c1007",
+      "contentHash": "89e4ef0b4403b52d",
       "sectionId": ""
     },
     "/begriffe/sanierungsfahrplan/": {
@@ -6359,7 +6443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sanierungsfahrplan/index.html",
-      "contentHash": "30f24ff7ea257850",
+      "contentHash": "a867061fece5620a",
       "sectionId": ""
     },
     "/begriffe/scheinleistung/": {
@@ -6367,7 +6451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/scheinleistung/index.html",
-      "contentHash": "b8f6bf4faf9371dd",
+      "contentHash": "741d94931a3ed9c3",
       "sectionId": ""
     },
     "/begriffe/scheinleistung-2/": {
@@ -6375,7 +6459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/scheinleistung-2/index.html",
-      "contentHash": "feb5de0906b8a339",
+      "contentHash": "a569d81b94401a06",
       "sectionId": ""
     },
     "/begriffe/scheinwohlstand/": {
@@ -6383,7 +6467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/scheinwohlstand/index.html",
-      "contentHash": "855808c22256ae5b",
+      "contentHash": "4c9e62dd51515e80",
       "sectionId": ""
     },
     "/begriffe/scheinwohlstand-2/": {
@@ -6391,7 +6475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/scheinwohlstand-2/index.html",
-      "contentHash": "277efeeddd1a1e9e",
+      "contentHash": "2556c894f38b3025",
       "sectionId": ""
     },
     "/begriffe/scorecards/": {
@@ -6399,7 +6483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/scorecards/index.html",
-      "contentHash": "f2fe8a1e5471a3b1",
+      "contentHash": "ee427b9ca645b768",
       "sectionId": ""
     },
     "/begriffe/scorecards-2/": {
@@ -6407,7 +6491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/scorecards-2/index.html",
-      "contentHash": "16d2e7c62990de9d",
+      "contentHash": "b842b546f2f5a1d6",
       "sectionId": ""
     },
     "/begriffe/sdg/": {
@@ -6415,7 +6499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sdg/index.html",
-      "contentHash": "0cd7a11e0f572306",
+      "contentHash": "373f5fbd26f3e214",
       "sectionId": ""
     },
     "/begriffe/sfdr-2/": {
@@ -6423,7 +6507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sfdr-2/index.html",
-      "contentHash": "bfc3d1ea8c42fba3",
+      "contentHash": "b6c63d7165ed7f32",
       "sectionId": ""
     },
     "/begriffe/social-solidarity-economy/": {
@@ -6431,7 +6515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/social-solidarity-economy/index.html",
-      "contentHash": "3df8c0c4a6e1834d",
+      "contentHash": "5f44ba04bb07b67c",
       "sectionId": ""
     },
     "/begriffe/sozialstandards/": {
@@ -6439,7 +6523,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sozialstandards/index.html",
-      "contentHash": "c857f9b724bededc",
+      "contentHash": "e59177b76a6ee683",
       "sectionId": ""
     },
     "/begriffe/sroi/": {
@@ -6447,7 +6531,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sroi/index.html",
-      "contentHash": "2a16758d15ecab89",
+      "contentHash": "2afb390a0ca4b574",
       "sectionId": ""
     },
     "/begriffe/steward-ownership/": {
@@ -6455,7 +6539,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/steward-ownership/index.html",
-      "contentHash": "07033f53af718750",
+      "contentHash": "e9d1b73495a0212c",
       "sectionId": ""
     },
     "/begriffe/sustainability-benchmarking/": {
@@ -6463,7 +6547,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sustainability-benchmarking/index.html",
-      "contentHash": "3b821c027fee2f5e",
+      "contentHash": "e4671bf39b85475e",
       "sectionId": ""
     },
     "/begriffe/sustainalytics/": {
@@ -6471,7 +6555,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/sustainalytics/index.html",
-      "contentHash": "72af1b86c818e766",
+      "contentHash": "4532f254016773b6",
       "sectionId": ""
     },
     "/begriffe/systemischer-wert/": {
@@ -6479,7 +6563,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/systemischer-wert/index.html",
-      "contentHash": "1a0bd84ef8e3b2b8",
+      "contentHash": "67855c96b14723a4",
       "sectionId": ""
     },
     "/begriffe/systemischer-wert-2/": {
@@ -6487,7 +6571,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/systemischer-wert-2/index.html",
-      "contentHash": "0fb0f3c2053f913e",
+      "contentHash": "c09737c54801c1a9",
       "sectionId": ""
     },
     "/begriffe/systemwirkung/": {
@@ -6495,7 +6579,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/systemwirkung/index.html",
-      "contentHash": "e16f951011d3fb10",
+      "contentHash": "3aff0dbf07e45823",
       "sectionId": ""
     },
     "/begriffe/t-sroi-2/": {
@@ -6503,7 +6587,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/t-sroi-2/index.html",
-      "contentHash": "53a0ac0078eeebf9",
+      "contentHash": "b9474c86b683fe93",
       "sectionId": ""
     },
     "/begriffe/t-sroi-3/": {
@@ -6511,7 +6595,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/t-sroi-3/index.html",
-      "contentHash": "dc3d9efe15b6b302",
+      "contentHash": "79f57a517f072b6c",
       "sectionId": ""
     },
     "/begriffe/taxonomy-compass/": {
@@ -6519,7 +6603,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/taxonomy-compass/index.html",
-      "contentHash": "0b53c7917bc4abd2",
+      "contentHash": "fbea6c9e08013606",
       "sectionId": ""
     },
     "/begriffe/thg/": {
@@ -6527,7 +6611,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/thg/index.html",
-      "contentHash": "fc5cd3b81331be1a",
+      "contentHash": "61d7e6b9c55deb6c",
       "sectionId": ""
     },
     "/begriffe/tiere/": {
@@ -6535,7 +6619,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/tiere/index.html",
-      "contentHash": "35a10d9b8ec08510",
+      "contentHash": "ac0e2367b3a0e977",
       "sectionId": ""
     },
     "/begriffe/tiere-nicht-menschliches-leben/": {
@@ -6543,7 +6627,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/tiere-nicht-menschliches-leben/index.html",
-      "contentHash": "a3d14e16aa8cb7b1",
+      "contentHash": "7de245e63e804a6e",
       "sectionId": ""
     },
     "/begriffe/tonalitaet/": {
@@ -6551,7 +6635,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/tonalitaet/index.html",
-      "contentHash": "6ad92dbcdf92de25",
+      "contentHash": "e0c7ffbddadfdabc",
       "sectionId": ""
     },
     "/begriffe/transformation/": {
@@ -6559,7 +6643,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/transformation/index.html",
-      "contentHash": "e2a5e51b47da0641",
+      "contentHash": "815376930cb66b66",
       "sectionId": ""
     },
     "/begriffe/transitionsrisiko/": {
@@ -6567,7 +6651,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/transitionsrisiko/index.html",
-      "contentHash": "fb4d747525ed6b47",
+      "contentHash": "9ee0bb487909c8ec",
       "sectionId": ""
     },
     "/begriffe/un/": {
@@ -6575,7 +6659,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/un/index.html",
-      "contentHash": "09870e647e8abb34",
+      "contentHash": "49457d73088238a2",
       "sectionId": ""
     },
     "/begriffe/unesco/": {
@@ -6583,7 +6667,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/unesco/index.html",
-      "contentHash": "bb46161bd966c424",
+      "contentHash": "9255b95bc1a15bd8",
       "sectionId": ""
     },
     "/begriffe/unterlassen/": {
@@ -6591,7 +6675,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/unterlassen/index.html",
-      "contentHash": "f56f32b45f71ca92",
+      "contentHash": "e73967360de950b1",
       "sectionId": ""
     },
     "/begriffe/unterlassen-2/": {
@@ -6599,7 +6683,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/unterlassen-2/index.html",
-      "contentHash": "7192bdc422e1e593",
+      "contentHash": "ec968c7f86c99b48",
       "sectionId": ""
     },
     "/begriffe/verlustleistung/": {
@@ -6607,7 +6691,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/verlustleistung/index.html",
-      "contentHash": "1144be02714b4acf",
+      "contentHash": "f1436440d2802f25",
       "sectionId": ""
     },
     "/begriffe/verlustleistung-2/": {
@@ -6615,7 +6699,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/verlustleistung-2/index.html",
-      "contentHash": "b6c80e35f96e7bd8",
+      "contentHash": "b93ff2c7fa4a3e14",
       "sectionId": ""
     },
     "/begriffe/versicherbarkeit/": {
@@ -6623,7 +6707,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/versicherbarkeit/index.html",
-      "contentHash": "d08dd6f4aead5e12",
+      "contentHash": "51a80314fa0e5e7d",
       "sectionId": ""
     },
     "/begriffe/vlop/": {
@@ -6631,7 +6715,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/vlop/index.html",
-      "contentHash": "f868a9f070a1619b",
+      "contentHash": "e383ea5ca6fe91be",
       "sectionId": ""
     },
     "/begriffe/vorgriffswohlstand/": {
@@ -6639,7 +6723,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/vorgriffswohlstand/index.html",
-      "contentHash": "e177544ae6b6b8ce",
+      "contentHash": "5407001869d0c514",
       "sectionId": ""
     },
     "/begriffe/w-bip/": {
@@ -6647,7 +6731,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/w-bip/index.html",
-      "contentHash": "c4b3344092171a42",
+      "contentHash": "4aa72c16c8d86fe0",
       "sectionId": ""
     },
     "/begriffe/waok/": {
@@ -6655,7 +6739,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/waok/index.html",
-      "contentHash": "98b6f23d45d46ffd",
+      "contentHash": "f51368797929fe33",
       "sectionId": ""
     },
     "/begriffe/wechselwirkung/": {
@@ -6663,7 +6747,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wechselwirkung/index.html",
-      "contentHash": "eeb1301ed543d8ba",
+      "contentHash": "67781eb82daf2e08",
       "sectionId": ""
     },
     "/begriffe/wechselwirkung-2/": {
@@ -6671,7 +6755,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wechselwirkung-2/index.html",
-      "contentHash": "9e2d65b6661d8f33",
+      "contentHash": "a9e124472d13a69d",
       "sectionId": ""
     },
     "/begriffe/wellbeing-economy/": {
@@ -6679,7 +6763,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wellbeing-economy/index.html",
-      "contentHash": "27f3fe35f36550b3",
+      "contentHash": "0dc845b4d238e5f9",
       "sectionId": ""
     },
     "/begriffe/weltfaehig/": {
@@ -6687,7 +6771,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/weltfaehig/index.html",
-      "contentHash": "87fa6ab434120927",
+      "contentHash": "1c2fdc1d6a61c92d",
       "sectionId": ""
     },
     "/begriffe/westg/": {
@@ -6695,7 +6779,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/westg/index.html",
-      "contentHash": "ec7b70675dfcf186",
+      "contentHash": "55701749ee155ef2",
       "sectionId": ""
     },
     "/begriffe/who-2/": {
@@ -6703,7 +6787,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/who-2/index.html",
-      "contentHash": "659140f027c4e697",
+      "contentHash": "a1caee3ecce9589b",
       "sectionId": ""
     },
     "/begriffe/wirkleistung/": {
@@ -6711,7 +6795,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkleistung/index.html",
-      "contentHash": "85519592b51fd472",
+      "contentHash": "651994ebaced1a3a",
       "sectionId": ""
     },
     "/begriffe/wirkleistung-2/": {
@@ -6719,7 +6803,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkleistung-2/index.html",
-      "contentHash": "1337b12a1ac3a4da",
+      "contentHash": "351b3f7693b74e76",
       "sectionId": ""
     },
     "/begriffe/wirkmechanismus-2/": {
@@ -6727,7 +6811,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkmechanismus-2/index.html",
-      "contentHash": "3d912d98e4b8afa7",
+      "contentHash": "9458a0c8b2b953ca",
       "sectionId": ""
     },
     "/begriffe/wirkstoff-2/": {
@@ -6735,7 +6819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkstoff-2/index.html",
-      "contentHash": "91754964c9305358",
+      "contentHash": "27d71a08959e639a",
       "sectionId": ""
     },
     "/begriffe/wirkung-2/": {
@@ -6743,7 +6827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-2/index.html",
-      "contentHash": "b9a4023765f9e11c",
+      "contentHash": "e1d04ffe4e28fd3c",
       "sectionId": ""
     },
     "/begriffe/wirkung-dritter-ordnung/": {
@@ -6751,7 +6835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-dritter-ordnung/index.html",
-      "contentHash": "33ebda1d2fa7f4d0",
+      "contentHash": "c072d3f1ce52f5b9",
       "sectionId": ""
     },
     "/begriffe/wirkung-dritter-ordnung-2/": {
@@ -6759,7 +6843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-dritter-ordnung-2/index.html",
-      "contentHash": "c3e45feefa803b0b",
+      "contentHash": "2052ab58391f199c",
       "sectionId": ""
     },
     "/begriffe/wirkung-dritter-ordnung-3/": {
@@ -6767,7 +6851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-dritter-ordnung-3/index.html",
-      "contentHash": "1f285954a2173911",
+      "contentHash": "807058c27949a418",
       "sectionId": ""
     },
     "/begriffe/wirkung-erster-ordnung/": {
@@ -6775,7 +6859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-erster-ordnung/index.html",
-      "contentHash": "408ed2cf2424c4c0",
+      "contentHash": "238a12a36f370310",
       "sectionId": ""
     },
     "/begriffe/wirkung-erster-ordnung-2/": {
@@ -6783,7 +6867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-erster-ordnung-2/index.html",
-      "contentHash": "a6bd2c1715751c95",
+      "contentHash": "d82496df07da976f",
       "sectionId": ""
     },
     "/begriffe/wirkung-erster-ordnung-3/": {
@@ -6791,7 +6875,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-erster-ordnung-3/index.html",
-      "contentHash": "a8be5c162628e811",
+      "contentHash": "f03db6a250c47ca2",
       "sectionId": ""
     },
     "/begriffe/wirkung-statt-kapital/": {
@@ -6799,7 +6883,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-statt-kapital/index.html",
-      "contentHash": "79fd57b0bd9303b2",
+      "contentHash": "bb5a03576698fb38",
       "sectionId": ""
     },
     "/begriffe/wirkung-zweiter-ordnung/": {
@@ -6807,7 +6891,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-zweiter-ordnung/index.html",
-      "contentHash": "ceb89d830ecdfbf8",
+      "contentHash": "d2db8e0f151c4ed6",
       "sectionId": ""
     },
     "/begriffe/wirkung-zweiter-ordnung-2/": {
@@ -6815,7 +6899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-zweiter-ordnung-2/index.html",
-      "contentHash": "a627a13881be2582",
+      "contentHash": "92bf2605d2f30f04",
       "sectionId": ""
     },
     "/begriffe/wirkung-zweiter-ordnung-3/": {
@@ -6823,7 +6907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkung-zweiter-ordnung-3/index.html",
-      "contentHash": "9a21c04a053c023b",
+      "contentHash": "e2797ad79c372cce",
       "sectionId": ""
     },
     "/begriffe/wirkungs-bip/": {
@@ -6831,7 +6915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungs-bip/index.html",
-      "contentHash": "acbc2f759fc04a6d",
+      "contentHash": "c2c5aa9214810953",
       "sectionId": ""
     },
     "/begriffe/wirkungs-bonus-malus-logik/": {
@@ -6839,7 +6923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungs-bonus-malus-logik/index.html",
-      "contentHash": "1b5cdcb3684f720b",
+      "contentHash": "e5a58603f16edce9",
       "sectionId": ""
     },
     "/begriffe/wirkungsanalyse/": {
@@ -6847,7 +6931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsanalyse/index.html",
-      "contentHash": "a9e2e12f7fc631b9",
+      "contentHash": "c9c88dc07a6839e4",
       "sectionId": ""
     },
     "/begriffe/wirkungsanalyse-2/": {
@@ -6855,7 +6939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsanalyse-2/index.html",
-      "contentHash": "c46725735cae975d",
+      "contentHash": "2313c19612ce8e32",
       "sectionId": ""
     },
     "/begriffe/wirkungsarchitektur-2/": {
@@ -6863,7 +6947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsarchitektur-2/index.html",
-      "contentHash": "bb45b35ba8a3a72c",
+      "contentHash": "023ed3ec40b6b127",
       "sectionId": ""
     },
     "/begriffe/wirkungsassurance/": {
@@ -6871,7 +6955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsassurance/index.html",
-      "contentHash": "5d3bf6dfb03e70db",
+      "contentHash": "8edb48d0887cf4d4",
       "sectionId": ""
     },
     "/begriffe/wirkungsaudit/": {
@@ -6879,7 +6963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsaudit/index.html",
-      "contentHash": "b0a0d7bfe57cbc76",
+      "contentHash": "4b90d522729d1fc8",
       "sectionId": ""
     },
     "/begriffe/wirkungsbericht/": {
@@ -6887,7 +6971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsbericht/index.html",
-      "contentHash": "79dfe76d767676b0",
+      "contentHash": "33c683f28a7cef0c",
       "sectionId": ""
     },
     "/begriffe/wirkungsbericht-2/": {
@@ -6895,7 +6979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsbericht-2/index.html",
-      "contentHash": "5a303100b9fa17a2",
+      "contentHash": "0c41806b513e2081",
       "sectionId": ""
     },
     "/begriffe/wirkungsblindheit-2/": {
@@ -6903,7 +6987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsblindheit-2/index.html",
-      "contentHash": "b61fe376e4a62bf4",
+      "contentHash": "81f5ffbd998df3ff",
       "sectionId": ""
     },
     "/begriffe/wirkungscontrolling/": {
@@ -6911,7 +6995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungscontrolling/index.html",
-      "contentHash": "8024458cbd3072eb",
+      "contentHash": "297f031de62e5fae",
       "sectionId": ""
     },
     "/begriffe/wirkungscontrolling-2/": {
@@ -6919,7 +7003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungscontrolling-2/index.html",
-      "contentHash": "7efc4fa237968f49",
+      "contentHash": "d0d6ed29008d71f0",
       "sectionId": ""
     },
     "/begriffe/wirkungsdaten-2/": {
@@ -6927,7 +7011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsdaten-2/index.html",
-      "contentHash": "5e2e59a06c840830",
+      "contentHash": "5ac3bcfcff2547fb",
       "sectionId": ""
     },
     "/begriffe/wirkungsebene-1/": {
@@ -6935,7 +7019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsebene-1/index.html",
-      "contentHash": "c2990f860c25dcff",
+      "contentHash": "17b06a173009e58c",
       "sectionId": ""
     },
     "/begriffe/wirkungsebene-2/": {
@@ -6943,7 +7027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsebene-2/index.html",
-      "contentHash": "dabf228b09c935dc",
+      "contentHash": "852cd0f324002118",
       "sectionId": ""
     },
     "/begriffe/wirkungsebene-3/": {
@@ -6951,7 +7035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsebene-3/index.html",
-      "contentHash": "4512f25f7e3041aa",
+      "contentHash": "5b5449ebcc15aadc",
       "sectionId": ""
     },
     "/begriffe/wirkungseinkommensteuer/": {
@@ -6959,7 +7043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungseinkommensteuer/index.html",
-      "contentHash": "e9d27ef2aa43fdbc",
+      "contentHash": "1fa0c37b8307d02b",
       "sectionId": ""
     },
     "/begriffe/wirkungsfaehigkeit/": {
@@ -6967,7 +7051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsfaehigkeit/index.html",
-      "contentHash": "4036ffd4f0a641be",
+      "contentHash": "db5b6f5c84c8d019",
       "sectionId": ""
     },
     "/begriffe/wirkungsfeld/": {
@@ -6975,7 +7059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsfeld/index.html",
-      "contentHash": "9ad6dc73b5584a85",
+      "contentHash": "1c1457cfcb87265c",
       "sectionId": ""
     },
     "/begriffe/wirkungsgovernance/": {
@@ -6983,7 +7067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsgovernance/index.html",
-      "contentHash": "a03476f7d1fc1c4b",
+      "contentHash": "19253977d5fe7482",
       "sectionId": ""
     },
     "/begriffe/wirkungsgrad/": {
@@ -6991,7 +7075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsgrad/index.html",
-      "contentHash": "5a0c185c1cab8c64",
+      "contentHash": "57ccf9951a4c4a31",
       "sectionId": ""
     },
     "/begriffe/wirkungsgrad-2/": {
@@ -6999,7 +7083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsgrad-2/index.html",
-      "contentHash": "d68f9526893c56e0",
+      "contentHash": "86f7ccf35662d1f9",
       "sectionId": ""
     },
     "/begriffe/wirkungshebel/": {
@@ -7007,7 +7091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungshebel/index.html",
-      "contentHash": "68e41ba340904bb6",
+      "contentHash": "7512a75ed87146a3",
       "sectionId": ""
     },
     "/begriffe/wirkungskapital/": {
@@ -7015,7 +7099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungskapital/index.html",
-      "contentHash": "5a372d2e1d04e003",
+      "contentHash": "4ee47fd2f9eddec4",
       "sectionId": ""
     },
     "/begriffe/wirkungskennzahl/": {
@@ -7023,7 +7107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungskennzahl/index.html",
-      "contentHash": "ac074732fec9cef4",
+      "contentHash": "50505da7901e90e0",
       "sectionId": ""
     },
     "/begriffe/wirkungskette/": {
@@ -7031,7 +7115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungskette/index.html",
-      "contentHash": "795562aa4c9b5136",
+      "contentHash": "0607be29e59a3957",
       "sectionId": ""
     },
     "/begriffe/wirkungsklasse/": {
@@ -7039,7 +7123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsklasse/index.html",
-      "contentHash": "1037c0fbffcdaa28",
+      "contentHash": "f5bb52a1bca76d6c",
       "sectionId": ""
     },
     "/begriffe/wirkungsklasse-2/": {
@@ -7047,7 +7131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsklasse-2/index.html",
-      "contentHash": "4108dc193aec693d",
+      "contentHash": "bc608a7b25d438b4",
       "sectionId": ""
     },
     "/begriffe/wirkungslenkung-2/": {
@@ -7055,7 +7139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungslenkung-2/index.html",
-      "contentHash": "5f5058fab4fcdc78",
+      "contentHash": "b22a7e633d8db5ca",
       "sectionId": ""
     },
     "/begriffe/wirkungsluecke/": {
@@ -7063,7 +7147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsluecke/index.html",
-      "contentHash": "636526bfbf0f8cac",
+      "contentHash": "39de42f4fbf1d24e",
       "sectionId": ""
     },
     "/begriffe/wirkungsluecke-2/": {
@@ -7071,7 +7155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsluecke-2/index.html",
-      "contentHash": "e8fe18982111909d",
+      "contentHash": "2c4e9a347f781a35",
       "sectionId": ""
     },
     "/begriffe/wirkungsmanagement/": {
@@ -7079,7 +7163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsmanagement/index.html",
-      "contentHash": "1dbf56e4573ee377",
+      "contentHash": "c395e0d7a7c34c7d",
       "sectionId": ""
     },
     "/begriffe/wirkungsmanagement-2/": {
@@ -7087,7 +7171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsmanagement-2/index.html",
-      "contentHash": "f1ae9f7dabc849db",
+      "contentHash": "c2fb3a4defd93110",
       "sectionId": ""
     },
     "/begriffe/wirkungsmarkt/": {
@@ -7095,7 +7179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsmarkt/index.html",
-      "contentHash": "5e4dba0d94b2725d",
+      "contentHash": "6d7a692e0e7a08e3",
       "sectionId": ""
     },
     "/begriffe/wirkungsmonitoring/": {
@@ -7103,7 +7187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsmonitoring/index.html",
-      "contentHash": "e71b361bf2ac9554",
+      "contentHash": "c810d9a67b8487a1",
       "sectionId": ""
     },
     "/begriffe/wirkungsmonitoring-2/": {
@@ -7111,7 +7195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsmonitoring-2/index.html",
-      "contentHash": "2899a6fbbcf52a68",
+      "contentHash": "5f108080412b6023",
       "sectionId": ""
     },
     "/begriffe/wirkungsnachweis/": {
@@ -7119,7 +7203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsnachweis/index.html",
-      "contentHash": "ca0c4a4905123fdf",
+      "contentHash": "61cc855cb876c4e3",
       "sectionId": ""
     },
     "/begriffe/wirkungsnachweis-2/": {
@@ -7127,7 +7211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsnachweis-2/index.html",
-      "contentHash": "c8e79e2d76903d18",
+      "contentHash": "effec83ddedd4c8b",
       "sectionId": ""
     },
     "/begriffe/wirkungsoekonomie/": {
@@ -7135,7 +7219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsoekonomie/index.html",
-      "contentHash": "36ef12b2bc67ef35",
+      "contentHash": "46605e9eb3292b02",
       "sectionId": ""
     },
     "/begriffe/wirkungsoekonomie-2/": {
@@ -7143,7 +7227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsoekonomie-2/index.html",
-      "contentHash": "0e406f14def6fda9",
+      "contentHash": "2516b8594fb26f27",
       "sectionId": ""
     },
     "/begriffe/wirkungsoekonomische-kaufkraftlogik/": {
@@ -7151,7 +7235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsoekonomische-kaufkraftlogik/index.html",
-      "contentHash": "19e7dcd385313764",
+      "contentHash": "8afe8231c08775a4",
       "sectionId": ""
     },
     "/begriffe/wirkungsordnung/": {
@@ -7159,7 +7243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsordnung/index.html",
-      "contentHash": "78948de90e31645a",
+      "contentHash": "b83ad11231d39fb4",
       "sectionId": ""
     },
     "/begriffe/wirkungspartnerschaft/": {
@@ -7167,7 +7251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspartnerschaft/index.html",
-      "contentHash": "b9bfc948a4ecb644",
+      "contentHash": "edebaac2d0ad3d76",
       "sectionId": ""
     },
     "/begriffe/wirkungspotenzial-2/": {
@@ -7175,7 +7259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspotenzial-2/index.html",
-      "contentHash": "4d89ce31dc08ad80",
+      "contentHash": "21a4c9330a76e466",
       "sectionId": ""
     },
     "/begriffe/wirkungspotenzialmanagement/": {
@@ -7183,7 +7267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspotenzialmanagement/index.html",
-      "contentHash": "cd4483a253290d52",
+      "contentHash": "7258bbedc3f6f315",
       "sectionId": ""
     },
     "/begriffe/wirkungspotenzialmanagement-2/": {
@@ -7191,7 +7275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspotenzialmanagement-2/index.html",
-      "contentHash": "fac474b82877a6dd",
+      "contentHash": "a34c0cfb67916753",
       "sectionId": ""
     },
     "/begriffe/wirkungspraxis/": {
@@ -7199,7 +7283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspraxis/index.html",
-      "contentHash": "5d9e433ad0491122",
+      "contentHash": "65391f780a2817e5",
       "sectionId": ""
     },
     "/begriffe/wirkungspraxis-2/": {
@@ -7207,7 +7291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspraxis-2/index.html",
-      "contentHash": "5bb6cf3170b1b2ad",
+      "contentHash": "361dd59538a77c66",
       "sectionId": ""
     },
     "/begriffe/wirkungsprofil/": {
@@ -7215,7 +7299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsprofil/index.html",
-      "contentHash": "5595e228558a89ed",
+      "contentHash": "1b7f877550d7639f",
       "sectionId": ""
     },
     "/begriffe/wirkungsprofil-2/": {
@@ -7223,7 +7307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsprofil-2/index.html",
-      "contentHash": "5ef814fad4f7f795",
+      "contentHash": "fb7a13e911831e5d",
       "sectionId": ""
     },
     "/begriffe/wirkungspruefung/": {
@@ -7231,7 +7315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspruefung/index.html",
-      "contentHash": "f18001c41cf2f246",
+      "contentHash": "d0a3a0626bc55188",
       "sectionId": ""
     },
     "/begriffe/wirkungspruefung-2/": {
@@ -7239,7 +7323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungspruefung-2/index.html",
-      "contentHash": "987df8f8980d16b5",
+      "contentHash": "0140250a500a4b68",
       "sectionId": ""
     },
     "/begriffe/wirkungsrat-2/": {
@@ -7247,7 +7331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsrat-2/index.html",
-      "contentHash": "2394ee515ded8ef0",
+      "contentHash": "cd0f5d7ebbf7385d",
       "sectionId": ""
     },
     "/begriffe/wirkungsraum-2/": {
@@ -7255,7 +7339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsraum-2/index.html",
-      "contentHash": "a7a3823b204c858b",
+      "contentHash": "bf47e07f6ef3547f",
       "sectionId": ""
     },
     "/begriffe/wirkungsresilienz-2/": {
@@ -7263,7 +7347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsresilienz-2/index.html",
-      "contentHash": "5945fbadac7ccc29",
+      "contentHash": "532c2e855635c6bd",
       "sectionId": ""
     },
     "/begriffe/wirkungsrisiko-2/": {
@@ -7271,7 +7355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsrisiko-2/index.html",
-      "contentHash": "365984c0230a5090",
+      "contentHash": "e2760145087e8679",
       "sectionId": ""
     },
     "/begriffe/wirkungsrisikomanagement/": {
@@ -7279,7 +7363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsrisikomanagement/index.html",
-      "contentHash": "78d0acc7d903a302",
+      "contentHash": "843e6590db5ac1d2",
       "sectionId": ""
     },
     "/begriffe/wirkungsrisikomanagement-2/": {
@@ -7287,7 +7371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsrisikomanagement-2/index.html",
-      "contentHash": "06d90e13450893c6",
+      "contentHash": "374d3c4a44d82ddd",
       "sectionId": ""
     },
     "/begriffe/wirkungsrueckkopplung-2/": {
@@ -7295,7 +7379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungsrueckkopplung-2/index.html",
-      "contentHash": "a48f090f679cd85f",
+      "contentHash": "35471714100b460b",
       "sectionId": ""
     },
     "/begriffe/wirkungssimulation/": {
@@ -7303,7 +7387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungssimulation/index.html",
-      "contentHash": "caa3805ac41f65ca",
+      "contentHash": "e55c49c32210c0fb",
       "sectionId": ""
     },
     "/begriffe/wirkungssimulation-2/": {
@@ -7311,7 +7395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungssimulation-2/index.html",
-      "contentHash": "8ea933012f9eb3ce",
+      "contentHash": "7a7a796c2d553c01",
       "sectionId": ""
     },
     "/begriffe/wirkungssteuerkonto/": {
@@ -7319,7 +7403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungssteuerkonto/index.html",
-      "contentHash": "0b6b915675e661fa",
+      "contentHash": "7e4e96ef20de1bb2",
       "sectionId": ""
     },
     "/begriffe/wirkungstraeger-2/": {
@@ -7327,7 +7411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungstraeger-2/index.html",
-      "contentHash": "ab3917d874884b71",
+      "contentHash": "eb071580810645e1",
       "sectionId": ""
     },
     "/begriffe/wirkungswahrheit-2/": {
@@ -7335,7 +7419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungswahrheit-2/index.html",
-      "contentHash": "8fb5a996824f5189",
+      "contentHash": "3196050a7f3171eb",
       "sectionId": ""
     },
     "/begriffe/wirkungswashing/": {
@@ -7343,7 +7427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungswashing/index.html",
-      "contentHash": "902f0d857f6fab1b",
+      "contentHash": "49c321749f850917",
       "sectionId": ""
     },
     "/begriffe/wirkungswashing-2/": {
@@ -7351,7 +7435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungswashing-2/index.html",
-      "contentHash": "44055314201312d4",
+      "contentHash": "a9897015bab5d343",
       "sectionId": ""
     },
     "/begriffe/wirkungswohlstand/": {
@@ -7359,7 +7443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungswohlstand/index.html",
-      "contentHash": "bb7e616dc613f777",
+      "contentHash": "6a8cbac813d0dd89",
       "sectionId": ""
     },
     "/begriffe/wirkungswohlstand-2/": {
@@ -7367,7 +7451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungswohlstand-2/index.html",
-      "contentHash": "532814f495272fd5",
+      "contentHash": "b65e13034a550d9b",
       "sectionId": ""
     },
     "/begriffe/wirkungszeit/": {
@@ -7375,7 +7459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungszeit/index.html",
-      "contentHash": "18dd1b0777d93a9c",
+      "contentHash": "0645ea66a9388c5d",
       "sectionId": ""
     },
     "/begriffe/wirkungszeit-2/": {
@@ -7383,7 +7467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wirkungszeit-2/index.html",
-      "contentHash": "3c835a0f245abfd3",
+      "contentHash": "8068de5377752df2",
       "sectionId": ""
     },
     "/begriffe/wkg/": {
@@ -7391,7 +7475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wkg/index.html",
-      "contentHash": "cb32efbb34dc0544",
+      "contentHash": "7db6988a816a5ffe",
       "sectionId": ""
     },
     "/begriffe/woek/": {
@@ -7399,7 +7483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/woek/index.html",
-      "contentHash": "7a3e784639b3e89f",
+      "contentHash": "74630c75cc078f77",
       "sectionId": ""
     },
     "/begriffe/woek-id-2/": {
@@ -7407,7 +7491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/woek-id-2/index.html",
-      "contentHash": "766148fd9c66be0d",
+      "contentHash": "a6428fa9be6e068f",
       "sectionId": ""
     },
     "/begriffe/woek-ids/": {
@@ -7415,7 +7499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/woek-ids/index.html",
-      "contentHash": "c950caca129b2e00",
+      "contentHash": "bd82d0f2b1b0ee97",
       "sectionId": ""
     },
     "/begriffe/woek-ids-2/": {
@@ -7423,7 +7507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/woek-ids-2/index.html",
-      "contentHash": "ae43347fdb4a5b97",
+      "contentHash": "bb50ae915453b168",
       "sectionId": ""
     },
     "/begriffe/wohlstand/": {
@@ -7431,7 +7515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wohlstand/index.html",
-      "contentHash": "df1459433a21128c",
+      "contentHash": "fbd378151e034e0f",
       "sectionId": ""
     },
     "/begriffe/wohlstand-2/": {
@@ -7439,7 +7523,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wohlstand-2/index.html",
-      "contentHash": "9e1f745af96fda89",
+      "contentHash": "a0de5038fe5301d9",
       "sectionId": ""
     },
     "/begriffe/wohlstand-als-systemzustand/": {
@@ -7447,7 +7531,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wohlstand-als-systemzustand/index.html",
-      "contentHash": "87dca8774efc1566",
+      "contentHash": "91f2966f9bd59528",
       "sectionId": ""
     },
     "/begriffe/wok/": {
@@ -7455,7 +7539,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wok/index.html",
-      "contentHash": "7e638a83f25b8a9e",
+      "contentHash": "e4ba903d64124184",
       "sectionId": ""
     },
     "/begriffe/wr/": {
@@ -7463,7 +7547,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/wr/index.html",
-      "contentHash": "abe107673ab7bd9a",
+      "contentHash": "821918faebdcaba9",
       "sectionId": ""
     },
     "/begriffe/zertifizierung/": {
@@ -7471,7 +7555,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/zertifizierung/index.html",
-      "contentHash": "60f15ce38459fb99",
+      "contentHash": "d877a8483a57b4cd",
       "sectionId": ""
     },
     "/begriffe/zielkonflikt/": {
@@ -7479,7 +7563,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/zielkonflikt/index.html",
-      "contentHash": "b7478e43b29999a9",
+      "contentHash": "f8e0c1d8aa07c64a",
       "sectionId": ""
     },
     "/begriffe/zielzustand/": {
@@ -7487,7 +7571,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/zielzustand/index.html",
-      "contentHash": "5dd96bbfa4b361e2",
+      "contentHash": "9d0fa14b964bd04b",
       "sectionId": ""
     },
     "/begriffe/zustandsveraenderung/": {
