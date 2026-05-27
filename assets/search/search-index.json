@@ -4137,6 +4137,63 @@
     "priority": 164
   },
   {
+    "id": "woek-term-herkunftsnachweis-hkn",
+    "title": "Herkunftsnachweis / HKN",
+    "description": "Ein Herkunftsnachweis ist ein elektronischer Nachweis dafür, wo und wie eine bestimmte Menge Strom aus erneuerbaren Energien erzeugt wurde.",
+    "url": "/begriffe/herkunftsnachweis-hkn/",
+    "section": "Begriffe",
+    "type": "Anschlussbegriff",
+    "format": "Glossarbegriff",
+    "impactSpaces": [
+      "Mensch",
+      "Planet",
+      "Demokratie"
+    ],
+    "standards": [],
+    "instruments": [
+      "scope-2",
+      "ghg-protocol",
+      "greenwashing",
+      "produktdaten",
+      "wirkungsdaten",
+      "digitaler-produktpass"
+    ],
+    "tags": [
+      "anschlussbegriff",
+      "1.0",
+      "approved",
+      "Herkunftsnachweis / HKN",
+      "Herkunftsnachweis",
+      "HKN",
+      "HKN-Zertifikat",
+      "Herkunftsnachweisregister",
+      "HKNR",
+      "Guarantee of Origin",
+      "Guarantees of Origin",
+      "GoO",
+      "Ökostromnachweis",
+      "Gruenstromnachweis",
+      "Grünstromnachweis"
+    ],
+    "aliases": [
+      "Herkunftsnachweis / HKN",
+      "Herkunftsnachweis",
+      "HKN",
+      "HKN-Zertifikat",
+      "Herkunftsnachweisregister",
+      "HKNR",
+      "Guarantee of Origin",
+      "Guarantees of Origin",
+      "GoO",
+      "Ökostromnachweis",
+      "Gruenstromnachweis",
+      "Grünstromnachweis",
+      "Ein Herkunftsnachweis belegt Herkunft und Menge erneuerbarer Stromerzeugung, aber nicht automatisch physische Lieferung, Zusätzlichkeit oder Gesamtwirkung."
+    ],
+    "body": "Herkunftsnachweis / HKN Ein Herkunftsnachweis ist ein elektronischer Nachweis dafür, wo und wie eine bestimmte Menge Strom aus erneuerbaren Energien erzeugt wurde. Ein Herkunftsnachweis belegt Herkunft und Menge erneuerbarer Stromerzeugung, aber nicht automatisch physische Lieferung, Zusätzlichkeit oder Gesamtwirkung. Ein HKN dokumentiert die erneuerbare Eigenschaft einer Strommenge und verhindert Doppelvermarktung im Ökostrommarkt. Er sagt aber nicht automatisch, dass an einer konkreten Steckdose physisch genau dieser Strom ankommt, dass neue Anlagen zusätzlich gebaut wurden oder dass die gesamte ökologische Wirkung des Stromprodukts positiv ist. Bei Ökostrom-, Ladeinfrastruktur- und Scope-2-Aussagen als Nachweisbasis nennen, aber klar von Ökostromlabel, physischer Lieferung, Zusätzlichkeit und Gesamtwirkung trennen. Herkunftsnachweis / HKN Herkunftsnachweis HKN HKN-Zertifikat Herkunftsnachweisregister HKNR Guarantee of Origin Guarantees of Origin GoO Ökostromnachweis Gruenstromnachweis Grünstromnachweis scope-2 ghg-protocol greenwashing produktdaten wirkungsdaten digitaler-produktpass",
+    "priority": 164
+  },
+  {
     "id": "woek-term-ilo",
     "title": "ILO",
     "description": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
@@ -5879,7 +5936,7 @@
   {
     "id": "woek-term-sustainable-finance",
     "title": "Sustainable Finance",
-    "description": "Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen.",
+    "description": "Sustainable Finance bezeichnet Finanzmarktregeln, Produkte und Daten, die Umwelt-, Sozial- und Governance-Aspekte in Investitions-, Kredit- und Offenlegungsentscheidungen einbeziehen.",
     "url": "/begriffe/sustainable-finance/",
     "section": "Begriffe",
     "type": "Anschlussbegriff",
@@ -5891,7 +5948,8 @@
     ],
     "standards": [
       "eu-taxonomie",
-      "csrd"
+      "csrd",
+      "esrs"
     ],
     "instruments": [
       "eu-taxonomie",
@@ -5899,7 +5957,14 @@
       "pai",
       "esap",
       "csrd",
-      "transition-finance"
+      "esrs",
+      "eu-green-bond-standard",
+      "transition-finance",
+      "taxonomy-navigator",
+      "esg",
+      "wirkungsdaten",
+      "steuerungsdaten",
+      "wirkungsrueckkopplung"
     ],
     "tags": [
       "anschlussbegriff",
@@ -5907,15 +5972,25 @@
       "approved",
       "Sustainable Finance",
       "nachhaltige Finanzierung",
-      "Sustainable-Finance-Architektur"
+      "nachhaltige Finanzwirtschaft",
+      "EU Sustainable Finance",
+      "Sustainable-Finance-Architektur",
+      "Sustainable-Finance-Strategie",
+      "Finanzierung der Transformation",
+      "Financing sustainable growth"
     ],
     "aliases": [
       "Sustainable Finance",
       "nachhaltige Finanzierung",
+      "nachhaltige Finanzwirtschaft",
+      "EU Sustainable Finance",
       "Sustainable-Finance-Architektur",
-      "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung."
+      "Sustainable-Finance-Strategie",
+      "Finanzierung der Transformation",
+      "Financing sustainable growth",
+      "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung."
     ],
-    "body": "Sustainable Finance Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen. Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung. Für die WÖk ist Sustainable Finance ein zentraler Anschlussraum. Die WÖk ersetzt diese Architektur nicht, sondern nutzt Berichtsdaten, Taxonomieinformationen und Risikodaten als Grundlage für Kapitalwirkung und Wirkungsrückkopplung. Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss. Sustainable Finance nachhaltige Finanzierung Sustainable-Finance-Architektur eu-taxonomie sfdr pai esap csrd transition-finance",
+    "body": "Sustainable Finance Sustainable Finance bezeichnet Finanzmarktregeln, Produkte und Daten, die Umwelt-, Sozial- und Governance-Aspekte in Investitions-, Kredit- und Offenlegungsentscheidungen einbeziehen. Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung. Sustainable Finance verbindet Kapitalmärkte mit Nachhaltigkeitszielen, Risiken, Offenlegung und Transformationsfinanzierung. In der EU gehören dazu unter anderem EU-Taxonomie, SFDR, CSRD/ESRS, PAI, ESAP, Transition Finance und der EU Green Bond Standard. Für die Wirkungsökonomie ist Sustainable Finance ein wichtiger Anschlussraum: Die WÖk ersetzt diese Regeln nicht, sondern nutzt Taxonomie-, Reporting-, Risiko- und Kapitalmarktdaten, um Kapitalwirkung, Wirkungsbewertung und Wirkungsrückkopplung präziser zu machen. Als Finanzmarkt- und Regulierungsanschluss verwenden: Sustainable Finance beschreibt Transparenz, Risiko, Taxonomie und Transformationsfinanzierung; die WÖk fragt zusätzlich nach Netto-Wirkung und Rückkopplung. Sustainable Finance nachhaltige Finanzierung nachhaltige Finanzwirtschaft EU Sustainable Finance Sustainable-Finance-Architektur Sustainable-Finance-Strategie Finanzierung der Transformation Financing sustainable growth eu-taxonomie sfdr pai esap csrd esrs eu-green-bond-standard transition-finance taxonomy-navigator esg wirkungsdaten steuerungsdaten wirkungsrueckkopplung",
     "priority": 164
   },
   {
@@ -10701,6 +10776,7 @@
     ],
     "instruments": [
       "social-taxonomy",
+      "sustainable-finance",
       "eu-taxonomie",
       "esg",
       "csrd",
@@ -10730,7 +10806,7 @@
       "/assets/pdf/social-taxonomy-wirkungsoekonomie.pdf",
       "/begriffe/social-taxonomy/"
     ],
-    "body": "Social Taxonomy Ausarbeitung Diese Ausarbeitung ordnet Social Taxonomy als soziale Wirkungsarchitektur ein: von EU-Sozialtaxonomie, Mindestschutz und DNSH bis zu positiver Netto-Wirkung, Scorecards, Datenqualität und Rückkopplung in Kapital, Beschaffung und Unternehmenssteuerung. Sustainable Finance Soziale Wirkung EU-Taxonomie Wirkungsökonomie Unternehmen Finanzmarkt Politik Verwaltung Wissenschaft Akademie Eine eigenständige verbindliche EU-Social-Taxonomy existiert Stand 27. Mai 2026 nicht; der Bericht der Platform on Sustainable Finance bleibt ein zentraler Vorschlag. Soziale Taxonomie darf nicht bei Mindestschutz und Reporting stehen bleiben, sondern muss positive soziale Wirkung, Nichtkompensation und Datenqualität sichtbar machen. Wirkungsökonomie übersetzt Social Taxonomy in Wirkungsdaten, Scorecards, WÖk-IDs und Rückkopplung in Kapital, Beschaffung, Förderung und Management. social-taxonomy eu-taxonomie esg csrd esrs positive-netto-wirkung nichtkompensationsprinzip scorecard reverse-merit-order t-sroi woek-id social-credit",
+    "body": "Social Taxonomy Ausarbeitung Diese Ausarbeitung ordnet Social Taxonomy als soziale Wirkungsarchitektur ein: von EU-Sozialtaxonomie, Mindestschutz und DNSH bis zu positiver Netto-Wirkung, Scorecards, Datenqualität und Rückkopplung in Kapital, Beschaffung und Unternehmenssteuerung. Sustainable Finance Soziale Wirkung EU-Taxonomie Wirkungsökonomie Unternehmen Finanzmarkt Politik Verwaltung Wissenschaft Akademie Eine eigenständige verbindliche EU-Social-Taxonomy existiert Stand 27. Mai 2026 nicht; der Bericht der Platform on Sustainable Finance bleibt ein zentraler Vorschlag. Soziale Taxonomie darf nicht bei Mindestschutz und Reporting stehen bleiben, sondern muss positive soziale Wirkung, Nichtkompensation und Datenqualität sichtbar machen. Wirkungsökonomie übersetzt Social Taxonomy in Wirkungsdaten, Scorecards, WÖk-IDs und Rückkopplung in Kapital, Beschaffung, Förderung und Management. social-taxonomy sustainable-finance eu-taxonomie esg csrd esrs positive-netto-wirkung nichtkompensationsprinzip scorecard reverse-merit-order t-sroi woek-id social-credit",
     "priority": 138
   },
   {
@@ -90217,6 +90293,9 @@
       "Anwenden",
       "Lernen",
       "Mitdenken",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",

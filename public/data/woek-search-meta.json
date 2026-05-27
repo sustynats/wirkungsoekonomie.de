@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T10:04:51.682Z",
+  "generatedAt": "2026-05-27T12:55:13.032Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -773,6 +773,24 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "searchBoost": 164
+    },
+    "/begriffe/herkunftsnachweis-hkn/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-herkunftsnachweis-hkn",
+      "documentId": "herkunftsnachweis-hkn",
+      "relatedTerms": [
+        "scope-2",
+        "ghg-protocol",
+        "greenwashing",
+        "produktdaten",
+        "wirkungsdaten",
+        "digitaler-produktpass"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Umweltbundesamt Herkunftsnachweisregister",
       "searchBoost": 164
     },
     "/begriffe/idgs/": {
@@ -1869,9 +1887,18 @@
         "pai",
         "esap",
         "csrd",
-        "transition-finance"
+        "esrs",
+        "eu-green-bond-standard",
+        "transition-finance",
+        "taxonomy-navigator",
+        "esg",
+        "wirkungsdaten",
+        "steuerungsdaten",
+        "wirkungsrueckkopplung"
       ],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "social-taxonomy-wirkungsoekonomie"
+      ],
       "sourceFile": "EU-Kommission Sustainable Finance",
       "searchBoost": 164
     },
@@ -3563,6 +3590,7 @@
       "documentId": "social-taxonomy-wirkungsoekonomie",
       "relatedTerms": [
         "social-taxonomy",
+        "sustainable-finance",
         "eu-taxonomie",
         "esg",
         "csrd",
@@ -5683,7 +5711,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "a84426a8302679d3",
+      "contentHash": "451a68a931e24e13",
       "sectionId": "woek-page-2afe7308732a6cbb"
     },
     "/begriffe/#glossary-filter-title": {
@@ -5691,7 +5719,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "a84426a8302679d3",
+      "contentHash": "451a68a931e24e13",
       "sectionId": "glossary-filter-title"
     },
     "/begriffe/#related-questions-title-begriffe": {
@@ -5699,7 +5727,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "a84426a8302679d3",
+      "contentHash": "451a68a931e24e13",
       "sectionId": "related-questions-title-begriffe"
     },
     "/begriffe/interdependenz/": {

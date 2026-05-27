@@ -2671,6 +2671,100 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "herkunftsnachweis-hkn",
+      "termId": "herkunftsnachweis-hkn",
+      "label": "Herkunftsnachweis / HKN",
+      "canonicalLabel": "Herkunftsnachweis / HKN",
+      "slug": "herkunftsnachweis-hkn",
+      "aliases": [
+        "Herkunftsnachweis",
+        "HKN",
+        "HKN-Zertifikat",
+        "Herkunftsnachweisregister",
+        "HKNR",
+        "Guarantee of Origin",
+        "Guarantees of Origin",
+        "GoO",
+        "Ökostromnachweis",
+        "Gruenstromnachweis",
+        "Grünstromnachweis"
+      ],
+      "synonyms": [
+        "Herkunftsnachweis",
+        "HKN",
+        "HKN-Zertifikat",
+        "Herkunftsnachweisregister",
+        "HKNR",
+        "Guarantee of Origin",
+        "Guarantees of Origin",
+        "GoO",
+        "Ökostromnachweis",
+        "Gruenstromnachweis",
+        "Grünstromnachweis"
+      ],
+      "shortDefinition": "Ein Herkunftsnachweis ist ein elektronischer Nachweis dafür, wo und wie eine bestimmte Menge Strom aus erneuerbaren Energien erzeugt wurde.",
+      "definition": "Herkunftsnachweise werden in Deutschland über das Herkunftsnachweisregister des Umweltbundesamts verwaltet. Stromversorger müssen Herkunftsnachweise entwerten, wenn sie gelieferte Strommengen als erneuerbaren Strom kennzeichnen.",
+      "longDefinition": "Ein HKN dokumentiert die erneuerbare Eigenschaft einer Strommenge und verhindert Doppelvermarktung im Ökostrommarkt. Er sagt aber nicht automatisch, dass an einer konkreten Steckdose physisch genau dieser Strom ankommt, dass neue Anlagen zusätzlich gebaut wurden oder dass die gesamte ökologische Wirkung des Stromprodukts positiv ist.",
+      "woekRelation": "Für die WÖk ist der Herkunftsnachweis ein wichtiger Daten- und Nachweisbaustein für Stromwirkung, Ladeinfrastruktur, Scope-2-Angaben, Produktdaten und Green-Claims-Prüfung. Er ersetzt aber keine vollständige Wirkungsbewertung, keine Zusätzlichkeitsprüfung und keine Rückkopplung nach realer Netto-Wirkung.",
+      "statusNote": "Herkunftsnachweise bestehen weiter. Sie belegen Herkunft und Menge erneuerbarer Stromerzeugung, nicht die vollständige ökologische Qualität, Zusätzlichkeit oder Systemwirkung.",
+      "usageNote": "Bei Ökostrom-, Ladeinfrastruktur- und Scope-2-Aussagen als Nachweisbasis nennen, aber klar von Ökostromlabel, physischer Lieferung, Zusätzlichkeit und Gesamtwirkung trennen.",
+      "categories": [
+        "daten-standards-regularien",
+        "produkt-und-lebenszyklusdaten",
+        "klima-natur-und-risiken",
+        "kommunikation-claims-greenwashing"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 68,
+      "relatedTerms": [
+        "scope-2",
+        "ghg-protocol",
+        "greenwashing",
+        "produktdaten",
+        "wirkungsdaten",
+        "digitaler-produktpass"
+      ],
+      "officialSources": [
+        "Umweltbundesamt: Herkunftsnachweisregister für Strom|https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/herkunftsnachweisregister-fuer-strom",
+        "Umweltbundesamt: Was ist ein Herkunftsnachweis?|https://www.umweltbundesamt.de/service/uba-fragen/was-ist-ein-herkunftsnachweis",
+        "Umweltbundesamt: Hintergrundwissen Ökostrom, Stromkennzeichen und Herkunftsnachweis|https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/hintergrundwissen-oekostrom-stromkennzeichen",
+        "GHG Protocol: Scope 2 Guidance|https://ghgprotocol.org/scope-2-guidance"
+      ],
+      "pageUrl": "/begriffe/herkunftsnachweis-hkn/",
+      "priority": 171,
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Umweltbundesamt Herkunftsnachweisregister",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "hoverDefinition": "Ein Herkunftsnachweis belegt Herkunft und Menge erneuerbarer Stromerzeugung, aber nicht automatisch physische Lieferung, Zusätzlichkeit oder Gesamtwirkung.",
+      "doNotConfuseWith": [
+        "Ökostromlabel",
+        "Zusätzlichkeit",
+        "physische Stromlieferung",
+        "Carbon Credits",
+        "Offsetting"
+      ],
+      "relatedDocuments": [],
+      "examples": [
+        "Ökostromtarif",
+        "Ladestation für Elektroautos",
+        "Scope-2-Strombilanzierung"
+      ],
+      "preferredUsage": "Als Nachweisbaustein für erneuerbare Strommengen verwenden und im WÖk-Kontext um Datenqualität, Zusätzlichkeit, Systemwirkung und Green-Claims-Prüfung ergänzen.",
+      "deprecatedUsage": [
+        "HKN als vollständiger Beweis für positive Netto-Wirkung",
+        "HKN als Beweis physischer Stromlieferung"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Herkunftsnachweis HKN",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "id": "idgs",
       "termId": "idgs",
       "label": "IDGs",
