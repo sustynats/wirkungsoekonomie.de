@@ -10,8 +10,8 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 
 - Zielseiten geprüft: 488
 - Buchbezug vorhanden nach Lauf: 488
-- Im aktuellen Lauf ergänzt oder ersetzt: 291
-- Bereits unverändert: 197
+- Im aktuellen Lauf ergänzt oder ersetzt: 290
+- Bereits unverändert: 198
 - Ohne passende Referenz übersprungen: 0
 - Ohne Einfügepunkt übersprungen: 0
 
@@ -46,7 +46,6 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 
 | Status | Seite | Titel | Referenzen |
 | --- | --- | --- | ---: |
-| inserted-before-main-close | /portale/ | Portale der Wirkungsökonomie | 6 |
 | inserted-before-section | /werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/ | Arbeit &amp; Einkommen | 6 |
 | replaced | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/ | Bildung &amp; Wirkungsschule | 6 |
 | replaced | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/ | Die Wirkungsschule | 6 |
@@ -361,7 +360,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsdatenraeume/ | Konzeptpapier: Wirkungsdatenräume | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsindikatoren/ | Wirkungsindikatoren Rang 17 | 6 |
 | unchanged | digitalisierung-ki-wirkungsdatenraeume | /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsscanner/ | Konzeptpapier: Wirkungsscanner und Bürger:innen-Instrumente | 6 |
-| inserted-before-main-close | default | /portale/ | Portale der Wirkungsökonomie | 6 |
+| unchanged | default | /portale/ | Portale der Wirkungsökonomie | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/buchanker-querverlinkungen/ | Buchanker und Querverlinkungen Rang 19 | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ | Konzeptpapier: CBAM, Grenzausgleich und externe Kosten | 6 |
 | unchanged | internationale-ordnung | /portale/internationale-ordnung-globalisierung-geopolitik/datenstandards-interoperabilitaet/ | Konzeptpapier: Globale WÖk-IDs, Datenstandards und Interoperabilität | 6 |

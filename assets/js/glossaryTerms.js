@@ -1270,7 +1270,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "wirkungsnah"
     ],
-    "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
+    "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - kein Wahrheitsmonopol.",
     "url": "/begriffe/wirkungswahrheit/",
     "priority": 68,
     "allowedContexts": [

@@ -1,7 +1,7 @@
 # Quellen- und Linkregister: Wohnen, Investor:innen, Vermieter:innen
 
 - **WÖk Working-Paper Wohnungsmarkt:** Working-Paper Wohnungsmarkt: Bezahlbar, nachhaltig, gerecht, Natalie Weber, 2025.
-- **WÖk Buchanker:** Die neue Ordnung des Wohlstands, Kapitel 3.15, 70.2–70.4, 70.3 Gebäude- und Quartierswirkung, Kapitel 59 Kapitalmärkte und Fonds.
+- **WÖk Buchanker:** Die neue Ordnung des Wohlstands, Kapitel 3.15, 70.2-70.4, 70.3 Gebäude- und Quartierswirkung, Kapitel 59 Kapitalmärkte und Fonds.
 - **WÖk Begriffsleitfaden:** Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026.
 - **EU EPBD:** European Commission, Energy Performance of Buildings Directive, EU/2024/1275, https://energy.ec.europa.eu/topics/energy-efficiency/energy-performance-buildings/energy-performance-buildings-directive_en
 - **GEG:** Bundesministerium für Wirtschaft und Klimaschutz, Gebäudeenergiegesetz / Startschuss fürs Heizen mit erneuerbaren Energien, https://www.bmwk.de/
