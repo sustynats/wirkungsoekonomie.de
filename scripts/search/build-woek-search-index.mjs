@@ -123,6 +123,7 @@ function hash(value) {
 }
 
 function entryFromTerm(term) {
+  const termPriority = term.status === "führender-begriff" ? 175 : term.dataStandardsGroup ? 164 : 155;
   const body = [
     term.canonicalLabel,
     term.shortDefinition,
@@ -146,7 +147,7 @@ function entryFromTerm(term) {
     tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || [])].filter(Boolean),
     aliases: [...(term.synonyms || []), term.hoverDefinition],
     body,
-    priority: term.status === "führender-begriff" ? 175 : 155,
+    priority: termPriority,
   };
 }
 

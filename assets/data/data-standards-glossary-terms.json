@@ -1,0 +1,1127 @@
+{
+  "generatedFrom": "Glossarbereich Daten, Standards und Regularien",
+  "groups": [
+    {
+      "id": "eu-politikrahmen",
+      "label": "EU-Politikrahmen",
+      "description": "Politische EU-Rahmen, die Transformation, Industriepolitik, Klima- und Sozialabfederung prägen."
+    },
+    {
+      "id": "sustainable-finance",
+      "label": "Sustainable Finance",
+      "description": "Finanzmarkt-, Taxonomie- und Offenlegungsbegriffe, die Kapitalflüsse nachhaltigkeitsbezogen einordnen."
+    },
+    {
+      "id": "reporting-pruefung",
+      "label": "Reporting und Prüfung",
+      "description": "Berichtsstandards, digitale Formate, Wesentlichkeitslogiken und Prüfungsniveaus."
+    },
+    {
+      "id": "lieferketten-sorgfalt",
+      "label": "Lieferketten und Sorgfalt",
+      "description": "Regeln und Standards für menschenrechtliche, ökologische und zollbezogene Sorgfalt in Wertschöpfungsketten."
+    },
+    {
+      "id": "produkt-lebenszyklusdaten",
+      "label": "Produkt- und Lebenszyklusdaten",
+      "description": "Produktdaten, Lebenszyklusmethoden und Deklarationen, die Umweltwirkung über den Lebensweg beschreiben."
+    },
+    {
+      "id": "klima-natur-risiken",
+      "label": "Klima, Natur und Risiken",
+      "description": "Klima-, Natur-, Risiko- und Zielrahmen für Emissionen, Biodiversität, Transitionspfade und Resilienz."
+    },
+    {
+      "id": "kommunikation-greenwashing",
+      "label": "Kommunikation und Greenwashing",
+      "description": "Begriffe für Nachhaltigkeitskommunikation, Umweltclaims, Labels und irreführende Wirkungserzählungen."
+    },
+    {
+      "id": "woek-uebersetzung",
+      "label": "WÖk-Übersetzung",
+      "description": "WÖk-Begriffe, die vorhandene Berichts-, Produkt- und Risikodaten in Wirkung, Bewertung und Rückkopplung übersetzen."
+    }
+  ],
+  "terms": [
+    {
+      "id": "european-green-deal",
+      "label": "European Green Deal / Europäischer Green Deal",
+      "group": "EU-Politikrahmen",
+      "short": "Der European Green Deal ist der politische Transformationsrahmen der EU für eine moderne, ressourceneffiziente, wettbewerbsfähige und klimaneutrale Wirtschaft.",
+      "woek": "Für die WÖk ist er ein wichtiger Anschlussrahmen, weil er EU-Taxonomie, Sustainable Finance, CSRD, Industrie-, Klima-, Produkt- und Lieferkettenregeln prägt. Er liefert aber keine vollständige WÖk-Logik.",
+      "usage": "Als politischen EU-Anschlussrahmen verwenden, nicht als fertige Wirkungsbewertung.",
+      "related": ["clean-industrial-deal", "fit-for-55", "eu-climate-law", "sustainable-finance", "eu-taxonomie", "csrd", "esrs", "cbam"],
+      "sources": ["EU-Kommission European Green Deal|https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en"]
+    },
+    {
+      "id": "clean-industrial-deal",
+      "label": "Clean Industrial Deal",
+      "group": "EU-Politikrahmen",
+      "short": "Der Clean Industrial Deal ist ein EU-Plan für industrielle Wettbewerbsfähigkeit und Dekarbonisierung.",
+      "woek": "Für die WÖk ist er anschlussfähig, weil er Klimaziele, Industriepolitik, Energiepreise, Beschaffung, Kreislaufwirtschaft und Kapitalflüsse zusammen betrachtet.",
+      "usage": "Als aktuellen EU-Industrie- und Dekarbonisierungsrahmen einordnen.",
+      "related": ["european-green-deal", "transition-finance", "cbam", "espr", "sustainable-finance"],
+      "sources": ["EU-Kommission Clean Industrial Deal|https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_en"]
+    },
+    {
+      "id": "fit-for-55",
+      "label": "Fit for 55",
+      "group": "EU-Politikrahmen",
+      "short": "Fit for 55 ist das EU-Gesetzgebungspaket zur Senkung der Netto-Treibhausgasemissionen um mindestens 55 Prozent bis 2030.",
+      "woek": "Die WÖk nutzt den Rahmen als Anschluss für Emissionsdaten, CBAM, Energiepreise, Industriepfade und Transformationsrisiken.",
+      "usage": "Als Paket aus mehreren EU-Instrumenten darstellen, nicht als einzelnes Gesetz.",
+      "related": ["eu-climate-law", "cbam", "ghg-protocol", "transition-risk"],
+      "sources": ["Rat der EU Fit for 55|https://www.consilium.europa.eu/en/policies/fit-for-55/"]
+    },
+    {
+      "id": "eu-climate-law",
+      "label": "EU Climate Law / Europäisches Klimagesetz",
+      "group": "EU-Politikrahmen",
+      "short": "Das Europäische Klimagesetz verankert Klimaneutralität der EU bis 2050 und das 2030-Ziel rechtlich.",
+      "woek": "Es liefert einen verbindlichen Zielrahmen, an den Klimaindikatoren, Transitionspfade, Kapitalrisiken und öffentliche Steuerung anschließen können.",
+      "usage": "Als Rechtsrahmen benennen; operative Wirkung entsteht erst durch konkrete Instrumente.",
+      "related": ["fit-for-55", "net-zero", "transition-plan", "transition-risk"],
+      "sources": ["EUR-Lex EU Climate Law|https://eur-lex.europa.eu/eli/reg/2021/1119/oj/eng"]
+    },
+    {
+      "id": "just-transition-mechanism",
+      "label": "Just Transition Mechanism",
+      "group": "EU-Politikrahmen",
+      "short": "Der Just Transition Mechanism unterstützt Regionen und Menschen, die vom Übergang zu einer klimaneutralen Wirtschaft besonders betroffen sind.",
+      "woek": "Er zeigt, dass Transformation nicht nur Emissionssenkung ist, sondern auch Arbeit, Regionen, Qualifikation, Teilhabe und demokratische Akzeptanz betrifft.",
+      "usage": "Als sozialen Übergangsrahmen verstehen, nicht als Ersatz für Wirkungseinkommen.",
+      "related": ["transition-finance", "wirkungsfonds", "wirkungseinkommen"],
+      "sources": ["EU-Kommission Just Transition Mechanism|https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/finance-and-green-deal/just-transition-mechanism_en"]
+    },
+    {
+      "id": "sustainable-finance",
+      "label": "Sustainable Finance",
+      "group": "Sustainable Finance",
+      "short": "Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen.",
+      "woek": "Die WÖk ersetzt Sustainable Finance nicht, sondern nutzt Taxonomie-, SFDR-, CSRD- und Risikodaten als Grundlage für Kapitalwirkung und Wirkungsrückkopplung.",
+      "usage": "Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss.",
+      "related": ["eu-taxonomie", "sfdr", "pai", "esap", "csrd", "transition-finance"],
+      "sources": ["EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"]
+    },
+    {
+      "id": "esg",
+      "label": "ESG",
+      "group": "Sustainable Finance",
+      "short": "ESG steht für Environmental, Social und Governance als Nachhaltigkeitsdimensionen in Unternehmen, Finanzierung und Reporting.",
+      "woek": "Die WÖk kann ESG-Daten nutzen, bleibt aber nicht beim Reporting stehen. Sie fragt, wie Wirkung in Preise, Kapital, Beschaffung und Entscheidungen zurückwirkt.",
+      "usage": "Nicht als Wirkungsnachweis verwenden.",
+      "related": ["sustainable-finance", "csrd", "esrs", "sfdr", "wirkungsrueckkopplung"],
+      "sources": ["EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"]
+    },
+    {
+      "id": "eu-taxonomie",
+      "label": "EU-Taxonomie",
+      "group": "Sustainable Finance",
+      "short": "Die EU-Taxonomie ist ein Klassifikationssystem für ökologisch nachhaltige Wirtschaftstätigkeiten.",
+      "woek": "Sie liefert wichtige Kriterien und Daten für Umweltwirkung. Die WÖk nutzt sie als Anschlussbasis, ersetzt aber Taxonomiefähigkeit oder Taxonomiekonformität nicht durch eigene Begriffe.",
+      "usage": "Nicht doppeln; Unterbegriffe wie DNSH, Mindestschutz, technische Bewertungskriterien und Taxonomie-KPIs sauber verlinken.",
+      "related": ["taxonomiefaehigkeit", "taxonomiekonformitaet", "dnsh", "mindestschutz-minimum-safeguards", "technische-bewertungskriterien", "taxonomy-kpis", "nace", "social-taxonomy"],
+      "sources": ["EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en", "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"]
+    },
+    {
+      "id": "social-taxonomy",
+      "label": "Social Taxonomy / Sozialtaxonomie",
+      "group": "Sustainable Finance",
+      "short": "Die Social Taxonomy ist ein vorgeschlagener Klassifikationsrahmen für sozial nachhaltige wirtschaftliche Aktivitäten.",
+      "woek": "Sie ist für die WÖk anschlussfähig, weil sie soziale Wirkung, menschenwürdige Arbeit, Verbraucher:innen, Gemeinschaften und menschenrechtliche Mindestbedingungen stärker systematisiert.",
+      "usage": "Statushinweis: Anders als die bestehende EU-Umwelttaxonomie ist die Social Taxonomy derzeit nicht als gleichwertiges geltendes EU-Klassifikationssystem umgesetzt. Relevant ist vor allem der Bericht der Platform on Sustainable Finance von 2022.",
+      "related": ["eu-taxonomie", "mindestschutz-minimum-safeguards", "csddd", "ilo-kernarbeitsnormen", "un-guiding-principles", "sdg-plus"],
+      "sources": ["Platform on Sustainable Finance final report 2022|https://finance.ec.europa.eu/publications/social-taxonomy-report-platform-sustainable-finance_en"]
+    },
+    {
+      "id": "sfdr",
+      "label": "SFDR",
+      "group": "Sustainable Finance",
+      "short": "Die SFDR ist die EU-Offenlegungsverordnung für Finanzmarktteilnehmer zu Nachhaltigkeitsinformationen.",
+      "woek": "SFDR-Daten können Hinweise auf nachhaltigkeitsbezogene Risiken und Wirkungen geben. Für die WÖk bleiben sie Berichtsdaten, solange sie nicht in Kapitalwirkung und Rückkopplung übersetzt werden.",
+      "usage": "Nicht als Wirkungsnachweis oder Gütesiegel darstellen.",
+      "related": ["sustainable-finance", "pai", "eu-taxonomie", "esg", "kapitalwirkung"],
+      "sources": ["EUR-Lex SFDR|https://eur-lex.europa.eu/eli/reg/2019/2088/oj/eng"]
+    },
+    {
+      "id": "pai",
+      "label": "PAI / Principal Adverse Impacts",
+      "group": "Sustainable Finance",
+      "short": "PAI sind Indikatoren für wesentliche nachteilige Auswirkungen von Investitionsentscheidungen auf Nachhaltigkeitsfaktoren.",
+      "woek": "PAI sind wichtig, weil sie negative Wirkungsindikatoren im Finanzmarkt sichtbar machen. Sie reichen aber nicht aus, um positive Netto-Wirkung vollständig zu bewerten.",
+      "usage": "Als Negativindikatoren im SFDR-Kontext einordnen.",
+      "related": ["sfdr", "sustainable-finance", "wirkungsrisiko", "wirkungsdaten"],
+      "sources": ["EUR-Lex SFDR Delegated Regulation|https://eur-lex.europa.eu/eli/reg_del/2022/1288/oj/eng"]
+    },
+    {
+      "id": "eu-green-bond-standard",
+      "label": "EU Green Bond Standard",
+      "group": "Sustainable Finance",
+      "short": "Der EU Green Bond Standard ist ein europäischer Standard für als europäische grüne Anleihen bezeichnete Bonds.",
+      "woek": "Grüne Finanzierungsinstrumente können Daten über Zweckbindung, Taxonomiebezug und Kapitalwirkung liefern. Sie ersetzen keine vollständige Wirkungsprüfung.",
+      "usage": "Als Bond-Standard, nicht als Gesamtbewertung eines Unternehmens verwenden.",
+      "related": ["sustainable-finance", "eu-taxonomie", "transition-finance"],
+      "sources": ["EUR-Lex EU Green Bond Standard|https://eur-lex.europa.eu/eli/reg/2023/2631/oj/eng"]
+    },
+    {
+      "id": "taxonomy-navigator",
+      "label": "Taxonomy Navigator / Taxonomy Compass",
+      "group": "Sustainable Finance",
+      "short": "Taxonomy Navigator und Taxonomy Compass sind EU-Hilfen zur Recherche von Taxonomie-Kriterien und Tätigkeiten.",
+      "woek": "Sie liefern Kriterien und Zuordnung. Die WÖk nutzt sie als Recherchequelle, nicht als vollständige Wirkungsbewertung.",
+      "usage": "Als offizielles Recherchewerkzeug zur EU-Taxonomie darstellen.",
+      "related": ["eu-taxonomie", "technische-bewertungskriterien", "nace"],
+      "sources": ["EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"]
+    },
+    {
+      "id": "transition-finance",
+      "label": "Transition Finance",
+      "group": "Sustainable Finance",
+      "short": "Transition Finance bezeichnet Finanzierung, die Unternehmen oder Aktivitäten auf glaubwürdige Transformationspfade bringt.",
+      "woek": "Die WÖk prüft, ob Kapital echte Transformationswirkung ermöglicht oder schädliche Strukturen verlängert.",
+      "usage": "Nicht als Freifahrtschein für verzögerte Transformation verwenden.",
+      "related": ["transition-plan", "sustainable-finance", "clean-industrial-deal", "transition-risk"],
+      "sources": ["EU-Kommission Recommendation on transition finance|https://finance.ec.europa.eu/publications/commission-recommendation-facilitating-finance-transition-sustainable-economy_en"]
+    },
+    {
+      "id": "taxonomiefaehigkeit",
+      "label": "Taxonomiefähigkeit",
+      "group": "Sustainable Finance",
+      "short": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
+      "woek": "Für die WÖk ist Taxonomiefähigkeit eine erste Zuordnungsinformation, aber noch kein Nachweis positiver Wirkung.",
+      "usage": "Nicht mit Taxonomiekonformität verwechseln.",
+      "related": ["eu-taxonomie", "taxonomiekonformitaet", "nace"],
+      "sources": ["EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"]
+    },
+    {
+      "id": "taxonomiekonformitaet",
+      "label": "Taxonomiekonformität",
+      "group": "Sustainable Finance",
+      "short": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
+      "woek": "Sie liefert stärkere Umwelt-Daten als Taxonomiefähigkeit. Die WÖk prüft zusätzlich soziale, demokratische und systemische Wirkung.",
+      "usage": "Nicht als vollständige positive Netto-Wirkung lesen.",
+      "related": ["eu-taxonomie", "dnsh", "mindestschutz-minimum-safeguards", "technische-bewertungskriterien", "taxonomy-kpis"],
+      "sources": ["EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"]
+    },
+    {
+      "id": "wesentlicher-beitrag",
+      "label": "Wesentlicher Beitrag",
+      "group": "Sustainable Finance",
+      "short": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
+      "woek": "Die WÖk liest den wesentlichen Beitrag als Teilinformation und prüft, ob zugleich Schäden, Nebenwirkungen und Rückkopplungen berücksichtigt sind.",
+      "usage": "Nur im Zusammenspiel mit DNSH, Mindestschutz und technischen Bewertungskriterien verwenden.",
+      "related": ["eu-taxonomie", "dnsh", "technische-bewertungskriterien"],
+      "sources": ["EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"]
+    },
+    {
+      "id": "dnsh",
+      "label": "DNSH / Do No Significant Harm",
+      "group": "Sustainable Finance",
+      "short": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
+      "woek": "DNSH ist anschlussfähig für Nicht-Kompensation: Positive Wirkung in einem Bereich darf schwere Schäden an anderer Stelle nicht verdecken.",
+      "usage": "Nicht als vollständige Wirkungsprüfung behandeln.",
+      "related": ["eu-taxonomie", "nichtkompensationsprinzip", "reverse-merit-order", "technische-bewertungskriterien"],
+      "sources": ["EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"]
+    },
+    {
+      "id": "mindestschutz-minimum-safeguards",
+      "label": "Mindestschutz / Minimum Safeguards",
+      "group": "Sustainable Finance",
+      "short": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
+      "woek": "Für die WÖk sind Mindestschutz-Regeln eine Schutzgrenze: Ökologische Wirkung darf menschenrechtliche Schäden nicht überdecken.",
+      "usage": "Immer mit Menschenrechten, OECD, UNGP und ILO verknüpfen.",
+      "related": ["eu-taxonomie", "oecd-leitsaetze", "un-guiding-principles", "ilo-kernarbeitsnormen", "social-taxonomy"],
+      "sources": ["EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"]
+    },
+    {
+      "id": "technische-bewertungskriterien",
+      "label": "Technische Bewertungskriterien",
+      "group": "Sustainable Finance",
+      "short": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
+      "woek": "Die WÖk nutzt solche Kriterien als präzise Datenbasis, ergänzt sie aber um Bewertung, Nebenwirkungen, soziale Wirkung und Rückkopplung.",
+      "usage": "Nicht mit politischer Zieldefinition oder Gesamtwirkung verwechseln.",
+      "related": ["eu-taxonomie", "taxonomy-navigator", "taxonomiekonformitaet"],
+      "sources": ["EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"]
+    },
+    {
+      "id": "uebergangstaetigkeit",
+      "label": "Übergangstätigkeit",
+      "group": "Sustainable Finance",
+      "short": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "woek": "Die WÖk fragt, ob solche Tätigkeiten echte Transformation beschleunigen oder Lock-in-Effekte verlängern.",
+      "usage": "Immer mit Transition Plan, Zeitpfad und Stranded-Assets-Risiko prüfen.",
+      "related": ["eu-taxonomie", "transition-finance", "transition-plan", "stranded-assets"],
+      "sources": ["EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"]
+    },
+    {
+      "id": "ermoeglichende-taetigkeit",
+      "label": "Ermöglichende Tätigkeit",
+      "group": "Sustainable Finance",
+      "short": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
+      "woek": "Die WÖk prüft, ob die ermöglichte Wirkung tatsächlich eintritt oder nur indirekt behauptet wird.",
+      "usage": "Nicht jede Zulieferung ist automatisch ermöglichend.",
+      "related": ["eu-taxonomie", "taxonomiekonformitaet", "wirkungsdaten"],
+      "sources": ["EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"]
+    },
+    {
+      "id": "taxonomy-kpis",
+      "label": "Taxonomie-KPIs",
+      "group": "Sustainable Finance",
+      "short": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
+      "woek": "Diese Kennzahlen sind für die WÖk Berichtsdaten. Sie müssen interpretiert werden, bevor daraus Wirkung oder Kapitalrückkopplung entsteht.",
+      "usage": "Nicht als alleinigen Wirkungswert verwenden.",
+      "related": ["eu-taxonomie", "taxonomiefaehigkeit", "taxonomiekonformitaet", "berichtsdaten"],
+      "sources": ["EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"]
+    },
+    {
+      "id": "nace",
+      "label": "NACE",
+      "group": "Sustainable Finance",
+      "short": "NACE ist die europäische Systematik zur Klassifikation wirtschaftlicher Tätigkeiten.",
+      "woek": "NACE hilft, Tätigkeiten branchensystematisch zuzuordnen. Wirkung muss danach fachlich bewertet werden.",
+      "usage": "Nicht mit einer Wirkungs- oder Nachhaltigkeitsbewertung verwechseln.",
+      "related": ["eu-taxonomie", "taxonomy-navigator", "archetyp"],
+      "sources": ["Eurostat NACE|https://ec.europa.eu/eurostat/web/nace"]
+    },
+    {
+      "id": "csrd",
+      "label": "CSRD",
+      "group": "Reporting und Prüfung",
+      "short": "Die CSRD ist die EU-Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen.",
+      "woek": "CSRD-Daten können für Wirkungsdaten und Steuerungsdaten genutzt werden. Die WÖk ersetzt die CSRD nicht, sondern übersetzt Berichtsdaten in Wirkung und Rückkopplung.",
+      "usage": "Als Reportingpflicht und Datenbasis einordnen, nicht als fertige Wirkungsmessung.",
+      "related": ["esrs", "efrag", "doppelte-wesentlichkeit", "iro", "xbrl", "esap"],
+      "sources": ["EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"]
+    },
+    {
+      "id": "esrs",
+      "label": "ESRS",
+      "group": "Reporting und Prüfung",
+      "short": "ESRS sind die europäischen Nachhaltigkeitsberichtsstandards unter der CSRD.",
+      "woek": "ESRS strukturieren Nachhaltigkeitsdaten. Die WÖk nutzt sie als Datenbasis, ergänzt aber Bewertung, Rückkopplung und Schutzgrenzen.",
+      "usage": "Nicht als WÖk-Score verwenden.",
+      "related": ["csrd", "efrag", "esrs-themenstandards", "doppelte-wesentlichkeit", "iro"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "efrag",
+      "label": "EFRAG",
+      "group": "Reporting und Prüfung",
+      "short": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
+      "woek": "Für die WÖk ist EFRAG eine zentrale Quelle für ESRS, VSME, XBRL-Taxonomien und Reporting-Datenstrukturen.",
+      "usage": "Als Standardentwicklungs- und Beratungsakteur einordnen.",
+      "related": ["esrs", "csrd", "vsme", "xbrl"],
+      "sources": ["EFRAG|https://www.efrag.org/"]
+    },
+    {
+      "id": "gri",
+      "label": "GRI",
+      "group": "Reporting und Prüfung",
+      "short": "GRI ist ein international verbreiteter Standardrahmen für Nachhaltigkeitsberichterstattung.",
+      "woek": "GRI kann zusätzliche Berichtsdaten liefern. Die WÖk übersetzt solche Daten erst durch Bewertung und Rückkopplung in Steuerung.",
+      "usage": "Nicht als vollständige Wirkungsbewertung lesen.",
+      "related": ["csrd", "esrs", "berichtsdaten"],
+      "sources": ["GRI Standards|https://www.globalreporting.org/standards/"]
+    },
+    {
+      "id": "vsme",
+      "label": "VSME",
+      "group": "Reporting und Prüfung",
+      "short": "VSME ist der freiwillige Nachhaltigkeitsberichtsstandard für nicht börsennotierte kleine und mittlere Unternehmen.",
+      "woek": "VSME ist wichtig, weil KMU-taugliche Datenformate entscheidend sind. VSME ersetzt keine Wirkungsmessung, kann aber Berichtsdaten liefern.",
+      "usage": "Als freiwilligen KMU-Standard einordnen.",
+      "related": ["csrd", "esrs", "berichtsdaten", "datenqualitaet"],
+      "sources": ["EFRAG VSME|https://www.efrag.org/en/smes-and-sustainability-reporting"]
+    },
+    {
+      "id": "esap",
+      "label": "ESAP / European Single Access Point",
+      "group": "Reporting und Prüfung",
+      "short": "ESAP ist der europäische zentrale Zugangspunkt für öffentliche Finanz- und Nachhaltigkeitsinformationen.",
+      "woek": "ESAP ist ein möglicher Infrastrukturanschluss: Berichtsdaten werden leichter auffindbar, müssen aber noch in Wirkungsdaten und Steuerungsdaten übersetzt werden.",
+      "usage": "Als Datenzugang, nicht als Bewertungsstandard darstellen.",
+      "related": ["csrd", "esrs", "xbrl", "berichtsdaten", "wirkungsdatenraum"],
+      "sources": ["ESMA ESAP|https://www.esma.europa.eu/esmas-activities/data/european-single-access-point-esap"]
+    },
+    {
+      "id": "nfrd",
+      "label": "NFRD",
+      "group": "Reporting und Prüfung",
+      "short": "Die NFRD war die frühere EU-Richtlinie zur nichtfinanziellen Berichterstattung, die durch die CSRD weiterentwickelt wurde.",
+      "woek": "Sie erklärt die Entwicklung von uneinheitlicher Berichterstattung hin zu CSRD, ESRS, Prüfung und digitalen Daten.",
+      "usage": "Als Vorgängerregelung der CSRD einordnen.",
+      "related": ["csrd", "esrs", "berichtsdaten"],
+      "sources": ["EUR-Lex NFRD|https://eur-lex.europa.eu/eli/dir/2014/95/oj/eng"]
+    },
+    {
+      "id": "xbrl",
+      "label": "XBRL",
+      "group": "Reporting und Prüfung",
+      "short": "XBRL ist ein maschinenlesbares Format für strukturierte Unternehmens- und Berichtsdaten.",
+      "woek": "XBRL macht Reportingdaten verarbeitbar. WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
+      "usage": "Als technisches Datenformat, nicht als Qualitätssiegel darstellen.",
+      "related": ["esap", "esef", "csrd", "berichtsdaten"],
+      "sources": ["XBRL International|https://www.xbrl.org/"]
+    },
+    {
+      "id": "esef",
+      "label": "ESEF",
+      "group": "Reporting und Prüfung",
+      "short": "ESEF ist das europäische einheitliche elektronische Berichtsformat für Jahresfinanzberichte.",
+      "woek": "Finanz- und Nachhaltigkeitsdaten können technisch zusammengeführt werden. Wirkung entsteht aber erst durch Bewertungs- und Rückkopplungslogik.",
+      "usage": "Als Finanzberichtsformat einordnen.",
+      "related": ["xbrl", "esap", "berichtsdaten"],
+      "sources": ["ESMA ESEF|https://www.esma.europa.eu/issuer-disclosure/european-single-electronic-format"]
+    },
+    {
+      "id": "assurance",
+      "label": "Assurance",
+      "group": "Reporting und Prüfung",
+      "short": "Assurance bezeichnet prüferische Sicherheit über Berichtsinformationen.",
+      "woek": "Geprüfte Daten sind belastbarer, bleiben aber Berichtsdaten, bis sie in Wirkungsbewertung und Rückkopplung übersetzt werden.",
+      "usage": "Als Prüfung von Informationen, nicht als Wirkungsgarantie verwenden.",
+      "related": ["limited-assurance", "reasonable-assurance", "datenqualitaet", "csrd"],
+      "sources": ["EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"]
+    },
+    {
+      "id": "limited-assurance",
+      "label": "Limited Assurance",
+      "group": "Reporting und Prüfung",
+      "short": "Limited Assurance ist eine begrenzte prüferische Sicherheit mit geringerem Prüfungsniveau als Reasonable Assurance.",
+      "woek": "Die Unterscheidung ist wichtig, weil Datenqualität, Prüfgrad und Unsicherheit offen ausgewiesen werden müssen.",
+      "usage": "Nicht als vollständige Datengewissheit darstellen.",
+      "related": ["assurance", "reasonable-assurance", "datenqualitaet"],
+      "sources": ["EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"]
+    },
+    {
+      "id": "reasonable-assurance",
+      "label": "Reasonable Assurance",
+      "group": "Reporting und Prüfung",
+      "short": "Reasonable Assurance ist ein höheres Prüfungsniveau als Limited Assurance.",
+      "woek": "Auch bei höherem Prüfungsniveau sind geprüfte Daten keine automatische positive Netto-Wirkung, sondern eine belastbarere Datengrundlage.",
+      "usage": "Nicht als absolute Sicherheit formulieren.",
+      "related": ["assurance", "limited-assurance", "datenqualitaet"],
+      "sources": ["EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"]
+    },
+    {
+      "id": "doppelte-wesentlichkeit",
+      "label": "Doppelte Wesentlichkeit",
+      "group": "Reporting und Prüfung",
+      "short": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
+      "woek": "Die WÖk nutzt sie als Brücke zwischen Wirkungsperspektive und Risikoperspektive, geht aber mit Bewertung und Rückkopplung weiter.",
+      "usage": "Nicht als vollständige Wirkungsbewertung darstellen.",
+      "related": ["csrd", "esrs", "iro", "wirkungsbewertung"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "iro",
+      "label": "IRO / Impacts, Risks and Opportunities",
+      "group": "Reporting und Prüfung",
+      "short": "IRO steht in den ESRS für Auswirkungen, Risiken und Chancen.",
+      "woek": "IRO ist relevant, weil Impact, Risiko und Chance getrennt und verbunden betrachtet werden. Danach braucht die WÖk zusätzlich Bewertung, Datenqualität und Rückkopplung.",
+      "usage": "Nicht mit einem fertigen Score verwechseln.",
+      "related": ["esrs", "doppelte-wesentlichkeit", "wirkungsrisiko"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "inside-out-outside-in",
+      "label": "Inside-out / Outside-in",
+      "group": "Reporting und Prüfung",
+      "short": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
+      "woek": "Die WÖk braucht beide Blickrichtungen, übersetzt sie aber in Wirkungsbewertung, Steuerung und Rückkopplung.",
+      "usage": "Nicht nur als Reportingtechnik, sondern als Perspektivenwechsel erklären.",
+      "related": ["doppelte-wesentlichkeit", "iro", "csrd"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "esrs-themenstandards",
+      "label": "ESRS-Themenstandards",
+      "group": "Reporting und Prüfung",
+      "short": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
+      "woek": "Sie liefern thematische Berichtsdaten. Die WÖk fragt zusätzlich nach Wirkungspfaden, Bewertung, Nicht-Kompensation und Rückkopplung.",
+      "usage": "Nicht als vollständige Wirkungsarchitektur darstellen.",
+      "related": ["esrs", "csrd", "berichtsdaten"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "csddd",
+      "label": "CSDDD",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
+      "woek": "Sie liefert rechtliche Anknüpfungspunkte für menschenrechtliche und ökologische Risiken. Die WÖk übersetzt diese Daten in Wirkung, Schutzgrenzen und Rückkopplung.",
+      "usage": "Als Sorgfaltspflichtenrahmen einordnen, nicht als vollständige Wirkungsmessung.",
+      "related": ["lksg", "un-guiding-principles", "oecd-leitsaetze", "ilo-kernarbeitsnormen", "lieferkettendaten"],
+      "sources": ["EU-Kommission CSDDD|https://commission.europa.eu/business-economy-euro/doing-business-eu/corporate-sustainability-due-diligence_en"]
+    },
+    {
+      "id": "lksg",
+      "label": "LkSG / Lieferkettensorgfaltspflichtengesetz",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
+      "woek": "Es liefert nationale Sorgfaltsdaten, die in Lieferkettenwirkung, Schutzgrenzen und Scorecards eingeordnet werden können.",
+      "usage": "Nicht mit der EU-CSDDD gleichsetzen.",
+      "related": ["csddd", "lieferkettendaten", "un-guiding-principles", "oecd-leitsaetze"],
+      "sources": ["BAFA Lieferkettensorgfaltspflichtengesetz|https://www.bafa.de/DE/Lieferketten/lieferketten_node.html"]
+    },
+    {
+      "id": "eudr",
+      "label": "EUDR / EU Deforestation Regulation",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
+      "woek": "Sie liefert Daten zu Entwaldung, Herkunft, Rückverfolgbarkeit und Biodiversitätsrisiken, die in Produkt- und Lieferkettenwirkung einfließen können.",
+      "usage": "Als produkt- und lieferkettenbezogene Sorgfaltspflicht einordnen.",
+      "related": ["lieferkettendaten", "biodiversitaetsrisiko", "digitaler-produktpass", "produktdaten"],
+      "sources": ["EU-Kommission EUDR|https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en"]
+    },
+    {
+      "id": "cbam",
+      "label": "CBAM / Carbon Border Adjustment Mechanism",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
+      "woek": "CBAM liefert Daten zu eingebetteten Emissionen und Carbon-Leakage-Risiken. Die WÖk kann diese Daten in Produktwirkung, Preislogik und Lieferkettenwirkung übersetzen.",
+      "usage": "Nicht als vollständige Wirkungssteuer darstellen.",
+      "related": ["fit-for-55", "ghg-protocol", "scope-3", "produktwirkung", "wirkungssteuer"],
+      "sources": ["EU-Kommission CBAM|https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"]
+    },
+    {
+      "id": "forced-labour-regulation",
+      "label": "Forced Labour Regulation",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
+      "woek": "Sie ist eine Schutzgrenze: Positive Umwelt- oder Preiseffekte dürfen Zwangsarbeit nicht kompensieren.",
+      "usage": "Als Ausschluss- und Schutzgrenzenlogik einordnen.",
+      "related": ["mindestschutz-minimum-safeguards", "ilo-kernarbeitsnormen", "lieferkettendaten", "nichtkompensationsprinzip"],
+      "sources": ["EU-Kommission Forced Labour Regulation|https://single-market-economy.ec.europa.eu/single-market/goods/international-aspects-single-market/forced-labour-products_en"]
+    },
+    {
+      "id": "conflict-minerals-regulation",
+      "label": "Conflict Minerals Regulation",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
+      "woek": "Sie liefert Hinweise auf Rohstoff-, Menschenrechts- und Governance-Risiken in Lieferketten.",
+      "usage": "Als spezifischen Rohstoff-Sorgfaltsrahmen nutzen.",
+      "related": ["lieferkettendaten", "oecd-leitsaetze", "csddd"],
+      "sources": ["EU-Kommission Conflict Minerals|https://policy.trade.ec.europa.eu/development-and-sustainability/conflict-minerals-regulation_en"]
+    },
+    {
+      "id": "oecd-leitsaetze",
+      "label": "OECD-Leitsätze",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
+      "woek": "Sie liefern international anschlussfähige Mindest- und Sorgfaltslogiken für Lieferkettenwirkung, Menschenrechte und Governance.",
+      "usage": "Als internationaler Referenzrahmen, nicht als WÖk-Ersatz verwenden.",
+      "related": ["mindestschutz-minimum-safeguards", "un-guiding-principles", "csddd", "lksg"],
+      "sources": ["OECD Guidelines for Multinational Enterprises|https://mneguidelines.oecd.org/mneguidelines/"]
+    },
+    {
+      "id": "un-guiding-principles",
+      "label": "UN Guiding Principles on Business and Human Rights",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
+      "woek": "Sie sind eine zentrale Schutzgrenze für soziale Wirkung und Lieferkettenbewertung.",
+      "usage": "Als menschenrechtlichen Referenzrahmen nutzen.",
+      "related": ["mindestschutz-minimum-safeguards", "csddd", "lksg", "social-taxonomy"],
+      "sources": ["OHCHR UN Guiding Principles|https://www.ohchr.org/en/publications/reference-publications/guiding-principles-business-and-human-rights"]
+    },
+    {
+      "id": "ilo-kernarbeitsnormen",
+      "label": "ILO-Kernarbeitsnormen",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
+      "woek": "Sie bilden Schutzgrenzen für Arbeits-, Lieferketten- und Sozialwirkung.",
+      "usage": "Nicht als freiwilliges Nice-to-have behandeln.",
+      "related": ["forced-labour-regulation", "mindestschutz-minimum-safeguards", "social-taxonomy", "lieferkettendaten"],
+      "sources": ["ILO International Labour Standards|https://www.ilo.org/international-labour-standards"]
+    },
+    {
+      "id": "ilo",
+      "label": "ILO",
+      "group": "Lieferketten und Sorgfalt",
+      "short": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
+      "woek": "ILO-Standards liefern wichtige Referenzen für Arbeit, Lieferketten, menschenwürdige Beschäftigung und soziale Wirkung.",
+      "usage": "Als Institution und Standardquelle einordnen.",
+      "related": ["ilo-kernarbeitsnormen", "social-taxonomy", "lksg"],
+      "sources": ["ILO|https://www.ilo.org/"]
+    },
+    {
+      "id": "digitaler-produktpass",
+      "label": "Digitaler Produktpass / DPP",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Der digitale Produktpass ist eine digitale Datenstruktur, die produktbezogene Informationen über Herkunft, Materialien, Reparierbarkeit, Umweltwirkung und Kreislauffähigkeit zugänglich machen soll.",
+      "woek": "Die WÖk nutzt den DPP als Dateninfrastruktur für Produktwirkung, Lieferkettenwirkung, Preiswahrheit und Konsument:inneninformation.",
+      "usage": "Nicht als vollständigen Wirkungsscore darstellen.",
+      "related": ["espr", "produktdaten", "wirkungsdatenraum", "pcf-product-carbon-footprint", "material-footprint"],
+      "sources": ["EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"]
+    },
+    {
+      "id": "espr",
+      "label": "ESPR / Ecodesign for Sustainable Products Regulation",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
+      "woek": "Sie liefert Anschluss für Produktanforderungen, Lebenszyklusdaten und den Digitalen Produktpass.",
+      "usage": "Als Produktregulierungsrahmen, nicht als einzelnes Label darstellen.",
+      "related": ["digitaler-produktpass", "produktdaten", "pef-product-environmental-footprint", "rezyklatanteil"],
+      "sources": ["EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"]
+    },
+    {
+      "id": "lca",
+      "label": "LCA / Life Cycle Assessment",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
+      "woek": "LCA-Daten sind eine wichtige Basis für Produktwirkung. Die WÖk ergänzt sie um soziale, demokratische und ökonomische Rückkopplung.",
+      "usage": "Nicht als alleinige Gesamtwirkung verwenden.",
+      "related": ["iso-14040-14044", "pef-product-environmental-footprint", "epd", "pcf-product-carbon-footprint"],
+      "sources": ["ISO 14040 Environmental management - Life cycle assessment|https://www.iso.org/standard/37456.html"]
+    },
+    {
+      "id": "iso-14040-14044",
+      "label": "ISO 14040 / ISO 14044",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
+      "woek": "Sie liefern methodische Qualität für LCA-Daten, ersetzen aber keine WÖk-Bewertung von Wirkungspfaden und Rückkopplungen.",
+      "usage": "Als LCA-Methodenstandards einordnen.",
+      "related": ["lca", "epd", "pef-product-environmental-footprint"],
+      "sources": ["ISO 14040|https://www.iso.org/standard/37456.html", "ISO 14044|https://www.iso.org/standard/38498.html"]
+    },
+    {
+      "id": "pef-product-environmental-footprint",
+      "label": "PEF / Product Environmental Footprint",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
+      "woek": "PEF liefert Umweltwirkungsdaten für Produktwirkung. Die WÖk ordnet diese Daten in Preiswahrheit, Nicht-Kompensation und Rückkopplung ein.",
+      "usage": "Nicht als vollständige soziale oder demokratische Wirkung lesen.",
+      "related": ["lca", "oef-organisation-environmental-footprint", "epd", "produktdaten"],
+      "sources": ["EU-Kommission Environmental Footprint methods|https://environment.ec.europa.eu/publications/recommendation-use-environmental-footprint-methods_en"]
+    },
+    {
+      "id": "oef-organisation-environmental-footprint",
+      "label": "OEF / Organisation Environmental Footprint",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
+      "woek": "OEF kann Organisationsdaten liefern, die in Geschäftsmodellwirkung, Scorecards und Kapitalwirkung eingeordnet werden.",
+      "usage": "Nicht mit Produktwirkung gleichsetzen.",
+      "related": ["pef-product-environmental-footprint", "lca", "scorecard", "wirkungsdaten"],
+      "sources": ["EU-Kommission Environmental Footprint methods|https://environment.ec.europa.eu/publications/recommendation-use-environmental-footprint-methods_en"]
+    },
+    {
+      "id": "epd",
+      "label": "EPD / Environmental Product Declaration",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
+      "woek": "EPDs liefern belastbare Produktdaten, sind aber keine Aussage über vollständige positive Netto-Wirkung.",
+      "usage": "Als Datenquelle, nicht als Nachhaltigkeitssiegel lesen.",
+      "related": ["lca", "pcr-product-category-rules", "pef-product-environmental-footprint", "produktdaten"],
+      "sources": ["International EPD System|https://www.environdec.com/all-about-epds/the-epd"]
+    },
+    {
+      "id": "pcr-product-category-rules",
+      "label": "PCR / Product Category Rules",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
+      "woek": "PCRs erhöhen Vergleichbarkeit von EPD-Daten und damit die Qualität von Produktwirkungsdaten.",
+      "usage": "Als methodische Vergleichsregel verwenden.",
+      "related": ["epd", "lca", "produktdaten"],
+      "sources": ["International EPD System PCR|https://www.environdec.com/product-category-rules-pcr"]
+    },
+    {
+      "id": "pcf-product-carbon-footprint",
+      "label": "PCF / Product Carbon Footprint",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
+      "woek": "PCF-Daten sind ein Klima-Baustein der Produktwirkung, aber keine Gesamtbewertung von Mensch, Planet und Demokratie.",
+      "usage": "Systemgrenzen und Datenqualität immer mit nennen.",
+      "related": ["ghg-protocol", "scope-3", "lca", "produktdaten"],
+      "sources": ["GHG Protocol Product Standard|https://ghgprotocol.org/product-standard"]
+    },
+    {
+      "id": "material-footprint",
+      "label": "Material Footprint",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
+      "woek": "Er hilft, Ressourcenwirkung sichtbar zu machen, muss aber mit Kreislauffähigkeit, Recyclingqualität und Lieferkettenwirkung verbunden werden.",
+      "usage": "Nicht nur Masse zählen; Kontext und Kritikalität mitdenken.",
+      "related": ["produktdaten", "rezyklatanteil", "recyclingquote", "lca"],
+      "sources": ["UN SDG Indicator 12.2.1 Material footprint|https://unstats.un.org/sdgs/metadata/files/Metadata-12-02-01.pdf"]
+    },
+    {
+      "id": "rezyklatanteil",
+      "label": "Rezyklatanteil",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
+      "woek": "Er ist ein wichtiger Kreislaufindikator, reicht aber ohne Qualität, Herkunft und Lebenszykluswirkung nicht aus.",
+      "usage": "Nicht mit vollständiger Kreislauffähigkeit gleichsetzen.",
+      "related": ["recyclingquote", "material-footprint", "espr", "digitaler-produktpass"],
+      "sources": ["EU-Kommission Circular Economy|https://environment.ec.europa.eu/topics/circular-economy_en"]
+    },
+    {
+      "id": "recyclingquote",
+      "label": "Recyclingquote",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
+      "woek": "Sie ist nützlich, muss aber mit tatsächlicher Materialqualität, Vermeidung, Wiederverwendung und Rebound geprüft werden.",
+      "usage": "Nicht als alleinigen Kreislauf-Erfolg darstellen.",
+      "related": ["rezyklatanteil", "material-footprint", "espr"],
+      "sources": ["EU-Kommission Circular Economy|https://environment.ec.europa.eu/topics/circular-economy_en"]
+    },
+    {
+      "id": "produktdaten",
+      "label": "Produktdaten",
+      "group": "Produkt- und Lebenszyklusdaten",
+      "short": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
+      "woek": "Die WÖk nutzt Produktdaten, um Produktwirkung, Preiswahrheit und Konsument:inneninformation zu ermöglichen.",
+      "usage": "Nicht mit vollständigen Wirkungsdaten verwechseln.",
+      "related": ["digitaler-produktpass", "produktwirkung", "pef-product-environmental-footprint", "pcf-product-carbon-footprint"],
+      "sources": ["EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"]
+    },
+    {
+      "id": "ghg-protocol",
+      "label": "GHG Protocol",
+      "group": "Klima, Natur und Risiken",
+      "short": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
+      "woek": "Die WÖk nutzt GHG-Daten als Klimadatenbasis, ergänzt sie aber um soziale, ökologische und demokratische Wirkung sowie Rückkopplung.",
+      "usage": "Nicht als vollständige Nachhaltigkeitsbewertung verwenden.",
+      "related": ["scope-1", "scope-2", "scope-3", "pcf-product-carbon-footprint", "sbti"],
+      "sources": ["GHG Protocol|https://ghgprotocol.org/"]
+    },
+    {
+      "id": "scope-1",
+      "label": "Scope 1",
+      "group": "Klima, Natur und Risiken",
+      "short": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
+      "woek": "Scope-1-Daten sind direkte Klimawirkungsdaten und können in Scorecards, Produktwirkung und Kapitalwirkung einfließen.",
+      "usage": "Nicht mit vollständigen Unternehmenswirkungen verwechseln.",
+      "related": ["ghg-protocol", "scope-2", "scope-3"],
+      "sources": ["GHG Protocol Corporate Standard|https://ghgprotocol.org/corporate-standard"]
+    },
+    {
+      "id": "scope-2",
+      "label": "Scope 2",
+      "group": "Klima, Natur und Risiken",
+      "short": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
+      "woek": "Scope-2-Daten machen Energiebezug sichtbar und sind wichtig für Beschaffung, Produktwirkung und Transformationspfade.",
+      "usage": "Marktbasierte und standortbasierte Angaben sauber unterscheiden.",
+      "related": ["ghg-protocol", "scope-1", "scope-3"],
+      "sources": ["GHG Protocol Scope 2 Guidance|https://ghgprotocol.org/scope-2-guidance"]
+    },
+    {
+      "id": "scope-3",
+      "label": "Scope 3",
+      "group": "Klima, Natur und Risiken",
+      "short": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
+      "woek": "Scope-3-Daten sind besonders wichtig für Lieferkettenwirkung, Produktwirkung, Finanzierungswirkung und echte Preiswahrheit.",
+      "usage": "Datenqualität, Annahmen und Systemgrenzen immer offenlegen.",
+      "related": ["ghg-protocol", "lieferkettendaten", "pcf-product-carbon-footprint", "cbam"],
+      "sources": ["GHG Protocol Scope 3 Standard|https://ghgprotocol.org/standards/scope-3-standard"]
+    },
+    {
+      "id": "sbti",
+      "label": "SBTi",
+      "group": "Klima, Natur und Risiken",
+      "short": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
+      "woek": "SBTi-Ziele können Transformationspfade und Zielqualität sichtbar machen. Die WÖk prüft zusätzlich Wirkung, Umsetzung und Rückkopplung.",
+      "usage": "Nicht als automatischen Wirkungsnachweis behandeln.",
+      "related": ["ghg-protocol", "net-zero", "transition-plan", "transition-risk"],
+      "sources": ["Science Based Targets initiative|https://sciencebasedtargets.org/"]
+    },
+    {
+      "id": "tcfd",
+      "label": "TCFD",
+      "group": "Klima, Natur und Risiken",
+      "short": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
+      "woek": "TCFD ist für die WÖk relevant, weil Klimarisiken finanzielle Steuerung, Kapitalwirkung und Transitionsrisiken beeinflussen.",
+      "usage": "Als Klimarisiko-Disclosure-Rahmen einordnen.",
+      "related": ["physical-climate-risk", "transition-risk", "issb-ifrs-s1-s2", "tnfd"],
+      "sources": ["TCFD|https://www.fsb-tcfd.org/"]
+    },
+    {
+      "id": "tnfd",
+      "label": "TNFD",
+      "group": "Klima, Natur und Risiken",
+      "short": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
+      "woek": "TNFD hilft, Natur- und Biodiversitätsrisiken in Kapital-, Unternehmens- und Lieferkettenentscheidungen sichtbar zu machen.",
+      "usage": "Nicht auf Biodiversität allein verkürzen.",
+      "related": ["biodiversitaetsrisiko", "nature-related-risks", "physical-climate-risk", "issb-ifrs-s1-s2"],
+      "sources": ["TNFD Recommendations|https://tnfd.global/recommendations/"]
+    },
+    {
+      "id": "issb-ifrs-s1-s2",
+      "label": "ISSB / IFRS S1 und IFRS S2",
+      "group": "Klima, Natur und Risiken",
+      "short": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
+      "woek": "Die Standards liefern kapitalmarktorientierte Nachhaltigkeitsinformationen. Die WÖk nutzt sie als Datenbasis, nicht als vollständige Wirkungsmessung.",
+      "usage": "Jurisdiktionale Anwendung und EU-ESRS-Bezug sauber unterscheiden.",
+      "related": ["tcfd", "transition-risk", "physical-climate-risk", "berichtsdaten"],
+      "sources": ["IFRS ISSB and IFRS Sustainability Disclosure Standards|https://www.ifrs.org/sustainability/knowledge-hub/introduction-to-issb-and-ifrs-sustainability-disclosure-standards/"]
+    },
+    {
+      "id": "biodiversitaetsrisiko",
+      "label": "Biodiversitätsrisiko",
+      "group": "Klima, Natur und Risiken",
+      "short": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
+      "woek": "Die WÖk betrachtet Biodiversität als Wirkungsraum und Schutzgrenze, nicht nur als Umweltkennzahl.",
+      "usage": "Mit Standort, Lieferkette, Ökosystemleistung und Datenqualität verbinden.",
+      "related": ["tnfd", "nature-related-risks", "ipbes", "eudr"],
+      "sources": ["IPBES Global Assessment|https://www.ipbes.net/global-assessment"]
+    },
+    {
+      "id": "nature-related-risks",
+      "label": "Nature-related Risks",
+      "group": "Klima, Natur und Risiken",
+      "short": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
+      "woek": "Sie erweitern die Risikoperspektive über Klima hinaus auf Wasser, Böden, Arten, Ökosysteme und Lieferketten.",
+      "usage": "Nicht mit Klimarisiko gleichsetzen.",
+      "related": ["tnfd", "biodiversitaetsrisiko", "wasserstress"],
+      "sources": ["TNFD Recommendations|https://tnfd.global/recommendations/"]
+    },
+    {
+      "id": "physical-climate-risk",
+      "label": "Physical Climate Risk",
+      "group": "Klima, Natur und Risiken",
+      "short": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
+      "woek": "Diese Risiken betreffen Gesundheit, Infrastruktur, Lieferketten, Versicherbarkeit, Kapital und öffentliche Haushalte.",
+      "usage": "Akute und chronische Risiken unterscheiden.",
+      "related": ["tcfd", "transition-risk", "ipcc", "wirkungsrisiko"],
+      "sources": ["TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"]
+    },
+    {
+      "id": "transition-risk",
+      "label": "Transition Risk",
+      "group": "Klima, Natur und Risiken",
+      "short": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
+      "woek": "Die WÖk nutzt Transition Risk, um Kapitalwirkung, Stranded Assets, Regulierung, Technologiepfade und soziale Abfederung zusammenzudenken.",
+      "usage": "Nicht nur als Unternehmensrisiko lesen, sondern auch als System- und Beschäftigungsrisiko.",
+      "related": ["tcfd", "transition-plan", "stranded-assets", "clean-industrial-deal"],
+      "sources": ["TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"]
+    },
+    {
+      "id": "transition-plan",
+      "label": "Transition Plan",
+      "group": "Klima, Natur und Risiken",
+      "short": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
+      "woek": "Die WÖk fragt, ob Ziele, Investitionen, Zeitpfade, Daten, Governance und soziale Folgen zusammenpassen.",
+      "usage": "Nicht mit einer Absichtserklärung verwechseln.",
+      "related": ["transition-finance", "sbti", "transition-risk", "net-zero"],
+      "sources": ["EU-Kommission Transition Finance|https://finance.ec.europa.eu/publications/commission-recommendation-facilitating-finance-transition-sustainable-economy_en"]
+    },
+    {
+      "id": "stranded-assets",
+      "label": "Stranded Assets",
+      "group": "Klima, Natur und Risiken",
+      "short": "Stranded Assets sind Vermögenswerte, die durch Regulierung, Marktveränderung, Technologie oder Klimafolgen stark an Wert verlieren können.",
+      "woek": "Sie zeigen, dass Kapitalwirkung und Transformationsrisiko zusammen bewertet werden müssen.",
+      "usage": "Nicht nur fossil denken; auch Infrastruktur, Immobilien und Lieferketten können betroffen sein.",
+      "related": ["transition-risk", "transition-plan", "kapitalwirkung"],
+      "sources": ["TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"]
+    },
+    {
+      "id": "net-zero",
+      "label": "Net Zero",
+      "group": "Klima, Natur und Risiken",
+      "short": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
+      "woek": "Die WÖk prüft, ob Net-Zero-Pfade real, datenbasiert, sozial tragfähig und nicht bloß kommunikativ kompensiert sind.",
+      "usage": "Restemissionen, Reduktion, Entfernung und Zeitpfad trennen.",
+      "related": ["sbti", "transition-plan", "offsetting-kompensation", "carbon-credits"],
+      "sources": ["SBTi Net-Zero Standard|https://sciencebasedtargets.org/net-zero"]
+    },
+    {
+      "id": "klimaneutralitaet",
+      "label": "Klimaneutralität",
+      "group": "Klima, Natur und Risiken",
+      "short": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
+      "woek": "Die WÖk prüft, ob Klimaneutralitätsangaben echte Reduktion, hochwertige Daten und glaubwürdige Restemissionslogik enthalten.",
+      "usage": "Nicht mit vagen Claims ohne Daten, Scope und Zeitpfad verwenden.",
+      "related": ["net-zero", "greenwashing", "climate-neutral-claim", "offsetting-kompensation"],
+      "sources": ["EU Climate Law|https://eur-lex.europa.eu/eli/reg/2021/1119/oj/eng"]
+    },
+    {
+      "id": "carbon-credits",
+      "label": "Carbon Credits",
+      "group": "Klima, Natur und Risiken",
+      "short": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
+      "woek": "Die WÖk bewertet Credits nur mit Blick auf Zusätzlichkeit, Dauerhaftigkeit, Vermeidung von Doppelzählung, Nebenwirkungen und Nicht-Kompensation.",
+      "usage": "Nicht als Ersatz für direkte Emissionsminderung darstellen.",
+      "related": ["offsetting-kompensation", "net-zero", "greenwashing", "nichtkompensationsprinzip"],
+      "sources": ["EU Carbon Removals and Carbon Farming Regulation|https://climate.ec.europa.eu/eu-action/certification-carbon-removals-and-carbon-farming_en"]
+    },
+    {
+      "id": "offsetting-kompensation",
+      "label": "Offsetting / Kompensation",
+      "group": "Klima, Natur und Risiken",
+      "short": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
+      "woek": "Die WÖk begrenzt Kompensation durch Nicht-Kompensation und Reverse Merit Order: Schwere Schäden dürfen nicht einfach verrechnet werden.",
+      "usage": "Immer von Reduktion, Insetting und Restemission unterscheiden.",
+      "related": ["carbon-credits", "insetting", "nichtkompensationsprinzip", "reverse-merit-order"],
+      "sources": ["EU Green Claims Directive proposal|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"]
+    },
+    {
+      "id": "insetting",
+      "label": "Insetting",
+      "group": "Klima, Natur und Risiken",
+      "short": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
+      "woek": "Insetting kann wirkungsnäher sein als externe Kompensation, muss aber ebenfalls datenbasiert, zusätzlich und überprüfbar sein.",
+      "usage": "Nicht automatisch als besser bewerten; Wirkungspfad prüfen.",
+      "related": ["offsetting-kompensation", "scope-3", "lieferkettendaten", "wirkungsdaten"],
+      "sources": ["GHG Protocol Land Sector and Removals Guidance|https://ghgprotocol.org/land-sector-and-removals-guidance"]
+    },
+    {
+      "id": "wasserstress",
+      "label": "Wasserstress",
+      "group": "Klima, Natur und Risiken",
+      "short": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
+      "woek": "Wasserstress ist ein wichtiger Standort- und Lieferkettenindikator für Produktwirkung und regionale Resilienz.",
+      "usage": "Standortbezug und saisonale Unterschiede beachten.",
+      "related": ["nature-related-risks", "tnfd", "produktdaten"],
+      "sources": ["World Resources Institute Aqueduct|https://www.wri.org/aqueduct"]
+    },
+    {
+      "id": "who",
+      "label": "WHO",
+      "group": "Klima, Natur und Risiken",
+      "short": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
+      "woek": "WHO-Daten und Leitlinien sind für Gesundheitswirkung, Prävention, Umweltgesundheit und Pflege relevant.",
+      "usage": "Als Gesundheitsreferenz einordnen.",
+      "related": ["gesundheit", "wirkungsdaten"],
+      "sources": ["WHO|https://www.who.int/"]
+    },
+    {
+      "id": "ipcc",
+      "label": "IPCC",
+      "group": "Klima, Natur und Risiken",
+      "short": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
+      "woek": "IPCC-Berichte liefern wissenschaftliche Grundlagen für Klimarisiken, Emissionspfade und Transformationsdruck.",
+      "usage": "Als wissenschaftliche Referenz, nicht als politisches Programm verwenden.",
+      "related": ["physical-climate-risk", "transition-risk", "eu-climate-law"],
+      "sources": ["IPCC|https://www.ipcc.ch/"]
+    },
+    {
+      "id": "ipbes",
+      "label": "IPBES",
+      "group": "Klima, Natur und Risiken",
+      "short": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
+      "woek": "IPBES liefert Grundlagen für Naturwirkung, Biodiversitätsrisiken und ökologische Schutzgrenzen.",
+      "usage": "Als wissenschaftliche Referenz für Natur- und Biodiversitätswirkung nutzen.",
+      "related": ["biodiversitaetsrisiko", "nature-related-risks", "tnfd"],
+      "sources": ["IPBES|https://www.ipbes.net/"]
+    },
+    {
+      "id": "green-claims-directive",
+      "label": "Green Claims Directive",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
+      "woek": "Sie ist für die WÖk relevant, weil Wirkungskommunikation überprüfbar, datenbasiert und nicht irreführend sein muss.",
+      "usage": "Statushinweis: Als EU-Vorschlag einordnen und nicht als vollständig geltendes fertiges System darstellen.",
+      "related": ["greenwashing", "impact-washing", "climate-neutral-claim", "nachhaltigkeitslabel"],
+      "sources": ["EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"]
+    },
+    {
+      "id": "empowering-consumers-green-transition",
+      "label": "Empowering Consumers for the Green Transition",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
+      "woek": "Sie unterstützt die WÖk-Logik, dass Konsument:innen verlässliche Informationen brauchen, um Wirkung berücksichtigen zu können.",
+      "usage": "Als Verbraucher:innen- und Kommunikationsschutz einordnen.",
+      "related": ["greenwashing", "nachhaltigkeitslabel", "climate-neutral-claim"],
+      "sources": ["EUR-Lex Directive 2024/825|https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"]
+    },
+    {
+      "id": "greenwashing",
+      "label": "Greenwashing",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
+      "woek": "Die WÖk begegnet Greenwashing durch Datenqualität, Wirkungsbewertung, Nicht-Kompensation, Reverse Merit Order, Folgencheck und Wirkungsrückkopplung.",
+      "usage": "Nicht nur als Marketingproblem verstehen, sondern als falsche Rückkopplung im Markt.",
+      "related": ["impact-washing", "sdg-washing", "green-claims-directive", "folgencheck", "reverse-merit-order"],
+      "sources": ["EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"]
+    },
+    {
+      "id": "impact-washing",
+      "label": "Impact-Washing",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
+      "woek": "Die WÖk begrenzt Impact-Washing durch Wirkungspfad, Datenqualität, Nicht-Kompensation, Unsicherheit und überprüfbare Rückkopplung.",
+      "usage": "Nicht jede gute Absicht als Wirkung ausgeben.",
+      "related": ["greenwashing", "sdg-washing", "wirkungspfad", "datenqualitaet", "folgencheck"],
+      "sources": ["EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"]
+    },
+    {
+      "id": "sdg-washing",
+      "label": "SDG-Washing",
+      "group": "Kommunikation und Greenwashing",
+      "short": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
+      "woek": "Die WÖk nutzt SDGs nicht als Logo-Sammlung, sondern als Referenzrahmen für Wirkung, Nebenwirkungen und Rückkopplung.",
+      "usage": "SDG-Bezug immer mit Wirkungspfad und Daten belegen.",
+      "related": ["sdgs", "sdg-plus", "greenwashing", "impact-washing"],
+      "sources": ["United Nations SDGs|https://sdgs.un.org/goals"]
+    },
+    {
+      "id": "nachhaltigkeitslabel",
+      "label": "Nachhaltigkeitslabel",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
+      "woek": "Die WÖk fragt, welche Wirkung hinter einem Label geprüft wird, welche Daten fehlen und ob Nicht-Kompensation eingehalten wird.",
+      "usage": "Label nie ohne Kriterien, Prüfstelle und Reichweite interpretieren.",
+      "related": ["eu-ecolabel", "greenwashing", "produktdaten"],
+      "sources": ["EU Ecolabel|https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel/about-eu-ecolabel_en"]
+    },
+    {
+      "id": "eu-ecolabel",
+      "label": "EU Ecolabel",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
+      "woek": "Es kann als geprüfte Umweltinformation dienen, ersetzt aber keine vollständige Produktwirkungsbewertung.",
+      "usage": "Als Umweltlabel, nicht als Gesamtwirkungssiegel verwenden.",
+      "related": ["nachhaltigkeitslabel", "produktdaten", "greenwashing"],
+      "sources": ["EU-Kommission EU Ecolabel|https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel/about-eu-ecolabel_en"]
+    },
+    {
+      "id": "climate-neutral-claim",
+      "label": "Climate Neutral Claim",
+      "group": "Kommunikation und Greenwashing",
+      "short": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
+      "woek": "Die WÖk prüft solche Claims nach Scope, Reduktion, Restemission, Kompensation, Datenqualität und Nebenwirkungen.",
+      "usage": "Ohne Daten, Zeitpfad und Kompensationslogik nicht als glaubwürdige Wirkung darstellen.",
+      "related": ["klimaneutralitaet", "offsetting-kompensation", "greenwashing", "carbon-credits"],
+      "sources": ["EUR-Lex Directive 2024/825|https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"]
+    },
+    {
+      "id": "berichtsdaten",
+      "label": "Berichtsdaten",
+      "group": "WÖk-Übersetzung",
+      "short": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
+      "woek": "Die WÖk nutzt Berichtsdaten als Ausgangsmaterial, aber erst Bewertung, Datenqualität und Rückkopplung machen daraus Steuerungs- oder Wirkungsdaten.",
+      "usage": "Nicht mit Wirkungsdaten gleichsetzen.",
+      "related": ["csrd", "esrs", "sfdr", "steuerungsdaten", "wirkungsdaten"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "steuerungsdaten",
+      "label": "Steuerungsdaten",
+      "group": "WÖk-Übersetzung",
+      "short": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
+      "woek": "Die WÖk will Berichtsdaten so qualifizieren, dass sie als Steuerungsdaten in Preise, Steuern, Förderung und Kapital rückgekoppelt werden können.",
+      "usage": "Nur verwenden, wenn Daten tatsächlich entscheidungsrelevant werden.",
+      "related": ["berichtsdaten", "wirkungsdaten", "wirkungsrueckkopplung", "scorecard"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "wirkungsdaten",
+      "label": "Wirkungsdaten",
+      "group": "WÖk-Übersetzung",
+      "short": "Wirkungsdaten beschreiben Zustandsveränderungen, Wirkungspotenziale, Risiken oder Nebenwirkungen entlang eines Wirkungspfads.",
+      "woek": "Sie sind der Kern der WÖk-Übersetzung: vorhandene Standards liefern Daten, die in Wirkung, Bewertung und Rückkopplung eingeordnet werden.",
+      "usage": "Datenqualität, Annahmen und Unsicherheit immer sichtbar machen.",
+      "related": ["wirkung", "wirkungspotenzial", "datenqualitaet", "wirkungsindikator", "wirkungsdatenraum"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "woek-id",
+      "label": "WÖk-ID",
+      "group": "WÖk-Übersetzung",
+      "short": "Eine WÖk-ID ist eine eindeutige Kennung für wirkungsrelevante Einheiten, Datensätze oder Bewertungsobjekte im WÖk-Modell.",
+      "woek": "Sie hilft, Daten aus Standards, Produkten, Organisationen und Wirkungspfaden eindeutig zuzuordnen.",
+      "usage": "Als Modellbegriff verwenden, nicht als amtliche ID darstellen.",
+      "related": ["wirkungsdatenraum", "digitaler-produktpass", "scorecard", "datenqualitaet"],
+      "sources": ["WÖk-ID Werkzeug|https://wirkungsoekonomie.de/werkzeuge/woek-ids/"]
+    },
+    {
+      "id": "wirkungsindikator",
+      "label": "Wirkungsindikator",
+      "group": "WÖk-Übersetzung",
+      "short": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
+      "woek": "Die WÖk nutzt Indikatoren aus Standards, Datenquellen und Kontextwissen, ordnet sie aber nach Wirkungspfad, Datenqualität und Schutzgrenzen ein.",
+      "usage": "Nicht mit Wirkung selbst verwechseln.",
+      "related": ["wirkungsdaten", "wirkungspfad", "datenqualitaet", "scorecard"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "scorecard",
+      "label": "Scorecard",
+      "group": "WÖk-Übersetzung",
+      "short": "Eine Scorecard bündelt Indikatoren, Einschätzungen und Schutzgrenzen zu einer strukturierten Bewertungsansicht.",
+      "woek": "In der WÖk hilft sie, Standards und Daten in nachvollziehbare Wirkungsbewertung zu übersetzen.",
+      "usage": "Nicht als automatische Wahrheit darstellen.",
+      "related": ["wirkungsindikator", "benchmark", "reverse-merit-order", "woek-id"],
+      "sources": ["WÖk Scorecards|https://wirkungsoekonomie.de/werkzeuge/scorecards/"]
+    },
+    {
+      "id": "benchmark",
+      "label": "Benchmark",
+      "group": "WÖk-Übersetzung",
+      "short": "Ein Benchmark ist ein Vergleichswert, an dem Daten, Leistungen oder Wirkungen eingeordnet werden.",
+      "woek": "Benchmarks helfen, Wirkungsdaten nicht isoliert, sondern im Verhältnis zu Branchen, Pfaden, Schutzgrenzen oder Zielwerten zu lesen.",
+      "usage": "Benchmark nicht als politisches Ziel verwechseln.",
+      "related": ["scorecard", "archetyp", "datenqualitaet"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "archetyp",
+      "label": "Archetyp",
+      "group": "WÖk-Übersetzung",
+      "short": "Ein Archetyp ist ein typisiertes Muster, das ähnliche Wirkungslogiken, Risiken oder Datenstrukturen bündelt.",
+      "woek": "Archetypen helfen, komplexe Branchen, Produkte oder Wirkungsfälle vergleichbar zu machen, ohne Einzelfälle zu überbürokratisieren.",
+      "usage": "Nicht als starre Schublade verwenden.",
+      "related": ["benchmark", "scorecard", "nace"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "datenqualitaet",
+      "label": "Datenqualität",
+      "group": "WÖk-Übersetzung",
+      "short": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
+      "woek": "Die WÖk macht Datenqualität sichtbar, damit unsichere Daten nicht wie Gewissheit wirken.",
+      "usage": "Immer mit Datenquelle, Annahmen und Unsicherheit verbinden.",
+      "related": ["datenluecke", "konservative-annahme", "assurance", "wirkungsdaten"],
+      "sources": ["EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"]
+    },
+    {
+      "id": "datenluecke",
+      "label": "Datenlücke",
+      "group": "WÖk-Übersetzung",
+      "short": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
+      "woek": "Die WÖk darf fehlende Daten nicht belohnen. Datenlücken müssen markiert und durch Standardwerte, konservative Annahmen oder Nachweise behandelt werden.",
+      "usage": "Nicht unsichtbar machen.",
+      "related": ["datenqualitaet", "konservative-annahme", "scorecard"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "konservative-annahme",
+      "label": "Konservative Annahme",
+      "group": "WÖk-Übersetzung",
+      "short": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
+      "woek": "Sie verhindert, dass unbekannte Wirkung besser behandelt wird als nachgewiesene Wirkung.",
+      "usage": "Immer als Annahme kennzeichnen und bei besseren Daten aktualisieren.",
+      "related": ["datenluecke", "datenqualitaet", "reverse-merit-order"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "wirkungsregister",
+      "label": "Wirkungsregister",
+      "group": "WÖk-Übersetzung",
+      "short": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
+      "woek": "Es ist als WÖk-Infrastruktur denkbar, damit Wirkung nachvollziehbar, versioniert und prüfbar wird.",
+      "usage": "Statushinweis: Modell- und Infrastrukturbegriff, keine bestehende amtliche Datenbank.",
+      "related": ["wirkungsdatenraum", "woek-id", "datenqualitaet", "scorecard"],
+      "sources": ["WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"]
+    },
+    {
+      "id": "wirkungsdatenraum",
+      "label": "Wirkungsdatenraum",
+      "group": "WÖk-Übersetzung",
+      "short": "Ein Wirkungsdatenraum ist eine Dateninfrastruktur, in der wirkungsrelevante Daten zugänglich, prüfbar und zweckgebunden genutzt werden können.",
+      "woek": "Er verbindet Berichtsdaten, Produktdaten, Lieferkettendaten, WÖk-IDs und Schutzgrenzen zu einer nutzbaren Wirkungsinfrastruktur.",
+      "usage": "Als Modell- und Infrastrukturbegriff verwenden, nicht als Personenbewertung.",
+      "related": ["woek-id", "digitaler-produktpass", "wirkungsregister", "wirkungsdaten"],
+      "sources": ["WÖk Digitale Produktpässe und Wirkungsdatenräume|https://wirkungsoekonomie.de/werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"]
+    },
+    {
+      "id": "lieferkettendaten",
+      "label": "Lieferkettendaten",
+      "group": "WÖk-Übersetzung",
+      "short": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
+      "woek": "Die WÖk nutzt sie für Lieferkettenwirkung, Produktwirkung, Risiko, Preiswahrheit und Beschaffungssteuerung.",
+      "usage": "Nicht ohne Datenqualität, Scope und Herkunft lesen.",
+      "related": ["csddd", "lksg", "eudr", "scope-3", "digitaler-produktpass"],
+      "sources": ["EU-Kommission CSDDD|https://commission.europa.eu/business-economy-euro/doing-business-eu/corporate-sustainability-due-diligence_en"]
+    }
+  ]
+}

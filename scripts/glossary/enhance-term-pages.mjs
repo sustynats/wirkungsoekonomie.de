@@ -36,6 +36,7 @@ const headerTemplate = fs.readFileSync(headerTemplateFile, "utf8");
 const footerTemplate = fs.readFileSync(footerTemplateFile, "utf8");
 const registryTerms = termData.terms || [];
 const glossaryHtml = fs.existsSync(glossaryFile) ? fs.readFileSync(glossaryFile, "utf8") : "";
+const glossaryActionPattern = /\n?\s*<p class="glossary-entry-action">[\s\S]*?<\/p>/g;
 const documentRegistry = readJson(documentRegistryFile, []);
 const relationshipManifest = readJson(relationshipFile, { relationships: {} }).relationships || {};
 const journalRelated = readJson(journalRelatedFile, { terms: {}, articles: {} });
@@ -107,6 +108,12 @@ function slugify(value) {
 function slugFromEntry(id, label) {
   if (id) return id.replace(/^begriff-/, "").replace(/-{2,}/g, "-");
   return slugify(label);
+}
+
+function labelsOverlap(a, b) {
+  const left = normalize(a);
+  const right = normalize(b);
+  return left === right || left.includes(right) || right.includes(left);
 }
 
 function firstSentence(value) {
@@ -201,7 +208,7 @@ ${renderFooter(depth)}
 }
 
 function parseGlossaryEntries(html) {
-  const cleaned = html.replace(/<p class="glossary-entry-action">[\s\S]*?<\/p>/g, "");
+  const cleaned = html.replace(glossaryActionPattern, "");
   const entries = [];
   const seen = new Map();
   const pattern = /<div(?:\s+[^>]*)?>\s*<dt(?:\s+id="([^"]+)")?>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>\s*<\/div>/g;
@@ -212,7 +219,7 @@ function parseGlossaryEntries(html) {
     if (!label) continue;
     const baseSlug = slugFromEntry(id, label);
     let slug = baseSlug;
-    if (seen.has(slug) && seen.get(slug) !== label) {
+    if (seen.has(slug) && !labelsOverlap(seen.get(slug), label)) {
       let counter = 2;
       while (seen.has(`${baseSlug}-${counter}`)) counter += 1;
       slug = `${baseSlug}-${counter}`;
@@ -387,7 +394,7 @@ function linkedChips(items, fallback = "Keine Einträge") {
 
 function transformGlossaryHtml(html) {
   return String(html || "")
-    .replace(/<p class="glossary-entry-action">[\s\S]*?<\/p>/g, "")
+    .replace(glossaryActionPattern, "")
     .replace(/href="#([^"]+)"/g, (_, anchor) => {
       const slug = anchorToSlug.get(anchor);
       return slug ? `href="../../begriffe/${esc(slug)}/"` : `href="../../glossar.html#${esc(anchor)}"`;
@@ -852,10 +859,39 @@ function indexPage() {
   fs.writeFileSync(path.join(outDir, "index.html"), pageShell("Begriffe", body, "../"));
 }
 
+function parseOfficialSource(value) {
+  const [label, url] = String(value || "").split("|");
+  return {
+    label: label?.trim() || "Quelle",
+    url: url?.trim() || "",
+  };
+}
+
+function officialSourcesBlock(term) {
+  const sources = (term.officialSources || [])
+    .map(parseOfficialSource)
+    .filter((source) => source.url)
+    .slice(0, 8);
+  if (!sources.length) return "";
+  return `<section class="term-link-section" aria-labelledby="official-sources-title">
+          <div>
+            <p class="section-eyebrow">Quellen</p>
+            <h2 id="official-sources-title">Offizielle Quellen</h2>
+          </div>
+          <div class="term-chip-row">${sources.map((source) => `<a href="${esc(source.url)}">${esc(source.label)}</a>`).join("")}</div>
+        </section>`;
+}
+
 function termPage(term) {
   const references = referenceLinks(term);
   const journals = journalLinks(term);
   const docs = documentLinks(term);
+  const supplementalBlocks = [
+    resourceCards("Im Grundlagenwerk", "Grundlagen", references, "Keine direkte Kapitelverknüpfung gefunden."),
+    journalResourceCards(journals),
+    resourceCards("Dokumente und Materialien", "Bibliothek", docs, "Noch kein passendes Dokument in der Bibliothek verknüpft."),
+    officialSourcesBlock(term),
+  ].filter(Boolean).join("\n");
   const body = `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
         <header class="term-detail-hero">
@@ -903,9 +939,7 @@ ${learningBlock(term)}
           </div>
           <div class="term-chip-row">${relatedTermChips(term)}</div>
         </section>
-        ${resourceCards("Im Grundlagenwerk", "Grundlagen", references, "Keine direkte Kapitelverknüpfung gefunden.")}
-        ${journalResourceCards(journals)}
-        ${resourceCards("Dokumente und Materialien", "Bibliothek", docs, "Noch kein passendes Dokument in der Bibliothek verknüpft.")}
+${supplementalBlocks}
         <section class="meta-box">
           <h2>Version und Quelle</h2>
           <p>Kategorie: ${esc(humanLabel(term.category || "Begriff"))} · Version: ${esc(term.version || "1.0")}</p>
@@ -922,7 +956,7 @@ ${learningBlock(term)}
 
 function injectGlossaryLinks() {
   if (!glossaryHtml) return;
-  const cleaned = glossaryHtml.replace(/<p class="glossary-entry-action">[\s\S]*?<\/p>/g, "");
+  const cleaned = glossaryHtml.replace(glossaryActionPattern, "");
   const pattern = /(<div(?:\s+[^>]*)?>\s*<dt(?:\s+id="([^"]+)")?>([\s\S]*?)<\/dt>\s*<dd>)([\s\S]*?)(<\/dd>\s*<\/div>)/g;
   let entryIndex = 0;
   const updated = cleaned.replace(pattern, (full, start, id, labelHtml, dd, end) => {

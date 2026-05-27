@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T08:06:25.217Z",
+  "generatedAt": "2026-05-27T09:13:32.012Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -33,7 +33,7 @@
       "relatedDocuments": [
         "sdg-sdgplus-referenzrahmen"
       ],
-      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
       "searchBoost": 155
     },
     "/begriffe/archetyp/": {
@@ -45,11 +45,28 @@
       "relatedTerms": [
         "benchmark",
         "scorecard",
-        "woek-id"
+        "woek-id",
+        "nace"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/assurance/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-assurance",
+      "documentId": "assurance",
+      "relatedTerms": [
+        "limited-assurance",
+        "reasonable-assurance",
+        "datenqualitaet",
+        "csrd"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "CSRD und Prüfungsstandards",
+      "searchBoost": 164
     },
     "/begriffe/benchmark/": {
       "documentType": "begriff",
@@ -60,11 +77,144 @@
       "relatedTerms": [
         "scorecard",
         "finalscore",
-        "woek-id"
+        "woek-id",
+        "archetyp",
+        "datenqualitaet"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/berichtsdaten/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-berichtsdaten",
+      "documentId": "berichtsdaten",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "sfdr",
+        "steuerungsdaten",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/biodiversitaetsrisiko/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-biodiversitaetsrisiko",
+      "documentId": "biodiversitaetsrisiko",
+      "relatedTerms": [
+        "tnfd",
+        "nature-related-risks",
+        "ipbes",
+        "eudr"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/carbon-credits/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-carbon-credits",
+      "documentId": "carbon-credits",
+      "relatedTerms": [
+        "offsetting-kompensation",
+        "net-zero",
+        "greenwashing",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/cbam/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-cbam",
+      "documentId": "cbam",
+      "relatedTerms": [
+        "fit-for-55",
+        "ghg-protocol",
+        "scope-3",
+        "produktwirkung",
+        "wirkungssteuer"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/clean-industrial-deal/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-clean-industrial-deal",
+      "documentId": "clean-industrial-deal",
+      "relatedTerms": [
+        "european-green-deal",
+        "sustainable-finance",
+        "transition-finance",
+        "cbam",
+        "espr"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission Clean Industrial Deal",
+      "searchBoost": 164
+    },
+    "/begriffe/climate-neutral-claim/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-climate-neutral-claim",
+      "documentId": "climate-neutral-claim",
+      "relatedTerms": [
+        "klimaneutralitaet",
+        "offsetting-kompensation",
+        "greenwashing",
+        "carbon-credits"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/conflict-minerals-regulation/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-conflict-minerals-regulation",
+      "documentId": "conflict-minerals-regulation",
+      "relatedTerms": [
+        "lieferkettendaten",
+        "oecd-leitsaetze",
+        "csddd"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/csddd/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-csddd",
+      "documentId": "csddd",
+      "relatedTerms": [
+        "lksg",
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/csrd/": {
       "documentType": "begriff",
@@ -76,11 +226,47 @@
         "esrs",
         "esg",
         "wirkungsdatenraum",
-        "reporting"
+        "reporting",
+        "efrag",
+        "doppelte-wesentlichkeit",
+        "iro",
+        "xbrl",
+        "esap"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
+    },
+    "/begriffe/datenluecke/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-datenluecke",
+      "documentId": "datenluecke",
+      "relatedTerms": [
+        "datenqualitaet",
+        "konservative-annahme",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/datenqualitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-datenqualitaet",
+      "documentId": "datenqualitaet",
+      "relatedTerms": [
+        "datenluecke",
+        "konservative-annahme",
+        "assurance",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/digitaler-produktpass/": {
       "documentType": "begriff",
@@ -91,11 +277,141 @@
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "espr",
+        "produktdaten",
+        "pcf-product-carbon-footprint",
+        "material-footprint"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
+    },
+    "/begriffe/dnsh/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-dnsh",
+      "documentId": "dnsh",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "technische-bewertungskriterien"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/doppelte-wesentlichkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-doppelte-wesentlichkeit",
+      "documentId": "doppelte-wesentlichkeit",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "iro",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "CSRD und ESRS",
+      "searchBoost": 164
+    },
+    "/begriffe/efrag/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-efrag",
+      "documentId": "efrag",
+      "relatedTerms": [
+        "esrs",
+        "csrd",
+        "vsme",
+        "xbrl"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/empowering-consumers-green-transition/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-empowering-consumers-green-transition",
+      "documentId": "empowering-consumers-green-transition",
+      "relatedTerms": [
+        "greenwashing",
+        "nachhaltigkeitslabel",
+        "climate-neutral-claim"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/epd/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-epd",
+      "documentId": "epd",
+      "relatedTerms": [
+        "lca",
+        "pcr-product-category-rules",
+        "pef-product-environmental-footprint",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/ermoeglichende-taetigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ermoeglichende-taetigkeit",
+      "documentId": "ermoeglichende-taetigkeit",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/esap/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-esap",
+      "documentId": "esap",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "xbrl",
+        "berichtsdaten",
+        "wirkungsdatenraum"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "ESMA European Single Access Point",
+      "searchBoost": 164
+    },
+    "/begriffe/esef/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-esef",
+      "documentId": "esef",
+      "relatedTerms": [
+        "xbrl",
+        "esap",
+        "berichtsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "ESMA ESEF",
+      "searchBoost": 164
     },
     "/begriffe/esg/": {
       "documentType": "begriff",
@@ -107,11 +423,30 @@
         "csrd",
         "esrs",
         "nachhaltigkeit",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "sustainable-finance",
+        "sfdr",
+        "wirkungsrueckkopplung"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
+    },
+    "/begriffe/espr/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-espr",
+      "documentId": "espr",
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "pef-product-environmental-footprint",
+        "rezyklatanteil"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/esrs/": {
       "documentType": "begriff",
@@ -122,11 +457,76 @@
       "relatedTerms": [
         "csrd",
         "esg",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "efrag",
+        "esrs-themenstandards",
+        "doppelte-wesentlichkeit",
+        "iro"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
+    },
+    "/begriffe/esrs-themenstandards/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-esrs-themenstandards",
+      "documentId": "esrs-themenstandards",
+      "relatedTerms": [
+        "esrs",
+        "csrd",
+        "berichtsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/eu-climate-law/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-eu-climate-law",
+      "documentId": "eu-climate-law",
+      "relatedTerms": [
+        "fit-for-55",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EUR-Lex Regulation 2021/1119",
+      "searchBoost": 164
+    },
+    "/begriffe/eu-ecolabel/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-eu-ecolabel",
+      "documentId": "eu-ecolabel",
+      "relatedTerms": [
+        "nachhaltigkeitslabel",
+        "produktdaten",
+        "greenwashing"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/eu-green-bond-standard/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-eu-green-bond-standard",
+      "documentId": "eu-green-bond-standard",
+      "relatedTerms": [
+        "sustainable-finance",
+        "eu-taxonomie",
+        "transition-finance"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EUR-Lex Regulation 2023/2631",
+      "searchBoost": 164
     },
     "/begriffe/eu-taxonomie/": {
       "documentType": "begriff",
@@ -139,11 +539,55 @@
         "csrd",
         "esrs",
         "wirkungsrisiko",
-        "nachhaltigkeit"
+        "nachhaltigkeit",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "dnsh",
+        "mindestschutz",
+        "technische-bewertungskriterien",
+        "nace",
+        "mindestschutz-minimum-safeguards",
+        "taxonomy-kpis"
       ],
       "relatedDocuments": [],
-      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.pdf",
-      "searchBoost": 155
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx",
+      "searchBoost": 164
+    },
+    "/begriffe/eudr/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-eudr",
+      "documentId": "eudr",
+      "relatedTerms": [
+        "lieferkettendaten",
+        "biodiversitaetsrisiko",
+        "digitaler-produktpass",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/european-green-deal/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-european-green-deal",
+      "documentId": "european-green-deal",
+      "relatedTerms": [
+        "clean-industrial-deal",
+        "fit-for-55",
+        "eu-climate-law",
+        "sustainable-finance",
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "cbam"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission European Green Deal",
+      "searchBoost": 164
     },
     "/begriffe/faktencheck/": {
       "documentType": "begriff",
@@ -178,6 +622,22 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/fit-for-55/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-fit-for-55",
+      "documentId": "fit-for-55",
+      "relatedTerms": [
+        "eu-climate-law",
+        "cbam",
+        "ghg-protocol",
+        "transition-risk"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Rat der EU Fit for 55",
+      "searchBoost": 164
+    },
     "/begriffe/folgencheck/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -197,6 +657,72 @@
       "sourceFile": "Faktencheck und Folgencheck v1.1",
       "searchBoost": 175
     },
+    "/begriffe/forced-labour-regulation/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-forced-labour-regulation",
+      "documentId": "forced-labour-regulation",
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/ghg-protocol/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ghg-protocol",
+      "documentId": "ghg-protocol",
+      "relatedTerms": [
+        "scope-1",
+        "scope-2",
+        "scope-3",
+        "pcf-product-carbon-footprint",
+        "sbti"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/green-claims-directive/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-green-claims-directive",
+      "documentId": "green-claims-directive",
+      "relatedTerms": [
+        "greenwashing",
+        "impact-washing",
+        "climate-neutral-claim",
+        "nachhaltigkeitslabel"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/greenwashing/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-greenwashing",
+      "documentId": "greenwashing",
+      "relatedTerms": [
+        "impact-washing",
+        "sdg-washing",
+        "green-claims-directive",
+        "folgencheck",
+        "reverse-merit-order"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/gri/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -206,11 +732,12 @@
       "relatedTerms": [
         "reporting",
         "csrd",
-        "esrs"
+        "esrs",
+        "berichtsdaten"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
     },
     "/begriffe/idgs/": {
       "documentType": "begriff",
@@ -230,6 +757,287 @@
       "sourceFile": "WÖk SDG-/SDG+-Referenzrahmen",
       "searchBoost": 155
     },
+    "/begriffe/ilo/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ilo",
+      "documentId": "ilo",
+      "relatedTerms": [
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy",
+        "lksg"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/ilo-kernarbeitsnormen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ilo-kernarbeitsnormen",
+      "documentId": "ilo-kernarbeitsnormen",
+      "relatedTerms": [
+        "forced-labour-regulation",
+        "mindestschutz-minimum-safeguards",
+        "social-taxonomy",
+        "lieferkettendaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/impact-washing/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-impact-washing",
+      "documentId": "impact-washing",
+      "relatedTerms": [
+        "greenwashing",
+        "sdg-washing",
+        "wirkungspfad",
+        "datenqualitaet",
+        "folgencheck"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/insetting/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-insetting",
+      "documentId": "insetting",
+      "relatedTerms": [
+        "offsetting-kompensation",
+        "scope-3",
+        "lieferkettendaten",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/inside-out-outside-in/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-inside-out-outside-in",
+      "documentId": "inside-out-outside-in",
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "csrd"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/ipbes/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ipbes",
+      "documentId": "ipbes",
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "tnfd"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/ipcc/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ipcc",
+      "documentId": "ipcc",
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "eu-climate-law"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/iro/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-iro",
+      "documentId": "iro",
+      "relatedTerms": [
+        "esrs",
+        "doppelte-wesentlichkeit",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "ESRS",
+      "searchBoost": 164
+    },
+    "/begriffe/iso-14040-14044/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-iso-14040-14044",
+      "documentId": "iso-14040-14044",
+      "relatedTerms": [
+        "lca",
+        "epd",
+        "pef-product-environmental-footprint"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/issb-ifrs-s1-s2/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-issb-ifrs-s1-s2",
+      "documentId": "issb-ifrs-s1-s2",
+      "relatedTerms": [
+        "tcfd",
+        "transition-risk",
+        "physical-climate-risk",
+        "berichtsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/just-transition-mechanism/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-just-transition-mechanism",
+      "documentId": "just-transition-mechanism",
+      "relatedTerms": [
+        "transition-finance",
+        "wirkungsfonds",
+        "wirkungseinkommen"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission Just Transition Mechanism",
+      "searchBoost": 164
+    },
+    "/begriffe/klimaneutralitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-klimaneutralitaet",
+      "documentId": "klimaneutralitaet",
+      "relatedTerms": [
+        "net-zero",
+        "greenwashing",
+        "climate-neutral-claim",
+        "offsetting-kompensation"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/konservative-annahme/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-konservative-annahme",
+      "documentId": "konservative-annahme",
+      "relatedTerms": [
+        "datenluecke",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/lca/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-lca",
+      "documentId": "lca",
+      "relatedTerms": [
+        "iso-14040-14044",
+        "pef-product-environmental-footprint",
+        "epd",
+        "pcf-product-carbon-footprint"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/lieferkettendaten/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-lieferkettendaten",
+      "documentId": "lieferkettendaten",
+      "relatedTerms": [
+        "csddd",
+        "lksg",
+        "eudr",
+        "scope-3",
+        "digitaler-produktpass"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/limited-assurance/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-limited-assurance",
+      "documentId": "limited-assurance",
+      "relatedTerms": [
+        "assurance",
+        "reasonable-assurance",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "CSRD und Prüfungsstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/lksg/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-lksg",
+      "documentId": "lksg",
+      "relatedTerms": [
+        "csddd",
+        "lieferkettendaten",
+        "un-guiding-principles",
+        "oecd-leitsaetze"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/material-footprint/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-material-footprint",
+      "documentId": "material-footprint",
+      "relatedTerms": [
+        "produktdaten",
+        "rezyklatanteil",
+        "recyclingquote",
+        "lca"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/mensch-planet-demokratie/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -248,6 +1056,23 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/mindestschutz-minimum-safeguards/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-mindestschutz-minimum-safeguards",
+      "documentId": "mindestschutz-minimum-safeguards",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "oecd-leitsaetze",
+        "un-guiding-principles",
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/nace/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -257,11 +1082,13 @@
       "relatedTerms": [
         "eu-taxonomie",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "taxonomy-navigator",
+        "archetyp"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
     },
     "/begriffe/nachhaltigkeit/": {
       "documentType": "begriff",
@@ -284,6 +1111,36 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 155
     },
+    "/begriffe/nachhaltigkeitslabel/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nachhaltigkeitslabel",
+      "documentId": "nachhaltigkeitslabel",
+      "relatedTerms": [
+        "eu-ecolabel",
+        "greenwashing",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/nature-related-risks/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nature-related-risks",
+      "documentId": "nature-related-risks",
+      "relatedTerms": [
+        "tnfd",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/negative-wirkung/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -298,6 +1155,22 @@
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/net-zero/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-net-zero",
+      "documentId": "net-zero",
+      "relatedTerms": [
+        "sbti",
+        "transition-plan",
+        "offsetting-kompensation",
+        "carbon-credits"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/netto-wirkung/": {
       "documentType": "begriff",
@@ -347,6 +1220,21 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/nfrd/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nfrd",
+      "documentId": "nfrd",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EUR-Lex Directive 2014/95/EU",
+      "searchBoost": 164
+    },
     "/begriffe/nichtkompensationsprinzip/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -361,6 +1249,133 @@
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/oecd-leitsaetze/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-oecd-leitsaetze",
+      "documentId": "oecd-leitsaetze",
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "un-guiding-principles",
+        "csddd",
+        "lksg"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/oef-organisation-environmental-footprint/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-oef-organisation-environmental-footprint",
+      "documentId": "oef-organisation-environmental-footprint",
+      "relatedTerms": [
+        "pef-product-environmental-footprint",
+        "lca",
+        "scorecard",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/offsetting-kompensation/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-offsetting-kompensation",
+      "documentId": "offsetting-kompensation",
+      "relatedTerms": [
+        "carbon-credits",
+        "insetting",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/pai/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-pai",
+      "documentId": "pai",
+      "relatedTerms": [
+        "sfdr",
+        "sustainable-finance",
+        "wirkungsrisiko",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "SFDR Delegated Regulation 2022/1288",
+      "searchBoost": 164
+    },
+    "/begriffe/pcf-product-carbon-footprint/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-pcf-product-carbon-footprint",
+      "documentId": "pcf-product-carbon-footprint",
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-3",
+        "lca",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/pcr-product-category-rules/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-pcr-product-category-rules",
+      "documentId": "pcr-product-category-rules",
+      "relatedTerms": [
+        "epd",
+        "lca",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/pef-product-environmental-footprint/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-pef-product-environmental-footprint",
+      "documentId": "pef-product-environmental-footprint",
+      "relatedTerms": [
+        "lca",
+        "oef-organisation-environmental-footprint",
+        "epd",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/physical-climate-risk/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-physical-climate-risk",
+      "documentId": "physical-climate-risk",
+      "relatedTerms": [
+        "tcfd",
+        "transition-risk",
+        "ipcc",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/positive-netto-wirkung/": {
       "documentType": "begriff",
@@ -395,6 +1410,52 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/produktdaten/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-produktdaten",
+      "documentId": "produktdaten",
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktwirkung",
+        "pef-product-environmental-footprint",
+        "pcf-product-carbon-footprint"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/reasonable-assurance/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-reasonable-assurance",
+      "documentId": "reasonable-assurance",
+      "relatedTerms": [
+        "assurance",
+        "limited-assurance",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "CSRD und Prüfungsstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/recyclingquote/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-recyclingquote",
+      "documentId": "recyclingquote",
+      "relatedTerms": [
+        "rezyklatanteil",
+        "material-footprint",
+        "espr"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/resonanzraum/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -428,6 +1489,84 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/rezyklatanteil/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-rezyklatanteil",
+      "documentId": "rezyklatanteil",
+      "relatedTerms": [
+        "recyclingquote",
+        "material-footprint",
+        "espr",
+        "digitaler-produktpass"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/sbti/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-sbti",
+      "documentId": "sbti",
+      "relatedTerms": [
+        "ghg-protocol",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/scope-1/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-scope-1",
+      "documentId": "scope-1",
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-2",
+        "scope-3"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/scope-2/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-scope-2",
+      "documentId": "scope-2",
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/scope-3/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-scope-3",
+      "documentId": "scope-3",
+      "relatedTerms": [
+        "ghg-protocol",
+        "lieferkettendaten",
+        "pcf-product-carbon-footprint",
+        "cbam"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/scorecard/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -437,7 +1576,9 @@
       "relatedTerms": [
         "woek-id",
         "benchmark",
-        "finalscore"
+        "finalscore",
+        "wirkungsindikator",
+        "reverse-merit-order"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -477,8 +1618,24 @@
       "relatedDocuments": [
         "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"
       ],
-      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
       "searchBoost": 175
+    },
+    "/begriffe/sdg-washing/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-sdg-washing",
+      "documentId": "sdg-washing",
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "greenwashing",
+        "impact-washing"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/sdgs/": {
       "documentType": "begriff",
@@ -494,8 +1651,25 @@
       "relatedDocuments": [
         "sdg-sdgplus-referenzrahmen"
       ],
-      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
+      "sourceFile": "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx",
       "searchBoost": 155
+    },
+    "/begriffe/sfdr/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-sfdr",
+      "documentId": "sfdr",
+      "relatedTerms": [
+        "sustainable-finance",
+        "pai",
+        "eu-taxonomie",
+        "esg",
+        "kapitalwirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EUR-Lex Regulation 2019/2088",
+      "searchBoost": 164
     },
     "/begriffe/social-credit/": {
       "documentType": "begriff",
@@ -531,13 +1705,18 @@
         "reverse-merit-order",
         "t-sroi",
         "woek-id",
-        "social-credit"
+        "social-credit",
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "ilo-kernarbeitsnormen",
+        "un-guiding-principles",
+        "sdg-plus"
       ],
       "relatedDocuments": [
         "social-taxonomy-wirkungsoekonomie"
       ],
       "sourceFile": "Social Taxonomy Ausarbeitung v1.0",
-      "searchBoost": 155
+      "searchBoost": 164
     },
     "/begriffe/spekulationslogik/": {
       "documentType": "begriff",
@@ -553,8 +1732,24 @@
       "relatedDocuments": [
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
       "searchBoost": 155
+    },
+    "/begriffe/steuerungsdaten/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-steuerungsdaten",
+      "documentId": "steuerungsdaten",
+      "relatedTerms": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/stranded-assets/": {
       "documentType": "begriff",
@@ -565,16 +1760,36 @@
       "relatedTerms": [
         "wirkungsrisiko",
         "nachhaltigkeit",
-        "transitionsrisiko",
+        "transition-risk",
         "versicherbarkeit",
-        "kapitalzugang"
+        "kapitalzugang",
+        "transition-plan",
+        "kapitalwirkung"
       ],
       "relatedDocuments": [
         "wp-wohnungsmarkt",
         "stranded-assets-gebaeudebestand"
       ],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 155
+      "searchBoost": 164
+    },
+    "/begriffe/sustainable-finance/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-sustainable-finance",
+      "documentId": "sustainable-finance",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "sfdr",
+        "pai",
+        "esap",
+        "csrd",
+        "transition-finance"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission Sustainable Finance",
+      "searchBoost": 164
     },
     "/begriffe/t-sroi/": {
       "documentType": "begriff",
@@ -593,6 +1808,116 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/taxonomy-kpis/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-taxonomy-kpis",
+      "documentId": "taxonomy-kpis",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "berichtsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/taxonomiefaehigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-taxonomiefaehigkeit",
+      "documentId": "taxonomiefaehigkeit",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "nace"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/taxonomiekonformitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-taxonomiekonformitaet",
+      "documentId": "taxonomiekonformitaet",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "dnsh",
+        "mindestschutz-minimum-safeguards",
+        "technische-bewertungskriterien",
+        "taxonomy-kpis"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/taxonomy-navigator/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-taxonomy-navigator",
+      "documentId": "taxonomy-navigator",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien",
+        "nace"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission EU Taxonomy Navigator",
+      "searchBoost": 164
+    },
+    "/begriffe/tcfd/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-tcfd",
+      "documentId": "tcfd",
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "issb-ifrs-s1-s2",
+        "tnfd"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/technische-bewertungskriterien/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-technische-bewertungskriterien",
+      "documentId": "technische-bewertungskriterien",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomy-navigator",
+        "taxonomiekonformitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/tnfd/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-tnfd",
+      "documentId": "tnfd",
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "physical-climate-risk",
+        "issb-ifrs-s1-s2"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/transformationswirkung/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -607,6 +1932,102 @@
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/transition-finance/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-transition-finance",
+      "documentId": "transition-finance",
+      "relatedTerms": [
+        "transition-plan",
+        "sustainable-finance",
+        "clean-industrial-deal",
+        "transition-risk"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EU-Kommission Transition Finance",
+      "searchBoost": 164
+    },
+    "/begriffe/transition-plan/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-transition-plan",
+      "documentId": "transition-plan",
+      "relatedTerms": [
+        "transition-finance",
+        "sbti",
+        "transition-risk",
+        "net-zero"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/transition-risk/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-transition-risk",
+      "documentId": "transition-risk",
+      "relatedTerms": [
+        "tcfd",
+        "transition-plan",
+        "stranded-assets",
+        "clean-industrial-deal"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/uebergangstaetigkeit/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-uebergangstaetigkeit",
+      "documentId": "uebergangstaetigkeit",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "transition-finance",
+        "transition-plan",
+        "stranded-assets"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/un-guiding-principles/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-un-guiding-principles",
+      "documentId": "un-guiding-principles",
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "lksg",
+        "social-taxonomy"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/vsme/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-vsme",
+      "documentId": "vsme",
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "EFRAG VSME",
+      "searchBoost": 164
     },
     "/begriffe/warmmietenneutralitaet/": {
       "documentType": "begriff",
@@ -623,8 +2044,52 @@
         "woek_wohnen_stadt_konzeptpapier_v0_1",
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ],
-      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.pdf",
+      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.docx",
       "searchBoost": 155
+    },
+    "/begriffe/wasserstress/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wasserstress",
+      "documentId": "wasserstress",
+      "relatedTerms": [
+        "nature-related-risks",
+        "tnfd",
+        "produktdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/wesentlicher-beitrag/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wesentlicher-beitrag",
+      "documentId": "wesentlicher-beitrag",
+      "relatedTerms": [
+        "eu-taxonomie",
+        "dnsh",
+        "technische-bewertungskriterien"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
+    "/begriffe/who/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-who",
+      "documentId": "who",
+      "relatedTerms": [
+        "gesundheit",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
     },
     "/begriffe/wirkmechanismus/": {
       "documentType": "begriff",
@@ -729,7 +2194,11 @@
         "wirkungsdatenraum",
         "woek-id",
         "scorecard",
-        "nwi"
+        "nwi",
+        "wirkung",
+        "wirkungspotenzial",
+        "datenqualitaet",
+        "wirkungsindikator"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -745,7 +2214,9 @@
         "csrd",
         "esrs",
         "digitaler-produktpass",
-        "woek-id"
+        "woek-id",
+        "wirkungsregister",
+        "wirkungsdaten"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -828,6 +2299,22 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/wirkungsindikator/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsindikator",
+      "documentId": "wirkungsindikator",
+      "relatedTerms": [
+        "wirkungsdaten",
+        "wirkungspfad",
+        "datenqualitaet",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/wirkungskompetenz/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -844,7 +2331,7 @@
       "relatedDocuments": [
         "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
       ],
-      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.pdf",
+      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx",
       "searchBoost": 175
     },
     "/begriffe/wirkungslenkung/": {
@@ -892,7 +2379,7 @@
       "relatedDocuments": [
         "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
       ],
-      "sourceFile": "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.pdf",
+      "sourceFile": "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx",
       "searchBoost": 175
     },
     "/begriffe/wirkungspfad/": {
@@ -924,7 +2411,7 @@
       "relatedDocuments": [
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
       "searchBoost": 155
     },
     "/begriffe/wirkungspotenzial/": {
@@ -1008,6 +2495,22 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
     },
+    "/begriffe/wirkungsregister/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsregister",
+      "documentId": "wirkungsregister",
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "scorecard"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 164
+    },
     "/begriffe/wirkungsrente/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -1085,7 +2588,7 @@
       "relatedDocuments": [
         "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
       ],
-      "sourceFile": "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.pdf",
+      "sourceFile": "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx",
       "searchBoost": 175
     },
     "/begriffe/wirkungssteuer/": {
@@ -1172,7 +2675,7 @@
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3",
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
       "searchBoost": 155
     },
     "/begriffe/wirkungswahrheit/": {
@@ -1204,7 +2707,7 @@
       "relatedDocuments": [
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
       ],
-      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.pdf",
+      "sourceFile": "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx",
       "searchBoost": 155
     },
     "/begriffe/wohnwirkung/": {
@@ -1221,7 +2724,7 @@
       "relatedDocuments": [
         "woek_wohnen_stadt_gesamtdossier_v0_1"
       ],
-      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.pdf",
+      "sourceFile": "woek_wohnen_stadt_konzeptpapier_v0_1.docx",
       "searchBoost": 155
     },
     "/begriffe/woek-id/": {
@@ -1233,7 +2736,9 @@
       "relatedTerms": [
         "scorecard",
         "benchmark",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "digitaler-produktpass",
+        "datenqualitaet"
       ],
       "relatedDocuments": [
         "woek-master-items"
@@ -1275,6 +2780,22 @@
       ],
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 175
+    },
+    "/begriffe/xbrl/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-xbrl",
+      "documentId": "xbrl",
+      "relatedTerms": [
+        "esap",
+        "esef",
+        "csrd",
+        "berichtsdaten"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "XBRL International",
+      "searchBoost": 164
     },
     "/bibliothek/handbuch-wirkungskompetenz/": {
       "documentType": "bibliothek",
@@ -3385,14 +4906,6 @@
       "contentHash": "ee8ecf96a6b2f961",
       "sectionId": ""
     },
-    "/begriffe/assurance/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/assurance/index.html",
-      "contentHash": "1158b54c455dd505",
-      "sectionId": ""
-    },
     "/begriffe/audit/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3407,14 +4920,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/benchmarks/index.html",
       "contentHash": "3b6ec602a77f4459",
-      "sectionId": ""
-    },
-    "/begriffe/berichtsdaten/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/berichtsdaten/index.html",
-      "contentHash": "f3461f5dfebc8176",
       "sectionId": ""
     },
     "/begriffe/bestandsimmobilie/": {
@@ -3439,14 +4944,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/biodiversitaet-2/index.html",
       "contentHash": "af1c246abfcce858",
-      "sectionId": ""
-    },
-    "/begriffe/biodiversitaetsrisiko/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/biodiversitaetsrisiko/index.html",
-      "contentHash": "5e546e9ef66d4d1f",
       "sectionId": ""
     },
     "/begriffe/bip/": {
@@ -3513,14 +5010,6 @@
       "contentHash": "fdc93f8642d445e5",
       "sectionId": ""
     },
-    "/begriffe/cbam/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/cbam/index.html",
-      "contentHash": "22ee792bd29fe58b",
-      "sectionId": ""
-    },
     "/begriffe/circular-regenerative-economy/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3545,14 +5034,6 @@
       "contentHash": "1ccd79c36aba3bfd",
       "sectionId": ""
     },
-    "/begriffe/csddd/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/csddd/index.html",
-      "contentHash": "6561ec419ac5a045",
-      "sectionId": ""
-    },
     "/begriffe/csddd-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3575,14 +5056,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/d-und-o/index.html",
       "contentHash": "b786dd4ccaef51bb",
-      "sectionId": ""
-    },
-    "/begriffe/datenqualitaet/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/datenqualitaet/index.html",
-      "contentHash": "5e3a2c89a3f47a24",
       "sectionId": ""
     },
     "/begriffe/datenqualitaetsklasse/": {
@@ -3673,14 +5146,6 @@
       "contentHash": "5a78515339327ee6",
       "sectionId": ""
     },
-    "/begriffe/dnsh/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/dnsh/index.html",
-      "contentHash": "f5f8fa1f50b365cc",
-      "sectionId": ""
-    },
     "/begriffe/dnsh-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3695,14 +5160,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/donut-oekonomie/index.html",
       "contentHash": "f156d0670cfb0e95",
-      "sectionId": ""
-    },
-    "/begriffe/doppelte-wesentlichkeit/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/doppelte-wesentlichkeit/index.html",
-      "contentHash": "94aa7767a0926125",
       "sectionId": ""
     },
     "/begriffe/dora/": {
@@ -3801,14 +5258,6 @@
       "contentHash": "dae464dad6a8abe8",
       "sectionId": ""
     },
-    "/begriffe/efrag/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/efrag/index.html",
-      "contentHash": "f0104be00f9799fb",
-      "sectionId": ""
-    },
     "/begriffe/efrag-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3857,14 +5306,6 @@
       "contentHash": "4b6fbbbbd62f9ec8",
       "sectionId": ""
     },
-    "/begriffe/epd/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/epd/index.html",
-      "contentHash": "44f11bf05fd98cbb",
-      "sectionId": ""
-    },
     "/begriffe/epd-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3879,14 +5320,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/erm/index.html",
       "contentHash": "736567a931b02936",
-      "sectionId": ""
-    },
-    "/begriffe/ermoeglichende-taetigkeit/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/ermoeglichende-taetigkeit/index.html",
-      "contentHash": "74280b90d5bacafe",
       "sectionId": ""
     },
     "/begriffe/erwuenschte-wirkung/": {
@@ -3937,14 +5370,6 @@
       "contentHash": "841ac6165de4694f",
       "sectionId": ""
     },
-    "/begriffe/espr/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/espr/index.html",
-      "contentHash": "f4c1affb26d2a39d",
-      "sectionId": ""
-    },
     "/begriffe/espr-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -3959,14 +5384,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/esrs-2/index.html",
       "contentHash": "6f8ea04638264f00",
-      "sectionId": ""
-    },
-    "/begriffe/esrs-themenstandards/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/esrs-themenstandards/index.html",
-      "contentHash": "4823a4bf67a5dea0",
       "sectionId": ""
     },
     "/begriffe/ets/": {
@@ -4081,14 +5498,6 @@
       "contentHash": "2796ff1b1e976232",
       "sectionId": ""
     },
-    "/begriffe/ghg-protocol/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/ghg-protocol/index.html",
-      "contentHash": "197137be61709da5",
-      "sectionId": ""
-    },
     "/begriffe/ghg-protocol-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -4103,14 +5512,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/globale-wirkungsordnung/index.html",
       "contentHash": "433d764940137e31",
-      "sectionId": ""
-    },
-    "/begriffe/greenwashing/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/greenwashing/index.html",
-      "contentHash": "9b07b3b44d11a1a2",
       "sectionId": ""
     },
     "/begriffe/gri-2/": {
@@ -4161,14 +5562,6 @@
       "contentHash": "4beba7a128a69e44",
       "sectionId": ""
     },
-    "/begriffe/ilo/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/ilo/index.html",
-      "contentHash": "9c26c1852236d6eb",
-      "sectionId": ""
-    },
     "/begriffe/ilo-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -4201,20 +5594,12 @@
       "contentHash": "5820bdda9b0b08a8",
       "sectionId": ""
     },
-    "/begriffe/impact-washing/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/impact-washing/index.html",
-      "contentHash": "64e3457a74d4f6d2",
-      "sectionId": ""
-    },
     "/begriffe/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "8b66e9181d0a0114",
+      "contentHash": "650a4183f51a56dd",
       "sectionId": "woek-page-2afe7308732a6cbb"
     },
     "/begriffe/#glossary-filter-title": {
@@ -4222,7 +5607,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "8b66e9181d0a0114",
+      "contentHash": "650a4183f51a56dd",
       "sectionId": "glossary-filter-title"
     },
     "/begriffe/#related-questions-title-begriffe": {
@@ -4230,16 +5615,8 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/index.html",
-      "contentHash": "8b66e9181d0a0114",
+      "contentHash": "650a4183f51a56dd",
       "sectionId": "related-questions-title-begriffe"
-    },
-    "/begriffe/inside-out-outside-in/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/inside-out-outside-in/index.html",
-      "contentHash": "6c1aafd49c237a66",
-      "sectionId": ""
     },
     "/begriffe/interdependenz/": {
       "documentType": "Begriffe",
@@ -4249,28 +5626,12 @@
       "contentHash": "64977b3013b8b1ec",
       "sectionId": ""
     },
-    "/begriffe/ipbes/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/ipbes/index.html",
-      "contentHash": "85140339e7bc886f",
-      "sectionId": ""
-    },
     "/begriffe/ipbes-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/ipbes-2/index.html",
       "contentHash": "e63b633a95d01151",
-      "sectionId": ""
-    },
-    "/begriffe/ipcc/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/ipcc/index.html",
-      "contentHash": "b4dd62b6fef785c4",
       "sectionId": ""
     },
     "/begriffe/ipcc-2/": {
@@ -4425,14 +5786,6 @@
       "contentHash": "d6e301c57216aac6",
       "sectionId": ""
     },
-    "/begriffe/lca/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/lca/index.html",
-      "contentHash": "a21f912353ac6ecb",
-      "sectionId": ""
-    },
     "/begriffe/lca-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -4457,14 +5810,6 @@
       "contentHash": "abae609473b30338",
       "sectionId": ""
     },
-    "/begriffe/lieferkettendaten/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/lieferkettendaten/index.html",
-      "contentHash": "6e56fddc4e146740",
-      "sectionId": ""
-    },
     "/begriffe/lieferkettenrisiko/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -4487,14 +5832,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/living-wage/index.html",
       "contentHash": "cb8b50f29f4b9639",
-      "sectionId": ""
-    },
-    "/begriffe/lksg/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/lksg/index.html",
-      "contentHash": "ff3faa66853edf76",
       "sectionId": ""
     },
     "/begriffe/lock-in-effekt/": {
@@ -4543,14 +5880,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/menschenrechte-in-der-lieferkette/index.html",
       "contentHash": "4c421bcab993d88f",
-      "sectionId": ""
-    },
-    "/begriffe/mindestschutz-minimum-safeguards/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/mindestschutz-minimum-safeguards/index.html",
-      "contentHash": "501f6523e7fedb3e",
       "sectionId": ""
     },
     "/begriffe/misalignment-year/": {
@@ -4809,22 +6138,6 @@
       "contentHash": "756c82bc76d00f44",
       "sectionId": ""
     },
-    "/begriffe/pcf-product-carbon-footprint/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/pcf-product-carbon-footprint/index.html",
-      "contentHash": "4654cfbfd7abe954",
-      "sectionId": ""
-    },
-    "/begriffe/pef-product-environmental-footprint/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/pef-product-environmental-footprint/index.html",
-      "contentHash": "333c86f5f8e0ac01",
-      "sectionId": ""
-    },
     "/begriffe/physisches-klimarisiko/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -4887,14 +6200,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/produkt-labels/index.html",
       "contentHash": "b2994dc2fee61329",
-      "sectionId": ""
-    },
-    "/begriffe/produktdaten/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/produktdaten/index.html",
-      "contentHash": "c27e04f336b951a0",
       "sectionId": ""
     },
     "/begriffe/produktscorecard/": {
@@ -4974,7 +6279,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/resilienz/index.html",
-      "contentHash": "1eab0a386de2e15a",
+      "contentHash": "066df1a151078d8d",
       "sectionId": ""
     },
     "/begriffe/resilienz-2/": {
@@ -5113,14 +6418,6 @@
       "contentHash": "0cd7a11e0f572306",
       "sectionId": ""
     },
-    "/begriffe/sfdr/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/sfdr/index.html",
-      "contentHash": "bfdde2c295598020",
-      "sectionId": ""
-    },
     "/begriffe/sfdr-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -5153,14 +6450,6 @@
       "contentHash": "2a16758d15ecab89",
       "sectionId": ""
     },
-    "/begriffe/steuerungsdaten/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/steuerungsdaten/index.html",
-      "contentHash": "1b088e771acf4cc0",
-      "sectionId": ""
-    },
     "/begriffe/steward-ownership/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -5175,14 +6464,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/sustainability-benchmarking/index.html",
       "contentHash": "3b821c027fee2f5e",
-      "sectionId": ""
-    },
-    "/begriffe/sustainable-finance/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/sustainable-finance/index.html",
-      "contentHash": "570392c47669b9f6",
       "sectionId": ""
     },
     "/begriffe/sustainalytics/": {
@@ -5233,44 +6514,12 @@
       "contentHash": "dc3d9efe15b6b302",
       "sectionId": ""
     },
-    "/begriffe/taxonomiefaehigkeit/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/taxonomiefaehigkeit/index.html",
-      "contentHash": "a91f6072b8e0f4fe",
-      "sectionId": ""
-    },
-    "/begriffe/taxonomiekonformitaet/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/taxonomiekonformitaet/index.html",
-      "contentHash": "b860bd32a3812c5a",
-      "sectionId": ""
-    },
     "/begriffe/taxonomy-compass/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/taxonomy-compass/index.html",
       "contentHash": "0b53c7917bc4abd2",
-      "sectionId": ""
-    },
-    "/begriffe/taxonomy-kpis/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/taxonomy-kpis/index.html",
-      "contentHash": "7b80a84b5e7f48a0",
-      "sectionId": ""
-    },
-    "/begriffe/technische-bewertungskriterien/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/technische-bewertungskriterien/index.html",
-      "contentHash": "bd28f3658089889a",
       "sectionId": ""
     },
     "/begriffe/thg/": {
@@ -5319,14 +6568,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/transitionsrisiko/index.html",
       "contentHash": "fb4d747525ed6b47",
-      "sectionId": ""
-    },
-    "/begriffe/uebergangstaetigkeit/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/uebergangstaetigkeit/index.html",
-      "contentHash": "cb33f98082f8d3d7",
       "sectionId": ""
     },
     "/begriffe/un/": {
@@ -5417,14 +6658,6 @@
       "contentHash": "98b6f23d45d46ffd",
       "sectionId": ""
     },
-    "/begriffe/wasserstress/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/wasserstress/index.html",
-      "contentHash": "d2e097b3c212d5e2",
-      "sectionId": ""
-    },
     "/begriffe/wechselwirkung/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -5457,28 +6690,12 @@
       "contentHash": "87fa6ab434120927",
       "sectionId": ""
     },
-    "/begriffe/wesentlicher-beitrag/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/wesentlicher-beitrag/index.html",
-      "contentHash": "9ab68049d940d54a",
-      "sectionId": ""
-    },
     "/begriffe/westg/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "begriffe/westg/index.html",
       "contentHash": "ec7b70675dfcf186",
-      "sectionId": ""
-    },
-    "/begriffe/who/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/who/index.html",
-      "contentHash": "2b5e122a4829173a",
       "sectionId": ""
     },
     "/begriffe/who-2/": {
@@ -5793,14 +7010,6 @@
       "contentHash": "68e41ba340904bb6",
       "sectionId": ""
     },
-    "/begriffe/wirkungsindikator/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/wirkungsindikator/index.html",
-      "contentHash": "e6b2104353a3d9a7",
-      "sectionId": ""
-    },
     "/begriffe/wirkungskapital/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -6049,14 +7258,6 @@
       "contentHash": "a7a3823b204c858b",
       "sectionId": ""
     },
-    "/begriffe/wirkungsregister/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/wirkungsregister/index.html",
-      "contentHash": "a080cfb280cf2d4e",
-      "sectionId": ""
-    },
     "/begriffe/wirkungsresilienz-2/": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
@@ -6263,14 +7464,6 @@
       "version": "2026.1",
       "sourceFile": "begriffe/wr/index.html",
       "contentHash": "abe107673ab7bd9a",
-      "sectionId": ""
-    },
-    "/begriffe/xbrl/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "begriffe/xbrl/index.html",
-      "contentHash": "985daa1baa0b63f7",
       "sectionId": ""
     },
     "/begriffe/zertifizierung/": {
@@ -16774,7 +17967,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/versionen/index.html",
-      "contentHash": "efa4ade05a148868",
+      "contentHash": "ddc4843df2fdee10",
       "sectionId": "woek-page-9a10e39e249e7d02"
     },
     "/referenz/volltext/": {

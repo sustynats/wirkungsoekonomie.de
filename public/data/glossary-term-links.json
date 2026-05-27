@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T08:05:53.193Z",
+  "generatedAt": "2026-05-27T09:10:45.520Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -28,7 +28,26 @@
       "relatedTerms": [
         "benchmark",
         "scorecard",
-        "woek-id"
+        "woek-id",
+        "nace"
+      ]
+    },
+    "assurance": {
+      "label": "Assurance",
+      "slug": "assurance",
+      "url": "/begriffe/assurance/",
+      "hoverDefinition": "Assurance erhöht Vertrauen in berichtete Daten, macht daraus aber noch keine vollständige Wirkungsbewertung.",
+      "shortDefinition": "Assurance bezeichnet prüferische Sicherheit über Berichtsinformationen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Sustainability Assurance",
+        "Prüfung"
+      ],
+      "relatedTerms": [
+        "limited-assurance",
+        "reasonable-assurance",
+        "datenqualitaet",
+        "csrd"
       ]
     },
     "benchmark": {
@@ -45,7 +64,134 @@
       "relatedTerms": [
         "scorecard",
         "finalscore",
-        "woek-id"
+        "woek-id",
+        "archetyp",
+        "datenqualitaet"
+      ]
+    },
+    "berichtsdaten": {
+      "label": "Berichtsdaten",
+      "slug": "berichtsdaten",
+      "url": "/begriffe/berichtsdaten/",
+      "hoverDefinition": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
+      "shortDefinition": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "sfdr",
+        "steuerungsdaten",
+        "wirkungsdaten"
+      ]
+    },
+    "biodiversitaetsrisiko": {
+      "label": "Biodiversitätsrisiko",
+      "slug": "biodiversitaetsrisiko",
+      "url": "/begriffe/biodiversitaetsrisiko/",
+      "hoverDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
+      "shortDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "tnfd",
+        "nature-related-risks",
+        "ipbes",
+        "eudr"
+      ]
+    },
+    "carbon-credits": {
+      "label": "Carbon Credits",
+      "slug": "carbon-credits",
+      "url": "/begriffe/carbon-credits/",
+      "hoverDefinition": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
+      "shortDefinition": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "offsetting-kompensation",
+        "net-zero",
+        "greenwashing",
+        "nichtkompensationsprinzip"
+      ]
+    },
+    "cbam": {
+      "label": "CBAM / Carbon Border Adjustment Mechanism",
+      "slug": "cbam",
+      "url": "/begriffe/cbam/",
+      "hoverDefinition": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
+      "shortDefinition": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "fit-for-55",
+        "ghg-protocol",
+        "scope-3",
+        "produktwirkung",
+        "wirkungssteuer"
+      ]
+    },
+    "clean-industrial-deal": {
+      "label": "Clean Industrial Deal",
+      "slug": "clean-industrial-deal",
+      "url": "/begriffe/clean-industrial-deal/",
+      "hoverDefinition": "Der Clean Industrial Deal verbindet Dekarbonisierung, Industriepolitik, bezahlbare Energie, Clean Tech, Kreislaufwirtschaft und Wettbewerbsfähigkeit.",
+      "shortDefinition": "Der Clean Industrial Deal ist ein EU-Plan für industrielle Wettbewerbsfähigkeit und Dekarbonisierung.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Deal für eine saubere Industrie"
+      ],
+      "relatedTerms": [
+        "european-green-deal",
+        "sustainable-finance",
+        "transition-finance",
+        "cbam",
+        "espr"
+      ]
+    },
+    "climate-neutral-claim": {
+      "label": "Climate Neutral Claim",
+      "slug": "climate-neutral-claim",
+      "url": "/begriffe/climate-neutral-claim/",
+      "hoverDefinition": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
+      "shortDefinition": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "klimaneutralitaet",
+        "offsetting-kompensation",
+        "greenwashing",
+        "carbon-credits"
+      ]
+    },
+    "conflict-minerals-regulation": {
+      "label": "Conflict Minerals Regulation",
+      "slug": "conflict-minerals-regulation",
+      "url": "/begriffe/conflict-minerals-regulation/",
+      "hoverDefinition": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
+      "shortDefinition": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "lieferkettendaten",
+        "oecd-leitsaetze",
+        "csddd"
+      ]
+    },
+    "csddd": {
+      "label": "CSDDD",
+      "slug": "csddd",
+      "url": "/begriffe/csddd/",
+      "hoverDefinition": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
+      "shortDefinition": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "lksg",
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten"
       ]
     },
     "csrd": {
@@ -62,7 +208,41 @@
         "esrs",
         "esg",
         "wirkungsdatenraum",
-        "reporting"
+        "reporting",
+        "efrag",
+        "doppelte-wesentlichkeit",
+        "iro",
+        "xbrl",
+        "esap"
+      ]
+    },
+    "datenluecke": {
+      "label": "Datenlücke",
+      "slug": "datenluecke",
+      "url": "/begriffe/datenluecke/",
+      "hoverDefinition": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
+      "shortDefinition": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "datenqualitaet",
+        "konservative-annahme",
+        "scorecard"
+      ]
+    },
+    "datenqualitaet": {
+      "label": "Datenqualität",
+      "slug": "datenqualitaet",
+      "url": "/begriffe/datenqualitaet/",
+      "hoverDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
+      "shortDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "datenluecke",
+        "konservative-annahme",
+        "assurance",
+        "wirkungsdaten"
       ]
     },
     "digitaler-produktpass": {
@@ -79,7 +259,136 @@
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "espr",
+        "produktdaten",
+        "pcf-product-carbon-footprint",
+        "material-footprint"
+      ]
+    },
+    "dnsh": {
+      "label": "DNSH / Do No Significant Harm",
+      "slug": "dnsh",
+      "url": "/begriffe/dnsh/",
+      "hoverDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
+      "shortDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "technische-bewertungskriterien"
+      ]
+    },
+    "doppelte-wesentlichkeit": {
+      "label": "Doppelte Wesentlichkeit",
+      "slug": "doppelte-wesentlichkeit",
+      "url": "/begriffe/doppelte-wesentlichkeit/",
+      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
+      "shortDefinition": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Double Materiality",
+        "doppelte Materialität"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "iro",
+        "wirkungsbewertung"
+      ]
+    },
+    "efrag": {
+      "label": "EFRAG",
+      "slug": "efrag",
+      "url": "/begriffe/efrag/",
+      "hoverDefinition": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
+      "shortDefinition": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "esrs",
+        "csrd",
+        "vsme",
+        "xbrl"
+      ]
+    },
+    "empowering-consumers-green-transition": {
+      "label": "Empowering Consumers for the Green Transition",
+      "slug": "empowering-consumers-green-transition",
+      "url": "/begriffe/empowering-consumers-green-transition/",
+      "hoverDefinition": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
+      "shortDefinition": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "nachhaltigkeitslabel",
+        "climate-neutral-claim"
+      ]
+    },
+    "epd": {
+      "label": "EPD / Environmental Product Declaration",
+      "slug": "epd",
+      "url": "/begriffe/epd/",
+      "hoverDefinition": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
+      "shortDefinition": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "lca",
+        "pcr-product-category-rules",
+        "pef-product-environmental-footprint",
+        "produktdaten"
+      ]
+    },
+    "ermoeglichende-taetigkeit": {
+      "label": "Ermöglichende Tätigkeit",
+      "slug": "ermoeglichende-taetigkeit",
+      "url": "/begriffe/ermoeglichende-taetigkeit/",
+      "hoverDefinition": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
+      "shortDefinition": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "wirkungsdaten"
+      ]
+    },
+    "esap": {
+      "label": "ESAP / European Single Access Point",
+      "slug": "esap",
+      "url": "/begriffe/esap/",
+      "hoverDefinition": "ESAP soll öffentliche Unternehmens-, Finanz- und Nachhaltigkeitsdaten zentral auffindbar machen.",
+      "shortDefinition": "ESAP ist der europäische zentrale Zugangspunkt für öffentliche Finanz- und Nachhaltigkeitsinformationen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "European Single Access Point"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "xbrl",
+        "berichtsdaten",
+        "wirkungsdatenraum"
+      ]
+    },
+    "esef": {
+      "label": "ESEF",
+      "slug": "esef",
+      "url": "/begriffe/esef/",
+      "hoverDefinition": "ESEF macht Finanzberichte elektronisch und maschinenlesbar; es ist Infrastruktur, keine Nachhaltigkeitsbewertung.",
+      "shortDefinition": "ESEF ist das europäische einheitliche elektronische Berichtsformat für Jahresfinanzberichte.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "European Single Electronic Format"
+      ],
+      "relatedTerms": [
+        "xbrl",
+        "esap",
+        "berichtsdaten"
       ]
     },
     "esg": {
@@ -96,7 +405,25 @@
         "csrd",
         "esrs",
         "nachhaltigkeit",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "sustainable-finance",
+        "sfdr",
+        "wirkungsrueckkopplung"
+      ]
+    },
+    "espr": {
+      "label": "ESPR / Ecodesign for Sustainable Products Regulation",
+      "slug": "espr",
+      "url": "/begriffe/espr/",
+      "hoverDefinition": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
+      "shortDefinition": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "pef-product-environmental-footprint",
+        "rezyklatanteil"
       ]
     },
     "esrs": {
@@ -112,7 +439,74 @@
       "relatedTerms": [
         "csrd",
         "esg",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "efrag",
+        "esrs-themenstandards",
+        "doppelte-wesentlichkeit",
+        "iro"
+      ]
+    },
+    "esrs-themenstandards": {
+      "label": "ESRS-Themenstandards",
+      "slug": "esrs-themenstandards",
+      "url": "/begriffe/esrs-themenstandards/",
+      "hoverDefinition": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
+      "shortDefinition": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "esrs",
+        "csrd",
+        "berichtsdaten"
+      ]
+    },
+    "eu-climate-law": {
+      "label": "EU Climate Law",
+      "slug": "eu-climate-law",
+      "url": "/begriffe/eu-climate-law/",
+      "hoverDefinition": "Das EU Climate Law macht Klimaziele zum rechtlichen Rahmen für Politik, Regulierung, Finanzierung und Risikobewertung.",
+      "shortDefinition": "Das Europäische Klimagesetz verankert Klimaneutralität der EU bis 2050 und das 2030-Ziel rechtlich.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Europäisches Klimagesetz",
+        "European Climate Law"
+      ],
+      "relatedTerms": [
+        "fit-for-55",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ]
+    },
+    "eu-ecolabel": {
+      "label": "EU Ecolabel",
+      "slug": "eu-ecolabel",
+      "url": "/begriffe/eu-ecolabel/",
+      "hoverDefinition": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
+      "shortDefinition": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "nachhaltigkeitslabel",
+        "produktdaten",
+        "greenwashing"
+      ]
+    },
+    "eu-green-bond-standard": {
+      "label": "EU Green Bond Standard",
+      "slug": "eu-green-bond-standard",
+      "url": "/begriffe/eu-green-bond-standard/",
+      "hoverDefinition": "Der EU Green Bond Standard verbindet grüne Anleihen mit Taxonomiebezug, Transparenz und Prüfung.",
+      "shortDefinition": "Der EU Green Bond Standard ist ein europäischer Standard für als europäische grüne Anleihen bezeichnete Bonds.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "European Green Bond Standard",
+        "EuGB"
+      ],
+      "relatedTerms": [
+        "sustainable-finance",
+        "eu-taxonomie",
+        "transition-finance"
       ]
     },
     "eu-taxonomie": {
@@ -130,7 +524,53 @@
         "csrd",
         "esrs",
         "wirkungsrisiko",
-        "nachhaltigkeit"
+        "nachhaltigkeit",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "dnsh",
+        "mindestschutz",
+        "technische-bewertungskriterien",
+        "nace",
+        "mindestschutz-minimum-safeguards",
+        "taxonomy-kpis"
+      ]
+    },
+    "eudr": {
+      "label": "EUDR / EU Deforestation Regulation",
+      "slug": "eudr",
+      "url": "/begriffe/eudr/",
+      "hoverDefinition": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
+      "shortDefinition": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "lieferkettendaten",
+        "biodiversitaetsrisiko",
+        "digitaler-produktpass",
+        "produktdaten"
+      ]
+    },
+    "european-green-deal": {
+      "label": "European Green Deal / Europäischer Green Deal",
+      "slug": "european-green-deal",
+      "url": "/begriffe/european-green-deal/",
+      "hoverDefinition": "Der European Green Deal ist der EU-Politikrahmen für Klimaneutralität, Ressourceneffizienz, Industriepolitik, Sustainable Finance und Berichtspflichten.",
+      "shortDefinition": "Der European Green Deal ist der politische Transformationsrahmen der EU für eine moderne, ressourceneffiziente, wettbewerbsfähige und klimaneutrale Wirtschaft.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Europäischer Green Deal",
+        "EU Green Deal",
+        "Green Deal"
+      ],
+      "relatedTerms": [
+        "clean-industrial-deal",
+        "fit-for-55",
+        "eu-climate-law",
+        "sustainable-finance",
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "cbam"
       ]
     },
     "faktencheck": {
@@ -165,6 +605,23 @@
         "netto-wirkung"
       ]
     },
+    "fit-for-55": {
+      "label": "Fit for 55",
+      "slug": "fit-for-55",
+      "url": "/begriffe/fit-for-55/",
+      "hoverDefinition": "Fit for 55 bündelt EU-Klima-, Energie-, Verkehrs- und Industrieinstrumente zur Umsetzung des 2030-Klimaziels.",
+      "shortDefinition": "Fit for 55 ist das EU-Gesetzgebungspaket zur Senkung der Netto-Treibhausgasemissionen um mindestens 55 Prozent bis 2030.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Fit-for-55-Paket"
+      ],
+      "relatedTerms": [
+        "eu-climate-law",
+        "cbam",
+        "ghg-protocol",
+        "transition-risk"
+      ]
+    },
     "folgencheck": {
       "label": "Folgencheck",
       "slug": "folgencheck",
@@ -185,6 +642,68 @@
         "wirkungspotenzial"
       ]
     },
+    "forced-labour-regulation": {
+      "label": "Forced Labour Regulation",
+      "slug": "forced-labour-regulation",
+      "url": "/begriffe/forced-labour-regulation/",
+      "hoverDefinition": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
+      "shortDefinition": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten",
+        "nichtkompensationsprinzip"
+      ]
+    },
+    "ghg-protocol": {
+      "label": "GHG Protocol",
+      "slug": "ghg-protocol",
+      "url": "/begriffe/ghg-protocol/",
+      "hoverDefinition": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
+      "shortDefinition": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "scope-1",
+        "scope-2",
+        "scope-3",
+        "pcf-product-carbon-footprint",
+        "sbti"
+      ]
+    },
+    "green-claims-directive": {
+      "label": "Green Claims Directive",
+      "slug": "green-claims-directive",
+      "url": "/begriffe/green-claims-directive/",
+      "hoverDefinition": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
+      "shortDefinition": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "impact-washing",
+        "climate-neutral-claim",
+        "nachhaltigkeitslabel"
+      ]
+    },
+    "greenwashing": {
+      "label": "Greenwashing",
+      "slug": "greenwashing",
+      "url": "/begriffe/greenwashing/",
+      "hoverDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
+      "shortDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "impact-washing",
+        "sdg-washing",
+        "green-claims-directive",
+        "folgencheck",
+        "reverse-merit-order"
+      ]
+    },
     "gri": {
       "label": "GRI",
       "slug": "gri",
@@ -198,7 +717,8 @@
       "relatedTerms": [
         "reporting",
         "csrd",
-        "esrs"
+        "esrs",
+        "berichtsdaten"
       ]
     },
     "idgs": {
@@ -220,6 +740,278 @@
         "agenda-2030"
       ]
     },
+    "ilo": {
+      "label": "ILO",
+      "slug": "ilo",
+      "url": "/begriffe/ilo/",
+      "hoverDefinition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
+      "shortDefinition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy",
+        "lksg"
+      ]
+    },
+    "ilo-kernarbeitsnormen": {
+      "label": "ILO-Kernarbeitsnormen",
+      "slug": "ilo-kernarbeitsnormen",
+      "url": "/begriffe/ilo-kernarbeitsnormen/",
+      "hoverDefinition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
+      "shortDefinition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "forced-labour-regulation",
+        "mindestschutz-minimum-safeguards",
+        "social-taxonomy",
+        "lieferkettendaten"
+      ]
+    },
+    "impact-washing": {
+      "label": "Impact-Washing",
+      "slug": "impact-washing",
+      "url": "/begriffe/impact-washing/",
+      "hoverDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
+      "shortDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "sdg-washing",
+        "wirkungspfad",
+        "datenqualitaet",
+        "folgencheck"
+      ]
+    },
+    "insetting": {
+      "label": "Insetting",
+      "slug": "insetting",
+      "url": "/begriffe/insetting/",
+      "hoverDefinition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
+      "shortDefinition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "offsetting-kompensation",
+        "scope-3",
+        "lieferkettendaten",
+        "wirkungsdaten"
+      ]
+    },
+    "inside-out-outside-in": {
+      "label": "Inside-out / Outside-in",
+      "slug": "inside-out-outside-in",
+      "url": "/begriffe/inside-out-outside-in/",
+      "hoverDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
+      "shortDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "csrd"
+      ]
+    },
+    "ipbes": {
+      "label": "IPBES",
+      "slug": "ipbes",
+      "url": "/begriffe/ipbes/",
+      "hoverDefinition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
+      "shortDefinition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "tnfd"
+      ]
+    },
+    "ipcc": {
+      "label": "IPCC",
+      "slug": "ipcc",
+      "url": "/begriffe/ipcc/",
+      "hoverDefinition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
+      "shortDefinition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "eu-climate-law"
+      ]
+    },
+    "iro": {
+      "label": "IRO / Impacts, Risks and Opportunities",
+      "slug": "iro",
+      "url": "/begriffe/iro/",
+      "hoverDefinition": "IRO verbindet Wirkungen, Risiken und Chancen als zentrale Struktur der ESRS-Wesentlichkeitsanalyse.",
+      "shortDefinition": "IRO steht in den ESRS für Auswirkungen, Risiken und Chancen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Impacts Risks Opportunities",
+        "Auswirkungen Risiken Chancen"
+      ],
+      "relatedTerms": [
+        "esrs",
+        "doppelte-wesentlichkeit",
+        "wirkungsrisiko"
+      ]
+    },
+    "iso-14040-14044": {
+      "label": "ISO 14040 / ISO 14044",
+      "slug": "iso-14040-14044",
+      "url": "/begriffe/iso-14040-14044/",
+      "hoverDefinition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
+      "shortDefinition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "lca",
+        "epd",
+        "pef-product-environmental-footprint"
+      ]
+    },
+    "issb-ifrs-s1-s2": {
+      "label": "ISSB / IFRS S1 und IFRS S2",
+      "slug": "issb-ifrs-s1-s2",
+      "url": "/begriffe/issb-ifrs-s1-s2/",
+      "hoverDefinition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
+      "shortDefinition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "tcfd",
+        "transition-risk",
+        "physical-climate-risk",
+        "berichtsdaten"
+      ]
+    },
+    "just-transition-mechanism": {
+      "label": "Just Transition Mechanism",
+      "slug": "just-transition-mechanism",
+      "url": "/begriffe/just-transition-mechanism/",
+      "hoverDefinition": "Just Transition verbindet Klimapolitik mit sozialer Abfederung, regionalem Strukturwandel und fairer Transformationsfinanzierung.",
+      "shortDefinition": "Der Just Transition Mechanism unterstützt Regionen und Menschen, die vom Übergang zu einer klimaneutralen Wirtschaft besonders betroffen sind.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Mechanismus für einen gerechten Übergang",
+        "Just Transition"
+      ],
+      "relatedTerms": [
+        "transition-finance",
+        "wirkungsfonds",
+        "wirkungseinkommen"
+      ]
+    },
+    "klimaneutralitaet": {
+      "label": "Klimaneutralität",
+      "slug": "klimaneutralitaet",
+      "url": "/begriffe/klimaneutralitaet/",
+      "hoverDefinition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
+      "shortDefinition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "net-zero",
+        "greenwashing",
+        "climate-neutral-claim",
+        "offsetting-kompensation"
+      ]
+    },
+    "konservative-annahme": {
+      "label": "Konservative Annahme",
+      "slug": "konservative-annahme",
+      "url": "/begriffe/konservative-annahme/",
+      "hoverDefinition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
+      "shortDefinition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "datenluecke",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ]
+    },
+    "lca": {
+      "label": "LCA / Life Cycle Assessment",
+      "slug": "lca",
+      "url": "/begriffe/lca/",
+      "hoverDefinition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
+      "shortDefinition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "iso-14040-14044",
+        "pef-product-environmental-footprint",
+        "epd",
+        "pcf-product-carbon-footprint"
+      ]
+    },
+    "lieferkettendaten": {
+      "label": "Lieferkettendaten",
+      "slug": "lieferkettendaten",
+      "url": "/begriffe/lieferkettendaten/",
+      "hoverDefinition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
+      "shortDefinition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "csddd",
+        "lksg",
+        "eudr",
+        "scope-3",
+        "digitaler-produktpass"
+      ]
+    },
+    "limited-assurance": {
+      "label": "Limited Assurance",
+      "slug": "limited-assurance",
+      "url": "/begriffe/limited-assurance/",
+      "hoverDefinition": "Limited Assurance ist ein begrenztes Prüfungsniveau und sollte nicht wie vollständige Sicherheit gelesen werden.",
+      "shortDefinition": "Limited Assurance ist eine begrenzte prüferische Sicherheit mit geringerem Prüfungsniveau als Reasonable Assurance.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "begrenzte Sicherheit",
+        "begrenzte Prüfungssicherheit"
+      ],
+      "relatedTerms": [
+        "assurance",
+        "reasonable-assurance",
+        "datenqualitaet"
+      ]
+    },
+    "lksg": {
+      "label": "LkSG / Lieferkettensorgfaltspflichtengesetz",
+      "slug": "lksg",
+      "url": "/begriffe/lksg/",
+      "hoverDefinition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
+      "shortDefinition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "csddd",
+        "lieferkettendaten",
+        "un-guiding-principles",
+        "oecd-leitsaetze"
+      ]
+    },
+    "material-footprint": {
+      "label": "Material Footprint",
+      "slug": "material-footprint",
+      "url": "/begriffe/material-footprint/",
+      "hoverDefinition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
+      "shortDefinition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "produktdaten",
+        "rezyklatanteil",
+        "recyclingquote",
+        "lca"
+      ]
+    },
     "mensch-planet-demokratie": {
       "label": "Mensch, Planet und Demokratie",
       "slug": "mensch-planet-demokratie",
@@ -239,6 +1031,22 @@
         "wirkungsbewertung"
       ]
     },
+    "mindestschutz-minimum-safeguards": {
+      "label": "Mindestschutz / Minimum Safeguards",
+      "slug": "mindestschutz-minimum-safeguards",
+      "url": "/begriffe/mindestschutz-minimum-safeguards/",
+      "hoverDefinition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
+      "shortDefinition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "oecd-leitsaetze",
+        "un-guiding-principles",
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy"
+      ]
+    },
     "nace": {
       "label": "NACE",
       "slug": "nace",
@@ -250,7 +1058,9 @@
       "relatedTerms": [
         "eu-taxonomie",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "taxonomy-navigator",
+        "archetyp"
       ]
     },
     "nachhaltigkeit": {
@@ -276,6 +1086,34 @@
         "stranded-assets"
       ]
     },
+    "nachhaltigkeitslabel": {
+      "label": "Nachhaltigkeitslabel",
+      "slug": "nachhaltigkeitslabel",
+      "url": "/begriffe/nachhaltigkeitslabel/",
+      "hoverDefinition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
+      "shortDefinition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-ecolabel",
+        "greenwashing",
+        "produktdaten"
+      ]
+    },
+    "nature-related-risks": {
+      "label": "Nature-related Risks",
+      "slug": "nature-related-risks",
+      "url": "/begriffe/nature-related-risks/",
+      "hoverDefinition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
+      "shortDefinition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "tnfd",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ]
+    },
     "negative-wirkung": {
       "label": "negative Wirkung",
       "slug": "negative-wirkung",
@@ -288,6 +1126,21 @@
         "wirkung",
         "wirkungsrisiko",
         "netto-wirkung"
+      ]
+    },
+    "net-zero": {
+      "label": "Net Zero",
+      "slug": "net-zero",
+      "url": "/begriffe/net-zero/",
+      "hoverDefinition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
+      "shortDefinition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "sbti",
+        "transition-plan",
+        "offsetting-kompensation",
+        "carbon-credits"
       ]
     },
     "netto-wirkung": {
@@ -338,6 +1191,22 @@
         "negative-wirkung"
       ]
     },
+    "nfrd": {
+      "label": "NFRD",
+      "slug": "nfrd",
+      "url": "/begriffe/nfrd/",
+      "hoverDefinition": "NFRD ist der Vorläufer der CSRD und erklärt, warum EU-Nachhaltigkeitsreporting heute stärker standardisiert ist.",
+      "shortDefinition": "Die NFRD war die frühere EU-Richtlinie zur nichtfinanziellen Berichterstattung, die durch die CSRD weiterentwickelt wurde.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Non-Financial Reporting Directive"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten"
+      ]
+    },
     "nichtkompensationsprinzip": {
       "label": "Nichtkompensationsprinzip",
       "slug": "nichtkompensationsprinzip",
@@ -353,6 +1222,128 @@
         "reverse-merit-order",
         "wirkungsgrenze",
         "netto-wirkung"
+      ]
+    },
+    "oecd-leitsaetze": {
+      "label": "OECD-Leitsätze",
+      "slug": "oecd-leitsaetze",
+      "url": "/begriffe/oecd-leitsaetze/",
+      "hoverDefinition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
+      "shortDefinition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "un-guiding-principles",
+        "csddd",
+        "lksg"
+      ]
+    },
+    "oef-organisation-environmental-footprint": {
+      "label": "OEF / Organisation Environmental Footprint",
+      "slug": "oef-organisation-environmental-footprint",
+      "url": "/begriffe/oef-organisation-environmental-footprint/",
+      "hoverDefinition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
+      "shortDefinition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "pef-product-environmental-footprint",
+        "lca",
+        "scorecard",
+        "wirkungsdaten"
+      ]
+    },
+    "offsetting-kompensation": {
+      "label": "Offsetting / Kompensation",
+      "slug": "offsetting-kompensation",
+      "url": "/begriffe/offsetting-kompensation/",
+      "hoverDefinition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
+      "shortDefinition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "carbon-credits",
+        "insetting",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order"
+      ]
+    },
+    "pai": {
+      "label": "PAI / Principal Adverse Impacts",
+      "slug": "pai",
+      "url": "/begriffe/pai/",
+      "hoverDefinition": "PAI machen negative Nachhaltigkeitswirkungen im Finanzmarkt sichtbar, ersetzen aber keine vollständige WÖk-Netto-Wirkungsbewertung.",
+      "shortDefinition": "PAI sind Indikatoren für wesentliche nachteilige Auswirkungen von Investitionsentscheidungen auf Nachhaltigkeitsfaktoren.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Principal Adverse Impact",
+        "nachteilige Nachhaltigkeitsauswirkungen"
+      ],
+      "relatedTerms": [
+        "sfdr",
+        "sustainable-finance",
+        "wirkungsrisiko",
+        "wirkungsdaten"
+      ]
+    },
+    "pcf-product-carbon-footprint": {
+      "label": "PCF / Product Carbon Footprint",
+      "slug": "pcf-product-carbon-footprint",
+      "url": "/begriffe/pcf-product-carbon-footprint/",
+      "hoverDefinition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
+      "shortDefinition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-3",
+        "lca",
+        "produktdaten"
+      ]
+    },
+    "pcr-product-category-rules": {
+      "label": "PCR / Product Category Rules",
+      "slug": "pcr-product-category-rules",
+      "url": "/begriffe/pcr-product-category-rules/",
+      "hoverDefinition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
+      "shortDefinition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "epd",
+        "lca",
+        "produktdaten"
+      ]
+    },
+    "pef-product-environmental-footprint": {
+      "label": "PEF / Product Environmental Footprint",
+      "slug": "pef-product-environmental-footprint",
+      "url": "/begriffe/pef-product-environmental-footprint/",
+      "hoverDefinition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
+      "shortDefinition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "lca",
+        "oef-organisation-environmental-footprint",
+        "epd",
+        "produktdaten"
+      ]
+    },
+    "physical-climate-risk": {
+      "label": "Physical Climate Risk",
+      "slug": "physical-climate-risk",
+      "url": "/begriffe/physical-climate-risk/",
+      "hoverDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
+      "shortDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "tcfd",
+        "transition-risk",
+        "ipcc",
+        "wirkungsrisiko"
       ]
     },
     "positive-netto-wirkung": {
@@ -387,6 +1378,52 @@
         "neutrale-wirkung"
       ]
     },
+    "produktdaten": {
+      "label": "Produktdaten",
+      "slug": "produktdaten",
+      "url": "/begriffe/produktdaten/",
+      "hoverDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
+      "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktwirkung",
+        "pef-product-environmental-footprint",
+        "pcf-product-carbon-footprint"
+      ]
+    },
+    "reasonable-assurance": {
+      "label": "Reasonable Assurance",
+      "slug": "reasonable-assurance",
+      "url": "/begriffe/reasonable-assurance/",
+      "hoverDefinition": "Reasonable Assurance schafft höhere, aber keine absolute Sicherheit über Berichtsinformationen.",
+      "shortDefinition": "Reasonable Assurance ist ein höheres Prüfungsniveau als Limited Assurance.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "hinreichende Sicherheit",
+        "angemessene Sicherheit"
+      ],
+      "relatedTerms": [
+        "assurance",
+        "limited-assurance",
+        "datenqualitaet"
+      ]
+    },
+    "recyclingquote": {
+      "label": "Recyclingquote",
+      "slug": "recyclingquote",
+      "url": "/begriffe/recyclingquote/",
+      "hoverDefinition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
+      "shortDefinition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "rezyklatanteil",
+        "material-footprint",
+        "espr"
+      ]
+    },
     "resonanzraum": {
       "label": "Resonanzraum",
       "slug": "resonanzraum",
@@ -419,6 +1456,79 @@
         "wirkungsgrenze"
       ]
     },
+    "rezyklatanteil": {
+      "label": "Rezyklatanteil",
+      "slug": "rezyklatanteil",
+      "url": "/begriffe/rezyklatanteil/",
+      "hoverDefinition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
+      "shortDefinition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "recyclingquote",
+        "material-footprint",
+        "espr",
+        "digitaler-produktpass"
+      ]
+    },
+    "sbti": {
+      "label": "SBTi",
+      "slug": "sbti",
+      "url": "/begriffe/sbti/",
+      "hoverDefinition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
+      "shortDefinition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ]
+    },
+    "scope-1": {
+      "label": "Scope 1",
+      "slug": "scope-1",
+      "url": "/begriffe/scope-1/",
+      "hoverDefinition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
+      "shortDefinition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-2",
+        "scope-3"
+      ]
+    },
+    "scope-2": {
+      "label": "Scope 2",
+      "slug": "scope-2",
+      "url": "/begriffe/scope-2/",
+      "hoverDefinition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
+      "shortDefinition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ]
+    },
+    "scope-3": {
+      "label": "Scope 3",
+      "slug": "scope-3",
+      "url": "/begriffe/scope-3/",
+      "hoverDefinition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
+      "shortDefinition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "lieferkettendaten",
+        "pcf-product-carbon-footprint",
+        "cbam"
+      ]
+    },
     "scorecard": {
       "label": "Scorecard",
       "slug": "scorecard",
@@ -430,7 +1540,9 @@
       "relatedTerms": [
         "woek-id",
         "benchmark",
-        "finalscore"
+        "finalscore",
+        "wirkungsindikator",
+        "reverse-merit-order"
       ]
     },
     "sdg-plus": {
@@ -471,6 +1583,21 @@
         "positive-netto-wirkung"
       ]
     },
+    "sdg-washing": {
+      "label": "SDG-Washing",
+      "slug": "sdg-washing",
+      "url": "/begriffe/sdg-washing/",
+      "hoverDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
+      "shortDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "greenwashing",
+        "impact-washing"
+      ]
+    },
     "sdgs": {
       "label": "SDGs",
       "slug": "sdgs",
@@ -487,6 +1614,25 @@
         "agenda-2030",
         "sdg-plus",
         "positive-netto-wirkung"
+      ]
+    },
+    "sfdr": {
+      "label": "SFDR",
+      "slug": "sfdr",
+      "url": "/begriffe/sfdr/",
+      "hoverDefinition": "SFDR strukturiert Nachhaltigkeitsinformationen im Finanzmarkt; WÖk übersetzt solche Berichtsdaten erst in Kapitalwirkung und Rückkopplung.",
+      "shortDefinition": "Die SFDR ist die EU-Offenlegungsverordnung für Finanzmarktteilnehmer zu Nachhaltigkeitsinformationen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Sustainable Finance Disclosure Regulation",
+        "Offenlegungsverordnung"
+      ],
+      "relatedTerms": [
+        "sustainable-finance",
+        "pai",
+        "eu-taxonomie",
+        "esg",
+        "kapitalwirkung"
       ]
     },
     "social-credit": {
@@ -507,7 +1653,7 @@
       ]
     },
     "social-taxonomy": {
-      "label": "Social Taxonomy",
+      "label": "Social Taxonomy / Sozialtaxonomie",
       "slug": "social-taxonomy",
       "url": "/begriffe/social-taxonomy/",
       "hoverDefinition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen.",
@@ -530,7 +1676,12 @@
         "reverse-merit-order",
         "t-sroi",
         "woek-id",
-        "social-credit"
+        "social-credit",
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "ilo-kernarbeitsnormen",
+        "un-guiding-principles",
+        "sdg-plus"
       ]
     },
     "spekulationslogik": {
@@ -549,6 +1700,21 @@
         "wirkungspflicht-eigentum"
       ]
     },
+    "steuerungsdaten": {
+      "label": "Steuerungsdaten",
+      "slug": "steuerungsdaten",
+      "url": "/begriffe/steuerungsdaten/",
+      "hoverDefinition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
+      "shortDefinition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "scorecard"
+      ]
+    },
     "stranded-assets": {
       "label": "Stranded Assets",
       "slug": "stranded-assets",
@@ -563,9 +1729,31 @@
       "relatedTerms": [
         "wirkungsrisiko",
         "nachhaltigkeit",
-        "transitionsrisiko",
+        "transition-risk",
         "versicherbarkeit",
-        "kapitalzugang"
+        "kapitalzugang",
+        "transition-plan",
+        "kapitalwirkung"
+      ]
+    },
+    "sustainable-finance": {
+      "label": "Sustainable Finance",
+      "slug": "sustainable-finance",
+      "url": "/begriffe/sustainable-finance/",
+      "hoverDefinition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung.",
+      "shortDefinition": "Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "nachhaltige Finanzierung",
+        "Sustainable-Finance-Architektur"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "sfdr",
+        "pai",
+        "esap",
+        "csrd",
+        "transition-finance"
       ]
     },
     "t-sroi": {
@@ -585,6 +1773,113 @@
         "wirkungscontrolling"
       ]
     },
+    "taxonomy-kpis": {
+      "label": "Taxonomie-KPIs",
+      "slug": "taxonomy-kpis",
+      "url": "/begriffe/taxonomy-kpis/",
+      "hoverDefinition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
+      "shortDefinition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "berichtsdaten"
+      ]
+    },
+    "taxonomiefaehigkeit": {
+      "label": "Taxonomiefähigkeit",
+      "slug": "taxonomiefaehigkeit",
+      "url": "/begriffe/taxonomiefaehigkeit/",
+      "hoverDefinition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
+      "shortDefinition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "nace"
+      ]
+    },
+    "taxonomiekonformitaet": {
+      "label": "Taxonomiekonformität",
+      "slug": "taxonomiekonformitaet",
+      "url": "/begriffe/taxonomiekonformitaet/",
+      "hoverDefinition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
+      "shortDefinition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "dnsh",
+        "mindestschutz-minimum-safeguards",
+        "technische-bewertungskriterien",
+        "taxonomy-kpis"
+      ]
+    },
+    "taxonomy-navigator": {
+      "label": "Taxonomy Navigator / Taxonomy Compass",
+      "slug": "taxonomy-navigator",
+      "url": "/begriffe/taxonomy-navigator/",
+      "hoverDefinition": "Der Taxonomy Navigator hilft, EU-Taxonomie-Tätigkeiten, Umweltziele und technische Bewertungskriterien zu finden.",
+      "shortDefinition": "Taxonomy Navigator und Taxonomy Compass sind EU-Hilfen zur Recherche von Taxonomie-Kriterien und Tätigkeiten.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "EU Taxonomy Navigator",
+        "EU Taxonomy Compass",
+        "Taxonomie-Kompass"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien",
+        "nace"
+      ]
+    },
+    "tcfd": {
+      "label": "TCFD",
+      "slug": "tcfd",
+      "url": "/begriffe/tcfd/",
+      "hoverDefinition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
+      "shortDefinition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "issb-ifrs-s1-s2",
+        "tnfd"
+      ]
+    },
+    "technische-bewertungskriterien": {
+      "label": "Technische Bewertungskriterien",
+      "slug": "technische-bewertungskriterien",
+      "url": "/begriffe/technische-bewertungskriterien/",
+      "hoverDefinition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
+      "shortDefinition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomy-navigator",
+        "taxonomiekonformitaet"
+      ]
+    },
+    "tnfd": {
+      "label": "TNFD",
+      "slug": "tnfd",
+      "url": "/begriffe/tnfd/",
+      "hoverDefinition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
+      "shortDefinition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "physical-climate-risk",
+        "issb-ifrs-s1-s2"
+      ]
+    },
     "transformationswirkung": {
       "label": "Transformationswirkung",
       "slug": "transformationswirkung",
@@ -597,6 +1892,101 @@
         "t-sroi",
         "wirkungsarchitektur",
         "wirkungslenkung"
+      ]
+    },
+    "transition-finance": {
+      "label": "Transition Finance",
+      "slug": "transition-finance",
+      "url": "/begriffe/transition-finance/",
+      "hoverDefinition": "Transition Finance finanziert den Übergang, wenn Ziele, Pfade, Daten, Zeitplan und Governance nachvollziehbar sind.",
+      "shortDefinition": "Transition Finance bezeichnet Finanzierung, die Unternehmen oder Aktivitäten auf glaubwürdige Transformationspfade bringt.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Transformationsfinanzierung"
+      ],
+      "relatedTerms": [
+        "transition-plan",
+        "sustainable-finance",
+        "clean-industrial-deal",
+        "transition-risk"
+      ]
+    },
+    "transition-plan": {
+      "label": "Transition Plan",
+      "slug": "transition-plan",
+      "url": "/begriffe/transition-plan/",
+      "hoverDefinition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
+      "shortDefinition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "transition-finance",
+        "sbti",
+        "transition-risk",
+        "net-zero"
+      ]
+    },
+    "transition-risk": {
+      "label": "Transition Risk",
+      "slug": "transition-risk",
+      "url": "/begriffe/transition-risk/",
+      "hoverDefinition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
+      "shortDefinition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "tcfd",
+        "transition-plan",
+        "stranded-assets",
+        "clean-industrial-deal"
+      ]
+    },
+    "uebergangstaetigkeit": {
+      "label": "Übergangstätigkeit",
+      "slug": "uebergangstaetigkeit",
+      "url": "/begriffe/uebergangstaetigkeit/",
+      "hoverDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "shortDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "transition-finance",
+        "transition-plan",
+        "stranded-assets"
+      ]
+    },
+    "un-guiding-principles": {
+      "label": "UN Guiding Principles on Business and Human Rights",
+      "slug": "un-guiding-principles",
+      "url": "/begriffe/un-guiding-principles/",
+      "hoverDefinition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
+      "shortDefinition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "lksg",
+        "social-taxonomy"
+      ]
+    },
+    "vsme": {
+      "label": "VSME",
+      "slug": "vsme",
+      "url": "/begriffe/vsme/",
+      "hoverDefinition": "VSME unterstützt KMU bei einfachen, freiwilligen Nachhaltigkeitsinformationen für Banken, Lieferketten und Geschäftspartner.",
+      "shortDefinition": "VSME ist der freiwillige Nachhaltigkeitsberichtsstandard für nicht börsennotierte kleine und mittlere Unternehmen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Voluntary Sustainability Reporting Standard for SMEs",
+        "Voluntary Standard for SMEs"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten",
+        "datenqualitaet"
       ]
     },
     "warmmietenneutralitaet": {
@@ -613,6 +2003,47 @@
         "wohnwirkung",
         "wirkungsvermietung",
         "wix-vi"
+      ]
+    },
+    "wasserstress": {
+      "label": "Wasserstress",
+      "slug": "wasserstress",
+      "url": "/begriffe/wasserstress/",
+      "hoverDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
+      "shortDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "nature-related-risks",
+        "tnfd",
+        "produktdaten"
+      ]
+    },
+    "wesentlicher-beitrag": {
+      "label": "Wesentlicher Beitrag",
+      "slug": "wesentlicher-beitrag",
+      "url": "/begriffe/wesentlicher-beitrag/",
+      "hoverDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
+      "shortDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "dnsh",
+        "technische-bewertungskriterien"
+      ]
+    },
+    "who": {
+      "label": "WHO",
+      "slug": "who",
+      "url": "/begriffe/who/",
+      "hoverDefinition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
+      "shortDefinition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "gesundheit",
+        "wirkungsdaten"
       ]
     },
     "wirkmechanismus": {
@@ -727,7 +2158,11 @@
         "wirkungsdatenraum",
         "woek-id",
         "scorecard",
-        "nwi"
+        "nwi",
+        "wirkung",
+        "wirkungspotenzial",
+        "datenqualitaet",
+        "wirkungsindikator"
       ]
     },
     "wirkungsdatenraum": {
@@ -744,7 +2179,9 @@
         "csrd",
         "esrs",
         "digitaler-produktpass",
-        "woek-id"
+        "woek-id",
+        "wirkungsregister",
+        "wirkungsdaten"
       ]
     },
     "wirkungseinkommen": {
@@ -825,6 +2262,21 @@
         "wirkungslenkung",
         "wirkungsrückkopplung",
         "positive-netto-wirkung"
+      ]
+    },
+    "wirkungsindikator": {
+      "label": "Wirkungsindikator",
+      "slug": "wirkungsindikator",
+      "url": "/begriffe/wirkungsindikator/",
+      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
+      "shortDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsdaten",
+        "wirkungspfad",
+        "datenqualitaet",
+        "scorecard"
       ]
     },
     "wirkungskompetenz": {
@@ -995,6 +2447,21 @@
         "wirkungsempfaenger",
         "wirkungspfad",
         "wirkungsarchitektur"
+      ]
+    },
+    "wirkungsregister": {
+      "label": "Wirkungsregister",
+      "slug": "wirkungsregister",
+      "url": "/begriffe/wirkungsregister/",
+      "hoverDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
+      "shortDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
+      "category": "Datenbegriff",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "scorecard"
       ]
     },
     "wirkungsrente": {
@@ -1223,7 +2690,9 @@
       "relatedTerms": [
         "scorecard",
         "benchmark",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "digitaler-produktpass",
+        "datenqualitaet"
       ]
     },
     "wstg": {
@@ -1257,6 +2726,23 @@
         "wirkungssteuer",
         "scorecard",
         "woek-id"
+      ]
+    },
+    "xbrl": {
+      "label": "XBRL",
+      "slug": "xbrl",
+      "url": "/begriffe/xbrl/",
+      "hoverDefinition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
+      "shortDefinition": "XBRL ist ein maschinenlesbares Format für strukturierte Unternehmens- und Berichtsdaten.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "eXtensible Business Reporting Language"
+      ],
+      "relatedTerms": [
+        "esap",
+        "esef",
+        "csrd",
+        "berichtsdaten"
       ]
     }
   }
