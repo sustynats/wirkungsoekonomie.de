@@ -7,6 +7,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Instrumente und Register"
+    dataStandardsGroup: "WÖk-Übersetzung"
     shortDefinition: "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht."
     hoverDefinition: "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten."
     longDefinition: "In der Wirkungsökonomie ordnen Archetypen wiederkehrende Muster von Wirkung, Risiko, Datenlage und Steuerungsbedarf."
@@ -30,6 +31,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Instrumente und Register"
+    dataStandardsGroup: "WÖk-Übersetzung"
     shortDefinition: "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden."
     hoverDefinition: "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität."
     longDefinition: "Benchmarks übersetzen abstrakte Wirkungsziele in prüfbare Vergleichswerte, ohne selbst die Gesamtbewertung zu ersetzen."
@@ -53,6 +55,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Anschlussräume"
+    dataStandardsGroup: "Reporting und Prüfung"
     shortDefinition: "CSRD ist die europäische Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen."
     hoverDefinition: "CSRD schafft Berichtsdaten; in der WÖk werden daraus erst durch Rückkopplung Steuerungsdaten."
     longDefinition: "Die Corporate Sustainability Reporting Directive erweitert und standardisiert Nachhaltigkeitsberichte. Für die WÖk ist sie Anschlussraum und Datenquelle, nicht die Kernlogik."
@@ -60,6 +63,9 @@ terms:
     doNotConfuseWith: ["ESG", "Wirkungsrückkopplung"]
     synonyms: ["Corporate Sustainability Reporting Directive"]
     relatedTerms: ["esrs", "esg", "wirkungsdatenraum", "reporting"]
+    officialSources:
+      - "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+      - "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
     relatedDocuments: []
     examples: []
     preferredUsage: "CSRD als Berichtsdatenrahmen beschreiben."
@@ -76,6 +82,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Daten und Standards"
+    dataStandardsGroup: "Produkt- und Lebenszyklusdaten"
     shortDefinition: "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar."
     hoverDefinition: "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus."
     longDefinition: "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung."
@@ -83,6 +90,8 @@ terms:
     doNotConfuseWith: ["WÖk-ID", "Scorecard"]
     synonyms: ["DPP", "Digital Product Passport"]
     relatedTerms: ["wirkungsdatenraum", "woek-id", "scorecard"]
+    officialSources:
+      - "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
     relatedDocuments: []
     examples: []
     preferredUsage: "DPP als Datenanschluss verwenden."
@@ -99,6 +108,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Anschlussräume"
+    dataStandardsGroup: "Sustainable Finance"
     shortDefinition: "ESG steht für Umwelt-, Sozial- und Governance-Faktoren in Unternehmen, Finanzierung und Reporting."
     hoverDefinition: "ESG ist ein Anschlussraum der WÖk, aber nicht ihre Kernlogik."
     longDefinition: "ESG hilft, Risiken und Nachhaltigkeitsaspekte zu strukturieren. Die Wirkungsökonomie nutzt ESG als Daten- und Anschlussraum, bewertet aber Wirkung als Zustandsveränderung und koppelt sie zurück."
@@ -106,6 +116,8 @@ terms:
     doNotConfuseWith: ["Wirkung", "positive Netto-Wirkung", "Reporting"]
     synonyms: ["Environmental Social Governance"]
     relatedTerms: ["csrd", "esrs", "nachhaltigkeit", "wirkungsrisiko"]
+    officialSources:
+      - "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
     relatedDocuments: []
     examples: []
     preferredUsage: "ESG als Anschlussraum und Datenquelle."
@@ -122,6 +134,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Anschlussräume"
+    dataStandardsGroup: "Reporting und Prüfung"
     shortDefinition: "ESRS sind europäische Standards für Nachhaltigkeitsberichterstattung."
     hoverDefinition: "ESRS strukturieren Berichtsdaten, die in der WÖk zu Wirkungs- und Steuerungsdaten weiterentwickelt werden können."
     longDefinition: "European Sustainability Reporting Standards legen fest, welche Nachhaltigkeitsinformationen Unternehmen nach CSRD berichten."
@@ -129,6 +142,8 @@ terms:
     doNotConfuseWith: ["Wirkungsbewertung", "Wirkungsrückkopplung"]
     synonyms: ["European Sustainability Reporting Standards"]
     relatedTerms: ["csrd", "esg", "wirkungsdatenraum"]
+    officialSources:
+      - "EFRAG Sustainability Reporting|https://www.efrag.org/en/sustainability-reporting"
     relatedDocuments: []
     examples: []
     preferredUsage: "ESRS als Daten- und Reportingstandard einordnen."
@@ -145,13 +160,17 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social Taxonomy Journalbeitrag v1.0"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
     sourceSection: "Anschlussräume; Sustainable Finance & Social Taxonomy"
+    dataStandardsGroup: "Sustainable Finance"
     shortDefinition: "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien."
     hoverDefinition: "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung."
     longDefinition: "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. In der Wirkungsökonomie ist sie ein wichtiger Anschlussstandard für Sustainable Finance, aber keine vollständige Bewertung sozialer Wirkung oder positiver Netto-Wirkung."
     usageNote: "Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen und klar von einer Social Taxonomy unterscheiden."
     doNotConfuseWith: ["Social Taxonomy", "Taxonomiefähigkeit", "Wirkungsbewertung"]
     synonyms: ["EU Taxonomy"]
-    relatedTerms: ["social-taxonomy", "csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit"]
+    relatedTerms: ["social-taxonomy", "csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit", "taxonomiefaehigkeit", "taxonomiekonformitaet", "dnsh", "mindestschutz", "technische-bewertungskriterien", "nace"]
+    officialSources:
+      - "EU-Kommission EU-Taxonomie|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      - "EUR-Lex Taxonomy Regulation|https://eur-lex.europa.eu/eli/reg/2020/852/oj/eng"
     relatedDocuments: []
     examples: []
     preferredUsage: "EU-Taxonomie als Anschlussstandard für Sustainable Finance."
@@ -237,6 +256,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Anschlussräume"
+    dataStandardsGroup: "Reporting und Prüfung"
     shortDefinition: "GRI ist ein international verbreiteter Rahmen für Nachhaltigkeitsberichterstattung."
     hoverDefinition: "GRI strukturiert Reporting; WÖk fragt zusätzlich nach bewerteter Wirkung und Rückkopplung."
     longDefinition: "Die Global Reporting Initiative stellt Standards zur Offenlegung von Nachhaltigkeitsthemen bereit."
@@ -244,6 +264,8 @@ terms:
     doNotConfuseWith: ["CSRD", "ESRS", "Wirkungsbewertung"]
     synonyms: ["Global Reporting Initiative"]
     relatedTerms: ["reporting", "csrd", "esrs"]
+    officialSources:
+      - "GRI Standards|https://www.globalreporting.org/standards/"
     relatedDocuments: []
     examples: []
     preferredUsage: "GRI als Reportingstandard einordnen."
@@ -306,6 +328,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Anschlussräume"
+    dataStandardsGroup: "Sustainable Finance"
     shortDefinition: "NACE ist die europäische Klassifikation wirtschaftlicher Tätigkeiten."
     hoverDefinition: "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung."
     longDefinition: "NACE-Codes helfen, Unternehmen und Tätigkeiten statistisch und regulatorisch zu klassifizieren."
@@ -313,6 +336,8 @@ terms:
     doNotConfuseWith: ["WÖk-ID", "EU-Taxonomie"]
     synonyms: []
     relatedTerms: ["eu-taxonomie", "woek-id", "scorecard"]
+    officialSources:
+      - "Eurostat NACE|https://ec.europa.eu/eurostat/web/nace"
     relatedDocuments: []
     examples: []
     preferredUsage: "NACE als Aktivitätsklassifikation verwenden."
@@ -582,13 +607,14 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Finanzmarkt und Risiko"
+    dataStandardsGroup: "Klima, Natur und Risiken"
     shortDefinition: "Stranded Assets sind Vermögenswerte, die durch veränderte Risiken, Regeln, Märkte, Technologien oder ökologische Bedingungen an Wert verlieren."
     hoverDefinition: "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt."
     longDefinition: "In der WÖk zeigen Stranded Assets, dass negative oder verdrängte Wirkungen irgendwann in Kapitalwert, Versicherbarkeit, Finanzierung, Betriebskosten oder Nutzbarkeit zurückkehren können."
     usageNote: "Nicht als automatischer Wertverlust ab einem Stichtag darstellen."
     doNotConfuseWith: ["Wertkorrektur", "Abschreibung", "gesetzlicher Stichtag"]
     synonyms: ["Stranded Asset", "gestrandete Vermögenswerte"]
-    relatedTerms: ["wirkungsrisiko", "nachhaltigkeit", "transitionsrisiko", "versicherbarkeit", "kapitalzugang"]
+    relatedTerms: ["wirkungsrisiko", "nachhaltigkeit", "transition-risk", "versicherbarkeit", "kapitalzugang"]
     relatedDocuments: ["wp-wohnungsmarkt", "stranded-assets-gebaeudebestand"]
     examples: ["fossile Infrastruktur", "unsanierte Gebäude", "nicht versicherbare Standorte"]
     preferredUsage: "Als finanzielle Rückkehr verdrängter Wirkung verwenden."
@@ -828,7 +854,7 @@ terms:
     firstApprovedIn: "2026.2"
     lastUpdated: "2026-05-24"
   - termId: social-taxonomy
-    canonicalLabel: "Social Taxonomy"
+    canonicalLabel: "Social Taxonomy / Sozialtaxonomie"
     slug: "social-taxonomy"
     status: "anschlussbegriff"
     category: "Datenbegriff"
@@ -836,19 +862,505 @@ terms:
     source: "Social Taxonomy Ausarbeitung v1.0"
     sourceDocument: "Social Taxonomy Ausarbeitung v1.0"
     sourceSection: "Sustainable Finance und soziale Wirkung"
+    dataStandardsGroup: "Sustainable Finance"
     shortDefinition: "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten."
     hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen."
-    longDefinition: "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann."
-    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Den Begriff daher als Vorschlags- und Weiterentwicklungsraum klar von der geltenden EU-Umwelt-Taxonomie unterscheiden."
+    longDefinition: "Die Social Taxonomy ist ein vorgeschlagener Klassifikationsrahmen für sozial nachhaltige wirtschaftliche Aktivitäten. Anders als die bestehende EU-Umwelttaxonomie ist sie derzeit nicht als gleichwertiges geltendes EU-Klassifikationssystem umgesetzt. Relevant ist vor allem der Bericht der Platform on Sustainable Finance von 2022. In der Wirkungsökonomie ist sie anschlussfähig, weil sie soziale Wirkung, menschenwürdige Arbeit, Verbraucher:innen, Gemeinschaften und menschenrechtliche Mindestbedingungen stärker systematisiert."
+    usageNote: "Social Taxonomy als vorgeschlagenen Rahmen und Bericht der Platform on Sustainable Finance einordnen, nicht als verbindliche geltende EU-Taxonomie."
     doNotConfuseWith: ["EU-Taxonomie", "ESG-Siegel", "Social Credit", "Corporate Volunteering"]
     synonyms: ["Sozialtaxonomie", "EU-Sozialtaxonomie", "soziale Taxonomie", "Social Taxonomy 2.0"]
     relatedTerms: ["eu-taxonomie", "esg", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "woek-id", "social-credit"]
+    officialSources:
+      - "Platform on Sustainable Finance final report 2022|https://finance.ec.europa.eu/publications/social-taxonomy-report-platform-sustainable-finance_en"
     relatedDocuments: ["social-taxonomy-wirkungsoekonomie"]
     examples: ["Ein Wohnprojekt wird nach Energie, Bezahlbarkeit, Verdrängungsrisiko, Gesundheit, Beteiligung und lokaler Wirkung betrachtet."]
     preferredUsage: "Social Taxonomy als soziale Klassifikations- und Wirkungsarchitektur für Sustainable Finance verwenden."
     deprecatedUsage: ["Social Taxonomy als geltendes EU-Recht darstellen", "Social Taxonomy als Personenbewertung verwenden"]
     reviewStatus: "approved"
     glossaryOrderKey: "social taxonomy"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: european-green-deal
+    canonicalLabel: "European Green Deal / Europäischer Green Deal"
+    slug: "european-green-deal"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "EU-Politikrahmen"
+    sourceDocument: "EU-Kommission European Green Deal"
+    sourceSection: "Daten, Standards und Regularien · EU-Politikrahmen"
+    dataStandardsGroup: "EU-Politikrahmen"
+    shortDefinition: "Der European Green Deal ist der politische Transformationsrahmen der EU für eine moderne, ressourceneffiziente, wettbewerbsfähige und klimaneutrale Wirtschaft."
+    hoverDefinition: "Der European Green Deal ist der EU-Politikrahmen für Klimaneutralität, Ressourceneffizienz, Industriepolitik, Sustainable Finance und Berichtspflichten."
+    longDefinition: "Der European Green Deal bündelt die politische Transformationsagenda der EU. Für die Wirkungsökonomie ist er ein wichtiger Anschlussrahmen, weil er EU-Taxonomie, Sustainable Finance, CSRD, Industrie-, Klima-, Produkt- und Lieferkettenregeln prägt. Er liefert aber keine vollständige WÖk-Logik und ersetzt keine Wirkungsbewertung."
+    usageNote: "Als politischen EU-Anschlussrahmen verwenden, nicht als fertige WÖk-Architektur."
+    doNotConfuseWith: ["Wirkungsökonomie", "EU-Taxonomie"]
+    synonyms: ["Europäischer Green Deal", "EU Green Deal", "Green Deal"]
+    relatedTerms: ["clean-industrial-deal", "fit-for-55", "eu-climate-law", "sustainable-finance", "eu-taxonomie", "csrd", "esrs", "cbam"]
+    officialSources:
+      - "EU-Kommission European Green Deal|https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en"
+    preferredUsage: "Green Deal als politischen Rahmen nennen und konkrete Datenquellen separat ausweisen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "european green deal"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: clean-industrial-deal
+    canonicalLabel: "Clean Industrial Deal"
+    slug: "clean-industrial-deal"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "EU-Politikrahmen"
+    sourceDocument: "EU-Kommission Clean Industrial Deal"
+    sourceSection: "Daten, Standards und Regularien · EU-Politikrahmen"
+    dataStandardsGroup: "EU-Politikrahmen"
+    shortDefinition: "Der Clean Industrial Deal ist ein EU-Plan für industrielle Wettbewerbsfähigkeit und Dekarbonisierung."
+    hoverDefinition: "Der Clean Industrial Deal verbindet Dekarbonisierung, Industriepolitik, bezahlbare Energie, Clean Tech, Kreislaufwirtschaft und Wettbewerbsfähigkeit."
+    longDefinition: "Der Clean Industrial Deal wurde am 26. Februar 2025 vorgestellt und soll Dekarbonisierung zu einem Wachstumstreiber für europäische Industrie machen. Für die WÖk ist er anschlussfähig, weil er zeigt, wie Klimaziele, Industriepolitik, Energiepreise, Beschaffung und Kapitalflüsse zusammenwirken."
+    usageNote: "Als aktuellen EU-Industrie- und Dekarbonisierungsrahmen einordnen."
+    doNotConfuseWith: ["European Green Deal", "EU-Taxonomie"]
+    synonyms: ["Deal für eine saubere Industrie"]
+    relatedTerms: ["european-green-deal", "sustainable-finance", "transition-finance", "cbam", "espr"]
+    officialSources:
+      - "EU-Kommission Clean Industrial Deal|https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_en"
+    preferredUsage: "Clean Industrial Deal als Industriepolitik-Anschluss der WÖk verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "clean industrial deal"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: fit-for-55
+    canonicalLabel: "Fit for 55"
+    slug: "fit-for-55"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "EU-Politikrahmen"
+    sourceDocument: "Rat der EU Fit for 55"
+    sourceSection: "Daten, Standards und Regularien · EU-Politikrahmen"
+    dataStandardsGroup: "EU-Politikrahmen"
+    shortDefinition: "Fit for 55 ist das EU-Gesetzgebungspaket zur Senkung der Netto-Treibhausgasemissionen um mindestens 55 Prozent bis 2030."
+    hoverDefinition: "Fit for 55 bündelt EU-Klima-, Energie-, Verkehrs- und Industrieinstrumente zur Umsetzung des 2030-Klimaziels."
+    longDefinition: "Fit for 55 ist für die WÖk ein politischer Anschlussrahmen für Emissionsdaten, CBAM, Energiepreise, Industriepfade und Transformationsrisiken. Es ersetzt keine WÖk-Bewertung, liefert aber wichtige regulatorische Signale."
+    usageNote: "Als EU-Klimapaket, nicht als einzelnes Gesetz darstellen."
+    doNotConfuseWith: ["EU Climate Law", "European Green Deal"]
+    synonyms: ["Fit-for-55-Paket"]
+    relatedTerms: ["eu-climate-law", "cbam", "ghg-protocol", "transition-risk"]
+    officialSources:
+      - "Rat der EU Fit for 55|https://www.consilium.europa.eu/en/policies/fit-for-55/"
+    preferredUsage: "Fit for 55 als Klimapolitikpaket mit Daten- und Anreizwirkung nennen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "fit for 55"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: eu-climate-law
+    canonicalLabel: "EU Climate Law"
+    slug: "eu-climate-law"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "EU-Politikrahmen"
+    sourceDocument: "EUR-Lex Regulation 2021/1119"
+    sourceSection: "Daten, Standards und Regularien · EU-Politikrahmen"
+    dataStandardsGroup: "EU-Politikrahmen"
+    shortDefinition: "Das Europäische Klimagesetz verankert Klimaneutralität der EU bis 2050 und das 2030-Ziel rechtlich."
+    hoverDefinition: "Das EU Climate Law macht Klimaziele zum rechtlichen Rahmen für Politik, Regulierung, Finanzierung und Risikobewertung."
+    longDefinition: "Für die WÖk ist das EU Climate Law ein verbindlicher politischer Rahmen, an den Klimaindikatoren, Transitionspfade, Kapitalrisiken und öffentliche Steuerung anschließen können."
+    usageNote: "Als Rechtsrahmen benennen; operative Wirkung entsteht erst durch konkrete Instrumente."
+    doNotConfuseWith: ["Fit for 55", "Net Zero Claim"]
+    synonyms: ["Europäisches Klimagesetz", "European Climate Law"]
+    relatedTerms: ["fit-for-55", "net-zero", "transition-plan", "transition-risk"]
+    officialSources:
+      - "EUR-Lex EU Climate Law|https://eur-lex.europa.eu/eli/reg/2021/1119/oj/eng"
+    preferredUsage: "Klimagesetz als Ziel- und Rechtsrahmen verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "eu climate law"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: just-transition-mechanism
+    canonicalLabel: "Just Transition Mechanism"
+    slug: "just-transition-mechanism"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "EU-Politikrahmen"
+    sourceDocument: "EU-Kommission Just Transition Mechanism"
+    sourceSection: "Daten, Standards und Regularien · EU-Politikrahmen"
+    dataStandardsGroup: "EU-Politikrahmen"
+    shortDefinition: "Der Just Transition Mechanism unterstützt Regionen und Menschen, die vom Übergang zu einer klimaneutralen Wirtschaft besonders betroffen sind."
+    hoverDefinition: "Just Transition verbindet Klimapolitik mit sozialer Abfederung, regionalem Strukturwandel und fairer Transformationsfinanzierung."
+    longDefinition: "Für die WÖk ist der Mechanismus relevant, weil er zeigt, dass Transformation nicht nur Emissionssenkung, sondern auch Arbeit, Regionen, Qualifikation, Teilhabe und demokratische Akzeptanz betrifft."
+    usageNote: "Als sozialen Übergangsrahmen, nicht als Ersatz für Wirkungseinkommen verstehen."
+    doNotConfuseWith: ["Wirkungseinkommen", "Wirkungsfonds"]
+    synonyms: ["Mechanismus für einen gerechten Übergang", "Just Transition"]
+    relatedTerms: ["transition-finance", "wirkungsfonds", "wirkungseinkommen"]
+    officialSources:
+      - "EU-Kommission Just Transition Mechanism|https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/finance-and-green-deal/just-transition-mechanism_en"
+    preferredUsage: "Just Transition als sozialen Transformationsanschluss nutzen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "just transition mechanism"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: sustainable-finance
+    canonicalLabel: "Sustainable Finance"
+    slug: "sustainable-finance"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Sustainable Finance"
+    sourceDocument: "EU-Kommission Sustainable Finance"
+    sourceSection: "Daten, Standards und Regularien · Sustainable Finance"
+    dataStandardsGroup: "Sustainable Finance"
+    shortDefinition: "Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen."
+    hoverDefinition: "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung."
+    longDefinition: "Für die WÖk ist Sustainable Finance ein zentraler Anschlussraum. Die WÖk ersetzt diese Architektur nicht, sondern nutzt Berichtsdaten, Taxonomieinformationen und Risikodaten als Grundlage für Kapitalwirkung und Wirkungsrückkopplung."
+    usageNote: "Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss."
+    doNotConfuseWith: ["Wirkungsökonomie", "Impact Investing"]
+    synonyms: ["nachhaltige Finanzierung", "Sustainable-Finance-Architektur"]
+    relatedTerms: ["eu-taxonomie", "sfdr", "pai", "esap", "csrd", "transition-finance"]
+    officialSources:
+      - "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
+    preferredUsage: "Als Dachbegriff für Finanzmarktanschluss verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "sustainable finance"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: sfdr
+    canonicalLabel: "SFDR"
+    slug: "sfdr"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Sustainable Finance"
+    sourceDocument: "EUR-Lex Regulation 2019/2088"
+    sourceSection: "Daten, Standards und Regularien · Sustainable Finance"
+    dataStandardsGroup: "Sustainable Finance"
+    shortDefinition: "Die SFDR ist die EU-Offenlegungsverordnung für Finanzmarktteilnehmer zu Nachhaltigkeitsinformationen."
+    hoverDefinition: "SFDR strukturiert Nachhaltigkeitsinformationen im Finanzmarkt; WÖk übersetzt solche Berichtsdaten erst in Kapitalwirkung und Rückkopplung."
+    longDefinition: "SFDR-Daten können Hinweise auf nachhaltigkeitsbezogene Risiken, Produkteigenschaften und nachteilige Auswirkungen geben. Für die WÖk bleiben sie Berichtsdaten, solange sie nicht in Kapitalwirkung, Wirkungseinschätzung und Rückkopplung übersetzt werden."
+    usageNote: "SFDR nicht als Wirkungsnachweis oder Gütesiegel darstellen."
+    doNotConfuseWith: ["EU-Taxonomie", "Wirkungsbewertung"]
+    synonyms: ["Sustainable Finance Disclosure Regulation", "Offenlegungsverordnung"]
+    relatedTerms: ["sustainable-finance", "pai", "eu-taxonomie", "esg", "kapitalwirkung"]
+    officialSources:
+      - "EUR-Lex SFDR|https://eur-lex.europa.eu/eli/reg/2019/2088/oj/eng"
+    preferredUsage: "SFDR als Finanzmarkt-Offenlegungsrahmen verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "sfdr"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: pai
+    canonicalLabel: "PAI / Principal Adverse Impacts"
+    slug: "pai"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Sustainable Finance"
+    sourceDocument: "SFDR Delegated Regulation 2022/1288"
+    sourceSection: "Daten, Standards und Regularien · Sustainable Finance"
+    dataStandardsGroup: "Sustainable Finance"
+    shortDefinition: "PAI sind Indikatoren für wesentliche nachteilige Auswirkungen von Investitionsentscheidungen auf Nachhaltigkeitsfaktoren."
+    hoverDefinition: "PAI machen negative Nachhaltigkeitswirkungen im Finanzmarkt sichtbar, ersetzen aber keine vollständige WÖk-Netto-Wirkungsbewertung."
+    longDefinition: "Principal Adverse Impacts sind für die WÖk wichtig, weil sie negative Wirkungsindikatoren in Kapitalentscheidungen sichtbar machen. Sie reichen aber nicht aus, um positive Netto-Wirkung oder demokratische Rückkopplung vollständig zu bewerten."
+    usageNote: "PAI als Negativindikatoren im SFDR-Kontext einordnen."
+    doNotConfuseWith: ["positive Netto-Wirkung", "FinalScore"]
+    synonyms: ["Principal Adverse Impact", "nachteilige Nachhaltigkeitsauswirkungen"]
+    relatedTerms: ["sfdr", "sustainable-finance", "wirkungsrisiko", "wirkungsdaten"]
+    officialSources:
+      - "EUR-Lex SFDR Delegated Regulation|https://eur-lex.europa.eu/eli/reg_del/2022/1288/oj/eng"
+    preferredUsage: "PAI als Datenquelle für negative Wirkungsindikatoren verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "pai principal adverse impacts"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: eu-green-bond-standard
+    canonicalLabel: "EU Green Bond Standard"
+    slug: "eu-green-bond-standard"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Sustainable Finance"
+    sourceDocument: "EUR-Lex Regulation 2023/2631"
+    sourceSection: "Daten, Standards und Regularien · Sustainable Finance"
+    dataStandardsGroup: "Sustainable Finance"
+    shortDefinition: "Der EU Green Bond Standard ist ein europäischer Standard für als europäische grüne Anleihen bezeichnete Bonds."
+    hoverDefinition: "Der EU Green Bond Standard verbindet grüne Anleihen mit Taxonomiebezug, Transparenz und Prüfung."
+    longDefinition: "Für die WÖk ist der Standard relevant, weil grüne Finanzierungsinstrumente Daten über Zweckbindung, Taxonomiebezug und Kapitalwirkung liefern können. Er ersetzt keine vollständige Wirkungsprüfung."
+    usageNote: "Als Bond-Standard, nicht als Gesamtbewertung eines Unternehmens verwenden."
+    doNotConfuseWith: ["Impact Investing", "EU-Taxonomie"]
+    synonyms: ["European Green Bond Standard", "EuGB"]
+    relatedTerms: ["sustainable-finance", "eu-taxonomie", "transition-finance"]
+    officialSources:
+      - "EUR-Lex EU Green Bond Standard|https://eur-lex.europa.eu/eli/reg/2023/2631/oj/eng"
+    preferredUsage: "Als Finanzinstrumentstandard einordnen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "eu green bond standard"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: taxonomy-navigator
+    canonicalLabel: "Taxonomy Navigator / Taxonomy Compass"
+    slug: "taxonomy-navigator"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Sustainable Finance"
+    sourceDocument: "EU-Kommission EU Taxonomy Navigator"
+    sourceSection: "Daten, Standards und Regularien · Sustainable Finance"
+    dataStandardsGroup: "Sustainable Finance"
+    shortDefinition: "Taxonomy Navigator und Taxonomy Compass sind EU-Hilfen zur Recherche von Taxonomie-Kriterien und Tätigkeiten."
+    hoverDefinition: "Der Taxonomy Navigator hilft, EU-Taxonomie-Tätigkeiten, Umweltziele und technische Bewertungskriterien zu finden."
+    longDefinition: "Für die WÖk sind diese Werkzeuge Recherche- und Anschlussquellen. Sie liefern Kriterien und Zuordnung, aber keine vollständige positive Netto-Wirkung."
+    usageNote: "Als offizielles Recherchewerkzeug zur EU-Taxonomie darstellen."
+    doNotConfuseWith: ["WÖk-Scorecard", "Wirkungsregister"]
+    synonyms: ["EU Taxonomy Navigator", "EU Taxonomy Compass", "Taxonomie-Kompass"]
+    relatedTerms: ["eu-taxonomie", "technische-bewertungskriterien", "nace"]
+    officialSources:
+      - "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
+    preferredUsage: "Als Recherchequelle für Taxonomie-Kriterien verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "taxonomy navigator"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: transition-finance
+    canonicalLabel: "Transition Finance"
+    slug: "transition-finance"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Sustainable Finance"
+    sourceDocument: "EU-Kommission Transition Finance"
+    sourceSection: "Daten, Standards und Regularien · Sustainable Finance"
+    dataStandardsGroup: "Sustainable Finance"
+    shortDefinition: "Transition Finance bezeichnet Finanzierung, die Unternehmen oder Aktivitäten auf glaubwürdige Transformationspfade bringt."
+    hoverDefinition: "Transition Finance finanziert den Übergang, wenn Ziele, Pfade, Daten, Zeitplan und Governance nachvollziehbar sind."
+    longDefinition: "Für die WÖk ist Transition Finance wichtig, weil nicht nur der heutige Zustand zählt, sondern auch, ob Kapital echte Transformationswirkung ermöglicht oder schädliche Strukturen verlängert."
+    usageNote: "Nicht als Freifahrtschein für verzögerte Transformation verwenden."
+    doNotConfuseWith: ["Greenwashing", "Transition Plan"]
+    synonyms: ["Transformationsfinanzierung"]
+    relatedTerms: ["transition-plan", "sustainable-finance", "clean-industrial-deal", "transition-risk"]
+    officialSources:
+      - "EU-Kommission Recommendation on transition finance|https://finance.ec.europa.eu/publications/commission-recommendation-facilitating-finance-transition-sustainable-economy_en"
+    preferredUsage: "Als Finanzierung glaubwürdiger Pfade mit Prüfung nutzen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "transition finance"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: esap
+    canonicalLabel: "ESAP / European Single Access Point"
+    slug: "esap"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "ESMA European Single Access Point"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "ESAP ist der europäische zentrale Zugangspunkt für öffentliche Finanz- und Nachhaltigkeitsinformationen."
+    hoverDefinition: "ESAP soll öffentliche Unternehmens-, Finanz- und Nachhaltigkeitsdaten zentral auffindbar machen."
+    longDefinition: "Für die WÖk ist ESAP ein möglicher Infrastrukturanschluss: Berichtsdaten werden leichter auffindbar, müssen aber noch in Wirkungsdaten und Steuerungsdaten übersetzt werden."
+    usageNote: "ESAP als Datenzugang, nicht als Bewertungsstandard darstellen."
+    doNotConfuseWith: ["ESRS", "Wirkungsdatenraum"]
+    synonyms: ["European Single Access Point"]
+    relatedTerms: ["csrd", "esrs", "xbrl", "berichtsdaten", "wirkungsdatenraum"]
+    officialSources:
+      - "ESMA ESAP|https://www.esma.europa.eu/esmas-activities/data/european-single-access-point-esap"
+    preferredUsage: "Als Zugangsinfrastruktur für öffentliche Daten nutzen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "esap"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: vsme
+    canonicalLabel: "VSME"
+    slug: "vsme"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "EFRAG VSME"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "VSME ist der freiwillige Nachhaltigkeitsberichtsstandard für nicht börsennotierte kleine und mittlere Unternehmen."
+    hoverDefinition: "VSME unterstützt KMU bei einfachen, freiwilligen Nachhaltigkeitsinformationen für Banken, Lieferketten und Geschäftspartner."
+    longDefinition: "Für die WÖk ist VSME relevant, weil KMU-taugliche Datenformate entscheidend sind. VSME ersetzt keine Wirkungsmessung, kann aber Berichtsdaten liefern, die später in Wirkung und Rückkopplung übersetzt werden."
+    usageNote: "Als freiwilligen KMU-Standard einordnen."
+    doNotConfuseWith: ["CSRD", "ESRS"]
+    synonyms: ["Voluntary Sustainability Reporting Standard for SMEs", "Voluntary Standard for SMEs"]
+    relatedTerms: ["csrd", "esrs", "berichtsdaten", "datenqualitaet"]
+    officialSources:
+      - "EFRAG VSME|https://www.efrag.org/en/smes-and-sustainability-reporting"
+    preferredUsage: "VSME als KMU-Datenanschluss verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "vsme"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: nfrd
+    canonicalLabel: "NFRD"
+    slug: "nfrd"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "EUR-Lex Directive 2014/95/EU"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "Die NFRD war die frühere EU-Richtlinie zur nichtfinanziellen Berichterstattung, die durch die CSRD weiterentwickelt wurde."
+    hoverDefinition: "NFRD ist der Vorläufer der CSRD und erklärt, warum EU-Nachhaltigkeitsreporting heute stärker standardisiert ist."
+    longDefinition: "Für die WÖk ist die NFRD vor allem historisch wichtig: Sie zeigt die Entwicklung von freiwilliger oder uneinheitlicher Berichterstattung hin zu CSRD, ESRS, Prüfung und digitalen Daten."
+    usageNote: "Als Vorgängerregelung der CSRD einordnen."
+    doNotConfuseWith: ["CSRD", "ESRS"]
+    synonyms: ["Non-Financial Reporting Directive"]
+    relatedTerms: ["csrd", "esrs", "berichtsdaten"]
+    officialSources:
+      - "EUR-Lex NFRD|https://eur-lex.europa.eu/eli/dir/2014/95/oj/eng"
+    preferredUsage: "NFRD als historischen Reportingrahmen nennen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "nfrd"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: xbrl
+    canonicalLabel: "XBRL"
+    slug: "xbrl"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "XBRL International"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "XBRL ist ein maschinenlesbares Format für strukturierte Unternehmens- und Berichtsdaten."
+    hoverDefinition: "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten."
+    longDefinition: "XBRL ist für CSRD, ESRS, ESEF und ESAP relevant, weil es Daten vergleichbarer und verarbeitbarer macht. Es ist Datenformat, keine Wirkungsbewertung."
+    usageNote: "Als technisches Datenformat, nicht als Inhalt oder Qualitätssiegel darstellen."
+    doNotConfuseWith: ["ESRS", "Wirkungsdaten"]
+    synonyms: ["eXtensible Business Reporting Language"]
+    relatedTerms: ["esap", "esef", "csrd", "berichtsdaten"]
+    officialSources:
+      - "XBRL International|https://www.xbrl.org/"
+    preferredUsage: "XBRL als maschinenlesbaren Reportingstandard verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "xbrl"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: esef
+    canonicalLabel: "ESEF"
+    slug: "esef"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "ESMA ESEF"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "ESEF ist das europäische einheitliche elektronische Berichtsformat für Jahresfinanzberichte."
+    hoverDefinition: "ESEF macht Finanzberichte elektronisch und maschinenlesbar; es ist Infrastruktur, keine Nachhaltigkeitsbewertung."
+    longDefinition: "Für die WÖk ist ESEF relevant, weil Finanz- und Nachhaltigkeitsdaten technisch zusammengeführt werden können. Wirkung entsteht aber erst durch Bewertungs- und Rückkopplungslogik."
+    usageNote: "Als Finanzberichtsformat einordnen."
+    doNotConfuseWith: ["ESRS", "ESAP"]
+    synonyms: ["European Single Electronic Format"]
+    relatedTerms: ["xbrl", "esap", "berichtsdaten"]
+    officialSources:
+      - "ESMA ESEF|https://www.esma.europa.eu/issuer-disclosure/european-single-electronic-format"
+    preferredUsage: "ESEF als technisches Reportingformat verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "esef"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: assurance
+    canonicalLabel: "Assurance"
+    slug: "assurance"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "CSRD und Prüfungsstandards"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "Assurance bezeichnet prüferische Sicherheit über Berichtsinformationen."
+    hoverDefinition: "Assurance erhöht Vertrauen in berichtete Daten, macht daraus aber noch keine vollständige Wirkungsbewertung."
+    longDefinition: "Für die WÖk ist Assurance wichtig, weil geprüfte Daten belastbarer sind. Geprüfte Berichtsdaten bleiben aber Berichtsdaten, bis sie in Wirkungsbewertung und Rückkopplung übersetzt werden."
+    usageNote: "Assurance als Prüfung von Informationen, nicht als Wirkungsgarantie verwenden."
+    doNotConfuseWith: ["Wirkungsbewertung", "Zertifizierung"]
+    synonyms: ["Sustainability Assurance", "Prüfung"]
+    relatedTerms: ["limited-assurance", "reasonable-assurance", "datenqualitaet", "csrd"]
+    officialSources:
+      - "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+    preferredUsage: "Assurance als Vertrauensebene für Datenqualität einordnen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "assurance"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: limited-assurance
+    canonicalLabel: "Limited Assurance"
+    slug: "limited-assurance"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "CSRD und Prüfungsstandards"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "Limited Assurance ist eine begrenzte prüferische Sicherheit mit geringerem Prüfungsniveau als Reasonable Assurance."
+    hoverDefinition: "Limited Assurance ist ein begrenztes Prüfungsniveau und sollte nicht wie vollständige Sicherheit gelesen werden."
+    longDefinition: "Für die WÖk ist die Unterscheidung wichtig, weil Datenqualität, Prüfgrad und Unsicherheit offen ausgewiesen werden müssen."
+    usageNote: "Nicht als vollständige Datengewissheit darstellen."
+    doNotConfuseWith: ["Reasonable Assurance"]
+    synonyms: ["begrenzte Sicherheit", "begrenzte Prüfungssicherheit"]
+    relatedTerms: ["assurance", "reasonable-assurance", "datenqualitaet"]
+    officialSources:
+      - "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+    preferredUsage: "Als Prüfgrad mit Unsicherheit kennzeichnen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "limited assurance"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: reasonable-assurance
+    canonicalLabel: "Reasonable Assurance"
+    slug: "reasonable-assurance"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "CSRD und Prüfungsstandards"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "Reasonable Assurance ist ein höheres Prüfungsniveau als Limited Assurance."
+    hoverDefinition: "Reasonable Assurance schafft höhere, aber keine absolute Sicherheit über Berichtsinformationen."
+    longDefinition: "Für die WÖk bleibt auch bei höherem Prüfungsniveau wichtig: geprüfte Daten sind keine automatische positive Netto-Wirkung, sondern eine belastbarere Datengrundlage."
+    usageNote: "Nicht als absolute Sicherheit formulieren."
+    doNotConfuseWith: ["Limited Assurance", "Wirkungsbewertung"]
+    synonyms: ["hinreichende Sicherheit", "angemessene Sicherheit"]
+    relatedTerms: ["assurance", "limited-assurance", "datenqualitaet"]
+    officialSources:
+      - "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+    preferredUsage: "Als höheren Prüfgrad von Daten verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "reasonable assurance"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: doppelte-wesentlichkeit
+    canonicalLabel: "Doppelte Wesentlichkeit"
+    slug: "doppelte-wesentlichkeit"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "CSRD und ESRS"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen."
+    hoverDefinition: "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken."
+    longDefinition: "Für die WÖk ist doppelte Wesentlichkeit ein wichtiger Anschluss, weil sie Wirkungsperspektive und Risikoperspektive zusammenführt. Die WÖk geht weiter, indem sie bewertete Wirkung in Steuerung und Rückkopplung übersetzt."
+    usageNote: "Nicht als vollständige Wirkungsbewertung darstellen."
+    doNotConfuseWith: ["einfache Finanzwesentlichkeit", "Wirkungsbewertung"]
+    synonyms: ["Double Materiality", "doppelte Materialität"]
+    relatedTerms: ["csrd", "esrs", "iro", "wirkungsbewertung"]
+    officialSources:
+      - "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+    preferredUsage: "Als Brücke zwischen Berichtswesen und Wirkungsperspektive nutzen."
+    reviewStatus: "approved"
+    glossaryOrderKey: "doppelte wesentlichkeit"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: iro
+    canonicalLabel: "IRO / Impacts, Risks and Opportunities"
+    slug: "iro"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Reporting und Prüfung"
+    sourceDocument: "ESRS"
+    sourceSection: "Daten, Standards und Regularien · Reporting und Prüfung"
+    dataStandardsGroup: "Reporting und Prüfung"
+    shortDefinition: "IRO steht in den ESRS für Auswirkungen, Risiken und Chancen."
+    hoverDefinition: "IRO verbindet Wirkungen, Risiken und Chancen als zentrale Struktur der ESRS-Wesentlichkeitsanalyse."
+    longDefinition: "Für die WÖk ist IRO relevant, weil Impact, Risiko und Chance getrennt und verbunden betrachtet werden. Eine WÖk-Bewertung braucht danach zusätzlich Bewertung, Datenqualität und Rückkopplung."
+    usageNote: "IRO nicht mit einem fertigen Score verwechseln."
+    doNotConfuseWith: ["FinalScore", "Wirkungsbewertung"]
+    synonyms: ["Impacts Risks Opportunities", "Auswirkungen Risiken Chancen"]
+    relatedTerms: ["esrs", "doppelte-wesentlichkeit", "wirkungsrisiko"]
+    officialSources:
+      - "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+    preferredUsage: "Als ESRS-Struktur für Wirkung, Risiko und Chance verwenden."
+    reviewStatus: "approved"
+    glossaryOrderKey: "iro"
     firstApprovedIn: "2026.2"
     lastUpdated: "2026-05-27"
   - termId: t-sroi
@@ -1020,6 +1532,7 @@ terms:
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Daten und Standards"
+    dataStandardsGroup: "WÖk-Übersetzung"
     shortDefinition: "Ein Wirkungsdatenraum macht relevante Wirkungsdaten strukturiert, interoperabel und prüfbar nutzbar."
     hoverDefinition: "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann."
     longDefinition: "Wirkungsdatenräume verbinden Berichtsdaten, Produktdaten, Lieferkettendaten, Standards, Register und Bewertungslogik."

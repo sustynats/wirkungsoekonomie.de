@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T08:05:53.136Z",
+  "generatedAt": "2026-05-27T09:10:45.468Z",
   "terms": [
     {
       "category": "Grundbegriff",
@@ -39,15 +39,17 @@
       "lastUpdated": "2026-05-24"
     },
     {
-      "category": "Messbegriff",
       "termId": "archetyp",
       "canonicalLabel": "Archetyp",
       "slug": "archetyp",
       "status": "führender-begriff",
       "version": "1.0",
+      "category": "Messbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente und Register",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 101,
       "shortDefinition": "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht.",
       "hoverDefinition": "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten.",
       "longDefinition": "In der Wirkungsökonomie ordnen Archetypen wiederkehrende Muster von Wirkung, Risiko, Datenlage und Steuerungsbedarf.",
@@ -60,7 +62,11 @@
       "relatedTerms": [
         "benchmark",
         "scorecard",
-        "woek-id"
+        "woek-id",
+        "nace"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -72,15 +78,59 @@
       "lastUpdated": "2026-05-23"
     },
     {
-      "category": "Messbegriff",
+      "termId": "assurance",
+      "canonicalLabel": "Assurance",
+      "slug": "assurance",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "CSRD und Prüfungsstandards",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 33,
+      "shortDefinition": "Assurance bezeichnet prüferische Sicherheit über Berichtsinformationen.",
+      "hoverDefinition": "Assurance erhöht Vertrauen in berichtete Daten, macht daraus aber noch keine vollständige Wirkungsbewertung.",
+      "longDefinition": "Für die WÖk ist Assurance wichtig, weil geprüfte Daten belastbarer sind. Geprüfte Berichtsdaten bleiben aber Berichtsdaten, bis sie in Wirkungsbewertung und Rückkopplung übersetzt werden.",
+      "usageNote": "Assurance als Prüfung von Informationen, nicht als Wirkungsgarantie verwenden.",
+      "doNotConfuseWith": [
+        "Wirkungsbewertung",
+        "Zertifizierung"
+      ],
+      "synonyms": [
+        "Sustainability Assurance",
+        "Prüfung"
+      ],
+      "relatedTerms": [
+        "limited-assurance",
+        "reasonable-assurance",
+        "datenqualitaet",
+        "csrd"
+      ],
+      "officialSources": [
+        "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Assurance als Vertrauensebene für Datenqualität einordnen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "assurance",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "benchmark",
       "canonicalLabel": "Benchmark",
       "slug": "benchmark",
       "status": "führender-begriff",
       "version": "1.0",
+      "category": "Messbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente und Register",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 100,
       "shortDefinition": "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden.",
       "hoverDefinition": "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität.",
       "longDefinition": "Benchmarks übersetzen abstrakte Wirkungsziele in prüfbare Vergleichswerte, ohne selbst die Gesamtbewertung zu ersetzen.",
@@ -96,7 +146,12 @@
       "relatedTerms": [
         "scorecard",
         "finalscore",
-        "woek-id"
+        "woek-id",
+        "archetyp",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -108,15 +163,313 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "berichtsdaten",
+      "canonicalLabel": "Berichtsdaten",
+      "slug": "berichtsdaten",
+      "status": "anschlussbegriff",
+      "version": "1.0",
       "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 94,
+      "shortDefinition": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
+      "hoverDefinition": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
+      "longDefinition": "Die WÖk nutzt Berichtsdaten als Ausgangsmaterial, aber erst Bewertung, Datenqualität und Rückkopplung machen daraus Steuerungs- oder Wirkungsdaten.",
+      "usageNote": "Nicht mit Wirkungsdaten gleichsetzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "sfdr",
+        "steuerungsdaten",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Berichtsdaten",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "biodiversitaetsrisiko",
+      "canonicalLabel": "Biodiversitätsrisiko",
+      "slug": "biodiversitaetsrisiko",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 71,
+      "shortDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
+      "hoverDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
+      "longDefinition": "Die WÖk betrachtet Biodiversität als Wirkungsraum und Schutzgrenze, nicht nur als Umweltkennzahl.",
+      "usageNote": "Mit Standort, Lieferkette, Ökosystemleistung und Datenqualität verbinden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "tnfd",
+        "nature-related-risks",
+        "ipbes",
+        "eudr"
+      ],
+      "officialSources": [
+        "IPBES Global Assessment|https://www.ipbes.net/global-assessment"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Biodiversitätsrisiko",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "carbon-credits",
+      "canonicalLabel": "Carbon Credits",
+      "slug": "carbon-credits",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 79,
+      "shortDefinition": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
+      "hoverDefinition": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
+      "longDefinition": "Die WÖk bewertet Credits nur mit Blick auf Zusätzlichkeit, Dauerhaftigkeit, Vermeidung von Doppelzählung, Nebenwirkungen und Nicht-Kompensation.",
+      "usageNote": "Nicht als Ersatz für direkte Emissionsminderung darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "offsetting-kompensation",
+        "net-zero",
+        "greenwashing",
+        "nichtkompensationsprinzip"
+      ],
+      "officialSources": [
+        "EU Carbon Removals and Carbon Farming Regulation|https://climate.ec.europa.eu/eu-action/certification-carbon-removals-and-carbon-farming_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Carbon Credits",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "cbam",
+      "canonicalLabel": "CBAM / Carbon Border Adjustment Mechanism",
+      "slug": "cbam",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 43,
+      "shortDefinition": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
+      "hoverDefinition": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
+      "longDefinition": "CBAM liefert Daten zu eingebetteten Emissionen und Carbon-Leakage-Risiken. Die WÖk kann diese Daten in Produktwirkung, Preislogik und Lieferkettenwirkung übersetzen.",
+      "usageNote": "Nicht als vollständige Wirkungssteuer darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "fit-for-55",
+        "ghg-protocol",
+        "scope-3",
+        "produktwirkung",
+        "wirkungssteuer"
+      ],
+      "officialSources": [
+        "EU-Kommission CBAM|https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "CBAM / Carbon Border Adjustment Mechanism",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "clean-industrial-deal",
+      "canonicalLabel": "Clean Industrial Deal",
+      "slug": "clean-industrial-deal",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "EU-Politikrahmen",
+      "sourceDocument": "EU-Kommission Clean Industrial Deal",
+      "sourceSection": "Daten, Standards und Regularien · EU-Politikrahmen",
+      "dataStandardsGroup": "EU-Politikrahmen",
+      "dataStandardsOrder": 1,
+      "shortDefinition": "Der Clean Industrial Deal ist ein EU-Plan für industrielle Wettbewerbsfähigkeit und Dekarbonisierung.",
+      "hoverDefinition": "Der Clean Industrial Deal verbindet Dekarbonisierung, Industriepolitik, bezahlbare Energie, Clean Tech, Kreislaufwirtschaft und Wettbewerbsfähigkeit.",
+      "longDefinition": "Der Clean Industrial Deal wurde am 26. Februar 2025 vorgestellt und soll Dekarbonisierung zu einem Wachstumstreiber für europäische Industrie machen. Für die WÖk ist er anschlussfähig, weil er zeigt, wie Klimaziele, Industriepolitik, Energiepreise, Beschaffung und Kapitalflüsse zusammenwirken.",
+      "usageNote": "Als aktuellen EU-Industrie- und Dekarbonisierungsrahmen einordnen.",
+      "doNotConfuseWith": [
+        "European Green Deal",
+        "EU-Taxonomie"
+      ],
+      "synonyms": [
+        "Deal für eine saubere Industrie"
+      ],
+      "relatedTerms": [
+        "european-green-deal",
+        "sustainable-finance",
+        "transition-finance",
+        "cbam",
+        "espr"
+      ],
+      "officialSources": [
+        "EU-Kommission Clean Industrial Deal|https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Clean Industrial Deal als Industriepolitik-Anschluss der WÖk verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "clean industrial deal",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "climate-neutral-claim",
+      "canonicalLabel": "Climate Neutral Claim",
+      "slug": "climate-neutral-claim",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 93,
+      "shortDefinition": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
+      "hoverDefinition": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
+      "longDefinition": "Die WÖk prüft solche Claims nach Scope, Reduktion, Restemission, Kompensation, Datenqualität und Nebenwirkungen.",
+      "usageNote": "Ohne Daten, Zeitpfad und Kompensationslogik nicht als glaubwürdige Wirkung darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "klimaneutralitaet",
+        "offsetting-kompensation",
+        "greenwashing",
+        "carbon-credits"
+      ],
+      "officialSources": [
+        "EUR-Lex Directive 2024/825|https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Climate Neutral Claim",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "conflict-minerals-regulation",
+      "canonicalLabel": "Conflict Minerals Regulation",
+      "slug": "conflict-minerals-regulation",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 45,
+      "shortDefinition": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
+      "hoverDefinition": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
+      "longDefinition": "Sie liefert Hinweise auf Rohstoff-, Menschenrechts- und Governance-Risiken in Lieferketten.",
+      "usageNote": "Als spezifischen Rohstoff-Sorgfaltsrahmen nutzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "lieferkettendaten",
+        "oecd-leitsaetze",
+        "csddd"
+      ],
+      "officialSources": [
+        "EU-Kommission Conflict Minerals|https://policy.trade.ec.europa.eu/development-and-sustainability/conflict-minerals-regulation_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Conflict Minerals Regulation",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "csddd",
+      "canonicalLabel": "CSDDD",
+      "slug": "csddd",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 40,
+      "shortDefinition": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
+      "hoverDefinition": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
+      "longDefinition": "Sie liefert rechtliche Anknüpfungspunkte für menschenrechtliche und ökologische Risiken. Die WÖk übersetzt diese Daten in Wirkung, Schutzgrenzen und Rückkopplung.",
+      "usageNote": "Als Sorgfaltspflichtenrahmen einordnen, nicht als vollständige Wirkungsmessung.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "lksg",
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten"
+      ],
+      "officialSources": [
+        "EU-Kommission CSDDD|https://commission.europa.eu/business-economy-euro/doing-business-eu/corporate-sustainability-due-diligence_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "CSDDD",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "csrd",
       "canonicalLabel": "CSRD",
       "slug": "csrd",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Anschlussräume",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 24,
       "shortDefinition": "CSRD ist die europäische Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen.",
       "hoverDefinition": "CSRD schafft Berichtsdaten; in der WÖk werden daraus erst durch Rückkopplung Steuerungsdaten.",
       "longDefinition": "Die Corporate Sustainability Reporting Directive erweitert und standardisiert Nachhaltigkeitsberichte. Für die WÖk ist sie Anschlussraum und Datenquelle, nicht die Kernlogik.",
@@ -132,7 +485,16 @@
         "esrs",
         "esg",
         "wirkungsdatenraum",
-        "reporting"
+        "reporting",
+        "efrag",
+        "doppelte-wesentlichkeit",
+        "iro",
+        "xbrl",
+        "esap"
+      ],
+      "officialSources": [
+        "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng",
+        "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -144,15 +506,88 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "datenluecke",
+      "canonicalLabel": "Datenlücke",
+      "slug": "datenluecke",
+      "status": "anschlussbegriff",
+      "version": "1.0",
       "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 103,
+      "shortDefinition": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
+      "hoverDefinition": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
+      "longDefinition": "Die WÖk darf fehlende Daten nicht belohnen. Datenlücken müssen markiert und durch Standardwerte, konservative Annahmen oder Nachweise behandelt werden.",
+      "usageNote": "Nicht unsichtbar machen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "datenqualitaet",
+        "konservative-annahme",
+        "scorecard"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Datenlücke",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "datenqualitaet",
+      "canonicalLabel": "Datenqualität",
+      "slug": "datenqualitaet",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 102,
+      "shortDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
+      "hoverDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
+      "longDefinition": "Die WÖk macht Datenqualität sichtbar, damit unsichere Daten nicht wie Gewissheit wirken.",
+      "usageNote": "Immer mit Datenquelle, Annahmen und Unsicherheit verbinden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "datenluecke",
+        "konservative-annahme",
+        "assurance",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Datenqualität",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "digitaler-produktpass",
       "canonicalLabel": "Digitaler Produktpass",
       "slug": "digitaler-produktpass",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten und Standards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 50,
       "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
       "hoverDefinition": "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus.",
       "longDefinition": "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung.",
@@ -168,7 +603,14 @@
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "espr",
+        "produktdaten",
+        "pcf-product-carbon-footprint",
+        "material-footprint"
+      ],
+      "officialSources": [
+        "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -180,15 +622,319 @@
       "lastUpdated": "2026-05-23"
     },
     {
-      "category": "Grundbegriff",
+      "termId": "dnsh",
+      "canonicalLabel": "DNSH / Do No Significant Harm",
+      "slug": "dnsh",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 17,
+      "shortDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
+      "hoverDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
+      "longDefinition": "DNSH ist anschlussfähig für Nicht-Kompensation: Positive Wirkung in einem Bereich darf schwere Schäden an anderer Stelle nicht verdecken.",
+      "usageNote": "Nicht als vollständige Wirkungsprüfung behandeln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "technische-bewertungskriterien"
+      ],
+      "officialSources": [
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "DNSH / Do No Significant Harm",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "doppelte-wesentlichkeit",
+      "canonicalLabel": "Doppelte Wesentlichkeit",
+      "slug": "doppelte-wesentlichkeit",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "CSRD und ESRS",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 36,
+      "shortDefinition": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
+      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
+      "longDefinition": "Für die WÖk ist doppelte Wesentlichkeit ein wichtiger Anschluss, weil sie Wirkungsperspektive und Risikoperspektive zusammenführt. Die WÖk geht weiter, indem sie bewertete Wirkung in Steuerung und Rückkopplung übersetzt.",
+      "usageNote": "Nicht als vollständige Wirkungsbewertung darstellen.",
+      "doNotConfuseWith": [
+        "einfache Finanzwesentlichkeit",
+        "Wirkungsbewertung"
+      ],
+      "synonyms": [
+        "Double Materiality",
+        "doppelte Materialität"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "iro",
+        "wirkungsbewertung"
+      ],
+      "officialSources": [
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Brücke zwischen Berichtswesen und Wirkungsperspektive nutzen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "doppelte wesentlichkeit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "efrag",
+      "canonicalLabel": "EFRAG",
+      "slug": "efrag",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 26,
+      "shortDefinition": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
+      "hoverDefinition": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
+      "longDefinition": "Für die WÖk ist EFRAG eine zentrale Quelle für ESRS, VSME, XBRL-Taxonomien und Reporting-Datenstrukturen.",
+      "usageNote": "Als Standardentwicklungs- und Beratungsakteur einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "esrs",
+        "csrd",
+        "vsme",
+        "xbrl"
+      ],
+      "officialSources": [
+        "EFRAG|https://www.efrag.org/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "EFRAG",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "empowering-consumers-green-transition",
+      "canonicalLabel": "Empowering Consumers for the Green Transition",
+      "slug": "empowering-consumers-green-transition",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 87,
+      "shortDefinition": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
+      "hoverDefinition": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
+      "longDefinition": "Sie unterstützt die WÖk-Logik, dass Konsument:innen verlässliche Informationen brauchen, um Wirkung berücksichtigen zu können.",
+      "usageNote": "Als Verbraucher:innen- und Kommunikationsschutz einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "nachhaltigkeitslabel",
+        "climate-neutral-claim"
+      ],
+      "officialSources": [
+        "EUR-Lex Directive 2024/825|https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Empowering Consumers for the Green Transition",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "epd",
+      "canonicalLabel": "EPD / Environmental Product Declaration",
+      "slug": "epd",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 56,
+      "shortDefinition": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
+      "hoverDefinition": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
+      "longDefinition": "EPDs liefern belastbare Produktdaten, sind aber keine Aussage über vollständige positive Netto-Wirkung.",
+      "usageNote": "Als Datenquelle, nicht als Nachhaltigkeitssiegel lesen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "lca",
+        "pcr-product-category-rules",
+        "pef-product-environmental-footprint",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "International EPD System|https://www.environdec.com/all-about-epds/the-epd"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "EPD / Environmental Product Declaration",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "ermoeglichende-taetigkeit",
+      "canonicalLabel": "Ermöglichende Tätigkeit",
+      "slug": "ermoeglichende-taetigkeit",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 21,
+      "shortDefinition": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
+      "hoverDefinition": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
+      "longDefinition": "Die WÖk prüft, ob die ermöglichte Wirkung tatsächlich eintritt oder nur indirekt behauptet wird.",
+      "usageNote": "Nicht jede Zulieferung ist automatisch ermöglichend.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Ermöglichende Tätigkeit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "esap",
+      "canonicalLabel": "ESAP / European Single Access Point",
+      "slug": "esap",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "ESMA European Single Access Point",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 29,
+      "shortDefinition": "ESAP ist der europäische zentrale Zugangspunkt für öffentliche Finanz- und Nachhaltigkeitsinformationen.",
+      "hoverDefinition": "ESAP soll öffentliche Unternehmens-, Finanz- und Nachhaltigkeitsdaten zentral auffindbar machen.",
+      "longDefinition": "Für die WÖk ist ESAP ein möglicher Infrastrukturanschluss: Berichtsdaten werden leichter auffindbar, müssen aber noch in Wirkungsdaten und Steuerungsdaten übersetzt werden.",
+      "usageNote": "ESAP als Datenzugang, nicht als Bewertungsstandard darstellen.",
+      "doNotConfuseWith": [
+        "ESRS",
+        "Wirkungsdatenraum"
+      ],
+      "synonyms": [
+        "European Single Access Point"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "xbrl",
+        "berichtsdaten",
+        "wirkungsdatenraum"
+      ],
+      "officialSources": [
+        "ESMA ESAP|https://www.esma.europa.eu/esmas-activities/data/european-single-access-point-esap"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Zugangsinfrastruktur für öffentliche Daten nutzen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "esap",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "esef",
+      "canonicalLabel": "ESEF",
+      "slug": "esef",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "ESMA ESEF",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 32,
+      "shortDefinition": "ESEF ist das europäische einheitliche elektronische Berichtsformat für Jahresfinanzberichte.",
+      "hoverDefinition": "ESEF macht Finanzberichte elektronisch und maschinenlesbar; es ist Infrastruktur, keine Nachhaltigkeitsbewertung.",
+      "longDefinition": "Für die WÖk ist ESEF relevant, weil Finanz- und Nachhaltigkeitsdaten technisch zusammengeführt werden können. Wirkung entsteht aber erst durch Bewertungs- und Rückkopplungslogik.",
+      "usageNote": "Als Finanzberichtsformat einordnen.",
+      "doNotConfuseWith": [
+        "ESRS",
+        "ESAP"
+      ],
+      "synonyms": [
+        "European Single Electronic Format"
+      ],
+      "relatedTerms": [
+        "xbrl",
+        "esap",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "ESMA ESEF|https://www.esma.europa.eu/issuer-disclosure/european-single-electronic-format"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "ESEF als technisches Reportingformat verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "esef",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "esg",
       "canonicalLabel": "ESG",
       "slug": "esg",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Grundbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Anschlussräume",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 6,
       "shortDefinition": "ESG steht für Umwelt-, Sozial- und Governance-Faktoren in Unternehmen, Finanzierung und Reporting.",
       "hoverDefinition": "ESG ist ein Anschlussraum der WÖk, aber nicht ihre Kernlogik.",
       "longDefinition": "ESG hilft, Risiken und Nachhaltigkeitsaspekte zu strukturieren. Die Wirkungsökonomie nutzt ESG als Daten- und Anschlussraum, bewertet aber Wirkung als Zustandsveränderung und koppelt sie zurück.",
@@ -205,7 +951,13 @@
         "csrd",
         "esrs",
         "nachhaltigkeit",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "sustainable-finance",
+        "sfdr",
+        "wirkungsrueckkopplung"
+      ],
+      "officialSources": [
+        "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -217,15 +969,53 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "espr",
+      "canonicalLabel": "ESPR / Ecodesign for Sustainable Products Regulation",
+      "slug": "espr",
+      "status": "anschlussbegriff",
+      "version": "1.0",
       "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 51,
+      "shortDefinition": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
+      "hoverDefinition": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
+      "longDefinition": "Sie liefert Anschluss für Produktanforderungen, Lebenszyklusdaten und den Digitalen Produktpass.",
+      "usageNote": "Als Produktregulierungsrahmen, nicht als einzelnes Label darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "pef-product-environmental-footprint",
+        "rezyklatanteil"
+      ],
+      "officialSources": [
+        "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "ESPR / Ecodesign for Sustainable Products Regulation",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "esrs",
       "canonicalLabel": "ESRS",
       "slug": "esrs",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Anschlussräume",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 25,
       "shortDefinition": "ESRS sind europäische Standards für Nachhaltigkeitsberichterstattung.",
       "hoverDefinition": "ESRS strukturieren Berichtsdaten, die in der WÖk zu Wirkungs- und Steuerungsdaten weiterentwickelt werden können.",
       "longDefinition": "European Sustainability Reporting Standards legen fest, welche Nachhaltigkeitsinformationen Unternehmen nach CSRD berichten.",
@@ -240,7 +1030,15 @@
       "relatedTerms": [
         "csrd",
         "esg",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "efrag",
+        "esrs-themenstandards",
+        "doppelte-wesentlichkeit",
+        "iro"
+      ],
+      "officialSources": [
+        "EFRAG Sustainability Reporting|https://www.efrag.org/en/sustainability-reporting",
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -252,15 +1050,170 @@
       "lastUpdated": "2026-05-23"
     },
     {
-      "category": "Grundbegriff",
+      "termId": "esrs-themenstandards",
+      "canonicalLabel": "ESRS-Themenstandards",
+      "slug": "esrs-themenstandards",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 39,
+      "shortDefinition": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
+      "hoverDefinition": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
+      "longDefinition": "Sie liefern thematische Berichtsdaten. Die WÖk fragt zusätzlich nach Wirkungspfaden, Bewertung, Nicht-Kompensation und Rückkopplung.",
+      "usageNote": "Nicht als vollständige Wirkungsarchitektur darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "esrs",
+        "csrd",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "ESRS-Themenstandards",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "eu-climate-law",
+      "canonicalLabel": "EU Climate Law",
+      "slug": "eu-climate-law",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "EU-Politikrahmen",
+      "sourceDocument": "EUR-Lex Regulation 2021/1119",
+      "sourceSection": "Daten, Standards und Regularien · EU-Politikrahmen",
+      "dataStandardsGroup": "EU-Politikrahmen",
+      "dataStandardsOrder": 3,
+      "shortDefinition": "Das Europäische Klimagesetz verankert Klimaneutralität der EU bis 2050 und das 2030-Ziel rechtlich.",
+      "hoverDefinition": "Das EU Climate Law macht Klimaziele zum rechtlichen Rahmen für Politik, Regulierung, Finanzierung und Risikobewertung.",
+      "longDefinition": "Für die WÖk ist das EU Climate Law ein verbindlicher politischer Rahmen, an den Klimaindikatoren, Transitionspfade, Kapitalrisiken und öffentliche Steuerung anschließen können.",
+      "usageNote": "Als Rechtsrahmen benennen; operative Wirkung entsteht erst durch konkrete Instrumente.",
+      "doNotConfuseWith": [
+        "Fit for 55",
+        "Net Zero Claim"
+      ],
+      "synonyms": [
+        "Europäisches Klimagesetz",
+        "European Climate Law"
+      ],
+      "relatedTerms": [
+        "fit-for-55",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ],
+      "officialSources": [
+        "EUR-Lex EU Climate Law|https://eur-lex.europa.eu/eli/reg/2021/1119/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Klimagesetz als Ziel- und Rechtsrahmen verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "eu climate law",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "eu-ecolabel",
+      "canonicalLabel": "EU Ecolabel",
+      "slug": "eu-ecolabel",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 92,
+      "shortDefinition": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
+      "hoverDefinition": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
+      "longDefinition": "Es kann als geprüfte Umweltinformation dienen, ersetzt aber keine vollständige Produktwirkungsbewertung.",
+      "usageNote": "Als Umweltlabel, nicht als Gesamtwirkungssiegel verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "nachhaltigkeitslabel",
+        "produktdaten",
+        "greenwashing"
+      ],
+      "officialSources": [
+        "EU-Kommission EU Ecolabel|https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel/about-eu-ecolabel_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "EU Ecolabel",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "eu-green-bond-standard",
+      "canonicalLabel": "EU Green Bond Standard",
+      "slug": "eu-green-bond-standard",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Sustainable Finance",
+      "sourceDocument": "EUR-Lex Regulation 2023/2631",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 11,
+      "shortDefinition": "Der EU Green Bond Standard ist ein europäischer Standard für als europäische grüne Anleihen bezeichnete Bonds.",
+      "hoverDefinition": "Der EU Green Bond Standard verbindet grüne Anleihen mit Taxonomiebezug, Transparenz und Prüfung.",
+      "longDefinition": "Für die WÖk ist der Standard relevant, weil grüne Finanzierungsinstrumente Daten über Zweckbindung, Taxonomiebezug und Kapitalwirkung liefern können. Er ersetzt keine vollständige Wirkungsprüfung.",
+      "usageNote": "Als Bond-Standard, nicht als Gesamtbewertung eines Unternehmens verwenden.",
+      "doNotConfuseWith": [
+        "Impact Investing",
+        "EU-Taxonomie"
+      ],
+      "synonyms": [
+        "European Green Bond Standard",
+        "EuGB"
+      ],
+      "relatedTerms": [
+        "sustainable-finance",
+        "eu-taxonomie",
+        "transition-finance"
+      ],
+      "officialSources": [
+        "EUR-Lex EU Green Bond Standard|https://eur-lex.europa.eu/eli/reg/2023/2631/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Finanzinstrumentstandard einordnen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "eu green bond standard",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "eu-taxonomie",
       "canonicalLabel": "EU-Taxonomie",
       "slug": "eu-taxonomie",
       "status": "anschlussbegriff",
       "version": "1.1",
+      "category": "Grundbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social Taxonomy Journalbeitrag v1.0",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx",
-      "sourceSection": "Anschlussräume; Sustainable Finance & Social Taxonomy",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 7,
       "shortDefinition": "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien.",
       "hoverDefinition": "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung.",
       "longDefinition": "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. In der Wirkungsökonomie ist sie ein wichtiger Anschlussstandard für Sustainable Finance, aber keine vollständige Bewertung sozialer Wirkung oder positiver Netto-Wirkung.",
@@ -278,7 +1231,21 @@
         "csrd",
         "esrs",
         "wirkungsrisiko",
-        "nachhaltigkeit"
+        "nachhaltigkeit",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "dnsh",
+        "mindestschutz",
+        "technische-bewertungskriterien",
+        "nace",
+        "mindestschutz-minimum-safeguards",
+        "taxonomy-kpis"
+      ],
+      "officialSources": [
+        "EU-Kommission EU-Taxonomie|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "EUR-Lex Taxonomy Regulation|https://eur-lex.europa.eu/eli/reg/2020/852/oj/eng",
+        "EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -287,6 +1254,89 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "eu taxonomie",
       "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "eudr",
+      "canonicalLabel": "EUDR / EU Deforestation Regulation",
+      "slug": "eudr",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 42,
+      "shortDefinition": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
+      "hoverDefinition": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
+      "longDefinition": "Sie liefert Daten zu Entwaldung, Herkunft, Rückverfolgbarkeit und Biodiversitätsrisiken, die in Produkt- und Lieferkettenwirkung einfließen können.",
+      "usageNote": "Als produkt- und lieferkettenbezogene Sorgfaltspflicht einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "lieferkettendaten",
+        "biodiversitaetsrisiko",
+        "digitaler-produktpass",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "EU-Kommission EUDR|https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "EUDR / EU Deforestation Regulation",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "european-green-deal",
+      "canonicalLabel": "European Green Deal / Europäischer Green Deal",
+      "slug": "european-green-deal",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "EU-Politikrahmen",
+      "sourceDocument": "EU-Kommission European Green Deal",
+      "sourceSection": "Daten, Standards und Regularien · EU-Politikrahmen",
+      "dataStandardsGroup": "EU-Politikrahmen",
+      "dataStandardsOrder": 0,
+      "shortDefinition": "Der European Green Deal ist der politische Transformationsrahmen der EU für eine moderne, ressourceneffiziente, wettbewerbsfähige und klimaneutrale Wirtschaft.",
+      "hoverDefinition": "Der European Green Deal ist der EU-Politikrahmen für Klimaneutralität, Ressourceneffizienz, Industriepolitik, Sustainable Finance und Berichtspflichten.",
+      "longDefinition": "Der European Green Deal bündelt die politische Transformationsagenda der EU. Für die Wirkungsökonomie ist er ein wichtiger Anschlussrahmen, weil er EU-Taxonomie, Sustainable Finance, CSRD, Industrie-, Klima-, Produkt- und Lieferkettenregeln prägt. Er liefert aber keine vollständige WÖk-Logik und ersetzt keine Wirkungsbewertung.",
+      "usageNote": "Als politischen EU-Anschlussrahmen verwenden, nicht als fertige WÖk-Architektur.",
+      "doNotConfuseWith": [
+        "Wirkungsökonomie",
+        "EU-Taxonomie"
+      ],
+      "synonyms": [
+        "Europäischer Green Deal",
+        "EU Green Deal",
+        "Green Deal"
+      ],
+      "relatedTerms": [
+        "clean-industrial-deal",
+        "fit-for-55",
+        "eu-climate-law",
+        "sustainable-finance",
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "cbam"
+      ],
+      "officialSources": [
+        "EU-Kommission European Green Deal|https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Green Deal als politischen Rahmen nennen und konkrete Datenquellen separat ausweisen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "european green deal",
+      "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-27"
     },
     {
@@ -367,6 +1417,47 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "fit-for-55",
+      "canonicalLabel": "Fit for 55",
+      "slug": "fit-for-55",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "EU-Politikrahmen",
+      "sourceDocument": "Rat der EU Fit for 55",
+      "sourceSection": "Daten, Standards und Regularien · EU-Politikrahmen",
+      "dataStandardsGroup": "EU-Politikrahmen",
+      "dataStandardsOrder": 2,
+      "shortDefinition": "Fit for 55 ist das EU-Gesetzgebungspaket zur Senkung der Netto-Treibhausgasemissionen um mindestens 55 Prozent bis 2030.",
+      "hoverDefinition": "Fit for 55 bündelt EU-Klima-, Energie-, Verkehrs- und Industrieinstrumente zur Umsetzung des 2030-Klimaziels.",
+      "longDefinition": "Fit for 55 ist für die WÖk ein politischer Anschlussrahmen für Emissionsdaten, CBAM, Energiepreise, Industriepfade und Transformationsrisiken. Es ersetzt keine WÖk-Bewertung, liefert aber wichtige regulatorische Signale.",
+      "usageNote": "Als EU-Klimapaket, nicht als einzelnes Gesetz darstellen.",
+      "doNotConfuseWith": [
+        "EU Climate Law",
+        "European Green Deal"
+      ],
+      "synonyms": [
+        "Fit-for-55-Paket"
+      ],
+      "relatedTerms": [
+        "eu-climate-law",
+        "cbam",
+        "ghg-protocol",
+        "transition-risk"
+      ],
+      "officialSources": [
+        "Rat der EU Fit for 55|https://www.consilium.europa.eu/en/policies/fit-for-55/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Fit for 55 als Klimapolitikpaket mit Daten- und Anreizwirkung nennen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "fit for 55",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "category": "Grundbegriff",
       "termId": "folgencheck",
       "canonicalLabel": "Folgencheck",
@@ -417,15 +1508,163 @@
       "lastUpdated": "2026-05-26"
     },
     {
+      "termId": "forced-labour-regulation",
+      "canonicalLabel": "Forced Labour Regulation",
+      "slug": "forced-labour-regulation",
+      "status": "anschlussbegriff",
+      "version": "1.0",
       "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 44,
+      "shortDefinition": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
+      "hoverDefinition": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
+      "longDefinition": "Sie ist eine Schutzgrenze: Positive Umwelt- oder Preiseffekte dürfen Zwangsarbeit nicht kompensieren.",
+      "usageNote": "Als Ausschluss- und Schutzgrenzenlogik einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten",
+        "nichtkompensationsprinzip"
+      ],
+      "officialSources": [
+        "EU-Kommission Forced Labour Regulation|https://single-market-economy.ec.europa.eu/single-market/goods/international-aspects-single-market/forced-labour-products_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Forced Labour Regulation",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "ghg-protocol",
+      "canonicalLabel": "GHG Protocol",
+      "slug": "ghg-protocol",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 63,
+      "shortDefinition": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
+      "hoverDefinition": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
+      "longDefinition": "Die WÖk nutzt GHG-Daten als Klimadatenbasis, ergänzt sie aber um soziale, ökologische und demokratische Wirkung sowie Rückkopplung.",
+      "usageNote": "Nicht als vollständige Nachhaltigkeitsbewertung verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "scope-1",
+        "scope-2",
+        "scope-3",
+        "pcf-product-carbon-footprint",
+        "sbti"
+      ],
+      "officialSources": [
+        "GHG Protocol|https://ghgprotocol.org/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "GHG Protocol",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "green-claims-directive",
+      "canonicalLabel": "Green Claims Directive",
+      "slug": "green-claims-directive",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 86,
+      "shortDefinition": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
+      "hoverDefinition": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
+      "longDefinition": "Sie ist für die WÖk relevant, weil Wirkungskommunikation überprüfbar, datenbasiert und nicht irreführend sein muss.",
+      "usageNote": "Statushinweis: Als EU-Vorschlag einordnen und nicht als vollständig geltendes fertiges System darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "impact-washing",
+        "climate-neutral-claim",
+        "nachhaltigkeitslabel"
+      ],
+      "officialSources": [
+        "EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Green Claims Directive",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "greenwashing",
+      "canonicalLabel": "Greenwashing",
+      "slug": "greenwashing",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 88,
+      "shortDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
+      "hoverDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
+      "longDefinition": "Die WÖk begegnet Greenwashing durch Datenqualität, Wirkungsbewertung, Nicht-Kompensation, Reverse Merit Order, Folgencheck und Wirkungsrückkopplung.",
+      "usageNote": "Nicht nur als Marketingproblem verstehen, sondern als falsche Rückkopplung im Markt.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "impact-washing",
+        "sdg-washing",
+        "green-claims-directive",
+        "folgencheck",
+        "reverse-merit-order"
+      ],
+      "officialSources": [
+        "EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Greenwashing",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "gri",
       "canonicalLabel": "GRI",
       "slug": "gri",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Anschlussräume",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 27,
       "shortDefinition": "GRI ist ein international verbreiteter Rahmen für Nachhaltigkeitsberichterstattung.",
       "hoverDefinition": "GRI strukturiert Reporting; WÖk fragt zusätzlich nach bewerteter Wirkung und Rückkopplung.",
       "longDefinition": "Die Global Reporting Initiative stellt Standards zur Offenlegung von Nachhaltigkeitsthemen bereit.",
@@ -441,7 +1680,11 @@
       "relatedTerms": [
         "reporting",
         "csrd",
-        "esrs"
+        "esrs",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "GRI Standards|https://www.globalreporting.org/standards/"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -496,6 +1739,665 @@
       "lastUpdated": "2026-05-26"
     },
     {
+      "termId": "ilo",
+      "canonicalLabel": "ILO",
+      "slug": "ilo",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 49,
+      "shortDefinition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
+      "hoverDefinition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
+      "longDefinition": "ILO-Standards liefern wichtige Referenzen für Arbeit, Lieferketten, menschenwürdige Beschäftigung und soziale Wirkung.",
+      "usageNote": "Als Institution und Standardquelle einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy",
+        "lksg"
+      ],
+      "officialSources": [
+        "ILO|https://www.ilo.org/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "ILO",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "ilo-kernarbeitsnormen",
+      "canonicalLabel": "ILO-Kernarbeitsnormen",
+      "slug": "ilo-kernarbeitsnormen",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 48,
+      "shortDefinition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
+      "hoverDefinition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
+      "longDefinition": "Sie bilden Schutzgrenzen für Arbeits-, Lieferketten- und Sozialwirkung.",
+      "usageNote": "Nicht als freiwilliges Nice-to-have behandeln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "forced-labour-regulation",
+        "mindestschutz-minimum-safeguards",
+        "social-taxonomy",
+        "lieferkettendaten"
+      ],
+      "officialSources": [
+        "ILO International Labour Standards|https://www.ilo.org/international-labour-standards"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "ILO-Kernarbeitsnormen",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "impact-washing",
+      "canonicalLabel": "Impact-Washing",
+      "slug": "impact-washing",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 89,
+      "shortDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
+      "hoverDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
+      "longDefinition": "Die WÖk begrenzt Impact-Washing durch Wirkungspfad, Datenqualität, Nicht-Kompensation, Unsicherheit und überprüfbare Rückkopplung.",
+      "usageNote": "Nicht jede gute Absicht als Wirkung ausgeben.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "sdg-washing",
+        "wirkungspfad",
+        "datenqualitaet",
+        "folgencheck"
+      ],
+      "officialSources": [
+        "EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Impact-Washing",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "insetting",
+      "canonicalLabel": "Insetting",
+      "slug": "insetting",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 81,
+      "shortDefinition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
+      "hoverDefinition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
+      "longDefinition": "Insetting kann wirkungsnäher sein als externe Kompensation, muss aber ebenfalls datenbasiert, zusätzlich und überprüfbar sein.",
+      "usageNote": "Nicht automatisch als besser bewerten; Wirkungspfad prüfen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "offsetting-kompensation",
+        "scope-3",
+        "lieferkettendaten",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "GHG Protocol Land Sector and Removals Guidance|https://ghgprotocol.org/land-sector-and-removals-guidance"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Insetting",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "inside-out-outside-in",
+      "canonicalLabel": "Inside-out / Outside-in",
+      "slug": "inside-out-outside-in",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 38,
+      "shortDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
+      "hoverDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
+      "longDefinition": "Die WÖk braucht beide Blickrichtungen, übersetzt sie aber in Wirkungsbewertung, Steuerung und Rückkopplung.",
+      "usageNote": "Nicht nur als Reportingtechnik, sondern als Perspektivenwechsel erklären.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "csrd"
+      ],
+      "officialSources": [
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Inside-out / Outside-in",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "ipbes",
+      "canonicalLabel": "IPBES",
+      "slug": "ipbes",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 85,
+      "shortDefinition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
+      "hoverDefinition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
+      "longDefinition": "IPBES liefert Grundlagen für Naturwirkung, Biodiversitätsrisiken und ökologische Schutzgrenzen.",
+      "usageNote": "Als wissenschaftliche Referenz für Natur- und Biodiversitätswirkung nutzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "tnfd"
+      ],
+      "officialSources": [
+        "IPBES|https://www.ipbes.net/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "IPBES",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "ipcc",
+      "canonicalLabel": "IPCC",
+      "slug": "ipcc",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 84,
+      "shortDefinition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
+      "hoverDefinition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
+      "longDefinition": "IPCC-Berichte liefern wissenschaftliche Grundlagen für Klimarisiken, Emissionspfade und Transformationsdruck.",
+      "usageNote": "Als wissenschaftliche Referenz, nicht als politisches Programm verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "eu-climate-law"
+      ],
+      "officialSources": [
+        "IPCC|https://www.ipcc.ch/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "IPCC",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "iro",
+      "canonicalLabel": "IRO / Impacts, Risks and Opportunities",
+      "slug": "iro",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "ESRS",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 37,
+      "shortDefinition": "IRO steht in den ESRS für Auswirkungen, Risiken und Chancen.",
+      "hoverDefinition": "IRO verbindet Wirkungen, Risiken und Chancen als zentrale Struktur der ESRS-Wesentlichkeitsanalyse.",
+      "longDefinition": "Für die WÖk ist IRO relevant, weil Impact, Risiko und Chance getrennt und verbunden betrachtet werden. Eine WÖk-Bewertung braucht danach zusätzlich Bewertung, Datenqualität und Rückkopplung.",
+      "usageNote": "IRO nicht mit einem fertigen Score verwechseln.",
+      "doNotConfuseWith": [
+        "FinalScore",
+        "Wirkungsbewertung"
+      ],
+      "synonyms": [
+        "Impacts Risks Opportunities",
+        "Auswirkungen Risiken Chancen"
+      ],
+      "relatedTerms": [
+        "esrs",
+        "doppelte-wesentlichkeit",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als ESRS-Struktur für Wirkung, Risiko und Chance verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "iro",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "iso-14040-14044",
+      "canonicalLabel": "ISO 14040 / ISO 14044",
+      "slug": "iso-14040-14044",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 53,
+      "shortDefinition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
+      "hoverDefinition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
+      "longDefinition": "Sie liefern methodische Qualität für LCA-Daten, ersetzen aber keine WÖk-Bewertung von Wirkungspfaden und Rückkopplungen.",
+      "usageNote": "Als LCA-Methodenstandards einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "lca",
+        "epd",
+        "pef-product-environmental-footprint"
+      ],
+      "officialSources": [
+        "ISO 14040|https://www.iso.org/standard/37456.html",
+        "ISO 14044|https://www.iso.org/standard/38498.html"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "ISO 14040 / ISO 14044",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "issb-ifrs-s1-s2",
+      "canonicalLabel": "ISSB / IFRS S1 und IFRS S2",
+      "slug": "issb-ifrs-s1-s2",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 70,
+      "shortDefinition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
+      "hoverDefinition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
+      "longDefinition": "Die Standards liefern kapitalmarktorientierte Nachhaltigkeitsinformationen. Die WÖk nutzt sie als Datenbasis, nicht als vollständige Wirkungsmessung.",
+      "usageNote": "Jurisdiktionale Anwendung und EU-ESRS-Bezug sauber unterscheiden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "tcfd",
+        "transition-risk",
+        "physical-climate-risk",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "IFRS ISSB and IFRS Sustainability Disclosure Standards|https://www.ifrs.org/sustainability/knowledge-hub/introduction-to-issb-and-ifrs-sustainability-disclosure-standards/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "ISSB / IFRS S1 und IFRS S2",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "just-transition-mechanism",
+      "canonicalLabel": "Just Transition Mechanism",
+      "slug": "just-transition-mechanism",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "EU-Politikrahmen",
+      "sourceDocument": "EU-Kommission Just Transition Mechanism",
+      "sourceSection": "Daten, Standards und Regularien · EU-Politikrahmen",
+      "dataStandardsGroup": "EU-Politikrahmen",
+      "dataStandardsOrder": 4,
+      "shortDefinition": "Der Just Transition Mechanism unterstützt Regionen und Menschen, die vom Übergang zu einer klimaneutralen Wirtschaft besonders betroffen sind.",
+      "hoverDefinition": "Just Transition verbindet Klimapolitik mit sozialer Abfederung, regionalem Strukturwandel und fairer Transformationsfinanzierung.",
+      "longDefinition": "Für die WÖk ist der Mechanismus relevant, weil er zeigt, dass Transformation nicht nur Emissionssenkung, sondern auch Arbeit, Regionen, Qualifikation, Teilhabe und demokratische Akzeptanz betrifft.",
+      "usageNote": "Als sozialen Übergangsrahmen, nicht als Ersatz für Wirkungseinkommen verstehen.",
+      "doNotConfuseWith": [
+        "Wirkungseinkommen",
+        "Wirkungsfonds"
+      ],
+      "synonyms": [
+        "Mechanismus für einen gerechten Übergang",
+        "Just Transition"
+      ],
+      "relatedTerms": [
+        "transition-finance",
+        "wirkungsfonds",
+        "wirkungseinkommen"
+      ],
+      "officialSources": [
+        "EU-Kommission Just Transition Mechanism|https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/finance-and-green-deal/just-transition-mechanism_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Just Transition als sozialen Transformationsanschluss nutzen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "just transition mechanism",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "klimaneutralitaet",
+      "canonicalLabel": "Klimaneutralität",
+      "slug": "klimaneutralitaet",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 78,
+      "shortDefinition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
+      "hoverDefinition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
+      "longDefinition": "Die WÖk prüft, ob Klimaneutralitätsangaben echte Reduktion, hochwertige Daten und glaubwürdige Restemissionslogik enthalten.",
+      "usageNote": "Nicht mit vagen Claims ohne Daten, Scope und Zeitpfad verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "net-zero",
+        "greenwashing",
+        "climate-neutral-claim",
+        "offsetting-kompensation"
+      ],
+      "officialSources": [
+        "EU Climate Law|https://eur-lex.europa.eu/eli/reg/2021/1119/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Klimaneutralität",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "konservative-annahme",
+      "canonicalLabel": "Konservative Annahme",
+      "slug": "konservative-annahme",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 104,
+      "shortDefinition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
+      "hoverDefinition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
+      "longDefinition": "Sie verhindert, dass unbekannte Wirkung besser behandelt wird als nachgewiesene Wirkung.",
+      "usageNote": "Immer als Annahme kennzeichnen und bei besseren Daten aktualisieren.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "datenluecke",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Konservative Annahme",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "lca",
+      "canonicalLabel": "LCA / Life Cycle Assessment",
+      "slug": "lca",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 52,
+      "shortDefinition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
+      "hoverDefinition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
+      "longDefinition": "LCA-Daten sind eine wichtige Basis für Produktwirkung. Die WÖk ergänzt sie um soziale, demokratische und ökonomische Rückkopplung.",
+      "usageNote": "Nicht als alleinige Gesamtwirkung verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "iso-14040-14044",
+        "pef-product-environmental-footprint",
+        "epd",
+        "pcf-product-carbon-footprint"
+      ],
+      "officialSources": [
+        "ISO 14040 Environmental management - Life cycle assessment|https://www.iso.org/standard/37456.html"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "LCA / Life Cycle Assessment",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "lieferkettendaten",
+      "canonicalLabel": "Lieferkettendaten",
+      "slug": "lieferkettendaten",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 107,
+      "shortDefinition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
+      "hoverDefinition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
+      "longDefinition": "Die WÖk nutzt sie für Lieferkettenwirkung, Produktwirkung, Risiko, Preiswahrheit und Beschaffungssteuerung.",
+      "usageNote": "Nicht ohne Datenqualität, Scope und Herkunft lesen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "csddd",
+        "lksg",
+        "eudr",
+        "scope-3",
+        "digitaler-produktpass"
+      ],
+      "officialSources": [
+        "EU-Kommission CSDDD|https://commission.europa.eu/business-economy-euro/doing-business-eu/corporate-sustainability-due-diligence_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Lieferkettendaten",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "limited-assurance",
+      "canonicalLabel": "Limited Assurance",
+      "slug": "limited-assurance",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "CSRD und Prüfungsstandards",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 34,
+      "shortDefinition": "Limited Assurance ist eine begrenzte prüferische Sicherheit mit geringerem Prüfungsniveau als Reasonable Assurance.",
+      "hoverDefinition": "Limited Assurance ist ein begrenztes Prüfungsniveau und sollte nicht wie vollständige Sicherheit gelesen werden.",
+      "longDefinition": "Für die WÖk ist die Unterscheidung wichtig, weil Datenqualität, Prüfgrad und Unsicherheit offen ausgewiesen werden müssen.",
+      "usageNote": "Nicht als vollständige Datengewissheit darstellen.",
+      "doNotConfuseWith": [
+        "Reasonable Assurance"
+      ],
+      "synonyms": [
+        "begrenzte Sicherheit",
+        "begrenzte Prüfungssicherheit"
+      ],
+      "relatedTerms": [
+        "assurance",
+        "reasonable-assurance",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Prüfgrad mit Unsicherheit kennzeichnen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "limited assurance",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "lksg",
+      "canonicalLabel": "LkSG / Lieferkettensorgfaltspflichtengesetz",
+      "slug": "lksg",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 41,
+      "shortDefinition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
+      "hoverDefinition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
+      "longDefinition": "Es liefert nationale Sorgfaltsdaten, die in Lieferkettenwirkung, Schutzgrenzen und Scorecards eingeordnet werden können.",
+      "usageNote": "Nicht mit der EU-CSDDD gleichsetzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "csddd",
+        "lieferkettendaten",
+        "un-guiding-principles",
+        "oecd-leitsaetze"
+      ],
+      "officialSources": [
+        "BAFA Lieferkettensorgfaltspflichtengesetz|https://www.bafa.de/DE/Lieferketten/lieferketten_node.html"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "LkSG / Lieferkettensorgfaltspflichtengesetz",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "material-footprint",
+      "canonicalLabel": "Material Footprint",
+      "slug": "material-footprint",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 59,
+      "shortDefinition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
+      "hoverDefinition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
+      "longDefinition": "Er hilft, Ressourcenwirkung sichtbar zu machen, muss aber mit Kreislauffähigkeit, Recyclingqualität und Lieferkettenwirkung verbunden werden.",
+      "usageNote": "Nicht nur Masse zählen; Kontext und Kritikalität mitdenken.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "produktdaten",
+        "rezyklatanteil",
+        "recyclingquote",
+        "lca"
+      ],
+      "officialSources": [
+        "UN SDG Indicator 12.2.1 Material footprint|https://unstats.un.org/sdgs/metadata/files/Metadata-12-02-01.pdf"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Material Footprint",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "category": "Demokratiebegriff",
       "termId": "mensch-planet-demokratie",
       "canonicalLabel": "Mensch, Planet und Demokratie",
@@ -535,15 +2437,54 @@
       "lastUpdated": "2026-05-25"
     },
     {
+      "termId": "mindestschutz-minimum-safeguards",
+      "canonicalLabel": "Mindestschutz / Minimum Safeguards",
+      "slug": "mindestschutz-minimum-safeguards",
+      "status": "anschlussbegriff",
+      "version": "1.0",
       "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 18,
+      "shortDefinition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
+      "hoverDefinition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
+      "longDefinition": "Für die WÖk sind Mindestschutz-Regeln eine Schutzgrenze: Ökologische Wirkung darf menschenrechtliche Schäden nicht überdecken.",
+      "usageNote": "Immer mit Menschenrechten, OECD, UNGP und ILO verknüpfen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "oecd-leitsaetze",
+        "un-guiding-principles",
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy"
+      ],
+      "officialSources": [
+        "EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Mindestschutz / Minimum Safeguards",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "nace",
       "canonicalLabel": "NACE",
       "slug": "nace",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Anschlussräume",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 23,
       "shortDefinition": "NACE ist die europäische Klassifikation wirtschaftlicher Tätigkeiten.",
       "hoverDefinition": "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung.",
       "longDefinition": "NACE-Codes helfen, Unternehmen und Tätigkeiten statistisch und regulatorisch zu klassifizieren.",
@@ -556,7 +2497,12 @@
       "relatedTerms": [
         "eu-taxonomie",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "taxonomy-navigator",
+        "archetyp"
+      ],
+      "officialSources": [
+        "Eurostat NACE|https://ec.europa.eu/eurostat/web/nace"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -617,6 +2563,76 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "nachhaltigkeitslabel",
+      "canonicalLabel": "Nachhaltigkeitslabel",
+      "slug": "nachhaltigkeitslabel",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 91,
+      "shortDefinition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
+      "hoverDefinition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
+      "longDefinition": "Die WÖk fragt, welche Wirkung hinter einem Label geprüft wird, welche Daten fehlen und ob Nicht-Kompensation eingehalten wird.",
+      "usageNote": "Label nie ohne Kriterien, Prüfstelle und Reichweite interpretieren.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-ecolabel",
+        "greenwashing",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "EU Ecolabel|https://environment.ec.europa.eu/topics/circular-economy/eu-ecolabel/about-eu-ecolabel_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Nachhaltigkeitslabel",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "nature-related-risks",
+      "canonicalLabel": "Nature-related Risks",
+      "slug": "nature-related-risks",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 72,
+      "shortDefinition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
+      "hoverDefinition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
+      "longDefinition": "Sie erweitern die Risikoperspektive über Klima hinaus auf Wasser, Böden, Arten, Ökosysteme und Lieferketten.",
+      "usageNote": "Nicht mit Klimarisiko gleichsetzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "tnfd",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ],
+      "officialSources": [
+        "TNFD Recommendations|https://tnfd.global/recommendations/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Nature-related Risks",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "category": "Bewertungsbegriff",
       "termId": "negative-wirkung",
       "canonicalLabel": "negative Wirkung",
@@ -648,6 +2664,42 @@
       "glossaryOrderKey": "negative wirkung",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "net-zero",
+      "canonicalLabel": "Net Zero",
+      "slug": "net-zero",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 77,
+      "shortDefinition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
+      "hoverDefinition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
+      "longDefinition": "Die WÖk prüft, ob Net-Zero-Pfade real, datenbasiert, sozial tragfähig und nicht bloß kommunikativ kompensiert sind.",
+      "usageNote": "Restemissionen, Reduktion, Entfernung und Zeitpfad trennen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "sbti",
+        "transition-plan",
+        "offsetting-kompensation",
+        "carbon-credits"
+      ],
+      "officialSources": [
+        "SBTi Net-Zero Standard|https://sciencebasedtargets.org/net-zero"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Net Zero",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Bewertungsbegriff",
@@ -760,6 +2812,46 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "nfrd",
+      "canonicalLabel": "NFRD",
+      "slug": "nfrd",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "EUR-Lex Directive 2014/95/EU",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 30,
+      "shortDefinition": "Die NFRD war die frühere EU-Richtlinie zur nichtfinanziellen Berichterstattung, die durch die CSRD weiterentwickelt wurde.",
+      "hoverDefinition": "NFRD ist der Vorläufer der CSRD und erklärt, warum EU-Nachhaltigkeitsreporting heute stärker standardisiert ist.",
+      "longDefinition": "Für die WÖk ist die NFRD vor allem historisch wichtig: Sie zeigt die Entwicklung von freiwilliger oder uneinheitlicher Berichterstattung hin zu CSRD, ESRS, Prüfung und digitalen Daten.",
+      "usageNote": "Als Vorgängerregelung der CSRD einordnen.",
+      "doNotConfuseWith": [
+        "CSRD",
+        "ESRS"
+      ],
+      "synonyms": [
+        "Non-Financial Reporting Directive"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "EUR-Lex NFRD|https://eur-lex.europa.eu/eli/dir/2014/95/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "NFRD als historischen Reportingrahmen nennen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "nfrd",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "category": "Bewertungsbegriff",
       "termId": "nichtkompensationsprinzip",
       "canonicalLabel": "Nichtkompensationsprinzip",
@@ -794,6 +2886,299 @@
       "glossaryOrderKey": "nichtkompensationsprinzip",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "oecd-leitsaetze",
+      "canonicalLabel": "OECD-Leitsätze",
+      "slug": "oecd-leitsaetze",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 46,
+      "shortDefinition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
+      "hoverDefinition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
+      "longDefinition": "Sie liefern international anschlussfähige Mindest- und Sorgfaltslogiken für Lieferkettenwirkung, Menschenrechte und Governance.",
+      "usageNote": "Als internationaler Referenzrahmen, nicht als WÖk-Ersatz verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "un-guiding-principles",
+        "csddd",
+        "lksg"
+      ],
+      "officialSources": [
+        "OECD Guidelines for Multinational Enterprises|https://mneguidelines.oecd.org/mneguidelines/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "OECD-Leitsätze",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "oef-organisation-environmental-footprint",
+      "canonicalLabel": "OEF / Organisation Environmental Footprint",
+      "slug": "oef-organisation-environmental-footprint",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 55,
+      "shortDefinition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
+      "hoverDefinition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
+      "longDefinition": "OEF kann Organisationsdaten liefern, die in Geschäftsmodellwirkung, Scorecards und Kapitalwirkung eingeordnet werden.",
+      "usageNote": "Nicht mit Produktwirkung gleichsetzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "pef-product-environmental-footprint",
+        "lca",
+        "scorecard",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "EU-Kommission Environmental Footprint methods|https://environment.ec.europa.eu/publications/recommendation-use-environmental-footprint-methods_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "OEF / Organisation Environmental Footprint",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "offsetting-kompensation",
+      "canonicalLabel": "Offsetting / Kompensation",
+      "slug": "offsetting-kompensation",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 80,
+      "shortDefinition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
+      "hoverDefinition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
+      "longDefinition": "Die WÖk begrenzt Kompensation durch Nicht-Kompensation und Reverse Merit Order: Schwere Schäden dürfen nicht einfach verrechnet werden.",
+      "usageNote": "Immer von Reduktion, Insetting und Restemission unterscheiden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "carbon-credits",
+        "insetting",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order"
+      ],
+      "officialSources": [
+        "EU Green Claims Directive proposal|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Offsetting / Kompensation",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "pai",
+      "canonicalLabel": "PAI / Principal Adverse Impacts",
+      "slug": "pai",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Sustainable Finance",
+      "sourceDocument": "SFDR Delegated Regulation 2022/1288",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 10,
+      "shortDefinition": "PAI sind Indikatoren für wesentliche nachteilige Auswirkungen von Investitionsentscheidungen auf Nachhaltigkeitsfaktoren.",
+      "hoverDefinition": "PAI machen negative Nachhaltigkeitswirkungen im Finanzmarkt sichtbar, ersetzen aber keine vollständige WÖk-Netto-Wirkungsbewertung.",
+      "longDefinition": "Principal Adverse Impacts sind für die WÖk wichtig, weil sie negative Wirkungsindikatoren in Kapitalentscheidungen sichtbar machen. Sie reichen aber nicht aus, um positive Netto-Wirkung oder demokratische Rückkopplung vollständig zu bewerten.",
+      "usageNote": "PAI als Negativindikatoren im SFDR-Kontext einordnen.",
+      "doNotConfuseWith": [
+        "positive Netto-Wirkung",
+        "FinalScore"
+      ],
+      "synonyms": [
+        "Principal Adverse Impact",
+        "nachteilige Nachhaltigkeitsauswirkungen"
+      ],
+      "relatedTerms": [
+        "sfdr",
+        "sustainable-finance",
+        "wirkungsrisiko",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "EUR-Lex SFDR Delegated Regulation|https://eur-lex.europa.eu/eli/reg_del/2022/1288/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "PAI als Datenquelle für negative Wirkungsindikatoren verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "pai principal adverse impacts",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "pcf-product-carbon-footprint",
+      "canonicalLabel": "PCF / Product Carbon Footprint",
+      "slug": "pcf-product-carbon-footprint",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 58,
+      "shortDefinition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
+      "hoverDefinition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
+      "longDefinition": "PCF-Daten sind ein Klima-Baustein der Produktwirkung, aber keine Gesamtbewertung von Mensch, Planet und Demokratie.",
+      "usageNote": "Systemgrenzen und Datenqualität immer mit nennen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-3",
+        "lca",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "GHG Protocol Product Standard|https://ghgprotocol.org/product-standard"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "PCF / Product Carbon Footprint",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "pcr-product-category-rules",
+      "canonicalLabel": "PCR / Product Category Rules",
+      "slug": "pcr-product-category-rules",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 57,
+      "shortDefinition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
+      "hoverDefinition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
+      "longDefinition": "PCRs erhöhen Vergleichbarkeit von EPD-Daten und damit die Qualität von Produktwirkungsdaten.",
+      "usageNote": "Als methodische Vergleichsregel verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "epd",
+        "lca",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "International EPD System PCR|https://www.environdec.com/product-category-rules-pcr"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "PCR / Product Category Rules",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "pef-product-environmental-footprint",
+      "canonicalLabel": "PEF / Product Environmental Footprint",
+      "slug": "pef-product-environmental-footprint",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 54,
+      "shortDefinition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
+      "hoverDefinition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
+      "longDefinition": "PEF liefert Umweltwirkungsdaten für Produktwirkung. Die WÖk ordnet diese Daten in Preiswahrheit, Nicht-Kompensation und Rückkopplung ein.",
+      "usageNote": "Nicht als vollständige soziale oder demokratische Wirkung lesen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "lca",
+        "oef-organisation-environmental-footprint",
+        "epd",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "EU-Kommission Environmental Footprint methods|https://environment.ec.europa.eu/publications/recommendation-use-environmental-footprint-methods_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "PEF / Product Environmental Footprint",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "physical-climate-risk",
+      "canonicalLabel": "Physical Climate Risk",
+      "slug": "physical-climate-risk",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 73,
+      "shortDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
+      "hoverDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
+      "longDefinition": "Diese Risiken betreffen Gesundheit, Infrastruktur, Lieferketten, Versicherbarkeit, Kapital und öffentliche Haushalte.",
+      "usageNote": "Akute und chronische Risiken unterscheiden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "tcfd",
+        "transition-risk",
+        "ipcc",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Physical Climate Risk",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Bewertungsbegriff",
@@ -866,6 +3251,118 @@
       "glossaryOrderKey": "positive wirkung",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "produktdaten",
+      "canonicalLabel": "Produktdaten",
+      "slug": "produktdaten",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 62,
+      "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
+      "hoverDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
+      "longDefinition": "Die WÖk nutzt Produktdaten, um Produktwirkung, Preiswahrheit und Konsument:inneninformation zu ermöglichen.",
+      "usageNote": "Nicht mit vollständigen Wirkungsdaten verwechseln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "produktwirkung",
+        "pef-product-environmental-footprint",
+        "pcf-product-carbon-footprint"
+      ],
+      "officialSources": [
+        "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Produktdaten",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "reasonable-assurance",
+      "canonicalLabel": "Reasonable Assurance",
+      "slug": "reasonable-assurance",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "CSRD und Prüfungsstandards",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 35,
+      "shortDefinition": "Reasonable Assurance ist ein höheres Prüfungsniveau als Limited Assurance.",
+      "hoverDefinition": "Reasonable Assurance schafft höhere, aber keine absolute Sicherheit über Berichtsinformationen.",
+      "longDefinition": "Für die WÖk bleibt auch bei höherem Prüfungsniveau wichtig: geprüfte Daten sind keine automatische positive Netto-Wirkung, sondern eine belastbarere Datengrundlage.",
+      "usageNote": "Nicht als absolute Sicherheit formulieren.",
+      "doNotConfuseWith": [
+        "Limited Assurance",
+        "Wirkungsbewertung"
+      ],
+      "synonyms": [
+        "hinreichende Sicherheit",
+        "angemessene Sicherheit"
+      ],
+      "relatedTerms": [
+        "assurance",
+        "limited-assurance",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "EUR-Lex CSRD|https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als höheren Prüfgrad von Daten verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "reasonable assurance",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "recyclingquote",
+      "canonicalLabel": "Recyclingquote",
+      "slug": "recyclingquote",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 61,
+      "shortDefinition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
+      "hoverDefinition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
+      "longDefinition": "Sie ist nützlich, muss aber mit tatsächlicher Materialqualität, Vermeidung, Wiederverwendung und Rebound geprüft werden.",
+      "usageNote": "Nicht als alleinigen Kreislauf-Erfolg darstellen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "rezyklatanteil",
+        "material-footprint",
+        "espr"
+      ],
+      "officialSources": [
+        "EU-Kommission Circular Economy|https://environment.ec.europa.eu/topics/circular-economy_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Recyclingquote",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Architekturbegriff",
@@ -944,15 +3441,195 @@
       "lastUpdated": "2026-05-23"
     },
     {
-      "category": "Messbegriff",
+      "termId": "rezyklatanteil",
+      "canonicalLabel": "Rezyklatanteil",
+      "slug": "rezyklatanteil",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
+      "dataStandardsGroup": "Produkt- und Lebenszyklusdaten",
+      "dataStandardsOrder": 60,
+      "shortDefinition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
+      "hoverDefinition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
+      "longDefinition": "Er ist ein wichtiger Kreislaufindikator, reicht aber ohne Qualität, Herkunft und Lebenszykluswirkung nicht aus.",
+      "usageNote": "Nicht mit vollständiger Kreislauffähigkeit gleichsetzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "recyclingquote",
+        "material-footprint",
+        "espr",
+        "digitaler-produktpass"
+      ],
+      "officialSources": [
+        "EU-Kommission Circular Economy|https://environment.ec.europa.eu/topics/circular-economy_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Rezyklatanteil",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "sbti",
+      "canonicalLabel": "SBTi",
+      "slug": "sbti",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 67,
+      "shortDefinition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
+      "hoverDefinition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
+      "longDefinition": "SBTi-Ziele können Transformationspfade und Zielqualität sichtbar machen. Die WÖk prüft zusätzlich Wirkung, Umsetzung und Rückkopplung.",
+      "usageNote": "Nicht als automatischen Wirkungsnachweis behandeln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ],
+      "officialSources": [
+        "Science Based Targets initiative|https://sciencebasedtargets.org/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "SBTi",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "scope-1",
+      "canonicalLabel": "Scope 1",
+      "slug": "scope-1",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 64,
+      "shortDefinition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
+      "hoverDefinition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
+      "longDefinition": "Scope-1-Daten sind direkte Klimawirkungsdaten und können in Scorecards, Produktwirkung und Kapitalwirkung einfließen.",
+      "usageNote": "Nicht mit vollständigen Unternehmenswirkungen verwechseln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-2",
+        "scope-3"
+      ],
+      "officialSources": [
+        "GHG Protocol Corporate Standard|https://ghgprotocol.org/corporate-standard"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Scope 1",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "scope-2",
+      "canonicalLabel": "Scope 2",
+      "slug": "scope-2",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 65,
+      "shortDefinition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
+      "hoverDefinition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
+      "longDefinition": "Scope-2-Daten machen Energiebezug sichtbar und sind wichtig für Beschaffung, Produktwirkung und Transformationspfade.",
+      "usageNote": "Marktbasierte und standortbasierte Angaben sauber unterscheiden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ],
+      "officialSources": [
+        "GHG Protocol Scope 2 Guidance|https://ghgprotocol.org/scope-2-guidance"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Scope 2",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "scope-3",
+      "canonicalLabel": "Scope 3",
+      "slug": "scope-3",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 66,
+      "shortDefinition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
+      "hoverDefinition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
+      "longDefinition": "Scope-3-Daten sind besonders wichtig für Lieferkettenwirkung, Produktwirkung, Finanzierungswirkung und echte Preiswahrheit.",
+      "usageNote": "Datenqualität, Annahmen und Systemgrenzen immer offenlegen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "ghg-protocol",
+        "lieferkettendaten",
+        "pcf-product-carbon-footprint",
+        "cbam"
+      ],
+      "officialSources": [
+        "GHG Protocol Scope 3 Standard|https://ghgprotocol.org/standards/scope-3-standard"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Scope 3",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "scorecard",
       "canonicalLabel": "Scorecard",
       "slug": "scorecard",
       "status": "führender-begriff",
       "version": "1.0",
+      "category": "Messbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 99,
       "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
       "hoverDefinition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
       "longDefinition": "Scorecards verbinden WÖk-IDs, Benchmarks, Datenqualität, Wirkungsgrenzen und Bewertungslogik.",
@@ -965,7 +3642,12 @@
       "relatedTerms": [
         "woek-id",
         "benchmark",
-        "finalscore"
+        "finalscore",
+        "wirkungsindikator",
+        "reverse-merit-order"
+      ],
+      "officialSources": [
+        "WÖk Scorecards|https://wirkungsoekonomie.de/werkzeuge/scorecards/"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -1057,6 +3739,42 @@
       "lastUpdated": "2026-05-24"
     },
     {
+      "termId": "sdg-washing",
+      "canonicalLabel": "SDG-Washing",
+      "slug": "sdg-washing",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Kommunikation und Greenwashing",
+      "dataStandardsGroup": "Kommunikation und Greenwashing",
+      "dataStandardsOrder": 90,
+      "shortDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
+      "hoverDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
+      "longDefinition": "Die WÖk nutzt SDGs nicht als Logo-Sammlung, sondern als Referenzrahmen für Wirkung, Nebenwirkungen und Rückkopplung.",
+      "usageNote": "SDG-Bezug immer mit Wirkungspfad und Daten belegen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "greenwashing",
+        "impact-washing"
+      ],
+      "officialSources": [
+        "United Nations SDGs|https://sdgs.un.org/goals"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "SDG-Washing",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "category": "Grundbegriff",
       "termId": "sdgs",
       "canonicalLabel": "SDGs",
@@ -1094,6 +3812,49 @@
       "glossaryOrderKey": "sdgs",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-24"
+    },
+    {
+      "termId": "sfdr",
+      "canonicalLabel": "SFDR",
+      "slug": "sfdr",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Sustainable Finance",
+      "sourceDocument": "EUR-Lex Regulation 2019/2088",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 9,
+      "shortDefinition": "Die SFDR ist die EU-Offenlegungsverordnung für Finanzmarktteilnehmer zu Nachhaltigkeitsinformationen.",
+      "hoverDefinition": "SFDR strukturiert Nachhaltigkeitsinformationen im Finanzmarkt; WÖk übersetzt solche Berichtsdaten erst in Kapitalwirkung und Rückkopplung.",
+      "longDefinition": "SFDR-Daten können Hinweise auf nachhaltigkeitsbezogene Risiken, Produkteigenschaften und nachteilige Auswirkungen geben. Für die WÖk bleiben sie Berichtsdaten, solange sie nicht in Kapitalwirkung, Wirkungseinschätzung und Rückkopplung übersetzt werden.",
+      "usageNote": "SFDR nicht als Wirkungsnachweis oder Gütesiegel darstellen.",
+      "doNotConfuseWith": [
+        "EU-Taxonomie",
+        "Wirkungsbewertung"
+      ],
+      "synonyms": [
+        "Sustainable Finance Disclosure Regulation",
+        "Offenlegungsverordnung"
+      ],
+      "relatedTerms": [
+        "sustainable-finance",
+        "pai",
+        "eu-taxonomie",
+        "esg",
+        "kapitalwirkung"
+      ],
+      "officialSources": [
+        "EUR-Lex SFDR|https://eur-lex.europa.eu/eli/reg/2019/2088/oj/eng"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "SFDR als Finanzmarkt-Offenlegungsrahmen verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "sfdr",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Schutzbegriff",
@@ -1135,19 +3896,21 @@
       "lastUpdated": "2026-05-24"
     },
     {
-      "category": "Datenbegriff",
       "termId": "social-taxonomy",
-      "canonicalLabel": "Social Taxonomy",
+      "canonicalLabel": "Social Taxonomy / Sozialtaxonomie",
       "slug": "social-taxonomy",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "Social Taxonomy Ausarbeitung v1.0",
       "sourceDocument": "Social Taxonomy Ausarbeitung v1.0",
-      "sourceSection": "Sustainable Finance und soziale Wirkung",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 8,
       "shortDefinition": "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten.",
       "hoverDefinition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen.",
-      "longDefinition": "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann.",
-      "usageNote": "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Den Begriff daher als Vorschlags- und Weiterentwicklungsraum klar von der geltenden EU-Umwelt-Taxonomie unterscheiden.",
+      "longDefinition": "Die Social Taxonomy ist ein vorgeschlagener Klassifikationsrahmen für sozial nachhaltige wirtschaftliche Aktivitäten. Anders als die bestehende EU-Umwelttaxonomie ist sie derzeit nicht als gleichwertiges geltendes EU-Klassifikationssystem umgesetzt. Relevant ist vor allem der Bericht der Platform on Sustainable Finance von 2022. In der Wirkungsökonomie ist sie anschlussfähig, weil sie soziale Wirkung, menschenwürdige Arbeit, Verbraucher:innen, Gemeinschaften und menschenrechtliche Mindestbedingungen stärker systematisiert.",
+      "usageNote": "Social Taxonomy als vorgeschlagenen Rahmen und Bericht der Platform on Sustainable Finance einordnen, nicht als verbindliche geltende EU-Taxonomie.",
       "doNotConfuseWith": [
         "EU-Taxonomie",
         "ESG-Siegel",
@@ -1171,7 +3934,15 @@
         "reverse-merit-order",
         "t-sroi",
         "woek-id",
-        "social-credit"
+        "social-credit",
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "ilo-kernarbeitsnormen",
+        "un-guiding-principles",
+        "sdg-plus"
+      ],
+      "officialSources": [
+        "Platform on Sustainable Finance final report 2022|https://finance.ec.europa.eu/publications/social-taxonomy-report-platform-sustainable-finance_en"
       ],
       "relatedDocuments": [
         "social-taxonomy-wirkungsoekonomie"
@@ -1238,15 +4009,53 @@
       "lastUpdated": "2026-05-24"
     },
     {
-      "category": "Grundbegriff",
+      "termId": "steuerungsdaten",
+      "canonicalLabel": "Steuerungsdaten",
+      "slug": "steuerungsdaten",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 95,
+      "shortDefinition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
+      "hoverDefinition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
+      "longDefinition": "Die WÖk will Berichtsdaten so qualifizieren, dass sie als Steuerungsdaten in Preise, Steuern, Förderung und Kapital rückgekoppelt werden können.",
+      "usageNote": "Nur verwenden, wenn Daten tatsächlich entscheidungsrelevant werden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "scorecard"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Steuerungsdaten",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "termId": "stranded-assets",
       "canonicalLabel": "Stranded Assets",
       "slug": "stranded-assets",
       "status": "anschlussbegriff",
       "version": "1.0",
+      "category": "Grundbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Finanzmarkt und Risiko",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 76,
       "shortDefinition": "Stranded Assets sind Vermögenswerte, die durch veränderte Risiken, Regeln, Märkte, Technologien oder ökologische Bedingungen an Wert verlieren.",
       "hoverDefinition": "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt.",
       "longDefinition": "In der WÖk zeigen Stranded Assets, dass negative oder verdrängte Wirkungen irgendwann in Kapitalwert, Versicherbarkeit, Finanzierung, Betriebskosten oder Nutzbarkeit zurückkehren können.",
@@ -1263,9 +4072,14 @@
       "relatedTerms": [
         "wirkungsrisiko",
         "nachhaltigkeit",
-        "transitionsrisiko",
+        "transition-risk",
         "versicherbarkeit",
-        "kapitalzugang"
+        "kapitalzugang",
+        "transition-plan",
+        "kapitalwirkung"
+      ],
+      "officialSources": [
+        "TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"
       ],
       "relatedDocuments": [
         "wp-wohnungsmarkt",
@@ -1284,6 +4098,50 @@
       "glossaryOrderKey": "stranded assets",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "sustainable-finance",
+      "canonicalLabel": "Sustainable Finance",
+      "slug": "sustainable-finance",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Sustainable Finance",
+      "sourceDocument": "EU-Kommission Sustainable Finance",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 5,
+      "shortDefinition": "Sustainable Finance beschreibt Finanzierungs- und Kapitalmarktregeln, die Nachhaltigkeitsrisiken und Nachhaltigkeitsziele berücksichtigen.",
+      "hoverDefinition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung.",
+      "longDefinition": "Für die WÖk ist Sustainable Finance ein zentraler Anschlussraum. Die WÖk ersetzt diese Architektur nicht, sondern nutzt Berichtsdaten, Taxonomieinformationen und Risikodaten als Grundlage für Kapitalwirkung und Wirkungsrückkopplung.",
+      "usageNote": "Nicht als Synonym für WÖk verwenden. Sustainable Finance liefert Daten und Kapitalmarktanschluss.",
+      "doNotConfuseWith": [
+        "Wirkungsökonomie",
+        "Impact Investing"
+      ],
+      "synonyms": [
+        "nachhaltige Finanzierung",
+        "Sustainable-Finance-Architektur"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "sfdr",
+        "pai",
+        "esap",
+        "csrd",
+        "transition-finance"
+      ],
+      "officialSources": [
+        "EU-Kommission Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Dachbegriff für Finanzmarktanschluss verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "sustainable finance",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Messbegriff",
@@ -1325,6 +4183,263 @@
       "lastUpdated": "2026-05-23"
     },
     {
+      "termId": "taxonomy-kpis",
+      "canonicalLabel": "Taxonomie-KPIs",
+      "slug": "taxonomy-kpis",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 22,
+      "shortDefinition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
+      "hoverDefinition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
+      "longDefinition": "Diese Kennzahlen sind für die WÖk Berichtsdaten. Sie müssen interpretiert werden, bevor daraus Wirkung oder Kapitalrückkopplung entsteht.",
+      "usageNote": "Nicht als alleinigen Wirkungswert verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Taxonomie-KPIs",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "taxonomiefaehigkeit",
+      "canonicalLabel": "Taxonomiefähigkeit",
+      "slug": "taxonomiefaehigkeit",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 14,
+      "shortDefinition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
+      "hoverDefinition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
+      "longDefinition": "Für die WÖk ist Taxonomiefähigkeit eine erste Zuordnungsinformation, aber noch kein Nachweis positiver Wirkung.",
+      "usageNote": "Nicht mit Taxonomiekonformität verwechseln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "nace"
+      ],
+      "officialSources": [
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Taxonomiefähigkeit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "taxonomiekonformitaet",
+      "canonicalLabel": "Taxonomiekonformität",
+      "slug": "taxonomiekonformitaet",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 15,
+      "shortDefinition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
+      "hoverDefinition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
+      "longDefinition": "Sie liefert stärkere Umwelt-Daten als Taxonomiefähigkeit. Die WÖk prüft zusätzlich soziale, demokratische und systemische Wirkung.",
+      "usageNote": "Nicht als vollständige positive Netto-Wirkung lesen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "dnsh",
+        "mindestschutz-minimum-safeguards",
+        "technische-bewertungskriterien",
+        "taxonomy-kpis"
+      ],
+      "officialSources": [
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Taxonomiekonformität",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "taxonomy-navigator",
+      "canonicalLabel": "Taxonomy Navigator / Taxonomy Compass",
+      "slug": "taxonomy-navigator",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Sustainable Finance",
+      "sourceDocument": "EU-Kommission EU Taxonomy Navigator",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 12,
+      "shortDefinition": "Taxonomy Navigator und Taxonomy Compass sind EU-Hilfen zur Recherche von Taxonomie-Kriterien und Tätigkeiten.",
+      "hoverDefinition": "Der Taxonomy Navigator hilft, EU-Taxonomie-Tätigkeiten, Umweltziele und technische Bewertungskriterien zu finden.",
+      "longDefinition": "Für die WÖk sind diese Werkzeuge Recherche- und Anschlussquellen. Sie liefern Kriterien und Zuordnung, aber keine vollständige positive Netto-Wirkung.",
+      "usageNote": "Als offizielles Recherchewerkzeug zur EU-Taxonomie darstellen.",
+      "doNotConfuseWith": [
+        "WÖk-Scorecard",
+        "Wirkungsregister"
+      ],
+      "synonyms": [
+        "EU Taxonomy Navigator",
+        "EU Taxonomy Compass",
+        "Taxonomie-Kompass"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien",
+        "nace"
+      ],
+      "officialSources": [
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Recherchequelle für Taxonomie-Kriterien verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "taxonomy navigator",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "tcfd",
+      "canonicalLabel": "TCFD",
+      "slug": "tcfd",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 68,
+      "shortDefinition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
+      "hoverDefinition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
+      "longDefinition": "TCFD ist für die WÖk relevant, weil Klimarisiken finanzielle Steuerung, Kapitalwirkung und Transitionsrisiken beeinflussen.",
+      "usageNote": "Als Klimarisiko-Disclosure-Rahmen einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "issb-ifrs-s1-s2",
+        "tnfd"
+      ],
+      "officialSources": [
+        "TCFD|https://www.fsb-tcfd.org/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "TCFD",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "technische-bewertungskriterien",
+      "canonicalLabel": "Technische Bewertungskriterien",
+      "slug": "technische-bewertungskriterien",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 19,
+      "shortDefinition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
+      "hoverDefinition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
+      "longDefinition": "Die WÖk nutzt solche Kriterien als präzise Datenbasis, ergänzt sie aber um Bewertung, Nebenwirkungen, soziale Wirkung und Rückkopplung.",
+      "usageNote": "Nicht mit politischer Zieldefinition oder Gesamtwirkung verwechseln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomy-navigator",
+        "taxonomiekonformitaet"
+      ],
+      "officialSources": [
+        "EU Taxonomy Navigator|https://ec.europa.eu/sustainable-finance-taxonomy/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Technische Bewertungskriterien",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "tnfd",
+      "canonicalLabel": "TNFD",
+      "slug": "tnfd",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 69,
+      "shortDefinition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
+      "hoverDefinition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
+      "longDefinition": "TNFD hilft, Natur- und Biodiversitätsrisiken in Kapital-, Unternehmens- und Lieferkettenentscheidungen sichtbar zu machen.",
+      "usageNote": "Nicht auf Biodiversität allein verkürzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "physical-climate-risk",
+        "issb-ifrs-s1-s2"
+      ],
+      "officialSources": [
+        "TNFD Recommendations|https://tnfd.global/recommendations/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "TNFD",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
       "category": "Grundbegriff",
       "termId": "transformationswirkung",
       "canonicalLabel": "Transformationswirkung",
@@ -1356,6 +4471,233 @@
       "glossaryOrderKey": "transformationswirkung",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "transition-finance",
+      "canonicalLabel": "Transition Finance",
+      "slug": "transition-finance",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Sustainable Finance",
+      "sourceDocument": "EU-Kommission Transition Finance",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 13,
+      "shortDefinition": "Transition Finance bezeichnet Finanzierung, die Unternehmen oder Aktivitäten auf glaubwürdige Transformationspfade bringt.",
+      "hoverDefinition": "Transition Finance finanziert den Übergang, wenn Ziele, Pfade, Daten, Zeitplan und Governance nachvollziehbar sind.",
+      "longDefinition": "Für die WÖk ist Transition Finance wichtig, weil nicht nur der heutige Zustand zählt, sondern auch, ob Kapital echte Transformationswirkung ermöglicht oder schädliche Strukturen verlängert.",
+      "usageNote": "Nicht als Freifahrtschein für verzögerte Transformation verwenden.",
+      "doNotConfuseWith": [
+        "Greenwashing",
+        "Transition Plan"
+      ],
+      "synonyms": [
+        "Transformationsfinanzierung"
+      ],
+      "relatedTerms": [
+        "transition-plan",
+        "sustainable-finance",
+        "clean-industrial-deal",
+        "transition-risk"
+      ],
+      "officialSources": [
+        "EU-Kommission Recommendation on transition finance|https://finance.ec.europa.eu/publications/commission-recommendation-facilitating-finance-transition-sustainable-economy_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Finanzierung glaubwürdiger Pfade mit Prüfung nutzen.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "transition finance",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "transition-plan",
+      "canonicalLabel": "Transition Plan",
+      "slug": "transition-plan",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 75,
+      "shortDefinition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
+      "hoverDefinition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
+      "longDefinition": "Die WÖk fragt, ob Ziele, Investitionen, Zeitpfade, Daten, Governance und soziale Folgen zusammenpassen.",
+      "usageNote": "Nicht mit einer Absichtserklärung verwechseln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "transition-finance",
+        "sbti",
+        "transition-risk",
+        "net-zero"
+      ],
+      "officialSources": [
+        "EU-Kommission Transition Finance|https://finance.ec.europa.eu/publications/commission-recommendation-facilitating-finance-transition-sustainable-economy_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Transition Plan",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "transition-risk",
+      "canonicalLabel": "Transition Risk",
+      "slug": "transition-risk",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 74,
+      "shortDefinition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
+      "hoverDefinition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
+      "longDefinition": "Die WÖk nutzt Transition Risk, um Kapitalwirkung, Stranded Assets, Regulierung, Technologiepfade und soziale Abfederung zusammenzudenken.",
+      "usageNote": "Nicht nur als Unternehmensrisiko lesen, sondern auch als System- und Beschäftigungsrisiko.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "tcfd",
+        "transition-plan",
+        "stranded-assets",
+        "clean-industrial-deal"
+      ],
+      "officialSources": [
+        "TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Transition Risk",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "uebergangstaetigkeit",
+      "canonicalLabel": "Übergangstätigkeit",
+      "slug": "uebergangstaetigkeit",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 20,
+      "shortDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "hoverDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "longDefinition": "Die WÖk fragt, ob solche Tätigkeiten echte Transformation beschleunigen oder Lock-in-Effekte verlängern.",
+      "usageNote": "Immer mit Transition Plan, Zeitpfad und Stranded-Assets-Risiko prüfen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "transition-finance",
+        "transition-plan",
+        "stranded-assets"
+      ],
+      "officialSources": [
+        "EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Übergangstätigkeit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "un-guiding-principles",
+      "canonicalLabel": "UN Guiding Principles on Business and Human Rights",
+      "slug": "un-guiding-principles",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Lieferketten und Sorgfalt",
+      "dataStandardsGroup": "Lieferketten und Sorgfalt",
+      "dataStandardsOrder": 47,
+      "shortDefinition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
+      "hoverDefinition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
+      "longDefinition": "Sie sind eine zentrale Schutzgrenze für soziale Wirkung und Lieferkettenbewertung.",
+      "usageNote": "Als menschenrechtlichen Referenzrahmen nutzen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "lksg",
+        "social-taxonomy"
+      ],
+      "officialSources": [
+        "OHCHR UN Guiding Principles|https://www.ohchr.org/en/publications/reference-publications/guiding-principles-business-and-human-rights"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "UN Guiding Principles on Business and Human Rights",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "vsme",
+      "canonicalLabel": "VSME",
+      "slug": "vsme",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "EFRAG VSME",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 28,
+      "shortDefinition": "VSME ist der freiwillige Nachhaltigkeitsberichtsstandard für nicht börsennotierte kleine und mittlere Unternehmen.",
+      "hoverDefinition": "VSME unterstützt KMU bei einfachen, freiwilligen Nachhaltigkeitsinformationen für Banken, Lieferketten und Geschäftspartner.",
+      "longDefinition": "Für die WÖk ist VSME relevant, weil KMU-taugliche Datenformate entscheidend sind. VSME ersetzt keine Wirkungsmessung, kann aber Berichtsdaten liefern, die später in Wirkung und Rückkopplung übersetzt werden.",
+      "usageNote": "Als freiwilligen KMU-Standard einordnen.",
+      "doNotConfuseWith": [
+        "CSRD",
+        "ESRS"
+      ],
+      "synonyms": [
+        "Voluntary Sustainability Reporting Standard for SMEs",
+        "Voluntary Standard for SMEs"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "EFRAG VSME|https://www.efrag.org/en/smes-and-sustainability-reporting"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "VSME als KMU-Datenanschluss verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "vsme",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Grundbegriff",
@@ -1400,6 +4742,110 @@
       "glossaryOrderKey": "warmmietenneutralitaet",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-24"
+    },
+    {
+      "termId": "wasserstress",
+      "canonicalLabel": "Wasserstress",
+      "slug": "wasserstress",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 82,
+      "shortDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
+      "hoverDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
+      "longDefinition": "Wasserstress ist ein wichtiger Standort- und Lieferkettenindikator für Produktwirkung und regionale Resilienz.",
+      "usageNote": "Standortbezug und saisonale Unterschiede beachten.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "nature-related-risks",
+        "tnfd",
+        "produktdaten"
+      ],
+      "officialSources": [
+        "World Resources Institute Aqueduct|https://www.wri.org/aqueduct"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Wasserstress",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "wesentlicher-beitrag",
+      "canonicalLabel": "Wesentlicher Beitrag",
+      "slug": "wesentlicher-beitrag",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Sustainable Finance",
+      "dataStandardsGroup": "Sustainable Finance",
+      "dataStandardsOrder": 16,
+      "shortDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
+      "hoverDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
+      "longDefinition": "Die WÖk liest den wesentlichen Beitrag als Teilinformation und prüft, ob zugleich Schäden, Nebenwirkungen und Rückkopplungen berücksichtigt sind.",
+      "usageNote": "Nur im Zusammenspiel mit DNSH, Mindestschutz und technischen Bewertungskriterien verwenden.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "dnsh",
+        "technische-bewertungskriterien"
+      ],
+      "officialSources": [
+        "EU-Kommission EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Wesentlicher Beitrag",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
+    },
+    {
+      "termId": "who",
+      "canonicalLabel": "WHO",
+      "slug": "who",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · Klima, Natur und Risiken",
+      "dataStandardsGroup": "Klima, Natur und Risiken",
+      "dataStandardsOrder": 83,
+      "shortDefinition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
+      "hoverDefinition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
+      "longDefinition": "WHO-Daten und Leitlinien sind für Gesundheitswirkung, Prävention, Umweltgesundheit und Pflege relevant.",
+      "usageNote": "Als Gesundheitsreferenz einordnen.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "gesundheit",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "WHO|https://www.who.int/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "WHO",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Grundbegriff",
@@ -1623,15 +5069,17 @@
       "lastUpdated": "2026-05-23"
     },
     {
-      "category": "Datenbegriff",
       "termId": "wirkungsdaten",
       "canonicalLabel": "Wirkungsdaten",
       "slug": "wirkungsdaten",
       "status": "führender-begriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten und Standards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 96,
       "shortDefinition": "Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar.",
       "hoverDefinition": "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen.",
       "longDefinition": "Wirkungsdaten können Primärdaten, geprüfte Sekundärdaten, Produktdaten, Lieferkettendaten, Benchmarks, Prüfstatus und Unsicherheiten umfassen. Sie sind Grundlage für Scorecards, FinalScore, NWI und spätere Rückkopplung.",
@@ -1647,7 +5095,14 @@
         "wirkungsdatenraum",
         "woek-id",
         "scorecard",
-        "nwi"
+        "nwi",
+        "wirkung",
+        "wirkungspotenzial",
+        "datenqualitaet",
+        "wirkungsindikator"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -1659,15 +5114,17 @@
       "lastUpdated": "2026-05-24"
     },
     {
-      "category": "Datenbegriff",
       "termId": "wirkungsdatenraum",
       "canonicalLabel": "Wirkungsdatenraum",
       "slug": "wirkungsdatenraum",
       "status": "führender-begriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten und Standards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 106,
       "shortDefinition": "Ein Wirkungsdatenraum macht relevante Wirkungsdaten strukturiert, interoperabel und prüfbar nutzbar.",
       "hoverDefinition": "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann.",
       "longDefinition": "Wirkungsdatenräume verbinden Berichtsdaten, Produktdaten, Lieferkettendaten, Standards, Register und Bewertungslogik.",
@@ -1683,7 +5140,12 @@
         "csrd",
         "esrs",
         "digitaler-produktpass",
-        "woek-id"
+        "woek-id",
+        "wirkungsregister",
+        "wirkungsdaten"
+      ],
+      "officialSources": [
+        "WÖk Digitale Produktpässe und Wirkungsdatenräume|https://wirkungsoekonomie.de/werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
       ],
       "relatedDocuments": [],
       "examples": [],
@@ -1871,6 +5333,42 @@
       "glossaryOrderKey": "wirkungshaushalt",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "wirkungsindikator",
+      "canonicalLabel": "Wirkungsindikator",
+      "slug": "wirkungsindikator",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 98,
+      "shortDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
+      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
+      "longDefinition": "Die WÖk nutzt Indikatoren aus Standards, Datenquellen und Kontextwissen, ordnet sie aber nach Wirkungspfad, Datenqualität und Schutzgrenzen ein.",
+      "usageNote": "Nicht mit Wirkung selbst verwechseln.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsdaten",
+        "wirkungspfad",
+        "datenqualitaet",
+        "scorecard"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Wirkungsindikator",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Grundbegriff",
@@ -2282,6 +5780,42 @@
       "glossaryOrderKey": "wirkungsraum",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "wirkungsregister",
+      "canonicalLabel": "Wirkungsregister",
+      "slug": "wirkungsregister",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Daten, Standards und Regularien",
+      "sourceDocument": "Glossar-Datenstandards",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 105,
+      "shortDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
+      "hoverDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
+      "longDefinition": "Es ist als WÖk-Infrastruktur denkbar, damit Wirkung nachvollziehbar, versioniert und prüfbar wird.",
+      "usageNote": "Statushinweis: Modell- und Infrastrukturbegriff, keine bestehende amtliche Datenbank.",
+      "doNotConfuseWith": [],
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "scorecard"
+      ],
+      "officialSources": [
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "Wirkungsregister",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     },
     {
       "category": "Messbegriff",
@@ -2789,15 +6323,17 @@
       "lastUpdated": "2026-05-24"
     },
     {
-      "category": "Datenbegriff",
       "termId": "woek-id",
       "canonicalLabel": "WÖk-ID",
       "slug": "woek-id",
       "status": "führender-begriff",
       "version": "1.0",
+      "category": "Datenbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
+      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
+      "dataStandardsGroup": "WÖk-Übersetzung",
+      "dataStandardsOrder": 97,
       "shortDefinition": "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems.",
       "hoverDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
       "longDefinition": "WÖk-IDs verbinden SDGs, SDG+, Targets, Indikatorfamilien, Datenquellen und Bewertungslogik in einem Register.",
@@ -2814,7 +6350,12 @@
       "relatedTerms": [
         "scorecard",
         "benchmark",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "digitaler-produktpass",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "WÖk-ID Werkzeug|https://wirkungsoekonomie.de/werkzeuge/woek-ids/"
       ],
       "relatedDocuments": [
         "woek-master-items"
@@ -2904,6 +6445,47 @@
       "glossaryOrderKey": "wustg",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-23"
+    },
+    {
+      "termId": "xbrl",
+      "canonicalLabel": "XBRL",
+      "slug": "xbrl",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "category": "Datenbegriff",
+      "source": "Reporting und Prüfung",
+      "sourceDocument": "XBRL International",
+      "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
+      "dataStandardsGroup": "Reporting und Prüfung",
+      "dataStandardsOrder": 31,
+      "shortDefinition": "XBRL ist ein maschinenlesbares Format für strukturierte Unternehmens- und Berichtsdaten.",
+      "hoverDefinition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
+      "longDefinition": "XBRL ist für CSRD, ESRS, ESEF und ESAP relevant, weil es Daten vergleichbarer und verarbeitbarer macht. Es ist Datenformat, keine Wirkungsbewertung.",
+      "usageNote": "Als technisches Datenformat, nicht als Inhalt oder Qualitätssiegel darstellen.",
+      "doNotConfuseWith": [
+        "ESRS",
+        "Wirkungsdaten"
+      ],
+      "synonyms": [
+        "eXtensible Business Reporting Language"
+      ],
+      "relatedTerms": [
+        "esap",
+        "esef",
+        "csrd",
+        "berichtsdaten"
+      ],
+      "officialSources": [
+        "XBRL International|https://www.xbrl.org/"
+      ],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "XBRL als maschinenlesbaren Reportingstandard verwenden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "xbrl",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-05-27"
     }
   ]
 }

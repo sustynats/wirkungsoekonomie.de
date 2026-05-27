@@ -2739,6 +2739,87 @@ textarea {
   line-height: 1.68;
 }
 
+.glossary-standard-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.glossary-standard-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.42rem 0.75rem;
+  border: 1px solid rgba(47, 125, 92, 0.24);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.07);
+  color: var(--green-dark);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.glossary-standard-nav a:hover {
+  border-color: rgba(47, 125, 92, 0.5);
+  background: rgba(47, 125, 92, 0.12);
+}
+
+.glossary-standard-groups {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.glossary-standard-group {
+  display: grid;
+  gap: 0.7rem;
+  padding: clamp(1rem, 3vw, 1.45rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.glossary-standard-group-header {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 900px;
+}
+
+.glossary-standard-group-header h3 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.glossary-standard-group-header p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.glossary-standard-entry dd {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.glossary-standard-entry dd p {
+  margin: 0;
+}
+
+.glossary-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.55rem;
+  align-items: baseline;
+}
+
+.glossary-meta-line a {
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.glossary-meta-line a + a::before {
+  content: "";
+}
+
 .definition-box {
   display: grid;
   gap: 0.55rem;
