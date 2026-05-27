@@ -1,4 +1,4 @@
-# 32 – Portfolio-Wirkungsrating, Banken, Versicherungen und Kapitalzugang
+# 32 - Portfolio-Wirkungsrating, Banken, Versicherungen und Kapitalzugang
 
 **Untertitel:** Wirkungskredite, Versicherbarkeit, EBA-/EIOPA-Anschluss und KMU-taugliche Finanzdatenlogik
 

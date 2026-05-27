@@ -1,5 +1,5 @@
 # Usability Audit
-Stand: 2026-05-26T16:03:09.916Z
+Stand: 2026-05-27T04:38:12.604Z
 ## Durchgeführte Korrekturen
 - alte öffentliche Labels wie „Detailkonzept“ wurden in nutzerverständlichere „Konzeptpapier“-Sprache überführt.
 - „Einzeldossier“ wurde zu „Praxisdossier“ geglättet.
@@ -8,22 +8,14 @@ Stand: 2026-05-26T16:03:09.916Z
 - mehrfach erzeugte PDF-Labels wurden bereinigt.
 - globale CSS/JS-UX-Schicht unterscheidet Link-, Info- und Dokumentkarten, klappt lange Inhaltsverzeichnisse mobil ein und schützt Tabellen vor Abschneiden.
 ## Prüfumfang und Ergebnis
-- Geprüfte Dateien: 1120
-- In diesem finalen Prüflauf neu geänderte Dateien: 317
+- Geprüfte Dateien: 1128
+- In diesem finalen Prüflauf neu geänderte Dateien: 308
 - Die bereits angewendeten Korrekturen bleiben im Git-Diff dieses Releases nachvollziehbar.
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0.html`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0.html`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0.html`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0.html`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_master_downloadregister_v1.0.json`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_seitenregister_v1.0.json`
 - `assets/search/search-index.json`
 - `bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/index.html`
 - `data/content_quality/go2_detailkonzept_production_status.json`
 - `downloads.html`
-- `downloads/index.html`
 - `downloads/rang-15-migration-vielfalt/index.html`
-- `fachbibliothek/index.html`
 - `portale/migration-vielfalt/arbeitsmarkt-fachkraefte-demografie/index.html`
 - `portale/migration-vielfalt/bestands-und-nachlieferliste/index.html`
 - `portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/index.html`
@@ -45,7 +37,6 @@ Stand: 2026-05-26T16:03:09.916Z
 - `portale/migration-vielfalt/wohnen-quartiere-sozialraeume/index.html`
 - `portale/migration-vielfalt/zugehoerigkeit-und-teilgabe/index.html`
 - `verstehen/sdgs-sdgplus/geschichte/index.html`
-- `website-1-0-release/index.html`
 - `werkstatt/arbeitsbibliothek/gesetze/index.html`
 - `werkstatt/arbeitsbibliothek/instrumente/impact-controlling/index.html`
 - `werkstatt/arbeitsbibliothek/konzepte-dossiers/index.html`
@@ -91,7 +82,16 @@ Stand: 2026-05-26T16:03:09.916Z
 - `werkzeuge/impact-controlling/detailkonzepte/digitale-produktpaesse-wirkungsdatenraeume/index.html`
 - `werkzeuge/impact-controlling/detailkonzepte/impact-controlling-als-system/index.html`
 - `werkzeuge/impact-controlling/detailkonzepte/index.html`
-- ... 237 weitere Dateien
+- `werkzeuge/impact-controlling/detailkonzepte/kii-statt-kpi/index.html`
+- `werkzeuge/impact-controlling/detailkonzepte/nwi/index.html`
+- `werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/index.html`
+- `werkzeuge/impact-controlling/detailkonzepte/scorecards/index.html`
+- `werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html`
+- `werkzeuge/impact-controlling/detailkonzepte/woek-ids/index.html`
+- `werkzeuge/impact-controlling/dossiers/beispielrechnungen/index.html`
+- `werkzeuge/impact-controlling/dossiers/benchmarks-archetypen/index.html`
+- `werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/index.html`
+- ... 228 weitere Dateien
 ## Restmuster nach Korrektur
 | Prüfung | Treffer | Dateien |
 | --- | ---: | ---: |

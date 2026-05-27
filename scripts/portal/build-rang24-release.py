@@ -125,7 +125,7 @@ def clean(value: object) -> str:
     text = text.replace("internen Adminbereich", "geschützten Arbeitsbereich")
     text = text.replace("internem Adminbereich", "geschützten Arbeitsbereich")
     text = text.replace("GO24", "Website 1.0")
-    text = text.replace("–", "-").replace("—", "-")
+    text = text.replace("-", "-").replace("—", "-")
     text = re.sub(r"\s+", " ", text).strip()
     return text
 

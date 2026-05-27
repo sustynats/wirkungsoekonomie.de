@@ -1,6 +1,6 @@
 # Public DOCX Audit
 
-Stand: 2026-05-26T16:03:06.405Z
+Stand: 2026-05-27T04:38:09.097Z
 
 ## Policy
 
@@ -10,25 +10,21 @@ Stand: 2026-05-26T16:03:06.405Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 1090
-- Gefundene öffentliche DOCX-/Word-Assets: 4
-- Entfernte öffentliche DOCX-/Word-Links: 56
-- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 96
+- Geprüfte HTML-Dateien: 1092
+- Gefundene öffentliche DOCX-/Word-Assets: 0
+- Entfernte öffentliche DOCX-/Word-Links: 52
+- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 91
 - Suchindex DOCX-/Word-Treffer vor Bereinigung: 3
 - Verbleibende HTML-Dateien mit öffentlichen DOCX-Downloadmustern: 0
 
 ## Öffentliche DOCX-/Word-Assets
 
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0.docx`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0.docx`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0.docx`
-- `assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0.docx`
+- Keine
 
 ## Bereinigte HTML-Dateien
 
 | Datei | entfernte Links | Begriffe vor Bereinigung | Restmuster |
 | --- | ---: | ---: | ---: |
-| `downloads/index.html` | 4 | 0 | 0 |
 | `erleben/wirkungsrenten-rechner/index.html` | 0 | 2 | 0 |
 | `erleben/wohnwirkungsrechner/index.html` | 0 | 2 | 0 |
 | `erleben/wohnwirkungsrechner/stranded-asset-check/index.html` | 0 | 2 | 0 |
@@ -53,10 +49,6 @@ Stand: 2026-05-26T16:03:06.405Z
 | `werkzeuge/wirkungsrat/index.html` | 0 | 2 | 0 |
 | `werkzeuge/wirkungssteuergesetz/index.html` | 0 | 2 | 0 |
 | `werkzeuge/woek-ids/index.html` | 1 | 0 | 0 |
-| `wirkungsfelder/arbeit-einkommen/detailkonzepte/index.html` | 0 | 1 | 0 |
-| `wirkungsfelder/arbeit-einkommen/dossiers/index.html` | 0 | 1 | 0 |
-| `wirkungsfelder/arbeit-einkommen/gesamtdossier/index.html` | 0 | 1 | 0 |
-| `wirkungsfelder/arbeit-einkommen/konzeptpapier/index.html` | 0 | 1 | 0 |
 | `wirkungsfelder/finanzsystem-kapital/index.html` | 6 | 0 | 0 |
 | `wirkungsfelder/gesundheit-pflege/detailkonzepte/index.html` | 0 | 4 | 0 |
 | `wirkungsfelder/gesundheit-pflege/dossier/index.html` | 0 | 4 | 0 |

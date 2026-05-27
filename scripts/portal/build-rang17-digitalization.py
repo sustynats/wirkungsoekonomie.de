@@ -475,7 +475,7 @@ def write_minimal_docx(path: Path, text: str) -> None:
 
 def pdf_safe(text: str) -> str:
     repl = {
-        "–": "-",
+        "-": "-",
         "—": "-",
         "„": '"',
         "“": '"',

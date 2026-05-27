@@ -1,4 +1,4 @@
-# 30 – Kapital als Wirkungskraft und Kapitalwirkung statt Kapitalrendite
+# 30 - Kapital als Wirkungskraft und Kapitalwirkung statt Kapitalrendite
 
 **Untertitel:** Warum Kapital Werkzeug bleibt, aber nicht länger Kompass sein darf
 
