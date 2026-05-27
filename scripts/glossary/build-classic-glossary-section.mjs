@@ -156,12 +156,7 @@ ${letterTerms.map(renderTerm).join("\n")}
 
 function renderSection() {
   const letters = Array.from(termsByLetter.keys()).sort((a, b) => collator.compare(a, b));
-  const nav = letters
-    .map((letter) => {
-      const anchor = letter === "0-9" ? "ziffern" : letter.toLocaleLowerCase("de");
-      return `<a href="#glossar-${esc(anchor)}">${esc(letter)}</a>`;
-    })
-    .join("");
+  const nav = renderAlphabetNav(letters);
 
   return `      <section class="section section-muted" id="glossar" aria-labelledby="glossar-title">
         <div>
@@ -180,7 +175,25 @@ ${Array.from(termsByLetter.entries()).sort((a, b) => collator.compare(a[0], b[0]
       </section>`;
 }
 
-const updatedGlossary = `${glossaryHtml.slice(0, sectionStart)}${renderSection()}${glossaryHtml.slice(sectionEnd)}`;
+function renderAlphabetNav(letters) {
+  return letters
+    .map((letter) => {
+      const anchor = letter === "0-9" ? "ziffern" : letter.toLocaleLowerCase("de");
+      return `<a href="#glossar-${esc(anchor)}">${esc(letter)}</a>`;
+    })
+    .join("");
+}
+
+function updateHeroAlphabetNav(html) {
+  const letters = Array.from(termsByLetter.keys()).sort((a, b) => collator.compare(a, b));
+  const replacement = `<nav class="alphabet-nav" aria-label="Alphabetische Schnellnavigation im Glossar">
+                ${renderAlphabetNav(letters)}
+              </nav>`;
+  return html.replace(/<nav class="alphabet-nav" aria-label="Alphabetische Schnellnavigation im Glossar">[\s\S]*?<\/nav>/, replacement);
+}
+
+const updatedClassicGlossary = `${glossaryHtml.slice(0, sectionStart)}${renderSection()}${glossaryHtml.slice(sectionEnd)}`;
+const updatedGlossary = updateHeroAlphabetNav(updatedClassicGlossary);
 fs.writeFileSync(glossaryFile, updatedGlossary, "utf8");
 
 console.log(`Rendered ${terms.length} terms into the classic alphabetical glossary.`);

@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const file = path.join(root, "public/data/glossary.terms.json");
+const glossaryHtmlFile = path.join(root, "glossar.html");
 const required = [
   "termId",
   "canonicalLabel",
@@ -61,10 +62,52 @@ for (let i = 1; i < terms.length; i += 1) {
   }
 }
 
+function firstLetter(label) {
+  const normalized = String(label || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLocaleUpperCase("de");
+  const letter = normalized[0] || "#";
+  if (/[0-9]/.test(letter)) return "0-9";
+  if (/[A-Z]/.test(letter)) return letter;
+  return "#";
+}
+
+function anchorForLetter(letter) {
+  return letter === "0-9" ? "ziffern" : letter.toLocaleLowerCase("de");
+}
+
+function parseNavLetters(html, className, labelPattern = "") {
+  const nav = html.match(new RegExp(`<nav class="${className}"${labelPattern}[\\s\\S]*?</nav>`))?.[0] || "";
+  return Array.from(nav.matchAll(/href="#glossar-([^"]+)">([^<]+)<\/a>/g), (match) => ({
+    anchor: match[1],
+    label: match[2],
+  }));
+}
+
+if (fs.existsSync(glossaryHtmlFile)) {
+  const glossaryHtml = fs.readFileSync(glossaryHtmlFile, "utf8");
+  const expectedLetters = Array.from(new Set(terms.map((term) => firstLetter(term.glossaryOrderKey || term.canonicalLabel))))
+    .sort((a, b) => collator.compare(a, b));
+  const expected = expectedLetters.map((letter) => ({ anchor: anchorForLetter(letter), label: letter }));
+  const navs = [
+    ["alphabet-nav", ' aria-label="Alphabetische Schnellnavigation im Glossar"'],
+    ["glossary-standard-nav", ' aria-label="Alphabetische Glossar-Navigation"'],
+  ];
+  for (const [className, labelPattern] of navs) {
+    const actual = parseNavLetters(glossaryHtml, className, labelPattern);
+    const actualKey = actual.map((item) => `${item.anchor}:${item.label}`).join("|");
+    const expectedKey = expected.map((item) => `${item.anchor}:${item.label}`).join("|");
+    if (actualKey !== expectedKey) {
+      errors.push(`${className} mismatch. Expected ${expectedKey}; got ${actualKey || "(empty)"}`);
+    }
+  }
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 
 console.log(`Glossary check passed for ${terms.length} terms.`);
-
