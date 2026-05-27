@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-27T10:45:19.484Z
+Stand: 2026-05-27T12:47:10.505Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 174 |
-| Begriffe im Bereich Daten/Standards/Regularien | 117 |
-| Alias-Einträge | 395 |
+| Begriffe im klassischen Glossar | 175 |
+| Begriffe im Bereich Daten/Standards/Regularien | 118 |
+| Alias-Einträge | 407 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -71,6 +71,7 @@ Stand: 2026-05-27T10:45:19.484Z
 | Green Deal Industrial Plan | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Greenwashing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | GRI | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Herkunftsnachweis / HKN | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | IDGs | Grundbegriff | ja | - | ja | ja | ok |
 | ILO | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | ILO-Kernarbeitsnormen | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |

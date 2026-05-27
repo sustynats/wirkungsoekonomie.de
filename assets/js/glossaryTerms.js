@@ -919,6 +919,36 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "herkunftsnachweis-hkn",
+    "label": "Herkunftsnachweis / HKN",
+    "aliases": [
+      "Herkunftsnachweis / HKN",
+      "Herkunftsnachweis",
+      "HKN",
+      "HKN-Zertifikat",
+      "Herkunftsnachweisregister",
+      "HKNR",
+      "Guarantee of Origin",
+      "Guarantees of Origin",
+      "GoO",
+      "Ökostromnachweis",
+      "Gruenstromnachweis",
+      "Grünstromnachweis"
+    ],
+    "definition": "Ein Herkunftsnachweis belegt Herkunft und Menge erneuerbarer Stromerzeugung, aber nicht automatisch physische Lieferung, Zusätzlichkeit oder Gesamtwirkung.",
+    "url": "/begriffe/herkunftsnachweis-hkn/",
+    "priority": 46,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "idgs",
     "label": "IDGs",
     "aliases": [
@@ -929,7 +959,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Inner Development Goals beschreiben Fähigkeiten, die Menschen und Organisationen für Transformation brauchen. Sie ersetzen SDGs oder SDG+ nicht.",
     "url": "/begriffe/idgs/",
-    "priority": 46,
+    "priority": 47,
     "allowedContexts": [
       "home",
       "page",
@@ -948,7 +978,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
     "url": "/begriffe/ilo/",
-    "priority": 47,
+    "priority": 48,
     "allowedContexts": [
       "home",
       "page",
@@ -967,7 +997,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
     "url": "/begriffe/ilo-kernarbeitsnormen/",
-    "priority": 48,
+    "priority": 49,
     "allowedContexts": [
       "home",
       "page",
@@ -986,7 +1016,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
     "url": "/begriffe/impact-washing/",
-    "priority": 49,
+    "priority": 50,
     "allowedContexts": [
       "home",
       "page",
@@ -1005,7 +1035,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
     "url": "/begriffe/insetting/",
-    "priority": 50,
+    "priority": 51,
     "allowedContexts": [
       "home",
       "page",
@@ -1026,7 +1056,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
     "url": "/begriffe/inside-out-outside-in/",
-    "priority": 51,
+    "priority": 52,
     "allowedContexts": [
       "home",
       "page",
@@ -1045,7 +1075,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
     "url": "/begriffe/ipbes/",
-    "priority": 52,
+    "priority": 53,
     "allowedContexts": [
       "home",
       "page",
@@ -1064,7 +1094,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
     "url": "/begriffe/ipcc/",
-    "priority": 53,
+    "priority": 54,
     "allowedContexts": [
       "home",
       "page",
@@ -1087,7 +1117,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "IRO verbindet Wirkungen, Risiken und Chancen als zentrale Struktur der ESRS-Wesentlichkeitsanalyse.",
     "url": "/begriffe/iro/",
-    "priority": 54,
+    "priority": 55,
     "allowedContexts": [
       "home",
       "page",
@@ -1108,7 +1138,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
     "url": "/begriffe/iso-14040-14044/",
-    "priority": 55,
+    "priority": 56,
     "allowedContexts": [
       "home",
       "page",
@@ -1129,7 +1159,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
     "url": "/begriffe/issb-ifrs-s1-s2/",
-    "priority": 56,
+    "priority": 57,
     "allowedContexts": [
       "home",
       "page",
@@ -1150,7 +1180,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Just Transition verbindet Klimapolitik mit sozialer Abfederung, regionalem Strukturwandel und fairer Transformationsfinanzierung.",
     "url": "/begriffe/just-transition-mechanism/",
-    "priority": 57,
+    "priority": 58,
     "allowedContexts": [
       "home",
       "page",
@@ -1169,7 +1199,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
     "url": "/begriffe/klimaneutralitaet/",
-    "priority": 58,
+    "priority": 59,
     "allowedContexts": [
       "home",
       "page",
@@ -1188,7 +1218,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
     "url": "/begriffe/konservative-annahme/",
-    "priority": 59,
+    "priority": 60,
     "allowedContexts": [
       "home",
       "page",
@@ -1211,7 +1241,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
     "url": "/begriffe/lca/",
-    "priority": 60,
+    "priority": 61,
     "allowedContexts": [
       "home",
       "page",
@@ -1233,7 +1263,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Liability Risk meint Haftungsrisiken durch Schäden, Pflichtverletzungen oder irreführende Nachhaltigkeitsaussagen.",
     "url": "/begriffe/liability-risk/",
-    "priority": 61,
+    "priority": 62,
     "allowedContexts": [
       "home",
       "page",
@@ -1252,7 +1282,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
     "url": "/begriffe/lieferkettendaten/",
-    "priority": 62,
+    "priority": 63,
     "allowedContexts": [
       "home",
       "page",
@@ -1273,7 +1303,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Limited Assurance ist ein begrenztes Prüfungsniveau und sollte nicht wie vollständige Sicherheit gelesen werden.",
     "url": "/begriffe/limited-assurance/",
-    "priority": 63,
+    "priority": 64,
     "allowedContexts": [
       "home",
       "page",
@@ -1294,7 +1324,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
     "url": "/begriffe/lksg/",
-    "priority": 64,
+    "priority": 65,
     "allowedContexts": [
       "home",
       "page",
@@ -1313,7 +1343,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
     "url": "/begriffe/material-footprint/",
-    "priority": 65,
+    "priority": 66,
     "allowedContexts": [
       "home",
       "page",
@@ -1333,7 +1363,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Mensch, Planet und Demokratie übersetzt SDGs, Agenda 2030 und SDG+ in drei verständliche Wirkungsdimensionen.",
     "url": "/begriffe/mensch-planet-demokratie/",
-    "priority": 66,
+    "priority": 67,
     "allowedContexts": [
       "home",
       "page",
@@ -1354,7 +1384,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
     "url": "/begriffe/mindestschutz-minimum-safeguards/",
-    "priority": 67,
+    "priority": 68,
     "allowedContexts": [
       "home",
       "page",
@@ -1373,7 +1403,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung.",
     "url": "/begriffe/nace/",
-    "priority": 68,
+    "priority": 69,
     "allowedContexts": [
       "home",
       "page",
@@ -1396,7 +1426,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nachhaltigkeit bedeutet in der WÖk: Ein System lebt nicht auf Verschleiß, sondern bleibt krisenfest und erzeugt dauerhaft positive Netto-Wirkung für Mensch, Planet und Demokratie.",
     "url": "/begriffe/nachhaltigkeit/",
-    "priority": 69,
+    "priority": 70,
     "allowedContexts": [
       "home",
       "page",
@@ -1415,7 +1445,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
     "url": "/begriffe/nachhaltigkeitslabel/",
-    "priority": 70,
+    "priority": 71,
     "allowedContexts": [
       "home",
       "page",
@@ -1434,7 +1464,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
     "url": "/begriffe/nature-related-risks/",
-    "priority": 71,
+    "priority": 72,
     "allowedContexts": [
       "home",
       "page",
@@ -1453,7 +1483,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Negative Wirkung liegt vor, wenn eine Veränderung SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört.",
     "url": "/begriffe/negative-wirkung/",
-    "priority": 72,
+    "priority": 73,
     "allowedContexts": [
       "home",
       "page",
@@ -1472,7 +1502,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
     "url": "/begriffe/net-zero/",
-    "priority": 73,
+    "priority": 74,
     "allowedContexts": [
       "home",
       "page",
@@ -1492,7 +1522,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
     "url": "/begriffe/netto-wirkung/",
-    "priority": 74,
+    "priority": 75,
     "allowedContexts": [
       "home",
       "page",
@@ -1513,7 +1543,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
     "url": "/begriffe/nwi/",
-    "priority": 75,
+    "priority": 76,
     "allowedContexts": [
       "home",
       "page",
@@ -1532,7 +1562,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Neutrale Wirkung bedeutet, dass keine relevante positive oder negative Veränderung nachweisbar ist oder die Wirkung im Bewertungsrahmen neutral eingeordnet wird.",
     "url": "/begriffe/neutrale-wirkung/",
-    "priority": 76,
+    "priority": 77,
     "allowedContexts": [
       "home",
       "page",
@@ -1552,7 +1582,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "NFRD ist der Vorläufer der CSRD und erklärt, warum EU-Nachhaltigkeitsreporting heute stärker standardisiert ist.",
     "url": "/begriffe/nfrd/",
-    "priority": 77,
+    "priority": 78,
     "allowedContexts": [
       "home",
       "page",
@@ -1573,7 +1603,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.",
     "url": "/begriffe/nichtkompensationsprinzip/",
-    "priority": 78,
+    "priority": 79,
     "allowedContexts": [
       "home",
       "page",
@@ -1592,7 +1622,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
     "url": "/begriffe/oecd-leitsaetze/",
-    "priority": 79,
+    "priority": 80,
     "allowedContexts": [
       "home",
       "page",
@@ -1613,7 +1643,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
     "url": "/begriffe/oef-organisation-environmental-footprint/",
-    "priority": 80,
+    "priority": 81,
     "allowedContexts": [
       "home",
       "page",
@@ -1637,7 +1667,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
     "url": "/begriffe/offsetting-kompensation/",
-    "priority": 81,
+    "priority": 82,
     "allowedContexts": [
       "home",
       "page",
@@ -1660,7 +1690,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "PAI machen negative Nachhaltigkeitswirkungen im Finanzmarkt sichtbar, ersetzen aber keine vollständige WÖk-Netto-Wirkungsbewertung.",
     "url": "/begriffe/pai/",
-    "priority": 82,
+    "priority": 83,
     "allowedContexts": [
       "home",
       "page",
@@ -1681,7 +1711,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
     "url": "/begriffe/pcf-product-carbon-footprint/",
-    "priority": 83,
+    "priority": 84,
     "allowedContexts": [
       "home",
       "page",
@@ -1702,7 +1732,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
     "url": "/begriffe/pcr-product-category-rules/",
-    "priority": 84,
+    "priority": 85,
     "allowedContexts": [
       "home",
       "page",
@@ -1724,7 +1754,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
     "url": "/begriffe/pef-product-environmental-footprint/",
-    "priority": 85,
+    "priority": 86,
     "allowedContexts": [
       "home",
       "page",
@@ -1746,7 +1776,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
     "url": "/begriffe/physical-climate-risk/",
-    "priority": 86,
+    "priority": 87,
     "allowedContexts": [
       "home",
       "page",
@@ -1767,7 +1797,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
     "url": "/begriffe/positive-netto-wirkung/",
-    "priority": 87,
+    "priority": 88,
     "allowedContexts": [
       "home",
       "page",
@@ -1786,7 +1816,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Positive Wirkung liegt vor, wenn eine Veränderung auf SDGs, Agenda 2030 und SDG+ einzahlt.",
     "url": "/begriffe/positive-wirkung/",
-    "priority": 88,
+    "priority": 89,
     "allowedContexts": [
       "home",
       "page",
@@ -1805,7 +1835,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
     "url": "/begriffe/produktdaten/",
-    "priority": 89,
+    "priority": 90,
     "allowedContexts": [
       "home",
       "page",
@@ -1826,7 +1856,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Reasonable Assurance schafft höhere, aber keine absolute Sicherheit über Berichtsinformationen.",
     "url": "/begriffe/reasonable-assurance/",
-    "priority": 90,
+    "priority": 91,
     "allowedContexts": [
       "home",
       "page",
@@ -1845,7 +1875,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
     "url": "/begriffe/recyclingquote/",
-    "priority": 91,
+    "priority": 92,
     "allowedContexts": [
       "home",
       "page",
@@ -1866,7 +1896,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Residual Emissions sind verbleibende Restemissionen nach weitgehender Reduktion.",
     "url": "/begriffe/residual-emissions/",
-    "priority": 92,
+    "priority": 93,
     "allowedContexts": [
       "home",
       "page",
@@ -1885,7 +1915,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten.",
     "url": "/begriffe/resonanzraum/",
-    "priority": 93,
+    "priority": 94,
     "allowedContexts": [
       "home",
       "page",
@@ -1906,7 +1936,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Responsible Marketing verbindet belegbare Claims, Transparenz und Verantwortung für Kommunikationswirkung.",
     "url": "/begriffe/responsible-marketing/",
-    "priority": 94,
+    "priority": 95,
     "allowedContexts": [
       "home",
       "page",
@@ -1928,7 +1958,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
     "url": "/begriffe/reverse-merit-order/",
-    "priority": 95,
+    "priority": 96,
     "allowedContexts": [
       "home",
       "page",
@@ -1947,7 +1977,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
     "url": "/begriffe/rezyklatanteil/",
-    "priority": 96,
+    "priority": 97,
     "allowedContexts": [
       "home",
       "page",
@@ -1966,7 +1996,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
     "url": "/begriffe/sbti/",
-    "priority": 97,
+    "priority": 98,
     "allowedContexts": [
       "home",
       "page",
@@ -1985,7 +2015,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
     "url": "/begriffe/scope-1/",
-    "priority": 98,
+    "priority": 99,
     "allowedContexts": [
       "home",
       "page",
@@ -2004,7 +2034,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
     "url": "/begriffe/scope-2/",
-    "priority": 99,
+    "priority": 100,
     "allowedContexts": [
       "home",
       "page",
@@ -2023,7 +2053,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
     "url": "/begriffe/scope-3/",
-    "priority": 100,
+    "priority": 101,
     "allowedContexts": [
       "home",
       "page",
@@ -2042,7 +2072,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
     "url": "/begriffe/scorecard/",
-    "priority": 101,
+    "priority": 102,
     "allowedContexts": [
       "home",
       "page",
@@ -2063,7 +2093,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie.",
     "url": "/begriffe/sdg-plus/",
-    "priority": 102,
+    "priority": 103,
     "allowedContexts": [
       "home",
       "page",
@@ -2087,7 +2117,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der SDG-/SDG+-Referenzrahmen ordnet positive, negative und neutrale Wirkung öffentlich nachvollziehbar ein.",
     "url": "/begriffe/sdg-sdgplus-referenzrahmen/",
-    "priority": 103,
+    "priority": 104,
     "allowedContexts": [
       "home",
       "page",
@@ -2106,7 +2136,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
     "url": "/begriffe/sdg-washing/",
-    "priority": 104,
+    "priority": 105,
     "allowedContexts": [
       "home",
       "page",
@@ -2128,7 +2158,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die SDGs bilden den offiziellen globalen Zielrahmen für nachhaltige Entwicklung.",
     "url": "/begriffe/sdgs/",
-    "priority": 105,
+    "priority": 106,
     "allowedContexts": [
       "home",
       "page",
@@ -2150,7 +2180,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SFDR strukturiert Nachhaltigkeitsinformationen im Finanzmarkt; WÖk übersetzt solche Berichtsdaten erst in Kapitalwirkung und Rückkopplung.",
     "url": "/begriffe/sfdr/",
-    "priority": 106,
+    "priority": 107,
     "allowedContexts": [
       "home",
       "page",
@@ -2171,7 +2201,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Social Credit ist die umfassende Bewertung von Menschen nach Verhalten oder Konformität. Die Wirkungsökonomie zieht hier eine rote Linie.",
     "url": "/begriffe/social-credit/",
-    "priority": 107,
+    "priority": 108,
     "allowedContexts": [
       "home",
       "page",
@@ -2197,7 +2227,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen.",
     "url": "/begriffe/social-taxonomy/",
-    "priority": 108,
+    "priority": 109,
     "allowedContexts": [
       "home",
       "page",
@@ -2217,7 +2247,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Spekulationslogik ist nicht jede Rendite, sondern Rendite aus Verdrängung, Leerstand, Bodenhortung oder entkoppelter Knappheitsausnutzung.",
     "url": "/begriffe/spekulationslogik/",
-    "priority": 109,
+    "priority": 110,
     "allowedContexts": [
       "home",
       "page",
@@ -2236,7 +2266,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
     "url": "/begriffe/steuerungsdaten/",
-    "priority": 110,
+    "priority": 111,
     "allowedContexts": [
       "home",
       "page",
@@ -2257,7 +2287,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt.",
     "url": "/begriffe/stranded-assets/",
-    "priority": 111,
+    "priority": 112,
     "allowedContexts": [
       "home",
       "page",
@@ -2283,7 +2313,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung.",
     "url": "/begriffe/sustainable-finance/",
-    "priority": 112,
+    "priority": 113,
     "allowedContexts": [
       "home",
       "page",
@@ -2304,7 +2334,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
     "url": "/begriffe/t-sroi/",
-    "priority": 113,
+    "priority": 114,
     "allowedContexts": [
       "home",
       "page",
@@ -2323,7 +2353,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
     "url": "/begriffe/taxonomy-kpis/",
-    "priority": 114,
+    "priority": 115,
     "allowedContexts": [
       "home",
       "page",
@@ -2342,7 +2372,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
     "url": "/begriffe/taxonomiefaehigkeit/",
-    "priority": 115,
+    "priority": 116,
     "allowedContexts": [
       "home",
       "page",
@@ -2361,7 +2391,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
     "url": "/begriffe/taxonomiekonformitaet/",
-    "priority": 116,
+    "priority": 117,
     "allowedContexts": [
       "home",
       "page",
@@ -2385,7 +2415,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Taxonomy Navigator hilft, EU-Taxonomie-Tätigkeiten, Umweltziele und technische Bewertungskriterien zu finden.",
     "url": "/begriffe/taxonomy-navigator/",
-    "priority": 117,
+    "priority": 118,
     "allowedContexts": [
       "home",
       "page",
@@ -2404,7 +2434,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
     "url": "/begriffe/tcfd/",
-    "priority": 118,
+    "priority": 119,
     "allowedContexts": [
       "home",
       "page",
@@ -2423,7 +2453,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
     "url": "/begriffe/technische-bewertungskriterien/",
-    "priority": 119,
+    "priority": 120,
     "allowedContexts": [
       "home",
       "page",
@@ -2442,7 +2472,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
     "url": "/begriffe/tnfd/",
-    "priority": 120,
+    "priority": 121,
     "allowedContexts": [
       "home",
       "page",
@@ -2461,7 +2491,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen.",
     "url": "/begriffe/transformationswirkung/",
-    "priority": 121,
+    "priority": 122,
     "allowedContexts": [
       "home",
       "page",
@@ -2481,7 +2511,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transition Finance finanziert den Übergang, wenn Ziele, Pfade, Daten, Zeitplan und Governance nachvollziehbar sind.",
     "url": "/begriffe/transition-finance/",
-    "priority": 122,
+    "priority": 123,
     "allowedContexts": [
       "home",
       "page",
@@ -2500,7 +2530,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
     "url": "/begriffe/transition-plan/",
-    "priority": 123,
+    "priority": 124,
     "allowedContexts": [
       "home",
       "page",
@@ -2521,7 +2551,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
     "url": "/begriffe/transition-risk/",
-    "priority": 124,
+    "priority": 125,
     "allowedContexts": [
       "home",
       "page",
@@ -2540,7 +2570,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
     "url": "/begriffe/uebergangstaetigkeit/",
-    "priority": 125,
+    "priority": 126,
     "allowedContexts": [
       "home",
       "page",
@@ -2559,7 +2589,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
     "url": "/begriffe/un-guiding-principles/",
-    "priority": 126,
+    "priority": 127,
     "allowedContexts": [
       "home",
       "page",
@@ -2580,7 +2610,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "VSME unterstützt KMU bei einfachen, freiwilligen Nachhaltigkeitsinformationen für Banken, Lieferketten und Geschäftspartner.",
     "url": "/begriffe/vsme/",
-    "priority": 127,
+    "priority": 128,
     "allowedContexts": [
       "home",
       "page",
@@ -2600,7 +2630,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Warmmietenneutralität prüft, ob Energieeinsparung, Förderung und Miete zusammen die Haushalte nicht überlasten.",
     "url": "/begriffe/warmmietenneutralitaet/",
-    "priority": 128,
+    "priority": 129,
     "allowedContexts": [
       "home",
       "page",
@@ -2619,7 +2649,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
     "url": "/begriffe/wasserstress/",
-    "priority": 129,
+    "priority": 130,
     "allowedContexts": [
       "home",
       "page",
@@ -2638,7 +2668,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
     "url": "/begriffe/wesentlicher-beitrag/",
-    "priority": 130,
+    "priority": 131,
     "allowedContexts": [
       "home",
       "page",
@@ -2657,7 +2687,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
     "url": "/begriffe/who/",
-    "priority": 131,
+    "priority": 132,
     "allowedContexts": [
       "home",
       "page",
@@ -2677,7 +2707,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkmechanismus beschreibt, wie aus einem Auslöser Wirkung entstehen kann.",
     "url": "/begriffe/wirkmechanismus/",
-    "priority": 132,
+    "priority": 133,
     "allowedContexts": [
       "home",
       "page",
@@ -2697,7 +2727,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
     "url": "/begriffe/wirkstoff/",
-    "priority": 133,
+    "priority": 134,
     "allowedContexts": [
       "home",
       "page",
@@ -2718,7 +2748,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
     "url": "/begriffe/wirkung/",
-    "priority": 134,
+    "priority": 135,
     "allowedContexts": [
       "home",
       "page",
@@ -2737,7 +2767,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
     "url": "/begriffe/wirkungsarchitektur/",
-    "priority": 135,
+    "priority": 136,
     "allowedContexts": [
       "home",
       "page",
@@ -2757,7 +2787,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
     "url": "/begriffe/wirkungsbewertung/",
-    "priority": 136,
+    "priority": 137,
     "allowedContexts": [
       "home",
       "page",
@@ -2777,7 +2807,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsblindheit heißt: Folgen werden erzeugt, aber nicht gesehen, bewertet oder zurückgekoppelt.",
     "url": "/begriffe/wirkungsblindheit/",
-    "priority": 137,
+    "priority": 138,
     "allowedContexts": [
       "home",
       "page",
@@ -2797,7 +2827,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen.",
     "url": "/begriffe/wirkungsdaten/",
-    "priority": 138,
+    "priority": 139,
     "allowedContexts": [
       "home",
       "page",
@@ -2817,7 +2847,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann.",
     "url": "/begriffe/wirkungsdatenraum/",
-    "priority": 139,
+    "priority": 140,
     "allowedContexts": [
       "home",
       "page",
@@ -2837,7 +2867,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung.",
     "url": "/begriffe/wirkungseinkommen/",
-    "priority": 140,
+    "priority": 141,
     "allowedContexts": [
       "home",
       "page",
@@ -2857,7 +2887,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsempfänger sind diejenigen, bei denen eine Zustandsveränderung ankommt.",
     "url": "/begriffe/wirkungsempfaenger/",
-    "priority": 141,
+    "priority": 142,
     "allowedContexts": [
       "home",
       "page",
@@ -2878,7 +2908,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsfonds ist ein transparenter Fondsmechanismus für Rückflüsse aus Wertschöpfung, Beiträgen oder Wirkungssteuerlogik.",
     "url": "/begriffe/wirkungsfonds/",
-    "priority": 142,
+    "priority": 143,
     "allowedContexts": [
       "home",
       "page",
@@ -2899,7 +2929,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
     "url": "/begriffe/wirkungsgrenze/",
-    "priority": 143,
+    "priority": 144,
     "allowedContexts": [
       "home",
       "page",
@@ -2918,7 +2948,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung.",
     "url": "/begriffe/wirkungshaushalt/",
-    "priority": 144,
+    "priority": 145,
     "allowedContexts": [
       "home",
       "page",
@@ -2937,7 +2967,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
     "url": "/begriffe/wirkungsindikator/",
-    "priority": 145,
+    "priority": 146,
     "allowedContexts": [
       "home",
       "page",
@@ -2956,7 +2986,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern.",
     "url": "/begriffe/wirkungskompetenz/",
-    "priority": 146,
+    "priority": 147,
     "allowedContexts": [
       "home",
       "page",
@@ -2975,7 +3005,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
     "url": "/begriffe/wirkungslenkung/",
-    "priority": 147,
+    "priority": 148,
     "allowedContexts": [
       "home",
       "page",
@@ -2994,7 +3024,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
     "url": "/begriffe/wirkungsnetz/",
-    "priority": 148,
+    "priority": 149,
     "allowedContexts": [
       "home",
       "page",
@@ -3014,7 +3044,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben.",
     "url": "/begriffe/wirkungspaedagogik/",
-    "priority": 149,
+    "priority": 150,
     "allowedContexts": [
       "home",
       "page",
@@ -3034,7 +3064,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
     "url": "/begriffe/wirkungspfad/",
-    "priority": 150,
+    "priority": 151,
     "allowedContexts": [
       "home",
       "page",
@@ -3054,7 +3084,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
     "url": "/begriffe/wirkungspflicht-des-eigentums/",
-    "priority": 151,
+    "priority": 152,
     "allowedContexts": [
       "home",
       "page",
@@ -3074,7 +3104,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
     "url": "/begriffe/wirkungspotenzial/",
-    "priority": 152,
+    "priority": 153,
     "allowedContexts": [
       "home",
       "page",
@@ -3095,7 +3125,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
     "url": "/begriffe/wirkungspunkte/",
-    "priority": 153,
+    "priority": 154,
     "allowedContexts": [
       "home",
       "page",
@@ -3114,7 +3144,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
     "url": "/begriffe/wirkungsradar/",
-    "priority": 154,
+    "priority": 155,
     "allowedContexts": [
       "home",
       "page",
@@ -3133,7 +3163,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
     "url": "/begriffe/wirkungsrat/",
-    "priority": 155,
+    "priority": 156,
     "allowedContexts": [
       "home",
       "page",
@@ -3152,7 +3182,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
     "url": "/begriffe/wirkungsraum/",
-    "priority": 156,
+    "priority": 157,
     "allowedContexts": [
       "home",
       "page",
@@ -3171,7 +3201,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
     "url": "/begriffe/wirkungsregister/",
-    "priority": 157,
+    "priority": 158,
     "allowedContexts": [
       "home",
       "page",
@@ -3191,7 +3221,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
     "url": "/begriffe/wirkungsrente/",
-    "priority": 158,
+    "priority": 159,
     "allowedContexts": [
       "home",
       "page",
@@ -3211,7 +3241,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungsresilienz/",
-    "priority": 159,
+    "priority": 160,
     "allowedContexts": [
       "home",
       "page",
@@ -3230,7 +3260,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
     "url": "/begriffe/wirkungsrisiko/",
-    "priority": 160,
+    "priority": 161,
     "allowedContexts": [
       "home",
       "page",
@@ -3250,7 +3280,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert.",
     "url": "/begriffe/wirkungsrueckkopplung/",
-    "priority": 161,
+    "priority": 162,
     "allowedContexts": [
       "home",
       "page",
@@ -3271,7 +3301,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet.",
     "url": "/begriffe/wirkungsschule/",
-    "priority": 162,
+    "priority": 163,
     "allowedContexts": [
       "home",
       "page",
@@ -3291,7 +3321,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
     "url": "/begriffe/wirkungssteuer/",
-    "priority": 163,
+    "priority": 164,
     "allowedContexts": [
       "home",
       "page",
@@ -3312,7 +3342,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
     "url": "/begriffe/wirkungssteuergesetz/",
-    "priority": 164,
+    "priority": 165,
     "allowedContexts": [
       "home",
       "page",
@@ -3331,7 +3361,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
     "url": "/begriffe/wirkungstraeger/",
-    "priority": 165,
+    "priority": 166,
     "allowedContexts": [
       "home",
       "page",
@@ -3352,7 +3382,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
     "url": "/begriffe/wirkungsumsatzsteuer/",
-    "priority": 166,
+    "priority": 167,
     "allowedContexts": [
       "home",
       "page",
@@ -3372,7 +3402,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
     "url": "/begriffe/wirkungsvermietung/",
-    "priority": 167,
+    "priority": 168,
     "allowedContexts": [
       "home",
       "page",
@@ -3392,7 +3422,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
     "url": "/begriffe/wirkungswahrheit/",
-    "priority": 168,
+    "priority": 169,
     "allowedContexts": [
       "home",
       "page",
@@ -3413,7 +3443,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
     "url": "/begriffe/wix-vi/",
-    "priority": 169,
+    "priority": 170,
     "allowedContexts": [
       "home",
       "page",
@@ -3433,7 +3463,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
     "url": "/begriffe/wohnwirkung/",
-    "priority": 170,
+    "priority": 171,
     "allowedContexts": [
       "home",
       "page",
@@ -3455,7 +3485,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
     "url": "/begriffe/woek-id/",
-    "priority": 171,
+    "priority": 172,
     "allowedContexts": [
       "home",
       "page",
@@ -3475,7 +3505,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
     "url": "/begriffe/wstg/",
-    "priority": 172,
+    "priority": 173,
     "allowedContexts": [
       "home",
       "page",
@@ -3495,7 +3525,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
-    "priority": 173,
+    "priority": 174,
     "allowedContexts": [
       "home",
       "page",
@@ -3515,7 +3545,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
     "url": "/begriffe/xbrl/",
-    "priority": 174,
+    "priority": 175,
     "allowedContexts": [
       "home",
       "page",
