@@ -140,6 +140,7 @@ function sanitizeHtml(html, file) {
   });
   changed = sanitizeText(changed);
   changed = changed.replace(/@@WOEK-TAG-(\d+)@@/g, (_, index) => protectedTags[Number(index)] || "");
+  changed = changed.replace(/[^\S\r\n]+$/gm, "");
   const visibleDocx = (changed.match(/(?:href=["'][^"']+\.docx|\.docx\b|\.doc\b)/gi) || []).length;
   return {
     html: changed,

@@ -8,9 +8,9 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 
 ## Zusammenfassung
 
-- Zielseiten geprüft: 489
-- Buchbezug vorhanden nach Lauf: 489
-- Im aktuellen Lauf ergänzt oder ersetzt: 290
+- Zielseiten geprüft: 490
+- Buchbezug vorhanden nach Lauf: 490
+- Im aktuellen Lauf ergänzt oder ersetzt: 291
 - Bereits unverändert: 199
 - Ohne passende Referenz übersprungen: 0
 - Ohne Einfügepunkt übersprungen: 0
@@ -27,7 +27,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | default | 29 |
 | finanzsystem-kapital | 28 |
 | arbeit-einkommen | 26 |
-| medien-oeffentlichkeit | 23 |
+| medien-oeffentlichkeit | 24 |
 | kritik-schutz | 21 |
 | bildung | 21 |
 | internationale-ordnung | 20 |
@@ -180,7 +180,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/digitale-oeffentliche-infrastruktur/ | Öffentlich-rechtliche digitale Infrastruktur und Agentur für Digitale Öffentlichkeit | 6 |
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/ | Digitale Selbstbestimmung, Datenschutz und Jugendschutz | 6 |
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/dossier/ | Gesamtdossier Medien, Social Media &amp;amp; Journalismus | 6 |
-| replaced | /wirkungsfelder/medien-oeffentlichkeit/dossiers/ | Dossier-Set Medien, Social Media &amp;amp; Journalismus | 6 |
+| replaced | /wirkungsfelder/medien-oeffentlichkeit/dossiers/ | Dossiers Medien, Social Media &amp;amp; Journalismus | 6 |
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/ | Medien, Social Media &amp; Journalismus | 6 |
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/ | Journalismus: Wirkung statt Klicks | 6 |
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/konzept/ | Konzeptpapier Medien, Social Media &amp;amp; Journalismus | 6 |
@@ -194,6 +194,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/politische-kommunikation-wahlwerbung/ | Politische Kommunikation, Wahlwerbung und Microtargeting | 6 |
 | replaced | /wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/ | Sprache, Framing und Diskurskultur | 6 |
 | inserted-before-section | /wirkungsfelder/medien-oeffentlichkeit/sprache-framing-diskurskultur/ | Sprache, Framing und Diskurskultur | 6 |
+| replaced | /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ | Wirkungsräume gestalten | 6 |
 | replaced | /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ | Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | 7 |
 | replaced | /wirkungsfelder/produkte-konsum/apfelbeispiel/ | Regionaler Apfel vs. Chile-Apfel | 7 |
 | replaced | /wirkungsfelder/produkte-konsum/basf-polyamid/ | Von der CSRD zur Produktscorecard | 7 |
@@ -658,7 +659,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/digitale-oeffentliche-infrastruktur/ | Öffentlich-rechtliche digitale Infrastruktur und Agentur für Digitale Öffentlichkeit | 6 |
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/ | Digitale Selbstbestimmung, Datenschutz und Jugendschutz | 6 |
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/dossier/ | Gesamtdossier Medien, Social Media &amp;amp; Journalismus | 6 |
-| replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/dossiers/ | Dossier-Set Medien, Social Media &amp;amp; Journalismus | 6 |
+| replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/dossiers/ | Dossiers Medien, Social Media &amp;amp; Journalismus | 6 |
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/ | Medien, Social Media &amp; Journalismus | 6 |
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/ | Journalismus: Wirkung statt Klicks | 6 |
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/konzept/ | Konzeptpapier Medien, Social Media &amp;amp; Journalismus | 6 |
@@ -672,6 +673,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/politische-kommunikation-wahlwerbung/ | Politische Kommunikation, Wahlwerbung und Microtargeting | 6 |
 | replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/ | Sprache, Framing und Diskurskultur | 6 |
 | inserted-before-section | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/sprache-framing-diskurskultur/ | Sprache, Framing und Diskurskultur | 6 |
+| replaced | medien-oeffentlichkeit | /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ | Wirkungsräume gestalten | 6 |
 | replaced | produkte-konsum | /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ | Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | 7 |
 | replaced | produkte-konsum | /wirkungsfelder/produkte-konsum/apfelbeispiel/ | Regionaler Apfel vs. Chile-Apfel | 7 |
 | replaced | produkte-konsum | /wirkungsfelder/produkte-konsum/basf-polyamid/ | Von der CSRD zur Produktscorecard | 7 |

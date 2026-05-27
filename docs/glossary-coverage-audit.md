@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-27T13:58:29.093Z
+Stand: 2026-05-27T17:39:56.976Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 240 |
+| Begriffe im klassischen Glossar | 243 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1013 |
+| Alias-Einträge | 1024 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -101,6 +101,7 @@ Stand: 2026-05-27T13:58:29.093Z
 | Hitzeschutz / Hitzeaktionsplan | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Hitzestress | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Hochwasserrisiko | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Host-Wirkungsscore | Messbegriff | ja | - | ja | ja | ok |
 | Hotspot-Analyse | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Human Rights Due Diligence / HRDD | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Human Rights Impact Assessment / HRIA | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
@@ -174,6 +175,7 @@ Stand: 2026-05-27T13:58:29.093Z
 | Renaturierung | Grundbegriff | ja | - | ja | ja | ok |
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Residual Emissions | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Resonanzarchitektur | Architekturbegriff | ja | - | ja | ja | ok |
 | Resonanzraum | Architekturbegriff | ja | - | ja | ja | ok |
 | Responsible Marketing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Reverse Merit Order | WÖk-Übersetzung | ja | ja | ja | ja | ok |
@@ -234,6 +236,7 @@ Stand: 2026-05-27T13:58:29.093Z
 | Wirkungskompetenz | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungslenkung | Steuerungsbegriff | ja | - | ja | ja | ok |
 | Wirkungsnetz | Architekturbegriff | ja | - | ja | ja | ok |
+| Wirkungsorientiertes Hosting | Praxisbegriff | ja | - | ja | ja | ok |
 | Wirkungspädagogik | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungspfad | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungspflicht des Eigentums | Grundbegriff | ja | - | ja | ja | ok |

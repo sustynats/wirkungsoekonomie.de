@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const DATE = "2026-05-24";
+const DATE = "2026-05-27";
 const CSS_VERSION = "20260524-medien-oeffentlichkeit";
 const JS_VERSION = "20260523-nachhaltigkeit";
 const SRC = "docs/medien-oeffentlichkeit";
@@ -13,6 +13,9 @@ const EXTRACT = `${SRC}/docx-extracts`;
 
 const portalData = JSON.parse(fs.readFileSync(path.join(ROOT, SOURCE, "medien_oeffentlichkeit_portal_matrix_v0_1.json"), "utf8"));
 const mwix = JSON.parse(fs.readFileSync(path.join(ROOT, SOURCE, "mwix_working_model_v0_1.json"), "utf8"));
+const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
+const headerTemplate = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8");
+const footerTemplate = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 
 const modules = [
   ["oeffentlichkeit-als-wirkungsraum", "Öffentlichkeit als Wirkungsraum"],
@@ -61,17 +64,30 @@ const docs = {
     download: "assets/downloads/woek_medien_oeffentlichkeit_detailkonzepte_umfangreich_v0_1.docx",
   },
   singleDossier: {
-    title: "Einzeldossier-Set Medien, Social Media & Journalismus",
+    title: "Einzeldossiers Medien, Social Media & Journalismus",
     rel: `${EXTRACT}/woek_medien_oeffentlichkeit_einzeldossier_set_v0_1.md`,
     download: "assets/downloads/woek_medien_oeffentlichkeit_einzeldossier_set_v0_1.docx",
   },
+  hostingDossier: {
+    title: "Wirkungsräume gestalten",
+    description: "Dossier für wirkungsorientiertes Hosting, Medienwirkung und digitale Verantwortung: Resonanzarchitektur, Host-Wirkungsscore, Community-Regeln, Quellenklarheit und Korrekturwege.",
+    rel: `${EXTRACT}/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.md`,
+    download: "assets/downloads/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx",
+    relatedTerms: [
+      ["Wirkungsorientiertes Hosting", "begriffe/wirkungsorientiertes-hosting/"],
+      ["Resonanzarchitektur", "begriffe/resonanzarchitektur/"],
+      ["Host-Wirkungsscore", "begriffe/host-wirkungsscore/"],
+      ["Wirkungsraum", "begriffe/wirkungsraum/"],
+      ["Wirkungskompetenz", "begriffe/wirkungskompetenz/"],
+    ],
+  },
   toolSuite: {
-    title: "Tool-Spezifikation Medienwirkungs-Tool-Suite",
+    title: "Methodik Medienwirkungs-Tool-Suite",
     rel: `${SOURCE}/tool_spezifikation_medienwirkungs_tool_suite.md`,
     download: "assets/downloads/tool_spezifikation_medienwirkungs_tool_suite.md",
   },
   toolCheck: {
-    title: "Tool-Spezifikation Medienwirkungscheck",
+    title: "Methodik Medienwirkungscheck",
     rel: `${SOURCE}/tool_spezifikation_medienwirkungscheck.md`,
     download: "assets/downloads/tool_spezifikation_medienwirkungscheck.md",
   },
@@ -79,6 +95,8 @@ const docs = {
 
 const tools = [
   ["Medienwirkungscheck", "Tool", "Prüft Quellenklarheit, Kontext, Korrekturpfade, Manipulationstransparenz, Reichweitenverantwortung und Diskursqualität.", "werkzeuge/medienwirkungscheck/"],
+  ["Wirkungsorientiertes Hosting", "Dossier", "Gestaltet öffentliche Wirkungsräume mit Wirkungsbriefing, Host-Verantwortung, Community-Regeln, Quellenklarheit und Korrekturpfaden.", "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"],
+  ["Host-Wirkungsscore", "Scorecard", "Reflexionsraster für Quellenklarheit, Framing, Diskursführung, Community-Architektur, Transparenz, Schutz und Korrekturfähigkeit.", "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/#23-neun-wirkungsfelder-des-host-wirkungsscores"],
   ["Medienwirkungscheck-Demo", "Erleben", "Modellhafte MWIX-Demo mit Gewichtung, roter Linie und Schutz-Hinweis. Keine amtliche Einstufung.", "erleben/medienwirkungscheck/"],
   ["Sprach- und Framing-Analyse", "Methode", "Macht Frames, Entmenschlichung, Angstsignale, Vertrauenssprache und Lösungsorientierung sichtbar.", "werkzeuge/sprach-und-framing-analyse/"],
   ["Plattform-Wirkungscheck", "Methode", "Prüft Empfehlungslogik, Werbetransparenz, Datenzugang, Kinder- und Jugendschutz sowie Nutzerwahl.", "werkzeuge/plattform-wirkungscheck/"],
@@ -146,6 +164,36 @@ function esc(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function navMatch(item) {
+  return (item.match || []).join("|");
+}
+
+function navLink(item, base) {
+  return `<a href="${href(base, item.href)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
+}
+
+function footerGroup(group, base) {
+  return `<div class="footer-nav-group">
+      <h3>${esc(group.title)}</h3>
+      <div class="footer-nav-links">
+${group.items.map((item) => `          ${navLink(item, base)}`).join("\n")}
+      </div>
+    </div>`;
+}
+
+function renderHeader(base) {
+  return headerTemplate
+    .replaceAll("{{BASE}}", base)
+    .replace("{{HEADER_NAV}}", navigation.header.map((item) => navLink(item, base)).join("\n    "));
+}
+
+function renderFooter(base) {
+  return footerTemplate
+    .replaceAll("{{BASE}}", base)
+    .replace("{{FOOTER_NAV}}", navigation.footerGroups.map((group) => footerGroup(group, base)).join("\n    "))
+    .replace("{{FOOTER_LEGAL_NAV}}", (navigation.footerLegal || []).map((item) => navLink(item, base)).join("\n"));
 }
 
 function slugify(value) {
@@ -229,6 +277,11 @@ function cleanPublicText(text) {
       .replace(/keine Zensurarchitektur/g, "keine Architektur für automatisierte Sperrentscheidungen")
       .replace(/Inhaltszensur/g, "automatisierte Sperrentscheidungen")
       .replace(/Zensurangst/g, "Grundrechtsrisiken")
+      .replace(/Tool-Spezifikation/g, "Methodik")
+      .replace(/Einzeldossier-Set/g, "Einzeldossiers")
+      .replace(/\bv0\.1\b/gi, "Modellfassung")
+      .replace(/\bOutputs\b/g, "Ergebnisse")
+      .replace(/\bOutput\b/g, "Ergebnis")
       .replace(/keine automatisierte Sperrentscheidungen/g, "keine automatisierten Sperrentscheidungen")
       .replace(/automatisierten automatisierte Sperrentscheidungen/g, "automatisierten Sperrentscheidungen")
       .replace(/Dieses Einzeldossier konkretisiert den Unterbereich für die Website, die Arbeitsbibliothek und mögliche Tools\. /g, "Dieses Einzeldossier konkretisiert den Unterbereich. ");
@@ -404,15 +457,12 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
     <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation"><a href="${base}index.html">Start</a></nav>
-    </header>
+${renderHeader(base)}
     <main>
       <p class="print-meta">Wirkungsökonomie · ${esc(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: ${DATE}</p>
 ${body(base, canonical)}
     </main>
+${renderFooter(base)}
     <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
   </body>
 </html>`);
@@ -436,16 +486,28 @@ function publicationAccess(base, mode = "portal") {
   const online = [
     ["Konzeptpapier", "Online-Volltext", "Das Konzeptpapier online lesen, zitieren und zusätzlich herunterladen.", "wirkungsfelder/medien-oeffentlichkeit/konzept/"],
     ["Gesamtdossier", "Online-Volltext", "Das Gesamtdossier mit Modelllogik, Datenquellen und Umsetzungspfaden online lesen.", "wirkungsfelder/medien-oeffentlichkeit/dossier/"],
+    ["Wirkungsräume gestalten", "Dossier / Arbeitsfassung", "Wirkungsorientiertes Hosting als Praxis für Medienwirkung, Host-Verantwortung, Resonanzarchitektur und digitale Verantwortung.", "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"],
     ["Detailkonzepte", "Online-Volltext", "Die langen Detailkonzepte zu allen Unterbereichen online lesen.", "wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/"],
-    ["Einzeldossier-Set", "Online-Volltext", "Einzeldossiers mit Praxisfrage, Bewertungslogik, Annahmen, Toolbezug und Grenzen.", "wirkungsfelder/medien-oeffentlichkeit/dossiers/"],
+    ["Einzeldossiers", "Online-Volltext", "Einzeldossiers mit Praxisfrage, Bewertungslogik, Annahmen, Toolbezug und Grenzen.", "wirkungsfelder/medien-oeffentlichkeit/dossiers/"],
   ];
   const downloadLinks = [
     ["Konzeptpapier herunterladen", docs.concept.download],
     ["Gesamtdossier herunterladen", docs.dossier.download],
+    ["Wirkungsräume gestalten herunterladen", docs.hostingDossier.download],
     ["Detailkonzepte herunterladen", docs.detail.download],
-    ["Einzeldossier-Set herunterladen", docs.singleDossier.download],
+    ["Einzeldossiers herunterladen", docs.singleDossier.download],
   ];
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", mode === "subpage" ? "Detailkonzept und Dossier online lesen" : "Online lesen und herunterladen")}<p>Alle zentralen Dokumente sind online lesbar und gezielt über Abschnittsanker zitierbar. Downloads bleiben Export und Archiv, nicht der Hauptzugang.</p></div>${cards(base, online.map((item) => [...item, "Online lesen"]))}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Export und Archiv</h3><p class="card-text">Die bereitgestellten Word-Dateien bleiben als Exportfassungen verfügbar.</p></div><div class="portal-card-actions">${downloadLinks.map(([label, file]) => exists(file) ? `<a class="btn btn-secondary" href="${href(base, file)}">${esc(label)}</a>` : "").join("")}</div></div></section>`;
+}
+
+function relatedTermBlock(base, doc) {
+  if (!doc.relatedTerms?.length) return "";
+  return `<section class="section" aria-labelledby="glossarbezug"><div class="section-header"><p class="hero-kicker">Glossarbezug</p>${h2("glossarbezug", "Zentrale Begriffe")}<p>Die Veröffentlichung ist in den zentralen Begriffen verankert und kann von dort aus wiedergefunden werden.</p></div><div class="model-strip">${doc.relatedTerms.map(([label, url]) => `<a href="${href(base, url)}">${esc(label)}</a>`).join("")}</div></section>`;
+}
+
+function optionalStatusSection(status) {
+  const content = statusBox(status);
+  return content ? `<section class="section narrow">${content}</section>` : "";
 }
 
 function sdgBadge(base, [id, label, text, url], index) {
@@ -505,7 +567,7 @@ function mwixBlock() {
     ["Reichweitenverantwortung", "6 %"],
     ["Zugänglichkeit", "4 %"],
   ];
-  return `<section class="section" aria-labelledby="mwix"><div class="section-header"><p class="hero-kicker">Bewertungslogik</p>${h2("mwix", "Medienwirkungsindex MWIX")}<p>Der MWIX ist ein Arbeitsmodell von -3 bis +3. Er bewertet öffentliche Wirkungsbedingungen, nicht Meinungen. Rote Linien begrenzen den Score, wenn schwere Manipulationsrisiken auftreten.</p></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Dimension</th><th>Gewichtung V0.1</th></tr></thead><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div><div class="card-grid three">${(mwix.redLines || ["nicht gekennzeichneter Deepfake mit öffentlichem Schadenspotenzial", "koordinierte Desinformation", "verdeckte politische Finanzierung", "entmenschlichende Gewaltaufrufe", "manipulatives Microtargeting vulnerabler Gruppen", "systematische algorithmische Verstärkung gefährlicher Falschinformation"]).map((text) => `<article class="card"><p class="card-kicker">Rote Linie</p><p class="card-text">${esc(text)}</p></article>`).join("")}</div></section>`;
+  return `<section class="section" aria-labelledby="mwix"><div class="section-header"><p class="hero-kicker">Bewertungslogik</p>${h2("mwix", "Medienwirkungsindex MWIX")}<p>Der MWIX ist ein Arbeitsmodell von -3 bis +3. Er bewertet öffentliche Wirkungsbedingungen, nicht Meinungen. Rote Linien begrenzen den Score, wenn schwere Manipulationsrisiken auftreten.</p></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Dimension</th><th>Gewichtung Modellfassung</th></tr></thead><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${esc(a)}</th><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div><div class="card-grid three">${(mwix.redLines || ["nicht gekennzeichneter Deepfake mit öffentlichem Schadenspotenzial", "koordinierte Desinformation", "verdeckte politische Finanzierung", "entmenschlichende Gewaltaufrufe", "manipulatives Microtargeting vulnerabler Gruppen", "systematische algorithmische Verstärkung gefährlicher Falschinformation"]).map((text) => `<article class="card"><p class="card-kicker">Rote Linie</p><p class="card-text">${esc(text)}</p></article>`).join("")}</div></section>`;
 }
 
 function statusBox(status) {
@@ -518,7 +580,7 @@ function portalPage() {
     rel: "wirkungsfelder/medien-oeffentlichkeit/index.html",
     title: "Medien, Social Media & Journalismus | Wirkungsökonomie",
     description: "Öffentlichkeit als Wirkungsraum: Medienqualität, Plattformlogik, Sprache, Desinformation, Creator-Verantwortung und demokratische Diskursfähigkeit.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Medien, Social Media & Journalismus</h1><p class="hero-subtitle">Öffentlichkeit als Wirkungsraum: Wahrheit, Vertrauen, Diskursqualität, Plattformlogik, Desinformation und demokratische Resonanz.</p><p>Die Wirkungsökonomie bewertet nicht Meinungen. Sie macht Infrastrukturbedingungen öffentlicher Kommunikation sichtbar: Quellenklarheit, Transparenz, Korrekturwege, Pluralität, Manipulationsschutz, algorithmische Verantwortung und Reichweitenlogik.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "erleben/medienwirkungscheck/")}">Medienwirkungscheck öffnen</a><a class="btn btn-secondary" href="#publikationszugang">Online lesen</a></div></div>${statusBox("Portal")}</div></section>${publicationAccess(base)}${tocBlock(intro.toc)}<section class="section article-section" aria-labelledby="online-volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Portaltext</p>${h2("online-volltext", "Online-Volltext")} ${intro.html}</article></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Zentrale Unterbereiche online lesen")}<p>Jeder Unterbereich besitzt eine Online-Seite mit Detailkonzept, Einzeldossier, Download, SDG-/SDG+-Block, Buchankern, Quellen und Werkzeugbezug.</p></div>${cards(base, modules.map((m) => [m.title, "Detailkonzept + Dossier", m.summary, `wirkungsfelder/medien-oeffentlichkeit/${m.slug}/`, "Online lesen"]))}</section>${toolGrid(base)}${mwixBlock()}${legalBlock(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Gesamtdossier Word", href: docs.dossier.download }, { label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossier-Set Word", href: docs.singleDossier.download }, { label: "Tool-Suite Markdown", href: docs.toolSuite.download }, { label: "Medienwirkungscheck Markdown", href: docs.toolCheck.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Medien, Social Media & Journalismus</h1><p class="hero-subtitle">Öffentlichkeit als Wirkungsraum: Wahrheit, Vertrauen, Diskursqualität, Plattformlogik, Desinformation und demokratische Resonanz.</p><p>Die Wirkungsökonomie bewertet nicht Meinungen. Sie macht Infrastrukturbedingungen öffentlicher Kommunikation sichtbar: Quellenklarheit, Transparenz, Korrekturwege, Pluralität, Manipulationsschutz, algorithmische Verantwortung und Reichweitenlogik.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "erleben/medienwirkungscheck/")}">Medienwirkungscheck öffnen</a><a class="btn btn-secondary" href="#publikationszugang">Online lesen</a></div></div>${statusBox("Portal")}</div></section>${publicationAccess(base)}${tocBlock(intro.toc)}<section class="section article-section" aria-labelledby="online-volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Bereichstext</p>${h2("online-volltext", "Onlinefassung")} ${intro.html}</article></section><section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Zentrale Unterbereiche online lesen")}<p>Jeder Unterbereich besitzt eine Online-Seite mit Detailkonzept, Einzeldossier, Download, SDG-/SDG+-Block, Buchankern, Quellen und Werkzeugbezug.</p></div>${cards(base, modules.map((m) => [m.title, "Detailkonzept und Dossier", m.summary, `wirkungsfelder/medien-oeffentlichkeit/${m.slug}/`, "Online lesen"]))}</section>${toolGrid(base)}${mwixBlock()}${legalBlock(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Gesamtdossier Word", href: docs.dossier.download }, { label: "Wirkungsräume gestalten Word", href: docs.hostingDossier.download }, { label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossiers Word", href: docs.singleDossier.download }, { label: "Tool-Suite Markdown", href: docs.toolSuite.download }, { label: "Medienwirkungscheck Markdown", href: docs.toolCheck.download }])}`,
   });
 }
 
@@ -530,7 +592,7 @@ function modulePage(module) {
     title: `${module.title} | Medien & Öffentlichkeit`,
     description: module.summary,
     type: "Unterbereich",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Medien & Öffentlichkeit</a></nav><p class="hero-kicker">Medien, Social Media & Journalismus</p><h1>${esc(module.title)}</h1><p class="hero-subtitle">${esc(module.summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a></div></div></section><section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Online lesen, gezielt zitieren</p>${h2("publikationszugang-title", "Detailkonzept und Dossier")}<p class="card-text">Diese Unterseite enthält Detailkonzept und Einzeldossier vollständig online. Downloads bleiben ergänzende Exportfassungen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a><a class="btn btn-secondary" href="${href(base, docs.detail.download)}">Detailkonzepte herunterladen</a><a class="btn btn-secondary" href="${href(base, docs.singleDossier.download)}">Einzeldossier-Set herunterladen</a></div></div></section>${tocBlock([...detail.toc, ...dossier.toc])}<section class="section" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Kurzfassung und Wirkungspfad")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Problem</h3><p class="card-text">${esc(module.summary)}</p></article><article class="card"><h3 class="card-title">Wirkungsökonomischer Maßstab</h3><p class="card-text">Entscheidend ist, ob Wahrheit, Vertrauen, Diskursfähigkeit, Teilhabe und digitale Selbstbestimmung gestärkt oder geschwächt werden.</p></article><article class="card"><h3 class="card-title">Schutzlinie</h3><p class="card-text">Bewertet werden Strukturen, Transparenz, Reichweitenlogik und Korrekturwege, nicht Personen oder politische Meinungen.</p></article></div></section><section class="section article-section" aria-labelledby="detailkonzept"><article class="article-body fulltext-reader"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", "Detailkonzept online lesen")}${detail.html}</article></section><section class="section article-section" aria-labelledby="dossier"><article class="article-body fulltext-reader"><p class="hero-kicker">Einzeldossier</p>${h2("dossier", "Dossier online lesen")}${dossier.html}</article></section>${toolGrid(base)}${legalBlock(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossier-Set Word", href: docs.singleDossier.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Medien & Öffentlichkeit</a></nav><p class="hero-kicker">Medien, Social Media & Journalismus</p><h1>${esc(module.title)}</h1><p class="hero-subtitle">${esc(module.summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a></div></div></section><section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="download-card"><div><p class="card-kicker">Online lesen, gezielt zitieren</p>${h2("publikationszugang-title", "Detailkonzept und Dossier")}<p class="card-text">Diese Unterseite enthält Detailkonzept und Einzeldossier vollständig online. Downloads bleiben ergänzende Exportfassungen.</p></div><div class="portal-card-actions no-print"><a class="btn btn-primary" href="#detailkonzept">Detailkonzept online lesen</a><a class="btn btn-secondary" href="#dossier">Dossier online lesen</a><a class="btn btn-secondary" href="${href(base, docs.detail.download)}">Detailkonzepte herunterladen</a><a class="btn btn-secondary" href="${href(base, docs.singleDossier.download)}">Einzeldossiers herunterladen</a></div></div></section>${tocBlock([...detail.toc, ...dossier.toc])}<section class="section" aria-labelledby="kurzfassung"><div class="section-header"><p class="hero-kicker">Kurzfassung</p>${h2("kurzfassung", "Kurzfassung und Wirkungspfad")}</div><div class="card-grid three"><article class="card"><h3 class="card-title">Problem</h3><p class="card-text">${esc(module.summary)}</p></article><article class="card"><h3 class="card-title">Wirkungsökonomischer Maßstab</h3><p class="card-text">Entscheidend ist, ob Wahrheit, Vertrauen, Diskursfähigkeit, Teilhabe und digitale Selbstbestimmung gestärkt oder geschwächt werden.</p></article><article class="card"><h3 class="card-title">Schutzlinie</h3><p class="card-text">Bewertet werden Strukturen, Transparenz, Reichweitenlogik und Korrekturwege, nicht Personen oder politische Meinungen.</p></article></div></section><section class="section article-section" aria-labelledby="detailkonzept"><article class="article-body fulltext-reader"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", "Detailkonzept online lesen")}${detail.html}</article></section><section class="section article-section" aria-labelledby="dossier"><article class="article-body fulltext-reader"><p class="hero-kicker">Einzeldossier</p>${h2("dossier", "Dossier online lesen")}${dossier.html}</article></section>${toolGrid(base)}${legalBlock(base)}${crossLinkBlock(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossiers Word", href: docs.singleDossier.download }])}`,
   });
 }
 
@@ -540,9 +602,9 @@ function fulltextPage(key, rel, status) {
   page({
     rel,
     title: `${doc.title} | Wirkungsökonomie`,
-    description: `${doc.title} als öffentlicher Online-Volltext mit Zitierankern, Druckfunktion und Download.`,
+    description: doc.description || `${doc.title} als öffentlicher Online-Volltext mit Zitierankern, Druckfunktion und Download.`,
     type: status,
-    body: (base, canonical) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Medien & Öffentlichkeit</a></nav><p class="hero-kicker">${esc(status)}</p><h1>${esc(doc.title)}</h1><p class="hero-subtitle">Online-Volltext ist der Hauptzugang. Downloads bleiben Export und Archiv.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a><a class="btn btn-secondary" href="${href(base, doc.download)}">Download</a></div></div></section><section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Abschnittsanker können direkt zitiert werden.</p><p><a class="text-link" href="${canonical}">Kanonische Seitenadresse öffnen</a></p></aside></section>${publicationAccess(base)}<section class="section narrow">${statusBox(status)}</section><section class="section narrow">${tocBlock(rendered.toc)}</section><section class="section article-section" aria-labelledby="volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Online-Volltext</p>${h2("volltext", `${doc.title} online lesen`)}${rendered.html}</article></section>${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: `${doc.title} herunterladen`, href: doc.download }])}`,
+    body: (base, canonical) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Medien & Öffentlichkeit</a></nav><p class="hero-kicker">${esc(status)}</p><h1>${esc(doc.title)}</h1><p class="hero-subtitle">${esc(doc.description || "Online-Volltext ist der Hauptzugang. Downloads bleiben Export und Archiv.")}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#volltext">Online lesen</a><a class="btn btn-secondary" href="${href(base, doc.download)}">Word herunterladen</a></div></div></section><section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Zitierfähig</p><h2>Online lesen, gezielt zitieren</h2><p>Abschnittsanker können direkt zitiert werden.</p><p><a class="text-link" href="${canonical}">Seitenadresse öffnen</a></p></aside></section>${publicationAccess(base)}${relatedTermBlock(base, doc)}${optionalStatusSection(status)}<section class="section narrow">${tocBlock(rendered.toc)}</section><section class="section article-section" aria-labelledby="volltext"><article class="article-body fulltext-reader"><p class="hero-kicker">Online-Volltext</p>${h2("volltext", `${doc.title} online lesen`)}${rendered.html}</article></section>${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: `${doc.title} herunterladen`, href: doc.download }])}`,
   });
 }
 
@@ -555,7 +617,7 @@ function toolPage(rel, title, subtitle, activeTools = []) {
     description: subtitle,
     section: "Werkzeuge",
     type: "Werkzeug",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkzeuge/")}">Werkzeuge</a></nav><p class="hero-kicker">Werkzeug · Medien & Öffentlichkeit</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(subtitle)}</p><p>Das Werkzeug ist eine nicht-amtliche Reflexions- und Steuerungshilfe. Es bewertet öffentliche Wirkungsbedingungen, nicht Menschen und nicht Gesinnungen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "erleben/medienwirkungscheck/")}">Demo öffnen</a></div></div></section>${tocBlock([...suite.toc, ...check.toc])}<section class="section" aria-labelledby="module"><div class="section-header"><p class="hero-kicker">Module</p>${h2("module", "Module und Anwendung")}</div>${cards(base, (activeTools.length ? activeTools : tools.slice(0, 7)).map(([name, kicker, text, url]) => [name, kicker, text, url]))}</section>${mwixBlock()}<section class="section article-section" aria-labelledby="spezifikation"><article class="article-body fulltext-reader"><p class="hero-kicker">Tool-Spezifikation</p>${h2("spezifikation", "Medienwirkungs-Tool-Suite")}${suite.html}${h2("spezifikation-medienwirkungscheck", "Medienwirkungscheck")}${check.html}</article></section>${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: "Tool-Suite Markdown", href: docs.toolSuite.download }, { label: "Medienwirkungscheck Markdown", href: docs.toolCheck.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkzeuge/")}">Werkzeuge</a></nav><p class="hero-kicker">Werkzeug · Medien & Öffentlichkeit</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(subtitle)}</p><p>Das Werkzeug ist eine nicht-amtliche Reflexions- und Steuerungshilfe. Es bewertet öffentliche Wirkungsbedingungen, nicht Menschen und nicht Gesinnungen.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "erleben/medienwirkungscheck/")}">Demo öffnen</a></div></div></section>${tocBlock([...suite.toc, ...check.toc])}<section class="section" aria-labelledby="module"><div class="section-header"><p class="hero-kicker">Module</p>${h2("module", "Module und Anwendung")}</div>${cards(base, (activeTools.length ? activeTools : tools.slice(0, 7)).map(([name, kicker, text, url]) => [name, kicker, text, url]))}</section>${mwixBlock()}<section class="section article-section" aria-labelledby="spezifikation"><article class="article-body fulltext-reader"><p class="hero-kicker">Methodik</p>${h2("spezifikation", "Medienwirkungs-Tool-Suite")}${suite.html}${h2("spezifikation-medienwirkungscheck", "Medienwirkungscheck")}${check.html}</article></section>${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${sourceBlock()}${downloads(base, [{ label: "Tool-Suite Markdown", href: docs.toolSuite.download }, { label: "Medienwirkungscheck Markdown", href: docs.toolCheck.download }])}`,
   });
 }
 
@@ -566,7 +628,7 @@ function demoPage() {
     description: "Modellhafte Demo zum Medienwirkungsindex MWIX: Quellenklarheit, Faktenintegrität, Kontext, Pluralität, Diskursverträglichkeit und Korrekturfähigkeit.",
     section: "Erleben",
     type: "Demo",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "erleben.html")}">Erleben</a></nav><p class="hero-kicker">Demo · Modell V0.1</p><h1>Medienwirkungscheck</h1><p class="hero-subtitle">Öffentliche Wirkungsbedingungen modellhaft sichtbar machen.</p><p class="scanner-notice">Modellhafte Demonstration. Keine amtliche Einstufung, keine Rechtsberatung, keine Personenbewertung und keine automatisierte Sperrentscheidung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#demo">Demo nutzen</a></div></div></section><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol class="toc-links"><li><a href="#demo-title">MWIX-Schnellcheck</a></li><li><a href="#mwix">Medienwirkungsindex MWIX</a></li><li><a href="#tools">Werkzeuge</a></li><li><a href="#politik">Politische Anschlussfähigkeit</a></li></ol></nav><section class="section" id="demo" aria-labelledby="demo-title"><div class="section-header"><p class="hero-kicker">Rechner</p>${h2("demo-title", "MWIX-Schnellcheck")}</div><div class="card"><form id="mwix-form" class="calculator-form"><label>Quellenklarheit <input name="q" type="range" min="-3" max="3" value="1"></label><label>Faktenintegrität <input name="f" type="range" min="-3" max="3" value="1"></label><label>Kontextqualität <input name="k" type="range" min="-3" max="3" value="1"></label><label>Diskursverträglichkeit <input name="d" type="range" min="-3" max="3" value="1"></label><label>Korrekturfähigkeit <input name="c" type="range" min="-3" max="3" value="1"></label><label><input name="redline" type="checkbox"> Rote Linie berührt</label></form><output id="mwix-output" class="result-box" aria-live="polite">MWIX: +1.0 · modellhafte Einordnung</output></div><script>
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "erleben.html")}">Erleben</a></nav><p class="hero-kicker">Demo · Modellfassung</p><h1>Medienwirkungscheck</h1><p class="hero-subtitle">Öffentliche Wirkungsbedingungen modellhaft sichtbar machen.</p><p class="scanner-notice">Modellhafte Demonstration. Keine amtliche Einstufung, keine Rechtsberatung, keine Personenbewertung und keine automatisierte Sperrentscheidung.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#demo">Demo nutzen</a></div></div></section><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol class="toc-links"><li><a href="#demo-title">MWIX-Schnellcheck</a></li><li><a href="#mwix">Medienwirkungsindex MWIX</a></li><li><a href="#tools">Werkzeuge</a></li><li><a href="#politik">Politische Anschlussfähigkeit</a></li></ol></nav><section class="section" id="demo" aria-labelledby="demo-title"><div class="section-header"><p class="hero-kicker">Rechner</p>${h2("demo-title", "MWIX-Schnellcheck")}</div><div class="card"><form id="mwix-form" class="calculator-form"><label>Quellenklarheit <input name="q" type="range" min="-3" max="3" value="1"></label><label>Faktenintegrität <input name="f" type="range" min="-3" max="3" value="1"></label><label>Kontextqualität <input name="k" type="range" min="-3" max="3" value="1"></label><label>Diskursverträglichkeit <input name="d" type="range" min="-3" max="3" value="1"></label><label>Korrekturfähigkeit <input name="c" type="range" min="-3" max="3" value="1"></label><label><input name="redline" type="checkbox"> Rote Linie berührt</label></form><output id="mwix-output" class="result-box" aria-live="polite">MWIX: +1.0 · modellhafte Einordnung</output></div><script>
 const form = document.getElementById('mwix-form');
 const out = document.getElementById('mwix-output');
 function updateMwix() {
@@ -588,9 +650,9 @@ function libraryPage() {
     rel: "werkstatt/dossiers/medien-oeffentlichkeit/index.html",
     title: "Dossiers Medien & Öffentlichkeit | Wirkungsökonomie",
     description: "Arbeitsbibliothek und Dossierhub zu Medien, Social Media, Journalismus, Plattformlogik, Sprache, Desinformation und MWIX.",
-    section: "Werkstatt",
+    section: "Bibliothek",
     type: "Dossier",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "werkstatt/")}">Werkstatt</a></nav><p class="hero-kicker">Werkstatt · Dossiers</p><h1>Medien & Öffentlichkeit</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossier-Set, Tool-Spezifikation und Online-Zugänge.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Portal öffnen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers")}</div>${cards(base, modules.map((m) => [m.title, "Online lesen", m.summary, `wirkungsfelder/medien-oeffentlichkeit/${m.slug}/`, "Öffnen"]))}</section>${toolGrid(base)}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Gesamtdossier Word", href: docs.dossier.download }, { label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossier-Set Word", href: docs.singleDossier.download }, { label: "Tool-Suite Markdown", href: docs.toolSuite.download }, { label: "Medienwirkungscheck Markdown", href: docs.toolCheck.download }])}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "downloads.html")}">Bibliothek</a></nav><p class="hero-kicker">Bibliothek · Dossiers</p><h1>Medien & Öffentlichkeit</h1><p class="hero-subtitle">Konzeptpapier, Gesamtdossier, Wirkungsräume gestalten, Detailkonzepte, Einzeldossiers, Methodik und Online-Zugänge.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Wirkungsfeld öffnen</a></div></div></section>${publicationAccess(base)}<section class="section" aria-labelledby="unterbereiche"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${h2("unterbereiche", "Detailkonzepte und Einzeldossiers")}</div>${cards(base, modules.map((m) => [m.title, "Online lesen", m.summary, `wirkungsfelder/medien-oeffentlichkeit/${m.slug}/`, "Öffnen"]))}</section>${toolGrid(base)}${downloads(base, [{ label: "Konzeptpapier Word", href: docs.concept.download }, { label: "Gesamtdossier Word", href: docs.dossier.download }, { label: "Wirkungsräume gestalten Word", href: docs.hostingDossier.download }, { label: "Detailkonzepte Word", href: docs.detail.download }, { label: "Einzeldossiers Word", href: docs.singleDossier.download }, { label: "Tool-Suite Markdown", href: docs.toolSuite.download }, { label: "Medienwirkungscheck Markdown", href: docs.toolCheck.download }])}`,
   });
 }
 
@@ -598,9 +660,9 @@ function aliasPage(alias, target, title) {
   page({
     rel: `wirkungsfelder/medien-oeffentlichkeit/${alias}/index.html`,
     title: `${title} | Medien & Öffentlichkeit`,
-    description: `Weiterführung zur kanonischen Online-Seite ${title}.`,
+    description: `Weiterführung zur Hauptseite ${title}.`,
     type: "Alias",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Medien & Öffentlichkeit</a></nav><p class="hero-kicker">Alias</p><h1>${esc(title)}</h1><p class="hero-subtitle">Diese Adresse bleibt erreichbar. Der kanonische Online-Volltext liegt auf der verknüpften Seite.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, `wirkungsfelder/medien-oeffentlichkeit/${target}/`)}">Kanonische Seite öffnen</a></div></div></section><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol class="toc-links"><li><a href="#alias-ziel">Kanonische Seite</a></li></ol></nav><section class="section" aria-labelledby="alias-ziel"><div class="download-card"><div><p class="card-kicker">URL erhalten</p>${h2("alias-ziel", "Kanonische Seite öffnen")}<p class="card-text">Diese Seite dient als Brücke, damit ältere oder alternative URLs nicht ins Leere laufen.</p></div><a class="btn btn-primary" href="${href(base, `wirkungsfelder/medien-oeffentlichkeit/${target}/`)}">Online-Volltext öffnen</a></div></section>`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/medien-oeffentlichkeit/")}">Medien & Öffentlichkeit</a></nav><p class="hero-kicker">Weiterleitung</p><h1>${esc(title)}</h1><p class="hero-subtitle">Diese Adresse bleibt erreichbar. Die Hauptfassung liegt auf der verknüpften Seite.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="${href(base, `wirkungsfelder/medien-oeffentlichkeit/${target}/`)}">Hauptseite öffnen</a></div></div></section><nav class="toc-card no-print" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol class="toc-links"><li><a href="#alias-ziel">Hauptseite</a></li></ol></nav><section class="section" aria-labelledby="alias-ziel"><div class="download-card"><div><p class="card-kicker">Adresse erhalten</p>${h2("alias-ziel", "Hauptseite öffnen")}<p class="card-text">Diese Seite dient als Brücke, damit ältere oder alternative URLs erreichbar bleiben.</p></div><a class="btn btn-primary" href="${href(base, `wirkungsfelder/medien-oeffentlichkeit/${target}/`)}">Onlinefassung öffnen</a></div></section>`,
   });
 }
 
@@ -612,6 +674,7 @@ function updateSitemap() {
     "wirkungsfelder/medien-oeffentlichkeit/",
     "wirkungsfelder/medien-oeffentlichkeit/konzept/",
     "wirkungsfelder/medien-oeffentlichkeit/dossier/",
+    "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/",
     "wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/",
     "wirkungsfelder/medien-oeffentlichkeit/dossiers/",
     ...modules.map((m) => `wirkungsfelder/medien-oeffentlichkeit/${m.slug}/`),
@@ -636,8 +699,9 @@ function run() {
   portalPage();
   fulltextPage("concept", "wirkungsfelder/medien-oeffentlichkeit/konzept/index.html", "Konzeptpapier / Online-Volltext");
   fulltextPage("dossier", "wirkungsfelder/medien-oeffentlichkeit/dossier/index.html", "Gesamtdossier / Online-Volltext");
+  fulltextPage("hostingDossier", "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/index.html", "Dossier / Online-Volltext");
   fulltextPage("detail", "wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/index.html", "Detailkonzepte / Online-Volltext");
-  fulltextPage("singleDossier", "wirkungsfelder/medien-oeffentlichkeit/dossiers/index.html", "Einzeldossier-Set / Online-Volltext");
+  fulltextPage("singleDossier", "wirkungsfelder/medien-oeffentlichkeit/dossiers/index.html", "Einzeldossiers / Online-Volltext");
   modules.forEach(modulePage);
   aliases.forEach(([alias, target, title]) => {
     if (alias !== target) aliasPage(alias, target, title);

@@ -482,17 +482,27 @@
 
   function getDefaultResults() {
     const preferred = [
-      "/begriffe/wirkung/",
-      "/kompass.html",
-      "/modell.html",
-      "/wirkungsoekonomie.html",
-      "/wirkungsfelder/",
-      "/erleben.html",
-      "/anwendungen/scanner.html",
-      "/begriffe/positive-netto-wirkung/",
+      { url: "/wirkungsoekonomie.html", title: "Was ist Wirkungsökonomie?", description: "Die Grundidee in einfachen Worten: Wirkung auf Mensch, Planet und Demokratie wird entscheidungsrelevant." },
+      { url: "/#in-5-minuten", title: "In 5 Minuten verstehen", description: "Der schnellste Einstieg in Problem, Idee, Methode, Beispiele und Vertiefung." },
+      { url: "/fragen/", title: "Fragen & Einwände", description: "Antworten auf Planwirtschaft, Social Credit, Bürokratie, Messbarkeit, Finanzierung und Grenzen." },
+      { url: "/begriffe/", title: "Begriffe", description: "Glossar und Begriffseiten von Wirkung bis Wirkungsrückkopplung, SDG+, T-SROI und Wirkungseinkommen." },
+      { url: "/wirkungsfelder/", title: "Wirkungsfelder", description: "Produkte, Unternehmen, Arbeit, Medien, Wohnen, Gesundheit, Bildung, Staat und Kapital." },
+      { url: "/erleben.html", title: "Produktwirkung ausprobieren", description: "Demos und Tools für Produktwirkung, Medienwirkung, Plattformwirkung, Risiko und Alltag." },
+      { url: "/downloads.html", title: "Bibliothek", description: "Bücher, Ausarbeitungen, Thesenpapiere, Dossiers und Onlinefassungen lesen." },
     ];
     const byUrl = new Map(state.index.map((entry) => [String(entry.url || ""), entry]));
-    const seeded = preferred.map((url) => byUrl.get(url)).filter(Boolean);
+    const seeded = preferred.map((item) => byUrl.get(item.url) || {
+      id: `default-${item.url}`,
+      title: item.title,
+      description: item.description,
+      body: item.description,
+      url: item.url,
+      section: "Empfohlener Einstieg",
+      type: "Einstieg",
+      format: "Orientierung",
+      tags: ["Empfohlener Einstieg"],
+      priority: 180,
+    });
     const fallback = state.index
       .filter((entry) => !isLowValueSearchEntry(entry))
       .slice()

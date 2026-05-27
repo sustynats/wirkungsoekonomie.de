@@ -52,9 +52,9 @@ function categoryFor(term) {
   ) {
     return "Datenbegriff";
   }
-  if (section.includes("instrument") || ["nwi", "t-sroi", "finalscore", "scorecard", "benchmark"].includes(id)) return "Messbegriff";
+  if (section.includes("instrument") || ["nwi", "t-sroi", "finalscore", "scorecard", "benchmark", "host-wirkungsscore"].includes(id)) return "Messbegriff";
   if (["wirkungssteuer", "wirkungssteuergesetz", "wirkungsumsatzsteuer", "wirkungslenkung", "wirkungshaushalt"].includes(id)) return "Steuerungsbegriff";
-  if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum", "social-taxonomy"].includes(id)) return "Architekturbegriff";
+  if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum", "resonanzarchitektur", "social-taxonomy"].includes(id)) return "Architekturbegriff";
   if (["sdg-plus", "mensch-planet-demokratie", "demokratie"].includes(id)) return "Demokratiebegriff";
   if (
     [
@@ -70,7 +70,7 @@ function categoryFor(term) {
   ) {
     return "Bewertungsbegriff";
   }
-  if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte"].includes(id)) return "Praxisbegriff";
+  if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte", "wirkungsorientiertes-hosting"].includes(id)) return "Praxisbegriff";
   return "Grundbegriff";
 }
 

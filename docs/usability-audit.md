@@ -1,5 +1,5 @@
 # Usability Audit
-Stand: 2026-05-27T08:06:31.127Z
+Stand: 2026-05-27T17:40:40.229Z
 ## Durchgeführte Korrekturen
 - alte öffentliche Labels wie „Detailkonzept“ wurden in nutzerverständlichere „Konzeptpapier“-Sprache überführt.
 - „Einzeldossier“ wurde zu „Praxisdossier“ geglättet.
@@ -8,8 +8,8 @@ Stand: 2026-05-27T08:06:31.127Z
 - mehrfach erzeugte PDF-Labels wurden bereinigt.
 - globale CSS/JS-UX-Schicht unterscheidet Link-, Info- und Dokumentkarten, klappt lange Inhaltsverzeichnisse mobil ein und schützt Tabellen vor Abschneiden.
 ## Prüfumfang und Ergebnis
-- Geprüfte Dateien: 1502
-- In diesem finalen Prüflauf neu geänderte Dateien: 310
+- Geprüfte Dateien: 1627
+- In diesem finalen Prüflauf neu geänderte Dateien: 311
 - Die bereits angewendeten Korrekturen bleiben im Git-Diff dieses Releases nachvollziehbar.
 - `assets/search/search-index.json`
 - `begriffe/resilienz/index.html`
@@ -91,7 +91,7 @@ Stand: 2026-05-27T08:06:31.127Z
 - `werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html`
 - `werkzeuge/impact-controlling/detailkonzepte/woek-ids/index.html`
 - `werkzeuge/impact-controlling/dossiers/beispielrechnungen/index.html`
-- ... 230 weitere Dateien
+- ... 231 weitere Dateien
 ## Restmuster nach Korrektur
 | Prüfung | Treffer | Dateien |
 | --- | ---: | ---: |
