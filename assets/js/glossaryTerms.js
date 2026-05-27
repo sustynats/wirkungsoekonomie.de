@@ -2274,9 +2274,14 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Sustainable Finance",
       "nachhaltige Finanzierung",
-      "Sustainable-Finance-Architektur"
+      "nachhaltige Finanzwirtschaft",
+      "EU Sustainable Finance",
+      "Sustainable-Finance-Architektur",
+      "Sustainable-Finance-Strategie",
+      "Finanzierung der Transformation",
+      "Financing sustainable growth"
     ],
-    "definition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD, Risikodaten und Transformationsfinanzierung.",
+    "definition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung.",
     "url": "/begriffe/sustainable-finance/",
     "priority": 112,
     "allowedContexts": [
