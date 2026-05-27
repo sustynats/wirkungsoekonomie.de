@@ -24,8 +24,15 @@ function resolveAsset(file, url) {
   const clean = url.split("#")[0].split("?")[0];
   const absolute = clean.startsWith("/")
     ? path.join(root, clean.slice(1))
+    : clean.startsWith("assets/visuals/")
+      ? path.join(root, clean)
     : path.resolve(path.dirname(file), clean);
   return absolute;
+}
+
+function normalizePublicVisualUrl(url) {
+  if (url.startsWith("assets/visuals/")) return `/${url}`;
+  return url;
 }
 
 function replacementFor(file, url) {
@@ -53,7 +60,15 @@ for (const file of walk(root)) {
   text = text.replace(/((?:src|srcset|href)=["'])([^"']*assets\/visuals\/[^"']+\.svg)(["'])/g, (match, prefix, url, suffix) => {
     const next = replacementFor(file, url);
     if (next !== url) replacementCount += 1;
-    return `${prefix}${next}${suffix}`;
+    return `${prefix}${normalizePublicVisualUrl(next)}${suffix}`;
+  });
+  text = text.replace(/((?:src|srcset|href)=["'])(assets\/visuals\/[^"']+\.png)(["'])/g, (match, prefix, url, suffix) => {
+    replacementCount += 1;
+    return `${prefix}${normalizePublicVisualUrl(url)}${suffix}`;
+  });
+  text = text.replace(/((?:src|srcset|href)=["'])(assets\/visuals\/[^"']+)(["'])/g, (match, prefix, url, suffix) => {
+    replacementCount += 1;
+    return `${prefix}${normalizePublicVisualUrl(url)}${suffix}`;
   });
   text = text.replace(/<source\b[^>]*>/g, rewriteSourceTag);
 
