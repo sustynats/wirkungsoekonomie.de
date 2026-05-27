@@ -31,8 +31,8 @@ Für hochgeladene oder importierte Word-Dokumente gilt zusätzlich:
 
 Der technische Ablauf ist:
 
-1. Word-Dokument ins Publikationstemplate bringen oder templategebundene Word-Fassung prüfen.
-2. PDF mit `npm run publish:docx-to-pdf` erzeugen beziehungsweise aktualisieren. Wenn bei einem Registry-Word-Eintrag noch keine `pdfUrl` gesetzt ist, wird ein Standardpfad unter `assets/pdf/imported/` abgeleitet.
+1. Word-Dokument ins Publikationstemplate bringen oder templategebundene Word-Fassung prüfen. Für importierte DOCX-Fassungen wird dafür `python3 scripts/documents/apply-woek-publication-template.py <quelle.docx> <ziel.docx> --title "..." --subtitle "..." --stand "..."` genutzt.
+2. PDF mit `npm run publish:docx-to-pdf` erzeugen beziehungsweise aktualisieren. Wenn bei einem Registry-Word-Eintrag noch keine `pdfUrl` gesetzt ist, wird ein Standardpfad unter `assets/pdf/imported/` abgeleitet. Der Konverter bricht bei neu zu rendernden DOCX-Quellen ab, wenn keine WÖk-Templatebindung erkennbar ist.
 3. Registry-Eintrag auf Onlinefassung, PDF-URL, Abstract und Kernaussagen prüfen.
 4. `npm run check:publication-downloads` ausführen.
 5. Danach Build, Suchindex, Linkcheck und Public-Language-Check laufen lassen.

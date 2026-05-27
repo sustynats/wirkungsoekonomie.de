@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -36,6 +37,21 @@ def is_pdf(path: Path) -> bool:
         return path.exists() and path.read_bytes()[:4] == b"%PDF"
     except OSError:
         return False
+
+
+def is_template_bound_docx(path: Path) -> bool:
+    if path.suffix.lower() != ".docx":
+        return True
+    try:
+        with zipfile.ZipFile(path) as archive:
+            xml = "\n".join(
+                archive.read(name).decode("utf-8", errors="ignore")
+                for name in archive.namelist()
+                if name.startswith("word/") and name.endswith(".xml")
+            )
+    except (OSError, zipfile.BadZipFile):
+        return False
+    return "Wirkungsökonomie" in xml and "Natalie Weber" in xml
 
 
 def display_path(path: Path) -> str:
@@ -225,6 +241,9 @@ def main() -> None:
         for source, target, kind in jobs:
             if not should_convert(source, target, args.force):
                 existing.append((source, target, kind))
+                continue
+            if source.suffix.lower() == ".docx" and not is_template_bound_docx(source):
+                failed.append((source, target, f"{kind}: DOCX ist nicht templategebunden; zuerst scripts/documents/apply-woek-publication-template.py anwenden"))
                 continue
             try:
                 convert_docx(renderer, source, target)
