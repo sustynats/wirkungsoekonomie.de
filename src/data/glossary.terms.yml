@@ -831,23 +831,22 @@ terms:
     canonicalLabel: "Social Taxonomy"
     slug: "social-taxonomy"
     status: "anschlussbegriff"
+    category: "Datenbegriff"
     version: "1.0"
-    source: "Social Taxonomy Journalbeitrag v1.0"
-    sourceDocument: "Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
-    sourceSection: "Sustainable Finance & Social Taxonomy"
+    source: "Social Taxonomy Ausarbeitung v1.0"
+    sourceDocument: "Social Taxonomy Ausarbeitung v1.0"
+    sourceSection: "Sustainable Finance und soziale Wirkung"
     shortDefinition: "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten."
-    hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und soziale Stabilität stärken."
+    hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen."
     longDefinition: "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann."
-    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Der Begriff sollte daher als Vorschlags- und Weiterentwicklungsraum von der geltenden EU-Umwelt-Taxonomie unterschieden werden."
+    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Den Begriff daher als Vorschlags- und Weiterentwicklungsraum klar von der geltenden EU-Umwelt-Taxonomie unterscheiden."
     doNotConfuseWith: ["EU-Taxonomie", "ESG-Siegel", "Social Credit", "Corporate Volunteering"]
-    synonyms: ["soziale Taxonomie", "Social-Taxonomy", "soziale Wirkungs-Taxonomie"]
-    relatedTerms: ["eu-taxonomie", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "wirkungsdaten", "social-credit"]
-    relatedDocuments: ["social-taxonomy-journalbeitrag-v1-0"]
-    examples:
-      - "Ein Wohnprojekt wird nicht nur ökologisch, sondern auch nach Bezahlbarkeit, Verdrängungsrisiko, Gesundheit und Teilhabe bewertet."
-      - "Eine Lieferkette erfüllt nicht nur Mindestschutz, sondern zeigt faire Löhne, Arbeitssicherheit, Beschwerdewege und positive soziale Wirkung."
-    preferredUsage: "Als Architekturbegriff verwenden, wenn soziale Wirkung in nachhaltigen Märkten entscheidungsfähig, prüfbar und rückkopplungsfähig gemacht werden soll."
-    deprecatedUsage: ["Social Taxonomy als fertiges EU-Rechtsinstrument darstellen", "Social Taxonomy als Personenrating verwenden"]
+    synonyms: ["Sozialtaxonomie", "EU-Sozialtaxonomie", "soziale Taxonomie", "Social Taxonomy 2.0"]
+    relatedTerms: ["eu-taxonomie", "esg", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "woek-id", "social-credit"]
+    relatedDocuments: ["social-taxonomy-wirkungsoekonomie"]
+    examples: ["Ein Wohnprojekt wird nach Energie, Bezahlbarkeit, Verdrängungsrisiko, Gesundheit, Beteiligung und lokaler Wirkung betrachtet."]
+    preferredUsage: "Social Taxonomy als soziale Klassifikations- und Wirkungsarchitektur für Sustainable Finance verwenden."
+    deprecatedUsage: ["Social Taxonomy als geltendes EU-Recht darstellen", "Social Taxonomy als Personenbewertung verwenden"]
     reviewStatus: "approved"
     glossaryOrderKey: "social taxonomy"
     firstApprovedIn: "2026.2"

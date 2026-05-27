@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T04:38:05.987Z",
+  "generatedAt": "2026-05-27T07:31:18.340Z",
   "relationships": {
     "agenda-2030": {
       "terms": [
@@ -41,9 +41,9 @@
       "documents": [],
       "journalArticles": [
         "/blog/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.html",
+        "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
         "/blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html",
-        "/blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html",
-        "/blog/soziale-resilienz-gegen-verhetzung.html"
+        "/blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html"
       ]
     },
     "digitaler-produktpass": {
@@ -73,28 +73,29 @@
     },
     "eu-taxonomie": {
       "terms": [
+        "social-taxonomy",
         "csrd",
         "esrs",
         "wirkungsrisiko",
         "nachhaltigkeit"
       ],
-      "documents": []
+      "documents": [],
+      "journalArticles": [
+        "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
+      ]
     },
     "faktencheck": {
       "terms": [
         "folgencheck",
-        "medienwirkung",
+        "wirkstoff",
         "wirkungspotenzial",
-        "wirkungsrisiko",
-        "resonanzraum",
-        "wirkungsbewertung"
+        "wirkungspfad"
       ],
       "documents": [
-        "folgencheck-faktencheck"
+        "faktencheck-folgencheck-v1-1"
       ],
       "journalArticles": [
-        "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
-        "/blog/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.html"
+        "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
       ]
     },
     "finalscore": {
@@ -108,16 +109,13 @@
     "folgencheck": {
       "terms": [
         "faktencheck",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "wirkungsbewertung",
-        "wirkungsrueckkopplung",
-        "medienwirkung",
-        "resonanzraum",
-        "sdg-plus"
+        "wirkstoff",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungspotenzial"
       ],
       "documents": [
-        "folgencheck-faktencheck"
+        "faktencheck-folgencheck-v1-1"
       ]
     },
     "gri": {
@@ -133,11 +131,10 @@
         "wirkungskompetenz",
         "sdgs",
         "sdg-plus",
-        "wirkungspotenzial",
-        "wirkungsrueckkopplung"
+        "agenda-2030"
       ],
       "documents": [
-        "handbuch-wirkungskompetenz"
+        "sdg-sdgplus-referenzrahmen"
       ]
     },
     "mensch-planet-demokratie": {
@@ -249,9 +246,9 @@
       ],
       "journalArticles": [
         "/blog/wirkungsoekonomie-kein-parteiprogramm.html",
+        "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
         "/blog/wir-messen-das-falsche.html",
-        "/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html",
-        "/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html"
+        "/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html"
       ]
     },
     "positive-wirkung": {
@@ -313,9 +310,9 @@
       ],
       "journalArticles": [
         "/blog/wirkungsoekonomie-kein-parteiprogramm.html",
+        "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
         "/blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html",
-        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
-        "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html"
       ]
     },
     "sdg-sdgplus-referenzrahmen": {
@@ -356,6 +353,27 @@
       ],
       "documents": [
         "schutzrahmen-personenbewertung"
+      ]
+    },
+    "social-taxonomy": {
+      "terms": [
+        "eu-taxonomie",
+        "esg",
+        "csrd",
+        "esrs",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "woek-id",
+        "social-credit"
+      ],
+      "documents": [
+        "social-taxonomy-wirkungsoekonomie"
+      ],
+      "journalArticles": [
+        "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
       ]
     },
     "spekulationslogik": {
@@ -443,10 +461,10 @@
       ],
       "documents": [],
       "journalArticles": [
-        "/blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html",
         "/blog/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.html",
+        "/blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html",
         "/blog/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.html",
-        "/blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html"
+        "/blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html"
       ]
     },
     "wirkungsarchitektur": {
@@ -557,13 +575,18 @@
     },
     "wirkungskompetenz": {
       "terms": [
+        "wirkungsschule",
+        "wirkungspaedagogik",
         "wirkungsradar",
         "wirkungsbewertung",
         "wirkungsarchitektur"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
+      ],
       "journalArticles": [
         "/blog/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.html",
+        "/blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html",
         "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html"
       ]
     },
@@ -585,6 +608,20 @@
         "wirkungsarchitektur"
       ],
       "documents": []
+    },
+    "wirkungspaedagogik": {
+      "terms": [
+        "wirkungsschule",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "wirkungspotenzial"
+      ],
+      "documents": [
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
+      ],
+      "journalArticles": [
+        "/blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html"
+      ]
     },
     "wirkungspfad": {
       "terms": [
@@ -660,7 +697,8 @@
       "documents": [],
       "journalArticles": [
         "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
-        "/blog/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.html"
+        "/blog/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.html",
+        "/blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html"
       ]
     },
     "wirkungsrente": {
@@ -705,6 +743,20 @@
         "/blog/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.html",
         "/blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html",
         "/blog/wirkungsoekonomie-kein-parteiprogramm.html"
+      ]
+    },
+    "wirkungsschule": {
+      "terms": [
+        "wirkungspaedagogik",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
+      ],
+      "journalArticles": [
+        "/blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html"
       ]
     },
     "wirkungssteuer": {
@@ -821,15 +873,6 @@
       "documents": [
         "technische-leitlinien-wustg"
       ]
-    },
-    "zustandsveraenderung": {
-      "terms": [
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungsbewertung",
-        "positive-netto-wirkung"
-      ],
-      "documents": []
     }
   }
 }

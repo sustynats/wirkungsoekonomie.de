@@ -13,12 +13,13 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260525-ux-finish-knowledge-search";
+  const searchDataVersion = "20260527-questions";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 700;
   const MAX_VISIBLE_RESULTS = 24;
   const SEARCH_GROUPS = [
     { id: "begriffe", label: "Begriffe", max: 5 },
+    { id: "fragen", label: "Fragen & Einwände", max: 5 },
     { id: "grundlagen", label: "Grundlagen", max: 4 },
     { id: "wirkungsfelder", label: "Wirkungsfelder", max: 5 },
     { id: "werkzeuge", label: "Werkzeuge", max: 5 },
@@ -31,6 +32,7 @@
   ];
   const GROUP_SCORE_BONUS = {
     begriffe: 260,
+    fragen: 245,
     grundlagen: 135,
     wirkungsfelder: 105,
     methoden: 88,
@@ -133,6 +135,9 @@
     if (type.includes("begriff") || format.includes("glossar") || section.includes("begriffe") || url.startsWith("/begriffe/") || url.includes("glossar")) {
       return "begriffe";
     }
+    if (url.startsWith("/fragen") || type.includes("frage") || section.includes("fragen")) {
+      return "fragen";
+    }
     if (url.startsWith("/werkzeuge/") || url.startsWith("/erleben") || url.startsWith("/anwendungen") || type.includes("tool") || format.includes("tool") || tags.includes("demo")) {
       return "werkzeuge";
     }
@@ -203,6 +208,7 @@
 
   function getDisplayBadge(entry, groupId) {
     if (groupId === "begriffe") return "Begriff";
+    if (groupId === "fragen") return "Frage";
     if (groupId === "grundlagen") return "Grundlage";
     if (groupId === "wirkungsfelder") return "Wirkungsfeld";
     if (groupId === "werkzeuge") return "Werkzeug";
@@ -318,6 +324,7 @@
         if (selected === "Seiten") return type.includes("seite");
         if (selected === "Wissenskarten") return section.includes("wissenskarten") || type.includes("wissenskarte");
         if (selected === "Anwendungen") return ["anwendungen", "scanner", "erleben"].some((item) => section.includes(item)) || type.includes("tool");
+        if (selected === "Fragen & Einwände") return section.includes("fragen") || type.includes("frage") || normalizeRoute(entry.url).startsWith("/fragen");
         if (selected === "Zielgruppen") return section.includes("fuer") || section.includes("für wen") || String(entry.url || "").startsWith("/fuer/");
         if (selected === "Audio") return section.includes("audio") || type.includes("audio") || tags.includes("audio");
         return fieldContains(entry, "section", selected);

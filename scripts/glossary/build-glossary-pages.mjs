@@ -96,7 +96,7 @@ const termTargetLinks = new Map([
   ["sdg-sdgplus-referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
   ["sdg-plus", "../../verstehen/sdgs-sdgplus/#sdgplus"],
   ["sdgs", "../../verstehen/sdgs-sdgplus/"],
-  ["social-taxonomy", "../../blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"],
+  ["social-taxonomy", "../../bibliothek/social-taxonomy-wirkungsoekonomie/"],
   ["positive-netto-wirkung", "../../begriffe/positive-netto-wirkung/"],
   ["woek-id", "../../werkzeuge/woek-ids/"],
   ["scorecard", "../../werkzeuge/scorecards/"],

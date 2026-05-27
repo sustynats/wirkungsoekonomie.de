@@ -578,11 +578,12 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "social-taxonomy",
     "label": "Social Taxonomy",
     "aliases": [
+      "Sozialtaxonomie",
+      "EU-Sozialtaxonomie",
       "soziale Taxonomie",
-      "Social-Taxonomy",
-      "soziale Wirkungs-Taxonomie"
+      "Social Taxonomy 2.0"
     ],
-    "definition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und soziale Stabilität stärken.",
+    "definition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen.",
     "url": "/begriffe/social-taxonomy/",
     "priority": 31,
     "allowedContexts": [
