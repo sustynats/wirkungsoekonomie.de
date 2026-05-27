@@ -1,13 +1,14 @@
 # Public DOCX to PDF Conversion Audit
 
-Stand: 2026-05-27T18:34:29.215349+00:00
+Stand: 2026-05-27T18:55:43.597564+00:00
 
 ## Zusammenfassung
 
-- Renderer: word
+- Renderer: libreoffice
+- Force-Modus: nein
 - Öffentliche DOCX-/Word-Quellen gefunden: 0
-- Registry-DOCX-Quellen mit PDF-Ziel: 10
-- PDF bereits vorhanden: 10
+- Registry-DOCX-Quellen mit PDF-Ziel: 11
+- PDF bereits vorhanden: 11
 - PDF neu erzeugt: 0
 - Fehlgeschlagen: 0
 
@@ -31,6 +32,7 @@ Die Konvertierung verändert keine Quelldokumente. DOCX-Dateien bleiben nur als 
 - `Beispiel_Zange_SDG_ESRS_mit_Steuer_und_Links.docx` -> `assets/pdf/imported/beispiel-zange-sdg-esrs-mit-steuer-und-links.pdf` (registry:beispiel-zange-sdg-esrs-mit-steuer-und-links)
 - `Beispiel_Zange_SDG_ESRS_Fussnoten.docx` -> `assets/pdf/imported/beispiel-zange-sdg-esrs-fussnoten.pdf` (registry:beispiel-zange-sdg-esrs-fussnoten)
 - `08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.docx` -> `assets/pdf/imported/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt.pdf` (registry:wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt)
+- `wirkungsraeume-gestalten-hosting.docx` -> `assets/pdf/wirkungsraeume-gestalten-hosting.pdf` (registry:wirkungsraeume-gestalten-hosting-v1-0)
 
 ## Fehlgeschlagen
 
