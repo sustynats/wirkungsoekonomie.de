@@ -4,13 +4,13 @@ Stand: 2026-05-27
 
 ## Zusammenfassung
 
-- PDFs in `assets/pdf/`: 15
+- PDFs in `assets/pdf/`: 16
 - Dokumente in der Registry: 33
 - Aktuelle Dokumente: 33
 - Archivdokumente: 0
 - Dokumente mit Onlinefassung: 33
 - Aktuelle PDF-only Dokumente: 0
-- Rang- und Paketdateien in `assets/downloads/`: 364
+- Rang- und Paketdateien in `assets/downloads/`: 365
 
 ## Umfangseinordnung
 
@@ -68,7 +68,7 @@ Die Registry bündelt die öffentlichen Kernmaterialien aus `assets/pdf/`. Rangp
 
 ## PDFs ohne Registry-Eintrag
 
-- Keine
+- /assets/pdf/woek_bildung_wirkungsschule_wirkungspaedagogik_wirkungskompetenz_ausarbeitung_v1_0.pdf
 
 ## Hinweise
 

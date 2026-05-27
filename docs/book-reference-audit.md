@@ -8,10 +8,10 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 
 ## Zusammenfassung
 
-- Zielseiten geprüft: 488
-- Buchbezug vorhanden nach Lauf: 488
+- Zielseiten geprüft: 489
+- Buchbezug vorhanden nach Lauf: 489
 - Im aktuellen Lauf ergänzt oder ersetzt: 290
-- Bereits unverändert: 198
+- Bereits unverändert: 199
 - Ohne passende Referenz übersprungen: 0
 - Ohne Einfügepunkt übersprungen: 0
 
@@ -29,10 +29,10 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | arbeit-einkommen | 26 |
 | medien-oeffentlichkeit | 23 |
 | kritik-schutz | 21 |
+| bildung | 21 |
 | internationale-ordnung | 20 |
 | migration-vielfalt | 20 |
 | transformation | 20 |
-| bildung | 20 |
 | digitalisierung-ki-wirkungsdatenraeume | 19 |
 | akademie-bibliothek | 19 |
 | zukunftsbilder | 19 |
@@ -522,6 +522,7 @@ Dieser Bericht dokumentiert, auf welchen Themen-, Unterbereichs-, Detailkonzept-
 | unchanged | zukunftsbilder | /portale/zukunftsbilder-wirkungswohlstand/zukunftskommunikation/ | Konzeptpapier 8: Zukunftskommunikation Narrative und Resonanzraeume | 5 |
 | inserted-before-section | arbeit-einkommen | /werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/ | Arbeit &amp; Einkommen | 6 |
 | replaced | bildung | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/ | Bildung &amp; Wirkungsschule | 6 |
+| unchanged | bildung | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule-wirkungspaedagogik-wirkungskompetenz/ | Wirkungsschule | 6 |
 | replaced | bildung | /werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/ | Die Wirkungsschule | 6 |
 | replaced | finanzsystem-kapital | /werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/ | Finanzsystem &amp; Kapital | 6 |
 | replaced | gesundheit-pflege | /werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/ | Gesundheit &amp; Pflege | 6 |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T07:13:44.585Z",
+  "generatedAt": "2026-05-27T07:30:53.342Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -119,13 +119,14 @@
       "label": "EU-Taxonomie",
       "slug": "eu-taxonomie",
       "url": "/begriffe/eu-taxonomie/",
-      "hoverDefinition": "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung.",
+      "hoverDefinition": "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung.",
       "shortDefinition": "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien.",
       "category": "Grundbegriff",
       "synonyms": [
         "EU Taxonomy"
       ],
       "relatedTerms": [
+        "social-taxonomy",
         "csrd",
         "esrs",
         "wirkungsrisiko",
@@ -136,21 +137,18 @@
       "label": "Faktencheck",
       "slug": "faktencheck",
       "url": "/begriffe/faktencheck/",
-      "hoverDefinition": "Faktencheck fragt: Stimmt das? Er prüft Quellen, Daten, Belege und Kontext, aber nicht automatisch gesellschaftliche Folgen.",
-      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird.",
-      "category": "Prüfbegriff",
+      "hoverDefinition": "Faktencheck fragt: Stimmt das? Er prüft Belege, Quellen, Kontext und Nachvollziehbarkeit.",
+      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage, Zahl, Quelle oder Behauptung stimmt.",
+      "category": "Grundbegriff",
       "synonyms": [
-        "Fact-Checking",
-        "Faktenprüfung",
-        "Quellenprüfung"
+        "Fact Check",
+        "Richtigkeitsprüfung"
       ],
       "relatedTerms": [
         "folgencheck",
-        "medienwirkung",
+        "wirkstoff",
         "wirkungspotenzial",
-        "wirkungsrisiko",
-        "resonanzraum",
-        "wirkungsbewertung"
+        "wirkungspfad"
       ]
     },
     "finalscore": {
@@ -171,24 +169,20 @@
       "label": "Folgencheck",
       "slug": "folgencheck",
       "url": "/begriffe/folgencheck/",
-      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkungspotenziale, Wirkungspfade, Betroffene, Datenlücken und Schutzgrenzen.",
-      "shortDefinition": "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann.",
-      "category": "Prüfbegriff",
+      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume ex ante.",
+      "shortDefinition": "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann.",
+      "category": "Grundbegriff",
       "synonyms": [
-        "WÖk-Folgencheck",
-        "Wirkungsfolgencheck",
-        "Wirkungsfolgenprüfung",
-        "Folgenprüfung"
+        "Folgenprüfung",
+        "Ex-ante-Folgenprüfung",
+        "Wirkungsfolgencheck"
       ],
       "relatedTerms": [
         "faktencheck",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "wirkungsbewertung",
-        "wirkungsrueckkopplung",
-        "medienwirkung",
-        "resonanzraum",
-        "sdg-plus"
+        "wirkstoff",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungspotenzial"
       ]
     },
     "gri": {
@@ -208,23 +202,22 @@
       ]
     },
     "idgs": {
-      "label": "Inner Development Goals (IDGs)",
+      "label": "IDGs",
       "slug": "idgs",
       "url": "/begriffe/idgs/",
-      "hoverDefinition": "IDGs sind ein Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeit; in der WÖk sind sie Anschluss an Wirkungskompetenz.",
-      "shortDefinition": "Die Inner Development Goals beschreiben innere und soziale Fähigkeiten, die Menschen und Organisationen für Transformation brauchen.",
-      "category": "Kompetenzbegriff",
+      "hoverDefinition": "Inner Development Goals beschreiben Fähigkeiten, die Menschen und Organisationen für Transformation brauchen. Sie ersetzen SDGs oder SDG+ nicht.",
+      "shortDefinition": "IDGs sind ein anschlussfähiger Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeiten.",
+      "category": "Grundbegriff",
       "synonyms": [
+        "Inner Development Goals",
         "IDG",
-        "IDGs",
-        "Inner Development Goals"
+        "innere Entwicklungsziele"
       ],
       "relatedTerms": [
         "wirkungskompetenz",
         "sdgs",
         "sdg-plus",
-        "wirkungspotenzial",
-        "wirkungsrueckkopplung"
+        "agenda-2030"
       ]
     },
     "mensch-planet-demokratie": {
@@ -663,7 +656,8 @@
       "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Impact"
+        "Impact",
+        "Zustandsveränderung"
       ],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -837,11 +831,13 @@
       "label": "Wirkungskompetenz",
       "slug": "wirkungskompetenz",
       "url": "/begriffe/wirkungskompetenz/",
-      "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
-      "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken und Rückkopplungen zu erkennen und zu gestalten.",
-      "category": "Kompetenzbegriff",
+      "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern.",
+      "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.",
+      "category": "Grundbegriff",
       "synonyms": [],
       "relatedTerms": [
+        "wirkungsschule",
+        "wirkungspaedagogik",
         "wirkungsradar",
         "wirkungsbewertung",
         "wirkungsarchitektur"
@@ -873,6 +869,23 @@
         "wirkungspfad",
         "resonanzraum",
         "wirkungsarchitektur"
+      ]
+    },
+    "wirkungspaedagogik": {
+      "label": "Wirkungspädagogik",
+      "slug": "wirkungspaedagogik",
+      "url": "/begriffe/wirkungspaedagogik/",
+      "hoverDefinition": "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben.",
+      "shortDefinition": "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "wirkungsorientierte Pädagogik"
+      ],
+      "relatedTerms": [
+        "wirkungsschule",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "wirkungspotenzial"
       ]
     },
     "wirkungspfad": {
@@ -1046,6 +1059,24 @@
         "positive-netto-wirkung"
       ]
     },
+    "wirkungsschule": {
+      "label": "Wirkungsschule",
+      "slug": "wirkungsschule",
+      "url": "/begriffe/wirkungsschule/",
+      "hoverDefinition": "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet.",
+      "shortDefinition": "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "wirkungsorientierte Schule",
+        "Schule als Wirkungsraum"
+      ],
+      "relatedTerms": [
+        "wirkungspaedagogik",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "positive-netto-wirkung"
+      ]
+    },
     "wirkungssteuer": {
       "label": "Wirkungssteuer",
       "slug": "wirkungssteuer",
@@ -1132,7 +1163,7 @@
       "label": "Wirkungswahrheit",
       "slug": "wirkungswahrheit",
       "url": "/begriffe/wirkungswahrheit/",
-      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - kein Wahrheitsmonopol.",
+      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
       "shortDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen.",
       "category": "Schutzbegriff",
       "synonyms": [
@@ -1226,24 +1257,6 @@
         "wirkungssteuer",
         "scorecard",
         "woek-id"
-      ]
-    },
-    "zustandsveraenderung": {
-      "label": "Zustandsveränderung",
-      "slug": "zustandsveraenderung",
-      "url": "/begriffe/zustandsveraenderung/",
-      "hoverDefinition": "Eine Zustandsveränderung ist die tatsächliche Veränderung eines Zustands bei Menschen, Lebensgrundlagen, Institutionen oder Systemen.",
-      "shortDefinition": "Zustandsveränderung beschreibt, was sich durch eine Handlung, Entscheidung oder Struktur tatsächlich verändert.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Veränderung von Zuständen",
-        "tatsächliche Veränderung"
-      ],
-      "relatedTerms": [
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungsbewertung",
-        "positive-netto-wirkung"
       ]
     }
   }

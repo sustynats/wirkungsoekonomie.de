@@ -138,7 +138,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "EU Taxonomy"
     ],
-    "definition": "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung.",
+    "definition": "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung.",
     "url": "/begriffe/eu-taxonomie/",
     "priority": 8,
     "allowedContexts": [
@@ -155,11 +155,10 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "faktencheck",
     "label": "Faktencheck",
     "aliases": [
-      "Fact-Checking",
-      "Faktenprüfung",
-      "Quellenprüfung"
+      "Fact Check",
+      "Richtigkeitsprüfung"
     ],
-    "definition": "Faktencheck fragt: Stimmt das? Er prüft Quellen, Daten, Belege und Kontext, aber nicht automatisch gesellschaftliche Folgen.",
+    "definition": "Faktencheck fragt: Stimmt das? Er prüft Belege, Quellen, Kontext und Nachvollziehbarkeit.",
     "url": "/begriffe/faktencheck/",
     "priority": 9,
     "allowedContexts": [
@@ -193,12 +192,11 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "folgencheck",
     "label": "Folgencheck",
     "aliases": [
-      "WÖk-Folgencheck",
-      "Wirkungsfolgencheck",
-      "Wirkungsfolgenprüfung",
-      "Folgenprüfung"
+      "Folgenprüfung",
+      "Ex-ante-Folgenprüfung",
+      "Wirkungsfolgencheck"
     ],
-    "definition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkungspotenziale, Wirkungspfade, Betroffene, Datenlücken und Schutzgrenzen.",
+    "definition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume ex ante.",
     "url": "/begriffe/folgencheck/",
     "priority": 11,
     "allowedContexts": [
@@ -232,13 +230,13 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "idgs",
-    "label": "Inner Development Goals (IDGs)",
+    "label": "IDGs",
     "aliases": [
+      "Inner Development Goals",
       "IDG",
-      "IDGs",
-      "Inner Development Goals"
+      "innere Entwicklungsziele"
     ],
-    "definition": "IDGs sind ein Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeit; in der WÖk sind sie Anschluss an Wirkungskompetenz.",
+    "definition": "Inner Development Goals beschreiben Fähigkeiten, die Menschen und Organisationen für Transformation brauchen. Sie ersetzen SDGs oder SDG+ nicht.",
     "url": "/begriffe/idgs/",
     "priority": 13,
     "allowedContexts": [
@@ -735,7 +733,8 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "wirkung",
     "label": "Wirkung",
     "aliases": [
-      "Impact"
+      "Impact",
+      "Zustandsveränderung"
     ],
     "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
     "url": "/begriffe/wirkung/",
@@ -942,7 +941,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "wirkungskompetenz",
     "label": "Wirkungskompetenz",
     "aliases": [],
-    "definition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
+    "definition": "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern.",
     "url": "/begriffe/wirkungskompetenz/",
     "priority": 50,
     "allowedContexts": [
@@ -990,6 +989,25 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "wirkungspaedagogik",
+    "label": "Wirkungspädagogik",
+    "aliases": [
+      "wirkungsorientierte Pädagogik"
+    ],
+    "definition": "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben.",
+    "url": "/begriffe/wirkungspaedagogik/",
+    "priority": 53,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "wirkungspfad",
     "label": "Wirkungspfad",
     "aliases": [
@@ -997,7 +1015,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
     "url": "/begriffe/wirkungspfad/",
-    "priority": 53,
+    "priority": 54,
     "allowedContexts": [
       "home",
       "page",
@@ -1016,7 +1034,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
     "url": "/begriffe/wirkungspflicht-des-eigentums/",
-    "priority": 54,
+    "priority": 55,
     "allowedContexts": [
       "home",
       "page",
@@ -1035,7 +1053,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
     "url": "/begriffe/wirkungspotenzial/",
-    "priority": 55,
+    "priority": 56,
     "allowedContexts": [
       "home",
       "page",
@@ -1055,7 +1073,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
     "url": "/begriffe/wirkungspunkte/",
-    "priority": 56,
+    "priority": 57,
     "allowedContexts": [
       "home",
       "page",
@@ -1072,7 +1090,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
     "url": "/begriffe/wirkungsradar/",
-    "priority": 57,
+    "priority": 58,
     "allowedContexts": [
       "home",
       "page",
@@ -1089,7 +1107,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
     "url": "/begriffe/wirkungsrat/",
-    "priority": 58,
+    "priority": 59,
     "allowedContexts": [
       "home",
       "page",
@@ -1106,7 +1124,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
     "url": "/begriffe/wirkungsraum/",
-    "priority": 59,
+    "priority": 60,
     "allowedContexts": [
       "home",
       "page",
@@ -1125,7 +1143,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
     "url": "/begriffe/wirkungsrente/",
-    "priority": 60,
+    "priority": 61,
     "allowedContexts": [
       "home",
       "page",
@@ -1144,7 +1162,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungsresilienz/",
-    "priority": 61,
+    "priority": 62,
     "allowedContexts": [
       "home",
       "page",
@@ -1161,7 +1179,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
     "url": "/begriffe/wirkungsrisiko/",
-    "priority": 62,
+    "priority": 63,
     "allowedContexts": [
       "home",
       "page",
@@ -1180,7 +1198,27 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert.",
     "url": "/begriffe/wirkungsrueckkopplung/",
-    "priority": 63,
+    "priority": 64,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "wirkungsschule",
+    "label": "Wirkungsschule",
+    "aliases": [
+      "wirkungsorientierte Schule",
+      "Schule als Wirkungsraum"
+    ],
+    "definition": "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet.",
+    "url": "/begriffe/wirkungsschule/",
+    "priority": 65,
     "allowedContexts": [
       "home",
       "page",
@@ -1199,7 +1237,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
     "url": "/begriffe/wirkungssteuer/",
-    "priority": 64,
+    "priority": 66,
     "allowedContexts": [
       "home",
       "page",
@@ -1219,7 +1257,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
     "url": "/begriffe/wirkungssteuergesetz/",
-    "priority": 65,
+    "priority": 67,
     "allowedContexts": [
       "home",
       "page",
@@ -1236,7 +1274,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
     "url": "/begriffe/wirkungstraeger/",
-    "priority": 66,
+    "priority": 68,
     "allowedContexts": [
       "home",
       "page",
@@ -1256,7 +1294,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
     "url": "/begriffe/wirkungsumsatzsteuer/",
-    "priority": 67,
+    "priority": 69,
     "allowedContexts": [
       "home",
       "page",
@@ -1275,7 +1313,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
     "url": "/begriffe/wirkungsvermietung/",
-    "priority": 68,
+    "priority": 70,
     "allowedContexts": [
       "home",
       "page",
@@ -1292,9 +1330,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "wirkungsnah"
     ],
-    "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - kein Wahrheitsmonopol.",
+    "definition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
     "url": "/begriffe/wirkungswahrheit/",
-    "priority": 69,
+    "priority": 71,
     "allowedContexts": [
       "home",
       "page",
@@ -1314,7 +1352,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
     "url": "/begriffe/wix-vi/",
-    "priority": 70,
+    "priority": 72,
     "allowedContexts": [
       "home",
       "page",
@@ -1333,7 +1371,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
     "url": "/begriffe/wohnwirkung/",
-    "priority": 71,
+    "priority": 73,
     "allowedContexts": [
       "home",
       "page",
@@ -1354,7 +1392,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
     "url": "/begriffe/woek-id/",
-    "priority": 72,
+    "priority": 74,
     "allowedContexts": [
       "home",
       "page",
@@ -1373,7 +1411,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
     "url": "/begriffe/wstg/",
-    "priority": 73,
+    "priority": 75,
     "allowedContexts": [
       "home",
       "page",
@@ -1392,27 +1430,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
-    "priority": 74,
-    "allowedContexts": [
-      "home",
-      "page",
-      "reference",
-      "blog",
-      "academy",
-      "method",
-      "glossary"
-    ]
-  },
-  {
-    "key": "zustandsveraenderung",
-    "label": "Zustandsveränderung",
-    "aliases": [
-      "Veränderung von Zuständen",
-      "tatsächliche Veränderung"
-    ],
-    "definition": "Eine Zustandsveränderung ist die tatsächliche Veränderung eines Zustands bei Menschen, Lebensgrundlagen, Institutionen oder Systemen.",
-    "url": "/begriffe/zustandsveraenderung/",
-    "priority": 75,
+    "priority": 76,
     "allowedContexts": [
       "home",
       "page",

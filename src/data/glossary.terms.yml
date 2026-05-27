@@ -141,17 +141,17 @@ terms:
     canonicalLabel: "EU-Taxonomie"
     slug: "eu-taxonomie"
     status: "anschlussbegriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Anschlussräume"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social Taxonomy Journalbeitrag v1.0"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
+    sourceSection: "Anschlussräume; Sustainable Finance & Social Taxonomy"
     shortDefinition: "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien."
-    hoverDefinition: "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung."
-    longDefinition: "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein."
-    usageNote: "Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen."
-    doNotConfuseWith: ["Taxonomiefähigkeit", "Wirkungsbewertung"]
+    hoverDefinition: "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung."
+    longDefinition: "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. In der Wirkungsökonomie ist sie ein wichtiger Anschlussstandard für Sustainable Finance, aber keine vollständige Bewertung sozialer Wirkung oder positiver Netto-Wirkung."
+    usageNote: "Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen und klar von einer Social Taxonomy unterscheiden."
+    doNotConfuseWith: ["Social Taxonomy", "Taxonomiefähigkeit", "Wirkungsbewertung"]
     synonyms: ["EU Taxonomy"]
-    relatedTerms: ["csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit"]
+    relatedTerms: ["social-taxonomy", "csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit"]
     relatedDocuments: []
     examples: []
     preferredUsage: "EU-Taxonomie als Anschlussstandard für Sustainable Finance."
@@ -159,30 +159,6 @@ terms:
     reviewStatus: "approved"
     glossaryOrderKey: "eu taxonomie"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
-  - termId: social-taxonomy
-    canonicalLabel: "Social Taxonomy"
-    slug: "social-taxonomy"
-    status: "anschlussbegriff"
-    category: "Datenbegriff"
-    version: "1.0"
-    source: "Social Taxonomy Ausarbeitung v1.0"
-    sourceDocument: "Social Taxonomy Ausarbeitung v1.0"
-    sourceSection: "Sustainable Finance und soziale Wirkung"
-    shortDefinition: "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten."
-    hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen."
-    longDefinition: "In der Wirkungsökonomie ist Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann."
-    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Den Begriff daher als Vorschlags- und Weiterentwicklungsraum klar von der geltenden EU-Umwelt-Taxonomie unterscheiden."
-    doNotConfuseWith: ["EU-Taxonomie", "ESG-Siegel", "Social Credit", "Corporate Volunteering"]
-    synonyms: ["Sozialtaxonomie", "EU-Sozialtaxonomie", "soziale Taxonomie", "Social Taxonomy 2.0"]
-    relatedTerms: ["eu-taxonomie", "esg", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "woek-id", "social-credit"]
-    relatedDocuments: ["social-taxonomy-wirkungsoekonomie"]
-    examples: ["Ein Wohnprojekt wird nach Energie, Bezahlbarkeit, Verdrängungsrisiko, Gesundheit, Beteiligung und lokaler Wirkung betrachtet."]
-    preferredUsage: "Social Taxonomy als soziale Klassifikations- und Wirkungsarchitektur für Sustainable Finance verwenden."
-    deprecatedUsage: ["Social Taxonomy als geltendes EU-Recht darstellen", "Social Taxonomy als Personenbewertung verwenden"]
-    reviewStatus: "approved"
-    glossaryOrderKey: "social taxonomy"
-    firstApprovedIn: "2026.2"
     lastUpdated: "2026-05-27"
   - termId: finalscore
     canonicalLabel: "FinalScore"
@@ -210,48 +186,48 @@ terms:
   - termId: faktencheck
     canonicalLabel: "Faktencheck"
     slug: "faktencheck"
-    status: "anschlussbegriff"
-    version: "1.0"
-    source: "Folgencheck/Faktencheck v1.1"
-    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
-    sourceSection: "Medien, Öffentlichkeit und Prüfung"
-    shortDefinition: "Ein Faktencheck prüft, ob eine Aussage sachlich stimmt, belegbar ist oder irreführend dargestellt wird."
-    hoverDefinition: "Faktencheck fragt: Stimmt das? Er prüft Quellen, Daten, Belege und Kontext, aber nicht automatisch gesellschaftliche Folgen."
-    longDefinition: "Faktenchecks vergleichen Behauptungen mit überprüfbaren Quellen, Daten, Dokumenten oder Expert:innenwissen. Sie fragen, ob eine Aussage wahr, falsch, unbelegt, verkürzt oder aus dem Zusammenhang gerissen ist."
-    usageNote: "Faktencheck als notwendige Grundlage verwenden, aber klar vom Folgencheck unterscheiden."
-    doNotConfuseWith: ["Folgencheck", "Wirkungsbewertung", "Wahrheitsmonopol"]
-    synonyms: ["Fact-Checking", "Faktenprüfung", "Quellenprüfung"]
-    relatedTerms: ["folgencheck", "medienwirkung", "wirkungspotenzial", "wirkungsrisiko", "resonanzraum", "wirkungsbewertung"]
-    relatedDocuments: ["folgencheck-faktencheck"]
-    examples: ["Eine politische Zahl wird mit Primärquellen, Statistik und Kontext geprüft."]
-    preferredUsage: "Faktencheck prüft die sachliche Richtigkeit einer Aussage."
-    deprecatedUsage: ["Faktencheck als vollständige Folgenbewertung"]
+    status: "führender-begriff"
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "Faktencheck und Folgencheck v1.1"
+    sourceSection: "Kernunterscheidung"
+    shortDefinition: "Ein Faktencheck prüft, ob eine Aussage, Zahl, Quelle oder Behauptung stimmt."
+    hoverDefinition: "Faktencheck fragt: Stimmt das? Er prüft Belege, Quellen, Kontext und Nachvollziehbarkeit."
+    longDefinition: "Der Faktencheck ist die Prüfung von Aussagen, Zahlen, Quellen und Kontexten auf Richtigkeit. Er ist notwendig, beantwortet aber noch nicht, welche Folgen eine Aussage, Entscheidung oder Maßnahme auslösen kann."
+    usageNote: "Immer vom Folgencheck unterscheiden: Faktencheck prüft Richtigkeit, Folgencheck prüft mögliche Wirkungen."
+    doNotConfuseWith: ["Folgencheck", "Wirkungsbewertung", "Meinungsprüfung"]
+    synonyms: ["Fact Check", "Richtigkeitsprüfung"]
+    relatedTerms: ["folgencheck", "wirkstoff", "wirkungspotenzial", "wirkungspfad"]
+    relatedDocuments: ["faktencheck-folgencheck-v1-1"]
+    examples: ["Stimmt die zitierte Zahl?", "Ist die Quelle echt?", "Ist der Kontext vollständig?"]
+    preferredUsage: "Faktencheck als Richtigkeitsprüfung verwenden."
+    deprecatedUsage: []
     reviewStatus: "approved"
     glossaryOrderKey: "faktencheck"
-    firstApprovedIn: "2026.2"
+    firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-26"
   - termId: folgencheck
     canonicalLabel: "Folgencheck"
     slug: "folgencheck"
     status: "führender-begriff"
-    version: "1.0"
-    source: "Folgencheck/Faktencheck v1.1"
-    sourceDocument: "WOeK_Folgencheck_und_Faktencheck_Paper_v1.1"
-    sourceSection: "Medien, Öffentlichkeit und Prüfung"
-    shortDefinition: "Ein Folgencheck prüft, welche Wirkungen oder Wirkungspotenziale eine Aussage, Entscheidung, Maßnahme, Technologie, ein Produkt oder ein Kapitalfluss auslösen kann."
-    hoverDefinition: "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkungspotenziale, Wirkungspfade, Betroffene, Datenlücken und Schutzgrenzen."
-    longDefinition: "Der Folgencheck ist ein wirkungsökonomisches Prüfverfahren. Er fragt nicht nur, ob etwas stimmt, erlaubt oder profitabel ist, sondern welche Folgen daraus entstehen können: für Menschen, Ökosysteme, Institutionen, Märkte, Vertrauen, Demokratie und zukünftige Generationen."
-    usageNote: "Folgencheck vorsorgend als Ex-ante-Prüfung erklären; keine Zensur, keine Personenbewertung, kein Wahrheitsmonopol."
-    doNotConfuseWith: ["Faktencheck", "Personenbewertung", "Zensur", "Wahrheitsmonopol"]
-    synonyms: ["WÖk-Folgencheck", "Wirkungsfolgencheck", "Wirkungsfolgenprüfung", "Folgenprüfung"]
-    relatedTerms: ["faktencheck", "wirkungspotenzial", "wirkungsrisiko", "wirkungsbewertung", "wirkungsrueckkopplung", "medienwirkung", "resonanzraum", "sdg-plus"]
-    relatedDocuments: ["folgencheck-faktencheck"]
-    examples: ["Eine faktisch richtige Aussage wird darauf geprüft, welche Gruppen sichtbar oder unsichtbar werden und welche Wirkungspfade entstehen können."]
-    preferredUsage: "Folgencheck prüft mögliche Wirkungen, Risiken, Nebenwirkungen, Datenlücken und Schutzgrenzen."
-    deprecatedUsage: ["Folgencheck als Zensur", "Folgencheck als Personenbewertung", "Folgencheck als Wahrheitsmonopol"]
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "Faktencheck und Folgencheck v1.1"
+    sourceSection: "Ex-ante-Prüfung"
+    shortDefinition: "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann."
+    hoverDefinition: "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume ex ante."
+    longDefinition: "Der Folgencheck ist eine vorsorgende Ex-ante-Prüfung möglicher Wirkungen. Er untersucht Wirkstoffe, Wirkungspotenziale, Wirkungspfade, Wirkungsräume, Nebenwirkungen, Datenqualität, Unsicherheit und Schutzgrenzen, bevor Schäden oder Systemfolgen vollständig eingetreten sind."
+    usageNote: "Nicht als nachträgliche Schadensanalyse verkürzen. Folgencheck ist vorsorgende Prüfung möglicher Auslösung."
+    doNotConfuseWith: ["Faktencheck", "Schadensbilanz", "Zensur", "Meinungsprüfung"]
+    synonyms: ["Folgenprüfung", "Ex-ante-Folgenprüfung", "Wirkungsfolgencheck"]
+    relatedTerms: ["faktencheck", "wirkstoff", "wirkungsraum", "wirkungspfad", "wirkungspotenzial"]
+    relatedDocuments: ["faktencheck-folgencheck-v1-1"]
+    examples: ["Kann ein Narrativ Panik, Polarisierung oder Schutzverhalten auslösen?", "Welche Nebenwirkungen hat eine Regel, bevor sie breit eingeführt wird?"]
+    preferredUsage: "Folgencheck als vorsorgende Prüfung von Wirkungspotenzialen verwenden."
+    deprecatedUsage: ["Folgencheck als reine Nachschau"]
     reviewStatus: "approved"
     glossaryOrderKey: "folgencheck"
-    firstApprovedIn: "2026.2"
+    firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-26"
   - termId: gri
     canonicalLabel: "GRI"
@@ -277,27 +253,27 @@ terms:
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
   - termId: idgs
-    canonicalLabel: "Inner Development Goals (IDGs)"
+    canonicalLabel: "IDGs"
     slug: "idgs"
     status: "anschlussbegriff"
     version: "1.0"
-    source: "SDG-/SDG+-Referenzrahmen"
-    sourceDocument: "SDG-/SDG+-Referenzrahmen der Wirkungsökonomie"
-    sourceSection: "Kompetenz und Bildung"
-    shortDefinition: "Die Inner Development Goals beschreiben innere und soziale Fähigkeiten, die Menschen und Organisationen für Transformation brauchen."
-    hoverDefinition: "IDGs sind ein Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeit; in der WÖk sind sie Anschluss an Wirkungskompetenz."
-    longDefinition: "Die Inner Development Goals beschreiben Fähigkeiten wie Selbstwahrnehmung, Beziehung, Zusammenarbeit, Denken und Handeln. In der Wirkungsökonomie sind sie kein dritter Zielrahmen neben SDGs und SDG+, sondern ein anschlussfähiger Kompetenzrahmen für Transformation."
-    usageNote: "IDGs als Kompetenzrahmen einordnen, nicht als Ersatz für SDGs, SDG+ oder Wirkungskompetenz."
-    doNotConfuseWith: ["SDGs", "SDG+", "Wirkungskompetenz"]
-    synonyms: ["IDG", "IDGs", "Inner Development Goals"]
-    relatedTerms: ["wirkungskompetenz", "sdgs", "sdg-plus", "wirkungspotenzial", "wirkungsrueckkopplung"]
-    relatedDocuments: ["handbuch-wirkungskompetenz"]
-    examples: ["Ein Team stärkt Reflexion, Zusammenarbeit und Entscheidungsfähigkeit, damit Transformationsziele praktisch umgesetzt werden können."]
-    preferredUsage: "IDGs als Anschlussrahmen für innere und kollektive Entwicklungsfähigkeiten."
-    deprecatedUsage: ["IDGs als offizielles Nachhaltigkeitsziel", "IDGs als Ersatz für Wirkungskompetenz"]
+    source: "WÖk SDG-/SDG+-Referenzrahmen"
+    sourceDocument: "WÖk SDG-/SDG+-Referenzrahmen"
+    sourceSection: "IDGs und Wirkungskompetenz"
+    shortDefinition: "IDGs sind ein anschlussfähiger Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeiten."
+    hoverDefinition: "Inner Development Goals beschreiben Fähigkeiten, die Menschen und Organisationen für Transformation brauchen. Sie ersetzen SDGs oder SDG+ nicht."
+    longDefinition: "Die Inner Development Goals sind kein dritter Zielkatalog neben SDGs und SDG+. Für die Wirkungsökonomie sind sie ein Kompetenzrahmen, der Wirkungskompetenz, Urteilskraft, Zusammenarbeit, Reflexion und Verantwortungsfähigkeit unterstützen kann."
+    usageNote: "IDGs als Kompetenzrahmen darstellen, nicht als Ersatz für SDGs oder SDG+."
+    doNotConfuseWith: ["SDGs", "SDG+", "Agenda 2030"]
+    synonyms: ["Inner Development Goals", "IDG", "innere Entwicklungsziele"]
+    relatedTerms: ["wirkungskompetenz", "sdgs", "sdg-plus", "agenda-2030"]
+    relatedDocuments: ["sdg-sdgplus-referenzrahmen"]
+    examples: []
+    preferredUsage: "Als Kompetenzanschluss an SDGs, SDG+ und Wirkungskompetenz verwenden."
+    deprecatedUsage: ["IDGs als Zielkatalog der WÖk"]
     reviewStatus: "approved"
-    glossaryOrderKey: "inner development goals"
-    firstApprovedIn: "2026.2"
+    glossaryOrderKey: "idgs"
+    firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-26"
   - termId: mensch-planet-demokratie
     canonicalLabel: "Mensch, Planet und Demokratie"
@@ -851,6 +827,30 @@ terms:
     glossaryOrderKey: "sdg sdgplus referenzrahmen"
     firstApprovedIn: "2026.2"
     lastUpdated: "2026-05-24"
+  - termId: social-taxonomy
+    canonicalLabel: "Social Taxonomy"
+    slug: "social-taxonomy"
+    status: "anschlussbegriff"
+    category: "Datenbegriff"
+    version: "1.0"
+    source: "Social Taxonomy Ausarbeitung v1.0"
+    sourceDocument: "Social Taxonomy Ausarbeitung v1.0"
+    sourceSection: "Sustainable Finance und soziale Wirkung"
+    shortDefinition: "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten."
+    hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen."
+    longDefinition: "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann."
+    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Den Begriff daher als Vorschlags- und Weiterentwicklungsraum klar von der geltenden EU-Umwelt-Taxonomie unterscheiden."
+    doNotConfuseWith: ["EU-Taxonomie", "ESG-Siegel", "Social Credit", "Corporate Volunteering"]
+    synonyms: ["Sozialtaxonomie", "EU-Sozialtaxonomie", "soziale Taxonomie", "Social Taxonomy 2.0"]
+    relatedTerms: ["eu-taxonomie", "esg", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "woek-id", "social-credit"]
+    relatedDocuments: ["social-taxonomy-wirkungsoekonomie"]
+    examples: ["Ein Wohnprojekt wird nach Energie, Bezahlbarkeit, Verdrängungsrisiko, Gesundheit, Beteiligung und lokaler Wirkung betrachtet."]
+    preferredUsage: "Social Taxonomy als soziale Klassifikations- und Wirkungsarchitektur für Sustainable Finance verwenden."
+    deprecatedUsage: ["Social Taxonomy als geltendes EU-Recht darstellen", "Social Taxonomy als Personenbewertung verwenden"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "social taxonomy"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
   - termId: t-sroi
     canonicalLabel: "T-SROI"
     slug: "t-sroi"
@@ -933,7 +933,7 @@ terms:
     longDefinition: "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+."
     usageNote: "Wirkung nicht automatisch positiv verwenden. Wenn die Zielgröße gemeint ist, meist positive Netto-Wirkung verwenden."
     doNotConfuseWith: ["Wirkungspotenzial", "Absicht", "Output", "Image"]
-    synonyms: ["Impact"]
+    synonyms: ["Impact", "Zustandsveränderung"]
     relatedTerms: ["wirkungspotenzial", "netto-wirkung", "positive-netto-wirkung", "wirkungsbewertung"]
     relatedDocuments: []
     examples: []
@@ -943,29 +943,6 @@ terms:
     glossaryOrderKey: "wirkung"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
-  - termId: zustandsveraenderung
-    canonicalLabel: "Zustandsveränderung"
-    slug: "zustandsveraenderung"
-    status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Zustandsveränderung beschreibt, was sich durch eine Handlung, Entscheidung oder Struktur tatsächlich verändert."
-    hoverDefinition: "Eine Zustandsveränderung ist die tatsächliche Veränderung eines Zustands bei Menschen, Lebensgrundlagen, Institutionen oder Systemen."
-    longDefinition: "In der Wirkungsökonomie ist Zustandsveränderung die beobachtbare Veränderung, an der Wirkung überhaupt erkennbar wird. Sie ist noch keine Bewertung. Erst der Bezug zu SDGs, Agenda 2030 und SDG+ ordnet ein, ob eine Veränderung positiv, negativ oder neutral wirkt."
-    usageNote: "Als erklärenden Begriff verwenden, wenn der Unterschied zwischen Aktivität, Absicht und tatsächlicher Veränderung sichtbar werden soll."
-    doNotConfuseWith: ["Absicht", "Output", "Wirkungspotenzial", "Wirkungsbewertung"]
-    synonyms: ["Veränderung von Zuständen", "tatsächliche Veränderung"]
-    relatedTerms: ["wirkung", "wirkungspotenzial", "wirkungsbewertung", "positive-netto-wirkung"]
-    relatedDocuments: []
-    examples: []
-    preferredUsage: "Zustandsveränderung als beobachtbare Veränderung verwenden."
-    deprecatedUsage: ["Zustandsveränderung als automatisch positive Wirkung"]
-    reviewStatus: "approved"
-    glossaryOrderKey: "zustandsveränderung"
-    firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-26"
   - termId: wirkungsarchitektur
     canonicalLabel: "Wirkungsarchitektur"
     slug: "wirkungsarchitektur"
@@ -1196,29 +1173,81 @@ terms:
     glossaryOrderKey: "wirkungshaushalt"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: wirkungsschule
+    canonicalLabel: "Wirkungsschule"
+    slug: "wirkungsschule"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Bildung & Wirkungsschule"
+    shortDefinition: "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum."
+    hoverDefinition: "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet."
+    longDefinition: "In der Wirkungsökonomie bezeichnet die Wirkungsschule die institutionelle Form wirkungsorientierter Bildung: Unterricht, Raum, Beziehung, Bewertung, Förderung, Gesundheit, Demokratiepraxis, digitale Mündigkeit und Bildungsnetzwerke werden so gestaltet, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher wird."
+    usageNote: "Nicht als Schulform, Schulranking oder Personenbewertung verwenden. Bewertet werden Strukturen, Lernbedingungen und Angebote, nicht Kinder, Familien oder Lehrkräfte."
+    doNotConfuseWith: ["Schulform", "Schulranking", "Kinder-Scoring"]
+    synonyms: ["wirkungsorientierte Schule", "Schule als Wirkungsraum"]
+    relatedTerms: ["wirkungspaedagogik", "wirkungskompetenz", "wirkungsraum", "positive-netto-wirkung"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"]
+    examples:
+      - "Ein Schulhof-Hitze-Projekt verbindet Messung, Beteiligung, Gesundheit, Stadtklima und demokratische Entscheidung."
+      - "Ein Wirkungsportfolio macht Lernwege sichtbar, ohne Kinder auf Scores zu reduzieren."
+    preferredUsage: "Als Architekturbegriff für Schule verwenden, wenn Unterricht, Raum, Beziehung, Bewertung, Förderung, Demokratiepraxis und Schutzlogik gemeinsam betrachtet werden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsschule"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungspaedagogik
+    canonicalLabel: "Wirkungspädagogik"
+    slug: "wirkungspaedagogik"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Bildung & Wirkungsschule"
+    shortDefinition: "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit."
+    hoverDefinition: "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben."
+    longDefinition: "Wirkungspädagogik ist die pädagogische Logik der Wirkungsschule. Sie verbindet Fachlichkeit, Beziehung, Resonanz, Fehlerkultur, Reflexion und reale Wirkungsfragen, damit Lernende Wissen nicht nur aufnehmen, sondern Folgen erkennen, Verantwortung übernehmen und handlungsfähig werden."
+    usageNote: "Nicht als Moralisierung, Gesinnungsunterricht oder Projektbeliebigkeit verwenden. Wirkungspädagogik bleibt fachlich, überprüfbar, demokratisch offen und schützend."
+    doNotConfuseWith: ["Projektunterricht ohne Fachlichkeit", "Gesinnungspädagogik", "Kompetenzrhetorik"]
+    synonyms: ["wirkungsorientierte Pädagogik"]
+    relatedTerms: ["wirkungsschule", "wirkungskompetenz", "wirkungsraum", "wirkungspotenzial"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"]
+    examples:
+      - "Ein Fach-Zukunft-Modul verbindet Fachwissen mit einer lokalen Wirkungsfrage."
+      - "Feedback wird nicht nur zur Leistungsrückmeldung, sondern zur Stärkung von Selbstwirksamkeit und Korrekturfähigkeit genutzt."
+    preferredUsage: "Als pädagogischen Ansatz verwenden, wenn Lernen, Fachlichkeit, Reflexion und verantwortliches Handeln zusammen betrachtet werden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspaedagogik"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
   - termId: wirkungskompetenz
     canonicalLabel: "Wirkungskompetenz"
     slug: "wirkungskompetenz"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken und Rückkopplungen zu erkennen und zu gestalten."
-    hoverDefinition: "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern."
-    longDefinition: "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit und praktische Steuerung."
-    usageNote: "Nicht nur Wissen, sondern Handlungsfähigkeit."
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Führende Mini-Definitionen; Bildung & Wirkungsschule"
+    shortDefinition: "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten."
+    hoverDefinition: "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern."
+    longDefinition: "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit, demokratische Streitfähigkeit und praktische Steuerung. Im Bildungsbereich ist sie die Fähigkeit, reale Wirkungsfragen zu analysieren, Perspektiven einzubeziehen, Zielkonflikte offenzulegen, Nebenwirkungen zu prüfen und handlungsfähige Lösungen zu entwickeln."
+    usageNote: "Nicht nur Wissen, sondern Handlungsfähigkeit; im Bildungsbereich niemals als Personen-Score verwenden."
     doNotConfuseWith: ["Fachwissen", "Datenkompetenz"]
     synonyms: []
-    relatedTerms: ["wirkungsradar", "wirkungsbewertung", "wirkungsarchitektur"]
-    relatedDocuments: []
-    examples: []
-    preferredUsage: "Als Fähigkeit zur wirkungsorientierten Entscheidung verwenden."
+    relatedTerms: ["wirkungsschule", "wirkungspaedagogik", "wirkungsradar", "wirkungsbewertung", "wirkungsarchitektur"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"]
+    examples:
+      - "Schüler:innen prüfen bei einem Schulhof-Hitze-Projekt Daten, Betroffene, Kosten, Nebenwirkungen und demokratische Entscheidungspfade."
+      - "Eine Organisation bewertet nicht nur Output, sondern auch Nebenwirkungen, Rückkopplungen und Korrekturmöglichkeiten."
+    preferredUsage: "Als Fähigkeit zur wirkungsorientierten Entscheidung, demokratischen Urteilsbildung und verantwortlichen Gestaltung verwenden."
     deprecatedUsage: []
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungskompetenz"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-27"
   - termId: wirkungslenkung
     canonicalLabel: "Wirkungslenkung"
     slug: "wirkungslenkung"
@@ -1619,7 +1648,7 @@ terms:
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Führende Mini-Definitionen"
     shortDefinition: "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen."
-    hoverDefinition: "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - kein Wahrheitsmonopol."
+    hoverDefinition: "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol."
     longDefinition: "Der Begriff beschreibt, ob Entscheidungen, Preise, Narrative oder Kennzahlen den tatsächlichen Folgen näherkommen oder sie verdecken."
     usageNote: "Nicht als Wahrheitsmonopol formulieren."
     doNotConfuseWith: ["absolute Wahrheit", "Meinungskontrolle"]

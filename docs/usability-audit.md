@@ -1,5 +1,5 @@
 # Usability Audit
-Stand: 2026-05-27T04:38:12.604Z
+Stand: 2026-05-27T07:31:25.452Z
 ## Durchgeführte Korrekturen
 - alte öffentliche Labels wie „Detailkonzept“ wurden in nutzerverständlichere „Konzeptpapier“-Sprache überführt.
 - „Einzeldossier“ wurde zu „Praxisdossier“ geglättet.
@@ -8,10 +8,12 @@ Stand: 2026-05-27T04:38:12.604Z
 - mehrfach erzeugte PDF-Labels wurden bereinigt.
 - globale CSS/JS-UX-Schicht unterscheidet Link-, Info- und Dokumentkarten, klappt lange Inhaltsverzeichnisse mobil ein und schützt Tabellen vor Abschneiden.
 ## Prüfumfang und Ergebnis
-- Geprüfte Dateien: 1128
-- In diesem finalen Prüflauf neu geänderte Dateien: 308
+- Geprüfte Dateien: 1502
+- In diesem finalen Prüflauf neu geänderte Dateien: 310
 - Die bereits angewendeten Korrekturen bleiben im Git-Diff dieses Releases nachvollziehbar.
 - `assets/search/search-index.json`
+- `begriffe/resilienz/index.html`
+- `begriffe/wirkungsrisiko/index.html`
 - `bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/index.html`
 - `data/content_quality/go2_detailkonzept_production_status.json`
 - `downloads.html`
@@ -89,9 +91,7 @@ Stand: 2026-05-27T04:38:12.604Z
 - `werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html`
 - `werkzeuge/impact-controlling/detailkonzepte/woek-ids/index.html`
 - `werkzeuge/impact-controlling/dossiers/beispielrechnungen/index.html`
-- `werkzeuge/impact-controlling/dossiers/benchmarks-archetypen/index.html`
-- `werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/index.html`
-- ... 228 weitere Dateien
+- ... 230 weitere Dateien
 ## Restmuster nach Korrektur
 | Prüfung | Treffer | Dateien |
 | --- | ---: | ---: |
