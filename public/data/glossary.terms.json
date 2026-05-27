@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T13:57:28.005Z",
+  "generatedAt": "2026-05-27T17:39:56.551Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -4630,6 +4630,75 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "host-wirkungsscore",
+      "termId": "host-wirkungsscore",
+      "label": "Host-Wirkungsscore",
+      "canonicalLabel": "Host-Wirkungsscore",
+      "slug": "host-wirkungsscore",
+      "aliases": [
+        "Host-Wirkungsscore",
+        "HWS",
+        "Host Scorecard",
+        "Hosting-Scorecard"
+      ],
+      "synonyms": [
+        "Host-Wirkungsscore",
+        "HWS",
+        "Host Scorecard",
+        "Hosting-Scorecard"
+      ],
+      "shortDefinition": "Der Host-Wirkungsscore ist eine Scorecard für öffentliche Formate, die Quellenklarheit, Framing, Diskursführung, Community, Transparenz, Schutz und Korrekturfähigkeit prüft.",
+      "definition": "Der Host-Wirkungsscore ist ein Lerninstrument für öffentliche Wirkungsbedingungen, keine Wahrheitsmaschine und kein Personenrating.",
+      "longDefinition": "Der Host-Wirkungsscore bewertet nicht Menschen, Meinungen oder Gesinnung, sondern öffentliche Verstärkungsbedingungen eines Formats. Er unterscheidet Wirkungspotenzial, Wirkungsrisiko, Quellenklarheit, Framing, Diskursführung, Community-Architektur, Transparenz, Schutz vulnerabler Gruppen, Plattform- und Clip-Verantwortung, Korrekturfähigkeit und Transformationswirkung.",
+      "woekRelation": "Die WÖk nutzt den Host-Wirkungsscore als nicht-amtliches Reflexionsraster für Formate, Redaktionen, Akademien und Peer-Review.",
+      "statusNote": "",
+      "usageNote": "Als Reflexions- und Lerninstrument verwenden; nicht als staatliches Meinungsranking oder automatische Sperrlogik.",
+      "categories": [
+        "medien-oeffentlichkeit",
+        "messbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "reverse-merit-order",
+        "wirkungsorientiertes-hosting"
+      ],
+      "officialSources": [],
+      "pageUrl": "/begriffe/host-wirkungsscore/",
+      "priority": 174,
+      "status": "führender-begriff",
+      "version": "1.0",
+      "category": "Messbegriff",
+      "source": "Wirkungsräume gestalten v1.0",
+      "sourceDocument": "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx",
+      "sourceSection": "Medien & Öffentlichkeit; Instrumente",
+      "hoverDefinition": "Der Host-Wirkungsscore ist ein Lerninstrument für öffentliche Wirkungsbedingungen, keine Wahrheitsmaschine und kein Personenrating.",
+      "doNotConfuseWith": [
+        "Personenscore",
+        "Social Credit",
+        "amtliches Medienrating"
+      ],
+      "relatedDocuments": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ],
+      "examples": [
+        "Nach einem Stream prüft das Team Quellenklarheit, Clip-Kontext, Chat-Eskalation und sichtbare Korrekturwege."
+      ],
+      "preferredUsage": "Als nicht-amtliches Bewertungs- und Lernraster für Formate, Redaktionen, Akademien und Peer-Review verwenden.",
+      "deprecatedUsage": [
+        "Host-Wirkungsscore als Gesinnungsscore",
+        "Host-Wirkungsscore als automatisches Ranking von Personen"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "host wirkungsscore",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
       "id": "hotspot-analyse",
       "termId": "hotspot-analyse",
       "label": "Hotspot-Analyse",
@@ -9004,6 +9073,72 @@
       "lastUpdated": "2026-05-27"
     },
     {
+      "id": "resonanzarchitektur",
+      "termId": "resonanzarchitektur",
+      "label": "Resonanzarchitektur",
+      "canonicalLabel": "Resonanzarchitektur",
+      "slug": "resonanzarchitektur",
+      "aliases": [
+        "Resonanzarchitektur",
+        "Resonanzgestaltung",
+        "Diskursarchitektur"
+      ],
+      "synonyms": [
+        "Resonanzarchitektur",
+        "Resonanzgestaltung",
+        "Diskursarchitektur"
+      ],
+      "shortDefinition": "Resonanzarchitektur beschreibt die gestalteten Bedingungen, unter denen Sprache, Bilder, Gäste, Chat, Plattformpfade und Korrekturen Anschluss finden.",
+      "definition": "Resonanzarchitektur ist die bewusste Gestaltung von Gespräch, Chat, Clips, Plattformpfad und Nachbereitung.",
+      "longDefinition": "Resonanzarchitektur macht sichtbar, dass ein Format nicht nur aus Inhalt besteht. Thema, Einstiegsfrage, Gästeauswahl, Redezeit, Humor, Quellen, Chatregeln, Titel, Thumbnail, Clips, Kommentarlogik und Nachkorrektur strukturieren, welche Resonanzen verstärkt oder begrenzt werden.",
+      "woekRelation": "Die WÖk nutzt Resonanzarchitektur, um öffentliche Wirkung nicht nur am Inhalt, sondern an Kontext, Verstärkung, Korrektur und Anschlussfähigkeit zu prüfen.",
+      "statusNote": "",
+      "usageNote": "Nicht mit bloßer Dramaturgie oder Reichweitenoptimierung gleichsetzen.",
+      "categories": [
+        "medien-oeffentlichkeit",
+        "architekturbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungsarchitektur",
+        "wirkungsorientiertes-hosting"
+      ],
+      "officialSources": [],
+      "pageUrl": "/begriffe/resonanzarchitektur/",
+      "priority": 175,
+      "status": "führender-begriff",
+      "version": "1.0",
+      "category": "Architekturbegriff",
+      "source": "Wirkungsräume gestalten v1.0",
+      "sourceDocument": "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx",
+      "sourceSection": "Medien & Öffentlichkeit; Architektur",
+      "hoverDefinition": "Resonanzarchitektur ist die bewusste Gestaltung von Gespräch, Chat, Clips, Plattformpfad und Nachbereitung.",
+      "doNotConfuseWith": [
+        "Aufmerksamkeitsoptimierung",
+        "Framing allein",
+        "Reichweitenstrategie"
+      ],
+      "relatedDocuments": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ],
+      "examples": [
+        "Ein Format legt vorab fest, wie Falschbehauptungen, Chat-Eskalation und Clip-Kontext behandelt werden."
+      ],
+      "preferredUsage": "Als Architekturbegriff für öffentliche Kommunikationsräume verwenden.",
+      "deprecatedUsage": [
+        "Resonanzarchitektur als Manipulationsdesign"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "resonanzarchitektur",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
       "id": "resonanzraum",
       "termId": "resonanzraum",
       "label": "Resonanzraum",
@@ -12731,6 +12866,77 @@
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungsnetz",
+      "firstApprovedIn": "2026.1",
+      "lastUpdated": "2026-05-27",
+      "dataStandardsGroup": ""
+    },
+    {
+      "id": "wirkungsorientiertes-hosting",
+      "termId": "wirkungsorientiertes-hosting",
+      "label": "Wirkungsorientiertes Hosting",
+      "canonicalLabel": "Wirkungsorientiertes Hosting",
+      "slug": "wirkungsorientiertes-hosting",
+      "aliases": [
+        "Wirkungsorientiertes Hosting",
+        "wirkungsorientierte Moderation",
+        "Impact Hosting",
+        "verantwortetes Hosting"
+      ],
+      "synonyms": [
+        "Wirkungsorientiertes Hosting",
+        "wirkungsorientierte Moderation",
+        "Impact Hosting",
+        "verantwortetes Hosting"
+      ],
+      "shortDefinition": "Wirkungsorientiertes Hosting gestaltet öffentliche Gesprächs-, Medien- und Community-Räume nach Wirkung, Quellenklarheit, Würde, Schutz und Korrekturfähigkeit.",
+      "definition": "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet.",
+      "longDefinition": "Wirkungsorientiertes Hosting ist eine Praxis für Creator:innen, Hosts, Redaktionen, Streamer:innen, Podcaster:innen, Community-Management und politische Kommunikation. Es gestaltet Resonanzbedingungen so, dass Wahrheit zugänglich bleibt, Streit zu Erkenntnis führen kann, Menschenwürde geschützt wird und demokratische Rückkopplung funktioniert.",
+      "woekRelation": "Die WÖk liest Hosting als Gestaltung öffentlicher Wirkungsräume: Quellenklarheit, Korrektur, Würdeschutz und Resonanzbedingungen werden Teil der Verantwortung.",
+      "statusNote": "",
+      "usageNote": "Nicht als Benimmkatalog, Zensur oder Gesinnungsprüfung verwenden. Bewertet werden öffentliche Verstärkungsbedingungen, Quellenklarheit, Moderation, Schutzstandards und Korrekturwege.",
+      "categories": [
+        "medien-oeffentlichkeit",
+        "praxisbegriff"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsraum",
+        "resonanzarchitektur",
+        "resonanzraum",
+        "wirkungskompetenz",
+        "host-wirkungsscore"
+      ],
+      "officialSources": [],
+      "pageUrl": "/begriffe/wirkungsorientiertes-hosting/",
+      "priority": 176,
+      "status": "führender-begriff",
+      "version": "1.0",
+      "category": "Praxisbegriff",
+      "source": "Wirkungsräume gestalten v1.0",
+      "sourceDocument": "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx",
+      "sourceSection": "Medien & Öffentlichkeit; Praxis",
+      "hoverDefinition": "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet.",
+      "doNotConfuseWith": [
+        "Zensur",
+        "Personenscore",
+        "Social Credit",
+        "Moderationsstil"
+      ],
+      "relatedDocuments": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ],
+      "examples": [
+        "Ein Host trennt Fakt, Meinung, Erfahrung und Prognose sichtbar, bevor ein Hochrisiko-Thema weiter diskutiert wird.",
+        "Ein Livestream nutzt Chat-Regeln, Quellenlinks, Interventionssätze und Nachkorrektur als Teil der Wirkungsarchitektur."
+      ],
+      "preferredUsage": "Als Praxisbegriff für öffentliche Formate verwenden, die Wirkungsräume bewusst gestalten.",
+      "deprecatedUsage": [
+        "Wirkungsorientiertes Hosting als Gesinnungsprüfung",
+        "Hosting-Score als Menschenbewertung"
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungsorientiertes hosting",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-27",
       "dataStandardsGroup": ""

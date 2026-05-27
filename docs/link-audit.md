@@ -1,11 +1,11 @@
 # Link- und CTA-Audit
 
-Stand: 2026-05-27T08:08:28.611Z
+Stand: 2026-05-27T17:41:10.502Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 373
-- Geprüfte CTA-/Button-Links: 11215
+- Geprüfte HTML-Dateien: 374
+- Geprüfte CTA-/Button-Links: 11299
 - Fehler: 0
 - Warnungen: 44
 - Self-Links: 0

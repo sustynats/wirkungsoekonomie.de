@@ -1,134 +1,697 @@
 {
   "header": [
-    { "label": "Start", "href": "index.html", "match": ["index.html"] },
-    { "label": "Verstehen", "href": "verstehen.html", "match": ["verstehen.html", "wirkungsoekonomie.html", "wirkungsoekonomie/", "verstehen/"] },
-    { "label": "Wirkungsfelder", "href": "wirkungsfelder/", "match": ["wirkungsfelder/", "anwendungen.html"] },
-    { "label": "Für wen?", "href": "fuer/", "match": ["fuer/", "ordnung/anschlussfaehigkeit/", "ordnung/demokratische-anschlussfaehigkeit.html", "parteien.html"] },
-    { "label": "Ausprobieren", "href": "erleben.html", "match": ["erleben.html", "erleben/", "werkzeuge/", "scanner.html", "anwendungen/scanner.html", "scorecard-dashboard.html", "methodik/", "workflow.html", "glossar.html#begriff-t-sroi"] },
-    { "label": "Bibliothek", "href": "downloads.html", "match": ["werkstatt/", "downloads.html", "downloads/", "dokumente/", "referenz/", "buch.html", "buch/", "evidenz/", "quellen/"] },
-    { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
-    { "label": "Suche", "href": "suche.html", "match": ["suche.html"] }
+    {
+      "label": "Start",
+      "href": "index.html",
+      "match": [
+        "index.html"
+      ]
+    },
+    {
+      "label": "Verstehen",
+      "href": "verstehen.html",
+      "match": [
+        "verstehen.html",
+        "wirkungsoekonomie.html",
+        "wirkungsoekonomie/",
+        "verstehen/"
+      ]
+    },
+    {
+      "label": "Wirkungsfelder",
+      "href": "wirkungsfelder/",
+      "match": [
+        "wirkungsfelder/",
+        "anwendungen.html"
+      ]
+    },
+    {
+      "label": "Für wen?",
+      "href": "fuer/",
+      "match": [
+        "fuer/",
+        "ordnung/anschlussfaehigkeit/",
+        "ordnung/demokratische-anschlussfaehigkeit.html",
+        "parteien.html"
+      ]
+    },
+    {
+      "label": "Ausprobieren",
+      "href": "erleben.html",
+      "match": [
+        "erleben.html",
+        "erleben/",
+        "werkzeuge/",
+        "scanner.html",
+        "anwendungen/scanner.html",
+        "scorecard-dashboard.html",
+        "methodik/",
+        "workflow.html",
+        "glossar.html#begriff-t-sroi"
+      ]
+    },
+    {
+      "label": "Bibliothek",
+      "href": "downloads.html",
+      "match": [
+        "werkstatt/",
+        "downloads.html",
+        "downloads/",
+        "dokumente/",
+        "referenz/",
+        "buch.html",
+        "buch/",
+        "evidenz/",
+        "quellen/"
+      ]
+    },
+    {
+      "label": "Akademie",
+      "href": "akademie.html",
+      "match": [
+        "akademie.html",
+        "akademie/"
+      ]
+    },
+    {
+      "label": "Suche",
+      "href": "suche.html",
+      "match": [
+        "suche.html"
+      ]
+    }
   ],
   "applications": [
-    { "label": "Scanner", "href": "anwendungen/scanner.html", "match": ["scanner.html", "anwendungen/scanner.html"] },
-    { "label": "Wirkung politischer Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
-    { "label": "Produkte und Preise", "href": "anwendungen.html#produkte", "match": ["anwendungen.html#produkte"] },
-    { "label": "Unternehmen und Management", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
-    { "label": "Lieferketten", "href": "anwendungen.html#lieferketten", "match": ["anwendungen.html#lieferketten"] },
-    { "label": "Wirkungshaushalt", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] },
-    { "label": "Wohnen", "href": "fuer/mieter.html", "match": ["fuer/mieter.html"] },
-    { "label": "Wirkungseinkommen", "href": "fuer/wirkungseinkommen.html", "match": ["fuer/wirkungseinkommen.html"] },
-    { "label": "Wirkungsrente", "href": "fuer/rente.html", "match": ["fuer/rente.html"] },
-    { "label": "Medien und Demokratie", "href": "sdg-plus/medien-demokratie.html", "match": ["sdg-plus/medien-demokratie.html"] },
-    { "label": "T-SROI", "href": "glossar.html#begriff-t-sroi", "match": ["glossar.html#begriff-t-sroi"] },
-    { "label": "Gesundheit", "href": "fuer/gesundheit.html", "match": ["fuer/gesundheit.html"] },
-    { "label": "Kommunen", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] }
+    {
+      "label": "Scanner",
+      "href": "anwendungen/scanner.html",
+      "match": [
+        "scanner.html",
+        "anwendungen/scanner.html"
+      ]
+    },
+    {
+      "label": "Wirkung politischer Sprache",
+      "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+      "match": [
+        "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"
+      ]
+    },
+    {
+      "label": "Produkte und Preise",
+      "href": "anwendungen.html#produkte",
+      "match": [
+        "anwendungen.html#produkte"
+      ]
+    },
+    {
+      "label": "Unternehmen und Management",
+      "href": "fuer/unternehmen.html",
+      "match": [
+        "fuer/unternehmen.html"
+      ]
+    },
+    {
+      "label": "Lieferketten",
+      "href": "anwendungen.html#lieferketten",
+      "match": [
+        "anwendungen.html#lieferketten"
+      ]
+    },
+    {
+      "label": "Wirkungshaushalt",
+      "href": "fuer/kommunen.html",
+      "match": [
+        "fuer/kommunen.html"
+      ]
+    },
+    {
+      "label": "Wohnen",
+      "href": "fuer/mieter.html",
+      "match": [
+        "fuer/mieter.html"
+      ]
+    },
+    {
+      "label": "Wirkungseinkommen",
+      "href": "fuer/wirkungseinkommen.html",
+      "match": [
+        "fuer/wirkungseinkommen.html"
+      ]
+    },
+    {
+      "label": "Wirkungsrente",
+      "href": "fuer/rente.html",
+      "match": [
+        "fuer/rente.html"
+      ]
+    },
+    {
+      "label": "Medien und Demokratie",
+      "href": "sdg-plus/medien-demokratie.html",
+      "match": [
+        "sdg-plus/medien-demokratie.html"
+      ]
+    },
+    {
+      "label": "T-SROI",
+      "href": "glossar.html#begriff-t-sroi",
+      "match": [
+        "glossar.html#begriff-t-sroi"
+      ]
+    },
+    {
+      "label": "Gesundheit",
+      "href": "fuer/gesundheit.html",
+      "match": [
+        "fuer/gesundheit.html"
+      ]
+    },
+    {
+      "label": "Kommunen",
+      "href": "fuer/kommunen.html",
+      "match": [
+        "fuer/kommunen.html"
+      ]
+    }
   ],
   "more": [
-    { "label": "Referenz", "href": "referenz/", "match": ["referenz/"] },
-    { "label": "Blog / Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
-    { "label": "Evidenz", "href": "evidenz/", "match": ["evidenz/", "quellen/"] },
-    { "label": "SDG+", "href": "sdg-plus.html", "match": ["sdg-plus.html", "sdg-plus/", "sdg-und-sdg-plus/"] },
-    { "label": "Methodik", "href": "methodik/datenbasis.html", "match": ["methodik/"] },
-    { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] },
-    { "label": "Buch", "href": "buch.html", "match": ["buch.html", "buch/"] },
-    { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
-    { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
-    { "label": "Über die WÖk", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] }
+    {
+      "label": "Referenz",
+      "href": "referenz/",
+      "match": [
+        "referenz/"
+      ]
+    },
+    {
+      "label": "Blog / Journal",
+      "href": "blog.html",
+      "match": [
+        "blog.html",
+        "blog/"
+      ]
+    },
+    {
+      "label": "Evidenz",
+      "href": "evidenz/",
+      "match": [
+        "evidenz/",
+        "quellen/"
+      ]
+    },
+    {
+      "label": "SDG+",
+      "href": "sdg-plus.html",
+      "match": [
+        "sdg-plus.html",
+        "sdg-plus/",
+        "sdg-und-sdg-plus/"
+      ]
+    },
+    {
+      "label": "Methodik",
+      "href": "methodik/datenbasis.html",
+      "match": [
+        "methodik/"
+      ]
+    },
+    {
+      "label": "Glossar",
+      "href": "glossar.html",
+      "match": [
+        "glossar.html",
+        "glossar/"
+      ]
+    },
+    {
+      "label": "Buch",
+      "href": "buch.html",
+      "match": [
+        "buch.html",
+        "buch/"
+      ]
+    },
+    {
+      "label": "Downloads",
+      "href": "downloads.html",
+      "match": [
+        "downloads.html",
+        "downloads/"
+      ]
+    },
+    {
+      "label": "Mitmachen",
+      "href": "mitmachen.html",
+      "match": [
+        "mitmachen.html",
+        "mitmachen/"
+      ]
+    },
+    {
+      "label": "Über die WÖk",
+      "href": "ueber.html",
+      "match": [
+        "ueber.html",
+        "ueber/",
+        "ueber-die-woek/",
+        "ueber-die-w-oek/"
+      ]
+    }
   ],
   "footerGroups": [
     {
       "title": "Verstehen",
       "items": [
-        { "label": "Wirkung einfach erklärt", "href": "wirkungsoekonomie.html", "match": ["wirkungsoekonomie.html", "wirkungsoekonomie/"] },
-        { "label": "Modell", "href": "modell.html", "match": ["modell.html", "modell/"] },
-        { "label": "Ordnung", "href": "ordnung/", "match": ["ordnung/"] },
-        { "label": "Kompass", "href": "kompass.html", "match": ["kompass.html"] },
-        { "label": "Fragen & Einwände", "href": "fragen/", "match": ["fragen/"] },
-        { "label": "Glossar", "href": "glossar.html", "match": ["glossar.html", "glossar/"] },
-        { "label": "SDG-/SDG+-Referenzrahmen", "href": "verstehen/sdgs-sdgplus/", "match": ["verstehen/sdgs-sdgplus/", "referenzrahmen/sdgs-sdgplus/"] }
+        {
+          "label": "Wirkung einfach erklärt",
+          "href": "wirkungsoekonomie.html",
+          "match": [
+            "wirkungsoekonomie.html",
+            "wirkungsoekonomie/"
+          ]
+        },
+        {
+          "label": "Modell",
+          "href": "modell.html",
+          "match": [
+            "modell.html",
+            "modell/"
+          ]
+        },
+        {
+          "label": "Ordnung",
+          "href": "ordnung/",
+          "match": [
+            "ordnung/"
+          ]
+        },
+        {
+          "label": "Kompass",
+          "href": "kompass.html",
+          "match": [
+            "kompass.html"
+          ]
+        },
+        {
+          "label": "Fragen & Einwände",
+          "href": "fragen/",
+          "match": [
+            "fragen/"
+          ]
+        },
+        {
+          "label": "Glossar",
+          "href": "glossar.html",
+          "match": [
+            "glossar.html",
+            "glossar/"
+          ]
+        },
+        {
+          "label": "SDG-/SDG+-Referenzrahmen",
+          "href": "verstehen/sdgs-sdgplus/",
+          "match": [
+            "verstehen/sdgs-sdgplus/",
+            "referenzrahmen/sdgs-sdgplus/"
+          ]
+        }
       ]
     },
     {
       "title": "Für wen?",
       "items": [
-        { "label": "Zielgruppen-Hub", "href": "fuer/", "match": ["fuer/"] },
-        { "label": "Bürger:innen", "href": "fuer/buergerinnen.html", "match": ["fuer/buergerinnen.html"] },
-        { "label": "Journalismus", "href": "fuer/journalismus.html", "match": ["fuer/journalismus.html"] },
-        { "label": "Unternehmen", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
-        { "label": "Politik / Parteien", "href": "fuer/politik.html", "match": ["fuer/politik.html", "ordnung/anschlussfaehigkeit/"] },
-        { "label": "Verwaltung / Kommunen", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] },
-        { "label": "Investor:innen", "href": "fuer/investoren.html", "match": ["fuer/investoren.html"] },
-        { "label": "Wissenschaft / Akademie", "href": "fuer/wissenschaft-forschung.html", "match": ["fuer/wissenschaft-forschung.html", "fuer/akademie.html"] }
+        {
+          "label": "Zielgruppen-Hub",
+          "href": "fuer/",
+          "match": [
+            "fuer/"
+          ]
+        },
+        {
+          "label": "Bürger:innen",
+          "href": "fuer/buergerinnen.html",
+          "match": [
+            "fuer/buergerinnen.html"
+          ]
+        },
+        {
+          "label": "Journalismus",
+          "href": "fuer/journalismus.html",
+          "match": [
+            "fuer/journalismus.html"
+          ]
+        },
+        {
+          "label": "Unternehmen",
+          "href": "fuer/unternehmen.html",
+          "match": [
+            "fuer/unternehmen.html"
+          ]
+        },
+        {
+          "label": "Politik / Parteien",
+          "href": "fuer/politik.html",
+          "match": [
+            "fuer/politik.html",
+            "ordnung/anschlussfaehigkeit/"
+          ]
+        },
+        {
+          "label": "Verwaltung / Kommunen",
+          "href": "fuer/kommunen.html",
+          "match": [
+            "fuer/kommunen.html"
+          ]
+        },
+        {
+          "label": "Investor:innen",
+          "href": "fuer/investoren.html",
+          "match": [
+            "fuer/investoren.html"
+          ]
+        },
+        {
+          "label": "Wissenschaft / Akademie",
+          "href": "fuer/wissenschaft-forschung.html",
+          "match": [
+            "fuer/wissenschaft-forschung.html",
+            "fuer/akademie.html"
+          ]
+        }
       ]
     },
     {
       "title": "Referenzrahmen",
       "items": [
-        { "label": "SDGs & SDG+", "href": "verstehen/sdgs-sdgplus/", "match": ["verstehen/sdgs-sdgplus/"] },
-        { "label": "Alle 17 SDGs", "href": "verstehen/sdgs-sdgplus/#sdg-list", "match": ["verstehen/sdgs-sdgplus/#sdg-list"] },
-        { "label": "SDG+ verstehen", "href": "verstehen/sdgs-sdgplus/#sdgplus", "match": ["verstehen/sdgs-sdgplus/#sdgplus"] },
-        { "label": "Agenda 2030", "href": "verstehen/sdgs-sdgplus/agenda-2030/", "match": ["verstehen/sdgs-sdgplus/agenda-2030/"] },
-        { "label": "Unterziele", "href": "verstehen/sdgs-sdgplus/unterziele/", "match": ["verstehen/sdgs-sdgplus/unterziele/"] },
-        { "label": "SDG+ Demokratie", "href": "verstehen/sdgs-sdgplus/sdgplus-demokratie/", "match": ["verstehen/sdgs-sdgplus/sdgplus-demokratie/"] }
+        {
+          "label": "SDGs & SDG+",
+          "href": "verstehen/sdgs-sdgplus/",
+          "match": [
+            "verstehen/sdgs-sdgplus/"
+          ]
+        },
+        {
+          "label": "Alle 17 SDGs",
+          "href": "verstehen/sdgs-sdgplus/#sdg-list",
+          "match": [
+            "verstehen/sdgs-sdgplus/#sdg-list"
+          ]
+        },
+        {
+          "label": "SDG+ verstehen",
+          "href": "verstehen/sdgs-sdgplus/#sdgplus",
+          "match": [
+            "verstehen/sdgs-sdgplus/#sdgplus"
+          ]
+        },
+        {
+          "label": "Agenda 2030",
+          "href": "verstehen/sdgs-sdgplus/agenda-2030/",
+          "match": [
+            "verstehen/sdgs-sdgplus/agenda-2030/"
+          ]
+        },
+        {
+          "label": "Unterziele",
+          "href": "verstehen/sdgs-sdgplus/unterziele/",
+          "match": [
+            "verstehen/sdgs-sdgplus/unterziele/"
+          ]
+        },
+        {
+          "label": "SDG+ Demokratie",
+          "href": "verstehen/sdgs-sdgplus/sdgplus-demokratie/",
+          "match": [
+            "verstehen/sdgs-sdgplus/sdgplus-demokratie/"
+          ]
+        }
       ]
     },
     {
       "title": "Wirkungsfelder",
       "items": [
-        { "label": "Bildung", "href": "wirkungsfelder/bildung/", "match": ["wirkungsfelder/bildung/"] },
-        { "label": "Gesundheit & Pflege", "href": "wirkungsfelder/gesundheit-pflege/", "match": ["wirkungsfelder/gesundheit-pflege/"] },
-        { "label": "Wohnen & Stadt", "href": "wirkungsfelder/wohnen-stadt/", "match": ["wirkungsfelder/wohnen-stadt/"] },
-        { "label": "Arbeit & Einkommen", "href": "wirkungsfelder/arbeit-einkommen/", "match": ["wirkungsfelder/arbeit-einkommen/"] },
-        { "label": "Wirtschaft & Unternehmen", "href": "wirkungsfelder/wirtschaft-unternehmen/", "match": ["wirkungsfelder/wirtschaft-unternehmen/"] },
-        { "label": "Produkte & Konsum", "href": "wirkungsfelder/produkte-konsum/", "match": ["wirkungsfelder/produkte-konsum/"] },
-        { "label": "Staat, Recht & Demokratie", "href": "wirkungsfelder/staat-recht-demokratie/", "match": ["wirkungsfelder/staat-recht-demokratie/"] }
+        {
+          "label": "Bildung",
+          "href": "wirkungsfelder/bildung/",
+          "match": [
+            "wirkungsfelder/bildung/"
+          ]
+        },
+        {
+          "label": "Gesundheit & Pflege",
+          "href": "wirkungsfelder/gesundheit-pflege/",
+          "match": [
+            "wirkungsfelder/gesundheit-pflege/"
+          ]
+        },
+        {
+          "label": "Wohnen & Stadt",
+          "href": "wirkungsfelder/wohnen-stadt/",
+          "match": [
+            "wirkungsfelder/wohnen-stadt/"
+          ]
+        },
+        {
+          "label": "Arbeit & Einkommen",
+          "href": "wirkungsfelder/arbeit-einkommen/",
+          "match": [
+            "wirkungsfelder/arbeit-einkommen/"
+          ]
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "wirkungsfelder/wirtschaft-unternehmen/",
+          "match": [
+            "wirkungsfelder/wirtschaft-unternehmen/"
+          ]
+        },
+        {
+          "label": "Produkte & Konsum",
+          "href": "wirkungsfelder/produkte-konsum/",
+          "match": [
+            "wirkungsfelder/produkte-konsum/"
+          ]
+        },
+        {
+          "label": "Staat, Recht & Demokratie",
+          "href": "wirkungsfelder/staat-recht-demokratie/",
+          "match": [
+            "wirkungsfelder/staat-recht-demokratie/"
+          ]
+        }
       ]
     },
     {
-      "title": "Kontext-Werkzeuge",
+      "title": "Methoden & Werkzeuge",
       "items": [
-        { "label": "Impact Controlling", "href": "werkzeuge/impact-controlling/", "match": ["werkzeuge/impact-controlling/"] },
-        { "label": "T-SROI", "href": "werkzeuge/impact-controlling/t-sroi/", "match": ["werkzeuge/impact-controlling/t-sroi/"] },
-        { "label": "Wirkungsumsatzsteuer", "href": "werkzeuge/wirkungsumsatzsteuer/", "match": ["werkzeuge/wirkungsumsatzsteuer/"] },
-        { "label": "Produktscorecards", "href": "werkzeuge/produktscorecards/", "match": ["werkzeuge/produktscorecards/"] },
-        { "label": "WÖk-IDs", "href": "werkzeuge/woek-ids/", "match": ["werkzeuge/woek-ids/"] },
-        { "label": "Reverse Merit Order", "href": "werkzeuge/reverse-merit-order/", "match": ["werkzeuge/reverse-merit-order/"] },
-        { "label": "Wirkungsrat", "href": "werkzeuge/wirkungsrat/", "match": ["werkzeuge/wirkungsrat/"] }
+        {
+          "label": "Impact Controlling",
+          "href": "werkzeuge/impact-controlling/",
+          "match": [
+            "werkzeuge/impact-controlling/"
+          ]
+        },
+        {
+          "label": "T-SROI",
+          "href": "werkzeuge/impact-controlling/t-sroi/",
+          "match": [
+            "werkzeuge/impact-controlling/t-sroi/"
+          ]
+        },
+        {
+          "label": "Wirkungsumsatzsteuer",
+          "href": "werkzeuge/wirkungsumsatzsteuer/",
+          "match": [
+            "werkzeuge/wirkungsumsatzsteuer/"
+          ]
+        },
+        {
+          "label": "Produktscorecards",
+          "href": "werkzeuge/produktscorecards/",
+          "match": [
+            "werkzeuge/produktscorecards/"
+          ]
+        },
+        {
+          "label": "WÖk-IDs",
+          "href": "werkzeuge/woek-ids/",
+          "match": [
+            "werkzeuge/woek-ids/"
+          ]
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "werkzeuge/reverse-merit-order/",
+          "match": [
+            "werkzeuge/reverse-merit-order/"
+          ]
+        },
+        {
+          "label": "Wirkungsrat",
+          "href": "werkzeuge/wirkungsrat/",
+          "match": [
+            "werkzeuge/wirkungsrat/"
+          ]
+        }
       ]
     },
     {
       "title": "Erleben & Lernen",
       "items": [
-        { "label": "Erleben", "href": "erleben.html", "match": ["erleben.html", "erleben/"] },
-        { "label": "Scanner", "href": "anwendungen/scanner.html", "match": ["scanner.html", "anwendungen/scanner.html"] },
-        { "label": "Produktwirkung", "href": "erleben.html#simulator", "match": ["erleben.html#simulator"] },
-        { "label": "Politische Sprache", "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "match": ["sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
-        { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] }
+        {
+          "label": "Erleben",
+          "href": "erleben.html",
+          "match": [
+            "erleben.html",
+            "erleben/"
+          ]
+        },
+        {
+          "label": "Scanner",
+          "href": "anwendungen/scanner.html",
+          "match": [
+            "scanner.html",
+            "anwendungen/scanner.html"
+          ]
+        },
+        {
+          "label": "Produktwirkung",
+          "href": "erleben.html#simulator",
+          "match": [
+            "erleben.html#simulator"
+          ]
+        },
+        {
+          "label": "Politische Sprache",
+          "href": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+          "match": [
+            "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"
+          ]
+        },
+        {
+          "label": "Akademie",
+          "href": "akademie.html",
+          "match": [
+            "akademie.html",
+            "akademie/"
+          ]
+        }
       ]
     },
     {
-      "title": "Werkstatt",
+      "title": "Bibliothek",
       "items": [
-        { "label": "Online-Buch", "href": "referenz/", "match": ["referenz/"] },
-        { "label": "Arbeitsbibliothek", "href": "werkstatt/arbeitsbibliothek/", "match": ["werkstatt/arbeitsbibliothek/"] },
-        { "label": "Downloads", "href": "downloads.html", "match": ["downloads.html", "downloads/"] },
-        { "label": "Whitepaper", "href": "werkstatt/arbeitsbibliothek/whitepaper/", "match": ["werkstatt/arbeitsbibliothek/whitepaper/"] },
-        { "label": "Working Papers", "href": "wissen/working-papers/", "match": ["wissen/working-papers/"] },
-        { "label": "Gesetze", "href": "werkstatt/gesetze/wirkungssteuergesetz/", "match": ["werkstatt/gesetze/"] },
-        { "label": "Leitlinien", "href": "werkstatt/leitlinien/wustg/", "match": ["werkstatt/leitlinien/"] },
-        { "label": "Dossiers", "href": "blog/dossiers/grundlagen.html", "match": ["blog/dossiers/"] },
-        { "label": "Historische Dokumente", "href": "werkstatt/arbeitsbibliothek/historische-dokumente/", "match": ["werkstatt/arbeitsbibliothek/historische-dokumente/"] }
+        {
+          "label": "Online-Buch",
+          "href": "referenz/",
+          "match": [
+            "referenz/"
+          ]
+        },
+        {
+          "label": "Arbeitsbibliothek",
+          "href": "werkstatt/arbeitsbibliothek/",
+          "match": [
+            "werkstatt/arbeitsbibliothek/"
+          ]
+        },
+        {
+          "label": "Downloads",
+          "href": "downloads.html",
+          "match": [
+            "downloads.html",
+            "downloads/"
+          ]
+        },
+        {
+          "label": "Whitepaper",
+          "href": "werkstatt/arbeitsbibliothek/whitepaper/",
+          "match": [
+            "werkstatt/arbeitsbibliothek/whitepaper/"
+          ]
+        },
+        {
+          "label": "Working Papers",
+          "href": "wissen/working-papers/",
+          "match": [
+            "wissen/working-papers/"
+          ]
+        },
+        {
+          "label": "Gesetze",
+          "href": "werkstatt/gesetze/wirkungssteuergesetz/",
+          "match": [
+            "werkstatt/gesetze/"
+          ]
+        },
+        {
+          "label": "Leitlinien",
+          "href": "werkstatt/leitlinien/wustg/",
+          "match": [
+            "werkstatt/leitlinien/"
+          ]
+        },
+        {
+          "label": "Dossiers",
+          "href": "blog/dossiers/grundlagen.html",
+          "match": [
+            "blog/dossiers/"
+          ]
+        },
+        {
+          "label": "Historische Dokumente",
+          "href": "werkstatt/arbeitsbibliothek/historische-dokumente/",
+          "match": [
+            "werkstatt/arbeitsbibliothek/historische-dokumente/"
+          ]
+        }
       ]
     },
     {
       "title": "Projekt",
       "items": [
-        { "label": "Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
-        { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
-        { "label": "Über die Wirkungsökonomie", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] },
-        { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
-        { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
+        {
+          "label": "Journal",
+          "href": "blog.html",
+          "match": [
+            "blog.html",
+            "blog/"
+          ]
+        },
+        {
+          "label": "Mitmachen",
+          "href": "mitmachen.html",
+          "match": [
+            "mitmachen.html",
+            "mitmachen/"
+          ]
+        },
+        {
+          "label": "Über die Wirkungsökonomie",
+          "href": "ueber.html",
+          "match": [
+            "ueber.html",
+            "ueber/",
+            "ueber-die-woek/",
+            "ueber-die-w-oek/"
+          ]
+        },
+        {
+          "label": "Impressum",
+          "href": "impressum.html",
+          "match": [
+            "impressum.html",
+            "impressum/"
+          ]
+        },
+        {
+          "label": "Datenschutz",
+          "href": "datenschutz.html",
+          "match": [
+            "datenschutz.html",
+            "datenschutz/"
+          ]
+        }
       ]
     }
   ],
