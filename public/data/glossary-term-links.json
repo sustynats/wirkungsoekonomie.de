@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T12:46:56.177Z",
+  "generatedAt": "2026-05-27T13:23:24.490Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -122,13 +122,19 @@
       "shortDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Biodiversitätsrisiko"
+        "Biodiversitätsrisiko",
+        "High Conservation Value",
+        "HCV",
+        "High Carbon Stock",
+        "HCS"
       ],
       "relatedTerms": [
         "tnfd",
         "nature-related-risks",
         "ipbes",
-        "eudr"
+        "eudr",
+        "habitatverlust",
+        "habitatfragmentierung"
       ]
     },
     "carbon-credits": {
@@ -310,7 +316,9 @@
         "Digitaler Produktpass",
         "DPP",
         "Digital Product Passport",
-        "Produktpass"
+        "Produktpass",
+        "Herkunftsdaten im Produktpass",
+        "Produktpass Herkunft"
       ],
       "relatedTerms": [
         "wirkungsdatenraum",
@@ -319,7 +327,8 @@
         "espr",
         "produktdaten",
         "pcf-product-carbon-footprint",
-        "material-footprint"
+        "material-footprint",
+        "herkunftstransparenz"
       ]
     },
     "dnsh": {
@@ -332,7 +341,11 @@
       "synonyms": [
         "DNSH / Do No Significant Harm",
         "DNSH",
-        "Do No Significant Harm"
+        "Do No Significant Harm",
+        "Harm",
+        "Do no significant harm",
+        "keinen erheblichen Schaden verursachen",
+        "erheblicher Schaden"
       ],
       "relatedTerms": [
         "eu-taxonomie",
@@ -860,6 +873,340 @@
         "berichtsdaten"
       ]
     },
+    "habitatfragmentierung": {
+      "label": "Habitatfragmentierung",
+      "slug": "habitatfragmentierung",
+      "url": "/begriffe/habitatfragmentierung/",
+      "hoverDefinition": "Habitatfragmentierung beschreibt die Zerschneidung zusammenhängender Lebensräume in kleinere, isolierte Teilflächen.",
+      "shortDefinition": "Habitatfragmentierung beschreibt die Zerschneidung zusammenhängender Lebensräume in kleinere, isolierte Teilflächen.",
+      "category": "Biodiversitätsbegriff",
+      "synonyms": [
+        "Habitatfragmentierung",
+        "Habitat Fragmentation",
+        "Lebensraumfragmentierung",
+        "Zerschneidung von Lebensräumen",
+        "Habitat-Zerschneidung"
+      ],
+      "relatedTerms": [
+        "habitatverlust",
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "ipbes"
+      ]
+    },
+    "habitatverlust": {
+      "label": "Habitatverlust",
+      "slug": "habitatverlust",
+      "url": "/begriffe/habitatverlust/",
+      "hoverDefinition": "Habitatverlust bezeichnet den Verlust oder die starke Schädigung von Lebensräumen für Arten und Ökosysteme.",
+      "shortDefinition": "Habitatverlust bezeichnet den Verlust oder die starke Schädigung von Lebensräumen für Arten und Ökosysteme.",
+      "category": "Biodiversitätsbegriff",
+      "synonyms": [
+        "Habitatverlust",
+        "Habitat Loss",
+        "Lebensraumverlust",
+        "Verlust von Lebensräumen",
+        "Lebensraumzerstörung",
+        "Herdenschutz"
+      ],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "habitatfragmentierung",
+        "nature-related-risks",
+        "ipbes",
+        "eudr"
+      ]
+    },
+    "haltung": {
+      "label": "Haltung",
+      "slug": "haltung",
+      "url": "/begriffe/haltung/",
+      "hoverDefinition": "Haltung kann Wirkung vorbereiten, beweist aber noch keine reale Zustandsveränderung.",
+      "shortDefinition": "Haltung beschreibt eine innere Orientierung. Sie kann Wirkungspotenzial prägen, ist aber nicht automatisch Wirkung.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Haltung",
+        "moralische Haltung",
+        "Einstellung",
+        "Mindset"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungskompetenz",
+        "folgencheck"
+      ]
+    },
+    "handlung": {
+      "label": "Handlung",
+      "slug": "handlung",
+      "url": "/begriffe/handlung/",
+      "hoverDefinition": "Handlung ist das Tun oder Entscheiden, das Wirkung auslösen kann, aber noch nicht die Wirkung selbst ist.",
+      "shortDefinition": "Handlung ist ein Eingriff in ein System. Sie kann Wirkung auslösen, ist aber nicht selbst schon Wirkung.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Handlung",
+        "Action",
+        "Eingriff",
+        "Entscheidungshandlung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsbewertung"
+      ]
+    },
+    "handlungsdruck": {
+      "label": "Handlungsdruck",
+      "slug": "handlungsdruck",
+      "url": "/begriffe/handlungsdruck/",
+      "hoverDefinition": "Handlungsdruck ist ein durch Risiken, Daten, Krisen oder Zielverfehlungen erzeugter Entscheidungsdruck.",
+      "shortDefinition": "Handlungsdruck ist ein durch Risiken, Daten, Krisen oder Zielverfehlungen erzeugter Entscheidungsdruck.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Handlungsdruck",
+        "Entscheidungsdruck",
+        "Transformationsdruck",
+        "Krisendruck"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "folgencheck",
+        "wirkungsresilienz"
+      ]
+    },
+    "handlungsfaehigkeit": {
+      "label": "Handlungsfähigkeit",
+      "slug": "handlungsfaehigkeit",
+      "url": "/begriffe/handlungsfaehigkeit/",
+      "hoverDefinition": "Handlungsfähigkeit ist die Fähigkeit von Menschen, Institutionen oder Systemen, wirksam auf Risiken, Krisen und Chancen zu reagieren.",
+      "shortDefinition": "Handlungsfähigkeit ist die Fähigkeit von Menschen, Institutionen oder Systemen, wirksam auf Risiken, Krisen und Chancen zu reagieren.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Handlungsfähigkeit",
+        "agency",
+        "Handlungsvermögen",
+        "kollektive Handlungsfähigkeit"
+      ],
+      "relatedTerms": [
+        "handlungsspielraum",
+        "wirkungsresilienz",
+        "wirkungskompetenz"
+      ]
+    },
+    "handlungspfad": {
+      "label": "Handlungspfad",
+      "slug": "handlungspfad",
+      "url": "/begriffe/handlungspfad/",
+      "hoverDefinition": "Ein Handlungspfad beschreibt, wie Entscheidungen und Maßnahmen in spätere Wirkungsräume führen.",
+      "shortDefinition": "Ein Handlungspfad beschreibt, wie Entscheidungen und Maßnahmen in spätere Wirkungsräume führen.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Handlungspfad",
+        "Action Pathway",
+        "Entscheidungspfad",
+        "Maßnahmenpfad",
+        "Massnahmenpfad"
+      ],
+      "relatedTerms": [
+        "wirkungspfad",
+        "handlung",
+        "folgencheck",
+        "wirkungsraum"
+      ]
+    },
+    "handlungsspielraum": {
+      "label": "Handlungsspielraum",
+      "slug": "handlungsspielraum",
+      "url": "/begriffe/handlungsspielraum/",
+      "hoverDefinition": "Handlungsspielraum beschreibt, welche realen Optionen Menschen, Organisationen oder Institutionen tatsächlich haben.",
+      "shortDefinition": "Handlungsspielraum beschreibt, welche realen Optionen Menschen, Organisationen oder Institutionen tatsächlich haben.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Handlungsspielraum",
+        "Handlungsoptionen",
+        "realer Spielraum",
+        "Option Space"
+      ],
+      "relatedTerms": [
+        "handlungsfaehigkeit",
+        "wirkung",
+        "wirkungskompetenz",
+        "mensch-planet-demokratie"
+      ]
+    },
+    "hard-to-abate-sektoren": {
+      "label": "Hard-to-abate-Sektoren",
+      "slug": "hard-to-abate-sektoren",
+      "url": "/begriffe/hard-to-abate-sektoren/",
+      "hoverDefinition": "Hard-to-abate-Sektoren sind Bereiche, in denen Emissionen technisch, wirtschaftlich oder infrastrukturell besonders schwer zu senken sind.",
+      "shortDefinition": "Hard-to-abate-Sektoren sind Bereiche, in denen Emissionen technisch, wirtschaftlich oder infrastrukturell besonders schwer zu senken sind.",
+      "category": "Klima- und Transformationsbegriff",
+      "synonyms": [
+        "Hard-to-abate-Sektoren",
+        "Hard to abate",
+        "hard-to-abate sectors",
+        "schwer dekarbonisierbare Sektoren",
+        "schwer vermeidbare Emissionen",
+        "schwer zu dekarbonisierende Sektoren",
+        "H2",
+        "Hydrogen",
+        "Wasserstoff",
+        "grüner Wasserstoff",
+        "gruener Wasserstoff",
+        "H2-ready",
+        "HVO",
+        "Hydrotreated Vegetable Oil"
+      ],
+      "relatedTerms": [
+        "transition-risk",
+        "transition-finance",
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ]
+    },
+    "haushaltsneutralitaet": {
+      "label": "Haushaltsneutralität",
+      "slug": "haushaltsneutralitaet",
+      "url": "/begriffe/haushaltsneutralitaet/",
+      "hoverDefinition": "Haushaltsneutralität bedeutet, dass ein Staat nicht zwingend mehr einnimmt, sondern Einnahmen und Lasten anders verteilt.",
+      "shortDefinition": "Haushaltsneutralität bedeutet, dass ein Staat nicht zwingend mehr einnimmt, sondern Einnahmen und Lasten anders verteilt.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Haushaltsneutralität",
+        "haushaltsneutral",
+        "fiskalisch neutral",
+        "budgetneutral",
+        "aufkommensneutral",
+        "revenue neutral"
+      ],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "positive-netto-wirkung"
+      ]
+    },
+    "hazardous-substances": {
+      "label": "Hazardous Substances / gefährliche Stoffe",
+      "slug": "hazardous-substances",
+      "url": "/begriffe/hazardous-substances/",
+      "hoverDefinition": "Hazardous Substances sind Stoffe, die Risiken für Gesundheit, Umwelt, Arbeitsschutz oder Ökosysteme verursachen können.",
+      "shortDefinition": "Hazardous Substances sind Stoffe, die Risiken für Gesundheit, Umwelt, Arbeitsschutz oder Ökosysteme verursachen können.",
+      "category": "Chemikalien- und Produktdatenbegriff",
+      "synonyms": [
+        "Hazardous Substances / gefährliche Stoffe",
+        "Hazardous Substances",
+        "gefährliche Stoffe",
+        "gefaehrliche Stoffe",
+        "Schadstoffe",
+        "Chemikalienrisiko",
+        "substances of concern",
+        "Havarie",
+        "Umwelthavarie",
+        "halogenierte Treibhausgase"
+      ],
+      "relatedTerms": [
+        "lca",
+        "produktdaten",
+        "digitaler-produktpass",
+        "pef-product-environmental-footprint"
+      ]
+    },
+    "health-co-benefits": {
+      "label": "Health Co-Benefits / Gesundheits-Co-Benefits",
+      "slug": "health-co-benefits",
+      "url": "/begriffe/health-co-benefits/",
+      "hoverDefinition": "Health Co-Benefits sind gesundheitliche Zusatznutzen von Maßnahmen, die primär aus anderen Gründen ergriffen werden, etwa Klima- oder Verkehrspolitik.",
+      "shortDefinition": "Health Co-Benefits sind gesundheitliche Zusatznutzen von Maßnahmen, die primär aus anderen Gründen ergriffen werden, etwa Klima- oder Verkehrspolitik.",
+      "category": "Gesundheits- und Klimabegriff",
+      "synonyms": [
+        "Health Co-Benefits / Gesundheits-Co-Benefits",
+        "Health Co-Benefits",
+        "Gesundheits-Co-Benefits",
+        "Gesundheitsnutzen",
+        "gesundheitliche Zusatznutzen",
+        "Co-Benefits Gesundheit"
+      ],
+      "relatedTerms": [
+        "health-impact-assessment",
+        "sdgs",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ]
+    },
+    "health-impact-assessment": {
+      "label": "Health Impact Assessment / HIA",
+      "slug": "health-impact-assessment",
+      "url": "/begriffe/health-impact-assessment/",
+      "hoverDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
+      "shortDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
+      "category": "Gesundheits- und Methodenbegriff",
+      "synonyms": [
+        "Health Impact Assessment / HIA",
+        "Health Impact Assessment",
+        "HIA",
+        "Gesundheitsfolgenabschätzung",
+        "Gesundheits-Folgenabschätzung",
+        "Gesundheitswirkungsanalyse",
+        "Hygiene",
+        "Sanitärversorgung",
+        "Sanitaerversorgung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "sdgs",
+        "hitzestress",
+        "health-co-benefits"
+      ]
+    },
+    "hebelpunkt": {
+      "label": "Hebel / Hebelpunkt",
+      "slug": "hebelpunkt",
+      "url": "/begriffe/hebelpunkt/",
+      "hoverDefinition": "Ein Hebelpunkt ist eine Stelle im System, an der eine Veränderung besonders starke Folgewirkungen auslösen kann.",
+      "shortDefinition": "Ein Hebelpunkt ist eine Stelle im System, an der eine Veränderung besonders starke Folgewirkungen auslösen kann.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Hebel / Hebelpunkt",
+        "Hebel",
+        "Hebelpunkt",
+        "Systemhebel",
+        "Wirkungshebel",
+        "Leverage Point",
+        "Leverage Points"
+      ],
+      "relatedTerms": [
+        "hebelwirkung",
+        "wirkungsrueckkopplung",
+        "wirkungspfad",
+        "wirkungssteuer"
+      ]
+    },
+    "hebelwirkung": {
+      "label": "Hebelwirkung",
+      "slug": "hebelwirkung",
+      "url": "/begriffe/hebelwirkung/",
+      "hoverDefinition": "Hebelwirkung beschreibt, wie stark ein Eingriff spätere Anreize, Routinen, Daten, Preise oder Entscheidungen verändert.",
+      "shortDefinition": "Hebelwirkung beschreibt, wie stark ein Eingriff spätere Anreize, Routinen, Daten, Preise oder Entscheidungen verändert.",
+      "category": "WÖk-Begriff",
+      "synonyms": [
+        "Hebelwirkung",
+        "Leverage",
+        "Systemwirkung eines Hebels",
+        "Wirkungsverstärkung"
+      ],
+      "relatedTerms": [
+        "hebelpunkt",
+        "wirkungsrueckkopplung",
+        "wirkungspfad",
+        "positive-netto-wirkung"
+      ]
+    },
     "herkunftsnachweis-hkn": {
       "label": "Herkunftsnachweis / HKN",
       "slug": "herkunftsnachweis-hkn",
@@ -879,7 +1226,9 @@
         "GoO",
         "Ökostromnachweis",
         "Gruenstromnachweis",
-        "Grünstromnachweis"
+        "Grünstromnachweis",
+        "Herkunftstracking",
+        "Strom-Herkunftsnachweis"
       ],
       "relatedTerms": [
         "scope-2",
@@ -887,7 +1236,264 @@
         "greenwashing",
         "produktdaten",
         "wirkungsdaten",
-        "digitaler-produktpass"
+        "digitaler-produktpass",
+        "herkunftstransparenz"
+      ]
+    },
+    "herkunftstransparenz": {
+      "label": "Herkunftstransparenz",
+      "slug": "herkunftstransparenz",
+      "url": "/begriffe/herkunftstransparenz/",
+      "hoverDefinition": "Herkunftstransparenz macht sichtbar, woher ein Produkt, Rohstoff, Energieanteil oder Datenpunkt stammt.",
+      "shortDefinition": "Herkunftstransparenz macht sichtbar, woher ein Produkt, Rohstoff, Energieanteil oder Datenpunkt stammt.",
+      "category": "Daten- und Lieferkettenbegriff",
+      "synonyms": [
+        "Herkunftstransparenz",
+        "Herkunftsdaten",
+        "Herkunftsrisiko",
+        "Origin Transparency",
+        "Provenance Transparency",
+        "Nachvollziehbarkeit der Herkunft"
+      ],
+      "relatedTerms": [
+        "herkunftsnachweis-hkn",
+        "digitaler-produktpass",
+        "produktdaten",
+        "lieferkettendaten",
+        "eudr"
+      ]
+    },
+    "hfcs-hydrofluorocarbons": {
+      "label": "HFCs / Hydrofluorocarbons",
+      "slug": "hfcs-hydrofluorocarbons",
+      "url": "/begriffe/hfcs-hydrofluorocarbons/",
+      "hoverDefinition": "HFCs sind synthetische fluorierte Gase, die häufig als Kältemittel genutzt werden und als Treibhausgase klimawirksam sein können.",
+      "shortDefinition": "HFCs sind synthetische fluorierte Gase, die häufig als Kältemittel genutzt werden und als Treibhausgase klimawirksam sein können.",
+      "category": "Klima- und Stoffbegriff",
+      "synonyms": [
+        "HFCs / Hydrofluorocarbons",
+        "HFCs",
+        "Hydrofluorocarbons",
+        "teilfluorierte Kohlenwasserstoffe",
+        "teilfluorierte Fluorkohlenwasserstoffe",
+        "F-Gase",
+        "fluorierte Treibhausgase"
+      ],
+      "relatedTerms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3",
+        "physical-climate-risk"
+      ]
+    },
+    "hitzeschutz-hitzeaktionsplan": {
+      "label": "Hitzeschutz / Hitzeaktionsplan",
+      "slug": "hitzeschutz-hitzeaktionsplan",
+      "url": "/begriffe/hitzeschutz-hitzeaktionsplan/",
+      "hoverDefinition": "Hitzeschutz bündelt Maßnahmen, die Menschen und Institutionen vor Gesundheitsrisiken durch Hitze schützen.",
+      "shortDefinition": "Hitzeschutz bündelt Maßnahmen, die Menschen und Institutionen vor Gesundheitsrisiken durch Hitze schützen.",
+      "category": "Klima- und Gesundheitsbegriff",
+      "synonyms": [
+        "Hitzeschutz / Hitzeaktionsplan",
+        "Hitzeschutz",
+        "Hitzeaktionsplan",
+        "Heat-Health Action Plan",
+        "HHAP",
+        "Hitze-Gesundheits-Aktionsplan",
+        "Heat Action Plan"
+      ],
+      "relatedTerms": [
+        "hitzestress",
+        "health-impact-assessment",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
+      ]
+    },
+    "hitzestress": {
+      "label": "Hitzestress",
+      "slug": "hitzestress",
+      "url": "/begriffe/hitzestress/",
+      "hoverDefinition": "Hitzestress beschreibt gesundheitliche, soziale und infrastrukturelle Belastungen durch hohe Temperaturen und Hitzeereignisse.",
+      "shortDefinition": "Hitzestress beschreibt gesundheitliche, soziale und infrastrukturelle Belastungen durch hohe Temperaturen und Hitzeereignisse.",
+      "category": "Klima- und Gesundheitsbegriff",
+      "synonyms": [
+        "Hitzestress",
+        "Heat Stress",
+        "Hitzerisiko",
+        "Hitzebelastung",
+        "extreme Hitze"
+      ],
+      "relatedTerms": [
+        "hitzeschutz-hitzeaktionsplan",
+        "health-impact-assessment",
+        "physical-climate-risk",
+        "wirkungsresilienz"
+      ]
+    },
+    "hochwasserrisiko": {
+      "label": "Hochwasserrisiko",
+      "slug": "hochwasserrisiko",
+      "url": "/begriffe/hochwasserrisiko/",
+      "hoverDefinition": "Hochwasserrisiko beschreibt die Wahrscheinlichkeit und mögliche Schwere von Schäden durch Überflutung, Starkregen oder steigende Wasserstände.",
+      "shortDefinition": "Hochwasserrisiko beschreibt die Wahrscheinlichkeit und mögliche Schwere von Schäden durch Überflutung, Starkregen oder steigende Wasserstände.",
+      "category": "Klima- und Risikobegriff",
+      "synonyms": [
+        "Hochwasserrisiko",
+        "Hochwasser",
+        "Flood Risk",
+        "Überflutungsrisiko",
+        "Ueberflutungsrisiko",
+        "Starkregenrisiko"
+      ],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "wasserstress",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
+      ]
+    },
+    "hotspot-analyse": {
+      "label": "Hotspot-Analyse",
+      "slug": "hotspot-analyse",
+      "url": "/begriffe/hotspot-analyse/",
+      "hoverDefinition": "Hotspot-Analyse identifiziert, wo entlang eines Produkts, Prozesses oder Systems die größten Wirkungen oder Risiken entstehen.",
+      "shortDefinition": "Hotspot-Analyse identifiziert, wo entlang eines Produkts, Prozesses oder Systems die größten Wirkungen oder Risiken entstehen.",
+      "category": "Methodenbegriff",
+      "synonyms": [
+        "Hotspot-Analyse",
+        "Hotspotanalyse",
+        "Hotspot Analysis",
+        "Wirkungshotspot",
+        "Impact Hotspot",
+        "LCA Hotspot"
+      ],
+      "relatedTerms": [
+        "lca",
+        "pef-product-environmental-footprint",
+        "produktdaten",
+        "wirkungsbewertung",
+        "reverse-merit-order"
+      ]
+    },
+    "human-rights-due-diligence": {
+      "label": "Human Rights Due Diligence / HRDD",
+      "slug": "human-rights-due-diligence",
+      "url": "/begriffe/human-rights-due-diligence/",
+      "hoverDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
+      "shortDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
+      "category": "Menschenrechts- und Lieferkettenbegriff",
+      "synonyms": [
+        "Human Rights Due Diligence / HRDD",
+        "Human Rights Due Diligence",
+        "HRDD",
+        "menschenrechtliche Sorgfaltspflicht",
+        "menschenrechtliche Sorgfaltspflichten",
+        "human rights due diligence"
+      ],
+      "relatedTerms": [
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "csddd",
+        "lksg"
+      ]
+    },
+    "human-rights-impact-assessment": {
+      "label": "Human Rights Impact Assessment / HRIA",
+      "slug": "human-rights-impact-assessment",
+      "url": "/begriffe/human-rights-impact-assessment/",
+      "hoverDefinition": "Ein HRIA untersucht mögliche oder tatsächliche Menschenrechtswirkungen von Projekten, Produkten, Lieferketten oder politischen Entscheidungen.",
+      "shortDefinition": "Ein HRIA untersucht mögliche oder tatsächliche Menschenrechtswirkungen von Projekten, Produkten, Lieferketten oder politischen Entscheidungen.",
+      "category": "Menschenrechts- und Methodenbegriff",
+      "synonyms": [
+        "Human Rights Impact Assessment / HRIA",
+        "Human Rights Impact Assessment",
+        "HRIA",
+        "Menschenrechtsfolgenabschätzung",
+        "Menschenrechts-Folgenabschätzung",
+        "menschenrechtliche Wirkungsanalyse"
+      ],
+      "relatedTerms": [
+        "human-rights-due-diligence",
+        "un-guiding-principles",
+        "csddd",
+        "lksg",
+        "wirkungsbewertung"
+      ]
+    },
+    "humusaufbau": {
+      "label": "Humusaufbau",
+      "slug": "humusaufbau",
+      "url": "/begriffe/humusaufbau/",
+      "hoverDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
+      "shortDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
+      "category": "Boden- und Landwirtschaftsbegriff",
+      "synonyms": [
+        "Humusaufbau",
+        "Humus",
+        "Soil Organic Matter Aufbau",
+        "Bodenhumus",
+        "Bodenorganische Substanz",
+        "Soil Organic Carbon Aufbau",
+        "SOC-Aufbau"
+      ],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "wasserstress",
+        "positive-netto-wirkung",
+        "lca"
+      ]
+    },
+    "hunger-hungerbekaempfung": {
+      "label": "Hunger / Hungerbekämpfung",
+      "slug": "hunger-hungerbekaempfung",
+      "url": "/begriffe/hunger-hungerbekaempfung/",
+      "hoverDefinition": "Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernährungssysteme nachhaltig, resilient und gerecht zu gestalten.",
+      "shortDefinition": "Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernährungssysteme nachhaltig, resilient und gerecht zu gestalten.",
+      "category": "SDG- und Ernährungssystembegriff",
+      "synonyms": [
+        "Hunger / Hungerbekämpfung",
+        "Hunger",
+        "Hungerbekämpfung",
+        "Zero Hunger",
+        "SDG 2",
+        "Ernährungssicherheit",
+        "Food Security"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
+        "humusaufbau",
+        "wasserstress",
+        "positive-netto-wirkung"
+      ]
+    },
+    "hydrologischer-kreislauf": {
+      "label": "Hydrologischer Kreislauf",
+      "slug": "hydrologischer-kreislauf",
+      "url": "/begriffe/hydrologischer-kreislauf/",
+      "hoverDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
+      "shortDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
+      "category": "Wasser- und Systembegriff",
+      "synonyms": [
+        "Hydrologischer Kreislauf",
+        "Wasserkreislauf",
+        "Water Cycle",
+        "hydrological cycle",
+        "regionaler Wasserkreislauf",
+        "Hydropower",
+        "Wasserkraft",
+        "Hydroökologie",
+        "Hydrooekologie",
+        "harmful algal blooms",
+        "schädliche Algenblüten",
+        "schaedliche Algenblueten"
+      ],
+      "relatedTerms": [
+        "wasserstress",
+        "humusaufbau",
+        "hitzestress",
+        "biodiversitaetsrisiko"
       ]
     },
     "idgs": {
@@ -1258,7 +1864,9 @@
       "category": "Demokratiebegriff",
       "synonyms": [
         "Mensch, Planet und Demokratie",
-        "MPD"
+        "MPD",
+        "Human Security",
+        "menschliche Sicherheit"
       ],
       "relatedTerms": [
         "sdgs",
@@ -1682,13 +2290,23 @@
       "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Produktdaten"
+        "Produktdaten",
+        "Herkunftsdaten",
+        "Herkunftsrisiko",
+        "Hochrisikogebiet",
+        "High Conservation Value",
+        "HCV",
+        "High Carbon Stock",
+        "HCS",
+        "Higg Index"
       ],
       "relatedTerms": [
         "digitaler-produktpass",
         "produktwirkung",
         "pef-product-environmental-footprint",
-        "pcf-product-carbon-footprint"
+        "pcf-product-carbon-footprint",
+        "herkunftstransparenz",
+        "hotspot-analyse"
       ]
     },
     "reasonable-assurance": {
@@ -1752,7 +2370,15 @@
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können.",
       "category": "Architekturbegriff",
       "synonyms": [
-        "Resonanzraum"
+        "Resonanzraum",
+        "Hate Speech",
+        "Hassrede",
+        "hybride Bedrohungen",
+        "hybride Kriegsführung",
+        "Hybride Kriegsfuehrung",
+        "Halluzinationen von KI",
+        "KI-Halluzinationen",
+        "Host-Verantwortung"
       ],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -1969,12 +2595,16 @@
         "SDGs",
         "Sustainable Development Goals",
         "Nachhaltigkeitsziele",
-        "UN-Nachhaltigkeitsziele"
+        "UN-Nachhaltigkeitsziele",
+        "HLPF",
+        "High-level Political Forum",
+        "High Level Political Forum"
       ],
       "relatedTerms": [
         "agenda-2030",
         "sdg-plus",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "hunger-hungerbekaempfung"
       ]
     },
     "sfdr": {
@@ -2413,7 +3043,11 @@
       "category": "Grundbegriff",
       "synonyms": [
         "Warmmietenneutralität",
-        "warmmietenneutrale Sanierung"
+        "warmmietenneutrale Sanierung",
+        "Heizkostenneutralität",
+        "Heizkostenneutralitaet",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf"
       ],
       "relatedTerms": [
         "wohnwirkung",
@@ -2429,12 +3063,18 @@
       "shortDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Wasserstress"
+        "Wasserstress",
+        "High-Water-Stress",
+        "High Water Stress",
+        "hoher Wasserstress",
+        "extrem hoher Wasserstress",
+        "area of high water stress"
       ],
       "relatedTerms": [
         "nature-related-risks",
         "tnfd",
-        "produktdaten"
+        "produktdaten",
+        "hydrologischer-kreislauf"
       ]
     },
     "wesentlicher-beitrag": {
@@ -2693,12 +3333,19 @@
       "shortDefinition": "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungshaushalt"
+        "Wirkungshaushalt",
+        "Haushalt, wirkungsbasiert",
+        "wirkungsbasierter Haushalt",
+        "wirkungsorientierter Haushalt",
+        "SDG-Budgetierung",
+        "SDG-Haushalt",
+        "Wirkungsbudget"
       ],
       "relatedTerms": [
         "wirkungslenkung",
-        "wirkungsrückkopplung",
-        "positive-netto-wirkung"
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "haushaltsneutralitaet"
       ]
     },
     "wirkungsindikator": {
@@ -2726,7 +3373,14 @@
       "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungskompetenz"
+        "Wirkungskompetenz",
+        "Human Capital",
+        "Humankapital",
+        "menschliche Fähigkeiten",
+        "Human-centered AI",
+        "menschenzentrierte KI",
+        "Human-in-the-loop",
+        "Mensch in der Schleife"
       ],
       "relatedTerms": [
         "wirkungsschule",
@@ -2760,7 +3414,13 @@
       "shortDefinition": "Ein Wirkungsnetz beschreibt miteinander verbundene Wirkpfade, Akteure, Räume und Rückkopplungen.",
       "category": "Architekturbegriff",
       "synonyms": [
-        "Wirkungsnetz"
+        "Wirkungsnetz",
+        "Holismus",
+        "holistische Betrachtung",
+        "Heterarchie",
+        "Hierarchie",
+        "Hierarchiekritik",
+        "horizontale Kooperation"
       ],
       "relatedTerms": [
         "wirkungspfad",
@@ -3017,12 +3677,17 @@
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungssteuer",
-        "Steuer nach Wirkung"
+        "Steuer nach Wirkung",
+        "Harmful Subsidies",
+        "umweltschädliche Subventionen",
+        "umweltschaedliche Subventionen",
+        "schädliche Subventionen"
       ],
       "relatedTerms": [
         "wstg",
         "wustg",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "haushaltsneutralitaet"
       ]
     },
     "wirkungssteuergesetz": {
@@ -3140,7 +3805,15 @@
       "category": "Grundbegriff",
       "synonyms": [
         "Wohnwirkung",
-        "Wirkung von Wohnen"
+        "Wirkung von Wohnen",
+        "Haushaltsfußabdruck",
+        "Haushaltsfussabdruck",
+        "Household Footprint",
+        "Haushaltsenergie",
+        "Heizenergie",
+        "Heizwärmebedarf",
+        "Heizwaermebedarf",
+        "Heizlast"
       ],
       "relatedTerms": [
         "wix-vi",
