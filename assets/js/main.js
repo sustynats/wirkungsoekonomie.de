@@ -32,7 +32,8 @@ if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
-    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|fuer/"],
+    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/"],
+    ["Für wen?", "fuer/", "fuer/"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
@@ -143,6 +144,92 @@ document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) =
     link.removeAttribute("aria-current");
   }
 });
+
+function relatedQuestionLink(href, label, tag = "Frage") {
+  return { href: relativeSiteUrl(href), label, tag };
+}
+
+function getContextualQuestions() {
+  const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  const pageText = `${document.title} ${mainElement?.textContent || ""}`.toLowerCase();
+
+  if (/^blog\/.+\.html$/.test(path)) {
+    if (/social taxonomy|eu-taxonomie|taxonomie|sustainable finance/.test(pageText)) {
+      return [
+        relatedQuestionLink("fragen/#esg", "Ist das nur ESG mit neuem Namen?", "Abgrenzung"),
+        relatedQuestionLink("fragen/#social-credit", "Ist das Social Credit?", "Schutzfrage"),
+        relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
+      ];
+    }
+    if (/bildung|schule|wirkungskompetenz|idg/.test(pageText)) {
+      return [
+        relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
+        relatedQuestionLink("fragen/#social-credit", "Werden Menschen bewertet?", "Schutzfrage"),
+      ];
+    }
+    return [
+      relatedQuestionLink("fragen/#planwirtschaft", "Ist die Wirkungsökonomie Planwirtschaft?", "Einwand"),
+      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
+    ];
+  }
+
+  if (/^begriffe\/[^/]+\/?$/.test(path) && !path.endsWith("begriffe/")) {
+    if (/folgencheck|faktencheck|wirkstoff|wirkungspfad|wirkungsraum/.test(path)) {
+      return [
+        relatedQuestionLink("fragen/#faktencheck-folgencheck", "Faktencheck vs. Folgencheck?", "Abgrenzung"),
+        relatedQuestionLink("fragen/#zensur", "Ist Folgencheck Zensur?", "Schutzfrage"),
+        relatedQuestionLink("fragen/#wirkstoff", "Was ist ein Wirkstoff?", "Begriff"),
+      ];
+    }
+    if (/wirkungseinkommen|wirkungsfonds|wirkungsrente/.test(path)) {
+      return [
+        relatedQuestionLink("fragen/#geld", "Woher kommt das Geld?", "Finanzierung"),
+        relatedQuestionLink("fragen/#bge", "Ist Wirkungseinkommen BGE?", "Abgrenzung"),
+      ];
+    }
+    if (/eu-taxonomie|social-taxonomy|csrd|esrs|esg|green-deal/.test(path)) {
+      return [
+        relatedQuestionLink("fragen/#esg", "Ist das nur ESG mit neuem Namen?", "Abgrenzung"),
+        relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
+      ];
+    }
+    return [
+      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
+      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
+    ];
+  }
+
+  return [];
+}
+
+function injectContextualQuestions() {
+  if (!mainElement || document.querySelector(".related-questions-block")) {
+    return;
+  }
+  const questions = getContextualQuestions().slice(0, 4);
+  if (!questions.length) {
+    return;
+  }
+  const section = document.createElement("aside");
+  section.className = "section related-questions-block";
+  section.setAttribute("aria-labelledby", "contextual-related-questions-title");
+  section.innerHTML = `
+    <div class="section-header">
+      <p class="hero-kicker">Passende Fragen</p>
+      <h2 id="contextual-related-questions-title">Kontext einordnen</h2>
+    </div>
+    <div class="related-question-grid">
+      ${questions
+        .map(
+          (item) => `<article class="related-question-card"><span>${item.tag}</span><strong>${item.label}</strong><a class="text-link" href="${item.href}">Antwort lesen</a></article>`,
+        )
+        .join("")}
+    </div>
+  `;
+  mainElement.append(section);
+}
+
+injectContextualQuestions();
 
 function shouldSkipSiteAnalytics() {
   return navigator.doNotTrack === "1" || window.doNotTrack === "1";

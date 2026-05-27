@@ -17,13 +17,13 @@ function categoryFor(term) {
   const section = String(term.sourceSection || "").toLowerCase();
   const id = String(term.termId || "").toLowerCase();
   if (section.includes("governance") || ["wirkungsrat", "wirkungswahrheit", "social-credit"].includes(id)) return "Schutzbegriff";
-  if (section.includes("daten") || ["woek-id", "digitaler-produktpass", "wirkungsdaten", "wirkungsdatenraum", "nace", "esrs", "gri", "csrd"].includes(id)) return "Datenbegriff";
-  if (section.includes("instrument") || ["nwi", "t-sroi", "finalscore", "scorecard", "benchmark"].includes(id)) return "Messbegriff";
+  if (section.includes("daten") || ["woek-id", "digitaler-produktpass", "wirkungsdaten", "wirkungsdatenraum", "nace", "esrs", "gri", "csrd", "european-green-deal"].includes(id)) return "Datenbegriff";
+  if (section.includes("instrument") || ["nwi", "t-sroi", "finalscore", "scorecard", "benchmark", "host-wirkungsscore"].includes(id)) return "Messbegriff";
   if (["wirkungssteuer", "wirkungssteuergesetz", "wirkungsumsatzsteuer", "wirkungslenkung", "wirkungshaushalt"].includes(id)) return "Steuerungsbegriff";
-  if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum"].includes(id)) return "Architekturbegriff";
+  if (["wirkungsarchitektur", "wirkungsnetz", "wirkungsraum", "resonanzraum", "resonanzarchitektur", "social-taxonomy"].includes(id)) return "Architekturbegriff";
   if (["sdg-plus", "mensch-planet-demokratie", "demokratie"].includes(id)) return "Demokratiebegriff";
   if (["positive-netto-wirkung", "netto-wirkung", "positive-wirkung", "negative-wirkung", "neutrale-wirkung", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungsgrenze"].includes(id)) return "Bewertungsbegriff";
-  if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte"].includes(id)) return "Praxisbegriff";
+  if (["wirkungseinkommen", "wirkungsrente", "wirkungspunkte", "wirkungsorientiertes-hosting"].includes(id)) return "Praxisbegriff";
   return "Grundbegriff";
 }
 

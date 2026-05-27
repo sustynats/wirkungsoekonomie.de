@@ -472,6 +472,17 @@ def library_cards(register: list[dict]) -> str:
     return "".join(cards)
 
 
+def local_library_cards() -> str:
+    """Manual additions that are not part of the Rang-24 release package."""
+    return """<article class="card library-card" data-rang="9" data-portal="Medien &amp; Öffentlichkeit" data-type="Dossier" data-status="Öffentliche Arbeitsfassung" data-format="html docx" data-online="ja" data-pdf="nein" data-docx="ja">
+<p class="card-kicker">Medien &amp; Öffentlichkeit · Dossier · HTML/DOCX</p>
+<h3 class="card-title">Wirkungsräume gestalten</h3>
+<p class="card-text">Dossier für wirkungsorientiertes Hosting, Medienwirkung und digitale Verantwortung: Reichweite wird als Wirkungskraft, nicht als Wertmaßstab behandelt.</p>
+<dl class="portal-meta-grid compact"><div><dt>Status</dt><dd>Öffentliche Arbeitsfassung</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>27. Mai 2026</dd></div><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl>
+<div class="hero-actions no-print"><a class="btn btn-primary" href="../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/">Onlinefassung</a><a class="btn btn-secondary" href="../assets/downloads/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx">Word</a></div>
+<p class="card-text"><strong>Toolbezug:</strong> Medienwirkungscheck, Host-Wirkungsscore, Scorecards. <strong>Glossarbezug:</strong> Wirkungsorientiertes Hosting, Resonanzarchitektur, Wirkungsraum, Wirkungskompetenz.</p></article>"""
+
+
 def filter_ui() -> str:
     return """<section class="section no-print" id="filter"><div class="card"><h2>Bibliothek filtern</h2><div class="filter-grid">
 <label>Suche <input class="input" id="library-search" type="search" placeholder="Titel, Paket, Dokumenttyp"></label>
@@ -601,7 +612,7 @@ def main() -> None:
     offene = load_json("WOeK_Rang24_offene_punkte_v1.0.json")
     qa = load_json("WOeK_Rang24_qa_checkliste_v1.0.json")
 
-    library_body = f"""<section class="section"><div class="card"><p class="hero-kicker">Begriffslogik</p><h2>Referenzrahmen Website 1.0</h2><p>Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen und kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Mensch, Planet und Demokratie ist die kommunikative Übersetzung der SDGs, der Agenda 2030 und SDG+.</p></div></section>{filter_ui()}<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Masterregister</p><h2>Fachbibliothek</h2></div><div class="card-grid three">{library_cards(register)}</div></section>"""
+    library_body = f"""<section class="section"><div class="card"><p class="hero-kicker">Begriffslogik</p><h2>Referenzrahmen Website 1.0</h2><p>Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen und kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Mensch, Planet und Demokratie ist die kommunikative Übersetzung der SDGs, der Agenda 2030 und SDG+.</p></div></section>{filter_ui()}<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Masterregister</p><h2>Fachbibliothek</h2></div><div class="card-grid three">{local_library_cards()}{library_cards(register)}</div></section>"""
     page_shell(ROOT / "fachbibliothek", "Fachbibliothek der Wirkungsökonomie", "Filterbare Masterbibliothek für Portale, Dossiers, Detailkonzepte, Downloads, Toolkarten, Glossar und Quellen.", library_body, filter_script())
 
     downloads_body = download_center(register, active)

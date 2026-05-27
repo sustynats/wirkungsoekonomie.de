@@ -7,6 +7,7 @@ const OUT = path.join(ROOT, "docs/local-link-check.md");
 const TARGETS = ["index.html", "erleben.html", "suche.html", "begriffe", "wirkungsfelder", "werkzeuge", "erleben", "anwendungen", "downloads", "portale"];
 
 function walk(entry, files = []) {
+  if (/\s+\d+\.html$/i.test(entry)) return files;
   const full = path.join(ROOT, entry);
   if (!fs.existsSync(full)) return files;
   const stat = fs.statSync(full);

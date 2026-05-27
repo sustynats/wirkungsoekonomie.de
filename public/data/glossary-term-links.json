@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T17:05:35.724Z",
+  "generatedAt": "2026-05-27T17:01:06.199Z",
   "links": {
     "agenda-2030": {
       "label": "Agenda 2030",
@@ -119,17 +119,37 @@
       "label": "EU-Taxonomie",
       "slug": "eu-taxonomie",
       "url": "/begriffe/eu-taxonomie/",
-      "hoverDefinition": "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung.",
+      "hoverDefinition": "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung.",
       "shortDefinition": "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien.",
       "category": "Grundbegriff",
       "synonyms": [
         "EU Taxonomy"
       ],
       "relatedTerms": [
+        "social-taxonomy",
         "csrd",
         "esrs",
         "wirkungsrisiko",
         "nachhaltigkeit"
+      ]
+    },
+    "european-green-deal": {
+      "label": "European Green Deal",
+      "slug": "european-green-deal",
+      "url": "/begriffe/european-green-deal/",
+      "hoverDefinition": "Der European Green Deal ist ein EU-Transformationsrahmen und in der WÖk ein Anschlussraum für Daten, Standards und politische Rückkopplung.",
+      "shortDefinition": "Der European Green Deal ist ein politischer Rahmen der EU für Klima, Ressourcen, Industrie, Biodiversität und nachhaltige Transformation.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Green Deal",
+        "EU Green Deal"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "wirkungsdaten"
       ]
     },
     "faktencheck": {
@@ -198,6 +218,26 @@
         "reporting",
         "csrd",
         "esrs"
+      ]
+    },
+    "host-wirkungsscore": {
+      "label": "Host-Wirkungsscore",
+      "slug": "host-wirkungsscore",
+      "url": "/begriffe/host-wirkungsscore/",
+      "hoverDefinition": "Der Host-Wirkungsscore ist ein Lerninstrument für öffentliche Wirkungsbedingungen, keine Wahrheitsmaschine und kein Personenrating.",
+      "shortDefinition": "Der Host-Wirkungsscore ist eine Scorecard für öffentliche Formate, die Quellenklarheit, Framing, Diskursführung, Community, Transparenz, Schutz und Korrekturfähigkeit prüft.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "HWS",
+        "Host Scorecard",
+        "Hosting-Scorecard"
+      ],
+      "relatedTerms": [
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "reverse-merit-order",
+        "wirkungsorientiertes-hosting"
       ]
     },
     "idgs": {
@@ -386,6 +426,25 @@
         "neutrale-wirkung"
       ]
     },
+    "resonanzarchitektur": {
+      "label": "Resonanzarchitektur",
+      "slug": "resonanzarchitektur",
+      "url": "/begriffe/resonanzarchitektur/",
+      "hoverDefinition": "Resonanzarchitektur ist die bewusste Gestaltung von Gespräch, Chat, Clips, Plattformpfad und Nachbereitung.",
+      "shortDefinition": "Resonanzarchitektur beschreibt die gestalteten Bedingungen, unter denen Sprache, Bilder, Gäste, Chat, Plattformpfade und Korrekturen Anschluss finden.",
+      "category": "Architekturbegriff",
+      "synonyms": [
+        "Resonanzgestaltung",
+        "Diskursarchitektur"
+      ],
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungsarchitektur",
+        "wirkungsorientiertes-hosting"
+      ]
+    },
     "resonanzraum": {
       "label": "Resonanzraum",
       "slug": "resonanzraum",
@@ -503,6 +562,31 @@
         "wirkungspunkte",
         "wirkungswahrheit",
         "wirkungsrat"
+      ]
+    },
+    "social-taxonomy": {
+      "label": "Social Taxonomy",
+      "slug": "social-taxonomy",
+      "url": "/begriffe/social-taxonomy/",
+      "hoverDefinition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und soziale Stabilität stärken.",
+      "shortDefinition": "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten.",
+      "category": "Architekturbegriff",
+      "synonyms": [
+        "soziale Taxonomie",
+        "Social-Taxonomy",
+        "soziale Wirkungs-Taxonomie"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "wirkungsdaten",
+        "social-credit"
       ]
     },
     "spekulationslogik": {
@@ -803,11 +887,13 @@
       "label": "Wirkungskompetenz",
       "slug": "wirkungskompetenz",
       "url": "/begriffe/wirkungskompetenz/",
-      "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern.",
-      "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken und Rückkopplungen zu erkennen und zu gestalten.",
+      "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern.",
+      "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.",
       "category": "Grundbegriff",
       "synonyms": [],
       "relatedTerms": [
+        "wirkungsschule",
+        "wirkungspaedagogik",
         "wirkungsradar",
         "wirkungsbewertung",
         "wirkungsarchitektur"
@@ -839,6 +925,43 @@
         "wirkungspfad",
         "resonanzraum",
         "wirkungsarchitektur"
+      ]
+    },
+    "wirkungsorientiertes-hosting": {
+      "label": "Wirkungsorientiertes Hosting",
+      "slug": "wirkungsorientiertes-hosting",
+      "url": "/begriffe/wirkungsorientiertes-hosting/",
+      "hoverDefinition": "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet.",
+      "shortDefinition": "Wirkungsorientiertes Hosting gestaltet öffentliche Gesprächs-, Medien- und Community-Räume nach Wirkung, Quellenklarheit, Würde, Schutz und Korrekturfähigkeit.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "wirkungsorientierte Moderation",
+        "Impact Hosting",
+        "verantwortetes Hosting"
+      ],
+      "relatedTerms": [
+        "wirkungsraum",
+        "resonanzarchitektur",
+        "resonanzraum",
+        "wirkungskompetenz",
+        "host-wirkungsscore"
+      ]
+    },
+    "wirkungspaedagogik": {
+      "label": "Wirkungspädagogik",
+      "slug": "wirkungspaedagogik",
+      "url": "/begriffe/wirkungspaedagogik/",
+      "hoverDefinition": "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben.",
+      "shortDefinition": "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "wirkungsorientierte Pädagogik"
+      ],
+      "relatedTerms": [
+        "wirkungsschule",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "wirkungspotenzial"
       ]
     },
     "wirkungspfad": {
@@ -1009,6 +1132,24 @@
       "relatedTerms": [
         "wirkungslenkung",
         "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ]
+    },
+    "wirkungsschule": {
+      "label": "Wirkungsschule",
+      "slug": "wirkungsschule",
+      "url": "/begriffe/wirkungsschule/",
+      "hoverDefinition": "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet.",
+      "shortDefinition": "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "wirkungsorientierte Schule",
+        "Schule als Wirkungsraum"
+      ],
+      "relatedTerms": [
+        "wirkungspaedagogik",
+        "wirkungskompetenz",
+        "wirkungsraum",
         "positive-netto-wirkung"
       ]
     },

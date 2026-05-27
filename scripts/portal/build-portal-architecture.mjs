@@ -449,7 +449,12 @@ const fields = [
     concepts: ["Öffentlichkeit als Wirkungsraum", "Medienqualität", "Plattformlogik", "Desinformation"],
     actors: ["Bürger:innen", "Journalismus", "Plattformen", "Politik", "Wissenschaft"],
     demos: [{ label: "Medienwirkung erleben", href: "erleben.html#medienwirkung" }, { label: "Wirkung politischer Sprache", href: "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html" }],
-    docs: [{ label: "Medien und Wirkung", href: "assets/pdf/medien-und-wirkung.pdf" }, { label: "Dossier Medien und Demokratie", href: "blog/dossiers/medien-demokratie.html" }],
+    docs: [
+      { label: "Wirkungsräume gestalten", href: "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/" },
+      { label: "Wirkungsräume gestalten Word", href: "assets/downloads/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx" },
+      { label: "Medien und Wirkung", href: "assets/pdf/medien-und-wirkung.pdf" },
+      { label: "Dossier Medien und Demokratie", href: "blog/dossiers/medien-demokratie.html" },
+    ],
     anchors: [{ label: "Öffentlichkeit als Wirkungsraum", href: "referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/" }, { label: "Plattformlogik und Algorithmen", href: "referenz/kapitel-075-plattformlogik-und-algorithmen/" }, { label: "Diskurskultur", href: "referenz/kapitel-079-diskurskultur/" }],
   },
   {

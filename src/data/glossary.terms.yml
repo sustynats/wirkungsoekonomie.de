@@ -141,17 +141,17 @@ terms:
     canonicalLabel: "EU-Taxonomie"
     slug: "eu-taxonomie"
     status: "anschlussbegriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Anschlussräume"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social Taxonomy Journalbeitrag v1.0"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
+    sourceSection: "Anschlussräume; Sustainable Finance & Social Taxonomy"
     shortDefinition: "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien."
-    hoverDefinition: "Die EU-Taxonomie ist ein Klassifikationsrahmen; sie ersetzt keine vollständige WÖk-Netto-Wirkungsbewertung."
-    longDefinition: "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein."
-    usageNote: "Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen."
-    doNotConfuseWith: ["Taxonomiefähigkeit", "Wirkungsbewertung"]
+    hoverDefinition: "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung."
+    longDefinition: "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. In der Wirkungsökonomie ist sie ein wichtiger Anschlussstandard für Sustainable Finance, aber keine vollständige Bewertung sozialer Wirkung oder positiver Netto-Wirkung."
+    usageNote: "Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen und klar von einer Social Taxonomy unterscheiden."
+    doNotConfuseWith: ["Social Taxonomy", "Taxonomiefähigkeit", "Wirkungsbewertung"]
     synonyms: ["EU Taxonomy"]
-    relatedTerms: ["csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit"]
+    relatedTerms: ["social-taxonomy", "csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit"]
     relatedDocuments: []
     examples: []
     preferredUsage: "EU-Taxonomie als Anschlussstandard für Sustainable Finance."
@@ -159,7 +159,30 @@ terms:
     reviewStatus: "approved"
     glossaryOrderKey: "eu taxonomie"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-27"
+  - termId: european-green-deal
+    canonicalLabel: "European Green Deal"
+    slug: "european-green-deal"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Daten und Standards"
+    shortDefinition: "Der European Green Deal ist ein politischer Rahmen der EU für Klima, Ressourcen, Industrie, Biodiversität und nachhaltige Transformation."
+    hoverDefinition: "Der European Green Deal ist ein EU-Transformationsrahmen und in der WÖk ein Anschlussraum für Daten, Standards und politische Rückkopplung."
+    longDefinition: "In der Wirkungsökonomie ist der European Green Deal kein eigener Wirkungsmaßstab, sondern ein wichtiger europäischer Anschlussrahmen. Er verbindet Klima-, Ressourcen-, Industrie-, Biodiversitäts- und Finanzmarktpolitik mit Daten- und Standardfragen wie EU-Taxonomie, CSRD, ESRS und Produktpässen."
+    usageNote: "Nicht als fertige WÖk-Bewertung darstellen; der Green Deal liefert politische und regulatorische Anschlussräume."
+    doNotConfuseWith: ["EU-Taxonomie", "CSRD", "SDGs"]
+    synonyms: ["Green Deal", "EU Green Deal"]
+    relatedTerms: ["eu-taxonomie", "csrd", "esrs", "digitaler-produktpass", "wirkungsdaten"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "European Green Deal als europäischen Transformations- und Regulierungsrahmen einordnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "european green deal"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
   - termId: finalscore
     canonicalLabel: "FinalScore"
     slug: "finalscore"
@@ -520,7 +543,7 @@ terms:
     doNotConfuseWith: ["Wirkung", "Wirkungspotenzial"]
     synonyms: []
     relatedTerms: ["wirkungspotenzial", "wirkungspfad", "wirkungsnetz"]
-    relatedDocuments: []
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
     examples: []
     preferredUsage: "Bei Medien, Sprache, Kultur und Öffentlichkeit nutzen."
     deprecatedUsage: []
@@ -827,6 +850,31 @@ terms:
     glossaryOrderKey: "sdg sdgplus referenzrahmen"
     firstApprovedIn: "2026.2"
     lastUpdated: "2026-05-24"
+  - termId: social-taxonomy
+    canonicalLabel: "Social Taxonomy"
+    slug: "social-taxonomy"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Social Taxonomy Journalbeitrag v1.0"
+    sourceDocument: "Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
+    sourceSection: "Sustainable Finance & Social Taxonomy"
+    shortDefinition: "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten."
+    hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und soziale Stabilität stärken."
+    longDefinition: "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann."
+    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Der Begriff sollte daher als Vorschlags- und Weiterentwicklungsraum von der geltenden EU-Umwelt-Taxonomie unterschieden werden."
+    doNotConfuseWith: ["EU-Taxonomie", "ESG-Siegel", "Social Credit", "Corporate Volunteering"]
+    synonyms: ["soziale Taxonomie", "Social-Taxonomy", "soziale Wirkungs-Taxonomie"]
+    relatedTerms: ["eu-taxonomie", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "wirkungsdaten", "social-credit"]
+    relatedDocuments: ["social-taxonomy-journalbeitrag-v1-0"]
+    examples:
+      - "Ein Wohnprojekt wird nicht nur ökologisch, sondern auch nach Bezahlbarkeit, Verdrängungsrisiko, Gesundheit und Teilhabe bewertet."
+      - "Eine Lieferkette erfüllt nicht nur Mindestschutz, sondern zeigt faire Löhne, Arbeitssicherheit, Beschwerdewege und positive soziale Wirkung."
+    preferredUsage: "Als Architekturbegriff verwenden, wenn soziale Wirkung in nachhaltigen Märkten entscheidungsfähig, prüfbar und rückkopplungsfähig gemacht werden soll."
+    deprecatedUsage: ["Social Taxonomy als fertiges EU-Rechtsinstrument darstellen", "Social Taxonomy als Personenrating verwenden"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "social taxonomy"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
   - termId: t-sroi
     canonicalLabel: "T-SROI"
     slug: "t-sroi"
@@ -1149,29 +1197,154 @@ terms:
     glossaryOrderKey: "wirkungshaushalt"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: wirkungsschule
+    canonicalLabel: "Wirkungsschule"
+    slug: "wirkungsschule"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Bildung & Wirkungsschule"
+    shortDefinition: "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum."
+    hoverDefinition: "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet."
+    longDefinition: "In der Wirkungsökonomie bezeichnet die Wirkungsschule die institutionelle Form wirkungsorientierter Bildung: Unterricht, Raum, Beziehung, Bewertung, Förderung, Gesundheit, Demokratiepraxis, digitale Mündigkeit und Bildungsnetzwerke werden so gestaltet, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher wird."
+    usageNote: "Nicht als Schulform, Schulranking oder Personenbewertung verwenden. Bewertet werden Strukturen, Lernbedingungen und Angebote, nicht Kinder, Familien oder Lehrkräfte."
+    doNotConfuseWith: ["Schulform", "Schulranking", "Kinder-Scoring"]
+    synonyms: ["wirkungsorientierte Schule", "Schule als Wirkungsraum"]
+    relatedTerms: ["wirkungspaedagogik", "wirkungskompetenz", "wirkungsraum", "positive-netto-wirkung"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0", "wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Ein Schulhof-Hitze-Projekt verbindet Messung, Beteiligung, Gesundheit, Stadtklima und demokratische Entscheidung."
+      - "Ein Wirkungsportfolio macht Lernwege sichtbar, ohne Kinder auf Scores zu reduzieren."
+    preferredUsage: "Als Architekturbegriff für Schule verwenden, wenn Unterricht, Raum, Beziehung, Bewertung, Förderung, Demokratiepraxis und Schutzlogik gemeinsam betrachtet werden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsschule"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungspaedagogik
+    canonicalLabel: "Wirkungspädagogik"
+    slug: "wirkungspaedagogik"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Bildung & Wirkungsschule"
+    shortDefinition: "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit."
+    hoverDefinition: "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben."
+    longDefinition: "Wirkungspädagogik ist die pädagogische Logik der Wirkungsschule. Sie verbindet Fachlichkeit, Beziehung, Resonanz, Fehlerkultur, Reflexion und reale Wirkungsfragen, damit Lernende Wissen nicht nur aufnehmen, sondern Folgen erkennen, Verantwortung übernehmen und handlungsfähig werden."
+    usageNote: "Nicht als Moralisierung, Gesinnungsunterricht oder Projektbeliebigkeit verwenden. Wirkungspädagogik bleibt fachlich, überprüfbar, demokratisch offen und schützend."
+    doNotConfuseWith: ["Projektunterricht ohne Fachlichkeit", "Gesinnungspädagogik", "Kompetenzrhetorik"]
+    synonyms: ["wirkungsorientierte Pädagogik"]
+    relatedTerms: ["wirkungsschule", "wirkungskompetenz", "wirkungsraum", "wirkungspotenzial"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"]
+    examples:
+      - "Ein Fach-Zukunft-Modul verbindet Fachwissen mit einer lokalen Wirkungsfrage."
+      - "Feedback wird nicht nur zur Leistungsrückmeldung, sondern zur Stärkung von Selbstwirksamkeit und Korrekturfähigkeit genutzt."
+    preferredUsage: "Als pädagogischen Ansatz verwenden, wenn Lernen, Fachlichkeit, Reflexion und verantwortliches Handeln zusammen betrachtet werden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspaedagogik"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungsorientiertes-hosting
+    canonicalLabel: "Wirkungsorientiertes Hosting"
+    slug: "wirkungsorientiertes-hosting"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsräume gestalten v1.0"
+    sourceDocument: "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx"
+    sourceSection: "Medien & Öffentlichkeit; Praxis"
+    shortDefinition: "Wirkungsorientiertes Hosting gestaltet öffentliche Gesprächs-, Medien- und Community-Räume nach Wirkung, Quellenklarheit, Würde, Schutz und Korrekturfähigkeit."
+    hoverDefinition: "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet."
+    longDefinition: "Wirkungsorientiertes Hosting ist eine Praxis für Creator:innen, Hosts, Redaktionen, Streamer:innen, Podcaster:innen, Community-Management und politische Kommunikation. Es gestaltet Resonanzbedingungen so, dass Wahrheit zugänglich bleibt, Streit zu Erkenntnis führen kann, Menschenwürde geschützt wird und demokratische Rückkopplung funktioniert."
+    usageNote: "Nicht als Benimmkatalog, Zensur oder Gesinnungsprüfung verwenden. Bewertet werden öffentliche Verstärkungsbedingungen, Quellenklarheit, Moderation, Schutzstandards und Korrekturwege."
+    doNotConfuseWith: ["Zensur", "Personenscore", "Social Credit", "Moderationsstil"]
+    synonyms: ["wirkungsorientierte Moderation", "Impact Hosting", "verantwortetes Hosting"]
+    relatedTerms: ["wirkungsraum", "resonanzarchitektur", "resonanzraum", "wirkungskompetenz", "host-wirkungsscore"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Ein Host trennt Fakt, Meinung, Erfahrung und Prognose sichtbar, bevor ein Hochrisiko-Thema weiter diskutiert wird."
+      - "Ein Livestream nutzt Chat-Regeln, Quellenlinks, Interventionssätze und Nachkorrektur als Teil der Wirkungsarchitektur."
+    preferredUsage: "Als Praxisbegriff für öffentliche Formate verwenden, die Wirkungsräume bewusst gestalten."
+    deprecatedUsage: ["Wirkungsorientiertes Hosting als Gesinnungsprüfung", "Hosting-Score als Menschenbewertung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsorientiertes hosting"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: resonanzarchitektur
+    canonicalLabel: "Resonanzarchitektur"
+    slug: "resonanzarchitektur"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsräume gestalten v1.0"
+    sourceDocument: "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx"
+    sourceSection: "Medien & Öffentlichkeit; Architektur"
+    shortDefinition: "Resonanzarchitektur beschreibt die gestalteten Bedingungen, unter denen Sprache, Bilder, Gäste, Chat, Plattformpfade und Korrekturen Anschluss finden."
+    hoverDefinition: "Resonanzarchitektur ist die bewusste Gestaltung von Gespräch, Chat, Clips, Plattformpfad und Nachbereitung."
+    longDefinition: "Resonanzarchitektur macht sichtbar, dass ein Format nicht nur aus Inhalt besteht. Thema, Einstiegsfrage, Gästeauswahl, Redezeit, Humor, Quellen, Chatregeln, Titel, Thumbnail, Clips, Kommentarlogik und Nachkorrektur strukturieren, welche Resonanzen verstärkt oder begrenzt werden."
+    usageNote: "Nicht mit bloßer Dramaturgie oder Reichweitenoptimierung gleichsetzen."
+    doNotConfuseWith: ["Aufmerksamkeitsoptimierung", "Framing allein", "Reichweitenstrategie"]
+    synonyms: ["Resonanzgestaltung", "Diskursarchitektur"]
+    relatedTerms: ["resonanzraum", "wirkungsraum", "wirkungspfad", "wirkungsarchitektur", "wirkungsorientiertes-hosting"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Ein Format legt vorab fest, wie Falschbehauptungen, Chat-Eskalation und Clip-Kontext behandelt werden."
+    preferredUsage: "Als Architekturbegriff für öffentliche Kommunikationsräume verwenden."
+    deprecatedUsage: ["Resonanzarchitektur als Manipulationsdesign"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "resonanzarchitektur"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: host-wirkungsscore
+    canonicalLabel: "Host-Wirkungsscore"
+    slug: "host-wirkungsscore"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsräume gestalten v1.0"
+    sourceDocument: "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx"
+    sourceSection: "Medien & Öffentlichkeit; Instrumente"
+    shortDefinition: "Der Host-Wirkungsscore ist eine Scorecard für öffentliche Formate, die Quellenklarheit, Framing, Diskursführung, Community, Transparenz, Schutz und Korrekturfähigkeit prüft."
+    hoverDefinition: "Der Host-Wirkungsscore ist ein Lerninstrument für öffentliche Wirkungsbedingungen, keine Wahrheitsmaschine und kein Personenrating."
+    longDefinition: "Der Host-Wirkungsscore bewertet nicht Menschen, Meinungen oder Gesinnung, sondern öffentliche Verstärkungsbedingungen eines Formats. Er unterscheidet Wirkungspotenzial, Wirkungsrisiko, Quellenklarheit, Framing, Diskursführung, Community-Architektur, Transparenz, Schutz vulnerabler Gruppen, Plattform- und Clip-Verantwortung, Korrekturfähigkeit und Transformationswirkung."
+    usageNote: "Als Reflexions- und Lerninstrument verwenden; nicht als staatliches Meinungsranking oder automatische Sperrlogik."
+    doNotConfuseWith: ["Personenscore", "Social Credit", "amtliches Medienrating"]
+    synonyms: ["HWS", "Host Scorecard", "Hosting-Scorecard"]
+    relatedTerms: ["scorecard", "wirkungsbewertung", "wirkungsrisiko", "reverse-merit-order", "wirkungsorientiertes-hosting"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Nach einem Stream prüft das Team Quellenklarheit, Clip-Kontext, Chat-Eskalation und sichtbare Korrekturwege."
+    preferredUsage: "Als nicht-amtliches Bewertungs- und Lernraster für Formate, Redaktionen, Akademien und Peer-Review verwenden."
+    deprecatedUsage: ["Host-Wirkungsscore als Gesinnungsscore", "Host-Wirkungsscore als automatisches Ranking von Personen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "host wirkungsscore"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
   - termId: wirkungskompetenz
     canonicalLabel: "Wirkungskompetenz"
     slug: "wirkungskompetenz"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken und Rückkopplungen zu erkennen und zu gestalten."
-    hoverDefinition: "Wirkungskompetenz heißt, Folgen von Entscheidungen zu erkennen, zu bewerten und lernfähig zu verändern."
-    longDefinition: "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit und praktische Steuerung."
-    usageNote: "Nicht nur Wissen, sondern Handlungsfähigkeit."
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Führende Mini-Definitionen; Bildung & Wirkungsschule"
+    shortDefinition: "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten."
+    hoverDefinition: "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern."
+    longDefinition: "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit, demokratische Streitfähigkeit und praktische Steuerung. Im Bildungsbereich ist sie die Fähigkeit, reale Wirkungsfragen zu analysieren, Perspektiven einzubeziehen, Zielkonflikte offenzulegen, Nebenwirkungen zu prüfen und handlungsfähige Lösungen zu entwickeln."
+    usageNote: "Nicht nur Wissen, sondern Handlungsfähigkeit; im Bildungsbereich niemals als Personen-Score verwenden."
     doNotConfuseWith: ["Fachwissen", "Datenkompetenz"]
     synonyms: []
-    relatedTerms: ["wirkungsradar", "wirkungsbewertung", "wirkungsarchitektur"]
-    relatedDocuments: []
-    examples: []
-    preferredUsage: "Als Fähigkeit zur wirkungsorientierten Entscheidung verwenden."
+    relatedTerms: ["wirkungsschule", "wirkungspaedagogik", "wirkungsradar", "wirkungsbewertung", "wirkungsarchitektur"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0", "wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Schüler:innen prüfen bei einem Schulhof-Hitze-Projekt Daten, Betroffene, Kosten, Nebenwirkungen und demokratische Entscheidungspfade."
+      - "Eine Organisation bewertet nicht nur Output, sondern auch Nebenwirkungen, Rückkopplungen und Korrekturmöglichkeiten."
+    preferredUsage: "Als Fähigkeit zur wirkungsorientierten Entscheidung, demokratischen Urteilsbildung und verantwortlichen Gestaltung verwenden."
     deprecatedUsage: []
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungskompetenz"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-05-27"
   - termId: wirkungslenkung
     canonicalLabel: "Wirkungslenkung"
     slug: "wirkungslenkung"
@@ -1463,7 +1636,7 @@ terms:
     doNotConfuseWith: ["Marktsegment", "Zielgruppe"]
     synonyms: []
     relatedTerms: ["wirkungsempfaenger", "wirkungspfad", "wirkungsarchitektur"]
-    relatedDocuments: []
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
     examples: ["Wohnen", "Medien", "Mobilität"]
     preferredUsage: "Als systemischen Raum von Wirkung verwenden."
     deprecatedUsage: []

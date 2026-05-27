@@ -9,6 +9,10 @@ const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
 const PUBLIC_SEARCH_REPLACEMENTS = [
+  [/Kontext-Werkzeuge/g, "Methoden & Werkzeuge"],
+  [/Werkstatt:/g, "Bibliothek:"],
+  [/Kosten je FTE/g, "Kosten je Vollzeitstelle"],
+  [/\bFTE\b/g, "Vollzeitstellen"],
   [/Bildungsportal öffnen/g, "Wirkungsfeld öffnen"],
   [/Portal öffnen/g, "Wirkungsfeld öffnen"],
   [/Portalarchitektur/g, "Systemlandkarte"],
@@ -67,11 +71,14 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
 
 function clean(text) {
   return String(text || "")
+    .replace(/<([a-z][\w:-]*)\b[^>]*data-search-exclude[^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<([a-z][\w:-]*)\b[^>]*class=["'][^"']*(?:no-print|breadcrumb|side-nav|toc-card|model-strip|footer-nav|site-nav|publication-matrix-wrap)[^"']*["'][^>]*>[\s\S]*?<\/\1>/gi, " ")
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<header[\s\S]*?<\/header>/gi, " ")
     .replace(/<footer[\s\S]*?<\/footer>/gi, " ")
     .replace(/<nav[\s\S]*?<\/nav>/gi, " ")
+    .replace(/<aside[\s\S]*?<\/aside>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -102,6 +109,25 @@ function isLowValueEntry(entry) {
   if (/footer|navigation|kontakt/i.test(title) || /footer|navigation/i.test(section)) return true;
   if (/^\/referenz\/kapitel-\d{3}-.+#/i.test(String(entry.url || "")) && /Endnoten|Quellen/i.test(title)) return true;
   return false;
+}
+
+function isSearchNoiseEntry(entry) {
+  const title = publicSearchText(String(entry.title || "")).trim().toLowerCase();
+  const section = publicSearchText(String(entry.section || "")).trim().toLowerCase();
+  const body = publicSearchText(String(entry.body || "")).toLowerCase();
+  const noiseTitles = new Set(["kontakt", "verstehen", "referenzrahmen", "kontext-werkzeuge", "methoden & werkzeuge", "erleben & lernen", "werkstatt"]);
+  if (noiseTitles.has(title) && body.length < 900) return true;
+  if (/footer navigation|hauptnavigation|site-nav|footer-nav/i.test(body)) return true;
+  const footerCluster = [
+    "wirkung einfach erklärt",
+    "sdg-/sdg+-referenzrahmen",
+    "interaktive demos",
+    "arbeitsbibliothek",
+    "dokumentenregistry",
+  ];
+  if (footerCluster.filter((item) => body.includes(item)).length >= 3) return true;
+  if (body.includes("kontakt:") && body.includes("© 2026 natalie weber")) return true;
+  return section.includes("footer") || section.includes("navigation");
 }
 
 function normalizePriority(entry) {
@@ -267,6 +293,7 @@ for (const file of contentFiles) {
 const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
 for (const entry of generated) byUrl.set(entry.url, entry);
 const merged = Array.from(byUrl.values())
+  .filter((entry) => !isSearchNoiseEntry(entry))
   .map(publicSearchValue)
   .map(normalizePriority)
   .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));

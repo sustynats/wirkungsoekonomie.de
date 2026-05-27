@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T17:05:42.744Z",
+  "generatedAt": "2026-05-27T17:01:15.297Z",
   "relationships": {
     "agenda-2030": {
       "terms": [
@@ -63,10 +63,21 @@
     },
     "eu-taxonomie": {
       "terms": [
+        "social-taxonomy",
         "csrd",
         "esrs",
         "wirkungsrisiko",
         "nachhaltigkeit"
+      ],
+      "documents": []
+    },
+    "european-green-deal": {
+      "terms": [
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "wirkungsdaten"
       ],
       "documents": []
     },
@@ -108,6 +119,18 @@
         "esrs"
       ],
       "documents": []
+    },
+    "host-wirkungsscore": {
+      "terms": [
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "reverse-merit-order",
+        "wirkungsorientiertes-hosting"
+      ],
+      "documents": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
     },
     "idgs": {
       "terms": [
@@ -215,13 +238,27 @@
       ],
       "documents": []
     },
+    "resonanzarchitektur": {
+      "terms": [
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungsarchitektur",
+        "wirkungsorientiertes-hosting"
+      ],
+      "documents": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
+    },
     "resonanzraum": {
       "terms": [
         "wirkungspotenzial",
         "wirkungspfad",
         "wirkungsnetz"
       ],
-      "documents": []
+      "documents": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
     },
     "reverse-merit-order": {
       "terms": [
@@ -283,6 +320,23 @@
       ],
       "documents": [
         "schutzrahmen-personenbewertung"
+      ]
+    },
+    "social-taxonomy": {
+      "terms": [
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "wirkungsdaten",
+        "social-credit"
+      ],
+      "documents": [
+        "social-taxonomy-journalbeitrag-v1-0"
       ]
     },
     "spekulationslogik": {
@@ -450,11 +504,16 @@
     },
     "wirkungskompetenz": {
       "terms": [
+        "wirkungsschule",
+        "wirkungspaedagogik",
         "wirkungsradar",
         "wirkungsbewertung",
         "wirkungsarchitektur"
       ],
-      "documents": []
+      "documents": [
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
     },
     "wirkungslenkung": {
       "terms": [
@@ -471,6 +530,29 @@
         "wirkungsarchitektur"
       ],
       "documents": []
+    },
+    "wirkungsorientiertes-hosting": {
+      "terms": [
+        "wirkungsraum",
+        "resonanzarchitektur",
+        "resonanzraum",
+        "wirkungskompetenz",
+        "host-wirkungsscore"
+      ],
+      "documents": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
+    },
+    "wirkungspaedagogik": {
+      "terms": [
+        "wirkungsschule",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "wirkungspotenzial"
+      ],
+      "documents": [
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
+      ]
     },
     "wirkungspfad": {
       "terms": [
@@ -534,7 +616,9 @@
         "wirkungspfad",
         "wirkungsarchitektur"
       ],
-      "documents": []
+      "documents": [
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
     },
     "wirkungsrente": {
       "terms": [
@@ -569,6 +653,18 @@
         "positive-netto-wirkung"
       ],
       "documents": []
+    },
+    "wirkungsschule": {
+      "terms": [
+        "wirkungspaedagogik",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
+        "wirkungsraeume-gestalten-hosting-v1-0"
+      ]
     },
     "wirkungssteuer": {
       "terms": [

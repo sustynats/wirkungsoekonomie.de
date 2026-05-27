@@ -23,6 +23,10 @@ const TARGETS = [
 const ROOT_HTML_FILES = ["index.html", "erleben.html", "suche.html", "akademie.html", "downloads.html", "kompass.html", "modell.html", "glossar.html", "anwendungen.html", "workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
 
 const replacements = [
+  [/Kontext-Werkzeuge/g, "Methoden & Werkzeuge"],
+  [/Werkstatt:/g, "Bibliothek:"],
+  [/Kosten je FTE/g, "Kosten je Vollzeitstelle"],
+  [/\bFTE\b/g, "Vollzeitstellen"],
   [/Tool-Spezifikation und Rechenmodell/g, "Methodik und Annahmen"],
   [/Tool-Spezifikation:/g, "Methodik:"],
   [/Tool-Spezifikation/g, "Methodik"],

@@ -1097,12 +1097,43 @@ function productPortal() {
         { title: "Produkte tragen Wirkung", text: "Jedes Produkt wirkt über Material, Herstellung, Lieferkette, Nutzung, Reparierbarkeit, Entsorgung und Verbraucherinformation." },
         { title: "Konsum steuert Märkte", text: "Wenn Wirkung sichtbar wird, können Wettbewerb, Beschaffung, Steuern und Kaufentscheidungen bessere Produkte belohnen." },
       ])}
+      <figure class="system-visual" role="img" aria-label="Der falsche Preis zeigt Kosten, Marge und Steuer, aber nicht Klima, Wasser, Gesundheit, Arbeitsrechte, Vertrauen und Demokratie.">
+        <div class="system-visual-grid">
+          <div class="visual-price-card" data-tone="positive">
+            <strong>Preis sichtbar</strong>
+            <div class="visual-chip-list"><span>Kosten</span><span>Marge</span><span>Steuer</span></div>
+          </div>
+          <div class="visual-price-card" data-tone="warning">
+            <strong>Wirkung oft unsichtbar</strong>
+            <div class="visual-chip-list"><span>Klima</span><span>Wasser</span><span>Gesundheit</span><span>Arbeitsrechte</span><span>Vertrauen</span><span>Demokratie</span></div>
+          </div>
+        </div>
+        <figcaption>Die Wirkungsökonomie macht die fehlenden Preisbestandteile nicht moralisch, sondern prüfbar und rückkoppelbar.</figcaption>
+      </figure>
+      <figure class="system-visual" role="img" aria-label="Produktwirkung entlang der Kette von Rohstoff über Herstellung, Transport, Nutzung, Reparatur und Entsorgung mit Datenqualität und Scorecard.">
+        <div class="system-visual-flow six">
+          <div class="visual-node"><strong>Rohstoff</strong><span>Herkunft, Wasser, Biodiversität, Rechte.</span></div>
+          <div class="visual-node"><strong>Herstellung</strong><span>Energie, Chemie, Arbeit, Sicherheit.</span></div>
+          <div class="visual-node"><strong>Transport</strong><span>Distanz, Kühlung, Logistik, Emissionen.</span></div>
+          <div class="visual-node"><strong>Nutzung</strong><span>Gesundheit, Energie, Lebensdauer.</span></div>
+          <div class="visual-node"><strong>Reparatur</strong><span>Ersatzteile, Modularität, Kreislauf.</span></div>
+          <div class="visual-node" data-tone="positive"><strong>Entsorgung</strong><span>Recycling, Schadstoffe, Datenqualität, Scorecard.</span></div>
+        </div>
+        <figcaption>Produktwirkung entsteht entlang der Kette. Eine Scorecard muss Datenqualität und schwache Felder sichtbar halten.</figcaption>
+      </figure>
     </section>
     <section class="section" aria-labelledby="old-vs-woek">
       <div class="section-header">
         <p class="hero-kicker">Systemblick</p>
         ${sectionTitle("old-vs-woek", "Alte Logik vs. WÖk-Logik")}
       </div>
+      <figure class="system-visual" role="img" aria-label="Alte Produktlogik verglichen mit WÖk-Logik. Alte Logik misst Gewinn, Wachstum und Output. WÖk-Logik bewertet positive Netto-Wirkung, Schutzgrenzen und Rückkopplung.">
+        <div class="system-visual-compare">
+          <div class="visual-lane" data-tone="warning"><strong>Alte Logik</strong><div class="visual-chip-list"><span>Gewinn</span><span>Wachstum</span><span>Output</span><span>billiger Preis</span></div></div>
+          <div class="visual-lane" data-tone="positive"><strong>WÖk-Logik</strong><div class="visual-chip-list"><span>positive Netto-Wirkung</span><span>Schutzgrenzen</span><span>Datenqualität</span><span>Rückkopplung</span></div></div>
+        </div>
+        <figcaption>Der Unterschied liegt nicht in mehr Kontrolle, sondern im besseren Maßstab für Preise, Beschaffung und Kapital.</figcaption>
+      </figure>
       <div class="comparison-grid">
         <article class="card">
           <p class="card-kicker">Heutige Logik</p>
@@ -1169,6 +1200,17 @@ function productPortal() {
         { title: "Für Politik und Verwaltung", text: "Pilotierung, Rechtsschutz, Datenschutz und Wirkungsrat sichern die Einführung ab." },
       ])}
     </section>
+    <aside class="section related-questions-block" aria-labelledby="product-related-title">
+      <div class="section-header">
+        <p class="hero-kicker">Passende Fragen</p>
+        ${sectionTitle("product-related-title", "Einwände zu Preisen und Produktdaten")}
+      </div>
+      <div class="related-question-grid">
+        <article class="related-question-card"><span>Preisfrage</span><strong>Wird dann alles teurer?</strong><a class="text-link" href="${href(base, "fragen/#teurer")}">Antwort lesen</a></article>
+        <article class="related-question-card"><span>Governance</span><strong>Wer entscheidet die Steuerklasse?</strong><a class="text-link" href="${href(base, "fragen/#steuerklasse")}">Antwort lesen</a></article>
+        <article class="related-question-card"><span>Daten</span><strong>Was passiert bei fehlenden Daten?</strong><a class="text-link" href="${href(base, "fragen/#fehlende-daten")}">Antwort lesen</a></article>
+      </div>
+    </aside>
     ${politicalBlock(base, "Dieses Wirkungsfeld")}
     ${sdgBlock(base, "Produktbesteuerung berührt Ernährung, Gesundheit, Wasser, Arbeit, Industrie, Ungleichheit, Konsum, Klima, Biodiversität, Institutionen und internationale Kooperation. SDG+ ergänzt dort, wo Produktdaten, Werbung, Plattformen, Transparenz und Vertrauen demokratische Wirkung entfalten.")}
     ${bookBlock(base)}
