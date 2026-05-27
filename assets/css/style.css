@@ -221,6 +221,29 @@
   line-height: 1.45;
 }
 
+.article-inline-question {
+  max-width: 760px;
+  margin: clamp(1.5rem, 4vw, 2.5rem) 0;
+  padding: 1rem;
+  border: 1px solid rgba(47, 124, 94, 0.2);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: rgba(47, 124, 94, 0.07);
+}
+
+.article-inline-question h3 {
+  margin: 0.25rem 0 0.45rem;
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.25;
+}
+
+.article-inline-question p:not(.hero-kicker) {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 @media (max-width: 860px) {
   .qa-top-grid,
   .qa-criticism-grid,

@@ -180,6 +180,10 @@ function entryFromDocument(document) {
 
 function entryFromQuestion(question) {
   const related = question.related || {};
+  const relatedTerms = related.terms || question.relatedTerms || [];
+  const relatedPages = related.pages || question.relatedPages || [];
+  const relatedTools = related.tools || question.relatedTools || [];
+  const relatedDocuments = related.documents || question.relatedDocuments || [];
   const body = [
     question.question,
     question.shortAnswer,
@@ -188,10 +192,15 @@ function entryFromQuestion(question) {
     question.limits,
     question.category,
     ...(question.keywords || []),
-    ...(related.terms || []).map((item) => item.label),
-    ...(related.pages || []).map((item) => item.label),
-    ...(related.tools || []).map((item) => item.label),
-    ...(related.documents || []).map((item) => item.label),
+    ...(question.topics || []),
+    ...(question.terms || []),
+    ...(question.audiences || []),
+    ...(question.triggerWords || []),
+    ...(question.journalTopics || []),
+    ...relatedTerms.map((item) => item.label),
+    ...relatedPages.map((item) => item.label),
+    ...relatedTools.map((item) => item.label),
+    ...relatedDocuments.map((item) => item.label),
   ].join(" ");
   return {
     id: `woek-question-${question.id}`,
@@ -203,9 +212,9 @@ function entryFromQuestion(question) {
     format: "FAQ / Einwand",
     impactSpaces: ["Mensch", "Planet", "Demokratie"],
     standards: body.match(/SDG\+?|ESG|CSRD|Taxonomie|IDG/gi) || [],
-    instruments: [...(related.terms || []), ...(related.tools || [])].map((item) => item.label),
-    tags: [question.category, ...(question.keywords || [])].filter(Boolean),
-    aliases: question.keywords || [],
+    instruments: [...relatedTerms, ...relatedTools].map((item) => item.label),
+    tags: [question.category, ...(question.keywords || []), ...(question.topics || []), ...(question.terms || []), ...(question.audiences || [])].filter(Boolean),
+    aliases: [...(question.keywords || []), ...(question.triggerWords || []), ...(question.relatedQuestions || [])],
     body,
     priority: Number(question.priority || 100) <= 12 ? 174 : 148,
   };
@@ -428,8 +437,10 @@ for (const question of questions) {
     version: "2026.2",
     sectionId: question.id,
     documentId: `question-${question.id}`,
-    relatedTerms: (question.related?.terms || []).map((item) => item.url).filter(Boolean),
-    relatedDocuments: (question.related?.documents || []).map((item) => item.url).filter(Boolean),
+    relatedTerms: (question.related?.terms || question.relatedTerms || []).map((item) => item.url || item).filter(Boolean),
+    relatedDocuments: (question.related?.documents || question.relatedDocuments || []).map((item) => item.url || item).filter(Boolean),
+    relatedPages: (question.related?.pages || question.relatedPages || []).map((item) => item.url || item).filter(Boolean),
+    relatedTools: (question.related?.tools || question.relatedTools || []).map((item) => item.url || item).filter(Boolean),
     sourceFile: questionRegistryPath,
     searchBoost: entry.priority,
   };
