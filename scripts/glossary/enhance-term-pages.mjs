@@ -35,6 +35,8 @@ const navigation = JSON.parse(fs.readFileSync(navigationFile, "utf8"));
 const headerTemplate = fs.readFileSync(headerTemplateFile, "utf8");
 const footerTemplate = fs.readFileSync(footerTemplateFile, "utf8");
 const registryTerms = termData.terms || [];
+const registryTermsById = new Map(registryTerms.map((term) => [term.termId || term.id, term]));
+const registryTermsByAlias = new Map();
 const glossaryHtml = fs.existsSync(glossaryFile) ? fs.readFileSync(glossaryFile, "utf8") : "";
 const glossaryActionPattern = /\n?\s*<p class="glossary-entry-action">[\s\S]*?<\/p>/g;
 const documentRegistry = readJson(documentRegistryFile, []);
@@ -86,6 +88,14 @@ function normalize(value) {
     .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+for (const term of registryTerms) {
+  const values = [term.canonicalLabel, term.label, term.termId, term.slug, ...(term.synonyms || []), ...(term.aliases || [])];
+  for (const value of values) {
+    const key = normalize(value);
+    if (key && !registryTermsByAlias.has(key)) registryTermsByAlias.set(key, term);
+  }
 }
 
 function slugify(value) {
@@ -211,15 +221,24 @@ function parseGlossaryEntries(html) {
   const cleaned = html.replace(glossaryActionPattern, "");
   const entries = [];
   const seen = new Map();
-  const pattern = /<div(?:\s+[^>]*)?>\s*<dt(?:\s+id="([^"]+)")?>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>\s*<\/div>/g;
+  const pattern = /<div([^>]*)>\s*<dt(?:\s+id="([^"]+)")?>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>\s*<\/div>/g;
   let match;
   while ((match = pattern.exec(cleaned))) {
-    const id = match[1] || "";
-    const label = decodeEntities(stripTags(match[2]));
+    const attrs = match[1] || "";
+    const registryId = (attrs.match(/data-(?:classic-)?term-id="([^"]+)"/) || [])[1] || "";
+    const id = match[2] || "";
+    const rawLabel = decodeEntities(stripTags(match[3]));
+    const lookupLabel = rawLabel.replace(/\s*\((Kurz|Kurzverweis)\)\s*$/i, "").trim();
+    const registryTerm =
+      registryTermsById.get(registryId) ||
+      registryTermsByAlias.get(normalize(rawLabel)) ||
+      registryTermsByAlias.get(normalize(lookupLabel)) ||
+      registryTermsByAlias.get(normalize(id.replace(/^begriff-/, "")));
+    const label = registryTerm?.canonicalLabel || rawLabel;
     if (!label) continue;
-    const baseSlug = slugFromEntry(id, label);
+    const baseSlug = registryTerm?.slug || slugFromEntry(id, label);
     let slug = baseSlug;
-    if (seen.has(slug) && !labelsOverlap(seen.get(slug), label)) {
+    if (!registryTerm && seen.has(slug) && !labelsOverlap(seen.get(slug), label)) {
       let counter = 2;
       while (seen.has(`${baseSlug}-${counter}`)) counter += 1;
       slug = `${baseSlug}-${counter}`;
@@ -229,8 +248,8 @@ function parseGlossaryEntries(html) {
       id,
       label,
       slug,
-      html: match[3].trim(),
-      text: decodeEntities(stripTags(match[3])),
+      html: match[4].trim(),
+      text: decodeEntities(stripTags(match[4])),
     });
   }
   return entries;
