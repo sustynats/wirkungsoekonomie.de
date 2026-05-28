@@ -45,6 +45,21 @@
           overflow-wrap: break-word;
         }
       }
+
+      .formula-block {
+        margin: var(--space-md) 0;
+        padding: var(--space-md);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface-muted);
+        overflow-x: auto;
+      }
+
+      .formula-block math {
+        display: block;
+        min-width: max-content;
+        font-size: 1.08rem;
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -223,31 +238,83 @@
 
           <h3>Schritt 2: Datenqualität gewichten</h3>
           <p>Jeder Indikator bekommt zusätzlich einen Datenqualitätswert. Q4 entspricht geprüfter Primärquelle und vollständigem Kontext. Q1 entspricht qualitativen Hinweisen oder schwacher Datenlage.</p>
-          <pre><code>Q4 = 1.00
-Q3 = 0.75
-Q2 = 0.50
-Q1 = 0.25</code></pre>
+          <div class="formula-block" role="img" aria-label="Datenqualitaet: Q4 gleich 1.00, Q3 gleich 0.75, Q2 gleich 0.50, Q1 gleich 0.25.">
+            <math display="block">
+              <mrow><msub><mi>Q</mi><mn>4</mn></msub><mo>=</mo><mn>1.00</mn></mrow>
+            </math>
+            <math display="block">
+              <mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>0.75</mn></mrow>
+            </math>
+            <math display="block">
+              <mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>0.50</mn></mrow>
+            </math>
+            <math display="block">
+              <mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>0.25</mn></mrow>
+            </math>
+          </div>
 
           <h3>Schritt 3: Dimensionswerte berechnen</h3>
           <p>Für jede Dimension - Mensch, Planet und Demokratie - wird ein gewichteter Wirkungswert berechnet.</p>
-          <pre><code>W_d(u) = sum(w_di * q_i * s_i) / sum(w_di * q_i)</code></pre>
+          <div class="formula-block" role="img" aria-label="W d von u ist gleich Summe aus w d i mal q i mal s i geteilt durch Summe aus w d i mal q i.">
+            <math display="block">
+              <mrow>
+                <msub><mi>W</mi><mi>d</mi></msub>
+                <mo>(</mo><mi>u</mi><mo>)</mo>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <mo>&sum;</mo><msub><mi>w</mi><mrow><mi>d</mi><mi>i</mi></mrow></msub><mo>&middot;</mo><msub><mi>q</mi><mi>i</mi></msub><mo>&middot;</mo><msub><mi>s</mi><mi>i</mi></msub>
+                  </mrow>
+                  <mrow>
+                    <mo>&sum;</mo><msub><mi>w</mi><mrow><mi>d</mi><mi>i</mi></mrow></msub><mo>&middot;</mo><msub><mi>q</mi><mi>i</mi></msub>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </math>
+          </div>
           <p>Dabei ist W_d(u) der Wirkungswert der Dimension, w_di das Gewicht des Indikators in dieser Dimension, q_i die Datenqualität und s_i der Indikatorscore von -3 bis +3.</p>
 
           <h3>Schritt 4: Kommunikations-Folgenwert berechnen</h3>
           <p>Für allgemeine politische Kommunikation wäre ein sinnvolles Standardmodell:</p>
-          <pre><code>KFW = 0.35 * W_M + 0.10 * W_P + 0.55 * W_D</code></pre>
+          <div class="formula-block" role="img" aria-label="Kommunikations-Folgenwert gleich 0.35 mal W Mensch plus 0.10 mal W Planet plus 0.55 mal W Demokratie.">
+            <math display="block">
+              <mrow>
+                <mi>KFW</mi><mo>=</mo><mn>0.35</mn><mo>&middot;</mo><msub><mi>W</mi><mi>M</mi></msub><mo>+</mo><mn>0.10</mn><mo>&middot;</mo><msub><mi>W</mi><mi>P</mi></msub><mo>+</mo><mn>0.55</mn><mo>&middot;</mo><msub><mi>W</mi><mi>D</mi></msub>
+              </mrow>
+            </math>
+          </div>
           <p>Die Gewichtung darf nicht willkürlich sein. Sie muss öffentlich begründet, versioniert und überprüfbar sein. Bei klimapolitischer Kommunikation kann Planet stärker gewichtet werden. Bei rassistischer oder queerfeindlicher Sprache wird Mensch stärker gewichtet. Bei Angriffen auf Rechtsstaat, Medien oder Wahlen wird Demokratie stärker gewichtet. Das ist keine Ideologie. Das ist Materialität.</p>
 
           <h3>Schritt 5: Rote Linien und Reverse Merit Order anwenden</h3>
           <p>Ein Durchschnitt darf schwere Schäden nicht verdecken. Genau hier braucht der Folgencheck die <a class="text-link" href="../werkzeuge/reverse-merit-order/">Reverse Merit Order</a>. In der Wirkungsökonomie verhindert sie, dass schwere negative Wirkung durch positive Einzelwerte kompensiert wird.</p>
           <p>Für politische Kommunikation wären rote Linien zum Beispiel direkte Gewaltaufforderung, Entmenschlichung einer Gruppe, Bürgerkriegs- oder Gewaltframe in Verbindung mit Sündenbocklogik, systematische Delegitimierung demokratischer Institutionen, Wahlbetrugsnarrative ohne Evidenz, Minderheitenmarkierung mit Ausschlussforderung oder gezielte Zerstörung öffentlicher Wahrheitsinfrastruktur.</p>
-          <pre><code>FS(u) = min(KFW, RMO_Cap)</code></pre>
+          <div class="formula-block" role="img" aria-label="FinalScore von u ist gleich Minimum aus Kommunikations-Folgenwert und RMO Cap.">
+            <math display="block">
+              <mrow>
+                <mi>FS</mi><mo>(</mo><mi>u</mi><mo>)</mo><mo>=</mo><mi>min</mi><mo>(</mo><mi>KFW</mi><mo>,</mo><msub><mi>RMO</mi><mi>Cap</mi></msub><mo>)</mo>
+              </mrow>
+            </math>
+          </div>
           <p>Der FinalScore kann also nicht besser sein als die rote Linie, die durch das schwerste kritische Feld gesetzt wird.</p>
 
           <h3>Schritt 6: Folgenrisiko-Index berechnen</h3>
-          <pre><code>FRI_basis(u) = 100 * max(0, -FS(u)) / 3
-FRI(u) = min(100, FRI_basis(u) * A(u))
-A(u) = 1 + alpha * R + beta * H + gamma * P + delta * K</code></pre>
+          <div class="formula-block" role="img" aria-label="Folgenrisiko-Index Basis von u ist 100 mal Maximum aus 0 und negativem FinalScore von u geteilt durch 3. Folgenrisiko-Index von u ist Minimum aus 100 und Folgenrisiko-Index Basis von u mal A von u. A von u ist 1 plus alpha R plus beta H plus gamma P plus delta K.">
+            <math display="block">
+              <mrow>
+                <msub><mi>FRI</mi><mi>basis</mi></msub><mo>(</mo><mi>u</mi><mo>)</mo><mo>=</mo><mn>100</mn><mo>&middot;</mo><mfrac><mrow><mi>max</mi><mo>(</mo><mn>0</mn><mo>,</mo><mo>-</mo><mi>FS</mi><mo>(</mo><mi>u</mi><mo>)</mo><mo>)</mo></mrow><mn>3</mn></mfrac>
+              </mrow>
+            </math>
+            <math display="block">
+              <mrow>
+                <mi>FRI</mi><mo>(</mo><mi>u</mi><mo>)</mo><mo>=</mo><mi>min</mi><mo>(</mo><mn>100</mn><mo>,</mo><msub><mi>FRI</mi><mi>basis</mi></msub><mo>(</mo><mi>u</mi><mo>)</mo><mo>&middot;</mo><mi>A</mi><mo>(</mo><mi>u</mi><mo>)</mo><mo>)</mo>
+              </mrow>
+            </math>
+            <math display="block">
+              <mrow>
+                <mi>A</mi><mo>(</mo><mi>u</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mi>&alpha;</mi><mi>R</mi><mo>+</mo><mi>&beta;</mi><mi>H</mi><mo>+</mo><mi>&gamma;</mi><mi>P</mi><mo>+</mo><mi>&delta;</mi><mi>K</mi>
+              </mrow>
+            </math>
+          </div>
           <p>R steht für Reichweite, H für Wiederholungsrate, P für Plattformverstärkung und K für Krisen- oder Vulnerabilitätskontext. Eine Bürgerkriegsaussage in einem kleinen Raum ohne weitere Verbreitung hat ein anderes Folgenrisiko als dieselbe Aussage als viraler Clip, eingebettet in ein bestehendes Sündenbocknarrativ, kurz vor einer Wahl, in einer polarisierten Region.</p>
 
           <h2>Warum der Folgencheck nicht ideologisch sein darf</h2>
@@ -267,9 +334,17 @@ A(u) = 1 + alpha * R + beta * H + gamma * P + delta * K</code></pre>
             <li><strong>Democracy-Score:</strong> Prüft, ob die Aussage freie Meinungsbildung stärkt oder schwächt - durch Faktennähe, Würde, Vertrauen und Emotion.</li>
             <li><strong>Folgencheck:</strong> Prüft, welche Wirkungspfade eine Aussage öffnet - durch Resonanz, Wiederholung, Reichweite, Zielgruppenmarkierung, Kontext, Plattformlogik und mögliche Zustandsveränderungen.</li>
           </ul>
-          <pre><code>Faktencheck = Wahrheit(Aussage)
-Democracy-Score = Qualität(Aussage, demokratische Meinungsbildung)
-Folgencheck = Risiko(Wirkpfad * Resonanz * Wiederholung * Reichweite * Kontext)</code></pre>
+          <div class="formula-block" role="img" aria-label="Faktencheck gleich Wahrheit der Aussage. Democracy-Score gleich Qualitaet der Aussage fuer demokratische Meinungsbildung. Folgencheck gleich Risiko aus Wirkpfad mal Resonanz mal Wiederholung mal Reichweite mal Kontext.">
+            <math display="block">
+              <mrow><mi>Faktencheck</mi><mo>=</mo><mi>Wahrheit</mi><mo>(</mo><mi>Aussage</mi><mo>)</mo></mrow>
+            </math>
+            <math display="block">
+              <mrow><mi>Democracy-Score</mi><mo>=</mo><mi>Qualitaet</mi><mo>(</mo><mi>Aussage</mi><mo>,</mo><mtext> demokratische Meinungsbildung</mtext><mo>)</mo></mrow>
+            </math>
+            <math display="block">
+              <mrow><mi>Folgencheck</mi><mo>=</mo><mi>Risiko</mi><mo>(</mo><mi>Wirkpfad</mi><mo>&middot;</mo><mi>Resonanz</mi><mo>&middot;</mo><mi>Wiederholung</mi><mo>&middot;</mo><mi>Reichweite</mi><mo>&middot;</mo><mi>Kontext</mi><mo>)</mo></mrow>
+            </math>
+          </div>
           <p>Diese drei Ebenen widersprechen sich nicht. Sie gehören zusammen.</p>
 
           <h2>Warum der Folgencheck beim AfD-Programm wichtiger ist als der Faktencheck</h2>
