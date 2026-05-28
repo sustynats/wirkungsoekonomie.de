@@ -121,6 +121,7 @@ function isSearchNoiseEntry(entry) {
   const section = publicSearchText(String(entry.section || "")).trim().toLowerCase();
   const body = publicSearchText(String(entry.body || "")).toLowerCase();
   const noiseTitles = new Set(["kontakt", "verstehen", "referenzrahmen", "kontext-werkzeuge", "methoden & werkzeuge", "erleben & lernen", "werkstatt"]);
+  if (/^\/assets\/data\//i.test(route)) return true;
   if (/^\/werkstatt(\/|$)/i.test(route)) return true;
   if (noiseTitles.has(title) && body.length < 900) return true;
   if (/footer navigation|hauptnavigation|site-nav|footer-nav/i.test(body)) return true;
@@ -253,7 +254,7 @@ function curatedIaEntries() {
     {
       id: "woek-curated-fuer-wen",
       title: "Für wen? Zielgruppen der Wirkungsökonomie",
-      description: "Einstiege für Bürger:innen, Journalismus, Unternehmen, Politik, Parteien, Verwaltung, Kommunen, Investor:innen, Wissenschaft und Akademie.",
+      description: "Einstiege für Bürger:innen, Journalismus, Unternehmen, Landwirtschaft, Politik, Parteien, Verwaltung, Kommunen, Investor:innen, Wissenschaft und Akademie.",
       url: "/fuer/",
       section: "Zielgruppen",
       type: "Zielgruppen-Hub",
@@ -261,10 +262,26 @@ function curatedIaEntries() {
       impactSpaces: ["Mensch", "Planet", "Demokratie"],
       standards: ["SDG", "SDG+"],
       instruments: ["WÖk-Kompass", "WÖk-Scanner"],
-      tags: ["Zielgruppen", "Bürger:innen", "Journalismus", "Unternehmen", "Politik", "Parteien", "Kommunen", "Investor:innen", "Akademie"],
-      aliases: ["Für wen", "Bürger", "Journalisten", "Unternehmer", "Politiker", "Parteien"],
+      tags: ["Zielgruppen", "Bürger:innen", "Journalismus", "Unternehmen", "Landwirtschaft", "Ernährung", "Politik", "Parteien", "Kommunen", "Investor:innen", "Akademie"],
+      aliases: ["Für wen", "Bürger", "Journalisten", "Unternehmer", "Landwirtschaft", "Agrar", "Bauernhof", "Landwirt", "Politiker", "Parteien"],
       body: "Der Zielgruppen-Hub übersetzt die Wirkungsökonomie in konkrete Perspektiven und führt zu passenden Seiten, Tools, Begriffen und Wirkungsfeldern.",
       priority: 145,
+    },
+    {
+      id: "woek-curated-landwirtschaft",
+      title: "Landwirtschaft & Ernährung",
+      description: "Boden, Wasser, Klima, Biodiversität, Tierwohl, Einkommen und regionale Versorgung als Wirkung sichtbar machen.",
+      url: "/fuer/landwirtschaft/",
+      section: "Zielgruppen",
+      type: "Zielgruppenseite",
+      format: "Orientierungsseite",
+      impactSpaces: ["Mensch", "Planet"],
+      standards: ["GAP", "CAP", "SDG", "SDG+"],
+      instruments: ["Wirkungssteuer", "Wirkungsfonds", "Scorecard", "WÖk-ID", "Digitaler Produktpass"],
+      tags: ["Landwirtschaft", "Agrar", "Bauernhof", "Landwirt", "Ernährung", "Tierwohl", "Boden", "Humus", "Wasserstress", "Pestizide", "Biodiversität", "regenerative Landwirtschaft", "regionale Ernährung", "Agrarförderung", "Lebensmittelpreise"],
+      aliases: ["Landwirtschaft Wirkung", "Wirkungsfonds Landwirtschaft", "Bio-Apfel", "Chile-Apfel", "Kartoffel", "Ei", "GAP", "CAP"],
+      body: "Landwirtschaft wird als Wirkungsinfrastruktur beschrieben: Bodenaufbau, Wasserschutz, Biodiversität, Tierwohl, faire Arbeit, Ernährungssicherheit und regionale Resilienz werden sichtbar und in Preise, Förderung, Kapital und Entscheidungen zurückgeführt.",
+      priority: 170,
     },
     {
       id: "woek-curated-demokratische-anschlussfaehigkeit",

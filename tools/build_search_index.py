@@ -16,6 +16,10 @@ EXCLUDED_DIRS = {
     "woek-akademie-app",
 }
 
+EXCLUDED_PREFIXES = {
+    "assets/data/",
+}
+
 EXCLUDED_FILES = {
     "404.html",
 }
@@ -150,6 +154,9 @@ def tags_from_path(rel, source):
 def generated_entry(path):
     rel = path.relative_to(ROOT)
     source = path.read_text(encoding="utf-8", errors="ignore")
+    rel_posix = rel.as_posix()
+    if any(rel_posix.startswith(prefix) for prefix in EXCLUDED_PREFIXES):
+        return None
     if rel.name in EXCLUDED_FILES or is_noindex_redirect(source):
         return None
 

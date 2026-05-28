@@ -4,11 +4,11 @@ Stand: 2026-05-28
 
 ## Zusammenfassung
 
-- PDFs in `assets/pdf/`: 18
-- Dokumente in der Registry: 35
-- Aktuelle Dokumente: 35
+- PDFs in `assets/pdf/`: 19
+- Dokumente in der Registry: 36
+- Aktuelle Dokumente: 36
 - Archivdokumente: 0
-- Dokumente mit Onlinefassung: 35
+- Dokumente mit Onlinefassung: 36
 - Aktuelle PDF-only Dokumente: 0
 - Rang- und Paketdateien in `assets/downloads/`: 365
 
@@ -16,7 +16,7 @@ Stand: 2026-05-28
 
 | Umfang | Dokumente |
 | --- | ---: |
-| Mittlere bis längere Ausarbeitung | 12 |
+| Mittlere bis längere Ausarbeitung | 13 |
 | Ausführlicher Entwurf | 2 |
 | Umfangreiche Langfassung | 4 |
 | Register / Nachschlagewerk | 1 |
@@ -67,6 +67,7 @@ Die Registry bündelt die öffentlichen Kernmaterialien aus `assets/pdf/`. Rangp
 | social-taxonomy-wirkungsoekonomie | Social Taxonomy | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
 | wirkungsraeume-gestalten-hosting-v1-0 | Wirkungsräume gestalten | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
 | apfel-t-shirt-wirkung-im-preis | Apfel & T-Shirt: Wirkung im Preis | Umfangreiche Langfassung | ja | ja | ja | 2 | ok |
+| landwirtschaft-wirkungsoekonomie | Landwirtschaft als Wirkungsfeld und Zielgruppe der Wirkungsökonomie | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
 
 ## PDFs ohne Registry-Eintrag
 

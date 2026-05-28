@@ -642,6 +642,7 @@ function pageBody() {
           <article><h3>Apfel</h3><p>Ein einfaches Alltagsprodukt. Es zeigt Landwirtschaft, Wasser, Transport, Biodiversität und Gesundheit in einer gut verständlichen Preislogik.</p></article>
           <article><h3>T-Shirt</h3><p>Eine komplexere internationale Lieferkette. Rohstoff, Chemie, Arbeit, Wasser, Transport, Nutzung und Kreislauf zeigen die Vorsteuerlogik deutlicher.</p></article>
         </div>
+        <p class="impact-quote-line"><a class="text-link" href="../../fuer/landwirtschaft/">Für Landwirtschaft vertiefen:</a> Boden, Wasser, Tierwohl, regionale Versorgung, Wirkungsfonds und Agrarförderung werden auf der Zielgruppenseite zusammengeführt.</p>
       </section>
       <section class="section section-muted" aria-labelledby="limits-title">
         <div class="section-header">

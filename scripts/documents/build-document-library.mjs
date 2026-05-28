@@ -648,7 +648,7 @@ function buildDownloadsPage() {
             <a class="library-overview-card" href="/fuer/">
               <span>Perspektiven</span>
               <strong>Für wen?</strong>
-              <em>Zielgruppeneinstiege für Bürger:innen, Journalismus, Unternehmen, Politik, Kommunen, Investor:innen und Akademie.</em>
+              <em>Zielgruppeneinstiege für Bürger:innen, Journalismus, Unternehmen, Landwirtschaft, Politik, Kommunen, Investor:innen und Akademie.</em>
             </a>
             <a class="library-overview-card" href="/erleben.html">
               <span>Interaktiv</span>

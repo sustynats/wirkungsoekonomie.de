@@ -32,6 +32,7 @@ const routeDefaults = new Map([
   ["/akademie.html", { questionsInclude: ["akademie-kostenlos", "zertifikate", "idgs-wirkungskompetenz"], questionsMax: 4 }],
   ["/erleben.html", { questionsInclude: ["tool-demo", "wirkung-messen", "social-credit"], questionsMax: 4 }],
   ["/erleben/", { questionsInclude: ["tool-demo", "wirkung-messen", "social-credit"], questionsMax: 4 }],
+  ["/fuer/landwirtschaft/", { questionsInclude: ["landwirtschaft-essen-teurer", "landwirtschaft-buerokratie", "landwirtschaft-wer-entscheidet", "landwirtschaft-konventionell-bestraft", "landwirtschaft-bio-automatisch-gut", "landwirtschaft-importe", "planwirtschaft"], questionsMax: 7 }],
   ["/blog.html", { questionsInclude: ["faktencheck-folgencheck", "zensur", "wirkung-messen"], questionsMax: 3 }],
   ["/werkzeuge/impact-controlling/", { questionsInclude: ["tool-demo", "wirkung-messen", "esg-unterschied", "greenwashing"], questionsMax: 5 }],
 ]);

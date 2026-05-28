@@ -8,6 +8,7 @@
     "Markt, Freiheit und Planwirtschaft",
     "Wirkungsmessung, Daten und Unsicherheit",
     "Steuern, Preise und Wirtschaft",
+    "Landwirtschaft und Ernährung",
     "Arbeit, Einkommen und Automatisierung",
     "Demokratie, Datenschutz und Missbrauchsschutz",
     "Faktencheck, Folgencheck und Medienwirkung",
@@ -8740,6 +8741,890 @@
         "Steuerberatung",
         "amtlich",
         "Zertifizierung"
+      ],
+      "schemaEligible": true,
+      "showAs": [
+        "faq-hub",
+        "context-block"
+      ],
+      "updatedAt": "2026-05-28"
+    },
+    {
+      "id": "landwirtschaft-essen-teurer",
+      "category": "Landwirtschaft und Ernährung",
+      "question": "Wird dadurch Essen teurer?",
+      "shortAnswer": "Nicht pauschal. Ziel ist, ausgelagerte Schäden sichtbar zu machen und positive Wirkung zu entlasten.",
+      "longAnswer": "Lebensmittel können heute billig wirken, weil Wasserstress, Bodenschäden, Gesundheitsfolgen, Tierwohlkosten oder Klimarisiken nicht vollständig im Preis erscheinen. Die Wirkungsökonomie will diesen versteckten Preisvorteil abbauen und zugleich positive Wirkung, regionale Resilienz und vermiedene Folgekosten wirtschaftlich anerkennen. Sozialer Ausgleich, Übergänge und Grundversorgung müssen dabei mitgedacht werden.",
+      "whyItMatters": "Lebensmittelpreise sind sozial sensibel. Eine Wirkungslogik darf Ernährungssicherheit nicht gefährden.",
+      "limits": "Konkrete Sätze, Boni und soziale Ausgleichsmechanismen wären politische Ausgestaltungsfragen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Landwirtschaft & Ernährung",
+            "url": "/fuer/landwirtschaft/"
+          },
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Apfel & T-Shirt",
+            "url": "/erleben/wirkungssteuer-beispiele/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "Dossier Landwirtschaft",
+            "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 87,
+      "showOnPages": [
+        "/fuer/landwirtschaft/"
+      ],
+      "keywords": [
+        "Essen teurer",
+        "Lebensmittelpreise",
+        "Ernährung",
+        "Kaufkraft"
+      ],
+      "status": "published",
+      "misconceptions": [],
+      "relatedTerms": [
+        {
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        }
+      ],
+      "relatedPages": [
+        {
+          "label": "Landwirtschaft & Ernährung",
+          "url": "/fuer/landwirtschaft/"
+        },
+        {
+          "label": "Produkte & Konsum",
+          "url": "/wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Apfel & T-Shirt",
+          "url": "/erleben/wirkungssteuer-beispiele/"
+        }
+      ],
+      "relatedTools": [],
+      "relatedDocuments": [
+        {
+          "label": "Dossier Landwirtschaft",
+          "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+        }
+      ],
+      "relatedQuestions": [
+        "Wird dadurch alles teurer?",
+        "Wie schützt die WÖk Konsument:innen mit wenig Geld?"
+      ],
+      "topics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "produkte"
+      ],
+      "terms": [
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "lebensmittelpreise",
+        "landwirtschaft"
+      ],
+      "audiences": [
+        "landwirtschaft",
+        "politik",
+        "verwaltung",
+        "verbraucherinnen",
+        "unternehmen"
+      ],
+      "pageTypes": [
+        "zielgruppe",
+        "wirkungsfeld",
+        "bibliothek",
+        "journal"
+      ],
+      "includeRoutes": [
+        "/fuer/landwirtschaft/"
+      ],
+      "excludeRoutes": [],
+      "journalTopics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "agrarfoerderung",
+        "tierwohl"
+      ],
+      "triggerWords": [
+        "Essen teurer",
+        "Lebensmittelpreise",
+        "Ernährung",
+        "Kaufkraft"
+      ],
+      "schemaEligible": true,
+      "showAs": [
+        "faq-hub",
+        "context-block"
+      ],
+      "updatedAt": "2026-05-28"
+    },
+    {
+      "id": "landwirtschaft-buerokratie",
+      "category": "Landwirtschaft und Ernährung",
+      "question": "Wird Landwirtschaft dadurch noch bürokratischer?",
+      "shortAnswer": "Das darf nicht passieren. Gute Umsetzung muss vorhandene Daten nutzen, Standards vereinfachen und kleine Betriebe entlasten.",
+      "longAnswer": "Die WÖk wäre schlecht umgesetzt, wenn sie nur neue Formulare erzeugt. Sinnvoll sind einfache Scorecards, Branchenwerte, digitale Produktpässe, Genossenschafts- oder Beratungsstrukturen, Übergangsfristen und risikobasierte Prüfung. Das Ziel ist weniger Reparaturbürokratie durch bessere Rückkopplung, nicht mehr Papierlast.",
+      "whyItMatters": "Betriebe stehen bereits unter hohem Nachweis- und Förderdruck.",
+      "limits": "Ob Bürokratie sinkt, hängt an der konkreten technischen und rechtlichen Umsetzung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Landwirtschaft & Ernährung",
+            "url": "/fuer/landwirtschaft/"
+          },
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Apfel & T-Shirt",
+            "url": "/erleben/wirkungssteuer-beispiele/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "Dossier Landwirtschaft",
+            "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 88,
+      "showOnPages": [
+        "/fuer/landwirtschaft/"
+      ],
+      "keywords": [
+        "Bürokratie",
+        "Papierlast",
+        "Nachweise",
+        "Agrarförderung"
+      ],
+      "status": "published",
+      "misconceptions": [],
+      "relatedTerms": [
+        {
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        }
+      ],
+      "relatedPages": [
+        {
+          "label": "Landwirtschaft & Ernährung",
+          "url": "/fuer/landwirtschaft/"
+        },
+        {
+          "label": "Produkte & Konsum",
+          "url": "/wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Apfel & T-Shirt",
+          "url": "/erleben/wirkungssteuer-beispiele/"
+        }
+      ],
+      "relatedTools": [],
+      "relatedDocuments": [
+        {
+          "label": "Dossier Landwirtschaft",
+          "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+        }
+      ],
+      "relatedQuestions": [
+        "Was passiert mit kleinen Unternehmen?",
+        "Was passiert, wenn Daten fehlen?"
+      ],
+      "topics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "produkte"
+      ],
+      "terms": [
+        "datenqualitaet",
+        "digitaler-produktpass",
+        "scorecard",
+        "agrarfoerderung"
+      ],
+      "audiences": [
+        "landwirtschaft",
+        "politik",
+        "verwaltung",
+        "verbraucherinnen",
+        "unternehmen"
+      ],
+      "pageTypes": [
+        "zielgruppe",
+        "wirkungsfeld",
+        "bibliothek",
+        "journal"
+      ],
+      "includeRoutes": [
+        "/fuer/landwirtschaft/"
+      ],
+      "excludeRoutes": [],
+      "journalTopics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "agrarfoerderung",
+        "tierwohl"
+      ],
+      "triggerWords": [
+        "Bürokratie",
+        "Papierlast",
+        "Nachweise",
+        "Agrarförderung"
+      ],
+      "schemaEligible": true,
+      "showAs": [
+        "faq-hub",
+        "context-block"
+      ],
+      "updatedAt": "2026-05-28"
+    },
+    {
+      "id": "landwirtschaft-wer-entscheidet",
+      "category": "Landwirtschaft und Ernährung",
+      "question": "Wer entscheidet, was gute Landwirtschaft ist?",
+      "shortAnswer": "Nicht einzelne Personen oder Behörden nach Bauchgefühl, sondern transparente Kriterien, Datenqualität, Prüfung und demokratisch beschlossene Verfahren.",
+      "longAnswer": "Im Modell werden Wirkungsfelder wie Boden, Wasser, Klima, Biodiversität, Tierwohl, Arbeit und regionale Versorgung über Indikatoren beschrieben. Daraus entstehen Scorecards und Wirkungsklassen. Reale Regeln müssten öffentlich, fachlich überprüfbar, widerspruchsfähig und demokratisch legitimiert sein.",
+      "whyItMatters": "Die Frage schützt vor Willkür, Labelpolitik und Misstrauen gegenüber Bewertungssystemen.",
+      "limits": "Welche Indikatoren branchenspezifisch gelten, muss mit Landwirtschaft, Wissenschaft, Verwaltung und Zivilgesellschaft pilotiert werden.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Landwirtschaft & Ernährung",
+            "url": "/fuer/landwirtschaft/"
+          },
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Apfel & T-Shirt",
+            "url": "/erleben/wirkungssteuer-beispiele/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "Dossier Landwirtschaft",
+            "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 89,
+      "showOnPages": [
+        "/fuer/landwirtschaft/"
+      ],
+      "keywords": [
+        "wer entscheidet",
+        "gute Landwirtschaft",
+        "Bewertung",
+        "Kriterien"
+      ],
+      "status": "published",
+      "misconceptions": [],
+      "relatedTerms": [
+        {
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        }
+      ],
+      "relatedPages": [
+        {
+          "label": "Landwirtschaft & Ernährung",
+          "url": "/fuer/landwirtschaft/"
+        },
+        {
+          "label": "Produkte & Konsum",
+          "url": "/wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Apfel & T-Shirt",
+          "url": "/erleben/wirkungssteuer-beispiele/"
+        }
+      ],
+      "relatedTools": [],
+      "relatedDocuments": [
+        {
+          "label": "Dossier Landwirtschaft",
+          "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+        }
+      ],
+      "relatedQuestions": [
+        "Wer entscheidet die Steuerklasse?",
+        "Was ist ein Wirkungsrat?"
+      ],
+      "topics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "produkte"
+      ],
+      "terms": [
+        "woek-id",
+        "scorecard",
+        "wirkungsrat",
+        "wirkungsdaten"
+      ],
+      "audiences": [
+        "landwirtschaft",
+        "politik",
+        "verwaltung",
+        "verbraucherinnen",
+        "unternehmen"
+      ],
+      "pageTypes": [
+        "zielgruppe",
+        "wirkungsfeld",
+        "bibliothek",
+        "journal"
+      ],
+      "includeRoutes": [
+        "/fuer/landwirtschaft/"
+      ],
+      "excludeRoutes": [],
+      "journalTopics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "agrarfoerderung",
+        "tierwohl"
+      ],
+      "triggerWords": [
+        "wer entscheidet",
+        "gute Landwirtschaft",
+        "Bewertung",
+        "Kriterien"
+      ],
+      "schemaEligible": true,
+      "showAs": [
+        "faq-hub",
+        "context-block"
+      ],
+      "updatedAt": "2026-05-28"
+    },
+    {
+      "id": "landwirtschaft-konventionell-bestraft",
+      "category": "Landwirtschaft und Ernährung",
+      "question": "Wird konventionelle Landwirtschaft bestraft?",
+      "shortAnswer": "Nein. Die WÖk bewertet Wirkung und Übergangspfade, nicht Etiketten oder Betriebsidentitäten.",
+      "longAnswer": "Konventionelle Betriebe können positive Wirkung erzeugen, etwa durch Humusaufbau, Wasserschutz, präzisen Mitteleinsatz, Tierwohlumbau, regionale Versorgung oder faire Arbeit. Bio ist nicht automatisch perfekt, konventionell nicht automatisch schlecht. Entscheidend sind messbare Wirkung, Datenqualität und die Frage, ob Schäden sinken.",
+      "whyItMatters": "Die WÖk darf keine Lagerlogik Bio gegen konventionell reproduzieren.",
+      "limits": "Übergangsregeln müssen Investitionen, Standortbedingungen und Betriebsgrößen berücksichtigen.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Landwirtschaft & Ernährung",
+            "url": "/fuer/landwirtschaft/"
+          },
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Apfel & T-Shirt",
+            "url": "/erleben/wirkungssteuer-beispiele/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "Dossier Landwirtschaft",
+            "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 90,
+      "showOnPages": [
+        "/fuer/landwirtschaft/"
+      ],
+      "keywords": [
+        "konventionell",
+        "bestraft",
+        "Bio",
+        "Übergang"
+      ],
+      "status": "published",
+      "misconceptions": [],
+      "relatedTerms": [
+        {
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        }
+      ],
+      "relatedPages": [
+        {
+          "label": "Landwirtschaft & Ernährung",
+          "url": "/fuer/landwirtschaft/"
+        },
+        {
+          "label": "Produkte & Konsum",
+          "url": "/wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Apfel & T-Shirt",
+          "url": "/erleben/wirkungssteuer-beispiele/"
+        }
+      ],
+      "relatedTools": [],
+      "relatedDocuments": [
+        {
+          "label": "Dossier Landwirtschaft",
+          "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+        }
+      ],
+      "relatedQuestions": [
+        "Ist Bio automatisch gut?",
+        "Was passiert mit kleinen Unternehmen?"
+      ],
+      "topics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "produkte"
+      ],
+      "terms": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "scorecard",
+        "nichtkompensationsprinzip"
+      ],
+      "audiences": [
+        "landwirtschaft",
+        "politik",
+        "verwaltung",
+        "verbraucherinnen",
+        "unternehmen"
+      ],
+      "pageTypes": [
+        "zielgruppe",
+        "wirkungsfeld",
+        "bibliothek",
+        "journal"
+      ],
+      "includeRoutes": [
+        "/fuer/landwirtschaft/"
+      ],
+      "excludeRoutes": [],
+      "journalTopics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "agrarfoerderung",
+        "tierwohl"
+      ],
+      "triggerWords": [
+        "konventionell",
+        "bestraft",
+        "Bio",
+        "Übergang"
+      ],
+      "schemaEligible": true,
+      "showAs": [
+        "faq-hub",
+        "context-block"
+      ],
+      "updatedAt": "2026-05-28"
+    },
+    {
+      "id": "landwirtschaft-bio-automatisch-gut",
+      "category": "Landwirtschaft und Ernährung",
+      "question": "Ist Bio automatisch gut?",
+      "shortAnswer": "Nein. Bio kann viele positive Wirkungen haben, ersetzt aber keine vollständige Wirkungsbewertung.",
+      "longAnswer": "Bio-Standards sind ein wichtiger Hinweis, aber Wirkung hängt auch von Wasserstress, Transport, Bodenaufbau, Biodiversität, Tierwohl, Energie, Arbeit, Datenqualität und regionaler Resilienz ab. Die WÖk betrachtet deshalb das konkrete Produkt, den Betrieb und die Lieferkette.",
+      "whyItMatters": "Sonst würde ein Label die Scorecard ersetzen und neue blinde Flecken erzeugen.",
+      "limits": "Für einfache Verbraucherinformation braucht es trotzdem verständliche Klassen, keine Datenüberforderung.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Landwirtschaft & Ernährung",
+            "url": "/fuer/landwirtschaft/"
+          },
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Apfel & T-Shirt",
+            "url": "/erleben/wirkungssteuer-beispiele/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "Dossier Landwirtschaft",
+            "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 91,
+      "showOnPages": [
+        "/fuer/landwirtschaft/"
+      ],
+      "keywords": [
+        "Bio automatisch gut",
+        "Bio",
+        "Label",
+        "Siegel"
+      ],
+      "status": "published",
+      "misconceptions": [],
+      "relatedTerms": [
+        {
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        }
+      ],
+      "relatedPages": [
+        {
+          "label": "Landwirtschaft & Ernährung",
+          "url": "/fuer/landwirtschaft/"
+        },
+        {
+          "label": "Produkte & Konsum",
+          "url": "/wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Apfel & T-Shirt",
+          "url": "/erleben/wirkungssteuer-beispiele/"
+        }
+      ],
+      "relatedTools": [],
+      "relatedDocuments": [
+        {
+          "label": "Dossier Landwirtschaft",
+          "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+        }
+      ],
+      "relatedQuestions": [
+        "Wie verhindert man Greenwashing?",
+        "Was passiert, wenn Daten fehlen?"
+      ],
+      "topics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "produkte"
+      ],
+      "terms": [
+        "label-siegel",
+        "scorecard",
+        "produktwirkung",
+        "datenqualitaet"
+      ],
+      "audiences": [
+        "landwirtschaft",
+        "politik",
+        "verwaltung",
+        "verbraucherinnen",
+        "unternehmen"
+      ],
+      "pageTypes": [
+        "zielgruppe",
+        "wirkungsfeld",
+        "bibliothek",
+        "journal"
+      ],
+      "includeRoutes": [
+        "/fuer/landwirtschaft/"
+      ],
+      "excludeRoutes": [],
+      "journalTopics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "agrarfoerderung",
+        "tierwohl"
+      ],
+      "triggerWords": [
+        "Bio automatisch gut",
+        "Bio",
+        "Label",
+        "Siegel"
+      ],
+      "schemaEligible": true,
+      "showAs": [
+        "faq-hub",
+        "context-block"
+      ],
+      "updatedAt": "2026-05-28"
+    },
+    {
+      "id": "landwirtschaft-importe",
+      "category": "Landwirtschaft und Ernährung",
+      "question": "Was ist mit Importen?",
+      "shortAnswer": "Importe müssen vergleichbar bewertet werden: mit Herkunft, Datenqualität, Transport, Wasserstress, Arbeitsbedingungen und konservativen Annahmen bei Lücken.",
+      "longAnswer": "Die WÖk richtet sich nicht gegen Handel. Sie richtet sich gegen unvollständige Preise. Importierte Produkte können positiv wirken, wenn Daten, Standards und Lieferketten stimmen. Problematisch wird es, wenn fehlende Daten, Wasserstress, schlechte Arbeit oder hohe Folgekosten den Preis künstlich niedrig halten.",
+      "whyItMatters": "Landwirtschaftliche Märkte sind international. Eine rein nationale Logik würde ausweichen und Betriebe unfair belasten.",
+      "limits": "Reale Umsetzung braucht Handelsrecht, Zollpunkte, Datenräume und faire Übergänge.",
+      "related": {
+        "terms": [
+          {
+            "label": "Wirkungssteuer",
+            "url": "/begriffe/wirkungssteuer/"
+          },
+          {
+            "label": "Scorecard",
+            "url": "/begriffe/scorecard/"
+          },
+          {
+            "label": "Reverse Merit Order",
+            "url": "/begriffe/reverse-merit-order/"
+          }
+        ],
+        "pages": [
+          {
+            "label": "Landwirtschaft & Ernährung",
+            "url": "/fuer/landwirtschaft/"
+          },
+          {
+            "label": "Produkte & Konsum",
+            "url": "/wirkungsfelder/produkte-konsum/"
+          },
+          {
+            "label": "Apfel & T-Shirt",
+            "url": "/erleben/wirkungssteuer-beispiele/"
+          }
+        ],
+        "tools": [],
+        "documents": [
+          {
+            "label": "Dossier Landwirtschaft",
+            "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+          }
+        ]
+      },
+      "priority": 92,
+      "showOnPages": [
+        "/fuer/landwirtschaft/"
+      ],
+      "keywords": [
+        "Importe",
+        "Chile-Apfel",
+        "Kartoffel",
+        "Wasserstress",
+        "Herkunft"
+      ],
+      "status": "published",
+      "misconceptions": [],
+      "relatedTerms": [
+        {
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        }
+      ],
+      "relatedPages": [
+        {
+          "label": "Landwirtschaft & Ernährung",
+          "url": "/fuer/landwirtschaft/"
+        },
+        {
+          "label": "Produkte & Konsum",
+          "url": "/wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Apfel & T-Shirt",
+          "url": "/erleben/wirkungssteuer-beispiele/"
+        }
+      ],
+      "relatedTools": [],
+      "relatedDocuments": [
+        {
+          "label": "Dossier Landwirtschaft",
+          "url": "/bibliothek/landwirtschaft-wirkungsoekonomie/"
+        }
+      ],
+      "relatedQuestions": [
+        "Was passiert, wenn Daten fehlen?",
+        "Wer entscheidet die Steuerklasse?"
+      ],
+      "topics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "wirkungssteuer",
+        "wirkungsfonds",
+        "produkte"
+      ],
+      "terms": [
+        "digitaler-produktpass",
+        "lieferkettenwirkung",
+        "wasserstress",
+        "wirkungsdaten"
+      ],
+      "audiences": [
+        "landwirtschaft",
+        "politik",
+        "verwaltung",
+        "verbraucherinnen",
+        "unternehmen"
+      ],
+      "pageTypes": [
+        "zielgruppe",
+        "wirkungsfeld",
+        "bibliothek",
+        "journal"
+      ],
+      "includeRoutes": [
+        "/fuer/landwirtschaft/"
+      ],
+      "excludeRoutes": [],
+      "journalTopics": [
+        "landwirtschaft",
+        "ernaehrung",
+        "preise",
+        "agrarfoerderung",
+        "tierwohl"
+      ],
+      "triggerWords": [
+        "Importe",
+        "Chile-Apfel",
+        "Kartoffel",
+        "Wasserstress",
+        "Herkunft"
       ],
       "schemaEligible": true,
       "showAs": [

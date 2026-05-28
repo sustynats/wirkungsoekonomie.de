@@ -1161,6 +1161,7 @@ function productPortal() {
       </div>
       ${cardGrid(base, [
         { title: "Apfel & T-Shirt: Wirkung im Preis verstehen", text: "Zwei Beispiele zeigen, wie aus Lieferkettendaten eine Scorecard, daraus eine Steuerklasse und daraus ein Endpreis entsteht.", href: "erleben/wirkungssteuer-beispiele/", label: "Beispiele ansehen" },
+        { title: "Landwirtschaft & Ernährung", text: "Wie Boden, Wasser, Tierwohl, regionale Versorgung und Preise zusammenhängen - ohne Landwirtschaft als Problemsektor zu behandeln.", href: "fuer/landwirtschaft/", label: "Landwirtschaft ansehen" },
         { title: "Produktwirkungsrechner", text: "Bio-Apfel, Chile-Apfel, T-Shirt oder Polyamid auswählen, Scores prüfen und Steuerklasse simulieren.", href: "erleben/produktwirkungsrechner/", label: "Rechner öffnen" },
         { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Tool testen" },
         { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Beispiel ansehen" },

@@ -201,16 +201,20 @@ const termExampleBlocks = new Map([
   ["wirkungssteuer", {
     eyebrow: "Beispielrechnung",
     title: "Apfel & T-Shirt: Wirkung im Preis",
-    text: "Die Beispielseite zeigt Schritt für Schritt, wie aus Lieferkettendaten eine Scorecard, daraus eine Steuerklasse und daraus ein Endpreis entsteht.",
+    text: "Die Beispielseite zeigt Schritt für Schritt, wie aus Lieferkettendaten eine Scorecard, daraus eine Steuerklasse und daraus ein Endpreis entsteht. Landwirtschaft zeigt ergänzend, wie Apfel, Ei, Kartoffel, Boden, Wasser und Tierwohl in diese Preislogik gehören.",
     href: "../../erleben/wirkungssteuer-beispiele/",
     label: "Apfel & T-Shirt ansehen",
+    secondaryHref: "../../fuer/landwirtschaft/",
+    secondaryLabel: "Landwirtschaft vertiefen",
   }],
   ["reverse-merit-order", {
     eyebrow: "Praxisbeispiel",
     title: "Warum das schwächste Feld entscheidet",
-    text: "Am T-Shirt-Beispiel wird sichtbar, warum gute Einzelwerte schwere Arbeits-, Chemie- oder Wasserbelastungen nicht überdecken dürfen.",
+    text: "Am T-Shirt- und Landwirtschaftsbeispiel wird sichtbar, warum gute Einzelwerte schwere Arbeits-, Chemie-, Wasser-, Tierwohl- oder Bodenschäden nicht überdecken dürfen.",
     href: "../../erleben/wirkungssteuer-beispiele/#t-shirt",
     label: "Beispiel T-Shirt ansehen",
+    secondaryHref: "../../fuer/landwirtschaft/",
+    secondaryLabel: "Landwirtschaft vertiefen",
   }],
 ]);
 
@@ -221,7 +225,7 @@ function termExampleBlock(term) {
           <p class="section-eyebrow">${esc(block.eyebrow)}</p>
           <h2 id="example-${esc(term.slug)}">${esc(block.title)}</h2>
           <p>${esc(block.text)}</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="${esc(block.href)}">${esc(block.label)}</a></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="${esc(block.href)}">${esc(block.label)}</a>${block.secondaryHref ? `<a class="btn btn-secondary" href="${esc(block.secondaryHref)}">${esc(block.secondaryLabel)}</a>` : ""}</div>
         </section>`;
 }
 
