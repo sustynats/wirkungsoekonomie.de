@@ -7,8 +7,10 @@ const htmlTargets = [
   "akademie.html",
   "anwendungen.html",
   "assets/downloads",
+  "assets/data/document-online",
   "audio",
   "begriffe",
+  "bibliothek",
   "blog",
   "blog.html",
   "buch.html",
@@ -109,6 +111,8 @@ function sanitizeText(value) {
     .replace(/Konzept-Download/gi, "Konzept als PDF")
     .replace(/Detail-Download/gi, "Konzept-PDF")
     .replace(/Dossier-Download/gi, "Dossier als PDF")
+    .replace(/DOCX\/PDF herunterladen/gi, "PDF herunterladen")
+    .replace(/Word-Dossier/gi, "Dossier")
     .replace(/Weiterarbeit/gi, "Vertiefung")
     .replace(/Herunterladen(?=<\/a>)/gi, "PDF herunterladen")
     .replace(/PDF\s+PDF herunterladen/gi, "PDF herunterladen")
