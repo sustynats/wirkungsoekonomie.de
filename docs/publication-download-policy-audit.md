@@ -1,6 +1,6 @@
 # Publication Download Policy Audit
 
-Stand: 2026-05-27T18:34:29.225Z
+Stand: 2026-05-28T06:12:48.700Z
 
 ## Regel
 
@@ -11,7 +11,7 @@ Stand: 2026-05-27T18:34:29.225Z
 
 ## Zusammenfassung
 
-- Öffentliche Registry-Dokumente: 34
+- Öffentliche Registry-Dokumente: 35
 - Öffentliche DOCX-/Word-Assets: 0
 - Findings: 0
 - Fehler: 0

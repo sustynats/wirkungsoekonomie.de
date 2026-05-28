@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
-const CSS_VERSION = "20260525-result-interpretation";
+const CSS_VERSION = "20260528-product-table-mobile";
 const JS_VERSION = "20260525-sprint-2";
 
 const sources = {
@@ -646,7 +646,10 @@ function mdToHtml(markdown, options = {}) {
     if (header) {
       html.push(`<thead><tr>${header.map((cell) => `<th>${inlineMd(cell)}</th>`).join("")}</tr></thead>`);
     }
-    html.push(`<tbody>${bodyRows.map((row) => `<tr>${row.map((cell) => `<td>${inlineMd(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+    html.push(`<tbody>${bodyRows.map((row) => `<tr>${row.map((cell, index) => {
+      const label = header?.[index] ? ` data-label="${escapeHtml(header[index])}"` : "";
+      return `<td${label}>${inlineMd(cell)}</td>`;
+    }).join("")}</tr>`).join("")}</tbody></table></div>`);
     table = [];
   };
   const flushAll = () => {
@@ -662,6 +665,11 @@ function mdToHtml(markdown, options = {}) {
       table.push(line);
       continue;
     }
+
+    if (!line.trim() && table.length) {
+      continue;
+    }
+
     flushTable();
 
     const heading = line.match(/^(#{2,4})\s+(.+)$/);
@@ -803,7 +811,10 @@ function statusMeta(items = []) {
 function dataTable(headers, rows) {
   return `<div class="table-wrap"><table class="data-table">
     <thead><tr>${headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}</tr></thead>
-    <tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${inlineMd(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+    <tbody>${rows.map((row) => `<tr>${row.map((cell, index) => {
+      const label = headers[index] ? ` data-label="${escapeHtml(headers[index])}"` : "";
+      return `<td${label}>${inlineMd(cell)}</td>`;
+    }).join("")}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
@@ -1149,6 +1160,7 @@ function productPortal() {
         <p>Vorhandene Demos werden kontextbezogen verlinkt. Sie sind modellhafte Demonstrationen, keine amtliche Einstufung.</p>
       </div>
       ${cardGrid(base, [
+        { title: "Apfel & T-Shirt: Wirkung im Preis verstehen", text: "Zwei Beispiele zeigen, wie aus Lieferkettendaten eine Scorecard, daraus eine Steuerklasse und daraus ein Endpreis entsteht.", href: "erleben/wirkungssteuer-beispiele/", label: "Beispiele ansehen" },
         { title: "Produktwirkungsrechner", text: "Bio-Apfel, Chile-Apfel, T-Shirt oder Polyamid auswählen, Scores prüfen und Steuerklasse simulieren.", href: "erleben/produktwirkungsrechner/", label: "Rechner öffnen" },
         { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Tool testen" },
         { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Beispiel ansehen" },
@@ -1180,6 +1192,7 @@ function productPortal() {
         <p>Die Materialien stehen am Ende, damit die Seite zuerst Orientierung gibt und dann in die fachliche Vertiefung führt.</p>
       </div>
       ${cardGrid(base, [
+        { title: "Apfel & T-Shirt: Wirkung im Preis", text: "Praxisbeispiel zu Lieferkette, Scorecard, Reverse Merit Order, Vorsteuerlogik und Endpreis.", href: "erleben/wirkungssteuer-beispiele/", label: "Beispiele ansehen" },
         { title: "Onlinefassung Produktbesteuerung", text: "Langfassung mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Onlinefassung lesen" },
         { title: "Apfelbeispiel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/", label: "Beispiel ansehen" },
         { title: "Lieferketten", text: "Vertiefung zu Vorleistungen, Lieferanten, Produktpässen und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten/", label: "Vertiefung lesen" },

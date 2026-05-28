@@ -2296,6 +2296,7 @@ const GenericToolPageExplanationLayer = (() => {
 
   function init() {
     if (!isToolLikePath() || !mainElement || document.querySelector(".tool-explanation-before")) return;
+    if (mainElement.matches("[data-no-generic-tool-explanation]") || document.querySelector("[data-no-generic-tool-explanation]")) return;
     const target = mainElement.querySelector("[data-scanner-mvp-root], [data-tool-root], .product-calculator-section, .tool-lab, .section");
     if (!target || target.dataset.genericToolExplanationReady === "true") return;
     const config = configForPage();

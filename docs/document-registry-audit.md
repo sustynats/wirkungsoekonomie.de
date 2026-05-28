@@ -1,14 +1,14 @@
 # Document Registry Audit
 
-Stand: 2026-05-27
+Stand: 2026-05-28
 
 ## Zusammenfassung
 
-- PDFs in `assets/pdf/`: 16
-- Dokumente in der Registry: 34
-- Aktuelle Dokumente: 34
+- PDFs in `assets/pdf/`: 18
+- Dokumente in der Registry: 35
+- Aktuelle Dokumente: 35
 - Archivdokumente: 0
-- Dokumente mit Onlinefassung: 34
+- Dokumente mit Onlinefassung: 35
 - Aktuelle PDF-only Dokumente: 0
 - Rang- und Paketdateien in `assets/downloads/`: 365
 
@@ -18,7 +18,7 @@ Stand: 2026-05-27
 | --- | ---: |
 | Mittlere bis längere Ausarbeitung | 12 |
 | Ausführlicher Entwurf | 2 |
-| Umfangreiche Langfassung | 3 |
+| Umfangreiche Langfassung | 4 |
 | Register / Nachschlagewerk | 1 |
 | Buch / Langform | 1 |
 | Kurzes Thesenpapier / Konzept | 5 |
@@ -65,7 +65,8 @@ Die Registry bündelt die öffentlichen Kernmaterialien aus `assets/pdf/`. Rangp
 | wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt | Risikomanagement, Resilienz und Finanzmarkt | Kurzes Thesenpapier / Konzept | ja | ja | ja | 2 | ok |
 | working-paper-wohnungsmarkt | Working Paper Wohnungsmarkt | Umfangreiche Langfassung | ja | ja | ja | 2 | ok |
 | social-taxonomy-wirkungsoekonomie | Social Taxonomy | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
-| wirkungsraeume-gestalten-hosting-v1-0 | Wirkungsräume gestalten | Mittlere bis längere Ausarbeitung | nein | ja | ja | 0 | fehlt PDF |
+| wirkungsraeume-gestalten-hosting-v1-0 | Wirkungsräume gestalten | Mittlere bis längere Ausarbeitung | ja | ja | ja | 2 | ok |
+| apfel-t-shirt-wirkung-im-preis | Apfel & T-Shirt: Wirkung im Preis | Umfangreiche Langfassung | ja | ja | ja | 2 | ok |
 
 ## PDFs ohne Registry-Eintrag
 
