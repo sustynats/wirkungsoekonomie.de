@@ -41,6 +41,13 @@ const categoryTags = {
   "Design, Geschäftsmodelle und Wertversprechen": ["Design", "Geschäftsmodell", "Innovation", "Wertversprechen", "Wirkungspotenzial"],
   "Physik, Energie und Wirkungsmetaphern": ["Energie", "Systemgrenze", "Metapher", "Wirkungsanalyse", "Wirkungssteuerung"],
   "Glossar-Publizierungsprozess": ["Glossar", "Publizierungsprozess", "Qualitätssicherung", "Quellen", "Backlinks"],
+  "Vordenker:innen und Bezugslinien": ["Vordenker", "Bezugslinie", "Einordnung", "Abgrenzung", "Wirkungsökonomie"],
+  "Werte, Normativität und Bewertung": ["Werte", "Normativität", "Bewertung", "Wirkungswert", "Mensch, Planet und Demokratie"],
+  "Kapital, Markt und Eigentum": ["Kapital", "Markt", "Eigentum", "Externalisierung", "Wirkungsverantwortung"],
+  "Sprache, Wirklichkeit und Kommunikation": ["Sprache", "Kommunikation", "Wahrheit", "Wirklichkeit", "Resonanzraum"],
+  "Ethik, Würde und Verantwortung": ["Ethik", "Menschenwürde", "Verantwortung", "Nichtkompensation", "Rechtsstaatlichkeit"],
+  "Management, Organisation und Wirksamkeit": ["Management", "Organisation", "Wirksamkeit", "Wirkungssteuerung", "Transformation"],
+  "Transformation, Innovation und wirtschaftliche Entwicklung": ["Transformation", "Innovation", "Wohlstand", "Entwicklung", "Wirkungsinnovation"],
 };
 
 const conceptStatusMap = {
@@ -49,6 +56,7 @@ const conceptStatusMap = {
   connection: "Anschlussbegriff",
   method: "Methodenbegriff",
   sourceLine: "Quellen-/Bezugslinienbegriff",
+  thinker: "Vordenker-/Bezugslinienbegriff",
 };
 
 const sourceGroups = {
@@ -90,6 +98,61 @@ const sourceGroups = {
     ["institutional", "Stanford d.school", "https://dschool.stanford.edu/"],
     ["institutional", "Strategyzer Business Model Canvas", "https://www.strategyzer.com/library/the-business-model-canvas"],
     ["institutional", "Strategyzer Value Proposition Canvas", "https://www.strategyzer.com/library/the-value-proposition-canvas"],
+  ],
+  capital: [
+    ["primary", "Adam Smith: The Theory of Moral Sentiments", ""],
+    ["primary", "Adam Smith: An Inquiry into the Nature and Causes of the Wealth of Nations", ""],
+    ["primary", "Karl Marx: Das Kapital", ""],
+    ["primary", "Karl Polanyi: The Great Transformation", ""],
+    ["primary", "Friedrich Hayek: The Use of Knowledge in Society", ""],
+    ["primary", "John Maynard Keynes: The General Theory", ""],
+  ],
+  ethics: [
+    ["primary", "Immanuel Kant: Grundlegung zur Metaphysik der Sitten", ""],
+    ["primary", "Immanuel Kant: Kritik der praktischen Vernunft", ""],
+    ["primary", "Hannah Arendt: Vita activa / The Human Condition", ""],
+    ["primary", "Amartya Sen: Development as Freedom", ""],
+    ["primary", "Martha Nussbaum: Creating Capabilities", ""],
+    ["institutional", "Grundgesetz Art. 1 und Art. 20a", "https://www.gesetze-im-internet.de/gg/"],
+  ],
+  communication: [
+    ["primary", "Ludwig Wittgenstein: Philosophische Untersuchungen", ""],
+    ["primary", "Paul Watzlawick / Janet Beavin / Don Jackson: Pragmatics of Human Communication", ""],
+    ["primary", "Paul Watzlawick: Die erfundene Wirklichkeit", ""],
+    ["primary", "Ernst von Glasersfeld: Radical Constructivism", ""],
+    ["primary", "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition", ""],
+  ],
+  systems2: [
+    ["primary", "Heinz von Foerster: Understanding Understanding", ""],
+    ["primary", "Stafford Beer: Brain of the Firm", ""],
+    ["primary", "Gregory Bateson: Steps to an Ecology of Mind", ""],
+    ["primary", "Niklas Luhmann: Soziale Systeme", ""],
+    ["primary", "Frederic Vester: Die Kunst vernetzt zu denken", ""],
+    ["primary", "Donella Meadows: Thinking in Systems", ""],
+    ["primary", "Donella Meadows: Leverage Points", "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"],
+  ],
+  management2: [
+    ["primary", "Peter Drucker: The Practice of Management", ""],
+    ["primary", "Peter Drucker: Management: Tasks, Responsibilities, Practices", ""],
+    ["primary", "Hans Ulrich: Die Unternehmung als produktives soziales System", ""],
+    ["institutional", "St. Galler Management-Modell", "https://www.sgmm.ch/en/about-the-model/history/"],
+    ["primary", "Fredmund Malik: Führen Leisten Leben", ""],
+  ],
+  transformation: [
+    ["primary", "Maja Göpel: Unsere Welt neu denken", ""],
+    ["primary", "Kate Raworth: Doughnut Economics", ""],
+    ["primary", "Mariana Mazzucato: Mission Economy", ""],
+    ["institutional", "Wellbeing Economy Alliance", "https://weall.org/"],
+    ["institutional", "OECD Measuring Well-being and Progress", "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"],
+    ["institutional", "Stockholm Resilience Centre: Planetary Boundaries", "https://www.stockholmresilience.org/research/planetary-boundaries.html"],
+  ],
+  scope: [
+    ["institutional", "GHG Protocol Corporate Standard", "https://ghgprotocol.org/corporate-standard"],
+    ["institutional", "GHG Protocol Scope 3 Standard", "https://ghgprotocol.org/corporate-value-chain-scope-3-standard"],
+    ["institutional", "ESRS E1 Climate Change", "https://www.efrag.org/en/sustainability-reporting/esrs"],
+    ["institutional", "ISO 14064", "https://www.iso.org/standard/66453.html"],
+    ["institutional", "ISO 14067", "https://www.iso.org/standard/71206.html"],
+    ["internal_woek", "Interne WÖk-Master-Items zu Scope, PCF, LCA und Wirkungsdaten", ""],
   ],
 };
 
@@ -162,6 +225,7 @@ function term({
       "Anschlussbegriff": "anschlussbegriff",
       "Methodenbegriff": "methodenbegriff",
       "Quellen-/Bezugslinienbegriff": "bezugsbegriff",
+      "Vordenker-/Bezugslinienbegriff": "vordenker-bezugslinie",
     }[conceptStatus] || "anschlussbegriff",
     version,
     lastReviewed: today,
@@ -292,6 +356,178 @@ const additions = [
   term({ id: "glossar-backlink-audit", title: "Glossar-Backlink-Audit", category: "Glossar-Publizierungsprozess", concept: "method", short: "Das Glossar-Backlink-Audit prüft, wo neue Begriffe im bestehenden Content vorkommen und welche internen Verknüpfungen sinnvoll sind.", definition: "Es verhindert Link-Wüsten und hilft, pro Seite nur fachlich zentrale Nennungen zu verknüpfen.", woek: "Macht den Übergang von Begriffspflege zu Website-Wirkung nachvollziehbar.", related: ["glossar-publizierungsprozess", "anschlussfaehigkeit", "resonanzraum"] }),
 ];
 
+const CAT_THINKERS = "Vordenker:innen und Bezugslinien";
+const CAT_VALUES = "Werte, Normativität und Bewertung";
+const CAT_CAPITAL = "Kapital, Markt und Eigentum";
+const CAT_LANGUAGE = "Sprache, Wirklichkeit und Kommunikation";
+const CAT_ETHICS = "Ethik, Würde und Verantwortung";
+const CAT_SYSTEMS = "Systemtheorie, Konstruktivismus und Kybernetik";
+const CAT_MANAGEMENT2 = "Management, Organisation und Wirksamkeit";
+const CAT_TRANSFORMATION = "Transformation, Innovation und wirtschaftliche Entwicklung";
+
+function thinker({ id, title, short, idea, woek, correction, related = [], sourceGroup = "capital", aliases = [], reviewStatus = "approved" }) {
+  return term({
+    id,
+    title,
+    category: CAT_THINKERS,
+    concept: "thinker",
+    short,
+    definition: `${idea} WÖk-Korrektur / Abgrenzung: ${correction}`,
+    woek,
+    aliases,
+    related,
+    sourceGroup,
+    reviewStatus,
+    usage: "Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.",
+  });
+}
+
+const controlledClusterAdditions = [
+  term({
+    id: "sechster-kondratieff",
+    title: "6. Kondratieff",
+    category: CAT_TRANSFORMATION,
+    concept: "precision",
+    short: "Der 6. Kondratieff beschreibt in der Wirkungsökonomie die Transformationswelle des 21. Jahrhunderts, in der Nachhaltigkeit, Resilienz, Gesundheit und Wirkung zur zentralen Entwicklungslogik werden.",
+    definition: "Der 6. Kondratieff ist in der WÖk ein Deutungsmuster für eine langfristige wirtschaftliche und gesellschaftliche Transformationswelle. Die Leitlogik verschiebt sich von Kapital- und Ressourcenoptimierung zu Wirkung, Resilienz, Gesundheit, SDGs, SDG+, Kreislaufwirtschaft, digitalen Wirkungsdaten, demokratischer Stabilität und systemischer Zukunftsfähigkeit.",
+    woek: "Die Wirkungsökonomie versteht den 6. Kondratieff als Übergang von der Effizienzlogik zur Wirkungslogik: Wie erzeugen wir mit vorhandenen Ressourcen die größte positive Netto-Wirkung für Mensch, Planet und Demokratie? Er beschreibt Wirkung maximieren und Impact-Intensität als makroökonomische Leitfrage, aber kein Prognosegesetz.",
+    aliases: ["6. Kondratieff", "sechster Kondratieff", "sechste lange Welle", "sechste Kondratieff-Welle", "Sixth Kondratieff"],
+    related: ["kondratieff-zyklus", "transformationswelle", "wirkungsinnovation", "wirkungskapital", "wirkungsoekonomie", "nachhaltigkeit", "resilienz", "gesundheit", "sdgs", "sdg-plus", "t-sroi", "kreislaufwirtschaft", "wirkungsarchitektur", "wirkungsresilienz", "positive-netto-wirkung"],
+    sourceGroup: "innovation",
+    statusNote: "Nicht deterministisch formulieren; Deutungsmodell, keine naturgesetzliche Vorhersage.",
+  }),
+  term({
+    id: "thg-emissions-scopes",
+    title: "THG-Emissions-Scopes",
+    category: "Klima, Lebenszyklus und ökologische Wirkung",
+    concept: "method",
+    short: "THG-Emissions-Scopes unterscheiden Emissionen danach, ob sie direkt entstehen, aus eingekaufter Energie stammen oder entlang der Wertschöpfungskette auftreten.",
+    definition: "Die Emissions-Scopes des GHG Protocols strukturieren betriebliche Treibhausgasemissionen in Scope 1, Scope 2 und Scope 3: direkte Emissionen aus eigenen oder kontrollierten Quellen, indirekte Emissionen aus eingekaufter Energie und weitere indirekte Emissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
+    woek: "Die Scopes sind zentrale Anschlussbegriffe für Wirkungsdaten, Klimabilanzierung, Produktwirkung, Lieferkettenwirkung, Wirkungskapital und Produktwirkungssteuer.",
+    aliases: ["Scope 1, 2 und 3", "Emissionsscopes", "GHG Scopes", "Greenhouse Gas Scopes"],
+    related: ["scope-1", "scope-2", "scope-3", "treibhausgasemissionen", "co2e", "product-carbon-footprint", "lebenszyklusanalyse", "lieferkette", "scope-3-datenqualitaet", "woek-id", "csrd", "esrs-e1", "ghg-protocol", "klimawirkung"],
+    sourceGroup: "scope",
+  }),
+  term({
+    id: "scope-1",
+    title: "Scope 1",
+    category: "Klima, Lebenszyklus und ökologische Wirkung",
+    concept: "method",
+    short: "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
+    definition: "Scope-1-Emissionen entstehen direkt durch Tätigkeiten eines Unternehmens, etwa durch eigene Heizkessel, Öfen, Produktionsanlagen, Unternehmensfahrzeuge, Prozess-Emissionen oder Kältemittelverluste.",
+    woek: "Scope 1 ist ein zentraler Indikator für direkte Klimawirkung und operative Verantwortung. Scope-1-Daten können in WÖk-IDs, Scorecards, Produktwirkungssteuer, Unternehmenswirkung und T-SROI einfließen, zeigen aber nicht die gesamte Klimawirkung.",
+    aliases: ["Scope-1-Emissionen", "direkte Emissionen", "direkte THG-Emissionen"],
+    examples: ["Dieselverbrauch eigener Lkw", "Erdgasverbrennung in eigenen Heizkesseln", "Prozess-Emissionen in Chemie oder Zement", "Kältemittelverluste aus eigenen Anlagen"],
+    related: ["thg-emissions-scopes", "scope-2", "scope-3", "treibhausgasemissionen", "co2e", "emissionsfaktor", "klimawirkung", "product-carbon-footprint", "woek-id", "esrs-e1"],
+    sourceGroup: "scope",
+  }),
+  term({
+    id: "scope-2",
+    title: "Scope 2",
+    category: "Klima, Lebenszyklus und ökologische Wirkung",
+    concept: "method",
+    short: "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie, insbesondere Strom, Dampf, Wärme oder Kühlung.",
+    definition: "Scope-2-Emissionen entstehen bei der Erzeugung von Energie, die ein Unternehmen einkauft und verbraucht. Sie können location-based nach durchschnittlichem Standortmix oder market-based nach vertraglich eingekaufter Energie beziehungsweise Herkunftsnachweisen ausgewiesen werden.",
+    woek: "Scope 2 zeigt, wie stark ein Unternehmen über seinen Energiebezug auf Klimawirkung einwirkt. Es ist zentral für erneuerbaren Strom, Energieeffizienz, Gebäude, Rechenzentren, Produktionsstandorte und Energiebeschaffung.",
+    aliases: ["Scope-2-Emissionen", "indirekte Energieemissionen", "Emissionen aus eingekaufter Energie"],
+    examples: ["Stromverbrauch in Produktionshallen", "Stromverbrauch in Bürogebäuden", "eingekaufte Fernwärme", "eingekaufter Dampf", "eingekaufte Kühlung"],
+    related: ["thg-emissions-scopes", "scope-1", "scope-3", "erneuerbarer-strom", "energieeffizienz", "strommix", "herkunftsnachweis-hkn", "product-carbon-footprint", "esrs-e1"],
+    sourceGroup: "scope",
+  }),
+  term({
+    id: "scope-3",
+    title: "Scope 3",
+    category: "Klima, Lebenszyklus und ökologische Wirkung",
+    concept: "method",
+    short: "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette eines Unternehmens.",
+    definition: "Scope-3-Emissionen entstehen durch Aktivitäten, die mit dem Unternehmen verbunden sind, aber nicht direkt von ihm kontrolliert werden und nicht unter Scope 2 fallen: eingekaufte Waren, Kapitalgüter, Transporte, Geschäftsreisen, Pendeln, Abfall, Nutzung verkaufter Produkte, Weiterverarbeitung, End-of-Life, Investitionen, Franchise- oder Leasingaktivitäten.",
+    woek: "Scope 3 ist besonders wichtig, weil viele ökologische und soziale Wirkungen in Lieferketten, Produktnutzung und Entsorgung entstehen. Ohne Scope 3 bleibt Klimawirkung oft dort unsichtbar, wo sie tatsächlich entsteht.",
+    aliases: ["Scope-3-Emissionen", "Wertschöpfungskettenemissionen", "Lieferkettenemissionen", "indirekte Wertschöpfungskettenemissionen"],
+    examples: ["eingekaufte Rohstoffe und Vorprodukte", "Lieferantentransporte", "Geschäftsreisen", "Nutzung verkaufter Produkte", "End-of-Life-Behandlung verkaufter Produkte"],
+    related: ["thg-emissions-scopes", "scope-1", "scope-2", "scope-3-datenqualitaet", "lieferkette", "digitaler-produktpass", "product-carbon-footprint", "lebenszyklusanalyse", "woek-id", "reverse-merit-order", "produktwirkungssteuer", "externalisierung", "greenwashing", "wirkungsblindheit"],
+    sourceGroup: "scope",
+  }),
+  term({
+    id: "scope-3-datenqualitaet",
+    title: "Scope-3-Datenqualität",
+    category: "Klima, Lebenszyklus und ökologische Wirkung",
+    concept: "precision",
+    short: "Scope-3-Datenqualität beschreibt, wie vollständig, belastbar, überprüfbar und differenziert indirekte Emissionsdaten entlang der Wertschöpfungskette sind.",
+    definition: "Scope-3-Datenqualität bewertet Vollständigkeit, Primärdatenanteil, Lieferantenabdeckung, Kategorienabdeckung, Aktualität, Prüfbarkeit, Methodenkonsistenz und Transparenz über Unsicherheit.",
+    woek: "Schlechte Scope-3-Daten sind selbst ein Wirkungsrisiko, weil sie Externalisierung unsichtbar halten. Fehlende Daten dürfen keinen Vorteil erzeugen.",
+    aliases: ["Scope 3 Datenqualität", "Scope-3-Qualität", "Wertschöpfungsketten-Datenqualität", "Lieferketten-Datenqualität"],
+    related: ["scope-3", "datenqualitaet", "wirkungsdaten", "lieferkette", "digitaler-produktpass", "woek-id", "product-carbon-footprint", "lebenszyklusanalyse", "wirkungsblindheit", "wirkungssimulation", "greenwashing"],
+    sourceGroup: "scope",
+  }),
+
+  thinker({ id: "adam-smith", title: "Adam Smith", sourceGroup: "capital", short: "Adam Smith ist für die Wirkungsökonomie relevant, weil seine Markttheorie ursprünglich nicht ohne Moral, Sympathie, Gerechtigkeit und gesellschaftliche Ordnung gedacht war.", idea: "Smith zeigt Märkte als dezentrale Koordination, aber nicht als moral- und institutionsfreie Maschine. Arbeitsteilung, Sympathie und gesellschaftliche Ordnung gehören zur Einbettung des Marktes.", woek: "Die WÖk knüpft an Marktkoordination an und korrigiert die Verkürzung auf Gewinn, Eigeninteresse und unsichtbare Hand: Preise müssen Wirkungswahrheit tragen.", correction: "Smith wird nicht als Kronzeuge ungezügelter Kapitalsteuerung genutzt.", related: ["markt", "kapital", "wirkungswahrheit", "externalisierung", "gemeinwohl", "marktwert"] }),
+  thinker({ id: "karl-marx", title: "Karl Marx", sourceGroup: "capital", short: "Karl Marx ist relevant, weil er Kapital als gesellschaftliches Macht- und Produktionsverhältnis analysiert.", idea: "Marx beschreibt Kapitalmacht, Mehrwert, Ausbeutung, Entfremdung, Warenform und Krisendynamik. Damit wird sichtbar, dass Wirtschaft nicht nur Tausch, sondern auch Machtordnung ist.", woek: "Die WÖk übernimmt die Kritik an Kapitalmacht und Externalisierung, operationalisiert aber Wirkungsverantwortung statt Eigentumsform allein.", correction: "Eigentumsform ersetzt keine Wirkungsprüfung; auch staatliches, genossenschaftliches oder gemeinnütziges Eigentum kann negative Wirkung erzeugen.", related: ["kapital", "kapital-als-machtverhaeltnis", "mehrwert", "entfremdung", "warenfetisch", "externalisierung", "wirkungsverantwortung"] }),
+  thinker({ id: "immanuel-kant", title: "Immanuel Kant", sourceGroup: "ethics", short: "Immanuel Kant ist relevant, weil Wirkungsökonomie nicht rein utilitaristisch sein darf.", idea: "Kants Würdebezug, Autonomie und kategorischer Imperativ markieren Grenzen, die nicht durch Gesamtnutzen verrechnet werden dürfen.", woek: "Daraus folgt die Logik von Wirkungsgrenzen, Nichtkompensation und rechtsstaatlicher Begrenzung von Steuerung.", correction: "Die WÖk ist keine reine Pflichtethik; sie fragt zusätzlich nach tatsächlichen Zustandsveränderungen.", related: ["menschenwuerde", "wirkungsgrenze", "nichtkompensation", "rechtsstaatlichkeit", "wirkungsethik"] }),
+  thinker({ id: "ludwig-wittgenstein", title: "Ludwig Wittgenstein", sourceGroup: "communication", short: "Ludwig Wittgenstein ist relevant, weil Bedeutung im Gebrauch, in Sprachspielen und Lebensformen entsteht.", idea: "Begriffe wie Freiheit, Leistung, Wert, Markt, Nachhaltigkeit oder Wirkung wirken nicht isoliert. Ihr Gebrauch ordnet Wirklichkeit und Handlungsräume.", woek: "Die WÖk braucht präzise Glossararbeit, weil unterschiedliche Sprachspiele unterschiedliche Wirkungspotenziale entfalten.", correction: "Bedeutung als Gebrauch ist kein Relativismus; Zustandsveränderungen bleiben real.", related: ["sprachspiel", "bedeutung-als-gebrauch", "lebensform", "wirklichkeitskonstruktion", "framing"] }),
+  thinker({ id: "ernst-von-glasersfeld", title: "Ernst von Glasersfeld", sourceGroup: "communication", short: "Ernst von Glasersfeld ist relevant, weil Fakten nicht einfach übertragen, sondern konstruktiv verarbeitet werden.", idea: "Radikaler Konstruktivismus erklärt, dass Wissen anhand von Erfahrung, Modellen und Anschlussmöglichkeiten aufgebaut wird.", woek: "Fakten brauchen Resonanz, Anschlussfähigkeit, Kontext und Vertrauen, damit Wirkung aufgenommen werden kann.", correction: "Konstruktivismus bedeutet nicht Beliebigkeit: Wirkung bleibt real, Deutung ist konstruiert.", related: ["wirklichkeitskonstruktion", "viabilitaet", "anschlussfaehigkeit", "lernen", "wirkungsintegration"] }),
+  thinker({ id: "paul-watzlawick", title: "Paul Watzlawick", sourceGroup: "communication", short: "Paul Watzlawick ist relevant für Kommunikation als Beziehung, Kontext, Rahmung und Wirkungspotenzial.", idea: "Kommunikation wirkt nicht nur durch Inhalt, sondern auch durch Beziehung, Ton, Wiederholung, Kontext und Metakommunikation.", woek: "Faktenkommunikation ist immer auch Wirkkommunikation und muss Wirkungspotenzial, Reframing und Resonanzraum beachten.", correction: "Nicht jede Kommunikation ist bereits Wirkung im engeren Sinn; sie erzeugt zunächst Potenzial, Deutung und Anschlussfähigkeit.", related: ["kommunikation", "metakommunikation", "reframing", "resonanzraum", "wirklichkeitskonstruktion"] }),
+  thinker({ id: "maturana-varela", title: "Humberto Maturana und Francisco Varela", sourceGroup: "communication", short: "Maturana und Varela sind relevant, weil lebende und soziale Systeme nicht mechanisch steuerbar sind.", idea: "Autopoiesis, Strukturdeterminiertheit, strukturelle Kopplung und strukturelles Driften zeigen, dass Systeme Impulse nach eigener Struktur verarbeiten.", woek: "Wenn direkte Kontrolle unmöglich ist, braucht es Rückkopplung, Wirkungsdaten, Resonanzräume und lernende Anreizarchitektur.", correction: "Die WÖk übernimmt Nichtmechanik, bleibt aber demokratisch und steuerungsorientiert.", aliases: ["Humberto Maturana", "Francisco Varela"], related: ["autopoiesis", "strukturdeterminiertheit", "strukturelle-kopplung", "strukturelles-driften", "selbstorganisation"] }),
+  thinker({ id: "heinz-von-foerster", title: "Heinz von Foerster", sourceGroup: "systems2", short: "Heinz von Foerster ist relevant, weil Gesellschaft nicht als triviale Maschine verstanden werden kann.", idea: "Nichttrivialität, Beobachtung zweiter Ordnung und Kybernetik zweiter Ordnung machen sichtbar, dass Beobachter:innen Teil des Systems sind.", woek: "Politik, Medien, Märkte und Menschen reagieren nicht linear; Wirkungssteuerung muss lernend, rückgekoppelt, transparent und fehlbar sein.", correction: "Nichttrivialität ist kein Grund, nicht zu steuern, sondern ein Grund, anders zu steuern.", aliases: ["von Foerster"], related: ["triviale-maschine", "nichttriviale-maschine", "beobachtung-zweiter-ordnung", "kybernetik-zweiter-ordnung", "verantwortung"] }),
+  thinker({ id: "stafford-beer", title: "Stafford Beer", sourceGroup: "systems2", short: "Stafford Beer ist relevant für Organisationen als lebensfähige, rekursive Systeme.", idea: "Das Viable System Model verbindet operative Einheiten, Koordination, Kontrolle, Intelligenz und normative Identität.", woek: "Beers Systemlogik ist Anschlussmodell für Wirkungsarchitektur, Verwaltung, Unternehmen, Wirkungsrat und lernende Institutionen.", correction: "Kein Organisationsdogma, sondern Werkzeug für Wirkungsgovernance und Rückkopplung.", related: ["viable-system-model", "viabilitaet", "varietaet", "rekursion", "wirkungsarchitektur"] }),
+  thinker({ id: "gregory-bateson", title: "Gregory Bateson", sourceGroup: "systems2", short: "Gregory Bateson ist relevant, weil Wirkung in Mustern, Kontexten und Beziehungen entsteht.", idea: "Bateson lenkt Aufmerksamkeit auf Kontext, Lernen, Metakommunikation und den Unterschied, der einen Unterschied macht.", woek: "Das passt zu Resonanzraum, Interdependenz, Wirkungsnetz und Kommunikation als Folgewirkungsraum.", correction: "Nicht als poetische Metapher verwenden, sondern als Hinweis auf Muster und Kontext.", related: ["interdependenz", "resonanzraum", "wirkungsnetz", "metakommunikation", "double-bind"] }),
+  thinker({ id: "niklas-luhmann", title: "Niklas Luhmann", sourceGroup: "systems2", short: "Niklas Luhmann ist relevant, weil moderne Gesellschaften nicht zentral durchsteuerbar sind.", idea: "Wirtschaft, Recht, Politik, Wissenschaft und Medien folgen eigenen Codes und erzeugen Anschlusskommunikation.", woek: "Die WÖk muss Wirkungsrückkopplung systemübergreifend, aber nicht naiv zentralistisch denken.", correction: "Die WÖk bleibt normativ und steuerungsorientiert: Sie beschreibt nicht nur, sondern fragt nach Wirkung für Mensch, Planet und Demokratie.", related: ["soziale-systeme", "selbstreferenz", "beobachtung-zweiter-ordnung", "anschlussfaehigkeit", "rueckkopplung"] }),
+  thinker({ id: "frederic-vester", title: "Frederic Vester", sourceGroup: "systems2", short: "Frederic Vester ist relevant für vernetztes Denken und nichtlineare Folgewirkungen.", idea: "Vester zeigt, dass Systemverhalten aus Wechselwirkungen, Rückkopplungen und indirekten Effekten entsteht.", woek: "Er unterstützt die WÖk-Logik, dass Einzelindikatoren nicht reichen und Wirkungsnetze nötig sind.", correction: "Vernetztes Denken ersetzt keine normative Bewertung.", related: ["vernetztes-denken", "interdependenz", "rueckkopplung", "folgewirkung", "hebelpunkt"] }),
+  thinker({ id: "donella-meadows", title: "Donella Meadows", sourceGroup: "systems2", short: "Donella Meadows ist relevant, weil Zielgrößen und Paradigmen tiefe Hebel in Systemen sind.", idea: "Meadows unterscheidet Parameter, Rückkopplungen, Informationsflüsse, Regeln, Ziele und Paradigmen als Hebelpunkte.", woek: "Die WÖk setzt beim tiefen Hebel an: Kapital als Zielgröße wird durch Wirkung ersetzt.", correction: "Hebelpunkte sind Analysehilfen, keine automatische Steuerungsgarantie.", related: ["hebelpunkt", "systemgrenze", "rueckkopplung", "wirkungslenkung", "wirkungsarchitektur"] }),
+  thinker({ id: "peter-drucker", title: "Peter Drucker", sourceGroup: "management2", short: "Peter Drucker ist relevant, weil Gewinn für ihn nicht der eigentliche Zweck, sondern ein Test wirtschaftlicher Tragfähigkeit ist.", idea: "Drucker betont Effektivität, Kundennutzen, Managementverantwortung und Ergebnisse.", woek: "Die WÖk ergänzt: Der Gewinntest ist nur belastbar, wenn Preise Wirkung abbilden.", correction: "In wirkungsblinden Märkten kann Gewinn auch erfolgreiche Externalisierung anzeigen.", related: ["effektivitaet", "effizienz", "kundennutzen", "gewinn-als-test", "management"] }),
+  thinker({ id: "hans-ulrich", title: "Hans Ulrich", sourceGroup: "management2", short: "Hans Ulrich ist relevant für Unternehmen als offene, produktive soziale Systeme.", idea: "Sein systemorientiertes Management betrachtet Umweltbezug, Anspruchsgruppen, Ganzheitlichkeit und Wechselwirkungen.", woek: "Die WÖk erweitert diese Sicht um messbare Wirkung auf Mensch, Planet und Demokratie.", correction: "Ganzheitlichkeit bleibt ohne Wirkungsdaten und Rückkopplung zu allgemein.", related: ["systemorientiertes-management", "st-galler-management-modell", "anspruchsgruppen", "management"] }),
+  thinker({ id: "fredmund-malik", title: "Fredmund Malik", sourceGroup: "management2", short: "Fredmund Malik ist relevant für Management in komplexen Systemen und wirksame Führung.", idea: "Malik betont Resultatorientierung, Selbstorganisation, Komplexitätsmanagement und systemorientierte Führung.", woek: "Die WÖk ergänzt: Resultate müssen als Wirkung gelesen werden, nicht nur als Zielerreichung oder Performance.", correction: "Wirksamkeit braucht Referenzrahmen Mensch, Planet und Demokratie.", related: ["wirksames-management", "komplexitaetsmanagement", "selbstorganisation", "wirksamkeit"] }),
+  thinker({ id: "jochen-roepke", title: "Jochen Röpke", sourceGroup: "innovation", short: "Jochen Röpke ist relevant, weil Transformation unternehmerisches Lernen und Selbstveränderung verlangt.", idea: "Der lernende Unternehmer entwickelt Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit.", woek: "Der WÖk-Unternehmer wird zum Wirkungsakteur, der Wirkungen liest und bessere Wirkungspfade erzeugt.", correction: "Unternehmertypen und Lernebenen bleiben quellenprüfpflichtig, bevor sie endgültig Röpke zugeschrieben werden.", related: ["lernender-unternehmer", "unternehmerisches-lernen", "evolutorischer-unternehmer", "lernebenen"], reviewStatus: "needs_source_check" }),
+  thinker({ id: "joseph-schumpeter", title: "Joseph A. Schumpeter", sourceGroup: "innovation", short: "Joseph A. Schumpeter ist relevant für Innovation als neue Kombination.", idea: "Schumpeter beschreibt Unternehmerfunktion, Innovation, wirtschaftliche Entwicklung und schöpferische Zerstörung.", woek: "Die WÖk korrigiert: Neuheit ist nicht automatisch Fortschritt; Fortschritt ist Innovation mit positiver Netto-Wirkung.", correction: "Schöpferische Zerstörung legitimiert keine Schäden an Mensch, Planet oder Demokratie.", aliases: ["Schumpeter"], related: ["innovation", "rekombination", "unternehmerfunktion", "schoepferische-zerstoerung", "wirkungsinnovation"] }),
+  thinker({ id: "nikolai-kondratieff", title: "Nikolai Kondratieff", sourceGroup: "innovation", short: "Nikolai Kondratieff ist relevant als Bezugslinie langfristiger wirtschaftlicher Entwicklungswellen.", idea: "Lange Wellen dienen als Deutungsmuster für Bündel aus Technologie, Infrastruktur, Kapital, Kompetenzen, Institutionen und Akzeptanz.", woek: "Die WÖk nutzt Kondratieff vorsichtig, um Transformationswellen und den 6. Kondratieff einzuordnen.", correction: "Nicht deterministisch verwenden.", aliases: ["Kondratieff"], related: ["kondratieff-zyklus", "sechster-kondratieff", "basisinnovation", "transformationswelle"] }),
+  thinker({ id: "maja-goepel", title: "Maja Göpel", sourceGroup: "transformation", short: "Maja Göpel ist relevant als Transformations- und Wohlstandsdenkerin.", idea: "Sie steht für Wohlstand neu denken, Systemgrenzen, planetare Grenzen, Zukunftsfähigkeit und Möglichkeitsräume.", woek: "Die WÖk nimmt diese Anschlusslinie auf und ergänzt eine operative Steuerungsarchitektur aus WÖk-IDs, Scorecards, DPP, T-SROI, Wirkungsrat, Preisen, Steuern, Kapital und Rückkopplung.", correction: "Maja Göpel ist Anschlusslinie im Transformationsdenken, keine direkte Grundlage der WÖk.", related: ["wohlstand", "systemgrenze", "planetare-grenzen", "zukunftsfaehigkeit", "wirkungsarchitektur"] }),
+  thinker({ id: "amartya-sen", title: "Amartya Sen", sourceGroup: "ethics", short: "Amartya Sen ist relevant, weil Wohlstand nicht nur Einkommen, sondern reale Freiheit und Befähigung ist.", idea: "Development as Freedom verbindet Entwicklung mit tatsächlichen Handlungsmöglichkeiten.", woek: "Die WÖk ergänzt: Befähigungen müssen über Wirkung messbar, steuerbar und systemisch abgesichert werden.", correction: "Befähigung ersetzt keine Wirkungsarchitektur.", related: ["befaehigungen", "reale-freiheit", "wohlstand", "wirkungseinkommen"] }),
+  thinker({ id: "martha-nussbaum", title: "Martha Nussbaum", sourceGroup: "ethics", short: "Martha Nussbaum ist relevant für Würde, zentrale Fähigkeiten und gutes Leben.", idea: "Der Capability Approach gibt einen normativen Rahmen für menschliche Entfaltung und soziale Gerechtigkeit.", woek: "Die WÖk übersetzt Befähigung in Wirkung, Scorecards und politische Steuerung.", correction: "Die Liste zentraler Fähigkeiten wird nicht eins zu eins als WÖk-Messsystem übernommen.", related: ["capability-approach", "menschenwuerde", "befaehigungen", "soziale-gerechtigkeit"] }),
+  thinker({ id: "hannah-arendt", title: "Hannah Arendt", sourceGroup: "ethics", short: "Hannah Arendt ist relevant, weil menschliches Handeln nicht in Arbeit und Produktion aufgeht.", idea: "Vita activa unterscheidet Arbeiten, Herstellen und Handeln. Öffentlichkeit und politisches Handeln sind eigene Räume.", woek: "Die WÖk liest Öffentlichkeit, Demokratie und Weltbezug als Wirkungsräume, nicht als Nebenfolgen von Wirtschaft.", correction: "Arendt wird nicht auf Arbeitsmarkt- oder Produktivitätsfragen verkürzt.", related: ["oeffentlichkeit", "demokratie", "wirkungsraum", "politisches-handeln"] }),
+  thinker({ id: "elinor-ostrom", title: "Elinor Ostrom", sourceGroup: "transformation", short: "Elinor Ostrom ist relevant für dezentrale, regelbasierte Selbstorganisation von Gemeingütern.", idea: "Commons, lokale Institutionen, Vertrauen und polyzentrische Governance zeigen Alternativen zu Markt oder Zentralstaat allein.", woek: "Die WÖk knüpft daran an, wenn Wirkung über Daten, Regeln, Rückkopplung und plural kontrollierte Institutionen gesteuert wird.", correction: "Commons ersetzen keine Wirkungsprüfung und keine demokratische Verantwortlichkeit.", related: ["commons", "gemeingueter", "selbstorganisation", "polyzentrische-governance", "vertrauen"] }),
+  thinker({ id: "karl-polanyi", title: "Karl Polanyi", sourceGroup: "capital", short: "Karl Polanyi ist relevant, weil Märkte institutionell eingebettet sind.", idea: "The Great Transformation beschreibt Entbettung, Marktgesellschaft, fiktive Waren und Gegenbewegungen.", woek: "Wirkungssteuerung ist eine neue Einbettung von Märkten in Mensch, Planet und Demokratie.", correction: "Einbettung ist kein Rückzug aus Märkten, sondern bessere Wirkungswahrheit und Rückkopplung.", related: ["einbettung", "entbettung", "markt", "externalisierung", "wirkungssteuer"] }),
+  thinker({ id: "friedrich-hayek", title: "Friedrich Hayek", sourceGroup: "capital", short: "Friedrich Hayek ist relevant, weil Märkte dezentrales Wissen verarbeiten.", idea: "Preissignale und Marktprozesse können verstreutes Wissen koordinieren.", woek: "Die WÖk korrigiert: Preise verarbeiten nur, was im Preis erscheint. Wenn Wirkung externalisiert bleibt, ist das Preissignal unwahr.", correction: "Hayek wird als Bezugslinie für Wissensteilung genutzt, nicht als Freibrief wirkungsblinder Märkte.", related: ["dezentrales-wissen", "preissignal", "markt", "wirkungswahrheit", "externalisierung"] }),
+  thinker({ id: "john-maynard-keynes", title: "John Maynard Keynes", sourceGroup: "capital", short: "John Maynard Keynes ist relevant für makroökonomische Stabilisierung unter Unsicherheit.", idea: "Keynes zeigt, dass Nachfrage, Investitionen und staatliche Krisenintervention wirtschaftliche Stabilität beeinflussen.", woek: "Die WÖk ergänzt: Stabilisierung braucht Wirkungsrichtung. Staatsausgaben sind nicht automatisch positive Wirkung.", correction: "Nicht jede Nachfrage ist wohlfahrtssteigernd; Wirkung muss mitgeprüft werden.", related: ["makrooekonomische-stabilisierung", "unsicherheit", "wirkungshaushalt", "wirkungssteuer"] }),
+  thinker({ id: "alan-watts-daoismus", title: "Alan Watts / Daoismus", sourceGroup: "dao", short: "Alan Watts und Daoismus sind als Erinnerung relevant, dass der Mensch nicht außerhalb der Welt steht, die er steuert.", idea: "Wu Wei, Prozessdenken, Nicht-Dualität und Verbundenheit dienen als Gegenbild zu Beherrschungsillusion.", woek: "Die WÖk nutzt diese Bezugslinie funktional: nicht gegen Steuerung, sondern für Rückkopplung, Selbstorganisation und Nicht-Erzwingen.", correction: "Keine spirituelle Theorie und keine Sammlung einzelner Zitate.", aliases: ["Alan Watts", "Daoismus"], related: ["dao", "wu-wei", "prozessdenken", "nicht-dualitaet", "selbstorganisation"] }),
+
+  term({ id: "wert", title: "Wert", category: CAT_VALUES, concept: "precision", short: "Wert bezeichnet in der Wirkungsökonomie nicht nur Preis, Nutzen oder subjektive Bedeutung, sondern muss nach systemischem und normativem Bezug unterschieden werden.", definition: "Wert ist mehrdeutig. Die WÖk unterscheidet Marktwert, Gebrauchswert, Tauschwert, Business Value, Wirkungswert, systemischen Wert und normativen Wert.", woek: "Ohne Wertunterscheidung werden Preis, Nutzen, Moral und Wirkung vermischt.", related: ["werte", "marktwert", "gebrauchswert", "tauschwert", "wirkungswert", "systemischer-wert", "normativer-wert"], sourceGroup: "capital" }),
+  term({ id: "werte", title: "Werte", category: CAT_VALUES, concept: "precision", short: "Werte sind normative Orientierungen, die anzeigen, was als wünschenswert, schützenswert oder handlungsleitend gilt.", definition: "Werte geben Richtung, aber sie ersetzen keine Prüfung tatsächlicher Zustandsveränderungen.", woek: "Werte ohne Wirkung können Symbolik bleiben. Wirkung ohne Werte kann gefährlich werden.", related: ["wert", "wertewandel", "wertekonflikt", "wirkungsethik"], sourceGroup: "ethics" }),
+  term({ id: "normativer-wert", title: "Normativer Wert", category: CAT_VALUES, concept: "precision", short: "Normativer Wert fragt, ob eine Wirkung im Referenzrahmen von Mensch, Planet und Demokratie wünschenswert ist.", definition: "Normativer Wert bezieht sich auf Schutzgüter, Ziele, Würde, Rechte, planetare Grenzen und demokratische Voraussetzungen.", woek: "Er verhindert, dass Wirkung nur technisch oder monetär gelesen wird.", related: ["systemischer-wert", "wirkungswert", "wirkungsethik", "mensch-planet-demokratie"], sourceGroup: "ethics" }),
+  term({ id: "systemischer-wert", title: "Systemischer Wert", category: CAT_VALUES, concept: "precision", short: "Systemischer Wert fragt, ob eine Wirkung die Funktionsfähigkeit, Stabilität oder Entwicklungsfähigkeit eines Systems stärkt.", definition: "Systemischer Wert betrifft Resilienz, Vertrauen, Lernfähigkeit, Regenerationsfähigkeit und Rückkopplungsfähigkeit.", woek: "Er ergänzt normativen Wert, ohne ihn zu ersetzen.", related: ["normativer-wert", "wirkungswert", "wirkungsresilienz", "systemische-kohaerenz"], sourceGroup: "systems2" }),
+  term({ id: "wirkungswert", title: "Wirkungswert", category: CAT_VALUES, concept: "precision", short: "Wirkungswert beschreibt den Wert einer Handlung, eines Produkts, einer Organisation oder Entscheidung gemessen an ihrer tatsächlichen Wirkung auf Mensch, Planet und Demokratie.", definition: "Wirkungswert ist nicht Marktwert. Er entsteht aus realen Zustandsveränderungen und ihrer normativen und systemischen Bewertung.", woek: "Zentral für Scorecards, T-SROI, Wirkungssteuer und positive Netto-Wirkung.", aliases: ["Impact Value"], related: ["impact-value", "positive-netto-wirkung", "t-sroi", "scorecard", "wirkungswertschoepfung"], sourceGroup: "capital" }),
+  term({ id: "marktwert", title: "Marktwert", category: CAT_VALUES, short: "Marktwert beschreibt den Preis oder monetären Wert, den ein Gut, Unternehmen oder Vermögenswert am Markt erzielt.", definition: "Marktwert entsteht aus Angebot, Nachfrage, Erwartungen, Knappheit, Macht und Informationslage.", woek: "Marktwert ist nicht Wirkungswert. Er kann steigen, obwohl negative Wirkungen externalisiert werden.", related: ["wert", "wirkungswert", "externalisierung", "kapitalrendite"], sourceGroup: "capital" }),
+  term({ id: "gebrauchswert", title: "Gebrauchswert", category: CAT_VALUES, short: "Gebrauchswert beschreibt den Nutzen eines Gutes für konkrete Bedürfnisse oder Zwecke.", definition: "Ein Produkt kann für Nutzer:innen nützlich sein und trotzdem Schäden in Lieferkette, Umwelt oder Demokratie erzeugen.", woek: "Gebrauchswert ist nicht automatisch positive Wirkung.", related: ["wert", "kundennutzen", "wirkungswert", "produktwirkung"], sourceGroup: "capital" }),
+  term({ id: "tauschwert", title: "Tauschwert", category: CAT_VALUES, short: "Tauschwert beschreibt den Wert eines Gutes im Austauschverhältnis zu anderen Gütern oder Geld.", definition: "Tauschwert ist kapital- und marktbezogen und kann von Gebrauchswert oder Wirkungswert abweichen.", woek: "Die WÖk ergänzt den Tauschwert um Wirkungswert und Wirkungswahrheit.", related: ["wert", "marktwert", "gebrauchswert", "wirkungswert"], sourceGroup: "capital" }),
+  term({ id: "wertewandel", title: "Wertewandel", category: CAT_VALUES, short: "Wertewandel beschreibt die Veränderung gesellschaftlicher Leitwerte über Zeit.", definition: "Wertewandel beeinflusst Wirkungsbewertung, Akzeptanz, Konsum, Innovation und Vertrauen.", woek: "WÖk muss Wertewandel transparent verhandeln, nicht verstecken.", related: ["werte", "wertekonflikt", "vertrauen", "transformationswelle"], sourceGroup: "transformation" }),
+  term({ id: "wertekonflikt", title: "Wertekonflikt", category: CAT_VALUES, short: "Ein Wertekonflikt entsteht, wenn unterschiedliche normative Ziele oder Schutzgüter miteinander in Spannung geraten.", definition: "Wertekonflikte erscheinen etwa zwischen Freiheit, Sicherheit, Klima, Teilhabe, Eigentum, Gesundheit oder Demokratie.", woek: "Sie müssen als Zielkonflikte und Wirkungsabwägungen sichtbar gemacht werden. Nichtkompensation schützt rote Linien.", related: ["werte", "wirkungsgrenze", "nichtkompensation", "wirkungsethik"], sourceGroup: "ethics" }),
+  term({ id: "wertschoepfung", title: "Wertschöpfung", category: CAT_CAPITAL, short: "Wertschöpfung beschreibt die Erzeugung von wirtschaftlichem Wert durch Arbeit, Kapital, Wissen, Organisation oder Ressourcen.", definition: "Wertschöpfung misst wirtschaftliche Erzeugung, aber nicht automatisch Zustandsverbesserung.", woek: "Die WÖk unterscheidet Wertschöpfung, Wirkungswert und Verlustleistung.", related: ["wirkungswertschoepfung", "wirkungswert", "verlustleistung", "kapital"], sourceGroup: "capital" }),
+  term({ id: "wirkungswertschoepfung", title: "Wirkungswertschöpfung", category: CAT_CAPITAL, concept: "precision", short: "Wirkungswertschöpfung entsteht, wenn wirtschaftliche Aktivität reale positive Zustandsveränderungen für Mensch, Planet und Demokratie erzeugt.", definition: "Sie verbindet wirtschaftliche Tätigkeit mit positiven Zuständen, statt Wert nur monetär zu lesen.", woek: "Zielgröße für Unternehmen, Kapital, Beschaffung, Steuer und Transformation.", related: ["wertschoepfung", "wirkungswert", "positive-netto-wirkung", "wirkungskapital"], sourceGroup: "capital" }),
+  term({ id: "kapital", title: "Kapital", category: CAT_CAPITAL, concept: "precision", short: "Kapital ist gespeicherte Handlungsmöglichkeit in monetärer, materieller, sozialer, natürlicher oder institutioneller Form.", definition: "Kapital kann ermöglichen, beschleunigen und absichern. Problematisch wird es, wenn es vom Werkzeug zur Zielgröße wird.", woek: "Die WÖk ordnet Kapital der Wirkung unter.", related: ["kapital-als-werkzeug", "kapital-als-machtverhaeltnis", "kapitalwirkung", "kapitalrendite", "wirkungskapital"], sourceGroup: "capital" }),
+  term({ id: "kapitalrendite", title: "Kapitalrendite", category: CAT_CAPITAL, short: "Kapitalrendite beschreibt den finanziellen Ertrag auf eingesetztes Kapital.", definition: "Rendite zeigt monetären Rückfluss, aber nicht, welche Zustandsveränderungen dadurch entstehen.", woek: "Kapitalrendite ist nicht Wirkungsrendite. Hohe Rendite kann durch positive Wirkung oder Externalisierung entstehen.", related: ["kapital", "kapitalwirkung", "externalisierung", "wirkungskapital"], sourceGroup: "capital" }),
+  term({ id: "kapitalwirkung", title: "Kapitalwirkung", category: CAT_CAPITAL, concept: "precision", short: "Kapitalwirkung beschreibt, welche Zustandsveränderungen Kapital durch Investition, Eigentum, Kredit, Renditeerwartung oder Machtkonzentration erzeugt.", definition: "Kapital wirkt über Allokation, Eigentum, Zugang, Risiko, Zins, Renditeerwartung und institutionelle Macht.", woek: "Kapitalwirkung ist die zentrale Frage, wenn Kapital nicht Ziel, sondern Werkzeug sein soll.", related: ["kapital", "wirkungskapital", "kapitalrendite", "kapital-als-machtverhaeltnis"], sourceGroup: "capital" }),
+  term({ id: "kapital-als-machtverhaeltnis", title: "Kapital als Machtverhältnis", category: CAT_CAPITAL, short: "Kapital als Machtverhältnis beschreibt, dass Kapital Zugänge, Abhängigkeiten, Entscheidungsrechte und Einflussmöglichkeiten strukturiert.", definition: "Der Begriff schließt an Marx, Polanyi und moderne Kapitalmarktkritik an.", woek: "Die WÖk ergänzt: Macht muss an Wirkung rückgekoppelt werden.", related: ["kapital", "kapitalwirkung", "externalisierung", "wirkungsverantwortung", "karl-marx"], sourceGroup: "capital" }),
+  term({ id: "kapital-als-werkzeug", title: "Kapital als Werkzeug", category: CAT_CAPITAL, concept: "precision", short: "Kapital als Werkzeug bedeutet, dass Kapital Mittel zur Gestaltung von Wirkung ist, aber nicht selbst der Maßstab von Fortschritt.", definition: "Kapital kann Schulen, Forschung, Infrastruktur, Unternehmen und Transformation ermöglichen.", woek: "Kapital wird problematisch, wenn Kapitalvermehrung zum Kompass wird.", related: ["kapital", "kapitalwirkung", "wirkungskapital", "positive-netto-wirkung"], sourceGroup: "capital" }),
+  term({ id: "akkumulation", title: "Akkumulation", category: CAT_CAPITAL, short: "Akkumulation beschreibt die Anhäufung von Kapital, Vermögen oder Macht über Zeit.", definition: "Akkumulation kann Investitionsfähigkeit erzeugen, aber auch Machtkonzentration und Abhängigkeit.", woek: "Wirkungsökonomisch zählt, ob angesammeltes Kapital Transformationsfähigkeit stärkt oder demokratische und soziale Risiken verschärft.", related: ["kapital", "kapital-als-machtverhaeltnis", "kapitalwirkung"], sourceGroup: "capital" }),
+  term({ id: "externalisierung", title: "Externalisierung", category: CAT_CAPITAL, concept: "precision", short: "Externalisierung beschreibt die Verlagerung von Kosten, Risiken oder Schäden auf andere Menschen, Natur, Institutionen oder zukünftige Generationen.", definition: "Externalisierung macht Schäden für Verursacher:innen unsichtbar oder billiger, während andere die Folgen tragen.", woek: "Externalisierung ist ein zentraler Grundfehler kapitalzentrierter Steuerung. Die WÖk macht externalisierte Wirkung sichtbar und koppelt sie in Preise, Steuern, Kapital und Verantwortung zurück.", related: ["wirkungsblindheit", "wirkungswahrheit", "produktwirkungssteuer", "scope-3", "kapitalwirkung"], sourceGroup: "capital" }),
+  term({ id: "entfremdung", title: "Entfremdung", category: CAT_CAPITAL, short: "Entfremdung beschreibt den Verlust von Bezug zu Arbeit, Produkt, Mitmenschen, Natur oder sich selbst.", definition: "Anschluss an Marx, erweitert auf wirkungsblinde Arbeit, sinnlose Bürokratie, Plattformlogik, Konsum und Entkopplung von realen Folgen.", woek: "Entfremdung wird als Wirkungszustand lesbar, wenn Menschen die Folgen ihrer Arbeit oder ihres Konsums nicht mehr erfahren.", related: ["karl-marx", "wirkungsblindheit", "warenfetisch", "sinnvolle-arbeit"], sourceGroup: "capital" }),
+  term({ id: "warenfetisch", title: "Warenfetisch", category: CAT_CAPITAL, short: "Warenfetisch beschreibt, dass soziale und ökologische Herstellungsbedingungen hinter der scheinbar neutralen Ware verschwinden.", definition: "Die Ware erscheint als isoliertes Ding, während Arbeit, Lieferkette, Naturverbrauch und Machtverhältnisse verdeckt bleiben.", woek: "Zentral für Produktwirkungssteuer, Digitalen Produktpass und Lieferkettenwirkung: Die WÖk macht sichtbar, was im Warenpreis verborgen bleibt.", related: ["produktwirkungssteuer", "digitaler-produktpass", "lieferkette", "externalisierung", "karl-marx"], sourceGroup: "capital" }),
+  term({ id: "mehrwert", title: "Mehrwert", category: CAT_CAPITAL, short: "Mehrwert bezeichnet bei Marx den Wert, der über den gezahlten Arbeitslohn hinaus im Produktionsprozess angeeignet wird.", definition: "Der Begriff ist eine marxsche Wertkategorie und keine vollständige Werttheorie der WÖk.", woek: "Die WÖk fragt umfassender: Welche Wirkung wird erzeugt, wer profitiert, wer trägt Folgekosten?", related: ["karl-marx", "kapital", "wirkungswert", "externalisierung"], sourceGroup: "capital" }),
+  term({ id: "wirkungsethik", title: "Wirkungsethik", category: CAT_ETHICS, concept: "core", short: "Wirkungsethik bewertet Handlungen nach ihren tatsächlichen Folgen für Mensch, Planet und Demokratie, unter Beachtung nicht kompensierbarer Grenzen.", definition: "Wirkungsethik fragt nach realen Zustandsveränderungen, aber nicht als reine Nutzenaddition.", woek: "Menschenwürde, Rechtsstaatlichkeit, planetare Grenzen und Demokratie sind rote Linien.", related: ["wirkungsverantwortung", "nichtkompensation", "wirkungsgrenze", "positive-netto-wirkung"], sourceGroup: "ethics" }),
+  term({ id: "wirkungsverantwortung", title: "Wirkungsverantwortung", category: CAT_ETHICS, concept: "core", short: "Wirkungsverantwortung bezeichnet die Verantwortung für direkte, indirekte, zeitversetzte und systemische Folgen des eigenen Handelns oder Unterlassens.", definition: "Sie umfasst Wirkungspfade, Folgewirkungen, Risiken, Nichtwissen, Datenqualität und Korrekturfähigkeit.", woek: "Zentral für Unternehmen, Politik, Kapital, Medien, Konsum und Institutionen.", related: ["wirkungsethik", "folgewirkung", "wirkungspfad", "kapitalwirkung", "folgencheck"], sourceGroup: "ethics" }),
+  term({ id: "sprachspiel", title: "Sprachspiel", category: CAT_LANGUAGE, short: "Ein Sprachspiel ist ein sozialer Gebrauchszusammenhang, in dem Wörter Bedeutung erhalten.", definition: "Begriffe erhalten Bedeutung durch Regeln, Praktiken, Erwartungen und Lebensformen.", woek: "Wichtig für Freiheit, Leistung, Wert, Markt, Nachhaltigkeit, Vertrauen und Wirkung, weil gleiche Begriffe unterschiedliche Wirkungspotenziale entfalten.", related: ["bedeutung-als-gebrauch", "lebensform", "framing", "resonanzraum", "ludwig-wittgenstein"], sourceGroup: "communication" }),
+  term({ id: "bedeutung-als-gebrauch", title: "Bedeutung als Gebrauch", category: CAT_LANGUAGE, short: "Bedeutung entsteht nicht nur durch Definition, sondern durch Gebrauch in sozialen Praktiken.", definition: "Ein Wort wirkt anders, je nachdem, wo, von wem, mit welchem Ziel und in welchem Sprachspiel es verwendet wird.", woek: "Wichtig für politische Sprache, Medienwirkung und Glossararbeit: Begriffe müssen definiert und in ihrer Wirkung beobachtet werden.", related: ["sprachspiel", "lebensform", "wirkungswahrheit", "folgencheck"], sourceGroup: "communication" }),
+  term({ id: "lebensform", title: "Lebensform", category: CAT_LANGUAGE, short: "Lebensform beschreibt den sozialen, kulturellen und praktischen Kontext, in dem Sprache, Regeln und Bedeutungen eingebettet sind.", definition: "Lebensformen prägen, was plausibel, selbstverständlich, zumutbar oder fremd erscheint.", woek: "Relevant für Anschlussfähigkeit, Reaktanz, Resonanzräume und Transformation.", related: ["sprachspiel", "anschlussfaehigkeit", "resonanzraum", "wirklichkeitskonstruktion"], sourceGroup: "communication" }),
+  term({ id: "wahrheit", title: "Wahrheit", category: CAT_LANGUAGE, concept: "precision", short: "Wahrheit bezeichnet die Übereinstimmung oder belastbare Nähe von Aussage und Wirklichkeit.", definition: "Wahrheit ist nicht nur individuelle Aussagekorrektheit, sondern Voraussetzung gemeinsamer Wirklichkeit, Rechtsstaatlichkeit und Wirkungsprüfung.", woek: "Die WÖk behandelt Wahrheit als demokratische Infrastruktur.", related: ["wahrhaftigkeit", "wirkungswahrheit", "fakten", "rechtsstaatlichkeit", "vertrauen"], sourceGroup: "communication" }),
+  term({ id: "wahrhaftigkeit", title: "Wahrhaftigkeit", category: CAT_LANGUAGE, concept: "precision", short: "Wahrhaftigkeit beschreibt die kommunikative Haltung, Informationen nicht absichtlich zu verzerren, zu verschleiern oder manipulierend zu verwenden.", definition: "Wahrhaftigkeit betrifft Absicht, Sorgfalt, Kontext, Auslassung, Ton und Korrekturfähigkeit.", woek: "Sie ist Voraussetzung für Vertrauen, Medienqualität und demokratische Rückkopplung.", related: ["wahrheit", "vertrauen", "medienqualitaet", "wirkungswahrheit"], sourceGroup: "communication" }),
+  term({ id: "scheinwahrheit", title: "Scheinwahrheit", category: CAT_LANGUAGE, concept: "precision", short: "Scheinwahrheit entsteht, wenn eine Aussage formal korrekt oder plausibel wirkt, aber wesentliche Wirkungszusammenhänge ausblendet.", definition: "Scheinwahrheit kann durch Kontextverlust, selektive Zahlen, irreführende Frames oder richtige Teilaussagen mit falscher Folgerung entstehen.", woek: "Sie ist ein Risiko für Faktencheck, Medienqualität und Wirkungswahrheit.", related: ["wirkungswahrheit", "faktencheck", "folgencheck", "framing", "wahrheit"], sourceGroup: "communication" }),
+  term({ id: "fakten", title: "Fakten", category: CAT_LANGUAGE, short: "Fakten sind überprüfbare Sachverhalte oder Aussagen über Zustände und Ereignisse.", definition: "Fakten sind notwendig, aber sie wirken nicht automatisch. Sie werden gedeutet, gerahmt, angenommen oder abgewehrt.", woek: "Wirkung entsteht erst über Deutung, Resonanz, Vertrauen, Handlungsoptionen und Rückkopplung.", related: ["faktencheck", "folgencheck", "wahrheit", "faktenreaktanz", "vertrauen"], sourceGroup: "communication" }),
+  term({ id: "metakommunikation", title: "Metakommunikation", category: CAT_LANGUAGE, short: "Metakommunikation ist Kommunikation über Kommunikation.", definition: "Sie macht sichtbar, wie etwas gesagt, verstanden, gerahmt oder als Beziehungssignal gelesen wird.", woek: "Wichtig, um Wirkmechanismen wie Frames, Reaktanz, Dissonanz oder Vertrauensverschiebung sichtbar zu machen.", related: ["paul-watzlawick", "meta-kognitive-intervention", "reframing", "folgencheck"], sourceGroup: "communication" }),
+
+  term({ id: "platon", title: "Platon", category: CAT_THINKERS, concept: "thinker", publicationStatus: "article_only", short: "Platon bleibt vorerst Backlog, solange er nicht wiederkehrend im WÖk-Content genutzt wird.", definition: "Das Höhlengleichnis kann als Metapher für Wahrnehmung und Deutungsräume dienen; Philosophenherrschaft ist vor allem Abgrenzung gegen Expertokratie.", woek: "Keine große Philosophiegeschichte ohne operative WÖk-Funktion.", related: ["wirklichkeitskonstruktion", "beobachterabhaengigkeit"], sourceGroup: "ethics", reviewStatus: "article_context_only" }),
+  term({ id: "hoehlengleichnis", title: "Höhlengleichnis", category: CAT_THINKERS, concept: "sourceLine", publicationStatus: "article_only", short: "Das Höhlengleichnis bleibt Artikel-only, sofern es nicht wiederkehrend als Metapher für Wahrnehmung und Deutungsräume genutzt wird.", definition: "Der Begriff wird nicht als eigenständiger WÖk-Glossarbegriff publiziert, solange keine aktive Verwendung besteht.", woek: "Backlog statt Philosophiegeschichte.", related: ["platon", "wirklichkeitskonstruktion"], sourceGroup: "ethics", reviewStatus: "article_context_only" }),
+];
+
+additions.push(...controlledClusterAdditions);
+
 const raw = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const terms = raw.terms || [];
 const byId = new Map();
@@ -418,6 +654,46 @@ const coreUpdates = {
     conceptStatus: "Anschlussbegriff",
     relatedTerms: ["schwellenwert", "klimarisiko", "wirkungsrisiko", "baseline-verschiebung"],
   },
+  "scope-1-2-3": {
+    conceptStatus: "Methodenbegriff",
+    canonicalLabel: "Scope 1, Scope 2, Scope 3",
+    shortDefinition: "Scope 1, 2 und 3 sind der bisherige Überblickseintrag zu THG-Emissions-Scopes und verweisen auf die Detailbegriffe Scope 1, Scope 2 und Scope 3.",
+    woekRelation: "Der Überblick bleibt aus Kompatibilitätsgründen erhalten; spezifische Erwähnungen werden auf Scope 1, Scope 2, Scope 3 oder THG-Emissions-Scopes verlinkt.",
+    relatedTerms: ["thg-emissions-scopes", "scope-1", "scope-2", "scope-3", "scope-3-datenqualitaet", "treibhausgasemissionen"],
+  },
+  "kondratieff-zyklus": {
+    conceptStatus: "Quellen-/Bezugslinienbegriff",
+    woekRelation: "Kondratieff-Zyklen bleiben ein allgemeines Deutungsmuster langer wirtschaftlicher Wellen. Der 6. Kondratieff ist davon als WÖk-spezifische Präzisierung zu trennen.",
+    relatedTerms: ["sechster-kondratieff", "nikolai-kondratieff", "basisinnovation", "transformationswelle", "wirkungsinnovation"],
+  },
+  treibhausgasemissionen: {
+    conceptStatus: "Anschlussbegriff",
+    relatedTerms: ["thg-emissions-scopes", "scope-1", "scope-2", "scope-3", "co2e", "global-warming-potential", "emissionsfaktor"],
+  },
+  faktencheck: {
+    conceptStatus: "Anschlussbegriff",
+    woekRelation: "Faktenchecks sind notwendig, aber nicht ausreichend. Die WÖk ergänzt sie um Folgencheck, Wirkungspotenzial, Resonanzraum und Vertrauensfolgen.",
+    relatedTerms: ["fakten", "folgencheck", "faktenreaktanz", "wahrheit", "scheinwahrheit", "metakommunikation"],
+  },
+  folgencheck: {
+    conceptStatus: "WÖk-Präzisierungsbegriff",
+    woekRelation: "Ein Folgencheck prüft Wirkungspfade, Wirkungspotenziale, Wirkungsrisiken und mögliche Zustandsveränderungen einer Aussage, Maßnahme oder Entscheidung.",
+    relatedTerms: ["faktencheck", "fakten", "wirkungspfad", "wirkungspotenzial", "wirkungsrisiko", "metakommunikation", "beobachtung-zweiter-ordnung"],
+  },
+  wirkungswahrheit: {
+    conceptStatus: "WÖk-Kernbegriff",
+    woekRelation: "Wirkungswahrheit beschreibt die Nähe einer Aussage, eines Preises, eines Produkts oder einer Entscheidung zu ihren tatsächlichen Folgen.",
+    relatedTerms: ["wahrheit", "wahrhaftigkeit", "scheinwahrheit", "externalisierung", "folgencheck", "wirkungsblindheit"],
+  },
+  wohnwirkung: {
+    relatedTerms: ["wirkungspflicht-eigentum"],
+  },
+  wirkungsvermietung: {
+    relatedTerms: ["wirkungspflicht-eigentum"],
+  },
+  spekulationslogik: {
+    relatedTerms: ["wirkungspflicht-eigentum"],
+  },
 };
 
 for (const [id, patch] of Object.entries(coreUpdates)) {
@@ -435,6 +711,19 @@ for (const [id, patch] of Object.entries(coreUpdates)) {
   });
   if (patch.relatedTerms) existing.relatedTerms = unique([...(existing.relatedTerms || []), ...patch.relatedTerms]);
   existing.related_terms = existing.relatedTerms || [];
+}
+
+const relationPatches = {
+  wohnwirkung: ["wirkungspflicht-eigentum"],
+  wirkungsvermietung: ["wirkungspflicht-eigentum"],
+  spekulationslogik: ["wirkungspflicht-eigentum"],
+};
+
+for (const [id, relatedTerms] of Object.entries(relationPatches)) {
+  const existing = byId.get(id);
+  if (!existing) continue;
+  existing.relatedTerms = unique([...(existing.relatedTerms || []), ...relatedTerms]);
+  existing.related_terms = existing.relatedTerms;
 }
 
 const termIds = new Set(terms.map((item) => item.termId || item.id || item.slug));
@@ -472,23 +761,60 @@ Stand: ${today}
 
 Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe werden nicht als WÖk-Prägungen ausgegeben, sondern wirkungsökonomisch eingeordnet.
 
+## Klassische Ökonomie und Kapital
+
+- Adam Smith: The Theory of Moral Sentiments
+- Adam Smith: The Wealth of Nations
+- Karl Marx: Das Kapital
+- Karl Marx: Ökonomisch-philosophische Manuskripte
+- Karl Polanyi: The Great Transformation
+- Friedrich Hayek: The Use of Knowledge in Society
+- John Maynard Keynes: The General Theory
+
+## Ethik und Philosophie
+
+- Immanuel Kant: Grundlegung zur Metaphysik der Sitten
+- Immanuel Kant: Kritik der praktischen Vernunft
+- Platon: Politeia, nur Backlog
+- Hannah Arendt: Vita activa / The Human Condition
+- Amartya Sen: Development as Freedom
+- Martha Nussbaum: Creating Capabilities
+- Grundgesetz Art. 1 und Art. 20a, https://www.gesetze-im-internet.de/gg/
+
+## Sprache, Kommunikation und Konstruktivismus
+
+- Ludwig Wittgenstein: Philosophische Untersuchungen
+- Paul Watzlawick, Janet Beavin, Don Jackson: Pragmatics of Human Communication
+- Paul Watzlawick: Die erfundene Wirklichkeit
+- Ernst von Glasersfeld: Radical Constructivism
+- Maturana / Varela: Autopoiesis and Cognition
+- Maturana / Varela: Der Baum der Erkenntnis
+
 ## Systemtheorie / Kybernetik
 
 - Humberto Maturana / Francisco Varela: Autopoiesis and Cognition
 - Heinz von Foerster: Understanding Understanding
+- Heinz von Foerster / Bernhard Pörksen: Wahrheit ist die Erfindung eines Lügners
 - Stafford Beer: Brain of the Firm
+- Stafford Beer: The Heart of Enterprise
+- Stafford Beer: Diagnosing the System for Organizations
 - Stafford Beer: The Viable System Model
+- Gregory Bateson: Steps to an Ecology of Mind
+- Niklas Luhmann: Soziale Systeme
 - Donella Meadows: Leverage Points, https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/
+- Donella Meadows: Thinking in Systems
 - Frederic Vester: Vernetztes Denken
 
 ## Management
 
+- Peter Drucker: The Practice of Management
 - Peter Drucker: The Effective Executive
-- Peter Drucker: Management
+- Peter Drucker: Management: Tasks, Responsibilities, Practices
 - Drucker Institute, https://drucker.institute/
-- St. Galler Management-Modell, https://www.sgmm.ch/en/about-the-model/history/
 - Hans Ulrich: Die Unternehmung als produktives soziales System
+- St. Galler Management-Modell, https://www.sgmm.ch/en/about-the-model/history/
 - Fredmund Malik: Führen Leisten Leben
+- Fredmund Malik: Strategie des Managements komplexer Systeme
 - Malik Management, https://www.malik-management.com/
 
 ## Innovation / Evolution
@@ -499,8 +825,20 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Jochen Röpke: Der lernende Unternehmer
 - EconStor als Recherchepunkt fuer Röpke, Kondratieff und Lernebenen: https://www.econstor.eu/
 
+## Transformation und Wohlstand
+
+- Maja Göpel: Unsere Welt neu denken
+- Kate Raworth: Doughnut Economics
+- Mariana Mazzucato: Mission Economy
+- Wellbeing Economy Alliance, https://weall.org/
+- Stiglitz-Sen-Fitoussi Report
+- OECD Measuring Well-being and Progress, https://www.oecd.org/wise/measuring-well-being-and-progress.htm
+- Stockholm Resilience Centre: Planetary Boundaries, https://www.stockholmresilience.org/research/planetary-boundaries.html
+
 ## Daoismus / Prozessdenken
 
+- Laozi: Daodejing
+- Alan Watts: The Book
 - Alan Watts: Taoist Way / Taoismus-Vorträge
 - Daoismus wird nur als philosophische Bezugslinie fuer Prozessdenken, Nicht-Erzwingen und Eingebettetheit verwendet.
 
@@ -511,7 +849,12 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - EU JRC Life Cycle Assessment, https://eplca.jrc.ec.europa.eu/lifecycleassessment.html
 - EU Product Environmental Footprint, https://eplca.jrc.ec.europa.eu/EnvironmentalFootprint.html
 - ISO 14040, https://www.iso.org/standard/37456.html
+- ISO 14064, https://www.iso.org/standard/66453.html
+- ISO 14067, https://www.iso.org/standard/71206.html
+- GHG Protocol Corporate Standard, https://ghgprotocol.org/corporate-standard
+- GHG Protocol Scope 3 Standard, https://ghgprotocol.org/corporate-value-chain-scope-3-standard
 - GHG Protocol Product Life Cycle Standard, https://ghgprotocol.org/sites/default/files/standards/Product-Life-Cycle-Accounting-Reporting-Standard_041613.pdf
+- ESRS E1 Climate Change, https://www.efrag.org/en/sustainability-reporting/esrs
 - JEC Well-to-Wheels, https://joint-research-centre.ec.europa.eu/welcome-jec-website/jec-activities/well-wheels-analyses_en
 - Cradle to Cradle Certified, https://c2ccertified.org/the-standard
 
@@ -550,6 +893,7 @@ Begriffstatus:
 - Anschlussbegriff
 - Methodenbegriff
 - Quellen-/Bezugslinienbegriff
+- Vordenker-/Bezugslinienbegriff
 - Artikel-only / nicht ins Glossar
 
 Publikationsstatus:
@@ -596,6 +940,19 @@ const audit = {
     "Carbon Capture",
     "Scope-3-Kategorien im Detail",
     "weitere Behavioral-Economics-Effekte nur bei konkreter Verwendung",
+    "Platon",
+    "Höhlengleichnis",
+    "Aristoteles",
+    "Hegel",
+    "Nietzsche",
+    "Habermas",
+    "Foucault",
+    "Bourdieu",
+    "Rawls",
+    "Jonas",
+    "Latour",
+    "Nassehi",
+    "Rosa",
   ],
   terms: [],
 };

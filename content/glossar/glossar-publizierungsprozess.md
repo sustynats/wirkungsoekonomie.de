@@ -24,6 +24,7 @@ Begriffstatus:
 - Anschlussbegriff
 - Methodenbegriff
 - Quellen-/Bezugslinienbegriff
+- Vordenker-/Bezugslinienbegriff
 - Artikel-only / nicht ins Glossar
 
 Publikationsstatus:
