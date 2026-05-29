@@ -804,7 +804,8 @@ function buildLibraryIndex() {
       title: "Bibliothek",
       description: "Zentrale Bibliothek der Wirkungsökonomie.",
       canonicalPath: "/bibliothek/",
-      main: `<section class="hero"><div><p class="hero-kicker">Bibliothek</p><h1 class="hero-title">Alle Dokumente an einem Ort.</h1><p class="hero-subtitle">Die zentrale Übersicht liegt auf der Download- und Bibliotheksseite.</p><div class="hero-actions"><a class="btn btn-primary" href="/downloads.html">Zur Bibliothek</a></div></div></section>`,
+      extraHead: `<meta http-equiv="refresh" content="0; url=/downloads.html">\n    <script>window.location.replace("/downloads.html");</script>`,
+      main: `<section class="hero"><div><p class="hero-kicker">Bibliothek</p><h1 class="hero-title">Alle Dokumente an einem Ort.</h1><p class="hero-subtitle">Du wirst zur vollständigen Bibliothek mit Büchern, langen Ausarbeitungen, Thesenpapieren, Beispielen, Methodik und Rechtsentwürfen weitergeleitet.</p><div class="hero-actions"><a class="btn btn-primary" href="/downloads.html">Zur Bibliothek</a></div></div></section>`,
     }),
   );
 }
