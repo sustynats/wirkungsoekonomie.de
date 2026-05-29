@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-05-29T09:01:54.513Z",
+  "generatedAt": "2026-05-29T09:07:36.828Z",
   "relationships": {
+    "fuenftes-p-planet": {
+      "terms": [
+        "responsible-marketing",
+        "greenwashing",
+        "produktdaten",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": []
+    },
     "agenda-2030": {
       "terms": [
         "sdgs",
@@ -15,7 +24,17 @@
       "terms": [
         "benchmark",
         "scorecard",
-        "woek-id"
+        "woek-id",
+        "nace"
+      ],
+      "documents": []
+    },
+    "assurance": {
+      "terms": [
+        "limited-assurance",
+        "reasonable-assurance",
+        "datenqualitaet",
+        "csrd"
       ],
       "documents": []
     },
@@ -23,7 +42,111 @@
       "terms": [
         "scorecard",
         "finalscore",
-        "woek-id"
+        "woek-id",
+        "archetyp",
+        "datenqualitaet"
+      ],
+      "documents": []
+    },
+    "berichtsdaten": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "sfdr",
+        "steuerungsdaten",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "beschwerdemechanismus-access-to-remedy": {
+      "terms": [
+        "human-rights-due-diligence",
+        "un-guiding-principles",
+        "lksg",
+        "csddd",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "biodiversitaetsrisiko": {
+      "terms": [
+        "tnfd",
+        "nature-related-risks",
+        "ipbes",
+        "eudr",
+        "habitatverlust",
+        "habitatfragmentierung"
+      ],
+      "documents": []
+    },
+    "biodiversity-net-gain-no-net-loss": {
+      "terms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "biodiversitaetsrisiko"
+      ],
+      "documents": []
+    },
+    "carbon-credits": {
+      "terms": [
+        "offsetting-kompensation",
+        "net-zero",
+        "greenwashing",
+        "nichtkompensationsprinzip"
+      ],
+      "documents": []
+    },
+    "cbam": {
+      "terms": [
+        "fit-for-55",
+        "ghg-protocol",
+        "scope-3",
+        "produktwirkung",
+        "wirkungssteuer"
+      ],
+      "documents": []
+    },
+    "clean-industrial-deal": {
+      "terms": [
+        "european-green-deal",
+        "sustainable-finance",
+        "transition-finance",
+        "cbam",
+        "espr"
+      ],
+      "documents": []
+    },
+    "climate-neutral-claim": {
+      "terms": [
+        "klimaneutralitaet",
+        "offsetting-kompensation",
+        "greenwashing",
+        "carbon-credits"
+      ],
+      "documents": []
+    },
+    "commons-gemeingueter": {
+      "terms": [
+        "wirkungsdatenraum",
+        "resonanzraum"
+      ],
+      "documents": []
+    },
+    "conflict-minerals-regulation": {
+      "terms": [
+        "lieferkettendaten",
+        "oecd-leitsaetze",
+        "csddd"
+      ],
+      "documents": []
+    },
+    "csddd": {
+      "terms": [
+        "lksg",
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten"
       ],
       "documents": []
     },
@@ -32,7 +155,35 @@
         "esrs",
         "esg",
         "wirkungsdatenraum",
-        "reporting"
+        "reporting",
+        "efrag",
+        "doppelte-wesentlichkeit",
+        "iro",
+        "xbrl",
+        "esap"
+      ],
+      "documents": []
+    },
+    "daseinsvorsorge": {
+      "terms": [
+        "wirkungshaushalt"
+      ],
+      "documents": []
+    },
+    "datenluecke": {
+      "terms": [
+        "datenqualitaet",
+        "konservative-annahme",
+        "scorecard"
+      ],
+      "documents": []
+    },
+    "datenqualitaet": {
+      "terms": [
+        "datenluecke",
+        "konservative-annahme",
+        "assurance",
+        "wirkungsdaten"
       ],
       "documents": []
     },
@@ -40,7 +191,99 @@
       "terms": [
         "wirkungsdatenraum",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "espr",
+        "produktdaten",
+        "pcf-product-carbon-footprint",
+        "material-footprint",
+        "herkunftstransparenz"
+      ],
+      "documents": []
+    },
+    "dnsh": {
+      "terms": [
+        "eu-taxonomie",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "technische-bewertungskriterien"
+      ],
+      "documents": []
+    },
+    "doppelte-wesentlichkeit": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "iro",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "efrag": {
+      "terms": [
+        "esrs",
+        "csrd",
+        "vsme",
+        "xbrl"
+      ],
+      "documents": []
+    },
+    "empowering-consumers-green-transition": {
+      "terms": [
+        "greenwashing",
+        "nachhaltigkeitslabel",
+        "climate-neutral-claim"
+      ],
+      "documents": []
+    },
+    "energiearmut": {
+      "terms": [
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wohnwirkung",
+        "warmmietenneutralitaet"
+      ],
+      "documents": []
+    },
+    "epd": {
+      "terms": [
+        "lca",
+        "pcr-product-category-rules",
+        "pef-product-environmental-footprint",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "ermoeglichende-taetigkeit": {
+      "terms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "ernaehrungssouveraenitaet": {
+      "terms": [
+        "produktdaten",
+        "lieferkettendaten",
+        "biodiversitaetsrisiko"
+      ],
+      "documents": []
+    },
+    "esap": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "xbrl",
+        "berichtsdaten",
+        "wirkungsdatenraum"
+      ],
+      "documents": []
+    },
+    "esef": {
+      "terms": [
+        "xbrl",
+        "esap",
+        "berichtsdaten"
       ],
       "documents": []
     },
@@ -49,7 +292,19 @@
         "csrd",
         "esrs",
         "nachhaltigkeit",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "sustainable-finance",
+        "sfdr",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": []
+    },
+    "espr": {
+      "terms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "pef-product-environmental-footprint",
+        "rezyklatanteil"
       ],
       "documents": []
     },
@@ -57,7 +312,44 @@
       "terms": [
         "csrd",
         "esg",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "efrag",
+        "esrs-themenstandards",
+        "doppelte-wesentlichkeit",
+        "iro"
+      ],
+      "documents": []
+    },
+    "esrs-themenstandards": {
+      "terms": [
+        "esrs",
+        "csrd",
+        "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "eu-climate-law": {
+      "terms": [
+        "fit-for-55",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ],
+      "documents": []
+    },
+    "eu-ecolabel": {
+      "terms": [
+        "nachhaltigkeitslabel",
+        "produktdaten",
+        "greenwashing"
+      ],
+      "documents": []
+    },
+    "eu-green-bond-standard": {
+      "terms": [
+        "sustainable-finance",
+        "eu-taxonomie",
+        "transition-finance"
       ],
       "documents": []
     },
@@ -67,17 +359,41 @@
         "csrd",
         "esrs",
         "wirkungsrisiko",
-        "nachhaltigkeit"
+        "nachhaltigkeit",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "dnsh",
+        "mindestschutz",
+        "technische-bewertungskriterien",
+        "nace",
+        "mindestschutz-minimum-safeguards",
+        "taxonomy-kpis",
+        "uebergangstaetigkeit",
+        "ermoeglichende-taetigkeit",
+        "sustainable-finance"
+      ],
+      "documents": []
+    },
+    "eudr": {
+      "terms": [
+        "lieferkettendaten",
+        "biodiversitaetsrisiko",
+        "digitaler-produktpass",
+        "produktdaten"
       ],
       "documents": []
     },
     "european-green-deal": {
       "terms": [
+        "clean-industrial-deal",
+        "fit-for-55",
+        "eu-climate-law",
+        "sustainable-finance",
         "eu-taxonomie",
         "csrd",
         "esrs",
-        "digitaler-produktpass",
-        "wirkungsdaten"
+        "cbam",
+        "green-deal-industrial-plan"
       ],
       "documents": []
     },
@@ -100,6 +416,15 @@
       ],
       "documents": []
     },
+    "fit-for-55": {
+      "terms": [
+        "eu-climate-law",
+        "cbam",
+        "ghg-protocol",
+        "transition-risk"
+      ],
+      "documents": []
+    },
     "folgencheck": {
       "terms": [
         "faktencheck",
@@ -112,11 +437,280 @@
         "faktencheck-folgencheck-v1-1"
       ]
     },
+    "forced-labour-regulation": {
+      "terms": [
+        "mindestschutz-minimum-safeguards",
+        "ilo-kernarbeitsnormen",
+        "lieferkettendaten",
+        "nichtkompensationsprinzip"
+      ],
+      "documents": []
+    },
+    "generationengerechtigkeit": {
+      "terms": [
+        "wirkungshaushalt"
+      ],
+      "documents": []
+    },
+    "geplante-obsoleszenz": {
+      "terms": [
+        "digitaler-produktpass",
+        "material-footprint",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "gesundheitsgerechtigkeit": {
+      "terms": [
+        "health-impact-assessment",
+        "hitzestress"
+      ],
+      "documents": []
+    },
+    "ghg-protocol": {
+      "terms": [
+        "scope-1",
+        "scope-2",
+        "scope-3",
+        "pcf-product-carbon-footprint",
+        "sbti"
+      ],
+      "documents": []
+    },
+    "green-claims-directive": {
+      "terms": [
+        "greenwashing",
+        "impact-washing",
+        "climate-neutral-claim",
+        "nachhaltigkeitslabel"
+      ],
+      "documents": []
+    },
+    "green-deal-industrial-plan": {
+      "terms": [
+        "european-green-deal",
+        "clean-industrial-deal",
+        "fit-for-55",
+        "transition-finance"
+      ],
+      "documents": []
+    },
+    "greenwashing": {
+      "terms": [
+        "impact-washing",
+        "sdg-washing",
+        "green-claims-directive",
+        "folgencheck",
+        "reverse-merit-order"
+      ],
+      "documents": []
+    },
     "gri": {
       "terms": [
         "reporting",
         "csrd",
-        "esrs"
+        "esrs",
+        "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "habitatfragmentierung": {
+      "terms": [
+        "habitatverlust",
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "ipbes"
+      ],
+      "documents": []
+    },
+    "habitatverlust": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "habitatfragmentierung",
+        "nature-related-risks",
+        "ipbes",
+        "eudr"
+      ],
+      "documents": []
+    },
+    "haltung": {
+      "terms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungskompetenz",
+        "folgencheck"
+      ],
+      "documents": []
+    },
+    "handlung": {
+      "terms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "handlungsdruck": {
+      "terms": [
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "folgencheck",
+        "wirkungsresilienz"
+      ],
+      "documents": []
+    },
+    "handlungsfaehigkeit": {
+      "terms": [
+        "handlungsspielraum",
+        "wirkungsresilienz",
+        "wirkungskompetenz"
+      ],
+      "documents": []
+    },
+    "handlungspfad": {
+      "terms": [
+        "wirkungspfad",
+        "handlung",
+        "folgencheck",
+        "wirkungsraum"
+      ],
+      "documents": []
+    },
+    "handlungsspielraum": {
+      "terms": [
+        "handlungsfaehigkeit",
+        "wirkung",
+        "wirkungskompetenz",
+        "mensch-planet-demokratie"
+      ],
+      "documents": []
+    },
+    "hard-to-abate-sektoren": {
+      "terms": [
+        "transition-risk",
+        "transition-finance",
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ],
+      "documents": []
+    },
+    "haushaltsneutralitaet": {
+      "terms": [
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "hazardous-substances": {
+      "terms": [
+        "lca",
+        "produktdaten",
+        "digitaler-produktpass",
+        "pef-product-environmental-footprint"
+      ],
+      "documents": []
+    },
+    "health-co-benefits": {
+      "terms": [
+        "health-impact-assessment",
+        "sdgs",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "health-impact-assessment": {
+      "terms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "sdgs",
+        "hitzestress",
+        "health-co-benefits",
+        "gesundheitsgerechtigkeit",
+        "one-health"
+      ],
+      "documents": []
+    },
+    "hebelpunkt": {
+      "terms": [
+        "hebelwirkung",
+        "wirkungsrueckkopplung",
+        "wirkungspfad",
+        "wirkungssteuer"
+      ],
+      "documents": []
+    },
+    "hebelwirkung": {
+      "terms": [
+        "hebelpunkt",
+        "wirkungsrueckkopplung",
+        "wirkungspfad",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "herkunftsnachweis-hkn": {
+      "terms": [
+        "scope-2",
+        "ghg-protocol",
+        "greenwashing",
+        "produktdaten",
+        "wirkungsdaten",
+        "digitaler-produktpass",
+        "herkunftstransparenz"
+      ],
+      "documents": []
+    },
+    "herkunftstransparenz": {
+      "terms": [
+        "herkunftsnachweis-hkn",
+        "digitaler-produktpass",
+        "produktdaten",
+        "lieferkettendaten",
+        "eudr"
+      ],
+      "documents": []
+    },
+    "hfcs-hydrofluorocarbons": {
+      "terms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3",
+        "physical-climate-risk"
+      ],
+      "documents": []
+    },
+    "hitzeschutz-hitzeaktionsplan": {
+      "terms": [
+        "hitzestress",
+        "health-impact-assessment",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
+      ],
+      "documents": []
+    },
+    "hitzestress": {
+      "terms": [
+        "hitzeschutz-hitzeaktionsplan",
+        "health-impact-assessment",
+        "physical-climate-risk",
+        "wirkungsresilienz",
+        "gesundheitsgerechtigkeit",
+        "klimagerechtigkeit",
+        "umweltgerechtigkeit"
+      ],
+      "documents": []
+    },
+    "hochwasserrisiko": {
+      "terms": [
+        "physical-climate-risk",
+        "wasserstress",
+        "wirkungsresilienz",
+        "wirkungshaushalt"
       ],
       "documents": []
     },
@@ -132,6 +726,69 @@
         "wirkungsraeume-gestalten-hosting-v1-0"
       ]
     },
+    "hotspot-analyse": {
+      "terms": [
+        "lca",
+        "pef-product-environmental-footprint",
+        "produktdaten",
+        "wirkungsbewertung",
+        "reverse-merit-order"
+      ],
+      "documents": []
+    },
+    "human-rights-due-diligence": {
+      "terms": [
+        "un-guiding-principles",
+        "oecd-leitsaetze",
+        "ilo-kernarbeitsnormen",
+        "csddd",
+        "lksg",
+        "beschwerdemechanismus-access-to-remedy"
+      ],
+      "documents": []
+    },
+    "human-rights-impact-assessment": {
+      "terms": [
+        "human-rights-due-diligence",
+        "un-guiding-principles",
+        "csddd",
+        "lksg",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
+    "humusaufbau": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "wasserstress",
+        "positive-netto-wirkung",
+        "lca",
+        "regeneration",
+        "renaturierung"
+      ],
+      "documents": []
+    },
+    "hunger-hungerbekaempfung": {
+      "terms": [
+        "sdgs",
+        "agenda-2030",
+        "humusaufbau",
+        "wasserstress",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "hydrologischer-kreislauf": {
+      "terms": [
+        "wasserstress",
+        "humusaufbau",
+        "hitzestress",
+        "biodiversitaetsrisiko",
+        "naturbasierte-loesungen",
+        "renaturierung"
+      ],
+      "documents": []
+    },
     "idgs": {
       "terms": [
         "wirkungskompetenz",
@@ -142,6 +799,203 @@
       "documents": [
         "sdg-sdgplus-referenzrahmen"
       ]
+    },
+    "ilo": {
+      "terms": [
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy",
+        "lksg"
+      ],
+      "documents": []
+    },
+    "ilo-kernarbeitsnormen": {
+      "terms": [
+        "forced-labour-regulation",
+        "mindestschutz-minimum-safeguards",
+        "social-taxonomy",
+        "lieferkettendaten"
+      ],
+      "documents": []
+    },
+    "impact-washing": {
+      "terms": [
+        "greenwashing",
+        "sdg-washing",
+        "wirkungspfad",
+        "datenqualitaet",
+        "folgencheck"
+      ],
+      "documents": []
+    },
+    "insetting": {
+      "terms": [
+        "offsetting-kompensation",
+        "scope-3",
+        "lieferkettendaten",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "inside-out-outside-in": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "csrd"
+      ],
+      "documents": []
+    },
+    "intersektionalitaet": {
+      "terms": [],
+      "documents": []
+    },
+    "ipbes": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "tnfd"
+      ],
+      "documents": []
+    },
+    "ipcc": {
+      "terms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "eu-climate-law"
+      ],
+      "documents": []
+    },
+    "iro": {
+      "terms": [
+        "esrs",
+        "doppelte-wesentlichkeit",
+        "wirkungsrisiko"
+      ],
+      "documents": []
+    },
+    "iso-14040-14044": {
+      "terms": [
+        "lca",
+        "epd",
+        "pef-product-environmental-footprint"
+      ],
+      "documents": []
+    },
+    "issb-ifrs-s1-s2": {
+      "terms": [
+        "tcfd",
+        "transition-risk",
+        "physical-climate-risk",
+        "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "just-transition-mechanism": {
+      "terms": [
+        "transition-finance",
+        "wirkungsfonds",
+        "wirkungseinkommen"
+      ],
+      "documents": []
+    },
+    "kipppunkt-systemschwelle": {
+      "terms": [
+        "wirkungsrisiko",
+        "wirkungspfad",
+        "wirkungsresilienz"
+      ],
+      "documents": []
+    },
+    "klimagerechtigkeit": {
+      "terms": [
+        "just-transition-mechanism"
+      ],
+      "documents": []
+    },
+    "klimaneutralitaet": {
+      "terms": [
+        "net-zero",
+        "greenwashing",
+        "climate-neutral-claim",
+        "offsetting-kompensation"
+      ],
+      "documents": []
+    },
+    "konservative-annahme": {
+      "terms": [
+        "datenluecke",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ],
+      "documents": []
+    },
+    "kosten-des-nicht-handelns": {
+      "terms": [
+        "wirkungshaushalt",
+        "wirkungsrisiko"
+      ],
+      "documents": []
+    },
+    "lca": {
+      "terms": [
+        "iso-14040-14044",
+        "pef-product-environmental-footprint",
+        "epd",
+        "pcf-product-carbon-footprint"
+      ],
+      "documents": []
+    },
+    "liability-risk": {
+      "terms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "stranded-assets",
+        "greenwashing"
+      ],
+      "documents": []
+    },
+    "lieferkettendaten": {
+      "terms": [
+        "csddd",
+        "lksg",
+        "eudr",
+        "scope-3",
+        "digitaler-produktpass"
+      ],
+      "documents": []
+    },
+    "limited-assurance": {
+      "terms": [
+        "assurance",
+        "reasonable-assurance",
+        "datenqualitaet"
+      ],
+      "documents": []
+    },
+    "lksg": {
+      "terms": [
+        "csddd",
+        "lieferkettendaten",
+        "un-guiding-principles",
+        "oecd-leitsaetze"
+      ],
+      "documents": []
+    },
+    "lock-in-pfadabhaengigkeit": {
+      "terms": [
+        "transition-risk",
+        "stranded-assets",
+        "wirkungsrisiko"
+      ],
+      "documents": []
+    },
+    "material-footprint": {
+      "terms": [
+        "produktdaten",
+        "rezyklatanteil",
+        "recyclingquote",
+        "lca"
+      ],
+      "documents": []
     },
     "mensch-planet-demokratie": {
       "terms": [
@@ -154,11 +1008,30 @@
       ],
       "documents": []
     },
+    "mindestschutz-minimum-safeguards": {
+      "terms": [
+        "eu-taxonomie",
+        "oecd-leitsaetze",
+        "un-guiding-principles",
+        "ilo-kernarbeitsnormen",
+        "social-taxonomy"
+      ],
+      "documents": []
+    },
+    "mobilitaetsarmut": {
+      "terms": [
+        "handlungsfaehigkeit",
+        "handlungsspielraum"
+      ],
+      "documents": []
+    },
     "nace": {
       "terms": [
         "eu-taxonomie",
         "woek-id",
-        "scorecard"
+        "scorecard",
+        "taxonomy-navigator",
+        "archetyp"
       ],
       "documents": []
     },
@@ -176,11 +1049,51 @@
         "nachhaltigkeit-systemarchitektur"
       ]
     },
+    "nachhaltigkeitslabel": {
+      "terms": [
+        "eu-ecolabel",
+        "greenwashing",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "naturbasierte-loesungen": {
+      "terms": [
+        "hitzeschutz-hitzeaktionsplan",
+        "hydrologischer-kreislauf"
+      ],
+      "documents": []
+    },
+    "nature-positive": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "nichtkompensationsprinzip",
+        "greenwashing"
+      ],
+      "documents": []
+    },
+    "nature-related-risks": {
+      "terms": [
+        "tnfd",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ],
+      "documents": []
+    },
     "negative-wirkung": {
       "terms": [
         "wirkung",
         "wirkungsrisiko",
         "netto-wirkung"
+      ],
+      "documents": []
+    },
+    "net-zero": {
+      "terms": [
+        "sbti",
+        "transition-plan",
+        "offsetting-kompensation",
+        "carbon-credits"
       ],
       "documents": []
     },
@@ -211,11 +1124,125 @@
       ],
       "documents": []
     },
+    "nfrd": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten"
+      ],
+      "documents": []
+    },
     "nichtkompensationsprinzip": {
       "terms": [
         "reverse-merit-order",
         "wirkungsgrenze",
-        "netto-wirkung"
+        "netto-wirkung",
+        "planetare-grenzen",
+        "nature-positive",
+        "zielkonflikt"
+      ],
+      "documents": []
+    },
+    "oecd-leitsaetze": {
+      "terms": [
+        "mindestschutz-minimum-safeguards",
+        "un-guiding-principles",
+        "csddd",
+        "lksg"
+      ],
+      "documents": []
+    },
+    "oef-organisation-environmental-footprint": {
+      "terms": [
+        "pef-product-environmental-footprint",
+        "lca",
+        "scorecard",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "offsetting-kompensation": {
+      "terms": [
+        "carbon-credits",
+        "insetting",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order"
+      ],
+      "documents": []
+    },
+    "oekosystemleistungen": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks"
+      ],
+      "documents": []
+    },
+    "one-health": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "health-impact-assessment"
+      ],
+      "documents": []
+    },
+    "pai": {
+      "terms": [
+        "sfdr",
+        "sustainable-finance",
+        "wirkungsrisiko",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "pcf-product-carbon-footprint": {
+      "terms": [
+        "ghg-protocol",
+        "scope-3",
+        "lca",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "pcr-product-category-rules": {
+      "terms": [
+        "epd",
+        "lca",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "pef-product-environmental-footprint": {
+      "terms": [
+        "lca",
+        "oef-organisation-environmental-footprint",
+        "epd",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "physical-climate-risk": {
+      "terms": [
+        "tcfd",
+        "transition-risk",
+        "ipcc",
+        "wirkungsrisiko",
+        "hitzestress",
+        "hitzeschutz-hitzeaktionsplan"
+      ],
+      "documents": []
+    },
+    "planetare-grenzen": {
+      "terms": [
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "biodiversitaetsrisiko",
+        "wasserstress"
+      ],
+      "documents": []
+    },
+    "planetary-health": {
+      "terms": [
+        "hitzestress"
       ],
       "documents": []
     },
@@ -224,7 +1251,8 @@
         "wirkung",
         "netto-wirkung",
         "mensch-planet-demokratie",
-        "sdg-plus"
+        "sdg-plus",
+        "zukunftsfaehigkeit"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -235,6 +1263,106 @@
         "wirkung",
         "negative-wirkung",
         "neutrale-wirkung"
+      ],
+      "documents": []
+    },
+    "praevention": {
+      "terms": [
+        "wirkungshaushalt",
+        "t-sroi",
+        "health-impact-assessment"
+      ],
+      "documents": []
+    },
+    "produktdaten": {
+      "terms": [
+        "digitaler-produktpass",
+        "produktwirkung",
+        "pef-product-environmental-footprint",
+        "pcf-product-carbon-footprint",
+        "herkunftstransparenz",
+        "hotspot-analyse",
+        "rohstoffkritikalitaet"
+      ],
+      "documents": []
+    },
+    "qualitaetssicherung": {
+      "terms": [
+        "datenqualitaet",
+        "assurance",
+        "wirkungsbewertung",
+        "scorecard",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "quartierswirkung": {
+      "terms": [
+        "wohnwirkung",
+        "hitzeschutz-hitzeaktionsplan",
+        "wirkungshaushalt"
+      ],
+      "documents": []
+    },
+    "quellenklarheit": {
+      "terms": [
+        "faktencheck",
+        "folgencheck",
+        "datenqualitaet"
+      ],
+      "documents": []
+    },
+    "reasonable-assurance": {
+      "terms": [
+        "assurance",
+        "limited-assurance",
+        "datenqualitaet"
+      ],
+      "documents": []
+    },
+    "rechte-kuenftiger-generationen": {
+      "terms": [
+        "wirkungsgrenze",
+        "wirkungshaushalt"
+      ],
+      "documents": []
+    },
+    "recyclingquote": {
+      "terms": [
+        "rezyklatanteil",
+        "material-footprint",
+        "espr"
+      ],
+      "documents": []
+    },
+    "regeneration": {
+      "terms": [
+        "positive-netto-wirkung",
+        "wirkungsresilienz"
+      ],
+      "documents": []
+    },
+    "renaturierung": {
+      "terms": [
+        "hydrologischer-kreislauf",
+        "habitatfragmentierung"
+      ],
+      "documents": []
+    },
+    "reparierbarkeit-recht-auf-reparatur": {
+      "terms": [
+        "digitaler-produktpass",
+        "produktdaten",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "residual-emissions": {
+      "terms": [
+        "net-zero",
+        "offsetting-kompensation",
+        "carbon-credits",
+        "greenwashing"
       ],
       "documents": []
     },
@@ -254,28 +1382,93 @@
       "terms": [
         "wirkungspotenzial",
         "wirkungspfad",
-        "wirkungsnetz"
+        "wirkungsnetz",
+        "zielkonflikt",
+        "quellenklarheit"
       ],
-      "documents": [
-        "wirkungsraeume-gestalten-hosting-v1-0"
-      ]
+      "documents": []
+    },
+    "responsible-marketing": {
+      "terms": [
+        "greenwashing",
+        "impact-washing",
+        "green-claims-directive",
+        "fuenftes-p-planet"
+      ],
+      "documents": []
     },
     "reverse-merit-order": {
       "terms": [
         "nichtkompensationsprinzip",
         "netto-wirkung",
-        "wirkungsgrenze"
+        "wirkungsgrenze",
+        "planetare-grenzen",
+        "zielkonflikt"
       ],
       "documents": [
         "technische-leitlinien-wustg",
         "beispiel-apfel-wirkungssteuer"
       ]
     },
+    "rezyklatanteil": {
+      "terms": [
+        "recyclingquote",
+        "material-footprint",
+        "espr",
+        "digitaler-produktpass"
+      ],
+      "documents": []
+    },
+    "rohstoffkritikalitaet": {
+      "terms": [
+        "lieferkettendaten",
+        "digitaler-produktpass",
+        "human-rights-due-diligence",
+        "material-footprint"
+      ],
+      "documents": []
+    },
+    "sbti": {
+      "terms": [
+        "ghg-protocol",
+        "net-zero",
+        "transition-plan",
+        "transition-risk"
+      ],
+      "documents": []
+    },
+    "scope-1": {
+      "terms": [
+        "ghg-protocol",
+        "scope-2",
+        "scope-3"
+      ],
+      "documents": []
+    },
+    "scope-2": {
+      "terms": [
+        "ghg-protocol",
+        "scope-1",
+        "scope-3"
+      ],
+      "documents": []
+    },
+    "scope-3": {
+      "terms": [
+        "ghg-protocol",
+        "lieferkettendaten",
+        "pcf-product-carbon-footprint",
+        "cbam"
+      ],
+      "documents": []
+    },
     "scorecard": {
       "terms": [
         "woek-id",
         "benchmark",
-        "finalscore"
+        "finalscore",
+        "wirkungsindikator",
+        "reverse-merit-order"
       ],
       "documents": []
     },
@@ -302,15 +1495,35 @@
         "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"
       ]
     },
+    "sdg-washing": {
+      "terms": [
+        "sdgs",
+        "sdg-plus",
+        "greenwashing",
+        "impact-washing"
+      ],
+      "documents": []
+    },
     "sdgs": {
       "terms": [
         "agenda-2030",
         "sdg-plus",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "hunger-hungerbekaempfung"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
       ]
+    },
+    "sfdr": {
+      "terms": [
+        "sustainable-finance",
+        "pai",
+        "eu-taxonomie",
+        "esg",
+        "kapitalwirkung"
+      ],
+      "documents": []
     },
     "social-credit": {
       "terms": [
@@ -325,6 +1538,7 @@
     "social-taxonomy": {
       "terms": [
         "eu-taxonomie",
+        "esg",
         "csrd",
         "esrs",
         "positive-netto-wirkung",
@@ -332,11 +1546,16 @@
         "scorecard",
         "reverse-merit-order",
         "t-sroi",
-        "wirkungsdaten",
-        "social-credit"
+        "woek-id",
+        "social-credit",
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "ilo-kernarbeitsnormen",
+        "un-guiding-principles",
+        "sdg-plus"
       ],
       "documents": [
-        "social-taxonomy-journalbeitrag-v1-0"
+        "social-taxonomy-wirkungsoekonomie"
       ]
     },
     "spekulationslogik": {
@@ -349,17 +1568,54 @@
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ]
     },
+    "steuerungsdaten": {
+      "terms": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "scorecard"
+      ],
+      "documents": []
+    },
     "stranded-assets": {
       "terms": [
         "wirkungsrisiko",
         "nachhaltigkeit",
-        "transitionsrisiko",
+        "transition-risk",
         "versicherbarkeit",
-        "kapitalzugang"
+        "kapitalzugang",
+        "transition-plan",
+        "kapitalwirkung"
       ],
       "documents": [
         "wp-wohnungsmarkt",
         "stranded-assets-gebaeudebestand"
+      ]
+    },
+    "suffizienz": {
+      "terms": [
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "sustainable-finance": {
+      "terms": [
+        "eu-taxonomie",
+        "sfdr",
+        "pai",
+        "esap",
+        "csrd",
+        "esrs",
+        "eu-green-bond-standard",
+        "transition-finance",
+        "taxonomy-navigator",
+        "esg",
+        "wirkungsdaten",
+        "steuerungsdaten",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": [
+        "social-taxonomy-wirkungsoekonomie"
       ]
     },
     "t-sroi": {
@@ -372,11 +1628,142 @@
         "whitepaper-t-sroi"
       ]
     },
+    "taxonomy-kpis": {
+      "terms": [
+        "eu-taxonomie",
+        "taxonomiefaehigkeit",
+        "taxonomiekonformitaet",
+        "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "taxonomiefaehigkeit": {
+      "terms": [
+        "eu-taxonomie",
+        "taxonomiekonformitaet",
+        "nace"
+      ],
+      "documents": []
+    },
+    "taxonomiekonformitaet": {
+      "terms": [
+        "eu-taxonomie",
+        "dnsh",
+        "mindestschutz-minimum-safeguards",
+        "technische-bewertungskriterien",
+        "taxonomy-kpis"
+      ],
+      "documents": []
+    },
+    "taxonomy-navigator": {
+      "terms": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien",
+        "nace"
+      ],
+      "documents": []
+    },
+    "tcfd": {
+      "terms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "issb-ifrs-s1-s2",
+        "tnfd"
+      ],
+      "documents": []
+    },
+    "technische-bewertungskriterien": {
+      "terms": [
+        "eu-taxonomie",
+        "taxonomy-navigator",
+        "taxonomiekonformitaet"
+      ],
+      "documents": []
+    },
+    "tnfd": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks",
+        "physical-climate-risk",
+        "issb-ifrs-s1-s2"
+      ],
+      "documents": []
+    },
     "transformationswirkung": {
       "terms": [
         "t-sroi",
         "wirkungsarchitektur",
         "wirkungslenkung"
+      ],
+      "documents": []
+    },
+    "transition-finance": {
+      "terms": [
+        "transition-plan",
+        "sustainable-finance",
+        "clean-industrial-deal",
+        "transition-risk"
+      ],
+      "documents": []
+    },
+    "transition-plan": {
+      "terms": [
+        "transition-finance",
+        "sbti",
+        "transition-risk",
+        "net-zero"
+      ],
+      "documents": []
+    },
+    "transition-risk": {
+      "terms": [
+        "tcfd",
+        "transition-plan",
+        "stranded-assets",
+        "clean-industrial-deal"
+      ],
+      "documents": []
+    },
+    "uebergangstaetigkeit": {
+      "terms": [
+        "eu-taxonomie",
+        "transition-finance",
+        "transition-plan",
+        "stranded-assets"
+      ],
+      "documents": []
+    },
+    "umweltgerechtigkeit": {
+      "terms": [
+        "hitzestress",
+        "wasserstress",
+        "wohnwirkung"
+      ],
+      "documents": []
+    },
+    "un-guiding-principles": {
+      "terms": [
+        "mindestschutz-minimum-safeguards",
+        "csddd",
+        "lksg",
+        "social-taxonomy"
+      ],
+      "documents": []
+    },
+    "vermeidene-schaeden-folgekosten": {
+      "terms": [
+        "t-sroi",
+        "wirkungshaushalt",
+        "health-impact-assessment"
+      ],
+      "documents": []
+    },
+    "vsme": {
+      "terms": [
+        "csrd",
+        "esrs",
+        "berichtsdaten",
+        "datenqualitaet"
       ],
       "documents": []
     },
@@ -390,6 +1777,32 @@
         "woek_wohnen_stadt_konzeptpapier_v0_1",
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ]
+    },
+    "wasserstress": {
+      "terms": [
+        "nature-related-risks",
+        "tnfd",
+        "produktdaten",
+        "hydrologischer-kreislauf",
+        "planetare-grenzen",
+        "umweltgerechtigkeit"
+      ],
+      "documents": []
+    },
+    "wesentlicher-beitrag": {
+      "terms": [
+        "eu-taxonomie",
+        "dnsh",
+        "technische-bewertungskriterien"
+      ],
+      "documents": []
+    },
+    "who": {
+      "terms": [
+        "gesundheit",
+        "wirkungsdaten"
+      ],
+      "documents": []
     },
     "wirkmechanismus": {
       "terms": [
@@ -447,7 +1860,11 @@
         "wirkungsdatenraum",
         "woek-id",
         "scorecard",
-        "nwi"
+        "nwi",
+        "wirkung",
+        "wirkungspotenzial",
+        "datenqualitaet",
+        "wirkungsindikator"
       ],
       "documents": []
     },
@@ -456,7 +1873,9 @@
         "csrd",
         "esrs",
         "digitaler-produktpass",
-        "woek-id"
+        "woek-id",
+        "wirkungsregister",
+        "wirkungsdaten"
       ],
       "documents": []
     },
@@ -497,8 +1916,21 @@
     "wirkungshaushalt": {
       "terms": [
         "wirkungslenkung",
-        "wirkungsrückkopplung",
-        "positive-netto-wirkung"
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "haushaltsneutralitaet",
+        "praevention",
+        "vermeidene-schaeden-folgekosten",
+        "kosten-des-nicht-handelns"
+      ],
+      "documents": []
+    },
+    "wirkungsindikator": {
+      "terms": [
+        "wirkungsdaten",
+        "wirkungspfad",
+        "datenqualitaet",
+        "scorecard"
       ],
       "documents": []
     },
@@ -511,8 +1943,7 @@
         "wirkungsarchitektur"
       ],
       "documents": [
-        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
-        "wirkungsraeume-gestalten-hosting-v1-0"
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
       ]
     },
     "wirkungslenkung": {
@@ -616,9 +2047,16 @@
         "wirkungspfad",
         "wirkungsarchitektur"
       ],
-      "documents": [
-        "wirkungsraeume-gestalten-hosting-v1-0"
-      ]
+      "documents": []
+    },
+    "wirkungsregister": {
+      "terms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "scorecard"
+      ],
+      "documents": []
     },
     "wirkungsrente": {
       "terms": [
@@ -634,7 +2072,9 @@
         "resilienz",
         "nachhaltigkeit",
         "positive-netto-wirkung",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "kipppunkt-systemschwelle",
+        "zukunftsfaehigkeit"
       ],
       "documents": []
     },
@@ -662,15 +2102,18 @@
         "positive-netto-wirkung"
       ],
       "documents": [
-        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
-        "wirkungsraeume-gestalten-hosting-v1-0"
+        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
       ]
     },
     "wirkungssteuer": {
       "terms": [
         "wstg",
         "wustg",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "haushaltsneutralitaet",
+        "energiearmut",
+        "mobilitaetsarmut",
+        "klimagerechtigkeit"
       ],
       "documents": [
         "wstg-oktober-2025",
@@ -740,7 +2183,9 @@
       "terms": [
         "wix-vi",
         "warmmietenneutralitaet",
-        "wirkungsvermietung"
+        "wirkungsvermietung",
+        "energiearmut",
+        "quartierswirkung"
       ],
       "documents": [
         "woek_wohnen_stadt_gesamtdossier_v0_1"
@@ -750,7 +2195,9 @@
       "terms": [
         "scorecard",
         "benchmark",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "digitaler-produktpass",
+        "datenqualitaet"
       ],
       "documents": [
         "woek-master-items"
@@ -776,6 +2223,59 @@
       "documents": [
         "technische-leitlinien-wustg"
       ]
+    },
+    "xbrl": {
+      "terms": [
+        "esap",
+        "esef",
+        "csrd",
+        "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "youth-jugendbeteiligung": {
+      "terms": [
+        "wirkungskompetenz"
+      ],
+      "documents": []
+    },
+    "zeitwirkung": {
+      "terms": [
+        "wirkungspfad",
+        "wirkungsrisiko"
+      ],
+      "documents": []
+    },
+    "zielkonflikt": {
+      "terms": [
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "zirkularitaet": {
+      "terms": [
+        "digitaler-produktpass",
+        "material-footprint",
+        "recyclingquote"
+      ],
+      "documents": []
+    },
+    "zugangsgerechtigkeit": {
+      "terms": [
+        "handlungsspielraum"
+      ],
+      "documents": []
+    },
+    "zukunftsfaehigkeit": {
+      "terms": [
+        "positive-netto-wirkung",
+        "wirkungsresilienz"
+      ],
+      "documents": []
     }
   }
 }

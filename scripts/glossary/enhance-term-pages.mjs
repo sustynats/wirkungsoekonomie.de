@@ -523,38 +523,6 @@ function learningBlock(term) {
         </section>`;
 }
 
-const termExampleBlocks = new Map([
-  ["wirkungssteuer", {
-    eyebrow: "Beispielrechnung",
-    title: "Apfel & T-Shirt: Wirkung im Preis",
-    text: "Die Beispielseite zeigt Schritt für Schritt, wie aus Lieferkettendaten eine Scorecard, daraus eine Steuerklasse und daraus ein Endpreis entsteht. Landwirtschaft zeigt ergänzend, wie Apfel, Ei, Kartoffel, Boden, Wasser und Tierwohl in diese Preislogik gehören.",
-    href: "../../erleben/wirkungssteuer-beispiele/",
-    label: "Apfel & T-Shirt ansehen",
-    secondaryHref: "../../fuer/landwirtschaft/",
-    secondaryLabel: "Landwirtschaft vertiefen",
-  }],
-  ["reverse-merit-order", {
-    eyebrow: "Praxisbeispiel",
-    title: "Warum das schwächste Feld entscheidet",
-    text: "Am T-Shirt- und Landwirtschaftsbeispiel wird sichtbar, warum gute Einzelwerte schwere Arbeits-, Chemie-, Wasser-, Tierwohl- oder Bodenschäden nicht überdecken dürfen.",
-    href: "../../erleben/wirkungssteuer-beispiele/#t-shirt",
-    label: "Beispiel T-Shirt ansehen",
-    secondaryHref: "../../fuer/landwirtschaft/",
-    secondaryLabel: "Landwirtschaft vertiefen",
-  }],
-]);
-
-function termExampleBlock(term) {
-  const block = termExampleBlocks.get(term.slug);
-  if (!block) return "";
-  return `<section class="term-summary-card" aria-labelledby="example-${esc(term.slug)}">
-          <p class="section-eyebrow">${esc(block.eyebrow)}</p>
-          <h2 id="example-${esc(term.slug)}">${esc(block.title)}</h2>
-          <p>${esc(block.text)}</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="${esc(block.href)}">${esc(block.label)}</a>${block.secondaryHref ? `<a class="btn btn-secondary" href="${esc(block.secondaryHref)}">${esc(block.secondaryLabel)}</a>` : ""}</div>
-        </section>`;
-}
-
 function termExtraBlock(term) {
   if (term.termId === "folgencheck") {
     const steps = [
@@ -987,7 +955,6 @@ function termPage(term) {
           </section>
         </div>
 ${termExtraBlock(term)}
-${termExampleBlock(term)}
 ${learningBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
