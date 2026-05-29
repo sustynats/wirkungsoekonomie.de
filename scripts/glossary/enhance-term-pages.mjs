@@ -1037,7 +1037,7 @@ function indexPage() {
             });
             if (search instanceof HTMLInputElement) search.value = "";
             apply();
-          }));
+          });
           search?.addEventListener("input", apply);
           apply();
         })();

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T19:06:29.269Z",
+  "generatedAt": "2026-05-29T19:25:31.545Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -1453,7 +1453,7 @@
       "url": "/begriffe/care-oekonomie/",
       "hoverDefinition": "Care-Ökonomie beschreibt Sorge-, Pflege-, Erziehungs-, Beziehungs- und Reproduktionsarbeit als zentrale wirtschaftliche und gesellschaftliche Grundlage.",
       "shortDefinition": "Care-Ökonomie beschreibt Sorge-, Pflege-, Erziehungs-, Beziehungs- und Reproduktionsarbeit als zentrale wirtschaftliche und gesellschaftliche Grundlage.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "synonyms": [
         "Care-Ökonomie"
       ],
@@ -1462,7 +1462,13 @@
         "sorgearbeit",
         "reproduktive-arbeit",
         "wirkungseinkommen",
-        "patriarchat"
+        "patriarchat",
+        "soziale-reproduktion",
+        "wirkungsrente",
+        "feminismus",
+        "feministische-wirtschaftspolitik",
+        "gender-care-gap",
+        "gender-budgeting"
       ]
     },
     "cbam": {
@@ -1907,7 +1913,8 @@
         "woek-id",
         "emissionsfaktor",
         "lebenszyklusinventar",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "gender-data-gap"
       ]
     },
     "dc-laden": {
@@ -2101,7 +2108,8 @@
       "relatedTerms": [
         "dezentralisierung",
         "machtkonzentration",
-        "wirkungsrat"
+        "wirkungsrat",
+        "machtdezentralisierung"
       ]
     },
     "diffusion": {
@@ -2224,6 +2232,25 @@
         "technische-bewertungskriterien",
         "taxonomiekonformitaet",
         "wesentlicher-beitrag"
+      ]
+    },
+    "dominanzlogik": {
+      "label": "Dominanzlogik",
+      "slug": "dominanzlogik",
+      "url": "/begriffe/dominanzlogik/",
+      "hoverDefinition": "Dominanzlogik beschreibt eine Handlungslogik, in der Kontrolle, Hierarchie, Durchsetzung und Machtvorteile im Mittelpunkt stehen.",
+      "shortDefinition": "Dominanzlogik beschreibt eine Handlungslogik, in der Kontrolle, Hierarchie, Durchsetzung und Machtvorteile im Mittelpunkt stehen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Dominanzlogik"
+      ],
+      "relatedTerms": [
+        "kooperationslogik",
+        "patriarchat",
+        "machtkonzentration",
+        "externalisierung",
+        "extraktiver-kapitalismus",
+        "oekofeminismus"
       ]
     },
     "donella-meadows": {
@@ -2583,6 +2610,24 @@
       "relatedTerms": [
         "co2-preis",
         "treibhausgasemissionen"
+      ]
+    },
+    "emotionale-arbeit": {
+      "label": "Emotionale Arbeit",
+      "slug": "emotionale-arbeit",
+      "url": "/begriffe/emotionale-arbeit/",
+      "hoverDefinition": "Emotionale Arbeit beschreibt die Regulation, Darstellung oder Unterstützung von Emotionen als Teil sozialer, beruflicher oder familiärer Arbeit.",
+      "shortDefinition": "Emotionale Arbeit beschreibt die Regulation, Darstellung oder Unterstützung von Emotionen als Teil sozialer, beruflicher oder familiärer Arbeit.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Emotionale Arbeit",
+        "Emotional Labour"
+      ],
+      "relatedTerms": [
+        "sorgearbeit",
+        "unsichtbare-arbeit",
+        "resonanzraum",
+        "vertrauen"
       ]
     },
     "emotionsregulation": {
@@ -3412,7 +3457,9 @@
         "raubtierkapitalismus",
         "extraktiver-kapitalismus",
         "trickle-down-oekonomie",
-        "lineare-wirtschaft"
+        "lineare-wirtschaft",
+        "dominanzlogik",
+        "oekofeminismus"
       ]
     },
     "extraktiver-kapitalismus": {
@@ -3429,7 +3476,8 @@
         "externalisierung",
         "kapitalwirkung",
         "kreislaufwirtschaft",
-        "regenerative-landwirtschaft"
+        "regenerative-landwirtschaft",
+        "dominanzlogik"
       ]
     },
     "fakten": {
@@ -3542,21 +3590,112 @@
         "carbonfaserverstaerkter-kunststoff"
       ]
     },
+    "feminisierung-von-armut": {
+      "label": "Feminisierung von Armut",
+      "slug": "feminisierung-von-armut",
+      "url": "/begriffe/feminisierung-von-armut/",
+      "hoverDefinition": "Feminisierung von Armut beschreibt, dass Frauen oder weiblich gelesene Lebenslagen überdurchschnittlich von Armut betroffen sein können.",
+      "shortDefinition": "Feminisierung von Armut beschreibt, dass Frauen oder weiblich gelesene Lebenslagen überdurchschnittlich von Armut betroffen sein können.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Feminisierung von Armut"
+      ],
+      "relatedTerms": [
+        "gender-pay-gap",
+        "gender-pension-gap",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ]
+    },
+    "feminismus": {
+      "label": "Feminismus",
+      "slug": "feminismus",
+      "url": "/begriffe/feminismus/",
+      "hoverDefinition": "Feminismus bezeichnet Denk- und Handlungsansätze, die Gleichwertigkeit, Selbstbestimmung, Teilhabe und Machtkritik ins Zentrum stellen und patriarchale Strukturen überwinden wollen.",
+      "shortDefinition": "Feminismus bezeichnet Denk- und Handlungsansätze, die Gleichwertigkeit, Selbstbestimmung, Teilhabe und Machtkritik ins Zentrum stellen und patriarchale Strukturen überwinden wollen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Feminismus"
+      ],
+      "relatedTerms": [
+        "patriarchat",
+        "feministische-oekonomie",
+        "care-oekonomie",
+        "sorgearbeit",
+        "gleichwertigkeit",
+        "machtdezentralisierung",
+        "gender-pay-gap",
+        "gender-care-gap",
+        "gender-data-gap",
+        "soziale-reproduktion",
+        "wirkungswert",
+        "kooperationslogik",
+        "feministische-transformation",
+        "oekofeminismus"
+      ]
+    },
     "feministische-oekonomie": {
       "label": "Feministische Ökonomie",
       "slug": "feministische-oekonomie",
       "url": "/begriffe/feministische-oekonomie/",
-      "hoverDefinition": "Feministische Ökonomie untersucht, wie Wirtschaft durch Geschlecht, Care-Arbeit, Machtverhältnisse, unbezahlte Arbeit und soziale Reproduktion geprägt wird.",
-      "shortDefinition": "Feministische Ökonomie untersucht, wie Wirtschaft durch Geschlecht, Care-Arbeit, Machtverhältnisse, unbezahlte Arbeit und soziale Reproduktion geprägt wird.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "hoverDefinition": "Feministische Ökonomie untersucht, wie Wirtschaft durch Geschlecht, Care-Arbeit, unbezahlte Arbeit, Machtverhältnisse, soziale Reproduktion und ungleiche Anerkennung geprägt wird.",
+      "shortDefinition": "Feministische Ökonomie untersucht, wie Wirtschaft durch Geschlecht, Care-Arbeit, unbezahlte Arbeit, Machtverhältnisse, soziale Reproduktion und ungleiche Anerkennung geprägt wird.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "synonyms": [
-        "Feministische Ökonomie"
+        "Feministische Ökonomie",
+        "feministische Wirtschaft",
+        "feministische Wirtschaftswissenschaft",
+        "feministische Wirtschaftslehre"
       ],
       "relatedTerms": [
         "care-oekonomie",
         "sorgearbeit",
         "reproduktive-arbeit",
-        "patriarchat"
+        "patriarchat",
+        "feminismus",
+        "soziale-reproduktion",
+        "unbezahlte-arbeit",
+        "gender-pay-gap",
+        "gender-care-gap",
+        "gender-pension-gap",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "wert",
+        "wirkungswert"
+      ]
+    },
+    "feministische-transformation": {
+      "label": "Feministische Transformation",
+      "slug": "feministische-transformation",
+      "url": "/begriffe/feministische-transformation/",
+      "hoverDefinition": "Feministische Transformation beschreibt Veränderung von Macht-, Arbeits-, Care-, Repräsentations- und Anerkennungsstrukturen in Richtung Gleichwertigkeit.",
+      "shortDefinition": "Feministische Transformation beschreibt Veränderung von Macht-, Arbeits-, Care-, Repräsentations- und Anerkennungsstrukturen in Richtung Gleichwertigkeit.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Feministische Transformation"
+      ],
+      "relatedTerms": [
+        "feminismus",
+        "feministische-wirtschaftspolitik",
+        "machtdezentralisierung",
+        "kooperationslogik"
+      ]
+    },
+    "feministische-wirtschaftspolitik": {
+      "label": "Feministische Wirtschaftspolitik",
+      "slug": "feministische-wirtschaftspolitik",
+      "url": "/begriffe/feministische-wirtschaftspolitik/",
+      "hoverDefinition": "Feministische Wirtschaftspolitik richtet wirtschaftspolitische Entscheidungen auf Gleichwertigkeit, Care, soziale Reproduktion, Teilhabe und Machtdezentralisierung aus.",
+      "shortDefinition": "Feministische Wirtschaftspolitik richtet wirtschaftspolitische Entscheidungen auf Gleichwertigkeit, Care, soziale Reproduktion, Teilhabe und Machtdezentralisierung aus.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Feministische Wirtschaftspolitik"
+      ],
+      "relatedTerms": [
+        "gender-budgeting",
+        "wirkungshaushalt",
+        "care-oekonomie",
+        "feministische-transformation"
       ]
     },
     "fernwirktechnik": {
@@ -3957,6 +4096,124 @@
         "wirkungsbewertung"
       ]
     },
+    "gender-budgeting": {
+      "label": "Gender Budgeting",
+      "slug": "gender-budgeting",
+      "url": "/begriffe/gender-budgeting/",
+      "hoverDefinition": "Gender Budgeting untersucht, wie öffentliche Haushalte und Finanzentscheidungen auf Geschlechtergerechtigkeit und Gleichstellung wirken.",
+      "shortDefinition": "Gender Budgeting untersucht, wie öffentliche Haushalte und Finanzentscheidungen auf Geschlechtergerechtigkeit und Gleichstellung wirken.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gender Budgeting"
+      ],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "feministische-wirtschaftspolitik",
+        "gleichstellung",
+        "care-oekonomie"
+      ]
+    },
+    "gender-care-gap": {
+      "label": "Gender Care Gap",
+      "slug": "gender-care-gap",
+      "url": "/begriffe/gender-care-gap/",
+      "hoverDefinition": "Der Gender Care Gap beschreibt die ungleiche Verteilung unbezahlter Sorgearbeit zwischen den Geschlechtern.",
+      "shortDefinition": "Der Gender Care Gap beschreibt die ungleiche Verteilung unbezahlter Sorgearbeit zwischen den Geschlechtern.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gender Care Gap"
+      ],
+      "relatedTerms": [
+        "sorgearbeit",
+        "gender-pay-gap",
+        "gender-pension-gap",
+        "mental-load",
+        "care-oekonomie",
+        "feministische-oekonomie",
+        "patriarchat",
+        "feminismus",
+        "unbezahlte-arbeit"
+      ]
+    },
+    "gender-data-gap": {
+      "label": "Gender Data Gap",
+      "slug": "gender-data-gap",
+      "url": "/begriffe/gender-data-gap/",
+      "hoverDefinition": "Der Gender Data Gap beschreibt Datenlücken, Verzerrungen oder fehlende Differenzierung, durch die Lebensrealitäten von Frauen oder anderen Gruppen unzureichend erfasst werden.",
+      "shortDefinition": "Der Gender Data Gap beschreibt Datenlücken, Verzerrungen oder fehlende Differenzierung, durch die Lebensrealitäten von Frauen oder anderen Gruppen unzureichend erfasst werden.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gender Data Gap"
+      ],
+      "relatedTerms": [
+        "datenqualitaet",
+        "wirkungsdaten",
+        "gender-mainstreaming",
+        "gleichstellung",
+        "scorecard",
+        "intersektionalitaet",
+        "patriarchat",
+        "feminismus"
+      ]
+    },
+    "gender-mainstreaming": {
+      "label": "Gender Mainstreaming",
+      "slug": "gender-mainstreaming",
+      "url": "/begriffe/gender-mainstreaming/",
+      "hoverDefinition": "Gender Mainstreaming bedeutet, Geschlechterwirkungen systematisch in Planung, Entscheidung, Umsetzung und Evaluation einzubeziehen.",
+      "shortDefinition": "Gender Mainstreaming bedeutet, Geschlechterwirkungen systematisch in Planung, Entscheidung, Umsetzung und Evaluation einzubeziehen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gender Mainstreaming"
+      ],
+      "relatedTerms": [
+        "gender-data-gap",
+        "gleichstellung",
+        "gleichstellungsfolgenabschaetzung"
+      ]
+    },
+    "gender-pay-gap": {
+      "label": "Gender Pay Gap",
+      "slug": "gender-pay-gap",
+      "url": "/begriffe/gender-pay-gap/",
+      "hoverDefinition": "Der Gender Pay Gap beschreibt den Unterschied im durchschnittlichen Einkommen zwischen Frauen und Männern.",
+      "shortDefinition": "Der Gender Pay Gap beschreibt den Unterschied im durchschnittlichen Einkommen zwischen Frauen und Männern.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gender Pay Gap"
+      ],
+      "relatedTerms": [
+        "gender-care-gap",
+        "gender-pension-gap",
+        "gleichstellung",
+        "feministische-oekonomie",
+        "wirkungsrente",
+        "patriarchat",
+        "feminismus",
+        "glaeserne-decke",
+        "patriarchale-dividende",
+        "feminisierung-von-armut"
+      ]
+    },
+    "gender-pension-gap": {
+      "label": "Gender Pension Gap",
+      "slug": "gender-pension-gap",
+      "url": "/begriffe/gender-pension-gap/",
+      "hoverDefinition": "Der Gender Pension Gap beschreibt den Unterschied in Alterseinkünften zwischen Frauen und Männern.",
+      "shortDefinition": "Der Gender Pension Gap beschreibt den Unterschied in Alterseinkünften zwischen Frauen und Männern.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gender Pension Gap"
+      ],
+      "relatedTerms": [
+        "gender-pay-gap",
+        "gender-care-gap",
+        "wirkungsrente",
+        "unbezahlte-arbeit",
+        "feministische-oekonomie",
+        "feminisierung-von-armut"
+      ]
+    },
     "generationengerechtigkeit": {
       "label": "Generationengerechtigkeit",
       "slug": "generationengerechtigkeit",
@@ -4179,6 +4436,39 @@
         "thg-emissions-scopes"
       ]
     },
+    "glaeserne-decke": {
+      "label": "Gläserne Decke",
+      "slug": "glaeserne-decke",
+      "url": "/begriffe/glaeserne-decke/",
+      "hoverDefinition": "Die gläserne Decke beschreibt unsichtbare strukturelle Barrieren, die Aufstieg und Führungsverantwortung trotz formaler Gleichberechtigung begrenzen.",
+      "shortDefinition": "Die gläserne Decke beschreibt unsichtbare strukturelle Barrieren, die Aufstieg und Führungsverantwortung trotz formaler Gleichberechtigung begrenzen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gläserne Decke"
+      ],
+      "relatedTerms": [
+        "gleichstellung",
+        "gender-pay-gap",
+        "machtkonzentration",
+        "glaeserne-klippe"
+      ]
+    },
+    "glaeserne-klippe": {
+      "label": "Gläserne Klippe",
+      "slug": "glaeserne-klippe",
+      "url": "/begriffe/glaeserne-klippe/",
+      "hoverDefinition": "Die gläserne Klippe beschreibt Situationen, in denen Frauen oder marginalisierte Personen besonders häufig in Krisen- oder Hochrisikopositionen berufen werden.",
+      "shortDefinition": "Die gläserne Klippe beschreibt Situationen, in denen Frauen oder marginalisierte Personen besonders häufig in Krisen- oder Hochrisikopositionen berufen werden.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gläserne Klippe",
+        "Glass Cliff"
+      ],
+      "relatedTerms": [
+        "glaeserne-decke",
+        "gleichstellung"
+      ]
+    },
     "glasfaserverstaerkter-kunststoff": {
       "label": "Glasfaserverstärkter Kunststoff / GFK",
       "slug": "glasfaserverstaerkter-kunststoff",
@@ -4193,6 +4483,80 @@
       "relatedTerms": [
         "faserverbundwerkstoff",
         "rotorblatt-recycling"
+      ]
+    },
+    "gleichberechtigung": {
+      "label": "Gleichberechtigung",
+      "slug": "gleichberechtigung",
+      "url": "/begriffe/gleichberechtigung/",
+      "hoverDefinition": "Gleichberechtigung beschreibt die gleiche rechtliche Anerkennung und Behandlung von Menschen.",
+      "shortDefinition": "Gleichberechtigung beschreibt die gleiche rechtliche Anerkennung und Behandlung von Menschen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gleichberechtigung"
+      ],
+      "relatedTerms": [
+        "gleichstellung",
+        "gleichwertigkeit",
+        "reproduktive-rechte"
+      ]
+    },
+    "gleichstellung": {
+      "label": "Gleichstellung",
+      "slug": "gleichstellung",
+      "url": "/begriffe/gleichstellung/",
+      "hoverDefinition": "Gleichstellung beschreibt politische, rechtliche und gesellschaftliche Maßnahmen, die gleiche Chancen, Rechte und Teilhabe praktisch ermöglichen sollen.",
+      "shortDefinition": "Gleichstellung beschreibt politische, rechtliche und gesellschaftliche Maßnahmen, die gleiche Chancen, Rechte und Teilhabe praktisch ermöglichen sollen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gleichstellung"
+      ],
+      "relatedTerms": [
+        "gleichberechtigung",
+        "gleichwertigkeit",
+        "gender-mainstreaming",
+        "gender-budgeting",
+        "intersektionalitaet",
+        "skandinavisches-modell",
+        "gender-pay-gap",
+        "gender-data-gap",
+        "glaeserne-decke",
+        "gleichstellungsfolgenabschaetzung",
+        "glaeserne-klippe"
+      ]
+    },
+    "gleichstellungsfolgenabschaetzung": {
+      "label": "Gleichstellungsfolgenabschätzung",
+      "slug": "gleichstellungsfolgenabschaetzung",
+      "url": "/begriffe/gleichstellungsfolgenabschaetzung/",
+      "hoverDefinition": "Gleichstellungsfolgenabschätzung prüft, welche Auswirkungen eine Maßnahme, Regel oder Entscheidung auf Gleichstellung hat.",
+      "shortDefinition": "Gleichstellungsfolgenabschätzung prüft, welche Auswirkungen eine Maßnahme, Regel oder Entscheidung auf Gleichstellung hat.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gleichstellungsfolgenabschätzung"
+      ],
+      "relatedTerms": [
+        "gender-mainstreaming",
+        "gleichstellung"
+      ]
+    },
+    "gleichwertigkeit": {
+      "label": "Gleichwertigkeit",
+      "slug": "gleichwertigkeit",
+      "url": "/begriffe/gleichwertigkeit/",
+      "hoverDefinition": "Gleichwertigkeit beschreibt die Anerkennung gleicher Würde, Bedeutung und Schutzwürdigkeit aller Menschen.",
+      "shortDefinition": "Gleichwertigkeit beschreibt die Anerkennung gleicher Würde, Bedeutung und Schutzwürdigkeit aller Menschen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Gleichwertigkeit"
+      ],
+      "relatedTerms": [
+        "gleichstellung",
+        "gleichberechtigung",
+        "feminismus",
+        "patriarchat",
+        "koerperliche-selbstbestimmung",
+        "reproduktive-gerechtigkeit"
       ]
     },
     "gleichzeitigkeit-ladeinfrastruktur": {
@@ -5713,9 +6077,9 @@
       "label": "Intersektionalität",
       "slug": "intersektionalitaet",
       "url": "/begriffe/intersektionalitaet/",
-      "hoverDefinition": "Intersektionalität beschreibt, dass Benachteiligungen sich überlagern und gegenseitig verstärken können.",
-      "shortDefinition": "Intersektionalität beschreibt, dass Benachteiligungen sich überlagern und gegenseitig verstärken können.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Intersektionalität beschreibt, dass unterschiedliche Diskriminierungs- und Machtverhältnisse zusammenwirken können.",
+      "shortDefinition": "Intersektionalität beschreibt, dass unterschiedliche Diskriminierungs- und Machtverhältnisse zusammenwirken können.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "synonyms": [
         "Intersektionalität",
         "Intersektionalitaet",
@@ -5725,7 +6089,12 @@
         "intergenerationelle Armut",
         "Bildungsgerechtigkeit"
       ],
-      "relatedTerms": []
+      "relatedTerms": [
+        "gleichstellung",
+        "gender-data-gap",
+        "wirkungsempfaenger",
+        "patriarchat"
+      ]
     },
     "ipbes": {
       "label": "IPBES",
@@ -6344,7 +6713,8 @@
       ],
       "relatedTerms": [
         "informationsueberlastung",
-        "scheinentlastung"
+        "scheinentlastung",
+        "mental-load"
       ]
     },
     "kognitive-dissonanz": {
@@ -6562,6 +6932,40 @@
       ],
       "relatedTerms": [
         "strompreisbestandteile"
+      ]
+    },
+    "kooperationslogik": {
+      "label": "Kooperationslogik",
+      "slug": "kooperationslogik",
+      "url": "/begriffe/kooperationslogik/",
+      "hoverDefinition": "Kooperationslogik beschreibt eine Handlungslogik, in der Zusammenarbeit, Beziehung, gegenseitige Stärkung und geteilte Verantwortung im Mittelpunkt stehen.",
+      "shortDefinition": "Kooperationslogik beschreibt eine Handlungslogik, in der Zusammenarbeit, Beziehung, gegenseitige Stärkung und geteilte Verantwortung im Mittelpunkt stehen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Kooperationslogik"
+      ],
+      "relatedTerms": [
+        "dominanzlogik",
+        "feminismus",
+        "patriarchat",
+        "vertrauen",
+        "feministische-transformation"
+      ]
+    },
+    "koerperliche-selbstbestimmung": {
+      "label": "Körperliche Selbstbestimmung",
+      "slug": "koerperliche-selbstbestimmung",
+      "url": "/begriffe/koerperliche-selbstbestimmung/",
+      "hoverDefinition": "Körperliche Selbstbestimmung beschreibt das Recht und die Fähigkeit, über den eigenen Körper, Gesundheit, Sexualität und Reproduktion frei und sicher zu entscheiden.",
+      "shortDefinition": "Körperliche Selbstbestimmung beschreibt das Recht und die Fähigkeit, über den eigenen Körper, Gesundheit, Sexualität und Reproduktion frei und sicher zu entscheiden.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Körperliche Selbstbestimmung"
+      ],
+      "relatedTerms": [
+        "reproduktive-rechte",
+        "gleichwertigkeit",
+        "reproduktive-gerechtigkeit"
       ]
     },
     "kosten-des-nicht-handelns": {
@@ -7444,6 +7848,24 @@
         "framing"
       ]
     },
+    "machtdezentralisierung": {
+      "label": "Machtdezentralisierung",
+      "slug": "machtdezentralisierung",
+      "url": "/begriffe/machtdezentralisierung/",
+      "hoverDefinition": "Machtdezentralisierung beschreibt die Verteilung von Entscheidungs-, Eigentums-, Daten-, Deutungs- und Gestaltungsmacht auf mehrere Akteure und Ebenen.",
+      "shortDefinition": "Machtdezentralisierung beschreibt die Verteilung von Entscheidungs-, Eigentums-, Daten-, Deutungs- und Gestaltungsmacht auf mehrere Akteure und Ebenen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Machtdezentralisierung"
+      ],
+      "relatedTerms": [
+        "feminismus",
+        "patriarchat",
+        "machtkonzentration",
+        "dezentralisierung-von-macht",
+        "feministische-transformation"
+      ]
+    },
     "machtkonzentration": {
       "label": "Machtkonzentration",
       "slug": "machtkonzentration",
@@ -7463,7 +7885,11 @@
         "privatwirtschaftliche-planwirtschaft",
         "kommunismus",
         "patriarchat",
-        "recht-auf-reparatur"
+        "recht-auf-reparatur",
+        "glaeserne-decke",
+        "machtdezentralisierung",
+        "dominanzlogik",
+        "patriarchale-dividende"
       ]
     },
     "maja-goepel": {
@@ -7691,6 +8117,23 @@
         "viabilitaet",
         "normatives-management",
         "normativer-wert"
+      ]
+    },
+    "mental-load": {
+      "label": "Mental Load",
+      "slug": "mental-load",
+      "url": "/begriffe/mental-load/",
+      "hoverDefinition": "Mental Load beschreibt die mentale Verantwortung für Planung, Organisation, Erinnerung und Koordination von Sorge-, Haushalts- oder Familienaufgaben.",
+      "shortDefinition": "Mental Load beschreibt die mentale Verantwortung für Planung, Organisation, Erinnerung und Koordination von Sorge-, Haushalts- oder Familienaufgaben.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Mental Load"
+      ],
+      "relatedTerms": [
+        "unsichtbare-arbeit",
+        "sorgearbeit",
+        "gender-care-gap",
+        "kognitive-belastung"
       ]
     },
     "mentales-modell": {
@@ -9026,6 +9469,23 @@
         "offshore-netzumlage"
       ]
     },
+    "oekofeminismus": {
+      "label": "Ökofeminismus",
+      "slug": "oekofeminismus",
+      "url": "/begriffe/oekofeminismus/",
+      "hoverDefinition": "Ökofeminismus verbindet feministische Machtkritik mit ökologischer Kritik an Ausbeutung, Dominanz und Externalisierung.",
+      "shortDefinition": "Ökofeminismus verbindet feministische Machtkritik mit ökologischer Kritik an Ausbeutung, Dominanz und Externalisierung.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Ökofeminismus",
+        "Ecofeminism"
+      ],
+      "relatedTerms": [
+        "feminismus",
+        "dominanzlogik",
+        "externalisierung"
+      ]
+    },
     "oekosystemleistungen": {
       "label": "Ökosystemleistungen / Ökosystemfunktionen",
       "slug": "oekosystemleistungen",
@@ -9209,13 +9669,29 @@
         "wirkungsdaten"
       ]
     },
+    "patriarchale-dividende": {
+      "label": "Patriarchale Dividende",
+      "slug": "patriarchale-dividende",
+      "url": "/begriffe/patriarchale-dividende/",
+      "hoverDefinition": "Patriarchale Dividende beschreibt Vorteile, die Menschen in patriarchalen Strukturen durch geschlechtsspezifische Macht- und Anerkennungsordnungen erhalten können.",
+      "shortDefinition": "Patriarchale Dividende beschreibt Vorteile, die Menschen in patriarchalen Strukturen durch geschlechtsspezifische Macht- und Anerkennungsordnungen erhalten können.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Patriarchale Dividende"
+      ],
+      "relatedTerms": [
+        "patriarchat",
+        "machtkonzentration",
+        "gender-pay-gap"
+      ]
+    },
     "patriarchat": {
       "label": "Patriarchat",
       "slug": "patriarchat",
       "url": "/begriffe/patriarchat/",
       "hoverDefinition": "Patriarchat beschreibt historisch gewachsene Macht- und Deutungsordnungen, in denen männlich codierte Dominanz, Kontrolle, Hierarchie und Eigentumslogik strukturell bevorzugt werden.",
       "shortDefinition": "Patriarchat beschreibt historisch gewachsene Macht- und Deutungsordnungen, in denen männlich codierte Dominanz, Kontrolle, Hierarchie und Eigentumslogik strukturell bevorzugt werden.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "synonyms": [
         "Patriarchat"
       ],
@@ -9223,7 +9699,18 @@
         "feministische-oekonomie",
         "care-oekonomie",
         "sorgearbeit",
-        "machtkonzentration"
+        "machtkonzentration",
+        "feminismus",
+        "dominanzlogik",
+        "kooperationslogik",
+        "machtdezentralisierung",
+        "soziale-reproduktion",
+        "gender-pay-gap",
+        "gender-care-gap",
+        "gender-data-gap",
+        "gleichwertigkeit",
+        "intersektionalitaet",
+        "patriarchale-dividende"
       ]
     },
     "paul-watzlawick": {
@@ -10688,14 +11175,47 @@
       "url": "/begriffe/reproduktive-arbeit/",
       "hoverDefinition": "Reproduktive Arbeit umfasst Tätigkeiten, die Leben, Arbeitsfähigkeit, soziale Bindungen und gesellschaftliche Reproduktion ermöglichen.",
       "shortDefinition": "Reproduktive Arbeit umfasst Tätigkeiten, die Leben, Arbeitsfähigkeit, soziale Bindungen und gesellschaftliche Reproduktion ermöglichen.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "synonyms": [
         "Reproduktive Arbeit"
       ],
       "relatedTerms": [
         "care-oekonomie",
         "sorgearbeit",
-        "feministische-oekonomie"
+        "feministische-oekonomie",
+        "soziale-reproduktion"
+      ]
+    },
+    "reproduktive-gerechtigkeit": {
+      "label": "Reproduktive Gerechtigkeit",
+      "slug": "reproduktive-gerechtigkeit",
+      "url": "/begriffe/reproduktive-gerechtigkeit/",
+      "hoverDefinition": "Reproduktive Gerechtigkeit verbindet reproduktive Rechte mit sozialer, gesundheitlicher, ökonomischer und politischer Teilhabe.",
+      "shortDefinition": "Reproduktive Gerechtigkeit verbindet reproduktive Rechte mit sozialer, gesundheitlicher, ökonomischer und politischer Teilhabe.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Reproduktive Gerechtigkeit"
+      ],
+      "relatedTerms": [
+        "reproduktive-rechte",
+        "koerperliche-selbstbestimmung",
+        "gleichwertigkeit"
+      ]
+    },
+    "reproduktive-rechte": {
+      "label": "Reproduktive Rechte",
+      "slug": "reproduktive-rechte",
+      "url": "/begriffe/reproduktive-rechte/",
+      "hoverDefinition": "Reproduktive Rechte umfassen Rechte im Zusammenhang mit Schwangerschaft, Geburt, Familienplanung, Verhütung und reproduktiver Gesundheit.",
+      "shortDefinition": "Reproduktive Rechte umfassen Rechte im Zusammenhang mit Schwangerschaft, Geburt, Familienplanung, Verhütung und reproduktiver Gesundheit.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Reproduktive Rechte"
+      ],
+      "relatedTerms": [
+        "koerperliche-selbstbestimmung",
+        "gleichberechtigung",
+        "reproduktive-gerechtigkeit"
       ]
     },
     "reservekraftwerk": {
@@ -10877,6 +11397,7 @@
         "strukturdeterminiertheit",
         "bestaetigungsfehler",
         "commons-gemeingueter",
+        "emotionale-arbeit",
         "emotionsregulation",
         "faktenargumentation",
         "glossar-backlink-audit",
@@ -11626,7 +12147,8 @@
         "wirkungswert",
         "stakeholder-kapitalismus",
         "zirkularitaetsindikator",
-        "kreislaufwirkung"
+        "kreislaufwirkung",
+        "gender-data-gap"
       ]
     },
     "sdg-plus": {
@@ -11930,7 +12452,8 @@
         "wohlfahrtsstaat",
         "soziale-marktwirtschaft",
         "vertrauen",
-        "daseinsvorsorge"
+        "daseinsvorsorge",
+        "gleichstellung"
       ]
     },
     "smart-charging": {
@@ -12077,18 +12600,27 @@
       "label": "Sorgearbeit",
       "slug": "sorgearbeit",
       "url": "/begriffe/sorgearbeit/",
-      "hoverDefinition": "Sorgearbeit umfasst Tätigkeiten, die Menschen versorgen, pflegen, begleiten, erziehen oder stabilisieren.",
-      "shortDefinition": "Sorgearbeit umfasst Tätigkeiten, die Menschen versorgen, pflegen, begleiten, erziehen oder stabilisieren.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "hoverDefinition": "Sorgearbeit umfasst Tätigkeiten, die Menschen versorgen, pflegen, begleiten, erziehen, stabilisieren oder schützen.",
+      "shortDefinition": "Sorgearbeit umfasst Tätigkeiten, die Menschen versorgen, pflegen, begleiten, erziehen, stabilisieren oder schützen.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "synonyms": [
-        "Sorgearbeit"
+        "Sorgearbeit",
+        "Care-Arbeit",
+        "Sorge-Arbeit",
+        "Care Work"
       ],
       "relatedTerms": [
         "care-oekonomie",
         "reproduktive-arbeit",
         "wirkungswertschoepfung",
         "patriarchat",
-        "feministische-oekonomie"
+        "feministische-oekonomie",
+        "soziale-reproduktion",
+        "unbezahlte-arbeit",
+        "mental-load",
+        "emotionale-arbeit",
+        "feminismus",
+        "gender-care-gap"
       ]
     },
     "soziale-bewaehrtheit": {
@@ -12127,6 +12659,26 @@
         "marktwirtschaft",
         "wstg",
         "skandinavisches-modell"
+      ]
+    },
+    "soziale-reproduktion": {
+      "label": "Soziale Reproduktion",
+      "slug": "soziale-reproduktion",
+      "url": "/begriffe/soziale-reproduktion/",
+      "hoverDefinition": "Soziale Reproduktion beschreibt die gesellschaftlichen Prozesse, durch die Menschen, Beziehungen, Fähigkeiten, Versorgung und soziale Ordnung fortlaufend erhalten werden.",
+      "shortDefinition": "Soziale Reproduktion beschreibt die gesellschaftlichen Prozesse, durch die Menschen, Beziehungen, Fähigkeiten, Versorgung und soziale Ordnung fortlaufend erhalten werden.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Soziale Reproduktion"
+      ],
+      "relatedTerms": [
+        "feministische-oekonomie",
+        "care-oekonomie",
+        "sorgearbeit",
+        "reproduktive-arbeit",
+        "unbezahlte-arbeit",
+        "patriarchat",
+        "feminismus"
       ]
     },
     "sozialismus": {
@@ -13682,6 +14234,44 @@
         "oecd-leitsaetze"
       ]
     },
+    "unbezahlte-arbeit": {
+      "label": "Unbezahlte Arbeit",
+      "slug": "unbezahlte-arbeit",
+      "url": "/begriffe/unbezahlte-arbeit/",
+      "hoverDefinition": "Unbezahlte Arbeit sind Tätigkeiten, die gesellschaftlich notwendig sind, aber nicht oder nicht direkt monetär entlohnt werden.",
+      "shortDefinition": "Unbezahlte Arbeit sind Tätigkeiten, die gesellschaftlich notwendig sind, aber nicht oder nicht direkt monetär entlohnt werden.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Unbezahlte Arbeit"
+      ],
+      "relatedTerms": [
+        "unsichtbare-arbeit",
+        "sorgearbeit",
+        "gender-care-gap",
+        "wirkungseinkommen",
+        "wirkungswert",
+        "feministische-oekonomie",
+        "soziale-reproduktion",
+        "gender-pension-gap"
+      ]
+    },
+    "unsichtbare-arbeit": {
+      "label": "Unsichtbare Arbeit",
+      "slug": "unsichtbare-arbeit",
+      "url": "/begriffe/unsichtbare-arbeit/",
+      "hoverDefinition": "Unsichtbare Arbeit beschreibt Tätigkeiten, die notwendig sind, aber sozial, ökonomisch oder statistisch kaum sichtbar werden.",
+      "shortDefinition": "Unsichtbare Arbeit beschreibt Tätigkeiten, die notwendig sind, aber sozial, ökonomisch oder statistisch kaum sichtbar werden.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Unsichtbare Arbeit"
+      ],
+      "relatedTerms": [
+        "unbezahlte-arbeit",
+        "mental-load",
+        "emotionale-arbeit",
+        "wirkungsblindheit"
+      ]
+    },
     "unternehmerfunktion": {
       "label": "Unternehmerfunktion",
       "slug": "unternehmerfunktion",
@@ -14041,12 +14631,14 @@
         "anpassungskapazitaet",
         "commons",
         "elinor-ostrom",
+        "emotionale-arbeit",
         "erlernte-hilflosigkeit",
         "fakten",
         "faktenargumentation",
         "gesellschaftliche-stabilitaet",
         "informationsueberlastung",
         "kohaerenz",
+        "kooperationslogik",
         "motiviertes-denken",
         "narrativ",
         "orientierung",
@@ -14508,7 +15100,8 @@
         "tauschwert",
         "wirkungswert",
         "systemischer-wert",
-        "normativer-wert"
+        "normativer-wert",
+        "feministische-oekonomie"
       ]
     },
     "werte": {
@@ -14960,7 +15553,8 @@
         "scope-3",
         "scope-3-datenqualitaet",
         "externalisierung",
-        "entfremdung"
+        "entfremdung",
+        "unsichtbare-arbeit"
       ]
     },
     "wirkungsdaten": {
@@ -15010,7 +15604,8 @@
         "bestaetigungsfehler",
         "operatives-management",
         "organisation-environmental-footprint",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "gender-data-gap"
       ]
     },
     "wirkungsdatenraum": {
@@ -15055,7 +15650,10 @@
         "wirkungsfonds",
         "wirkungsrente",
         "amartya-sen",
-        "care-oekonomie"
+        "care-oekonomie",
+        "feministische-oekonomie",
+        "unbezahlte-arbeit",
+        "feminisierung-von-armut"
       ]
     },
     "wirkungsempfaenger": {
@@ -15077,7 +15675,8 @@
         "persona",
         "impact-fit",
         "stakeholder-kapitalismus",
-        "genossenschaftsblindheit"
+        "genossenschaftsblindheit",
+        "intersektionalitaet"
       ]
     },
     "wirkungsethik": {
@@ -15204,7 +15803,9 @@
         "wirkungsfonds",
         "bilanzraum",
         "john-maynard-keynes",
-        "wohlfahrtsstaat"
+        "wohlfahrtsstaat",
+        "feministische-wirtschaftspolitik",
+        "gender-budgeting"
       ]
     },
     "wirkungsindikator": {
@@ -15622,7 +16223,12 @@
       ],
       "relatedTerms": [
         "wirkungseinkommen",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "care-oekonomie",
+        "feministische-oekonomie",
+        "gender-pay-gap",
+        "gender-pension-gap",
+        "feminisierung-von-armut"
       ]
     },
     "wirkungsresilienz": {
@@ -15660,16 +16266,16 @@
         "hochwasserrisiko",
         "kipppunkt-systemschwelle",
         "klimaanpassung",
+        "kritische-energieinfrastruktur",
         "nachhaltigkeit",
         "regeneration",
         "resilienz",
         "schwarzstartfaehigkeit",
         "stressreaktion",
         "systemischer-wert",
-        "viabilitaet",
-        "zukunftsfaehigkeit",
         "versorgungssicherheit",
-        "kritische-energieinfrastruktur"
+        "viabilitaet",
+        "zukunftsfaehigkeit"
       ]
     },
     "wirkungsrisiko": {
@@ -15957,7 +16563,10 @@
         "tauschwert",
         "wertschoepfung",
         "mehrwert",
-        "stakeholder-kapitalismus"
+        "stakeholder-kapitalismus",
+        "feministische-oekonomie",
+        "feminismus",
+        "unbezahlte-arbeit"
       ]
     },
     "wirkungswertschoepfung": {

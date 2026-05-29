@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T19:07:36.033Z",
+  "generatedAt": "2026-05-29T19:26:35.643Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -798,7 +798,13 @@
         "sorgearbeit",
         "reproduktive-arbeit",
         "wirkungseinkommen",
-        "patriarchat"
+        "patriarchat",
+        "soziale-reproduktion",
+        "wirkungsrente",
+        "feminismus",
+        "feministische-wirtschaftspolitik",
+        "gender-care-gap",
+        "gender-budgeting"
       ],
       "documents": []
     },
@@ -1045,7 +1051,8 @@
         "woek-id",
         "emissionsfaktor",
         "lebenszyklusinventar",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "gender-data-gap"
       ],
       "documents": []
     },
@@ -1155,7 +1162,8 @@
       "terms": [
         "dezentralisierung",
         "machtkonzentration",
-        "wirkungsrat"
+        "wirkungsrat",
+        "machtdezentralisierung"
       ],
       "documents": []
     },
@@ -1228,6 +1236,17 @@
         "technische-bewertungskriterien",
         "taxonomiekonformitaet",
         "wesentlicher-beitrag"
+      ],
+      "documents": []
+    },
+    "dominanzlogik": {
+      "terms": [
+        "kooperationslogik",
+        "patriarchat",
+        "machtkonzentration",
+        "externalisierung",
+        "extraktiver-kapitalismus",
+        "oekofeminismus"
       ],
       "documents": []
     },
@@ -1422,6 +1441,15 @@
       "journalArticles": [
         "/blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html"
       ]
+    },
+    "emotionale-arbeit": {
+      "terms": [
+        "sorgearbeit",
+        "unsichtbare-arbeit",
+        "resonanzraum",
+        "vertrauen"
+      ],
+      "documents": []
     },
     "emotionsregulation": {
       "terms": [
@@ -1878,7 +1906,9 @@
         "raubtierkapitalismus",
         "extraktiver-kapitalismus",
         "trickle-down-oekonomie",
-        "lineare-wirtschaft"
+        "lineare-wirtschaft",
+        "dominanzlogik",
+        "oekofeminismus"
       ],
       "documents": []
     },
@@ -1887,7 +1917,8 @@
         "externalisierung",
         "kapitalwirkung",
         "kreislaufwirtschaft",
-        "regenerative-landwirtschaft"
+        "regenerative-landwirtschaft",
+        "dominanzlogik"
       ],
       "documents": []
     },
@@ -1972,12 +2003,68 @@
       ],
       "documents": []
     },
+    "feminisierung-von-armut": {
+      "terms": [
+        "gender-pay-gap",
+        "gender-pension-gap",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "documents": []
+    },
+    "feminismus": {
+      "terms": [
+        "patriarchat",
+        "feministische-oekonomie",
+        "care-oekonomie",
+        "sorgearbeit",
+        "gleichwertigkeit",
+        "machtdezentralisierung",
+        "gender-pay-gap",
+        "gender-care-gap",
+        "gender-data-gap",
+        "soziale-reproduktion",
+        "wirkungswert",
+        "kooperationslogik",
+        "feministische-transformation",
+        "oekofeminismus"
+      ],
+      "documents": []
+    },
     "feministische-oekonomie": {
       "terms": [
         "care-oekonomie",
         "sorgearbeit",
         "reproduktive-arbeit",
-        "patriarchat"
+        "patriarchat",
+        "feminismus",
+        "soziale-reproduktion",
+        "unbezahlte-arbeit",
+        "gender-pay-gap",
+        "gender-care-gap",
+        "gender-pension-gap",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "wert",
+        "wirkungswert"
+      ],
+      "documents": []
+    },
+    "feministische-transformation": {
+      "terms": [
+        "feminismus",
+        "feministische-wirtschaftspolitik",
+        "machtdezentralisierung",
+        "kooperationslogik"
+      ],
+      "documents": []
+    },
+    "feministische-wirtschaftspolitik": {
+      "terms": [
+        "gender-budgeting",
+        "wirkungshaushalt",
+        "care-oekonomie",
+        "feministische-transformation"
       ],
       "documents": []
     },
@@ -2208,6 +2295,76 @@
       ],
       "documents": []
     },
+    "gender-budgeting": {
+      "terms": [
+        "wirkungshaushalt",
+        "feministische-wirtschaftspolitik",
+        "gleichstellung",
+        "care-oekonomie"
+      ],
+      "documents": []
+    },
+    "gender-care-gap": {
+      "terms": [
+        "sorgearbeit",
+        "gender-pay-gap",
+        "gender-pension-gap",
+        "mental-load",
+        "care-oekonomie",
+        "feministische-oekonomie",
+        "patriarchat",
+        "feminismus",
+        "unbezahlte-arbeit"
+      ],
+      "documents": []
+    },
+    "gender-data-gap": {
+      "terms": [
+        "datenqualitaet",
+        "wirkungsdaten",
+        "gender-mainstreaming",
+        "gleichstellung",
+        "scorecard",
+        "intersektionalitaet",
+        "patriarchat",
+        "feminismus"
+      ],
+      "documents": []
+    },
+    "gender-mainstreaming": {
+      "terms": [
+        "gender-data-gap",
+        "gleichstellung",
+        "gleichstellungsfolgenabschaetzung"
+      ],
+      "documents": []
+    },
+    "gender-pay-gap": {
+      "terms": [
+        "gender-care-gap",
+        "gender-pension-gap",
+        "gleichstellung",
+        "feministische-oekonomie",
+        "wirkungsrente",
+        "patriarchat",
+        "feminismus",
+        "glaeserne-decke",
+        "patriarchale-dividende",
+        "feminisierung-von-armut"
+      ],
+      "documents": []
+    },
+    "gender-pension-gap": {
+      "terms": [
+        "gender-pay-gap",
+        "gender-care-gap",
+        "wirkungsrente",
+        "unbezahlte-arbeit",
+        "feministische-oekonomie",
+        "feminisierung-von-armut"
+      ],
+      "documents": []
+    },
     "generationengerechtigkeit": {
       "terms": [
         "wirkungshaushalt"
@@ -2319,10 +2476,68 @@
       ],
       "documents": []
     },
+    "glaeserne-decke": {
+      "terms": [
+        "gleichstellung",
+        "gender-pay-gap",
+        "machtkonzentration",
+        "glaeserne-klippe"
+      ],
+      "documents": []
+    },
+    "glaeserne-klippe": {
+      "terms": [
+        "glaeserne-decke",
+        "gleichstellung"
+      ],
+      "documents": []
+    },
     "glasfaserverstaerkter-kunststoff": {
       "terms": [
         "faserverbundwerkstoff",
         "rotorblatt-recycling"
+      ],
+      "documents": []
+    },
+    "gleichberechtigung": {
+      "terms": [
+        "gleichstellung",
+        "gleichwertigkeit",
+        "reproduktive-rechte"
+      ],
+      "documents": []
+    },
+    "gleichstellung": {
+      "terms": [
+        "gleichberechtigung",
+        "gleichwertigkeit",
+        "gender-mainstreaming",
+        "gender-budgeting",
+        "intersektionalitaet",
+        "skandinavisches-modell",
+        "gender-pay-gap",
+        "gender-data-gap",
+        "glaeserne-decke",
+        "gleichstellungsfolgenabschaetzung",
+        "glaeserne-klippe"
+      ],
+      "documents": []
+    },
+    "gleichstellungsfolgenabschaetzung": {
+      "terms": [
+        "gender-mainstreaming",
+        "gleichstellung"
+      ],
+      "documents": []
+    },
+    "gleichwertigkeit": {
+      "terms": [
+        "gleichstellung",
+        "gleichberechtigung",
+        "feminismus",
+        "patriarchat",
+        "koerperliche-selbstbestimmung",
+        "reproduktive-gerechtigkeit"
       ],
       "documents": []
     },
@@ -3078,7 +3293,12 @@
       ]
     },
     "intersektionalitaet": {
-      "terms": [],
+      "terms": [
+        "gleichstellung",
+        "gender-data-gap",
+        "wirkungsempfaenger",
+        "patriarchat"
+      ],
       "documents": []
     },
     "ipbes": {
@@ -3423,7 +3643,8 @@
     "kognitive-belastung": {
       "terms": [
         "informationsueberlastung",
-        "scheinentlastung"
+        "scheinentlastung",
+        "mental-load"
       ],
       "documents": []
     },
@@ -3551,6 +3772,24 @@
     "konzessionsabgabe": {
       "terms": [
         "strompreisbestandteile"
+      ],
+      "documents": []
+    },
+    "kooperationslogik": {
+      "terms": [
+        "dominanzlogik",
+        "feminismus",
+        "patriarchat",
+        "vertrauen",
+        "feministische-transformation"
+      ],
+      "documents": []
+    },
+    "koerperliche-selbstbestimmung": {
+      "terms": [
+        "reproduktive-rechte",
+        "gleichwertigkeit",
+        "reproduktive-gerechtigkeit"
       ],
       "documents": []
     },
@@ -4027,6 +4266,16 @@
       ],
       "documents": []
     },
+    "machtdezentralisierung": {
+      "terms": [
+        "feminismus",
+        "patriarchat",
+        "machtkonzentration",
+        "dezentralisierung-von-macht",
+        "feministische-transformation"
+      ],
+      "documents": []
+    },
     "machtkonzentration": {
       "terms": [
         "dezentralisierung",
@@ -4037,7 +4286,11 @@
         "privatwirtschaftliche-planwirtschaft",
         "kommunismus",
         "patriarchat",
-        "recht-auf-reparatur"
+        "recht-auf-reparatur",
+        "glaeserne-decke",
+        "machtdezentralisierung",
+        "dominanzlogik",
+        "patriarchale-dividende"
       ],
       "documents": []
     },
@@ -4181,6 +4434,15 @@
         "/blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
         "/blog/leistung-ohne-wirkung.html"
       ]
+    },
+    "mental-load": {
+      "terms": [
+        "unsichtbare-arbeit",
+        "sorgearbeit",
+        "gender-care-gap",
+        "kognitive-belastung"
+      ],
+      "documents": []
     },
     "mentales-modell": {
       "terms": [
@@ -4918,6 +5180,14 @@
       ],
       "documents": []
     },
+    "oekofeminismus": {
+      "terms": [
+        "feminismus",
+        "dominanzlogik",
+        "externalisierung"
+      ],
+      "documents": []
+    },
     "oekosystemleistungen": {
       "terms": [
         "biodiversitaetsrisiko",
@@ -5012,12 +5282,31 @@
       ],
       "documents": []
     },
+    "patriarchale-dividende": {
+      "terms": [
+        "patriarchat",
+        "machtkonzentration",
+        "gender-pay-gap"
+      ],
+      "documents": []
+    },
     "patriarchat": {
       "terms": [
         "feministische-oekonomie",
         "care-oekonomie",
         "sorgearbeit",
-        "machtkonzentration"
+        "machtkonzentration",
+        "feminismus",
+        "dominanzlogik",
+        "kooperationslogik",
+        "machtdezentralisierung",
+        "soziale-reproduktion",
+        "gender-pay-gap",
+        "gender-care-gap",
+        "gender-data-gap",
+        "gleichwertigkeit",
+        "intersektionalitaet",
+        "patriarchale-dividende"
       ],
       "documents": []
     },
@@ -5812,7 +6101,24 @@
       "terms": [
         "care-oekonomie",
         "sorgearbeit",
-        "feministische-oekonomie"
+        "feministische-oekonomie",
+        "soziale-reproduktion"
+      ],
+      "documents": []
+    },
+    "reproduktive-gerechtigkeit": {
+      "terms": [
+        "reproduktive-rechte",
+        "koerperliche-selbstbestimmung",
+        "gleichwertigkeit"
+      ],
+      "documents": []
+    },
+    "reproduktive-rechte": {
+      "terms": [
+        "koerperliche-selbstbestimmung",
+        "gleichberechtigung",
+        "reproduktive-gerechtigkeit"
       ],
       "documents": []
     },
@@ -5891,6 +6197,7 @@
         "strukturdeterminiertheit",
         "bestaetigungsfehler",
         "commons-gemeingueter",
+        "emotionale-arbeit",
         "emotionsregulation",
         "faktenargumentation",
         "glossar-backlink-audit",
@@ -6371,7 +6678,8 @@
         "wirkungswert",
         "stakeholder-kapitalismus",
         "zirkularitaetsindikator",
-        "kreislaufwirkung"
+        "kreislaufwirkung",
+        "gender-data-gap"
       ],
       "documents": []
     },
@@ -6557,7 +6865,8 @@
         "wohlfahrtsstaat",
         "soziale-marktwirtschaft",
         "vertrauen",
-        "daseinsvorsorge"
+        "daseinsvorsorge",
+        "gleichstellung"
       ],
       "documents": []
     },
@@ -6649,7 +6958,13 @@
         "reproduktive-arbeit",
         "wirkungswertschoepfung",
         "patriarchat",
-        "feministische-oekonomie"
+        "feministische-oekonomie",
+        "soziale-reproduktion",
+        "unbezahlte-arbeit",
+        "mental-load",
+        "emotionale-arbeit",
+        "feminismus",
+        "gender-care-gap"
       ],
       "documents": []
     },
@@ -6669,6 +6984,18 @@
         "marktwirtschaft",
         "wstg",
         "skandinavisches-modell"
+      ],
+      "documents": []
+    },
+    "soziale-reproduktion": {
+      "terms": [
+        "feministische-oekonomie",
+        "care-oekonomie",
+        "sorgearbeit",
+        "reproduktive-arbeit",
+        "unbezahlte-arbeit",
+        "patriarchat",
+        "feminismus"
       ],
       "documents": []
     },
@@ -7539,6 +7866,28 @@
       ],
       "documents": []
     },
+    "unbezahlte-arbeit": {
+      "terms": [
+        "unsichtbare-arbeit",
+        "sorgearbeit",
+        "gender-care-gap",
+        "wirkungseinkommen",
+        "wirkungswert",
+        "feministische-oekonomie",
+        "soziale-reproduktion",
+        "gender-pension-gap"
+      ],
+      "documents": []
+    },
+    "unsichtbare-arbeit": {
+      "terms": [
+        "unbezahlte-arbeit",
+        "mental-load",
+        "emotionale-arbeit",
+        "wirkungsblindheit"
+      ],
+      "documents": []
+    },
     "unternehmerfunktion": {
       "terms": [
         "rekombination",
@@ -7727,12 +8076,14 @@
         "anpassungskapazitaet",
         "commons",
         "elinor-ostrom",
+        "emotionale-arbeit",
         "erlernte-hilflosigkeit",
         "fakten",
         "faktenargumentation",
         "gesellschaftliche-stabilitaet",
         "informationsueberlastung",
         "kohaerenz",
+        "kooperationslogik",
         "motiviertes-denken",
         "narrativ",
         "orientierung",
@@ -8001,7 +8352,8 @@
         "tauschwert",
         "wirkungswert",
         "systemischer-wert",
-        "normativer-wert"
+        "normativer-wert",
+        "feministische-oekonomie"
       ],
       "documents": [],
       "journalArticles": [
@@ -8306,7 +8658,8 @@
         "scope-3",
         "scope-3-datenqualitaet",
         "externalisierung",
-        "entfremdung"
+        "entfremdung",
+        "unsichtbare-arbeit"
       ],
       "documents": [],
       "journalArticles": [
@@ -8341,7 +8694,8 @@
         "bestaetigungsfehler",
         "operatives-management",
         "organisation-environmental-footprint",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "gender-data-gap"
       ],
       "documents": []
     },
@@ -8368,7 +8722,10 @@
         "wirkungsfonds",
         "wirkungsrente",
         "amartya-sen",
-        "care-oekonomie"
+        "care-oekonomie",
+        "feministische-oekonomie",
+        "unbezahlte-arbeit",
+        "feminisierung-von-armut"
       ],
       "documents": [
         "wp-einkommen"
@@ -8388,7 +8745,8 @@
         "persona",
         "impact-fit",
         "stakeholder-kapitalismus",
-        "genossenschaftsblindheit"
+        "genossenschaftsblindheit",
+        "intersektionalitaet"
       ],
       "documents": []
     },
@@ -8462,7 +8820,9 @@
         "wirkungsfonds",
         "bilanzraum",
         "john-maynard-keynes",
-        "wohlfahrtsstaat"
+        "wohlfahrtsstaat",
+        "feministische-wirtschaftspolitik",
+        "gender-budgeting"
       ],
       "documents": [],
       "journalArticles": [
@@ -8756,7 +9116,12 @@
     "wirkungsrente": {
       "terms": [
         "wirkungseinkommen",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "care-oekonomie",
+        "feministische-oekonomie",
+        "gender-pay-gap",
+        "gender-pension-gap",
+        "feminisierung-von-armut"
       ],
       "documents": [
         "wp-rente"
@@ -8784,16 +9149,16 @@
         "hochwasserrisiko",
         "kipppunkt-systemschwelle",
         "klimaanpassung",
+        "kritische-energieinfrastruktur",
         "nachhaltigkeit",
         "regeneration",
         "resilienz",
         "schwarzstartfaehigkeit",
         "stressreaktion",
         "systemischer-wert",
-        "viabilitaet",
-        "zukunftsfaehigkeit",
         "versorgungssicherheit",
-        "kritische-energieinfrastruktur"
+        "viabilitaet",
+        "zukunftsfaehigkeit"
       ],
       "documents": [],
       "journalArticles": [
@@ -9008,7 +9373,10 @@
         "tauschwert",
         "wertschoepfung",
         "mehrwert",
-        "stakeholder-kapitalismus"
+        "stakeholder-kapitalismus",
+        "feministische-oekonomie",
+        "feminismus",
+        "unbezahlte-arbeit"
       ],
       "documents": []
     },

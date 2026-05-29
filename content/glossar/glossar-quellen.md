@@ -14,6 +14,20 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Friedrich Hayek: The Use of Knowledge in Society
 - John Maynard Keynes: The General Theory
 
+## Feministische Ökonomie / Care
+
+- Marilyn Waring: If Women Counted
+- Nancy Fraser: Cannibal Capitalism / Crisis of Care
+- Silvia Federici: Revolution at Point Zero / Caliban and the Witch
+- Diane Elson: Gender Budgeting / feminist economics
+- Julie A. Nelson: Feminism, Objectivity and Economics
+- Caroline Criado Perez: Invisible Women
+- ILO: Care Work and Care Jobs for the Future of Decent Work, https://www.ilo.org/global/publications/books/WCMS_633135/lang--en/index.htm
+- UN Women: unpaid care work / gender equality, https://www.unwomen.org/en
+- OECD: unpaid care work / gender data, https://www.oecd.org/gender/
+- Destatis: Gender Pay Gap / Gender Care Gap / Gender Pension Gap, https://www.destatis.de/
+- BMFSFJ: Gleichstellung, Gender Care Gap, Gender Pension Gap, https://www.bmfsfj.de/
+
 ## Ethik und Philosophie
 
 - Immanuel Kant: Grundlegung zur Metaphysik der Sitten

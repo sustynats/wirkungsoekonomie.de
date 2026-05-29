@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T19:06:30.158Z
+Stand: 2026-05-29T19:25:32.129Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 831 |
+| Begriffe im klassischen Glossar | 860 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1819 |
+| Alias-Einträge | 1857 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -104,7 +104,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | Carbon Budget | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Carbon Credits | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Carbonfaserverstärkter Kunststoff / CFK | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
-| Care-Ökonomie | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Care-Ökonomie | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | CBAM / Carbon Border Adjustment Mechanism | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | CCS | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | CHAdeMO | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -143,6 +143,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | Direktrecycling | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Dissonanzreduktion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | DNSH / Do No Significant Harm | Sustainable Finance | ja | ja | ja | ja | ok |
+| Dominanzlogik | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Donella Meadows | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Doppelte Wesentlichkeit | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Downcycling | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
@@ -164,6 +165,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | Emergenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Emissionsfaktor | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Emissionshandel | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Emotionale Arbeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Emotionsregulation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Empowering Consumers for the Green Transition | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Endenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -212,7 +214,11 @@ Stand: 2026-05-29T19:06:30.158Z
 | Faktencheck | Grundbegriff | ja | - | ja | ja | ok |
 | Faktenreaktanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Faserverbundwerkstoff | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
-| Feministische Ökonomie | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Feminisierung von Armut | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Feminismus | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Feministische Ökonomie | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Feministische Transformation | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Feministische Wirtschaftspolitik | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Fernwirktechnik | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Feststoffbatterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | FinalScore | Messbegriff | ja | - | ja | ja | ok |
@@ -234,6 +240,12 @@ Stand: 2026-05-29T19:06:30.158Z
 | Gebrauchswert | Werte, Normativität und Bewertung | ja | - | ja | ja | ok |
 | Gedächtniskonsolidierung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Gemeineigentum | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Gender Budgeting | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gender Care Gap | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gender Data Gap | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gender Mainstreaming | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gender Pay Gap | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gender Pension Gap | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Generationengerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Genossenschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Genossenschaftsblindheit | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
@@ -246,7 +258,13 @@ Stand: 2026-05-29T19:06:30.158Z
 | Gewinn als Test | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Gewöhnung / Habituation | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | GHG Protocol | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Gläserne Decke | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gläserne Klippe | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Glasfaserverstärkter Kunststoff / GFK | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Gleichberechtigung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gleichstellung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gleichstellungsfolgenabschätzung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Gleichwertigkeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Gleichzeitigkeit | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Global Warming Potential / GWP | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Glossar-Backlink-Audit | Glossar-Publizierungsprozess | ja | - | ja | ja | ok |
@@ -320,7 +338,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | Insetting | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Inside-out / Outside-in | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Interdependenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
-| Intersektionalität | Grundbegriff | ja | - | ja | ja | ok |
+| Intersektionalität | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | IPBES | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | IPCC | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | IRO / Impacts, Risks and Opportunities | Reporting und Prüfung | ja | ja | ja | ja | ok |
@@ -366,6 +384,8 @@ Stand: 2026-05-29T19:06:30.158Z
 | Konservative Annahme | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Konstruktives Narrativ | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Konzessionsabgabe | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Kooperationslogik | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Körperliche Selbstbestimmung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Kosten des Nicht-Handelns | Grundbegriff | ja | - | ja | ja | ok |
 | Kraft-Wärme-Kopplung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kreative Rekonstruktion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
@@ -413,6 +433,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | LkSG / Lieferkettensorgfaltspflichtengesetz | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Lock-in / Pfadabhängigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Ludwig Wittgenstein | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
+| Machtdezentralisierung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Machtkonzentration | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Maja Göpel | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
@@ -426,6 +447,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | Megawatt Charging System / MCS | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Mehrwert | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Mensch, Planet und Demokratie | Demokratiebegriff | ja | - | ja | ja | ok |
+| Mental Load | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Mentales Modell | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Merit Order | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Messstellenbetrieb | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -500,6 +522,7 @@ Stand: 2026-05-29T19:06:30.158Z
 | Offsetting / Kompensation | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Offshore-Netzumlage | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Offshore-Windenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Ökofeminismus | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Ökosystemleistungen / Ökosystemfunktionen | Grundbegriff | ja | - | ja | ja | ok |
 | Ölkraftwerk | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | On-Board-Charger | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -510,7 +533,8 @@ Stand: 2026-05-29T19:06:30.158Z
 | Organisation Environmental Footprint / OEF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Orientierung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | PAI / Principal Adverse Impacts | Sustainable Finance | ja | ja | ja | ja | ok |
-| Patriarchat | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Patriarchale Dividende | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Patriarchat | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Paul Watzlawick | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | PCF / Product Carbon Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | PCR / Product Category Rules | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
@@ -585,7 +609,9 @@ Stand: 2026-05-29T19:06:30.158Z
 | Reparierbarkeit | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Repowering | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
-| Reproduktive Arbeit | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Reproduktive Arbeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Reproduktive Gerechtigkeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Reproduktive Rechte | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Reservekraftwerk | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Residual Emissions | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Residuallast | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -649,9 +675,10 @@ Stand: 2026-05-29T19:06:30.158Z
 | Social Credit | Schutzbegriff | ja | - | ja | ja | ok |
 | Social Taxonomy / Sozialtaxonomie | Sustainable Finance | ja | ja | ja | ja | ok |
 | Solarthermie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
-| Sorgearbeit | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Sorgearbeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Soziale Bewährtheit / Social Proof | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Soziale Marktwirtschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Soziale Reproduktion | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Sozialismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Spannungshaltung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Speicher | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -733,6 +760,8 @@ Stand: 2026-05-29T19:06:30.158Z
 | Umspannwerk | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Umweltgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | UN Guiding Principles on Business and Human Rights | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Unbezahlte Arbeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
+| Unsichtbare Arbeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Unternehmerfunktion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Unternehmerisches Lernen | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Upcycling | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
