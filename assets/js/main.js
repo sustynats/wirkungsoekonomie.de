@@ -884,7 +884,7 @@ function loadGlossaryTermsAndInit() {
 
   const script = document.createElement("script");
   const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
-  script.src = new URL("glossaryTerms.js?v=20260523-nachhaltigkeit", baseUrl).href;
+  script.src = new URL("glossaryTerms.js?v=20260529-psych-system", baseUrl).href;
   script.defer = true;
   script.onload = () => initGlossarySystem(window.WIRKUNG_GLOSSARY_TERMS || []);
   document.head.append(script);

@@ -24,6 +24,7 @@ const categoryOrder = [
   "Schutzbegriff",
   "Datenbegriff",
   "Demokratiebegriff",
+  "Psychologische und systemische Wirkmechanismen",
   "Kompetenzbegriff",
   "Praxisbegriff",
   "Prüfbegriff",

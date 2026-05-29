@@ -16,6 +16,7 @@ const categoryOrder = [
   "Schutzbegriff",
   "Datenbegriff",
   "Demokratiebegriff",
+  "Psychologische und systemische Wirkmechanismen",
   "Praxisbegriff",
 ];
 

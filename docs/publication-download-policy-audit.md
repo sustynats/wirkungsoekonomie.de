@@ -1,6 +1,6 @@
 # Publication Download Policy Audit
 
-Stand: 2026-05-29T10:33:35.868Z
+Stand: 2026-05-29T11:38:33.103Z
 
 ## Regel
 

@@ -1,5 +1,5 @@
 # Usability Audit
-Stand: 2026-05-29T10:33:47.059Z
+Stand: 2026-05-29T11:38:44.718Z
 ## Durchgeführte Korrekturen
 - alte öffentliche Labels wie „Detailkonzept“ wurden in nutzerverständlichere „Konzeptpapier“-Sprache überführt.
 - „Einzeldossier“ wurde zu „Praxisdossier“ geglättet.
@@ -8,7 +8,7 @@ Stand: 2026-05-29T10:33:47.059Z
 - mehrfach erzeugte PDF-Labels wurden bereinigt.
 - globale CSS/JS-UX-Schicht unterscheidet Link-, Info- und Dokumentkarten, klappt lange Inhaltsverzeichnisse mobil ein und schützt Tabellen vor Abschneiden.
 ## Prüfumfang und Ergebnis
-- Geprüfte Dateien: 1637
+- Geprüfte Dateien: 1675
 - In diesem finalen Prüflauf neu geänderte Dateien: 311
 - Die bereits angewendeten Korrekturen bleiben im Git-Diff dieses Releases nachvollziehbar.
 - `assets/search/search-index.json`
