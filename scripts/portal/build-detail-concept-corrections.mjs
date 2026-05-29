@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-korrektur-detailkonzepte";
-const JS_VERSION = "20260526-tocfix";
+const JS_VERSION = "20260525-cta-cleanup";
 const EXTRACT = "docs/korrektur-detailkonzepte/docx-extracts";
 
 const detailChapters = [
@@ -108,69 +108,6 @@ const bookAnchors = {
     ["Kapitel 70 - Wohnen", "referenz/kapitel-070-wohnen/"],
     ["Working-Paper Wohnungsmarkt", "dokumente/wp-wohnungsmarkt/"],
   ],
-};
-
-const businessLongDetails = {
-  unternehmen_als_wirkungssysteme: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/",
-    pdf: "assets/downloads/06_woek_wirtschaft_unternehmen_unternehmen_als_wirkungssysteme_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Detailkonzept lesen",
-  },
-  wirkungsorientierte_unternehmensfuehrung: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
-    pdf: "assets/downloads/07_woek_wirtschaft_unternehmen_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Detailkonzept lesen",
-  },
-  wirkungsorientierte_mitarbeiterfuehrung: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
-    pdf: "assets/downloads/07_woek_wirtschaft_unternehmen_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Führungskonzept lesen",
-  },
-  impact_controlling_im_unternehmen: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/",
-    pdf: "assets/downloads/10_woek_wirtschaft_unternehmen_wirkungscontrolling_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Wirkungscontrolling-Konzept lesen",
-  },
-  risikomanagement_wirkungsrisiko_erm: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
-    pdf: "assets/downloads/08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Risikokonzept lesen",
-  },
-  resiliente_wertschoepfungskette: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/",
-    pdf: "assets/downloads/09_woek_wirtschaft_unternehmen_resiliente_wertschoepfungsketten_einkauf_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Lieferkettenkonzept lesen",
-  },
-  produktportfolio_produktentwicklung: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/",
-    pdf: "assets/downloads/11_woek_wirtschaft_unternehmen_produktentwicklung_produktscorecards_dpp_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Produktkonzept lesen",
-  },
-  marketing_fuenftes_p_planet: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/",
-    pdf: "assets/downloads/12_woek_wirtschaft_unternehmen_marketing_vertrieb_fuenftes_p_planet_detailkonzept_v1_0.pdf",
-    label: "Ausführliches 5P-Konzept lesen",
-  },
-  organisation_kultur_verantwortung: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
-    pdf: "assets/downloads/07_woek_wirtschaft_unternehmen_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Führungskonzept lesen",
-  },
-  transformation_geschaeftsmodellpruefung: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-uebergangspfade/",
-    pdf: "assets/downloads/14_woek_wirtschaft_unternehmen_transformation_kmu_tauglichkeit_uebergangspfade_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Transformationskonzept lesen",
-  },
-  governance_boni_anreizsysteme: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
-    pdf: "assets/downloads/07_woek_wirtschaft_unternehmen_wirkungsorientierte_unternehmensfuehrung_detailkonzept_v1_0.pdf",
-    label: "Ausführliches Governance-Konzept lesen",
-  },
-  kmu_tauglichkeit_pilotierung: {
-    href: "wirkungsfelder/wirtschaft-unternehmen/transformation-kmu-uebergangspfade/",
-    pdf: "assets/downloads/14_woek_wirtschaft_unternehmen_transformation_kmu_tauglichkeit_uebergangspfade_detailkonzept_v1_0.pdf",
-    label: "Ausführliches KMU-Konzept lesen",
-  },
 };
 
 const ranks = [
@@ -359,86 +296,11 @@ function sanitizePublicText(text) {
     .replace(/Tools/g, "Werkzeuge")
     .replace(/Tool-/g, "Werkzeug-/")
     .replace(/technische Arbeitsanweisungen/g, "redaktionelle Arbeitsnotizen")
-    .replace(/Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Werkzeugbezug\. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt/g, "Für diesen Unterbereich stehen drei öffentliche Zugänge bereit: eine verständliche Onlinefassung, ein Konzept-PDF mit fachlicher Logik und ein Dossier mit Beispielen, Datenquellen, Berechnungswegen und Grenzen. Die Onlinefassung enthält den vollständigen fachlichen Inhalt");
+    .replace(/Für diesen Unterbereich entstehen künftig drei öffentliche Zugänge: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Werkzeugbezug\. Die Online-Fassung enthält keine internen Arbeitsanweisungen, sondern den vollständigen fachlichen Inhalt/g, "Für diesen Unterbereich stehen drei öffentliche Zugänge bereit: eine verständliche Online-Seite, ein vollständiges Detailkonzept als Download und ein Einzeldossier mit Beispielen, Datenquellen, Berechnungswegen und Werkzeugbezug. Die Online-Fassung enthält den vollständigen fachlichen Inhalt");
 }
 
 function dossierHref(rank, slug) {
   return `${rank.dossierBase}/${slug}/`;
-}
-
-function assetExists(target) {
-  return Boolean(target) && (fs.existsSync(path.join(ROOT, target)) || /^https?:/.test(target));
-}
-
-function publicPdf(target) {
-  if (!target) return "";
-  if (/^https?:/.test(target)) return target;
-  const pdf = target.replace(/\.(docx|doc)$/i, ".pdf");
-  return fs.existsSync(path.join(ROOT, pdf)) ? pdf : "";
-}
-
-function longDetailFor(rank, slug) {
-  if (rank.id !== "business") return null;
-  const item = businessLongDetails[slug];
-  if (!item) return null;
-  return {
-    ...item,
-    pdf: fs.existsSync(path.join(ROOT, item.pdf)) ? item.pdf : "",
-  };
-}
-
-function topicPdf(prefix, slug) {
-  const variants = [
-    slug,
-    slug.replaceAll("-", "_"),
-    slug.replaceAll("_", "-"),
-  ];
-  const candidates = [...new Set(variants.map((variant) => `assets/downloads/${prefix}_${variant}_v0_1.pdf`))];
-  return candidates.find((target) => fs.existsSync(path.join(ROOT, target))) || "";
-}
-
-function topicMaterialItems(rank, slug, title, primary = "detail") {
-  const longDetail = longDetailFor(rank, slug);
-  const concept = longDetail?.pdf || topicPdf("woek_detailkonzept", slug);
-  const dossier = topicPdf("woek_einzeldossier", slug);
-  const conceptItem = {
-    kicker: "Konzept-PDF",
-    title: longDetail?.pdf ? "Ausführliches Detailkonzept herunterladen" : "Detailkonzept herunterladen",
-    text: `Fachliche PDF-Fassung zu „${title}“: Problem, WÖk-Perspektive, Methodik, politische Anschlussfähigkeit und Schutzgrenzen.`,
-    href: concept,
-    label: "Konzept-PDF herunterladen",
-  };
-  const dossierItem = {
-    kicker: "Dossier-PDF",
-    title: sourceQuality(sourceMarkdownRel(rank, "einzeldossier", slug)).isShort ? "Kurz-Dossier herunterladen" : "Dossier herunterladen",
-    text: sourceQuality(sourceMarkdownRel(rank, "einzeldossier", slug)).isShort
-      ? `Kurze PDF-Fassung zu „${title}“: Praxisfrage, Anwendung, Datenquellen, Bewertungslogik und Grenzen. Keine umfassende Langfassung.`
-      : `Praxisnahe PDF-Fassung zu „${title}“: Beispiel, Daten, Annahmen, Bewertungsweg, Ergebnisinterpretation und Grenzen.`,
-    href: dossier,
-    label: "Dossier-PDF herunterladen",
-  };
-  return primary === "dossier" ? [dossierItem, conceptItem] : [conceptItem, dossierItem];
-}
-
-function rankMaterialItems(rank) {
-  const collection = publicPdf(rank.download);
-  const standard = publicPdf("assets/downloads/woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx");
-  return [
-    {
-      kicker: "PDF-Sammlung",
-      title: "Detailkonzepte als Sammlung",
-      text: `Sammel-PDF mit mehreren Detailkonzepten aus dem Bereich „${rank.label}“. Für einzelne Themen nutze die jeweilige Detailseite.`,
-      href: collection,
-      label: "PDF-Sammlung herunterladen",
-    },
-    {
-      kicker: "Methodik",
-      title: "Publikationsstandard",
-      text: "Erläutert, wie Detailkonzepte und Dossiers strukturiert werden und worin sich beide Formate unterscheiden.",
-      href: standard,
-      label: "Methodik-PDF herunterladen",
-    },
-  ];
 }
 
 function splitDetailSections(rank) {
@@ -462,37 +324,6 @@ function paragraph(text) {
   return `<p>${escapeHtml(text)}</p>`;
 }
 
-function cleanHeadingTitle(title) {
-  return title.replace(/^\s*\d{1,3}[\.)]\s+/, "").trim();
-}
-
-function isSourceTocEntry(line) {
-  return (
-    /^Inhaltsverzeichnis$/i.test(line) ||
-    /^\d{1,3}[\.)]\s+/.test(line) ||
-    /^[-*]\s+\[?[^\]]+\]?\(#/.test(line) ||
-    /^\[[^\]]+\]\(#/.test(line)
-  );
-}
-
-function stripSourceTocLines(lines) {
-  const out = [];
-  let skippingToc = false;
-  for (const line of lines) {
-    if (/^Inhaltsverzeichnis$/i.test(line) || /^#{1,6}\s+Inhaltsverzeichnis$/i.test(line)) {
-      skippingToc = true;
-      continue;
-    }
-    if (skippingToc) {
-      if (!line.trim()) continue;
-      if (isSourceTocEntry(line)) continue;
-      skippingToc = false;
-    }
-    out.push(line);
-  }
-  return out;
-}
-
 function mdishToHtml(lines, topicTitle) {
   const html = [];
   const toc = [];
@@ -505,23 +336,12 @@ function mdishToHtml(lines, topicTitle) {
   for (const raw of lines) {
     const line = raw.trim();
     if (!line || line === topicTitle) continue;
-    const markdownHeading = line.match(/^#{1,3}\s+(.+)$/);
-    if (markdownHeading) {
-      flush();
-      const title = cleanHeadingTitle(markdownHeading[1]);
-      if (/^Inhaltsverzeichnis$/i.test(title)) continue;
-      const id = slugify(title);
-      toc.push([id, title]);
-      html.push(heading(2, id, title));
-      continue;
-    }
     const numbered = line.match(/^(\d{1,2})\.\s+(.+)$/);
     if (numbered) {
       flush();
-      const title = cleanHeadingTitle(numbered[2]);
-      const id = slugify(title);
-      toc.push([id, title]);
-      html.push(heading(2, id, title));
+      const id = slugify(numbered[2]);
+      toc.push([id, numbered[2]]);
+      html.push(heading(2, id, numbered[2]));
     } else if (/^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß /&+-]{2,80}$/.test(line) && !line.endsWith(".")) {
       flush();
       html.push(`<p class="card-kicker">${escapeHtml(line)}</p>`);
@@ -531,48 +351,6 @@ function mdishToHtml(lines, topicTitle) {
   }
   flush();
   return { html: html.join("\n"), toc };
-}
-
-function sourceMarkdownRel(rank, prefix, slug) {
-  if (rank.id !== "business") return "";
-  const rel = `docs/wirtschaft-unternehmen/docx-extracts/woek_${prefix}_${slug}_v0_1.md`;
-  return fs.existsSync(path.join(ROOT, rel)) ? rel : "";
-}
-
-function sourceQuality(rel) {
-  if (!rel) return { words: 0, isShort: true };
-  const text = read(rel).replace(/[#*_>`|-]/g, " ");
-  const words = text.trim().split(/\s+/).filter(Boolean).length;
-  return { words, isShort: words < 900 };
-}
-
-function cleanSourceLines(rel, title) {
-  const lines = sanitizePublicText(read(rel))
-    .split(/\n+/)
-    .map((line) => line.trim())
-    .map((line) => line
-      .replace(/Einzeldossier mit Beispielen, Datenquellen, Berechnungslogik und Umsetzung\.?/gi, "")
-      .replace(/Dieses Einzeldossier/g, "Dieses Kurz-Dossier")
-      .replace(/Einzeldossier/g, "Kurz-Dossier")
-      .replace(/Werkzeug-\/Logik/g, "Werkzeuglogik")
-      .replace(/\s+v0\.1\b/gi, "")
-      .trim())
-    .filter(Boolean)
-    .filter((line) => !/^Wirkung statt Kapital/i.test(line))
-    .filter((line) => !/^Arbeitsfassung/i.test(line))
-    .filter((line) => !/^Autorin:/i.test(line))
-    .filter((line) => !/^Referenz:/i.test(line))
-    .filter((line) => !/^Version:/i.test(line))
-    .filter((line) => !/^Stand:/i.test(line))
-    .filter((line) => !/^#\s*Online-HTML-Version/i.test(line))
-    .filter((line) => !/Dieses Dossier soll vollständig online lesbar sein/i.test(line))
-    .filter((line) => !/Codex/i.test(line));
-  return stripSourceTocLines(lines);
-}
-
-function renderSourceMarkdown(rel, title) {
-  if (!rel) return null;
-  return mdishToHtml(cleanSourceLines(rel, title), title);
 }
 
 function page({ rel, title, description, section, type, body }) {
@@ -650,25 +428,6 @@ function readingNotice(kind) {
   return `<aside class="citation-note" role="note"><p class="card-kicker">Onlinefassung</p><h2>Du liest die Onlinefassung</h2><p>Du liest die Onlinefassung ${label}. Die Downloadfassung und die Druckfunktion findest du am Ende der Seite.</p></aside>`;
 }
 
-function formatNotice(kind, words = 0, longDetail = null) {
-  const isShort = kind === "Kurz-Dossier";
-  const longDetailSentence = longDetail
-    ? ` Die ausführliche fachliche Ausarbeitung liegt als verlinktes Detailkonzept vor.`
-    : "";
-  if (isShort) {
-    return `<aside class="citation-note" role="note"><p class="card-kicker">Kurz-Dossier</p><h2>Was diese Seite ist</h2><p>Diese Seite ist ein Kurz-Dossier mit Praxisfrage, Anwendung, Datenquellen, Bewertungslogik und Grenzen. Sie ist keine umfassende Langfassung und kein vollständiges Konzeptpapier.${longDetailSentence}</p><p class="muted">Umfang der Quellfassung: rund ${words} Wörter.</p></aside>`;
-  }
-  return `<aside class="citation-note" role="note"><p class="card-kicker">Onlinefassung</p><h2>Du liest die Onlinefassung</h2><p>Du liest die Onlinefassung dieses Dossiers. Die Downloadfassung und die Druckfunktion findest du am Ende der Seite.</p></aside>`;
-}
-
-function longDetailNotice(base, longDetail, title) {
-  if (!longDetail) return "";
-  const pdfLink = longDetail.pdf
-    ? `<a class="text-link" href="${href(base, longDetail.pdf)}">PDF herunterladen</a>`
-    : "";
-  return `<section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Ausführliches Konzept</p><h2>Langfassung zu diesem Thema</h2><p>Für „${escapeHtml(title)}“ gibt es ein ausführliches Detailkonzept. Diese Seite hier ist der kurze Dossier-Zugang; die fachliche Langfassung erklärt Problem, Methodik, politische Anschlussfähigkeit und Schutzgrenzen.</p><div class="portal-card-actions no-print"><a class="text-link" href="${href(base, longDetail.href)}">${escapeHtml(longDetail.label)}</a>${pdfLink}</div></aside></section>`;
-}
-
 function referenceBlock(base, rank) {
   return `<section class="section" aria-labelledby="reference-frame"><div class="portal-reference-block">
     <p class="hero-kicker">Referenzrahmen</p>
@@ -702,29 +461,24 @@ function politicalBlock() {
   </div></section>`;
 }
 
-function downloadBlock(base, items, intro = "Du liest die Onlinefassung. PDFs und Druckfunktion ergänzen die Webfassung am Ende der Seite.") {
-  const links = items.filter((item) => assetExists(item.href));
-  return `<section class="section" aria-labelledby="downloads"><div class="section-header"><p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>${heading(2, "downloads", "Downloads und Materialien")}<p>${escapeHtml(intro)}</p></div><div class="card-grid three">
-    <article class="card"><p class="card-kicker">Druck</p><h3>Seite drucken</h3><p>Erzeugt eine Druckfassung der aktuell gelesenen Onlinefassung.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button></div></article>
-    ${links.map((item) => `<article class="card"><p class="card-kicker">${escapeHtml(item.kicker || "PDF")}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p><div class="portal-card-actions no-print"><a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label || "PDF herunterladen")}</a></div></article>`).join("")}
-    ${links.length ? "" : `<article class="card"><p class="card-kicker">Hinweis</p><h3>PDF wird ergänzt</h3><p>Für diese Onlinefassung ist noch keine separate öffentliche PDF-Fassung freigegeben. Die Onlinefassung bleibt der aktuelle Lesezugang.</p></article>`}
-  </div></section>`;
+function downloadBlock(base, rank, extra = []) {
+  const items = [
+    ["Umfangreiche Korrekturfassung Word", rank.download],
+    ["Publikationsstandard Word", "assets/downloads/woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"],
+    ...extra,
+  ].filter(([, target]) => fs.existsSync(path.join(ROOT, target)) || /^https?:/.test(target));
+  return `<section class="section" aria-labelledby="downloads"><div class="card"><p class="hero-kicker">Arbeitsmaterial</p>${heading(2, "downloads", "Vertiefung und Arbeitsmaterial")}<p>Du liest die Onlinefassung. Downloads und Druckfunktion ergänzen die Webfassung als Arbeitsmaterial.</p><div class="portal-card-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>${items.map(([label, target]) => `<a class="btn btn-secondary" href="${href(base, target)}">${escapeHtml(label)}</a>`).join("")}</div></div></section>`;
 }
 
 function relatedBlock(base, rank, slug, currentKind = "detail") {
-  const longDetail = longDetailFor(rank, slug);
   const cards = [
     `<article class="card"><h3>Übersicht</h3><p>Der Bereich bündelt Einstiege, Methoden, Beispiele und Arbeitsmaterial.</p><a class="text-link" href="${href(base, rank.portal)}">Zur Übersicht</a></article>`,
   ];
-  if (longDetail) {
-    cards.push(`<article class="card"><h3>Ausführliches Detailkonzept</h3><p>Die fachliche Langfassung zu diesem Thema.</p><a class="text-link" href="${href(base, longDetail.href)}">${escapeHtml(longDetail.label)}</a></article>`);
-  }
   if (currentKind !== "detail") {
     cards.push(`<article class="card"><h3>Detailkonzept</h3><p>Fachliche und systemische Logik des Unterbereichs.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a></article>`);
   }
   if (currentKind !== "dossier") {
-    const dossierIsShort = sourceQuality(sourceMarkdownRel(rank, "einzeldossier", slug)).isShort;
-    cards.push(`<article class="card"><h3>${dossierIsShort ? "Kurz-Dossier" : "Dossier"}</h3><p>${dossierIsShort ? "Kurzfassung mit Praxisfrage, Bewertungsweg, Datenquellen und Grenzen." : "Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, Beispiel und Grenzen."}</p><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Dossier lesen</a></article>`);
+    cards.push(`<article class="card"><h3>Einzeldossier</h3><p>Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, Beispiel und Grenzen.</p><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Dossier lesen</a></article>`);
   }
   return `<section class="section" aria-labelledby="related"><div class="section-header"><p class="hero-kicker">Verknüpfung</p>${heading(2, "related", "Verwandte Seiten und Materialien")}</div><div class="card-grid three">${cards.join("")}</div></section>`;
 }
@@ -768,17 +522,15 @@ function dossierBody(rank, title, summary) {
 function detailPage(rank, topic, detailHtml, detailToc) {
   const [slug, title, summary] = topic;
   const rel = `${rank.base}/detailkonzepte/${slug}/index.html`;
-  const longDetail = longDetailFor(rank, slug);
   const fullToc = [...detailChapters.map((chapter) => [slugify(chapter), chapter]), ...detailToc.filter(([id]) => !detailChapters.some((chapter) => slugify(chapter) === id))];
   page({
     rel,
     title: `Detailkonzept ${title} | Wirkungsökonomie`,
-    description: longDetail ? `Einstieg und Verknüpfung zum ausführlichen Detailkonzept zu ${title}.` : `Öffentliche Detailkonzeptseite zu ${title}.`,
+    description: `Vollständiges öffentliches Detailkonzept zu ${title}.`,
     section: rank.label,
     type: "Detailkonzept",
-    body: (base, route) => `${hero(base, `Detailkonzept · ${rank.label}`, `Detailkonzept ${title}`, summary, longDetail ? "Einstieg, Kurzfassung und Verknüpfung zur fachlichen Langfassung." : "Fachliche Onlinefassung mit politischer Anschlussfähigkeit, Werkzeugbezug und Arbeitsmaterial.", longDetail?.href || dossierHref(rank, slug), longDetail?.label || "Dossier lesen")}
+    body: (base, route) => `${hero(base, `Detailkonzept · ${rank.label}`, `Detailkonzept ${title}`, summary, "Fachliche Onlinefassung mit politischer Anschlussfähigkeit, Werkzeugbezug und Arbeitsmaterial.", dossierHref(rank, slug), "Dossier lesen")}
       <section class="section narrow">${readingNotice("Detailkonzept")}</section>
-      ${longDetailNotice(base, longDetail, title)}
       <section class="section narrow">${metaCard("Korrekturfassung / vollständiges Detailkonzept")}</section>
       <section class="section narrow">${tocBlock(fullToc)}</section>
       <section class="section article-section"><article class="article-body fulltext-reader">${detailSupplement(rank, title, summary)}${heading(2, "kompendiumsauszug", "Auszug aus der umfangreichen Korrekturfassung")}${detailHtml}</article></section>
@@ -787,41 +539,31 @@ function detailPage(rank, topic, detailHtml, detailToc) {
       ${referenceBlock(base, rank)}
       ${bookBlock(base, rank)}
       ${relatedBlock(base, rank, slug, "detail")}
-      ${downloadBlock(base, topicMaterialItems(rank, slug, title, "detail"), "Das Konzept-PDF enthält die fachliche Logik dieses Unterbereichs. Das Dossier-PDF ergänzt Praxisfrage, Annahmen, Bewertungsweg und Grenzen.")}`,
+      ${downloadBlock(base, rank)}`,
   });
 }
 
 function dossierPage(rank, topic) {
   const [slug, title, summary] = topic;
   const rel = `${dossierHref(rank, slug)}index.html`;
-  const sourceRel = sourceMarkdownRel(rank, "einzeldossier", slug);
-  const source = renderSourceMarkdown(sourceRel, title);
-  const quality = sourceQuality(sourceRel);
-  const isShort = quality.isShort;
-  const longDetail = longDetailFor(rank, slug);
-  const pageKind = isShort ? "Kurz-Dossier" : "Dossier";
-  const bodyHtml = source?.html || dossierBody(rank, title, summary);
-  const fullToc = source?.toc?.length ? source.toc : dossierChapters.map((chapter) => [slugify(chapter), chapter]);
+  const fullToc = dossierChapters.map((chapter) => [slugify(chapter), chapter]);
   page({
     rel,
-    title: `${pageKind} ${title} | Wirkungsökonomie`,
-    description: isShort
-      ? `Kurz-Dossier zu ${title}: Praxisfrage, Anwendung, Datenquellen, Bewertungslogik und Grenzen.`
-      : `Öffentliches Dossier zu ${title}.`,
+    title: `Einzeldossier ${title} | Wirkungsökonomie`,
+    description: `Vollständiges öffentliches Einzeldossier zu ${title}.`,
     section: rank.label,
-    type: pageKind,
-    body: (base, route) => `${hero(base, `${pageKind} · ${rank.label}`, `${pageKind} ${title}`, summary, isShort ? "Praxisfrage, Anwendung, Datenquellen, Bewertungslogik und Grenzen. Keine umfassende Langfassung." : "Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen.", longDetail?.href || `${rank.base}/detailkonzepte/${slug}/`, longDetail?.label || "Detailkonzept lesen")}
-      <section class="section narrow">${formatNotice(pageKind, quality.words, longDetail)}</section>
-      ${longDetailNotice(base, longDetail, title)}
+    type: "Einzeldossier",
+    body: (base, route) => `${hero(base, `Einzeldossier · ${rank.label}`, `Einzeldossier ${title}`, summary, "Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen.", `${rank.base}/detailkonzepte/${slug}/`, "Detailkonzept lesen")}
+      <section class="section narrow">${readingNotice("Dossier")}</section>
       <section class="section narrow">${metaCard("Korrekturfassung / vollständiges Einzeldossier")}</section>
       <section class="section narrow">${tocBlock(fullToc)}</section>
-      <section class="section article-section"><article class="article-body fulltext-reader">${bodyHtml}</article></section>
+      <section class="section article-section"><article class="article-body fulltext-reader">${dossierBody(rank, title, summary)}</article></section>
       ${politicalBlock()}
       ${toolsBlock(base)}
       ${referenceBlock(base, rank)}
       ${bookBlock(base, rank)}
       ${relatedBlock(base, rank, slug, "dossier")}
-      ${downloadBlock(base, topicMaterialItems(rank, slug, title, "dossier"), isShort ? "Das Kurz-Dossier-PDF enthält die praxisnahe Anwendung in komprimierter Form. Das Konzept-PDF erklärt die fachliche Logik und Methodik des gleichen Unterbereichs." : "Das Dossier-PDF enthält die praxisnahe Anwendung. Das Konzept-PDF erklärt die fachliche Logik und Methodik des gleichen Unterbereichs.")}`,
+      ${downloadBlock(base, rank)}`,
   });
 }
 
@@ -845,26 +587,7 @@ function indexPage(rank) {
       ${isImpact ? `<section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Worum geht es?</p><h2>Impact Controlling übersetzt Wirkung in Steuerung</h2><p>Impact Controlling übersetzt Wirkung in Steuerung: für Strategie, Risiko, Budgetierung, Beschaffung, Berichtswesen und politische Entscheidungen.</p></aside></section>` : `<section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Orientierung</p><h2>Detailkonzepte und Dossiers</h2><p>Jeder Unterbereich besitzt eine Detailkonzept-Seite und ein Dossier. Downloads ergänzen die Onlinefassungen am Seitenende.</p></aside></section>`}
       <section class="section"><div class="card-grid three">${rank.topics.map(([slug, title, summary]) => `<article class="card"><p class="card-kicker">Detailkonzept</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Dossier lesen</a></div></article>`).join("")}</div></section>
       ${isImpact ? `<section class="section" aria-labelledby="politics-index"><div class="card"><p class="hero-kicker">Umsetzung</p>${heading(2, "politics-index", "Was muss Politik hier tun?")}<div class="card-grid three"><article class="card"><h3>Datenzugang sichern</h3><p>Wirkungsdaten brauchen klare Zugänge, Standards und Schutzregeln.</p></article><article class="card"><h3>Prüfstandards definieren</h3><p>Bewertungen müssen nachvollziehbar, versioniert und überprüfbar bleiben.</p></article><article class="card"><h3>Datenschutz und Geschäftsgeheimnisse schützen</h3><p>Transparenz darf nicht zu Personenbewertung oder Offenlegung legitimer Schutzinteressen werden.</p></article><article class="card"><h3>KMU entlasten</h3><p>Kleine Organisationen brauchen einfache Nachweise, Hilfen und stufenweise Pfade.</p></article><article class="card"><h3>Beschaffung nach Wirkung ermöglichen</h3><p>Öffentliche Vergabe kann Wirkung berücksichtigen, ohne demokratische Entscheidung zu automatisieren.</p></article><article class="card"><h3>Evaluation und Korrektur sichern</h3><p>Wirkungsdaten bereiten Entscheidungen vor. Rechtsschutz, Evaluation und Korrektur bleiben notwendig.</p></article></div></div></section>` : ""}
-      ${downloadBlock(base, rankMaterialItems(rank), "Sammlungen dienen als ergänzendes Arbeitsmaterial. Für ein konkretes Thema führen die Karten zur jeweiligen Onlinefassung mit passendem Konzept- und Dossier-PDF.")}`,
-  });
-}
-
-function dossierIndexPage(rank) {
-  const rel = `${rank.dossierBase}/index.html`;
-  page({
-    rel,
-    title: `Dossiers ${rank.label} | Wirkungsökonomie`,
-    description: `Praxisnahe Dossiers im Bereich ${rank.label}.`,
-    section: rank.label,
-    type: "Dossiers",
-    body: (base, route) => `${hero(base, `Dossiers · ${rank.label}`, `Dossiers ${rank.label}`, "Praxisfragen, Beispiele, Annahmen, Bewertungswege und Grenzen.", "Dossiers zeigen die Anwendung eines Konzepts: Was wird geprüft, welche Daten werden gebraucht, welche Annahmen gelten und was darf aus dem Ergebnis nicht abgeleitet werden?", `${rank.base}/detailkonzepte/`, "Detailkonzepte ansehen")}
-      <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Unterschied der Formate</p><h2>Konzept oder Dossier?</h2><p><strong>Detailkonzepte</strong> erklären die fachliche Logik: Problem, WÖk-Perspektive, Methodik, politische Anschlussfähigkeit und Schutzgrenzen. <strong>Dossiers</strong> zeigen die Anwendung: Praxisfrage, Daten, Annahmen, Bewertungsweg, Ergebnisinterpretation und Grenzen.</p></aside></section>
-      <section class="section"><div class="card-grid three">${rank.topics.map(([slug, title, summary]) => {
-        const isShort = sourceQuality(sourceMarkdownRel(rank, "einzeldossier", slug)).isShort;
-        const longDetail = longDetailFor(rank, slug);
-        return `<article class="card"><p class="card-kicker">${isShort ? "Kurz-Dossier" : "Dossier"}</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><p>${isShort ? "Kurzer Praxiszugang mit Datenquellen, Bewertungslogik und Grenzen. Keine umfassende Langfassung." : "Enthält Praxisfrage, Beispiel, Daten- und Annahmenlogik sowie Grenzen der Bewertung."}</p><div class="portal-card-actions"><a class="text-link" href="${href(base, dossierHref(rank, slug))}">Dossier lesen</a><a class="text-link" href="${href(base, longDetail?.href || `${rank.base}/detailkonzepte/${slug}/`)}">${longDetail ? "Ausführliches Konzept lesen" : "Konzept lesen"}</a></div></article>`;
-      }).join("")}</div></section>
-      ${downloadBlock(base, rankMaterialItems(rank), "Sammlungen ergänzen die einzelnen Onlinefassungen. Einzelne Dossier-PDFs findest du auf der jeweiligen Dossierseite.")}`,
+      ${downloadBlock(base, rank)}`,
   });
 }
 
@@ -879,18 +602,16 @@ function workshopPage(rank) {
       <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Werkstatt</p><h2>Öffentlich lesbare Arbeitsbibliothek</h2><p>Diese Seite bündelt die Webfassungen und Exportdateien des Bereichs.</p></aside></section>
       <section class="section"><div class="card-grid three">
         <article class="card"><p class="card-kicker">Übersicht</p><h3>${escapeHtml(rank.label)}</h3><p>Einstieg und Kontextzugang.</p><a class="text-link" href="${href(base, rank.portal)}">Zur Übersicht</a></article>
-        <article class="card"><p class="card-kicker">Detailkonzepte</p><h3>Langfassungen</h3><p>Alle Unterbereiche als öffentliche Webfassung.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/`)}">Detailkonzepte lesen</a></article>
-        <article class="card"><p class="card-kicker">Dossiers</p><h3>Praxisnahe Anwendungen</h3><p>Praxisfragen, Bewertungswege, Daten, Annahmen und Grenzen.</p><a class="text-link" href="${href(base, `${rank.dossierBase}/`)}">Dossiers lesen</a></article>
+        <article class="card"><p class="card-kicker">Detailkonzepte</p><h3>Langfassungen</h3><p>Alle Unterbereiche als öffentliche Webfassung.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/`)}">Detailkonzepte öffnen</a></article>
         ${rank.topics.map(([slug, title, summary]) => `<article class="card"><p class="card-kicker">Unterbereich</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a></article>`).join("")}
       </div></section>
-      ${downloadBlock(base, rankMaterialItems(rank), "Sammlungen und Methodik-PDFs ergänzen die einzelnen Onlinefassungen.")}`,
+      ${downloadBlock(base, rank)}`,
   });
 }
 
 function buildRank(rank) {
   const sections = splitDetailSections(rank);
   indexPage(rank);
-  dossierIndexPage(rank);
   workshopPage(rank);
   for (const topic of rank.topics) {
     const [, title] = topic;
@@ -909,8 +630,6 @@ function sanitizePublicHtml() {
     [/innerhalb des Portals/g, "im Bereich"],
     [/Portals/g, "Bereichs"],
     [/Portal/g, "Bereich"],
-    [/Einzeldossiers/g, "Dossiers"],
-    [/Einzeldossier/g, "Dossier"],
     [/öffentliche Arbeitsfassung/g, "öffentliche Onlinefassung"],
     [/öffentlichen Arbeitsfassung/g, "öffentlichen Onlinefassung"],
     [/Online-Volltext/g, "Onlinefassung"],
@@ -922,8 +641,8 @@ function sanitizePublicHtml() {
     [/Noch nicht im Repository gefunden: ([^<]+)\. Der Downloadlink wird erst gesetzt, sobald die Datei vorhanden ist\./g, "Download in Vorbereitung: $1."],
     [/Noch nicht im Repository gefunden: ([^<]+)\. Es wird kein kaputter Downloadlink gesetzt\./g, "Download in Vorbereitung: $1."],
     [/Im aktuellen Repository liegt/g, "In der aktuellen öffentlichen Fassung liegt"],
-    [/Die angekündigten Word-Dokumente werden verlinkt, sobald sie im Repository vorhanden sind\./g, "Die PDF-Fassungen werden nach öffentlicher Freigabe ergänzt."],
-    [/bis die gelieferten Word-Dokumente im Repository vorliegen/g, "bis die freigegebenen PDF-Fassungen ergänzt sind"],
+    [/Die angekündigten Word-Dokumente werden verlinkt, sobald sie im Repository vorhanden sind\./g, "Die angekündigten Word-Dokumente werden nach öffentlicher Freigabe ergänzt."],
+    [/bis die gelieferten Word-Dokumente im Repository vorliegen/g, "bis die freigegebenen Word-Dokumente ergänzt sind"],
     [/wenn sie im Repository vorhanden sind/g, "wenn sie öffentlich freigegeben sind"],
     [/Codex/g, ""],
     [/CodeX/g, ""],
@@ -969,7 +688,7 @@ function updateSitemap() {
   let xml = fs.readFileSync(sitemap, "utf8");
   const urls = [];
   for (const rank of ranks) {
-    urls.push(`${rank.base}/detailkonzepte/`, `${rank.dossierBase}/`, rank.workshop);
+    urls.push(`${rank.base}/detailkonzepte/`, rank.workshop);
     for (const [slug] of rank.topics) {
       urls.push(`${rank.base}/detailkonzepte/${slug}/`, dossierHref(rank, slug));
     }

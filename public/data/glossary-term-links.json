@@ -1,28 +1,6 @@
 {
-  "generatedAt": "2026-05-28T10:19:46.132Z",
+  "generatedAt": "2026-05-29T05:06:03.607Z",
   "links": {
-    "fuenftes-p-planet": {
-      "label": "5. P = Planet",
-      "slug": "fuenftes-p-planet",
-      "url": "/begriffe/fuenftes-p-planet/",
-      "hoverDefinition": "5. P = Planet ergänzt den Marketing-Mix um die Frage nach realer Produkt- und Kommunikationswirkung.",
-      "shortDefinition": "5. P = Planet erweitert den klassischen Marketing-Mix um die Wirkungen eines Angebots auf ökologische und gesellschaftliche Grundlagen.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "5. P = Planet",
-        "5P Planet",
-        "fünftes P Planet",
-        "fuenftes P Planet",
-        "Marketing nach Wirkung",
-        "Planet im Marketing-Mix"
-      ],
-      "relatedTerms": [
-        "responsible-marketing",
-        "greenwashing",
-        "produktdaten",
-        "wirkungsrueckkopplung"
-      ]
-    },
     "agenda-2030": {
       "label": "Agenda 2030",
       "slug": "agenda-2030",
@@ -31,7 +9,6 @@
       "shortDefinition": "Die Agenda 2030 ist der internationale Rahmen der Vereinten Nationen für nachhaltige Entwicklung.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Agenda 2030",
         "UN Agenda 2030"
       ],
       "relatedTerms": [
@@ -47,33 +24,11 @@
       "hoverDefinition": "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten.",
       "shortDefinition": "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht.",
       "category": "Messbegriff",
-      "synonyms": [
-        "Archetyp"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "benchmark",
         "scorecard",
-        "woek-id",
-        "nace"
-      ]
-    },
-    "assurance": {
-      "label": "Assurance",
-      "slug": "assurance",
-      "url": "/begriffe/assurance/",
-      "hoverDefinition": "Assurance erhöht Vertrauen in berichtete Daten, macht daraus aber noch keine vollständige Wirkungsbewertung.",
-      "shortDefinition": "Assurance bezeichnet prüferische Sicherheit über Berichtsinformationen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Assurance",
-        "Sustainability Assurance",
-        "Prüfung"
-      ],
-      "relatedTerms": [
-        "limited-assurance",
-        "reasonable-assurance",
-        "datenqualitaet",
-        "csrd"
+        "woek-id"
       ]
     },
     "benchmark": {
@@ -84,238 +39,13 @@
       "shortDefinition": "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden.",
       "category": "Messbegriff",
       "synonyms": [
-        "Benchmark",
         "Vergleichswert",
         "Schwellenwert"
       ],
       "relatedTerms": [
         "scorecard",
         "finalscore",
-        "woek-id",
-        "archetyp",
-        "datenqualitaet"
-      ]
-    },
-    "berichtsdaten": {
-      "label": "Berichtsdaten",
-      "slug": "berichtsdaten",
-      "url": "/begriffe/berichtsdaten/",
-      "hoverDefinition": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
-      "shortDefinition": "Berichtsdaten sind Informationen, die Unternehmen oder Institutionen im Rahmen von Reporting, Offenlegung oder Dokumentation bereitstellen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Berichtsdaten"
-      ],
-      "relatedTerms": [
-        "csrd",
-        "esrs",
-        "sfdr",
-        "steuerungsdaten",
-        "wirkungsdaten"
-      ]
-    },
-    "beschwerdemechanismus-access-to-remedy": {
-      "label": "Beschwerdemechanismus / Access to Remedy",
-      "slug": "beschwerdemechanismus-access-to-remedy",
-      "url": "/begriffe/beschwerdemechanismus-access-to-remedy/",
-      "hoverDefinition": "Beschwerdemechanismen und Access to Remedy sichern, dass Betroffene negative Wirkungen melden und Abhilfe erhalten können.",
-      "shortDefinition": "Beschwerdemechanismen und Access to Remedy sichern, dass Betroffene negative Wirkungen melden und Abhilfe erhalten können.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Beschwerdemechanismus / Access to Remedy",
-        "Beschwerdemechanismus",
-        "Access to Remedy",
-        "Zugang zu Abhilfe",
-        "Abhilfe",
-        "Remedy",
-        "Whistleblower-Schutz",
-        "FPIC",
-        "Free Prior and Informed Consent",
-        "Rechte indigener Gemeinschaften",
-        "Land Grabbing"
-      ],
-      "relatedTerms": [
-        "human-rights-due-diligence",
-        "un-guiding-principles",
-        "lksg",
-        "csddd",
-        "wirkungsrat"
-      ]
-    },
-    "biodiversitaetsrisiko": {
-      "label": "Biodiversitätsrisiko",
-      "slug": "biodiversitaetsrisiko",
-      "url": "/begriffe/biodiversitaetsrisiko/",
-      "hoverDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
-      "shortDefinition": "Biodiversitätsrisiko beschreibt Risiken, die aus Verlust, Schädigung oder Abhängigkeit von biologischer Vielfalt entstehen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Biodiversitätsrisiko",
-        "High Conservation Value",
-        "HCV",
-        "High Carbon Stock",
-        "HCS"
-      ],
-      "relatedTerms": [
-        "tnfd",
-        "nature-related-risks",
-        "ipbes",
-        "eudr",
-        "habitatverlust",
-        "habitatfragmentierung"
-      ]
-    },
-    "biodiversity-net-gain-no-net-loss": {
-      "label": "Biodiversity Net Gain / No Net Loss",
-      "slug": "biodiversity-net-gain-no-net-loss",
-      "url": "/begriffe/biodiversity-net-gain-no-net-loss/",
-      "hoverDefinition": "Biodiversity Net Gain und No Net Loss beschreiben Ziele, Biodiversitätsverluste mindestens auszugleichen oder netto zu verbessern.",
-      "shortDefinition": "Biodiversity Net Gain und No Net Loss beschreiben Ziele, Biodiversitätsverluste mindestens auszugleichen oder netto zu verbessern.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Biodiversity Net Gain / No Net Loss",
-        "Biodiversity Net Gain",
-        "BNG",
-        "No Net Loss",
-        "Netto-Biodiversitätsgewinn",
-        "Netto-Biodiversitaetsgewinn",
-        "Naturgewinn"
-      ],
-      "relatedTerms": [
-        "nichtkompensationsprinzip",
-        "reverse-merit-order",
-        "biodiversitaetsrisiko"
-      ]
-    },
-    "carbon-credits": {
-      "label": "Carbon Credits",
-      "slug": "carbon-credits",
-      "url": "/begriffe/carbon-credits/",
-      "hoverDefinition": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
-      "shortDefinition": "Carbon Credits sind handelbare Einheiten, die Emissionsminderungen oder Kohlenstoffentnahmen repräsentieren sollen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Carbon Credits"
-      ],
-      "relatedTerms": [
-        "offsetting-kompensation",
-        "net-zero",
-        "greenwashing",
-        "nichtkompensationsprinzip"
-      ]
-    },
-    "cbam": {
-      "label": "CBAM / Carbon Border Adjustment Mechanism",
-      "slug": "cbam",
-      "url": "/begriffe/cbam/",
-      "hoverDefinition": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
-      "shortDefinition": "CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "CBAM / Carbon Border Adjustment Mechanism",
-        "CBAM",
-        "Carbon Border Adjustment Mechanism",
-        "CO2-Grenzausgleich",
-        "CO₂-Grenzausgleich",
-        "CO₂-Grenzausgleichsmechanismus"
-      ],
-      "relatedTerms": [
-        "fit-for-55",
-        "ghg-protocol",
-        "scope-3",
-        "produktwirkung",
-        "wirkungssteuer"
-      ]
-    },
-    "clean-industrial-deal": {
-      "label": "Clean Industrial Deal",
-      "slug": "clean-industrial-deal",
-      "url": "/begriffe/clean-industrial-deal/",
-      "hoverDefinition": "Der Clean Industrial Deal verbindet Dekarbonisierung, Industriepolitik, bezahlbare Energie, Clean Tech, Kreislaufwirtschaft und Wettbewerbsfähigkeit.",
-      "shortDefinition": "Der Clean Industrial Deal ist ein EU-Plan für industrielle Wettbewerbsfähigkeit und Dekarbonisierung.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Clean Industrial Deal",
-        "Deal für eine saubere Industrie"
-      ],
-      "relatedTerms": [
-        "european-green-deal",
-        "sustainable-finance",
-        "transition-finance",
-        "cbam",
-        "espr"
-      ]
-    },
-    "climate-neutral-claim": {
-      "label": "Climate Neutral Claim",
-      "slug": "climate-neutral-claim",
-      "url": "/begriffe/climate-neutral-claim/",
-      "hoverDefinition": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
-      "shortDefinition": "Climate Neutral Claims sind Aussagen, ein Produkt, Unternehmen oder eine Aktivität sei klimaneutral.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Climate Neutral Claim"
-      ],
-      "relatedTerms": [
-        "klimaneutralitaet",
-        "offsetting-kompensation",
-        "greenwashing",
-        "carbon-credits"
-      ]
-    },
-    "commons-gemeingueter": {
-      "label": "Commons / Gemeingüter",
-      "slug": "commons-gemeingueter",
-      "url": "/begriffe/commons-gemeingueter/",
-      "hoverDefinition": "Commons sind gemeinsam getragene Ressourcen, Infrastrukturen oder Wissensbestände, die nicht rein privat oder staatlich verstanden werden.",
-      "shortDefinition": "Commons sind gemeinsam getragene Ressourcen, Infrastrukturen oder Wissensbestände, die nicht rein privat oder staatlich verstanden werden.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Commons / Gemeingüter",
-        "Commons",
-        "Gemeingüter",
-        "Gemeingueter",
-        "Allmende",
-        "öffentliche Güter",
-        "oeffentliche Gueter"
-      ],
-      "relatedTerms": [
-        "wirkungsdatenraum",
-        "resonanzraum"
-      ]
-    },
-    "conflict-minerals-regulation": {
-      "label": "Conflict Minerals Regulation",
-      "slug": "conflict-minerals-regulation",
-      "url": "/begriffe/conflict-minerals-regulation/",
-      "hoverDefinition": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
-      "shortDefinition": "Die EU-Konfliktmineralienverordnung regelt Sorgfaltspflichten für bestimmte Mineralien aus Konflikt- und Hochrisikogebieten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Conflict Minerals Regulation"
-      ],
-      "relatedTerms": [
-        "lieferkettendaten",
-        "oecd-leitsaetze",
-        "csddd"
-      ]
-    },
-    "csddd": {
-      "label": "CSDDD",
-      "slug": "csddd",
-      "url": "/begriffe/csddd/",
-      "hoverDefinition": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
-      "shortDefinition": "Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltspflicht in Wertschöpfungsketten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "CSDDD"
-      ],
-      "relatedTerms": [
-        "lksg",
-        "un-guiding-principles",
-        "oecd-leitsaetze",
-        "ilo-kernarbeitsnormen",
-        "lieferkettendaten"
+        "woek-id"
       ]
     },
     "csrd": {
@@ -326,73 +56,13 @@
       "shortDefinition": "CSRD ist die europäische Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen.",
       "category": "Datenbegriff",
       "synonyms": [
-        "CSRD",
-        "Corporate Sustainability Reporting Directive",
-        "Nachhaltigkeitsberichterstattungsrichtlinie",
-        "CSRD-Richtlinie"
+        "Corporate Sustainability Reporting Directive"
       ],
       "relatedTerms": [
         "esrs",
         "esg",
         "wirkungsdatenraum",
-        "reporting",
-        "efrag",
-        "doppelte-wesentlichkeit",
-        "iro",
-        "xbrl",
-        "esap"
-      ]
-    },
-    "daseinsvorsorge": {
-      "label": "Daseinsvorsorge",
-      "slug": "daseinsvorsorge",
-      "url": "/begriffe/daseinsvorsorge/",
-      "hoverDefinition": "Daseinsvorsorge umfasst grundlegende öffentliche Leistungen und Infrastrukturen für ein würdiges, sicheres und teilhabefähiges Leben.",
-      "shortDefinition": "Daseinsvorsorge umfasst grundlegende öffentliche Leistungen und Infrastrukturen für ein würdiges, sicheres und teilhabefähiges Leben.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Daseinsvorsorge",
-        "öffentliche Daseinsvorsorge",
-        "oeffentliche Daseinsvorsorge",
-        "Grundversorgung",
-        "Pflegeinfrastruktur",
-        "Barrierefreiheit"
-      ],
-      "relatedTerms": [
-        "wirkungshaushalt"
-      ]
-    },
-    "datenluecke": {
-      "label": "Datenlücke",
-      "slug": "datenluecke",
-      "url": "/begriffe/datenluecke/",
-      "hoverDefinition": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
-      "shortDefinition": "Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Datenlücke"
-      ],
-      "relatedTerms": [
-        "datenqualitaet",
-        "konservative-annahme",
-        "scorecard"
-      ]
-    },
-    "datenqualitaet": {
-      "label": "Datenqualität",
-      "slug": "datenqualitaet",
-      "url": "/begriffe/datenqualitaet/",
-      "hoverDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
-      "shortDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Datenqualität"
-      ],
-      "relatedTerms": [
-        "datenluecke",
-        "konservative-annahme",
-        "assurance",
-        "wirkungsdaten"
+        "reporting"
       ]
     },
     "digitaler-produktpass": {
@@ -403,214 +73,13 @@
       "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Digitaler Produktpass",
         "DPP",
-        "Digital Product Passport",
-        "Produktpass",
-        "Herkunftsdaten im Produktpass",
-        "Produktpass Herkunft"
+        "Digital Product Passport"
       ],
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
-        "scorecard",
-        "espr",
-        "produktdaten",
-        "pcf-product-carbon-footprint",
-        "material-footprint",
-        "herkunftstransparenz"
-      ]
-    },
-    "dnsh": {
-      "label": "DNSH / Do No Significant Harm",
-      "slug": "dnsh",
-      "url": "/begriffe/dnsh/",
-      "hoverDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
-      "shortDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "DNSH / Do No Significant Harm",
-        "DNSH",
-        "Do No Significant Harm",
-        "Harm",
-        "Do no significant harm",
-        "keinen erheblichen Schaden verursachen",
-        "erheblicher Schaden"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "nichtkompensationsprinzip",
-        "reverse-merit-order",
-        "technische-bewertungskriterien"
-      ]
-    },
-    "doppelte-wesentlichkeit": {
-      "label": "Doppelte Wesentlichkeit",
-      "slug": "doppelte-wesentlichkeit",
-      "url": "/begriffe/doppelte-wesentlichkeit/",
-      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
-      "shortDefinition": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Doppelte Wesentlichkeit",
-        "Double Materiality",
-        "doppelte Materialität"
-      ],
-      "relatedTerms": [
-        "csrd",
-        "esrs",
-        "iro",
-        "wirkungsbewertung"
-      ]
-    },
-    "efrag": {
-      "label": "EFRAG",
-      "slug": "efrag",
-      "url": "/begriffe/efrag/",
-      "hoverDefinition": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
-      "shortDefinition": "EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "EFRAG"
-      ],
-      "relatedTerms": [
-        "esrs",
-        "csrd",
-        "vsme",
-        "xbrl"
-      ]
-    },
-    "empowering-consumers-green-transition": {
-      "label": "Empowering Consumers for the Green Transition",
-      "slug": "empowering-consumers-green-transition",
-      "url": "/begriffe/empowering-consumers-green-transition/",
-      "hoverDefinition": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
-      "shortDefinition": "Diese EU-Richtlinie stärkt Verbraucher:innen gegen irreführende Umweltangaben und unlautere Nachhaltigkeitskommunikation.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Empowering Consumers for the Green Transition"
-      ],
-      "relatedTerms": [
-        "greenwashing",
-        "nachhaltigkeitslabel",
-        "climate-neutral-claim"
-      ]
-    },
-    "energiearmut": {
-      "label": "Energiearmut",
-      "slug": "energiearmut",
-      "url": "/begriffe/energiearmut/",
-      "hoverDefinition": "Energiearmut beschreibt fehlenden oder unerschwinglichen Zugang zu ausreichender, sicherer und bezahlbarer Energie.",
-      "shortDefinition": "Energiearmut beschreibt fehlenden oder unerschwinglichen Zugang zu ausreichender, sicherer und bezahlbarer Energie.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Energiearmut",
-        "Energy Poverty",
-        "Haushaltsenergie",
-        "Heizenergie",
-        "Heizwärmebedarf",
-        "Heizwaermebedarf",
-        "Heizlast"
-      ],
-      "relatedTerms": [
-        "wirkungssteuer",
-        "wirkungshaushalt",
-        "wohnwirkung",
-        "warmmietenneutralitaet"
-      ]
-    },
-    "epd": {
-      "label": "EPD / Environmental Product Declaration",
-      "slug": "epd",
-      "url": "/begriffe/epd/",
-      "hoverDefinition": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
-      "shortDefinition": "Eine EPD ist eine verifizierte Umweltproduktdeklaration auf Basis von Lebenszyklusdaten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "EPD / Environmental Product Declaration",
-        "EPD",
-        "Environmental Product Declaration",
-        "Umweltproduktdeklaration"
-      ],
-      "relatedTerms": [
-        "lca",
-        "pcr-product-category-rules",
-        "pef-product-environmental-footprint",
-        "produktdaten"
-      ]
-    },
-    "ermoeglichende-taetigkeit": {
-      "label": "Ermöglichende Tätigkeit",
-      "slug": "ermoeglichende-taetigkeit",
-      "url": "/begriffe/ermoeglichende-taetigkeit/",
-      "hoverDefinition": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
-      "shortDefinition": "Ermöglichende Tätigkeiten unterstützen andere Tätigkeiten dabei, Umweltziele zu erreichen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Ermöglichende Tätigkeit"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "taxonomiekonformitaet",
-        "wirkungsdaten"
-      ]
-    },
-    "ernaehrungssouveraenitaet": {
-      "label": "Ernährungssouveränität",
-      "slug": "ernaehrungssouveraenitaet",
-      "url": "/begriffe/ernaehrungssouveraenitaet/",
-      "hoverDefinition": "Ernährungssouveränität fragt, wer Ernährungssysteme, Saatgut, Böden, Produktion und Zugang zu gesunder Nahrung mitgestaltet.",
-      "shortDefinition": "Ernährungssouveränität fragt, wer Ernährungssysteme, Saatgut, Böden, Produktion und Zugang zu gesunder Nahrung mitgestaltet.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Ernährungssouveränität",
-        "Ernaehrungssouveraenitaet",
-        "Food Sovereignty",
-        "Ernährungssysteme",
-        "Saatgutsouveränität",
-        "Saatgutsouveraenitaet"
-      ],
-      "relatedTerms": [
-        "produktdaten",
-        "lieferkettendaten",
-        "biodiversitaetsrisiko"
-      ]
-    },
-    "esap": {
-      "label": "ESAP / European Single Access Point",
-      "slug": "esap",
-      "url": "/begriffe/esap/",
-      "hoverDefinition": "ESAP soll öffentliche Unternehmens-, Finanz- und Nachhaltigkeitsdaten zentral auffindbar machen.",
-      "shortDefinition": "ESAP ist der europäische zentrale Zugangspunkt für öffentliche Finanz- und Nachhaltigkeitsinformationen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ESAP / European Single Access Point",
-        "ESAP",
-        "European Single Access Point"
-      ],
-      "relatedTerms": [
-        "csrd",
-        "esrs",
-        "xbrl",
-        "berichtsdaten",
-        "wirkungsdatenraum"
-      ]
-    },
-    "esef": {
-      "label": "ESEF",
-      "slug": "esef",
-      "url": "/begriffe/esef/",
-      "hoverDefinition": "ESEF macht Finanzberichte elektronisch und maschinenlesbar; es ist Infrastruktur, keine Nachhaltigkeitsbewertung.",
-      "shortDefinition": "ESEF ist das europäische einheitliche elektronische Berichtsformat für Jahresfinanzberichte.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ESEF",
-        "European Single Electronic Format"
-      ],
-      "relatedTerms": [
-        "xbrl",
-        "esap",
-        "berichtsdaten"
+        "scorecard"
       ]
     },
     "esg": {
@@ -621,36 +90,13 @@
       "shortDefinition": "ESG steht für Umwelt-, Sozial- und Governance-Faktoren in Unternehmen, Finanzierung und Reporting.",
       "category": "Grundbegriff",
       "synonyms": [
-        "ESG",
         "Environmental Social Governance"
       ],
       "relatedTerms": [
         "csrd",
         "esrs",
         "nachhaltigkeit",
-        "wirkungsrisiko",
-        "sustainable-finance",
-        "sfdr",
-        "wirkungsrueckkopplung"
-      ]
-    },
-    "espr": {
-      "label": "ESPR / Ecodesign for Sustainable Products Regulation",
-      "slug": "espr",
-      "url": "/begriffe/espr/",
-      "hoverDefinition": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
-      "shortDefinition": "Die ESPR ist die EU-Ökodesign-Verordnung für nachhaltige Produkte.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ESPR / Ecodesign for Sustainable Products Regulation",
-        "ESPR",
-        "Ecodesign for Sustainable Products Regulation"
-      ],
-      "relatedTerms": [
-        "digitaler-produktpass",
-        "produktdaten",
-        "pef-product-environmental-footprint",
-        "rezyklatanteil"
+        "wirkungsrisiko"
       ]
     },
     "esrs": {
@@ -661,89 +107,12 @@
       "shortDefinition": "ESRS sind europäische Standards für Nachhaltigkeitsberichterstattung.",
       "category": "Datenbegriff",
       "synonyms": [
-        "ESRS",
-        "European Sustainability Reporting Standards",
-        "ESRS-Standards"
+        "European Sustainability Reporting Standards"
       ],
       "relatedTerms": [
         "csrd",
         "esg",
-        "wirkungsdatenraum",
-        "efrag",
-        "esrs-themenstandards",
-        "doppelte-wesentlichkeit",
-        "iro"
-      ]
-    },
-    "esrs-themenstandards": {
-      "label": "ESRS-Themenstandards",
-      "slug": "esrs-themenstandards",
-      "url": "/begriffe/esrs-themenstandards/",
-      "hoverDefinition": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
-      "shortDefinition": "ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ESRS-Themenstandards"
-      ],
-      "relatedTerms": [
-        "esrs",
-        "csrd",
-        "berichtsdaten"
-      ]
-    },
-    "eu-climate-law": {
-      "label": "EU Climate Law / Europäisches Klimagesetz",
-      "slug": "eu-climate-law",
-      "url": "/begriffe/eu-climate-law/",
-      "hoverDefinition": "Das EU Climate Law macht Klimaziele zum rechtlichen Rahmen für Politik, Regulierung, Finanzierung und Risikobewertung.",
-      "shortDefinition": "Das Europäische Klimagesetz verankert Klimaneutralität der EU bis 2050 und das 2030-Ziel rechtlich.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "EU Climate Law / Europäisches Klimagesetz",
-        "EU Climate Law",
-        "Europäisches Klimagesetz",
-        "European Climate Law",
-        "EU-Klimagesetz"
-      ],
-      "relatedTerms": [
-        "fit-for-55",
-        "net-zero",
-        "transition-plan",
-        "transition-risk"
-      ]
-    },
-    "eu-ecolabel": {
-      "label": "EU Ecolabel",
-      "slug": "eu-ecolabel",
-      "url": "/begriffe/eu-ecolabel/",
-      "hoverDefinition": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
-      "shortDefinition": "Das EU Ecolabel ist ein freiwilliges EU-Umweltzeichen für Produkte und Dienstleistungen mit geringerer Umweltbelastung.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "EU Ecolabel"
-      ],
-      "relatedTerms": [
-        "nachhaltigkeitslabel",
-        "produktdaten",
-        "greenwashing"
-      ]
-    },
-    "eu-green-bond-standard": {
-      "label": "EU Green Bond Standard",
-      "slug": "eu-green-bond-standard",
-      "url": "/begriffe/eu-green-bond-standard/",
-      "hoverDefinition": "Der EU Green Bond Standard verbindet grüne Anleihen mit Taxonomiebezug, Transparenz und Prüfung.",
-      "shortDefinition": "Der EU Green Bond Standard ist ein europäischer Standard für als europäische grüne Anleihen bezeichnete Bonds.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "EU Green Bond Standard",
-        "European Green Bond Standard",
-        "EuGB"
-      ],
-      "relatedTerms": [
-        "sustainable-finance",
-        "eu-taxonomie",
-        "transition-finance"
+        "wirkungsdatenraum"
       ]
     },
     "eu-taxonomie": {
@@ -754,75 +123,33 @@
       "shortDefinition": "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien.",
       "category": "Grundbegriff",
       "synonyms": [
-        "EU-Taxonomie",
-        "EU Taxonomy",
-        "EU-Taxonomy",
-        "Taxonomieverordnung",
-        "Taxonomie-Verordnung"
+        "EU Taxonomy"
       ],
       "relatedTerms": [
         "social-taxonomy",
         "csrd",
         "esrs",
         "wirkungsrisiko",
-        "nachhaltigkeit",
-        "taxonomiefaehigkeit",
-        "taxonomiekonformitaet",
-        "dnsh",
-        "mindestschutz",
-        "technische-bewertungskriterien",
-        "nace",
-        "mindestschutz-minimum-safeguards",
-        "taxonomy-kpis",
-        "uebergangstaetigkeit",
-        "ermoeglichende-taetigkeit",
-        "sustainable-finance"
-      ]
-    },
-    "eudr": {
-      "label": "EUDR / EU Deforestation Regulation",
-      "slug": "eudr",
-      "url": "/begriffe/eudr/",
-      "hoverDefinition": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
-      "shortDefinition": "Die EUDR ist die EU-Verordnung für entwaldungsfreie Produkte und Lieferketten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "EUDR / EU Deforestation Regulation",
-        "EUDR",
-        "EU Deforestation Regulation"
-      ],
-      "relatedTerms": [
-        "lieferkettendaten",
-        "biodiversitaetsrisiko",
-        "digitaler-produktpass",
-        "produktdaten"
+        "nachhaltigkeit"
       ]
     },
     "european-green-deal": {
-      "label": "European Green Deal / Europäischer Green Deal",
+      "label": "European Green Deal",
       "slug": "european-green-deal",
       "url": "/begriffe/european-green-deal/",
-      "hoverDefinition": "Der European Green Deal ist der EU-Politikrahmen für Klimaneutralität, Ressourceneffizienz, Industriepolitik, Sustainable Finance und Berichtspflichten.",
-      "shortDefinition": "Der European Green Deal ist der politische Transformationsrahmen der EU für eine moderne, ressourceneffiziente, wettbewerbsfähige und klimaneutrale Wirtschaft.",
+      "hoverDefinition": "Der European Green Deal ist ein EU-Transformationsrahmen und in der WÖk ein Anschlussraum für Daten, Standards und politische Rückkopplung.",
+      "shortDefinition": "Der European Green Deal ist ein politischer Rahmen der EU für Klima, Ressourcen, Industrie, Biodiversität und nachhaltige Transformation.",
       "category": "Datenbegriff",
       "synonyms": [
-        "European Green Deal / Europäischer Green Deal",
-        "European Green Deal",
-        "Europäischer Green Deal",
-        "EU Green Deal",
         "Green Deal",
-        "GreenDeal"
+        "EU Green Deal"
       ],
       "relatedTerms": [
-        "clean-industrial-deal",
-        "fit-for-55",
-        "eu-climate-law",
-        "sustainable-finance",
         "eu-taxonomie",
         "csrd",
         "esrs",
-        "cbam",
-        "green-deal-industrial-plan"
+        "digitaler-produktpass",
+        "wirkungsdaten"
       ]
     },
     "faktencheck": {
@@ -833,7 +160,6 @@
       "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage, Zahl, Quelle oder Behauptung stimmt.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Faktencheck",
         "Fact Check",
         "Richtigkeitsprüfung"
       ],
@@ -851,31 +177,11 @@
       "hoverDefinition": "Der FinalScore ist die steuerungsrelevante Verdichtung von Einzelscores unter Berücksichtigung von Datenqualität, Reverse Merit Order und Nichtkompensation.",
       "shortDefinition": "Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung.",
       "category": "Messbegriff",
-      "synonyms": [
-        "FinalScore"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung"
-      ]
-    },
-    "fit-for-55": {
-      "label": "Fit for 55",
-      "slug": "fit-for-55",
-      "url": "/begriffe/fit-for-55/",
-      "hoverDefinition": "Fit for 55 bündelt EU-Klima-, Energie-, Verkehrs- und Industrieinstrumente zur Umsetzung des 2030-Klimaziels.",
-      "shortDefinition": "Fit for 55 ist das EU-Gesetzgebungspaket zur Senkung der Netto-Treibhausgasemissionen um mindestens 55 Prozent bis 2030.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Fit for 55",
-        "Fit-for-55-Paket"
-      ],
-      "relatedTerms": [
-        "eu-climate-law",
-        "cbam",
-        "ghg-protocol",
-        "transition-risk"
       ]
     },
     "folgencheck": {
@@ -886,7 +192,6 @@
       "shortDefinition": "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Folgencheck",
         "Folgenprüfung",
         "Ex-ante-Folgenprüfung",
         "Wirkungsfolgencheck"
@@ -899,155 +204,6 @@
         "wirkungspotenzial"
       ]
     },
-    "forced-labour-regulation": {
-      "label": "Forced Labour Regulation",
-      "slug": "forced-labour-regulation",
-      "url": "/begriffe/forced-labour-regulation/",
-      "hoverDefinition": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
-      "shortDefinition": "Die Forced Labour Regulation verbietet in der EU Produkte, die mit Zwangsarbeit hergestellt wurden.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Forced Labour Regulation"
-      ],
-      "relatedTerms": [
-        "mindestschutz-minimum-safeguards",
-        "ilo-kernarbeitsnormen",
-        "lieferkettendaten",
-        "nichtkompensationsprinzip"
-      ]
-    },
-    "generationengerechtigkeit": {
-      "label": "Generationengerechtigkeit",
-      "slug": "generationengerechtigkeit",
-      "url": "/begriffe/generationengerechtigkeit/",
-      "hoverDefinition": "Generationengerechtigkeit fragt, ob heutige Entscheidungen künftige Menschen fair berücksichtigen.",
-      "shortDefinition": "Generationengerechtigkeit fragt, ob heutige Entscheidungen künftige Menschen fair berücksichtigen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Generationengerechtigkeit",
-        "Intergenerational Justice",
-        "intergenerationelle Gerechtigkeit",
-        "Gerechtigkeit zwischen Generationen"
-      ],
-      "relatedTerms": [
-        "wirkungshaushalt"
-      ]
-    },
-    "geplante-obsoleszenz": {
-      "label": "Geplante Obsoleszenz",
-      "slug": "geplante-obsoleszenz",
-      "url": "/begriffe/geplante-obsoleszenz/",
-      "hoverDefinition": "Geplante Obsoleszenz bezeichnet Produktgestaltung, die kurze Nutzungsdauer oder vorzeitigen Ersatz begünstigt.",
-      "shortDefinition": "Geplante Obsoleszenz bezeichnet Produktgestaltung, die kurze Nutzungsdauer oder vorzeitigen Ersatz begünstigt.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Geplante Obsoleszenz",
-        "planned obsolescence",
-        "Obsoleszenz",
-        "vorzeitiger Verschleiß",
-        "vorzeitiger Verschleiss"
-      ],
-      "relatedTerms": [
-        "digitaler-produktpass",
-        "material-footprint",
-        "produktdaten"
-      ]
-    },
-    "gesundheitsgerechtigkeit": {
-      "label": "Gesundheitsgerechtigkeit",
-      "slug": "gesundheitsgerechtigkeit",
-      "url": "/begriffe/gesundheitsgerechtigkeit/",
-      "hoverDefinition": "Gesundheitsgerechtigkeit fragt, ob Menschen faire Chancen auf Gesundheit, Schutz und Versorgung haben.",
-      "shortDefinition": "Gesundheitsgerechtigkeit fragt, ob Menschen faire Chancen auf Gesundheit, Schutz und Versorgung haben.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Gesundheitsgerechtigkeit",
-        "Health Equity",
-        "gesundheitliche Chancengleichheit",
-        "Gesundheitschancengleichheit",
-        "Mental Health",
-        "psychische Gesundheit",
-        "Einsamkeit",
-        "soziale Isolation"
-      ],
-      "relatedTerms": [
-        "health-impact-assessment",
-        "hitzestress"
-      ]
-    },
-    "ghg-protocol": {
-      "label": "GHG Protocol",
-      "slug": "ghg-protocol",
-      "url": "/begriffe/ghg-protocol/",
-      "hoverDefinition": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
-      "shortDefinition": "Das GHG Protocol ist ein international verbreiteter Standardrahmen zur Bilanzierung von Treibhausgasemissionen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "GHG Protocol"
-      ],
-      "relatedTerms": [
-        "scope-1",
-        "scope-2",
-        "scope-3",
-        "pcf-product-carbon-footprint",
-        "sbti"
-      ]
-    },
-    "green-claims-directive": {
-      "label": "Green Claims Directive",
-      "slug": "green-claims-directive",
-      "url": "/begriffe/green-claims-directive/",
-      "hoverDefinition": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
-      "shortDefinition": "Die Green Claims Directive ist ein EU-Vorschlag zur Substantiierung und Prüfung ausdrücklicher Umweltaussagen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Green Claims Directive"
-      ],
-      "relatedTerms": [
-        "greenwashing",
-        "impact-washing",
-        "climate-neutral-claim",
-        "nachhaltigkeitslabel"
-      ]
-    },
-    "green-deal-industrial-plan": {
-      "label": "Green Deal Industrial Plan",
-      "slug": "green-deal-industrial-plan",
-      "url": "/begriffe/green-deal-industrial-plan/",
-      "hoverDefinition": "Der Green Deal Industrial Plan stärkt Europas Netto-Null-Industrie und verbindet Klimaziele mit Industriepolitik.",
-      "shortDefinition": "Der Green Deal Industrial Plan ist ein EU-Industrieplan zur Stärkung der europäischen Netto-Null-Industrie und sauberer Technologien.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Green Deal Industrial Plan",
-        "Green Deal Industrial Plan for the Net-Zero Age",
-        "Industrieplan zum Grünen Deal",
-        "Plan für grüne Industrie"
-      ],
-      "relatedTerms": [
-        "european-green-deal",
-        "clean-industrial-deal",
-        "fit-for-55",
-        "transition-finance"
-      ]
-    },
-    "greenwashing": {
-      "label": "Greenwashing",
-      "slug": "greenwashing",
-      "url": "/begriffe/greenwashing/",
-      "hoverDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
-      "shortDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Greenwashing"
-      ],
-      "relatedTerms": [
-        "impact-washing",
-        "sdg-washing",
-        "green-claims-directive",
-        "folgencheck",
-        "reverse-merit-order"
-      ]
-    },
     "gri": {
       "label": "GRI",
       "slug": "gri",
@@ -1056,500 +212,12 @@
       "shortDefinition": "GRI ist ein international verbreiteter Rahmen für Nachhaltigkeitsberichterstattung.",
       "category": "Datenbegriff",
       "synonyms": [
-        "GRI",
         "Global Reporting Initiative"
       ],
       "relatedTerms": [
         "reporting",
         "csrd",
-        "esrs",
-        "berichtsdaten"
-      ]
-    },
-    "habitatfragmentierung": {
-      "label": "Habitatfragmentierung",
-      "slug": "habitatfragmentierung",
-      "url": "/begriffe/habitatfragmentierung/",
-      "hoverDefinition": "Habitatfragmentierung beschreibt die Zerschneidung zusammenhängender Lebensräume in kleinere, isolierte Teilflächen.",
-      "shortDefinition": "Habitatfragmentierung beschreibt die Zerschneidung zusammenhängender Lebensräume in kleinere, isolierte Teilflächen.",
-      "category": "Biodiversitätsbegriff",
-      "synonyms": [
-        "Habitatfragmentierung",
-        "Habitat Fragmentation",
-        "Lebensraumfragmentierung",
-        "Zerschneidung von Lebensräumen",
-        "Habitat-Zerschneidung"
-      ],
-      "relatedTerms": [
-        "habitatverlust",
-        "biodiversitaetsrisiko",
-        "nature-related-risks",
-        "ipbes"
-      ]
-    },
-    "habitatverlust": {
-      "label": "Habitatverlust",
-      "slug": "habitatverlust",
-      "url": "/begriffe/habitatverlust/",
-      "hoverDefinition": "Habitatverlust bezeichnet den Verlust oder die starke Schädigung von Lebensräumen für Arten und Ökosysteme.",
-      "shortDefinition": "Habitatverlust bezeichnet den Verlust oder die starke Schädigung von Lebensräumen für Arten und Ökosysteme.",
-      "category": "Biodiversitätsbegriff",
-      "synonyms": [
-        "Habitatverlust",
-        "Habitat Loss",
-        "Lebensraumverlust",
-        "Verlust von Lebensräumen",
-        "Lebensraumzerstörung",
-        "Herdenschutz"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "habitatfragmentierung",
-        "nature-related-risks",
-        "ipbes",
-        "eudr"
-      ]
-    },
-    "haltung": {
-      "label": "Haltung",
-      "slug": "haltung",
-      "url": "/begriffe/haltung/",
-      "hoverDefinition": "Haltung kann Wirkung vorbereiten, beweist aber noch keine reale Zustandsveränderung.",
-      "shortDefinition": "Haltung beschreibt eine innere Orientierung. Sie kann Wirkungspotenzial prägen, ist aber nicht automatisch Wirkung.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Haltung",
-        "moralische Haltung",
-        "Einstellung",
-        "Mindset"
-      ],
-      "relatedTerms": [
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungskompetenz",
-        "folgencheck"
-      ]
-    },
-    "handlung": {
-      "label": "Handlung",
-      "slug": "handlung",
-      "url": "/begriffe/handlung/",
-      "hoverDefinition": "Handlung ist das Tun oder Entscheiden, das Wirkung auslösen kann, aber noch nicht die Wirkung selbst ist.",
-      "shortDefinition": "Handlung ist ein Eingriff in ein System. Sie kann Wirkung auslösen, ist aber nicht selbst schon Wirkung.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Handlung",
-        "Action",
-        "Eingriff",
-        "Entscheidungshandlung"
-      ],
-      "relatedTerms": [
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungspfad",
-        "wirkungsbewertung"
-      ]
-    },
-    "handlungsdruck": {
-      "label": "Handlungsdruck",
-      "slug": "handlungsdruck",
-      "url": "/begriffe/handlungsdruck/",
-      "hoverDefinition": "Handlungsdruck ist ein durch Risiken, Daten, Krisen oder Zielverfehlungen erzeugter Entscheidungsdruck.",
-      "shortDefinition": "Handlungsdruck ist ein durch Risiken, Daten, Krisen oder Zielverfehlungen erzeugter Entscheidungsdruck.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Handlungsdruck",
-        "Entscheidungsdruck",
-        "Transformationsdruck",
-        "Krisendruck"
-      ],
-      "relatedTerms": [
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "folgencheck",
-        "wirkungsresilienz"
-      ]
-    },
-    "handlungsfaehigkeit": {
-      "label": "Handlungsfähigkeit",
-      "slug": "handlungsfaehigkeit",
-      "url": "/begriffe/handlungsfaehigkeit/",
-      "hoverDefinition": "Handlungsfähigkeit ist die Fähigkeit von Menschen, Institutionen oder Systemen, wirksam auf Risiken, Krisen und Chancen zu reagieren.",
-      "shortDefinition": "Handlungsfähigkeit ist die Fähigkeit von Menschen, Institutionen oder Systemen, wirksam auf Risiken, Krisen und Chancen zu reagieren.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Handlungsfähigkeit",
-        "agency",
-        "Handlungsvermögen",
-        "kollektive Handlungsfähigkeit"
-      ],
-      "relatedTerms": [
-        "handlungsspielraum",
-        "wirkungsresilienz",
-        "wirkungskompetenz"
-      ]
-    },
-    "handlungspfad": {
-      "label": "Handlungspfad",
-      "slug": "handlungspfad",
-      "url": "/begriffe/handlungspfad/",
-      "hoverDefinition": "Ein Handlungspfad beschreibt, wie Entscheidungen und Maßnahmen in spätere Wirkungsräume führen.",
-      "shortDefinition": "Ein Handlungspfad beschreibt, wie Entscheidungen und Maßnahmen in spätere Wirkungsräume führen.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Handlungspfad",
-        "Action Pathway",
-        "Entscheidungspfad",
-        "Maßnahmenpfad",
-        "Massnahmenpfad"
-      ],
-      "relatedTerms": [
-        "wirkungspfad",
-        "handlung",
-        "folgencheck",
-        "wirkungsraum"
-      ]
-    },
-    "handlungsspielraum": {
-      "label": "Handlungsspielraum",
-      "slug": "handlungsspielraum",
-      "url": "/begriffe/handlungsspielraum/",
-      "hoverDefinition": "Handlungsspielraum beschreibt, welche realen Optionen Menschen, Organisationen oder Institutionen tatsächlich haben.",
-      "shortDefinition": "Handlungsspielraum beschreibt, welche realen Optionen Menschen, Organisationen oder Institutionen tatsächlich haben.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Handlungsspielraum",
-        "Handlungsoptionen",
-        "realer Spielraum",
-        "Option Space"
-      ],
-      "relatedTerms": [
-        "handlungsfaehigkeit",
-        "wirkung",
-        "wirkungskompetenz",
-        "mensch-planet-demokratie"
-      ]
-    },
-    "hard-to-abate-sektoren": {
-      "label": "Hard-to-abate-Sektoren",
-      "slug": "hard-to-abate-sektoren",
-      "url": "/begriffe/hard-to-abate-sektoren/",
-      "hoverDefinition": "Hard-to-abate-Sektoren sind Bereiche, in denen Emissionen technisch, wirtschaftlich oder infrastrukturell besonders schwer zu senken sind.",
-      "shortDefinition": "Hard-to-abate-Sektoren sind Bereiche, in denen Emissionen technisch, wirtschaftlich oder infrastrukturell besonders schwer zu senken sind.",
-      "category": "Klima- und Transformationsbegriff",
-      "synonyms": [
-        "Hard-to-abate-Sektoren",
-        "Hard to abate",
-        "hard-to-abate sectors",
-        "schwer dekarbonisierbare Sektoren",
-        "schwer vermeidbare Emissionen",
-        "schwer zu dekarbonisierende Sektoren",
-        "H2",
-        "Hydrogen",
-        "Wasserstoff",
-        "grüner Wasserstoff",
-        "gruener Wasserstoff",
-        "H2-ready",
-        "HVO",
-        "Hydrotreated Vegetable Oil"
-      ],
-      "relatedTerms": [
-        "transition-risk",
-        "transition-finance",
-        "ghg-protocol",
-        "scope-1",
-        "scope-3"
-      ]
-    },
-    "haushaltsneutralitaet": {
-      "label": "Haushaltsneutralität",
-      "slug": "haushaltsneutralitaet",
-      "url": "/begriffe/haushaltsneutralitaet/",
-      "hoverDefinition": "Haushaltsneutralität bedeutet, dass ein Staat nicht zwingend mehr einnimmt, sondern Einnahmen und Lasten anders verteilt.",
-      "shortDefinition": "Haushaltsneutralität bedeutet, dass ein Staat nicht zwingend mehr einnimmt, sondern Einnahmen und Lasten anders verteilt.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Haushaltsneutralität",
-        "haushaltsneutral",
-        "fiskalisch neutral",
-        "budgetneutral",
-        "aufkommensneutral",
-        "revenue neutral"
-      ],
-      "relatedTerms": [
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "reverse-merit-order",
-        "positive-netto-wirkung"
-      ]
-    },
-    "hazardous-substances": {
-      "label": "Hazardous Substances / gefährliche Stoffe",
-      "slug": "hazardous-substances",
-      "url": "/begriffe/hazardous-substances/",
-      "hoverDefinition": "Hazardous Substances sind Stoffe, die Risiken für Gesundheit, Umwelt, Arbeitsschutz oder Ökosysteme verursachen können.",
-      "shortDefinition": "Hazardous Substances sind Stoffe, die Risiken für Gesundheit, Umwelt, Arbeitsschutz oder Ökosysteme verursachen können.",
-      "category": "Chemikalien- und Produktdatenbegriff",
-      "synonyms": [
-        "Hazardous Substances / gefährliche Stoffe",
-        "Hazardous Substances",
-        "gefährliche Stoffe",
-        "gefaehrliche Stoffe",
-        "Schadstoffe",
-        "Chemikalienrisiko",
-        "substances of concern",
-        "Havarie",
-        "Umwelthavarie",
-        "halogenierte Treibhausgase"
-      ],
-      "relatedTerms": [
-        "lca",
-        "produktdaten",
-        "digitaler-produktpass",
-        "pef-product-environmental-footprint"
-      ]
-    },
-    "health-co-benefits": {
-      "label": "Health Co-Benefits / Gesundheits-Co-Benefits",
-      "slug": "health-co-benefits",
-      "url": "/begriffe/health-co-benefits/",
-      "hoverDefinition": "Health Co-Benefits sind gesundheitliche Zusatznutzen von Maßnahmen, die primär aus anderen Gründen ergriffen werden, etwa Klima- oder Verkehrspolitik.",
-      "shortDefinition": "Health Co-Benefits sind gesundheitliche Zusatznutzen von Maßnahmen, die primär aus anderen Gründen ergriffen werden, etwa Klima- oder Verkehrspolitik.",
-      "category": "Gesundheits- und Klimabegriff",
-      "synonyms": [
-        "Health Co-Benefits / Gesundheits-Co-Benefits",
-        "Health Co-Benefits",
-        "Gesundheits-Co-Benefits",
-        "Gesundheitsnutzen",
-        "gesundheitliche Zusatznutzen",
-        "Co-Benefits Gesundheit"
-      ],
-      "relatedTerms": [
-        "health-impact-assessment",
-        "sdgs",
-        "positive-netto-wirkung",
-        "wirkungsbewertung"
-      ]
-    },
-    "health-impact-assessment": {
-      "label": "Health Impact Assessment / HIA",
-      "slug": "health-impact-assessment",
-      "url": "/begriffe/health-impact-assessment/",
-      "hoverDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
-      "shortDefinition": "Health Impact Assessment prüft systematisch mögliche Gesundheitsfolgen einer Politik, Strategie, Planung, eines Programms oder Projekts.",
-      "category": "Gesundheits- und Methodenbegriff",
-      "synonyms": [
-        "Health Impact Assessment / HIA",
-        "Health Impact Assessment",
-        "HIA",
-        "Gesundheitsfolgenabschätzung",
-        "Gesundheits-Folgenabschätzung",
-        "Gesundheitswirkungsanalyse",
-        "Hygiene",
-        "Sanitärversorgung",
-        "Sanitaerversorgung",
-        "Public Health",
-        "Gesundheitsfolgenabschaetzung"
-      ],
-      "relatedTerms": [
-        "wirkung",
-        "wirkungsbewertung",
-        "sdgs",
-        "hitzestress",
-        "health-co-benefits",
-        "gesundheitsgerechtigkeit",
-        "one-health"
-      ]
-    },
-    "hebelpunkt": {
-      "label": "Hebel / Hebelpunkt",
-      "slug": "hebelpunkt",
-      "url": "/begriffe/hebelpunkt/",
-      "hoverDefinition": "Ein Hebelpunkt ist eine Stelle im System, an der eine Veränderung besonders starke Folgewirkungen auslösen kann.",
-      "shortDefinition": "Ein Hebelpunkt ist eine Stelle im System, an der eine Veränderung besonders starke Folgewirkungen auslösen kann.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Hebel / Hebelpunkt",
-        "Hebel",
-        "Hebelpunkt",
-        "Systemhebel",
-        "Wirkungshebel",
-        "Leverage Point",
-        "Leverage Points"
-      ],
-      "relatedTerms": [
-        "hebelwirkung",
-        "wirkungsrueckkopplung",
-        "wirkungspfad",
-        "wirkungssteuer"
-      ]
-    },
-    "hebelwirkung": {
-      "label": "Hebelwirkung",
-      "slug": "hebelwirkung",
-      "url": "/begriffe/hebelwirkung/",
-      "hoverDefinition": "Hebelwirkung beschreibt, wie stark ein Eingriff spätere Anreize, Routinen, Daten, Preise oder Entscheidungen verändert.",
-      "shortDefinition": "Hebelwirkung beschreibt, wie stark ein Eingriff spätere Anreize, Routinen, Daten, Preise oder Entscheidungen verändert.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Hebelwirkung",
-        "Leverage",
-        "Systemwirkung eines Hebels",
-        "Wirkungsverstärkung"
-      ],
-      "relatedTerms": [
-        "hebelpunkt",
-        "wirkungsrueckkopplung",
-        "wirkungspfad",
-        "positive-netto-wirkung"
-      ]
-    },
-    "herkunftsnachweis-hkn": {
-      "label": "Herkunftsnachweis / HKN",
-      "slug": "herkunftsnachweis-hkn",
-      "url": "/begriffe/herkunftsnachweis-hkn/",
-      "hoverDefinition": "Ein Herkunftsnachweis belegt Herkunft und Menge erneuerbarer Stromerzeugung, aber nicht automatisch physische Lieferung, Zusätzlichkeit oder Gesamtwirkung.",
-      "shortDefinition": "Ein Herkunftsnachweis ist ein elektronischer Nachweis dafür, wo und wie eine bestimmte Menge Strom aus erneuerbaren Energien erzeugt wurde.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Herkunftsnachweis / HKN",
-        "Herkunftsnachweis",
-        "HKN",
-        "HKN-Zertifikat",
-        "Herkunftsnachweisregister",
-        "HKNR",
-        "Guarantee of Origin",
-        "Guarantees of Origin",
-        "GoO",
-        "Ökostromnachweis",
-        "Gruenstromnachweis",
-        "Grünstromnachweis",
-        "Herkunftstracking",
-        "Strom-Herkunftsnachweis"
-      ],
-      "relatedTerms": [
-        "scope-2",
-        "ghg-protocol",
-        "greenwashing",
-        "produktdaten",
-        "wirkungsdaten",
-        "digitaler-produktpass",
-        "herkunftstransparenz"
-      ]
-    },
-    "herkunftstransparenz": {
-      "label": "Herkunftstransparenz",
-      "slug": "herkunftstransparenz",
-      "url": "/begriffe/herkunftstransparenz/",
-      "hoverDefinition": "Herkunftstransparenz macht sichtbar, woher ein Produkt, Rohstoff, Energieanteil oder Datenpunkt stammt.",
-      "shortDefinition": "Herkunftstransparenz macht sichtbar, woher ein Produkt, Rohstoff, Energieanteil oder Datenpunkt stammt.",
-      "category": "Daten- und Lieferkettenbegriff",
-      "synonyms": [
-        "Herkunftstransparenz",
-        "Herkunftsdaten",
-        "Herkunftsrisiko",
-        "Origin Transparency",
-        "Provenance Transparency",
-        "Nachvollziehbarkeit der Herkunft"
-      ],
-      "relatedTerms": [
-        "herkunftsnachweis-hkn",
-        "digitaler-produktpass",
-        "produktdaten",
-        "lieferkettendaten",
-        "eudr"
-      ]
-    },
-    "hfcs-hydrofluorocarbons": {
-      "label": "HFCs / Hydrofluorocarbons",
-      "slug": "hfcs-hydrofluorocarbons",
-      "url": "/begriffe/hfcs-hydrofluorocarbons/",
-      "hoverDefinition": "HFCs sind synthetische fluorierte Gase, die häufig als Kältemittel genutzt werden und als Treibhausgase klimawirksam sein können.",
-      "shortDefinition": "HFCs sind synthetische fluorierte Gase, die häufig als Kältemittel genutzt werden und als Treibhausgase klimawirksam sein können.",
-      "category": "Klima- und Stoffbegriff",
-      "synonyms": [
-        "HFCs / Hydrofluorocarbons",
-        "HFCs",
-        "Hydrofluorocarbons",
-        "teilfluorierte Kohlenwasserstoffe",
-        "teilfluorierte Fluorkohlenwasserstoffe",
-        "F-Gase",
-        "fluorierte Treibhausgase"
-      ],
-      "relatedTerms": [
-        "ghg-protocol",
-        "scope-1",
-        "scope-3",
-        "physical-climate-risk"
-      ]
-    },
-    "hitzeschutz-hitzeaktionsplan": {
-      "label": "Hitzeschutz / Hitzeaktionsplan",
-      "slug": "hitzeschutz-hitzeaktionsplan",
-      "url": "/begriffe/hitzeschutz-hitzeaktionsplan/",
-      "hoverDefinition": "Hitzeschutz bündelt Maßnahmen, die Menschen und Institutionen vor Gesundheitsrisiken durch Hitze schützen.",
-      "shortDefinition": "Hitzeschutz bündelt Maßnahmen, die Menschen und Institutionen vor Gesundheitsrisiken durch Hitze schützen.",
-      "category": "Klima- und Gesundheitsbegriff",
-      "synonyms": [
-        "Hitzeschutz / Hitzeaktionsplan",
-        "Hitzeschutz",
-        "Hitzeaktionsplan",
-        "Heat-Health Action Plan",
-        "HHAP",
-        "Hitze-Gesundheits-Aktionsplan",
-        "Heat Action Plan"
-      ],
-      "relatedTerms": [
-        "hitzestress",
-        "health-impact-assessment",
-        "wirkungsresilienz",
-        "wirkungshaushalt"
-      ]
-    },
-    "hitzestress": {
-      "label": "Hitzestress",
-      "slug": "hitzestress",
-      "url": "/begriffe/hitzestress/",
-      "hoverDefinition": "Hitzestress beschreibt gesundheitliche, soziale und infrastrukturelle Belastungen durch hohe Temperaturen und Hitzeereignisse.",
-      "shortDefinition": "Hitzestress beschreibt gesundheitliche, soziale und infrastrukturelle Belastungen durch hohe Temperaturen und Hitzeereignisse.",
-      "category": "Klima- und Gesundheitsbegriff",
-      "synonyms": [
-        "Hitzestress",
-        "Heat Stress",
-        "Hitzerisiko",
-        "Hitzebelastung",
-        "extreme Hitze"
-      ],
-      "relatedTerms": [
-        "hitzeschutz-hitzeaktionsplan",
-        "health-impact-assessment",
-        "physical-climate-risk",
-        "wirkungsresilienz",
-        "gesundheitsgerechtigkeit",
-        "klimagerechtigkeit",
-        "umweltgerechtigkeit"
-      ]
-    },
-    "hochwasserrisiko": {
-      "label": "Hochwasserrisiko",
-      "slug": "hochwasserrisiko",
-      "url": "/begriffe/hochwasserrisiko/",
-      "hoverDefinition": "Hochwasserrisiko beschreibt die Wahrscheinlichkeit und mögliche Schwere von Schäden durch Überflutung, Starkregen oder steigende Wasserstände.",
-      "shortDefinition": "Hochwasserrisiko beschreibt die Wahrscheinlichkeit und mögliche Schwere von Schäden durch Überflutung, Starkregen oder steigende Wasserstände.",
-      "category": "Klima- und Risikobegriff",
-      "synonyms": [
-        "Hochwasserrisiko",
-        "Hochwasser",
-        "Flood Risk",
-        "Überflutungsrisiko",
-        "Ueberflutungsrisiko",
-        "Starkregenrisiko"
-      ],
-      "relatedTerms": [
-        "physical-climate-risk",
-        "wasserstress",
-        "wirkungsresilienz",
-        "wirkungshaushalt"
+        "esrs"
       ]
     },
     "host-wirkungsscore": {
@@ -1560,7 +228,6 @@
       "shortDefinition": "Der Host-Wirkungsscore ist eine Scorecard für öffentliche Formate, die Quellenklarheit, Framing, Diskursführung, Community, Transparenz, Schutz und Korrekturfähigkeit prüft.",
       "category": "Messbegriff",
       "synonyms": [
-        "Host-Wirkungsscore",
         "HWS",
         "Host Scorecard",
         "Hosting-Scorecard"
@@ -1573,173 +240,6 @@
         "wirkungsorientiertes-hosting"
       ]
     },
-    "hotspot-analyse": {
-      "label": "Hotspot-Analyse",
-      "slug": "hotspot-analyse",
-      "url": "/begriffe/hotspot-analyse/",
-      "hoverDefinition": "Hotspot-Analyse identifiziert, wo entlang eines Produkts, Prozesses oder Systems die größten Wirkungen oder Risiken entstehen.",
-      "shortDefinition": "Hotspot-Analyse identifiziert, wo entlang eines Produkts, Prozesses oder Systems die größten Wirkungen oder Risiken entstehen.",
-      "category": "Methodenbegriff",
-      "synonyms": [
-        "Hotspot-Analyse",
-        "Hotspotanalyse",
-        "Hotspot Analysis",
-        "Wirkungshotspot",
-        "Impact Hotspot",
-        "LCA Hotspot"
-      ],
-      "relatedTerms": [
-        "lca",
-        "pef-product-environmental-footprint",
-        "produktdaten",
-        "wirkungsbewertung",
-        "reverse-merit-order"
-      ]
-    },
-    "human-rights-due-diligence": {
-      "label": "Human Rights Due Diligence / HRDD",
-      "slug": "human-rights-due-diligence",
-      "url": "/begriffe/human-rights-due-diligence/",
-      "hoverDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
-      "shortDefinition": "Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.",
-      "category": "Menschenrechts- und Lieferkettenbegriff",
-      "synonyms": [
-        "Human Rights Due Diligence / HRDD",
-        "Human Rights Due Diligence",
-        "HRDD",
-        "menschenrechtliche Sorgfaltspflicht",
-        "menschenrechtliche Sorgfaltspflichten",
-        "human rights due diligence",
-        "Sorgfaltspflicht",
-        "Due Diligence",
-        "Responsible Purchasing",
-        "Supplier Engagement",
-        "Lieferkettenresilienz",
-        "geopolitisches Lieferkettenrisiko",
-        "Einkaufspraktiken"
-      ],
-      "relatedTerms": [
-        "un-guiding-principles",
-        "oecd-leitsaetze",
-        "ilo-kernarbeitsnormen",
-        "csddd",
-        "lksg",
-        "beschwerdemechanismus-access-to-remedy"
-      ]
-    },
-    "human-rights-impact-assessment": {
-      "label": "Human Rights Impact Assessment / HRIA",
-      "slug": "human-rights-impact-assessment",
-      "url": "/begriffe/human-rights-impact-assessment/",
-      "hoverDefinition": "Ein HRIA untersucht mögliche oder tatsächliche Menschenrechtswirkungen von Projekten, Produkten, Lieferketten oder politischen Entscheidungen.",
-      "shortDefinition": "Ein HRIA untersucht mögliche oder tatsächliche Menschenrechtswirkungen von Projekten, Produkten, Lieferketten oder politischen Entscheidungen.",
-      "category": "Menschenrechts- und Methodenbegriff",
-      "synonyms": [
-        "Human Rights Impact Assessment / HRIA",
-        "Human Rights Impact Assessment",
-        "HRIA",
-        "Menschenrechtsfolgenabschätzung",
-        "Menschenrechts-Folgenabschätzung",
-        "menschenrechtliche Wirkungsanalyse"
-      ],
-      "relatedTerms": [
-        "human-rights-due-diligence",
-        "un-guiding-principles",
-        "csddd",
-        "lksg",
-        "wirkungsbewertung"
-      ]
-    },
-    "humusaufbau": {
-      "label": "Humusaufbau",
-      "slug": "humusaufbau",
-      "url": "/begriffe/humusaufbau/",
-      "hoverDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
-      "shortDefinition": "Humusaufbau stärkt organische Bodensubstanz und kann Bodenfruchtbarkeit, Wasserhaltefähigkeit, Biodiversität und Kohlenstoffspeicherung verbessern.",
-      "category": "Boden- und Landwirtschaftsbegriff",
-      "synonyms": [
-        "Humusaufbau",
-        "Humus",
-        "Soil Organic Matter Aufbau",
-        "Bodenhumus",
-        "Bodenorganische Substanz",
-        "Soil Organic Carbon Aufbau",
-        "SOC-Aufbau",
-        "Bodenfruchtbarkeit",
-        "Bodengesundheit",
-        "Bodenversiegelung",
-        "Entsiegelung"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "wasserstress",
-        "positive-netto-wirkung",
-        "lca",
-        "regeneration",
-        "renaturierung"
-      ]
-    },
-    "hunger-hungerbekaempfung": {
-      "label": "Hunger / Hungerbekämpfung",
-      "slug": "hunger-hungerbekaempfung",
-      "url": "/begriffe/hunger-hungerbekaempfung/",
-      "hoverDefinition": "Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernährungssysteme nachhaltig, resilient und gerecht zu gestalten.",
-      "shortDefinition": "Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernährungssysteme nachhaltig, resilient und gerecht zu gestalten.",
-      "category": "SDG- und Ernährungssystembegriff",
-      "synonyms": [
-        "Hunger / Hungerbekämpfung",
-        "Hunger",
-        "Hungerbekämpfung",
-        "Zero Hunger",
-        "SDG 2",
-        "Ernährungssicherheit",
-        "Food Security"
-      ],
-      "relatedTerms": [
-        "sdgs",
-        "agenda-2030",
-        "humusaufbau",
-        "wasserstress",
-        "positive-netto-wirkung"
-      ]
-    },
-    "hydrologischer-kreislauf": {
-      "label": "Hydrologischer Kreislauf",
-      "slug": "hydrologischer-kreislauf",
-      "url": "/begriffe/hydrologischer-kreislauf/",
-      "hoverDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
-      "shortDefinition": "Der hydrologische Kreislauf beschreibt die Bewegung von Wasser zwischen Atmosphäre, Böden, Gewässern, Ökosystemen und menschlicher Nutzung.",
-      "category": "Wasser- und Systembegriff",
-      "synonyms": [
-        "Hydrologischer Kreislauf",
-        "Wasserkreislauf",
-        "Water Cycle",
-        "hydrological cycle",
-        "regionaler Wasserkreislauf",
-        "Hydropower",
-        "Wasserkraft",
-        "Hydroökologie",
-        "Hydrooekologie",
-        "harmful algal blooms",
-        "schädliche Algenblüten",
-        "schaedliche Algenblueten",
-        "Wasserhaushalt",
-        "Grundwasserneubildung",
-        "Wasserrückhalt",
-        "Wasserrueckhalt",
-        "Schwammstadt",
-        "blau-grüne Infrastruktur",
-        "blau-gruene Infrastruktur"
-      ],
-      "relatedTerms": [
-        "wasserstress",
-        "humusaufbau",
-        "hitzestress",
-        "biodiversitaetsrisiko",
-        "naturbasierte-loesungen",
-        "renaturierung"
-      ]
-    },
     "idgs": {
       "label": "IDGs",
       "slug": "idgs",
@@ -1748,7 +248,6 @@
       "shortDefinition": "IDGs sind ein anschlussfähiger Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeiten.",
       "category": "Grundbegriff",
       "synonyms": [
-        "IDGs",
         "Inner Development Goals",
         "IDG",
         "innere Entwicklungsziele"
@@ -1760,447 +259,6 @@
         "agenda-2030"
       ]
     },
-    "ilo": {
-      "label": "ILO",
-      "slug": "ilo",
-      "url": "/begriffe/ilo/",
-      "hoverDefinition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
-      "shortDefinition": "Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ILO"
-      ],
-      "relatedTerms": [
-        "ilo-kernarbeitsnormen",
-        "social-taxonomy",
-        "lksg"
-      ]
-    },
-    "ilo-kernarbeitsnormen": {
-      "label": "ILO-Kernarbeitsnormen",
-      "slug": "ilo-kernarbeitsnormen",
-      "url": "/begriffe/ilo-kernarbeitsnormen/",
-      "hoverDefinition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
-      "shortDefinition": "ILO-Kernarbeitsnormen beschreiben grundlegende Rechte bei der Arbeit, etwa Vereinigungsfreiheit, Verbot von Zwangsarbeit, Kinderarbeit und Diskriminierung.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ILO-Kernarbeitsnormen"
-      ],
-      "relatedTerms": [
-        "forced-labour-regulation",
-        "mindestschutz-minimum-safeguards",
-        "social-taxonomy",
-        "lieferkettendaten"
-      ]
-    },
-    "impact-washing": {
-      "label": "Impact-Washing",
-      "slug": "impact-washing",
-      "url": "/begriffe/impact-washing/",
-      "hoverDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
-      "shortDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Impact-Washing"
-      ],
-      "relatedTerms": [
-        "greenwashing",
-        "sdg-washing",
-        "wirkungspfad",
-        "datenqualitaet",
-        "folgencheck"
-      ]
-    },
-    "insetting": {
-      "label": "Insetting",
-      "slug": "insetting",
-      "url": "/begriffe/insetting/",
-      "hoverDefinition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
-      "shortDefinition": "Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Insetting"
-      ],
-      "relatedTerms": [
-        "offsetting-kompensation",
-        "scope-3",
-        "lieferkettendaten",
-        "wirkungsdaten"
-      ]
-    },
-    "inside-out-outside-in": {
-      "label": "Inside-out / Outside-in",
-      "slug": "inside-out-outside-in",
-      "url": "/begriffe/inside-out-outside-in/",
-      "hoverDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
-      "shortDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Inside-out / Outside-in",
-        "Inside-out",
-        "Outside-in",
-        "Doppelte Materialität vs. doppelte Wirkung",
-        "doppelte Wirkung"
-      ],
-      "relatedTerms": [
-        "doppelte-wesentlichkeit",
-        "iro",
-        "csrd"
-      ]
-    },
-    "intersektionalitaet": {
-      "label": "Intersektionalität",
-      "slug": "intersektionalitaet",
-      "url": "/begriffe/intersektionalitaet/",
-      "hoverDefinition": "Intersektionalität beschreibt, dass Benachteiligungen sich überlagern und gegenseitig verstärken können.",
-      "shortDefinition": "Intersektionalität beschreibt, dass Benachteiligungen sich überlagern und gegenseitig verstärken können.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Intersektionalität",
-        "Intersektionalitaet",
-        "Intersectionality",
-        "Mehrfachdiskriminierung",
-        "Diskriminierung",
-        "intergenerationelle Armut",
-        "Bildungsgerechtigkeit"
-      ],
-      "relatedTerms": []
-    },
-    "ipbes": {
-      "label": "IPBES",
-      "slug": "ipbes",
-      "url": "/begriffe/ipbes/",
-      "hoverDefinition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
-      "shortDefinition": "IPBES bewertet den wissenschaftlichen Stand zu Biodiversität und Ökosystemleistungen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "IPBES"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "nature-related-risks",
-        "tnfd"
-      ]
-    },
-    "ipcc": {
-      "label": "IPCC",
-      "slug": "ipcc",
-      "url": "/begriffe/ipcc/",
-      "hoverDefinition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
-      "shortDefinition": "Der IPCC ist der Weltklimarat und bewertet den wissenschaftlichen Stand zum Klimawandel.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "IPCC"
-      ],
-      "relatedTerms": [
-        "physical-climate-risk",
-        "transition-risk",
-        "eu-climate-law"
-      ]
-    },
-    "iro": {
-      "label": "IRO / Impacts, Risks and Opportunities",
-      "slug": "iro",
-      "url": "/begriffe/iro/",
-      "hoverDefinition": "IRO verbindet Wirkungen, Risiken und Chancen als zentrale Struktur der ESRS-Wesentlichkeitsanalyse.",
-      "shortDefinition": "IRO steht in den ESRS für Auswirkungen, Risiken und Chancen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "IRO / Impacts, Risks and Opportunities",
-        "IRO",
-        "Impacts, Risks and Opportunities",
-        "Impacts Risks Opportunities",
-        "Auswirkungen Risiken Chancen"
-      ],
-      "relatedTerms": [
-        "esrs",
-        "doppelte-wesentlichkeit",
-        "wirkungsrisiko"
-      ]
-    },
-    "iso-14040-14044": {
-      "label": "ISO 14040 / ISO 14044",
-      "slug": "iso-14040-14044",
-      "url": "/begriffe/iso-14040-14044/",
-      "hoverDefinition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
-      "shortDefinition": "ISO 14040 und ISO 14044 beschreiben Grundsätze, Rahmen und Anforderungen für Lebenszyklusanalysen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ISO 14040 / ISO 14044",
-        "ISO 14040",
-        "ISO 14044"
-      ],
-      "relatedTerms": [
-        "lca",
-        "epd",
-        "pef-product-environmental-footprint"
-      ]
-    },
-    "issb-ifrs-s1-s2": {
-      "label": "ISSB / IFRS S1 und IFRS S2",
-      "slug": "issb-ifrs-s1-s2",
-      "url": "/begriffe/issb-ifrs-s1-s2/",
-      "hoverDefinition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
-      "shortDefinition": "ISSB entwickelt IFRS-Nachhaltigkeitsstandards; IFRS S1 behandelt allgemeine Nachhaltigkeitsangaben, IFRS S2 klimabezogene Angaben.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "ISSB / IFRS S1 und IFRS S2",
-        "ISSB",
-        "IFRS S1 und IFRS S2"
-      ],
-      "relatedTerms": [
-        "tcfd",
-        "transition-risk",
-        "physical-climate-risk",
-        "berichtsdaten"
-      ]
-    },
-    "just-transition-mechanism": {
-      "label": "Just Transition Mechanism",
-      "slug": "just-transition-mechanism",
-      "url": "/begriffe/just-transition-mechanism/",
-      "hoverDefinition": "Just Transition verbindet Klimapolitik mit sozialer Abfederung, regionalem Strukturwandel und fairer Transformationsfinanzierung.",
-      "shortDefinition": "Der Just Transition Mechanism unterstützt Regionen und Menschen, die vom Übergang zu einer klimaneutralen Wirtschaft besonders betroffen sind.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Just Transition Mechanism",
-        "Mechanismus für einen gerechten Übergang",
-        "Just Transition"
-      ],
-      "relatedTerms": [
-        "transition-finance",
-        "wirkungsfonds",
-        "wirkungseinkommen"
-      ]
-    },
-    "kipppunkt-systemschwelle": {
-      "label": "Kipppunkt / Systemschwelle",
-      "slug": "kipppunkt-systemschwelle",
-      "url": "/begriffe/kipppunkt-systemschwelle/",
-      "hoverDefinition": "Ein Kipppunkt ist ein Schwellenbereich, ab dem ein System in einen anderen Zustand wechseln kann.",
-      "shortDefinition": "Ein Kipppunkt ist ein Schwellenbereich, ab dem ein System in einen anderen Zustand wechseln kann.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Kipppunkt / Systemschwelle",
-        "Kipppunkt",
-        "Tipping Point",
-        "Systemschwelle",
-        "soziale Kipppunkte",
-        "soziale Kippunkte"
-      ],
-      "relatedTerms": [
-        "wirkungsrisiko",
-        "wirkungspfad",
-        "wirkungsresilienz"
-      ]
-    },
-    "klimagerechtigkeit": {
-      "label": "Klimagerechtigkeit",
-      "slug": "klimagerechtigkeit",
-      "url": "/begriffe/klimagerechtigkeit/",
-      "hoverDefinition": "Klimagerechtigkeit betrachtet Klimaschutz und Klimafolgen als Verantwortungs-, Verteilungs- und Generationenfrage.",
-      "shortDefinition": "Klimagerechtigkeit betrachtet Klimaschutz und Klimafolgen als Verantwortungs-, Verteilungs- und Generationenfrage.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Klimagerechtigkeit",
-        "Climate Justice",
-        "Klimaverteilungsgerechtigkeit",
-        "gerechte Klimapolitik"
-      ],
-      "relatedTerms": [
-        "just-transition-mechanism"
-      ]
-    },
-    "klimaneutralitaet": {
-      "label": "Klimaneutralität",
-      "slug": "klimaneutralitaet",
-      "url": "/begriffe/klimaneutralitaet/",
-      "hoverDefinition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
-      "shortDefinition": "Klimaneutralität bezeichnet das Ziel, netto keine zusätzliche Klimawirkung durch Treibhausgasemissionen zu verursachen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Klimaneutralität"
-      ],
-      "relatedTerms": [
-        "net-zero",
-        "greenwashing",
-        "climate-neutral-claim",
-        "offsetting-kompensation"
-      ]
-    },
-    "konservative-annahme": {
-      "label": "Konservative Annahme",
-      "slug": "konservative-annahme",
-      "url": "/begriffe/konservative-annahme/",
-      "hoverDefinition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
-      "shortDefinition": "Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Konservative Annahme"
-      ],
-      "relatedTerms": [
-        "datenluecke",
-        "datenqualitaet",
-        "reverse-merit-order"
-      ]
-    },
-    "kosten-des-nicht-handelns": {
-      "label": "Kosten des Nicht-Handelns",
-      "slug": "kosten-des-nicht-handelns",
-      "url": "/begriffe/kosten-des-nicht-handelns/",
-      "hoverDefinition": "Kosten des Nicht-Handelns sind Schäden und Folgekosten, die entstehen, wenn notwendige Vorsorge oder Transformation ausbleibt.",
-      "shortDefinition": "Kosten des Nicht-Handelns sind Schäden und Folgekosten, die entstehen, wenn notwendige Vorsorge oder Transformation ausbleibt.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Kosten des Nicht-Handelns",
-        "Cost of inaction",
-        "Kosten der Untätigkeit",
-        "Kosten der Untaetigkeit",
-        "Nicht-Handeln",
-        "Untätigkeitskosten",
-        "Untaetigkeitskosten"
-      ],
-      "relatedTerms": [
-        "wirkungshaushalt",
-        "wirkungsrisiko"
-      ]
-    },
-    "lca": {
-      "label": "LCA / Life Cycle Assessment",
-      "slug": "lca",
-      "url": "/begriffe/lca/",
-      "hoverDefinition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
-      "shortDefinition": "LCA ist eine Lebenszyklusanalyse zur Bewertung von Umweltwirkungen eines Produkts oder Prozesses über den Lebensweg.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "LCA / Life Cycle Assessment",
-        "LCA",
-        "Life Cycle Assessment",
-        "Lebenszyklusanalyse",
-        "Ökobilanz"
-      ],
-      "relatedTerms": [
-        "iso-14040-14044",
-        "pef-product-environmental-footprint",
-        "epd",
-        "pcf-product-carbon-footprint"
-      ]
-    },
-    "liability-risk": {
-      "label": "Liability Risk",
-      "slug": "liability-risk",
-      "url": "/begriffe/liability-risk/",
-      "hoverDefinition": "Liability Risk meint Haftungsrisiken durch Schäden, Pflichtverletzungen oder irreführende Nachhaltigkeitsaussagen.",
-      "shortDefinition": "Liability Risk bezeichnet Haftungs- und Rechtsrisiken, die aus Schäden, Pflichtverletzungen, irreführenden Angaben oder unzureichendem Umgang mit Nachhaltigkeitsrisiken entstehen können.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Liability Risk",
-        "Haftungsrisiko",
-        "climate liability risk",
-        "Klimahaftungsrisiko"
-      ],
-      "relatedTerms": [
-        "physical-climate-risk",
-        "transition-risk",
-        "stranded-assets",
-        "greenwashing"
-      ]
-    },
-    "lieferkettendaten": {
-      "label": "Lieferkettendaten",
-      "slug": "lieferkettendaten",
-      "url": "/begriffe/lieferkettendaten/",
-      "hoverDefinition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
-      "shortDefinition": "Lieferkettendaten beschreiben Herkunft, Vorleistungen, Transport, Arbeitsbedingungen, Umweltrisiken und Sorgfalt entlang der Wertschöpfung.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Lieferkettendaten"
-      ],
-      "relatedTerms": [
-        "csddd",
-        "lksg",
-        "eudr",
-        "scope-3",
-        "digitaler-produktpass"
-      ]
-    },
-    "limited-assurance": {
-      "label": "Limited Assurance",
-      "slug": "limited-assurance",
-      "url": "/begriffe/limited-assurance/",
-      "hoverDefinition": "Limited Assurance ist ein begrenztes Prüfungsniveau und sollte nicht wie vollständige Sicherheit gelesen werden.",
-      "shortDefinition": "Limited Assurance ist eine begrenzte prüferische Sicherheit mit geringerem Prüfungsniveau als Reasonable Assurance.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Limited Assurance",
-        "begrenzte Sicherheit",
-        "begrenzte Prüfungssicherheit"
-      ],
-      "relatedTerms": [
-        "assurance",
-        "reasonable-assurance",
-        "datenqualitaet"
-      ]
-    },
-    "lksg": {
-      "label": "LkSG / Lieferkettensorgfaltspflichtengesetz",
-      "slug": "lksg",
-      "url": "/begriffe/lksg/",
-      "hoverDefinition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
-      "shortDefinition": "Das LkSG ist das deutsche Gesetz zu menschenrechtlichen und umweltbezogenen Sorgfaltspflichten in Lieferketten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "LkSG / Lieferkettensorgfaltspflichtengesetz",
-        "LkSG",
-        "Lieferkettensorgfaltspflichtengesetz"
-      ],
-      "relatedTerms": [
-        "csddd",
-        "lieferkettendaten",
-        "un-guiding-principles",
-        "oecd-leitsaetze"
-      ]
-    },
-    "lock-in-pfadabhaengigkeit": {
-      "label": "Lock-in / Pfadabhängigkeit",
-      "slug": "lock-in-pfadabhaengigkeit",
-      "url": "/begriffe/lock-in-pfadabhaengigkeit/",
-      "hoverDefinition": "Lock-in beschreibt, dass heutige Entscheidungen künftige Alternativen verengen oder verteuern.",
-      "shortDefinition": "Lock-in beschreibt, dass heutige Entscheidungen künftige Alternativen verengen oder verteuern.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Lock-in / Pfadabhängigkeit",
-        "Lock-in",
-        "Lock-In",
-        "Pfadabhängigkeit",
-        "Pfadabhaengigkeit",
-        "Carbon Lock-in",
-        "fossiler Lock-in",
-        "Infrastruktur-Lock-in"
-      ],
-      "relatedTerms": [
-        "transition-risk",
-        "stranded-assets",
-        "wirkungsrisiko"
-      ]
-    },
-    "material-footprint": {
-      "label": "Material Footprint",
-      "slug": "material-footprint",
-      "url": "/begriffe/material-footprint/",
-      "hoverDefinition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
-      "shortDefinition": "Der Material Footprint beschreibt Materialeinsatz und Rohstoffinanspruchnahme entlang von Produkten, Organisationen oder Konsum.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Material Footprint"
-      ],
-      "relatedTerms": [
-        "produktdaten",
-        "rezyklatanteil",
-        "recyclingquote",
-        "lca"
-      ]
-    },
     "mensch-planet-demokratie": {
       "label": "Mensch, Planet und Demokratie",
       "slug": "mensch-planet-demokratie",
@@ -2209,10 +267,7 @@
       "shortDefinition": "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst.",
       "category": "Demokratiebegriff",
       "synonyms": [
-        "Mensch, Planet und Demokratie",
-        "MPD",
-        "Human Security",
-        "menschliche Sicherheit"
+        "MPD"
       ],
       "relatedTerms": [
         "sdgs",
@@ -2223,46 +278,6 @@
         "wirkungsbewertung"
       ]
     },
-    "mindestschutz-minimum-safeguards": {
-      "label": "Mindestschutz / Minimum Safeguards",
-      "slug": "mindestschutz-minimum-safeguards",
-      "url": "/begriffe/mindestschutz-minimum-safeguards/",
-      "hoverDefinition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
-      "shortDefinition": "Mindestschutz bezeichnet soziale und menschenrechtliche Mindestanforderungen im Rahmen der EU-Taxonomie.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Mindestschutz / Minimum Safeguards",
-        "Mindestschutz",
-        "Minimum Safeguards"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "oecd-leitsaetze",
-        "un-guiding-principles",
-        "ilo-kernarbeitsnormen",
-        "social-taxonomy"
-      ]
-    },
-    "mobilitaetsarmut": {
-      "label": "Mobilitätsarmut",
-      "slug": "mobilitaetsarmut",
-      "url": "/begriffe/mobilitaetsarmut/",
-      "hoverDefinition": "Mobilitätsarmut liegt vor, wenn Menschen zentrale Orte und Chancen nicht verlässlich erreichen können.",
-      "shortDefinition": "Mobilitätsarmut liegt vor, wenn Menschen zentrale Orte und Chancen nicht verlässlich erreichen können.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Mobilitätsarmut",
-        "Mobilitaetsarmut",
-        "Mobility Poverty",
-        "Transport Poverty",
-        "Verkehrsarmut",
-        "Mobilitätsbenachteiligung"
-      ],
-      "relatedTerms": [
-        "handlungsfaehigkeit",
-        "handlungsspielraum"
-      ]
-    },
     "nace": {
       "label": "NACE",
       "slug": "nace",
@@ -2270,15 +285,11 @@
       "hoverDefinition": "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung.",
       "shortDefinition": "NACE ist die europäische Klassifikation wirtschaftlicher Tätigkeiten.",
       "category": "Datenbegriff",
-      "synonyms": [
-        "NACE"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "eu-taxonomie",
         "woek-id",
-        "scorecard",
-        "taxonomy-navigator",
-        "archetyp"
+        "scorecard"
       ]
     },
     "nachhaltigkeit": {
@@ -2289,7 +300,6 @@
       "shortDefinition": "Nachhaltigkeit bedeutet in der Wirkungsökonomie: Ein System funktioniert auch morgen noch.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Nachhaltigkeit",
         "nachhaltig",
         "nachhaltige Entwicklung",
         "nachhaltige Wirtschaft",
@@ -2305,77 +315,6 @@
         "stranded-assets"
       ]
     },
-    "nachhaltigkeitslabel": {
-      "label": "Nachhaltigkeitslabel",
-      "slug": "nachhaltigkeitslabel",
-      "url": "/begriffe/nachhaltigkeitslabel/",
-      "hoverDefinition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
-      "shortDefinition": "Nachhaltigkeitslabel kennzeichnen Produkte, Dienstleistungen oder Organisationen nach bestimmten Nachhaltigkeitskriterien.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Nachhaltigkeitslabel"
-      ],
-      "relatedTerms": [
-        "eu-ecolabel",
-        "greenwashing",
-        "produktdaten"
-      ]
-    },
-    "naturbasierte-loesungen": {
-      "label": "Naturbasierte Lösungen",
-      "slug": "naturbasierte-loesungen",
-      "url": "/begriffe/naturbasierte-loesungen/",
-      "hoverDefinition": "Naturbasierte Lösungen nutzen und stärken Ökosysteme, um Klima-, Wasser-, Gesundheits- oder Resilienzprobleme zu lösen.",
-      "shortDefinition": "Naturbasierte Lösungen nutzen und stärken Ökosysteme, um Klima-, Wasser-, Gesundheits- oder Resilienzprobleme zu lösen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Naturbasierte Lösungen",
-        "Naturbasierte Loesungen",
-        "Nature-based Solutions",
-        "Nature Based Solutions",
-        "NbS",
-        "naturbasierte Infrastruktur"
-      ],
-      "relatedTerms": [
-        "hitzeschutz-hitzeaktionsplan",
-        "hydrologischer-kreislauf"
-      ]
-    },
-    "nature-positive": {
-      "label": "Nature Positive",
-      "slug": "nature-positive",
-      "url": "/begriffe/nature-positive/",
-      "hoverDefinition": "Nature Positive beschreibt das Ziel, Naturverluste zu stoppen und Natur messbar wieder aufzubauen.",
-      "shortDefinition": "Nature Positive beschreibt das Ziel, Naturverluste zu stoppen und Natur messbar wieder aufzubauen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Nature Positive",
-        "Nature-positive",
-        "naturpositiv",
-        "natur-positive Wirkung"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "nichtkompensationsprinzip",
-        "greenwashing"
-      ]
-    },
-    "nature-related-risks": {
-      "label": "Nature-related Risks",
-      "slug": "nature-related-risks",
-      "url": "/begriffe/nature-related-risks/",
-      "hoverDefinition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
-      "shortDefinition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Nature-related Risks"
-      ],
-      "relatedTerms": [
-        "tnfd",
-        "biodiversitaetsrisiko",
-        "wasserstress"
-      ]
-    },
     "negative-wirkung": {
       "label": "negative Wirkung",
       "slug": "negative-wirkung",
@@ -2383,30 +322,11 @@
       "hoverDefinition": "Negative Wirkung liegt vor, wenn eine Veränderung SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört.",
       "shortDefinition": "Negative Wirkung ist eine Zustandsveränderung, die Mensch, Planet oder Demokratie schädigt oder destabilisiert.",
       "category": "Bewertungsbegriff",
-      "synonyms": [
-        "negative Wirkung"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkung",
         "wirkungsrisiko",
         "netto-wirkung"
-      ]
-    },
-    "net-zero": {
-      "label": "Net Zero",
-      "slug": "net-zero",
-      "url": "/begriffe/net-zero/",
-      "hoverDefinition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
-      "shortDefinition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Net Zero"
-      ],
-      "relatedTerms": [
-        "sbti",
-        "transition-plan",
-        "offsetting-kompensation",
-        "carbon-credits"
       ]
     },
     "netto-wirkung": {
@@ -2417,7 +337,6 @@
       "shortDefinition": "Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen.",
       "category": "Bewertungsbegriff",
       "synonyms": [
-        "Netto-Wirkung",
         "Nettowirkung"
       ],
       "relatedTerms": [
@@ -2434,7 +353,6 @@
       "shortDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung.",
       "category": "Messbegriff",
       "synonyms": [
-        "NWI",
         "Netto-Wirkungs-Index",
         "Netto-Wirkungs-Index / NWI"
       ],
@@ -2452,30 +370,11 @@
       "hoverDefinition": "Neutrale Wirkung bedeutet, dass keine relevante positive oder negative Veränderung nachweisbar ist oder die Wirkung im Bewertungsrahmen neutral eingeordnet wird.",
       "shortDefinition": "Neutrale Wirkung ist eine feststellbare Zustandsveränderung, die im Bewertungsrahmen weder positiv noch negativ ins Gewicht fällt.",
       "category": "Bewertungsbegriff",
-      "synonyms": [
-        "neutrale Wirkung"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkung",
         "positive-wirkung",
         "negative-wirkung"
-      ]
-    },
-    "nfrd": {
-      "label": "NFRD",
-      "slug": "nfrd",
-      "url": "/begriffe/nfrd/",
-      "hoverDefinition": "NFRD ist der Vorläufer der CSRD und erklärt, warum EU-Nachhaltigkeitsreporting heute stärker standardisiert ist.",
-      "shortDefinition": "Die NFRD war die frühere EU-Richtlinie zur nichtfinanziellen Berichterstattung, die durch die CSRD weiterentwickelt wurde.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "NFRD",
-        "Non-Financial Reporting Directive"
-      ],
-      "relatedTerms": [
-        "csrd",
-        "esrs",
-        "berichtsdaten"
       ]
     },
     "nichtkompensationsprinzip": {
@@ -2486,260 +385,13 @@
       "shortDefinition": "Das Nichtkompensationsprinzip verhindert, dass schwere Schäden durch positive Teilwirkungen schöngerechnet werden.",
       "category": "Bewertungsbegriff",
       "synonyms": [
-        "Nichtkompensationsprinzip",
         "Nicht-Kompensation",
         "Nichtkompensation"
       ],
       "relatedTerms": [
         "reverse-merit-order",
         "wirkungsgrenze",
-        "netto-wirkung",
-        "planetare-grenzen",
-        "nature-positive",
-        "zielkonflikt"
-      ]
-    },
-    "oecd-leitsaetze": {
-      "label": "OECD-Leitsätze",
-      "slug": "oecd-leitsaetze",
-      "url": "/begriffe/oecd-leitsaetze/",
-      "hoverDefinition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
-      "shortDefinition": "Die OECD-Leitsätze für multinationale Unternehmen beschreiben verantwortungsvolles unternehmerisches Handeln.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "OECD-Leitsätze"
-      ],
-      "relatedTerms": [
-        "mindestschutz-minimum-safeguards",
-        "un-guiding-principles",
-        "csddd",
-        "lksg"
-      ]
-    },
-    "oef-organisation-environmental-footprint": {
-      "label": "OEF / Organisation Environmental Footprint",
-      "slug": "oef-organisation-environmental-footprint",
-      "url": "/begriffe/oef-organisation-environmental-footprint/",
-      "hoverDefinition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
-      "shortDefinition": "OEF ist die EU-Methode zur Messung der Umweltwirkung von Organisationen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "OEF / Organisation Environmental Footprint",
-        "OEF",
-        "Organisation Environmental Footprint"
-      ],
-      "relatedTerms": [
-        "pef-product-environmental-footprint",
-        "lca",
-        "scorecard",
-        "wirkungsdaten"
-      ]
-    },
-    "offsetting-kompensation": {
-      "label": "Offsetting / Kompensation",
-      "slug": "offsetting-kompensation",
-      "url": "/begriffe/offsetting-kompensation/",
-      "hoverDefinition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
-      "shortDefinition": "Offsetting bezeichnet den Ausgleich eigener Emissionen oder Schäden durch Minderungen oder Entnahmen an anderer Stelle.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Offsetting / Kompensation",
-        "Offsetting",
-        "Kompensation",
-        "CO2-Kompensation",
-        "CO₂-Kompensation",
-        "Carbon Offsetting"
-      ],
-      "relatedTerms": [
-        "carbon-credits",
-        "insetting",
-        "nichtkompensationsprinzip",
-        "reverse-merit-order"
-      ]
-    },
-    "oekosystemleistungen": {
-      "label": "Ökosystemleistungen / Ökosystemfunktionen",
-      "slug": "oekosystemleistungen",
-      "url": "/begriffe/oekosystemleistungen/",
-      "hoverDefinition": "Ökosystemleistungen beschreiben Beiträge der Natur zu Wasser, Ernährung, Klima, Gesundheit, Schutz und Lebensqualität.",
-      "shortDefinition": "Ökosystemleistungen beschreiben Beiträge der Natur zu Wasser, Ernährung, Klima, Gesundheit, Schutz und Lebensqualität.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Ökosystemleistungen / Ökosystemfunktionen",
-        "Oekosystemleistungen",
-        "Ecosystem Services",
-        "Ökosystemfunktionen",
-        "Oekosystemfunktionen",
-        "Bestäubungsleistung",
-        "Bestaeubungsleistung",
-        "Biodiversitäts-Fußabdruck",
-        "Biodiversitaets-Fussabdruck"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "nature-related-risks"
-      ]
-    },
-    "one-health": {
-      "label": "One Health",
-      "slug": "one-health",
-      "url": "/begriffe/one-health/",
-      "hoverDefinition": "One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.",
-      "shortDefinition": "One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "One Health",
-        "One-Health",
-        "Eine Gesundheit",
-        "Mensch-Tier-Umwelt-Gesundheit"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "health-impact-assessment"
-      ]
-    },
-    "pai": {
-      "label": "PAI / Principal Adverse Impacts",
-      "slug": "pai",
-      "url": "/begriffe/pai/",
-      "hoverDefinition": "PAI machen negative Nachhaltigkeitswirkungen im Finanzmarkt sichtbar, ersetzen aber keine vollständige WÖk-Netto-Wirkungsbewertung.",
-      "shortDefinition": "PAI sind Indikatoren für wesentliche nachteilige Auswirkungen von Investitionsentscheidungen auf Nachhaltigkeitsfaktoren.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "PAI / Principal Adverse Impacts",
-        "PAI",
-        "Principal Adverse Impacts",
-        "Principal Adverse Impact",
-        "nachteilige Nachhaltigkeitsauswirkungen"
-      ],
-      "relatedTerms": [
-        "sfdr",
-        "sustainable-finance",
-        "wirkungsrisiko",
-        "wirkungsdaten"
-      ]
-    },
-    "pcf-product-carbon-footprint": {
-      "label": "PCF / Product Carbon Footprint",
-      "slug": "pcf-product-carbon-footprint",
-      "url": "/begriffe/pcf-product-carbon-footprint/",
-      "hoverDefinition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
-      "shortDefinition": "Der Product Carbon Footprint beschreibt die Treibhausgasemissionen eines Produkts über definierte Lebenszyklusgrenzen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "PCF / Product Carbon Footprint",
-        "PCF",
-        "Product Carbon Footprint"
-      ],
-      "relatedTerms": [
-        "ghg-protocol",
-        "scope-3",
-        "lca",
-        "produktdaten"
-      ]
-    },
-    "pcr-product-category-rules": {
-      "label": "PCR / Product Category Rules",
-      "slug": "pcr-product-category-rules",
-      "url": "/begriffe/pcr-product-category-rules/",
-      "hoverDefinition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
-      "shortDefinition": "Product Category Rules legen Produktkategorien-spezifische Regeln für Umweltproduktdeklarationen fest.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "PCR / Product Category Rules",
-        "PCR",
-        "Product Category Rules"
-      ],
-      "relatedTerms": [
-        "epd",
-        "lca",
-        "produktdaten"
-      ]
-    },
-    "pef-product-environmental-footprint": {
-      "label": "PEF / Product Environmental Footprint",
-      "slug": "pef-product-environmental-footprint",
-      "url": "/begriffe/pef-product-environmental-footprint/",
-      "hoverDefinition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
-      "shortDefinition": "PEF ist die EU-Methode zur Messung der Umweltwirkung von Produkten über den Lebenszyklus.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "PEF / Product Environmental Footprint",
-        "PEF",
-        "Product Environmental Footprint",
-        "Produkt-Umweltfußabdruck"
-      ],
-      "relatedTerms": [
-        "lca",
-        "oef-organisation-environmental-footprint",
-        "epd",
-        "produktdaten"
-      ]
-    },
-    "physical-climate-risk": {
-      "label": "Physical Climate Risk",
-      "slug": "physical-climate-risk",
-      "url": "/begriffe/physical-climate-risk/",
-      "hoverDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
-      "shortDefinition": "Physical Climate Risk beschreibt physische Klimarisiken wie Hitze, Dürren, Überschwemmungen, Stürme oder Meeresspiegelanstieg.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Physical Climate Risk",
-        "Physical Risk",
-        "physisches Klimarisiko",
-        "physisches Risiko",
-        "Anpassungslücke",
-        "Anpassungsluecke",
-        "Klimaanpassung",
-        "Urban Heat Island",
-        "städtische Hitzeinsel",
-        "staedtische Hitzeinsel"
-      ],
-      "relatedTerms": [
-        "tcfd",
-        "transition-risk",
-        "ipcc",
-        "wirkungsrisiko",
-        "hitzestress",
-        "hitzeschutz-hitzeaktionsplan"
-      ]
-    },
-    "planetare-grenzen": {
-      "label": "Planetare Grenzen",
-      "slug": "planetare-grenzen",
-      "url": "/begriffe/planetare-grenzen/",
-      "hoverDefinition": "Planetare Grenzen beschreiben ökologische Schwellen, deren Überschreitung die Stabilität von Erdsystemen gefährden kann.",
-      "shortDefinition": "Planetare Grenzen beschreiben ökologische Schwellen, deren Überschreitung die Stabilität von Erdsystemen gefährden kann.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Planetare Grenzen",
-        "Planetary Boundaries",
-        "ökologische Belastungsgrenzen",
-        "oekologische Belastungsgrenzen",
-        "Belastungsgrenzen"
-      ],
-      "relatedTerms": [
-        "wirkungsgrenze",
-        "nichtkompensationsprinzip",
-        "reverse-merit-order",
-        "biodiversitaetsrisiko",
-        "wasserstress"
-      ]
-    },
-    "planetary-health": {
-      "label": "Planetary Health",
-      "slug": "planetary-health",
-      "url": "/begriffe/planetary-health/",
-      "hoverDefinition": "Planetary Health beschreibt die Abhängigkeit menschlicher Gesundheit von stabilen natürlichen Systemen.",
-      "shortDefinition": "Planetary Health beschreibt die Abhängigkeit menschlicher Gesundheit von stabilen natürlichen Systemen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Planetary Health",
-        "planetare Gesundheit",
-        "Planetare Gesundheit"
-      ],
-      "relatedTerms": [
-        "hitzestress"
+        "netto-wirkung"
       ]
     },
     "positive-netto-wirkung": {
@@ -2750,18 +402,14 @@
       "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie.",
       "category": "Bewertungsbegriff",
       "synonyms": [
-        "positive Netto-Wirkung",
         "positive Nettowirkung",
-        "positive netto Wirkung",
-        "Lebensqualität",
-        "Lebensqualitaet"
+        "positive netto Wirkung"
       ],
       "relatedTerms": [
         "wirkung",
         "netto-wirkung",
         "mensch-planet-demokratie",
-        "sdg-plus",
-        "zukunftsfaehigkeit"
+        "sdg-plus"
       ]
     },
     "positive-wirkung": {
@@ -2771,270 +419,11 @@
       "hoverDefinition": "Positive Wirkung liegt vor, wenn eine Veränderung auf SDGs, Agenda 2030 und SDG+ einzahlt.",
       "shortDefinition": "Positive Wirkung ist eine Zustandsveränderung, die im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv bewertet wird.",
       "category": "Bewertungsbegriff",
-      "synonyms": [
-        "positive Wirkung"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkung",
         "negative-wirkung",
         "neutrale-wirkung"
-      ]
-    },
-    "praevention": {
-      "label": "Prävention",
-      "slug": "praevention",
-      "url": "/begriffe/praevention/",
-      "hoverDefinition": "Prävention verhindert Schäden, bevor sie entstehen oder sich verfestigen.",
-      "shortDefinition": "Prävention verhindert Schäden, bevor sie entstehen oder sich verfestigen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Prävention",
-        "Praevention",
-        "Vorsorge",
-        "Präventionswirkung",
-        "vermeidende Wirkung"
-      ],
-      "relatedTerms": [
-        "wirkungshaushalt",
-        "t-sroi",
-        "health-impact-assessment"
-      ]
-    },
-    "produktdaten": {
-      "label": "Produktdaten",
-      "slug": "produktdaten",
-      "url": "/begriffe/produktdaten/",
-      "hoverDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
-      "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Produktdaten",
-        "Herkunftsdaten",
-        "Herkunftsrisiko",
-        "Hochrisikogebiet",
-        "High Conservation Value",
-        "HCV",
-        "High Carbon Stock",
-        "HCS",
-        "Higg Index",
-        "Traceability",
-        "Rückverfolgbarkeit",
-        "Rueckverfolgbarkeit",
-        "Chain of Custody",
-        "Mass Balance",
-        "Book-and-Claim"
-      ],
-      "relatedTerms": [
-        "digitaler-produktpass",
-        "produktwirkung",
-        "pef-product-environmental-footprint",
-        "pcf-product-carbon-footprint",
-        "herkunftstransparenz",
-        "hotspot-analyse",
-        "rohstoffkritikalitaet"
-      ]
-    },
-    "qualitaetssicherung": {
-      "label": "Qualitätssicherung",
-      "slug": "qualitaetssicherung",
-      "url": "/begriffe/qualitaetssicherung/",
-      "hoverDefinition": "Qualitätssicherung sorgt dafür, dass Daten, Verfahren, Aussagen oder Bewertungen überprüfbar und belastbar bleiben.",
-      "shortDefinition": "Qualitätssicherung sorgt dafür, dass Daten, Verfahren, Aussagen oder Bewertungen überprüfbar und belastbar bleiben.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Qualitätssicherung",
-        "Qualitaetssicherung",
-        "Quality Assurance",
-        "Qualitätsprüfung",
-        "Qualitaetspruefung"
-      ],
-      "relatedTerms": [
-        "datenqualitaet",
-        "assurance",
-        "wirkungsbewertung",
-        "scorecard",
-        "wirkungsdaten"
-      ]
-    },
-    "quartierswirkung": {
-      "label": "Quartierswirkung",
-      "slug": "quartierswirkung",
-      "url": "/begriffe/quartierswirkung/",
-      "hoverDefinition": "Quartierswirkung beschreibt, wie Maßnahmen in einem Stadtteil Alltag, Wohnen, Gesundheit, Mobilität, Klima und Zusammenhalt verändern.",
-      "shortDefinition": "Quartierswirkung beschreibt, wie Maßnahmen in einem Stadtteil Alltag, Wohnen, Gesundheit, Mobilität, Klima und Zusammenhalt verändern.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Quartierswirkung",
-        "Nachbarschaftswirkung",
-        "Quartier",
-        "Quartiersentwicklung"
-      ],
-      "relatedTerms": [
-        "wohnwirkung",
-        "hitzeschutz-hitzeaktionsplan",
-        "wirkungshaushalt"
-      ]
-    },
-    "quellenklarheit": {
-      "label": "Quellenklarheit",
-      "slug": "quellenklarheit",
-      "url": "/begriffe/quellenklarheit/",
-      "hoverDefinition": "Quellenklarheit bedeutet, dass Herkunft, Qualität und Aussagegrenzen von Informationen erkennbar sind.",
-      "shortDefinition": "Quellenklarheit bedeutet, dass Herkunft, Qualität und Aussagegrenzen von Informationen erkennbar sind.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Quellenklarheit",
-        "Source clarity",
-        "Quellentransparenz",
-        "Nachvollziehbarkeit von Quellen"
-      ],
-      "relatedTerms": [
-        "faktencheck",
-        "folgencheck",
-        "datenqualitaet"
-      ]
-    },
-    "reasonable-assurance": {
-      "label": "Reasonable Assurance",
-      "slug": "reasonable-assurance",
-      "url": "/begriffe/reasonable-assurance/",
-      "hoverDefinition": "Reasonable Assurance schafft höhere, aber keine absolute Sicherheit über Berichtsinformationen.",
-      "shortDefinition": "Reasonable Assurance ist ein höheres Prüfungsniveau als Limited Assurance.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Reasonable Assurance",
-        "hinreichende Sicherheit",
-        "angemessene Sicherheit"
-      ],
-      "relatedTerms": [
-        "assurance",
-        "limited-assurance",
-        "datenqualitaet"
-      ]
-    },
-    "rechte-kuenftiger-generationen": {
-      "label": "Rechte künftiger Generationen",
-      "slug": "rechte-kuenftiger-generationen",
-      "url": "/begriffe/rechte-kuenftiger-generationen/",
-      "hoverDefinition": "Rechte künftiger Generationen schützen Interessen von Menschen, die von heutigen Entscheidungen betroffen sein werden.",
-      "shortDefinition": "Rechte künftiger Generationen schützen Interessen von Menschen, die von heutigen Entscheidungen betroffen sein werden.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Rechte künftiger Generationen",
-        "Rechte kuenftiger Generationen",
-        "future generations",
-        "künftige Generationen",
-        "kuenftige Generationen",
-        "Young Generations"
-      ],
-      "relatedTerms": [
-        "wirkungsgrenze",
-        "wirkungshaushalt"
-      ]
-    },
-    "recyclingquote": {
-      "label": "Recyclingquote",
-      "slug": "recyclingquote",
-      "url": "/begriffe/recyclingquote/",
-      "hoverDefinition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
-      "shortDefinition": "Die Recyclingquote beschreibt, welcher Anteil eines Materials, Produkts oder Abfallstroms recycelt wird.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Recyclingquote"
-      ],
-      "relatedTerms": [
-        "rezyklatanteil",
-        "material-footprint",
-        "espr"
-      ]
-    },
-    "regeneration": {
-      "label": "Regeneration / regenerative Wirkung",
-      "slug": "regeneration",
-      "url": "/begriffe/regeneration/",
-      "hoverDefinition": "Regeneration bedeutet, geschädigte Lebensgrundlagen, soziale Räume oder institutionelles Vertrauen wieder aufzubauen.",
-      "shortDefinition": "Regeneration bedeutet, geschädigte Lebensgrundlagen, soziale Räume oder institutionelles Vertrauen wieder aufzubauen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Regeneration / regenerative Wirkung",
-        "Regeneration",
-        "regenerative Wirkung",
-        "regenerative Wirtschaft",
-        "Wiederherstellung von Lebensgrundlagen"
-      ],
-      "relatedTerms": [
-        "positive-netto-wirkung",
-        "wirkungsresilienz"
-      ]
-    },
-    "renaturierung": {
-      "label": "Renaturierung",
-      "slug": "renaturierung",
-      "url": "/begriffe/renaturierung/",
-      "hoverDefinition": "Renaturierung stellt geschädigte natürliche Lebensräume und ökologische Funktionen wieder her.",
-      "shortDefinition": "Renaturierung stellt geschädigte natürliche Lebensräume und ökologische Funktionen wieder her.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Renaturierung",
-        "Restoration",
-        "Nature restoration",
-        "Wiederherstellung von Natur",
-        "Moorschutz",
-        "Wiedervernässung",
-        "Wiedervernaessung",
-        "ökologische Korridore",
-        "oekologische Korridore",
-        "invasive Arten"
-      ],
-      "relatedTerms": [
-        "hydrologischer-kreislauf",
-        "habitatfragmentierung"
-      ]
-    },
-    "reparierbarkeit-recht-auf-reparatur": {
-      "label": "Reparierbarkeit / Recht auf Reparatur",
-      "slug": "reparierbarkeit-recht-auf-reparatur",
-      "url": "/begriffe/reparierbarkeit-recht-auf-reparatur/",
-      "hoverDefinition": "Reparierbarkeit beschreibt, ob Produkte einfach, bezahlbar und dauerhaft instand gehalten werden können.",
-      "shortDefinition": "Reparierbarkeit beschreibt, ob Produkte einfach, bezahlbar und dauerhaft instand gehalten werden können.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Reparierbarkeit / Recht auf Reparatur",
-        "Reparierbarkeit",
-        "Recht auf Reparatur",
-        "Right to Repair",
-        "Langlebigkeit",
-        "Nutzungsdauer",
-        "Wiederverwendung",
-        "Refurbishment",
-        "Wiederaufbereitung",
-        "Produktlebensdauer",
-        "Nutzungsintensität",
-        "Nutzungsintensitaet"
-      ],
-      "relatedTerms": [
-        "digitaler-produktpass",
-        "produktdaten",
-        "positive-netto-wirkung"
-      ]
-    },
-    "residual-emissions": {
-      "label": "Residual Emissions",
-      "slug": "residual-emissions",
-      "url": "/begriffe/residual-emissions/",
-      "hoverDefinition": "Residual Emissions sind verbleibende Restemissionen nach weitgehender Reduktion.",
-      "shortDefinition": "Residual Emissions sind verbleibende Emissionen, die nach weitgehender Emissionsminderung noch nicht vermieden werden können.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Residual Emissions",
-        "Restemissionen",
-        "unvermeidbare Restemissionen"
-      ],
-      "relatedTerms": [
-        "net-zero",
-        "offsetting-kompensation",
-        "carbon-credits",
-        "greenwashing"
       ]
     },
     "resonanzarchitektur": {
@@ -3045,7 +434,6 @@
       "shortDefinition": "Resonanzarchitektur beschreibt die gestalteten Bedingungen, unter denen Sprache, Bilder, Gäste, Chat, Plattformpfade und Korrekturen Anschluss finden.",
       "category": "Architekturbegriff",
       "synonyms": [
-        "Resonanzarchitektur",
         "Resonanzgestaltung",
         "Diskursarchitektur"
       ],
@@ -3064,83 +452,11 @@
       "hoverDefinition": "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten.",
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können.",
       "category": "Architekturbegriff",
-      "synonyms": [
-        "Resonanzraum",
-        "Hate Speech",
-        "Hassrede",
-        "hybride Bedrohungen",
-        "hybride Kriegsführung",
-        "Hybride Kriegsfuehrung",
-        "Halluzinationen von KI",
-        "KI-Halluzinationen",
-        "Host-Verantwortung",
-        "Systemvertrauen",
-        "soziale Kohäsion",
-        "soziale Kohaesion",
-        "gesellschaftlicher Zusammenhalt",
-        "demokratische Resilienz",
-        "Digitale Selbstbestimmung",
-        "Algorithmische Verantwortung",
-        "Algorithmic Accountability",
-        "Algorithmische Diskriminierung",
-        "Erklärbarkeit",
-        "Explainability",
-        "Dark Patterns",
-        "Sucht-Design",
-        "addictive design",
-        "Aufmerksamkeitsökonomie",
-        "Aufmerksamkeitsoekonomie",
-        "Informationsintegrität",
-        "Informationsintegritaet",
-        "Epistemische Sicherheit",
-        "Vertrauensinfrastruktur",
-        "Demokratische Öffentlichkeit",
-        "demokratische Oeffentlichkeit",
-        "Öffentliche Wahrheit",
-        "Oeffentliche Wahrheit",
-        "Diskursverschmutzung",
-        "Radikalisierungspfad",
-        "Polarisierungsdynamik",
-        "Feindbildproduktion",
-        "Dehumanisierung",
-        "demokratische Korrekturfähigkeit",
-        "demokratische Korrekturfaehigkeit",
-        "institutionelles Vertrauen",
-        "Civic Literacy",
-        "demokratische Mündigkeit",
-        "demokratische Muendigkeit",
-        "Medienkompetenz",
-        "KI-Halluzination",
-        "Deepfake",
-        "synthetische Medien",
-        "Botnetz",
-        "koordinierte Manipulation"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungspotenzial",
         "wirkungspfad",
-        "wirkungsnetz",
-        "zielkonflikt",
-        "quellenklarheit"
-      ]
-    },
-    "responsible-marketing": {
-      "label": "Responsible Marketing",
-      "slug": "responsible-marketing",
-      "url": "/begriffe/responsible-marketing/",
-      "hoverDefinition": "Responsible Marketing verbindet belegbare Claims, Transparenz und Verantwortung für Kommunikationswirkung.",
-      "shortDefinition": "Responsible Marketing richtet Kommunikation, Claims und Absatzlogik an belegbarer Wirkung, Transparenz und Schutz vor Irreführung aus.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Responsible Marketing",
-        "verantwortliches Marketing",
-        "wirkungsorientiertes Marketing"
-      ],
-      "relatedTerms": [
-        "greenwashing",
-        "impact-washing",
-        "green-claims-directive",
-        "fuenftes-p-planet"
+        "wirkungsnetz"
       ]
     },
     "reverse-merit-order": {
@@ -3151,7 +467,6 @@
       "shortDefinition": "Reverse Merit Order stellt sicher, dass das schwächste kritische Wirkungsfeld die Bewertung begrenzt.",
       "category": "Bewertungsbegriff",
       "synonyms": [
-        "Reverse Merit Order",
         "Nichtkompensationsprinzip",
         "Minimum-Operator",
         "Engpasslogik"
@@ -3159,116 +474,7 @@
       "relatedTerms": [
         "nichtkompensationsprinzip",
         "netto-wirkung",
-        "wirkungsgrenze",
-        "planetare-grenzen",
-        "zielkonflikt"
-      ]
-    },
-    "rezyklatanteil": {
-      "label": "Rezyklatanteil",
-      "slug": "rezyklatanteil",
-      "url": "/begriffe/rezyklatanteil/",
-      "hoverDefinition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
-      "shortDefinition": "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Rezyklatanteil"
-      ],
-      "relatedTerms": [
-        "recyclingquote",
-        "material-footprint",
-        "espr",
-        "digitaler-produktpass"
-      ]
-    },
-    "rohstoffkritikalitaet": {
-      "label": "Rohstoffkritikalität",
-      "slug": "rohstoffkritikalitaet",
-      "url": "/begriffe/rohstoffkritikalitaet/",
-      "hoverDefinition": "Rohstoffkritikalität beschreibt Risiken bei Verfügbarkeit, Konzentration, Umweltwirkung, Menschenrechten oder strategischer Abhängigkeit von Rohstoffen.",
-      "shortDefinition": "Rohstoffkritikalität beschreibt Risiken bei Verfügbarkeit, Konzentration, Umweltwirkung, Menschenrechten oder strategischer Abhängigkeit von Rohstoffen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Rohstoffkritikalität",
-        "Rohstoffkritikalitaet",
-        "critical raw materials",
-        "kritische Rohstoffe",
-        "Konfliktrohstoffe",
-        "Rohstoffgerechtigkeit",
-        "Materialpass",
-        "Produktpassdaten"
-      ],
-      "relatedTerms": [
-        "lieferkettendaten",
-        "digitaler-produktpass",
-        "human-rights-due-diligence",
-        "material-footprint"
-      ]
-    },
-    "sbti": {
-      "label": "SBTi",
-      "slug": "sbti",
-      "url": "/begriffe/sbti/",
-      "hoverDefinition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
-      "shortDefinition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "SBTi"
-      ],
-      "relatedTerms": [
-        "ghg-protocol",
-        "net-zero",
-        "transition-plan",
-        "transition-risk"
-      ]
-    },
-    "scope-1": {
-      "label": "Scope 1",
-      "slug": "scope-1",
-      "url": "/begriffe/scope-1/",
-      "hoverDefinition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
-      "shortDefinition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Scope 1"
-      ],
-      "relatedTerms": [
-        "ghg-protocol",
-        "scope-2",
-        "scope-3"
-      ]
-    },
-    "scope-2": {
-      "label": "Scope 2",
-      "slug": "scope-2",
-      "url": "/begriffe/scope-2/",
-      "hoverDefinition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
-      "shortDefinition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie wie Strom, Wärme oder Dampf.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Scope 2"
-      ],
-      "relatedTerms": [
-        "ghg-protocol",
-        "scope-1",
-        "scope-3"
-      ]
-    },
-    "scope-3": {
-      "label": "Scope 3",
-      "slug": "scope-3",
-      "url": "/begriffe/scope-3/",
-      "hoverDefinition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
-      "shortDefinition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Scope 3"
-      ],
-      "relatedTerms": [
-        "ghg-protocol",
-        "lieferkettendaten",
-        "pcf-product-carbon-footprint",
-        "cbam"
+        "wirkungsgrenze"
       ]
     },
     "scorecard": {
@@ -3278,15 +484,11 @@
       "hoverDefinition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
       "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
       "category": "Messbegriff",
-      "synonyms": [
-        "Scorecard"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "woek-id",
         "benchmark",
-        "finalscore",
-        "wirkungsindikator",
-        "reverse-merit-order"
+        "finalscore"
       ]
     },
     "sdg-plus": {
@@ -3297,7 +499,6 @@
       "shortDefinition": "SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionelle und digitale Wirkungsfelder.",
       "category": "Demokratiebegriff",
       "synonyms": [
-        "SDG+",
         "SDG Plus",
         "SDG-Plus"
       ],
@@ -3317,9 +518,6 @@
       "shortDefinition": "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen SDGs mit SDG+ als transparenter WÖk-Erweiterung.",
       "category": "Grundbegriff",
       "synonyms": [
-        "SDG-/SDG+-Referenzrahmen",
-        "SDG-",
-        "SDG+-Referenzrahmen",
         "Referenzrahmen",
         "SDG Referenzrahmen",
         "SDG+ Referenzrahmen"
@@ -3331,23 +529,6 @@
         "positive-netto-wirkung"
       ]
     },
-    "sdg-washing": {
-      "label": "SDG-Washing",
-      "slug": "sdg-washing",
-      "url": "/begriffe/sdg-washing/",
-      "hoverDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
-      "shortDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "SDG-Washing"
-      ],
-      "relatedTerms": [
-        "sdgs",
-        "sdg-plus",
-        "greenwashing",
-        "impact-washing"
-      ]
-    },
     "sdgs": {
       "label": "SDGs",
       "slug": "sdgs",
@@ -3356,40 +537,14 @@
       "shortDefinition": "Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030.",
       "category": "Grundbegriff",
       "synonyms": [
-        "SDGs",
         "Sustainable Development Goals",
         "Nachhaltigkeitsziele",
-        "UN-Nachhaltigkeitsziele",
-        "HLPF",
-        "High-level Political Forum",
-        "High Level Political Forum"
+        "UN-Nachhaltigkeitsziele"
       ],
       "relatedTerms": [
         "agenda-2030",
         "sdg-plus",
-        "positive-netto-wirkung",
-        "hunger-hungerbekaempfung"
-      ]
-    },
-    "sfdr": {
-      "label": "SFDR",
-      "slug": "sfdr",
-      "url": "/begriffe/sfdr/",
-      "hoverDefinition": "SFDR strukturiert Nachhaltigkeitsinformationen im Finanzmarkt; WÖk übersetzt solche Berichtsdaten erst in Kapitalwirkung und Rückkopplung.",
-      "shortDefinition": "Die SFDR ist die EU-Offenlegungsverordnung für Finanzmarktteilnehmer zu Nachhaltigkeitsinformationen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "SFDR",
-        "Sustainable Finance Disclosure Regulation",
-        "Offenlegungsverordnung",
-        "SFDR-Verordnung"
-      ],
-      "relatedTerms": [
-        "sustainable-finance",
-        "pai",
-        "eu-taxonomie",
-        "esg",
-        "kapitalwirkung"
+        "positive-netto-wirkung"
       ]
     },
     "social-credit": {
@@ -3400,7 +555,6 @@
       "shortDefinition": "Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.",
       "category": "Schutzbegriff",
       "synonyms": [
-        "Social Credit",
         "Sozialkredit",
         "Social-Credit-System"
       ],
@@ -3411,25 +565,19 @@
       ]
     },
     "social-taxonomy": {
-      "label": "Social Taxonomy / Sozialtaxonomie",
+      "label": "Social Taxonomy",
       "slug": "social-taxonomy",
       "url": "/begriffe/social-taxonomy/",
-      "hoverDefinition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen.",
+      "hoverDefinition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und soziale Stabilität stärken.",
       "shortDefinition": "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten.",
-      "category": "Datenbegriff",
+      "category": "Architekturbegriff",
       "synonyms": [
-        "Social Taxonomy / Sozialtaxonomie",
-        "Social Taxonomy",
-        "Sozialtaxonomie",
-        "EU-Sozialtaxonomie",
         "soziale Taxonomie",
-        "Social Taxonomy 2.0",
-        "EU Social Taxonomy",
-        "soziale EU-Taxonomie"
+        "Social-Taxonomy",
+        "soziale Wirkungs-Taxonomie"
       ],
       "relatedTerms": [
         "eu-taxonomie",
-        "esg",
         "csrd",
         "esrs",
         "positive-netto-wirkung",
@@ -3437,13 +585,8 @@
         "scorecard",
         "reverse-merit-order",
         "t-sroi",
-        "woek-id",
-        "social-credit",
-        "mindestschutz-minimum-safeguards",
-        "csddd",
-        "ilo-kernarbeitsnormen",
-        "un-guiding-principles",
-        "sdg-plus"
+        "wirkungsdaten",
+        "social-credit"
       ]
     },
     "spekulationslogik": {
@@ -3454,30 +597,12 @@
       "shortDefinition": "Spekulationslogik bezeichnet Wertsteigerung, die aus Knappheit, Nichtnutzung, Intransparenz oder Verdrängung entsteht.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Spekulationslogik",
         "spekulative Verwertungslogik"
       ],
       "relatedTerms": [
         "stranded-assets",
         "wohnwirkung",
         "wirkungspflicht-eigentum"
-      ]
-    },
-    "steuerungsdaten": {
-      "label": "Steuerungsdaten",
-      "slug": "steuerungsdaten",
-      "url": "/begriffe/steuerungsdaten/",
-      "hoverDefinition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
-      "shortDefinition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Steuerungsdaten"
-      ],
-      "relatedTerms": [
-        "berichtsdaten",
-        "wirkungsdaten",
-        "wirkungsrueckkopplung",
-        "scorecard"
       ]
     },
     "stranded-assets": {
@@ -3488,78 +613,15 @@
       "shortDefinition": "Stranded Assets sind Vermögenswerte, die durch veränderte Risiken, Regeln, Märkte, Technologien oder ökologische Bedingungen an Wert verlieren.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Stranded Assets",
         "Stranded Asset",
         "gestrandete Vermögenswerte"
       ],
       "relatedTerms": [
         "wirkungsrisiko",
         "nachhaltigkeit",
-        "transition-risk",
+        "transitionsrisiko",
         "versicherbarkeit",
-        "kapitalzugang",
-        "transition-plan",
-        "kapitalwirkung"
-      ]
-    },
-    "suffizienz": {
-      "label": "Suffizienz",
-      "slug": "suffizienz",
-      "url": "/begriffe/suffizienz/",
-      "hoverDefinition": "Suffizienz fragt, welches Maß an Nutzung, Konsum oder Produktion genug ist.",
-      "shortDefinition": "Suffizienz fragt, welches Maß an Nutzung, Konsum oder Produktion genug ist.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Suffizienz",
-        "Sufficiency",
-        "Genug",
-        "genug statt mehr",
-        "weniger aber besser",
-        "Bedürfnis vs. Nachfrage",
-        "Beduerfnis vs. Nachfrage",
-        "Überkonsum",
-        "Ueberkonsum",
-        "Rebound-Falle",
-        "Nudging",
-        "Entscheidungsarchitektur",
-        "Konsumfreiheit",
-        "Konsumentscheidung"
-      ],
-      "relatedTerms": [
-        "positive-netto-wirkung"
-      ]
-    },
-    "sustainable-finance": {
-      "label": "Sustainable Finance",
-      "slug": "sustainable-finance",
-      "url": "/begriffe/sustainable-finance/",
-      "hoverDefinition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung.",
-      "shortDefinition": "Sustainable Finance bezeichnet Finanzmarktregeln, Produkte und Daten, die Umwelt-, Sozial- und Governance-Aspekte in Investitions-, Kredit- und Offenlegungsentscheidungen einbeziehen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Sustainable Finance",
-        "nachhaltige Finanzierung",
-        "nachhaltige Finanzwirtschaft",
-        "EU Sustainable Finance",
-        "Sustainable-Finance-Architektur",
-        "Sustainable-Finance-Strategie",
-        "Finanzierung der Transformation",
-        "Financing sustainable growth"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "sfdr",
-        "pai",
-        "esap",
-        "csrd",
-        "esrs",
-        "eu-green-bond-standard",
-        "transition-finance",
-        "taxonomy-navigator",
-        "esg",
-        "wirkungsdaten",
-        "steuerungsdaten",
-        "wirkungsrueckkopplung"
+        "kapitalzugang"
       ]
     },
     "t-sroi": {
@@ -3570,7 +632,6 @@
       "shortDefinition": "T-SROI beschreibt transformationsbezogene Wirkung im Verhältnis zu eingesetzten Ressourcen.",
       "category": "Messbegriff",
       "synonyms": [
-        "T-SROI",
         "Transformational Social Return on Investment",
         "Transformational SROI"
       ],
@@ -3580,128 +641,6 @@
         "wirkungscontrolling"
       ]
     },
-    "taxonomy-kpis": {
-      "label": "Taxonomie-KPIs",
-      "slug": "taxonomy-kpis",
-      "url": "/begriffe/taxonomy-kpis/",
-      "hoverDefinition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
-      "shortDefinition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Taxonomie-KPIs"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "taxonomiefaehigkeit",
-        "taxonomiekonformitaet",
-        "berichtsdaten"
-      ]
-    },
-    "taxonomiefaehigkeit": {
-      "label": "Taxonomiefähigkeit",
-      "slug": "taxonomiefaehigkeit",
-      "url": "/begriffe/taxonomiefaehigkeit/",
-      "hoverDefinition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
-      "shortDefinition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Taxonomiefähigkeit"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "taxonomiekonformitaet",
-        "nace"
-      ]
-    },
-    "taxonomiekonformitaet": {
-      "label": "Taxonomiekonformität",
-      "slug": "taxonomiekonformitaet",
-      "url": "/begriffe/taxonomiekonformitaet/",
-      "hoverDefinition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
-      "shortDefinition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Taxonomiekonformität"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "dnsh",
-        "mindestschutz-minimum-safeguards",
-        "technische-bewertungskriterien",
-        "taxonomy-kpis"
-      ]
-    },
-    "taxonomy-navigator": {
-      "label": "Taxonomy Navigator / Taxonomy Compass",
-      "slug": "taxonomy-navigator",
-      "url": "/begriffe/taxonomy-navigator/",
-      "hoverDefinition": "Der Taxonomy Navigator hilft, EU-Taxonomie-Tätigkeiten, Umweltziele und technische Bewertungskriterien zu finden.",
-      "shortDefinition": "Taxonomy Navigator und Taxonomy Compass sind EU-Hilfen zur Recherche von Taxonomie-Kriterien und Tätigkeiten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Taxonomy Navigator / Taxonomy Compass",
-        "Taxonomy Navigator",
-        "Taxonomy Compass",
-        "EU Taxonomy Navigator",
-        "EU Taxonomy Compass",
-        "Taxonomie-Kompass"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "technische-bewertungskriterien",
-        "nace"
-      ]
-    },
-    "tcfd": {
-      "label": "TCFD",
-      "slug": "tcfd",
-      "url": "/begriffe/tcfd/",
-      "hoverDefinition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
-      "shortDefinition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "TCFD"
-      ],
-      "relatedTerms": [
-        "physical-climate-risk",
-        "transition-risk",
-        "issb-ifrs-s1-s2",
-        "tnfd"
-      ]
-    },
-    "technische-bewertungskriterien": {
-      "label": "Technische Bewertungskriterien",
-      "slug": "technische-bewertungskriterien",
-      "url": "/begriffe/technische-bewertungskriterien/",
-      "hoverDefinition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
-      "shortDefinition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Technische Bewertungskriterien"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "taxonomy-navigator",
-        "taxonomiekonformitaet"
-      ]
-    },
-    "tnfd": {
-      "label": "TNFD",
-      "slug": "tnfd",
-      "url": "/begriffe/tnfd/",
-      "hoverDefinition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
-      "shortDefinition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "TNFD"
-      ],
-      "relatedTerms": [
-        "biodiversitaetsrisiko",
-        "nature-related-risks",
-        "physical-climate-risk",
-        "issb-ifrs-s1-s2"
-      ]
-    },
     "transformationswirkung": {
       "label": "Transformationswirkung",
       "slug": "transformationswirkung",
@@ -3709,161 +648,11 @@
       "hoverDefinition": "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen.",
       "shortDefinition": "Transformationswirkung verändert Systemlogiken, Standards, Anreize oder Handlungspfade.",
       "category": "Grundbegriff",
-      "synonyms": [
-        "Transformationswirkung"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "t-sroi",
         "wirkungsarchitektur",
         "wirkungslenkung"
-      ]
-    },
-    "transition-finance": {
-      "label": "Transition Finance",
-      "slug": "transition-finance",
-      "url": "/begriffe/transition-finance/",
-      "hoverDefinition": "Transition Finance finanziert den Übergang, wenn Ziele, Pfade, Daten, Zeitplan und Governance nachvollziehbar sind.",
-      "shortDefinition": "Transition Finance bezeichnet Finanzierung, die Unternehmen oder Aktivitäten auf glaubwürdige Transformationspfade bringt.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Transition Finance",
-        "Transformationsfinanzierung"
-      ],
-      "relatedTerms": [
-        "transition-plan",
-        "sustainable-finance",
-        "clean-industrial-deal",
-        "transition-risk"
-      ]
-    },
-    "transition-plan": {
-      "label": "Transition Plan",
-      "slug": "transition-plan",
-      "url": "/begriffe/transition-plan/",
-      "hoverDefinition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
-      "shortDefinition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Transition Plan"
-      ],
-      "relatedTerms": [
-        "transition-finance",
-        "sbti",
-        "transition-risk",
-        "net-zero"
-      ]
-    },
-    "transition-risk": {
-      "label": "Transition Risk",
-      "slug": "transition-risk",
-      "url": "/begriffe/transition-risk/",
-      "hoverDefinition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
-      "shortDefinition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Transition Risk",
-        "Transitionsrisiko",
-        "Übergangsrisiko"
-      ],
-      "relatedTerms": [
-        "tcfd",
-        "transition-plan",
-        "stranded-assets",
-        "clean-industrial-deal"
-      ]
-    },
-    "uebergangstaetigkeit": {
-      "label": "Übergangstätigkeit",
-      "slug": "uebergangstaetigkeit",
-      "url": "/begriffe/uebergangstaetigkeit/",
-      "hoverDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
-      "shortDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Übergangstätigkeit"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "transition-finance",
-        "transition-plan",
-        "stranded-assets"
-      ]
-    },
-    "umweltgerechtigkeit": {
-      "label": "Umweltgerechtigkeit",
-      "slug": "umweltgerechtigkeit",
-      "url": "/begriffe/umweltgerechtigkeit/",
-      "hoverDefinition": "Umweltgerechtigkeit fragt, wer Umweltbelastungen trägt und wer Zugang zu gesunder Umwelt hat.",
-      "shortDefinition": "Umweltgerechtigkeit fragt, wer Umweltbelastungen trägt und wer Zugang zu gesunder Umwelt hat.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Umweltgerechtigkeit",
-        "Environmental Justice",
-        "Umweltbelastungsgerechtigkeit",
-        "Umweltverteilungsgerechtigkeit"
-      ],
-      "relatedTerms": [
-        "hitzestress",
-        "wasserstress",
-        "wohnwirkung"
-      ]
-    },
-    "un-guiding-principles": {
-      "label": "UN Guiding Principles on Business and Human Rights",
-      "slug": "un-guiding-principles",
-      "url": "/begriffe/un-guiding-principles/",
-      "hoverDefinition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
-      "shortDefinition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "UN Guiding Principles on Business and Human Rights"
-      ],
-      "relatedTerms": [
-        "mindestschutz-minimum-safeguards",
-        "csddd",
-        "lksg",
-        "social-taxonomy"
-      ]
-    },
-    "vermeidene-schaeden-folgekosten": {
-      "label": "Vermeidene Schäden / vermiedene Folgekosten",
-      "slug": "vermeidene-schaeden-folgekosten",
-      "url": "/begriffe/vermeidene-schaeden-folgekosten/",
-      "hoverDefinition": "Vermeidene Schäden sind negative Wirkungen, die durch Vorsorge, Prävention oder gute Gestaltung gar nicht erst entstehen.",
-      "shortDefinition": "Vermeidene Schäden sind negative Wirkungen, die durch Vorsorge, Prävention oder gute Gestaltung gar nicht erst entstehen.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Vermeidene Schäden / vermiedene Folgekosten",
-        "vermeidene Schäden",
-        "vermiedene Schaeden",
-        "vermiedene Folgekosten",
-        "avoided damages",
-        "avoided costs",
-        "vermiedene Reparaturkosten"
-      ],
-      "relatedTerms": [
-        "t-sroi",
-        "wirkungshaushalt",
-        "health-impact-assessment"
-      ]
-    },
-    "vsme": {
-      "label": "VSME",
-      "slug": "vsme",
-      "url": "/begriffe/vsme/",
-      "hoverDefinition": "VSME unterstützt KMU bei einfachen, freiwilligen Nachhaltigkeitsinformationen für Banken, Lieferketten und Geschäftspartner.",
-      "shortDefinition": "VSME ist der freiwillige Nachhaltigkeitsberichtsstandard für nicht börsennotierte kleine und mittlere Unternehmen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "VSME",
-        "Voluntary Sustainability Reporting Standard for SMEs",
-        "Voluntary Standard for SMEs"
-      ],
-      "relatedTerms": [
-        "csrd",
-        "esrs",
-        "berichtsdaten",
-        "datenqualitaet"
       ]
     },
     "warmmietenneutralitaet": {
@@ -3874,73 +663,12 @@
       "shortDefinition": "Warmmietenneutralität bedeutet, dass Sanierung ökologische Wirkung erzeugt, ohne die reale Wohnkostenbelastung zu erhöhen.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Warmmietenneutralität",
-        "warmmietenneutrale Sanierung",
-        "Heizkostenneutralität",
-        "Heizkostenneutralitaet",
-        "Heizwärmebedarf",
-        "Heizwaermebedarf"
+        "warmmietenneutrale Sanierung"
       ],
       "relatedTerms": [
         "wohnwirkung",
         "wirkungsvermietung",
         "wix-vi"
-      ]
-    },
-    "wasserstress": {
-      "label": "Wasserstress",
-      "slug": "wasserstress",
-      "url": "/begriffe/wasserstress/",
-      "hoverDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
-      "shortDefinition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Wasserstress",
-        "High-Water-Stress",
-        "High Water Stress",
-        "hoher Wasserstress",
-        "extrem hoher Wasserstress",
-        "area of high water stress"
-      ],
-      "relatedTerms": [
-        "nature-related-risks",
-        "tnfd",
-        "produktdaten",
-        "hydrologischer-kreislauf",
-        "planetare-grenzen",
-        "umweltgerechtigkeit"
-      ]
-    },
-    "wesentlicher-beitrag": {
-      "label": "Wesentlicher Beitrag",
-      "slug": "wesentlicher-beitrag",
-      "url": "/begriffe/wesentlicher-beitrag/",
-      "hoverDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
-      "shortDefinition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Wesentlicher Beitrag",
-        "Wesentlichkeitsschwelle"
-      ],
-      "relatedTerms": [
-        "eu-taxonomie",
-        "dnsh",
-        "technische-bewertungskriterien"
-      ]
-    },
-    "who": {
-      "label": "WHO",
-      "slug": "who",
-      "url": "/begriffe/who/",
-      "hoverDefinition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
-      "shortDefinition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "WHO"
-      ],
-      "relatedTerms": [
-        "gesundheit",
-        "wirkungsdaten"
       ]
     },
     "wirkmechanismus": {
@@ -3951,7 +679,6 @@
       "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkmechanismus",
         "Wirkungsmechanismus"
       ],
       "relatedTerms": [
@@ -3968,7 +695,6 @@
       "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkstoff",
         "gesellschaftlicher Wirkstoff"
       ],
       "relatedTerms": [
@@ -3986,7 +712,6 @@
       "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkung",
         "Impact",
         "Zustandsveränderung"
       ],
@@ -4004,9 +729,7 @@
       "hoverDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
       "shortDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen.",
       "category": "Architekturbegriff",
-      "synonyms": [
-        "Wirkungsarchitektur"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungslenkung",
         "wirkungsrückkopplung",
@@ -4022,7 +745,6 @@
       "shortDefinition": "Wirkungsbewertung ordnet tatsächliche Zustandsveränderungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsbewertung",
         "Impact Assessment"
       ],
       "relatedTerms": [
@@ -4039,7 +761,6 @@
       "shortDefinition": "Wirkungsblindheit entsteht, wenn Entscheidungen ihre tatsächlichen Folgen nicht sehen oder nicht berücksichtigen.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsblindheit",
         "wirkungsblind"
       ],
       "relatedTerms": [
@@ -4056,27 +777,13 @@
       "shortDefinition": "Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Wirkungsdaten",
-        "Wirkungsdatenpunkte",
-        "Wirkungsbeschaffung",
-        "Public Procurement by Impact",
-        "Vergabewirkung",
-        "Fördermittelwirkung",
-        "Foerdermittelwirkung",
-        "Mitnahmeeffekt",
-        "Subventionswirkung",
-        "Bürokratieblindleistung",
-        "Buerokratieblindleistung"
+        "Wirkungsdatenpunkte"
       ],
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
         "scorecard",
-        "nwi",
-        "wirkung",
-        "wirkungspotenzial",
-        "datenqualitaet",
-        "wirkungsindikator"
+        "nwi"
       ]
     },
     "wirkungsdatenraum": {
@@ -4087,16 +794,13 @@
       "shortDefinition": "Ein Wirkungsdatenraum macht relevante Wirkungsdaten strukturiert, interoperabel und prüfbar nutzbar.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Wirkungsdatenraum",
         "Wirkungsdatenräume"
       ],
       "relatedTerms": [
         "csrd",
         "esrs",
         "digitaler-produktpass",
-        "woek-id",
-        "wirkungsregister",
-        "wirkungsdaten"
+        "woek-id"
       ]
     },
     "wirkungseinkommen": {
@@ -4107,7 +811,6 @@
       "shortDefinition": "Wirkungseinkommen beschreibt Einkommenslogiken, die gesellschaftlich relevante positive Wirkung berücksichtigen.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungseinkommen",
         "Wirkungsdividende"
       ],
       "relatedTerms": [
@@ -4123,7 +826,6 @@
       "shortDefinition": "Wirkungsempfänger sind Menschen, Gruppen, Ökosysteme, Institutionen oder Systeme, auf die Wirkung eintritt.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsempfänger",
         "Betroffene"
       ],
       "relatedTerms": [
@@ -4140,7 +842,6 @@
       "shortDefinition": "Ein Wirkungsfonds bündelt Rückflüsse, um Prävention, Bildung, Transformation oder soziale Sicherung wirkungsorientiert zu finanzieren.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungsfonds",
         "Transformationsfonds",
         "Rückkopplungsfonds"
       ],
@@ -4159,7 +860,6 @@
       "shortDefinition": "Eine Wirkungsgrenze markiert Schäden, die nicht beliebig kompensiert oder schöngerechnet werden dürfen.",
       "category": "Bewertungsbegriff",
       "synonyms": [
-        "Wirkungsgrenze",
         "rote Linie",
         "Red Line"
       ],
@@ -4176,43 +876,11 @@
       "hoverDefinition": "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung.",
       "shortDefinition": "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar.",
       "category": "Messbegriff",
-      "synonyms": [
-        "Wirkungshaushalt",
-        "Haushalt, wirkungsbasiert",
-        "wirkungsbasierter Haushalt",
-        "wirkungsorientierter Haushalt",
-        "SDG-Budgetierung",
-        "SDG-Haushalt",
-        "Wirkungsbudget",
-        "Transformationskosten",
-        "Transformationsdividende",
-        "Resilienzdividende"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungslenkung",
-        "wirkungsrueckkopplung",
-        "positive-netto-wirkung",
-        "haushaltsneutralitaet",
-        "praevention",
-        "vermeidene-schaeden-folgekosten",
-        "kosten-des-nicht-handelns"
-      ]
-    },
-    "wirkungsindikator": {
-      "label": "Wirkungsindikator",
-      "slug": "wirkungsindikator",
-      "url": "/begriffe/wirkungsindikator/",
-      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
-      "shortDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Wirkungsindikator"
-      ],
-      "relatedTerms": [
-        "wirkungsdaten",
-        "wirkungspfad",
-        "datenqualitaet",
-        "scorecard"
+        "wirkungsrückkopplung",
+        "positive-netto-wirkung"
       ]
     },
     "wirkungskompetenz": {
@@ -4222,16 +890,7 @@
       "hoverDefinition": "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern.",
       "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.",
       "category": "Grundbegriff",
-      "synonyms": [
-        "Wirkungskompetenz",
-        "Human Capital",
-        "Humankapital",
-        "menschliche Fähigkeiten",
-        "Human-centered AI",
-        "menschenzentrierte KI",
-        "Human-in-the-loop",
-        "Mensch in der Schleife"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungsschule",
         "wirkungspaedagogik",
@@ -4247,9 +906,7 @@
       "hoverDefinition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
       "shortDefinition": "Wirkungslenkung ist die bewusste Ausrichtung von Anreizen, Regeln und Entscheidungen auf positive Netto-Wirkung.",
       "category": "Steuerungsbegriff",
-      "synonyms": [
-        "Wirkungslenkung"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungsrückkopplung",
         "wirkungsarchitektur",
@@ -4263,15 +920,7 @@
       "hoverDefinition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
       "shortDefinition": "Ein Wirkungsnetz beschreibt miteinander verbundene Wirkpfade, Akteure, Räume und Rückkopplungen.",
       "category": "Architekturbegriff",
-      "synonyms": [
-        "Wirkungsnetz",
-        "Holismus",
-        "holistische Betrachtung",
-        "Heterarchie",
-        "Hierarchie",
-        "Hierarchiekritik",
-        "horizontale Kooperation"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungspfad",
         "resonanzraum",
@@ -4286,7 +935,6 @@
       "shortDefinition": "Wirkungsorientiertes Hosting gestaltet öffentliche Gesprächs-, Medien- und Community-Räume nach Wirkung, Quellenklarheit, Würde, Schutz und Korrekturfähigkeit.",
       "category": "Praxisbegriff",
       "synonyms": [
-        "Wirkungsorientiertes Hosting",
         "wirkungsorientierte Moderation",
         "Impact Hosting",
         "verantwortetes Hosting"
@@ -4307,7 +955,6 @@
       "shortDefinition": "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungspädagogik",
         "wirkungsorientierte Pädagogik"
       ],
       "relatedTerms": [
@@ -4325,7 +972,6 @@
       "shortDefinition": "Ein Wirkungspfad beschreibt die nachvollziehbare Kette von Auslöser, Bedingungen, Wirkungspotenzial und möglicher Zustandsveränderung.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungspfad",
         "Wirkpfad"
       ],
       "relatedTerms": [
@@ -4342,7 +988,6 @@
       "shortDefinition": "Die Wirkungspflicht des Eigentums beschreibt, dass Eigentum an Wohnraum an seine reale Wirkung auf Bezahlbarkeit, Gesundheit, Quartier und Vertrauen rückgebunden wird.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungspflicht des Eigentums",
         "Eigentum mit Wirkungspflicht"
       ],
       "relatedTerms": [
@@ -4359,7 +1004,6 @@
       "shortDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungspotenzial",
         "Wirkpotenzial"
       ],
       "relatedTerms": [
@@ -4377,7 +1021,6 @@
       "shortDefinition": "Wirkungspunkte sind eine mögliche produktbezogene Informations- oder Bonuslogik, keine Personenbewertung.",
       "category": "Praxisbegriff",
       "synonyms": [
-        "Wirkungspunkte",
         "Wirkungsbonus",
         "Bonusmodell"
       ],
@@ -4394,9 +1037,7 @@
       "hoverDefinition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
       "shortDefinition": "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.",
       "category": "Grundbegriff",
-      "synonyms": [
-        "Wirkungsradar"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungsrisiko",
         "wirkungskompetenz",
@@ -4410,18 +1051,7 @@
       "hoverDefinition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
       "shortDefinition": "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben.",
       "category": "Schutzbegriff",
-      "synonyms": [
-        "Wirkungsrat",
-        "Rechtsschutz",
-        "Verhältnismäßigkeit",
-        "Verhaeltnismaessigkeit",
-        "demokratische Legitimation",
-        "Bürgerrat",
-        "Buergerrat",
-        "Co-Governance",
-        "Rechenschaftspflicht",
-        "Accountability"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungsarchitektur",
         "wirkungswahrheit",
@@ -4436,30 +1066,11 @@
       "hoverDefinition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
       "shortDefinition": "Ein Wirkungsraum ist ein Bereich, in dem Entscheidungen Zustände für Mensch, Planet oder Demokratie verändern.",
       "category": "Architekturbegriff",
-      "synonyms": [
-        "Wirkungsraum"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungsempfaenger",
         "wirkungspfad",
         "wirkungsarchitektur"
-      ]
-    },
-    "wirkungsregister": {
-      "label": "Wirkungsregister",
-      "slug": "wirkungsregister",
-      "url": "/begriffe/wirkungsregister/",
-      "hoverDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
-      "shortDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "Wirkungsregister"
-      ],
-      "relatedTerms": [
-        "wirkungsdatenraum",
-        "woek-id",
-        "datenqualitaet",
-        "scorecard"
       ]
     },
     "wirkungsrente": {
@@ -4470,7 +1081,6 @@
       "shortDefinition": "Wirkungsrente beschreibt eine rentenpolitische Perspektive, die Lebensleistung und gesellschaftliche Wirkung sichtbarer macht.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungsrente",
         "wirkungsbasierte Rente"
       ],
       "relatedTerms": [
@@ -4486,23 +1096,13 @@
       "shortDefinition": "Wirkungsresilienz ist die Fähigkeit eines Systems, unter Stress handlungsfähig zu bleiben und positive Netto-Wirkung zu sichern.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsresilienz",
-        "Resilienz im WÖk-Sinn",
-        "Adaptive Kapazität",
-        "Adaptive Kapazitaet",
-        "Vulnerabilität",
-        "Vulnerabilitaet",
-        "Verwundbarkeit",
-        "Exposition",
-        "Resilienzdividende"
+        "Resilienz im WÖk-Sinn"
       ],
       "relatedTerms": [
         "resilienz",
         "nachhaltigkeit",
         "positive-netto-wirkung",
-        "wirkungsrueckkopplung",
-        "kipppunkt-systemschwelle",
-        "zukunftsfaehigkeit"
+        "wirkungsrueckkopplung"
       ]
     },
     "wirkungsrisiko": {
@@ -4512,9 +1112,7 @@
       "hoverDefinition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
       "shortDefinition": "Wirkungsrisiko ist die Möglichkeit, dass eine Entscheidung negative Wirkung erzeugt oder positive Wirkung verfehlt.",
       "category": "Grundbegriff",
-      "synonyms": [
-        "Wirkungsrisiko"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungspotenzial",
         "stranded-assets",
@@ -4529,7 +1127,6 @@
       "shortDefinition": "Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsrückkopplung",
         "Rückkopplung"
       ],
       "relatedTerms": [
@@ -4546,7 +1143,6 @@
       "shortDefinition": "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsschule",
         "wirkungsorientierte Schule",
         "Schule als Wirkungsraum"
       ],
@@ -4565,24 +1161,12 @@
       "shortDefinition": "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungssteuer",
-        "Steuer nach Wirkung",
-        "Harmful Subsidies",
-        "umweltschädliche Subventionen",
-        "umweltschaedliche Subventionen",
-        "schädliche Subventionen",
-        "Kaufkraftschutz",
-        "Risikointernalisierung",
-        "Folgekostenrisiko"
+        "Steuer nach Wirkung"
       ],
       "relatedTerms": [
         "wstg",
         "wustg",
-        "wirkungsrueckkopplung",
-        "haushaltsneutralitaet",
-        "energiearmut",
-        "mobilitaetsarmut",
-        "klimagerechtigkeit"
+        "wirkungsrueckkopplung"
       ]
     },
     "wirkungssteuergesetz": {
@@ -4593,7 +1177,6 @@
       "shortDefinition": "Das Wirkungssteuergesetz ist ein Rahmengesetz-Konzept für steuerliche Wirkungsrückkopplung.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungssteuergesetz",
         "WStG",
         "Wirkungssteuer-Rahmengesetz"
       ],
@@ -4610,9 +1193,7 @@
       "hoverDefinition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
       "shortDefinition": "Ein Wirkungsträger ist ein Produkt, eine Handlung, Entscheidung, Institution oder Struktur, über die Wirkung vermittelt wird.",
       "category": "Grundbegriff",
-      "synonyms": [
-        "Wirkungsträger"
-      ],
+      "synonyms": [],
       "relatedTerms": [
         "wirkungspfad",
         "wirkungspotenzial",
@@ -4627,7 +1208,6 @@
       "shortDefinition": "Die Wirkungsumsatzsteuer ist ein Konzept, Umsatzsteuerlogik nach Produkt- oder Leistungswirkung zu differenzieren.",
       "category": "Messbegriff",
       "synonyms": [
-        "Wirkungsumsatzsteuer",
         "WUStG",
         "Produktwirkungssteuer"
       ],
@@ -4646,7 +1226,6 @@
       "shortDefinition": "Wirkungsvermietung beschreibt Vermietung, die Wohnwirkung auf Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe und Vertrauen sichtbar macht.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wirkungsvermietung",
         "wirkungsorientierte Vermietung"
       ],
       "relatedTerms": [
@@ -4660,11 +1239,10 @@
       "label": "Wirkungswahrheit",
       "slug": "wirkungswahrheit",
       "url": "/begriffe/wirkungswahrheit/",
-      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - kein Wahrheitsmonopol.",
+      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol.",
       "shortDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen.",
       "category": "Schutzbegriff",
       "synonyms": [
-        "Wirkungswahrheit",
         "wirkungsnah"
       ],
       "relatedTerms": [
@@ -4681,7 +1259,6 @@
       "shortDefinition": "WIX-VI ist ein Vermietungs- und Investmentmodul des Wohnwirkungsindex.",
       "category": "Grundbegriff",
       "synonyms": [
-        "WIX-VI",
         "WIX Vermietung Investment",
         "Vermietungs- und Investmentmodul"
       ],
@@ -4699,27 +1276,12 @@
       "shortDefinition": "Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Wohnwirkung",
-        "Wirkung von Wohnen",
-        "Haushaltsfußabdruck",
-        "Haushaltsfussabdruck",
-        "Household Footprint",
-        "Haushaltsenergie",
-        "Heizenergie",
-        "Heizwärmebedarf",
-        "Heizwaermebedarf",
-        "Heizlast",
-        "Wohnkostenbelastung",
-        "Verdrängung",
-        "Verdraengung",
-        "Gentrifizierung"
+        "Wirkung von Wohnen"
       ],
       "relatedTerms": [
         "wix-vi",
         "warmmietenneutralitaet",
-        "wirkungsvermietung",
-        "energiearmut",
-        "quartierswirkung"
+        "wirkungsvermietung"
       ]
     },
     "woek-id": {
@@ -4730,7 +1292,6 @@
       "shortDefinition": "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems.",
       "category": "Datenbegriff",
       "synonyms": [
-        "WÖk-ID",
         "WOK-ID",
         "Wok ID",
         "WÖK ID"
@@ -4738,9 +1299,7 @@
       "relatedTerms": [
         "scorecard",
         "benchmark",
-        "wirkungsdatenraum",
-        "digitaler-produktpass",
-        "datenqualitaet"
+        "wirkungsdatenraum"
       ]
     },
     "wstg": {
@@ -4751,7 +1310,6 @@
       "shortDefinition": "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung.",
       "category": "Messbegriff",
       "synonyms": [
-        "WStG",
         "Wirkungssteuergesetz"
       ],
       "relatedTerms": [
@@ -4768,7 +1326,6 @@
       "shortDefinition": "WUStG steht für Wirkungsumsatzsteuergesetz, den Entwurf für produkt- und leistungsbezogene Wirkungsrückkopplung.",
       "category": "Messbegriff",
       "synonyms": [
-        "WUStG",
         "Wirkungsumsatzsteuergesetz"
       ],
       "relatedTerms": [
@@ -4776,149 +1333,6 @@
         "wirkungssteuer",
         "scorecard",
         "woek-id"
-      ]
-    },
-    "xbrl": {
-      "label": "XBRL",
-      "slug": "xbrl",
-      "url": "/begriffe/xbrl/",
-      "hoverDefinition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
-      "shortDefinition": "XBRL ist ein maschinenlesbares Format für strukturierte Unternehmens- und Berichtsdaten.",
-      "category": "Datenbegriff",
-      "synonyms": [
-        "XBRL",
-        "eXtensible Business Reporting Language"
-      ],
-      "relatedTerms": [
-        "esap",
-        "esef",
-        "csrd",
-        "berichtsdaten"
-      ]
-    },
-    "youth-jugendbeteiligung": {
-      "label": "Youth / Jugendbeteiligung",
-      "slug": "youth-jugendbeteiligung",
-      "url": "/begriffe/youth-jugendbeteiligung/",
-      "hoverDefinition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
-      "shortDefinition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Youth / Jugendbeteiligung",
-        "Youth",
-        "Jugendbeteiligung",
-        "junge Generationen",
-        "Young Generations",
-        "Jugendpartizipation"
-      ],
-      "relatedTerms": [
-        "wirkungskompetenz"
-      ]
-    },
-    "zeitwirkung": {
-      "label": "Zeitwirkung",
-      "slug": "zeitwirkung",
-      "url": "/begriffe/zeitwirkung/",
-      "hoverDefinition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
-      "shortDefinition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Zeitwirkung",
-        "Wirkung über Zeit",
-        "Wirkung ueber Zeit",
-        "Langzeitwirkung",
-        "Zeithorizont",
-        "Wirkungszeit"
-      ],
-      "relatedTerms": [
-        "wirkungspfad",
-        "wirkungsrisiko"
-      ]
-    },
-    "zielkonflikt": {
-      "label": "Zielkonflikt",
-      "slug": "zielkonflikt",
-      "url": "/begriffe/zielkonflikt/",
-      "hoverDefinition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
-      "shortDefinition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Zielkonflikt",
-        "Zielkonflikte",
-        "Trade-off",
-        "Tradeoff",
-        "Abwägungskonflikt",
-        "Abwaegungskonflikt"
-      ],
-      "relatedTerms": [
-        "wirkungsbewertung",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "nichtkompensationsprinzip",
-        "wirkungsrat"
-      ]
-    },
-    "zirkularitaet": {
-      "label": "Zirkularität",
-      "slug": "zirkularitaet",
-      "url": "/begriffe/zirkularitaet/",
-      "hoverDefinition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
-      "shortDefinition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Zirkularität",
-        "Zirkularitaet",
-        "Circularity",
-        "Kreislauffähigkeit",
-        "Kreislauffaehigkeit",
-        "Zirkularitätsgrad",
-        "Zirkularitaetsgrad",
-        "Sekundärrohstoffquote",
-        "Sekundaerrohstoffquote",
-        "Sharing Economy",
-        "Product-as-a-Service"
-      ],
-      "relatedTerms": [
-        "digitaler-produktpass",
-        "material-footprint",
-        "recyclingquote"
-      ]
-    },
-    "zugangsgerechtigkeit": {
-      "label": "Zugangsgerechtigkeit",
-      "slug": "zugangsgerechtigkeit",
-      "url": "/begriffe/zugangsgerechtigkeit/",
-      "hoverDefinition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
-      "shortDefinition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Zugangsgerechtigkeit",
-        "Access Justice",
-        "gerechter Zugang",
-        "Zugang zu Leistungen",
-        "accessibility justice"
-      ],
-      "relatedTerms": [
-        "handlungsspielraum"
-      ]
-    },
-    "zukunftsfaehigkeit": {
-      "label": "Zukunftsfähigkeit",
-      "slug": "zukunftsfaehigkeit",
-      "url": "/begriffe/zukunftsfaehigkeit/",
-      "hoverDefinition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
-      "shortDefinition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Zukunftsfähigkeit",
-        "Zukunftsfaehigkeit",
-        "future fitness",
-        "Zukunftsfestigkeit",
-        "Zukunftsfähig"
-      ],
-      "relatedTerms": [
-        "positive-netto-wirkung",
-        "wirkungsresilienz"
       ]
     }
   }

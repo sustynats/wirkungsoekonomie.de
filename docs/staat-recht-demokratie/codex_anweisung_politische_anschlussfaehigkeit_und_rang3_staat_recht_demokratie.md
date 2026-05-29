@@ -127,7 +127,7 @@ Falls WUStG oder WEstG vollständig als Gesetzestext vorliegen, ebenfalls als La
 Inline-Paragrafenverweise müssen Hover/Fokus/Tap-fähig sein.
 
 Beispiele:
-- § 1 WStG: Zweck des Gesetzes - Steuerung nach Wirkung auf Mensch, Planet und Demokratie.
+- § 1 WStG: Zweck des Gesetzes – Steuerung nach Wirkung auf Mensch, Planet und Demokratie.
 - § 5 WUStG: FinalScore bestimmt Wirkungssteuerklasse.
 - § 7 WUStG: Vorsteuerlogik und Lieferkettenwirkung.
 - § 8 WUStG: Evaluation durch den Wirkungsrat.
@@ -172,18 +172,18 @@ SDG+ immer als WÖk-Erweiterung kennzeichnen, nicht als offizielle UN-Kategorie.
 ## Buchanker
 
 Auf der Seite und in den Dossiers einbinden:
-- Kapitel 36 - Wirkung als Rechtsprinzip
-- Kapitel 37 - Das Wirkungssteuergesetz WStG
-- Kapitel 38 - Das WUStG und die Produktwirkungssteuer
-- Kapitel 39 - Wirkungshaushalt und öffentliche Mittel
-- Kapitel 40 - Der Wirkungsrat
-- Kapitel 41 - Verwaltung, Rechtsschutz und Körperschaftslogik
-- Kapitel 61 - Politik als Wirkungsraum
-- Kapitel 62 - Parteien und Programme
-- Kapitel 63 - Lobbyismus und Machtkonzentration
-- Kapitel 64 - Verwaltung und Bürgerbeteiligung
-- Kapitel 65 - Resilienzstaat
-- Kapitel 66 - Sicherheitsarchitektur
+- Kapitel 36 – Wirkung als Rechtsprinzip
+- Kapitel 37 – Das Wirkungssteuergesetz WStG
+- Kapitel 38 – Das WUStG und die Produktwirkungssteuer
+- Kapitel 39 – Wirkungshaushalt und öffentliche Mittel
+- Kapitel 40 – Der Wirkungsrat
+- Kapitel 41 – Verwaltung, Rechtsschutz und Körperschaftslogik
+- Kapitel 61 – Politik als Wirkungsraum
+- Kapitel 62 – Parteien und Programme
+- Kapitel 63 – Lobbyismus und Machtkonzentration
+- Kapitel 64 – Verwaltung und Bürgerbeteiligung
+- Kapitel 65 – Resilienzstaat
+- Kapitel 66 – Sicherheitsarchitektur
 
 ## Sprache und Schutz
 

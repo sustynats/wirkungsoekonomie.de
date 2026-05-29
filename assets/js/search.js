@@ -13,13 +13,13 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260527-questions";
+  const searchDataVersion = "20260527-sprint-3-search";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 700;
   const MAX_VISIBLE_RESULTS = 24;
   const SEARCH_GROUPS = [
+    { id: "fragen", label: "Fragen & Einwände", max: 4 },
     { id: "begriffe", label: "Begriffe", max: 5 },
-    { id: "fragen", label: "Fragen & Einwände", max: 5 },
     { id: "grundlagen", label: "Grundlagen", max: 4 },
     { id: "wirkungsfelder", label: "Wirkungsfelder", max: 5 },
     { id: "werkzeuge", label: "Werkzeuge", max: 5 },
@@ -31,8 +31,8 @@
     { id: "weitere", label: "Weitere Treffer", max: 4 },
   ];
   const GROUP_SCORE_BONUS = {
+    fragen: 340,
     begriffe: 260,
-    fragen: 245,
     grundlagen: 135,
     wirkungsfelder: 105,
     methoden: 88,
@@ -44,12 +44,198 @@
     weitere: 0,
   };
   const CURATED_QUERY_ROUTES = {
-    wirkung: [["/begriffe/wirkung/", 1200], ["/modell.html", 980], ["/kompass.html", 940], ["/wirkungsoekonomie.html", 900]],
-    "netto wirkung": [["/begriffe/positive-netto-wirkung/", 1150], ["/modell.html", 920], ["/kompass.html", 880]],
-    "positive netto wirkung": [["/begriffe/positive-netto-wirkung/", 1150], ["/modell.html", 920], ["/kompass.html", 880]],
-    wirkungseinkommen: [["/begriffe/wirkungseinkommen/", 1150], ["/erleben/automatisierungs-wirkungseinkommensrechner/", 940], ["/wirkungsfelder/arbeit-einkommen/", 880]],
-    bildung: [["/wirkungsfelder/bildung/", 980], ["/begriffe/wirkungskompetenz/", 860]],
+    wirkung: ["/begriffe/wirkung/", "/modell.html", "/kompass.html", "/wirkungsoekonomie.html"],
+    "netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
+    "positive netto wirkung": ["/begriffe/positive-netto-wirkung/", "/modell.html", "/kompass.html"],
+    folgencheck: ["/begriffe/folgencheck/", "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/", "/anwendungen/scanner.html"],
+    faktencheck: ["/begriffe/faktencheck/", "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/", "/anwendungen/scanner.html"],
+    wirkstoff: ["/begriffe/wirkstoff/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
+    wirkungsraum: ["/begriffe/wirkungsraum/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
+    wirkungspfad: ["/begriffe/wirkungspfad/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
+    wirkungspotenzial: ["/begriffe/wirkungspotenzial/", "/begriffe/folgencheck/", "/anwendungen/scanner.html"],
+    wirkungskompetenz: ["/begriffe/wirkungskompetenz/", "/begriffe/idgs/", "/verstehen/sdgs-sdgplus/"],
+    idg: ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
+    idgs: ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
+    "inner development goals": ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
+    wirkungseinkommen: ["/begriffe/wirkungseinkommen/", "/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/"],
+    planwirtschaft: ["/fragen/", "/portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/", "/modell.html"],
+    "social credit": ["/fragen/", "/begriffe/social-credit/", "/portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/"],
+    "social-credit": ["/fragen/", "/begriffe/social-credit/", "/portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/"],
+    esg: ["/fragen/", "/begriffe/esg/", "/wirkungsfelder/wirtschaft-unternehmen/"],
+    "green deal": ["/begriffe/european-green-deal/", "/methodik/daten-standards-regularien.html", "/begriffe/eu-taxonomie/"],
+    "european green deal": ["/begriffe/european-green-deal/", "/methodik/daten-standards-regularien.html", "/begriffe/eu-taxonomie/"],
+    "eu taxonomie": ["/begriffe/eu-taxonomie/", "/methodik/daten-standards-regularien.html", "/wirkungsfelder/finanzsystem-kapital/"],
+    "eu-taxonomie": ["/begriffe/eu-taxonomie/", "/methodik/daten-standards-regularien.html", "/wirkungsfelder/finanzsystem-kapital/"],
+    "social taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
+    "social-taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
+    "reverse merit order": ["/begriffe/reverse-merit-order/", "/werkzeuge/reverse-merit-order/", "/wirkungsfelder/produkte-konsum/"],
+    nwi: ["/begriffe/nwi/", "/werkzeuge/netto-wirkungs-index/", "/werkzeuge/impact-controlling/"],
+    "t-sroi": ["/begriffe/t-sroi/", "/werkzeuge/impact-controlling/t-sroi/", "/werkzeuge/impact-controlling/"],
+    "wök-id": ["/begriffe/woek-id/", "/werkzeuge/woek-ids/", "/verstehen/sdgs-sdgplus/"],
+    "woek-id": ["/begriffe/woek-id/", "/werkzeuge/woek-ids/", "/verstehen/sdgs-sdgplus/"],
+    "5 p": ["/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/marketing_fuenftes_p_planet/", "/wirkungsfelder/wirtschaft-unternehmen/"],
+    planet: ["/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/marketing_fuenftes_p_planet/", "/begriffe/mensch-planet-demokratie/"],
+    produktwirkung: ["/wirkungsfelder/produkte-konsum/", "/erleben/produktwirkungsrechner/", "/begriffe/wirkung/"],
+    automatisierung: ["/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/", "/begriffe/maschinenwertschoepfungsbeitrag/"],
+    bildung: ["/wirkungsfelder/bildung/", "/begriffe/wirkungskompetenz/"],
+    gesundheit: ["/wirkungsfelder/gesundheit-pflege/", "/wirkungsfelder/"],
   };
+  const RECOMMENDED_QUERY_ENTRYPOINTS = {
+    wirkung: {
+      title: "Begriff: Wirkung",
+      description: "Die zentrale Leitgröße der Wirkungsökonomie: Was verändert eine Entscheidung für Mensch, Planet und Demokratie?",
+      url: "/begriffe/wirkung/",
+      tags: ["Begriff", "Modell", "Kompass"],
+    },
+    planwirtschaft: {
+      title: "Ist die Wirkungsökonomie Planwirtschaft?",
+      description: "Die ausführliche Antwort erklärt, warum die WÖk mit Markt, Demokratie, Korrektur und Rückkopplung arbeitet.",
+      url: "/fragen/#planwirtschaft",
+      tags: ["Einwand", "Markt", "Freiheit"],
+    },
+    "social credit": {
+      title: "Ist das Social Credit?",
+      description: "Die Antwort grenzt Wirkungsdaten von personenbezogener Bewertung, Überwachung und Sanktionierung ab.",
+      url: "/fragen/#social-credit",
+      tags: ["Einwand", "Datenschutz", "Schutzgrenzen"],
+    },
+    "social-credit": {
+      title: "Ist das Social Credit?",
+      description: "Die Antwort grenzt Wirkungsdaten von personenbezogener Bewertung, Überwachung und Sanktionierung ab.",
+      url: "/fragen/#social-credit",
+      tags: ["Einwand", "Datenschutz", "Schutzgrenzen"],
+    },
+    wirkungseinkommen: {
+      title: "Begriff: Wirkungseinkommen",
+      description: "Der Begriff erklärt den Vorschlag und führt zum Automatisierungs- und Wirkungseinkommensrechner.",
+      url: "/begriffe/wirkungseinkommen/",
+      tags: ["Begriff", "Automatisierung", "Soziale Sicherung"],
+    },
+    folgencheck: {
+      title: "Begriff: Folgencheck",
+      description: "Der Begriff führt von Wirkstoff, Wirkungspotenzial und Wirkungsraum zur modellhaften Prüfung möglicher Folgen.",
+      url: "/begriffe/folgencheck/",
+      tags: ["Begriff", "Scanner", "Medienwirkung"],
+    },
+    "green deal": {
+      title: "Begriff: European Green Deal",
+      description: "Der Daten- und Standardsbegriff ordnet den Green Deal als Anschlussrahmen für Wirkung, Taxonomie und Transformation ein.",
+      url: "/begriffe/european-green-deal/",
+      tags: ["Daten & Standards", "EU", "Taxonomie"],
+    },
+    "eu taxonomie": {
+      title: "Begriff: EU-Taxonomie",
+      description: "Der Begriff macht die EU-Taxonomie als bestehenden Klassifikations- und Datenrahmen auffindbar.",
+      url: "/begriffe/eu-taxonomie/",
+      tags: ["Daten & Standards", "EU"],
+    },
+    "eu-taxonomie": {
+      title: "Begriff: EU-Taxonomie",
+      description: "Der Begriff macht die EU-Taxonomie als bestehenden Klassifikations- und Datenrahmen auffindbar.",
+      url: "/begriffe/eu-taxonomie/",
+      tags: ["Daten & Standards", "EU"],
+    },
+    "social taxonomy": {
+      title: "Begriff: Social Taxonomy",
+      description: "Der Begriff ordnet soziale Wirkung in nachhaltige Märkte, Standards und Anschlusslogiken ein.",
+      url: "/begriffe/social-taxonomy/",
+      tags: ["Daten & Standards", "Soziale Wirkung"],
+    },
+    "social-taxonomy": {
+      title: "Begriff: Social Taxonomy",
+      description: "Der Begriff ordnet soziale Wirkung in nachhaltige Märkte, Standards und Anschlusslogiken ein.",
+      url: "/begriffe/social-taxonomy/",
+      tags: ["Daten & Standards", "Soziale Wirkung"],
+    },
+    "t sroi": {
+      title: "Begriff: T-SROI",
+      description: "Der Begriff erklärt den transformierten Social Return on Investment als Wirkungs- und Transformationsmaß.",
+      url: "/begriffe/t-sroi/",
+      tags: ["Begriff", "Impact Controlling"],
+    },
+    "t-sroi": {
+      title: "Begriff: T-SROI",
+      description: "Der Begriff erklärt den transformierten Social Return on Investment als Wirkungs- und Transformationsmaß.",
+      url: "/begriffe/t-sroi/",
+      tags: ["Begriff", "Impact Controlling"],
+    },
+  };
+  const QUESTION_QUERY_TERMS = [
+    "planwirtschaft",
+    "social credit",
+    "social-credit",
+    "esg",
+    "buerokratie",
+    "messbarkeit",
+    "amtlich",
+    "zensur",
+    "faktencheck vs folgencheck",
+    "bge",
+    "geld",
+    "finanzierung",
+    "teurer",
+    "steuerklasse",
+    "fehlende daten",
+    "wer entscheidet",
+  ].map(normalize);
+  const DEFAULT_SEARCH_ENTRYPOINTS = [
+    {
+      title: "Was ist Wirkungsökonomie?",
+      description: "Die Grundidee: Wirkung für Mensch, Planet und Demokratie wird entscheidungsrelevant.",
+      url: "/wirkungsoekonomie.html",
+      section: "Grundlagen",
+      type: "Einstieg",
+      tags: ["Grundidee", "Wirkung"],
+    },
+    {
+      title: "In 5 Minuten verstehen",
+      description: "Der schnelle Pfad von Problem, Idee und Methode bis zu einem konkreten Beispiel.",
+      url: "/index.html#in-5-minuten",
+      section: "Grundlagen",
+      type: "Einstieg",
+      tags: ["5 Minuten", "Einstieg"],
+    },
+    {
+      title: "Fragen & Einwände",
+      description: "Antworten auf Planwirtschaft, Social Credit, ESG, Bürokratie, Finanzierung und Grenzen der Demos.",
+      url: "/fragen/",
+      section: "Fragen & Einwände",
+      type: "FAQ",
+      tags: ["Planwirtschaft", "Social Credit"],
+    },
+    {
+      title: "Begriffe",
+      description: "Das Begriffssystem der Wirkungsökonomie mit führenden Begriffen und Anschlussstandards.",
+      url: "/begriffe/",
+      section: "Begriffe",
+      type: "Glossar",
+      tags: ["Glossar", "Begriffe"],
+    },
+    {
+      title: "Wirkungsfelder",
+      description: "Anwendungsfelder von Produkten und Unternehmen bis Staat, Arbeit, Wohnen, Bildung und Medien.",
+      url: "/wirkungsfelder/",
+      section: "Wirkungsfelder",
+      type: "Übersicht",
+      tags: ["Wirkungsfelder"],
+    },
+    {
+      title: "Produktwirkung ausprobieren",
+      description: "Modellhaft testen, wie Scorecard, schwächstes Feld, Wirkungssteuer und Preis zusammenwirken.",
+      url: "/erleben.html#simulator",
+      section: "Werkzeuge",
+      type: "Demo",
+      tags: ["Produktwirkung", "Demo"],
+    },
+    {
+      title: "Bibliothek",
+      description: "Onlinefassungen, Dossiers, Whitepaper, Referenzwerk und Materialien öffnen.",
+      url: "/downloads.html",
+      section: "Bibliothek",
+      type: "Materialien",
+      tags: ["Downloads", "Onlinefassung"],
+    },
+  ];
 
   if (!form || !(input instanceof HTMLInputElement) || !status || !resultsList) {
     return;
@@ -132,11 +318,11 @@
     const format = normalize(entry.format);
     const tags = normalize(asArray(entry.tags).join(" "));
 
+    if (url.startsWith("/fragen") || section.includes("fragen") || section.includes("einwaende") || section.includes("einwande")) {
+      return "fragen";
+    }
     if (type.includes("begriff") || format.includes("glossar") || section.includes("begriffe") || url.startsWith("/begriffe/") || url.includes("glossar")) {
       return "begriffe";
-    }
-    if (url.startsWith("/fragen") || type.includes("frage") || section.includes("fragen")) {
-      return "fragen";
     }
     if (url.startsWith("/werkzeuge/") || url.startsWith("/erleben") || url.startsWith("/anwendungen") || type.includes("tool") || format.includes("tool") || tags.includes("demo")) {
       return "werkzeuge";
@@ -173,7 +359,8 @@
       url.startsWith("/wirkungsoekonomie") ||
       url.startsWith("/kompass") ||
       url.startsWith("/referenz") ||
-      section.includes("verstehen")
+      section.includes("verstehen") ||
+      section.includes("grundlagen")
     ) {
       return "grundlagen";
     }
@@ -198,8 +385,8 @@
     const query = normalize(rawQuery);
     const route = normalizeRoute(entry.url);
     const routes = CURATED_QUERY_ROUTES[query] || [];
-    const match = routes.find(([itemRoute]) => itemRoute === route);
-    return match ? match[1] : 0;
+    const index = routes.indexOf(route);
+    return index >= 0 ? 2000 - index * 120 : 0;
   }
 
   function getGroupLabel(groupId) {
@@ -207,8 +394,8 @@
   }
 
   function getDisplayBadge(entry, groupId) {
-    if (groupId === "begriffe") return "Begriff";
     if (groupId === "fragen") return "Frage";
+    if (groupId === "begriffe") return "Begriff";
     if (groupId === "grundlagen") return "Grundlage";
     if (groupId === "wirkungsfelder") return "Wirkungsfeld";
     if (groupId === "werkzeuge") return "Werkzeug";
@@ -273,6 +460,10 @@
     return query.includes(" ") ? normalize(value).includes(query) : containsToken(value, query);
   }
 
+  function isQuestionQuery(query, tokens) {
+    return QUESTION_QUERY_TERMS.some((term) => query.includes(term) || tokens.includes(term));
+  }
+
   function expandQuery(rawQuery) {
     const normalizedQuery = normalize(rawQuery);
     const baseTokens = normalizedQuery.split(" ").filter((token) => token.length > 1);
@@ -324,7 +515,6 @@
         if (selected === "Seiten") return type.includes("seite");
         if (selected === "Wissenskarten") return section.includes("wissenskarten") || type.includes("wissenskarte");
         if (selected === "Anwendungen") return ["anwendungen", "scanner", "erleben"].some((item) => section.includes(item)) || type.includes("tool");
-        if (selected === "Fragen & Einwände") return section.includes("fragen") || type.includes("frage") || normalizeRoute(entry.url).startsWith("/fragen");
         if (selected === "Zielgruppen") return section.includes("fuer") || section.includes("für wen") || String(entry.url || "").startsWith("/fuer/");
         if (selected === "Audio") return section.includes("audio") || type.includes("audio") || tags.includes("audio");
         return fieldContains(entry, "section", selected);
@@ -369,10 +559,14 @@
     const haystack = entry._haystack || getEntryHaystack(entry);
     const keywordHaystack = entry._keywordHaystack || getEntryKeywordHaystack(entry);
     const groupId = entry._group || classifyEntry(entry);
+    const route = normalizeRoute(entry.url);
+    if (groupId === "fragen" && !isQuestionQuery(query, getQueryTokens(rawQuery))) return 0;
     let score = Number(entry.priority || 0) + Number(GROUP_SCORE_BONUS[groupId] || 0);
     if (isLowValueSearchEntry(entry)) score -= 500;
     score += curatedRouteBoost(entry, rawQuery);
-    if (normalizeRoute(entry.url) === "/glossar.html" && normalize(rawQuery) !== "glossar") score -= 260;
+    if (route === "/glossar.html" && asArray(CURATED_QUERY_ROUTES[query]).some((item) => item.startsWith("/begriffe/"))) {
+      score -= 1500;
+    }
 
     if (containsQuery(title, query)) score += 120;
     if (containsQuery(aliases, query)) score += 90;
@@ -441,6 +635,7 @@
   function findRecommended(rawQuery) {
     const query = normalize(rawQuery);
     if (!query) return null;
+    if (RECOMMENDED_QUERY_ENTRYPOINTS[query]) return RECOMMENDED_QUERY_ENTRYPOINTS[query];
     return state.entrypoints.find((entrypoint) =>
       asArray(entrypoint.match).some((match) => {
         const normalizedMatch = normalize(match);
@@ -481,35 +676,19 @@
   }
 
   function getDefaultResults() {
-    const preferred = [
-      { url: "/wirkungsoekonomie.html", title: "Was ist Wirkungsökonomie?", description: "Die Grundidee in einfachen Worten: Wirkung auf Mensch, Planet und Demokratie wird entscheidungsrelevant." },
-      { url: "/#in-5-minuten", title: "In 5 Minuten verstehen", description: "Der schnellste Einstieg in Problem, Idee, Methode, Beispiele und Vertiefung." },
-      { url: "/fragen/", title: "Fragen & Einwände", description: "Antworten auf Planwirtschaft, Social Credit, Bürokratie, Messbarkeit, Finanzierung und Grenzen." },
-      { url: "/begriffe/", title: "Begriffe", description: "Glossar und Begriffseiten von Wirkung bis Wirkungsrückkopplung, SDG+, T-SROI und Wirkungseinkommen." },
-      { url: "/wirkungsfelder/", title: "Wirkungsfelder", description: "Produkte, Unternehmen, Arbeit, Medien, Wohnen, Gesundheit, Bildung, Staat und Kapital." },
-      { url: "/erleben.html", title: "Produktwirkung ausprobieren", description: "Demos und Tools für Produktwirkung, Medienwirkung, Plattformwirkung, Risiko und Alltag." },
-      { url: "/downloads.html", title: "Bibliothek", description: "Bücher, Ausarbeitungen, Thesenpapiere, Dossiers und Onlinefassungen lesen." },
-    ];
     const byUrl = new Map(state.index.map((entry) => [String(entry.url || ""), entry]));
-    const seeded = preferred.map((item) => byUrl.get(item.url) || {
-      id: `default-${item.url}`,
-      title: item.title,
-      description: item.description,
-      body: item.description,
-      url: item.url,
-      section: "Empfohlener Einstieg",
-      type: "Einstieg",
-      format: "Orientierung",
-      tags: ["Empfohlener Einstieg"],
-      priority: 180,
+    return DEFAULT_SEARCH_ENTRYPOINTS.map((item, index) => {
+      const route = normalizeRoute(item.url);
+      const existing = byUrl.get(route) || byUrl.get(item.url);
+      const entry = {
+        ...(existing || {}),
+        ...item,
+        body: item.description,
+        priority: 120 - index,
+        _group: classifyEntry(item),
+      };
+      return { entry, score: entry.priority };
     });
-    const fallback = state.index
-      .filter((entry) => !isLowValueSearchEntry(entry))
-      .slice()
-      .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0))
-      .filter((entry) => !seeded.includes(entry))
-      .slice(0, Math.max(0, 8 - seeded.length));
-    return [...seeded, ...fallback].slice(0, 8).map((entry) => ({ entry, score: Number(entry.priority || 0) }));
   }
 
   function escapeHtml(value) {

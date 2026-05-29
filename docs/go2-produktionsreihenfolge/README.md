@@ -1,4 +1,4 @@
-# Go 2 - Produktionsreihenfolge echte Detailkonzepte
+# Go 2 – Produktionsreihenfolge echte Detailkonzepte
 
 **Version:** v1.0
 **Stand:** 24.05.2026
@@ -18,7 +18,7 @@ Nicht enthalten in dieser Zahl:
 ## Produktionslogik
 
 - Pro Produktionspaket maximal **3 echte Detailkonzepte**.
-- Sehr komplexe Pakete können bei Bedarf in 1-2 Einzel-Gos aufgeteilt werden.
+- Sehr komplexe Pakete können bei Bedarf in 1–2 Einzel-Gos aufgeteilt werden.
 - Pakete sind bewusst **phase-rein**, damit keine Themen quer durcheinanderlaufen.
 - Jedes A-Konzept wird im Referenzumfang erstellt: Kurzprofil, Executive Summary, Diagnose, Akteursgruppen, Wirkungsmechanik, Daten-/Indikatorenlogik, Steuer-/Fonds-/Anreizbezug, politische Anschlussfähigkeit, Toolbezug, Website-Integration und Fazit.
 - Danach werden Dossier und Online-Volltext abgeleitet.

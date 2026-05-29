@@ -63,11 +63,8 @@ function fixFile(rel) {
 
   html = html
     .replace(/Spezifikation online lesen/g, "Methodik anzeigen")
-    .replace(/Detailkonzept online lesen/g, "Konzeptpapier lesen")
-    .replace(/Dossier online lesen/g, "Dossier lesen")
-    .replace(/Zum Detailkonzept/g, "Konzeptpapier lesen")
-    .replace(/Zum Konzeptpapier/g, "Konzeptpapier lesen")
-    .replace(/Zum Dossier/g, "Dossier lesen")
+    .replace(/Detailkonzept online lesen/g, "Zum Detailkonzept")
+    .replace(/Dossier online lesen/g, "Zum Dossier")
     .replace(/Online-Volltext lesen/g, "Onlinefassung lesen")
     .replace(/(<a\b[^>]*href=["']#detailkonzept["'][^>]*>)Detailkonzept lesen(<\/a>)/gi, "$1Detailabschnitt anzeigen$2")
     .replace(/(<a\b[^>]*href=["']#einzeldossier["'][^>]*>)Dossier lesen(<\/a>)/gi, "$1Dossierabschnitt anzeigen$2")

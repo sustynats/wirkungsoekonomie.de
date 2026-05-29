@@ -126,14 +126,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -334,14 +326,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -591,14 +575,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -821,14 +797,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -1041,14 +1009,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -1246,14 +1206,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -1414,14 +1366,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -1656,14 +1600,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -1858,14 +1794,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -2084,14 +2012,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -2307,14 +2227,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -2539,14 +2451,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -2711,14 +2615,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -2940,14 +2836,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -3182,14 +3070,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -3420,14 +3300,6 @@ window.WOEK_SDG_REFERENCES = [
       {
         "label": "Eurostat SDG Monitoring",
         "url": "https://ec.europa.eu/eurostat/web/sdi"
-      },
-      {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
       },
       {
         "label": "UNESCO ROAM-X Indicators",
@@ -3736,14 +3608,6 @@ window.WOEK_SDG_REFERENCES = [
         "url": "https://ec.europa.eu/eurostat/web/sdi"
       },
       {
-        "label": "SDG-Portal - Indikatoren für Kommunen",
-        "url": "https://sdg-portal.de/de/"
-      },
-      {
-        "label": "SDG-Portal - Über das Projekt",
-        "url": "https://sdg-portal.de/de/ueber-das-projekt"
-      },
-      {
         "label": "UNESCO ROAM-X Indicators",
         "url": "https://www.unesco.org/en/articles/how-measure-internet-unescos-internet-universality-roam-x-indicators-now-also-available-russian"
       },
@@ -3811,8 +3675,8 @@ window.WOEK_SDG_REFERENCES = [
     "shortTitle": "SDG+ Demokratie",
     "slug": "sdgplus-demokratie",
     "anchor": "#sdgplus-demokratie",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-demokratie/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-demokratie",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-demokratie/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar.",
@@ -3933,8 +3797,8 @@ window.WOEK_SDG_REFERENCES = [
     "shortTitle": "SDG+ Medienqualität",
     "slug": "sdgplus-medienqualitaet",
     "anchor": "#sdgplus-medienqualitaet",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-medienqualitaet",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ Medienqualität bewertet öffentliche Informationsräume: Quellenklarheit, journalistische Verantwortung, Desinformationsschutz und demokratische Orientierung.",
@@ -4049,8 +3913,8 @@ window.WOEK_SDG_REFERENCES = [
     "shortTitle": "SDG+ Rechtsstaatlichkeit",
     "slug": "sdgplus-rechtsstaatlichkeit",
     "anchor": "#sdgplus-rechtsstaatlichkeit",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht.",
@@ -4159,8 +4023,8 @@ window.WOEK_SDG_REFERENCES = [
     "shortTitle": "SDG+ Diskursfähigkeit",
     "slug": "sdgplus-diskursfaehigkeit",
     "anchor": "#sdgplus-diskursfaehigkeit",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ Diskursfähigkeit macht sichtbar, ob Gesellschaften Konflikte faktenbasiert, respektvoll und korrekturfähig bearbeiten können.",
@@ -4265,12 +4129,12 @@ window.WOEK_SDG_REFERENCES = [
     "id": "sdgplus-institutionelles-vertrauen",
     "type": "sdgplus",
     "number": null,
-    "title": "SDG+ Institutionelles Vertrauen",
-    "shortTitle": "SDG+ Institutionelles Vertrauen",
+    "title": "SDG+ institutionelles Vertrauen",
+    "shortTitle": "SDG+ institutionelles Vertrauen",
     "slug": "sdgplus-institutionelles-vertrauen",
     "anchor": "#sdgplus-institutionelles-vertrauen",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln.",
@@ -4327,22 +4191,22 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Gesundheit & Pflege",
         "url": "/wirkungsfelder/gesundheit-pflege/",
-        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Wohnen & Stadt",
         "url": "/wirkungsfelder/wohnen-stadt/",
-        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Produkte & Konsum",
         "url": "/wirkungsfelder/produkte-konsum/",
-        "why": "SDG+ Institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ institutionelles Vertrauen ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
@@ -4380,12 +4244,12 @@ window.WOEK_SDG_REFERENCES = [
     "id": "sdgplus-gesellschaftlicher-zusammenhalt",
     "type": "sdgplus",
     "number": null,
-    "title": "SDG+ Gesellschaftlicher Zusammenhalt",
-    "shortTitle": "SDG+ Gesellschaftlicher Zusammenhalt",
+    "title": "SDG+ gesellschaftlicher Zusammenhalt",
+    "shortTitle": "SDG+ gesellschaftlicher Zusammenhalt",
     "slug": "sdgplus-gesellschaftlicher-zusammenhalt",
     "anchor": "#sdgplus-gesellschaftlicher-zusammenhalt",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ gesellschaftlicher Zusammenhalt macht sichtbar, ob Teilhabe, Zugehörigkeit, Sicherheit, Fairness und Schutz vor Spaltung gestärkt werden.",
@@ -4449,27 +4313,27 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Wohnen & Stadt",
         "url": "/wirkungsfelder/wohnen-stadt/",
-        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Gesundheit & Pflege",
         "url": "/wirkungsfelder/gesundheit-pflege/",
-        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Arbeit & Einkommen",
         "url": "/wirkungsfelder/arbeit-einkommen/",
-        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Kultur, Identität & Resonanz",
         "url": "/wirkungsfelder/kultur-identitaet-resonanz/",
-        "why": "SDG+ Gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ gesellschaftlicher Zusammenhalt ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [
@@ -4507,12 +4371,12 @@ window.WOEK_SDG_REFERENCES = [
     "id": "sdgplus-digitale-selbstbestimmung",
     "type": "sdgplus",
     "number": null,
-    "title": "SDG+ Digitale Selbstbestimmung",
-    "shortTitle": "SDG+ Digitale Selbstbestimmung",
+    "title": "SDG+ digitale Selbstbestimmung",
+    "shortTitle": "SDG+ digitale Selbstbestimmung",
     "slug": "sdgplus-digitale-selbstbestimmung",
     "anchor": "#sdgplus-digitale-selbstbestimmung",
-    "url": "/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/",
-    "legacyUrl": "",
+    "url": "/verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung",
+    "legacyUrl": "/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/",
     "isOfficialUNGoal": false,
     "officialNote": "SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.",
     "hoverText": "SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation.",
@@ -4573,32 +4437,32 @@ window.WOEK_SDG_REFERENCES = [
       {
         "title": "Wissenschaft, Innovation & Digitalisierung",
         "url": "/wirkungsfelder/wissenschaft-innovation-digitalisierung/",
-        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Medien & Öffentlichkeit",
         "url": "/wirkungsfelder/medien-oeffentlichkeit/",
-        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Bildung",
         "url": "/wirkungsfelder/bildung/",
-        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Staat, Recht & Demokratie",
         "url": "/wirkungsfelder/staat-recht-demokratie/",
-        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Produkte & Konsum",
         "url": "/wirkungsfelder/produkte-konsum/",
-        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       },
       {
         "title": "Gesundheit & Pflege",
         "url": "/wirkungsfelder/gesundheit-pflege/",
-        "why": "SDG+ Digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
+        "why": "SDG+ digitale Selbstbestimmung ist in diesem Wirkungsfeld eine Voraussetzung stabiler positiver Netto-Wirkung."
       }
     ],
     "relatedWerkzeuge": [

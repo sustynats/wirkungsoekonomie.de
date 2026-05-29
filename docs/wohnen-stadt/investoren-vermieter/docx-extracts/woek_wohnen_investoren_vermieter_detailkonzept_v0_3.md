@@ -13,7 +13,7 @@ Verantwortliches Eigentum, gute Vermietung, Spekulationsschutz und Stranded-Asse
 | Status | erweiterte öffentliche Ausarbeitung |
 | Stand | 24. Mai 2026 |
 
-„Kapital darf im Wohnungsmarkt wirken - aber es darf Wohnen nicht ersetzen.“
+„Kapital darf im Wohnungsmarkt wirken – aber es darf Wohnen nicht ersetzen.“
 
 ## Kurzprofil
 
@@ -234,7 +234,7 @@ Diese Ausarbeitung nutzt vorhandene WÖk-Grundlagen und öffentliche Quellen. Si
 | Quelle | Nutzung |
 | --- | --- |
 | WÖk Working-Paper Wohnungsmarkt | Working-Paper Wohnungsmarkt: Bezahlbar, nachhaltig, gerecht, Natalie Weber, 2025. |
-| WÖk Buchanker | Die neue Ordnung des Wohlstands, insbesondere Kapitel 3.15, 70.2-70.4, 59, 70.3 und 70.4. |
+| WÖk Buchanker | Die neue Ordnung des Wohlstands, insbesondere Kapitel 3.15, 70.2–70.4, 59, 70.3 und 70.4. |
 | WÖk Begriffsleitfaden | Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026. |
 | EU EPBD | European Commission: Energy Performance of Buildings Directive, EU/2024/1275. |
 | GEG | Gebäudeenergiegesetz und BMWK-Informationen zur 65-Prozent-Erneuerbare-Energien-Regel. |
@@ -256,7 +256,7 @@ Diese Ausarbeitung nutzt vorhandene WÖk-Grundlagen und öffentliche Quellen. Si
 | WIX-VI | Untermodul des Wohnwirkungsindex für Vermietung und Investment. |
 | Warmmietenneutralität | Sanierungspfad, bei dem Kaltmiete, Nebenkosten und Entlastungen gemeinsam betrachtet werden, sodass die reale Wohnkostenbelastung nicht steigt oder sozial abgefedert wird. |
 
-## Anhang A - Rechtliche Anschlussstellen im Detail
+## Anhang A – Rechtliche Anschlussstellen im Detail
 
 Dieser Anhang vertieft, welche bestehenden Rechtsinstrumente bereits heute in eine wirkungsökonomische Wohnordnung übersetzt werden können. Die Wirkungsökonomie beginnt nicht bei null. Sie ordnet bestehende Instrumente neu, verbindet sie mit Wirkungsdaten und macht aus Einzelpflichten eine lernende Rückkopplungsarchitektur.
 
@@ -273,7 +273,7 @@ Dieser Anhang vertieft, welche bestehenden Rechtsinstrumente bereits heute in ei
 | EU-Taxonomie | Finanzmarktklassifikation für Neubau, Sanierung, Erwerb/Eigentum | Anschluss an Kapitalzugang und Stranded-Asset-Risiko. |
 | CRREM | Dekarbonisierungspfade und Stranding-Risiken | Frühwarnsystem für Portfolio-Risiken und energetische Fehlanpassung. |
 
-## Anhang B - Bewertungsregeln für gute Vermietung
+## Anhang B – Bewertungsregeln für gute Vermietung
 
 Die folgenden Regeln können als qualitative Prüflogik für ein späteres Bewertungsraster dienen. Sie sind bewusst nicht als endgültige Schwellenwerte formuliert. Schwellenwerte müssen mit Daten, Pilotprojekten und politischer Beratung weiterentwickelt werden.
 
@@ -291,7 +291,7 @@ Kleinvermieter:innen brauchen vereinfachte Verfahren und Schutz vor Überforderu
 
 Institutionelle Portfolios müssen aufgrund ihrer Marktmacht und Skalierung strengere Transparenz- und Portfolio-Wirkungsanforderungen erfüllen.
 
-## Anhang C - Spekulationsschutz ohne Investitionsfeindlichkeit
+## Anhang C – Spekulationsschutz ohne Investitionsfeindlichkeit
 
 Ein häufiger Einwand gegen wohnungspolitische Eingriffe lautet, dass sie Investitionen bremsen könnten. Die Wirkungsökonomie antwortet darauf nicht mit pauschaler Regulierung, sondern mit einer präziseren Unterscheidung: Investitionen in positive Wohnwirkung sollen erleichtert werden; Investitionen in Knappheitsrendite sollen ihren Vorteil verlieren.
 
@@ -307,7 +307,7 @@ Das bedeutet: Wer baut, saniert, bezahlbar vermietet, Energie- und Gesundheitsqu
 | Luxussanierung mit Verdrängung | negativ trotz möglicher Energieverbesserung | Schutzregel, Malus, Sozialfahrplan |
 | Intransparente Eigentümerketten | risikoreich | Transparenzpflicht, Governance-Abzug |
 
-## Anhang D - Stranded-Asset-Frühwarnprofil
+## Anhang D – Stranded-Asset-Frühwarnprofil
 
 Das Stranded-Asset-Frühwarnprofil kombiniert ökologische, soziale, rechtliche und finanzielle Risiken. Ein Gebäude wird nicht erst dann kritisch, wenn es objektiv an Wert verloren hat. Kritisch ist bereits eine wachsende Lücke zwischen aktuellem Zustand und zukünftig erforderlicher Wohnwirkung.
 
@@ -320,6 +320,6 @@ Das Stranded-Asset-Frühwarnprofil kombiniert ökologische, soziale, rechtliche 
 | Governance | unklare Eigentumsstruktur, Datenlücken | Transparenz, Audit, Datenqualitätsplan |
 | Quartier | Entmischung, fehlende Versorgung, Isolation | Quartiersinvestitionen, soziale Infrastruktur, Kommune |
 
-## Anhang E - Buch- und Website-Anker
+## Anhang E – Buch- und Website-Anker
 
 Die Online-Version soll auf bestehende WÖk-Inhalte verweisen: Funktionsweise, Wirkungsfelder, Wohnen & Stadt, Leitbild Mensch-Planet-Demokratie, Wirkung statt Kapital, WÖk-IDs, T-SROI, Wirkungsrat, Wirkungshaushalt, SDG-/SDG+-Referenzrahmen und Glossar. Im Buch sind besonders die Abschnitte zu Kapital und Wohnen, Wohnen als Wirkungsfaktor, Gebäude- und Quartierswirkung, Wohnungsmarkt ohne Spekulationslogik, Kapitalmärkte/Fonds und Wirkungskapital relevant.
