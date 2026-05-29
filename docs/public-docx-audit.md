@@ -1,6 +1,6 @@
 # Public DOCX Audit
 
-Stand: 2026-05-29T09:38:17.655Z
+Stand: 2026-05-29T10:33:42.850Z
 
 ## Policy
 
@@ -10,11 +10,11 @@ Stand: 2026-05-29T09:38:17.655Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 1613
+- Geprüfte HTML-Dateien: 1596
 - Gefundene öffentliche DOCX-/Word-Assets: 0
-- Entfernte öffentliche DOCX-/Word-Links: 53
-- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 93
-- Suchindex DOCX-/Word-Treffer vor Bereinigung: 0
+- Entfernte öffentliche DOCX-/Word-Links: 52
+- HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 90
+- Suchindex DOCX-/Word-Treffer vor Bereinigung: 7
 - Verbleibende HTML-Dateien mit öffentlichen DOCX-Downloadmustern: 0
 
 ## Öffentliche DOCX-/Word-Assets
@@ -25,7 +25,6 @@ Stand: 2026-05-29T09:38:17.655Z
 
 | Datei | entfernte Links | Begriffe vor Bereinigung | Restmuster |
 | --- | ---: | ---: | ---: |
-| `downloads.html` | 0 | 14 | 0 |
 | `erleben/wirkungsrenten-rechner/index.html` | 0 | 2 | 0 |
 | `erleben/wohnwirkungsrechner/index.html` | 0 | 2 | 0 |
 | `erleben/wohnwirkungsrechner/stranded-asset-check/index.html` | 0 | 2 | 0 |
@@ -33,7 +32,6 @@ Stand: 2026-05-29T09:38:17.655Z
 | `werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html` | 0 | 3 | 0 |
 | `werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/index.html` | 0 | 2 | 0 |
 | `werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/index.html` | 0 | 2 | 0 |
-| `werkstatt/dossiers/medien-oeffentlichkeit/index.html` | 0 | 2 | 0 |
 | `werkzeuge/impact-controlling/dossier/index.html` | 3 | 0 | 0 |
 | `werkzeuge/impact-controlling/index.html` | 3 | 0 | 0 |
 | `werkzeuge/impact-controlling/methodenpapiere/index.html` | 3 | 0 | 0 |
@@ -68,14 +66,13 @@ Stand: 2026-05-29T09:38:17.655Z
 | `wirkungsfelder/gesundheit-pflege/tools/wirkungshaushalt-gesundheit/index.html` | 0 | 3 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/creator-hosts/index.html` | 2 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/desinformation-deepfakes/index.html` | 2 | 0 | 0 |
-| `wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/index.html` | 1 | 2 | 0 |
+| `wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/index.html` | 1 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/digitale-oeffentliche-infrastruktur/index.html` | 2 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/index.html` | 2 | 0 | 0 |
-| `wirkungsfelder/medien-oeffentlichkeit/dossier/index.html` | 1 | 2 | 0 |
-| `wirkungsfelder/medien-oeffentlichkeit/dossiers/index.html` | 1 | 2 | 0 |
-| `wirkungsfelder/medien-oeffentlichkeit/index.html` | 0 | 2 | 0 |
+| `wirkungsfelder/medien-oeffentlichkeit/dossier/index.html` | 1 | 0 | 0 |
+| `wirkungsfelder/medien-oeffentlichkeit/dossiers/index.html` | 1 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/index.html` | 2 | 0 | 0 |
-| `wirkungsfelder/medien-oeffentlichkeit/konzept/index.html` | 1 | 2 | 0 |
+| `wirkungsfelder/medien-oeffentlichkeit/konzept/index.html` | 1 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/medienqualitaet-sdgplus/index.html` | 2 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/medienwirkungsindex-mwix/index.html` | 2 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/oeffentlichkeit-als-wirkungsraum/index.html` | 2 | 0 | 0 |
@@ -83,7 +80,7 @@ Stand: 2026-05-29T09:38:17.655Z
 | `wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/index.html` | 2 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/politische-kommunikation-wahlwerbung/index.html` | 2 | 0 | 0 |
 | `wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/index.html` | 2 | 0 | 0 |
-| `wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/index.html` | 1 | 2 | 0 |
+| `wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/index.html` | 0 | 1 | 0 |
 | `wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/index.html` | 0 | 1 | 0 |
 | `wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/index.html` | 0 | 1 | 0 |
 | `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` | 0 | 1 | 0 |

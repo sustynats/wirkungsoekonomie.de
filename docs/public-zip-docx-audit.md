@@ -7,7 +7,7 @@
 
 ## Zusammenfassung
 
-- Geprüfte ZIP-Dateien: 11
+- Geprüfte ZIP-Dateien: 10
 - Bereinigte ZIP-Dateien: 0
 - Entfernte DOCX-/Word-Einträge aus ZIPs: 0
 - Verbleibende ZIPs mit DOCX-/Word-Einträgen: 0
