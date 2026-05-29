@@ -14,6 +14,30 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Friedrich Hayek: The Use of Knowledge in Society
 - John Maynard Keynes: The General Theory
 
+## Liberalismus / Freiheit / Neoklassik
+
+- John Locke: Two Treatises of Government
+- John Stuart Mill: On Liberty
+- Isaiah Berlin: Two Concepts of Liberty
+- Amartya Sen: Development as Freedom
+- Friedrich Hayek: The Road to Serfdom
+- Friedrich Hayek: The Use of Knowledge in Society
+- Robert Nozick: Anarchy, State, and Utopia
+- Milton Friedman: Capitalism and Freedom
+- Alfred Marshall: Principles of Economics
+- William Stanley Jevons: Theory of Political Economy
+- Léon Walras: Elements of Pure Economics
+- Vilfredo Pareto: Manual of Political Economy
+- Paul Samuelson: Foundations of Economic Analysis
+- Kenneth Arrow / Gérard Debreu: general equilibrium
+- Arthur Pigou: The Economics of Welfare
+- Ronald Coase: The Problem of Social Cost
+- George Akerlof: The Market for Lemons
+- Joseph Stiglitz: Information asymmetry
+- Walter Eucken: Grundlagen der Nationalökonomie / Ordnungspolitik
+- Ludwig von Mises: Human Action
+- IMF / OECD / empirische Quellen zu Trickle-down, Ungleichheit und Wachstumswirkungen nur bei konkreter Begriffsverwendung.
+
 ## Feministische Ökonomie / Care
 
 - Marilyn Waring: If Women Counted

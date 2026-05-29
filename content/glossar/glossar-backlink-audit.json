@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-29T19:19:28.466Z",
+  "generatedAt": "2026-05-29T19:38:48.087Z",
   "rule": "Nicht jede Nennung verlinken. Pro Seite maximal die erste fachlich zentrale Nennung, bei langen Artikeln zusätzlich in einem späteren Hauptabschnitt.",
-  "newTerms": 35,
+  "newTerms": 112,
   "backlog": [
     "Empathy Map",
     "User Journey",
@@ -52,6 +52,10 @@
           "matched": "Feminismus"
         },
         {
+          "file": "glossar.html",
+          "matched": "Feminismus"
+        },
+        {
           "file": "referenz/kapitel-001-meine-reise-zur-wirkung/index.html",
           "matched": "Feminismus"
         },
@@ -88,8 +92,13 @@
     {
       "termId": "feministische-wirtschaftspolitik",
       "label": "Feministische Wirtschaftspolitik",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Feministische Wirtschaftspolitik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "care-oekonomie",
@@ -223,6 +232,10 @@
       "label": "Unsichtbare Arbeit",
       "suggestedPages": [
         {
+          "file": "glossar.html",
+          "matched": "Unsichtbare Arbeit"
+        },
+        {
           "file": "referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html",
           "matched": "Unsichtbare Arbeit"
         },
@@ -236,8 +249,13 @@
     {
       "termId": "mental-load",
       "label": "Mental Load",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Mental Load"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "emotionale-arbeit",
@@ -245,6 +263,10 @@
       "suggestedPages": [
         {
           "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Emotionale Arbeit"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Emotionale Arbeit"
         }
       ],
@@ -260,6 +282,10 @@
         },
         {
           "file": "dokumente/woek-master-items-final-v1-2/index.html",
+          "matched": "Gender Pay Gap"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Gender Pay Gap"
         },
         {
@@ -284,13 +310,22 @@
     {
       "termId": "gender-care-gap",
       "label": "Gender Care Gap",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gender Care Gap"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "gender-pension-gap",
       "label": "Gender Pension Gap",
       "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gender Pension Gap"
+        },
         {
           "file": "wirkungsfelder/rente-soziale-sicherung/care-bildung-ehrenamt/index.html",
           "matched": "Gender Pension Gap"
@@ -309,8 +344,13 @@
     {
       "termId": "gender-data-gap",
       "label": "Gender Data Gap",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gender Data Gap"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "glaeserne-decke",
@@ -318,6 +358,10 @@
       "suggestedPages": [
         {
           "file": "blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html",
+          "matched": "Gläserne Decke"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Gläserne Decke"
         }
       ],
@@ -406,6 +450,10 @@
           "matched": "Gleichberechtigung"
         },
         {
+          "file": "glossar.html",
+          "matched": "Gleichberechtigung"
+        },
+        {
           "file": "referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/index.html",
           "matched": "Gleichberechtigung"
         },
@@ -441,6 +489,10 @@
           "matched": "Gleichwertigkeit"
         },
         {
+          "file": "glossar.html",
+          "matched": "Gleichwertigkeit"
+        },
+        {
           "file": "referenz/kapitel-072-kultur-und-teilhabe/index.html",
           "matched": "Gleichwertigkeit"
         },
@@ -466,13 +518,22 @@
     {
       "termId": "gender-mainstreaming",
       "label": "Gender Mainstreaming",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gender Mainstreaming"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "gender-budgeting",
       "label": "Gender Budgeting",
       "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gender Budgeting"
+        },
         {
           "file": "verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/index.html",
           "matched": "Gender Budgeting"
@@ -491,13 +552,22 @@
     {
       "termId": "machtdezentralisierung",
       "label": "Machtdezentralisierung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Machtdezentralisierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "kooperationslogik",
       "label": "Kooperationslogik",
       "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Kooperationslogik"
+        },
         {
           "file": "referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/index.html",
           "matched": "Kooperationslogik"
@@ -523,6 +593,10 @@
         },
         {
           "file": "downloads/rang-22-zukunftsbilder-wirkungswohlstand/index.html",
+          "matched": "Dominanzlogik"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Dominanzlogik"
         },
         {
@@ -559,10 +633,6 @@
         },
         {
           "file": "portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/index.html",
-          "matched": "Dominanzlogik"
-        },
-        {
-          "file": "portale/internationale-ordnung-globalisierung-geopolitik/globale-wirkungsgovernance/index.html",
           "matched": "Dominanzlogik"
         }
       ],
@@ -606,19 +676,33 @@
     {
       "termId": "gleichstellungsfolgenabschaetzung",
       "label": "Gleichstellungsfolgenabschätzung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gleichstellungsfolgenabschätzung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "koerperliche-selbstbestimmung",
       "label": "Körperliche Selbstbestimmung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Körperliche Selbstbestimmung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "reproduktive-rechte",
       "label": "Reproduktive Rechte",
       "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Reproduktive Rechte"
+        },
         {
           "file": "verstehen/sdgs-sdgplus/unterziele/index.html",
           "matched": "Reproduktive Rechte"
@@ -633,38 +717,1410 @@
     {
       "termId": "glaeserne-klippe",
       "label": "Gläserne Klippe",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gläserne Klippe"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "patriarchale-dividende",
       "label": "Patriarchale Dividende",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Patriarchale Dividende"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "reproduktive-gerechtigkeit",
       "label": "Reproduktive Gerechtigkeit",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Reproduktive Gerechtigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "feminisierung-von-armut",
       "label": "Feminisierung von Armut",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Feminisierung von Armut"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "feministische-transformation",
       "label": "Feministische Transformation",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Feministische Transformation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "oekofeminismus",
       "label": "Ökofeminismus",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Ecofeminism"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "liberalismus",
+      "label": "Liberalismus",
       "suggestedPages": [],
       "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "politischer-liberalismus",
+      "label": "Politischer Liberalismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "wirtschaftsliberalismus",
+      "label": "Wirtschaftsliberalismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "klassischer-liberalismus",
+      "label": "Klassischer Liberalismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "sozialliberalismus",
+      "label": "Sozialliberalismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "negative-freiheit",
+      "label": "Negative Freiheit",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "positive-freiheit",
+      "label": "Positive Freiheit",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "reale-freiheit",
+      "label": "Reale Freiheit",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "quellen/grundlagen-denker.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "quellen/vergleichsmodelle.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "referenz/kapitel-017-wirkungsoekonomie-im-vergleich/index.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "referenz/kapitel-103-technokratie-ueberwachung-und-die-angst-vor-steuerung/index.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/index.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Reale Freiheit"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Reale Freiheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "wirkungsfreiheit",
+      "label": "Wirkungsfreiheit",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "wirklichkeitsbindung",
+      "label": "Wirklichkeitsbindung",
+      "suggestedPages": [
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/forschungsbewertung-wirkungsindikatoren/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/forschungsdaten-replikation-qualitaet/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/gesamtdossier/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/konzeptpapier/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/mission-oriented-research-wirkungsinnovation/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/open-science-wissensinfrastruktur/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/politische-anschlussfaehigkeit/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/quellen-glossar/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/rechtsprechung-sachverstaendige-wirkungsrecht/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/science-for-policy-statistik/index.html",
+          "matched": "Wirklichkeitsbindung"
+        },
+        {
+          "file": "portale/wissen-wissenschaft-forschung-wirkungsinnovation/sdg-sdgplus/index.html",
+          "matched": "Wirklichkeitsbindung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "selbstverantwortung",
+      "label": "Selbstverantwortung",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "vertragsfreiheit",
+      "label": "Vertragsfreiheit",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Vertragsfreiheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "eigentumsrechte",
+      "label": "Eigentumsrechte",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "referenz/kapitel-049-ehrliche-preise/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/boden-leerstand-spekulation/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/eigentum-vermietung-wirkungspflicht/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/finanzierung-foerderlogik-wirkungsfonds/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/gesundes-barrierefreies-resilientes-wohnen/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/investoren-vermieter/index.html",
+          "matched": "Eigentumsrechte"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/detailkonzepte/kommunale-wohnwirkungspolitik/index.html",
+          "matched": "Eigentumsrechte"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "eigentumsverantwortung",
+      "label": "Eigentumsverantwortung",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Eigentumsverantwortung"
+        },
+        {
+          "file": "referenz/kapitel-070-wohnen/index.html",
+          "matched": "Eigentumsverantwortung"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Eigentumsverantwortung"
+        },
+        {
+          "file": "wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html",
+          "matched": "Eigentumsverantwortung"
+        },
+        {
+          "file": "wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation/index.html",
+          "matched": "Eigentumsverantwortung"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/investoren-vermieter/index.html",
+          "matched": "Eigentumsverantwortung"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/konzept/index.html",
+          "matched": "Eigentumsverantwortung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "libertarismus",
+      "label": "Libertarismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "minarchismus",
+      "label": "Minarchismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "nachtwaechterstaat",
+      "label": "Nachtwächterstaat",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "anarchokapitalismus",
+      "label": "Anarchokapitalismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "non-aggression-principle",
+      "label": "Non-Aggression Principle",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "self-ownership",
+      "label": "Self-Ownership",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "steuerkritik",
+      "label": "Steuerkritik",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "neoklassik",
+      "label": "Neoklassik",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Neoklassik"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Neoklassik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "homo-oeconomicus",
+      "label": "Homo oeconomicus",
+      "suggestedPages": [
+        {
+          "file": "dokumente/nats-woek-allgemein/index.html",
+          "matched": "Homo oeconomicus"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Homo oeconomicus"
+        },
+        {
+          "file": "dokumente/wp-einkommen/index.html",
+          "matched": "Homo oeconomicus"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Homo oeconomicus"
+        },
+        {
+          "file": "referenz/kapitel-024-der-mensch-im-system/index.html",
+          "matched": "Homo oeconomicus"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Homo oeconomicus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "nutzenmaximierung",
+      "label": "Nutzenmaximierung",
+      "suggestedPages": [
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Nutzenmaximierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "praeferenzen",
+      "label": "Präferenzen",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
+          "matched": "Präferenzen"
+        },
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Präferenzen"
+        },
+        {
+          "file": "referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/index.html",
+          "matched": "Präferenzen"
+        },
+        {
+          "file": "referenz/kapitel-024-der-mensch-im-system/index.html",
+          "matched": "Präferenzen"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Präferenzen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "knappheit",
+      "label": "Knappheit",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/energiepolitik-2026/index.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/index.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-systemarchitektur/index.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.html",
+          "matched": "Knappheit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "matched": "Knappheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "grenznutzen",
+      "label": "Grenznutzen",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "grenzkosten",
+      "label": "Grenzkosten",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "matched": "Grenzkosten"
+        },
+        {
+          "file": "blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "matched": "Grenzkosten"
+        },
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Grenzkosten"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Grenzkosten"
+        },
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Grenzkosten"
+        },
+        {
+          "file": "referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/index.html",
+          "matched": "Grenzkosten"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Grenzkosten"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "opportunitaetskosten",
+      "label": "Opportunitätskosten",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "matched": "Opportunitätskosten"
+        },
+        {
+          "file": "blog/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.html",
+          "matched": "Opportunitätskosten"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Opportunitätskosten"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "marktgleichgewicht",
+      "label": "Marktgleichgewicht",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html",
+          "matched": "Marktgleichgewicht"
+        },
+        {
+          "file": "referenz/kapitel-097-der-umsetzungspfad/index.html",
+          "matched": "Marktgleichgewicht"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Marktgleichgewicht"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "allgemeines-gleichgewicht",
+      "label": "Allgemeines Gleichgewicht",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "pareto-effizienz",
+      "label": "Pareto-Effizienz",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "wohlfahrtsoekonomie",
+      "label": "Wohlfahrtsökonomie",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-088-disziplinen-im-wirkungswechsel/index.html",
+          "matched": "Wohlfahrtsökonomie"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Wohlfahrtsökonomie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Wohlfahrtsökonomie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "effizienz",
+      "label": "Effizienz",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/beispiel-zange-sdg-esrs-fussnoten/index.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/index.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/index.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-systemarchitektur/index.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/index.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "blog/leistung-ohne-wirkung.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "blog/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "blog/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "blog/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.html",
+          "matched": "Effizienz"
+        },
+        {
+          "file": "blog/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.html",
+          "matched": "Effizienz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "allokation",
+      "label": "Allokation",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "blog/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "dokumente/technische-leitlinien-wustg-v2/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "fuer/investoren.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "referenz/kapitel-030-von-wirkung-zu-messung/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "referenz/kapitel-050-produktscorecards/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Allokation"
+        },
+        {
+          "file": "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/index.html",
+          "matched": "Allokation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "ressourcenallokation",
+      "label": "Ressourcenallokation",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Ressourcenallokation"
+        },
+        {
+          "file": "referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html",
+          "matched": "Ressourcenallokation"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Ressourcenallokation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "konsumentensouveraenitaet",
+      "label": "Konsumentensouveränität",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "vollstaendige-information",
+      "label": "Vollständige Information",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "rationalitaet",
+      "label": "Rationalität",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "dokumente/wp-produkte/index.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Rationalität"
+        },
+        {
+          "file": "referenz/kapitel-002-die-massstabskrise/index.html",
+          "matched": "Rationalität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "begrenzte-rationalitaet",
+      "label": "Begrenzte Rationalität",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-024-der-mensch-im-system/index.html",
+          "matched": "Begrenzte Rationalität"
+        },
+        {
+          "file": "referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/index.html",
+          "matched": "Begrenzte Rationalität"
+        },
+        {
+          "file": "referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/index.html",
+          "matched": "Begrenzte Rationalität"
+        },
+        {
+          "file": "referenz/kapitel-088-disziplinen-im-wirkungswechsel/index.html",
+          "matched": "Begrenzte Rationalität"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Begrenzte Rationalität"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Begrenzte Rationalität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "modellannahme",
+      "label": "Modellannahme",
+      "suggestedPages": [
+        {
+          "file": "erleben/automatisierungs-wirkungseinkommensrechner/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "erleben/wohnwirkungsrechner/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "referenz/kapitel-041-verwaltung-rechtsschutz-und-koerperschaftslogik/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "referenz/kapitel-053-markttransformation/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "wirkungsfelder/arbeit-einkommen/gesamtdossier/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index.html",
+          "matched": "Modellannahme"
+        },
+        {
+          "file": "wirkungsfelder/wohnen-stadt/dossiers/investoren-vermieter/index.html",
+          "matched": "Modellannahme"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "modellblindheit",
+      "label": "Modellblindheit",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "marktversagen",
+      "label": "Marktversagen",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/leitbild-deutschland-2030-woek/index.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "matched": "Marktversagen"
+        },
+        {
+          "file": "blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "matched": "Marktversagen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "externalitaet",
+      "label": "Externalität",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.html",
+          "matched": "Externalität"
+        },
+        {
+          "file": "blog/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.html",
+          "matched": "Externalität"
+        },
+        {
+          "file": "blog/schadenoekonomie.html",
+          "matched": "Externalität"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Externalität"
+        },
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Externalität"
+        },
+        {
+          "file": "referenz/kapitel-049-ehrliche-preise/index.html",
+          "matched": "Externalität"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Externalität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "negative-externalitaet",
+      "label": "Negative Externalität",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "positive-externalitaet",
+      "label": "Positive Externalität",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "oeffentliche-gueter",
+      "label": "Öffentliche Güter",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "trittbrettfahrerproblem",
+      "label": "Trittbrettfahrerproblem",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "allmendeproblem",
+      "label": "Allmendeproblem",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "informationsasymmetrie",
+      "label": "Informationsasymmetrie",
+      "suggestedPages": [
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Informationsasymmetrie"
+        },
+        {
+          "file": "wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/index.html",
+          "matched": "Informationsasymmetrie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "moral-hazard",
+      "label": "Moral Hazard",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "adverse-selection",
+      "label": "Adverse Selection",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "principal-agent-problem",
+      "label": "Principal-Agent-Problem",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "transaktionskosten",
+      "label": "Transaktionskosten",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "blog/schadenoekonomie.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "referenz/kapitel-049-ehrliche-preise/index.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "referenz/kapitel-054-wirkungs-bip-und-neue-wohlstandsmessung/index.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/index.html",
+          "matched": "Transaktionskosten"
+        },
+        {
+          "file": "verstehen/sdgs-sdgplus/dossiers/sdg-als-erweiterung-der-wirkungsoekonomie/index.html",
+          "matched": "Transaktionskosten"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "coase-theorem",
+      "label": "Coase-Theorem",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "pigou-steuer",
+      "label": "Pigou-Steuer",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html",
+          "matched": "Pigou-Steuer"
+        },
+        {
+          "file": "blog/linkedin-artikel.html",
+          "matched": "Pigou-Steuer"
+        },
+        {
+          "file": "blog.html",
+          "matched": "Pigou-Steuer"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "staatsversagen",
+      "label": "Staatsversagen",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Staatsversagen"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Staatsversagen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "regulierungsversagen",
+      "label": "Regulierungsversagen",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "regulatory-capture",
+      "label": "Regulatory Capture",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-063-lobbyismus-und-machtkonzentration/index.html",
+          "matched": "Regulatory Capture"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Regulatory Capture"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Regulatory Capture"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "rent-seeking",
+      "label": "Rent Seeking",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "monopol",
+      "label": "Monopol",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html",
+          "matched": "Monopol"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Monopol"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "oligopol",
+      "label": "Oligopol",
+      "suggestedPages": [
+        {
+          "file": "dokumente/nats-woek-allgemein/index.html",
+          "matched": "Oligopol"
+        },
+        {
+          "file": "dokumente/woek-manifest/index.html",
+          "matched": "Oligopol"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "marktmacht",
+      "label": "Marktmacht",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-002-die-massstabskrise/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-015-leistung-neu-definieren/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-022-wirkungslenkung/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-033-reverse-merit-order/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-049-ehrliche-preise/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-060-verteilung-eigentum-und-wohlstand/index.html",
+          "matched": "Marktmacht"
+        },
+        {
+          "file": "referenz/kapitel-069-pflege/index.html",
+          "matched": "Marktmacht"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "netzwerkeffekt",
+      "label": "Netzwerkeffekt",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "natuerliches-monopol",
+      "label": "Natürliches Monopol",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "neoliberalismus",
+      "label": "Neoliberalismus",
+      "suggestedPages": [
+        {
+          "file": "dokumente/nats-woek-allgemein/index.html",
+          "matched": "Neoliberalismus"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Neoliberalismus"
+        },
+        {
+          "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+          "matched": "Neoliberalismus"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Neoliberalismus"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Neoliberalismus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "ordoliberalismus",
+      "label": "Ordoliberalismus",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Ordoliberalismus"
+        },
+        {
+          "file": "ordnung/soziale-marktwirtschaft-weiterdenken.html",
+          "matched": "Ordoliberalismus"
+        },
+        {
+          "file": "referenz/kapitel-017-wirkungsoekonomie-im-vergleich/index.html",
+          "matched": "Ordoliberalismus"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Ordoliberalismus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "oesterreichische-schule",
+      "label": "Österreichische Schule",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "chicago-school",
+      "label": "Chicago School",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "monetarismus",
+      "label": "Monetarismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "supply-side-economics",
+      "label": "Supply-side Economics",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "trickle-down-oekonomie",
+      "label": "Trickle-down-Ökonomie",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Trickle-down-Ökonomie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "laffer-kurve",
+      "label": "Laffer-Kurve",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "deregulierung",
+      "label": "Deregulierung",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.html",
+          "matched": "Deregulierung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Deregulierung"
+        },
+        {
+          "file": "referenz/kapitel-007-buerokratie-als-reparaturmaschine/index.html",
+          "matched": "Deregulierung"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Deregulierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "privatisierung",
+      "label": "Privatisierung",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Privatisierung"
+        },
+        {
+          "file": "wirkungsfelder/finanzsystem-kapital/buergerinnenfonds-wirkungsrente-kapitalteilhabe/index.html",
+          "matched": "Privatisierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "austeritaet",
+      "label": "Austerität",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "schuldenbremse",
+      "label": "Schuldenbremse",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "matched": "Schuldenbremse"
+        },
+        {
+          "file": "dokumente/faz-beitrag/index.html",
+          "matched": "Schuldenbremse"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Schuldenbremse"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Schuldenbremse"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     }
   ]
 }

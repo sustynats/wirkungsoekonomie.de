@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T19:25:32.129Z
+Stand: 2026-05-29T19:40:24.939Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 860 |
+| Begriffe im klassischen Glossar | 932 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1857 |
+| Alias-Einträge | 1935 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -33,6 +33,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | AC-Laden | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Ad-hoc-Laden | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Adam Smith | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
+| Adverse Selection | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Affekt | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Affektheuristik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Agenda 2030 | Grundbegriff | ja | - | ja | ja | ok |
@@ -40,8 +41,12 @@ Stand: 2026-05-29T19:25:32.129Z
 | Akkumulator / Akku | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Alan Watts / Daoismus | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Alarm-Frame | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Allgemeines Gleichgewicht | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Allmendeproblem | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Allokation | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Amartya Sen | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Anaerobe Vergärung | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
+| Anarchokapitalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Ankereffekt | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Anlagenpass | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Anpassungskapazität | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
@@ -55,6 +60,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Aufmerksamkeit | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Aufmerksamkeitsökonomie | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Äußere Loops | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
+| Austerität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Autopoiesis | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Backend Ladeinfrastruktur | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Backup-Kapazität | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -75,6 +81,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Baukostenzuschuss | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Bedeutung als Gebrauch | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
 | Bedrohungsverarbeitung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
+| Begrenzte Rationalität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Belohnungslernen | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Benchmark | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Beobachterabhängigkeit | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
@@ -108,12 +115,14 @@ Stand: 2026-05-29T19:25:32.129Z
 | CBAM / Carbon Border Adjustment Mechanism | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | CCS | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | CHAdeMO | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Chicago School | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Circular Economy Butterfly Model | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Circularity Indicator / Zirkularitätsindikator | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Clean Industrial Deal | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Climate Neutral Claim | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | CO2-Preis | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | CO2e / CO2-Äquivalent | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Coase-Theorem | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Commons | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Commons / Gemeingüter | Grundbegriff | ja | - | ja | ja | ok |
 | Conflict Minerals Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
@@ -132,6 +141,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Demand Response | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Demokratischer Sozialismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Depotladen | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Deregulierung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Design for Disassembly | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Design Thinking | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Destruktive Vertrauensbindung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -153,9 +163,11 @@ Stand: 2026-05-29T19:25:32.129Z
 | EEG | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Effektivität | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Effektivität vs. Effizienz | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
-| Effizienz | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Effizienz | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | EFRAG | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Eichrecht Ladeinfrastruktur | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Eigentumsrechte | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Eigentumsverantwortung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Eigenversorgung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Einspeisemanagement | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Einspeisevergütung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -208,6 +220,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Evolutorischer Unternehmer | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Exposition | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Externalisierung | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
+| Externalität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Extraktiver Kapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Fakten | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
 | Faktenargumentation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -276,6 +289,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Gregory Bateson | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Grenzkosten | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Grenzkraftwerk | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Grenznutzen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | GRI | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Grundlast | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Grüner Kapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
@@ -310,6 +324,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Hochspannung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Höchstspannung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Hochwasserrisiko | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Homo oeconomicus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Host-Wirkungsscore | Messbegriff | ja | - | ja | ja | ok |
 | Hotspot-Analyse | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | HPC-Charger | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -331,6 +346,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | In-Group / Out-Group-Dynamik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Industrielle Dekonstruktion | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Inertia / Trägheit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Informationsasymmetrie | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Informationsüberlastung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Innere Loops | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Innovation | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
@@ -364,6 +380,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Kernenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kipppunkt / Schwellenwert | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kipppunkt / Systemschwelle | Grundbegriff | ja | - | ja | ja | ok |
+| Klassischer Liberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Klimaanpassung / Adaptation | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Klimafolgeschäden / Loss and Damage | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Klimagerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
@@ -371,6 +388,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Klimarisiko | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Klimaschutz / Mitigation | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Klimawandel | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Knappheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Kognitive Belastung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kognitive Dissonanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kohärenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -383,6 +401,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Kondratieff-Zyklus | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Konservative Annahme | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Konstruktives Narrativ | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Konsumentensouveränität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Konzessionsabgabe | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kooperationslogik | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Körperliche Selbstbestimmung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
@@ -410,6 +429,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Ladepunkt | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Ladepunktbetreiber / CPO | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Ladesäule | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Laffer-Kurve | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Langzeitspeicher | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Lastgang | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Lastmanagement | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -425,6 +445,8 @@ Stand: 2026-05-29T19:25:32.129Z
 | Lernender Unternehmer | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | LFP-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Liability Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Liberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Libertarismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Lieferkettendaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Limited Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Lineare Wirtschaft | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
@@ -437,7 +459,10 @@ Stand: 2026-05-29T19:25:32.129Z
 | Machtkonzentration | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Maja Göpel | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Marktgleichgewicht | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Marktmacht | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Marktprämie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Marktversagen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Marktwert | Werte, Normativität und Bewertung | ja | - | ja | ja | ok |
 | Marktwirtschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Martha Nussbaum | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
@@ -456,27 +481,38 @@ Stand: 2026-05-29T19:25:32.129Z
 | Meta-kognitive Intervention | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Metakommunikation | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
 | Mieterstrom | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Minarchismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Mindestschutz / Minimum Safeguards | Sustainable Finance | ja | ja | ja | ja | ok |
 | Minutenreserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Mittelspannung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Mittelspannungsschaltanlage | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Mobilitätsarmut | Grundbegriff | ja | - | ja | ja | ok |
+| Modellannahme | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Modellblindheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Modularität | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Momentanreserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Monetarismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Monopol | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Moral Hazard | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Moral Licensing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Motiviertes Denken | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | NACE | Sustainable Finance | ja | ja | ja | ja | ok |
 | Nachhaltigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Nachhaltigkeitslabel | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Nachtwächterstaat | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Narrativ | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Natrium-Ionen-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Naturbasierte Lösungen | Grundbegriff | ja | - | ja | ja | ok |
 | Nature Positive | Grundbegriff | ja | - | ja | ja | ok |
 | Nature-related Risks | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Natürliches Monopol | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | NCA-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Negative Externalität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Negative Freiheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | negative Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Negativitätsbias | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
-| Neoliberalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Neoklassik | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Neoliberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Net Zero | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Netto-Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | NWI | Messbegriff | ja | - | ja | ja | ok |
@@ -494,6 +530,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Netzspeicher | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Netzverlust | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzverträglichkeitsprüfung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Netzwerkeffekt | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Neuigkeitsbias | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Neuroplastizität | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Neuropsychologische Wirkmechanismen | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -508,31 +545,38 @@ Stand: 2026-05-29T19:25:32.129Z
 | Niklas Luhmann | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Nikolai Kondratieff | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | NMC-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Non-Aggression Principle | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Normalisierung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Normalladen | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Normativer Wert | Werte, Normativität und Bewertung | ja | - | ja | ja | ok |
 | Normatives Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Null-Abfall / Zero Waste | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Nutzenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Nutzenmaximierung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Nutzungsdauerverlängerung | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Oberschwingungen | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | OCPP | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | OECD-Leitsätze | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | OEF / Organisation Environmental Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Öffentliche Güter | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Offsetting / Kompensation | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Offshore-Netzumlage | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Offshore-Windenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Ökofeminismus | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Ökosystemleistungen / Ökosystemfunktionen | Grundbegriff | ja | - | ja | ja | ok |
+| Oligopol | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Ölkraftwerk | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | On-Board-Charger | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | One Health | Grundbegriff | ja | - | ja | ja | ok |
 | Onshore-Windenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Operatives Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
-| Ordoliberalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Opportunitätskosten | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Ordoliberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Organisation Environmental Footprint / OEF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Orientierung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Österreichische Schule | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | PAI / Principal Adverse Impacts | Sustainable Finance | ja | ja | ja | ja | ok |
+| Pareto-Effizienz | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Patriarchale Dividende | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Patriarchat | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Paul Watzlawick | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
@@ -546,21 +590,28 @@ Stand: 2026-05-29T19:25:32.129Z
 | Photoelektrischer Effekt | Quantenphysik, Quantenmaterialien und Zukunftstechnologien | ja | - | ja | ja | ok |
 | Photovoltaik | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Physical Climate Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Pigou-Steuer | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Planetare Grenzen | Grundbegriff | ja | - | ja | ja | ok |
 | Planetary Health | Grundbegriff | ja | - | ja | ja | ok |
 | Planwirtschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Plattformkapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Plug & Charge | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Politischer Liberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Positive Externalität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Positive Freiheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | positive Netto-Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | positive Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Power Purchase Agreement / PPA | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Power Quality / Spannungsqualität | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Power-to-X | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Prädiktive Verarbeitung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
+| Präferenzen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Prävention | Grundbegriff | ja | - | ja | ja | ok |
 | Primärenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Primärregelung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Priming | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Principal-Agent-Problem | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Privatisierung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Privatwirtschaftliche Planwirtschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Product Carbon Footprint / PCF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Product Environmental Footprint / PEF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
@@ -583,8 +634,10 @@ Stand: 2026-05-29T19:25:32.129Z
 | Quartiersenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Quartierswirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Quellenklarheit | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Rationalität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Raubtierkapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Reaktanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Reale Freiheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Reasonable Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Rebound-Effekt | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Recht auf Reparatur | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
@@ -601,10 +654,13 @@ Stand: 2026-05-29T19:25:32.129Z
 | Regelenergiemarkt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Regeneration / regenerative Wirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Regenerative Landwirtschaft | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
+| Regulatory Capture | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Regulierungsversagen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Rekombination / neue Kombination | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Rekursion | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Remanufacturing / Wiederaufbereitung | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Renaturierung | Grundbegriff | ja | - | ja | ja | ok |
+| Rent Seeking | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Reparatur | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Reparierbarkeit | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
@@ -621,6 +677,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Resonanzraum | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Resonanzrisiko | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Responsible Marketing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Ressourcenallokation | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Reverse Logistics | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Reverse Merit Order | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Rezyklatanteil | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
@@ -644,6 +701,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Scheinwahrheit | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
 | Schnellladen | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Schöpferische Zerstörung | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Schuldenbremse | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Schutztechnik | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Schwarzstartfähigkeit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Schwellenwert | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
@@ -663,7 +721,9 @@ Stand: 2026-05-29T19:25:32.129Z
 | Sekundärrohstoff | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Selbstorganisation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Selbstreferenz | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
+| Selbstverantwortung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Selbstwirksamkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Self-Ownership | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Sensemaking | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Sensibilisierung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | SFDR | Sustainable Finance | ja | ja | ja | ja | ok |
@@ -680,6 +740,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Soziale Marktwirtschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Soziale Reproduktion | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Sozialismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Sozialliberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Spannungshaltung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Speicher | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Spekulationslogik | Grundbegriff | ja | - | ja | ja | ok |
@@ -688,6 +749,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | St. Galler Management-Modell | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Staatskapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Staatssozialismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Staatsversagen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Stadtwerke | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Stafford Beer | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Stakeholder-Kapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
@@ -696,6 +758,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | State of Health / SOH | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Stationärer Batteriespeicher | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Status-quo-Bias | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Steuerkritik | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Steuerungsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Stranded Assets | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Strategische Reserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -713,6 +776,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Strukturelles Driften | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Suffizienz | Grundbegriff | ja | - | ja | ja | ok |
 | Superkondensator | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Supply-side Economics | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Supraleitung | Quantenphysik, Quantenmaterialien und Zukunftstechnologien | ja | - | ja | ja | ok |
 | Sustainable Finance | Sustainable Finance | ja | ja | ja | ja | ok |
 | Systemdienstleistungen | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -742,6 +806,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | THG-Emissions-Scopes | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | TNFD | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Trafostation | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Transaktionskosten | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Transformationswelle | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Transformationswirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Transformator / Trafo | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -749,7 +814,8 @@ Stand: 2026-05-29T19:25:32.129Z
 | Transition Plan | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Transition Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Treibhausgasemissionen | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
-| Trickle-down-Ökonomie | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Trickle-down-Ökonomie | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Trittbrettfahrerproblem | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Triviale Maschine | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Typ-2-Stecker | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Übergabestation | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -781,11 +847,13 @@ Stand: 2026-05-29T19:25:32.129Z
 | Versorgungssicherheit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Verstärkungslernen | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Verteilnetz | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Vertragsfreiheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Vertrauen | Demokratiebegriff | ja | - | ja | ja | ok |
 | Vertrauensverschiebung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Vertrautheitseffekt | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Viabilität | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Viable System Model | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
+| Vollständige Information | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | VSME | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Vulnerabilität | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Wahrhaftigkeit | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
@@ -819,6 +887,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Windenergieanlage Lebenszyklus | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Windrad-Recycling | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Wirkleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
+| Wirklichkeitsbindung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Wirklichkeitskonstruktion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Wirkmechanismus | Grundbegriff | ja | - | ja | ja | ok |
 | Wirksames Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
@@ -834,6 +903,7 @@ Stand: 2026-05-29T19:25:32.129Z
 | Wirkungsempfänger | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungsethik | Ethik, Würde und Verantwortung | ja | - | ja | ja | ok |
 | Wirkungsfonds | Messbegriff | ja | - | ja | ja | ok |
+| Wirkungsfreiheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Wirkungsgrad | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Wirkungsgrenze | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Wirkungshaushalt | Messbegriff | ja | - | ja | ja | ok |
@@ -867,7 +937,9 @@ Stand: 2026-05-29T19:25:32.129Z
 | Wirkungswahrheit | Schutzbegriff | ja | - | ja | ja | ok |
 | Wirkungswert | Werte, Normativität und Bewertung | ja | - | ja | ja | ok |
 | Wirkungswertschöpfung | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
+| Wirtschaftsliberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | WIX-VI | Grundbegriff | ja | - | ja | ja | ok |
+| Wohlfahrtsökonomie | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Wohlfahrtsstaat | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Wohnwirkung | Grundbegriff | ja | - | ja | ja | ok |
 | WÖk-ID | WÖk-Übersetzung | ja | ja | ja | ja | ok |

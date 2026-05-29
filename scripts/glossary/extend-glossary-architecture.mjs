@@ -50,6 +50,7 @@ const categoryTags = {
   "Transformation, Innovation und wirtschaftliche Entwicklung": ["Transformation", "Innovation", "Wohlstand", "Entwicklung", "Wirkungsinnovation"],
   "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken": ["Wirtschaftssystem", "Kapital", "Verteilung", "Macht", "Wirkungsprüfung"],
   "Feminismus, feministische Ökonomie und Care-Wirkung": ["Feminismus", "Care", "Gleichwertigkeit", "Teilhabe", "Gender Data", "Wirkungswert"],
+  "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe": ["Liberalismus", "Freiheit", "Libertarismus", "Neoklassik", "Markt", "Externalität", "Wirklichkeitsbindung"],
   "Kreislaufwirtschaft, Circular Design und Materialkreisläufe": ["Kreislaufwirtschaft", "Circular Design", "Produktlebenszyklus", "Materialkreisläufe", "Planet"],
   "Neuropsychologische Wirkmechanismen": ["Neuropsychologie", "Wahrnehmung", "Aufmerksamkeit", "Emotion", "Resonanz"],
   "Quantenphysik, Quantenmaterialien und Zukunftstechnologien": ["Quantenphysik", "Zukunftstechnologie", "Materialien", "Photovoltaik", "Innovation"],
@@ -192,6 +193,28 @@ const sourceGroups = {
     ["secondary", "Investopedia: Trickle-Down Economics", "https://www.investopedia.com/terms/t/trickledowntheory.asp"],
     ["institutional", "IMF: Inequality and Growth", "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf"],
     ["academic", "Hope / Limberg: The economic consequences of major tax cuts for the rich", "https://doi.org/10.1093/ser/mwab061"],
+  ],
+  liberalMarket: [
+    ["primary", "John Locke: Two Treatises of Government", ""],
+    ["primary", "John Stuart Mill: On Liberty", ""],
+    ["primary", "Isaiah Berlin: Two Concepts of Liberty", ""],
+    ["primary", "Amartya Sen: Development as Freedom", ""],
+    ["primary", "Friedrich Hayek: The Road to Serfdom", ""],
+    ["primary", "Friedrich Hayek: The Use of Knowledge in Society", ""],
+    ["primary", "Robert Nozick: Anarchy, State, and Utopia", ""],
+    ["primary", "Milton Friedman: Capitalism and Freedom", ""],
+    ["primary", "Alfred Marshall: Principles of Economics", ""],
+    ["primary", "William Stanley Jevons: Theory of Political Economy", ""],
+    ["primary", "Léon Walras: Elements of Pure Economics", ""],
+    ["primary", "Vilfredo Pareto: Manual of Political Economy", ""],
+    ["primary", "Paul Samuelson: Foundations of Economic Analysis", ""],
+    ["academic", "Kenneth Arrow / Gérard Debreu: general equilibrium", ""],
+    ["primary", "Arthur Pigou: The Economics of Welfare", ""],
+    ["primary", "Ronald Coase: The Problem of Social Cost", ""],
+    ["academic", "George Akerlof: The Market for Lemons", ""],
+    ["academic", "Joseph Stiglitz: Information asymmetry", ""],
+    ["primary", "Walter Eucken: Grundlagen der Nationalökonomie / Ordnungspolitik", ""],
+    ["primary", "Ludwig von Mises: Human Action", ""],
   ],
   circular: [
     ["institutional", "Ellen MacArthur Foundation: Circular Economy Principles", "https://www.ellenmacarthurfoundation.org/circular-economy-principles"],
@@ -659,6 +682,7 @@ const CAT_QUANTUM = "Quantenphysik, Quantenmaterialien und Zukunftstechnologien"
 const CAT_ENERGY = "Energie, Strommarkt und Systemkosten";
 const CAT_BATTERY_INFRA = "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher";
 const CAT_FEMINISM_CARE = "Feminismus, feministische Ökonomie und Care-Wirkung";
+const CAT_LIBERAL_MARKET = "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe";
 
 const econBase = {
   category: CAT_ECON_SYSTEMS,
@@ -793,6 +817,33 @@ const feminismCareBase = {
   sourceField: ["Ökonomie", "Soziologie", "Philosophie", "Politische Theorie", "WÖk-eigener Begriff"],
   sourceGroup: "feministEconomics",
 };
+const liberalMarketBase = {
+  category: CAT_LIBERAL_MARKET,
+  concept: "connection",
+  theme: [
+    "Liberalismus und Freiheit",
+    "Libertarismus und Eigentum",
+    "Neoklassik und Marktmodell",
+    "Marktversagen und Staatsversagen",
+    "Wettbewerb und Preise",
+    "Regulierung und Deregulierung",
+    "Eigentum und Verantwortung",
+    "Wirtschaftspolitische Ideologien",
+    "Ökonomische Grundbegriffe",
+    "Kapital, Markt und Macht",
+    "Freiheit, Staat und Wirkung",
+    "Wirtschaftssysteme und Gesellschaftsmodelle",
+    "Wirkung und Wirkungslogik",
+    "Philosophie, Ethik und Werte",
+    "Recht, Staat und Institutionen",
+    "Systemtheorie und Komplexität",
+  ],
+  dimensions: ["Mensch", "Planet", "Demokratie"],
+  wirklogik: ["Wirkungsbewertung", "Wirkungssteuerung", "Wirkungsrückkopplung", "Wirkungsrisiko"],
+  applicationFields: ["Politik", "Unternehmen", "Kapitalmärkte", "Staat und Verwaltung", "Demokratie", "Konsum"],
+  sourceField: ["Ökonomie", "Philosophie", "Politische Theorie", "Soziologie", "WÖk-eigener Begriff"],
+  sourceGroup: "liberalMarket",
+};
 
 function addTerm(base, spec) {
   return term({
@@ -891,6 +942,100 @@ const feminismCareTerms = [
   addTerm(feminismCareBase, { id: "feministische-transformation", title: "Feministische Transformation", statusNote: "Priorität 2", short: "Feministische Transformation beschreibt Veränderung von Macht-, Arbeits-, Care-, Repräsentations- und Anerkennungsstrukturen in Richtung Gleichwertigkeit.", definition: "Sie verbindet Kritik an patriarchalen Strukturen mit praktischer Gestaltung von Teilhabe, Care-Infrastruktur, Datenqualität und Machtdezentralisierung.", woek: "Anschlussbegriff für Transformation, Wirkungsgerechtigkeit und demokratische Resilienz.", related: ["feminismus", "feministische-wirtschaftspolitik", "machtdezentralisierung", "kooperationslogik"] }),
   addTerm(feminismCareBase, { id: "oekofeminismus", title: "Ökofeminismus", aliases: ["Ecofeminism"], statusNote: "Priorität 2", short: "Ökofeminismus verbindet feministische Machtkritik mit ökologischer Kritik an Ausbeutung, Dominanz und Externalisierung.", definition: "Der Begriff wird im WÖk-Glossar nur funktional genutzt, wenn Zusammenhänge zwischen Care, Natur, Macht und Externalisierung erklärt werden.", woek: "Anschlusslinie für Planet, Care und Dominanzlogik, aber kein allgemeines Theoriesammelbecken.", related: ["feminismus", "dominanzlogik", "externalisierung", "planet"] }),
 ];
+
+function liberalMarketTerm([id, title, short, woek, aliases = [], related = [], concept = "connection", extra = {}]) {
+  return addTerm(liberalMarketBase, {
+    id,
+    title,
+    aliases,
+    concept,
+    short,
+    definition: extra.definition || short,
+    woek,
+    related,
+    ...extra,
+  });
+}
+
+const liberalMarketTerms = [
+  ["liberalismus", "Liberalismus", "Liberalismus betont individuelle Freiheit, Rechtsstaatlichkeit, Eigentum, Selbstbestimmung und Begrenzung staatlicher Macht.", "Die WÖk ist mit liberalen Grundwerten vereinbar, wenn Freiheit nicht als Wirkungsblindheit verstanden wird. Freiheit braucht reale Handlungsfähigkeit, transparente Informationen, faire Verfahren und die Begrenzung von Schäden, die andere tragen müssen.", [], ["freiheit", "negative-freiheit", "positive-freiheit", "reale-freiheit", "marktwirtschaft", "eigentumsrechte", "rechtsstaatlichkeit", "verantwortung", "wirkungsfreiheit", "wirklichkeitsbindung"], "system", { mythos: "Liberalismus bedeutet, dass der Markt alles regelt.", woekKlaerung: "Liberalismus schützt Freiheit. Märkte sind dezentrale Suchräume, brauchen aber Regeln, Eigentumsrechte, Haftung, Transparenz und Wirkungswahrheit.", blindSpot: "Formale Freiheit kann reale Abhängigkeiten, Externalitäten und Machtasymmetrien übersehen." }],
+  ["politischer-liberalismus", "Politischer Liberalismus", "Politischer Liberalismus betont Grundrechte, Rechtsstaat, Gewaltenteilung, Pluralismus und Schutz individueller Freiheit vor willkürlicher Macht.", "Wichtig für Demokratie, Rechtsschutz, Datenschutz, Meinungsfreiheit und Schutz vor technokratischer Wirkungssteuerung.", [], ["liberalismus", "demokratie", "rechtsstaatlichkeit", "grundrechte", "wirkungsrat"]],
+  ["wirtschaftsliberalismus", "Wirtschaftsliberalismus", "Wirtschaftsliberalismus betont wirtschaftliche Freiheit, Privateigentum, Vertragsfreiheit, Wettbewerb und begrenzte staatliche Eingriffe.", "Anschlussfähig, solange wirtschaftliche Freiheit nicht bedeutet, Folgekosten auf andere abzuwälzen.", [], ["liberalismus", "marktwirtschaft", "vertragsfreiheit", "eigentumsrechte", "wettbewerb", "externalitaet"]],
+  ["klassischer-liberalismus", "Klassischer Liberalismus", "Klassischer Liberalismus betont individuelle Freiheit, Eigentum, Vertragsfreiheit, freie Märkte und begrenzten Staat.", "Anschlussfähig bei Freiheit und Rechtsstaat, unvollständig bei Klima, Externalitäten, Datenmacht, Plattformmacht und demokratischer Resonanz.", [], ["liberalismus", "wirtschaftsliberalismus", "negative-freiheit", "eigentumsrechte"]],
+  ["sozialliberalismus", "Sozialliberalismus", "Sozialliberalismus verbindet individuelle Freiheit mit sozialer Absicherung, Chancengerechtigkeit und gesellschaftlicher Verantwortung.", "Eine wichtige Brücke zur WÖk, weil Freiheit nicht nur formal, sondern real möglich sein muss.", [], ["liberalismus", "positive-freiheit", "reale-freiheit", "gleichwertigkeit", "teilhabe"]],
+  ["negative-freiheit", "Negative Freiheit", "Negative Freiheit beschreibt Freiheit von äußerem Zwang oder Eingriffen.", "Wichtig, aber nicht ausreichend: Eine Person kann formal frei sein und durch Armut, Informationsasymmetrie, Umweltbelastung oder Machtkonzentration real unfrei werden.", [], ["liberalismus", "positive-freiheit", "reale-freiheit", "libertarismus"]],
+  ["positive-freiheit", "Positive Freiheit", "Positive Freiheit beschreibt die Fähigkeit, das eigene Leben aktiv zu gestalten und reale Handlungsmöglichkeiten zu nutzen.", "Zentral, weil Freiheit ohne Zugang, Gesundheit, Bildung, Sicherheit, Information und Teilhabe leer bleiben kann.", [], ["negative-freiheit", "reale-freiheit", "teilhabe", "amartya-sen"]],
+  ["reale-freiheit", "Reale Freiheit", "Reale Freiheit beschreibt tatsächliche Handlungsfähigkeit unter realen Bedingungen, nicht nur formale Wahlmöglichkeit.", "Anschluss an Sen: In der WÖk entsteht reale Freiheit, wenn Mensch, Planet und Demokratie stabile Bedingungen schaffen.", [], ["positive-freiheit", "capability-approach", "mensch", "demokratie"]],
+  ["wirkungsfreiheit", "Wirkungsfreiheit", "Wirkungsfreiheit beschreibt Freiheit, die ihre eigenen Folgen mitdenkt und nicht auf Kosten unsichtbarer Schäden anderer beruht.", "Freiheit endet nicht erst bei direkten Verboten, sondern dort, wo Entscheidungen systematisch Schäden externalisieren, die andere tragen müssen.", [], ["liberalismus", "wirkungsverantwortung", "externalisierung", "eigentumsverantwortung"], "precision", { mythos: "Freiheit bedeutet Folgenfreiheit.", woekKlaerung: "Freiheit ohne Wirkungsverantwortung wird zur Freiheit, Schäden auszulagern.", blindSpot: "Unsichtbare Betroffene erscheinen nicht als Teil der Freiheitsrechnung." }],
+  ["wirklichkeitsbindung", "Wirklichkeitsbindung", "Wirklichkeitsbindung beschreibt die Rückbindung von Entscheidungen an überprüfbare Zustände, Folgen und Daten.", "Zentral für Freiheit, Markt und Demokratie: Entscheidungen sind freier, wenn sie auf ehrlichen Preisen, klaren Daten und transparenter Wirkung beruhen.", [], ["wirkungswahrheit", "wahrheit", "wirkungsdaten", "marktwirtschaft", "demokratie"], "precision", { mythos: "Mehr Wahlfreiheit reicht aus.", woekKlaerung: "Freiheit braucht Wirklichkeitsbindung. Märkte bleiben Suchräume, aber sie brauchen Wirkungssignale.", blindSpot: "Entscheidungen ohne Folgenwissen können Scheinfreiheit erzeugen." }],
+  ["selbstverantwortung", "Selbstverantwortung", "Selbstverantwortung beschreibt die Verantwortung des Individuums für eigene Entscheidungen und deren Folgen.", "Wichtig, aber nur fair, wenn Menschen reale Handlungsoptionen, Informationen und Alternativen haben.", [], ["reale-freiheit", "wirkungsverantwortung", "informationsasymmetrie"]],
+  ["vertragsfreiheit", "Vertragsfreiheit", "Vertragsfreiheit beschreibt die Freiheit, Verträge freiwillig zu schließen oder nicht zu schließen.", "Sie kann durch Machtasymmetrien, Informationsasymmetrien oder existenzielle Abhängigkeiten eingeschränkt sein.", [], ["wirtschaftsliberalismus", "informationsasymmetrie", "marktmacht", "eigentumsrechte"]],
+  ["eigentumsrechte", "Eigentumsrechte", "Eigentumsrechte regeln, wer über Ressourcen, Güter oder Kapital verfügen darf.", "Eigentum bleibt geschützt, aber es trägt Wirkungsverantwortung. Eigentum darf nicht als Freibrief zur Externalisierung von Schäden verstanden werden.", [], ["eigentum", "eigentumsverantwortung", "kapital", "liberalismus", "libertarismus"]],
+  ["eigentumsverantwortung", "Eigentumsverantwortung", "Eigentumsverantwortung beschreibt Verantwortung für Wirkungen, die aus Nutzung, Kontrolle oder Kapitalisierung von Eigentum entstehen.", "Die WÖk verbindet Eigentumsschutz mit Wirkungspflicht: Wer Kontrolle hat, trägt Verantwortung für Folgewirkungen.", [], ["eigentumsrechte", "wirkungsverantwortung", "externalisierung", "kapitalwirkung"], "precision"],
+  ["libertarismus", "Libertarismus", "Libertarismus betont individuelle Freiheit, Eigentumsrechte, freiwillige Verträge und minimale staatliche Eingriffe besonders stark.", "Relevant, weil er zentrale Einwände gegen Wirkungssteuerung formuliert. Die WÖk antwortet: Nicht jede Lenkung ist Zwang; wenn Preise Schäden verschweigen, sind auch Marktentscheidungen verzerrt.", [], ["negative-freiheit", "eigentumsrechte", "nachtwaechterstaat", "minarchismus", "anarchokapitalismus", "non-aggression-principle", "steuerkritik", "externalisierung"], "system", { mythos: "Jede staatliche Wirkungslenkung ist Freiheitsverlust.", woekKlaerung: "Wirkungslenkung kann Freiheit schützen, wenn sie Schäden sichtbar macht, Macht begrenzt und reale Handlungsfähigkeit stärkt.", blindSpot: "Verlagerte Schäden werden oft nicht als Eingriff in die Freiheit anderer gelesen." }],
+  ["minarchismus", "Minarchismus", "Minarchismus fordert einen Minimalstaat, der vor allem Eigentum, Verträge, innere und äußere Sicherheit schützt.", "Unzureichend, wenn Klima, Plattformmacht, Monopole, Gesundheitsfolgen, Datenmacht oder Externalitäten nicht durch Minimalstaatlichkeit verarbeitet werden können.", [], ["libertarismus", "nachtwaechterstaat", "eigentumsrechte", "marktversagen"]],
+  ["nachtwaechterstaat", "Nachtwächterstaat", "Der Nachtwächterstaat ist ein Minimalstaat, der sich auf Schutz von Eigentum, Sicherheit und Rechtsordnung beschränkt.", "Als Grenzmodell hilfreich, um zu klären, welche Wirkungsprobleme reine Schutzfunktionen nicht lösen.", ["Minimalstaat"], ["minarchismus", "libertarismus", "staatsversagen"]],
+  ["anarchokapitalismus", "Anarchokapitalismus", "Anarchokapitalismus lehnt staatliche Herrschaft ab und will Ordnung über Privateigentum, Märkte, Verträge und private Sicherheits- oder Rechtsdienste organisieren.", "Als Extremmodell relevant, aber nicht auszubauen: Private Vertragslogik kann Gemeingüter, Umwelt, Machtkonzentration und demokratische Legitimität nicht ausreichend sichern.", [], ["libertarismus", "self-ownership", "non-aggression-principle", "oeffentliche-gueter"], "connection", { statusNote: "Priorität 2" }],
+  ["non-aggression-principle", "Non-Aggression Principle", "Das Non-Aggression Principle hält Gewalt, Zwang oder Eingriffe in Eigentum und Person grundsätzlich für unzulässig, außer zur Verteidigung.", "Die WÖk-Frage lautet: Was gilt als Eingriff, wenn Schäden über Klima, Luft, Wasser, Plattformmacht oder Desinformation auf andere verlagert werden?", ["Nichtaggressionsprinzip"], ["libertarismus", "externalitaet", "wirkungsverantwortung"], "connection", { statusNote: "Priorität 2" }],
+  ["self-ownership", "Self-Ownership", "Self-Ownership beschreibt die Vorstellung, dass Menschen Eigentümer:innen ihrer selbst sind.", "Relevant für Autonomie und Selbstbestimmung, aber nicht ausreichend für soziale, ökologische und demokratische Folgewirkungen.", ["Selbsteigentum"], ["libertarismus", "autonomie", "koerperliche-selbstbestimmung"], "connection", { statusNote: "Priorität 2" }],
+  ["steuerkritik", "Steuerkritik", "Steuerkritik beschreibt Einwände gegen staatliche Abgaben, insbesondere wegen Freiheits-, Eigentums- oder Effizienzargumenten.", "Die WÖk unterscheidet fiskalische Abschöpfung von Wirkungsrückkopplung. Wirkungssteuern sollen Folgekosten sichtbar machen und Anreize korrigieren.", [], ["libertarismus", "wirkungssteuer", "pigou-steuer", "laffer-kurve"], "connection", { statusNote: "Priorität 2" }],
+  ["neoklassik", "Neoklassik", "Neoklassik modelliert Märkte, Knappheit, Präferenzen, Nutzenmaximierung, Gleichgewicht, Grenzgrößen und effiziente Allokation.", "Wichtig für Preise, Knappheit, Anreize und Marktkoordination. Ihre Grenze liegt in Vereinfachungen wie vollständiger Information, rationaler Entscheidung, Gleichgewichtsbildern und isolierten Akteuren. WÖk ergänzt reale Zustandsveränderungen, Rückkopplungen, Macht, Zeit, Externalitäten und Wirkungsräume.", [], ["homo-oeconomicus", "nutzenmaximierung", "grenznutzen", "grenzkosten", "opportunitaetskosten", "marktgleichgewicht", "pareto-effizienz", "externalitaet", "modellblindheit"], "connection", { mythos: "Wenn ein Markt effizient ist, ist er gesellschaftlich gut.", woekKlaerung: "Effizienz ohne richtige Zielgröße kann negative Wirkung beschleunigen.", blindSpot: "Externe Wirkungen, Macht und nichtlineare Rückkopplungen werden oft als Randprobleme behandelt." }],
+  ["homo-oeconomicus", "Homo oeconomicus", "Der Homo oeconomicus ist ein Modell des rational eigennützig handelnden Menschen, der Präferenzen unter Knappheit optimiert.", "Als Modell nützlich, als Menschenbild unzureichend: Menschen handeln auch aus Angst, Zugehörigkeit, Vertrauen, Status, Sinn, Care, Dissonanz, Moral, Gewohnheit und Resonanzräumen.", [], ["neoklassik", "nutzenmaximierung", "praeferenzen", "begrenzte-rationalitaet"]],
+  ["nutzenmaximierung", "Nutzenmaximierung", "Nutzenmaximierung beschreibt die Annahme, dass Akteure Entscheidungen treffen, um ihren subjektiven Nutzen zu maximieren.", "Nutzen ist nicht identisch mit Wirkung. Hoher individueller Nutzen kann negative Wirkung auf andere erzeugen.", [], ["homo-oeconomicus", "praeferenzen", "wirkungswert"]],
+  ["praeferenzen", "Präferenzen", "Präferenzen beschreiben Vorlieben oder Rangordnungen von Optionen.", "Präferenzen sind nicht naturgegeben. Sie werden durch Kultur, Werbung, Preise, Status, Salienz, Gewohnheit, Plattformlogik und soziale Normen geprägt.", [], ["nutzenmaximierung", "salienz", "plattformlogik", "konsumentensouveraenitaet"]],
+  ["knappheit", "Knappheit", "Knappheit beschreibt, dass Ressourcen, Zeit, Aufmerksamkeit oder Güter begrenzt sind.", "Die WÖk erweitert Knappheit: knapp sind auch planetare Grenzen, Vertrauen, Aufmerksamkeit, Gesundheit, Pflegezeit, Biodiversität und demokratische Stabilität.", [], ["planetare-grenzen", "aufmerksamkeit", "pflegezeit", "biodiversitaet"]],
+  ["grenznutzen", "Grenznutzen", "Grenznutzen beschreibt den zusätzlichen Nutzen einer weiteren Einheit eines Gutes.", "Hilfreich für Entscheidungsmodelle, aber keine Aussage über externe Wirkung oder Verteilung.", [], ["neoklassik", "nutzenmaximierung", "grenzkosten"]],
+  ["grenzkosten", "Grenzkosten", "Grenzkosten beschreiben die zusätzlichen Kosten einer weiteren Einheit.", "Grenzkosten müssen wirkungsökonomisch erweitert werden: Eine zusätzliche Einheit kann externe Kosten, Klimafolgen, Gesundheitsrisiken oder Demokratiewirkungen auslösen.", [], ["merit-order", "strommarkt", "externalitaet", "systemkosten"]],
+  ["opportunitaetskosten", "Opportunitätskosten", "Opportunitätskosten sind der Wert der besten Alternative, auf die durch eine Entscheidung verzichtet wird.", "Die WÖk erweitert Opportunitätskosten um verpasste positive Wirkung und künftige Folgekosten.", [], ["allokation", "wirkungswert", "klimafolgeschaden"]],
+  ["marktgleichgewicht", "Marktgleichgewicht", "Marktgleichgewicht beschreibt einen Zustand, in dem Angebot und Nachfrage bei einem bestimmten Preis zusammenfinden.", "Ein Markt kann im Gleichgewicht sein und trotzdem negative Wirkung erzeugen, wenn Preise Schäden nicht enthalten.", [], ["neoklassik", "marktwirtschaft", "wirkungswahrheit", "externalitaet"]],
+  ["allgemeines-gleichgewicht", "Allgemeines Gleichgewicht", "Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märkte gleichzeitig im Gleichgewicht sind.", "Nützlich als Modell, aber begrenzt in rückgekoppelten, planetar begrenzten und politisch-medial beeinflussten Systemen.", [], ["marktgleichgewicht", "neoklassik", "modellannahme"], "connection", { statusNote: "Priorität 2" }],
+  ["pareto-effizienz", "Pareto-Effizienz", "Pareto-Effizienz beschreibt einen Zustand, in dem niemand besser gestellt werden kann, ohne jemand anderen schlechter zu stellen.", "Kein ausreichender Gerechtigkeits- oder Wirkungsmaßstab. Sie kann bestehende Ungleichheit und externe Schäden stabilisieren.", [], ["effizienz", "wohlfahrtsoekonomie", "ungleichheit", "externalitaet"], "connection", { mythos: "Pareto-Effizienz bedeutet gesellschaftliche Gerechtigkeit.", woekKlaerung: "Pareto-Effizienz sagt wenig über Ausgangsverteilung, Würde, externe Schäden oder positive Netto-Wirkung." }],
+  ["wohlfahrtsoekonomie", "Wohlfahrtsökonomie", "Wohlfahrtsökonomie untersucht, wie wirtschaftliche Zustände und Allokationen gesellschaftliche Wohlfahrt beeinflussen.", "Wichtige Anschlusslinie. Die WÖk erweitert Wohlfahrt um Mensch, Planet, Demokratie, Wirkung erster bis dritter Ordnung und Nichtkompensation.", [], ["pareto-effizienz", "pigou-steuer", "amartya-sen", "wirkungswert"]],
+  ["effizienz", "Effizienz", "Effizienz beschreibt das Verhältnis von eingesetzten Mitteln zu erreichtem Ergebnis.", "Effizienz ist nicht automatisch positive Wirkung. Effizienz mit falscher Zielgröße kann Externalisierung, Machtkonzentration oder Schäden beschleunigen.", [], ["neoklassik", "systemkosten", "externalisierung", "positive-netto-wirkung"], "precision", { mythos: "Effizienz ist immer gut.", woekKlaerung: "Wirkungsökonomisch zählt, welches Ergebnis effizient erzeugt wird und welche Folgekosten entstehen." }],
+  ["allokation", "Allokation", "Allokation beschreibt die Verteilung knapper Ressourcen auf unterschiedliche Verwendungen.", "WÖk fragt nicht nur, ob Ressourcen effizient verteilt werden, sondern ob diese Verteilung positive Netto-Wirkung erzeugt.", [], ["ressourcenallokation", "knappheit", "wirkungswert"]],
+  ["ressourcenallokation", "Ressourcenallokation", "Ressourcenallokation beschreibt die Verteilung von Ressourcen auf Nutzungen, Akteure oder Ziele.", "Die WÖk erweitert Allokation um Wirkung: Ressourcen sollen dort wirken, wo sie Mensch, Planet und Demokratie stärken.", [], ["allokation", "wirkungskapital", "wirkungssteuer"], "connection", { statusNote: "Priorität 2" }],
+  ["konsumentensouveraenitaet", "Konsumentensouveränität", "Konsumentensouveränität beschreibt die Vorstellung, dass Konsument:innen durch Nachfrage bestimmen, was produziert wird.", "Nur realistisch, wenn Informationen, Preise, Alternativen, Kaufkraft und Wirkungsdaten vorhanden sind. Sie ist verzerrt, wenn schlechte Wirkung billiger ist.", [], ["praeferenzen", "vollstaendige-information", "wirkungsdaten", "produktpass"]],
+  ["vollstaendige-information", "Vollständige Information", "Vollständige Information beschreibt die Annahme, dass alle relevanten Informationen für Entscheidungen verfügbar sind.", "In der Realität häufig falsch. Wirkungsdaten, Produktpässe, Scorecards und Transparenz versuchen diese Lücke zu verringern.", [], ["informationsasymmetrie", "digitaler-produktpass", "scorecard", "wirkungsdaten"]],
+  ["rationalitaet", "Rationalität", "Rationalität beschreibt begründetes, zielgerichtetes Entscheiden unter Annahmen und Informationen.", "Rational ist wirkungsökonomisch nicht, was kurzfristig Kapital maximiert, sondern was unter realen Wirkungen, Risiken und Rückkopplungen zukunftsfähig ist.", [], ["begrenzte-rationalitaet", "modellannahme", "wirklichkeitsbindung"], "connection", { statusNote: "Priorität 2" }],
+  ["begrenzte-rationalitaet", "Begrenzte Rationalität", "Begrenzte Rationalität beschreibt, dass Menschen unter begrenzter Information, Zeit, Aufmerksamkeit und Verarbeitungskapazität entscheiden.", "Zentral für Produktwirkung, Medienwirkung, Politik und Wirkungskommunikation.", [], ["kognitive-belastung", "informationsueberlastung", "rationalitaet", "homo-oeconomicus"]],
+  ["modellannahme", "Modellannahme", "Eine Modellannahme ist eine vereinfachende Voraussetzung, auf der ein Modell aufbaut.", "Modellannahmen müssen sichtbar sein, weil sie entscheiden, welche Wirkungen gesehen und welche ausgeblendet werden.", [], ["modellblindheit", "neoklassik", "rationalitaet"], "connection", { statusNote: "Priorität 2" }],
+  ["modellblindheit", "Modellblindheit", "Modellblindheit entsteht, wenn ein Modell durch seine Annahmen relevante Wirkungen systematisch unsichtbar macht.", "Zentral für Kritik an Neoklassik, ESG, BIP, Trickle-down, Sozialismus, Genossenschaftsmythos und reinem Marktdenken.", [], ["modellannahme", "neoklassik", "wirkungsblindheit", "trickle-down-oekonomie"], "precision"],
+  ["marktversagen", "Marktversagen", "Marktversagen liegt vor, wenn Märkte nicht zu gesellschaftlich wünschenswerten oder effizienten Ergebnissen führen.", "Aus WÖk-Sicht ist Marktversagen oft Wirkungsblindheit: Preise, Rechte oder Anreize bilden reale Folgen nicht ab.", [], ["externalitaet", "oeffentliche-gueter", "informationsasymmetrie", "marktmacht", "staatsversagen"], "connection", { mythos: "Marktversagen ist ein Ausnahmefall.", woekKlaerung: "In planetaren, sozialen und digitalen Wirkungsräumen können unsichtbare Folgekosten systematisch sein." }],
+  ["externalitaet", "Externalität", "Externalitäten sind Kosten oder Nutzen, die bei Dritten entstehen und nicht im Marktpreis enthalten sind.", "Zentraler WÖk-Begriff: Wirkungsökonomie macht Externalitäten sichtbar und koppelt sie in Preise, Steuern, Kapital, Haftung und Beschaffung zurück.", [], ["externalisierung", "negative-externalitaet", "positive-externalitaet", "marktversagen", "wirkungssteuer"], "precision"],
+  ["negative-externalitaet", "Negative Externalität", "Eine negative Externalität ist ein Schaden oder Risiko für Dritte, das nicht im Preis enthalten ist.", "Sie erklärt Klima-, Gesundheits-, Sozial- oder Demokratieschäden, die Verursacher nicht vollständig tragen.", [], ["externalitaet", "externalisierung", "klimafolgeschaeden", "soziale-folgekosten"]],
+  ["positive-externalitaet", "Positive Externalität", "Eine positive Externalität ist ein Nutzen für Dritte, der nicht oder nicht vollständig vergütet wird.", "Relevant für Bildung, Care, Prävention, Wissen, Vertrauen und ökologische Regeneration.", [], ["externalitaet", "sorgearbeit", "bildung", "vertrauen"]],
+  ["oeffentliche-gueter", "Öffentliche Güter", "Öffentliche Güter sind Güter, von deren Nutzung niemand leicht ausgeschlossen werden kann und deren Nutzung andere kaum verringert.", "Saubere Luft, Wissen, Sicherheit oder demokratische Öffentlichkeit brauchen besondere Governance, weil Märkte sie oft unterbereitstellen.", [], ["trittbrettfahrerproblem", "allmendeproblem", "wohlfahrtsstaat", "demokratie"]],
+  ["trittbrettfahrerproblem", "Trittbrettfahrerproblem", "Das Trittbrettfahrerproblem entsteht, wenn Akteure von einem Gut profitieren, ohne zu dessen Bereitstellung beizutragen.", "Relevant für Klima, Infrastruktur, Medienqualität, Gemeingüter und kollektive Wirkung.", [], ["oeffentliche-gueter", "allmendeproblem", "commons"]],
+  ["allmendeproblem", "Allmendeproblem", "Das Allmendeproblem beschreibt Übernutzung gemeinsamer Ressourcen, wenn individuelle Nutzungsvorteile und kollektive Schäden auseinanderfallen.", "Wichtig für Klima, Biodiversität, Wasser, öffentliche Räume, digitale Aufmerksamkeit und Demokratie.", [], ["commons", "oeffentliche-gueter", "externalitaet"], "connection", { statusNote: "Priorität 2" }],
+  ["informationsasymmetrie", "Informationsasymmetrie", "Informationsasymmetrie liegt vor, wenn eine Seite einer Transaktion mehr oder bessere Informationen hat als die andere.", "Zentral für Produktpässe, Scorecards, Wirkungslabel, Finanzmärkte, Medien und Gesundheit.", [], ["vollstaendige-information", "adverse-selection", "moral-hazard", "digitaler-produktpass", "scorecard"]],
+  ["moral-hazard", "Moral Hazard", "Moral Hazard beschreibt riskanteres Verhalten, wenn Folgen oder Kosten auf andere übertragen werden.", "Zentral für Banken, Versicherungen, Klima, Lieferketten, Plattformen und Externalisierung.", [], ["informationsasymmetrie", "externalisierung", "wirkungsverantwortung"]],
+  ["adverse-selection", "Adverse Selection", "Adverse Selection beschreibt Fehlselektion durch Informationsasymmetrie, wenn schlechte Qualität gute Qualität verdrängen kann.", "Wirkungslabel und Produktpässe sollen verhindern, dass schädliche Produkte durch niedrigere Preise bessere Produkte verdrängen.", [], ["informationsasymmetrie", "produktpass", "wirkungslabel"]],
+  ["principal-agent-problem", "Principal-Agent-Problem", "Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien zwischen Auftraggeber:innen und Beauftragten.", "Relevant für Management, Politik, Kapitalmärkte, Lieferketten, Prüfungen und Wirkungsrat.", [], ["informationsasymmetrie", "governance", "wirkungsrat", "lieferkette"]],
+  ["transaktionskosten", "Transaktionskosten", "Transaktionskosten sind Kosten der Anbahnung, Durchführung, Kontrolle und Durchsetzung von Austauschbeziehungen.", "Gute Wirkungsdaten und Standards können Transaktionskosten senken, ohne Wirkungsprüfung abzubauen.", [], ["coase-theorem", "wirkungsdaten", "standardisierung"], "connection", { statusNote: "Priorität 2" }],
+  ["coase-theorem", "Coase-Theorem", "Das Coase-Theorem beschreibt die Idee, dass externe Effekte bei klaren Eigentumsrechten und geringen Transaktionskosten durch Verhandlungen gelöst werden können.", "In realen komplexen Systemen sind Transaktionskosten, Machtasymmetrien, Zukunftsbetroffene und planetare Grenzen zentrale Hindernisse.", [], ["externalitaet", "transaktionskosten", "eigentumsrechte"], "connection", { statusNote: "Priorität 2" }],
+  ["pigou-steuer", "Pigou-Steuer", "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.", "Wichtige Vorläuferlogik der Wirkungssteuer, aber enger. Die WÖk erweitert um Mensch, Planet, Demokratie, Scorecards, Nichtkompensation und Wirkungsarchitektur.", [], ["externalitaet", "wirkungssteuer", "co2-preis"], "connection", { statusNote: "Priorität 2" }],
+  ["staatsversagen", "Staatsversagen", "Staatsversagen liegt vor, wenn staatliches Handeln durch Informationsmangel, Fehlanreize, Bürokratie, Machtinteressen oder schlechte Umsetzung negative Ergebnisse erzeugt.", "Die WÖk nimmt Staatsversagen ernst. Deshalb braucht sie Wirkungsrat, Transparenz, Evaluation, Versionierung, Rechtsschutz und demokratische Kontrolle.", [], ["marktversagen", "regulierungsversagen", "wirkungsrat", "evaluation"]],
+  ["regulierungsversagen", "Regulierungsversagen", "Regulierungsversagen entsteht, wenn Regeln ihre Ziele verfehlen, falsche Anreize setzen oder neue Schäden erzeugen.", "Relevant, weil Wirkungssteuerung selbst korrigierbar, transparent und lernfähig bleiben muss.", [], ["staatsversagen", "regulatory-capture", "wirkungssteuer"]],
+  ["regulatory-capture", "Regulatory Capture", "Regulatory Capture beschreibt, wenn Regulierung oder Aufsicht von den Interessen der regulierten Akteure beeinflusst oder vereinnahmt wird.", "Zentrales Risiko für Wirkungsrat, WÖk-IDs, Benchmarks, Energie, Finanzmärkte und Lieferketten.", ["Regulierungsvereinnahmung"], ["regulierungsversagen", "rent-seeking", "marktmacht", "wirkungsrat"]],
+  ["rent-seeking", "Rent Seeking", "Rent Seeking beschreibt den Versuch, Vorteile durch politische Einflussnahme, Monopole oder Sonderregeln zu erzielen, statt durch produktive oder wirkungsvolle Leistung.", "Relevant für Lobbyismus, Subventionen, Marktverzerrung, Kapitalmacht und Wirkungsblindheit.", [], ["regulatory-capture", "marktmacht", "subvention", "kapitalwirkung"]],
+  ["monopol", "Monopol", "Ein Monopol liegt vor, wenn ein Anbieter einen Markt wesentlich allein kontrolliert.", "Monopole können Preise, Zugang, Innovation und demokratische Handlungsspielräume beeinflussen und brauchen Wirkungs- und Machtprüfung.", [], ["marktmacht", "natuerliches-monopol", "oligopol"]],
+  ["oligopol", "Oligopol", "Ein Oligopol liegt vor, wenn wenige Anbieter einen Markt dominieren.", "Relevant für Preise, Zugang, Lieferketten, Medien, Energie und Plattformen.", [], ["monopol", "marktmacht", "wettbewerb"]],
+  ["marktmacht", "Marktmacht", "Marktmacht beschreibt die Fähigkeit, Preise, Zugang, Standards, Bedingungen oder Alternativen wesentlich zu beeinflussen.", "Ein Wirkungsrisiko, wenn sie Wettbewerb, Teilhabe, Innovation, Medienqualität oder demokratische Kontrolle schwächt.", [], ["monopol", "oligopol", "machtkonzentration", "plattformkapitalismus"]],
+  ["netzwerkeffekt", "Netzwerkeffekt", "Ein Netzwerkeffekt liegt vor, wenn der Nutzen eines Angebots mit der Zahl seiner Nutzer:innen steigt.", "Besonders wichtig für Plattformkapitalismus, digitale Öffentlichkeit, Ladeinfrastruktur, Datenräume und Marktmacht.", [], ["plattformkapitalismus", "marktmacht", "natuerliches-monopol"], "connection", { statusNote: "Priorität 2" }],
+  ["natuerliches-monopol", "Natürliches Monopol", "Ein natürliches Monopol liegt vor, wenn eine Infrastruktur aus Kostengründen effizienter von einem Anbieter betrieben wird, etwa Strom- oder Wassernetze.", "Relevant für Netzentgelte, Regulierung, Energieinfrastruktur und Daseinsvorsorge.", [], ["monopol", "stromnetz", "netzentgelt", "daseinsvorsorge"]],
+  ["neoliberalismus", "Neoliberalismus", "Neoliberalismus bezeichnet Strömungen, die Marktmechanismen, Wettbewerb, Privatisierung, Deregulierung und Eigenverantwortung stark betonen.", "Problematisch, wenn Marktvertrauen ohne Wirkungswahrheit entsteht. Nicht mit Liberalismus oder Neoklassik gleichsetzen.", [], ["liberalismus", "wirtschaftsliberalismus", "deregulierung", "privatisierung", "externalitaet"], "connection", { mythos: "Neoliberalismus ist dasselbe wie Liberalismus.", woekKlaerung: "Liberalismus ist eine Freiheits- und Rechtsstaatsidee; Neoliberalismus bezeichnet marktorientierte politische Strömungen." }],
+  ["ordoliberalismus", "Ordoliberalismus", "Ordoliberalismus betont staatliche Ordnung des Wettbewerbs durch Regeln, Kartellkontrolle und Rechtsrahmen.", "Anschlussfähig bei Ordnung und Wettbewerb. WÖk-Korrektur: Wettbewerbsordnung braucht Wirkungswahrheit für Mensch, Planet und Demokratie.", [], ["soziale-marktwirtschaft", "marktwirtschaft", "wettbewerb", "wirkungswahrheit"]],
+  ["oesterreichische-schule", "Österreichische Schule", "Die Österreichische Schule betont subjektiven Wert, Unternehmertum, dezentrales Wissen, Marktprozesse und Skepsis gegenüber zentraler Planung.", "Anschlussfähig bei dezentralem Wissen und Planwirtschaftskritik. WÖk-Korrektur: Marktprozesse brauchen Wirkungsdaten, weil Preise Externalitäten sonst nicht abbilden.", ["Austrian School"], ["hayek", "dezentralisierung", "marktwirtschaft", "wirkungsdaten"], "connection", { statusNote: "Priorität 2" }],
+  ["chicago-school", "Chicago School", "Die Chicago School steht für marktorientierte ökonomische Ansätze, Monetarismus, Deregulierung und starke Betonung von Preisen und Anreizen.", "Anschlussfähig bei Anreizen, problematisch bei Wirkungsblindheit und Externalitäten.", [], ["monetarismus", "deregulierung", "supply-side-economics"], "connection", { statusNote: "Priorität 2" }],
+  ["monetarismus", "Monetarismus", "Monetarismus betont die Rolle der Geldmenge und Geldpolitik für Inflation und wirtschaftliche Stabilität.", "Priorität 2, weil für WÖk nur relevant, wenn Geldpolitik als Wirkungsrahmen von Preisen, Investitionen und Verteilung behandelt wird.", [], ["chicago-school", "inflation", "geldpolitik"], "connection", { statusNote: "Priorität 2" }],
+  ["supply-side-economics", "Supply-side Economics", "Supply-side Economics betont Wachstum durch bessere Angebotsbedingungen, niedrigere Steuern, Deregulierung und Investitionsanreize.", "Relevant, weil häufig positive Folgewirkungen behauptet werden, ohne sie ausreichend zu messen.", ["Angebotsökonomie"], ["trickle-down-oekonomie", "laffer-kurve", "steuerkritik", "deregulierung"], "connection", { mythos: "Entlastung der Angebotsseite erzeugt automatisch gesellschaftliche Wirkung.", woekKlaerung: "Wirkung muss an Investitionen, Arbeitsplätzen, Verteilung, Infrastruktur, Klima und Demokratie geprüft werden." }],
+  ["trickle-down-oekonomie", "Trickle-down-Ökonomie", "Trickle-down-Ökonomie bezeichnet die Annahme, dass Entlastungen für Vermögende, Unternehmen oder Kapital langfristig allen zugutekommen sollen.", "Ein Beispiel für ein Wirkungsversprechen ohne ausreichende Wirkungsprüfung. Trickle-down behauptet Wirkung; die WÖk misst Wirkung.", ["Trickle-down Economics", "Durchsickerungsökonomie", "Durchsickerungsmythos", "Trickle-down-Theorie", "trickle-down"], ["supply-side-economics", "laffer-kurve", "kapitalwirkung", "kapitalrendite", "externalisierung", "verteilungseffekt", "wirkungsnachweis"], "connection", { customStatus: "Anschlussbegriff / Systemmythos / wirtschaftspolitischer Wirkpfad", mythos: "Wenn es dem Kapital gut geht, geht es irgendwann allen gut.", woekKlaerung: "Kapitalzuwachs ist keine positive Netto-Wirkung. Kapital braucht Wirkungsbindung.", blindSpot: "Trickle-down verwechselt Kapitalaktivierung mit gesellschaftlicher Wirkung.", sourceGroup: "trickleDown" }],
+  ["laffer-kurve", "Laffer-Kurve", "Die Laffer-Kurve beschreibt die Idee, dass Steuersätze und Steueraufkommen nicht linear zusammenhängen und zu hohe Steuersätze das Aufkommen senken können.", "Als wirtschaftspolitisches Argument relevant. WÖk fragt zusätzlich: Welche Wirkung erzeugt die Steuerstruktur, nicht nur welches Aufkommen?", [], ["supply-side-economics", "trickle-down-oekonomie", "steuerkritik"]],
+  ["deregulierung", "Deregulierung", "Deregulierung beschreibt den Abbau staatlicher Regeln oder Eingriffe.", "Kann Bürokratie senken, aber auch Wirkungsblindheit, Externalisierung, Marktmacht oder Sicherheitsrisiken erhöhen.", [], ["neoliberalismus", "regulierungsversagen", "externalitaet"], "connection", { mythos: "Deregulierung erzeugt automatisch Effizienz.", woekKlaerung: "Regelabbau ist nur dann hilfreich, wenn Wirkung, Sicherheit, Zugang und Machtfolgen geprüft werden." }],
+  ["privatisierung", "Privatisierung", "Privatisierung beschreibt die Übertragung öffentlicher Aufgaben, Güter oder Unternehmen in private Eigentums- oder Betriebsformen.", "Nicht automatisch gut oder schlecht. Entscheidend ist die Wirkung auf Zugang, Preis, Qualität, Resilienz, Demokratie und Langfristigkeit.", [], ["neoliberalismus", "eigentumsrechte", "daseinsvorsorge", "natuerliches-monopol"]],
+  ["austeritaet", "Austerität", "Austerität beschreibt eine Politik strenger Haushaltskonsolidierung durch Ausgabenkürzungen oder Sparmaßnahmen.", "Nur sinnvoll, wenn nicht notwendige Wirkungsinfrastruktur zerstört wird. Sparen kann Verlustleistung erhöhen, wenn spätere Schäden wachsen.", [], ["schuldenbremse", "wirkungshaushalt", "infrastruktur"], "connection", { statusNote: "Priorität 2" }],
+  ["schuldenbremse", "Schuldenbremse", "Die Schuldenbremse begrenzt staatliche Neuverschuldung nach fiskalischen Regeln.", "Wirkungsökonomisch nicht nur fiskalisch bewerten, sondern nach Wirkung auf Zukunftsinvestitionen, Resilienz, Infrastruktur, Generationengerechtigkeit und Reparaturkosten.", [], ["austeritaet", "wirkungshaushalt", "generationengerechtigkeit"], "connection", { statusNote: "Priorität 2" }],
+].map(liberalMarketTerm);
 
 const circularTerms = [
   addTerm(circularBase, { id: "kreislaufwirtschaft", title: "Kreislaufwirtschaft", concept: "precision", short: "Kreislaufwirtschaft hält Produkte, Materialien und Ressourcen möglichst lange im Nutzungskreislauf, vermeidet Abfall und regeneriert natürliche Systeme.", definition: "Sie ersetzt die lineare Logik nehmen, herstellen, wegwerfen durch längere Nutzung, Teilen, Wartung, Reparatur, Wiederverwendung, Refurbishment, Remanufacturing, Recycling und sichere biologische Rückführung.", woek: "Kreislaufwirtschaft ist notwendig, aber nicht hinreichend. Positive Netto-Wirkung entsteht erst, wenn Kreislauffähigkeit mit Mensch, Planet und Demokratie verbunden wird.", mythos: "Kreislaufwirtschaft bedeutet Recycling.", woekKlaerung: "Recycling ist nur ein Teil und meist ein äußerer Loop. Innere Loops wie Vermeidung, längere Nutzung, Reparatur und Wiederverwendung haben oft höhere Wirkung.", blindSpot: "Kreisläufe können toxische Stoffe, Plattformmacht oder Ausbeutung stabilisieren.", related: ["cradle-to-cradle", "circular-economy-butterfly-model", "technischer-kreislauf", "biologischer-kreislauf", "reparierbarkeit", "remanufacturing", "recycling", "materialgesundheit", "produktlebenszyklus", "digitaler-produktpass", "reverse-merit-order"] }),
@@ -1286,7 +1431,7 @@ const batteryInfrastructureTerms = [
   ["anlagenpass", "Anlagenpass", "Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.", "Analog zum Materialpass oder Digitalen Produktpass für große Energieanlagen; wichtig für Rückbau, Wartung, Versicherung und Kreislaufwirkung.", [], ["materialpass", "digitaler-produktpass", "rueckbaustandard"], "method"],
 ].map(batteryInfraTerm);
 
-additions.push(...economicSystemTerms, ...feminismCareTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
+additions.push(...economicSystemTerms, ...feminismCareTerms, ...liberalMarketTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
 
 const raw = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const terms = raw.terms || [];
@@ -1526,6 +1671,7 @@ for (const item of terms) {
     [CAT_ETHICS]: "Philosophie, Ethik und Werte",
     [CAT_CAPITAL]: "Kapital, Markt und Macht",
     [CAT_FEMINISM_CARE]: "Feminismus und Gleichwertigkeit",
+    [CAT_LIBERAL_MARKET]: "Liberalismus und Freiheit",
     [CAT_LANGUAGE]: "Sprache, Wirklichkeit und Kommunikation",
     [CAT_SYSTEMS]: "Systemtheorie, Kybernetik und Konstruktivismus",
     [CAT_MANAGEMENT2]: "Management, Organisation und Wirksamkeit",
@@ -1576,6 +1722,30 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Karl Polanyi: The Great Transformation
 - Friedrich Hayek: The Use of Knowledge in Society
 - John Maynard Keynes: The General Theory
+
+## Liberalismus / Freiheit / Neoklassik
+
+- John Locke: Two Treatises of Government
+- John Stuart Mill: On Liberty
+- Isaiah Berlin: Two Concepts of Liberty
+- Amartya Sen: Development as Freedom
+- Friedrich Hayek: The Road to Serfdom
+- Friedrich Hayek: The Use of Knowledge in Society
+- Robert Nozick: Anarchy, State, and Utopia
+- Milton Friedman: Capitalism and Freedom
+- Alfred Marshall: Principles of Economics
+- William Stanley Jevons: Theory of Political Economy
+- Léon Walras: Elements of Pure Economics
+- Vilfredo Pareto: Manual of Political Economy
+- Paul Samuelson: Foundations of Economic Analysis
+- Kenneth Arrow / Gérard Debreu: general equilibrium
+- Arthur Pigou: The Economics of Welfare
+- Ronald Coase: The Problem of Social Cost
+- George Akerlof: The Market for Lemons
+- Joseph Stiglitz: Information asymmetry
+- Walter Eucken: Grundlagen der Nationalökonomie / Ordnungspolitik
+- Ludwig von Mises: Human Action
+- IMF / OECD / empirische Quellen zu Trickle-down, Ungleichheit und Wachstumswirkungen nur bei konkreter Begriffsverwendung.
 
 ## Feministische Ökonomie / Care
 
@@ -1814,7 +1984,7 @@ Publikationsstatus:
 `;
 fs.writeFileSync(processPath, processMarkdown);
 
-const backlinkTerms = feminismCareTerms.filter((item) => item.publicationStatus === "published").map((item) => ({
+const backlinkTerms = [...feminismCareTerms, ...liberalMarketTerms].filter((item) => item.publicationStatus === "published").map((item) => ({
   termId: item.termId,
   label: item.canonicalLabel,
   aliases: item.aliases,

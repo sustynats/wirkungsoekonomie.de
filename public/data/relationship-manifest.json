@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T19:26:35.643Z",
+  "generatedAt": "2026-05-29T19:41:32.099Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -70,6 +70,12 @@
         "wirkungswahrheit",
         "externalisierung",
         "marktwert"
+      ],
+      "documents": []
+    },
+    "adverse-selection": {
+      "terms": [
+        "informationsasymmetrie"
       ],
       "documents": []
     },
@@ -157,9 +163,38 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "allgemeines-gleichgewicht": {
+      "terms": [
+        "marktgleichgewicht",
+        "neoklassik",
+        "modellannahme"
+      ],
+      "documents": []
+    },
+    "allmendeproblem": {
+      "terms": [
+        "commons",
+        "oeffentliche-gueter",
+        "externalitaet",
+        "trittbrettfahrerproblem"
+      ],
+      "documents": []
+    },
+    "allokation": {
+      "terms": [
+        "ressourcenallokation",
+        "knappheit",
+        "wirkungswert",
+        "opportunitaetskosten"
+      ],
+      "documents": []
+    },
     "amartya-sen": {
       "terms": [
-        "wirkungseinkommen"
+        "wirkungseinkommen",
+        "reale-freiheit",
+        "positive-freiheit",
+        "wohlfahrtsoekonomie"
       ],
       "documents": []
     },
@@ -167,6 +202,15 @@
       "terms": [
         "biogas",
         "biologischer-kreislauf"
+      ],
+      "documents": []
+    },
+    "anarchokapitalismus": {
+      "terms": [
+        "libertarismus",
+        "self-ownership",
+        "non-aggression-principle",
+        "oeffentliche-gueter"
       ],
       "documents": []
     },
@@ -273,7 +317,8 @@
       "terms": [
         "aufmerksamkeitsoekonomie",
         "salienzsteuerung",
-        "neuropsychologische-wirkmechanismen"
+        "neuropsychologische-wirkmechanismen",
+        "knappheit"
       ],
       "documents": [],
       "journalArticles": [
@@ -294,6 +339,13 @@
         "downcycling",
         "kreislaufwirkung",
         "circular-economy-butterfly-model"
+      ],
+      "documents": []
+    },
+    "austeritaet": {
+      "terms": [
+        "schuldenbremse",
+        "wirkungshaushalt"
       ],
       "documents": []
     },
@@ -503,6 +555,15 @@
         "reaktanz",
         "alarm-frame",
         "sensibilisierung"
+      ],
+      "documents": []
+    },
+    "begrenzte-rationalitaet": {
+      "terms": [
+        "kognitive-belastung",
+        "informationsueberlastung",
+        "rationalitaet",
+        "homo-oeconomicus"
       ],
       "documents": []
     },
@@ -833,6 +894,14 @@
       ],
       "documents": []
     },
+    "chicago-school": {
+      "terms": [
+        "monetarismus",
+        "deregulierung",
+        "supply-side-economics"
+      ],
+      "documents": []
+    },
     "circular-economy-butterfly-model": {
       "terms": [
         "biologischer-kreislauf",
@@ -881,7 +950,8 @@
       "terms": [
         "emissionshandel",
         "klimafolgeschaeden",
-        "gruener-kapitalismus"
+        "gruener-kapitalismus",
+        "pigou-steuer"
       ],
       "documents": [],
       "journalArticles": [
@@ -900,6 +970,14 @@
       ],
       "documents": []
     },
+    "coase-theorem": {
+      "terms": [
+        "externalitaet",
+        "transaktionskosten",
+        "eigentumsrechte"
+      ],
+      "documents": []
+    },
     "commons": {
       "terms": [
         "elinor-ostrom",
@@ -907,7 +985,9 @@
         "selbstorganisation",
         "vertrauen",
         "genossenschaft",
-        "dezentralisierung"
+        "dezentralisierung",
+        "trittbrettfahrerproblem",
+        "allmendeproblem"
       ],
       "documents": []
     },
@@ -1021,7 +1101,9 @@
         "wirkungshaushalt",
         "skandinavisches-modell",
         "wohlfahrtsstaat",
-        "stadtwerke"
+        "stadtwerke",
+        "natuerliches-monopol",
+        "privatisierung"
       ],
       "documents": []
     },
@@ -1100,6 +1182,16 @@
       ],
       "documents": []
     },
+    "deregulierung": {
+      "terms": [
+        "neoliberalismus",
+        "regulierungsversagen",
+        "externalitaet",
+        "chicago-school",
+        "supply-side-economics"
+      ],
+      "documents": []
+    },
     "design-for-disassembly": {
       "terms": [
         "modularitaet",
@@ -1154,7 +1246,8 @@
         "wirkungsrat",
         "genossenschaft",
         "machtkonzentration",
-        "energiegemeinschaft"
+        "energiegemeinschaft",
+        "oesterreichische-schule"
       ],
       "documents": []
     },
@@ -1203,7 +1296,9 @@
         "technischer-kreislauf",
         "materialpass",
         "batteriepass",
-        "anlagenpass"
+        "anlagenpass",
+        "vollstaendige-information",
+        "informationsasymmetrie"
       ],
       "documents": []
     },
@@ -1340,7 +1435,12 @@
         "wirkungsgrad",
         "verlustleistung",
         "peter-drucker",
-        "neoliberalismus"
+        "neoliberalismus",
+        "neoklassik",
+        "systemkosten",
+        "externalisierung",
+        "positive-netto-wirkung",
+        "pareto-effizienz"
       ],
       "documents": []
     },
@@ -1360,6 +1460,31 @@
         "ladepunktbetreiber",
         "ad-hoc-laden",
         "plug-and-charge"
+      ],
+      "documents": []
+    },
+    "eigentumsrechte": {
+      "terms": [
+        "eigentumsverantwortung",
+        "kapital",
+        "liberalismus",
+        "libertarismus",
+        "wirtschaftsliberalismus",
+        "klassischer-liberalismus",
+        "vertragsfreiheit",
+        "minarchismus",
+        "coase-theorem",
+        "privatisierung"
+      ],
+      "documents": []
+    },
+    "eigentumsverantwortung": {
+      "terms": [
+        "eigentumsrechte",
+        "wirkungsverantwortung",
+        "externalisierung",
+        "kapitalwirkung",
+        "wirkungsfreiheit"
       ],
       "documents": []
     },
@@ -1908,7 +2033,35 @@
         "trickle-down-oekonomie",
         "lineare-wirtschaft",
         "dominanzlogik",
-        "oekofeminismus"
+        "oekofeminismus",
+        "effizienz",
+        "wirkungsfreiheit",
+        "eigentumsverantwortung",
+        "libertarismus",
+        "externalitaet",
+        "negative-externalitaet",
+        "moral-hazard"
+      ],
+      "documents": []
+    },
+    "externalitaet": {
+      "terms": [
+        "externalisierung",
+        "negative-externalitaet",
+        "positive-externalitaet",
+        "marktversagen",
+        "wirkungssteuer",
+        "grenzkosten",
+        "neoliberalismus",
+        "wirtschaftsliberalismus",
+        "non-aggression-principle",
+        "neoklassik",
+        "marktgleichgewicht",
+        "pareto-effizienz",
+        "allmendeproblem",
+        "coase-theorem",
+        "pigou-steuer",
+        "deregulierung"
       ],
       "documents": []
     },
@@ -2367,7 +2520,8 @@
     },
     "generationengerechtigkeit": {
       "terms": [
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "schuldenbremse"
       ],
       "documents": []
     },
@@ -2537,7 +2691,8 @@
         "feminismus",
         "patriarchat",
         "koerperliche-selbstbestimmung",
-        "reproduktive-gerechtigkeit"
+        "reproduktive-gerechtigkeit",
+        "sozialliberalismus"
       ],
       "documents": []
     },
@@ -2635,7 +2790,12 @@
     "grenzkosten": {
       "terms": [
         "merit-order",
-        "grenzkraftwerk"
+        "grenzkraftwerk",
+        "strommarkt",
+        "externalitaet",
+        "systemkosten",
+        "neoklassik",
+        "grenznutzen"
       ],
       "documents": []
     },
@@ -2643,6 +2803,14 @@
       "terms": [
         "merit-order",
         "strommarkt",
+        "grenzkosten"
+      ],
+      "documents": []
+    },
+    "grenznutzen": {
+      "terms": [
+        "neoklassik",
+        "nutzenmaximierung",
         "grenzkosten"
       ],
       "documents": []
@@ -2986,6 +3154,15 @@
       ],
       "documents": []
     },
+    "homo-oeconomicus": {
+      "terms": [
+        "neoklassik",
+        "nutzenmaximierung",
+        "praeferenzen",
+        "begrenzte-rationalitaet"
+      ],
+      "documents": []
+    },
     "host-wirkungsscore": {
       "terms": [
         "scorecard",
@@ -3212,11 +3389,26 @@
       ],
       "documents": []
     },
+    "informationsasymmetrie": {
+      "terms": [
+        "vollstaendige-information",
+        "adverse-selection",
+        "moral-hazard",
+        "digitaler-produktpass",
+        "scorecard",
+        "selbstverantwortung",
+        "vertragsfreiheit",
+        "marktversagen",
+        "principal-agent-problem"
+      ],
+      "documents": []
+    },
     "informationsueberlastung": {
       "terms": [
         "orientierung",
         "vertrauen",
-        "kognitive-belastung"
+        "kognitive-belastung",
+        "begrenzte-rationalitaet"
       ],
       "documents": []
     },
@@ -3429,7 +3621,8 @@
         "akkumulation",
         "mehrwert",
         "kapitalismus",
-        "trickle-down-oekonomie"
+        "trickle-down-oekonomie",
+        "eigentumsrechte"
       ],
       "documents": [],
       "journalArticles": [
@@ -3501,7 +3694,9 @@
         "finanzmarktkapitalismus",
         "staatskapitalismus",
         "extraktiver-kapitalismus",
-        "trickle-down-oekonomie"
+        "trickle-down-oekonomie",
+        "eigentumsverantwortung",
+        "rent-seeking"
       ],
       "documents": []
     },
@@ -3558,6 +3753,15 @@
       ],
       "documents": []
     },
+    "klassischer-liberalismus": {
+      "terms": [
+        "liberalismus",
+        "wirtschaftsliberalismus",
+        "negative-freiheit",
+        "eigentumsrechte"
+      ],
+      "documents": []
+    },
     "klimaanpassung": {
       "terms": [
         "klimarisiko",
@@ -3578,7 +3782,8 @@
         "verlustleistung",
         "externalisierung",
         "kohlekraftwerk",
-        "co2-preis"
+        "co2-preis",
+        "negative-externalitaet"
       ],
       "documents": []
     },
@@ -3640,11 +3845,20 @@
         "/blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html"
       ]
     },
+    "knappheit": {
+      "terms": [
+        "planetare-grenzen",
+        "aufmerksamkeit",
+        "allokation"
+      ],
+      "documents": []
+    },
     "kognitive-belastung": {
       "terms": [
         "informationsueberlastung",
         "scheinentlastung",
-        "mental-load"
+        "mental-load",
+        "begrenzte-rationalitaet"
       ],
       "documents": []
     },
@@ -3769,6 +3983,14 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "konsumentensouveraenitaet": {
+      "terms": [
+        "praeferenzen",
+        "vollstaendige-information",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
     "konzessionsabgabe": {
       "terms": [
         "strompreisbestandteile"
@@ -3789,7 +4011,8 @@
       "terms": [
         "reproduktive-rechte",
         "gleichwertigkeit",
-        "reproduktive-gerechtigkeit"
+        "reproduktive-gerechtigkeit",
+        "self-ownership"
       ],
       "documents": []
     },
@@ -4029,6 +4252,14 @@
       ],
       "documents": []
     },
+    "laffer-kurve": {
+      "terms": [
+        "supply-side-economics",
+        "trickle-down-oekonomie",
+        "steuerkritik"
+      ],
+      "documents": []
+    },
     "langzeitspeicher": {
       "terms": [
         "dunkelflaute",
@@ -4182,6 +4413,37 @@
       ],
       "documents": []
     },
+    "liberalismus": {
+      "terms": [
+        "negative-freiheit",
+        "positive-freiheit",
+        "reale-freiheit",
+        "marktwirtschaft",
+        "eigentumsrechte",
+        "wirkungsfreiheit",
+        "wirklichkeitsbindung",
+        "neoliberalismus",
+        "politischer-liberalismus",
+        "wirtschaftsliberalismus",
+        "klassischer-liberalismus",
+        "sozialliberalismus"
+      ],
+      "documents": []
+    },
+    "libertarismus": {
+      "terms": [
+        "negative-freiheit",
+        "eigentumsrechte",
+        "nachtwaechterstaat",
+        "minarchismus",
+        "anarchokapitalismus",
+        "non-aggression-principle",
+        "steuerkritik",
+        "externalisierung",
+        "self-ownership"
+      ],
+      "documents": []
+    },
     "lieferkettendaten": {
       "terms": [
         "csddd",
@@ -4290,7 +4552,8 @@
         "glaeserne-decke",
         "machtdezentralisierung",
         "dominanzlogik",
-        "patriarchale-dividende"
+        "patriarchale-dividende",
+        "marktmacht"
       ],
       "documents": []
     },
@@ -4317,11 +4580,46 @@
         "/blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html"
       ]
     },
+    "marktgleichgewicht": {
+      "terms": [
+        "neoklassik",
+        "marktwirtschaft",
+        "wirkungswahrheit",
+        "externalitaet",
+        "allgemeines-gleichgewicht"
+      ],
+      "documents": []
+    },
+    "marktmacht": {
+      "terms": [
+        "monopol",
+        "oligopol",
+        "machtkonzentration",
+        "plattformkapitalismus",
+        "vertragsfreiheit",
+        "marktversagen",
+        "regulatory-capture",
+        "rent-seeking",
+        "netzwerkeffekt"
+      ],
+      "documents": []
+    },
     "marktpraemie": {
       "terms": [
         "eeg",
         "capture-price",
         "einspeiseverguetung"
+      ],
+      "documents": []
+    },
+    "marktversagen": {
+      "terms": [
+        "externalitaet",
+        "oeffentliche-gueter",
+        "informationsasymmetrie",
+        "marktmacht",
+        "staatsversagen",
+        "minarchismus"
       ],
       "documents": []
     },
@@ -4345,7 +4643,12 @@
         "wirkungssteuer",
         "ordoliberalismus",
         "neoliberalismus",
-        "trickle-down-oekonomie"
+        "trickle-down-oekonomie",
+        "liberalismus",
+        "wirtschaftsliberalismus",
+        "wirklichkeitsbindung",
+        "marktgleichgewicht",
+        "oesterreichische-schule"
       ],
       "documents": [],
       "journalArticles": [
@@ -4523,6 +4826,15 @@
       ],
       "documents": []
     },
+    "minarchismus": {
+      "terms": [
+        "libertarismus",
+        "nachtwaechterstaat",
+        "eigentumsrechte",
+        "marktversagen"
+      ],
+      "documents": []
+    },
     "mindestschutz-minimum-safeguards": {
       "terms": [
         "eu-taxonomie",
@@ -4573,6 +4885,24 @@
       ],
       "documents": []
     },
+    "modellannahme": {
+      "terms": [
+        "modellblindheit",
+        "neoklassik",
+        "rationalitaet",
+        "allgemeines-gleichgewicht"
+      ],
+      "documents": []
+    },
+    "modellblindheit": {
+      "terms": [
+        "modellannahme",
+        "neoklassik",
+        "wirkungsblindheit",
+        "trickle-down-oekonomie"
+      ],
+      "documents": []
+    },
     "modularitaet": {
       "terms": [
         "design-for-disassembly",
@@ -4585,6 +4915,28 @@
       "terms": [
         "inertia",
         "systemdienstleistungen"
+      ],
+      "documents": []
+    },
+    "monetarismus": {
+      "terms": [
+        "chicago-school"
+      ],
+      "documents": []
+    },
+    "monopol": {
+      "terms": [
+        "marktmacht",
+        "natuerliches-monopol",
+        "oligopol"
+      ],
+      "documents": []
+    },
+    "moral-hazard": {
+      "terms": [
+        "informationsasymmetrie",
+        "externalisierung",
+        "wirkungsverantwortung"
       ],
       "documents": []
     },
@@ -4659,6 +5011,14 @@
       ],
       "documents": []
     },
+    "nachtwaechterstaat": {
+      "terms": [
+        "minarchismus",
+        "libertarismus",
+        "staatsversagen"
+      ],
+      "documents": []
+    },
     "narrativ": {
       "terms": [
         "konstruktives-narrativ",
@@ -4714,10 +5074,39 @@
       ],
       "documents": []
     },
+    "natuerliches-monopol": {
+      "terms": [
+        "monopol",
+        "stromnetz",
+        "netzentgelt",
+        "daseinsvorsorge",
+        "netzwerkeffekt",
+        "privatisierung"
+      ],
+      "documents": []
+    },
     "nca-batterie": {
       "terms": [
         "lithium-ionen-batterie",
         "kritische-rohstoffe"
+      ],
+      "documents": []
+    },
+    "negative-externalitaet": {
+      "terms": [
+        "externalitaet",
+        "externalisierung",
+        "klimafolgeschaeden"
+      ],
+      "documents": []
+    },
+    "negative-freiheit": {
+      "terms": [
+        "liberalismus",
+        "positive-freiheit",
+        "reale-freiheit",
+        "libertarismus",
+        "klassischer-liberalismus"
       ],
       "documents": []
     },
@@ -4737,12 +5126,34 @@
       ],
       "documents": []
     },
+    "neoklassik": {
+      "terms": [
+        "homo-oeconomicus",
+        "nutzenmaximierung",
+        "grenznutzen",
+        "grenzkosten",
+        "opportunitaetskosten",
+        "marktgleichgewicht",
+        "pareto-effizienz",
+        "externalitaet",
+        "modellblindheit",
+        "effizienz",
+        "allgemeines-gleichgewicht",
+        "modellannahme"
+      ],
+      "documents": []
+    },
     "neoliberalismus": {
       "terms": [
         "effizienz",
         "externalisierung",
         "marktwirtschaft",
-        "kapitalismus"
+        "kapitalismus",
+        "liberalismus",
+        "wirtschaftsliberalismus",
+        "deregulierung",
+        "privatisierung",
+        "externalitaet"
       ],
       "documents": []
     },
@@ -4872,7 +5283,8 @@
         "strompreisbestandteile",
         "prosumer",
         "energiewirtschaft",
-        "stromnev"
+        "stromnev",
+        "natuerliches-monopol"
       ],
       "documents": []
     },
@@ -4912,6 +5324,14 @@
         "netzanschlussbegehren",
         "netzanschlussleistung",
         "netzanschlusspunkt"
+      ],
+      "documents": []
+    },
+    "netzwerkeffekt": {
+      "terms": [
+        "plattformkapitalismus",
+        "marktmacht",
+        "natuerliches-monopol"
       ],
       "documents": []
     },
@@ -5053,6 +5473,15 @@
       ],
       "documents": []
     },
+    "non-aggression-principle": {
+      "terms": [
+        "libertarismus",
+        "externalitaet",
+        "wirkungsverantwortung",
+        "anarchokapitalismus"
+      ],
+      "documents": []
+    },
     "normalisierung": {
       "terms": [
         "baseline-verschiebung",
@@ -5110,6 +5539,16 @@
       ],
       "documents": []
     },
+    "nutzenmaximierung": {
+      "terms": [
+        "homo-oeconomicus",
+        "praeferenzen",
+        "wirkungswert",
+        "neoklassik",
+        "grenznutzen"
+      ],
+      "documents": []
+    },
     "nutzungsdauerverlaengerung": {
       "terms": [
         "wartung",
@@ -5150,6 +5589,16 @@
         "lca",
         "scorecard",
         "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "oeffentliche-gueter": {
+      "terms": [
+        "trittbrettfahrerproblem",
+        "allmendeproblem",
+        "wohlfahrtsstaat",
+        "anarchokapitalismus",
+        "marktversagen"
       ],
       "documents": []
     },
@@ -5195,6 +5644,13 @@
       ],
       "documents": []
     },
+    "oligopol": {
+      "terms": [
+        "monopol",
+        "marktmacht"
+      ],
+      "documents": []
+    },
     "oelkraftwerk": {
       "terms": [
         "fossiles-kraftwerk"
@@ -5229,6 +5685,14 @@
         "wirkungsdaten",
         "st-galler-management-modell",
         "normatives-management"
+      ],
+      "documents": []
+    },
+    "opportunitaetskosten": {
+      "terms": [
+        "allokation",
+        "wirkungswert",
+        "neoklassik"
       ],
       "documents": []
     },
@@ -5273,12 +5737,29 @@
         "/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html"
       ]
     },
+    "oesterreichische-schule": {
+      "terms": [
+        "dezentralisierung",
+        "marktwirtschaft",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
     "pai": {
       "terms": [
         "sfdr",
         "sustainable-finance",
         "wirkungsrisiko",
         "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "pareto-effizienz": {
+      "terms": [
+        "effizienz",
+        "wohlfahrtsoekonomie",
+        "externalitaet",
+        "neoklassik"
       ],
       "documents": []
     },
@@ -5428,6 +5909,19 @@
       ],
       "documents": []
     },
+    "pigou-steuer": {
+      "terms": [
+        "externalitaet",
+        "wirkungssteuer",
+        "co2-preis",
+        "steuerkritik",
+        "wohlfahrtsoekonomie"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html"
+      ]
+    },
     "planetare-grenzen": {
       "terms": [
         "wirkungsgrenze",
@@ -5435,7 +5929,8 @@
         "reverse-merit-order",
         "biodiversitaetsrisiko",
         "wasserstress",
-        "maja-goepel"
+        "maja-goepel",
+        "knappheit"
       ],
       "documents": []
     },
@@ -5465,7 +5960,9 @@
         "privatwirtschaftliche-planwirtschaft",
         "sharing",
         "product-as-a-service",
-        "belohnungslernen"
+        "belohnungslernen",
+        "marktmacht",
+        "netzwerkeffekt"
       ],
       "documents": []
     },
@@ -5473,6 +5970,31 @@
       "terms": [
         "eichrecht-ladeinfrastruktur",
         "backend-ladeinfrastruktur"
+      ],
+      "documents": []
+    },
+    "politischer-liberalismus": {
+      "terms": [
+        "liberalismus",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "positive-externalitaet": {
+      "terms": [
+        "externalitaet",
+        "sorgearbeit",
+        "vertrauen"
+      ],
+      "documents": []
+    },
+    "positive-freiheit": {
+      "terms": [
+        "negative-freiheit",
+        "reale-freiheit",
+        "amartya-sen",
+        "liberalismus",
+        "sozialliberalismus"
       ],
       "documents": []
     },
@@ -5522,7 +6044,8 @@
         "gruener-kapitalismus",
         "trickle-down-oekonomie",
         "kreislaufblindheit",
-        "kreislaufwirkung"
+        "kreislaufwirkung",
+        "effizienz"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -5576,6 +6099,15 @@
       ],
       "documents": []
     },
+    "praeferenzen": {
+      "terms": [
+        "nutzenmaximierung",
+        "salienz",
+        "konsumentensouveraenitaet",
+        "homo-oeconomicus"
+      ],
+      "documents": []
+    },
     "praevention": {
       "terms": [
         "wirkungshaushalt",
@@ -5610,6 +6142,22 @@
         "strukturelles-driften",
         "wirkstoff",
         "ankereffekt"
+      ],
+      "documents": []
+    },
+    "principal-agent-problem": {
+      "terms": [
+        "informationsasymmetrie",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "privatisierung": {
+      "terms": [
+        "neoliberalismus",
+        "eigentumsrechte",
+        "daseinsvorsorge",
+        "natuerliches-monopol"
       ],
       "documents": []
     },
@@ -5830,6 +6378,14 @@
       ],
       "documents": []
     },
+    "rationalitaet": {
+      "terms": [
+        "begrenzte-rationalitaet",
+        "modellannahme",
+        "wirklichkeitsbindung"
+      ],
+      "documents": []
+    },
     "raubtierkapitalismus": {
       "terms": [
         "kapitalismus",
@@ -5854,6 +6410,17 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "reale-freiheit": {
+      "terms": [
+        "positive-freiheit",
+        "amartya-sen",
+        "liberalismus",
+        "sozialliberalismus",
+        "negative-freiheit",
+        "selbstverantwortung"
+      ],
+      "documents": []
     },
     "reasonable-assurance": {
       "terms": [
@@ -6014,6 +6581,24 @@
       ],
       "documents": []
     },
+    "regulatory-capture": {
+      "terms": [
+        "regulierungsversagen",
+        "rent-seeking",
+        "marktmacht",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "regulierungsversagen": {
+      "terms": [
+        "staatsversagen",
+        "regulatory-capture",
+        "wirkungssteuer",
+        "deregulierung"
+      ],
+      "documents": []
+    },
     "rekombination": {
       "terms": [
         "unternehmerfunktion",
@@ -6053,6 +6638,14 @@
         "hydrologischer-kreislauf",
         "habitatfragmentierung",
         "humusaufbau"
+      ],
+      "documents": []
+    },
+    "rent-seeking": {
+      "terms": [
+        "regulatory-capture",
+        "marktmacht",
+        "kapitalwirkung"
       ],
       "documents": []
     },
@@ -6252,6 +6845,13 @@
         "impact-washing",
         "green-claims-directive",
         "fuenftes-p-planet"
+      ],
+      "documents": []
+    },
+    "ressourcenallokation": {
+      "terms": [
+        "allokation",
+        "wirkungssteuer"
       ],
       "documents": []
     },
@@ -6455,7 +7055,8 @@
         "resonanz",
         "neuropsychologische-wirkmechanismen",
         "wahrnehmung",
-        "neuigkeitsbias"
+        "neuigkeitsbias",
+        "praeferenzen"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -6531,6 +7132,14 @@
         "innovation",
         "positive-netto-wirkung",
         "joseph-schumpeter"
+      ],
+      "documents": []
+    },
+    "schuldenbremse": {
+      "terms": [
+        "austeritaet",
+        "wirkungshaushalt",
+        "generationengerechtigkeit"
       ],
       "documents": []
     },
@@ -6679,7 +7288,9 @@
         "stakeholder-kapitalismus",
         "zirkularitaetsindikator",
         "kreislaufwirkung",
-        "gender-data-gap"
+        "gender-data-gap",
+        "vollstaendige-information",
+        "informationsasymmetrie"
       ],
       "documents": []
     },
@@ -6822,6 +7433,14 @@
       ],
       "documents": []
     },
+    "selbstverantwortung": {
+      "terms": [
+        "reale-freiheit",
+        "wirkungsverantwortung",
+        "informationsasymmetrie"
+      ],
+      "documents": []
+    },
     "selbstwirksamkeit": {
       "terms": [
         "orientierung",
@@ -6829,6 +7448,14 @@
         "erlernte-hilflosigkeit",
         "wirkungskompetenz",
         "kognitive-dissonanz"
+      ],
+      "documents": []
+    },
+    "self-ownership": {
+      "terms": [
+        "libertarismus",
+        "koerperliche-selbstbestimmung",
+        "anarchokapitalismus"
       ],
       "documents": []
     },
@@ -6964,7 +7591,8 @@
         "mental-load",
         "emotionale-arbeit",
         "feminismus",
-        "gender-care-gap"
+        "gender-care-gap",
+        "positive-externalitaet"
       ],
       "documents": []
     },
@@ -7006,6 +7634,15 @@
         "kommunismus",
         "planwirtschaft",
         "kapital-als-machtverhaeltnis"
+      ],
+      "documents": []
+    },
+    "sozialliberalismus": {
+      "terms": [
+        "liberalismus",
+        "positive-freiheit",
+        "reale-freiheit",
+        "gleichwertigkeit"
       ],
       "documents": []
     },
@@ -7086,6 +7723,15 @@
       ],
       "documents": []
     },
+    "staatsversagen": {
+      "terms": [
+        "marktversagen",
+        "regulierungsversagen",
+        "wirkungsrat",
+        "nachtwaechterstaat"
+      ],
+      "documents": []
+    },
     "stadtwerke": {
       "terms": [
         "kommunale-energie",
@@ -7160,6 +7806,16 @@
       ],
       "documents": []
     },
+    "steuerkritik": {
+      "terms": [
+        "libertarismus",
+        "wirkungssteuer",
+        "pigou-steuer",
+        "laffer-kurve",
+        "supply-side-economics"
+      ],
+      "documents": []
+    },
     "steuerungsdaten": {
       "terms": [
         "berichtsdaten",
@@ -7227,7 +7883,8 @@
         "grenzkraftwerk",
         "stromgestehungskosten",
         "energiewirtschaft",
-        "energiewirtschaftsgesetz"
+        "energiewirtschaftsgesetz",
+        "grenzkosten"
       ],
       "documents": []
     },
@@ -7249,7 +7906,8 @@
         "netzausbau",
         "netzverlust",
         "smart-grid",
-        "energieinfrastruktur"
+        "energieinfrastruktur",
+        "natuerliches-monopol"
       ],
       "documents": []
     },
@@ -7332,6 +7990,16 @@
       "terms": [
         "leistungsdichte",
         "speicher-energie"
+      ],
+      "documents": []
+    },
+    "supply-side-economics": {
+      "terms": [
+        "trickle-down-oekonomie",
+        "laffer-kurve",
+        "steuerkritik",
+        "deregulierung",
+        "chicago-school"
       ],
       "documents": []
     },
@@ -7432,7 +8100,9 @@
         "kernenergie",
         "netzverlust",
         "netzspeicher",
-        "energiewirtschaft"
+        "energiewirtschaft",
+        "effizienz",
+        "grenzkosten"
       ],
       "documents": []
     },
@@ -7662,6 +8332,13 @@
       ],
       "documents": []
     },
+    "transaktionskosten": {
+      "terms": [
+        "coase-theorem",
+        "wirkungsdaten"
+      ],
+      "documents": []
+    },
     "transformationswelle": {
       "terms": [
         "transformationswirkung",
@@ -7772,7 +8449,18 @@
         "externalisierung",
         "positive-netto-wirkung",
         "wirkungssteuer",
-        "vertrauen"
+        "vertrauen",
+        "supply-side-economics",
+        "laffer-kurve",
+        "modellblindheit"
+      ],
+      "documents": []
+    },
+    "trittbrettfahrerproblem": {
+      "terms": [
+        "oeffentliche-gueter",
+        "allmendeproblem",
+        "commons"
       ],
       "documents": []
     },
@@ -8069,6 +8757,15 @@
       ],
       "documents": []
     },
+    "vertragsfreiheit": {
+      "terms": [
+        "wirtschaftsliberalismus",
+        "informationsasymmetrie",
+        "marktmacht",
+        "eigentumsrechte"
+      ],
+      "documents": []
+    },
     "vertrauen": {
       "terms": [
         "vertrauensverschiebung",
@@ -8097,7 +8794,8 @@
         "wertewandel",
         "wirkungsdaten",
         "wirkungsrat",
-        "wirkungsraum"
+        "wirkungsraum",
+        "positive-externalitaet"
       ],
       "documents": [
         "folgencheck-statt-faktencheck-democracy-intelligence",
@@ -8157,6 +8855,16 @@
       ],
       "documents": []
     },
+    "vollstaendige-information": {
+      "terms": [
+        "informationsasymmetrie",
+        "digitaler-produktpass",
+        "scorecard",
+        "wirkungsdaten",
+        "konsumentensouveraenitaet"
+      ],
+      "documents": []
+    },
     "vsme": {
       "terms": [
         "csrd",
@@ -8192,7 +8900,8 @@
         "fakten",
         "vertrauen",
         "faktencheck",
-        "scheinwahrheit"
+        "scheinwahrheit",
+        "wirklichkeitsbindung"
       ],
       "documents": [],
       "journalArticles": [
@@ -8475,6 +9184,17 @@
       ],
       "documents": []
     },
+    "wirklichkeitsbindung": {
+      "terms": [
+        "wirkungswahrheit",
+        "wahrheit",
+        "wirkungsdaten",
+        "marktwirtschaft",
+        "liberalismus",
+        "rationalitaet"
+      ],
+      "documents": []
+    },
     "wirklichkeitskonstruktion": {
       "terms": [
         "framing",
@@ -8659,7 +9379,8 @@
         "scope-3-datenqualitaet",
         "externalisierung",
         "entfremdung",
-        "unsichtbare-arbeit"
+        "unsichtbare-arbeit",
+        "modellblindheit"
       ],
       "documents": [],
       "journalArticles": [
@@ -8695,7 +9416,12 @@
         "operatives-management",
         "organisation-environmental-footprint",
         "scope-3-datenqualitaet",
-        "gender-data-gap"
+        "gender-data-gap",
+        "wirklichkeitsbindung",
+        "konsumentensouveraenitaet",
+        "vollstaendige-information",
+        "transaktionskosten",
+        "oesterreichische-schule"
       ],
       "documents": []
     },
@@ -8771,6 +9497,15 @@
       ],
       "documents": []
     },
+    "wirkungsfreiheit": {
+      "terms": [
+        "liberalismus",
+        "wirkungsverantwortung",
+        "externalisierung",
+        "eigentumsverantwortung"
+      ],
+      "documents": []
+    },
     "wirkungsgrad": {
       "terms": [
         "effizienz",
@@ -8822,7 +9557,9 @@
         "john-maynard-keynes",
         "wohlfahrtsstaat",
         "feministische-wirtschaftspolitik",
-        "gender-budgeting"
+        "gender-budgeting",
+        "austeritaet",
+        "schuldenbremse"
       ],
       "documents": [],
       "journalArticles": [
@@ -9075,7 +9812,11 @@
         "kybernetik-zweiter-ordnung",
         "demokratischer-sozialismus",
         "dezentralisierung",
-        "dezentralisierung-von-macht"
+        "dezentralisierung-von-macht",
+        "politischer-liberalismus",
+        "principal-agent-problem",
+        "staatsversagen",
+        "regulatory-capture"
       ],
       "documents": [
         "wirkungsrat-konzept"
@@ -9270,7 +10011,12 @@
         "marktwirtschaft",
         "gruener-kapitalismus",
         "zentralverwaltungswirtschaft",
-        "trickle-down-oekonomie"
+        "trickle-down-oekonomie",
+        "steuerkritik",
+        "ressourcenallokation",
+        "externalitaet",
+        "pigou-steuer",
+        "regulierungsversagen"
       ],
       "documents": [
         "wstg-oktober-2025",
@@ -9323,7 +10069,12 @@
         "kapitalwirkung",
         "folgencheck",
         "karl-marx",
-        "kapital-als-machtverhaeltnis"
+        "kapital-als-machtverhaeltnis",
+        "wirkungsfreiheit",
+        "selbstverantwortung",
+        "eigentumsverantwortung",
+        "non-aggression-principle",
+        "moral-hazard"
       ],
       "documents": []
     },
@@ -9354,7 +10105,9 @@
         "ordoliberalismus",
         "social-credit",
         "wirkungsdatenraum",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirklichkeitsbindung",
+        "marktgleichgewicht"
       ],
       "documents": []
     },
@@ -9376,7 +10129,11 @@
         "stakeholder-kapitalismus",
         "feministische-oekonomie",
         "feminismus",
-        "unbezahlte-arbeit"
+        "unbezahlte-arbeit",
+        "nutzenmaximierung",
+        "opportunitaetskosten",
+        "wohlfahrtsoekonomie",
+        "allokation"
       ],
       "documents": []
     },
@@ -9386,6 +10143,18 @@
         "wirkungswert",
         "positive-netto-wirkung",
         "sorgearbeit"
+      ],
+      "documents": []
+    },
+    "wirtschaftsliberalismus": {
+      "terms": [
+        "liberalismus",
+        "marktwirtschaft",
+        "vertragsfreiheit",
+        "eigentumsrechte",
+        "externalitaet",
+        "neoliberalismus",
+        "klassischer-liberalismus"
       ],
       "documents": []
     },
@@ -9400,12 +10169,22 @@
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
       ]
     },
+    "wohlfahrtsoekonomie": {
+      "terms": [
+        "pareto-effizienz",
+        "pigou-steuer",
+        "amartya-sen",
+        "wirkungswert"
+      ],
+      "documents": []
+    },
     "wohlfahrtsstaat": {
       "terms": [
         "skandinavisches-modell",
         "soziale-marktwirtschaft",
         "daseinsvorsorge",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "oeffentliche-gueter"
       ],
       "documents": []
     },
