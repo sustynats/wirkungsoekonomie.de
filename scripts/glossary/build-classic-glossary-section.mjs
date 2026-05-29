@@ -96,6 +96,15 @@ function filterToken(value) {
     .replace(/^-+|-+$/g, "");
 }
 
+function dimensionTokens(value) {
+  const raw = String(value || "").toLocaleLowerCase("de");
+  const tokens = [filterToken(value)];
+  if (raw.includes("mensch")) tokens.push("mensch");
+  if (raw.includes("planet")) tokens.push("planet");
+  if (raw.includes("demokratie")) tokens.push("demokratie");
+  return Array.from(new Set(tokens.filter(Boolean)));
+}
+
 function filterValues(field, fallbackField = "") {
   const values = new Set();
   for (const term of terms) {
@@ -118,7 +127,7 @@ function termFilterData(term) {
   return {
     type: filterToken(term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category),
     theme: asList(term.theme || term.themes).map(filterToken),
-    dimension: asList(term.dimensions).map(filterToken),
+    dimension: asList(term.dimensions).flatMap(dimensionTokens),
     wirklogik: asList(term.wirklogik).map(filterToken),
     field: asList(term.applicationFields || term.application_fields).map(filterToken),
     source: asList(term.sourceField || term.source_field).map(filterToken),
@@ -281,9 +290,18 @@ ${Array.from(termsByLetter.entries()).sort((a, b) => collator.compare(a[0], b[0]
           const state = { type: new Set(), theme: new Set(), dimension: new Set(), wirklogik: new Set(), field: new Set(), source: new Set(), q: "" };
           const params = new URLSearchParams(window.location.search);
           const split = (value) => (value || "").split(",").map((item) => item.trim()).filter(Boolean);
+          const normalize = (value) => String(value || "")
+            .trim()
+            .toLocaleLowerCase("de")
+            .replace(/ß/g, "ss")
+            .replace(/ä/g, "ae")
+            .replace(/ö/g, "oe")
+            .replace(/ü/g, "ue")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "");
           Object.keys(state).forEach((key) => {
             if (key === "q") state.q = params.get("q") || "";
-            else split(params.get(key)).forEach((value) => state[key].add(value));
+            else split(params.get(key)).forEach((value) => state[key].add(normalize(value)));
           });
           if (search instanceof HTMLInputElement) search.value = state.q;
           function hasAll(card, key) {

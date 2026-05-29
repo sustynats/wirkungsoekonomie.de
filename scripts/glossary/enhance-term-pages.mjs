@@ -116,6 +116,75 @@ function slugify(value) {
     .replace(/-{2,}/g, "-") || "begriff";
 }
 
+function asList(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (!value) return [];
+  return [value];
+}
+
+function filterToken(value) {
+  return String(value || "")
+    .trim()
+    .toLocaleLowerCase("de")
+    .replace(/ß/g, "ss")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function dimensionTokens(value) {
+  const raw = String(value || "").toLocaleLowerCase("de");
+  const tokens = [filterToken(value)];
+  if (raw.includes("mensch")) tokens.push("mensch");
+  if (raw.includes("planet")) tokens.push("planet");
+  if (raw.includes("demokratie")) tokens.push("demokratie");
+  return Array.from(new Set(tokens.filter(Boolean)));
+}
+
+function filterValues(field, fallbackField = "") {
+  const values = new Set();
+  for (const term of records) {
+    for (const value of asList(term[field] || (fallbackField ? term[fallbackField] : []))) values.add(value);
+  }
+  return Array.from(values).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
+}
+
+function filterButtons(name, label, values) {
+  if (!values.length) return "";
+  return `<fieldset class="glossary-filter-group" data-filter-group="${esc(name)}">
+          <legend>${esc(label)}</legend>
+          <div class="filter-chip-row">
+            ${values.map((value) => `<button type="button" data-filter-name="${esc(name)}" data-filter-value="${esc(filterToken(value))}" aria-pressed="false">${esc(value)}</button>`).join("")}
+          </div>
+        </fieldset>`;
+}
+
+function termFilterData(term) {
+  return {
+    type: filterToken(term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category),
+    theme: asList(term.theme || term.themes || term.category).map(filterToken),
+    dimension: asList(term.dimensions).flatMap(dimensionTokens),
+    wirklogik: asList(term.wirklogik).map(filterToken),
+    field: asList(term.applicationFields || term.application_fields).map(filterToken),
+    source: asList(term.sourceField || term.source_field).map(filterToken),
+  };
+}
+
+function dataAttrList(values) {
+  return esc(asList(values).join(" "));
+}
+
+function termBadges(term) {
+  const badges = [
+    term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.status,
+    ...asList(term.theme || term.themes || term.category).slice(0, 2),
+    ...asList(term.dimensions).slice(0, 1),
+  ].filter(Boolean).slice(0, 5);
+  return badges.length ? `<div class="term-card-tags">${badges.map((badge) => `<span>${esc(badge)}</span>`).join("")}</div>` : "";
+}
+
 function slugFromEntry(id, label) {
   if (id) return id.replace(/^begriff-/, "").replace(/-{2,}/g, "-");
   return slugify(label);
@@ -818,24 +887,48 @@ function indexPage() {
     groups.get(letter).push(term);
   }
   const nav = Array.from(groups.keys()).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
-  const categories = categoryOrder.filter((category) => records.some((term) => term.category === category));
+  const quickFilters = [
+    ["Wirkung verstehen", { theme: "wirkung-und-wirkungslogik" }],
+    ["Wirtschaftssysteme vergleichen", { theme: "wirtschaftssysteme-und-gesellschaftsmodelle" }],
+    ["Medienwirkung & Folgencheck", { theme: "demokratie-medien-und-oeffentlichkeit" }],
+    ["Klima & Produktwirkung", { theme: "klima-energie-und-lebenszyklus" }],
+    ["Energie & Strommarkt", { theme: "energie-und-strommarkt" }],
+    ["Psychologische Wirkmechanismen", { theme: "psychologie-und-resonanz" }],
+    ["Philosophie & Werte", { theme: "philosophie-ethik-und-werte" }],
+  ];
+  const typeValues = [...filterValues("type"), ...filterValues("begriffstyp"), ...filterValues("conceptStatus")]
+    .filter((value, index, all) => value && all.indexOf(value) === index);
   const body = `      <section class="hero compact-hero">
         <p class="hero-kicker">WÖk-Referenzsystem</p>
         <h1>Begriffe der Wirkungsökonomie</h1>
-        <p class="hero-subtitle">Alphabetische Begriffsschicht mit Lernseiten, Hoverdefinitionen, Crosslinks, Grundlagenwerk, Journal und Dokumentenbibliothek.</p>
-        <p class="notice">Die Begriffseiten ergänzen das bestehende Glossar. Das Glossar bleibt der schnelle Leseschlüssel; die Einzelseiten vertiefen, verknüpfen und verweisen auf passende Quellen.</p>
+        <p class="hero-subtitle">Alphabetisch, thematisch und wirkungslogisch erschließbar: Suche nach Begriffen, Aliassen, Themenwelten, WÖk-Dimensionen, Anwendungsfeldern und Quellenfeldern.</p>
+        <p class="notice">Die Filter sind kombinierbar und über URL-Parameter verlinkbar, zum Beispiel <code>?theme=wirtschaftssysteme-und-gesellschaftsmodelle</code>, <code>?type=methodenbegriff</code> oder <code>?q=kapital</code>.</p>
       </section>
       <section class="content-band glossary-filter-panel" aria-labelledby="glossary-filter-title">
-        <h2 id="glossary-filter-title">Begriffe filtern</h2>
-        <label>
-          <span class="sr-only">Glossar durchsuchen</span>
-          <input type="search" placeholder="Begriff, Alias oder Definition suchen" data-glossary-search>
-        </label>
-        <div class="filter-chip-row" aria-label="Begriffskategorien">
-          <button type="button" class="active" data-glossary-category="all">Alle</button>
-          ${categories.map((category) => `<button type="button" data-glossary-category="${esc(category)}">${esc(category.replace("begriff", ""))}</button>`).join("")}
+        <div class="section-header compact">
+          <p class="hero-kicker">Filter</p>
+          <h2 id="glossary-filter-title">Glossar gezielt erschließen</h2>
+          <p>Mehrfachfilter grenzen die Ergebnisliste ein; innerhalb der Treffer bleibt die alphabetische Ordnung erhalten.</p>
         </div>
-        <p class="reference-filter-status" data-glossary-filter-status></p>
+        <label class="glossary-search-field">
+          <span>Freitextsuche</span>
+          <input type="search" placeholder="Begriff, Alias, Synonym oder Definition suchen" data-glossary-search aria-label="Glossar durchsuchen">
+        </label>
+        <div class="glossary-quick-filters" aria-label="Schnellfilter">
+          ${quickFilters.map(([label, params]) => `<button type="button" data-quick-filter="${esc(new URLSearchParams(params).toString())}">${esc(label)}</button>`).join("")}
+        </div>
+        <div class="glossary-filter-grid">
+          ${filterButtons("type", "Begriffstyp", typeValues)}
+          ${filterButtons("theme", "Themenwelt", filterValues("theme", "themes"))}
+          ${filterButtons("dimension", "WÖk-Dimension", filterValues("dimensions"))}
+          ${filterButtons("wirklogik", "Wirklogik", filterValues("wirklogik"))}
+          ${filterButtons("field", "Anwendungsfeld", filterValues("applicationFields", "application_fields"))}
+          ${filterButtons("source", "Quellenfeld", filterValues("sourceField", "source_field"))}
+        </div>
+        <div class="glossary-filter-actions">
+          <button type="button" class="btn btn-secondary" data-glossary-reset>Filter zurücksetzen</button>
+          <p class="reference-filter-status" data-glossary-filter-status role="status" aria-live="polite"></p>
+        </div>
       </section>
       <nav class="az-nav" aria-label="Alphabetische Navigation">
         ${nav.map((letter) => `<a href="#${esc(letter)}">${esc(letter)}</a>`).join(" ")}
@@ -844,35 +937,105 @@ function indexPage() {
         const items = groups.get(letter);
         return `<section id="${esc(letter)}" class="content-band">
         <h2>${esc(letter)}</h2>
-        <div class="card-grid">${items.map((term) => `<article class="info-card" data-glossary-card data-category="${esc(term.category || "")}" data-search="${esc([term.canonicalLabel, term.shortDefinition, term.hoverDefinition, ...(term.synonyms || [])].join(" ").toLowerCase())}">
+        <div class="card-grid">${items.map((term) => {
+          const filterData = termFilterData(term);
+          return `<article class="info-card glossary-result-card" data-glossary-card data-category="${esc(term.category || "")}" data-type="${esc(filterData.type)}" data-theme="${dataAttrList(filterData.theme)}" data-dimension="${dataAttrList(filterData.dimension)}" data-wirklogik="${dataAttrList(filterData.wirklogik)}" data-field="${dataAttrList(filterData.field)}" data-source="${dataAttrList(filterData.source)}" data-search="${esc([term.canonicalLabel, term.shortDefinition, term.hoverDefinition, term.longDefinition, term.woekRelation, ...(term.synonyms || []), ...(term.aliases || [])].join(" ").toLowerCase())}">
           <h3><a href="${esc(term.slug)}/">${esc(term.canonicalLabel)}</a></h3>
           <p>${esc(term.shortDefinition)}</p>
-          <p class="meta-line">${esc(term.category || "Begriff")} · ${esc(term.status)} · Version ${esc(term.version)}</p>
-        </article>`).join("")}</div>
+          ${termBadges(term)}
+          <p class="meta-line">${esc(term.category || "Begriff")} · ${esc(term.type || term.begriffstyp || term.status)} · Version ${esc(term.version)}</p>
+        </article>`;
+        }).join("")}</div>
       </section>`;
       }).join("\n")}
       <script>
         (() => {
           const search = document.querySelector("[data-glossary-search]");
-          const buttons = Array.from(document.querySelectorAll("[data-glossary-category]"));
+          const buttons = Array.from(document.querySelectorAll("[data-filter-name]"));
           const cards = Array.from(document.querySelectorAll("[data-glossary-card]"));
           const status = document.querySelector("[data-glossary-filter-status]");
-          let active = "all";
+          const reset = document.querySelector("[data-glossary-reset]");
+          const quickButtons = Array.from(document.querySelectorAll("[data-quick-filter]"));
+          const state = { type: new Set(), theme: new Set(), dimension: new Set(), wirklogik: new Set(), field: new Set(), source: new Set(), q: "" };
+          const params = new URLSearchParams(window.location.search);
+          const split = (value) => (value || "").split(",").map((item) => item.trim()).filter(Boolean);
+          const normalize = (value) => String(value || "")
+            .trim()
+            .toLocaleLowerCase("de")
+            .replace(/ß/g, "ss")
+            .replace(/ä/g, "ae")
+            .replace(/ö/g, "oe")
+            .replace(/ü/g, "ue")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "");
+          Object.keys(state).forEach((key) => {
+            if (key === "q") state.q = params.get("q") || "";
+            else split(params.get(key)).forEach((value) => state[key].add(normalize(value)));
+          });
+          if (search instanceof HTMLInputElement) search.value = state.q;
+          function hasAll(card, key) {
+            const selected = state[key];
+            if (!selected || !selected.size) return true;
+            const values = (card.dataset[key] || "").split(" ").filter(Boolean);
+            return Array.from(selected).every((value) => values.includes(value));
+          }
+          function updateUrl() {
+            const next = new URLSearchParams();
+            if (state.q) next.set("q", state.q);
+            ["type", "theme", "dimension", "wirklogik", "field", "source"].forEach((key) => {
+              if (state[key].size) next.set(key, Array.from(state[key]).join(","));
+            });
+            const url = next.toString() ? window.location.pathname + "?" + next.toString() : window.location.pathname;
+            window.history.replaceState(null, "", url);
+          }
           function apply() {
-            const q = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : "";
+            const q = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : state.q;
+            state.q = q;
             let visible = 0;
             cards.forEach((card) => {
-              const categoryMatch = active === "all" || card.dataset.category === active;
               const textMatch = !q || (card.dataset.search || card.textContent || "").toLowerCase().includes(q);
-              const show = categoryMatch && textMatch;
+              const show = textMatch && hasAll(card, "type") && hasAll(card, "theme") && hasAll(card, "dimension") && hasAll(card, "wirklogik") && hasAll(card, "field") && hasAll(card, "source");
               card.hidden = !show;
               if (show) visible += 1;
             });
-            if (status) status.textContent = visible + " Begriffe sichtbar";
+            buttons.forEach((button) => {
+              const key = button.dataset.filterName;
+              const value = button.dataset.filterValue;
+              const active = Boolean(key && value && state[key]?.has(value));
+              button.classList.toggle("active", active);
+              button.setAttribute("aria-pressed", String(active));
+            });
+            document.querySelectorAll(".content-band[id]").forEach((section) => {
+              if (!section.querySelector("[data-glossary-card]")) return;
+              section.hidden = !Array.from(section.querySelectorAll("[data-glossary-card]")).some((card) => !card.hidden);
+            });
+            if (status) status.textContent = visible + " von " + cards.length + " Begriffen sichtbar";
+            updateUrl();
           }
           buttons.forEach((button) => button.addEventListener("click", () => {
-            active = button.dataset.glossaryCategory || "all";
-            buttons.forEach((item) => item.classList.toggle("active", item === button));
+            const key = button.dataset.filterName;
+            const value = button.dataset.filterValue;
+            if (!key || !value || !state[key]) return;
+            if (state[key].has(value)) state[key].delete(value);
+            else state[key].add(value);
+            apply();
+          }));
+          quickButtons.forEach((button) => button.addEventListener("click", () => {
+            Object.keys(state).forEach((key) => {
+              if (key === "q") state.q = "";
+              else state[key].clear();
+            });
+            const quick = new URLSearchParams(button.dataset.quickFilter || "");
+            quick.forEach((value, key) => state[key]?.add(value));
+            if (search instanceof HTMLInputElement) search.value = "";
+            apply();
+          }));
+          reset?.addEventListener("click", () => {
+            Object.keys(state).forEach((key) => {
+              if (key === "q") state.q = "";
+              else state[key].clear();
+            });
+            if (search instanceof HTMLInputElement) search.value = "";
             apply();
           }));
           search?.addEventListener("input", apply);

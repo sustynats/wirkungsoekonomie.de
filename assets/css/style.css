@@ -894,6 +894,12 @@ a {
   display: none;
 }
 
+.content-band[hidden],
+.classic-glossary-letter[hidden],
+[data-glossary-card][hidden] {
+  display: none !important;
+}
+
 .glossary-card-title,
 .glossary-sheet-title {
   margin: 0 0 0.4rem;
