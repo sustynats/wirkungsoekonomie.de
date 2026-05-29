@@ -8892,7 +8892,7 @@
       "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer, emotionaler oder institutioneller Raum, in dem Sprache, Bilder, Narrative, Produkte, Regeln oder Ereignisse Anschlussfähigkeit erzeugen.",
       "definition": "Resonanzräume können konstruktiv oder destruktiv sein. Sie entscheiden mit, ob Fakten integrieren, ob Narrative mobilisieren, ob Produkte Verhalten ändern oder ob politische Aussagen Vertrauen verschieben.",
       "longDefinition": "Ein Resonanzraum ist kein Nachweis eingetretener Wirkung. Er beschreibt den Raum, in dem Impulse aufgenommen, verstärkt, blockiert oder umgedeutet werden können: sozial, medial, emotional, institutionell oder ökonomisch.",
-      "woekRelation": "Resonanzräume erklären, warum Fakten, Wirkungsdaten, Produkte, Preise, politische Sprache oder Medienbeiträge unterschiedliche Wirkpfade entfalten. Sie verbinden Anschlussfähigkeit, Wirkungspotenzial, Wirkungsrisiko und tatsächliche Zustandsveränderung, ohne diese Ebenen zu vermischen.",
+      "woekRelation": "Resonanzräume können konstruktiv oder destruktiv sein. Sie entscheiden mit, ob Fakten integrieren, Narrative mobilisieren, Produkte Verhalten ändern oder politische Aussagen Vertrauen verschieben.",
       "statusNote": "Nicht mit nachgewiesener Wirkung gleichsetzen.",
       "usageNote": "Nicht mit nachgewiesener Wirkung gleichsetzen.",
       "categories": [
@@ -8913,9 +8913,15 @@
         "framing",
         "narrativ",
         "vertrauen",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "faktenargumentation",
+        "faktenreaktanz",
+        "salienz",
+        "sensemaking"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
       "pageUrl": "/begriffe/resonanzraum/",
       "priority": 89,
       "status": "führender-begriff",
@@ -8948,7 +8954,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ]
     },
     {
@@ -11155,7 +11165,9 @@
         "wirkungsdaten",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "gesellschaftliche-stabilitaet",
+        "faktenreaktanz"
       ],
       "officialSources": [
         "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html#vertrauen"
@@ -11195,7 +11207,7 @@
         "Desinformation beschädigt Vertrauen nicht nur durch falsche Inhalte, sondern durch die Zerstörung gemeinsamer Wirklichkeit.",
         "Ein Renten-, Steuer- oder Sozialsystem gewinnt Vertrauen, wenn Menschen erleben, dass Leistung, Verantwortung und Wirkung fair anerkannt werden."
       ],
-      "preferredUsage": "Vertrauen als demokratischen Wirkungszustand, Rückkopplungsbedingung und systemische Aufnahmefähigkeit beschreiben.",
+      "preferredUsage": "Vertrauen kann Vertrauen zerstören, wenn personalisierte Loyalität institutionelles Vertrauen verdrängt.",
       "deprecatedUsage": [
         "Vertrauen als bloßes Gefühl erklären",
         "Vertrauen mit Wahrheit gleichsetzen",
@@ -11644,11 +11656,12 @@
       "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
       "definition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung.",
       "longDefinition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung.",
-      "woekRelation": "Nur als Analogie, nicht als harte Fachkategorie.",
+      "woekRelation": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial. Er ist keine harte Fachkategorie und kein Nachweis eingetretener Wirkung.",
       "statusNote": "Nur als Analogie, nicht als harte Fachkategorie.",
       "usageNote": "Nur als Analogie, nicht als harte Fachkategorie.",
       "categories": [
-        "grundbegriff"
+        "grundbegriff",
+        "psychologische-systemische-wirkmechanismen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -11656,14 +11669,18 @@
         "wirkungspotenzial",
         "wirkmechanismus",
         "wirkungspfad",
-        "resonanzraum"
+        "resonanzraum",
+        "salienz",
+        "framing",
+        "priming",
+        "faktenargumentation"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkstoff/",
       "priority": 128,
       "status": "führender-begriff",
       "version": "1.0",
-      "category": "Grundbegriff",
+      "category": "Psychologische und systemische Wirkmechanismen",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Führende Mini-Definitionen",
@@ -11682,7 +11699,22 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkstoff",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-29",
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "updatedAt": "2026-05-29"
     },
     {
       "id": "wirkung",
@@ -11778,7 +11810,9 @@
         "interdependenz",
         "selbstorganisation",
         "wirkungsintegration",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "wirkungsresilienz",
+        "folgewirkung"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungsarchitektur/",
@@ -11898,7 +11932,11 @@
         "salienz",
         "bestaetigungsfehler",
         "wirkungsdaten",
-        "rueckkopplung"
+        "rueckkopplung",
+        "faktenargumentation",
+        "wirkungsrisiko",
+        "folgewirkung",
+        "resonanzraum"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungsblindheit/",
@@ -12267,7 +12305,8 @@
       "relatedTerms": [
         "nichtkompensationsprinzip",
         "reverse-merit-order",
-        "netto-wirkung"
+        "netto-wirkung",
+        "moral-licensing"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungsgrenze/",
@@ -12290,7 +12329,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungsgrenze",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-29",
+      "tags": [],
+      "updatedAt": "2026-05-29"
     },
     {
       "id": "wirkungshaushalt",
@@ -12468,7 +12509,9 @@
         "wirkungspfad",
         "wirkungsrisiko",
         "wirkungsintegration",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "sensemaking",
+        "selbstwirksamkeit"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungskompetenz/",
@@ -12526,7 +12569,9 @@
       "relatedTerms": [
         "wirkungsrückkopplung",
         "wirkungsarchitektur",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "rueckkopplung"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungslenkung/",
@@ -12549,7 +12594,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungslenkung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-29",
+      "tags": [],
+      "updatedAt": "2026-05-29"
     },
     {
       "id": "wirkungsnetz",
@@ -12706,7 +12753,9 @@
         "wirkungsrisiko",
         "resonanzraum",
         "rueckkopplung",
-        "interdependenz"
+        "interdependenz",
+        "folgewirkung",
+        "wirkstoff"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungspfad/",
@@ -12730,7 +12779,11 @@
       "glossaryOrderKey": "wirkungspfad",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-05-29",
-      "tags": [],
+      "tags": [
+        "Systemtheorie",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko"
+      ],
       "updatedAt": "2026-05-29"
     },
     {
@@ -12829,7 +12882,9 @@
         "resonanzraum",
         "anschlussfaehigkeit",
         "salienz",
-        "framing"
+        "framing",
+        "folgewirkung",
+        "faktenargumentation"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungspotenzial/",
@@ -12860,7 +12915,9 @@
         "Wirkungspotenzial",
         "Resonanz",
         "Kommunikation",
-        "Transformation"
+        "Transformation",
+        "Resonanzraum",
+        "Systemtheorie"
       ],
       "updatedAt": "2026-05-29"
     },
@@ -13247,7 +13304,8 @@
       "statusNote": "Präzisiert allgemeine Resilienz wirkungsökonomisch; nicht wertneutral verherrlichen.",
       "usageNote": "Präzisiert allgemeine Resilienz wirkungsökonomisch; nicht wertneutral verherrlichen.",
       "categories": [
-        "grundbegriff"
+        "grundbegriff",
+        "psychologische-systemische-wirkmechanismen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -13261,9 +13319,13 @@
         "vertrauen",
         "rueckkopplung",
         "kipppunkt",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "resilienz",
+        "gesellschaftliche-stabilitaet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
       "pageUrl": "/begriffe/wirkungsresilienz/",
       "priority": 154,
       "status": "führender-begriff",
@@ -13292,7 +13354,16 @@
         "Wirkungsresilienz",
         "Demokratie",
         "Systemtheorie",
-        "Transformation"
+        "Transformation",
+        "Psychologie",
+        "Konstruktivismus",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen"
       ]
     },
     {
@@ -13328,7 +13399,12 @@
         "wirkmechanismus",
         "alarm-frame",
         "destruktives-narrativ",
-        "kipppunkt"
+        "kipppunkt",
+        "folgewirkung",
+        "faktenreaktanz",
+        "moral-licensing",
+        "destruktive-vertrauensbindung",
+        "baseline-verschiebung"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungsrisiko/",
@@ -13356,7 +13432,8 @@
         "Wirkungsrisiko",
         "Resonanz",
         "Systemtheorie",
-        "Demokratie"
+        "Demokratie",
+        "Resonanzraum"
       ],
       "updatedAt": "2026-05-29"
     },
@@ -13392,7 +13469,10 @@
         "wirkungslenkung",
         "wirkungsarchitektur",
         "vertrauen",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "rueckkopplung",
+        "folgewirkung",
+        "wirkungsintegration"
       ],
       "officialSources": [
         "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
@@ -13417,7 +13497,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungsrückkopplung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-29",
+      "tags": [],
+      "updatedAt": "2026-05-29"
     },
     {
       "id": "wirkungsschule",
@@ -13815,7 +13897,10 @@
       "relatedTerms": [
         "wirkungsblindheit",
         "wirkungsdatenraum",
-        "wirkungsrat"
+        "wirkungsrat",
+        "faktenargumentation",
+        "vertrauen",
+        "folgencheck"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungswahrheit/",
@@ -13840,7 +13925,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungswahrheit",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27"
+      "lastUpdated": "2026-05-29",
+      "tags": [],
+      "updatedAt": "2026-05-29"
     },
     {
       "id": "wix-vi",
@@ -14757,9 +14844,9 @@
         "Kognitive Dissonanz"
       ],
       "shortDefinition": "Kognitive Dissonanz ist ein innerer Spannungszustand, der entsteht, wenn Wahrnehmung, Erwartung, Selbstbild, Überzeugung oder Realität nicht zusammenpassen.",
-      "definition": "Kognitive Dissonanz beschreibt die psychische Spannung, die entsteht, wenn Menschen mit Informationen, Erfahrungen oder Ereignissen konfrontiert werden, die nicht zu ihrem bisherigen Deutungsrahmen passen. Dieser Zustand ist unangenehm. Menschen versuchen ihn zu reduzieren: durch Lernen, Integration, Umdeutung, Abwehr, Verdrängung oder die Annahme einfacher Erklärungen.",
-      "longDefinition": "Kognitive Dissonanz beschreibt die psychische Spannung, die entsteht, wenn Menschen mit Informationen, Erfahrungen oder Ereignissen konfrontiert werden, die nicht zu ihrem bisherigen Deutungsrahmen passen. Dieser Zustand ist unangenehm. Menschen versuchen ihn zu reduzieren: durch Lernen, Integration, Umdeutung, Abwehr, Verdrängung oder die Annahme einfacher Erklärungen.",
-      "woekRelation": "Kognitive Dissonanz ist nicht selbst Wirkung im engeren Sinn, sondern ein psychischer Systemzustand und ein möglicher Wirkmechanismus. Sie kann Wirkungspotenziale verstärken oder abschwächen. In Medien und Politik kann sie Abwehr, Polarisierung, Vertrauensverschiebung oder Reframing auslösen. Bei Produkten kann sie entstehen, wenn Konsumentscheidungen nicht zu eigenen Werten passen. In Transformationen kann sie Widerstand auslösen, wenn neue Wirkungslogiken alte Selbstbilder infrage stellen.",
+      "definition": "Kognitive Dissonanz beschreibt die psychische Spannung, die entsteht, wenn Menschen Informationen, Erfahrungen oder Veränderungen erleben, die nicht zu ihrem bisherigen Deutungsrahmen passen. Dieser Zustand ist unangenehm. Menschen versuchen ihn zu reduzieren: durch Lernen, Integration, Umdeutung, Abwehr, Verdrängung oder die Annahme einfacher Erklärungen.",
+      "longDefinition": "Kognitive Dissonanz beschreibt die psychische Spannung, die entsteht, wenn Menschen Informationen, Erfahrungen oder Veränderungen erleben, die nicht zu ihrem bisherigen Deutungsrahmen passen. Sie kann konstruktiv verarbeitet werden, wenn sie Lernen, Reframing und Integration auslöst. Sie kann destruktiv verarbeitet werden, wenn sie durch Feindbilder, Sündenböcke, Verschwörungsnarrative oder institutionelles Misstrauen reduziert wird.",
+      "woekRelation": "Kognitive Dissonanz ist nicht selbst Wirkung im engeren Sinn. Sie ist ein psychischer Zustand und ein Wirkmechanismus. Aus ihr können Wirkungspotenziale und Wirkungsrisiken entstehen: bei Produkten, Ernährung, Klimaschutz, Politik, Medien und Unternehmen.",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
       "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
       "categories": [
@@ -14775,7 +14862,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -14788,7 +14879,12 @@
         "vertrauensverschiebung",
         "reframing",
         "emotionsregulation",
-        "dissonanzreduktion"
+        "dissonanzreduktion",
+        "faktenargumentation",
+        "faktenreaktanz",
+        "status-quo-bias",
+        "affektheuristik",
+        "selbstwirksamkeit"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -14812,10 +14908,10 @@
       ],
       "examples": [
         "Eine Person sieht sich als nachhaltig, kauft aber ein sehr schädliches Produkt. Die Dissonanz kann zu Verhaltensänderung führen oder zu Rechtfertigung.",
-        "Anhänger:innen einer Politikerin erfahren, dass diese gelogen hat. Statt Vertrauen zu verlieren, deuten sie den Faktencheck als Angriff auf die eigene Gruppe.",
-        "Mitarbeitende erleben eine Transformation als Angriff auf ihre berufliche Identität und wehren sich gegen neue Wirkungslogiken."
+        "Faktenchecks können als Angriff auf die eigene Gruppenidentität erlebt werden und dadurch Faktenreaktanz auslösen.",
+        "Transformation kann alte Rollen, Status oder Selbstbilder infrage stellen und Widerstand auslösen."
       ],
-      "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
+      "preferredUsage": "Kognitive Dissonanz ist der Raum zwischen dem, was Menschen erleben, erwarten und glauben.",
       "deprecatedUsage": [
         "als moralisches Etikett für Personen verwenden",
         "mit eingetretener Wirkung gleichsetzen"
@@ -14859,7 +14955,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -14937,7 +15037,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15015,7 +15119,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15082,7 +15190,7 @@
       "shortDefinition": "Identitätsschutz beschreibt den Mechanismus, durch den Menschen Informationen abwehren oder umdeuten, wenn diese die eigene Gruppenzugehörigkeit, Rolle oder Selbstachtung bedrohen.",
       "definition": "Menschen orientieren sich nicht nur an Fakten, sondern auch an Zugehörigkeit, Status, Selbstbild und sozialer Sicherheit. Informationen, die diese Ebenen bedrohen, können als Angriff erlebt werden. Das kann Abwehr, Trotz, Polarisierung oder stärkere Gruppenbindung auslösen.",
       "longDefinition": "Menschen orientieren sich nicht nur an Fakten, sondern auch an Zugehörigkeit, Status, Selbstbild und sozialer Sicherheit. Informationen, die diese Ebenen bedrohen, können als Angriff erlebt werden. Das kann Abwehr, Trotz, Polarisierung oder stärkere Gruppenbindung auslösen.",
-      "woekRelation": "Identitätsschutz ist ein Resonanz- und Wirkmechanismus. Er erklärt, warum gute Daten oder Fakten allein keine positive Wirkung garantieren.",
+      "woekRelation": "Identitätsschutz erklärt, warum Fakten allein oft nicht reichen. Wenn Informationen als Angriff auf Zugehörigkeit, Status oder Selbstbild erlebt werden, kann Abwehr entstehen. Dadurch kann ein Faktencheck faktisch richtig sein und dennoch eine negative Folgewirkung erzeugen.",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
       "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
       "categories": [
@@ -15098,7 +15206,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15108,7 +15220,8 @@
         "reaktanz",
         "vertrauensverschiebung",
         "kognitive-dissonanz",
-        "resonanzraum"
+        "resonanzraum",
+        "ingroup-outgroup-dynamik"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -15159,7 +15272,7 @@
       "shortDefinition": "Salienz bezeichnet die Auffälligkeit oder mentale Hervorhebung eines Reizes, Themas, Risikos, Produkts oder Arguments.",
       "definition": "Salienz entscheidet mit, was Menschen wahrnehmen, erinnern und für wichtig halten. Ein Thema kann salient werden durch Wiederholung, Emotionalisierung, Sichtbarkeit, Kontrast, persönliche Betroffenheit, Bilder, Plattformlogik oder Preis- und Steuerinformationen.",
       "longDefinition": "Salienz entscheidet mit, was Menschen wahrnehmen, erinnern und für wichtig halten. Ein Thema kann salient werden durch Wiederholung, Emotionalisierung, Sichtbarkeit, Kontrast, persönliche Betroffenheit, Bilder, Plattformlogik oder Preis- und Steuerinformationen.",
-      "woekRelation": "Salienz ist kein Wirkungsnachweis, sondern ein Wirkstoff- und Resonanzverstärker. Sie erhöht die Wahrscheinlichkeit, dass ein Wirkungspotenzial aufgenommen wird.",
+      "woekRelation": "Salienz ist kein Wirkungsnachweis. Sie ist ein Wirkstoff- und Resonanzverstärker. Sie erhöht die Wahrscheinlichkeit, dass ein Wirkungspotenzial aufgenommen wird.",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
       "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
       "categories": [
@@ -15175,7 +15288,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15185,7 +15302,10 @@
         "wirkungspotenzial",
         "resonanzraum",
         "verfuegbarkeitsheuristik",
-        "framing"
+        "framing",
+        "affektheuristik",
+        "ankereffekt",
+        "priming"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -15208,11 +15328,12 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "examples": [
-        "Ein Wirkungslabel am Produkt macht ökologische und soziale Folgen salient.",
-        "Ein emotionales Bild in Medien macht ein Thema wichtiger als abstrakte Statistik.",
-        "Eine dramatische Einzelfallgeschichte kann ein Risiko salient machen, auch wenn es statistisch selten ist."
+        "Produktlabel machen Wirkung sichtbar.",
+        "Preise machen Wirkung ökonomisch salient.",
+        "Schlagzeilen machen Risiken emotional salient.",
+        "Bilder machen Leid, Bedrohung oder Zukunft greifbar."
       ],
-      "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
+      "preferredUsage": "Was salient ist, wirkt wahrscheinlicher.",
       "deprecatedUsage": [
         "als moralisches Etikett für Personen verwenden",
         "mit eingetretener Wirkung gleichsetzen"
@@ -15256,7 +15377,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15332,7 +15457,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15408,7 +15537,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15485,7 +15618,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15570,7 +15707,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15633,7 +15774,7 @@
         "Frame",
         "Framing"
       ],
-      "shortDefinition": "Ein Frame ist ein Deutungsrahmen, durch den Informationen verstanden, bewertet und emotional eingeordnet werden.",
+      "shortDefinition": "Framing bezeichnet die Einbettung von Informationen in einen Deutungsrahmen, der bestimmt, wie sie verstanden, bewertet und emotional verarbeitet werden.",
       "definition": "Framing entscheidet nicht nur, was gesagt wird, sondern in welchem Bedeutungsraum es erscheint. Derselbe Fakt kann unterschiedlich wirken, je nachdem ob er als Verlust, Schutz, Kosten, Freiheit, Kontrolle, Bedrohung, Verantwortung oder Zukunftschance gerahmt wird.",
       "longDefinition": "Framing entscheidet nicht nur, was gesagt wird, sondern in welchem Bedeutungsraum es erscheint. Derselbe Fakt kann unterschiedlich wirken, je nachdem ob er als Verlust, Schutz, Kosten, Freiheit, Kontrolle, Bedrohung, Verantwortung oder Zukunftschance gerahmt wird.",
       "woekRelation": "Frames sind Wirkstoffe in Resonanzräumen. Sie erzeugen Wirkungspotenzial, aber noch keine Wirkung im engeren Sinn. Wirkung entsteht erst, wenn der Frame Wahrnehmung, Vertrauen, Entscheidungen, Verhalten oder Institutionen verändert.",
@@ -15652,7 +15793,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15662,7 +15807,10 @@
         "narrativ",
         "resonanzraum",
         "wirkungspotenzial",
-        "wirkstoff"
+        "wirkstoff",
+        "priming",
+        "ankereffekt",
+        "affektheuristik"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -15729,7 +15877,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15810,7 +15962,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15887,7 +16043,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -15964,7 +16124,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16041,7 +16205,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16117,7 +16285,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16194,7 +16366,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16270,7 +16446,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16348,7 +16528,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16424,7 +16608,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16503,7 +16691,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16581,7 +16773,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16660,7 +16856,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16736,7 +16936,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16818,7 +17022,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16894,7 +17102,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -16970,7 +17182,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17045,7 +17261,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17121,7 +17341,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17198,7 +17422,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17275,7 +17503,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17351,7 +17583,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17427,7 +17663,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17507,7 +17747,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17583,7 +17827,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17657,7 +17905,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17733,7 +17985,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17811,7 +18067,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17887,7 +18147,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -17964,7 +18228,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -18041,7 +18309,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -18118,7 +18390,11 @@
         "Demokratie",
         "Wirkungspotenzial",
         "Wirkungsrisiko",
-        "Transformation"
+        "Transformation",
+        "Kybernetik",
+        "politische Sprache",
+        "Resonanzraum",
+        "Vertrauen"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -18163,6 +18439,1032 @@
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-05-29",
       "updatedAt": "2026-05-29"
+    },
+    {
+      "id": "faktenargumentation",
+      "termId": "faktenargumentation",
+      "label": "Faktenargumentation",
+      "canonicalLabel": "Faktenargumentation",
+      "slug": "faktenargumentation",
+      "aliases": [
+        "Faktenargumentation",
+        "Faktenargumente",
+        "faktenbasierte Argumentation"
+      ],
+      "synonyms": [
+        "Faktenargumentation",
+        "Faktenargumente",
+        "faktenbasierte Argumentation"
+      ],
+      "shortDefinition": "Faktenargumentation beschreibt Kommunikation, die Aussagen vor allem durch Daten, Belege oder sachliche Korrekturen begründet.",
+      "definition": "Faktenargumentation ist notwendig, weil öffentliche Entscheidungen eine überprüfbare Wirklichkeitsbasis brauchen. Sie reicht aber nicht immer aus, wenn Informationen in Resonanzräumen auf Angst, Identitätsschutz, Reaktanz oder motiviertes Denken treffen.",
+      "longDefinition": "Faktenargumentation arbeitet mit Belegen, Daten, Korrekturen und nachvollziehbaren Gründen. In der Wirkungsökonomie wird sie nicht abgewertet, sondern eingeordnet: Fakten können Wirkungspotenzial erzeugen, aber ihre tatsächliche Wirkung hängt von Vertrauen, Anschlussfähigkeit, Dissonanz, Frames und Resonanzräumen ab.",
+      "woekRelation": "Faktenargumentation ist kein Wirkungsnachweis. Sie ist ein Wirkstoff mit Wirkungspotenzial. Ob sie Orientierung, Korrektur oder Reaktanz auslöst, hängt vom Wirkpfad und vom Resonanzraum ab.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "faktencheck",
+        "folgencheck",
+        "faktenreaktanz",
+        "meta-kognitive-intervention",
+        "vertrauen",
+        "resonanzraum",
+        "wirkungspotenzial"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/faktenargumentation/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Kommunikation, die Aussagen vor allem durch Daten, Belege oder sachliche Korrekturen begründet.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Faktenargumentation",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Faktenargumentation | Glossar der Wirkungsökonomie",
+      "metaDescription": "Faktenargumentation erklärt, warum sachliche Belege notwendig sind, aber in Resonanzräumen nicht automatisch die beabsichtigte Wirkung entfalten."
+    },
+    {
+      "id": "status-quo-bias",
+      "termId": "status-quo-bias",
+      "label": "Status-quo-Bias",
+      "canonicalLabel": "Status-quo-Bias",
+      "slug": "status-quo-bias",
+      "aliases": [
+        "Status-quo-Bias",
+        "Status quo Bias",
+        "Status-quo-Verzerrung"
+      ],
+      "synonyms": [
+        "Status-quo-Bias",
+        "Status quo Bias",
+        "Status-quo-Verzerrung"
+      ],
+      "shortDefinition": "Der Status-quo-Bias beschreibt die Neigung, bestehende Zustände zu bevorzugen, auch wenn bessere Alternativen verfügbar sind.",
+      "definition": "Der Status-quo-Bias beschreibt die psychologische Tendenz, Bestehendes als vertrauter, weniger riskant oder weniger anstrengend zu erleben als Veränderung. Dadurch können Menschen, Organisationen oder Institutionen an Routinen festhalten, obwohl Alternativen bessere Wirkung erzeugen könnten.",
+      "longDefinition": "Der Status-quo-Bias beschreibt die psychologische Tendenz, Bestehendes als vertrauter, weniger riskant oder weniger anstrengend zu erleben als Veränderung. Dadurch können Menschen, Organisationen oder Institutionen an Routinen festhalten, obwohl Alternativen bessere Wirkung erzeugen könnten.",
+      "woekRelation": "Der Status-quo-Bias ist ein Wirkmechanismus, der Transformation verlangsamen kann. Er wirkt in Märkten, Institutionen, Konsumgewohnheiten, Energiepolitik und Organisationskultur.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "pfadabhaengigkeit",
+        "verlustaversion",
+        "reaktanz",
+        "transformation",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/status-quo-bias/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Neigung, bestehende Zustände zu bevorzugen, selbst wenn bessere Alternativen verfügbar sind.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Status-quo-Bias",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Status-quo-Bias | Glossar der Wirkungsökonomie",
+      "metaDescription": "Der Status-quo-Bias beschreibt die Neigung, bestehende Zustände zu bevorzugen. In der Wirkungsökonomie erklärt er, warum Transformation trotz besserer Alternativen blockiert werden kann."
+    },
+    {
+      "id": "affektheuristik",
+      "termId": "affektheuristik",
+      "label": "Affektheuristik",
+      "canonicalLabel": "Affektheuristik",
+      "slug": "affektheuristik",
+      "aliases": [
+        "Affektheuristik",
+        "Affekt-Heuristik"
+      ],
+      "synonyms": [
+        "Affektheuristik",
+        "Affekt-Heuristik"
+      ],
+      "shortDefinition": "Die Affektheuristik beschreibt die Tendenz, Risiken und Nutzen anhand spontaner Gefühle einzuschätzen.",
+      "definition": "Die Affektheuristik beschreibt, dass Menschen Risiken und Nutzen häufig nicht zuerst statistisch, sondern emotional einschätzen. Was sich vertraut, sympathisch oder beruhigend anfühlt, erscheint oft weniger riskant; was Angst, Ekel oder Wut auslöst, erscheint gefährlicher.",
+      "longDefinition": "Die Affektheuristik beschreibt, dass Menschen Risiken und Nutzen häufig nicht zuerst statistisch, sondern emotional einschätzen. Was sich vertraut, sympathisch oder beruhigend anfühlt, erscheint oft weniger riskant; was Angst, Ekel oder Wut auslöst, erscheint gefährlicher.",
+      "woekRelation": "Die Affektheuristik ist ein Wirkmechanismus in Medien, Produktwahrnehmung und politischer Sprache. Sie erklärt, warum emotional aufgeladene Bilder oder Begriffe Wirkungspotenziale stärker aktivieren können als abstrakte Daten.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "salienz",
+        "alarm-frame",
+        "framing",
+        "emotionsregulation",
+        "verfuegbarkeitsheuristik"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/affektheuristik/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Bewertung von Risiken und Nutzen anhand spontaner Gefühle.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Affektheuristik",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Affektheuristik | Glossar der Wirkungsökonomie",
+      "metaDescription": "Affektheuristik beschreibt, wie spontane Gefühle die Einschätzung von Risiken und Nutzen prägen und Wirkungspotenziale in Medien, Produkten und politischer Sprache verstärken."
+    },
+    {
+      "id": "ankereffekt",
+      "termId": "ankereffekt",
+      "label": "Ankereffekt",
+      "canonicalLabel": "Ankereffekt",
+      "slug": "ankereffekt",
+      "aliases": [
+        "Ankereffekt",
+        "Anchoring",
+        "Ankerheuristik"
+      ],
+      "synonyms": [
+        "Ankereffekt",
+        "Anchoring",
+        "Ankerheuristik"
+      ],
+      "shortDefinition": "Der Ankereffekt beschreibt die Tendenz, sich bei Bewertungen stark an einer zuerst genannten Information, Zahl oder Deutung zu orientieren.",
+      "definition": "Der Ankereffekt entsteht, wenn eine frühe Information spätere Einschätzungen unverhältnismäßig prägt. Das kann eine Zahl, ein Preis, ein Vergleich, ein politischer Frame oder eine erste Deutung eines Ereignisses sein.",
+      "longDefinition": "Der Ankereffekt entsteht, wenn eine frühe Information spätere Einschätzungen unverhältnismäßig prägt. Das kann eine Zahl, ein Preis, ein Vergleich, ein politischer Frame oder eine erste Deutung eines Ereignisses sein.",
+      "woekRelation": "Der Ankereffekt ist relevant für Preiswahrnehmung, politische Kommunikation, Risikoeinschätzung und mediale Rahmung. Er zeigt, dass erste Signale Wirkungspotenziale in Resonanzräumen vorstrukturieren können.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "framing",
+        "priming",
+        "salienz",
+        "preiswahrheit",
+        "wirkstoff"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/ankereffekt/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Tendenz, sich bei Bewertungen stark an einer zuerst genannten Information, Zahl oder Deutung zu orientieren.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Ankereffekt",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Ankereffekt | Glossar der Wirkungsökonomie",
+      "metaDescription": "Der Ankereffekt erklärt, warum erste Zahlen, Preise oder Deutungen spätere Bewertungen prägen und Wirkungspfade vorstrukturieren können."
+    },
+    {
+      "id": "priming",
+      "termId": "priming",
+      "label": "Priming",
+      "canonicalLabel": "Priming",
+      "slug": "priming",
+      "aliases": [
+        "Priming",
+        "Voraktivierung"
+      ],
+      "synonyms": [
+        "Priming",
+        "Voraktivierung"
+      ],
+      "shortDefinition": "Priming beschreibt die Voraktivierung bestimmter Assoziationen, durch die spätere Informationen anders wahrgenommen werden.",
+      "definition": "Priming beschreibt, dass frühere Reize, Begriffe, Bilder oder Erfahrungen spätere Wahrnehmung beeinflussen können. Die spätere Information wird dann nicht isoliert verarbeitet, sondern in einem bereits aktivierten Bedeutungsraum.",
+      "longDefinition": "Priming beschreibt, dass frühere Reize, Begriffe, Bilder oder Erfahrungen spätere Wahrnehmung beeinflussen können. Die spätere Information wird dann nicht isoliert verarbeitet, sondern in einem bereits aktivierten Bedeutungsraum.",
+      "woekRelation": "Priming ist ein Wirkstoffmechanismus. Wiederholte Begriffe, Bilder oder Narrative können Deutungsräume vorbereiten, bevor eine konkrete Aussage bewertet wird.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "framing",
+        "salienz",
+        "narrativ",
+        "normalisierung",
+        "strukturelles-driften"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/priming/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Voraktivierung bestimmter Assoziationen, durch die spätere Informationen anders wahrgenommen werden.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Priming",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Priming | Glossar der Wirkungsökonomie",
+      "metaDescription": "Priming beschreibt die Voraktivierung von Assoziationen und erklärt, warum wiederholte Begriffe, Bilder oder Narrative spätere Wahrnehmung beeinflussen."
+    },
+    {
+      "id": "selbstwirksamkeit",
+      "termId": "selbstwirksamkeit",
+      "label": "Selbstwirksamkeit",
+      "canonicalLabel": "Selbstwirksamkeit",
+      "slug": "selbstwirksamkeit",
+      "aliases": [
+        "Selbstwirksamkeit",
+        "Selbstwirksamkeitserleben"
+      ],
+      "synonyms": [
+        "Selbstwirksamkeit",
+        "Selbstwirksamkeitserleben"
+      ],
+      "shortDefinition": "Selbstwirksamkeit beschreibt das Erleben, durch eigenes Handeln etwas bewirken zu können.",
+      "definition": "Selbstwirksamkeit beschreibt die Erwartung, durch eigenes Handeln Einfluss nehmen und Zustände verändern zu können. Sie entsteht durch Erfahrung, Handlungsspielräume, Rückmeldung und sichtbare Wirksamkeit.",
+      "longDefinition": "Selbstwirksamkeit beschreibt die Erwartung, durch eigenes Handeln Einfluss nehmen und Zustände verändern zu können. Sie entsteht durch Erfahrung, Handlungsspielräume, Rückmeldung und sichtbare Wirksamkeit.",
+      "woekRelation": "Selbstwirksamkeit ist ein psychologischer Zustand und eine Wirkungsbedingung. Ohne Selbstwirksamkeit steigt Ohnmacht; mit Selbstwirksamkeit steigt die Fähigkeit zu Teilgabe, Transformation und demokratischer Beteiligung.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "orientierung",
+        "wirkungsintegration",
+        "erlernte-hilflosigkeit",
+        "demokratie",
+        "transformation"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/selbstwirksamkeit/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Erleben, durch eigenes Handeln etwas bewirken zu können.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Selbstwirksamkeit",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Selbstwirksamkeit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Selbstwirksamkeit beschreibt das Erleben, durch eigenes Handeln etwas bewirken zu können. In der Wirkungsökonomie ist sie eine Bedingung für Teilgabe und Transformation."
+    },
+    {
+      "id": "erlernte-hilflosigkeit",
+      "termId": "erlernte-hilflosigkeit",
+      "label": "Erlernte Hilflosigkeit",
+      "canonicalLabel": "Erlernte Hilflosigkeit",
+      "slug": "erlernte-hilflosigkeit",
+      "aliases": [
+        "Erlernte Hilflosigkeit",
+        "Hilflosigkeit"
+      ],
+      "synonyms": [
+        "Erlernte Hilflosigkeit",
+        "Hilflosigkeit"
+      ],
+      "shortDefinition": "Erlernte Hilflosigkeit beschreibt einen Zustand, in dem Menschen nach wiederholter Erfahrung von Kontrollverlust nicht mehr erwarten, durch eigenes Handeln etwas verändern zu können.",
+      "definition": "Erlernte Hilflosigkeit kann entstehen, wenn Menschen wiederholt erleben, dass Anstrengung, Beteiligung oder Verantwortungsübernahme keine erkennbare Veränderung erzeugen. Dadurch sinkt die Erwartung, selbst wirksam handeln zu können.",
+      "longDefinition": "Erlernte Hilflosigkeit kann entstehen, wenn Menschen wiederholt erleben, dass Anstrengung, Beteiligung oder Verantwortungsübernahme keine erkennbare Veränderung erzeugen. Dadurch sinkt die Erwartung, selbst wirksam handeln zu können.",
+      "woekRelation": "Erlernte Hilflosigkeit ist ein Wirkungsrisiko für Transformation, Demokratie und gesellschaftliche Teilhabe. Sie kann entstehen, wenn Menschen wiederholt erleben, dass ihr Handeln keine sichtbare Wirkung hat.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "selbstwirksamkeit",
+        "orientierung",
+        "wirkungsresilienz",
+        "vertrauen",
+        "gesellschaftliche-stabilitaet"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/erlernte-hilflosigkeit/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Zustand, in dem Menschen nicht mehr erwarten, durch eigenes Handeln etwas verändern zu können.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Erlernte Hilflosigkeit",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Erlernte Hilflosigkeit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Erlernte Hilflosigkeit beschreibt einen Zustand sinkender Handlungserwartung und ist ein Wirkungsrisiko für Transformation, Demokratie und Teilhabe."
+    },
+    {
+      "id": "ingroup-outgroup-dynamik",
+      "termId": "ingroup-outgroup-dynamik",
+      "label": "In-Group / Out-Group-Dynamik",
+      "canonicalLabel": "In-Group / Out-Group-Dynamik",
+      "slug": "ingroup-outgroup-dynamik",
+      "aliases": [
+        "In-Group / Out-Group-Dynamik",
+        "Ingroup-Outgroup-Dynamik",
+        "In-Group-Dynamik",
+        "Out-Group-Dynamik",
+        "Gruppendynamik"
+      ],
+      "synonyms": [
+        "In-Group / Out-Group-Dynamik",
+        "Ingroup-Outgroup-Dynamik",
+        "In-Group-Dynamik",
+        "Out-Group-Dynamik",
+        "Gruppendynamik"
+      ],
+      "shortDefinition": "In-Group / Out-Group-Dynamik beschreibt die Unterscheidung zwischen einer als zugehörig empfundenen Gruppe und einer als fremd oder gegnerisch markierten Gruppe.",
+      "definition": "In-Group / Out-Group-Dynamik entsteht, wenn Zugehörigkeit und Abgrenzung die Wahrnehmung prägen. Informationen, Personen oder Institutionen werden dann stärker danach bewertet, ob sie zur eigenen Gruppe gehören oder als fremd, bedrohlich oder gegnerisch erscheinen.",
+      "longDefinition": "In-Group / Out-Group-Dynamik entsteht, wenn Zugehörigkeit und Abgrenzung die Wahrnehmung prägen. Informationen, Personen oder Institutionen werden dann stärker danach bewertet, ob sie zur eigenen Gruppe gehören oder als fremd, bedrohlich oder gegnerisch erscheinen.",
+      "woekRelation": "Diese Dynamik ist ein Resonanzmechanismus politischer und medialer Wirkung. Sie kann Zugehörigkeit stärken, aber auch Feindbilder, Abwertung und Polarisierung erzeugen.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "identitaetsschutz",
+        "motiviertes-denken",
+        "destruktives-narrativ",
+        "vertrauensverschiebung",
+        "polarisierung"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/ingroup-outgroup-dynamik/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Unterscheidung zwischen einer als zugehörig empfundenen Gruppe und einer als fremd oder gegnerisch markierten Gruppe.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "In-Group / Out-Group-Dynamik",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "In-Group / Out-Group-Dynamik | Glossar der Wirkungsökonomie",
+      "metaDescription": "In-Group / Out-Group-Dynamik erklärt, wie Zugehörigkeit und Abgrenzung Resonanzräume prägen und politische oder mediale Wirkungen verstärken können."
+    },
+    {
+      "id": "soziale-bewaehrtheit",
+      "termId": "soziale-bewaehrtheit",
+      "label": "Soziale Bewährtheit / Social Proof",
+      "canonicalLabel": "Soziale Bewährtheit / Social Proof",
+      "slug": "soziale-bewaehrtheit",
+      "aliases": [
+        "Soziale Bewährtheit / Social Proof",
+        "Soziale Bewährtheit",
+        "Social Proof",
+        "soziale Bewaehrtheit"
+      ],
+      "synonyms": [
+        "Soziale Bewährtheit / Social Proof",
+        "Soziale Bewährtheit",
+        "Social Proof",
+        "soziale Bewaehrtheit"
+      ],
+      "shortDefinition": "Soziale Bewährtheit beschreibt die Orientierung am Verhalten anderer, besonders in unsicheren Situationen.",
+      "definition": "Soziale Bewährtheit bedeutet, dass Menschen sich bei Unsicherheit an sichtbarem Verhalten anderer orientieren. Was viele tun, unterstützen, kaufen oder teilen, erscheint dadurch plausibler, normaler oder anschlussfähiger.",
+      "longDefinition": "Soziale Bewährtheit bedeutet, dass Menschen sich bei Unsicherheit an sichtbarem Verhalten anderer orientieren. Was viele tun, unterstützen, kaufen oder teilen, erscheint dadurch plausibler, normaler oder anschlussfähiger.",
+      "woekRelation": "Soziale Bewährtheit beeinflusst Produktwirkung, Medienwirkung, Konsumentscheidungen und politische Mobilisierung. Sichtbarkeit von Wirkung kann dadurch verstärkt werden.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "normalisierung",
+        "salienz",
+        "selbstorganisation",
+        "markttransformation",
+        "resonanzraum"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/soziale-bewaehrtheit/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Orientierung am Verhalten anderer, besonders in unsicheren Situationen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Soziale Bewährtheit / Social Proof",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Soziale Bewährtheit / Social Proof | Glossar der Wirkungsökonomie",
+      "metaDescription": "Soziale Bewährtheit beschreibt, wie sichtbares Verhalten anderer Entscheidungen prägt und Wirkungspotenziale in Produkten, Medien und Politik verstärken kann."
+    },
+    {
+      "id": "moral-licensing",
+      "termId": "moral-licensing",
+      "label": "Moral Licensing",
+      "canonicalLabel": "Moral Licensing",
+      "slug": "moral-licensing",
+      "aliases": [
+        "Moral Licensing",
+        "moralische Lizenzierung",
+        "Moralische Lizenzierung"
+      ],
+      "synonyms": [
+        "Moral Licensing",
+        "moralische Lizenzierung",
+        "Moralische Lizenzierung"
+      ],
+      "shortDefinition": "Moral Licensing beschreibt den Effekt, dass eine positive Handlung als Rechtfertigung für späteres weniger verantwortliches Verhalten genutzt wird.",
+      "definition": "Moral Licensing entsteht, wenn eine positive Handlung psychologisch als Guthaben erlebt wird. Daraus kann die Bereitschaft entstehen, spätere negative Wirkungen zu verharmlosen oder weniger verantwortliches Verhalten zu rechtfertigen.",
+      "longDefinition": "Moral Licensing entsteht, wenn eine positive Handlung psychologisch als Guthaben erlebt wird. Daraus kann die Bereitschaft entstehen, spätere negative Wirkungen zu verharmlosen oder weniger verantwortliches Verhalten zu rechtfertigen.",
+      "woekRelation": "Moral Licensing ist ein Wirkungsrisiko in Konsum, Nachhaltigkeit und Unternehmenskommunikation. Es zeigt, warum positive Einzelwirkungen negative Wirkungen nicht beliebig kompensieren dürfen.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung",
+        "wirkungsrisiko",
+        "scheinentlastung"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/moral-licensing/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Effekt, bei dem eine positive Handlung als Rechtfertigung für späteres weniger verantwortliches Verhalten genutzt wird.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Moral Licensing",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Moral Licensing | Glossar der Wirkungsökonomie",
+      "metaDescription": "Moral Licensing erklärt, warum positive Einzelhandlungen negative Wirkungen nicht beliebig kompensieren dürfen und ist ein Wirkungsrisiko in Konsum und Nachhaltigkeit."
+    },
+    {
+      "id": "sensemaking",
+      "termId": "sensemaking",
+      "label": "Sensemaking",
+      "canonicalLabel": "Sensemaking",
+      "slug": "sensemaking",
+      "aliases": [
+        "Sensemaking",
+        "Sinnbildung",
+        "Sinnkonstruktion"
+      ],
+      "synonyms": [
+        "Sensemaking",
+        "Sinnbildung",
+        "Sinnkonstruktion"
+      ],
+      "shortDefinition": "Sensemaking beschreibt den Prozess, durch den Menschen oder Organisationen unklare Ereignisse in einen sinnvollen Zusammenhang bringen.",
+      "definition": "Sensemaking ist der Prozess, in dem Menschen oder Organisationen unklare, widersprüchliche oder krisenhafte Ereignisse deuten und handlungsfähig machen. Dabei entstehen Erklärungen, Rollen, Prioritäten und Zukunftsbilder.",
+      "longDefinition": "Sensemaking ist der Prozess, in dem Menschen oder Organisationen unklare, widersprüchliche oder krisenhafte Ereignisse deuten und handlungsfähig machen. Dabei entstehen Erklärungen, Rollen, Prioritäten und Zukunftsbilder.",
+      "woekRelation": "Sensemaking ist ein Wirkmechanismus in Krisen, Transformationen und öffentlicher Kommunikation. Es entscheidet mit, ob Wandel als gestaltbar oder bedrohlich erlebt wird.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "orientierung",
+        "kohaerenz",
+        "zukunftsbild",
+        "narrativ",
+        "wirkungsintegration"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/sensemaking/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Prozess, durch den Menschen oder Organisationen unklare Ereignisse in Sinnzusammenhänge bringen.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Sensemaking",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Sensemaking | Glossar der Wirkungsökonomie",
+      "metaDescription": "Sensemaking beschreibt, wie Menschen und Organisationen unklare Ereignisse einordnen und dadurch Orientierung, Handlungsfähigkeit oder Abwehr entwickeln."
+    },
+    {
+      "id": "gesellschaftliche-stabilitaet",
+      "termId": "gesellschaftliche-stabilitaet",
+      "label": "Gesellschaftliche Stabilität",
+      "canonicalLabel": "Gesellschaftliche Stabilität",
+      "slug": "gesellschaftliche-stabilitaet",
+      "aliases": [
+        "Gesellschaftliche Stabilität",
+        "gesellschaftliche Stabilitaet",
+        "soziale Stabilität",
+        "soziale Stabilitaet"
+      ],
+      "synonyms": [
+        "Gesellschaftliche Stabilität",
+        "gesellschaftliche Stabilitaet",
+        "soziale Stabilität",
+        "soziale Stabilitaet"
+      ],
+      "shortDefinition": "Gesellschaftliche Stabilität beschreibt die Fähigkeit einer Gesellschaft, Konflikte, Veränderungen und Krisen zu verarbeiten, ohne ihre demokratischen und sozialen Grundlagen zu verlieren.",
+      "definition": "Gesellschaftliche Stabilität entsteht nicht durch Stillstand. Sie entsteht, wenn Vertrauen, Orientierung, faire Verfahren, Korrekturfähigkeit, Teilhabe und reale Verbesserung von Zuständen so zusammenwirken, dass Konflikte bearbeitbar bleiben.",
+      "longDefinition": "Gesellschaftliche Stabilität entsteht nicht durch Stillstand. Sie entsteht, wenn Vertrauen, Orientierung, faire Verfahren, Korrekturfähigkeit, Teilhabe und reale Verbesserung von Zuständen so zusammenwirken, dass Konflikte bearbeitbar bleiben.",
+      "woekRelation": "Gesellschaftliche Stabilität ist ein Systemzustand und eine Wirkungsbedingung. Sie wird durch Wirkung, Rückkopplung, Vertrauen, Medienqualität, Rechtsstaatlichkeit und systemische Kohärenz gestärkt oder geschwächt.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "vertrauen",
+        "systemische-kohaerenz",
+        "wirkungsresilienz",
+        "demokratie",
+        "orientierung"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/gesellschaftliche-stabilitaet/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Fähigkeit einer Gesellschaft, Konflikte, Veränderungen und Krisen zu verarbeiten, ohne demokratische und soziale Grundlagen zu verlieren.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Gesellschaftliche Stabilität",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Gesellschaftliche Stabilität | Glossar der Wirkungsökonomie",
+      "metaDescription": "Gesellschaftliche Stabilität beschreibt die Fähigkeit, Krisen und Veränderung demokratisch zu verarbeiten. In der Wirkungsökonomie ist sie Systemzustand und Wirkungsbedingung."
+    },
+    {
+      "id": "folgewirkung",
+      "termId": "folgewirkung",
+      "label": "Folgewirkung",
+      "canonicalLabel": "Folgewirkung",
+      "slug": "folgewirkung",
+      "aliases": [
+        "Folgewirkung",
+        "Folgewirkungen",
+        "indirekte Wirkung",
+        "zeitversetzte Wirkung"
+      ],
+      "synonyms": [
+        "Folgewirkung",
+        "Folgewirkungen",
+        "indirekte Wirkung",
+        "zeitversetzte Wirkung"
+      ],
+      "shortDefinition": "Folgewirkung ist eine indirekte oder zeitversetzte Wirkung, die aus einer ersten Wirkung hervorgeht.",
+      "definition": "Folgewirkungen entstehen, wenn eine erste Zustandsveränderung weitere Veränderungen auslöst. Sie können zeitversetzt, indirekt, systemisch oder über Rückkopplungen entstehen.",
+      "longDefinition": "Folgewirkungen entstehen, wenn eine erste Zustandsveränderung weitere Veränderungen auslöst. Sie können zeitversetzt, indirekt, systemisch oder über Rückkopplungen entstehen.",
+      "woekRelation": "Folgewirkung ist von Wirkungspotenzial und Wirkungsrisiko zu unterscheiden: Sie ist bereits eine Wirkung, aber nicht die unmittelbare Erstwirkung. Für Medien, Märkte, Produkte und Politik sind Folgewirkungen besonders wichtig, weil sie Vertrauen, Verhalten, Institutionen oder ökologische Zustände später verändern können.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspfad",
+        "rueckkopplung",
+        "interdependenz",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/folgewirkung/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Indirekte oder zeitversetzte Wirkung, die aus einer ersten Wirkung hervorgeht.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Folgewirkung",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Folgewirkung | Glossar der Wirkungsökonomie",
+      "metaDescription": "Folgewirkung beschreibt indirekte oder zeitversetzte Wirkung, die aus einer ersten Wirkung hervorgeht und über Rückkopplungen weitere Zustände verändert."
+    },
+    {
+      "id": "resilienz",
+      "termId": "resilienz",
+      "label": "Resilienz",
+      "canonicalLabel": "Resilienz",
+      "slug": "resilienz",
+      "aliases": [
+        "Resilienz",
+        "soziale Resilienz",
+        "demokratische Resilienz"
+      ],
+      "synonyms": [
+        "Resilienz",
+        "soziale Resilienz",
+        "demokratische Resilienz"
+      ],
+      "shortDefinition": "Resilienz beschreibt die Fähigkeit eines Systems, Belastungen zu verarbeiten, sich anzupassen und zentrale Funktionen zu erhalten.",
+      "definition": "Resilienz beschreibt die Fähigkeit von Menschen, Organisationen, Gesellschaften oder Ökosystemen, Stress, Krisen oder Störungen zu verarbeiten. Sie umfasst nicht nur Widerstandskraft, sondern auch Lernfähigkeit, Anpassung und Korrektur.",
+      "longDefinition": "Resilienz beschreibt die Fähigkeit von Menschen, Organisationen, Gesellschaften oder Ökosystemen, Stress, Krisen oder Störungen zu verarbeiten. Sie umfasst nicht nur Widerstandskraft, sondern auch Lernfähigkeit, Anpassung und Korrektur.",
+      "woekRelation": "In der Wirkungsökonomie wird Resilienz über Wirkungsresilienz präzisiert: Entscheidend ist nicht bloße Stabilität, sondern die Fähigkeit, positive Netto-Wirkung für Mensch, Planet und Demokratie auch unter Stress zu erhalten.",
+      "statusNote": "Nicht pathologisierend, moralisierend oder parteipolitisch verwenden. Der Begriff beschreibt normale menschliche und systemische Prozesse; entscheidend ist, welche Wirkpfade daraus entstehen.",
+      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Wirkstoff, Resonanzraum, Wirkpfad und Folgewirkung sauber unterscheiden.",
+      "categories": [
+        "psychologische-systemische-wirkmechanismen"
+      ],
+      "tags": [
+        "Psychologie",
+        "Konstruktivismus",
+        "Systemtheorie",
+        "Kybernetik",
+        "Medienwirkung",
+        "politische Sprache",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Vertrauen",
+        "Transformation",
+        "Demokratie"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedTerms": [
+        "wirkungsresilienz",
+        "gesellschaftliche-stabilitaet",
+        "systemische-kohaerenz",
+        "rueckkopplung",
+        "vertrauen"
+      ],
+      "officialSources": [
+        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ],
+      "pageUrl": "/begriffe/resilienz/",
+      "priority": 400,
+      "status": "woek-anschlussbegriff",
+      "version": "1.0",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "source": "Blogartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
+      "sourceDocument": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "sourceSection": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Fähigkeit eines Systems, Belastungen zu verarbeiten, sich anzupassen und zentrale Funktionen zu erhalten.",
+      "doNotConfuseWith": [],
+      "relatedDocuments": [],
+      "examples": [],
+      "preferredUsage": "",
+      "deprecatedUsage": "",
+      "reviewStatus": "redaktionell ergänzt",
+      "glossaryOrderKey": "Resilienz",
+      "firstApprovedIn": "2026-05-29",
+      "lastUpdated": "2026-05-29",
+      "updatedAt": "2026-05-29",
+      "metaTitle": "Resilienz | Glossar der Wirkungsökonomie",
+      "metaDescription": "Resilienz beschreibt die Fähigkeit eines Systems, Belastungen zu verarbeiten. In der Wirkungsökonomie wird sie als Wirkungsresilienz präzisiert."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T11:38:00.667Z",
+  "generatedAt": "2026-05-29T11:53:03.228Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -21,6 +21,25 @@
         "greenwashing",
         "produktdaten",
         "wirkungsrueckkopplung"
+      ]
+    },
+    "affektheuristik": {
+      "label": "Affektheuristik",
+      "slug": "affektheuristik",
+      "url": "/begriffe/affektheuristik/",
+      "hoverDefinition": "Bewertung von Risiken und Nutzen anhand spontaner Gefühle.",
+      "shortDefinition": "Die Affektheuristik beschreibt die Tendenz, Risiken und Nutzen anhand spontaner Gefühle einzuschätzen.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Affektheuristik",
+        "Affekt-Heuristik"
+      ],
+      "relatedTerms": [
+        "salienz",
+        "alarm-frame",
+        "framing",
+        "emotionsregulation",
+        "verfuegbarkeitsheuristik"
       ]
     },
     "agenda-2030": {
@@ -60,6 +79,26 @@
         "emotionsregulation",
         "wirkstoff",
         "wirkungsrisiko"
+      ]
+    },
+    "ankereffekt": {
+      "label": "Ankereffekt",
+      "slug": "ankereffekt",
+      "url": "/begriffe/ankereffekt/",
+      "hoverDefinition": "Tendenz, sich bei Bewertungen stark an einer zuerst genannten Information, Zahl oder Deutung zu orientieren.",
+      "shortDefinition": "Der Ankereffekt beschreibt die Tendenz, sich bei Bewertungen stark an einer zuerst genannten Information, Zahl oder Deutung zu orientieren.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Ankereffekt",
+        "Anchoring",
+        "Ankerheuristik"
+      ],
+      "relatedTerms": [
+        "framing",
+        "priming",
+        "salienz",
+        "preiswahrheit",
+        "wirkstoff"
       ]
     },
     "anschlussfaehigkeit": {
@@ -745,6 +784,25 @@
         "produktdaten"
       ]
     },
+    "erlernte-hilflosigkeit": {
+      "label": "Erlernte Hilflosigkeit",
+      "slug": "erlernte-hilflosigkeit",
+      "url": "/begriffe/erlernte-hilflosigkeit/",
+      "hoverDefinition": "Zustand, in dem Menschen nicht mehr erwarten, durch eigenes Handeln etwas verändern zu können.",
+      "shortDefinition": "Erlernte Hilflosigkeit beschreibt einen Zustand, in dem Menschen nach wiederholter Erfahrung von Kontrollverlust nicht mehr erwarten, durch eigenes Handeln etwas verändern zu können.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Erlernte Hilflosigkeit",
+        "Hilflosigkeit"
+      ],
+      "relatedTerms": [
+        "selbstwirksamkeit",
+        "orientierung",
+        "wirkungsresilienz",
+        "vertrauen",
+        "gesellschaftliche-stabilitaet"
+      ]
+    },
     "ermoeglichende-taetigkeit": {
       "label": "Ermöglichende Tätigkeit",
       "slug": "ermoeglichende-taetigkeit",
@@ -1031,6 +1089,28 @@
         "green-deal-industrial-plan"
       ]
     },
+    "faktenargumentation": {
+      "label": "Faktenargumentation",
+      "slug": "faktenargumentation",
+      "url": "/begriffe/faktenargumentation/",
+      "hoverDefinition": "Kommunikation, die Aussagen vor allem durch Daten, Belege oder sachliche Korrekturen begründet.",
+      "shortDefinition": "Faktenargumentation beschreibt Kommunikation, die Aussagen vor allem durch Daten, Belege oder sachliche Korrekturen begründet.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Faktenargumentation",
+        "Faktenargumente",
+        "faktenbasierte Argumentation"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "folgencheck",
+        "faktenreaktanz",
+        "meta-kognitive-intervention",
+        "vertrauen",
+        "resonanzraum",
+        "wirkungspotenzial"
+      ]
+    },
     "faktencheck": {
       "label": "Faktencheck",
       "slug": "faktencheck",
@@ -1124,6 +1204,27 @@
         "wirkungspotenzial"
       ]
     },
+    "folgewirkung": {
+      "label": "Folgewirkung",
+      "slug": "folgewirkung",
+      "url": "/begriffe/folgewirkung/",
+      "hoverDefinition": "Indirekte oder zeitversetzte Wirkung, die aus einer ersten Wirkung hervorgeht.",
+      "shortDefinition": "Folgewirkung ist eine indirekte oder zeitversetzte Wirkung, die aus einer ersten Wirkung hervorgeht.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Folgewirkung",
+        "Folgewirkungen",
+        "indirekte Wirkung",
+        "zeitversetzte Wirkung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspfad",
+        "rueckkopplung",
+        "interdependenz",
+        "wirkungsrisiko"
+      ]
+    },
     "forced-labour-regulation": {
       "label": "Forced Labour Regulation",
       "slug": "forced-labour-regulation",
@@ -1146,7 +1247,7 @@
       "slug": "framing",
       "url": "/begriffe/framing/",
       "hoverDefinition": "Deutungsrahmen, in dem Informationen Bedeutung erhalten.",
-      "shortDefinition": "Ein Frame ist ein Deutungsrahmen, durch den Informationen verstanden, bewertet und emotional eingeordnet werden.",
+      "shortDefinition": "Framing bezeichnet die Einbettung von Informationen in einen Deutungsrahmen, der bestimmt, wie sie verstanden, bewertet und emotional verarbeitet werden.",
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
         "Frame / Framing",
@@ -1159,7 +1260,10 @@
         "narrativ",
         "resonanzraum",
         "wirkungspotenzial",
-        "wirkstoff"
+        "wirkstoff",
+        "priming",
+        "ankereffekt",
+        "affektheuristik"
       ]
     },
     "generationengerechtigkeit": {
@@ -1197,6 +1301,27 @@
         "digitaler-produktpass",
         "material-footprint",
         "produktdaten"
+      ]
+    },
+    "gesellschaftliche-stabilitaet": {
+      "label": "Gesellschaftliche Stabilität",
+      "slug": "gesellschaftliche-stabilitaet",
+      "url": "/begriffe/gesellschaftliche-stabilitaet/",
+      "hoverDefinition": "Fähigkeit einer Gesellschaft, Konflikte, Veränderungen und Krisen zu verarbeiten, ohne demokratische und soziale Grundlagen zu verlieren.",
+      "shortDefinition": "Gesellschaftliche Stabilität beschreibt die Fähigkeit einer Gesellschaft, Konflikte, Veränderungen und Krisen zu verarbeiten, ohne ihre demokratischen und sozialen Grundlagen zu verlieren.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Gesellschaftliche Stabilität",
+        "gesellschaftliche Stabilitaet",
+        "soziale Stabilität",
+        "soziale Stabilitaet"
+      ],
+      "relatedTerms": [
+        "vertrauen",
+        "systemische-kohaerenz",
+        "wirkungsresilienz",
+        "demokratie",
+        "orientierung"
       ]
     },
     "gesundheitsgerechtigkeit": {
@@ -2003,7 +2128,8 @@
         "reaktanz",
         "vertrauensverschiebung",
         "kognitive-dissonanz",
-        "resonanzraum"
+        "resonanzraum",
+        "ingroup-outgroup-dynamik"
       ]
     },
     "idgs": {
@@ -2075,6 +2201,28 @@
         "wirkungspfad",
         "datenqualitaet",
         "folgencheck"
+      ]
+    },
+    "ingroup-outgroup-dynamik": {
+      "label": "In-Group / Out-Group-Dynamik",
+      "slug": "ingroup-outgroup-dynamik",
+      "url": "/begriffe/ingroup-outgroup-dynamik/",
+      "hoverDefinition": "Unterscheidung zwischen einer als zugehörig empfundenen Gruppe und einer als fremd oder gegnerisch markierten Gruppe.",
+      "shortDefinition": "In-Group / Out-Group-Dynamik beschreibt die Unterscheidung zwischen einer als zugehörig empfundenen Gruppe und einer als fremd oder gegnerisch markierten Gruppe.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "In-Group / Out-Group-Dynamik",
+        "Ingroup-Outgroup-Dynamik",
+        "In-Group-Dynamik",
+        "Out-Group-Dynamik",
+        "Gruppendynamik"
+      ],
+      "relatedTerms": [
+        "identitaetsschutz",
+        "motiviertes-denken",
+        "destruktives-narrativ",
+        "vertrauensverschiebung",
+        "polarisierung"
       ]
     },
     "insetting": {
@@ -2352,7 +2500,12 @@
         "vertrauensverschiebung",
         "reframing",
         "emotionsregulation",
-        "dissonanzreduktion"
+        "dissonanzreduktion",
+        "faktenargumentation",
+        "faktenreaktanz",
+        "status-quo-bias",
+        "affektheuristik",
+        "selbstwirksamkeit"
       ]
     },
     "kohaerenz": {
@@ -2643,6 +2796,26 @@
       "relatedTerms": [
         "handlungsfaehigkeit",
         "handlungsspielraum"
+      ]
+    },
+    "moral-licensing": {
+      "label": "Moral Licensing",
+      "slug": "moral-licensing",
+      "url": "/begriffe/moral-licensing/",
+      "hoverDefinition": "Effekt, bei dem eine positive Handlung als Rechtfertigung für späteres weniger verantwortliches Verhalten genutzt wird.",
+      "shortDefinition": "Moral Licensing beschreibt den Effekt, dass eine positive Handlung als Rechtfertigung für späteres weniger verantwortliches Verhalten genutzt wird.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Moral Licensing",
+        "moralische Lizenzierung",
+        "Moralische Lizenzierung"
+      ],
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung",
+        "wirkungsrisiko",
+        "scheinentlastung"
       ]
     },
     "motiviertes-denken": {
@@ -3294,6 +3467,25 @@
         "health-impact-assessment"
       ]
     },
+    "priming": {
+      "label": "Priming",
+      "slug": "priming",
+      "url": "/begriffe/priming/",
+      "hoverDefinition": "Voraktivierung bestimmter Assoziationen, durch die spätere Informationen anders wahrgenommen werden.",
+      "shortDefinition": "Priming beschreibt die Voraktivierung bestimmter Assoziationen, durch die spätere Informationen anders wahrgenommen werden.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Priming",
+        "Voraktivierung"
+      ],
+      "relatedTerms": [
+        "framing",
+        "salienz",
+        "narrativ",
+        "normalisierung",
+        "strukturelles-driften"
+      ]
+    },
     "produktdaten": {
       "label": "Produktdaten",
       "slug": "produktdaten",
@@ -3585,6 +3777,26 @@
         "greenwashing"
       ]
     },
+    "resilienz": {
+      "label": "Resilienz",
+      "slug": "resilienz",
+      "url": "/begriffe/resilienz/",
+      "hoverDefinition": "Fähigkeit eines Systems, Belastungen zu verarbeiten, sich anzupassen und zentrale Funktionen zu erhalten.",
+      "shortDefinition": "Resilienz beschreibt die Fähigkeit eines Systems, Belastungen zu verarbeiten, sich anzupassen und zentrale Funktionen zu erhalten.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Resilienz",
+        "soziale Resilienz",
+        "demokratische Resilienz"
+      ],
+      "relatedTerms": [
+        "wirkungsresilienz",
+        "gesellschaftliche-stabilitaet",
+        "systemische-kohaerenz",
+        "rueckkopplung",
+        "vertrauen"
+      ]
+    },
     "resonanzarchitektur": {
       "label": "Resonanzarchitektur",
       "slug": "resonanzarchitektur",
@@ -3676,7 +3888,11 @@
         "framing",
         "narrativ",
         "vertrauen",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "faktenargumentation",
+        "faktenreaktanz",
+        "salienz",
+        "sensemaking"
       ]
     },
     "resonanzrisiko": {
@@ -3814,7 +4030,10 @@
         "wirkungspotenzial",
         "resonanzraum",
         "verfuegbarkeitsheuristik",
-        "framing"
+        "framing",
+        "affektheuristik",
+        "ankereffekt",
+        "priming"
       ]
     },
     "salienzsteuerung": {
@@ -4039,6 +4258,45 @@
         "autopoiesis"
       ]
     },
+    "selbstwirksamkeit": {
+      "label": "Selbstwirksamkeit",
+      "slug": "selbstwirksamkeit",
+      "url": "/begriffe/selbstwirksamkeit/",
+      "hoverDefinition": "Erleben, durch eigenes Handeln etwas bewirken zu können.",
+      "shortDefinition": "Selbstwirksamkeit beschreibt das Erleben, durch eigenes Handeln etwas bewirken zu können.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Selbstwirksamkeit",
+        "Selbstwirksamkeitserleben"
+      ],
+      "relatedTerms": [
+        "orientierung",
+        "wirkungsintegration",
+        "erlernte-hilflosigkeit",
+        "demokratie",
+        "transformation"
+      ]
+    },
+    "sensemaking": {
+      "label": "Sensemaking",
+      "slug": "sensemaking",
+      "url": "/begriffe/sensemaking/",
+      "hoverDefinition": "Prozess, durch den Menschen oder Organisationen unklare Ereignisse in Sinnzusammenhänge bringen.",
+      "shortDefinition": "Sensemaking beschreibt den Prozess, durch den Menschen oder Organisationen unklare Ereignisse in einen sinnvollen Zusammenhang bringen.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Sensemaking",
+        "Sinnbildung",
+        "Sinnkonstruktion"
+      ],
+      "relatedTerms": [
+        "orientierung",
+        "kohaerenz",
+        "zukunftsbild",
+        "narrativ",
+        "wirkungsintegration"
+      ]
+    },
     "sfdr": {
       "label": "SFDR",
       "slug": "sfdr",
@@ -4114,6 +4372,27 @@
         "sdg-plus"
       ]
     },
+    "soziale-bewaehrtheit": {
+      "label": "Soziale Bewährtheit / Social Proof",
+      "slug": "soziale-bewaehrtheit",
+      "url": "/begriffe/soziale-bewaehrtheit/",
+      "hoverDefinition": "Orientierung am Verhalten anderer, besonders in unsicheren Situationen.",
+      "shortDefinition": "Soziale Bewährtheit beschreibt die Orientierung am Verhalten anderer, besonders in unsicheren Situationen.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Soziale Bewährtheit / Social Proof",
+        "Soziale Bewährtheit",
+        "Social Proof",
+        "soziale Bewaehrtheit"
+      ],
+      "relatedTerms": [
+        "normalisierung",
+        "salienz",
+        "selbstorganisation",
+        "markttransformation",
+        "resonanzraum"
+      ]
+    },
     "spekulationslogik": {
       "label": "Spekulationslogik",
       "slug": "spekulationslogik",
@@ -4129,6 +4408,26 @@
         "stranded-assets",
         "wohnwirkung",
         "wirkungspflicht-eigentum"
+      ]
+    },
+    "status-quo-bias": {
+      "label": "Status-quo-Bias",
+      "slug": "status-quo-bias",
+      "url": "/begriffe/status-quo-bias/",
+      "hoverDefinition": "Neigung, bestehende Zustände zu bevorzugen, selbst wenn bessere Alternativen verfügbar sind.",
+      "shortDefinition": "Der Status-quo-Bias beschreibt die Neigung, bestehende Zustände zu bevorzugen, auch wenn bessere Alternativen verfügbar sind.",
+      "category": "Psychologische und systemische Wirkmechanismen",
+      "synonyms": [
+        "Status-quo-Bias",
+        "Status quo Bias",
+        "Status-quo-Verzerrung"
+      ],
+      "relatedTerms": [
+        "pfadabhaengigkeit",
+        "verlustaversion",
+        "reaktanz",
+        "transformation",
+        "wirkungsrisiko"
       ]
     },
     "steuerungsdaten": {
@@ -4633,7 +4932,9 @@
         "wirkungsdaten",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "gesellschaftliche-stabilitaet",
+        "faktenreaktanz"
       ]
     },
     "vertrauensverschiebung": {
@@ -4792,7 +5093,7 @@
       "url": "/begriffe/wirkstoff/",
       "hoverDefinition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
       "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
-      "category": "Grundbegriff",
+      "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
         "Wirkstoff",
         "gesellschaftlicher Wirkstoff"
@@ -4801,7 +5102,11 @@
         "wirkungspotenzial",
         "wirkmechanismus",
         "wirkungspfad",
-        "resonanzraum"
+        "resonanzraum",
+        "salienz",
+        "framing",
+        "priming",
+        "faktenargumentation"
       ]
     },
     "wirkung": {
@@ -4844,7 +5149,9 @@
         "interdependenz",
         "selbstorganisation",
         "wirkungsintegration",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "wirkungsresilienz",
+        "folgewirkung"
       ]
     },
     "wirkungsbewertung": {
@@ -4883,7 +5190,11 @@
         "salienz",
         "bestaetigungsfehler",
         "wirkungsdaten",
-        "rueckkopplung"
+        "rueckkopplung",
+        "faktenargumentation",
+        "wirkungsrisiko",
+        "folgewirkung",
+        "resonanzraum"
       ]
     },
     "wirkungsdaten": {
@@ -5008,7 +5319,8 @@
       "relatedTerms": [
         "nichtkompensationsprinzip",
         "reverse-merit-order",
-        "netto-wirkung"
+        "netto-wirkung",
+        "moral-licensing"
       ]
     },
     "wirkungshaushalt": {
@@ -5104,7 +5416,9 @@
         "wirkungspfad",
         "wirkungsrisiko",
         "wirkungsintegration",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "sensemaking",
+        "selbstwirksamkeit"
       ]
     },
     "wirkungslenkung": {
@@ -5120,7 +5434,9 @@
       "relatedTerms": [
         "wirkungsrückkopplung",
         "wirkungsarchitektur",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "rueckkopplung"
       ]
     },
     "wirkungsnetz": {
@@ -5202,7 +5518,9 @@
         "wirkungsrisiko",
         "resonanzraum",
         "rueckkopplung",
-        "interdependenz"
+        "interdependenz",
+        "folgewirkung",
+        "wirkstoff"
       ]
     },
     "wirkungspflicht-eigentum": {
@@ -5243,7 +5561,9 @@
         "resonanzraum",
         "anschlussfaehigkeit",
         "salienz",
-        "framing"
+        "framing",
+        "folgewirkung",
+        "faktenargumentation"
       ]
     },
     "wirkungspunkte": {
@@ -5385,7 +5705,9 @@
         "vertrauen",
         "rueckkopplung",
         "kipppunkt",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "resilienz",
+        "gesellschaftliche-stabilitaet"
       ]
     },
     "wirkungsrisiko": {
@@ -5408,7 +5730,12 @@
         "wirkmechanismus",
         "alarm-frame",
         "destruktives-narrativ",
-        "kipppunkt"
+        "kipppunkt",
+        "folgewirkung",
+        "faktenreaktanz",
+        "moral-licensing",
+        "destruktive-vertrauensbindung",
+        "baseline-verschiebung"
       ]
     },
     "wirkungsrueckkopplung": {
@@ -5426,7 +5753,10 @@
         "wirkungslenkung",
         "wirkungsarchitektur",
         "vertrauen",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "rueckkopplung",
+        "folgewirkung",
+        "wirkungsintegration"
       ]
     },
     "wirkungsschule": {
@@ -5561,7 +5891,10 @@
       "relatedTerms": [
         "wirkungsblindheit",
         "wirkungsdatenraum",
-        "wirkungsrat"
+        "wirkungsrat",
+        "faktenargumentation",
+        "vertrauen",
+        "folgencheck"
       ]
     },
     "wix-vi": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T11:38:31.888Z",
+  "generatedAt": "2026-05-29T11:53:35.081Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -7,6 +7,16 @@
         "greenwashing",
         "produktdaten",
         "wirkungsrueckkopplung"
+      ],
+      "documents": []
+    },
+    "affektheuristik": {
+      "terms": [
+        "salienz",
+        "alarm-frame",
+        "framing",
+        "emotionsregulation",
+        "verfuegbarkeitsheuristik"
       ],
       "documents": []
     },
@@ -37,6 +47,16 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "ankereffekt": {
+      "terms": [
+        "framing",
+        "priming",
+        "salienz",
+        "preiswahrheit",
+        "wirkstoff"
+      ],
+      "documents": []
     },
     "anschlussfaehigkeit": {
       "terms": [
@@ -403,6 +423,16 @@
       ],
       "documents": []
     },
+    "erlernte-hilflosigkeit": {
+      "terms": [
+        "selbstwirksamkeit",
+        "orientierung",
+        "wirkungsresilienz",
+        "vertrauen",
+        "gesellschaftliche-stabilitaet"
+      ],
+      "documents": []
+    },
     "ermoeglichende-taetigkeit": {
       "terms": [
         "eu-taxonomie",
@@ -550,6 +580,18 @@
       ],
       "documents": []
     },
+    "faktenargumentation": {
+      "terms": [
+        "faktencheck",
+        "folgencheck",
+        "faktenreaktanz",
+        "meta-kognitive-intervention",
+        "vertrauen",
+        "resonanzraum",
+        "wirkungspotenzial"
+      ],
+      "documents": []
+    },
     "faktencheck": {
       "terms": [
         "folgencheck",
@@ -611,6 +653,16 @@
         "/blog/folgencheck-statt-faktencheck-democracy-intelligence.html"
       ]
     },
+    "folgewirkung": {
+      "terms": [
+        "wirkung",
+        "wirkungspfad",
+        "rueckkopplung",
+        "interdependenz",
+        "wirkungsrisiko"
+      ],
+      "documents": []
+    },
     "forced-labour-regulation": {
       "terms": [
         "mindestschutz-minimum-safeguards",
@@ -627,7 +679,10 @@
         "narrativ",
         "resonanzraum",
         "wirkungspotenzial",
-        "wirkstoff"
+        "wirkstoff",
+        "priming",
+        "ankereffekt",
+        "affektheuristik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -650,6 +705,20 @@
         "produktdaten"
       ],
       "documents": []
+    },
+    "gesellschaftliche-stabilitaet": {
+      "terms": [
+        "vertrauen",
+        "systemische-kohaerenz",
+        "wirkungsresilienz",
+        "demokratie",
+        "orientierung"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.html",
+        "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+      ]
     },
     "gesundheitsgerechtigkeit": {
       "terms": [
@@ -1002,7 +1071,8 @@
         "reaktanz",
         "vertrauensverschiebung",
         "kognitive-dissonanz",
-        "resonanzraum"
+        "resonanzraum",
+        "ingroup-outgroup-dynamik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1043,6 +1113,16 @@
         "wirkungspfad",
         "datenqualitaet",
         "folgencheck"
+      ],
+      "documents": []
+    },
+    "ingroup-outgroup-dynamik": {
+      "terms": [
+        "identitaetsschutz",
+        "motiviertes-denken",
+        "destruktives-narrativ",
+        "vertrauensverschiebung",
+        "polarisierung"
       ],
       "documents": []
     },
@@ -1174,7 +1254,12 @@
         "vertrauensverschiebung",
         "reframing",
         "emotionsregulation",
-        "dissonanzreduktion"
+        "dissonanzreduktion",
+        "faktenargumentation",
+        "faktenreaktanz",
+        "status-quo-bias",
+        "affektheuristik",
+        "selbstwirksamkeit"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1328,6 +1413,16 @@
       "terms": [
         "handlungsfaehigkeit",
         "handlungsspielraum"
+      ],
+      "documents": []
+    },
+    "moral-licensing": {
+      "terms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung",
+        "wirkungsrisiko",
+        "scheinentlastung"
       ],
       "documents": []
     },
@@ -1691,6 +1786,16 @@
         "/blog/soziale-resilienz-gegen-verhetzung.html"
       ]
     },
+    "priming": {
+      "terms": [
+        "framing",
+        "salienz",
+        "narrativ",
+        "normalisierung",
+        "strukturelles-driften"
+      ],
+      "documents": []
+    },
     "produktdaten": {
       "terms": [
         "digitaler-produktpass",
@@ -1822,6 +1927,22 @@
       ],
       "documents": []
     },
+    "resilienz": {
+      "terms": [
+        "wirkungsresilienz",
+        "gesellschaftliche-stabilitaet",
+        "systemische-kohaerenz",
+        "rueckkopplung",
+        "vertrauen"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+        "/blog/soziale-resilienz-gegen-verhetzung.html",
+        "/blog/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.html",
+        "/blog/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.html"
+      ]
+    },
     "resonanzarchitektur": {
       "terms": [
         "resonanzraum",
@@ -1847,7 +1968,11 @@
         "framing",
         "narrativ",
         "vertrauen",
-        "vertrauensverschiebung"
+        "vertrauensverschiebung",
+        "faktenargumentation",
+        "faktenreaktanz",
+        "salienz",
+        "sensemaking"
       ],
       "documents": [],
       "journalArticles": [
@@ -1942,7 +2067,10 @@
         "wirkungspotenzial",
         "resonanzraum",
         "verfuegbarkeitsheuristik",
-        "framing"
+        "framing",
+        "affektheuristik",
+        "ankereffekt",
+        "priming"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2091,6 +2219,26 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "selbstwirksamkeit": {
+      "terms": [
+        "orientierung",
+        "wirkungsintegration",
+        "erlernte-hilflosigkeit",
+        "demokratie",
+        "transformation"
+      ],
+      "documents": []
+    },
+    "sensemaking": {
+      "terms": [
+        "orientierung",
+        "kohaerenz",
+        "zukunftsbild",
+        "narrativ",
+        "wirkungsintegration"
+      ],
+      "documents": []
+    },
     "sfdr": {
       "terms": [
         "sustainable-finance",
@@ -2137,6 +2285,16 @@
         "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
       ]
     },
+    "soziale-bewaehrtheit": {
+      "terms": [
+        "normalisierung",
+        "salienz",
+        "selbstorganisation",
+        "markttransformation",
+        "resonanzraum"
+      ],
+      "documents": []
+    },
     "spekulationslogik": {
       "terms": [
         "stranded-assets",
@@ -2146,6 +2304,16 @@
       "documents": [
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ]
+    },
+    "status-quo-bias": {
+      "terms": [
+        "pfadabhaengigkeit",
+        "verlustaversion",
+        "reaktanz",
+        "transformation",
+        "wirkungsrisiko"
+      ],
+      "documents": []
     },
     "steuerungsdaten": {
       "terms": [
@@ -2424,7 +2592,9 @@
         "wirkungsdaten",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "gesellschaftliche-stabilitaet",
+        "faktenreaktanz"
       ],
       "documents": [
         "folgencheck-statt-faktencheck-democracy-intelligence",
@@ -2524,7 +2694,11 @@
         "wirkungspotenzial",
         "wirkmechanismus",
         "wirkungspfad",
-        "resonanzraum"
+        "resonanzraum",
+        "salienz",
+        "framing",
+        "priming",
+        "faktenargumentation"
       ],
       "documents": [],
       "journalArticles": [
@@ -2558,7 +2732,9 @@
         "interdependenz",
         "selbstorganisation",
         "wirkungsintegration",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "wirkungsresilienz",
+        "folgewirkung"
       ],
       "documents": [],
       "journalArticles": [
@@ -2587,7 +2763,11 @@
         "salienz",
         "bestaetigungsfehler",
         "wirkungsdaten",
-        "rueckkopplung"
+        "rueckkopplung",
+        "faktenargumentation",
+        "wirkungsrisiko",
+        "folgewirkung",
+        "resonanzraum"
       ],
       "documents": [],
       "journalArticles": [
@@ -2657,7 +2837,8 @@
       "terms": [
         "nichtkompensationsprinzip",
         "reverse-merit-order",
-        "netto-wirkung"
+        "netto-wirkung",
+        "moral-licensing"
       ],
       "documents": []
     },
@@ -2712,7 +2893,9 @@
         "wirkungspfad",
         "wirkungsrisiko",
         "wirkungsintegration",
-        "systemische-kohaerenz"
+        "systemische-kohaerenz",
+        "sensemaking",
+        "selbstwirksamkeit"
       ],
       "documents": [
         "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
@@ -2727,7 +2910,9 @@
       "terms": [
         "wirkungsrückkopplung",
         "wirkungsarchitektur",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "rueckkopplung"
       ],
       "documents": [],
       "journalArticles": [
@@ -2776,7 +2961,9 @@
         "wirkungsrisiko",
         "resonanzraum",
         "rueckkopplung",
-        "interdependenz"
+        "interdependenz",
+        "folgewirkung",
+        "wirkstoff"
       ],
       "documents": [],
       "journalArticles": [
@@ -2804,7 +2991,9 @@
         "resonanzraum",
         "anschlussfaehigkeit",
         "salienz",
-        "framing"
+        "framing",
+        "folgewirkung",
+        "faktenargumentation"
       ],
       "documents": [],
       "journalArticles": [
@@ -2891,7 +3080,9 @@
         "vertrauen",
         "rueckkopplung",
         "kipppunkt",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "resilienz",
+        "gesellschaftliche-stabilitaet"
       ],
       "documents": [],
       "journalArticles": [
@@ -2909,7 +3100,12 @@
         "wirkmechanismus",
         "alarm-frame",
         "destruktives-narrativ",
-        "kipppunkt"
+        "kipppunkt",
+        "folgewirkung",
+        "faktenreaktanz",
+        "moral-licensing",
+        "destruktive-vertrauensbindung",
+        "baseline-verschiebung"
       ],
       "documents": []
     },
@@ -2918,7 +3114,10 @@
         "wirkungslenkung",
         "wirkungsarchitektur",
         "vertrauen",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "rueckkopplung",
+        "folgewirkung",
+        "wirkungsintegration"
       ],
       "documents": [],
       "journalArticles": [
@@ -3011,7 +3210,10 @@
       "terms": [
         "wirkungsblindheit",
         "wirkungsdatenraum",
-        "wirkungsrat"
+        "wirkungsrat",
+        "faktenargumentation",
+        "vertrauen",
+        "folgencheck"
       ],
       "documents": []
     },

@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T11:38:00.895Z
+Stand: 2026-05-29T11:53:03.472Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 288 |
+| Begriffe im klassischen Glossar | 302 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1080 |
+| Alias-Einträge | 1123 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -27,8 +27,10 @@ Stand: 2026-05-29T11:38:00.895Z
 | Begriff | Kategorie | im klassischen Glossar | im Spezialbereich | Alias vorhanden | eigene Begriffseite | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | 5. P = Planet | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Affektheuristik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Agenda 2030 | Grundbegriff | ja | - | ja | ja | ok |
 | Alarm-Frame | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Ankereffekt | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Anschlussfähigkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Archetyp | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
@@ -64,6 +66,7 @@ Stand: 2026-05-29T11:38:00.895Z
 | Empowering Consumers for the Green Transition | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Energiearmut | Grundbegriff | ja | - | ja | ja | ok |
 | EPD / Environmental Product Declaration | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Erlernte Hilflosigkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Ermöglichende Tätigkeit | Sustainable Finance | ja | ja | ja | ja | ok |
 | Ernährungssouveränität | Grundbegriff | ja | - | ja | ja | ok |
 | ESAP / European Single Access Point | Reporting und Prüfung | ja | ja | ja | ja | ok |
@@ -78,15 +81,18 @@ Stand: 2026-05-29T11:38:00.895Z
 | EU-Taxonomie | Sustainable Finance | ja | ja | ja | ja | ok |
 | EUDR / EU Deforestation Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | European Green Deal / Europäischer Green Deal | EU-Politikrahmen | ja | ja | ja | ja | ok |
+| Faktenargumentation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Faktencheck | Grundbegriff | ja | - | ja | ja | ok |
 | Faktenreaktanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | FinalScore | Messbegriff | ja | - | ja | ja | ok |
 | Fit for 55 | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Folgencheck | Grundbegriff | ja | - | ja | ja | ok |
+| Folgewirkung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Forced Labour Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Frame / Framing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Generationengerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Geplante Obsoleszenz | Grundbegriff | ja | - | ja | ja | ok |
+| Gesellschaftliche Stabilität | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Gesundheitsgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | GHG Protocol | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Green Claims Directive | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
@@ -126,6 +132,7 @@ Stand: 2026-05-29T11:38:00.895Z
 | ILO | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | ILO-Kernarbeitsnormen | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Impact-Washing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| In-Group / Out-Group-Dynamik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Insetting | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Inside-out / Outside-in | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Interdependenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -156,6 +163,7 @@ Stand: 2026-05-29T11:38:00.895Z
 | Meta-kognitive Intervention | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Mindestschutz / Minimum Safeguards | Sustainable Finance | ja | ja | ja | ja | ok |
 | Mobilitätsarmut | Grundbegriff | ja | - | ja | ja | ok |
+| Moral Licensing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Motiviertes Denken | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | NACE | Sustainable Finance | ja | ja | ja | ja | ok |
 | Nachhaltigkeit | Grundbegriff | ja | - | ja | ja | ok |
@@ -190,6 +198,7 @@ Stand: 2026-05-29T11:38:00.895Z
 | positive Netto-Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | positive Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Prävention | Grundbegriff | ja | - | ja | ja | ok |
+| Priming | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Produktdaten | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Qualitätssicherung | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Quartierswirkung | Grundbegriff | ja | - | ja | ja | ok |
@@ -204,6 +213,7 @@ Stand: 2026-05-29T11:38:00.895Z
 | Renaturierung | Grundbegriff | ja | - | ja | ja | ok |
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Residual Emissions | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Resilienz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Resonanzarchitektur | Architekturbegriff | ja | - | ja | ja | ok |
 | Resonanzraum | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Resonanzrisiko | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -225,10 +235,14 @@ Stand: 2026-05-29T11:38:00.895Z
 | SDG-Washing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | SDGs | Grundbegriff | ja | - | ja | ja | ok |
 | Selbstorganisation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Selbstwirksamkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Sensemaking | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | SFDR | Sustainable Finance | ja | ja | ja | ja | ok |
 | Social Credit | Schutzbegriff | ja | - | ja | ja | ok |
 | Social Taxonomy / Sozialtaxonomie | Sustainable Finance | ja | ja | ja | ja | ok |
+| Soziale Bewährtheit / Social Proof | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Spekulationslogik | Grundbegriff | ja | - | ja | ja | ok |
+| Status-quo-Bias | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Steuerungsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Stranded Assets | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Strukturelle Kopplung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -263,7 +277,7 @@ Stand: 2026-05-29T11:38:00.895Z
 | WHO | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Wirklichkeitskonstruktion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Wirkmechanismus | Grundbegriff | ja | - | ja | ja | ok |
-| Wirkstoff | Grundbegriff | ja | - | ja | ja | ok |
+| Wirkstoff | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Wirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungsarchitektur | Architekturbegriff | ja | - | ja | ja | ok |
 | Wirkungsbewertung | WÖk-Übersetzung | ja | ja | ja | ja | ok |
