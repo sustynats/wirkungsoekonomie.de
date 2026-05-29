@@ -122,6 +122,9 @@ function renderTerm(term) {
   const slug = term.slug;
   const primaryAnchor = `begriff-${slug}`;
   const dtId = externalIds.has(primaryAnchor) ? "" : ` id="${esc(primaryAnchor)}"`;
+  const aliasAnchor = term.anchorId && !externalIds.has(term.anchorId)
+    ? `<span class="classic-glossary-anchor" id="${esc(term.anchorId)}" aria-hidden="true"></span>`
+    : "";
   const paragraphs = distinctParagraphs([term.shortDefinition, term.definition, term.longDefinition]);
   const woekRelation = stripTags(term.woekRelation);
   const statusOrUsage = stripTags(term.statusNote || term.usageNote);
@@ -137,7 +140,7 @@ function renderTerm(term) {
   body.push(`<p class="glossary-entry-action"><a class="text-link" href="${esc(termPage(term))}">Begriff vertiefen</a></p>`);
 
   return `              <div class="classic-glossary-entry" id="klassisch-${esc(slug)}" data-classic-term-id="${esc(term.termId)}">
-                <dt${dtId}>${esc(termLabel(term))}</dt>
+                <dt${dtId}>${aliasAnchor}${esc(termLabel(term))}</dt>
                 <dd>
                   ${body.filter(Boolean).join("\n                  ")}
                 </dd>

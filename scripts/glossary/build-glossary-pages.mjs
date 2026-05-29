@@ -421,6 +421,8 @@ ${learningBlock(term)}
         metaDescription: "Mensch, Planet und Demokratie sind die drei Oberbegriffe, mit denen die Wirkungsökonomie SDGs, Agenda 2030 und SDG+ öffentlich verständlich zusammenfasst.",
       }
     : {};
+  if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
+  if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 

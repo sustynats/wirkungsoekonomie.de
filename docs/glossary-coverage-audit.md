@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T09:37:37.886Z
+Stand: 2026-05-29T10:16:52.757Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 243 |
+| Begriffe im klassischen Glossar | 244 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1024 |
+| Alias-Einträge | 1028 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -214,6 +214,7 @@ Stand: 2026-05-29T09:37:37.886Z
 | Umweltgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | UN Guiding Principles on Business and Human Rights | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Vermeidene Schäden / vermiedene Folgekosten | Grundbegriff | ja | - | ja | ja | ok |
+| Vertrauen | Demokratiebegriff | ja | - | ja | ja | ok |
 | VSME | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Warmmietenneutralität | Grundbegriff | ja | - | ja | ja | ok |
 | Wasserstress | Klima, Natur und Risiken | ja | ja | ja | ja | ok |

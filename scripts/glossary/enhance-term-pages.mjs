@@ -973,8 +973,8 @@ ${supplementalBlocks}
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", {
-    metaTitle: `${term.canonicalLabel} - Begriff der Wirkungsökonomie`,
-    metaDescription: firstSentence(termSummary(term)) || `Lernseite zu ${term.canonicalLabel}.`,
+    metaTitle: term.metaTitle || `${term.canonicalLabel} - Begriff der Wirkungsökonomie`,
+    metaDescription: term.metaDescription || firstSentence(termSummary(term)) || `Lernseite zu ${term.canonicalLabel}.`,
   }));
 }
 
