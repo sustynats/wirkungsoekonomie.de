@@ -52,6 +52,10 @@ const categoryTags = {
   "Feminismus, feministische Ökonomie und Care-Wirkung": ["Feminismus", "Care", "Gleichwertigkeit", "Teilhabe", "Gender Data", "Wirkungswert"],
   "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe": ["Liberalismus", "Freiheit", "Libertarismus", "Neoklassik", "Markt", "Externalität", "Wirklichkeitsbindung"],
   "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume": ["Akteure", "Einfluss", "Lobbyismus", "Thinktanks", "NGO", "Demokratie", "Grundgesetz"],
+  "Faschismus, faschistoid und autoritäre Wirkungsrisiken": ["Faschismus", "faschistoid", "Autoritarismus", "Autokratie", "Totalitarismus", "demokratische Erosion", "Wirkungsrisiko"],
+  "Hannah Arendt und politische Wirkungsbegriffe": ["Hannah Arendt", "Pluralität", "öffentlicher Raum", "Handeln", "Urteilskraft", "Totalitarismus"],
+  "Staat, Regierung, Verwaltung und Gesellschaft": ["Staat", "Regierung", "Verwaltung", "Gesellschaft", "Verfassung", "Gewaltenteilung", "Institutionen"],
+  "Autokratien, Regimeformen und demokratische Erosion": ["Autokratie", "Regimeform", "Diktatur", "Hybridregime", "Rechtsstaatsabbau", "Propaganda", "Machtkonzentration"],
   "Kreislaufwirtschaft, Circular Design und Materialkreisläufe": ["Kreislaufwirtschaft", "Circular Design", "Produktlebenszyklus", "Materialkreisläufe", "Planet"],
   "Neuropsychologische Wirkmechanismen": ["Neuropsychologie", "Wahrnehmung", "Aufmerksamkeit", "Emotion", "Resonanz"],
   "Quantenphysik, Quantenmaterialien und Zukunftstechnologien": ["Quantenphysik", "Zukunftstechnologie", "Materialien", "Photovoltaik", "Innovation"],
@@ -233,6 +237,26 @@ const sourceGroups = {
     ["institutional", "Bundeszentrale für politische Bildung: Rechtsextremismus / Rassismus / Faschismus", "https://www.bpb.de/themen/rechtsextremismus/"],
     ["institutional", "Bundeszentrale für politische Bildung: Konservatismus", "https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17742/konservatismus/"],
     ["internal_woek", "Interne WÖk-Quelle: Politik als Wirkungsraum, Parteien und Programme, Lobbyismus und Machtkonzentration", ""],
+  ],
+  democraticRisk: [
+    ["institutional", "Encyclopaedia Britannica: Fascism", "https://www.britannica.com/topic/fascism"],
+    ["institutional", "Bundeszentrale für politische Bildung: Faschismus", "https://www.bpb.de/themen/rechtsextremismus/dossier-rechtsextremismus/500776/faschismus/"],
+    ["primary", "Robert O. Paxton: The Anatomy of Fascism", ""],
+    ["primary", "Roger Griffin: The Nature of Fascism", ""],
+    ["primary", "Umberto Eco: Ur-Fascism", ""],
+    ["institutional", "Duden: faschistoid", "https://www.duden.de/rechtschreibung/faschistoid"],
+    ["institutional", "Bundeszentrale für politische Bildung: Autoritäre Politik, Autokratie, Totalitarismus", "https://www.bpb.de/"],
+    ["institutional", "V-Dem: Regimes of the World", "https://v-dem.net/"],
+    ["primary", "Hannah Arendt: Vita activa / The Human Condition", ""],
+    ["primary", "Hannah Arendt: Elemente und Ursprünge totaler Herrschaft", ""],
+    ["primary", "Hannah Arendt: Eichmann in Jerusalem", ""],
+    ["primary", "Hannah Arendt: Macht und Gewalt", ""],
+    ["academic", "Stanford Encyclopedia of Philosophy: Hannah Arendt", "https://plato.stanford.edu/entries/arendt/"],
+    ["institutional", "Grundgesetz für die Bundesrepublik Deutschland", "https://www.gesetze-im-internet.de/gg/"],
+    ["institutional", "Bundesregierung: Aufbau und Aufgaben der Bundesregierung", "https://www.bundesregierung.de/breg-de/bundesregierung"],
+    ["institutional", "Bundeszentrale für politische Bildung: Staat, Regierung, Demokratie, Rechtsstaat", "https://www.bpb.de/"],
+    ["institutional", "Bundesverfassungsgericht Klimabeschluss 2021", "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html"],
+    ["internal_woek", "Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG", ""],
   ],
   circular: [
     ["institutional", "Ellen MacArthur Foundation: Circular Economy Principles", "https://www.ellenmacarthurfoundation.org/circular-economy-principles"],
@@ -702,6 +726,10 @@ const CAT_BATTERY_INFRA = "Batterien, Ladeinfrastruktur, Netzanschluss und Energ
 const CAT_FEMINISM_CARE = "Feminismus, feministische Ökonomie und Care-Wirkung";
 const CAT_LIBERAL_MARKET = "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe";
 const CAT_ACTORS_INFLUENCE = "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume";
+const CAT_FASCISM_RISKS = "Faschismus, faschistoid und autoritäre Wirkungsrisiken";
+const CAT_ARENDT = "Hannah Arendt und politische Wirkungsbegriffe";
+const CAT_STATE_GOV = "Staat, Regierung, Verwaltung und Gesellschaft";
+const CAT_REGIME_FORMS = "Autokratien, Regimeformen und demokratische Erosion";
 
 const econBase = {
   category: CAT_ECON_SYSTEMS,
@@ -893,6 +921,78 @@ const actorsInfluenceBase = {
   applicationFields: ["Politik", "Medien", "Staat und Verwaltung", "Demokratie", "Kapitalmärkte", "Bildung"],
   sourceField: ["Politische Theorie", "Soziologie", "Recht", "Psychologie", "Ökonomie", "WÖk-eigener Begriff"],
   sourceGroup: "actorsInfluence",
+};
+const democraticRiskBase = {
+  category: CAT_FASCISM_RISKS,
+  concept: "connection",
+  theme: [
+    "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
+    "Autokratien, Regimeformen und demokratische Erosion",
+    "Demokratie und Grundgesetz",
+    "Rassismus, Faschismus und autoritäre Wirkungsrisiken",
+    "Wirkung politischer Programme",
+    "Demokratie, Medien und Öffentlichkeit",
+    "Wirkung und Wirkungslogik",
+    "Psychologie und Resonanz",
+    "Recht, Staat und Institutionen",
+    "Kapital, Markt und Macht",
+  ],
+  dimensions: ["Mensch", "Demokratie"],
+  wirklogik: ["Wirkmechanismus", "Wirkungspotenzial", "Wirkungsrisiko", "Wirkungsbewertung"],
+  applicationFields: ["Politik", "Medien", "Staat und Verwaltung", "Demokratie", "Bildung"],
+  sourceField: ["Politische Theorie", "Soziologie", "Recht", "Psychologie"],
+  sourceGroup: "democraticRisk",
+};
+const arendtBase = {
+  category: CAT_ARENDT,
+  concept: "sourceLine",
+  theme: [
+    "Hannah Arendt und politische Wirkungsbegriffe",
+    "Demokratie und Grundgesetz",
+    "Philosophie, Ethik und Werte",
+    "Wirkung und Wirkungslogik",
+    "Recht, Staat und Institutionen",
+    "Demokratie, Medien und Öffentlichkeit",
+  ],
+  dimensions: ["Mensch", "Demokratie"],
+  wirklogik: ["Wirkmechanismus", "Wirkungsbewertung", "Wirkungsrisiko"],
+  applicationFields: ["Politik", "Medien", "Staat und Verwaltung", "Demokratie", "Bildung"],
+  sourceField: ["Philosophie", "Politische Theorie", "Soziologie"],
+  sourceGroup: "democraticRisk",
+};
+const stateGovBase = {
+  category: CAT_STATE_GOV,
+  concept: "connection",
+  theme: [
+    "Staat, Regierung, Verwaltung und Gesellschaft",
+    "Demokratie und Grundgesetz",
+    "Recht, Staat und Institutionen",
+    "Wirkung politischer Programme",
+    "Demokratie, Medien und Öffentlichkeit",
+    "Wirkung und Wirkungslogik",
+  ],
+  dimensions: ["Mensch", "Demokratie"],
+  wirklogik: ["Wirkungsbewertung", "Wirkungssteuerung", "Wirkungsrisiko", "Wirkungsarchitektur"],
+  applicationFields: ["Politik", "Staat und Verwaltung", "Demokratie", "Bildung"],
+  sourceField: ["Recht", "Politische Theorie", "Soziologie", "WÖk-eigener Begriff"],
+  sourceGroup: "democraticRisk",
+};
+const regimeFormsBase = {
+  category: CAT_REGIME_FORMS,
+  concept: "connection",
+  theme: [
+    "Autokratien, Regimeformen und demokratische Erosion",
+    "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
+    "Demokratie und Grundgesetz",
+    "Recht, Staat und Institutionen",
+    "Machtkonzentration und Transparenz",
+    "Demokratie, Medien und Öffentlichkeit",
+  ],
+  dimensions: ["Mensch", "Demokratie"],
+  wirklogik: ["Wirkungsrisiko", "Wirkmechanismus", "Wirkungsbewertung"],
+  applicationFields: ["Politik", "Medien", "Staat und Verwaltung", "Demokratie"],
+  sourceField: ["Politische Theorie", "Soziologie", "Recht"],
+  sourceGroup: "democraticRisk",
 };
 
 function addTerm(base, spec) {
@@ -1197,6 +1297,105 @@ const actorsInfluenceTerms = [
   ["links-politisch", "Links", "Links bezeichnet politisch grob Orientierungen, die Gleichheit, soziale Gerechtigkeit, Umverteilung, Arbeit, Teilhabe oder Emanzipation betonen können.", "Nur kontextsensibel verwenden. WÖk fragt nach konkreter Wirkung, nicht nach Lageretikett.", ["links"], ["rechts-politisch", "progressiv", "sozialismus"], "connection", { statusNote: "Priorität 2" }],
   ["rechts-politisch", "Rechts", "Rechts bezeichnet politisch grob Orientierungen, die Ordnung, Nation, Tradition, Eigentum, Sicherheit, Hierarchie oder kulturelle Kontinuität betonen können.", "Nur kontextsensibel verwenden. WÖk unterscheidet konservative Bewahrung tragender Bedingungen von autoritären oder menschenfeindlichen Wirkungsrisiken.", ["rechts"], ["links-politisch", "konservativ", "rechtsextremismus"], "connection", { statusNote: "Priorität 2" }],
 ].map(actorsInfluenceTerm);
+
+function clusterTerm(base, [id, title, short, woek, aliases = [], related = [], concept = "connection", extra = {}]) {
+  return addTerm(base, {
+    id,
+    title,
+    aliases,
+    concept,
+    short,
+    definition: extra.definition || short,
+    woek,
+    related,
+    ...extra,
+  });
+}
+
+const fascismRiskTerms = [
+  ["faschismus", "Faschismus", "Faschismus bezeichnet eine rechtsextreme, autoritäre und anti-liberale Ideologie und Bewegung, die historisch im Italien Mussolinis entstand und später als Oberbegriff für nationalistische, anti-pluralistische und diktatorische Bewegungen verwendet wurde.", "Faschismus ist ein schweres Wirkungsrisiko für Mensch und Demokratie. Er beschädigt Menschenwürde, Minderheitenschutz, Rechtsstaatlichkeit, Pluralismus, freie Medien, Wahrheit, institutionelles Vertrauen und demokratische Korrekturfähigkeit.", [], ["faschistoid", "autoritarismus", "totalitarismus", "rechtsextremismus", "rassismus", "entmenschlichung", "fuehrerprinzip", "feindbildlogik", "suendenbockmechanismus", "demokratische-erosion", "pluralismusfeindlichkeit", "wiedergeburtsnarrativ"], "connection", { customStatus: "Anschlussbegriff / politischer Wirkungsbegriff", definition: "Faschismus ist politikwissenschaftlich nicht durch eine einzige unumstrittene Definition festgelegt. Wiederkehrende Merkmale sind extremer Nationalismus, Führerprinzip, Anti-Liberalismus, Anti-Pluralismus, Gewaltakzeptanz, Feindbildlogik, Unterordnung des Individuums unter eine angeblich höhere Gemeinschaft, Propaganda, Militarisierung, Entmenschlichung und die Vorstellung einer nationalen Wiedergeburt.", mythos: "Faschismus ist einfach alles, was autoritär ist.", woekKlaerung: "Nicht jede autoritäre oder harte Politik ist Faschismus. Faschismus ist ein spezifisches Merkmalsbündel aus Autoritarismus, Rechtsextremismus, Anti-Pluralismus, Feindbildlogik, Gewalt- und Wiedergeburtsnarrativen.", usage: "Den Begriff nicht leichtfertig als Etikett verwenden. Besser Merkmale, Wirkmechanismen und Wirkungspotenziale konkret benennen." }],
+  ["faschistoid", "Faschistoid", "Faschistoid bedeutet: faschistische Züge zeigend, ohne dass zwingend voll ausgeprägter Faschismus vorliegt.", "Nützlich, wenn nicht ein ganzes System als faschistisch bezeichnet werden soll, aber einzelne Muster erkennbar sind: Führerlogik, Entmenschlichung, Feindbild, Gewaltfantasie, Anti-Pluralismus, Reinheitsnarrativ oder demokratische Delegitimierung.", [], ["faschismus", "autoritarismus", "feindbildlogik", "entmenschlichung", "pluralismusfeindlichkeit", "demokratische-erosion"], "connection", { mythos: "Faschistoid ist nur eine abgeschwächte Beschimpfung.", woekKlaerung: "Faschistoid sollte analytisch verwendet werden: Welche konkreten Züge sind gemeint? Welche Wirkungspotenziale entstehen? Welche demokratischen Zustände werden geschwächt?" }],
+  ["linker-faschismus", "Linker Faschismus", "Linker Faschismus ist ein umstrittener und meist polemischer Begriff. Bei strenger Definition von Faschismus als rechtsextrem, ultranationalistisch und anti-liberal ist der Ausdruck irreführend.", "Autoritäre, totalitäre oder gewaltförmige Muster bei linken Systemen müssen klar kritisiert werden, aber präziser über autoritären Sozialismus, Stalinismus, Staatssozialismus, Parteidiktatur, Totalitarismus oder Zentralverwaltungsstaat.", [], ["faschismus", "totalitarismus", "staatssozialismus", "parteistaat", "einparteienstaat"], "connection", { customStatus: "Warnhinweis / umstrittener Begriff", mythos: "Jede autoritäre linke Politik ist linker Faschismus.", woekKlaerung: "Unpräzise Etiketten verdecken Wirkmechanismen. Die WÖk benennt konkrete Muster: Machtkonzentration, Gewalt, Parteidiktatur, Rechtsstaatsabbau oder Totalitarismus." }],
+  ["autoritarismus", "Autoritarismus", "Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.", "Autoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.", [], ["autokratie", "demokratische-erosion", "pluralismusfeindlichkeit", "fuehrerprinzip"]],
+  ["autokratie", "Autokratie", "Eine Autokratie ist eine Herrschaftsform, in der politische Macht bei einer Person oder Gruppe konzentriert ist und demokratische Kontrolle stark eingeschränkt ist.", "Autokratien sind Wirkungsrisiken für Demokratie, Menschenrechte, Rechtsstaatlichkeit, Transparenz, freie Medien und gesellschaftliche Rückkopplung.", [], ["geschlossene-autokratie", "elektorale-autokratie", "diktatur", "autoritarismus", "demokratische-erosion"]],
+  ["geschlossene-autokratie", "Geschlossene Autokratie", "Eine geschlossene Autokratie ist eine Herrschaftsform, in der ein Einzelner oder eine Gruppe unkontrolliert Macht ausübt und keine freien, fairen Wahlen bestehen.", "Die demokratische Rückkopplung ist weitgehend blockiert; Kritik, Opposition, Medien und Rechtsschutz sind stark eingeschränkt.", [], ["autokratie", "diktatur", "oppositionsunterdrueckung"]],
+  ["elektorale-autokratie", "Elektorale Autokratie", "Eine elektorale Autokratie hat formal Wahlen, diese sind aber in der Realität nicht frei und fair.", "Wirkungsrisiko, weil demokratische Legitimation simuliert wird, während Medien, Opposition, Wahlrecht oder Institutionen verzerrt werden.", [], ["autokratie", "wahlmanipulation", "scheindemokratie"]],
+  ["totalitarismus", "Totalitarismus", "Totalitarismus beschreibt Herrschaftsformen, die alle Lebensbereiche kontrollieren wollen und keine freie politische Opposition zulassen.", "Schweres Wirkungsrisiko, weil Öffentlichkeit, Privatheit, Pluralität, Rechtsschutz, Wahrheit und eigenständige Gesellschaft zerstört werden können.", [], ["faschismus", "totalitarismus-arendt", "diktatur", "parteistaat"]],
+  ["diktatur", "Diktatur", "Diktatur beschreibt eine Herrschaftsform, in der politische Macht nicht demokratisch kontrolliert wird und Opposition, Rechte oder Gewaltenteilung stark eingeschränkt sind.", "Diktaturen blockieren demokratische Korrektur und konzentrieren Macht über Menschen, Institutionen, Medien und Verwaltung.", [], ["autokratie", "totalitarismus", "militaerdiktatur"]],
+  ["hybridregime", "Hybridregime", "Ein Hybridregime verbindet demokratische und autoritäre Elemente, etwa Wahlen mit ungleichen Medien-, Rechts- oder Oppositionsbedingungen.", "Gefährlich, weil demokratische Formen erhalten bleiben können, während demokratische Wirkung schrittweise erodiert.", [], ["elektorale-autokratie", "illiberale-demokratie", "demokratische-erosion"]],
+  ["illiberale-demokratie", "Illiberale Demokratie", "Illiberale Demokratie beschreibt Systeme mit Wahlen, aber geschwächten liberalen Schutzrechten, Rechtsstaatlichkeit, Medienfreiheit oder Minderheitenschutz.", "WÖk-Risiko, weil Mehrheitsmacht ohne Schutzgrenzen Demokratie von innen entleeren kann.", [], ["hybridregime", "rechtsstaatsabbau", "pluralismusfeindlichkeit"]],
+  ["demokratische-erosion", "Demokratische Erosion", "Demokratische Erosion beschreibt die schrittweise Schwächung demokratischer Normen, Institutionen, Öffentlichkeit, Rechte oder Kontrollmechanismen.", "Schäden entstehen oft kumulativ: kleine Normalisierungen können große Zustandsverschiebungen auslösen.", [], ["rechtsstaatsabbau", "mediengleichschaltung", "gewaltenteilungsabbau", "wahlmanipulation"]],
+  ["pluralismusfeindlichkeit", "Pluralismusfeindlichkeit", "Pluralismusfeindlichkeit beschreibt Ablehnung politischer, sozialer oder kultureller Vielfalt und legitimer Gegenpositionen.", "Demokratisches Wirkungsrisiko, weil Streit, Minderheitenschutz und Korrekturfähigkeit geschwächt werden.", [], ["faschismus", "autoritarismus", "demokratische-erosion"]],
+  ["fuehrerprinzip", "Führerprinzip", "Das Führerprinzip beschreibt die Unterordnung von Institutionen, Gruppen oder Individuen unter eine autoritäre Führungsperson.", "Schweres Wirkungsrisiko, weil Korrektur, Gewaltenteilung, Pluralismus und Rechtsstaatlichkeit verdrängt werden.", [], ["faschismus", "autoritarismus", "fuehrerkult"]],
+  ["entmenschlichung", "Entmenschlichung", "Entmenschlichung beschreibt Sprache oder Praxis, die Menschen ihre Würde, Individualität oder Schutzwürdigkeit abspricht.", "Schweres Wirkungsrisiko, weil Gewalt, Ausschluss und Rechtsbrüche leichter legitimierbar werden.", [], ["menschenwuerde", "faschismus", "feindbildlogik"]],
+  ["feindbildlogik", "Feindbildlogik", "Feindbildlogik ordnet politische oder soziale Konflikte über stark vereinfachte Gegnerbilder.", "Sie kann Aufmerksamkeit mobilisieren, aber Vertrauen, Differenzierung, Minderheitenschutz und demokratische Lösungssuche beschädigen.", [], ["faschismus", "populismus", "entmenschlichung", "suendenbockmechanismus"]],
+  ["suendenbockmechanismus", "Sündenbockmechanismus", "Der Sündenbockmechanismus verschiebt komplexe Probleme auf eine Gruppe, Person oder Minderheit, die als Ursache markiert wird.", "Wirkungsrisiko für Wahrheit, Minderheitenschutz, Gewaltfreiheit und gesellschaftlichen Zusammenhalt.", [], ["feindbildlogik", "populismus", "rassismus"]],
+  ["wiedergeburtsnarrativ", "Wiedergeburtsnarrativ", "Ein Wiedergeburtsnarrativ erzählt, dass eine Nation, ein Volk oder eine Gemeinschaft angeblich aus Verfall, Demütigung oder Verrat wieder auferstehen müsse.", "Relevant für Faschismusforschung und autoritäre politische Sprache, weil es Krise, Feindbild und Erlösungsversprechen koppeln kann.", [], ["faschismus", "reaktionaer", "propaganda"]],
+].map((item) => clusterTerm(democraticRiskBase, item));
+
+const arendtTerms = [
+  ["hannah-arendt", "Hannah Arendt", "Hannah Arendt ist für die Wirkungsökonomie relevant, weil sie Politik als öffentlichen Raum des Handelns, Sprechens, Urteilens und gemeinsamen Beginnens versteht.", "Arendt hilft zu verstehen, warum Demokratie nicht nur Institutionenordnung ist. Demokratie braucht öffentliche Räume, Pluralität, Sprache, Handeln, Urteilskraft und die Fähigkeit, gemeinsam etwas Neues zu beginnen.", [], ["pluralitaet", "natalitaet", "handeln-arendt", "vita-activa", "oeffentlicher-raum-arendt", "macht-und-gewalt", "banalitaet-des-boesen", "totalitarismus-arendt"], "thinker", { customStatus: "Vordenkerin / Bezugslinie" }],
+  ["vita-activa", "Vita activa", "Vita activa bezeichnet bei Hannah Arendt die Tätigkeitsformen Arbeiten, Herstellen und Handeln.", "Relevant, weil Arbeit, Produktion und politisches Handeln unterschiedliche Wirkungsräume sind.", [], ["arbeiten-arendt", "herstellen-arendt", "handeln-arendt", "hannah-arendt"]],
+  ["arbeiten-arendt", "Arbeiten", "Arbeiten ist bei Arendt die Tätigkeit, die das Leben erhält und biologische Bedürfnisse deckt.", "Mit Care, Reproduktion, Pflege und sozialer Stabilisierung verbinden, aber Arendts Grenzen gegenüber feministischer Ökonomie beachten.", [], ["vita-activa", "care-oekonomie", "soziale-reproduktion"]],
+  ["herstellen-arendt", "Herstellen", "Herstellen schafft dauerhafte Dinge, Werkzeuge, Gebäude und eine gestaltete Welt.", "Relevant für Produktwirkung, Infrastruktur, gebaute Welt und Verantwortung für Dauerhaftigkeit.", [], ["vita-activa", "produkte", "infrastrukturwirkung"]],
+  ["handeln-arendt", "Handeln", "Handeln ist bei Arendt das politische Tätigwerden unter Menschen, verbunden mit Sprache, Öffentlichkeit und Freiheit.", "Handeln ist zentral für Demokratie als Wirkungsraum.", [], ["vita-activa", "oeffentlicher-raum-arendt", "demokratie"]],
+  ["pluralitaet", "Pluralität", "Pluralität bedeutet, dass Menschen gleichwertig, aber verschieden sind und aus unterschiedlichen Perspektiven handeln und urteilen.", "Pluralität ist eine Bedingung demokratischer Wirkung.", [], ["demokratie", "gleichwertigkeit", "hannah-arendt"]],
+  ["natalitaet", "Natalität", "Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen.", "Wichtig für Transformation, Innovation, demokratisches Handeln und Wirkungsökonomie als neuer Anfang.", [], ["transformation", "innovation", "hannah-arendt"]],
+  ["oeffentlicher-raum-arendt", "Öffentlicher Raum / Erscheinungsraum", "Der öffentliche Raum ist bei Arendt der Raum, in dem Menschen durch Sprechen und Handeln voreinander erscheinen und gemeinsam politische Wirklichkeit schaffen.", "Relevant für Medien, Demokratie, Resonanzräume und politische Wirksamkeit.", ["Erscheinungsraum"], ["handeln-arendt", "pluralitaet", "resonanzraum"]],
+  ["macht-und-gewalt", "Macht und Gewalt", "Arendt unterscheidet Macht als gemeinsames Handeln von Gewalt als Zwangsmittel.", "Diese Unterscheidung ist zentral für Demokratie: Macht entsteht durch gemeinsames Handeln; Gewalt zerstört demokratische Rückkopplung.", [], ["hannah-arendt", "gewalt", "demokratie", "autoritarismus"]],
+  ["banalitaet-des-boesen", "Banalität des Bösen", "Banalität des Bösen beschreibt Arendts These, dass schweres Unrecht auch durch Gedankenlosigkeit, Gehorsam, Verwaltung und fehlende Urteilskraft entstehen kann.", "Relevant für Verwaltung, Bürokratie, Verantwortung, Mitläufertum, Wirkungsblindheit und autoritäre Systeme.", [], ["gedankenlosigkeit", "urteilskraft", "verwaltung", "totalitarismus-arendt"], "connection", { mythos: "Banalität des Bösen bedeutet, Böses sei harmlos.", woekKlaerung: "Gemeint ist: Schweres Unrecht kann durch normale, gedankenlose Funktionslogik möglich werden." }],
+  ["urteilskraft", "Urteilskraft", "Urteilskraft beschreibt die Fähigkeit, Situationen zu beurteilen, Perspektiven mitzudenken und verantwortlich zu entscheiden.", "Für die WÖk zentral, weil Daten und Regeln ohne Urteilskraft technokratisch oder blind werden können.", [], ["banalitaet-des-boesen", "demokratie", "wirkungsrat"]],
+  ["gedankenlosigkeit", "Gedankenlosigkeit", "Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende Verantwortungsübernahme im Handeln.", "Wirkungsrisiko, wenn Verwaltung, Organisationen oder Individuen Regeln ausführen, ohne Folgen für Menschen und Demokratie mitzudenken.", [], ["banalitaet-des-boesen", "verwaltung", "wirkungsblindheit"]],
+  ["weltlosigkeit", "Weltlosigkeit", "Weltlosigkeit beschreibt den Verlust eines gemeinsamen öffentlichen Bezugsraums, in dem Menschen Wirklichkeit teilen und beurteilen können.", "Relevant für Desinformation, Einsamkeit, Radikalisierung, Medienräume und demokratische Erosion.", [], ["oeffentlicher-raum-arendt", "resonanzraum", "demokratische-erosion"]],
+  ["totalitarismus-arendt", "Totalitarismus nach Arendt", "Totalitarismus nach Arendt beschreibt Herrschaftsformen, die Menschen isolieren, Wahrheit zerstören, Terror und Ideologie verbinden und politische Pluralität abschaffen.", "Anschlussbegriff für Wirkungsrisiken, die Öffentlichkeit, Urteilskraft, Gesellschaft und Rechtsstaatlichkeit zerstören.", [], ["hannah-arendt", "totalitarismus", "weltlosigkeit"]],
+].map((item) => clusterTerm(arendtBase, item));
+
+const stateGovTerms = [
+  ["staat", "Staat", "Der Staat ist die dauerhafte politische und rechtliche Ordnung eines Landes. Er umfasst Staatsgebiet, Staatsvolk, Staatsgewalt, Verfassung, Gesetze, Institutionen, Gerichte, Verwaltung und Behörden.", "Der Staat ist der institutionelle Rahmen, der Rechte, Verfahren, Schutzpflichten, demokratische Ordnung und Wirkungsarchitektur ermöglicht. Er ist nicht identisch mit der aktuellen Regierung.", [], ["regierung", "verwaltung", "verfassung", "staatsgebiet", "staatsvolk", "staatsgewalt", "gewaltenteilung"], "connection", { mythos: "Der Staat und die Regierung sind dasselbe.", woekKlaerung: "Die Regierung kann wechseln. Der Staat bleibt bestehen." }],
+  ["regierung", "Regierung", "Die Regierung ist die politische Führung auf Zeit. Sie leitet die politischen und staatlichen Geschäfte und kann nach Wahlen wechseln.", "Die Regierung ist ein Wirkungsträger, aber nicht der ganze Staat.", [], ["staat", "bundesregierung", "regierungskritik"]],
+  ["bundesregierung", "Bundesregierung", "Die Bundesregierung besteht aus Bundeskanzler:in und Bundesminister:innen.", "Sie trägt politische Verantwortung auf Bundesebene, bleibt aber an Verfassung, Parlament, Rechtsschutz und Verwaltung gebunden.", [], ["regierung", "parlament", "verfassung"]],
+  ["verwaltung", "Verwaltung", "Die Verwaltung setzt Gesetze, Programme und politische Entscheidungen praktisch um.", "Verwaltung ist nicht bloße Bürokratie. Sie ist ein zentraler Ort, an dem Wirkung tatsächlich entsteht oder blockiert wird.", [], ["behoerde", "staat", "banalitaet-des-boesen", "wirkungsarchitektur"]],
+  ["behoerde", "Behörde", "Eine Behörde ist eine staatliche Stelle, die Verwaltungsaufgaben erfüllt und Entscheidungen nach Recht und Gesetz umsetzt.", "Behörden sind Kontaktstellen zwischen Staat und Bürger:innen; ihre Wirkung zeigt sich in Zugang, Fairness, Tempo, Verständlichkeit und Rechtsschutz.", [], ["verwaltung", "staat"]],
+  ["parlament", "Parlament", "Ein Parlament ist die gewählte Volksvertretung, die Gesetze beschließt, Regierung kontrolliert und öffentliche Debatten führt.", "Parlamente sind zentrale Rückkopplungsorte der Demokratie.", [], ["gesetz", "regierung", "demokratie"]],
+  ["gesetz", "Gesetz", "Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßigen Verfahren beschlossen wird.", "Gesetze sind Wirkungsträger: Sie verändern Rechte, Pflichten, Preise, Verfahren, Schutz und Handlungsmöglichkeiten.", [], ["parlament", "verfassung", "wirkungsfolgenabschaetzung"]],
+  ["verfassung", "Verfassung", "Eine Verfassung legt die grundlegende Ordnung eines Staates, Grundrechte, Institutionen und Machtbegrenzungen fest.", "Verfassung ist Wirkungsgrenze und Schutzarchitektur zugleich.", [], ["grundgesetz", "staat", "menschenwuerde"]],
+  ["staatsgebiet", "Staatsgebiet", "Staatsgebiet bezeichnet den räumlichen Bereich, in dem ein Staat Hoheitsgewalt ausübt.", "Grundelement des Staates und relevant für Zuständigkeit, Infrastruktur, Schutz und Verwaltung.", [], ["staat", "staatsvolk", "staatsgewalt"]],
+  ["staatsvolk", "Staatsvolk", "Staatsvolk bezeichnet die Menschen, die rechtlich einem Staat angehören.", "Relevant für demokratische Legitimation, Rechte, Pflichten und Teilhabe.", [], ["staat", "staatsgebiet", "staatsgewalt"]],
+  ["staatsgewalt", "Staatsgewalt", "Staatsgewalt bezeichnet die hoheitliche Macht des Staates, Recht zu setzen, durchzusetzen und Rechtsschutz zu gewährleisten.", "Wirkungsökonomisch braucht Staatsgewalt Bindung an Grundrechte, Gewaltenteilung, Verhältnismäßigkeit und demokratische Kontrolle.", [], ["staat", "gewaltenteilung", "rechtsschutz"]],
+  ["gewaltenteilung", "Gewaltenteilung", "Gewaltenteilung trennt staatliche Macht in Gesetzgebung, Regierung/Verwaltung und Rechtsprechung.", "Sie verhindert Machtkonzentration und schützt demokratische Korrektur.", [], ["staatsgewalt", "rechtsstaatsprinzip", "gewaltenteilungsabbau"]],
+  ["verfassungsorgan", "Verfassungsorgan", "Ein Verfassungsorgan ist eine durch die Verfassung vorgesehene zentrale Institution des Staates.", "Relevant für Zuständigkeit, Kontrolle, demokratische Legitimation und Machtbegrenzung.", [], ["grundgesetz", "parlament", "regierung"]],
+  ["gesellschaft", "Gesellschaft", "Gesellschaft ist der Raum der Menschen, Beziehungen, Gruppen, Organisationen, Konflikte, Normen und Lebensformen.", "Gesellschaft ist nicht der Staat. Sie ist der Resonanzraum, in dem politische Sprache, Märkte, Medien, Institutionen und Wirkungsdaten aufgenommen werden.", [], ["staat", "resonanzraum", "zivilgesellschaft"]],
+  ["politisches-system", "Politisches System", "Das politische System umfasst Institutionen, Verfahren, Akteure und Regeln, durch die politische Entscheidungen entstehen und kontrolliert werden.", "Wirkungsraum für Macht, Beteiligung, Gesetzgebung, Verwaltung, Öffentlichkeit und Korrektur.", [], ["staat", "regierung", "regime"]],
+  ["regime", "Regime", "Regime bezeichnet die konkrete Ordnung politischer Herrschaft und ihrer Regeln, Institutionen und Machtverteilung.", "Neutraler Analysebegriff, nicht automatisch abwertend; Wirkung hängt von Rechtsstaatlichkeit, Freiheit, Kontrolle und Rückkopplung ab.", [], ["regierungsform", "staatsform", "autokratie"]],
+  ["staatsform", "Staatsform", "Staatsform beschreibt die grundlegende rechtlich-politische Ordnung eines Staates, etwa Republik oder Monarchie.", "Nicht mit Regierungsform verwechseln; Wirkung entsteht aus Institutionen, Verfahren und Machtbegrenzung.", [], ["regierungsform", "staat"]],
+  ["regierungsform", "Regierungsform", "Regierungsform beschreibt, wie politische Führung organisiert und kontrolliert wird, etwa parlamentarisch, präsidentiell, demokratisch oder autokratisch.", "Relevant für Machtkonzentration, Verantwortlichkeit, Korrektur und demokratische Stabilität.", [], ["staatsform", "regierung", "regime"]],
+  ["regierungskritik", "Regierungskritik", "Regierungskritik richtet sich gegen konkrete politische Führung, Entscheidungen, Programme oder Maßnahmen.", "Regierungskritik ist demokratisch notwendig, solange sie konkrete Entscheidungen prüfbar kritisiert und nicht die demokratische Ordnung pauschal delegitimiert.", [], ["regierung", "staatsdelegitimierung", "institutionenkritik"]],
+  ["staatsdelegitimierung", "Staatsdelegitimierung", "Staatsdelegitimierung beschreibt die pauschale Abwertung oder Feindmarkierung des Staates als demokratische und rechtsstaatliche Ordnung.", "Wirkungsrisiko, wenn Vertrauen in Gerichte, Verwaltung, Verfassung, Wahlen und demokratische Verfahren zerstört wird.", [], ["staat", "regierungskritik", "institutionendelegitimierung", "demokratische-erosion"]],
+  ["institutionenkritik", "Institutionenkritik", "Institutionenkritik richtet sich gegen konkrete Institutionen, ihre Fehler, Verfahren oder Machtstrukturen.", "Legitim und notwendig, wenn sie konkret, prüfbar und korrigierbar bleibt.", [], ["institutionendelegitimierung", "regierungskritik", "vertrauen"]],
+  ["institutionendelegitimierung", "Institutionendelegitimierung", "Institutionendelegitimierung beschreibt die pauschale Abwertung demokratischer Institutionen als grundsätzlich feindlich, korrupt oder illegitim.", "Demokratisches Wirkungsrisiko, weil Korrekturwege, Vertrauen und gemeinsame Wirklichkeit beschädigt werden.", [], ["institutionenkritik", "staatsdelegitimierung", "demokratische-erosion"]],
+  ["kommunistischer-staat", "Kommunistischer Staat", "Kommunistischer Staat ist ein ungenauer Begriff. Historisch gemeint sind meist Staaten mit kommunistischer oder marxistisch-leninistischer Regierung und starker Staats- oder Parteizentralisierung.", "Eigentumsform oder Parteibezeichnung ersetzen keine Wirkungsprüfung. Besser ist: kommunistisch regierter Staat, marxistisch-leninistischer Einparteienstaat oder Staatssozialismus.", [], ["kommunismus", "staatssozialismus", "einparteienstaat"], "precision", { customStatus: "Hinweisbegriff / Präzisierungsbegriff", woekKlaerung: "In der kommunistischen Theorie soll der Staat in einer voll entwickelten klassenlosen Gesellschaft eigentlich absterben. Historisch existierten jedoch stark zentralisierte Staaten mit kommunistischen Parteien." }],
+].map((item) => clusterTerm(stateGovBase, item));
+
+const regimeFormTerms = [
+  ["parteistaat", "Parteistaat", "Ein Parteistaat ist eine Ordnung, in der eine Partei staatliche Institutionen, Verwaltung, Medien oder Recht stark dominiert.", "Wirkungsrisiko, wenn Staat, Partei und Gesellschaft nicht mehr unterscheidbar bleiben und Korrektur blockiert wird.", [], ["einparteienstaat", "state-capture", "autokratie"]],
+  ["einparteienstaat", "Einparteienstaat", "Ein Einparteienstaat lässt faktisch oder rechtlich nur eine führende Partei zur Herrschaft zu.", "Blockiert politische Konkurrenz, Opposition und demokratische Korrektur.", [], ["parteistaat", "kommunistischer-staat", "oppositionsunterdrueckung"]],
+  ["militaerdiktatur", "Militärdiktatur", "Eine Militärdiktatur ist eine Herrschaftsform, in der Militär oder Sicherheitsapparate die politische Macht ausüben.", "Wirkungsrisiko für Grundrechte, Zivilgesellschaft, Rechtsschutz und Gewaltenteilung.", ["Militärdiktatur"], ["diktatur", "autokratie"]],
+  ["theokratie", "Theokratie", "Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind.", "Wirkung hängt davon ab, ob Grundrechte, Pluralismus, Gleichwertigkeit und Rechtsschutz gesichert oder eingeschränkt werden.", [], ["regime", "pluralismusfeindlichkeit"]],
+  ["kleptokratie", "Kleptokratie", "Kleptokratie beschreibt Herrschaft, in der politische Macht systematisch zur privaten Bereicherung genutzt wird.", "Schädigt Vertrauen, öffentliche Infrastruktur, Rechtsstaatlichkeit und Verteilungsgerechtigkeit.", [], ["korruption", "state-capture", "oligarchie"]],
+  ["oligarchie", "Oligarchie", "Oligarchie beschreibt Herrschaft oder starken Einfluss weniger mächtiger Akteure.", "Wirkungsrisiko, wenn Zugang, Medien, Kapital, Gesetzgebung oder öffentliche Güter durch kleine Gruppen kontrolliert werden.", [], ["plutokratie", "machtkonzentration", "marktmacht"]],
+  ["plutokratie", "Plutokratie", "Plutokratie beschreibt eine Ordnung, in der Reichtum politischen Einfluss stark bestimmt.", "Wirkungsrisiko für Gleichwertigkeit, Demokratie, Rechenschaft und öffentliche Infrastruktur.", [], ["oligarchie", "kapitalmacht", "dark-money"]],
+  ["rechtsstaatsabbau", "Rechtsstaatsabbau", "Rechtsstaatsabbau beschreibt die Schwächung unabhängiger Gerichte, Rechtsschutz, Gesetzesbindung oder Verhältnismäßigkeit.", "Zentrales Element demokratischer Erosion, weil Korrektur und Schutz vor Machtmissbrauch verloren gehen.", [], ["rechtsstaatsprinzip", "rechtsschutz", "demokratische-erosion"]],
+  ["mediengleichschaltung", "Mediengleichschaltung", "Mediengleichschaltung beschreibt die politische oder staatliche Unterordnung von Medien unter eine einheitliche Linie.", "Schweres Wirkungsrisiko, weil öffentliche Wahrheit, Kritik, Pluralität und Kontrolle zerstört werden.", [], ["propaganda", "staatspropaganda", "pluralismusfeindlichkeit"]],
+  ["gewaltenteilungsabbau", "Gewaltenteilungsabbau", "Gewaltenteilungsabbau schwächt die Trennung und Kontrolle staatlicher Macht.", "Er erhöht Machtkonzentration und senkt demokratische Korrekturfähigkeit.", [], ["gewaltenteilung", "rechtsstaatsabbau", "autokratie"]],
+  ["wahlmanipulation", "Wahlmanipulation", "Wahlmanipulation beschreibt Eingriffe, die freie, faire oder gleiche Wahlen verzerren.", "Blockiert demokratische Rückkopplung und kann elektorale Autokratie stabilisieren.", [], ["elektorale-autokratie", "scheindemokratie"]],
+  ["scheindemokratie", "Scheindemokratie", "Scheindemokratie beschreibt eine Ordnung, die demokratische Formen zeigt, aber reale demokratische Kontrolle stark einschränkt.", "Wirkungsrisiko, weil Legitimität simuliert wird, während Opposition, Medien oder Rechtsschutz geschwächt sind.", [], ["hybridregime", "elektorale-autokratie"]],
+  ["oppositionsunterdrueckung", "Oppositionsunterdrückung", "Oppositionsunterdrückung beschreibt die Einschränkung, Kriminalisierung oder Ausschaltung politischer Gegenkräfte.", "Schwächt Pluralismus, Machtkontrolle und demokratische Wechselmöglichkeit.", [], ["autokratie", "einparteienstaat", "demokratische-erosion"]],
+  ["zivilgesellschaftsrepression", "Zivilgesellschaftsrepression", "Zivilgesellschaftsrepression beschreibt Druck, Verbote oder Einschüchterung gegenüber NGOs, Initiativen, Medien oder Bewegungen.", "Schwächt demokratische Rückkopplung und Betroffenenbezug.", [], ["zivilgesellschaft", "ngo", "autokratie"]],
+  ["propaganda", "Propaganda", "Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.", "Wirkungsrisiko, wenn Wahrheit, Pluralität, Urteilskraft und freie Meinungsbildung verdrängt werden.", [], ["staatspropaganda", "mediengleichschaltung", "agenda-setting"]],
+  ["staatspropaganda", "Staatspropaganda", "Staatspropaganda ist vom Staat gesteuerte oder dominierte Propaganda.", "Schädigt demokratische Öffentlichkeit, wenn sie Kritik ersetzt, Realität verzerrt und Macht absichert.", [], ["propaganda", "mediengleichschaltung", "autokratie"]],
+  ["fuehrerkult", "Führerkult", "Führerkult beschreibt die überhöhte Verehrung einer politischen Führungsperson.", "Wirkungsrisiko, weil Institutionen, Kritik, Recht und Pluralität hinter persönlicher Loyalität zurücktreten.", [], ["fuehrerprinzip", "personalisierte-macht"]],
+  ["personalisierte-macht", "Personalisierte Macht", "Personalisierte Macht beschreibt politische Ordnung, in der Entscheidungen stark von einer Person und ihrem Umfeld abhängen.", "Wirkungsrisiko, wenn Verfahren, Institutionen und Rechenschaft durch Loyalität und Nähe ersetzt werden.", [], ["fuehrerkult", "autokratie", "state-capture"]],
+].map((item) => clusterTerm(regimeFormsBase, item));
 
 const circularTerms = [
   addTerm(circularBase, { id: "kreislaufwirtschaft", title: "Kreislaufwirtschaft", concept: "precision", short: "Kreislaufwirtschaft hält Produkte, Materialien und Ressourcen möglichst lange im Nutzungskreislauf, vermeidet Abfall und regeneriert natürliche Systeme.", definition: "Sie ersetzt die lineare Logik nehmen, herstellen, wegwerfen durch längere Nutzung, Teilen, Wartung, Reparatur, Wiederverwendung, Refurbishment, Remanufacturing, Recycling und sichere biologische Rückführung.", woek: "Kreislaufwirtschaft ist notwendig, aber nicht hinreichend. Positive Netto-Wirkung entsteht erst, wenn Kreislauffähigkeit mit Mensch, Planet und Demokratie verbunden wird.", mythos: "Kreislaufwirtschaft bedeutet Recycling.", woekKlaerung: "Recycling ist nur ein Teil und meist ein äußerer Loop. Innere Loops wie Vermeidung, längere Nutzung, Reparatur und Wiederverwendung haben oft höhere Wirkung.", blindSpot: "Kreisläufe können toxische Stoffe, Plattformmacht oder Ausbeutung stabilisieren.", related: ["cradle-to-cradle", "circular-economy-butterfly-model", "technischer-kreislauf", "biologischer-kreislauf", "reparierbarkeit", "remanufacturing", "recycling", "materialgesundheit", "produktlebenszyklus", "digitaler-produktpass", "reverse-merit-order"] }),
@@ -1592,7 +1791,7 @@ const batteryInfrastructureTerms = [
   ["anlagenpass", "Anlagenpass", "Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.", "Analog zum Materialpass oder Digitalen Produktpass für große Energieanlagen; wichtig für Rückbau, Wartung, Versicherung und Kreislaufwirkung.", [], ["materialpass", "digitaler-produktpass", "rueckbaustandard"], "method"],
 ].map(batteryInfraTerm);
 
-additions.push(...economicSystemTerms, ...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
+additions.push(...economicSystemTerms, ...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...fascismRiskTerms, ...arendtTerms, ...stateGovTerms, ...regimeFormTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
 
 const raw = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const terms = raw.terms || [];
@@ -1834,6 +2033,10 @@ for (const item of terms) {
     [CAT_FEMINISM_CARE]: "Feminismus und Gleichwertigkeit",
     [CAT_LIBERAL_MARKET]: "Liberalismus und Freiheit",
     [CAT_ACTORS_INFLUENCE]: "Akteure und Einfluss",
+    [CAT_FASCISM_RISKS]: "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
+    [CAT_ARENDT]: "Hannah Arendt und politische Wirkungsbegriffe",
+    [CAT_STATE_GOV]: "Staat, Regierung, Verwaltung und Gesellschaft",
+    [CAT_REGIME_FORMS]: "Autokratien, Regimeformen und demokratische Erosion",
     [CAT_LANGUAGE]: "Sprache, Wirklichkeit und Kommunikation",
     [CAT_SYSTEMS]: "Systemtheorie, Kybernetik und Konstruktivismus",
     [CAT_MANAGEMENT2]: "Management, Organisation und Wirksamkeit",
@@ -1926,6 +2129,27 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Bundeszentrale für politische Bildung: Rechtsextremismus / Rassismus / Faschismus-Dossiers, https://www.bpb.de/themen/rechtsextremismus/
 - Bundeszentrale für politische Bildung: Konservatismus, https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17742/konservatismus/
 - Interne WÖk-Quellen: Politik als Wirkungsraum, Parteien und Programme, Lobbyismus und Machtkonzentration, Wirkung als Rechtsprinzip, Wirkungsrat-Konzept, Folgencheck statt Faktencheck, Wirkung politischer Sprache, Medien & Demokratie.
+
+## Faschismus / Arendt / Staat / Regimeformen
+
+- Encyclopaedia Britannica: Fascism, common characteristics, https://www.britannica.com/topic/fascism
+- Bundeszentrale für politische Bildung: Faschismus, https://www.bpb.de/themen/rechtsextremismus/dossier-rechtsextremismus/500776/faschismus/
+- Robert O. Paxton: The Anatomy of Fascism
+- Roger Griffin: The Nature of Fascism
+- Umberto Eco: Ur-Fascism
+- Duden: faschistoid, https://www.duden.de/rechtschreibung/faschistoid
+- Bundeszentrale für politische Bildung: Autoritäre Politik / Autokratie / Totalitarismus, https://www.bpb.de/
+- V-Dem: Regimes of the World, https://v-dem.net/
+- Hannah Arendt: Vita activa / The Human Condition
+- Hannah Arendt: Elemente und Ursprünge totaler Herrschaft
+- Hannah Arendt: Eichmann in Jerusalem
+- Hannah Arendt: Macht und Gewalt
+- Stanford Encyclopedia of Philosophy: Hannah Arendt, https://plato.stanford.edu/entries/arendt/
+- Grundgesetz für die Bundesrepublik Deutschland, https://www.gesetze-im-internet.de/gg/
+- Bundesregierung: Aufbau und Aufgaben der Bundesregierung, https://www.bundesregierung.de/breg-de/bundesregierung
+- Bundeszentrale für politische Bildung / HanisauLand: Staat, Regierung, Demokratie, Rechtsstaat, https://www.bpb.de/
+- Bundesverfassungsgericht Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
+- Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG, Die neue Ordnung des Wohlstands, Systemmodell der Wirkungsökonomie.
 
 ## Feministische Ökonomie / Care
 
@@ -2164,7 +2388,7 @@ Publikationsstatus:
 `;
 fs.writeFileSync(processPath, processMarkdown);
 
-const backlinkTerms = [...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms].filter((item) => item.publicationStatus === "published").map((item) => ({
+const backlinkTerms = [...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...fascismRiskTerms, ...arendtTerms, ...stateGovTerms, ...regimeFormTerms].filter((item) => item.publicationStatus === "published").map((item) => ({
   termId: item.termId,
   label: item.canonicalLabel,
   aliases: item.aliases,

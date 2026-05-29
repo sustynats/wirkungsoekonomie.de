@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T19:56:22.506Z",
+  "generatedAt": "2026-05-29T20:15:07.017Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -136,7 +136,8 @@
         "aufmerksamkeit",
         "policy-entrepreneurship",
         "astroturfing",
-        "public-affairs"
+        "public-affairs",
+        "propaganda"
       ],
       "documents": []
     },
@@ -322,6 +323,18 @@
       ],
       "documents": []
     },
+    "arbeiten-arendt": {
+      "terms": [
+        "vita-activa",
+        "care-oekonomie",
+        "soziale-reproduktion"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.html",
+        "/blog/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.html"
+      ]
+    },
     "arbeitspreis": {
       "terms": [
         "leistungspreis",
@@ -424,6 +437,24 @@
       ],
       "documents": []
     },
+    "autokratie": {
+      "terms": [
+        "geschlossene-autokratie",
+        "elektorale-autokratie",
+        "diktatur",
+        "autoritarismus",
+        "demokratische-erosion",
+        "regime",
+        "parteistaat",
+        "militaerdiktatur",
+        "gewaltenteilungsabbau",
+        "oppositionsunterdrueckung",
+        "zivilgesellschaftsrepression",
+        "staatspropaganda",
+        "personalisierte-macht"
+      ],
+      "documents": []
+    },
     "autopoiesis": {
       "terms": [
         "nichttriviales-system",
@@ -455,7 +486,10 @@
         "totalitarismus",
         "extremismus",
         "fuehrerprinzip",
-        "pluralismusfeindlichkeit"
+        "pluralismusfeindlichkeit",
+        "autokratie",
+        "faschistoid",
+        "macht-und-gewalt"
       ],
       "documents": []
     },
@@ -475,6 +509,16 @@
         "residuallast",
         "versorgungssicherheit",
         "reservekraftwerk"
+      ],
+      "documents": []
+    },
+    "banalitaet-des-boesen": {
+      "terms": [
+        "gedankenlosigkeit",
+        "urteilskraft",
+        "verwaltung",
+        "totalitarismus-arendt",
+        "hannah-arendt"
       ],
       "documents": []
     },
@@ -659,6 +703,13 @@
         "informationsueberlastung",
         "rationalitaet",
         "homo-oeconomicus"
+      ],
+      "documents": []
+    },
+    "behoerde": {
+      "terms": [
+        "verwaltung",
+        "staat"
       ],
       "documents": []
     },
@@ -875,6 +926,17 @@
       ],
       "documents": []
     },
+    "bundesregierung": {
+      "terms": [
+        "regierung",
+        "parlament",
+        "verfassung"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.html"
+      ]
+    },
     "buergerenergie": {
       "terms": [
         "energieautonomie",
@@ -977,7 +1039,8 @@
         "feministische-wirtschaftspolitik",
         "gender-care-gap",
         "gender-budgeting",
-        "service-ngo"
+        "service-ngo",
+        "arbeiten-arendt"
       ],
       "documents": []
     },
@@ -1239,7 +1302,8 @@
         "transparenzregister-lobbyismus",
         "donor-dependency",
         "astroturfing",
-        "stiftung"
+        "stiftung",
+        "plutokratie"
       ],
       "documents": []
     },
@@ -1330,7 +1394,19 @@
         "pluralismusfeindlichkeit",
         "vertrauensverschiebung",
         "autoritaeres-wirkungspotenzial",
-        "reaktionaer"
+        "reaktionaer",
+        "rechtsstaatsabbau",
+        "mediengleichschaltung",
+        "gewaltenteilungsabbau",
+        "wahlmanipulation",
+        "faschismus",
+        "faschistoid",
+        "autokratie",
+        "hybridregime",
+        "weltlosigkeit",
+        "staatsdelegitimierung",
+        "institutionendelegitimierung",
+        "oppositionsunterdrueckung"
       ],
       "documents": []
     },
@@ -1466,6 +1542,15 @@
         "anlagenpass",
         "vollstaendige-information",
         "informationsasymmetrie"
+      ],
+      "documents": []
+    },
+    "diktatur": {
+      "terms": [
+        "autokratie",
+        "totalitarismus",
+        "militaerdiktatur",
+        "geschlossene-autokratie"
       ],
       "documents": []
     },
@@ -1706,6 +1791,15 @@
       ],
       "documents": []
     },
+    "einparteienstaat": {
+      "terms": [
+        "parteistaat",
+        "kommunistischer-staat",
+        "oppositionsunterdrueckung",
+        "linker-faschismus"
+      ],
+      "documents": []
+    },
     "einspeisemanagement": {
       "terms": [
         "abregelung",
@@ -1717,6 +1811,15 @@
       "terms": [
         "eeg",
         "marktpraemie"
+      ],
+      "documents": []
+    },
+    "elektorale-autokratie": {
+      "terms": [
+        "autokratie",
+        "wahlmanipulation",
+        "scheindemokratie",
+        "hybridregime"
       ],
       "documents": []
     },
@@ -1960,7 +2063,8 @@
       "terms": [
         "menschenwuerde",
         "faschismus",
-        "feindbildlogik"
+        "feindbildlogik",
+        "faschistoid"
       ],
       "documents": []
     },
@@ -2366,9 +2470,9 @@
         "metakommunikation",
         "faktenargumentation",
         "quellenklarheit",
+        "selektive-evidenz",
         "wahrheitsillusionseffekt",
-        "wirkstoff",
-        "selektive-evidenz"
+        "wirkstoff"
       ],
       "documents": [
         "faktencheck-folgencheck-v1-1"
@@ -2413,7 +2517,24 @@
         "entmenschlichung",
         "fuehrerprinzip",
         "pluralismusfeindlichkeit",
-        "rechtsextremismus"
+        "rechtsextremismus",
+        "faschistoid",
+        "rassismus",
+        "suendenbockmechanismus",
+        "demokratische-erosion",
+        "wiedergeburtsnarrativ",
+        "linker-faschismus"
+      ],
+      "documents": []
+    },
+    "faschistoid": {
+      "terms": [
+        "faschismus",
+        "autoritarismus",
+        "feindbildlogik",
+        "entmenschlichung",
+        "pluralismusfeindlichkeit",
+        "demokratische-erosion"
       ],
       "documents": []
     },
@@ -2432,7 +2553,8 @@
         "entmenschlichung",
         "suendenbockmechanismus",
         "muslimfeindlichkeit",
-        "xenophobie"
+        "xenophobie",
+        "faschistoid"
       ],
       "documents": []
     },
@@ -2583,12 +2705,12 @@
         "impact-washing",
         "quellenklarheit",
         "scheinwahrheit",
+        "selektive-evidenz",
         "wahrheitsillusionseffekt",
         "wirkstoff",
         "wirkungsraum",
         "wirkungsverantwortung",
-        "wirkungswahrheit",
-        "selektive-evidenz"
+        "wirkungswahrheit"
       ],
       "documents": [
         "faktencheck-folgencheck-v1-1"
@@ -2693,11 +2815,19 @@
       ],
       "documents": []
     },
+    "fuehrerkult": {
+      "terms": [
+        "fuehrerprinzip",
+        "personalisierte-macht"
+      ],
+      "documents": []
+    },
     "fuehrerprinzip": {
       "terms": [
         "faschismus",
         "autoritarismus",
-        "demokratieprinzip"
+        "demokratieprinzip",
+        "fuehrerkult"
       ],
       "documents": []
     },
@@ -2728,6 +2858,14 @@
     "gedaechtniskonsolidierung": {
       "terms": [
         "narrativ"
+      ],
+      "documents": []
+    },
+    "gedankenlosigkeit": {
+      "terms": [
+        "banalitaet-des-boesen",
+        "verwaltung",
+        "wirkungsblindheit"
       ],
       "documents": []
     },
@@ -2854,6 +2992,28 @@
       ],
       "documents": []
     },
+    "geschlossene-autokratie": {
+      "terms": [
+        "autokratie",
+        "diktatur",
+        "oppositionsunterdrueckung"
+      ],
+      "documents": []
+    },
+    "gesellschaft": {
+      "terms": [
+        "staat",
+        "resonanzraum",
+        "zivilgesellschaft"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+        "/blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+        "/blog/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.html",
+        "/blog/soziale-resilienz-gegen-verhetzung.html"
+      ]
+    },
     "gesellschaftliche-stabilitaet": {
       "terms": [
         "vertrauen",
@@ -2867,6 +3027,13 @@
       "journalArticles": [
         "/blog/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.html"
       ]
+    },
+    "gesetz": {
+      "terms": [
+        "parlament",
+        "verfassung"
+      ],
+      "documents": []
     },
     "gesicherte-leistung": {
       "terms": [
@@ -2883,6 +3050,24 @@
       "terms": [
         "health-impact-assessment",
         "hitzestress"
+      ],
+      "documents": []
+    },
+    "gewaltenteilung": {
+      "terms": [
+        "staatsgewalt",
+        "rechtsstaatsprinzip",
+        "gewaltenteilungsabbau",
+        "staat"
+      ],
+      "documents": []
+    },
+    "gewaltenteilungsabbau": {
+      "terms": [
+        "gewaltenteilung",
+        "rechtsstaatsabbau",
+        "autokratie",
+        "demokratische-erosion"
       ],
       "documents": []
     },
@@ -3007,7 +3192,8 @@
         "reproduktive-gerechtigkeit",
         "sozialliberalismus",
         "menschenwuerde",
-        "gleichheit"
+        "gleichheit",
+        "pluralitaet"
       ],
       "documents": []
     },
@@ -3167,7 +3353,9 @@
         "meinungsfreiheit",
         "eigentum-verpflichtet",
         "schutzpflicht",
-        "verfassungsmaessige-wirkungsarchitektur"
+        "verfassungsmaessige-wirkungsarchitektur",
+        "verfassung",
+        "verfassungsorgan"
       ],
       "documents": []
     },
@@ -3243,6 +3431,17 @@
         "/blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html"
       ]
     },
+    "handeln-arendt": {
+      "terms": [
+        "vita-activa",
+        "oeffentlicher-raum-arendt",
+        "hannah-arendt"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.html"
+      ]
+    },
     "handlung": {
       "terms": [
         "wirkung",
@@ -3299,7 +3498,15 @@
     },
     "hannah-arendt": {
       "terms": [
-        "wirkungsraum"
+        "wirkungsraum",
+        "pluralitaet",
+        "natalitaet",
+        "handeln-arendt",
+        "vita-activa",
+        "oeffentlicher-raum-arendt",
+        "macht-und-gewalt",
+        "banalitaet-des-boesen",
+        "totalitarismus-arendt"
       ],
       "documents": []
     },
@@ -3448,6 +3655,12 @@
         "produktdaten",
         "lieferkettendaten",
         "eudr"
+      ],
+      "documents": []
+    },
+    "herstellen-arendt": {
+      "terms": [
+        "vita-activa"
       ],
       "documents": []
     },
@@ -3615,6 +3828,15 @@
       ],
       "documents": []
     },
+    "hybridregime": {
+      "terms": [
+        "elektorale-autokratie",
+        "illiberale-demokratie",
+        "demokratische-erosion",
+        "scheindemokratie"
+      ],
+      "documents": []
+    },
     "hydrologischer-kreislauf": {
       "terms": [
         "wasserstress",
@@ -3658,6 +3880,14 @@
       "documents": [
         "sdg-sdgplus-referenzrahmen"
       ]
+    },
+    "illiberale-demokratie": {
+      "terms": [
+        "hybridregime",
+        "rechtsstaatsabbau",
+        "pluralismusfeindlichkeit"
+      ],
+      "documents": []
     },
     "ilo": {
       "terms": [
@@ -3794,7 +4024,8 @@
         "schoepferische-zerstoerung",
         "kondratieff-zyklus",
         "joseph-schumpeter",
-        "neuigkeitsbias"
+        "neuigkeitsbias",
+        "natalitaet"
       ],
       "documents": [],
       "journalArticles": [
@@ -3832,6 +4063,22 @@
         "rassismus",
         "struktureller-rassismus",
         "gleichbehandlung"
+      ],
+      "documents": []
+    },
+    "institutionendelegitimierung": {
+      "terms": [
+        "institutionenkritik",
+        "staatsdelegitimierung",
+        "demokratische-erosion"
+      ],
+      "documents": []
+    },
+    "institutionenkritik": {
+      "terms": [
+        "institutionendelegitimierung",
+        "regierungskritik",
+        "vertrauen"
       ],
       "documents": []
     },
@@ -4157,6 +4404,13 @@
       ],
       "documents": []
     },
+    "kleptokratie": {
+      "terms": [
+        "state-capture",
+        "oligarchie"
+      ],
+      "documents": []
+    },
     "klimaanpassung": {
       "terms": [
         "klimarisiko",
@@ -4323,7 +4577,16 @@
         "planwirtschaft",
         "machtkonzentration",
         "totalitarismus",
-        "linksextremismus"
+        "linksextremismus",
+        "kommunistischer-staat"
+      ],
+      "documents": []
+    },
+    "kommunistischer-staat": {
+      "terms": [
+        "kommunismus",
+        "staatssozialismus",
+        "einparteienstaat"
       ],
       "documents": []
     },
@@ -4906,6 +5169,16 @@
       ],
       "documents": []
     },
+    "linker-faschismus": {
+      "terms": [
+        "faschismus",
+        "totalitarismus",
+        "staatssozialismus",
+        "parteistaat",
+        "einparteienstaat"
+      ],
+      "documents": []
+    },
     "links-politisch": {
       "terms": [
         "rechts-politisch",
@@ -4998,6 +5271,13 @@
       ],
       "documents": []
     },
+    "macht-und-gewalt": {
+      "terms": [
+        "hannah-arendt",
+        "autoritarismus"
+      ],
+      "documents": []
+    },
     "machtdezentralisierung": {
       "terms": [
         "feminismus",
@@ -5023,7 +5303,8 @@
         "machtdezentralisierung",
         "dominanzlogik",
         "patriarchale-dividende",
-        "marktmacht"
+        "marktmacht",
+        "oligarchie"
       ],
       "documents": []
     },
@@ -5071,7 +5352,8 @@
         "regulatory-capture",
         "rent-seeking",
         "netzwerkeffekt",
-        "corporate-capture"
+        "corporate-capture",
+        "oligarchie"
       ],
       "documents": []
     },
@@ -5173,6 +5455,15 @@
       ],
       "documents": []
     },
+    "mediengleichschaltung": {
+      "terms": [
+        "propaganda",
+        "staatspropaganda",
+        "pluralismusfeindlichkeit",
+        "demokratische-erosion"
+      ],
+      "documents": []
+    },
     "megawatt-charging-system": {
       "terms": [
         "depotladen",
@@ -5232,7 +5523,8 @@
         "schutzpflicht",
         "antisemitismus",
         "extremismus",
-        "entmenschlichung"
+        "entmenschlichung",
+        "verfassung"
       ],
       "documents": []
     },
@@ -5321,6 +5613,13 @@
         "prosumer",
         "stadtwerke",
         "kommunale-energie"
+      ],
+      "documents": []
+    },
+    "militaerdiktatur": {
+      "terms": [
+        "diktatur",
+        "autokratie"
       ],
       "documents": []
     },
@@ -5554,6 +5853,13 @@
       "journalArticles": [
         "/blog/wirkung-schlaegt-wahrheit.html"
       ]
+    },
+    "natalitaet": {
+      "terms": [
+        "innovation",
+        "hannah-arendt"
+      ],
+      "documents": []
     },
     "natrium-ionen-batterie": {
       "terms": [
@@ -5902,7 +6208,8 @@
         "gongo",
         "quango",
         "donor-dependency",
-        "repraesentationsanspruch"
+        "repraesentationsanspruch",
+        "zivilgesellschaftsrepression"
       ],
       "documents": []
     },
@@ -6151,6 +6458,16 @@
       ],
       "documents": []
     },
+    "oeffentlicher-raum-arendt": {
+      "terms": [
+        "handeln-arendt",
+        "pluralitaet",
+        "resonanzraum",
+        "hannah-arendt",
+        "weltlosigkeit"
+      ],
+      "documents": []
+    },
     "offsetting-kompensation": {
       "terms": [
         "carbon-credits",
@@ -6190,6 +6507,15 @@
       "terms": [
         "biodiversitaetsrisiko",
         "nature-related-risks"
+      ],
+      "documents": []
+    },
+    "oligarchie": {
+      "terms": [
+        "plutokratie",
+        "machtkonzentration",
+        "marktmacht",
+        "kleptokratie"
       ],
       "documents": []
     },
@@ -6242,6 +6568,15 @@
         "allokation",
         "wirkungswert",
         "neoklassik"
+      ],
+      "documents": []
+    },
+    "oppositionsunterdrueckung": {
+      "terms": [
+        "autokratie",
+        "einparteienstaat",
+        "demokratische-erosion",
+        "geschlossene-autokratie"
       ],
       "documents": []
     },
@@ -6309,6 +6644,25 @@
         "wohlfahrtsoekonomie",
         "externalitaet",
         "neoklassik"
+      ],
+      "documents": []
+    },
+    "parlament": {
+      "terms": [
+        "gesetz",
+        "regierung",
+        "bundesregierung",
+        "verfassungsorgan"
+      ],
+      "documents": []
+    },
+    "parteistaat": {
+      "terms": [
+        "einparteienstaat",
+        "state-capture",
+        "autokratie",
+        "totalitarismus",
+        "linker-faschismus"
       ],
       "documents": []
     },
@@ -6393,6 +6747,14 @@
         "design-thinking",
         "wirkungsempfaenger",
         "value-proposition"
+      ],
+      "documents": []
+    },
+    "personalisierte-macht": {
+      "terms": [
+        "fuehrerkult",
+        "autokratie",
+        "state-capture"
       ],
       "documents": []
     },
@@ -6528,7 +6890,26 @@
         "faschismus",
         "autoritarismus",
         "demokratische-erosion",
-        "reaktionaer"
+        "reaktionaer",
+        "faschistoid",
+        "illiberale-demokratie",
+        "theokratie",
+        "mediengleichschaltung"
+      ],
+      "documents": []
+    },
+    "pluralitaet": {
+      "terms": [
+        "gleichwertigkeit",
+        "hannah-arendt",
+        "oeffentlicher-raum-arendt"
+      ],
+      "documents": []
+    },
+    "plutokratie": {
+      "terms": [
+        "oligarchie",
+        "dark-money"
       ],
       "documents": []
     },
@@ -6568,6 +6949,14 @@
       "terms": [
         "liberalismus",
         "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "politisches-system": {
+      "terms": [
+        "staat",
+        "regierung",
+        "regime"
       ],
       "documents": []
     },
@@ -6859,6 +7248,15 @@
       ],
       "documents": []
     },
+    "propaganda": {
+      "terms": [
+        "staatspropaganda",
+        "mediengleichschaltung",
+        "agenda-setting",
+        "wiedergeburtsnarrativ"
+      ],
+      "documents": []
+    },
     "prosumer": {
       "terms": [
         "photovoltaik",
@@ -7033,7 +7431,8 @@
         "muslimfeindlichkeit",
         "xenophobie",
         "rechtsextremismus",
-        "suendenbockmechanismus"
+        "suendenbockmechanismus",
+        "faschismus"
       ],
       "documents": []
     },
@@ -7074,7 +7473,8 @@
       "terms": [
         "konservativ",
         "pluralismusfeindlichkeit",
-        "demokratische-erosion"
+        "demokratische-erosion",
+        "wiedergeburtsnarrativ"
       ],
       "documents": []
     },
@@ -7147,7 +7547,19 @@
         "grundgesetz",
         "rechtsstaatsprinzip",
         "verfassungsmaessige-wirkungsarchitektur",
-        "verhaeltnismaessigkeit"
+        "verhaeltnismaessigkeit",
+        "staatsgewalt",
+        "rechtsstaatsabbau"
+      ],
+      "documents": []
+    },
+    "rechtsstaatsabbau": {
+      "terms": [
+        "rechtsstaatsprinzip",
+        "rechtsschutz",
+        "demokratische-erosion",
+        "illiberale-demokratie",
+        "gewaltenteilungsabbau"
       ],
       "documents": []
     },
@@ -7156,7 +7568,9 @@
         "grundgesetz",
         "rechtsschutz",
         "verhaeltnismaessigkeit",
-        "gleichbehandlung"
+        "gleichbehandlung",
+        "gewaltenteilung",
+        "rechtsstaatsabbau"
       ],
       "documents": []
     },
@@ -7292,6 +7706,47 @@
       "terms": [
         "biologischer-kreislauf",
         "extraktiver-kapitalismus"
+      ],
+      "documents": []
+    },
+    "regierung": {
+      "terms": [
+        "staat",
+        "bundesregierung",
+        "regierungskritik",
+        "parlament",
+        "verfassungsorgan",
+        "politisches-system",
+        "regierungsform"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.html"
+      ]
+    },
+    "regierungsform": {
+      "terms": [
+        "staatsform",
+        "regierung",
+        "regime"
+      ],
+      "documents": []
+    },
+    "regierungskritik": {
+      "terms": [
+        "regierung",
+        "staatsdelegitimierung",
+        "institutionenkritik"
+      ],
+      "documents": []
+    },
+    "regime": {
+      "terms": [
+        "regierungsform",
+        "staatsform",
+        "autokratie",
+        "politisches-system",
+        "theokratie"
       ],
       "documents": []
     },
@@ -7517,6 +7972,7 @@
         "salienz",
         "framing",
         "strukturdeterminiertheit",
+        "astroturfing",
         "bestaetigungsfehler",
         "commons-gemeingueter",
         "emotionale-arbeit",
@@ -7543,7 +7999,9 @@
         "wirkungsnetz",
         "wirkungsorientiertes-hosting",
         "wirkungspotenzial",
-        "astroturfing"
+        "oeffentlicher-raum-arendt",
+        "weltlosigkeit",
+        "gesellschaft"
       ],
       "documents": [],
       "journalArticles": [
@@ -7814,6 +8272,14 @@
       ],
       "documents": []
     },
+    "scheindemokratie": {
+      "terms": [
+        "hybridregime",
+        "elektorale-autokratie",
+        "wahlmanipulation"
+      ],
+      "documents": []
+    },
     "scheinentlastung": {
       "terms": [
         "dissonanzreduktion",
@@ -8067,9 +8533,9 @@
       ],
       "journalArticles": [
         "/blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html",
-        "/blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
         "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
-        "/blog/wirkungsoekonomie-kein-parteiprogramm.html"
+        "/blog/wirkungsoekonomie-kein-parteiprogramm.html",
+        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html"
       ]
     },
     "sdg-washing": {
@@ -8378,7 +8844,8 @@
         "reproduktive-arbeit",
         "unbezahlte-arbeit",
         "patriarchat",
-        "feminismus"
+        "feminismus",
+        "arbeiten-arendt"
       ],
       "documents": []
     },
@@ -8485,11 +8952,74 @@
       ],
       "documents": []
     },
+    "staat": {
+      "terms": [
+        "regierung",
+        "verwaltung",
+        "verfassung",
+        "staatsgebiet",
+        "staatsvolk",
+        "staatsgewalt",
+        "gewaltenteilung",
+        "behoerde",
+        "gesellschaft",
+        "politisches-system",
+        "staatsform",
+        "staatsdelegitimierung"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html"
+      ]
+    },
+    "staatsdelegitimierung": {
+      "terms": [
+        "staat",
+        "regierungskritik",
+        "institutionendelegitimierung",
+        "demokratische-erosion"
+      ],
+      "documents": []
+    },
+    "staatsform": {
+      "terms": [
+        "regierungsform",
+        "staat",
+        "regime"
+      ],
+      "documents": []
+    },
+    "staatsgebiet": {
+      "terms": [
+        "staat",
+        "staatsvolk",
+        "staatsgewalt"
+      ],
+      "documents": []
+    },
+    "staatsgewalt": {
+      "terms": [
+        "staat",
+        "gewaltenteilung",
+        "rechtsschutz",
+        "staatsgebiet",
+        "staatsvolk"
+      ],
+      "documents": []
+    },
     "staatskapitalismus": {
       "terms": [
         "kapitalismus",
         "staatssozialismus",
         "kapitalwirkung"
+      ],
+      "documents": []
+    },
+    "staatspropaganda": {
+      "terms": [
+        "propaganda",
+        "mediengleichschaltung",
+        "autokratie"
       ],
       "documents": []
     },
@@ -8500,7 +9030,9 @@
         "planwirtschaft",
         "nichttriviales-system",
         "staatskapitalismus",
-        "kommunismus"
+        "kommunismus",
+        "linker-faschismus",
+        "kommunistischer-staat"
       ],
       "documents": []
     },
@@ -8510,6 +9042,14 @@
         "regulierungsversagen",
         "wirkungsrat",
         "nachtwaechterstaat"
+      ],
+      "documents": []
+    },
+    "staatsvolk": {
+      "terms": [
+        "staat",
+        "staatsgebiet",
+        "staatsgewalt"
       ],
       "documents": []
     },
@@ -8550,7 +9090,10 @@
     "state-capture": {
       "terms": [
         "corporate-capture",
-        "regulatory-capture"
+        "regulatory-capture",
+        "parteistaat",
+        "kleptokratie",
+        "personalisierte-macht"
       ],
       "documents": []
     },
@@ -8807,7 +9350,8 @@
       "terms": [
         "feindbildlogik",
         "populismus",
-        "rassismus"
+        "rassismus",
+        "faschismus"
       ],
       "documents": []
     },
@@ -9109,6 +9653,13 @@
       ],
       "documents": []
     },
+    "theokratie": {
+      "terms": [
+        "regime",
+        "pluralismusfeindlichkeit"
+      ],
+      "documents": []
+    },
     "thermal-runaway": {
       "terms": [
         "batteriemanagementsystem",
@@ -9186,7 +9737,20 @@
       "terms": [
         "autoritarismus",
         "faschismus",
-        "kommunismus"
+        "kommunismus",
+        "totalitarismus-arendt",
+        "diktatur",
+        "parteistaat",
+        "linker-faschismus"
+      ],
+      "documents": []
+    },
+    "totalitarismus-arendt": {
+      "terms": [
+        "hannah-arendt",
+        "totalitarismus",
+        "weltlosigkeit",
+        "banalitaet-des-boesen"
       ],
       "documents": []
     },
@@ -9496,6 +10060,13 @@
       ],
       "documents": []
     },
+    "urteilskraft": {
+      "terms": [
+        "banalitaet-des-boesen",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
     "value-proposition": {
       "terms": [
         "value-proposition-canvas",
@@ -9555,12 +10126,30 @@
       ],
       "documents": []
     },
+    "verfassung": {
+      "terms": [
+        "grundgesetz",
+        "staat",
+        "menschenwuerde",
+        "bundesregierung",
+        "gesetz"
+      ],
+      "documents": []
+    },
     "verfassungsmaessige-wirkungsarchitektur": {
       "terms": [
         "grundgesetz",
         "wirkungsarchitektur",
         "verhaeltnismaessigkeit",
         "rechtsschutz"
+      ],
+      "documents": []
+    },
+    "verfassungsorgan": {
+      "terms": [
+        "grundgesetz",
+        "parlament",
+        "regierung"
       ],
       "documents": []
     },
@@ -9693,7 +10282,8 @@
         "wertewandel",
         "wirkungsdaten",
         "wirkungsrat",
-        "wirkungsraum"
+        "wirkungsraum",
+        "institutionenkritik"
       ],
       "documents": [
         "folgencheck-statt-faktencheck-democracy-intelligence",
@@ -9734,6 +10324,19 @@
       ],
       "documents": []
     },
+    "verwaltung": {
+      "terms": [
+        "behoerde",
+        "staat",
+        "banalitaet-des-boesen",
+        "wirkungsarchitektur",
+        "gedankenlosigkeit"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.html"
+      ]
+    },
     "viabilitaet": {
       "terms": [
         "viable-system-model",
@@ -9751,6 +10354,15 @@
         "viabilitaet",
         "wirkungsarchitektur",
         "stafford-beer"
+      ],
+      "documents": []
+    },
+    "vita-activa": {
+      "terms": [
+        "arbeiten-arendt",
+        "herstellen-arendt",
+        "handeln-arendt",
+        "hannah-arendt"
       ],
       "documents": []
     },
@@ -9781,6 +10393,14 @@
         "klimarisiko",
         "wirkungsresilienz",
         "klimaanpassung"
+      ],
+      "documents": []
+    },
+    "wahlmanipulation": {
+      "terms": [
+        "elektorale-autokratie",
+        "scheindemokratie",
+        "demokratische-erosion"
       ],
       "documents": []
     },
@@ -9958,6 +10578,15 @@
       ],
       "documents": []
     },
+    "weltlosigkeit": {
+      "terms": [
+        "oeffentlicher-raum-arendt",
+        "resonanzraum",
+        "demokratische-erosion",
+        "totalitarismus-arendt"
+      ],
+      "documents": []
+    },
     "wert": {
       "terms": [
         "werte",
@@ -10040,6 +10669,14 @@
     "who": {
       "terms": [
         "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "wiedergeburtsnarrativ": {
+      "terms": [
+        "faschismus",
+        "reaktionaer",
+        "propaganda"
       ],
       "documents": []
     },
@@ -10225,13 +10862,14 @@
         "stafford-beer",
         "systemische-kohaerenz",
         "systemorientiertes-management",
+        "verfassungsmaessige-wirkungsarchitektur",
         "wirkungskompetenz",
         "wirkungslenkung",
         "wirkungsnetz",
         "wirkungsraum",
         "wirkungsresilienz",
         "wirkungsrueckkopplung",
-        "verfassungsmaessige-wirkungsarchitektur"
+        "verwaltung"
       ],
       "documents": [],
       "journalArticles": [
@@ -10286,7 +10924,8 @@
         "externalisierung",
         "entfremdung",
         "unsichtbare-arbeit",
-        "modellblindheit"
+        "modellblindheit",
+        "gedankenlosigkeit"
       ],
       "documents": [],
       "journalArticles": [
@@ -10683,9 +11322,9 @@
       "documents": [],
       "journalArticles": [
         "/blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html",
+        "/blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
         "/blog/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.html",
-        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
-        "/blog/wirkung-schlaegt-wahrheit.html"
+        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html"
       ]
     },
     "wirkungspunkte": {
@@ -10724,7 +11363,8 @@
         "staatsversagen",
         "regulatory-capture",
         "epistemische-gemeinschaft",
-        "demokratieprinzip"
+        "demokratieprinzip",
+        "urteilskraft"
       ],
       "documents": [
         "wirkungsrat-konzept"
@@ -10822,6 +11462,7 @@
         "klimarisiko",
         "wirkungsgrenze",
         "alarm-frame",
+        "autoritaeres-wirkungspotenzial",
         "baseline-verschiebung",
         "destruktive-vertrauensbindung",
         "destruktives-narrativ",
@@ -10854,8 +11495,7 @@
         "wirkungsblindheit",
         "wirkungskompetenz",
         "wirkungsradar",
-        "zeitwirkung",
-        "autoritaeres-wirkungspotenzial"
+        "zeitwirkung"
       ],
       "documents": []
     },
@@ -11251,7 +11891,17 @@
         "cso",
         "buergerinitiative",
         "grassroots-bewegung",
-        "repraesentationsanspruch"
+        "repraesentationsanspruch",
+        "gesellschaft",
+        "zivilgesellschaftsrepression"
+      ],
+      "documents": []
+    },
+    "zivilgesellschaftsrepression": {
+      "terms": [
+        "zivilgesellschaft",
+        "ngo",
+        "autokratie"
       ],
       "documents": []
     },

@@ -56,6 +56,27 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Bundeszentrale für politische Bildung: Konservatismus, https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17742/konservatismus/
 - Interne WÖk-Quellen: Politik als Wirkungsraum, Parteien und Programme, Lobbyismus und Machtkonzentration, Wirkung als Rechtsprinzip, Wirkungsrat-Konzept, Folgencheck statt Faktencheck, Wirkung politischer Sprache, Medien & Demokratie.
 
+## Faschismus / Arendt / Staat / Regimeformen
+
+- Encyclopaedia Britannica: Fascism, common characteristics, https://www.britannica.com/topic/fascism
+- Bundeszentrale für politische Bildung: Faschismus, https://www.bpb.de/themen/rechtsextremismus/dossier-rechtsextremismus/500776/faschismus/
+- Robert O. Paxton: The Anatomy of Fascism
+- Roger Griffin: The Nature of Fascism
+- Umberto Eco: Ur-Fascism
+- Duden: faschistoid, https://www.duden.de/rechtschreibung/faschistoid
+- Bundeszentrale für politische Bildung: Autoritäre Politik / Autokratie / Totalitarismus, https://www.bpb.de/
+- V-Dem: Regimes of the World, https://v-dem.net/
+- Hannah Arendt: Vita activa / The Human Condition
+- Hannah Arendt: Elemente und Ursprünge totaler Herrschaft
+- Hannah Arendt: Eichmann in Jerusalem
+- Hannah Arendt: Macht und Gewalt
+- Stanford Encyclopedia of Philosophy: Hannah Arendt, https://plato.stanford.edu/entries/arendt/
+- Grundgesetz für die Bundesrepublik Deutschland, https://www.gesetze-im-internet.de/gg/
+- Bundesregierung: Aufbau und Aufgaben der Bundesregierung, https://www.bundesregierung.de/breg-de/bundesregierung
+- Bundeszentrale für politische Bildung / HanisauLand: Staat, Regierung, Demokratie, Rechtsstaat, https://www.bpb.de/
+- Bundesverfassungsgericht Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
+- Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG, Die neue Ordnung des Wohlstands, Systemmodell der Wirkungsökonomie.
+
 ## Feministische Ökonomie / Care
 
 - Marilyn Waring: If Women Counted

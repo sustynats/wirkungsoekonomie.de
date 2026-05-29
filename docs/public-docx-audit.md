@@ -1,6 +1,6 @@
 # Public DOCX Audit
 
-Stand: 2026-05-29T19:56:33.672Z
+Stand: 2026-05-29T20:15:18.557Z
 
 ## Policy
 
@@ -10,7 +10,7 @@ Stand: 2026-05-29T19:56:33.672Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 2360
+- Geprüfte HTML-Dateien: 2423
 - Gefundene öffentliche DOCX-/Word-Assets: 0
 - Entfernte öffentliche DOCX-/Word-Links: 52
 - HTML-Dateien mit bereinigten DOCX-/Word-Begriffen: 90
