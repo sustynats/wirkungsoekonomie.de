@@ -216,7 +216,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260525-sprint-2"></script>
+    <script src="${depth}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>
 `;

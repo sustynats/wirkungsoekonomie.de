@@ -11,7 +11,7 @@ const OUT_FILE = path.join(OUT_DIR, "index.html");
 const BASE = "../../";
 const SITE = "https://wirkungsoekonomie.de";
 const CSS_VERSION = "20260528-wirkungssteuer-beispiele";
-const JS_VERSION = "20260528-wirkungssteuer-beispiele";
+const JS_VERSION = "20260529-glossary-hover-audit";
 
 const data = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
 const navigation = JSON.parse(fs.readFileSync(NAV_PATH, "utf8"));
@@ -753,7 +753,7 @@ function renderPage() {
     ${renderHeader(BASE)}
     ${pageBody()}
     ${renderFooter(BASE)}
-    <script src="${BASE}assets/js/main.js?v=${JS_VERSION}" defer></script>
+    <script src="${BASE}assets/js/main.js?v=20260529-glossary-hover-audit" defer></script>
     ${pageScript()}
   </body>
 </html>

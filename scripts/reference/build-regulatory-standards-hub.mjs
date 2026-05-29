@@ -365,7 +365,7 @@ ${body}
         <a class="btn btn-primary" href="${depth}verstehen/regularien-standards/">Regeln & Standards ansehen</a>
       </div>
     </footer>
-    <script src="${depth}assets/js/main.js" defer></script>
+    <script src="${depth}assets/js/main.js?v=20260529-glossary-hover-audit" defer></script>
   </body>
 </html>
 `;

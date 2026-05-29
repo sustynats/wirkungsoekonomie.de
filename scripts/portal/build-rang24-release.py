@@ -366,7 +366,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
       {body}
     </main>
     <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Website 1.0</h2><div><a href="{href(prefix, 'fachbibliothek/')}">Fachbibliothek</a><a href="{href(prefix, 'downloads/')}">Downloads</a><a href="{href(prefix, 'tools/')}">Tools</a><a href="{href(prefix, 'website-1-0-release/')}">Releasebericht</a></div></div></div></footer>
-    <script src="{href(prefix, 'assets/js/main.js?v=20260525-ux-finish')}"></script>
+    <script src="{href(prefix, 'assets/js/main.js?v=20260529-glossary-hover-audit')}"></script>
     {extra_script}
   </body>
 </html>"""

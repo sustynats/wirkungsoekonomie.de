@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260525-result-interpretation";
-const JS_VERSION = "20260525-sprint-2";
+const JS_VERSION = "20260529-glossary-hover-audit";
 const SRC = "docs/arbeit-einkommen/docx-extracts";
 const WEB = "docs/arbeit-einkommen/source";
 
@@ -136,7 +136,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
       <p class="print-meta">Wirkungsökonomie · ${esc(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: ${DATE}</p>
 ${body(b)}
     </main>
-    <script src="${b}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${b}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>`);
 }

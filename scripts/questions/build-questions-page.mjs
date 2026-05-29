@@ -351,7 +351,7 @@ ${renderHeader("../")}
 ${body}
     </main>
 ${renderFooter("../")}
-    <script src="../assets/js/main.js?v=20260525-sprint-2"></script>
+    <script src="../assets/js/main.js?v=20260529-glossary-hover-audit"></script>
     <script>
       (() => {
         const search = document.querySelector("[data-question-search]");

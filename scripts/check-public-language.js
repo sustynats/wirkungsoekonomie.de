@@ -45,7 +45,7 @@ const SCAN_TARGETS = [
   "wissen",
   "workflow.html",
   "assets/downloads",
-  "assets/js/main.js",
+  "assets/js/main.js?v=20260529-glossary-hover-audit",
 ];
 
 const BLOCKED_TERMS = [

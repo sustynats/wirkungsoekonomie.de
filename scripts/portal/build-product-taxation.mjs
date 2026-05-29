@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260528-product-table-mobile";
-const JS_VERSION = "20260525-sprint-2";
+const JS_VERSION = "20260529-glossary-hover-audit";
 
 const sources = {
   productTax: "docs/praxis/Produktbesteuerung_durch_Wirkung_v1.1.md",
@@ -765,7 +765,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>
 `;

@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-portal-meta-readable";
-const JS_VERSION = "20260523-nachhaltigkeit";
+const JS_VERSION = "20260529-glossary-hover-audit";
 const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
 const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
 const SCHOOL_MD = "docs/bildung/Wirkungsschule_Fassung_v0_1.md";
@@ -106,7 +106,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
       <p class="print-meta">Wirkungsökonomie · ${title.replace(/\s+\|.*$/, "")} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>
 `;

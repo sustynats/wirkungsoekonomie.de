@@ -705,7 +705,7 @@ function renderPage(doc, body, toc) {
         </nav>
       </div>
     </footer>
-    <script src="/assets/js/main.js?v=20260524-go7-wirtschaft-detailkonzepte" defer></script>
+    <script src="/assets/js/main.js?v=20260529-glossary-hover-audit" defer></script>
   </body>
 </html>`;
 }
