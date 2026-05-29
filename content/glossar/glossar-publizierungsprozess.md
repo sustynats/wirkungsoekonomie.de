@@ -23,6 +23,7 @@ Begriffstatus:
 - WÖk-Präzisierungsbegriff
 - Anschlussbegriff
 - Methodenbegriff
+- Wirtschaftssystem / Gesellschaftsmodell
 - Quellen-/Bezugslinienbegriff
 - Vordenker-/Bezugslinienbegriff
 - Artikel-only / nicht ins Glossar

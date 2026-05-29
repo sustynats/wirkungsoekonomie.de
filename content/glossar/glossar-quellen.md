@@ -101,6 +101,65 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - JEC Well-to-Wheels, https://joint-research-centre.ec.europa.eu/welcome-jec-website/jec-activities/well-wheels-analyses_en
 - Cradle to Cradle Certified, https://c2ccertified.org/the-standard
 
+## Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken
+
+- Adam Smith: The Theory of Moral Sentiments
+- Adam Smith: The Wealth of Nations
+- Karl Marx: Das Kapital
+- Karl Polanyi: The Great Transformation
+- Friedrich Hayek: The Use of Knowledge in Society
+- John Maynard Keynes: The General Theory
+- Gøsta Esping-Andersen: The Three Worlds of Welfare Capitalism
+- Nordic Council: Nordic Welfare Model, https://www.norden.org/en/information/nordic-welfare-model
+- Silvia Federici: Caliban and the Witch
+- Nancy Fraser: soziale Reproduktion und Care-Krise
+- Elinor Ostrom: Governing the Commons
+- Shoshana Zuboff: The Age of Surveillance Capitalism
+- Nick Srnicek: Platform Capitalism
+- Investopedia: Trickle-Down Economics, https://www.investopedia.com/terms/t/trickledowntheory.asp
+- IMF: Inequality and Growth, https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf
+- Hope / Limberg: The economic consequences of major tax cuts for the rich, https://doi.org/10.1093/ser/mwab061
+
+## Kreislaufwirtschaft / Circular Design
+
+- Ellen MacArthur Foundation: Circular Economy Principles, https://www.ellenmacarthurfoundation.org/circular-economy-principles
+- Ellen MacArthur Foundation: Butterfly Diagram / Circular Economy System Diagram, https://www.ellenmacarthurfoundation.org/circular-economy-diagram
+- Ellen MacArthur Foundation: The technical cycle of the butterfly diagram, https://www.ellenmacarthurfoundation.org/articles/the-technical-cycle-of-the-butterfly-diagram
+- Ellen MacArthur Foundation: Towards the Circular Economy, 2013
+- Cradle to Cradle Certified, https://c2ccertified.org/the-standard
+- McDonough / Braungart: Cradle to Cradle
+- EU Ecodesign for Sustainable Products Regulation / Digital Product Passport, https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en
+- EU JRC Life Cycle Assessment, https://eplca.jrc.ec.europa.eu/lifecycleassessment.html
+- ISO 14040 / ISO 14044 als LCA-Bezugslinie
+
+## Neuropsychologie / Wahrnehmung
+
+- Leon Festinger: A Theory of Cognitive Dissonance
+- Daniel Kahneman: Thinking, Fast and Slow
+- Tversky / Kahneman: Judgment under Uncertainty
+- Pennycook / Rand: The Psychology of Fake News
+- Ecker et al.: Psychological drivers of misinformation belief and resistance to correction
+- Zajonc: Mere Exposure Effect
+- Hasher / Goldstein / Toppino: Frequency and the Conference of Referential Validity
+- Andy Clark: predictive processing / embodied cognition
+
+## Quantenphysik / Zukunftstechnologien
+
+- APS Reviews of Modern Physics: Colloquium Quantum Batteries, https://link.aps.org/doi/10.1103/RevModPhys.96.031001
+- ACS Energy Letters: Perovskite Quantum Dot Solar Cells, https://pubs.acs.org/doi/abs/10.1021/acsenergylett.3c01983
+- CSIRO Quantum Battery Research, https://research.csiro.au/quantumbattery/research/quantum-batteries/
+
+## Energie / Strommarkt / Systemkosten
+
+- Fraunhofer ISE: Levelized Cost of Electricity - Renewable Energy Technologies, https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html
+- Fraunhofer ISE LCOE Study 2024 PDF, https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/EN2024_ISE_Study_Levelized_Cost_of_Electricity_Renewable_Energy_Technologies.pdf
+- Bundesnetzagentur Netzentgelte, https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Netzentgelte/start.html
+- Bundesnetzagentur Glossar Netzentgelt, https://www.bundesnetzagentur.de/SharedDocs/A_Z_Glossar/N/Netzentgelt.html
+- Bundesnetzagentur Redispatch, https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/Netzengpassmanagement/Engpassmanagement/Redispatch/start.html
+- SMARD: So funktioniert der Strommarkt, https://www.smard.de/page/en/wiki-article/5884/5840/this-is-how-the-electricity-market-works
+- IEA Glossary / Demand Response, https://www.iea.org/glossary
+- IEA Electricity Market Design, https://www.iea.org/reports/electricity-market-design
+
 ## Design / Business
 
 - IDEO Design Thinking, https://designthinking.ideo.com/

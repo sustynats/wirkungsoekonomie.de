@@ -48,6 +48,11 @@ const categoryTags = {
   "Ethik, Würde und Verantwortung": ["Ethik", "Menschenwürde", "Verantwortung", "Nichtkompensation", "Rechtsstaatlichkeit"],
   "Management, Organisation und Wirksamkeit": ["Management", "Organisation", "Wirksamkeit", "Wirkungssteuerung", "Transformation"],
   "Transformation, Innovation und wirtschaftliche Entwicklung": ["Transformation", "Innovation", "Wohlstand", "Entwicklung", "Wirkungsinnovation"],
+  "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken": ["Wirtschaftssystem", "Kapital", "Verteilung", "Macht", "Wirkungsprüfung"],
+  "Kreislaufwirtschaft, Circular Design und Materialkreisläufe": ["Kreislaufwirtschaft", "Circular Design", "Produktlebenszyklus", "Materialkreisläufe", "Planet"],
+  "Neuropsychologische Wirkmechanismen": ["Neuropsychologie", "Wahrnehmung", "Aufmerksamkeit", "Emotion", "Resonanz"],
+  "Quantenphysik, Quantenmaterialien und Zukunftstechnologien": ["Quantenphysik", "Zukunftstechnologie", "Materialien", "Photovoltaik", "Innovation"],
+  "Energie, Strommarkt und Systemkosten": ["Energie", "Strommarkt", "Systemkosten", "Netze", "Flexibilität"],
 };
 
 const conceptStatusMap = {
@@ -57,6 +62,8 @@ const conceptStatusMap = {
   method: "Methodenbegriff",
   sourceLine: "Quellen-/Bezugslinienbegriff",
   thinker: "Vordenker-/Bezugslinienbegriff",
+  system: "Wirtschaftssystem / Gesellschaftsmodell",
+  backlog: "Backlog / Artikel-only",
 };
 
 const sourceGroups = {
@@ -146,6 +153,69 @@ const sourceGroups = {
     ["institutional", "OECD Measuring Well-being and Progress", "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"],
     ["institutional", "Stockholm Resilience Centre: Planetary Boundaries", "https://www.stockholmresilience.org/research/planetary-boundaries.html"],
   ],
+  economicSystems: [
+    ["primary", "Adam Smith: The Theory of Moral Sentiments", ""],
+    ["primary", "Adam Smith: The Wealth of Nations", ""],
+    ["primary", "Karl Marx: Das Kapital", ""],
+    ["primary", "Karl Polanyi: The Great Transformation", ""],
+    ["primary", "Friedrich Hayek: The Use of Knowledge in Society", ""],
+    ["primary", "John Maynard Keynes: The General Theory", ""],
+    ["academic", "Gøsta Esping-Andersen: The Three Worlds of Welfare Capitalism", ""],
+    ["institutional", "Nordic Council: Nordic Welfare Model", "https://www.norden.org/en/information/nordic-welfare-model"],
+    ["primary", "Maja Göpel: Unsere Welt neu denken", ""],
+    ["primary", "Maja Göpel: Werte. Ein Kompass für die Zukunft", ""],
+  ],
+  feministEconomics: [
+    ["primary", "Silvia Federici: Caliban and the Witch", ""],
+    ["academic", "Nancy Fraser: soziale Reproduktion und Care-Krise", ""],
+    ["primary", "Elinor Ostrom: Governing the Commons", ""],
+    ["primary", "Kate Raworth: Doughnut Economics", ""],
+    ["primary", "Amartya Sen / Martha Nussbaum: Capability Approach", ""],
+  ],
+  platformCapitalism: [
+    ["primary", "Shoshana Zuboff: The Age of Surveillance Capitalism", ""],
+    ["primary", "Nick Srnicek: Platform Capitalism", ""],
+  ],
+  trickleDown: [
+    ["secondary", "Investopedia: Trickle-Down Economics", "https://www.investopedia.com/terms/t/trickledowntheory.asp"],
+    ["institutional", "IMF: Inequality and Growth", "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf"],
+    ["academic", "Hope / Limberg: The economic consequences of major tax cuts for the rich", "https://doi.org/10.1093/ser/mwab061"],
+  ],
+  circular: [
+    ["institutional", "Ellen MacArthur Foundation: Circular Economy Principles", "https://www.ellenmacarthurfoundation.org/circular-economy-principles"],
+    ["institutional", "Ellen MacArthur Foundation: Butterfly Diagram", "https://www.ellenmacarthurfoundation.org/circular-economy-diagram"],
+    ["institutional", "Ellen MacArthur Foundation: The technical cycle", "https://www.ellenmacarthurfoundation.org/articles/the-technical-cycle-of-the-butterfly-diagram"],
+    ["primary", "Ellen MacArthur Foundation: Towards the Circular Economy, 2013", ""],
+    ["institutional", "Cradle to Cradle Certified", "https://c2ccertified.org/the-standard"],
+    ["primary", "McDonough / Braungart: Cradle to Cradle", ""],
+    ["institutional", "EU Ecodesign / Digital Product Passport", "https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en"],
+    ["institutional", "EU JRC Life Cycle Assessment", "https://eplca.jrc.ec.europa.eu/lifecycleassessment.html"],
+  ],
+  neuro: [
+    ["primary", "Leon Festinger: A Theory of Cognitive Dissonance", ""],
+    ["primary", "Daniel Kahneman: Thinking, Fast and Slow", ""],
+    ["academic", "Tversky / Kahneman: Judgment under Uncertainty", ""],
+    ["academic", "Pennycook / Rand: The Psychology of Fake News", ""],
+    ["academic", "Ecker et al.: Psychological drivers of misinformation belief and resistance to correction", ""],
+    ["academic", "Zajonc: Mere Exposure Effect", ""],
+    ["academic", "Hasher / Goldstein / Toppino: Frequency and the Conference of Referential Validity", ""],
+    ["primary", "Andy Clark: predictive processing / embodied cognition", ""],
+  ],
+  quantum: [
+    ["academic", "APS Reviews of Modern Physics: Colloquium Quantum Batteries", "https://link.aps.org/doi/10.1103/RevModPhys.96.031001"],
+    ["academic", "ACS Energy Letters: Perovskite Quantum Dot Solar Cells", "https://pubs.acs.org/doi/abs/10.1021/acsenergylett.3c01983"],
+    ["institutional", "CSIRO Quantum Battery Research", "https://research.csiro.au/quantumbattery/research/quantum-batteries/"],
+  ],
+  energy: [
+    ["institutional", "Fraunhofer ISE: Levelized Cost of Electricity", "https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html"],
+    ["institutional", "Fraunhofer ISE LCOE Study 2024 PDF", "https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/EN2024_ISE_Study_Levelized_Cost_of_Electricity_Renewable_Energy_Technologies.pdf"],
+    ["institutional", "Bundesnetzagentur: Netzentgelte", "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Netzentgelte/start.html"],
+    ["institutional", "Bundesnetzagentur Glossar: Netzentgelt", "https://www.bundesnetzagentur.de/SharedDocs/A_Z_Glossar/N/Netzentgelt.html"],
+    ["institutional", "Bundesnetzagentur: Redispatch", "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/Netzengpassmanagement/Engpassmanagement/Redispatch/start.html"],
+    ["institutional", "SMARD: So funktioniert der Strommarkt", "https://www.smard.de/page/en/wiki-article/5884/5840/this-is-how-the-electricity-market-works"],
+    ["institutional", "IEA Glossary", "https://www.iea.org/glossary"],
+    ["institutional", "IEA: Electricity Market Design", "https://www.iea.org/reports/electricity-market-design"],
+  ],
   scope: [
     ["institutional", "GHG Protocol Corporate Standard", "https://ghgprotocol.org/corporate-standard"],
     ["institutional", "GHG Protocol Scope 3 Standard", "https://ghgprotocol.org/corporate-value-chain-scope-3-standard"],
@@ -157,7 +227,7 @@ const sourceGroups = {
 };
 
 function sources(...groups) {
-  return groups.flatMap((group) => sourceGroups[group] || []);
+  return groups.flatMap((group) => Array.isArray(group) ? sources(...group) : (sourceGroups[group] || []));
 }
 
 function official(sourceRows) {
@@ -185,6 +255,15 @@ function term({
   sourceGroup = "system",
   reviewStatus = "approved",
   version = "1.0",
+  theme = [],
+  dimensions = [],
+  wirklogik = [],
+  applicationFields = [],
+  sourceField = [],
+  mythos = "",
+  woekKlaerung = "",
+  blindSpot = "",
+  customStatus = "",
 }) {
   const slug = id || slugify(title);
   const sourceRows = sources(sourceGroup);
@@ -226,7 +305,24 @@ function term({
       "Methodenbegriff": "methodenbegriff",
       "Quellen-/Bezugslinienbegriff": "bezugsbegriff",
       "Vordenker-/Bezugslinienbegriff": "vordenker-bezugslinie",
+      "Wirtschaftssystem / Gesellschaftsmodell": "wirtschaftssystem-gesellschaftsmodell",
+      "Backlog / Artikel-only": "artikel-only",
     }[conceptStatus] || "anschlussbegriff",
+    type: customStatus || conceptStatus,
+    begriffstyp: customStatus || conceptStatus,
+    theme: unique(theme),
+    themes: unique(theme),
+    dimensions: unique(dimensions),
+    wirklogik: unique(wirklogik),
+    applicationFields: unique(applicationFields),
+    application_fields: unique(applicationFields),
+    sourceField: unique(sourceField),
+    source_field: unique(sourceField),
+    mythos,
+    woekKlaerung,
+    woek_klaerung: woekKlaerung,
+    blindSpot,
+    blind_spot: blindSpot,
     version,
     lastReviewed: today,
     last_reviewed: today,
@@ -528,6 +624,315 @@ const controlledClusterAdditions = [
 
 additions.push(...controlledClusterAdditions);
 
+const CAT_ECON_SYSTEMS = "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken";
+const CAT_CIRCULAR = "Kreislaufwirtschaft, Circular Design und Materialkreisläufe";
+const CAT_NEURO = "Neuropsychologische Wirkmechanismen";
+const CAT_QUANTUM = "Quantenphysik, Quantenmaterialien und Zukunftstechnologien";
+const CAT_ENERGY = "Energie, Strommarkt und Systemkosten";
+
+const econBase = {
+  category: CAT_ECON_SYSTEMS,
+  concept: "system",
+  theme: ["Wirtschaftssysteme und Gesellschaftsmodelle", "Kapital, Markt und Macht"],
+  dimensions: ["Mensch", "Planet", "Demokratie"],
+  wirklogik: ["Wirkungssteuerung", "Wirkungsbewertung"],
+  applicationFields: ["Politik", "Unternehmen", "Kapitalmärkte", "Staat und Verwaltung", "Demokratie"],
+  sourceField: ["Ökonomie", "Politische Theorie", "Soziologie"],
+  sourceGroup: "economicSystems",
+};
+const circularBase = {
+  category: CAT_CIRCULAR,
+  theme: ["Kreislaufwirtschaft und Circular Design", "Materialkreisläufe und Produktlebenszyklus", "Produktwirkung und Rückführung", "Produkte, Lieferketten und Scorecards", "Klima, Energie und Lebenszyklus"],
+  dimensions: ["Planet", "Mensch", "Demokratie"],
+  wirklogik: ["Wirkmechanismus", "Wirkungsbewertung", "Wirkungssteuerung"],
+  applicationFields: ["Produkte", "Lieferkette", "Klima", "Unternehmen", "Konsum", "Design / Innovation"],
+  sourceField: ["Design / Innovation", "Klimawissenschaft", "Management"],
+  sourceGroup: "circular",
+};
+const neuroBase = {
+  category: CAT_NEURO,
+  theme: ["Neuropsychologie und Wahrnehmung", "Aufmerksamkeit, Emotion und Resonanz", "Psychologie und Resonanz", "Demokratie, Medien und Öffentlichkeit"],
+  dimensions: ["Mensch", "Demokratie"],
+  wirklogik: ["Wirkmechanismus", "Wirkungspotenzial", "Wirkungsrisiko"],
+  applicationFields: ["Medien", "Politik", "Produkte", "Konsum", "Demokratie", "Technologie / KI"],
+  sourceField: ["Psychologie", "Konstruktivismus"],
+  sourceGroup: "neuro",
+};
+const quantumBase = {
+  category: CAT_QUANTUM,
+  theme: ["Quantenphysik und Zukunftstechnologien", "Technologie und Innovation", "Klima, Energie und Lebenszyklus"],
+  dimensions: ["Planet", "Mensch"],
+  wirklogik: ["Wirkungspotenzial", "Wirkmechanismus"],
+  applicationFields: ["Technologie / KI", "Energie", "Produkte", "Design / Innovation"],
+  sourceField: ["Klimawissenschaft", "Design / Innovation"],
+  sourceGroup: "quantum",
+};
+const energyBase = {
+  category: CAT_ENERGY,
+  theme: ["Energie und Strommarkt", "Erneuerbare Energien", "Strommarktdesign", "Netze und Netzentgelte", "Flexibilität und Speicher", "Systemkosten und Gestehungskosten", "Energieumwandlung und Wirkungsgrad", "Klima, Energie und Lebenszyklus"],
+  dimensions: ["Planet", "Mensch", "Demokratie"],
+  wirklogik: ["Wirkungsbewertung", "Wirkungssteuerung", "Wirkungsrückkopplung"],
+  applicationFields: ["Energie", "Klima", "Staat und Verwaltung", "Kapitalmärkte", "Unternehmen", "Technologie / KI"],
+  sourceField: ["Klimawissenschaft", "Ökonomie", "Recht"],
+  sourceGroup: "energy",
+};
+
+function addTerm(base, spec) {
+  return term({
+    ...base,
+    ...spec,
+    related: unique([...(spec.related || []), ...(base.related || [])]),
+    aliases: unique(spec.aliases || []),
+  });
+}
+
+const economicSystemTerms = [
+  addTerm(econBase, { id: "marktwirtschaft", title: "Marktwirtschaft", short: "Marktwirtschaft ist ein Wirtschaftssystem, in dem dezentrale Entscheidungen, Wettbewerb, Preise und Eigentum zentrale Koordinationsfunktionen übernehmen.", definition: "Marktwirtschaft koordiniert Entscheidungen über Preise, Wettbewerb, Eigentum und Vertragsfreiheit.", woek: "Die Wirkungsökonomie verwirft Marktwirtschaft nicht. Sie korrigiert ihren blinden Fleck: Preise müssen Wirkung abbilden.", mythos: "Der Markt regelt automatisch das Gemeinwohl.", woekKlaerung: "Der Markt regelt nur, was in Preisen, Regeln und Anreizen sichtbar ist.", blindSpot: "Unsichtbare Klima-, Sozial- oder Demokratiewirkungen bleiben unzureichend rückgekoppelt.", related: ["kapitalismus", "soziale-marktwirtschaft", "wirkungsmarkt", "wirkungswahrheit", "externalisierung", "wirkungssteuer"] }),
+  addTerm(econBase, { id: "kapitalismus", title: "Kapitalismus", short: "Kapitalismus ist ein Wirtschaftssystem, in dem Kapital, Privateigentum, Investition, Gewinn und Kapitalverwertung zentrale Steuerungsgrößen sind.", definition: "Kapitalismus kann Innovation und Wohlstand erzeugen, richtet Systeme aber häufig an Kapitalrendite aus.", woek: "Problematisch wird Kapitalismus dort, wo Kapitalrendite wichtiger wird als Mensch, Planet und Demokratie.", mythos: "Kapitalismus ist dasselbe wie Marktwirtschaft.", woekKlaerung: "Marktwirtschaft beschreibt dezentrale Koordination; Kapitalismus beschreibt die Dominanz von Kapital als Ziel- und Machtgröße.", blindSpot: "Kapitalrendite kann Externalisierung belohnen.", related: ["kapital", "marktwirtschaft", "kapitalrendite", "kapitalwirkung", "externalisierung", "raubtierkapitalismus", "finanzmarktkapitalismus"] }),
+  addTerm(econBase, { id: "soziale-marktwirtschaft", title: "Soziale Marktwirtschaft", short: "Die soziale Marktwirtschaft verbindet Marktwettbewerb mit sozialem Ausgleich und staatlicher Ordnung.", definition: "Sie ordnet Wettbewerb, Sozialstaat und staatliche Rahmensetzung zusammen.", woek: "Historisch ein Fortschritt, aber ökologisch, global und demokratiebezogen wirkungsunvollständig.", mythos: "Soziale Marktwirtschaft reicht als Antwort auf die Krisen des 21. Jahrhunderts.", woekKlaerung: "Sie braucht Weiterentwicklung zur Wirkungsmarktwirtschaft mit Klima-, Lieferketten- und Demokratiewirkung.", blindSpot: "Planetare und globale Folgewirkungen werden nicht systematisch gesteuert.", related: ["ordoliberalismus", "wohlfahrtsstaat", "marktwirtschaft", "wirkungsmarktwirtschaft", "wstg"] }),
+  addTerm(econBase, { id: "skandinavisches-modell", title: "Skandinavisches Modell / Nordic Model", aliases: ["Nordic Model", "nordisches Modell", "skandinavischer Wohlfahrtsstaat"], short: "Das skandinavische Modell verbindet marktwirtschaftliche Elemente mit starkem Wohlfahrtsstaat, öffentlicher Daseinsvorsorge, Arbeitsmarktpartnerschaft und hohem Vertrauen.", definition: "Es ist geprägt durch breite Wohlfahrtspolitik, soziale Sicherheit, Gesundheit, Bildung, Wohnen, Beschäftigung und einen starken öffentlichen Sektor.", woek: "Ein starkes Referenzmodell für Vertrauen, soziale Sicherheit und Daseinsvorsorge, aber noch keine vollständige Wirkungsökonomie.", mythos: "Das skandinavische Modell ist bereits die fertige Lösung.", woekKlaerung: "Es bleibt kapital- und wachstumsorientiert, solange Wirkung nicht systematisch in Preise, Steuern, Kapitalflüsse und Produktwirkung rückgekoppelt wird.", blindSpot: "Produkt-, Lieferketten-, Klima- und Demokratiewirkung sind nicht automatisch integriert.", related: ["wohlfahrtsstaat", "soziale-marktwirtschaft", "vertrauen", "daseinsvorsorge", "gleichstellung", "wirkungsstaat", "wirkungsoekonomie"] }),
+  addTerm(econBase, { id: "wohlfahrtsstaat", title: "Wohlfahrtsstaat", short: "Der Wohlfahrtsstaat sichert soziale Risiken durch öffentliche Leistungen, Transfers und Infrastruktur ab.", definition: "Er stabilisiert Lebenslagen durch Gesundheit, Bildung, soziale Sicherung, Wohnen, Pflege und Arbeitsmarktpolitik.", woek: "Er stabilisiert Mensch und Demokratie, kann aber in Reparaturlogik stecken bleiben.", mythos: "Mehr Sozialausgaben bedeuten automatisch mehr soziale Wirkung.", woekKlaerung: "Entscheidend ist tatsächliche Wirkung auf Armut, Gesundheit, Teilhabe, Vertrauen und Resilienz.", blindSpot: "Ausgabehöhe ersetzt keine Wirkungsprüfung.", related: ["skandinavisches-modell", "soziale-marktwirtschaft", "daseinsvorsorge", "wirkungshaushalt"] }),
+  addTerm(econBase, { id: "ordoliberalismus", title: "Ordoliberalismus", short: "Ordoliberalismus betont die staatliche Ordnung des Wettbewerbs durch Regeln, Kartellkontrolle und Rechtsrahmen.", definition: "Er sieht den Staat als Hüter einer Wettbewerbsordnung.", woek: "Anschlussfähig, weil Märkte Regeln brauchen; unvollständig, wenn Wirkung nicht als Steuerungsmaßstab integriert wird.", mythos: "Gute Wettbewerbsordnung löst das Wirkungsproblem.", woekKlaerung: "Wettbewerb braucht Wirkungswahrheit, sonst konkurrieren auch Externalisierer erfolgreich.", blindSpot: "Schutz des Wettbewerbs ersetzt keine Messung von Wirkung.", related: ["soziale-marktwirtschaft", "marktwirtschaft", "wirkungswahrheit"] }),
+  addTerm(econBase, { id: "neoliberalismus", title: "Neoliberalismus", short: "Neoliberalismus beschreibt Strömungen, die Marktmechanismen, Wettbewerb, Privatisierung und Deregulierung stark betonen.", definition: "Der Begriff wird historisch und politisch unterschiedlich verwendet.", woek: "Problematisch wird er, wenn Marktlogik von Wirkungswahrheit entkoppelt wird und Externalisierung als Effizienz erscheint.", mythos: "Deregulierung erzeugt automatisch Effizienz.", woekKlaerung: "Deregulierung ohne Wirkungsrückkopplung kann destruktive Effizienz erzeugen.", blindSpot: "Effizienzgewinne können auf andere Systeme abgewälzt werden.", related: ["effizienz", "externalisierung", "marktwirtschaft", "kapitalismus"] }),
+  addTerm(econBase, { id: "raubtierkapitalismus", title: "Raubtierkapitalismus", short: "Raubtierkapitalismus bezeichnet aggressive Kapitalverwertung, bei der Gewinnmaximierung, Machtkonzentration und Externalisierung Schäden verdrängen.", definition: "Der Begriff wird in der WÖk analytisch und vorsichtig verwendet, nicht als pauschale Polemik.", woek: "Entscheidend ist die konkrete Wirkungsanalyse: Welche Schäden werden externalisiert, welche Macht konzentriert sich?", mythos: "Raubtierkapitalismus ist nur moralisches Fehlverhalten einzelner Akteure.", woekKlaerung: "Oft ist es eine Anreizstruktur: Wer Schäden nicht tragen muss, kann billiger und aggressiver wachsen.", blindSpot: "Moralische Empörung ersetzt keine Anreiz- und Wirkungsanalyse.", related: ["kapitalismus", "externalisierung", "machtkonzentration", "kapitalwirkung"] }),
+  addTerm(econBase, { id: "finanzmarktkapitalismus", title: "Finanzmarktkapitalismus", short: "Finanzmarktkapitalismus beschreibt eine Wirtschaftsform, in der Finanzmärkte, Renditeerwartungen, Shareholder Value und Kapitalallokation dominieren.", definition: "Finanzielle Kennzahlen und Kapitalmärkte prägen Unternehmensentscheidungen und wirtschaftliche Entwicklung.", woek: "Problematisch, wenn kurzfristige Kapitalrendite langfristige Wirkung verdrängt.", mythos: "Finanzmärkte allokieren Kapital automatisch gesellschaftlich optimal.", woekKlaerung: "Kapitalallokation braucht Wirkungsdaten, Risikowahrheit und demokratische Schutzbedingungen.", blindSpot: "Langfristige Folgewirkungen können unterbewertet werden.", related: ["kapitalismus", "kapitalrendite", "kapitalwirkung", "wirkungskapital"] }),
+  addTerm({ ...econBase, sourceGroup: "platformCapitalism" }, { id: "plattformkapitalismus", title: "Plattformkapitalismus", short: "Plattformkapitalismus beschreibt Geschäftsmodelle, in denen digitale Plattformen Netzwerkeffekte, Daten, Aufmerksamkeit und Marktinfrastruktur kontrollieren.", definition: "Plattformen vermitteln Märkte, Arbeit, Kommunikation oder Konsum und können durch Netzwerkeffekte Gatekeeper-Macht aufbauen.", woek: "Relevant für Medienwirkung, Arbeitsmärkte, Datenmacht, Plattformlogik, Überwachung und Demokratie.", mythos: "Plattformen sind neutrale Marktplätze.", woekKlaerung: "Plattformen gestalten Regeln, Sichtbarkeit, Datenzugang und Anreize.", blindSpot: "Infrastruktur- und Deutungsmacht werden oft als Service getarnt.", related: ["aufmerksamkeitsoekonomie", "ueberwachungskapitalismus", "machtkonzentration", "digitale-selbstbestimmung"] }),
+  addTerm({ ...econBase, sourceGroup: "platformCapitalism" }, { id: "ueberwachungskapitalismus", title: "Überwachungskapitalismus", aliases: ["Surveillance Capitalism"], short: "Überwachungskapitalismus beschreibt Geschäftsmodelle, die Verhaltensdaten extrahieren, analysieren und zur Vorhersage oder Beeinflussung von Verhalten monetarisieren.", definition: "Der Begriff markiert Datenextraktion und Verhaltensbeeinflussung als Geschäftsmodell.", woek: "Relevant für digitale Selbstbestimmung, Demokratie, Medienqualität, KI-Governance und Wirkungsrisiken digitaler Märkte.", mythos: "Personalisierung ist immer nur besserer Service.", woekKlaerung: "Personalisierung kann Autonomie, Datenschutz und demokratische Diskursräume schwächen.", blindSpot: "Verhaltensdaten werden als Rohstoff behandelt.", related: ["plattformkapitalismus", "digitale-selbstbestimmung", "vertrauen", "demokratie"] }),
+  addTerm(econBase, { id: "staatskapitalismus", title: "Staatskapitalismus", short: "Staatskapitalismus beschreibt Systeme, in denen der Staat erhebliche Kontrolle über Kapital, Unternehmen oder strategische Märkte ausübt, ohne Kapital- und Machtlogik aufzuheben.", definition: "Staatliche Eigentums- oder Kontrollrechte können mit kapitalistischer Wettbewerbs- und Renditelogik verbunden sein.", woek: "Staatseigentum ist nicht automatisch positive Wirkung. Auch staatlich gelenktes Kapital braucht Wirkungsprüfung, Transparenz und demokratische Kontrolle.", mythos: "Wenn der Staat steuert, ist Gemeinwohl gesichert.", woekKlaerung: "Staatliche Steuerung kann Wirkung ermöglichen oder Macht konzentrieren.", blindSpot: "Eigentumsform ersetzt keine Wirkungsprüfung.", related: ["kapitalismus", "staatssozialismus", "kapitalwirkung", "wirkungsstaat"] }),
+  addTerm(econBase, { id: "extraktiver-kapitalismus", title: "Extraktiver Kapitalismus", short: "Extraktiver Kapitalismus beschreibt eine Logik, die Wert aus Natur, Arbeit, Daten, Aufmerksamkeit oder Gemeinschaften entnimmt, ohne Schäden angemessen zurückzukoppeln.", definition: "Extraktion meint nicht nur Rohstoffabbau, sondern auch Abschöpfung sozialer, digitaler oder ökologischer Ressourcen.", woek: "Zentraler Gegenbegriff zur regenerativen Wirkungsökonomie.", mythos: "Wachstum zeigt, dass Wert geschaffen wurde.", woekKlaerung: "Wachstum kann auch auf Entnahme und Externalisierung beruhen.", blindSpot: "Regeneration, Rechte und Folgekosten bleiben unsichtbar.", related: ["externalisierung", "kapitalwirkung", "kreislaufwirtschaft", "regenerative-landwirtschaft"] }),
+  addTerm(econBase, { id: "gruener-kapitalismus", title: "Grüner Kapitalismus", short: "Grüner Kapitalismus versucht, kapitalistische Märkte durch grüne Technologien, ESG, CO2-Preise oder nachhaltige Investitionen ökologisch zu modernisieren.", definition: "Er verbindet Marktlogik mit ökologischer Modernisierung.", woek: "Kann Fortschritt ermöglichen, bleibt aber unvollständig, wenn Wirkung nur als Marktchance oder Risiko erscheint.", mythos: "Grüne Märkte lösen die ökologische Krise allein.", woekKlaerung: "Wirkung muss Steuerungsgröße werden, nicht nur Geschäftsmodell.", blindSpot: "Greenwashing, Rebound und soziale Folgewirkungen.", related: ["esg", "co2-preis", "wirkungssteuer", "positive-netto-wirkung"] }),
+  addTerm(econBase, { id: "stakeholder-kapitalismus", title: "Stakeholder-Kapitalismus", short: "Stakeholder-Kapitalismus erweitert Unternehmensverantwortung von Shareholdern auf weitere Anspruchsgruppen.", definition: "Unternehmen berücksichtigen Kund:innen, Beschäftigte, Lieferanten, Gemeinschaften und Umwelt stärker.", woek: "Wichtig, aber nicht ausreichend. Stakeholder-Berücksichtigung ersetzt keine messbare Wirkung.", mythos: "Stakeholder-Dialog ist schon Wirkung.", woekKlaerung: "Dialog muss in überprüfbare Zustandsveränderungen übersetzt werden.", blindSpot: "Anspruchsgruppen können ungleich sichtbar oder mächtig sein.", related: ["stakeholder", "wirkungswert", "scorecard", "wirkungsempfaenger"] }),
+  addTerm(econBase, { id: "privatwirtschaftliche-planwirtschaft", title: "Privatwirtschaftliche Planwirtschaft", aliases: ["konzerngetriebene Planwirtschaft", "private Planwirtschaft", "monopolistische Planwirtschaft"], short: "Privatwirtschaftliche Planwirtschaft beschreibt, wenn große Konzerne, Plattformen oder Finanzakteure Märkte, Lieferketten, Preise, Daten oder Standards faktisch planen.", definition: "Formal besteht Marktwirtschaft, faktisch können private Akteure Infrastruktur, Regeln und Alternativen kontrollieren.", woek: "Der Begriff zeigt: Zentralisierung entsteht nicht nur im Sozialismus. Auch Kapitalismus kann private Planung und Machtkonzentration erzeugen.", mythos: "Planwirtschaft gibt es nur beim Staat.", woekKlaerung: "Auch private Machtkonzentration kann Märkte entdemokratisieren, Alternativen verdrängen und Wirkung unsichtbar machen.", blindSpot: "Private Steuerungsmacht bleibt als Marktprozess getarnt.", related: ["machtkonzentration", "plattformkapitalismus", "kapitalismus", "planwirtschaft"] }),
+  addTerm(econBase, { id: "sozialismus", title: "Sozialismus", short: "Sozialismus bezeichnet Modelle, die Privateigentum an Produktionsmitteln begrenzen oder überwinden und gesellschaftliche Gleichheit stärker betonen.", definition: "Sozialismus adressiert Ungleichheit, Ausbeutung und Kapitalmacht.", woek: "Er löst das Wirkungsproblem nicht automatisch. Eigentumsform ersetzt keine Wirkungsprüfung.", mythos: "Wenn Eigentum kollektiv oder staatlich ist, entsteht automatisch Gemeinwohl.", woekKlaerung: "Auch kollektives oder staatliches Eigentum kann negative Wirkung erzeugen.", blindSpot: "Zentralisierung, Bürokratie und Innovationshemmnisse können selbst Wirkungsschäden erzeugen.", related: ["demokratischer-sozialismus", "staatssozialismus", "kommunismus", "planwirtschaft", "kapital-als-machtverhaeltnis"] }),
+  addTerm(econBase, { id: "demokratischer-sozialismus", title: "Demokratischer Sozialismus", short: "Demokratischer Sozialismus versucht sozialistische Ziele mit demokratischen Verfahren und Rechtsstaatlichkeit zu verbinden.", definition: "Er betont soziale Gleichheit, demokratische Kontrolle und öffentliche Güter.", woek: "Anschlussfähig bei sozialer Gerechtigkeit, aber unvollständig, wenn Wirkung, Planet, Innovation, Dezentralität und Rückkopplung nicht operationalisiert werden.", mythos: "Demokratische Verfahren sichern automatisch positive Wirkung.", woekKlaerung: "Demokratie braucht Wirkungsdaten, Rechtsstaatlichkeit und Korrekturfähigkeit.", blindSpot: "Gute Absicht ersetzt keine Zustandsprüfung.", related: ["sozialismus", "demokratie", "wirkungsrat"] }),
+  addTerm(econBase, { id: "staatssozialismus", title: "Staatssozialismus", short: "Staatssozialismus beschreibt Systeme, in denen der Staat zentrale Kontrolle über Produktion, Eigentum und Verteilung übernimmt.", definition: "Wirtschaftliche Koordination erfolgt stark administrativ und zentral.", woek: "Problematisch durch Zentralisierung, Informationsprobleme, Machtkonzentration und geringe Anpassungsfähigkeit.", mythos: "Zentrale Planung kann komplexe Wirkung vollständig steuern.", woekKlaerung: "Komplexe Systeme brauchen Rückkopplung, dezentrales Wissen und Korrekturfähigkeit.", blindSpot: "Macht- und Informationsprobleme werden unterschätzt.", related: ["sozialismus", "zentralverwaltungswirtschaft", "planwirtschaft", "nichttriviales-system"] }),
+  addTerm(econBase, { id: "kommunismus", title: "Kommunismus", short: "Kommunismus bezeichnet die Idee einer klassenlosen Gesellschaft ohne Privateigentum an Produktionsmitteln.", definition: "Historisch-radikale Ausprägungen gingen häufig mit zentralisierter Macht, Parteiendominanz und Freiheitsverlust einher.", woek: "Kommunismus adressiert Ungleichheit radikal, löst aber Wirkung, Freiheit, Innovation und dezentrales Wissen nicht automatisch.", mythos: "Radikale Gleichheit erzeugt automatisch gerechte Wirkung.", woekKlaerung: "Gleichheit ohne Freiheit, Wirkungsmessung, Rückkopplung und dezentrale Lernfähigkeit kann neue Machtkonzentration erzeugen.", blindSpot: "Machtkonzentration kann unter Gleichheitsversprechen unsichtbar werden.", related: ["sozialismus", "staatssozialismus", "planwirtschaft", "machtkonzentration"] }),
+  addTerm(econBase, { id: "planwirtschaft", title: "Planwirtschaft", short: "Planwirtschaft ist ein Wirtschaftssystem, in dem Produktion, Verteilung und Investition zentral geplant werden.", definition: "Sie ersetzt dezentrale Marktkoordination weitgehend durch zentrale Ziel- und Mengenentscheidungen.", woek: "Sie kann Ziele direkt setzen, leidet in komplexen Systemen aber an Informations-, Innovations- und Anpassungsproblemen.", mythos: "Planung macht Wirtschaft automatisch rationaler.", woekKlaerung: "WÖk setzt nicht auf zentrale Durchsteuerung, sondern auf Wirkungsrückkopplung in dezentralen Entscheidungen.", blindSpot: "Nichttriviale Systeme reagieren nicht linear auf Planvorgaben.", related: ["zentralverwaltungswirtschaft", "privatwirtschaftliche-planwirtschaft", "nichttriviale-maschine", "rueckkopplung"] }),
+  addTerm(econBase, { id: "zentralverwaltungswirtschaft", title: "Zentralverwaltungswirtschaft", short: "Zentralverwaltungswirtschaft ist eine Form der Planwirtschaft, in der zentrale Behörden wirtschaftliche Entscheidungen administrativ vorgeben.", definition: "Sie ist die administrativ stark verdichtete Variante zentraler Wirtschaftsplanung.", woek: "Wichtige Abgrenzung: Wirkungsökonomie ist keine Zentralverwaltungswirtschaft, weil dezentrale Entscheidungen erhalten bleiben.", mythos: "Wirkungssteuerung bedeutet zentrale Verwaltungswirtschaft.", woekKlaerung: "WÖk koppelt Wirkung in Signale, Regeln und Daten zurück, statt alle Einzelentscheidungen zentral zu setzen.", blindSpot: "Verwechslung von Rückkopplung und Befehl.", related: ["planwirtschaft", "wirkungsrueckkopplung", "wirkungssteuer"] }),
+  addTerm(econBase, { id: "genossenschaft", title: "Genossenschaft", short: "Eine Genossenschaft ist eine Organisationsform, in der Mitglieder gemeinschaftlich Eigentum halten, Entscheidungen mittragen und Nutzen teilen.", definition: "Genossenschaften können Teilhabe, Dezentralisierung und Gemeinwohl stärken.", woek: "Sie sind aber nicht automatisch wirkungspositiv. Auch Mitgliedermehrheiten können Entscheidungen treffen, die Mensch, Planet oder Demokratie schwächen.", mythos: "Genossenschaft = automatisch gut.", woekKlaerung: "Demokratische Eigentumsform ersetzt keine Wirkungsbewertung.", blindSpot: "Wirkung auf Nichtmitglieder, Umwelt und Demokratie wird nicht automatisch gemessen.", related: ["genossenschaftsblindheit", "commons", "gemeineigentum", "dezentralisierung"] }),
+  addTerm(econBase, { id: "genossenschaftsblindheit", title: "Genossenschaftsblindheit", concept: "precision", short: "Genossenschaftsblindheit beschreibt das Missverständnis, dass gemeinschaftliche Eigentumsform automatisch positive Wirkung erzeugt.", definition: "Sie verwechselt demokratische oder gemeinschaftliche Eigentumsform mit tatsächlicher Wirkung.", woek: "Die Frage ist nicht nur, wem etwas gehört, sondern was es bewirkt.", mythos: "Gemeinschaftliches Eigentum ist automatisch Gemeinwohl.", woekKlaerung: "Eigentumsform muss mit Wirkungsdaten und Rückkopplung verbunden werden.", blindSpot: "Externe Wirkung und Minderheitenpositionen bleiben unsichtbar.", related: ["genossenschaft", "wirkungsbewertung", "wirkungsempfaenger"] }),
+  addTerm({ ...econBase, sourceGroup: "feministEconomics" }, { id: "commons", title: "Commons", short: "Commons sind gemeinschaftlich genutzte und verwaltete Ressourcen, Räume oder Infrastrukturen.", definition: "Commons funktionieren durch Regeln, Zugang, Verantwortung, Selbstorganisation und Sanktionen.", woek: "Commons können Wirkung stärken, wenn Governance, Zugang, Verantwortung und Regeneration gesichert sind.", mythos: "Gemeinschaftliche Nutzung funktioniert automatisch.", woekKlaerung: "Commons brauchen Regeln, Vertrauen, Monitoring und faire Governance.", blindSpot: "Ohne Governance drohen Übernutzung oder Ausschluss.", related: ["elinor-ostrom", "gemeineigentum", "selbstorganisation", "vertrauen"] }),
+  addTerm(econBase, { id: "gemeineigentum", title: "Gemeineigentum", short: "Gemeineigentum beschreibt Eigentum, das gemeinschaftlich oder öffentlich gehalten wird.", definition: "Es kann Kommune, Staat, Gemeinschaften oder institutionelle Träger betreffen.", woek: "Auch Gemeineigentum braucht Wirkungsmessung.", mythos: "Gemeineigentum ist automatisch gemeinwohlorientiert.", woekKlaerung: "Öffentliches oder gemeinschaftliches Eigentum muss Wirkung nachweisen und korrigierbar bleiben.", blindSpot: "Nutzung, Zugang und Folgewirkung werden nicht durch Eigentumsform allein geregelt.", related: ["commons", "genossenschaft", "wirkungsbewertung"] }),
+  addTerm({ ...econBase, sourceGroup: "feministEconomics" }, { id: "patriarchat", title: "Patriarchat", short: "Patriarchat beschreibt historisch gewachsene Macht- und Deutungsordnungen, in denen männlich codierte Dominanz, Kontrolle, Hierarchie und Eigentumslogik strukturell bevorzugt werden.", definition: "Der Begriff wird in der WÖk nicht als Angriff auf Männer verwendet, sondern als Analyse von Macht-, Eigentums-, Hierarchie- und Externalisierungslogiken.", woek: "Patriarchale Strukturen können Care-Arbeit entwerten, Kooperation schwächen, Dominanzlogiken normalisieren und Wirkung unsichtbar machen.", mythos: "Patriarchat bedeutet nur individuelle Männerherrschaft.", woekKlaerung: "Patriarchat ist eine Systemlogik, die durch Institutionen, Märkte, Sprache, Rollenbilder und Machtstrukturen reproduziert werden kann.", blindSpot: "Unsichtbare Care- und Reproduktionsarbeit wird abgewertet.", related: ["feministische-oekonomie", "care-oekonomie", "sorgearbeit", "machtkonzentration"] }),
+  addTerm(econBase, { id: "machtkonzentration", title: "Machtkonzentration", concept: "precision", short: "Machtkonzentration beschreibt die Verdichtung von Entscheidungs-, Kapital-, Daten-, Medien- oder Deutungsmacht bei wenigen Akteuren.", definition: "Macht kann über Eigentum, Plattformen, Daten, Medien, Infrastruktur, Kapital oder Verfahren konzentriert werden.", woek: "Ein Wirkungsrisiko für Demokratie, Märkte, Innovation, Medienqualität und soziale Gerechtigkeit.", mythos: "Machtkonzentration ist nur ein Wettbewerbsproblem.", woekKlaerung: "Sie ist auch ein Wirkungsrisiko für Freiheit, Vertrauen und Korrekturfähigkeit.", blindSpot: "Konzentrierte Deutungsmacht wird oft nicht bilanziert.", related: ["dezentralisierung", "dezentralisierung-von-macht", "kapital-als-machtverhaeltnis", "plattformkapitalismus"] }),
+  addTerm(econBase, { id: "dezentralisierung", title: "Dezentralisierung", short: "Dezentralisierung beschreibt die Verteilung von Entscheidungs-, Eigentums-, Daten- oder Gestaltungsmacht auf mehrere Akteure oder Ebenen.", definition: "Dezentralisierung kann lokale Kompetenz, Teilhabe, Resilienz und Vielfalt stärken.", woek: "Sie ist nicht automatisch positiv. Sie stärkt Wirkung, wenn Verantwortung, Datenklarheit, Rückkopplung und demokratische Kontrolle verbunden sind.", mythos: "Dezentral ist automatisch gut.", woekKlaerung: "Dezentralisierung braucht Verantwortung, Rückkopplung und Wirkungsdaten.", blindSpot: "Fragmentierung oder Verantwortungsdiffusion können Wirkung blockieren.", related: ["dezentralisierung-von-macht", "selbstorganisation", "commons", "wirkungsrat"] }),
+  addTerm(econBase, { id: "dezentralisierung-von-macht", title: "Dezentralisierung von Macht", concept: "precision", short: "Dezentralisierung von Macht verteilt Einfluss, Kontrolle und Entscheidungsmöglichkeiten so, dass Machtkonzentration, Abhängigkeit und Missbrauch begrenzt werden.", definition: "Sie betrifft politische, wirtschaftliche, digitale, institutionelle und infrastrukturelle Macht.", woek: "Zentral für Demokratie, Plattformregulierung, Genossenschaften, Commons, Wirkungsrat, Datenräume und föderale Wirkungspolitik.", mythos: "Macht löst sich durch Beteiligung allein auf.", woekKlaerung: "Dezentralisierung braucht Ressourcen, Rechte, Datenzugang und Korrekturwege.", blindSpot: "Scheinbeteiligung ohne Entscheidungsmacht.", related: ["dezentralisierung", "machtkonzentration", "wirkungsrat", "datenraum"] }),
+  addTerm({ ...econBase, sourceGroup: "feministEconomics" }, { id: "feministische-oekonomie", title: "Feministische Ökonomie", short: "Feministische Ökonomie untersucht, wie Wirtschaft durch Geschlecht, Care-Arbeit, Machtverhältnisse, unbezahlte Arbeit und soziale Reproduktion geprägt wird.", definition: "Sie macht sichtbar, was klassische Ökonomie oft ausblendet: Sorge, Reproduktion, Abhängigkeit, Macht und Zeit.", woek: "Sehr relevant, weil sie unsichtbare Wirkleistung sichtbar macht und mit Wirkungsmessung für Mensch, Planet und Demokratie verbunden werden kann.", mythos: "Feministische Ökonomie ist nur Identitätspolitik.", woekKlaerung: "Sie analysiert reale Leistungen, Kosten und Machtverhältnisse, insbesondere Care und soziale Reproduktion.", blindSpot: "Klassische Kennzahlen unterschätzen unbezahlte und unterbezahlte Systemleistung.", related: ["care-oekonomie", "sorgearbeit", "reproduktive-arbeit", "patriarchat"] }),
+  addTerm({ ...econBase, sourceGroup: "feministEconomics" }, { id: "care-oekonomie", title: "Care-Ökonomie", short: "Care-Ökonomie beschreibt Sorge-, Pflege-, Erziehungs-, Beziehungs- und Reproduktionsarbeit als zentrale wirtschaftliche und gesellschaftliche Grundlage.", definition: "Care umfasst bezahlte und unbezahlte Arbeit, die Menschen versorgt und soziale Systeme stabilisiert.", woek: "Care ist nicht Nebentätigkeit, sondern Wirkleistung. Sie stabilisiert Mensch, Gesellschaft und Demokratie.", mythos: "Care ist privat oder nachrangig gegenüber produktiver Wirtschaft.", woekKlaerung: "Care erzeugt reale Systemleistung und muss wirkungsökonomisch sichtbar werden.", blindSpot: "Marktpreise unterschätzen Sorgearbeit systematisch.", related: ["feministische-oekonomie", "sorgearbeit", "reproduktive-arbeit", "wirkungseinkommen"] }),
+  addTerm({ ...econBase, sourceGroup: "feministEconomics" }, { id: "sorgearbeit", title: "Sorgearbeit", short: "Sorgearbeit umfasst Tätigkeiten, die Menschen versorgen, pflegen, begleiten, erziehen oder stabilisieren.", definition: "Sie findet in Familien, Nachbarschaften, Bildung, Pflege, Gesundheit und sozialen Institutionen statt.", woek: "Sorgearbeit ist oft unterbezahlt oder unsichtbar, obwohl sie hohe Wirkung erzeugt.", mythos: "Sorgearbeit ist keine echte wirtschaftliche Leistung.", woekKlaerung: "Sie erzeugt Gesundheit, Teilhabe, Stabilität, Bildung und Vertrauen.", blindSpot: "Unbezahlte Arbeit fällt aus klassischen Wertschöpfungsrechnungen heraus.", related: ["care-oekonomie", "reproduktive-arbeit", "wirkungswertschoepfung"] }),
+  addTerm({ ...econBase, sourceGroup: "feministEconomics" }, { id: "reproduktive-arbeit", title: "Reproduktive Arbeit", short: "Reproduktive Arbeit umfasst Tätigkeiten, die Leben, Arbeitsfähigkeit, soziale Bindungen und gesellschaftliche Reproduktion ermöglichen.", definition: "Sie umfasst Sorge, Pflege, Erziehung, Haushaltsarbeit, emotionale Stabilisierung und soziale Infrastruktur.", woek: "Zentral für Wirkungs-BIP, Wirkungseinkommen, Wirkungsrente und Care-Ökonomie.", mythos: "Reproduktive Arbeit ist nur Kostenfaktor.", woekKlaerung: "Sie erhält die Voraussetzungen jeder produktiven Wirtschaft.", blindSpot: "Wirkung entsteht oft außerhalb monetärer Transaktionen.", related: ["care-oekonomie", "sorgearbeit", "feministische-oekonomie"] }),
+  addTerm({ ...econBase, sourceGroup: "trickleDown" }, { id: "trickle-down-oekonomie", title: "Trickle-down-Ökonomie", concept: "connection", customStatus: "Anschlussbegriff / Systemmythos / wirtschaftspolitischer Wirkpfad", aliases: ["Trickle-down Economics", "Durchsickerungsökonomie", "Durchsickerungsmythos", "Trickle-down-Theorie", "trickle-down"], short: "Trickle-down-Ökonomie bezeichnet die Annahme, dass Entlastungen für Vermögende, Unternehmen oder Kapital langfristig allen zugutekommen sollen.", definition: "Die angenommene Wirkungskette lautet: Kapital wird entlastet, Investitionen steigen, Unternehmen wachsen, Arbeitsplätze entstehen und Wohlstand sickert nach unten.", woek: "Trickle-down ist ein Beispiel für ein Wirkungsversprechen ohne ausreichende Wirkungsprüfung. Die WÖk fragt, wer entlastet wird, wohin Kapital fließt und welche Zustände sich tatsächlich verändern.", mythos: "Wenn es dem Kapital gut geht, geht es irgendwann allen gut.", woekKlaerung: "Kapital kann positive Wirkung ermöglichen, aber nur, wenn es an Wirkung rückgekoppelt wird.", blindSpot: "Trickle-down verwechselt Kapitalaktivierung mit gesellschaftlicher Wirkung.", related: ["kapital", "kapitalwirkung", "kapitalrendite", "marktwirtschaft", "kapitalismus", "raubtierkapitalismus", "finanzmarktkapitalismus", "externalisierung", "positive-netto-wirkung", "wirkungssteuer", "vertrauen", "demokratie"] }),
+];
+
+const circularTerms = [
+  addTerm(circularBase, { id: "kreislaufwirtschaft", title: "Kreislaufwirtschaft", concept: "precision", short: "Kreislaufwirtschaft hält Produkte, Materialien und Ressourcen möglichst lange im Nutzungskreislauf, vermeidet Abfall und regeneriert natürliche Systeme.", definition: "Sie ersetzt die lineare Logik nehmen, herstellen, wegwerfen durch längere Nutzung, Teilen, Wartung, Reparatur, Wiederverwendung, Refurbishment, Remanufacturing, Recycling und sichere biologische Rückführung.", woek: "Kreislaufwirtschaft ist notwendig, aber nicht hinreichend. Positive Netto-Wirkung entsteht erst, wenn Kreislauffähigkeit mit Mensch, Planet und Demokratie verbunden wird.", mythos: "Kreislaufwirtschaft bedeutet Recycling.", woekKlaerung: "Recycling ist nur ein Teil und meist ein äußerer Loop. Innere Loops wie Vermeidung, längere Nutzung, Reparatur und Wiederverwendung haben oft höhere Wirkung.", blindSpot: "Kreisläufe können toxische Stoffe, Plattformmacht oder Ausbeutung stabilisieren.", related: ["cradle-to-cradle", "circular-economy-butterfly-model", "technischer-kreislauf", "biologischer-kreislauf", "reparierbarkeit", "remanufacturing", "recycling", "materialgesundheit", "produktlebenszyklus", "digitaler-produktpass", "reverse-merit-order"] }),
+  addTerm(circularBase, { id: "lineare-wirtschaft", title: "Lineare Wirtschaft", aliases: ["take-make-waste", "Wegwerfökonomie", "lineares Produktionsmodell"], short: "Lineare Wirtschaft entnimmt Ressourcen, stellt Produkte her, nutzt sie und entsorgt sie anschließend.", definition: "Das Modell folgt der Logik Take - Make - Waste.", woek: "Die lineare Wirtschaft ist wirkungsblind, weil sie Abfall, Emissionen, Ressourcenverlust und Entsorgungskosten häufig externalisiert.", mythos: "Billige Produkte sind effizient.", woekKlaerung: "Billigkeit kann durch ausgelagerte Material-, Klima-, Gesundheits- und Entsorgungskosten entstehen.", blindSpot: "Folgekosten verschwinden aus Preis und Bilanz.", related: ["kreislaufwirtschaft", "externalisierung", "abfallhierarchie"] }),
+  addTerm(circularBase, { id: "circular-economy-butterfly-model", title: "Circular Economy Butterfly Model", concept: "method", aliases: ["Butterfly Model", "Butterfly Diagram", "Circular Economy System Diagram", "Kreislaufwirtschafts-Schmetterlingsmodell"], short: "Das Circular Economy Butterfly Model visualisiert Kreislaufwirtschaft als biologischen und technischen Kreislauf.", definition: "Das Modell der Ellen MacArthur Foundation zeigt Materialflüsse: biologische Materialien kehren sicher in natürliche Kreisläufe zurück; technische Produkte bleiben durch Nutzung, Wartung, Reparatur, Wiederverwendung, Aufarbeitung, Remanufacturing oder Recycling im Umlauf.", woek: "Anschlussmodell, weil es zeigt, dass nicht alle Kreisläufe gleichwertig sind. Die WÖk ergänzt Mensch und Demokratie.", mythos: "Das Diagramm zeigt schon vollständige Wirkung.", woekKlaerung: "Es zeigt Materialflüsse; WÖk fragt zusätzlich nach Profiten, Risiken, Arbeitsbedingungen, Datenqualität und Macht.", blindSpot: "Soziale und demokratische Folgewirkungen sind im Materialflussmodell nicht vollständig enthalten.", related: ["biologischer-kreislauf", "technischer-kreislauf", "innere-loops", "aeussere-loops", "werterhalt", "cradle-to-cradle", "produktlebenszyklus", "kreislaufwirkung"] }),
+  addTerm(circularBase, { id: "biologischer-kreislauf", title: "Biologischer Kreislauf", short: "Der biologische Kreislauf beschreibt die Rückführung biologisch abbaubarer, ungiftiger Materialien in natürliche Kreisläufe.", definition: "Materialien werden so gestaltet, dass sie sicher kompostiert, vergoren oder als Nährstoffe in die Biosphäre zurückgeführt werden können.", woek: "Nur positiv, wenn Materialien tatsächlich ungiftig, biologisch verträglich und regenerativ eingebettet sind.", mythos: "Biologisch abbaubar ist automatisch gut.", woekKlaerung: "Materialgesundheit, Abbaukontext und ökologische Wirkung müssen geprüft werden.", blindSpot: "Schadstoffe können als scheinbar natürliche Rückführung in Böden gelangen.", related: ["biologischer-naehrstoff", "kompostierung", "anaerobe-vergaerung", "regenerative-landwirtschaft", "materialgesundheit", "biodiversitaet", "boden"] }),
+  addTerm(circularBase, { id: "technischer-kreislauf", title: "Technischer Kreislauf", short: "Der technische Kreislauf beschreibt die lange Nutzung und Rückführung technischer Produkte, Komponenten und Materialien.", definition: "Technische Güter werden genutzt, geteilt, gewartet, repariert, wiederverwendet, aufgearbeitet, remanufactured oder recycelt.", woek: "Je näher der Loop am bestehenden Produkt bleibt, desto mehr eingebetteter Wert bleibt erhalten.", mythos: "Technische Kreisläufe beginnen beim Recycling.", woekKlaerung: "Wartung, Reparatur, Wiederverwendung und Remanufacturing kommen vor Recycling.", blindSpot: "Herstellerkontrolle kann Reparatur und Zugang begrenzen.", related: ["gebrauchsgueter", "reparatur", "wiederverwendung", "refurbishment", "remanufacturing", "recycling", "materialpass", "digitaler-produktpass"] }),
+  addTerm(circularBase, { id: "gebrauchsgueter", title: "Gebrauchsgüter", aliases: ["Durables", "Nutzungsgüter"], short: "Gebrauchsgüter werden über längere Zeit genutzt und können repariert oder weitergegeben werden.", definition: "Dazu gehören Smartphones, Maschinen, Möbel, Fahrzeuge, Haushaltsgeräte und Werkzeuge.", woek: "Sie gehören primär in den technischen Kreislauf. Lebensdauer, Reparierbarkeit, Modularität, Wartung, Wiederverwendung und Rücknahme sind entscheidend.", related: ["technischer-kreislauf", "reparierbarkeit", "nutzungsdauerverlaengerung"] }),
+  addTerm(circularBase, { id: "verbrauchsgueter", title: "Verbrauchsgüter", aliases: ["Consumables", "Verbrauchsprodukte"], short: "Verbrauchsgüter werden während der Nutzung verbraucht oder verändert.", definition: "Dazu gehören Lebensmittel, Kosmetika, Reinigungsmittel, Hygieneprodukte und bestimmte Verpackungen.", woek: "Sie gehören nur sinnvoll in biologische Kreisläufe, wenn sie ungiftig, biologisch verträglich und sicher rückführbar sind.", related: ["biologischer-kreislauf", "biologischer-naehrstoff", "materialgesundheit"] }),
+  addTerm(circularBase, { id: "biologischer-naehrstoff", title: "Biologischer Nährstoff", short: "Ein biologischer Nährstoff kann nach Nutzung sicher in biologische Kreisläufe zurückgeführt werden.", definition: "Der Begriff ist nur sinnvoll bei ungiftigen und ökologisch verträglichen Materialien.", woek: "Nicht für Materialien verwenden, die nur scheinbar biologisch abbaubar sind und Schadstoffe eintragen.", related: ["biologischer-kreislauf", "materialgesundheit", "kompostierung"] }),
+  addTerm(circularBase, { id: "technischer-naehrstoff", title: "Technischer Nährstoff", short: "Ein technischer Nährstoff ist ein Material oder eine Komponente, die im technischen Kreislauf erhalten, wiederverwendet oder aufbereitet werden kann.", definition: "Zentral für Cradle to Cradle, Materialpässe, Produktdesign, Rücknahme und industrielle Dekonstruktion.", woek: "Wert entsteht durch Erhalt von Funktion, Materialqualität und Rückführbarkeit.", related: ["technischer-kreislauf", "materialpass", "cradle-to-cradle"] }),
+  addTerm(circularBase, { id: "innere-loops", title: "Innere Loops", short: "Innere Loops erhalten Produkte möglichst nah an ihrer bestehenden Form, etwa durch Teilen, Warten, Wiederverwenden oder Reparieren.", definition: "Sie bewahren mehr eingebettete Energie, Arbeit, Material und Funktion als spätere materialintensive Prozesse.", woek: "Innere Loops sollen vor Recycling priorisiert werden.", mythos: "Alle Kreisläufe sind gleichwertig.", woekKlaerung: "Produktnahe Loops erhalten meist mehr Wert als materialferne Loops.", related: ["aeussere-loops", "werterhalt", "sharing", "wartung", "wiederverwendung", "reparatur"] }),
+  addTerm(circularBase, { id: "aeussere-loops", title: "Äußere Loops", short: "Äußere Loops sind spätere Kreislaufstrategien, bei denen Produkte stärker zerlegt, neu verarbeitet oder recycelt werden.", definition: "Sie sind wichtig, aber meist weniger wertschonend als innere Loops.", woek: "Recycling ist daher nicht erste, sondern spätere Kreislaufoption.", related: ["innere-loops", "recycling", "downcycling", "kreislaufwirkung"] }),
+  addTerm(circularBase, { id: "werterhalt", title: "Werterhalt", short: "Werterhalt bewahrt eingebettete Materialien, Energie, Arbeit, Daten, Funktionen und Nutzungsfähigkeit eines Produkts.", definition: "Er misst nicht nur Materialmenge, sondern erhaltene Funktion und Nutzungsmöglichkeit.", woek: "Die WÖk erweitert Werterhalt um Mensch, Planet und Demokratie.", related: ["innere-loops", "kreislaufwirkung", "wiederverwendung", "remanufacturing"] }),
+  ...[
+    ["sharing", "Teilen / Sharing", "Sharing beschreibt die gemeinsame Nutzung eines Produkts durch mehrere Nutzer:innen.", "Sharing kann Wirkung verbessern, wenn es Nutzungskapazität erhöht und neue Produktion vermeidet; es kann aber Plattformmacht oder Rebound-Effekte erzeugen.", ["Product-as-a-Service", "Rebound-Effekt"], ["innere-loops", "plattformkapitalismus"]],
+    ["wartung", "Wartung / Maintenance", "Wartung erhält die Funktionsfähigkeit eines Produkts und verlängert seine Nutzungsdauer.", "Wartung ist ein innerer Loop mit hoher Wirkung, weil sie Ersatzproduktion vermeiden kann.", [], ["innere-loops", "nutzungsdauerverlaengerung"]],
+    ["nutzungsdauerverlaengerung", "Nutzungsdauerverlängerung", "Nutzungsdauerverlängerung hält Produkte länger nutzbar.", "Wichtige Maßnahmen sind Wartung, Reparatur, Softwareupdates, Ersatzteile und modulare Konstruktion.", [], ["wartung", "reparatur", "modularitaet"]],
+    ["wiederverwendung", "Wiederverwendung", "Wiederverwendung bedeutet, ein Produkt oder eine Komponente erneut für denselben Zweck zu nutzen.", "Sie erhält Funktion und eingebetteten Wert ohne wesentliche Veränderung.", [], ["innere-loops", "werterhalt"]],
+    ["weiterverteilung", "Weiterverteilung / Redistribute", "Weiterverteilung gibt funktionsfähige Produkte an neue Nutzer:innen weiter.", "Sie kann Zugang verbessern und Neuproduktion vermeiden.", [], ["wiederverwendung", "sharing"]],
+    ["reparatur", "Reparatur", "Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produkts wieder her.", "Reparatur reduziert Abfall, Rohstoffverbrauch und Ersatzproduktion und stärkt lokale Wertschöpfung sowie Selbstwirksamkeit.", [], ["recht-auf-reparatur", "reparierbarkeit"]],
+    ["recht-auf-reparatur", "Recht auf Reparatur", "Das Recht auf Reparatur beschreibt Ansprüche auf Reparierbarkeit, Reparaturinformationen, Ersatzteile und Werkzeuge.", "Es ist zentral für Demokratie und Marktstruktur, weil Herstellerkontrolle über Reparatur Macht konzentrieren kann.", ["Right to Repair"], ["reparatur", "reparierbarkeit", "machtkonzentration"]],
+    ["refurbishment", "Refurbishment / Aufarbeitung", "Refurbishment arbeitet gebrauchte Produkte so auf, dass sie wieder funktionsfähig und marktfähig werden.", "Es liegt zwischen Reparatur und industrieller Wiederaufarbeitung.", ["Aufarbeitung"], ["wiederverwendung", "remanufacturing"]],
+    ["remanufacturing", "Remanufacturing / Wiederaufbereitung", "Remanufacturing arbeitet Produkte oder Komponenten industriell auf einen neuwertigen oder gleichwertigen Leistungszustand auf.", "Es kann hohe Wirkung entfalten, wenn Material, Energie und Herstellungsaufwand gespart und Qualität gesichert werden.", ["Wiederaufbereitung"], ["refurbishment", "komponentenrueckgewinnung"]],
+    ["komponentenrueckgewinnung", "Komponentenrückgewinnung", "Komponentenrückgewinnung baut Bauteile gezielt aus, prüft sie und nutzt sie erneut.", "Sie erhält Funktion statt nur Material.", [], ["remanufacturing", "design-for-disassembly"]],
+    ["recycling", "Recycling", "Recycling bereitet Materialien zu neuen Rohstoffen oder Produkten auf.", "Recycling ist wichtig, aber kein Synonym für Kreislaufwirtschaft. Es steht nach Vermeidung, Wartung, Wiederverwendung, Reparatur, Refurbishment und Remanufacturing.", [], ["aeussere-loops", "downcycling", "upcycling"]],
+    ["downcycling", "Downcycling", "Downcycling ist Recycling mit abnehmender Materialqualität oder geringeren Einsatzmöglichkeiten.", "Es kann besser sein als Entsorgung, ist aber weniger wirkungsvoll als hochwertige Rückführung oder Werterhalt.", [], ["recycling", "materialgesundheit"]],
+    ["upcycling", "Upcycling", "Upcycling wertet Materialien oder Produkte durch neue Nutzung mit höherem Wert oder höherer Funktion auf.", "Wirkung hängt von tatsächlicher Lebensdauer, Nutzbarkeit und Materialgesundheit ab.", [], ["recycling", "werterhalt"]],
+    ["kaskadennutzung", "Kaskadennutzung", "Kaskadennutzung nutzt Material oder Produkte mehrstufig über verschiedene Anwendungen hinweg.", "Wichtig im biologischen Kreislauf, etwa bei Biomasse, Holz oder Fasern.", [], ["biologischer-kreislauf", "werterhalt"]],
+    ["kompostierung", "Kompostierung", "Kompostierung ist der biologische Abbau organischer Materialien zu Kompost.", "Nur positiv, wenn Materialien schadstofffrei und für biologische Rückführung geeignet sind.", [], ["biologischer-kreislauf", "materialgesundheit"]],
+    ["anaerobe-vergaerung", "Anaerobe Vergärung", "Anaerobe Vergärung ist biologischer Abbau organischer Materialien ohne Sauerstoff, bei dem Biogas entstehen kann.", "Sie kann Energie- und Nährstoffkreisläufe verbinden, braucht aber Kontrolle von Methanverlusten und Substratwirkung.", [], ["biogas", "biologischer-kreislauf"]],
+    ["biogas", "Biogas", "Biogas ist ein energiereiches Gas aus der Vergärung organischer Materialien.", "Kann Teil biologischer Kreisläufe sein, muss aber Flächennutzung, Biodiversität, Methanverluste und Nährstoffkreisläufe berücksichtigen.", [], ["anaerobe-vergaerung", "bioenergie"]],
+    ["biochemische-rohstoffgewinnung", "Biochemische Rohstoffgewinnung", "Biochemische Rohstoffgewinnung extrahiert verwertbare chemische Bestandteile aus biologischen Materialien.", "Relevant für Kaskadennutzung und bio-basierte Kreisläufe.", [], ["biologischer-kreislauf", "kaskadennutzung"]],
+    ["regenerative-landwirtschaft", "Regenerative Landwirtschaft", "Regenerative Landwirtschaft verbessert Böden, Biodiversität, Wasserhaushalt und Ökosystemfunktionen aktiv.", "Regeneration ist mehr als Schadensminimierung und stärkt Zustände, auf denen Wirkung beruht.", [], ["biologischer-kreislauf", "biodiversitaet"]],
+    ["materialgesundheit", "Materialgesundheit", "Materialgesundheit beschreibt, ob Materialien für Menschen, Umwelt und Kreisläufe sicher und schadstoffarm sind.", "Materialgesundheit ist eine Wirkungsgrenze. Toxische Stoffe dürfen nicht durch Recycling im Kreislauf gehalten werden.", [], ["wirkungsgrenze", "reverse-merit-order"]],
+    ["design-for-disassembly", "Design for Disassembly", "Design for Disassembly gestaltet Produkte so, dass Zerlegung, Reparatur, Rücknahme und Wiederverwendung erleichtert werden.", "Es ist ein Designhebel für Reparatur, Komponentenrückgewinnung und Kreislauffähigkeit.", [], ["modularitaet", "reparierbarkeit"]],
+    ["modularitaet", "Modularität", "Modularität beschreibt einen Aufbau aus austauschbaren, kombinierbaren oder reparierbaren Modulen.", "Sie stärkt Reparatur, Upgradefähigkeit, Remanufacturing und Produktlebensdauer.", [], ["design-for-disassembly", "nutzungsdauerverlaengerung"]],
+    ["reparierbarkeit", "Reparierbarkeit", "Reparierbarkeit beschreibt, wie leicht ein Produkt repariert werden kann.", "Sie ist ein WÖk-Indikator und ein wichtiges Produktwirkungsfeld.", [], ["reparatur", "recht-auf-reparatur"]],
+    ["ruecknahmefaehigkeit", "Rücknahmefähigkeit", "Rücknahmefähigkeit beschreibt, ob Produkte nach Nutzung zurückgenommen und in Kreisläufe überführt werden können.", "Sie verbindet Produktdesign, Logistik, Herstellerverantwortung und Datenqualität.", [], ["ruecknahmesystem", "reverse-logistics"]],
+    ["ruecknahmesystem", "Rücknahmesystem", "Ein Rücknahmesystem organisiert die Rückführung von Produkten, Verpackungen oder Materialien nach Nutzung.", "Es ist Infrastruktur für Kreislaufwirkung und erweiterte Herstellerverantwortung.", [], ["ruecknahmefaehigkeit", "reverse-logistics"]],
+    ["reverse-logistics", "Reverse Logistics", "Reverse Logistics führt Produkte, Komponenten oder Materialien vom Nutzungspunkt zurück in Wiederverwendung, Reparatur, Aufarbeitung oder Recycling.", "Sie ist die Logistikseite der Kreislaufwirtschaft.", [], ["ruecknahmesystem", "remanufacturing"]],
+    ["materialpass", "Materialpass", "Ein Materialpass dokumentiert Materialien, Zusammensetzung, Eigenschaften, Schadstoffe, Rückführbarkeit und potenzielle Wiederverwendung.", "Er unterstützt Urban Mining, Materialgesundheit und hochwertige Rückführung.", [], ["digitaler-produktpass", "materialgesundheit"]],
+    ["urban-mining", "Urban Mining", "Urban Mining gewinnt Rohstoffe aus Gebäuden, Infrastrukturen, Produkten oder Abfallbeständen zurück.", "Es liest gebaute Umwelt als Materiallager und braucht Materialpässe sowie Dekonstruktion.", [], ["materialpass", "industrielle-dekonstruktion"]],
+    ["sekundaerrohstoff", "Sekundärrohstoff", "Sekundärrohstoffe werden durch Wiederverwendung, Aufbereitung oder Recycling aus bereits genutzten Materialien gewonnen.", "Ihre Wirkung hängt von Qualität, Schadstoffen, Energieaufwand und Verdrängung von Primärrohstoffen ab.", [], ["recycling", "rezyklatanteil"]],
+    ["rezyklatanteil", "Rezyklatanteil", "Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.", "Er ist ein Indikator, aber kein vollständiger Wirkungsnachweis.", [], ["sekundaerrohstoff", "recyclingquote"]],
+    ["recyclingquote", "Recyclingquote", "Die Recyclingquote beschreibt den Anteil von Materialien oder Produkten, der recycelt wird.", "Sie allein reicht nicht: Qualität, Materialgesundheit, Downcycling, tatsächliche Rückführung und Vermeidung müssen mitbewertet werden.", [], ["recycling", "zirkularitaetsindikator"]],
+    ["kreislauffaehigkeit", "Kreislauffähigkeit", "Kreislauffähigkeit beschreibt, ob ein Produkt, Material oder System sinnvoll in biologische oder technische Kreisläufe zurückgeführt werden kann.", "Sie ist notwendig, aber keine Garantie positiver Netto-Wirkung.", [], ["kreislaufwirkung", "kreislaufblindheit"]],
+    ["kreislaufgrad", "Kreislaufgrad", "Der Kreislaufgrad beschreibt, wie stark ein Produkt, Unternehmen oder System tatsächlich zirkulär organisiert ist.", "Er muss mit Datenqualität, Materialgesundheit, Reparierbarkeit, Rücknahme und Nutzungsdauer verbunden werden.", [], ["kreislauffaehigkeit", "zirkularitaetsindikator"]],
+    ["zirkularitaetsindikator", "Circularity Indicator / Zirkularitätsindikator", "Ein Zirkularitätsindikator misst Aspekte wie Materialrückführung, Rezyklatanteil, Lebensdauer, Wiederverwendung oder Recycling.", "Er braucht Kontext, weil Kreislaufwerte allein Wirkung nicht vollständig zeigen.", ["Circularity Indicator"], ["kreislaufgrad", "scorecard"]],
+    ["zirkulaeres-geschaeftsmodell", "Zirkuläres Geschäftsmodell", "Ein zirkuläres Geschäftsmodell schafft Wert, indem Produkte, Materialien oder Funktionen möglichst lange im Kreislauf bleiben.", "Beispiele sind Product-as-a-Service, Rücknahmesysteme, Leasing, Sharing, Refurbishment, Remanufacturing und Wiederverkauf.", [], ["product-as-a-service", "ruecknahmesystem"]],
+    ["product-as-a-service", "Product-as-a-Service", "Product-as-a-Service verkauft Nutzung oder Funktion statt Eigentum am Produkt.", "Kann Kreislaufwirkung stärken, wenn Anbieter Anreize für Langlebigkeit, Wartung und Rücknahme haben; kann aber Plattformmacht erzeugen.", [], ["zirkulaeres-geschaeftsmodell", "plattformkapitalismus"]],
+    ["erweiterte-herstellerverantwortung", "Erweiterte Herstellerverantwortung", "Erweiterte Herstellerverantwortung verpflichtet Hersteller zu Verantwortung über den Verkauf hinaus.", "Wichtig für Rücknahme, Entsorgung, Recycling und Rückkopplung von Produktfolgen an Herstellerentscheidungen.", ["Extended Producer Responsibility", "EPR"], ["ruecknahmesystem", "wirkungsrueckkopplung"]],
+    ["geplante-obsoleszenz", "Geplante Obsoleszenz", "Geplante Obsoleszenz verkürzt Nutzungsdauer durch Produktgestaltung oder Marktpraktiken.", "Sie ist negative Produktwirkung, weil sie Ressourcenverbrauch, Abfall und Ersatzproduktion erhöht.", [], ["nutzungsdauerverlaengerung", "reparierbarkeit"]],
+    ["industrielle-dekonstruktion", "Industrielle Dekonstruktion", "Industrielle Dekonstruktion zerlegt Produkte, Gebäude oder Anlagen systematisch, um Komponenten und Materialien wiederzuverwenden.", "Wichtig für Bau, Produktion, Materialpass und Urban Mining.", [], ["urban-mining", "materialpass"]],
+    ["abfallhierarchie", "Abfallhierarchie", "Die Abfallhierarchie ordnet Maßnahmen nach Priorität: Vermeidung, Wiederverwendung, Recycling, Verwertung und Beseitigung.", "Die WÖk erweitert sie um Wirkung auf Mensch, Planet und Demokratie sowie Produktdesign vor der Abfallphase.", [], ["kreislaufwirtschaft", "recycling"]],
+    ["zero-waste", "Null-Abfall / Zero Waste", "Zero Waste zielt darauf, Abfall durch Design, Vermeidung, Wiederverwendung und Rückführung möglichst vollständig zu vermeiden.", "Wirkung hängt davon ab, ob Vermeidung real ist und keine Schäden verlagert werden.", ["Zero Waste"], ["abfallhierarchie", "kreislaufwirtschaft"]],
+    ["kreislaufblindheit", "Kreislaufblindheit", "Kreislaufblindheit ist das Missverständnis, dass ein geschlossener Materialkreislauf automatisch positive Wirkung erzeugt.", "Ein Kreislauf kann auch schädliche Stoffe, Machtkonzentration oder Ausbeutung stabilisieren.", [], ["kreislauffaehigkeit", "materialgesundheit", "positive-netto-wirkung"]],
+    ["kreislaufwirkung", "Kreislaufwirkung", "Kreislaufwirkung beschreibt die tatsächliche Wirkung zirkulärer Produkt-, Material- oder Geschäftsmodellgestaltung auf Mensch, Planet und Demokratie.", "Sie verbindet Kreislaufdaten mit Netto-Wirkung, Reverse Merit Order und Scorecards.", [], ["kreislaufwirtschaft", "positive-netto-wirkung", "scorecard"]],
+  ].map(([id, title, short, woek, aliases = [], related = []]) => addTerm(circularBase, { id, title, short, definition: short, woek, aliases, related })),
+];
+
+const neuroTerms = [
+  ...[
+    ["neuropsychologische-wirkmechanismen", "Neuropsychologische Wirkmechanismen", "Neuropsychologische Wirkmechanismen beschreiben, wie Wahrnehmung, Aufmerksamkeit, Emotion, Gedächtnis und Entscheidung Wirkungspotenziale entfalten oder blockieren.", "Sie sind keine Wirkung im WÖk-Sinn, sondern Wirkmechanismen, Resonanzverstärker oder Aufnahmebedingungen.", [], ["wahrnehmung", "aufmerksamkeit", "salienz", "resonanzraum"]],
+    ["wahrnehmung", "Wahrnehmung", "Wahrnehmung beschreibt die Aufnahme und Verarbeitung von Reizen, Informationen und Situationen.", "Sie ist nicht neutral, sondern wird durch Salienz, Erfahrung, Erwartung, Emotion, Kontext, Sprache und Zugehörigkeit geprägt.", [], ["salienz", "praediktive-verarbeitung", "framing"]],
+    ["aufmerksamkeit", "Aufmerksamkeit", "Aufmerksamkeit beschreibt die Auswahl dessen, was aus vielen Reizen bewusst oder handlungsrelevant wird.", "Aufmerksamkeit ist ein knappes Wirkungsmedium. Medien, Produkte, Preise und Plattformen wirken oft zuerst über Aufmerksamkeitslenkung.", [], ["aufmerksamkeitsoekonomie", "salienzsteuerung"]],
+    ["aufmerksamkeitsoekonomie", "Aufmerksamkeitsökonomie", "Aufmerksamkeitsökonomie beschreibt Märkte und Plattformlogiken, in denen Aufmerksamkeit zur knappen Ressource und zum Geschäftsmodell wird.", "Relevant für Medien, Plattformen, politische Sprache, Werbung und demokratische Stabilität.", [], ["plattformkapitalismus", "medienqualitaet"]],
+    ["kognitive-belastung", "Kognitive Belastung", "Kognitive Belastung beschreibt den geistigen Aufwand, um Informationen zu verarbeiten, Entscheidungen zu treffen oder Komplexität zu bewältigen.", "Hohe Belastung kann Reaktanz, Vereinfachung, Scheinentlastung oder Entscheidungsvermeidung begünstigen.", ["Cognitive Load"], ["informationsueberlastung", "scheinentlastung"]],
+    ["informationsueberlastung", "Informationsüberlastung", "Informationsüberlastung entsteht, wenn Menschen mehr Informationen erhalten, als sie sinnvoll verarbeiten können.", "Mehr Daten erzeugen nicht automatisch mehr Wirkung; ohne Orientierung, Filter, Vertrauen und Handlungsmöglichkeit kann Überlastung Wirkung blockieren.", [], ["orientierung", "vertrauen"]],
+    ["mentales-modell", "Mentales Modell", "Ein mentales Modell ist eine innere Vorstellung davon, wie ein Ausschnitt der Welt funktioniert.", "Mentale Modelle beeinflussen, ob Wirkungsdaten, Fakten, Produkte, Risiken oder politische Botschaften verstanden und akzeptiert werden.", [], ["wirklichkeitskonstruktion", "reframing"]],
+    ["praediktive-verarbeitung", "Prädiktive Verarbeitung", "Prädiktive Verarbeitung beschreibt die Idee, dass Wahrnehmung stark durch Erwartungen und Vorhersagen geprägt wird.", "Relevant für Wirklichkeitskonstruktion, kognitive Dissonanz, Framing und Faktenreaktanz.", ["Predictive Processing", "Vorhersageverarbeitung"], ["kognitive-dissonanz", "framing"]],
+    ["belohnungslernen", "Belohnungslernen", "Belohnungslernen beschreibt, wie Verhalten durch positive Rückmeldung, Erfolgserleben oder soziale Anerkennung wahrscheinlicher wird.", "Relevant für Konsum, Plattformlogik, Likes, Status, Bonusprogramme, Gamification und Produktverhalten.", [], ["verstaerkungslernen", "plattformkapitalismus"]],
+    ["verstaerkungslernen", "Verstärkungslernen", "Verstärkungslernen beschreibt Verhaltensänderung durch wiederholte Rückmeldungen, Belohnungen oder Sanktionen.", "Wirkungsrückkopplung kann gesellschaftliches Verstärkungslernen sein: positive Wirkung wird belohnt, negative Wirkung belastet.", [], ["belohnungslernen", "wirkungsrueckkopplung"]],
+    ["gewoehnung", "Gewöhnung / Habituation", "Gewöhnung beschreibt, dass wiederholte Reize mit der Zeit weniger stark wahrgenommen werden.", "Relevant für Normalisierung, mediale Erregung, Klimarisiken, Gewaltbilder, politische Eskalation und Produktgewohnheiten.", ["Habituation"], ["normalisierung", "baseline-verschiebung"]],
+    ["sensibilisierung", "Sensibilisierung", "Sensibilisierung beschreibt, dass wiederholte oder starke Reize die Reaktionsbereitschaft erhöhen.", "Relevant für Angstkommunikation, Alarm-Frames, Diskurseskalation und Vertrauensverlust.", [], ["alarm-frame", "bedrohungsverarbeitung"]],
+    ["bedrohungsverarbeitung", "Bedrohungsverarbeitung", "Bedrohungsverarbeitung beschreibt, wie Menschen mögliche Gefahren wahrnehmen, emotional bewerten und handlungsrelevant machen.", "Kann Schutzverhalten fördern, aber auch Reaktanz, Polarisierung oder Feindbilder verstärken.", [], ["reaktanz", "alarm-frame"]],
+    ["stressreaktion", "Stressreaktion", "Stressreaktion beschreibt körperliche und psychische Aktivierung bei wahrgenommener Belastung, Bedrohung oder Kontrollverlust.", "Dauerstress reduziert Dialogfähigkeit, Reflexion und Vertrauen; gesellschaftliche Dauererregung ist ein demokratisches Wirkungsrisiko.", [], ["emotionsregulation", "wirkungsresilienz"]],
+    ["affekt", "Affekt", "Affekt beschreibt eine unmittelbare emotionale Reaktion oder Grundtönung, die Wahrnehmung und Bewertung beeinflusst.", "Affekt kann Salienz erhöhen und Entscheidungsräume verengen oder öffnen.", [], ["affektheuristik", "emotionsregulation"]],
+    ["wahrheitsillusionseffekt", "Wahrheitsillusionseffekt", "Der Wahrheitsillusionseffekt beschreibt, dass wiederholte Aussagen vertrauter und dadurch glaubwürdiger wirken können, selbst wenn sie falsch sind.", "Zentral für Desinformation, politische Sprache, Werbung, Medienwirkung und Folgencheck.", ["Illusory Truth Effect"], ["desinformation", "faktencheck", "folgencheck"]],
+    ["vertrautheitseffekt", "Vertrautheitseffekt", "Der Vertrautheitseffekt beschreibt, dass wiederholter Kontakt mit einem Reiz dessen positive Bewertung erhöhen kann.", "Relevant für Marken, Narrative, politische Begriffe, Normalisierung und Plattformkommunikation.", ["Mere Exposure Effect"], ["normalisierung", "narrativ"]],
+    ["negativitaetsbias", "Negativitätsbias", "Negativitätsbias beschreibt die Tendenz, negative Informationen stärker zu beachten und zu gewichten als positive.", "Relevant für Medienlogik, Alarm-Frames, politische Polarisierung und gesellschaftliche Stabilität.", [], ["alarm-frame", "medienwirkung"]],
+    ["neuigkeitsbias", "Neuigkeitsbias", "Neuigkeitsbias beschreibt die Tendenz, neue oder unerwartete Informationen stärker zu beachten.", "Relevant für Medien, Innovation, Produktkommunikation und Plattformlogik.", [], ["salienz", "innovation"]],
+    ["gedaechtniskonsolidierung", "Gedächtniskonsolidierung", "Gedächtniskonsolidierung beschreibt Prozesse, durch die Informationen stabiler im Gedächtnis verankert werden.", "Nur sparsam verwenden, wenn Wiederholung, Narrative, Lernen oder Bildung fachlich relevant sind.", [], ["narrativ", "lernen"]],
+    ["neuroplastizitaet", "Neuroplastizität", "Neuroplastizität beschreibt die Fähigkeit des Nervensystems, sich durch Erfahrung, Lernen und Übung zu verändern.", "Relevant für Wirkungskompetenz, Lernen, Bildung und Resilienz, aber nicht neuro-deterministisch verwenden.", [], ["wirkungskompetenz", "lernen"]],
+  ].map(([id, title, short, woek, aliases = [], related = []]) => addTerm(neuroBase, { id, title, short, definition: short, woek, aliases, related })),
+];
+
+const quantumTerms = [
+  ...[
+    ["quantenphysik", "Quantenphysik", "Quantenphysik beschreibt Gesetzmäßigkeiten von Materie, Energie und Strahlung auf atomarer und subatomarer Ebene.", "Sie ist keine Energiequelle, sondern Grundlage für Halbleiter, Photovoltaik, Sensorik, neue Materialien, Batterieforschung, Quantencomputer und Quantensimulation.", [], ["quantenmaterialien", "halbleiter", "photovoltaik", "quantensolarzelle", "quantenbatterie", "quantentechnologie"]],
+    ["quantentechnologie", "Quantentechnologie", "Quantentechnologie nutzt quantenphysikalische Effekte für Sensorik, Kommunikation, Rechnen, Simulation, Materialien oder Energie.", "Sie kann Wirkungspotenziale erzeugen, muss aber Energieverbrauch, Datenmacht, Sicherheitsrisiken, Infrastruktur und demokratische Kontrolle berücksichtigen.", [], ["quantenphysik", "quantensimulation"]],
+    ["quantenmaterialien", "Quantenmaterialien", "Quantenmaterialien haben besondere Eigenschaften, die wesentlich durch quantenphysikalische Effekte bestimmt werden.", "Relevant für Photovoltaik, Batterien, Sensorik, Leistungselektronik, Supraleitung und neue Speichertechnologien.", [], ["quantenphysik", "supraleitung"]],
+    ["halbleiter", "Halbleiter", "Halbleiter sind Materialien, deren elektrische Leitfähigkeit zwischen Leitern und Isolatoren liegt und gezielt gesteuert werden kann.", "Grundlage von Photovoltaik, Leistungselektronik, Digitalisierung und Sensorik; Lieferketten, Rohstoffe und geopolitische Abhängigkeiten zählen mit.", [], ["bandluecke", "photovoltaik"]],
+    ["bandluecke", "Bandlücke", "Die Bandlücke beschreibt den energetischen Abstand zwischen Valenzband und Leitungsband in einem Material.", "Wichtig für Photovoltaik, LEDs, Halbleiter und Energieumwandlung.", ["Bandgap"], ["halbleiter", "photovoltaik"]],
+    ["photoelektrischer-effekt", "Photoelektrischer Effekt", "Der photoelektrische Effekt beschreibt die Freisetzung oder Anregung von Elektronen durch Licht.", "Grundlagenbegriff für Photovoltaik und direkte Umwandlung von Licht in elektrische Energie.", [], ["photovoltaik", "energieumwandlung"]],
+    ["quantensolarzelle", "Quantensolarzelle", "Quantensolarzellen nutzen quantenphysikalische Effekte oder nanoskalige Materialien wie Quantenpunkte, um Lichtabsorption und Energieumwandlung zu verbessern.", "Forschungs- und Innovationsfeld, keine heutige Standardtechnologie. Wirkung hängt von Wirkungsgrad, Stabilität, Materialgesundheit, Skalierbarkeit, Rohstoffen, Recycling und Lebenszyklus ab.", ["Quantum Solar Cell", "Quantum Dot Solar Cell", "Quantenpunkt-Solarzelle"], ["quantenpunkt", "photovoltaik", "perowskit-solarzelle"]],
+    ["quantenpunkt", "Quantenpunkt", "Ein Quantenpunkt ist ein nanoskaliges Halbleitermaterial, dessen optische und elektronische Eigenschaften durch Quanteneffekte und Größe bestimmt werden.", "Relevant für Displays, Sensorik, Photovoltaik und neue Solarzellendesigns; Materialgesundheit und Recycling sind zu bewerten.", ["Quantum Dot"], ["quantensolarzelle", "halbleiter"]],
+    ["perowskit-solarzelle", "Perowskit-Solarzelle", "Perowskit-Solarzellen nutzen Materialien mit Perowskit-Struktur zur Umwandlung von Licht in elektrische Energie.", "Wichtiges PV-Innovationsfeld; WÖk-Bewertung umfasst Wirkungsgrad, Stabilität, Toxizität, Rohstoffe, Lebensdauer, Recycling und Skalierbarkeit.", [], ["photovoltaik", "tandem-solarzelle"]],
+    ["tandem-solarzelle", "Tandem-Solarzelle", "Tandem-Solarzellen kombinieren mehrere Solarzellenschichten, um verschiedene Lichtbereiche effizienter zu nutzen.", "Relevant für höhere Wirkungsgrade und Flächeneffizienz; zu bewerten sind Materialeinsatz, Lebensdauer, Kosten, Recycling und Produktionswirkung.", [], ["photovoltaik", "perowskit-solarzelle"]],
+    ["quantenbatterie", "Quantenbatterie", "Eine Quantenbatterie ist ein Forschungs-Konzept zur Energiespeicherung, das quantenphysikalische Effekte nutzen soll.", "Derzeit primär Forschungsfeld und keine heutige Lösung für Netzspeicher, Elektromobilität oder Haushaltsbatterien.", [], ["quantenphysik", "speicher-energie", "batteriespeicher"]],
+    ["supraleitung", "Supraleitung", "Supraleitung beschreibt einen Zustand ohne elektrischen Widerstand und mit besonderen magnetischen Effekten.", "Potenzial für Stromübertragung, Magnetspulen, Sensorik oder Speichertechnologien; Wirkung hängt von Temperaturanforderungen, Materialien und Infrastruktur ab.", [], ["quantenmaterialien", "energieumwandlung"]],
+    ["quantensimulation", "Quantensimulation", "Quantensimulation nutzt Quantensysteme oder Quantencomputer zur Modellierung komplexer Materialien, Moleküle oder physikalischer Prozesse.", "Relevant für Batteriematerialien, Katalyse, Solarzellen, Chemie, Medikamente und Materialentwicklung.", [], ["quantentechnologie", "quantenmaterialien"]],
+  ].map(([id, title, short, woek, aliases = [], related = []]) => addTerm(quantumBase, { id, title, short, definition: short, woek, aliases, related, mythos: id === "quantenphysik" ? "Quantenphysik ist eine neue Energieform." : id === "quantenbatterie" ? "Quantenbatterien ersetzen bald normale Batterien." : id === "quantensolarzelle" ? "Quantensolarzellen lösen kurzfristig alle PV-Probleme." : "", woekKlaerung: id === "quantenphysik" ? "Quantenphysik erklärt Wirkmechanismen; Wirkung entsteht erst durch konkrete Technologien, Produkte und Infrastrukturen." : id === "quantenbatterie" ? "Aktuell Forschungs- und Zukunftstechnologie, keine heutige Standardlösung." : id === "quantensolarzelle" ? "Forschungsfeld; Wirkung braucht belastbare Skalierung, Lebensdauer, Materialverträglichkeit und Systemintegration." : "" })),
+];
+
+const energyTerms = [
+  ...[
+    ["energie", "Energie", "Energie ist die Fähigkeit, Arbeit zu verrichten, Wärme zu erzeugen oder Zustände zu verändern.", "Energie ist ein Grundträger gesellschaftlicher Wirkung: Wohlstand, Gesundheit, Produktion, Mobilität, Wohnen, Klimawirkung und Abhängigkeiten hängen daran.", [], ["primaerenergie", "endenergie", "nutzenergie"]],
+    ["primaerenergie", "Primärenergie", "Primärenergie ist Energie in natürlicher oder ursprünglicher Form vor Umwandlung.", "Beispiele sind Kohle, Erdgas, Rohöl, Uran, Sonnenstrahlung, Wind, Wasserkraft und Biomasse.", [], ["energie", "energieumwandlung"]],
+    ["endenergie", "Endenergie", "Endenergie ist die Energie, die Verbraucher:innen nach Umwandlung und Transport beziehen.", "Beispiele sind Strom, Fernwärme, Benzin, Heizöl, Erdgas oder Wasserstoff.", [], ["primaerenergie", "nutzenergie"]],
+    ["nutzenergie", "Nutzenergie", "Nutzenergie ist die Energie, die nach Umwandlungsverlusten für den gewünschten Zweck verfügbar ist.", "Beispiele sind Raumwärme, Licht, Bewegung und mechanische Arbeit.", [], ["endenergie", "wirkungsgrad"]],
+    ["energieumwandlung", "Energieumwandlung", "Energieumwandlung beschreibt die Umwandlung einer Energieform in eine andere.", "Zentral für Wirkungsgrad, Verlustleistung und Systemwirkung.", [], ["wirkungsgrad", "verlustleistung"]],
+    ["energieeffizienz", "Energieeffizienz", "Energieeffizienz beschreibt, wie viel Nutzen mit einem bestimmten Energieeinsatz erzeugt wird.", "Wichtig, aber nicht hinreichend: Rebound-Effekte und Systemwirkung müssen geprüft werden.", [], ["wirkungsgrad", "rebound-effekt"]],
+    ["thermisches-kraftwerk", "Thermisches Kraftwerk", "Ein thermisches Kraftwerk erzeugt elektrische Energie über Wärme, die meist eine Turbine oder Wärmekraftmaschine antreibt.", "Wirkung hängt von Brennstoff, Emissionen, Wirkungsgrad, Abwärme, Wasserverbrauch, Sicherheitsrisiken und Flexibilität ab.", ["Wärmekraftwerk"], ["fossiles-kraftwerk", "kernenergie"]],
+    ["fossiles-kraftwerk", "Fossiles Kraftwerk", "Ein fossiles Kraftwerk erzeugt Strom durch Verbrennung fossiler Energieträger wie Kohle, Erdgas oder Öl.", "Es erzeugt direkte Treibhausgasemissionen und häufig Luftschadstoffe; ohne Klimafolgeschäden, Gesundheitskosten und geopolitische Risiken sind Kosten unvollständig.", [], ["kohlekraftwerk", "gaskraftwerk", "oelkraftwerk"]],
+    ["kohlekraftwerk", "Kohlekraftwerk", "Ein Kohlekraftwerk erzeugt Strom durch Verbrennung von Kohle.", "Hohe CO2- und Luftschadstoffwirkung, relevante Gesundheits-, Klima- und Strukturfolgen.", [], ["fossiles-kraftwerk", "klimafolgeschaeden"]],
+    ["gaskraftwerk", "Gaskraftwerk", "Ein Gaskraftwerk erzeugt Strom durch Verbrennung von Erdgas.", "Kann flexibel sein, verursacht aber CO2- und Methan-Vorkettenwirkungen sowie Importabhängigkeiten.", [], ["fossiles-kraftwerk", "flexibilitaet-energiesystem"]],
+    ["oelkraftwerk", "Ölkraftwerk", "Ein Ölkraftwerk erzeugt Strom aus Erdölprodukten.", "Meist als Reserve oder in Inselsystemen relevant; hohe Emissions- und Abhängigkeitswirkung.", [], ["fossiles-kraftwerk"]],
+    ["kernenergie", "Kernenergie", "Kernenergie nutzt Energie aus Kernspaltung zur Erzeugung von Wärme und daraus Strom.", "Geringe direkte CO2-Emissionen im Betrieb, aber besondere Fragen zu Bauzeit, Kapitalbindung, Sicherheit, Endlagerung, Rückbau, Versicherung, Kühlwasser, Akzeptanz und Opportunitätskosten.", ["Atomenergie", "Nuclear Energy"], ["thermisches-kraftwerk", "systemkosten"]],
+    ["erneuerbare-energien", "Erneuerbare Energien", "Erneuerbare Energien stammen aus Quellen, die sich natürlich erneuern oder dauerhaft verfügbar sind.", "Zentral für Klimaschutz, aber nicht konfliktfrei: Flächen, Rohstoffe, Netze, Biodiversität, Akzeptanz, Lieferketten und Speicher zählen mit.", [], ["photovoltaik", "windenergie", "wasserkraft", "bioenergie", "geothermie"]],
+    ["photovoltaik", "Photovoltaik", "Photovoltaik wandelt Licht direkt in elektrische Energie um.", "Zentraler Wirkungshebel der Energiewende; braucht Flächen, Materialien, Netzintegration, Speicher, Wechselrichter, Recycling und Lieferkettenverantwortung.", [], ["photoelektrischer-effekt", "strommarkt"]],
+    ["solarthermie", "Solarthermie", "Solarthermie nutzt Sonnenenergie zur Wärmeerzeugung.", "Relevant für Wärme, Gebäude, Industrieprozesse und saisonale Speicher.", [], ["erneuerbare-energien", "waermepumpe"]],
+    ["windenergie", "Windenergie", "Windenergie wandelt Bewegungsenergie des Windes in Strom um.", "Zentral für erneuerbare Stromsysteme; Wirkung umfasst Flächen, Natur, Akzeptanz, Netze und Systemintegration.", [], ["onshore-windenergie", "offshore-windenergie"]],
+    ["onshore-windenergie", "Onshore-Windenergie", "Onshore-Windenergie erzeugt Strom aus Windkraftanlagen an Land.", "Wichtig für regionale Wertschöpfung, Akzeptanz, Flächenplanung und Netzintegration.", [], ["windenergie", "netzausbau"]],
+    ["offshore-windenergie", "Offshore-Windenergie", "Offshore-Windenergie erzeugt Strom aus Windkraftanlagen auf See.", "Hohe Volllaststunden, aber besondere Netz-, Meeres-, Bau- und Systemkostenfragen.", [], ["windenergie", "offshore-netzumlage"]],
+    ["wasserkraft", "Wasserkraft", "Wasserkraft nutzt Bewegungs- oder Lageenergie von Wasser zur Stromerzeugung.", "Erneuerbar, aber mit Eingriffen in Gewässerökologie, Sedimente und Lebensräume verbunden.", [], ["erneuerbare-energien"]],
+    ["bioenergie", "Bioenergie", "Bioenergie nutzt biologische Materialien zur Energieerzeugung.", "Wirkung hängt stark von Flächen, Biodiversität, Nahrungskonkurrenz, Reststoffen und Emissionen ab.", [], ["biogas", "erneuerbare-energien"]],
+    ["geothermie", "Geothermie", "Geothermie nutzt Wärme aus dem Erdinneren.", "Relevant für Wärme und Strom, mit Standort-, Bohr-, Risiko- und Infrastrukturfragen.", [], ["erneuerbare-energien"]],
+    ["wasserstoff", "Wasserstoff", "Wasserstoff ist ein Energieträger für Speicherung, Transport, Industrie, Verkehr oder Stromsysteme.", "Kein Primärenergieersatz für alles; Wirkung hängt von Herkunft, Wirkungsgrad, Einsatzfeld, Infrastruktur und Alternativen ab.", [], ["gruener-wasserstoff", "blauer-wasserstoff", "grauer-wasserstoff", "power-to-x"]],
+    ["gruener-wasserstoff", "Grüner Wasserstoff", "Grüner Wasserstoff wird mit erneuerbarem Strom per Elektrolyse hergestellt.", "Sinnvoll vor allem dort, wo direkte Elektrifizierung schwer ist.", [], ["wasserstoff", "power-to-x"]],
+    ["blauer-wasserstoff", "Blauer Wasserstoff", "Blauer Wasserstoff wird aus fossilen Quellen hergestellt, wobei CO2 abgeschieden und gespeichert werden soll.", "Wirkung hängt von Methanemissionen, Abscheiderate, Speicherpermanenz und Alternativen ab.", [], ["wasserstoff", "carbon-capture"]],
+    ["grauer-wasserstoff", "Grauer Wasserstoff", "Grauer Wasserstoff wird aus fossilen Energieträgern ohne wirksame CO2-Abscheidung hergestellt.", "Er ist klimapolitisch problematisch und kein Transformationsziel.", [], ["wasserstoff", "treibhausgasemissionen"]],
+    ["power-to-x", "Power-to-X", "Power-to-X wandelt Strom in andere Energieträger oder Produkte wie Wasserstoff, Wärme, synthetische Kraftstoffe oder Chemikalien um.", "Relevant für Sektorkopplung, Speicher und Industrie, aber mit Umwandlungsverlusten.", [], ["wasserstoff", "sektorkopplung"]],
+    ["strommarkt", "Strommarkt", "Der Strommarkt organisiert Erzeugung, Handel, Transport, Verteilung und Verbrauch von Strom.", "Strom ist netzgebunden, muss in Echtzeit bilanziert werden und braucht Versorgungssicherheit, Flexibilität und Systemdienstleistungen.", [], ["strommarktdesign", "merit-order"]],
+    ["strommarktdesign", "Strommarktdesign", "Strommarktdesign beschreibt Regeln für Erzeugung, Handel, Vergütung, Transport und Absicherung von Strom.", "Strommarktdesign ist Wirkungsarchitektur: Es beeinflusst Investitionen, Preise, Flexibilität, Versorgungssicherheit, Netzausbau und Verteilung.", [], ["energy-only-markt", "kapazitaetsmarkt"]],
+    ["energy-only-markt", "Energy-only-Markt", "Ein Energy-only-Markt vergütet primär tatsächlich erzeugte und verkaufte Strommenge.", "Relevant für Erneuerbare, Speicher, Flexibilität, Versorgungssicherheit und Missing-Money-Problem.", [], ["strommarktdesign", "kapazitaetsmarkt"]],
+    ["kapazitaetsmarkt", "Kapazitätsmarkt", "Ein Kapazitätsmarkt vergütet die Bereitstellung gesicherter Leistung unabhängig von tatsächlicher Stromerzeugung.", "Kann Versorgungssicherheit unterstützen, birgt aber Fehlanreize, fossilen Lock-in oder Überkapazität.", [], ["gesicherte-leistung", "backup-kapazitaet"]],
+    ["merit-order", "Merit Order", "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.", "Erklärt kurzfristige Strompreisbildung, aber nicht vollständige Systemkosten, Klimafolgen, Netzkosten oder Versorgungssicherheit.", [], ["grenzkosten", "grenzkraftwerk"]],
+    ["grenzkosten", "Grenzkosten", "Grenzkosten sind die Kosten für die Erzeugung einer zusätzlichen Einheit Strom.", "Sie prägen kurzfristige Strompreisbildung, aber nicht vollständige Wirkungskosten.", [], ["merit-order", "grenzkraftwerk"]],
+    ["grenzkraftwerk", "Grenzkraftwerk", "Das Grenzkraftwerk deckt die Nachfrage zuletzt und setzt häufig den Marktpreis.", "Seine Wirkung hängt von Brennstoff, Flexibilität und Emissionen ab.", [], ["merit-order", "strommarkt"]],
+    ["stromgestehungskosten", "Stromgestehungskosten", "Stromgestehungskosten beschreiben durchschnittliche Erzeugungskosten über die Lebensdauer einer Anlage pro Kilowattstunde.", "LCOE ist nützlich, aber nicht vollständig: Systemkosten, Netze, Speicher, Umweltkosten, Gesundheit, Klimafolgen und Zeitpfad zählen mit.", ["Gestehungskosten", "LCOE", "Levelized Cost of Electricity"], ["systemkosten", "strommarkt"]],
+    ["systemkosten", "Systemkosten", "Systemkosten umfassen Kosten für Integration, Netze, Speicher, Flexibilität, Reserve, Redispatch und Versorgungssicherheit.", "Eine Technologie kann niedrige Gestehungskosten haben und dennoch Systemkosten verursachen.", [], ["stromgestehungskosten", "redispatch", "speicher-energie"]],
+    ["co2-preis", "CO2-Preis", "Ein CO2-Preis belastet Treibhausgasemissionen monetär.", "Er koppelt Klimawirkung teilweise in Preise zurück, ersetzt aber keine vollständige Wirkungsbewertung.", [], ["emissionshandel", "klimafolgeschaeden"]],
+    ["emissionshandel", "Emissionshandel", "Emissionshandel begrenzt und handelbar macht Emissionsrechte.", "Wirkt nur so gut wie Cap, Abdeckung, Kontrolle und soziale Ausgleichsarchitektur.", [], ["co2-preis", "treibhausgasemissionen"]],
+    ["capture-price", "Capture Price / Marktwert von Strom", "Der Capture Price beschreibt den durchschnittlichen Erlös einer Erzeugungstechnologie abhängig von den Zeiten ihrer Einspeisung.", "Relevant für Solar- und Windstrom, Kannibalisierungseffekt, Speicher und Flexibilität.", ["Marktwert erneuerbarer Energien"], ["kannibalisierungseffekt", "photovoltaik", "windenergie"]],
+    ["kannibalisierungseffekt", "Kannibalisierungseffekt", "Der Kannibalisierungseffekt beschreibt sinkende Markterlöse, wenn viele Anlagen gleichzeitig einspeisen und Preise drücken.", "Relevant für PV, Wind, Speicher und Strommarktdesign.", [], ["capture-price", "strommarktdesign"]],
+    ["stromnetz", "Stromnetz", "Das Stromnetz verbindet Erzeugung, Speicher und Verbrauch elektrischer Energie.", "Zentral für Versorgungssicherheit, Netzintegration, Kostenverteilung und Teilhabe.", [], ["uebertragungsnetz", "verteilnetz"]],
+    ["uebertragungsnetz", "Übertragungsnetz", "Das Übertragungsnetz transportiert Strom über große Entfernungen auf hoher Spannung.", "Wichtig für regionale Ausgleichsräume, Offshore-Anbindung und Versorgungssicherheit.", [], ["stromnetz", "netzausbau"]],
+    ["verteilnetz", "Verteilnetz", "Das Verteilnetz bringt Strom regional zu Haushalten, Betrieben und dezentralen Anlagen.", "Zentral für PV, Wärmepumpen, Elektromobilität, Speicher, Prosumer und Netzentgelte.", [], ["stromnetz", "prosumer"]],
+    ["netzengpass", "Netzengpass", "Ein Netzengpass entsteht, wenn Stromleitungen oder Betriebsmittel nicht genug Transportkapazität haben.", "Er verursacht Redispatch, Abregelung und Systemkosten.", [], ["redispatch", "abregelung"]],
+    ["netzentgelt", "Netzentgelt", "Netzentgelte sind Entgelte für die Nutzung von Strom- oder Gasnetzen und Bestandteil des Endkundenpreises.", "Zentrales Feld für Verteilungswirkung, Energiewende-Kosten, Netzfinanzierung, Prosumer-Logik und Standortgerechtigkeit.", [], ["netzentgeltsystematik", "strompreisbestandteile"]],
+    ["netzentgeltsystematik", "Netzentgeltsystematik", "Netzentgeltsystematik beschreibt, wie Netzkosten verteilt und abgerechnet werden.", "Sie beeinflusst soziale Verteilung, Investitionsanreize, Netzdienlichkeit und Prosumer-Rollen.", [], ["netzentgelt", "netzdienlichkeit"]],
+    ["netzanschluss", "Netzanschluss", "Netzanschluss verbindet Anlagen oder Verbraucher mit dem Stromnetz.", "Zugang, Kosten und Dauer wirken auf Energiewende, Standortentscheidungen und Teilhabe.", [], ["stromnetz", "netzausbau"]],
+    ["netzausbau", "Netzausbau", "Netzausbau erweitert oder verstärkt Stromnetze.", "Er ist Infrastrukturwirkung mit Kosten-, Akzeptanz-, Flächen- und Versorgungssicherheitsfragen.", [], ["stromnetz", "netzengpass"]],
+    ["netzdienlichkeit", "Netzdienlichkeit", "Netzdienlichkeit beschreibt Verhalten, Anlagen oder Steuerung, die das Stromnetz entlasten oder stabilisieren.", "Ein wichtiger Wirkungshebel für Flexibilität, Tarife, Speicher und Demand Response.", [], ["demand-response", "flexibilitaet-energiesystem"]],
+    ["redispatch", "Redispatch", "Redispatch bezeichnet Eingriffe in Erzeugungsleistung oder Einspeisung, um Netzengpässe zu vermeiden oder zu beheben.", "Symptom unzureichender Netz-, Standort-, Flexibilitäts- oder Marktabstimmung; notwendig, aber kosten- und wirkungsrelevant.", [], ["netzengpass", "abregelung"]],
+    ["abregelung", "Abregelung", "Abregelung reduziert Stromerzeugung, etwa aus erneuerbaren Anlagen, wegen Netzengpässen oder Systemanforderungen.", "Zeigt fehlende Netz-, Speicher- oder Flexibilitätsintegration.", ["Curtailment"], ["redispatch", "erneuerbare-energien"]],
+    ["einspeisemanagement", "Einspeisemanagement", "Einspeisemanagement steuert oder begrenzt Einspeisung von Anlagen ins Stromnetz.", "Relevant bei Netzengpässen, erneuerbarer Einspeisung und Entschädigungslogik.", [], ["abregelung", "redispatch"]],
+    ["netzverlust", "Netzverlust", "Netzverlust beschreibt Energieverluste beim Transport und der Verteilung von Strom.", "Teil der Systemwirkung von Netzstruktur, Spannungsebene und Entfernung.", [], ["stromnetz", "systemkosten"]],
+    ["systemdienstleistungen", "Systemdienstleistungen", "Systemdienstleistungen stabilisieren das Stromsystem, etwa Frequenzhaltung, Spannungshaltung, Schwarzstartfähigkeit oder Reserve.", "Sie werden in erneuerbaren Systemen neu organisiert.", [], ["regelenergie", "frequenzhaltung"]],
+    ["regelenergie", "Regelenergie", "Regelenergie gleicht kurzfristige Abweichungen zwischen Stromerzeugung und Verbrauch aus.", "Wichtig für Versorgungssicherheit und Flexibilität.", [], ["systemdienstleistungen", "frequenzhaltung"]],
+    ["primaerregelung", "Primärregelung", "Primärregelung stabilisiert die Netzfrequenz sehr kurzfristig.", "Ein Detailbegriff der Systemdienstleistungen.", [], ["regelenergie"]],
+    ["sekundaerregelung", "Sekundärregelung", "Sekundärregelung stellt nach kurzfristigen Abweichungen die Bilanz eines Regelgebiets wieder her.", "Ein Detailbegriff der Regelenergie.", [], ["regelenergie"]],
+    ["minutenreserve", "Minutenreserve", "Minutenreserve stellt Leistung innerhalb weniger Minuten bereit.", "Ein Reserveinstrument im Stromsystem.", [], ["regelenergie"]],
+    ["frequenzhaltung", "Frequenzhaltung", "Frequenzhaltung sichert die stabile Frequenz im Stromnetz.", "Zentral für Systemstabilität.", [], ["systemdienstleistungen", "regelenergie"]],
+    ["spannungshaltung", "Spannungshaltung", "Spannungshaltung sichert zulässige Spannungsniveaus im Netz.", "Relevant für Netzbetrieb, Blindleistung und dezentrale Einspeisung.", [], ["systemdienstleistungen"]],
+    ["schwarzstartfaehigkeit", "Schwarzstartfähigkeit", "Schwarzstartfähigkeit beschreibt die Fähigkeit, Stromerzeugung ohne externes Netz wieder anzufahren.", "Relevant für Krisenresilienz und Wiederaufbau des Stromsystems.", [], ["systemdienstleistungen", "wirkungsresilienz"]],
+    ["momentanreserve", "Momentanreserve", "Momentanreserve beschreibt sehr kurzfristige Stabilisierung durch rotierende Massen oder technische Ersatzlösungen.", "Relevant beim Übergang zu inverterbasierten Erzeugern.", [], ["inertia", "systemdienstleistungen"]],
+    ["inertia", "Inertia / Trägheit", "Inertia beschreibt Trägheit im Stromsystem, klassisch durch rotierende Massen synchroner Maschinen.", "Relevant beim Übergang von thermischen Kraftwerken zu inverterbasierten Erzeugern.", ["Trägheit"], ["momentanreserve", "thermisches-kraftwerk"]],
+    ["flexibilitaet-energiesystem", "Flexibilität im Energiesystem", "Flexibilität beschreibt die Fähigkeit, Erzeugung, Verbrauch, Speicher und Netzbetrieb an schwankende Bedingungen anzupassen.", "Zentrale Systemwirkung in erneuerbaren Stromsystemen.", ["Flexibilität"], ["demand-response", "speicher-energie"]],
+    ["demand-response", "Demand Response", "Demand Response verschiebt oder reduziert Stromverbrauch als Reaktion auf Markt- oder Netzsignale.", "Wirkungshebel für Netzdienlichkeit, Kostenreduktion, Versorgungssicherheit und Integration erneuerbarer Energien.", [], ["lastmanagement", "dynamischer-stromtarif"]],
+    ["lastmanagement", "Lastmanagement", "Lastmanagement steuert Stromverbrauch zeitlich oder mengenmäßig.", "Es kann Netze entlasten, Kosten senken und erneuerbare Integration verbessern.", [], ["demand-response", "lastgang"]],
+    ["lastgang", "Lastgang", "Der Lastgang beschreibt den zeitlichen Verlauf des Stromverbrauchs.", "Grundlage für Tarife, Netzauslegung, Flexibilität und Demand Response.", [], ["lastmanagement", "residuallast"]],
+    ["residuallast", "Residuallast", "Residuallast ist die Stromnachfrage nach Abzug variabler erneuerbarer Einspeisung.", "Wichtig für Speicher, Backup, Flexibilität und Strommarktdesign.", [], ["dunkelflaute", "backup-kapazitaet"]],
+    ["dunkelflaute", "Dunkelflaute", "Dunkelflaute bezeichnet Phasen mit geringer Solar- und Windstromerzeugung.", "Relevant für Versorgungssicherheit, Speicher, Backup, Netze, Demand Response und Systemkosten.", [], ["residuallast", "langzeitspeicher"]],
+    ["grundlast", "Grundlast", "Grundlast beschreibt den dauerhaft vorhandenen Mindeststrombedarf.", "Historisch wichtig, in erneuerbaren Systemen aber kritisch: Zukunftssysteme brauchen Flexibilität, Residuallastdeckung und Systemdienstleistungen.", [], ["residuallast", "gesicherte-leistung"]],
+    ["spitzenlast", "Spitzenlast", "Spitzenlast beschreibt besonders hohe Stromnachfrage in bestimmten Zeiten.", "Relevant für Netze, Kapazität, Tarife und Demand Response.", [], ["lastgang", "demand-response"]],
+    ["gesicherte-leistung", "Gesicherte Leistung", "Gesicherte Leistung beschreibt Leistung, die mit hoher Verlässlichkeit verfügbar ist.", "Zentral für Versorgungssicherheit, Kapazitätsmärkte, Speicher und Backup.", [], ["kapazitaetsmarkt", "backup-kapazitaet"]],
+    ["backup-kapazitaet", "Backup-Kapazität", "Backup-Kapazität steht bereit, wenn andere Erzeugung oder Flexibilität nicht ausreicht.", "Wirkung hängt von Emissionen, Kosten, Einsatzhäufigkeit und Alternativen ab.", [], ["gesicherte-leistung", "dunkelflaute"]],
+    ["speicher-energie", "Speicher", "Speicher nehmen Energie auf und geben sie später wieder ab.", "Sie erzeugen keine Primärenergie, können aber Systemkosten, Abregelung und Versorgungssicherheitsrisiken senken.", ["Energiespeicher"], ["batteriespeicher", "pumpspeicher", "langzeitspeicher"]],
+    ["batteriespeicher", "Batteriespeicher", "Batteriespeicher speichern elektrische Energie elektrochemisch.", "Relevant für Kurzzeitspeicher, Netzdienlichkeit, Eigenverbrauch und erneuerbare Integration; Rohstoffe und Recycling zählen mit.", [], ["speicher-energie", "kurzzeitspeicher"]],
+    ["pumpspeicher", "Pumpspeicher", "Pumpspeicher speichern Energie durch Hochpumpen von Wasser und spätere Stromerzeugung.", "Bewährte Speichertechnologie mit Standort- und Naturräumen.", [], ["speicher-energie", "langzeitspeicher"]],
+    ["langzeitspeicher", "Langzeitspeicher", "Langzeitspeicher überbrücken längere Zeiträume mit Energiebedarf.", "Relevant für Dunkelflauten, saisonale Schwankungen und Versorgungssicherheit.", [], ["dunkelflaute", "wasserstoffspeicher"]],
+    ["kurzzeitspeicher", "Kurzzeitspeicher", "Kurzzeitspeicher gleichen kurzfristige Schwankungen aus.", "Wichtig für PV, Frequenzhaltung, Lastspitzen und Netzdienlichkeit.", [], ["batteriespeicher", "regelenergie"]],
+    ["wasserstoffspeicher", "Wasserstoffspeicher", "Wasserstoffspeicher speichern Energie chemisch in Form von Wasserstoff.", "Relevant für Langzeitspeicherung und Industrie, aber mit Umwandlungsverlusten und Infrastrukturbedarf.", [], ["wasserstoff", "langzeitspeicher"]],
+    ["vehicle-to-grid", "Vehicle-to-Grid", "Vehicle-to-Grid nutzt Batterien von Elektrofahrzeugen zur Rückspeisung oder Netzstützung.", "Potenzial für Flexibilität, aber abhängig von Batteriealterung, Tarifen, Standards und Nutzerakzeptanz.", [], ["elektromobilitaet", "batteriespeicher"]],
+    ["prosumer", "Prosumer", "Prosumer verbrauchen und erzeugen Energie.", "Relevant für PV, Eigenverbrauch, Netzentgelte, Dezentralisierung, Teilhabe und Verteilungswirkung.", [], ["photovoltaik", "netzentgelt"]],
+    ["eeg", "EEG", "Das EEG ist das deutsche Erneuerbare-Energien-Gesetz.", "Es hat Investitionen in erneuerbare Energien stark geprägt und bleibt für Marktintegration und Förderung relevant.", [], ["einspeiseverguetung", "marktpraemie"]],
+    ["einspeiseverguetung", "Einspeisevergütung", "Einspeisevergütung vergütet eingespeisten Strom zu festgelegten Sätzen.", "Investitionssignal mit Kosten-, Verteilungs- und Marktwirkung.", [], ["eeg", "marktpraemie"]],
+    ["marktpraemie", "Marktprämie", "Die Marktprämie ergänzt Markterlöse erneuerbarer Anlagen.", "Sie verbindet Förderung mit Marktintegration.", [], ["eeg", "capture-price"]],
+    ["power-purchase-agreement", "Power Purchase Agreement / PPA", "Ein PPA ist ein langfristiger Stromliefervertrag zwischen Erzeuger und Abnehmer.", "Relevant für Finanzierung, Risikoallokation, Grünstrom und Investitionssicherheit.", ["PPA"], ["gruenstrom", "herkunftsnachweis"]],
+    ["contracts-for-difference", "Contracts for Difference / CfD", "Contracts for Difference gleichen Differenzen zwischen Referenzpreis und Marktpreis aus.", "Sie können Investitionssicherheit schaffen, müssen aber fair ausgestaltet werden.", ["CfD"], ["strommarktdesign", "kapazitaetsmarkt"]],
+    ["herkunftsnachweis", "Herkunftsnachweis", "Herkunftsnachweise dokumentieren die Herkunft von Strom aus erneuerbaren Quellen.", "Sie sind nicht identisch mit physischer Lieferung und brauchen Wirkungsprüfung.", [], ["gruenstrom", "scope-2"]],
+    ["gruenstrom", "Grünstrom", "Grünstrom bezeichnet Strom aus erneuerbaren Quellen oder entsprechende Beschaffungsprodukte.", "Wirkung hängt von Zusätzlichkeit, Marktmodell, Herkunftsnachweisen und Systemintegration ab.", [], ["herkunftsnachweis", "erneuerbare-energien"]],
+    ["strompreisbestandteile", "Strompreisbestandteile", "Strompreisbestandteile umfassen Beschaffung, Vertrieb, Netzentgelte, Steuern, Abgaben und Umlagen.", "Wichtig für soziale Verteilung, Akzeptanz und Wirkungssteuerung.", [], ["netzentgelt", "stromsteuer"]],
+    ["konzessionsabgabe", "Konzessionsabgabe", "Die Konzessionsabgabe ist ein Entgelt für die Nutzung öffentlicher Wege durch Energieversorgungsnetze.", "Ein Strompreisbestandteil mit kommunaler Finanzierungswirkung.", [], ["strompreisbestandteile"]],
+    ["stromsteuer", "Stromsteuer", "Die Stromsteuer ist eine Verbrauchsteuer auf Strom.", "Wirkung hängt von Ausnahmen, Entlastungen und Lenkungslogik ab.", [], ["strompreisbestandteile"]],
+    ["offshore-netzumlage", "Offshore-Netzumlage", "Die Offshore-Netzumlage finanziert bestimmte Kosten der Offshore-Netzanbindung.", "Teil der Strompreisbestandteile mit Energiewende- und Verteilungswirkung.", [], ["offshore-windenergie", "strompreisbestandteile"]],
+    ["messstellenbetrieb", "Messstellenbetrieb", "Messstellenbetrieb umfasst Einbau, Betrieb und Ablesung von Messeinrichtungen.", "Relevant für Smart Meter, Datenqualität, Tarife und Demand Response.", [], ["smart-meter", "dynamischer-stromtarif"]],
+    ["smart-meter", "Smart Meter", "Smart Meter sind digitale Messsysteme für Energieverbrauch und Einspeisung.", "Sie ermöglichen Tarife und Flexibilität, brauchen Datenschutz, Sicherheit und faire Kostenverteilung.", [], ["messstellenbetrieb", "dynamischer-stromtarif"]],
+    ["dynamischer-stromtarif", "Dynamischer Stromtarif", "Dynamische Stromtarife verändern Preise zeitlich nach Markt- oder Netzsignalen.", "Sie können Flexibilität aktivieren, aber auch soziale Risiken ohne Schutzmechanismen erzeugen.", [], ["demand-response", "smart-meter"]],
+    ["smart-grid", "Smart Grid", "Smart Grid bezeichnet ein digital gesteuertes Stromnetz.", "Es kann Erzeugung, Speicher und Verbrauch besser koordinieren, braucht aber Datenschutz und Resilienz.", [], ["stromnetz", "smart-meter"]],
+    ["sektorkopplung", "Sektorkopplung", "Sektorkopplung verbindet Strom, Wärme, Verkehr, Industrie und Gebäude, um erneuerbare Energie systemisch zu nutzen.", "Sie ist ein Systemhebel für Dekarbonisierung, Effizienz und Flexibilität.", [], ["waermepumpe", "elektromobilitaet", "power-to-x"]],
+    ["waermepumpe", "Wärmepumpe", "Eine Wärmepumpe nutzt Umweltwärme und Strom, um Gebäude oder Prozesse zu heizen.", "Wirkung hängt von Strommix, Gebäudeeffizienz, Kosten, Netzen und sozialer Ausgestaltung ab.", [], ["sektorkopplung", "energieeffizienz"]],
+    ["elektromobilitaet", "Elektromobilität", "Elektromobilität nutzt elektrische Antriebe für Verkehr.", "Wirkung hängt von Strom, Batterie, Rohstoffen, Fahrzeuggröße, Nutzung, Infrastruktur und Verkehrsvermeidung ab.", [], ["vehicle-to-grid", "batteriespeicher"]],
+  ].map(([id, title, short, woek, aliases = [], related = []]) => addTerm(energyBase, { id, title, short, definition: short, woek, aliases, related, mythos: id === "kernenergie" ? "Kernenergie ist entweder völlig sauber oder völlig irrational." : id === "wasserstoff" ? "Wasserstoff ist eine Universallösung." : id === "stromgestehungskosten" ? "Die billigsten Gestehungskosten sind automatisch das billigste System." : "", woekKlaerung: id === "kernenergie" ? "Die WÖk bewertet nach Netto-Wirkung, Systemkosten, Risiken, Zeitpfad, Alternativen und demokratischer Stabilität." : id === "wasserstoff" ? "Wasserstoff ist ein Energieträger für passende Einsatzfelder, nicht Ersatz für direkte Elektrifizierung überall." : id === "stromgestehungskosten" ? "LCOE muss von Systemkosten unterschieden werden." : "" })),
+];
+
+additions.push(...economicSystemTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms);
+
 const raw = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const terms = raw.terms || [];
 const byId = new Map();
@@ -550,6 +955,19 @@ function mergeTerm(existing, next) {
   merged.source_links = merged.sourceLinks;
   merged.tags = unique([...(existing.tags || []), ...(next.tags || [])]);
   merged.categories = unique([...(existing.categories || []), ...(next.categories || [])]);
+  merged.theme = unique([...(existing.theme || existing.themes || []), ...(next.theme || next.themes || [])]);
+  merged.themes = merged.theme;
+  merged.dimensions = unique([...(existing.dimensions || []), ...(next.dimensions || [])]);
+  merged.wirklogik = unique([...(existing.wirklogik || []), ...(next.wirklogik || [])]);
+  merged.applicationFields = unique([...(existing.applicationFields || existing.application_fields || []), ...(next.applicationFields || next.application_fields || [])]);
+  merged.application_fields = merged.applicationFields;
+  merged.sourceField = unique([...(existing.sourceField || existing.source_field || []), ...(next.sourceField || next.source_field || [])]);
+  merged.source_field = merged.sourceField;
+  merged.mythos = next.mythos || existing.mythos || "";
+  merged.woekKlaerung = next.woekKlaerung || next.woek_klaerung || existing.woekKlaerung || existing.woek_klaerung || "";
+  merged.woek_klaerung = merged.woekKlaerung;
+  merged.blindSpot = next.blindSpot || next.blind_spot || existing.blindSpot || existing.blind_spot || "";
+  merged.blind_spot = merged.blindSpot;
   merged.lastUpdated = today;
   merged.updatedAt = today;
   merged.lastReviewed = today;
@@ -743,6 +1161,38 @@ for (const item of terms) {
   item.publicationStatus ||= "published";
   item.publication_status ||= item.publicationStatus;
   item.concept_status ||= item.conceptStatus || "";
+  item.type ||= item.begriffstyp || item.conceptStatus || item.concept_status || "";
+  item.begriffstyp ||= item.type;
+  item.theme = unique(item.theme || item.themes || []);
+  if (!item.theme.length && item.category) item.theme = [item.category];
+  const themeByCategory = {
+    [CAT_THINKERS]: "Philosophie, Ethik und Werte",
+    [CAT_VALUES]: "Philosophie, Ethik und Werte",
+    [CAT_ETHICS]: "Philosophie, Ethik und Werte",
+    [CAT_CAPITAL]: "Kapital, Markt und Macht",
+    [CAT_LANGUAGE]: "Sprache, Wirklichkeit und Kommunikation",
+    [CAT_SYSTEMS]: "Systemtheorie, Kybernetik und Konstruktivismus",
+    [CAT_MANAGEMENT2]: "Management, Organisation und Wirksamkeit",
+    [CAT_TRANSFORMATION]: "Innovation, Evolution und Transformation",
+  };
+  if (themeByCategory[item.category]) item.theme = unique([themeByCategory[item.category], ...item.theme]);
+  if (!item.theme.length) item.theme = ["Wirkung und Wirkungslogik"];
+  item.themes = item.theme;
+  item.dimensions = unique(item.dimensions || []);
+  if (!item.dimensions.length) item.dimensions = ["Mensch + Planet + Demokratie"];
+  item.wirklogik = unique(item.wirklogik || []);
+  if (!item.wirklogik.length) item.wirklogik = ["Wirkungsbewertung"];
+  item.applicationFields = unique(item.applicationFields || item.application_fields || []);
+  if (!item.applicationFields.length) item.applicationFields = ["Politik", "Unternehmen"];
+  item.application_fields = item.applicationFields;
+  item.sourceField = unique(item.sourceField || item.source_field || []);
+  if (!item.sourceField.length) item.sourceField = item.conceptStatus === "WÖk-Kernbegriff" ? ["WÖk-eigener Begriff"] : ["WÖk-eigener Begriff"];
+  item.source_field = item.sourceField;
+  item.mythos ||= "";
+  item.woekKlaerung ||= item.woek_klaerung || "";
+  item.woek_klaerung = item.woekKlaerung;
+  item.blindSpot ||= item.blind_spot || "";
+  item.blind_spot = item.blindSpot;
   item.source_links ||= item.sourceLinks || [];
   item.internal_links ||= item.internalLinks || [];
   item.last_reviewed ||= item.lastReviewed || today;
@@ -858,6 +1308,65 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - JEC Well-to-Wheels, https://joint-research-centre.ec.europa.eu/welcome-jec-website/jec-activities/well-wheels-analyses_en
 - Cradle to Cradle Certified, https://c2ccertified.org/the-standard
 
+## Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken
+
+- Adam Smith: The Theory of Moral Sentiments
+- Adam Smith: The Wealth of Nations
+- Karl Marx: Das Kapital
+- Karl Polanyi: The Great Transformation
+- Friedrich Hayek: The Use of Knowledge in Society
+- John Maynard Keynes: The General Theory
+- Gøsta Esping-Andersen: The Three Worlds of Welfare Capitalism
+- Nordic Council: Nordic Welfare Model, https://www.norden.org/en/information/nordic-welfare-model
+- Silvia Federici: Caliban and the Witch
+- Nancy Fraser: soziale Reproduktion und Care-Krise
+- Elinor Ostrom: Governing the Commons
+- Shoshana Zuboff: The Age of Surveillance Capitalism
+- Nick Srnicek: Platform Capitalism
+- Investopedia: Trickle-Down Economics, https://www.investopedia.com/terms/t/trickledowntheory.asp
+- IMF: Inequality and Growth, https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf
+- Hope / Limberg: The economic consequences of major tax cuts for the rich, https://doi.org/10.1093/ser/mwab061
+
+## Kreislaufwirtschaft / Circular Design
+
+- Ellen MacArthur Foundation: Circular Economy Principles, https://www.ellenmacarthurfoundation.org/circular-economy-principles
+- Ellen MacArthur Foundation: Butterfly Diagram / Circular Economy System Diagram, https://www.ellenmacarthurfoundation.org/circular-economy-diagram
+- Ellen MacArthur Foundation: The technical cycle of the butterfly diagram, https://www.ellenmacarthurfoundation.org/articles/the-technical-cycle-of-the-butterfly-diagram
+- Ellen MacArthur Foundation: Towards the Circular Economy, 2013
+- Cradle to Cradle Certified, https://c2ccertified.org/the-standard
+- McDonough / Braungart: Cradle to Cradle
+- EU Ecodesign for Sustainable Products Regulation / Digital Product Passport, https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en
+- EU JRC Life Cycle Assessment, https://eplca.jrc.ec.europa.eu/lifecycleassessment.html
+- ISO 14040 / ISO 14044 als LCA-Bezugslinie
+
+## Neuropsychologie / Wahrnehmung
+
+- Leon Festinger: A Theory of Cognitive Dissonance
+- Daniel Kahneman: Thinking, Fast and Slow
+- Tversky / Kahneman: Judgment under Uncertainty
+- Pennycook / Rand: The Psychology of Fake News
+- Ecker et al.: Psychological drivers of misinformation belief and resistance to correction
+- Zajonc: Mere Exposure Effect
+- Hasher / Goldstein / Toppino: Frequency and the Conference of Referential Validity
+- Andy Clark: predictive processing / embodied cognition
+
+## Quantenphysik / Zukunftstechnologien
+
+- APS Reviews of Modern Physics: Colloquium Quantum Batteries, https://link.aps.org/doi/10.1103/RevModPhys.96.031001
+- ACS Energy Letters: Perovskite Quantum Dot Solar Cells, https://pubs.acs.org/doi/abs/10.1021/acsenergylett.3c01983
+- CSIRO Quantum Battery Research, https://research.csiro.au/quantumbattery/research/quantum-batteries/
+
+## Energie / Strommarkt / Systemkosten
+
+- Fraunhofer ISE: Levelized Cost of Electricity - Renewable Energy Technologies, https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html
+- Fraunhofer ISE LCOE Study 2024 PDF, https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/EN2024_ISE_Study_Levelized_Cost_of_Electricity_Renewable_Energy_Technologies.pdf
+- Bundesnetzagentur Netzentgelte, https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Netzentgelte/start.html
+- Bundesnetzagentur Glossar Netzentgelt, https://www.bundesnetzagentur.de/SharedDocs/A_Z_Glossar/N/Netzentgelt.html
+- Bundesnetzagentur Redispatch, https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/Netzengpassmanagement/Engpassmanagement/Redispatch/start.html
+- SMARD: So funktioniert der Strommarkt, https://www.smard.de/page/en/wiki-article/5884/5840/this-is-how-the-electricity-market-works
+- IEA Glossary / Demand Response, https://www.iea.org/glossary
+- IEA Electricity Market Design, https://www.iea.org/reports/electricity-market-design
+
 ## Design / Business
 
 - IDEO Design Thinking, https://designthinking.ideo.com/
@@ -892,6 +1401,7 @@ Begriffstatus:
 - WÖk-Präzisierungsbegriff
 - Anschlussbegriff
 - Methodenbegriff
+- Wirtschaftssystem / Gesellschaftsmodell
 - Quellen-/Bezugslinienbegriff
 - Vordenker-/Bezugslinienbegriff
 - Artikel-only / nicht ins Glossar

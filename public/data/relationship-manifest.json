@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T13:00:31.956Z",
+  "generatedAt": "2026-05-29T13:24:51.589Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -23,7 +23,26 @@
         "wirkungsarchitektur",
         "wirkungsresilienz",
         "positive-netto-wirkung",
-        "nikolai-kondratieff"
+        "nikolai-kondratieff",
+        "kreislaufwirtschaft"
+      ],
+      "documents": []
+    },
+    "abfallhierarchie": {
+      "terms": [
+        "kreislaufwirtschaft",
+        "recycling",
+        "lineare-wirtschaft",
+        "zero-waste"
+      ],
+      "documents": []
+    },
+    "abregelung": {
+      "terms": [
+        "redispatch",
+        "erneuerbare-energien",
+        "netzengpass",
+        "einspeisemanagement"
       ],
       "documents": []
     },
@@ -36,6 +55,13 @@
       ],
       "documents": []
     },
+    "affekt": {
+      "terms": [
+        "affektheuristik",
+        "emotionsregulation"
+      ],
+      "documents": []
+    },
     "affektheuristik": {
       "terms": [
         "salienz",
@@ -43,7 +69,8 @@
         "framing",
         "emotionsregulation",
         "verfuegbarkeitsheuristik",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "affekt"
       ],
       "documents": []
     },
@@ -96,7 +123,10 @@
         "baseline-verschiebung",
         "destruktives-narrativ",
         "resonanzrisiko",
-        "affektheuristik"
+        "affektheuristik",
+        "sensibilisierung",
+        "bedrohungsverarbeitung",
+        "negativitaetsbias"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -105,6 +135,13 @@
     "amartya-sen": {
       "terms": [
         "wirkungseinkommen"
+      ],
+      "documents": []
+    },
+    "anaerobe-vergaerung": {
+      "terms": [
+        "biogas",
+        "biologischer-kreislauf"
       ],
       "documents": []
     },
@@ -176,6 +213,34 @@
       ],
       "documents": []
     },
+    "aufmerksamkeit": {
+      "terms": [
+        "aufmerksamkeitsoekonomie",
+        "salienzsteuerung",
+        "neuropsychologische-wirkmechanismen"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.html"
+      ]
+    },
+    "aufmerksamkeitsoekonomie": {
+      "terms": [
+        "plattformkapitalismus",
+        "aufmerksamkeit"
+      ],
+      "documents": []
+    },
+    "aeussere-loops": {
+      "terms": [
+        "innere-loops",
+        "recycling",
+        "downcycling",
+        "kreislaufwirkung",
+        "circular-economy-butterfly-model"
+      ],
+      "documents": []
+    },
     "autopoiesis": {
       "terms": [
         "nichttriviales-system",
@@ -191,6 +256,22 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "backup-kapazitaet": {
+      "terms": [
+        "gesicherte-leistung",
+        "dunkelflaute",
+        "kapazitaetsmarkt",
+        "residuallast"
+      ],
+      "documents": []
+    },
+    "bandluecke": {
+      "terms": [
+        "halbleiter",
+        "photovoltaik"
+      ],
+      "documents": []
+    },
     "baseline-verschiebung": {
       "terms": [
         "normalisierung",
@@ -199,7 +280,8 @@
         "destruktives-narrativ",
         "wirkungsrisiko",
         "scheinentlastung",
-        "kipppunkt"
+        "kipppunkt",
+        "gewoehnung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -214,6 +296,16 @@
       ],
       "documents": []
     },
+    "batteriespeicher": {
+      "terms": [
+        "speicher-energie",
+        "kurzzeitspeicher",
+        "quantenbatterie",
+        "vehicle-to-grid",
+        "elektromobilitaet"
+      ],
+      "documents": []
+    },
     "bedeutung-als-gebrauch": {
       "terms": [
         "sprachspiel",
@@ -221,6 +313,21 @@
         "wirkungswahrheit",
         "folgencheck",
         "ludwig-wittgenstein"
+      ],
+      "documents": []
+    },
+    "bedrohungsverarbeitung": {
+      "terms": [
+        "reaktanz",
+        "alarm-frame",
+        "sensibilisierung"
+      ],
+      "documents": []
+    },
+    "belohnungslernen": {
+      "terms": [
+        "verstaerkungslernen",
+        "plattformkapitalismus"
       ],
       "documents": []
     },
@@ -313,6 +420,13 @@
       ],
       "documents": []
     },
+    "biochemische-rohstoffgewinnung": {
+      "terms": [
+        "biologischer-kreislauf",
+        "kaskadennutzung"
+      ],
+      "documents": []
+    },
     "biodiversitaetsrisiko": {
       "terms": [
         "tnfd",
@@ -337,6 +451,50 @@
         "nichtkompensationsprinzip",
         "reverse-merit-order",
         "biodiversitaetsrisiko"
+      ],
+      "documents": []
+    },
+    "bioenergie": {
+      "terms": [
+        "biogas",
+        "erneuerbare-energien"
+      ],
+      "documents": []
+    },
+    "biogas": {
+      "terms": [
+        "anaerobe-vergaerung",
+        "bioenergie"
+      ],
+      "documents": []
+    },
+    "biologischer-kreislauf": {
+      "terms": [
+        "biologischer-naehrstoff",
+        "kompostierung",
+        "anaerobe-vergaerung",
+        "regenerative-landwirtschaft",
+        "materialgesundheit",
+        "kreislaufwirtschaft",
+        "circular-economy-butterfly-model",
+        "verbrauchsgueter",
+        "kaskadennutzung",
+        "biochemische-rohstoffgewinnung"
+      ],
+      "documents": []
+    },
+    "biologischer-naehrstoff": {
+      "terms": [
+        "biologischer-kreislauf",
+        "materialgesundheit",
+        "kompostierung",
+        "verbrauchsgueter"
+      ],
+      "documents": []
+    },
+    "blauer-wasserstoff": {
+      "terms": [
+        "wasserstoff"
       ],
       "documents": []
     },
@@ -376,6 +534,15 @@
       ],
       "documents": []
     },
+    "capture-price": {
+      "terms": [
+        "kannibalisierungseffekt",
+        "photovoltaik",
+        "windenergie",
+        "marktpraemie"
+      ],
+      "documents": []
+    },
     "carbon-budget": {
       "terms": [
         "klimaschutz",
@@ -395,6 +562,16 @@
       ],
       "documents": []
     },
+    "care-oekonomie": {
+      "terms": [
+        "feministische-oekonomie",
+        "sorgearbeit",
+        "reproduktive-arbeit",
+        "wirkungseinkommen",
+        "patriarchat"
+      ],
+      "documents": []
+    },
     "cbam": {
       "terms": [
         "fit-for-55",
@@ -403,6 +580,27 @@
         "wirkungssteuer",
         "clean-industrial-deal",
         "european-green-deal"
+      ],
+      "documents": []
+    },
+    "circular-economy-butterfly-model": {
+      "terms": [
+        "biologischer-kreislauf",
+        "technischer-kreislauf",
+        "innere-loops",
+        "aeussere-loops",
+        "werterhalt",
+        "cradle-to-cradle",
+        "kreislaufwirkung",
+        "kreislaufwirtschaft"
+      ],
+      "documents": []
+    },
+    "zirkularitaetsindikator": {
+      "terms": [
+        "kreislaufgrad",
+        "scorecard",
+        "recyclingquote"
       ],
       "documents": []
     },
@@ -429,6 +627,18 @@
       ],
       "documents": []
     },
+    "co2-preis": {
+      "terms": [
+        "emissionshandel",
+        "klimafolgeschaeden",
+        "gruener-kapitalismus"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html",
+        "/blog/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.html"
+      ]
+    },
     "co2e": {
       "terms": [
         "global-warming-potential",
@@ -437,6 +647,17 @@
         "klimaschutz",
         "scope-1",
         "thg-emissions-scopes"
+      ],
+      "documents": []
+    },
+    "commons": {
+      "terms": [
+        "elinor-ostrom",
+        "gemeineigentum",
+        "selbstorganisation",
+        "vertrauen",
+        "genossenschaft",
+        "dezentralisierung"
       ],
       "documents": []
     },
@@ -455,10 +676,20 @@
       ],
       "documents": []
     },
+    "contracts-for-difference": {
+      "terms": [
+        "strommarktdesign",
+        "kapazitaetsmarkt"
+      ],
+      "documents": []
+    },
     "cradle-to-cradle": {
       "terms": [
         "cradle-to-grave",
-        "kreative-rekonstruktion"
+        "kreative-rekonstruktion",
+        "kreislaufwirtschaft",
+        "circular-economy-butterfly-model",
+        "technischer-naehrstoff"
       ],
       "documents": []
     },
@@ -537,7 +768,9 @@
     },
     "daseinsvorsorge": {
       "terms": [
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "skandinavisches-modell",
+        "wohlfahrtsstaat"
       ],
       "documents": []
     },
@@ -568,6 +801,31 @@
         "emissionsfaktor",
         "lebenszyklusinventar",
         "scope-3-datenqualitaet"
+      ],
+      "documents": []
+    },
+    "demand-response": {
+      "terms": [
+        "lastmanagement",
+        "dynamischer-stromtarif",
+        "netzdienlichkeit",
+        "flexibilitaet-energiesystem",
+        "spitzenlast"
+      ],
+      "documents": []
+    },
+    "demokratischer-sozialismus": {
+      "terms": [
+        "sozialismus",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "design-for-disassembly": {
+      "terms": [
+        "modularitaet",
+        "reparierbarkeit",
+        "komponentenrueckgewinnung"
       ],
       "documents": []
     },
@@ -609,6 +867,25 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "dezentralisierung": {
+      "terms": [
+        "dezentralisierung-von-macht",
+        "selbstorganisation",
+        "commons",
+        "wirkungsrat",
+        "genossenschaft",
+        "machtkonzentration"
+      ],
+      "documents": []
+    },
+    "dezentralisierung-von-macht": {
+      "terms": [
+        "dezentralisierung",
+        "machtkonzentration",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
     "diffusion": {
       "terms": [
         "innovation",
@@ -640,7 +917,10 @@
         "environmental-product-declaration",
         "scope-3",
         "scope-3-datenqualitaet",
-        "warenfetisch"
+        "warenfetisch",
+        "kreislaufwirtschaft",
+        "technischer-kreislauf",
+        "materialpass"
       ],
       "documents": []
     },
@@ -689,6 +969,37 @@
       ],
       "documents": []
     },
+    "downcycling": {
+      "terms": [
+        "recycling",
+        "materialgesundheit",
+        "aeussere-loops"
+      ],
+      "documents": []
+    },
+    "dunkelflaute": {
+      "terms": [
+        "residuallast",
+        "langzeitspeicher",
+        "backup-kapazitaet"
+      ],
+      "documents": []
+    },
+    "dynamischer-stromtarif": {
+      "terms": [
+        "demand-response",
+        "smart-meter",
+        "messstellenbetrieb"
+      ],
+      "documents": []
+    },
+    "eeg": {
+      "terms": [
+        "einspeiseverguetung",
+        "marktpraemie"
+      ],
+      "documents": []
+    },
     "effektivitaet": {
       "terms": [
         "effizienz",
@@ -715,7 +1026,8 @@
         "effektivitaet-vs-effizienz",
         "wirkungsgrad",
         "verlustleistung",
-        "peter-drucker"
+        "peter-drucker",
+        "neoliberalismus"
       ],
       "documents": []
     },
@@ -728,10 +1040,33 @@
       ],
       "documents": []
     },
+    "einspeisemanagement": {
+      "terms": [
+        "abregelung",
+        "redispatch"
+      ],
+      "documents": []
+    },
+    "einspeiseverguetung": {
+      "terms": [
+        "eeg",
+        "marktpraemie"
+      ],
+      "documents": []
+    },
+    "elektromobilitaet": {
+      "terms": [
+        "vehicle-to-grid",
+        "batteriespeicher",
+        "sektorkopplung"
+      ],
+      "documents": []
+    },
     "elinor-ostrom": {
       "terms": [
         "selbstorganisation",
-        "vertrauen"
+        "vertrauen",
+        "commons"
       ],
       "documents": []
     },
@@ -757,6 +1092,16 @@
       ],
       "documents": []
     },
+    "emissionshandel": {
+      "terms": [
+        "co2-preis",
+        "treibhausgasemissionen"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html"
+      ]
+    },
     "emotionsregulation": {
       "terms": [
         "kognitive-dissonanz",
@@ -768,7 +1113,9 @@
         "dissonanzreduktion",
         "alarm-frame",
         "meta-kognitive-intervention",
-        "affektheuristik"
+        "affektheuristik",
+        "stressreaktion",
+        "affekt"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -782,12 +1129,60 @@
       ],
       "documents": []
     },
+    "endenergie": {
+      "terms": [
+        "primaerenergie",
+        "nutzenergie",
+        "energie"
+      ],
+      "documents": []
+    },
+    "energie": {
+      "terms": [
+        "primaerenergie",
+        "endenergie",
+        "nutzenergie"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+        "/blog/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.html",
+        "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+        "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html"
+      ]
+    },
     "energiearmut": {
       "terms": [
         "wirkungssteuer",
         "wirkungshaushalt",
         "wohnwirkung",
         "warmmietenneutralitaet"
+      ],
+      "documents": []
+    },
+    "energieeffizienz": {
+      "terms": [
+        "wirkungsgrad",
+        "rebound-effekt",
+        "scope-2",
+        "waermepumpe"
+      ],
+      "documents": []
+    },
+    "energieumwandlung": {
+      "terms": [
+        "wirkungsgrad",
+        "verlustleistung",
+        "photoelektrischer-effekt",
+        "supraleitung",
+        "primaerenergie"
+      ],
+      "documents": []
+    },
+    "energy-only-markt": {
+      "terms": [
+        "strommarktdesign",
+        "kapazitaetsmarkt"
       ],
       "documents": []
     },
@@ -859,12 +1254,32 @@
       ],
       "documents": []
     },
+    "erneuerbare-energien": {
+      "terms": [
+        "photovoltaik",
+        "windenergie",
+        "wasserkraft",
+        "bioenergie",
+        "geothermie",
+        "solarthermie",
+        "abregelung",
+        "gruenstrom"
+      ],
+      "documents": []
+    },
     "ernst-von-glasersfeld": {
       "terms": [
         "wirklichkeitskonstruktion",
         "viabilitaet",
         "anschlussfaehigkeit",
         "wirkungsintegration"
+      ],
+      "documents": []
+    },
+    "erweiterte-herstellerverantwortung": {
+      "terms": [
+        "ruecknahmesystem",
+        "wirkungsrueckkopplung"
       ],
       "documents": []
     },
@@ -897,7 +1312,8 @@
         "sustainable-finance",
         "sfdr",
         "wirkungsrueckkopplung",
-        "social-taxonomy"
+        "social-taxonomy",
+        "gruener-kapitalismus"
       ],
       "documents": []
     },
@@ -1053,7 +1469,23 @@
         "kapitalrendite",
         "kapital-als-machtverhaeltnis",
         "warenfetisch",
-        "mehrwert"
+        "mehrwert",
+        "marktwirtschaft",
+        "kapitalismus",
+        "neoliberalismus",
+        "raubtierkapitalismus",
+        "extraktiver-kapitalismus",
+        "trickle-down-oekonomie",
+        "lineare-wirtschaft"
+      ],
+      "documents": []
+    },
+    "extraktiver-kapitalismus": {
+      "terms": [
+        "externalisierung",
+        "kapitalwirkung",
+        "kreislaufwirtschaft",
+        "regenerative-landwirtschaft"
       ],
       "documents": []
     },
@@ -1099,6 +1531,7 @@
         "metakommunikation",
         "faktenargumentation",
         "quellenklarheit",
+        "wahrheitsillusionseffekt",
         "wirkstoff"
       ],
       "documents": [
@@ -1129,6 +1562,15 @@
         "folgencheck-statt-faktencheck-democracy-intelligence"
       ]
     },
+    "feministische-oekonomie": {
+      "terms": [
+        "care-oekonomie",
+        "sorgearbeit",
+        "reproduktive-arbeit",
+        "patriarchat"
+      ],
+      "documents": []
+    },
     "finalscore": {
       "terms": [
         "scorecard",
@@ -1136,6 +1578,15 @@
         "netto-wirkung",
         "benchmark",
         "nwi"
+      ],
+      "documents": []
+    },
+    "finanzmarktkapitalismus": {
+      "terms": [
+        "kapitalismus",
+        "kapitalrendite",
+        "kapitalwirkung",
+        "trickle-down-oekonomie"
       ],
       "documents": []
     },
@@ -1147,6 +1598,15 @@
         "transition-risk",
         "european-green-deal",
         "green-deal-industrial-plan"
+      ],
+      "documents": []
+    },
+    "flexibilitaet-energiesystem": {
+      "terms": [
+        "demand-response",
+        "speicher-energie",
+        "gaskraftwerk",
+        "netzdienlichkeit"
       ],
       "documents": []
     },
@@ -1169,6 +1629,7 @@
         "impact-washing",
         "quellenklarheit",
         "scheinwahrheit",
+        "wahrheitsillusionseffekt",
         "wirkstoff",
         "wirkungsraum",
         "wirkungsverantwortung",
@@ -1204,6 +1665,15 @@
       ],
       "documents": []
     },
+    "fossiles-kraftwerk": {
+      "terms": [
+        "kohlekraftwerk",
+        "gaskraftwerk",
+        "oelkraftwerk",
+        "thermisches-kraftwerk"
+      ],
+      "documents": []
+    },
     "framing": {
       "terms": [
         "reframing",
@@ -1221,7 +1691,9 @@
         "wirklichkeitskonstruktion",
         "ludwig-wittgenstein",
         "sprachspiel",
-        "scheinwahrheit"
+        "scheinwahrheit",
+        "wahrnehmung",
+        "praediktive-verarbeitung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1249,10 +1721,32 @@
       ],
       "documents": []
     },
+    "frequenzhaltung": {
+      "terms": [
+        "systemdienstleistungen",
+        "regelenergie"
+      ],
+      "documents": []
+    },
     "friedrich-hayek": {
       "terms": [
         "wirkungswahrheit",
         "externalisierung"
+      ],
+      "documents": []
+    },
+    "gaskraftwerk": {
+      "terms": [
+        "fossiles-kraftwerk",
+        "flexibilitaet-energiesystem"
+      ],
+      "documents": []
+    },
+    "gebrauchsgueter": {
+      "terms": [
+        "technischer-kreislauf",
+        "reparierbarkeit",
+        "nutzungsdauerverlaengerung"
       ],
       "documents": []
     },
@@ -1265,9 +1759,46 @@
       ],
       "documents": []
     },
+    "gedaechtniskonsolidierung": {
+      "terms": [
+        "narrativ"
+      ],
+      "documents": []
+    },
+    "gemeineigentum": {
+      "terms": [
+        "commons",
+        "genossenschaft",
+        "wirkungsbewertung"
+      ],
+      "documents": []
+    },
     "generationengerechtigkeit": {
       "terms": [
         "wirkungshaushalt"
+      ],
+      "documents": []
+    },
+    "genossenschaft": {
+      "terms": [
+        "genossenschaftsblindheit",
+        "commons",
+        "gemeineigentum",
+        "dezentralisierung"
+      ],
+      "documents": []
+    },
+    "genossenschaftsblindheit": {
+      "terms": [
+        "genossenschaft",
+        "wirkungsbewertung",
+        "wirkungsempfaenger"
+      ],
+      "documents": []
+    },
+    "geothermie": {
+      "terms": [
+        "erneuerbare-energien"
       ],
       "documents": []
     },
@@ -1275,7 +1806,9 @@
       "terms": [
         "digitaler-produktpass",
         "material-footprint",
-        "produktdaten"
+        "produktdaten",
+        "nutzungsdauerverlaengerung",
+        "reparierbarkeit"
       ],
       "documents": []
     },
@@ -1293,6 +1826,14 @@
         "/blog/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.html"
       ]
     },
+    "gesicherte-leistung": {
+      "terms": [
+        "kapazitaetsmarkt",
+        "backup-kapazitaet",
+        "grundlast"
+      ],
+      "documents": []
+    },
     "gesundheitsgerechtigkeit": {
       "terms": [
         "health-impact-assessment",
@@ -1306,6 +1847,13 @@
         "wirkungsblindheit",
         "wirkungsrueckkopplung",
         "peter-drucker"
+      ],
+      "documents": []
+    },
+    "gewoehnung": {
+      "terms": [
+        "normalisierung",
+        "baseline-verschiebung"
       ],
       "documents": []
     },
@@ -1347,6 +1895,13 @@
         "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko"
+      ],
+      "documents": []
+    },
+    "grauer-wasserstoff": {
+      "terms": [
+        "wasserstoff",
+        "treibhausgasemissionen"
       ],
       "documents": []
     },
@@ -1402,11 +1957,57 @@
       ],
       "documents": []
     },
+    "grenzkosten": {
+      "terms": [
+        "merit-order",
+        "grenzkraftwerk"
+      ],
+      "documents": []
+    },
+    "grenzkraftwerk": {
+      "terms": [
+        "merit-order",
+        "strommarkt",
+        "grenzkosten"
+      ],
+      "documents": []
+    },
     "gri": {
       "terms": [
         "csrd",
         "esrs",
         "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "grundlast": {
+      "terms": [
+        "residuallast",
+        "gesicherte-leistung"
+      ],
+      "documents": []
+    },
+    "gruener-kapitalismus": {
+      "terms": [
+        "esg",
+        "co2-preis",
+        "wirkungssteuer",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "gruener-wasserstoff": {
+      "terms": [
+        "wasserstoff",
+        "power-to-x"
+      ],
+      "documents": []
+    },
+    "gruenstrom": {
+      "terms": [
+        "herkunftsnachweis",
+        "erneuerbare-energien",
+        "power-purchase-agreement"
       ],
       "documents": []
     },
@@ -1427,6 +2028,15 @@
         "nature-related-risks",
         "ipbes",
         "eudr"
+      ],
+      "documents": []
+    },
+    "halbleiter": {
+      "terms": [
+        "bandluecke",
+        "photovoltaik",
+        "quantenphysik",
+        "quantenpunkt"
       ],
       "documents": []
     },
@@ -1598,6 +2208,14 @@
         "nichttriviale-maschine",
         "beobachtung-zweiter-ordnung",
         "kybernetik-zweiter-ordnung"
+      ],
+      "documents": []
+    },
+    "herkunftsnachweis": {
+      "terms": [
+        "gruenstrom",
+        "scope-2",
+        "power-purchase-agreement"
       ],
       "documents": []
     },
@@ -1856,6 +2474,40 @@
       ],
       "documents": []
     },
+    "industrielle-dekonstruktion": {
+      "terms": [
+        "urban-mining",
+        "materialpass"
+      ],
+      "documents": []
+    },
+    "inertia": {
+      "terms": [
+        "momentanreserve",
+        "thermisches-kraftwerk"
+      ],
+      "documents": []
+    },
+    "informationsueberlastung": {
+      "terms": [
+        "orientierung",
+        "vertrauen",
+        "kognitive-belastung"
+      ],
+      "documents": []
+    },
+    "innere-loops": {
+      "terms": [
+        "aeussere-loops",
+        "werterhalt",
+        "sharing",
+        "wartung",
+        "wiederverwendung",
+        "reparatur",
+        "circular-economy-butterfly-model"
+      ],
+      "documents": []
+    },
     "innovation": {
       "terms": [
         "erfindung",
@@ -1865,7 +2517,8 @@
         "rekombination",
         "schoepferische-zerstoerung",
         "kondratieff-zyklus",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "neuigkeitsbias"
       ],
       "documents": [],
       "journalArticles": [
@@ -2008,6 +2661,23 @@
       ],
       "documents": []
     },
+    "kannibalisierungseffekt": {
+      "terms": [
+        "capture-price",
+        "strommarktdesign"
+      ],
+      "documents": []
+    },
+    "kapazitaetsmarkt": {
+      "terms": [
+        "gesicherte-leistung",
+        "backup-kapazitaet",
+        "strommarktdesign",
+        "energy-only-markt",
+        "contracts-for-difference"
+      ],
+      "documents": []
+    },
     "kapital": {
       "terms": [
         "kapital-als-werkzeug",
@@ -2018,7 +2688,9 @@
         "karl-marx",
         "wertschoepfung",
         "akkumulation",
-        "mehrwert"
+        "mehrwert",
+        "kapitalismus",
+        "trickle-down-oekonomie"
       ],
       "documents": [],
       "journalArticles": [
@@ -2034,7 +2706,9 @@
         "externalisierung",
         "wirkungsverantwortung",
         "karl-marx",
-        "akkumulation"
+        "akkumulation",
+        "sozialismus",
+        "machtkonzentration"
       ],
       "documents": []
     },
@@ -2046,12 +2720,31 @@
       ],
       "documents": []
     },
+    "kapitalismus": {
+      "terms": [
+        "kapital",
+        "marktwirtschaft",
+        "kapitalrendite",
+        "kapitalwirkung",
+        "externalisierung",
+        "raubtierkapitalismus",
+        "finanzmarktkapitalismus",
+        "neoliberalismus",
+        "staatskapitalismus",
+        "privatwirtschaftliche-planwirtschaft",
+        "trickle-down-oekonomie"
+      ],
+      "documents": []
+    },
     "kapitalrendite": {
       "terms": [
         "kapital",
         "kapitalwirkung",
         "externalisierung",
-        "marktwert"
+        "marktwert",
+        "kapitalismus",
+        "finanzmarktkapitalismus",
+        "trickle-down-oekonomie"
       ],
       "documents": []
     },
@@ -2063,7 +2756,13 @@
         "kapital-als-werkzeug",
         "akkumulation",
         "externalisierung",
-        "wirkungsverantwortung"
+        "wirkungsverantwortung",
+        "kapitalismus",
+        "raubtierkapitalismus",
+        "finanzmarktkapitalismus",
+        "staatskapitalismus",
+        "extraktiver-kapitalismus",
+        "trickle-down-oekonomie"
       ],
       "documents": []
     },
@@ -2083,6 +2782,21 @@
       "terms": [
         "externalisierung",
         "wirkungssteuer"
+      ],
+      "documents": []
+    },
+    "kaskadennutzung": {
+      "terms": [
+        "biologischer-kreislauf",
+        "werterhalt",
+        "biochemische-rohstoffgewinnung"
+      ],
+      "documents": []
+    },
+    "kernenergie": {
+      "terms": [
+        "thermisches-kraftwerk",
+        "systemkosten"
       ],
       "documents": []
     },
@@ -2123,7 +2837,9 @@
         "treibhausgasemissionen",
         "klimawandel",
         "verlustleistung",
-        "externalisierung"
+        "externalisierung",
+        "kohlekraftwerk",
+        "co2-preis"
       ],
       "documents": []
     },
@@ -2185,6 +2901,13 @@
         "/blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html"
       ]
     },
+    "kognitive-belastung": {
+      "terms": [
+        "informationsueberlastung",
+        "scheinentlastung"
+      ],
+      "documents": []
+    },
     "kognitive-dissonanz": {
       "terms": [
         "wirkungspotenzial",
@@ -2203,7 +2926,8 @@
         "selbstwirksamkeit",
         "scheinentlastung",
         "alarm-frame",
-        "kohaerenz"
+        "kohaerenz",
+        "praediktive-verarbeitung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2223,6 +2947,22 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "kohlekraftwerk": {
+      "terms": [
+        "fossiles-kraftwerk",
+        "klimafolgeschaeden"
+      ],
+      "documents": []
+    },
+    "kommunismus": {
+      "terms": [
+        "sozialismus",
+        "staatssozialismus",
+        "planwirtschaft",
+        "machtkonzentration"
+      ],
+      "documents": []
+    },
     "komplexitaetsmanagement": {
       "terms": [
         "varietaet",
@@ -2230,6 +2970,21 @@
         "wirkungsarchitektur",
         "nichttriviales-system",
         "fredmund-malik"
+      ],
+      "documents": []
+    },
+    "komponentenrueckgewinnung": {
+      "terms": [
+        "remanufacturing",
+        "design-for-disassembly"
+      ],
+      "documents": []
+    },
+    "kompostierung": {
+      "terms": [
+        "biologischer-kreislauf",
+        "materialgesundheit",
+        "biologischer-naehrstoff"
       ],
       "documents": []
     },
@@ -2264,6 +3019,12 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "konzessionsabgabe": {
+      "terms": [
+        "strompreisbestandteile"
+      ],
+      "documents": []
+    },
     "kosten-des-nicht-handelns": {
       "terms": [
         "wirkungshaushalt",
@@ -2276,7 +3037,65 @@
         "schoepferische-zerstoerung",
         "wirkungsinnovation",
         "verlustleistung",
-        "cradle-to-cradle"
+        "cradle-to-cradle",
+        "kreislaufwirtschaft"
+      ],
+      "documents": []
+    },
+    "kreislaufblindheit": {
+      "terms": [
+        "kreislauffaehigkeit",
+        "materialgesundheit",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "kreislauffaehigkeit": {
+      "terms": [
+        "kreislaufwirkung",
+        "kreislaufblindheit",
+        "kreislaufgrad"
+      ],
+      "documents": []
+    },
+    "kreislaufgrad": {
+      "terms": [
+        "kreislauffaehigkeit",
+        "zirkularitaetsindikator"
+      ],
+      "documents": []
+    },
+    "kreislaufwirkung": {
+      "terms": [
+        "kreislaufwirtschaft",
+        "positive-netto-wirkung",
+        "scorecard",
+        "circular-economy-butterfly-model",
+        "aeussere-loops",
+        "werterhalt",
+        "kreislauffaehigkeit"
+      ],
+      "documents": []
+    },
+    "kreislaufwirtschaft": {
+      "terms": [
+        "cradle-to-cradle",
+        "circular-economy-butterfly-model",
+        "technischer-kreislauf",
+        "biologischer-kreislauf",
+        "reparierbarkeit",
+        "remanufacturing",
+        "recycling",
+        "materialgesundheit",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "sechster-kondratieff",
+        "kreative-rekonstruktion",
+        "extraktiver-kapitalismus",
+        "lineare-wirtschaft",
+        "abfallhierarchie",
+        "zero-waste",
+        "kreislaufwirkung"
       ],
       "documents": []
     },
@@ -2290,6 +3109,13 @@
         "product-market-fit",
         "peter-drucker",
         "gebrauchswert"
+      ],
+      "documents": []
+    },
+    "kurzzeitspeicher": {
+      "terms": [
+        "batteriespeicher",
+        "regelenergie"
       ],
       "documents": []
     },
@@ -2310,6 +3136,30 @@
         "beobachtung-zweiter-ordnung",
         "wirkungsrat",
         "heinz-von-foerster"
+      ],
+      "documents": []
+    },
+    "langzeitspeicher": {
+      "terms": [
+        "dunkelflaute",
+        "wasserstoffspeicher",
+        "speicher-energie",
+        "pumpspeicher"
+      ],
+      "documents": []
+    },
+    "lastgang": {
+      "terms": [
+        "lastmanagement",
+        "residuallast",
+        "spitzenlast"
+      ],
+      "documents": []
+    },
+    "lastmanagement": {
+      "terms": [
+        "demand-response",
+        "lastgang"
       ],
       "documents": []
     },
@@ -2432,6 +3282,14 @@
       ],
       "documents": []
     },
+    "lineare-wirtschaft": {
+      "terms": [
+        "kreislaufwirtschaft",
+        "externalisierung",
+        "abfallhierarchie"
+      ],
+      "documents": []
+    },
     "lksg": {
       "terms": [
         "csddd",
@@ -2463,6 +3321,20 @@
       ],
       "documents": []
     },
+    "machtkonzentration": {
+      "terms": [
+        "dezentralisierung",
+        "dezentralisierung-von-macht",
+        "kapital-als-machtverhaeltnis",
+        "plattformkapitalismus",
+        "raubtierkapitalismus",
+        "privatwirtschaftliche-planwirtschaft",
+        "kommunismus",
+        "patriarchat",
+        "recht-auf-reparatur"
+      ],
+      "documents": []
+    },
     "maja-goepel": {
       "terms": [
         "systemgrenze",
@@ -2486,6 +3358,14 @@
         "/blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html"
       ]
     },
+    "marktpraemie": {
+      "terms": [
+        "eeg",
+        "capture-price",
+        "einspeiseverguetung"
+      ],
+      "documents": []
+    },
     "marktwert": {
       "terms": [
         "wert",
@@ -2496,6 +3376,23 @@
         "tauschwert"
       ],
       "documents": []
+    },
+    "marktwirtschaft": {
+      "terms": [
+        "kapitalismus",
+        "soziale-marktwirtschaft",
+        "wirkungswahrheit",
+        "externalisierung",
+        "wirkungssteuer",
+        "ordoliberalismus",
+        "neoliberalismus",
+        "trickle-down-oekonomie"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.html",
+        "/blog/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.html"
+      ]
     },
     "martha-nussbaum": {
       "terms": [],
@@ -2511,6 +3408,32 @@
         "geplante-obsoleszenz",
         "rohstoffkritikalitaet",
         "zirkularitaet"
+      ],
+      "documents": []
+    },
+    "materialgesundheit": {
+      "terms": [
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "kreislaufwirtschaft",
+        "biologischer-kreislauf",
+        "verbrauchsgueter",
+        "biologischer-naehrstoff",
+        "downcycling",
+        "kompostierung",
+        "materialpass",
+        "kreislaufblindheit"
+      ],
+      "documents": []
+    },
+    "materialpass": {
+      "terms": [
+        "digitaler-produktpass",
+        "materialgesundheit",
+        "technischer-kreislauf",
+        "technischer-naehrstoff",
+        "urban-mining",
+        "industrielle-dekonstruktion"
       ],
       "documents": []
     },
@@ -2543,6 +3466,32 @@
         "/blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
         "/blog/leistung-ohne-wirkung.html"
       ]
+    },
+    "mentales-modell": {
+      "terms": [
+        "wirklichkeitskonstruktion",
+        "reframing"
+      ],
+      "documents": []
+    },
+    "merit-order": {
+      "terms": [
+        "grenzkosten",
+        "grenzkraftwerk",
+        "strommarkt"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html",
+        "/blog/warum-billig-oft-teuer-ist.html"
+      ]
+    },
+    "messstellenbetrieb": {
+      "terms": [
+        "smart-meter",
+        "dynamischer-stromtarif"
+      ],
+      "documents": []
     },
     "meta-kognitive-intervention": {
       "terms": [
@@ -2584,11 +3533,31 @@
       ],
       "documents": []
     },
+    "minutenreserve": {
+      "terms": [
+        "regelenergie"
+      ],
+      "documents": []
+    },
     "mobilitaetsarmut": {
       "terms": [
         "handlungsfaehigkeit",
         "handlungsspielraum",
         "wirkungssteuer"
+      ],
+      "documents": []
+    },
+    "modularitaet": {
+      "terms": [
+        "design-for-disassembly",
+        "nutzungsdauerverlaengerung"
+      ],
+      "documents": []
+    },
+    "momentanreserve": {
+      "terms": [
+        "inertia",
+        "systemdienstleistungen"
       ],
       "documents": []
     },
@@ -2673,7 +3642,9 @@
         "vertrauen",
         "priming",
         "sensemaking",
-        "resonanz"
+        "resonanz",
+        "vertrautheitseffekt",
+        "gedaechtniskonsolidierung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2719,6 +3690,21 @@
       ],
       "documents": []
     },
+    "negativitaetsbias": {
+      "terms": [
+        "alarm-frame"
+      ],
+      "documents": []
+    },
+    "neoliberalismus": {
+      "terms": [
+        "effizienz",
+        "externalisierung",
+        "marktwirtschaft",
+        "kapitalismus"
+      ],
+      "documents": []
+    },
     "net-zero": {
       "terms": [
         "sbti",
@@ -2749,8 +3735,7 @@
       "journalArticles": [
         "/blog/was-ist-nachhaltigkeit-wirklich.html",
         "/blog/wir-messen-das-falsche.html",
-        "/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html",
-        "/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html"
+        "/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html"
       ]
     },
     "nwi": {
@@ -2764,6 +3749,83 @@
       "documents": [
         "technische-leitlinien-wustg"
       ]
+    },
+    "netzanschluss": {
+      "terms": [
+        "stromnetz",
+        "netzausbau"
+      ],
+      "documents": []
+    },
+    "netzausbau": {
+      "terms": [
+        "stromnetz",
+        "netzengpass",
+        "onshore-windenergie",
+        "uebertragungsnetz",
+        "netzanschluss"
+      ],
+      "documents": []
+    },
+    "netzdienlichkeit": {
+      "terms": [
+        "demand-response",
+        "flexibilitaet-energiesystem",
+        "netzentgeltsystematik"
+      ],
+      "documents": []
+    },
+    "netzengpass": {
+      "terms": [
+        "redispatch",
+        "abregelung",
+        "netzausbau"
+      ],
+      "documents": []
+    },
+    "netzentgelt": {
+      "terms": [
+        "netzentgeltsystematik",
+        "strompreisbestandteile",
+        "prosumer"
+      ],
+      "documents": []
+    },
+    "netzentgeltsystematik": {
+      "terms": [
+        "netzentgelt",
+        "netzdienlichkeit"
+      ],
+      "documents": []
+    },
+    "netzverlust": {
+      "terms": [
+        "stromnetz",
+        "systemkosten"
+      ],
+      "documents": []
+    },
+    "neuigkeitsbias": {
+      "terms": [
+        "salienz",
+        "innovation"
+      ],
+      "documents": []
+    },
+    "neuroplastizitaet": {
+      "terms": [
+        "wirkungskompetenz"
+      ],
+      "documents": []
+    },
+    "neuropsychologische-wirkmechanismen": {
+      "terms": [
+        "wahrnehmung",
+        "aufmerksamkeit",
+        "salienz",
+        "resonanzraum"
+      ],
+      "documents": []
     },
     "neutrale-wirkung": {
       "terms": [
@@ -2818,7 +3880,8 @@
         "nichttriviales-system",
         "strukturdeterminiertheit",
         "rueckkopplung",
-        "heinz-von-foerster"
+        "heinz-von-foerster",
+        "planwirtschaft"
       ],
       "documents": []
     },
@@ -2832,7 +3895,8 @@
         "emergenz",
         "interdependenz",
         "komplexitaetsmanagement",
-        "selbstorganisation"
+        "selbstorganisation",
+        "staatssozialismus"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2864,7 +3928,9 @@
         "wirkungsrisiko",
         "wirkungspotenzial",
         "priming",
-        "soziale-bewaehrtheit"
+        "soziale-bewaehrtheit",
+        "gewoehnung",
+        "vertrautheitseffekt"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2886,6 +3952,31 @@
         "operatives-management",
         "mensch-planet-demokratie",
         "st-galler-management-modell"
+      ],
+      "documents": []
+    },
+    "zero-waste": {
+      "terms": [
+        "abfallhierarchie",
+        "kreislaufwirtschaft"
+      ],
+      "documents": []
+    },
+    "nutzenergie": {
+      "terms": [
+        "endenergie",
+        "wirkungsgrad",
+        "energie"
+      ],
+      "documents": []
+    },
+    "nutzungsdauerverlaengerung": {
+      "terms": [
+        "wartung",
+        "reparatur",
+        "modularitaet",
+        "geplante-obsoleszenz",
+        "gebrauchsgueter"
       ],
       "documents": []
     },
@@ -2922,10 +4013,30 @@
       ],
       "documents": []
     },
+    "offshore-netzumlage": {
+      "terms": [
+        "offshore-windenergie",
+        "strompreisbestandteile"
+      ],
+      "documents": []
+    },
+    "offshore-windenergie": {
+      "terms": [
+        "windenergie",
+        "offshore-netzumlage"
+      ],
+      "documents": []
+    },
     "oekosystemleistungen": {
       "terms": [
         "biodiversitaetsrisiko",
         "nature-related-risks"
+      ],
+      "documents": []
+    },
+    "oelkraftwerk": {
+      "terms": [
+        "fossiles-kraftwerk"
       ],
       "documents": []
     },
@@ -2936,6 +4047,13 @@
       ],
       "documents": []
     },
+    "onshore-windenergie": {
+      "terms": [
+        "windenergie",
+        "netzausbau"
+      ],
+      "documents": []
+    },
     "operatives-management": {
       "terms": [
         "strategisches-management",
@@ -2943,6 +4061,14 @@
         "wirkungsdaten",
         "st-galler-management-modell",
         "normatives-management"
+      ],
+      "documents": []
+    },
+    "ordoliberalismus": {
+      "terms": [
+        "soziale-marktwirtschaft",
+        "marktwirtschaft",
+        "wirkungswahrheit"
       ],
       "documents": []
     },
@@ -2967,7 +4093,8 @@
         "selbstwirksamkeit",
         "erlernte-hilflosigkeit",
         "sensemaking",
-        "gesellschaftliche-stabilitaet"
+        "gesellschaftliche-stabilitaet",
+        "informationsueberlastung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2984,6 +4111,15 @@
         "sustainable-finance",
         "wirkungsrisiko",
         "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "patriarchat": {
+      "terms": [
+        "feministische-oekonomie",
+        "care-oekonomie",
+        "sorgearbeit",
+        "machtkonzentration"
       ],
       "documents": []
     },
@@ -3027,6 +4163,14 @@
       ],
       "documents": []
     },
+    "perowskit-solarzelle": {
+      "terms": [
+        "photovoltaik",
+        "tandem-solarzelle",
+        "quantensolarzelle"
+      ],
+      "documents": []
+    },
     "persona": {
       "terms": [
         "design-thinking",
@@ -3058,6 +4202,29 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "photoelektrischer-effekt": {
+      "terms": [
+        "photovoltaik",
+        "energieumwandlung"
+      ],
+      "documents": []
+    },
+    "photovoltaik": {
+      "terms": [
+        "photoelektrischer-effekt",
+        "strommarkt",
+        "quantenphysik",
+        "halbleiter",
+        "bandluecke",
+        "quantensolarzelle",
+        "perowskit-solarzelle",
+        "tandem-solarzelle",
+        "erneuerbare-energien",
+        "capture-price",
+        "prosumer"
+      ],
+      "documents": []
+    },
     "physical-climate-risk": {
       "terms": [
         "tcfd",
@@ -3088,6 +4255,30 @@
     "planetary-health": {
       "terms": [
         "hitzestress"
+      ],
+      "documents": []
+    },
+    "planwirtschaft": {
+      "terms": [
+        "zentralverwaltungswirtschaft",
+        "privatwirtschaftliche-planwirtschaft",
+        "nichttriviale-maschine",
+        "rueckkopplung",
+        "sozialismus",
+        "staatssozialismus",
+        "kommunismus"
+      ],
+      "documents": []
+    },
+    "plattformkapitalismus": {
+      "terms": [
+        "aufmerksamkeitsoekonomie",
+        "ueberwachungskapitalismus",
+        "machtkonzentration",
+        "privatwirtschaftliche-planwirtschaft",
+        "sharing",
+        "product-as-a-service",
+        "belohnungslernen"
       ],
       "documents": []
     },
@@ -3133,7 +4324,11 @@
         "wirkungswert",
         "wirkungswertschoepfung",
         "kapital-als-werkzeug",
-        "wirkungsethik"
+        "wirkungsethik",
+        "gruener-kapitalismus",
+        "trickle-down-oekonomie",
+        "kreislaufblindheit",
+        "kreislaufwirkung"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -3156,6 +4351,29 @@
         "/blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html"
       ]
     },
+    "power-purchase-agreement": {
+      "terms": [
+        "gruenstrom",
+        "herkunftsnachweis"
+      ],
+      "documents": []
+    },
+    "power-to-x": {
+      "terms": [
+        "wasserstoff",
+        "sektorkopplung",
+        "gruener-wasserstoff"
+      ],
+      "documents": []
+    },
+    "praediktive-verarbeitung": {
+      "terms": [
+        "kognitive-dissonanz",
+        "framing",
+        "wahrnehmung"
+      ],
+      "documents": []
+    },
     "praevention": {
       "terms": [
         "wirkungshaushalt",
@@ -3167,6 +4385,20 @@
         "/blog/soziale-resilienz-gegen-verhetzung.html"
       ]
     },
+    "primaerenergie": {
+      "terms": [
+        "energie",
+        "energieumwandlung",
+        "endenergie"
+      ],
+      "documents": []
+    },
+    "primaerregelung": {
+      "terms": [
+        "regelenergie"
+      ],
+      "documents": []
+    },
     "priming": {
       "terms": [
         "framing",
@@ -3176,6 +4408,15 @@
         "strukturelles-driften",
         "wirkstoff",
         "ankereffekt"
+      ],
+      "documents": []
+    },
+    "privatwirtschaftliche-planwirtschaft": {
+      "terms": [
+        "machtkonzentration",
+        "plattformkapitalismus",
+        "kapitalismus",
+        "planwirtschaft"
       ],
       "documents": []
     },
@@ -3204,6 +4445,13 @@
         "lebenszyklusanalyse",
         "scorecard",
         "environmental-product-declaration"
+      ],
+      "documents": []
+    },
+    "product-as-a-service": {
+      "terms": [
+        "zirkulaeres-geschaeftsmodell",
+        "plattformkapitalismus"
       ],
       "documents": []
     },
@@ -3240,6 +4488,14 @@
       ],
       "documents": []
     },
+    "prosumer": {
+      "terms": [
+        "photovoltaik",
+        "netzentgelt",
+        "verteilnetz"
+      ],
+      "documents": []
+    },
     "prozessdenken": {
       "terms": [
         "wirkung",
@@ -3253,6 +4509,13 @@
       ],
       "documents": []
     },
+    "pumpspeicher": {
+      "terms": [
+        "speicher-energie",
+        "langzeitspeicher"
+      ],
+      "documents": []
+    },
     "qualitaetssicherung": {
       "terms": [
         "datenqualitaet",
@@ -3260,6 +4523,63 @@
         "wirkungsbewertung",
         "scorecard",
         "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "quantenbatterie": {
+      "terms": [
+        "quantenphysik",
+        "speicher-energie",
+        "batteriespeicher"
+      ],
+      "documents": []
+    },
+    "quantenmaterialien": {
+      "terms": [
+        "quantenphysik",
+        "supraleitung",
+        "quantensimulation"
+      ],
+      "documents": []
+    },
+    "quantenphysik": {
+      "terms": [
+        "quantenmaterialien",
+        "halbleiter",
+        "photovoltaik",
+        "quantensolarzelle",
+        "quantenbatterie",
+        "quantentechnologie"
+      ],
+      "documents": []
+    },
+    "quantenpunkt": {
+      "terms": [
+        "quantensolarzelle",
+        "halbleiter"
+      ],
+      "documents": []
+    },
+    "quantensimulation": {
+      "terms": [
+        "quantentechnologie",
+        "quantenmaterialien"
+      ],
+      "documents": []
+    },
+    "quantensolarzelle": {
+      "terms": [
+        "quantenpunkt",
+        "photovoltaik",
+        "perowskit-solarzelle",
+        "quantenphysik"
+      ],
+      "documents": []
+    },
+    "quantentechnologie": {
+      "terms": [
+        "quantenphysik",
+        "quantensimulation"
       ],
       "documents": []
     },
@@ -3279,6 +4599,16 @@
       ],
       "documents": []
     },
+    "raubtierkapitalismus": {
+      "terms": [
+        "kapitalismus",
+        "externalisierung",
+        "machtkonzentration",
+        "kapitalwirkung",
+        "trickle-down-oekonomie"
+      ],
+      "documents": []
+    },
     "reaktanz": {
       "terms": [
         "faktenreaktanz",
@@ -3287,7 +4617,8 @@
         "reframing",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "status-quo-bias"
+        "status-quo-bias",
+        "bedrohungsverarbeitung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -3305,11 +4636,20 @@
       "terms": [
         "netto-wirkung",
         "wirkungspfad",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "energieeffizienz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "recht-auf-reparatur": {
+      "terms": [
+        "reparatur",
+        "reparierbarkeit",
+        "machtkonzentration"
+      ],
+      "documents": []
     },
     "rechte-kuenftiger-generationen": {
       "terms": [
@@ -3318,12 +4658,36 @@
       ],
       "documents": []
     },
+    "recycling": {
+      "terms": [
+        "aeussere-loops",
+        "downcycling",
+        "upcycling",
+        "recyclingquote",
+        "kreislaufwirtschaft",
+        "technischer-kreislauf",
+        "sekundaerrohstoff",
+        "abfallhierarchie"
+      ],
+      "documents": []
+    },
     "recyclingquote": {
       "terms": [
         "rezyklatanteil",
         "material-footprint",
         "espr",
-        "zirkularitaet"
+        "zirkularitaet",
+        "recycling",
+        "zirkularitaetsindikator"
+      ],
+      "documents": []
+    },
+    "redispatch": {
+      "terms": [
+        "netzengpass",
+        "abregelung",
+        "systemkosten",
+        "einspeisemanagement"
       ],
       "documents": []
     },
@@ -3342,17 +4706,44 @@
         "emotionsregulation",
         "faktenreaktanz",
         "paul-watzlawick",
-        "metakommunikation"
+        "metakommunikation",
+        "mentales-modell"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "refurbishment": {
+      "terms": [
+        "wiederverwendung",
+        "remanufacturing",
+        "technischer-kreislauf"
+      ],
+      "documents": []
+    },
+    "regelenergie": {
+      "terms": [
+        "systemdienstleistungen",
+        "frequenzhaltung",
+        "primaerregelung",
+        "sekundaerregelung",
+        "minutenreserve",
+        "kurzzeitspeicher"
+      ],
+      "documents": []
     },
     "regeneration": {
       "terms": [
         "positive-netto-wirkung",
         "wirkungsresilienz",
         "humusaufbau"
+      ],
+      "documents": []
+    },
+    "regenerative-landwirtschaft": {
+      "terms": [
+        "biologischer-kreislauf",
+        "extraktiver-kapitalismus"
       ],
       "documents": []
     },
@@ -3379,11 +4770,43 @@
       ],
       "documents": []
     },
+    "remanufacturing": {
+      "terms": [
+        "refurbishment",
+        "komponentenrueckgewinnung",
+        "kreislaufwirtschaft",
+        "technischer-kreislauf",
+        "werterhalt",
+        "reverse-logistics"
+      ],
+      "documents": []
+    },
     "renaturierung": {
       "terms": [
         "hydrologischer-kreislauf",
         "habitatfragmentierung",
         "humusaufbau"
+      ],
+      "documents": []
+    },
+    "reparatur": {
+      "terms": [
+        "recht-auf-reparatur",
+        "reparierbarkeit",
+        "technischer-kreislauf",
+        "innere-loops",
+        "nutzungsdauerverlaengerung"
+      ],
+      "documents": []
+    },
+    "reparierbarkeit": {
+      "terms": [
+        "reparatur",
+        "recht-auf-reparatur",
+        "geplante-obsoleszenz",
+        "kreislaufwirtschaft",
+        "gebrauchsgueter",
+        "design-for-disassembly"
       ],
       "documents": []
     },
@@ -3398,12 +4821,29 @@
         "/blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html"
       ]
     },
+    "reproduktive-arbeit": {
+      "terms": [
+        "care-oekonomie",
+        "sorgearbeit",
+        "feministische-oekonomie"
+      ],
+      "documents": []
+    },
     "residual-emissions": {
       "terms": [
         "net-zero",
         "offsetting-kompensation",
         "carbon-credits",
         "greenwashing"
+      ],
+      "documents": []
+    },
+    "residuallast": {
+      "terms": [
+        "dunkelflaute",
+        "backup-kapazitaet",
+        "lastgang",
+        "grundlast"
       ],
       "documents": []
     },
@@ -3463,6 +4903,7 @@
         "lebensform",
         "motiviertes-denken",
         "narrativ",
+        "neuropsychologische-wirkmechanismen",
         "paul-watzlawick",
         "resonanzarchitektur",
         "resonanzrisiko",
@@ -3510,6 +4951,14 @@
       ],
       "documents": []
     },
+    "reverse-logistics": {
+      "terms": [
+        "ruecknahmesystem",
+        "remanufacturing",
+        "ruecknahmefaehigkeit"
+      ],
+      "documents": []
+    },
     "reverse-merit-order": {
       "terms": [
         "nichtkompensationsprinzip",
@@ -3532,7 +4981,9 @@
         "interdependenz",
         "moral-licensing",
         "schwellenwert",
-        "scope-3"
+        "scope-3",
+        "kreislaufwirtschaft",
+        "materialgesundheit"
       ],
       "documents": [
         "technische-leitlinien-wustg",
@@ -3548,7 +4999,8 @@
         "recyclingquote",
         "material-footprint",
         "espr",
-        "digitaler-produktpass"
+        "digitaler-produktpass",
+        "sekundaerrohstoff"
       ],
       "documents": []
     },
@@ -3583,6 +5035,7 @@
         "nichttriviale-maschine",
         "nichttriviales-system",
         "niklas-luhmann",
+        "planwirtschaft",
         "prozessdenken",
         "rekursion",
         "resilienz",
@@ -3606,6 +5059,22 @@
         "/blog/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.html"
       ]
     },
+    "ruecknahmefaehigkeit": {
+      "terms": [
+        "ruecknahmesystem",
+        "reverse-logistics"
+      ],
+      "documents": []
+    },
+    "ruecknahmesystem": {
+      "terms": [
+        "ruecknahmefaehigkeit",
+        "reverse-logistics",
+        "zirkulaeres-geschaeftsmodell",
+        "erweiterte-herstellerverantwortung"
+      ],
+      "documents": []
+    },
     "salienz": {
       "terms": [
         "salienzsteuerung",
@@ -3619,7 +5088,10 @@
         "priming",
         "wirkungsblindheit",
         "soziale-bewaehrtheit",
-        "resonanz"
+        "resonanz",
+        "neuropsychologische-wirkmechanismen",
+        "wahrnehmung",
+        "neuigkeitsbias"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -3631,7 +5103,8 @@
         "verfuegbarkeitsheuristik",
         "scorecard",
         "wirkstoff",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "aufmerksamkeit"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -3655,7 +5128,8 @@
         "baseline-verschiebung",
         "wirkungsintegration",
         "wirkungsrisiko",
-        "moral-licensing"
+        "moral-licensing",
+        "kognitive-belastung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -3686,6 +5160,13 @@
         "innovation",
         "positive-netto-wirkung",
         "joseph-schumpeter"
+      ],
+      "documents": []
+    },
+    "schwarzstartfaehigkeit": {
+      "terms": [
+        "systemdienstleistungen",
+        "wirkungsresilienz"
       ],
       "documents": []
     },
@@ -3737,7 +5218,9 @@
         "thg-emissions-scopes",
         "product-carbon-footprint",
         "scope-1-2-3",
-        "treibhausgasemissionen"
+        "treibhausgasemissionen",
+        "energieeffizienz",
+        "herkunftsnachweis"
       ],
       "documents": []
     },
@@ -3814,7 +5297,10 @@
         "organisation-environmental-footprint",
         "systemgrenze",
         "schwellenwert",
-        "wirkungswert"
+        "wirkungswert",
+        "stakeholder-kapitalismus",
+        "zirkularitaetsindikator",
+        "kreislaufwirkung"
       ],
       "documents": []
     },
@@ -3891,6 +5377,27 @@
         "/blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html"
       ]
     },
+    "sektorkopplung": {
+      "terms": [
+        "waermepumpe",
+        "elektromobilitaet",
+        "power-to-x"
+      ],
+      "documents": []
+    },
+    "sekundaerregelung": {
+      "terms": [
+        "regelenergie"
+      ],
+      "documents": []
+    },
+    "sekundaerrohstoff": {
+      "terms": [
+        "recycling",
+        "rezyklatanteil"
+      ],
+      "documents": []
+    },
     "selbstorganisation": {
       "terms": [
         "rueckkopplung",
@@ -3904,7 +5411,9 @@
         "maturana-varela",
         "fredmund-malik",
         "elinor-ostrom",
-        "alan-watts-daoismus"
+        "alan-watts-daoismus",
+        "commons",
+        "dezentralisierung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -3941,6 +5450,13 @@
       ],
       "documents": []
     },
+    "sensibilisierung": {
+      "terms": [
+        "alarm-frame",
+        "bedrohungsverarbeitung"
+      ],
+      "documents": []
+    },
     "sfdr": {
       "terms": [
         "sustainable-finance",
@@ -3948,6 +5464,30 @@
         "eu-taxonomie",
         "esg",
         "berichtsdaten"
+      ],
+      "documents": []
+    },
+    "skandinavisches-modell": {
+      "terms": [
+        "wohlfahrtsstaat",
+        "soziale-marktwirtschaft",
+        "vertrauen",
+        "daseinsvorsorge"
+      ],
+      "documents": []
+    },
+    "smart-grid": {
+      "terms": [
+        "stromnetz",
+        "smart-meter"
+      ],
+      "documents": []
+    },
+    "smart-meter": {
+      "terms": [
+        "messstellenbetrieb",
+        "dynamischer-stromtarif",
+        "smart-grid"
       ],
       "documents": []
     },
@@ -3989,12 +5529,66 @@
         "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
       ]
     },
+    "solarthermie": {
+      "terms": [
+        "erneuerbare-energien",
+        "waermepumpe"
+      ],
+      "documents": []
+    },
+    "sorgearbeit": {
+      "terms": [
+        "care-oekonomie",
+        "reproduktive-arbeit",
+        "wirkungswertschoepfung",
+        "patriarchat",
+        "feministische-oekonomie"
+      ],
+      "documents": []
+    },
     "soziale-bewaehrtheit": {
       "terms": [
         "normalisierung",
         "salienz",
         "selbstorganisation",
         "resonanzraum"
+      ],
+      "documents": []
+    },
+    "soziale-marktwirtschaft": {
+      "terms": [
+        "ordoliberalismus",
+        "wohlfahrtsstaat",
+        "marktwirtschaft",
+        "wstg",
+        "skandinavisches-modell"
+      ],
+      "documents": []
+    },
+    "sozialismus": {
+      "terms": [
+        "demokratischer-sozialismus",
+        "staatssozialismus",
+        "kommunismus",
+        "planwirtschaft",
+        "kapital-als-machtverhaeltnis"
+      ],
+      "documents": []
+    },
+    "spannungshaltung": {
+      "terms": [
+        "systemdienstleistungen"
+      ],
+      "documents": []
+    },
+    "speicher-energie": {
+      "terms": [
+        "batteriespeicher",
+        "pumpspeicher",
+        "langzeitspeicher",
+        "quantenbatterie",
+        "systemkosten",
+        "flexibilitaet-energiesystem"
       ],
       "documents": []
     },
@@ -4006,6 +5600,13 @@
       "documents": [
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ]
+    },
+    "spitzenlast": {
+      "terms": [
+        "lastgang",
+        "demand-response"
+      ],
+      "documents": []
     },
     "sprachspiel": {
       "terms": [
@@ -4027,6 +5628,25 @@
       ],
       "documents": []
     },
+    "staatskapitalismus": {
+      "terms": [
+        "kapitalismus",
+        "staatssozialismus",
+        "kapitalwirkung"
+      ],
+      "documents": []
+    },
+    "staatssozialismus": {
+      "terms": [
+        "sozialismus",
+        "zentralverwaltungswirtschaft",
+        "planwirtschaft",
+        "nichttriviales-system",
+        "staatskapitalismus",
+        "kommunismus"
+      ],
+      "documents": []
+    },
     "stafford-beer": {
       "terms": [
         "viable-system-model",
@@ -4034,6 +5654,14 @@
         "varietaet",
         "rekursion",
         "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
+    "stakeholder-kapitalismus": {
+      "terms": [
+        "wirkungswert",
+        "scorecard",
+        "wirkungsempfaenger"
       ],
       "documents": []
     },
@@ -4080,6 +5708,66 @@
         "operatives-management",
         "wirkungspfad",
         "st-galler-management-modell"
+      ],
+      "documents": []
+    },
+    "stressreaktion": {
+      "terms": [
+        "emotionsregulation",
+        "wirkungsresilienz"
+      ],
+      "documents": []
+    },
+    "stromgestehungskosten": {
+      "terms": [
+        "systemkosten",
+        "strommarkt"
+      ],
+      "documents": []
+    },
+    "strommarkt": {
+      "terms": [
+        "strommarktdesign",
+        "merit-order",
+        "photovoltaik",
+        "grenzkraftwerk",
+        "stromgestehungskosten"
+      ],
+      "documents": []
+    },
+    "strommarktdesign": {
+      "terms": [
+        "energy-only-markt",
+        "kapazitaetsmarkt",
+        "strommarkt",
+        "kannibalisierungseffekt",
+        "contracts-for-difference"
+      ],
+      "documents": []
+    },
+    "stromnetz": {
+      "terms": [
+        "uebertragungsnetz",
+        "verteilnetz",
+        "netzanschluss",
+        "netzausbau",
+        "netzverlust",
+        "smart-grid"
+      ],
+      "documents": []
+    },
+    "strompreisbestandteile": {
+      "terms": [
+        "netzentgelt",
+        "stromsteuer",
+        "konzessionsabgabe",
+        "offshore-netzumlage"
+      ],
+      "documents": []
+    },
+    "stromsteuer": {
+      "terms": [
+        "strompreisbestandteile"
       ],
       "documents": []
     },
@@ -4135,6 +5823,13 @@
         "/blog/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.html"
       ]
     },
+    "supraleitung": {
+      "terms": [
+        "quantenmaterialien",
+        "energieumwandlung"
+      ],
+      "documents": []
+    },
     "sustainable-finance": {
       "terms": [
         "eu-taxonomie",
@@ -4159,6 +5854,16 @@
       "journalArticles": [
         "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
       ]
+    },
+    "systemdienstleistungen": {
+      "terms": [
+        "regelenergie",
+        "frequenzhaltung",
+        "spannungshaltung",
+        "schwarzstartfaehigkeit",
+        "momentanreserve"
+      ],
+      "documents": []
     },
     "systemgrenze": {
       "terms": [
@@ -4206,6 +5911,16 @@
       ],
       "documents": []
     },
+    "systemkosten": {
+      "terms": [
+        "stromgestehungskosten",
+        "redispatch",
+        "speicher-energie",
+        "kernenergie",
+        "netzverlust"
+      ],
+      "documents": []
+    },
     "systemorientiertes-management": {
       "terms": [
         "st-galler-management-modell",
@@ -4235,6 +5950,13 @@
         "/blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html",
         "/blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html"
       ]
+    },
+    "tandem-solarzelle": {
+      "terms": [
+        "photovoltaik",
+        "perowskit-solarzelle"
+      ],
+      "documents": []
     },
     "tank-to-wheel": {
       "terms": [
@@ -4308,6 +6030,46 @@
         "taxonomiekonformitaet",
         "dnsh",
         "wesentlicher-beitrag"
+      ],
+      "documents": []
+    },
+    "technischer-kreislauf": {
+      "terms": [
+        "gebrauchsgueter",
+        "reparatur",
+        "wiederverwendung",
+        "refurbishment",
+        "remanufacturing",
+        "recycling",
+        "materialpass",
+        "digitaler-produktpass",
+        "kreislaufwirtschaft",
+        "circular-economy-butterfly-model",
+        "technischer-naehrstoff"
+      ],
+      "documents": []
+    },
+    "technischer-naehrstoff": {
+      "terms": [
+        "technischer-kreislauf",
+        "materialpass",
+        "cradle-to-cradle"
+      ],
+      "documents": []
+    },
+    "sharing": {
+      "terms": [
+        "innere-loops",
+        "plattformkapitalismus",
+        "weiterverteilung"
+      ],
+      "documents": []
+    },
+    "thermisches-kraftwerk": {
+      "terms": [
+        "fossiles-kraftwerk",
+        "kernenergie",
+        "inertia"
       ],
       "documents": []
     },
@@ -4421,10 +6183,28 @@
         "global-warming-potential",
         "emissionsfaktor",
         "carbon-budget",
+        "emissionshandel",
+        "grauer-wasserstoff",
         "klimafolgeschaeden",
         "klimaschutz",
         "klimawandel",
         "scope-1-2-3"
+      ],
+      "documents": []
+    },
+    "trickle-down-oekonomie": {
+      "terms": [
+        "kapital",
+        "kapitalwirkung",
+        "kapitalrendite",
+        "marktwirtschaft",
+        "kapitalismus",
+        "raubtierkapitalismus",
+        "finanzmarktkapitalismus",
+        "externalisierung",
+        "positive-netto-wirkung",
+        "wirkungssteuer",
+        "vertrauen"
       ],
       "documents": []
     },
@@ -4447,6 +6227,20 @@
         "transition-finance",
         "transition-plan",
         "stranded-assets"
+      ],
+      "documents": []
+    },
+    "uebertragungsnetz": {
+      "terms": [
+        "stromnetz",
+        "netzausbau"
+      ],
+      "documents": []
+    },
+    "ueberwachungskapitalismus": {
+      "terms": [
+        "plattformkapitalismus",
+        "vertrauen"
       ],
       "documents": []
     },
@@ -4490,6 +6284,20 @@
       ],
       "documents": []
     },
+    "upcycling": {
+      "terms": [
+        "recycling",
+        "werterhalt"
+      ],
+      "documents": []
+    },
+    "urban-mining": {
+      "terms": [
+        "materialpass",
+        "industrielle-dekonstruktion"
+      ],
+      "documents": []
+    },
     "value-proposition": {
       "terms": [
         "value-proposition-canvas",
@@ -4516,6 +6324,21 @@
         "komplexitaetsmanagement",
         "kybernetik",
         "stafford-beer"
+      ],
+      "documents": []
+    },
+    "vehicle-to-grid": {
+      "terms": [
+        "elektromobilitaet",
+        "batteriespeicher"
+      ],
+      "documents": []
+    },
+    "verbrauchsgueter": {
+      "terms": [
+        "biologischer-kreislauf",
+        "biologischer-naehrstoff",
+        "materialgesundheit"
       ],
       "documents": []
     },
@@ -4558,7 +6381,8 @@
         "wirkleistung",
         "scheinleistung",
         "entropie",
-        "wertschoepfung"
+        "wertschoepfung",
+        "energieumwandlung"
       ],
       "documents": []
     },
@@ -4570,22 +6394,41 @@
       ],
       "documents": []
     },
+    "verstaerkungslernen": {
+      "terms": [
+        "belohnungslernen",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": []
+    },
+    "verteilnetz": {
+      "terms": [
+        "stromnetz",
+        "prosumer"
+      ],
+      "documents": []
+    },
     "vertrauen": {
       "terms": [
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
         "anpassungskapazitaet",
+        "commons",
         "elinor-ostrom",
         "erlernte-hilflosigkeit",
         "fakten",
         "faktenargumentation",
         "gesellschaftliche-stabilitaet",
+        "informationsueberlastung",
         "kohaerenz",
         "motiviertes-denken",
         "narrativ",
         "orientierung",
         "resilienz",
+        "skandinavisches-modell",
         "systemische-kohaerenz",
+        "trickle-down-oekonomie",
+        "ueberwachungskapitalismus",
         "wahrhaftigkeit",
         "wahrheit",
         "wertewandel",
@@ -4623,6 +6466,13 @@
         "folgencheck-statt-faktencheck-democracy-intelligence",
         "wirkung-schlaegt-wahrheit"
       ]
+    },
+    "vertrautheitseffekt": {
+      "terms": [
+        "normalisierung",
+        "narrativ"
+      ],
+      "documents": []
     },
     "viabilitaet": {
       "terms": [
@@ -4689,12 +6539,36 @@
         "/blog/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.html"
       ]
     },
+    "wahrheitsillusionseffekt": {
+      "terms": [
+        "faktencheck",
+        "folgencheck"
+      ],
+      "documents": []
+    },
+    "wahrnehmung": {
+      "terms": [
+        "salienz",
+        "praediktive-verarbeitung",
+        "framing",
+        "neuropsychologische-wirkmechanismen"
+      ],
+      "documents": []
+    },
     "warenfetisch": {
       "terms": [
         "digitaler-produktpass",
         "externalisierung",
         "karl-marx",
         "entfremdung"
+      ],
+      "documents": []
+    },
+    "waermepumpe": {
+      "terms": [
+        "sektorkopplung",
+        "energieeffizienz",
+        "solarthermie"
       ],
       "documents": []
     },
@@ -4710,6 +6584,36 @@
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ]
     },
+    "wartung": {
+      "terms": [
+        "innere-loops",
+        "nutzungsdauerverlaengerung"
+      ],
+      "documents": []
+    },
+    "wasserkraft": {
+      "terms": [
+        "erneuerbare-energien"
+      ],
+      "documents": []
+    },
+    "wasserstoff": {
+      "terms": [
+        "gruener-wasserstoff",
+        "blauer-wasserstoff",
+        "grauer-wasserstoff",
+        "power-to-x",
+        "wasserstoffspeicher"
+      ],
+      "documents": []
+    },
+    "wasserstoffspeicher": {
+      "terms": [
+        "wasserstoff",
+        "langzeitspeicher"
+      ],
+      "documents": []
+    },
     "wasserstress": {
       "terms": [
         "nature-related-risks",
@@ -4721,6 +6625,13 @@
         "hochwasserrisiko",
         "humusaufbau",
         "hunger-hungerbekaempfung"
+      ],
+      "documents": []
+    },
+    "weiterverteilung": {
+      "terms": [
+        "wiederverwendung",
+        "sharing"
       ],
       "documents": []
     },
@@ -4776,6 +6687,18 @@
       ],
       "documents": []
     },
+    "werterhalt": {
+      "terms": [
+        "innere-loops",
+        "kreislaufwirkung",
+        "wiederverwendung",
+        "remanufacturing",
+        "circular-economy-butterfly-model",
+        "upcycling",
+        "kaskadennutzung"
+      ],
+      "documents": []
+    },
     "wertewandel": {
       "terms": [
         "werte",
@@ -4811,6 +6734,25 @@
       ],
       "documents": []
     },
+    "wiederverwendung": {
+      "terms": [
+        "innere-loops",
+        "werterhalt",
+        "technischer-kreislauf",
+        "weiterverteilung",
+        "refurbishment"
+      ],
+      "documents": []
+    },
+    "windenergie": {
+      "terms": [
+        "onshore-windenergie",
+        "offshore-windenergie",
+        "erneuerbare-energien",
+        "capture-price"
+      ],
+      "documents": []
+    },
     "wirkleistung": {
       "terms": [
         "scheinleistung",
@@ -4835,7 +6777,8 @@
         "ludwig-wittgenstein",
         "ernst-von-glasersfeld",
         "paul-watzlawick",
-        "lebensform"
+        "lebensform",
+        "mentales-modell"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -4975,7 +6918,9 @@
         "wirkungskompetenz",
         "wirkungsradar",
         "zielkonflikt",
-        "host-wirkungsscore"
+        "host-wirkungsscore",
+        "genossenschaftsblindheit",
+        "gemeineigentum"
       ],
       "documents": [],
       "journalArticles": [
@@ -5062,7 +7007,8 @@
         "just-transition-mechanism",
         "wirkungsfonds",
         "wirkungsrente",
-        "amartya-sen"
+        "amartya-sen",
+        "care-oekonomie"
       ],
       "documents": [
         "wp-einkommen"
@@ -5080,7 +7026,9 @@
         "wirkungspfad",
         "kundennutzen",
         "persona",
-        "impact-fit"
+        "impact-fit",
+        "stakeholder-kapitalismus",
+        "genossenschaftsblindheit"
       ],
       "documents": []
     },
@@ -5109,7 +7057,10 @@
       "terms": [
         "effizienz",
         "wirkleistung",
-        "verlustleistung"
+        "verlustleistung",
+        "nutzenergie",
+        "energieumwandlung",
+        "energieeffizienz"
       ],
       "documents": []
     },
@@ -5127,7 +7078,8 @@
         "schwellenwert",
         "immanuel-kant",
         "wertekonflikt",
-        "wirkungsethik"
+        "wirkungsethik",
+        "materialgesundheit"
       ],
       "documents": []
     },
@@ -5149,7 +7101,8 @@
         "rechte-kuenftiger-generationen",
         "wirkungsfonds",
         "bilanzraum",
-        "john-maynard-keynes"
+        "john-maynard-keynes",
+        "wohlfahrtsstaat"
       ],
       "documents": [],
       "journalArticles": [
@@ -5228,7 +7181,8 @@
         "youth-jugendbeteiligung",
         "wirkungsorientiertes-hosting",
         "unternehmerisches-lernen",
-        "lernebenen"
+        "lernebenen",
+        "neuroplastizitaet"
       ],
       "documents": [
         "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
@@ -5398,7 +7352,10 @@
         "beschwerdemechanismus-access-to-remedy",
         "social-credit",
         "zielkonflikt",
-        "kybernetik-zweiter-ordnung"
+        "kybernetik-zweiter-ordnung",
+        "demokratischer-sozialismus",
+        "dezentralisierung",
+        "dezentralisierung-von-macht"
       ],
       "documents": [
         "wirkungsrat-konzept"
@@ -5470,6 +7427,8 @@
         "nachhaltigkeit",
         "regeneration",
         "resilienz",
+        "schwarzstartfaehigkeit",
+        "stressreaktion",
         "systemischer-wert",
         "viabilitaet",
         "zukunftsfaehigkeit"
@@ -5530,6 +7489,7 @@
         "wirkungsarchitektur",
         "wirkungslenkung",
         "fuenftes-p-planet",
+        "erweiterte-herstellerverantwortung",
         "esg",
         "gewinn-als-test",
         "hebelpunkt",
@@ -5537,9 +7497,11 @@
         "nachhaltigkeit",
         "steuerungsdaten",
         "sustainable-finance",
+        "verstaerkungslernen",
         "wirkungsfonds",
         "wirkungshaushalt",
-        "wirkungssteuer"
+        "wirkungssteuer",
+        "zentralverwaltungswirtschaft"
       ],
       "documents": [],
       "journalArticles": [
@@ -5577,7 +7539,11 @@
         "wirkungssteuergesetz",
         "wirkungsumsatzsteuer",
         "karl-polanyi",
-        "john-maynard-keynes"
+        "john-maynard-keynes",
+        "marktwirtschaft",
+        "gruener-kapitalismus",
+        "zentralverwaltungswirtschaft",
+        "trickle-down-oekonomie"
       ],
       "documents": [
         "wstg-oktober-2025",
@@ -5657,6 +7623,8 @@
         "bedeutung-als-gebrauch",
         "faktenargumentation",
         "friedrich-hayek",
+        "marktwirtschaft",
+        "ordoliberalismus",
         "social-credit",
         "wirkungsdatenraum",
         "wirkungsrat"
@@ -5677,7 +7645,8 @@
         "gebrauchswert",
         "tauschwert",
         "wertschoepfung",
-        "mehrwert"
+        "mehrwert",
+        "stakeholder-kapitalismus"
       ],
       "documents": []
     },
@@ -5685,7 +7654,8 @@
       "terms": [
         "wertschoepfung",
         "wirkungswert",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "sorgearbeit"
       ],
       "documents": []
     },
@@ -5699,6 +7669,15 @@
       "documents": [
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
       ]
+    },
+    "wohlfahrtsstaat": {
+      "terms": [
+        "skandinavisches-modell",
+        "soziale-marktwirtschaft",
+        "daseinsvorsorge",
+        "wirkungshaushalt"
+      ],
+      "documents": []
     },
     "wohnwirkung": {
       "terms": [
@@ -5740,7 +7719,8 @@
       "terms": [
         "wirkungssteuergesetz",
         "wirkungssteuer",
-        "wustg"
+        "wustg",
+        "soziale-marktwirtschaft"
       ],
       "documents": [
         "wstg-oktober-2025"
@@ -5795,6 +7775,15 @@
       ],
       "documents": []
     },
+    "zentralverwaltungswirtschaft": {
+      "terms": [
+        "planwirtschaft",
+        "wirkungsrueckkopplung",
+        "wirkungssteuer",
+        "staatssozialismus"
+      ],
+      "documents": []
+    },
     "zielkonflikt": {
       "terms": [
         "wirkungsbewertung",
@@ -5802,6 +7791,13 @@
         "wirkungsgrenze",
         "nichtkompensationsprinzip",
         "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "zirkulaeres-geschaeftsmodell": {
+      "terms": [
+        "product-as-a-service",
+        "ruecknahmesystem"
       ],
       "documents": []
     },
