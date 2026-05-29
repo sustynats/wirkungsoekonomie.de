@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T18:55:54.540Z",
+  "generatedAt": "2026-05-29T19:06:29.269Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -85,7 +85,8 @@
         "redispatch",
         "erneuerbare-energien",
         "netzengpass",
-        "einspeisemanagement"
+        "einspeisemanagement",
+        "redispatch-2-0"
       ]
     },
     "ac-laden": {
@@ -589,7 +590,9 @@
         "gesicherte-leistung",
         "dunkelflaute",
         "kapazitaetsmarkt",
-        "residuallast"
+        "residuallast",
+        "versorgungssicherheit",
+        "reservekraftwerk"
       ]
     },
     "bandluecke": {
@@ -833,7 +836,8 @@
         "quantenbatterie",
         "vehicle-to-grid",
         "elektromobilitaet",
-        "stationaerer-batteriespeicher"
+        "stationaerer-batteriespeicher",
+        "regelenergiemarkt"
       ]
     },
     "batteriezelle": {
@@ -1283,6 +1287,26 @@
         "wirkleistung",
         "verlustleistung",
         "leistungsfaktor"
+      ]
+    },
+    "buergerenergie": {
+      "label": "Bürgerenergie",
+      "slug": "buergerenergie",
+      "url": "/begriffe/buergerenergie/",
+      "hoverDefinition": "Bürgerenergie beschreibt Energieprojekte, an denen Bürger:innen finanziell, organisatorisch oder demokratisch beteiligt sind.",
+      "shortDefinition": "Bürgerenergie beschreibt Energieprojekte, an denen Bürger:innen finanziell, organisatorisch oder demokratisch beteiligt sind.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Bürgerenergie",
+        "Bürger:innenenergie"
+      ],
+      "relatedTerms": [
+        "energieautonomie",
+        "energiegemeinschaft",
+        "genossenschaft",
+        "stadtwerke",
+        "energiewirtschaft",
+        "kommunale-energie"
       ]
     },
     "business-model": {
@@ -1836,7 +1860,8 @@
       "relatedTerms": [
         "wirkungshaushalt",
         "skandinavisches-modell",
-        "wohlfahrtsstaat"
+        "wohlfahrtsstaat",
+        "stadtwerke"
       ]
     },
     "datenluecke": {
@@ -1936,7 +1961,8 @@
         "dynamischer-stromtarif",
         "netzdienlichkeit",
         "flexibilitaet-energiesystem",
-        "spitzenlast"
+        "spitzenlast",
+        "flexibilitaetsmarkt"
       ]
     },
     "demokratischer-sozialismus": {
@@ -2058,7 +2084,8 @@
         "commons",
         "wirkungsrat",
         "genossenschaft",
-        "machtkonzentration"
+        "machtkonzentration",
+        "energiegemeinschaft"
       ]
     },
     "dezentralisierung-von-macht": {
@@ -2266,7 +2293,8 @@
       "relatedTerms": [
         "residuallast",
         "langzeitspeicher",
-        "backup-kapazitaet"
+        "backup-kapazitaet",
+        "versorgungssicherheit"
       ]
     },
     "dynamischer-stromtarif": {
@@ -2283,7 +2311,8 @@
         "demand-response",
         "smart-meter",
         "messstellenbetrieb",
-        "smart-charging"
+        "smart-charging",
+        "smart-meter-gateway"
       ]
     },
     "dynamisches-lastmanagement": {
@@ -2406,6 +2435,24 @@
         "ladepunktbetreiber",
         "ad-hoc-laden",
         "plug-and-charge"
+      ]
+    },
+    "eigenversorgung": {
+      "label": "Eigenversorgung",
+      "slug": "eigenversorgung",
+      "url": "/begriffe/eigenversorgung/",
+      "hoverDefinition": "Eigenversorgung beschreibt die Nutzung selbst erzeugter Energie durch dieselbe Person, Organisation oder Anlage.",
+      "shortDefinition": "Eigenversorgung beschreibt die Nutzung selbst erzeugter Energie durch dieselbe Person, Organisation oder Anlage.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Eigenversorgung"
+      ],
+      "relatedTerms": [
+        "prosumer",
+        "energieautonomie",
+        "heimspeicher",
+        "mieterstrom",
+        "energiegemeinschaft"
       ]
     },
     "einspeisemanagement": {
@@ -2608,7 +2655,8 @@
       "relatedTerms": [
         "primaerenergie",
         "endenergie",
-        "nutzenergie"
+        "nutzenergie",
+        "energiewirtschaft"
       ]
     },
     "energiearmut": {
@@ -2631,7 +2679,27 @@
         "wirkungssteuer",
         "wirkungshaushalt",
         "wohnwirkung",
-        "warmmietenneutralitaet"
+        "warmmietenneutralitaet",
+        "energiewirtschaft"
+      ]
+    },
+    "energieautonomie": {
+      "label": "Energieautonomie",
+      "slug": "energieautonomie",
+      "url": "/begriffe/energieautonomie/",
+      "hoverDefinition": "Energieautonomie beschreibt die Fähigkeit eines Haushalts, Unternehmens, einer Kommune oder Volkswirtschaft, Energie unabhängiger und kontrollierbarer bereitzustellen.",
+      "shortDefinition": "Energieautonomie beschreibt die Fähigkeit eines Haushalts, Unternehmens, einer Kommune oder Volkswirtschaft, Energie unabhängiger und kontrollierbarer bereitzustellen.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energieautonomie"
+      ],
+      "relatedTerms": [
+        "buergerenergie",
+        "kommunale-energie",
+        "prosumer",
+        "eigenversorgung",
+        "energiewirtschaft",
+        "energiesicherheit"
       ]
     },
     "energiedichte": {
@@ -2667,6 +2735,42 @@
         "waermepumpe"
       ]
     },
+    "energiegemeinschaft": {
+      "label": "Energiegemeinschaft",
+      "slug": "energiegemeinschaft",
+      "url": "/begriffe/energiegemeinschaft/",
+      "hoverDefinition": "Eine Energiegemeinschaft organisiert gemeinschaftliche Erzeugung, Nutzung, Speicherung oder Verteilung von Energie.",
+      "shortDefinition": "Eine Energiegemeinschaft organisiert gemeinschaftliche Erzeugung, Nutzung, Speicherung oder Verteilung von Energie.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energiegemeinschaft",
+        "Energy Community"
+      ],
+      "relatedTerms": [
+        "buergerenergie",
+        "eigenversorgung",
+        "prosumer",
+        "dezentralisierung"
+      ]
+    },
+    "energieinfrastruktur": {
+      "label": "Energieinfrastruktur",
+      "slug": "energieinfrastruktur",
+      "url": "/begriffe/energieinfrastruktur/",
+      "hoverDefinition": "Energieinfrastruktur umfasst Anlagen, Netze, Speicher, Messsysteme, Leitungen, Plattformen und Regeln, die Energie bereitstellen und nutzbar machen.",
+      "shortDefinition": "Energieinfrastruktur umfasst Anlagen, Netze, Speicher, Messsysteme, Leitungen, Plattformen und Regeln, die Energie bereitstellen und nutzbar machen.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energieinfrastruktur"
+      ],
+      "relatedTerms": [
+        "kritische-energieinfrastruktur",
+        "stromnetz",
+        "speicher-energie",
+        "smart-grid",
+        "ladeinfrastruktur"
+      ]
+    },
     "energiemanagementsystem": {
       "label": "Energiemanagementsystem / EMS",
       "slug": "energiemanagementsystem",
@@ -2681,6 +2785,22 @@
       "relatedTerms": [
         "smart-charging",
         "stationaerer-batteriespeicher"
+      ]
+    },
+    "energiesicherheit": {
+      "label": "Energiesicherheit",
+      "slug": "energiesicherheit",
+      "url": "/begriffe/energiesicherheit/",
+      "hoverDefinition": "Energiesicherheit beschreibt die Fähigkeit eines Energiesystems, Energieversorgung gegen technische, ökonomische, geopolitische oder klimatische Störungen abzusichern.",
+      "shortDefinition": "Energiesicherheit beschreibt die Fähigkeit eines Energiesystems, Energieversorgung gegen technische, ökonomische, geopolitische oder klimatische Störungen abzusichern.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energiesicherheit"
+      ],
+      "relatedTerms": [
+        "versorgungssicherheit",
+        "kritische-energieinfrastruktur",
+        "energieautonomie"
       ]
     },
     "energieumwandlung": {
@@ -2699,6 +2819,48 @@
         "photoelektrischer-effekt",
         "supraleitung",
         "primaerenergie"
+      ]
+    },
+    "energiewirtschaft": {
+      "label": "Energiewirtschaft",
+      "slug": "energiewirtschaft",
+      "url": "/begriffe/energiewirtschaft/",
+      "hoverDefinition": "Energiewirtschaft umfasst Erzeugung, Umwandlung, Speicherung, Transport, Verteilung, Handel, Nutzung und Regulierung von Energie.",
+      "shortDefinition": "Energiewirtschaft umfasst Erzeugung, Umwandlung, Speicherung, Transport, Verteilung, Handel, Nutzung und Regulierung von Energie.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energiewirtschaft"
+      ],
+      "relatedTerms": [
+        "energie",
+        "strommarkt",
+        "erneuerbare-energien",
+        "fossiles-kraftwerk",
+        "stromgestehungskosten",
+        "systemkosten",
+        "netzentgelt",
+        "energiearmut",
+        "energieautonomie",
+        "buergerenergie",
+        "versorgungssicherheit",
+        "energiewirtschaftsgesetz"
+      ]
+    },
+    "energiewirtschaftsgesetz": {
+      "label": "Energiewirtschaftsgesetz / EnWG",
+      "slug": "energiewirtschaftsgesetz",
+      "url": "/begriffe/energiewirtschaftsgesetz/",
+      "hoverDefinition": "Das Energiewirtschaftsgesetz regelt zentrale Grundlagen der leitungsgebundenen Energieversorgung in Deutschland.",
+      "shortDefinition": "Das Energiewirtschaftsgesetz regelt zentrale Grundlagen der leitungsgebundenen Energieversorgung in Deutschland.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energiewirtschaftsgesetz / EnWG",
+        "EnWG"
+      ],
+      "relatedTerms": [
+        "energiewirtschaft",
+        "strommarkt",
+        "netzanschluss"
       ]
     },
     "energy-only-markt": {
@@ -2876,7 +3038,8 @@
         "geothermie",
         "solarthermie",
         "abregelung",
-        "gruenstrom"
+        "gruenstrom",
+        "energiewirtschaft"
       ]
     },
     "ernst-von-glasersfeld": {
@@ -3502,6 +3665,23 @@
         "netzdienlichkeit"
       ]
     },
+    "flexibilitaetsmarkt": {
+      "label": "Flexibilitätsmarkt",
+      "slug": "flexibilitaetsmarkt",
+      "url": "/begriffe/flexibilitaetsmarkt/",
+      "hoverDefinition": "Ein Flexibilitätsmarkt organisiert die Bereitstellung oder Vergütung flexibler Erzeugung, Speicherung oder Verbrauchsverschiebung.",
+      "shortDefinition": "Ein Flexibilitätsmarkt organisiert die Bereitstellung oder Vergütung flexibler Erzeugung, Speicherung oder Verbrauchsverschiebung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Flexibilitätsmarkt"
+      ],
+      "relatedTerms": [
+        "demand-response",
+        "lastmanagement",
+        "speicher-energie",
+        "netzdienlichkeit"
+      ]
+    },
     "folgencheck": {
       "label": "Folgencheck",
       "slug": "folgencheck",
@@ -3596,7 +3776,8 @@
         "kohlekraftwerk",
         "gaskraftwerk",
         "oelkraftwerk",
-        "thermisches-kraftwerk"
+        "thermisches-kraftwerk",
+        "energiewirtschaft"
       ]
     },
     "framing": {
@@ -3807,7 +3988,8 @@
         "genossenschaftsblindheit",
         "commons",
         "gemeineigentum",
-        "dezentralisierung"
+        "dezentralisierung",
+        "buergerenergie"
       ]
     },
     "genossenschaftsblindheit": {
@@ -3897,7 +4079,10 @@
       "relatedTerms": [
         "kapazitaetsmarkt",
         "backup-kapazitaet",
-        "grundlast"
+        "grundlast",
+        "versorgungssicherheit",
+        "reservekraftwerk",
+        "kapazitaetsreserve"
       ]
     },
     "gesundheitsgerechtigkeit": {
@@ -4701,7 +4886,8 @@
       "relatedTerms": [
         "prosumer",
         "stationaerer-batteriespeicher",
-        "vehicle-to-home"
+        "vehicle-to-home",
+        "eigenversorgung"
       ]
     },
     "heinz-von-foerster": {
@@ -4882,7 +5068,8 @@
       "relatedTerms": [
         "mittelspannung",
         "hoechstspannung",
-        "umspannwerk"
+        "umspannwerk",
+        "netzebene"
       ]
     },
     "hoechstspannung": {
@@ -4897,7 +5084,8 @@
       ],
       "relatedTerms": [
         "hochspannung",
-        "uebertragungsnetz"
+        "uebertragungsnetz",
+        "netzebene"
       ]
     },
     "hochwasserrisiko": {
@@ -5749,7 +5937,25 @@
         "backup-kapazitaet",
         "strommarktdesign",
         "energy-only-markt",
-        "contracts-for-difference"
+        "contracts-for-difference",
+        "kapazitaetsreserve"
+      ]
+    },
+    "kapazitaetsreserve": {
+      "label": "Kapazitätsreserve",
+      "slug": "kapazitaetsreserve",
+      "url": "/begriffe/kapazitaetsreserve/",
+      "hoverDefinition": "Eine Kapazitätsreserve hält gesicherte Leistung außerhalb des regulären Strommarkts für besondere Knappheitssituationen vor.",
+      "shortDefinition": "Eine Kapazitätsreserve hält gesicherte Leistung außerhalb des regulären Strommarkts für besondere Knappheitssituationen vor.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Kapazitätsreserve"
+      ],
+      "relatedTerms": [
+        "kapazitaetsmarkt",
+        "reservekraftwerk",
+        "gesicherte-leistung",
+        "strategische-reserve"
       ]
     },
     "kapital": {
@@ -6207,6 +6413,24 @@
         "klimafolgeschaeden"
       ]
     },
+    "kommunale-energie": {
+      "label": "Kommunale Energie",
+      "slug": "kommunale-energie",
+      "url": "/begriffe/kommunale-energie/",
+      "hoverDefinition": "Kommunale Energie beschreibt Energieversorgung, Erzeugung, Netze, Wärmeplanung, Speicher und Beteiligung auf kommunaler Ebene.",
+      "shortDefinition": "Kommunale Energie beschreibt Energieversorgung, Erzeugung, Netze, Wärmeplanung, Speicher und Beteiligung auf kommunaler Ebene.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Kommunale Energie"
+      ],
+      "relatedTerms": [
+        "stadtwerke",
+        "buergerenergie",
+        "quartiersenergie",
+        "mieterstrom",
+        "energieautonomie"
+      ]
+    },
     "kommunismus": {
       "label": "Kommunismus",
       "slug": "kommunismus",
@@ -6361,6 +6585,23 @@
         "wirkungsrisiko"
       ]
     },
+    "kraft-waerme-kopplung": {
+      "label": "Kraft-Wärme-Kopplung",
+      "slug": "kraft-waerme-kopplung",
+      "url": "/begriffe/kraft-waerme-kopplung/",
+      "hoverDefinition": "Kraft-Wärme-Kopplung erzeugt Strom und nutzbare Wärme gemeinsam.",
+      "shortDefinition": "Kraft-Wärme-Kopplung erzeugt Strom und nutzbare Wärme gemeinsam.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Kraft-Wärme-Kopplung",
+        "KWK"
+      ],
+      "relatedTerms": [
+        "thermisches-kraftwerk",
+        "waermespeicher",
+        "sektorkopplung"
+      ]
+    },
     "kreative-rekonstruktion": {
       "label": "Kreative Rekonstruktion",
       "slug": "kreative-rekonstruktion",
@@ -6474,6 +6715,23 @@
         "abfallhierarchie",
         "zero-waste",
         "kreislaufwirkung"
+      ]
+    },
+    "kritische-energieinfrastruktur": {
+      "label": "Kritische Energieinfrastruktur",
+      "slug": "kritische-energieinfrastruktur",
+      "url": "/begriffe/kritische-energieinfrastruktur/",
+      "hoverDefinition": "Kritische Energieinfrastruktur umfasst Energieanlagen und -systeme, deren Ausfall erhebliche Folgen für Gesellschaft, Wirtschaft, Gesundheit oder Staat hätte.",
+      "shortDefinition": "Kritische Energieinfrastruktur umfasst Energieanlagen und -systeme, deren Ausfall erhebliche Folgen für Gesellschaft, Wirtschaft, Gesundheit oder Staat hätte.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Kritische Energieinfrastruktur"
+      ],
+      "relatedTerms": [
+        "energieinfrastruktur",
+        "versorgungssicherheit",
+        "wirkungsresilienz",
+        "energiesicherheit"
       ]
     },
     "kritische-rohstoffe": {
@@ -6631,7 +6889,8 @@
         "dc-laden",
         "hpc-charger",
         "ladesaeule",
-        "ladepunktbetreiber"
+        "ladepunktbetreiber",
+        "energieinfrastruktur"
       ]
     },
     "ladeleistung": {
@@ -6790,7 +7049,8 @@
       "relatedTerms": [
         "demand-response",
         "lastgang",
-        "dynamisches-lastmanagement"
+        "dynamisches-lastmanagement",
+        "flexibilitaetsmarkt"
       ]
     },
     "lca": {
@@ -7476,7 +7736,8 @@
       ],
       "relatedTerms": [
         "smart-meter",
-        "dynamischer-stromtarif"
+        "dynamischer-stromtarif",
+        "smart-meter-gateway"
       ]
     },
     "messwandler": {
@@ -7551,6 +7812,24 @@
         "gregory-bateson"
       ]
     },
+    "mieterstrom": {
+      "label": "Mieterstrom",
+      "slug": "mieterstrom",
+      "url": "/begriffe/mieterstrom/",
+      "hoverDefinition": "Mieterstrom beschreibt Strom, der nahe an Mietgebäuden erzeugt und direkt an Bewohner:innen geliefert wird.",
+      "shortDefinition": "Mieterstrom beschreibt Strom, der nahe an Mietgebäuden erzeugt und direkt an Bewohner:innen geliefert wird.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Mieterstrom"
+      ],
+      "relatedTerms": [
+        "quartiersenergie",
+        "eigenversorgung",
+        "prosumer",
+        "stadtwerke",
+        "kommunale-energie"
+      ]
+    },
     "mindestschutz-minimum-safeguards": {
       "label": "Mindestschutz / Minimum Safeguards",
       "slug": "mindestschutz-minimum-safeguards",
@@ -7608,7 +7887,8 @@
         "umspannstation",
         "uebergabestation",
         "mittelspannungsschaltanlage",
-        "tar-mittelspannung"
+        "tar-mittelspannung",
+        "netzebene"
       ]
     },
     "mittelspannungsschaltanlage": {
@@ -8025,7 +8305,9 @@
       ],
       "relatedTerms": [
         "stromnetz",
-        "netzausbau"
+        "netzausbau",
+        "netzebene",
+        "energiewirtschaftsgesetz"
       ]
     },
     "netzanschlussbegehren": {
@@ -8111,7 +8393,26 @@
         "demand-response",
         "flexibilitaet-energiesystem",
         "netzentgeltsystematik",
-        "netzspeicher"
+        "netzspeicher",
+        "flexibilitaetsmarkt"
+      ]
+    },
+    "netzebene": {
+      "label": "Netzebene",
+      "slug": "netzebene",
+      "url": "/begriffe/netzebene/",
+      "hoverDefinition": "Netzebenen unterscheiden Spannungsebenen im Stromnetz, etwa Niederspannung, Mittelspannung, Hochspannung und Höchstspannung.",
+      "shortDefinition": "Netzebenen unterscheiden Spannungsebenen im Stromnetz, etwa Niederspannung, Mittelspannung, Hochspannung und Höchstspannung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Netzebene"
+      ],
+      "relatedTerms": [
+        "niederspannung",
+        "mittelspannung",
+        "hochspannung",
+        "hoechstspannung",
+        "netzanschluss"
       ]
     },
     "netzengpass": {
@@ -8127,7 +8428,8 @@
       "relatedTerms": [
         "redispatch",
         "abregelung",
-        "netzausbau"
+        "netzausbau",
+        "netzreserve"
       ]
     },
     "netzentgelt": {
@@ -8143,7 +8445,9 @@
       "relatedTerms": [
         "netzentgeltsystematik",
         "strompreisbestandteile",
-        "prosumer"
+        "prosumer",
+        "energiewirtschaft",
+        "stromnev"
       ]
     },
     "netzentgeltsystematik": {
@@ -8158,7 +8462,24 @@
       ],
       "relatedTerms": [
         "netzentgelt",
-        "netzdienlichkeit"
+        "netzdienlichkeit",
+        "stromnev"
+      ]
+    },
+    "netzreserve": {
+      "label": "Netzreserve",
+      "slug": "netzreserve",
+      "url": "/begriffe/netzreserve/",
+      "hoverDefinition": "Die Netzreserve hält Anlagen bereit, um Netzstabilität und Versorgungssicherheit in besonderen Situationen zu unterstützen.",
+      "shortDefinition": "Die Netzreserve hält Anlagen bereit, um Netzstabilität und Versorgungssicherheit in besonderen Situationen zu unterstützen.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Netzreserve"
+      ],
+      "relatedTerms": [
+        "reservekraftwerk",
+        "netzengpass",
+        "redispatch"
       ]
     },
     "netzspeicher": {
@@ -8388,7 +8709,8 @@
       "relatedTerms": [
         "mittelspannung",
         "verteilnetz",
-        "niederspannungshauptverteilung"
+        "niederspannungshauptverteilung",
+        "netzebene"
       ]
     },
     "niederspannungshauptverteilung": {
@@ -9593,7 +9915,11 @@
         "photovoltaik",
         "netzentgelt",
         "verteilnetz",
-        "heimspeicher"
+        "heimspeicher",
+        "energieautonomie",
+        "energiegemeinschaft",
+        "mieterstrom",
+        "eigenversorgung"
       ]
     },
     "prozessdenken": {
@@ -9800,6 +10126,23 @@
       "relatedTerms": [
         "quantenphysik",
         "quantensimulation"
+      ]
+    },
+    "quartiersenergie": {
+      "label": "Quartiersenergie",
+      "slug": "quartiersenergie",
+      "url": "/begriffe/quartiersenergie/",
+      "hoverDefinition": "Quartiersenergie betrachtet Erzeugung, Speicher, Wärme, Strom, Mobilität und Verbrauch in einem räumlichen Quartier.",
+      "shortDefinition": "Quartiersenergie betrachtet Erzeugung, Speicher, Wärme, Strom, Mobilität und Verbrauch in einem räumlichen Quartier.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Quartiersenergie"
+      ],
+      "relatedTerms": [
+        "kommunale-energie",
+        "mieterstrom",
+        "waermepumpe",
+        "waermespeicher"
       ]
     },
     "quartierswirkung": {
@@ -10023,7 +10366,25 @@
         "netzengpass",
         "abregelung",
         "systemkosten",
-        "einspeisemanagement"
+        "einspeisemanagement",
+        "redispatch-2-0",
+        "netzreserve"
+      ]
+    },
+    "redispatch-2-0": {
+      "label": "Redispatch 2.0",
+      "slug": "redispatch-2-0",
+      "url": "/begriffe/redispatch-2-0/",
+      "hoverDefinition": "Redispatch 2.0 erweitert das Netzengpassmanagement auf weitere Erzeugungs- und Speicheranlagen im Verteilnetz.",
+      "shortDefinition": "Redispatch 2.0 erweitert das Netzengpassmanagement auf weitere Erzeugungs- und Speicheranlagen im Verteilnetz.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Redispatch 2.0"
+      ],
+      "relatedTerms": [
+        "redispatch",
+        "verteilnetz",
+        "abregelung"
       ]
     },
     "redox-flow-batterie": {
@@ -10102,7 +10463,24 @@
         "primaerregelung",
         "sekundaerregelung",
         "minutenreserve",
-        "kurzzeitspeicher"
+        "kurzzeitspeicher",
+        "regelenergiemarkt"
+      ]
+    },
+    "regelenergiemarkt": {
+      "label": "Regelenergiemarkt",
+      "slug": "regelenergiemarkt",
+      "url": "/begriffe/regelenergiemarkt/",
+      "hoverDefinition": "Der Regelenergiemarkt organisiert Beschaffung und Vergütung von Regelenergie zur Stabilisierung des Stromsystems.",
+      "shortDefinition": "Der Regelenergiemarkt organisiert Beschaffung und Vergütung von Regelenergie zur Stabilisierung des Stromsystems.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Regelenergiemarkt"
+      ],
+      "relatedTerms": [
+        "regelenergie",
+        "systemdienstleistungen",
+        "batteriespeicher"
       ]
     },
     "regeneration": {
@@ -10318,6 +10696,24 @@
         "care-oekonomie",
         "sorgearbeit",
         "feministische-oekonomie"
+      ]
+    },
+    "reservekraftwerk": {
+      "label": "Reservekraftwerk",
+      "slug": "reservekraftwerk",
+      "url": "/begriffe/reservekraftwerk/",
+      "hoverDefinition": "Ein Reservekraftwerk steht bereit, um Strom in Engpass-, Krisen- oder Knappheitssituationen zu erzeugen.",
+      "shortDefinition": "Ein Reservekraftwerk steht bereit, um Strom in Engpass-, Krisen- oder Knappheitssituationen zu erzeugen.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Reservekraftwerk"
+      ],
+      "relatedTerms": [
+        "backup-kapazitaet",
+        "netzreserve",
+        "strategische-reserve",
+        "gesicherte-leistung",
+        "kapazitaetsreserve"
       ]
     },
     "residual-emissions": {
@@ -11362,7 +11758,9 @@
       "relatedTerms": [
         "waermepumpe",
         "elektromobilitaet",
-        "power-to-x"
+        "power-to-x",
+        "kraft-waerme-kopplung",
+        "waermespeicher"
       ]
     },
     "sekundaerregelung": {
@@ -11566,7 +11964,8 @@
       "relatedTerms": [
         "stromnetz",
         "smart-meter",
-        "fernwirktechnik"
+        "fernwirktechnik",
+        "energieinfrastruktur"
       ]
     },
     "smart-meter": {
@@ -11582,7 +11981,24 @@
       "relatedTerms": [
         "messstellenbetrieb",
         "dynamischer-stromtarif",
-        "smart-grid"
+        "smart-grid",
+        "smart-meter-gateway"
+      ]
+    },
+    "smart-meter-gateway": {
+      "label": "Smart Meter Gateway",
+      "slug": "smart-meter-gateway",
+      "url": "/begriffe/smart-meter-gateway/",
+      "hoverDefinition": "Ein Smart Meter Gateway ist die sichere Kommunikationseinheit eines intelligenten Messsystems.",
+      "shortDefinition": "Ein Smart Meter Gateway ist die sichere Kommunikationseinheit eines intelligenten Messsystems.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Smart Meter Gateway"
+      ],
+      "relatedTerms": [
+        "smart-meter",
+        "messstellenbetrieb",
+        "dynamischer-stromtarif"
       ]
     },
     "social-credit": {
@@ -11653,7 +12069,8 @@
       ],
       "relatedTerms": [
         "erneuerbare-energien",
-        "waermepumpe"
+        "waermepumpe",
+        "waermespeicher"
       ]
     },
     "sorgearbeit": {
@@ -11764,7 +12181,9 @@
         "flexibilitaet-energiesystem",
         "batterie",
         "redox-flow-batterie",
-        "superkondensator"
+        "superkondensator",
+        "energieinfrastruktur",
+        "flexibilitaetsmarkt"
       ]
     },
     "spekulationslogik": {
@@ -11867,6 +12286,23 @@
         "nichttriviales-system",
         "staatskapitalismus",
         "kommunismus"
+      ]
+    },
+    "stadtwerke": {
+      "label": "Stadtwerke",
+      "slug": "stadtwerke",
+      "url": "/begriffe/stadtwerke/",
+      "hoverDefinition": "Stadtwerke sind kommunal geprägte Versorgungsunternehmen, die häufig Strom, Wärme, Wasser, Verkehr oder digitale Infrastruktur betreiben.",
+      "shortDefinition": "Stadtwerke sind kommunal geprägte Versorgungsunternehmen, die häufig Strom, Wärme, Wasser, Verkehr oder digitale Infrastruktur betreiben.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Stadtwerke"
+      ],
+      "relatedTerms": [
+        "kommunale-energie",
+        "daseinsvorsorge",
+        "mieterstrom",
+        "buergerenergie"
       ]
     },
     "stafford-beer": {
@@ -12039,6 +12475,22 @@
         "wix-vi"
       ]
     },
+    "strategische-reserve": {
+      "label": "Strategische Reserve",
+      "slug": "strategische-reserve",
+      "url": "/begriffe/strategische-reserve/",
+      "hoverDefinition": "Eine strategische Reserve hält Kraftwerks- oder Speicherleistung für außergewöhnliche Versorgungssituationen vor.",
+      "shortDefinition": "Eine strategische Reserve hält Kraftwerks- oder Speicherleistung für außergewöhnliche Versorgungssituationen vor.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Strategische Reserve"
+      ],
+      "relatedTerms": [
+        "kapazitaetsreserve",
+        "reservekraftwerk",
+        "versorgungssicherheit"
+      ]
+    },
     "strategisches-management": {
       "label": "Strategisches Management",
       "slug": "strategisches-management",
@@ -12086,7 +12538,8 @@
       ],
       "relatedTerms": [
         "systemkosten",
-        "strommarkt"
+        "strommarkt",
+        "energiewirtschaft"
       ]
     },
     "strommarkt": {
@@ -12104,7 +12557,9 @@
         "merit-order",
         "photovoltaik",
         "grenzkraftwerk",
-        "stromgestehungskosten"
+        "stromgestehungskosten",
+        "energiewirtschaft",
+        "energiewirtschaftsgesetz"
       ]
     },
     "strommarktdesign": {
@@ -12141,7 +12596,24 @@
         "netzanschluss",
         "netzausbau",
         "netzverlust",
-        "smart-grid"
+        "smart-grid",
+        "energieinfrastruktur"
+      ]
+    },
+    "stromnev": {
+      "label": "StromNEV",
+      "slug": "stromnev",
+      "url": "/begriffe/stromnev/",
+      "hoverDefinition": "Die Stromnetzentgeltverordnung regelt Grundsätze zur Ermittlung von Netzentgelten im Strombereich.",
+      "shortDefinition": "Die Stromnetzentgeltverordnung regelt Grundsätze zur Ermittlung von Netzentgelten im Strombereich.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "StromNEV",
+        "Stromnetzentgeltverordnung"
+      ],
+      "relatedTerms": [
+        "netzentgelt",
+        "netzentgeltsystematik"
       ]
     },
     "strompreisbestandteile": {
@@ -12345,7 +12817,8 @@
         "frequenzhaltung",
         "spannungshaltung",
         "schwarzstartfaehigkeit",
-        "momentanreserve"
+        "momentanreserve",
+        "regelenergiemarkt"
       ]
     },
     "systemgrenze": {
@@ -12432,7 +12905,8 @@
         "speicher-energie",
         "kernenergie",
         "netzverlust",
-        "netzspeicher"
+        "netzspeicher",
+        "energiewirtschaft"
       ]
     },
     "systemorientiertes-management": {
@@ -12777,7 +13251,8 @@
       "relatedTerms": [
         "fossiles-kraftwerk",
         "kernenergie",
-        "inertia"
+        "inertia",
+        "kraft-waerme-kopplung"
       ]
     },
     "thg-emissions-scopes": {
@@ -13494,6 +13969,27 @@
         "health-impact-assessment"
       ]
     },
+    "versorgungssicherheit": {
+      "label": "Versorgungssicherheit",
+      "slug": "versorgungssicherheit",
+      "url": "/begriffe/versorgungssicherheit/",
+      "hoverDefinition": "Versorgungssicherheit beschreibt die verlässliche Verfügbarkeit von Energie in ausreichender Menge, Qualität und Zeit.",
+      "shortDefinition": "Versorgungssicherheit beschreibt die verlässliche Verfügbarkeit von Energie in ausreichender Menge, Qualität und Zeit.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Versorgungssicherheit"
+      ],
+      "relatedTerms": [
+        "energiesicherheit",
+        "gesicherte-leistung",
+        "backup-kapazitaet",
+        "dunkelflaute",
+        "wirkungsresilienz",
+        "energiewirtschaft",
+        "kritische-energieinfrastruktur",
+        "strategische-reserve"
+      ]
+    },
     "verstaerkungslernen": {
       "label": "Verstärkungslernen",
       "slug": "verstaerkungslernen",
@@ -13522,7 +14018,8 @@
       "relatedTerms": [
         "stromnetz",
         "prosumer",
-        "niederspannung"
+        "niederspannung",
+        "redispatch-2-0"
       ]
     },
     "vertrauen": {
@@ -13811,7 +14308,27 @@
       "relatedTerms": [
         "sektorkopplung",
         "energieeffizienz",
-        "solarthermie"
+        "solarthermie",
+        "quartiersenergie",
+        "waermespeicher"
+      ]
+    },
+    "waermespeicher": {
+      "label": "Wärmespeicher",
+      "slug": "waermespeicher",
+      "url": "/begriffe/waermespeicher/",
+      "hoverDefinition": "Ein Wärmespeicher nimmt Wärme auf und stellt sie zeitversetzt wieder bereit.",
+      "shortDefinition": "Ein Wärmespeicher nimmt Wärme auf und stellt sie zeitversetzt wieder bereit.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Wärmespeicher"
+      ],
+      "relatedTerms": [
+        "solarthermie",
+        "waermepumpe",
+        "quartiersenergie",
+        "sektorkopplung",
+        "kraft-waerme-kopplung"
       ]
     },
     "warmmietenneutralitaet": {
@@ -15150,7 +15667,9 @@
         "stressreaktion",
         "systemischer-wert",
         "viabilitaet",
-        "zukunftsfaehigkeit"
+        "zukunftsfaehigkeit",
+        "versorgungssicherheit",
+        "kritische-energieinfrastruktur"
       ]
     },
     "wirkungsrisiko": {

@@ -687,7 +687,33 @@ const quantumBase = {
 };
 const energyBase = {
   category: CAT_ENERGY,
-  theme: ["Energie und Strommarkt", "Erneuerbare Energien", "Strommarktdesign", "Netze und Netzentgelte", "Flexibilität und Speicher", "Systemkosten und Gestehungskosten", "Energieumwandlung und Wirkungsgrad", "Klima, Energie und Lebenszyklus"],
+  theme: [
+    "Energiewirtschaft",
+    "Energie und Strommarkt",
+    "Erneuerbare Energien",
+    "Fossile Energien",
+    "Kernenergie",
+    "Strommarktdesign",
+    "Netze und Netzentgelte",
+    "Speicher und Flexibilität",
+    "Flexibilität und Speicher",
+    "Ladeinfrastruktur",
+    "Batterien und Speicher",
+    "Energieinfrastruktur",
+    "Kommunale Energie",
+    "Energie und Demokratie",
+    "Energiearmut",
+    "Systemkosten und Gestehungskosten",
+    "Energie und Kreislaufwirtschaft",
+    "Energie und Digitalisierung",
+    "Energieumwandlung und Wirkungsgrad",
+    "Klima und Lebenszyklus",
+    "Klima, Energie und Lebenszyklus",
+    "Produkte, Lieferketten und Scorecards",
+    "Kapital, Markt und Macht",
+    "Recht, Staat und Institutionen",
+    "Innovation und Transformation",
+  ],
   dimensions: ["Planet", "Mensch", "Demokratie"],
   wirklogik: ["Wirkungsbewertung", "Wirkungssteuerung", "Wirkungsrückkopplung"],
   applicationFields: ["Energie", "Klima", "Staat und Verwaltung", "Kapitalmärkte", "Unternehmen", "Technologie / KI"],
@@ -707,11 +733,21 @@ const batteryInfrastructureBase = {
     "Energieinfrastruktur",
     "Messung und Abrechnung",
     "Mittelspannung und Hochleistungsladen",
+    "Energiewirtschaft",
     "Energie und Strommarkt",
+    "Speicher und Flexibilität",
+    "Kommunale Energie",
+    "Energie und Demokratie",
+    "Energiearmut",
+    "Energie und Kreislaufwirtschaft",
+    "Energie und Digitalisierung",
     "Kreislaufwirtschaft und Circular Design",
+    "Klima und Lebenszyklus",
     "Klima, Energie und Lebenszyklus",
     "Produkte, Lieferketten und Scorecards",
     "Kapital, Markt und Macht",
+    "Recht, Staat und Institutionen",
+    "Innovation und Transformation",
   ],
   dimensions: ["Planet", "Mensch", "Demokratie"],
   wirklogik: ["Wirkungsbewertung", "Wirkungsrisiko", "Wirkungsarchitektur", "Wirkungssteuerung", "Infrastrukturwirkung"],
@@ -987,6 +1023,48 @@ const energyTerms = [
   ].map(([id, title, short, woek, aliases = [], related = []]) => addTerm(energyBase, { id, title, short, definition: short, woek, aliases, related, mythos: id === "kernenergie" ? "Kernenergie ist entweder völlig sauber oder völlig irrational." : id === "wasserstoff" ? "Wasserstoff ist eine Universallösung." : id === "stromgestehungskosten" ? "Die billigsten Gestehungskosten sind automatisch das billigste System." : "", woekKlaerung: id === "kernenergie" ? "Die WÖk bewertet nach Netto-Wirkung, Systemkosten, Risiken, Zeitpfad, Alternativen und demokratischer Stabilität." : id === "wasserstoff" ? "Wasserstoff ist ein Energieträger für passende Einsatzfelder, nicht Ersatz für direkte Elektrifizierung überall." : id === "stromgestehungskosten" ? "LCOE muss von Systemkosten unterschieden werden." : "" })),
 ];
 
+const energySystemTerms = [
+  ["energiewirtschaft", "Energiewirtschaft", "Energiewirtschaft umfasst Erzeugung, Umwandlung, Speicherung, Transport, Verteilung, Handel, Nutzung und Regulierung von Energie.", "Die Energiewirtschaft ist ein zentraler Wirkungsraum, weil Energie nahezu alle anderen Wirkungen ermöglicht oder begrenzt: Klima, Gesundheit, Preise, Versorgungssicherheit, Industrie, Digitalisierung, Mobilität, Wohnen, Pflege, Demokratie und geopolitische Abhängigkeiten.", [], ["energie", "strommarkt", "erneuerbare-energien", "fossiles-kraftwerk", "stromgestehungskosten", "systemkosten", "netzentgelt", "energiearmut", "energieautonomie", "buergerenergie", "versorgungssicherheit"], "connection", { mythos: "Energie ist ein normales Marktprodukt.", woekKlaerung: "Energie ist kritische Grundinfrastruktur. Sie kann über Märkte koordiniert werden, darf aber nicht ausschließlich als Ware verstanden werden.", blindSpot: "Eine Kilowattstunde ist physikalisch gleich, ihre Wirkung aber nicht: Herkunft, Zeit, Ort, Infrastruktur, Preis und Folgewirkungen verändern ihre gesellschaftliche Bedeutung." }],
+  ["versorgungssicherheit", "Versorgungssicherheit", "Versorgungssicherheit beschreibt die verlässliche Verfügbarkeit von Energie in ausreichender Menge, Qualität und Zeit.", "Sie ist eine Wirkungsbedingung für Gesundheit, Pflege, Industrie, Verwaltung, Kommunikation, Bildung, Wasser, Wärme, Mobilität und demokratische Handlungsfähigkeit.", [], ["energiesicherheit", "gesicherte-leistung", "backup-kapazitaet", "dunkelflaute", "wirkungsresilienz"]],
+  ["energiesicherheit", "Energiesicherheit", "Energiesicherheit beschreibt die Fähigkeit eines Energiesystems, Energieversorgung gegen technische, ökonomische, geopolitische oder klimatische Störungen abzusichern.", "Wirkungsökonomisch verbindet sie Versorgungssicherheit, Resilienz, Importabhängigkeiten, kritische Infrastruktur, Speicher, Netze und demokratische Stabilität.", [], ["versorgungssicherheit", "kritische-energieinfrastruktur", "energieautonomie", "geopolitik"]],
+  ["energieautonomie", "Energieautonomie", "Energieautonomie beschreibt die Fähigkeit eines Haushalts, Unternehmens, einer Kommune oder Volkswirtschaft, Energie unabhängiger und kontrollierbarer bereitzustellen.", "Sie kann Resilienz und Demokratie stärken, ist aber nicht automatisch positiv: Kosten, Verteilungswirkung, Netzdienlichkeit und Systemintegration müssen mitbewertet werden.", [], ["buergerenergie", "kommunale-energie", "prosumer", "eigenversorgung", "energie-und-demokratie"], "precision", { mythos: "Autarkie ist immer besser als Vernetzung.", woekKlaerung: "Wirkungsökonomisch zählt resiliente Einbettung: lokale Erzeugung, Speicher und Netze müssen zusammenwirken." }],
+  ["energieinfrastruktur", "Energieinfrastruktur", "Energieinfrastruktur umfasst Anlagen, Netze, Speicher, Messsysteme, Leitungen, Plattformen und Regeln, die Energie bereitstellen und nutzbar machen.", "Sie ist Wirkungsarchitektur, weil sie entscheidet, wer Zugang zu Wärme, Strom, Mobilität, Kommunikation und Produktion hat.", [], ["kritische-energieinfrastruktur", "stromnetz", "speicher-energie", "smart-grid", "ladeinfrastruktur"]],
+  ["kritische-energieinfrastruktur", "Kritische Energieinfrastruktur", "Kritische Energieinfrastruktur umfasst Energieanlagen und -systeme, deren Ausfall erhebliche Folgen für Gesellschaft, Wirtschaft, Gesundheit oder Staat hätte.", "Relevant für Resilienz, Cybersecurity, Krisenfähigkeit, Demokratie, Versorgungssicherheit und geopolitische Risiken.", [], ["energieinfrastruktur", "versorgungssicherheit", "cyberresilienz", "wirkungsresilienz"]],
+  ["kommunale-energie", "Kommunale Energie", "Kommunale Energie beschreibt Energieversorgung, Erzeugung, Netze, Wärmeplanung, Speicher und Beteiligung auf kommunaler Ebene.", "Kommunen sind zentrale Wirkungsorte, weil Energie dort in Wohnen, Mobilität, Daseinsvorsorge, Stadtwerken, Quartieren und sozialer Gerechtigkeit konkret wird.", [], ["stadtwerke", "buergerenergie", "quartiersenergie", "mieterstrom", "kommunale-waermeplanung"], "precision"],
+  ["buergerenergie", "Bürgerenergie", "Bürgerenergie beschreibt Energieprojekte, an denen Bürger:innen finanziell, organisatorisch oder demokratisch beteiligt sind.", "Sie kann Teilhabe, Akzeptanz, lokale Wertschöpfung und Vertrauen stärken, braucht aber faire Zugangsmöglichkeiten, professionelle Governance und Wirkungstransparenz.", ["Bürger:innenenergie"], ["energieautonomie", "energiegemeinschaft", "genossenschaft", "stadtwerke"]],
+  ["stadtwerke", "Stadtwerke", "Stadtwerke sind kommunal geprägte Versorgungsunternehmen, die häufig Strom, Wärme, Wasser, Verkehr oder digitale Infrastruktur betreiben.", "Sie können Energie als Daseinsvorsorge und Wirkungsinfrastruktur organisieren, brauchen aber ebenfalls Wirkungsprüfung, Transparenz und Investitionsfähigkeit.", [], ["kommunale-energie", "daseinsvorsorge", "waermenetze", "mieterstrom"]],
+  ["energiegemeinschaft", "Energiegemeinschaft", "Eine Energiegemeinschaft organisiert gemeinschaftliche Erzeugung, Nutzung, Speicherung oder Verteilung von Energie.", "Sie kann Energie demokratisieren und lokale Resilienz stärken, muss aber Netzdienlichkeit, Zugangsgerechtigkeit, Datenqualität und Verantwortlichkeiten klären.", ["Energy Community"], ["buergerenergie", "eigenversorgung", "prosumer", "dezentralisierung"]],
+  ["quartiersenergie", "Quartiersenergie", "Quartiersenergie betrachtet Erzeugung, Speicher, Wärme, Strom, Mobilität und Verbrauch in einem räumlichen Quartier.", "Relevant für Wärmewende, Mieterstrom, Ladeinfrastruktur, soziale Verteilung, Sanierung und kommunale Wirkungsplanung.", [], ["kommunale-energie", "mieterstrom", "waermepumpe", "waermespeicher"]],
+  ["mieterstrom", "Mieterstrom", "Mieterstrom beschreibt Strom, der nahe an Mietgebäuden erzeugt und direkt an Bewohner:innen geliefert wird.", "Er kann Teilhabe an der Energiewende verbessern, braucht aber faire Verträge, Messkonzepte, Abrechnung, Gebäudeeigentum und Schutz vor Ausschluss.", [], ["quartiersenergie", "eigenversorgung", "prosumer", "stadtwerke"]],
+  ["eigenversorgung", "Eigenversorgung", "Eigenversorgung beschreibt die Nutzung selbst erzeugter Energie durch dieselbe Person, Organisation oder Anlage.", "Sie kann Kosten senken und Resilienz stärken, muss aber netzdienlich, sozial fair und systemisch eingebettet sein.", [], ["prosumer", "energieautonomie", "heimspeicher", "mieterstrom"]],
+  ["reservekraftwerk", "Reservekraftwerk", "Ein Reservekraftwerk steht bereit, um Strom in Engpass-, Krisen- oder Knappheitssituationen zu erzeugen.", "Wirkung hängt von Einsatzhäufigkeit, Brennstoff, Emissionen, Kosten, Standort, Versorgungssicherheit und Alternativen wie Speicher oder Demand Response ab.", [], ["backup-kapazitaet", "netzreserve", "strategische-reserve", "gesicherte-leistung"]],
+  ["kraft-waerme-kopplung", "Kraft-Wärme-Kopplung", "Kraft-Wärme-Kopplung erzeugt Strom und nutzbare Wärme gemeinsam.", "KWK kann Brennstoff effizienter nutzen, bleibt aber je nach Brennstoff, Wärmebedarf, Laufzeit, Flexibilität und Transformationspfad wirkungsabhängig.", ["KWK"], ["thermisches-kraftwerk", "waermespeicher", "sektorkopplung"]],
+  ["netzebene", "Netzebene", "Netzebenen unterscheiden Spannungsebenen im Stromnetz, etwa Niederspannung, Mittelspannung, Hochspannung und Höchstspannung.", "Sie erklären, warum Energiewendeprojekte unterschiedliche Anschluss-, Mess-, Kosten- und Steuerungsanforderungen haben.", [], ["niederspannung", "mittelspannung", "hochspannung", "hoechstspannung", "netzanschluss"], "method"],
+  ["waermespeicher", "Wärmespeicher", "Ein Wärmespeicher nimmt Wärme auf und stellt sie zeitversetzt wieder bereit.", "Wärmespeicher sind wichtige Flexibilitätsbausteine für Wärmepumpen, Solarthermie, Quartiere, Industrie und Sektorkopplung.", [], ["solarthermie", "waermepumpe", "quartiersenergie", "sektorkopplung"]],
+  ["redispatch-2-0", "Redispatch 2.0", "Redispatch 2.0 erweitert das Netzengpassmanagement auf weitere Erzeugungs- und Speicheranlagen im Verteilnetz.", "Relevant für dezentrale Energiewende, Datenqualität, Abregelung, Entschädigung, Netzbetrieb und Systemkosten.", [], ["redispatch", "verteilnetz", "abregelung"], "method"],
+  ["stromnev", "StromNEV", "Die Stromnetzentgeltverordnung regelt Grundsätze zur Ermittlung von Netzentgelten im Strombereich.", "Sie ist relevant für Kostenverteilung, Netzentgeltsystematik, Standortsignale, Industrie, Haushalte und Energiewende-Anreize.", ["Stromnetzentgeltverordnung"], ["netzentgelt", "netzentgeltsystematik"], "method"],
+  ["energiewirtschaftsgesetz", "Energiewirtschaftsgesetz / EnWG", "Das Energiewirtschaftsgesetz regelt zentrale Grundlagen der leitungsgebundenen Energieversorgung in Deutschland.", "Wirkungsökonomisch wichtig, weil es Markt, Netze, Versorgungssicherheit, Verbraucherrechte und Regulierung rahmt.", ["EnWG"], ["energiewirtschaft", "strommarkt", "netzanschluss"], "method"],
+  ["smart-meter-gateway", "Smart Meter Gateway", "Ein Smart Meter Gateway ist die sichere Kommunikationseinheit eines intelligenten Messsystems.", "Relevant für Datenschutz, IT-Sicherheit, dynamische Tarife, Demand Response, Flexibilität und demokratische Kontrolle digitaler Energieinfrastruktur.", [], ["smart-meter", "messstellenbetrieb", "dynamischer-stromtarif"], "method"],
+  ["flexibilitaetsmarkt", "Flexibilitätsmarkt", "Ein Flexibilitätsmarkt organisiert die Bereitstellung oder Vergütung flexibler Erzeugung, Speicherung oder Verbrauchsverschiebung.", "Er kann Netze entlasten und Systemkosten senken, braucht aber faire Teilnahme, klare Daten und Schutz vor Marktmacht.", [], ["demand-response", "lastmanagement", "speicher-energie", "netzdienlichkeit"], "method"],
+  ["regelenergiemarkt", "Regelenergiemarkt", "Der Regelenergiemarkt organisiert Beschaffung und Vergütung von Regelenergie zur Stabilisierung des Stromsystems.", "Relevant für Versorgungssicherheit, Speicher, Demand Response, Marktzugang und Systemdienstleistungen.", [], ["regelenergie", "systemdienstleistungen", "batteriespeicher"], "method"],
+  ["kapazitaetsreserve", "Kapazitätsreserve", "Eine Kapazitätsreserve hält gesicherte Leistung außerhalb des regulären Strommarkts für besondere Knappheitssituationen vor.", "Sie kann Versorgungssicherheit stärken, muss aber Kosten, Emissionen, Einsatzlogik und Lock-in-Risiken offenlegen.", [], ["kapazitaetsmarkt", "reservekraftwerk", "gesicherte-leistung"], "method"],
+  ["strategische-reserve", "Strategische Reserve", "Eine strategische Reserve hält Kraftwerks- oder Speicherleistung für außergewöhnliche Versorgungssituationen vor.", "Wirkung hängt von Governance, Kosten, Einsatzregeln, Transparenz und Alternativen ab.", [], ["kapazitaetsreserve", "reservekraftwerk", "versorgungssicherheit"], "method"],
+  ["netzreserve", "Netzreserve", "Die Netzreserve hält Anlagen bereit, um Netzstabilität und Versorgungssicherheit in besonderen Situationen zu unterstützen.", "Sie ist ein Instrument gegen Netzengpässe und Versorgungslücken, verursacht aber Kosten und muss mit Netzausbau, Flexibilität und Speicher verglichen werden.", [], ["reservekraftwerk", "netzengpass", "redispatch"], "method"],
+].map(([id, title, short, woek, aliases = [], related = [], concept = "connection", extra = {}]) => addTerm(energyBase, {
+  id,
+  title,
+  short,
+  definition: `${short} ${extra.definition || ""}`.trim(),
+  woek,
+  aliases,
+  related,
+  concept,
+  mythos: extra.mythos || "",
+  woekKlaerung: extra.woekKlaerung || "",
+  blindSpot: extra.blindSpot || "Wenn Energie nur technisch oder preislich betrachtet wird, bleiben soziale, demokratische, infrastrukturelle und geopolitische Folgewirkungen unsichtbar.",
+  usage: "Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.",
+}));
+
 function batteryInfraTerm([id, title, short, woek, aliases = [], related = [], concept = "connection", extra = {}]) {
   return addTerm(batteryInfrastructureBase, {
     id,
@@ -1132,7 +1210,7 @@ const batteryInfrastructureTerms = [
   ["anlagenpass", "Anlagenpass", "Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.", "Analog zum Materialpass oder Digitalen Produktpass für große Energieanlagen; wichtig für Rückbau, Wartung, Versicherung und Kreislaufwirkung.", [], ["materialpass", "digitaler-produktpass", "rueckbaustandard"], "method"],
 ].map(batteryInfraTerm);
 
-additions.push(...economicSystemTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...batteryInfrastructureTerms);
+additions.push(...economicSystemTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
 
 const raw = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const terms = raw.terms || [];
@@ -1567,6 +1645,16 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - SMARD: So funktioniert der Strommarkt, https://www.smard.de/page/en/wiki-article/5884/5840/this-is-how-the-electricity-market-works
 - IEA Glossary / Demand Response, https://www.iea.org/glossary
 - IEA Electricity Market Design, https://www.iea.org/reports/electricity-market-design
+- IEA: Energy Security, https://www.iea.org/topics/energy-security
+- Agora Energiewende: Strommarktdesign und Energiewende, https://www.agora-energiewende.de/
+- SMARD: Strommarkt, Merit Order und Netzebenen, https://www.smard.de/
+- Umweltbundesamt: Energie und Emissionen, https://www.umweltbundesamt.de/themen/klima-energie
+- AG Energiebilanzen, https://ag-energiebilanzen.de/
+- VDE FNN: technische Anschlussregeln, https://www.vde.com/de/fnn/themen/tar
+- ACER: European energy market regulation, https://www.acer.europa.eu/
+- Interne WÖk-Quelle: Die neue Ordnung des Wohlstands 2026, Energie als Betriebssystem moderner Gesellschaft
+- Interne WÖk-Quelle: Systemmodell der Wirkungsökonomie, kommunale Energie, Energieautonomie, Speicher, Lastmanagement, Wärmenetze
+- Interne WÖk-Quelle: WÖk Master Items zu SDG 7, erneuerbaren Energien, Energieeffizienz, spezifischen Stromemissionen, Energiearmut, Netzverlusten und Energiedaten in Lieferketten
 
 ## Batterien / Ladeinfrastruktur / Netzanschluss
 

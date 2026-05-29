@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-29T18:53:44.919Z",
+  "generatedAt": "2026-05-29T19:04:25.580Z",
   "rule": "Nicht jede Nennung verlinken. Pro Seite maximal die erste fachlich zentrale Nennung, bei langen Artikeln zusätzlich in einem späteren Hauptabschnitt.",
-  "newTerms": 511,
+  "newTerms": 537,
   "backlog": [
     "Empathy Map",
     "User Journey",
@@ -91,10 +91,6 @@
       "label": "Triviale Maschine",
       "suggestedPages": [
         {
-          "file": "begriffe/gri/index.html",
-          "matched": "Triviale Maschine"
-        },
-        {
           "file": "begriffe/gri-2/index.html",
           "matched": "Triviale Maschine"
         },
@@ -111,10 +107,6 @@
           "matched": "Triviale Maschine"
         },
         {
-          "file": "begriffe/machtkonzentration/index.html",
-          "matched": "Triviale Maschine"
-        },
-        {
           "file": "begriffe/nichttriviale-maschine/index.html",
           "matched": "Triviale Maschine"
         },
@@ -123,19 +115,27 @@
           "matched": "Triviale Maschine"
         },
         {
-          "file": "begriffe/patriarchat/index.html",
-          "matched": "Triviale Maschine"
-        },
-        {
           "file": "begriffe/rueckkopplung/index.html",
           "matched": "Triviale Maschine"
         },
         {
-          "file": "begriffe/selbstorganisation/index.html",
+          "file": "begriffe/sroi/index.html",
           "matched": "Triviale Maschine"
         },
         {
-          "file": "begriffe/sroi/index.html",
+          "file": "begriffe/triviale-maschine/index.html",
+          "matched": "Triviale Maschine"
+        },
+        {
+          "file": "blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html",
+          "matched": "Triviale Maschine"
+        },
+        {
+          "file": "blog/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.html",
+          "matched": "Triviale Maschine"
+        },
+        {
+          "file": "blog/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.html",
           "matched": "Triviale Maschine"
         }
       ],
@@ -2375,10 +2375,6 @@
           "matched": "Klimawandel"
         },
         {
-          "file": "begriffe/hydrologischer-kreislauf/index.html",
-          "matched": "Klimawandel"
-        },
-        {
           "file": "begriffe/index.html",
           "matched": "Klimawandel"
         },
@@ -2388,6 +2384,10 @@
         },
         {
           "file": "begriffe/ipcc-2/index.html",
+          "matched": "Klimawandel"
+        },
+        {
+          "file": "begriffe/klimaanpassung/index.html",
           "matched": "Klimawandel"
         }
       ],
@@ -4050,15 +4050,15 @@
           "matched": "Wirkleistung"
         },
         {
+          "file": "begriffe/leistungsfaktor/index.html",
+          "matched": "Wirkleistung"
+        },
+        {
           "file": "begriffe/praevention/index.html",
           "matched": "Wirkleistung"
         },
         {
           "file": "begriffe/praevention-als-wirkleistung/index.html",
-          "matched": "Wirkleistung"
-        },
-        {
-          "file": "begriffe/praevention-als-wirkleistung-2/index.html",
           "matched": "Wirkleistung"
         }
       ],
@@ -4074,6 +4074,10 @@
         },
         {
           "file": "begriffe/index.html",
+          "matched": "Scheinleistung"
+        },
+        {
+          "file": "begriffe/leistungsfaktor/index.html",
           "matched": "Scheinleistung"
         },
         {
@@ -4111,10 +4115,6 @@
         {
           "file": "glossar.html",
           "matched": "Scheinleistung"
-        },
-        {
-          "file": "portale/zukunftsbilder-wirkungswohlstand/wirkungs-bip-verlustleistung/index.html",
-          "matched": "Scheinleistung"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -4137,6 +4137,10 @@
         },
         {
           "file": "begriffe/index.html",
+          "matched": "Blindleistung"
+        },
+        {
+          "file": "begriffe/leistungsfaktor/index.html",
           "matched": "Blindleistung"
         },
         {
@@ -4165,10 +4169,6 @@
         },
         {
           "file": "blog/leistung-ohne-wirkung.html",
-          "matched": "Blindleistung"
-        },
-        {
-          "file": "blog/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.html",
           "matched": "Blindleistung"
         }
       ],
@@ -4513,6 +4513,10 @@
           "matched": "Resonanz"
         },
         {
+          "file": "begriffe/alarm-frame/index.html",
+          "matched": "Resonanz"
+        },
+        {
           "file": "begriffe/anschlussfaehigkeit/index.html",
           "matched": "Resonanz"
         },
@@ -4526,10 +4530,6 @@
         },
         {
           "file": "begriffe/autopoiesis/index.html",
-          "matched": "Resonanz"
-        },
-        {
-          "file": "begriffe/baseline-verschiebung/index.html",
           "matched": "Resonanz"
         }
       ],
@@ -6793,6 +6793,14 @@
           "matched": "Wertschöpfung"
         },
         {
+          "file": "begriffe/amartya-sen/index.html",
+          "matched": "Wertschöpfung"
+        },
+        {
+          "file": "begriffe/blindleistung/index.html",
+          "matched": "Wertschöpfung"
+        },
+        {
           "file": "begriffe/care-als-wirkleistung/index.html",
           "matched": "Wertschöpfung"
         },
@@ -6802,14 +6810,6 @@
         },
         {
           "file": "begriffe/digitaler-produktpass/index.html",
-          "matched": "Wertschöpfung"
-        },
-        {
-          "file": "begriffe/esrs/index.html",
-          "matched": "Wertschöpfung"
-        },
-        {
-          "file": "begriffe/esrs-2/index.html",
           "matched": "Wertschöpfung"
         }
       ],
@@ -7620,14 +7620,6 @@
           "matched": "Wahrheit"
         },
         {
-          "file": "begriffe/adam-smith/index.html",
-          "matched": "Wahrheit"
-        },
-        {
-          "file": "begriffe/affekt/index.html",
-          "matched": "Wahrheit"
-        },
-        {
           "file": "begriffe/diskurskultur/index.html",
           "matched": "Wahrheit"
         },
@@ -7644,6 +7636,10 @@
           "matched": "Wahrheit"
         },
         {
+          "file": "begriffe/folgencheck/index.html",
+          "matched": "Wahrheit"
+        },
+        {
           "file": "begriffe/framing/index.html",
           "matched": "Wahrheit"
         },
@@ -7653,6 +7649,10 @@
         },
         {
           "file": "begriffe/index.html",
+          "matched": "Wahrheit"
+        },
+        {
+          "file": "begriffe/ipcc/index.html",
           "matched": "Wahrheit"
         }
       ],
@@ -7777,14 +7777,6 @@
           "matched": "Fakten"
         },
         {
-          "file": "begriffe/assurance/index.html",
-          "matched": "Fakten"
-        },
-        {
-          "file": "begriffe/aufmerksamkeitsoekonomie/index.html",
-          "matched": "Fakten"
-        },
-        {
           "file": "begriffe/autopoiesis/index.html",
           "matched": "Fakten"
         },
@@ -7794,6 +7786,14 @@
         },
         {
           "file": "begriffe/beobachtung-zweiter-ordnung/index.html",
+          "matched": "Fakten"
+        },
+        {
+          "file": "begriffe/bestaetigungsfehler/index.html",
+          "matched": "Fakten"
+        },
+        {
+          "file": "begriffe/demokratie/index.html",
           "matched": "Fakten"
         }
       ],
@@ -7859,22 +7859,6 @@
           "matched": "Marktwirtschaft"
         },
         {
-          "file": "begriffe/adam-smith/index.html",
-          "matched": "Marktwirtschaft"
-        },
-        {
-          "file": "begriffe/blindleistung/index.html",
-          "matched": "Marktwirtschaft"
-        },
-        {
-          "file": "begriffe/business-model/index.html",
-          "matched": "Marktwirtschaft"
-        },
-        {
-          "file": "begriffe/entropie/index.html",
-          "matched": "Marktwirtschaft"
-        },
-        {
           "file": "begriffe/externalisierung/index.html",
           "matched": "Marktwirtschaft"
         },
@@ -7892,6 +7876,22 @@
         },
         {
           "file": "begriffe/marktwirtschaft/index.html",
+          "matched": "Marktwirtschaft"
+        },
+        {
+          "file": "begriffe/neoliberalismus/index.html",
+          "matched": "Marktwirtschaft"
+        },
+        {
+          "file": "begriffe/ordoliberalismus/index.html",
+          "matched": "Marktwirtschaft"
+        },
+        {
+          "file": "begriffe/output/index.html",
+          "matched": "Marktwirtschaft"
+        },
+        {
+          "file": "begriffe/privatwirtschaftliche-planwirtschaft/index.html",
           "matched": "Marktwirtschaft"
         }
       ],
@@ -8659,47 +8659,47 @@
           "matched": "Planwirtschaft"
         },
         {
+          "file": "begriffe/akkumulation/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/beschwerdemechanismus-access-to-remedy/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/carbon-budget/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/cbam/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/demokratischer-sozialismus/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/dezentralisierung/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/dezentralisierung-von-macht/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
           "file": "begriffe/dnsh-2/index.html",
           "matched": "Planwirtschaft"
         },
         {
+          "file": "begriffe/energiearmut/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
+          "file": "begriffe/energy-only-markt/index.html",
+          "matched": "Planwirtschaft"
+        },
+        {
           "file": "begriffe/engpasslogik/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/externalisierung/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/innovation/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/kapitalismus/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/kommunismus/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/machtkonzentration/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/marktwirtschaft/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/mensch-planet-und-demokratie/index.html",
-          "matched": "Planwirtschaft"
-        },
-        {
-          "file": "begriffe/netto-wirkung/index.html",
           "matched": "Planwirtschaft"
         }
       ],
@@ -8984,6 +8984,10 @@
           "matched": "Machtkonzentration"
         },
         {
+          "file": "begriffe/carbon-budget/index.html",
+          "matched": "Machtkonzentration"
+        },
+        {
           "file": "begriffe/dezentralisierung/index.html",
           "matched": "Machtkonzentration"
         },
@@ -8996,23 +9000,19 @@
           "matched": "Machtkonzentration"
         },
         {
+          "file": "begriffe/eu-taxonomie/index.html",
+          "matched": "Machtkonzentration"
+        },
+        {
+          "file": "begriffe/immanuel-kant/index.html",
+          "matched": "Machtkonzentration"
+        },
+        {
           "file": "begriffe/index.html",
           "matched": "Machtkonzentration"
         },
         {
           "file": "begriffe/kapital-als-machtverhaeltnis/index.html",
-          "matched": "Machtkonzentration"
-        },
-        {
-          "file": "begriffe/kapitalwirkung/index.html",
-          "matched": "Machtkonzentration"
-        },
-        {
-          "file": "begriffe/kommunismus/index.html",
-          "matched": "Machtkonzentration"
-        },
-        {
-          "file": "begriffe/kreislaufblindheit/index.html",
           "matched": "Machtkonzentration"
         }
       ],
@@ -9380,19 +9380,19 @@
           "matched": "Kreislaufwirtschaft"
         },
         {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Kreislaufwirtschaft"
+        },
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Kreislaufwirtschaft"
+        },
+        {
           "file": "begriffe/biochemische-rohstoffgewinnung/index.html",
           "matched": "Kreislaufwirtschaft"
         },
         {
           "file": "begriffe/biogas/index.html",
-          "matched": "Kreislaufwirtschaft"
-        },
-        {
-          "file": "begriffe/biologischer-kreislauf/index.html",
-          "matched": "Kreislaufwirtschaft"
-        },
-        {
-          "file": "begriffe/biologischer-naehrstoff/index.html",
           "matched": "Kreislaufwirtschaft"
         }
       ],
@@ -9820,6 +9820,10 @@
           "matched": "Werterhalt"
         },
         {
+          "file": "begriffe/direktrecycling-batterie/index.html",
+          "matched": "Werterhalt"
+        },
+        {
           "file": "begriffe/downcycling/index.html",
           "matched": "Werterhalt"
         },
@@ -9857,10 +9861,6 @@
         },
         {
           "file": "fuer/mieter.html",
-          "matched": "Werterhalt"
-        },
-        {
-          "file": "glossar.html",
           "matched": "Werterhalt"
         }
       ],
@@ -10094,6 +10094,10 @@
           "matched": "Reparatur"
         },
         {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Reparatur"
+        },
+        {
           "file": "begriffe/circular-economy-butterfly-model/index.html",
           "matched": "Reparatur"
         },
@@ -10115,10 +10119,6 @@
         },
         {
           "file": "begriffe/innere-loops/index.html",
-          "matched": "Reparatur"
-        },
-        {
-          "file": "begriffe/kreislaufwirtschaft/index.html",
           "matched": "Reparatur"
         }
       ],
@@ -10345,19 +10345,19 @@
           "matched": "Recycling"
         },
         {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "Recycling"
+        },
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "Recycling"
+        },
+        {
           "file": "begriffe/aeussere-loops/index.html",
           "matched": "Recycling"
         },
         {
-          "file": "begriffe/batteriespeicher/index.html",
-          "matched": "Recycling"
-        },
-        {
-          "file": "begriffe/circular-economy-butterfly-model/index.html",
-          "matched": "Recycling"
-        },
-        {
-          "file": "begriffe/downcycling/index.html",
+          "file": "begriffe/akkumulator/index.html",
           "matched": "Recycling"
         }
       ],
@@ -10802,6 +10802,10 @@
       "label": "Modularität",
       "suggestedPages": [
         {
+          "file": "begriffe/batteriemodul/index.html",
+          "matched": "Modularität"
+        },
+        {
           "file": "begriffe/design-for-disassembly/index.html",
           "matched": "Modularität"
         },
@@ -10853,6 +10857,14 @@
       "label": "Reparierbarkeit",
       "suggestedPages": [
         {
+          "file": "begriffe/batteriemodul/index.html",
+          "matched": "Reparierbarkeit"
+        },
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Reparierbarkeit"
+        },
+        {
           "file": "begriffe/design-for-disassembly/index.html",
           "matched": "Reparierbarkeit"
         },
@@ -10890,14 +10902,6 @@
         },
         {
           "file": "begriffe/recht-auf-reparatur/index.html",
-          "matched": "Reparierbarkeit"
-        },
-        {
-          "file": "begriffe/reparatur/index.html",
-          "matched": "Reparierbarkeit"
-        },
-        {
-          "file": "begriffe/reparierbarkeit/index.html",
           "matched": "Reparierbarkeit"
         }
       ],
@@ -11037,6 +11041,10 @@
       "label": "Materialpass",
       "suggestedPages": [
         {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "Materialpass"
+        },
+        {
           "file": "begriffe/digitaler-produktpass/index.html",
           "matched": "Materialpass"
         },
@@ -11079,10 +11087,6 @@
         {
           "file": "wirkungsfelder/produkte-konsum/t-shirt/index.html",
           "matched": "Materialpass"
-        },
-        {
-          "file": "wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/index.html",
-          "matched": "Materialpass"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -11105,6 +11109,10 @@
         },
         {
           "file": "begriffe/urban-mining/index.html",
+          "matched": "Urban Mining"
+        },
+        {
+          "file": "begriffe/urban-mining-batterien/index.html",
           "matched": "Urban Mining"
         },
         {
@@ -11174,6 +11182,10 @@
           "matched": "Rezyklatanteil"
         },
         {
+          "file": "begriffe/rezyklatquote-batterie/index.html",
+          "matched": "Rezyklatanteil"
+        },
+        {
           "file": "begriffe/sekundaerrohstoff/index.html",
           "matched": "Rezyklatanteil"
         },
@@ -11187,10 +11199,6 @@
         },
         {
           "file": "dokumente/technische-leitlinien-wustg-v2/index.html",
-          "matched": "Rezyklatanteil"
-        },
-        {
-          "file": "dokumente/wp-produkte/index.html",
           "matched": "Rezyklatanteil"
         }
       ],
@@ -11225,6 +11233,10 @@
           "matched": "Recyclingquote"
         },
         {
+          "file": "begriffe/recyclingeffizienz/index.html",
+          "matched": "Recyclingquote"
+        },
+        {
           "file": "begriffe/recyclingquote/index.html",
           "matched": "Recyclingquote"
         },
@@ -11242,10 +11254,6 @@
         },
         {
           "file": "bibliothek/leitbild-deutschland-2030-woek/index.html",
-          "matched": "Recyclingquote"
-        },
-        {
-          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
           "matched": "Recyclingquote"
         }
       ],
@@ -11300,7 +11308,7 @@
           "matched": "Kreislauffähigkeit"
         },
         {
-          "file": "begriffe/rohstoffkritikalitaet/index.html",
+          "file": "begriffe/redox-flow-batterie/index.html",
           "matched": "Kreislauffähigkeit"
         }
       ],
@@ -11324,6 +11332,10 @@
         },
         {
           "file": "begriffe/kreislaufgrad/index.html",
+          "matched": "Kreislaufgrad"
+        },
+        {
+          "file": "begriffe/zementverwertung-rotorblaetter/index.html",
           "matched": "Kreislaufgrad"
         },
         {
@@ -11657,6 +11669,18 @@
           "matched": "Kreislaufwirkung"
         },
         {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "Kreislaufwirkung"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Kreislaufwirkung"
+        },
+        {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Kreislaufwirkung"
+        },
+        {
           "file": "begriffe/circular-economy-butterfly-model/index.html",
           "matched": "Kreislaufwirkung"
         },
@@ -11686,18 +11710,6 @@
         },
         {
           "file": "begriffe/ruecknahmesystem/index.html",
-          "matched": "Kreislaufwirkung"
-        },
-        {
-          "file": "begriffe/scorecard/index.html",
-          "matched": "Kreislaufwirkung"
-        },
-        {
-          "file": "begriffe/werterhalt/index.html",
-          "matched": "Kreislaufwirkung"
-        },
-        {
-          "file": "glossar.html",
           "matched": "Kreislaufwirkung"
         }
       ],
@@ -12565,6 +12577,10 @@
         },
         {
           "file": "begriffe/index.html",
+          "matched": "Halbleiter"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
           "matched": "Halbleiter"
         },
         {
@@ -13538,15 +13554,19 @@
           "matched": "Windenergie"
         },
         {
+          "file": "begriffe/repowering/index.html",
+          "matched": "Windenergie"
+        },
+        {
           "file": "begriffe/windenergie/index.html",
           "matched": "Windenergie"
         },
         {
-          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "file": "begriffe/windrad-recycling/index.html",
           "matched": "Windenergie"
         },
         {
-          "file": "glossar.html",
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
           "matched": "Windenergie"
         }
       ],
@@ -13974,7 +13994,15 @@
           "matched": "Strommarktdesign"
         },
         {
+          "file": "begriffe/megawatt-charging-system/index.html",
+          "matched": "Strommarktdesign"
+        },
+        {
           "file": "begriffe/residuallast/index.html",
+          "matched": "Strommarktdesign"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
           "matched": "Strommarktdesign"
         },
         {
@@ -14103,11 +14131,11 @@
           "matched": "Merit Order"
         },
         {
-          "file": "begriffe/adam-smith/index.html",
+          "file": "begriffe/ac-laden/index.html",
           "matched": "Merit Order"
         },
         {
-          "file": "begriffe/adoe/index.html",
+          "file": "begriffe/ad-hoc-laden/index.html",
           "matched": "Merit Order"
         }
       ],
@@ -14259,47 +14287,47 @@
           "matched": "Systemkosten"
         },
         {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/akkumulator/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Systemkosten"
+        },
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "Systemkosten"
+        },
+        {
           "file": "begriffe/backup-kapazitaet/index.html",
           "matched": "Systemkosten"
         },
         {
-          "file": "begriffe/batteriespeicher/index.html",
+          "file": "begriffe/batterie/index.html",
           "matched": "Systemkosten"
         },
         {
-          "file": "begriffe/bioenergie/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/blauer-wasserstoff/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/capture-price/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/co2-preis/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/contracts-for-difference/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/demand-response/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/dunkelflaute/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/dynamischer-stromtarif/index.html",
-          "matched": "Systemkosten"
-        },
-        {
-          "file": "begriffe/eeg/index.html",
+          "file": "begriffe/batteriealterung/index.html",
           "matched": "Systemkosten"
         }
       ],
@@ -14314,11 +14342,23 @@
           "matched": "CO2-Preis"
         },
         {
+          "file": "begriffe/cbam/index.html",
+          "matched": "CO2-Preis"
+        },
+        {
           "file": "begriffe/co2-preis/index.html",
           "matched": "CO2-Preis"
         },
         {
+          "file": "begriffe/co2e/index.html",
+          "matched": "CO2-Preis"
+        },
+        {
           "file": "begriffe/emissionshandel/index.html",
+          "matched": "CO2-Preis"
+        },
+        {
+          "file": "begriffe/energiearmut/index.html",
           "matched": "CO2-Preis"
         },
         {
@@ -14334,27 +14374,15 @@
           "matched": "CO2-Preis"
         },
         {
-          "file": "begriffe/ipcc/index.html",
-          "matched": "CO2-Preis"
-        },
-        {
           "file": "begriffe/ipcc-2/index.html",
           "matched": "CO2-Preis"
         },
         {
-          "file": "begriffe/klimafolgeschaeden/index.html",
+          "file": "begriffe/john-maynard-keynes/index.html",
           "matched": "CO2-Preis"
         },
         {
-          "file": "begriffe/medienqualitaet/index.html",
-          "matched": "CO2-Preis"
-        },
-        {
-          "file": "begriffe/rechte-kuenftiger-generationen/index.html",
-          "matched": "CO2-Preis"
-        },
-        {
-          "file": "begriffe/reparatur/index.html",
+          "file": "begriffe/karl-polanyi/index.html",
           "matched": "CO2-Preis"
         }
       ],
@@ -14490,11 +14518,23 @@
           "matched": "Stromnetz"
         },
         {
+          "file": "begriffe/hoechstspannung/index.html",
+          "matched": "Stromnetz"
+        },
+        {
           "file": "begriffe/index.html",
           "matched": "Stromnetz"
         },
         {
+          "file": "begriffe/ladeeinrichtung/index.html",
+          "matched": "Stromnetz"
+        },
+        {
           "file": "begriffe/netzanschluss/index.html",
+          "matched": "Stromnetz"
+        },
+        {
+          "file": "begriffe/netzanschlusspunkt/index.html",
           "matched": "Stromnetz"
         },
         {
@@ -14510,23 +14550,11 @@
           "matched": "Stromnetz"
         },
         {
+          "file": "begriffe/niederspannung/index.html",
+          "matched": "Stromnetz"
+        },
+        {
           "file": "begriffe/smart-grid/index.html",
-          "matched": "Stromnetz"
-        },
-        {
-          "file": "begriffe/stromnetz/index.html",
-          "matched": "Stromnetz"
-        },
-        {
-          "file": "begriffe/uebertragungsnetz/index.html",
-          "matched": "Stromnetz"
-        },
-        {
-          "file": "begriffe/verteilnetz/index.html",
-          "matched": "Stromnetz"
-        },
-        {
-          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
           "matched": "Stromnetz"
         }
       ],
@@ -14544,6 +14572,10 @@
       "suggestedPages": [
         {
           "file": "begriffe/index.html",
+          "matched": "Verteilnetz"
+        },
+        {
+          "file": "begriffe/niederspannung/index.html",
           "matched": "Verteilnetz"
         },
         {
@@ -14683,23 +14715,51 @@
       "label": "Netzanschluss",
       "suggestedPages": [
         {
-          "file": "begriffe/index.html",
+          "file": "begriffe/ac-laden/index.html",
           "matched": "Netzanschluss"
         },
         {
-          "file": "begriffe/netzanschluss/index.html",
+          "file": "begriffe/ad-hoc-laden/index.html",
           "matched": "Netzanschluss"
         },
         {
-          "file": "begriffe/netzausbau/index.html",
+          "file": "begriffe/akkumulator/index.html",
           "matched": "Netzanschluss"
         },
         {
-          "file": "begriffe/stromnetz/index.html",
+          "file": "begriffe/anlagenpass/index.html",
           "matched": "Netzanschluss"
         },
         {
-          "file": "glossar.html",
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Netzanschluss"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
           "matched": "Netzanschluss"
         }
       ],
@@ -14710,7 +14770,23 @@
       "label": "Netzausbau",
       "suggestedPages": [
         {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Netzausbau"
+        },
+        {
+          "file": "begriffe/baukostenzuschuss/index.html",
+          "matched": "Netzausbau"
+        },
+        {
+          "file": "begriffe/hochspannung/index.html",
+          "matched": "Netzausbau"
+        },
+        {
           "file": "begriffe/index.html",
+          "matched": "Netzausbau"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
           "matched": "Netzausbau"
         },
         {
@@ -14740,22 +14816,6 @@
         {
           "file": "begriffe/uebertragungsnetz/index.html",
           "matched": "Netzausbau"
-        },
-        {
-          "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "matched": "Netzausbau"
-        },
-        {
-          "file": "blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
-          "matched": "Netzausbau"
-        },
-        {
-          "file": "blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
-          "matched": "Netzausbau"
-        },
-        {
-          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
-          "matched": "Netzausbau"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -14773,7 +14833,19 @@
           "matched": "Netzdienlichkeit"
         },
         {
+          "file": "begriffe/energiemanagementsystem/index.html",
+          "matched": "Netzdienlichkeit"
+        },
+        {
           "file": "begriffe/flexibilitaet-energiesystem/index.html",
+          "matched": "Netzdienlichkeit"
+        },
+        {
+          "file": "begriffe/gewerbespeicher/index.html",
+          "matched": "Netzdienlichkeit"
+        },
+        {
+          "file": "begriffe/heimspeicher/index.html",
           "matched": "Netzdienlichkeit"
         },
         {
@@ -14785,6 +14857,10 @@
           "matched": "Netzdienlichkeit"
         },
         {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Netzdienlichkeit"
+        },
+        {
           "file": "begriffe/netzdienlichkeit/index.html",
           "matched": "Netzdienlichkeit"
         },
@@ -14793,7 +14869,7 @@
           "matched": "Netzdienlichkeit"
         },
         {
-          "file": "glossar.html",
+          "file": "begriffe/netzspeicher/index.html",
           "matched": "Netzdienlichkeit"
         }
       ],
@@ -14907,6 +14983,10 @@
         },
         {
           "file": "begriffe/einspeisemanagement/index.html",
+          "matched": "Einspeisemanagement"
+        },
+        {
+          "file": "begriffe/fernwirktechnik/index.html",
           "matched": "Einspeisemanagement"
         },
         {
@@ -15290,6 +15370,10 @@
           "matched": "Flexibilität"
         },
         {
+          "file": "begriffe/bidirektionales-laden/index.html",
+          "matched": "Flexibilität"
+        },
+        {
           "file": "begriffe/capture-price/index.html",
           "matched": "Flexibilität"
         },
@@ -15324,10 +15408,6 @@
         {
           "file": "begriffe/index.html",
           "matched": "Flexibilität im Energiesystem"
-        },
-        {
-          "file": "begriffe/lastgang/index.html",
-          "matched": "Flexibilität"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -15373,6 +15453,10 @@
           "matched": "Demand Response"
         },
         {
+          "file": "begriffe/pufferspeicher-ladepark/index.html",
+          "matched": "Demand Response"
+        },
+        {
           "file": "begriffe/spitzenlast/index.html",
           "matched": "Demand Response"
         },
@@ -15392,7 +15476,31 @@
           "matched": "Lastmanagement"
         },
         {
+          "file": "begriffe/depotladen/index.html",
+          "matched": "Lastmanagement"
+        },
+        {
+          "file": "begriffe/dynamisches-lastmanagement/index.html",
+          "matched": "Lastmanagement"
+        },
+        {
+          "file": "begriffe/gleichzeitigkeit-ladeinfrastruktur/index.html",
+          "matched": "Lastmanagement"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Lastmanagement"
+        },
+        {
           "file": "begriffe/index.html",
+          "matched": "Lastmanagement"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Lastmanagement"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
           "matched": "Lastmanagement"
         },
         {
@@ -15404,23 +15512,11 @@
           "matched": "Lastmanagement"
         },
         {
-          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "file": "begriffe/leistungspreis/index.html",
           "matched": "Lastmanagement"
         },
         {
-          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
-          "matched": "Lastmanagement"
-        },
-        {
-          "file": "glossar.html",
-          "matched": "Lastmanagement"
-        },
-        {
-          "file": "referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/index.html",
-          "matched": "Lastmanagement"
-        },
-        {
-          "file": "referenz/volltext/index.html",
+          "file": "begriffe/normalladen/index.html",
           "matched": "Lastmanagement"
         }
       ],
@@ -15447,7 +15543,15 @@
           "matched": "Lastgang"
         },
         {
+          "file": "begriffe/rlm-messung/index.html",
+          "matched": "Lastgang"
+        },
+        {
           "file": "begriffe/spitzenlast/index.html",
+          "matched": "Lastgang"
+        },
+        {
+          "file": "begriffe/standardlastprofil/index.html",
           "matched": "Lastgang"
         },
         {
@@ -15660,43 +15764,43 @@
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/batteriespeicher/index.html",
+          "file": "begriffe/ac-laden/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/capture-price/index.html",
+          "file": "begriffe/ad-hoc-laden/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/dunkelflaute/index.html",
+          "file": "begriffe/akkumulator/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/energy-only-markt/index.html",
+          "file": "begriffe/anlagenpass/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/erneuerbare-energien/index.html",
+          "file": "begriffe/anschlusskosten/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/flexibilitaet-energiesystem/index.html",
+          "file": "begriffe/anschlussleistung/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/gesicherte-leistung/index.html",
+          "file": "begriffe/arbeitspreis/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/hydrologischer-kreislauf/index.html",
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/index.html",
+          "file": "begriffe/batterie/index.html",
           "matched": "Speicher"
         },
         {
-          "file": "begriffe/kannibalisierungseffekt/index.html",
+          "file": "begriffe/batteriealterung/index.html",
           "matched": "Speicher"
         }
       ],
@@ -15715,6 +15819,18 @@
           "matched": "Batteriespeicher"
         },
         {
+          "file": "begriffe/energiemanagementsystem/index.html",
+          "matched": "Batteriespeicher"
+        },
+        {
+          "file": "begriffe/gewerbespeicher/index.html",
+          "matched": "Batteriespeicher"
+        },
+        {
+          "file": "begriffe/heimspeicher/index.html",
+          "matched": "Batteriespeicher"
+        },
+        {
           "file": "begriffe/index.html",
           "matched": "Batteriespeicher"
         },
@@ -15723,23 +15839,23 @@
           "matched": "Batteriespeicher"
         },
         {
+          "file": "begriffe/natrium-ionen-batterie/index.html",
+          "matched": "Batteriespeicher"
+        },
+        {
+          "file": "begriffe/netzspeicher/index.html",
+          "matched": "Batteriespeicher"
+        },
+        {
           "file": "begriffe/quantenbatterie/index.html",
           "matched": "Batteriespeicher"
         },
         {
-          "file": "begriffe/speicher-energie/index.html",
+          "file": "begriffe/redox-flow-batterie/index.html",
           "matched": "Batteriespeicher"
         },
         {
-          "file": "begriffe/vehicle-to-grid/index.html",
-          "matched": "Batteriespeicher"
-        },
-        {
-          "file": "blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
-          "matched": "Batteriespeicher"
-        },
-        {
-          "file": "glossar.html",
+          "file": "begriffe/second-life-batterie/index.html",
           "matched": "Batteriespeicher"
         }
       ],
@@ -15874,11 +15990,19 @@
           "matched": "Vehicle-to-Grid"
         },
         {
+          "file": "begriffe/bidirektionales-laden/index.html",
+          "matched": "Vehicle-to-Grid"
+        },
+        {
           "file": "begriffe/elektromobilitaet/index.html",
           "matched": "Vehicle-to-Grid"
         },
         {
           "file": "begriffe/index.html",
+          "matched": "Vehicle-to-Grid"
+        },
+        {
+          "file": "begriffe/smart-charging/index.html",
           "matched": "Vehicle-to-Grid"
         },
         {
@@ -15896,6 +16020,10 @@
       "termId": "prosumer",
       "label": "Prosumer",
       "suggestedPages": [
+        {
+          "file": "begriffe/heimspeicher/index.html",
+          "matched": "Prosumer"
+        },
         {
           "file": "begriffe/index.html",
           "matched": "Prosumer"
@@ -16136,6 +16264,10 @@
       "label": "Strompreisbestandteile",
       "suggestedPages": [
         {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Strompreisbestandteile"
+        },
+        {
           "file": "begriffe/index.html",
           "matched": "Strompreisbestandteile"
         },
@@ -16330,6 +16462,10 @@
           "matched": "Dynamischer Stromtarif"
         },
         {
+          "file": "begriffe/smart-charging/index.html",
+          "matched": "Dynamischer Stromtarif"
+        },
+        {
           "file": "begriffe/smart-meter/index.html",
           "matched": "Dynamischer Stromtarif"
         },
@@ -16344,6 +16480,10 @@
       "termId": "smart-grid",
       "label": "Smart Grid",
       "suggestedPages": [
+        {
+          "file": "begriffe/fernwirktechnik/index.html",
+          "matched": "Smart Grid"
+        },
         {
           "file": "begriffe/index.html",
           "matched": "Smart Grid"
@@ -16482,86 +16622,583 @@
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/batteriespeicher/index.html",
+          "file": "begriffe/ac-laden/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/elektromobilitaet/index.html",
+          "file": "begriffe/ad-hoc-laden/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/index.html",
+          "file": "begriffe/akkumulator/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/quantenbatterie/index.html",
+          "file": "begriffe/anlagenpass/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/sektorkopplung/index.html",
+          "file": "begriffe/anschlusskosten/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/vehicle-to-grid/index.html",
+          "file": "begriffe/anschlussleistung/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "begriffe/verteilnetz/index.html",
+          "file": "begriffe/arbeitspreis/index.html",
           "matched": "Elektromobilität"
         },
         {
-          "file": "bibliothek/nachhaltiges-marketing-mix/index.html",
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
           "matched": "Elektromobilität"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
+      "termId": "energiewirtschaft",
+      "label": "Energiewirtschaft",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/t-sroi-standard-impact-controlling.html",
+          "matched": "Energiewirtschaft"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Energiewirtschaft"
+        },
+        {
+          "file": "blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html",
+          "matched": "Energiewirtschaft"
+        },
+        {
+          "file": "blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "matched": "Energiewirtschaft"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Energiewirtschaft"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "versorgungssicherheit",
+      "label": "Versorgungssicherheit",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/landwirtschaft-wirkungsoekonomie.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/abregelung/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/backup-kapazitaet/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/batteriespeicher/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/bioenergie/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/blauer-wasserstoff/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/capture-price/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/co2-preis/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/contracts-for-difference/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/demand-response/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/dunkelflaute/index.html",
+          "matched": "Versorgungssicherheit"
+        },
+        {
+          "file": "begriffe/dynamischer-stromtarif/index.html",
+          "matched": "Versorgungssicherheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "energiesicherheit",
+      "label": "Energiesicherheit",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/t-sroi-standard-impact-controlling.html",
+          "matched": "Energiesicherheit"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Energiesicherheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "energieautonomie",
+      "label": "Energieautonomie",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/t-sroi-standard-impact-controlling.html",
+          "matched": "Energieautonomie"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Energieautonomie"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Energieautonomie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "energieinfrastruktur",
+      "label": "Energieinfrastruktur",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/t-sroi-standard-impact-controlling.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "begriffe/umspannwerk/index.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Energieinfrastruktur"
+        },
+        {
+          "file": "portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/index.html",
+          "matched": "Energieinfrastruktur"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "kritische-energieinfrastruktur",
+      "label": "Kritische Energieinfrastruktur",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "kommunale-energie",
+      "label": "Kommunale Energie",
+      "suggestedPages": [
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Kommunale Energie"
+        },
+        {
+          "file": "portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/index.html",
+          "matched": "Kommunale Energie"
+        },
+        {
+          "file": "referenz/kapitel-097-der-umsetzungspfad/index.html",
+          "matched": "Kommunale Energie"
+        },
+        {
+          "file": "referenz/kapitel-100-transformationspfade/index.html",
+          "matched": "Kommunale Energie"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Kommunale Energie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Kommunale Energie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "buergerenergie",
+      "label": "Bürgerenergie",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "blog/was-ist-nachhaltigkeit-wirklich.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/kapitel-065-resilienzstaat/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/kapitel-098-pilotprojekte/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/kapitel-100-transformationspfade/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Bürgerenergie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Bürgerenergie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "stadtwerke",
+      "label": "Stadtwerke",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/t-sroi-standard-impact-controlling.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/index.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/toolkarten/index.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "referenz/kapitel-107-zukunftsbilder/index.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Stadtwerke"
+        },
+        {
+          "file": "werkzeuge/cyberresilienz-check/index.html",
+          "matched": "Stadtwerke"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "energiegemeinschaft",
+      "label": "Energiegemeinschaft",
+      "suggestedPages": [
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Energiegemeinschaft"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "quartiersenergie",
+      "label": "Quartiersenergie",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html",
+          "matched": "Quartiersenergie"
+        },
+        {
+          "file": "referenz/kapitel-107-zukunftsbilder/index.html",
+          "matched": "Quartiersenergie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Quartiersenergie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "mieterstrom",
+      "label": "Mieterstrom",
+      "suggestedPages": [
+        {
+          "file": "assets/data/document-online/social-taxonomy-wirkungsoekonomie.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "fuer/mieter.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/kapitel-070-wohnen/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/kapitel-098-pilotprojekte/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/kapitel-100-transformationspfade/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/kapitel-107-zukunftsbilder/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Mieterstrom"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Mieterstrom"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "eigenversorgung",
+      "label": "Eigenversorgung",
+      "suggestedPages": [
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Eigenversorgung"
+        },
+        {
+          "file": "referenz/kapitel-098-pilotprojekte/index.html",
+          "matched": "Eigenversorgung"
+        },
+        {
+          "file": "referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html",
+          "matched": "Eigenversorgung"
+        },
+        {
+          "file": "referenz/kapitel-107-zukunftsbilder/index.html",
+          "matched": "Eigenversorgung"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Eigenversorgung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "reservekraftwerk",
+      "label": "Reservekraftwerk",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "kraft-waerme-kopplung",
+      "label": "Kraft-Wärme-Kopplung",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "netzebene",
+      "label": "Netzebene",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "waermespeicher",
+      "label": "Wärmespeicher",
+      "suggestedPages": [
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Wärmespeicher"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "redispatch-2-0",
+      "label": "Redispatch 2.0",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "stromnev",
+      "label": "StromNEV",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "energiewirtschaftsgesetz",
+      "label": "Energiewirtschaftsgesetz / EnWG",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "smart-meter-gateway",
+      "label": "Smart Meter Gateway",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "flexibilitaetsmarkt",
+      "label": "Flexibilitätsmarkt",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "regelenergiemarkt",
+      "label": "Regelenergiemarkt",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "kapazitaetsreserve",
+      "label": "Kapazitätsreserve",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "strategische-reserve",
+      "label": "Strategische Reserve",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "netzreserve",
+      "label": "Netzreserve",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
       "termId": "batterie",
       "label": "Batterie",
       "suggestedPages": [
         {
-          "file": "begriffe/elektromobilitaet/index.html",
+          "file": "begriffe/akkumulator/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "begriffe/index.html",
+          "file": "begriffe/batterie/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "file": "begriffe/batteriealterung/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "file": "begriffe/batterielebenszyklus/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "glossar.html",
+          "file": "begriffe/batteriemanagementsystem/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
+          "file": "begriffe/batteriepass/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html",
+          "file": "begriffe/batterierecycling/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/index.html",
+          "file": "begriffe/batterierohstoffe/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "referenz/volltext/index.html",
+          "file": "begriffe/batteriezelle/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/index.html",
+          "file": "begriffe/blei-saeure-batterie/index.html",
           "matched": "Batterie"
         },
         {
-          "file": "wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/index.html",
+          "file": "begriffe/c-rate/index.html",
+          "matched": "Batterie"
+        },
+        {
+          "file": "begriffe/dc-laden/index.html",
           "matched": "Batterie"
         }
       ],
@@ -16570,79 +17207,418 @@
     {
       "termId": "akkumulator",
       "label": "Akkumulator / Akku",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/akkumulator/index.html",
+          "matched": "Akkumulator / Akku"
+        },
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Akkumulator / Akku"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Akkumulator / Akku"
+        },
+        {
+          "file": "begriffe/zyklenfestigkeit/index.html",
+          "matched": "Akkumulator / Akku"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Akkumulator / Akku"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batteriezelle",
       "label": "Batteriezelle",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriemodul/index.html",
+          "matched": "Batteriezelle"
+        },
+        {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Batteriezelle"
+        },
+        {
+          "file": "begriffe/batterierohstoffe/index.html",
+          "matched": "Batteriezelle"
+        },
+        {
+          "file": "begriffe/batteriezelle/index.html",
+          "matched": "Batteriezelle"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batteriezelle"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batteriezelle"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batteriemodul",
       "label": "Batteriemodul",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriemodul/index.html",
+          "matched": "Batteriemodul"
+        },
+        {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Batteriemodul"
+        },
+        {
+          "file": "begriffe/batteriezelle/index.html",
+          "matched": "Batteriemodul"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batteriemodul"
+        },
+        {
+          "file": "begriffe/modularitaet/index.html",
+          "matched": "Batteriemodul"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batteriemodul"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batteriepack",
       "label": "Batteriepack",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Batteriepack"
+        },
+        {
+          "file": "begriffe/batteriemodul/index.html",
+          "matched": "Batteriepack"
+        },
+        {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Batteriepack"
+        },
+        {
+          "file": "begriffe/batteriezelle/index.html",
+          "matched": "Batteriepack"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batteriepack"
+        },
+        {
+          "file": "begriffe/thermal-runaway/index.html",
+          "matched": "Batteriepack"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batteriepack"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batteriemanagementsystem",
       "label": "Batteriemanagementsystem / BMS",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/batteriepass/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/second-life-batterie/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/state-of-charge/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/state-of-health/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "begriffe/thermal-runaway/index.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batteriemanagementsystem / BMS"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "state-of-charge",
       "label": "State of Charge / SOC",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "State of Charge / SOC"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "State of Charge / SOC"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "State of Charge / SOC"
+        },
+        {
+          "file": "begriffe/state-of-charge/index.html",
+          "matched": "State of Charge / SOC"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "State of Charge / SOC"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "state-of-health",
       "label": "State of Health / SOH",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "begriffe/batteriepass/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "begriffe/degradation-batterie/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "begriffe/second-life-batterie/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "begriffe/state-of-health/index.html",
+          "matched": "State of Health / SOH"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "State of Health / SOH"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "c-rate",
       "label": "C-Rate",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "C-Rate"
+        },
+        {
+          "file": "begriffe/c-rate/index.html",
+          "matched": "C-Rate"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "C-Rate"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "C-Rate"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "C-Rate"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "energiedichte",
       "label": "Energiedichte",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/energiedichte/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/feststoffbatterie/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/leistungsdichte/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/lithium-titanat-batterie/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/natrium-ionen-batterie/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "begriffe/nmc-batterie/index.html",
+          "matched": "Energiedichte"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Energiedichte"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "leistungsdichte",
       "label": "Leistungsdichte",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/energiedichte/index.html",
+          "matched": "Leistungsdichte"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Leistungsdichte"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Leistungsdichte"
+        },
+        {
+          "file": "begriffe/leistungsdichte/index.html",
+          "matched": "Leistungsdichte"
+        },
+        {
+          "file": "begriffe/superkondensator/index.html",
+          "matched": "Leistungsdichte"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Leistungsdichte"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "zyklenfestigkeit",
       "label": "Zyklenfestigkeit",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/akkumulator/index.html",
+          "matched": "Zyklenfestigkeit"
+        },
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "Zyklenfestigkeit"
+        },
+        {
+          "file": "begriffe/degradation-batterie/index.html",
+          "matched": "Zyklenfestigkeit"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Zyklenfestigkeit"
+        },
+        {
+          "file": "begriffe/lithium-titanat-batterie/index.html",
+          "matched": "Zyklenfestigkeit"
+        },
+        {
+          "file": "begriffe/zyklenfestigkeit/index.html",
+          "matched": "Zyklenfestigkeit"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Zyklenfestigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batteriealterung",
       "label": "Batteriealterung",
       "suggestedPages": [
         {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/bidirektionales-laden/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/c-rate/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/degradation-batterie/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
           "file": "begriffe/index.html",
           "matched": "Batteriealterung"
         },
         {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/schnellladen/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/state-of-health/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
           "file": "begriffe/vehicle-to-grid/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/vehicle-to-home/index.html",
+          "matched": "Batteriealterung"
+        },
+        {
+          "file": "begriffe/zyklenfestigkeit/index.html",
           "matched": "Batteriealterung"
         },
         {
@@ -16655,98 +17631,518 @@
     {
       "termId": "degradation-batterie",
       "label": "Degradation",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "Degradation"
+        },
+        {
+          "file": "begriffe/degradation-batterie/index.html",
+          "matched": "Degradation"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Degradation"
+        },
+        {
+          "file": "begriffe/state-of-health/index.html",
+          "matched": "Degradation"
+        },
+        {
+          "file": "begriffe/zyklenfestigkeit/index.html",
+          "matched": "Degradation"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Degradation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "thermal-runaway",
       "label": "Thermal Runaway",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Thermal Runaway"
+        },
+        {
+          "file": "begriffe/batteriepack/index.html",
+          "matched": "Thermal Runaway"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Thermal Runaway"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Thermal Runaway"
+        },
+        {
+          "file": "begriffe/schutztechnik/index.html",
+          "matched": "Thermal Runaway"
+        },
+        {
+          "file": "begriffe/thermal-runaway/index.html",
+          "matched": "Thermal Runaway"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Thermal Runaway"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batterierohstoffe",
       "label": "Batterierohstoffe",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Batterierohstoffe"
+        },
+        {
+          "file": "begriffe/batterierohstoffe/index.html",
+          "matched": "Batterierohstoffe"
+        },
+        {
+          "file": "begriffe/batteriezelle/index.html",
+          "matched": "Batterierohstoffe"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batterierohstoffe"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "Batterierohstoffe"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "Batterierohstoffe"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batterierohstoffe"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "lithium-ionen-batterie",
       "label": "Lithium-Ionen-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/batterierohstoffe/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/energiedichte/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/feststoffbatterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/lfp-batterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/lithium-titanat-batterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/nca-batterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/nmc-batterie/index.html",
+          "matched": "Lithium-Ionen-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Lithium-Ionen-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "lfp-batterie",
       "label": "LFP-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "LFP-Batterie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "LFP-Batterie"
+        },
+        {
+          "file": "begriffe/lfp-batterie/index.html",
+          "matched": "LFP-Batterie"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "LFP-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "LFP-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "nmc-batterie",
       "label": "NMC-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "NMC-Batterie"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "NMC-Batterie"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "NMC-Batterie"
+        },
+        {
+          "file": "begriffe/nmc-batterie/index.html",
+          "matched": "NMC-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "NMC-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "nca-batterie",
       "label": "NCA-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "NCA-Batterie"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "NCA-Batterie"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "NCA-Batterie"
+        },
+        {
+          "file": "begriffe/nca-batterie/index.html",
+          "matched": "NCA-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "NCA-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "lithium-titanat-batterie",
       "label": "Lithium-Titanat-Batterie / LTO",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Lithium-Titanat-Batterie / LTO"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "Lithium-Titanat-Batterie / LTO"
+        },
+        {
+          "file": "begriffe/lithium-titanat-batterie/index.html",
+          "matched": "Lithium-Titanat-Batterie / LTO"
+        },
+        {
+          "file": "begriffe/zyklenfestigkeit/index.html",
+          "matched": "Lithium-Titanat-Batterie / LTO"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Lithium-Titanat-Batterie / LTO"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "natrium-ionen-batterie",
       "label": "Natrium-Ionen-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Natrium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Natrium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/natrium-ionen-batterie/index.html",
+          "matched": "Natrium-Ionen-Batterie"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Natrium-Ionen-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Natrium-Ionen-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "feststoffbatterie",
       "label": "Feststoffbatterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Feststoffbatterie"
+        },
+        {
+          "file": "begriffe/energiedichte/index.html",
+          "matched": "Feststoffbatterie"
+        },
+        {
+          "file": "begriffe/feststoffbatterie/index.html",
+          "matched": "Feststoffbatterie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Feststoffbatterie"
+        },
+        {
+          "file": "begriffe/lithium-ionen-batterie/index.html",
+          "matched": "Feststoffbatterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Feststoffbatterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "redox-flow-batterie",
       "label": "Redox-Flow-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Redox-Flow-Batterie"
+        },
+        {
+          "file": "begriffe/redox-flow-batterie/index.html",
+          "matched": "Redox-Flow-Batterie"
+        },
+        {
+          "file": "begriffe/speicher-energie/index.html",
+          "matched": "Redox-Flow-Batterie"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Redox-Flow-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Redox-Flow-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "blei-saeure-batterie",
       "label": "Blei-Säure-Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Blei-Säure-Batterie"
+        },
+        {
+          "file": "begriffe/blei-saeure-batterie/index.html",
+          "matched": "Blei-Säure-Batterie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Blei-Säure-Batterie"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "Blei-Säure-Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Blei-Säure-Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "superkondensator",
       "label": "Superkondensator",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Superkondensator"
+        },
+        {
+          "file": "begriffe/leistungsdichte/index.html",
+          "matched": "Superkondensator"
+        },
+        {
+          "file": "begriffe/speicher-energie/index.html",
+          "matched": "Superkondensator"
+        },
+        {
+          "file": "begriffe/superkondensator/index.html",
+          "matched": "Superkondensator"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Superkondensator"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "stationaerer-batteriespeicher",
       "label": "Stationärer Batteriespeicher",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batteriespeicher/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/energiemanagementsystem/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/gewerbespeicher/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/heimspeicher/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/natrium-ionen-batterie/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/netzspeicher/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/redox-flow-batterie/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/second-life-batterie/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Stationärer Batteriespeicher"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Stationärer Batteriespeicher"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "heimspeicher",
       "label": "Heimspeicher",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/heimspeicher/index.html",
+          "matched": "Heimspeicher"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Heimspeicher"
+        },
+        {
+          "file": "begriffe/niederspannung/index.html",
+          "matched": "Heimspeicher"
+        },
+        {
+          "file": "begriffe/prosumer/index.html",
+          "matched": "Heimspeicher"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Heimspeicher"
+        },
+        {
+          "file": "begriffe/vehicle-to-home/index.html",
+          "matched": "Heimspeicher"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Heimspeicher"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "gewerbespeicher",
       "label": "Gewerbespeicher",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/gewerbespeicher/index.html",
+          "matched": "Gewerbespeicher"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Gewerbespeicher"
+        },
+        {
+          "file": "begriffe/leistungspreis/index.html",
+          "matched": "Gewerbespeicher"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Gewerbespeicher"
+        },
+        {
+          "file": "begriffe/uebergabestation/index.html",
+          "matched": "Gewerbespeicher"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Gewerbespeicher"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "netzspeicher",
@@ -16757,7 +18153,27 @@
           "matched": "Netzspeicher"
         },
         {
+          "file": "begriffe/netzdienlichkeit/index.html",
+          "matched": "Netzspeicher"
+        },
+        {
+          "file": "begriffe/netzspeicher/index.html",
+          "matched": "Netzspeicher"
+        },
+        {
           "file": "begriffe/quantenbatterie/index.html",
+          "matched": "Netzspeicher"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Netzspeicher"
+        },
+        {
+          "file": "begriffe/systemkosten/index.html",
+          "matched": "Netzspeicher"
+        },
+        {
+          "file": "begriffe/vehicle-to-load/index.html",
           "matched": "Netzspeicher"
         },
         {
@@ -16770,13 +18186,74 @@
     {
       "termId": "pufferspeicher-ladepark",
       "label": "Pufferspeicher im Ladepark",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Pufferspeicher im Ladepark"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Pufferspeicher im Ladepark"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Pufferspeicher im Ladepark"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Pufferspeicher im Ladepark"
+        },
+        {
+          "file": "begriffe/pufferspeicher-ladepark/index.html",
+          "matched": "Pufferspeicher im Ladepark"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Pufferspeicher im Ladepark"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "batteriepass",
       "label": "Batteriepass",
       "suggestedPages": [
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/batteriepass/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/second-life-batterie/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "begriffe/state-of-health/index.html",
+          "matched": "Batteriepass"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batteriepass"
+        },
         {
           "file": "verstehen/regularien-standards/batterieverordnung/index.html",
           "matched": "Batteriepass"
@@ -16791,24 +18268,85 @@
     {
       "termId": "batterielebenszyklus",
       "label": "Batterielebenszyklus",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Batterielebenszyklus"
+        },
+        {
+          "file": "begriffe/batteriepass/index.html",
+          "matched": "Batterielebenszyklus"
+        },
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Batterielebenszyklus"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batterielebenszyklus"
+        },
+        {
+          "file": "begriffe/second-life-batterie/index.html",
+          "matched": "Batterielebenszyklus"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Batterielebenszyklus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "second-life-batterie",
       "label": "Second-Life-Batterie",
       "suggestedPages": [
         {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "Second Life"
+        },
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/batteriepass/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Second Life"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/second-life-batterie/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/state-of-health/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Second-Life-Batterie"
+        },
+        {
           "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
           "matched": "Second Life"
         },
         {
-          "file": "referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/index.html",
-          "matched": "Second Life"
-        },
-        {
-          "file": "referenz/volltext/index.html",
-          "matched": "Second Life"
+          "file": "glossar.html",
+          "matched": "Second-Life-Batterie"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -16816,44 +18354,223 @@
     {
       "termId": "batterierecycling",
       "label": "Batterierecycling",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/batteriepass/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/batterierohstoffe/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/black-mass/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/blei-saeure-batterie/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/direktrecycling-batterie/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/hydrometallurgie/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/lfp-batterie/index.html",
+          "matched": "Batterierecycling"
+        },
+        {
+          "file": "begriffe/pyrometallurgie/index.html",
+          "matched": "Batterierecycling"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "black-mass",
       "label": "Black Mass",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Black Mass"
+        },
+        {
+          "file": "begriffe/black-mass/index.html",
+          "matched": "Black Mass"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Black Mass"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "Black Mass"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Black Mass"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "pyrometallurgie",
       "label": "Pyrometallurgie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Pyrometallurgie"
+        },
+        {
+          "file": "begriffe/hydrometallurgie/index.html",
+          "matched": "Pyrometallurgie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Pyrometallurgie"
+        },
+        {
+          "file": "begriffe/pyrometallurgie/index.html",
+          "matched": "Pyrometallurgie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Pyrometallurgie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "hydrometallurgie",
       "label": "Hydrometallurgie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Hydrometallurgie"
+        },
+        {
+          "file": "begriffe/hydrometallurgie/index.html",
+          "matched": "Hydrometallurgie"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Hydrometallurgie"
+        },
+        {
+          "file": "begriffe/pyrometallurgie/index.html",
+          "matched": "Hydrometallurgie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Hydrometallurgie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "direktrecycling-batterie",
       "label": "Direktrecycling",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/batterierecycling/index.html",
+          "matched": "Direktrecycling"
+        },
+        {
+          "file": "begriffe/direktrecycling-batterie/index.html",
+          "matched": "Direktrecycling"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Direktrecycling"
+        },
+        {
+          "file": "begriffe/werterhalt/index.html",
+          "matched": "Direktrecycling"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Direktrecycling"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "recyclingeffizienz",
       "label": "Recyclingeffizienz",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/black-mass/index.html",
+          "matched": "Recyclingeffizienz"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Recyclingeffizienz"
+        },
+        {
+          "file": "begriffe/recyclingeffizienz/index.html",
+          "matched": "Recyclingeffizienz"
+        },
+        {
+          "file": "begriffe/recyclingquote/index.html",
+          "matched": "Recyclingeffizienz"
+        },
+        {
+          "file": "begriffe/rezyklatquote-batterie/index.html",
+          "matched": "Recyclingeffizienz"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Recyclingeffizienz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rezyklatquote-batterie",
       "label": "Rezyklatquote Batterie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Rezyklatquote Batterie"
+        },
+        {
+          "file": "begriffe/recyclingeffizienz/index.html",
+          "matched": "Rezyklatquote Batterie"
+        },
+        {
+          "file": "begriffe/rezyklatanteil/index.html",
+          "matched": "Rezyklatquote Batterie"
+        },
+        {
+          "file": "begriffe/rezyklatquote-batterie/index.html",
+          "matched": "Rezyklatquote Batterie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Rezyklatquote Batterie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "kritische-rohstoffe",
@@ -16864,7 +18581,31 @@
           "matched": "Kritische Rohstoffe"
         },
         {
+          "file": "begriffe/batterierohstoffe/index.html",
+          "matched": "Kritische Rohstoffe"
+        },
+        {
+          "file": "begriffe/black-mass/index.html",
+          "matched": "Kritische Rohstoffe"
+        },
+        {
+          "file": "begriffe/blei-saeure-batterie/index.html",
+          "matched": "Kritische Rohstoffe"
+        },
+        {
           "file": "begriffe/index.html",
+          "matched": "Kritische Rohstoffe"
+        },
+        {
+          "file": "begriffe/kritische-rohstoffe/index.html",
+          "matched": "Kritische Rohstoffe"
+        },
+        {
+          "file": "begriffe/nca-batterie/index.html",
+          "matched": "Kritische Rohstoffe"
+        },
+        {
+          "file": "begriffe/nmc-batterie/index.html",
           "matched": "Kritische Rohstoffe"
         },
         {
@@ -16882,30 +18623,6 @@
         {
           "file": "blog/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.html",
           "matched": "Kritische Rohstoffe"
-        },
-        {
-          "file": "glossar.html",
-          "matched": "Kritische Rohstoffe"
-        },
-        {
-          "file": "referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/index.html",
-          "matched": "Kritische Rohstoffe"
-        },
-        {
-          "file": "referenz/volltext/index.html",
-          "matched": "Kritische Rohstoffe"
-        },
-        {
-          "file": "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/index.html",
-          "matched": "Kritische Rohstoffe"
-        },
-        {
-          "file": "wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/index.html",
-          "matched": "Kritische Rohstoffe"
-        },
-        {
-          "file": "wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/index.html",
-          "matched": "Kritische Rohstoffe"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -16913,8 +18630,25 @@
     {
       "termId": "urban-mining-batterien",
       "label": "Urban Mining Batterien",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Urban Mining Batterien"
+        },
+        {
+          "file": "begriffe/urban-mining/index.html",
+          "matched": "Urban Mining Batterien"
+        },
+        {
+          "file": "begriffe/urban-mining-batterien/index.html",
+          "matched": "Urban Mining Batterien"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Urban Mining Batterien"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladeinfrastruktur",
@@ -16929,43 +18663,43 @@
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "begriffe/herkunftsnachweis-hkn/index.html",
+          "file": "begriffe/ac-laden/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "begriffe/index.html",
+          "file": "begriffe/ad-hoc-laden/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "bibliothek/agenda2030-sdg-esg-handout/index.html",
+          "file": "begriffe/akkumulator/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "file": "begriffe/anlagenpass/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "file": "begriffe/anschlusskosten/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html",
+          "file": "begriffe/anschlussleistung/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
+          "file": "begriffe/arbeitspreis/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "dokumente/woek-partei/index.html",
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "glossar.html",
+          "file": "begriffe/batterie/index.html",
           "matched": "Ladeinfrastruktur"
         },
         {
-          "file": "referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html",
+          "file": "begriffe/batteriealterung/index.html",
           "matched": "Ladeinfrastruktur"
         }
       ],
@@ -16974,69 +18708,423 @@
     {
       "termId": "ladepunkt",
       "label": "Ladepunkt",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladepunkt"
+        },
+        {
+          "file": "begriffe/ladeeinrichtung/index.html",
+          "matched": "Ladepunkt"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "Ladepunkt"
+        },
+        {
+          "file": "begriffe/ladepunkt/index.html",
+          "matched": "Ladepunkt"
+        },
+        {
+          "file": "begriffe/ladesaeule/index.html",
+          "matched": "Ladepunkt"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladepunkt"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladeeinrichtung",
       "label": "Ladeeinrichtung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/dc-laden/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "begriffe/ladeeinrichtung/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "begriffe/ladepunkt/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "begriffe/ladesaeule/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "begriffe/wallbox/index.html",
+          "matched": "Ladeeinrichtung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladeeinrichtung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladesaeule",
       "label": "Ladesäule",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Ladesäule"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladesäule"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "Ladesäule"
+        },
+        {
+          "file": "begriffe/ladepunkt/index.html",
+          "matched": "Ladesäule"
+        },
+        {
+          "file": "begriffe/ladesaeule/index.html",
+          "matched": "Ladesäule"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladesäule"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "wallbox",
       "label": "Wallbox",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "Wallbox"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Wallbox"
+        },
+        {
+          "file": "begriffe/ladeeinrichtung/index.html",
+          "matched": "Wallbox"
+        },
+        {
+          "file": "begriffe/typ-2-stecker/index.html",
+          "matched": "Wallbox"
+        },
+        {
+          "file": "begriffe/wallbox/index.html",
+          "matched": "Wallbox"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Wallbox"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladepark",
       "label": "Ladepark",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/ladehub/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/pufferspeicher-ladepark/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/thermal-runaway/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "begriffe/trafostation/index.html",
+          "matched": "Ladepark"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladepark"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladehub",
       "label": "Ladehub",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/depotladen/index.html",
+          "matched": "Ladehub"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladehub"
+        },
+        {
+          "file": "begriffe/ladehub/index.html",
+          "matched": "Ladehub"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Ladehub"
+        },
+        {
+          "file": "begriffe/megawatt-charging-system/index.html",
+          "matched": "Ladehub"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladehub"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "depotladen",
       "label": "Depotladen",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/depotladen/index.html",
+          "matched": "Depotladen"
+        },
+        {
+          "file": "begriffe/dynamisches-lastmanagement/index.html",
+          "matched": "Depotladen"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Depotladen"
+        },
+        {
+          "file": "begriffe/ladehub/index.html",
+          "matched": "Depotladen"
+        },
+        {
+          "file": "begriffe/megawatt-charging-system/index.html",
+          "matched": "Depotladen"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Depotladen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ac-laden",
       "label": "AC-Laden",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "begriffe/normalladen/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "begriffe/on-board-charger/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "begriffe/typ-2-stecker/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "begriffe/wallbox/index.html",
+          "matched": "AC-Laden"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "AC-Laden"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "dc-laden",
       "label": "DC-Laden",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/ccs-ladestecker/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/chademo/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/dc-laden/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "begriffe/schnellladen/index.html",
+          "matched": "DC-Laden"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "DC-Laden"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "hpc-charger",
       "label": "HPC-Charger",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ccs-ladestecker/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/dc-laden/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/ladeeinrichtung/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/leistungsdichte/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "HPC-Charger"
+        },
+        {
+          "file": "begriffe/pufferspeicher-ladepark/index.html",
+          "matched": "HPC-Charger"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "schnellladen",
       "label": "Schnellladen",
       "suggestedPages": [
         {
+          "file": "begriffe/ccs-ladestecker/index.html",
+          "matched": "Schnellladen"
+        },
+        {
+          "file": "begriffe/dc-laden/index.html",
+          "matched": "Schnellladen"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Schnellladen"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Schnellladen"
+        },
+        {
+          "file": "begriffe/leistungsdichte/index.html",
+          "matched": "Schnellladen"
+        },
+        {
+          "file": "begriffe/schnellladen/index.html",
+          "matched": "Schnellladen"
+        },
+        {
           "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "matched": "Schnellladen"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Schnellladen"
         }
       ],
@@ -17045,61 +19133,289 @@
     {
       "termId": "normalladen",
       "label": "Normalladen",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "Normalladen"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Normalladen"
+        },
+        {
+          "file": "begriffe/normalladen/index.html",
+          "matched": "Normalladen"
+        },
+        {
+          "file": "begriffe/smart-charging/index.html",
+          "matched": "Normalladen"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Normalladen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "megawatt-charging-system",
       "label": "Megawatt Charging System / MCS",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/depotladen/index.html",
+          "matched": "Megawatt Charging System / MCS"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Megawatt Charging System / MCS"
+        },
+        {
+          "file": "begriffe/ladehub/index.html",
+          "matched": "Megawatt Charging System / MCS"
+        },
+        {
+          "file": "begriffe/megawatt-charging-system/index.html",
+          "matched": "Megawatt Charging System / MCS"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Megawatt Charging System / MCS"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Megawatt Charging System / MCS"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ccs-ladestecker",
       "label": "CCS",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ccs-ladestecker/index.html",
+          "matched": "Combined Charging System"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Combined Charging System"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Combined Charging System"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "typ-2-stecker",
       "label": "Typ-2-Stecker",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "Typ-2-Stecker"
+        },
+        {
+          "file": "begriffe/ccs-ladestecker/index.html",
+          "matched": "Typ-2-Stecker"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Typ-2-Stecker"
+        },
+        {
+          "file": "begriffe/typ-2-stecker/index.html",
+          "matched": "Typ-2-Stecker"
+        },
+        {
+          "file": "begriffe/wallbox/index.html",
+          "matched": "Typ-2-Stecker"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Typ-2-Stecker"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "chademo",
       "label": "CHAdeMO",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/chademo/index.html",
+          "matched": "CHAdeMO"
+        },
+        {
+          "file": "begriffe/dc-laden/index.html",
+          "matched": "CHAdeMO"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "CHAdeMO"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "CHAdeMO"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "on-board-charger",
       "label": "On-Board-Charger",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "On-Board-Charger"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "On-Board-Charger"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "On-Board-Charger"
+        },
+        {
+          "file": "begriffe/on-board-charger/index.html",
+          "matched": "On-Board-Charger"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "On-Board-Charger"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladeleistung",
       "label": "Ladeleistung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/c-rate/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/ladesaeule/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/megawatt-charging-system/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/normalladen/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/on-board-charger/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/pufferspeicher-ladepark/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/schnellladen/index.html",
+          "matched": "Ladeleistung"
+        },
+        {
+          "file": "begriffe/state-of-charge/index.html",
+          "matched": "Ladeleistung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "anschlussleistung",
       "label": "Anschlussleistung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "begriffe/baukostenzuschuss/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Anschlussleistung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Anschlussleistung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "gleichzeitigkeit-ladeinfrastruktur",
       "label": "Gleichzeitigkeit",
       "suggestedPages": [
         {
+          "file": "begriffe/dynamisches-lastmanagement/index.html",
+          "matched": "Gleichzeitigkeit"
+        },
+        {
+          "file": "begriffe/gleichzeitigkeit-ladeinfrastruktur/index.html",
+          "matched": "Gleichzeitigkeit"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Gleichzeitigkeit"
+        },
+        {
+          "file": "begriffe/ladeleistung/index.html",
+          "matched": "Gleichzeitigkeit"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Gleichzeitigkeit"
+        },
+        {
           "file": "blog/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.html",
           "matched": "Gleichzeitigkeit"
         },
         {
           "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Gleichzeitigkeit"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Gleichzeitigkeit"
         },
         {
@@ -17112,134 +19428,732 @@
     {
       "termId": "dynamisches-lastmanagement",
       "label": "Dynamisches Lastmanagement",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/depotladen/index.html",
+          "matched": "Dynamisches Lastmanagement"
+        },
+        {
+          "file": "begriffe/dynamisches-lastmanagement/index.html",
+          "matched": "Dynamisches Lastmanagement"
+        },
+        {
+          "file": "begriffe/gleichzeitigkeit-ladeinfrastruktur/index.html",
+          "matched": "Dynamisches Lastmanagement"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Dynamisches Lastmanagement"
+        },
+        {
+          "file": "begriffe/lastmanagement/index.html",
+          "matched": "Dynamisches Lastmanagement"
+        },
+        {
+          "file": "begriffe/smart-charging/index.html",
+          "matched": "Dynamisches Lastmanagement"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Dynamisches Lastmanagement"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "energiemanagementsystem",
       "label": "Energiemanagementsystem / EMS",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/energiemanagementsystem/index.html",
+          "matched": "Energiemanagementsystem / EMS"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Energiemanagementsystem / EMS"
+        },
+        {
+          "file": "begriffe/smart-charging/index.html",
+          "matched": "Energiemanagementsystem / EMS"
+        },
+        {
+          "file": "begriffe/stationaerer-batteriespeicher/index.html",
+          "matched": "Energiemanagementsystem / EMS"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Energiemanagementsystem / EMS"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "smart-charging",
       "label": "Smart Charging",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/dynamischer-stromtarif/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/dynamisches-lastmanagement/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/energiemanagementsystem/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/normalladen/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/smart-charging/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/state-of-charge/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "begriffe/vehicle-to-grid/index.html",
+          "matched": "Smart Charging"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Smart Charging"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "bidirektionales-laden",
       "label": "Bidirektionales Laden",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/bidirektionales-laden/index.html",
+          "matched": "Bidirektionales Laden"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Bidirektionales Laden"
+        },
+        {
+          "file": "begriffe/vehicle-to-grid/index.html",
+          "matched": "Bidirektionales Laden"
+        },
+        {
+          "file": "begriffe/vehicle-to-home/index.html",
+          "matched": "Bidirektionales Laden"
+        },
+        {
+          "file": "begriffe/vehicle-to-load/index.html",
+          "matched": "Bidirektionales Laden"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Bidirektionales Laden"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "vehicle-to-home",
       "label": "Vehicle-to-Home",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/bidirektionales-laden/index.html",
+          "matched": "Vehicle-to-Home"
+        },
+        {
+          "file": "begriffe/heimspeicher/index.html",
+          "matched": "Vehicle-to-Home"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Vehicle-to-Home"
+        },
+        {
+          "file": "begriffe/vehicle-to-home/index.html",
+          "matched": "Vehicle-to-Home"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Vehicle-to-Home"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "vehicle-to-load",
       "label": "Vehicle-to-Load",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/bidirektionales-laden/index.html",
+          "matched": "Vehicle-to-Load"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Vehicle-to-Load"
+        },
+        {
+          "file": "begriffe/vehicle-to-load/index.html",
+          "matched": "Vehicle-to-Load"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Vehicle-to-Load"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "eichrecht-ladeinfrastruktur",
       "label": "Eichrecht Ladeinfrastruktur",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/eichrecht-ladeinfrastruktur/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/ladepunktbetreiber/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/plug-and-charge/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/wandlermessung/index.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Eichrecht Ladeinfrastruktur"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "roaming-ladeinfrastruktur",
       "label": "Roaming Ladeinfrastruktur",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "Roaming Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/elektromobilitaetsdienstleister/index.html",
+          "matched": "Roaming Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Roaming Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/ladepunktbetreiber/index.html",
+          "matched": "Roaming Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/roaming-ladeinfrastruktur/index.html",
+          "matched": "Roaming Ladeinfrastruktur"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Roaming Ladeinfrastruktur"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ad-hoc-laden",
       "label": "Ad-hoc-Laden",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "Ad-hoc-Laden"
+        },
+        {
+          "file": "begriffe/eichrecht-ladeinfrastruktur/index.html",
+          "matched": "Ad-hoc-Laden"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ad-hoc-Laden"
+        },
+        {
+          "file": "begriffe/roaming-ladeinfrastruktur/index.html",
+          "matched": "Ad-hoc-Laden"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ad-hoc-Laden"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladepunktbetreiber",
       "label": "Ladepunktbetreiber / CPO",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/eichrecht-ladeinfrastruktur/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/elektromobilitaetsdienstleister/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/ladeinfrastruktur/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/ladepunktbetreiber/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/ocpp/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "begriffe/roaming-ladeinfrastruktur/index.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladepunktbetreiber / CPO"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "elektromobilitaetsdienstleister",
       "label": "Elektromobilitätsdienstleister / EMP",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/elektromobilitaetsdienstleister/index.html",
+          "matched": "Elektromobilitätsdienstleister / EMP"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Elektromobilitätsdienstleister / EMP"
+        },
+        {
+          "file": "begriffe/ladepunktbetreiber/index.html",
+          "matched": "Elektromobilitätsdienstleister / EMP"
+        },
+        {
+          "file": "begriffe/roaming-ladeinfrastruktur/index.html",
+          "matched": "Elektromobilitätsdienstleister / EMP"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Elektromobilitätsdienstleister / EMP"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "backend-ladeinfrastruktur",
       "label": "Backend Ladeinfrastruktur",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "Backend Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Backend Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/ladepunktbetreiber/index.html",
+          "matched": "Backend Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/ocpp/index.html",
+          "matched": "Backend Ladeinfrastruktur"
+        },
+        {
+          "file": "begriffe/plug-and-charge/index.html",
+          "matched": "Backend Ladeinfrastruktur"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Backend Ladeinfrastruktur"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ocpp",
       "label": "OCPP",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "OCPP"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "OCPP"
+        },
+        {
+          "file": "begriffe/ladepunktbetreiber/index.html",
+          "matched": "OCPP"
+        },
+        {
+          "file": "begriffe/ocpp/index.html",
+          "matched": "OCPP"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "OCPP"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "plug-and-charge",
       "label": "Plug & Charge",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Plug and Charge"
+        },
+        {
+          "file": "begriffe/plug-and-charge/index.html",
+          "matched": "Plug and Charge"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Plug and Charge"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "niederspannung",
       "label": "Niederspannung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "begriffe/niederspannung/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "begriffe/niederspannungshauptverteilung/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "begriffe/trafostation/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "begriffe/umspannstation/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "begriffe/verteilnetz/index.html",
+          "matched": "Niederspannung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Niederspannung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "mittelspannung",
       "label": "Mittelspannung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/akkumulator/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "Mittelspannung"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "Mittelspannung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "hochspannung",
       "label": "Hochspannung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hochspannung/index.html",
+          "matched": "Hochspannung"
+        },
+        {
+          "file": "begriffe/hoechstspannung/index.html",
+          "matched": "Hochspannung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Hochspannung"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Hochspannung"
+        },
+        {
+          "file": "begriffe/umspannwerk/index.html",
+          "matched": "Hochspannung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Hochspannung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "hoechstspannung",
       "label": "Höchstspannung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hochspannung/index.html",
+          "matched": "Höchstspannung"
+        },
+        {
+          "file": "begriffe/hoechstspannung/index.html",
+          "matched": "Höchstspannung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Höchstspannung"
+        },
+        {
+          "file": "begriffe/uebertragungsnetz/index.html",
+          "matched": "Höchstspannung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Höchstspannung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "umspannwerk",
       "label": "Umspannwerk",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hochspannung/index.html",
+          "matched": "Umspannwerk"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Umspannwerk"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Umspannwerk"
+        },
+        {
+          "file": "begriffe/transformator/index.html",
+          "matched": "Umspannwerk"
+        },
+        {
+          "file": "begriffe/umspannwerk/index.html",
+          "matched": "Umspannwerk"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Umspannwerk"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "umspannstation",
       "label": "Umspannstation",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Umspannstation"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Umspannstation"
+        },
+        {
+          "file": "begriffe/trafostation/index.html",
+          "matched": "Umspannstation"
+        },
+        {
+          "file": "begriffe/transformator/index.html",
+          "matched": "Umspannstation"
+        },
+        {
+          "file": "begriffe/umspannstation/index.html",
+          "matched": "Umspannstation"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Umspannstation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "trafostation",
       "label": "Trafostation",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "begriffe/trafostation/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "begriffe/transformator/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "begriffe/umspannstation/index.html",
+          "matched": "Trafostation"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Trafostation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "transformator",
       "label": "Transformator / Trafo",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Trafo"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Transformator / Trafo"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Trafo"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Trafo"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Trafo"
+        },
+        {
+          "file": "begriffe/trafostation/index.html",
+          "matched": "Transformator / Trafo"
+        },
+        {
+          "file": "begriffe/transformator/index.html",
+          "matched": "Transformator / Trafo"
+        },
+        {
+          "file": "begriffe/umspannstation/index.html",
+          "matched": "Transformator / Trafo"
+        },
+        {
+          "file": "begriffe/umspannwerk/index.html",
+          "matched": "Transformator / Trafo"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Transformator / Trafo"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "uebergabestation",
@@ -17250,224 +20164,1181 @@
     {
       "termId": "netzanschlusspunkt",
       "label": "Netzanschlusspunkt",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "begriffe/kundenanlage/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "begriffe/netzanschlussbegehren/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "begriffe/netzanschlusspunkt/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "begriffe/netzvertraeglichkeitspruefung/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "begriffe/tab-mittelspannung/index.html",
+          "matched": "Netzanschlusspunkt"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Netzanschlusspunkt"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "netzanschlussbegehren",
       "label": "Netzanschlussbegehren",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Netzanschlussbegehren"
+        },
+        {
+          "file": "begriffe/netzanschlussbegehren/index.html",
+          "matched": "Netzanschlussbegehren"
+        },
+        {
+          "file": "begriffe/netzanschlusspunkt/index.html",
+          "matched": "Netzanschlussbegehren"
+        },
+        {
+          "file": "begriffe/netzvertraeglichkeitspruefung/index.html",
+          "matched": "Netzanschlussbegehren"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Netzanschlussbegehren"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "netzvertraeglichkeitspruefung",
       "label": "Netzverträglichkeitsprüfung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Netzverträglichkeitsprüfung"
+        },
+        {
+          "file": "begriffe/netzanschlussbegehren/index.html",
+          "matched": "Netzverträglichkeitsprüfung"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Netzverträglichkeitsprüfung"
+        },
+        {
+          "file": "begriffe/netzanschlusspunkt/index.html",
+          "matched": "Netzverträglichkeitsprüfung"
+        },
+        {
+          "file": "begriffe/netzvertraeglichkeitspruefung/index.html",
+          "matched": "Netzverträglichkeitsprüfung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Netzverträglichkeitsprüfung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "baukostenzuschuss",
       "label": "Baukostenzuschuss",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "Baukostenzuschuss"
+        },
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Baukostenzuschuss"
+        },
+        {
+          "file": "begriffe/baukostenzuschuss/index.html",
+          "matched": "Baukostenzuschuss"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Baukostenzuschuss"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Baukostenzuschuss"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Baukostenzuschuss"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "anschlusskosten",
       "label": "Anschlusskosten",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "Anschlusskosten"
+        },
+        {
+          "file": "begriffe/baukostenzuschuss/index.html",
+          "matched": "Anschlusskosten"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Anschlusskosten"
+        },
+        {
+          "file": "begriffe/netzanschlusspunkt/index.html",
+          "matched": "Anschlusskosten"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Anschlusskosten"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "netzanschlussleistung",
       "label": "Netzanschlussleistung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/baukostenzuschuss/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/gleichzeitigkeit-ladeinfrastruktur/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/megawatt-charging-system/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/netzvertraeglichkeitspruefung/index.html",
+          "matched": "Netzanschlussleistung"
+        },
+        {
+          "file": "begriffe/pufferspeicher-ladepark/index.html",
+          "matched": "Netzanschlussleistung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "kundenanlage",
       "label": "Kundenanlage",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Kundenanlage"
+        },
+        {
+          "file": "begriffe/kundenanlage/index.html",
+          "matched": "Kundenanlage"
+        },
+        {
+          "file": "begriffe/niederspannungshauptverteilung/index.html",
+          "matched": "Kundenanlage"
+        },
+        {
+          "file": "begriffe/uebergabestation/index.html",
+          "matched": "Kundenanlage"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Kundenanlage"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "mittelspannungsschaltanlage",
       "label": "Mittelspannungsschaltanlage",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Mittelspannungsschaltanlage"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Mittelspannungsschaltanlage"
+        },
+        {
+          "file": "begriffe/mittelspannungsschaltanlage/index.html",
+          "matched": "Mittelspannungsschaltanlage"
+        },
+        {
+          "file": "begriffe/schutztechnik/index.html",
+          "matched": "Mittelspannungsschaltanlage"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Mittelspannungsschaltanlage"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "niederspannungshauptverteilung",
       "label": "Niederspannungshauptverteilung / NSHV",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Niederspannungshauptverteilung / NSHV"
+        },
+        {
+          "file": "begriffe/kundenanlage/index.html",
+          "matched": "Niederspannungshauptverteilung / NSHV"
+        },
+        {
+          "file": "begriffe/niederspannung/index.html",
+          "matched": "Niederspannungshauptverteilung / NSHV"
+        },
+        {
+          "file": "begriffe/niederspannungshauptverteilung/index.html",
+          "matched": "Niederspannungshauptverteilung / NSHV"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Niederspannungshauptverteilung / NSHV"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "messwandler",
       "label": "Messwandler",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Messwandler"
+        },
+        {
+          "file": "begriffe/messwandler/index.html",
+          "matched": "Messwandler"
+        },
+        {
+          "file": "begriffe/messwandlerschrank/index.html",
+          "matched": "Messwandler"
+        },
+        {
+          "file": "begriffe/wandlermessung/index.html",
+          "matched": "Messwandler"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Messwandler"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "messwandlerschrank",
       "label": "Messwandlerschrank",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Messwandlerschrank"
+        },
+        {
+          "file": "begriffe/messwandler/index.html",
+          "matched": "Messwandlerschrank"
+        },
+        {
+          "file": "begriffe/messwandlerschrank/index.html",
+          "matched": "Messwandlerschrank"
+        },
+        {
+          "file": "begriffe/wandlermessung/index.html",
+          "matched": "Messwandlerschrank"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Messwandlerschrank"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "wandlermessung",
       "label": "Wandlermessung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/eichrecht-ladeinfrastruktur/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "begriffe/messwandler/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "begriffe/messwandlerschrank/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "begriffe/rlm-messung/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "begriffe/uebergabestation/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "begriffe/wandlermessung/index.html",
+          "matched": "Wandlermessung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Wandlermessung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rlm-messung",
       "label": "RLM-Messung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "RLM-Messung"
+        },
+        {
+          "file": "begriffe/lastgang/index.html",
+          "matched": "RLM-Messung"
+        },
+        {
+          "file": "begriffe/leistungspreis/index.html",
+          "matched": "RLM-Messung"
+        },
+        {
+          "file": "begriffe/rlm-messung/index.html",
+          "matched": "RLM-Messung"
+        },
+        {
+          "file": "begriffe/standardlastprofil/index.html",
+          "matched": "RLM-Messung"
+        },
+        {
+          "file": "begriffe/wandlermessung/index.html",
+          "matched": "RLM-Messung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "RLM-Messung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "standardlastprofil",
       "label": "Standardlastprofil / SLP",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Standardlastprofil / SLP"
+        },
+        {
+          "file": "begriffe/lastgang/index.html",
+          "matched": "Standardlastprofil / SLP"
+        },
+        {
+          "file": "begriffe/rlm-messung/index.html",
+          "matched": "Standardlastprofil / SLP"
+        },
+        {
+          "file": "begriffe/standardlastprofil/index.html",
+          "matched": "Standardlastprofil / SLP"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Standardlastprofil / SLP"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "leistungspreis",
       "label": "Leistungspreis",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Leistungspreis"
+        },
+        {
+          "file": "begriffe/gewerbespeicher/index.html",
+          "matched": "Leistungspreis"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Leistungspreis"
+        },
+        {
+          "file": "begriffe/leistungspreis/index.html",
+          "matched": "Leistungspreis"
+        },
+        {
+          "file": "begriffe/rlm-messung/index.html",
+          "matched": "Leistungspreis"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Leistungspreis"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "arbeitspreis",
       "label": "Arbeitspreis",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "Arbeitspreis"
+        },
+        {
+          "file": "begriffe/eichrecht-ladeinfrastruktur/index.html",
+          "matched": "Arbeitspreis"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Arbeitspreis"
+        },
+        {
+          "file": "begriffe/leistungspreis/index.html",
+          "matched": "Arbeitspreis"
+        },
+        {
+          "file": "begriffe/strompreisbestandteile/index.html",
+          "matched": "Arbeitspreis"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Arbeitspreis"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "leistungsfaktor",
       "label": "Leistungsfaktor",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/blindleistung/index.html",
+          "matched": "Leistungsfaktor"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Leistungsfaktor"
+        },
+        {
+          "file": "begriffe/leistungsfaktor/index.html",
+          "matched": "Leistungsfaktor"
+        },
+        {
+          "file": "begriffe/spannungsqualitaet/index.html",
+          "matched": "Leistungsfaktor"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Leistungsfaktor"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "oberschwingungen",
       "label": "Oberschwingungen",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Oberschwingungen"
+        },
+        {
+          "file": "begriffe/oberschwingungen/index.html",
+          "matched": "Oberschwingungen"
+        },
+        {
+          "file": "begriffe/spannungsqualitaet/index.html",
+          "matched": "Oberschwingungen"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Oberschwingungen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "spannungsqualitaet",
       "label": "Power Quality / Spannungsqualität",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Power Quality / Spannungsqualität"
+        },
+        {
+          "file": "begriffe/leistungsfaktor/index.html",
+          "matched": "Power Quality / Spannungsqualität"
+        },
+        {
+          "file": "begriffe/oberschwingungen/index.html",
+          "matched": "Power Quality / Spannungsqualität"
+        },
+        {
+          "file": "begriffe/spannungsqualitaet/index.html",
+          "matched": "Power Quality / Spannungsqualität"
+        },
+        {
+          "file": "begriffe/technische-anschlussregel/index.html",
+          "matched": "Power Quality / Spannungsqualität"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Power Quality / Spannungsqualität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "schutztechnik",
       "label": "Schutztechnik",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/hpc-charger/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/messwandler/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/mittelspannungsschaltanlage/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/schutztechnik/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "begriffe/thermal-runaway/index.html",
+          "matched": "Schutztechnik"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Schutztechnik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "fernwirktechnik",
       "label": "Fernwirktechnik",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/fernwirktechnik/index.html",
+          "matched": "Fernwirktechnik"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Fernwirktechnik"
+        },
+        {
+          "file": "begriffe/smart-grid/index.html",
+          "matched": "Fernwirktechnik"
+        },
+        {
+          "file": "begriffe/technische-anschlussregel/index.html",
+          "matched": "Fernwirktechnik"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Fernwirktechnik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "technische-anschlussregel",
       "label": "Technische Anschlussregel / TAR",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/fernwirktechnik/index.html",
+          "matched": "Technische Anschlussregel / TAR"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Technische Anschlussregel / TAR"
+        },
+        {
+          "file": "begriffe/spannungsqualitaet/index.html",
+          "matched": "Technische Anschlussregel / TAR"
+        },
+        {
+          "file": "begriffe/tab-mittelspannung/index.html",
+          "matched": "Technische Anschlussregel / TAR"
+        },
+        {
+          "file": "begriffe/tar-mittelspannung/index.html",
+          "matched": "Technische Anschlussregel / TAR"
+        },
+        {
+          "file": "begriffe/technische-anschlussregel/index.html",
+          "matched": "Technische Anschlussregel / TAR"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Technische Anschlussregel / TAR"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "tar-mittelspannung",
       "label": "TAR Mittelspannung / VDE-AR-N 4110",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/ac-laden/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/ad-hoc-laden/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/akkumulator/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/anschlusskosten/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/anschlussleistung/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/arbeitspreis/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/backend-ladeinfrastruktur/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/batterie/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/batteriealterung/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/batterielebenszyklus/index.html",
+          "matched": "VDE-AR-N 4110"
+        },
+        {
+          "file": "begriffe/batteriemanagementsystem/index.html",
+          "matched": "VDE-AR-N 4110"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "tab-mittelspannung",
       "label": "TAB Mittelspannung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "TAB Mittelspannung"
+        },
+        {
+          "file": "begriffe/netzanschlusspunkt/index.html",
+          "matched": "TAB Mittelspannung"
+        },
+        {
+          "file": "begriffe/tab-mittelspannung/index.html",
+          "matched": "TAB Mittelspannung"
+        },
+        {
+          "file": "begriffe/tar-mittelspannung/index.html",
+          "matched": "TAB Mittelspannung"
+        },
+        {
+          "file": "begriffe/technische-anschlussregel/index.html",
+          "matched": "TAB Mittelspannung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "TAB Mittelspannung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "ladepark-mittelspannungsanschluss",
       "label": "Ladepark-Mittelspannungsanschluss",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        },
+        {
+          "file": "begriffe/ladepark/index.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        },
+        {
+          "file": "begriffe/ladepark-mittelspannungsanschluss/index.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        },
+        {
+          "file": "begriffe/mittelspannung/index.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        },
+        {
+          "file": "begriffe/netzanschlussleistung/index.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        },
+        {
+          "file": "begriffe/trafostation/index.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Ladepark-Mittelspannungsanschluss"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "windrad-recycling",
       "label": "Windrad-Recycling",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Windrad-Recycling"
+        },
+        {
+          "file": "begriffe/repowering/index.html",
+          "matched": "Windrad-Recycling"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Windrad-Recycling"
+        },
+        {
+          "file": "begriffe/rueckbau-windenergieanlagen/index.html",
+          "matched": "Windrad-Recycling"
+        },
+        {
+          "file": "begriffe/windenergieanlage-lebenszyklus/index.html",
+          "matched": "Windrad-Recycling"
+        },
+        {
+          "file": "begriffe/windrad-recycling/index.html",
+          "matched": "Windrad-Recycling"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Windrad-Recycling"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rueckbau-windenergieanlagen",
       "label": "Rückbau von Windenergieanlagen",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Rückbau von Windenergieanlagen"
+        },
+        {
+          "file": "begriffe/repowering/index.html",
+          "matched": "Rückbau von Windenergieanlagen"
+        },
+        {
+          "file": "begriffe/rueckbau-windenergieanlagen/index.html",
+          "matched": "Rückbau von Windenergieanlagen"
+        },
+        {
+          "file": "begriffe/rueckbauverpflichtung/index.html",
+          "matched": "Rückbau von Windenergieanlagen"
+        },
+        {
+          "file": "begriffe/windrad-recycling/index.html",
+          "matched": "Rückbau von Windenergieanlagen"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Rückbau von Windenergieanlagen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "repowering",
       "label": "Repowering",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "begriffe/repowering/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "begriffe/rueckbau-windenergieanlagen/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "begriffe/windenergie/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "begriffe/windenergieanlage-lebenszyklus/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "begriffe/windrad-recycling/index.html",
+          "matched": "Repowering"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Repowering"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rotorblatt-recycling",
       "label": "Rotorblatt-Recycling",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/carbonfaserverstaerkter-kunststoff/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/faserverbundwerkstoff/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/glasfaserverstaerkter-kunststoff/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/repowering/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/windrad-recycling/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "begriffe/zementverwertung-rotorblaetter/index.html",
+          "matched": "Rotorblatt-Recycling"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Rotorblatt-Recycling"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "faserverbundwerkstoff",
       "label": "Faserverbundwerkstoff",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/carbonfaserverstaerkter-kunststoff/index.html",
+          "matched": "Faserverbundwerkstoff"
+        },
+        {
+          "file": "begriffe/faserverbundwerkstoff/index.html",
+          "matched": "Faserverbundwerkstoff"
+        },
+        {
+          "file": "begriffe/glasfaserverstaerkter-kunststoff/index.html",
+          "matched": "Faserverbundwerkstoff"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Faserverbundwerkstoff"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Faserverbundwerkstoff"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Faserverbundwerkstoff"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "glasfaserverstaerkter-kunststoff",
       "label": "Glasfaserverstärkter Kunststoff / GFK",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/faserverbundwerkstoff/index.html",
+          "matched": "Glasfaserverstärkter Kunststoff / GFK"
+        },
+        {
+          "file": "begriffe/glasfaserverstaerkter-kunststoff/index.html",
+          "matched": "Glasfaserverstärkter Kunststoff / GFK"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Glasfaserverstärkter Kunststoff / GFK"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Glasfaserverstärkter Kunststoff / GFK"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Glasfaserverstärkter Kunststoff / GFK"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "carbonfaserverstaerkter-kunststoff",
       "label": "Carbonfaserverstärkter Kunststoff / CFK",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/carbonfaserverstaerkter-kunststoff/index.html",
+          "matched": "Carbonfaserverstärkter Kunststoff / CFK"
+        },
+        {
+          "file": "begriffe/faserverbundwerkstoff/index.html",
+          "matched": "Carbonfaserverstärkter Kunststoff / CFK"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Carbonfaserverstärkter Kunststoff / CFK"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Carbonfaserverstärkter Kunststoff / CFK"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Carbonfaserverstärkter Kunststoff / CFK"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "zementverwertung-rotorblaetter",
       "label": "Zementverwertung Rotorblätter",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Zementverwertung Rotorblätter"
+        },
+        {
+          "file": "begriffe/recycling/index.html",
+          "matched": "Zementverwertung Rotorblätter"
+        },
+        {
+          "file": "begriffe/rotorblatt-recycling/index.html",
+          "matched": "Zementverwertung Rotorblätter"
+        },
+        {
+          "file": "begriffe/zementverwertung-rotorblaetter/index.html",
+          "matched": "Zementverwertung Rotorblätter"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Zementverwertung Rotorblätter"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "windenergieanlage-lebenszyklus",
       "label": "Windenergieanlage Lebenszyklus",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Windenergieanlage Lebenszyklus"
+        },
+        {
+          "file": "begriffe/windenergieanlage-lebenszyklus/index.html",
+          "matched": "Windenergieanlage Lebenszyklus"
+        },
+        {
+          "file": "begriffe/windrad-recycling/index.html",
+          "matched": "Windenergieanlage Lebenszyklus"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Windenergieanlage Lebenszyklus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rueckbauverpflichtung",
       "label": "Rückbauverpflichtung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/index.html",
+          "matched": "Rückbauverpflichtung"
+        },
+        {
+          "file": "begriffe/rueckbau-windenergieanlagen/index.html",
+          "matched": "Rückbauverpflichtung"
+        },
+        {
+          "file": "begriffe/rueckbaustandard/index.html",
+          "matched": "Rückbauverpflichtung"
+        },
+        {
+          "file": "begriffe/rueckbauverpflichtung/index.html",
+          "matched": "Rückbauverpflichtung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Rückbauverpflichtung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rueckbaustandard",
       "label": "Rückbaustandard",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "Rückbaustandard"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Rückbaustandard"
+        },
+        {
+          "file": "begriffe/rueckbaustandard/index.html",
+          "matched": "Rückbaustandard"
+        },
+        {
+          "file": "begriffe/rueckbauverpflichtung/index.html",
+          "matched": "Rückbaustandard"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Rückbaustandard"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "anlagenpass",
       "label": "Anlagenpass",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "begriffe/anlagenpass/index.html",
+          "matched": "Anlagenpass"
+        },
+        {
+          "file": "begriffe/index.html",
+          "matched": "Anlagenpass"
+        },
+        {
+          "file": "begriffe/materialpass/index.html",
+          "matched": "Anlagenpass"
+        },
+        {
+          "file": "begriffe/rueckbaustandard/index.html",
+          "matched": "Anlagenpass"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Anlagenpass"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     }
   ]
 }

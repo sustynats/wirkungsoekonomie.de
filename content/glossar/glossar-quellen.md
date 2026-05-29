@@ -159,6 +159,16 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - SMARD: So funktioniert der Strommarkt, https://www.smard.de/page/en/wiki-article/5884/5840/this-is-how-the-electricity-market-works
 - IEA Glossary / Demand Response, https://www.iea.org/glossary
 - IEA Electricity Market Design, https://www.iea.org/reports/electricity-market-design
+- IEA: Energy Security, https://www.iea.org/topics/energy-security
+- Agora Energiewende: Strommarktdesign und Energiewende, https://www.agora-energiewende.de/
+- SMARD: Strommarkt, Merit Order und Netzebenen, https://www.smard.de/
+- Umweltbundesamt: Energie und Emissionen, https://www.umweltbundesamt.de/themen/klima-energie
+- AG Energiebilanzen, https://ag-energiebilanzen.de/
+- VDE FNN: technische Anschlussregeln, https://www.vde.com/de/fnn/themen/tar
+- ACER: European energy market regulation, https://www.acer.europa.eu/
+- Interne WÖk-Quelle: Die neue Ordnung des Wohlstands 2026, Energie als Betriebssystem moderner Gesellschaft
+- Interne WÖk-Quelle: Systemmodell der Wirkungsökonomie, kommunale Energie, Energieautonomie, Speicher, Lastmanagement, Wärmenetze
+- Interne WÖk-Quelle: WÖk Master Items zu SDG 7, erneuerbaren Energien, Energieeffizienz, spezifischen Stromemissionen, Energiearmut, Netzverlusten und Energiedaten in Lieferketten
 
 ## Batterien / Ladeinfrastruktur / Netzanschluss
 

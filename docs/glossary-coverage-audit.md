@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T18:55:55.039Z
+Stand: 2026-05-29T19:06:30.158Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 805 |
+| Begriffe im klassischen Glossar | 831 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1788 |
+| Alias-Einträge | 1819 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -95,6 +95,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Blauer Wasserstoff | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Blei-Säure-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Blindleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
+| Bürgerenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Business Model | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Business Model Canvas | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Business Value | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
@@ -154,6 +155,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Effizienz | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | EFRAG | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Eichrecht Ladeinfrastruktur | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Eigenversorgung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Einspeisemanagement | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Einspeisevergütung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Elektromobilität | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -167,10 +169,16 @@ Stand: 2026-05-29T18:55:55.039Z
 | Endenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Energie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Energiearmut | Grundbegriff | ja | - | ja | ja | ok |
+| Energieautonomie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Energiedichte | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Energieeffizienz | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Energiegemeinschaft | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Energieinfrastruktur | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Energiemanagementsystem / EMS | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Energiesicherheit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Energieumwandlung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Energiewirtschaft | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Energiewirtschaftsgesetz / EnWG | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Energy-only-Markt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Entfremdung | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Entropie | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
@@ -211,6 +219,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Finanzmarktkapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Fit for 55 | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Flexibilität im Energiesystem | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Flexibilitätsmarkt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Folgencheck | Grundbegriff | ja | - | ja | ja | ok |
 | Folgewirkung | WÖk-Begriff | ja | - | ja | ja | ok |
 | Forced Labour Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
@@ -324,6 +333,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Just Transition Mechanism | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Kannibalisierungseffekt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kapazitätsmarkt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Kapazitätsreserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kapital | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Kapital als Machtverhältnis | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Kapital als Werkzeug | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
@@ -347,6 +357,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Kognitive Dissonanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kohärenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kohlekraftwerk | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Kommunale Energie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kommunismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Komplexitätsmanagement | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Komponentenrückgewinnung | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
@@ -356,12 +367,14 @@ Stand: 2026-05-29T18:55:55.039Z
 | Konstruktives Narrativ | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Konzessionsabgabe | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kosten des Nicht-Handelns | Grundbegriff | ja | - | ja | ja | ok |
+| Kraft-Wärme-Kopplung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kreative Rekonstruktion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Kreislaufblindheit | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Kreislauffähigkeit | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Kreislaufgrad | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Kreislaufwirkung | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Kreislaufwirtschaft | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
+| Kritische Energieinfrastruktur | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Kritische Rohstoffe | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Kundenanlage | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Kundennutzen | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
@@ -420,6 +433,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Messwandlerschrank | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Meta-kognitive Intervention | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Metakommunikation | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
+| Mieterstrom | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Mindestschutz / Minimum Safeguards | Sustainable Finance | ja | ja | ja | ja | ok |
 | Minutenreserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Mittelspannung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -450,9 +464,11 @@ Stand: 2026-05-29T18:55:55.039Z
 | Netzanschlusspunkt | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Netzausbau | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzdienlichkeit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Netzebene | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzengpass | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzentgelt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzentgeltsystematik | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Netzreserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzspeicher | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Netzverlust | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Netzverträglichkeitsprüfung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -540,6 +556,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Quantensimulation | Quantenphysik, Quantenmaterialien und Zukunftstechnologien | ja | - | ja | ja | ok |
 | Quantensolarzelle | Quantenphysik, Quantenmaterialien und Zukunftstechnologien | ja | - | ja | ja | ok |
 | Quantentechnologie | Quantenphysik, Quantenmaterialien und Zukunftstechnologien | ja | - | ja | ja | ok |
+| Quartiersenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Quartierswirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Quellenklarheit | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Raubtierkapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
@@ -552,10 +569,12 @@ Stand: 2026-05-29T18:55:55.039Z
 | Recyclingeffizienz | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Recyclingquote | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Redispatch | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Redispatch 2.0 | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Redox-Flow-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Reframing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Refurbishment / Aufarbeitung | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Regelenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Regelenergiemarkt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Regeneration / regenerative Wirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Regenerative Landwirtschaft | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Rekombination / neue Kombination | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
@@ -567,6 +586,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Repowering | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Reproduktive Arbeit | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Reservekraftwerk | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Residual Emissions | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Residuallast | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Resilienz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -625,6 +645,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Smart Charging | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Smart Grid | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Smart Meter | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Smart Meter Gateway | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Social Credit | Schutzbegriff | ja | - | ja | ja | ok |
 | Social Taxonomy / Sozialtaxonomie | Sustainable Finance | ja | ja | ja | ja | ok |
 | Solarthermie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -640,6 +661,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | St. Galler Management-Modell | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Staatskapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Staatssozialismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Stadtwerke | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Stafford Beer | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Stakeholder-Kapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Standardlastprofil / SLP | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -649,12 +671,14 @@ Stand: 2026-05-29T18:55:55.039Z
 | Status-quo-Bias | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Steuerungsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Stranded Assets | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Strategische Reserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strategisches Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Stressreaktion | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Stromgestehungskosten | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strommarkt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strommarktdesign | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Stromnetz | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| StromNEV | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strompreisbestandteile | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Stromsteuer | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strukturdeterminiertheit | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
@@ -725,6 +749,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Verlustaversion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Verlustleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Vermeidene Schäden / vermiedene Folgekosten | Grundbegriff | ja | - | ja | ja | ok |
+| Versorgungssicherheit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Verstärkungslernen | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Verteilnetz | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Vertrauen | Demokratiebegriff | ja | - | ja | ja | ok |
@@ -742,6 +767,7 @@ Stand: 2026-05-29T18:55:55.039Z
 | Wandlermessung | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Warenfetisch | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Wärmepumpe | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Wärmespeicher | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Warmmietenneutralität | Grundbegriff | ja | - | ja | ja | ok |
 | Wartung / Maintenance | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Wasserkraft | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |

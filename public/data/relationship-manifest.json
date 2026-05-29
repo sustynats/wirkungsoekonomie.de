@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T18:56:52.187Z",
+  "generatedAt": "2026-05-29T19:07:36.033Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -42,7 +42,8 @@
         "redispatch",
         "erneuerbare-energien",
         "netzengpass",
-        "einspeisemanagement"
+        "einspeisemanagement",
+        "redispatch-2-0"
       ],
       "documents": []
     },
@@ -324,7 +325,9 @@
         "gesicherte-leistung",
         "dunkelflaute",
         "kapazitaetsmarkt",
-        "residuallast"
+        "residuallast",
+        "versorgungssicherheit",
+        "reservekraftwerk"
       ],
       "documents": []
     },
@@ -464,7 +467,8 @@
         "quantenbatterie",
         "vehicle-to-grid",
         "elektromobilitaet",
-        "stationaerer-batteriespeicher"
+        "stationaerer-batteriespeicher",
+        "regelenergiemarkt"
       ],
       "documents": []
     },
@@ -704,6 +708,17 @@
         "wirkleistung",
         "verlustleistung",
         "leistungsfaktor"
+      ],
+      "documents": []
+    },
+    "buergerenergie": {
+      "terms": [
+        "energieautonomie",
+        "energiegemeinschaft",
+        "genossenschaft",
+        "stadtwerke",
+        "energiewirtschaft",
+        "kommunale-energie"
       ],
       "documents": []
     },
@@ -999,7 +1014,8 @@
       "terms": [
         "wirkungshaushalt",
         "skandinavisches-modell",
-        "wohlfahrtsstaat"
+        "wohlfahrtsstaat",
+        "stadtwerke"
       ],
       "documents": []
     },
@@ -1057,7 +1073,8 @@
         "dynamischer-stromtarif",
         "netzdienlichkeit",
         "flexibilitaet-energiesystem",
-        "spitzenlast"
+        "spitzenlast",
+        "flexibilitaetsmarkt"
       ],
       "documents": []
     },
@@ -1129,7 +1146,8 @@
         "commons",
         "wirkungsrat",
         "genossenschaft",
-        "machtkonzentration"
+        "machtkonzentration",
+        "energiegemeinschaft"
       ],
       "documents": []
     },
@@ -1245,7 +1263,8 @@
       "terms": [
         "residuallast",
         "langzeitspeicher",
-        "backup-kapazitaet"
+        "backup-kapazitaet",
+        "versorgungssicherheit"
       ],
       "documents": []
     },
@@ -1254,7 +1273,8 @@
         "demand-response",
         "smart-meter",
         "messstellenbetrieb",
-        "smart-charging"
+        "smart-charging",
+        "smart-meter-gateway"
       ],
       "documents": []
     },
@@ -1321,6 +1341,16 @@
         "ladepunktbetreiber",
         "ad-hoc-laden",
         "plug-and-charge"
+      ],
+      "documents": []
+    },
+    "eigenversorgung": {
+      "terms": [
+        "prosumer",
+        "energieautonomie",
+        "heimspeicher",
+        "mieterstrom",
+        "energiegemeinschaft"
       ],
       "documents": []
     },
@@ -1432,7 +1462,8 @@
       "terms": [
         "primaerenergie",
         "endenergie",
-        "nutzenergie"
+        "nutzenergie",
+        "energiewirtschaft"
       ],
       "documents": [],
       "journalArticles": [
@@ -1447,7 +1478,19 @@
         "wirkungssteuer",
         "wirkungshaushalt",
         "wohnwirkung",
-        "warmmietenneutralitaet"
+        "warmmietenneutralitaet",
+        "energiewirtschaft"
+      ],
+      "documents": []
+    },
+    "energieautonomie": {
+      "terms": [
+        "buergerenergie",
+        "kommunale-energie",
+        "prosumer",
+        "eigenversorgung",
+        "energiewirtschaft",
+        "energiesicherheit"
       ],
       "documents": []
     },
@@ -1468,10 +1511,37 @@
       ],
       "documents": []
     },
+    "energiegemeinschaft": {
+      "terms": [
+        "buergerenergie",
+        "eigenversorgung",
+        "prosumer",
+        "dezentralisierung"
+      ],
+      "documents": []
+    },
+    "energieinfrastruktur": {
+      "terms": [
+        "kritische-energieinfrastruktur",
+        "stromnetz",
+        "speicher-energie",
+        "smart-grid",
+        "ladeinfrastruktur"
+      ],
+      "documents": []
+    },
     "energiemanagementsystem": {
       "terms": [
         "smart-charging",
         "stationaerer-batteriespeicher"
+      ],
+      "documents": []
+    },
+    "energiesicherheit": {
+      "terms": [
+        "versorgungssicherheit",
+        "kritische-energieinfrastruktur",
+        "energieautonomie"
       ],
       "documents": []
     },
@@ -1482,6 +1552,31 @@
         "photoelektrischer-effekt",
         "supraleitung",
         "primaerenergie"
+      ],
+      "documents": []
+    },
+    "energiewirtschaft": {
+      "terms": [
+        "energie",
+        "strommarkt",
+        "erneuerbare-energien",
+        "fossiles-kraftwerk",
+        "stromgestehungskosten",
+        "systemkosten",
+        "netzentgelt",
+        "energiearmut",
+        "energieautonomie",
+        "buergerenergie",
+        "versorgungssicherheit",
+        "energiewirtschaftsgesetz"
+      ],
+      "documents": []
+    },
+    "energiewirtschaftsgesetz": {
+      "terms": [
+        "energiewirtschaft",
+        "strommarkt",
+        "netzanschluss"
       ],
       "documents": []
     },
@@ -1569,7 +1664,8 @@
         "geothermie",
         "solarthermie",
         "abregelung",
-        "gruenstrom"
+        "gruenstrom",
+        "energiewirtschaft"
       ],
       "documents": []
     },
@@ -1939,6 +2035,15 @@
       ],
       "documents": []
     },
+    "flexibilitaetsmarkt": {
+      "terms": [
+        "demand-response",
+        "lastmanagement",
+        "speicher-energie",
+        "netzdienlichkeit"
+      ],
+      "documents": []
+    },
     "folgencheck": {
       "terms": [
         "faktencheck",
@@ -1999,7 +2104,8 @@
         "kohlekraftwerk",
         "gaskraftwerk",
         "oelkraftwerk",
-        "thermisches-kraftwerk"
+        "thermisches-kraftwerk",
+        "energiewirtschaft"
       ],
       "documents": []
     },
@@ -2113,7 +2219,8 @@
         "genossenschaftsblindheit",
         "commons",
         "gemeineigentum",
-        "dezentralisierung"
+        "dezentralisierung",
+        "buergerenergie"
       ],
       "documents": []
     },
@@ -2159,7 +2266,10 @@
       "terms": [
         "kapazitaetsmarkt",
         "backup-kapazitaet",
-        "grundlast"
+        "grundlast",
+        "versorgungssicherheit",
+        "reservekraftwerk",
+        "kapazitaetsreserve"
       ],
       "documents": []
     },
@@ -2556,7 +2666,8 @@
       "terms": [
         "prosumer",
         "stationaerer-batteriespeicher",
-        "vehicle-to-home"
+        "vehicle-to-home",
+        "eigenversorgung"
       ],
       "documents": []
     },
@@ -2638,14 +2749,16 @@
       "terms": [
         "mittelspannung",
         "hoechstspannung",
-        "umspannwerk"
+        "umspannwerk",
+        "netzebene"
       ],
       "documents": []
     },
     "hoechstspannung": {
       "terms": [
         "hochspannung",
-        "uebertragungsnetz"
+        "uebertragungsnetz",
+        "netzebene"
       ],
       "documents": []
     },
@@ -3070,7 +3183,17 @@
         "backup-kapazitaet",
         "strommarktdesign",
         "energy-only-markt",
-        "contracts-for-difference"
+        "contracts-for-difference",
+        "kapazitaetsreserve"
+      ],
+      "documents": []
+    },
+    "kapazitaetsreserve": {
+      "terms": [
+        "kapazitaetsmarkt",
+        "reservekraftwerk",
+        "gesicherte-leistung",
+        "strategische-reserve"
       ],
       "documents": []
     },
@@ -3350,6 +3473,16 @@
       ],
       "documents": []
     },
+    "kommunale-energie": {
+      "terms": [
+        "stadtwerke",
+        "buergerenergie",
+        "quartiersenergie",
+        "mieterstrom",
+        "energieautonomie"
+      ],
+      "documents": []
+    },
     "kommunismus": {
       "terms": [
         "sozialismus",
@@ -3428,6 +3561,14 @@
       ],
       "documents": []
     },
+    "kraft-waerme-kopplung": {
+      "terms": [
+        "thermisches-kraftwerk",
+        "waermespeicher",
+        "sektorkopplung"
+      ],
+      "documents": []
+    },
     "kreative-rekonstruktion": {
       "terms": [
         "schoepferische-zerstoerung",
@@ -3492,6 +3633,15 @@
         "abfallhierarchie",
         "zero-waste",
         "kreislaufwirkung"
+      ],
+      "documents": []
+    },
+    "kritische-energieinfrastruktur": {
+      "terms": [
+        "energieinfrastruktur",
+        "versorgungssicherheit",
+        "wirkungsresilienz",
+        "energiesicherheit"
       ],
       "documents": []
     },
@@ -3577,7 +3727,8 @@
         "dc-laden",
         "hpc-charger",
         "ladesaeule",
-        "ladepunktbetreiber"
+        "ladepunktbetreiber",
+        "energieinfrastruktur"
       ],
       "documents": []
     },
@@ -3662,7 +3813,8 @@
       "terms": [
         "demand-response",
         "lastgang",
-        "dynamisches-lastmanagement"
+        "dynamisches-lastmanagement",
+        "flexibilitaetsmarkt"
       ],
       "documents": []
     },
@@ -4052,7 +4204,8 @@
     "messstellenbetrieb": {
       "terms": [
         "smart-meter",
-        "dynamischer-stromtarif"
+        "dynamischer-stromtarif",
+        "smart-meter-gateway"
       ],
       "documents": []
     },
@@ -4098,6 +4251,16 @@
       ],
       "documents": []
     },
+    "mieterstrom": {
+      "terms": [
+        "quartiersenergie",
+        "eigenversorgung",
+        "prosumer",
+        "stadtwerke",
+        "kommunale-energie"
+      ],
+      "documents": []
+    },
     "mindestschutz-minimum-safeguards": {
       "terms": [
         "eu-taxonomie",
@@ -4128,7 +4291,8 @@
         "umspannstation",
         "uebergabestation",
         "mittelspannungsschaltanlage",
-        "tar-mittelspannung"
+        "tar-mittelspannung",
+        "netzebene"
       ],
       "documents": []
     },
@@ -4368,7 +4532,9 @@
     "netzanschluss": {
       "terms": [
         "stromnetz",
-        "netzausbau"
+        "netzausbau",
+        "netzebene",
+        "energiewirtschaftsgesetz"
       ],
       "documents": []
     },
@@ -4414,7 +4580,18 @@
         "demand-response",
         "flexibilitaet-energiesystem",
         "netzentgeltsystematik",
-        "netzspeicher"
+        "netzspeicher",
+        "flexibilitaetsmarkt"
+      ],
+      "documents": []
+    },
+    "netzebene": {
+      "terms": [
+        "niederspannung",
+        "mittelspannung",
+        "hochspannung",
+        "hoechstspannung",
+        "netzanschluss"
       ],
       "documents": []
     },
@@ -4422,7 +4599,8 @@
       "terms": [
         "redispatch",
         "abregelung",
-        "netzausbau"
+        "netzausbau",
+        "netzreserve"
       ],
       "documents": []
     },
@@ -4430,14 +4608,25 @@
       "terms": [
         "netzentgeltsystematik",
         "strompreisbestandteile",
-        "prosumer"
+        "prosumer",
+        "energiewirtschaft",
+        "stromnev"
       ],
       "documents": []
     },
     "netzentgeltsystematik": {
       "terms": [
         "netzentgelt",
-        "netzdienlichkeit"
+        "netzdienlichkeit",
+        "stromnev"
+      ],
+      "documents": []
+    },
+    "netzreserve": {
+      "terms": [
+        "reservekraftwerk",
+        "netzengpass",
+        "redispatch"
       ],
       "documents": []
     },
@@ -4565,7 +4754,8 @@
       "terms": [
         "mittelspannung",
         "verteilnetz",
-        "niederspannungshauptverteilung"
+        "niederspannungshauptverteilung",
+        "netzebene"
       ],
       "documents": []
     },
@@ -5216,7 +5406,11 @@
         "photovoltaik",
         "netzentgelt",
         "verteilnetz",
-        "heimspeicher"
+        "heimspeicher",
+        "energieautonomie",
+        "energiegemeinschaft",
+        "mieterstrom",
+        "eigenversorgung"
       ],
       "documents": []
     },
@@ -5319,6 +5513,15 @@
       "terms": [
         "quantenphysik",
         "quantensimulation"
+      ],
+      "documents": []
+    },
+    "quartiersenergie": {
+      "terms": [
+        "kommunale-energie",
+        "mieterstrom",
+        "waermepumpe",
+        "waermespeicher"
       ],
       "documents": []
     },
@@ -5436,7 +5639,17 @@
         "netzengpass",
         "abregelung",
         "systemkosten",
-        "einspeisemanagement"
+        "einspeisemanagement",
+        "redispatch-2-0",
+        "netzreserve"
+      ],
+      "documents": []
+    },
+    "redispatch-2-0": {
+      "terms": [
+        "redispatch",
+        "verteilnetz",
+        "abregelung"
       ],
       "documents": []
     },
@@ -5484,7 +5697,16 @@
         "primaerregelung",
         "sekundaerregelung",
         "minutenreserve",
-        "kurzzeitspeicher"
+        "kurzzeitspeicher",
+        "regelenergiemarkt"
+      ],
+      "documents": []
+    },
+    "regelenergiemarkt": {
+      "terms": [
+        "regelenergie",
+        "systemdienstleistungen",
+        "batteriespeicher"
       ],
       "documents": []
     },
@@ -5591,6 +5813,16 @@
         "care-oekonomie",
         "sorgearbeit",
         "feministische-oekonomie"
+      ],
+      "documents": []
+    },
+    "reservekraftwerk": {
+      "terms": [
+        "backup-kapazitaet",
+        "netzreserve",
+        "strategische-reserve",
+        "gesicherte-leistung",
+        "kapazitaetsreserve"
       ],
       "documents": []
     },
@@ -6232,7 +6464,9 @@
       "terms": [
         "waermepumpe",
         "elektromobilitaet",
-        "power-to-x"
+        "power-to-x",
+        "kraft-waerme-kopplung",
+        "waermespeicher"
       ],
       "documents": []
     },
@@ -6341,7 +6575,8 @@
       "terms": [
         "stromnetz",
         "smart-meter",
-        "fernwirktechnik"
+        "fernwirktechnik",
+        "energieinfrastruktur"
       ],
       "documents": []
     },
@@ -6349,7 +6584,16 @@
       "terms": [
         "messstellenbetrieb",
         "dynamischer-stromtarif",
-        "smart-grid"
+        "smart-grid",
+        "smart-meter-gateway"
+      ],
+      "documents": []
+    },
+    "smart-meter-gateway": {
+      "terms": [
+        "smart-meter",
+        "messstellenbetrieb",
+        "dynamischer-stromtarif"
       ],
       "documents": []
     },
@@ -6394,7 +6638,8 @@
     "solarthermie": {
       "terms": [
         "erneuerbare-energien",
-        "waermepumpe"
+        "waermepumpe",
+        "waermespeicher"
       ],
       "documents": []
     },
@@ -6453,7 +6698,9 @@
         "flexibilitaet-energiesystem",
         "batterie",
         "redox-flow-batterie",
-        "superkondensator"
+        "superkondensator",
+        "energieinfrastruktur",
+        "flexibilitaetsmarkt"
       ],
       "documents": []
     },
@@ -6509,6 +6756,15 @@
         "nichttriviales-system",
         "staatskapitalismus",
         "kommunismus"
+      ],
+      "documents": []
+    },
+    "stadtwerke": {
+      "terms": [
+        "kommunale-energie",
+        "daseinsvorsorge",
+        "mieterstrom",
+        "buergerenergie"
       ],
       "documents": []
     },
@@ -6604,6 +6860,14 @@
         "stranded-assets-gebaeudebestand"
       ]
     },
+    "strategische-reserve": {
+      "terms": [
+        "kapazitaetsreserve",
+        "reservekraftwerk",
+        "versorgungssicherheit"
+      ],
+      "documents": []
+    },
     "strategisches-management": {
       "terms": [
         "normatives-management",
@@ -6623,7 +6887,8 @@
     "stromgestehungskosten": {
       "terms": [
         "systemkosten",
-        "strommarkt"
+        "strommarkt",
+        "energiewirtschaft"
       ],
       "documents": []
     },
@@ -6633,7 +6898,9 @@
         "merit-order",
         "photovoltaik",
         "grenzkraftwerk",
-        "stromgestehungskosten"
+        "stromgestehungskosten",
+        "energiewirtschaft",
+        "energiewirtschaftsgesetz"
       ],
       "documents": []
     },
@@ -6654,7 +6921,15 @@
         "netzanschluss",
         "netzausbau",
         "netzverlust",
-        "smart-grid"
+        "smart-grid",
+        "energieinfrastruktur"
+      ],
+      "documents": []
+    },
+    "stromnev": {
+      "terms": [
+        "netzentgelt",
+        "netzentgeltsystematik"
       ],
       "documents": []
     },
@@ -6771,7 +7046,8 @@
         "frequenzhaltung",
         "spannungshaltung",
         "schwarzstartfaehigkeit",
-        "momentanreserve"
+        "momentanreserve",
+        "regelenergiemarkt"
       ],
       "documents": []
     },
@@ -6828,7 +7104,8 @@
         "speicher-energie",
         "kernenergie",
         "netzverlust",
-        "netzspeicher"
+        "netzspeicher",
+        "energiewirtschaft"
       ],
       "documents": []
     },
@@ -7014,7 +7291,8 @@
       "terms": [
         "fossiles-kraftwerk",
         "kernenergie",
-        "inertia"
+        "inertia",
+        "kraft-waerme-kopplung"
       ],
       "documents": []
     },
@@ -7413,6 +7691,19 @@
       ],
       "documents": []
     },
+    "versorgungssicherheit": {
+      "terms": [
+        "energiesicherheit",
+        "gesicherte-leistung",
+        "backup-kapazitaet",
+        "dunkelflaute",
+        "wirkungsresilienz",
+        "energiewirtschaft",
+        "kritische-energieinfrastruktur",
+        "strategische-reserve"
+      ],
+      "documents": []
+    },
     "verstaerkungslernen": {
       "terms": [
         "belohnungslernen",
@@ -7424,7 +7715,8 @@
       "terms": [
         "stromnetz",
         "prosumer",
-        "niederspannung"
+        "niederspannung",
+        "redispatch-2-0"
       ],
       "documents": []
     },
@@ -7606,7 +7898,19 @@
       "terms": [
         "sektorkopplung",
         "energieeffizienz",
-        "solarthermie"
+        "solarthermie",
+        "quartiersenergie",
+        "waermespeicher"
+      ],
+      "documents": []
+    },
+    "waermespeicher": {
+      "terms": [
+        "solarthermie",
+        "waermepumpe",
+        "quartiersenergie",
+        "sektorkopplung",
+        "kraft-waerme-kopplung"
       ],
       "documents": []
     },
@@ -8487,7 +8791,9 @@
         "stressreaktion",
         "systemischer-wert",
         "viabilitaet",
-        "zukunftsfaehigkeit"
+        "zukunftsfaehigkeit",
+        "versorgungssicherheit",
+        "kritische-energieinfrastruktur"
       ],
       "documents": [],
       "journalArticles": [
