@@ -1,6 +1,6 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T09:23:09.298Z
+Stand: 2026-05-29T09:37:37.886Z
 
 ## Zusammenfassung
 
