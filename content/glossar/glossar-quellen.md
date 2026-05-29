@@ -38,6 +38,24 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Ludwig von Mises: Human Action
 - IMF / OECD / empirische Quellen zu Trickle-down, Ungleichheit und Wachstumswirkungen nur bei konkreter Begriffsverwendung.
 
+## Akteure / Einfluss / demokratische Wirkungsräume
+
+- OECD Recommendation on Transparency and Integrity in Lobbying and Influence, https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0379
+- OECD Policy Brief Lobbying, https://www.oecd.org/content/dam/oecd/en/about/programmes/grc/grc-see/integrity/Policy_Brief_Note_Lobbying.pdf
+- EU Transparency Register, https://commission.europa.eu/about/service-standards-and-principles/transparency/transparency-register_en
+- European Parliamentary Research Service / Think Tank, https://www.europarl.europa.eu/thinktank/
+- Mandate for Leadership / Project 2025 official, https://www.mandateforleadership.org/
+- Atlas Network official, https://www.atlasnetwork.org/
+- United Nations: The UN and Civil Society, https://www.un.org/en/get-involved/un-and-civil-society
+- UN ECOSOC NGO consultative status, https://ecosoc.un.org/en/ngo
+- Grundgesetz für die Bundesrepublik Deutschland, https://www.gesetze-im-internet.de/gg/
+- Bundesverfassungsgericht Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
+- Bundeszentrale für politische Bildung: Rassismus, https://www.bpb.de/kurz-knapp/lexika/lexikon-in-einfacher-sprache/322448/rassismus/
+- Bundeszentrale für politische Bildung: Faschismus, https://www.bpb.de/themen/rechtsextremismus/dossier-rechtsextremismus/500776/faschismus/
+- Bundeszentrale für politische Bildung: Rechtsextremismus / Rassismus / Faschismus-Dossiers, https://www.bpb.de/themen/rechtsextremismus/
+- Bundeszentrale für politische Bildung: Konservatismus, https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17742/konservatismus/
+- Interne WÖk-Quellen: Politik als Wirkungsraum, Parteien und Programme, Lobbyismus und Machtkonzentration, Wirkung als Rechtsprinzip, Wirkungsrat-Konzept, Folgencheck statt Faktencheck, Wirkung politischer Sprache, Medien & Demokratie.
+
 ## Feministische Ökonomie / Care
 
 - Marilyn Waring: If Women Counted
