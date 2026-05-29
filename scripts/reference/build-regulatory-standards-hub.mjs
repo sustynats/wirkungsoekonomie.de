@@ -301,7 +301,7 @@ const standards = [
     official: [
       ["UN Sustainable Development Goals", "https://sdgs.un.org/goals"],
       ["SDG-Portal für Kommunen", "https://sdg-portal.de/de/"],
-      ["WÖk: SDGs & SDG+", "../sdgs-sdgplus/"],
+      ["WÖk: SDGs & SDG+", "/verstehen/sdgs-sdgplus/"],
     ],
     related: ["SDG+", "Wirkungsbewertung", "Referenzrahmen"],
   },
@@ -316,8 +316,8 @@ const standards = [
     woek: "Ohne demokratische und institutionelle Stabilität können nachhaltige Ziele nicht dauerhaft erreicht werden.",
     limits: "SDG+ muss transparent, überprüfbar und demokratisch kontrolliert bleiben.",
     official: [
-      ["WÖk: SDG+ verstehen", "../sdgs-sdgplus/#sdgplus"],
-      ["WÖk: SDG+ Demokratie", "../sdgs-sdgplus/sdgplus-demokratie/"],
+      ["WÖk: SDG+ verstehen", "/verstehen/sdgs-sdgplus/#sdgplus"],
+      ["WÖk: SDG+ Demokratie", "/verstehen/sdgs-sdgplus/sdgplus-demokratie/"],
     ],
     related: ["Demokratie", "Medienwirkung", "Wirkungskompetenz"],
   },

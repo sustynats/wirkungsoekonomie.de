@@ -17,7 +17,6 @@ const navigation = JSON.parse(fs.readFileSync(navigationPath, "utf8"));
 const headerTemplate = fs.readFileSync(headerTemplatePath, "utf8");
 const footerTemplate = fs.readFileSync(footerTemplatePath, "utf8");
 const siteUrl = "https://wirkungsoekonomie.de";
-const questionSubmitBaseUrl = "https://akademie.wirkungsoekonomie.de/fragen/einreichen";
 const gaps = [];
 const distributionRows = [];
 
@@ -32,7 +31,6 @@ const routeDefaults = new Map([
   ["/akademie.html", { questionsInclude: ["akademie-kostenlos", "zertifikate", "idgs-wirkungskompetenz"], questionsMax: 4 }],
   ["/erleben.html", { questionsInclude: ["tool-demo", "wirkung-messen", "social-credit"], questionsMax: 4 }],
   ["/erleben/", { questionsInclude: ["tool-demo", "wirkung-messen", "social-credit"], questionsMax: 4 }],
-  ["/fuer/landwirtschaft/", { questionsInclude: ["landwirtschaft-essen-teurer", "landwirtschaft-buerokratie", "landwirtschaft-wer-entscheidet", "landwirtschaft-konventionell-bestraft", "landwirtschaft-bio-automatisch-gut", "landwirtschaft-importe", "planwirtschaft"], questionsMax: 7 }],
   ["/blog.html", { questionsInclude: ["faktencheck-folgencheck", "zensur", "wirkung-messen"], questionsMax: 3 }],
   ["/werkzeuge/impact-controlling/", { questionsInclude: ["tool-demo", "wirkung-messen", "esg-unterschied", "greenwashing"], questionsMax: 5 }],
 ]);
@@ -50,30 +48,6 @@ function esc(value) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
-}
-
-function contextTypeForPage(pageType, route) {
-  if (route === "/fragen/") return "Fragen & Einwände";
-  if (route === "/") return "Startseite";
-  if (pageType === "begriff") return "Begriff / Glossar";
-  if (pageType === "wirkungsfeld" || String(route || "").startsWith("/wirkungsfelder/")) return "Wirkungsfeld";
-  if (pageType === "tool") return "Tool / Rechner";
-  if (pageType === "journal") return "Journal-Artikel";
-  if (pageType === "akademie") return "Akademie";
-  if (pageType === "bibliothek" || String(route || "").startsWith("/downloads")) return "Bibliothek / Dokument";
-  return "Allgemein";
-}
-
-function submitQuestionUrl(context) {
-  const route = normalizeRoute(context.route || "/fragen/");
-  const params = new URLSearchParams({
-    context: context.contextType || contextTypeForPage(context.pageType, route),
-    url: `${siteUrl}${route}`,
-    title: context.title || registry.title,
-    topic: context.topic || context.topics?.[0] || toToken(context.title || route || "fragen"),
-    pageType: context.pageType || "questions-hub",
-  });
-  return `${questionSubmitBaseUrl}?${params.toString()}`;
 }
 
 function stripHash(url) {
@@ -398,13 +372,6 @@ function buildPage() {
   const questions = [...registry.questions].sort((a, b) => Number(a.priority || 100) - Number(b.priority || 100));
   const top = questions.slice(0, 12);
   const chips = ["Alle", ...registry.categories];
-  const submitUrl = submitQuestionUrl({
-    route: "/fragen/",
-    title: registry.title,
-    topic: "fragen-einwaende",
-    pageType: "questions-hub",
-    contextType: "Fragen & Einwände",
-  });
   const body = `
       <section class="hero questions-hero">
         <div>
@@ -414,21 +381,7 @@ function buildPage() {
           <div class="hero-actions">
             <a class="btn btn-primary" href="#top-fragen">Schnellstart ansehen</a>
             <a class="btn btn-secondary" href="#alle-fragen">Alle Fragen ansehen</a>
-            <a class="btn btn-secondary" href="${esc(submitUrl)}">Eigene Frage einreichen</a>
           </div>
-        </div>
-      </section>
-
-      <section class="section section-muted" aria-labelledby="frage-einreichen-title">
-        <div class="section-header">
-          <p class="hero-kicker">Mitdenken</p>
-          <h2 id="frage-einreichen-title">Eine Frage fehlt?</h2>
-          <p>Fragen werden im Akademie-Lernraum eingereicht, redaktionell geprüft und können später anonym in diesen öffentlichen Bereich zurückgespielt werden.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Öffentlich anonym, intern moderierbar.</h3>
-          <p class="card-text">Zur Einreichung nutzt du einen Discord-Login. Du musst keinem Discord-Server beitreten. Die Frage-Funktion ist nicht an eine Akademie-Freischaltung gekoppelt. Öffentlich erscheinen später nur die Frage und Antwort - ohne Namen, Profil oder Discord-ID.</p>
-          <a class="btn btn-primary" href="${esc(submitUrl)}">Frage einreichen</a>
         </div>
       </section>
 
@@ -526,7 +479,6 @@ function blockTitleForPage(context) {
 function contextBlock(matches, context) {
   if (!matches.length) return "";
   const titleId = `related-questions-title-${toToken(context.route || context.file) || "seite"}`;
-  const submitUrl = submitQuestionUrl(context);
   return `<!-- related-questions:start -->
 <section class="related-questions-block related-questions-${esc(context.pageType)}" aria-labelledby="${esc(titleId)}">
   <div>
@@ -535,7 +487,7 @@ function contextBlock(matches, context) {
     <div class="related-questions-grid">
       ${matches.map(({ question }) => `<a class="related-question-card" href="/fragen/#${esc(question.id)}"><span>${esc(question.category)}</span><strong>${esc(question.question)}</strong><em>${esc(question.shortAnswer)}</em></a>`).join("\n      ")}
     </div>
-    <p><a class="text-link" href="/fragen/">Alle Fragen und Einwände lesen</a> | <a class="text-link" href="${esc(submitUrl)}">Frage zu diesem Thema einreichen</a></p>
+    <p><a class="text-link" href="/fragen/">Alle Fragen und Einwände lesen</a></p>
   </div>
 </section>
 <!-- related-questions:end -->`;

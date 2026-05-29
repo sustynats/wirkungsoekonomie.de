@@ -23,10 +23,6 @@ const TARGETS = [
 const ROOT_HTML_FILES = ["index.html", "erleben.html", "suche.html", "akademie.html", "downloads.html", "kompass.html", "modell.html", "glossar.html", "anwendungen.html", "workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
 
 const replacements = [
-  [/Kontext-Werkzeuge/g, "Methoden & Werkzeuge"],
-  [/Werkstatt:/g, "Bibliothek:"],
-  [/Kosten je FTE/g, "Kosten je Vollzeitstelle"],
-  [/\bFTE\b/g, "Vollzeitstellen"],
   [/Tool-Spezifikation und Rechenmodell/g, "Methodik und Annahmen"],
   [/Tool-Spezifikation:/g, "Methodik:"],
   [/Tool-Spezifikation/g, "Methodik"],
@@ -62,8 +58,8 @@ const replacements = [
   [/Verwandte Portal- und Dossierseiten/g, "Verwandte Seiten und Materialien"],
   [/Portaltext online lesen/g, "Onlinefassung"],
   [/Portaltext/g, "Onlinefassung"],
-  [/Online-Volltext ist der Hauptzugang/g, "Die Seite ist online lesbar"],
-  [/Online-Volltext ist Hauptzugang/g, "Die Seite ist online lesbar"],
+  [/Online-Volltext ist der Hauptzugang/g, "Du liest die Onlinefassung"],
+  [/Online-Volltext ist Hauptzugang/g, "Du liest die Onlinefassung"],
   [/Online-Volltexte/g, "Onlinefassungen"],
   [/Online-Volltext/g, "Onlinefassung"],
   [/Online lesen, gezielt zitieren/g, "Onlinefassung und Quellenarbeit"],

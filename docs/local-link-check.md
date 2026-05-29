@@ -1,9 +1,9 @@
 # Local Link Check
 
-Stand: 2026-05-27T17:01:26.278Z
+Stand: 2026-05-29T09:24:03.759Z
 
-- Geprüfte HTML-Dateien: 642
-- Geprüfte lokale Links: 71109
+- Geprüfte HTML-Dateien: 1141
+- Geprüfte lokale Links: 102120
 - Fehlende Ziele: 0
 
 Keine fehlenden lokalen Linkziele gefunden.

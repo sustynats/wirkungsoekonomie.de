@@ -480,9 +480,8 @@ function documentActions(document, primary = true) {
   if (document.docxUrl && document.allowPublicDocx !== true) {
     throw new Error(`Public DOCX download is not allowed for document ${document.id}`);
   }
-  const onlineHref = document.primaryOnlineUrl || document.onlineUrl || document.sourceOnlineUrl;
   return `<div class="download-actions">
-    ${primary && onlineHref ? `<a class="btn btn-primary" href="${escapeHtml(onlineHref)}">Onlinefassung lesen</a>` : ""}
+    ${primary && document.onlineUrl ? `<a class="btn btn-primary" href="${escapeHtml(document.onlineUrl)}">Onlinefassung lesen</a>` : ""}
     ${document.pdfUrl ? `<a class="btn btn-secondary" href="${escapeHtml(document.pdfUrl)}" target="_blank" rel="noopener">PDF herunterladen</a>` : ""}
     ${document.relatedTools?.[0] ? `<a class="text-link" href="${escapeHtml(document.relatedTools[0])}">${escapeHtml(relatedActionLabel(document.relatedTools[0]))}</a>` : ""}
   </div>`;
@@ -648,7 +647,7 @@ function buildDownloadsPage() {
             <a class="library-overview-card" href="/fuer/">
               <span>Perspektiven</span>
               <strong>Für wen?</strong>
-              <em>Zielgruppeneinstiege für Bürger:innen, Journalismus, Unternehmen, Landwirtschaft, Politik, Kommunen, Investor:innen und Akademie.</em>
+              <em>Zielgruppeneinstiege für Bürger:innen, Journalismus, Unternehmen, Politik, Kommunen, Investor:innen und Akademie.</em>
             </a>
             <a class="library-overview-card" href="/erleben.html">
               <span>Interaktiv</span>

@@ -1199,8 +1199,8 @@ function initPublicationAccessFallback() {
   const cards = [
     ["Onlinefassung", "Detailkonzepte", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Detailkonzept lesen"],
     ["Praxisfassung", "Dossiers", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Dossier lesen"],
-    ["Download", "Konzept-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.detailDownload, "Herunterladen"],
-    ["Download", "Dossier-Download", "Ergänzende Word-Datei für Weiterarbeit und Druck.", config.dossierDownload, "Herunterladen"],
+    ["Download", "Konzeptpapier", "Ergänzende Lesefassung mit Struktur, Bewertungslogik und Beispielen.", config.detailDownload, "Herunterladen"],
+    ["Download", "Dossier", "Vertiefende Lesefassung mit Kontext, Anwendung und Quellen.", config.dossierDownload, "Herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {

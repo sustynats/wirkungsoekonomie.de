@@ -903,9 +903,9 @@ function downloadBlock(base, items = []) {
   const missing = items.filter((item) => item.required && !fileExists(item.href));
   return `<section class="section" aria-labelledby="downloads">
       <div class="card">
-        <p class="hero-kicker">Arbeitsmaterial</p>
-        ${sectionTitle("downloads", "Materialien und Downloads")}
-        <p class="card-text">Vertiefungen, Dateien und Druckfunktion stehen gesammelt am Ende der Seite.</p>
+        <p class="hero-kicker">Export & Archiv</p>
+        ${sectionTitle("downloads", "Downloads und Druck")}
+        <p class="card-text">Der Online-Volltext ist der Hauptzugang. Downloads bleiben ergänzend als Archiv-, Export- oder Originalfassung erhalten.</p>
         <div class="portal-card-actions no-print">
           <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
           ${available.length ? available.map((item) => `<a class="btn btn-secondary" href="${href(base, item.href)}">${escapeHtml(item.label)}</a>`).join("") : `<span class="prototype-badge">Dossier in Vorbereitung</span>`}
@@ -947,7 +947,7 @@ function introHero({ base, kicker, h1, subtitle, text, actions = "" }) {
     </section>`;
 }
 
-function productStatus(status = "Konzept / Lesefassung") {
+function productStatus(status = "Konzept / Online-Volltext") {
   return statusMeta([
     ["Autorin", "Natalie Weber"],
     ["Referenz", "Wirkungsökonomie"],
@@ -959,7 +959,7 @@ function productStatus(status = "Konzept / Lesefassung") {
 
 function sourceNotice(label) {
   return `<div class="scanner-notice" role="note">
-      <strong>Lesefassung.</strong> Diese Seite macht das zugrunde liegende Konzept online lesbar. Fachliche Inhalte werden als Modellannahmen eingeordnet; rechtliche Grenzen bleiben transparent.
+    <strong>Online-Volltext.</strong> Diese Seite macht das zugrunde liegende Konzept online lesbar. Fachliche Inhalte werden als Modellannahmen eingeordnet; rechtliche Grenzen bleiben transparent.
   </div>`;
 }
 
@@ -981,11 +981,11 @@ function fulltextPage(config) {
       actions: config.primaryAction ? `<a class="btn btn-primary" href="${href(base, config.primaryAction.href)}">${escapeHtml(config.primaryAction.label)}</a>` : "",
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
-    <section class="section narrow">${productStatus(config.status || "Lesefassung")}</section>
+    <section class="section narrow">${productStatus(config.status || "Online-Volltext / Fassung")}</section>
     <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
       <article class="article-body fulltext-reader">
-        ${sectionTitle("online-volltext", "Konzept lesen")}
+        ${sectionTitle("online-volltext", "Online-Volltext")}
         ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
         ${rendered.html}
       </article>
@@ -1097,43 +1097,12 @@ function productPortal() {
         { title: "Produkte tragen Wirkung", text: "Jedes Produkt wirkt über Material, Herstellung, Lieferkette, Nutzung, Reparierbarkeit, Entsorgung und Verbraucherinformation." },
         { title: "Konsum steuert Märkte", text: "Wenn Wirkung sichtbar wird, können Wettbewerb, Beschaffung, Steuern und Kaufentscheidungen bessere Produkte belohnen." },
       ])}
-      <figure class="system-visual" role="img" aria-label="Der falsche Preis zeigt Kosten, Marge und Steuer, aber nicht Klima, Wasser, Gesundheit, Arbeitsrechte, Vertrauen und Demokratie.">
-        <div class="system-visual-grid">
-          <div class="visual-price-card" data-tone="positive">
-            <strong>Preis sichtbar</strong>
-            <div class="visual-chip-list"><span>Kosten</span><span>Marge</span><span>Steuer</span></div>
-          </div>
-          <div class="visual-price-card" data-tone="warning">
-            <strong>Wirkung oft unsichtbar</strong>
-            <div class="visual-chip-list"><span>Klima</span><span>Wasser</span><span>Gesundheit</span><span>Arbeitsrechte</span><span>Vertrauen</span><span>Demokratie</span></div>
-          </div>
-        </div>
-        <figcaption>Die Wirkungsökonomie macht die fehlenden Preisbestandteile nicht moralisch, sondern prüfbar und rückkoppelbar.</figcaption>
-      </figure>
-      <figure class="system-visual" role="img" aria-label="Produktwirkung entlang der Kette von Rohstoff über Herstellung, Transport, Nutzung, Reparatur und Entsorgung mit Datenqualität und Scorecard.">
-        <div class="system-visual-flow six">
-          <div class="visual-node"><strong>Rohstoff</strong><span>Herkunft, Wasser, Biodiversität, Rechte.</span></div>
-          <div class="visual-node"><strong>Herstellung</strong><span>Energie, Chemie, Arbeit, Sicherheit.</span></div>
-          <div class="visual-node"><strong>Transport</strong><span>Distanz, Kühlung, Logistik, Emissionen.</span></div>
-          <div class="visual-node"><strong>Nutzung</strong><span>Gesundheit, Energie, Lebensdauer.</span></div>
-          <div class="visual-node"><strong>Reparatur</strong><span>Ersatzteile, Modularität, Kreislauf.</span></div>
-          <div class="visual-node" data-tone="positive"><strong>Entsorgung</strong><span>Recycling, Schadstoffe, Datenqualität, Scorecard.</span></div>
-        </div>
-        <figcaption>Produktwirkung entsteht entlang der Kette. Eine Scorecard muss Datenqualität und schwache Felder sichtbar halten.</figcaption>
-      </figure>
     </section>
     <section class="section" aria-labelledby="old-vs-woek">
       <div class="section-header">
         <p class="hero-kicker">Systemblick</p>
         ${sectionTitle("old-vs-woek", "Alte Logik vs. WÖk-Logik")}
       </div>
-      <figure class="system-visual" role="img" aria-label="Alte Produktlogik verglichen mit WÖk-Logik. Alte Logik misst Gewinn, Wachstum und Output. WÖk-Logik bewertet positive Netto-Wirkung, Schutzgrenzen und Rückkopplung.">
-        <div class="system-visual-compare">
-          <div class="visual-lane" data-tone="warning"><strong>Alte Logik</strong><div class="visual-chip-list"><span>Gewinn</span><span>Wachstum</span><span>Output</span><span>billiger Preis</span></div></div>
-          <div class="visual-lane" data-tone="positive"><strong>WÖk-Logik</strong><div class="visual-chip-list"><span>positive Netto-Wirkung</span><span>Schutzgrenzen</span><span>Datenqualität</span><span>Rückkopplung</span></div></div>
-        </div>
-        <figcaption>Der Unterschied liegt nicht in mehr Kontrolle, sondern im besseren Maßstab für Preise, Beschaffung und Kapital.</figcaption>
-      </figure>
       <div class="comparison-grid">
         <article class="card">
           <p class="card-kicker">Heutige Logik</p>
@@ -1200,17 +1169,6 @@ function productPortal() {
         { title: "Für Politik und Verwaltung", text: "Pilotierung, Rechtsschutz, Datenschutz und Wirkungsrat sichern die Einführung ab." },
       ])}
     </section>
-    <aside class="section related-questions-block" aria-labelledby="product-related-title">
-      <div class="section-header">
-        <p class="hero-kicker">Passende Fragen</p>
-        ${sectionTitle("product-related-title", "Einwände zu Preisen und Produktdaten")}
-      </div>
-      <div class="related-question-grid">
-        <article class="related-question-card"><span>Preisfrage</span><strong>Wird dann alles teurer?</strong><a class="text-link" href="${href(base, "fragen/#teurer")}">Antwort lesen</a></article>
-        <article class="related-question-card"><span>Governance</span><strong>Wer entscheidet die Steuerklasse?</strong><a class="text-link" href="${href(base, "fragen/#steuerklasse")}">Antwort lesen</a></article>
-        <article class="related-question-card"><span>Daten</span><strong>Was passiert bei fehlenden Daten?</strong><a class="text-link" href="${href(base, "fragen/#fehlende-daten")}">Antwort lesen</a></article>
-      </div>
-    </aside>
     ${politicalBlock(base, "Dieses Wirkungsfeld")}
     ${sdgBlock(base, "Produktbesteuerung berührt Ernährung, Gesundheit, Wasser, Arbeit, Industrie, Ungleichheit, Konsum, Klima, Biodiversität, Institutionen und internationale Kooperation. SDG+ ergänzt dort, wo Produktdaten, Werbung, Plattformen, Transparenz und Vertrauen demokratische Wirkung entfalten.")}
     ${bookBlock(base)}
@@ -1218,17 +1176,17 @@ function productPortal() {
     <section class="section" id="material" aria-labelledby="material-title">
       <div class="section-header">
         <p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>
-        ${sectionTitle("material-title", "Vertiefung, Beispiele und Materialien")}
+        ${sectionTitle("material-title", "Onlinefassung, Beispiele und Downloads")}
         <p>Die Materialien stehen am Ende, damit die Seite zuerst Orientierung gibt und dann in die fachliche Vertiefung führt.</p>
       </div>
       ${cardGrid(base, [
-        { title: "Produktbesteuerung durch Wirkung", text: "Langfassung mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Onlinefassung lesen" },
+        { title: "Onlinefassung Produktbesteuerung", text: "Langfassung mit NACE, WÖk-IDs, Scorecards, Reverse Merit Order und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Onlinefassung lesen" },
         { title: "Apfelbeispiel", text: "Didaktisches Beispiel für Produktwirkung, Datenqualität, Scorecard und steuerliche Rückkopplung.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/", label: "Beispiel ansehen" },
         { title: "Lieferketten", text: "Vertiefung zu Vorleistungen, Lieferanten, Produktpässen und roten Linien.", href: "wirkungsfelder/produkte-konsum/lieferketten/", label: "Vertiefung lesen" },
       ])}
     </section>
     ${downloadBlock(base, [
-      { label: "Zur Bibliothek", href: "downloads.html" },
+      { label: "Downloads öffnen", href: "downloads.html" },
       ...conceptDownloads,
       { label: "WStG online lesen", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
       { label: "WUStG-Leitlinien lesen", href: "werkstatt/leitlinien/wustg/" },
@@ -1391,7 +1349,7 @@ function lawReader() {
     ${politicalBlock(base, "Das Wirkungssteuergesetz")}
     ${sdgBlock(base, "Das WStG rahmt steuerliche Rückkopplung für Produkte, Einkommen, Kapital, öffentliche Mittel und Governance. Es bezieht sich auf SDGs, Agenda 2030 und SDG+ als Bewertungsrahmen, nicht als Menübaum.")}
     ${bookBlock(base, bookAnchors.filter(([label]) => /Kapitel 36|Kapitel 37|Kapitel 38|Kapitel 39|Kapitel 40|Kapitel 31|Kapitel 32|Kapitel 33/.test(label)))}
-    ${downloadBlock(base, [{ label: "Markdown-Quelle ansehen", href: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md" }, { label: "Zur Bibliothek", href: "downloads.html" }])}`,
+    ${downloadBlock(base, [{ label: "Markdown-Quelle öffnen", href: "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md" }, { label: "Downloads öffnen", href: "downloads.html" }])}`,
   });
 }
 
@@ -1910,7 +1868,7 @@ function build() {
     hero: "Diese Seite bildet das Produktpapier vollständig online ab. Der Hauptzugang ist der Webtext; Downloads bleiben Archiv und Export.",
     contextIntro: (base) => `Die Bewertung erfolgt über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster, das Produktdaten in Scores von -3 bis +3 übersetzt.")}, deren FinalScore nach der ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt die Einstufung.")} gebildet wird. Die technische Ausgestaltung verweist auf ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.`,
     sdgText: "Produktbesteuerung durch Wirkung verknüpft Konsum, Produktion, Arbeit, Gesundheit, Klima, Biodiversität, Datenqualität und institutionelle Prüfung. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
-    downloads: [{ label: "Zum Wirkungsfeld", href: "wirkungsfelder/produkte-konsum/" }, { label: "Zur Bibliothek", href: "downloads.html" }],
+    downloads: [{ label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" }, { label: "Downloads öffnen", href: "downloads.html" }],
   });
   fulltextPage({
     rel: "wirkungsfelder/produkte-konsum/apfelbeispiel/index.html",
