@@ -1,110 +1,1962 @@
 [
   {
-    "id": "grundlagenwerk-neue-ordnung-wohlstand",
-    "title": "Die neue Ordnung des Wohlstands",
-    "type": "Grundlagenwerk",
-    "category": "grundlagen",
+    "id": "handbuch-wirkungskompetenz",
+    "slug": "handbuch-wirkungskompetenz",
+    "title": "Handbuch Wirkungskompetenz",
+    "type": "Handbuch",
+    "category": [
+      "Akademie",
+      "Bildung",
+      "Wirkungskompetenz"
+    ],
     "status": "current",
     "stand": "2026",
-    "summary": "Grundlagenwerk der Wirkungsökonomie: Wirkung als Maßstab für Wirtschaft, Politik und Gesellschaft.",
-    "onlineUrl": "/buch.html",
+    "summary": "Das Handbuch erklärt Wirkungskompetenz als Fähigkeit, Folgen, Zielkonflikte, Datenqualität und demokratische Schutzgrenzen zu verstehen.",
+    "audience": [
+      "Akademie",
+      "Bildung",
+      "Teams",
+      "Zivilgesellschaft"
+    ],
+    "keyPoints": [
+      "Wirkungskompetenz verbindet Begriffe, Methoden, Ethik und Anwendung.",
+      "Sie hilft, Wirkungspotenziale und Datenlücken einzuordnen.",
+      "Lernen bleibt offen, kostenlos und nicht staatlich anerkannt."
+    ],
+    "onlineUrl": "/bibliothek/handbuch-wirkungskompetenz/",
+    "sourceOnlineUrl": "/akademie.html",
+    "pdfUrl": "/assets/pdf/handbuch-wirkungskompetenz.pdf",
+    "docxUrl": null,
+    "fileSize": "2.9 MB",
+    "relatedTerms": [
+      "wirkungskompetenz",
+      "wirkungspotenzial",
+      "wirkungsdaten"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/bildung/"
+    ],
+    "relatedTools": [
+      "/erleben/wirkungsschule-check/"
+    ],
+    "relatedPages": [
+      "/akademie.html",
+      "/begriffe/wirkungskompetenz/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "wirkungseinkommen",
+    "slug": "wirkungseinkommen",
+    "title": "Wirkungseinkommen",
+    "type": "Whitepaper",
+    "category": [
+      "Anwendungen",
+      "Arbeit",
+      "Automatisierung"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Modell, das Einkommen nicht nur an Erwerbsarbeit koppelt, sondern an Wirkung, Wertschöpfung und soziale Stabilität.",
+    "audience": [
+      "Politik",
+      "Sozialstaat",
+      "Automatisierung",
+      "Unternehmen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Einkommen wird als Mischung aus Markteinkommen, Grundsicherheit, Wirkungsbonus und Fondsanteil gedacht.",
+      "Automatisierungsgewinne werden als mögliche Quelle gesellschaftlicher Rückkopplung sichtbar.",
+      "Das Modell ist keine fertige Finanzierungszusage und keine Personenbewertung."
+    ],
+    "onlineUrl": "/bibliothek/wirkungseinkommen/",
+    "sourceOnlineUrl": "/wirkungsfelder/arbeit-einkommen/wirkungseinkommen/",
+    "pdfUrl": "/assets/pdf/whitepaper-wirkungseinkommen.pdf",
+    "docxUrl": null,
+    "fileSize": "2.7 MB",
+    "relatedTerms": [
+      "wirkungseinkommen",
+      "wirkungsfonds",
+      "wirkungsrueckkopplung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/arbeit-einkommen/"
+    ],
+    "relatedTools": [
+      "/erleben/automatisierungs-wirkungseinkommensrechner/"
+    ],
+    "relatedPages": [
+      "/begriffe/wirkungseinkommen/",
+      "/blog/dossiers/ki-arbeit.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "wirkungseinkommensteuergesetz-westg",
+    "slug": "wirkungseinkommensteuergesetz-westg",
+    "title": "Wirkungseinkommensteuergesetz WEstG",
+    "type": "Gesetzesentwurf",
+    "category": [
+      "Arbeit",
+      "Sozialstaat",
+      "Steuern"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Der Entwurf beschreibt eine mögliche rechtliche Rückkopplung von Wirkungseinkommen, Fondslogik, Beiträgen und sozialer Sicherung.",
+    "audience": [
+      "Politik",
+      "Sozialstaat",
+      "Recht",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Wirkungseinkommen wird als Modell aus mehreren Einkommensquellen gedacht.",
+      "Fonds- und Beitragsmechanismen können Automatisierungsgewinne rückkoppeln.",
+      "Der Entwurf bleibt modellhaft und ersetzt keine Rechtsberatung."
+    ],
+    "onlineUrl": "/bibliothek/wirkungseinkommensteuergesetz-westg/",
+    "sourceOnlineUrl": "/wirkungsfelder/arbeit-einkommen/",
+    "pdfUrl": "/assets/pdf/wirkungseinkommensteuergesetz-westg.pdf",
+    "docxUrl": null,
+    "fileSize": "3.2 MB",
+    "relatedTerms": [
+      "wirkungseinkommen",
+      "wirkungsfonds",
+      "wirkungssteuer"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/arbeit-einkommen/"
+    ],
+    "relatedTools": [
+      "/erleben/automatisierungs-wirkungseinkommensrechner/"
+    ],
+    "relatedPages": [
+      "/begriffe/wirkungseinkommen/",
+      "/begriffe/wirkungsfonds/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "wenn-maschinen-arbeiten",
+    "slug": "wenn-maschinen-arbeiten",
+    "title": "Wenn Maschinen arbeiten",
+    "type": "Dossier",
+    "category": [
+      "Automatisierung",
+      "Arbeit",
+      "Sozialstaat"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Dossier erklärt, warum Automatisierung Wertschöpfung verschiebt und warum Einkommen, Sozialbeiträge und Teilhabe nicht allein an Erwerbsarbeit hängen sollten.",
+    "audience": [
+      "Politik",
+      "Sozialstaat",
+      "Unternehmen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Automatisierung kann Lohnsummen schwächen, ohne Wertschöpfung zu vernichten.",
+      "Maschinenwertschöpfung kann über Beiträge, Fonds oder Boni rückgekoppelt werden.",
+      "Die Wirkungsökonomie betrachtet Verdrängung, Beteiligung und Transformation gemeinsam."
+    ],
+    "onlineUrl": "/bibliothek/wenn-maschinen-arbeiten/",
+    "sourceOnlineUrl": "/dokumente/wenn-maschinen-arbeiten/",
+    "pdfUrl": "/assets/pdf/wenn-maschinen-arbeiten.pdf",
+    "docxUrl": null,
+    "fileSize": "4.1 MB",
+    "relatedTerms": [
+      "wirkungseinkommen",
+      "wirkungsfonds",
+      "wirkungsrueckkopplung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/arbeit-einkommen/"
+    ],
+    "relatedTools": [
+      "/erleben/automatisierungs-wirkungseinkommensrechner/"
+    ],
+    "relatedPages": [
+      "/begriffe/wirkungseinkommen/",
+      "/begriffe/wirkungsfonds/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "woek-master-items-v1-2",
+    "slug": "woek-master-items-v1-2",
+    "title": "WÖk Master Items Version 1.2",
+    "type": "Methodenregister",
+    "category": [
+      "Daten",
+      "Indikatoren",
+      "Methodik"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Methodenregister sammelt zentrale Items, Begriffe und Bewertungsbausteine, die für Wirkungsdaten, Scorecards und Einordnung genutzt werden.",
+    "audience": [
+      "Methodik",
+      "Wissenschaft",
+      "Verwaltung",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Master Items schaffen gemeinsame Sprache für Wirkungsbewertung.",
+      "Sie unterstützen Begriffsarbeit, Datenräume und Bewertungslogik.",
+      "Die öffentliche Onlinefassung ordnet die Liste in verständliche Anwendungskontexte ein."
+    ],
+    "onlineUrl": "/bibliothek/woek-master-items-v1-2/",
+    "sourceOnlineUrl": "/dokumente/woek-master-items-final-v1-2/",
+    "pdfUrl": "/assets/pdf/woek-master-items-v1-2.pdf",
+    "docxUrl": null,
+    "fileSize": "1.4 MB",
+    "relatedTerms": [
+      "woek-id",
+      "scorecard",
+      "wirkungsdatenraum"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/glossar.html",
+      "/begriffe/woek-id/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "demokratie-schuetzen",
+    "slug": "demokratie-schuetzen",
+    "title": "Demokratie schützen",
+    "type": "Dossier",
+    "category": [
+      "Demokratie",
+      "Resilienz",
+      "Gesellschaft"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Dossier zur Frage, wie Demokratie, soziale Resilienz und gesellschaftliche Stabilität wirkungsökonomisch geschützt werden können.",
+    "audience": [
+      "Politik",
+      "Zivilgesellschaft",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Ein Dossier zur Frage, wie Demokratie, soziale Resilienz und gesellschaftliche Stabilität wirkungsökonomisch geschützt werden können.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/demokratie-schuetzen/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/demokratie-schuetzen.pdf",
+    "docxUrl": null,
+    "fileSize": "1.6 MB",
+    "contentHtmlPath": "assets/data/document-online/demokratie-schuetzen.html",
+    "relatedTerms": [
+      "resonanzraum",
+      "wirkungsresilienz",
+      "sdg-plus"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/staat-recht-demokratie/",
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "relatedTools": [
+      "/anwendungen/scanner.html"
+    ],
+    "relatedPages": [
+      "/blog/soziale-resilienz-gegen-verhetzung.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Politik-Gesellschaft/Desktop/Demokratie schützen.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "energiepolitik-2026",
+    "slug": "energiepolitik-2026",
+    "title": "Energiepolitik 2026",
+    "type": "Arbeitspapier",
+    "category": [
+      "Energie",
+      "Klima",
+      "Politik"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Arbeitspapier zu Energiepolitik, Systemkosten, Versorgungssicherheit und wirkungsorientierter Transformation.",
+    "audience": [
+      "Politik",
+      "Energie",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Ein Arbeitspapier zu Energiepolitik, Systemkosten, Versorgungssicherheit und wirkungsorientierter Transformation.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/energiepolitik-2026/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/energiepolitik-2026.pdf",
+    "docxUrl": null,
+    "fileSize": "49 KB",
+    "contentHtmlPath": "assets/data/document-online/energiepolitik-2026.html",
+    "relatedTerms": [
+      "transformationswirkung",
+      "wirkungsresilienz",
+      "wirkungshaushalt"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/klima-energie-ressourcen/"
+    ],
+    "relatedTools": [],
+    "relatedPages": [
+      "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Politik-Gesellschaft/Desktop/Energiepolitik 2026.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "die-neue-ordnung-des-wohlstands",
+    "slug": "die-neue-ordnung-des-wohlstands",
+    "title": "Die neue Ordnung des Wohlstands",
+    "type": "Grundlagenwerk",
+    "category": [
+      "Grundlagen",
+      "Modell",
+      "Wohlstand"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Grundlagenwerk der Wirkungsökonomie erklärt, warum Gewinn und Wachstum als alleiniger Maßstab nicht reichen und wie Wirkung für Mensch, Planet und Demokratie entscheidungsrelevant wird.",
+    "audience": [
+      "Öffentlichkeit",
+      "Politik",
+      "Wissenschaft",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Wirkung wird als tatsächliche Veränderung von Zuständen verstanden.",
+      "Preise, Steuern, Kapital und Entscheidungen sollen Wirkung besser abbilden.",
+      "Mensch, Planet und Demokratie übersetzen SDGs, Agenda 2030 und SDG+ verständlich."
+    ],
+    "onlineUrl": "/bibliothek/die-neue-ordnung-des-wohlstands/",
+    "sourceOnlineUrl": "/referenz/",
     "pdfUrl": "/assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
-    "docxUrl": "",
+    "docxUrl": null,
     "fileSize": "81.9 MB",
-    "relatedTerms": ["wirkung", "positive-netto-wirkung", "mensch-planet-demokratie"],
-    "relatedFields": ["grundlagen", "wirkungsfelder"],
-    "relatedTools": ["kompass"],
+    "relatedTerms": [
+      "wirkung",
+      "positive-netto-wirkung",
+      "sdg-plus"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/"
+    ],
+    "relatedTools": [
+      "/erleben.html"
+    ],
+    "relatedPages": [
+      "/kompass.html",
+      "/modell.html"
+    ],
     "isArchive": false,
-    "isPublic": true
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
   },
   {
-    "id": "faktencheck-folgencheck-v1-1",
-    "title": "Faktencheck und Folgencheck",
-    "type": "Paper",
-    "category": "medien-demokratie",
+    "id": "leitbild-mensch-planet-demokratie",
+    "slug": "leitbild-mensch-planet-demokratie",
+    "title": "Leitbild für Mensch, Planet und Demokratie",
+    "type": "Leitbild",
+    "category": [
+      "Grundlagen",
+      "Demokratie",
+      "SDG+"
+    ],
     "status": "current",
-    "stand": "2026-05-26",
-    "summary": "Unterscheidet Richtigkeitsprüfung und vorsorgende Ex-ante-Prüfung von Wirkstoffen, Wirkungspotenzialen, Wirkungspfaden und Wirkungsräumen.",
-    "onlineUrl": "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/",
-    "pdfUrl": "",
-    "docxUrl": "",
-    "fileSize": "",
-    "relatedTerms": ["faktencheck", "folgencheck", "wirkstoff", "wirkungsraum", "wirkungspfad", "wirkungspotenzial"],
-    "relatedFields": ["medien-oeffentlichkeit", "bildung"],
-    "relatedTools": ["scanner", "medienwirkungscheck"],
+    "stand": "2026",
+    "summary": "Das Leitbild beschreibt die normative Richtung der Wirkungsökonomie: positive Netto-Wirkung für Menschen, Ökosysteme, Institutionen und Demokratie.",
+    "audience": [
+      "Öffentlichkeit",
+      "Bildung",
+      "Politik"
+    ],
+    "keyPoints": [
+      "Mensch, Planet und Demokratie bündeln die fachliche Referenz SDGs, Agenda 2030 und SDG+.",
+      "Das Leitbild macht Wirkung als öffentlichen Orientierungsrahmen verständlich.",
+      "Es grenzt die Wirkungsökonomie von Personenbewertung und zentraler Steuerung ab."
+    ],
+    "onlineUrl": "/bibliothek/leitbild-mensch-planet-demokratie/",
+    "sourceOnlineUrl": "/dokumente/leitbild-mensch-planet-demokratie/",
+    "pdfUrl": "/assets/pdf/leitbild-mensch-planet-demokratie.pdf",
+    "docxUrl": null,
+    "fileSize": "135 KB",
+    "relatedTerms": [
+      "mensch-planet-demokratie",
+      "positive-netto-wirkung",
+      "sdg-plus"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/staat-recht-demokratie/"
+    ],
+    "relatedTools": [],
+    "relatedPages": [
+      "/kompass.html",
+      "/verstehen/sdgs-sdgplus/"
+    ],
     "isArchive": false,
-    "isPublic": true
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
   },
   {
-    "id": "sdg-sdgplus-referenzrahmen",
-    "title": "SDG-/SDG+-Referenzrahmen",
+    "id": "wirkung-statt-kapital",
+    "slug": "wirkung-statt-kapital",
+    "title": "Wirkung statt Kapital",
+    "type": "Whitepaper",
+    "category": [
+      "Grundlagen",
+      "Kapital",
+      "Modell"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Whitepaper erklärt den Wechsel von Kapital als dominierendem Kompass zu Wirkung als Bewertungs-, Steuerungs- und Investitionslogik.",
+    "audience": [
+      "Unternehmen",
+      "Kapitalmarkt",
+      "Politik",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Kapital bleibt relevant, reicht aber als Zielgröße nicht aus.",
+      "Wirkung macht externe Folgen in Preisen, Steuern und Kapitalentscheidungen sichtbar.",
+      "Positive Netto-Wirkung wird zum Maßstab für Zukunftsfähigkeit."
+    ],
+    "onlineUrl": "/bibliothek/wirkung-statt-kapital/",
+    "sourceOnlineUrl": "/modell.html",
+    "pdfUrl": "/assets/pdf/whitepaper-wirkung-statt-kapital.pdf",
+    "docxUrl": null,
+    "fileSize": "3.4 MB",
+    "relatedTerms": [
+      "wirkung",
+      "wirkungsbewertung",
+      "wirkungsrueckkopplung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/finanzsystem-kapital/",
+      "/wirkungsfelder/wirtschaft-unternehmen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/kompass.html",
+      "/wirkungsfelder/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "t-sroi-standard-impact-controlling",
+    "slug": "t-sroi-standard-impact-controlling",
+    "title": "T-SROI: Der neue Standard für Impact-Controlling",
+    "type": "Whitepaper",
+    "category": [
+      "Impact Controlling",
+      "T-SROI",
+      "Methodik"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Whitepaper erklärt T-SROI als Methode, um Transformationswirkung, Systemfolgen und langfristige Stabilisierung verständlich einzuordnen.",
+    "audience": [
+      "Unternehmen",
+      "Impact Controlling",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Das Whitepaper erklärt T-SROI als Methode, um Transformationswirkung, Systemfolgen und langfristige Stabilisierung verständlich einzuordnen.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/t-sroi-standard-impact-controlling/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/t-sroi-standard-impact-controlling.pdf",
+    "docxUrl": null,
+    "fileSize": "430 KB",
+    "contentHtmlPath": "assets/data/document-online/t-sroi-standard-impact-controlling.html",
+    "relatedTerms": [
+      "t-sroi",
+      "nwi",
+      "scorecard"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/begriffe/t-sroi/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Word-Texte/Documents/T-SROI - Der neue Standard für Impact-Controlling - Natalie Weber.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "groesster-denkfehler-klimadebatte",
+    "slug": "groesster-denkfehler-klimadebatte",
+    "title": "Der größte Denkfehler in der Klimadebatte",
+    "type": "Essay",
+    "category": [
+      "Klima",
+      "Energie",
+      "Transformation"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Essay über verkürzte Klimadebatten, Systemkosten und die Frage, warum spätes Handeln teurer wird als vorausschauende Transformation.",
+    "audience": [
+      "Öffentlichkeit",
+      "Politik",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Ein Essay über verkürzte Klimadebatten, Systemkosten und die Frage, warum spätes Handeln teurer wird als vorausschauende Transformation.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/groesster-denkfehler-klimadebatte/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/groesster-denkfehler-klimadebatte.pdf",
+    "docxUrl": null,
+    "fileSize": "16 KB",
+    "contentHtmlPath": "assets/data/document-online/groesster-denkfehler-klimadebatte.html",
+    "relatedTerms": [
+      "wirkungsresilienz",
+      "transformationswirkung",
+      "negative-wirkung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/klima-energie-ressourcen/"
+    ],
+    "relatedTools": [],
+    "relatedPages": [
+      "/blog/warum-wir-den-klimawandel-systematisch-falsch-diskutieren.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Desktop/Der größte Denkfehler in der Klimadebatte.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "kommunale-wirkungsgewerbesteuer",
+    "slug": "kommunale-wirkungsgewerbesteuer",
+    "title": "Use Case Kommunale Wirkungsgewerbesteuer",
+    "type": "Use Case",
+    "category": [
+      "Kommunen",
+      "Steuern",
+      "Umsetzung"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Der Use Case zeigt modellhaft, wie Kommunen Wirkungsdaten, lokale Anreize und Gewerbesteuerlogik zusammendenken könnten.",
+    "audience": [
+      "Kommunen",
+      "Verwaltung",
+      "Politik",
+      "Unternehmen"
+    ],
+    "keyPoints": [
+      "Kommunale Steuerung braucht Daten, die lokale Folgen sichtbar machen.",
+      "Wirkungslogik kann Beschaffung, Standortpolitik und Wirtschaftsförderung verbinden.",
+      "Piloträume, Datenschutz und demokratische Kontrolle bleiben Voraussetzung."
+    ],
+    "onlineUrl": "/bibliothek/kommunale-wirkungsgewerbesteuer/",
+    "sourceOnlineUrl": "/wirkungsfelder/staat-recht-demokratie/",
+    "pdfUrl": "/assets/pdf/use-case-kommunale-wirkungsgewerbesteuer.pdf",
+    "docxUrl": null,
+    "fileSize": "2.3 MB",
+    "relatedTerms": [
+      "wirkungssteuer",
+      "wirkungshaushalt",
+      "wirkungsrueckkopplung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/staat-recht-demokratie/",
+      "/wirkungsfelder/wirtschaft-unternehmen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/wirkungsfelder/staat-recht-demokratie/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "nachhaltiges-marketing-mix",
+    "slug": "nachhaltiges-marketing-mix",
+    "title": "Nachhaltiges Marketing-Mix",
+    "type": "Buch / Arbeitspapier",
+    "category": [
+      "Marketing",
+      "Nachhaltigkeit",
+      "ESG"
+    ],
+    "status": "current",
+    "stand": "2024",
+    "summary": "Eine frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+    "audience": [
+      "Marketing",
+      "Unternehmen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Nachhaltigkeit wird nicht als Zusatzbotschaft behandelt, sondern als Produkt-, Preis-, Distributions- und Kommunikationslogik.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/nachhaltiges-marketing-mix/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/nachhaltiges-marketing-mix.pdf",
+    "docxUrl": null,
+    "fileSize": "154 KB",
+    "contentHtmlPath": "assets/data/document-online/nachhaltiges-marketing-mix.html",
+    "relatedTerms": [
+      "nachhaltigkeit",
+      "wirkungsbewertung",
+      "scorecard"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/",
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/begriffe/nachhaltigkeit/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Downloads/Nachhaltiges Marketing-Mix - Natalie Weber.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "nachhaltiger-einzelhandel",
+    "slug": "nachhaltiger-einzelhandel",
+    "title": "Nachhaltiger Einzelhandel",
+    "type": "Buch / Arbeitspapier",
+    "category": [
+      "Handel",
+      "Nachhaltigkeit",
+      "Kreislaufwirtschaft"
+    ],
+    "status": "current",
+    "stand": "2023",
+    "summary": "Eine frühe Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+    "audience": [
+      "Einzelhandel",
+      "Unternehmen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine frühe Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/nachhaltiger-einzelhandel/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/nachhaltiger-einzelhandel.pdf",
+    "docxUrl": null,
+    "fileSize": "25 KB",
+    "contentHtmlPath": "assets/data/document-online/nachhaltiger-einzelhandel.html",
+    "relatedTerms": [
+      "nachhaltigkeit",
+      "kreislaufwirtschaft",
+      "sdgs"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/",
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/verstehen/sdgs-sdgplus/",
+      "/bibliothek/nachhaltiges-marketing-mix/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+    "slug": "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+    "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+    "type": "Buch / Arbeitspapier",
+    "category": [
+      "Unternehmen",
+      "Nachhaltigkeit",
+      "SDG",
+      "ESG"
+    ],
+    "status": "current",
+    "stand": "2023",
+    "summary": "Eine frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+    "audience": [
+      "Beratungsunternehmen",
+      "Mittelstand",
+      "Unternehmen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+    "docxUrl": null,
+    "fileSize": "39 KB",
+    "contentHtmlPath": "assets/data/document-online/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.html",
+    "relatedTerms": [
+      "sdgs",
+      "esg",
+      "nachhaltigkeit",
+      "wirkungsbewertung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/verstehen/sdgs-sdgplus/",
+      "/bibliothek/agenda2030-sdg-esg-handout/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "nachhaltigkeitstransformation-im-handwerk",
+    "slug": "nachhaltigkeitstransformation-im-handwerk",
+    "title": "Nachhaltigkeitstransformation im Handwerk",
+    "type": "Buch / Arbeitspapier",
+    "category": [
+      "Handwerk",
+      "Nachhaltigkeit",
+      "Mittelstand",
+      "SDG"
+    ],
+    "status": "current",
+    "stand": "2023",
+    "summary": "Eine frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+    "audience": [
+      "Handwerk",
+      "Mittelstand",
+      "Unternehmen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/nachhaltigkeitstransformation-im-handwerk/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf",
+    "docxUrl": null,
+    "fileSize": "43 KB",
+    "contentHtmlPath": "assets/data/document-online/nachhaltigkeitstransformation-im-handwerk.html",
+    "relatedTerms": [
+      "nachhaltigkeit",
+      "sdgs",
+      "kreislaufwirtschaft",
+      "wirkungsbewertung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/",
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/verstehen/sdgs-sdgplus/",
+      "/bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "host-tsi-transformational-system-impact",
+    "slug": "host-tsi-transformational-system-impact",
+    "title": "HOST-TSI: Transformational System Impact",
+    "type": "Konzeptpapier",
+    "category": [
+      "Medien",
+      "Plattformen",
+      "Systemwirkung"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Konzeptpapier zur Wirkung von Hosts, Plattformlogik und Transformational System Impact in digitalen Resonanzräumen.",
+    "audience": [
+      "Medien",
+      "Plattformen",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Ein Konzeptpapier zur Wirkung von Hosts, Plattformlogik und Transformational System Impact in digitalen Resonanzräumen.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/host-tsi-transformational-system-impact/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/host-tsi-transformational-system-impact.pdf",
+    "docxUrl": null,
+    "fileSize": "22 KB",
+    "contentHtmlPath": "assets/data/document-online/host-tsi-transformational-system-impact.html",
+    "relatedTerms": [
+      "resonanzraum",
+      "wirkungspotenzial",
+      "wirkungsbewertung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "relatedTools": [
+      "/anwendungen/scanner.html"
+    ],
+    "relatedPages": [
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/PDFs/Downloads/Konzept_ HOST‑TSI (Transformational System Impact) für TikTok-Lives.pdf",
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "live-impact-rating-konzept",
+    "slug": "live-impact-rating-konzept",
+    "title": "Live-Impact-Rating",
+    "type": "Konzeptpapier",
+    "category": [
+      "Medien",
+      "Wirkungsbewertung",
+      "Scanner"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Konzeptpapier für Live-Impact-Rating als modellhafte Einordnung von Wirkungspotenzialen in Kommunikation und digitalen Formaten.",
+    "audience": [
+      "Medien",
+      "Kommunikation",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Ein Konzeptpapier für Live-Impact-Rating als modellhafte Einordnung von Wirkungspotenzialen in Kommunikation und digitalen Formaten.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/live-impact-rating-konzept/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/live-impact-rating-konzept.pdf",
+    "docxUrl": null,
+    "fileSize": "5 KB",
+    "contentHtmlPath": "assets/data/document-online/live-impact-rating-konzept.html",
+    "relatedTerms": [
+      "wirkungspotenzial",
+      "resonanzraum",
+      "wirkungsbewertung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "relatedTools": [
+      "/anwendungen/scanner.html"
+    ],
+    "relatedPages": [
+      "/bibliothek/medien-und-wirkung/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/PDFs/Downloads/Live-Impact-Rating - Konzept.pdf",
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "medien-und-wirkung",
+    "slug": "medien-und-wirkung",
+    "title": "Medien und Wirkung",
+    "type": "Whitepaper",
+    "category": [
+      "Medien",
+      "Demokratie",
+      "Resonanzraum"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Whitepaper erklärt, wie Sprache, Frames, Reichweite, Quellenklarheit und Resonanzräume demokratische Wirkung erzeugen können.",
+    "audience": [
+      "Medien",
+      "Politik",
+      "Bildung",
+      "Zivilgesellschaft"
+    ],
+    "keyPoints": [
+      "Reichweite ist kein ausreichender Maßstab für Medienwirkung.",
+      "Frames und Emotionalisierung können Vertrauen, Polarisierung und Diskursqualität beeinflussen.",
+      "Die Bewertung bleibt Wirkungspotenzial, keine Wahrheitseinstufung."
+    ],
+    "onlineUrl": "/bibliothek/medien-und-wirkung/",
+    "sourceOnlineUrl": "/wirkungsfelder/medien-oeffentlichkeit/",
+    "pdfUrl": "/assets/pdf/medien-und-wirkung.pdf",
+    "docxUrl": null,
+    "fileSize": "2.9 MB",
+    "relatedTerms": [
+      "resonanzraum",
+      "wirkungspotenzial",
+      "wirkungsbewertung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "relatedTools": [
+      "/anwendungen/scanner.html"
+    ],
+    "relatedPages": [
+      "/begriffe/resonanzraum/",
+      "/begriffe/wirkungspotenzial/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "milram-kampagnenanalyse",
+    "slug": "milram-kampagnenanalyse",
+    "title": "Milram-Kampagnenanalyse",
+    "type": "Dossier",
+    "category": [
+      "Medien",
+      "Kommunikation",
+      "Wirkungsanalyse"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Eine Kampagnenanalyse, die Medienwirkung, Framing, Resonanzrisiken und öffentliche Anschlussfähigkeit anhand eines konkreten Beispiels einordnet.",
+    "audience": [
+      "Medien",
+      "Kommunikation",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine Kampagnenanalyse, die Medienwirkung, Framing, Resonanzrisiken und öffentliche Anschlussfähigkeit anhand eines konkreten Beispiels einordnet.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/milram-kampagnenanalyse/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/milram-kampagnenanalyse.pdf",
+    "docxUrl": null,
+    "fileSize": "5 KB",
+    "contentHtmlPath": "assets/data/document-online/milram-kampagnenanalyse.html",
+    "relatedTerms": [
+      "resonanzraum",
+      "wirkungspotenzial",
+      "wirkungsbewertung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "relatedTools": [
+      "/anwendungen/scanner.html"
+    ],
+    "relatedPages": [
+      "/bibliothek/medien-und-wirkung/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Word-Texte/Downloads/Milram-Kampagnenanalyse.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "prozessarchitektur-wirkungsoekonomie",
+    "slug": "prozessarchitektur-wirkungsoekonomie",
+    "title": "Prozessarchitektur der Wirkungsökonomie",
+    "type": "Methodenpapier",
+    "category": [
+      "Methodik",
+      "Daten",
+      "Steuerung"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Methodenpapier zeigt, wie aus Daten, Indikatoren, Scorecards und Schutzregeln eine nachvollziehbare Wirkungsbewertung entstehen kann.",
+    "audience": [
+      "Verwaltung",
+      "Unternehmen",
+      "Wissenschaft",
+      "Methodik"
+    ],
+    "keyPoints": [
+      "Wirkungsbewertung braucht Datenqualität, Quellenklarheit und Schutzregeln.",
+      "Scorecards übersetzen Wirkungsfelder in steuerbare Bewertung.",
+      "Die Prozesslogik verbindet Analyse, Entscheidung, Evaluation und Korrektur."
+    ],
+    "onlineUrl": "/bibliothek/prozessarchitektur-wirkungsoekonomie/",
+    "sourceOnlineUrl": "/workflow.html",
+    "pdfUrl": "/assets/pdf/prozessarchitektur-wirkungsoekonomie.pdf",
+    "docxUrl": null,
+    "fileSize": "1.3 MB",
+    "relatedTerms": [
+      "scorecard",
+      "woek-id",
+      "wirkungsbewertung",
+      "wirkungsdaten"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/methodik/daten-standards-regularien.html",
+      "/workflow.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "nachhaltigkeit-systemarchitektur",
+    "slug": "nachhaltigkeit-systemarchitektur",
+    "title": "Nachhaltigkeit als Systemarchitektur",
+    "type": "Arbeitspapier",
+    "category": [
+      "Nachhaltigkeit",
+      "Systemlogik",
+      "Resilienz"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Arbeitspapier ordnet Nachhaltigkeit als Systemfähigkeit ein: nicht als Label, sondern als Fähigkeit, dauerhaft positive Wirkung und Resilienz zu erzeugen.",
+    "audience": [
+      "Unternehmen",
+      "Politik",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Das Arbeitspapier ordnet Nachhaltigkeit als Systemfähigkeit ein: nicht als Label, sondern als Fähigkeit, dauerhaft positive Wirkung und Resilienz zu erzeugen.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/nachhaltigkeit-systemarchitektur/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/nachhaltigkeit-systemarchitektur.pdf",
+    "docxUrl": null,
+    "fileSize": "44 KB",
+    "contentHtmlPath": "assets/data/document-online/nachhaltigkeit-systemarchitektur.html",
+    "relatedTerms": [
+      "nachhaltigkeit",
+      "wirkungsresilienz",
+      "positive-netto-wirkung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/",
+      "/wirkungsfelder/klima-energie-ressourcen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/blog/was-ist-nachhaltigkeit-wirklich.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Desktop/Nachhaltigkeit-Systemarchitektur.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "nachhaltigkeit-kapitalzentriertes-steuerungsmodell",
+    "slug": "nachhaltigkeit-kapitalzentriertes-steuerungsmodell",
+    "title": "Warum Nachhaltigkeit im kapitalszentrierten Steuerungsmodell strukturell unterbestimmt bleibt",
+    "type": "Arbeitspapier",
+    "category": [
+      "Nachhaltigkeit",
+      "Kapital",
+      "Steuerung"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Arbeitspapier erklärt, warum Nachhaltigkeit im heutigen Steuerungsmodell häufig nachrangig bleibt, solange Kapital, Umsatz und Rendite die Hauptlogik bilden.",
+    "audience": [
+      "Unternehmen",
+      "Kapitalmarkt",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Das Arbeitspapier erklärt, warum Nachhaltigkeit im heutigen Steuerungsmodell häufig nachrangig bleibt, solange Kapital, Umsatz und Rendite die Hauptlogik bilden.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/nachhaltigkeit-kapitalzentriertes-steuerungsmodell.pdf",
+    "docxUrl": null,
+    "fileSize": "46 KB",
+    "contentHtmlPath": "assets/data/document-online/nachhaltigkeit-kapitalzentriertes-steuerungsmodell.html",
+    "relatedTerms": [
+      "nachhaltigkeit",
+      "wirkungsblindheit",
+      "wirkungsrueckkopplung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/finanzsystem-kapital/",
+      "/wirkungsfelder/wirtschaft-unternehmen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/bibliothek/wirkung-statt-kapital/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Desktop/Warum Nachhaltigkeit im kapitalszentrierten Steuerungsmodell strukturell unterbestimmt bleibt.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "leitbild-deutschland-2030-woek",
+    "slug": "leitbild-deutschland-2030-woek",
+    "title": "Leitbild Deutschland 2030",
+    "type": "Leitbild",
+    "category": [
+      "Politik",
+      "Demokratie",
+      "SDG+"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Leitbild zur Frage, wie Deutschland 2030 wirkungsorientiert, demokratisch und zukunftsfähig beschrieben werden kann.",
+    "audience": [
+      "Politik",
+      "Öffentlichkeit",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Ein Leitbild zur Frage, wie Deutschland 2030 wirkungsorientiert, demokratisch und zukunftsfähig beschrieben werden kann.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/leitbild-deutschland-2030-woek/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/leitbild-deutschland-2030-woek.pdf",
+    "docxUrl": null,
+    "fileSize": "16 KB",
+    "contentHtmlPath": "assets/data/document-online/leitbild-deutschland-2030-woek.html",
+    "relatedTerms": [
+      "mensch-planet-demokratie",
+      "sdg-plus",
+      "positive-netto-wirkung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/staat-recht-demokratie/"
+    ],
+    "relatedTools": [],
+    "relatedPages": [
+      "/bibliothek/leitbild-mensch-planet-demokratie/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/PDFs/Downloads/Leitbild_Deutschland_2030_WOek.pdf",
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "beispiel-zange-sdg-esrs-mit-steuer-und-links",
+    "slug": "beispiel-zange-sdg-esrs-mit-steuer-und-links",
+    "title": "Beispiel Zange: SDG, ESRS und Wirkungssteuer",
+    "type": "Fallstudie",
+    "category": [
+      "Produkte",
+      "SDG",
+      "ESRS",
+      "Wirkungssteuer"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Eine Fallstudie, die an einem Produktbeispiel zeigt, wie SDG-Bezüge, ESRS-Daten und Wirkungssteuerlogik zusammengedacht werden können.",
+    "audience": [
+      "Unternehmen",
+      "Produktentwicklung",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine Fallstudie, die an einem Produktbeispiel zeigt, wie SDG-Bezüge, ESRS-Daten und Wirkungssteuerlogik zusammengedacht werden können.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/beispiel-zange-sdg-esrs-mit-steuer-und-links.pdf",
+    "docxUrl": null,
+    "fileSize": "14 KB",
+    "contentHtmlPath": "assets/data/document-online/beispiel-zange-sdg-esrs-mit-steuer-und-links.html",
+    "relatedTerms": [
+      "sdg-plus",
+      "esrs",
+      "wirkungssteuer",
+      "scorecard"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/erleben/produktwirkungsrechner/"
+    ],
+    "relatedPages": [
+      "/bibliothek/produktbesteuerung-durch-wirkung/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Downloads/Beispiel_Zange_SDG_ESRS_mit_Steuer_und_Links.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "beispiel-zange-sdg-esrs-fussnoten",
+    "slug": "beispiel-zange-sdg-esrs-fussnoten",
+    "title": "Beispiel Zange: SDG- und ESRS-Fußnoten",
+    "type": "Fallstudie",
+    "category": [
+      "Produkte",
+      "SDG",
+      "ESRS"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Eine ergänzende Fallstudie mit Fußnoten und Bezügen zu SDG- und ESRS-Logik am Beispiel eines Produkts.",
+    "audience": [
+      "Unternehmen",
+      "Methodik",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine ergänzende Fallstudie mit Fußnoten und Bezügen zu SDG- und ESRS-Logik am Beispiel eines Produkts.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/beispiel-zange-sdg-esrs-fussnoten/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/beispiel-zange-sdg-esrs-fussnoten.pdf",
+    "docxUrl": null,
+    "fileSize": "10 KB",
+    "contentHtmlPath": "assets/data/document-online/beispiel-zange-sdg-esrs-fussnoten.html",
+    "relatedTerms": [
+      "sdgs",
+      "esrs",
+      "digitaler-produktpass"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Nachhaltigkeit-Klima-ESG/Downloads/Beispiel_Zange_SDG_ESRS_Fussnoten.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "produktbesteuerung-durch-wirkung",
+    "slug": "produktbesteuerung-durch-wirkung",
+    "title": "Produktbesteuerung durch Wirkung",
+    "type": "Working Paper",
+    "category": [
+      "Produkte",
+      "Konsum",
+      "Steuern"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Das Working Paper erklärt, wie Produktpreise soziale, ökologische und gesundheitliche Wirkungen berücksichtigen könnten.",
+    "audience": [
+      "Verbraucher:innen",
+      "Unternehmen",
+      "Politik",
+      "Verwaltung"
+    ],
+    "keyPoints": [
+      "Der heutige Preis zeigt Kosten und Marge, aber nicht alle Wirkungen.",
+      "Produktwirkung verbindet Lieferkette, Nutzung, Entsorgung und Steuerlogik.",
+      "Wirkungssteuerung braucht Schutzregeln gegen Datenmissbrauch und Greenwashing."
+    ],
+    "onlineUrl": "/bibliothek/produktbesteuerung-durch-wirkung/",
+    "sourceOnlineUrl": "/dokumente/wp-produkte/",
+    "pdfUrl": "/assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf",
+    "docxUrl": null,
+    "fileSize": "2.5 MB",
+    "relatedTerms": [
+      "wirkungssteuer",
+      "scorecard",
+      "digitaler-produktpass"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/erleben.html"
+    ],
+    "relatedPages": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "agenda2030-sdg-esg-handout",
+    "slug": "agenda2030-sdg-esg-handout",
+    "title": "Agenda 2030, SDG und ESG",
+    "type": "Handout",
+    "category": [
+      "SDG",
+      "ESG",
+      "Grundlagen"
+    ],
+    "status": "current",
+    "stand": "2026",
+    "summary": "Ein Handout zur Einordnung von Agenda 2030, SDGs, ESG und Wirkungsökonomie.",
+    "audience": [
+      "Akademie",
+      "Unternehmen",
+      "Politik"
+    ],
+    "keyPoints": [
+      "Ein Handout zur Einordnung von Agenda 2030, SDGs, ESG und Wirkungsökonomie.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/agenda2030-sdg-esg-handout/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/agenda2030-sdg-esg-handout.pdf",
+    "docxUrl": null,
+    "fileSize": "15 KB",
+    "contentHtmlPath": "assets/data/document-online/agenda2030-sdg-esg-handout.html",
+    "relatedTerms": [
+      "agenda-2030",
+      "sdgs",
+      "esg",
+      "sdg-plus"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+    ],
+    "relatedTools": [],
+    "relatedPages": [
+      "/verstehen/sdgs-sdgplus/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/PDFs/Downloads/Agenda2030-SDG-ESG_Nats_Handout.pdf",
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "wirkungssteuergesetz-wstg",
+    "slug": "wirkungssteuergesetz-wstg",
+    "title": "Wirkungssteuergesetz WStG",
+    "type": "Gesetzesentwurf",
+    "category": [
+      "Steuern",
+      "Recht",
+      "Wirkungsrückkopplung"
+    ],
+    "status": "current",
+    "stand": "2025",
+    "summary": "Der Entwurf beschreibt modellhaft, wie Wirkungsklassen, Steuerklassen und Schutzregeln in ein rechtliches Steuerungsmodell übersetzt werden könnten.",
+    "audience": [
+      "Politik",
+      "Recht",
+      "Verwaltung",
+      "Unternehmen"
+    ],
+    "keyPoints": [
+      "Schädliche Wirkung soll sich nicht länger rechnen.",
+      "Steuerlogik wird mit demokratischer Kontrolle und Rechtsbehelf verbunden.",
+      "Das Modell ist eine Arbeitsgrundlage, kein fertiges Gesetzgebungsverfahren."
+    ],
+    "onlineUrl": "/bibliothek/wirkungssteuergesetz-wstg/",
+    "sourceOnlineUrl": "/dokumente/wstg-oktober-2025/",
+    "pdfUrl": "/assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf",
+    "docxUrl": null,
+    "fileSize": "2.0 MB",
+    "relatedTerms": [
+      "wirkungssteuer",
+      "wstg",
+      "wirkungsrueckkopplung"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/staat-recht-demokratie/",
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/erleben.html"
+    ],
+    "relatedPages": [
+      "/werkzeuge/impact-controlling/",
+      "/workflow.html"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt",
+    "slug": "wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt",
+    "title": "Risikomanagement, Resilienz und Finanzmarkt",
     "type": "Detailkonzept",
-    "category": "referenzrahmen",
+    "category": [
+      "Wirtschaft",
+      "Unternehmen",
+      "Risikomanagement",
+      "Resilienz"
+    ],
     "status": "current",
-    "stand": "2026-05",
-    "summary": "Referenzrahmen der Wirkungsökonomie mit SDGs, Agenda 2030, SDG+ sowie IDGs und Wirkungskompetenz als Kompetenzanschluss.",
-    "onlineUrl": "/verstehen/sdgs-sdgplus/",
-    "pdfUrl": "/assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf",
-    "docxUrl": "",
-    "fileSize": "",
-    "relatedTerms": ["sdgs", "sdg-plus", "idgs", "wirkungskompetenz"],
-    "relatedFields": ["verstehen", "bildung"],
-    "relatedTools": ["woek-ids", "scorecards"],
+    "stand": "2026",
+    "summary": "Ein Detailkonzept zu Unternehmensrisiko, Resilienz, Finanzmarktanforderungen und wirkungsorientierter Steuerung.",
+    "audience": [
+      "Unternehmen",
+      "Finanzmarkt",
+      "Impact Controlling"
+    ],
+    "keyPoints": [
+      "Ein Detailkonzept zu Unternehmensrisiko, Resilienz, Finanzmarktanforderungen und wirkungsorientierter Steuerung.",
+      "Die Onlinefassung macht das Dokument direkt lesbar.",
+      "Die PDF-Fassung steht ergänzend als Download bereit."
+    ],
+    "onlineUrl": "/bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/",
+    "sourceOnlineUrl": null,
+    "pdfUrl": "/assets/pdf/imported/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt.pdf",
+    "docxUrl": null,
+    "fileSize": "267 KB",
+    "contentHtmlPath": "assets/data/document-online/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt.html",
+    "relatedTerms": [
+      "wirkungsresilienz",
+      "wirkungsrisiko",
+      "impact-controlling"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wirtschaft-unternehmen/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/"
+    ],
+    "relatedPages": [
+      "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/"
+    ],
     "isArchive": false,
-    "isPublic": true
+    "isPublic": true,
+    "importSource": "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/02_Dokumente/Word-Texte/Downloads/08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
   },
   {
-    "id": "produkte-konsum-detailkonzepte",
-    "title": "Produkte & Konsum: Detailkonzepte",
-    "type": "Detailkonzepte",
-    "category": "wirkungsfeld",
+    "id": "working-paper-wohnungsmarkt",
+    "slug": "working-paper-wohnungsmarkt",
+    "title": "Working Paper Wohnungsmarkt",
+    "type": "Working Paper",
+    "category": [
+      "Wohnen",
+      "Stadt",
+      "Mieten"
+    ],
     "status": "current",
-    "stand": "2026-05",
-    "summary": "Produktwirkung, Wirkungsumsatzsteuer, Reverse Merit Order, digitale Produktpässe, Lieferkettenwirkung und Verbraucherinformation.",
-    "onlineUrl": "/wirkungsfelder/produkte-konsum/detailkonzepte/",
-    "pdfUrl": "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.pdf",
-    "docxUrl": "",
-    "fileSize": "",
-    "relatedTerms": ["produktwirkung", "wirkungssteuer", "reverse-merit-order", "digitaler-produktpass"],
-    "relatedFields": ["produkte-konsum"],
-    "relatedTools": ["produktwirkungsrechner", "produktscorecards"],
+    "stand": "2026",
+    "summary": "Das Working Paper zeigt, wie Wohnen als Wirkungsfeld betrachtet werden kann: Bezahlbarkeit, Stabilität, Verdrängung, Klima und kommunale Verantwortung gehören zusammen.",
+    "audience": [
+      "Kommunen",
+      "Mieter:innen",
+      "Wohnungswirtschaft",
+      "Politik"
+    ],
+    "keyPoints": [
+      "Wohnkosten zeigen nicht automatisch Wohnwirkung.",
+      "Wirkungsvermietung verbindet Bezahlbarkeit, Qualität, Stabilität und Zukunftsfähigkeit.",
+      "Kommunen brauchen steuerbare Daten, ohne Haushalte zu bewerten."
+    ],
+    "onlineUrl": "/bibliothek/working-paper-wohnungsmarkt/",
+    "sourceOnlineUrl": "/dokumente/wp-wohnungsmarkt/",
+    "pdfUrl": "/assets/pdf/working-paper-wohnungsmarkt.pdf",
+    "docxUrl": null,
+    "fileSize": "6.7 MB",
+    "relatedTerms": [
+      "wohnwirkung",
+      "wirkungsvermietung",
+      "warmmietenneutralitaet"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/wohnen-stadt/"
+    ],
+    "relatedTools": [],
+    "relatedPages": [
+      "/begriffe/wohnwirkung/"
+    ],
     "isArchive": false,
-    "isPublic": true
+    "isPublic": true,
+    "sourceFormat": "internal",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
   },
   {
-    "id": "wirtschaft-unternehmen-detailkonzepte",
-    "title": "Wirtschaft & Unternehmen: Detailkonzepte",
-    "type": "Detailkonzepte",
-    "category": "wirkungsfeld",
+    "id": "social-taxonomy-wirkungsoekonomie",
+    "slug": "social-taxonomy-wirkungsoekonomie",
+    "title": "Social Taxonomy",
+    "type": "Ausarbeitung",
+    "category": [
+      "Sustainable Finance",
+      "Soziale Wirkung",
+      "EU-Taxonomie",
+      "Wirkungsökonomie"
+    ],
     "status": "current",
-    "stand": "2026-05",
-    "summary": "Unternehmen als Wirkungssysteme, Impact Controlling, Lieferketten, Marketing nach Wirkung, Kapitalwirkung und Governance.",
-    "onlineUrl": "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/",
-    "pdfUrl": "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.pdf",
-    "docxUrl": "",
-    "fileSize": "",
-    "relatedTerms": ["scorecard", "woek-id", "t-sroi", "nwi"],
-    "relatedFields": ["wirtschaft-unternehmen"],
-    "relatedTools": ["unternehmens-wirkungscheck", "impact-controlling"],
+    "stand": "27. Mai 2026",
+    "summary": "Diese Ausarbeitung ordnet Social Taxonomy als soziale Wirkungsarchitektur ein: von EU-Sozialtaxonomie, Mindestschutz und DNSH bis zu positiver Netto-Wirkung, Scorecards, Datenqualität und Rückkopplung in Kapital, Beschaffung und Unternehmenssteuerung.",
+    "audience": [
+      "Unternehmen",
+      "Finanzmarkt",
+      "Politik",
+      "Verwaltung",
+      "Wissenschaft",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Eine eigenständige verbindliche EU-Social-Taxonomy existiert Stand 27. Mai 2026 nicht; der Bericht der Platform on Sustainable Finance bleibt ein zentraler Vorschlag.",
+      "Soziale Taxonomie darf nicht bei Mindestschutz und Reporting stehen bleiben, sondern muss positive soziale Wirkung, Nichtkompensation und Datenqualität sichtbar machen.",
+      "Wirkungsökonomie übersetzt Social Taxonomy in Wirkungsdaten, Scorecards, WÖk-IDs und Rückkopplung in Kapital, Beschaffung, Förderung und Management."
+    ],
+    "onlineUrl": "/bibliothek/social-taxonomy-wirkungsoekonomie/",
+    "sourceOnlineUrl": "/begriffe/social-taxonomy/",
+    "pdfUrl": "/assets/pdf/social-taxonomy-wirkungsoekonomie.pdf",
+    "docxUrl": null,
+    "fileSize": "128 KB",
+    "contentHtmlPath": "assets/data/document-online/social-taxonomy-wirkungsoekonomie.html",
+    "relatedTerms": [
+      "social-taxonomy",
+      "sustainable-finance",
+      "eu-taxonomie",
+      "esg",
+      "csrd",
+      "esrs",
+      "positive-netto-wirkung",
+      "nichtkompensationsprinzip",
+      "scorecard",
+      "reverse-merit-order",
+      "t-sroi",
+      "woek-id",
+      "social-credit"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/finanzsystem-kapital/",
+      "/wirkungsfelder/wirtschaft-unternehmen/",
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/werkzeuge/impact-controlling/",
+      "/werkzeuge/scorecards/",
+      "/werkzeuge/reverse-merit-order/"
+    ],
+    "relatedPages": [
+      "/begriffe/social-taxonomy/",
+      "/begriffe/eu-taxonomie/",
+      "/wirkungsfelder/wirtschaft-unternehmen/finanzmarktanforderungen/",
+      "/verstehen/sdgs-sdgplus/"
+    ],
     "isArchive": false,
-    "isPublic": true
+    "isPublic": true,
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
   },
   {
-    "id": "arbeit-einkommen-wirkung-detailkonzept",
-    "title": "Arbeit, Einkommen und Wirkung",
-    "type": "Detailkonzept",
-    "category": "wirkungsfeld",
+    "id": "wirkungsraeume-gestalten-hosting-v1-0",
+    "slug": "wirkungsraeume-gestalten-hosting",
+    "title": "Wirkungsräume gestalten",
+    "type": "Dossier",
+    "category": [
+      "Medien",
+      "Demokratie",
+      "Hosting",
+      "Wirkungsräume"
+    ],
     "status": "current",
-    "stand": "2026-05",
-    "summary": "Detailkonzept zu Leistung, Einkommen, Maschinenleistung und gesellschaftlicher Rückkopplung.",
-    "onlineUrl": "/wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/",
-    "pdfUrl": "",
-    "docxUrl": "/assets/downloads/woek_detailkonzept_arbeit-einkommen-wirkung_v0_1.docx",
-    "fileSize": "",
-    "relatedTerms": ["wirkungseinkommen", "maschinenwertschoepfungsbeitrag", "wirkungsfonds"],
-    "relatedFields": ["arbeit-einkommen"],
-    "relatedTools": ["automatisierungs-wirkungseinkommensrechner"],
+    "stand": "27. Mai 2026",
+    "summary": "Dossier für wirkungsorientiertes Hosting, Medienwirkung und digitale Verantwortung: von Reichweite zu Wirkungsraum, Resonanzarchitektur, Host-Verantwortung, Scorecards, Community-Regeln und Korrekturwegen.",
+    "audience": [
+      "Medien",
+      "Creator:innen",
+      "Journalismus",
+      "Bildung",
+      "Politik",
+      "Zivilgesellschaft",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Reichweite wird nicht als Wertmaßstab, sondern als Wirkungskraft und Verantwortung gelesen.",
+      "Hosts, Redaktionen und Communities gestalten Resonanzräume über Quellenklarheit, Würdeschutz, Korrektur und Diskursführung.",
+      "Der Host-Wirkungsscore ist ein Lern- und Reflexionsinstrument, keine Personenbewertung und keine Zensurlogik."
+    ],
+    "onlineUrl": "/wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/",
+    "sourceOnlineUrl": "/wirkungsfelder/medien-oeffentlichkeit/",
+    "pdfUrl": "/assets/pdf/wirkungsraeume-gestalten-hosting.pdf",
+    "docxUrl": null,
+    "fileSize": "436 KB",
+    "relatedTerms": [
+      "wirkungsorientiertes-hosting",
+      "resonanzarchitektur",
+      "host-wirkungsscore",
+      "wirkungsraum",
+      "wirkungskompetenz"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/medien-oeffentlichkeit/"
+    ],
+    "relatedTools": [
+      "/erleben/medienwirkungscheck/",
+      "/werkzeuge/medienwirkungscheck/"
+    ],
+    "relatedPages": [
+      "/begriffe/wirkungsorientiertes-hosting/",
+      "/begriffe/resonanzarchitektur/",
+      "/begriffe/host-wirkungsscore/"
+    ],
     "isArchive": false,
-    "isPublic": true
+    "isPublic": true,
+    "importSource": "docs/medien-oeffentlichkeit/source/wirkungsraeume-gestalten-hosting.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "apfel-t-shirt-wirkung-im-preis",
+    "slug": "apfel-t-shirt-wirkung-im-preis",
+    "title": "Apfel & T-Shirt: Wirkung im Preis",
+    "type": "Praxisbeispiel",
+    "category": [
+      "Produkte",
+      "Konsum",
+      "Wirkungssteuer",
+      "Lieferketten"
+    ],
+    "status": "current",
+    "stand": "28. Mai 2026",
+    "summary": "Das Praxisbeispiel erklärt an Apfel und T-Shirt, wie Produktwirkung entlang der Lieferkette erfasst, in Scorecards bewertet und modellhaft in Steuerklasse, Vorsteuerlogik und Endpreis rückgekoppelt wird.",
+    "audience": [
+      "Verbraucher:innen",
+      "Unternehmen",
+      "Produktentwicklung",
+      "Politik",
+      "Verwaltung",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Apfel und T-Shirt zeigen, wie Daten zu Klima, Wasser, Arbeit, Gesundheit, Chemie und Kreislauf in eine Scorecard einfließen.",
+      "Die Reverse Merit Order verhindert, dass schwere Schäden durch gute Einzelwerte überdeckt werden.",
+      "Die Beispielrechnung zeigt modellhaft, wie Steuerklasse, Vorsteuerfähigkeit und Endpreis mit Produktwirkung zusammenhängen."
+    ],
+    "onlineUrl": "/bibliothek/apfel-t-shirt-wirkung-im-preis/",
+    "primaryOnlineUrl": "/erleben/wirkungssteuer-beispiele/",
+    "sourceOnlineUrl": "/erleben/wirkungssteuer-beispiele/",
+    "pdfUrl": "/assets/pdf/apfel-t-shirt-wirkung-im-preis.pdf",
+    "docxUrl": null,
+    "fileSize": "5.6 MB",
+    "relatedTerms": [
+      "wirkungssteuer",
+      "reverse-merit-order",
+      "scorecard",
+      "wirkungsdaten",
+      "digitaler-produktpass"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/erleben/produktwirkungsrechner/",
+      "/erleben/wirkungssteuer-beispiele/"
+    ],
+    "relatedPages": [
+      "/begriffe/wirkungssteuer/",
+      "/begriffe/reverse-merit-order/",
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "html",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "landwirtschaft-wirkungsoekonomie",
+    "slug": "landwirtschaft-wirkungsoekonomie",
+    "title": "Landwirtschaft als Wirkungsfeld und Zielgruppe der Wirkungsökonomie",
+    "type": "Dossier",
+    "category": [
+      "Landwirtschaft",
+      "Ernährung",
+      "Produkte",
+      "Wirkungssteuer",
+      "Wirkungsfonds"
+    ],
+    "status": "current",
+    "stand": "Mai 2026",
+    "summary": "Diese Ausarbeitung erklärt, warum Landwirtschaft als eigene Zielgruppe auf der Website sichtbar werden sollte, und zeigt, wie die Wirkungsökonomie Boden, Wasser, Klima, Biodiversität, Tierwohl, Einkommen, Ernährung und regionale Resilienz in Preise, Förderung, Kapital und Entscheidungen zurückführen kann.",
+    "audience": [
+      "Landwirtschaft",
+      "Betriebe",
+      "Politik",
+      "Verwaltung",
+      "Verarbeitung",
+      "Handel",
+      "Akademie"
+    ],
+    "keyPoints": [
+      "Landwirtschaft wird als Wirkungsinfrastruktur verstanden, nicht als Problemsektor.",
+      "Boden, Wasser, Klima, Biodiversität, Tierwohl, Arbeit und regionale Versorgung werden über WÖk-IDs, Scorecards und Datenqualität bewertbar.",
+      "Wirkungssteuer und Wirkungsfonds können Verantwortung wettbewerbsfähiger machen und Reparaturkosten früher vermeiden."
+    ],
+    "onlineUrl": "/bibliothek/landwirtschaft-wirkungsoekonomie/",
+    "sourceOnlineUrl": "/fuer/landwirtschaft/",
+    "pdfUrl": "/assets/pdf/landwirtschaft-wirkungsoekonomie.pdf",
+    "docxUrl": null,
+    "fileSize": "0.3 MB",
+    "contentHtmlPath": "assets/data/document-online/landwirtschaft-wirkungsoekonomie.html",
+    "relatedTerms": [
+      "wirkungssteuer",
+      "reverse-merit-order",
+      "woek-id",
+      "scorecard",
+      "digitaler-produktpass",
+      "wirkungsfonds"
+    ],
+    "relatedFields": [
+      "/wirkungsfelder/produkte-konsum/"
+    ],
+    "relatedTools": [
+      "/erleben/wirkungssteuer-beispiele/",
+      "/erleben/produktwirkungsrechner/"
+    ],
+    "relatedPages": [
+      "/fuer/landwirtschaft/",
+      "/begriffe/wirkungssteuer/",
+      "/begriffe/reverse-merit-order/",
+      "/erleben/wirkungssteuer-beispiele/"
+    ],
+    "isArchive": false,
+    "isPublic": true,
+    "importSource": "docs/landwirtschaft/source/landwirtschaft-wirkungsoekonomie.docx",
+    "sourceFormat": "docx",
+    "publicFormats": [
+      "online",
+      "pdf"
+    ],
+    "allowPublicDocx": false
   }
 ]
