@@ -77,6 +77,22 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Bundesverfassungsgericht Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
 - Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG, Die neue Ordnung des Wohlstands, Systemmodell der Wirkungsökonomie.
 
+## Demokratie / Rechtsstaat / demokratische Wirkungsarchitektur
+
+- Bundeszentrale für politische Bildung: Demokratie, https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/236879/demokratie/
+- Bundeszentrale für politische Bildung: Rechtsstaat, Gewaltenteilung, Parlamentarismus, Pluralismus, https://www.bpb.de/
+- Grundgesetz für die Bundesrepublik Deutschland, https://www.gesetze-im-internet.de/gg/
+- Bundesverfassungsgericht: zentrale Entscheidungen zu Demokratie und Art. 20a / Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
+- Robert A. Dahl: Polyarchy
+- Larry Diamond: Developing Democracy
+- Adam Przeworski: Democracy and the Limits of Self-Government
+- Steven Levitsky / Daniel Ziblatt: How Democracies Die
+- V-Dem Institute: Democracy Reports / Regimes of the World, https://v-dem.net/
+- Freedom House: Freedom in the World, https://freedomhouse.org/report/freedom-world
+- International IDEA: Global State of Democracy, https://www.idea.int/gsod/
+- OSCE / ODIHR: Wahlstandards, https://www.osce.org/odihr/elections
+- Interne WÖk-Quellen: Die neue Ordnung des Wohlstands, Demokratie als Wirkungsraum, Teil Staat / Politik / Demokratie, Medien / Kommunikation / Öffentlichkeit, Systemmodell der Wirkungsökonomie, WStG, Wirkungsrat, Folgencheck statt Faktencheck, Wirkung politischer Sprache, Vertrauen, Wirkungspotenzial, Wirkungsrisiko, Staat, Regierung, Grundgesetz, Faschismus, Autokratie.
+
 ## Feministische Ökonomie / Care
 
 - Marilyn Waring: If Women Counted

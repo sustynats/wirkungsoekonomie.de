@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T20:15:07.017Z",
+  "generatedAt": "2026-05-29T20:30:28.998Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -137,7 +137,8 @@
         "policy-entrepreneurship",
         "astroturfing",
         "public-affairs",
-        "propaganda"
+        "propaganda",
+        "politischer-vorraum"
       ],
       "documents": []
     },
@@ -416,7 +417,8 @@
     "aufmerksamkeitsoekonomie": {
       "terms": [
         "plattformkapitalismus",
-        "aufmerksamkeit"
+        "aufmerksamkeit",
+        "medienqualitaet"
       ],
       "documents": []
     },
@@ -451,7 +453,16 @@
         "oppositionsunterdrueckung",
         "zivilgesellschaftsrepression",
         "staatspropaganda",
-        "personalisierte-macht"
+        "personalisierte-macht",
+        "autokratisierung"
+      ],
+      "documents": []
+    },
+    "autokratisierung": {
+      "terms": [
+        "autokratie",
+        "demokratische-erosion",
+        "machtbegrenzung"
       ],
       "documents": []
     },
@@ -489,7 +500,8 @@
         "pluralismusfeindlichkeit",
         "autokratie",
         "faschistoid",
-        "macht-und-gewalt"
+        "macht-und-gewalt",
+        "demokratiefeindlichkeit"
       ],
       "documents": []
     },
@@ -937,6 +949,16 @@
         "/blog/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.html"
       ]
     },
+    "buergerbeteiligung": {
+      "terms": [
+        "partizipation",
+        "buergerrat",
+        "direkte-demokratie",
+        "zivilgesellschaft",
+        "partizipative-demokratie"
+      ],
+      "documents": []
+    },
     "buergerenergie": {
       "terms": [
         "energieautonomie",
@@ -953,6 +975,14 @@
         "zivilgesellschaft",
         "grassroots-bewegung",
         "interessenvertretung"
+      ],
+      "documents": []
+    },
+    "buergerrat": {
+      "terms": [
+        "buergerbeteiligung",
+        "deliberation",
+        "parlament"
       ],
       "documents": []
     },
@@ -1069,6 +1099,14 @@
       ],
       "documents": []
     },
+    "checks-and-balances": {
+      "terms": [
+        "gewaltenteilung",
+        "machtbegrenzung",
+        "verfassungsgerichtsbarkeit"
+      ],
+      "documents": []
+    },
     "chicago-school": {
       "terms": [
         "monetarismus",
@@ -1095,6 +1133,13 @@
         "kreislaufgrad",
         "scorecard",
         "recyclingquote"
+      ],
+      "documents": []
+    },
+    "civic-literacy": {
+      "terms": [
+        "demokratiekompetenz",
+        "politische-bildung"
       ],
       "documents": []
     },
@@ -1281,8 +1326,7 @@
       "journalArticles": [
         "/blog/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.html",
         "/blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html",
-        "/blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html",
-        "/blog/soziale-resilienz-gegen-verhetzung.html"
+        "/blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html"
       ]
     },
     "dao": {
@@ -1367,6 +1411,24 @@
       ],
       "documents": []
     },
+    "deliberation": {
+      "terms": [
+        "diskursfaehigkeit",
+        "deliberative-demokratie",
+        "oeffentlichkeit",
+        "partizipation",
+        "buergerrat"
+      ],
+      "documents": []
+    },
+    "deliberative-demokratie": {
+      "terms": [
+        "deliberation",
+        "diskursfaehigkeit",
+        "demokratische-oeffentlichkeit"
+      ],
+      "documents": []
+    },
     "demand-response": {
       "terms": [
         "lastmanagement",
@@ -1378,12 +1440,96 @@
       ],
       "documents": []
     },
+    "demokratie": {
+      "terms": [
+        "demokratiequalitaet",
+        "demokratische-rueckkopplung",
+        "rechtsstaatlichkeit",
+        "gewaltenteilung",
+        "grundrechte",
+        "volkssouveraenitaet",
+        "freie-und-faire-wahlen",
+        "minderheitenschutz",
+        "oeffentlichkeit",
+        "medienqualitaet",
+        "vertrauen",
+        "diskursfaehigkeit",
+        "demokratische-resilienz",
+        "demokratische-erosion",
+        "demokratieprinzip",
+        "demokratischer-sozialismus",
+        "gleichwertigkeit",
+        "handeln-arendt",
+        "hannah-arendt",
+        "macht-und-gewalt",
+        "oeffentliche-gueter",
+        "parlament",
+        "pluralitaet",
+        "politischer-liberalismus",
+        "rassismus",
+        "reale-freiheit",
+        "trickle-down-oekonomie",
+        "ueberwachungskapitalismus",
+        "urteilskraft",
+        "wirklichkeitsbindung",
+        "zivilgesellschaft",
+        "demokratische-wirkungsarchitektur",
+        "demokratische-korrekturfaehigkeit",
+        "mehrheitsprinzip",
+        "pluralismus",
+        "opposition",
+        "legitimitaet",
+        "liberale-demokratie"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
+        "/blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html",
+        "/blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+        "/blog/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.html"
+      ]
+    },
+    "demokratiefeindlichkeit": {
+      "terms": [
+        "wehrhafte-demokratie",
+        "demokratische-erosion",
+        "autoritarismus"
+      ],
+      "documents": []
+    },
+    "demokratiekompetenz": {
+      "terms": [
+        "politische-bildung",
+        "civic-literacy",
+        "diskursfaehigkeit"
+      ],
+      "documents": []
+    },
     "demokratieprinzip": {
       "terms": [
         "grundgesetz",
         "wirkungsrat",
         "linksextremismus",
-        "fuehrerprinzip"
+        "fuehrerprinzip",
+        "demokratie"
+      ],
+      "documents": []
+    },
+    "demokratiequalitaet": {
+      "terms": [
+        "demokratie",
+        "freie-und-faire-wahlen",
+        "rechtsstaatlichkeit",
+        "medienqualitaet",
+        "demokratische-resilienz"
+      ],
+      "documents": []
+    },
+    "demokratieskepsis": {
+      "terms": [
+        "regierungskritik",
+        "staatsdelegitimierung",
+        "vertrauen"
       ],
       "documents": []
     },
@@ -1406,14 +1552,90 @@
         "weltlosigkeit",
         "staatsdelegitimierung",
         "institutionendelegitimierung",
-        "oppositionsunterdrueckung"
+        "oppositionsunterdrueckung",
+        "autokratisierung",
+        "illiberale-demokratie",
+        "demokratie",
+        "majoritarismus",
+        "wahlintegritaet",
+        "pressefreiheit",
+        "demokratiefeindlichkeit",
+        "demokratische-resilienz"
+      ],
+      "documents": []
+    },
+    "demokratische-korrekturfaehigkeit": {
+      "terms": [
+        "demokratie",
+        "demokratische-rueckkopplung",
+        "rechtsschutz",
+        "transparenz",
+        "institutionenkritik"
+      ],
+      "documents": []
+    },
+    "demokratische-oeffentlichkeit": {
+      "terms": [
+        "oeffentlichkeit",
+        "informationsintegritaet",
+        "medienfreiheit",
+        "deliberative-demokratie"
+      ],
+      "documents": []
+    },
+    "demokratische-resilienz": {
+      "terms": [
+        "demokratische-erosion",
+        "diskursfaehigkeit",
+        "informationsintegritaet",
+        "wehrhafte-demokratie",
+        "demokratie",
+        "demokratiequalitaet",
+        "friedlicher-machtwechsel"
+      ],
+      "documents": []
+    },
+    "demokratische-rueckkopplung": {
+      "terms": [
+        "demokratie",
+        "rueckkopplung",
+        "demokratische-korrekturfaehigkeit",
+        "oeffentlichkeit",
+        "rechtsschutz",
+        "demokratische-wirkungsarchitektur",
+        "responsivitaet",
+        "partizipative-demokratie"
+      ],
+      "documents": []
+    },
+    "demokratische-wirkungsarchitektur": {
+      "terms": [
+        "demokratie",
+        "demokratische-rueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsrat",
+        "rechtsschutz",
+        "rechenschaft",
+        "rechtsstaatlichkeit"
       ],
       "documents": []
     },
     "demokratischer-sozialismus": {
       "terms": [
         "sozialismus",
-        "wirkungsrat"
+        "wirkungsrat",
+        "demokratie"
+      ],
+      "documents": []
+    },
+    "demokratisches-mandat": {
+      "terms": [
+        "freie-und-faire-wahlen",
+        "regierung",
+        "parlament",
+        "rechenschaft",
+        "repraesentation",
+        "repraesentative-demokratie"
       ],
       "documents": []
     },
@@ -1554,6 +1776,13 @@
       ],
       "documents": []
     },
+    "direkte-demokratie": {
+      "terms": [
+        "buergerbeteiligung",
+        "minderheitenschutz"
+      ],
+      "documents": []
+    },
     "direktrecycling-batterie": {
       "terms": [
         "batterierecycling",
@@ -1569,6 +1798,21 @@
         "gleichbehandlung",
         "antiziganismus",
         "muslimfeindlichkeit"
+      ],
+      "documents": []
+    },
+    "diskursfaehigkeit": {
+      "terms": [
+        "streitfaehigkeit",
+        "medienqualitaet",
+        "resonanzraum",
+        "demokratische-resilienz",
+        "vertrauen",
+        "demokratie",
+        "pluralismus",
+        "deliberation",
+        "demokratiekompetenz",
+        "deliberative-demokratie"
       ],
       "documents": []
     },
@@ -2064,7 +2308,8 @@
         "menschenwuerde",
         "faschismus",
         "feindbildlogik",
-        "faschistoid"
+        "faschistoid",
+        "minderheitenschutz"
       ],
       "documents": []
     },
@@ -2472,7 +2717,8 @@
         "quellenklarheit",
         "selektive-evidenz",
         "wahrheitsillusionseffekt",
-        "wirkstoff"
+        "wirkstoff",
+        "medienqualitaet"
       ],
       "documents": [
         "faktencheck-folgencheck-v1-1"
@@ -2505,7 +2751,8 @@
     "false-balance": {
       "terms": [
         "selektive-evidenz",
-        "klimawandel"
+        "klimawandel",
+        "medienqualitaet"
       ],
       "documents": []
     },
@@ -2554,7 +2801,8 @@
         "suendenbockmechanismus",
         "muslimfeindlichkeit",
         "xenophobie",
-        "faschistoid"
+        "faschistoid",
+        "streitfaehigkeit"
       ],
       "documents": []
     },
@@ -2710,7 +2958,8 @@
         "wirkstoff",
         "wirkungsraum",
         "wirkungsverantwortung",
-        "wirkungswahrheit"
+        "wirkungswahrheit",
+        "medienqualitaet"
       ],
       "documents": [
         "faktencheck-folgencheck-v1-1"
@@ -2801,10 +3050,31 @@
       ],
       "documents": []
     },
+    "freie-und-faire-wahlen": {
+      "terms": [
+        "wahlintegritaet",
+        "demokratisches-mandat",
+        "opposition",
+        "friedlicher-machtwechsel",
+        "demokratie",
+        "demokratiequalitaet",
+        "volkssouveraenitaet",
+        "repraesentative-demokratie"
+      ],
+      "documents": []
+    },
     "frequenzhaltung": {
       "terms": [
         "systemdienstleistungen",
         "regelenergie"
+      ],
+      "documents": []
+    },
+    "friedlicher-machtwechsel": {
+      "terms": [
+        "freie-und-faire-wahlen",
+        "wahlintegritaet",
+        "demokratische-resilienz"
       ],
       "documents": []
     },
@@ -3058,7 +3328,12 @@
         "staatsgewalt",
         "rechtsstaatsprinzip",
         "gewaltenteilungsabbau",
-        "staat"
+        "staat",
+        "checks-and-balances",
+        "machtbegrenzung",
+        "rechtsstaatlichkeit",
+        "demokratie",
+        "parlamentarische-demokratie"
       ],
       "documents": []
     },
@@ -3146,7 +3421,8 @@
       "terms": [
         "gleichstellung",
         "gleichwertigkeit",
-        "reproduktive-rechte"
+        "reproduktive-rechte",
+        "rechtsstaatlichkeit"
       ],
       "documents": []
     },
@@ -3193,7 +3469,8 @@
         "sozialliberalismus",
         "menschenwuerde",
         "gleichheit",
-        "pluralitaet"
+        "pluralitaet",
+        "demokratie"
       ],
       "documents": []
     },
@@ -3355,7 +3632,10 @@
         "schutzpflicht",
         "verfassungsmaessige-wirkungsarchitektur",
         "verfassung",
-        "verfassungsorgan"
+        "verfassungsorgan",
+        "volkssouveraenitaet",
+        "wehrhafte-demokratie",
+        "verfassungsgerichtsbarkeit"
       ],
       "documents": []
     },
@@ -3363,6 +3643,20 @@
       "terms": [
         "residuallast",
         "gesicherte-leistung"
+      ],
+      "documents": []
+    },
+    "grundrechte": {
+      "terms": [
+        "menschenwuerde",
+        "rechtsstaatlichkeit",
+        "minderheitenschutz",
+        "politischer-liberalismus",
+        "rechtsschutz",
+        "demokratie",
+        "mehrheitsprinzip",
+        "legalitaet",
+        "liberale-demokratie"
       ],
       "documents": []
     },
@@ -3435,7 +3729,8 @@
       "terms": [
         "vita-activa",
         "oeffentlicher-raum-arendt",
-        "hannah-arendt"
+        "hannah-arendt",
+        "demokratie"
       ],
       "documents": [],
       "journalArticles": [
@@ -3506,7 +3801,9 @@
         "oeffentlicher-raum-arendt",
         "macht-und-gewalt",
         "banalitaet-des-boesen",
-        "totalitarismus-arendt"
+        "totalitarismus-arendt",
+        "oeffentlichkeit",
+        "demokratie"
       ],
       "documents": []
     },
@@ -3624,7 +3921,8 @@
         "thinktank",
         "policy-netzwerk",
         "konservativ",
-        "advocacy-organisation"
+        "advocacy-organisation",
+        "politischer-vorraum"
       ],
       "documents": []
     },
@@ -3885,7 +4183,10 @@
       "terms": [
         "hybridregime",
         "rechtsstaatsabbau",
-        "pluralismusfeindlichkeit"
+        "pluralismusfeindlichkeit",
+        "liberale-demokratie",
+        "majoritarismus",
+        "demokratische-erosion"
       ],
       "documents": []
     },
@@ -3913,7 +4214,8 @@
       "terms": [
         "wirkungsgrenze",
         "wirkungsethik",
-        "menschenwuerde"
+        "menschenwuerde",
+        "rechtsstaatlichkeit"
       ],
       "documents": []
     },
@@ -3990,6 +4292,17 @@
         "vertragsfreiheit",
         "marktversagen",
         "principal-agent-problem"
+      ],
+      "documents": []
+    },
+    "informationsintegritaet": {
+      "terms": [
+        "propaganda",
+        "medienqualitaet",
+        "vertrauen",
+        "wahlintegritaet",
+        "demokratische-oeffentlichkeit",
+        "demokratische-resilienz"
       ],
       "documents": []
     },
@@ -4078,7 +4391,8 @@
       "terms": [
         "institutionendelegitimierung",
         "regierungskritik",
-        "vertrauen"
+        "vertrauen",
+        "demokratische-korrekturfaehigkeit"
       ],
       "documents": []
     },
@@ -4632,7 +4946,8 @@
         "reaktionaer",
         "heritage-foundation",
         "mitte",
-        "rechts-politisch"
+        "rechts-politisch",
+        "rechtsstaatlichkeit"
       ],
       "documents": []
     },
@@ -5029,6 +5344,14 @@
       ],
       "documents": []
     },
+    "legalitaet": {
+      "terms": [
+        "legitimitaet",
+        "rechtsstaatlichkeit",
+        "grundrechte"
+      ],
+      "documents": []
+    },
     "legislative-footprint": {
       "terms": [
         "lobbyismus",
@@ -5042,6 +5365,15 @@
         "lobbyismus",
         "interessenvertretung",
         "transparenzregister-lobbyismus"
+      ],
+      "documents": []
+    },
+    "legitimitaet": {
+      "terms": [
+        "legalitaet",
+        "rechenschaft",
+        "transparenz",
+        "demokratie"
       ],
       "documents": []
     },
@@ -5104,6 +5436,16 @@
       ],
       "documents": []
     },
+    "liberale-demokratie": {
+      "terms": [
+        "demokratie",
+        "grundrechte",
+        "rechtsstaatlichkeit",
+        "minderheitenschutz",
+        "illiberale-demokratie"
+      ],
+      "documents": []
+    },
     "liberalismus": {
       "terms": [
         "negative-freiheit",
@@ -5117,7 +5459,8 @@
         "politischer-liberalismus",
         "wirtschaftsliberalismus",
         "klassischer-liberalismus",
-        "sozialliberalismus"
+        "sozialliberalismus",
+        "rechtsstaatlichkeit"
       ],
       "documents": []
     },
@@ -5241,7 +5584,8 @@
         "thinktank",
         "dark-money",
         "advocacy-organisation",
-        "lobbyregister"
+        "lobbyregister",
+        "politischer-vorraum"
       ],
       "documents": []
     },
@@ -5249,7 +5593,8 @@
       "terms": [
         "transparenzregister-lobbyismus",
         "legislative-footprint",
-        "lobbyismus"
+        "lobbyismus",
+        "transparenz"
       ],
       "documents": []
     },
@@ -5274,7 +5619,17 @@
     "macht-und-gewalt": {
       "terms": [
         "hannah-arendt",
-        "autoritarismus"
+        "autoritarismus",
+        "demokratie"
+      ],
+      "documents": []
+    },
+    "machtbegrenzung": {
+      "terms": [
+        "checks-and-balances",
+        "gewaltenteilung",
+        "rechtsstaatlichkeit",
+        "autokratisierung"
       ],
       "documents": []
     },
@@ -5314,6 +5669,15 @@
         "planetare-grenzen",
         "zukunftsfaehigkeit",
         "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
+    "majoritarismus": {
+      "terms": [
+        "mehrheitsprinzip",
+        "minderheitenschutz",
+        "illiberale-demokratie",
+        "demokratische-erosion"
       ],
       "documents": []
     },
@@ -5455,6 +5819,14 @@
       ],
       "documents": []
     },
+    "medienfreiheit": {
+      "terms": [
+        "pressefreiheit",
+        "medienqualitaet",
+        "demokratische-oeffentlichkeit"
+      ],
+      "documents": []
+    },
     "mediengleichschaltung": {
       "terms": [
         "propaganda",
@@ -5464,11 +5836,40 @@
       ],
       "documents": []
     },
+    "medienqualitaet": {
+      "terms": [
+        "informationsintegritaet",
+        "oeffentlichkeit",
+        "faktencheck",
+        "folgencheck",
+        "aufmerksamkeitsoekonomie",
+        "false-balance",
+        "meinungsfreiheit",
+        "vertrauen",
+        "wahrhaftigkeit",
+        "watchdog-organisation",
+        "demokratie",
+        "demokratiequalitaet",
+        "diskursfaehigkeit",
+        "medienfreiheit",
+        "politischer-vorraum"
+      ],
+      "documents": []
+    },
     "megawatt-charging-system": {
       "terms": [
         "depotladen",
         "ladehub",
         "mittelspannung"
+      ],
+      "documents": []
+    },
+    "mehrheitsprinzip": {
+      "terms": [
+        "majoritarismus",
+        "minderheitenschutz",
+        "grundrechte",
+        "demokratie"
       ],
       "documents": []
     },
@@ -5483,7 +5884,8 @@
     },
     "meinungsfreiheit": {
       "terms": [
-        "grundgesetz"
+        "grundgesetz",
+        "medienqualitaet"
       ],
       "documents": [],
       "journalArticles": [
@@ -5524,7 +5926,9 @@
         "antisemitismus",
         "extremismus",
         "entmenschlichung",
-        "verfassung"
+        "verfassung",
+        "minderheitenschutz",
+        "grundrechte"
       ],
       "documents": []
     },
@@ -5629,6 +6033,20 @@
         "nachtwaechterstaat",
         "eigentumsrechte",
         "marktversagen"
+      ],
+      "documents": []
+    },
+    "minderheitenschutz": {
+      "terms": [
+        "grundrechte",
+        "pluralismus",
+        "menschenwuerde",
+        "entmenschlichung",
+        "demokratie",
+        "mehrheitsprinzip",
+        "majoritarismus",
+        "direkte-demokratie",
+        "liberale-demokratie"
       ],
       "documents": []
     },
@@ -6209,7 +6627,8 @@
         "quango",
         "donor-dependency",
         "repraesentationsanspruch",
-        "zivilgesellschaftsrepression"
+        "zivilgesellschaftsrepression",
+        "politischer-vorraum"
       ],
       "documents": []
     },
@@ -6223,7 +6642,8 @@
     },
     "ngo-wirkungspruefung": {
       "terms": [
-        "ngo"
+        "ngo",
+        "rechenschaft"
       ],
       "documents": []
     },
@@ -6454,7 +6874,8 @@
         "allmendeproblem",
         "wohlfahrtsstaat",
         "anarchokapitalismus",
-        "marktversagen"
+        "marktversagen",
+        "demokratie"
       ],
       "documents": []
     },
@@ -6467,6 +6888,23 @@
         "weltlosigkeit"
       ],
       "documents": []
+    },
+    "oeffentlichkeit": {
+      "terms": [
+        "demokratische-oeffentlichkeit",
+        "medienqualitaet",
+        "transparenz",
+        "hannah-arendt",
+        "zivilgesellschaft",
+        "demokratie",
+        "demokratische-rueckkopplung",
+        "deliberation"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html",
+        "/blog/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.html"
+      ]
     },
     "offsetting-kompensation": {
       "terms": [
@@ -6571,6 +7009,15 @@
       ],
       "documents": []
     },
+    "opposition": {
+      "terms": [
+        "regierungskritik",
+        "parlament",
+        "freie-und-faire-wahlen",
+        "demokratie"
+      ],
+      "documents": []
+    },
     "oppositionsunterdrueckung": {
       "terms": [
         "autokratie",
@@ -6616,7 +7063,6 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "journalArticles": [
-        "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
         "/blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
         "/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html"
       ]
@@ -6652,7 +7098,22 @@
         "gesetz",
         "regierung",
         "bundesregierung",
-        "verfassungsorgan"
+        "verfassungsorgan",
+        "demokratie",
+        "opposition",
+        "demokratisches-mandat",
+        "repraesentation",
+        "buergerrat",
+        "repraesentative-demokratie",
+        "parlamentarische-demokratie"
+      ],
+      "documents": []
+    },
+    "parlamentarische-demokratie": {
+      "terms": [
+        "parlament",
+        "regierung",
+        "gewaltenteilung"
       ],
       "documents": []
     },
@@ -6663,6 +7124,24 @@
         "autokratie",
         "totalitarismus",
         "linker-faschismus"
+      ],
+      "documents": []
+    },
+    "partizipation": {
+      "terms": [
+        "buergerbeteiligung",
+        "deliberation",
+        "responsivitaet",
+        "repraesentation",
+        "partizipative-demokratie"
+      ],
+      "documents": []
+    },
+    "partizipative-demokratie": {
+      "terms": [
+        "partizipation",
+        "buergerbeteiligung",
+        "demokratische-rueckkopplung"
       ],
       "documents": []
     },
@@ -6885,6 +7364,17 @@
       ],
       "documents": []
     },
+    "pluralismus": {
+      "terms": [
+        "demokratie",
+        "pluralitaet",
+        "minderheitenschutz",
+        "diskursfaehigkeit",
+        "pluralismusfeindlichkeit",
+        "streitfaehigkeit"
+      ],
+      "documents": []
+    },
     "pluralismusfeindlichkeit": {
       "terms": [
         "faschismus",
@@ -6894,7 +7384,8 @@
         "faschistoid",
         "illiberale-demokratie",
         "theokratie",
-        "mediengleichschaltung"
+        "mediengleichschaltung",
+        "pluralismus"
       ],
       "documents": []
     },
@@ -6902,7 +7393,9 @@
       "terms": [
         "gleichwertigkeit",
         "hannah-arendt",
-        "oeffentlicher-raum-arendt"
+        "oeffentlicher-raum-arendt",
+        "demokratie",
+        "pluralismus"
       ],
       "documents": []
     },
@@ -6941,14 +7434,38 @@
         "policy-entrepreneurship",
         "epistemische-gemeinschaft",
         "heritage-foundation",
-        "atlas-network"
+        "atlas-network",
+        "politischer-vorraum"
+      ],
+      "documents": []
+    },
+    "politische-bildung": {
+      "terms": [
+        "demokratiekompetenz",
+        "civic-literacy"
       ],
       "documents": []
     },
     "politischer-liberalismus": {
       "terms": [
         "liberalismus",
-        "wirkungsrat"
+        "wirkungsrat",
+        "demokratie",
+        "rechtsstaatlichkeit",
+        "grundrechte"
+      ],
+      "documents": []
+    },
+    "politischer-vorraum": {
+      "terms": [
+        "thinktank",
+        "ngo",
+        "lobbyismus",
+        "agenda-setting",
+        "medienqualitaet",
+        "heritage-foundation",
+        "policy-netzwerk",
+        "project-2025"
       ],
       "documents": []
     },
@@ -7044,9 +7561,9 @@
       ],
       "journalArticles": [
         "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
-        "/blog/wirkungsoekonomie-kein-parteiprogramm.html",
         "/blog/wir-messen-das-falsche.html",
-        "/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html"
+        "/blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html",
+        "/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html"
       ]
     },
     "positive-wirkung": {
@@ -7055,10 +7572,7 @@
         "negative-wirkung",
         "neutrale-wirkung"
       ],
-      "documents": [],
-      "journalArticles": [
-        "/blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html"
-      ]
+      "documents": []
     },
     "power-purchase-agreement": {
       "terms": [
@@ -7110,6 +7624,13 @@
       "journalArticles": [
         "/blog/soziale-resilienz-gegen-verhetzung.html"
       ]
+    },
+    "pressefreiheit": {
+      "terms": [
+        "medienfreiheit",
+        "demokratische-erosion"
+      ],
+      "documents": []
     },
     "primaerenergie": {
       "terms": [
@@ -7244,7 +7765,8 @@
       "terms": [
         "heritage-foundation",
         "thinktank",
-        "policy-entrepreneurship"
+        "policy-entrepreneurship",
+        "politischer-vorraum"
       ],
       "documents": []
     },
@@ -7253,7 +7775,8 @@
         "staatspropaganda",
         "mediengleichschaltung",
         "agenda-setting",
-        "wiedergeburtsnarrativ"
+        "wiedergeburtsnarrativ",
+        "informationsintegritaet"
       ],
       "documents": []
     },
@@ -7326,7 +7849,8 @@
     "quango": {
       "terms": [
         "ngo",
-        "gongo"
+        "gongo",
+        "transparenz"
       ],
       "documents": []
     },
@@ -7432,7 +7956,8 @@
         "xenophobie",
         "rechtsextremismus",
         "suendenbockmechanismus",
-        "faschismus"
+        "faschismus",
+        "demokratie"
       ],
       "documents": []
     },
@@ -7486,7 +8011,8 @@
         "sozialliberalismus",
         "negative-freiheit",
         "selbstverantwortung",
-        "sozialstaatsprinzip"
+        "sozialstaatsprinzip",
+        "demokratie"
       ],
       "documents": []
     },
@@ -7508,6 +8034,17 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "rechenschaft": {
+      "terms": [
+        "transparenz",
+        "legitimitaet",
+        "demokratische-wirkungsarchitektur",
+        "ngo-wirkungspruefung",
+        "watchdog-organisation",
+        "demokratisches-mandat"
+      ],
+      "documents": []
     },
     "recht-auf-reparatur": {
       "terms": [
@@ -7549,7 +8086,34 @@
         "verfassungsmaessige-wirkungsarchitektur",
         "verhaeltnismaessigkeit",
         "staatsgewalt",
-        "rechtsstaatsabbau"
+        "rechtsstaatsabbau",
+        "rechtsstaatlichkeit",
+        "grundrechte",
+        "verfassungsgerichtsbarkeit",
+        "demokratische-wirkungsarchitektur",
+        "demokratische-rueckkopplung",
+        "demokratische-korrekturfaehigkeit"
+      ],
+      "documents": []
+    },
+    "rechtsstaatlichkeit": {
+      "terms": [
+        "grundrechte",
+        "rechtsschutz",
+        "legalitaet",
+        "demokratische-wirkungsarchitektur",
+        "gewaltenteilung",
+        "gleichberechtigung",
+        "immanuel-kant",
+        "konservativ",
+        "liberalismus",
+        "politischer-liberalismus",
+        "vertrauen",
+        "wahrheit",
+        "demokratie",
+        "demokratiequalitaet",
+        "liberale-demokratie",
+        "machtbegrenzung"
       ],
       "documents": []
     },
@@ -7717,7 +8281,10 @@
         "parlament",
         "verfassungsorgan",
         "politisches-system",
-        "regierungsform"
+        "regierungsform",
+        "demokratisches-mandat",
+        "responsivitaet",
+        "parlamentarische-demokratie"
       ],
       "documents": [],
       "journalArticles": [
@@ -7736,7 +8303,9 @@
       "terms": [
         "regierung",
         "staatsdelegitimierung",
-        "institutionenkritik"
+        "institutionenkritik",
+        "opposition",
+        "demokratieskepsis"
       ],
       "documents": []
     },
@@ -7867,10 +8436,26 @@
       ],
       "documents": []
     },
+    "repraesentation": {
+      "terms": [
+        "demokratisches-mandat",
+        "parlament",
+        "partizipation"
+      ],
+      "documents": []
+    },
     "repraesentationsanspruch": {
       "terms": [
         "ngo",
         "zivilgesellschaft"
+      ],
+      "documents": []
+    },
+    "repraesentative-demokratie": {
+      "terms": [
+        "demokratisches-mandat",
+        "parlament",
+        "freie-und-faire-wahlen"
       ],
       "documents": []
     },
@@ -7978,6 +8563,7 @@
         "emotionale-arbeit",
         "emotionsregulation",
         "faktenargumentation",
+        "gesellschaft",
         "glossar-backlink-audit",
         "gregory-bateson",
         "identitaetsschutz",
@@ -7986,6 +8572,7 @@
         "motiviertes-denken",
         "narrativ",
         "neuropsychologische-wirkmechanismen",
+        "oeffentlicher-raum-arendt",
         "paul-watzlawick",
         "resonanzarchitektur",
         "resonanzrisiko",
@@ -7993,15 +8580,14 @@
         "sprachspiel",
         "strukturelle-kopplung",
         "vertrauensverschiebung",
+        "weltlosigkeit",
         "wirklichkeitskonstruktion",
         "wirkstoff",
         "wirkungsblindheit",
         "wirkungsnetz",
         "wirkungsorientiertes-hosting",
         "wirkungspotenzial",
-        "oeffentlicher-raum-arendt",
-        "weltlosigkeit",
-        "gesellschaft"
+        "diskursfaehigkeit"
       ],
       "documents": [],
       "journalArticles": [
@@ -8033,6 +8619,14 @@
         "impact-washing",
         "green-claims-directive",
         "fuenftes-p-planet"
+      ],
+      "documents": []
+    },
+    "responsivitaet": {
+      "terms": [
+        "demokratische-rueckkopplung",
+        "partizipation",
+        "regierung"
       ],
       "documents": []
     },
@@ -8199,7 +8793,8 @@
         "wirkungsblindheit",
         "wirkungslenkung",
         "wirkungspfad",
-        "wu-wei"
+        "wu-wei",
+        "demokratische-rueckkopplung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -8516,7 +9111,6 @@
       ],
       "journalArticles": [
         "/blog/wirkungsoekonomie-kein-parteiprogramm.html",
-        "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
         "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
         "/blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html"
       ]
@@ -8977,7 +9571,8 @@
         "staat",
         "regierungskritik",
         "institutionendelegitimierung",
-        "demokratische-erosion"
+        "demokratische-erosion",
+        "demokratieskepsis"
       ],
       "documents": []
     },
@@ -9003,7 +9598,8 @@
         "gewaltenteilung",
         "rechtsschutz",
         "staatsgebiet",
-        "staatsvolk"
+        "staatsvolk",
+        "volkssouveraenitaet"
       ],
       "documents": []
     },
@@ -9199,6 +9795,14 @@
         "operatives-management",
         "wirkungspfad",
         "st-galler-management-modell"
+      ],
+      "documents": []
+    },
+    "streitfaehigkeit": {
+      "terms": [
+        "diskursfaehigkeit",
+        "feindbildlogik",
+        "pluralismus"
       ],
       "documents": []
     },
@@ -9708,7 +10312,8 @@
         "regulatory-capture",
         "thinktank-netzwerk",
         "heritage-foundation",
-        "project-2025"
+        "project-2025",
+        "politischer-vorraum"
       ],
       "documents": []
     },
@@ -9850,6 +10455,20 @@
       ],
       "documents": []
     },
+    "transparenz": {
+      "terms": [
+        "rechenschaft",
+        "vertrauen",
+        "lobbyregister",
+        "wirkungsdaten",
+        "quango",
+        "watchdog-organisation",
+        "demokratische-korrekturfaehigkeit",
+        "legitimitaet",
+        "oeffentlichkeit"
+      ],
+      "documents": []
+    },
     "transparenzregister-lobbyismus": {
       "terms": [
         "lobbyregister",
@@ -9895,7 +10514,8 @@
         "vertrauen",
         "supply-side-economics",
         "laffer-kurve",
-        "modellblindheit"
+        "modellblindheit",
+        "demokratie"
       ],
       "documents": []
     },
@@ -9956,7 +10576,8 @@
     "ueberwachungskapitalismus": {
       "terms": [
         "plattformkapitalismus",
-        "vertrauen"
+        "vertrauen",
+        "demokratie"
       ],
       "documents": []
     },
@@ -10063,7 +10684,8 @@
     "urteilskraft": {
       "terms": [
         "banalitaet-des-boesen",
-        "wirkungsrat"
+        "wirkungsrat",
+        "demokratie"
       ],
       "documents": []
     },
@@ -10133,6 +10755,14 @@
         "menschenwuerde",
         "bundesregierung",
         "gesetz"
+      ],
+      "documents": []
+    },
+    "verfassungsgerichtsbarkeit": {
+      "terms": [
+        "grundgesetz",
+        "rechtsschutz",
+        "checks-and-balances"
       ],
       "documents": []
     },
@@ -10257,6 +10887,9 @@
       "terms": [
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
+        "rechtsstaatlichkeit",
+        "medienqualitaet",
+        "diskursfaehigkeit",
         "anpassungskapazitaet",
         "commons",
         "elinor-ostrom",
@@ -10266,6 +10899,7 @@
         "faktenargumentation",
         "gesellschaftliche-stabilitaet",
         "informationsueberlastung",
+        "institutionenkritik",
         "kohaerenz",
         "kooperationslogik",
         "motiviertes-denken",
@@ -10283,7 +10917,11 @@
         "wirkungsdaten",
         "wirkungsrat",
         "wirkungsraum",
-        "institutionenkritik"
+        "demokratie",
+        "wahlintegritaet",
+        "transparenz",
+        "informationsintegritaet",
+        "demokratieskepsis"
       ],
       "documents": [
         "folgencheck-statt-faktencheck-democracy-intelligence",
@@ -10366,6 +11004,15 @@
       ],
       "documents": []
     },
+    "volkssouveraenitaet": {
+      "terms": [
+        "demokratie",
+        "staatsgewalt",
+        "grundgesetz",
+        "freie-und-faire-wahlen"
+      ],
+      "documents": []
+    },
     "vollstaendige-information": {
       "terms": [
         "informationsasymmetrie",
@@ -10396,6 +11043,16 @@
       ],
       "documents": []
     },
+    "wahlintegritaet": {
+      "terms": [
+        "freie-und-faire-wahlen",
+        "informationsintegritaet",
+        "vertrauen",
+        "demokratische-erosion",
+        "friedlicher-machtwechsel"
+      ],
+      "documents": []
+    },
     "wahlmanipulation": {
       "terms": [
         "elektorale-autokratie",
@@ -10408,7 +11065,8 @@
       "terms": [
         "wahrheit",
         "vertrauen",
-        "wirkungswahrheit"
+        "wirkungswahrheit",
+        "medienqualitaet"
       ],
       "documents": []
     },
@@ -10420,7 +11078,8 @@
         "vertrauen",
         "faktencheck",
         "scheinwahrheit",
-        "wirklichkeitsbindung"
+        "wirklichkeitsbindung",
+        "rechtsstaatlichkeit"
       ],
       "documents": [],
       "journalArticles": [
@@ -10551,7 +11210,18 @@
     },
     "watchdog-organisation": {
       "terms": [
-        "ngo"
+        "ngo",
+        "transparenz",
+        "rechenschaft",
+        "medienqualitaet"
+      ],
+      "documents": []
+    },
+    "wehrhafte-demokratie": {
+      "terms": [
+        "demokratiefeindlichkeit",
+        "grundgesetz",
+        "demokratische-resilienz"
       ],
       "documents": []
     },
@@ -10733,7 +11403,8 @@
         "wirkungsdaten",
         "marktwirtschaft",
         "liberalismus",
-        "rationalitaet"
+        "rationalitaet",
+        "demokratie"
       ],
       "documents": []
     },
@@ -10804,10 +11475,7 @@
         "salienzsteuerung",
         "ankereffekt"
       ],
-      "documents": [],
-      "journalArticles": [
-        "/blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html"
-      ]
+      "documents": []
     },
     "wirkung": {
       "terms": [
@@ -10863,13 +11531,14 @@
         "systemische-kohaerenz",
         "systemorientiertes-management",
         "verfassungsmaessige-wirkungsarchitektur",
+        "verwaltung",
         "wirkungskompetenz",
         "wirkungslenkung",
         "wirkungsnetz",
         "wirkungsraum",
         "wirkungsresilienz",
         "wirkungsrueckkopplung",
-        "verwaltung"
+        "demokratische-wirkungsarchitektur"
       ],
       "documents": [],
       "journalArticles": [
@@ -10966,7 +11635,8 @@
         "konsumentensouveraenitaet",
         "vollstaendige-information",
         "transaktionskosten",
-        "oesterreichische-schule"
+        "oesterreichische-schule",
+        "transparenz"
       ],
       "documents": []
     },
@@ -11322,7 +11992,6 @@
       "documents": [],
       "journalArticles": [
         "/blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html",
-        "/blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
         "/blog/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.html",
         "/blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html"
       ]
@@ -11364,7 +12033,8 @@
         "regulatory-capture",
         "epistemische-gemeinschaft",
         "demokratieprinzip",
-        "urteilskraft"
+        "urteilskraft",
+        "demokratische-wirkungsarchitektur"
       ],
       "documents": [
         "wirkungsrat-konzept"
@@ -11893,7 +12563,10 @@
         "grassroots-bewegung",
         "repraesentationsanspruch",
         "gesellschaft",
-        "zivilgesellschaftsrepression"
+        "zivilgesellschaftsrepression",
+        "demokratie",
+        "buergerbeteiligung",
+        "oeffentlichkeit"
       ],
       "documents": []
     },

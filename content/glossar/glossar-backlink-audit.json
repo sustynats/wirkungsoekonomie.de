@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-29T20:12:06.472Z",
+  "generatedAt": "2026-05-29T20:27:33.959Z",
   "rule": "Nicht jede Nennung verlinken. Pro Seite maximal die erste fachlich zentrale Nennung, bei langen Artikeln zusätzlich in einem späteren Hauptabschnitt.",
-  "newTerms": 279,
+  "newTerms": 341,
   "backlog": [
     "Empathy Map",
     "User Journey",
@@ -4690,14 +4690,24 @@
     {
       "termId": "faschistoid",
       "label": "Faschistoid",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Faschistoid"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "linker-faschismus",
       "label": "Linker Faschismus",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Linker Faschismus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "autoritarismus",
@@ -4735,6 +4745,10 @@
           "matched": "Autokratie"
         },
         {
+          "file": "glossar.html",
+          "matched": "Autokratie"
+        },
+        {
           "file": "referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/index.html",
           "matched": "Autokratie"
         },
@@ -4752,14 +4766,24 @@
     {
       "termId": "geschlossene-autokratie",
       "label": "Geschlossene Autokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Geschlossene Autokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "elektorale-autokratie",
       "label": "Elektorale Autokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Elektorale Autokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "totalitarismus",
@@ -4793,6 +4817,10 @@
           "matched": "Diktatur"
         },
         {
+          "file": "glossar.html",
+          "matched": "Diktatur"
+        },
+        {
           "file": "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
           "matched": "Diktatur"
         },
@@ -4818,14 +4846,24 @@
     {
       "termId": "hybridregime",
       "label": "Hybridregime",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Hybridregime"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "illiberale-demokratie",
       "label": "Illiberale Demokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Illiberale Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "demokratische-erosion",
@@ -4984,8 +5022,13 @@
     {
       "termId": "wiedergeburtsnarrativ",
       "label": "Wiedergeburtsnarrativ",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Wiedergeburtsnarrativ"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "hannah-arendt",
@@ -5252,26 +5295,46 @@
     {
       "termId": "natalitaet",
       "label": "Natalität",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Natalität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "oeffentlicher-raum-arendt",
       "label": "Öffentlicher Raum / Erscheinungsraum",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Erscheinungsraum"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "macht-und-gewalt",
       "label": "Macht und Gewalt",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Macht und Gewalt"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "banalitaet-des-boesen",
       "label": "Banalität des Bösen",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Banalität des Bösen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "urteilskraft",
@@ -5331,20 +5394,35 @@
     {
       "termId": "gedankenlosigkeit",
       "label": "Gedankenlosigkeit",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gedankenlosigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "weltlosigkeit",
       "label": "Weltlosigkeit",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Weltlosigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "totalitarismus-arendt",
       "label": "Totalitarismus nach Arendt",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Totalitarismus nach Arendt"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "staat",
@@ -5591,6 +5669,10 @@
           "matched": "Behörde"
         },
         {
+          "file": "glossar.html",
+          "matched": "Behörde"
+        },
+        {
           "file": "referenz/kapitel-002-die-massstabskrise/index.html",
           "matched": "Behörde"
         },
@@ -5612,10 +5694,6 @@
         },
         {
           "file": "referenz/kapitel-021-das-wirkungsrad/index.html",
-          "matched": "Behörde"
-        },
-        {
-          "file": "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html",
           "matched": "Behörde"
         }
       ],
@@ -5793,6 +5871,10 @@
         {
           "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
           "matched": "Staatsgebiet"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Staatsgebiet"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -5800,13 +5882,22 @@
     {
       "termId": "staatsvolk",
       "label": "Staatsvolk",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Staatsvolk"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "staatsgewalt",
       "label": "Staatsgewalt",
       "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Staatsgewalt"
+        },
         {
           "file": "referenz/kapitel-036-wirkung-als-rechtsprinzip/index.html",
           "matched": "Staatsgewalt"
@@ -5888,8 +5979,13 @@
     {
       "termId": "verfassungsorgan",
       "label": "Verfassungsorgan",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Verfassungsorgan"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "gesellschaft",
@@ -5957,6 +6053,10 @@
         {
           "file": "blog/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.html",
           "matched": "Politisches System"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Politisches System"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -5975,6 +6075,10 @@
         },
         {
           "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Regime"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Regime"
         },
         {
@@ -6008,10 +6112,6 @@
         {
           "file": "portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/index.html",
           "matched": "Regime"
-        },
-        {
-          "file": "portale/internationale-ordnung-globalisierung-geopolitik/globale-wirkungsgovernance/index.html",
-          "matched": "Regime"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -6019,8 +6119,13 @@
     {
       "termId": "staatsform",
       "label": "Staatsform",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Staatsform"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "regierungsform",
@@ -6028,6 +6133,10 @@
       "suggestedPages": [
         {
           "file": "blog/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.html",
+          "matched": "Regierungsform"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Regierungsform"
         },
         {
@@ -6046,6 +6155,10 @@
       "label": "Regierungskritik",
       "suggestedPages": [
         {
+          "file": "glossar.html",
+          "matched": "Regierungskritik"
+        },
+        {
           "file": "referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/index.html",
           "matched": "Regierungskritik"
         },
@@ -6059,14 +6172,24 @@
     {
       "termId": "staatsdelegitimierung",
       "label": "Staatsdelegitimierung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Staatsdelegitimierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "institutionenkritik",
       "label": "Institutionenkritik",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Institutionenkritik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "institutionendelegitimierung",
@@ -6075,6 +6198,10 @@
         {
           "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
           "matched": "Institutionendelegitimierung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Institutionendelegitimierung"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -6082,38 +6209,68 @@
     {
       "termId": "kommunistischer-staat",
       "label": "Kommunistischer Staat",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Kommunistischer Staat"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "parteistaat",
       "label": "Parteistaat",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Parteistaat"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "einparteienstaat",
       "label": "Einparteienstaat",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Einparteienstaat"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "militaerdiktatur",
       "label": "Militärdiktatur",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Militärdiktatur"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "theokratie",
       "label": "Theokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Theokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "kleptokratie",
       "label": "Kleptokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Kleptokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "oligarchie",
@@ -6122,6 +6279,10 @@
         {
           "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
           "matched": "Oligarchie"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Oligarchie"
         }
       ],
       "action": "first_relevant_occurrence_hover_available_or_link_candidate"
@@ -6129,8 +6290,13 @@
     {
       "termId": "plutokratie",
       "label": "Plutokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Plutokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "rechtsstaatsabbau",
@@ -6154,14 +6320,24 @@
     {
       "termId": "mediengleichschaltung",
       "label": "Mediengleichschaltung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Mediengleichschaltung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "gewaltenteilungsabbau",
       "label": "Gewaltenteilungsabbau",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Gewaltenteilungsabbau"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "wahlmanipulation",
@@ -6169,6 +6345,10 @@
       "suggestedPages": [
         {
           "file": "dokumente/woek-partei/index.html",
+          "matched": "Wahlmanipulation"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Wahlmanipulation"
         },
         {
@@ -6189,20 +6369,35 @@
     {
       "termId": "scheindemokratie",
       "label": "Scheindemokratie",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Scheindemokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "oppositionsunterdrueckung",
       "label": "Oppositionsunterdrückung",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Oppositionsunterdrückung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "zivilgesellschaftsrepression",
       "label": "Zivilgesellschaftsrepression",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Zivilgesellschaftsrepression"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "propaganda",
@@ -6214,6 +6409,10 @@
         },
         {
           "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Propaganda"
+        },
+        {
+          "file": "glossar.html",
           "matched": "Propaganda"
         },
         {
@@ -6242,8 +6441,13 @@
     {
       "termId": "staatspropaganda",
       "label": "Staatspropaganda",
-      "suggestedPages": [],
-      "action": "no_existing_occurrence_found"
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Staatspropaganda"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     },
     {
       "termId": "fuehrerkult",
@@ -6259,8 +6463,2031 @@
     {
       "termId": "personalisierte-macht",
       "label": "Personalisierte Macht",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Personalisierte Macht"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratie",
+      "label": "Demokratie",
+      "suggestedPages": [
+        {
+          "file": "404.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "afd-programm/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "akademie/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "akademie.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "anwendungen/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "anwendungen/scanner.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "anwendungen.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "audio/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "bibliothek/agenda2030-sdg-esg-handout/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "bibliothek/apfel-t-shirt-wirkung-im-preis/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "bibliothek/beispiel-zange-sdg-esrs-fussnoten/index.html",
+          "matched": "Demokratie"
+        },
+        {
+          "file": "bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/index.html",
+          "matched": "Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratiequalitaet",
+      "label": "Demokratiequalität",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/leitbild-deutschland-2030-woek/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-systemarchitektur/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "blog/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "dokumente/nats-woek-allgemein/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "dokumente/woek-manifest/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "downloads/rang-17-digitalisierung-ki/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "downloads/rang-18-wissen-wissenschaft-forschung/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "downloads/rang-19-internationale-ordnung/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "downloads/rang-20-transformation-uebergaenge-implementierung/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/index.html",
+          "matched": "Demokratiequalität"
+        },
+        {
+          "file": "downloads/rang-22-zukunftsbilder-wirkungswohlstand/index.html",
+          "matched": "Demokratiequalität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratische-wirkungsarchitektur",
+      "label": "Demokratische Wirkungsarchitektur",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html",
+          "matched": "Demokratische Wirkungsarchitektur"
+        },
+        {
+          "file": "referenz/kapitel-079-diskurskultur/index.html",
+          "matched": "Demokratische Wirkungsarchitektur"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Demokratische Wirkungsarchitektur"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Demokratische Wirkungsarchitektur"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratische-rueckkopplung",
+      "label": "Demokratische Rückkopplung",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "blog/wirkungsoekonomie-kein-parteiprogramm.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "ordnung/anschlussfaehigkeit/spd.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/alltag-2035/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/buergerinnen-co-autorinnen/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/globale-ordnung-2050/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/konzeptpapier/index.html",
+          "matched": "Demokratische Rückkopplung"
+        },
+        {
+          "file": "portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/index.html",
+          "matched": "Demokratische Rückkopplung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratische-korrekturfaehigkeit",
+      "label": "Demokratische Korrekturfähigkeit",
+      "suggestedPages": [
+        {
+          "file": "anwendungen.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "blog/wirkungsoekonomie-kein-parteiprogramm.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "erleben/medienwirkungscheck/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "ordnung/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "ordnung/soziale-marktwirtschaft-weiterdenken.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/cyberresilienz/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/dienstjahr-fuer-wirkung/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/downloads/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/energie-wasser-ernaehrung-gesundheit/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/gesamtdossier/index.html",
+          "matched": "Demokratische Korrekturfähigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "volkssouveraenitaet",
+      "label": "Volkssouveränität",
       "suggestedPages": [],
       "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "mehrheitsprinzip",
+      "label": "Mehrheitsprinzip",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "majoritarismus",
+      "label": "Majoritarismus",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "minderheitenschutz",
+      "label": "Minderheitenschutz",
+      "suggestedPages": [
+        {
+          "file": "anwendungen.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "dokumente/technische-leitlinien-wustg-v2/index.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "dokumente/wirkungsrat-konzept/index.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "dokumente/wstg-oktober-2025/index.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "erleben.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "ordnung/anschlussfaehigkeit/gruene.html",
+          "matched": "Minderheitenschutz"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/cyberresilienz/index.html",
+          "matched": "Minderheitenschutz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "pluralismus",
+      "label": "Pluralismus",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "referenz/kapitel-075-plattformlogik-und-algorithmen/index.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "referenz/kapitel-079-diskurskultur/index.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "wirkungsfelder/medien-oeffentlichkeit/dossier/index.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "wirkungsfelder/medien-oeffentlichkeit/konzept/index.html",
+          "matched": "Pluralismus"
+        },
+        {
+          "file": "wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html",
+          "matched": "Pluralismus"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "opposition",
+      "label": "Opposition",
+      "suggestedPages": [
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "blog/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/cyberresilienz/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/dienstjahr-fuer-wirkung/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/energie-wasser-ernaehrung-gesundheit/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/gesellschaftliche-resilienz/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/globale-kooperation/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/hybride-risiken/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/katastrophenschutz/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/kritische-infrastruktur/index.html",
+          "matched": "Opposition"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/lieferketten-rohstoffe-finanzresilienz/index.html",
+          "matched": "Opposition"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "friedlicher-machtwechsel",
+      "label": "Friedlicher Machtwechsel",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "freie-und-faire-wahlen",
+      "label": "Freie und faire Wahlen",
+      "suggestedPages": [
+        {
+          "file": "verstehen/sdgs-sdgplus/index.html",
+          "matched": "Freie und faire Wahlen"
+        },
+        {
+          "file": "verstehen/sdgs-sdgplus/sdgplus-demokratie/index.html",
+          "matched": "Freie und faire Wahlen"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "wahlintegritaet",
+      "label": "Wahlintegrität",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "demokratisches-mandat",
+      "label": "Demokratisches Mandat",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "legitimitaet",
+      "label": "Legitimität",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/index.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-systemarchitektur/index.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+          "matched": "Legitimität"
+        },
+        {
+          "file": "blog/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.html",
+          "matched": "Legitimität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "legalitaet",
+      "label": "Legalität",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2025-12-15-medien-plattformen-und-wirkung.html",
+          "matched": "Legalität"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Legalität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "rechenschaft",
+      "label": "Rechenschaft",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/host-tsi-transformational-system-impact/index.html",
+          "matched": "Accountability"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "dokumente/nats-woek-allgemein/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "dokumente/woek-manifest/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "dokumente/wstg-oktober-2025/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/cyberresilienz/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/dienstjahr-fuer-wirkung/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/energie-wasser-ernaehrung-gesundheit/index.html",
+          "matched": "Rechenschaft"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/gesellschaftliche-resilienz/index.html",
+          "matched": "Rechenschaft"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "transparenz",
+      "label": "Transparenz",
+      "suggestedPages": [
+        {
+          "file": "akademie.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "anwendungen.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/agenda2030-sdg-esg-handout/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/energiepolitik-2026/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/host-tsi-transformational-system-impact/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/leitbild-deutschland-2030-woek/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/live-impact-rating-konzept/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/nachhaltiger-einzelhandel/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/nachhaltiges-marketing-mix/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeitstransformation-im-handwerk/index.html",
+          "matched": "Transparenz"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Transparenz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "responsivitaet",
+      "label": "Responsivität",
+      "suggestedPages": [
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Responsivität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "repraesentation",
+      "label": "Repräsentation",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/index.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "referenz/kapitel-061-politik-als-wirkungsraum/index.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/index.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Repräsentation"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Repräsentation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "partizipation",
+      "label": "Partizipation",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "blog/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/grundlagenpapier-wirkungsoekonomie-woek/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/wirkungsoekonomie-in-der-lieferkette/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/woek-master-items-final-v1-2/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "downloads/rang-20-transformation-uebergaenge-implementierung/index.html",
+          "matched": "Partizipation"
+        },
+        {
+          "file": "portale/migration-vielfalt/index.html",
+          "matched": "Partizipation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "deliberation",
+      "label": "Deliberation",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Deliberation"
+        },
+        {
+          "file": "referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html",
+          "matched": "Deliberation"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Deliberation"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Deliberation"
+        },
+        {
+          "file": "verstehen/sdgs-sdgplus/index.html",
+          "matched": "Deliberation"
+        },
+        {
+          "file": "verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/index.html",
+          "matched": "Deliberation"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "diskursfaehigkeit",
+      "label": "Diskursfähigkeit",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/wirkung-statt-weltbild-afd-regierungsprogramm.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "blog/wirkungsoekonomie-kein-parteiprogramm.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "buch.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "docs/wirtschaft-unternehmen/source-html/portal_wirtschaft_unternehmen.html",
+          "matched": "Diskursfähigkeit"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Diskursfähigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "streitfaehigkeit",
+      "label": "Streitfähigkeit",
+      "suggestedPages": [
+        {
+          "file": "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/automatisierungs-wirkungseinkommensrechner/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/fach-zukunft-generator/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/impact-controlling-rechner/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/medienwirkungscheck/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/produktwirkungsrechner/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/unternehmens-wirkungscheck/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/wirkungsfoerderungs-check/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/wirkungsportfolio-generator/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/wirkungsrenten-rechner/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/wirkungsschule-check/index.html",
+          "matched": "Streitfähigkeit"
+        },
+        {
+          "file": "erleben/wohnwirkungsrechner/index.html",
+          "matched": "Streitfähigkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "oeffentlichkeit",
+      "label": "Öffentlichkeit",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-079-diskurskultur/index.html",
+          "matched": "Öffentlichkeit"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Öffentlichkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratische-oeffentlichkeit",
+      "label": "Demokratische Öffentlichkeit",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/index.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-15-medien-plattformen-und-wirkung.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/wir-messen-das-falsche.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/wirkung-schlaegt-wahrheit.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "downloads.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "erleben/medienwirkungscheck/index.html",
+          "matched": "Demokratische Öffentlichkeit"
+        },
+        {
+          "file": "fragen/index.html",
+          "matched": "Demokratische Öffentlichkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "medienfreiheit",
+      "label": "Medienfreiheit",
+      "suggestedPages": [
+        {
+          "file": "dokumente/wirkungsrat-konzept/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "dokumente/wp-wohnungsmarkt/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "erleben/medienwirkungscheck/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-075-plattformlogik-und-algorithmen/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/index.html",
+          "matched": "Medienfreiheit"
+        },
+        {
+          "file": "referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/index.html",
+          "matched": "Medienfreiheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "pressefreiheit",
+      "label": "Pressefreiheit",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "blog/wirkungsoekonomie-lernendes-kreislaufsystem.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "dokumente/woek-master-items-final-v1-2/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "dokumente/wstg-oktober-2025/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/cyberresilienz/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/dienstjahr-fuer-wirkung/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/energie-wasser-ernaehrung-gesundheit/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/gesellschaftliche-resilienz/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/globale-kooperation/index.html",
+          "matched": "Pressefreiheit"
+        },
+        {
+          "file": "portale/sicherheit-resilienz/hybride-risiken/index.html",
+          "matched": "Pressefreiheit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "medienqualitaet",
+      "label": "Medienqualität",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "blog/wirkungsoekonomie-kein-parteiprogramm.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "buch.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "docs/wirtschaft-unternehmen/source-html/portal_wirtschaft_unternehmen.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "dokumente/woek-manifest/index.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "dokumente/wstg-oktober-2025/index.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "downloads/rang-17-digitalisierung-ki/index.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "downloads/rang-18-wissen-wissenschaft-forschung/index.html",
+          "matched": "Medienqualität"
+        },
+        {
+          "file": "downloads/rang-19-internationale-ordnung/index.html",
+          "matched": "Medienqualität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "informationsintegritaet",
+      "label": "Informationsintegrität",
+      "suggestedPages": [
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Informationsintegrität"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Informationsintegrität"
+        },
+        {
+          "file": "wirkungsfelder/medien-oeffentlichkeit/dossier/index.html",
+          "matched": "Informationsintegrität"
+        },
+        {
+          "file": "wirkungsfelder/medien-oeffentlichkeit/konzept/index.html",
+          "matched": "Informationsintegrität"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "politische-bildung",
+      "label": "Politische Bildung",
+      "suggestedPages": [
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "blog/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "blog/wirkung-statt-weltbild-afd-regierungsprogramm.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "referenz/kapitel-067-bildung/index.html",
+          "matched": "Politische Bildung"
+        },
+        {
+          "file": "referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html",
+          "matched": "Politische Bildung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratiekompetenz",
+      "label": "Demokratiekompetenz",
+      "suggestedPages": [
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "erleben/fach-zukunft-generator/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "erleben/wirkungsfoerderungs-check/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "erleben/wirkungsportfolio-generator/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "erleben/wirkungsschule-check/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "referenz/kapitel-067-bildung/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "referenz/kapitel-071-kindheit-familie-und-fruehes-leben/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Demokratiekompetenz"
+        },
+        {
+          "file": "verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/index.html",
+          "matched": "Demokratiekompetenz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "civic-literacy",
+      "label": "Civic Literacy",
+      "suggestedPages": [
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "referenz/kapitel-060-verteilung-eigentum-und-wohlstand/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Civic Literacy"
+        },
+        {
+          "file": "tools/index.html",
+          "matched": "Civic Literacy"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "buergerbeteiligung",
+      "label": "Bürgerbeteiligung",
+      "suggestedPages": [
+        {
+          "file": "dokumente/grundlagenpapier-wirkungsoekonomie-woek/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "dokumente/whitepaper-t-sroi/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "dokumente/wstg-oktober-2025/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "fuer/kommunen/mannheim-sdg-haushalt/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "fuer/kommunen.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "portale/transformation-uebergaenge-implementierung/evaluation-rechtsschutz-lernschleifen/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "portale/transformation-uebergaenge-implementierung/gesamtdossier/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "portale/transformation-uebergaenge-implementierung/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "portale/transformation-uebergaenge-implementierung/kommunikation-change-partizipation/index.html",
+          "matched": "Bürgerbeteiligung"
+        },
+        {
+          "file": "portale/transformation-uebergaenge-implementierung/konzeptpapier/index.html",
+          "matched": "Bürgerbeteiligung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "buergerrat",
+      "label": "Bürgerrat",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Bürgerrat"
+        },
+        {
+          "file": "referenz/kapitel-079-diskurskultur/index.html",
+          "matched": "Bürgerrat"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Bürgerrat"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "direkte-demokratie",
+      "label": "Direkte Demokratie",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Direkte Demokratie"
+        },
+        {
+          "file": "blog/wirkung-statt-weltbild-afd-regierungsprogramm.html",
+          "matched": "Direkte Demokratie"
+        },
+        {
+          "file": "dokumente/woek-partei/index.html",
+          "matched": "Direkte Demokratie"
+        },
+        {
+          "file": "referenz/kapitel-064-verwaltung-und-buergerbeteiligung/index.html",
+          "matched": "Direkte Demokratie"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Direkte Demokratie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Direkte Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "repraesentative-demokratie",
+      "label": "Repräsentative Demokratie",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-064-verwaltung-und-buergerbeteiligung/index.html",
+          "matched": "Repräsentative Demokratie"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Repräsentative Demokratie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Repräsentative Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "parlamentarische-demokratie",
+      "label": "Parlamentarische Demokratie",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "partizipative-demokratie",
+      "label": "Partizipative Demokratie",
+      "suggestedPages": [
+        {
+          "file": "dokumente/systemmodell-der-wirkungsoekonomie/index.html",
+          "matched": "Partizipative Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "deliberative-demokratie",
+      "label": "Deliberative Demokratie",
+      "suggestedPages": [
+        {
+          "file": "referenz/kapitel-079-diskurskultur/index.html",
+          "matched": "Deliberative Demokratie"
+        },
+        {
+          "file": "referenz/quellen/index.html",
+          "matched": "Deliberative Demokratie"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Deliberative Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "liberale-demokratie",
+      "label": "Liberale Demokratie",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "illiberale-demokratie",
+      "label": "Illiberale Demokratie",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Illiberale Demokratie"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "wehrhafte-demokratie",
+      "label": "Wehrhafte Demokratie",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "demokratiefeindlichkeit",
+      "label": "Demokratiefeindlichkeit",
+      "suggestedPages": [
+        {
+          "file": "blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
+          "matched": "Demokratiefeindlichkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratieskepsis",
+      "label": "Demokratieskepsis",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "regierungskritik",
+      "label": "Regierungskritik",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Regierungskritik"
+        },
+        {
+          "file": "referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/index.html",
+          "matched": "Regierungskritik"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Regierungskritik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "staatsdelegitimierung",
+      "label": "Staatsdelegitimierung",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Staatsdelegitimierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "institutionenkritik",
+      "label": "Institutionenkritik",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Institutionenkritik"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "institutionendelegitimierung",
+      "label": "Institutionendelegitimierung",
+      "suggestedPages": [
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Institutionendelegitimierung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Institutionendelegitimierung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratische-resilienz",
+      "label": "Demokratische Resilienz",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/dossiers/medien-demokratie.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-01-29-was-ist-wirkungsokonomie.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "matched": "Demokratische Resilienz"
+        },
+        {
+          "file": "blog/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.html",
+          "matched": "Demokratische Resilienz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "demokratische-erosion",
+      "label": "Demokratische Erosion",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/nachhaltigkeit-kapitalzentriertes-steuerungsmodell/index.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "bibliothek/nachhaltigkeit-systemarchitektur/index.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "matched": "Demokratische Erosion"
+        },
+        {
+          "file": "blog/soziale-resilienz-gegen-verhetzung.html",
+          "matched": "Demokratische Erosion"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "autokratisierung",
+      "label": "Autokratisierung",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "machtbegrenzung",
+      "label": "Machtbegrenzung",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "blog/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "blog/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "blog/wirkungsoekonomie-lernendes-kreislaufsystem.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "referenz/kapitel-005-wohlstand-auf-kosten-kuenftiger-stabilitaet/index.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "referenz/kapitel-021-das-wirkungsrad/index.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "referenz/kapitel-036-wirkung-als-rechtsprinzip/index.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "referenz/kapitel-063-lobbyismus-und-machtkonzentration/index.html",
+          "matched": "Machtbegrenzung"
+        },
+        {
+          "file": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
+          "matched": "Machtbegrenzung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "checks-and-balances",
+      "label": "Checks and Balances",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "matched": "Checks and Balances"
+        },
+        {
+          "file": "portale/kritik-missverstaendnisse-schutzarchitektur/missbrauchsschutz-rechtsschutz-governance/index.html",
+          "matched": "Checks and Balances"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "gewaltenteilung",
+      "label": "Gewaltenteilung",
+      "suggestedPages": [
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "blog/wirkung-statt-weltbild-afd-regierungsprogramm.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "dokumente/technische-leitlinien-wustg-v2/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "dokumente/wenn-maschinen-arbeiten/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "dokumente/wirkungsrat-konzept/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "dokumente/wstg-oktober-2025/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "glossar.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "referenz/volltext/index.html",
+          "matched": "Gewaltenteilung"
+        },
+        {
+          "file": "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+          "matched": "Gewaltenteilung"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "rechtsstaatlichkeit",
+      "label": "Rechtsstaatlichkeit",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/demokratie-schuetzen/index.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "bibliothek/leitbild-deutschland-2030-woek/index.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.html",
+          "matched": "Rechtsstaatlichkeit"
+        },
+        {
+          "file": "blog/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.html",
+          "matched": "Rechtsstaatlichkeit"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "grundrechte",
+      "label": "Grundrechte",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/leitbild-deutschland-2030-woek/index.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/dossiers/medien-demokratie.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/index.html",
+          "matched": "Grundrechte"
+        },
+        {
+          "file": "dokumente/beispiel-konzern/index.html",
+          "matched": "Grundrechte"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "verfassungsgerichtsbarkeit",
+      "label": "Verfassungsgerichtsbarkeit",
+      "suggestedPages": [],
+      "action": "no_existing_occurrence_found"
+    },
+    {
+      "termId": "rechtsschutz",
+      "label": "Rechtsschutz",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "bibliothek/wirtschaft-unternehmen-risikomanagement-resilienz-finanzmarkt/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "blog/folgencheck-statt-faktencheck-democracy-intelligence.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "buch.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/beispiel-konzern/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/faz-beitrag/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/grundlagenpapier-wirkungsoekonomie-woek/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/leitbild-mensch-planet-demokratie/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/minifest-wirkungsoekonomie/index.html",
+          "matched": "Rechtsschutz"
+        },
+        {
+          "file": "dokumente/nats-woek-allgemein/index.html",
+          "matched": "Rechtsschutz"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "zivilgesellschaft",
+      "label": "Zivilgesellschaft",
+      "suggestedPages": [
+        {
+          "file": "bibliothek/agenda2030-sdg-esg-handout/index.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "bibliothek/handbuch-wirkungskompetenz/index.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "bibliothek/medien-und-wirkung/index.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "bibliothek/social-taxonomy-wirkungsoekonomie/index.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "bibliothek/t-sroi-standard-impact-controlling/index.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "bibliothek/wirkungsraeume-gestalten-hosting/index.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "blog/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "blog/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "blog/soziale-resilienz-gegen-verhetzung.html",
+          "matched": "Zivilgesellschaft"
+        },
+        {
+          "file": "blog/wirkung-statt-weltbild-afd-regierungsprogramm.html",
+          "matched": "Zivilgesellschaft"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
+    },
+    {
+      "termId": "politischer-vorraum",
+      "label": "Politischer Vorraum",
+      "suggestedPages": [
+        {
+          "file": "glossar.html",
+          "matched": "Politischer Vorraum"
+        }
+      ],
+      "action": "first_relevant_occurrence_hover_available_or_link_candidate"
     }
   ]
 }

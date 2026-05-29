@@ -52,6 +52,7 @@ const categoryTags = {
   "Feminismus, feministische Ökonomie und Care-Wirkung": ["Feminismus", "Care", "Gleichwertigkeit", "Teilhabe", "Gender Data", "Wirkungswert"],
   "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe": ["Liberalismus", "Freiheit", "Libertarismus", "Neoklassik", "Markt", "Externalität", "Wirklichkeitsbindung"],
   "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume": ["Akteure", "Einfluss", "Lobbyismus", "Thinktanks", "NGO", "Demokratie", "Grundgesetz"],
+  "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur": ["Demokratie", "Rechtsstaat", "Rückkopplung", "Korrekturfähigkeit", "Öffentlichkeit", "Minderheitenschutz", "Resilienz"],
   "Faschismus, faschistoid und autoritäre Wirkungsrisiken": ["Faschismus", "faschistoid", "Autoritarismus", "Autokratie", "Totalitarismus", "demokratische Erosion", "Wirkungsrisiko"],
   "Hannah Arendt und politische Wirkungsbegriffe": ["Hannah Arendt", "Pluralität", "öffentlicher Raum", "Handeln", "Urteilskraft", "Totalitarismus"],
   "Staat, Regierung, Verwaltung und Gesellschaft": ["Staat", "Regierung", "Verwaltung", "Gesellschaft", "Verfassung", "Gewaltenteilung", "Institutionen"],
@@ -257,6 +258,21 @@ const sourceGroups = {
     ["institutional", "Bundeszentrale für politische Bildung: Staat, Regierung, Demokratie, Rechtsstaat", "https://www.bpb.de/"],
     ["institutional", "Bundesverfassungsgericht Klimabeschluss 2021", "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html"],
     ["internal_woek", "Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG", ""],
+  ],
+  democracyArchitecture: [
+    ["institutional", "Bundeszentrale für politische Bildung: Demokratie", "https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/236879/demokratie/"],
+    ["institutional", "Bundeszentrale für politische Bildung: Rechtsstaat, Gewaltenteilung, Parlamentarismus, Pluralismus", "https://www.bpb.de/"],
+    ["institutional", "Grundgesetz für die Bundesrepublik Deutschland", "https://www.gesetze-im-internet.de/gg/"],
+    ["institutional", "Bundesverfassungsgericht: Klimabeschluss 2021", "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html"],
+    ["primary", "Robert A. Dahl: Polyarchy", ""],
+    ["primary", "Larry Diamond: Developing Democracy", ""],
+    ["primary", "Adam Przeworski: Democracy and the Limits of Self-Government", ""],
+    ["primary", "Steven Levitsky / Daniel Ziblatt: How Democracies Die", ""],
+    ["institutional", "V-Dem Institute: Democracy Reports / Regimes of the World", "https://v-dem.net/"],
+    ["institutional", "Freedom House: Freedom in the World", "https://freedomhouse.org/report/freedom-world"],
+    ["institutional", "International IDEA: Global State of Democracy", "https://www.idea.int/gsod/"],
+    ["institutional", "OSCE / ODIHR: Wahlstandards", "https://www.osce.org/odihr/elections"],
+    ["internal_woek", "Interne WÖk-Quellen: Demokratie als Wirkungsraum, Staat / Politik / Demokratie, Medien / Kommunikation / Öffentlichkeit, Systemmodell, Wirkungsrat, Folgencheck, Wirkung politischer Sprache", ""],
   ],
   circular: [
     ["institutional", "Ellen MacArthur Foundation: Circular Economy Principles", "https://www.ellenmacarthurfoundation.org/circular-economy-principles"],
@@ -726,6 +742,7 @@ const CAT_BATTERY_INFRA = "Batterien, Ladeinfrastruktur, Netzanschluss und Energ
 const CAT_FEMINISM_CARE = "Feminismus, feministische Ökonomie und Care-Wirkung";
 const CAT_LIBERAL_MARKET = "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe";
 const CAT_ACTORS_INFLUENCE = "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume";
+const CAT_DEMOCRACY_ARCH = "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur";
 const CAT_FASCISM_RISKS = "Faschismus, faschistoid und autoritäre Wirkungsrisiken";
 const CAT_ARENDT = "Hannah Arendt und politische Wirkungsbegriffe";
 const CAT_STATE_GOV = "Staat, Regierung, Verwaltung und Gesellschaft";
@@ -921,6 +938,42 @@ const actorsInfluenceBase = {
   applicationFields: ["Politik", "Medien", "Staat und Verwaltung", "Demokratie", "Kapitalmärkte", "Bildung"],
   sourceField: ["Politische Theorie", "Soziologie", "Recht", "Psychologie", "Ökonomie", "WÖk-eigener Begriff"],
   sourceGroup: "actorsInfluence",
+};
+const democracyArchitectureBase = {
+  category: CAT_DEMOCRACY_ARCH,
+  concept: "connection",
+  theme: [
+    "Demokratie",
+    "Demokratiequalität",
+    "Demokratische Wirkungsarchitektur",
+    "Rechtsstaat und Grundrechte",
+    "Wahlen und Mandat",
+    "Öffentlichkeit und Medienqualität",
+    "Vertrauen und Institutionen",
+    "Pluralismus und Minderheitenschutz",
+    "Rechenschaft und Transparenz",
+    "Demokratische Resilienz",
+    "Demokratische Erosion",
+    "Autokratie und Demokratiegefährdung",
+    "Partizipation und Bürgerbeteiligung",
+    "Deliberation und Diskursfähigkeit",
+    "Staat, Regierung und Verwaltung",
+    "Mensch",
+    "Planet",
+    "Wirkung und Wirkungslogik",
+    "Medien und Öffentlichkeit",
+    "Recht, Staat und Institutionen",
+    "Psychologie und Resonanz",
+    "Systemtheorie und Rückkopplung",
+    "Akteure und Einfluss",
+    "Thinktanks und Lobbyismus",
+    "Ideologien und politische Lager",
+  ],
+  dimensions: ["Mensch", "Planet", "Demokratie"],
+  wirklogik: ["Wirkungsarchitektur", "Wirkungsrückkopplung", "Wirkungsbewertung", "Wirkungsrisiko", "Wirkungssteuerung"],
+  applicationFields: ["Politik", "Medien", "Staat und Verwaltung", "Demokratie", "Bildung", "Recht"],
+  sourceField: ["Politische Theorie", "Recht", "Soziologie", "Medienwissenschaft", "WÖk-eigener Begriff"],
+  sourceGroup: "democracyArchitecture",
 };
 const democraticRiskBase = {
   category: CAT_FASCISM_RISKS,
@@ -1311,6 +1364,71 @@ function clusterTerm(base, [id, title, short, woek, aliases = [], related = [], 
     ...extra,
   });
 }
+
+const democracyArchitectureTerms = [
+  ["demokratie", "Demokratie", "Demokratie ist eine politische Ordnung, in der Macht vom Volk ausgeht, durch freie Wahlen legitimiert, durch Recht begrenzt, durch Öffentlichkeit kontrolliert und durch regelmäßige Korrektur veränderbar bleibt.", "In der Wirkungsökonomie ist Demokratie eine eigene Wirkungsdimension. Demokratie ermöglicht, dass Wirkung öffentlich geprüft, kritisiert, korrigiert und legitimiert werden kann. Ohne Demokratie kann Wirkungsmessung zur Technokratie, Propaganda oder Herrschaftstechnik werden.", [], ["demokratiequalitaet", "demokratische-rueckkopplung", "rechtsstaatlichkeit", "gewaltenteilung", "grundrechte", "volkssouveraenitaet", "freie-und-faire-wahlen", "minderheitenschutz", "oeffentlichkeit", "medienqualitaet", "vertrauen", "diskursfaehigkeit", "demokratische-resilienz", "demokratische-erosion"], "core", { customStatus: "WÖk-Kernbegriff", definition: "Einfach gesagt: Demokratie heißt nicht nur, dass die Mehrheit entscheidet. Demokratie heißt, dass Macht begrenzt wird, Fehler korrigiert werden können und auch Minderheiten Rechte behalten. Ausführlich verbindet Demokratie Volkssouveränität, freie und faire Wahlen, Rechtsstaatlichkeit, Gewaltenteilung, Grundrechte, Minderheitenschutz, Meinungsfreiheit, Medienfreiheit, Pluralismus, Opposition, Rechenschaft und friedlichen Machtwechsel.", mythos: "Demokratie bedeutet: Die Mehrheit darf alles entscheiden.", woekKlaerung: "Demokratie ist mehr als Mehrheit. Mehrheit braucht Grundrechte, Rechtsstaat, Minderheitenschutz, freie Öffentlichkeit, unabhängige Gerichte und Korrekturmöglichkeiten.", blindSpot: "Wahlen allein können autoritäre Wirkung verdecken, wenn Rechte, Öffentlichkeit und Korrekturwege geschwächt werden.", usage: "Kurzformel: Demokratie schützt die Möglichkeit, Fehler zu korrigieren." }],
+  ["demokratiequalitaet", "Demokratiequalität", "Demokratiequalität beschreibt, wie gut eine Demokratie ihre zentralen Funktionen erfüllt: freie Wahlen, Rechtsstaat, Grundrechte, Pluralismus, Öffentlichkeit, Rechenschaft, Teilhabe und Machtbegrenzung.", "Demokratiequalität ist ein SDG+-Feld. Sie ist wirkungsbezogen zu prüfen: Können Menschen tatsächlich teilhaben? Werden Fehler korrigiert? Bleiben Institutionen vertrauenswürdig? Können Medien kontrollieren? Bleiben Minderheiten geschützt?", [], ["demokratie", "freie-und-faire-wahlen", "rechtsstaatlichkeit", "medienqualitaet", "demokratische-resilienz"]],
+  ["demokratische-wirkungsarchitektur", "Demokratische Wirkungsarchitektur", "Demokratische Wirkungsarchitektur beschreibt das Zusammenspiel von Institutionen, Öffentlichkeit, Daten, Rechten, Medien, Beteiligung, Rechtsschutz und Rückkopplung, durch das Wirkung demokratisch geprüft und gesteuert werden kann.", "Wirkungsmessung darf nicht nur technisch richtig sein. Sie muss öffentlich prüfbar, rechtlich kontrollierbar, politisch verantwortbar und gesellschaftlich korrigierbar bleiben.", [], ["demokratie", "demokratische-rueckkopplung", "wirkungsarchitektur", "wirkungsrat", "rechtsschutz"], "precision", { mythos: "Wirkungssteuerung ersetzt demokratische Entscheidung.", woekKlaerung: "Wirkungsmessung soll Demokratie nicht ersetzen. Sie soll bessere Informationen liefern; entscheiden müssen legitimierte Institutionen im Rahmen von Grundrechten, Rechtsschutz und öffentlicher Kontrolle." }],
+  ["demokratische-rueckkopplung", "Demokratische Rückkopplung", "Demokratische Rückkopplung beschreibt, dass Entscheidungen, Wirkungen und Fehler über Öffentlichkeit, Wahlen, Parlamente, Gerichte, Medien, Wissenschaft und Bürger:innen wieder in das System zurückgespielt werden.", "Demokratische Rückkopplung ist der Schutzmechanismus gegen technokratische oder autoritäre Wirkungssteuerung.", [], ["demokratie", "rueckkopplung", "demokratische-korrekturfaehigkeit", "oeffentlichkeit", "rechtsschutz"], "precision", { woekKlaerung: "Demokratie ist Rückkopplung mit Rechten." }],
+  ["demokratische-korrekturfaehigkeit", "Demokratische Korrekturfähigkeit", "Demokratische Korrekturfähigkeit beschreibt die Fähigkeit eines politischen Systems, Fehler zu erkennen, öffentlich zu diskutieren und institutionell zu korrigieren.", "Wirkungsmessung bleibt fehlbar. Deshalb braucht es Korrektur, Einspruch, Revision, Öffentlichkeit und Rechtsschutz.", [], ["demokratie", "demokratische-rueckkopplung", "rechtsschutz", "transparenz"]],
+  ["volkssouveraenitaet", "Volkssouveränität", "Volkssouveränität bedeutet, dass alle Staatsgewalt vom Volk ausgeht.", "Volkssouveränität ist Grundlage demokratischer Legitimation, aber an Verfassung, Grundrechte, Verfahren und Rechtsstaat gebunden.", [], ["demokratie", "staatsgewalt", "grundgesetz", "freie-und-faire-wahlen"]],
+  ["mehrheitsprinzip", "Mehrheitsprinzip", "Das Mehrheitsprinzip bedeutet, dass politische Entscheidungen nach Mehrheit getroffen werden können.", "Das Mehrheitsprinzip ist wichtig, aber nicht ausreichend. Mehrheiten dürfen Grundrechte, Menschenwürde, Rechtsstaatlichkeit und Minderheitenschutz nicht außer Kraft setzen.", [], ["majoritarismus", "minderheitenschutz", "grundrechte", "demokratie"]],
+  ["majoritarismus", "Majoritarismus", "Majoritarismus beschreibt eine Verkürzung von Demokratie auf bloße Mehrheitsmacht.", "Majoritarismus ist ein demokratisches Wirkungsrisiko. Wenn Mehrheit ohne Minderheitenschutz, Rechtsstaat und Gewaltenteilung gedacht wird, kann Demokratie in autoritäre Herrschaft kippen.", [], ["mehrheitsprinzip", "minderheitenschutz", "illiberale-demokratie", "demokratische-erosion"], "connection", { mythos: "Was die Mehrheit will, ist automatisch demokratisch.", woekKlaerung: "Demokratisch ist nicht nur die Entscheidung der Mehrheit, sondern auch die Begrenzung der Mehrheit durch Rechte und Verfahren." }],
+  ["minderheitenschutz", "Minderheitenschutz", "Minderheitenschutz sichert Rechte und Schutz von Gruppen, die nicht zur politischen oder gesellschaftlichen Mehrheit gehören.", "Minderheitenschutz ist eine Wirkungsgrenze. Eine Maßnahme kann nicht demokratisch positiv sein, wenn sie Minderheiten entmenschlicht, entrechtet oder systematisch ausgrenzt.", [], ["grundrechte", "pluralismus", "menschenwuerde", "entmenschlichung", "demokratie"]],
+  ["pluralismus", "Pluralismus", "Pluralismus beschreibt die Anerkennung unterschiedlicher Meinungen, Interessen, Lebensformen, Gruppen und Perspektiven innerhalb einer Gesellschaft.", "Pluralismus ist ein demokratischer Wirkungszustand. Er ermöglicht Streit ohne Feindschaft.", [], ["demokratie", "pluralitaet", "minderheitenschutz", "diskursfaehigkeit", "pluralismusfeindlichkeit"]],
+  ["opposition", "Opposition", "Opposition bezeichnet politische Kräfte, die nicht regieren und Regierungshandeln kritisieren, kontrollieren oder Alternativen anbieten.", "Opposition ist kein Störfaktor, sondern ein demokratischer Korrekturmechanismus.", [], ["regierungskritik", "parlament", "freie-und-faire-wahlen", "demokratie"]],
+  ["friedlicher-machtwechsel", "Friedlicher Machtwechsel", "Friedlicher Machtwechsel bedeutet, dass politische Macht nach Wahlen ohne Gewalt, Putsch oder institutionelle Sabotage übergeben werden kann.", "Friedlicher Machtwechsel ist ein Kernindikator demokratischer Stabilität.", [], ["freie-und-faire-wahlen", "wahlintegritaet", "demokratische-resilienz"]],
+  ["freie-und-faire-wahlen", "Freie und faire Wahlen", "Freie und faire Wahlen sind Wahlen, bei denen Bürger:innen ohne Zwang, Manipulation oder systematische Benachteiligung zwischen echten Alternativen entscheiden können.", "Wahlen allein reichen nicht. Entscheidend sind Freiheit, Fairness, Medienzugang, Wahlrecht, Transparenz, Auszählung, Opposition und Akzeptanz des Ergebnisses.", [], ["wahlintegritaet", "demokratisches-mandat", "opposition", "friedlicher-machtwechsel"]],
+  ["wahlintegritaet", "Wahlintegrität", "Wahlintegrität beschreibt die Glaubwürdigkeit, Fairness, Transparenz und rechtliche Ordnung von Wahlen.", "Wahlbetrugsnarrative ohne Evidenz sind ein demokratisches Wirkungsrisiko, weil sie Vertrauen in die Korrekturarchitektur der Demokratie beschädigen.", [], ["freie-und-faire-wahlen", "informationsintegritaet", "vertrauen", "demokratische-erosion"]],
+  ["demokratisches-mandat", "Demokratisches Mandat", "Ein demokratisches Mandat ist die durch Wahl oder rechtmäßiges Verfahren verliehene Befugnis, politische Verantwortung auf Zeit auszuüben.", "Ein Mandat legitimiert Macht nur im Rahmen von Recht, Rechenschaft, Kontrolle und zeitlicher Begrenzung.", [], ["freie-und-faire-wahlen", "regierung", "parlament", "rechenschaft"]],
+  ["legitimitaet", "Legitimität", "Legitimität beschreibt die anerkannte Rechtfertigung politischer Macht oder Entscheidung.", "Legitimität entsteht nicht nur formal durch Verfahren, sondern auch durch Wirkung, Transparenz, Fairness, Rechenschaft und Korrekturfähigkeit.", [], ["legalitaet", "rechenschaft", "transparenz", "demokratie"]],
+  ["legalitaet", "Legalität", "Legalität bedeutet, dass etwas rechtlich erlaubt oder gesetzeskonform ist.", "Legalität ist nicht automatisch positive Wirkung. Eine legale Entscheidung kann negative Folgewirkungen haben. Umgekehrt darf Wirkung nicht außerhalb des Rechts durchgesetzt werden.", [], ["legitimitaet", "rechtsstaatlichkeit", "grundrechte"]],
+  ["rechenschaft", "Rechenschaft", "Rechenschaft bedeutet, dass Machtträger:innen erklären, begründen und verantworten müssen, was sie tun.", "Rechenschaft ist eine Voraussetzung demokratischer Wirkungssteuerung.", ["Accountability"], ["transparenz", "legitimitaet", "demokratische-wirkungsarchitektur"]],
+  ["transparenz", "Transparenz", "Transparenz bedeutet, dass relevante Informationen, Interessen, Daten, Entscheidungen und Verantwortlichkeiten sichtbar und überprüfbar sind.", "Transparenz ist nicht Selbstzweck. Sie ermöglicht Kontrolle, Vertrauen und Korrektur.", [], ["rechenschaft", "vertrauen", "lobbyregister", "wirkungsdaten"]],
+  ["responsivitaet", "Responsivität", "Responsivität beschreibt, wie gut Institutionen auf Bedürfnisse, Probleme und Rückmeldungen der Bevölkerung reagieren.", "Responsivität ist ein demokratischer Wirkungsindikator.", [], ["demokratische-rueckkopplung", "partizipation", "regierung"]],
+  ["repraesentation", "Repräsentation", "Repräsentation bedeutet, dass gewählte oder beauftragte Personen für andere sprechen, entscheiden oder handeln.", "Repräsentation braucht Mandat, Rechenschaft und Rückkopplung.", [], ["demokratisches-mandat", "parlament", "partizipation"]],
+  ["partizipation", "Partizipation", "Partizipation bedeutet Beteiligung an politischen, sozialen oder institutionellen Entscheidungen.", "Partizipation ist nicht automatisch gute Wirkung. Sie braucht Zugang, Fairness, Information, Rückkopplung und echte Einflussmöglichkeiten.", [], ["buergerbeteiligung", "deliberation", "teilhabe"], "connection", { mythos: "Mehr Beteiligung ist automatisch bessere Demokratie.", woekKlaerung: "Beteiligung braucht Information, Fairness, Zugang, Rechenschaft und Rückkopplung. Sonst kann sie simuliert, manipuliert oder von lauteren Gruppen dominiert werden." }],
+  ["deliberation", "Deliberation", "Deliberation beschreibt den öffentlichen, begründeten Austausch von Argumenten vor Entscheidungen.", "Deliberation ist ein Wirkmechanismus demokratischer Qualität. Sie senkt Dissonanz, erhöht Verständnis und verbessert Korrektur.", [], ["diskursfaehigkeit", "deliberative-demokratie", "oeffentlichkeit"]],
+  ["diskursfaehigkeit", "Diskursfähigkeit", "Diskursfähigkeit beschreibt die Fähigkeit einer Gesellschaft, Konflikte sprachlich, sachlich und respektvoll auszutragen.", "Diskursfähigkeit ist ein SDG+-Zustand und Voraussetzung demokratischer Resilienz.", [], ["streitfaehigkeit", "medienqualitaet", "resonanzraum", "demokratische-resilienz"]],
+  ["streitfaehigkeit", "Streitfähigkeit", "Streitfähigkeit bedeutet, Konflikte auszutragen, ohne Gegner:innen zu Feinden zu machen.", "Demokratie braucht Streit, aber keinen Feindvernichtungsmodus.", [], ["diskursfaehigkeit", "feindbildlogik", "pluralismus"]],
+  ["oeffentlichkeit", "Öffentlichkeit", "Öffentlichkeit ist der Raum, in dem gesellschaftliche Fragen sichtbar, diskutierbar und kritisierbar werden.", "Öffentlichkeit ist ein demokratischer Wirkungsraum. Ohne Öffentlichkeit keine Kontrolle von Macht.", [], ["demokratische-oeffentlichkeit", "medienqualitaet", "transparenz"]],
+  ["demokratische-oeffentlichkeit", "Demokratische Öffentlichkeit", "Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.", "Sie ist die kommunikative Infrastruktur demokratischer Rückkopplung.", [], ["oeffentlichkeit", "informationsintegritaet", "medienfreiheit"]],
+  ["medienfreiheit", "Medienfreiheit", "Medienfreiheit schützt die Freiheit von Medien, unabhängig zu recherchieren, zu veröffentlichen und Macht zu kontrollieren.", "Medienfreiheit ist Teil demokratischer Wirkungsarchitektur, weil sie Macht sichtbar und kritisierbar macht.", [], ["pressefreiheit", "medienqualitaet", "demokratische-oeffentlichkeit"]],
+  ["pressefreiheit", "Pressefreiheit", "Pressefreiheit schützt journalistische Arbeit vor staatlicher oder privater Unterdrückung.", "Pressefreiheit ist ein Frühindikator demokratischer Qualität und ein Schutz gegen Propaganda und Machtmissbrauch.", [], ["medienfreiheit", "journalismus", "demokratische-erosion"]],
+  ["medienqualitaet", "Medienqualität", "Medienqualität beschreibt, wie gut Medien informieren, einordnen, korrigieren, plural berichten und Macht kontrollieren.", "Medienqualität ist Teil von SDG+ und demokratischer Wirkungsarchitektur.", [], ["informationsintegritaet", "oeffentlichkeit", "faktencheck", "folgencheck"]],
+  ["informationsintegritaet", "Informationsintegrität", "Informationsintegrität beschreibt die Verlässlichkeit, Nachvollziehbarkeit und Manipulationsresistenz öffentlicher Information.", "Informationsintegrität schützt Demokratie vor Desinformation, Propaganda, Deepfakes und Vertrauenszerstörung.", [], ["desinformation", "propaganda", "medienqualitaet", "vertrauen"]],
+  ["politische-bildung", "Politische Bildung", "Politische Bildung stärkt die Fähigkeit, politische Prozesse, Rechte, Konflikte und Verantwortung zu verstehen und mitzugestalten.", "Politische Bildung ist Wirkungskompetenz für Demokratie.", [], ["demokratiekompetenz", "civic-literacy", "bildung"]],
+  ["demokratiekompetenz", "Demokratiekompetenz", "Demokratiekompetenz beschreibt die Fähigkeit, demokratische Verfahren, Rechte, Konflikte, Medien, Institutionen und eigene Verantwortung zu verstehen und zu nutzen.", "Demokratiekompetenz ist ein WÖk-Präzisierungsbegriff für die praktische Fähigkeit zur demokratischen Rückkopplung.", [], ["politische-bildung", "civic-literacy", "diskursfaehigkeit"], "precision"],
+  ["civic-literacy", "Civic Literacy", "Civic Literacy beschreibt politisches, institutionelles und gesellschaftliches Grundwissen, das demokratische Teilhabe ermöglicht.", "Ohne Civic Literacy bleiben Rechte, Beteiligung und Kontrolle für viele Menschen schwer nutzbar.", [], ["demokratiekompetenz", "politische-bildung"]],
+  ["buergerbeteiligung", "Bürgerbeteiligung", "Bürgerbeteiligung beschreibt Verfahren, in denen Bürger:innen an Planung, Beratung oder Entscheidung beteiligt werden.", "Sie stärkt Demokratie nur, wenn Einfluss, Rückmeldung, Zugang und Transparenz real sind.", [], ["partizipation", "buergerrat", "direkte-demokratie"]],
+  ["buergerrat", "Bürgerrat", "Ein Bürgerrat ist ein Beteiligungsformat, in dem zufällig ausgewählte Bürger:innen gesellschaftliche Fragen beraten und Empfehlungen entwickeln.", "Bürgerräte können demokratische Rückkopplung stärken, ersetzen aber nicht Parlament, Rechtsschutz oder freie Wahlen.", [], ["buergerbeteiligung", "deliberation", "parlament"]],
+  ["direkte-demokratie", "Direkte Demokratie", "Direkte Demokratie beschreibt Verfahren, bei denen Bürger:innen unmittelbar über Sachfragen entscheiden.", "Kann Teilhabe stärken, braucht aber Information, Minderheitenschutz, Verfahrensschutz und Schutz vor manipulativer Kampagnenmacht.", [], ["buergerbeteiligung", "volksentscheid", "minderheitenschutz"]],
+  ["repraesentative-demokratie", "Repräsentative Demokratie", "Repräsentative Demokratie bedeutet, dass Bürger:innen Vertreter:innen wählen, die für eine begrenzte Zeit politische Entscheidungen treffen.", "Sie verbindet Mandat, Rechenschaft, Parlament und Korrektur durch Wahlen.", [], ["demokratisches-mandat", "parlament", "freie-und-faire-wahlen"]],
+  ["parlamentarische-demokratie", "Parlamentarische Demokratie", "In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratischer Gesetzgebung und Kontrolle der Regierung.", "Relevant für Machtbegrenzung, Rechenschaft und Regierungskontrolle.", [], ["parlament", "regierung", "gewaltenteilung"]],
+  ["partizipative-demokratie", "Partizipative Demokratie", "Partizipative Demokratie erweitert demokratische Beteiligung über Wahlen hinaus.", "Sie kann Rückkopplung verbessern, wenn Beteiligung nicht nur symbolisch bleibt.", [], ["partizipation", "buergerbeteiligung", "demokratische-rueckkopplung"]],
+  ["deliberative-demokratie", "Deliberative Demokratie", "Deliberative Demokratie betont öffentliche Beratung, Argumente und gemeinsame Urteilsbildung.", "Sie stärkt Demokratiequalität, wenn Öffentlichkeit, Wissen, Respekt und Minderheitenschutz gesichert sind.", [], ["deliberation", "diskursfaehigkeit", "demokratische-oeffentlichkeit"]],
+  ["liberale-demokratie", "Liberale Demokratie", "Liberale Demokratie verbindet Mehrheitsentscheidungen mit Grundrechten, Rechtsstaatlichkeit, Gewaltenteilung, Minderheitenschutz und Freiheit.", "Für die WÖk ist liberale Demokratie die zentrale Schutzform gegen Mehrheitswillkür und technokratische Wirkungsherrschaft.", [], ["demokratie", "grundrechte", "rechtsstaatlichkeit", "minderheitenschutz"]],
+  ["illiberale-demokratie", "Illiberale Demokratie", "Illiberale Demokratie bezeichnet Systeme, die Wahlen haben, aber Rechtsstaat, Medienfreiheit, Minderheitenschutz oder Gewaltenteilung schwächen.", "Illiberale Demokratie ist ein demokratisches Wirkungsrisiko, weil sie demokratische Form mit autoritärer Wirkung verbinden kann.", [], ["liberale-demokratie", "majoritarismus", "rechtsstaatsabbau", "demokratische-erosion"]],
+  ["wehrhafte-demokratie", "Wehrhafte Demokratie", "Wehrhafte Demokratie bezeichnet Mechanismen, mit denen eine Demokratie sich gegen Kräfte schützt, die ihre freiheitliche Ordnung abschaffen wollen.", "Wehrhafte Demokratie ist eine Schutzarchitektur gegen demokratische Selbstzerstörung.", [], ["demokratiefeindlichkeit", "grundgesetz", "demokratische-resilienz"]],
+  ["demokratiefeindlichkeit", "Demokratiefeindlichkeit", "Demokratiefeindlichkeit beschreibt Haltungen, Programme oder Handlungen, die demokratische Grundprinzipien ablehnen oder zerstören wollen.", "Wirkungsökonomisch entscheidend ist, welche Rechte, Institutionen und Korrekturwege angegriffen werden.", [], ["wehrhafte-demokratie", "demokratische-erosion", "autoritarismus"]],
+  ["demokratieskepsis", "Demokratieskepsis", "Demokratieskepsis beschreibt Zweifel an Funktionsfähigkeit oder Legitimität demokratischer Verfahren.", "Nicht jede Kritik ist demokratiefeindlich. Entscheidend ist, ob Kritik Korrektur ermöglichen will oder demokratische Ordnung pauschal zerstört.", [], ["regierungskritik", "staatsdelegitimierung", "vertrauen"]],
+  ["regierungskritik", "Regierungskritik", "Regierungskritik richtet sich gegen konkrete politische Führung, Entscheidungen, Programme oder Maßnahmen.", "Eine Regierung zu kritisieren ist demokratisch notwendig. Problematisch wird es, wenn nicht konkrete Entscheidungen kritisiert werden, sondern Staat, Verfassung, Gerichte oder demokratische Institutionen pauschal als Feind markiert werden.", [], ["regierung", "staatsdelegitimierung", "institutionenkritik"]],
+  ["staatsdelegitimierung", "Staatsdelegitimierung", "Staatsdelegitimierung beschreibt die pauschale Abwertung oder Feindmarkierung des Staates als demokratische und rechtsstaatliche Ordnung.", "Staatsdelegitimierung ist ein Wirkungsrisiko, wenn sie Vertrauen in Gerichte, Verwaltung, Verfassung, Wahlen und demokratische Verfahren zerstört.", [], ["staat", "regierungskritik", "institutionendelegitimierung", "demokratische-erosion"]],
+  ["institutionenkritik", "Institutionenkritik", "Institutionenkritik richtet sich gegen konkrete Institutionen, ihre Fehler, Verfahren oder Machtstrukturen.", "Legitim und notwendig, wenn sie konkret, prüfbar und korrigierbar bleibt.", [], ["institutionendelegitimierung", "regierungskritik", "demokratische-korrekturfaehigkeit"]],
+  ["institutionendelegitimierung", "Institutionendelegitimierung", "Institutionendelegitimierung beschreibt die pauschale Abwertung demokratischer Institutionen als grundsätzlich feindlich, korrupt oder illegitim.", "Sie beschädigt Korrekturwege, Vertrauen und gemeinsame Wirklichkeit.", [], ["institutionenkritik", "staatsdelegitimierung", "demokratische-erosion"]],
+  ["demokratische-resilienz", "Demokratische Resilienz", "Demokratische Resilienz beschreibt die Fähigkeit einer Demokratie, Krisen, Konflikte, Desinformation, Machtmissbrauch und Polarisierung zu verarbeiten, ohne ihre Grundprinzipien zu verlieren.", "Demokratische Resilienz ist ein zentraler SDG+-Zustand.", [], ["demokratische-erosion", "diskursfaehigkeit", "informationsintegritaet", "wehrhafte-demokratie"]],
+  ["demokratische-erosion", "Demokratische Erosion", "Demokratische Erosion beschreibt die schrittweise Schwächung demokratischer Institutionen, Rechte, Medien, Wahlen oder Korrekturmechanismen.", "Demokratische Erosion ist besonders riskant, weil sie oft legal, schrittweise und normalisiert abläuft.", [], ["autokratisierung", "rechtsstaatsabbau", "mediengleichschaltung", "institutionendelegitimierung"]],
+  ["autokratisierung", "Autokratisierung", "Autokratisierung beschreibt die Entwicklung eines politischen Systems in Richtung stärkerer Machtkonzentration, weniger Rechtsstaatlichkeit, weniger Freiheit und weniger demokratischer Kontrolle.", "WÖk prüft, welche Rückkopplungen, Rechte, Medien und Machtbegrenzungen konkret verloren gehen.", [], ["autokratie", "demokratische-erosion", "machtbegrenzung"]],
+  ["machtbegrenzung", "Machtbegrenzung", "Machtbegrenzung beschreibt institutionelle, rechtliche und gesellschaftliche Mechanismen, die verhindern, dass Macht unkontrolliert wird.", "Machtbegrenzung ist demokratische Wirkungsarchitektur.", [], ["checks-and-balances", "gewaltenteilung", "rechtsstaatlichkeit"]],
+  ["checks-and-balances", "Checks and Balances", "Checks and Balances sind gegenseitige Kontroll- und Begrenzungsmechanismen zwischen staatlichen Institutionen.", "Sie verhindern Machtkonzentration und sichern demokratische Korrekturfähigkeit.", [], ["gewaltenteilung", "machtbegrenzung", "verfassungsgerichtsbarkeit"]],
+  ["gewaltenteilung", "Gewaltenteilung", "Gewaltenteilung trennt staatliche Macht in Gesetzgebung, Regierung/Verwaltung und Rechtsprechung.", "Sie verhindert Machtkonzentration und schützt demokratische Korrektur.", [], ["checks-and-balances", "machtbegrenzung", "rechtsstaatlichkeit"]],
+  ["rechtsstaatlichkeit", "Rechtsstaatlichkeit", "Rechtsstaatlichkeit bedeutet, dass staatliche Macht an Recht, Verfahren, Kontrolle und Grundrechte gebunden ist.", "Rechtsstaatlichkeit ist eine Wirkungsgrenze. Wirkung darf nicht gegen Recht durchgesetzt werden.", [], ["grundrechte", "rechtsschutz", "legalitaet", "demokratische-wirkungsarchitektur"]],
+  ["grundrechte", "Grundrechte", "Grundrechte sind grundlegende Rechte, die Menschen gegenüber Staat und öffentlicher Macht schützen.", "Grundrechte sind Wirkungsgrenzen. Keine Wirkungsrechnung darf ihre Verletzung einfach verrechnen.", [], ["menschenwuerde", "rechtsstaatlichkeit", "minderheitenschutz"]],
+  ["verfassungsgerichtsbarkeit", "Verfassungsgerichtsbarkeit", "Verfassungsgerichtsbarkeit prüft, ob staatliches Handeln mit der Verfassung vereinbar ist.", "Sie schützt Grundrechte, Gewaltenteilung und demokratische Korrektur gegen Mehrheits- oder Regierungsmacht.", [], ["grundgesetz", "rechtsschutz", "checks-and-balances"]],
+  ["rechtsschutz", "Rechtsschutz", "Rechtsschutz beschreibt die Möglichkeit, staatliche Entscheidungen rechtlich überprüfen zu lassen.", "Rechtsschutz ist eine zentrale Grenze jeder Wirkungssteuerung und schützt Bürger:innen vor willkürlicher Macht.", [], ["rechtsstaatlichkeit", "grundrechte", "verfassungsgerichtsbarkeit"]],
+  ["zivilgesellschaft", "Zivilgesellschaft", "Zivilgesellschaft umfasst freiwillige, nichtstaatliche Formen gesellschaftlicher Organisation und Beteiligung, etwa Vereine, Initiativen, NGOs, Bewegungen, Stiftungen und Bürgergruppen.", "Zivilgesellschaft ist ein Rückkopplungsraum der Demokratie. Sie macht Wirkungen sichtbar, die Staat oder Markt übersehen.", [], ["ngo", "buergerbeteiligung", "oeffentlichkeit"]],
+  ["politischer-vorraum", "Politischer Vorraum", "Der politische Vorraum umfasst Akteure und Prozesse, die Politik vorbereiten, beeinflussen oder rahmen, bevor formelle Entscheidungen fallen.", "Dort entstehen Narrative, Programme, Begriffe, Gesetzesvorschläge und Vertrauensverschiebungen. Deshalb ist der politische Vorraum ein wichtiger Wirkungsraum.", [], ["thinktank", "ngo", "lobbyismus", "agenda-setting", "medienqualitaet"]],
+].map((item) => clusterTerm(democracyArchitectureBase, item));
 
 const fascismRiskTerms = [
   ["faschismus", "Faschismus", "Faschismus bezeichnet eine rechtsextreme, autoritäre und anti-liberale Ideologie und Bewegung, die historisch im Italien Mussolinis entstand und später als Oberbegriff für nationalistische, anti-pluralistische und diktatorische Bewegungen verwendet wurde.", "Faschismus ist ein schweres Wirkungsrisiko für Mensch und Demokratie. Er beschädigt Menschenwürde, Minderheitenschutz, Rechtsstaatlichkeit, Pluralismus, freie Medien, Wahrheit, institutionelles Vertrauen und demokratische Korrekturfähigkeit.", [], ["faschistoid", "autoritarismus", "totalitarismus", "rechtsextremismus", "rassismus", "entmenschlichung", "fuehrerprinzip", "feindbildlogik", "suendenbockmechanismus", "demokratische-erosion", "pluralismusfeindlichkeit", "wiedergeburtsnarrativ"], "connection", { customStatus: "Anschlussbegriff / politischer Wirkungsbegriff", definition: "Faschismus ist politikwissenschaftlich nicht durch eine einzige unumstrittene Definition festgelegt. Wiederkehrende Merkmale sind extremer Nationalismus, Führerprinzip, Anti-Liberalismus, Anti-Pluralismus, Gewaltakzeptanz, Feindbildlogik, Unterordnung des Individuums unter eine angeblich höhere Gemeinschaft, Propaganda, Militarisierung, Entmenschlichung und die Vorstellung einer nationalen Wiedergeburt.", mythos: "Faschismus ist einfach alles, was autoritär ist.", woekKlaerung: "Nicht jede autoritäre oder harte Politik ist Faschismus. Faschismus ist ein spezifisches Merkmalsbündel aus Autoritarismus, Rechtsextremismus, Anti-Pluralismus, Feindbildlogik, Gewalt- und Wiedergeburtsnarrativen.", usage: "Den Begriff nicht leichtfertig als Etikett verwenden. Besser Merkmale, Wirkmechanismen und Wirkungspotenziale konkret benennen." }],
@@ -1791,7 +1909,7 @@ const batteryInfrastructureTerms = [
   ["anlagenpass", "Anlagenpass", "Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.", "Analog zum Materialpass oder Digitalen Produktpass für große Energieanlagen; wichtig für Rückbau, Wartung, Versicherung und Kreislaufwirkung.", [], ["materialpass", "digitaler-produktpass", "rueckbaustandard"], "method"],
 ].map(batteryInfraTerm);
 
-additions.push(...economicSystemTerms, ...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...fascismRiskTerms, ...arendtTerms, ...stateGovTerms, ...regimeFormTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
+additions.push(...economicSystemTerms, ...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...fascismRiskTerms, ...arendtTerms, ...stateGovTerms, ...regimeFormTerms, ...democracyArchitectureTerms, ...circularTerms, ...neuroTerms, ...quantumTerms, ...energyTerms, ...energySystemTerms, ...batteryInfrastructureTerms);
 
 const raw = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 const terms = raw.terms || [];
@@ -2033,6 +2151,7 @@ for (const item of terms) {
     [CAT_FEMINISM_CARE]: "Feminismus und Gleichwertigkeit",
     [CAT_LIBERAL_MARKET]: "Liberalismus und Freiheit",
     [CAT_ACTORS_INFLUENCE]: "Akteure und Einfluss",
+    [CAT_DEMOCRACY_ARCH]: "Demokratie",
     [CAT_FASCISM_RISKS]: "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
     [CAT_ARENDT]: "Hannah Arendt und politische Wirkungsbegriffe",
     [CAT_STATE_GOV]: "Staat, Regierung, Verwaltung und Gesellschaft",
@@ -2150,6 +2269,22 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - Bundeszentrale für politische Bildung / HanisauLand: Staat, Regierung, Demokratie, Rechtsstaat, https://www.bpb.de/
 - Bundesverfassungsgericht Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
 - Interne WÖk-Quellen: Folgencheck statt Faktencheck, Wirkung politischer Sprache, Demokratie als Wirkungsraum, Wirkungsarchitektur, Wirkungsrat, WStG / WUStG, Die neue Ordnung des Wohlstands, Systemmodell der Wirkungsökonomie.
+
+## Demokratie / Rechtsstaat / demokratische Wirkungsarchitektur
+
+- Bundeszentrale für politische Bildung: Demokratie, https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/236879/demokratie/
+- Bundeszentrale für politische Bildung: Rechtsstaat, Gewaltenteilung, Parlamentarismus, Pluralismus, https://www.bpb.de/
+- Grundgesetz für die Bundesrepublik Deutschland, https://www.gesetze-im-internet.de/gg/
+- Bundesverfassungsgericht: zentrale Entscheidungen zu Demokratie und Art. 20a / Klimabeschluss 2021, https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html
+- Robert A. Dahl: Polyarchy
+- Larry Diamond: Developing Democracy
+- Adam Przeworski: Democracy and the Limits of Self-Government
+- Steven Levitsky / Daniel Ziblatt: How Democracies Die
+- V-Dem Institute: Democracy Reports / Regimes of the World, https://v-dem.net/
+- Freedom House: Freedom in the World, https://freedomhouse.org/report/freedom-world
+- International IDEA: Global State of Democracy, https://www.idea.int/gsod/
+- OSCE / ODIHR: Wahlstandards, https://www.osce.org/odihr/elections
+- Interne WÖk-Quellen: Die neue Ordnung des Wohlstands, Demokratie als Wirkungsraum, Teil Staat / Politik / Demokratie, Medien / Kommunikation / Öffentlichkeit, Systemmodell der Wirkungsökonomie, WStG, Wirkungsrat, Folgencheck statt Faktencheck, Wirkung politischer Sprache, Vertrauen, Wirkungspotenzial, Wirkungsrisiko, Staat, Regierung, Grundgesetz, Faschismus, Autokratie.
 
 ## Feministische Ökonomie / Care
 
@@ -2388,7 +2523,7 @@ Publikationsstatus:
 `;
 fs.writeFileSync(processPath, processMarkdown);
 
-const backlinkTerms = [...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...fascismRiskTerms, ...arendtTerms, ...stateGovTerms, ...regimeFormTerms].filter((item) => item.publicationStatus === "published").map((item) => ({
+const backlinkTerms = [...feminismCareTerms, ...liberalMarketTerms, ...actorsInfluenceTerms, ...fascismRiskTerms, ...arendtTerms, ...stateGovTerms, ...regimeFormTerms, ...democracyArchitectureTerms].filter((item) => item.publicationStatus === "published").map((item) => ({
   termId: item.termId,
   label: item.canonicalLabel,
   aliases: item.aliases,

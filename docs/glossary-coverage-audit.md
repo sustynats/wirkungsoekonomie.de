@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T20:13:54.435Z
+Stand: 2026-05-29T20:29:15.267Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 1089 |
+| Begriffe im klassischen Glossar | 1142 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 2114 |
+| Alias-Einträge | 2168 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -71,6 +71,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Äußere Loops | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Austerität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Autokratie | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
+| Autokratisierung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Autopoiesis | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Autoritäres Wirkungspotenzial | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Autoritarismus | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
@@ -118,8 +119,10 @@ Stand: 2026-05-29T20:13:54.435Z
 | Blei-Säure-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Blindleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Bundesregierung | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Bürgerbeteiligung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Bürgerenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Bürgerinitiative | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Bürgerrat | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Business Model | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Business Model Canvas | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Business Value | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
@@ -132,9 +135,11 @@ Stand: 2026-05-29T20:13:54.435Z
 | CBAM / Carbon Border Adjustment Mechanism | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | CCS | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | CHAdeMO | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Checks and Balances | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Chicago School | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Circular Economy Butterfly Model | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Circularity Indicator / Zirkularitätsindikator | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
+| Civic Literacy | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Clean Industrial Deal | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Climate Neutral Claim | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | CO2-Preis | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -159,10 +164,23 @@ Stand: 2026-05-29T20:13:54.435Z
 | Datenqualität | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | DC-Laden | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Degradation | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Deliberation | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Deliberative Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Demand Response | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratiefeindlichkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratiekompetenz | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Demokratieprinzip | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
-| Demokratische Erosion | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
+| Demokratiequalität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratieskepsis | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratische Erosion | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratische Korrekturfähigkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratische Öffentlichkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratische Resilienz | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratische Rückkopplung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Demokratische Wirkungsarchitektur | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Demokratischer Sozialismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
+| Demokratisches Mandat | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Depotladen | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Deregulierung | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Design for Disassembly | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
@@ -174,8 +192,10 @@ Stand: 2026-05-29T20:13:54.435Z
 | Diffusion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Digitaler Produktpass | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Diktatur | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
+| Direkte Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Direktrecycling | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Diskriminierungsverbot | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Diskursfähigkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Dissonanzreduktion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | DNSH / Do No Significant Harm | Sustainable Finance | ja | ja | ja | ja | ok |
 | Dominanzlogik | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
@@ -285,7 +305,9 @@ Stand: 2026-05-29T20:13:54.435Z
 | Frame / Framing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Frederic Vester | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Fredmund Malik | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
+| Freie und faire Wahlen | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Frequenzhaltung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Friedlicher Machtwechsel | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Friedrich Hayek | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Führerkult | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Führerprinzip | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
@@ -312,7 +334,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Gesetz | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Gesicherte Leistung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Gesundheitsgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
-| Gewaltenteilung | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Gewaltenteilung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Gewaltenteilungsabbau | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Gewerbespeicher | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Gewinn als Test | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
@@ -344,6 +366,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | GRI | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Grundgesetz | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Grundlast | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
+| Grundrechte | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Grüner Kapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Grüner Wasserstoff | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Grünstrom | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -393,7 +416,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Hydrometallurgie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Identitätsschutz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | IDGs | Grundbegriff | ja | - | ja | ja | ok |
-| Illiberale Demokratie | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
+| Illiberale Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | ILO | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | ILO-Kernarbeitsnormen | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Immanuel Kant | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
@@ -404,6 +427,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Industrielle Dekonstruktion | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Inertia / Trägheit | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Informationsasymmetrie | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Informationsintegrität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Informationsüberlastung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Innere Loops | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Innovation | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
@@ -411,8 +435,8 @@ Stand: 2026-05-29T20:13:54.435Z
 | Insetting | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Inside-out / Outside-in | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Institutioneller Rassismus | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
-| Institutionendelegitimierung | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
-| Institutionenkritik | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Institutionendelegitimierung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Institutionenkritik | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Interdependenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Interessenkonflikt | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Interessenvertretung | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
@@ -504,8 +528,10 @@ Stand: 2026-05-29T20:13:54.435Z
 | Lebenszyklusanalyse / LCA | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Lebenszyklusinventar / LCI | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Lebenszykluswirkungsabschätzung / LCIA | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Legalität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Legislative Footprint | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Legitimer Lobbyismus | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Legitimität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Leistungsdichte | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Leistungsfaktor | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Leistungspreis | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
@@ -513,6 +539,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Lernender Unternehmer | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | LFP-Batterie | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Liability Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Liberale Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Liberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Libertarismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Lieferkettendaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
@@ -529,9 +556,11 @@ Stand: 2026-05-29T20:13:54.435Z
 | Lock-in / Pfadabhängigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Ludwig Wittgenstein | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
 | Macht und Gewalt | Hannah Arendt und politische Wirkungsbegriffe | ja | - | ja | ja | ok |
+| Machtbegrenzung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Machtdezentralisierung | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Machtkonzentration | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Maja Göpel | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
+| Majoritarismus | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Marktgleichgewicht | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Marktmacht | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
@@ -543,8 +572,11 @@ Stand: 2026-05-29T20:13:54.435Z
 | Material Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Materialgesundheit | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Materialpass | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
+| Medienfreiheit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Mediengleichschaltung | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
+| Medienqualität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Megawatt Charging System / MCS | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Mehrheitsprinzip | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Mehrwert | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Meinungsfreiheit | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Mensch, Planet und Demokratie | Demokratiebegriff | ja | - | ja | ja | ok |
@@ -560,6 +592,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Mieterstrom | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Militärdiktatur | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Minarchismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Minderheitenschutz | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Mindestschutz / Minimum Safeguards | Sustainable Finance | ja | ja | ja | ja | ok |
 | Minutenreserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Mitte | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
@@ -644,6 +677,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | OEF / Organisation Environmental Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Öffentliche Güter | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Öffentlicher Raum / Erscheinungsraum | Hannah Arendt und politische Wirkungsbegriffe | ja | - | ja | ja | ok |
+| Öffentlichkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Offsetting / Kompensation | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Offshore-Netzumlage | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Offshore-Windenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -657,6 +691,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Onshore-Windenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Operatives Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Opportunitätskosten | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Opposition | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Oppositionsunterdrückung | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Ordoliberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Organisation Environmental Footprint / OEF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
@@ -665,7 +700,10 @@ Stand: 2026-05-29T20:13:54.435Z
 | PAI / Principal Adverse Impacts | Sustainable Finance | ja | ja | ja | ja | ok |
 | Pareto-Effizienz | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Parlament | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Parlamentarische Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Parteistaat | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
+| Partizipation | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Partizipative Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Patriarchale Dividende | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Patriarchat | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Paul Watzlawick | Vordenker:innen und Bezugslinien | ja | - | ja | ja | ok |
@@ -686,13 +724,16 @@ Stand: 2026-05-29T20:13:54.435Z
 | Planwirtschaft | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Plattformkapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Plug & Charge | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Pluralismus | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Pluralismusfeindlichkeit | Faschismus, faschistoid und autoritäre Wirkungsrisiken | ja | - | ja | ja | ok |
 | Pluralität | Hannah Arendt und politische Wirkungsbegriffe | ja | - | ja | ja | ok |
 | Plutokratie | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Policy Entrepreneurship | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Policy-Laundering | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Policy-Netzwerk | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Politische Bildung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Politischer Liberalismus | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
+| Politischer Vorraum | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Politisches System | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Populismus | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Positive Externalität | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
@@ -705,6 +746,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Prädiktive Verarbeitung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Präferenzen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Prävention | Grundbegriff | ja | - | ja | ja | ok |
+| Pressefreiheit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Primärenergie | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Primärregelung | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Priming | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -746,11 +788,13 @@ Stand: 2026-05-29T20:13:54.435Z
 | Reale Freiheit | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Reasonable Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Rebound-Effekt | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Rechenschaft | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Recht auf Reparatur | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Rechte künftiger Generationen | Grundbegriff | ja | - | ja | ja | ok |
 | Rechts | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Rechtsextremismus | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
-| Rechtsschutz | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Rechtsschutz | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
+| Rechtsstaatlichkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Rechtsstaatsabbau | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Rechtsstaatsprinzip | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Recycling | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
@@ -768,7 +812,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Regenerative Landwirtschaft | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Regierung | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Regierungsform | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
-| Regierungskritik | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Regierungskritik | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Regime | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Regulatory Capture | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Regulierungsversagen | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
@@ -781,7 +825,9 @@ Stand: 2026-05-29T20:13:54.435Z
 | Reparierbarkeit | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Repowering | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
+| Repräsentation | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Repräsentationsanspruch | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Repräsentative Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Reproduktive Arbeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Reproduktive Gerechtigkeit | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Reproduktive Rechte | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
@@ -794,6 +840,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Resonanzraum | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Resonanzrisiko | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Responsible Marketing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| Responsivität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Ressourcenallokation | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | Reverse Logistics | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Reverse Merit Order | WÖk-Übersetzung | ja | ja | ja | ja | ok |
@@ -872,7 +919,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Sprachspiel | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
 | St. Galler Management-Modell | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Staat | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
-| Staatsdelegitimierung | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Staatsdelegitimierung | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Staatsform | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Staatsgebiet | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Staatsgewalt | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
@@ -896,6 +943,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Stranded Assets | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Strategische Reserve | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strategisches Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Streitfähigkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Stressreaktion | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Stromgestehungskosten | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Strommarkt | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
@@ -955,6 +1003,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Transition Finance | Sustainable Finance | ja | ja | ja | ja | ok |
 | Transition Plan | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Transition Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Transparenz | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Transparenzregister | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Treibhausgasemissionen | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Trickle-down-Ökonomie | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
@@ -985,6 +1034,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Vehicle-to-Load | Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher | ja | - | ja | ja | ok |
 | Verbrauchsgüter | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Verfassung | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
+| Verfassungsgerichtsbarkeit | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Verfassungsmäßige Wirkungsarchitektur | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
 | Verfassungsorgan | Staat, Regierung, Verwaltung und Gesellschaft | ja | - | ja | ja | ok |
 | Verfügbarkeitsheuristik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -1003,9 +1053,11 @@ Stand: 2026-05-29T20:13:54.435Z
 | Viabilität | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Viable System Model | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Vita activa | Hannah Arendt und politische Wirkungsbegriffe | ja | - | ja | ja | ok |
+| Volkssouveränität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Vollständige Information | Liberalismus, Libertarismus, Neoklassik und Marktbegriffe | ja | - | ja | ja | ok |
 | VSME | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Vulnerabilität | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Wahlintegrität | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Wahlmanipulation | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Wahrhaftigkeit | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
 | Wahrheit | Sprache, Wirklichkeit und Kommunikation | ja | - | ja | ja | ok |
@@ -1023,6 +1075,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Wasserstoffspeicher | Energie, Strommarkt und Systemkosten | ja | - | ja | ja | ok |
 | Wasserstress | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Watchdog-Organisation | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Wehrhafte Demokratie | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Weiterverteilung / Redistribute | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Well-to-Tank | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Well-to-Wheel | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
@@ -1109,7 +1162,7 @@ Stand: 2026-05-29T20:13:54.435Z
 | Zielkonflikt | Grundbegriff | ja | - | ja | ja | ok |
 | Zirkuläres Geschäftsmodell | Kreislaufwirtschaft, Circular Design und Materialkreisläufe | ja | - | ja | ja | ok |
 | Zirkularität | Grundbegriff | ja | - | ja | ja | ok |
-| Zivilgesellschaft | Akteure, Einfluss, Ideologien und demokratische Wirkungsräume | ja | - | ja | ja | ok |
+| Zivilgesellschaft | Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur | ja | - | ja | ja | ok |
 | Zivilgesellschaftsrepression | Autokratien, Regimeformen und demokratische Erosion | ja | - | ja | ja | ok |
 | Zugangsgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Zukunftsbild | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
