@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T18:42:15.002Z",
+  "generatedAt": "2026-05-29T18:56:52.187Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -43,6 +43,23 @@
         "erneuerbare-energien",
         "netzengpass",
         "einspeisemanagement"
+      ],
+      "documents": []
+    },
+    "ac-laden": {
+      "terms": [
+        "on-board-charger",
+        "typ-2-stecker",
+        "wallbox",
+        "ladeinfrastruktur",
+        "normalladen"
+      ],
+      "documents": []
+    },
+    "ad-hoc-laden": {
+      "terms": [
+        "roaming-ladeinfrastruktur",
+        "eichrecht-ladeinfrastruktur"
       ],
       "documents": []
     },
@@ -100,6 +117,13 @@
       ],
       "documents": []
     },
+    "akkumulator": {
+      "terms": [
+        "batterie",
+        "zyklenfestigkeit"
+      ],
+      "documents": []
+    },
     "alan-watts-daoismus": {
       "terms": [
         "dao",
@@ -154,6 +178,14 @@
       ],
       "documents": []
     },
+    "anlagenpass": {
+      "terms": [
+        "materialpass",
+        "digitaler-produktpass",
+        "rueckbaustandard"
+      ],
+      "documents": []
+    },
     "anpassungskapazitaet": {
       "terms": [
         "klimaanpassung",
@@ -184,6 +216,29 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "anschlusskosten": {
+      "terms": [
+        "baukostenzuschuss",
+        "netzanschlusspunkt"
+      ],
+      "documents": []
+    },
+    "anschlussleistung": {
+      "terms": [
+        "netzanschlussleistung",
+        "baukostenzuschuss",
+        "ladeleistung"
+      ],
+      "documents": []
+    },
+    "arbeitspreis": {
+      "terms": [
+        "leistungspreis",
+        "strompreisbestandteile",
+        "eichrecht-ladeinfrastruktur"
+      ],
+      "documents": []
     },
     "arbitrageur": {
       "terms": [
@@ -256,6 +311,14 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "backend-ladeinfrastruktur": {
+      "terms": [
+        "ocpp",
+        "ladepunktbetreiber",
+        "plug-and-charge"
+      ],
+      "documents": []
+    },
     "backup-kapazitaet": {
       "terms": [
         "gesicherte-leistung",
@@ -296,13 +359,128 @@
       ],
       "documents": []
     },
+    "batterie": {
+      "terms": [
+        "speicher-energie",
+        "lithium-ionen-batterie",
+        "natrium-ionen-batterie",
+        "feststoffbatterie",
+        "batterierecycling",
+        "second-life-batterie",
+        "batteriepass",
+        "akkumulator"
+      ],
+      "documents": []
+    },
+    "batteriealterung": {
+      "terms": [
+        "state-of-health",
+        "degradation-batterie",
+        "c-rate",
+        "zyklenfestigkeit"
+      ],
+      "documents": []
+    },
+    "batterielebenszyklus": {
+      "terms": [
+        "batteriepass",
+        "batterierecycling",
+        "second-life-batterie"
+      ],
+      "documents": []
+    },
+    "batteriemanagementsystem": {
+      "terms": [
+        "state-of-charge",
+        "state-of-health",
+        "batteriepass",
+        "second-life-batterie",
+        "batteriepack",
+        "thermal-runaway"
+      ],
+      "documents": []
+    },
+    "batteriemodul": {
+      "terms": [
+        "batteriezelle",
+        "batteriepack",
+        "modularitaet"
+      ],
+      "documents": []
+    },
+    "batteriepack": {
+      "terms": [
+        "batteriemodul",
+        "batteriemanagementsystem",
+        "thermal-runaway",
+        "batteriezelle"
+      ],
+      "documents": []
+    },
+    "batteriepass": {
+      "terms": [
+        "digitaler-produktpass",
+        "batterielebenszyklus",
+        "state-of-health",
+        "batterierecycling",
+        "batterie",
+        "batteriemanagementsystem",
+        "second-life-batterie"
+      ],
+      "documents": []
+    },
+    "batterierecycling": {
+      "terms": [
+        "black-mass",
+        "pyrometallurgie",
+        "hydrometallurgie",
+        "direktrecycling-batterie",
+        "batteriepass",
+        "batterie",
+        "batterierohstoffe",
+        "lfp-batterie",
+        "blei-saeure-batterie",
+        "batterielebenszyklus",
+        "second-life-batterie",
+        "recyclingeffizienz",
+        "rezyklatquote-batterie",
+        "urban-mining-batterien"
+      ],
+      "documents": []
+    },
+    "batterierohstoffe": {
+      "terms": [
+        "kritische-rohstoffe",
+        "lithium-ionen-batterie",
+        "batterierecycling",
+        "batteriezelle"
+      ],
+      "documents": []
+    },
     "batteriespeicher": {
       "terms": [
         "speicher-energie",
         "kurzzeitspeicher",
         "quantenbatterie",
         "vehicle-to-grid",
-        "elektromobilitaet"
+        "elektromobilitaet",
+        "stationaerer-batteriespeicher"
+      ],
+      "documents": []
+    },
+    "batteriezelle": {
+      "terms": [
+        "batteriemodul",
+        "batteriepack",
+        "batterierohstoffe"
+      ],
+      "documents": []
+    },
+    "baukostenzuschuss": {
+      "terms": [
+        "anschlusskosten",
+        "netzanschlussleistung",
+        "anschlussleistung"
       ],
       "documents": []
     },
@@ -412,6 +590,14 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "bidirektionales-laden": {
+      "terms": [
+        "vehicle-to-grid",
+        "vehicle-to-home",
+        "vehicle-to-load"
+      ],
+      "documents": []
+    },
     "bilanzraum": {
       "terms": [
         "systemgrenze",
@@ -492,9 +678,23 @@
       ],
       "documents": []
     },
+    "black-mass": {
+      "terms": [
+        "batterierecycling",
+        "kritische-rohstoffe"
+      ],
+      "documents": []
+    },
     "blauer-wasserstoff": {
       "terms": [
         "wasserstoff"
+      ],
+      "documents": []
+    },
+    "blei-saeure-batterie": {
+      "terms": [
+        "batterierecycling",
+        "kritische-rohstoffe"
       ],
       "documents": []
     },
@@ -502,7 +702,8 @@
       "terms": [
         "scheinleistung",
         "wirkleistung",
-        "verlustleistung"
+        "verlustleistung",
+        "leistungsfaktor"
       ],
       "documents": []
     },
@@ -534,6 +735,13 @@
       ],
       "documents": []
     },
+    "c-rate": {
+      "terms": [
+        "ladeleistung",
+        "batteriealterung"
+      ],
+      "documents": []
+    },
     "capture-price": {
       "terms": [
         "kannibalisierungseffekt",
@@ -562,6 +770,13 @@
       ],
       "documents": []
     },
+    "carbonfaserverstaerkter-kunststoff": {
+      "terms": [
+        "faserverbundwerkstoff",
+        "rotorblatt-recycling"
+      ],
+      "documents": []
+    },
     "care-oekonomie": {
       "terms": [
         "feministische-oekonomie",
@@ -580,6 +795,20 @@
         "wirkungssteuer",
         "clean-industrial-deal",
         "european-green-deal"
+      ],
+      "documents": []
+    },
+    "ccs-ladestecker": {
+      "terms": [
+        "dc-laden",
+        "hpc-charger",
+        "typ-2-stecker"
+      ],
+      "documents": []
+    },
+    "chademo": {
+      "terms": [
+        "dc-laden"
       ],
       "documents": []
     },
@@ -804,6 +1033,24 @@
       ],
       "documents": []
     },
+    "dc-laden": {
+      "terms": [
+        "hpc-charger",
+        "ccs-ladestecker",
+        "ladeinfrastruktur",
+        "schnellladen",
+        "chademo"
+      ],
+      "documents": []
+    },
+    "degradation-batterie": {
+      "terms": [
+        "batteriealterung",
+        "state-of-health",
+        "zyklenfestigkeit"
+      ],
+      "documents": []
+    },
     "demand-response": {
       "terms": [
         "lastmanagement",
@@ -818,6 +1065,14 @@
       "terms": [
         "sozialismus",
         "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "depotladen": {
+      "terms": [
+        "ladehub",
+        "megawatt-charging-system",
+        "dynamisches-lastmanagement"
       ],
       "documents": []
     },
@@ -920,7 +1175,16 @@
         "warenfetisch",
         "kreislaufwirtschaft",
         "technischer-kreislauf",
-        "materialpass"
+        "materialpass",
+        "batteriepass",
+        "anlagenpass"
+      ],
+      "documents": []
+    },
+    "direktrecycling-batterie": {
+      "terms": [
+        "batterierecycling",
+        "werterhalt"
       ],
       "documents": []
     },
@@ -989,7 +1253,17 @@
       "terms": [
         "demand-response",
         "smart-meter",
-        "messstellenbetrieb"
+        "messstellenbetrieb",
+        "smart-charging"
+      ],
+      "documents": []
+    },
+    "dynamisches-lastmanagement": {
+      "terms": [
+        "lastmanagement",
+        "gleichzeitigkeit-ladeinfrastruktur",
+        "smart-charging",
+        "depotladen"
       ],
       "documents": []
     },
@@ -1040,6 +1314,16 @@
       ],
       "documents": []
     },
+    "eichrecht-ladeinfrastruktur": {
+      "terms": [
+        "wandlermessung",
+        "arbeitspreis",
+        "ladepunktbetreiber",
+        "ad-hoc-laden",
+        "plug-and-charge"
+      ],
+      "documents": []
+    },
     "einspeisemanagement": {
       "terms": [
         "abregelung",
@@ -1059,6 +1343,13 @@
         "vehicle-to-grid",
         "batteriespeicher",
         "sektorkopplung"
+      ],
+      "documents": []
+    },
+    "elektromobilitaetsdienstleister": {
+      "terms": [
+        "roaming-ladeinfrastruktur",
+        "ladepunktbetreiber"
       ],
       "documents": []
     },
@@ -1160,12 +1451,27 @@
       ],
       "documents": []
     },
+    "energiedichte": {
+      "terms": [
+        "lithium-ionen-batterie",
+        "leistungsdichte",
+        "feststoffbatterie"
+      ],
+      "documents": []
+    },
     "energieeffizienz": {
       "terms": [
         "wirkungsgrad",
         "rebound-effekt",
         "scope-2",
         "waermepumpe"
+      ],
+      "documents": []
+    },
+    "energiemanagementsystem": {
+      "terms": [
+        "smart-charging",
+        "stationaerer-batteriespeicher"
       ],
       "documents": []
     },
@@ -1562,12 +1868,35 @@
         "folgencheck-statt-faktencheck-democracy-intelligence"
       ]
     },
+    "faserverbundwerkstoff": {
+      "terms": [
+        "rotorblatt-recycling",
+        "glasfaserverstaerkter-kunststoff",
+        "carbonfaserverstaerkter-kunststoff"
+      ],
+      "documents": []
+    },
     "feministische-oekonomie": {
       "terms": [
         "care-oekonomie",
         "sorgearbeit",
         "reproduktive-arbeit",
         "patriarchat"
+      ],
+      "documents": []
+    },
+    "fernwirktechnik": {
+      "terms": [
+        "smart-grid",
+        "technische-anschlussregel"
+      ],
+      "documents": []
+    },
+    "feststoffbatterie": {
+      "terms": [
+        "lithium-ionen-batterie",
+        "energiedichte",
+        "batterie"
       ],
       "documents": []
     },
@@ -1841,6 +2170,13 @@
       ],
       "documents": []
     },
+    "gewerbespeicher": {
+      "terms": [
+        "stationaerer-batteriespeicher",
+        "leistungspreis"
+      ],
+      "documents": []
+    },
     "gewinn-als-test": {
       "terms": [
         "business-value",
@@ -1870,6 +2206,20 @@
         "herkunftsnachweis-hkn",
         "hfcs-hydrofluorocarbons",
         "thg-emissions-scopes"
+      ],
+      "documents": []
+    },
+    "glasfaserverstaerkter-kunststoff": {
+      "terms": [
+        "faserverbundwerkstoff",
+        "rotorblatt-recycling"
+      ],
+      "documents": []
+    },
+    "gleichzeitigkeit-ladeinfrastruktur": {
+      "terms": [
+        "dynamisches-lastmanagement",
+        "netzanschlussleistung"
       ],
       "documents": []
     },
@@ -2202,6 +2552,14 @@
       ],
       "documents": []
     },
+    "heimspeicher": {
+      "terms": [
+        "prosumer",
+        "stationaerer-batteriespeicher",
+        "vehicle-to-home"
+      ],
+      "documents": []
+    },
     "heinz-von-foerster": {
       "terms": [
         "triviale-maschine",
@@ -2276,6 +2634,21 @@
       ],
       "documents": []
     },
+    "hochspannung": {
+      "terms": [
+        "mittelspannung",
+        "hoechstspannung",
+        "umspannwerk"
+      ],
+      "documents": []
+    },
+    "hoechstspannung": {
+      "terms": [
+        "hochspannung",
+        "uebertragungsnetz"
+      ],
+      "documents": []
+    },
     "hochwasserrisiko": {
       "terms": [
         "physical-climate-risk",
@@ -2304,6 +2677,22 @@
         "produktdaten",
         "wirkungsbewertung",
         "reverse-merit-order"
+      ],
+      "documents": []
+    },
+    "hpc-charger": {
+      "terms": [
+        "dc-laden",
+        "ladepark",
+        "mittelspannung",
+        "pufferspeicher-ladepark",
+        "leistungsdichte",
+        "ladeinfrastruktur",
+        "ladeeinrichtung",
+        "schnellladen",
+        "ccs-ladestecker",
+        "ladeleistung",
+        "ladepark-mittelspannungsanschluss"
       ],
       "documents": []
     },
@@ -2371,6 +2760,13 @@
         "biodiversitaetsrisiko",
         "naturbasierte-loesungen",
         "renaturierung"
+      ],
+      "documents": []
+    },
+    "hydrometallurgie": {
+      "terms": [
+        "batterierecycling",
+        "pyrometallurgie"
       ],
       "documents": []
     },
@@ -3099,6 +3495,24 @@
       ],
       "documents": []
     },
+    "kritische-rohstoffe": {
+      "terms": [
+        "batterierohstoffe",
+        "rohstoffkritikalitaet",
+        "nmc-batterie",
+        "nca-batterie",
+        "blei-saeure-batterie",
+        "black-mass"
+      ],
+      "documents": []
+    },
+    "kundenanlage": {
+      "terms": [
+        "uebergabestation",
+        "niederspannungshauptverteilung"
+      ],
+      "documents": []
+    },
     "kundennutzen": {
       "terms": [
         "business-value",
@@ -3139,6 +3553,92 @@
       ],
       "documents": []
     },
+    "ladeeinrichtung": {
+      "terms": [
+        "ladepunkt",
+        "wallbox",
+        "hpc-charger"
+      ],
+      "documents": []
+    },
+    "ladehub": {
+      "terms": [
+        "ladepark",
+        "megawatt-charging-system",
+        "depotladen"
+      ],
+      "documents": []
+    },
+    "ladeinfrastruktur": {
+      "terms": [
+        "ladepunkt",
+        "ladepark",
+        "ac-laden",
+        "dc-laden",
+        "hpc-charger",
+        "ladesaeule",
+        "ladepunktbetreiber"
+      ],
+      "documents": []
+    },
+    "ladeleistung": {
+      "terms": [
+        "anschlussleistung",
+        "c-rate",
+        "hpc-charger",
+        "state-of-charge",
+        "on-board-charger"
+      ],
+      "documents": []
+    },
+    "ladepark": {
+      "terms": [
+        "hpc-charger",
+        "pufferspeicher-ladepark",
+        "ladepark-mittelspannungsanschluss",
+        "thermal-runaway",
+        "ladeinfrastruktur",
+        "ladehub",
+        "trafostation"
+      ],
+      "documents": []
+    },
+    "ladepark-mittelspannungsanschluss": {
+      "terms": [
+        "ladepark",
+        "mittelspannung",
+        "trafostation",
+        "hpc-charger",
+        "netzanschlussleistung"
+      ],
+      "documents": []
+    },
+    "ladepunkt": {
+      "terms": [
+        "ladeinfrastruktur",
+        "ladesaeule",
+        "ladeeinrichtung"
+      ],
+      "documents": []
+    },
+    "ladepunktbetreiber": {
+      "terms": [
+        "ladeinfrastruktur",
+        "backend-ladeinfrastruktur",
+        "eichrecht-ladeinfrastruktur",
+        "roaming-ladeinfrastruktur",
+        "elektromobilitaetsdienstleister",
+        "ocpp"
+      ],
+      "documents": []
+    },
+    "ladesaeule": {
+      "terms": [
+        "ladepunkt",
+        "ladeinfrastruktur"
+      ],
+      "documents": []
+    },
     "langzeitspeicher": {
       "terms": [
         "dunkelflaute",
@@ -3152,14 +3652,17 @@
       "terms": [
         "lastmanagement",
         "residuallast",
-        "spitzenlast"
+        "spitzenlast",
+        "rlm-messung",
+        "standardlastprofil"
       ],
       "documents": []
     },
     "lastmanagement": {
       "terms": [
         "demand-response",
-        "lastgang"
+        "lastgang",
+        "dynamisches-lastmanagement"
       ],
       "documents": []
     },
@@ -3205,7 +3708,8 @@
         "product-environmental-footprint",
         "scope-3",
         "thg-emissions-scopes",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "windenergieanlage-lebenszyklus"
       ],
       "documents": [],
       "journalArticles": [
@@ -3228,6 +3732,29 @@
       ],
       "documents": []
     },
+    "leistungsdichte": {
+      "terms": [
+        "energiedichte",
+        "superkondensator",
+        "hpc-charger"
+      ],
+      "documents": []
+    },
+    "leistungsfaktor": {
+      "terms": [
+        "blindleistung",
+        "spannungsqualitaet"
+      ],
+      "documents": []
+    },
+    "leistungspreis": {
+      "terms": [
+        "arbeitspreis",
+        "rlm-messung",
+        "gewerbespeicher"
+      ],
+      "documents": []
+    },
     "lernebenen": {
       "terms": [
         "unternehmerisches-lernen",
@@ -3245,6 +3772,13 @@
         "routineunternehmer",
         "lernebenen",
         "jochen-roepke"
+      ],
+      "documents": []
+    },
+    "lfp-batterie": {
+      "terms": [
+        "lithium-ionen-batterie",
+        "batterierecycling"
       ],
       "documents": []
     },
@@ -3287,6 +3821,26 @@
         "kreislaufwirtschaft",
         "externalisierung",
         "abfallhierarchie"
+      ],
+      "documents": []
+    },
+    "lithium-ionen-batterie": {
+      "terms": [
+        "lfp-batterie",
+        "nmc-batterie",
+        "nca-batterie",
+        "batterierohstoffe",
+        "batterie",
+        "energiedichte",
+        "lithium-titanat-batterie",
+        "feststoffbatterie"
+      ],
+      "documents": []
+    },
+    "lithium-titanat-batterie": {
+      "terms": [
+        "lithium-ionen-batterie",
+        "zyklenfestigkeit"
       ],
       "documents": []
     },
@@ -3433,7 +3987,16 @@
         "technischer-kreislauf",
         "technischer-naehrstoff",
         "urban-mining",
-        "industrielle-dekonstruktion"
+        "industrielle-dekonstruktion",
+        "anlagenpass"
+      ],
+      "documents": []
+    },
+    "megawatt-charging-system": {
+      "terms": [
+        "depotladen",
+        "ladehub",
+        "mittelspannung"
       ],
       "documents": []
     },
@@ -3493,6 +4056,20 @@
       ],
       "documents": []
     },
+    "messwandler": {
+      "terms": [
+        "messwandlerschrank",
+        "wandlermessung"
+      ],
+      "documents": []
+    },
+    "messwandlerschrank": {
+      "terms": [
+        "messwandler",
+        "wandlermessung"
+      ],
+      "documents": []
+    },
     "meta-kognitive-intervention": {
       "terms": [
         "beobachtung-zweiter-ordnung",
@@ -3539,6 +4116,29 @@
       ],
       "documents": []
     },
+    "mittelspannung": {
+      "terms": [
+        "niederspannung",
+        "hochspannung",
+        "trafostation",
+        "ladepark-mittelspannungsanschluss",
+        "hpc-charger",
+        "megawatt-charging-system",
+        "umspannwerk",
+        "umspannstation",
+        "uebergabestation",
+        "mittelspannungsschaltanlage",
+        "tar-mittelspannung"
+      ],
+      "documents": []
+    },
+    "mittelspannungsschaltanlage": {
+      "terms": [
+        "mittelspannung",
+        "schutztechnik"
+      ],
+      "documents": []
+    },
     "mobilitaetsarmut": {
       "terms": [
         "handlungsfaehigkeit",
@@ -3550,7 +4150,8 @@
     "modularitaet": {
       "terms": [
         "design-for-disassembly",
-        "nutzungsdauerverlaengerung"
+        "nutzungsdauerverlaengerung",
+        "batteriemodul"
       ],
       "documents": []
     },
@@ -3653,6 +4254,13 @@
         "/blog/wirkung-schlaegt-wahrheit.html"
       ]
     },
+    "natrium-ionen-batterie": {
+      "terms": [
+        "batterie",
+        "stationaerer-batteriespeicher"
+      ],
+      "documents": []
+    },
     "naturbasierte-loesungen": {
       "terms": [
         "hitzeschutz-hitzeaktionsplan",
@@ -3677,6 +4285,13 @@
         "habitatverlust",
         "ipbes",
         "oekosystemleistungen"
+      ],
+      "documents": []
+    },
+    "nca-batterie": {
+      "terms": [
+        "lithium-ionen-batterie",
+        "kritische-rohstoffe"
       ],
       "documents": []
     },
@@ -3757,6 +4372,33 @@
       ],
       "documents": []
     },
+    "netzanschlussbegehren": {
+      "terms": [
+        "netzanschlusspunkt",
+        "netzvertraeglichkeitspruefung"
+      ],
+      "documents": []
+    },
+    "netzanschlussleistung": {
+      "terms": [
+        "anschlussleistung",
+        "ladepark-mittelspannungsanschluss",
+        "pufferspeicher-ladepark",
+        "gleichzeitigkeit-ladeinfrastruktur",
+        "netzvertraeglichkeitspruefung",
+        "baukostenzuschuss"
+      ],
+      "documents": []
+    },
+    "netzanschlusspunkt": {
+      "terms": [
+        "netzanschlussbegehren",
+        "netzvertraeglichkeitspruefung",
+        "anschlusskosten",
+        "tab-mittelspannung"
+      ],
+      "documents": []
+    },
     "netzausbau": {
       "terms": [
         "stromnetz",
@@ -3771,7 +4413,8 @@
       "terms": [
         "demand-response",
         "flexibilitaet-energiesystem",
-        "netzentgeltsystematik"
+        "netzentgeltsystematik",
+        "netzspeicher"
       ],
       "documents": []
     },
@@ -3798,10 +4441,26 @@
       ],
       "documents": []
     },
+    "netzspeicher": {
+      "terms": [
+        "systemkosten",
+        "netzdienlichkeit",
+        "stationaerer-batteriespeicher"
+      ],
+      "documents": []
+    },
     "netzverlust": {
       "terms": [
         "stromnetz",
         "systemkosten"
+      ],
+      "documents": []
+    },
+    "netzvertraeglichkeitspruefung": {
+      "terms": [
+        "netzanschlussbegehren",
+        "netzanschlussleistung",
+        "netzanschlusspunkt"
       ],
       "documents": []
     },
@@ -3902,6 +4561,21 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "niederspannung": {
+      "terms": [
+        "mittelspannung",
+        "verteilnetz",
+        "niederspannungshauptverteilung"
+      ],
+      "documents": []
+    },
+    "niederspannungshauptverteilung": {
+      "terms": [
+        "niederspannung",
+        "kundenanlage"
+      ],
+      "documents": []
+    },
     "niklas-luhmann": {
       "terms": [
         "selbstreferenz",
@@ -3920,6 +4594,13 @@
       ],
       "documents": []
     },
+    "nmc-batterie": {
+      "terms": [
+        "lithium-ionen-batterie",
+        "kritische-rohstoffe"
+      ],
+      "documents": []
+    },
     "normalisierung": {
       "terms": [
         "baseline-verschiebung",
@@ -3935,6 +4616,13 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "normalladen": {
+      "terms": [
+        "ac-laden",
+        "smart-charging"
+      ],
+      "documents": []
     },
     "normativer-wert": {
       "terms": [
@@ -3977,6 +4665,19 @@
         "modularitaet",
         "geplante-obsoleszenz",
         "gebrauchsgueter"
+      ],
+      "documents": []
+    },
+    "oberschwingungen": {
+      "terms": [
+        "spannungsqualitaet"
+      ],
+      "documents": []
+    },
+    "ocpp": {
+      "terms": [
+        "backend-ladeinfrastruktur",
+        "ladepunktbetreiber"
       ],
       "documents": []
     },
@@ -4037,6 +4738,13 @@
     "oelkraftwerk": {
       "terms": [
         "fossiles-kraftwerk"
+      ],
+      "documents": []
+    },
+    "on-board-charger": {
+      "terms": [
+        "ac-laden",
+        "ladeleistung"
       ],
       "documents": []
     },
@@ -4282,6 +4990,13 @@
       ],
       "documents": []
     },
+    "plug-and-charge": {
+      "terms": [
+        "eichrecht-ladeinfrastruktur",
+        "backend-ladeinfrastruktur"
+      ],
+      "documents": []
+    },
     "positive-netto-wirkung": {
       "terms": [
         "wirkung",
@@ -4355,6 +5070,14 @@
       "terms": [
         "gruenstrom",
         "herkunftsnachweis"
+      ],
+      "documents": []
+    },
+    "spannungsqualitaet": {
+      "terms": [
+        "oberschwingungen",
+        "technische-anschlussregel",
+        "leistungsfaktor"
       ],
       "documents": []
     },
@@ -4492,7 +5215,8 @@
       "terms": [
         "photovoltaik",
         "netzentgelt",
-        "verteilnetz"
+        "verteilnetz",
+        "heimspeicher"
       ],
       "documents": []
     },
@@ -4509,10 +5233,25 @@
       ],
       "documents": []
     },
+    "pufferspeicher-ladepark": {
+      "terms": [
+        "ladepark",
+        "hpc-charger",
+        "netzanschlussleistung"
+      ],
+      "documents": []
+    },
     "pumpspeicher": {
       "terms": [
         "speicher-energie",
         "langzeitspeicher"
+      ],
+      "documents": []
+    },
+    "pyrometallurgie": {
+      "terms": [
+        "batterierecycling",
+        "hydrometallurgie"
       ],
       "documents": []
     },
@@ -4667,7 +5406,16 @@
         "kreislaufwirtschaft",
         "technischer-kreislauf",
         "sekundaerrohstoff",
-        "abfallhierarchie"
+        "abfallhierarchie",
+        "zementverwertung-rotorblaetter"
+      ],
+      "documents": []
+    },
+    "recyclingeffizienz": {
+      "terms": [
+        "batterierecycling",
+        "rezyklatquote-batterie",
+        "recyclingquote"
       ],
       "documents": []
     },
@@ -4678,7 +5426,8 @@
         "espr",
         "zirkularitaet",
         "recycling",
-        "zirkularitaetsindikator"
+        "zirkularitaetsindikator",
+        "recyclingeffizienz"
       ],
       "documents": []
     },
@@ -4688,6 +5437,13 @@
         "abregelung",
         "systemkosten",
         "einspeisemanagement"
+      ],
+      "documents": []
+    },
+    "redox-flow-batterie": {
+      "terms": [
+        "stationaerer-batteriespeicher",
+        "speicher-energie"
       ],
       "documents": []
     },
@@ -4820,6 +5576,15 @@
       "journalArticles": [
         "/blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html"
       ]
+    },
+    "repowering": {
+      "terms": [
+        "windenergie",
+        "rueckbau-windenergieanlagen",
+        "rotorblatt-recycling",
+        "windrad-recycling"
+      ],
+      "documents": []
     },
     "reproduktive-arbeit": {
       "terms": [
@@ -5000,7 +5765,33 @@
         "material-footprint",
         "espr",
         "digitaler-produktpass",
-        "sekundaerrohstoff"
+        "sekundaerrohstoff",
+        "rezyklatquote-batterie"
+      ],
+      "documents": []
+    },
+    "rezyklatquote-batterie": {
+      "terms": [
+        "batterierecycling",
+        "rezyklatanteil",
+        "recyclingeffizienz"
+      ],
+      "documents": []
+    },
+    "rlm-messung": {
+      "terms": [
+        "lastgang",
+        "leistungspreis",
+        "wandlermessung",
+        "standardlastprofil"
+      ],
+      "documents": []
+    },
+    "roaming-ladeinfrastruktur": {
+      "terms": [
+        "ladepunktbetreiber",
+        "elektromobilitaetsdienstleister",
+        "ad-hoc-laden"
       ],
       "documents": []
     },
@@ -5010,7 +5801,19 @@
         "digitaler-produktpass",
         "human-rights-due-diligence",
         "material-footprint",
-        "produktdaten"
+        "produktdaten",
+        "kritische-rohstoffe"
+      ],
+      "documents": []
+    },
+    "rotorblatt-recycling": {
+      "terms": [
+        "faserverbundwerkstoff",
+        "glasfaserverstaerkter-kunststoff",
+        "carbonfaserverstaerkter-kunststoff",
+        "zementverwertung-rotorblaetter",
+        "windrad-recycling",
+        "repowering"
       ],
       "documents": []
     },
@@ -5019,6 +5822,28 @@
         "lernender-unternehmer",
         "arbitrageur",
         "innovativer-unternehmer"
+      ],
+      "documents": []
+    },
+    "rueckbau-windenergieanlagen": {
+      "terms": [
+        "windrad-recycling",
+        "rueckbauverpflichtung",
+        "repowering"
+      ],
+      "documents": []
+    },
+    "rueckbaustandard": {
+      "terms": [
+        "rueckbauverpflichtung",
+        "anlagenpass"
+      ],
+      "documents": []
+    },
+    "rueckbauverpflichtung": {
+      "terms": [
+        "rueckbau-windenergieanlagen",
+        "rueckbaustandard"
       ],
       "documents": []
     },
@@ -5154,12 +5979,26 @@
       ],
       "documents": []
     },
+    "schnellladen": {
+      "terms": [
+        "dc-laden",
+        "hpc-charger"
+      ],
+      "documents": []
+    },
     "schoepferische-zerstoerung": {
       "terms": [
         "kreative-rekonstruktion",
         "innovation",
         "positive-netto-wirkung",
         "joseph-schumpeter"
+      ],
+      "documents": []
+    },
+    "schutztechnik": {
+      "terms": [
+        "mittelspannungsschaltanlage",
+        "thermal-runaway"
       ],
       "documents": []
     },
@@ -5377,6 +6216,18 @@
         "/blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html"
       ]
     },
+    "second-life-batterie": {
+      "terms": [
+        "state-of-health",
+        "batteriepass",
+        "stationaerer-batteriespeicher",
+        "batterierecycling",
+        "batterie",
+        "batteriemanagementsystem",
+        "batterielebenszyklus"
+      ],
+      "documents": []
+    },
     "sektorkopplung": {
       "terms": [
         "waermepumpe",
@@ -5476,10 +6327,21 @@
       ],
       "documents": []
     },
+    "smart-charging": {
+      "terms": [
+        "dynamischer-stromtarif",
+        "dynamisches-lastmanagement",
+        "vehicle-to-grid",
+        "normalladen",
+        "energiemanagementsystem"
+      ],
+      "documents": []
+    },
     "smart-grid": {
       "terms": [
         "stromnetz",
-        "smart-meter"
+        "smart-meter",
+        "fernwirktechnik"
       ],
       "documents": []
     },
@@ -5588,7 +6450,10 @@
         "langzeitspeicher",
         "quantenbatterie",
         "systemkosten",
-        "flexibilitaet-energiesystem"
+        "flexibilitaet-energiesystem",
+        "batterie",
+        "redox-flow-batterie",
+        "superkondensator"
       ],
       "documents": []
     },
@@ -5662,6 +6527,43 @@
         "wirkungswert",
         "scorecard",
         "wirkungsempfaenger"
+      ],
+      "documents": []
+    },
+    "standardlastprofil": {
+      "terms": [
+        "rlm-messung",
+        "lastgang"
+      ],
+      "documents": []
+    },
+    "state-of-charge": {
+      "terms": [
+        "batteriemanagementsystem",
+        "ladeleistung"
+      ],
+      "documents": []
+    },
+    "state-of-health": {
+      "terms": [
+        "batteriepass",
+        "second-life-batterie",
+        "batteriealterung",
+        "batteriemanagementsystem",
+        "degradation-batterie"
+      ],
+      "documents": []
+    },
+    "stationaerer-batteriespeicher": {
+      "terms": [
+        "batteriespeicher",
+        "heimspeicher",
+        "gewerbespeicher",
+        "netzspeicher",
+        "natrium-ionen-batterie",
+        "redox-flow-batterie",
+        "second-life-batterie",
+        "energiemanagementsystem"
       ],
       "documents": []
     },
@@ -5761,7 +6663,8 @@
         "netzentgelt",
         "stromsteuer",
         "konzessionsabgabe",
-        "offshore-netzumlage"
+        "offshore-netzumlage",
+        "arbeitspreis"
       ],
       "documents": []
     },
@@ -5822,6 +6725,13 @@
         "/blog/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.html",
         "/blog/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.html"
       ]
+    },
+    "superkondensator": {
+      "terms": [
+        "leistungsdichte",
+        "speicher-energie"
+      ],
+      "documents": []
     },
     "supraleitung": {
       "terms": [
@@ -5917,7 +6827,8 @@
         "redispatch",
         "speicher-energie",
         "kernenergie",
-        "netzverlust"
+        "netzverlust",
+        "netzspeicher"
       ],
       "documents": []
     },
@@ -5951,6 +6862,14 @@
         "/blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html"
       ]
     },
+    "tab-mittelspannung": {
+      "terms": [
+        "tar-mittelspannung",
+        "netzanschlusspunkt",
+        "technische-anschlussregel"
+      ],
+      "documents": []
+    },
     "tandem-solarzelle": {
       "terms": [
         "photovoltaik",
@@ -5963,6 +6882,14 @@
         "well-to-tank",
         "well-to-wheel",
         "systemgrenze"
+      ],
+      "documents": []
+    },
+    "tar-mittelspannung": {
+      "terms": [
+        "technische-anschlussregel",
+        "mittelspannung",
+        "tab-mittelspannung"
       ],
       "documents": []
     },
@@ -6023,6 +6950,15 @@
       ],
       "documents": []
     },
+    "technische-anschlussregel": {
+      "terms": [
+        "tar-mittelspannung",
+        "tab-mittelspannung",
+        "spannungsqualitaet",
+        "fernwirktechnik"
+      ],
+      "documents": []
+    },
     "technische-bewertungskriterien": {
       "terms": [
         "eu-taxonomie",
@@ -6065,6 +7001,15 @@
       ],
       "documents": []
     },
+    "thermal-runaway": {
+      "terms": [
+        "batteriemanagementsystem",
+        "schutztechnik",
+        "ladepark",
+        "batteriepack"
+      ],
+      "documents": []
+    },
     "thermisches-kraftwerk": {
       "terms": [
         "fossiles-kraftwerk",
@@ -6102,6 +7047,16 @@
       ],
       "documents": []
     },
+    "trafostation": {
+      "terms": [
+        "transformator",
+        "mittelspannung",
+        "ladepark",
+        "umspannstation",
+        "ladepark-mittelspannungsanschluss"
+      ],
+      "documents": []
+    },
     "transformationswelle": {
       "terms": [
         "transformationswirkung",
@@ -6125,6 +7080,14 @@
         "pfadabhaengigkeit",
         "t-sroi",
         "verlustaversion"
+      ],
+      "documents": []
+    },
+    "transformator": {
+      "terms": [
+        "trafostation",
+        "umspannstation",
+        "umspannwerk"
       ],
       "documents": []
     },
@@ -6221,6 +7184,22 @@
         "/blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html"
       ]
     },
+    "typ-2-stecker": {
+      "terms": [
+        "ac-laden",
+        "wallbox",
+        "ccs-ladestecker"
+      ],
+      "documents": []
+    },
+    "uebergabestation": {
+      "terms": [
+        "kundenanlage",
+        "mittelspannung",
+        "wandlermessung"
+      ],
+      "documents": []
+    },
     "uebergangstaetigkeit": {
       "terms": [
         "eu-taxonomie",
@@ -6233,7 +7212,8 @@
     "uebertragungsnetz": {
       "terms": [
         "stromnetz",
-        "netzausbau"
+        "netzausbau",
+        "hoechstspannung"
       ],
       "documents": []
     },
@@ -6241,6 +7221,22 @@
       "terms": [
         "plattformkapitalismus",
         "vertrauen"
+      ],
+      "documents": []
+    },
+    "umspannstation": {
+      "terms": [
+        "trafostation",
+        "transformator",
+        "mittelspannung"
+      ],
+      "documents": []
+    },
+    "umspannwerk": {
+      "terms": [
+        "transformator",
+        "hochspannung",
+        "mittelspannung"
       ],
       "documents": []
     },
@@ -6294,7 +7290,15 @@
     "urban-mining": {
       "terms": [
         "materialpass",
-        "industrielle-dekonstruktion"
+        "industrielle-dekonstruktion",
+        "urban-mining-batterien"
+      ],
+      "documents": []
+    },
+    "urban-mining-batterien": {
+      "terms": [
+        "urban-mining",
+        "batterierecycling"
       ],
       "documents": []
     },
@@ -6330,7 +7334,22 @@
     "vehicle-to-grid": {
       "terms": [
         "elektromobilitaet",
-        "batteriespeicher"
+        "batteriespeicher",
+        "smart-charging",
+        "bidirektionales-laden"
+      ],
+      "documents": []
+    },
+    "vehicle-to-home": {
+      "terms": [
+        "bidirektionales-laden",
+        "heimspeicher"
+      ],
+      "documents": []
+    },
+    "vehicle-to-load": {
+      "terms": [
+        "bidirektionales-laden"
       ],
       "documents": []
     },
@@ -6404,7 +7423,8 @@
     "verteilnetz": {
       "terms": [
         "stromnetz",
-        "prosumer"
+        "prosumer",
+        "niederspannung"
       ],
       "documents": []
     },
@@ -6555,6 +7575,24 @@
       ],
       "documents": []
     },
+    "wallbox": {
+      "terms": [
+        "ac-laden",
+        "ladeeinrichtung",
+        "typ-2-stecker"
+      ],
+      "documents": []
+    },
+    "wandlermessung": {
+      "terms": [
+        "messwandler",
+        "rlm-messung",
+        "eichrecht-ladeinfrastruktur",
+        "uebergabestation",
+        "messwandlerschrank"
+      ],
+      "documents": []
+    },
     "warenfetisch": {
       "terms": [
         "digitaler-produktpass",
@@ -6695,7 +7733,8 @@
         "remanufacturing",
         "circular-economy-butterfly-model",
         "upcycling",
-        "kaskadennutzung"
+        "kaskadennutzung",
+        "direktrecycling-batterie"
       ],
       "documents": []
     },
@@ -6749,7 +7788,24 @@
         "onshore-windenergie",
         "offshore-windenergie",
         "erneuerbare-energien",
-        "capture-price"
+        "capture-price",
+        "repowering"
+      ],
+      "documents": []
+    },
+    "windenergieanlage-lebenszyklus": {
+      "terms": [
+        "windrad-recycling",
+        "lebenszyklusanalyse"
+      ],
+      "documents": []
+    },
+    "windrad-recycling": {
+      "terms": [
+        "rotorblatt-recycling",
+        "rueckbau-windenergieanlagen",
+        "repowering",
+        "windenergieanlage-lebenszyklus"
       ],
       "documents": []
     },
@@ -7775,6 +8831,13 @@
       ],
       "documents": []
     },
+    "zementverwertung-rotorblaetter": {
+      "terms": [
+        "rotorblatt-recycling",
+        "recycling"
+      ],
+      "documents": []
+    },
     "zentralverwaltungswirtschaft": {
       "terms": [
         "planwirtschaft",
@@ -7840,6 +8903,15 @@
         "/blog/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.html",
         "/blog/soziale-resilienz-gegen-verhetzung.html"
       ]
+    },
+    "zyklenfestigkeit": {
+      "terms": [
+        "batteriealterung",
+        "degradation-batterie",
+        "akkumulator",
+        "lithium-titanat-batterie"
+      ],
+      "documents": []
     }
   }
 }

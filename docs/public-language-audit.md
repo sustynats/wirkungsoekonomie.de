@@ -1,10 +1,10 @@
 # Public Language Audit
 
-Stand: 2026-05-29T18:42:32.229Z
+Stand: 2026-05-29T18:57:10.198Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 2040
+- Geprüfte HTML-Dateien: 2164
 - Sichtbare Blocklist-Treffer: 0
 - Technische canonical-Tags: 884
 

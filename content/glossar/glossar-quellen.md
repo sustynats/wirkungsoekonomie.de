@@ -160,6 +160,23 @@ Diese Datei bündelt Quellen fuer Glossarbegriffe. Externe Anschlussbegriffe wer
 - IEA Glossary / Demand Response, https://www.iea.org/glossary
 - IEA Electricity Market Design, https://www.iea.org/reports/electricity-market-design
 
+## Batterien / Ladeinfrastruktur / Netzanschluss
+
+- Bundesnetzagentur: Öffentliche Ladeinfrastruktur, https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html
+- NOW GmbH: Einfach laden am Depot, https://www.now-gmbh.de/wp-content/uploads/2023/11/Einfach-laden-am-Depot_Leitfaden.pdf
+- VDE: Technischer Leitfaden Ladeinfrastruktur Elektromobilität, https://www.vde.com/resource/blob/988408/87ed1f99814536d66c99797a4545ad5d/technischer-leitfaden-ladeinfrastruktur-elektromobilitaet---version-4-data.pdf
+- BDEW: Anwendungshilfe Netzanschluss von Ladesäulen in der Mittelspannung, https://www.bdew.de/energie/vnb-anwendungshilfe-ii-netzanschluss-ladesaeulen-mittelspannung/
+- VDE FNN: Technische Anschlussregel Mittelspannung VDE-AR-N 4110, https://www.vde.com/de/fnn/themen/tar/tar-mittelspannung-vde-ar-n-4110
+- SMARD: Netzebenen, https://www.smard.de/page/home/wiki-article/446/214010/netzebenen
+- Regulation (EU) 2023/1542 on batteries and waste batteries, https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng
+- European Commission: Batteries, https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en
+- VDE Infopapier zur Batterieverordnung, https://www.vde.com/resource/blob/2308300/0609b56a29220934a4276b673c76c176/download-infopapier-zur-batterieverordnung-data.pdf
+- Battery Pass Consortium, https://thebatterypass.eu/
+- Umweltbundesamt: Rotorblattaufbereitung und Recycling, https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen/rotorblattaufbereitung-recycling-von
+- Umweltbundesamt: Entwicklung von Rückbau- und Recyclingstandards für Rotorblätter, https://www.umweltbundesamt.de/publikationen/entwicklung-von-rueckbau-recyclingstandards-fuer
+- WindEurope: Circularity, https://windeurope.org/about-wind/circularity/
+- WindEurope: Where do wind turbine blades go when they are decommissioned?, https://windeurope.org/news/where-do-wind-turbine-blades-go-when-they-are-decommissioned/
+
 ## Design / Business
 
 - IDEO Design Thinking, https://designthinking.ideo.com/

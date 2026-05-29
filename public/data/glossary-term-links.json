@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T18:41:24.048Z",
+  "generatedAt": "2026-05-29T18:55:54.540Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -86,6 +86,40 @@
         "erneuerbare-energien",
         "netzengpass",
         "einspeisemanagement"
+      ]
+    },
+    "ac-laden": {
+      "label": "AC-Laden",
+      "slug": "ac-laden",
+      "url": "/begriffe/ac-laden/",
+      "hoverDefinition": "AC-Laden ist Laden mit Wechselstrom; die Umwandlung in Gleichstrom erfolgt im Fahrzeug über den On-Board-Charger.",
+      "shortDefinition": "AC-Laden ist Laden mit Wechselstrom; die Umwandlung in Gleichstrom erfolgt im Fahrzeug über den On-Board-Charger.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "AC-Laden",
+        "Wechselstromladen"
+      ],
+      "relatedTerms": [
+        "on-board-charger",
+        "typ-2-stecker",
+        "wallbox",
+        "ladeinfrastruktur",
+        "normalladen"
+      ]
+    },
+    "ad-hoc-laden": {
+      "label": "Ad-hoc-Laden",
+      "slug": "ad-hoc-laden",
+      "url": "/begriffe/ad-hoc-laden/",
+      "hoverDefinition": "Ad-hoc-Laden ermöglicht spontanes Laden ohne bestehenden Vertrag mit einem Elektromobilitätsdienstleister.",
+      "shortDefinition": "Ad-hoc-Laden ermöglicht spontanes Laden ohne bestehenden Vertrag mit einem Elektromobilitätsdienstleister.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ad-hoc-Laden"
+      ],
+      "relatedTerms": [
+        "roaming-ladeinfrastruktur",
+        "eichrecht-ladeinfrastruktur"
       ]
     },
     "adam-smith": {
@@ -176,6 +210,23 @@
         "kapital",
         "kapital-als-machtverhaeltnis",
         "kapitalwirkung"
+      ]
+    },
+    "akkumulator": {
+      "label": "Akkumulator / Akku",
+      "slug": "akkumulator",
+      "url": "/begriffe/akkumulator/",
+      "hoverDefinition": "Ein Akkumulator ist eine wiederaufladbare Batterie.",
+      "shortDefinition": "Ein Akkumulator ist eine wiederaufladbare Batterie.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Akkumulator / Akku",
+        "Akku",
+        "Akkumulator"
+      ],
+      "relatedTerms": [
+        "batterie",
+        "zyklenfestigkeit"
       ]
     },
     "alan-watts-daoismus": {
@@ -276,6 +327,22 @@
         "wirkstoff"
       ]
     },
+    "anlagenpass": {
+      "label": "Anlagenpass",
+      "slug": "anlagenpass",
+      "url": "/begriffe/anlagenpass/",
+      "hoverDefinition": "Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.",
+      "shortDefinition": "Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Anlagenpass"
+      ],
+      "relatedTerms": [
+        "materialpass",
+        "digitaler-produktpass",
+        "rueckbaustandard"
+      ]
+    },
     "anpassungskapazitaet": {
       "label": "Anpassungskapazität",
       "slug": "anpassungskapazitaet",
@@ -319,6 +386,53 @@
         "wirklichkeitskonstruktion",
         "wirkungsdaten",
         "zukunftsbild"
+      ]
+    },
+    "anschlusskosten": {
+      "label": "Anschlusskosten",
+      "slug": "anschlusskosten",
+      "url": "/begriffe/anschlusskosten/",
+      "hoverDefinition": "Anschlusskosten umfassen Kosten für Herstellung oder Verstärkung eines Netzanschlusses.",
+      "shortDefinition": "Anschlusskosten umfassen Kosten für Herstellung oder Verstärkung eines Netzanschlusses.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Anschlusskosten"
+      ],
+      "relatedTerms": [
+        "baukostenzuschuss",
+        "netzanschlusspunkt"
+      ]
+    },
+    "anschlussleistung": {
+      "label": "Anschlussleistung",
+      "slug": "anschlussleistung",
+      "url": "/begriffe/anschlussleistung/",
+      "hoverDefinition": "Anschlussleistung ist die maximale Leistung, die ein Netzanschluss bereitstellen oder aufnehmen kann.",
+      "shortDefinition": "Anschlussleistung ist die maximale Leistung, die ein Netzanschluss bereitstellen oder aufnehmen kann.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Anschlussleistung"
+      ],
+      "relatedTerms": [
+        "netzanschlussleistung",
+        "baukostenzuschuss",
+        "ladeleistung"
+      ]
+    },
+    "arbeitspreis": {
+      "label": "Arbeitspreis",
+      "slug": "arbeitspreis",
+      "url": "/begriffe/arbeitspreis/",
+      "hoverDefinition": "Der Arbeitspreis ist ein Preisbestandteil pro verbrauchter Energiemenge.",
+      "shortDefinition": "Der Arbeitspreis ist ein Preisbestandteil pro verbrauchter Energiemenge.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Arbeitspreis"
+      ],
+      "relatedTerms": [
+        "leistungspreis",
+        "strompreisbestandteile",
+        "eichrecht-ladeinfrastruktur"
       ]
     },
     "arbitrageur": {
@@ -445,6 +559,22 @@
         "maturana-varela"
       ]
     },
+    "backend-ladeinfrastruktur": {
+      "label": "Backend Ladeinfrastruktur",
+      "slug": "backend-ladeinfrastruktur",
+      "url": "/begriffe/backend-ladeinfrastruktur/",
+      "hoverDefinition": "Das Backend einer Ladeinfrastruktur verwaltet Ladepunkte, Nutzerzugang, Abrechnung, Monitoring und Schnittstellen.",
+      "shortDefinition": "Das Backend einer Ladeinfrastruktur verwaltet Ladepunkte, Nutzerzugang, Abrechnung, Monitoring und Schnittstellen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Backend Ladeinfrastruktur"
+      ],
+      "relatedTerms": [
+        "ocpp",
+        "ladepunktbetreiber",
+        "plug-and-charge"
+      ]
+    },
     "backup-kapazitaet": {
       "label": "Backup-Kapazität",
       "slug": "backup-kapazitaet",
@@ -516,6 +646,177 @@
         "nikolai-kondratieff"
       ]
     },
+    "batterie": {
+      "label": "Batterie",
+      "slug": "batterie",
+      "url": "/begriffe/batterie/",
+      "hoverDefinition": "Eine Batterie ist ein elektrochemischer Speicher, der elektrische Energie chemisch speichert und bei Bedarf wieder abgibt.",
+      "shortDefinition": "Eine Batterie ist ein elektrochemischer Speicher, der elektrische Energie chemisch speichert und bei Bedarf wieder abgibt.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batterie"
+      ],
+      "relatedTerms": [
+        "speicher-energie",
+        "lithium-ionen-batterie",
+        "natrium-ionen-batterie",
+        "feststoffbatterie",
+        "batterierecycling",
+        "second-life-batterie",
+        "batteriepass",
+        "akkumulator"
+      ]
+    },
+    "batteriealterung": {
+      "label": "Batteriealterung",
+      "slug": "batteriealterung",
+      "url": "/begriffe/batteriealterung/",
+      "hoverDefinition": "Batteriealterung beschreibt den Verlust von Kapazität, Leistung oder Sicherheit über Zeit und Nutzung.",
+      "shortDefinition": "Batteriealterung beschreibt den Verlust von Kapazität, Leistung oder Sicherheit über Zeit und Nutzung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batteriealterung"
+      ],
+      "relatedTerms": [
+        "state-of-health",
+        "degradation-batterie",
+        "c-rate",
+        "zyklenfestigkeit"
+      ]
+    },
+    "batterielebenszyklus": {
+      "label": "Batterielebenszyklus",
+      "slug": "batterielebenszyklus",
+      "url": "/begriffe/batterielebenszyklus/",
+      "hoverDefinition": "Der Batterielebenszyklus umfasst Rohstoffgewinnung, Herstellung, Nutzung, Alterung, Second Life, Recycling und Entsorgung.",
+      "shortDefinition": "Der Batterielebenszyklus umfasst Rohstoffgewinnung, Herstellung, Nutzung, Alterung, Second Life, Recycling und Entsorgung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batterielebenszyklus"
+      ],
+      "relatedTerms": [
+        "batteriepass",
+        "batterierecycling",
+        "second-life-batterie"
+      ]
+    },
+    "batteriemanagementsystem": {
+      "label": "Batteriemanagementsystem / BMS",
+      "slug": "batteriemanagementsystem",
+      "url": "/begriffe/batteriemanagementsystem/",
+      "hoverDefinition": "Ein Batteriemanagementsystem überwacht und steuert Batterieparameter wie Spannung, Temperatur, Ladezustand und Sicherheit.",
+      "shortDefinition": "Ein Batteriemanagementsystem überwacht und steuert Batterieparameter wie Spannung, Temperatur, Ladezustand und Sicherheit.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batteriemanagementsystem / BMS",
+        "BMS"
+      ],
+      "relatedTerms": [
+        "state-of-charge",
+        "state-of-health",
+        "batteriepass",
+        "second-life-batterie",
+        "batteriepack",
+        "thermal-runaway"
+      ]
+    },
+    "batteriemodul": {
+      "label": "Batteriemodul",
+      "slug": "batteriemodul",
+      "url": "/begriffe/batteriemodul/",
+      "hoverDefinition": "Ein Batteriemodul besteht aus mehreren zusammengeschalteten Batteriezellen.",
+      "shortDefinition": "Ein Batteriemodul besteht aus mehreren zusammengeschalteten Batteriezellen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batteriemodul"
+      ],
+      "relatedTerms": [
+        "batteriezelle",
+        "batteriepack",
+        "modularitaet"
+      ]
+    },
+    "batteriepack": {
+      "label": "Batteriepack",
+      "slug": "batteriepack",
+      "url": "/begriffe/batteriepack/",
+      "hoverDefinition": "Ein Batteriepack ist die vollständige Batterieeinheit aus Zellen, Modulen, Gehäuse, Kühlung, Elektronik und Batteriemanagementsystem.",
+      "shortDefinition": "Ein Batteriepack ist die vollständige Batterieeinheit aus Zellen, Modulen, Gehäuse, Kühlung, Elektronik und Batteriemanagementsystem.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batteriepack"
+      ],
+      "relatedTerms": [
+        "batteriemodul",
+        "batteriemanagementsystem",
+        "thermal-runaway",
+        "batteriezelle"
+      ]
+    },
+    "batteriepass": {
+      "label": "Batteriepass",
+      "slug": "batteriepass",
+      "url": "/begriffe/batteriepass/",
+      "hoverDefinition": "Ein Batteriepass ist ein digitaler Datensatz zu Herkunft, Zusammensetzung, CO2-Fußabdruck, Leistung, Nutzung, Sicherheit und Kreislauf einer Batterie.",
+      "shortDefinition": "Ein Batteriepass ist ein digitaler Datensatz zu Herkunft, Zusammensetzung, CO2-Fußabdruck, Leistung, Nutzung, Sicherheit und Kreislauf einer Batterie.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batteriepass"
+      ],
+      "relatedTerms": [
+        "digitaler-produktpass",
+        "batterielebenszyklus",
+        "state-of-health",
+        "batterierecycling",
+        "batterie",
+        "batteriemanagementsystem",
+        "second-life-batterie"
+      ]
+    },
+    "batterierecycling": {
+      "label": "Batterierecycling",
+      "slug": "batterierecycling",
+      "url": "/begriffe/batterierecycling/",
+      "hoverDefinition": "Batterierecycling beschreibt die Rückgewinnung von Materialien aus Altbatterien oder Produktionsausschuss.",
+      "shortDefinition": "Batterierecycling beschreibt die Rückgewinnung von Materialien aus Altbatterien oder Produktionsausschuss.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batterierecycling"
+      ],
+      "relatedTerms": [
+        "black-mass",
+        "pyrometallurgie",
+        "hydrometallurgie",
+        "direktrecycling-batterie",
+        "batteriepass",
+        "batterie",
+        "batterierohstoffe",
+        "lfp-batterie",
+        "blei-saeure-batterie",
+        "batterielebenszyklus",
+        "second-life-batterie",
+        "recyclingeffizienz",
+        "rezyklatquote-batterie",
+        "urban-mining-batterien"
+      ]
+    },
+    "batterierohstoffe": {
+      "label": "Batterierohstoffe",
+      "slug": "batterierohstoffe",
+      "url": "/begriffe/batterierohstoffe/",
+      "hoverDefinition": "Batterierohstoffe sind Materialien für Batterien, etwa Lithium, Nickel, Kobalt, Mangan, Eisen, Phosphat, Graphit, Natrium oder Aluminium.",
+      "shortDefinition": "Batterierohstoffe sind Materialien für Batterien, etwa Lithium, Nickel, Kobalt, Mangan, Eisen, Phosphat, Graphit, Natrium oder Aluminium.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batterierohstoffe"
+      ],
+      "relatedTerms": [
+        "kritische-rohstoffe",
+        "lithium-ionen-batterie",
+        "batterierecycling",
+        "batteriezelle"
+      ]
+    },
     "batteriespeicher": {
       "label": "Batteriespeicher",
       "slug": "batteriespeicher",
@@ -531,7 +832,40 @@
         "kurzzeitspeicher",
         "quantenbatterie",
         "vehicle-to-grid",
-        "elektromobilitaet"
+        "elektromobilitaet",
+        "stationaerer-batteriespeicher"
+      ]
+    },
+    "batteriezelle": {
+      "label": "Batteriezelle",
+      "slug": "batteriezelle",
+      "url": "/begriffe/batteriezelle/",
+      "hoverDefinition": "Die Batteriezelle ist die kleinste elektrochemische Einheit einer Batterie.",
+      "shortDefinition": "Die Batteriezelle ist die kleinste elektrochemische Einheit einer Batterie.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Batteriezelle"
+      ],
+      "relatedTerms": [
+        "batteriemodul",
+        "batteriepack",
+        "batterierohstoffe"
+      ]
+    },
+    "baukostenzuschuss": {
+      "label": "Baukostenzuschuss",
+      "slug": "baukostenzuschuss",
+      "url": "/begriffe/baukostenzuschuss/",
+      "hoverDefinition": "Ein Baukostenzuschuss ist ein Beitrag zu Kosten, die durch Netzanschluss oder Netzausbau entstehen.",
+      "shortDefinition": "Ein Baukostenzuschuss ist ein Beitrag zu Kosten, die durch Netzanschluss oder Netzausbau entstehen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Baukostenzuschuss"
+      ],
+      "relatedTerms": [
+        "anschlusskosten",
+        "netzanschlussleistung",
+        "anschlussleistung"
       ]
     },
     "bedeutung-als-gebrauch": {
@@ -720,6 +1054,22 @@
         "meta-kognitive-intervention"
       ]
     },
+    "bidirektionales-laden": {
+      "label": "Bidirektionales Laden",
+      "slug": "bidirektionales-laden",
+      "url": "/begriffe/bidirektionales-laden/",
+      "hoverDefinition": "Bidirektionales Laden ermöglicht, dass ein Fahrzeug nicht nur Strom aufnimmt, sondern auch zurückspeisen oder lokal bereitstellen kann.",
+      "shortDefinition": "Bidirektionales Laden ermöglicht, dass ein Fahrzeug nicht nur Strom aufnimmt, sondern auch zurückspeisen oder lokal bereitstellen kann.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Bidirektionales Laden"
+      ],
+      "relatedTerms": [
+        "vehicle-to-grid",
+        "vehicle-to-home",
+        "vehicle-to-load"
+      ]
+    },
     "bilanzraum": {
       "label": "Bilanzraum",
       "slug": "bilanzraum",
@@ -874,6 +1224,21 @@
         "verbrauchsgueter"
       ]
     },
+    "black-mass": {
+      "label": "Black Mass",
+      "slug": "black-mass",
+      "url": "/begriffe/black-mass/",
+      "hoverDefinition": "Black Mass ist ein Zwischenprodukt des Batterierecyclings mit aktiven Materialien wie Lithium, Nickel, Kobalt, Mangan oder Graphit.",
+      "shortDefinition": "Black Mass ist ein Zwischenprodukt des Batterierecyclings mit aktiven Materialien wie Lithium, Nickel, Kobalt, Mangan oder Graphit.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Black Mass"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "kritische-rohstoffe"
+      ]
+    },
     "blauer-wasserstoff": {
       "label": "Blauer Wasserstoff",
       "slug": "blauer-wasserstoff",
@@ -886,6 +1251,21 @@
       ],
       "relatedTerms": [
         "wasserstoff"
+      ]
+    },
+    "blei-saeure-batterie": {
+      "label": "Blei-Säure-Batterie",
+      "slug": "blei-saeure-batterie",
+      "url": "/begriffe/blei-saeure-batterie/",
+      "hoverDefinition": "Blei-Säure-Batterien sind wiederaufladbare Batterien mit Blei und Schwefelsäure.",
+      "shortDefinition": "Blei-Säure-Batterien sind wiederaufladbare Batterien mit Blei und Schwefelsäure.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Blei-Säure-Batterie"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "kritische-rohstoffe"
       ]
     },
     "blindleistung": {
@@ -901,7 +1281,8 @@
       "relatedTerms": [
         "scheinleistung",
         "wirkleistung",
-        "verlustleistung"
+        "verlustleistung",
+        "leistungsfaktor"
       ]
     },
     "business-model": {
@@ -957,6 +1338,22 @@
         "product-market-fit"
       ]
     },
+    "c-rate": {
+      "label": "C-Rate",
+      "slug": "c-rate",
+      "url": "/begriffe/c-rate/",
+      "hoverDefinition": "Die C-Rate beschreibt, wie schnell eine Batterie im Verhältnis zu ihrer Kapazität geladen oder entladen wird.",
+      "shortDefinition": "Die C-Rate beschreibt, wie schnell eine Batterie im Verhältnis zu ihrer Kapazität geladen oder entladen wird.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "C-Rate",
+        "C Rate"
+      ],
+      "relatedTerms": [
+        "ladeleistung",
+        "batteriealterung"
+      ]
+    },
     "capture-price": {
       "label": "Capture Price / Marktwert von Strom",
       "slug": "capture-price",
@@ -1010,6 +1407,22 @@
         "residual-emissions"
       ]
     },
+    "carbonfaserverstaerkter-kunststoff": {
+      "label": "Carbonfaserverstärkter Kunststoff / CFK",
+      "slug": "carbonfaserverstaerkter-kunststoff",
+      "url": "/begriffe/carbonfaserverstaerkter-kunststoff/",
+      "hoverDefinition": "CFK ist ein Faserverbundwerkstoff aus Carbonfasern und Kunststoffmatrix.",
+      "shortDefinition": "CFK ist ein Faserverbundwerkstoff aus Carbonfasern und Kunststoffmatrix.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Carbonfaserverstärkter Kunststoff / CFK",
+        "CFK"
+      ],
+      "relatedTerms": [
+        "faserverbundwerkstoff",
+        "rotorblatt-recycling"
+      ]
+    },
     "care-oekonomie": {
       "label": "Care-Ökonomie",
       "slug": "care-oekonomie",
@@ -1050,6 +1463,38 @@
         "wirkungssteuer",
         "clean-industrial-deal",
         "european-green-deal"
+      ]
+    },
+    "ccs-ladestecker": {
+      "label": "CCS",
+      "slug": "ccs-ladestecker",
+      "url": "/begriffe/ccs-ladestecker/",
+      "hoverDefinition": "CCS ist ein Ladesteckersystem für AC- und DC-Laden, in Europa insbesondere als Combo 2 für DC-Schnellladen verbreitet.",
+      "shortDefinition": "CCS ist ein Ladesteckersystem für AC- und DC-Laden, in Europa insbesondere als Combo 2 für DC-Schnellladen verbreitet.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "CCS",
+        "Combined Charging System",
+        "Combo 2"
+      ],
+      "relatedTerms": [
+        "dc-laden",
+        "hpc-charger",
+        "typ-2-stecker"
+      ]
+    },
+    "chademo": {
+      "label": "CHAdeMO",
+      "slug": "chademo",
+      "url": "/begriffe/chademo/",
+      "hoverDefinition": "CHAdeMO ist ein DC-Ladestandard, der in Europa vor allem historisch relevant ist.",
+      "shortDefinition": "CHAdeMO ist ein DC-Ladestandard, der in Europa vor allem historisch relevant ist.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "CHAdeMO"
+      ],
+      "relatedTerms": [
+        "dc-laden"
       ]
     },
     "circular-economy-butterfly-model": {
@@ -1440,6 +1885,42 @@
         "scope-3-datenqualitaet"
       ]
     },
+    "dc-laden": {
+      "label": "DC-Laden",
+      "slug": "dc-laden",
+      "url": "/begriffe/dc-laden/",
+      "hoverDefinition": "DC-Laden ist Laden mit Gleichstrom; die Umwandlung erfolgt in der Ladeeinrichtung, sodass die Batterie direkt mit Gleichstrom geladen wird.",
+      "shortDefinition": "DC-Laden ist Laden mit Gleichstrom; die Umwandlung erfolgt in der Ladeeinrichtung, sodass die Batterie direkt mit Gleichstrom geladen wird.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "DC-Laden",
+        "Gleichstromladen"
+      ],
+      "relatedTerms": [
+        "hpc-charger",
+        "ccs-ladestecker",
+        "ladeinfrastruktur",
+        "schnellladen",
+        "chademo"
+      ]
+    },
+    "degradation-batterie": {
+      "label": "Degradation",
+      "slug": "degradation-batterie",
+      "url": "/begriffe/degradation-batterie/",
+      "hoverDefinition": "Degradation beschreibt die schrittweise Verschlechterung einer Batterie durch Alterung, Nutzung, Temperatur oder Ladeverhalten.",
+      "shortDefinition": "Degradation beschreibt die schrittweise Verschlechterung einer Batterie durch Alterung, Nutzung, Temperatur oder Ladeverhalten.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Degradation",
+        "Batteriedegradation"
+      ],
+      "relatedTerms": [
+        "batteriealterung",
+        "state-of-health",
+        "zyklenfestigkeit"
+      ]
+    },
     "demand-response": {
       "label": "Demand Response",
       "slug": "demand-response",
@@ -1471,6 +1952,22 @@
       "relatedTerms": [
         "sozialismus",
         "wirkungsrat"
+      ]
+    },
+    "depotladen": {
+      "label": "Depotladen",
+      "slug": "depotladen",
+      "url": "/begriffe/depotladen/",
+      "hoverDefinition": "Depotladen beschreibt das Laden von Fahrzeugflotten an Betriebshöfen oder Depots, etwa für Busse, Lkw, Lieferflotten oder kommunale Fahrzeuge.",
+      "shortDefinition": "Depotladen beschreibt das Laden von Fahrzeugflotten an Betriebshöfen oder Depots, etwa für Busse, Lkw, Lieferflotten oder kommunale Fahrzeuge.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Depotladen"
+      ],
+      "relatedTerms": [
+        "ladehub",
+        "megawatt-charging-system",
+        "dynamisches-lastmanagement"
       ]
     },
     "design-for-disassembly": {
@@ -1636,7 +2133,25 @@
         "warenfetisch",
         "kreislaufwirtschaft",
         "technischer-kreislauf",
-        "materialpass"
+        "materialpass",
+        "batteriepass",
+        "anlagenpass"
+      ]
+    },
+    "direktrecycling-batterie": {
+      "label": "Direktrecycling",
+      "slug": "direktrecycling-batterie",
+      "url": "/begriffe/direktrecycling-batterie/",
+      "hoverDefinition": "Direktrecycling versucht Batteriematerialien möglichst strukturerhaltend zurückzugewinnen, statt sie vollständig in Grundstoffe zu zerlegen.",
+      "shortDefinition": "Direktrecycling versucht Batteriematerialien möglichst strukturerhaltend zurückzugewinnen, statt sie vollständig in Grundstoffe zu zerlegen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Direktrecycling",
+        "Direktrecycling Batterie"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "werterhalt"
       ]
     },
     "dissonanzreduktion": {
@@ -1767,7 +2282,25 @@
       "relatedTerms": [
         "demand-response",
         "smart-meter",
-        "messstellenbetrieb"
+        "messstellenbetrieb",
+        "smart-charging"
+      ]
+    },
+    "dynamisches-lastmanagement": {
+      "label": "Dynamisches Lastmanagement",
+      "slug": "dynamisches-lastmanagement",
+      "url": "/begriffe/dynamisches-lastmanagement/",
+      "hoverDefinition": "Dynamisches Lastmanagement verteilt verfügbare Leistung flexibel auf mehrere Ladepunkte oder Verbraucher.",
+      "shortDefinition": "Dynamisches Lastmanagement verteilt verfügbare Leistung flexibel auf mehrere Ladepunkte oder Verbraucher.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Dynamisches Lastmanagement"
+      ],
+      "relatedTerms": [
+        "lastmanagement",
+        "gleichzeitigkeit-ladeinfrastruktur",
+        "smart-charging",
+        "depotladen"
       ]
     },
     "eeg": {
@@ -1857,6 +2390,24 @@
         "xbrl"
       ]
     },
+    "eichrecht-ladeinfrastruktur": {
+      "label": "Eichrecht Ladeinfrastruktur",
+      "slug": "eichrecht-ladeinfrastruktur",
+      "url": "/begriffe/eichrecht-ladeinfrastruktur/",
+      "hoverDefinition": "Eichrechtliche Anforderungen stellen sicher, dass geladene Energiemengen korrekt gemessen, abgerechnet und nachvollziehbar dargestellt werden.",
+      "shortDefinition": "Eichrechtliche Anforderungen stellen sicher, dass geladene Energiemengen korrekt gemessen, abgerechnet und nachvollziehbar dargestellt werden.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Eichrecht Ladeinfrastruktur"
+      ],
+      "relatedTerms": [
+        "wandlermessung",
+        "arbeitspreis",
+        "ladepunktbetreiber",
+        "ad-hoc-laden",
+        "plug-and-charge"
+      ]
+    },
     "einspeisemanagement": {
       "label": "Einspeisemanagement",
       "slug": "einspeisemanagement",
@@ -1901,6 +2452,23 @@
         "vehicle-to-grid",
         "batteriespeicher",
         "sektorkopplung"
+      ]
+    },
+    "elektromobilitaetsdienstleister": {
+      "label": "Elektromobilitätsdienstleister / EMP",
+      "slug": "elektromobilitaetsdienstleister",
+      "url": "/begriffe/elektromobilitaetsdienstleister/",
+      "hoverDefinition": "Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung für Ladeinfrastruktur an.",
+      "shortDefinition": "Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung für Ladeinfrastruktur an.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Elektromobilitätsdienstleister / EMP",
+        "EMP",
+        "E-Mobility Provider"
+      ],
+      "relatedTerms": [
+        "roaming-ladeinfrastruktur",
+        "ladepunktbetreiber"
       ]
     },
     "elinor-ostrom": {
@@ -2066,6 +2634,22 @@
         "warmmietenneutralitaet"
       ]
     },
+    "energiedichte": {
+      "label": "Energiedichte",
+      "slug": "energiedichte",
+      "url": "/begriffe/energiedichte/",
+      "hoverDefinition": "Energiedichte beschreibt, wie viel Energie pro Masse oder Volumen gespeichert werden kann.",
+      "shortDefinition": "Energiedichte beschreibt, wie viel Energie pro Masse oder Volumen gespeichert werden kann.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Energiedichte"
+      ],
+      "relatedTerms": [
+        "lithium-ionen-batterie",
+        "leistungsdichte",
+        "feststoffbatterie"
+      ]
+    },
     "energieeffizienz": {
       "label": "Energieeffizienz",
       "slug": "energieeffizienz",
@@ -2081,6 +2665,22 @@
         "rebound-effekt",
         "scope-2",
         "waermepumpe"
+      ]
+    },
+    "energiemanagementsystem": {
+      "label": "Energiemanagementsystem / EMS",
+      "slug": "energiemanagementsystem",
+      "url": "/begriffe/energiemanagementsystem/",
+      "hoverDefinition": "Ein Energiemanagementsystem steuert Erzeugung, Verbrauch, Speicher und Ladeprozesse.",
+      "shortDefinition": "Ein Energiemanagementsystem steuert Erzeugung, Verbrauch, Speicher und Ladeprozesse.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Energiemanagementsystem / EMS",
+        "EMS"
+      ],
+      "relatedTerms": [
+        "smart-charging",
+        "stationaerer-batteriespeicher"
       ]
     },
     "energieumwandlung": {
@@ -2763,6 +3363,22 @@
         "fakten"
       ]
     },
+    "faserverbundwerkstoff": {
+      "label": "Faserverbundwerkstoff",
+      "slug": "faserverbundwerkstoff",
+      "url": "/begriffe/faserverbundwerkstoff/",
+      "hoverDefinition": "Ein Faserverbundwerkstoff kombiniert Fasern mit einer Matrix, um hohe Festigkeit bei geringem Gewicht zu erreichen.",
+      "shortDefinition": "Ein Faserverbundwerkstoff kombiniert Fasern mit einer Matrix, um hohe Festigkeit bei geringem Gewicht zu erreichen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Faserverbundwerkstoff"
+      ],
+      "relatedTerms": [
+        "rotorblatt-recycling",
+        "glasfaserverstaerkter-kunststoff",
+        "carbonfaserverstaerkter-kunststoff"
+      ]
+    },
     "feministische-oekonomie": {
       "label": "Feministische Ökonomie",
       "slug": "feministische-oekonomie",
@@ -2778,6 +3394,39 @@
         "sorgearbeit",
         "reproduktive-arbeit",
         "patriarchat"
+      ]
+    },
+    "fernwirktechnik": {
+      "label": "Fernwirktechnik",
+      "slug": "fernwirktechnik",
+      "url": "/begriffe/fernwirktechnik/",
+      "hoverDefinition": "Fernwirktechnik ermöglicht die Überwachung, Steuerung oder Abschaltung von Anlagen aus der Ferne.",
+      "shortDefinition": "Fernwirktechnik ermöglicht die Überwachung, Steuerung oder Abschaltung von Anlagen aus der Ferne.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Fernwirktechnik"
+      ],
+      "relatedTerms": [
+        "smart-grid",
+        "technische-anschlussregel"
+      ]
+    },
+    "feststoffbatterie": {
+      "label": "Feststoffbatterie",
+      "slug": "feststoffbatterie",
+      "url": "/begriffe/feststoffbatterie/",
+      "hoverDefinition": "Feststoffbatterien nutzen einen festen Elektrolyten statt eines flüssigen oder gelartigen Elektrolyten.",
+      "shortDefinition": "Feststoffbatterien nutzen einen festen Elektrolyten statt eines flüssigen oder gelartigen Elektrolyten.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Feststoffbatterie",
+        "Solid-State Battery",
+        "Festkörperbatterie"
+      ],
+      "relatedTerms": [
+        "lithium-ionen-batterie",
+        "energiedichte",
+        "batterie"
       ]
     },
     "finalscore": {
@@ -3273,6 +3922,21 @@
         "hitzestress"
       ]
     },
+    "gewerbespeicher": {
+      "label": "Gewerbespeicher",
+      "slug": "gewerbespeicher",
+      "url": "/begriffe/gewerbespeicher/",
+      "hoverDefinition": "Ein Gewerbespeicher ist ein stationärer Speicher für Betriebe, Ladeinfrastruktur oder Quartiere.",
+      "shortDefinition": "Ein Gewerbespeicher ist ein stationärer Speicher für Betriebe, Ladeinfrastruktur oder Quartiere.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Gewerbespeicher"
+      ],
+      "relatedTerms": [
+        "stationaerer-batteriespeicher",
+        "leistungspreis"
+      ]
+    },
     "gewinn-als-test": {
       "label": "Gewinn als Test",
       "slug": "gewinn-als-test",
@@ -3328,6 +3992,38 @@
         "herkunftsnachweis-hkn",
         "hfcs-hydrofluorocarbons",
         "thg-emissions-scopes"
+      ]
+    },
+    "glasfaserverstaerkter-kunststoff": {
+      "label": "Glasfaserverstärkter Kunststoff / GFK",
+      "slug": "glasfaserverstaerkter-kunststoff",
+      "url": "/begriffe/glasfaserverstaerkter-kunststoff/",
+      "hoverDefinition": "GFK ist ein Faserverbundwerkstoff aus Glasfasern und Kunststoffmatrix.",
+      "shortDefinition": "GFK ist ein Faserverbundwerkstoff aus Glasfasern und Kunststoffmatrix.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Glasfaserverstärkter Kunststoff / GFK",
+        "GFK"
+      ],
+      "relatedTerms": [
+        "faserverbundwerkstoff",
+        "rotorblatt-recycling"
+      ]
+    },
+    "gleichzeitigkeit-ladeinfrastruktur": {
+      "label": "Gleichzeitigkeit",
+      "slug": "gleichzeitigkeit-ladeinfrastruktur",
+      "url": "/begriffe/gleichzeitigkeit-ladeinfrastruktur/",
+      "hoverDefinition": "Gleichzeitigkeit beschreibt, wie viele Ladepunkte oder Verbraucher gleichzeitig ihre maximale Leistung abrufen.",
+      "shortDefinition": "Gleichzeitigkeit beschreibt, wie viele Ladepunkte oder Verbraucher gleichzeitig ihre maximale Leistung abrufen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Gleichzeitigkeit",
+        "Gleichzeitigkeit Ladeinfrastruktur"
+      ],
+      "relatedTerms": [
+        "dynamisches-lastmanagement",
+        "netzanschlussleistung"
       ]
     },
     "global-warming-potential": {
@@ -3992,6 +4688,22 @@
         "positive-netto-wirkung"
       ]
     },
+    "heimspeicher": {
+      "label": "Heimspeicher",
+      "slug": "heimspeicher",
+      "url": "/begriffe/heimspeicher/",
+      "hoverDefinition": "Ein Heimspeicher ist ein Batteriespeicher in Wohngebäuden oder kleinen Prosumer-Anlagen.",
+      "shortDefinition": "Ein Heimspeicher ist ein Batteriespeicher in Wohngebäuden oder kleinen Prosumer-Anlagen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Heimspeicher"
+      ],
+      "relatedTerms": [
+        "prosumer",
+        "stationaerer-batteriespeicher",
+        "vehicle-to-home"
+      ]
+    },
     "heinz-von-foerster": {
       "label": "Heinz von Foerster",
       "slug": "heinz-von-foerster",
@@ -4157,6 +4869,37 @@
         "planetary-health"
       ]
     },
+    "hochspannung": {
+      "label": "Hochspannung",
+      "slug": "hochspannung",
+      "url": "/begriffe/hochspannung/",
+      "hoverDefinition": "Hochspannung ist eine höhere Spannungsebene für regionalen oder überregionalen Stromtransport.",
+      "shortDefinition": "Hochspannung ist eine höhere Spannungsebene für regionalen oder überregionalen Stromtransport.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Hochspannung"
+      ],
+      "relatedTerms": [
+        "mittelspannung",
+        "hoechstspannung",
+        "umspannwerk"
+      ]
+    },
+    "hoechstspannung": {
+      "label": "Höchstspannung",
+      "slug": "hoechstspannung",
+      "url": "/begriffe/hoechstspannung/",
+      "hoverDefinition": "Höchstspannung ist die höchste Spannungsebene im Stromnetz für weiträumigen Transport.",
+      "shortDefinition": "Höchstspannung ist die höchste Spannungsebene im Stromnetz für weiträumigen Transport.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Höchstspannung"
+      ],
+      "relatedTerms": [
+        "hochspannung",
+        "uebertragungsnetz"
+      ]
+    },
     "hochwasserrisiko": {
       "label": "Hochwasserrisiko",
       "slug": "hochwasserrisiko",
@@ -4221,6 +4964,34 @@
         "produktdaten",
         "wirkungsbewertung",
         "reverse-merit-order"
+      ]
+    },
+    "hpc-charger": {
+      "label": "HPC-Charger",
+      "slug": "hpc-charger",
+      "url": "/begriffe/hpc-charger/",
+      "hoverDefinition": "Ein HPC-Charger ist ein DC-Schnelllader mit hoher Ladeleistung, der kurze Ladezeiten ermöglichen soll.",
+      "shortDefinition": "Ein HPC-Charger ist ein DC-Schnelllader mit hoher Ladeleistung, der kurze Ladezeiten ermöglichen soll.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "HPC-Charger",
+        "High Power Charger",
+        "High-Power-Charging",
+        "HPC-Lader",
+        "Ultraschnelllader"
+      ],
+      "relatedTerms": [
+        "dc-laden",
+        "ladepark",
+        "mittelspannung",
+        "pufferspeicher-ladepark",
+        "leistungsdichte",
+        "ladeinfrastruktur",
+        "ladeeinrichtung",
+        "schnellladen",
+        "ccs-ladestecker",
+        "ladeleistung",
+        "ladepark-mittelspannungsanschluss"
       ]
     },
     "human-rights-due-diligence": {
@@ -4389,6 +5160,21 @@
         "biodiversitaetsrisiko",
         "naturbasierte-loesungen",
         "renaturierung"
+      ]
+    },
+    "hydrometallurgie": {
+      "label": "Hydrometallurgie",
+      "slug": "hydrometallurgie",
+      "url": "/begriffe/hydrometallurgie/",
+      "hoverDefinition": "Hydrometallurgie nutzt wässrige chemische Verfahren zur Rückgewinnung von Metallen.",
+      "shortDefinition": "Hydrometallurgie nutzt wässrige chemische Verfahren zur Rückgewinnung von Metallen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Hydrometallurgie"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "pyrometallurgie"
       ]
     },
     "identitaetsschutz": {
@@ -5690,6 +6476,40 @@
         "kreislaufwirkung"
       ]
     },
+    "kritische-rohstoffe": {
+      "label": "Kritische Rohstoffe",
+      "slug": "kritische-rohstoffe",
+      "url": "/begriffe/kritische-rohstoffe/",
+      "hoverDefinition": "Kritische Rohstoffe sind Rohstoffe mit hoher wirtschaftlicher Bedeutung und erhöhtem Versorgungsrisiko.",
+      "shortDefinition": "Kritische Rohstoffe sind Rohstoffe mit hoher wirtschaftlicher Bedeutung und erhöhtem Versorgungsrisiko.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Kritische Rohstoffe"
+      ],
+      "relatedTerms": [
+        "batterierohstoffe",
+        "rohstoffkritikalitaet",
+        "nmc-batterie",
+        "nca-batterie",
+        "blei-saeure-batterie",
+        "black-mass"
+      ]
+    },
+    "kundenanlage": {
+      "label": "Kundenanlage",
+      "slug": "kundenanlage",
+      "url": "/begriffe/kundenanlage/",
+      "hoverDefinition": "Eine Kundenanlage ist die elektrische Anlage hinter dem Netzanschlusspunkt im Verantwortungsbereich der Anschlussnehmer:innen.",
+      "shortDefinition": "Eine Kundenanlage ist die elektrische Anlage hinter dem Netzanschlusspunkt im Verantwortungsbereich der Anschlussnehmer:innen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Kundenanlage"
+      ],
+      "relatedTerms": [
+        "uebergabestation",
+        "niederspannungshauptverteilung"
+      ]
+    },
     "kundennutzen": {
       "label": "Kundennutzen",
       "slug": "kundennutzen",
@@ -5762,6 +6582,166 @@
         "heinz-von-foerster"
       ]
     },
+    "ladeeinrichtung": {
+      "label": "Ladeeinrichtung",
+      "slug": "ladeeinrichtung",
+      "url": "/begriffe/ladeeinrichtung/",
+      "hoverDefinition": "Eine Ladeeinrichtung steuert den Ladeprozess und überträgt elektrische Energie zwischen Stromnetz und Fahrzeug.",
+      "shortDefinition": "Eine Ladeeinrichtung steuert den Ladeprozess und überträgt elektrische Energie zwischen Stromnetz und Fahrzeug.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladeeinrichtung"
+      ],
+      "relatedTerms": [
+        "ladepunkt",
+        "wallbox",
+        "hpc-charger"
+      ]
+    },
+    "ladehub": {
+      "label": "Ladehub",
+      "slug": "ladehub",
+      "url": "/begriffe/ladehub/",
+      "hoverDefinition": "Ein Ladehub ist ein größerer Ladeinfrastrukturstandort, häufig an Verkehrsknoten, Logistikstandorten oder Autobahnen.",
+      "shortDefinition": "Ein Ladehub ist ein größerer Ladeinfrastrukturstandort, häufig an Verkehrsknoten, Logistikstandorten oder Autobahnen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladehub"
+      ],
+      "relatedTerms": [
+        "ladepark",
+        "megawatt-charging-system",
+        "depotladen"
+      ]
+    },
+    "ladeinfrastruktur": {
+      "label": "Ladeinfrastruktur",
+      "slug": "ladeinfrastruktur",
+      "url": "/begriffe/ladeinfrastruktur/",
+      "hoverDefinition": "Ladeinfrastruktur umfasst alle technischen, baulichen, netzseitigen, digitalen und organisatorischen Komponenten zum Laden von Elektrofahrzeugen.",
+      "shortDefinition": "Ladeinfrastruktur umfasst alle technischen, baulichen, netzseitigen, digitalen und organisatorischen Komponenten zum Laden von Elektrofahrzeugen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladeinfrastruktur"
+      ],
+      "relatedTerms": [
+        "ladepunkt",
+        "ladepark",
+        "ac-laden",
+        "dc-laden",
+        "hpc-charger",
+        "ladesaeule",
+        "ladepunktbetreiber"
+      ]
+    },
+    "ladeleistung": {
+      "label": "Ladeleistung",
+      "slug": "ladeleistung",
+      "url": "/begriffe/ladeleistung/",
+      "hoverDefinition": "Ladeleistung beschreibt die elektrische Leistung, mit der ein Fahrzeug oder Speicher geladen wird.",
+      "shortDefinition": "Ladeleistung beschreibt die elektrische Leistung, mit der ein Fahrzeug oder Speicher geladen wird.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladeleistung"
+      ],
+      "relatedTerms": [
+        "anschlussleistung",
+        "c-rate",
+        "hpc-charger",
+        "state-of-charge",
+        "on-board-charger"
+      ]
+    },
+    "ladepark": {
+      "label": "Ladepark",
+      "slug": "ladepark",
+      "url": "/begriffe/ladepark/",
+      "hoverDefinition": "Ein Ladepark ist ein Standort mit mehreren Ladepunkten, häufig mit eigener Netzanschlussleistung, Lastmanagement, Trafo, Abrechnung und ggf. Pufferspeicher.",
+      "shortDefinition": "Ein Ladepark ist ein Standort mit mehreren Ladepunkten, häufig mit eigener Netzanschlussleistung, Lastmanagement, Trafo, Abrechnung und ggf. Pufferspeicher.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladepark"
+      ],
+      "relatedTerms": [
+        "hpc-charger",
+        "pufferspeicher-ladepark",
+        "ladepark-mittelspannungsanschluss",
+        "thermal-runaway",
+        "ladeinfrastruktur",
+        "ladehub",
+        "trafostation"
+      ]
+    },
+    "ladepark-mittelspannungsanschluss": {
+      "label": "Ladepark-Mittelspannungsanschluss",
+      "slug": "ladepark-mittelspannungsanschluss",
+      "url": "/begriffe/ladepark-mittelspannungsanschluss/",
+      "hoverDefinition": "Ein Ladepark-Mittelspannungsanschluss ist ein Netzanschlusskonzept für größere Ladeinfrastrukturstandorte mit hoher Summenleistung.",
+      "shortDefinition": "Ein Ladepark-Mittelspannungsanschluss ist ein Netzanschlusskonzept für größere Ladeinfrastrukturstandorte mit hoher Summenleistung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladepark-Mittelspannungsanschluss"
+      ],
+      "relatedTerms": [
+        "ladepark",
+        "mittelspannung",
+        "trafostation",
+        "hpc-charger",
+        "netzanschlussleistung"
+      ]
+    },
+    "ladepunkt": {
+      "label": "Ladepunkt",
+      "slug": "ladepunkt",
+      "url": "/begriffe/ladepunkt/",
+      "hoverDefinition": "Ein Ladepunkt ist eine Einrichtung, an der jeweils ein Elektrofahrzeug geladen werden kann.",
+      "shortDefinition": "Ein Ladepunkt ist eine Einrichtung, an der jeweils ein Elektrofahrzeug geladen werden kann.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladepunkt"
+      ],
+      "relatedTerms": [
+        "ladeinfrastruktur",
+        "ladesaeule",
+        "ladeeinrichtung"
+      ]
+    },
+    "ladepunktbetreiber": {
+      "label": "Ladepunktbetreiber / CPO",
+      "slug": "ladepunktbetreiber",
+      "url": "/begriffe/ladepunktbetreiber/",
+      "hoverDefinition": "Ein Ladepunktbetreiber betreibt Ladepunkte technisch und organisatorisch.",
+      "shortDefinition": "Ein Ladepunktbetreiber betreibt Ladepunkte technisch und organisatorisch.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladepunktbetreiber / CPO",
+        "CPO",
+        "Charge Point Operator"
+      ],
+      "relatedTerms": [
+        "ladeinfrastruktur",
+        "backend-ladeinfrastruktur",
+        "eichrecht-ladeinfrastruktur",
+        "roaming-ladeinfrastruktur",
+        "elektromobilitaetsdienstleister",
+        "ocpp"
+      ]
+    },
+    "ladesaeule": {
+      "label": "Ladesäule",
+      "slug": "ladesaeule",
+      "url": "/begriffe/ladesaeule/",
+      "hoverDefinition": "Eine Ladesäule ist eine öffentlich oder privat zugängliche Ladeeinrichtung für Elektrofahrzeuge.",
+      "shortDefinition": "Eine Ladesäule ist eine öffentlich oder privat zugängliche Ladeeinrichtung für Elektrofahrzeuge.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Ladesäule"
+      ],
+      "relatedTerms": [
+        "ladepunkt",
+        "ladeinfrastruktur"
+      ]
+    },
     "langzeitspeicher": {
       "label": "Langzeitspeicher",
       "slug": "langzeitspeicher",
@@ -5792,7 +6772,9 @@
       "relatedTerms": [
         "lastmanagement",
         "residuallast",
-        "spitzenlast"
+        "spitzenlast",
+        "rlm-messung",
+        "standardlastprofil"
       ]
     },
     "lastmanagement": {
@@ -5807,7 +6789,8 @@
       ],
       "relatedTerms": [
         "demand-response",
-        "lastgang"
+        "lastgang",
+        "dynamisches-lastmanagement"
       ]
     },
     "lca": {
@@ -5880,7 +6863,8 @@
         "product-environmental-footprint",
         "scope-3",
         "thg-emissions-scopes",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "windenergieanlage-lebenszyklus"
       ]
     },
     "lebenszyklusinventar": {
@@ -5917,6 +6901,53 @@
         "scorecard"
       ]
     },
+    "leistungsdichte": {
+      "label": "Leistungsdichte",
+      "slug": "leistungsdichte",
+      "url": "/begriffe/leistungsdichte/",
+      "hoverDefinition": "Leistungsdichte beschreibt, wie viel Leistung pro Masse oder Volumen abgegeben oder aufgenommen werden kann.",
+      "shortDefinition": "Leistungsdichte beschreibt, wie viel Leistung pro Masse oder Volumen abgegeben oder aufgenommen werden kann.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Leistungsdichte"
+      ],
+      "relatedTerms": [
+        "energiedichte",
+        "superkondensator",
+        "hpc-charger"
+      ]
+    },
+    "leistungsfaktor": {
+      "label": "Leistungsfaktor",
+      "slug": "leistungsfaktor",
+      "url": "/begriffe/leistungsfaktor/",
+      "hoverDefinition": "Der Leistungsfaktor beschreibt das Verhältnis von Wirkleistung zu Scheinleistung in elektrischen Anlagen.",
+      "shortDefinition": "Der Leistungsfaktor beschreibt das Verhältnis von Wirkleistung zu Scheinleistung in elektrischen Anlagen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Leistungsfaktor"
+      ],
+      "relatedTerms": [
+        "blindleistung",
+        "spannungsqualitaet"
+      ]
+    },
+    "leistungspreis": {
+      "label": "Leistungspreis",
+      "slug": "leistungspreis",
+      "url": "/begriffe/leistungspreis/",
+      "hoverDefinition": "Der Leistungspreis ist ein Preisbestandteil, der sich an der maximalen oder vorgehaltenen Leistung orientiert.",
+      "shortDefinition": "Der Leistungspreis ist ein Preisbestandteil, der sich an der maximalen oder vorgehaltenen Leistung orientiert.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Leistungspreis"
+      ],
+      "relatedTerms": [
+        "arbeitspreis",
+        "rlm-messung",
+        "gewerbespeicher"
+      ]
+    },
     "lernebenen": {
       "label": "Lernebenen",
       "slug": "lernebenen",
@@ -5951,6 +6982,23 @@
         "routineunternehmer",
         "lernebenen",
         "jochen-roepke"
+      ]
+    },
+    "lfp-batterie": {
+      "label": "LFP-Batterie",
+      "slug": "lfp-batterie",
+      "url": "/begriffe/lfp-batterie/",
+      "hoverDefinition": "LFP-Batterien sind Lithium-Ionen-Batterien mit Lithium-Eisenphosphat als Kathodenmaterial.",
+      "shortDefinition": "LFP-Batterien sind Lithium-Ionen-Batterien mit Lithium-Eisenphosphat als Kathodenmaterial.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "LFP-Batterie",
+        "Lithium-Eisenphosphat-Batterie",
+        "LiFePO4"
+      ],
+      "relatedTerms": [
+        "lithium-ionen-batterie",
+        "batterierecycling"
       ]
     },
     "liability-risk": {
@@ -6033,6 +7081,43 @@
         "kreislaufwirtschaft",
         "externalisierung",
         "abfallhierarchie"
+      ]
+    },
+    "lithium-ionen-batterie": {
+      "label": "Lithium-Ionen-Batterie",
+      "slug": "lithium-ionen-batterie",
+      "url": "/begriffe/lithium-ionen-batterie/",
+      "hoverDefinition": "Lithium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Lithium-Ionen zwischen den Elektroden wandern.",
+      "shortDefinition": "Lithium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Lithium-Ionen zwischen den Elektroden wandern.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Lithium-Ionen-Batterie"
+      ],
+      "relatedTerms": [
+        "lfp-batterie",
+        "nmc-batterie",
+        "nca-batterie",
+        "batterierohstoffe",
+        "batterie",
+        "energiedichte",
+        "lithium-titanat-batterie",
+        "feststoffbatterie"
+      ]
+    },
+    "lithium-titanat-batterie": {
+      "label": "Lithium-Titanat-Batterie / LTO",
+      "slug": "lithium-titanat-batterie",
+      "url": "/begriffe/lithium-titanat-batterie/",
+      "hoverDefinition": "Lithium-Titanat-Batterien nutzen Lithium-Titanat als Anodenmaterial.",
+      "shortDefinition": "Lithium-Titanat-Batterien nutzen Lithium-Titanat als Anodenmaterial.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Lithium-Titanat-Batterie / LTO",
+        "LTO"
+      ],
+      "relatedTerms": [
+        "lithium-ionen-batterie",
+        "zyklenfestigkeit"
       ]
     },
     "lksg": {
@@ -6284,7 +7369,25 @@
         "technischer-kreislauf",
         "technischer-naehrstoff",
         "urban-mining",
-        "industrielle-dekonstruktion"
+        "industrielle-dekonstruktion",
+        "anlagenpass"
+      ]
+    },
+    "megawatt-charging-system": {
+      "label": "Megawatt Charging System / MCS",
+      "slug": "megawatt-charging-system",
+      "url": "/begriffe/megawatt-charging-system/",
+      "hoverDefinition": "MCS ist ein Hochleistungsladestandard für schwere Nutzfahrzeuge mit sehr hoher Ladeleistung.",
+      "shortDefinition": "MCS ist ein Hochleistungsladestandard für schwere Nutzfahrzeuge mit sehr hoher Ladeleistung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Megawatt Charging System / MCS",
+        "MCS"
+      ],
+      "relatedTerms": [
+        "depotladen",
+        "ladehub",
+        "mittelspannung"
       ]
     },
     "mehrwert": {
@@ -6376,6 +7479,36 @@
         "dynamischer-stromtarif"
       ]
     },
+    "messwandler": {
+      "label": "Messwandler",
+      "slug": "messwandler",
+      "url": "/begriffe/messwandler/",
+      "hoverDefinition": "Messwandler wandeln hohe Ströme oder Spannungen in messbare, sichere Größen für Zähler, Schutz- und Messsysteme um.",
+      "shortDefinition": "Messwandler wandeln hohe Ströme oder Spannungen in messbare, sichere Größen für Zähler, Schutz- und Messsysteme um.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Messwandler"
+      ],
+      "relatedTerms": [
+        "messwandlerschrank",
+        "wandlermessung"
+      ]
+    },
+    "messwandlerschrank": {
+      "label": "Messwandlerschrank",
+      "slug": "messwandlerschrank",
+      "url": "/begriffe/messwandlerschrank/",
+      "hoverDefinition": "Ein Messwandlerschrank enthält Messwandler und zugehörige Messkomponenten für Anlagen mit höherer Leistung oder Mittelspannungsanschluss.",
+      "shortDefinition": "Ein Messwandlerschrank enthält Messwandler und zugehörige Messkomponenten für Anlagen mit höherer Leistung oder Mittelspannungsanschluss.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Messwandlerschrank"
+      ],
+      "relatedTerms": [
+        "messwandler",
+        "wandlermessung"
+      ]
+    },
     "meta-kognitive-intervention": {
       "label": "Meta-kognitive Intervention",
       "slug": "meta-kognitive-intervention",
@@ -6454,6 +7587,45 @@
         "regelenergie"
       ]
     },
+    "mittelspannung": {
+      "label": "Mittelspannung",
+      "slug": "mittelspannung",
+      "url": "/begriffe/mittelspannung/",
+      "hoverDefinition": "Mittelspannung ist eine regionale Verteilnetzebene zwischen Niederspannung und Hochspannung.",
+      "shortDefinition": "Mittelspannung ist eine regionale Verteilnetzebene zwischen Niederspannung und Hochspannung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Mittelspannung"
+      ],
+      "relatedTerms": [
+        "niederspannung",
+        "hochspannung",
+        "trafostation",
+        "ladepark-mittelspannungsanschluss",
+        "hpc-charger",
+        "megawatt-charging-system",
+        "umspannwerk",
+        "umspannstation",
+        "uebergabestation",
+        "mittelspannungsschaltanlage",
+        "tar-mittelspannung"
+      ]
+    },
+    "mittelspannungsschaltanlage": {
+      "label": "Mittelspannungsschaltanlage",
+      "slug": "mittelspannungsschaltanlage",
+      "url": "/begriffe/mittelspannungsschaltanlage/",
+      "hoverDefinition": "Eine Mittelspannungsschaltanlage schaltet, schützt und verteilt elektrische Energie auf Mittelspannungsebene.",
+      "shortDefinition": "Eine Mittelspannungsschaltanlage schaltet, schützt und verteilt elektrische Energie auf Mittelspannungsebene.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Mittelspannungsschaltanlage"
+      ],
+      "relatedTerms": [
+        "mittelspannung",
+        "schutztechnik"
+      ]
+    },
     "mobilitaetsarmut": {
       "label": "Mobilitätsarmut",
       "slug": "mobilitaetsarmut",
@@ -6487,7 +7659,8 @@
       ],
       "relatedTerms": [
         "design-for-disassembly",
-        "nutzungsdauerverlaengerung"
+        "nutzungsdauerverlaengerung",
+        "batteriemodul"
       ]
     },
     "momentanreserve": {
@@ -6636,6 +7809,21 @@
         "gedaechtniskonsolidierung"
       ]
     },
+    "natrium-ionen-batterie": {
+      "label": "Natrium-Ionen-Batterie",
+      "slug": "natrium-ionen-batterie",
+      "url": "/begriffe/natrium-ionen-batterie/",
+      "hoverDefinition": "Natrium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Natrium-Ionen als Ladungsträger genutzt werden.",
+      "shortDefinition": "Natrium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Natrium-Ionen als Ladungsträger genutzt werden.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Natrium-Ionen-Batterie"
+      ],
+      "relatedTerms": [
+        "batterie",
+        "stationaerer-batteriespeicher"
+      ]
+    },
     "naturbasierte-loesungen": {
       "label": "Naturbasierte Lösungen",
       "slug": "naturbasierte-loesungen",
@@ -6693,6 +7881,22 @@
         "habitatverlust",
         "ipbes",
         "oekosystemleistungen"
+      ]
+    },
+    "nca-batterie": {
+      "label": "NCA-Batterie",
+      "slug": "nca-batterie",
+      "url": "/begriffe/nca-batterie/",
+      "hoverDefinition": "NCA-Batterien sind Lithium-Ionen-Batterien mit Nickel, Cobalt und Aluminium in der Kathode.",
+      "shortDefinition": "NCA-Batterien sind Lithium-Ionen-Batterien mit Nickel, Cobalt und Aluminium in der Kathode.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "NCA-Batterie",
+        "Nickel-Cobalt-Aluminium-Batterie"
+      ],
+      "relatedTerms": [
+        "lithium-ionen-batterie",
+        "kritische-rohstoffe"
       ]
     },
     "negative-wirkung": {
@@ -6824,6 +8028,57 @@
         "netzausbau"
       ]
     },
+    "netzanschlussbegehren": {
+      "label": "Netzanschlussbegehren",
+      "slug": "netzanschlussbegehren",
+      "url": "/begriffe/netzanschlussbegehren/",
+      "hoverDefinition": "Ein Netzanschlussbegehren ist die Anfrage an den Netzbetreiber, eine Anlage an das Netz anzuschließen.",
+      "shortDefinition": "Ein Netzanschlussbegehren ist die Anfrage an den Netzbetreiber, eine Anlage an das Netz anzuschließen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Netzanschlussbegehren"
+      ],
+      "relatedTerms": [
+        "netzanschlusspunkt",
+        "netzvertraeglichkeitspruefung"
+      ]
+    },
+    "netzanschlussleistung": {
+      "label": "Netzanschlussleistung",
+      "slug": "netzanschlussleistung",
+      "url": "/begriffe/netzanschlussleistung/",
+      "hoverDefinition": "Netzanschlussleistung beschreibt die am Netzanschluss vereinbarte oder verfügbare elektrische Leistung.",
+      "shortDefinition": "Netzanschlussleistung beschreibt die am Netzanschluss vereinbarte oder verfügbare elektrische Leistung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Netzanschlussleistung"
+      ],
+      "relatedTerms": [
+        "anschlussleistung",
+        "ladepark-mittelspannungsanschluss",
+        "pufferspeicher-ladepark",
+        "gleichzeitigkeit-ladeinfrastruktur",
+        "netzvertraeglichkeitspruefung",
+        "baukostenzuschuss"
+      ]
+    },
+    "netzanschlusspunkt": {
+      "label": "Netzanschlusspunkt",
+      "slug": "netzanschlusspunkt",
+      "url": "/begriffe/netzanschlusspunkt/",
+      "hoverDefinition": "Der Netzanschlusspunkt ist der Punkt, an dem eine Anlage mit dem Stromnetz verbunden wird.",
+      "shortDefinition": "Der Netzanschlusspunkt ist der Punkt, an dem eine Anlage mit dem Stromnetz verbunden wird.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Netzanschlusspunkt"
+      ],
+      "relatedTerms": [
+        "netzanschlussbegehren",
+        "netzvertraeglichkeitspruefung",
+        "anschlusskosten",
+        "tab-mittelspannung"
+      ]
+    },
     "netzausbau": {
       "label": "Netzausbau",
       "slug": "netzausbau",
@@ -6855,7 +8110,8 @@
       "relatedTerms": [
         "demand-response",
         "flexibilitaet-energiesystem",
-        "netzentgeltsystematik"
+        "netzentgeltsystematik",
+        "netzspeicher"
       ]
     },
     "netzengpass": {
@@ -6905,6 +8161,22 @@
         "netzdienlichkeit"
       ]
     },
+    "netzspeicher": {
+      "label": "Netzspeicher",
+      "slug": "netzspeicher",
+      "url": "/begriffe/netzspeicher/",
+      "hoverDefinition": "Ein Netzspeicher wird zur Stabilisierung, Entlastung oder Flexibilisierung des Stromsystems eingesetzt.",
+      "shortDefinition": "Ein Netzspeicher wird zur Stabilisierung, Entlastung oder Flexibilisierung des Stromsystems eingesetzt.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Netzspeicher"
+      ],
+      "relatedTerms": [
+        "systemkosten",
+        "netzdienlichkeit",
+        "stationaerer-batteriespeicher"
+      ]
+    },
     "netzverlust": {
       "label": "Netzverlust",
       "slug": "netzverlust",
@@ -6918,6 +8190,22 @@
       "relatedTerms": [
         "stromnetz",
         "systemkosten"
+      ]
+    },
+    "netzvertraeglichkeitspruefung": {
+      "label": "Netzverträglichkeitsprüfung",
+      "slug": "netzvertraeglichkeitspruefung",
+      "url": "/begriffe/netzvertraeglichkeitspruefung/",
+      "hoverDefinition": "Die Netzverträglichkeitsprüfung untersucht, ob eine geplante Anlage an einem bestimmten Netzpunkt angeschlossen werden kann, ohne Netzstabilität oder Betriebsmittel zu überlasten.",
+      "shortDefinition": "Die Netzverträglichkeitsprüfung untersucht, ob eine geplante Anlage an einem bestimmten Netzpunkt angeschlossen werden kann, ohne Netzstabilität oder Betriebsmittel zu überlasten.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Netzverträglichkeitsprüfung"
+      ],
+      "relatedTerms": [
+        "netzanschlussbegehren",
+        "netzanschlussleistung",
+        "netzanschlusspunkt"
       ]
     },
     "neuigkeitsbias": {
@@ -7087,6 +8375,38 @@
         "staatssozialismus"
       ]
     },
+    "niederspannung": {
+      "label": "Niederspannung",
+      "slug": "niederspannung",
+      "url": "/begriffe/niederspannung/",
+      "hoverDefinition": "Niederspannung ist die niedrigste Spannungsebene im Stromnetz und versorgt typischerweise Haushalte, kleinere Betriebe und kleinere Ladeeinrichtungen.",
+      "shortDefinition": "Niederspannung ist die niedrigste Spannungsebene im Stromnetz und versorgt typischerweise Haushalte, kleinere Betriebe und kleinere Ladeeinrichtungen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Niederspannung"
+      ],
+      "relatedTerms": [
+        "mittelspannung",
+        "verteilnetz",
+        "niederspannungshauptverteilung"
+      ]
+    },
+    "niederspannungshauptverteilung": {
+      "label": "Niederspannungshauptverteilung / NSHV",
+      "slug": "niederspannungshauptverteilung",
+      "url": "/begriffe/niederspannungshauptverteilung/",
+      "hoverDefinition": "Die Niederspannungshauptverteilung verteilt elektrische Energie innerhalb einer Kundenanlage auf Niederspannungsebene.",
+      "shortDefinition": "Die Niederspannungshauptverteilung verteilt elektrische Energie innerhalb einer Kundenanlage auf Niederspannungsebene.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Niederspannungshauptverteilung / NSHV",
+        "NSHV"
+      ],
+      "relatedTerms": [
+        "niederspannung",
+        "kundenanlage"
+      ]
+    },
     "niklas-luhmann": {
       "label": "Niklas Luhmann",
       "slug": "niklas-luhmann",
@@ -7122,6 +8442,22 @@
         "transformationswelle"
       ]
     },
+    "nmc-batterie": {
+      "label": "NMC-Batterie",
+      "slug": "nmc-batterie",
+      "url": "/begriffe/nmc-batterie/",
+      "hoverDefinition": "NMC-Batterien sind Lithium-Ionen-Batterien mit Nickel, Mangan und Kobalt in der Kathode.",
+      "shortDefinition": "NMC-Batterien sind Lithium-Ionen-Batterien mit Nickel, Mangan und Kobalt in der Kathode.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "NMC-Batterie",
+        "Nickel-Mangan-Cobalt-Batterie"
+      ],
+      "relatedTerms": [
+        "lithium-ionen-batterie",
+        "kritische-rohstoffe"
+      ]
+    },
     "normalisierung": {
       "label": "Normalisierung",
       "slug": "normalisierung",
@@ -7142,6 +8478,21 @@
         "soziale-bewaehrtheit",
         "gewoehnung",
         "vertrautheitseffekt"
+      ]
+    },
+    "normalladen": {
+      "label": "Normalladen",
+      "slug": "normalladen",
+      "url": "/begriffe/normalladen/",
+      "hoverDefinition": "Normalladen beschreibt Laden mit niedrigerer Ladeleistung über längere Standzeiten.",
+      "shortDefinition": "Normalladen beschreibt Laden mit niedrigerer Ladeleistung über längere Standzeiten.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Normalladen"
+      ],
+      "relatedTerms": [
+        "ac-laden",
+        "smart-charging"
       ]
     },
     "normativer-wert": {
@@ -7227,6 +8578,36 @@
         "modularitaet",
         "geplante-obsoleszenz",
         "gebrauchsgueter"
+      ]
+    },
+    "oberschwingungen": {
+      "label": "Oberschwingungen",
+      "slug": "oberschwingungen",
+      "url": "/begriffe/oberschwingungen/",
+      "hoverDefinition": "Oberschwingungen sind Frequenzanteile in elektrischen Netzen, die von der Grundfrequenz abweichen und Netzqualität beeinflussen können.",
+      "shortDefinition": "Oberschwingungen sind Frequenzanteile in elektrischen Netzen, die von der Grundfrequenz abweichen und Netzqualität beeinflussen können.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Oberschwingungen"
+      ],
+      "relatedTerms": [
+        "spannungsqualitaet"
+      ]
+    },
+    "ocpp": {
+      "label": "OCPP",
+      "slug": "ocpp",
+      "url": "/begriffe/ocpp/",
+      "hoverDefinition": "OCPP ist ein Kommunikationsprotokoll zwischen Ladepunkten und Backend-Systemen.",
+      "shortDefinition": "OCPP ist ein Kommunikationsprotokoll zwischen Ladepunkten und Backend-Systemen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "OCPP",
+        "Open Charge Point Protocol"
+      ],
+      "relatedTerms": [
+        "backend-ladeinfrastruktur",
+        "ladepunktbetreiber"
       ]
     },
     "oecd-leitsaetze": {
@@ -7358,6 +8739,21 @@
       ],
       "relatedTerms": [
         "fossiles-kraftwerk"
+      ]
+    },
+    "on-board-charger": {
+      "label": "On-Board-Charger",
+      "slug": "on-board-charger",
+      "url": "/begriffe/on-board-charger/",
+      "hoverDefinition": "Der On-Board-Charger ist das Ladegerät im Fahrzeug, das beim AC-Laden Wechselstrom in Gleichstrom umwandelt.",
+      "shortDefinition": "Der On-Board-Charger ist das Ladegerät im Fahrzeug, das beim AC-Laden Wechselstrom in Gleichstrom umwandelt.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "On-Board-Charger"
+      ],
+      "relatedTerms": [
+        "ac-laden",
+        "ladeleistung"
       ]
     },
     "one-health": {
@@ -7807,6 +9203,22 @@
         "belohnungslernen"
       ]
     },
+    "plug-and-charge": {
+      "label": "Plug & Charge",
+      "slug": "plug-and-charge",
+      "url": "/begriffe/plug-and-charge/",
+      "hoverDefinition": "Plug & Charge ermöglicht Authentifizierung und Abrechnung beim Laden ohne separate Karte oder App.",
+      "shortDefinition": "Plug & Charge ermöglicht Authentifizierung und Abrechnung beim Laden ohne separate Karte oder App.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Plug & Charge",
+        "Plug and Charge"
+      ],
+      "relatedTerms": [
+        "eichrecht-ladeinfrastruktur",
+        "backend-ladeinfrastruktur"
+      ]
+    },
     "positive-netto-wirkung": {
       "label": "positive Netto-Wirkung",
       "slug": "positive-netto-wirkung",
@@ -7899,6 +9311,23 @@
       "relatedTerms": [
         "gruenstrom",
         "herkunftsnachweis"
+      ]
+    },
+    "spannungsqualitaet": {
+      "label": "Power Quality / Spannungsqualität",
+      "slug": "spannungsqualitaet",
+      "url": "/begriffe/spannungsqualitaet/",
+      "hoverDefinition": "Spannungsqualität beschreibt die Einhaltung technischer Qualitätsmerkmale der elektrischen Spannung.",
+      "shortDefinition": "Spannungsqualität beschreibt die Einhaltung technischer Qualitätsmerkmale der elektrischen Spannung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Power Quality / Spannungsqualität",
+        "Power Quality"
+      ],
+      "relatedTerms": [
+        "oberschwingungen",
+        "technische-anschlussregel",
+        "leistungsfaktor"
       ]
     },
     "power-to-x": {
@@ -8163,7 +9592,8 @@
       "relatedTerms": [
         "photovoltaik",
         "netzentgelt",
-        "verteilnetz"
+        "verteilnetz",
+        "heimspeicher"
       ]
     },
     "prozessdenken": {
@@ -8187,6 +9617,22 @@
         "alan-watts-daoismus"
       ]
     },
+    "pufferspeicher-ladepark": {
+      "label": "Pufferspeicher im Ladepark",
+      "slug": "pufferspeicher-ladepark",
+      "url": "/begriffe/pufferspeicher-ladepark/",
+      "hoverDefinition": "Ein Pufferspeicher im Ladepark speichert Energie lokal, um Lastspitzen zu senken, Ladeleistung bereitzustellen oder Netzanschlussleistung zu begrenzen.",
+      "shortDefinition": "Ein Pufferspeicher im Ladepark speichert Energie lokal, um Lastspitzen zu senken, Ladeleistung bereitzustellen oder Netzanschlussleistung zu begrenzen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Pufferspeicher im Ladepark"
+      ],
+      "relatedTerms": [
+        "ladepark",
+        "hpc-charger",
+        "netzanschlussleistung"
+      ]
+    },
     "pumpspeicher": {
       "label": "Pumpspeicher",
       "slug": "pumpspeicher",
@@ -8200,6 +9646,21 @@
       "relatedTerms": [
         "speicher-energie",
         "langzeitspeicher"
+      ]
+    },
+    "pyrometallurgie": {
+      "label": "Pyrometallurgie",
+      "slug": "pyrometallurgie",
+      "url": "/begriffe/pyrometallurgie/",
+      "hoverDefinition": "Pyrometallurgie nutzt hohe Temperaturen zur Rückgewinnung von Metallen.",
+      "shortDefinition": "Pyrometallurgie nutzt hohe Temperaturen zur Rückgewinnung von Metallen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Pyrometallurgie"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "hydrometallurgie"
       ]
     },
     "qualitaetssicherung": {
@@ -8508,7 +9969,24 @@
         "kreislaufwirtschaft",
         "technischer-kreislauf",
         "sekundaerrohstoff",
-        "abfallhierarchie"
+        "abfallhierarchie",
+        "zementverwertung-rotorblaetter"
+      ]
+    },
+    "recyclingeffizienz": {
+      "label": "Recyclingeffizienz",
+      "slug": "recyclingeffizienz",
+      "url": "/begriffe/recyclingeffizienz/",
+      "hoverDefinition": "Recyclingeffizienz beschreibt, welcher Anteil eines Materials oder Wertstoffs im Recyclingprozess tatsächlich zurückgewonnen wird.",
+      "shortDefinition": "Recyclingeffizienz beschreibt, welcher Anteil eines Materials oder Wertstoffs im Recyclingprozess tatsächlich zurückgewonnen wird.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Recyclingeffizienz"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "rezyklatquote-batterie",
+        "recyclingquote"
       ]
     },
     "recyclingquote": {
@@ -8527,7 +10005,8 @@
         "espr",
         "zirkularitaet",
         "recycling",
-        "zirkularitaetsindikator"
+        "zirkularitaetsindikator",
+        "recyclingeffizienz"
       ]
     },
     "redispatch": {
@@ -8545,6 +10024,21 @@
         "abregelung",
         "systemkosten",
         "einspeisemanagement"
+      ]
+    },
+    "redox-flow-batterie": {
+      "label": "Redox-Flow-Batterie",
+      "slug": "redox-flow-batterie",
+      "url": "/begriffe/redox-flow-batterie/",
+      "hoverDefinition": "Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden.",
+      "shortDefinition": "Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Redox-Flow-Batterie"
+      ],
+      "relatedTerms": [
+        "stationaerer-batteriespeicher",
+        "speicher-energie"
       ]
     },
     "reframing": {
@@ -8791,6 +10285,23 @@
         "digitaler-produktpass",
         "produktdaten",
         "positive-netto-wirkung"
+      ]
+    },
+    "repowering": {
+      "label": "Repowering",
+      "slug": "repowering",
+      "url": "/begriffe/repowering/",
+      "hoverDefinition": "Repowering ersetzt ältere Energieanlagen durch leistungsfähigere neue Anlagen am gleichen oder ähnlichen Standort.",
+      "shortDefinition": "Repowering ersetzt ältere Energieanlagen durch leistungsfähigere neue Anlagen am gleichen oder ähnlichen Standort.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Repowering"
+      ],
+      "relatedTerms": [
+        "windenergie",
+        "rueckbau-windenergieanlagen",
+        "rotorblatt-recycling",
+        "windrad-recycling"
       ]
     },
     "reproduktive-arbeit": {
@@ -9103,7 +10614,58 @@
         "material-footprint",
         "espr",
         "digitaler-produktpass",
-        "sekundaerrohstoff"
+        "sekundaerrohstoff",
+        "rezyklatquote-batterie"
+      ]
+    },
+    "rezyklatquote-batterie": {
+      "label": "Rezyklatquote Batterie",
+      "slug": "rezyklatquote-batterie",
+      "url": "/begriffe/rezyklatquote-batterie/",
+      "hoverDefinition": "Die Rezyklatquote beschreibt den Anteil zurückgewonnener Materialien, der wieder in neuen Batterien eingesetzt wird.",
+      "shortDefinition": "Die Rezyklatquote beschreibt den Anteil zurückgewonnener Materialien, der wieder in neuen Batterien eingesetzt wird.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Rezyklatquote Batterie"
+      ],
+      "relatedTerms": [
+        "batterierecycling",
+        "rezyklatanteil",
+        "recyclingeffizienz"
+      ]
+    },
+    "rlm-messung": {
+      "label": "RLM-Messung",
+      "slug": "rlm-messung",
+      "url": "/begriffe/rlm-messung/",
+      "hoverDefinition": "RLM-Messung erfasst Lastgänge und Leistungswerte größerer Verbraucher oder Erzeuger zeitaufgelöst.",
+      "shortDefinition": "RLM-Messung erfasst Lastgänge und Leistungswerte größerer Verbraucher oder Erzeuger zeitaufgelöst.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "RLM-Messung",
+        "registrierende Leistungsmessung"
+      ],
+      "relatedTerms": [
+        "lastgang",
+        "leistungspreis",
+        "wandlermessung",
+        "standardlastprofil"
+      ]
+    },
+    "roaming-ladeinfrastruktur": {
+      "label": "Roaming Ladeinfrastruktur",
+      "slug": "roaming-ladeinfrastruktur",
+      "url": "/begriffe/roaming-ladeinfrastruktur/",
+      "hoverDefinition": "Roaming ermöglicht Nutzer:innen, Ladepunkte verschiedener Betreiber über gemeinsame Zugangs- und Abrechnungssysteme zu nutzen.",
+      "shortDefinition": "Roaming ermöglicht Nutzer:innen, Ladepunkte verschiedener Betreiber über gemeinsame Zugangs- und Abrechnungssysteme zu nutzen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Roaming Ladeinfrastruktur"
+      ],
+      "relatedTerms": [
+        "ladepunktbetreiber",
+        "elektromobilitaetsdienstleister",
+        "ad-hoc-laden"
       ]
     },
     "rohstoffkritikalitaet": {
@@ -9128,7 +10690,27 @@
         "digitaler-produktpass",
         "human-rights-due-diligence",
         "material-footprint",
-        "produktdaten"
+        "produktdaten",
+        "kritische-rohstoffe"
+      ]
+    },
+    "rotorblatt-recycling": {
+      "label": "Rotorblatt-Recycling",
+      "slug": "rotorblatt-recycling",
+      "url": "/begriffe/rotorblatt-recycling/",
+      "hoverDefinition": "Rotorblatt-Recycling beschreibt Verfahren zur Verwertung oder Rückgewinnung von Materialien aus Windturbinenblättern.",
+      "shortDefinition": "Rotorblatt-Recycling beschreibt Verfahren zur Verwertung oder Rückgewinnung von Materialien aus Windturbinenblättern.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Rotorblatt-Recycling"
+      ],
+      "relatedTerms": [
+        "faserverbundwerkstoff",
+        "glasfaserverstaerkter-kunststoff",
+        "carbonfaserverstaerkter-kunststoff",
+        "zementverwertung-rotorblaetter",
+        "windrad-recycling",
+        "repowering"
       ]
     },
     "routineunternehmer": {
@@ -9146,6 +10728,52 @@
         "lernender-unternehmer",
         "arbitrageur",
         "innovativer-unternehmer"
+      ]
+    },
+    "rueckbau-windenergieanlagen": {
+      "label": "Rückbau von Windenergieanlagen",
+      "slug": "rueckbau-windenergieanlagen",
+      "url": "/begriffe/rueckbau-windenergieanlagen/",
+      "hoverDefinition": "Rückbau von Windenergieanlagen beschreibt Demontage, Entsorgung, Wiederverwendung oder Recycling von Anlagenbestandteilen nach Nutzungsende.",
+      "shortDefinition": "Rückbau von Windenergieanlagen beschreibt Demontage, Entsorgung, Wiederverwendung oder Recycling von Anlagenbestandteilen nach Nutzungsende.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Rückbau von Windenergieanlagen"
+      ],
+      "relatedTerms": [
+        "windrad-recycling",
+        "rueckbauverpflichtung",
+        "repowering"
+      ]
+    },
+    "rueckbaustandard": {
+      "label": "Rückbaustandard",
+      "slug": "rueckbaustandard",
+      "url": "/begriffe/rueckbaustandard/",
+      "hoverDefinition": "Ein Rückbaustandard beschreibt Anforderungen an Demontage, Sortierung, Dokumentation, Wiederverwendung und Verwertung von Anlagen.",
+      "shortDefinition": "Ein Rückbaustandard beschreibt Anforderungen an Demontage, Sortierung, Dokumentation, Wiederverwendung und Verwertung von Anlagen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Rückbaustandard"
+      ],
+      "relatedTerms": [
+        "rueckbauverpflichtung",
+        "anlagenpass"
+      ]
+    },
+    "rueckbauverpflichtung": {
+      "label": "Rückbauverpflichtung",
+      "slug": "rueckbauverpflichtung",
+      "url": "/begriffe/rueckbauverpflichtung/",
+      "hoverDefinition": "Eine Rückbauverpflichtung verpflichtet Betreiber, Anlagen nach Nutzungsende zurückzubauen.",
+      "shortDefinition": "Eine Rückbauverpflichtung verpflichtet Betreiber, Anlagen nach Nutzungsende zurückzubauen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Rückbauverpflichtung"
+      ],
+      "relatedTerms": [
+        "rueckbau-windenergieanlagen",
+        "rueckbaustandard"
       ]
     },
     "rueckkopplung": {
@@ -9339,6 +10967,21 @@
         "wahrheit"
       ]
     },
+    "schnellladen": {
+      "label": "Schnellladen",
+      "slug": "schnellladen",
+      "url": "/begriffe/schnellladen/",
+      "hoverDefinition": "Schnellladen beschreibt Ladevorgänge mit hoher Ladeleistung und kürzeren Ladezeiten.",
+      "shortDefinition": "Schnellladen beschreibt Ladevorgänge mit hoher Ladeleistung und kürzeren Ladezeiten.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Schnellladen"
+      ],
+      "relatedTerms": [
+        "dc-laden",
+        "hpc-charger"
+      ]
+    },
     "schoepferische-zerstoerung": {
       "label": "Schöpferische Zerstörung",
       "slug": "schoepferische-zerstoerung",
@@ -9354,6 +10997,21 @@
         "innovation",
         "positive-netto-wirkung",
         "joseph-schumpeter"
+      ]
+    },
+    "schutztechnik": {
+      "label": "Schutztechnik",
+      "slug": "schutztechnik",
+      "url": "/begriffe/schutztechnik/",
+      "hoverDefinition": "Schutztechnik erkennt Fehlerzustände und trennt elektrische Anlagen sicher vom Netz.",
+      "shortDefinition": "Schutztechnik erkennt Fehlerzustände und trennt elektrische Anlagen sicher vom Netz.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Schutztechnik"
+      ],
+      "relatedTerms": [
+        "mittelspannungsschaltanlage",
+        "thermal-runaway"
       ]
     },
     "schwarzstartfaehigkeit": {
@@ -9669,6 +11327,28 @@
         "sechster-kondratieff"
       ]
     },
+    "second-life-batterie": {
+      "label": "Second-Life-Batterie",
+      "slug": "second-life-batterie",
+      "url": "/begriffe/second-life-batterie/",
+      "hoverDefinition": "Eine Second-Life-Batterie wird nach ihrer ersten Nutzung, etwa im Fahrzeug, in einer zweiten Anwendung weiterverwendet.",
+      "shortDefinition": "Eine Second-Life-Batterie wird nach ihrer ersten Nutzung, etwa im Fahrzeug, in einer zweiten Anwendung weiterverwendet.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Second-Life-Batterie",
+        "Second Life Batterie",
+        "Second Life"
+      ],
+      "relatedTerms": [
+        "state-of-health",
+        "batteriepass",
+        "stationaerer-batteriespeicher",
+        "batterierecycling",
+        "batterie",
+        "batteriemanagementsystem",
+        "batterielebenszyklus"
+      ]
+    },
     "sektorkopplung": {
       "label": "Sektorkopplung",
       "slug": "sektorkopplung",
@@ -9855,6 +11535,24 @@
         "daseinsvorsorge"
       ]
     },
+    "smart-charging": {
+      "label": "Smart Charging",
+      "slug": "smart-charging",
+      "url": "/begriffe/smart-charging/",
+      "hoverDefinition": "Smart Charging steuert Ladevorgänge zeitlich oder leistungsmäßig, um Kosten, Netzbelastung oder Emissionen zu reduzieren.",
+      "shortDefinition": "Smart Charging steuert Ladevorgänge zeitlich oder leistungsmäßig, um Kosten, Netzbelastung oder Emissionen zu reduzieren.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Smart Charging"
+      ],
+      "relatedTerms": [
+        "dynamischer-stromtarif",
+        "dynamisches-lastmanagement",
+        "vehicle-to-grid",
+        "normalladen",
+        "energiemanagementsystem"
+      ]
+    },
     "smart-grid": {
       "label": "Smart Grid",
       "slug": "smart-grid",
@@ -9867,7 +11565,8 @@
       ],
       "relatedTerms": [
         "stromnetz",
-        "smart-meter"
+        "smart-meter",
+        "fernwirktechnik"
       ]
     },
     "smart-meter": {
@@ -10062,7 +11761,10 @@
         "langzeitspeicher",
         "quantenbatterie",
         "systemkosten",
-        "flexibilitaet-energiesystem"
+        "flexibilitaet-energiesystem",
+        "batterie",
+        "redox-flow-batterie",
+        "superkondensator"
       ]
     },
     "spekulationslogik": {
@@ -10199,6 +11901,80 @@
         "wirkungswert",
         "scorecard",
         "wirkungsempfaenger"
+      ]
+    },
+    "standardlastprofil": {
+      "label": "Standardlastprofil / SLP",
+      "slug": "standardlastprofil",
+      "url": "/begriffe/standardlastprofil/",
+      "hoverDefinition": "Ein Standardlastprofil ist ein typisierter Verbrauchsverlauf für kleinere Verbraucher ohne registrierende Leistungsmessung.",
+      "shortDefinition": "Ein Standardlastprofil ist ein typisierter Verbrauchsverlauf für kleinere Verbraucher ohne registrierende Leistungsmessung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Standardlastprofil / SLP",
+        "SLP"
+      ],
+      "relatedTerms": [
+        "rlm-messung",
+        "lastgang"
+      ]
+    },
+    "state-of-charge": {
+      "label": "State of Charge / SOC",
+      "slug": "state-of-charge",
+      "url": "/begriffe/state-of-charge/",
+      "hoverDefinition": "State of Charge beschreibt den aktuellen Ladezustand einer Batterie.",
+      "shortDefinition": "State of Charge beschreibt den aktuellen Ladezustand einer Batterie.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "State of Charge / SOC",
+        "SOC",
+        "Ladezustand"
+      ],
+      "relatedTerms": [
+        "batteriemanagementsystem",
+        "ladeleistung"
+      ]
+    },
+    "state-of-health": {
+      "label": "State of Health / SOH",
+      "slug": "state-of-health",
+      "url": "/begriffe/state-of-health/",
+      "hoverDefinition": "State of Health beschreibt den Gesundheitszustand und die verbleibende Leistungsfähigkeit einer Batterie.",
+      "shortDefinition": "State of Health beschreibt den Gesundheitszustand und die verbleibende Leistungsfähigkeit einer Batterie.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "State of Health / SOH",
+        "SOH",
+        "Batteriegesundheit"
+      ],
+      "relatedTerms": [
+        "batteriepass",
+        "second-life-batterie",
+        "batteriealterung",
+        "batteriemanagementsystem",
+        "degradation-batterie"
+      ]
+    },
+    "stationaerer-batteriespeicher": {
+      "label": "Stationärer Batteriespeicher",
+      "slug": "stationaerer-batteriespeicher",
+      "url": "/begriffe/stationaerer-batteriespeicher/",
+      "hoverDefinition": "Ein stationärer Batteriespeicher speichert Strom an einem festen Standort, etwa in Haushalten, Ladeparks, Industrie, Quartieren oder Netzsystemen.",
+      "shortDefinition": "Ein stationärer Batteriespeicher speichert Strom an einem festen Standort, etwa in Haushalten, Ladeparks, Industrie, Quartieren oder Netzsystemen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Stationärer Batteriespeicher"
+      ],
+      "relatedTerms": [
+        "batteriespeicher",
+        "heimspeicher",
+        "gewerbespeicher",
+        "netzspeicher",
+        "natrium-ionen-batterie",
+        "redox-flow-batterie",
+        "second-life-batterie",
+        "energiemanagementsystem"
       ]
     },
     "status-quo-bias": {
@@ -10382,7 +12158,8 @@
         "netzentgelt",
         "stromsteuer",
         "konzessionsabgabe",
-        "offshore-netzumlage"
+        "offshore-netzumlage",
+        "arbeitspreis"
       ]
     },
     "stromsteuer": {
@@ -10486,6 +12263,21 @@
       ],
       "relatedTerms": [
         "positive-netto-wirkung"
+      ]
+    },
+    "superkondensator": {
+      "label": "Superkondensator",
+      "slug": "superkondensator",
+      "url": "/begriffe/superkondensator/",
+      "hoverDefinition": "Ein Superkondensator speichert Energie elektrostatisch und kann sehr schnell laden und entladen.",
+      "shortDefinition": "Ein Superkondensator speichert Energie elektrostatisch und kann sehr schnell laden und entladen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Superkondensator"
+      ],
+      "relatedTerms": [
+        "leistungsdichte",
+        "speicher-energie"
       ]
     },
     "supraleitung": {
@@ -10639,7 +12431,8 @@
         "redispatch",
         "speicher-energie",
         "kernenergie",
-        "netzverlust"
+        "netzverlust",
+        "netzspeicher"
       ]
     },
     "systemorientiertes-management": {
@@ -10684,6 +12477,22 @@
         "wirkungswert"
       ]
     },
+    "tab-mittelspannung": {
+      "label": "TAB Mittelspannung",
+      "slug": "tab-mittelspannung",
+      "url": "/begriffe/tab-mittelspannung/",
+      "hoverDefinition": "Technische Anschlussbedingungen Mittelspannung konkretisieren Anforderungen des Netzbetreibers für den Anschluss an das Mittelspannungsnetz.",
+      "shortDefinition": "Technische Anschlussbedingungen Mittelspannung konkretisieren Anforderungen des Netzbetreibers für den Anschluss an das Mittelspannungsnetz.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "TAB Mittelspannung"
+      ],
+      "relatedTerms": [
+        "tar-mittelspannung",
+        "netzanschlusspunkt",
+        "technische-anschlussregel"
+      ]
+    },
     "tandem-solarzelle": {
       "label": "Tandem-Solarzelle",
       "slug": "tandem-solarzelle",
@@ -10714,6 +12523,23 @@
         "well-to-tank",
         "well-to-wheel",
         "systemgrenze"
+      ]
+    },
+    "tar-mittelspannung": {
+      "label": "TAR Mittelspannung / VDE-AR-N 4110",
+      "slug": "tar-mittelspannung",
+      "url": "/begriffe/tar-mittelspannung/",
+      "hoverDefinition": "Die TAR Mittelspannung beschreibt technische Anforderungen für Anschluss und Betrieb von Kundenanlagen am Mittelspannungsnetz.",
+      "shortDefinition": "Die TAR Mittelspannung beschreibt technische Anforderungen für Anschluss und Betrieb von Kundenanlagen am Mittelspannungsnetz.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "TAR Mittelspannung / VDE-AR-N 4110",
+        "VDE-AR-N 4110"
+      ],
+      "relatedTerms": [
+        "technische-anschlussregel",
+        "mittelspannung",
+        "tab-mittelspannung"
       ]
     },
     "tauschwert": {
@@ -10826,6 +12652,24 @@
         "tnfd"
       ]
     },
+    "technische-anschlussregel": {
+      "label": "Technische Anschlussregel / TAR",
+      "slug": "technische-anschlussregel",
+      "url": "/begriffe/technische-anschlussregel/",
+      "hoverDefinition": "Technische Anschlussregeln beschreiben technische Anforderungen für Anschluss und Betrieb von Anlagen am Stromnetz.",
+      "shortDefinition": "Technische Anschlussregeln beschreiben technische Anforderungen für Anschluss und Betrieb von Anlagen am Stromnetz.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Technische Anschlussregel / TAR",
+        "TAR"
+      ],
+      "relatedTerms": [
+        "tar-mittelspannung",
+        "tab-mittelspannung",
+        "spannungsqualitaet",
+        "fernwirktechnik"
+      ]
+    },
     "technische-bewertungskriterien": {
       "label": "Technische Bewertungskriterien",
       "slug": "technische-bewertungskriterien",
@@ -10902,6 +12746,23 @@
         "weiterverteilung"
       ]
     },
+    "thermal-runaway": {
+      "label": "Thermal Runaway",
+      "slug": "thermal-runaway",
+      "url": "/begriffe/thermal-runaway/",
+      "hoverDefinition": "Thermal Runaway beschreibt eine sich selbst verstärkende Überhitzung einer Batterie, die zu Brand oder Explosion führen kann.",
+      "shortDefinition": "Thermal Runaway beschreibt eine sich selbst verstärkende Überhitzung einer Batterie, die zu Brand oder Explosion führen kann.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Thermal Runaway"
+      ],
+      "relatedTerms": [
+        "batteriemanagementsystem",
+        "schutztechnik",
+        "ladepark",
+        "batteriepack"
+      ]
+    },
     "thermisches-kraftwerk": {
       "label": "Thermisches Kraftwerk",
       "slug": "thermisches-kraftwerk",
@@ -10968,6 +12829,26 @@
         "wasserstress"
       ]
     },
+    "trafostation": {
+      "label": "Trafostation",
+      "slug": "trafostation",
+      "url": "/begriffe/trafostation/",
+      "hoverDefinition": "Eine Trafostation enthält einen Transformator und weitere Betriebsmittel zur Umwandlung von Spannung, häufig von Mittelspannung auf Niederspannung.",
+      "shortDefinition": "Eine Trafostation enthält einen Transformator und weitere Betriebsmittel zur Umwandlung von Spannung, häufig von Mittelspannung auf Niederspannung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Trafostation",
+        "Transformatorstation",
+        "Trafohäuschen"
+      ],
+      "relatedTerms": [
+        "transformator",
+        "mittelspannung",
+        "ladepark",
+        "umspannstation",
+        "ladepark-mittelspannungsanschluss"
+      ]
+    },
     "transformationswelle": {
       "label": "Transformationswelle",
       "slug": "transformationswelle",
@@ -11008,6 +12889,23 @@
         "pfadabhaengigkeit",
         "t-sroi",
         "verlustaversion"
+      ]
+    },
+    "transformator": {
+      "label": "Transformator / Trafo",
+      "slug": "transformator",
+      "url": "/begriffe/transformator/",
+      "hoverDefinition": "Ein Transformator wandelt elektrische Spannung zwischen unterschiedlichen Spannungsebenen um.",
+      "shortDefinition": "Ein Transformator wandelt elektrische Spannung zwischen unterschiedlichen Spannungsebenen um.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Transformator / Trafo",
+        "Trafo"
+      ],
+      "relatedTerms": [
+        "trafostation",
+        "umspannstation",
+        "umspannwerk"
       ]
     },
     "transition-finance": {
@@ -11156,6 +13054,38 @@
         "heinz-von-foerster"
       ]
     },
+    "typ-2-stecker": {
+      "label": "Typ-2-Stecker",
+      "slug": "typ-2-stecker",
+      "url": "/begriffe/typ-2-stecker/",
+      "hoverDefinition": "Der Typ-2-Stecker ist ein in Europa verbreiteter Standard für AC-Laden.",
+      "shortDefinition": "Der Typ-2-Stecker ist ein in Europa verbreiteter Standard für AC-Laden.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Typ-2-Stecker"
+      ],
+      "relatedTerms": [
+        "ac-laden",
+        "wallbox",
+        "ccs-ladestecker"
+      ]
+    },
+    "uebergabestation": {
+      "label": "Übergabestation",
+      "slug": "uebergabestation",
+      "url": "/begriffe/uebergabestation/",
+      "hoverDefinition": "Eine Übergabestation ist der technische Übergabepunkt zwischen Netzbetreiber und Kundenanlage, häufig im Mittelspannungsanschluss.",
+      "shortDefinition": "Eine Übergabestation ist der technische Übergabepunkt zwischen Netzbetreiber und Kundenanlage, häufig im Mittelspannungsanschluss.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Übergabestation"
+      ],
+      "relatedTerms": [
+        "kundenanlage",
+        "mittelspannung",
+        "wandlermessung"
+      ]
+    },
     "uebergangstaetigkeit": {
       "label": "Übergangstätigkeit",
       "slug": "uebergangstaetigkeit",
@@ -11185,7 +13115,8 @@
       ],
       "relatedTerms": [
         "stromnetz",
-        "netzausbau"
+        "netzausbau",
+        "hoechstspannung"
       ]
     },
     "ueberwachungskapitalismus": {
@@ -11202,6 +13133,38 @@
       "relatedTerms": [
         "plattformkapitalismus",
         "vertrauen"
+      ]
+    },
+    "umspannstation": {
+      "label": "Umspannstation",
+      "slug": "umspannstation",
+      "url": "/begriffe/umspannstation/",
+      "hoverDefinition": "Eine Umspannstation transformiert Strom zwischen Spannungsebenen, häufig zwischen Mittelspannung und Niederspannung.",
+      "shortDefinition": "Eine Umspannstation transformiert Strom zwischen Spannungsebenen, häufig zwischen Mittelspannung und Niederspannung.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Umspannstation"
+      ],
+      "relatedTerms": [
+        "trafostation",
+        "transformator",
+        "mittelspannung"
+      ]
+    },
+    "umspannwerk": {
+      "label": "Umspannwerk",
+      "slug": "umspannwerk",
+      "url": "/begriffe/umspannwerk/",
+      "hoverDefinition": "Ein Umspannwerk verbindet verschiedene Spannungsebenen und transformiert elektrische Energie zwischen ihnen.",
+      "shortDefinition": "Ein Umspannwerk verbindet verschiedene Spannungsebenen und transformiert elektrische Energie zwischen ihnen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Umspannwerk"
+      ],
+      "relatedTerms": [
+        "transformator",
+        "hochspannung",
+        "mittelspannung"
       ]
     },
     "umweltgerechtigkeit": {
@@ -11306,7 +13269,23 @@
       ],
       "relatedTerms": [
         "materialpass",
-        "industrielle-dekonstruktion"
+        "industrielle-dekonstruktion",
+        "urban-mining-batterien"
+      ]
+    },
+    "urban-mining-batterien": {
+      "label": "Urban Mining Batterien",
+      "slug": "urban-mining-batterien",
+      "url": "/begriffe/urban-mining-batterien/",
+      "hoverDefinition": "Urban Mining bei Batterien beschreibt die Rückgewinnung wertvoller Materialien aus gebrauchten Batterien und Produktionsabfällen.",
+      "shortDefinition": "Urban Mining bei Batterien beschreibt die Rückgewinnung wertvoller Materialien aus gebrauchten Batterien und Produktionsabfällen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Urban Mining Batterien"
+      ],
+      "relatedTerms": [
+        "urban-mining",
+        "batterierecycling"
       ]
     },
     "value-proposition": {
@@ -11375,7 +13354,40 @@
       ],
       "relatedTerms": [
         "elektromobilitaet",
-        "batteriespeicher"
+        "batteriespeicher",
+        "smart-charging",
+        "bidirektionales-laden"
+      ]
+    },
+    "vehicle-to-home": {
+      "label": "Vehicle-to-Home",
+      "slug": "vehicle-to-home",
+      "url": "/begriffe/vehicle-to-home/",
+      "hoverDefinition": "Vehicle-to-Home nutzt die Fahrzeugbatterie zur Versorgung eines Gebäudes.",
+      "shortDefinition": "Vehicle-to-Home nutzt die Fahrzeugbatterie zur Versorgung eines Gebäudes.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Vehicle-to-Home",
+        "V2H"
+      ],
+      "relatedTerms": [
+        "bidirektionales-laden",
+        "heimspeicher"
+      ]
+    },
+    "vehicle-to-load": {
+      "label": "Vehicle-to-Load",
+      "slug": "vehicle-to-load",
+      "url": "/begriffe/vehicle-to-load/",
+      "hoverDefinition": "Vehicle-to-Load stellt Strom aus der Fahrzeugbatterie direkt für Geräte oder mobile Anwendungen bereit.",
+      "shortDefinition": "Vehicle-to-Load stellt Strom aus der Fahrzeugbatterie direkt für Geräte oder mobile Anwendungen bereit.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Vehicle-to-Load",
+        "V2L"
+      ],
+      "relatedTerms": [
+        "bidirektionales-laden"
       ]
     },
     "verbrauchsgueter": {
@@ -11509,7 +13521,8 @@
       ],
       "relatedTerms": [
         "stromnetz",
-        "prosumer"
+        "prosumer",
+        "niederspannung"
       ]
     },
     "vertrauen": {
@@ -11732,6 +13745,40 @@
         "praediktive-verarbeitung",
         "framing",
         "neuropsychologische-wirkmechanismen"
+      ]
+    },
+    "wallbox": {
+      "label": "Wallbox",
+      "slug": "wallbox",
+      "url": "/begriffe/wallbox/",
+      "hoverDefinition": "Eine Wallbox ist eine Ladeeinrichtung für Elektrofahrzeuge, meist an Wohngebäuden oder Betrieben.",
+      "shortDefinition": "Eine Wallbox ist eine Ladeeinrichtung für Elektrofahrzeuge, meist an Wohngebäuden oder Betrieben.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Wallbox"
+      ],
+      "relatedTerms": [
+        "ac-laden",
+        "ladeeinrichtung",
+        "typ-2-stecker"
+      ]
+    },
+    "wandlermessung": {
+      "label": "Wandlermessung",
+      "slug": "wandlermessung",
+      "url": "/begriffe/wandlermessung/",
+      "hoverDefinition": "Wandlermessung ist eine Messung über Strom- oder Spannungswandler, typischerweise bei höheren Leistungen.",
+      "shortDefinition": "Wandlermessung ist eine Messung über Strom- oder Spannungswandler, typischerweise bei höheren Leistungen.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Wandlermessung"
+      ],
+      "relatedTerms": [
+        "messwandler",
+        "rlm-messung",
+        "eichrecht-ladeinfrastruktur",
+        "uebergabestation",
+        "messwandlerschrank"
       ]
     },
     "warenfetisch": {
@@ -11998,7 +14045,8 @@
         "remanufacturing",
         "circular-economy-butterfly-model",
         "upcycling",
-        "kaskadennutzung"
+        "kaskadennutzung",
+        "direktrecycling-batterie"
       ]
     },
     "wertewandel": {
@@ -12098,7 +14146,40 @@
         "onshore-windenergie",
         "offshore-windenergie",
         "erneuerbare-energien",
-        "capture-price"
+        "capture-price",
+        "repowering"
+      ]
+    },
+    "windenergieanlage-lebenszyklus": {
+      "label": "Windenergieanlage Lebenszyklus",
+      "slug": "windenergieanlage-lebenszyklus",
+      "url": "/begriffe/windenergieanlage-lebenszyklus/",
+      "hoverDefinition": "Der Lebenszyklus einer Windenergieanlage umfasst Rohstoffe, Herstellung, Transport, Bau, Betrieb, Wartung, Repowering, Rückbau und Recycling.",
+      "shortDefinition": "Der Lebenszyklus einer Windenergieanlage umfasst Rohstoffe, Herstellung, Transport, Bau, Betrieb, Wartung, Repowering, Rückbau und Recycling.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Windenergieanlage Lebenszyklus"
+      ],
+      "relatedTerms": [
+        "windrad-recycling",
+        "lebenszyklusanalyse"
+      ]
+    },
+    "windrad-recycling": {
+      "label": "Windrad-Recycling",
+      "slug": "windrad-recycling",
+      "url": "/begriffe/windrad-recycling/",
+      "hoverDefinition": "Windrad-Recycling beschreibt die Rückgewinnung oder Verwertung von Materialien aus Windenergieanlagen nach Rückbau oder Repowering.",
+      "shortDefinition": "Windrad-Recycling beschreibt die Rückgewinnung oder Verwertung von Materialien aus Windenergieanlagen nach Rückbau oder Repowering.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Windrad-Recycling"
+      ],
+      "relatedTerms": [
+        "rotorblatt-recycling",
+        "rueckbau-windenergieanlagen",
+        "repowering",
+        "windenergieanlage-lebenszyklus"
       ]
     },
     "wirkleistung": {
@@ -13592,6 +15673,21 @@
         "wirkungsrisiko"
       ]
     },
+    "zementverwertung-rotorblaetter": {
+      "label": "Zementverwertung Rotorblätter",
+      "slug": "zementverwertung-rotorblaetter",
+      "url": "/begriffe/zementverwertung-rotorblaetter/",
+      "hoverDefinition": "Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff oder Rohstoffersatz in der Zementindustrie.",
+      "shortDefinition": "Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff oder Rohstoffersatz in der Zementindustrie.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Zementverwertung Rotorblätter"
+      ],
+      "relatedTerms": [
+        "rotorblatt-recycling",
+        "recycling"
+      ]
+    },
     "zentralverwaltungswirtschaft": {
       "label": "Zentralverwaltungswirtschaft",
       "slug": "zentralverwaltungswirtschaft",
@@ -13728,6 +15824,23 @@
         "positive-netto-wirkung",
         "wirkungsresilienz",
         "maja-goepel"
+      ]
+    },
+    "zyklenfestigkeit": {
+      "label": "Zyklenfestigkeit",
+      "slug": "zyklenfestigkeit",
+      "url": "/begriffe/zyklenfestigkeit/",
+      "hoverDefinition": "Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.",
+      "shortDefinition": "Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Zyklenfestigkeit"
+      ],
+      "relatedTerms": [
+        "batteriealterung",
+        "degradation-batterie",
+        "akkumulator",
+        "lithium-titanat-batterie"
       ]
     }
   }
