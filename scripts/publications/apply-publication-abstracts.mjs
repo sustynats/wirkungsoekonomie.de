@@ -199,7 +199,7 @@ function registryAbstract(context) {
     keyPoints: [
       item.type ? `${item.type} im Bereich ${item.category || "Wirkungsökonomie"}.` : "Einordnung in die Wirkungsökonomie.",
       item.onlineUrl ? "Onlinefassung ist der bevorzugte Lesezugang." : "Download ist ergänzendes Arbeitsmaterial.",
-      "Keine amtliche Bewertung; die Fassung dient Orientierung, Diskussion und Weiterarbeit.",
+      "Keine amtliche Bewertung; die Fassung dient Orientierung, Diskussion und fachlicher Einordnung.",
     ],
   };
 }

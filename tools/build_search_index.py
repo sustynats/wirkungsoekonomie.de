@@ -12,14 +12,12 @@ BODY_LIMIT = 3500
 
 EXCLUDED_DIRS = {
     ".git",
-    "_internal",
-    "assets",
-    "node_modules",
-    "outputs",
-    "source-assets",
     "templates",
-    "website-1-0-release",
     "woek-akademie-app",
+}
+
+EXCLUDED_PREFIXES = {
+    "assets/data/",
 }
 
 EXCLUDED_FILES = {
@@ -40,16 +38,7 @@ SECTION_BY_PREFIX = {
     "wissen/": "Wissen",
     "wirkungsfelder/": "Wirkungsfelder",
     "werkzeuge/": "Werkzeuge",
-    "werkstatt/": "Bibliothek",
-}
-
-NOISE_TITLES = {
-    "kontakt",
-    "verstehen",
-    "referenzrahmen",
-    "kontext-werkzeuge",
-    "erleben & lernen",
-    "werkstatt",
+    "werkstatt/": "Werkstatt",
 }
 
 SECTION_BY_FILE = {
@@ -79,21 +68,10 @@ def clean_text(value):
 
 
 def strip_html(value):
-    value = remove_search_noise_markup(value)
     value = re.sub(r"(?is)<(script|style|svg|noscript)\b.*?</\1>", " ", value)
-    value = re.sub(r"(?is)<(header|footer|nav|aside)\b.*?</\1>", " ", value)
+    value = re.sub(r"(?is)<(header|footer|nav)\b.*?</\1>", " ", value)
     value = re.sub(r"(?is)<[^>]+>", " ", value)
     return clean_text(value)
-
-
-def remove_search_noise_markup(value):
-    value = re.sub(r"(?is)<([a-z0-9:-]+)\b[^>]*data-search-exclude[^>]*>.*?</\1>", " ", value)
-    value = re.sub(
-        r"(?is)<([a-z0-9:-]+)\b[^>]*class\s*=\s*['\"][^'\"]*(?:no-print|breadcrumb|side-nav|toc-card|model-strip|footer-nav|site-nav|publication-matrix-wrap)[^'\"]*['\"][^>]*>.*?</\1>",
-        " ",
-        value,
-    )
-    return value
 
 
 def attr(content, name):
@@ -135,9 +113,7 @@ def title_from_source(source, fallback):
 
 
 def main_text(source):
-    match = re.search(r"(?is)<main\b[^>]*data-search-content[^>]*>(.*?)</main>", source)
-    if not match:
-        match = re.search(r"(?is)<main\b[^>]*>(.*?)</main>", source)
+    match = re.search(r"(?is)<main\b[^>]*>(.*?)</main>", source)
     return strip_html(match.group(1) if match else source)
 
 
@@ -178,6 +154,9 @@ def tags_from_path(rel, source):
 def generated_entry(path):
     rel = path.relative_to(ROOT)
     source = path.read_text(encoding="utf-8", errors="ignore")
+    rel_posix = rel.as_posix()
+    if any(rel_posix.startswith(prefix) for prefix in EXCLUDED_PREFIXES):
+        return None
     if rel.name in EXCLUDED_FILES or is_noindex_redirect(source):
         return None
 
@@ -209,28 +188,6 @@ def generated_entry(path):
     }
 
 
-def is_search_noise_entry(entry):
-    title = clean_text(entry.get("title", "")).lower()
-    section = clean_text(entry.get("section", "")).lower()
-    body = clean_text(entry.get("body", "")).lower()
-    if title in NOISE_TITLES and len(body) < 900:
-        return True
-    if "footer navigation" in body or "hauptnavigation" in body:
-        return True
-    footer_cluster = [
-        "wirkung einfach erklärt",
-        "sdg-/sdg+-referenzrahmen",
-        "interaktive demos",
-        "arbeitsbibliothek",
-        "dokumentenregistry",
-    ]
-    if sum(1 for item in footer_cluster if item in body) >= 3:
-        return True
-    if "kontakt:" in body and "© 2026 natalie weber" in body:
-        return True
-    return "footer" in section or "navigation" in section
-
-
 def html_files():
     for path in sorted(ROOT.rglob("*.html")):
         rel_parts = path.relative_to(ROOT).parts
@@ -252,10 +209,7 @@ def merge_entries(curated, generated):
             by_url[entry["url"]] = merged
         else:
             by_url[entry["url"]] = entry
-    return sorted(
-        (entry for entry in by_url.values() if not is_search_noise_entry(entry)),
-        key=lambda item: (-int(item.get("priority", 0)), item.get("title", "")),
-    )
+    return sorted(by_url.values(), key=lambda item: (-int(item.get("priority", 0)), item.get("title", "")))
 
 
 def knowledge_card_entries():
@@ -305,7 +259,7 @@ def main():
         for entry in curated
         if not str(entry.get("id", "")).startswith(("page-", "knowledge-card-"))
     )
-    generated = [entry for entry in (generated_entry(path) for path in html_files()) if entry and not is_search_noise_entry(entry)]
+    generated = [entry for entry in (generated_entry(path) for path in html_files()) if entry]
     generated.extend(knowledge_card_entries())
     merged = merge_entries(curated, generated)
     SEARCH_INDEX.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -32,8 +32,8 @@ if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
-    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/"],
-    ["Für wen?", "fuer/", "fuer/"],
+    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/|anwendungen.html"],
+    ["Für wen?", "fuer/", "fuer/|ordnung/anschlussfaehigkeit/|ordnung/demokratische-anschlussfaehigkeit.html|parteien.html"],
     ["Ausprobieren", "erleben.html", "erleben.html|erleben/|werkzeuge/|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|methodik/|workflow.html"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "downloads.html", "werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
@@ -130,6 +130,45 @@ document.querySelectorAll(".site-nav .nav-more[data-nav-match]").forEach((detail
   details.classList.toggle("active", isCurrent || details.classList.contains("active"));
 });
 
+document.querySelectorAll(".footer-nav").forEach((footerNav) => {
+  const existingText = footerNav.textContent || "";
+  const footerGroups = [
+    {
+      title: "Für wen?",
+      links: [
+        ["Zielgruppen-Hub", "fuer/"],
+        ["Bürger:innen", "fuer/buergerinnen.html"],
+        ["Journalismus", "fuer/journalismus.html"],
+        ["Unternehmen", "fuer/unternehmen.html"],
+        ["Politik / Parteien", "fuer/politik.html"],
+        ["Verwaltung / Kommunen", "fuer/kommunen.html"],
+        ["Investor:innen", "fuer/investoren.html"],
+        ["Wissenschaft / Akademie", "fuer/wissenschaft-forschung.html"],
+      ],
+    },
+    {
+      title: "SDGs & SDG+",
+      links: [
+        ["Referenzrahmen", "verstehen/sdgs-sdgplus/"],
+        ["Alle 17 SDGs", "verstehen/sdgs-sdgplus/#sdg-list"],
+        ["SDG+ verstehen", "verstehen/sdgs-sdgplus/#sdgplus"],
+        ["Agenda 2030", "verstehen/sdgs-sdgplus/agenda-2030/"],
+        ["Unterziele", "verstehen/sdgs-sdgplus/unterziele/"],
+        ["SDG+ Demokratie", "verstehen/sdgs-sdgplus/sdgplus-demokratie/"],
+      ],
+    },
+  ];
+  footerGroups.forEach((group) => {
+    if (existingText.includes(group.title)) return;
+    const wrapper = document.createElement("div");
+    wrapper.className = "footer-nav-group";
+    wrapper.innerHTML = `<h3>${group.title}</h3><div class="footer-nav-links">${group.links
+      .map(([label, url]) => `<a href="${relativeSiteUrl(url)}" data-nav-match="${url.replace(/^\//, "")}">${label}</a>`)
+      .join("")}</div>`;
+    footerNav.append(wrapper);
+  });
+});
+
 document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) => {
   if (!(link instanceof HTMLAnchorElement)) {
     return;
@@ -144,92 +183,6 @@ document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) =
     link.removeAttribute("aria-current");
   }
 });
-
-function relatedQuestionLink(href, label, tag = "Frage") {
-  return { href: relativeSiteUrl(href), label, tag };
-}
-
-function getContextualQuestions() {
-  const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
-  const pageText = `${document.title} ${mainElement?.textContent || ""}`.toLowerCase();
-
-  if (/^blog\/.+\.html$/.test(path)) {
-    if (/social taxonomy|eu-taxonomie|taxonomie|sustainable finance/.test(pageText)) {
-      return [
-        relatedQuestionLink("fragen/#esg", "Ist das nur ESG mit neuem Namen?", "Abgrenzung"),
-        relatedQuestionLink("fragen/#social-credit", "Ist das Social Credit?", "Schutzfrage"),
-        relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
-      ];
-    }
-    if (/bildung|schule|wirkungskompetenz|idg/.test(pageText)) {
-      return [
-        relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
-        relatedQuestionLink("fragen/#social-credit", "Werden Menschen bewertet?", "Schutzfrage"),
-      ];
-    }
-    return [
-      relatedQuestionLink("fragen/#planwirtschaft", "Ist die Wirkungsökonomie Planwirtschaft?", "Einwand"),
-      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
-    ];
-  }
-
-  if (/^begriffe\/[^/]+\/?$/.test(path) && !path.endsWith("begriffe/")) {
-    if (/folgencheck|faktencheck|wirkstoff|wirkungspfad|wirkungsraum/.test(path)) {
-      return [
-        relatedQuestionLink("fragen/#faktencheck-folgencheck", "Faktencheck vs. Folgencheck?", "Abgrenzung"),
-        relatedQuestionLink("fragen/#zensur", "Ist Folgencheck Zensur?", "Schutzfrage"),
-        relatedQuestionLink("fragen/#wirkstoff", "Was ist ein Wirkstoff?", "Begriff"),
-      ];
-    }
-    if (/wirkungseinkommen|wirkungsfonds|wirkungsrente/.test(path)) {
-      return [
-        relatedQuestionLink("fragen/#geld", "Woher kommt das Geld?", "Finanzierung"),
-        relatedQuestionLink("fragen/#bge", "Ist Wirkungseinkommen BGE?", "Abgrenzung"),
-      ];
-    }
-    if (/eu-taxonomie|social-taxonomy|csrd|esrs|esg|green-deal/.test(path)) {
-      return [
-        relatedQuestionLink("fragen/#esg", "Ist das nur ESG mit neuem Namen?", "Abgrenzung"),
-        relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
-      ];
-    }
-    return [
-      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
-      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
-    ];
-  }
-
-  return [];
-}
-
-function injectContextualQuestions() {
-  if (!mainElement || document.querySelector(".related-questions-block")) {
-    return;
-  }
-  const questions = getContextualQuestions().slice(0, 4);
-  if (!questions.length) {
-    return;
-  }
-  const section = document.createElement("aside");
-  section.className = "section related-questions-block";
-  section.setAttribute("aria-labelledby", "contextual-related-questions-title");
-  section.innerHTML = `
-    <div class="section-header">
-      <p class="hero-kicker">Passende Fragen</p>
-      <h2 id="contextual-related-questions-title">Kontext einordnen</h2>
-    </div>
-    <div class="related-question-grid">
-      ${questions
-        .map(
-          (item) => `<article class="related-question-card"><span>${item.tag}</span><strong>${item.label}</strong><a class="text-link" href="${item.href}">Antwort lesen</a></article>`,
-        )
-        .join("")}
-    </div>
-  `;
-  mainElement.append(section);
-}
-
-injectContextualQuestions();
 
 function shouldSkipSiteAnalytics() {
   return navigator.doNotTrack === "1" || window.doNotTrack === "1";
@@ -540,6 +493,11 @@ function applyDownloadFilter() {
     }
   });
 
+  document.querySelectorAll("[data-library-group]").forEach((group) => {
+    const hasVisibleCards = Array.from(group.querySelectorAll("[data-download-card]")).some((card) => !card.hidden);
+    group.hidden = !hasVisibleCards;
+  });
+
   downloadFilterButtons.forEach((button) => {
     const isActive = button.dataset.downloadFilter === downloadFilterState.category;
     button.classList.toggle("active", isActive);
@@ -558,6 +516,17 @@ function applyDownloadFilter() {
       "medien-demokratie": "Medien und Demokratie",
       "daten-indikatoren": "Daten und Indikatoren",
       archiv: "Archiv / ältere Arbeitsstände",
+      buch: "Bücher und Grundlagenwerke",
+      ausarbeitung: "lange Ausarbeitungen",
+      thesenpapier: "Thesenpapiere und kurze Konzepte",
+      beispiel: "Beispiele und Fallnotizen",
+      recht: "Rechts- und Steuerungsentwürfe",
+      langfassung: "Langfassungen",
+      "buch-langform": "Buch / Langform",
+      "mittlere-ausarbeitung": "mittlere Ausarbeitungen",
+      kurzpapier: "kurze Thesen- und Konzeptpapiere",
+      kurzbeispiel: "Kurzbeispiele und Fallnotizen",
+      register: "Register / Nachschlagewerke",
     };
     const categoryLabel = labels[downloadFilterState.category] || downloadFilterState.category;
     const queryLabel = hasSearch ? ` · Suche: „${downloadFilterState.query}“` : "";
@@ -604,7 +573,10 @@ function getArticleReadMinutes() {
 
 function enhanceLongArticleToc() {
   const articleBody = document.querySelector(".article-body");
-  if (!articleBody || document.querySelector(".article-toc")) {
+  const existingTemplateToc = document.querySelector(
+    ".toc-card, .toc-links[aria-label='Inhaltsverzeichnis'], nav[aria-label='Inhaltsverzeichnis'], details[aria-label='Inhaltsverzeichnis']"
+  );
+  if (!articleBody || document.querySelector(".article-toc") || existingTemplateToc) {
     return;
   }
 
@@ -652,6 +624,217 @@ function enhanceLongArticleToc() {
 }
 
 enhanceLongArticleToc();
+
+function enhancePublicCards() {
+  document.querySelectorAll(".card, .info-card, .download-card, .library-card").forEach((card) => {
+    const text = (card.textContent || "").toLowerCase();
+    const primaryAction = card.querySelector("a[href], button");
+    const href = primaryAction instanceof HTMLAnchorElement ? primaryAction.getAttribute("href") || "" : "";
+    const actionText = (primaryAction?.textContent || "").toLowerCase();
+    const actionSignal = `${href} ${actionText}`;
+    const hasLink = Boolean(primaryAction);
+    const isDownload = /\.pdf(?:$|[?#])|pdf herunterladen|download/.test(actionSignal);
+    const isChapter = /\/referenz\/|kapitel-\d+|buchkapitel|online-buch|grundlagenwerk/.test(actionSignal);
+    const isTool = card.classList.contains("tool-card") || /\/erleben\/|\/anwendungen\/scanner|\/werkzeuge\/|tool testen|rechner nutzen|scanner|simulation/.test(actionSignal);
+    const isTerm = /\/begriffe\/|glossar|begriff erklären|begriff:/.test(actionSignal);
+    const isDocument = isDownload || /onlinefassung|bibliothek|dossier|konzeptpapier|arbeitspapier|thesenpapier|ausarbeitung|whitepaper|fallstudie/.test(text);
+    const isReference = /wök-relevanz|offizielle quellen|reguliert|standard|regularien|studien/.test(text) && card.classList.contains("is-document-card");
+    const isDocumentShell = card.classList.contains("download-card") || card.classList.contains("library-card");
+    const isExternal = hasLink && href && /^https?:\/\//.test(href) && !href.includes("wirkungsoekonomie.de");
+    let role = "info";
+    let label = "Einordnung";
+    let action = "";
+
+    if (isDownload) {
+      role = "download";
+      label = "Download";
+      action = "PDF öffnen";
+    } else if (isDocumentShell || isDocument) {
+      role = "document";
+      label = "Dokument";
+      action = "Onlinefassung lesen";
+    } else if (isReference) {
+      role = "reference";
+      label = "Referenz";
+      action = "Detailseite lesen";
+    } else if (isTool) {
+      role = "tool";
+      label = "Tool";
+      action = "Tool nutzen";
+    } else if (isChapter) {
+      role = "chapter";
+      label = "Buchkapitel";
+      action = "Kapitel lesen";
+    } else if (isTerm) {
+      role = "term";
+      label = "Begriff";
+      action = "Begriff erklären";
+    } else if (isExternal) {
+      role = "source";
+      label = "Quelle";
+      action = "Quelle öffnen";
+    } else if (hasLink) {
+      role = "link";
+      label = "Weiterführung";
+      action = "Weiterlesen";
+    }
+
+    card.classList.toggle("is-link-card", hasLink);
+    card.classList.toggle("is-static-card", !hasLink);
+    card.classList.toggle("is-document-card", isDocument);
+    card.dataset.cardRole = role;
+    card.dataset.cardLabel = label;
+    if (action) {
+      card.dataset.cardAction = action;
+    } else {
+      delete card.dataset.cardAction;
+    }
+  });
+}
+
+function enhanceTocUsability() {
+  const tocCards = Array.from(document.querySelectorAll(".toc-card, nav[aria-label='Inhaltsverzeichnis']"));
+  tocCards.forEach((toc, index) => {
+    if (index > 0 && toc.closest(".article-toc") === null) {
+      toc.classList.add("is-secondary-toc");
+    }
+    if (toc instanceof HTMLDetailsElement) {
+      if (window.matchMedia("(max-width: 760px)").matches) {
+        toc.removeAttribute("open");
+      }
+      const summary = toc.querySelector("summary");
+      if (summary && /Inhaltsverzeichnis$/.test(summary.textContent.trim())) {
+        summary.textContent = "Inhaltsverzeichnis anzeigen";
+      }
+      return;
+    }
+    const links = toc.querySelectorAll("a[href^='#']");
+    if (links.length < 8 || toc.querySelector("details")) {
+      return;
+    }
+    const details = document.createElement("details");
+    details.className = toc.className || "toc-card";
+    details.classList.add("is-enhanced-toc");
+    details.setAttribute("aria-label", "Inhaltsverzeichnis");
+    if (!window.matchMedia("(max-width: 760px)").matches) {
+      details.setAttribute("open", "");
+    }
+    const summary = document.createElement("summary");
+    summary.className = "card-title";
+    summary.textContent = "Inhaltsverzeichnis anzeigen";
+    details.append(summary);
+    Array.from(toc.childNodes).forEach((child) => {
+      if (child.nodeType === Node.ELEMENT_NODE && child.matches("h2, .card-title")) {
+        return;
+      }
+      details.append(child);
+    });
+    toc.replaceWith(details);
+  });
+}
+
+function enhanceResponsiveTables() {
+  document.querySelectorAll("table").forEach((table) => {
+    if (!table.closest(".table-wrap")) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "table-wrap auto-table-wrap";
+      wrapper.setAttribute("role", "region");
+      wrapper.setAttribute("tabindex", "0");
+      table.before(wrapper);
+      wrapper.append(table);
+    }
+    const headers = Array.from(table.querySelectorAll("thead th")).map((cell) => cell.textContent.trim());
+    if (!headers.length) return;
+    table.querySelectorAll("tbody tr").forEach((row) => {
+      Array.from(row.children).forEach((cell, index) => {
+        if (!cell.getAttribute("data-label") && headers[index]) {
+          cell.setAttribute("data-label", headers[index]);
+        }
+      });
+    });
+  });
+}
+
+function enhanceConceptDossierReaders() {
+  const readerTitles = new Map([
+    ["konzeptpapier lesen", "Konzeptpapier"],
+    ["detailkonzept lesen", "Detailkonzept"],
+    ["detailkonzept online lesen", "Detailkonzept"],
+    ["dossier lesen", "Dossier"],
+    ["einzeldossier online lesen", "Dossier"],
+    ["konzeptpapier online lesen", "Konzeptpapier"],
+  ]);
+  const collapsibleIds = new Set(["konzeptpapier", "detailkonzept", "dossier", "einzeldossier"]);
+  const hashTarget = window.location.hash ? document.getElementById(decodeURIComponent(window.location.hash.slice(1))) : null;
+
+  function normalizedText(element) {
+    const clone = element.cloneNode(true);
+    clone.querySelectorAll?.(".cite-anchor").forEach((anchor) => anchor.remove());
+    return (clone.textContent || "").trim().replace(/\s+/g, " ");
+  }
+
+  function setHeadingText(heading, label) {
+    const anchors = Array.from(heading.querySelectorAll(".cite-anchor"));
+    heading.textContent = label;
+    anchors.forEach((anchor) => {
+      heading.append(document.createTextNode(" "));
+      heading.append(anchor);
+    });
+  }
+
+  document.querySelectorAll("h1, h2, h3").forEach((heading) => {
+    if (!(heading instanceof HTMLElement)) return;
+    const key = normalizedText(heading).toLowerCase();
+    const label = readerTitles.get(key);
+    if (label) setHeadingText(heading, label);
+  });
+
+  document.querySelectorAll("a[href^='#']").forEach((link) => {
+    if (!(link instanceof HTMLAnchorElement)) return;
+    const target = link.getAttribute("href")?.slice(1) || "";
+    const text = (link.textContent || "").trim().toLowerCase();
+    if (!collapsibleIds.has(target) || !["konzeptpapier lesen", "dossier lesen", "detailkonzept lesen"].includes(text)) return;
+    if (!link.closest(".hero-actions, .portal-card-actions")) return;
+    const wrapper = link.closest(".portal-card-actions, .hero-actions");
+    link.remove();
+    if (wrapper && !wrapper.querySelector("a, button")) {
+      wrapper.remove();
+    }
+  });
+
+  document.querySelectorAll("section.article-section, section#detailkonzept, section#einzeldossier, section#konzeptpapier, section#dossier").forEach((section) => {
+    if (!(section instanceof HTMLElement) || section.querySelector(":scope > .reader-disclosure")) return;
+    const id = section.id || section.getAttribute("aria-labelledby") || "";
+    const firstReader = section.querySelector(".fulltext-reader, .prose, .readable-prose");
+    if (!firstReader || !["konzeptpapier", "detailkonzept", "dossier", "einzeldossier"].some((token) => id.includes(token))) return;
+
+    const title = id.includes("dossier") ? "Dossier" : id.includes("detailkonzept") ? "Detailkonzept" : "Konzeptpapier";
+    const details = document.createElement("details");
+    details.className = "reader-disclosure";
+    const summary = document.createElement("summary");
+    summary.innerHTML = `<span>${title}</span><small>Kapitel anzeigen</small>`;
+    details.append(summary);
+    Array.from(section.childNodes).forEach((child) => details.append(child));
+    section.append(details);
+    if (hashTarget && section.contains(hashTarget)) {
+      details.open = true;
+    }
+  });
+
+  if (hashTarget) {
+    document.querySelectorAll("details.reader-disclosure").forEach((details) => {
+      if (!(details instanceof HTMLDetailsElement)) return;
+      if (details === hashTarget || details.contains(hashTarget)) {
+        details.open = true;
+      }
+    });
+  }
+}
+
+enhancePublicCards();
+enhanceTocUsability();
+enhanceResponsiveTables();
+enhanceConceptDossierReaders();
 
 function getGlossaryContext() {
   const path = window.location.pathname;
@@ -1131,41 +1314,41 @@ function initPublicationAccessFallback() {
       prefixes: ["/wirkungsfelder/produkte-konsum/"],
       detail: "/wirkungsfelder/produkte-konsum/detailkonzepte/",
       dossier: "/wirkungsfelder/produkte-konsum/dossiers/",
-      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.docx",
+      detailDownload: "/assets/downloads/woek_produkte_konsum_detailkonzepte_umfangreich_v0_2.pdf",
     },
     {
       prefixes: ["/werkzeuge/impact-controlling/"],
       detail: "/werkzeuge/impact-controlling/detailkonzepte/",
       dossier: "/werkzeuge/impact-controlling/dossiers/",
-      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.docx",
+      detailDownload: "/assets/downloads/woek_impact_controlling_detailkonzepte_umfangreich_v0_2.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/staat-recht-demokratie/", "/werkstatt/dossiers/staat-recht-demokratie/"],
       detail: "/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/",
       dossier: "/werkstatt/dossiers/staat-recht-demokratie/dossiers/",
-      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_staat_recht_demokratie_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_staat_recht_demokratie_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/wirtschaft-unternehmen/", "/werkstatt/dossiers/wirtschaft-unternehmen/"],
       detail: "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/",
       dossier: "/wirkungsfelder/wirtschaft-unternehmen/dossiers/",
-      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_wirtschaft_unternehmen_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/wohnen-stadt/"],
       detail: "/wirkungsfelder/wohnen-stadt/detailkonzepte/",
       dossier: "/wirkungsfelder/wohnen-stadt/dossiers/",
-      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.docx",
-      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_wohnen_stadt_detailkonzepte_umfangreich_v0_2.pdf",
+      dossierDownload: "/assets/downloads/woek_wohnen_stadt_gesamtdossier_v0_1.pdf",
     },
     {
       prefixes: ["/wirkungsfelder/arbeit-einkommen/"],
       detail: "#detailkonzept",
       dossier: "#dossier",
-      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.docx",
-      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_arbeit_einkommen_detailkonzepte_umfangreich_v0_1.pdf",
+      dossierDownload: "/assets/downloads/woek_arbeit_einkommen_einzeldossier_set_v0_1.pdf",
       fallbackDetail: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
       fallbackDossier: "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/",
     },
@@ -1173,13 +1356,16 @@ function initPublicationAccessFallback() {
       prefixes: ["/wirkungsfelder/rente-soziale-sicherung/"],
       detail: "/wirkungsfelder/rente-soziale-sicherung/detailkonzepte/",
       dossier: "/wirkungsfelder/rente-soziale-sicherung/dossiers/",
-      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.docx",
-      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.docx",
+      detailDownload: "/assets/downloads/woek_rente_soziale_sicherung_detailkonzepte_umfangreich_v0_1.pdf",
+      dossierDownload: "/assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.pdf",
     },
   ];
 
   const config = areas.find((area) => area.prefixes.some((prefix) => path.startsWith(prefix)));
   if (!config) {
+    return;
+  }
+  if (/\/(?:detailkonzepte|dossiers)\//.test(path)) {
     return;
   }
 
@@ -1197,10 +1383,10 @@ function initPublicationAccessFallback() {
   };
   const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
   const cards = [
-    ["Onlinefassung", "Detailkonzepte", "Fachliche Einordnung, Quellen, Beispiele und weiterführende Materialien.", detailHref, "Detailkonzept lesen"],
-    ["Praxisfassung", "Dossiers", "Anwendung, Annahmen, Bewertungslogik, Datenquellen und Beispiele.", dossierHref, "Dossier lesen"],
-    ["Download", "Konzeptpapier", "Ergänzende Lesefassung mit Struktur, Bewertungslogik und Beispielen.", config.detailDownload, "Herunterladen"],
-    ["Download", "Dossier", "Vertiefende Lesefassung mit Kontext, Anwendung und Quellen.", config.dossierDownload, "Herunterladen"],
+    ["Langfassung", "Detailkonzepte", "Längere fachliche Ausarbeitung mit Quellen, Beispielen und weiterführenden Materialien.", detailHref, "Detailkonzept lesen"],
+    ["Praxisdossier", "Dossiers", "Praxisfrage, Anwendung, Annahmen, Bewertungslogik, Datenquellen und Grenzen.", dossierHref, "Dossier lesen"],
+    ["PDF-Langfassung", "Detailkonzepte als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.detailDownload, "PDF herunterladen"],
+    ["PDF-Dossier", "Dossiers als PDF", "PDF-Fassung für Druck, Zitation und Weitergabe.", config.dossierDownload, "PDF herunterladen"],
   ].filter((card) => card[3]);
 
   if (!cards.length) {
@@ -1215,7 +1401,7 @@ function initPublicationAccessFallback() {
     <div class="section-header">
       <p class="hero-kicker">Vertiefung</p>
       <h2 id="publikationszugang-title">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#publikationszugang" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-      <p>Die Seite führt zuerst in das Thema ein. Detailkonzepte, Dossiers und Downloads sind hier als weiterführende Materialien gebündelt.</p>
+      <p>Die Seite führt zuerst in das Thema ein. Die Karten unterscheiden klar zwischen Langfassung, Praxisdossier und PDF-Arbeitsmaterial.</p>
     </div>
     <div class="card-grid three">${cards.map(([kicker, title, text, link, label]) => `
       <article class="card">
@@ -1815,7 +2001,7 @@ const ResultInterpretationLayer = (() => {
     },
     {
       match: ["betroffene vollzeitstellen", "vollzeitstellen", "affectedfte"],
-      meaning: "Der Wert zeigt, wie viele Beschäftigte, umgerechnet auf Vollzeitstellen, im Modell von Automatisierung betroffen wären.",
+      meaning: "Der Wert zeigt, wie viele Vollzeitäquivalente im Modell von Automatisierung betroffen wären.",
       relevance: "Er macht sichtbar, dass Automatisierung nicht nur Kosten senkt, sondern Übergänge, Einkommen und Sicherungssysteme berührt.",
       change: "Im WÖk-System würde daraus ein Bedarf für Qualifizierung, Versetzung, Beteiligung oder Rückkopplung entstehen.",
       limit: "Die Zahl ist eine Modellannahme und keine Aussage über einzelne Beschäftigte."
@@ -2110,6 +2296,7 @@ const GenericToolPageExplanationLayer = (() => {
 
   function init() {
     if (!isToolLikePath() || !mainElement || document.querySelector(".tool-explanation-before")) return;
+    if (mainElement.matches("[data-no-generic-tool-explanation]") || document.querySelector("[data-no-generic-tool-explanation]")) return;
     const target = mainElement.querySelector("[data-scanner-mvp-root], [data-tool-root], .product-calculator-section, .tool-lab, .section");
     if (!target || target.dataset.genericToolExplanationReady === "true") return;
     const config = configForPage();

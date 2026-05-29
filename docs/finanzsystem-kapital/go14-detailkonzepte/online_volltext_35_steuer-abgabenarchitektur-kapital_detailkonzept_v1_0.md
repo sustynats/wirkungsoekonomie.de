@@ -1,4 +1,4 @@
-# 35 – Wirkungsorientierte Steuer- und Abgabenarchitektur des Kapitals
+# 35 - Wirkungsorientierte Steuer- und Abgabenarchitektur des Kapitals
 
 **Untertitel:** Körperschaftsteuer, Gewerbesteuer, Vermögen, Erbschaft, Sozialabgaben und Maschinenwertschöpfung nach Wirkung
 

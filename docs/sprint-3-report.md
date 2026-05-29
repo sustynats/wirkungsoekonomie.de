@@ -4,7 +4,7 @@ Stand: 2026-05-27
 
 ## Geaendert
 
-- Neuer Branch: `feature/website-conversion-visuals-tools-search`.
+- Neuer Live-Integrationsbranch auf aktuellem `main`: `feature/live-sprint3-integrated`. Der alte Sprint-Branch wurde wegen Konflikten nicht direkt gemerged.
 - Startseite: Entscheidungsblock "Was moechtest du als Naechstes tun?" mit fuenf Einstiegen fuer neue Besucher:innen, Einwaende, Demos/Tools, Bibliothek und Mitdenken.
 - Startseite: Merksatz als ruhige Quote integriert, ohne den bestehenden Hero umzubauen.
 - Projekt-/Ueber-uns-Seite: Rolle der Website als offener Wissens-, Lern- und Anwendungsraum geschaerft; Demos klar als modellhafte Ersteinschaetzungen ausgewiesen.
@@ -41,14 +41,11 @@ Umgesetzt wurden einfache HTML/CSS-Systemvisuals:
 
 ## Mobile Smoke
 
-Geprueft mit lokalem Chrome/Playwright gegen `http://127.0.0.1:8765`:
+Geprueft gegen lokalen HTTP-Server `http://127.0.0.1:8765`:
 
-- Desktop: 1440px.
-- iPhone-Breite: 390px.
-- Android-Breite: 360px.
 - Seiten: `/`, `/suche.html`, `/erleben.html`, `/erleben/automatisierungs-wirkungseinkommensrechner/`, `/fragen/`, `/wirkungsfelder/produkte-konsum/`, `/wirkungsfelder/wirtschaft-unternehmen/`, `/begriffe/`, `/downloads.html`, `/modell.html`, `/anwendungen/scanner.html`.
-- Ergebnis: keine horizontalen Scrolls, keine Platzhalter-Texte, Toolkarten mobil einspaltig.
-- Smoke-Artefakte: `outputs/sprint-3-smoke/report.json` und Screenshots in `outputs/sprint-3-smoke/`.
+- Ergebnis: HTTP 200 fuer die relevanten Pruefseiten; Marker fuer Entscheidungsblock, Merksatz, Systemvisual, Abstracts, Medien-Onlinefassung und Vollzeitstellen-Erklaerung vorhanden.
+- Hinweis: Der In-App-Browser war in dieser Session nicht verbunden; visuelle Pixel-/Viewport-Pruefung wurde deshalb nicht erneut automatisiert ausgefuehrt.
 
 ## Suchbegriffe
 
@@ -76,11 +73,19 @@ Erfolgreich:
 - `npm run check:search-contamination`
 - `npm run check:tool-default-states`
 - `npm run check:public-language`
+- `npm run check:publication-abstracts`
+- `npm run check:assets`
 - `node scripts/quality/audit-public-ctas.mjs`
-- `node scripts/quality/fix-public-self-ctas.mjs --check`
-- Mobile smoke check via Playwright/Chrome.
+- lokaler HTTP-Smoke fuer die Live-Pruefseiten.
+
+## Live-Deploy
+
+- PR: `#56` - `Publish sprint 3 integration, abstracts and media paper`
+- Merge-Commit auf `main`: `3ac07ffc0517b0c039ed6888b17e65a4a756e0b5`
+- GitHub-Pages-Workflow: `26528432501`, erfolgreich am 2026-05-27.
+- Live geprueft: `/`, `/downloads.html`, `/suche.html`, `/erleben/automatisierungs-wirkungseinkommensrechner/` und `/wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/`.
+- Live-Ergebnis: HTTP 200; Entscheidungsblock, Merksatz, Download-Abstracts, Medien-Onlinefassung und Vollzeitstellen-Erklaerung sind auf der echten Domain sichtbar.
 
 ## Restpunkte
 
-- Kein Remote-Deploy ausgefuehrt. Es gibt keinen lokalen Deploy-Befehl; GitHub Pages deployt ueber `.github/workflows/deploy.yml` nach Push auf `main` oder per `workflow_dispatch`. Fuer den Live-Deploy muss der Sprint-Branch gepusht/gemerged oder der Workflow gezielt ausgeloest werden.
-- In-App-Browser war in dieser Umgebung nicht verfuegbar; der visuelle Smoke-Test wurde deshalb mit lokalem Chrome/Playwright durchgefuehrt.
+- Visuelle Mobile-Pruefung im Browser sollte nach dem Live-Deploy stichprobenartig im echten Browser nachgezogen werden, weil der In-App-Browser in dieser Session nicht verfuegbar war.

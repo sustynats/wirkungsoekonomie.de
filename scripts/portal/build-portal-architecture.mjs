@@ -7,7 +7,7 @@ const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-portal-meta-readable";
 const JS_VERSION = "20260523-nachhaltigkeit";
-const SCHOOL_DOC = "assets/downloads/woek_bildung_wirkungsschule_konzeptpapier_v0_1.pdf";
+const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
 const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
 const SCHOOL_MD = "docs/bildung/Wirkungsschule_Fassung_v0_1.md";
 
@@ -382,7 +382,7 @@ const fields = [
     sdgs: ["SDG 1 Keine Armut", "SDG 3 Gesundheit", "SDG 5 Geschlechtergleichstellung", "SDG 10 Weniger Ungleichheiten"],
     concepts: ["Wirkungsrente", "Generationenvertrag", "Care-Biografien", "Soziale Resilienz"],
     actors: ["Versicherte", "Rentner:innen", "Care-Arbeitende", "Sozialpolitik", "Kommunen"],
-    docs: [{ label: "Wirkungsrente", href: "wirkungsfelder/rente-soziale-sicherung/" }, { label: "Kapitel Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }],
+    docs: [{ label: "Wirkungsrente Arbeitspapier", href: "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md" }, { label: "Kapitel Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }],
     anchors: [{ label: "Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }, { label: "Zeit, Endlichkeit und Generationenverantwortung", href: "referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/" }, bookMain],
   },
   {
@@ -1070,8 +1070,8 @@ function workshopPages() {
     ["whitepaper", "Whitepaper", [["T-SROI", "Transformationswirkung und Impact Controlling.", "dokumente/whitepaper-t-sroi/"], ["Produktbesteuerung durch Wirkung", "Kanonische Online-Fassung des Produktpapiers.", "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"], ["Wirkung statt Kapital", "Grundlagen und Paradigmenwechsel.", "assets/pdf/whitepaper-wirkung-statt-kapital.pdf"], ["Wirkungseinkommen", "Einkommen und Wirkung.", "assets/pdf/whitepaper-wirkungseinkommen.pdf"]]],
     ["konzepte-dossiers", "Konzepte & Dossiers", [["Produktbesteuerung durch Wirkung", "Online lesbares Konzeptpapier im Portal Produkte & Konsum.", "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"], ["Dossier Produkte & Konsum", "Rechenmodell, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.", "wirkungsfelder/produkte-konsum/dossier/"], ["Die Wirkungsschule", "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", "wirkungsfelder/bildung/wirkungsschule/"], ["Dossier Wohnen", "Öffentliches Dossier zum Wirkungsfeld Wohnen.", "blog/dossiers/wohnen.html"], ["Dossier Medien & Demokratie", "Öffentliches Dossier zu Medien, Demokratie und Wirkung.", "blog/dossiers/medien-demokratie.html"], ["Grundlagen-Dossier", "Projekt- und Grundlagenmaterialien.", "blog/dossiers/grundlagen.html"]]],
     ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Produktscorecard und Bonusregel.", "wirkungsfelder/produkte-konsum/apfelbeispiel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "wirkungsfelder/produkte-konsum/lieferketten/"], ["Beispiel Konzern", "Konzern- und Produktscorecard.", "wirkungsfelder/produkte-konsum/basf-polyamid/"], ["T-Shirt / Textilbeispiel", "Modellseite für Textilien als Wirkungsträger.", "wirkungsfelder/produkte-konsum/t-shirt/"]]],
-    ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "wirkungsfelder/rente-soziale-sicherung/"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "wirkungsfelder/arbeit-einkommen/wirkungseinkommen/"]]],
-    ["recht", "Recht", [["Juristische Risikolandkarte", "Rechtsprüfung und Risiken.", "wirkungsfelder/staat-recht-demokratie/"], ["WStG Prüfnotiz", "Juristische Prüfung des WStG.", "werkstatt/gesetze/wirkungssteuergesetz/"], ["Wirkungsrat Prüfnotiz", "Governance und Rechtsrahmen.", "werkzeuge/wirkungsrat/"]]],
+    ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "docs/soziales/Wirkungseinkommen_Grunddividende_v1.1_Zielmodell.md"]]],
+    ["recht", "Recht", [["Juristische Risikolandkarte", "Rechtsprüfung und Risiken.", "docs/recht/WOeK_Juristische_Risikolandkarte_v1.1.md"], ["WStG Prüfnotiz", "Juristische Prüfung des WStG.", "docs/recht/WStG_2.0_Juristische_Pruefnotiz.md"], ["Wirkungsrat Prüfnotiz", "Governance und Rechtsrahmen.", "docs/recht/Wirkungsrat_Juristische_Pruefnotiz_Governance.md"]]],
     ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Klima, Energie und Ressourcen", "Wirkungsfeld für ökologische Systemarchitektur.", "wirkungsfelder/klima-energie-ressourcen/"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
     ["historische-dokumente", "Historische Dokumente", [["Manifest", "Historischer und normativer Ausgangspunkt.", "dokumente/woek-manifest/"], ["Minifest", "Kurzfassung und Orientierung.", "dokumente/minifest-wirkungsoekonomie/"], ["Archivhinweis", "Historische Dokumente einordnen.", "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.md"]]],
   ];

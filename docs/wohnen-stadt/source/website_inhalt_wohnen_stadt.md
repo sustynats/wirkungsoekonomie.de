@@ -96,12 +96,12 @@ Relevante SDG+-Dimensionen: Demokratie, institutionelles Vertrauen, gesellschaft
 
 ## 9. Anker im Online-Buch
 
-- Kapitel 70 – Wohnen als Wirkungsfaktor
-- Kapitel 23 – Wirkungssrisiko und Wirkungsresilienz
-- Kapitel 31 – WÖk-IDs und Indikatorenarchitektur
-- Kapitel 32 – Scorecards und NWI
-- Kapitel 39 – Wirkungshaushalt
-- Kapitel 52 – Verbraucherinformation und Wirkungspunkte
+- Kapitel 70 - Wohnen als Wirkungsfaktor
+- Kapitel 23 - Wirkungssrisiko und Wirkungsresilienz
+- Kapitel 31 - WÖk-IDs und Indikatorenarchitektur
+- Kapitel 32 - Scorecards und NWI
+- Kapitel 39 - Wirkungshaushalt
+- Kapitel 52 - Verbraucherinformation und Wirkungspunkte
 
 ## 10. Dossier & Export
 

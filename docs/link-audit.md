@@ -1,13 +1,13 @@
 # Link- und CTA-Audit
 
-Stand: 2026-05-27T16:28:14.033Z
+Stand: 2026-05-27T17:41:10.502Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 382
-- Geprüfte CTA-/Button-Links: 10423
+- Geprüfte HTML-Dateien: 374
+- Geprüfte CTA-/Button-Links: 11299
 - Fehler: 0
-- Warnungen: 0
+- Warnungen: 44
 - Self-Links: 0
 - Treffer mit "Portal öffnen": 0
 
@@ -15,3 +15,47 @@ Stand: 2026-05-27T16:28:14.033Z
 
 | Schwere | Datei | Linktext | href | Befund |
 | --- | --- | --- | --- | --- |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/creator-hosts/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/creator-hosts/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/desinformation-deepfakes/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/desinformation-deepfakes/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/digitale-oeffentliche-infrastruktur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/digitale-oeffentliche-infrastruktur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/medienqualitaet-sdgplus/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/medienqualitaet-sdgplus/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/medienwirkungsindex-mwix/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/medienwirkungsindex-mwix/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/oeffentlichkeit-als-wirkungsraum/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/oeffentlichkeit-als-wirkungsraum/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/plattformen-social-media/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/plattformen-social-media/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/politische-kommunikation-wahlwerbung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/politische-kommunikation-wahlwerbung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/basisrente-wuerdesicherung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/basisrente-wuerdesicherung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/betriebliche-private-vorsorge/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/betriebliche-private-vorsorge/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/care-bildung-ehrenamt/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/care-bildung-ehrenamt/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-faktor/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-faktor/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-konto/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/lebenswirkungs-konto/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/recht-datenschutz-korrektur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/recht-datenschutz-korrektur/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/renten-impact-fonds/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/renten-impact-fonds/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/wirkungsrente-generationenvertrag/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |
+| warning | `wirkungsfelder/rente-soziale-sicherung/wirkungsrente-generationenvertrag/index.html` | Dossier lesen | `#dossier` | CTA springt nur innerhalb der aktuellen Seite |

@@ -20,7 +20,7 @@ Der Staat wird in der Wirkungsökonomie nicht als zentraler Planer verstanden, s
 
 Das klassische Recht ordnet Handlungen, Zuständigkeiten, Verträge, Einkommen, Besitz, Haftung und Verfahren. Reale Wirkung erscheint häufig erst spät: als Schaden, Gefährdung, Haftung, Berichtspflicht oder Förderbedingung. Dadurch entsteht ein Steuerungsdefizit: Der Staat reagiert auf Schäden, statt die Wirkungslogik seiner Regeln systematisch zu gestalten.
 
-Die Wirkungsökonomie erweitert diese Ordnung um eine zusätzliche Frage: Welche Zustände verändert eine wirtschaftliche, staatliche oder gesellschaftliche Handlung – und wie kehren diese Veränderungen in Preise, Steuern, Haushalte, Aufsicht, Rechtsschutz und demokratische Entscheidungen zurück?
+Die Wirkungsökonomie erweitert diese Ordnung um eine zusätzliche Frage: Welche Zustände verändert eine wirtschaftliche, staatliche oder gesellschaftliche Handlung - und wie kehren diese Veränderungen in Preise, Steuern, Haushalte, Aufsicht, Rechtsschutz und demokratische Entscheidungen zurück?
 
 2. Staat als Rückkopplungsarchitekt
 
@@ -48,17 +48,17 @@ Wirkungsmessung darf nicht zur Bewertungsmaschine über Menschen werden. Scoreca
 
 6. Portalstruktur
 
-/wirkungsfelder/staat-recht-demokratie/ – Portalübersicht
+/wirkungsfelder/staat-recht-demokratie/ - Portalübersicht
 
-/werkstatt/gesetze/wirkungssteuergesetz/ – LawReader WStG
+/werkstatt/gesetze/wirkungssteuergesetz/ - LawReader WStG
 
-/werkzeuge/wirkungsrat/ – Institution und Governance
+/werkzeuge/wirkungsrat/ - Institution und Governance
 
-/werkzeuge/wirkungshaushalt/ – Haushaltslogik und öffentliche Mittel
+/werkzeuge/wirkungshaushalt/ - Haushaltslogik und öffentliche Mittel
 
-/werkzeuge/politische-wirkungspruefung/ – Programme und Gesetze prüfen
+/werkzeuge/politische-wirkungspruefung/ - Programme und Gesetze prüfen
 
-/werkzeuge/lawreader/ – Gesetzestexte online lesbar machen
+/werkzeuge/lawreader/ - Gesetzestexte online lesbar machen
 
 7. Mindeststandard für die Website
 
@@ -74,17 +74,17 @@ Wirkung als rechtlich gebundene Rückkopplung darstellen, nicht als technokratis
 
 Quellen und interne Referenzen
 
-Weber, Natalie: Die neue Ordnung des Wohlstands. Arbeitsfassung 2026. Besonders: Kapitel 10–23, 28, 31–40, 61–66.
+Weber, Natalie: Die neue Ordnung des Wohlstands. Arbeitsfassung 2026. Besonders: Kapitel 10-23, 28, 31-40, 61-66.
 
 Weber, Natalie: Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026.
 
 Weber, Natalie: Working-Paper Wirkungssteuergesetz (WStG), Stand 8.10.2025.
 
-Weber, Natalie: Der Wirkungsrat – Institutionelle Verankerung der Wirkungsökonomie, September 2025.
+Weber, Natalie: Der Wirkungsrat - Institutionelle Verankerung der Wirkungsökonomie, September 2025.
 
 Weber, Natalie: Technische Leitlinien zum Wirkungssteuergesetz (WUStG), Vollversion Extended, August 2025.
 
-Weber, Natalie: Whitepaper T-SROI – Der neue Standard für Impact-Controlling in der Wirkungsökonomie, 2025.
+Weber, Natalie: Whitepaper T-SROI - Der neue Standard für Impact-Controlling in der Wirkungsökonomie, 2025.
 
 Weber, Natalie: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026, Teil X Staat, Politik und Demokratie.
 

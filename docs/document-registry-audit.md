@@ -1,6 +1,6 @@
 # Document Registry Audit
 
-Stand: 2026-05-29
+Stand: 2026-05-28
 
 ## Zusammenfassung
 
@@ -10,7 +10,7 @@ Stand: 2026-05-29
 - Archivdokumente: 0
 - Dokumente mit Onlinefassung: 36
 - Aktuelle PDF-only Dokumente: 0
-- Rang- und Paketdateien in `assets/downloads/`: 409
+- Rang- und Paketdateien in `assets/downloads/`: 365
 
 ## Umfangseinordnung
 

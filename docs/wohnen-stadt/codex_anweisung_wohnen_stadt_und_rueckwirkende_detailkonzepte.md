@@ -1,4 +1,4 @@
-# Codex-Anweisung: Rang 5 – Wohnen & Stadt / Wohnwirkungsindex / Wohnwirkungsrechner
+# Codex-Anweisung: Rang 5 - Wohnen & Stadt / Wohnwirkungsindex / Wohnwirkungsrechner
 
 Du arbeitest im Repository von www.wirkungsoekonomie.de.
 
