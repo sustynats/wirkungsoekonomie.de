@@ -5,6 +5,7 @@ const registryPath = "assets/data/document-registry.json";
 const auditPath = "docs/document-registry-audit.md";
 const downloadsPath = "downloads.html";
 const libraryRoot = "bibliothek";
+const blogRoot = "blog";
 const siteUrl = "https://wirkungsoekonomie.de";
 
 const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
@@ -86,6 +87,74 @@ function escapeHtml(value) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+function stripHtml(value) {
+  return String(value || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractMeta(content, selector) {
+  const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const propertyMatch = content.match(new RegExp(`<meta\\s+[^>]*property=["']${escaped}["'][^>]*content=["']([^"']*)["'][^>]*>`, "i"));
+  if (propertyMatch) return propertyMatch[1];
+  const nameMatch = content.match(new RegExp(`<meta\\s+[^>]*name=["']${escaped}["'][^>]*content=["']([^"']*)["'][^>]*>`, "i"));
+  return nameMatch?.[1] || "";
+}
+
+function discoverHtmlFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const filePath = path.join(dir, entry.name);
+    if (entry.isDirectory()) return discoverHtmlFiles(filePath);
+    return entry.isFile() && entry.name.endsWith(".html") ? [filePath] : [];
+  });
+}
+
+function formatDateDe(value) {
+  const date = String(value || "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return "";
+  return new Intl.DateTimeFormat("de-DE", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(`${date}T00:00:00+02:00`));
+}
+
+function journalEntries() {
+  return discoverHtmlFiles(blogRoot)
+    .filter((filePath) => {
+      const normalized = filePath.split(path.sep).join("/");
+      return normalized !== "blog/index.html" && !normalized.includes("/dossiers/");
+    })
+    .map((filePath) => {
+      const content = fs.readFileSync(filePath, "utf8");
+      const url = `/${filePath.split(path.sep).join("/")}`;
+      const title = extractMeta(content, "og:title")
+        || stripHtml(content.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "").replace(/\s+-\s+Journal der Wirkungsökonomie$/, "");
+      const excerpt = extractMeta(content, "og:description") || extractMeta(content, "description");
+      const date = extractMeta(content, "article:published_time")
+        || content.match(/"datePublished"\s*:\s*"([^"]+)"/i)?.[1]
+        || filePath.match(/(\d{4}-\d{2}-\d{2})/)?.[1]
+        || "";
+      const category = extractMeta(content, "article:section") || "Journal";
+      return {
+        title,
+        excerpt,
+        date: String(date).slice(0, 10),
+        displayDate: formatDateDe(date),
+        category,
+        url,
+      };
+    })
+    .filter((entry) => entry.title && entry.url)
+    .sort((a, b) => {
+      const dateDelta = String(b.date || "").localeCompare(String(a.date || ""));
+      if (dateDelta) return dateDelta;
+      return String(a.title).localeCompare(String(b.title), "de");
+    });
 }
 
 function normalizePath(value) {
@@ -549,7 +618,42 @@ function groupedDocumentSections(documents) {
     .join("\n");
 }
 
+function journalLibrarySection(entries) {
+  const latestEntries = entries.slice(0, 5);
+  if (!latestEntries.length) return "";
+  const cards = latestEntries
+    .map((entry) => {
+      const meta = [entry.category, entry.displayDate].filter(Boolean).join(" · ");
+      return `<article class="card">
+              <p class="card-kicker">${escapeHtml(meta || "Journal")}</p>
+              <h3 class="card-title">${escapeHtml(entry.title)}</h3>
+              <p class="card-text">${escapeHtml(entry.excerpt)}</p>
+              <a class="text-link" href="${escapeHtml(entry.url)}">Beitrag lesen</a>
+            </article>`;
+    })
+    .join("\n");
+  return `<section class="section" aria-labelledby="journal-library-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Journal</p>
+            <h2 id="journal-library-title">Aktuelle Einordnungen aus dem Journal</h2>
+            <p>Das Journal ergänzt die Bibliothek um aktuelle wirkungsökonomische Analysen. Hier stehen die letzten fünf Beiträge; alle weiteren Texte sind in der Journal-Übersicht gesammelt.</p>
+          </div>
+          <div class="card-grid three">
+            ${cards}
+            <article class="card">
+              <p class="card-kicker">Übersicht</p>
+              <h3 class="card-title">Alle Journalbeiträge</h3>
+              <p class="card-text">Die vollständige Journal-Übersicht bündelt Leitartikel, Dossiers und aktuelle Analysen zur Wirkungsökonomie.</p>
+              <a class="btn btn-secondary" href="/blog.html">Zur Journal-Übersicht</a>
+            </article>
+          </div>
+        </div>
+      </section>`;
+}
+
 function buildDownloadsPage() {
+  const journalItems = journalEntries();
   const groupCards = libraryGroups
     .map((group) => {
       const count = currentDocuments.filter((document) => publicDocumentRole(document).key === group.key).length;
@@ -639,6 +743,11 @@ function buildDownloadsPage() {
           </div>
           <div class="library-overview-grid">
             ${groupCards}
+            <a class="library-overview-card" href="/blog.html">
+              <span>${escapeHtml(journalItems.length)} Beiträge</span>
+              <strong>Journal</strong>
+              <em>Aktuelle Einordnungen, Essays und Analysen zur Wirkungsökonomie. Die letzten fünf stehen zusätzlich direkt in der Bibliothek.</em>
+            </a>
             <a class="library-overview-card" href="/verstehen/sdgs-sdgplus/">
               <span>Referenzrahmen</span>
               <strong>SDGs &amp; SDG+</strong>
@@ -657,6 +766,8 @@ function buildDownloadsPage() {
           </div>
         </div>
       </section>
+
+      ${journalLibrarySection(journalItems)}
 
       <section class="section" id="dokumente">
         <div>
