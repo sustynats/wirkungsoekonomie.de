@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-29T12:03:58.159Z
+Stand: 2026-05-29T12:33:05.942Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 302 |
+| Begriffe im klassischen Glossar | 399 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 1123 |
+| Alias-Einträge | 1247 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -31,41 +31,65 @@ Stand: 2026-05-29T12:03:58.159Z
 | Agenda 2030 | Grundbegriff | ja | - | ja | ja | ok |
 | Alarm-Frame | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Ankereffekt | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Anpassungskapazität | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Anschlussfähigkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Arbitrageur | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Archetyp | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Autopoiesis | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Baseline-Verschiebung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Basisinnovation | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Benchmark | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Beobachterabhängigkeit | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Beobachtung zweiter Ordnung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Berichtsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Beschwerdemechanismus / Access to Remedy | Grundbegriff | ja | - | ja | ja | ok |
 | Bestätigungsfehler | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Bilanzraum | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Biodiversitätsrisiko | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Biodiversity Net Gain / No Net Loss | Grundbegriff | ja | - | ja | ja | ok |
+| Blindleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
+| Business Model | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
+| Business Model Canvas | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
+| Business Value | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Carbon Budget | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Carbon Credits | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | CBAM / Carbon Border Adjustment Mechanism | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Clean Industrial Deal | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Climate Neutral Claim | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
+| CO2e / CO2-Äquivalent | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Commons / Gemeingüter | Grundbegriff | ja | - | ja | ja | ok |
 | Conflict Minerals Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Cradle to Cradle | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Cradle-to-Gate | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Cradle-to-Grave | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | CSDDD | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | CSRD | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Dao / Tao | Daoismus, Prozessdenken und Nicht-Erzwingen | ja | - | ja | ja | ok |
 | Daseinsvorsorge | Grundbegriff | ja | - | ja | ja | ok |
 | Datenlücke | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Datenqualität | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Design Thinking | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Destruktive Vertrauensbindung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Destruktives Narrativ | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Diffusion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Digitaler Produktpass | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Dissonanzreduktion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | DNSH / Do No Significant Harm | Sustainable Finance | ja | ja | ja | ja | ok |
 | Doppelte Wesentlichkeit | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Effektivität | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Effektivität vs. Effizienz | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Effizienz | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | EFRAG | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Emergenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Emissionsfaktor | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Emotionsregulation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Empowering Consumers for the Green Transition | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Energiearmut | Grundbegriff | ja | - | ja | ja | ok |
+| Entropie | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
+| Environmental Product Declaration / EPD | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | EPD / Environmental Product Declaration | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Erfindung | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Erlernte Hilflosigkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Ermöglichende Tätigkeit | Sustainable Finance | ja | ja | ja | ja | ok |
 | Ernährungssouveränität | Grundbegriff | ja | - | ja | ja | ok |
@@ -81,20 +105,26 @@ Stand: 2026-05-29T12:03:58.159Z
 | EU-Taxonomie | Sustainable Finance | ja | ja | ja | ja | ok |
 | EUDR / EU Deforestation Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | European Green Deal / Europäischer Green Deal | EU-Politikrahmen | ja | ja | ja | ja | ok |
+| Evolutorischer Unternehmer | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Exposition | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Faktenargumentation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Faktencheck | Grundbegriff | ja | - | ja | ja | ok |
 | Faktenreaktanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | FinalScore | Messbegriff | ja | - | ja | ja | ok |
 | Fit for 55 | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Folgencheck | Grundbegriff | ja | - | ja | ja | ok |
-| Folgewirkung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Folgewirkung | WÖk-Begriff | ja | - | ja | ja | ok |
 | Forced Labour Regulation | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Frame / Framing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Generationengerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Geplante Obsoleszenz | Grundbegriff | ja | - | ja | ja | ok |
 | Gesellschaftliche Stabilität | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Gesundheitsgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
+| Gewinn als Test | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | GHG Protocol | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Global Warming Potential / GWP | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Glossar-Backlink-Audit | Glossar-Publizierungsprozess | ja | - | ja | ja | ok |
+| Glossar-Publizierungsprozess | Glossar-Publizierungsprozess | ja | - | ja | ja | ok |
 | Green Claims Directive | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | Green Deal Industrial Plan | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Greenwashing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
@@ -112,7 +142,7 @@ Stand: 2026-05-29T12:03:58.159Z
 | Hazardous Substances / gefährliche Stoffe | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Health Co-Benefits / Gesundheits-Co-Benefits | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Health Impact Assessment / HIA | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
-| Hebel / Hebelpunkt | WÖk-Begriff | ja | - | ja | ja | ok |
+| Hebelpunkt | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Hebelwirkung | WÖk-Begriff | ja | - | ja | ja | ok |
 | Herkunftsnachweis / HKN | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Herkunftstransparenz | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
@@ -131,8 +161,12 @@ Stand: 2026-05-29T12:03:58.159Z
 | IDGs | Grundbegriff | ja | - | ja | ja | ok |
 | ILO | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | ILO-Kernarbeitsnormen | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Impact Fit | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
+| Impact Value / Wirkungswert | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Impact-Washing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | In-Group / Out-Group-Dynamik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Innovation | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Innovativer Unternehmer | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Insetting | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Inside-out / Outside-in | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Interdependenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -142,22 +176,40 @@ Stand: 2026-05-29T12:03:58.159Z
 | IRO / Impacts, Risks and Opportunities | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | ISO 14040 / ISO 14044 | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | ISSB / IFRS S1 und IFRS S2 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Jobs-to-be-Done | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Just Transition Mechanism | EU-Politikrahmen | ja | ja | ja | ja | ok |
 | Kipppunkt / Schwellenwert | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kipppunkt / Systemschwelle | Grundbegriff | ja | - | ja | ja | ok |
+| Klimaanpassung / Adaptation | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Klimafolgeschäden / Loss and Damage | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Klimagerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | Klimaneutralität | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Klimarisiko | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Klimaschutz / Mitigation | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Klimawandel | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Kognitive Dissonanz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kohärenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Komplexitätsmanagement | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Kondratieff-Zyklus | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Konservative Annahme | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Konstruktives Narrativ | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Kosten des Nicht-Handelns | Grundbegriff | ja | - | ja | ja | ok |
+| Kreative Rekonstruktion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Kundennutzen | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Kybernetik | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
+| Kybernetik zweiter Ordnung | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | LCA / Life Cycle Assessment | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Lebenszyklusanalyse / LCA | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Lebenszyklusinventar / LCI | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Lebenszykluswirkungsabschätzung / LCIA | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Lernebenen | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Lernender Unternehmer | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Liability Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Lieferkettendaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Limited Assurance | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | LkSG / Lieferkettensorgfaltspflichtengesetz | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | Lock-in / Pfadabhängigkeit | Grundbegriff | ja | - | ja | ja | ok |
+| Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Material Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Mensch, Planet und Demokratie | Demokratiebegriff | ja | - | ja | ja | ok |
 | Meta-kognitive Intervention | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -178,19 +230,25 @@ Stand: 2026-05-29T12:03:58.159Z
 | NWI | Messbegriff | ja | - | ja | ja | ok |
 | neutrale Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | NFRD | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Nicht-Dualität | Daoismus, Prozessdenken und Nicht-Erzwingen | ja | - | ja | ja | ok |
 | Nichtkompensationsprinzip | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Nichttriviale Maschine | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Nichttriviales System | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Normalisierung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Normatives Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | OECD-Leitsätze | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
 | OEF / Organisation Environmental Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Offsetting / Kompensation | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Ökosystemleistungen / Ökosystemfunktionen | Grundbegriff | ja | - | ja | ja | ok |
 | One Health | Grundbegriff | ja | - | ja | ja | ok |
+| Operatives Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Organisation Environmental Footprint / OEF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Orientierung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | PAI / Principal Adverse Impacts | Sustainable Finance | ja | ja | ja | ja | ok |
 | PCF / Product Carbon Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | PCR / Product Category Rules | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | PEF / Product Environmental Footprint | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Persona | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Pfadabhängigkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Physical Climate Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Planetare Grenzen | Grundbegriff | ja | - | ja | ja | ok |
@@ -199,7 +257,11 @@ Stand: 2026-05-29T12:03:58.159Z
 | positive Wirkung | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Prävention | Grundbegriff | ja | - | ja | ja | ok |
 | Priming | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Product Carbon Footprint / PCF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Product Environmental Footprint / PEF | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Product-Market Fit | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
 | Produktdaten | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
+| Prozessdenken | Daoismus, Prozessdenken und Nicht-Erzwingen | ja | - | ja | ja | ok |
 | Qualitätssicherung | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Quartierswirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Quellenklarheit | WÖk-Übersetzung | ja | ja | ja | ja | ok |
@@ -210,10 +272,13 @@ Stand: 2026-05-29T12:03:58.159Z
 | Recyclingquote | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Reframing | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Regeneration / regenerative Wirkung | Grundbegriff | ja | - | ja | ja | ok |
+| Rekombination / neue Kombination | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Rekursion | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Renaturierung | Grundbegriff | ja | - | ja | ja | ok |
 | Reparierbarkeit / Recht auf Reparatur | Grundbegriff | ja | - | ja | ja | ok |
 | Residual Emissions | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Resilienz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Resonanz | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Resonanzarchitektur | Architekturbegriff | ja | - | ja | ja | ok |
 | Resonanzraum | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Resonanzrisiko | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
@@ -221,12 +286,17 @@ Stand: 2026-05-29T12:03:58.159Z
 | Reverse Merit Order | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Rezyklatanteil | Produkt- und Lebenszyklusdaten | ja | ja | ja | ja | ok |
 | Rohstoffkritikalität | Grundbegriff | ja | - | ja | ja | ok |
+| Routineunternehmer / Homo oeconomicus | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Rückkopplung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Salienz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Salienzsteuerung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | SBTi | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Scheinentlastung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Scheinleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
+| Schöpferische Zerstörung | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Schwellenwert | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Scope 1 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Scope 1, Scope 2, Scope 3 | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Scope 2 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Scope 3 | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Scorecard | WÖk-Übersetzung | ja | ja | ja | ja | ok |
@@ -235,6 +305,7 @@ Stand: 2026-05-29T12:03:58.159Z
 | SDG-Washing | Kommunikation, Claims und Greenwashing | ja | ja | ja | ja | ok |
 | SDGs | Grundbegriff | ja | - | ja | ja | ok |
 | Selbstorganisation | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Selbstreferenz | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Selbstwirksamkeit | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Sensemaking | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | SFDR | Sustainable Finance | ja | ja | ja | ja | ok |
@@ -242,15 +313,21 @@ Stand: 2026-05-29T12:03:58.159Z
 | Social Taxonomy / Sozialtaxonomie | Sustainable Finance | ja | ja | ja | ja | ok |
 | Soziale Bewährtheit / Social Proof | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Spekulationslogik | Grundbegriff | ja | - | ja | ja | ok |
+| St. Galler Management-Modell | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Status-quo-Bias | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Steuerungsdaten | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Stranded Assets | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Strategisches Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Strukturdeterminiertheit | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Strukturelle Kopplung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Strukturelles Driften | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Suffizienz | Grundbegriff | ja | - | ja | ja | ok |
 | Sustainable Finance | Sustainable Finance | ja | ja | ja | ja | ok |
+| Systemgrenze | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Systemische Kohärenz | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Systemorientiertes Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | T-SROI | Messbegriff | ja | - | ja | ja | ok |
+| Tank-to-Wheel | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Taxonomie-KPIs | Sustainable Finance | ja | ja | ja | ja | ok |
 | Taxonomiefähigkeit | Sustainable Finance | ja | ja | ja | ja | ok |
 | Taxonomiekonformität | Sustainable Finance | ja | ja | ja | ja | ok |
@@ -258,25 +335,42 @@ Stand: 2026-05-29T12:03:58.159Z
 | TCFD | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Technische Bewertungskriterien | Sustainable Finance | ja | ja | ja | ja | ok |
 | TNFD | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Transformationswelle | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Transformationswirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Transition Finance | Sustainable Finance | ja | ja | ja | ja | ok |
 | Transition Plan | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
 | Transition Risk | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Treibhausgasemissionen | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Triviale Maschine | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Übergangstätigkeit | Sustainable Finance | ja | ja | ja | ja | ok |
 | Umweltgerechtigkeit | Grundbegriff | ja | - | ja | ja | ok |
 | UN Guiding Principles on Business and Human Rights | Lieferketten und Sorgfaltspflichten | ja | ja | ja | ja | ok |
+| Unternehmerfunktion | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Unternehmerisches Lernen | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
+| Value Proposition | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
+| Value Proposition Canvas | Design, Geschäftsmodelle und Wertversprechen | ja | - | ja | ja | ok |
+| Varietät | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | Verfügbarkeitsheuristik | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Verlustaversion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Verlustleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Vermeidene Schäden / vermiedene Folgekosten | Grundbegriff | ja | - | ja | ja | ok |
 | Vertrauen | Demokratiebegriff | ja | - | ja | ja | ok |
 | Vertrauensverschiebung | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Viabilität | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
+| Viable System Model | Systemtheorie, Kybernetik und Konstruktivismus | ja | - | ja | ja | ok |
 | VSME | Reporting und Prüfung | ja | ja | ja | ja | ok |
+| Vulnerabilität | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Warmmietenneutralität | Grundbegriff | ja | - | ja | ja | ok |
 | Wasserstress | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Well-to-Tank | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
+| Well-to-Wheel | Klima, Lebenszyklus und ökologische Wirkung | ja | - | ja | ja | ok |
 | Wesentlicher Beitrag | Sustainable Finance | ja | ja | ja | ja | ok |
 | WHO | Klima, Natur und Risiken | ja | ja | ja | ja | ok |
+| Wirkleistung | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Wirklichkeitskonstruktion | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Wirkmechanismus | Grundbegriff | ja | - | ja | ja | ok |
+| Wirksames Management | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
+| Wirksamkeit | Management, Wirksamkeit und Organisation | ja | - | ja | ja | ok |
 | Wirkstoff | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Wirkung | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungsarchitektur | Architekturbegriff | ja | - | ja | ja | ok |
@@ -287,9 +381,11 @@ Stand: 2026-05-29T12:03:58.159Z
 | Wirkungseinkommen | Messbegriff | ja | - | ja | ja | ok |
 | Wirkungsempfänger | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungsfonds | Messbegriff | ja | - | ja | ja | ok |
+| Wirkungsgrad | Physik, Energie und Wirkungsmetaphern | ja | - | ja | ja | ok |
 | Wirkungsgrenze | Bewertungsbegriff | ja | - | ja | ja | ok |
 | Wirkungshaushalt | Messbegriff | ja | - | ja | ja | ok |
 | Wirkungsindikator | WÖk-Übersetzung | ja | ja | ja | ja | ok |
+| Wirkungsinnovation | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Wirkungsintegration | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
 | Wirkungskompetenz | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungslenkung | Steuerungsbegriff | ja | - | ja | ja | ok |
@@ -319,6 +415,7 @@ Stand: 2026-05-29T12:03:58.159Z
 | Wohnwirkung | Grundbegriff | ja | - | ja | ja | ok |
 | WÖk-ID | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | WStG | Messbegriff | ja | - | ja | ja | ok |
+| Wu Wei / Nicht-Erzwingen | Daoismus, Prozessdenken und Nicht-Erzwingen | ja | - | ja | ja | ok |
 | WUStG | Messbegriff | ja | - | ja | ja | ok |
 | XBRL | Reporting und Prüfung | ja | ja | ja | ja | ok |
 | Youth / Jugendbeteiligung | Grundbegriff | ja | - | ja | ja | ok |

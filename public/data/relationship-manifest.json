@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T12:04:29.141Z",
+  "generatedAt": "2026-05-29T12:33:39.808Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -16,7 +16,8 @@
         "alarm-frame",
         "framing",
         "emotionsregulation",
-        "verfuegbarkeitsheuristik"
+        "verfuegbarkeitsheuristik",
+        "kognitive-dissonanz"
       ],
       "documents": []
     },
@@ -24,7 +25,11 @@
       "terms": [
         "sdgs",
         "sdg-plus",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "hunger-hungerbekaempfung",
+        "idgs",
+        "mensch-planet-demokratie",
+        "sdg-sdgplus-referenzrahmen"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -42,7 +47,12 @@
         "scheinentlastung",
         "emotionsregulation",
         "wirkstoff",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "verlustaversion",
+        "baseline-verschiebung",
+        "destruktives-narrativ",
+        "resonanzrisiko",
+        "affektheuristik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -53,30 +63,53 @@
         "framing",
         "priming",
         "salienz",
-        "preiswahrheit",
         "wirkstoff"
+      ],
+      "documents": []
+    },
+    "anpassungskapazitaet": {
+      "terms": [
+        "klimaanpassung",
+        "vulnerabilitaet",
+        "wirkungsresilienz",
+        "vertrauen",
+        "klimarisiko",
+        "exposition"
       ],
       "documents": []
     },
     "anschlussfaehigkeit": {
       "terms": [
         "resonanzraum",
+        "strukturdeterminiertheit",
+        "diffusion",
         "wirkungspotenzial",
+        "wirkungsdaten",
         "reframing",
-        "orientierung",
-        "vertrauen",
-        "wirkungsintegration"
+        "zukunftsbild",
+        "wirklichkeitskonstruktion",
+        "resonanz",
+        "glossar-backlink-audit"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "arbitrageur": {
+      "terms": [
+        "routineunternehmer",
+        "business-value",
+        "impact-value"
+      ],
+      "documents": []
     },
     "archetyp": {
       "terms": [
         "benchmark",
         "scorecard",
         "woek-id",
-        "nace"
+        "nace",
+        "wirkungsrat"
       ],
       "documents": []
     },
@@ -85,7 +118,8 @@
         "limited-assurance",
         "reasonable-assurance",
         "datenqualitaet",
-        "csrd"
+        "csrd",
+        "qualitaetssicherung"
       ],
       "documents": []
     },
@@ -95,7 +129,9 @@
         "strukturelle-kopplung",
         "selbstorganisation",
         "wirklichkeitskonstruktion",
-        "beobachtung-zweiter-ordnung"
+        "beobachtung-zweiter-ordnung",
+        "strukturdeterminiertheit",
+        "selbstreferenz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -107,11 +143,21 @@
         "strukturelles-driften",
         "alarm-frame",
         "destruktives-narrativ",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "scheinentlastung",
+        "kipppunkt"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "basisinnovation": {
+      "terms": [
+        "kondratieff-zyklus",
+        "transformationswelle",
+        "wirkungsinnovation"
+      ],
+      "documents": []
     },
     "benchmark": {
       "terms": [
@@ -119,7 +165,17 @@
         "finalscore",
         "woek-id",
         "archetyp",
-        "datenqualitaet"
+        "datenqualitaet",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
+    "beobachterabhaengigkeit": {
+      "terms": [
+        "beobachtung-zweiter-ordnung",
+        "wirklichkeitskonstruktion",
+        "scorecard",
+        "folgencheck"
       ],
       "documents": []
     },
@@ -128,7 +184,12 @@
         "meta-kognitive-intervention",
         "wirklichkeitskonstruktion",
         "framing",
-        "folgencheck"
+        "folgencheck",
+        "wirkungskompetenz",
+        "autopoiesis",
+        "selbstreferenz",
+        "beobachterabhaengigkeit",
+        "kybernetik-zweiter-ordnung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -140,7 +201,16 @@
         "esrs",
         "sfdr",
         "steuerungsdaten",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "esap",
+        "esef",
+        "esrs-themenstandards",
+        "gri",
+        "issb-ifrs-s1-s2",
+        "nfrd",
+        "taxonomy-kpis",
+        "vsme",
+        "xbrl"
       ],
       "documents": []
     },
@@ -160,11 +230,21 @@
         "identitaetsschutz",
         "verfuegbarkeitsheuristik",
         "resonanzraum",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "wirkungsblindheit",
+        "meta-kognitive-intervention"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "bilanzraum": {
+      "terms": [
+        "systemgrenze",
+        "wirkungshaushalt",
+        "product-carbon-footprint"
+      ],
+      "documents": []
     },
     "biodiversitaetsrisiko": {
       "terms": [
@@ -173,7 +253,15 @@
         "ipbes",
         "eudr",
         "habitatverlust",
-        "habitatfragmentierung"
+        "habitatfragmentierung",
+        "biodiversity-net-gain-no-net-loss",
+        "ernaehrungssouveraenitaet",
+        "humusaufbau",
+        "hydrologischer-kreislauf",
+        "nature-positive",
+        "oekosystemleistungen",
+        "one-health",
+        "planetare-grenzen"
       ],
       "documents": []
     },
@@ -185,12 +273,58 @@
       ],
       "documents": []
     },
+    "blindleistung": {
+      "terms": [
+        "scheinleistung",
+        "wirkleistung",
+        "verlustleistung"
+      ],
+      "documents": []
+    },
+    "business-model": {
+      "terms": [
+        "business-model-canvas",
+        "business-value",
+        "impact-value"
+      ],
+      "documents": []
+    },
+    "business-model-canvas": {
+      "terms": [
+        "business-model",
+        "value-proposition-canvas",
+        "impact-fit"
+      ],
+      "documents": []
+    },
+    "business-value": {
+      "terms": [
+        "impact-value",
+        "kundennutzen",
+        "business-model",
+        "positive-netto-wirkung",
+        "gewinn-als-test",
+        "arbitrageur",
+        "product-market-fit"
+      ],
+      "documents": []
+    },
+    "carbon-budget": {
+      "terms": [
+        "klimaschutz",
+        "treibhausgasemissionen",
+        "wirkungsgrenze"
+      ],
+      "documents": []
+    },
     "carbon-credits": {
       "terms": [
         "offsetting-kompensation",
         "net-zero",
         "greenwashing",
-        "nichtkompensationsprinzip"
+        "nichtkompensationsprinzip",
+        "climate-neutral-claim",
+        "residual-emissions"
       ],
       "documents": []
     },
@@ -199,8 +333,9 @@
         "fit-for-55",
         "ghg-protocol",
         "scope-3",
-        "produktwirkung",
-        "wirkungssteuer"
+        "wirkungssteuer",
+        "clean-industrial-deal",
+        "european-green-deal"
       ],
       "documents": []
     },
@@ -210,7 +345,9 @@
         "sustainable-finance",
         "transition-finance",
         "cbam",
-        "espr"
+        "espr",
+        "green-deal-industrial-plan",
+        "transition-risk"
       ],
       "documents": []
     },
@@ -219,7 +356,18 @@
         "klimaneutralitaet",
         "offsetting-kompensation",
         "greenwashing",
-        "carbon-credits"
+        "carbon-credits",
+        "empowering-consumers-green-transition",
+        "green-claims-directive"
+      ],
+      "documents": []
+    },
+    "co2e": {
+      "terms": [
+        "global-warming-potential",
+        "treibhausgasemissionen",
+        "product-carbon-footprint",
+        "klimaschutz"
       ],
       "documents": []
     },
@@ -238,13 +386,41 @@
       ],
       "documents": []
     },
+    "cradle-to-cradle": {
+      "terms": [
+        "cradle-to-grave",
+        "kreative-rekonstruktion"
+      ],
+      "documents": []
+    },
+    "cradle-to-gate": {
+      "terms": [
+        "cradle-to-grave",
+        "lebenszyklusanalyse",
+        "systemgrenze"
+      ],
+      "documents": []
+    },
+    "cradle-to-grave": {
+      "terms": [
+        "cradle-to-gate",
+        "cradle-to-cradle",
+        "lebenszyklusanalyse"
+      ],
+      "documents": []
+    },
     "csddd": {
       "terms": [
         "lksg",
         "un-guiding-principles",
         "oecd-leitsaetze",
         "ilo-kernarbeitsnormen",
-        "lieferkettendaten"
+        "lieferkettendaten",
+        "beschwerdemechanismus-access-to-remedy",
+        "conflict-minerals-regulation",
+        "human-rights-due-diligence",
+        "human-rights-impact-assessment",
+        "social-taxonomy"
       ],
       "documents": []
     },
@@ -253,12 +429,23 @@
         "esrs",
         "esg",
         "wirkungsdatenraum",
-        "reporting",
         "efrag",
         "doppelte-wesentlichkeit",
         "iro",
         "xbrl",
-        "esap"
+        "esap",
+        "assurance",
+        "berichtsdaten",
+        "esrs-themenstandards",
+        "eu-taxonomie",
+        "european-green-deal",
+        "gri",
+        "inside-out-outside-in",
+        "nachhaltigkeit",
+        "nfrd",
+        "social-taxonomy",
+        "sustainable-finance",
+        "vsme"
       ],
       "documents": [],
       "journalArticles": [
@@ -267,6 +454,15 @@
         "/blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html",
         "/blog/soziale-resilienz-gegen-verhetzung.html"
       ]
+    },
+    "dao": {
+      "terms": [
+        "wu-wei",
+        "prozessdenken",
+        "selbstorganisation",
+        "nicht-dualitaet"
+      ],
+      "documents": []
     },
     "daseinsvorsorge": {
       "terms": [
@@ -287,7 +483,27 @@
         "datenluecke",
         "konservative-annahme",
         "assurance",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "benchmark",
+        "impact-washing",
+        "limited-assurance",
+        "qualitaetssicherung",
+        "quellenklarheit",
+        "reasonable-assurance",
+        "vsme",
+        "wirkungsindikator",
+        "wirkungsregister",
+        "woek-id",
+        "emissionsfaktor",
+        "lebenszyklusinventar"
+      ],
+      "documents": []
+    },
+    "design-thinking": {
+      "terms": [
+        "persona",
+        "value-proposition",
+        "impact-fit"
       ],
       "documents": []
     },
@@ -312,11 +528,23 @@
         "alarm-frame",
         "destruktive-vertrauensbindung",
         "vertrauensverschiebung",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "baseline-verschiebung",
+        "resonanzrisiko",
+        "ingroup-outgroup-dynamik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "diffusion": {
+      "terms": [
+        "innovation",
+        "anschlussfaehigkeit",
+        "transformationswirkung",
+        "erfindung"
+      ],
+      "documents": []
     },
     "digitaler-produktpass": {
       "terms": [
@@ -327,7 +555,17 @@
         "produktdaten",
         "pcf-product-carbon-footprint",
         "material-footprint",
-        "herkunftstransparenz"
+        "herkunftstransparenz",
+        "eudr",
+        "geplante-obsoleszenz",
+        "hazardous-substances",
+        "herkunftsnachweis-hkn",
+        "lieferkettendaten",
+        "reparierbarkeit-recht-auf-reparatur",
+        "rezyklatanteil",
+        "rohstoffkritikalitaet",
+        "zirkularitaet",
+        "environmental-product-declaration"
       ],
       "documents": []
     },
@@ -350,7 +588,9 @@
         "eu-taxonomie",
         "nichtkompensationsprinzip",
         "reverse-merit-order",
-        "technische-bewertungskriterien"
+        "technische-bewertungskriterien",
+        "taxonomiekonformitaet",
+        "wesentlicher-beitrag"
       ],
       "documents": []
     },
@@ -359,7 +599,36 @@
         "csrd",
         "esrs",
         "iro",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "inside-out-outside-in"
+      ],
+      "documents": []
+    },
+    "effektivitaet": {
+      "terms": [
+        "effizienz",
+        "effektivitaet-vs-effizienz",
+        "wirksamkeit",
+        "positive-netto-wirkung",
+        "wirksames-management"
+      ],
+      "documents": []
+    },
+    "effektivitaet-vs-effizienz": {
+      "terms": [
+        "effektivitaet",
+        "effizienz",
+        "verlustleistung",
+        "wirkung"
+      ],
+      "documents": []
+    },
+    "effizienz": {
+      "terms": [
+        "effektivitaet",
+        "effektivitaet-vs-effizienz",
+        "wirkungsgrad",
+        "verlustleistung"
       ],
       "documents": []
     },
@@ -384,6 +653,15 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "emissionsfaktor": {
+      "terms": [
+        "treibhausgasemissionen",
+        "product-carbon-footprint",
+        "lebenszyklusanalyse",
+        "datenqualitaet"
+      ],
+      "documents": []
+    },
     "emotionsregulation": {
       "terms": [
         "kognitive-dissonanz",
@@ -391,7 +669,11 @@
         "faktenreaktanz",
         "reframing",
         "orientierung",
-        "resonanzraum"
+        "resonanzraum",
+        "dissonanzreduktion",
+        "alarm-frame",
+        "meta-kognitive-intervention",
+        "affektheuristik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -414,12 +696,37 @@
       ],
       "documents": []
     },
+    "entropie": {
+      "terms": [
+        "verlustleistung",
+        "wirkungsresilienz",
+        "systemgrenze"
+      ],
+      "documents": []
+    },
+    "environmental-product-declaration": {
+      "terms": [
+        "lebenszyklusanalyse",
+        "product-environmental-footprint",
+        "digitaler-produktpass"
+      ],
+      "documents": []
+    },
     "epd": {
       "terms": [
         "lca",
         "pcr-product-category-rules",
         "pef-product-environmental-footprint",
-        "produktdaten"
+        "produktdaten",
+        "iso-14040-14044"
+      ],
+      "documents": []
+    },
+    "erfindung": {
+      "terms": [
+        "innovation",
+        "diffusion",
+        "wirkungspotenzial"
       ],
       "documents": []
     },
@@ -455,7 +762,9 @@
         "esrs",
         "xbrl",
         "berichtsdaten",
-        "wirkungsdatenraum"
+        "wirkungsdatenraum",
+        "esef",
+        "sustainable-finance"
       ],
       "documents": []
     },
@@ -475,7 +784,8 @@
         "wirkungsrisiko",
         "sustainable-finance",
         "sfdr",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "social-taxonomy"
       ],
       "documents": []
     },
@@ -484,7 +794,9 @@
         "digitaler-produktpass",
         "produktdaten",
         "pef-product-environmental-footprint",
-        "rezyklatanteil"
+        "rezyklatanteil",
+        "clean-industrial-deal",
+        "recyclingquote"
       ],
       "documents": []
     },
@@ -496,7 +808,16 @@
         "efrag",
         "esrs-themenstandards",
         "doppelte-wesentlichkeit",
-        "iro"
+        "iro",
+        "berichtsdaten",
+        "esap",
+        "eu-taxonomie",
+        "european-green-deal",
+        "gri",
+        "nfrd",
+        "social-taxonomy",
+        "sustainable-finance",
+        "vsme"
       ],
       "documents": []
     },
@@ -513,7 +834,9 @@
         "fit-for-55",
         "net-zero",
         "transition-plan",
-        "transition-risk"
+        "transition-risk",
+        "european-green-deal",
+        "ipcc"
       ],
       "documents": []
     },
@@ -543,14 +866,18 @@
         "taxonomiefaehigkeit",
         "taxonomiekonformitaet",
         "dnsh",
-        "mindestschutz",
         "technische-bewertungskriterien",
         "nace",
         "mindestschutz-minimum-safeguards",
         "taxonomy-kpis",
         "uebergangstaetigkeit",
         "ermoeglichende-taetigkeit",
-        "sustainable-finance"
+        "sustainable-finance",
+        "eu-green-bond-standard",
+        "european-green-deal",
+        "sfdr",
+        "taxonomy-navigator",
+        "wesentlicher-beitrag"
       ],
       "documents": [],
       "journalArticles": [
@@ -562,7 +889,9 @@
         "lieferkettendaten",
         "biodiversitaetsrisiko",
         "digitaler-produktpass",
-        "produktdaten"
+        "produktdaten",
+        "habitatverlust",
+        "herkunftstransparenz"
       ],
       "documents": []
     },
@@ -580,6 +909,22 @@
       ],
       "documents": []
     },
+    "evolutorischer-unternehmer": {
+      "terms": [
+        "unternehmerisches-lernen",
+        "wirkungsinnovation",
+        "transformationswelle"
+      ],
+      "documents": []
+    },
+    "exposition": {
+      "terms": [
+        "vulnerabilitaet",
+        "klimarisiko",
+        "anpassungskapazitaet"
+      ],
+      "documents": []
+    },
     "faktenargumentation": {
       "terms": [
         "faktencheck",
@@ -588,7 +933,11 @@
         "meta-kognitive-intervention",
         "vertrauen",
         "resonanzraum",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "wirkstoff",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "kognitive-dissonanz"
       ],
       "documents": []
     },
@@ -597,7 +946,10 @@
         "folgencheck",
         "wirkstoff",
         "wirkungspotenzial",
-        "wirkungspfad"
+        "wirkungspfad",
+        "quellenklarheit",
+        "faktenreaktanz",
+        "faktenargumentation"
       ],
       "documents": [
         "faktencheck-folgencheck-v1-1"
@@ -614,7 +966,12 @@
         "identitaetsschutz",
         "reaktanz",
         "meta-kognitive-intervention",
-        "reframing"
+        "reframing",
+        "wirkungsdaten",
+        "kognitive-dissonanz",
+        "emotionsregulation",
+        "vertrauensverschiebung",
+        "faktenargumentation"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt",
@@ -625,7 +982,9 @@
       "terms": [
         "scorecard",
         "reverse-merit-order",
-        "netto-wirkung"
+        "netto-wirkung",
+        "benchmark",
+        "nwi"
       ],
       "documents": []
     },
@@ -634,7 +993,9 @@
         "eu-climate-law",
         "cbam",
         "ghg-protocol",
-        "transition-risk"
+        "transition-risk",
+        "european-green-deal",
+        "green-deal-industrial-plan"
       ],
       "documents": []
     },
@@ -644,7 +1005,17 @@
         "wirkstoff",
         "wirkungsraum",
         "wirkungspfad",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "greenwashing",
+        "haltung",
+        "handlungsdruck",
+        "handlungspfad",
+        "impact-washing",
+        "quellenklarheit",
+        "wirkungswahrheit",
+        "beobachtung-zweiter-ordnung",
+        "faktenargumentation",
+        "beobachterabhaengigkeit"
       ],
       "documents": [
         "faktencheck-folgencheck-v1-1"
@@ -659,7 +1030,9 @@
         "wirkungspfad",
         "rueckkopplung",
         "interdependenz",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "klimafolgeschaeden",
+        "wirkungsblindheit"
       ],
       "documents": []
     },
@@ -682,7 +1055,11 @@
         "wirkstoff",
         "priming",
         "ankereffekt",
-        "affektheuristik"
+        "affektheuristik",
+        "salienz",
+        "verlustaversion",
+        "beobachtung-zweiter-ordnung",
+        "wirklichkeitskonstruktion"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -711,8 +1088,9 @@
         "vertrauen",
         "systemische-kohaerenz",
         "wirkungsresilienz",
-        "demokratie",
-        "orientierung"
+        "orientierung",
+        "erlernte-hilflosigkeit",
+        "resilienz"
       ],
       "documents": [],
       "journalArticles": [
@@ -727,13 +1105,51 @@
       ],
       "documents": []
     },
+    "gewinn-als-test": {
+      "terms": [
+        "business-value",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": []
+    },
     "ghg-protocol": {
       "terms": [
         "scope-1",
         "scope-2",
         "scope-3",
         "pcf-product-carbon-footprint",
-        "sbti"
+        "sbti",
+        "cbam",
+        "fit-for-55",
+        "hard-to-abate-sektoren",
+        "herkunftsnachweis-hkn",
+        "hfcs-hydrofluorocarbons"
+      ],
+      "documents": []
+    },
+    "global-warming-potential": {
+      "terms": [
+        "co2e",
+        "treibhausgasemissionen",
+        "product-carbon-footprint"
+      ],
+      "documents": []
+    },
+    "glossar-backlink-audit": {
+      "terms": [
+        "glossar-publizierungsprozess",
+        "anschlussfaehigkeit",
+        "resonanzraum"
+      ],
+      "documents": []
+    },
+    "glossar-publizierungsprozess": {
+      "terms": [
+        "glossar-backlink-audit",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko"
       ],
       "documents": []
     },
@@ -742,7 +1158,8 @@
         "greenwashing",
         "impact-washing",
         "climate-neutral-claim",
-        "nachhaltigkeitslabel"
+        "nachhaltigkeitslabel",
+        "responsible-marketing"
       ],
       "documents": []
     },
@@ -761,13 +1178,24 @@
         "sdg-washing",
         "green-claims-directive",
         "folgencheck",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "fuenftes-p-planet",
+        "carbon-credits",
+        "climate-neutral-claim",
+        "empowering-consumers-green-transition",
+        "eu-ecolabel",
+        "herkunftsnachweis-hkn",
+        "klimaneutralitaet",
+        "liability-risk",
+        "nachhaltigkeitslabel",
+        "nature-positive",
+        "residual-emissions",
+        "responsible-marketing"
       ],
       "documents": []
     },
     "gri": {
       "terms": [
-        "reporting",
         "csrd",
         "esrs",
         "berichtsdaten"
@@ -779,7 +1207,8 @@
         "habitatverlust",
         "biodiversitaetsrisiko",
         "nature-related-risks",
-        "ipbes"
+        "ipbes",
+        "renaturierung"
       ],
       "documents": []
     },
@@ -810,7 +1239,8 @@
         "wirkung",
         "wirkungspotenzial",
         "wirkungspfad",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "handlungspfad"
       ],
       "documents": [],
       "journalArticles": [
@@ -833,7 +1263,8 @@
       "terms": [
         "handlungsspielraum",
         "wirkungsresilienz",
-        "wirkungskompetenz"
+        "wirkungskompetenz",
+        "mobilitaetsarmut"
       ],
       "documents": []
     },
@@ -851,7 +1282,9 @@
         "handlungsfaehigkeit",
         "wirkung",
         "wirkungskompetenz",
-        "mensch-planet-demokratie"
+        "mensch-planet-demokratie",
+        "mobilitaetsarmut",
+        "zugangsgerechtigkeit"
       ],
       "documents": []
     },
@@ -903,7 +1336,10 @@
         "hitzestress",
         "health-co-benefits",
         "gesundheitsgerechtigkeit",
-        "one-health"
+        "one-health",
+        "hitzeschutz-hitzeaktionsplan",
+        "praevention",
+        "vermeidene-schaeden-folgekosten"
       ],
       "documents": []
     },
@@ -912,7 +1348,11 @@
         "hebelwirkung",
         "wirkungsrueckkopplung",
         "wirkungspfad",
-        "wirkungssteuer"
+        "wirkungssteuer",
+        "wirkungslenkung",
+        "transformationswirkung",
+        "rueckkopplung",
+        "systemgrenze"
       ],
       "documents": [],
       "journalArticles": [
@@ -964,7 +1404,10 @@
         "hitzestress",
         "health-impact-assessment",
         "wirkungsresilienz",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "naturbasierte-loesungen",
+        "physical-climate-risk",
+        "quartierswirkung"
       ],
       "documents": []
     },
@@ -976,7 +1419,9 @@
         "wirkungsresilienz",
         "gesundheitsgerechtigkeit",
         "klimagerechtigkeit",
-        "umweltgerechtigkeit"
+        "umweltgerechtigkeit",
+        "hydrologischer-kreislauf",
+        "planetary-health"
       ],
       "documents": []
     },
@@ -1018,7 +1463,9 @@
         "ilo-kernarbeitsnormen",
         "csddd",
         "lksg",
-        "beschwerdemechanismus-access-to-remedy"
+        "beschwerdemechanismus-access-to-remedy",
+        "human-rights-impact-assessment",
+        "rohstoffkritikalitaet"
       ],
       "documents": []
     },
@@ -1039,7 +1486,9 @@
         "positive-netto-wirkung",
         "lca",
         "regeneration",
-        "renaturierung"
+        "renaturierung",
+        "hunger-hungerbekaempfung",
+        "hydrologischer-kreislauf"
       ],
       "documents": []
     },
@@ -1072,7 +1521,8 @@
         "vertrauensverschiebung",
         "kognitive-dissonanz",
         "resonanzraum",
-        "ingroup-outgroup-dynamik"
+        "ingroup-outgroup-dynamik",
+        "bestaetigungsfehler"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1102,7 +1552,35 @@
         "forced-labour-regulation",
         "mindestschutz-minimum-safeguards",
         "social-taxonomy",
-        "lieferkettendaten"
+        "lieferkettendaten",
+        "csddd",
+        "human-rights-due-diligence",
+        "ilo"
+      ],
+      "documents": []
+    },
+    "impact-fit": {
+      "terms": [
+        "product-market-fit",
+        "positive-netto-wirkung",
+        "wirkungsraum",
+        "wirkungsempfaenger",
+        "design-thinking",
+        "jobs-to-be-done",
+        "value-proposition",
+        "value-proposition-canvas",
+        "business-model-canvas"
+      ],
+      "documents": []
+    },
+    "impact-value": {
+      "terms": [
+        "business-value",
+        "positive-netto-wirkung",
+        "t-sroi",
+        "kundennutzen",
+        "arbitrageur",
+        "business-model"
       ],
       "documents": []
     },
@@ -1112,7 +1590,9 @@
         "sdg-washing",
         "wirkungspfad",
         "datenqualitaet",
-        "folgencheck"
+        "folgencheck",
+        "green-claims-directive",
+        "responsible-marketing"
       ],
       "documents": []
     },
@@ -1121,8 +1601,31 @@
         "identitaetsschutz",
         "motiviertes-denken",
         "destruktives-narrativ",
-        "vertrauensverschiebung",
-        "polarisierung"
+        "vertrauensverschiebung"
+      ],
+      "documents": []
+    },
+    "innovation": {
+      "terms": [
+        "erfindung",
+        "diffusion",
+        "wirkungsinnovation",
+        "positive-netto-wirkung",
+        "rekombination",
+        "schoepferische-zerstoerung",
+        "kondratieff-zyklus"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.html"
+      ]
+    },
+    "innovativer-unternehmer": {
+      "terms": [
+        "unternehmerfunktion",
+        "rekombination",
+        "wirkungsinnovation",
+        "routineunternehmer"
       ],
       "documents": []
     },
@@ -1150,7 +1653,9 @@
         "positive-netto-wirkung",
         "reverse-merit-order",
         "nichttriviales-system",
-        "emergenz"
+        "emergenz",
+        "folgewirkung",
+        "nicht-dualitaet"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1164,7 +1669,9 @@
       "terms": [
         "biodiversitaetsrisiko",
         "nature-related-risks",
-        "tnfd"
+        "tnfd",
+        "habitatfragmentierung",
+        "habitatverlust"
       ],
       "documents": []
     },
@@ -1180,7 +1687,9 @@
       "terms": [
         "esrs",
         "doppelte-wesentlichkeit",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "csrd",
+        "inside-out-outside-in"
       ],
       "documents": []
     },
@@ -1197,7 +1706,16 @@
         "tcfd",
         "transition-risk",
         "physical-climate-risk",
-        "berichtsdaten"
+        "berichtsdaten",
+        "tnfd"
+      ],
+      "documents": []
+    },
+    "jobs-to-be-done": {
+      "terms": [
+        "kundennutzen",
+        "value-proposition",
+        "impact-fit"
       ],
       "documents": []
     },
@@ -1205,17 +1723,17 @@
       "terms": [
         "transition-finance",
         "wirkungsfonds",
-        "wirkungseinkommen"
+        "wirkungseinkommen",
+        "klimagerechtigkeit"
       ],
       "documents": []
     },
     "kipppunkt": {
       "terms": [
+        "schwellenwert",
+        "klimarisiko",
         "wirkungsrisiko",
-        "wirkungsresilienz",
-        "baseline-verschiebung",
-        "nichttriviales-system",
-        "rueckkopplung"
+        "baseline-verschiebung"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1229,9 +1747,32 @@
       ],
       "documents": []
     },
+    "klimaanpassung": {
+      "terms": [
+        "klimarisiko",
+        "vulnerabilitaet",
+        "anpassungskapazitaet",
+        "wirkungsresilienz",
+        "klimawandel",
+        "klimaschutz"
+      ],
+      "documents": []
+    },
+    "klimafolgeschaeden": {
+      "terms": [
+        "folgewirkung",
+        "klimarisiko",
+        "treibhausgasemissionen",
+        "klimawandel",
+        "verlustleistung"
+      ],
+      "documents": []
+    },
     "klimagerechtigkeit": {
       "terms": [
-        "just-transition-mechanism"
+        "just-transition-mechanism",
+        "hitzestress",
+        "wirkungssteuer"
       ],
       "documents": []
     },
@@ -1243,6 +1784,47 @@
         "offsetting-kompensation"
       ],
       "documents": []
+    },
+    "klimarisiko": {
+      "terms": [
+        "klimafolgeschaeden",
+        "vulnerabilitaet",
+        "exposition",
+        "anpassungskapazitaet",
+        "wirkungsrisiko",
+        "kipppunkt",
+        "klimaanpassung"
+      ],
+      "documents": []
+    },
+    "klimaschutz": {
+      "terms": [
+        "treibhausgasemissionen",
+        "co2e",
+        "carbon-budget",
+        "klimaanpassung",
+        "klimawandel"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html",
+        "/blog/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.html",
+        "/blog/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.html",
+        "/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html"
+      ]
+    },
+    "klimawandel": {
+      "terms": [
+        "treibhausgasemissionen",
+        "klimaschutz",
+        "klimaanpassung",
+        "klimafolgeschaeden"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.html",
+        "/blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html"
+      ]
     },
     "kognitive-dissonanz": {
       "terms": [
@@ -1259,7 +1841,10 @@
         "faktenreaktanz",
         "status-quo-bias",
         "affektheuristik",
-        "selbstwirksamkeit"
+        "selbstwirksamkeit",
+        "scheinentlastung",
+        "alarm-frame",
+        "kohaerenz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1271,11 +1856,30 @@
         "orientierung",
         "kognitive-dissonanz",
         "wirkungsintegration",
-        "vertrauen"
+        "vertrauen",
+        "dissonanzreduktion",
+        "sensemaking"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "komplexitaetsmanagement": {
+      "terms": [
+        "varietaet",
+        "rueckkopplung",
+        "wirkungsarchitektur",
+        "nichttriviales-system"
+      ],
+      "documents": []
+    },
+    "kondratieff-zyklus": {
+      "terms": [
+        "basisinnovation",
+        "transformationswelle",
+        "innovation"
+      ],
+      "documents": []
     },
     "konservative-annahme": {
       "terms": [
@@ -1304,17 +1908,113 @@
       ],
       "documents": []
     },
+    "kreative-rekonstruktion": {
+      "terms": [
+        "schoepferische-zerstoerung",
+        "wirkungsinnovation",
+        "verlustleistung",
+        "cradle-to-cradle"
+      ],
+      "documents": []
+    },
+    "kundennutzen": {
+      "terms": [
+        "business-value",
+        "impact-value",
+        "value-proposition",
+        "wirkungsempfaenger",
+        "jobs-to-be-done",
+        "product-market-fit"
+      ],
+      "documents": []
+    },
+    "kybernetik": {
+      "terms": [
+        "rueckkopplung",
+        "kybernetik-zweiter-ordnung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "triviale-maschine",
+        "varietaet"
+      ],
+      "documents": []
+    },
+    "kybernetik-zweiter-ordnung": {
+      "terms": [
+        "kybernetik",
+        "beobachtung-zweiter-ordnung",
+        "wirkungsrat"
+      ],
+      "documents": []
+    },
     "lca": {
       "terms": [
         "iso-14040-14044",
         "pef-product-environmental-footprint",
         "epd",
-        "pcf-product-carbon-footprint"
+        "pcf-product-carbon-footprint",
+        "hazardous-substances",
+        "hotspot-analyse",
+        "humusaufbau",
+        "material-footprint",
+        "oef-organisation-environmental-footprint",
+        "pcr-product-category-rules"
       ],
       "documents": [],
       "journalArticles": [
         "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html"
       ]
+    },
+    "lebenszyklusanalyse": {
+      "terms": [
+        "lebenszyklusinventar",
+        "lebenszykluswirkungsabschaetzung",
+        "systemgrenze",
+        "product-carbon-footprint",
+        "emissionsfaktor",
+        "cradle-to-gate",
+        "cradle-to-grave",
+        "environmental-product-declaration",
+        "product-environmental-footprint"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html"
+      ]
+    },
+    "lebenszyklusinventar": {
+      "terms": [
+        "lebenszyklusanalyse",
+        "lebenszykluswirkungsabschaetzung",
+        "datenqualitaet"
+      ],
+      "documents": []
+    },
+    "lebenszykluswirkungsabschaetzung": {
+      "terms": [
+        "lebenszyklusanalyse",
+        "lebenszyklusinventar",
+        "scorecard"
+      ],
+      "documents": []
+    },
+    "lernebenen": {
+      "terms": [
+        "unternehmerisches-lernen",
+        "lernender-unternehmer",
+        "wirkungskompetenz"
+      ],
+      "documents": []
+    },
+    "lernender-unternehmer": {
+      "terms": [
+        "unternehmerisches-lernen",
+        "unternehmerfunktion",
+        "wirkungsinnovation",
+        "routineunternehmer",
+        "lernebenen"
+      ],
+      "documents": []
     },
     "liability-risk": {
       "terms": [
@@ -1331,7 +2031,14 @@
         "lksg",
         "eudr",
         "scope-3",
-        "digitaler-produktpass"
+        "digitaler-produktpass",
+        "conflict-minerals-regulation",
+        "ernaehrungssouveraenitaet",
+        "forced-labour-regulation",
+        "herkunftstransparenz",
+        "ilo-kernarbeitsnormen",
+        "insetting",
+        "rohstoffkritikalitaet"
       ],
       "documents": []
     },
@@ -1348,7 +2055,11 @@
         "csddd",
         "lieferkettendaten",
         "un-guiding-principles",
-        "oecd-leitsaetze"
+        "oecd-leitsaetze",
+        "beschwerdemechanismus-access-to-remedy",
+        "human-rights-due-diligence",
+        "human-rights-impact-assessment",
+        "ilo"
       ],
       "documents": []
     },
@@ -1360,12 +2071,28 @@
       ],
       "documents": []
     },
+    "management": {
+      "terms": [
+        "wirksames-management",
+        "systemorientiertes-management",
+        "wirkungsarchitektur"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html",
+        "/blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html"
+      ]
+    },
     "material-footprint": {
       "terms": [
         "produktdaten",
         "rezyklatanteil",
         "recyclingquote",
-        "lca"
+        "lca",
+        "digitaler-produktpass",
+        "geplante-obsoleszenz",
+        "rohstoffkritikalitaet",
+        "zirkularitaet"
       ],
       "documents": []
     },
@@ -1376,7 +2103,10 @@
         "sdg-plus",
         "wirkung",
         "positive-netto-wirkung",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "handlungsspielraum",
+        "viabilitaet",
+        "normatives-management"
       ],
       "documents": [],
       "journalArticles": [
@@ -1393,7 +2123,10 @@
         "bestaetigungsfehler",
         "motiviertes-denken",
         "emotionsregulation",
-        "reframing"
+        "reframing",
+        "wirkungskompetenz",
+        "faktenreaktanz",
+        "faktenargumentation"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1405,14 +2138,17 @@
         "oecd-leitsaetze",
         "un-guiding-principles",
         "ilo-kernarbeitsnormen",
-        "social-taxonomy"
+        "social-taxonomy",
+        "forced-labour-regulation",
+        "taxonomiekonformitaet"
       ],
       "documents": []
     },
     "mobilitaetsarmut": {
       "terms": [
         "handlungsfaehigkeit",
-        "handlungsspielraum"
+        "handlungsspielraum",
+        "wirkungssteuer"
       ],
       "documents": []
     },
@@ -1422,7 +2158,8 @@
         "reverse-merit-order",
         "netto-wirkung",
         "wirkungsrisiko",
-        "scheinentlastung"
+        "scheinentlastung",
+        "wirkungsgrenze"
       ],
       "documents": []
     },
@@ -1433,7 +2170,12 @@
         "faktenreaktanz",
         "kognitive-dissonanz",
         "resonanzraum",
-        "vertrauen"
+        "vertrauen",
+        "wirkungsdaten",
+        "meta-kognitive-intervention",
+        "vertrauensverschiebung",
+        "destruktive-vertrauensbindung",
+        "ingroup-outgroup-dynamik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1445,7 +2187,8 @@
         "woek-id",
         "scorecard",
         "taxonomy-navigator",
-        "archetyp"
+        "archetyp",
+        "taxonomiefaehigkeit"
       ],
       "documents": []
     },
@@ -1473,7 +2216,9 @@
       "terms": [
         "eu-ecolabel",
         "greenwashing",
-        "produktdaten"
+        "produktdaten",
+        "empowering-consumers-green-transition",
+        "green-claims-directive"
       ],
       "documents": []
     },
@@ -1484,7 +2229,10 @@
         "zukunftsbild",
         "framing",
         "resonanzraum",
-        "vertrauen"
+        "vertrauen",
+        "priming",
+        "sensemaking",
+        "resonanz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1512,7 +2260,11 @@
       "terms": [
         "tnfd",
         "biodiversitaetsrisiko",
-        "wasserstress"
+        "wasserstress",
+        "habitatfragmentierung",
+        "habitatverlust",
+        "ipbes",
+        "oekosystemleistungen"
       ],
       "documents": []
     },
@@ -1520,7 +2272,9 @@
       "terms": [
         "wirkung",
         "wirkungsrisiko",
-        "netto-wirkung"
+        "netto-wirkung",
+        "neutrale-wirkung",
+        "positive-wirkung"
       ],
       "documents": []
     },
@@ -1529,7 +2283,10 @@
         "sbti",
         "transition-plan",
         "offsetting-kompensation",
-        "carbon-credits"
+        "carbon-credits",
+        "eu-climate-law",
+        "klimaneutralitaet",
+        "residual-emissions"
       ],
       "documents": []
     },
@@ -1537,7 +2294,15 @@
       "terms": [
         "positive-netto-wirkung",
         "reverse-merit-order",
-        "wirkungsgrenze"
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze",
+        "finalscore",
+        "negative-wirkung",
+        "nwi",
+        "t-sroi",
+        "interdependenz",
+        "rebound-effekt",
+        "moral-licensing"
       ],
       "documents": [],
       "journalArticles": [
@@ -1552,7 +2317,8 @@
         "netto-wirkung",
         "finalscore",
         "t-sroi",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "wirkungsdaten"
       ],
       "documents": [
         "technische-leitlinien-wustg"
@@ -1574,6 +2340,15 @@
       ],
       "documents": []
     },
+    "nicht-dualitaet": {
+      "terms": [
+        "dao",
+        "prozessdenken",
+        "interdependenz",
+        "wirkungsraum"
+      ],
+      "documents": []
+    },
     "nichtkompensationsprinzip": {
       "terms": [
         "reverse-merit-order",
@@ -1581,21 +2356,40 @@
         "netto-wirkung",
         "planetare-grenzen",
         "nature-positive",
-        "zielkonflikt"
+        "zielkonflikt",
+        "biodiversity-net-gain-no-net-loss",
+        "carbon-credits",
+        "dnsh",
+        "forced-labour-regulation",
+        "offsetting-kompensation",
+        "social-taxonomy",
+        "moral-licensing"
       ],
       "documents": [],
       "journalArticles": [
         "/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html"
       ]
     },
+    "nichttriviale-maschine": {
+      "terms": [
+        "triviale-maschine",
+        "nichttriviales-system",
+        "strukturdeterminiertheit",
+        "rueckkopplung"
+      ],
+      "documents": []
+    },
     "nichttriviales-system": {
       "terms": [
+        "nichttriviale-maschine",
+        "triviale-maschine",
+        "strukturdeterminiertheit",
         "rueckkopplung",
+        "autopoiesis",
         "interdependenz",
         "emergenz",
         "selbstorganisation",
-        "wirkungsarchitektur",
-        "wirkungspfad"
+        "komplexitaetsmanagement"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1607,18 +2401,31 @@
         "strukturelles-driften",
         "pfadabhaengigkeit",
         "wirkungsrisiko",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "priming",
+        "soziale-bewaehrtheit"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "normatives-management": {
+      "terms": [
+        "strategisches-management",
+        "operatives-management",
+        "mensch-planet-demokratie",
+        "st-galler-management-modell"
+      ],
+      "documents": []
     },
     "oecd-leitsaetze": {
       "terms": [
         "mindestschutz-minimum-safeguards",
         "un-guiding-principles",
         "csddd",
-        "lksg"
+        "lksg",
+        "conflict-minerals-regulation",
+        "human-rights-due-diligence"
       ],
       "documents": []
     },
@@ -1636,7 +2443,11 @@
         "carbon-credits",
         "insetting",
         "nichtkompensationsprinzip",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "climate-neutral-claim",
+        "klimaneutralitaet",
+        "net-zero",
+        "residual-emissions"
       ],
       "documents": []
     },
@@ -1654,6 +2465,24 @@
       ],
       "documents": []
     },
+    "operatives-management": {
+      "terms": [
+        "strategisches-management",
+        "scorecard",
+        "wirkungsdaten",
+        "st-galler-management-modell",
+        "normatives-management"
+      ],
+      "documents": []
+    },
+    "organisation-environmental-footprint": {
+      "terms": [
+        "product-environmental-footprint",
+        "wirkungsdaten",
+        "scorecard"
+      ],
+      "documents": []
+    },
     "orientierung": {
       "terms": [
         "kohaerenz",
@@ -1661,7 +2490,13 @@
         "vertrauen",
         "reframing",
         "zukunftsbild",
-        "wirkungsintegration"
+        "wirkungsintegration",
+        "emotionsregulation",
+        "konstruktives-narrativ",
+        "selbstwirksamkeit",
+        "erlernte-hilflosigkeit",
+        "sensemaking",
+        "gesellschaftliche-stabilitaet"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1686,7 +2521,8 @@
         "ghg-protocol",
         "scope-3",
         "lca",
-        "produktdaten"
+        "produktdaten",
+        "digitaler-produktpass"
       ],
       "documents": []
     },
@@ -1703,7 +2539,19 @@
         "lca",
         "oef-organisation-environmental-footprint",
         "epd",
-        "produktdaten"
+        "produktdaten",
+        "espr",
+        "hazardous-substances",
+        "hotspot-analyse",
+        "iso-14040-14044"
+      ],
+      "documents": []
+    },
+    "persona": {
+      "terms": [
+        "design-thinking",
+        "wirkungsempfaenger",
+        "value-proposition"
       ],
       "documents": []
     },
@@ -1713,7 +2561,8 @@
         "normalisierung",
         "wirkungsarchitektur",
         "wirkungslenkung",
-        "transformationswirkung"
+        "transformationswirkung",
+        "status-quo-bias"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1726,7 +2575,12 @@
         "ipcc",
         "wirkungsrisiko",
         "hitzestress",
-        "hitzeschutz-hitzeaktionsplan"
+        "hitzeschutz-hitzeaktionsplan",
+        "hfcs-hydrofluorocarbons",
+        "hochwasserrisiko",
+        "issb-ifrs-s1-s2",
+        "liability-risk",
+        "tnfd"
       ],
       "documents": []
     },
@@ -1752,7 +2606,38 @@
         "netto-wirkung",
         "mensch-planet-demokratie",
         "sdg-plus",
-        "zukunftsfaehigkeit"
+        "zukunftsfaehigkeit",
+        "agenda-2030",
+        "haushaltsneutralitaet",
+        "health-co-benefits",
+        "hebelwirkung",
+        "humusaufbau",
+        "hunger-hungerbekaempfung",
+        "nachhaltigkeit",
+        "regeneration",
+        "reparierbarkeit-recht-auf-reparatur",
+        "sdg-sdgplus-referenzrahmen",
+        "sdgs",
+        "social-taxonomy",
+        "suffizienz",
+        "wirkungsbewertung",
+        "wirkungseinkommen",
+        "wirkungshaushalt",
+        "wirkungslenkung",
+        "wirkungspunkte",
+        "wirkungsrente",
+        "wirkungsschule",
+        "interdependenz",
+        "wirkungsintegration",
+        "effektivitaet",
+        "wirksamkeit",
+        "wirksames-management",
+        "business-value",
+        "impact-value",
+        "innovation",
+        "schoepferische-zerstoerung",
+        "wirkungsinnovation",
+        "impact-fit"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -1792,19 +2677,77 @@
         "salienz",
         "narrativ",
         "normalisierung",
-        "strukturelles-driften"
+        "strukturelles-driften",
+        "wirkstoff",
+        "ankereffekt"
+      ],
+      "documents": []
+    },
+    "product-carbon-footprint": {
+      "terms": [
+        "lebenszyklusanalyse",
+        "co2e",
+        "systemgrenze",
+        "scorecard",
+        "global-warming-potential",
+        "emissionsfaktor",
+        "scope-1-2-3",
+        "well-to-wheel",
+        "bilanzraum"
+      ],
+      "documents": []
+    },
+    "product-environmental-footprint": {
+      "terms": [
+        "organisation-environmental-footprint",
+        "lebenszyklusanalyse",
+        "scorecard",
+        "environmental-product-declaration"
+      ],
+      "documents": []
+    },
+    "product-market-fit": {
+      "terms": [
+        "impact-fit",
+        "kundennutzen",
+        "business-value"
       ],
       "documents": []
     },
     "produktdaten": {
       "terms": [
         "digitaler-produktpass",
-        "produktwirkung",
         "pef-product-environmental-footprint",
         "pcf-product-carbon-footprint",
         "herkunftstransparenz",
         "hotspot-analyse",
-        "rohstoffkritikalitaet"
+        "rohstoffkritikalitaet",
+        "fuenftes-p-planet",
+        "epd",
+        "ernaehrungssouveraenitaet",
+        "espr",
+        "eu-ecolabel",
+        "eudr",
+        "geplante-obsoleszenz",
+        "hazardous-substances",
+        "herkunftsnachweis-hkn",
+        "material-footprint",
+        "nachhaltigkeitslabel",
+        "pcr-product-category-rules",
+        "reparierbarkeit-recht-auf-reparatur",
+        "wasserstress"
+      ],
+      "documents": []
+    },
+    "prozessdenken": {
+      "terms": [
+        "wirkung",
+        "strukturelles-driften",
+        "rueckkopplung",
+        "wirkungsarchitektur",
+        "dao",
+        "wu-wei",
+        "nicht-dualitaet"
       ],
       "documents": []
     },
@@ -1841,7 +2784,8 @@
         "emotionsregulation",
         "reframing",
         "wirkungspotenzial",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "status-quo-bias"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1876,7 +2820,8 @@
       "terms": [
         "rezyklatanteil",
         "material-footprint",
-        "espr"
+        "espr",
+        "zirkularitaet"
       ],
       "documents": []
     },
@@ -1887,7 +2832,13 @@
         "orientierung",
         "anschlussfaehigkeit",
         "kognitive-dissonanz",
-        "wirkungsintegration"
+        "wirkungsintegration",
+        "dissonanzreduktion",
+        "reaktanz",
+        "verlustaversion",
+        "meta-kognitive-intervention",
+        "emotionsregulation",
+        "faktenreaktanz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -1896,14 +2847,37 @@
     "regeneration": {
       "terms": [
         "positive-netto-wirkung",
-        "wirkungsresilienz"
+        "wirkungsresilienz",
+        "humusaufbau"
+      ],
+      "documents": []
+    },
+    "rekombination": {
+      "terms": [
+        "unternehmerfunktion",
+        "innovation",
+        "wirkungsinnovation",
+        "verlustleistung",
+        "innovativer-unternehmer"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html"
+      ]
+    },
+    "rekursion": {
+      "terms": [
+        "viable-system-model",
+        "wirkungsarchitektur",
+        "rueckkopplung"
       ],
       "documents": []
     },
     "renaturierung": {
       "terms": [
         "hydrologischer-kreislauf",
-        "habitatfragmentierung"
+        "habitatfragmentierung",
+        "humusaufbau"
       ],
       "documents": []
     },
@@ -1943,6 +2917,15 @@
         "/blog/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.html"
       ]
     },
+    "resonanz": {
+      "terms": [
+        "resonanzraum",
+        "anschlussfaehigkeit",
+        "salienz",
+        "narrativ"
+      ],
+      "documents": []
+    },
     "resonanzarchitektur": {
       "terms": [
         "resonanzraum",
@@ -1957,22 +2940,31 @@
     },
     "resonanzraum": {
       "terms": [
-        "wirkungspotenzial",
-        "wirkungspfad",
-        "wirkungsnetz",
-        "zielkonflikt",
-        "quellenklarheit",
+        "resonanz",
         "anschlussfaehigkeit",
-        "wirkungsrisiko",
-        "resonanzrisiko",
-        "framing",
-        "narrativ",
-        "vertrauen",
-        "vertrauensverschiebung",
-        "faktenargumentation",
-        "faktenreaktanz",
         "salienz",
-        "sensemaking"
+        "framing",
+        "strukturdeterminiertheit",
+        "commons-gemeingueter",
+        "wirkstoff",
+        "wirkungsblindheit",
+        "wirkungsnetz",
+        "wirkungspotenzial",
+        "wirkungsorientiertes-hosting",
+        "resonanzarchitektur",
+        "kognitive-dissonanz",
+        "motiviertes-denken",
+        "identitaetsschutz",
+        "bestaetigungsfehler",
+        "emotionsregulation",
+        "narrativ",
+        "vertrauensverschiebung",
+        "strukturelle-kopplung",
+        "wirklichkeitskonstruktion",
+        "resonanzrisiko",
+        "faktenargumentation",
+        "soziale-bewaehrtheit",
+        "glossar-backlink-audit"
       ],
       "documents": [],
       "journalArticles": [
@@ -2013,7 +3005,22 @@
         "netto-wirkung",
         "wirkungsgrenze",
         "planetare-grenzen",
-        "zielkonflikt"
+        "zielkonflikt",
+        "biodiversity-net-gain-no-net-loss",
+        "dnsh",
+        "finalscore",
+        "greenwashing",
+        "haushaltsneutralitaet",
+        "hotspot-analyse",
+        "konservative-annahme",
+        "nwi",
+        "offsetting-kompensation",
+        "scorecard",
+        "social-taxonomy",
+        "host-wirkungsscore",
+        "interdependenz",
+        "moral-licensing",
+        "schwellenwert"
       ],
       "documents": [
         "technische-leitlinien-wustg",
@@ -2038,17 +3045,41 @@
         "lieferkettendaten",
         "digitaler-produktpass",
         "human-rights-due-diligence",
-        "material-footprint"
+        "material-footprint",
+        "produktdaten"
+      ],
+      "documents": []
+    },
+    "routineunternehmer": {
+      "terms": [
+        "lernender-unternehmer",
+        "arbitrageur",
+        "innovativer-unternehmer"
       ],
       "documents": []
     },
     "rueckkopplung": {
       "terms": [
+        "kybernetik",
         "wirkungsrueckkopplung",
+        "folgewirkung",
+        "hebelpunkt",
         "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungslenkung",
+        "wirkungspfad",
         "nichttriviales-system",
         "strukturelles-driften",
-        "wirkungspfad"
+        "emergenz",
+        "selbstorganisation",
+        "systemische-kohaerenz",
+        "resilienz",
+        "triviale-maschine",
+        "nichttriviale-maschine",
+        "rekursion",
+        "komplexitaetsmanagement",
+        "wu-wei",
+        "prozessdenken"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2070,7 +3101,10 @@
         "framing",
         "affektheuristik",
         "ankereffekt",
-        "priming"
+        "priming",
+        "wirkungsblindheit",
+        "soziale-bewaehrtheit",
+        "resonanz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2105,17 +3139,54 @@
         "alarm-frame",
         "baseline-verschiebung",
         "wirkungsintegration",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "moral-licensing"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "scheinleistung": {
+      "terms": [
+        "wirkleistung",
+        "blindleistung",
+        "verlustleistung",
+        "wirkungsblindheit"
+      ],
+      "documents": []
+    },
+    "schoepferische-zerstoerung": {
+      "terms": [
+        "kreative-rekonstruktion",
+        "innovation",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "schwellenwert": {
+      "terms": [
+        "kipppunkt",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "scorecard"
+      ],
+      "documents": []
+    },
     "scope-1": {
       "terms": [
         "ghg-protocol",
         "scope-2",
-        "scope-3"
+        "scope-3",
+        "hard-to-abate-sektoren",
+        "hfcs-hydrofluorocarbons"
+      ],
+      "documents": []
+    },
+    "scope-1-2-3": {
+      "terms": [
+        "treibhausgasemissionen",
+        "product-carbon-footprint",
+        "systemgrenze"
       ],
       "documents": []
     },
@@ -2123,7 +3194,8 @@
       "terms": [
         "ghg-protocol",
         "scope-1",
-        "scope-3"
+        "scope-3",
+        "herkunftsnachweis-hkn"
       ],
       "documents": []
     },
@@ -2132,7 +3204,12 @@
         "ghg-protocol",
         "lieferkettendaten",
         "pcf-product-carbon-footprint",
-        "cbam"
+        "cbam",
+        "hard-to-abate-sektoren",
+        "hfcs-hydrofluorocarbons",
+        "insetting",
+        "scope-1",
+        "scope-2"
       ],
       "documents": []
     },
@@ -2142,7 +3219,31 @@
         "benchmark",
         "finalscore",
         "wirkungsindikator",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "archetyp",
+        "datenluecke",
+        "digitaler-produktpass",
+        "nace",
+        "oef-organisation-environmental-footprint",
+        "qualitaetssicherung",
+        "social-taxonomy",
+        "steuerungsdaten",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungsregister",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "host-wirkungsscore",
+        "salienzsteuerung",
+        "beobachterabhaengigkeit",
+        "operatives-management",
+        "product-carbon-footprint",
+        "lebenszykluswirkungsabschaetzung",
+        "product-environmental-footprint",
+        "organisation-environmental-footprint",
+        "systemgrenze",
+        "schwellenwert"
       ],
       "documents": []
     },
@@ -2152,7 +3253,11 @@
         "agenda-2030",
         "mensch-planet-demokratie",
         "positive-netto-wirkung",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "idgs",
+        "sdg-sdgplus-referenzrahmen",
+        "sdg-washing",
+        "social-taxonomy"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -2195,7 +3300,13 @@
         "agenda-2030",
         "sdg-plus",
         "positive-netto-wirkung",
-        "hunger-hungerbekaempfung"
+        "hunger-hungerbekaempfung",
+        "health-co-benefits",
+        "health-impact-assessment",
+        "idgs",
+        "mensch-planet-demokratie",
+        "sdg-sdgplus-referenzrahmen",
+        "sdg-washing"
       ],
       "documents": [
         "sdg-sdgplus-referenzrahmen"
@@ -2213,19 +3324,31 @@
         "wirkungsarchitektur",
         "nichttriviales-system",
         "emergenz",
-        "autopoiesis"
+        "autopoiesis",
+        "soziale-bewaehrtheit",
+        "dao",
+        "wu-wei"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "selbstreferenz": {
+      "terms": [
+        "autopoiesis",
+        "wirklichkeitskonstruktion",
+        "beobachtung-zweiter-ordnung",
+        "strukturdeterminiertheit"
+      ],
+      "documents": []
     },
     "selbstwirksamkeit": {
       "terms": [
         "orientierung",
         "wirkungsintegration",
         "erlernte-hilflosigkeit",
-        "demokratie",
-        "transformation"
+        "wirkungskompetenz",
+        "kognitive-dissonanz"
       ],
       "documents": []
     },
@@ -2235,7 +3358,8 @@
         "kohaerenz",
         "zukunftsbild",
         "narrativ",
-        "wirkungsintegration"
+        "wirkungsintegration",
+        "wirkungskompetenz"
       ],
       "documents": []
     },
@@ -2245,7 +3369,7 @@
         "pai",
         "eu-taxonomie",
         "esg",
-        "kapitalwirkung"
+        "berichtsdaten"
       ],
       "documents": []
     },
@@ -2253,7 +3377,8 @@
       "terms": [
         "wirkungspunkte",
         "wirkungswahrheit",
-        "wirkungsrat"
+        "wirkungsrat",
+        "social-taxonomy"
       ],
       "documents": [
         "schutzrahmen-personenbewertung"
@@ -2276,7 +3401,8 @@
         "csddd",
         "ilo-kernarbeitsnormen",
         "un-guiding-principles",
-        "sdg-plus"
+        "sdg-plus",
+        "ilo"
       ],
       "documents": [
         "social-taxonomy-wirkungsoekonomie"
@@ -2290,7 +3416,6 @@
         "normalisierung",
         "salienz",
         "selbstorganisation",
-        "markttransformation",
         "resonanzraum"
       ],
       "documents": []
@@ -2305,13 +3430,22 @@
         "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"
       ]
     },
+    "st-galler-management-modell": {
+      "terms": [
+        "systemorientiertes-management",
+        "normatives-management",
+        "strategisches-management",
+        "operatives-management"
+      ],
+      "documents": []
+    },
     "status-quo-bias": {
       "terms": [
         "pfadabhaengigkeit",
         "verlustaversion",
         "reaktanz",
-        "transformation",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "kognitive-dissonanz"
       ],
       "documents": []
     },
@@ -2320,7 +3454,8 @@
         "berichtsdaten",
         "wirkungsdaten",
         "wirkungsrueckkopplung",
-        "scorecard"
+        "scorecard",
+        "sustainable-finance"
       ],
       "documents": []
     },
@@ -2329,23 +3464,47 @@
         "wirkungsrisiko",
         "nachhaltigkeit",
         "transition-risk",
-        "versicherbarkeit",
-        "kapitalzugang",
         "transition-plan",
-        "kapitalwirkung"
+        "liability-risk",
+        "lock-in-pfadabhaengigkeit",
+        "spekulationslogik",
+        "uebergangstaetigkeit",
+        "wix-vi"
       ],
       "documents": [
         "wp-wohnungsmarkt",
         "stranded-assets-gebaeudebestand"
       ]
     },
-    "strukturelle-kopplung": {
+    "strategisches-management": {
       "terms": [
-        "strukturelles-driften",
+        "normatives-management",
+        "operatives-management",
+        "wirkungspfad",
+        "st-galler-management-modell"
+      ],
+      "documents": []
+    },
+    "strukturdeterminiertheit": {
+      "terms": [
+        "strukturelle-kopplung",
         "autopoiesis",
         "nichttriviales-system",
-        "interdependenz",
-        "rueckkopplung"
+        "resonanzraum",
+        "anschlussfaehigkeit",
+        "wirkungspfad",
+        "transformationswirkung",
+        "nichttriviale-maschine",
+        "selbstreferenz"
+      ],
+      "documents": []
+    },
+    "strukturelle-kopplung": {
+      "terms": [
+        "strukturdeterminiertheit",
+        "strukturelles-driften",
+        "autopoiesis",
+        "resonanzraum"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2354,11 +3513,12 @@
     "strukturelles-driften": {
       "terms": [
         "strukturelle-kopplung",
-        "rueckkopplung",
         "normalisierung",
+        "prozessdenken",
+        "rueckkopplung",
         "baseline-verschiebung",
         "pfadabhaengigkeit",
-        "resonanzraum"
+        "priming"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2388,7 +3548,9 @@
         "esg",
         "wirkungsdaten",
         "steuerungsdaten",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "clean-industrial-deal",
+        "european-green-deal"
       ],
       "documents": [
         "social-taxonomy-wirkungsoekonomie"
@@ -2397,6 +3559,22 @@
         "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
       ]
     },
+    "systemgrenze": {
+      "terms": [
+        "bilanzraum",
+        "lebenszyklusanalyse",
+        "t-sroi",
+        "scorecard",
+        "hebelpunkt",
+        "scope-1-2-3",
+        "product-carbon-footprint",
+        "cradle-to-gate",
+        "well-to-tank",
+        "tank-to-wheel",
+        "entropie"
+      ],
+      "documents": []
+    },
     "systemische-kohaerenz": {
       "terms": [
         "kohaerenz",
@@ -2404,17 +3582,34 @@
         "vertrauen",
         "wirkungsintegration",
         "wirkungsarchitektur",
-        "rueckkopplung"
+        "rueckkopplung",
+        "wirkungskompetenz",
+        "konstruktives-narrativ",
+        "gesellschaftliche-stabilitaet",
+        "resilienz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
     },
+    "systemorientiertes-management": {
+      "terms": [
+        "st-galler-management-modell",
+        "management",
+        "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
     "t-sroi": {
       "terms": [
         "transformationswirkung",
         "netto-wirkung",
-        "wirkungscontrolling"
+        "nwi",
+        "praevention",
+        "social-taxonomy",
+        "vermeidene-schaeden-folgekosten",
+        "impact-value",
+        "systemgrenze"
       ],
       "documents": [
         "whitepaper-t-sroi"
@@ -2423,6 +3618,14 @@
         "/blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html",
         "/blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html"
       ]
+    },
+    "tank-to-wheel": {
+      "terms": [
+        "well-to-tank",
+        "well-to-wheel",
+        "systemgrenze"
+      ],
+      "documents": []
     },
     "taxonomy-kpis": {
       "terms": [
@@ -2437,7 +3640,8 @@
       "terms": [
         "eu-taxonomie",
         "taxonomiekonformitaet",
-        "nace"
+        "nace",
+        "taxonomy-kpis"
       ],
       "documents": []
     },
@@ -2447,7 +3651,9 @@
         "dnsh",
         "mindestschutz-minimum-safeguards",
         "technische-bewertungskriterien",
-        "taxonomy-kpis"
+        "taxonomy-kpis",
+        "ermoeglichende-taetigkeit",
+        "taxonomiefaehigkeit"
       ],
       "documents": []
     },
@@ -2455,7 +3661,8 @@
       "terms": [
         "eu-taxonomie",
         "technische-bewertungskriterien",
-        "nace"
+        "nace",
+        "sustainable-finance"
       ],
       "documents": []
     },
@@ -2472,7 +3679,9 @@
       "terms": [
         "eu-taxonomie",
         "taxonomy-navigator",
-        "taxonomiekonformitaet"
+        "taxonomiekonformitaet",
+        "dnsh",
+        "wesentlicher-beitrag"
       ],
       "documents": []
     },
@@ -2481,15 +3690,33 @@
         "biodiversitaetsrisiko",
         "nature-related-risks",
         "physical-climate-risk",
-        "issb-ifrs-s1-s2"
+        "issb-ifrs-s1-s2",
+        "ipbes",
+        "tcfd",
+        "wasserstress"
+      ],
+      "documents": []
+    },
+    "transformationswelle": {
+      "terms": [
+        "transformationswirkung",
+        "basisinnovation",
+        "wirkungsinnovation",
+        "kondratieff-zyklus",
+        "evolutorischer-unternehmer"
       ],
       "documents": []
     },
     "transformationswirkung": {
       "terms": [
+        "wirkungsinnovation",
+        "transformationswelle",
+        "strukturdeterminiertheit",
+        "diffusion",
+        "hebelpunkt",
         "t-sroi",
-        "wirkungsarchitektur",
-        "wirkungslenkung"
+        "verlustaversion",
+        "pfadabhaengigkeit"
       ],
       "documents": []
     },
@@ -2498,7 +3725,12 @@
         "transition-plan",
         "sustainable-finance",
         "clean-industrial-deal",
-        "transition-risk"
+        "transition-risk",
+        "eu-green-bond-standard",
+        "green-deal-industrial-plan",
+        "hard-to-abate-sektoren",
+        "just-transition-mechanism",
+        "uebergangstaetigkeit"
       ],
       "documents": []
     },
@@ -2507,7 +3739,10 @@
         "transition-finance",
         "sbti",
         "transition-risk",
-        "net-zero"
+        "net-zero",
+        "eu-climate-law",
+        "stranded-assets",
+        "uebergangstaetigkeit"
       ],
       "documents": []
     },
@@ -2516,9 +3751,44 @@
         "tcfd",
         "transition-plan",
         "stranded-assets",
-        "clean-industrial-deal"
+        "clean-industrial-deal",
+        "eu-climate-law",
+        "fit-for-55",
+        "hard-to-abate-sektoren",
+        "ipcc",
+        "issb-ifrs-s1-s2",
+        "liability-risk",
+        "lock-in-pfadabhaengigkeit",
+        "physical-climate-risk",
+        "sbti",
+        "transition-finance"
       ],
       "documents": []
+    },
+    "treibhausgasemissionen": {
+      "terms": [
+        "co2e",
+        "global-warming-potential",
+        "emissionsfaktor",
+        "scope-1-2-3",
+        "klimawandel",
+        "klimaschutz",
+        "klimafolgeschaeden",
+        "carbon-budget"
+      ],
+      "documents": []
+    },
+    "triviale-maschine": {
+      "terms": [
+        "nichttriviale-maschine",
+        "nichttriviales-system",
+        "kybernetik",
+        "rueckkopplung"
+      ],
+      "documents": [],
+      "journalArticles": [
+        "/blog/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.html"
+      ]
     },
     "uebergangstaetigkeit": {
       "terms": [
@@ -2542,7 +3812,56 @@
         "mindestschutz-minimum-safeguards",
         "csddd",
         "lksg",
-        "social-taxonomy"
+        "social-taxonomy",
+        "beschwerdemechanismus-access-to-remedy",
+        "human-rights-due-diligence",
+        "human-rights-impact-assessment",
+        "oecd-leitsaetze"
+      ],
+      "documents": []
+    },
+    "unternehmerfunktion": {
+      "terms": [
+        "rekombination",
+        "innovativer-unternehmer",
+        "lernender-unternehmer"
+      ],
+      "documents": []
+    },
+    "unternehmerisches-lernen": {
+      "terms": [
+        "lernender-unternehmer",
+        "lernebenen",
+        "wirkungskompetenz",
+        "evolutorischer-unternehmer"
+      ],
+      "documents": []
+    },
+    "value-proposition": {
+      "terms": [
+        "value-proposition-canvas",
+        "kundennutzen",
+        "impact-fit",
+        "design-thinking",
+        "persona",
+        "jobs-to-be-done"
+      ],
+      "documents": []
+    },
+    "value-proposition-canvas": {
+      "terms": [
+        "value-proposition",
+        "business-model-canvas",
+        "impact-fit"
+      ],
+      "documents": []
+    },
+    "varietaet": {
+      "terms": [
+        "viable-system-model",
+        "wirkungsresilienz",
+        "komplexitaetsmanagement",
+        "kybernetik"
       ],
       "documents": []
     },
@@ -2552,7 +3871,8 @@
         "salienzsteuerung",
         "bestaetigungsfehler",
         "meta-kognitive-intervention",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "affektheuristik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2565,11 +3885,27 @@
         "alarm-frame",
         "transformationswirkung",
         "wirkungspotenzial",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "status-quo-bias"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ]
+    },
+    "verlustleistung": {
+      "terms": [
+        "effizienz",
+        "effektivitaet-vs-effizienz",
+        "blindleistung",
+        "klimafolgeschaeden",
+        "rekombination",
+        "kreative-rekonstruktion",
+        "wirkungsgrad",
+        "wirkleistung",
+        "scheinleistung",
+        "entropie"
+      ],
+      "documents": []
     },
     "vermeidene-schaeden-folgekosten": {
       "terms": [
@@ -2581,20 +3917,22 @@
     },
     "vertrauen": {
       "terms": [
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "wirkungsraum",
-        "resonanzraum",
-        "wirkungsresilienz",
-        "wirkungsarchitektur",
-        "wirkungsrat",
-        "wirkungsdaten",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
+        "wirkungsdaten",
+        "wirkungsrat",
+        "wirkungsraum",
+        "wirkungswahrheit",
+        "motiviertes-denken",
+        "narrativ",
+        "orientierung",
+        "kohaerenz",
         "systemische-kohaerenz",
+        "faktenargumentation",
+        "erlernte-hilflosigkeit",
         "gesellschaftliche-stabilitaet",
-        "faktenreaktanz"
+        "resilienz",
+        "anpassungskapazitaet"
       ],
       "documents": [
         "folgencheck-statt-faktencheck-democracy-intelligence",
@@ -2615,7 +3953,11 @@
         "motiviertes-denken",
         "identitaetsschutz",
         "faktenreaktanz",
-        "resonanzraum"
+        "resonanzraum",
+        "kognitive-dissonanz",
+        "destruktives-narrativ",
+        "resonanzrisiko",
+        "ingroup-outgroup-dynamik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt",
@@ -2623,12 +3965,40 @@
         "wirkung-schlaegt-wahrheit"
       ]
     },
+    "viabilitaet": {
+      "terms": [
+        "viable-system-model",
+        "wirkungsresilienz",
+        "mensch-planet-demokratie"
+      ],
+      "documents": []
+    },
+    "viable-system-model": {
+      "terms": [
+        "rekursion",
+        "varietaet",
+        "viabilitaet",
+        "wirkungsarchitektur"
+      ],
+      "documents": []
+    },
     "vsme": {
       "terms": [
         "csrd",
         "esrs",
         "berichtsdaten",
-        "datenqualitaet"
+        "datenqualitaet",
+        "efrag"
+      ],
+      "documents": []
+    },
+    "vulnerabilitaet": {
+      "terms": [
+        "exposition",
+        "anpassungskapazitaet",
+        "klimarisiko",
+        "wirkungsresilienz",
+        "klimaanpassung"
       ],
       "documents": []
     },
@@ -2636,7 +4006,8 @@
       "terms": [
         "wohnwirkung",
         "wirkungsvermietung",
-        "wix-vi"
+        "wix-vi",
+        "energiearmut"
       ],
       "documents": [
         "woek_wohnen_stadt_konzeptpapier_v0_1",
@@ -2650,7 +4021,26 @@
         "produktdaten",
         "hydrologischer-kreislauf",
         "planetare-grenzen",
-        "umweltgerechtigkeit"
+        "umweltgerechtigkeit",
+        "hochwasserrisiko",
+        "humusaufbau",
+        "hunger-hungerbekaempfung"
+      ],
+      "documents": []
+    },
+    "well-to-tank": {
+      "terms": [
+        "tank-to-wheel",
+        "well-to-wheel",
+        "systemgrenze"
+      ],
+      "documents": []
+    },
+    "well-to-wheel": {
+      "terms": [
+        "well-to-tank",
+        "tank-to-wheel",
+        "product-carbon-footprint"
       ],
       "documents": []
     },
@@ -2664,8 +4054,17 @@
     },
     "who": {
       "terms": [
-        "gesundheit",
         "wirkungsdaten"
+      ],
+      "documents": []
+    },
+    "wirkleistung": {
+      "terms": [
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "wirkung",
+        "wirkungsgrad"
       ],
       "documents": []
     },
@@ -2675,7 +4074,11 @@
         "resonanzraum",
         "anschlussfaehigkeit",
         "beobachtung-zweiter-ordnung",
-        "wirkung"
+        "wirkung",
+        "wirkungsblindheit",
+        "autopoiesis",
+        "selbstreferenz",
+        "beobachterabhaengigkeit"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2685,7 +4088,27 @@
       "terms": [
         "wirkstoff",
         "wirkungspfad",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "wirkungstraeger",
+        "kognitive-dissonanz"
+      ],
+      "documents": []
+    },
+    "wirksames-management": {
+      "terms": [
+        "management",
+        "wirksamkeit",
+        "effektivitaet",
+        "positive-netto-wirkung"
+      ],
+      "documents": []
+    },
+    "wirksamkeit": {
+      "terms": [
+        "wirkung",
+        "effektivitaet",
+        "positive-netto-wirkung",
+        "wirksames-management"
       ],
       "documents": []
     },
@@ -2698,7 +4121,12 @@
         "salienz",
         "framing",
         "priming",
-        "faktenargumentation"
+        "faktenargumentation",
+        "faktencheck",
+        "folgencheck",
+        "alarm-frame",
+        "salienzsteuerung",
+        "ankereffekt"
       ],
       "documents": [],
       "journalArticles": [
@@ -2708,9 +4136,27 @@
     "wirkung": {
       "terms": [
         "wirkungspotenzial",
-        "netto-wirkung",
+        "wirkungsrisiko",
+        "wirkungspfad",
+        "folgewirkung",
         "positive-netto-wirkung",
-        "wirkungsbewertung"
+        "haltung",
+        "handlung",
+        "handlungsspielraum",
+        "health-impact-assessment",
+        "mensch-planet-demokratie",
+        "negative-wirkung",
+        "neutrale-wirkung",
+        "positive-wirkung",
+        "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungsempfaenger",
+        "wirklichkeitskonstruktion",
+        "effektivitaet-vs-effizienz",
+        "wirksamkeit",
+        "prozessdenken",
+        "wirkleistung",
+        "glossar-publizierungsprozess"
       ],
       "documents": [],
       "journalArticles": [
@@ -2722,19 +4168,26 @@
     },
     "wirkungsarchitektur": {
       "terms": [
-        "wirkungslenkung",
-        "wirkungsrückkopplung",
-        "vertrauen",
-        "wirkungsrat",
-        "woek-id",
         "rueckkopplung",
-        "nichttriviales-system",
-        "interdependenz",
-        "selbstorganisation",
-        "wirkungsintegration",
-        "systemische-kohaerenz",
+        "kybernetik",
+        "viable-system-model",
+        "wirkungsrat",
+        "scorecard",
+        "wirkungskompetenz",
+        "wirkungslenkung",
+        "wirkungsnetz",
+        "wirkungsraum",
         "wirkungsresilienz",
-        "folgewirkung"
+        "wirkungsrueckkopplung",
+        "resonanzarchitektur",
+        "selbstorganisation",
+        "pfadabhaengigkeit",
+        "systemische-kohaerenz",
+        "rekursion",
+        "management",
+        "systemorientiertes-management",
+        "komplexitaetsmanagement",
+        "prozessdenken"
       ],
       "documents": [],
       "journalArticles": [
@@ -2746,7 +4199,20 @@
       "terms": [
         "wirkung",
         "positive-netto-wirkung",
-        "scorecard"
+        "scorecard",
+        "doppelte-wesentlichkeit",
+        "handlung",
+        "health-co-benefits",
+        "health-impact-assessment",
+        "hotspot-analyse",
+        "human-rights-impact-assessment",
+        "mensch-planet-demokratie",
+        "qualitaetssicherung",
+        "sdg-plus",
+        "wirkungskompetenz",
+        "wirkungsradar",
+        "zielkonflikt",
+        "host-wirkungsscore"
       ],
       "documents": [],
       "journalArticles": [
@@ -2758,7 +4224,6 @@
       "terms": [
         "wirkungswahrheit",
         "wirkungsdatenraum",
-        "wirkungsrückkopplung",
         "wirklichkeitskonstruktion",
         "salienz",
         "bestaetigungsfehler",
@@ -2767,7 +4232,9 @@
         "faktenargumentation",
         "wirkungsrisiko",
         "folgewirkung",
-        "resonanzraum"
+        "resonanzraum",
+        "gewinn-als-test",
+        "scheinleistung"
       ],
       "documents": [],
       "journalArticles": [
@@ -2787,7 +4254,21 @@
         "wirkungsindikator",
         "faktenreaktanz",
         "motiviertes-denken",
-        "anschlussfaehigkeit"
+        "anschlussfaehigkeit",
+        "berichtsdaten",
+        "ermoeglichende-taetigkeit",
+        "herkunftsnachweis-hkn",
+        "insetting",
+        "oef-organisation-environmental-footprint",
+        "pai",
+        "qualitaetssicherung",
+        "steuerungsdaten",
+        "sustainable-finance",
+        "who",
+        "wirkungsblindheit",
+        "bestaetigungsfehler",
+        "operatives-management",
+        "organisation-environmental-footprint"
       ],
       "documents": []
     },
@@ -2798,14 +4279,21 @@
         "digitaler-produktpass",
         "woek-id",
         "wirkungsregister",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "commons-gemeingueter",
+        "esap",
+        "wirkungsblindheit",
+        "wirkungswahrheit"
       ],
       "documents": []
     },
     "wirkungseinkommen": {
       "terms": [
         "positive-netto-wirkung",
-        "wirkungslenkung"
+        "wirkungslenkung",
+        "just-transition-mechanism",
+        "wirkungsfonds",
+        "wirkungsrente"
       ],
       "documents": [
         "wp-einkommen"
@@ -2820,7 +4308,10 @@
       "terms": [
         "wirkung",
         "wirkungsraum",
-        "wirkungspfad"
+        "wirkungspfad",
+        "kundennutzen",
+        "persona",
+        "impact-fit"
       ],
       "documents": []
     },
@@ -2828,8 +4319,16 @@
       "terms": [
         "wirkungsrueckkopplung",
         "wirkungseinkommen",
-        "maschinenwertschoepfungsbeitrag",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "just-transition-mechanism"
+      ],
+      "documents": []
+    },
+    "wirkungsgrad": {
+      "terms": [
+        "effizienz",
+        "wirkleistung",
+        "verlustleistung"
       ],
       "documents": []
     },
@@ -2838,7 +4337,13 @@
         "nichtkompensationsprinzip",
         "reverse-merit-order",
         "netto-wirkung",
-        "moral-licensing"
+        "moral-licensing",
+        "planetare-grenzen",
+        "rechte-kuenftiger-generationen",
+        "wirkungsrisiko",
+        "zielkonflikt",
+        "carbon-budget",
+        "schwellenwert"
       ],
       "documents": []
     },
@@ -2850,7 +4355,16 @@
         "haushaltsneutralitaet",
         "praevention",
         "vermeidene-schaeden-folgekosten",
-        "kosten-des-nicht-handelns"
+        "kosten-des-nicht-handelns",
+        "daseinsvorsorge",
+        "energiearmut",
+        "generationengerechtigkeit",
+        "hitzeschutz-hitzeaktionsplan",
+        "hochwasserrisiko",
+        "quartierswirkung",
+        "rechte-kuenftiger-generationen",
+        "wirkungsfonds",
+        "bilanzraum"
       ],
       "documents": [],
       "journalArticles": [
@@ -2868,6 +4382,21 @@
       ],
       "documents": []
     },
+    "wirkungsinnovation": {
+      "terms": [
+        "innovation",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "kreative-rekonstruktion",
+        "rekombination",
+        "basisinnovation",
+        "transformationswelle",
+        "lernender-unternehmer",
+        "innovativer-unternehmer",
+        "evolutorischer-unternehmer"
+      ],
+      "documents": []
+    },
     "wirkungsintegration": {
       "terms": [
         "scheinentlastung",
@@ -2875,7 +4404,14 @@
         "orientierung",
         "systemische-kohaerenz",
         "reframing",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "wirkungskompetenz",
+        "wirkungsresilienz",
+        "zukunftsbild",
+        "kohaerenz",
+        "konstruktives-narrativ",
+        "selbstwirksamkeit",
+        "sensemaking"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2895,7 +4431,15 @@
         "wirkungsintegration",
         "systemische-kohaerenz",
         "sensemaking",
-        "selbstwirksamkeit"
+        "selbstwirksamkeit",
+        "haltung",
+        "handlungsfaehigkeit",
+        "handlungsspielraum",
+        "idgs",
+        "youth-jugendbeteiligung",
+        "wirkungsorientiertes-hosting",
+        "unternehmerisches-lernen",
+        "lernebenen"
       ],
       "documents": [
         "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"
@@ -2908,11 +4452,14 @@
     },
     "wirkungslenkung": {
       "terms": [
-        "wirkungsrückkopplung",
+        "hebelpunkt",
+        "rueckkopplung",
         "wirkungsarchitektur",
         "positive-netto-wirkung",
+        "wirkungseinkommen",
+        "wirkungshaushalt",
         "wirkungsrueckkopplung",
-        "rueckkopplung"
+        "pfadabhaengigkeit"
       ],
       "documents": [],
       "journalArticles": [
@@ -2923,7 +4470,9 @@
       "terms": [
         "wirkungspfad",
         "resonanzraum",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "interdependenz",
+        "emergenz"
       ],
       "documents": []
     },
@@ -2955,15 +4504,31 @@
     },
     "wirkungspfad": {
       "terms": [
+        "wirkung",
         "wirkungspotenzial",
-        "wirkmechanismus",
-        "wirkungsnetz",
-        "wirkungsrisiko",
-        "resonanzraum",
-        "rueckkopplung",
-        "interdependenz",
+        "wirkstoff",
         "folgewirkung",
-        "wirkstoff"
+        "rueckkopplung",
+        "faktencheck",
+        "folgencheck",
+        "handlung",
+        "handlungspfad",
+        "hebelpunkt",
+        "hebelwirkung",
+        "impact-washing",
+        "kipppunkt-systemschwelle",
+        "wirkmechanismus",
+        "wirkungsempfaenger",
+        "wirkungsindikator",
+        "wirkungskompetenz",
+        "wirkungsnetz",
+        "wirkungsraum",
+        "wirkungstraeger",
+        "zeitwirkung",
+        "resonanzarchitektur",
+        "rebound-effekt",
+        "strukturdeterminiertheit",
+        "strategisches-management"
       ],
       "documents": [],
       "journalArticles": [
@@ -2983,17 +4548,30 @@
     "wirkungspotenzial": {
       "terms": [
         "wirkung",
-        "wirkungspfad",
         "wirkungsrisiko",
-        "vertrauen",
         "wirkstoff",
-        "wirkmechanismus",
         "resonanzraum",
         "anschlussfaehigkeit",
+        "faktencheck",
+        "folgencheck",
+        "haltung",
+        "handlung",
+        "handlungsdruck",
+        "wirkmechanismus",
+        "wirkungsdaten",
+        "wirkungspaedagogik",
+        "wirkungspfad",
+        "wirkungstraeger",
+        "kognitive-dissonanz",
         "salienz",
+        "reaktanz",
+        "verlustaversion",
         "framing",
-        "folgewirkung",
-        "faktenargumentation"
+        "normalisierung",
+        "resonanzrisiko",
+        "faktenargumentation",
+        "erfindung",
+        "glossar-publizierungsprozess"
       ],
       "documents": [],
       "journalArticles": [
@@ -3006,7 +4584,6 @@
     "wirkungspunkte": {
       "terms": [
         "social-credit",
-        "verbraucherinformation",
         "positive-netto-wirkung"
       ],
       "documents": [
@@ -3027,7 +4604,11 @@
         "vertrauen",
         "wirkungswahrheit",
         "benchmark",
-        "archetyp"
+        "archetyp",
+        "beschwerdemechanismus-access-to-remedy",
+        "social-credit",
+        "zielkonflikt",
+        "kybernetik-zweiter-ordnung"
       ],
       "documents": [
         "wirkungsrat-konzept"
@@ -3038,7 +4619,15 @@
         "wirkungsempfaenger",
         "wirkungspfad",
         "vertrauen",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "folgencheck",
+        "handlungspfad",
+        "wirkungspaedagogik",
+        "wirkungsschule",
+        "wirkungsorientiertes-hosting",
+        "resonanzarchitektur",
+        "nicht-dualitaet",
+        "impact-fit"
       ],
       "documents": [],
       "journalArticles": [
@@ -3071,18 +4660,26 @@
     },
     "wirkungsresilienz": {
       "terms": [
-        "nachhaltigkeit",
-        "positive-netto-wirkung",
-        "wirkungsrueckkopplung",
+        "wirkungsintegration",
+        "vulnerabilitaet",
+        "anpassungskapazitaet",
+        "varietaet",
+        "wirkungsarchitektur",
+        "handlungsdruck",
+        "handlungsfaehigkeit",
+        "hitzeschutz-hitzeaktionsplan",
+        "hitzestress",
+        "hochwasserrisiko",
         "kipppunkt-systemschwelle",
+        "nachhaltigkeit",
+        "regeneration",
         "zukunftsfaehigkeit",
-        "systemische-kohaerenz",
-        "vertrauen",
-        "rueckkopplung",
-        "kipppunkt",
-        "wirkungsrisiko",
+        "erlernte-hilflosigkeit",
+        "gesellschaftliche-stabilitaet",
         "resilienz",
-        "gesellschaftliche-stabilitaet"
+        "viabilitaet",
+        "klimaanpassung",
+        "entropie"
       ],
       "documents": [],
       "journalArticles": [
@@ -3092,32 +4689,63 @@
     "wirkungsrisiko": {
       "terms": [
         "wirkungspotenzial",
-        "vertrauen",
-        "stranded-assets",
-        "wirkungsradar",
-        "resonanzrisiko",
-        "wirkungspfad",
-        "wirkmechanismus",
-        "alarm-frame",
-        "destruktives-narrativ",
-        "kipppunkt",
         "folgewirkung",
-        "faktenreaktanz",
-        "moral-licensing",
+        "resonanzrisiko",
+        "klimarisiko",
+        "wirkungsgrenze",
+        "esg",
+        "eu-taxonomie",
+        "handlungsdruck",
+        "iro",
+        "kipppunkt-systemschwelle",
+        "kosten-des-nicht-handelns",
+        "lock-in-pfadabhaengigkeit",
+        "negative-wirkung",
+        "pai",
+        "physical-climate-risk",
+        "stranded-assets",
+        "wirkung",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "wirkungsradar",
+        "zeitwirkung",
+        "host-wirkungsscore",
+        "dissonanzreduktion",
+        "scheinentlastung",
+        "verfuegbarkeitsheuristik",
+        "reaktanz",
+        "verlustaversion",
+        "alarm-frame",
+        "baseline-verschiebung",
+        "normalisierung",
         "destruktive-vertrauensbindung",
-        "baseline-verschiebung"
+        "kipppunkt",
+        "rebound-effekt",
+        "salienzsteuerung",
+        "destruktives-narrativ",
+        "status-quo-bias",
+        "moral-licensing",
+        "glossar-publizierungsprozess"
       ],
       "documents": []
     },
     "wirkungsrueckkopplung": {
       "terms": [
-        "wirkungslenkung",
-        "wirkungsarchitektur",
-        "vertrauen",
-        "positive-netto-wirkung",
         "rueckkopplung",
-        "folgewirkung",
-        "wirkungsintegration"
+        "kybernetik",
+        "wirkungsarchitektur",
+        "wirkungslenkung",
+        "fuenftes-p-planet",
+        "esg",
+        "hebelpunkt",
+        "hebelwirkung",
+        "nachhaltigkeit",
+        "steuerungsdaten",
+        "sustainable-finance",
+        "wirkungsfonds",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "gewinn-als-test"
       ],
       "documents": [],
       "journalArticles": [
@@ -3149,7 +4777,11 @@
         "haushaltsneutralitaet",
         "energiearmut",
         "mobilitaetsarmut",
-        "klimagerechtigkeit"
+        "klimagerechtigkeit",
+        "cbam",
+        "hebelpunkt",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer"
       ],
       "documents": [
         "wstg-oktober-2025",
@@ -3213,7 +4845,8 @@
         "wirkungsrat",
         "faktenargumentation",
         "vertrauen",
-        "folgencheck"
+        "folgencheck",
+        "social-credit"
       ],
       "documents": []
     },
@@ -3221,7 +4854,8 @@
       "terms": [
         "wohnwirkung",
         "wirkungsvermietung",
-        "stranded-assets"
+        "stranded-assets",
+        "warmmietenneutralitaet"
       ],
       "documents": [
         "woek_wohnen_investoren_vermieter_dossier_v0_3"
@@ -3233,7 +4867,10 @@
         "warmmietenneutralitaet",
         "wirkungsvermietung",
         "energiearmut",
-        "quartierswirkung"
+        "quartierswirkung",
+        "spekulationslogik",
+        "umweltgerechtigkeit",
+        "wirkungspflicht-eigentum"
       ],
       "documents": [
         "woek_wohnen_stadt_gesamtdossier_v0_1"
@@ -3245,7 +4882,14 @@
         "benchmark",
         "wirkungsdatenraum",
         "digitaler-produktpass",
-        "datenqualitaet"
+        "datenqualitaet",
+        "archetyp",
+        "nace",
+        "social-taxonomy",
+        "wirkungsdaten",
+        "wirkungsregister",
+        "wirkungsumsatzsteuer",
+        "wustg"
       ],
       "documents": [
         "woek-master-items"
@@ -3261,12 +4905,23 @@
         "wstg-oktober-2025"
       ]
     },
+    "wu-wei": {
+      "terms": [
+        "dao",
+        "prozessdenken",
+        "selbstorganisation",
+        "rueckkopplung"
+      ],
+      "documents": []
+    },
     "wustg": {
       "terms": [
         "wirkungsumsatzsteuer",
         "wirkungssteuer",
         "scorecard",
-        "woek-id"
+        "woek-id",
+        "wirkungssteuergesetz",
+        "wstg"
       ],
       "documents": [
         "technische-leitlinien-wustg"
@@ -3280,7 +4935,8 @@
         "esap",
         "esef",
         "csrd",
-        "berichtsdaten"
+        "berichtsdaten",
+        "efrag"
       ],
       "documents": []
     },
@@ -3327,7 +4983,8 @@
         "konstruktives-narrativ",
         "orientierung",
         "anschlussfaehigkeit",
-        "wirkungsintegration"
+        "wirkungsintegration",
+        "sensemaking"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"

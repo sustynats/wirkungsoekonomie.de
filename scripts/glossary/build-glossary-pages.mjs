@@ -17,6 +17,15 @@ const categoryOrder = [
   "Datenbegriff",
   "Demokratiebegriff",
   "Psychologische und systemische Wirkmechanismen",
+  "Psychologische Wirkmechanismen",
+  "Systemtheorie, Kybernetik und Konstruktivismus",
+  "Management, Wirksamkeit und Organisation",
+  "Innovation, Evolution und Unternehmertum",
+  "Daoismus, Prozessdenken und Nicht-Erzwingen",
+  "Klima, Lebenszyklus und ökologische Wirkung",
+  "Design, Geschäftsmodelle und Wertversprechen",
+  "Physik, Energie und Wirkungsmetaphern",
+  "Glossar-Publizierungsprozess",
   "Praxisbegriff",
 ];
 
@@ -142,6 +151,36 @@ function termLink(slug) {
 function listItems(values, fallback = "Keine Einträge") {
   if (!Array.isArray(values) || values.length === 0) return `<p>${esc(fallback)}</p>`;
   return `<ul class="clean-list">${values.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
+}
+
+function parseSource(value) {
+  if (value && typeof value === "object") {
+    return {
+      label: value.title || value.label || "Quelle",
+      url: value.url || value.href || "",
+      type: value.source_type || value.sourceType || "",
+      status: value.status || "",
+    };
+  }
+  const [label, url] = String(value || "").split("|");
+  return {
+    label: label?.trim() || "Quelle",
+    url: url?.trim() || "",
+    type: "",
+    status: "",
+  };
+}
+
+function sourceList(term) {
+  const rows = [
+    ...((term.sourceLinks || term.source_links || []).map(parseSource)),
+    ...((term.officialSources || []).map(parseSource)),
+  ].filter((item, index, all) => item.label && all.findIndex((candidate) => `${candidate.label}|${candidate.url}` === `${item.label}|${item.url}`) === index);
+  if (!rows.length) return `<p>Keine externe Quelle hinterlegt.</p>`;
+  return `<ul class="clean-list">${rows.slice(0, 8).map((item) => {
+    const label = item.type ? `${item.label} (${item.type})` : item.label;
+    return item.url ? `<li><a class="text-link" href="${esc(item.url)}">${esc(label)}</a></li>` : `<li>${esc(label)}</li>`;
+  }).join("")}</ul>`;
 }
 
 const centralTermDetails = new Map([
@@ -359,6 +398,8 @@ for (const term of data.terms) {
           <p class="lead">${esc(termLead(term))}</p>
           <div class="term-meta-row" aria-label="Begriffsinformation">
             <span>Version ${esc(term.version)}</span>
+            ${term.conceptStatus || term.concept_status ? `<span>${esc(term.conceptStatus || term.concept_status)}</span>` : ""}
+            ${term.publicationStatus || term.publication_status ? `<span>${esc(term.publicationStatus || term.publication_status)}</span>` : ""}
           </div>
           <div class="term-action-row">${detailLinks(term)}</div>
         </header>
@@ -411,9 +452,13 @@ ${learningBlock(term)}
           </div>
         </section>
         <section class="meta-box">
-          <h2>Version und Quelle</h2>
+          <h2>Version und Quellen</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
+          ${(term.conceptStatus || term.concept_status || term.publicationStatus || term.publication_status)
+            ? `<p>Begriffstatus: ${esc(term.conceptStatus || term.concept_status || "nicht klassifiziert")} · Publikationsstatus: ${esc(term.publicationStatus || term.publication_status || "published")}</p>`
+            : ""}
           <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+          ${sourceList(term)}
         </section>
       </article>`;
   const pageOptions = term.termId === "mensch-planet-demokratie"
