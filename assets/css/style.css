@@ -10519,7 +10519,7 @@ textarea {
 }
 
 .fulltext-reader .data-table:has(thead th:nth-child(7)) {
-  min-width: 1280px;
+  min-width: 1120px;
 }
 
 .chapter-mini-map,
@@ -12831,7 +12831,7 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 .article-body.fulltext-reader .table-wrap table.data-table:has(thead th:nth-child(7)) {
-  min-width: 1280px;
+  min-width: 1120px;
 }
 
 .article-body.fulltext-reader .table-wrap table.data-table th,
