@@ -63,7 +63,7 @@ function relatedLinks(term) {
     .map((relatedId) => termsById.get(relatedId))
     .filter(Boolean)
     .slice(0, 8)
-    .map((related) => `<a href="#klassisch-${esc(related.slug)}">${esc(termLabel(related))}</a>`)
+    .map((related) => `<a href="${esc(termPage(related))}">${esc(termLabel(related))}</a>`)
     .join("");
   return links || "<span>Keine direkten Glossarverweise hinterlegt.</span>";
 }

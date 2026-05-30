@@ -488,6 +488,10 @@ function linkedChips(items, fallback = "Keine Einträge") {
 function transformGlossaryHtml(html) {
   return String(html || "")
     .replace(glossaryActionPattern, "")
+    .replace(/href="(?:(?:\.\.\/)*|\/)?glossar\.html#([^"]+)"/g, (_, anchor) => {
+      const slug = anchorToSlug.get(anchor);
+      return slug ? `href="../../begriffe/${esc(slug)}/"` : `href="../../glossar.html#${esc(anchor)}"`;
+    })
     .replace(/href="#([^"]+)"/g, (_, anchor) => {
       const slug = anchorToSlug.get(anchor);
       return slug ? `href="../../begriffe/${esc(slug)}/"` : `href="../../glossar.html#${esc(anchor)}"`;
