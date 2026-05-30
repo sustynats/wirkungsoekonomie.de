@@ -10482,13 +10482,14 @@ textarea {
 .fulltext-reader .table-wrap {
   width: 100%;
   max-width: 100%;
-  overflow-x: visible;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fulltext-reader .table-wrap table,
 .fulltext-reader .data-table {
   display: table;
-  min-width: 0;
+  min-width: 760px;
   table-layout: auto;
 }
 
@@ -10504,8 +10505,21 @@ textarea {
 
 .fulltext-reader .data-table th,
 .fulltext-reader .data-table td {
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
   word-break: normal;
+  hyphens: manual;
+}
+
+.fulltext-reader .data-table th {
+  white-space: nowrap;
+}
+
+.fulltext-reader .data-table:has(thead th:nth-child(5)) {
+  min-width: 1120px;
+}
+
+.fulltext-reader .data-table:has(thead th:nth-child(7)) {
+  min-width: 1280px;
 }
 
 .chapter-mini-map,
@@ -12793,5 +12807,62 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     width: 100%;
     max-width: 100%;
     min-width: 0;
+  }
+}
+
+/* Public reading tables: keep wide scorecards readable instead of squeezing headers into fragments. */
+.article-body.fulltext-reader .table-wrap {
+  width: min(1400px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.article-body.fulltext-reader .table-wrap table.data-table {
+  width: 100%;
+  max-width: none;
+  min-width: min(760px, 100%);
+}
+
+.article-body.fulltext-reader .table-wrap table.data-table:has(thead th:nth-child(5)) {
+  min-width: 1120px;
+}
+
+.article-body.fulltext-reader .table-wrap table.data-table:has(thead th:nth-child(7)) {
+  min-width: 1280px;
+}
+
+.article-body.fulltext-reader .table-wrap table.data-table th,
+.article-body.fulltext-reader .table-wrap table.data-table td {
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
+.article-body.fulltext-reader .table-wrap table.data-table th {
+  overflow-wrap: normal;
+  white-space: normal;
+}
+
+@media (max-width: 760px) {
+  .article-body.fulltext-reader .table-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .article-body.fulltext-reader .table-wrap table.data-table {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .article-body.fulltext-reader .table-wrap table.data-table th,
+  .article-body.fulltext-reader .table-wrap table.data-table td {
+    overflow-wrap: anywhere;
+    white-space: normal;
   }
 }
