@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T19:50:15.441Z",
+  "generatedAt": "2026-05-30T21:42:35.123Z",
   "entries": {
     "/fuer/": {
       "documentType": "Zielgruppen-Hub",
@@ -4845,6 +4845,28 @@
       "relatedDocuments": [],
       "searchBoost": 155
     },
+    "/begriffe/geld/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-geld",
+      "documentId": "geld",
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "kapital",
+        "kapitalfluss",
+        "kapitalwirkung",
+        "wirkungskapital",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "mensch-planet-demokratie"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/gemeineigentum/": {
       "documentType": "begriff",
       "status": "wirtschaftssystem-gesellschaftsmodell",
@@ -7081,10 +7103,19 @@
       "sectionId": "begriff-kapital",
       "documentId": "kapital",
       "relatedTerms": [
+        "geld",
+        "kapitalfluss",
         "kapital-als-werkzeug",
         "kapital-als-machtverhaeltnis",
         "kapitalwirkung",
+        "wirkungskapital",
         "kapitalrendite",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "t-sroi",
+        "positive-netto-wirkung",
         "adam-smith",
         "karl-marx",
         "wertschoepfung",
@@ -7126,6 +7157,22 @@
         "kapital",
         "kapitalwirkung",
         "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
+    "/begriffe/kapitalfluss/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-kapitalfluss",
+      "documentId": "kapitalfluss",
+      "relatedTerms": [
+        "geld",
+        "kapital",
+        "kapitalwirkung",
+        "wirkungskapital",
+        "wirkungsrueckkopplung"
       ],
       "relatedDocuments": [],
       "searchBoost": 155
@@ -7177,8 +7224,17 @@
       "sectionId": "begriff-kapitalwirkung",
       "documentId": "kapitalwirkung",
       "relatedTerms": [
+        "geld",
         "kapital",
+        "kapitalfluss",
+        "wirkungskapital",
         "kapitalrendite",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "t-sroi",
+        "positive-netto-wirkung",
         "kapital-als-machtverhaeltnis",
         "kapital-als-werkzeug",
         "akkumulation",
@@ -18106,6 +18162,26 @@
       ],
       "searchBoost": 155
     },
+    "/begriffe/wirkungskapital/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungskapital",
+      "documentId": "wirkungskapital",
+      "relatedTerms": [
+        "geld",
+        "kapital",
+        "kapitalfluss",
+        "kapitalwirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsfonds",
+        "t-sroi",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 155
+    },
     "/begriffe/wirkungskompetenz/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -22055,21 +22131,21 @@
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
-      "contentHash": "71c6b9c21ff8c10e",
+      "contentHash": "4ce31a6ef7ea401d",
       "sectionId": "woek-page-2afe7308732a6cbb"
     },
     "/begriffe/#glossary-filter-title": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
-      "contentHash": "71c6b9c21ff8c10e",
+      "contentHash": "4ce31a6ef7ea401d",
       "sectionId": "glossary-filter-title"
     },
     "/begriffe/#related-questions-title-begriffe": {
       "documentType": "Begriffe",
       "status": "online-reviewed",
       "version": "2026.1",
-      "contentHash": "71c6b9c21ff8c10e",
+      "contentHash": "4ce31a6ef7ea401d",
       "sectionId": "related-questions-title-begriffe"
     },
     "/begriffe/ipbes-2/": {
@@ -23162,13 +23238,6 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "contentHash": "fc0b33c95df2bf43",
-      "sectionId": ""
-    },
-    "/begriffe/wirkungskapital/": {
-      "documentType": "Begriffe",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "contentHash": "624d185d1e665296",
       "sectionId": ""
     },
     "/begriffe/wirkungskennzahl/": {
@@ -32744,7 +32813,7 @@
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
-      "contentHash": "ee6b179e7447f184",
+      "contentHash": "4366f686f96e83b6",
       "sectionId": "woek-page-9a10e39e249e7d02"
     },
     "/referenz/volltext/": {

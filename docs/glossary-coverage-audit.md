@@ -1,14 +1,14 @@
 # Glossary Coverage Audit
 
-Stand: 2026-05-30T19:48:48.816Z
+Stand: 2026-05-30T21:39:52.660Z
 
 ## Zusammenfassung
 
 | Metrik | Wert |
 | --- | ---: |
-| Begriffe im klassischen Glossar | 1142 |
+| Begriffe im klassischen Glossar | 1145 |
 | Begriffe im Bereich Daten/Standards/Regularien | 137 |
-| Alias-Einträge | 2168 |
+| Alias-Einträge | 2178 |
 | Erkannte Dubletten | 0 |
 | Korrigierte Dubletten | 0 |
 | Alias-Gruppenfehler | 0 |
@@ -316,6 +316,7 @@ Stand: 2026-05-30T19:48:48.816Z
 | Gebrauchswert | Werte, Normativität und Bewertung | ja | - | ja | ja | ok |
 | Gedächtniskonsolidierung | Neuropsychologische Wirkmechanismen | ja | - | ja | ja | ok |
 | Gedankenlosigkeit | Hannah Arendt und politische Wirkungsbegriffe | ja | - | ja | ja | ok |
+| Geld | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Gemeineigentum | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Gender Budgeting | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
 | Gender Care Gap | Feminismus, feministische Ökonomie und Care-Wirkung | ja | - | ja | ja | ok |
@@ -458,6 +459,7 @@ Stand: 2026-05-30T19:48:48.816Z
 | Kapital | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Kapital als Machtverhältnis | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Kapital als Werkzeug | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
+| Kapitalfluss | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Kapitalismus | Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken | ja | - | ja | ja | ok |
 | Kapitalrendite | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Kapitalwirkung | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
@@ -1117,6 +1119,7 @@ Stand: 2026-05-30T19:48:48.816Z
 | Wirkungsindikator | WÖk-Übersetzung | ja | ja | ja | ja | ok |
 | Wirkungsinnovation | Innovation, Evolution und Unternehmertum | ja | - | ja | ja | ok |
 | Wirkungsintegration | Psychologische und systemische Wirkmechanismen | ja | - | ja | ja | ok |
+| Wirkungskapital | Kapital, Markt und Eigentum | ja | - | ja | ja | ok |
 | Wirkungskompetenz | Grundbegriff | ja | - | ja | ja | ok |
 | Wirkungslenkung | Steuerungsbegriff | ja | - | ja | ja | ok |
 | Wirkungsnetz | Architekturbegriff | ja | - | ja | ja | ok |

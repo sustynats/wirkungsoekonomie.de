@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T19:48:47.859Z",
+  "generatedAt": "2026-05-30T21:39:51.599Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -5543,6 +5543,32 @@
         "wirkungsblindheit"
       ]
     },
+    "geld": {
+      "label": "Geld",
+      "slug": "geld",
+      "url": "/begriffe/geld/",
+      "hoverDefinition": "Geld: liquide Handlungsmöglichkeit; als gesellschaftlicher Wirkstoff verstanden, besitzt jeder Geldfluss Wirkungspotenzial.",
+      "shortDefinition": "Geld ist liquide Handlungsmöglichkeit. In der Wirkungsökonomie ist Geld nicht wirkungsneutral: Jeder Geldfluss besitzt Wirkungspotenzial, weil er Nachfrage, Investitionen, Macht, Preise, Geschäftsmodelle und Zukunftspfade stärkt oder schwächt.",
+      "category": "Kapital, Markt und Eigentum",
+      "synonyms": [
+        "Geld",
+        "Geldfluss",
+        "Geldflüsse"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "kapital",
+        "kapitalfluss",
+        "kapitalwirkung",
+        "wirkungskapital",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "mensch-planet-demokratie"
+      ]
+    },
     "gemeineigentum": {
       "label": "Gemeineigentum",
       "slug": "gemeineigentum",
@@ -8291,17 +8317,26 @@
       "label": "Kapital",
       "slug": "kapital",
       "url": "/begriffe/kapital/",
-      "hoverDefinition": "Kapital ist gespeicherte Handlungsmöglichkeit in monetärer, materieller, sozialer, natürlicher oder institutioneller Form.",
-      "shortDefinition": "Kapital ist gespeicherte Handlungsmöglichkeit in monetärer, materieller, sozialer, natürlicher oder institutioneller Form.",
+      "hoverDefinition": "Kapital: gespeicherte Handlungsfähigkeit; Werkzeug, nicht Kompass. Entscheidend ist seine Wirkung.",
+      "shortDefinition": "Kapital ist gespeicherte oder gebundene Handlungsfähigkeit. In der Wirkungsökonomie ist Kapital Werkzeug, nicht Kompass. Entscheidend ist nicht nur, ob Kapital Rendite erzielt, sondern welche Wirkung es ermöglicht, stabilisiert oder zerstört.",
       "category": "Kapital, Markt und Eigentum",
       "synonyms": [
         "Kapital"
       ],
       "relatedTerms": [
+        "geld",
+        "kapitalfluss",
         "kapital-als-werkzeug",
         "kapital-als-machtverhaeltnis",
         "kapitalwirkung",
+        "wirkungskapital",
         "kapitalrendite",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "t-sroi",
+        "positive-netto-wirkung",
         "adam-smith",
         "karl-marx",
         "wertschoepfung",
@@ -8347,6 +8382,27 @@
         "kapital",
         "kapitalwirkung",
         "positive-netto-wirkung"
+      ]
+    },
+    "kapitalfluss": {
+      "label": "Kapitalfluss",
+      "slug": "kapitalfluss",
+      "url": "/begriffe/kapitalfluss/",
+      "hoverDefinition": "Kapitalfluss: Bewegung von Geld oder Kapital in bestimmte Wirkungsräume und Zukunftspfade.",
+      "shortDefinition": "Ein Kapitalfluss ist die Bewegung von Geld oder Kapital in bestimmte Aktivitäten, Organisationen, Märkte oder Zukunftspfade.",
+      "category": "Kapital, Markt und Eigentum",
+      "synonyms": [
+        "Kapitalfluss",
+        "Kapitalflüsse",
+        "Geldfluss",
+        "Geldflüsse"
+      ],
+      "relatedTerms": [
+        "geld",
+        "kapital",
+        "kapitalwirkung",
+        "wirkungskapital",
+        "wirkungsrueckkopplung"
       ]
     },
     "kapitalismus": {
@@ -8397,15 +8453,24 @@
       "label": "Kapitalwirkung",
       "slug": "kapitalwirkung",
       "url": "/begriffe/kapitalwirkung/",
-      "hoverDefinition": "Kapitalwirkung beschreibt, welche Zustandsveränderungen Kapital durch Investition, Eigentum, Kredit, Renditeerwartung oder Machtkonzentration erzeugt.",
-      "shortDefinition": "Kapitalwirkung beschreibt, welche Zustandsveränderungen Kapital durch Investition, Eigentum, Kredit, Renditeerwartung oder Machtkonzentration erzeugt.",
+      "hoverDefinition": "Kapitalwirkung beschreibt, welche Wirkung Kapitalflüsse auf Mensch, Planet und Demokratie entfalten.",
+      "shortDefinition": "Kapitalwirkung beschreibt, welche Wirkung Kapitalflüsse auf Mensch, Planet und Demokratie entfalten.",
       "category": "Kapital, Markt und Eigentum",
       "synonyms": [
         "Kapitalwirkung"
       ],
       "relatedTerms": [
+        "geld",
         "kapital",
+        "kapitalfluss",
+        "wirkungskapital",
         "kapitalrendite",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "t-sroi",
+        "positive-netto-wirkung",
         "kapital-als-machtverhaeltnis",
         "kapital-als-werkzeug",
         "akkumulation",
@@ -21035,6 +21100,30 @@
         "selbstwirksamkeit",
         "sensemaking",
         "ernst-von-glasersfeld"
+      ]
+    },
+    "wirkungskapital": {
+      "label": "Wirkungskapital",
+      "slug": "wirkungskapital",
+      "url": "/begriffe/wirkungskapital/",
+      "hoverDefinition": "Wirkungskapital ist Kapital, das gezielt positive Netto-Wirkung finanziert.",
+      "shortDefinition": "Wirkungskapital ist Kapital, das gezielt zur Erzeugung positiver Netto-Wirkung eingesetzt wird.",
+      "category": "Kapital, Markt und Eigentum",
+      "synonyms": [
+        "Wirkungskapital",
+        "Impact-Kapital",
+        "Impact Capital"
+      ],
+      "relatedTerms": [
+        "geld",
+        "kapital",
+        "kapitalfluss",
+        "kapitalwirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsfonds",
+        "t-sroi",
+        "positive-netto-wirkung"
       ]
     },
     "wirkungskompetenz": {

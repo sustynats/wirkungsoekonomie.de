@@ -13,7 +13,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260527-questions";
+  const searchDataVersion = "20260530-geld-kapital";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 700;
   const MAX_VISIBLE_RESULTS = 24;
@@ -47,6 +47,11 @@
     wirkung: [["/begriffe/wirkung/", 1200], ["/modell.html", 980], ["/kompass.html", 940], ["/wirkungsoekonomie.html", 900]],
     "netto wirkung": [["/begriffe/positive-netto-wirkung/", 1150], ["/modell.html", 920], ["/kompass.html", 880]],
     "positive netto wirkung": [["/begriffe/positive-netto-wirkung/", 1150], ["/modell.html", 920], ["/kompass.html", 880]],
+    geld: [["/begriffe/geld/", 1200], ["/begriffe/kapital/", 940], ["/begriffe/kapitalfluss/", 920], ["/begriffe/kapitalwirkung/", 880]],
+    kapital: [["/begriffe/kapital/", 1200], ["/begriffe/geld/", 940], ["/begriffe/kapitalwirkung/", 920], ["/begriffe/wirkungskapital/", 880]],
+    kapitalfluss: [["/begriffe/kapitalfluss/", 1200], ["/begriffe/geld/", 940], ["/begriffe/kapitalwirkung/", 920]],
+    kapitalwirkung: [["/begriffe/kapitalwirkung/", 1200], ["/begriffe/wirkungskapital/", 940], ["/begriffe/kapital/", 920]],
+    wirkungskapital: [["/begriffe/wirkungskapital/", 1200], ["/begriffe/kapitalwirkung/", 940], ["/begriffe/kapital/", 920]],
     wirkungseinkommen: [["/begriffe/wirkungseinkommen/", 1150], ["/erleben/automatisierungs-wirkungseinkommensrechner/", 940], ["/wirkungsfelder/arbeit-einkommen/", 880]],
     bildung: [["/wirkungsfelder/bildung/", 980], ["/begriffe/wirkungskompetenz/", 860]],
   };
@@ -372,7 +377,10 @@
     let score = Number(entry.priority || 0) + Number(GROUP_SCORE_BONUS[groupId] || 0);
     if (isLowValueSearchEntry(entry)) score -= 500;
     score += curatedRouteBoost(entry, rawQuery);
-    if (normalizeRoute(entry.url) === "/glossar.html" && normalize(rawQuery) !== "glossar") score -= 260;
+    const normalizedRoute = normalizeRoute(entry.url);
+    const normalizedQuery = normalize(rawQuery);
+    if (normalizedRoute === "/glossar.html" && normalizedQuery !== "glossar") score -= 260;
+    if (normalizedRoute === "/begriffe/" && !["begriffe", "begriff", "glossar"].includes(normalizedQuery)) score -= 360;
 
     if (containsQuery(title, query)) score += 120;
     if (containsQuery(aliases, query)) score += 90;
