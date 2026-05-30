@@ -120,8 +120,11 @@ function isSearchNoiseEntry(entry) {
   const title = publicSearchText(String(entry.title || "")).trim().toLowerCase();
   const section = publicSearchText(String(entry.section || "")).trim().toLowerCase();
   const body = publicSearchText(String(entry.body || "")).toLowerCase();
+  const haystack = [route, title, section, body, String(entry.description || "").toLowerCase(), ...(Array.isArray(entry.aliases) ? entry.aliases.map((item) => String(item).toLowerCase()) : [])].join(" ");
+  if (/\.(?:json|md|zip|xlsx|xls|csv)\b|content_index|toolcards_|bestands-und-nachlieferliste|nachlieferliste|readme_rang\d+|import pruefen|import prüfen/i.test(haystack)) return true;
   const noiseTitles = new Set(["kontakt", "verstehen", "referenzrahmen", "kontext-werkzeuge", "methoden & werkzeuge", "erleben & lernen", "werkstatt"]);
   if (/^\/assets\/data\//i.test(route)) return true;
+  if (/^\/assets\/downloads\/.*\.(?:json|md|zip|xlsx|xls|csv)$/i.test(route)) return true;
   if (/^\/werkstatt(\/|$)/i.test(route)) return true;
   if (noiseTitles.has(title) && body.length < 900) return true;
   if (/footer navigation|hauptnavigation|site-nav|footer-nav/i.test(body)) return true;
@@ -510,6 +513,14 @@ const merged = Array.from(byUrl.values())
   .map(normalizePriority)
   .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
 
+const publicMeta = Object.fromEntries(
+  Object.entries(meta).map(([url, value]) => {
+    const copy = publicSearchValue({ ...value });
+    delete copy.sourceFile;
+    return [url, copy];
+  }),
+);
+
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
-fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: meta }, null, 2)}\n`);
+fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: publicMeta }, null, 2)}\n`);
 console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);

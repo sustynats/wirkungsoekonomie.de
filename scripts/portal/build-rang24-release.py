@@ -366,7 +366,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
       {body}
     </main>
     <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Website 1.0</h2><div><a href="{href(prefix, 'fachbibliothek/')}">Fachbibliothek</a><a href="{href(prefix, 'downloads/')}">Downloads</a><a href="{href(prefix, 'tools/')}">Tools</a><a href="{href(prefix, 'website-1-0-release/')}">Releasebericht</a></div></div></div></footer>
-    <script src="{href(prefix, 'assets/js/main.js?v=20260529-glossary-hover-audit')}"></script>
+    <script src="{href(prefix, 'assets/js/main.js?v=20260525-ux-finish')}"></script>
     {extra_script}
   </body>
 </html>"""
@@ -446,29 +446,51 @@ def portal_cards(portals: list[dict]) -> str:
 
 def library_cards(register: list[dict]) -> str:
     cards = []
-    for i, item in enumerate(register):
+    public_extensions = {"pdf", "docx"}
+    blocked_types = {"Sonstiges", "ZIP-Gesamtpaket", "Gesamtpaket"}
+    blocked_name_patterns = re.compile(
+        r"(content_index|toolcards_|bestands|nachliefer|readme|gesamtpaket|index\.html|style\.css|\.zip$|\.json$|\.md$)",
+        re.I,
+    )
+    def display_title(file_name: str) -> str:
+        title = re.sub(r"\.(pdf|docx)$", "", file_name, flags=re.I)
+        title = re.sub(r"^\d+[_\-\s]+", "", title)
+        title = re.sub(r"^(Detailkonzept|Konzeptpapier|Gesamtdossier|Wirkungsindikatoren|Toolkarten)[_\-\s]+", r"\1: ", title, flags=re.I)
+        title = title.replace("_", " ").replace("-", " ")
+        title = re.sub(r"\s+", " ", title).strip()
+        return title or file_name
+
+    for item in register:
         if re.search(r"codex|anweisung", item.get("file_name", ""), re.I):
             continue
         rang_raw = clean(item.get("rang", 0))
         rang_num = int(rang_raw) if rang_raw.isdigit() else -1
         ext = clean(item.get("extension"))
         doc_type = clean(item.get("document_type"))
+        title = clean(item.get("file_name"))
+        if ext not in public_extensions:
+            continue
+        if doc_type in blocked_types:
+            continue
+        if blocked_name_patterns.search(title):
+            continue
         portal = f"Rang {rang_raw}" if rang_num >= 0 else "Grundlagen"
         online = up_href(PORTAL_URLS.get(rang_num, "fachbibliothek/"))
         download = up_href(RANK_DOWNLOADS.get(rang_num, "downloads/"))
-        title = clean(item.get("file_name"))
-        desc = f"{doc_type} aus {clean(item.get('source_package'))}."
+        display = display_title(title)
+        desc = f"{doc_type} der öffentlichen Fachbibliothek."
+        public_status = clean(item.get("qa_status"))
+        if public_status == "Import pruefen":
+            public_status = "Öffentliche Lesefassung"
         pdf = "ja" if ext == "pdf" else "nein"
         docx = "ja" if ext == "docx" else "nein"
-        cards.append(f"""<article class="card library-card" data-rang="{html.escape(rang_raw)}" data-portal="{html.escape(portal)}" data-type="{html.escape(doc_type)}" data-status="{esc(item.get('qa_status'))}" data-format="{html.escape(ext)}" data-online="ja" data-pdf="{pdf}" data-docx="{docx}">
+        cards.append(f"""<article class="card library-card" data-rang="{html.escape(rang_raw)}" data-portal="{html.escape(portal)}" data-type="{html.escape(doc_type)}" data-status="{html.escape(public_status)}" data-format="{html.escape(ext)}" data-online="ja" data-pdf="{pdf}" data-docx="{docx}">
 <p class="card-kicker">{html.escape(portal)} · {html.escape(doc_type)} · {html.escape(ext.upper())}</p>
-<h3 class="card-title">{html.escape(title)}</h3>
+<h3 class="card-title">{html.escape(display)}</h3>
 <p class="card-text">{html.escape(desc)}</p>
-<dl class="portal-meta-grid compact"><div><dt>Status</dt><dd>{esc(item.get('qa_status'))}</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>25. Mai 2026</dd></div><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl>
+<dl class="portal-meta-grid compact"><div><dt>Status</dt><dd>{html.escape(public_status)}</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>25. Mai 2026</dd></div><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl>
 <div class="hero-actions no-print"><a class="btn btn-secondary" href="{html.escape(online)}">Onlinefassung</a><a class="btn btn-secondary" href="{html.escape(download)}">Downloads</a></div>
 <p class="card-text"><strong>Toolbezug:</strong> siehe Toolkartenregister. <strong>Glossarbezug:</strong> Wirkung, SDG+, positive Netto-Wirkung.</p></article>""")
-        if i >= 807:
-            break
     return "".join(cards)
 
 
