@@ -16,6 +16,29 @@ const categoryOrder = [
   "Schutzbegriff",
   "Datenbegriff",
   "Demokratiebegriff",
+  "Psychologische und systemische Wirkmechanismen",
+  "Psychologische Wirkmechanismen",
+  "Systemtheorie, Kybernetik und Konstruktivismus",
+  "Systemtheorie, Konstruktivismus und Kybernetik",
+  "Management, Wirksamkeit und Organisation",
+  "Management, Organisation und Wirksamkeit",
+  "Innovation, Evolution und Unternehmertum",
+  "Transformation, Innovation und wirtschaftliche Entwicklung",
+  "Daoismus, Prozessdenken und Nicht-Erzwingen",
+  "Klima, Lebenszyklus und ökologische Wirkung",
+  "Design, Geschäftsmodelle und Wertversprechen",
+  "Physik, Energie und Wirkungsmetaphern",
+  "Vordenker:innen und Bezugslinien",
+  "Werte, Normativität und Bewertung",
+  "Kapital, Markt und Eigentum",
+  "Sprache, Wirklichkeit und Kommunikation",
+  "Ethik, Würde und Verantwortung",
+  "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+  "Kreislaufwirtschaft, Circular Design und Materialkreisläufe",
+  "Neuropsychologische Wirkmechanismen",
+  "Quantenphysik, Quantenmaterialien und Zukunftstechnologien",
+  "Energie, Strommarkt und Systemkosten",
+  "Glossar-Publizierungsprozess",
   "Praxisbegriff",
 ];
 
@@ -25,6 +48,10 @@ function esc(value) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+function unique(values) {
+  return Array.from(new Set((values || []).filter(Boolean)));
 }
 
 function navMatch(item) {
@@ -75,7 +102,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260525-sprint-2"></script>
+    <script src="${depth}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>
 `;
@@ -96,7 +123,7 @@ const termTargetLinks = new Map([
   ["sdg-sdgplus-referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
   ["sdg-plus", "../../verstehen/sdgs-sdgplus/#sdgplus"],
   ["sdgs", "../../verstehen/sdgs-sdgplus/"],
-  ["social-taxonomy", "../../blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"],
+  ["social-taxonomy", "../../bibliothek/social-taxonomy-wirkungsoekonomie/"],
   ["positive-netto-wirkung", "../../begriffe/positive-netto-wirkung/"],
   ["woek-id", "../../werkzeuge/woek-ids/"],
   ["scorecard", "../../werkzeuge/scorecards/"],
@@ -143,6 +170,105 @@ function listItems(values, fallback = "Keine Einträge") {
   return `<ul class="clean-list">${values.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
 }
 
+function asList(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (!value) return [];
+  return [value];
+}
+
+function filterToken(value) {
+  return String(value || "")
+    .trim()
+    .toLocaleLowerCase("de")
+    .replace(/ß/g, "ss")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function dimensionTokens(value) {
+  const raw = String(value || "").toLocaleLowerCase("de");
+  const tokens = [filterToken(value)];
+  if (raw.includes("mensch")) tokens.push("mensch");
+  if (raw.includes("planet")) tokens.push("planet");
+  if (raw.includes("demokratie")) tokens.push("demokratie");
+  return Array.from(new Set(tokens.filter(Boolean)));
+}
+
+function filterValues(field) {
+  const values = new Set();
+  for (const term of data.terms) {
+    for (const value of asList(term[field])) values.add(value);
+  }
+  return Array.from(values).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
+}
+
+function filterButtons(name, label, values) {
+  if (!values.length) return "";
+  return `<fieldset class="glossary-filter-group" data-filter-group="${esc(name)}">
+          <legend>${esc(label)}</legend>
+          <div class="filter-chip-row">
+            ${values.map((value) => `<button type="button" data-filter-name="${esc(name)}" data-filter-value="${esc(filterToken(value))}" aria-pressed="false">${esc(value)}</button>`).join("")}
+          </div>
+        </fieldset>`;
+}
+
+function termFilterData(term) {
+  return {
+    type: filterToken(term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category),
+    theme: asList(term.theme || term.themes).map(filterToken),
+    dimension: asList(term.dimensions).flatMap(dimensionTokens),
+    wirklogik: asList(term.wirklogik).map(filterToken),
+    field: asList(term.applicationFields || term.application_fields).map(filterToken),
+    source: asList(term.sourceField || term.source_field).map(filterToken),
+  };
+}
+
+function dataAttrList(values) {
+  return esc(asList(values).join(" "));
+}
+
+function termBadges(term) {
+  const badges = unique([
+    term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category,
+    ...asList(term.theme || term.themes).slice(0, 2),
+    ...asList(term.dimensions).slice(0, 1),
+  ]).slice(0, 5);
+  return `<div class="term-card-tags">${badges.map((badge) => `<span>${esc(badge)}</span>`).join("")}</div>`;
+}
+
+function parseSource(value) {
+  if (value && typeof value === "object") {
+    return {
+      label: value.title || value.label || "Quelle",
+      url: value.url || value.href || "",
+      type: value.source_type || value.sourceType || "",
+      status: value.status || "",
+    };
+  }
+  const [label, url] = String(value || "").split("|");
+  return {
+    label: label?.trim() || "Quelle",
+    url: url?.trim() || "",
+    type: "",
+    status: "",
+  };
+}
+
+function sourceList(term) {
+  const rows = [
+    ...((term.sourceLinks || term.source_links || []).map(parseSource)),
+    ...((term.officialSources || []).map(parseSource)),
+  ].filter((item, index, all) => item.label && all.findIndex((candidate) => `${candidate.label}|${candidate.url}` === `${item.label}|${item.url}`) === index);
+  if (!rows.length) return `<p>Keine externe Quelle hinterlegt.</p>`;
+  return `<ul class="clean-list">${rows.slice(0, 8).map((item) => {
+    const label = item.type ? `${item.label} (${item.type})` : item.label;
+    return item.url ? `<li><a class="text-link" href="${esc(item.url)}">${esc(label)}</a></li>` : `<li>${esc(label)}</li>`;
+  }).join("")}</ul>`;
+}
+
 const centralTermDetails = new Map([
   ["faktencheck", ["Er verhindert, dass falsche Zahlen, manipulierte Quellen oder aus dem Kontext gerissene Aussagen als Grundlage für Entscheidungen dienen.", "Ein Faktencheck erklärt noch nicht, welche gesellschaftlichen Folgen eine richtige oder falsche Aussage auslösen kann.", "Eine Statistik wird auf Quelle, Zeitraum, Methode und Kontext geprüft, bevor sie in einer Debatte verwendet wird.", ["Richtig heißt nicht folgenlos.", "Ein Faktencheck ersetzt keine Wirkungsanalyse."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Medienwirkungscheck", "../../erleben/medienwirkungscheck/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["folgencheck", ["Er macht Wirkungspotenziale sichtbar, bevor Schäden, Nebenwirkungen oder Systemfolgen vollständig eingetreten sind.", "Ein Folgencheck ist keine Zensur und keine nachträgliche Schadensbilanz.", "Vor einer Kampagne wird geprüft, welche Wirkstoffe, Wirkungspfade und Resonanzräume Polarisierung, Schutzverhalten oder Fehlanreize auslösen können.", ["Folgencheck ist ex ante.", "Er bewertet Wirkungspotenziale, nicht Menschen."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Medienwirkungscheck", "../../erleben/medienwirkungscheck/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
@@ -163,11 +289,11 @@ const centralTermDetails = new Map([
   ["wirkungshaushalt", ["Er zeigt, ob öffentliche Mittel Zustände verbessern oder nur ausgegeben werden.", "Ein Wirkungshaushalt ersetzt keine Parlamente und kein Haushaltsrecht.", "Vermiedene Krankheit kann als Präventionswirkung in Haushalten sichtbar werden.", ["Wirkungshaushalte brauchen Evaluation.", "Grundrechte dürfen nicht durch Kennzahlen ersetzt werden."], [["Wirkungshaushalt", "../../werkzeuge/wirkungshaushalt/"]], [["Gesundheit & Pflege", "../../wirkungsfelder/gesundheit-pflege/"]]]],
   ["wirkungsdatenraum", ["Er macht Wirkung prüfbar, ohne Datenschutz und Zweckbindung aufzugeben.", "Ein Wirkungsdatenraum ist kein ungeschützter Datenpool und kein Personen-Scoring.", "Ein Produktpass kann Klima- und Lieferkettendaten bereitstellen, ohne personenbezogene Daten offenzulegen.", ["Mehr Daten sind nicht automatisch bessere Wirkung.", "Rechte und Datenqualität sind Teil der Wirkung."], [["Digitale Produktpässe", "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"]], [["Digitalisierung & KI", "../../portale/digitalisierung-ki-wirkungsdatenraeume/"]]]],
   ["wirkungsschule", ["Sie macht Schule als Wirkungsraum sichtbar: Unterricht, Raum, Beziehung, Bewertung, Förderung, Gesundheit, digitale Kultur und Demokratiepraxis wirken zusammen.", "Wirkungsschule ist keine neue Schulform, kein Ranking und kein Modell zur Bewertung einzelner Kinder, Familien oder Lehrkräfte.", "Ein Schulhof-Hitze-Projekt verbindet Messung, Beteiligung, Gesundheit, Stadtklima, Kostenvergleich und demokratische Entscheidung.", ["Keine Kinder-Scores.", "Daten verbessern Lernbedingungen, nicht Personenrankings."], [["Wirkungsschule-Check", "../../erleben/wirkungsschule-check/"], ["Wirkungsportfolio-Generator", "../../erleben/wirkungsportfolio-generator/"]], [["Bildung", "../../wirkungsfelder/bildung/"], ["Arbeitsbibliothek Bildung", "../../werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/"]]]],
-  ["wirkungsorientiertes-hosting", ["Es macht Reichweite, Gästeauswahl, Chat, Plattformpfad, Clip-Kontext und Korrektur als gestaltbaren Wirkungsraum sichtbar.", "Es ist keine Zensur, keine Gesinnungsprüfung und kein Benimmkatalog.", "Ein Host markiert eine Gesundheitsbehauptung als unbelegt, nennt Quellenstatus und ergänzt eine Korrektur nach der Sendung.", ["Bewertet werden Bedingungen, nicht Menschen.", "Korrektur ist Teil der Wirkung."], [["Medienwirkungscheck", "../../erleben/medienwirkungscheck/"], ["Wirkungsräume gestalten", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"], ["Arbeitsbibliothek Medien", "../../werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/"]]]],
-  ["resonanzarchitektur", ["Sie zeigt, dass ein Format durch Frage, Gäste, Redezeit, Humor, Chatregeln, Titel, Clips und Nachbereitung Resonanzen formt.", "Resonanzarchitektur ist keine Manipulationsstrategie und keine reine Reichweitenoptimierung.", "Ein Talkformat plant vorab, wann Falschbehauptungen gestoppt, welche Quellen gezeigt und wie Clips kontextualisiert werden.", ["Dramaturgie ist nicht automatisch Wirkung.", "Resonanz braucht Korrekturwege."], [["Wirkungsräume gestalten", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
-  ["host-wirkungsscore", ["Er macht Lernpunkte eines Formats sichtbar: Quellenklarheit, Tonalität, Diskursführung, Community, Schutz und Korrektur.", "Der Score ist kein Personenrating, kein Wahrheitsmonopol und keine automatische Sperrlogik.", "Eine Redaktion bewertet nach einem Stream, ob der Clip-Kontext die Gesamtbotschaft verzerrt und ob der Chat geschützt wurde.", ["Scorecards brauchen Interpretation.", "Rote Linien dürfen nicht durch Reichweite kompensiert werden."], [["Scorecards", "../../werkzeuge/scorecards/"], ["Wirkungsräume gestalten", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["wirkungspaedagogik", ["Sie beschreibt Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit.", "Wirkungspädagogik ist keine Moralisierung, kein Gesinnungsunterricht und keine Projektbeliebigkeit ohne Fachlichkeit.", "Ein Fach-Zukunft-Modul verbindet fachliche Perspektiven mit einer realen Wirkungsfrage und einer reflektierten Handlung.", ["Fachlichkeit bleibt Grundlage.", "Wirkung ersetzt keine pädagogische Freiheit."], [["Fach-Zukunft-Modulgenerator", "../../erleben/fach-zukunft-generator/"], ["Wirkungsportfolio-Generator", "../../erleben/wirkungsportfolio-generator/"]], [["Bildung", "../../wirkungsfelder/bildung/"], ["Wirkungsschule", "../../wirkungsfelder/bildung/wirkungsschule/"]]]],
   ["wirkungskompetenz", ["Sie macht Menschen und Organisationen fähig, Folgen, Zielkonflikte, Nebenwirkungen, Rückkopplungen und Datenqualität zu verstehen.", "Wirkungskompetenz ist keine Ideologie, keine zentrale Wissensverwaltung und kein Personen-Score.", "Schüler:innen lernen im Schulhof-Hitze-Projekt zu unterscheiden, ob ein Projekt nur Output erzeugt oder Zustände für Lernen, Gesundheit und Teilhabe verbessert.", ["Kompetenz heißt nicht Kontrolle.", "Sie stärkt Urteilskraft, Teilhabe und Korrekturfähigkeit."], [["Akademie", "../../akademie.html"], ["Wirkungsschule-Check", "../../erleben/wirkungsschule-check/"]], [["Bildung", "../../wirkungsfelder/bildung/"]]]],
+  ["wirkungsorientiertes-hosting", ["Es macht Reichweite, Gästeauswahl, Chat, Plattformpfad, Clip-Kontext und Korrektur als gestaltbaren Wirkungsraum sichtbar.", "Es ist keine Zensur, keine Gesinnungsprüfung und kein Benimmkatalog.", "Ein Host markiert eine Gesundheitsbehauptung als unbelegt, nennt Quellenstatus und ergänzt eine Korrektur nach der Sendung.", ["Bewertet werden Bedingungen, nicht Menschen.", "Korrektur ist Teil der Wirkung."], [["Medienwirkungscheck", "../../erleben/medienwirkungscheck/"], ["Wirkungsräume gestalten", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
+  ["resonanzarchitektur", ["Sie zeigt, dass ein Format durch Frage, Gäste, Redezeit, Humor, Chatregeln, Titel, Clips und Nachbereitung Resonanzen formt.", "Resonanzarchitektur ist keine Manipulationsstrategie und keine reine Reichweitenoptimierung.", "Ein Talkformat plant vorab, wann Falschbehauptungen gestoppt, welche Quellen gezeigt und wie Clips kontextualisiert werden.", ["Dramaturgie ist nicht automatisch Wirkung.", "Resonanz braucht Korrekturwege."], [["Wirkungsräume gestalten", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
+  ["host-wirkungsscore", ["Er macht Lernpunkte eines Formats sichtbar: Quellenklarheit, Tonalität, Diskursführung, Community, Schutz und Korrektur.", "Der Score ist kein Personenrating, kein Wahrheitsmonopol und keine automatische Sperrlogik.", "Eine Redaktion bewertet nach einem Stream, ob der Clip-Kontext die Gesamtbotschaft verzerrt und ob der Chat geschützt wurde.", ["Scorecards brauchen Interpretation.", "Rote Linien dürfen nicht durch Reichweite kompensiert werden."], [["Scorecards", "../../werkzeuge/scorecards/"], ["Wirkungsräume gestalten", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["wirkstoff", ["Er hilft, Auslöser wie Gesetze, Preise, Produkte, Narrative oder Algorithmen früh als mögliche Wirkungsauslöser zu untersuchen.", "Wirkstoff ist eine didaktische Analogie und kein medizinischer oder naturwissenschaftlicher Nachweis.", "Ein Rabatt, eine Schlagzeile oder ein Algorithmus kann als gesellschaftlicher Wirkstoff geprüft werden: Was kann er auslösen?", ["Wirkstoff ist nicht Wirkung.", "Ein Auslöser braucht Kontext, Pfad und Raum."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"], ["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
   ["wirkungsraum", ["Er begrenzt die Frage, wo eine Handlung, ein Produkt oder eine Aussage Folgen entfalten kann.", "Ein Wirkungsraum ist keine Zielgruppe und kein Marktsegment.", "Eine Mietregel wirkt im Wohnraum, im kommunalen Haushalt, im Quartier und auf Vertrauen in Institutionen.", ["Räume überlappen.", "Der relevante Wirkungsraum muss begründet werden."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Wohnen & Stadt", "../../wirkungsfelder/wohnen-stadt/"], ["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["wirkungspfad", ["Er macht Annahmen nachvollziehbar: Was löst was unter welchen Bedingungen aus?", "Ein Wirkungspfad ist noch kein Kausalnachweis und kein endgültiges Urteil.", "Eine Produktinformation kann Aufmerksamkeit erzeugen, Kaufentscheidungen verändern und Lieferkettenanreize verschieben.", ["Pfad heißt nicht Beweis.", "Datenqualität und Unsicherheit gehören dazu."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Scorecards", "../../werkzeuge/scorecards/"]], [["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
@@ -176,34 +302,6 @@ const centralTermDetails = new Map([
 function linkedChips(items, fallback = "Keine Einträge") {
   if (!Array.isArray(items) || items.length === 0) return `<p>${esc(fallback)}</p>`;
   return `<div class="term-chip-row">${items.map(([label, href]) => `<a class="term-chip" href="${esc(href)}">${esc(label)}</a>`).join("")}</div>`;
-}
-
-function termPageHref(href) {
-  const value = String(href || "");
-  if (value.startsWith("/")) return `../..${value}`;
-  return value;
-}
-
-function relatedContentChips(items, fallback = "Noch keine eindeutige Zuordnung") {
-  if (!Array.isArray(items) || items.length === 0) return `<span class="term-chip muted">${esc(fallback)}</span>`;
-  return items.map(([label, href]) => `<a class="term-chip" href="${esc(termPageHref(href))}">${esc(label)}</a>`).join("");
-}
-
-function relatedContentBlock(term) {
-  return `<section class="term-link-section related-content-section" aria-labelledby="related-content-title">
-          <div>
-            <p class="section-eyebrow">Querverlinkung</p>
-            <h2 id="related-content-title">Verwandte Inhalte</h2>
-            <p>Diese Links verbinden den Begriff mit Methoden, Wirkungsfeldern, Demos, Dokumenten und Einwänden. Sie ergänzen den Begriff, ohne seine Definition zu ändern.</p>
-          </div>
-          <div class="related-content-grid">
-            <section><h3>Methoden</h3><div class="term-chip-row">${relatedContentChips(term.relatedMethods)}</div></section>
-            <section><h3>Wirkungsfelder</h3><div class="term-chip-row">${relatedContentChips(term.relatedImpactFields)}</div></section>
-            <section><h3>Demos</h3><div class="term-chip-row">${relatedContentChips(term.relatedDemos)}</div></section>
-            <section><h3>Dokumente</h3><div class="term-chip-row">${relatedContentChips(term.relatedDocuments)}</div></section>
-            <section><h3>Einwände</h3><div class="term-chip-row">${relatedContentChips(term.relatedObjections)}</div></section>
-          </div>
-        </section>`;
 }
 
 function learningBlock(term) {
@@ -301,6 +399,22 @@ function termUsageHtml(term) {
   return `<p>${esc(term.usageNote)}</p>`;
 }
 
+function mythBlock(term) {
+  const mythos = term.mythos || "";
+  const klaerung = term.woekKlaerung || term.woek_klaerung || "";
+  const blind = term.blindSpot || term.blind_spot || "";
+  if (!mythos && !klaerung && !blind) return "";
+  return `<section class="term-summary-card term-myth-card" aria-labelledby="term-myth-title">
+          <p class="section-eyebrow">Mythos und Klärung</p>
+          <h2 id="term-myth-title">Wirkungsökonomische Einordnung</h2>
+          <div class="term-section-grid">
+            ${mythos ? `<section class="term-section-card"><h3>Mythos</h3><p>${esc(mythos)}</p></section>` : ""}
+            ${klaerung ? `<section class="term-section-card"><h3>WÖk-Klärung</h3><p>${esc(klaerung)}</p></section>` : ""}
+            ${blind ? `<section class="term-section-card"><h3>Blinder Fleck</h3><p>${esc(blind)}</p></section>` : ""}
+          </div>
+        </section>`;
+}
+
 function detailLinks(term) {
   const links = [];
   const target = termTargetLinks.get(term.slug);
@@ -312,23 +426,47 @@ function detailLinks(term) {
     .join("");
 }
 
+const quickFilters = [
+  ["Wirkung verstehen", { theme: "wirkung-und-wirkungslogik" }],
+  ["Wirtschaftssysteme vergleichen", { theme: "wirtschaftssysteme-und-gesellschaftsmodelle" }],
+  ["Medienwirkung & Folgencheck", { theme: "demokratie-medien-und-oeffentlichkeit" }],
+  ["Klima & Produktwirkung", { theme: "klima-energie-und-lebenszyklus" }],
+  ["Management & Innovation", { theme: "management-organisation-und-wirksamkeit" }],
+  ["Psychologische Wirkmechanismen", { theme: "psychologie-und-resonanz" }],
+  ["Philosophie & Werte", { theme: "philosophie-ethik-und-werte" }],
+];
+
 const indexBody = `      <section class="hero compact-hero">
         <p class="hero-kicker">WÖk-Referenzsystem</p>
         <h1>Begriffe der Wirkungsökonomie</h1>
-        <p class="hero-subtitle">Alphabetische Begriffsschicht für Hoverdefinitionen, Crosslinks, Terminologieprüfung, Suche und spätere PDF-Glossare.</p>
-        <p class="notice">Die Begriffe dieser Seite folgen dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Ältere Projektdateien können frühere Begriffsverwendungen enthalten.</p>
+        <p class="hero-subtitle">Alphabetisch, thematisch und wirkungslogisch erschließbar: Suche nach Begriffen, Aliassen, Themenwelten, WÖk-Dimensionen, Anwendungsfeldern und Quellenfeldern.</p>
+        <p class="notice">Die Filter sind kombinierbar und über URL-Parameter verlinkbar, zum Beispiel <code>?theme=wirtschaftssysteme-und-gesellschaftsmodelle</code>, <code>?type=methodenbegriff</code> oder <code>?q=kapital</code>.</p>
       </section>
       <section class="content-band glossary-filter-panel" aria-labelledby="glossary-filter-title">
-        <h2 id="glossary-filter-title">Begriffe filtern</h2>
-        <label>
-          <span class="sr-only">Glossar durchsuchen</span>
-          <input type="search" placeholder="Begriff, Alias oder Definition suchen" data-glossary-search>
-        </label>
-        <div class="filter-chip-row" aria-label="Begriffskategorien">
-          <button type="button" class="active" data-glossary-category="all">Alle</button>
-          ${categories.map((category) => `<button type="button" data-glossary-category="${esc(category)}">${esc(category.replace("begriff", ""))}</button>`).join("")}
+        <div class="section-header compact">
+          <p class="hero-kicker">Filter</p>
+          <h2 id="glossary-filter-title">Glossar gezielt erschließen</h2>
+          <p>Mehrfachfilter eingrenzen die Ergebnisliste; innerhalb der Treffer bleibt die alphabetische Ordnung erhalten.</p>
         </div>
-        <p class="reference-filter-status" data-glossary-filter-status></p>
+        <label class="glossary-search-field">
+          <span>Freitextsuche</span>
+          <input type="search" placeholder="Begriff, Alias, Synonym oder Definition suchen" data-glossary-search aria-label="Glossar durchsuchen">
+        </label>
+        <div class="glossary-quick-filters" aria-label="Schnellfilter">
+          ${quickFilters.map(([label, params]) => `<button type="button" data-quick-filter="${esc(new URLSearchParams(params).toString())}">${esc(label)}</button>`).join("")}
+        </div>
+        <div class="glossary-filter-grid">
+          ${filterButtons("type", "Begriffstyp", filterValues("type").concat(filterValues("begriffstyp"), filterValues("conceptStatus")).filter(Boolean).filter((value, index, all) => all.indexOf(value) === index))}
+          ${filterButtons("theme", "Themenwelt", filterValues("theme"))}
+          ${filterButtons("dimension", "WÖk-Dimension", filterValues("dimensions"))}
+          ${filterButtons("wirklogik", "Wirklogik", filterValues("wirklogik"))}
+          ${filterButtons("field", "Anwendungsfeld", filterValues("applicationFields"))}
+          ${filterButtons("source", "Quellenfeld", filterValues("sourceField"))}
+        </div>
+        <div class="glossary-filter-actions">
+          <button type="button" class="btn btn-secondary" data-glossary-reset>Filter zurücksetzen</button>
+          <p class="reference-filter-status" data-glossary-filter-status role="status" aria-live="polite"></p>
+        </div>
       </section>
       <nav class="az-nav" aria-label="Alphabetische Navigation">
         ${nav.map((letter) => `<a href="#${esc(letter)}">${esc(letter)}</a>`).join(" ")}
@@ -337,37 +475,107 @@ const indexBody = `      <section class="hero compact-hero">
         const items = groups.get(letter);
         return `<section id="${esc(letter)}" class="content-band">
         <h2>${esc(letter)}</h2>
-        <div class="card-grid">${items.map((term) => `<article class="info-card" data-glossary-card data-category="${esc(term.category || "")}" data-search="${esc([term.canonicalLabel, term.shortDefinition, term.hoverDefinition, ...(term.synonyms || [])].join(" ").toLowerCase())}">
+        <div class="card-grid">${items.map((term) => {
+          const filterData = termFilterData(term);
+          return `<article class="info-card glossary-result-card" data-glossary-card data-category="${esc(term.category || "")}" data-type="${esc(filterData.type)}" data-theme="${dataAttrList(filterData.theme)}" data-dimension="${dataAttrList(filterData.dimension)}" data-wirklogik="${dataAttrList(filterData.wirklogik)}" data-field="${dataAttrList(filterData.field)}" data-source="${dataAttrList(filterData.source)}" data-search="${esc([term.canonicalLabel, term.shortDefinition, term.hoverDefinition, term.longDefinition, term.woekRelation, ...(term.synonyms || [])].join(" ").toLowerCase())}">
           <h3><a href="${esc(term.slug)}/">${esc(term.canonicalLabel)}</a></h3>
           <p>${esc(term.shortDefinition)}</p>
-          <p class="meta-line">${esc(term.category || "Begriff")} · ${esc(term.status)} · Version ${esc(term.version)}</p>
-        </article>`).join("")}</div>
+          ${termBadges(term)}
+          <p class="meta-line">${esc(term.category || "Begriff")} · ${esc(term.type || term.begriffstyp || term.status)} · Version ${esc(term.version)}</p>
+        </article>`;
+        }).join("")}</div>
       </section>`;
       }).join("\n")}
       <script>
         (() => {
           const search = document.querySelector("[data-glossary-search]");
-          const buttons = Array.from(document.querySelectorAll("[data-glossary-category]"));
+          const buttons = Array.from(document.querySelectorAll("[data-filter-name]"));
           const cards = Array.from(document.querySelectorAll("[data-glossary-card]"));
           const status = document.querySelector("[data-glossary-filter-status]");
-          let active = "all";
+          const reset = document.querySelector("[data-glossary-reset]");
+          const quickButtons = Array.from(document.querySelectorAll("[data-quick-filter]"));
+          const state = { type: new Set(), theme: new Set(), dimension: new Set(), wirklogik: new Set(), field: new Set(), source: new Set(), q: "" };
+          const params = new URLSearchParams(window.location.search);
+          const split = (value) => (value || "").split(",").map((item) => item.trim()).filter(Boolean);
+          const normalize = (value) => String(value || "")
+            .trim()
+            .toLocaleLowerCase("de")
+            .replace(/ß/g, "ss")
+            .replace(/ä/g, "ae")
+            .replace(/ö/g, "oe")
+            .replace(/ü/g, "ue")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "");
+          Object.keys(state).forEach((key) => {
+            if (key === "q") state.q = params.get("q") || "";
+            else split(params.get(key)).forEach((value) => state[key].add(normalize(value)));
+          });
+          if (search instanceof HTMLInputElement) search.value = state.q;
+          function hasAll(card, key) {
+            const selected = state[key];
+            if (!selected || !selected.size) return true;
+            const values = (card.dataset[key] || "").split(" ").filter(Boolean);
+            return Array.from(selected).every((value) => values.includes(value));
+          }
+          function updateUrl() {
+            const next = new URLSearchParams();
+            if (state.q) next.set("q", state.q);
+            ["type", "theme", "dimension", "wirklogik", "field", "source"].forEach((key) => {
+              if (state[key].size) next.set(key, Array.from(state[key]).join(","));
+            });
+            const url = next.toString() ? window.location.pathname + "?" + next.toString() : window.location.pathname;
+            window.history.replaceState(null, "", url);
+          }
           function apply() {
-            const q = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : "";
+            const q = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : state.q;
+            state.q = q;
             let visible = 0;
             cards.forEach((card) => {
-              const categoryMatch = active === "all" || card.dataset.category === active;
               const textMatch = !q || (card.dataset.search || card.textContent || "").toLowerCase().includes(q);
-              const show = categoryMatch && textMatch;
+              const show = textMatch && hasAll(card, "type") && hasAll(card, "theme") && hasAll(card, "dimension") && hasAll(card, "wirklogik") && hasAll(card, "field") && hasAll(card, "source");
               card.hidden = !show;
               if (show) visible += 1;
             });
-            if (status) status.textContent = visible + " Begriffe sichtbar";
+            buttons.forEach((button) => {
+              const key = button.dataset.filterName;
+              const value = button.dataset.filterValue;
+              const active = Boolean(key && value && state[key]?.has(value));
+              button.classList.toggle("active", active);
+              button.setAttribute("aria-pressed", String(active));
+            });
+            document.querySelectorAll(".content-band[id]").forEach((section) => {
+              if (!section.querySelector("[data-glossary-card]")) return;
+              section.hidden = !Array.from(section.querySelectorAll("[data-glossary-card]")).some((card) => !card.hidden);
+            });
+            if (status) status.textContent = visible + " von " + cards.length + " Begriffen sichtbar";
+            updateUrl();
           }
           buttons.forEach((button) => button.addEventListener("click", () => {
-            active = button.dataset.glossaryCategory || "all";
-            buttons.forEach((item) => item.classList.toggle("active", item === button));
+            const key = button.dataset.filterName;
+            const value = button.dataset.filterValue;
+            if (!key || !value || !state[key]) return;
+            if (state[key].has(value)) state[key].delete(value);
+            else state[key].add(value);
             apply();
           }));
+          quickButtons.forEach((button) => button.addEventListener("click", () => {
+            Object.keys(state).forEach((key) => {
+              if (key === "q") state.q = "";
+              else state[key].clear();
+            });
+            const quick = new URLSearchParams(button.dataset.quickFilter || "");
+            quick.forEach((value, key) => state[key]?.add(value));
+            if (search instanceof HTMLInputElement) search.value = "";
+            apply();
+          }));
+          reset?.addEventListener("click", () => {
+            Object.keys(state).forEach((key) => {
+              if (key === "q") state.q = "";
+              else state[key].clear();
+            });
+            if (search instanceof HTMLInputElement) search.value = "";
+            apply();
+          });
           search?.addEventListener("input", apply);
           apply();
         })();
@@ -386,6 +594,8 @@ for (const term of data.terms) {
           <p class="lead">${esc(termLead(term))}</p>
           <div class="term-meta-row" aria-label="Begriffsinformation">
             <span>Version ${esc(term.version)}</span>
+            ${term.conceptStatus || term.concept_status ? `<span>${esc(term.conceptStatus || term.concept_status)}</span>` : ""}
+            ${term.publicationStatus || term.publication_status ? `<span>${esc(term.publicationStatus || term.publication_status)}</span>` : ""}
           </div>
           <div class="term-action-row">${detailLinks(term)}</div>
         </header>
@@ -416,6 +626,7 @@ for (const term of data.terms) {
           </section>
         </div>
 ${termExtraBlock(term)}
+${mythBlock(term)}
 ${learningBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
@@ -426,7 +637,6 @@ ${learningBlock(term)}
             ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
           </div>
         </section>
-${relatedContentBlock(term)}
         <section class="term-link-section" aria-labelledby="chapters-title">
           <div>
             <p class="section-eyebrow">Online-Buch</p>
@@ -439,9 +649,13 @@ ${relatedContentBlock(term)}
           </div>
         </section>
         <section class="meta-box">
-          <h2>Version und Quelle</h2>
+          <h2>Version und Quellen</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
+          ${(term.conceptStatus || term.concept_status || term.publicationStatus || term.publication_status)
+            ? `<p>Begriffstatus: ${esc(term.conceptStatus || term.concept_status || "nicht klassifiziert")} · Publikationsstatus: ${esc(term.publicationStatus || term.publication_status || "published")}</p>`
+            : ""}
           <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+          ${sourceList(term)}
         </section>
       </article>`;
   const pageOptions = term.termId === "mensch-planet-demokratie"
@@ -450,6 +664,8 @@ ${relatedContentBlock(term)}
         metaDescription: "Mensch, Planet und Demokratie sind die drei Oberbegriffe, mit denen die Wirkungsökonomie SDGs, Agenda 2030 und SDG+ öffentlich verständlich zusammenfasst.",
       }
     : {};
+  if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
+  if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 

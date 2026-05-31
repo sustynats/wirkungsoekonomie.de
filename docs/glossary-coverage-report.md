@@ -1,0 +1,113 @@
+# Glossary Coverage Report
+
+Stand: 2026-05-31T12:54:58.977Z
+
+- HTML-Seiten gescannt: 3251
+- Seiten mit /begriffe/-Links: 1667
+- Seiten mit Glossar-/Term-Markup: 1568
+- Tote Glossarlinks: 0
+
+## Seiten mit den meisten Glossarlinks
+- referenz/index.html: 290
+- referenz/kapitel/index.html: 287
+- begriffe/positive-netto-wirkung/index.html: 48
+- begriffe/wirkungsrisiko/index.html: 41
+- begriffe/demokratie/index.html: 39
+- begriffe/vertrauen/index.html: 38
+- begriffe/resonanzraum/index.html: 37
+- begriffe/scorecard/index.html: 37
+- begriffe/wirkungsdaten/index.html: 35
+- referenz/teil-02-die-sprache-der-wirkungsoekonomie/index.html: 35
+- begriffe/externalisierung/index.html: 31
+- begriffe/digitaler-produktpass/index.html: 29
+- begriffe/wirkungsarchitektur/index.html: 28
+- referenz/teil-11-gesellschaftliche-grundsysteme/index.html: 28
+- begriffe/demokratische-erosion/index.html: 27
+- begriffe/wirkungsresilienz/index.html: 27
+- begriffe/kapitalwirkung/index.html: 26
+- begriffe/rueckkopplung/index.html: 26
+- begriffe/wirkungspfad/index.html: 26
+- begriffe/folgencheck/index.html: 25
+- begriffe/wirkungspotenzial/index.html: 25
+- begriffe/reverse-merit-order/index.html: 24
+- begriffe/wirkungssteuer/index.html: 24
+- referenz/teil-01-die-grosse-illusion/index.html: 24
+- referenz/teil-03-das-lernende-system/index.html: 24
+- referenz/teil-06-recht-staat-und-institutionen/index.html: 24
+- referenz/teil-10-staat-politik-und-demokratie/index.html: 24
+- referenz/teil-12-medien-kommunikation-und-oeffentlichkeit/index.html: 24
+- begriffe/wirkung/index.html: 23
+- begriffe/wirkungshaushalt/index.html: 23
+- begriffe/wirkungskompetenz/index.html: 23
+- begriffe/csrd/index.html: 22
+- begriffe/kapital/index.html: 22
+- begriffe/scope-3/index.html: 22
+- begriffe/wirkungswert/index.html: 22
+- referenz/teil-05-messung-daten-und-methodik/index.html: 22
+- begriffe/eu-taxonomie/index.html: 21
+- begriffe/framing/index.html: 21
+- begriffe/produktdaten/index.html: 21
+- begriffe/wirkungsblindheit/index.html: 21
+- begriffe/wirkungsrat/index.html: 21
+- begriffe/greenwashing/index.html: 20
+- begriffe/datenqualitaet/index.html: 19
+- begriffe/kognitive-dissonanz/index.html: 19
+- begriffe/wirkungsbewertung/index.html: 19
+- begriffe/wirkungsrueckkopplung/index.html: 19
+- begriffe/kreislaufwirtschaft/index.html: 18
+- begriffe/social-taxonomy/index.html: 18
+- begriffe/wirkungswahrheit/index.html: 18
+- blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html: 18
+- referenz/kapitel-010-wirkung/index.html: 18
+- referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html: 18
+- begriffe/esrs/index.html: 17
+- begriffe/externalitaet/index.html: 17
+- begriffe/grundgesetz/index.html: 17
+- begriffe/rechtsstaatlichkeit/index.html: 17
+- begriffe/salienz/index.html: 17
+- begriffe/woek-id/index.html: 17
+- begriffe/alarm-frame/index.html: 16
+- begriffe/machtkonzentration/index.html: 16
+- begriffe/medienqualitaet/index.html: 16
+- begriffe/ngo/index.html: 16
+- begriffe/patriarchat/index.html: 16
+- begriffe/reframing/index.html: 16
+- begriffe/sustainable-finance/index.html: 16
+- begriffe/trickle-down-oekonomie/index.html: 16
+- referenz/kapitel-011-wirkungspotenzial/index.html: 16
+- referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html: 16
+- begriffe/autokratie/index.html: 15
+- begriffe/batterierecycling/index.html: 15
+- begriffe/berichtsdaten/index.html: 15
+- begriffe/biodiversitaetsrisiko/index.html: 15
+- begriffe/feminismus/index.html: 15
+- begriffe/feministische-oekonomie/index.html: 15
+- begriffe/mensch-planet-demokratie/index.html: 15
+- begriffe/menschenwuerde/index.html: 15
+- begriffe/product-carbon-footprint/index.html: 15
+- begriffe/selbstorganisation/index.html: 15
+- begriffe/transition-risk/index.html: 15
+- begriffe/treibhausgasemissionen/index.html: 15
+- begriffe/wirklichkeitskonstruktion/index.html: 15
+- begriffe/wirkungsgrenze/index.html: 15
+- begriffe/wirkungsintegration/index.html: 15
+- referenz/teil-09-volkswirtschaft-arbeit-kapital-und-wohlstand/index.html: 15
+- begriffe/anschlussfaehigkeit/index.html: 14
+- begriffe/care-oekonomie/index.html: 14
+- begriffe/faschismus/index.html: 14
+- begriffe/lebenszyklusanalyse/index.html: 14
+- begriffe/liberalismus/index.html: 14
+- begriffe/marktwirtschaft/index.html: 14
+- begriffe/nichtkompensationsprinzip/index.html: 14
+- begriffe/orientierung/index.html: 14
+- begriffe/rassismus/index.html: 14
+- begriffe/sechster-kondratieff/index.html: 14
+- begriffe/systemgrenze/index.html: 14
+- begriffe/thinktank/index.html: 14
+- begriffe/wirkstoff/index.html: 14
+- begriffe/wirkungsinnovation/index.html: 14
+- begriffe/wirkungsraum/index.html: 14
+- referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/index.html: 14
+
+## Tote Glossarlinks
+Keine.
