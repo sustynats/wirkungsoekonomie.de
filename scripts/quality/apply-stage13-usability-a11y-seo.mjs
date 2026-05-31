@@ -17,7 +17,7 @@ const mainPages = [
   ["akademie.html", "/akademie.html", "Akademie | Lernpfad Wirkungskompetenz", "Akademie der Wirkungsökonomie als Lernpfad für Wirkungskompetenz: Grundbegriffe, SDGs, SDG+, Daten, Scorecards, NWI, T-SROI und Pilotierung.", "Akademie für Wirkungskompetenz"],
   ["downloads.html", "/downloads.html", "Bibliothek | Quellen und Versionen der Wirkungsökonomie", "Kuratierte Bibliothek der Wirkungsökonomie mit Grundlagenwerk, Whitepapers, Arbeitspapieren, Methodik, Glossar, Versionen und Lesepfaden.", "Bibliothek der Wirkungsökonomie"],
   ["begriffe/index.html", "/begriffe/", "Glossar | Begriffe der Wirkungsökonomie", "Glossar der Wirkungsökonomie mit Kurzdefinitionen, Langdefinitionen, Synonymen, verwandten Begriffen, Methoden und Wirkungsfeldern.", "Glossar der Wirkungsökonomie"],
-  ["glossar.html", "/glossar.html", "Glossar | Wirkung verständlich erklären", "Zentrale Begriffe der Wirkungsökonomie verständlich erklärt: Wirkung, Wirkungspotenzial, Netto-Wirkung, SDG+, Scorecards und Rückkopplung.", "Glossar der Wirkungsökonomie"],
+  ["glossar.html", "/begriffe/", "Glossar | Begriffe der Wirkungsökonomie", "Vollständiger Glossar-Einstieg der Wirkungsökonomie mit Begriffsdetailseiten, Hoverdefinitionen, Suche, verwandten Begriffen und Querverlinkungen.", "Glossar der Wirkungsökonomie"],
   ["mitmachen.html", "/mitmachen.html", "Mitmachen | Wirkungsökonomie prüfen und pilotieren", "Mitmachen bei der Wirkungsökonomie: Feedback geben, Quellen prüfen, Methoden diskutieren, Pilotierung vorbereiten und Anwendungspartner werden.", "Mitmachen"],
 ].map(([file, canonical, title, description, ogTitle]) => ({ file, canonical, title, description, ogTitle }));
 

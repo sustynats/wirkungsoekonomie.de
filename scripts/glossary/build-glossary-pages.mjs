@@ -108,6 +108,36 @@ ${renderFooter(depth)}
 `;
 }
 
+function glossaryLegacyAlias(depth = "") {
+  const target = `${depth}begriffe/`;
+  return `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/">
+    <title>Weiterleitung zum vollständigen Glossar - Wirkungsökonomie</title>
+    <script>
+      (function () {
+        var hash = window.location.hash || "";
+        var match = hash.match(/^#begriff-(.+)$/);
+        var destination = match ? "${target}" + match[1] + "/" : "${target}";
+        window.location.replace(destination);
+      })();
+    </script>
+  </head>
+  <body>
+    <main aria-labelledby="redirect-title">
+      <h1 id="redirect-title">Weiterleitung zum vollständigen Glossar</h1>
+      <p>Das vollständige Glossar mit Begriffsdetailseiten, Hoverdefinitionen, Suche und Querverlinkungen liegt unter <a href="${target}">/begriffe/</a>.</p>
+      <p>Falls du einem alten Anker gefolgt bist, öffne den passenden Begriff über die Suche im vollständigen Glossar.</p>
+    </main>
+  </body>
+</html>
+`;
+}
+
 const groups = new Map();
 for (const term of data.terms) {
   const letter = (term.glossaryOrderKey || term.canonicalLabel).trim()[0].toLocaleUpperCase("de");
@@ -582,6 +612,9 @@ const indexBody = `      <section class="hero compact-hero">
       </script>`;
 
 fs.writeFileSync(path.join(outDir, "index.html"), pageShell("Begriffe", indexBody, "../"));
+fs.writeFileSync("glossar.html", glossaryLegacyAlias(""));
+fs.mkdirSync("glossar", { recursive: true });
+fs.writeFileSync(path.join("glossar", "index.html"), glossaryLegacyAlias("../"));
 
 for (const term of data.terms) {
   const dir = path.join(outDir, term.slug);
