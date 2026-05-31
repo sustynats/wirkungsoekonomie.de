@@ -7,6 +7,7 @@ const IMPORT_VERSION = "2026.1-import";
 const SOURCE_VERSION = "2026.0";
 const TERM_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const TERM_BASE_DATE = "2026-05-21";
+const referenceReaderAssetVersion = "20260531-mobile-reference-reader";
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
@@ -236,7 +237,7 @@ function renderFooter(base) {
 
 function scriptsFor(base) {
   return `<script src="${base}assets/js/main.js?v=20260523-reference-ux"></script>
-    <script src="${base}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>`;
+    <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
 function page(file, { title, description, section = "Hauptwerk", type = "Live-Referenz", body, bodyClass = "" }) {
@@ -252,7 +253,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260523-fulltext-reader">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${referenceReaderAssetVersion}">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}
@@ -914,12 +915,23 @@ function scriptTagForPage(file) {
 }
 
 function ensureScripts(html, file) {
-  if (html.includes("reference-reader.js")) return html;
-  return html.replace("</body>", `    ${scriptTagForPage(file)}\n  </body>`);
+  let next = html
+    .replace(/style\.css\?v=[^"']+/g, `style.css?v=${referenceReaderAssetVersion}`)
+    .replace(/reference-reader\.js\?v=[^"']+/g, `reference-reader.js?v=${referenceReaderAssetVersion}`);
+  if (next.includes("reference-reader.js")) return next;
+  return next.replace("</body>", `    ${scriptTagForPage(file)}\n  </body>`);
 }
 
 function stripUxMarkers(html) {
   return html.replace(/<!-- reference-ux:start -->[\s\S]*?<!-- reference-ux:end -->/g, "");
+}
+
+function uniqueClasses(...values) {
+  return [...new Set(values.join(" ").split(/\s+/).filter(Boolean))].join(" ");
+}
+
+function cleanMainRest(rest, attribute) {
+  return rest.replace(new RegExp(`\\s${attribute}\\b`, "g"), "");
 }
 
 function applyChapterMetadataCorrections(html, chapter) {
@@ -1027,7 +1039,7 @@ function enhanceChapter(chapter, chapters) {
   html = sourceChips(html);
   html = html.replace(
     /<main class="([^"]*reference-work[^"]*)"([^>]*)>/,
-    (match, classes, rest) => `<main class="${[classes, "chapter-reader reference-reader"].join(" ").replace(/\s+/g, " ").trim()}" data-reference-reader${rest}>${modeBar(chapter)}`
+    (match, classes, rest) => `<main class="${uniqueClasses(classes, "chapter-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>${modeBar(chapter)}`
   );
   html = html.replace(/<nav class="breadcrumb">([\s\S]*?)<\/nav>/, (match) => `${match}
             <!-- reference-ux:start -->${statusBadges(chapter.reviewStatus)}<!-- reference-ux:end -->`);
@@ -1058,7 +1070,7 @@ function enhanceDocument(file) {
   html = sourceChips(html);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
     if (classes.includes("workpaper-reader")) return match;
-    return `<main class="${classes} workpaper-reader reference-reader" data-reference-reader${rest}>`;
+    return `<main class="${uniqueClasses(classes, "workpaper-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>`;
   });
   html = html.replace(/(<h1\b[\s\S]*?<\/h1>)/, `$1
         <!-- reference-ux:start --><div class="document-reader-tools">
@@ -1080,8 +1092,8 @@ function enhanceFullText() {
   const file = "referenz/volltext/index.html";
   if (!fs.existsSync(file)) return;
   let html = stripUxMarkers(read(file));
-  html = html.replace(/style\.css\?v=[^"']+/g, "style.css?v=20260523-fulltext-reader");
-  html = html.replace(/reference-reader\.js\?v=[^"']+/g, "reference-reader.js?v=20260523-fulltext-reader");
+  html = html.replace(/style\.css\?v=[^"']+/g, `style.css?v=${referenceReaderAssetVersion}`);
+  html = html.replace(/reference-reader\.js\?v=[^"']+/g, `reference-reader.js?v=${referenceReaderAssetVersion}`);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
     const merged = [classes, "reference-fulltext"].join(" ").replace(/\s+/g, " ").trim();
     const clean = [...new Set(merged.split(" "))].join(" ");

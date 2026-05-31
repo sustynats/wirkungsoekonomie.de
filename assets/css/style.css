@@ -9776,15 +9776,120 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     padding-inline: 1rem;
   }
 
+  body[data-reader-mode="lesen"] .reference-work.reference-reader,
+  body[data-reader-mode="referenz"] .reference-work.reference-reader,
+  body[data-reader-mode="quellen"] .reference-work.reference-reader,
+  body[data-reader-mode="updates"] .reference-work.reference-reader,
+  .reference-work.reference-reader,
+  .workpaper-reader {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+    gap: 0.85rem;
+  }
+
+  .reader-mode-dock {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    padding: 0.55rem;
+    border-radius: 0.5rem;
+  }
+
+  .reader-mode-dock button {
+    width: 100%;
+    min-height: 2.35rem;
+    padding: 0.45rem 0.5rem;
+    font-size: 0.82rem;
+  }
+
+  .reader-mode-dock button[data-reader-mode="print"] {
+    grid-column: 1 / -1;
+  }
+
+  .chapter-mini-map,
+  .document-mini-map,
+  .reference-context-rail {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .chapter-mini-map,
+  .document-mini-map {
+    max-height: 14rem;
+    padding: 0.8rem;
+    overflow: auto;
+    border-left: 0;
+    border-top: 3px solid var(--green);
+  }
+
+  .chapter-mini-map a,
+  .document-mini-map a {
+    padding-block: 0.3rem;
+    overflow-wrap: anywhere;
+  }
+
+  .reference-context-rail {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .reference-reader .article-shell {
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+  }
+
+  .reference-reader .article-shell p,
+  .reference-reader .article-shell li {
+    overflow-wrap: anywhere;
+  }
+
+  .reference-reader .article-shell .hero-kicker {
+    display: block;
+    max-width: 34ch;
+    font-size: 0.72rem;
+    letter-spacing: 0;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    word-break: normal;
+  }
+
+  .reference-reader .version-ribbon,
+  .reference-reader .version-ribbon span,
+  .reference-reader .version-ribbon strong {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
   .reference-card-grid.six,
   .chapter-bottom-nav {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .reference-hero h1,
-  .reference-reader .article-shell h1 {
+  .reference-hero h1 {
     max-width: 100%;
     font-size: clamp(2.5rem, 15vw, 4rem);
+  }
+
+  .reference-reader .article-shell h1 {
+    max-width: 100%;
+    font-size: 1.9rem;
+    line-height: 1.12;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
 
   .reader-mode-dock {
@@ -9792,7 +9897,7 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   }
 
   .reader-mode-dock span {
-    flex: 0 0 100%;
+    grid-column: 1 / -1;
   }
 
   .reader-mode-dock button {
@@ -9803,6 +9908,27 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   .version-ribbon span,
   .version-ribbon strong {
     flex: 1 1 100%;
+  }
+
+  .chapter-reader-tools .btn,
+  .document-reader-tools .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .reference-portal,
+  .reference-work.reference-reader {
+    padding-inline: 0.55rem;
+  }
+
+  .reference-reader .article-shell {
+    padding: 0.85rem;
+  }
+
+  .reference-reader .article-shell h1 {
+    font-size: 1.65rem;
   }
 }
 
