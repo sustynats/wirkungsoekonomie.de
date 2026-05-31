@@ -10,8 +10,9 @@ const STAGE_DOC = path.join(ROOT, "docs/stage-9-library-versioning.md");
 const START = "<!-- stage9-library-versioning:start -->";
 const END = "<!-- stage9-library-versioning:end -->";
 
-const DOCUMENT_EXTENSIONS = new Set([".pdf", ".docx", ".xlsx", ".pptx", ".md"]);
+const DOCUMENT_EXTENSIONS = new Set([".pdf", ".xlsx", ".pptx"]);
 const ONLINE_EXTENSIONS = new Set([".html"]);
+const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 const SKIP_DIRS = new Set([
   ".git",
   ".codex-backup",
@@ -156,7 +157,6 @@ const READING_PATHS = [
 ];
 
 const LEADING_REFERENCE_PATHS = new Set([
-  "content/governance/woek-language-rules.md",
   "buch.html",
   "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
   "glossar.html",
@@ -189,10 +189,6 @@ const LEADING_OVERRIDES = new Map([
   ["referenz/version-1-1/index.html", {
     title: "Live-Referenz Version 1.1",
     shortDescription: "Führende Online-Referenzfassung für die aktualisierte Systemdarstellung."
-  }],
-  ["content/governance/woek-language-rules.md", {
-    title: "WÖk-Sprachregelwerk und Schutzlinien",
-    shortDescription: "Maßgeblicher Begriffsleitfaden für WÖk-Sprache, Statushinweise und rote Linien."
   }],
   ["assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx", {
     title: "SDG-/SDG+-Referenzrahmen (Lesefassung)",
@@ -237,7 +233,7 @@ function walk(dir, extensions, acc = []) {
     if (!entry.isFile()) continue;
     if (TRACKED_FILES && !TRACKED_FILES.has(relative)) continue;
     const ext = path.extname(entry.name).toLowerCase();
-    if (ext === ".docx") continue;
+    if (NON_PUBLIC_FILE_EXTENSIONS.has(ext)) continue;
     if (extensions.has(ext)) acc.push(abs);
   }
   return acc;
@@ -529,9 +525,9 @@ function buildRegistry() {
   const fileDocuments = collectFiles(DOCUMENT_ROOTS, DOCUMENT_EXTENSIONS).map((file) => documentFor(file, "download-or-document"));
   const onlineDocuments = collectFiles(ONLINE_ROOTS, ONLINE_EXTENSIONS).map((file) => documentFor(file, "online-version"));
   const requiredReferences = [
-    "content/governance/woek-language-rules.md",
     "buch.html",
-    "glossar.html"
+    "glossar.html",
+    "begriffe/index.html"
   ].filter(exists).map((file) => documentFor(file, "leading-reference"));
   const documents = mergeDocuments([...requiredReferences, ...fileDocuments, ...onlineDocuments]);
   const counts = documents.reduce((acc, doc) => {
@@ -552,10 +548,10 @@ function buildRegistry() {
       fields: ["title", "shortDescription", "type", "status", "dateOrStand", "topics", "relatedMethods", "relatedImpactFields", "formats", "urls"]
     },
     leadingLanguageReference: {
-      title: "WÖk-Sprachregelwerk und Schutzlinien",
+      title: "Glossar und WÖk-Sprachregelwerk",
       status: "führend",
-      url: "content/governance/woek-language-rules.md",
-      note: "Maßgebliche Sprachreferenz für Wirkung, SDG+, positive Netto-Wirkung, Demo-Hinweise und Schutzlinien."
+      url: "begriffe/",
+      note: "Öffentliche Sprachreferenz über Glossar-Hub und Begriffsdetailseiten. Interne Markdown-Quellen werden nicht als öffentliche Dokumente ausgespielt."
     },
     readingPaths: READING_PATHS,
     counts,
@@ -577,7 +573,7 @@ function statusLegend() {
 
 function buildDownloadsBlock(registry) {
   const leading = registry.documents
-    .filter((doc) => doc.isLeadingReference && doc.urls.sourcePath !== "content/governance/woek-language-rules.md")
+    .filter((doc) => doc.isLeadingReference)
     .slice(0, 6);
   const leadingCards = leading.map((doc) => `
             <article class="card library-lead-card">
@@ -603,15 +599,15 @@ function buildDownloadsBlock(registry) {
           </div>
           <div class="library-count-grid">
             <div><strong>${registry.counts.total}</strong><span>inventarisierte Einträge</span></div>
-            <div><strong>${registry.counts.downloadFiles}</strong><span>Dateien und Markdown-Quellen</span></div>
+            <div><strong>${registry.counts.downloadFiles}</strong><span>öffentliche Dateien</span></div>
             <div><strong>${registry.counts.onlineVersions}</strong><span>Onlinefassungen</span></div>
           </div>
           <div class="card-grid three library-leading-grid">
             <article class="card library-lead-card library-lead-card--primary">
               <p class="card-kicker">Maßgebliche Sprachreferenz · führend</p>
-              <h3 class="card-title">WÖk-Sprachregelwerk und Schutzlinien</h3>
-              <p class="card-text">Verbindliche Referenz für Wirkung als neutralen relationalen Begriff, SDG+, positive Netto-Wirkung sowie Demo- und Beratungshinweise.</p>
-              <a class="text-link" href="content/governance/woek-language-rules.md">Sprachregelwerk öffnen</a>
+              <h3 class="card-title">Glossar und WÖk-Sprachregelwerk</h3>
+              <p class="card-text">Öffentliche Referenz für Wirkung als neutralen relationalen Begriff, SDG+, positive Netto-Wirkung sowie Demo- und Beratungshinweise.</p>
+              <a class="text-link" href="begriffe/">Glossar öffnen</a>
             </article>${leadingCards}
           </div>
           <div class="library-version-meta">
@@ -669,12 +665,12 @@ Stand: automatisch erzeugt durch \`scripts/library/build-library-versioning-stag
 
 ## Ziel
 
-Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dokumente, Downloads, Markdown-Quellen und Onlinefassungen bleiben erhalten; ältere oder ersetzte Fassungen werden eingeordnet statt versteckt.
+Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dokumente, Downloads und Onlinefassungen bleiben erhalten; ältere oder ersetzte Fassungen werden eingeordnet statt versteckt. Markdown-, Word- und ZIP-Dateien sind keine öffentlichen Bibliotheksformate.
 
 ## Inventar
 
 - Inventarisierte Einträge gesamt: ${registry.counts.total}
-- Download-/Dokument-/Markdown-Dateien: ${registry.counts.downloadFiles}
+- Öffentliche Download-/Dokumentdateien: ${registry.counts.downloadFiles}
 - Onlinefassungen: ${registry.counts.onlineVersions}
 - Maschinenlesbares Register: \`assets/data/library-version-registry.json\`
 - Sichtbare Kuratierung: \`downloads.html#lesepfade\`
@@ -693,7 +689,7 @@ ${typeRows}
 
 ## Maßgebliche Sprachreferenz
 
-\`content/governance/woek-language-rules.md\` ist als führender Begriffsleitfaden markiert. Es bleibt die verbindliche Referenz für die WÖk-Sprache: Wirkung neutral und relational, SDG+ als transparente WÖk-Erweiterung, positive Netto-Wirkung für Mensch, Planet und Demokratie, Demo-Schutzlinien und keine Personenbewertung.
+Das öffentliche Glossar und seine Begriffsdetailseiten sind als führende Sprachreferenz markiert. Interne Markdown-Quellen bleiben intern und werden nicht als öffentliche Dokumente verlinkt. Die verbindliche Referenz für die WÖk-Sprache umfasst: Wirkung neutral und relational, SDG+ als transparente WÖk-Erweiterung, positive Netto-Wirkung für Mensch, Planet und Demokratie, Demo-Schutzlinien und keine Personenbewertung.
 
 ## Lesepfade
 

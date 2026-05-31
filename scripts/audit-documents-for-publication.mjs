@@ -12,6 +12,7 @@ const BIB_INDEX = path.join(ROOT, "bibliothek/index.html");
 const BIB_DIR = path.join(ROOT, "bibliothek");
 
 const DOCUMENT_EXTENSIONS = new Set([".pdf", ".docx", ".xlsx", ".pptx", ".md"]);
+const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 const PUBLIC_VISIBILITIES = new Set(["public", "expert_public"]);
 const ARCHIVE_VISIBILITIES = new Set(["archive"]);
 const NON_PUBLIC_VISIBILITIES = new Set(["review_required", "internal", "hidden"]);
@@ -1171,6 +1172,8 @@ function documentUrl(doc, prefix = "") {
 
 function downloadHref(doc, prefix = "") {
   if (!doc.downloadAllowed || !PUBLIC_VISIBILITIES.has(doc.visibility)) return "";
+  const ext = path.extname(doc.filePath || doc.fileName || "").toLowerCase();
+  if (NON_PUBLIC_FILE_EXTENSIONS.has(ext)) return "";
   return `${prefix}${doc.filePath}`;
 }
 

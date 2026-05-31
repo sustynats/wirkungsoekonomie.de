@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 const ROOT = process.cwd();
 const REGISTRY_PATH = path.join(ROOT, "assets/data/library-version-registry.json");
 const OUT = path.join(ROOT, "bibliothek/index.html");
+const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 
 function esc(value = "") {
   return String(value)
@@ -27,6 +28,11 @@ function siteHref(primary = "") {
   if (!primary) return "#";
   if (/^(https?:|mailto:|tel:)/.test(primary)) return primary;
   return `../${primary.replace(/^\/+/, "")}`;
+}
+
+function isPublicLibraryFormat(primary = "") {
+  const ext = path.extname(primary.split(/[?#]/)[0]).toLowerCase();
+  return !NON_PUBLIC_FILE_EXTENSIONS.has(ext);
 }
 
 function fileSize(relPath = "") {
@@ -103,10 +109,10 @@ function actionLinks(doc, onlineByKey) {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Daten öffnen</a>`);
   } else if (/\.(pptx)$/i.test(primary)) {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Präsentation öffnen</a>`);
-  } else if (/\.(md)$/i.test(primary)) {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Quelle lesen</a>`);
   } else if (/\.docx$/i.test(sourcePath)) {
     links.push(`<span class="btn btn-ghost" aria-disabled="true">PDF wird vorbereitet</span>`);
+  } else if (!isPublicLibraryFormat(primary)) {
+    links.push(`<span class="btn btn-ghost" aria-disabled="true">Onlinefassung wird vorbereitet</span>`);
   } else {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Eintrag öffnen</a>`);
   }
@@ -156,7 +162,7 @@ function card(doc, index, onlineByKey) {
 }
 
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
-const documents = registry.documents.filter((doc) => doc.urls?.primary && !/\.docx$/i.test(doc.urls?.primary || ""));
+const documents = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
 const typeValues = new Set(documents.map((doc) => doc.type).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));

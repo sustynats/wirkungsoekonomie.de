@@ -4,12 +4,12 @@ Stand: automatisch erzeugt durch `scripts/library/build-library-versioning-stage
 
 ## Ziel
 
-Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dokumente, Downloads, Markdown-Quellen und Onlinefassungen bleiben erhalten; ältere oder ersetzte Fassungen werden eingeordnet statt versteckt.
+Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dokumente, Downloads und Onlinefassungen bleiben erhalten; ältere oder ersetzte Fassungen werden eingeordnet statt versteckt. Markdown-, Word- und ZIP-Dateien sind keine öffentlichen Bibliotheksformate.
 
 ## Inventar
 
-- Inventarisierte Einträge gesamt: 1660
-- Download-/Dokument-/Markdown-Dateien: 898
+- Inventarisierte Einträge gesamt: 1199
+- Öffentliche Download-/Dokumentdateien: 436
 - Onlinefassungen: 760
 - Maschinenlesbares Register: `assets/data/library-version-registry.json`
 - Sichtbare Kuratierung: `downloads.html#lesepfade`
@@ -18,30 +18,30 @@ Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dok
 
 | Status | Anzahl |
 | --- | ---: |
-| führend | 7 |
-| aktuell | 1206 |
-| Arbeitsfassung | 304 |
-| ältere Fassung | 125 |
+| führend | 6 |
+| aktuell | 922 |
+| Arbeitsfassung | 176 |
+| ältere Fassung | 95 |
 | ersetzt | 0 |
-| in Überarbeitung | 18 |
+| in Überarbeitung | 0 |
 
 ## Typzählung
 
 | Typ | Anzahl |
 | --- | ---: |
-| Grundlagenwerk | 50 |
-| Whitepaper | 8 |
-| Arbeitspapier | 1386 |
-| Gesetzesentwurf | 39 |
-| Beispiel | 15 |
-| Methodik | 97 |
-| Leitbild | 9 |
-| Glossar | 56 |
+| Grundlagenwerk | 48 |
+| Whitepaper | 7 |
+| Arbeitspapier | 985 |
+| Gesetzesentwurf | 31 |
+| Beispiel | 11 |
+| Methodik | 80 |
+| Leitbild | 7 |
+| Glossar | 30 |
 | Präsentation | 0 |
 
 ## Maßgebliche Sprachreferenz
 
-`content/governance/woek-language-rules.md` ist als führender Begriffsleitfaden markiert. Es bleibt die verbindliche Referenz für die WÖk-Sprache: Wirkung neutral und relational, SDG+ als transparente WÖk-Erweiterung, positive Netto-Wirkung für Mensch, Planet und Demokratie, Demo-Schutzlinien und keine Personenbewertung.
+Das öffentliche Glossar und seine Begriffsdetailseiten sind als führende Sprachreferenz markiert. Interne Markdown-Quellen bleiben intern und werden nicht als öffentliche Dokumente verlinkt. Die verbindliche Referenz für die WÖk-Sprache umfasst: Wirkung neutral und relational, SDG+ als transparente WÖk-Erweiterung, positive Netto-Wirkung für Mensch, Planet und Demokratie, Demo-Schutzlinien und keine Personenbewertung.
 
 ## Lesepfade
 
