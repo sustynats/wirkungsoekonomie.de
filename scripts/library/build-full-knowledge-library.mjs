@@ -72,9 +72,11 @@ function officePages(relPath = "") {
 
 function extent(doc) {
   const primary = doc.urls?.sourcePath || doc.urls?.primary || "";
-  const formats = doc.formats?.join(", ") || "Online";
-  const pages = pdfPages(primary) || officePages(primary);
-  const size = fileSize(primary);
+  const formats = [...new Set(doc.formats || ["Online"])].join(", ");
+  const publicFiles = doc.variants?.filter((variant) => /\.(pdf|pptx|xlsx|csv|json)$/i.test(variant.primary || "")) || [];
+  const sizeSource = publicFiles.find((variant) => /\.pdf$/i.test(variant.primary || ""))?.sourcePath || primary;
+  const pages = pdfPages(sizeSource) || pdfPages(primary) || officePages(primary);
+  const size = fileSize(sizeSource) || fileSize(primary);
   const bits = [];
   if (pages) bits.push(`${pages} Seiten`);
   bits.push(formats);
@@ -96,9 +98,15 @@ function normalizedPairKey(value = "") {
 function actionLinks(doc, onlineByKey) {
   const primary = doc.urls?.primary || "";
   const sourcePath = doc.urls?.sourcePath || primary;
+  const variants = doc.variants || [];
+  const onlineVariant = variants.find((variant) => variant.kind === "online");
+  const pdfVariant = variants.find((variant) => variant.kind === "pdf");
   const isPdf = /\.pdf$/i.test(primary);
   const isOnline = doc.source === "online-version" || /\.html$/i.test(primary) || /\/$/.test(primary);
   const links = [];
+  if (onlineVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineVariant.primary))}">Onlinefassung lesen</a>`);
+  if (pdfVariant) links.push(`<a class="btn btn-primary" href="${esc(siteHref(pdfVariant.primary))}">PDF öffnen</a>`);
+  if (links.length) return `<div class="document-action-row">${links.join("")}</div>`;
   const onlineMatch = !isOnline ? onlineByKey.get(normalizedPairKey(doc.title)) : "";
   if (isOnline) {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Online lesen</a>`);
@@ -161,8 +169,62 @@ function card(doc, index, onlineByKey) {
     </article>`;
 }
 
+function variantKind(doc) {
+  const primary = doc.urls?.primary || "";
+  if (doc.source === "online-version" || /\.html$/i.test(primary) || /\/$/.test(primary)) return "online";
+  if (/\.pdf$/i.test(primary)) return "pdf";
+  if (/\.(xlsx|csv|json)$/i.test(primary)) return "data";
+  if (/\.pptx$/i.test(primary)) return "presentation";
+  return "other";
+}
+
+function canonicalOnlinePrimary(doc, primary) {
+  if (normalizedPairKey(doc.title) === "die-neue-ordnung-des-wohlstands" && primary === "buch.html") return "referenz/";
+  return primary;
+}
+
+function mergeDocumentVariants(rawDocuments) {
+  const byKey = new Map();
+  for (const doc of rawDocuments) {
+    const key = normalizedPairKey(doc.title);
+    if (!key) continue;
+    if (!byKey.has(key)) byKey.set(key, []);
+    byKey.get(key).push(doc);
+  }
+  return [...byKey.values()].flatMap((group) => {
+    const kinds = new Set(group.map((doc) => variantKind(doc)));
+    const hasFormatPair = kinds.has("pdf") && kinds.has("online");
+    if (group.length < 2 || !hasFormatPair) return group;
+    const online = group.find((doc) => variantKind(doc) === "online");
+    const leading = group.find((doc) => doc.isLeadingReference);
+    const base = online || leading || group[0];
+    const formats = [...new Set(group.flatMap((doc) => doc.formats || []))];
+    const variants = group
+      .map((doc) => ({
+        kind: variantKind(doc),
+        title: doc.title,
+        primary: canonicalOnlinePrimary(doc, doc.urls?.primary || ""),
+        sourcePath: doc.urls?.sourcePath || doc.urls?.primary || "",
+        formats: doc.formats || [],
+      }))
+      .filter((variant, index, variants) => variant.primary && variants.findIndex((item) => item.kind === variant.kind && item.primary === variant.primary) === index);
+    return {
+      ...base,
+      title: base.title.replace(/\s*\((?:PDF|HTML|Onlinefassung)\)\s*$/i, ""),
+      shortDescription: base.shortDescription || group.find((doc) => doc.shortDescription)?.shortDescription || "",
+      formats: formats.length ? formats : base.formats,
+      variants,
+      isLeadingReference: group.some((doc) => doc.isLeadingReference),
+      topics: [...new Set(group.flatMap((doc) => doc.topics || []))],
+      relatedMethods: [...new Set(group.flatMap((doc) => doc.relatedMethods || []))],
+      relatedImpactFields: [...new Set(group.flatMap((doc) => doc.relatedImpactFields || []))],
+    };
+  });
+}
+
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
-const documents = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
+const rawDocuments = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
+const documents = mergeDocumentVariants(rawDocuments);
 const typeValues = new Set(documents.map((doc) => doc.type).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
@@ -219,7 +281,7 @@ const html = `<!DOCTYPE html>
         <h1>Alle Dokumente bleiben sichtbar</h1>
         <p class="hero-subtitle">Die Bibliothek ist keine Dateiablage: Vor dem Klick steht, ob du eine Kurzfassung, ein Manifest, ein Whitepaper, ein Working Paper, ein technisches Register, ein Fallbeispiel, ein Grundlagenwerk oder einen Gesetzesentwurf öffnest und welchen Status der Eintrag hat.</p>
         <div class="library-count-strip" aria-label="Bibliotheksumfang">
-          <span><strong>${registry.counts.total}</strong> Einträge</span>
+          <span><strong>${documents.length}</strong> Werke</span>
           <span><strong>${registry.counts.downloadFiles}</strong> Dateien</span>
           <span><strong>${registry.counts.onlineVersions}</strong> Onlinefassungen</span>
           <span><strong>${registry.counts.byStatus["führend"] || 0}</strong> führende Referenzen</span>

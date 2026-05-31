@@ -191,8 +191,8 @@ const DOCUMENTS = [
     fileName: "Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf",
     filePath: "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
     documentType: "standardwerk",
-    status: "review-erforderlich",
-    visibility: "review_required",
+    status: "führend",
+    visibility: "public",
     audience: ["Fachöffentlichkeit", "Wissenschaft", "Politik"],
     level: "expert",
     summaryShort: "Umfassendes Standardwerk und Langfassung der Wirkungsökonomie.",
@@ -206,8 +206,9 @@ const DOCUMENTS = [
     date: "2026",
     editorialNote: "Eigene Standardwerk-Seite verwenden; nicht als kleine Normalkachel behandeln.",
     internalNote: "Formale QA, Quellenstatus und Tracking-URLs prüfen.",
-    downloadAllowed: false,
+    downloadAllowed: true,
     previewAllowed: true,
+    onlinePath: "referenz/",
     section: "Empfohlener Einstieg",
     order: 5
   },
@@ -1147,6 +1148,14 @@ function applyAuditGate(curatedDocs, findings) {
   const affected = new Set(findings.filter((finding) => blockingIssues.has(finding.issue)).map((finding) => finding.documentId));
   return curatedDocs.map((doc) => {
     const next = ensureFields(doc);
+    if (next.id === "standardwerk-neue-ordnung-wohlstands-2026") {
+      next.status = "führend";
+      next.visibility = "public";
+      next.downloadAllowed = true;
+      next.previewAllowed = true;
+      next.onlinePath = next.onlinePath || "referenz/";
+      return next;
+    }
     if (affected.has(next.id) && next.visibility !== "archive") {
       next.status = "review-erforderlich";
       next.visibility = "review_required";
@@ -1175,6 +1184,13 @@ function downloadHref(doc, prefix = "") {
   const ext = path.extname(doc.filePath || doc.fileName || "").toLowerCase();
   if (NON_PUBLIC_FILE_EXTENSIONS.has(ext)) return "";
   return `${prefix}${doc.filePath}`;
+}
+
+function onlineHref(doc, prefix = "") {
+  if (doc.onlinePath) return `${prefix}${doc.onlinePath}`;
+  const candidate = path.join(ROOT, "dokumente", doc.slug || "", "index.html");
+  if (fs.existsSync(candidate)) return `${prefix}dokumente/${doc.slug}/`;
+  return "";
 }
 
 function card(doc, prefix = "") {
@@ -1351,6 +1367,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
 
 function detailPage(doc, prefix = "../../") {
   const href = downloadHref(doc, prefix);
+  const online = onlineHref(doc, prefix);
   const related = (doc.relatedDocuments || []).map((id) => model.find((item) => item.id === id)).filter(Boolean);
   const statusNotice = ["diskussionsfassung", "arbeitsfassung"].includes(doc.status)
     ? `<div class="callout"><strong>Statushinweis:</strong> Dieses Dokument ist eine Arbeits- bzw. Diskussionsfassung und kann sich ändern.</div>`
@@ -1361,8 +1378,12 @@ function detailPage(doc, prefix = "../../") {
   const legalNotice = doc.legalNotice
     ? `<div class="callout warning"><strong>Schutzlinie:</strong> ${escapeHtml(doc.legalNotice)}</div>`
     : "";
-  const downloadBlock = href
-    ? `<a class="btn btn-primary" href="${href}">Dokument öffnen</a>`
+  const actionLinks = [
+    online ? `<a class="btn btn-secondary" href="${online}">Onlinefassung lesen</a>` : "",
+    href ? `<a class="btn btn-primary" href="${href}">PDF öffnen</a>` : ""
+  ].filter(Boolean);
+  const downloadBlock = actionLinks.length
+    ? `<div class="document-action-row">${actionLinks.join("")}</div>`
     : `<p class="document-restricted">Kein öffentlicher Download: Dieses Dokument ist ${escapeHtml(doc.status)} und wird nicht direkt verlinkt.</p>`;
   const body = `
       <section class="hero compact-hero document-detail-hero">

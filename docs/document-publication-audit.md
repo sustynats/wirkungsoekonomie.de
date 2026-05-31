@@ -5,10 +5,10 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 ## Ergebnis
 
 - Kuratierte Metadatenkarten: 28
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 10
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 11
 - Archivdokumente nur im Archiv: 2
-- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 16
-- Red-Flag-Treffer: 22
+- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 15
+- Red-Flag-Treffer: 25
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -23,6 +23,9 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | WÖk-Manifest | public/downloads/originals/WÖk-Manifest.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Grundlagenpapier Wirkungsökonomie | public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Grundlagenpapier Wirkungsökonomie | public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Die neue Ordnung des Wohlstands | assets/pdf/die-neue-ordnung-des-wohlstands.pdf | TBD | j V p3 ok;\ GU}; cTF*Z@ ie%0w -u{k (Udi6 %?ui I.&gt;fGE i&quot;t! 'TbD Wk[imo ,\*o {tZm{ ek%} _um}&gt;)w d_.4v &gt;xGb AGr&gt; ~iYk} #,YU (gWt2 r702 ;LU2 2U9Sp =Tu]5k^ 7a#@2 e#{N $1E! 4ga2? 2j7m; RVV? ?skG Uk__- i&gt;U} | review-erforderlich, nicht downloadbar |
+| Die neue Ordnung des Wohlstands | assets/pdf/die-neue-ordnung-des-wohlstands.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Die neue Ordnung des Wohlstands | assets/pdf/die-neue-ordnung-des-wohlstands.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Whitepaper T-SROI | public/downloads/originals/Whitepaper-T-SROI.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Whitepaper T-SROI | public/downloads/originals/Whitepaper-T-SROI.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Technische Leitlinien WUStG | public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
@@ -40,7 +43,6 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Nicht öffentliche Dokumente
 
-- `standardwerk-neue-ordnung-wohlstands-2026`: review-erforderlich, review_required, downloadAllowed=false
 - `beispiel-apfel-wirkungssteuer`: review-erforderlich, review_required, downloadAllowed=false
 - `beispiel-konzern`: review-erforderlich, review_required, downloadAllowed=false
 - `wp-produkte`: review-erforderlich, review_required, downloadAllowed=false
