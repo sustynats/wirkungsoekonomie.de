@@ -26,6 +26,20 @@ const SKIP_PARTS = [
   "outputs/"
 ];
 
+const EXISTING_DOCUMENT_META = (() => {
+  if (!fs.existsSync(DOC_MODEL)) return new Map();
+  try {
+    const current = JSON.parse(fs.readFileSync(DOC_MODEL, "utf8"));
+    return new Map((current.documents || []).map((doc) => [doc.id, {
+      fileSize: doc.fileSize,
+      pageCount: doc.pageCount,
+      estimatedReadingTime: doc.estimatedReadingTime,
+    }]));
+  } catch {
+    return new Map();
+  }
+})();
+
 const AUDIT_PATTERNS = [
   { id: "soll-ich", label: "Arbeitsprozess-Satz: Soll ich", pattern: /Soll ich/i },
   { id: "moechtest-du", label: "Arbeitsprozess-Satz: Möchtest du", pattern: /Möchtest du|Moechtest du/i },
@@ -1609,9 +1623,10 @@ function moveNonPublicOriginals(gatedDocs) {
 
 const initialModel = [...DOCUMENTS, ...EXTRA_ARCHIVE].map(ensureFields);
 for (const doc of initialModel) {
-  doc.fileSize = fileSize(doc.filePath);
-  doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath);
-  doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType);
+  const existing = EXISTING_DOCUMENT_META.get(doc.id) || {};
+  doc.fileSize = fileSize(doc.filePath) || doc.fileSize || existing.fileSize || "";
+  doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath) || existing.pageCount || null;
+  doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType) || existing.estimatedReadingTime || "";
 }
 
 const preliminaryFindings = auditDocuments(initialModel);
@@ -1619,9 +1634,10 @@ const model = applyAuditGate(initialModel, preliminaryFindings);
 const moved = moveNonPublicOriginals(model);
 for (const doc of model) {
   if (doc.filePath.startsWith("content/internal-documents/")) {
-    doc.fileSize = fileSize(doc.filePath);
-    doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath);
-    doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType);
+    const existing = EXISTING_DOCUMENT_META.get(doc.id) || {};
+    doc.fileSize = fileSize(doc.filePath) || doc.fileSize || existing.fileSize || "";
+    doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath) || existing.pageCount || null;
+    doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType) || existing.estimatedReadingTime || "";
   }
 }
 const finalFindings = auditDocuments(model);

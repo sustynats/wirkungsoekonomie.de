@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T20:54:53.606Z",
+  "generatedAt": "2026-05-31T23:04:13.699Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -297,6 +297,25 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "algorithmische-fairness": {
+      "terms": [
+        "ki-governance",
+        "kuenstliche-intelligenz",
+        "diskriminierungsverbot",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -741,6 +760,44 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "automatisierung": {
+      "terms": [
+        "robotik",
+        "kuenstliche-intelligenz",
+        "automatisierungsdividende",
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "arbeit-einkommen",
+        "wissenschaft-innovation-digitalisierung"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "automatisierungsdividende": {
+      "terms": [
+        "automatisierung",
+        "robotik",
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "arbeit-einkommen",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -2705,6 +2762,25 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "digitale-selbstbestimmung": {
+      "terms": [
+        "digitalisierung",
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "datenqualitaet"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie",
+        "gesundheit"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "digitaler-produktpass": {
       "terms": [
         "wirkungsdatenraum",
@@ -2741,6 +2817,24 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "digitalisierung": {
+      "terms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "digitale-selbstbestimmung",
+        "datenqualitaet"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -5180,6 +5274,54 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "gesundheit": {
+      "terms": [
+        "gesundheitswirkung",
+        "gesundheitssystem",
+        "praevention",
+        "pflege-als-wirkleistung",
+        "one-health"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "gesundheitsdividende": {
+      "terms": [
+        "praeventionsoekonomie",
+        "gesundheitskasse",
+        "t-sroi",
+        "nwi",
+        "wirkungspotenzial"
+      ],
+      "documents": [],
+      "methods": [
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt"
+      ],
+      "tools": [
+        "praeventionswirkungsrechner",
+        "wirkungsfonds-gesundheit-pflege"
+      ],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
+    },
     "gesundheitsgerechtigkeit": {
       "terms": [
         "health-impact-assessment",
@@ -5192,6 +5334,106 @@
       "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
+    },
+    "gesundheitskasse": {
+      "terms": [
+        "praeventionsoekonomie",
+        "gesundheitsdividende",
+        "wirkungshaushalt",
+        "t-sroi",
+        "gesundheitswirkung",
+        "gesundheitssystem"
+      ],
+      "documents": [],
+      "methods": [
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt"
+      ],
+      "tools": [
+        "wirkungsfonds-gesundheit-pflege",
+        "wirkungshaushalt-gesundheit"
+      ],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "staat-recht-demokratie",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
+    },
+    "gesundheitssystem": {
+      "terms": [
+        "krankheitssystem",
+        "gesundheitswirkung",
+        "gesundheitskasse",
+        "praevention",
+        "pflege-als-wirkleistung",
+        "one-health"
+      ],
+      "documents": [],
+      "methods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "wohnen-stadt",
+        "arbeit-einkommen"
+      ],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
+    },
+    "gesundheitswirkung": {
+      "terms": [
+        "gesundheitssystem",
+        "krankheitssystem",
+        "praevention",
+        "one-health",
+        "health-impact-assessment",
+        "positive-netto-wirkung",
+        "gesundheitsgerechtigkeit"
+      ],
+      "documents": [
+        "referenz-kapitel-068-gesundheit",
+        "referenz-kapitel-069-pflege"
+      ],
+      "methods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "tools": [
+        "gesundheitswirkungscheck",
+        "wirkungshaushalt-gesundheit",
+        "woek-id"
+      ],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "wohnen-stadt",
+        "arbeit-einkommen",
+        "produkte-konsum"
+      ],
+      "academyModules": [
+        "gesundheit-pflege-und-soziales"
+      ],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
     },
     "gewaltenteilung": {
       "terms": [
@@ -7354,6 +7596,25 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "ki-governance": {
+      "terms": [
+        "kuenstliche-intelligenz",
+        "algorithmische-fairness",
+        "datenqualitaet",
+        "digitale-selbstbestimmung",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "kipppunkt": {
       "terms": [
         "schwellenwert",
@@ -7866,6 +8127,30 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "krankheitssystem": {
+      "terms": [
+        "gesundheitssystem",
+        "gesundheitswirkung",
+        "praeventionsoekonomie",
+        "wirkungsblindheit",
+        "wirkungshaushalt"
+      ],
+      "documents": [],
+      "methods": [
+        "t-sroi",
+        "wirkungshaushalt"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege"
+      ],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
+    },
     "kreative-rekonstruktion": {
       "terms": [
         "schoepferische-zerstoerung",
@@ -8030,6 +8315,25 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "kuenstliche-intelligenz": {
+      "terms": [
+        "ki-governance",
+        "algorithmische-fairness",
+        "digitalisierung",
+        "wirkungsdatenraeume",
+        "datenqualitaet"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "medien-oeffentlichkeit"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -9061,6 +9365,26 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "maschinenwertschoepfungsbeitrag": {
+      "terms": [
+        "automatisierung",
+        "robotik",
+        "automatisierungsdividende",
+        "wirkungseinkommen",
+        "wirkungsfonds"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "arbeit-einkommen",
+        "finanzsystem-kapital",
+        "staat-recht-demokratie"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -10959,13 +11283,31 @@
     "one-health": {
       "terms": [
         "biodiversitaetsrisiko",
-        "health-impact-assessment"
+        "health-impact-assessment",
+        "gesundheitswirkung",
+        "planetary-health",
+        "praevention",
+        "materialgesundheit",
+        "gesundheitsgerechtigkeit",
+        "hitzestress"
       ],
-      "documents": [],
-      "methods": [],
-      "tools": [],
+      "documents": [
+        "referenz-kapitel-068-gesundheit"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order"
+      ],
+      "tools": [
+        "one-health-score"
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "klima-energie-ressourcen",
+        "produkte-konsum"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -11402,6 +11744,38 @@
       "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
+    },
+    "pflege-als-wirkleistung": {
+      "terms": [
+        "care-oekonomie",
+        "sorgearbeit",
+        "gesundheitswirkung",
+        "gesundheitssystem",
+        "praeventionsoekonomie"
+      ],
+      "documents": [
+        "referenz-kapitel-069-pflege"
+      ],
+      "methods": [
+        "scorecard",
+        "t-sroi",
+        "wirkungshaushalt"
+      ],
+      "tools": [
+        "pflegewirkungscheck",
+        "wirkungshaushalt-gesundheit"
+      ],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "rente-soziale-sicherung",
+        "arbeit-einkommen"
+      ],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
     },
     "photoelektrischer-effekt": {
       "terms": [
@@ -11971,15 +12345,61 @@
       "terms": [
         "wirkungshaushalt",
         "t-sroi",
-        "health-impact-assessment"
+        "health-impact-assessment",
+        "praeventionsoekonomie",
+        "gesundheitswirkung",
+        "gesundheitsdividende",
+        "gesundheitskasse",
+        "wirkungspotenzial"
       ],
       "documents": [],
-      "methods": [],
-      "tools": [],
+      "methods": [
+        "t-sroi",
+        "wirkungshaushalt",
+        "nwi"
+      ],
+      "tools": [
+        "praeventionswirkungsrechner",
+        "wirkungshaushalt-gesundheit"
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "staat-recht-demokratie"
+      ],
       "academyModules": [],
       "dataRegisters": []
+    },
+    "praeventionsoekonomie": {
+      "terms": [
+        "praevention",
+        "wirkungspotenzial",
+        "gesundheitswirkung",
+        "gesundheitsdividende",
+        "t-sroi",
+        "wirkungshaushalt"
+      ],
+      "documents": [],
+      "methods": [
+        "t-sroi",
+        "scorecard",
+        "nwi"
+      ],
+      "tools": [
+        "praeventionswirkungsrechner",
+        "wirkungshaushalt-gesundheit"
+      ],
+      "demos": [],
+      "impactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "staat-recht-demokratie"
+      ],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
     },
     "pressefreiheit": {
       "terms": [
@@ -13673,6 +14093,24 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "robotik": {
+      "terms": [
+        "automatisierung",
+        "kuenstliche-intelligenz",
+        "automatisierungsdividende",
+        "wirkungseinkommen"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "arbeit-einkommen",
+        "wissenschaft-innovation-digitalisierung"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "rohstoffkritikalitaet": {
       "terms": [
         "lieferkettendaten",
@@ -14839,7 +15277,7 @@
     },
     "spekulationslogik": {
       "terms": [
-        "wirkungspflicht-eigentum",
+        "wirkungspflicht-des-eigentums",
         "stranded-assets"
       ],
       "documents": [
@@ -18076,6 +18514,29 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungsdatenraeume": {
+      "terms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "digitalisierung",
+        "digitale-selbstbestimmung"
+      ],
+      "documents": [],
+      "methods": [
+        "datenqualitaet-assurance"
+      ],
+      "tools": [
+        "wirkungsdatenraeume"
+      ],
+      "demos": [],
+      "impactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "produkte-konsum"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungseinkommen": {
       "terms": [
         "positive-netto-wirkung",
@@ -18886,7 +19347,7 @@
     },
     "wirkungsvermietung": {
       "terms": [
-        "wirkungspflicht-eigentum",
+        "wirkungspflicht-des-eigentums",
         "warmmietenneutralitaet",
         "wix-vi"
       ],
@@ -19046,7 +19507,7 @@
     },
     "wohnwirkung": {
       "terms": [
-        "wirkungspflicht-eigentum",
+        "wirkungspflicht-des-eigentums",
         "energiearmut",
         "quartierswirkung",
         "umweltgerechtigkeit",

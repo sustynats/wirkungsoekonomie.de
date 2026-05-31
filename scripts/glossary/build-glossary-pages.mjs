@@ -36,6 +36,8 @@ const categoryOrder = [
   "Ethik, Würde und Verantwortung",
   "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
   "Kreislaufwirtschaft, Circular Design und Materialkreisläufe",
+  "Gesundheit & Leben",
+  "Klima- und Gesundheitsbegriff",
   "Neuropsychologische Wirkmechanismen",
   "Quantenphysik, Quantenmaterialien und Zukunftstechnologien",
   "Energie, Strommarkt und Systemkosten",
@@ -598,6 +600,7 @@ function detailLinks(term) {
 
 const quickFilters = [
   ["Wirkung verstehen", { theme: "wirkung-und-wirkungslogik" }],
+  ["Gesundheit & Leben", { theme: "gesundheit-und-leben" }],
   ["Wirtschaftssysteme vergleichen", { theme: "wirtschaftssysteme-und-gesellschaftsmodelle" }],
   ["Medienwirkung & Folgencheck", { theme: "demokratie-medien-und-oeffentlichkeit" }],
   ["Klima & Produktwirkung", { theme: "klima-energie-und-lebenszyklus" }],
@@ -759,6 +762,15 @@ fs.writeFileSync(path.join("glossar", "index.html"), glossaryLegacyAlias("../"))
 for (const term of data.terms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
+  const metaItems = [
+    `Version ${esc(term.version)}`,
+    term.conceptStatus || term.concept_status,
+    term.publicationStatus || term.publication_status,
+  ].filter(Boolean).map((item) => `<span>${esc(item)}</span>`).join("");
+  const statusParagraph = term.conceptStatus || term.concept_status || term.publicationStatus || term.publication_status
+    ? `          <p>Begriffstatus: ${esc(term.conceptStatus || term.concept_status || "nicht klassifiziert")} · Publikationsstatus: ${esc(term.publicationStatus || term.publication_status || "published")}</p>
+`
+    : "";
   const body = `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
         <header class="term-detail-hero">
@@ -766,9 +778,7 @@ for (const term of data.terms) {
           <h1>${esc(term.canonicalLabel)}</h1>
           <p class="lead">${esc(termLead(term))}</p>
           <div class="term-meta-row" aria-label="Begriffsinformation">
-            <span>Version ${esc(term.version)}</span>
-            ${term.conceptStatus || term.concept_status ? `<span>${esc(term.conceptStatus || term.concept_status)}</span>` : ""}
-            ${term.publicationStatus || term.publication_status ? `<span>${esc(term.publicationStatus || term.publication_status)}</span>` : ""}
+            ${metaItems}
           </div>
           <div class="term-action-row">${detailLinks(term)}</div>
         </header>
@@ -824,10 +834,7 @@ ${learningBlock(term)}
         <section class="meta-box">
           <h2>Version und Quellen</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
-          ${(term.conceptStatus || term.concept_status || term.publicationStatus || term.publication_status)
-            ? `<p>Begriffstatus: ${esc(term.conceptStatus || term.concept_status || "nicht klassifiziert")} · Publikationsstatus: ${esc(term.publicationStatus || term.publication_status || "published")}</p>`
-            : ""}
-          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+${statusParagraph}          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
           ${sourceList(term)}
         </section>
       </article>`;

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T20:54:20.550Z",
+  "generatedAt": "2026-05-31T23:03:53.671Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -436,6 +436,32 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "algorithmische-fairness": {
+      "label": "Algorithmische Fairness",
+      "slug": "algorithmische-fairness",
+      "url": "/begriffe/algorithmische-fairness/",
+      "hoverDefinition": "Algorithmische Fairness prüft, ob algorithmische Systeme Benachteiligung erzeugen oder verstärken.",
+      "shortDefinition": "Algorithmische Fairness fragt, ob algorithmische Systeme Gruppen systematisch benachteiligen oder Schutzrechte verletzen.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Algorithmische Fairness"
+      ],
+      "relatedTerms": [
+        "ki-governance",
+        "kuenstliche-intelligenz",
+        "diskriminierungsverbot",
+        "datenqualitaet",
+        "reverse-merit-order"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "allgemeines-gleichgewicht": {
@@ -1086,6 +1112,58 @@
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "automatisierung": {
+      "label": "Automatisierung",
+      "slug": "automatisierung",
+      "url": "/begriffe/automatisierung/",
+      "hoverDefinition": "Automatisierung überträgt Aufgaben oder Abläufe auf technische Systeme.",
+      "shortDefinition": "Automatisierung beschreibt die Übertragung von Aufgaben, Abläufen oder Entscheidungen auf technische Systeme.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Automatisierung"
+      ],
+      "relatedTerms": [
+        "robotik",
+        "kuenstliche-intelligenz",
+        "automatisierungsdividende",
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "wissenschaft-innovation-digitalisierung"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "automatisierungsdividende": {
+      "label": "Automatisierungsdividende",
+      "slug": "automatisierungsdividende",
+      "url": "/begriffe/automatisierungsdividende/",
+      "hoverDefinition": "Automatisierungsdividende führt Produktivitätsgewinne aus Automatisierung in Teilhabe und Wirkung zurück.",
+      "shortDefinition": "Automatisierungsdividende bezeichnet den Anteil automatisierter Produktivitätsgewinne, der in Teilhabe, Sicherung, Bildung oder Wirkung zurückgeführt wird.",
+      "category": "Arbeit, Kapital und Transformation",
+      "synonyms": [
+        "Automatisierungsdividende"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "robotik",
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "finanzsystem-kapital"
+      ],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": []
@@ -3944,6 +4022,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "digitale-selbstbestimmung": {
+      "label": "Digitale Selbstbestimmung",
+      "slug": "digitale-selbstbestimmung",
+      "url": "/begriffe/digitale-selbstbestimmung/",
+      "hoverDefinition": "Digitale Selbstbestimmung schützt Datenrechte, Zweckbindung und Korrekturwege.",
+      "shortDefinition": "Digitale Selbstbestimmung beschreibt die Fähigkeit und das Recht, über digitale Daten, Zugriffe, Zwecke und Korrekturwege mitzubestimmen.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Digitale Selbstbestimmung"
+      ],
+      "relatedTerms": [
+        "digitalisierung",
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie",
+        "gesundheit"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "digitaler-produktpass": {
       "label": "Digitaler Produktpass",
       "slug": "digitaler-produktpass",
@@ -3991,6 +4095,31 @@
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "digitalisierung": {
+      "label": "Digitalisierung",
+      "slug": "digitalisierung",
+      "url": "/begriffe/digitalisierung/",
+      "hoverDefinition": "Digitalisierung macht Prozesse, Informationen und Infrastrukturen datenbasiert gestaltbar.",
+      "shortDefinition": "Digitalisierung beschreibt die Übersetzung von Prozessen, Informationen und Infrastrukturen in digitale Daten- und Steuerungslogiken.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Digitalisierung"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "digitale-selbstbestimmung",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie"
+      ],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": []
@@ -7550,6 +7679,65 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "gesundheit": {
+      "label": "Gesundheit",
+      "slug": "gesundheit",
+      "url": "/begriffe/gesundheit/",
+      "hoverDefinition": "Gesundheit ist körperliches, psychisches, soziales und ökologisch mitbedingtes Wohlergehen.",
+      "shortDefinition": "Gesundheit bezeichnet in der WÖk einen körperlichen, psychischen, sozialen und ökologisch mitbedingten Zustand von Wohlergehen und Teilhabe.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Gesundheit"
+      ],
+      "relatedTerms": [
+        "gesundheitswirkung",
+        "gesundheitssystem",
+        "praevention",
+        "pflege-als-wirkleistung",
+        "one-health"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gesundheitsdividende": {
+      "label": "Gesundheitsdividende",
+      "slug": "gesundheitsdividende",
+      "url": "/begriffe/gesundheitsdividende/",
+      "hoverDefinition": "Gesundheitsdividende ist der Nutzen vermiedener Schäden und gestärkter Gesundheit.",
+      "shortDefinition": "Gesundheitsdividende bezeichnet den gesellschaftlichen Nutzen, der entsteht, wenn Prävention, Pflege und gesunde Lebensbedingungen Schäden vermeiden.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Gesundheitsdividende",
+        "Präventionsdividende",
+        "Health Dividend"
+      ],
+      "relatedTerms": [
+        "praeventionsoekonomie",
+        "gesundheitskasse",
+        "t-sroi",
+        "nwi",
+        "wirkungspotenzial"
+      ],
+      "relatedMethods": [
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "gesundheitsgerechtigkeit": {
       "label": "Gesundheitsgerechtigkeit",
       "slug": "gesundheitsgerechtigkeit",
@@ -7575,6 +7763,118 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gesundheitskasse": {
+      "label": "Gesundheitskasse",
+      "slug": "gesundheitskasse",
+      "url": "/begriffe/gesundheitskasse/",
+      "hoverDefinition": "Gesundheitskasse meint eine Kassenlogik, die Prävention und Gesundheitswirkung finanzierbar macht.",
+      "shortDefinition": "Eine Gesundheitskasse ist in der WÖk eine Kassenlogik, die Gesundheit, Prävention, Pflegeentlastung und Resilienz stärker finanziert als reine Krankheitsreparatur.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Gesundheitskasse",
+        "Präventionskasse",
+        "Health Impact Fund im Kassensystem"
+      ],
+      "relatedTerms": [
+        "praeventionsoekonomie",
+        "gesundheitsdividende",
+        "wirkungshaushalt",
+        "t-sroi",
+        "gesundheitswirkung",
+        "gesundheitssystem"
+      ],
+      "relatedMethods": [
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "staat-recht-demokratie",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gesundheitssystem": {
+      "label": "Gesundheitssystem",
+      "slug": "gesundheitssystem",
+      "url": "/begriffe/gesundheitssystem/",
+      "hoverDefinition": "Gesundheitssystem meint eine Ordnung, die Gesundheit aktiv erzeugt, schützt und gerecht zugänglich macht.",
+      "shortDefinition": "Gesundheitssystem bezeichnet in der WÖk eine Ordnung, die Gesundheit, Prävention, Pflege, Resilienz und Zugang aktiv erzeugt und schützt.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Gesundheitssystem",
+        "präventives Gesundheitssystem",
+        "wirkungsorientiertes Gesundheitssystem"
+      ],
+      "relatedTerms": [
+        "krankheitssystem",
+        "gesundheitswirkung",
+        "gesundheitskasse",
+        "praevention",
+        "pflege-als-wirkleistung",
+        "one-health"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "wohnen-stadt",
+        "arbeit-einkommen"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gesundheitswirkung": {
+      "label": "Gesundheitswirkung",
+      "slug": "gesundheitswirkung",
+      "url": "/begriffe/gesundheitswirkung/",
+      "hoverDefinition": "Gesundheitswirkung beschreibt, wie Entscheidungen, Produkte, Räume, Arbeit, Umwelt oder Regeln Gesundheit verändern.",
+      "shortDefinition": "Gesundheitswirkung beschreibt, wie Entscheidungen, Produkte, Räume, Arbeit, Umwelt oder Regeln körperliche, psychische und soziale Gesundheit verändern.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Gesundheitswirkung",
+        "Health Impact",
+        "Gesundheits-Impact"
+      ],
+      "relatedTerms": [
+        "gesundheitssystem",
+        "krankheitssystem",
+        "praevention",
+        "one-health",
+        "health-impact-assessment",
+        "positive-netto-wirkung",
+        "gesundheitsgerechtigkeit"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "wohnen-stadt",
+        "arbeit-einkommen",
+        "produkte-konsum"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "referenz-kapitel-068-gesundheit",
+        "referenz-kapitel-069-pflege"
+      ],
       "relatedObjections": []
     },
     "gewaltenteilung": {
@@ -10895,6 +11195,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ki-governance": {
+      "label": "KI-Governance",
+      "slug": "ki-governance",
+      "url": "/begriffe/ki-governance/",
+      "hoverDefinition": "KI-Governance regelt Verantwortung, Prüfung und Schutz beim Einsatz von KI-Systemen.",
+      "shortDefinition": "KI-Governance beschreibt Regeln, Rollen, Prüfpfade und Verantwortung für Entwicklung und Einsatz von KI-Systemen.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "KI-Governance"
+      ],
+      "relatedTerms": [
+        "kuenstliche-intelligenz",
+        "algorithmische-fairness",
+        "datenqualitaet",
+        "digitale-selbstbestimmung",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "staat-recht-demokratie"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "kipppunkt": {
       "label": "Kipppunkt / Schwellenwert",
       "slug": "kipppunkt",
@@ -11652,6 +11978,37 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "krankheitssystem": {
+      "label": "Krankheitssystem",
+      "slug": "krankheitssystem",
+      "url": "/begriffe/krankheitssystem/",
+      "hoverDefinition": "Krankheitssystem beschreibt eine reaktive Logik, die Krankheit verwaltet statt Gesundheit zu erzeugen.",
+      "shortDefinition": "Krankheitssystem bezeichnet eine Logik, in der Finanzierung, Daten und Anreize vor allem reagieren, wenn Krankheit bereits eingetreten ist.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Krankheitssystem",
+        "Krankheitsverwaltung",
+        "Reparatursystem Gesundheit"
+      ],
+      "relatedTerms": [
+        "gesundheitssystem",
+        "gesundheitswirkung",
+        "praeventionsoekonomie",
+        "wirkungsblindheit",
+        "wirkungshaushalt"
+      ],
+      "relatedMethods": [
+        "t-sroi",
+        "wirkungshaushalt"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "kreative-rekonstruktion": {
       "label": "Kreative Rekonstruktion",
       "slug": "kreative-rekonstruktion",
@@ -11885,6 +12242,35 @@
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "kuenstliche-intelligenz": {
+      "label": "Künstliche Intelligenz",
+      "slug": "kuenstliche-intelligenz",
+      "url": "/begriffe/kuenstliche-intelligenz/",
+      "hoverDefinition": "Künstliche Intelligenz erkennt Muster, erzeugt Inhalte oder bereitet Entscheidungen vor.",
+      "shortDefinition": "Künstliche Intelligenz bezeichnet Systeme, die Muster erkennen, Inhalte erzeugen, Vorhersagen treffen oder Entscheidungen vorbereiten.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Künstliche Intelligenz",
+        "KI",
+        "Artificial Intelligence",
+        "AI"
+      ],
+      "relatedTerms": [
+        "ki-governance",
+        "algorithmische-fairness",
+        "digitalisierung",
+        "wirkungsdatenraeume",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "medien-oeffentlichkeit"
+      ],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": []
@@ -13391,6 +13777,33 @@
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "maschinenwertschoepfungsbeitrag": {
+      "label": "Maschinenwertschöpfungsbeitrag",
+      "slug": "maschinenwertschoepfungsbeitrag",
+      "url": "/begriffe/maschinenwertschoepfungsbeitrag/",
+      "hoverDefinition": "Maschinenwertschöpfungsbeitrag koppelt automatisierte Wertschöpfung an soziale und demokratische Wirkung zurück.",
+      "shortDefinition": "Der Maschinenwertschöpfungsbeitrag beschreibt eine mögliche Rückkopplung automatisierter Wertschöpfung in soziale Sicherung, Bildung oder Wirkungsfonds.",
+      "category": "Arbeit, Kapital und Transformation",
+      "synonyms": [
+        "Maschinenwertschöpfungsbeitrag"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "robotik",
+        "automatisierungsdividende",
+        "wirkungseinkommen",
+        "wirkungsfonds"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "finanzsystem-kapital",
+        "staat-recht-demokratie"
+      ],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": []
@@ -16188,7 +16601,7 @@
       "url": "/begriffe/one-health/",
       "hoverDefinition": "One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.",
       "shortDefinition": "One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.",
-      "category": "Grundbegriff",
+      "category": "Gesundheit & Leben",
       "synonyms": [
         "One Health",
         "One-Health",
@@ -16197,12 +16610,28 @@
       ],
       "relatedTerms": [
         "biodiversitaetsrisiko",
-        "health-impact-assessment"
+        "health-impact-assessment",
+        "gesundheitswirkung",
+        "planetary-health",
+        "praevention",
+        "materialgesundheit",
+        "gesundheitsgerechtigkeit",
+        "hitzestress"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "klima-energie-ressourcen",
+        "produkte-konsum"
+      ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "referenz-kapitel-068-gesundheit"
+      ],
       "relatedObjections": []
     },
     "onshore-windenergie": {
@@ -16838,6 +17267,43 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      ],
+      "relatedObjections": []
+    },
+    "pflege-als-wirkleistung": {
+      "label": "Pflege als Wirkleistung",
+      "slug": "pflege-als-wirkleistung",
+      "url": "/begriffe/pflege-als-wirkleistung/",
+      "hoverDefinition": "Pflege als Wirkleistung macht Würde, Autonomie, Beziehung und Stabilität als Pflegewirkung sichtbar.",
+      "shortDefinition": "Pflege als Wirkleistung beschreibt Pflege als Beitrag zu Würde, Autonomie, Beziehung, Sicherheit, Angehörigenentlastung und gesellschaftlicher Stabilität.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Pflege als Wirkleistung",
+        "Pflegewirkung",
+        "Care als Wirkleistung",
+        "Pflege als Wirkungsinfrastruktur"
+      ],
+      "relatedTerms": [
+        "care-oekonomie",
+        "sorgearbeit",
+        "gesundheitswirkung",
+        "gesundheitssystem",
+        "praeventionsoekonomie"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "t-sroi",
+        "wirkungshaushalt"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "rente-soziale-sicherung",
+        "arbeit-einkommen"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "referenz-kapitel-069-pflege"
       ],
       "relatedObjections": []
     },
@@ -17634,7 +18100,7 @@
       "url": "/begriffe/praevention/",
       "hoverDefinition": "Prävention verhindert Schäden, bevor sie entstehen oder sich verfestigen.",
       "shortDefinition": "Prävention verhindert Schäden, bevor sie entstehen oder sich verfestigen.",
-      "category": "Grundbegriff",
+      "category": "Gesundheit & Leben",
       "synonyms": [
         "Prävention",
         "Praevention",
@@ -17645,10 +18111,57 @@
       "relatedTerms": [
         "wirkungshaushalt",
         "t-sroi",
-        "health-impact-assessment"
+        "health-impact-assessment",
+        "praeventionsoekonomie",
+        "gesundheitswirkung",
+        "gesundheitsdividende",
+        "gesundheitskasse",
+        "wirkungspotenzial"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedMethods": [
+        "t-sroi",
+        "wirkungshaushalt",
+        "nwi"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "staat-recht-demokratie"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "praeventionsoekonomie": {
+      "label": "Präventionsökonomie",
+      "slug": "praeventionsoekonomie",
+      "url": "/begriffe/praeventionsoekonomie/",
+      "hoverDefinition": "Präventionsökonomie macht vermiedene Schäden und Schutzfaktoren als Wirkung sichtbar.",
+      "shortDefinition": "Präventionsökonomie macht vermiedene Schäden, Schutzfaktoren und Gesundheitsgewinn als ökonomisch relevante Wirkung sichtbar.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Präventionsökonomie",
+        "Praeventionsoekonomie",
+        "Ökonomie der Prävention"
+      ],
+      "relatedTerms": [
+        "praevention",
+        "wirkungspotenzial",
+        "gesundheitswirkung",
+        "gesundheitsdividende",
+        "t-sroi",
+        "wirkungshaushalt"
+      ],
+      "relatedMethods": [
+        "t-sroi",
+        "scorecard",
+        "nwi"
+      ],
+      "relatedImpactFields": [
+        "gesundheit",
+        "gesundheit-pflege",
+        "staat-recht-demokratie"
+      ],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": []
@@ -20204,6 +20717,31 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "robotik": {
+      "label": "Robotik",
+      "slug": "robotik",
+      "url": "/begriffe/robotik/",
+      "hoverDefinition": "Robotik bringt Automatisierung in physische Prozesse, Arbeit, Pflege, Produktion oder Infrastruktur.",
+      "shortDefinition": "Robotik verbindet mechanische Systeme, Sensorik, Steuerung und Automatisierung zu physisch wirksamen technischen Systemen.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Robotik"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "kuenstliche-intelligenz",
+        "automatisierungsdividende",
+        "wirkungseinkommen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "wissenschaft-innovation-digitalisierung"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "rohstoffkritikalitaet": {
       "label": "Rohstoffkritikalität",
       "slug": "rohstoffkritikalitaet",
@@ -21908,7 +22446,7 @@
         "spekulative Verwertungslogik"
       ],
       "relatedTerms": [
-        "wirkungspflicht-eigentum",
+        "wirkungspflicht-des-eigentums",
         "stranded-assets"
       ],
       "relatedMethods": [],
@@ -26598,6 +27136,34 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wirkungsdatenraeume": {
+      "label": "Wirkungsdatenräume",
+      "slug": "wirkungsdatenraeume",
+      "url": "/begriffe/wirkungsdatenraeume/",
+      "hoverDefinition": "Wirkungsdatenräume machen Wirkungsdaten interoperabel, prüfbar und zweckgebunden nutzbar.",
+      "shortDefinition": "Wirkungsdatenräume sind geschützte Datenräume, in denen Wirkungsdaten interoperabel, prüfbar und zweckgebunden genutzt werden.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Wirkungsdatenräume"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "digitalisierung",
+        "digitale-selbstbestimmung"
+      ],
+      "relatedMethods": [
+        "datenqualitaet-assurance"
+      ],
+      "relatedImpactFields": [
+        "wissenschaft-innovation-digitalisierung",
+        "produkte-konsum"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wirkungseinkommen": {
       "label": "Wirkungseinkommen",
       "slug": "wirkungseinkommen",
@@ -27735,7 +28301,7 @@
         "wirkungsorientierte Vermietung"
       ],
       "relatedTerms": [
-        "wirkungspflicht-eigentum",
+        "wirkungspflicht-des-eigentums",
         "warmmietenneutralitaet",
         "wix-vi"
       ],
@@ -27968,7 +28534,7 @@
         "Gentrifizierung"
       ],
       "relatedTerms": [
-        "wirkungspflicht-eigentum",
+        "wirkungspflicht-des-eigentums",
         "energiearmut",
         "quartierswirkung",
         "umweltgerechtigkeit",
