@@ -1,0 +1,156 @@
+[
+  {
+    "id": "higher_is_better_pct",
+    "archetype": "higher_is_better_pct",
+    "use_case": "Prozentwerte, bei denen hohe Abdeckung gut ist",
+    "polarity": "higher_is_better",
+    "thresholds": {
+      "B1": 0.0,
+      "B2": 30.0,
+      "B3": 50.0,
+      "B4": 70.0,
+      "B5": 90.0,
+      "B6": 1000000000.0,
+      "S1": -3.0,
+      "S2": -2.0,
+      "S3": 0.0,
+      "S4": 2.0,
+      "S5": 3.0,
+      "S6": 3.0
+    },
+    "calculation_rule": "ScoreByThreshold mit steigenden Schwellen; Wert >=90 typischerweise +3",
+    "notes": "Für Prozentquoten; Wertebereich und Grundgesamtheit offenlegen."
+  },
+  {
+    "id": "higher_is_better_score",
+    "archetype": "higher_is_better_score",
+    "use_case": "Index 0–1, bei dem hohe Werte gut sind",
+    "polarity": "higher_is_better",
+    "thresholds": {
+      "B1": 0.0,
+      "B2": 0.3,
+      "B3": 0.5,
+      "B4": 0.7,
+      "B5": 0.9,
+      "B6": 1000000000.0,
+      "S1": -3.0,
+      "S2": -2.0,
+      "S3": 0.0,
+      "S4": 2.0,
+      "S5": 3.0,
+      "S6": 3.0
+    },
+    "calculation_rule": "ScoreByThreshold; Indexkriterien offenlegen",
+    "notes": "Nicht für harte Rechtsverstöße nutzen; rote Linien separat."
+  },
+  {
+    "id": "near_zero_better",
+    "archetype": "near_zero_better",
+    "use_case": "Zähl- oder Risikowerte, bei denen 0 ideal ist",
+    "polarity": "lower_is_better",
+    "thresholds": {
+      "B1": 0.0,
+      "B2": 1.0,
+      "B3": 3.0,
+      "B4": 5.0,
+      "B5": 1000000000.0,
+      "B6": 1000000000.0,
+      "S1": 3.0,
+      "S2": 2.0,
+      "S3": 0.0,
+      "S4": -2.0,
+      "S5": -3.0,
+      "S6": -3.0
+    },
+    "calculation_rule": "ScoreByThreshold mit abnehmendem Score",
+    "notes": "Für Arbeitsunfälle, Verstöße, Datenpannen, Korruptionsfälle."
+  },
+  {
+    "id": "reg_limit",
+    "archetype": "reg_limit",
+    "use_case": "Grenzwert-/Normerfüllung",
+    "polarity": "lower_is_better",
+    "thresholds": {
+      "B1": 0.0,
+      "B2": 0.5,
+      "B3": 0.75,
+      "B4": 1.0,
+      "B5": 1.2,
+      "B6": 1000000000.0,
+      "S1": 3.0,
+      "S2": 2.0,
+      "S3": 0.0,
+      "S4": -2.0,
+      "S5": -3.0,
+      "S6": -3.0
+    },
+    "calculation_rule": "Wert als Verhältnis zum Grenzwert: Messwert/Grenzwert",
+    "notes": "Grenzwertverletzungen als rote Linie prüfen."
+  },
+  {
+    "id": "pue",
+    "archetype": "pue",
+    "use_case": "Power Usage Effectiveness für Rechenzentren",
+    "polarity": "lower_is_better",
+    "thresholds": {
+      "B1": 0.0,
+      "B2": 1.2,
+      "B3": 1.4,
+      "B4": 1.6,
+      "B5": 1.8,
+      "B6": 1000000000.0,
+      "S1": 3.0,
+      "S2": 2.0,
+      "S3": 0.0,
+      "S4": -2.0,
+      "S5": -3.0,
+      "S6": -3.0
+    },
+    "calculation_rule": "PUE = Gesamtenergie / IT-Energie",
+    "notes": "Klimazone und Messzeitraum offenlegen."
+  },
+  {
+    "id": "higher_is_better_abs",
+    "archetype": "higher_is_better_abs",
+    "use_case": "Absolute positive Kennzahl",
+    "polarity": "higher_is_better",
+    "thresholds": {
+      "B1": "",
+      "B2": "",
+      "B3": "",
+      "B4": "",
+      "B5": "",
+      "B6": "",
+      "S1": "",
+      "S2": "",
+      "S3": "",
+      "S4": "",
+      "S5": "",
+      "S6": ""
+    },
+    "calculation_rule": "Nur benchmarkbasiert: ScoreByBenchmark(Messwert,BM,BM_150pct,BM_250pct)",
+    "notes": "Keine universelle Schwelle; sektorale/regionale Kalibrierung erforderlich."
+  },
+  {
+    "id": "lower_is_better_abs",
+    "archetype": "lower_is_better_abs",
+    "use_case": "Absolute Belastungs-/Risiko-Kennzahl",
+    "polarity": "lower_is_better",
+    "thresholds": {
+      "B1": "",
+      "B2": "",
+      "B3": "",
+      "B4": "",
+      "B5": "",
+      "B6": "",
+      "S1": "",
+      "S2": "",
+      "S3": "",
+      "S4": "",
+      "S5": "",
+      "S6": ""
+    },
+    "calculation_rule": "Nur benchmarkbasiert: ScoreByBenchmark(Messwert,BM,BM_150pct,BM_250pct)",
+    "notes": "Keine universelle Schwelle; Kontext, Einheit und funktionale Einheit entscheidend."
+  }
+]

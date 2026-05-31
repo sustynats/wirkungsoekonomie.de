@@ -107,7 +107,7 @@
       "expected": "WOeK_Master_Items_final_v1.2.pdf",
       "found": {
         "name": "WOeK_Master_Items_final_v1.2.pdf",
-        "path": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
+        "path": "/bibliothek/woek-master-items-register/",
         "sizeBytes": 1032459,
         "modifiedAt": "2025-10-12T07:58:04.769Z",
         "extension": "pdf",
@@ -140,7 +140,7 @@
       "expected": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
       "found": {
         "name": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
-        "path": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+        "path": "/bibliothek/beispiel-apfel-wirkungssteuer/",
         "sizeBytes": 199058,
         "modifiedAt": "2025-09-21T23:10:22.808Z",
         "extension": "pdf",
@@ -305,7 +305,7 @@
       "expected": "WÖK-Partei.pdf",
       "found": {
         "name": "WÖK-Partei.pdf",
-        "path": "public/downloads/originals/WÖK-Partei.pdf",
+        "path": "/bibliothek/woek-partei/",
         "sizeBytes": 4866874,
         "modifiedAt": "2025-08-05T15:33:49.811Z",
         "extension": "pdf",
@@ -316,7 +316,7 @@
       "expected": "NATS_WÖk@allgemein.pdf",
       "found": {
         "name": "NATS_WÖk@allgemein.pdf",
-        "path": "public/downloads/originals/NATS_WÖk@allgemein.pdf",
+        "path": "/bibliothek/nats-woek-allgemein/",
         "sizeBytes": 9659312,
         "modifiedAt": "2025-08-31T12:45:18.370Z",
         "extension": "pdf",
@@ -327,7 +327,7 @@
       "expected": "Beispiel-Konzern.pdf",
       "found": {
         "name": "Beispiel-Konzern.pdf",
-        "path": "public/downloads/originals/Beispiel-Konzern.pdf",
+        "path": "/bibliothek/beispiel-konzern/",
         "sizeBytes": 69159,
         "modifiedAt": "2025-09-19T18:45:24.606Z",
         "extension": "pdf",
@@ -338,7 +338,7 @@
       "expected": "FAZ-Beitrag.docx",
       "found": {
         "name": "FAZ-Beitrag.docx",
-        "path": "public/downloads/originals/FAZ-Beitrag.docx",
+        "path": "/bibliothek/faz-beitrag/",
         "sizeBytes": 20004,
         "modifiedAt": "2025-09-30T11:42:40.129Z",
         "extension": "docx",
@@ -590,7 +590,7 @@
   "inventory": [
     {
       "name": "Beispiel-Konzern.pdf",
-      "path": "public/downloads/originals/Beispiel-Konzern.pdf",
+      "path": "/bibliothek/beispiel-konzern/",
       "sizeBytes": 69159,
       "modifiedAt": "2025-09-19T18:45:24.606Z",
       "extension": "pdf",
@@ -598,7 +598,7 @@
     },
     {
       "name": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
-      "path": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "path": "/bibliothek/beispiel-apfel-wirkungssteuer/",
       "sizeBytes": 199058,
       "modifiedAt": "2025-09-21T23:10:22.808Z",
       "extension": "pdf",
@@ -606,7 +606,7 @@
     },
     {
       "name": "FAZ-Beitrag.docx",
-      "path": "public/downloads/originals/FAZ-Beitrag.docx",
+      "path": "/bibliothek/faz-beitrag/",
       "sizeBytes": 20004,
       "modifiedAt": "2025-09-30T11:42:40.129Z",
       "extension": "docx",
@@ -630,7 +630,7 @@
     },
     {
       "name": "NATS_WÖk@allgemein.pdf",
-      "path": "public/downloads/originals/NATS_WÖk@allgemein.pdf",
+      "path": "/bibliothek/nats-woek-allgemein/",
       "sizeBytes": 9659312,
       "modifiedAt": "2025-08-31T12:45:18.370Z",
       "extension": "pdf",
@@ -654,7 +654,7 @@
     },
     {
       "name": "WOeK_Master_Items_final_v1.2.pdf",
-      "path": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
+      "path": "/bibliothek/woek-master-items-register/",
       "sizeBytes": 1032459,
       "modifiedAt": "2025-10-12T07:58:04.769Z",
       "extension": "pdf",
@@ -686,7 +686,7 @@
     },
     {
       "name": "WÖK-Partei.pdf",
-      "path": "public/downloads/originals/WÖK-Partei.pdf",
+      "path": "/bibliothek/woek-partei/",
       "sizeBytes": 4866874,
       "modifiedAt": "2025-08-05T15:33:49.811Z",
       "extension": "pdf",
@@ -981,8 +981,8 @@
       "sha256": "cca85257de6d4a2c50877dee8eb15728cd2e404d943142cb86f9e2c5a30f7f83"
     },
     {
-      "name": "Wirkungsökonomie - ein lernendes Kreislaufsystem .docx",
-      "path": "[local Kerndokumente]/Buch Neuauflage/Wirkungsökonomie - ein lernendes Kreislaufsystem .docx",
+      "name": "Wirkungsökonomie – ein lernendes Kreislaufsystem .docx",
+      "path": "[local Kerndokumente]/Buch Neuauflage/Wirkungsökonomie – ein lernendes Kreislaufsystem .docx",
       "sizeBytes": 4806474,
       "modifiedAt": "2025-12-17T11:12:15.739Z",
       "extension": "docx",
@@ -2277,24 +2277,24 @@
       "sha256": "a7443a9d267759216caaaf1538f94a52721c187881ba386993aa645039695294"
     },
     {
-      "name": "Wirkungsökonomie - ein lernendes Kreislaufsystem  2.docx",
-      "path": "[local Kerndokumente]/Wirkungsökonomie - ein lernendes Kreislaufsystem  2.docx",
+      "name": "Wirkungsökonomie – ein lernendes Kreislaufsystem  2.docx",
+      "path": "[local Kerndokumente]/Wirkungsökonomie – ein lernendes Kreislaufsystem  2.docx",
       "sizeBytes": 4806474,
       "modifiedAt": "2025-12-17T11:12:15.739Z",
       "extension": "docx",
       "sha256": "fb391ace6a2703204fa414ef70d10570c7f98d391ba5c3f57de032ef0eda90ca"
     },
     {
-      "name": "Wirkungsökonomie - ein lernendes Kreislaufsystem .docx",
-      "path": "[local Kerndokumente]/Wirkungsökonomie - ein lernendes Kreislaufsystem .docx",
+      "name": "Wirkungsökonomie – ein lernendes Kreislaufsystem .docx",
+      "path": "[local Kerndokumente]/Wirkungsökonomie – ein lernendes Kreislaufsystem .docx",
       "sizeBytes": 4806474,
       "modifiedAt": "2025-12-17T11:12:15.739Z",
       "extension": "docx",
       "sha256": "fb391ace6a2703204fa414ef70d10570c7f98d391ba5c3f57de032ef0eda90ca"
     },
     {
-      "name": "Wirkungsökonomie - ein lernendes Kreislaufsystem .pdf",
-      "path": "[local Kerndokumente]/Wirkungsökonomie - ein lernendes Kreislaufsystem .pdf",
+      "name": "Wirkungsökonomie – ein lernendes Kreislaufsystem .pdf",
+      "path": "[local Kerndokumente]/Wirkungsökonomie – ein lernendes Kreislaufsystem .pdf",
       "sizeBytes": 5608118,
       "modifiedAt": "2025-12-12T21:18:33.311Z",
       "extension": "pdf",

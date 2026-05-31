@@ -13,10 +13,11 @@ SITE_ROOT = Path(__file__).resolve().parents[1]
 NAVIGATION = json.loads((SITE_ROOT / "assets/data/navigation.json").read_text(encoding="utf-8"))
 HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-8")
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
+SYNC_EXCLUDED_DIRS = {".git", ".codex-backup", "node_modules", ".next", ".vercel", "__pycache__"}
 
 
-HEADER_RE = re.compile(r"\s*<header class=\"site-header\">.*?</header>", re.S)
-FOOTER_RE = re.compile(r"\s*<footer class=\"footer\">.*?</footer>", re.S)
+HEADER_RE = re.compile(r"\s*<header class=\"site-header\"[^>]*>.*?</header>", re.S)
+FOOTER_RE = re.compile(r"\s*<footer class=\"footer\"[^>]*>.*?</footer>", re.S)
 
 
 def base_for(path: Path) -> str:
@@ -117,11 +118,14 @@ def insert_footer(text: str, footer: str) -> str:
 
 
 def should_sync(path: Path, text: str) -> bool:
+    relative_parts = path.relative_to(SITE_ROOT).parts
+    if any(part in SYNC_EXCLUDED_DIRS for part in relative_parts):
+        return False
     if path.name == "404.html":
         return False
-    if path.relative_to(SITE_ROOT).parts[0] in {"templates"}:
+    if relative_parts[0] in {"templates"}:
         return False
-    return "<header class=\"site-header\">" in text
+    return "<header class=\"site-header\"" in text
 
 
 def sync(path: Path) -> bool:

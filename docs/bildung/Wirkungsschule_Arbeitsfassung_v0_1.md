@@ -91,7 +91,7 @@ Wie das Konzept praktisch beginnen kann
 
 ### 10. Gemessen wird nicht der Wert eines Kindes, sondern die Wirkung des Systems: Stärkt Schule Würde, Selbstwirksamkeit, Kompetenz, Teilhabe, Gesundheit, Demokratie und Zukunftsfähigkeit?
 
-## Teil I - Warum Schule wirkungsökonomisch neu gedacht werden muss
+## Teil I – Warum Schule wirkungsökonomisch neu gedacht werden muss
 
 ### 1. Von der Nachhilfe-Frage zum Schulkonzept
 
@@ -99,7 +99,7 @@ Ausgangspunkt war eine scheinbar kleine Frage: Warum bekommt ein Kind oft erst d
 
 Diese Frage ist wichtig, aber sie betrifft nur einen Ausschnitt. Sie betrifft den außerschulischen Förderarm: Nachhilfe, Lerntherapie, Mentoring, Dyskalkulie- oder LRS-Förderung, Lerncoaching und ein mögliches Bildungswirkungsbudget. Ein wirkliches Schulkonzept muss tiefer gehen. Es muss fragen, wie Schule selbst gestaltet ist: was gelernt wird, wie gelernt wird, wie Leistungen sichtbar werden, wie Kinder begleitet werden, welche Rolle Lehrkräfte haben, wie Fächer zusammenhängen und wie Schule Demokratie, Gesundheit, Zukunftsfähigkeit und Selbstwirksamkeit stärkt.
 
-Kernverschiebung: Nicht: Wie organisieren wir bessere Nachhilfe? Sondern: Wie entsteht eine Schule, die Kinder so stärkt, dass weniger Reparatur nötig wird - und Förderung dort beginnt, wo Wirkungspotenzial entsteht?
+Kernverschiebung: Nicht: Wie organisieren wir bessere Nachhilfe? Sondern: Wie entsteht eine Schule, die Kinder so stärkt, dass weniger Reparatur nötig wird – und Förderung dort beginnt, wo Wirkungspotenzial entsteht?
 
 ### 2. Die alte Logik: Schule als Sortier-, Prüf- und Anpassungssystem
 
@@ -159,7 +159,7 @@ Kinder brauchen Zugehörigkeit, bevor Teilgabe gelingt.
 
 Kinder brauchen echte Aufgaben, bevor Wissen als sinnvoll erlebt wird.
 
-## Teil II - Was gelernt wird: Wirkungskompetenz, Fach Zukunft und vernetzte Fächer
+## Teil II – Was gelernt wird: Wirkungskompetenz, Fach Zukunft und vernetzte Fächer
 
 ### 5. Wirkungskompetenz als zentrales Bildungsziel
 
@@ -357,7 +357,7 @@ Beteiligte Fächer
 
 Lernprodukte
 
-Warum wird unsere Stadt im Sommer heißer - und wen trifft das besonders?
+Warum wird unsere Stadt im Sommer heißer – und wen trifft das besonders?
 
 Geografie, Physik, Biologie, Mathematik, Politik, Deutsch, Kunst
 
@@ -381,7 +381,7 @@ Physik, Mathematik, Wirtschaft, Politik, Technik, Deutsch
 
 Energiebilanz, Kosten-Nutzen-Modell, Antrag, Projektpräsentation
 
-## Teil III - Wie gelernt wird: wirkungsorientierte Pädagogik
+## Teil III – Wie gelernt wird: wirkungsorientierte Pädagogik
 
 ### 9. Wirkungsorientierte Pädagogik
 
@@ -505,7 +505,7 @@ Klar strukturierte Blöcke für Lesen, Schreiben, Rechnen, Sprachen, Naturwissen
 
 Zukunftsband
 
-Wöchentlich 2-4 Stunden fächerverbindendes Lernfeld Zukunft
+Wöchentlich 2–4 Stunden fächerverbindendes Lernfeld Zukunft
 
 Projektwochen
 
@@ -523,7 +523,7 @@ Demokratiezeit
 
 Klassenrat, Schulparlament, Konfliktmoderation, Beteiligungsformate
 
-## Teil IV - Wie bewertet wird: Von Noten zu Wirkungskompetenzen
+## Teil IV – Wie bewertet wird: Von Noten zu Wirkungskompetenzen
 
 ### 13. Das Problem der klassischen Benotung
 
@@ -653,7 +653,7 @@ Gestaltungskompetenz
 
 Projektarbeit, Kreativität, Prototyping, Umsetzung, Evaluation und Transfer
 
-## Teil V - Förderung, Inklusion und außerschulische Wirkungsförderung
+## Teil V – Förderung, Inklusion und außerschulische Wirkungsförderung
 
 ### 17. Förderung als Teil des Schulkonzepts
 
@@ -709,9 +709,9 @@ Ein wirkungsökonomisches Schulkonzept unterscheidet zwischen Gleichbehandlung u
 
 Dyskalkulie, LRS und neurodivergente Lernwege Diagnosen sollen nicht stigmatisieren, sondern Lernwege präziser machen. Entscheidend ist nicht, ob ein Kind „krank“ ist, sondern welche Lernarchitektur es braucht, um Zugang zu Zahlen, Sprache, Selbstvertrauen und Teilhabe zu behalten.
 
-## Teil VI - Schule als demokratischer, digitaler und gesunder Wirkungsraum
+## Teil VI – Schule als demokratischer, digitaler und gesunder Wirkungsraum
 
-### 20. Demokratie wird nicht nur unterrichtet - sie wird praktiziert
+### 20. Demokratie wird nicht nur unterrichtet – sie wird praktiziert
 
 Eine wirkungsökonomische Schule behandelt Demokratie nicht als Randthema. Demokratie ist der Korrekturraum einer Gesellschaft. Kinder müssen lernen, wie man streitet, prüft, zuhört, entscheidet, Minderheiten schützt, Regeln verändert und Verantwortung übernimmt.
 
@@ -799,9 +799,9 @@ Kulturorte werden zu Resonanzräumen für Identität, Ausdruck und Wahrnehmung.
 
 Hochschulen und Wissenschaft werden zu Partnern für Daten, Experimente und Zukunftsfragen.
 
-## Teil VII - Qualität, Indikatoren, Pilotierung und Umsetzung
+## Teil VII – Qualität, Indikatoren, Pilotierung und Umsetzung
 
-### 24. Was wird gemessen - und was nicht?
+### 24. Was wird gemessen – und was nicht?
 
 Eine wirkungsökonomische Schule braucht Qualitätsentwicklung. Aber sie darf nicht in eine technokratische Kennzahlenmaschine kippen. Der wichtigste Schutzsatz lautet: Es wird nicht der Wert von Kindern gemessen. Es wird geprüft, ob das Schulsystem Kinder stärkt.
 
@@ -881,7 +881,7 @@ Ziele
 
 Phase 1: Konzept und Schutzrahmen
 
-0-6 Monate
+0–6 Monate
 
 Schulteam, Eltern, Schüler:innen und Kommune einbinden; rechtliche Spielräume klären; Pilotmodule definieren
 
@@ -893,7 +893,7 @@ Fach/Zukunftsband einführen, Portfolio testen, Feedbackgespräche etablieren, e
 
 Phase 3: Erweiterung
 
-2.-3. Schuljahr
+2.–3. Schuljahr
 
 Fächer verbindlich vernetzen, Lernwirkungsfonds testen, Schulparlament stärken, digitale Mündigkeit systematisieren
 
@@ -935,7 +935,7 @@ Umsetzung
 
 Wirkungsfrage
 
-Warum wird unsere Schule im Sommer heiß - und was können wir tun?
+Warum wird unsere Schule im Sommer heiß – und was können wir tun?
 
 Fächer
 
@@ -1015,7 +1015,7 @@ Blogreihe: Noten, Fach Zukunft, Wirkungspädagogik, digitale Mündigkeit, Demokr
 
 Leitformel Schule ist nicht die Vorbereitung auf den Arbeitsmarkt. Schule ist die Vorbereitung auf Wirkung: auf die Fähigkeit, Welt zu verstehen, sich selbst als handlungsfähig zu erleben und Zukunft verantwortungsvoll mitzugestalten.
 
-Anhang A - Begriffliche Leitplanken
+Anhang A – Begriffliche Leitplanken
 
 Für die weitere Ausarbeitung sollten die folgenden Begriffe stabil verwendet werden. Sie verhindern, dass das Konzept in bloße Wohlfühlsprache oder technokratische Messlogik kippt.
 
@@ -1055,7 +1055,7 @@ Wirkungsschule
 
 Arbeitstitel für eine Schule, die Bildung als Wirkungsraum gestaltet.
 
-Anhang B - Interne Bezugspunkte aus der Wirkungsökonomie
+Anhang B – Interne Bezugspunkte aus der Wirkungsökonomie
 
 Dieses Dokument baut auf vorhandenen WÖk-Arbeitsfassungen auf. Die folgenden Bezugspunkte sollten bei der nächsten Ausarbeitung systematisch eingearbeitet und mit sauberen Fußnoten versehen werden.
 
@@ -1069,7 +1069,7 @@ Whitepaper / Leitbild für Mensch, Planet und Demokratie: Bildung neu gedacht; F
 
 Grundlagenpapier Wirkungsökonomie: Wirkungskompetenz, partizipative Governance, Kooperation statt Silo-Denken, Kulturwandel und lernende Systeme als Transformationsbedingungen.
 
-Anhang C - Mögliche Kapitelstruktur für eine spätere Langfassung
+Anhang C – Mögliche Kapitelstruktur für eine spätere Langfassung
 
 Kapitel
 

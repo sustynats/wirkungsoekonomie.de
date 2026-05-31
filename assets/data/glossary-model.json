@@ -1,0 +1,2642 @@
+{
+  "generatedAt": "2026-05-31T06:42:08.170Z",
+  "schema": {
+    "term": "canonicalLabel",
+    "shortDefinition": "shortDefinition",
+    "longDefinition": "longDefinition",
+    "synonyms": "synonyms",
+    "relatedTerms": "relatedTerms",
+    "relatedMethods": "relatedMethods",
+    "relatedImpactFields": "relatedImpactFields"
+  },
+  "terms": [
+    {
+      "id": "agenda-2030",
+      "term": "Agenda 2030",
+      "slug": "agenda-2030",
+      "shortDefinition": "Die Agenda 2030 ist der internationale Rahmen der Vereinten Nationen für nachhaltige Entwicklung.",
+      "longDefinition": "Die Agenda 2030 beschreibt weltweit verhandelte Zielräume für nachhaltige Entwicklung. Die Wirkungsökonomie nutzt diese Zielräume als Referenzrahmen, um positive, negative und neutrale Wirkung öffentlich nachvollziehbar einzuordnen.",
+      "synonyms": [
+        "UN Agenda 2030"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "archetyp",
+      "term": "Archetyp",
+      "slug": "archetyp",
+      "shortDefinition": "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht.",
+      "longDefinition": "In der Wirkungsökonomie ordnen Archetypen wiederkehrende Muster von Wirkung, Risiko, Datenlage und Steuerungsbedarf.",
+      "synonyms": [],
+      "relatedTerms": [
+        "benchmark",
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "benchmark",
+      "term": "Benchmark",
+      "slug": "benchmark",
+      "shortDefinition": "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden.",
+      "longDefinition": "Benchmarks übersetzen abstrakte Wirkungsziele in prüfbare Vergleichswerte, ohne selbst die Gesamtbewertung zu ersetzen.",
+      "synonyms": [
+        "Vergleichswert",
+        "Schwellenwert"
+      ],
+      "relatedTerms": [
+        "scorecard",
+        "finalscore",
+        "woek-id"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "csrd",
+      "term": "CSRD",
+      "slug": "csrd",
+      "shortDefinition": "CSRD ist die europäische Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen.",
+      "longDefinition": "Die Corporate Sustainability Reporting Directive erweitert und standardisiert Nachhaltigkeitsberichte. Für die WÖk ist sie Anschlussraum und Datenquelle, nicht die Kernlogik.",
+      "synonyms": [
+        "Corporate Sustainability Reporting Directive"
+      ],
+      "relatedTerms": [
+        "esrs",
+        "esg",
+        "wirkungsdatenraum",
+        "reporting"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "digitaler-produktpass",
+      "term": "Digitaler Produktpass",
+      "slug": "digitaler-produktpass",
+      "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
+      "longDefinition": "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung.",
+      "synonyms": [
+        "DPP",
+        "Digital Product Passport"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "esg",
+      "term": "ESG",
+      "slug": "esg",
+      "shortDefinition": "ESG steht für Umwelt-, Sozial- und Governance-Faktoren in Unternehmen, Finanzierung und Reporting.",
+      "longDefinition": "ESG hilft, Risiken und Nachhaltigkeitsaspekte zu strukturieren. Die Wirkungsökonomie nutzt ESG als Daten- und Anschlussraum, bewertet aber Wirkung als Zustandsveränderung und koppelt sie zurück.",
+      "synonyms": [
+        "Environmental Social Governance"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "nachhaltigkeit",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "esrs",
+      "term": "ESRS",
+      "slug": "esrs",
+      "shortDefinition": "ESRS sind europäische Standards für Nachhaltigkeitsberichterstattung.",
+      "longDefinition": "European Sustainability Reporting Standards legen fest, welche Nachhaltigkeitsinformationen Unternehmen nach CSRD berichten.",
+      "synonyms": [
+        "European Sustainability Reporting Standards"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esg",
+        "wirkungsdatenraum"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "eu-taxonomie",
+      "term": "EU-Taxonomie",
+      "slug": "eu-taxonomie",
+      "shortDefinition": "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien.",
+      "longDefinition": "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. In der Wirkungsökonomie ist sie ein wichtiger Anschlussstandard für Sustainable Finance, aber keine vollständige Bewertung sozialer Wirkung oder positiver Netto-Wirkung.",
+      "synonyms": [
+        "EU Taxonomy"
+      ],
+      "relatedTerms": [
+        "social-taxonomy",
+        "csrd",
+        "esrs",
+        "wirkungsrisiko",
+        "nachhaltigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1"
+    },
+    {
+      "id": "european-green-deal",
+      "term": "European Green Deal",
+      "slug": "european-green-deal",
+      "shortDefinition": "Der European Green Deal ist ein politischer Rahmen der EU für Klima, Ressourcen, Industrie, Biodiversität und nachhaltige Transformation.",
+      "longDefinition": "In der Wirkungsökonomie ist der European Green Deal kein eigener Wirkungsmaßstab, sondern ein wichtiger europäischer Anschlussrahmen. Er verbindet Klima-, Ressourcen-, Industrie-, Biodiversitäts- und Finanzmarktpolitik mit Daten- und Standardfragen wie EU-Taxonomie, CSRD, ESRS und Produktpässen.",
+      "synonyms": [
+        "Green Deal",
+        "EU Green Deal"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "wirkungsdaten"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "faktencheck",
+      "term": "Faktencheck",
+      "slug": "faktencheck",
+      "shortDefinition": "Ein Faktencheck prüft, ob eine Aussage, Zahl, Quelle oder Behauptung stimmt.",
+      "longDefinition": "Der Faktencheck ist die Prüfung von Aussagen, Zahlen, Quellen und Kontexten auf Richtigkeit. Er ist notwendig, beantwortet aber noch nicht, welche Folgen eine Aussage, Entscheidung oder Maßnahme auslösen kann.",
+      "synonyms": [
+        "Fact Check",
+        "Richtigkeitsprüfung"
+      ],
+      "relatedTerms": [
+        "folgencheck",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungspfad"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.1"
+    },
+    {
+      "id": "finalscore",
+      "term": "FinalScore",
+      "slug": "finalscore",
+      "shortDefinition": "Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung.",
+      "longDefinition": "Der FinalScore verdichtet Einzelscores, Datenqualität, rote Linien und Reverse Merit Order. Er darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden.",
+      "synonyms": [],
+      "relatedTerms": [
+        "scorecard",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "folgencheck",
+      "term": "Folgencheck",
+      "slug": "folgencheck",
+      "shortDefinition": "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann.",
+      "longDefinition": "Der Folgencheck ist eine vorsorgende Ex-ante-Prüfung möglicher Wirkungen. Er untersucht Wirkstoffe, Wirkungspotenziale, Wirkungspfade, Wirkungsräume, Nebenwirkungen, Datenqualität, Unsicherheit und Schutzgrenzen, bevor Schäden oder Systemfolgen vollständig eingetreten sind.",
+      "synonyms": [
+        "Folgenprüfung",
+        "Ex-ante-Folgenprüfung",
+        "Wirkungsfolgencheck"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "wirkstoff",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungspotenzial"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.1"
+    },
+    {
+      "id": "gri",
+      "term": "GRI",
+      "slug": "gri",
+      "shortDefinition": "GRI ist ein international verbreiteter Rahmen für Nachhaltigkeitsberichterstattung.",
+      "longDefinition": "Die Global Reporting Initiative stellt Standards zur Offenlegung von Nachhaltigkeitsthemen bereit.",
+      "synonyms": [
+        "Global Reporting Initiative"
+      ],
+      "relatedTerms": [
+        "reporting",
+        "csrd",
+        "esrs"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "host-wirkungsscore",
+      "term": "Host-Wirkungsscore",
+      "slug": "host-wirkungsscore",
+      "shortDefinition": "Der Host-Wirkungsscore ist eine Scorecard für öffentliche Formate, die Quellenklarheit, Framing, Diskursführung, Community, Transparenz, Schutz und Korrekturfähigkeit prüft.",
+      "longDefinition": "Der Host-Wirkungsscore bewertet nicht Menschen, Meinungen oder Gesinnung, sondern öffentliche Verstärkungsbedingungen eines Formats. Er unterscheidet Wirkungspotenzial, Wirkungsrisiko, Quellenklarheit, Framing, Diskursführung, Community-Architektur, Transparenz, Schutz vulnerabler Gruppen, Plattform- und Clip-Verantwortung, Korrekturfähigkeit und Transformationswirkung.",
+      "synonyms": [
+        "HWS",
+        "Host Scorecard",
+        "Hosting-Scorecard"
+      ],
+      "relatedTerms": [
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "reverse-merit-order",
+        "wirkungsorientiertes-hosting"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "idgs",
+      "term": "IDGs",
+      "slug": "idgs",
+      "shortDefinition": "IDGs sind ein anschlussfähiger Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeiten.",
+      "longDefinition": "Die Inner Development Goals sind kein dritter Zielkatalog neben SDGs und SDG+. Für die Wirkungsökonomie sind sie ein Kompetenzrahmen, der Wirkungskompetenz, Urteilskraft, Zusammenarbeit, Reflexion und Verantwortungsfähigkeit unterstützen kann.",
+      "synonyms": [
+        "Inner Development Goals",
+        "IDG",
+        "innere Entwicklungsziele"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "mensch-planet-demokratie",
+      "term": "Mensch, Planet und Demokratie",
+      "slug": "mensch-planet-demokratie",
+      "shortDefinition": "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst.",
+      "longDefinition": "Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung. Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele, sondern die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.",
+      "synonyms": [
+        "MPD"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Demokratiebegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "nace",
+      "term": "NACE",
+      "slug": "nace",
+      "shortDefinition": "NACE ist die europäische Klassifikation wirtschaftlicher Tätigkeiten.",
+      "longDefinition": "NACE-Codes helfen, Unternehmen und Tätigkeiten statistisch und regulatorisch zu klassifizieren.",
+      "synonyms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "woek-id",
+        "scorecard"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "nachhaltigkeit",
+      "term": "Nachhaltigkeit",
+      "slug": "nachhaltigkeit",
+      "shortDefinition": "Nachhaltigkeit bedeutet in der Wirkungsökonomie: Ein System funktioniert auch morgen noch.",
+      "longDefinition": "Nachhaltigkeit ist in der Wirkungsökonomie kein Zusatzlabel, keine Berichtspflicht und keine einzelne Umweltstrategie. Sie beschreibt die resiliente Fähigkeit eines Systems, Lebensgrundlagen, soziale Stabilität, wirtschaftliche Tragfähigkeit und demokratische Korrekturräume dauerhaft zu sichern.",
+      "synonyms": [
+        "nachhaltig",
+        "nachhaltige Entwicklung",
+        "nachhaltige Wirtschaft",
+        "resiliente Wirtschaft"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsresilienz",
+        "esg",
+        "csrd",
+        "eu-taxonomie",
+        "stranded-assets"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "negative-wirkung",
+      "term": "negative Wirkung",
+      "slug": "negative-wirkung",
+      "shortDefinition": "Negative Wirkung ist eine Zustandsveränderung, die Mensch, Planet oder Demokratie schädigt oder destabilisiert.",
+      "longDefinition": "Negative Wirkung kann direkt, indirekt, kurzfristig oder langfristig auftreten und wird im Referenzrahmen bewertet.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsrisiko",
+        "netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "netto-wirkung",
+      "term": "Netto-Wirkung",
+      "slug": "netto-wirkung",
+      "shortDefinition": "Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen.",
+      "longDefinition": "Netto-Wirkung ordnet Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Rote Linien, Wirkungsgrenzen und Nicht-Kompensation begrenzen die Verrechnung.",
+      "synonyms": [
+        "Nettowirkung"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "reverse-merit-order",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "nwi",
+      "term": "NWI",
+      "slug": "nwi",
+      "shortDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung.",
+      "longDefinition": "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet.",
+      "synonyms": [
+        "Netto-Wirkungs-Index",
+        "Netto-Wirkungs-Index / NWI"
+      ],
+      "relatedTerms": [
+        "netto-wirkung",
+        "finalscore",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "relatedMethods": [
+        [
+          "Netto-Wirkungs-Index",
+          "/werkzeuge/netto-wirkungs-index/"
+        ],
+        [
+          "Scorecards",
+          "/werkzeuge/scorecards/"
+        ],
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Wirtschaft & Unternehmen",
+          "/wirkungsfelder/wirtschaft-unternehmen/"
+        ],
+        [
+          "Kapital & Finanzierung",
+          "/wirkungsfelder/finanzsystem-kapital/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Impact-Controlling-Rechner",
+          "/erleben/impact-controlling-rechner/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Scorecards, Benchmarks & NWI",
+          "/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/"
+        ],
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Was passiert bei Zielkonflikten?",
+          "/einwaende/#zielkonflikte"
+        ]
+      ],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.1"
+    },
+    {
+      "id": "neutrale-wirkung",
+      "term": "neutrale Wirkung",
+      "slug": "neutrale-wirkung",
+      "shortDefinition": "Neutrale Wirkung ist eine feststellbare Zustandsveränderung, die im Bewertungsrahmen weder positiv noch negativ ins Gewicht fällt.",
+      "longDefinition": "Neutrale Wirkung ist nicht Wirkungslosigkeit, sondern eine bewertete Veränderung ohne relevante positive oder negative Einordnung.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkung",
+        "positive-wirkung",
+        "negative-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "nichtkompensationsprinzip",
+      "term": "Nichtkompensationsprinzip",
+      "slug": "nichtkompensationsprinzip",
+      "shortDefinition": "Das Nichtkompensationsprinzip verhindert, dass schwere Schäden durch positive Teilwirkungen schöngerechnet werden.",
+      "longDefinition": "Das Prinzip verbindet Netto-Wirkung mit Wirkungsgrenzen und Reverse Merit Order. Es schützt zentrale Lebens-, Sozial- und Demokratiefunktionen.",
+      "synonyms": [
+        "Nicht-Kompensation",
+        "Nichtkompensation"
+      ],
+      "relatedTerms": [
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "positive-netto-wirkung",
+      "term": "positive Netto-Wirkung",
+      "slug": "positive-netto-wirkung",
+      "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie.",
+      "longDefinition": "Positive Netto-Wirkung verbindet tatsächliche Zustandsveränderungen, Bewertungsrahmen, Nicht-Kompensation und Rückkopplung in Entscheidungen.",
+      "synonyms": [
+        "positive Nettowirkung",
+        "positive netto Wirkung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "mensch-planet-demokratie",
+        "sdg-plus"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "positive-wirkung",
+      "term": "positive Wirkung",
+      "slug": "positive-wirkung",
+      "shortDefinition": "Positive Wirkung ist eine Zustandsveränderung, die im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv bewertet wird.",
+      "longDefinition": "Positive Wirkung ist keine Behauptung guten Willens, sondern eine bewertete Zustandsveränderung mit Bezugspunkt.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkung",
+        "negative-wirkung",
+        "neutrale-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "resonanzarchitektur",
+      "term": "Resonanzarchitektur",
+      "slug": "resonanzarchitektur",
+      "shortDefinition": "Resonanzarchitektur beschreibt die gestalteten Bedingungen, unter denen Sprache, Bilder, Gäste, Chat, Plattformpfade und Korrekturen Anschluss finden.",
+      "longDefinition": "Resonanzarchitektur macht sichtbar, dass ein Format nicht nur aus Inhalt besteht. Thema, Einstiegsfrage, Gästeauswahl, Redezeit, Humor, Quellen, Chatregeln, Titel, Thumbnail, Clips, Kommentarlogik und Nachkorrektur strukturieren, welche Resonanzen verstärkt oder begrenzt werden.",
+      "synonyms": [
+        "Resonanzgestaltung",
+        "Diskursarchitektur"
+      ],
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspfad",
+        "wirkungsarchitektur",
+        "wirkungsorientiertes-hosting"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Architekturbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "resonanzraum",
+      "term": "Resonanzraum",
+      "slug": "resonanzraum",
+      "shortDefinition": "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können.",
+      "longDefinition": "Resonanzräume beeinflussen, ob Informationen, Narrative oder Entscheidungen aufgenommen, verstärkt, abgeschwächt oder umgedeutet werden.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsnetz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Architekturbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "reverse-merit-order",
+      "term": "Reverse Merit Order",
+      "slug": "reverse-merit-order",
+      "shortDefinition": "Reverse Merit Order stellt sicher, dass das schwächste kritische Wirkungsfeld die Bewertung begrenzt.",
+      "longDefinition": "Die Reverse Merit Order ist eine Schutzlogik gegen Schönrechnung. Sie macht kritische Schäden entscheidungsrelevant und verbindet Netto-Wirkung mit Nicht-Kompensation.",
+      "synonyms": [
+        "Nichtkompensationsprinzip",
+        "Minimum-Operator",
+        "Engpasslogik"
+      ],
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "netto-wirkung",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [
+        [
+          "Reverse Merit Order",
+          "/werkzeuge/reverse-merit-order/"
+        ],
+        [
+          "Scorecards",
+          "/werkzeuge/scorecards/"
+        ],
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Produkte & Konsum",
+          "/wirkungsfelder/produkte-konsum/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Produktwirkungsrechner",
+          "/erleben/produktwirkungsrechner/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "WÖk Master Items",
+          "/dokumente/woek-master-items-final-v1-2/"
+        ],
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Was passiert bei Zielkonflikten?",
+          "/einwaende/#zielkonflikte"
+        ]
+      ],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "scorecard",
+      "term": "Scorecard",
+      "slug": "scorecard",
+      "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
+      "longDefinition": "Scorecards verbinden WÖk-IDs, Benchmarks, Datenqualität, Wirkungsgrenzen und Bewertungslogik.",
+      "synonyms": [],
+      "relatedTerms": [
+        "woek-id",
+        "benchmark",
+        "finalscore"
+      ],
+      "relatedMethods": [
+        [
+          "Scorecards",
+          "/werkzeuge/scorecards/"
+        ],
+        [
+          "Benchmarks & Archetypen",
+          "/werkzeuge/benchmarks-archetypen/"
+        ],
+        [
+          "Reverse Merit Order",
+          "/werkzeuge/reverse-merit-order/"
+        ],
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Produkte & Konsum",
+          "/wirkungsfelder/produkte-konsum/"
+        ],
+        [
+          "Wirtschaft & Unternehmen",
+          "/wirkungsfelder/wirtschaft-unternehmen/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Produktwirkungsrechner",
+          "/erleben/produktwirkungsrechner/"
+        ],
+        [
+          "Unternehmens-Wirkungscheck",
+          "/erleben/unternehmens-wirkungscheck/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "WÖk Master Items",
+          "/dokumente/woek-master-items-final-v1-2/"
+        ],
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Kann man Wirkung überhaupt messen?",
+          "/einwaende/#messbarkeit"
+        ]
+      ],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "sdg-plus",
+      "term": "SDG+",
+      "slug": "sdg-plus",
+      "shortDefinition": "SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionelle und digitale Wirkungsfelder.",
+      "longDefinition": "SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind. SDG+ ist keine offizielle UN-Kategorie.",
+      "synonyms": [
+        "SDG Plus",
+        "SDG-Plus"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "agenda-2030",
+        "mensch-planet-demokratie",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [
+        [
+          "SDG-/SDG+-Referenzrahmen",
+          "/verstehen/sdgs-sdgplus/"
+        ],
+        [
+          "WÖk-IDs",
+          "/werkzeuge/woek-ids/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Staat & Demokratie",
+          "/wirkungsfelder/staat-recht-demokratie/"
+        ],
+        [
+          "Öffentlichkeit & Wissen",
+          "/wirkungsfelder/medien-oeffentlichkeit/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "SDG-/SDG+-Referenzrahmen",
+          "/assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Wer entscheidet, was positive Wirkung ist?",
+          "/einwaende/#entscheidung"
+        ]
+      ],
+      "category": "Demokratiebegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "sdg-sdgplus-referenzrahmen",
+      "term": "SDG-/SDG+-Referenzrahmen",
+      "slug": "sdg-sdgplus-referenzrahmen",
+      "shortDefinition": "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen SDGs mit SDG+ als transparenter WÖk-Erweiterung.",
+      "longDefinition": "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen 17 Nachhaltigkeitsziele der Vereinten Nationen mit SDG+ als Wirkungsökonomie-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.",
+      "synonyms": [
+        "Referenzrahmen",
+        "SDG Referenzrahmen",
+        "SDG+ Referenzrahmen"
+      ],
+      "relatedTerms": [
+        "sdgs",
+        "sdg-plus",
+        "agenda-2030",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "sdgs",
+      "term": "SDGs",
+      "slug": "sdgs",
+      "shortDefinition": "Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030.",
+      "longDefinition": "Die Sustainable Development Goals beschreiben Zielräume für Armut, Ernährung, Gesundheit, Bildung, Gleichstellung, Wasser, Energie, Arbeit, Industrie, Ungleichheit, Städte, Konsum, Klima, Ökosysteme, Frieden und Partnerschaften. Die Wirkungsökonomie nutzt sie als Referenzrahmen, nicht als dekorative Ziel-Liste.",
+      "synonyms": [
+        "Sustainable Development Goals",
+        "Nachhaltigkeitsziele",
+        "UN-Nachhaltigkeitsziele"
+      ],
+      "relatedTerms": [
+        "agenda-2030",
+        "sdg-plus",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "social-credit",
+      "term": "Social Credit",
+      "slug": "social-credit",
+      "shortDefinition": "Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.",
+      "longDefinition": "Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, öffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhänge.",
+      "synonyms": [
+        "Sozialkredit",
+        "Social-Credit-System"
+      ],
+      "relatedTerms": [
+        "wirkungspunkte",
+        "wirkungswahrheit",
+        "wirkungsrat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [
+        [
+          "Einwände & Schutzgrenzen",
+          "/einwaende/"
+        ]
+      ],
+      "category": "Schutzbegriff",
+      "status": "schutzbegriff",
+      "version": "1.1"
+    },
+    {
+      "id": "social-taxonomy",
+      "term": "Social Taxonomy",
+      "slug": "social-taxonomy",
+      "shortDefinition": "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten.",
+      "longDefinition": "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann.",
+      "synonyms": [
+        "soziale Taxonomie",
+        "Social-Taxonomy",
+        "soziale Wirkungs-Taxonomie"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "csrd",
+        "esrs",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "wirkungsdaten",
+        "social-credit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Architekturbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "spekulationslogik",
+      "term": "Spekulationslogik",
+      "slug": "spekulationslogik",
+      "shortDefinition": "Spekulationslogik bezeichnet Wertsteigerung, die aus Knappheit, Nichtnutzung, Intransparenz oder Verdrängung entsteht.",
+      "longDefinition": "Die Wirkungsökonomie unterscheidet legitime Rendite aus guter Wohnwirkung von problematischer Spekulationslogik. Kritisch wird Wertsteigerung, wenn sie Wohnraum seiner Lebensfunktion entzieht oder negative Wirkung unsichtbar hält.",
+      "synonyms": [
+        "spekulative Verwertungslogik"
+      ],
+      "relatedTerms": [
+        "stranded-assets",
+        "wohnwirkung",
+        "wirkungspflicht-eigentum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "arbeitsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "stranded-assets",
+      "term": "Stranded Assets",
+      "slug": "stranded-assets",
+      "shortDefinition": "Stranded Assets sind Vermögenswerte, die durch veränderte Risiken, Regeln, Märkte, Technologien oder ökologische Bedingungen an Wert verlieren.",
+      "longDefinition": "In der WÖk zeigen Stranded Assets, dass negative oder verdrängte Wirkungen irgendwann in Kapitalwert, Versicherbarkeit, Finanzierung, Betriebskosten oder Nutzbarkeit zurückkehren können.",
+      "synonyms": [
+        "Stranded Asset",
+        "gestrandete Vermögenswerte"
+      ],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "nachhaltigkeit",
+        "transitionsrisiko",
+        "versicherbarkeit",
+        "kapitalzugang"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "t-sroi",
+      "term": "T-SROI",
+      "slug": "t-sroi",
+      "shortDefinition": "T-SROI beschreibt transformationsbezogene Wirkung im Verhältnis zu eingesetzten Ressourcen.",
+      "longDefinition": "Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite. T-SROI ist keine operative Netto-Wirkungskennzahl. Diese Rolle liegt beim NWI.",
+      "synonyms": [
+        "Transformational Social Return on Investment",
+        "Transformational SROI"
+      ],
+      "relatedTerms": [
+        "transformationswirkung",
+        "netto-wirkung",
+        "wirkungscontrolling"
+      ],
+      "relatedMethods": [
+        [
+          "T-SROI",
+          "/werkzeuge/t-sroi/"
+        ],
+        [
+          "Impact Controlling",
+          "/werkzeuge/impact-controlling/"
+        ],
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Kapital & Finanzierung",
+          "/wirkungsfelder/finanzsystem-kapital/"
+        ],
+        [
+          "Gesundheit & Pflege",
+          "/wirkungsfelder/gesundheit-pflege/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Wirkungsportfolio-Generator",
+          "/erleben/wirkungsportfolio-generator/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Whitepaper T-SROI",
+          "/dokumente/whitepaper-t-sroi/"
+        ],
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Werden Produkte teurer?",
+          "/einwaende/#teurer"
+        ]
+      ],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "transformationswirkung",
+      "term": "Transformationswirkung",
+      "slug": "transformationswirkung",
+      "shortDefinition": "Transformationswirkung verändert Systemlogiken, Standards, Anreize oder Handlungspfade.",
+      "longDefinition": "Transformationswirkung beschreibt, ob eine Maßnahme Strukturen, Märkte, Regeln, Technologien oder kulturelle Muster so verändert, dass positive Netto-Wirkung wahrscheinlicher wird.",
+      "synonyms": [],
+      "relatedTerms": [
+        "t-sroi",
+        "wirkungsarchitektur",
+        "wirkungslenkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "warmmietenneutralitaet",
+      "term": "Warmmietenneutralität",
+      "slug": "warmmietenneutralitaet",
+      "shortDefinition": "Warmmietenneutralität bedeutet, dass Sanierung ökologische Wirkung erzeugt, ohne die reale Wohnkostenbelastung zu erhöhen.",
+      "longDefinition": "In der Wirkungsökonomie ist Sanierung dann sozial tragfähig, wenn Klimawirkung, Betriebskosten, Förderung, Mietentwicklung und Härtefallschutz zusammen betrachtet werden.",
+      "synonyms": [
+        "warmmietenneutrale Sanierung"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "wix-vi"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "arbeitsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkmechanismus",
+      "term": "Wirkmechanismus",
+      "slug": "wirkmechanismus",
+      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
+      "longDefinition": "Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Resonanzräume und tatsächliche Zustandsveränderungen.",
+      "synonyms": [
+        "Wirkungsmechanismus"
+      ],
+      "relatedTerms": [
+        "wirkstoff",
+        "wirkungspfad",
+        "wirkungspotenzial"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkstoff",
+      "term": "Wirkstoff",
+      "slug": "wirkstoff",
+      "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
+      "longDefinition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung.",
+      "synonyms": [
+        "gesellschaftlicher Wirkstoff"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungspfad",
+        "resonanzraum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkung",
+      "term": "Wirkung",
+      "slug": "wirkung",
+      "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen.",
+      "longDefinition": "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+.",
+      "synonyms": [
+        "Impact",
+        "Zustandsveränderung"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [
+        [
+          "WÖk-Kompass",
+          "/kompass.html"
+        ],
+        [
+          "WÖk-Scanner",
+          "/anwendungen/scanner.html"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Wirkungsfelder",
+          "/wirkungsfelder/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Produktwirkungsrechner",
+          "/erleben/produktwirkungsrechner/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Grundlagenwerk",
+          "/buch.html"
+        ],
+        [
+          "Systemmodell",
+          "/dokumente/systemmodell-der-wirkungsoekonomie/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Kann man Wirkung überhaupt messen?",
+          "/einwaende/#messbarkeit"
+        ]
+      ],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsarchitektur",
+      "term": "Wirkungsarchitektur",
+      "slug": "wirkungsarchitektur",
+      "shortDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen.",
+      "longDefinition": "Wirkungsarchitektur ist keine Website und kein Diagramm, sondern die Ordnung, in der Daten, Regeln, Institutionen, Kapital, Preise, Steuern, Beschaffung und demokratische Kontrolle zusammenwirken.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "wirkungsrat",
+        "woek-id"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Architekturbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsbewertung",
+      "term": "Wirkungsbewertung",
+      "slug": "wirkungsbewertung",
+      "shortDefinition": "Wirkungsbewertung ordnet tatsächliche Zustandsveränderungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
+      "longDefinition": "Wirkungsbewertung verbindet Daten, Indikatoren, Benchmarks, Wirkungsgrenzen und normative Rahmung.",
+      "synonyms": [
+        "Impact Assessment"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "scorecard"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsblindheit",
+      "term": "Wirkungsblindheit",
+      "slug": "wirkungsblindheit",
+      "shortDefinition": "Wirkungsblindheit entsteht, wenn Entscheidungen ihre tatsächlichen Folgen nicht sehen oder nicht berücksichtigen.",
+      "longDefinition": "Wirkungsblindheit kann in Preisen, Kennzahlen, Medien, Politik, Kapitalflüssen oder Institutionen entstehen.",
+      "synonyms": [
+        "wirkungsblind"
+      ],
+      "relatedTerms": [
+        "wirkungswahrheit",
+        "wirkungsdatenraum",
+        "wirkungsrückkopplung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsdaten",
+      "term": "Wirkungsdaten",
+      "slug": "wirkungsdaten",
+      "shortDefinition": "Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar.",
+      "longDefinition": "Wirkungsdaten können Primärdaten, geprüfte Sekundärdaten, Produktdaten, Lieferkettendaten, Benchmarks, Prüfstatus und Unsicherheiten umfassen. Sie sind Grundlage für Scorecards, FinalScore, NWI und spätere Rückkopplung.",
+      "synonyms": [
+        "Wirkungsdatenpunkte"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "scorecard",
+        "nwi"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsdatenraum",
+      "term": "Wirkungsdatenraum",
+      "slug": "wirkungsdatenraum",
+      "shortDefinition": "Ein Wirkungsdatenraum macht relevante Wirkungsdaten strukturiert, interoperabel und prüfbar nutzbar.",
+      "longDefinition": "Wirkungsdatenräume verbinden Berichtsdaten, Produktdaten, Lieferkettendaten, Standards, Register und Bewertungslogik.",
+      "synonyms": [
+        "Wirkungsdatenräume"
+      ],
+      "relatedTerms": [
+        "csrd",
+        "esrs",
+        "digitaler-produktpass",
+        "woek-id"
+      ],
+      "relatedMethods": [
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungseinkommen",
+      "term": "Wirkungseinkommen",
+      "slug": "wirkungseinkommen",
+      "shortDefinition": "Wirkungseinkommen beschreibt Einkommenslogiken, die gesellschaftlich relevante positive Wirkung berücksichtigen.",
+      "longDefinition": "Das Konzept fragt, wie Sorgearbeit, Bildung, Prävention, demokratische Arbeit und andere wirksame Tätigkeiten besser sichtbar und abgesichert werden können.",
+      "synonyms": [
+        "Wirkungsdividende"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungslenkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsempfaenger",
+      "term": "Wirkungsempfänger",
+      "slug": "wirkungsempfaenger",
+      "shortDefinition": "Wirkungsempfänger sind Menschen, Gruppen, Ökosysteme, Institutionen oder Systeme, auf die Wirkung eintritt.",
+      "longDefinition": "Der Begriff macht sichtbar, dass Wirkung relational ist und immer einen Bezugspunkt braucht.",
+      "synonyms": [
+        "Betroffene"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsraum",
+        "wirkungspfad"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsfonds",
+      "term": "Wirkungsfonds",
+      "slug": "wirkungsfonds",
+      "shortDefinition": "Ein Wirkungsfonds bündelt Rückflüsse, um Prävention, Bildung, Transformation oder soziale Sicherung wirkungsorientiert zu finanzieren.",
+      "longDefinition": "Der Wirkungsfonds beschreibt einen Finanzierungsmechanismus, der Mittel aus bestehender oder neuer Wertschöpfung in gesellschaftliche Stabilität, Weiterbildung, Prävention, Transformation und Wirkungseinkommen zurückführen kann.",
+      "synonyms": [
+        "Transformationsfonds",
+        "Rückkopplungsfonds"
+      ],
+      "relatedTerms": [
+        "wirkungsrueckkopplung",
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungshaushalt"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsgrenze",
+      "term": "Wirkungsgrenze",
+      "slug": "wirkungsgrenze",
+      "shortDefinition": "Eine Wirkungsgrenze markiert Schäden, die nicht beliebig kompensiert oder schöngerechnet werden dürfen.",
+      "longDefinition": "Wirkungsgrenzen betreffen unter anderem Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität.",
+      "synonyms": [
+        "rote Linie",
+        "Red Line"
+      ],
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungshaushalt",
+      "term": "Wirkungshaushalt",
+      "slug": "wirkungshaushalt",
+      "shortDefinition": "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar.",
+      "longDefinition": "Der Wirkungshaushalt fragt, welche Zustände öffentliche Mittel verändern, welche Risiken entstehen und welche positive Netto-Wirkung erzeugt wird.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsrückkopplung",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungskompetenz",
+      "term": "Wirkungskompetenz",
+      "slug": "wirkungskompetenz",
+      "shortDefinition": "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten.",
+      "longDefinition": "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit, demokratische Streitfähigkeit und praktische Steuerung. Im Bildungsbereich ist sie die Fähigkeit, reale Wirkungsfragen zu analysieren, Perspektiven einzubeziehen, Zielkonflikte offenzulegen, Nebenwirkungen zu prüfen und handlungsfähige Lösungen zu entwickeln.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsschule",
+        "wirkungspaedagogik",
+        "wirkungsradar",
+        "wirkungsbewertung",
+        "wirkungsarchitektur"
+      ],
+      "relatedMethods": [
+        [
+          "Akademie",
+          "/akademie.html"
+        ],
+        [
+          "Scorecards",
+          "/werkzeuge/scorecards/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Bildung",
+          "/wirkungsfelder/bildung/"
+        ],
+        [
+          "Öffentlichkeit & Wissen",
+          "/wirkungsfelder/medien-oeffentlichkeit/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Wirkungsschule-Check",
+          "/erleben/wirkungsschule-check/"
+        ],
+        [
+          "Fach-Zukunft-Generator",
+          "/erleben/fach-zukunft-generator/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Akademie-Lernpfad",
+          "/akademie.html#lernpfad"
+        ],
+        [
+          "WÖk auf einer Seite",
+          "/verstehen/woek-auf-einer-seite/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Ist das Social Credit?",
+          "/einwaende/#social-credit"
+        ]
+      ],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.1"
+    },
+    {
+      "id": "wirkungslenkung",
+      "term": "Wirkungslenkung",
+      "slug": "wirkungslenkung",
+      "shortDefinition": "Wirkungslenkung ist die bewusste Ausrichtung von Anreizen, Regeln und Entscheidungen auf positive Netto-Wirkung.",
+      "longDefinition": "Wirkungslenkung nutzt Daten, Preise, Steuern, Kapital, Förderung, Beschaffung und Governance, um wirksame Entscheidungen wahrscheinlicher zu machen.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsrückkopplung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Wirkungsrückkopplung",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Staat & Demokratie",
+          "/wirkungsfelder/staat-recht-demokratie/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Steuerungsbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsnetz",
+      "term": "Wirkungsnetz",
+      "slug": "wirkungsnetz",
+      "shortDefinition": "Ein Wirkungsnetz beschreibt miteinander verbundene Wirkpfade, Akteure, Räume und Rückkopplungen.",
+      "longDefinition": "Wirkungsnetze machen sichtbar, dass Wirkung selten linear entsteht und oft über Wechselwirkungen, Nebenwirkungen und Systemhebel läuft.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspfad",
+        "resonanzraum",
+        "wirkungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Architekturbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsorientiertes-hosting",
+      "term": "Wirkungsorientiertes Hosting",
+      "slug": "wirkungsorientiertes-hosting",
+      "shortDefinition": "Wirkungsorientiertes Hosting gestaltet öffentliche Gesprächs-, Medien- und Community-Räume nach Wirkung, Quellenklarheit, Würde, Schutz und Korrekturfähigkeit.",
+      "longDefinition": "Wirkungsorientiertes Hosting ist eine Praxis für Creator:innen, Hosts, Redaktionen, Streamer:innen, Podcaster:innen, Community-Management und politische Kommunikation. Es gestaltet Resonanzbedingungen so, dass Wahrheit zugänglich bleibt, Streit zu Erkenntnis führen kann, Menschenwürde geschützt wird und demokratische Rückkopplung funktioniert.",
+      "synonyms": [
+        "wirkungsorientierte Moderation",
+        "Impact Hosting",
+        "verantwortetes Hosting"
+      ],
+      "relatedTerms": [
+        "wirkungsraum",
+        "resonanzarchitektur",
+        "resonanzraum",
+        "wirkungskompetenz",
+        "host-wirkungsscore"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungspaedagogik",
+      "term": "Wirkungspädagogik",
+      "slug": "wirkungspaedagogik",
+      "shortDefinition": "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit.",
+      "longDefinition": "Wirkungspädagogik ist die pädagogische Logik der Wirkungsschule. Sie verbindet Fachlichkeit, Beziehung, Resonanz, Fehlerkultur, Reflexion und reale Wirkungsfragen, damit Lernende Wissen nicht nur aufnehmen, sondern Folgen erkennen, Verantwortung übernehmen und handlungsfähig werden.",
+      "synonyms": [
+        "wirkungsorientierte Pädagogik"
+      ],
+      "relatedTerms": [
+        "wirkungsschule",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "wirkungspotenzial"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungspfad",
+      "term": "Wirkungspfad",
+      "slug": "wirkungspfad",
+      "shortDefinition": "Ein Wirkungspfad beschreibt die nachvollziehbare Kette von Auslöser, Bedingungen, Wirkungspotenzial und möglicher Zustandsveränderung.",
+      "longDefinition": "Wirkungspfade helfen, Annahmen, Daten, Risiken und Rückkopplungen in einer Wirkungsanalyse transparent zu machen.",
+      "synonyms": [
+        "Wirkpfad"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsnetz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungspflicht-eigentum",
+      "term": "Wirkungspflicht des Eigentums",
+      "slug": "wirkungspflicht-des-eigentums",
+      "shortDefinition": "Die Wirkungspflicht des Eigentums beschreibt, dass Eigentum an Wohnraum an seine reale Wirkung auf Bezahlbarkeit, Gesundheit, Quartier und Vertrauen rückgebunden wird.",
+      "longDefinition": "Eigentum bleibt Freiheitsform, Investitionsgrundlage und Verantwortung. Bei Wohnraum betrifft es aber einen gesellschaftlichen Wirkungsraum und braucht daher transparente Schutzgrenzen, Rechtsschutz und demokratische Ausgestaltung.",
+      "synonyms": [
+        "Eigentum mit Wirkungspflicht"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "spekulationslogik"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "arbeitsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungspotenzial",
+      "term": "Wirkungspotenzial",
+      "slug": "wirkungspotenzial",
+      "shortDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann.",
+      "longDefinition": "Wirkungspotenzial beschreibt erwartbare oder mögliche Zustandsveränderungen unter bestimmten Bedingungen. Es braucht spätere Prüfung, ob Wirkung tatsächlich eingetreten ist.",
+      "synonyms": [
+        "Wirkpotenzial"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungsrisiko",
+        "wirkstoff"
+      ],
+      "relatedMethods": [
+        [
+          "Faktencheck & Folgencheck",
+          "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/"
+        ],
+        [
+          "WÖk-Scanner",
+          "/anwendungen/scanner.html"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Medien & Öffentlichkeit",
+          "/wirkungsfelder/medien-oeffentlichkeit/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Medienwirkungscheck",
+          "/erleben/medienwirkungscheck/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Faktencheck und Folgencheck",
+          "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Was passiert, wenn die WÖk falsch liegt?",
+          "/einwaende/#korrektur"
+        ]
+      ],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungspunkte",
+      "term": "Wirkungspunkte",
+      "slug": "wirkungspunkte",
+      "shortDefinition": "Wirkungspunkte sind eine mögliche produktbezogene Informations- oder Bonuslogik, keine Personenbewertung.",
+      "longDefinition": "Wirkungspunkte dürfen nur als freiwillige, datensparsame und transparente Produkt- oder Bonusinformation gedacht werden. Sie dürfen keine Bürger:innen bewerten, keine Kaufprofile erzwingen und keine Nachteile bei Nichtteilnahme erzeugen.",
+      "synonyms": [
+        "Wirkungsbonus",
+        "Bonusmodell"
+      ],
+      "relatedTerms": [
+        "social-credit",
+        "verbraucherinformation",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "schutzbegriff",
+      "version": "1.1"
+    },
+    {
+      "id": "wirkungsradar",
+      "term": "Wirkungsradar",
+      "slug": "wirkungsradar",
+      "shortDefinition": "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.",
+      "longDefinition": "Das Wirkungsradar unterstützt Analyse, Kommunikation und Priorisierung, ersetzt aber keine vollständige Wirkungsbewertung.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungskompetenz",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsrat",
+      "term": "Wirkungsrat",
+      "slug": "wirkungsrat",
+      "shortDefinition": "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben.",
+      "longDefinition": "Er verbindet Expertise, öffentliche Nachvollziehbarkeit, Korrekturfähigkeit und Schutz vor Gaming the System.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "benchmark",
+        "archetyp"
+      ],
+      "relatedMethods": [
+        [
+          "Wirkungsrat",
+          "/werkzeuge/wirkungsrat/"
+        ],
+        [
+          "Wirkungsregister",
+          "/werkzeuge/wirkungsregister/"
+        ],
+        [
+          "Wirkungsaudit",
+          "/werkzeuge/wirkungsaudit/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Staat & Demokratie",
+          "/wirkungsfelder/staat-recht-demokratie/"
+        ]
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Wirkungsrat Konzept",
+          "/dokumente/wirkungsrat-konzept/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Was schützt vor Lobbyismus?",
+          "/einwaende/#lobbyismus"
+        ]
+      ],
+      "category": "Schutzbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsraum",
+      "term": "Wirkungsraum",
+      "slug": "wirkungsraum",
+      "shortDefinition": "Ein Wirkungsraum ist ein Bereich, in dem Entscheidungen Zustände für Mensch, Planet oder Demokratie verändern.",
+      "longDefinition": "Wohnen, Bildung, Gesundheit, Medien, Mobilität, Kultur oder Finanzsysteme können Wirkungsräume sein.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungsempfaenger",
+        "wirkungspfad",
+        "wirkungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Architekturbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsrente",
+      "term": "Wirkungsrente",
+      "slug": "wirkungsrente",
+      "shortDefinition": "Wirkungsrente beschreibt eine rentenpolitische Perspektive, die Lebensleistung und gesellschaftliche Wirkung sichtbarer macht.",
+      "longDefinition": "Das Konzept öffnet eine Wirkungslogik für Rente, Care-Arbeit, Prävention, Bildung und gesellschaftliche Stabilität.",
+      "synonyms": [
+        "wirkungsbasierte Rente"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsresilienz",
+      "term": "Wirkungsresilienz",
+      "slug": "wirkungsresilienz",
+      "shortDefinition": "Wirkungsresilienz ist die Fähigkeit eines Systems, unter Stress handlungsfähig zu bleiben und positive Netto-Wirkung zu sichern.",
+      "longDefinition": "Wirkungsresilienz ist normativ gebunden. Auch destruktive Systeme können robust sein; im WÖk-Sinn ist Resilienz nur positiv, wenn sie Mensch, Planet und Demokratie stärkt.",
+      "synonyms": [
+        "Resilienz im WÖk-Sinn"
+      ],
+      "relatedTerms": [
+        "resilienz",
+        "nachhaltigkeit",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsrisiko",
+      "term": "Wirkungsrisiko",
+      "slug": "wirkungsrisiko",
+      "shortDefinition": "Wirkungsrisiko ist die Möglichkeit, dass eine Entscheidung negative Wirkung erzeugt oder positive Wirkung verfehlt.",
+      "longDefinition": "Wirkungsrisiken können ökologisch, sozial, demokratisch, finanziell, infrastrukturell oder reputationsbezogen zurückkehren.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "stranded-assets",
+        "wirkungsradar"
+      ],
+      "relatedMethods": [
+        [
+          "Wirkungsrisiko-Matrix",
+          "/werkzeuge/wirkungsrisiko-matrix/"
+        ],
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Wirtschaft & Unternehmen",
+          "/wirkungsfelder/wirtschaft-unternehmen/"
+        ],
+        [
+          "Staat & Demokratie",
+          "/wirkungsfelder/staat-recht-demokratie/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Unternehmens-Wirkungscheck",
+          "/erleben/unternehmens-wirkungscheck/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Risikomanagement im Unternehmen",
+          "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/risikomanagement_wirkungsrisiko_erm/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Was passiert bei Zielkonflikten?",
+          "/einwaende/#zielkonflikte"
+        ]
+      ],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsrueckkopplung",
+      "term": "Wirkungsrückkopplung",
+      "slug": "wirkungsrueckkopplung",
+      "shortDefinition": "Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
+      "longDefinition": "Reporting beschreibt. Rückkopplung verändert. Wirkungsrückkopplung ist der Mechanismus, durch den Wirkungsbewertung steuerungsrelevant wird.",
+      "synonyms": [
+        "Rückkopplung"
+      ],
+      "relatedTerms": [
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [
+        [
+          "Wirkungsumsatzsteuer",
+          "/werkzeuge/wirkungsumsatzsteuer/"
+        ],
+        [
+          "Wirkungshaushalt",
+          "/werkzeuge/wirkungshaushalt/"
+        ],
+        [
+          "Öffentliche Beschaffung",
+          "/werkzeuge/oeffentliche-beschaffung/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Staat & Demokratie",
+          "/wirkungsfelder/staat-recht-demokratie/"
+        ],
+        [
+          "Produkte & Konsum",
+          "/wirkungsfelder/produkte-konsum/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Wirkungsförderungs-Check",
+          "/erleben/wirkungsfoerderungs-check/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "WStG",
+          "/dokumente/wstg-oktober-2025/"
+        ],
+        [
+          "Technische Leitlinien WUStG",
+          "/dokumente/technische-leitlinien-wustg-v2/"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Ist das Planwirtschaft?",
+          "/einwaende/#planwirtschaft"
+        ]
+      ],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsschule",
+      "term": "Wirkungsschule",
+      "slug": "wirkungsschule",
+      "shortDefinition": "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum.",
+      "longDefinition": "In der Wirkungsökonomie bezeichnet die Wirkungsschule die institutionelle Form wirkungsorientierter Bildung: Unterricht, Raum, Beziehung, Bewertung, Förderung, Gesundheit, Demokratiepraxis, digitale Mündigkeit und Bildungsnetzwerke werden so gestaltet, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher wird.",
+      "synonyms": [
+        "wirkungsorientierte Schule",
+        "Schule als Wirkungsraum"
+      ],
+      "relatedTerms": [
+        "wirkungspaedagogik",
+        "wirkungskompetenz",
+        "wirkungsraum",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungssteuer",
+      "term": "Wirkungssteuer",
+      "slug": "wirkungssteuer",
+      "shortDefinition": "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück.",
+      "longDefinition": "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen.",
+      "synonyms": [
+        "Steuer nach Wirkung"
+      ],
+      "relatedTerms": [
+        "wstg",
+        "wustg",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungssteuergesetz",
+      "term": "Wirkungssteuergesetz",
+      "slug": "wirkungssteuergesetz",
+      "shortDefinition": "Das Wirkungssteuergesetz ist ein Rahmengesetz-Konzept für steuerliche Wirkungsrückkopplung.",
+      "longDefinition": "Das WStG bildet den Rahmen, in dem Wirkungsklassen, Daten, Governance und Steuerungslogiken rechtlich strukturiert werden können.",
+      "synonyms": [
+        "WStG",
+        "Wirkungssteuer-Rahmengesetz"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wstg",
+        "wustg"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungstraeger",
+      "term": "Wirkungsträger",
+      "slug": "wirkungstraeger",
+      "shortDefinition": "Ein Wirkungsträger ist ein Produkt, eine Handlung, Entscheidung, Institution oder Struktur, über die Wirkung vermittelt wird.",
+      "longDefinition": "Wirkungsträger können materiell oder immateriell sein: Produkte, Preise, Regeln, Narrative, Gebäude, Plattformen oder Infrastrukturen.",
+      "synonyms": [],
+      "relatedTerms": [
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkmechanismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsumsatzsteuer",
+      "term": "Wirkungsumsatzsteuer",
+      "slug": "wirkungsumsatzsteuer",
+      "shortDefinition": "Die Wirkungsumsatzsteuer ist ein Konzept, Umsatzsteuerlogik nach Produkt- oder Leistungswirkung zu differenzieren.",
+      "longDefinition": "Die WUStG-Logik nutzt Wirkungsdaten, WÖk-IDs, Scorecards und Reverse Merit Order für steuerliche Rückkopplung.",
+      "synonyms": [
+        "WUStG",
+        "Produktwirkungssteuer"
+      ],
+      "relatedTerms": [
+        "wustg",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungsvermietung",
+      "term": "Wirkungsvermietung",
+      "slug": "wirkungsvermietung",
+      "shortDefinition": "Wirkungsvermietung beschreibt Vermietung, die Wohnwirkung auf Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe und Vertrauen sichtbar macht.",
+      "longDefinition": "In der Wirkungsökonomie wird gute Vermietung nicht moralisch behauptet, sondern an Zustandsveränderungen sichtbar: stabile Wohnkosten, gesunde Räume, transparente Kosten, sanierter Bestand, geringere Verdrängung und stärkere Quartierswirkung.",
+      "synonyms": [
+        "wirkungsorientierte Vermietung"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wix-vi",
+        "warmmietenneutralitaet",
+        "wirkungspflicht-eigentum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "arbeitsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wirkungswahrheit",
+      "term": "Wirkungswahrheit",
+      "slug": "wirkungswahrheit",
+      "shortDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen.",
+      "longDefinition": "Der Begriff beschreibt, ob Entscheidungen, Preise, Narrative oder Kennzahlen den tatsächlichen Folgen näherkommen oder sie verdecken.",
+      "synonyms": [
+        "wirkungsnah"
+      ],
+      "relatedTerms": [
+        "wirkungsblindheit",
+        "wirkungsdatenraum",
+        "wirkungsrat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [
+        [
+          "Einwände & Schutzgrenzen",
+          "/einwaende/"
+        ]
+      ],
+      "category": "Schutzbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wix-vi",
+      "term": "WIX-VI",
+      "slug": "wix-vi",
+      "shortDefinition": "WIX-VI ist ein Vermietungs- und Investmentmodul des Wohnwirkungsindex.",
+      "longDefinition": "WIX-VI bewertet keine Personen. Es macht sichtbar, wie Vermietungs- und Investmententscheidungen auf Wohnwirkung, Stranded-Asset-Risiken, Warmmietenneutralität, Quartier und Transparenz zurückwirken.",
+      "synonyms": [
+        "WIX Vermietung Investment",
+        "Vermietungs- und Investmentmodul"
+      ],
+      "relatedTerms": [
+        "wohnwirkung",
+        "wirkungsvermietung",
+        "stranded-assets"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "arbeitsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wohnwirkung",
+      "term": "Wohnwirkung",
+      "slug": "wohnwirkung",
+      "shortDefinition": "Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt.",
+      "longDefinition": "Wohnwirkung ist neutral und relational. Sie kann positiv, negativ oder neutral sein und wird im WÖk-Rahmen an Mensch, Planet und Demokratie rückgekoppelt.",
+      "synonyms": [
+        "Wirkung von Wohnen"
+      ],
+      "relatedTerms": [
+        "wix-vi",
+        "warmmietenneutralitaet",
+        "wirkungsvermietung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "arbeitsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "woek-id",
+      "term": "WÖk-ID",
+      "slug": "woek-id",
+      "shortDefinition": "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems.",
+      "longDefinition": "WÖk-IDs verbinden SDGs, SDG+, Targets, Indikatorfamilien, Datenquellen und Bewertungslogik in einem Register.",
+      "synonyms": [
+        "WOK-ID",
+        "Wok ID",
+        "WÖK ID"
+      ],
+      "relatedTerms": [
+        "scorecard",
+        "benchmark",
+        "wirkungsdatenraum"
+      ],
+      "relatedMethods": [
+        [
+          "WÖk-IDs",
+          "/werkzeuge/woek-ids/"
+        ],
+        [
+          "Datenqualität & Assurance",
+          "/werkzeuge/datenqualitaet-assurance/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Daten & Infrastruktur",
+          "/wirkungsfelder/wissenschaft-innovation-digitalisierung/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Datenraum-Reifegradcheck",
+          "/werkzeuge/datenraum-reifegradcheck/"
+        ]
+      ],
+      "relatedDocuments": [
+        [
+          "Datenbasis",
+          "/methodik/datenbasis.html"
+        ],
+        [
+          "Daten, Standards & Regularien",
+          "/methodik/daten-standards-regularien.html"
+        ]
+      ],
+      "relatedObjections": [
+        [
+          "Was passiert bei Datenlücken?",
+          "/einwaende/#datenluecken"
+        ]
+      ],
+      "category": "Datenbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wstg",
+      "term": "WStG",
+      "slug": "wstg",
+      "shortDefinition": "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung.",
+      "longDefinition": "Das WStG strukturiert die rechtliche Rahmung von Wirkungssteuerung und Wirkungsrückkopplung.",
+      "synonyms": [
+        "Wirkungssteuergesetz"
+      ],
+      "relatedTerms": [
+        "wirkungssteuergesetz",
+        "wirkungssteuer",
+        "wustg"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    },
+    {
+      "id": "wustg",
+      "term": "WUStG",
+      "slug": "wustg",
+      "shortDefinition": "WUStG steht für Wirkungsumsatzsteuergesetz, den Entwurf für produkt- und leistungsbezogene Wirkungsrückkopplung.",
+      "longDefinition": "Das WUStG beschreibt, wie Produkt- und Leistungswirkung über Umsatzsteuerlogiken differenziert werden könnte.",
+      "synonyms": [
+        "Wirkungsumsatzsteuergesetz"
+      ],
+      "relatedTerms": [
+        "wirkungsumsatzsteuer",
+        "wirkungssteuer",
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedMethods": [
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        [
+          "Methodenlandkarte",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "führender-begriff",
+      "version": "1.0"
+    }
+  ]
+}

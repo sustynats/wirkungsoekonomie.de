@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260525-result-interpretation";
-const JS_VERSION = "20260529-glossary-hover-audit";
+const JS_VERSION = "20260525-cta-cleanup";
 
 const impactDownloads = [
   { label: "Konzeptpapier Word", href: "assets/downloads/woek_impact_controlling_konzeptpapier_v0_1.docx", required: true },
@@ -302,7 +302,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
+    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
     ${extraScript ? `<script src="${base}${extraScript}"></script>` : ""}
   </body>
 </html>

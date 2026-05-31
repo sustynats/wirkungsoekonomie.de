@@ -225,7 +225,7 @@ def clean_text(value: str) -> str:
 
 def sanitize_markdown(text: str) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
-    text = text.replace("-", "-").replace("—", "-")
+    text = text.replace("–", "-").replace("—", "-")
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
     lines = text.split("\n")
     out: list[str] = []
@@ -488,7 +488,7 @@ def write_minimal_docx(path: Path, text: str) -> None:
 
 def pdf_safe(text: str) -> str:
     repl = {
-        "-": "-",
+        "–": "-",
         "—": "-",
         "„": '"',
         "“": '"',
@@ -710,7 +710,7 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
       <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Downloadbereich Rang 19</h2></div>{download_table(entries, prefix)}</section>
     </main>
     <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Rang 19</h2><div><a href="{href(prefix, PORTAL_REL + '/')}">Internationale Ordnung</a><a href="{href(prefix, PORTAL_REL + '/downloads/')}">Downloads</a><a href="{href(prefix, PORTAL_REL + '/toolkarten/')}">Toolkarten</a></div></div><div class="footer-nav-group"><h2>Referenz</h2><div><a href="{href(prefix, 'verstehen/sdgs-sdgplus/')}">SDG-/SDG+-Referenzrahmen</a><a href="{href(prefix, 'glossar.html')}">Glossar</a><a href="{href(prefix, 'referenz/')}">Online-Buch</a></div></div></div></footer>
-    <script src="{href(prefix, 'assets/js/main.js?v=20260529-glossary-hover-audit')}"></script>
+    <script src="{href(prefix, 'assets/js/main.js?v=20260525-ux-finish')}"></script>
   </body>
 </html>"""
     (path / "index.html").write_text(html_doc, encoding="utf-8")

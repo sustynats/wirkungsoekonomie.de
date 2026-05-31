@@ -1,6 +1,6 @@
 # Phase 1 UX Completion Report
 
-Stand: 2026-05-30
+Stand: 2026-05-31
 
 ## Corporate Design
 
@@ -70,7 +70,7 @@ Prioritäre Arbeitspapiere erscheinen als gestaltete Webdokumente mit Dokument-H
 
 ## Glossar-Hovers
 
-Die bestehenden Glossar-Hovers aus `assets/js/main.js?v=20260529-glossary-hover-audit` werden auf Referenz- und Dokumentseiten geladen. Zentrale Begriffe werden clientseitig kontrolliert beim ersten Vorkommen verlinkt; mobile Nutzung öffnet ein Sheet.
+Die bestehenden Glossar-Hovers aus `assets/js/main.js` werden auf Referenz- und Dokumentseiten geladen. Zentrale Begriffe werden clientseitig kontrolliert beim ersten Vorkommen verlinkt; mobile Nutzung öffnet ein Sheet.
 
 ## Quellenkarten
 

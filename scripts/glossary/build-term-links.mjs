@@ -12,6 +12,11 @@ for (const term of data.terms) {
     category: term.category || "",
     synonyms: term.synonyms || [],
     relatedTerms: term.relatedTerms || [],
+    relatedMethods: term.relatedMethods || [],
+    relatedImpactFields: term.relatedImpactFields || [],
+    relatedDemos: term.relatedDemos || [],
+    relatedDocuments: term.relatedDocuments || [],
+    relatedObjections: term.relatedObjections || [],
   };
 }
 fs.writeFileSync("public/data/glossary-term-links.json", `${JSON.stringify({ generatedAt: new Date().toISOString(), links }, null, 2)}\n`);

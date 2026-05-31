@@ -949,104 +949,6 @@ const riskScenarios = {
   }
 };
 
-const riskFieldInfo = {
-  geopolitics: {
-    label: "Geopolitik",
-    meaning: "Abhängigkeiten und politische Spannungen werden direkt für Einkauf, Transport und Absatz relevant.",
-    low: "Geopolitik ist derzeit kein Haupttreiber.",
-    medium: "Geopolitik erhöht Planungsunsicherheit.",
-    high: "Geopolitik kann Lieferketten und Märkte abrupt verschieben."
-  },
-  energy: {
-    label: "Energie und Ressourcen",
-    meaning: "Energie, Rohstoffe, Wasser und Transportkosten bestimmen, wie stabil Wertschöpfung überhaupt bleibt.",
-    low: "Energie und Material wirken relativ stabil.",
-    medium: "Energie- und Ressourcenstress drückt auf Kosten und Margen.",
-    high: "Energie- und Ressourcenstress ist ein zentraler Risikotreiber."
-  },
-  climate: {
-    label: "Klima und Extremwetter",
-    meaning: "Physische Klimarisiken treffen Standorte, Logistik, Versicherungen und Verfügbarkeit.",
-    low: "Klima wirkt im Szenario noch begrenzt.",
-    medium: "Klima- und Wetterrisiken können Ausfälle wahrscheinlicher machen.",
-    high: "Klima- und Extremwetterrisiken können operative Stabilität gefährden."
-  },
-  social: {
-    label: "Arbeit und Menschenrechte",
-    meaning: "Arbeitsbedingungen und Rechte entscheiden über Lieferfähigkeit, Reputation und regulatorische Anschlussfähigkeit.",
-    low: "Sozialer Druck ist im Szenario begrenzt.",
-    medium: "Arbeits- und Menschenrechtsfragen werden prüf- und kostenrelevant.",
-    high: "Sozialer Druck kann Lieferanten, Reputation und Finanzierung belasten."
-  },
-  transparency: {
-    label: "Transparenz",
-    meaning: "Transparenz senkt Unsicherheit: Wer Abhängigkeiten kennt, kann früher umbauen.",
-    low: "Schwache Daten machen Risiken spät sichtbar.",
-    medium: "Teiltransparenz hilft, reicht aber für Frühwarnung nur begrenzt.",
-    high: "Gute Daten schaffen Frühwarnung und bessere Finanzierungsargumente."
-  },
-  timing: {
-    label: "Timing",
-    meaning: "Frühes Handeln hält Optionen offen. Spätes Handeln verschiebt Entscheidungen in den Krisenmodus.",
-    low: "Entscheidungen kommen sehr spät; Optionen sind enger.",
-    medium: "Es gibt noch Spielraum, aber Kosten und Konflikte steigen.",
-    high: "Frühes Handeln hält Lieferanten, Kapital und Maßnahmen gestaltbar."
-  }
-};
-
-function riskLevel(key, value) {
-  if (key === "transparency") {
-    if (value >= 68) return "stark";
-    if (value >= 42) return "teilweise";
-    return "schwach";
-  }
-  if (key === "timing") {
-    if (value >= 68) return "früh";
-    if (value >= 42) return "noch steuerbar";
-    return "spät";
-  }
-  if (value >= 68) return "hoch";
-  if (value >= 42) return "erhöht";
-  return "niedrig";
-}
-
-function riskHint(key, value) {
-  const info = riskFieldInfo[key];
-  if (!info) return "";
-  if (key === "transparency" || key === "timing") {
-    const text = value >= 68 ? info.high : value >= 42 ? info.medium : info.low;
-    return `${text} ${info.meaning}`;
-  }
-  const text = value >= 68 ? info.high : value >= 42 ? info.medium : info.low;
-  return `${text} ${info.meaning}`;
-}
-
-function strongestRiskDriver(values) {
-  const weighted = [
-    ["Energie- und Ressourcenstress", values.energy * 0.28, "senkt Marge, erhöht Kosten und macht Abhängigkeiten schneller sichtbar."],
-    ["Klima- und Extremwetterrisiko", values.climate * 0.24, "erhöht Ausfall-, Versicherungs- und Standortdruck."],
-    ["Geopolitische Instabilität", values.geopolitics * 0.22, "belastet Beschaffung, Transport und Marktzugang."],
-    ["Arbeits- und Menschenrechtsdruck", values.social * 0.16, "wird über Lieferanten, Audits, Reputation und Recht relevant."]
-  ].sort((a, b) => b[1] - a[1]);
-  return { label: weighted[0][0], reason: weighted[0][2] };
-}
-
-function nextRiskAction(values, weakestRisk, decisionRoom) {
-  if (values.transparency < 55) {
-    return "Zuerst Lieferanten-, Standort-, Material- und Energiedaten verbessern. Ohne Transparenz bleibt das Risiko abstrakt und wird zu spät entscheidbar.";
-  }
-  if (values.timing < 55) {
-    return "Entscheidungen vorziehen: Alternativlieferanten, Energieabsicherung, Materialwechsel und Versicherbarkeit prüfen, bevor Preise oder Ausfälle dazu zwingen.";
-  }
-  if (weakestRisk === "Finanzierungsdruck") {
-    return "Finanzierungsargumente stärken: Risikodaten, Reduktionspfade und belastbare Szenarien machen Kapitalzugang plausibler.";
-  }
-  if (decisionRoom < 42) {
-    return "Krisenmodus reduzieren: kurzfristig Lieferfähigkeit sichern, parallel die größten Abhängigkeiten abbauen.";
-  }
-  return "Die größte Wirkung entsteht jetzt durch konkrete Resilienzmaßnahmen: kritische Lieferanten entwickeln, Materialabhängigkeiten senken und Frühwarnindikatoren regelmäßig prüfen.";
-}
-
 const everydayExamples = [
   ["Apfel regional vs. Import", "Regional kann Transportwirkung senken, Import kann saisonal sinnvoll sein. Entscheidend sind Lagerung, Anbau, Wasser, Arbeit und Verluste.", "Preis würde Herkunft, Saison und Lagerenergie abbilden."],
   ["T-Shirt Fast Fashion vs. Fair Fashion", "Fast Fashion ist billig im Regal, aber teuer in Wasser, Arbeit, Chemie, Klima und Abfall.", "Steuern und Kapital würden langlebige, faire Lieferketten bevorzugen."],
@@ -1546,38 +1448,25 @@ function initRiskLab() {
       ["Finanzierungsdruck", 100 - financeCost],
       ["Lieferkettenresilienz", resilience]
     ].sort((a, b) => a[1] - b[1])[0][0];
-    const driver = strongestRiskDriver(values);
-    const stressAverage = Math.round((values.geopolitics + values.energy + values.climate + values.social) / 4);
 
     root.querySelector("[data-risk-title]").textContent = scenario.title;
     root.querySelector("[data-risk-score]").textContent = `${systemRisk} / 100`;
     root.querySelector("[data-risk-weakest]").textContent = weakestRisk;
     root.querySelector("[data-risk-finance]").textContent = financeLabel;
     root.querySelector("[data-risk-resilience]").textContent = resilienceLabel;
-    root.querySelector("[data-risk-explanation]").textContent = `${scenario.explanation} In diesem Szenario liegt der durchschnittliche Stress bei ${stressAverage} / 100. Das Modell senkt Risiko, wenn Transparenz und frühes Handeln steigen.`;
-    root.querySelector("[data-risk-feedback]").textContent = `${stage}: ${decisionRoom >= 68 ? "frühe Transparenz hält Optionen offen und kann Finanzierungskosten senken." : decisionRoom >= 42 ? "Entscheidungen bleiben möglich, werden aber teurer und konfliktanfälliger." : "Notlösungen dominieren, Lieferfähigkeit und Marge geraten unter Druck."} Systemrisiko bedeutet hier: Wie stark externe Wirkungen auf Kosten, Lieferfähigkeit, Versicherung und Finanzierung zurückschlagen können.`;
-    root.querySelector("[data-risk-driver]").textContent = `${driver.label} treibt das Ergebnis am stärksten, weil ${driver.reason} Transparenz (${values.transparency} / 100) und Timing (${values.timing} / 100) entscheiden, ob daraus Frühwarnung oder Reparaturdruck wird.`;
-    root.querySelector("[data-risk-action]").textContent = nextRiskAction(values, weakestRisk, decisionRoom);
-    inputs.forEach((input) => {
-      const key = input.name;
-      const output = root.querySelector(`[data-risk-value="${key}"]`);
-      const hint = root.querySelector(`[data-risk-hint="${key}"]`);
-      if (output) output.textContent = `${values[key]} · ${riskLevel(key, values[key])}`;
-      if (hint) hint.textContent = riskHint(key, values[key]);
-      input.style.setProperty("--range-value", `${values[key]}%`);
-    });
+    root.querySelector("[data-risk-explanation]").textContent = scenario.explanation;
+    root.querySelector("[data-risk-feedback]").textContent = `${stage}: ${decisionRoom >= 68 ? "frühe Transparenz hält Optionen offen und kann Finanzierungskosten senken." : decisionRoom >= 42 ? "Entscheidungen bleiben möglich, werden aber teurer und konfliktanfälliger." : "Notlösungen dominieren, Lieferfähigkeit und Marge geraten unter Druck."}`;
     root.querySelector("[data-risk-bars]").innerHTML = [
-      ["Systemrisiko", systemRisk, "Je höher, desto stärker schlagen physische und soziale Risiken auf das Unternehmen zurück."],
-      ["Handlungsspielraum", decisionRoom, "Je höher, desto mehr Optionen bleiben vor Krisendruck erhalten."],
-      ["Finanzierungsdruck", financeCost, "Je höher, desto stärker können Risikoaufschläge, Prüfpflichten oder Kapitalzurückhaltung werden."],
-      ["Lieferkettenresilienz", resilience, "Je höher, desto besser kann die Lieferkette Schocks abfedern."],
-      ["Datentransparenz", values.transparency, "Zeigt, wie gut Risiken überhaupt früh erkannt werden."],
-      ["Timing-Vorteil", values.timing, "Zeigt, ob Entscheidungen vorausschauend oder erst unter Druck getroffen werden."]
-    ].map(([label, value, note]) => `
+      ["Systemrisiko", systemRisk],
+      ["Handlungsspielraum", decisionRoom],
+      ["Finanzierungsdruck", financeCost],
+      ["Lieferkettenresilienz", resilience],
+      ["Datentransparenz", values.transparency],
+      ["Timing-Vorteil", values.timing]
+    ].map(([label, value]) => `
       <div class="radar-axis">
         <span><b>${label}</b><b>${value}</b></span>
         <div class="mini-track"><div class="mini-fill" style="width:${value}%"></div></div>
-        <p>${note}</p>
       </div>
     `).join("");
   }

@@ -1,4 +1,4 @@
-# 31 - Wirkungsfonds als Dacharchitektur
+# 31 – Wirkungsfonds als Dacharchitektur
 
 **Untertitel:** Finanzierbarkeit, Wirkungsdividende, Spezialfonds und demokratische Kapitalrückkopplung
 

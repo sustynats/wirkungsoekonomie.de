@@ -1,13 +1,13 @@
 # Corporate-Design-Integration der WÖk-Referenz
 
-Stand: 2026-05-30
+Stand: 2026-05-31
 
 ## Bestehende CSS- und Designbasis
 
 - Hauptdatei: `assets/css/style.css`
 - Navigation: `assets/data/navigation.json`, `templates/header.html`, `templates/footer.html`
 - Bestehende Suche: `assets/search/search-index.json`, `assets/js/search.js`, ergänzt über `tools/build_search_index.py` und `scripts/search/build-woek-search-index.mjs`
-- Bestehende Interaktion: `assets/js/main.js?v=20260529-glossary-hover-audit` für Navigation, Glossar-Hovers und Seitengrundlogik
+- Bestehende Interaktion: `assets/js/main.js` für Navigation, Glossar-Hovers und Seitengrundlogik
 
 ## Farben
 

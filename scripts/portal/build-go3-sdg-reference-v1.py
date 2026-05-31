@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://wirkungsoekonomie.de"
 DATE = "2026-05-24"
 CSS_VERSION = "20260524-go3-sdg-v1"
-JS_VERSION = "20260529-glossary-hover-audit"
+JS_VERSION = "20260523-nachhaltigkeit"
 SOURCE = ROOT / "docs/go3-sdg-referenzrahmen-v1/source"
 WORD = SOURCE / "word"
 MATRIX_JSON = ROOT / "data/sdg_unterziele_global_europa_deutschland_matrix_v1_0.json"
@@ -400,7 +400,7 @@ def page_template(doc: dict, body: str) -> str:
     <footer class="site-footer">
       <p>© Wirkungsökonomie · Online-Volltext ist Hauptzugang, Downloads sind Export und Archiv.</p>
     </footer>
-    <script src="{base}assets/js/main.js?v=20260529-glossary-hover-audit" defer></script>
+    <script src="{base}assets/js/main.js?v={JS_VERSION}" defer></script>
   </body>
 </html>
 """

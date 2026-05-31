@@ -8,7 +8,7 @@ Wirkung als Rechtsprinzip bedeutet nicht, den Rechtsstaat durch Daten oder Score
 
 ## Warum dieser Bereich notwendig ist
 
-Das heutige Recht erkennt Wirkung oft erst spät: als Schaden, Haftung, Gefährdung, Berichtspflicht oder Förderbedingung. Die Wirkungsökonomie erweitert diese Ordnung um eine Frage: Welche Zustände verändert eine Handlung, ein Gesetz, ein Haushalt, ein Produkt oder ein politisches Programm - und wie kehrt diese Wirkung in Entscheidungen zurück?
+Das heutige Recht erkennt Wirkung oft erst spät: als Schaden, Haftung, Gefährdung, Berichtspflicht oder Förderbedingung. Die Wirkungsökonomie erweitert diese Ordnung um eine Frage: Welche Zustände verändert eine Handlung, ein Gesetz, ein Haushalt, ein Produkt oder ein politisches Programm – und wie kehrt diese Wirkung in Entscheidungen zurück?
 
 ## Zentrale Konzepte
 
@@ -22,7 +22,7 @@ Das WStG ist das Rahmengesetz. Es verankert Wirkung auf Mensch, Planet und Demok
 Produkte und Dienstleistungen werden nach ihrer gemessenen Wirkung entlastet oder belastet. Der Preis wird zum Rückkopplungssignal.
 
 ### Wirkungseinkommensteuer WEstG
-Einkommen wird nicht nur nach Höhe, sondern im Kontext seiner Wirkung betrachtet - ohne Personen zu bewerten.
+Einkommen wird nicht nur nach Höhe, sondern im Kontext seiner Wirkung betrachtet – ohne Personen zu bewerten.
 
 ### Wirkungshaushalt
 Öffentliche Mittel werden nicht nur nach Mittelabfluss betrachtet, sondern danach, welche Zustände sie verbessern, stabilisieren oder verhindern.
@@ -97,16 +97,16 @@ Relevante SDG+-Dimensionen: Demokratie, Rechtsstaatlichkeit, Medienqualität, Di
 
 ## Anker im Online-Buch
 
-- Kapitel 36 - Wirkung als Rechtsprinzip
-- Kapitel 37 - Das Wirkungssteuergesetz WStG
-- Kapitel 38 - Das WUStG und die Produktwirkungssteuer
-- Kapitel 39 - Wirkungshaushalt und öffentliche Mittel
-- Kapitel 40 - Der Wirkungsrat
-- Kapitel 41 - Verwaltung, Rechtsschutz und Körperschaftslogik
-- Kapitel 61 - Politik als Wirkungsraum
-- Kapitel 62 - Parteien und Programme
-- Kapitel 63 - Lobbyismus und Machtkonzentration
-- Kapitel 64 - Verwaltung und Bürgerbeteiligung
+- Kapitel 36 – Wirkung als Rechtsprinzip
+- Kapitel 37 – Das Wirkungssteuergesetz WStG
+- Kapitel 38 – Das WUStG und die Produktwirkungssteuer
+- Kapitel 39 – Wirkungshaushalt und öffentliche Mittel
+- Kapitel 40 – Der Wirkungsrat
+- Kapitel 41 – Verwaltung, Rechtsschutz und Körperschaftslogik
+- Kapitel 61 – Politik als Wirkungsraum
+- Kapitel 62 – Parteien und Programme
+- Kapitel 63 – Lobbyismus und Machtkonzentration
+- Kapitel 64 – Verwaltung und Bürgerbeteiligung
 
 ## Dossier & Export
 

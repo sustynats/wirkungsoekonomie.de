@@ -1,12 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { StatusBadge } from "../lib/governance-components.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-05-24";
 const CSS_VERSION = "20260524-portal-meta-readable";
-const JS_VERSION = "20260529-glossary-hover-audit";
+const JS_VERSION = "20260523-nachhaltigkeit";
 const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
 const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
 const SCHOOL_MD = "docs/bildung/Wirkungsschule_Fassung_v0_1.md";
@@ -106,7 +107,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
       <p class="print-meta">Wirkungsökonomie · ${title.replace(/\s+\|.*$/, "")} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
+    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
   </body>
 </html>
 `;
@@ -449,7 +450,12 @@ const fields = [
     concepts: ["Öffentlichkeit als Wirkungsraum", "Medienqualität", "Plattformlogik", "Desinformation"],
     actors: ["Bürger:innen", "Journalismus", "Plattformen", "Politik", "Wissenschaft"],
     demos: [{ label: "Medienwirkung erleben", href: "erleben.html#medienwirkung" }, { label: "Wirkung politischer Sprache", href: "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html" }],
-    docs: [{ label: "Medien und Wirkung", href: "assets/pdf/medien-und-wirkung.pdf" }, { label: "Dossier Medien und Demokratie", href: "blog/dossiers/medien-demokratie.html" }],
+    docs: [
+      { label: "Wirkungsräume gestalten", href: "wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/" },
+      { label: "Wirkungsräume gestalten Word", href: "assets/downloads/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx" },
+      { label: "Medien und Wirkung", href: "assets/pdf/medien-und-wirkung.pdf" },
+      { label: "Dossier Medien und Demokratie", href: "blog/dossiers/medien-demokratie.html" },
+    ],
     anchors: [{ label: "Öffentlichkeit als Wirkungsraum", href: "referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/" }, { label: "Plattformlogik und Algorithmen", href: "referenz/kapitel-075-plattformlogik-und-algorithmen/" }, { label: "Diskurskultur", href: "referenz/kapitel-079-diskurskultur/" }],
   },
   {
@@ -863,41 +869,170 @@ const tools = [
   ["wirkungsportfolio", "Wirkungsportfolio", "Bewertungs- und Entwicklungsinstrument für Bildung, Organisationen oder Projekte, das Lernfortschritt, Verantwortung, Wirkungskompetenz und Reflexion sichtbar macht.", ["Bildung", "Wirtschaft & Unternehmen"], "wirkungsfelder/bildung/"],
 ].map(([slug, title, text, fieldNames, anchor]) => ({ slug, title, text, fieldNames, anchor }));
 
+const methodClusters = [
+  ["A", "Grundlagen der Bewertung", "Begriffe, Referenzrahmen, Schutzregeln und Bewertungsarchitektur."],
+  ["B", "Messen & Bewerten", "Rechner, Scorecards, Indizes, Checks und operative Bewertung."],
+  ["C", "Daten & Infrastruktur", "Datenqualität, Produktpässe, Datenräume, IDs, Register und Reifegrade."],
+  ["D", "Rückkopplung & Steuerung", "Steuer-, Haushalts-, Fonds-, Governance- und öffentliche Steuerungslogiken."],
+  ["E", "Kapital & Finanzierung", "Kapitalwirkung, Kredit, Portfolio, Versicherung, Dividende und Finanzierungsinstrumente."],
+  ["F", "Kommunikation & Demokratie", "Medien, Sprache, Plattformen, Diskurs, Desinformation und demokratische Resilienz."],
+].map(([key, title, text]) => ({ key, title, text }));
+
+const methodMapTools = [
+  ["Impact Controlling", "Dachmethode, die Wirkung in Steuerung, Controlling, Reporting, Risiko, Investition und Entscheidung übersetzt.", "A", "Methodik", "werkzeuge/impact-controlling/", ["T-SROI", "Scorecards", "KII statt KPI"]],
+  ["T-SROI", "Transformationswirkung und Systemhebel im Verhältnis zum Ressourceneinsatz bewerten; nicht die operative Netto-Wirkungskennzahl.", "A", "Methodik", "werkzeuge/t-sroi/", ["Impact Controlling", "Wirkungsfonds", "Transformationswirkung"]],
+  ["Benchmarks & Archetypen", "Branchen-, Produkt- und Organisationstypen in nachvollziehbare Bewertungsräume übersetzen.", "A", "Methodik", "werkzeuge/benchmarks-archetypen/", ["Scorecards", "WÖk-IDs", "Wirkungsrat"]],
+  ["Reverse Merit Order", "Schutzregel: schwere negative Wirkung wird nicht durch positive Einzelwerte kompensiert.", "A", "Methodik", "werkzeuge/reverse-merit-order/", ["Scorecards", "Wirkungsrat", "Wirkungsumsatzsteuer"], "Rote Linien nicht kompensieren."],
+  ["Wirkungsrat", "Institution zur Pflege von WÖk-IDs, Benchmarks, Archetypen, Evaluation und Missbrauchsschutz.", "A", "Methodik", "werkzeuge/wirkungsrat/", ["Wirkungsregister", "Wirkungsaudit", "Benchmarks & Archetypen"]],
+  ["Netto-Wirkungs-Index", "Operative Netto-Wirkungskennzahl zur Einordnung positiver, negativer und neutraler Wirkung im WÖk-Rahmen.", "B", "Methodik", "werkzeuge/netto-wirkungs-index/", ["Scorecards", "WÖk-IDs", "T-SROI"]],
+  ["Scorecards", "Zustandsveränderungen, Nebenwirkungen, Datenqualität und Zielkonflikte entscheidungsfähig machen.", "B", "Methodik", "werkzeuge/scorecards/", ["NWI", "Benchmarks & Archetypen", "Reverse Merit Order"]],
+  ["Produktscorecards", "Produkt-, Lieferketten- und Benchmarkdaten in Scores, Datenqualität und FinalScore übersetzen.", "B", "Methodik", "werkzeuge/produktscorecards/", ["Wirkungsumsatzsteuer", "Digitale Produktpässe", "Produktwirkungsrechner"]],
+  ["KII statt KPI", "Klassische KPIs um Zustandsveränderungen, Nebenwirkungen und Rückkopplungen ergänzen.", "B", "Methodik", "werkzeuge/kii-statt-kpi/", ["Impact Controlling", "Unternehmens-Wirkungscheck", "Wirkungsrisiko-Matrix"]],
+  ["Wirkungsrisiko-Matrix", "Risiken nach Eintritt, Verwundbarkeit, Folgewirkung, Nichtkompensation und demokratischer Korrekturfähigkeit ordnen.", "B", "Methodik", "werkzeuge/wirkungsrisiko-matrix/", ["Hybrid-Risk-Radar", "KI-Wirkungsrisiko-Check", "Resilienz-Radar Kommune"]],
+  ["Produktwirkungsrechner", "Modellhafte Demo für FinalScore, Wirkungssteuersatz und Bruttopreis.", "B", "Demo", "erleben/produktwirkungsrechner/", ["Produktscorecards", "Wirkungsumsatzsteuer", "Reverse Merit Order"], "Modellhaft, nicht amtlich, keine Beratung."],
+  ["Scorecard-Dashboard", "Interaktive Scorecard-Demo für Bewertungslogik, Dimensionen und Ergebnisdarstellung.", "B", "Demo", "scorecard-dashboard.html", ["Scorecards", "NWI", "Produktscorecards"], "Modellhaft, keine amtliche Bewertung."],
+  ["WÖk-Scanner", "Strukturierter Einstieg für Produkte, Unternehmen, Aussagen oder Wirkungspfade.", "B", "Demo", "anwendungen/scanner.html", ["Produktwirkungsrechner", "Medienwirkungscheck", "Unternehmens-Wirkungscheck"], "Modellhaft, keine Beratung und keine automatische Entscheidung."],
+  ["Impact-Controlling-Rechner", "Einfache Demo für Scorecard, Netto-Wirkungs-Index und T-SROI.", "B", "Demo", "erleben/impact-controlling-rechner/", ["Impact Controlling", "NWI", "T-SROI"], "Modellhaft, keine Prüfung und keine Beratung."],
+  ["Unternehmens-Wirkungscheck", "Prüf- und Lernwerkzeug für Unternehmenswirkung, Risiko, Lieferketten, KII und Transformation.", "B", "Demo", "werkzeuge/unternehmens-wirkungscheck/", ["Impact Controlling", "KII statt KPI", "ESG-zu-WÖk-Mapping"], "Keine Unternehmens- oder Personenbewertung."],
+  ["Wohnwirkungsrechner WIX-Wohn", "Modellhafte Demo für Mietbelastung, Energie, Gebäudescore, Sozialraum und WIX-Wohn.", "B", "Demo", "erleben/wohnwirkungsrechner/", ["Sozialraum-Resilienzprofil", "Wirkungshaushalt", "Versicherbarkeits-/Resilienzcheck"], "Modellhaft, keine Rechts- oder Förderberatung."],
+  ["Stranded-Asset-Check Wohnen", "Ergänzende Wohn-Demo für Sanierungsdruck, Risiko und Wertstabilität.", "B", "Demo", "erleben/wohnwirkungsrechner/stranded-asset-check/", ["Wohnwirkungsrechner WIX-Wohn", "Versicherbarkeits-/Resilienzcheck", "Wirkungsrisiko-Matrix"], "Modellhaft, keine Anlage- oder Immobilienberatung."],
+  ["Vermieter-Check", "Ergänzende Wohn-Demo für Vermietung, Bezahlbarkeit, Sanierung und Quartierswirkung.", "B", "Demo", "erleben/wohnwirkungsrechner/vermieter-check/", ["Wohnwirkungsrechner WIX-Wohn", "Sozialraum-Resilienzprofil", "Wirkungshaushalt"], "Modellhaft, keine Rechts- oder Steuerberatung."],
+  ["Wirkungsschule-Check", "Schulentwicklung wirkungsorientiert prüfen: Kompetenzen, Förderung, Räume, Demokratiepraxis und Datenethik.", "B", "Demo", "erleben/wirkungsschule-check/", ["Bildungswirkungsindex", "Schulraum-Wirkungscheck", "Wirkungsportfolio"], "Keine Bewertung von Kindern oder Lehrkräften."],
+  ["Wirkungsförderungs-Check", "Präventive Förderung, Potenzialförderung, Mentoring und Teilhabe würdig strukturieren.", "B", "Demo", "erleben/wirkungsfoerderungs-check/", ["Wirkungsschule-Check", "Wirkungsportfolio", "Zugehörigkeits- und Teilgabeindex"], "Keine Personenbewertung."],
+  ["Fach-Zukunft-Modulgenerator", "Fächer, lokale Fragen, SDGs/SDG+ und Ergebnisformate zu einem Lernfeld Zukunft verbinden.", "B", "Demo", "erleben/fach-zukunft-generator/", ["Wirkungsschule-Check", "Wirkungsportfolio", "Open-Science-Check"]],
+  ["Wirkungsportfolio-Generator", "Lernwege, Projektarbeit, Feedback und Reflexion strukturieren, ohne Kinder zu ranken.", "B", "Demo", "erleben/wirkungsportfolio-generator/", ["Wirkungsportfolio", "Bildungswirkungsindex", "Wirkungsförderungs-Check"], "Keine Ranglisten, keine Personenbewertung."],
+  ["Wirkungsportfolio", "Bewertungs- und Entwicklungsinstrument für Bildung, Organisationen oder Projekte.", "B", "Methodik", "werkzeuge/wirkungsportfolio/", ["Wirkungsportfolio-Generator", "Wirkungsschule-Check", "Scorecards"]],
+  ["Bildungswirkungsindex / BWK", "Bildungswirkung auf Wissen, Selbstwirksamkeit, Demokratie, Gesundheit, Teilhabe und Resilienz strukturieren.", "B", "Methodik", "werkzeuge/bildungswirkungsindex-bwk/", ["Wirkungsschule-Check", "Schulraum-Wirkungscheck", "Wirkungsportfolio"], "Keine Bewertung einzelner Schüler:innen."],
+  ["Schulraum-Wirkungscheck", "Räume, Zeit, Bewegung, Ernährung, Hitzeschutz, Barrierefreiheit und Sicherheit als Bildungswirkung prüfen.", "B", "Methodik", "werkzeuge/schulraum-wirkungscheck/", ["Bildungswirkungsindex", "Wirkungsschule-Check", "Sozialraum-Resilienzprofil"]],
+  ["Forschungs-Wirkungscheck", "Forschung nach Mission, Integrität, Transfer, Replikation und Wirkungsbeitrag strukturieren.", "B", "Demo", "werkzeuge/forschungs-wirkungscheck/", ["Open-Science-Check", "Innovations-Wirkungsportfolio", "Wissensrat-/Integritätsregister"]],
+  ["Open-Science- und Replikationscheck", "Offenheit, Replizierbarkeit, Datenzugang und wissenschaftliche Integrität prüfen.", "B", "Demo", "werkzeuge/open-science-und-replikationscheck/", ["Forschungs-Wirkungscheck", "Wissensrat-/Integritätsregister", "Datenqualität & Assurance"]],
+  ["WÖk-IDs", "Referenzrahmen, Datenquellen, Einheiten, Schwellen, Versionen und Prüfstatus verbinden.", "C", "Methodik", "werkzeuge/woek-ids/", ["Scorecards", "Datenqualität & Assurance", "Wirkungsdatenräume"]],
+  ["Datenqualität & Assurance", "Datenqualität, Prüfstatus und Assurance sichern, damit Wirkungsdaten belastbar bleiben.", "C", "Methodik", "werkzeuge/datenqualitaet-assurance/", ["WÖk-IDs", "Wirkungsaudit", "Digitale Produktpässe"], "Datenqualität sichtbar machen."],
+  ["Digitale Produktpässe", "Produkt-, Lieferketten- und Prüfdaten als Nachweis- und Lerninfrastruktur vorbereiten.", "C", "In Vorbereitung", "werkzeuge/digitale-produktpaesse/", ["Produktscorecards", "Wirkungsdatenräume", "Datenqualität & Assurance"], "Vorbereitete Methodenseite, keine amtliche Produktklassifikation."],
+  ["Wirkungsdatenräume", "Interoperable Datenräume für Wirkungsdaten, Zugriffsrechte, Versionierung und Prüfbarkeit vorbereiten.", "C", "In Vorbereitung", "werkzeuge/wirkungsdatenraeume/", ["WÖk-IDs", "Digitale Produktpässe", "Datenraum-Reifegradcheck"], "Vorbereitete Methodenseite, keine Datenfreigabeentscheidung."],
+  ["Digitale Produktpässe und Wirkungsdatenräume", "Bestehende gemeinsame Methodenseite für Produkt-, Lieferketten-, Prüf- und Wirkungsinformationen.", "C", "Methodik", "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/", ["Digitale Produktpässe", "Wirkungsdatenräume", "Produktscorecards"]],
+  ["Datenraum-Reifegradcheck", "Reifegrad von Datenräumen für Wirkung, Interoperabilität, Governance und Anschlussfähigkeit prüfen.", "C", "Demo", "werkzeuge/datenraum-reifegradcheck/", ["Wirkungsdatenräume", "WÖk-IDs", "Datenqualität & Assurance"]],
+  ["Digital-Souveränitätscheck", "Digitale Souveränität, Abhängigkeiten, Datenrechte und öffentliche Handlungsfähigkeit prüfen.", "C", "Demo", "werkzeuge/digital-souveraenitaetscheck/", ["Cyberresilienz-Check", "Kritische-Infrastruktur-Monitor", "Wirkungsdatenräume"]],
+  ["Cyberresilienz-Check", "Wiederherstellungsfähigkeit, Datenintegrität, Backups, Incident Response und analoge Rückfallebenen bewerten.", "C", "Methodik", "werkzeuge/cyberresilienz-check/", ["Digital-Souveränitätscheck", "Kritische-Infrastruktur-Monitor", "Hybrid-Risk-Radar"]],
+  ["Kritische-Infrastruktur-Monitor", "Energie, Wasser, Gesundheit, Verwaltung, Daten, Verkehr und Kommunikation nach Ausfallwirkung prüfen.", "C", "Methodik", "werkzeuge/kritische-infrastruktur-monitor/", ["Infrastruktur-Stabilitätsindex", "Cyberresilienz-Check", "Resilienz-Radar Kommune"]],
+  ["Infrastruktur-Stabilitätsindex", "Stabilität, Redundanz, Rückfallebenen, Wartungszustand und Abhängigkeiten kritischer Infrastruktur verdichten.", "C", "Methodik", "werkzeuge/infrastruktur-stabilitaetsindex/", ["Kritische-Infrastruktur-Monitor", "Resilienz-Radar Kommune", "Wirkungshaushalt"]],
+  ["Wirkungsregister", "Öffentlich prüfbares Register für Methodenstände, Indikatoren, Versionen, Audits und Korrekturen vorbereiten.", "C", "In Vorbereitung", "werkzeuge/wirkungsregister/", ["Wirkungsrat", "Wirkungsaudit", "WÖk-IDs"], "Vorbereitete Registerlogik, keine amtliche Entscheidung."],
+  ["Wissensrat-/Integritätsregister", "Wissenschaftliche Integrität, Replikation, Quellenlage und Registerlogik strukturieren.", "C", "Demo", "werkzeuge/wissensrat-integritaetsregister/", ["Open-Science-Check", "Wirkungsregister", "Forschungs-Wirkungscheck"]],
+  ["Wirkungsumsatzsteuer", "Produkt- und Leistungswirkung modellhaft an Steuer- und Preislogik rückkoppeln.", "D", "Methodik", "werkzeuge/wirkungsumsatzsteuer/", ["Produktscorecards", "Reverse Merit Order", "Wirkungssteuergesetz"], "Keine Steuerberatung."],
+  ["Wirkungssteuergesetz WStG", "Wirkung als steuerliche Bemessungs- und Steuerungslogik rahmen.", "D", "Methodik", "werkzeuge/wirkungssteuergesetz/", ["Wirkungsumsatzsteuer", "Wirkungseinkommensteuer", "Wirkungshaushalt"], "Keine Rechts- oder Steuerberatung."],
+  ["Wirkungseinkommensteuer", "Einkommen nach Höhe, Entstehungskontext und Wirkung bewerten.", "D", "Methodik", "werkzeuge/wirkungseinkommensteuer/", ["Maschinenwertschöpfungsbeitrag", "Automatisierungsdividende", "Wirkungsfonds"], "Keine Steuerberatung."],
+  ["Wirkungshaushalt", "Öffentliche Mittel nach Prävention, Resilienz, Zielgruppenwirkung und positiver Netto-Wirkung betrachten.", "D", "Methodik", "werkzeuge/wirkungshaushalt/", ["Öffentliche Beschaffung", "Wirkungsregister", "Wirkungsrat"], "Keine Förderentscheidung."],
+  ["Öffentliche Beschaffung", "Beschaffung nach Wirkung, Datenqualität, Rechtsschutz und demokratischer Kontrolle vorbereiten.", "D", "In Vorbereitung", "werkzeuge/oeffentliche-beschaffung/", ["Wirkungshaushalt", "Wirkungsregister", "Datenqualität & Assurance"], "Vorbereitet, keine Vergabe- oder Förderentscheidung."],
+  ["Wirkungsaudit", "Prüfpfade, Datenqualität, rote Linien, Korrekturwege und Assurance als Auditlogik vorbereiten.", "D", "In Vorbereitung", "werkzeuge/wirkungsaudit/", ["Datenqualität & Assurance", "Wirkungsregister", "Wirkungsrat"], "Vorbereitet, keine Zertifizierung."],
+  ["Maschinenwertschöpfungsbeitrag", "Automatisierte Wertschöpfung in soziale Sicherung und Wirkungsfonds rückkoppeln.", "D", "Methodik", "werkzeuge/maschinenwertschoepfungsbeitrag/", ["Automatisierungsdividende", "Wirkungseinkommensteuer", "Wirkungsfonds"]],
+  ["Automatisierungsdividende", "Produktivitätsgewinne in Grundsicherheit, Weiterbildung, Wirkungsfonds und Transformationsschutz verteilen.", "D", "Methodik", "werkzeuge/automatisierungsdividende/", ["Maschinenwertschöpfungsbeitrag", "Wirkungsfonds", "Wirkungsrenten-Rechner"]],
+  ["Automatisierungsdividenden-Rechner", "Modellhafte Rechnerseite für Automatisierungsdividende, Finanzsystem und Kapital.", "D", "Demo", "werkzeuge/automatisierungsdividenden-rechner/", ["Automatisierungsdividende", "Wirkungsfonds", "Maschinenwertschöpfungsbeitrag"], "Modellhaft, keine Anlage- oder Förderberatung."],
+  ["Automatisierungs- und Wirkungseinkommensrechner", "Modellhafte Demo zu Beitragslücke, Maschinenwertschöpfungsbeitrag, Transformationsbonus und Wirkungseinkommen.", "D", "Demo", "erleben/automatisierungs-wirkungseinkommensrechner/", ["Automatisierungsdividende", "Wirkungseinkommensteuer", "Wirkungsfonds"], "Modellhaft, keine Sozial- oder Steuerberatung."],
+  ["Wirkungsrenten-Rechner", "Modellhafte Demo zu Basisrente, Lebenswirkungs-Faktor, Wirkungsdividende und Fondsanteil.", "D", "Demo", "erleben/wirkungsrenten-rechner/", ["Wirkungsfonds", "Automatisierungsdividende", "Wirkungseinkommensteuer"], "Modellhaft, keine Renten- oder Anlageberatung."],
+  ["Resilienz-Radar Kommune", "Kommunales Lagebild aus Risiko-, Infrastruktur-, Klima-, Sozialraum-, Cyber- und Vertrauensdaten.", "D", "Methodik", "werkzeuge/resilienz-radar-kommune/", ["Wirkungshaushalt", "Kritische-Infrastruktur-Monitor", "Sozialraum-Resilienzprofil"]],
+  ["Sozialraum-Resilienzprofil", "Lokale Resilienz in Quartieren: Anlaufstellen, Nachbarschaft, Gesundheit, Pflege, Hitze, Wasser und Teilhabe.", "D", "Methodik", "werkzeuge/sozialraum-resilienzprofil/", ["Wohnwirkungsrechner", "Resilienz-Radar Kommune", "Wirkungshaushalt"]],
+  ["Zugehörigkeits- und Teilgabeindex", "Zugangs- und Mitgestaltungschancen in lokalen Resonanzräumen sichtbar machen.", "D", "Methodik", "werkzeuge/zugehoerigkeits-und-teilgabeindex/", ["Sozialraum-Resilienzprofil", "Integrations-Infrastruktur-Score", "Wirkungsförderungs-Check"], "Keine Bewertung einzelner Personen."],
+  ["Integrations-Infrastruktur-Score", "Sprache, Bildung, Verwaltung, Wohnen, Gesundheit, Arbeit und Partizipation als Infrastruktur prüfen.", "D", "Methodik", "werkzeuge/integrations-infrastruktur-score/", ["Sozialraumprofil Migration", "Arbeitsmarkt-Wirkungsmonitor Migration", "Diskursrisiko-Radar Migration"], "Keine Bewertung einzelner Menschen."],
+  ["Kommunale Integrationsarchitektur-Check", "Kommunale Strukturen für Integration, Gemeinwesenarbeit, Konfliktmoderation und Beteiligung prüfen.", "D", "Methodik", "werkzeuge/kommunale-integrationsarchitektur-check/", ["Integrations-Infrastruktur-Score", "Sozialraumprofil Migration", "Resilienz-Radar Kommune"]],
+  ["Sozialraumprofil Migration und Vielfalt", "Kommunale Sozialräume nach Wohnen, Bildung, Gesundheit, Sicherheit, Teilhabe und digitalem Zugang bewerten.", "D", "Methodik", "werkzeuge/sozialraumprofil-migration-vielfalt/", ["Integrations-Infrastruktur-Score", "Kommunale Integrationsarchitektur-Check", "Zugehörigkeits- und Teilgabeindex"], "Keine Personenbewertung."],
+  ["Arbeitsmarkt-Wirkungsmonitor Migration", "Fachkräfteintegration, Anerkennung, faire Arbeit, Ausbeutungsschutz und Ausbildung bewerten.", "D", "Methodik", "werkzeuge/arbeitsmarkt-wirkungsmonitor-migration/", ["Integrations-Infrastruktur-Score", "Diskursrisiko-Radar Migration", "Wirkungseinkommensteuer"]],
+  ["Wirkungsfonds", "Fondsarchitektur für Automatisierungsdividende, Wirkungseinkommen, Bildung, Gesundheit, Wohnen, Rente und Demokratie.", "E", "Methodik", "werkzeuge/wirkungsfonds/", ["Wirkungsfonds-Simulator", "Wirkungskredit-Rechner", "Kapitalwirkungscheck"], "Keine Anlageberatung."],
+  ["Wirkungsfonds-Simulator", "Modellhafte Simulation für Fondsarchitektur, Kapitalwirkung und Rückkopplung.", "E", "Demo", "werkzeuge/wirkungsfonds-simulator/", ["Wirkungsfonds", "Automatisierungsdividende", "Wirkungsrenten-Rechner"], "Modellhaft, keine Anlageberatung."],
+  ["Kapitalwirkungscheck", "Kapitalwirkung, Risiko, Transformationsbeitrag und Wirkungspfad modellhaft prüfen.", "E", "Demo", "werkzeuge/kapitalwirkungscheck/", ["Portfolio-Wirkungsrating", "Wirkungskredit-Rechner", "Wirkungsfonds"], "Keine Anlage- oder Kreditberatung."],
+  ["Portfolio-Wirkungsrating", "Portfolios nach Wirkung, Risiko, Resilienz und Transformationsbeitrag modellhaft einordnen.", "E", "Demo", "werkzeuge/portfolio-wirkungsrating/", ["Kapitalwirkungscheck", "ESG-zu-WÖk-Mapping", "Wirkungsfonds"], "Keine Anlageentscheidung."],
+  ["Wirkungskredit-Rechner", "Wirkung, Risiko und Finanzierungskonditionen modellhaft verbinden.", "E", "Demo", "werkzeuge/wirkungskredit-rechner/", ["Kapitalwirkungscheck", "Wirkungsfonds", "Datenqualität & Assurance"], "Keine Kreditentscheidung."],
+  ["Versicherbarkeits-/Resilienzcheck", "Versicherbarkeit, Resilienz und Risikoreduktion modellhaft prüfen.", "E", "Demo", "werkzeuge/versicherbarkeits-resilienzcheck/", ["Wirkungsrisiko-Matrix", "Kapitalwirkungscheck", "Resilienz-Radar Kommune"], "Keine Versicherungsberatung."],
+  ["ESG-zu-WÖk-Mapping", "ESG-Daten in WÖk-Logik, WÖk-IDs, Scorecards und positive Netto-Wirkung übersetzen.", "E", "Demo", "werkzeuge/esg-zu-woek-mapping/", ["WÖk-IDs", "Scorecards", "Portfolio-Wirkungsrating"]],
+  ["Innovations-Wirkungsportfolio", "Innovationen nach Wirkungsbeitrag, Lernfähigkeit, Risiko und Skalierungslogik ordnen.", "E", "Demo", "werkzeuge/innovations-wirkungsportfolio/", ["Forschungs-Wirkungscheck", "Kapitalwirkungscheck", "T-SROI"]],
+  ["Medienwirkungscheck", "Quellenklarheit, Kontext, Korrekturwege, Manipulationstransparenz und Reichweitenverantwortung prüfen.", "F", "Methodik", "werkzeuge/medienwirkungscheck/", ["Medienwirkungscheck Demo", "Sprach- und Framing-Analyse", "Plattform-Wirkungscheck"], "Keine Personen- oder Gesinnungsbewertung."],
+  ["Medienwirkungscheck Demo", "Modellhafte Demo zum Medienwirkungsindex MWIX und öffentlicher Wirkungsqualität.", "F", "Demo", "erleben/medienwirkungscheck/", ["Medienwirkungscheck", "Sprach- und Framing-Analyse", "Desinformations-Risikocheck"], "Modellhaft, nicht amtlich, keine Personenbewertung."],
+  ["Sprach- und Framing-Analyse", "Sprache, Frames, Tonalität und Diskurswirkung sichtbar machen, ohne Meinungen zu bewerten.", "F", "Methodik", "werkzeuge/sprach-und-framing-analyse/", ["Medienwirkungscheck", "Politische Wirkungsprüfung", "Diskursrisiko-Radar Migration"], "Keine Bewertung von Gesinnungen oder Personen."],
+  ["Plattform-Wirkungscheck", "Empfehlungslogik, Datenzugang, Werbetransparenz, Jugend- und Grundrechtsschutz prüfen.", "F", "Methodik", "werkzeuge/plattform-wirkungscheck/", ["Medienwirkungscheck", "Desinformations-Risikocheck", "Digital-Souveränitätscheck"], "Keine automatische Sperrentscheidung."],
+  ["Desinformations-Risikocheck", "Täuschung, Koordination, KI-Einsatz, Reichweite, Zeitkritik und demokratisches Schadenspotenzial strukturieren.", "F", "Methodik", "werkzeuge/desinformations-risikocheck/", ["Medienwirkungscheck", "Hybrid-Risk-Radar", "Plattform-Wirkungscheck"], "Keine Personenbewertung."],
+  ["Politische Wirkungsprüfung", "Erst-, Zweit- und Drittwirkungen politischer Maßnahmen sichtbar machen, ohne Parteien moralisch zu sortieren.", "F", "Methodik", "werkzeuge/politische-wirkungspruefung/", ["Wirkungshaushalt", "Sprach- und Framing-Analyse", "Wirkungsrat"], "Keine Wahl- oder Parteienbewertung."],
+  ["Diskursrisiko-Radar Migration", "Narrative, Feindseligkeit, Polarisierung, Desinformation und Diskursqualität beobachten.", "F", "Methodik", "werkzeuge/diskursrisiko-radar-migration/", ["Sprach- und Framing-Analyse", "Desinformations-Risikocheck", "Sozialraumprofil Migration"], "Keine Personenbewertung."],
+  ["Hybrid-Risk-Radar", "Kombinierte Wirkungsrisiken aus Desinformation, Cyberangriffen, Sabotage, Polarisierung und wirtschaftlichem Druck erkennen.", "F", "Methodik", "werkzeuge/hybrid-risk-radar/", ["Cyberresilienz-Check", "Desinformations-Risikocheck", "Kritische-Infrastruktur-Monitor"]],
+  ["KI-Wirkungsrisiko-Check", "Algorithmische Verantwortung, Datenqualität, Bias, Erklärbarkeit und gesellschaftliche Folgewirkung prüfen.", "F", "Demo", "werkzeuge/ki-wirkungsrisiko-check/", ["Plattform-Wirkungscheck", "Datenqualität & Assurance", "Digital-Souveränitätscheck"], "Keine automatische Entscheidung."],
+];
+
+const preparedToolPages = methodMapTools.filter((tool) => tool[3] === "In Vorbereitung");
+
+function relatedToolLinks(base, related = []) {
+  const known = new Map(methodMapTools.map(([title, , , , href]) => [title, href]));
+  return related
+    .map((title) => {
+      const target = known.get(title) || known.get(title.replace(/^NWI$/, "Netto-Wirkungs-Index"));
+      return target ? `<a href="${href(base, target)}">${escapeHtml(title)}</a>` : `<span>${escapeHtml(title)}</span>`;
+    })
+    .join("");
+}
+
+function methodToolCard(base, tool) {
+  const [title, text, cluster, status, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht."] = tool;
+  const clusterInfo = methodClusters.find((item) => item.key === cluster);
+  return `<article class="card method-tool-card" data-cluster="${escapeHtml(cluster)}">
+    <div class="method-tool-card-head">
+      <p class="card-kicker">Cluster ${escapeHtml(cluster)} · ${escapeHtml(clusterInfo?.title || "Methoden")}</p>
+      ${StatusBadge(status)}
+    </div>
+    <h3 class="card-title">${escapeHtml(title)}</h3>
+    <p class="card-text">${escapeHtml(text)}</p>
+    <p class="method-tool-notice">${escapeHtml(notice)}</p>
+    <div class="method-related" aria-label="Verwandte Werkzeuge">${relatedToolLinks(base, related)}</div>
+    <div class="portal-card-actions"><a class="text-link" href="${href(base, target)}">Detailseite öffnen</a></div>
+  </article>`;
+}
+
+function methodClusterSection(base, cluster) {
+  const cards = methodMapTools.filter((tool) => tool[2] === cluster.key).map((tool) => methodToolCard(base, tool)).join("");
+  return `<section class="section method-cluster-section" id="cluster-${cluster.key.toLowerCase()}" aria-labelledby="cluster-${cluster.key.toLowerCase()}-title">
+    <div>
+      <div class="section-header">
+        <p class="hero-kicker">Cluster ${escapeHtml(cluster.key)}</p>
+        <h2 id="cluster-${cluster.key.toLowerCase()}-title">${escapeHtml(cluster.title)}</h2>
+        <p>${escapeHtml(cluster.text)}</p>
+      </div>
+      <div class="method-map-grid">${cards}</div>
+    </div>
+  </section>`;
+}
+
 function toolOverview() {
   return page({
     rel: "werkzeuge/index.html",
-    title: "Werkzeuge der Wirkungsökonomie | Wirkung messen, bewerten und rückkoppeln",
+    title: "Methoden & Werkzeuge der Wirkungsökonomie | Methodenlandkarte",
     description:
-      "Methoden und Instrumente der Wirkungsökonomie: Impact Controlling, T-SROI, Scorecards, WÖk-IDs, Wirkungssteuergesetz, Wirkungshaushalt und Wirkungsrat.",
+      "Methodenlandkarte der Wirkungsökonomie: Bewertung, Messung, Daten, Rückkopplung, Kapital, Finanzierung, Kommunikation und Demokratie.",
     searchSection: "Werkzeuge",
-    body: (base) => `<section class="hero">
+    body: (base) => `<section class="hero method-map-hero">
         <div class="hero-grid">
           <div>
-            <p class="hero-kicker">Methoden und Instrumente</p>
-            <h1 class="hero-title">Werkzeuge der Wirkungsökonomie</h1>
-            <p class="hero-subtitle">Methoden, Instrumente und Steuerungslogiken, mit denen Wirkung sichtbar, bewertbar und entscheidungsrelevant wird.</p>
-            <p class="hero-text">Werkzeuge sind nicht die Wirkungsfelder selbst. Sie sind die Methoden und Instrumente, die in mehreren Bereichen eingesetzt werden: in Unternehmen, Politik, Produkten, Bildung, Wohnen, Kapital, Medien oder Verwaltung.</p>
+            <p class="hero-kicker">Methodenlandkarte</p>
+            <h1 class="hero-title">Methoden &amp; Werkzeuge der Wirkungsökonomie</h1>
+            <p class="hero-subtitle">Eine Landkarte der Methoden, Instrumente, Rechner, Mappings und Demos, mit denen Wirkung sichtbar, bewertbar und rückkoppelbar wird.</p>
+            <p class="hero-text">Die Karten zeigen keine amtliche Bewertung. Sie ordnen vorhandene und vorbereitete Werkzeuge nach ihrer Funktion: Grundlagen, Messung, Daten, Steuerung, Finanzierung, Kommunikation und Demokratie.</p>
             ${printActions(base)}
           </div>
           <aside class="card">
             <p class="card-kicker">Abgrenzung</p>
-            <h2 class="card-title">Werkzeuge erklären Methoden. Erleben lässt sie ausprobieren.</h2>
-            <p class="card-text">T-SROI ist ein Werkzeug innerhalb von Impact Controlling, nicht der gesamte Bereich. Das Wirkungssteuergesetz ist ein Rahmeninstrument, kein Wirkungsfeld.</p>
+            <h2 class="card-title">NWI und T-SROI sind bewusst getrennt.</h2>
+            <p class="card-text"><strong>NWI</strong> ist die operative Netto-Wirkungskennzahl. <strong>T-SROI</strong> bewertet Transformationswirkung und Systemhebel. Beide gehören zusammen, ersetzen einander aber nicht.</p>
           </aside>
         </div>
       </section>
-      <section class="section" aria-labelledby="werkzeuge-register">
+      <section class="section" aria-labelledby="method-map-title">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Register</p>
-            <h2 id="werkzeuge-register">Instrumente und Steuerungslogiken</h2>
+            <p class="hero-kicker">Orientierung</p>
+            <h2 id="method-map-title">Sechs Cluster statt Werkzeugliste</h2>
+            <p>Jedes Werkzeug bleibt über seine Detailseite erreichbar. Neue zentrale, aber noch nicht ausgearbeitete Werkzeuge sind als ${StatusBadge("In Vorbereitung")} markiert.</p>
           </div>
-          ${cardGrid(
-            base,
-            tools.map((tool) => ({ title: tool.title, text: tool.text, href: `werkzeuge/${tool.slug}/`, linkLabel: "Werkzeug öffnen" })),
-          )}
+          <nav class="method-cluster-nav" aria-label="Methodencluster">
+            ${methodClusters.map((cluster) => `<a href="#cluster-${cluster.key.toLowerCase()}"><strong>${cluster.key}</strong><span>${escapeHtml(cluster.title)}</span></a>`).join("")}
+          </nav>
         </div>
       </section>
+      ${methodClusters.map((cluster) => methodClusterSection(base, cluster)).join("")}
       ${sdgBlock(base, {
         sdgs: ["Agenda 2030", "SDG 8", "SDG 9", "SDG 12", "SDG 13", "SDG 16", "SDG 17"],
         plus: sdgPlusDefault,
@@ -991,6 +1126,51 @@ function toolPage(tool) {
         { label: "Benchmarks, Skalen und Scorecards", href: "referenz/kapitel-032-benchmarks-skalen-und-scorecards/" },
         bookMain,
       ])}
+      ${exportBlock(base)}`,
+  });
+}
+
+function preparedToolPage(tool) {
+  const [title, text, cluster, status, target, related = [], notice = "Vorbereitete Methodenseite."] = tool;
+  const rel = `${target.replace(/^\/+/, "").replace(/\/?$/, "/")}index.html`;
+  const clusterInfo = methodClusters.find((item) => item.key === cluster);
+  return page({
+    rel,
+    title: `${title} | In Vorbereitung`,
+    description: text,
+    searchSection: "Werkzeuge",
+    searchType: "Werkzeug in Vorbereitung",
+    body: (base) => `<section class="hero">
+        <div class="hero-grid">
+          <div>
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkzeuge/")}">Werkzeuge</a><span aria-hidden="true">/</span><span>${escapeHtml(title)}</span></nav>
+            <p class="hero-kicker">Werkzeug · ${StatusBadge(status)}</p>
+            <h1 class="hero-title">${escapeHtml(title)}</h1>
+            <p class="hero-subtitle">${escapeHtml(text)}</p>
+            <p class="hero-text">Diese Seite ist als Platzhalter vorbereitet, damit die Methodenlandkarte vollständig bleibt. Sie behauptet noch keine fertige Methodik und ersetzt keine fachliche, rechtliche, steuerliche, finanzielle oder amtliche Prüfung.</p>
+            ${printActions(base)}
+          </div>
+          <aside class="card">
+            <p class="card-kicker">Cluster ${escapeHtml(cluster)}</p>
+            <h2 class="card-title">${escapeHtml(clusterInfo?.title || "Methoden")}</h2>
+            <p class="card-text">${escapeHtml(clusterInfo?.text || "Dieses Werkzeug wird als Methodenbaustein vorbereitet.")}</p>
+          </aside>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="schutzlinien">
+        <div class="card">
+          <p class="hero-kicker">Schutzlinien</p>
+          <h2 id="schutzlinien">Noch kein fertiges Werkzeug</h2>
+          <p class="card-text">${escapeHtml(notice)}</p>
+          <p class="card-text">Die spätere Ausarbeitung muss Datenqualität sichtbar machen, rote Linien respektieren, keine Personen bewerten und keine automatische Entscheidung treffen.</p>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="related-tools">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Verwandte Werkzeuge</p><h2 id="related-tools">Anschluss in der Methodenlandkarte</h2></div>
+          <div class="method-related method-related-large">${relatedToolLinks(base, related)}</div>
+        </div>
+      </section>
       ${exportBlock(base)}`,
   });
 }
@@ -1233,6 +1413,7 @@ function run() {
   written.push(schoolPage());
   written.push(toolOverview());
   for (const tool of tools) written.push(toolPage(tool));
+  for (const tool of preparedToolPages) written.push(preparedToolPage(tool));
   workshopPages();
   console.log("Portal architecture pages generated.");
 }

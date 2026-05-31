@@ -175,7 +175,7 @@ def render_table(table: Table, table_no: int, current_chapter: int | None, curre
 
 
 def split_title(text: str, number: int) -> str:
-    return re.sub(rf"^Kapitel\s+{number}\s*[--:]\s*", "", text, flags=re.I).strip()
+    return re.sub(rf"^Kapitel\s+{number}\s*[-–:]\s*", "", text, flags=re.I).strip()
 
 
 def parse_docx(docx_path: Path) -> dict[str, object]:
@@ -206,8 +206,8 @@ def parse_docx(docx_path: Path) -> dict[str, object]:
                 toc_items.append(text)
                 continue
 
-            part_match = re.match(r"^Teil\s+([IVXLCDM]+)\s*[--]\s*(.+)$", text)
-            chapter_match = re.match(r"^Kapitel\s+(\d{1,3})\s*[--]\s*(.+)$", text)
+            part_match = re.match(r"^Teil\s+([IVXLCDM]+)\s*[-–]\s*(.+)$", text)
+            chapter_match = re.match(r"^Kapitel\s+(\d{1,3})\s*[-–]\s*(.+)$", text)
             section_match = re.match(r"^\d{1,3}\.(\d{1,2})\s+", text)
 
             level = 0
@@ -418,7 +418,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
       </nav>
     </header>
     {body}
-    <script src="{prefix}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
+    <script src="{prefix}assets/js/main.js?v=20260523-reference-ux"></script>
     <script src="{prefix}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>
   </body>
 </html>

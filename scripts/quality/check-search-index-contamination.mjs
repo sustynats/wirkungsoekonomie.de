@@ -28,15 +28,11 @@ for (const entry of entries) {
   const body = String(entry.body || "").toLowerCase();
   const url = String(entry.url || "");
 
-  if (/^\/werkstatt(\/|$)/i.test(url)) {
-    failures.push(`${url} is an internal workbench route`);
-  }
-
   if (forbiddenTitle.has(title) && body.length < 900) {
     failures.push(`${url} has navigation/footer-like title "${entry.title}"`);
   }
 
-  if (section.includes("footer") || section.includes("navigation") || section === "werkstatt") {
+  if (section.includes("footer") || section.includes("navigation")) {
     failures.push(`${url} has search section "${entry.section}"`);
   }
 

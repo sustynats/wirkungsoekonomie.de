@@ -1,0 +1,1853 @@
+terms:
+  - termId: archetyp
+    canonicalLabel: "Archetyp"
+    slug: "archetyp"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente und Register"
+    shortDefinition: "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht."
+    hoverDefinition: "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten."
+    longDefinition: "In der Wirkungsökonomie ordnen Archetypen wiederkehrende Muster von Wirkung, Risiko, Datenlage und Steuerungsbedarf."
+    usageNote: "Nicht mit Stereotyp oder Zielgruppe gleichsetzen."
+    doNotConfuseWith: ["Benchmark", "Scorecard"]
+    synonyms: []
+    relatedTerms: ["benchmark", "scorecard", "woek-id"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Archetyp als methodische Musterkategorie verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "archetyp"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: benchmark
+    canonicalLabel: "Benchmark"
+    slug: "benchmark"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente und Register"
+    shortDefinition: "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden."
+    hoverDefinition: "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität."
+    longDefinition: "Benchmarks übersetzen abstrakte Wirkungsziele in prüfbare Vergleichswerte, ohne selbst die Gesamtbewertung zu ersetzen."
+    usageNote: "Benchmarks sind Hilfsmittel, keine automatische Zielerreichung."
+    doNotConfuseWith: ["Scorecard", "FinalScore"]
+    synonyms: ["Vergleichswert", "Schwellenwert"]
+    relatedTerms: ["scorecard", "finalscore", "woek-id"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Benchmark als prüfbaren Vergleichspunkt verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "benchmark"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: csrd
+    canonicalLabel: "CSRD"
+    slug: "csrd"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussräume"
+    shortDefinition: "CSRD ist die europäische Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen."
+    hoverDefinition: "CSRD schafft Berichtsdaten; in der WÖk werden daraus erst durch Rückkopplung Steuerungsdaten."
+    longDefinition: "Die Corporate Sustainability Reporting Directive erweitert und standardisiert Nachhaltigkeitsberichte. Für die WÖk ist sie Anschlussraum und Datenquelle, nicht die Kernlogik."
+    usageNote: "CSRD nicht mit Wirkungsökonomie gleichsetzen."
+    doNotConfuseWith: ["ESG", "Wirkungsrückkopplung"]
+    synonyms: ["Corporate Sustainability Reporting Directive"]
+    relatedTerms: ["esrs", "esg", "wirkungsdatenraum", "reporting"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "CSRD als Berichtsdatenrahmen beschreiben."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "csrd"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: digitaler-produktpass
+    canonicalLabel: "Digitaler Produktpass"
+    slug: "digitaler-produktpass"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Daten und Standards"
+    shortDefinition: "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar."
+    hoverDefinition: "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus."
+    longDefinition: "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung."
+    usageNote: "Nicht als vollständige Wirkungsbewertung verstehen."
+    doNotConfuseWith: ["WÖk-ID", "Scorecard"]
+    synonyms: ["DPP", "Digital Product Passport"]
+    relatedTerms: ["wirkungsdatenraum", "woek-id", "scorecard"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "DPP als Datenanschluss verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "digitaler produktpass"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: esg
+    canonicalLabel: "ESG"
+    slug: "esg"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussräume"
+    shortDefinition: "ESG steht für Umwelt-, Sozial- und Governance-Faktoren in Unternehmen, Finanzierung und Reporting."
+    hoverDefinition: "ESG ist ein Anschlussraum der WÖk, aber nicht ihre Kernlogik."
+    longDefinition: "ESG hilft, Risiken und Nachhaltigkeitsaspekte zu strukturieren. Die Wirkungsökonomie nutzt ESG als Daten- und Anschlussraum, bewertet aber Wirkung als Zustandsveränderung und koppelt sie zurück."
+    usageNote: "ESG nicht als Grundlage oder Zielgröße der WÖk formulieren."
+    doNotConfuseWith: ["Wirkung", "positive Netto-Wirkung", "Reporting"]
+    synonyms: ["Environmental Social Governance"]
+    relatedTerms: ["csrd", "esrs", "nachhaltigkeit", "wirkungsrisiko"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "ESG als Anschlussraum und Datenquelle."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "esg"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: esrs
+    canonicalLabel: "ESRS"
+    slug: "esrs"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussräume"
+    shortDefinition: "ESRS sind europäische Standards für Nachhaltigkeitsberichterstattung."
+    hoverDefinition: "ESRS strukturieren Berichtsdaten, die in der WÖk zu Wirkungs- und Steuerungsdaten weiterentwickelt werden können."
+    longDefinition: "European Sustainability Reporting Standards legen fest, welche Nachhaltigkeitsinformationen Unternehmen nach CSRD berichten."
+    usageNote: "ESRS sind Berichtstandards, keine vollständige WÖk-Bewertung."
+    doNotConfuseWith: ["Wirkungsbewertung", "Wirkungsrückkopplung"]
+    synonyms: ["European Sustainability Reporting Standards"]
+    relatedTerms: ["csrd", "esg", "wirkungsdatenraum"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "ESRS als Daten- und Reportingstandard einordnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "esrs"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: eu-taxonomie
+    canonicalLabel: "EU-Taxonomie"
+    slug: "eu-taxonomie"
+    status: "anschlussbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social Taxonomy Journalbeitrag v1.0"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
+    sourceSection: "Anschlussräume; Sustainable Finance & Social Taxonomy"
+    shortDefinition: "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien."
+    hoverDefinition: "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung."
+    longDefinition: "Die EU-Taxonomie ordnet Tätigkeiten anhand von Umweltzielen, DNSH, Mindestschutz und technischen Bewertungskriterien ein. In der Wirkungsökonomie ist sie ein wichtiger Anschlussstandard für Sustainable Finance, aber keine vollständige Bewertung sozialer Wirkung oder positiver Netto-Wirkung."
+    usageNote: "Taxonomiekonformität nicht als vollständige Nachhaltigkeit im WÖk-Sinn darstellen und klar von einer Social Taxonomy unterscheiden."
+    doNotConfuseWith: ["Social Taxonomy", "Taxonomiefähigkeit", "Wirkungsbewertung"]
+    synonyms: ["EU Taxonomy"]
+    relatedTerms: ["social-taxonomy", "csrd", "esrs", "wirkungsrisiko", "nachhaltigkeit"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "EU-Taxonomie als Anschlussstandard für Sustainable Finance."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "eu taxonomie"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: european-green-deal
+    canonicalLabel: "European Green Deal"
+    slug: "european-green-deal"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Daten und Standards"
+    shortDefinition: "Der European Green Deal ist ein politischer Rahmen der EU für Klima, Ressourcen, Industrie, Biodiversität und nachhaltige Transformation."
+    hoverDefinition: "Der European Green Deal ist ein EU-Transformationsrahmen und in der WÖk ein Anschlussraum für Daten, Standards und politische Rückkopplung."
+    longDefinition: "In der Wirkungsökonomie ist der European Green Deal kein eigener Wirkungsmaßstab, sondern ein wichtiger europäischer Anschlussrahmen. Er verbindet Klima-, Ressourcen-, Industrie-, Biodiversitäts- und Finanzmarktpolitik mit Daten- und Standardfragen wie EU-Taxonomie, CSRD, ESRS und Produktpässen."
+    usageNote: "Nicht als fertige WÖk-Bewertung darstellen; der Green Deal liefert politische und regulatorische Anschlussräume."
+    doNotConfuseWith: ["EU-Taxonomie", "CSRD", "SDGs"]
+    synonyms: ["Green Deal", "EU Green Deal"]
+    relatedTerms: ["eu-taxonomie", "csrd", "esrs", "digitaler-produktpass", "wirkungsdaten"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "European Green Deal als europäischen Transformations- und Regulierungsrahmen einordnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "european green deal"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: finalscore
+    canonicalLabel: "FinalScore"
+    slug: "finalscore"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung."
+    hoverDefinition: "Der FinalScore ist die steuerungsrelevante Verdichtung von Einzelscores unter Berücksichtigung von Datenqualität, Reverse Merit Order und Nichtkompensation."
+    longDefinition: "Der FinalScore verdichtet Einzelscores, Datenqualität, rote Linien und Reverse Merit Order. Er darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden."
+    usageNote: "Nicht als beliebigen Durchschnitt darstellen."
+    doNotConfuseWith: ["Netto-Wirkung", "Scorecard"]
+    synonyms: []
+    relatedTerms: ["scorecard", "reverse-merit-order", "netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "FinalScore als Ergebnis mit Schutzlogik verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "finalscore"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: faktencheck
+    canonicalLabel: "Faktencheck"
+    slug: "faktencheck"
+    status: "führender-begriff"
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "Faktencheck und Folgencheck v1.1"
+    sourceSection: "Kernunterscheidung"
+    shortDefinition: "Ein Faktencheck prüft, ob eine Aussage, Zahl, Quelle oder Behauptung stimmt."
+    hoverDefinition: "Faktencheck fragt: Stimmt das? Er prüft Belege, Quellen, Kontext und Nachvollziehbarkeit."
+    longDefinition: "Der Faktencheck ist die Prüfung von Aussagen, Zahlen, Quellen und Kontexten auf Richtigkeit. Er ist notwendig, beantwortet aber noch nicht, welche Folgen eine Aussage, Entscheidung oder Maßnahme auslösen kann."
+    usageNote: "Immer vom Folgencheck unterscheiden: Faktencheck prüft Richtigkeit, Folgencheck prüft mögliche Wirkungen."
+    doNotConfuseWith: ["Folgencheck", "Wirkungsbewertung", "Meinungsprüfung"]
+    synonyms: ["Fact Check", "Richtigkeitsprüfung"]
+    relatedTerms: ["folgencheck", "wirkstoff", "wirkungspotenzial", "wirkungspfad"]
+    relatedDocuments: ["faktencheck-folgencheck-v1-1"]
+    examples: ["Stimmt die zitierte Zahl?", "Ist die Quelle echt?", "Ist der Kontext vollständig?"]
+    preferredUsage: "Faktencheck als Richtigkeitsprüfung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "faktencheck"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
+  - termId: folgencheck
+    canonicalLabel: "Folgencheck"
+    slug: "folgencheck"
+    status: "führender-begriff"
+    version: "1.1"
+    source: "Faktencheck und Folgencheck v1.1"
+    sourceDocument: "Faktencheck und Folgencheck v1.1"
+    sourceSection: "Ex-ante-Prüfung"
+    shortDefinition: "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann."
+    hoverDefinition: "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume ex ante."
+    longDefinition: "Der Folgencheck ist eine vorsorgende Ex-ante-Prüfung möglicher Wirkungen. Er untersucht Wirkstoffe, Wirkungspotenziale, Wirkungspfade, Wirkungsräume, Nebenwirkungen, Datenqualität, Unsicherheit und Schutzgrenzen, bevor Schäden oder Systemfolgen vollständig eingetreten sind."
+    usageNote: "Nicht als nachträgliche Schadensanalyse verkürzen. Folgencheck ist vorsorgende Prüfung möglicher Auslösung."
+    doNotConfuseWith: ["Faktencheck", "Schadensbilanz", "Zensur", "Meinungsprüfung"]
+    synonyms: ["Folgenprüfung", "Ex-ante-Folgenprüfung", "Wirkungsfolgencheck"]
+    relatedTerms: ["faktencheck", "wirkstoff", "wirkungsraum", "wirkungspfad", "wirkungspotenzial"]
+    relatedDocuments: ["faktencheck-folgencheck-v1-1"]
+    examples: ["Kann ein Narrativ Panik, Polarisierung oder Schutzverhalten auslösen?", "Welche Nebenwirkungen hat eine Regel, bevor sie breit eingeführt wird?"]
+    preferredUsage: "Folgencheck als vorsorgende Prüfung von Wirkungspotenzialen verwenden."
+    deprecatedUsage: ["Folgencheck als reine Nachschau"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "folgencheck"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
+  - termId: gri
+    canonicalLabel: "GRI"
+    slug: "gri"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussräume"
+    shortDefinition: "GRI ist ein international verbreiteter Rahmen für Nachhaltigkeitsberichterstattung."
+    hoverDefinition: "GRI strukturiert Reporting; WÖk fragt zusätzlich nach bewerteter Wirkung und Rückkopplung."
+    longDefinition: "Die Global Reporting Initiative stellt Standards zur Offenlegung von Nachhaltigkeitsthemen bereit."
+    usageNote: "GRI als externer Standard, nicht als WÖk-Kernlogik."
+    doNotConfuseWith: ["CSRD", "ESRS", "Wirkungsbewertung"]
+    synonyms: ["Global Reporting Initiative"]
+    relatedTerms: ["reporting", "csrd", "esrs"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "GRI als Reportingstandard einordnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "gri"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: idgs
+    canonicalLabel: "IDGs"
+    slug: "idgs"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WÖk SDG-/SDG+-Referenzrahmen"
+    sourceDocument: "WÖk SDG-/SDG+-Referenzrahmen"
+    sourceSection: "IDGs und Wirkungskompetenz"
+    shortDefinition: "IDGs sind ein anschlussfähiger Kompetenzrahmen für innere und kollektive Entwicklungsfähigkeiten."
+    hoverDefinition: "Inner Development Goals beschreiben Fähigkeiten, die Menschen und Organisationen für Transformation brauchen. Sie ersetzen SDGs oder SDG+ nicht."
+    longDefinition: "Die Inner Development Goals sind kein dritter Zielkatalog neben SDGs und SDG+. Für die Wirkungsökonomie sind sie ein Kompetenzrahmen, der Wirkungskompetenz, Urteilskraft, Zusammenarbeit, Reflexion und Verantwortungsfähigkeit unterstützen kann."
+    usageNote: "IDGs als Kompetenzrahmen darstellen, nicht als Ersatz für SDGs oder SDG+."
+    doNotConfuseWith: ["SDGs", "SDG+", "Agenda 2030"]
+    synonyms: ["Inner Development Goals", "IDG", "innere Entwicklungsziele"]
+    relatedTerms: ["wirkungskompetenz", "sdgs", "sdg-plus", "agenda-2030"]
+    relatedDocuments: ["sdg-sdgplus-referenzrahmen"]
+    examples: []
+    preferredUsage: "Als Kompetenzanschluss an SDGs, SDG+ und Wirkungskompetenz verwenden."
+    deprecatedUsage: ["IDGs als Zielkatalog der WÖk"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "idgs"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-26"
+  - termId: mensch-planet-demokratie
+    canonicalLabel: "Mensch, Planet und Demokratie"
+    slug: "mensch-planet-demokratie"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Bewertungsrahmen"
+    shortDefinition: "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst."
+    hoverDefinition: "Mensch, Planet und Demokratie übersetzt SDGs, Agenda 2030 und SDG+ in drei verständliche Wirkungsdimensionen."
+    longDefinition: "Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung. Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele, sondern die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt."
+    usageNote: "Als kommunikative Übersetzung von SDGs, Agenda 2030 und SDG+ verwenden, nicht als zusätzliche UN-Ziele."
+    doNotConfuseWith: ["zusätzliche UN-Ziele", "SDG+ als UN-Kategorie", "positive Netto-Wirkung als Ergebnisgröße"]
+    synonyms: ["MPD"]
+    relatedTerms: ["sdgs", "agenda-2030", "sdg-plus", "wirkung", "positive-netto-wirkung", "wirkungsbewertung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Mensch, Planet und Demokratie als öffentliche Sprache für den fachlichen Referenzrahmen aus SDGs, Agenda 2030 und SDG+ nutzen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "mensch planet demokratie"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-25"
+  - termId: nace
+    canonicalLabel: "NACE"
+    slug: "nace"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussräume"
+    shortDefinition: "NACE ist die europäische Klassifikation wirtschaftlicher Tätigkeiten."
+    hoverDefinition: "NACE ordnet Tätigkeiten; die WÖk bewertet darüber hinaus ihre Wirkung."
+    longDefinition: "NACE-Codes helfen, Unternehmen und Tätigkeiten statistisch und regulatorisch zu klassifizieren."
+    usageNote: "NACE ist Zuordnung, keine Wirkungsmessung."
+    doNotConfuseWith: ["WÖk-ID", "EU-Taxonomie"]
+    synonyms: []
+    relatedTerms: ["eu-taxonomie", "woek-id", "scorecard"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "NACE als Aktivitätsklassifikation verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "nace"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: netto-wirkung
+    canonicalLabel: "Netto-Wirkung"
+    slug: "netto-wirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen."
+    hoverDefinition: "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam."
+    longDefinition: "Netto-Wirkung ordnet Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Rote Linien, Wirkungsgrenzen und Nicht-Kompensation begrenzen die Verrechnung."
+    usageNote: "Nicht als simple Summe formulieren."
+    doNotConfuseWith: ["positive Netto-Wirkung", "FinalScore"]
+    synonyms: ["Nettowirkung"]
+    relatedTerms: ["positive-netto-wirkung", "reverse-merit-order", "wirkungsgrenze"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Netto-Wirkung immer mit Schutzlogik verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "netto wirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: nwi
+    canonicalLabel: "NWI"
+    slug: "nwi"
+    status: "führender-begriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung."
+    hoverDefinition: "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation."
+    longDefinition: "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet."
+    usageNote: "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung."
+    doNotConfuseWith: ["T-SROI", "FinalScore", "SROI"]
+    synonyms: ["Netto-Wirkungs-Index", "Netto-Wirkungs-Index / NWI"]
+    relatedTerms: ["netto-wirkung", "finalscore", "t-sroi", "reverse-merit-order"]
+    relatedDocuments: ["technische-leitlinien-wustg"]
+    examples: []
+    preferredUsage: "NWI als operative Netto-Wirkungskennzahl."
+    deprecatedUsage: ["T-SROI als Netto-Wirkungskennzahl"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "netto wirkungs index"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: nichtkompensationsprinzip
+    canonicalLabel: "Nichtkompensationsprinzip"
+    slug: "nichtkompensationsprinzip"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Das Nichtkompensationsprinzip verhindert, dass schwere Schäden durch positive Teilwirkungen schöngerechnet werden."
+    hoverDefinition: "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden."
+    longDefinition: "Das Prinzip verbindet Netto-Wirkung mit Wirkungsgrenzen und Reverse Merit Order. Es schützt zentrale Lebens-, Sozial- und Demokratiefunktionen."
+    usageNote: "Als Schutzlogik, nicht als Anti-Bewertung formulieren."
+    doNotConfuseWith: ["Kompensation", "Offsetting"]
+    synonyms: ["Nicht-Kompensation", "Nichtkompensation"]
+    relatedTerms: ["reverse-merit-order", "wirkungsgrenze", "netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei roten Linien und kritischen Schäden verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "nichtkompensationsprinzip"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: positive-netto-wirkung
+    canonicalLabel: "positive Netto-Wirkung"
+    slug: "positive-netto-wirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie."
+    hoverDefinition: "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken."
+    longDefinition: "Positive Netto-Wirkung verbindet tatsächliche Zustandsveränderungen, Bewertungsrahmen, Nicht-Kompensation und Rückkopplung in Entscheidungen."
+    usageNote: "Als Zielgröße verwenden, nicht bloß Wirkung."
+    doNotConfuseWith: ["positive Wirkung", "Netto-Wirkung"]
+    synonyms: ["positive Nettowirkung", "positive netto Wirkung"]
+    relatedTerms: ["wirkung", "netto-wirkung", "mensch-planet-demokratie", "sdg-plus"]
+    relatedDocuments: ["sdg-sdgplus-referenzrahmen"]
+    examples: []
+    preferredUsage: "Zielgröße der WÖk ist positive Netto-Wirkung."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "positive netto wirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: positive-wirkung
+    canonicalLabel: "positive Wirkung"
+    slug: "positive-wirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Positive Wirkung ist eine Zustandsveränderung, die im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv bewertet wird."
+    hoverDefinition: "Positive Wirkung liegt vor, wenn eine Veränderung auf SDGs, Agenda 2030 und SDG+ einzahlt."
+    longDefinition: "Positive Wirkung ist keine Behauptung guten Willens, sondern eine bewertete Zustandsveränderung mit Bezugspunkt."
+    usageNote: "Referenzrahmen benennen."
+    doNotConfuseWith: ["positive Netto-Wirkung", "Wirkungspotenzial"]
+    synonyms: []
+    relatedTerms: ["wirkung", "negative-wirkung", "neutrale-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Positive Wirkung nie ohne Bewertungsrahmen verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "positive wirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: negative-wirkung
+    canonicalLabel: "negative Wirkung"
+    slug: "negative-wirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Negative Wirkung ist eine Zustandsveränderung, die Mensch, Planet oder Demokratie schädigt oder destabilisiert."
+    hoverDefinition: "Negative Wirkung liegt vor, wenn eine Veränderung SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört."
+    longDefinition: "Negative Wirkung kann direkt, indirekt, kurzfristig oder langfristig auftreten und wird im Referenzrahmen bewertet."
+    usageNote: "Nicht mit Risiko verwechseln: Risiko ist Möglichkeit, Wirkung ist eingetretene Veränderung."
+    doNotConfuseWith: ["Wirkungsrisiko", "Nebenwirkung"]
+    synonyms: []
+    relatedTerms: ["wirkung", "wirkungsrisiko", "netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Negative Wirkung als Zustandsverschlechterung bezeichnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "negative wirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: nachhaltigkeit
+    canonicalLabel: "Nachhaltigkeit"
+    slug: "nachhaltigkeit"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussbegriffe"
+    shortDefinition: "Nachhaltigkeit bedeutet in der Wirkungsökonomie: Ein System funktioniert auch morgen noch."
+    hoverDefinition: "Nachhaltigkeit bedeutet in der WÖk: Ein System lebt nicht auf Verschleiß, sondern bleibt krisenfest und erzeugt dauerhaft positive Netto-Wirkung für Mensch, Planet und Demokratie."
+    longDefinition: "Nachhaltigkeit ist in der Wirkungsökonomie kein Zusatzlabel, keine Berichtspflicht und keine einzelne Umweltstrategie. Sie beschreibt die resiliente Fähigkeit eines Systems, Lebensgrundlagen, soziale Stabilität, wirtschaftliche Tragfähigkeit und demokratische Korrekturräume dauerhaft zu sichern."
+    usageNote: "Anschlussbegriff, nicht Kernlogik. Zielgröße bleibt positive Netto-Wirkung."
+    doNotConfuseWith: ["ESG", "Reporting", "Verzicht", "grünes Image"]
+    synonyms: ["nachhaltig", "nachhaltige Entwicklung", "nachhaltige Wirtschaft", "resiliente Wirtschaft"]
+    relatedTerms: ["positive-netto-wirkung", "wirkungsrueckkopplung", "wirkungsresilienz", "esg", "csrd", "eu-taxonomie", "stranded-assets"]
+    relatedDocuments: ["nachhaltigkeit-systemarchitektur"]
+    examples: []
+    preferredUsage: "Nachhaltigkeit als Ergebnis gelingender Wirkungsrückkopplung beschreiben."
+    deprecatedUsage: ["Nachhaltigkeit als WÖk-Kernlogik", "Nachhaltigkeit als Reportingpflicht"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "nachhaltigkeit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: neutrale-wirkung
+    canonicalLabel: "neutrale Wirkung"
+    slug: "neutrale-wirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Neutrale Wirkung ist eine feststellbare Zustandsveränderung, die im Bewertungsrahmen weder positiv noch negativ ins Gewicht fällt."
+    hoverDefinition: "Neutrale Wirkung bedeutet, dass keine relevante positive oder negative Veränderung nachweisbar ist oder die Wirkung im Bewertungsrahmen neutral eingeordnet wird."
+    longDefinition: "Neutrale Wirkung ist nicht Wirkungslosigkeit, sondern eine bewertete Veränderung ohne relevante positive oder negative Einordnung."
+    usageNote: "Nicht mit keiner Wirkung verwechseln."
+    doNotConfuseWith: ["keine Wirkung", "Wirkungspotenzial"]
+    synonyms: []
+    relatedTerms: ["wirkung", "positive-wirkung", "negative-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Nur verwenden, wenn eine Veränderung festgestellt wurde."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "neutrale wirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: resonanzraum
+    canonicalLabel: "Resonanzraum"
+    slug: "resonanzraum"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Sprache und Medien"
+    shortDefinition: "Ein Resonanzraum ist ein sozialer, medialer oder institutioneller Raum, in dem Aussagen Wirkungspotenzial entfalten können."
+    hoverDefinition: "Ein Resonanzraum ist ein sozialer oder medialer Raum, in dem Sprache, Bilder, Emotionen und Frames Wirkungspotenziale entfalten."
+    longDefinition: "Resonanzräume beeinflussen, ob Informationen, Narrative oder Entscheidungen aufgenommen, verstärkt, abgeschwächt oder umgedeutet werden."
+    usageNote: "Nicht mit nachgewiesener Wirkung gleichsetzen."
+    doNotConfuseWith: ["Wirkung", "Wirkungspotenzial"]
+    synonyms: []
+    relatedTerms: ["wirkungspotenzial", "wirkungspfad", "wirkungsnetz"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples: []
+    preferredUsage: "Bei Medien, Sprache, Kultur und Öffentlichkeit nutzen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "resonanzraum"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: reverse-merit-order
+    canonicalLabel: "Reverse Merit Order"
+    slug: "reverse-merit-order"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Reverse Merit Order stellt sicher, dass das schwächste kritische Wirkungsfeld die Bewertung begrenzt."
+    hoverDefinition: "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung."
+    longDefinition: "Die Reverse Merit Order ist eine Schutzlogik gegen Schönrechnung. Sie macht kritische Schäden entscheidungsrelevant und verbindet Netto-Wirkung mit Nicht-Kompensation."
+    usageNote: "Nicht als bloße Rechenregel ohne Schutzlogik verwenden."
+    doNotConfuseWith: ["Merit Order", "Durchschnittsscore"]
+    synonyms: ["Nichtkompensationsprinzip", "Minimum-Operator", "Engpasslogik"]
+    relatedTerms: ["nichtkompensationsprinzip", "netto-wirkung", "wirkungsgrenze"]
+    relatedDocuments: ["technische-leitlinien-wustg", "beispiel-apfel-wirkungssteuer"]
+    examples: ["Apfelbeispiel", "Lieferkettenbewertung"]
+    preferredUsage: "Reverse Merit Order als Nichtkompensationslogik einsetzen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "reverse merit order"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: scorecard
+    canonicalLabel: "Scorecard"
+    slug: "scorecard"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung."
+    hoverDefinition: "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar."
+    longDefinition: "Scorecards verbinden WÖk-IDs, Benchmarks, Datenqualität, Wirkungsgrenzen und Bewertungslogik."
+    usageNote: "Nicht als bloße Checkliste ohne Bewertungslogik verwenden."
+    doNotConfuseWith: ["Dashboard", "Reporting"]
+    synonyms: []
+    relatedTerms: ["woek-id", "benchmark", "finalscore"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Scorecard als methodisches Bewertungsinstrument."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "scorecard"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: stranded-assets
+    canonicalLabel: "Stranded Assets"
+    slug: "stranded-assets"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Finanzmarkt und Risiko"
+    shortDefinition: "Stranded Assets sind Vermögenswerte, die durch veränderte Risiken, Regeln, Märkte, Technologien oder ökologische Bedingungen an Wert verlieren."
+    hoverDefinition: "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt."
+    longDefinition: "In der WÖk zeigen Stranded Assets, dass negative oder verdrängte Wirkungen irgendwann in Kapitalwert, Versicherbarkeit, Finanzierung, Betriebskosten oder Nutzbarkeit zurückkehren können."
+    usageNote: "Nicht als automatischer Wertverlust ab einem Stichtag darstellen."
+    doNotConfuseWith: ["Wertkorrektur", "Abschreibung", "gesetzlicher Stichtag"]
+    synonyms: ["Stranded Asset", "gestrandete Vermögenswerte"]
+    relatedTerms: ["wirkungsrisiko", "nachhaltigkeit", "transitionsrisiko", "versicherbarkeit", "kapitalzugang"]
+    relatedDocuments: ["wp-wohnungsmarkt", "stranded-assets-gebaeudebestand"]
+    examples: ["fossile Infrastruktur", "unsanierte Gebäude", "nicht versicherbare Standorte"]
+    preferredUsage: "Als finanzielle Rückkehr verdrängter Wirkung verwenden."
+    deprecatedUsage: ["automatisch wertlos ab Datum"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "stranded assets"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsvermietung
+    canonicalLabel: "Wirkungsvermietung"
+    slug: "wirkungsvermietung"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Wohnen & Stadt · Investor:innen und Vermieter:innen"
+    sourceDocument: "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx"
+    sourceSection: "Gute Vermietung, schlechte Vermietungswirkung"
+    shortDefinition: "Wirkungsvermietung beschreibt Vermietung, die Wohnwirkung auf Bezahlbarkeit, Gesundheit, Energie, Quartier, Teilhabe und Vertrauen sichtbar macht."
+    hoverDefinition: "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen."
+    longDefinition: "In der Wirkungsökonomie wird gute Vermietung nicht moralisch behauptet, sondern an Zustandsveränderungen sichtbar: stabile Wohnkosten, gesunde Räume, transparente Kosten, sanierter Bestand, geringere Verdrängung und stärkere Quartierswirkung."
+    usageNote: "Nicht als Personenbewertung oder Vermieter:innen-Ranking verwenden."
+    doNotConfuseWith: ["Mietspiegel", "Bonitätsprüfung"]
+    synonyms: ["wirkungsorientierte Vermietung"]
+    relatedTerms: ["wohnwirkung", "wix-vi", "warmmietenneutralitaet", "wirkungspflicht-eigentum"]
+    relatedDocuments: ["woek_wohnen_investoren_vermieter_detailkonzept_v0_3", "woek_wohnen_investoren_vermieter_dossier_v0_3"]
+    examples: ["warmmietenneutrale Sanierung", "transparente Nebenkosten", "verlässliche Instandhaltung"]
+    preferredUsage: "Als Wirkungslogik für Vermietungsentscheidungen verwenden."
+    deprecatedUsage: ["Score für Vermieter:innen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsvermietung"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: spekulationslogik
+    canonicalLabel: "Spekulationslogik"
+    slug: "spekulationslogik"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Wohnen & Stadt · Investor:innen und Vermieter:innen"
+    sourceDocument: "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx"
+    sourceSection: "Spekulation: Definition und Abgrenzung"
+    shortDefinition: "Spekulationslogik bezeichnet Wertsteigerung, die aus Knappheit, Nichtnutzung, Intransparenz oder Verdrängung entsteht."
+    hoverDefinition: "Spekulationslogik ist nicht jede Rendite, sondern Rendite aus Verdrängung, Leerstand, Bodenhortung oder entkoppelter Knappheitsausnutzung."
+    longDefinition: "Die Wirkungsökonomie unterscheidet legitime Rendite aus guter Wohnwirkung von problematischer Spekulationslogik. Kritisch wird Wertsteigerung, wenn sie Wohnraum seiner Lebensfunktion entzieht oder negative Wirkung unsichtbar hält."
+    usageNote: "Nicht pauschal mit Eigentum, Investition oder Vermietung gleichsetzen."
+    doNotConfuseWith: ["Rendite", "Investition", "Sanierung"]
+    synonyms: ["spekulative Verwertungslogik"]
+    relatedTerms: ["stranded-assets", "wohnwirkung", "wirkungspflicht-eigentum"]
+    relatedDocuments: ["woek_wohnen_investoren_vermieter_detailkonzept_v0_3"]
+    examples: ["spekulativer Leerstand", "Bodenhortung", "Zweckentfremdung"]
+    preferredUsage: "Als Wirkungsrisiko im Wohnungsmarkt verwenden."
+    deprecatedUsage: ["jede private Vermietung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "spekulationslogik"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: wix-vi
+    canonicalLabel: "WIX-VI"
+    slug: "wix-vi"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Wohnen & Stadt · Investor:innen und Vermieter:innen"
+    sourceDocument: "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx"
+    sourceSection: "WIX-VI"
+    shortDefinition: "WIX-VI ist ein Vermietungs- und Investmentmodul des Wohnwirkungsindex."
+    hoverDefinition: "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein."
+    longDefinition: "WIX-VI bewertet keine Personen. Es macht sichtbar, wie Vermietungs- und Investmententscheidungen auf Wohnwirkung, Stranded-Asset-Risiken, Warmmietenneutralität, Quartier und Transparenz zurückwirken."
+    usageNote: "Immer als Arbeitsmatrix und nicht als amtliche Einstufung darstellen."
+    doNotConfuseWith: ["Mietspiegel", "Immobilienrating"]
+    synonyms: ["WIX Vermietung Investment", "Vermietungs- und Investmentmodul"]
+    relatedTerms: ["wohnwirkung", "wirkungsvermietung", "stranded-assets"]
+    relatedDocuments: ["woek_wohnen_investoren_vermieter_dossier_v0_3"]
+    examples: ["Portfolio-Check", "Sanierungspfad", "Leerstandsrisiko"]
+    preferredUsage: "Als Untermodul des Wohnwirkungsindex verwenden."
+    deprecatedUsage: ["Vermieter:innen-Score"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wix vi"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: warmmietenneutralitaet
+    canonicalLabel: "Warmmietenneutralität"
+    slug: "warmmietenneutralitaet"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Wohnen & Stadt"
+    sourceDocument: "woek_wohnen_stadt_konzeptpapier_v0_1.docx"
+    sourceSection: "Sanierung, Energie und Warmmietenneutralität"
+    shortDefinition: "Warmmietenneutralität bedeutet, dass Sanierung ökologische Wirkung erzeugt, ohne die reale Wohnkostenbelastung zu erhöhen."
+    hoverDefinition: "Warmmietenneutralität prüft, ob Energieeinsparung, Förderung und Miete zusammen die Haushalte nicht überlasten."
+    longDefinition: "In der Wirkungsökonomie ist Sanierung dann sozial tragfähig, wenn Klimawirkung, Betriebskosten, Förderung, Mietentwicklung und Härtefallschutz zusammen betrachtet werden."
+    usageNote: "Nicht als Garantie gleicher Kaltmiete verstehen."
+    doNotConfuseWith: ["Mietendeckel", "Modernisierungsumlage"]
+    synonyms: ["warmmietenneutrale Sanierung"]
+    relatedTerms: ["wohnwirkung", "wirkungsvermietung", "wix-vi"]
+    relatedDocuments: ["woek_wohnen_stadt_konzeptpapier_v0_1", "woek_wohnen_investoren_vermieter_detailkonzept_v0_3"]
+    examples: ["sinkende Nebenkosten", "Sanierungsbonus", "Härtefallregel"]
+    preferredUsage: "Als Schutz- und Bewertungslogik für Sanierung verwenden."
+    deprecatedUsage: ["Sanierung ohne Kostenwirkung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "warmmietenneutralitaet"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: wohnwirkung
+    canonicalLabel: "Wohnwirkung"
+    slug: "wohnwirkung"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Wohnen & Stadt"
+    sourceDocument: "woek_wohnen_stadt_konzeptpapier_v0_1.docx"
+    sourceSection: "Wohnen als Wirkungsraum"
+    shortDefinition: "Wohnwirkung beschreibt die tatsächliche Zustandsveränderung, die Wohnraum für Menschen, Gebäude, Quartiere, Klima und Vertrauen erzeugt."
+    hoverDefinition: "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken."
+    longDefinition: "Wohnwirkung ist neutral und relational. Sie kann positiv, negativ oder neutral sein und wird im WÖk-Rahmen an Mensch, Planet und Demokratie rückgekoppelt."
+    usageNote: "Nicht als Bewertung von Mieter:innen oder Eigentümer:innen verwenden."
+    doNotConfuseWith: ["Wohnqualität", "Immobilienwert"]
+    synonyms: ["Wirkung von Wohnen"]
+    relatedTerms: ["wix-vi", "warmmietenneutralitaet", "wirkungsvermietung"]
+    relatedDocuments: ["woek_wohnen_stadt_gesamtdossier_v0_1"]
+    examples: ["Mietbelastung", "Schimmel", "Hitzeresilienz", "Quartierszugang"]
+    preferredUsage: "Als Zustandsveränderung im Wirkungsfeld Wohnen verwenden."
+    deprecatedUsage: ["Wohnscore für Personen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wohnwirkung"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: wirkungspflicht-eigentum
+    canonicalLabel: "Wirkungspflicht des Eigentums"
+    slug: "wirkungspflicht-des-eigentums"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Wohnen & Stadt · Investor:innen und Vermieter:innen"
+    sourceDocument: "woek_wohnen_investoren_vermieter_detailkonzept_v0_3.docx"
+    sourceSection: "Eigentum mit Wirkungspflicht"
+    shortDefinition: "Die Wirkungspflicht des Eigentums beschreibt, dass Eigentum an Wohnraum an seine reale Wirkung auf Bezahlbarkeit, Gesundheit, Quartier und Vertrauen rückgebunden wird."
+    hoverDefinition: "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen."
+    longDefinition: "Eigentum bleibt Freiheitsform, Investitionsgrundlage und Verantwortung. Bei Wohnraum betrifft es aber einen gesellschaftlichen Wirkungsraum und braucht daher transparente Schutzgrenzen, Rechtsschutz und demokratische Ausgestaltung."
+    usageNote: "Nicht als Enteignungsformel oder Totalregulierung formulieren."
+    doNotConfuseWith: ["Enteignung", "Renditeverbot"]
+    synonyms: ["Eigentum mit Wirkungspflicht"]
+    relatedTerms: ["wohnwirkung", "wirkungsvermietung", "spekulationslogik"]
+    relatedDocuments: ["woek_wohnen_investoren_vermieter_detailkonzept_v0_3"]
+    examples: ["Sanierungspfad", "Leerstandsvermeidung", "transparente Bewirtschaftung"]
+    preferredUsage: "Als ordnungspolitische Rückbindung von Wohnraum an Wirkung verwenden."
+    deprecatedUsage: ["Eigentum ohne Rendite"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspflicht eigentum"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: sdg-plus
+    canonicalLabel: "SDG+"
+    slug: "sdg-plus"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Bewertungsrahmen"
+    shortDefinition: "SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionelle und digitale Wirkungsfelder."
+    hoverDefinition: "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie."
+    longDefinition: "SDG+ ergänzt die SDGs dort, wo demokratische Korrekturfähigkeit, Diskursfähigkeit, institutionelles Vertrauen, Medienqualität und digitale Selbstbestimmung für positive Netto-Wirkung entscheidend sind. SDG+ ist keine offizielle UN-Kategorie."
+    usageNote: "Immer transparent machen: SDG+ ist eine WÖk-Erweiterung, nicht UN-Standard."
+    doNotConfuseWith: ["SDGs", "Agenda 2030"]
+    synonyms: ["SDG Plus", "SDG-Plus"]
+    relatedTerms: ["sdgs", "agenda-2030", "mensch-planet-demokratie", "positive-netto-wirkung", "wirkungsbewertung"]
+    relatedDocuments: ["sdg-sdgplus-referenzrahmen"]
+    examples: []
+    preferredUsage: "SDG+ als WÖk-Erweiterung erklären."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "sdg plus"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-24"
+  - termId: agenda-2030
+    canonicalLabel: "Agenda 2030"
+    slug: "agenda-2030"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "SDG-/SDG+-Referenzrahmen"
+    sourceDocument: "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx"
+    sourceSection: "Referenzrahmen"
+    shortDefinition: "Die Agenda 2030 ist der internationale Rahmen der Vereinten Nationen für nachhaltige Entwicklung."
+    hoverDefinition: "Die Agenda 2030 umfasst die 17 SDGs und bildet den globalen Zielrahmen, an den die Wirkungsökonomie anschließt."
+    longDefinition: "Die Agenda 2030 beschreibt weltweit verhandelte Zielräume für nachhaltige Entwicklung. Die Wirkungsökonomie nutzt diese Zielräume als Referenzrahmen, um positive, negative und neutrale Wirkung öffentlich nachvollziehbar einzuordnen."
+    usageNote: "Als offizieller UN-Rahmen beschreiben; SDG+ klar als WÖk-Erweiterung trennen."
+    doNotConfuseWith: ["SDG+", "Wirkungsökonomie"]
+    synonyms: ["UN Agenda 2030"]
+    relatedTerms: ["sdgs", "sdg-plus", "positive-netto-wirkung"]
+    relatedDocuments: ["sdg-sdgplus-referenzrahmen"]
+    examples: []
+    preferredUsage: "Agenda 2030 als globalen Zielrahmen der SDGs benennen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "agenda 2030"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: sdgs
+    canonicalLabel: "SDGs"
+    slug: "sdgs"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "SDG-/SDG+-Referenzrahmen"
+    sourceDocument: "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx"
+    sourceSection: "Die 17 SDGs"
+    shortDefinition: "Die SDGs sind die 17 Nachhaltigkeitsziele der Vereinten Nationen im Rahmen der Agenda 2030."
+    hoverDefinition: "Die SDGs bilden den offiziellen globalen Zielrahmen für nachhaltige Entwicklung."
+    longDefinition: "Die Sustainable Development Goals beschreiben Zielräume für Armut, Ernährung, Gesundheit, Bildung, Gleichstellung, Wasser, Energie, Arbeit, Industrie, Ungleichheit, Städte, Konsum, Klima, Ökosysteme, Frieden und Partnerschaften. Die Wirkungsökonomie nutzt sie als Referenzrahmen, nicht als dekorative Ziel-Liste."
+    usageNote: "Offizielle UN-Ziele nicht mit SDG+ vermischen."
+    doNotConfuseWith: ["SDG+", "ESG"]
+    synonyms: ["Sustainable Development Goals", "Nachhaltigkeitsziele", "UN-Nachhaltigkeitsziele"]
+    relatedTerms: ["agenda-2030", "sdg-plus", "positive-netto-wirkung"]
+    relatedDocuments: ["sdg-sdgplus-referenzrahmen"]
+    examples: []
+    preferredUsage: "SDGs als offizielle 17 Ziele der Agenda 2030 verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "sdgs"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: sdg-sdgplus-referenzrahmen
+    canonicalLabel: "SDG-/SDG+-Referenzrahmen"
+    slug: "sdg-sdgplus-referenzrahmen"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "SDG-/SDG+-Referenzrahmen"
+    sourceDocument: "woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx"
+    sourceSection: "Referenzrahmen"
+    shortDefinition: "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen SDGs mit SDG+ als transparenter WÖk-Erweiterung."
+    hoverDefinition: "Der SDG-/SDG+-Referenzrahmen ordnet positive, negative und neutrale Wirkung öffentlich nachvollziehbar ein."
+    longDefinition: "Der SDG-/SDG+-Referenzrahmen verbindet die offiziellen 17 Nachhaltigkeitsziele der Vereinten Nationen mit SDG+ als Wirkungsökonomie-Erweiterung für Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung."
+    usageNote: "SDG+ immer als transparente WÖk-Erweiterung kennzeichnen."
+    doNotConfuseWith: ["ESG", "SDG+ als UN-Ziel"]
+    synonyms: ["Referenzrahmen", "SDG Referenzrahmen", "SDG+ Referenzrahmen"]
+    relatedTerms: ["sdgs", "sdg-plus", "agenda-2030", "positive-netto-wirkung"]
+    relatedDocuments: ["woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3"]
+    examples: []
+    preferredUsage: "Als Bewertungsrahmen der Wirkungsökonomie verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "sdg sdgplus referenzrahmen"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-24"
+  - termId: social-taxonomy
+    canonicalLabel: "Social Taxonomy"
+    slug: "social-taxonomy"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Social Taxonomy Journalbeitrag v1.0"
+    sourceDocument: "Social_Taxonomy_Journalbeitrag_Wirkungsoekonomie_ausfuehrlich.docx"
+    sourceSection: "Sustainable Finance & Social Taxonomy"
+    shortDefinition: "Social Taxonomy bezeichnet eine Klassifikationslogik für soziale Nachhaltigkeit und soziale Wirkung wirtschaftlicher Aktivitäten."
+    hoverDefinition: "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und soziale Stabilität stärken."
+    longDefinition: "In der Wirkungsökonomie bezeichnet Social Taxonomy eine mögliche soziale Wirkungsarchitektur für Sustainable Finance: Sie verbindet soziale Zielräume, Mindestschutz, positive Netto-Wirkung, Nichtkompensation, Datenqualität, Scorecards und Governance, damit soziale Wirkung nicht nur berichtet, sondern in Kapital-, Beschaffungs-, Unternehmens- und Politikentscheidungen zurückgeführt werden kann."
+    usageNote: "Stand 27. Mai 2026 gibt es keine verbindliche eigenständige EU-Social-Taxonomy. Der Begriff sollte daher als Vorschlags- und Weiterentwicklungsraum von der geltenden EU-Umwelt-Taxonomie unterschieden werden."
+    doNotConfuseWith: ["EU-Taxonomie", "ESG-Siegel", "Social Credit", "Corporate Volunteering"]
+    synonyms: ["soziale Taxonomie", "Social-Taxonomy", "soziale Wirkungs-Taxonomie"]
+    relatedTerms: ["eu-taxonomie", "csrd", "esrs", "positive-netto-wirkung", "nichtkompensationsprinzip", "scorecard", "reverse-merit-order", "t-sroi", "wirkungsdaten", "social-credit"]
+    relatedDocuments: ["social-taxonomy-journalbeitrag-v1-0"]
+    examples:
+      - "Ein Wohnprojekt wird nicht nur ökologisch, sondern auch nach Bezahlbarkeit, Verdrängungsrisiko, Gesundheit und Teilhabe bewertet."
+      - "Eine Lieferkette erfüllt nicht nur Mindestschutz, sondern zeigt faire Löhne, Arbeitssicherheit, Beschwerdewege und positive soziale Wirkung."
+    preferredUsage: "Als Architekturbegriff verwenden, wenn soziale Wirkung in nachhaltigen Märkten entscheidungsfähig, prüfbar und rückkopplungsfähig gemacht werden soll."
+    deprecatedUsage: ["Social Taxonomy als fertiges EU-Rechtsinstrument darstellen", "Social Taxonomy als Personenrating verwenden"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "social taxonomy"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-05-27"
+  - termId: t-sroi
+    canonicalLabel: "T-SROI"
+    slug: "t-sroi"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "T-SROI beschreibt transformationsbezogene Wirkung im Verhältnis zu eingesetzten Ressourcen."
+    hoverDefinition: "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert."
+    longDefinition: "Transformational Social Return on Investment ist ein Instrument zur Betrachtung von Transformationswirkung, nicht bloß klassischer Rendite. T-SROI ist keine operative Netto-Wirkungskennzahl. Diese Rolle liegt beim NWI."
+    usageNote: "Nicht mit NWI oder einfacher Finanzrendite verwechseln."
+    doNotConfuseWith: ["SROI", "NWI", "Netto-Wirkung"]
+    synonyms: ["Transformational Social Return on Investment", "Transformational SROI"]
+    relatedTerms: ["transformationswirkung", "netto-wirkung", "wirkungscontrolling"]
+    relatedDocuments: ["whitepaper-t-sroi"]
+    examples: []
+    preferredUsage: "T-SROI für Transformationslogik nutzen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "t sroi"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: transformationswirkung
+    canonicalLabel: "Transformationswirkung"
+    slug: "transformationswirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Transformationswirkung verändert Systemlogiken, Standards, Anreize oder Handlungspfade."
+    hoverDefinition: "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen."
+    longDefinition: "Transformationswirkung beschreibt, ob eine Maßnahme Strukturen, Märkte, Regeln, Technologien oder kulturelle Muster so verändert, dass positive Netto-Wirkung wahrscheinlicher wird."
+    usageNote: "Von Netto-Wirkung unterscheiden."
+    doNotConfuseWith: ["Netto-Wirkung", "Wirkungspotenzial"]
+    synonyms: []
+    relatedTerms: ["t-sroi", "wirkungsarchitektur", "wirkungslenkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei Systemveränderungen verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "transformationswirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkstoff
+    canonicalLabel: "Wirkstoff"
+    slug: "wirkstoff"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial."
+    hoverDefinition: "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus."
+    longDefinition: "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung."
+    usageNote: "Nur als Analogie, nicht als harte Fachkategorie."
+    doNotConfuseWith: ["Wirkung", "Wirkungspotenzial", "Wirkmechanismus"]
+    synonyms: ["gesellschaftlicher Wirkstoff"]
+    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungspfad", "resonanzraum"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "gesellschaftlicher Wirkstoff als Analogie"
+    deprecatedUsage: ["Wirkstoff als Wirkung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkstoff"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkung
+    canonicalLabel: "Wirkung"
+    slug: "wirkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkung ist die tatsächliche Veränderung von Zuständen."
+    hoverDefinition: "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt."
+    longDefinition: "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+."
+    usageNote: "Wirkung nicht automatisch positiv verwenden. Wenn die Zielgröße gemeint ist, meist positive Netto-Wirkung verwenden."
+    doNotConfuseWith: ["Wirkungspotenzial", "Absicht", "Output", "Image"]
+    synonyms: ["Impact", "Zustandsveränderung"]
+    relatedTerms: ["wirkungspotenzial", "netto-wirkung", "positive-netto-wirkung", "wirkungsbewertung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Wirkung als tatsächliche Zustandsveränderung verwenden."
+    deprecatedUsage: ["Wirkung als automatisch positiver Effekt"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsarchitektur
+    canonicalLabel: "Wirkungsarchitektur"
+    slug: "wirkungsarchitektur"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen."
+    hoverDefinition: "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung."
+    longDefinition: "Wirkungsarchitektur ist keine Website und kein Diagramm, sondern die Ordnung, in der Daten, Regeln, Institutionen, Kapital, Preise, Steuern, Beschaffung und demokratische Kontrolle zusammenwirken."
+    usageNote: "Nicht als reine Visualisierung oder Website-Struktur verwenden."
+    doNotConfuseWith: ["Informationsarchitektur", "Website-Architektur"]
+    synonyms: []
+    relatedTerms: ["wirkungslenkung", "wirkungsrückkopplung", "wirkungsrat", "woek-id"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Systemarchitektur der WÖk verwenden."
+    deprecatedUsage: ["Wirkungsarchitektur als Website-Struktur"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsarchitektur"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsbewertung
+    canonicalLabel: "Wirkungsbewertung"
+    slug: "wirkungsbewertung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsbewertung ordnet tatsächliche Zustandsveränderungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein."
+    hoverDefinition: "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein."
+    longDefinition: "Wirkungsbewertung verbindet Daten, Indikatoren, Benchmarks, Wirkungsgrenzen und normative Rahmung."
+    usageNote: "Nicht mit Reporting gleichsetzen."
+    doNotConfuseWith: ["Reporting", "Wirkungspotenzial"]
+    synonyms: ["Impact Assessment"]
+    relatedTerms: ["wirkung", "positive-netto-wirkung", "scorecard"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Bewertungslogik für Zustandsveränderungen verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsbewertung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsblindheit
+    canonicalLabel: "Wirkungsblindheit"
+    slug: "wirkungsblindheit"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsblindheit entsteht, wenn Entscheidungen ihre tatsächlichen Folgen nicht sehen oder nicht berücksichtigen."
+    hoverDefinition: "Wirkungsblindheit heißt: Folgen werden erzeugt, aber nicht gesehen, bewertet oder zurückgekoppelt."
+    longDefinition: "Wirkungsblindheit kann in Preisen, Kennzahlen, Medien, Politik, Kapitalflüssen oder Institutionen entstehen."
+    usageNote: "Nicht als moralischen Vorwurf, sondern als Systembefund nutzen."
+    doNotConfuseWith: ["Unwissen", "Absicht"]
+    synonyms: ["wirkungsblind"]
+    relatedTerms: ["wirkungswahrheit", "wirkungsdatenraum", "wirkungsrückkopplung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als strukturelles Wahrnehmungsproblem beschreiben."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsblindheit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsdatenraum
+    canonicalLabel: "Wirkungsdatenraum"
+    slug: "wirkungsdatenraum"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Daten und Standards"
+    shortDefinition: "Ein Wirkungsdatenraum macht relevante Wirkungsdaten strukturiert, interoperabel und prüfbar nutzbar."
+    hoverDefinition: "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann."
+    longDefinition: "Wirkungsdatenräume verbinden Berichtsdaten, Produktdaten, Lieferkettendaten, Standards, Register und Bewertungslogik."
+    usageNote: "Nicht als bloße Datenablage verstehen."
+    doNotConfuseWith: ["Datenbank", "Reporting"]
+    synonyms: ["Wirkungsdatenräume"]
+    relatedTerms: ["csrd", "esrs", "digitaler-produktpass", "woek-id"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als interoperable Dateninfrastruktur der WÖk verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsdatenraum"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsdaten
+    canonicalLabel: "Wirkungsdaten"
+    slug: "wirkungsdaten"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Daten und Standards"
+    shortDefinition: "Wirkungsdaten machen Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar."
+    hoverDefinition: "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen."
+    longDefinition: "Wirkungsdaten können Primärdaten, geprüfte Sekundärdaten, Produktdaten, Lieferkettendaten, Benchmarks, Prüfstatus und Unsicherheiten umfassen. Sie sind Grundlage für Scorecards, FinalScore, NWI und spätere Rückkopplung."
+    usageNote: "Nicht jede Berichtszahl ist bereits Wirkungsdatum; Bezug zu Zustand, Bewertung oder Rückkopplung benennen."
+    doNotConfuseWith: ["Reportingdaten", "Wirkungsdatenraum"]
+    synonyms: ["Wirkungsdatenpunkte"]
+    relatedTerms: ["wirkungsdatenraum", "woek-id", "scorecard", "nwi"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Für prüfbare Daten mit Wirkungsbezug verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsdaten"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-24"
+  - termId: wirkungsempfaenger
+    canonicalLabel: "Wirkungsempfänger"
+    slug: "wirkungsempfaenger"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsempfänger sind Menschen, Gruppen, Ökosysteme, Institutionen oder Systeme, auf die Wirkung eintritt."
+    hoverDefinition: "Wirkungsempfänger sind diejenigen, bei denen eine Zustandsveränderung ankommt."
+    longDefinition: "Der Begriff macht sichtbar, dass Wirkung relational ist und immer einen Bezugspunkt braucht."
+    usageNote: "Nicht nur Kund:innen oder Zielgruppen meinen."
+    doNotConfuseWith: ["Zielgruppe", "Stakeholder"]
+    synonyms: ["Betroffene"]
+    relatedTerms: ["wirkung", "wirkungsraum", "wirkungspfad"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei relationaler Wirkungsanalyse einsetzen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsempfänger"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungseinkommen
+    canonicalLabel: "Wirkungseinkommen"
+    slug: "wirkungseinkommen"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Wirkungseinkommen beschreibt Einkommenslogiken, die gesellschaftlich relevante positive Wirkung berücksichtigen."
+    hoverDefinition: "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung."
+    longDefinition: "Das Konzept fragt, wie Sorgearbeit, Bildung, Prävention, demokratische Arbeit und andere wirksame Tätigkeiten besser sichtbar und abgesichert werden können."
+    usageNote: "Nicht als bloßes Grundeinkommen gleichsetzen."
+    doNotConfuseWith: ["Grundeinkommen", "Lohn"]
+    synonyms: ["Wirkungsdividende"]
+    relatedTerms: ["positive-netto-wirkung", "wirkungslenkung"]
+    relatedDocuments: ["wp-einkommen"]
+    examples: []
+    preferredUsage: "Als Instrument und Diskussionsmodell kennzeichnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungseinkommen"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsgrenze
+    canonicalLabel: "Wirkungsgrenze"
+    slug: "wirkungsgrenze"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Eine Wirkungsgrenze markiert Schäden, die nicht beliebig kompensiert oder schöngerechnet werden dürfen."
+    hoverDefinition: "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität."
+    longDefinition: "Wirkungsgrenzen betreffen unter anderem Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität."
+    usageNote: "Immer mit Nicht-Kompensation verbinden."
+    doNotConfuseWith: ["Schwellenwert", "Benchmark"]
+    synonyms: ["rote Linie", "Red Line"]
+    relatedTerms: ["nichtkompensationsprinzip", "reverse-merit-order", "netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei nicht beliebig kompensierbaren Schäden nutzen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsgrenze"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsfonds
+    canonicalLabel: "Wirkungsfonds"
+    slug: "wirkungsfonds"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Ein Wirkungsfonds bündelt Rückflüsse, um Prävention, Bildung, Transformation oder soziale Sicherung wirkungsorientiert zu finanzieren."
+    hoverDefinition: "Ein Wirkungsfonds ist ein transparenter Fondsmechanismus für Rückflüsse aus Wertschöpfung, Beiträgen oder Wirkungssteuerlogik."
+    longDefinition: "Der Wirkungsfonds beschreibt einen Finanzierungsmechanismus, der Mittel aus bestehender oder neuer Wertschöpfung in gesellschaftliche Stabilität, Weiterbildung, Prävention, Transformation und Wirkungseinkommen zurückführen kann."
+    usageNote: "Nicht als Geld aus dem Nichts, Schattenhaushalt oder fertige Finanzierungszusage darstellen."
+    doNotConfuseWith: ["Schattenhaushalt", "Spendenfonds", "Grundeinkommen"]
+    synonyms: ["Transformationsfonds", "Rückkopplungsfonds"]
+    relatedTerms: ["wirkungsrueckkopplung", "wirkungseinkommen", "maschinenwertschoepfungsbeitrag", "wirkungshaushalt"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als transparenter Fondsmechanismus mit demokratischer Kontrolle, Evaluation und klarer Herkunft der Mittel verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsfonds"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-25"
+  - termId: wirkungshaushalt
+    canonicalLabel: "Wirkungshaushalt"
+    slug: "wirkungshaushalt"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar."
+    hoverDefinition: "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung."
+    longDefinition: "Der Wirkungshaushalt fragt, welche Zustände öffentliche Mittel verändern, welche Risiken entstehen und welche positive Netto-Wirkung erzeugt wird."
+    usageNote: "Nicht als reines Budgetlabel verwenden."
+    doNotConfuseWith: ["Haushaltsplan", "Outputbudget"]
+    synonyms: []
+    relatedTerms: ["wirkungslenkung", "wirkungsrückkopplung", "positive-netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Steuerungsinstrument öffentlicher Mittel verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungshaushalt"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsschule
+    canonicalLabel: "Wirkungsschule"
+    slug: "wirkungsschule"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Bildung & Wirkungsschule"
+    shortDefinition: "Die Wirkungsschule versteht Schule als Lern-, Lebens-, Demokratie-, Gesundheits- und Wirkungsraum."
+    hoverDefinition: "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet."
+    longDefinition: "In der Wirkungsökonomie bezeichnet die Wirkungsschule die institutionelle Form wirkungsorientierter Bildung: Unterricht, Raum, Beziehung, Bewertung, Förderung, Gesundheit, Demokratiepraxis, digitale Mündigkeit und Bildungsnetzwerke werden so gestaltet, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher wird."
+    usageNote: "Nicht als Schulform, Schulranking oder Personenbewertung verwenden. Bewertet werden Strukturen, Lernbedingungen und Angebote, nicht Kinder, Familien oder Lehrkräfte."
+    doNotConfuseWith: ["Schulform", "Schulranking", "Kinder-Scoring"]
+    synonyms: ["wirkungsorientierte Schule", "Schule als Wirkungsraum"]
+    relatedTerms: ["wirkungspaedagogik", "wirkungskompetenz", "wirkungsraum", "positive-netto-wirkung"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0", "wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Ein Schulhof-Hitze-Projekt verbindet Messung, Beteiligung, Gesundheit, Stadtklima und demokratische Entscheidung."
+      - "Ein Wirkungsportfolio macht Lernwege sichtbar, ohne Kinder auf Scores zu reduzieren."
+    preferredUsage: "Als Architekturbegriff für Schule verwenden, wenn Unterricht, Raum, Beziehung, Bewertung, Förderung, Demokratiepraxis und Schutzlogik gemeinsam betrachtet werden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsschule"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungspaedagogik
+    canonicalLabel: "Wirkungspädagogik"
+    slug: "wirkungspaedagogik"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Bildung & Wirkungsschule"
+    shortDefinition: "Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit."
+    hoverDefinition: "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben."
+    longDefinition: "Wirkungspädagogik ist die pädagogische Logik der Wirkungsschule. Sie verbindet Fachlichkeit, Beziehung, Resonanz, Fehlerkultur, Reflexion und reale Wirkungsfragen, damit Lernende Wissen nicht nur aufnehmen, sondern Folgen erkennen, Verantwortung übernehmen und handlungsfähig werden."
+    usageNote: "Nicht als Moralisierung, Gesinnungsunterricht oder Projektbeliebigkeit verwenden. Wirkungspädagogik bleibt fachlich, überprüfbar, demokratisch offen und schützend."
+    doNotConfuseWith: ["Projektunterricht ohne Fachlichkeit", "Gesinnungspädagogik", "Kompetenzrhetorik"]
+    synonyms: ["wirkungsorientierte Pädagogik"]
+    relatedTerms: ["wirkungsschule", "wirkungskompetenz", "wirkungsraum", "wirkungspotenzial"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0"]
+    examples:
+      - "Ein Fach-Zukunft-Modul verbindet Fachwissen mit einer lokalen Wirkungsfrage."
+      - "Feedback wird nicht nur zur Leistungsrückmeldung, sondern zur Stärkung von Selbstwirksamkeit und Korrekturfähigkeit genutzt."
+    preferredUsage: "Als pädagogischen Ansatz verwenden, wenn Lernen, Fachlichkeit, Reflexion und verantwortliches Handeln zusammen betrachtet werden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspaedagogik"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungsorientiertes-hosting
+    canonicalLabel: "Wirkungsorientiertes Hosting"
+    slug: "wirkungsorientiertes-hosting"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsräume gestalten v1.0"
+    sourceDocument: "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx"
+    sourceSection: "Medien & Öffentlichkeit; Praxis"
+    shortDefinition: "Wirkungsorientiertes Hosting gestaltet öffentliche Gesprächs-, Medien- und Community-Räume nach Wirkung, Quellenklarheit, Würde, Schutz und Korrekturfähigkeit."
+    hoverDefinition: "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet."
+    longDefinition: "Wirkungsorientiertes Hosting ist eine Praxis für Creator:innen, Hosts, Redaktionen, Streamer:innen, Podcaster:innen, Community-Management und politische Kommunikation. Es gestaltet Resonanzbedingungen so, dass Wahrheit zugänglich bleibt, Streit zu Erkenntnis führen kann, Menschenwürde geschützt wird und demokratische Rückkopplung funktioniert."
+    usageNote: "Nicht als Benimmkatalog, Zensur oder Gesinnungsprüfung verwenden. Bewertet werden öffentliche Verstärkungsbedingungen, Quellenklarheit, Moderation, Schutzstandards und Korrekturwege."
+    doNotConfuseWith: ["Zensur", "Personenscore", "Social Credit", "Moderationsstil"]
+    synonyms: ["wirkungsorientierte Moderation", "Impact Hosting", "verantwortetes Hosting"]
+    relatedTerms: ["wirkungsraum", "resonanzarchitektur", "resonanzraum", "wirkungskompetenz", "host-wirkungsscore"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Ein Host trennt Fakt, Meinung, Erfahrung und Prognose sichtbar, bevor ein Hochrisiko-Thema weiter diskutiert wird."
+      - "Ein Livestream nutzt Chat-Regeln, Quellenlinks, Interventionssätze und Nachkorrektur als Teil der Wirkungsarchitektur."
+    preferredUsage: "Als Praxisbegriff für öffentliche Formate verwenden, die Wirkungsräume bewusst gestalten."
+    deprecatedUsage: ["Wirkungsorientiertes Hosting als Gesinnungsprüfung", "Hosting-Score als Menschenbewertung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsorientiertes hosting"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: resonanzarchitektur
+    canonicalLabel: "Resonanzarchitektur"
+    slug: "resonanzarchitektur"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsräume gestalten v1.0"
+    sourceDocument: "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx"
+    sourceSection: "Medien & Öffentlichkeit; Architektur"
+    shortDefinition: "Resonanzarchitektur beschreibt die gestalteten Bedingungen, unter denen Sprache, Bilder, Gäste, Chat, Plattformpfade und Korrekturen Anschluss finden."
+    hoverDefinition: "Resonanzarchitektur ist die bewusste Gestaltung von Gespräch, Chat, Clips, Plattformpfad und Nachbereitung."
+    longDefinition: "Resonanzarchitektur macht sichtbar, dass ein Format nicht nur aus Inhalt besteht. Thema, Einstiegsfrage, Gästeauswahl, Redezeit, Humor, Quellen, Chatregeln, Titel, Thumbnail, Clips, Kommentarlogik und Nachkorrektur strukturieren, welche Resonanzen verstärkt oder begrenzt werden."
+    usageNote: "Nicht mit bloßer Dramaturgie oder Reichweitenoptimierung gleichsetzen."
+    doNotConfuseWith: ["Aufmerksamkeitsoptimierung", "Framing allein", "Reichweitenstrategie"]
+    synonyms: ["Resonanzgestaltung", "Diskursarchitektur"]
+    relatedTerms: ["resonanzraum", "wirkungsraum", "wirkungspfad", "wirkungsarchitektur", "wirkungsorientiertes-hosting"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Ein Format legt vorab fest, wie Falschbehauptungen, Chat-Eskalation und Clip-Kontext behandelt werden."
+    preferredUsage: "Als Architekturbegriff für öffentliche Kommunikationsräume verwenden."
+    deprecatedUsage: ["Resonanzarchitektur als Manipulationsdesign"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "resonanzarchitektur"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: host-wirkungsscore
+    canonicalLabel: "Host-Wirkungsscore"
+    slug: "host-wirkungsscore"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsräume gestalten v1.0"
+    sourceDocument: "woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx"
+    sourceSection: "Medien & Öffentlichkeit; Instrumente"
+    shortDefinition: "Der Host-Wirkungsscore ist eine Scorecard für öffentliche Formate, die Quellenklarheit, Framing, Diskursführung, Community, Transparenz, Schutz und Korrekturfähigkeit prüft."
+    hoverDefinition: "Der Host-Wirkungsscore ist ein Lerninstrument für öffentliche Wirkungsbedingungen, keine Wahrheitsmaschine und kein Personenrating."
+    longDefinition: "Der Host-Wirkungsscore bewertet nicht Menschen, Meinungen oder Gesinnung, sondern öffentliche Verstärkungsbedingungen eines Formats. Er unterscheidet Wirkungspotenzial, Wirkungsrisiko, Quellenklarheit, Framing, Diskursführung, Community-Architektur, Transparenz, Schutz vulnerabler Gruppen, Plattform- und Clip-Verantwortung, Korrekturfähigkeit und Transformationswirkung."
+    usageNote: "Als Reflexions- und Lerninstrument verwenden; nicht als staatliches Meinungsranking oder automatische Sperrlogik."
+    doNotConfuseWith: ["Personenscore", "Social Credit", "amtliches Medienrating"]
+    synonyms: ["HWS", "Host Scorecard", "Hosting-Scorecard"]
+    relatedTerms: ["scorecard", "wirkungsbewertung", "wirkungsrisiko", "reverse-merit-order", "wirkungsorientiertes-hosting"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Nach einem Stream prüft das Team Quellenklarheit, Clip-Kontext, Chat-Eskalation und sichtbare Korrekturwege."
+    preferredUsage: "Als nicht-amtliches Bewertungs- und Lernraster für Formate, Redaktionen, Akademien und Peer-Review verwenden."
+    deprecatedUsage: ["Host-Wirkungsscore als Gesinnungsscore", "Host-Wirkungsscore als automatisches Ranking von Personen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "host wirkungsscore"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungskompetenz
+    canonicalLabel: "Wirkungskompetenz"
+    slug: "wirkungskompetenz"
+    status: "führender-begriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule, Wirkungspädagogik und Wirkungskompetenz v1.0"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Wirkungsschule_Wirkungspaedagogik_Wirkungskompetenz_Artikel_Pro_final.docx"
+    sourceSection: "Führende Mini-Definitionen; Bildung & Wirkungsschule"
+    shortDefinition: "Wirkungskompetenz ist die Fähigkeit, Wirkung, Wirkungspotenzial, Wirkungsrisiken, Nebenwirkungen und Rückkopplungen zu erkennen, zu bewerten und verantwortlich zu gestalten."
+    hoverDefinition: "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern."
+    longDefinition: "Wirkungskompetenz verbindet Systemverständnis, Datenkompetenz, ethische Urteilsfähigkeit, demokratische Streitfähigkeit und praktische Steuerung. Im Bildungsbereich ist sie die Fähigkeit, reale Wirkungsfragen zu analysieren, Perspektiven einzubeziehen, Zielkonflikte offenzulegen, Nebenwirkungen zu prüfen und handlungsfähige Lösungen zu entwickeln."
+    usageNote: "Nicht nur Wissen, sondern Handlungsfähigkeit; im Bildungsbereich niemals als Personen-Score verwenden."
+    doNotConfuseWith: ["Fachwissen", "Datenkompetenz"]
+    synonyms: []
+    relatedTerms: ["wirkungsschule", "wirkungspaedagogik", "wirkungsradar", "wirkungsbewertung", "wirkungsarchitektur"]
+    relatedDocuments: ["wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0", "wirkungsraeume-gestalten-hosting-v1-0"]
+    examples:
+      - "Schüler:innen prüfen bei einem Schulhof-Hitze-Projekt Daten, Betroffene, Kosten, Nebenwirkungen und demokratische Entscheidungspfade."
+      - "Eine Organisation bewertet nicht nur Output, sondern auch Nebenwirkungen, Rückkopplungen und Korrekturmöglichkeiten."
+    preferredUsage: "Als Fähigkeit zur wirkungsorientierten Entscheidung, demokratischen Urteilsbildung und verantwortlichen Gestaltung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungskompetenz"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-27"
+  - termId: wirkungslenkung
+    canonicalLabel: "Wirkungslenkung"
+    slug: "wirkungslenkung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungslenkung ist die bewusste Ausrichtung von Anreizen, Regeln und Entscheidungen auf positive Netto-Wirkung."
+    hoverDefinition: "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück."
+    longDefinition: "Wirkungslenkung nutzt Daten, Preise, Steuern, Kapital, Förderung, Beschaffung und Governance, um wirksame Entscheidungen wahrscheinlicher zu machen."
+    usageNote: "Von Wirkungsrückkopplung unterscheiden."
+    doNotConfuseWith: ["Wirkungsrückkopplung", "Planwirtschaft"]
+    synonyms: []
+    relatedTerms: ["wirkungsrückkopplung", "wirkungsarchitektur", "positive-netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Ausrichtung von Anreizen und Entscheidungen verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungslenkung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkmechanismus
+    canonicalLabel: "Wirkmechanismus"
+    slug: "wirkmechanismus"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann."
+    hoverDefinition: "Ein Wirkmechanismus beschreibt, wie aus einem Auslöser Wirkung entstehen kann."
+    longDefinition: "Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Resonanzräume und tatsächliche Zustandsveränderungen."
+    usageNote: "Nicht als Wirkung selbst formulieren."
+    doNotConfuseWith: ["Wirkung", "Wirkstoff"]
+    synonyms: ["Wirkungsmechanismus"]
+    relatedTerms: ["wirkstoff", "wirkungspfad", "wirkungspotenzial"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei Kausal- und Pfadlogiken verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkmechanismus"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsnetz
+    canonicalLabel: "Wirkungsnetz"
+    slug: "wirkungsnetz"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Ein Wirkungsnetz beschreibt miteinander verbundene Wirkpfade, Akteure, Räume und Rückkopplungen."
+    hoverDefinition: "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen."
+    longDefinition: "Wirkungsnetze machen sichtbar, dass Wirkung selten linear entsteht und oft über Wechselwirkungen, Nebenwirkungen und Systemhebel läuft."
+    usageNote: "Nicht als reine Grafik bezeichnen."
+    doNotConfuseWith: ["Netzwerkdiagramm", "Wirkungspfad"]
+    synonyms: []
+    relatedTerms: ["wirkungspfad", "resonanzraum", "wirkungsarchitektur"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Für systemische Zusammenhänge verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsnetz"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungspfad
+    canonicalLabel: "Wirkungspfad"
+    slug: "wirkungspfad"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Ein Wirkungspfad beschreibt die nachvollziehbare Kette von Auslöser, Bedingungen, Wirkungspotenzial und möglicher Zustandsveränderung."
+    hoverDefinition: "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann."
+    longDefinition: "Wirkungspfade helfen, Annahmen, Daten, Risiken und Rückkopplungen in einer Wirkungsanalyse transparent zu machen."
+    usageNote: "Bei Medien und Sprache oft Wirkungspotenzial, nicht Wirkung."
+    doNotConfuseWith: ["Wirkung", "Kausalnachweis"]
+    synonyms: ["Wirkpfad"]
+    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungsnetz"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Wirkungspfad als analytische Pfadbeschreibung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspfad"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungspotenzial
+    canonicalLabel: "Wirkungspotenzial"
+    slug: "wirkungspotenzial"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann."
+    hoverDefinition: "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung."
+    longDefinition: "Wirkungspotenzial beschreibt erwartbare oder mögliche Zustandsveränderungen unter bestimmten Bedingungen. Es braucht spätere Prüfung, ob Wirkung tatsächlich eingetreten ist."
+    usageNote: "Nicht mit eingetretener Wirkung verwechseln."
+    doNotConfuseWith: ["Wirkung", "Wirkungsnachweis", "Absicht"]
+    synonyms: ["Wirkpotenzial"]
+    relatedTerms: ["wirkung", "wirkungspfad", "wirkungsrisiko", "wirkstoff"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei erwarteter, möglicher oder wahrscheinlicher Wirkung verwenden."
+    deprecatedUsage: ["Potenzial als Wirkung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspotenzial"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsradar
+    canonicalLabel: "Wirkungsradar"
+    slug: "wirkungsradar"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht."
+    hoverDefinition: "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen."
+    longDefinition: "Das Wirkungsradar unterstützt Analyse, Kommunikation und Priorisierung, ersetzt aber keine vollständige Wirkungsbewertung."
+    usageNote: "Nicht als finale Bewertung ausgeben."
+    doNotConfuseWith: ["Scorecard", "FinalScore"]
+    synonyms: []
+    relatedTerms: ["wirkungsrisiko", "wirkungskompetenz", "wirkungsbewertung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Frühorientierung und Analysewerkzeug verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsradar"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsrat
+    canonicalLabel: "Wirkungsrat"
+    slug: "wirkungsrat"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Governance"
+    shortDefinition: "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben."
+    hoverDefinition: "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz."
+    longDefinition: "Er verbindet Expertise, öffentliche Nachvollziehbarkeit, Korrekturfähigkeit und Schutz vor Gaming the System."
+    usageNote: "Nicht als technokratische Instanz oder Wahrheitsmonopol formulieren."
+    doNotConfuseWith: ["Behörde", "Ratingagentur"]
+    synonyms: []
+    relatedTerms: ["wirkungsarchitektur", "wirkungswahrheit", "benchmark", "archetyp"]
+    relatedDocuments: ["wirkungsrat-konzept"]
+    examples: []
+    preferredUsage: "Als Governance- und Korrekturinstanz beschreiben."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsrat"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsrente
+    canonicalLabel: "Wirkungsrente"
+    slug: "wirkungsrente"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Wirkungsrente beschreibt eine rentenpolitische Perspektive, die Lebensleistung und gesellschaftliche Wirkung sichtbarer macht."
+    hoverDefinition: "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden."
+    longDefinition: "Das Konzept öffnet eine Wirkungslogik für Rente, Care-Arbeit, Prävention, Bildung und gesellschaftliche Stabilität."
+    usageNote: "Nicht als fertiges Gesetz ohne Quelle darstellen."
+    doNotConfuseWith: ["gesetzliche Rente", "Privatrente"]
+    synonyms: ["wirkungsbasierte Rente"]
+    relatedTerms: ["wirkungseinkommen", "positive-netto-wirkung"]
+    relatedDocuments: ["wp-rente"]
+    examples: []
+    preferredUsage: "Als Instrumenten- und Reformidee kennzeichnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsrente"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsresilienz
+    canonicalLabel: "Wirkungsresilienz"
+    slug: "wirkungsresilienz"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsresilienz ist die Fähigkeit eines Systems, unter Stress handlungsfähig zu bleiben und positive Netto-Wirkung zu sichern."
+    hoverDefinition: "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie."
+    longDefinition: "Wirkungsresilienz ist normativ gebunden. Auch destruktive Systeme können robust sein; im WÖk-Sinn ist Resilienz nur positiv, wenn sie Mensch, Planet und Demokratie stärkt."
+    usageNote: "Präzisiert allgemeine Resilienz wirkungsökonomisch; nicht wertneutral verherrlichen."
+    doNotConfuseWith: ["Robustheit", "bloße Anpassungsfähigkeit"]
+    synonyms: ["Resilienz im WÖk-Sinn"]
+    relatedTerms: ["resilienz", "nachhaltigkeit", "positive-netto-wirkung", "wirkungsrueckkopplung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Resilienz normativ an Mensch, Planet und Demokratie binden."
+    deprecatedUsage: ["Resilienz als bloße Robustheit"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsresilienz"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsrisiko
+    canonicalLabel: "Wirkungsrisiko"
+    slug: "wirkungsrisiko"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsrisiko ist die Möglichkeit, dass eine Entscheidung negative Wirkung erzeugt oder positive Wirkung verfehlt."
+    hoverDefinition: "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet."
+    longDefinition: "Wirkungsrisiken können ökologisch, sozial, demokratisch, finanziell, infrastrukturell oder reputationsbezogen zurückkehren."
+    usageNote: "Nicht mit eingetretener negativer Wirkung verwechseln."
+    doNotConfuseWith: ["negative Wirkung", "Transitionsrisiko"]
+    synonyms: []
+    relatedTerms: ["wirkungspotenzial", "stranded-assets", "wirkungsradar"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Bei möglichen Folgeschäden und Unsicherheiten verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsrisiko"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsrueckkopplung
+    canonicalLabel: "Wirkungsrückkopplung"
+    slug: "wirkungsrueckkopplung"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück."
+    hoverDefinition: "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert."
+    longDefinition: "Reporting beschreibt. Rückkopplung verändert. Wirkungsrückkopplung ist der Mechanismus, durch den Wirkungsbewertung steuerungsrelevant wird."
+    usageNote: "Von Wirkungslenkung unterscheiden."
+    doNotConfuseWith: ["Reporting", "Wirkungslenkung"]
+    synonyms: ["Rückkopplung"]
+    relatedTerms: ["wirkungslenkung", "wirkungsarchitektur", "positive-netto-wirkung"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Mechanismus der Rückführung in Entscheidungen verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsrückkopplung"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungspunkte
+    canonicalLabel: "Wirkungspunkte"
+    slug: "wirkungspunkte"
+    status: "schutzbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Schutzbegriffe"
+    shortDefinition: "Wirkungspunkte sind eine mögliche produktbezogene Informations- oder Bonuslogik, keine Personenbewertung."
+    hoverDefinition: "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen."
+    longDefinition: "Wirkungspunkte dürfen nur als freiwillige, datensparsame und transparente Produkt- oder Bonusinformation gedacht werden. Sie dürfen keine Bürger:innen bewerten, keine Kaufprofile erzwingen und keine Nachteile bei Nichtteilnahme erzeugen."
+    usageNote: "Nur mit Social-Credit-Abgrenzung verwenden."
+    doNotConfuseWith: ["Social Credit", "Personenscore"]
+    synonyms: ["Wirkungsbonus", "Bonusmodell"]
+    relatedTerms: ["social-credit", "verbraucherinformation", "positive-netto-wirkung"]
+    relatedDocuments: ["schutzrahmen-personenbewertung"]
+    examples: []
+    preferredUsage: "Produktbezogen und freiwillig, nie als Personenrating."
+    deprecatedUsage: ["Bürger:innen sammeln Wirkungspunkte"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungspunkte"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-24"
+  - termId: wirkungsraum
+    canonicalLabel: "Wirkungsraum"
+    slug: "wirkungsraum"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Ein Wirkungsraum ist ein Bereich, in dem Entscheidungen Zustände für Mensch, Planet oder Demokratie verändern."
+    hoverDefinition: "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet."
+    longDefinition: "Wohnen, Bildung, Gesundheit, Medien, Mobilität, Kultur oder Finanzsysteme können Wirkungsräume sein."
+    usageNote: "Nicht mit Zielgruppe gleichsetzen."
+    doNotConfuseWith: ["Marktsegment", "Zielgruppe"]
+    synonyms: []
+    relatedTerms: ["wirkungsempfaenger", "wirkungspfad", "wirkungsarchitektur"]
+    relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
+    examples: ["Wohnen", "Medien", "Mobilität"]
+    preferredUsage: "Als systemischen Raum von Wirkung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsraum"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungssteuer
+    canonicalLabel: "Wirkungssteuer"
+    slug: "wirkungssteuer"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück."
+    hoverDefinition: "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt."
+    longDefinition: "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen."
+    usageNote: "Nicht als Strafsteuer verkürzen."
+    doNotConfuseWith: ["CO2-Steuer", "Pigou-Steuer"]
+    synonyms: ["Steuer nach Wirkung"]
+    relatedTerms: ["wstg", "wustg", "wirkungsrueckkopplung"]
+    relatedDocuments: ["wstg-oktober-2025", "technische-leitlinien-wustg"]
+    examples: []
+    preferredUsage: "Als Rückkopplungsinstrument der WÖk verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungssteuer"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungssteuergesetz
+    canonicalLabel: "Wirkungssteuergesetz"
+    slug: "wirkungssteuergesetz"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Das Wirkungssteuergesetz ist ein Rahmengesetz-Konzept für steuerliche Wirkungsrückkopplung."
+    hoverDefinition: "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung."
+    longDefinition: "Das WStG bildet den Rahmen, in dem Wirkungsklassen, Daten, Governance und Steuerungslogiken rechtlich strukturiert werden können."
+    usageNote: "Als Entwurf oder Konzept kennzeichnen, solange nicht geltendes Recht."
+    doNotConfuseWith: ["WUStG", "geltendes Steuerrecht"]
+    synonyms: ["WStG", "Wirkungssteuer-Rahmengesetz"]
+    relatedTerms: ["wirkungssteuer", "wstg", "wustg"]
+    relatedDocuments: ["wstg-oktober-2025"]
+    examples: []
+    preferredUsage: "Als Gesetzesentwurf/Konzept bezeichnen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungssteuergesetz"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungstraeger
+    canonicalLabel: "Wirkungsträger"
+    slug: "wirkungstraeger"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Ein Wirkungsträger ist ein Produkt, eine Handlung, Entscheidung, Institution oder Struktur, über die Wirkung vermittelt wird."
+    hoverDefinition: "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann."
+    longDefinition: "Wirkungsträger können materiell oder immateriell sein: Produkte, Preise, Regeln, Narrative, Gebäude, Plattformen oder Infrastrukturen."
+    usageNote: "Nicht mit Wirkung selbst gleichsetzen."
+    doNotConfuseWith: ["Wirkung", "Wirkstoff"]
+    synonyms: []
+    relatedTerms: ["wirkungspfad", "wirkungspotenzial", "wirkmechanismus"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Träger oder Vermittler von Wirkung verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsträger"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungsumsatzsteuer
+    canonicalLabel: "Wirkungsumsatzsteuer"
+    slug: "wirkungsumsatzsteuer"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Die Wirkungsumsatzsteuer ist ein Konzept, Umsatzsteuerlogik nach Produkt- oder Leistungswirkung zu differenzieren."
+    hoverDefinition: "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück."
+    longDefinition: "Die WUStG-Logik nutzt Wirkungsdaten, WÖk-IDs, Scorecards und Reverse Merit Order für steuerliche Rückkopplung."
+    usageNote: "Als Konzept/Entwurf kennzeichnen."
+    doNotConfuseWith: ["Mehrwertsteuer", "WStG"]
+    synonyms: ["WUStG", "Produktwirkungssteuer"]
+    relatedTerms: ["wustg", "wirkungssteuer", "scorecard", "woek-id"]
+    relatedDocuments: ["technische-leitlinien-wustg"]
+    examples: ["Apfelbeispiel"]
+    preferredUsage: "Als produktbezogene Wirkungssteuerlogik verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsumsatzsteuer"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wirkungswahrheit
+    canonicalLabel: "Wirkungswahrheit"
+    slug: "wirkungswahrheit"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Führende Mini-Definitionen"
+    shortDefinition: "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen."
+    hoverDefinition: "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen – kein Wahrheitsmonopol."
+    longDefinition: "Der Begriff beschreibt, ob Entscheidungen, Preise, Narrative oder Kennzahlen den tatsächlichen Folgen näherkommen oder sie verdecken."
+    usageNote: "Nicht als Wahrheitsmonopol formulieren."
+    doNotConfuseWith: ["absolute Wahrheit", "Meinungskontrolle"]
+    synonyms: ["wirkungsnah"]
+    relatedTerms: ["wirkungsblindheit", "wirkungsdatenraum", "wirkungsrat"]
+    relatedDocuments: []
+    examples: []
+    preferredUsage: "Als Transparenz- und Wirkungsnähebegriff verwenden."
+    deprecatedUsage: ["Wahrheitsmonopol"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungswahrheit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: social-credit
+    canonicalLabel: "Social Credit"
+    slug: "social-credit"
+    status: "schutzbegriff"
+    version: "1.1"
+    source: "Schutzrahmen_Personenbewertung_Datenschutz_SocialCredit_v1.1.md"
+    sourceDocument: "Schutzrahmen_Personenbewertung_Datenschutz_SocialCredit_v1.1.md"
+    sourceSection: "Social-Credit-Abgrenzung"
+    shortDefinition: "Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität."
+    hoverDefinition: "Social Credit ist die umfassende Bewertung von Menschen nach Verhalten oder Konformität. Die Wirkungsökonomie zieht hier eine rote Linie."
+    longDefinition: "Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, öffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhänge."
+    usageNote: "Bei Personen-, Konsum-, Medien-, Einkommens- und Bonusmodellen immer abgrenzen."
+    doNotConfuseWith: ["Wirkungsbewertung", "Wirkungspunkte", "Verbraucherinformation"]
+    synonyms: ["Sozialkredit", "Social-Credit-System"]
+    relatedTerms: ["wirkungspunkte", "wirkungswahrheit", "wirkungsrat"]
+    relatedDocuments: ["schutzrahmen-personenbewertung"]
+    examples: []
+    preferredUsage: "Als rote Linie und Missbrauchsschutz verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "social credit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-24"
+  - termId: woek-id
+    canonicalLabel: "WÖk-ID"
+    slug: "woek-id"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems."
+    hoverDefinition: "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie."
+    longDefinition: "WÖk-IDs verbinden SDGs, SDG+, Targets, Indikatorfamilien, Datenquellen und Bewertungslogik in einem Register."
+    usageNote: "Schreibweise WÖk-ID verwenden, sofern Kontext eindeutig."
+    doNotConfuseWith: ["NACE", "Produkt-ID"]
+    synonyms: ["WOK-ID", "Wok ID", "WÖK ID"]
+    relatedTerms: ["scorecard", "benchmark", "wirkungsdatenraum"]
+    relatedDocuments: ["woek-master-items"]
+    examples: []
+    preferredUsage: "WÖk-ID als Registerkennung verwenden."
+    deprecatedUsage: ["WOK-ID"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wök id"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wstg
+    canonicalLabel: "WStG"
+    slug: "wstg"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung."
+    hoverDefinition: "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule."
+    longDefinition: "Das WStG strukturiert die rechtliche Rahmung von Wirkungssteuerung und Wirkungsrückkopplung."
+    usageNote: "Als Entwurf/Konzept kennzeichnen."
+    doNotConfuseWith: ["WUStG"]
+    synonyms: ["Wirkungssteuergesetz"]
+    relatedTerms: ["wirkungssteuergesetz", "wirkungssteuer", "wustg"]
+    relatedDocuments: ["wstg-oktober-2025"]
+    examples: []
+    preferredUsage: "WStG für den Rahmen verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wstg"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"
+  - termId: wustg
+    canonicalLabel: "WUStG"
+    slug: "wustg"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Instrumente"
+    shortDefinition: "WUStG steht für Wirkungsumsatzsteuergesetz, den Entwurf für produkt- und leistungsbezogene Wirkungsrückkopplung."
+    hoverDefinition: "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur."
+    longDefinition: "Das WUStG beschreibt, wie Produkt- und Leistungswirkung über Umsatzsteuerlogiken differenziert werden könnte."
+    usageNote: "Als Entwurf/Konzept kennzeichnen."
+    doNotConfuseWith: ["WStG", "Mehrwertsteuer"]
+    synonyms: ["Wirkungsumsatzsteuergesetz"]
+    relatedTerms: ["wirkungsumsatzsteuer", "wirkungssteuer", "scorecard", "woek-id"]
+    relatedDocuments: ["technische-leitlinien-wustg"]
+    examples: ["Apfelbeispiel"]
+    preferredUsage: "WUStG für produktbezogene Wirkungsumsatzsteuer verwenden."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "wustg"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-05-23"

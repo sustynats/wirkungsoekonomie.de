@@ -1,4 +1,4 @@
-# 34 - Bürger:innenfonds, Wirkungsrente und Teilhabe am Kapital
+# 34 – Bürger:innenfonds, Wirkungsrente und Teilhabe am Kapital
 
 **Untertitel:** Wirkungsgebundene Kapitalteilhabe, soziale Stabilität und Generationenvertrag im Finanzsystem
 

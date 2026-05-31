@@ -75,7 +75,7 @@ Diese Treffer wurden nur erfasst und nicht korrigiert.
 | `Wirkungswahrheit` | 49 Treffer | Schutzsatz prüfen: Wirkungsnähe, Datenklarheit und Transparenz über Folgen, kein Wahrheitsmonopol. |
 | `Personen bewerten` | 1 Treffer in bestehender Matrix | In sensiblen Modulen als Negativabgrenzung sinnvoll; konkrete Webtexte auf Personenbewertungsschutz prüfen. |
 | `Wirkungspunkte` | 22 Treffer, u. a. Apfel, Lieferkette, Maschinen, T-SROI | Bei Bürger:innen/Einkommen/Rente besonders prüfen: keine Social-Credit-Logik, keine Lebensstilbewertung. |
-| `-100 bis +100` / `-100 bis +100` | Treffer in `dokumente/wstg-oktober-2025/` und neuen Entwurfsdocs | Als Normierungs-/Darstellungsebene behandeln; Primärlogik -3/+3, FinalScore, NWI und WIF sauber verbinden. |
+| `–100 bis +100` / `-100 bis +100` | Treffer in `dokumente/wstg-oktober-2025/` und neuen Entwurfsdocs | Als Normierungs-/Darstellungsebene behandeln; Primärlogik -3/+3, FinalScore, NWI und WIF sauber verbinden. |
 | `gewichteter Mittelwert` / `Gesamtwirkungswert` | Treffer in historischen Hinweisen und WStG-Import | Alte Mittelwertlogik nicht ungeprüft übernehmen; Reverse Merit Order und Nichtkompensation vorrangig. |
 | `Vorsteuerabzug nur bei positiven Lieferungen` | 1 Treffer: `dokumente/wirkungsoekonomie-in-der-lieferkette/` | Rechtlich/methodisch prüfen; als Zielarchitektur oder Pilotannahme, nicht als fertiges Steuerrecht. |
 

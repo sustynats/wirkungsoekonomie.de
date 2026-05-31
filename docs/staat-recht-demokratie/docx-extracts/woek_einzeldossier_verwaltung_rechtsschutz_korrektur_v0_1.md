@@ -48,9 +48,9 @@ Dieses Einzeldossier ist kein fertiges Parteiprogramm. Es benennt notwendige Auf
 
 Buchanker und Website-Zuordnung
 
-Online-Buch: Teil VI - Recht, Staat und Institutionen
+Online-Buch: Teil VI – Recht, Staat und Institutionen
 
-Online-Buch: Teil X - Staat, Politik und Demokratie
+Online-Buch: Teil X – Staat, Politik und Demokratie
 
 Website: /wirkungsfelder/staat-recht-demokratie/
 
@@ -60,16 +60,16 @@ Werkzeugseiten: /werkzeuge/wirkungsrat/, /werkzeuge/wirkungshaushalt/, /werkzeug
 
 Quellen und interne Referenzen
 
-Weber, Natalie: Die neue Ordnung des Wohlstands. Arbeitsfassung 2026. Besonders: Kapitel 10-23, 28, 31-40, 61-66.
+Weber, Natalie: Die neue Ordnung des Wohlstands. Arbeitsfassung 2026. Besonders: Kapitel 10–23, 28, 31–40, 61–66.
 
 Weber, Natalie: Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026.
 
 Weber, Natalie: Working-Paper Wirkungssteuergesetz (WStG), Stand 8.10.2025.
 
-Weber, Natalie: Der Wirkungsrat - Institutionelle Verankerung der Wirkungsökonomie, September 2025.
+Weber, Natalie: Der Wirkungsrat – Institutionelle Verankerung der Wirkungsökonomie, September 2025.
 
 Weber, Natalie: Technische Leitlinien zum Wirkungssteuergesetz (WUStG), Vollversion Extended, August 2025.
 
-Weber, Natalie: Whitepaper T-SROI - Der neue Standard für Impact-Controlling in der Wirkungsökonomie, 2025.
+Weber, Natalie: Whitepaper T-SROI – Der neue Standard für Impact-Controlling in der Wirkungsökonomie, 2025.
 
 Weber, Natalie: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026, Teil VI und Teil X.

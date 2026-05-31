@@ -212,7 +212,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
+  return `<script src="${base}assets/js/main.js?v=20260523-reference-ux"></script>
     <script src="${base}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>`;
 }
 
@@ -711,7 +711,7 @@ function releaseV11Html() {
       <div>
         <nav class="breadcrumb"><a href="../">Referenz</a> / <a href="../versionen/">Versionen</a> / Version 1.1</nav>
         <p class="hero-kicker">Release Candidate</p>
-        <h1>Version 1.1 - Begriffliche Präzisierung und Referenzordnung</h1>
+        <h1>Version 1.1 – Begriffliche Präzisierung und Referenzordnung</h1>
         <p class="hero-subtitle">Release Candidate der Wirkungsökonomie auf Grundlage des Führenden Begriffsleitfadens, Stand 21. Mai 2026.</p>
       </div>
     </section>
@@ -864,7 +864,6 @@ function legacyPartRedirectHtml(part) {
       <p>Diese frühere Referenzroute wurde durch eine sprechende Route ersetzt.</p>
       <p><a href="../${esc(part.slug)}/">Zur korrigierten Teilseite wechseln</a></p>
     </main>
-    <script src="../../assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>`;
 }
@@ -1107,7 +1106,7 @@ Stand: ${new Date().toISOString().slice(0, 10)}
 - Hauptdatei: \`assets/css/style.css\`
 - Navigation: \`assets/data/navigation.json\`, \`templates/header.html\`, \`templates/footer.html\`
 - Bestehende Suche: \`assets/search/search-index.json\`, \`assets/js/search.js\`, ergänzt über \`tools/build_search_index.py\` und \`scripts/search/build-woek-search-index.mjs\`
-- Bestehende Interaktion: \`assets/js/main.js?v=20260529-glossary-hover-audit\` für Navigation, Glossar-Hovers und Seitengrundlogik
+- Bestehende Interaktion: \`assets/js/main.js\` für Navigation, Glossar-Hovers und Seitengrundlogik
 
 ## Farben
 
@@ -1187,7 +1186,7 @@ Prioritäre Arbeitspapiere erscheinen als gestaltete Webdokumente mit Dokument-H
 
 ## Glossar-Hovers
 
-Die bestehenden Glossar-Hovers aus \`assets/js/main.js?v=20260529-glossary-hover-audit\` werden auf Referenz- und Dokumentseiten geladen. Zentrale Begriffe werden clientseitig kontrolliert beim ersten Vorkommen verlinkt; mobile Nutzung öffnet ein Sheet.
+Die bestehenden Glossar-Hovers aus \`assets/js/main.js\` werden auf Referenz- und Dokumentseiten geladen. Zentrale Begriffe werden clientseitig kontrolliert beim ersten Vorkommen verlinkt; mobile Nutzung öffnet ein Sheet.
 
 ## Quellenkarten
 

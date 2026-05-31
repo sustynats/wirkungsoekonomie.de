@@ -127,6 +127,60 @@ def buttons(items: list[tuple[str, str]]) -> str:
     ) + "</div>"
 
 
+def source_anchor(label: str, href: str) -> str:
+    return f'<a href="{e(href)}">{e(label)}</a>'
+
+
+SOURCE_LINKS: dict[str, str] = {
+    "Führender Begriffsleitfaden der Wirkungsökonomie v1.0": source_anchor("Führender Begriffsleitfaden der Wirkungsökonomie v1.0", "../begriffe/"),
+    "Führender Begriffsleitfaden": source_anchor("Führender Begriffsleitfaden", "../begriffe/"),
+    "Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026": source_anchor("Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026", "../referenz/"),
+    "Systemmodell der Wirkungsökonomie": source_anchor("Systemmodell der Wirkungsökonomie", "../dokumente/systemmodell-der-wirkungsoekonomie/"),
+    "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur": source_anchor("Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur", "../referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/"),
+    "WStG / WUStG / technische Leitlinien": f'{source_anchor("WStG", "../dokumente/wstg-oktober-2025/")} / {source_anchor("WUStG / technische Leitlinien", "../dokumente/technische-leitlinien-wustg-v2/")}',
+    "Die neue Ordnung des Wohlstands, Kapitel zu Öffentlichkeit, Plattformlogik, Framing, Sprache, Desinformation, Creator-Verantwortung und Diskurskultur": source_anchor("Die neue Ordnung des Wohlstands, Kapitel zu Öffentlichkeit, Plattformlogik, Framing, Sprache, Desinformation, Creator-Verantwortung und Diskurskultur", "../referenz/teil-12-medien-kommunikation-und-oeffentlichkeit/"),
+    "Leitbild Mensch, Planet und Demokratie: Medien als demokratische Infrastruktur": source_anchor("Leitbild Mensch, Planet und Demokratie: Medien als demokratische Infrastruktur", "../referenz/teil-04-mensch-planet-und-demokratie/"),
+    "Die neue Ordnung des Wohlstands, Teil VII: Unternehmen, Management und Wertschöpfung": source_anchor("Die neue Ordnung des Wohlstands, Teil VII: Unternehmen, Management und Wertschöpfung", "../referenz/teil-07-unternehmen-management-und-wertschoepfung/"),
+    "Kapitel Unternehmen als Wirkungssysteme, Wirkungscontrolling, Organisation/Kultur/Verantwortung, Lieferkettensteuerung und Unternehmensrisiko": "Kapitel "
+    + ", ".join([
+        source_anchor("Unternehmen als Wirkungssysteme", "../referenz/kapitel-042-unternehmen-als-wirkungssysteme/"),
+        source_anchor("Wirkungscontrolling", "../referenz/kapitel-044-wirkungscontrolling-im-unternehmen/"),
+        source_anchor("Organisation/Kultur/Verantwortung", "../referenz/kapitel-045-organisation-kultur-und-verantwortung/"),
+        source_anchor("Lieferkettensteuerung", "../referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/"),
+    ])
+    + " und "
+    + source_anchor("Unternehmensrisiko", "../referenz/kapitel-047-unternehmensrisiko-und-transformation/"),
+    "Systemmodell der WÖk: Wirtschaft als Wirkungssystem, Kapital als Wirkungskraft": source_anchor("Systemmodell der WÖk: Wirtschaft als Wirkungssystem, Kapital als Wirkungskraft", "../dokumente/systemmodell-der-wirkungsoekonomie/"),
+    "Die neue Ordnung des Wohlstands, Teile VI und X: Recht, Staat, Institutionen, Wirkungshaushalt, Wirkungsrat, Politik als Wirkungsraum": f'{source_anchor("Die neue Ordnung des Wohlstands, Teil VI: Recht, Staat und Institutionen", "../referenz/teil-06-recht-staat-und-institutionen/")} / {source_anchor("Teil X: Staat, Politik und Demokratie", "../referenz/teil-10-staat-politik-und-demokratie/")}',
+    "WStG": source_anchor("WStG", "../dokumente/wstg-oktober-2025/"),
+    "Die neue Ordnung des Wohlstands, Kapitel zu Konsumwirkung, Verbraucherinformation, Alltag, Bürger:innenwirkung, Wirkungskompetenz und Öffentlichkeit": source_anchor("Die neue Ordnung des Wohlstands, Kapitel zu Konsumwirkung, Verbraucherinformation, Alltag, Bürger:innenwirkung, Wirkungskompetenz und Öffentlichkeit", "../referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/"),
+    "Produktpapier und Apfelbeispiel": f'{source_anchor("Produktpapier", "../dokumente/wp-produkte/")} und {source_anchor("Apfelbeispiel", "../dokumente/beispiel-apfel-wirkungssteuer-bonusregel/")}',
+    "Die neue Ordnung des Wohlstands, Kapitel Wohnen": source_anchor("Die neue Ordnung des Wohlstands, Kapitel Wohnen", "../referenz/kapitel-070-wohnen/"),
+    "Working-Paper Wohnungsmarkt": source_anchor("Working-Paper Wohnungsmarkt", "../dokumente/wp-wohnungsmarkt/"),
+    "Systemmodell: lebenswerte Räume, WIX-Wohn, Sozialraumprofile, kommunale Resilienz": source_anchor("Systemmodell: lebenswerte Räume, WIX-Wohn, Sozialraumprofile, kommunale Resilienz", "../wirkungsfelder/wohnen-stadt/"),
+    "Die neue Ordnung des Wohlstands, Kapitel zu Kapital als Werkzeug, Kapitalwirkung, T-SROI, Kapitalmärkte und Fonds": source_anchor("Die neue Ordnung des Wohlstands, Kapitel zu Kapital als Werkzeug, Kapitalwirkung, T-SROI, Kapitalmärkte und Fonds", "../referenz/teil-09-volkswirtschaft-arbeit-kapital-und-wohlstand/"),
+    "Whitepaper T-SROI": source_anchor("Whitepaper T-SROI", "../dokumente/whitepaper-t-sroi/"),
+    "Systemmodell: Kapital als Wirkungskraft": source_anchor("Systemmodell: Kapital als Wirkungskraft", "../dokumente/systemmodell-der-wirkungsoekonomie/"),
+    "Die neue Ordnung des Wohlstands, Kapitel zu Kommunen, Wirkungshaushalt, Wohnen, Gesundheit, Pflege, Bildung, Resilienzstaat": source_anchor("Die neue Ordnung des Wohlstands, Kapitel zu Kommunen, Wirkungshaushalt, Wohnen, Gesundheit, Pflege, Bildung, Resilienzstaat", "../referenz/teil-10-staat-politik-und-demokratie/"),
+    "Systemmodell: lebenswerte Räume, Urban Impact Planning, kommunale Wirkungsbudgets": source_anchor("Systemmodell: lebenswerte Räume, Urban Impact Planning, kommunale Wirkungsbudgets", "../wirkungsfelder/wohnen-stadt/"),
+    "Die neue Ordnung des Wohlstands, Kapitel Bildung, Wirkungskompetenz, Wissenschaft, Akademie-Logik": source_anchor("Die neue Ordnung des Wohlstands, Kapitel Bildung, Wirkungskompetenz, Wissenschaft, Akademie-Logik", "../referenz/kapitel-067-bildung/"),
+    "Systemmodell: Fach Zukunft, Wirkungskompetenz-Akademie, Bildungs- und Wissenskompetenz": source_anchor("Systemmodell: Fach Zukunft, Wirkungskompetenz-Akademie, Bildungs- und Wissenskompetenz", "../begriffe/wirkungskompetenz/"),
+    "Die neue Ordnung des Wohlstands, Teil XIV: Wissenschaft als Wirkungsinfrastruktur": source_anchor("Die neue Ordnung des Wohlstands, Teil XIV: Wissenschaft als Wirkungsinfrastruktur", "../referenz/teil-14-wissen-wissenschaft-forschung-und-rechtsprechung/"),
+    "Grundlagenpapier zu Auswirkungen auf Wissenschaft": source_anchor("Grundlagenpapier zu Auswirkungen auf Wissenschaft", "../wirkungsfelder/wissenschaft-innovation-digitalisierung/"),
+    "Die neue Ordnung des Wohlstands, Kapitel Gesundheit und Pflege": f'{source_anchor("Die neue Ordnung des Wohlstands, Kapitel Gesundheit", "../referenz/kapitel-068-gesundheit/")} und {source_anchor("Pflege", "../referenz/kapitel-069-pflege/")}',
+    "Systemmodell der WÖk: Gesundheit, Pflege & Leben; Prävention statt Reparatur; One Health; psychische Gesundheit; kommunale Gesundheitsräume": source_anchor("Systemmodell der WÖk: Gesundheit, Pflege & Leben; Prävention statt Reparatur; One Health; psychische Gesundheit; kommunale Gesundheitsräume", "../wirkungsfelder/gesundheit-pflege/"),
+    "Die neue Ordnung des Wohlstands, Kapitel Arbeit, Automatisierung und Maschinenleistung, Wirkungseinkommen, Kapitalmärkte und Fonds": source_anchor("Die neue Ordnung des Wohlstands, Kapitel Arbeit, Automatisierung und Maschinenleistung, Wirkungseinkommen, Kapitalmärkte und Fonds", "../referenz/teil-09-volkswirtschaft-arbeit-kapital-und-wohlstand/"),
+    "Arbeitspapier Wirkungseinkommensteuer": source_anchor("Arbeitspapier Wirkungseinkommensteuer", "../wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/"),
+    "Systemmodell: Wirkungsfonds, Automatisierungsdividende, Wirkungsdividende": source_anchor("Systemmodell: Wirkungsfonds, Automatisierungsdividende, Wirkungsdividende", "../wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/"),
+    "Die neue Ordnung des Wohlstands, Kapitel Wirkungsrente, Wirkungseinkommen, Kapitalmärkte und Fonds": source_anchor("Die neue Ordnung des Wohlstands, Kapitel Wirkungsrente, Wirkungseinkommen, Kapitalmärkte und Fonds", "../referenz/teil-09-volkswirtschaft-arbeit-kapital-und-wohlstand/"),
+    "WP_Rente": source_anchor("WP_Rente", "../wirkungsfelder/rente-soziale-sicherung/"),
+}
+
+
+def source_item(item: str) -> str:
+    return SOURCE_LINKS.get(item, e(item))
+
+
 VISUAL_ASSIGNMENTS: dict[str, list[dict[str, str]]] = {
     "journalismus": [{
         "file": "../assets/visuals/flows/woek_journalismus_faktencheck_wirkungsanalyse.svg",
@@ -264,7 +318,7 @@ def why_not_enough(page: dict[str, object], slug: str) -> str:
 def source_panel(page: dict[str, object]) -> str:
     sources = list(COMMON_SOURCES) + list(page.get("sources", []))
     status = str(page.get("public_status", page.get("status", "veröffentlicht")))
-    source_items = "".join(f"<li>{e(item)}</li>" for item in sources)
+    source_items = "".join(f"<li>{source_item(str(item))}</li>" for item in sources)
     return f"""<details class="source-panel" open>
       <summary>Grundlage dieser Seite</summary>
       <div>

@@ -112,7 +112,7 @@ Transparenz, Beteiligung, Verdrängungsschutz, Gemeinwesen
 
 • Wohnwirkungsindex WIX-Wohn: verbindet Energie/Klima, Mietfairness und Sozial-/Quartierswirkung zu einer steuerungsfähigen Kennzahl.
 
-• Sozialraumprofil SRP: macht Quartierswirkung sichtbar - Miete, Mobilität, Grün, Hitze, Versorgung, Gesundheit, Teilhabe und digitale Infrastruktur.
+• Sozialraumprofil SRP: macht Quartierswirkung sichtbar – Miete, Mobilität, Grün, Hitze, Versorgung, Gesundheit, Teilhabe und digitale Infrastruktur.
 
 • Warmmietenneutralitätsprüfung: prüft, ob Sanierung ökologische Wirkung erzeugt, ohne Wohnkostenkrisen zu verschärfen.
 
@@ -158,7 +158,7 @@ Die folgenden Quellen dienen als Ausgangspunkt für die Online-Fassung, die Bere
 
 • BBSR: Wohnungsbedarfsprognose 2025: https://www.bbsr.bund.de/BBSR/DE/presse/presseinformationen/2025/wohnungsbedarfsprognose.html
 
-• Umweltbundesamt: Emissionsdaten 2024 - Gebäude: https://www.umweltbundesamt.de/system/files?file=medien/11867/dokumente/emissionsdaten_2024_-_pressehintergrundinformationen.pdf
+• Umweltbundesamt: Emissionsdaten 2024 – Gebäude: https://www.umweltbundesamt.de/system/files?file=medien/11867/dokumente/emissionsdaten_2024_-_pressehintergrundinformationen.pdf
 
 • Europäische Kommission: Energy Performance of Buildings Directive: https://energy.ec.europa.eu/topics/energy-efficiency/energy-performance-buildings/energy-performance-buildings-directive_en
 

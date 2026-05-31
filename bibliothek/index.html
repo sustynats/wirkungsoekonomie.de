@@ -1,55 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bibliothek - Wirkungsökonomie</title>
-    <meta name="description" content="Zentrale Bibliothek der Wirkungsökonomie.">
-    <link rel="canonical" href="https://wirkungsoekonomie.de/bibliothek/">
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:site_name" content="Wirkungsökonomie">
-    <meta property="og:title" content="Bibliothek">
-    <meta property="og:description" content="Zentrale Bibliothek der Wirkungsökonomie.">
-    <meta property="og:url" content="https://wirkungsoekonomie.de/bibliothek/">
-    <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260526-document-library">
-    <meta http-equiv="refresh" content="0; url=/downloads.html">
-    <script>window.location.replace("/downloads.html");</script>
+    <title>Bibliothek | Geführte Wissensbibliothek der Wirkungsökonomie</title>
+    <meta name="description" content="Kuratierte Dokumentenbibliothek der Wirkungsökonomie mit Dokumentart, Status, Niveau, Zielgruppe, Lesepfaden und Schutzlinien.">
+    <meta name="search_title" content="Bibliothek | Geführte Wissensbibliothek der Wirkungsökonomie">
+    <meta name="search_description" content="Kuratierte Dokumentenbibliothek der Wirkungsökonomie mit Dokumentart, Status, Niveau, Zielgruppe, Lesepfaden und Schutzlinien.">
+    <meta name="search_section" content="Bibliothek">
+    <meta name="search_type" content="Dokument">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260525-tool-explainer-final2">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="/assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
         <span class="brand-name">Wirkungsökonomie</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-icon" aria-hidden="true">☰</span>
         <span class="sr-only">Menü</span>
       </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <a href="/">Start</a>
-        <a href="/verstehen.html">Verstehen</a>
-        <a href="/wirkungsfelder/">Wirkungsfelder</a>
-        <a href="/fuer/">Für wen?</a>
-        <a href="/erleben.html">Ausprobieren</a>
-        <a href="/akademie.html">Akademie</a>
-        <a href="/downloads.html">Bibliothek</a>
-        <a href="/suche.html">Suche</a>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../index.html" data-nav-match="index.html">Start</a>
+        <a href="../verstehen.html" data-nav-match="verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/">Verstehen</a>
+        <a href="../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html">Methoden &amp; Werkzeuge</a>
+        <a href="../erleben/" data-nav-match="erleben.html|erleben/|ausprobieren/">Erleben</a>
+        <a href="../akademie.html" data-nav-match="akademie.html|akademie/">Akademie</a>
+        <a href="../downloads.html" data-nav-match="bibliothek/|downloads.html|dokumente/|referenz/|buch.html">Bibliothek</a>
+        <a href="../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/|fuer/">Mitmachen</a>
+        <a href="../suche.html" data-nav-match="suche.html">Suche</a>
       </nav>
     </header>
-    <main>
-<section class="hero"><div><p class="hero-kicker">Bibliothek</p><h1 class="hero-title">Alle Dokumente an einem Ort.</h1><p class="hero-subtitle">Du wirst zur vollständigen Bibliothek mit Büchern, langen Ausarbeitungen, Thesenpapieren, Beispielen, Methodik und Rechtsentwürfen weitergeleitet.</p><div class="hero-actions"><a class="btn btn-primary" href="/downloads.html">Zur Bibliothek</a></div></div></section>
+    <main data-pagefind-body>
+
+      <section class="hero compact-hero document-library-hero">
+        <p class="hero-kicker">Geführte Wissensbibliothek</p>
+        <h1>Dokumente nach Art, Status und Reifegrad</h1>
+        <p class="hero-subtitle">Jede Kachel sagt vor dem Klick, ob du eine Kurzfassung, ein Manifest, ein Whitepaper, ein Working Paper, ein technisches Register, ein Fallbeispiel oder einen Gesetzesentwurf öffnest und welchen Veröffentlichungsstatus das Dokument hat.</p>
+      </section>
+      <section class="section document-library-controls" data-search-exclude>
+        <div class="document-filter-grid">
+          <label>Dokumentart<select data-document-filter="type"><option value="">Alle</option><option value="gesetzesentwurf">gesetzesentwurf</option><option value="grundlagenpapier">grundlagenpapier</option><option value="konzept">konzept</option><option value="kurzfassung">kurzfassung</option><option value="leitbild">leitbild</option><option value="manifest">manifest</option><option value="technische-leitlinie">technische-leitlinie</option><option value="whitepaper">whitepaper</option><option value="working-paper">working-paper</option></select></label>
+          <label>Status<select data-document-filter="status"><option value="">Alle</option><option value="aktuell">aktuell</option><option value="diskussionsfassung">diskussionsfassung</option><option value="fachoeffentlich">fachoeffentlich</option></select></label>
+          <label>Zielgruppe<select data-document-filter="audience"><option value="">Alle</option><option value="Beschaffung">Beschaffung</option><option value="Bildung">Bildung</option><option value="Bürger:innen">Bürger:innen</option><option value="Daten">Daten</option><option value="Einsteiger:innen">Einsteiger:innen</option><option value="Fachöffentlichkeit">Fachöffentlichkeit</option><option value="Impact Controlling">Impact Controlling</option><option value="Jurist:innen">Jurist:innen</option><option value="Lieferketten">Lieferketten</option><option value="Methodik">Methodik</option><option value="Mitgestalter:innen">Mitgestalter:innen</option><option value="Pilotierung">Pilotierung</option><option value="Politik">Politik</option><option value="Unternehmen">Unternehmen</option><option value="Verwaltung">Verwaltung</option><option value="Wissenschaft">Wissenschaft</option></select></label>
+          <label>Niveau<select data-document-filter="level"><option value="">Alle</option><option value="einsteiger">einsteiger</option><option value="expert">expert</option><option value="fortgeschritten">fortgeschritten</option><option value="juristisch">juristisch</option><option value="technisch">technisch</option></select></label>
+          <label>Thema<select data-document-filter="topic"><option value="">Alle</option><option value="Customer Journey">Customer Journey</option><option value="Datenqualität">Datenqualität</option><option value="Evaluation">Evaluation</option><option value="Grundlagen">Grundlagen</option><option value="Impact Controlling">Impact Controlling</option><option value="Leitbild">Leitbild</option><option value="Lieferkette">Lieferkette</option><option value="Manifest">Manifest</option><option value="Mensch-Planet-Demokratie">Mensch-Planet-Demokratie</option><option value="Mitgestaltung">Mitgestaltung</option><option value="Positive Netto-Wirkung">Positive Netto-Wirkung</option><option value="Produktwirkung">Produktwirkung</option><option value="Recht">Recht</option><option value="Rechtsschutz">Rechtsschutz</option><option value="Rückkopplung">Rückkopplung</option><option value="SDGs &amp; SDG+">SDGs &amp; SDG+</option><option value="Steuerung">Steuerung</option><option value="Systemmodell">Systemmodell</option><option value="T-SROI">T-SROI</option><option value="Transformationswirkung">Transformationswirkung</option><option value="Wirkung statt Kapital">Wirkung statt Kapital</option><option value="Wirkungsarchitektur">Wirkungsarchitektur</option><option value="Wirkungsrat">Wirkungsrat</option><option value="WÖk-IDs">WÖk-IDs</option><option value="WStG">WStG</option><option value="WUStG">WUStG</option></select></label>
+          <label>Methode<select data-document-filter="method"><option value="">Alle</option><option value="Begriffliche Orientierung">Begriffliche Orientierung</option><option value="Datenqualität &amp; Assurance">Datenqualität &amp; Assurance</option><option value="Evaluation">Evaluation</option><option value="Impact Controlling">Impact Controlling</option><option value="Scorecards">Scorecards</option><option value="T-SROI">T-SROI</option><option value="Wirkungsarchitektur">Wirkungsarchitektur</option><option value="Wirkungsrat">Wirkungsrat</option><option value="Wirkungsrückkopplung">Wirkungsrückkopplung</option><option value="Wirkungssteuerung">Wirkungssteuerung</option><option value="Wirkungsumsatzsteuer">Wirkungsumsatzsteuer</option><option value="WÖk-IDs">WÖk-IDs</option></select></label>
+          <label>Wirkungsfeld<select data-document-filter="field"><option value="">Alle</option><option value="Daten &amp; Infrastruktur">Daten &amp; Infrastruktur</option><option value="Demokratie">Demokratie</option><option value="Mensch">Mensch</option><option value="Planet">Planet</option><option value="Planet &amp; Resilienz">Planet &amp; Resilienz</option><option value="Staat &amp; Demokratie">Staat &amp; Demokratie</option><option value="Wirtschaft &amp; Kapital">Wirtschaft &amp; Kapital</option></select></label>
+          <label>Sortierung<select data-document-sort><option value="editorial">Redaktionelle Reihenfolge</option><option value="date">Datum</option><option value="pages">Umfang</option><option value="level">Niveau</option></select></label>
+        </div>
+      </section>
+      <section class="section section-muted">
+        <div class="section-header">
+          <p class="hero-kicker">Lesepfade</p>
+          <h2>Kuratierte Wege statt Dateiablage</h2>
+        </div>
+        <div class="document-reading-path-grid">
+          <article class="document-reading-path"><h3>Einstieg in 30 Minuten</h3><p>Vom schnellen Einstieg zum Leitbild und Grundmodell.</p><ol><li><a href="../bibliothek/minifest-wirkungsoekonomie/">Minifest Wirkungsökonomie</a></li><li><a href="../bibliothek/leitbild-mensch-planet-demokratie/">Leitbild für Mensch, Planet und Demokratie</a></li><li><a href="../bibliothek/grundlagenpapier-wirkungsoekonomie/">Grundlagenpapier Wirkungsökonomie</a></li></ol></article>
+          <article class="document-reading-path"><h3>Für Unternehmen</h3><p>Von Grundlagen über T-SROI und Lieferketten zu technischer Methodik.</p><ol><li><a href="../bibliothek/grundlagenpapier-wirkungsoekonomie/">Grundlagenpapier Wirkungsökonomie</a></li><li><a href="../bibliothek/whitepaper-t-sroi/">Whitepaper T-SROI</a></li><li><a href="../bibliothek/wirkungsoekonomie-lieferkette/">Wirkungsökonomie in der Lieferkette</a></li><li><a href="../bibliothek/technische-leitlinien-wustg/">Technische Leitlinien WUStG</a></li></ol></article>
+          <article class="document-reading-path"><h3>Für Politik und Verwaltung</h3><p>Recht, Wirkungshaushalt, Wirkungsrat und Schutzlinien.</p><ol><li><a href="../bibliothek/grundlagenpapier-wirkungsoekonomie/">Grundlagenpapier Wirkungsökonomie</a></li><li><a href="../bibliothek/wstg-oktober-2025/">WStG Oktober 2025</a></li><li><a href="../bibliothek/wirkungsrat-konzept/">Wirkungsrat Konzept</a></li></ol></article>
+          <article class="document-reading-path"><h3>Für Wissenschaft und Methodik</h3><p>Systemarchitektur, T-SROI und technische Leitlinien.</p><ol><li><a href="../bibliothek/systemmodell-wirkungsoekonomie/">Systemmodell der Wirkungsökonomie</a></li><li><a href="../bibliothek/whitepaper-t-sroi/">Whitepaper T-SROI</a></li><li><a href="../bibliothek/technische-leitlinien-wustg/">Technische Leitlinien WUStG</a></li></ol></article>
+          <article class="document-reading-path"><h3>Für Bürger:innen</h3><p>Kurz und verständlich starten.</p><ol><li><a href="../bibliothek/minifest-wirkungsoekonomie/">Minifest Wirkungsökonomie</a></li><li><a href="../bibliothek/leitbild-mensch-planet-demokratie/">Leitbild für Mensch, Planet und Demokratie</a></li><li><a href="../bibliothek/woek-manifest/">WÖk-Manifest</a></li></ol></article>
+        </div>
+      </section>
+      <section class="section document-library-section" id="empfohlener-einstieg">
+      <div class="section-header">
+        <p class="hero-kicker">Empfohlener Einstieg</p>
+        <h2>Empfohlener Einstieg</h2>
+      </div>
+      <div class="document-card-grid"><article class="document-card" data-document-card data-type="kurzfassung" data-status="aktuell" data-level="einsteiger" data-audience="Einsteiger:innen Bürger:innen" data-topics="Grundlagen Customer Journey Wirkung statt Kapital" data-methods="Begriffliche Orientierung" data-fields="Mensch Planet Demokratie" data-order="10" data-date="2026-05" data-pages="4">
+    <div class="document-card-badges"><span class="status-badge status-badge--kurzfassung">kurzfassung</span><span class="status-badge status-badge--aktuell">aktuell</span><span class="status-badge status-badge--einsteiger">Niveau: einsteiger</span></div>
+    <h3>Minifest Wirkungsökonomie</h3>
+    <p>Sehr kurzer Einstieg in die Grundidee der Wirkungsökonomie.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>4 Seiten · 7 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Einsteiger:innen</span><span>Bürger:innen</span></div>
+    <div class="document-chip-row muted"><span>Grundlagen</span><span>Customer Journey</span><span>Wirkung statt Kapital</span></div>
+    <a class="btn btn-primary" href="../bibliothek/minifest-wirkungsoekonomie/">Dokument ansehen</a>
+  </article></div>
+    </section>
+<section class="section document-library-section" id="grundlagen-leitbild">
+      <div class="section-header">
+        <p class="hero-kicker">Grundlagen &amp; Leitbild</p>
+        <h2>Grundlagen &amp; Leitbild</h2>
+      </div>
+      <div class="document-card-grid"><article class="document-card" data-document-card data-type="leitbild" data-status="aktuell" data-level="einsteiger" data-audience="Einsteiger:innen Politik Bildung" data-topics="Mensch-Planet-Demokratie Leitbild Positive Netto-Wirkung" data-methods="Begriffliche Orientierung" data-fields="Mensch Planet Demokratie" data-order="20" data-date="2026-05" data-pages="17">
+    <div class="document-card-badges"><span class="status-badge status-badge--leitbild">leitbild</span><span class="status-badge status-badge--aktuell">aktuell</span><span class="status-badge status-badge--einsteiger">Niveau: einsteiger</span></div>
+    <h3>Leitbild für Mensch, Planet und Demokratie</h3>
+    <p>Verständliches Leitbild für die Ausrichtung auf Mensch, Planet und Demokratie.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>17 Seiten · 29 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Einsteiger:innen</span><span>Politik</span><span>Bildung</span></div>
+    <div class="document-chip-row muted"><span>Mensch-Planet-Demokratie</span><span>Leitbild</span><span>Positive Netto-Wirkung</span></div>
+    <a class="btn btn-primary" href="../bibliothek/leitbild-mensch-planet-demokratie/">Dokument ansehen</a>
+  </article>
+<article class="document-card" data-document-card data-type="manifest" data-status="aktuell" data-level="einsteiger" data-audience="Einsteiger:innen Mitgestalter:innen" data-topics="Manifest Wirkung statt Kapital Mitgestaltung" data-methods="Begriffliche Orientierung" data-fields="Mensch Planet Demokratie" data-order="30" data-date="2026-05" data-pages="18">
+    <div class="document-card-badges"><span class="status-badge status-badge--manifest">manifest</span><span class="status-badge status-badge--aktuell">aktuell</span><span class="status-badge status-badge--einsteiger">Niveau: einsteiger</span></div>
+    <h3>WÖk-Manifest</h3>
+    <p>Programmatischer Aufruf zur neuen Ordnung „Wirkung statt Kapital“.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>18 Seiten · 31 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Einsteiger:innen</span><span>Mitgestalter:innen</span></div>
+    <div class="document-chip-row muted"><span>Manifest</span><span>Wirkung statt Kapital</span><span>Mitgestaltung</span></div>
+    <a class="btn btn-primary" href="../bibliothek/woek-manifest/">Dokument ansehen</a>
+  </article>
+<article class="document-card" data-document-card data-type="grundlagenpapier" data-status="aktuell" data-level="fortgeschritten" data-audience="Einsteiger:innen Fachöffentlichkeit Politik" data-topics="Grundlagen Rückkopplung SDGs &amp; SDG+" data-methods="Scorecards Wirkungsrückkopplung" data-fields="Mensch Planet Demokratie" data-order="40" data-date="2026-05" data-pages="21">
+    <div class="document-card-badges"><span class="status-badge status-badge--grundlagenpapier">grundlagenpapier</span><span class="status-badge status-badge--aktuell">aktuell</span><span class="status-badge status-badge--fortgeschritten">Niveau: fortgeschritten</span></div>
+    <h3>Grundlagenpapier Wirkungsökonomie</h3>
+    <p>Systematische Einführung in Notwendigkeit, Prinzipien und Grundmodell der Wirkungsökonomie.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>21 Seiten · 36 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Einsteiger:innen</span><span>Fachöffentlichkeit</span><span>Politik</span></div>
+    <div class="document-chip-row muted"><span>Grundlagen</span><span>Rückkopplung</span><span>SDGs &amp; SDG+</span></div>
+    <a class="btn btn-primary" href="../bibliothek/grundlagenpapier-wirkungsoekonomie/">Dokument ansehen</a>
+  </article></div>
+    </section>
+<section class="section document-library-section" id="methoden-werkzeuge">
+      <div class="section-header">
+        <p class="hero-kicker">Methoden &amp; Werkzeuge</p>
+        <h2>Methoden &amp; Werkzeuge</h2>
+      </div>
+      <div class="document-card-grid"><article class="document-card" data-document-card data-type="whitepaper" data-status="aktuell" data-level="fortgeschritten" data-audience="Unternehmen Wissenschaft Impact Controlling" data-topics="T-SROI Impact Controlling Transformationswirkung" data-methods="T-SROI Impact Controlling" data-fields="Wirtschaft &amp; Kapital Demokratie" data-order="110" data-date="2026-05" data-pages="18">
+    <div class="document-card-badges"><span class="status-badge status-badge--whitepaper">whitepaper</span><span class="status-badge status-badge--aktuell">aktuell</span><span class="status-badge status-badge--fortgeschritten">Niveau: fortgeschritten</span></div>
+    <h3>Whitepaper T-SROI</h3>
+    <p>Fachliche Einführung in T-SROI als Transformationskennzahl und Impact-Controlling-Instrument.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>18 Seiten · 31 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Unternehmen</span><span>Wissenschaft</span><span>Impact Controlling</span></div>
+    <div class="document-chip-row muted"><span>T-SROI</span><span>Impact Controlling</span><span>Transformationswirkung</span></div>
+    <a class="btn btn-primary" href="../bibliothek/whitepaper-t-sroi/">Dokument ansehen</a>
+  </article>
+<article class="document-card" data-document-card data-type="konzept" data-status="fachoeffentlich" data-level="expert" data-audience="Wissenschaft Methodik Pilotierung" data-topics="Systemmodell Mensch-Planet-Demokratie Wirkungsarchitektur" data-methods="Wirkungsarchitektur Evaluation" data-fields="Mensch Planet Demokratie" data-order="120" data-date="2026-05" data-pages="223">
+    <div class="document-card-badges"><span class="status-badge status-badge--konzept">konzept</span><span class="status-badge status-badge--fachoeffentlich">fachoeffentlich</span><span class="status-badge status-badge--expert">Niveau: expert</span></div>
+    <h3>Systemmodell der Wirkungsökonomie</h3>
+    <p>Umfangreiches Systemmodell und Ordnungskarte Mensch-Planet-Demokratie.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>223 Seiten · 379 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Wissenschaft</span><span>Methodik</span><span>Pilotierung</span></div>
+    <div class="document-chip-row muted"><span>Systemmodell</span><span>Mensch-Planet-Demokratie</span><span>Wirkungsarchitektur</span></div>
+    <a class="btn btn-primary" href="../bibliothek/systemmodell-wirkungsoekonomie/">Dokument ansehen</a>
+  </article></div>
+    </section>
+<section class="section document-library-section" id="recht-steuerung">
+      <div class="section-header">
+        <p class="hero-kicker">Recht &amp; Steuerung</p>
+        <h2>Recht &amp; Steuerung</h2>
+      </div>
+      <div class="document-card-grid"><article class="document-card" data-document-card data-type="gesetzesentwurf" data-status="diskussionsfassung" data-level="juristisch" data-audience="Politik Verwaltung Jurist:innen" data-topics="WStG Recht Steuerung" data-methods="Wirkungssteuerung Wirkungsrat" data-fields="Staat &amp; Demokratie" data-order="205" data-date="2025-10" data-pages="146">
+    <div class="document-card-badges"><span class="status-badge status-badge--gesetzesentwurf">gesetzesentwurf</span><span class="status-badge status-badge--diskussionsfassung">diskussionsfassung</span><span class="status-badge status-badge--juristisch">Niveau: juristisch</span></div>
+    <h3>WStG Oktober 2025</h3>
+    <p>Working Paper zum Wirkungssteuergesetz mit Kommentaren und Begründungen.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>146 Seiten · 248 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Politik</span><span>Verwaltung</span><span>Jurist:innen</span></div>
+    <div class="document-chip-row muted"><span>WStG</span><span>Recht</span><span>Steuerung</span></div>
+    <a class="btn btn-primary" href="../bibliothek/wstg-oktober-2025/">Dokument ansehen</a>
+  </article>
+<article class="document-card" data-document-card data-type="konzept" data-status="aktuell" data-level="fortgeschritten" data-audience="Politik Verwaltung Fachöffentlichkeit" data-topics="Wirkungsrat Evaluation Rechtsschutz" data-methods="Wirkungsrat Evaluation" data-fields="Staat &amp; Demokratie" data-order="210" data-date="2026-05" data-pages="5">
+    <div class="document-card-badges"><span class="status-badge status-badge--konzept">konzept</span><span class="status-badge status-badge--aktuell">aktuell</span><span class="status-badge status-badge--fortgeschritten">Niveau: fortgeschritten</span></div>
+    <h3>Wirkungsrat Konzept</h3>
+    <p>Konzept zur institutionellen Verankerung des Wirkungsrats.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>5 Seiten · 9 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Politik</span><span>Verwaltung</span><span>Fachöffentlichkeit</span></div>
+    <div class="document-chip-row muted"><span>Wirkungsrat</span><span>Evaluation</span><span>Rechtsschutz</span></div>
+    <a class="btn btn-primary" href="../bibliothek/wirkungsrat-konzept/">Dokument ansehen</a>
+  </article></div>
+    </section>
+
+<section class="section document-library-section" id="wirkungsfelder">
+      <div class="section-header">
+        <p class="hero-kicker">Wirkungsfelder</p>
+        <h2>Wirkungsfelder</h2>
+      </div>
+      <div class="document-card-grid"><article class="document-card" data-document-card data-type="working-paper" data-status="diskussionsfassung" data-level="fortgeschritten" data-audience="Unternehmen Beschaffung Lieferketten" data-topics="Lieferkette Produktwirkung WUStG" data-methods="Scorecards WÖk-IDs Wirkungsumsatzsteuer" data-fields="Wirtschaft &amp; Kapital Planet &amp; Resilienz" data-order="320" data-date="2026-05" data-pages="28">
+    <div class="document-card-badges"><span class="status-badge status-badge--working-paper">working-paper</span><span class="status-badge status-badge--diskussionsfassung">diskussionsfassung</span><span class="status-badge status-badge--fortgeschritten">Niveau: fortgeschritten</span></div>
+    <h3>Wirkungsökonomie in der Lieferkette</h3>
+    <p>Anwendung der Wirkungsökonomie auf globale Lieferketten, Scorecards und Vorsteuerlogik.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>28 Seiten · 48 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Unternehmen</span><span>Beschaffung</span><span>Lieferketten</span></div>
+    <div class="document-chip-row muted"><span>Lieferkette</span><span>Produktwirkung</span><span>WUStG</span></div>
+    <a class="btn btn-primary" href="../bibliothek/wirkungsoekonomie-lieferkette/">Dokument ansehen</a>
+  </article></div>
+    </section>
+
+<section class="section document-library-section" id="technische-anlagen">
+      <div class="section-header">
+        <p class="hero-kicker">Technische Anlagen</p>
+        <h2>Technische Anlagen</h2>
+      </div>
+      <div class="document-card-grid"><article class="document-card" data-document-card data-type="technische-leitlinie" data-status="fachoeffentlich" data-level="technisch" data-audience="Methodik Daten Pilotierung" data-topics="WÖk-IDs Datenqualität WUStG" data-methods="WÖk-IDs Scorecards Datenqualität &amp; Assurance" data-fields="Daten &amp; Infrastruktur Staat &amp; Demokratie" data-order="410" data-date="2026-05" data-pages="11">
+    <div class="document-card-badges"><span class="status-badge status-badge--technische-leitlinie">technische-leitlinie</span><span class="status-badge status-badge--fachoeffentlich">fachoeffentlich</span><span class="status-badge status-badge--technisch">Niveau: technisch</span></div>
+    <h3>Technische Leitlinien WUStG</h3>
+    <p>Technische Leitlinien zu WÖk-IDs, Archetypen, Benchmarks, Scorecards, Datenquellen und Assurance.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>11 Seiten · 19 Min. · PDF</dd></dl>
+    <div class="document-chip-row"><span>Methodik</span><span>Daten</span><span>Pilotierung</span></div>
+    <div class="document-chip-row muted"><span>WÖk-IDs</span><span>Datenqualität</span><span>WUStG</span></div>
+    <a class="btn btn-primary" href="../bibliothek/technische-leitlinien-wustg/">Dokument ansehen</a>
+  </article></div>
+    </section>
+      <section class="section document-library-section" id="archiv">
+        <div class="section-header">
+          <p class="hero-kicker">Archiv</p>
+          <h2>Ältere und ersetzte Fassungen</h2>
+          <p>Archivdokumente werden nicht in der Hauptbibliothek beworben. Sie bleiben als Statusnachweis eingeordnet, aber nicht als aktueller Einstieg.</p>
+        </div>
+        <div class="document-card-grid"><article class="document-card" data-document-card data-type="standardwerk" data-status="ersetzt" data-level="expert" data-audience="Fachöffentlichkeit" data-topics="Archiv Standardwerk" data-methods="" data-fields="Mensch Planet Demokratie" data-order="950" data-date="" data-pages="0">
+    <div class="document-card-badges"><span class="status-badge status-badge--standardwerk">standardwerk</span><span class="status-badge status-badge--ersetzt">ersetzt</span><span class="status-badge status-badge--expert">Niveau: expert</span></div>
+    <h3>Die neue Ordnung des Wohlstands 2</h3>
+    <p>Ältere Fassung, ersetzt durch die Fassung 2026.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>PDF</dd></dl>
+    <div class="document-chip-row"><span>Fachöffentlichkeit</span></div>
+    <div class="document-chip-row muted"><span>Archiv</span><span>Standardwerk</span></div>
+    <a class="btn btn-primary" href="../bibliothek/die-neue-ordnung-des-wohlstands-2/">Dokument ansehen</a>
+  </article>
+<article class="document-card" data-document-card data-type="whitepaper" data-status="ersetzt" data-level="fortgeschritten" data-audience="Fachöffentlichkeit" data-topics="Archiv Leitbild" data-methods="" data-fields="Mensch Planet Demokratie" data-order="951" data-date="" data-pages="0">
+    <div class="document-card-badges"><span class="status-badge status-badge--whitepaper">whitepaper</span><span class="status-badge status-badge--ersetzt">ersetzt</span><span class="status-badge status-badge--fortgeschritten">Niveau: fortgeschritten</span></div>
+    <h3>Whitepaper20</h3>
+    <p>Ältere Fassung, vermutlich durch aktuelles Leitbild ersetzt.</p>
+    <dl class="document-card-meta"><dt>Umfang</dt><dd>PDF</dd></dl>
+    <div class="document-chip-row"><span>Fachöffentlichkeit</span></div>
+    <div class="document-chip-row muted"><span>Archiv</span><span>Leitbild</span></div>
+    <a class="btn btn-primary" href="../bibliothek/whitepaper20/">Dokument ansehen</a>
+  </article></div>
+      </section><script data-search-exclude>
+(() => {
+  const cards = Array.from(document.querySelectorAll("[data-document-card]"));
+  const filters = Array.from(document.querySelectorAll("[data-document-filter]"));
+  const sort = document.querySelector("[data-document-sort]");
+  const matches = (card, key, value) => {
+    if (!value) return true;
+    if (key === "type") return card.dataset.type === value;
+    if (key === "status") return card.dataset.status === value;
+    if (key === "level") return card.dataset.level === value;
+    if (key === "audience") return (card.dataset.audience || "").includes(value);
+    if (key === "topic") return (card.dataset.topics || "").includes(value);
+    if (key === "method") return (card.dataset.methods || "").includes(value);
+    if (key === "field") return (card.dataset.fields || "").includes(value);
+    return true;
+  };
+  const apply = () => {
+    const active = Object.fromEntries(filters.map((input) => [input.dataset.documentFilter, input.value]));
+    cards.forEach((card) => {
+      card.hidden = !Object.entries(active).every(([key, value]) => matches(card, key, value));
+    });
+    const sorter = sort?.value || "editorial";
+    document.querySelectorAll(".document-card-grid").forEach((grid) => {
+      const local = Array.from(grid.querySelectorAll("[data-document-card]"));
+      local.sort((a, b) => {
+        if (sorter === "date") return (b.dataset.date || "").localeCompare(a.dataset.date || "");
+        if (sorter === "pages") return Number(a.dataset.pages || 0) - Number(b.dataset.pages || 0);
+        if (sorter === "level") return (a.dataset.level || "").localeCompare(b.dataset.level || "");
+        return Number(a.dataset.order || 999) - Number(b.dataset.order || 999);
+      }).forEach((card) => grid.appendChild(card));
+    });
+  };
+  filters.forEach((input) => input.addEventListener("change", apply));
+  sort?.addEventListener("change", apply);
+  apply();
+})();
+</script>
     </main>
-    <footer class="site-footer">
-      <p><strong>Wirkungsökonomie</strong> - Wissens- und Anwendungsraum für Wirkung auf Mensch, Planet und Demokratie.</p>
-      <nav aria-label="Footer">
-        <a href="/downloads.html">Bibliothek</a>
-        <a href="/glossar.html">Glossar</a>
-        <a href="/suche.html">Suche</a>
-        <a href="/impressum.html">Impressum</a>
-      </nav>
-    </footer>
-    <script src="/assets/js/main.js?v=20260529-glossary-hover-audit" defer></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

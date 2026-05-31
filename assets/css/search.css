@@ -116,6 +116,45 @@
   margin-top: clamp(1rem, 3vw, 1.5rem);
 }
 
+.search-quick-filter-panel {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(11, 16, 32, 0.1);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.search-quick-filter-panel .hero-kicker {
+  margin: 0;
+}
+
+.search-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.search-filter-chips button {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy);
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.search-filter-chips button.active,
+.search-filter-chips button:hover,
+.search-filter-chips button:focus-visible {
+  border-color: var(--green);
+  background: #eef7f1;
+}
+
 .search-filters,
 .search-results-panel {
   min-width: 0;

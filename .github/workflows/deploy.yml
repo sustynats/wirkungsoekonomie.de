@@ -20,31 +20,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python build dependencies
+        run: python -m pip install --upgrade pip openpyxl
       - name: Build static reference data and search
         run: npm run build
       - name: Check site size
         run: npm run check:size
-      - name: Package Pages artifact
-        run: |
-          tar \
-            --dereference \
-            --hard-dereference \
-            --exclude-vcs \
-            --exclude='.git' \
-            --exclude='./artifact.tar' \
-            -cf "${{ runner.temp }}/artifact.tar" .
       - name: Upload artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
-          if-no-files-found: error
-          retention-days: 1
+          path: .
 
   deploy:
     needs: build
@@ -55,4 +49,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4

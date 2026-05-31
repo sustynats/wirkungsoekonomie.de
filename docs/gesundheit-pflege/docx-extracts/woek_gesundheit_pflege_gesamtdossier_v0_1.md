@@ -76,7 +76,7 @@ Indikatoren zu Gesundheit, Krankheit, Prävention, psychischer Gesundheit und Be
 
 Kassen- und Versorgungsdaten
 
-Versorgungspfade, Präventionsprogramme, Krankheitstage, chronische Erkrankungen, Medikations- und Behandlungsdaten - nur aggregiert/datenschutzkonform.
+Versorgungspfade, Präventionsprogramme, Krankheitstage, chronische Erkrankungen, Medikations- und Behandlungsdaten – nur aggregiert/datenschutzkonform.
 
 Kommunale Daten
 

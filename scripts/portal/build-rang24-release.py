@@ -125,7 +125,7 @@ def clean(value: object) -> str:
     text = text.replace("internen Adminbereich", "geschützten Arbeitsbereich")
     text = text.replace("internem Adminbereich", "geschützten Arbeitsbereich")
     text = text.replace("GO24", "Website 1.0")
-    text = text.replace("-", "-").replace("—", "-")
+    text = text.replace("–", "-").replace("—", "-")
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
@@ -446,52 +446,41 @@ def portal_cards(portals: list[dict]) -> str:
 
 def library_cards(register: list[dict]) -> str:
     cards = []
-    public_extensions = {"pdf", "docx"}
-    blocked_types = {"Sonstiges", "ZIP-Gesamtpaket", "Gesamtpaket"}
-    blocked_name_patterns = re.compile(
-        r"(content_index|toolcards_|bestands|nachliefer|readme|gesamtpaket|index\.html|style\.css|\.zip$|\.json$|\.md$)",
-        re.I,
-    )
-    def display_title(file_name: str) -> str:
-        title = re.sub(r"\.(pdf|docx)$", "", file_name, flags=re.I)
-        title = re.sub(r"^\d+[_\-\s]+", "", title)
-        title = re.sub(r"^(Detailkonzept|Konzeptpapier|Gesamtdossier|Wirkungsindikatoren|Toolkarten)[_\-\s]+", r"\1: ", title, flags=re.I)
-        title = title.replace("_", " ").replace("-", " ")
-        title = re.sub(r"\s+", " ", title).strip()
-        return title or file_name
-
-    for item in register:
+    for i, item in enumerate(register):
         if re.search(r"codex|anweisung", item.get("file_name", ""), re.I):
             continue
         rang_raw = clean(item.get("rang", 0))
         rang_num = int(rang_raw) if rang_raw.isdigit() else -1
         ext = clean(item.get("extension"))
         doc_type = clean(item.get("document_type"))
-        title = clean(item.get("file_name"))
-        if ext not in public_extensions:
-            continue
-        if doc_type in blocked_types:
-            continue
-        if blocked_name_patterns.search(title):
-            continue
         portal = f"Rang {rang_raw}" if rang_num >= 0 else "Grundlagen"
         online = up_href(PORTAL_URLS.get(rang_num, "fachbibliothek/"))
         download = up_href(RANK_DOWNLOADS.get(rang_num, "downloads/"))
-        display = display_title(title)
-        desc = f"{doc_type} der öffentlichen Fachbibliothek."
-        public_status = clean(item.get("qa_status"))
-        if public_status == "Import pruefen":
-            public_status = "Öffentliche Lesefassung"
+        title = clean(item.get("file_name"))
+        desc = f"{doc_type} aus {clean(item.get('source_package'))}."
         pdf = "ja" if ext == "pdf" else "nein"
         docx = "ja" if ext == "docx" else "nein"
-        cards.append(f"""<article class="card library-card" data-rang="{html.escape(rang_raw)}" data-portal="{html.escape(portal)}" data-type="{html.escape(doc_type)}" data-status="{html.escape(public_status)}" data-format="{html.escape(ext)}" data-online="ja" data-pdf="{pdf}" data-docx="{docx}">
+        cards.append(f"""<article class="card library-card" data-rang="{html.escape(rang_raw)}" data-portal="{html.escape(portal)}" data-type="{html.escape(doc_type)}" data-status="{esc(item.get('qa_status'))}" data-format="{html.escape(ext)}" data-online="ja" data-pdf="{pdf}" data-docx="{docx}">
 <p class="card-kicker">{html.escape(portal)} · {html.escape(doc_type)} · {html.escape(ext.upper())}</p>
-<h3 class="card-title">{html.escape(display)}</h3>
+<h3 class="card-title">{html.escape(title)}</h3>
 <p class="card-text">{html.escape(desc)}</p>
-<dl class="portal-meta-grid compact"><div><dt>Status</dt><dd>{html.escape(public_status)}</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>25. Mai 2026</dd></div><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl>
+<dl class="portal-meta-grid compact"><div><dt>Status</dt><dd>{esc(item.get('qa_status'))}</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>25. Mai 2026</dd></div><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl>
 <div class="hero-actions no-print"><a class="btn btn-secondary" href="{html.escape(online)}">Onlinefassung</a><a class="btn btn-secondary" href="{html.escape(download)}">Downloads</a></div>
 <p class="card-text"><strong>Toolbezug:</strong> siehe Toolkartenregister. <strong>Glossarbezug:</strong> Wirkung, SDG+, positive Netto-Wirkung.</p></article>""")
+        if i >= 807:
+            break
     return "".join(cards)
+
+
+def local_library_cards() -> str:
+    """Manual additions that are not part of the Rang-24 release package."""
+    return """<article class="card library-card" data-rang="9" data-portal="Medien &amp; Öffentlichkeit" data-type="Dossier" data-status="Öffentliche Arbeitsfassung" data-format="html docx" data-online="ja" data-pdf="nein" data-docx="ja">
+<p class="card-kicker">Medien &amp; Öffentlichkeit · Dossier · HTML/DOCX</p>
+<h3 class="card-title">Wirkungsräume gestalten</h3>
+<p class="card-text">Dossier für wirkungsorientiertes Hosting, Medienwirkung und digitale Verantwortung: Reichweite wird als Wirkungskraft, nicht als Wertmaßstab behandelt.</p>
+<dl class="portal-meta-grid compact"><div><dt>Status</dt><dd>Öffentliche Arbeitsfassung</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>27. Mai 2026</dd></div><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div></dl>
+<div class="hero-actions no-print"><a class="btn btn-primary" href="../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/">Onlinefassung</a><a class="btn btn-secondary" href="../assets/downloads/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.docx">Word</a></div>
+<p class="card-text"><strong>Toolbezug:</strong> Medienwirkungscheck, Host-Wirkungsscore, Scorecards. <strong>Glossarbezug:</strong> Wirkungsorientiertes Hosting, Resonanzarchitektur, Wirkungsraum, Wirkungskompetenz.</p></article>"""
 
 
 def filter_ui() -> str:
@@ -623,7 +612,7 @@ def main() -> None:
     offene = load_json("WOeK_Rang24_offene_punkte_v1.0.json")
     qa = load_json("WOeK_Rang24_qa_checkliste_v1.0.json")
 
-    library_body = f"""<section class="section"><div class="card"><p class="hero-kicker">Begriffslogik</p><h2>Referenzrahmen Website 1.0</h2><p>Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen und kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Mensch, Planet und Demokratie ist die kommunikative Übersetzung der SDGs, der Agenda 2030 und SDG+.</p></div></section>{filter_ui()}<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Masterregister</p><h2>Fachbibliothek</h2></div><div class="card-grid three">{library_cards(register)}</div></section>"""
+    library_body = f"""<section class="section"><div class="card"><p class="hero-kicker">Begriffslogik</p><h2>Referenzrahmen Website 1.0</h2><p>Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen und kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>SDG+ ist keine UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie. Mensch, Planet und Demokratie ist die kommunikative Übersetzung der SDGs, der Agenda 2030 und SDG+.</p></div></section>{filter_ui()}<section class="section" id="bibliothek"><div class="section-header"><p class="hero-kicker">Masterregister</p><h2>Fachbibliothek</h2></div><div class="card-grid three">{local_library_cards()}{library_cards(register)}</div></section>"""
     page_shell(ROOT / "fachbibliothek", "Fachbibliothek der Wirkungsökonomie", "Filterbare Masterbibliothek für Portale, Dossiers, Detailkonzepte, Downloads, Toolkarten, Glossar und Quellen.", library_body, filter_script())
 
     downloads_body = download_center(register, active)

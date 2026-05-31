@@ -1,4 +1,4 @@
-# CodeX-Anweisung: Ergänzung Wohnen & Stadt - Investor:innen, Vermieter:innen, Spekulationsschutz und Stranded Assets
+# CodeX-Anweisung: Ergänzung Wohnen & Stadt – Investor:innen, Vermieter:innen, Spekulationsschutz und Stranded Assets
 
 Du arbeitest im Repository von www.wirkungsoekonomie.de.
 
