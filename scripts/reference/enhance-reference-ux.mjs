@@ -182,6 +182,7 @@ function internalReferenceRedirectHtml(title, destination = "../") {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="refresh" content="0; url=${safeDestination}">
     <link rel="canonical" href="${safeDestination}">
     <title>${safeTitle} - nicht öffentlich gelistet</title>
     <script>window.location.replace("${safeDestination}");</script>
