@@ -83,15 +83,7 @@
       return;
     }
 
-    const secondary = posts
-      .filter((post) => post.url !== latest.url)
-      .sort((a, b) => {
-        if (a.featured !== b.featured) {
-          return a.featured ? -1 : 1;
-        }
-        return new Date(b.date) - new Date(a.date);
-      })
-      .slice(0, 2);
+    const secondary = posts.slice(1, 3);
 
     target.innerHTML = `
       <div class="journal-home-grid">
