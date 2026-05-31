@@ -6730,6 +6730,11 @@ textarea {
   color: var(--white);
 }
 
+.wirkungskonto-sidebar nav a:focus-visible {
+  outline: 3px solid rgba(246, 241, 232, 0.85);
+  outline-offset: 2px;
+}
+
 .account-card {
   display: grid;
   gap: 0.65rem;
@@ -7215,18 +7220,19 @@ textarea {
   display: grid;
   gap: 0.5rem;
   align-content: start;
-  max-height: 78vh;
+  max-height: min(78vh, 760px);
   overflow: auto;
   padding: 0.75rem;
 }
 
 .scorecard-list-item {
   display: grid;
-  grid-template-columns: 4.2rem 1fr auto;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
   gap: 0.75rem;
   align-items: center;
   width: 100%;
-  padding: 0.55rem;
+  min-height: 5.1rem;
+  padding: 0.62rem;
   background: transparent;
   border: 1px solid transparent;
   border-radius: var(--radius);
@@ -7238,13 +7244,18 @@ textarea {
 
 .scorecard-list-item:hover,
 .scorecard-list-item.active {
-  background: var(--ivory);
+  background: #f8f3e9;
   border-color: var(--line);
 }
 
+.scorecard-list-item:focus-visible {
+  outline: 3px solid rgba(47, 125, 92, 0.28);
+  outline-offset: 2px;
+}
+
 .scorecard-list-item img {
-  width: 4.2rem;
-  height: 3.2rem;
+  width: 4.5rem;
+  height: 3.6rem;
   object-fit: cover;
   border-radius: var(--radius);
 }
@@ -7252,12 +7263,24 @@ textarea {
 .scorecard-list-item b,
 .scorecard-list-item small {
   display: block;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.scorecard-list-item b {
+  display: -webkit-box;
+  color: var(--navy);
+  line-height: 1.15;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .scorecard-list-item small {
   color: var(--muted);
   font-size: 0.78rem;
+  line-height: 1.28;
 }
 
 .scorecard-list-item em {
@@ -7410,8 +7433,27 @@ textarea {
 
 .scorecard-kpis {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 0.8rem;
+}
+
+.scorecard-kpis .impact-kpi {
+  min-height: 0;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background:
+    linear-gradient(180deg, rgba(47, 125, 92, 0.08), rgba(255, 255, 255, 0)),
+    var(--white);
+  color: var(--navy);
+}
+
+.scorecard-kpis .impact-kpi span {
+  color: var(--muted);
+}
+
+.scorecard-kpis .impact-kpi strong {
+  color: var(--navy);
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
 }
 
 .pass-panel {
@@ -7589,6 +7631,40 @@ textarea {
 
 .scorecard-source-table {
   min-width: 900px;
+}
+
+@media (max-width: 640px) {
+  .scorecard-list {
+    max-height: 24rem;
+  }
+
+  .scorecard-list-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 3.35rem;
+    padding: 0.75rem;
+  }
+
+  .scorecard-list-copy {
+    display: grid;
+    gap: 0.12rem;
+    min-width: 0;
+  }
+
+  .scorecard-list-item b,
+  .scorecard-list-item small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .scorecard-list-item b {
+    display: block;
+    -webkit-line-clamp: initial;
+  }
+
+  .scorecard-list-item img {
+    display: none;
+  }
 }
 
 .styleguide-swatch-grid {
@@ -8129,7 +8205,7 @@ textarea {
   }
 
   .wirkungskonto-shell {
-    grid-template-columns: minmax(210px, 0.18fr) minmax(0, 1fr);
+    grid-template-columns: minmax(230px, 0.2fr) minmax(0, 1fr);
   }
 
   .wirkungskonto-sidebar {
@@ -8161,7 +8237,7 @@ textarea {
   }
 
   .scorecard-dashboard-grid {
-    grid-template-columns: minmax(240px, 0.24fr) minmax(0, 1fr);
+    grid-template-columns: minmax(290px, 0.28fr) minmax(0, 1fr);
     align-items: start;
   }
 
@@ -8170,7 +8246,7 @@ textarea {
   }
 
   .product-pass-grid {
-    grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.1fr) minmax(0, 1.35fr) minmax(230px, 0.9fr);
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
   }
 
   .pass-scorecard,

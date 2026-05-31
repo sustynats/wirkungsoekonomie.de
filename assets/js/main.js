@@ -2111,6 +2111,7 @@ const ResultInterpretationLayer = (() => {
 
   function applyToImpactKpis(scope) {
     scope.querySelectorAll(".impact-kpi").forEach((host) => {
+      if (host.closest("[data-scorecard-dashboard]")) return;
       if (host.querySelector(":scope > [data-result-interpretation]")) return;
       const valueEl = host.querySelector("strong");
       if (!valueEl) return;

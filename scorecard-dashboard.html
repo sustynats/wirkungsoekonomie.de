@@ -175,12 +175,12 @@
                 <small>Wirkung als Maßstab.</small>
               </div>
               <nav>
-                <a class="active" href="#dashboard">Übersicht</a>
-                <a href="#dashboard">Bewertung</a>
-                <a href="#dashboard">Wirkungsketten</a>
-                <a href="#dashboard">Indikatoren</a>
-                <a href="#dashboard">Steuer & Abgaben</a>
-                <a href="#dashboard">Wirkungspunkte</a>
+                <a class="active" href="#dashboard" data-dashboard-nav>Übersicht</a>
+                <a href="#scorecard-bewertung" data-dashboard-nav>Bewertung</a>
+                <a href="#scorecard-wirkungsketten" data-dashboard-nav>Wirkungsketten</a>
+                <a href="#scorecard-indikatoren" data-dashboard-nav>Indikatoren</a>
+                <a href="#scorecard-steuer" data-dashboard-nav>Steuer &amp; Abgaben</a>
+                <a href="#scorecard-wirkungspunkte" data-dashboard-nav>Wirkungspunkte</a>
               </nav>
               <div class="account-card">
                 <span>Konto</span>
@@ -216,15 +216,15 @@
                 </label>
               </div>
 
-              <section class="impact-dashboard" aria-label="Wirkungsdashboard">
+              <section class="impact-dashboard" id="scorecard-bewertung" aria-label="Wirkungsdashboard" tabindex="-1">
                 <div class="dashboard-summary-grid" data-dashboard-summary></div>
                 <div class="dashboard-cockpit-grid">
                   <article class="dashboard-card dashboard-core" data-dashboard-core></article>
                   <article class="dashboard-card dashboard-history" data-dashboard-history></article>
                   <article class="dashboard-card dashboard-ranking" data-dashboard-ranking></article>
-                  <article class="dashboard-card dashboard-chain" data-dashboard-chain></article>
+                  <article class="dashboard-card dashboard-chain" id="scorecard-wirkungsketten" data-dashboard-chain tabindex="-1"></article>
                   <article class="dashboard-card dashboard-costs" data-dashboard-costs></article>
-                  <article class="dashboard-card dashboard-distribution" data-dashboard-distribution></article>
+                  <article class="dashboard-card dashboard-distribution" id="scorecard-wirkungspunkte" data-dashboard-distribution tabindex="-1"></article>
                 </div>
               </section>
 
@@ -241,7 +241,7 @@
 
                 <section class="scorecard-detail product-pass-sheet" aria-label="Produktpass Detail">
                   <div class="pass-overview" data-pass-overview></div>
-                  <div class="scorecard-kpis">
+                  <div class="scorecard-kpis" id="scorecard-steuer" tabindex="-1">
                     <div class="impact-kpi"><span>Marktpreis</span><strong data-kpi-market>-</strong></div>
                     <div class="impact-kpi"><span>Versteckte Kosten</span><strong data-kpi-external>-</strong></div>
                     <div class="impact-kpi"><span>Echter Preis</span><strong data-kpi-true>-</strong></div>
@@ -251,7 +251,7 @@
                   <div class="product-pass-grid">
                     <article class="pass-panel pass-identity" data-pass-identity></article>
                     <article class="pass-panel pass-lifecycle" data-pass-lifecycle></article>
-                    <article class="pass-panel pass-scorecard" data-pass-scorecard></article>
+                    <article class="pass-panel pass-scorecard" id="scorecard-indikatoren" data-pass-scorecard tabindex="-1"></article>
                     <article class="pass-panel pass-tax" data-pass-tax></article>
                     <article class="pass-panel pass-supply" data-pass-supply></article>
                     <article class="pass-panel pass-standards" data-pass-standards></article>
