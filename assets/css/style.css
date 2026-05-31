@@ -8731,10 +8731,10 @@ textarea {
 }
 
 .reference-hero h1 {
-  max-width: 12ch;
+  max-width: 18ch;
   margin: 0 0 1rem;
-  font-size: clamp(3rem, 8vw, 7.2rem);
-  line-height: 0.94;
+  font-size: clamp(2.3rem, 5.6vw, 4.8rem);
+  line-height: 1;
 }
 
 .reference-hero p {
@@ -8773,7 +8773,7 @@ textarea {
 .reference-hero-panel strong {
   color: var(--navy);
   font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
   line-height: 1;
 }
 
@@ -9885,7 +9885,8 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
   .reference-hero h1 {
     max-width: 100%;
-    font-size: clamp(2.5rem, 15vw, 4rem);
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.03;
   }
 
   .reference-reader .article-shell h1 {
