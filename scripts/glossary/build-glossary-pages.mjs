@@ -94,7 +94,7 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
-    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260525-sprint-2">
+    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260531-glossary-filter-chips">
   </head>
   <body>
 ${renderHeader(depth)}
