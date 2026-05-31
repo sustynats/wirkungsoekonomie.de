@@ -9243,7 +9243,7 @@ textarea {
 .fulltext-reader .table-wrap {
   width: 100%;
   max-width: 100%;
-  overflow-x: visible;
+  overflow-x: auto;
 }
 
 .fulltext-reader .table-wrap table,
@@ -9300,7 +9300,11 @@ textarea {
   margin: 0.25rem 0;
   color: var(--navy);
   font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
   line-height: 1.1;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .chapter-mini-map a,
@@ -9406,6 +9410,10 @@ textarea {
   gap: 0.45rem;
   padding-top: 0.75rem;
   border-top: 1px solid var(--line);
+}
+
+.reference-context-rail .related-question-grid {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .reader-mode-dock {
@@ -11424,13 +11432,29 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   margin-top: clamp(1.4rem, 3vw, 2rem);
 }
 
+.reference-work > .related-questions-block,
+.workpaper-reader > .related-questions-block {
+  grid-column: 1 / -1;
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+
 .related-questions-block .section-header {
   margin-bottom: 0.85rem;
 }
 
+.related-questions-block .section-header h2 {
+  max-width: 26ch;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  line-height: 1.08;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
+}
+
 .related-question-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   gap: 0.75rem;
 }
 
@@ -11447,15 +11471,23 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
 .related-question-card span {
   color: var(--green, #2f7d5c);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 900;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .related-question-card strong {
   color: var(--navy, #0b1020);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
   line-height: 1.35;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .related-question-card p {
