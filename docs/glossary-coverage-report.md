@@ -1,8 +1,8 @@
 # Glossary Coverage Report
 
-Stand: 2026-05-31T12:54:58.977Z
+Stand: 2026-05-31T13:27:50.299Z
 
-- HTML-Seiten gescannt: 3251
+- HTML-Seiten gescannt: 3263
 - Seiten mit /begriffe/-Links: 1667
 - Seiten mit Glossar-/Term-Markup: 1568
 - Tote Glossarlinks: 0
