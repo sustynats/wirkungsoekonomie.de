@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const OUTPUT = path.join(ROOT, "assets/data/library-version-registry.json");
@@ -199,6 +200,21 @@ const LEADING_OVERRIDES = new Map([
   }]
 ]);
 
+function loadTrackedFiles() {
+  try {
+    const output = execFileSync("git", ["ls-files", "-z"], {
+      cwd: ROOT,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"]
+    });
+    return new Set(output.split("\0").filter(Boolean));
+  } catch {
+    return null;
+  }
+}
+
+const TRACKED_FILES = loadTrackedFiles();
+
 function exists(rel) {
   return fs.existsSync(path.join(ROOT, rel));
 }
@@ -215,6 +231,7 @@ function walk(dir, extensions, acc = []) {
       continue;
     }
     if (!entry.isFile()) continue;
+    if (TRACKED_FILES && !TRACKED_FILES.has(relative)) continue;
     const ext = path.extname(entry.name).toLowerCase();
     if (extensions.has(ext)) acc.push(abs);
   }

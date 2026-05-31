@@ -11643,6 +11643,65 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   align-content: start;
 }
 
+.library-count-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.library-count-strip span,
+.library-type-card,
+.knowledge-library-card {
+  border: 1px solid var(--border-color, #d8d2c6);
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.library-count-strip strong {
+  display: block;
+  font-size: 1.35rem;
+}
+
+.library-type-grid,
+.knowledge-library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.library-type-card strong,
+.knowledge-library-card h3 {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.library-type-card span,
+.library-result-count {
+  color: var(--muted-color, #6b6458);
+  font-size: 0.95rem;
+}
+
+.knowledge-library-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.knowledge-library-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.full-library-controls input[type="search"] {
+  width: 100%;
+  min-height: 2.55rem;
+  border: 1px solid var(--border-color, #d8d2c6);
+  border-radius: 6px;
+  padding: 0.45rem 0.65rem;
+}
+
 .document-card h3,
 .document-reading-path h3 {
   margin: 0;

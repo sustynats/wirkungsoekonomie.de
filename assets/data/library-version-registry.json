@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T06:42:19.795Z",
+  "generatedAt": "2026-05-31T17:43:33.227Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -203,31 +203,31 @@
     }
   ],
   "counts": {
-    "total": 2100,
+    "total": 2129,
     "byStatus": {
       "führend": 7,
-      "aktuell": 1346,
+      "aktuell": 1372,
       "Arbeitsfassung": 439,
-      "ältere Fassung": 291,
-      "in Überarbeitung": 17
+      "ältere Fassung": 293,
+      "in Überarbeitung": 18
     },
     "byType": {
       "Grundlagenwerk": 84,
-      "Glossar": 57,
-      "Methodik": 155,
-      "Arbeitspapier": 1725,
+      "Glossar": 71,
+      "Methodik": 156,
+      "Arbeitspapier": 1736,
       "Beispiel": 19,
-      "Gesetzesentwurf": 43,
+      "Gesetzesentwurf": 46,
       "Whitepaper": 8,
       "Leitbild": 9
     },
     "bySource": {
       "leading-reference": 3,
-      "download-or-document": 1349,
-      "online-version": 748
+      "download-or-document": 1366,
+      "online-version": 760
     },
-    "downloadFiles": 1350,
-    "onlineVersions": 748
+    "downloadFiles": 1367,
+    "onlineVersions": 760
   },
   "documents": [
     {
@@ -9864,6 +9864,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-buergerbeteiligung-wirkungsdem",
+      "title": "Buergerbeteiligung wirkungsdemokratie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/buergerbeteiligung-wirkungsdemokratie/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/buergerbeteiligung-wirkungsdemokratie/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-zukunftsbilder-wirkungswohlstand-buergerinnen-co-autorinnen-index-html",
       "title": "Buergerinnen co autorinnen",
       "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -13723,6 +13747,103 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-docs-glossary-coverage-report-md",
+      "title": "Glossary coverage report",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-coverage-report.md",
+        "sourcePath": "docs/glossary-coverage-report.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-crosslink-audit-md",
+      "title": "Glossary crosslink audit",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance",
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-crosslink-audit.md",
+        "sourcePath": "docs/glossary-crosslink-audit.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-emergency-current-state-md",
+      "title": "Glossary emergency current state",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-emergency-current-state.md",
+        "sourcePath": "docs/glossary-emergency-current-state.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-entrypoint-hotfix-md",
+      "title": "Glossary entrypoint hotfix",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-entrypoint-hotfix.md",
+        "sourcePath": "docs/glossary-entrypoint-hotfix.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-docs-glossary-extension-candidates-md",
       "title": "GLOSSARY EXTENSION CANDIDATES",
       "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -13742,6 +13863,225 @@
       "urls": {
         "primary": "docs/GLOSSARY_EXTENSION_CANDIDATES.md",
         "sourcePath": "docs/GLOSSARY_EXTENSION_CANDIDATES.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-graph-baseline-summary-md",
+      "title": "Glossary graph baseline summary",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-graph-baseline-summary.md",
+        "sourcePath": "docs/glossary-graph-baseline-summary.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-heart-recovery-report-md",
+      "title": "Glossary heart recovery report",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-heart-recovery-report.md",
+        "sourcePath": "docs/glossary-heart-recovery-report.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-hover-audit-md",
+      "title": "Glossary hover audit",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance",
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-hover-audit.md",
+        "sourcePath": "docs/glossary-hover-audit.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-language-consistency-audit-md",
+      "title": "Glossary language consistency audit",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance",
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-language-consistency-audit.md",
+        "sourcePath": "docs/glossary-language-consistency-audit.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-last-good-candidates-md",
+      "title": "Glossary last good candidates",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-last-good-candidates.md",
+        "sourcePath": "docs/glossary-last-good-candidates.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-missing-pages-md",
+      "title": "Glossary missing pages",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-missing-pages.md",
+        "sourcePath": "docs/glossary-missing-pages.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-redirect-map-md",
+      "title": "Glossary redirect map",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-redirect-map.md",
+        "sourcePath": "docs/glossary-redirect-map.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-regression-report-md",
+      "title": "Glossary regression report",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-regression-report.md",
+        "sourcePath": "docs/glossary-regression-report.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-route-audit-md",
+      "title": "Glossary route audit",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance",
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-route-audit.md",
+        "sourcePath": "docs/glossary-route-audit.md"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -18271,6 +18611,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-lobbyismus-machtkonzentration-",
+      "title": "Lobbyismus machtkonzentration",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/lobbyismus-machtkonzentration/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/lobbyismus-machtkonzentration/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-lobbyismus-machtkonzentration-index-htm",
       "title": "Lobbyismus machtkonzentration",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
@@ -18833,6 +19197,28 @@
       "urls": {
         "primary": "docs/MISSING_ASSETS.md",
         "sourcePath": "docs/MISSING_ASSETS.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-missing-crosslinks-md",
+      "title": "Missing crosslinks",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/missing-crosslinks.md",
+        "sourcePath": "docs/missing-crosslinks.md"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -20902,6 +21288,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-politische-wirkungspruefung-in",
+      "title": "Politische wirkungspruefung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/politische-wirkungspruefung/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/politische-wirkungspruefung/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-politische-wirkungspruefung-index-html",
       "title": "Politische wirkungspruefung",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
@@ -22582,6 +22992,76 @@
         "sourcePath": "referenz/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-verstehen-regularien-standards-index-html",
+      "title": "Regularien standards",
+      "shortDescription": "Methodik im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Methodik",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "verstehen/regularien-standards/",
+        "sourcePath": "verstehen/regularien-standards/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-relaunch-hotfix-route-audit-md",
+      "title": "Relaunch hotfix route audit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/relaunch-hotfix-route-audit.md",
+        "sourcePath": "docs/relaunch-hotfix-route-audit.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-relaunch-presence-audit-md",
+      "title": "Relaunch presence audit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/relaunch-presence-audit.md",
+        "sourcePath": "docs/relaunch-presence-audit.md"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -28804,6 +29284,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-verstehen-index-html",
+      "title": "Verstehen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "verstehen/",
+        "sourcePath": "verstehen/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-docs-visual-assets-integration-audit-md",
       "title": "Visual assets integration audit",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -29224,6 +29726,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-wirkung-als-rechtsprinzip-inde",
+      "title": "Wirkung als rechtsprinzip",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkung-als-rechtsprinzip/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkung-als-rechtsprinzip/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-wirkung-als-rechtsprinzip-index-html",
       "title": "Wirkung als rechtsprinzip",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
@@ -29536,6 +30062,33 @@
       "urls": {
         "primary": "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/",
         "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-wirkungseinkommensteuer-westg-",
+      "title": "Wirkungseinkommensteuer westg",
+      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Gesetzesentwurf",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungseinkommensteuer-westg/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungseinkommensteuer-westg/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false
@@ -30370,6 +30923,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-wirkungsrat-index-html",
+      "title": "Wirkungsrat",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsrat/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsrat/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-wirkungsrat-index-html",
       "title": "Wirkungsrat",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
@@ -30711,6 +31288,32 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-wirkungssteuergesetz-wstg-inde",
+      "title": "Wirkungssteuergesetz WStG",
+      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Gesetzesentwurf",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungssteuergesetz-wstg/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungssteuergesetz-wstg/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-wirkungssteuergesetz-wstg-index-html",
       "title": "Wirkungssteuergesetz WStG",
       "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
@@ -30868,6 +31471,32 @@
       "urls": {
         "primary": "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/",
         "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-wirkungsumsatzsteuer-rechtsrah",
+      "title": "Wirkungsumsatzsteuer rechtsrahmen",
+      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Gesetzesentwurf",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsumsatzsteuer-rechtsrahmen/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsumsatzsteuer-rechtsrahmen/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false
@@ -48667,6 +49296,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-verwaltung-rechtsschutz-korrek",
+      "title": "Verwaltung rechtsschutz korrektur",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/verwaltung-rechtsschutz-korrektur/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/verwaltung-rechtsschutz-korrektur/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-verwaltung-rechtsschutz-korrektur-index",
       "title": "Verwaltung rechtsschutz korrektur",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Staat & Demokratie.",
@@ -49005,6 +49658,32 @@
       "urls": {
         "primary": "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/",
         "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-dossiers-wirkungshaushalt-index-html",
+      "title": "Wirkungshaushalt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungshaushalt & Beschaffung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungshaushalt/",
+        "sourcePath": "werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungshaushalt/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false
@@ -50081,6 +50760,30 @@
       "urls": {
         "primary": "docs/DELTA_REVIEW_REPORT.md",
         "sourcePath": "docs/DELTA_REVIEW_REPORT.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-glossary-manual-review-md",
+      "title": "Glossary manual review",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: in Überarbeitung; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "in Überarbeitung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/glossary-manual-review.md",
+        "sourcePath": "docs/glossary-manual-review.md"
       },
       "source": "download-or-document",
       "isLeadingReference": false
