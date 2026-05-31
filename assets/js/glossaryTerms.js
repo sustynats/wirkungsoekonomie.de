@@ -33,7 +33,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "sechste Kondratieff-Welle",
       "Sixth Kondratieff"
     ],
-    "definition": "Der 6. Kondratieff beschreibt in der Wirkungsökonomie die Transformationswelle des 21. Jahrhunderts, in der Nachhaltigkeit, Resilienz, Gesundheit und Wirkung zur zentralen Entwicklungslogik werden.",
+    "definition": "Der 6. Kondratieff beschreibt in der WÖk die lange Transformationswelle des 21. Jahrhunderts: Nachhaltigkeit, Gesundheit, Resilienz, KI, Robotik, Automatisierung und Wirkungsdaten wirken zusammen.",
     "url": "/begriffe/sechster-kondratieff/",
     "priority": 2,
     "allowedContexts": [
