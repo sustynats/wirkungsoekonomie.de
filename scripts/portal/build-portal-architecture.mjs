@@ -1509,6 +1509,64 @@ function methodClusterSection(base, cluster) {
   </section>`;
 }
 
+const dashboardPilots = [
+  {
+    title: "Produktwirkung",
+    text: "Von Produktdaten über Scorecards, WÖk-ID, Datenqualität und Reverse Merit Order zur nachvollziehbaren Wirkungsorientierung.",
+    href: "erleben/produktwirkungsrechner/",
+    methods: ["Scorecards", "WÖk-ID", "Reverse Merit Order"],
+  },
+  {
+    title: "Scorecard & Produktpass",
+    text: "Messwert, Quelle, Benchmark, Datenqualität und Publikationsreife in einer prüfbaren Scorecard-Logik zusammenführen.",
+    href: "scorecard-dashboard/",
+    methods: ["DPP", "Datenqualität", "FinalScore"],
+  },
+  {
+    title: "Impact Controlling",
+    text: "Operative Netto-Wirkung, Transformationswirkung, Risiko, Audit und Lernschleife getrennt, aber zusammenhängend betrachten.",
+    href: "erleben/impact-controlling-rechner/",
+    methods: ["NWI", "T-SROI", "Wirkungsaudit"],
+  },
+  {
+    title: "Wohnwirkung",
+    text: "Wohnkosten, Energie, Resilienz, soziale Zugänglichkeit und kommunale Pilotoptionen als Wirkungsprofil strukturieren.",
+    href: "erleben/wohnwirkungsrechner/",
+    methods: ["NWI", "Resilienz", "Sozialraum"],
+  },
+  {
+    title: "Medienwirkung",
+    text: "Sprache, Framing, Salienz, Unsicherheit und demokratische Schutzlinien nicht-personalisierend sichtbar machen.",
+    href: "erleben/medienwirkungscheck/",
+    methods: ["Framing", "SDG+ Demokratie", "Review"],
+  },
+];
+
+function dashboardPilotSection(base) {
+  return `<section class="section" aria-labelledby="dashboard-cockpit-title">
+    <div>
+      <div class="section-header">
+        <p class="hero-kicker">Dashboard-Cockpit</p>
+        <h2 id="dashboard-cockpit-title">Fünf Pilotpfade für geführte Werkzeugnutzung</h2>
+        <p>Dashboards sollen nicht nur Ergebnisse ausgeben, sondern Fragestellung, Datenqualität, Methode, Schutzlinien und nächsten Schritt sichtbar machen. Die bestehenden Routen bleiben erhalten.</p>
+      </div>
+      <div class="method-map-grid">
+        ${dashboardPilots.map((pilot) => `<article class="card method-tool-card">
+          <div class="method-tool-card-head">
+            <p class="card-kicker">Pilot-Dashboard</p>
+            ${StatusBadge("Arbeitsfassung")}
+          </div>
+          <h3 class="card-title">${escapeHtml(pilot.title)}</h3>
+          <p class="card-text">${escapeHtml(pilot.text)}</p>
+          <div class="method-related" aria-label="Methodenlogik">${pilot.methods.map((method) => `<span>${escapeHtml(method)}</span>`).join("")}</div>
+          <p class="method-tool-notice">Modellhafte Orientierung, nicht amtlich und keine automatische Entscheidung.</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, pilot.href)}">Pilotpfad öffnen</a></div>
+        </article>`).join("")}
+      </div>
+    </div>
+  </section>`;
+}
+
 function toolOverview() {
   return page({
     rel: "werkzeuge/index.html",
@@ -1539,6 +1597,7 @@ function toolOverview() {
           <p class="card-text">Nicht jede Karte hat dieselbe Funktion: Begriffe erklären den Zielrahmen, WÖk-IDs adressieren Daten, Scorecards bewerten, der NWI verdichtet operativ, T-SROI beschreibt Transformationshebel, Reverse Merit Order setzt Nichtkompensationsgrenzen, der Wirkungsrat sichert Governance und Demos zeigen modellhafte Anwendungen.</p>
         </div>
       </section>
+      ${dashboardPilotSection(base)}
       <section class="section" aria-labelledby="method-pipeline-title">
         <div>
           <div class="section-header">
