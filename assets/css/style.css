@@ -9173,7 +9173,8 @@ textarea {
 }
 
 .fulltext-reader {
-  width: min(100%, 860px);
+  width: min(100%, 1120px);
+  max-width: none;
   margin: clamp(1.25rem, 3vw, 2.5rem) auto 0;
   padding: clamp(1.2rem, 3vw, 3rem);
   border: 1px solid rgba(11, 16, 32, 0.12);
@@ -9184,7 +9185,7 @@ textarea {
 
 .fulltext-reader p,
 .fulltext-reader li {
-  max-width: 72ch;
+  max-width: min(100%, 92ch);
   margin: 0 0 1rem;
   font-size: clamp(1.02rem, 1.12vw, 1.14rem);
   line-height: 1.76;
@@ -9199,7 +9200,7 @@ textarea {
 }
 
 .fulltext-reader h2 {
-  max-width: 16ch;
+  max-width: min(100%, 34ch);
   margin-top: clamp(3rem, 7vw, 5.5rem);
   padding-top: 1.5rem;
   border-top: 1px solid rgba(11, 16, 32, 0.12);
@@ -9208,7 +9209,7 @@ textarea {
 }
 
 .fulltext-reader h3 {
-  max-width: 28ch;
+  max-width: min(100%, 46ch);
   margin-top: clamp(2rem, 4vw, 3rem);
   font-size: clamp(1.35rem, 2.2vw, 2.05rem);
   line-height: 1.12;

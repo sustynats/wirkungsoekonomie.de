@@ -773,12 +773,23 @@ function printActions(extra = "") {
 }
 
 function tocBlock(base, toc, label = "Inhaltsverzeichnis") {
-  const filtered = toc.filter((item) => item.level <= 3);
+  const filtered = toc.filter((item) => item.level <= 3 && !isImportedTocHeading(item.text));
   if (!filtered.length) return "";
   return `<nav class="toc-card" aria-label="${label}">
       <h2>${label}</h2>
       <ol>${filtered.map((item) => `<li class="toc-level-${item.level}"><a href="#${item.id}">${escapeHtml(item.text)}</a></li>`).join("")}</ol>
     </nav>`;
+}
+
+function isImportedTocHeading(text = "") {
+  return /^(Inhaltsübersicht|Inhaltsverzeichnis)$/i.test(String(text).trim());
+}
+
+function removeImportedToc(html) {
+  return html.replace(
+    /<h2 id="inhalts(?:u|ü)bersicht">[\s\S]*?<\/h2>\s*<ul>[\s\S]*?<\/ul>/i,
+    "",
+  );
 }
 
 function cardGrid(base, items, cols = "three") {
@@ -966,6 +977,8 @@ function sourceNotice(label) {
 function fulltextPage(config) {
   const md = read(config.source).replace(/^# .+\n+/, "");
   const rendered = mdToHtml(md, { citeAnchors: true, paragraphAnchors: true });
+  const cleanHtml = removeImportedToc(rendered.html);
+  const cleanToc = rendered.toc.filter((item) => !isImportedTocHeading(item.text));
   page({
     rel: config.rel,
     title: config.title,
@@ -982,12 +995,12 @@ function fulltextPage(config) {
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
     <section class="section narrow">${productStatus(config.status || "Lesefassung")}</section>
-    <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
+    <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, cleanToc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
       <article class="article-body fulltext-reader">
         ${sectionTitle("online-volltext", "Konzept lesen")}
         ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
-        ${rendered.html}
+        ${cleanHtml}
       </article>
     </section>
     ${toolCards(base, config.tools || contextualTools)}
