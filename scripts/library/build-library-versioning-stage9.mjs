@@ -197,6 +197,10 @@ const LEADING_OVERRIDES = new Map([
   ["assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx", {
     title: "SDG-/SDG+-Referenzrahmen (Lesefassung)",
     shortDescription: "Führende Dokumentfassung des Referenzrahmens für SDGs, Agenda 2030 und SDG+."
+  }],
+  ["assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf", {
+    title: "SDG-/SDG+-Referenzrahmen (Lesefassung)",
+    shortDescription: "Führende Dokumentfassung des Referenzrahmens für SDGs, Agenda 2030 und SDG+."
   }]
 ]);
 
@@ -233,6 +237,7 @@ function walk(dir, extensions, acc = []) {
     if (!entry.isFile()) continue;
     if (TRACKED_FILES && !TRACKED_FILES.has(relative)) continue;
     const ext = path.extname(entry.name).toLowerCase();
+    if (ext === ".docx") continue;
     if (extensions.has(ext)) acc.push(abs);
   }
   return acc;
@@ -260,7 +265,18 @@ function titleFromRel(relativePath) {
   const parsed = path.parse(relativePath);
   const parent = path.basename(path.dirname(relativePath));
   const raw = parsed.name === "index" ? parent : parsed.name;
+  const parentTitle = parent
+    .replace(/^rang[_-]?/i, "Rang ")
+    .replace(/[_-]+/g, " ")
+    .replace(/\bki\b/gi, "KI")
+    .replace(/\bsdgplus\b/gi, "SDG+")
+    .trim()
+    .replace(/^\w/, (c) => c.toUpperCase());
+  if (/^00[_-]portalstartseite/i.test(raw)) return `${parentTitle}: Portalstartseite und Online-Einstieg`;
+  if (/^01[_-]konzeptpapier/i.test(raw)) return `${parentTitle}: Konzeptpapier`;
+  if (/^02[_-]gesamtdossier/i.test(raw)) return `${parentTitle}: Gesamtdossier`;
   return raw
+    .replace(/^\d{1,2}[_-]+/, "")
     .replace(/^woek[_-]/i, "WÖk ")
     .replace(/[_-]+/g, " ")
     .replace(/\s+v\d+(?:[._-]\d+)*\b/gi, "")
@@ -270,9 +286,94 @@ function titleFromRel(relativePath) {
     .replace(/\bsdgplus\b/gi, "SDG+")
     .replace(/\bwstg\b/gi, "WStG")
     .replace(/\bwustg\b/gi, "WUStG")
+    .replace(/\bki\b/gi, "KI")
     .trim()
     .replace(/\s+/g, " ")
     .replace(/^\w/, (c) => c.toUpperCase());
+}
+
+function xmlText(xml = "") {
+  return xml
+    .replace(/<w:tab\/>/g, " ")
+    .replace(/<w:br\/>/g, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, "\"")
+    .replace(/&apos;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function paragraphsFromDocx(relativePath) {
+  const abs = path.join(ROOT, relativePath);
+  if (!fs.existsSync(abs)) return [];
+  try {
+    const xml = execFileSync("unzip", ["-p", abs, "word/document.xml"], {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+      maxBuffer: 1024 * 1024 * 20
+    });
+    return xml
+      .split(/<\/w:p>/)
+      .map((part) => xmlText(part))
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+function docxSibling(relativePath) {
+  if (relativePath.endsWith(".pdf")) {
+    const sameStem = relativePath.replace(/\.pdf$/i, ".docx");
+    if (fs.existsSync(path.join(ROOT, sameStem))) return sameStem;
+  }
+  return relativePath.endsWith(".docx") ? relativePath : "";
+}
+
+function cleanInsightLine(line = "") {
+  return line
+    .replace(/\s+/g, " ")
+    .replace(/^[-–—]\s*/, "")
+    .trim();
+}
+
+function isGenericInsightLine(line = "") {
+  return /^(wirkungsökonomie|inhaltsverzeichnis|tabelle|seite \d+|autor(?:in)?:|referenz:|version:|stand:|status:|dokumentenstatus|hinweis: dieses dokument|©|\d+\.\s)/i.test(line)
+    || line.length < 8;
+}
+
+function documentInsight(relativePath) {
+  const source = docxSibling(relativePath);
+  const paragraphs = source ? paragraphsFromDocx(source).map(cleanInsightLine).filter(Boolean) : [];
+  if (!paragraphs.length) return {};
+  const meaningful = paragraphs.filter((line) => !isGenericInsightLine(line));
+  const titleParts = [];
+  const rangLine = meaningful.find((line) => /^rang\s+\d+\s*[-–]/i.test(line));
+  const conceptLine = meaningful.find((line) => /^(konzeptpapier|gesamtdossier|detailkonzept|einzeldossier|whitepaper|working paper|manifest|kurzfassung)/i.test(line));
+  if (rangLine) {
+    titleParts.push(rangLine);
+    const afterRang = meaningful[meaningful.indexOf(rangLine) + 1];
+    if (afterRang && !/^(portalstartseite|online-einstieg|autor|referenz|version|status)/i.test(afterRang) && afterRang.length < 110) titleParts.push(afterRang);
+  } else if (conceptLine) {
+    titleParts.push(conceptLine);
+    const afterConcept = meaningful[meaningful.indexOf(conceptLine) + 1];
+    if (afterConcept && afterConcept.length < 120) titleParts.push(afterConcept);
+  } else if (meaningful[0]) {
+    titleParts.push(meaningful[0]);
+    if (meaningful[1] && titleParts.join(" ").length < 70 && meaningful[1].length < 120) titleParts.push(meaningful[1]);
+  }
+  const title = titleParts
+    .join(": ")
+    .replace(/\s*:\s*:\s*/g, ": ")
+    .replace(/\bWIRKUNGSÖKONOMIE\b\s*:?\s*/i, "")
+    .trim();
+  const summary = meaningful.find((line) => line.length >= 90 && !title.includes(line.slice(0, 40)));
+  return {
+    title: title || "",
+    shortDescription: summary ? `${summary.slice(0, 260).replace(/\s+\S*$/, "")}.` : ""
+  };
 }
 
 function typeFor(relativePath, title) {
@@ -382,10 +483,13 @@ function documentFor(relativePath, source) {
   const fields = fieldsFor(relativePath);
   const ext = path.extname(relativePath).replace(".", "").toUpperCase() || "HTML";
   const overrides = LEADING_OVERRIDES.get(relativePath) || {};
+  const insight = documentInsight(relativePath);
+  const isPortalStart = /\/00[_-]portalstartseite(?:\s\d+)?\.(pdf|docx)$/i.test(relativePath);
+  const contentTitle = isPortalStart && !/rang\s+\d+|portalstartseite/i.test(insight.title || "") ? "" : insight.title;
   return {
     id: slugify(`${source}-${relativePath}`),
-    title: overrides.title || title,
-    shortDescription: overrides.shortDescription || summaryFor(type, status, topics),
+    title: overrides.title || contentTitle || title,
+    shortDescription: overrides.shortDescription || insight.shortDescription || summaryFor(type, status, topics),
     type: overrides.type || type,
     status,
     dateOrStand: standFor(relativePath),

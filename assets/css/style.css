@@ -1377,6 +1377,16 @@ textarea {
   background: var(--white);
 }
 
+.btn-ghost {
+  border-color: var(--border-color, #d8d2c6);
+  background: var(--white);
+  color: var(--navy);
+}
+
+.btn-ghost:hover {
+  background: var(--sand, #f4efe6);
+}
+
 .btn[aria-disabled="true"],
 .button[aria-disabled="true"] {
   cursor: not-allowed;
@@ -11692,6 +11702,17 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 .knowledge-library-card .btn {
   margin-top: auto;
   align-self: flex-start;
+}
+
+.document-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.document-action-row .btn {
+  margin-top: 0;
 }
 
 .full-library-controls input[type="search"] {

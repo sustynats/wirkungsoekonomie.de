@@ -77,6 +77,42 @@ function extent(doc) {
   return bits.join(" · ");
 }
 
+function normalizedPairKey(value = "") {
+  return slug(String(value)
+    .replace(/\bPDF\b/gi, "")
+    .replace(/\bOnlinefassung\b/gi, "")
+    .replace(/\bOnline\b/gi, "")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/\s+/g, " ")
+    .trim());
+}
+
+function actionLinks(doc, onlineByKey) {
+  const primary = doc.urls?.primary || "";
+  const sourcePath = doc.urls?.sourcePath || primary;
+  const isPdf = /\.pdf$/i.test(primary);
+  const isOnline = doc.source === "online-version" || /\.html$/i.test(primary) || /\/$/.test(primary);
+  const links = [];
+  const onlineMatch = !isOnline ? onlineByKey.get(normalizedPairKey(doc.title)) : "";
+  if (isOnline) {
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Online lesen</a>`);
+  } else if (isPdf) {
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">PDF öffnen</a>`);
+    if (onlineMatch) links.push(`<a class="btn btn-ghost" href="${esc(siteHref(onlineMatch))}">Online lesen</a>`);
+  } else if (/\.(xlsx|csv|json)$/i.test(primary)) {
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Daten öffnen</a>`);
+  } else if (/\.(pptx)$/i.test(primary)) {
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Präsentation öffnen</a>`);
+  } else if (/\.(md)$/i.test(primary)) {
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Quelle lesen</a>`);
+  } else if (/\.docx$/i.test(sourcePath)) {
+    links.push(`<span class="btn btn-ghost" aria-disabled="true">PDF wird vorbereitet</span>`);
+  } else {
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Eintrag öffnen</a>`);
+  }
+  return `<div class="document-action-row">${links.join("")}</div>`;
+}
+
 function optionList(values) {
   return [...values].sort((a, b) => a.localeCompare(b, "de")).map((value) => `<option value="${esc(value)}">${esc(value)}</option>`).join("");
 }
@@ -96,13 +132,12 @@ function typeIntro(type) {
   return map[type] || "Dokumente und Onlinefassungen der Wirkungsökonomie.";
 }
 
-function card(doc, index) {
+function card(doc, index, onlineByKey) {
   const primary = doc.urls?.primary || "";
   const topics = doc.topics || [];
   const methods = doc.relatedMethods || [];
   const fields = doc.relatedImpactFields || [];
   const searchable = [doc.title, doc.shortDescription, doc.type, doc.status, topics.join(" "), methods.join(" "), fields.join(" ")].join(" ");
-  const isDownload = /\.(pdf|docx|xlsx|csv|pptx|md)$/i.test(primary);
   return `<article class="knowledge-library-card" data-library-card data-type="${esc(doc.type)}" data-status="${esc(doc.status)}" data-source="${esc(doc.source)}" data-query="${esc(searchable.toLowerCase())}" data-index="${index}">
       <div class="document-card-badges">
         <span class="status-badge status-badge--${slug(doc.type)}">${esc(doc.type)}</span>
@@ -116,17 +151,25 @@ function card(doc, index) {
         <dt>Themen</dt><dd>${esc(topics.slice(0, 4).join(", ") || "nicht verschlagwortet")}</dd>
       </dl>
       <div class="document-chip-row muted">${[...methods.slice(0, 3), ...fields.slice(0, 2)].map((item) => `<span>${esc(item)}</span>`).join("")}</div>
-      <a class="btn btn-secondary" href="${esc(siteHref(primary))}">${isDownload ? "Dokument öffnen" : "Onlinefassung öffnen"}</a>
+      ${actionLinks(doc, onlineByKey)}
     </article>`;
 }
 
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
-const documents = registry.documents.filter((doc) => doc.urls?.primary);
+const documents = registry.documents.filter((doc) => doc.urls?.primary && !/\.docx$/i.test(doc.urls?.primary || ""));
 const typeValues = new Set(documents.map((doc) => doc.type).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
+const onlineByKey = new Map();
+for (const doc of documents) {
+  const primary = doc.urls?.primary || "";
+  if (doc.source === "online-version" || /\.html$/i.test(primary) || /\/$/.test(primary)) {
+    const key = normalizedPairKey(doc.title);
+    if (key && !onlineByKey.has(key)) onlineByKey.set(key, primary);
+  }
+}
 
-const leadingCards = documents.filter((doc) => doc.isLeadingReference).slice(0, 12).map(card).join("\n");
+const leadingCards = documents.filter((doc) => doc.isLeadingReference).slice(0, 12).map((doc, index) => card(doc, index, onlineByKey)).join("\n");
 const pathCards = registry.readingPaths.map((item) => `
   <article class="document-reading-path">
     <h3>${esc(item.title)}</h3>
@@ -137,7 +180,7 @@ const typeCards = [...typeValues].sort((a, b) => a.localeCompare(b, "de")).map((
   const count = documents.filter((doc) => doc.type === type).length;
   return `<article class="library-type-card"><strong>${esc(type)}</strong><span>${count} Einträge</span><p>${esc(typeIntro(type))}</p></article>`;
 }).join("\n");
-const allCards = documents.map(card).join("\n");
+const allCards = documents.map((doc, index) => card(doc, index, onlineByKey)).join("\n");
 
 const html = `<!DOCTYPE html>
 <html lang="de">
