@@ -47,6 +47,7 @@
     "check:glossary-alpha": "node scripts/glossary/check-glossary-alphabetical.mjs",
     "check:glossary-links": "node scripts/glossary/build-term-links.mjs",
     "check:hover-definitions": "node scripts/glossary/check-hover-coverage.mjs",
+    "check:glossary-detail-quality": "node scripts/glossary/audit-detail-quality.mjs",
     "check:term-duplicates": "node scripts/glossary/check-glossary-alphabetical.mjs",
     "check:search-integration": "node scripts/quality/check-search-integration.mjs",
     "check:phase1": "node scripts/quality/check-phase1.mjs",
