@@ -172,6 +172,29 @@ function write(file, content) {
   fs.writeFileSync(file, `${content.replace(/[ \t]+$/gm, "").replace(/\n+$/g, "")}\n`);
 }
 
+function internalReferenceRedirectHtml(title, destination = "../") {
+  const safeTitle = esc(title);
+  const safeDestination = esc(destination);
+  return `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="${safeDestination}">
+    <title>${safeTitle} - nicht öffentlich gelistet</title>
+    <script>window.location.replace("${safeDestination}");</script>
+  </head>
+  <body>
+    <main>
+      <h1>${safeTitle}</h1>
+      <p>Diese interne Versions-/Exportseite wird nicht öffentlich ausgespielt.</p>
+      <p><a href="${safeDestination}">Zur öffentlichen Referenz</a></p>
+    </main>
+  </body>
+</html>`;
+}
+
 function baseFor(file) {
   const relativeParent = path.relative(ROOT, path.dirname(path.resolve(ROOT, file)));
   if (!relativeParent || relativeParent === ".") return "";
@@ -1267,30 +1290,10 @@ function main() {
     bodyClass: "reference-ux-page",
   }));
 
-  write("referenz/versionen/index.html", page("referenz/versionen/index.html", {
-    title: "Versionen der Online-Referenz",
-    description: "Originalfassung, Importfassung, Live-Reference-Schicht und Changelog.",
-    type: "Versionierung",
-    body: versionsHtml(),
-    bodyClass: "reference-ux-page",
-  }));
-
-  write("referenz/version-1-1/index.html", page("referenz/version-1-1/index.html", {
-    title: "Version 1.1 - Begriffliche Präzisierung und Referenzordnung",
-    description: "Release Candidate der Wirkungsökonomie auf Grundlage des Führenden Begriffsleitfadens.",
-    type: "Release Candidate",
-    body: releaseV11Html(),
-    bodyClass: "reference-ux-page",
-  }));
-
-  write("referenz/export/index.html", page("referenz/export/index.html", {
-    title: "Export und Zitierfähigkeit",
-    description: "Exportbereich für Originalfassungen und Live-Referenzstände.",
-    section: "Downloads",
-    type: "Export",
-    body: exportHtml(),
-    bodyClass: "reference-ux-page",
-  }));
+  write("referenz/versionen/index.html", internalReferenceRedirectHtml("Versionen der Online-Referenz"));
+  write("referenz/version-1-1/index.html", internalReferenceRedirectHtml("Version 1.1 - Begriffliche Präzisierung und Referenzordnung"));
+  write("referenz/version-1-1/index 2.html", internalReferenceRedirectHtml("Version 1.1 - Begriffliche Präzisierung und Referenzordnung"));
+  write("referenz/export/index.html", internalReferenceRedirectHtml("Export und Zitierfähigkeit"));
 
   for (const part of parts) {
     write(`referenz/${part.slug}/index.html`, page(`referenz/${part.slug}/index.html`, {

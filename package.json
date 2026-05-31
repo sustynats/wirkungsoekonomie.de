@@ -18,6 +18,7 @@
     "check:tool-default-states": "node scripts/quality/check-tool-default-states.mjs",
     "check:publication-abstracts": "node scripts/quality/check-publication-abstracts.mjs",
     "check:public-library-formats": "node scripts/quality/check-public-library-formats.mjs",
+    "check:internal-reference-publication": "node scripts/quality/check-internal-reference-publication.mjs",
     "check:assets": "node scripts/quality/check-assets.mjs",
     "sanierung:status": "node scripts/quality/build-detaildossier-sanierung-status.mjs",
     "go2:status": "node scripts/quality/build-go2-detailconcept-production-status.mjs",

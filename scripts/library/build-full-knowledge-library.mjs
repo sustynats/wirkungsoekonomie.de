@@ -267,5 +267,5 @@ const html = `<!DOCTYPE html>
 </html>`;
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
-fs.writeFileSync(OUT, html);
+fs.writeFileSync(OUT, html.replace(/[ \t]+$/gm, ""));
 console.log(`Full knowledge library written: ${documents.length} entries -> bibliothek/index.html`);

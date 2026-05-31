@@ -8,6 +8,10 @@ const glossaryPath = "public/data/glossary.terms.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
+const INTERNAL_PUBLIC_ROUTE_PATTERNS = [
+  /^\/referenz\/version(?:en|-)/,
+  /^\/referenz\/export\//
+];
 const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Kontext-Werkzeuge/g, "Methoden & Werkzeuge"],
   [/Werkstatt:/g, "Bibliothek:"],
@@ -102,6 +106,11 @@ function normalizeSearchRoute(url) {
   return String(url || "").replace(/#.*$/, "").replace(/\/index\.html$/, "/");
 }
 
+function isInternalPublicRoute(url) {
+  const route = normalizeSearchRoute(url);
+  return INTERNAL_PUBLIC_ROUTE_PATTERNS.some((pattern) => pattern.test(route));
+}
+
 function isLowValueEntry(entry) {
   const route = normalizeSearchRoute(entry.url);
   const title = String(entry.title || "");
@@ -193,6 +202,7 @@ function routeFor(file) {
 function entriesFromContent(file) {
   const text = fs.readFileSync(file, "utf8");
   const route = routeFor(file);
+  if (isInternalPublicRoute(route)) return [];
   const title =
     text.match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     clean(text.match(/<h1[^>]*>(.*?)<\/h1>/i)?.[1]) ||
@@ -282,7 +292,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "referenz", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "anwendungen", "verstehen"]
+const contentFiles = ["src/content/docs", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "anwendungen", "verstehen"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
   for (const { entry, meta: itemMeta } of entriesFromContent(file)) {
@@ -294,6 +304,7 @@ for (const file of contentFiles) {
 const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
 for (const entry of generated) byUrl.set(entry.url, entry);
 const merged = Array.from(byUrl.values())
+  .filter((entry) => !isInternalPublicRoute(entry.url))
   .filter((entry) => !isSearchNoiseEntry(entry))
   .map(publicSearchValue)
   .map(normalizePriority)

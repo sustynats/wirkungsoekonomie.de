@@ -13,6 +13,10 @@ const END = "<!-- stage9-library-versioning:end -->";
 const DOCUMENT_EXTENSIONS = new Set([".pdf", ".xlsx", ".pptx"]);
 const ONLINE_EXTENSIONS = new Set([".html"]);
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
+const INTERNAL_REFERENCE_ROUTE_PATTERNS = [
+  /^referenz\/version(?:en|-)/,
+  /^referenz\/export\//
+];
 const SKIP_DIRS = new Set([
   ".git",
   ".codex-backup",
@@ -186,10 +190,6 @@ const LEADING_OVERRIDES = new Map([
     type: "Methodik",
     shortDescription: "Führende Onlinefassung des Referenzrahmens: SDGs, Agenda 2030 und SDG+."
   }],
-  ["referenz/version-1-1/index.html", {
-    title: "Live-Referenz Version 1.1",
-    shortDescription: "Führende Online-Referenzfassung für die aktualisierte Systemdarstellung."
-  }],
   ["assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.docx", {
     title: "SDG-/SDG+-Referenzrahmen (Lesefassung)",
     shortDescription: "Führende Dokumentfassung des Referenzrahmens für SDGs, Agenda 2030 und SDG+."
@@ -232,6 +232,7 @@ function walk(dir, extensions, acc = []) {
     }
     if (!entry.isFile()) continue;
     if (TRACKED_FILES && !TRACKED_FILES.has(relative)) continue;
+    if (INTERNAL_REFERENCE_ROUTE_PATTERNS.some((pattern) => pattern.test(relative))) continue;
     const ext = path.extname(entry.name).toLowerCase();
     if (NON_PUBLIC_FILE_EXTENSIONS.has(ext)) continue;
     if (extensions.has(ext)) acc.push(abs);
