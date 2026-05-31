@@ -2596,6 +2596,61 @@ const ToolTermInlineLayer = (() => {
   return { init };
 })();
 
+const MethodToolFilterLayer = (() => {
+  function initPanel(panel) {
+    if (!(panel instanceof HTMLElement) || panel.dataset.ready === "true") return;
+    const cards = Array.from(document.querySelectorAll("[data-method-card]"));
+    if (!cards.length) return;
+
+    const controls = {
+      search: panel.querySelector("[data-tool-filter-search]"),
+      cluster: panel.querySelector("[data-tool-filter-cluster]"),
+      type: panel.querySelector("[data-tool-filter-type]"),
+      status: panel.querySelector("[data-tool-filter-status]"),
+      method: panel.querySelector("[data-tool-filter-method]"),
+      demo: panel.querySelector("[data-tool-filter-demo]"),
+      prepared: panel.querySelector("[data-tool-filter-prepared]")
+    };
+
+    const valueOf = (control) => (control instanceof HTMLInputElement || control instanceof HTMLSelectElement ? control.value.trim().toLowerCase() : "");
+    const checked = (control) => control instanceof HTMLInputElement && control.checked;
+
+    function applyFilters() {
+      const search = valueOf(controls.search);
+      const cluster = valueOf(controls.cluster);
+      const type = valueOf(controls.type);
+      const status = valueOf(controls.status);
+      const method = valueOf(controls.method);
+      const demoOnly = checked(controls.demo);
+      const preparedOnly = checked(controls.prepared);
+
+      cards.forEach((card) => {
+        if (!(card instanceof HTMLElement)) return;
+        const text = (card.dataset.search || card.textContent || "").toLowerCase();
+        const matches =
+          (!search || text.includes(search)) &&
+          (!cluster || (card.dataset.cluster || "").toLowerCase() === cluster) &&
+          (!type || (card.dataset.type || "").toLowerCase().includes(type)) &&
+          (!status || (card.dataset.status || "").toLowerCase() === status) &&
+          (!method || (card.dataset.method || "").toLowerCase() === method) &&
+          (!demoOnly || card.dataset.demo === "ja") &&
+          (!preparedOnly || card.dataset.prepared === "ja");
+        card.hidden = !matches;
+      });
+    }
+
+    Object.values(controls).forEach((control) => control?.addEventListener("input", applyFilters));
+    Object.values(controls).forEach((control) => control?.addEventListener("change", applyFilters));
+    panel.dataset.ready = "true";
+  }
+
+  function init() {
+    document.querySelectorAll("[data-tool-filter]").forEach(initPanel);
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
@@ -2603,4 +2658,5 @@ document.addEventListener("DOMContentLoaded", () => {
   FundingSourceLayer.init();
   ResultInterpretationLayer.init();
   ToolTermInlineLayer.init();
+  MethodToolFilterLayer.init();
 });

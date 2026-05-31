@@ -870,15 +870,17 @@ const tools = [
 ].map(([slug, title, text, fieldNames, anchor]) => ({ slug, title, text, fieldNames, anchor }));
 
 const methodClusters = [
-  ["A", "Grundlagen der Bewertung", "Begriffe, Referenzrahmen, Schutzregeln und Bewertungsarchitektur."],
-  ["B", "Messen & Bewerten", "Rechner, Scorecards, Indizes, Checks und operative Bewertung."],
-  ["C", "Daten & Infrastruktur", "Datenqualität, Produktpässe, Datenräume, IDs, Register und Reifegrade."],
-  ["D", "Rückkopplung & Steuerung", "Steuer-, Haushalts-, Fonds-, Governance- und öffentliche Steuerungslogiken."],
-  ["E", "Kapital & Finanzierung", "Kapitalwirkung, Kredit, Portfolio, Versicherung, Dividende und Finanzierungsinstrumente."],
-  ["F", "Kommunikation & Demokratie", "Medien, Sprache, Plattformen, Diskurs, Desinformation und demokratische Resilienz."],
+  ["A", "Begriffe, Zielrahmen & Bewertungslogik", "Grundbegriffe und Zielrahmen: Was ist Wirkung, woran wird sie bewertet und was ist die Zielgröße?"],
+  ["B", "Datenbasis & Operationalisierung", "Daten, IDs, Register, Quellen und Prüfbarkeit: Wie wird Wirkung adressierbar und belastbar?"],
+  ["C", "Bewertungsinstrumente & Kennzahlen", "Aus Daten wird Bewertung: Scorecards, Benchmarks, FinalScore, NWI und Nichtkompensation."],
+  ["D", "Impact Controlling & Transformationsmessung", "Bewertung in Management, Investition und Transformation übersetzen."],
+  ["E", "Rückkopplung & Steuerung", "Wirkung wird in Preise, Steuern, Haushalt, Beschaffung, Förderung und Entscheidungen zurückgeführt."],
+  ["F", "Kapital, Finanzierung & Risiko", "Kapitalflüsse, Portfolios, Fonds, Kredite, Versicherbarkeit und Automatisierungsdividenden nach Wirkung steuern."],
+  ["G", "Governance, Qualitätssicherung & Lernen", "Institutionen, Audits, Versionierung und Schutzmechanismen sichern Qualität, Transparenz und Missbrauchsschutz."],
+  ["H", "Demos, Rechner & Anwendungschecks", "Modellhafte Anwendungen zum Ausprobieren. Keine amtlichen Bewertungen, keine Beratung, keine Personenbewertung."],
 ].map(([key, title, text]) => ({ key, title, text }));
 
-const methodMapTools = [
+const legacyMethodMapTools = [
   ["Impact Controlling", "Dachmethode, die Wirkung in Steuerung, Controlling, Reporting, Risiko, Investition und Entscheidung übersetzt.", "A", "Methodik", "werkzeuge/impact-controlling/", ["T-SROI", "Scorecards", "KII statt KPI"]],
   ["T-SROI", "Transformationswirkung und Systemhebel im Verhältnis zum Ressourceneinsatz bewerten; nicht die operative Netto-Wirkungskennzahl.", "A", "Methodik", "werkzeuge/t-sroi/", ["Impact Controlling", "Wirkungsfonds", "Transformationswirkung"]],
   ["Benchmarks & Archetypen", "Branchen-, Produkt- und Organisationstypen in nachvollziehbare Bewertungsräume übersetzen.", "A", "Methodik", "werkzeuge/benchmarks-archetypen/", ["Scorecards", "WÖk-IDs", "Wirkungsrat"]],
@@ -955,36 +957,546 @@ const methodMapTools = [
   ["KI-Wirkungsrisiko-Check", "Algorithmische Verantwortung, Datenqualität, Bias, Erklärbarkeit und gesellschaftliche Folgewirkung prüfen.", "F", "Demo", "werkzeuge/ki-wirkungsrisiko-check/", ["Plattform-Wirkungscheck", "Datenqualität & Assurance", "Digital-Souveränitätscheck"], "Keine automatische Entscheidung."],
 ];
 
-const preparedToolPages = methodMapTools.filter((tool) => tool[3] === "In Vorbereitung");
+const methodPipeline = [
+  ["A", "Begriffe & Zielrahmen"],
+  ["B", "Daten & IDs"],
+  ["C", "Bewertung & Kennzahlen"],
+  ["D", "Controlling & Transformation"],
+  ["E", "Rückkopplung & Steuerung"],
+  ["G", "Governance & Lernen"],
+  ["H", "Demos & Anwendung"],
+];
+
+const cardsToRestoreOrPrepare = [
+  {
+    title: "Wirkung",
+    text: "Wirkung ist neutral und relational: Sie beschreibt Zustandsveränderungen, Nebenwirkungen und Wechselwirkungen in einem definierten Wirkungsraum.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/wirkung/",
+    types: ["Grundbegriff"],
+    related: ["Wirkungsbewertung", "Netto-Wirkung", "Wirkungsraum"],
+  },
+  {
+    title: "Wirkungspotenzial",
+    text: "Wirkungspotenzial beschreibt mögliche, noch nicht eingetretene Wirkung und bleibt von nachgewiesener Wirkung getrennt.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/wirkungspotenzial/",
+    types: ["Grundbegriff"],
+    related: ["Wirkung", "Wirkungsrisiko", "Wirkungsbewertung"],
+  },
+  {
+    title: "Wirkungsrisiko",
+    text: "Wirkungsrisiko macht sichtbar, wo erwartete Wirkungen ausbleiben, negative Nebenwirkungen entstehen oder rote Linien berührt werden.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/wirkungsrisiko/",
+    types: ["Grundbegriff", "Bewertungslogik"],
+    related: ["Wirkungsrisiko-Matrix", "Reverse Merit Order", "Datenqualität & Assurance"],
+  },
+  {
+    title: "Wirkungsbewertung",
+    text: "Wirkungsbewertung ordnet positive, neutrale und negative Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/wirkungsbewertung/",
+    types: ["Bewertungslogik"],
+    related: ["Scorecards", "SDGs / Agenda 2030", "SDG+"],
+  },
+  {
+    title: "Netto-Wirkung",
+    text: "Netto-Wirkung beschreibt die zusammengeführte Bewertung positiver, negativer und neutraler Wirkungen in einem definierten Wirkungsraum. Sie berücksichtigt Nebenwirkungen, Datenqualität, Systemkontext, Zeitwirkung und Nichtkompensation.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/netto-wirkung/",
+    types: ["Grundbegriff", "Bewertungslogik"],
+    related: ["NWI", "Scorecards", "Reverse Merit Order", "Positive Netto-Wirkung", "Wirkungsbewertung"],
+    notice: "Netto-Wirkung ist keine einfache Addition. Schwere negative Wirkung darf nicht durch positive Einzelwerte verdeckt werden.",
+  },
+  {
+    title: "Positive Netto-Wirkung",
+    text: "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie: eine tragfähige Gesamtwirkung für Mensch, Planet und Demokratie, ohne schwere negative Wirkungen zu verdecken.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/positive-netto-wirkung/",
+    types: ["Zielrahmen"],
+    related: ["Netto-Wirkung", "SDG+", "Mensch, Planet, Demokratie", "Wirkungsbewertung"],
+  },
+  {
+    title: "Mensch, Planet, Demokratie",
+    text: "Mensch, Planet und Demokratie bilden die Zielbrücke, an der positive Netto-Wirkung in der Wirkungsökonomie ausgerichtet wird.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/mensch-planet-demokratie/",
+    types: ["Zielrahmen"],
+    related: ["Positive Netto-Wirkung", "SDG+", "Wirkungsraum"],
+  },
+  {
+    title: "SDGs / Agenda 2030",
+    text: "Die SDGs und die Agenda 2030 bilden den globalen Referenzrahmen, an den die WÖk ihre Bewertungslogik anschließt.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/sdgs/",
+    types: ["Zielrahmen"],
+    related: ["SDG+", "Wirkungsbewertung", "Positive Netto-Wirkung"],
+  },
+  {
+    title: "SDG+",
+    text: "SDG+ ist die transparente Erweiterung der Wirkungsökonomie für blinde Flecken wie Demokratiequalität, Resilienz, digitale Souveränität und Nichtkompensation. SDG+ ist keine offizielle UN-Kategorie.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/sdg-plus/",
+    types: ["Zielrahmen"],
+    related: ["SDGs / Agenda 2030", "Mensch, Planet, Demokratie", "Wirkungsgrenzen"],
+    notice: "SDG+ ergänzt den WÖk-Referenzrahmen transparent und ist nicht amtlich.",
+  },
+  {
+    title: "Wirkungsraum",
+    text: "Der Wirkungsraum beschreibt, wo eine Wirkung entsteht, wen sie betrifft, welche Zeiträume gelten und welche Nebenwirkungen sichtbar bleiben müssen.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/wirkungsraum/",
+    types: ["Grundbegriff", "Bewertungslogik"],
+    related: ["Netto-Wirkung", "Wirkungsgrenzen", "Nichtkompensationsprinzip"],
+  },
+  {
+    title: "Wirkungsgrenzen",
+    text: "Wirkungsgrenzen markieren rote Linien, Mindestbedingungen und Bereiche, in denen positive Einzelwerte schwere negative Wirkung nicht ausgleichen dürfen.",
+    cluster: "A",
+    status: "Begriffsseite in Rekonstruktion",
+    target: null,
+    types: ["Bewertungslogik"],
+    related: ["Reverse Merit Order", "Nichtkompensationsprinzip", "Wirkungsrisiko"],
+  },
+  {
+    title: "Nichtkompensationsprinzip",
+    text: "Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkung durch positive Einzelwerte unsichtbar gemacht wird.",
+    cluster: "A",
+    status: "Live",
+    target: "begriffe/nichtkompensationsprinzip/",
+    types: ["Bewertungslogik"],
+    related: ["Reverse Merit Order", "Wirkungsgrenzen", "Netto-Wirkung"],
+  },
+  {
+    title: "NACE-Mapping",
+    text: "NACE-Mapping verbindet Branchenlogik mit WÖk-IDs, Wirkungsfeldern und Datenquellen.",
+    cluster: "B",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Dateninstrument"],
+    related: ["WÖk-IDs", "Datenquellen", "Scorecards"],
+  },
+  {
+    title: "WÖk-ID-Register",
+    text: "Das öffentliche Forschungsregister macht WÖk-IDs, Quellen, Berechnungslogiken, Datenqualität und Reviewstatus nachvollziehbar.",
+    cluster: "B",
+    status: "Public Research",
+    target: "werkzeuge/woek-id-register/",
+    types: ["Register", "Dateninstrument"],
+    related: ["WÖk-IDs", "Quellenkatalog", "Datenqualität & Assurance"],
+    notice: "Öffentliches Forschungsregister, nicht amtlich und kein finaler Standard.",
+  },
+  {
+    title: "SDG+-Register",
+    text: "Das SDG+-Register bereitet die WÖk-Erweiterungen des Referenzrahmens transparent, versionierbar und kritisierbar auf.",
+    cluster: "B",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Register"],
+    related: ["SDG+", "WÖk-ID-Register", "Wirkungsrat"],
+  },
+  {
+    title: "Datenquellen",
+    text: "Datenquellen bündeln Reporting-, Produkt-, Lieferketten-, Register- und Alltagsdaten für prüfbare Wirkungsbewertungen.",
+    cluster: "B",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Dateninstrument"],
+    related: ["Quellenkatalog", "WÖk-IDs", "Datenqualität & Assurance"],
+  },
+  {
+    title: "Quellenkatalog",
+    text: "Der Quellenkatalog ordnet externe Standards, Datenquellen und Register nach Nutzung, Status und Prüfbarkeit.",
+    cluster: "B",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Register", "Dateninstrument"],
+    related: ["WÖk-ID-Register", "Datenquellen", "Wirkungsaudit"],
+  },
+  {
+    title: "FinalScore",
+    text: "Der FinalScore führt Einzelscores, Datenqualität, Benchmarks, Mindestbedingungen und Nichtkompensation in eine entscheidungsfähige Ergebnislogik.",
+    cluster: "C",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Kennzahl", "Bewertungslogik"],
+    related: ["Scorecards", "NWI", "Reverse Merit Order"],
+  },
+  {
+    title: "Wohnwirkungsindex / WIX-Wohn",
+    text: "WIX-Wohn bündelt Wohnkosten, Energie, Gebäudezustand, Sozialraum und Resilienz zu einer modellhaften Wirkungskennzahl.",
+    cluster: "C",
+    status: "Methodik",
+    target: "wirkungsfelder/wohnen-stadt/detailkonzepte/wohnwirkungsindex-wix-wohn/",
+    types: ["Kennzahl"],
+    related: ["Wohnwirkungsrechner WIX-Wohn", "Sozialraum-Resilienzprofil", "Wirkungshaushalt"],
+  },
+  {
+    title: "Wirkungscontrolling",
+    text: "Wirkungscontrolling operationalisiert Impact Controlling in Planung, Kennzahlen, Abweichungsanalyse, Lernen und Managemententscheidungen.",
+    cluster: "D",
+    status: "Methodik",
+    target: "werkzeuge/impact-controlling/",
+    types: ["Managementinstrument"],
+    related: ["Impact Controlling", "KII statt KPI", "NWI"],
+  },
+  {
+    title: "Transformationswirkung",
+    text: "Transformationswirkung beschreibt, wie stark eine Maßnahme Strukturen, Anreize und Systemhebel in Richtung positiver Netto-Wirkung verändert.",
+    cluster: "D",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Methode"],
+    related: ["T-SROI", "Impact Controlling", "Wirkungsportfolio"],
+  },
+  {
+    title: "WStG",
+    text: "Das WStG beschreibt Wirkung als rahmende Steuerungs- und Bemessungslogik im Recht, ohne bereits geltendes Recht zu behaupten.",
+    cluster: "E",
+    status: "Methodik",
+    target: "werkzeuge/wirkungssteuergesetz/",
+    types: ["Rückkopplungsinstrument"],
+    related: ["Wirkungsumsatzsteuer", "Wirkungseinkommensteuer", "Wirkungshaushalt"],
+    notice: "Keine Rechts- oder Steuerberatung.",
+  },
+  {
+    title: "WUStG",
+    text: "Das WUStG koppelt Produkt- und Leistungswirkung modellhaft an Steuer- und Preislogik zurück.",
+    cluster: "E",
+    status: "Methodik",
+    target: "werkzeuge/wirkungsumsatzsteuer/",
+    types: ["Rückkopplungsinstrument"],
+    related: ["Produktscorecards", "Reverse Merit Order", "Scorecards"],
+    notice: "Keine Steuerberatung und keine amtliche Steuerentscheidung.",
+  },
+  {
+    title: "WEstG",
+    text: "Das WEstG ordnet Einkommen nach Höhe, Entstehungskontext und Wirkung als modellhafte Rückkopplungslogik.",
+    cluster: "E",
+    status: "Methodik",
+    target: "werkzeuge/wirkungseinkommensteuer/",
+    types: ["Rückkopplungsinstrument"],
+    related: ["Maschinenwertschöpfungsbeitrag", "Automatisierungsdividende", "Wirkungsfonds"],
+    notice: "Keine Steuerberatung und keine Sozialleistungsentscheidung.",
+  },
+  {
+    title: "Wirkungsförderung",
+    text: "Wirkungsförderung richtet Förderlogik an Prävention, Resilienz, Teilhabe und positiver Netto-Wirkung aus.",
+    cluster: "E",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Rückkopplungsinstrument"],
+    related: ["Wirkungsförderungs-Check", "Wirkungshaushalt", "Wirkungsregister"],
+    notice: "Keine Förderentscheidung.",
+  },
+  {
+    title: "Wirkungspunkte / Bonuslogik",
+    text: "Wirkungspunkte und Bonuslogik bereiten Anreize vor, ohne rote Linien oder schwere negative Wirkung zu kompensieren.",
+    cluster: "E",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Rückkopplungsinstrument"],
+    related: ["FinalScore", "Reverse Merit Order", "Wirkungsrückkopplung"],
+  },
+  {
+    title: "Wirkungslenkung",
+    text: "Wirkungslenkung beschreibt die Rückführung von Bewertung in Preise, Steuern, Beschaffung, Förderung und Entscheidungen.",
+    cluster: "E",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Rückkopplungsinstrument"],
+    related: ["Wirkungsrückkopplung", "Wirkungshaushalt", "Wirkungsumsatzsteuer"],
+  },
+  {
+    title: "Wirkungsrückkopplung",
+    text: "Wirkungsrückkopplung macht Bewertung handlungswirksam: in Marktpreisen, öffentlicher Steuerung, Kapitalflüssen, Lernschleifen und Korrekturpfaden.",
+    cluster: "E",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Rückkopplungsinstrument"],
+    related: ["Wirkungslenkung", "Impact Controlling", "Wirkungsrat"],
+  },
+  {
+    title: "Wirkungskredit",
+    text: "Wirkungskredit verbindet Finanzierungskonditionen modellhaft mit Wirkung, Risiko, Datenqualität und Transformationspfad.",
+    cluster: "F",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Kapitalinstrument"],
+    related: ["Wirkungskredit-Rechner", "Kapitalwirkungscheck", "Datenqualität & Assurance"],
+    notice: "Keine Kreditentscheidung und keine Finanzberatung.",
+  },
+  {
+    title: "Stranded-Asset-Check",
+    text: "Der Stranded-Asset-Check macht Übergangs-, Resilienz- und Wertstabilitätsrisiken sichtbar.",
+    cluster: "F",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Check", "Kapitalinstrument"],
+    related: ["Stranded-Asset-Check Wohnen", "Versicherbarkeits-/Resilienzcheck", "Wirkungsrisiko-Matrix"],
+    notice: "Keine Anlage- oder Immobilienberatung.",
+  },
+  {
+    title: "Wirkungsportfolio Kapital",
+    text: "Wirkungsportfolio Kapital ordnet Kapitalflüsse nach Wirkung, Risiko, Resilienz und Transformationsbeitrag.",
+    cluster: "F",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Kapitalinstrument"],
+    related: ["Portfolio-Wirkungsrating", "Kapitalwirkungscheck", "Wirkungsfonds"],
+    notice: "Keine Anlageentscheidung.",
+  },
+  {
+    title: "Review-/Versionierungslogik",
+    text: "Review- und Versionierungslogik hält Methodenstände, Quellen, Benchmarks, Korrekturen und Reviewstatus nachvollziehbar.",
+    cluster: "G",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Governance"],
+    related: ["Wirkungsrat", "Wirkungsregister", "Wirkungsaudit"],
+  },
+  {
+    title: "Missbrauchsschutz",
+    text: "Missbrauchsschutz bündelt Schutzmechanismen gegen Personenbewertung, Scheingenauigkeit, Greenwashing, Impact-Washing und automatische Entscheidungen.",
+    cluster: "G",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Governance"],
+    related: ["Wirkungsrat", "Anti-Greenwashing", "Anti-Impact-Washing"],
+  },
+  {
+    title: "Anti-Greenwashing",
+    text: "Anti-Greenwashing macht Datenqualität, Grenzen, Quellen und rote Linien sichtbar, damit positive Einzelclaims nicht überdehnen.",
+    cluster: "G",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Governance"],
+    related: ["Missbrauchsschutz", "Datenqualität & Assurance", "Reverse Merit Order"],
+  },
+  {
+    title: "Anti-Impact-Washing",
+    text: "Anti-Impact-Washing schützt vor überzogenen Wirkungsbehauptungen, Scheingenauigkeit und der Verwechslung von Potenzial mit eingetretener Wirkung.",
+    cluster: "G",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Governance"],
+    related: ["Wirkungspotenzial", "Missbrauchsschutz", "Wirkungsaudit"],
+  },
+  {
+    title: "Beschwerde-/Korrekturpfade",
+    text: "Beschwerde- und Korrekturpfade sichern Einspruch, Fehlerkorrektur, Rechtsschutz und demokratische Nachsteuerung.",
+    cluster: "G",
+    status: "In Vorbereitung",
+    target: null,
+    types: ["Governance"],
+    related: ["Wirkungsrat", "Wirkungsregister", "Review-/Versionierungslogik"],
+  },
+];
+
+const clusterOverrideByTitle = new Map([
+  ["Impact Controlling", "D"],
+  ["T-SROI", "D"],
+  ["Netto-Wirkungs-Index", "C"],
+  ["Scorecards", "C"],
+  ["Produktscorecards", "C"],
+  ["Benchmarks & Archetypen", "C"],
+  ["Reverse Merit Order", "C"],
+  ["KII statt KPI", "D"],
+  ["Wirkungsportfolio", "D"],
+  ["Bildungswirkungsindex / BWK", "C"],
+  ["Sozialraum-Resilienzprofil", "C"],
+  ["WÖk-IDs", "B"],
+  ["Datenqualität & Assurance", "B"],
+  ["Digitale Produktpässe", "B"],
+  ["Wirkungsdatenräume", "B"],
+  ["Digitale Produktpässe und Wirkungsdatenräume", "B"],
+  ["Wirkungsregister", "G"],
+  ["Wissensrat-/Integritätsregister", "G"],
+  ["Wirkungsrat", "G"],
+  ["Wirkungsaudit", "G"],
+  ["Wirkungsumsatzsteuer", "E"],
+  ["Wirkungssteuergesetz WStG", "E"],
+  ["Wirkungseinkommensteuer", "E"],
+  ["Wirkungshaushalt", "E"],
+  ["Öffentliche Beschaffung", "E"],
+  ["Wirkungsfonds", "F"],
+  ["Wirkungsfonds-Simulator", "H"],
+  ["Kapitalwirkungscheck", "F"],
+  ["Portfolio-Wirkungsrating", "F"],
+  ["Wirkungskredit-Rechner", "H"],
+  ["Versicherbarkeits-/Resilienzcheck", "F"],
+  ["ESG-zu-WÖk-Mapping", "B"],
+  ["Innovations-Wirkungsportfolio", "D"],
+  ["Automatisierungsdividende", "F"],
+  ["Maschinenwertschöpfungsbeitrag", "F"],
+  ["Medienwirkungscheck", "D"],
+  ["Sprach- und Framing-Analyse", "D"],
+  ["Politische Wirkungsprüfung", "D"],
+]);
+
+const titleOverrideByTitle = new Map([["Netto-Wirkungs-Index", "Netto-Wirkungs-Index / NWI"]]);
+
+const typeOverrideByTitle = new Map([
+  ["Impact Controlling", ["Managementinstrument"]],
+  ["T-SROI", ["Kennzahl", "Methode"]],
+  ["Netto-Wirkungs-Index", ["Kennzahl"]],
+  ["Netto-Wirkungs-Index / NWI", ["Kennzahl"]],
+  ["Scorecards", ["Bewertungsinstrument"]],
+  ["Produktscorecards", ["Bewertungsinstrument"]],
+  ["Benchmarks & Archetypen", ["Methode"]],
+  ["Reverse Merit Order", ["Bewertungslogik"]],
+  ["KII statt KPI", ["Managementinstrument"]],
+  ["WÖk-IDs", ["Dateninstrument"]],
+  ["Datenqualität & Assurance", ["Dateninstrument"]],
+  ["Digitale Produktpässe", ["Dateninstrument"]],
+  ["Wirkungsdatenräume", ["Dateninstrument"]],
+  ["Wirkungsregister", ["Register", "Governance"]],
+  ["Wirkungsrat", ["Governance"]],
+  ["Wirkungsaudit", ["Governance"]],
+  ["Wirkungsfonds", ["Kapitalinstrument"]],
+  ["Kapitalwirkungscheck", ["Kapitalinstrument", "Check"]],
+  ["Portfolio-Wirkungsrating", ["Kapitalinstrument"]],
+  ["Versicherbarkeits-/Resilienzcheck", ["Kapitalinstrument", "Check"]],
+  ["Automatisierungsdividende", ["Kapitalinstrument"]],
+  ["Maschinenwertschöpfungsbeitrag", ["Kapitalinstrument"]],
+]);
+
+const textOverrideByTitle = new Map([
+  ["Impact Controlling", "Impact Controlling übersetzt Wirkungsdaten, Scorecards, KII, NWI und T-SROI in Steuerung, Reporting, Risiko, Investition und Entscheidung."],
+  ["T-SROI", "Der T-SROI bewertet Transformationswirkung und systemische Hebelwirkung. Er baut auf geprüfter Netto-Wirkung auf, ersetzt aber weder Scorecard noch NWI."],
+  ["Netto-Wirkungs-Index", "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Einzelscores, Datenqualität, Mindestbedingungen und Reverse Merit Order zu einer prüfbaren Netto-Wirkungsbewertung."],
+  ["Reverse Merit Order", "Die Reverse Merit Order begrenzt die Gesamtbewertung durch das kritischste zentrale Wirkungsfeld. Sie schützt vor Schönrechnung, Ablasslogik und Greenwashing."],
+  ["Wirkungsrat", "Der Wirkungsrat sichert Weiterentwicklung, Evaluation, Versionierung, Benchmarkpflege, Transparenz und Missbrauchsschutz der Wirkungslogik."],
+]);
+
+const noticeOverrideByTitle = new Map([
+  ["T-SROI", "T-SROI misst nicht noch einmal Netto-Wirkung. Diese Aufgabe liegt beim NWI."],
+  ["Netto-Wirkungs-Index", "Der NWI ist keine Transformationskennzahl und kein Ersatz für die Scorecard."],
+  ["Reverse Merit Order", "Bewertungsregel und Nichtkompensationslogik: rote Linien werden nicht kompensiert."],
+  ["Wirkungsrat", "Governance- und Qualitätssicherungslogik, keine amtliche Entscheidung."],
+  ["Impact Controlling", "Managementinstrument, kein Ersatz für menschliche Verantwortung und demokratische Legitimation."],
+]);
+
+const demoLikeTitle = (title, status) => status === "Demo" || /(Demo|Rechner|Check|Scanner|Dashboard|Radar|Generator|Monitor|Simulator|Rating)/.test(title);
+
+const methodBucketByCluster = new Map([
+  ["A", "Bewertungslogik"],
+  ["B", "Daten"],
+  ["C", "Bewertung"],
+  ["D", "Controlling"],
+  ["E", "Rückkopplung"],
+  ["F", "Kapital"],
+  ["G", "Governance"],
+  ["H", "Demo"],
+]);
+
+function normalizeMethodTool(raw) {
+  const [legacyTitle, legacyText, legacyCluster, legacyStatus, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht."] = raw;
+  const title = titleOverrideByTitle.get(legacyTitle) || legacyTitle;
+  const status = legacyStatus || "Methodik";
+  const isDemo = demoLikeTitle(legacyTitle, status);
+  const cluster = clusterOverrideByTitle.get(legacyTitle) || (isDemo ? "H" : legacyCluster);
+  const types = typeOverrideByTitle.get(title) || typeOverrideByTitle.get(legacyTitle) || (isDemo ? (legacyTitle.includes("Rechner") ? ["Demo", "Rechner"] : legacyTitle.includes("Check") ? ["Demo", "Check"] : ["Demo"]) : ["Methode"]);
+  return {
+    title,
+    text: textOverrideByTitle.get(legacyTitle) || legacyText,
+    cluster,
+    status,
+    target,
+    related,
+    notice: noticeOverrideByTitle.get(legacyTitle) || notice,
+    types,
+    isDemo,
+    isPrepared: status === "In Vorbereitung" || !target,
+    method: methodBucketByCluster.get(cluster) || "Methode",
+    oldCluster: legacyCluster,
+  };
+}
+
+function uniqueMethodTools(tools) {
+  const seen = new Set();
+  return tools.filter((tool) => {
+    const key = tool.title;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+const methodMapTools = uniqueMethodTools([
+  ...cardsToRestoreOrPrepare.map((tool) => ({
+    status: "Methodik",
+    related: [],
+    notice: "Bereitet Entscheidungen vor, ersetzt sie aber nicht.",
+    types: ["Methode"],
+    isDemo: false,
+    isPrepared: tool.status === "In Vorbereitung" || !tool.target,
+    method: methodBucketByCluster.get(tool.cluster) || "Methode",
+    oldCluster: "neu/ergänzt",
+    ...tool,
+  })),
+  ...legacyMethodMapTools.map(normalizeMethodTool),
+]);
+
+const preparedToolPages = methodMapTools.filter((tool) => tool.status === "In Vorbereitung" && tool.target);
 
 function relatedToolLinks(base, related = []) {
-  const known = new Map(methodMapTools.map(([title, , , , href]) => [title, href]));
+  const aliases = new Map([
+    ["NWI", "Netto-Wirkungs-Index / NWI"],
+    ["Netto-Wirkungs-Index", "Netto-Wirkungs-Index / NWI"],
+    ["Bildungswirkungsindex", "Bildungswirkungsindex / BWK"],
+    ["Wohnwirkungsrechner", "Wohnwirkungsrechner WIX-Wohn"],
+    ["Medienwirkungscheck Demo", "Medienwirkungscheck"],
+    ["Open-Science-Check", "Open-Science- und Replikationscheck"],
+    ["Datenqualität", "Datenqualität & Assurance"],
+    ["WÖk-ID", "WÖk-IDs"],
+  ]);
+  const known = new Map(methodMapTools.map((tool) => [tool.title, tool.target]));
   return related
     .map((title) => {
-      const target = known.get(title) || known.get(title.replace(/^NWI$/, "Netto-Wirkungs-Index"));
+      const target = known.get(title) || known.get(aliases.get(title));
       return target ? `<a href="${href(base, target)}">${escapeHtml(title)}</a>` : `<span>${escapeHtml(title)}</span>`;
     })
     .join("");
 }
 
+function methodTypeBadges(types = []) {
+  return types.map((type) => `<span class="method-type-badge">${escapeHtml(type)}</span>`).join("");
+}
+
 function methodToolCard(base, tool) {
-  const [title, text, cluster, status, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht."] = tool;
+  const { title, text, cluster, status, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht.", types = [], isDemo = false, isPrepared = false, method = "" } = tool;
   const clusterInfo = methodClusters.find((item) => item.key === cluster);
-  return `<article class="card method-tool-card" data-cluster="${escapeHtml(cluster)}">
+  const action = target
+    ? `<a class="text-link" href="${href(base, target)}">Detailseite öffnen</a>`
+    : `<span class="method-card-pending">Detailseite in Vorbereitung</span>`;
+  return `<article class="card method-tool-card" data-method-card data-cluster="${escapeHtml(cluster)}" data-status="${escapeHtml(status)}" data-type="${escapeHtml(types.join(" "))}" data-method="${escapeHtml(method)}" data-demo="${isDemo ? "ja" : "nein"}" data-prepared="${isPrepared ? "ja" : "nein"}" data-search="${escapeHtml([title, text, clusterInfo?.title, status, types.join(" "), related.join(" ")].filter(Boolean).join(" "))}">
     <div class="method-tool-card-head">
       <p class="card-kicker">Cluster ${escapeHtml(cluster)} · ${escapeHtml(clusterInfo?.title || "Methoden")}</p>
       ${StatusBadge(status)}
     </div>
+    <div class="method-type-row">${methodTypeBadges(types)}</div>
     <h3 class="card-title">${escapeHtml(title)}</h3>
     <p class="card-text">${escapeHtml(text)}</p>
     <p class="method-tool-notice">${escapeHtml(notice)}</p>
     <div class="method-related" aria-label="Verwandte Werkzeuge">${relatedToolLinks(base, related)}</div>
-    <div class="portal-card-actions"><a class="text-link" href="${href(base, target)}">Detailseite öffnen</a></div>
+    <div class="portal-card-actions">${action}</div>
   </article>`;
 }
 
 function methodClusterSection(base, cluster) {
-  const cards = methodMapTools.filter((tool) => tool[2] === cluster.key).map((tool) => methodToolCard(base, tool)).join("");
+  const cards = methodMapTools.filter((tool) => tool.cluster === cluster.key).map((tool) => methodToolCard(base, tool)).join("");
   return `<section class="section method-cluster-section" id="cluster-${cluster.key.toLowerCase()}" aria-labelledby="cluster-${cluster.key.toLowerCase()}-title">
     <div>
       <div class="section-header">
@@ -1002,31 +1514,58 @@ function toolOverview() {
     rel: "werkzeuge/index.html",
     title: "Methoden & Werkzeuge der Wirkungsökonomie | Methodenlandkarte",
     description:
-      "Methodenlandkarte der Wirkungsökonomie: Bewertung, Messung, Daten, Rückkopplung, Kapital, Finanzierung, Kommunikation und Demokratie.",
+      "Methodenlandkarte der Wirkungsökonomie: Begriffe, Daten, Bewertung, Kennzahlen, Controlling, Rückkopplung, Kapital, Governance und Demos.",
     searchSection: "Werkzeuge",
     body: (base) => `<section class="hero method-map-hero">
         <div class="hero-grid">
           <div>
             <p class="hero-kicker">Methodenlandkarte</p>
             <h1 class="hero-title">Methoden &amp; Werkzeuge der Wirkungsökonomie</h1>
-            <p class="hero-subtitle">Eine Landkarte der Methoden, Instrumente, Rechner, Mappings und Demos, mit denen Wirkung sichtbar, bewertbar und rückkoppelbar wird.</p>
-            <p class="hero-text">Die Karten zeigen keine amtliche Bewertung. Sie ordnen vorhandene und vorbereitete Werkzeuge nach ihrer Funktion: Grundlagen, Messung, Daten, Steuerung, Finanzierung, Kommunikation und Demokratie.</p>
+            <p class="hero-subtitle">Eine Landkarte der Begriffe, Dateninstrumente, Bewertungslogiken, Kennzahlen, Managementinstrumente, Governance-Bausteine und Demos, mit denen Wirkung sichtbar, prüfbar und rückgekoppelt wird.</p>
+            <p class="hero-text">Die Karten zeigen keine amtliche Bewertung. Sie trennen bewusst Zielrahmen, operative Kennzahlen, Transformationsmessung, Nichtkompensationsregeln, Governance und modellhafte Anwendungen.</p>
             ${printActions(base)}
           </div>
           <aside class="card">
             <p class="card-kicker">Abgrenzung</p>
             <h2 class="card-title">NWI und T-SROI sind bewusst getrennt.</h2>
-            <p class="card-text"><strong>NWI</strong> ist die operative Netto-Wirkungskennzahl. <strong>T-SROI</strong> bewertet Transformationswirkung und Systemhebel. Beide gehören zusammen, ersetzen einander aber nicht.</p>
+            <p class="card-text"><strong>Netto-Wirkung</strong> ist Bewertungslogik und Zielbrücke. <strong>NWI</strong> ist die operative Kennzahl. <strong>T-SROI</strong> bewertet Transformationswirkung und Systemhebel. <strong>Reverse Merit Order</strong> schützt vor Kompensation roter Linien.</p>
           </aside>
+        </div>
+      </section>
+      <section class="section method-orientation-section" aria-labelledby="method-orientation-title">
+        <div class="card method-orientation-card">
+          <p class="hero-kicker">Orientierung</p>
+          <h2 id="method-orientation-title">Begriff, Methode, Kennzahl, Instrument, Institution oder Demo?</h2>
+          <p class="card-text">Nicht jede Karte hat dieselbe Funktion: Begriffe erklären den Zielrahmen, WÖk-IDs adressieren Daten, Scorecards bewerten, der NWI verdichtet operativ, T-SROI beschreibt Transformationshebel, Reverse Merit Order setzt Nichtkompensationsgrenzen, der Wirkungsrat sichert Governance und Demos zeigen modellhafte Anwendungen.</p>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="method-pipeline-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Pipeline</p>
+            <h2 id="method-pipeline-title">Von Zielrahmen zu Anwendung</h2>
+          </div>
+          <nav class="method-pipeline" aria-label="Methodenpipeline">
+            ${methodPipeline.map(([cluster, label]) => `<a href="#cluster-${cluster.toLowerCase()}"><strong>${escapeHtml(cluster)}</strong><span>${escapeHtml(label)}</span></a>`).join("")}
+          </nav>
         </div>
       </section>
       <section class="section" aria-labelledby="method-map-title">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Orientierung</p>
-            <h2 id="method-map-title">Sechs Cluster statt Werkzeugliste</h2>
+            <p class="hero-kicker">Filter</p>
+            <h2 id="method-map-title">Acht Cluster statt gemischter Werkzeugliste</h2>
             <p>Jedes Werkzeug bleibt über seine Detailseite erreichbar. Neue zentrale, aber noch nicht ausgearbeitete Werkzeuge sind als ${StatusBadge("In Vorbereitung")} markiert.</p>
           </div>
+          <form class="tool-filter-panel" data-tool-filter aria-label="Methoden und Werkzeuge filtern">
+            <label>Suche <input type="search" data-tool-filter-search placeholder="Begriff, Methode oder Demo suchen"></label>
+            <label>Cluster <select data-tool-filter-cluster><option value="">Alle Cluster</option>${methodClusters.map((cluster) => `<option value="${cluster.key}">${cluster.key} · ${escapeHtml(cluster.title)}</option>`).join("")}</select></label>
+            <label>Typ <select data-tool-filter-type><option value="">Alle Typen</option>${Array.from(new Set(methodMapTools.flatMap((tool) => tool.types || []))).sort().map((type) => `<option value="${escapeHtml(type)}">${escapeHtml(type)}</option>`).join("")}</select></label>
+            <label>Status <select data-tool-filter-status><option value="">Alle Status</option>${Array.from(new Set(methodMapTools.map((tool) => tool.status))).sort().map((status) => `<option value="${escapeHtml(status)}">${escapeHtml(status)}</option>`).join("")}</select></label>
+            <label>Methode <select data-tool-filter-method><option value="">Alle Methodenlogiken</option>${Array.from(new Set(methodMapTools.map((tool) => tool.method).filter(Boolean))).sort().map((method) => `<option value="${escapeHtml(method)}">${escapeHtml(method)}</option>`).join("")}</select></label>
+            <label class="tool-filter-check"><input type="checkbox" data-tool-filter-demo> Nur Demos/Rechner/Checks</label>
+            <label class="tool-filter-check"><input type="checkbox" data-tool-filter-prepared> Nur in Vorbereitung/Rekonstruktion</label>
+          </form>
           <nav class="method-cluster-nav" aria-label="Methodencluster">
             ${methodClusters.map((cluster) => `<a href="#cluster-${cluster.key.toLowerCase()}"><strong>${cluster.key}</strong><span>${escapeHtml(cluster.title)}</span></a>`).join("")}
           </nav>
@@ -1131,7 +1670,7 @@ function toolPage(tool) {
 }
 
 function preparedToolPage(tool) {
-  const [title, text, cluster, status, target, related = [], notice = "Vorbereitete Methodenseite."] = tool;
+  const { title, text, cluster, status, target, related = [], notice = "Vorbereitete Methodenseite." } = tool;
   const rel = `${target.replace(/^\/+/, "").replace(/\/?$/, "/")}index.html`;
   const clusterInfo = methodClusters.find((item) => item.key === cluster);
   return page({
