@@ -33,7 +33,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "sechste Kondratieff-Welle",
       "Sixth Kondratieff"
     ],
-    "definition": "Der 6. Kondratieff beschreibt in der WÖk die lange Transformationswelle des 21. Jahrhunderts: Nachhaltigkeit, Gesundheit, Resilienz, KI, Robotik, Automatisierung und Wirkungsdaten wirken zusammen.",
+    "definition": "Der 6. Kondratieff beschreibt in der WÖk die lange Transformationswelle des 21. Jahrhunderts: Nachhaltigkeit, Gesundheit, Resilienz, Digitalisierung, KI, Robotik, Automatisierung und Wirkungsdaten wirken zusammen.",
     "url": "/begriffe/sechster-kondratieff/",
     "priority": 2,
     "allowedContexts": [

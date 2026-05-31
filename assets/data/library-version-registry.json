@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T17:43:33.227Z",
+  "generatedAt": "2026-05-31T17:57:15.171Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -203,19 +203,19 @@
     }
   ],
   "counts": {
-    "total": 2129,
+    "total": 2137,
     "byStatus": {
       "führend": 7,
-      "aktuell": 1372,
+      "aktuell": 1375,
       "Arbeitsfassung": 439,
-      "ältere Fassung": 293,
+      "ältere Fassung": 298,
       "in Überarbeitung": 18
     },
     "byType": {
       "Grundlagenwerk": 84,
-      "Glossar": 71,
+      "Glossar": 72,
       "Methodik": 156,
-      "Arbeitspapier": 1736,
+      "Arbeitspapier": 1743,
       "Beispiel": 19,
       "Gesetzesentwurf": 46,
       "Whitepaper": 8,
@@ -223,10 +223,10 @@
     },
     "bySource": {
       "leading-reference": 3,
-      "download-or-document": 1366,
+      "download-or-document": 1374,
       "online-version": 760
     },
-    "downloadFiles": 1367,
+    "downloadFiles": 1375,
     "onlineVersions": 760
   },
   "documents": [
@@ -10193,6 +10193,28 @@
       "urls": {
         "primary": "docs/CROSS_DOCUMENT_CONSISTENCY_REPORT.md",
         "sourcePath": "docs/CROSS_DOCUMENT_CONSISTENCY_REPORT.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-current-broken-relaunch-state-md",
+      "title": "Current broken relaunch state",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/current-broken-relaunch-state.md",
+        "sourcePath": "docs/current-broken-relaunch-state.md"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -25034,6 +25056,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-docs-selected-restore-baseline-md",
+      "title": "Selected restore baseline",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/selected-restore-baseline.md",
+        "sourcePath": "docs/selected-restore-baseline.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-sicherheit-resilienz-sicherheit-als-wirkungsfrage-index-html",
       "title": "Sicherheit als wirkungsfrage",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
@@ -25079,6 +25123,28 @@
         "sourcePath": "portale/sicherheit-resilienz/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-site-baseline-pre-relaunch-summary-md",
+      "title": "Site baseline pre relaunch summary",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/site-baseline-pre-relaunch-summary.md",
+        "sourcePath": "docs/site-baseline-pre-relaunch-summary.md"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -48099,6 +48165,76 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-docs-backup-candidate-check-backup-main-before-woek-id-register-live-202605",
+      "title": "Backup candidate check backup main before WÖk id register live 20260531",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/backup-candidate-check-backup-main-before-woek-id-register-live-20260531-084643.md",
+        "sourcePath": "docs/backup-candidate-check-backup-main-before-woek-id-register-live-20260531-084643.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-backup-candidate-check-filesystem-backup-20260531-063308-md",
+      "title": "Backup candidate check filesystem backup 20260531",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/backup-candidate-check-filesystem-backup-20260531-063308.md",
+        "sourcePath": "docs/backup-candidate-check-filesystem-backup-20260531-063308.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-backup-candidate-check-glossar-stable-2026-05-30-md",
+      "title": "Backup candidate check glossar stable 2026 05",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-05-30",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/backup-candidate-check-glossar-stable-2026-05-30.md",
+        "sourcePath": "docs/backup-candidate-check-glossar-stable-2026-05-30.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-migration-vielfalt-bestands-und-nachlieferliste-index-html",
       "title": "Bestands und nachlieferliste",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -49067,6 +49203,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-docs-pre-relaunch-backup-candidates-md",
+      "title": "Pre relaunch backup candidates",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/pre-relaunch-backup-candidates.md",
+        "sourcePath": "docs/pre-relaunch-backup-candidates.md"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-migration-vielfalt-quellen-glossar-index-html",
       "title": "Quellen glossar",
       "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -49130,6 +49288,28 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/README_Rang15_Migration-und-Vielfalt.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/README_Rang15_Migration-und-Vielfalt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-rollback-to-pre-relaunch-backup-report-md",
+      "title": "Rollback to pre relaunch backup report",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "MD"
+      ],
+      "urls": {
+        "primary": "docs/rollback-to-pre-relaunch-backup-report.md",
+        "sourcePath": "docs/rollback-to-pre-relaunch-backup-report.md"
       },
       "source": "download-or-document",
       "isLeadingReference": false
