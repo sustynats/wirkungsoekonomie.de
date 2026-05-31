@@ -9776,6 +9776,11 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     padding-inline: 1rem;
   }
 
+  .reference-work.reference-reader {
+    width: min(100%, calc(100vw - 1rem));
+    padding-inline: 0;
+  }
+
   body[data-reader-mode="lesen"] .reference-work.reference-reader,
   body[data-reader-mode="referenz"] .reference-work.reference-reader,
   body[data-reader-mode="quellen"] .reference-work.reference-reader,
@@ -9892,6 +9897,14 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     hyphens: none;
   }
 
+  .workpaper-reader .article-shell h1 {
+    max-width: 18ch;
+    font-size: 1.65rem;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
   .reader-mode-dock {
     gap: 0.35rem;
   }
@@ -9912,8 +9925,21 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
   .chapter-reader-tools .btn,
   .document-reader-tools .btn {
+    box-sizing: border-box;
+    max-width: 100%;
     width: 100%;
     justify-content: center;
+  }
+
+  .workpaper-reader .document-reader-tools {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  .workpaper-reader .article-shell p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -9923,12 +9949,22 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     padding-inline: 0.55rem;
   }
 
+  .reference-work.reference-reader {
+    width: min(100%, calc(100vw - 1rem));
+    padding-inline: 0;
+  }
+
   .reference-reader .article-shell {
     padding: 0.85rem;
   }
 
   .reference-reader .article-shell h1 {
     font-size: 1.65rem;
+  }
+
+  .workpaper-reader .article-shell h1 {
+    max-width: 17ch;
+    font-size: 1.45rem;
   }
 }
 
