@@ -1,6 +1,6 @@
 # Glossary Regression Report
 
-Stand: 2026-05-31T23:20:21.460Z
+Stand: 2026-05-31T23:29:36.160Z
 
 - Baseline-Begriffe: 1145
 - Aktuelle Begriffe: 1163
