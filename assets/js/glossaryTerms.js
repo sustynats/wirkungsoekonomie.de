@@ -13755,7 +13755,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Pigou-Steuer"
     ],
-    "definition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
+    "definition": "Eine Pigou-Steuer belegt negative Externalitäten mit einer Abgabe, damit private Preise gesellschaftliche Kosten stärker abbilden.",
     "url": "/begriffe/pigou-steuer/",
     "priority": 695,
     "allowedContexts": [

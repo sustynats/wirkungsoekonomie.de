@@ -41885,29 +41885,71 @@
       "aliases": [
         "Pigou-Steuer"
       ],
-      "shortDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "hoverDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
+      "shortDefinition": "Eine Pigou-Steuer belegt Aktivitäten mit negativen Externalitäten, damit private Preise gesellschaftliche Kosten stärker abbilden.",
+      "hoverDefinition": "Eine Pigou-Steuer belegt negative Externalitäten mit einer Abgabe, damit private Preise gesellschaftliche Kosten stärker abbilden.",
       "longDefinitionSource": "Glossar-Architektur Wirkmechanismen",
       "detailPath": "/begriffe/pigou-steuer/",
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "status": "restored",
       "priority": "medium",
       "source": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
-      "lastReviewed": "2026-05-29",
+      "lastReviewed": "2026-05-31",
       "relatedTerms": [
         "externalitaet",
+        "negative-externalitaet",
+        "positive-externalitaet",
+        "externalisierung",
+        "coase-theorem",
+        "marktversagen",
+        "regulierungsversagen",
         "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "wustg",
         "co2-preis",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "finalscore",
         "steuerkritik",
-        "wohlfahrtsoekonomie"
+        "wohlfahrtsoekonomie",
+        "wirkungsrueckkopplung"
       ],
-      "relatedMethods": [],
-      "relatedTools": [],
-      "relatedDocuments": [],
-      "relatedDemos": [],
-      "relatedImpactFields": [],
-      "relatedAcademyModules": [],
-      "relatedDataRegisters": [],
+      "relatedMethods": [
+        "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "scorecard",
+        "reverse-merit-order",
+        "nwi"
+      ],
+      "relatedTools": [
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "scorecards",
+        "reverse-merit-order",
+        "netto-wirkungs-index"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025",
+        "technische-leitlinien-wustg",
+        "beispiel-apfel-wirkungssteuer-bonusregel",
+        "von-der-pigou-steuer-zur-wirkungsoekonomie"
+      ],
+      "relatedDemos": [
+        "produktwirkungsrechner",
+        "impact-controlling-rechner"
+      ],
+      "relatedImpactFields": [
+        "produkte-konsum",
+        "staat-recht-demokratie",
+        "finanzsystem-kapital"
+      ],
+      "relatedAcademyModules": [
+        "scorecards-nwi-reverse-merit-order",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDataRegisters": [
+        "woek-id-register"
+      ],
       "usedOnRoutes": [],
       "oldRoutes": [
         "/begriffe/pigou-steuer/"
@@ -41935,7 +41977,92 @@
         "metadata",
         "alt"
       ],
-      "internalNotes": ""
+      "internalNotes": "2026-05-31 Catch-up: Pigou-Steuer als eigenständige Detailseite vertieft; WÖk-Abgrenzung, Quellen und Crosslinks ergänzt.",
+      "longDefinition": "Eine Pigou-Steuer ist ein wohlfahrtsökonomisches Instrument zur Internalisierung negativer Externalitäten. Sie setzt eine Abgabe auf eine schädliche Aktivität, etwa Emissionen, Umweltbelastung oder Gesundheitsrisiken, damit private Kosten näher an die gesellschaftlichen Grenzkosten rücken. Sie korrigiert damit ein Marktversagen über einen Preisaufschlag, bleibt aber meist eindimensional, monetär und ex post.",
+      "definition": "Eine Pigou-Steuer ist ein wohlfahrtsökonomisches Instrument zur Internalisierung negativer Externalitäten. Sie setzt eine Abgabe auf eine schädliche Aktivität, etwa Emissionen, Umweltbelastung oder Gesundheitsrisiken, damit private Kosten näher an die gesellschaftlichen Grenzkosten rücken. Sie korrigiert damit ein Marktversagen über einen Preisaufschlag, bleibt aber meist eindimensional, monetär und ex post.",
+      "woekRelation": "In der Wirkungsökonomie ist die Pigou-Steuer eine wichtige Vorläuferlogik, aber nicht identisch mit Wirkungssteuer oder WUStG. Pigou korrigiert einzelne negative Externalitäten; die WÖk macht Wirkung mehrdimensional sichtbar, prüft Datenqualität, arbeitet mit Scorecards, Reverse Merit Order und Nichtkompensation und koppelt geprüfte Wirkung in Preise, Steuern, Beschaffung oder Kapital zurück. Demos und Modelle sind nicht amtlich und keine Rechts- oder Steuerberatung.",
+      "usageNote": "Als historische und ökonomische Anschlusslogik verwenden: Pigou-Steuern erklären Internalisierung, ersetzen aber keine WÖk-Scorecard, keine Wirkungsbewertung und keine demokratisch legitimierte Steuerentscheidung.",
+      "preferredUsage": "Zur Abgrenzung von WÖk-Wirkungssteuer und WUStG: einzelne Externalitätenkorrektur versus mehrdimensionale Wirkungsrückkopplung.",
+      "statusNote": "Anschlussbegriff; keine Aussage über geltendes Steuerrecht.",
+      "mythos": "Die Wirkungsökonomie sei nur eine Pigou-Steuer in neuem Gewand.",
+      "woekKlaerung": "Die Pigou-Steuer ist eine ökonomische Vorläuferidee für Internalisierung. Die Wirkungsökonomie erweitert diese Logik um Mensch, Planet und Demokratie, transparente Datenqualität, Nichtkompensation, demokratische Legitimation, Rechtsschutz und lernende Korrektur. Sie bewertet keine Personen und trifft keine automatische Steuerentscheidung.",
+      "blindSpot": "Die Pigou-Logik kann mehrdimensionale Wirkungen, Datenqualität, rote Linien, Verteilungsfragen und institutionelle Legitimation unterbelichten. Genau dort setzt die WÖk mit Scorecards, Reverse Merit Order, Prüfpfaden und Governance an.",
+      "examples": [
+        "Eine CO2-Abgabe kann als Pigou-nahe Logik verstanden werden, wenn sie Klimaschäden über Preise sichtbar machen soll.",
+        "Eine Abgabe auf umweltschädliche Produktion korrigiert einen Einzelindikator, ersetzt aber keine mehrdimensionale Produkt-Scorecard.",
+        "In der WÖk würde ein Produkt nicht nur nach einer Emission, sondern nach Wirkung auf Mensch, Planet und Demokratie mit Datenqualität und roten Linien geprüft."
+      ],
+      "doNotConfuseWith": [
+        "Wirkungssteuer",
+        "Wirkungsumsatzsteuer",
+        "CO2-Preis",
+        "Emissionshandel",
+        "Wirkungsbewertung",
+        "geltendes Steuerrecht"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "primary",
+          "title": "Arthur Pigou: The Economics of Welfare",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "primary",
+          "title": "Ronald Coase: The Problem of Social Cost",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Von der Pigou-Steuer zur Wirkungsökonomie",
+          "url": "/blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Technische Leitlinien WUStG",
+          "url": "/dokumente/technische-leitlinien-wustg-v2/",
+          "status": "site"
+        },
+        {
+          "source_type": "law-draft",
+          "title": "WÖk: Wirkungssteuergesetz WStG",
+          "url": "/dokumente/wstg-oktober-2025/",
+          "status": "site"
+        },
+        {
+          "source_type": "example",
+          "title": "WÖk: Apfelbeispiel Wirkungssteuer und Bonusregel",
+          "url": "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Scorecards",
+          "url": "/werkzeuge/scorecards/",
+          "status": "site"
+        }
+      ],
+      "officialSources": [
+        "Arthur Pigou: The Economics of Welfare",
+        "Ronald Coase: The Problem of Social Cost",
+        "WÖk: Von der Pigou-Steuer zur Wirkungsökonomie",
+        "WÖk: Technische Leitlinien WUStG",
+        "WÖk: Wirkungssteuergesetz WStG",
+        "WÖk: Apfelbeispiel Wirkungssteuer und Bonusregel",
+        "WÖk: Reverse Merit Order",
+        "WÖk: Scorecards"
+      ],
+      "metaTitle": "Pigou-Steuer - Externalitäten, Wirkungssteuer und WÖk-Abgrenzung",
+      "metaDescription": "Pigou-Steuer erklärt Internalisierung negativer Externalitäten. Die Wirkungsökonomie grenzt sie von WÖk-Wirkungssteuer, Scorecards und mehrdimensionaler Wirkungsrückkopplung ab.",
+      "reviewStatus": "approved"
     },
     {
       "id": "planetare-grenzen",

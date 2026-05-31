@@ -7,6 +7,7 @@ const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const outDir = "begriffe";
 fs.mkdirSync(outDir, { recursive: true });
+const collator = new Intl.Collator("de", { sensitivity: "base" });
 const categoryOrder = [
   "Grundbegriff",
   "Bewertungsbegriff",
@@ -52,6 +53,64 @@ function esc(value) {
 
 function unique(values) {
   return Array.from(new Set((values || []).filter(Boolean)));
+}
+
+function decodeHtmlEntities(value) {
+  return String(value || "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+function textFromHtml(value) {
+  return decodeHtmlEntities(String(value || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+}
+
+function firstMatch(html, pattern) {
+  const match = html.match(pattern);
+  return match ? textFromHtml(match[1]) : "";
+}
+
+function loadLegacyDetailTerms() {
+  const sourceSlugs = new Set(data.terms.map((term) => term.slug));
+  return fs.readdirSync(outDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && !sourceSlugs.has(entry.name))
+    .map((entry) => {
+      const indexFile = path.join(outDir, entry.name, "index.html");
+      if (!fs.existsSync(indexFile)) return null;
+      const html = fs.readFileSync(indexFile, "utf8");
+      const h1 = firstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i);
+      const title = firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i).replace(/\s*[|-]\s*Glossar.*$/i, "");
+      const meta = firstMatch(html, /<meta\s+name=["']description["']\s+content=["']([^"']+)["'][^>]*>/i)
+        || firstMatch(html, /<meta\s+content=["']([^"']+)["']\s+name=["']description["'][^>]*>/i);
+      const lead = firstMatch(html, /<p[^>]*class=["'][^"']*\blead\b[^"']*["'][^>]*>([\s\S]*?)<\/p>/i);
+      const label = h1 || title || entry.name.replace(/-/g, " ");
+      const summary = meta || lead || "Bestehende Glossar-Detailseite aus dem Bestand.";
+      return {
+        id: entry.name,
+        termId: entry.name,
+        slug: entry.name,
+        canonicalLabel: label,
+        label,
+        shortDefinition: summary,
+        hoverDefinition: summary,
+        longDefinition: summary,
+        category: "Glossar-Bestand",
+        type: "Bestand",
+        status: "erhaltene Detailseite",
+        version: "Bestand",
+        sourceDocument: "Bestehende Glossar-Detailseite",
+        sourceSection: "/begriffe/",
+        glossaryOrderKey: label,
+        relatedTerms: [],
+        _legacyDetailOnly: true,
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => collator.compare(a.glossaryOrderKey, b.glossaryOrderKey));
 }
 
 function navMatch(item) {
@@ -138,16 +197,21 @@ function glossaryLegacyAlias(depth = "") {
 `;
 }
 
+const legacyDetailTerms = loadLegacyDetailTerms();
+const indexedTerms = [...data.terms, ...legacyDetailTerms];
 const groups = new Map();
-for (const term of data.terms) {
+for (const term of indexedTerms) {
   const letter = (term.glossaryOrderKey || term.canonicalLabel).trim()[0].toLocaleUpperCase("de");
   if (!groups.has(letter)) groups.set(letter, []);
   groups.get(letter).push(term);
 }
+for (const items of groups.values()) {
+  items.sort((a, b) => collator.compare(a.glossaryOrderKey || a.canonicalLabel, b.glossaryOrderKey || b.canonicalLabel));
+}
 
-const nav = Array.from(groups.keys()).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
-const categories = categoryOrder.filter((category) => data.terms.some((term) => term.category === category));
-const termsBySlug = new Map(data.terms.map((term) => [term.slug, term]));
+const nav = Array.from(groups.keys()).sort(collator.compare);
+const categories = categoryOrder.filter((category) => indexedTerms.some((term) => term.category === category));
+const termsBySlug = new Map(indexedTerms.map((term) => [term.slug, term]));
 const termTargetLinks = new Map([
   ["agenda-2030", "../../verstehen/sdgs-sdgplus/geschichte/"],
   ["sdg-sdgplus-referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
@@ -187,6 +251,30 @@ const termTargetLinks = new Map([
   ["wirkungsorientiertes-hosting", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"],
   ["resonanzarchitektur", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/#16-hosts-als-resonanzarchitekt-innen"],
   ["host-wirkungsscore", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/#23-neun-wirkungsfelder-des-host-wirkungsscores"],
+]);
+
+const relatedContentTargets = new Map([
+  ["wstg-oktober-2025", ["Wirkungssteuergesetz WStG", "../../dokumente/wstg-oktober-2025/"]],
+  ["technische-leitlinien-wustg", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
+  ["technische-leitlinien-wustg-v2", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
+  ["beispiel-apfel-wirkungssteuer-bonusregel", ["Apfelbeispiel Wirkungssteuer", "../../dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"]],
+  ["von-der-pigou-steuer-zur-wirkungsoekonomie", ["Von der Pigou-Steuer zur Wirkungsökonomie", "../../blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html"]],
+  ["scorecard", ["Scorecards", "../../werkzeuge/scorecards/"]],
+  ["scorecards", ["Scorecards", "../../werkzeuge/scorecards/"]],
+  ["reverse-merit-order", ["Reverse Merit Order", "../../werkzeuge/reverse-merit-order/"]],
+  ["nwi", ["Netto-Wirkungs-Index", "../../werkzeuge/netto-wirkungs-index/"]],
+  ["netto-wirkungs-index", ["Netto-Wirkungs-Index", "../../werkzeuge/netto-wirkungs-index/"]],
+  ["wirkungssteuer", ["Wirkungssteuer", "../../werkzeuge/wirkungssteuergesetz/"]],
+  ["wirkungssteuergesetz", ["Wirkungssteuergesetz", "../../werkzeuge/wirkungssteuergesetz/"]],
+  ["wirkungsumsatzsteuer", ["Wirkungsumsatzsteuer", "../../werkzeuge/wirkungsumsatzsteuer/"]],
+  ["produktwirkungsrechner", ["Produktwirkungsrechner", "../../erleben/produktwirkungsrechner/"]],
+  ["impact-controlling-rechner", ["Impact-Controlling-Rechner", "../../erleben/impact-controlling-rechner/"]],
+  ["produkte-konsum", ["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]],
+  ["staat-recht-demokratie", ["Staat, Recht & Demokratie", "../../wirkungsfelder/staat-recht-demokratie/"]],
+  ["finanzsystem-kapital", ["Finanzsystem & Kapital", "../../wirkungsfelder/finanzsystem-kapital/"]],
+  ["woek-id-register", ["WÖk-ID Register", "../../woek-id-register/"]],
+  ["wirkungsrueckkopplung", ["Wirkungsrückkopplung", "../../begriffe/wirkungsrueckkopplung/"]],
+  ["scorecards-nwi-reverse-merit-order", ["Scorecards, NWI & Reverse Merit Order", "../../akademie.html"]],
 ]);
 
 function termLink(slug) {
@@ -229,7 +317,7 @@ function dimensionTokens(value) {
 
 function filterValues(field) {
   const values = new Set();
-  for (const term of data.terms) {
+  for (const term of indexedTerms) {
     for (const value of asList(term[field])) values.add(value);
   }
   return Array.from(values).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
@@ -332,6 +420,58 @@ const centralTermDetails = new Map([
 function linkedChips(items, fallback = "Keine Einträge") {
   if (!Array.isArray(items) || items.length === 0) return `<p>${esc(fallback)}</p>`;
   return `<div class="term-chip-row">${items.map(([label, href]) => `<a class="term-chip" href="${esc(href)}">${esc(label)}</a>`).join("")}</div>`;
+}
+
+function relationChip(value) {
+  const raw = typeof value === "object" && value
+    ? {
+        key: value.id || value.slug || value.termId || value.label || value.title || value.name || "",
+        label: value.label || value.title || value.name || value.id || value.slug || value.termId || "Verwandter Inhalt",
+        href: value.href || value.url || "",
+      }
+    : { key: value, label: value, href: "" };
+  const key = String(raw.key || raw.label || "").trim();
+  const normalized = filterToken(key);
+  const target = relatedContentTargets.get(key) || relatedContentTargets.get(normalized);
+  if (target) return `<a class="term-chip" href="${esc(target[1])}">${esc(target[0])}</a>`;
+  if (raw.href) return `<a class="term-chip" href="${esc(raw.href)}">${esc(raw.label)}</a>`;
+  const term = termsBySlug.get(key) || termsBySlug.get(normalized);
+  if (term) return `<a class="term-chip" href="../../begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a>`;
+  return `<span class="term-chip muted">${esc(raw.label || key)}</span>`;
+}
+
+function relationGroup(title, values) {
+  const chips = [];
+  for (const value of asList(values)) {
+    const chip = relationChip(value);
+    if (!chips.includes(chip)) chips.push(chip);
+  }
+  if (!chips.length) return "";
+  return `<section class="term-section-card">
+            <h3>${esc(title)}</h3>
+            <div class="term-chip-row">${chips.join("")}</div>
+          </section>`;
+}
+
+function relatedContentBlock(term) {
+  const groups = [
+    ["Methoden & Werkzeuge", [...asList(term.relatedMethods), ...asList(term.relatedTools)]],
+    ["Demos", term.relatedDemos],
+    ["Wirkungsfelder", term.relatedImpactFields],
+    ["Dokumente", term.relatedDocuments],
+    ["Akademie", term.relatedAcademyModules],
+    ["Datenregister", term.relatedDataRegisters],
+  ].map(([title, values]) => relationGroup(title, values)).filter(Boolean);
+  if (!groups.length) return "";
+  return `
+        <section class="term-summary-card" aria-labelledby="related-content-title">
+          <p class="section-eyebrow">Querverweise</p>
+          <h2 id="related-content-title">Verwandte Inhalte</h2>
+          <div class="term-section-grid">
+            ${groups.join("")}
+          </div>
+        </section>
+`;
 }
 
 function learningBlock(term) {
@@ -669,7 +809,7 @@ ${learningBlock(term)}
           <div class="term-chip-row">
             ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
           </div>
-        </section>
+        </section>${relatedContentBlock(term)}
         <section class="term-link-section" aria-labelledby="chapters-title">
           <div>
             <p class="section-eyebrow">Online-Buch</p>
@@ -702,4 +842,4 @@ ${learningBlock(term)}
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 
-console.log(`Wrote glossary index and ${data.terms.length} term pages.`);
+console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and preserved ${legacyDetailTerms.length} legacy detail pages.`);

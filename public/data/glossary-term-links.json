@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T17:57:04.451Z",
+  "generatedAt": "2026-05-31T18:29:27.297Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -16791,23 +16791,54 @@
       "label": "Pigou-Steuer",
       "slug": "pigou-steuer",
       "url": "/begriffe/pigou-steuer/",
-      "hoverDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "shortDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
+      "hoverDefinition": "Eine Pigou-Steuer belegt negative Externalitäten mit einer Abgabe, damit private Preise gesellschaftliche Kosten stärker abbilden.",
+      "shortDefinition": "Eine Pigou-Steuer belegt Aktivitäten mit negativen Externalitäten, damit private Preise gesellschaftliche Kosten stärker abbilden.",
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "synonyms": [
         "Pigou-Steuer"
       ],
       "relatedTerms": [
         "externalitaet",
+        "negative-externalitaet",
+        "positive-externalitaet",
+        "externalisierung",
+        "coase-theorem",
+        "marktversagen",
+        "regulierungsversagen",
         "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "wustg",
         "co2-preis",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "finalscore",
         "steuerkritik",
-        "wohlfahrtsoekonomie"
+        "wohlfahrtsoekonomie",
+        "wirkungsrueckkopplung"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedMethods": [
+        "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "scorecard",
+        "reverse-merit-order",
+        "nwi"
+      ],
+      "relatedImpactFields": [
+        "produkte-konsum",
+        "staat-recht-demokratie",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "produktwirkungsrechner",
+        "impact-controlling-rechner"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025",
+        "technische-leitlinien-wustg",
+        "beispiel-apfel-wirkungssteuer-bonusregel",
+        "von-der-pigou-steuer-zur-wirkungsoekonomie"
+      ],
       "relatedObjections": []
     },
     "planetare-grenzen": {

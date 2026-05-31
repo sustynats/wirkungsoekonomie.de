@@ -186909,135 +186909,69 @@
       "synonyms": [
         "Pigou-Steuer"
       ],
-      "shortDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "short_definition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "definition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "longDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "long_definition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "woekRelation": "Wichtige Vorläuferlogik der Wirkungssteuer, aber enger. Die WÖk erweitert um Mensch, Planet, Demokratie, Scorecards, Nichtkompensation und Wirkungsarchitektur.",
-      "woek_einordnung": "Wichtige Vorläuferlogik der Wirkungssteuer, aber enger. Die WÖk erweitert um Mensch, Planet, Demokratie, Scorecards, Nichtkompensation und Wirkungsarchitektur.",
-      "examples": [],
+      "shortDefinition": "Eine Pigou-Steuer belegt Aktivitäten mit negativen Externalitäten, damit private Preise gesellschaftliche Kosten stärker abbilden.",
+      "short_definition": "Eine Pigou-Steuer belegt Aktivitäten mit negativen Externalitäten, damit private Preise gesellschaftliche Kosten stärker abbilden.",
+      "definition": "Eine Pigou-Steuer ist ein wohlfahrtsökonomisches Instrument zur Internalisierung negativer Externalitäten. Sie setzt eine Abgabe auf eine schädliche Aktivität, etwa Emissionen, Umweltbelastung oder Gesundheitsrisiken, damit private Kosten näher an die gesellschaftlichen Grenzkosten rücken. Sie korrigiert damit ein Marktversagen über einen Preisaufschlag, bleibt aber meist eindimensional, monetär und ex post.",
+      "longDefinition": "Eine Pigou-Steuer ist ein wohlfahrtsökonomisches Instrument zur Internalisierung negativer Externalitäten. Sie setzt eine Abgabe auf eine schädliche Aktivität, etwa Emissionen, Umweltbelastung oder Gesundheitsrisiken, damit private Kosten näher an die gesellschaftlichen Grenzkosten rücken. Sie korrigiert damit ein Marktversagen über einen Preisaufschlag, bleibt aber meist eindimensional, monetär und ex post.",
+      "long_definition": "Eine Pigou-Steuer ist ein wohlfahrtsökonomisches Instrument zur Internalisierung negativer Externalitäten. Sie setzt eine Abgabe auf eine schädliche Aktivität, etwa Emissionen, Umweltbelastung oder Gesundheitsrisiken, damit private Kosten näher an die gesellschaftlichen Grenzkosten rücken. Sie korrigiert damit ein Marktversagen über einen Preisaufschlag, bleibt aber meist eindimensional, monetär und ex post.",
+      "woekRelation": "In der Wirkungsökonomie ist die Pigou-Steuer eine wichtige Vorläuferlogik, aber nicht identisch mit Wirkungssteuer oder WUStG. Pigou korrigiert einzelne negative Externalitäten; die WÖk macht Wirkung mehrdimensional sichtbar, prüft Datenqualität, arbeitet mit Scorecards, Reverse Merit Order und Nichtkompensation und koppelt geprüfte Wirkung in Preise, Steuern, Beschaffung oder Kapital zurück. Demos und Modelle sind nicht amtlich und keine Rechts- oder Steuerberatung.",
+      "woek_einordnung": "In der Wirkungsökonomie ist die Pigou-Steuer eine wichtige Vorläuferlogik, aber nicht identisch mit Wirkungssteuer oder WUStG. Pigou korrigiert einzelne negative Externalitäten; die WÖk macht Wirkung mehrdimensional sichtbar, prüft Datenqualität, arbeitet mit Scorecards, Reverse Merit Order und Nichtkompensation und koppelt geprüfte Wirkung in Preise, Steuern, Beschaffung oder Kapital zurück. Demos und Modelle sind nicht amtlich und keine Rechts- oder Steuerberatung.",
+      "examples": [
+        "Eine CO2-Abgabe kann als Pigou-nahe Logik verstanden werden, wenn sie Klimaschäden über Preise sichtbar machen soll.",
+        "Eine Abgabe auf umweltschädliche Produktion korrigiert einen Einzelindikator, ersetzt aber keine mehrdimensionale Produkt-Scorecard.",
+        "In der WÖk würde ein Produkt nicht nur nach einer Emission, sondern nach Wirkung auf Mensch, Planet und Demokratie mit Datenqualität und roten Linien geprüft."
+      ],
       "relatedTerms": [
         "externalitaet",
+        "negative-externalitaet",
+        "positive-externalitaet",
+        "externalisierung",
+        "coase-theorem",
+        "marktversagen",
+        "regulierungsversagen",
         "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "wustg",
         "co2-preis",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "finalscore",
         "steuerkritik",
-        "wohlfahrtsoekonomie"
+        "wohlfahrtsoekonomie",
+        "wirkungsrueckkopplung"
       ],
       "related_terms": [
         "externalitaet",
+        "negative-externalitaet",
+        "positive-externalitaet",
+        "externalisierung",
+        "coase-theorem",
+        "marktversagen",
+        "regulierungsversagen",
         "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "wustg",
         "co2-preis",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "scorecard",
+        "finalscore",
         "steuerkritik",
-        "wohlfahrtsoekonomie"
+        "wohlfahrtsoekonomie",
+        "wirkungsrueckkopplung"
       ],
       "officialSources": [
-        "John Locke: Two Treatises of Government",
-        "John Stuart Mill: On Liberty",
-        "Isaiah Berlin: Two Concepts of Liberty",
-        "Amartya Sen: Development as Freedom",
-        "Friedrich Hayek: The Road to Serfdom",
-        "Friedrich Hayek: The Use of Knowledge in Society",
-        "Robert Nozick: Anarchy, State, and Utopia",
-        "Milton Friedman: Capitalism and Freedom",
-        "Alfred Marshall: Principles of Economics",
-        "William Stanley Jevons: Theory of Political Economy",
-        "Léon Walras: Elements of Pure Economics",
-        "Vilfredo Pareto: Manual of Political Economy",
-        "Paul Samuelson: Foundations of Economic Analysis",
-        "Kenneth Arrow / Gérard Debreu: general equilibrium",
         "Arthur Pigou: The Economics of Welfare",
         "Ronald Coase: The Problem of Social Cost",
-        "George Akerlof: The Market for Lemons",
-        "Joseph Stiglitz: Information asymmetry",
-        "Walter Eucken: Grundlagen der Nationalökonomie / Ordnungspolitik",
-        "Ludwig von Mises: Human Action"
+        "WÖk: Von der Pigou-Steuer zur Wirkungsökonomie",
+        "WÖk: Technische Leitlinien WUStG",
+        "WÖk: Wirkungssteuergesetz WStG",
+        "WÖk: Apfelbeispiel Wirkungssteuer und Bonusregel",
+        "WÖk: Reverse Merit Order",
+        "WÖk: Scorecards"
       ],
       "sourceLinks": [
-        {
-          "source_type": "primary",
-          "title": "John Locke: Two Treatises of Government",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "John Stuart Mill: On Liberty",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Isaiah Berlin: Two Concepts of Liberty",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Amartya Sen: Development as Freedom",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Friedrich Hayek: The Road to Serfdom",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Friedrich Hayek: The Use of Knowledge in Society",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Robert Nozick: Anarchy, State, and Utopia",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Milton Friedman: Capitalism and Freedom",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Alfred Marshall: Principles of Economics",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "William Stanley Jevons: Theory of Political Economy",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Léon Walras: Elements of Pure Economics",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Vilfredo Pareto: Manual of Political Economy",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Paul Samuelson: Foundations of Economic Analysis",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "academic",
-          "title": "Kenneth Arrow / Gérard Debreu: general equilibrium",
-          "url": "",
-          "status": "bibliographic"
-        },
         {
           "source_type": "primary",
           "title": "Arthur Pigou: The Economics of Welfare",
@@ -187051,117 +186985,45 @@
           "status": "bibliographic"
         },
         {
-          "source_type": "academic",
-          "title": "George Akerlof: The Market for Lemons",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "method",
+          "title": "WÖk: Von der Pigou-Steuer zur Wirkungsökonomie",
+          "url": "/blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html",
+          "status": "site"
         },
         {
-          "source_type": "academic",
-          "title": "Joseph Stiglitz: Information asymmetry",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "method",
+          "title": "WÖk: Technische Leitlinien WUStG",
+          "url": "/dokumente/technische-leitlinien-wustg-v2/",
+          "status": "site"
         },
         {
-          "source_type": "primary",
-          "title": "Walter Eucken: Grundlagen der Nationalökonomie / Ordnungspolitik",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "law-draft",
+          "title": "WÖk: Wirkungssteuergesetz WStG",
+          "url": "/dokumente/wstg-oktober-2025/",
+          "status": "site"
         },
         {
-          "source_type": "primary",
-          "title": "Ludwig von Mises: Human Action",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "example",
+          "title": "WÖk: Apfelbeispiel Wirkungssteuer und Bonusregel",
+          "url": "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Scorecards",
+          "url": "/werkzeuge/scorecards/",
+          "status": "site"
         }
       ],
       "source_links": [
         {
           "source_type": "primary",
-          "title": "John Locke: Two Treatises of Government",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "John Stuart Mill: On Liberty",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Isaiah Berlin: Two Concepts of Liberty",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Amartya Sen: Development as Freedom",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Friedrich Hayek: The Road to Serfdom",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Friedrich Hayek: The Use of Knowledge in Society",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Robert Nozick: Anarchy, State, and Utopia",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Milton Friedman: Capitalism and Freedom",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Alfred Marshall: Principles of Economics",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "William Stanley Jevons: Theory of Political Economy",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Léon Walras: Elements of Pure Economics",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Vilfredo Pareto: Manual of Political Economy",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
-          "title": "Paul Samuelson: Foundations of Economic Analysis",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "academic",
-          "title": "Kenneth Arrow / Gérard Debreu: general equilibrium",
-          "url": "",
-          "status": "bibliographic"
-        },
-        {
-          "source_type": "primary",
           "title": "Arthur Pigou: The Economics of Welfare",
           "url": "",
           "status": "bibliographic"
@@ -187173,28 +187035,40 @@
           "status": "bibliographic"
         },
         {
-          "source_type": "academic",
-          "title": "George Akerlof: The Market for Lemons",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "method",
+          "title": "WÖk: Von der Pigou-Steuer zur Wirkungsökonomie",
+          "url": "/blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html",
+          "status": "site"
         },
         {
-          "source_type": "academic",
-          "title": "Joseph Stiglitz: Information asymmetry",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "method",
+          "title": "WÖk: Technische Leitlinien WUStG",
+          "url": "/dokumente/technische-leitlinien-wustg-v2/",
+          "status": "site"
         },
         {
-          "source_type": "primary",
-          "title": "Walter Eucken: Grundlagen der Nationalökonomie / Ordnungspolitik",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "law-draft",
+          "title": "WÖk: Wirkungssteuergesetz WStG",
+          "url": "/dokumente/wstg-oktober-2025/",
+          "status": "site"
         },
         {
-          "source_type": "primary",
-          "title": "Ludwig von Mises: Human Action",
-          "url": "",
-          "status": "bibliographic"
+          "source_type": "example",
+          "title": "WÖk: Apfelbeispiel Wirkungssteuer und Bonusregel",
+          "url": "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/",
+          "status": "site"
+        },
+        {
+          "source_type": "method",
+          "title": "WÖk: Scorecards",
+          "url": "/werkzeuge/scorecards/",
+          "status": "site"
         }
       ],
       "internalLinks": [],
@@ -187296,34 +187170,76 @@
         "Soziologie",
         "WÖk-eigener Begriff"
       ],
-      "mythos": "",
-      "woekKlaerung": "",
-      "woek_klaerung": "",
-      "blindSpot": "",
-      "blind_spot": "",
+      "mythos": "Die Wirkungsökonomie sei nur eine Pigou-Steuer in neuem Gewand.",
+      "woekKlaerung": "Die Pigou-Steuer ist eine ökonomische Vorläuferidee für Internalisierung. Die Wirkungsökonomie erweitert diese Logik um Mensch, Planet und Demokratie, transparente Datenqualität, Nichtkompensation, demokratische Legitimation, Rechtsschutz und lernende Korrektur. Sie bewertet keine Personen und trifft keine automatische Steuerentscheidung.",
+      "woek_klaerung": "Die Pigou-Steuer ist eine ökonomische Vorläuferidee für Internalisierung. Die Wirkungsökonomie erweitert diese Logik um Mensch, Planet und Demokratie, transparente Datenqualität, Nichtkompensation, demokratische Legitimation, Rechtsschutz und lernende Korrektur. Sie bewertet keine Personen und trifft keine automatische Steuerentscheidung.",
+      "blindSpot": "Die Pigou-Logik kann mehrdimensionale Wirkungen, Datenqualität, rote Linien, Verteilungsfragen und institutionelle Legitimation unterbelichten. Genau dort setzt die WÖk mit Scorecards, Reverse Merit Order, Prüfpfaden und Governance an.",
+      "blind_spot": "Die Pigou-Logik kann mehrdimensionale Wirkungen, Datenqualität, rote Linien, Verteilungsfragen und institutionelle Legitimation unterbelichten. Genau dort setzt die WÖk mit Scorecards, Reverse Merit Order, Prüfpfaden und Governance an.",
       "version": "1.0",
-      "lastReviewed": "2026-05-29",
-      "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastReviewed": "2026-05-31",
+      "last_reviewed": "2026-05-31",
+      "lastUpdated": "2026-05-31",
+      "updatedAt": "2026-05-31",
       "firstApprovedIn": "2026-05-29",
       "reviewStatus": "approved",
       "source": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
       "sourceSection": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
-      "hoverDefinition": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern.",
-      "statusNote": "Priorität 2",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "hoverDefinition": "Eine Pigou-Steuer belegt negative Externalitäten mit einer Abgabe, damit private Preise gesellschaftliche Kosten stärker abbilden.",
+      "statusNote": "Anschlussbegriff; keine Aussage über geltendes Steuerrecht.",
+      "usageNote": "Als historische und ökonomische Anschlusslogik verwenden: Pigou-Steuern erklären Internalisierung, ersetzen aber keine WÖk-Scorecard, keine Wirkungsbewertung und keine demokratisch legitimierte Steuerentscheidung.",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "pageUrl": "/begriffe/pigou-steuer/",
-      "metaTitle": "Pigou-Steuer | Glossar der Wirkungsökonomie",
-      "metaDescription": "Eine Pigou-Steuer besteuert negative Externalitäten, um private Kosten an gesellschaftliche Kosten anzunähern. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "preferredUsage": "",
+      "metaTitle": "Pigou-Steuer - Externalitäten, Wirkungssteuer und WÖk-Abgrenzung",
+      "metaDescription": "Pigou-Steuer erklärt Internalisierung negativer Externalitäten. Die Wirkungsökonomie grenzt sie von WÖk-Wirkungssteuer, Scorecards und mehrdimensionaler Wirkungsrückkopplung ab.",
+      "doNotConfuseWith": [
+        "Wirkungssteuer",
+        "Wirkungsumsatzsteuer",
+        "CO2-Preis",
+        "Emissionshandel",
+        "Wirkungsbewertung",
+        "geltendes Steuerrecht"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025",
+        "technische-leitlinien-wustg",
+        "beispiel-apfel-wirkungssteuer-bonusregel",
+        "von-der-pigou-steuer-zur-wirkungsoekonomie"
+      ],
+      "preferredUsage": "Zur Abgrenzung von WÖk-Wirkungssteuer und WUStG: einzelne Externalitätenkorrektur versus mehrdimensionale Wirkungsrückkopplung.",
       "deprecatedUsage": [],
-      "glossaryOrderKey": "Pigou-Steuer"
+      "glossaryOrderKey": "Pigou-Steuer",
+      "relatedMethods": [
+        "wirkungssteuer",
+        "wirkungsumsatzsteuer",
+        "scorecard",
+        "reverse-merit-order",
+        "nwi"
+      ],
+      "relatedTools": [
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "scorecards",
+        "reverse-merit-order",
+        "netto-wirkungs-index"
+      ],
+      "relatedDemos": [
+        "produktwirkungsrechner",
+        "impact-controlling-rechner"
+      ],
+      "relatedImpactFields": [
+        "produkte-konsum",
+        "staat-recht-demokratie",
+        "finanzsystem-kapital"
+      ],
+      "relatedAcademyModules": [
+        "scorecards-nwi-reverse-merit-order",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDataRegisters": [
+        "woek-id-register"
+      ]
     },
     {
       "id": "planetare-grenzen",
