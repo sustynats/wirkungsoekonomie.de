@@ -190,6 +190,55 @@ function relatedQuestionLink(href, label, tag = "Frage") {
   return { href: relativeSiteUrl(href), label, tag };
 }
 
+function getQuestionSubmissionContext() {
+  const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
+  const title = document.querySelector("h1")?.textContent?.trim() || document.title || "Website";
+
+  if (/^blog\//.test(path)) {
+    return { context: "Journal", topic: "journal", pageType: "journal" };
+  }
+  if (/^begriffe\/[^/]+\/?$/.test(path) && !path.endsWith("begriffe/")) {
+    return { context: `Glossar: ${title}`, topic: "glossar", pageType: "glossar" };
+  }
+  if (/^wirkungsfelder\//.test(path)) {
+    return { context: `Wirkungsfeld: ${title}`, topic: "wirkungsfeld", pageType: "wirkungsfeld" };
+  }
+  if (/^(werkzeuge|woek-id-register|register|methodik|tools)\//.test(path)) {
+    return { context: `Methode/Werkzeug: ${title}`, topic: "werkzeuge", pageType: "werkzeug" };
+  }
+  if (/^(erleben|ausprobieren)\//.test(path) || /rechner|demo|scanner|generator/.test(path)) {
+    return { context: `Demo: ${title}`, topic: "demo", pageType: "demo" };
+  }
+  if (/^(bibliothek|dokumente|referenz|buch|downloads|werkstatt)\//.test(path) || /^(buch|downloads)\.html$/.test(path)) {
+    return { context: `Bibliothek: ${title}`, topic: "bibliothek", pageType: "bibliothek" };
+  }
+  if (/^akademie/.test(path)) {
+    return { context: `Akademie: ${title}`, topic: "akademie", pageType: "akademie" };
+  }
+  if (/^(fuer|mitmachen)\//.test(path) || /^(mitmachen)\.html$/.test(path)) {
+    return { context: `Mitmachen/Zielgruppe: ${title}`, topic: "mitmachen", pageType: "zielgruppe" };
+  }
+  return { context: title, topic: "website", pageType: "seite" };
+}
+
+function questionSubmissionUrl() {
+  const context = getQuestionSubmissionContext();
+  const title = document.querySelector("h1")?.textContent?.trim() || document.title || "";
+  const params = new URLSearchParams({
+    context: context.context,
+    url: window.location.href,
+    title,
+    topic: context.topic,
+    pageType: context.pageType,
+  });
+  return `https://akademie.wirkungsoekonomie.de/fragen/einreichen?${params.toString()}`;
+}
+
+function questionActionsHtml() {
+  const submissionHref = questionSubmissionUrl().replace(/&/g, "&amp;");
+  return `<p class="related-question-actions"><a class="text-link" href="${relativeSiteUrl("fragen/")}">Alle Fragen und Einwände lesen</a> · <a class="text-link" href="${submissionHref}" data-question-submit-link>Frage zu diesem Thema einreichen</a></p>`;
+}
+
 function getContextualQuestions() {
   const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
   const pageText = `${document.title} ${mainElement?.textContent || ""}`.toLowerCase();
@@ -240,7 +289,51 @@ function getContextualQuestions() {
     ];
   }
 
-  return [];
+  if (/^wirkungsfelder\//.test(path)) {
+    return [
+      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung in diesem Feld überhaupt messen?", "Verständnis"),
+      relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
+      relatedQuestionLink("fragen/#social-credit", "Werden Menschen bewertet?", "Schutzfrage"),
+    ];
+  }
+
+  if (/^(werkzeuge|woek-id-register|register|methodik|tools)\//.test(path)) {
+    return [
+      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
+      relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
+      relatedQuestionLink("fragen/#steuerklasse", "Wer entscheidet die Steuerklasse?", "Governance"),
+    ];
+  }
+
+  if (/^(erleben|ausprobieren)\//.test(path) || /rechner|demo|scanner|generator/.test(path)) {
+    return [
+      relatedQuestionLink("fragen/#amtlich", "Ist die Demo amtlich?", "Status"),
+      relatedQuestionLink("fragen/#social-credit", "Bewertet die Demo Personen?", "Schutzfrage"),
+      relatedQuestionLink("fragen/#fehlende-daten", "Wie werden Datenlücken behandelt?", "Daten"),
+    ];
+  }
+
+  if (/^(bibliothek|dokumente|referenz|buch|downloads|werkstatt)\//.test(path) || /^(buch|downloads)\.html$/.test(path)) {
+    return [
+      relatedQuestionLink("fragen/#amtlich", "Ist das ein finaler Standard?", "Status"),
+      relatedQuestionLink("fragen/#messbarkeit", "Wie wird Wirkung fachlich begründet?", "Methodik"),
+      relatedQuestionLink("fragen/#esg", "Was ist der Unterschied zu ESG?", "Abgrenzung"),
+    ];
+  }
+
+  if (/^akademie/.test(path)) {
+    return [
+      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt lernen und messen?", "Verständnis"),
+      relatedQuestionLink("fragen/#amtlich", "Ist das staatlich anerkannt?", "Status"),
+      relatedQuestionLink("fragen/#social-credit", "Geht es um Personenbewertung?", "Schutzfrage"),
+    ];
+  }
+
+  return [
+    relatedQuestionLink("fragen/#planwirtschaft", "Ist die Wirkungsökonomie Planwirtschaft?", "Einwand"),
+    relatedQuestionLink("fragen/#social-credit", "Ist das Social Credit?", "Schutzfrage"),
+    relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
+  ];
 }
 
 function injectContextualQuestions() {
@@ -266,11 +359,22 @@ function injectContextualQuestions() {
         )
         .join("")}
     </div>
+    ${questionActionsHtml()}
   `;
   mainElement.append(section);
 }
 
+function enhanceRelatedQuestionBlocks() {
+  document.querySelectorAll(".related-questions-block").forEach((block) => {
+    if (!(block instanceof HTMLElement) || block.querySelector("[data-question-submit-link]")) {
+      return;
+    }
+    block.insertAdjacentHTML("beforeend", questionActionsHtml());
+  });
+}
+
 injectContextualQuestions();
+enhanceRelatedQuestionBlocks();
 
 function shouldSkipSiteAnalytics() {
   return navigator.doNotTrack === "1" || window.doNotTrack === "1";

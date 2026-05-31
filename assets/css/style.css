@@ -11345,8 +11345,20 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   line-height: 1.35;
 }
 
+.related-question-card p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.76);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .related-question-card a {
   margin-top: auto;
+}
+
+.related-question-actions {
+  margin: 1rem 0 0;
+  font-weight: 800;
 }
 
 @media (max-width: 980px) {
