@@ -3,6 +3,110 @@
   "sourceNote": "Manuell gepflegte zentrale Term-Registry. Build-Skripte erzeugen daraus klassisches Glossar, Spezialbereiche, Begriffseiten, Hover-Begriffe und Suchindex.",
   "terms": [
     {
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Journal_Artikel_Energy_Sharing_Energiegemeinschaften_revidiert.docx",
+      "sourceDocument": "Journal_Artikel_Energy_Sharing_Energiegemeinschaften_revidiert.docx",
+      "sourceSection": "Begriffliche Klarstellung",
+      "reviewStatus": "approved",
+      "lastReviewed": "2026-06-01",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "firstApprovedIn": "2026.1",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "id": "buergerenergiegesellschaft",
+      "termId": "buergerenergiegesellschaft",
+      "label": "Bürgerenergiegesellschaft",
+      "canonicalLabel": "Bürgerenergiegesellschaft",
+      "slug": "buergerenergiegesellschaft",
+      "aliases": [
+        "Bürgerenergiegesellschaft",
+        "Buergerenergiegesellschaft",
+        "Bürgerenergie-Gesellschaft",
+        "community energy company"
+      ],
+      "synonyms": [
+        "Bürgerenergiegesellschaft",
+        "Bürgerenergie-Gesellschaft"
+      ],
+      "shortDefinition": "Eine Bürgerenergiegesellschaft ist ein eigener energierechtlicher Begriff, insbesondere im EEG-Kontext; sie kann als Genossenschaft oder in anderer Gesellschaftsform organisiert sein.",
+      "definition": "Eine Bürgerenergiegesellschaft ist nicht identisch mit dem allgemeinen Oberbegriff Energiegemeinschaft. Sie beschreibt einen rechtlich gefassten Akteur im Energierecht und kann als Genossenschaft oder in anderer Gesellschaftsform organisiert sein.",
+      "longDefinition": "Eine Bürgerenergiegesellschaft ist ein eigener energierechtlicher Begriff, insbesondere im EEG-Kontext. In der Wirkungsökonomie wird sie vom weiteren Begriff Energiegemeinschaft unterschieden: Eine Energiegemeinschaft beschreibt den Wirkungsraum gemeinschaftlicher Energieerzeugung, -nutzung, -speicherung, Finanzierung oder Organisation; die Bürgerenergiegesellschaft beschreibt eine mögliche rechtlich gefasste Trägerstruktur. Ihre positive Netto-Wirkung hängt von realer Beteiligung, erneuerbarer Erzeugung, Transparenz, sozialer Zugänglichkeit, fairer Kostenverteilung, Datenqualität, Netzdienlichkeit und Governance ab.",
+      "woekRelation": "Bürgerenergiegesellschaften können Bürgerenergie, Energy Sharing und Energiegemeinschaften institutionell tragen. Wirkung entsteht aber nicht durch die Rechtsform allein, sondern durch überprüfbare positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "usageNote": "Als eigenen energierechtlichen Begriff verwenden und nicht mit Energiegemeinschaft oder Energiegenossenschaft gleichsetzen.",
+      "hoverDefinition": "Eine Bürgerenergiegesellschaft ist ein eigener energierechtlicher Begriff. Sie kann eine Energiegemeinschaft tragen, ist aber nicht mit ihr identisch.",
+      "doNotConfuseWith": [
+        "Energiegemeinschaft",
+        "Energiegenossenschaft",
+        "automatisch positive Wirkung"
+      ],
+      "relatedTerms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "reststrom",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "positive-netto-wirkung"
+      ],
+      "related_terms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie"
+      ],
+      "officialSources": [
+        "EEG § 3 Definition Bürgerenergiegesellschaft|https://www.gesetze-im-internet.de/eeg_2014/__3.html"
+      ],
+      "pageUrl": "/begriffe/buergerenergiegesellschaft/",
+      "priority": "supporting",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "type": "WÖk-Begriff",
+      "begriffstyp": "Anschlussbegriff",
+      "theme": "Energie und Klima",
+      "themes": [
+        "Energie und Klima",
+        "Demokratie und Teilhabe"
+      ],
+      "dimensions": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "concept_status": "approved",
+      "relatedMethods": [
+        "Scorecards",
+        "WÖk-IDs",
+        "Datenqualität",
+        "Wirkungsrückkopplung"
+      ],
+      "relatedDemos": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz",
+        "Staat & Demokratie",
+        "Wirtschaft & Kapital"
+      ],
+      "relatedAcademyModules": [],
+      "relatedDataRegisters": [],
+      "examples": [
+        "Bürgerenergiegesellschaft als Trägerin eines Energy-Sharing-Projekts",
+        "kommunal eingebundene Bürgerenergiegesellschaft"
+      ],
+      "preferredUsage": [
+        "Bürgerenergiegesellschaft als rechtlich gefassten Akteur; Energiegemeinschaft als Oberbegriff des Wirkungsraums."
+      ],
+      "deprecatedUsage": [
+        "Bürgerenergiegesellschaft, Energiegemeinschaft und Energiegenossenschaft als austauschbare Begriffe verwenden."
+      ]
+    },
+    {
       "id": "fuenftes-p-planet",
       "termId": "fuenftes-p-planet",
       "label": "5. P = Planet",

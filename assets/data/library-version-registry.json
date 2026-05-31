@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T23:04:05.090Z",
+  "generatedAt": "2026-05-31T23:19:36.360Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -203,10 +203,10 @@
     }
   ],
   "counts": {
-    "total": 1195,
+    "total": 1196,
     "byStatus": {
       "führend": 5,
-      "aktuell": 920,
+      "aktuell": 921,
       "Arbeitsfassung": 176,
       "ältere Fassung": 94
     },
@@ -214,7 +214,7 @@
       "Grundlagenwerk": 45,
       "Glossar": 30,
       "Methodik": 80,
-      "Arbeitspapier": 984,
+      "Arbeitspapier": 985,
       "Beispiel": 11,
       "Gesetzesentwurf": 31,
       "Whitepaper": 7,
@@ -223,10 +223,10 @@
     "bySource": {
       "leading-reference": 3,
       "download-or-document": 436,
-      "online-version": 756
+      "online-version": 757
     },
     "downloadFiles": 436,
-    "onlineVersions": 756
+    "onlineVersions": 757
   },
   "documents": [
     {
@@ -6851,6 +6851,30 @@
       "urls": {
         "primary": "wirkungsfelder/wohnen-stadt/dossiers/gesundes-barrierefreies-resilientes-wohnen/",
         "sourcePath": "wirkungsfelder/wohnen-stadt/dossiers/gesundes-barrierefreies-resilientes-wohnen/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-wirkungsfelder-gesundheit-index-html",
+      "title": "Gesundheit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "wirkungsfelder/gesundheit/",
+        "sourcePath": "wirkungsfelder/gesundheit/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false
