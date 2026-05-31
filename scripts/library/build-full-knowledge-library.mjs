@@ -131,8 +131,24 @@ function optionList(values) {
   return [...values].sort((a, b) => a.localeCompare(b, "de")).map((value) => `<option value="${esc(value)}">${esc(value)}</option>`).join("");
 }
 
+function isBookLike(doc) {
+  const title = doc.title || "";
+  const primary = doc.urls?.primary || "";
+  const sourcePath = doc.urls?.sourcePath || "";
+  if (/^Die neue Ordnung des Wohlstands(?:\s*\(PDF\))?$/i.test(title)) return true;
+  if (/^Handbuch\b/i.test(title)) return true;
+  if (doc.isLeadingReference && /buch\.html|^referenz\/?$/i.test(primary)) return true;
+  if (/\/(?:handbuch|buch)[^/]*\.pdf$/i.test(sourcePath)) return true;
+  return false;
+}
+
+function displayType(doc) {
+  return isBookLike(doc) ? "Buch" : doc.type;
+}
+
 function typeIntro(type) {
   const map = {
+    Buch: "Vollständige Bücher, Handbücher und online lesbare Gesamtfassungen.",
     Grundlagenwerk: "Tragende Referenzen, Bücher und Systemdarstellungen.",
     Whitepaper: "Fachliche Einordnung mit Argumentations- und Methodenfokus.",
     Arbeitspapier: "Arbeits- und Diskussionsmaterial, oft mit Entwurfs- oder Vertiefungscharakter.",
@@ -151,15 +167,17 @@ function card(doc, index, onlineByKey) {
   const topics = doc.topics || [];
   const methods = doc.relatedMethods || [];
   const fields = doc.relatedImpactFields || [];
-  const searchable = [doc.title, doc.shortDescription, doc.type, doc.status, topics.join(" "), methods.join(" "), fields.join(" ")].join(" ");
-  return `<article class="knowledge-library-card" data-library-card data-type="${esc(doc.type)}" data-status="${esc(doc.status)}" data-source="${esc(doc.source)}" data-query="${esc(searchable.toLowerCase())}" data-index="${index}">
+  const type = displayType(doc);
+  const searchableTypes = type === doc.type ? [type] : [type, doc.type];
+  const searchable = [doc.title, doc.shortDescription, ...searchableTypes, doc.status, topics.join(" "), methods.join(" "), fields.join(" ")].join(" ");
+  return `<article class="knowledge-library-card" data-library-card data-type="${esc(type)}" data-status="${esc(doc.status)}" data-source="${esc(doc.source)}" data-query="${esc(searchable.toLowerCase())}" data-index="${index}">
       <div class="document-card-badges">
-        <span class="status-badge status-badge--${slug(doc.type)}">${esc(doc.type)}</span>
+        <span class="status-badge status-badge--${slug(type)}">${esc(type)}</span>
         <span class="status-badge status-badge--${slug(doc.status)}">${esc(doc.status)}</span>
         ${doc.isLeadingReference ? '<span class="status-badge status-badge--fuhrend">führende Referenz</span>' : ""}
       </div>
       <h3>${esc(doc.title)}</h3>
-      <p>${esc(doc.shortDescription || typeIntro(doc.type))}</p>
+      <p>${esc(doc.shortDescription || typeIntro(type))}</p>
       <dl class="document-card-meta">
         <dt>Umfang</dt><dd>${esc(extent(doc) || "Umfang wird nachgetragen")}</dd>
         <dt>Themen</dt><dd>${esc(topics.slice(0, 4).join(", ") || "nicht verschlagwortet")}</dd>
@@ -225,7 +243,7 @@ function mergeDocumentVariants(rawDocuments) {
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
 const rawDocuments = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
 const documents = mergeDocumentVariants(rawDocuments);
-const typeValues = new Set(documents.map((doc) => doc.type).filter(Boolean));
+const typeValues = new Set(documents.map((doc) => displayType(doc)).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
 const onlineByKey = new Map();
@@ -245,7 +263,7 @@ const pathCards = registry.readingPaths.map((item) => `
     <ol>${item.links.map(([label, href]) => `<li><a href="${esc(siteHref(href))}">${esc(label)}</a></li>`).join("")}</ol>
   </article>`).join("\n");
 const typeCards = [...typeValues].sort((a, b) => a.localeCompare(b, "de")).map((type) => {
-  const count = documents.filter((doc) => doc.type === type).length;
+  const count = documents.filter((doc) => displayType(doc) === type).length;
   return `<article class="library-type-card"><strong>${esc(type)}</strong><span>${count} Einträge</span><p>${esc(typeIntro(type))}</p></article>`;
 }).join("\n");
 const allCards = documents.map((doc, index) => card(doc, index, onlineByKey)).join("\n");
