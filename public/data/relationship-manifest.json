@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T19:52:36.742Z",
+  "generatedAt": "2026-05-31T20:45:20.027Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -1524,14 +1524,17 @@
     },
     "buergerenergie": {
       "terms": [
-        "energieautonomie",
+        "energy-sharing",
         "energiegemeinschaft",
-        "genossenschaft",
-        "stadtwerke",
-        "energiewirtschaft",
-        "kommunale-energie"
+        "energiegenossenschaft",
+        "nachbarschaftsstrom",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "demokratische-resilienz",
+        "positive-netto-wirkung"
       ],
-      "documents": [],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -3456,12 +3459,38 @@
     },
     "energiegemeinschaft": {
       "terms": [
+        "energy-sharing",
+        "energiegenossenschaft",
         "buergerenergie",
-        "eigenversorgung",
-        "prosumer",
-        "dezentralisierung"
+        "nachbarschaftsstrom",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "positive-netto-wirkung"
       ],
-      "documents": [],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "energiegenossenschaft": {
+      "terms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "reststrom",
+        "scorecard",
+        "woek-id",
+        "datenqualitaet",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -3558,6 +3587,31 @@
         "netzanschluss"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "energy-sharing": {
+      "terms": [
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "reststrom",
+        "mieterstrom",
+        "erneuerbare-energien",
+        "energiearmut",
+        "netzentgelt",
+        "smart-meter",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -8734,6 +8788,27 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "lokale-energie-als-wirkungsinfrastruktur": {
+      "terms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "versorgungssicherheit",
+        "demokratische-resilienz",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "ludwig-wittgenstein": {
       "terms": [
         "sprachspiel",
@@ -9648,6 +9723,26 @@
         "taxonomiefaehigkeit"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "nachbarschaftsstrom": {
+      "terms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "reststrom",
+        "netzentgelt",
+        "smart-meter"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -13440,6 +13535,26 @@
         "wirkungssteuer"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "reststrom": {
+      "terms": [
+        "energy-sharing",
+        "nachbarschaftsstrom",
+        "energiegemeinschaft",
+        "smart-meter",
+        "netzentgelt",
+        "versorgungssicherheit",
+        "resilienz"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],

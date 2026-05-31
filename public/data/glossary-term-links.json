@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T19:52:14.243Z",
+  "generatedAt": "2026-05-31T20:44:49.116Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -2232,25 +2232,30 @@
       "label": "Bürgerenergie",
       "slug": "buergerenergie",
       "url": "/begriffe/buergerenergie/",
-      "hoverDefinition": "Bürgerenergie beschreibt Energieprojekte, an denen Bürger:innen finanziell, organisatorisch oder demokratisch beteiligt sind.",
-      "shortDefinition": "Bürgerenergie beschreibt Energieprojekte, an denen Bürger:innen finanziell, organisatorisch oder demokratisch beteiligt sind.",
+      "hoverDefinition": "Bürgerenergie verbindet erneuerbare Energie mit lokaler Teilhabe. Sie kann Wirkung für SDG 7, SDG 13 und SDG+ erzeugen, muss aber konkret geprüft werden.",
+      "shortDefinition": "Bürgerenergie bezeichnet Energieprojekte, bei denen Bürger:innen, Kommunen oder lokale Gemeinschaften wesentlich an Planung, Finanzierung, Betrieb oder Nutzung beteiligt sind.",
       "category": "Energie, Strommarkt und Systemkosten",
       "synonyms": [
         "Bürgerenergie",
-        "Bürger:innenenergie"
+        "Bürger:innenenergie",
+        "Bürgerenergieprojekt",
+        "community energy"
       ],
       "relatedTerms": [
-        "energieautonomie",
+        "energy-sharing",
         "energiegemeinschaft",
-        "genossenschaft",
-        "stadtwerke",
-        "energiewirtschaft",
-        "kommunale-energie"
+        "energiegenossenschaft",
+        "nachbarschaftsstrom",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "demokratische-resilienz",
+        "positive-netto-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "relatedObjections": []
     },
     "buergerinitiative": {
@@ -5042,23 +5047,61 @@
       "label": "Energiegemeinschaft",
       "slug": "energiegemeinschaft",
       "url": "/begriffe/energiegemeinschaft/",
-      "hoverDefinition": "Eine Energiegemeinschaft organisiert gemeinschaftliche Erzeugung, Nutzung, Speicherung oder Verteilung von Energie.",
-      "shortDefinition": "Eine Energiegemeinschaft organisiert gemeinschaftliche Erzeugung, Nutzung, Speicherung oder Verteilung von Energie.",
+      "hoverDefinition": "Eine Energiegemeinschaft organisiert Energie gemeinschaftlich. Wirkungsökonomisch ist sie nur dann positiv, wenn Teilhabe, Transparenz, Resilienz und erneuerbare Erzeugung tatsächlich wirken.",
+      "shortDefinition": "Eine Energiegemeinschaft ist ein Zusammenschluss von Menschen, Organisationen, Kommunen oder Unternehmen, die Energie gemeinschaftlich erzeugen, nutzen, speichern oder organisieren.",
       "category": "Energie, Strommarkt und Systemkosten",
       "synonyms": [
         "Energiegemeinschaft",
-        "Energy Community"
+        "Energy Community",
+        "Energie-Community",
+        "Stromgemeinschaft"
       ],
       "relatedTerms": [
+        "energy-sharing",
+        "energiegenossenschaft",
         "buergerenergie",
-        "eigenversorgung",
-        "prosumer",
-        "dezentralisierung"
+        "nachbarschaftsstrom",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "positive-netto-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "relatedObjections": []
+    },
+    "energiegenossenschaft": {
+      "label": "Energiegenossenschaft",
+      "slug": "energiegenossenschaft",
+      "url": "/begriffe/energiegenossenschaft/",
+      "hoverDefinition": "Eine Energiegenossenschaft macht Bürger:innen zu Mitgestaltenden von Energieinfrastruktur. Die Rechtsform garantiert aber noch keine positive Wirkung.",
+      "shortDefinition": "Eine Energiegenossenschaft ist eine genossenschaftliche Organisationsform, in der Mitglieder Energieprojekte gemeinschaftlich finanzieren, betreiben, nutzen oder steuern.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Energiegenossenschaft",
+        "Bürgerenergiegenossenschaft",
+        "Energie-Genossenschaft",
+        "Energie eG"
+      ],
+      "relatedTerms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "reststrom",
+        "scorecard",
+        "woek-id",
+        "datenqualitaet",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "relatedObjections": []
     },
     "energieinfrastruktur": {
@@ -5199,6 +5242,42 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "energy-sharing": {
+      "label": "Energy Sharing",
+      "slug": "energy-sharing",
+      "url": "/begriffe/energy-sharing/",
+      "hoverDefinition": "Energy Sharing teilt lokal oder regional erzeugten erneuerbaren Strom bilanziell über ein Netz. Es ist kein informeller Stromhandel und kein kostenloses Schattennetz.",
+      "shortDefinition": "Energy Sharing ist die gemeinschaftliche Nutzung von Strom aus erneuerbaren Energien durch mehrere Beteiligte, in Deutschland seit § 42c EnWG auch über das öffentliche Netz.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Energy Sharing",
+        "Gemeinsame Nutzung elektrischer Energie",
+        "Strom teilen",
+        "Shared Energy",
+        "§ 42c EnWG"
+      ],
+      "relatedTerms": [
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "reststrom",
+        "mieterstrom",
+        "erneuerbare-energien",
+        "energiearmut",
+        "netzentgelt",
+        "smart-meter",
+        "lokale-energie-als-wirkungsinfrastruktur",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "relatedObjections": []
     },
     "energy-only-markt": {
@@ -12925,6 +13004,37 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "lokale-energie-als-wirkungsinfrastruktur": {
+      "label": "Lokale Energie als Wirkungsinfrastruktur",
+      "slug": "lokale-energie-als-wirkungsinfrastruktur",
+      "url": "/begriffe/lokale-energie-als-wirkungsinfrastruktur/",
+      "hoverDefinition": "Lokale Energie als Wirkungsinfrastruktur betrachtet Strom nicht nur als Ware, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, Klima und demokratische Resilienz.",
+      "shortDefinition": "Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Lokale Energie als Wirkungsinfrastruktur",
+        "Wirkungsinfrastruktur Energie",
+        "lokale Energieinfrastruktur",
+        "dezentrale Energie als Infrastruktur"
+      ],
+      "relatedTerms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "nachbarschaftsstrom",
+        "versorgungssicherheit",
+        "demokratische-resilienz",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "relatedObjections": []
+    },
     "ludwig-wittgenstein": {
       "label": "Ludwig Wittgenstein",
       "slug": "ludwig-wittgenstein",
@@ -14249,6 +14359,37 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nachbarschaftsstrom": {
+      "label": "Nachbarschaftsstrom / Strom vom Nachbarn",
+      "slug": "nachbarschaftsstrom",
+      "url": "/begriffe/nachbarschaftsstrom/",
+      "hoverDefinition": "Nachbarschaftsstrom meint rechtlich, technisch und bilanziell organisierten lokalen erneuerbaren Strom - nicht formlosen Stromhandel über den Gartenzaun.",
+      "shortDefinition": "Nachbarschaftsstrom ist ein alltagsnaher Begriff für lokal oder regional erzeugten erneuerbaren Strom, der von einem benachbarten Erzeuger oder einer lokalen Gemeinschaft bezogen wird.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Nachbarschaftsstrom / Strom vom Nachbarn",
+        "Strom vom Nachbarn",
+        "Quartiersstrom",
+        "lokaler Strom",
+        "Nachbarschaftsenergie"
+      ],
+      "relatedTerms": [
+        "energy-sharing",
+        "energiegemeinschaft",
+        "energiegenossenschaft",
+        "buergerenergie",
+        "reststrom",
+        "netzentgelt",
+        "smart-meter"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "relatedObjections": []
     },
     "nachhaltigkeit": {
@@ -19874,6 +20015,36 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "reststrom": {
+      "label": "Reststrom",
+      "slug": "reststrom",
+      "url": "/begriffe/reststrom/",
+      "hoverDefinition": "Reststrom macht sichtbar, dass lokale erneuerbare Energie Resilienz stärkt, aber nicht automatisch Speicher, Netzstabilität und ergänzende Versorgung ersetzt.",
+      "shortDefinition": "Reststrom ist die Strommenge, die ein Sharing-Abnehmer zusätzlich benötigt, wenn die lokale Energy-Sharing-Anlage den Bedarf nicht zeitgleich deckt.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Reststrom",
+        "Reststromversorgung",
+        "Ergänzungsstrom",
+        "Zusatzstrom"
+      ],
+      "relatedTerms": [
+        "energy-sharing",
+        "nachbarschaftsstrom",
+        "energiegemeinschaft",
+        "smart-meter",
+        "netzentgelt",
+        "versorgungssicherheit",
+        "resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
       "relatedObjections": []
     },
     "reverse-logistics": {
