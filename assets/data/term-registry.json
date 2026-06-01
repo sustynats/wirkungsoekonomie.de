@@ -295481,21 +295481,36 @@
       "aliases": [
         "Wirkungsgrenze",
         "rote Linie",
-        "Red Line"
+        "Red Line",
+        "rote Linie der Wirkung",
+        "nicht kompensierbare Grenze",
+        "Wirkungsrote Linie",
+        "Grenze der Kompensation",
+        "Schutzgrenze der Wirkung",
+        "Non-Compensable Boundary"
       ],
       "synonyms": [
         "Wirkungsgrenze",
         "rote Linie",
-        "Red Line"
+        "Red Line",
+        "rote Linie der Wirkung",
+        "nicht kompensierbare Grenze",
+        "Wirkungsrote Linie",
+        "Grenze der Kompensation",
+        "Schutzgrenze der Wirkung",
+        "Non-Compensable Boundary"
       ],
-      "shortDefinition": "Eine Wirkungsgrenze markiert Schäden, die nicht beliebig kompensiert oder schöngerechnet werden dürfen.",
-      "definition": "Wirkungsgrenzen betreffen unter anderem Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität.",
-      "longDefinition": "Wirkungsgrenzen betreffen unter anderem Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität.",
-      "woekRelation": "Immer mit Nicht-Kompensation verbinden.",
+      "shortDefinition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
+      "definition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
+      "longDefinition": "Eine Wirkungsgrenze operationalisiert das Nichtkompensationsprinzip. Sie markiert Schäden oder Risiken, die so schwerwiegend sind, dass sie die Gesamtbewertung eines Produkts, Unternehmens, Projekts, Kapitalflusses, Gesetzes oder Narrativs begrenzen und nicht durch positive Teilwirkungen kompensiert werden dürfen.",
+      "woekRelation": "Wirkungsgrenzen schützen Netto-Wirkung vor Schönrechnung. Sie verbinden Reverse Merit Order, Nichtkompensation, Scorecards, Audit und Rechtsschutz.",
       "statusNote": "Immer mit Nicht-Kompensation verbinden.",
-      "usageNote": "Immer mit Nicht-Kompensation verbinden.",
+      "usageNote": "Nicht als beliebige Moralgrenze verwenden. Wirkungsgrenzen sind öffentlich begründete Schutzgrenzen für Mensch, Planet und Demokratie.",
       "categories": [
-        "bewertungsbegriff"
+        "bewertungsbegriff",
+        "Bewertung, Grenzen & Missbrauchsschutz",
+        "Institutionelle Sicherung & Prüfarchitektur",
+        "Glossar-Pack 005"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -295513,32 +295528,106 @@
         "immanuel-kant",
         "wertekonflikt",
         "wirkungsethik",
-        "materialgesundheit"
+        "materialgesundheit",
+        "wirkungsbewertung",
+        "positive-netto-wirkung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "datenqualitaet",
+        "menschenwuerde",
+        "biodiversitaetsrisiko",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "wirkungsgrenze",
+        "wirkungsarchitektur",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "rechtsschutz",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "IAASB ISSA 5000",
+        "ISO 37301 / ISO 37302",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct",
+        "EU Green Claims / Directive (EU) 2024/825"
+      ],
       "pageUrl": "/begriffe/wirkungsgrenze/",
       "priority": 138,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Bewertungsbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
+      "version": "1.1",
+      "category": "Bewertung, Grenzen & Missbrauchsschutz",
+      "source": "Glossar-Pack 005",
+      "sourceDocument": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 005",
+      "hoverDefinition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
       "doNotConfuseWith": [
         "Schwellenwert",
-        "Benchmark"
+        "Benchmark",
+        "Reverse Merit Order: Bewertungsprinzip; Wirkungsgrenze ist die rote Linie innerhalb oder neben diesem Prinzip.",
+        "Nichtkompensationsprinzip: Grundsatz; Wirkungsgrenze konkretisiert, wo Nichtkompensation zwingend gilt.",
+        "Schwellenwert: kann technisch sein; Wirkungsgrenze hat zusätzlich Schutzfunktion.",
+        "Verbot: kann Folge sein, muss es aber nicht.",
+        "Moralgrenze: Wirkungsgrenzen sind öffentlich begründete Schutzgrenzen, keine private Moral.",
+        "Ausschlussliste: kann Grenzen abbilden, ersetzt aber nicht die Bewertungslogik."
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Bei nicht beliebig kompensierbaren Schäden nutzen.",
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "examples": [
+        "Ein T-Shirt mit Bio-Baumwolle verletzt die Wirkungsgrenze, wenn Kinderarbeit oder Zwangsarbeit nachgewiesen wird.",
+        "Ein chemisches Produkt mit guter CO2-Bilanz verletzt die Grenze, wenn toxische Stoffe schwere Gesundheitsrisiken verursachen.",
+        "Ein Infrastrukturprojekt kann positive Beschäftigungswirkung haben und dennoch durch irreversible Biodiversitätsschäden begrenzt sein.",
+        "Ein Medienformat kann Bildung behaupten, aber durch Desinformation, Entmenschlichung oder Gewaltlegitimation eine demokratische Grenze verletzen.",
+        "Ein Finanzprodukt kann grüne Projekte enthalten und zugleich wegen demokratiefeindlicher oder ökologischer Hochrisikostrukturen begrenzt werden."
+      ],
+      "preferredUsage": "Als rote Linie in Bewertungs-, Scorecard-, Register-, Audit- und Lenkungssystemen verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungsgrenze",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-29",
+      "lastUpdated": "2026-06-01",
       "tags": [],
-      "updatedAt": "2026-05-29",
+      "updatedAt": "2026-06-01",
       "related_terms": [
         "nichtkompensationsprinzip",
         "reverse-merit-order",
@@ -295553,16 +295642,176 @@
         "immanuel-kant",
         "wertekonflikt",
         "wirkungsethik",
-        "materialgesundheit"
+        "materialgesundheit",
+        "wirkungsbewertung",
+        "positive-netto-wirkung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "datenqualitaet",
+        "menschenwuerde",
+        "biodiversitaetsrisiko",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "wirkungsgrenze",
+        "wirkungsarchitektur",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "rechtsschutz",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "internal_links": [
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "netto-wirkung",
+        "moral-licensing",
+        "planetare-grenzen",
+        "rechte-kuenftiger-generationen",
+        "wirkungsrisiko",
+        "zielkonflikt",
+        "carbon-budget",
+        "schwellenwert",
+        "immanuel-kant",
+        "wertekonflikt",
+        "wirkungsethik",
+        "materialgesundheit",
+        "wirkungsbewertung",
+        "positive-netto-wirkung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "produktscorecard",
+        "woek-id",
+        "datenqualitaet",
+        "menschenwuerde",
+        "biodiversitaetsrisiko",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "wirkungsgrenze",
+        "wirkungsarchitektur",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "rechtsschutz",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Schutzbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Schutzbegriff",
       "theme": [
         "Bewertungsbegriff"
       ],
@@ -295593,7 +295842,122 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "005",
+      "cluster": "Institutionelle Sicherung & Prüfarchitektur",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- schützen vor Schönrechnung\n- markieren nicht beliebig kompensierbare Wirkungsfelder\n- betreffen etwa Kinderarbeit, Zwangsarbeit, schwere Gesundheitsrisiken, irreversible ökologische Schäden oder demokratische Destabilisierung\n- eng verbunden mit Reverse Merit Order und Nichtkompensationsprinzip\n- verhindern, dass positive Teilwirkungen schwere Schäden verdecken\n- keine beliebigen Moralgrenzen\n- müssen transparent, begründet, überprüfbar und demokratisch legitimiert sein"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Eine Wirkungsgrenze bezeichnet eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf. Sie legt fest, dass bestimmte Schäden oder Risiken die Gesamtbewertung begrenzen. Typische Grenzen betreffen Menschenwürde, Kinderarbeit, Zwangsarbeit, schwere Arbeitsrechtsverletzungen, Gesundheitsrisiken, toxische Stoffe, irreversible ökologische Schäden, Biodiversitätszerstörung, Klimaschäden, Rechtsstaatsabbau, Korruption, Desinformation, demokratische Destabilisierung, systematische Diskriminierung sowie massive Datenschutz- oder Manipulationsrisiken."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Netto-Wirkung darf nicht als einfache Addition verstanden werden. Ohne Wirkungsgrenzen könnten Akteure schwere Schäden mit positiven Nebenwirkungen verrechnen. Wirkungsgrenzen schaffen Schutz vor Kompensationslogik, Wirkungssimulation, Durchschnittsrating und moralischem Ablasshandel und geben Scorecards, Lieferketten, Responsible Marketing, Reverse Merit Order, Audit und Rechtsschutz eine belastbare Grundlage."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Wirkungsgrenzen sind keine willkürlichen Verbote und keine private Moral. Sie müssen am Referenzrahmen Mensch, Planet und Demokratie sowie an SDGs, Agenda 2030 und SDG+ als WÖk-Erweiterung begründet werden. Sie brauchen klare Definitionen, Schwellenwerte, Datenqualität, Kontext, Übergangslogik, Rechtsschutz, Widerspruchsmöglichkeiten, Korrekturpfade und öffentlich nachvollziehbare Begründung."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Reverse Merit Order: Bewertungsprinzip; Wirkungsgrenze ist die rote Linie innerhalb oder neben diesem Prinzip.\n- Nichtkompensationsprinzip: Grundsatz; Wirkungsgrenze konkretisiert, wo Nichtkompensation zwingend gilt.\n- Schwellenwert: kann technisch sein; Wirkungsgrenze hat zusätzlich Schutzfunktion.\n- Verbot: kann Folge sein, muss es aber nicht.\n- Moralgrenze: Wirkungsgrenzen sind öffentlich begründete Schutzgrenzen, keine private Moral.\n- Ausschlussliste: kann Grenzen abbilden, ersetzt aber nicht die Bewertungslogik."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein T-Shirt mit Bio-Baumwolle verletzt die Wirkungsgrenze, wenn Kinderarbeit oder Zwangsarbeit nachgewiesen wird.\n- Ein chemisches Produkt mit guter CO2-Bilanz verletzt die Grenze, wenn toxische Stoffe schwere Gesundheitsrisiken verursachen.\n- Ein Infrastrukturprojekt kann positive Beschäftigungswirkung haben und dennoch durch irreversible Biodiversitätsschäden begrenzt sein.\n- Ein Medienformat kann Bildung behaupten, aber durch Desinformation, Entmenschlichung oder Gewaltlegitimation eine demokratische Grenze verletzen.\n- Ein Finanzprodukt kann grüne Projekte enthalten und zugleich wegen demokratiefeindlicher oder ökologischer Hochrisikostrukturen begrenzt werden."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Wirkungsgrenzen müssen in Scorecards, Registern und Audits technisch abbildbar sein. Datenfelder können boundary_id, boundary_name, affected_dimension, sdg_reference, sdgplus_reference, legal_reference, threshold_type, threshold_value, evidence_required, data_quality_required, red_flag_trigger, reverse_merit_order_effect, compensation_allowed, severity_level, remediation_possible, transition_rule, objection_process, review_cycle, responsible_institution und version umfassen. Logiken sind absolute rote Linie, begrenzende rote Linie, prüfpflichtige Grenze, Übergangsgrenze und Ausschlussgrenze."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Nichtkompensationsprinzip\n- Reverse Merit Order\n- Netto-Wirkung\n- Moral Licensing\n- Planetare Grenzen\n- Rechte künftiger Generationen\n- Wirkungsrisiko\n- Zielkonflikt\n- Carbon Budget\n- Schwellenwert\n- Immanuel Kant\n- Wertekonflikt\n- Wirkungsethik\n- Materialgesundheit\n- Wirkungsbewertung\n- positive Netto-Wirkung\n- Wirkungsrat\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- Wirkungswahrheit\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- wirkungssimulation\n- Produktscorecard\n- WÖk-ID\n- Datenqualität\n- Menschenwürde\n- Biodiversitätsrisiko\n- Mensch, Planet und Demokratie\n- SDG+\n- Wirkungsgrenze\n- Wirkungsarchitektur\n- Wirkungslenkung\n- Wirkungsrückkopplung\n- Wirkungsblindheit\n- Digitaler Produktpass\n- Wirkungsdatenraum\n- Wirkungsindikator\n- Rechtsschutz\n- Transparenz\n- versionierung\n- Benchmark\n- Archetyp\n- FinalScore\n- T-SROI\n- NWI\n- Wirkungssteuer\n- Wirkungshaushalt\n- SDGs\n- Agenda 2030\n- Wirkung\n- Wirkungspotenzial\n- Transformationswirkung\n- Produktwirkung\n- Produktdaten\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Wirkungsrat-Konzept\n- Produktbesteuerung durch Wirkung\n- Technische Leitlinien WUStG\n- Working-Paper Wirkungssteuergesetz\n- Systemmodell der Wirkungsökonomie\n- WÖk-Master-Items\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- IAASB ISSA 5000\n- ISO 37301 / ISO 37302\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct\n- EU Green Claims / Directive (EU) 2024/825"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 005\n- Cluster: Institutionelle Sicherung & Prüfarchitektur\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "wirkungshaushalt",
@@ -297943,7 +298307,14 @@
         "Buergerrat",
         "Co-Governance",
         "Rechenschaftspflicht",
-        "Accountability"
+        "Accountability",
+        "Rat der Wirkungsökonomie",
+        "Wächter der Wirkung",
+        "unabhängige Wirkungsinstitution",
+        "Wirkungsgremium",
+        "institutionelle Sicherung der Wirkungslogik",
+        "Impact Council",
+        "WÖk-Rat"
       ],
       "synonyms": [
         "Wirkungsrat",
@@ -297955,16 +298326,26 @@
         "Buergerrat",
         "Co-Governance",
         "Rechenschaftspflicht",
-        "Accountability"
+        "Accountability",
+        "Rat der Wirkungsökonomie",
+        "Wächter der Wirkung",
+        "unabhängige Wirkungsinstitution",
+        "Wirkungsgremium",
+        "institutionelle Sicherung der Wirkungslogik",
+        "Impact Council",
+        "WÖk-Rat"
       ],
-      "shortDefinition": "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben.",
-      "definition": "Er verbindet Expertise, öffentliche Nachvollziehbarkeit, Korrekturfähigkeit und Schutz vor Gaming the System.",
-      "longDefinition": "Er verbindet Expertise, öffentliche Nachvollziehbarkeit, Korrekturfähigkeit und Schutz vor Gaming the System.",
-      "woekRelation": "Nicht als technokratische Instanz oder Wahrheitsmonopol formulieren.",
+      "shortDefinition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
+      "definition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
+      "longDefinition": "Der Wirkungsrat sichert die methodische Integrität von Wirkungsmessung, Wirkungsbewertung und Wirkungslenkung. Er schützt die Wirkungsarchitektur vor Lobbyeinfluss, Datenmanipulation, Greenwashing, methodischem Stillstand und politischer Vereinnahmung, ohne Regierung, Parlament, Gericht oder Wahrheitsbehörde zu ersetzen.",
+      "woekRelation": "Der Wirkungsrat ist die institutionelle Sicherung der Wirkungsökonomie: Er organisiert Lernfähigkeit, Integrität, Transparenz, Rechtsschutz, Versionierung und öffentliche Begründung der Wirkungslogik.",
       "statusNote": "Nicht als technokratische Instanz oder Wahrheitsmonopol formulieren.",
-      "usageNote": "Nicht als technokratische Instanz oder Wahrheitsmonopol formulieren.",
+      "usageNote": "Nicht als Regierung, Expertokratie, Moralrat oder Social-Credit-Behörde beschreiben. Seine Aufgabe ist methodische Integrität, nicht politische Letztentscheidung.",
       "categories": [
-        "schutzbegriff"
+        "schutzbegriff",
+        "Institutionen, Governance & Wirkungsarchitektur",
+        "Institutionelle Sicherung & Prüfarchitektur",
+        "Glossar-Pack 005"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -297988,33 +298369,104 @@
         "epistemische-gemeinschaft",
         "demokratieprinzip",
         "urteilskraft",
-        "demokratische-wirkungsarchitektur"
+        "demokratische-wirkungsarchitektur",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungssimulation",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "rechtsschutz",
+        "transparenz",
+        "wirkungsrat",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "versionierung",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "IAASB ISSA 5000",
+        "ISO 37301 / ISO 37302",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct",
+        "EU Green Claims / Directive (EU) 2024/825"
+      ],
       "pageUrl": "/begriffe/wirkungsrat/",
       "priority": 150,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Schutzbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Governance",
-      "hoverDefinition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
+      "version": "1.1",
+      "category": "Institutionen, Governance & Wirkungsarchitektur",
+      "source": "Glossar-Pack 005",
+      "sourceDocument": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 005",
+      "hoverDefinition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
       "doNotConfuseWith": [
         "Behörde",
-        "Ratingagentur"
+        "Ratingagentur",
+        "Regierung: entscheidet nicht über politische Programme oder Haushalte.",
+        "Parlament: ersetzt keine demokratische Gesetzgebung.",
+        "Gericht: entscheidet nicht abschließend über Rechtsstreitigkeiten.",
+        "Wahrheitsbehörde: besitzt keine absolute Wahrheitshoheit.",
+        "ESG-Ratingagentur: ist keine private Ratinginstanz.",
+        "Lobbygremium: muss gerade gegen Interessenvereinnahmung geschützt werden.",
+        "Moralrat oder Social Credit: bewertet keine Menschen als Personen."
       ],
       "relatedDocuments": [
-        "wirkungsrat-konzept"
+        "wirkungsrat-konzept",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
       ],
-      "examples": [],
-      "preferredUsage": "Als Governance- und Korrekturinstanz beschreiben.",
+      "examples": [
+        "Der Wirkungsrat überprüft regelmäßig, ob WÖk-IDs, Benchmarks und Archetypen noch belastbar sind.",
+        "Er empfiehlt eine Anpassung, wenn ein Produktscore durch neue Daten falsche Anreize erzeugt.",
+        "Er schützt Scorecards davor, dass kritische Wirkungsfelder durch Brancheninteressen verdrängt werden.",
+        "Er versioniert manipulationsanfällige Indikatoren und ersetzt sie durch robustere Messgrößen.",
+        "Bei neuen Risiken wie KI-Manipulation, Chemikalien, Lieferkettenrisiken oder Desinformation veröffentlicht er Sondergutachten."
+      ],
+      "preferredUsage": "Als unabhängige, demokratisch begrenzte Qualitäts- und Integritätsinstanz der Wirkungsarchitektur verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungsrat",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
-      "updatedAt": "2026-05-27",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
       "related_terms": [
         "wirkungsarchitektur",
         "vertrauen",
@@ -298035,16 +298487,174 @@
         "epistemische-gemeinschaft",
         "demokratieprinzip",
         "urteilskraft",
-        "demokratische-wirkungsarchitektur"
+        "demokratische-wirkungsarchitektur",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungssimulation",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "rechtsschutz",
+        "transparenz",
+        "wirkungsrat",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "versionierung",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "internal_links": [
+        "wirkungsarchitektur",
+        "vertrauen",
+        "wirkungswahrheit",
+        "benchmark",
+        "archetyp",
+        "beschwerdemechanismus-access-to-remedy",
+        "social-credit",
+        "zielkonflikt",
+        "kybernetik-zweiter-ordnung",
+        "demokratischer-sozialismus",
+        "dezentralisierung",
+        "dezentralisierung-von-macht",
+        "politischer-liberalismus",
+        "principal-agent-problem",
+        "staatsversagen",
+        "regulatory-capture",
+        "epistemische-gemeinschaft",
+        "demokratieprinzip",
+        "urteilskraft",
+        "demokratische-wirkungsarchitektur",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "rechtsschutz",
+        "transparenz",
+        "wirkungsrat",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Institutionenbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Institutionenbegriff",
       "theme": [
         "Schutzbegriff"
       ],
@@ -298075,7 +298685,122 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "005",
+      "cluster": "Institutionelle Sicherung & Prüfarchitektur",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- schützt vor Lobbyismus, Greenwashing, Datenmanipulation und methodischem Stillstand\n- ist keine Regierung, kein Ersatzparlament, keine Wahrheitsbehörde und keine Moralinstanz\n- sichert WÖk-IDs, Benchmarks, Archetypen, Scorecards, Register, Berichte und Versionierung\n- veröffentlicht Wirkungsberichte und organisiert Konsultationen\n- braucht plurale Zusammensetzung, Transparenz, Unabhängigkeit, Rechtsschutz und Widerspruchsmöglichkeiten\n- organisiert Lernfähigkeit statt Unfehlbarkeit\n- bewertet keine Menschen als Personen"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Der Wirkungsrat ist die institutionelle Sicherungsinstanz der Wirkungsökonomie. Er sorgt dafür, dass Wirkungsmessung, Wirkungsbewertung und Wirkungslenkung nicht beliebig, manipulierbar oder durch Einzelinteressen vereinnahmt werden. Er pflegt und überprüft WÖk-IDs, Wirkungsindikatoren, Benchmarks, Archetypen, Scorecards, Reverse Merit Order, Datenqualitätsklassen, Wirkungsregister, Wirkungsberichte, Versionierungen, Konsultationsverfahren sowie Prüf- und Beschwerdewege. Er entscheidet nicht, was Politik zu tun hat, sondern stellt eine nachvollziehbare, transparente, aktuelle und methodisch belastbare Grundlage bereit."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Sobald Wirkung Preise, Steuern, Kapitalzugang, Beschaffung, Fördermittel, Versicherung, Reputation oder politische Entscheidungen beeinflusst, entstehen Manipulationsanreize. Der Wirkungsrat ist die institutionelle Antwort darauf. Er sorgt dafür, dass Wirkung nicht zur Fassade wird, sondern als geprüfte, korrigierbare und öffentliche Rückkopplungslogik funktioniert."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist der Wirkungsrat ein Schutzmechanismus, kein technokratisches Oberorgan. Seine Legitimität entsteht aus Transparenz, pluraler Zusammensetzung, öffentlicher Begründung, wissenschaftlicher Anschlussfähigkeit, demokratischer Kontrolle, Offenlegung von Interessenbindungen, Rechtsschutz, Widerspruchsmöglichkeiten, Evaluation und Versionierung."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Regierung: entscheidet nicht über politische Programme oder Haushalte.\n- Parlament: ersetzt keine demokratische Gesetzgebung.\n- Gericht: entscheidet nicht abschließend über Rechtsstreitigkeiten.\n- Wahrheitsbehörde: besitzt keine absolute Wahrheitshoheit.\n- ESG-Ratingagentur: ist keine private Ratinginstanz.\n- Lobbygremium: muss gerade gegen Interessenvereinnahmung geschützt werden.\n- Moralrat oder Social Credit: bewertet keine Menschen als Personen."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Der Wirkungsrat überprüft regelmäßig, ob WÖk-IDs, Benchmarks und Archetypen noch belastbar sind.\n- Er empfiehlt eine Anpassung, wenn ein Produktscore durch neue Daten falsche Anreize erzeugt.\n- Er schützt Scorecards davor, dass kritische Wirkungsfelder durch Brancheninteressen verdrängt werden.\n- Er versioniert manipulationsanfällige Indikatoren und ersetzt sie durch robustere Messgrößen.\n- Bei neuen Risiken wie KI-Manipulation, Chemikalien, Lieferkettenrisiken oder Desinformation veröffentlicht er Sondergutachten."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Kernaufgaben sind Pflege des Wirkungsindikatorenregisters, Weiterentwicklung der WÖk-IDs, Benchmarks, Archetypen, Scorecards, Reverse Merit Order, Datenqualitätsklassen, Wirkungsberichte, Konsultationen, Manipulationsprüfung, Audit- und Assurance-Standards, Versionierung und Beschwerdeauswertung. Datenfelder können council_id, mandate_scope, legal_basis, governance_model, independence_rules, conflict_of_interest_rules, transparency_rules, consultation_process, evaluation_cycle, benchmark_decisions, indicator_updates, audit_findings, methodology_changes und whistleblower_process umfassen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungsarchitektur\n- Vertrauen\n- Wirkungswahrheit\n- Benchmark\n- Archetyp\n- Beschwerdemechanismus / Access to Remedy\n- Social Credit\n- Zielkonflikt\n- Kybernetik zweiter Ordnung\n- Demokratischer Sozialismus\n- Dezentralisierung\n- Dezentralisierung von Macht\n- Politischer Liberalismus\n- Principal-Agent-Problem\n- Staatsversagen\n- Regulatory Capture\n- Epistemische Gemeinschaft\n- Demokratieprinzip\n- Urteilskraft\n- Demokratische Wirkungsarchitektur\n- Wirkungsregister\n- wirkungsaudit\n- wirkungsassurance\n- Wirkungsgrenze\n- Wirkungsbewertung\n- Wirkungslenkung\n- wirkungssimulation\n- WÖk-ID\n- Produktscorecard\n- Reverse Merit Order\n- Wirkungssteuer\n- Wirkungshaushalt\n- Rechtsschutz\n- Transparenz\n- Wirkungsrat\n- Wirkungsrückkopplung\n- Wirkungsblindheit\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- Nichtkompensationsprinzip\n- Digitaler Produktpass\n- Wirkungsdatenraum\n- Wirkungsindikator\n- Datenqualität\n- versionierung\n- FinalScore\n- T-SROI\n- NWI\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Produktwirkung\n- Produktdaten\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Wirkungsrat-Konzept\n- Produktbesteuerung durch Wirkung\n- Technische Leitlinien WUStG\n- Working-Paper Wirkungssteuergesetz\n- Systemmodell der Wirkungsökonomie\n- WÖk-Master-Items\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- IAASB ISSA 5000\n- ISO 37301 / ISO 37302\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct\n- EU Green Claims / Directive (EU) 2024/825"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 005\n- Cluster: Institutionelle Sicherung & Prüfarchitektur\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "wirkungsraum",
@@ -298203,20 +298928,39 @@
       "canonicalLabel": "Wirkungsregister",
       "slug": "wirkungsregister",
       "aliases": [
-        "Wirkungsregister"
+        "Wirkungsregister",
+        "Register der Wirkung",
+        "WÖk-Register",
+        "Wirkungsdatenregister",
+        "Wirkungsindikatorenregister",
+        "Wirkungsdatenbank",
+        "Impact Registry",
+        "Register der WÖk-IDs",
+        "Wirkungsdaten-Infrastruktur"
       ],
       "synonyms": [
-        "Wirkungsregister"
+        "Wirkungsregister",
+        "Register der Wirkung",
+        "WÖk-Register",
+        "Wirkungsdatenregister",
+        "Wirkungsindikatorenregister",
+        "Wirkungsdatenbank",
+        "Impact Registry",
+        "Register der WÖk-IDs",
+        "Wirkungsdaten-Infrastruktur"
       ],
-      "shortDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
-      "definition": "Es ist als WÖk-Infrastruktur denkbar, damit Wirkung nachvollziehbar, versioniert und prüfbar wird.",
-      "longDefinition": "Es ist als WÖk-Infrastruktur denkbar, damit Wirkung nachvollziehbar, versioniert und prüfbar wird.",
-      "woekRelation": "Statushinweis: Modell- und Infrastrukturbegriff, keine bestehende amtliche Datenbank.",
+      "shortDefinition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
+      "definition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
+      "longDefinition": "Das Wirkungsregister bündelt Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Datenquellen, Prüfstatus, Systemgrenzen, Wirkungsgrenzen, Audit-Trails, Versionen und Korrekturen so, dass Wirkungsdaten auffindbar, prüfbar, vergleichbar und rückkopplungsfähig werden.",
+      "woekRelation": "Das Wirkungsregister ist die Dateninfrastruktur der Wirkungsökonomie. Es verbindet Produktdaten, DPP, Scorecards, Steuerlogik, Beschaffung, Kapitalwirkung, Audit und öffentliche Transparenz.",
       "statusNote": "Statushinweis: Modell- und Infrastrukturbegriff, keine bestehende amtliche Datenbank.",
-      "usageNote": "Statushinweis: Modell- und Infrastrukturbegriff, keine bestehende amtliche Datenbank.",
+      "usageNote": "Nicht als Personenbewertungsregister oder Überwachungsregister formulieren. Das Register bewertet Wirkungsträger und schützt Datenhoheit, Datenschutz, Einsicht, Widerspruch und Zweckbindung.",
       "categories": [
         "daten-standards-regularien",
-        "woek-uebersetzung"
+        "woek-uebersetzung",
+        "Daten, Register & Wirkungsarchitektur",
+        "Institutionelle Sicherung & Prüfarchitektur",
+        "Glossar-Pack 005"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
@@ -298226,43 +298970,259 @@
         "wirkungsdatenraum",
         "woek-id",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "produktdaten",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "rechtsschutz",
+        "greenwashing",
+        "wirkungssimulation",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "officialSources": [
-        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar",
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "IAASB ISSA 5000",
+        "ISO 37301 / ISO 37302",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct",
+        "EU Green Claims / Directive (EU) 2024/825"
       ],
       "pageUrl": "/begriffe/wirkungsregister/",
       "priority": 106,
       "status": "anschlussbegriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
-      "source": "Daten, Standards und Regularien",
-      "sourceDocument": "Glossar-Datenstandards",
-      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "version": "1.1",
+      "category": "Daten, Register & Wirkungsarchitektur",
+      "source": "Glossar-Pack 005",
+      "sourceDocument": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 005",
+      "hoverDefinition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
+      "doNotConfuseWith": [
+        "Datenbank: speichert Daten; ein Wirkungsregister ordnet, prüft und versioniert.",
+        "Nachhaltigkeitsbericht: liefert Daten, macht sie aber nicht automatisch rückkopplungsfähig.",
+        "Digitaler Produktpass: transportiert Produktdaten; das Register ordnet und verbindet sie systemisch.",
+        "ESG-Datenplattform: kann Quelle sein, ersetzt aber nicht WÖk-IDs, Scorecards und Reverse Merit Order.",
+        "Steuerregister: kann angeschlossen sein, ist aber enger.",
+        "Personenregister oder Social Credit: ausgeschlossen."
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "examples": [
+        "Ein DPP liefert Material-, CO2-, Wasser-, Reparierbarkeits- und Lieferkettendaten; das Register ordnet sie WÖk-IDs und Scorecards zu.",
+        "CSRD-/ESRS-Daten werden mit Produktgruppen, Branchen, Benchmarks und Datenqualitätsklassen verbunden.",
+        "Öffentliche Beschaffung fragt geprüfte Score-Informationen ab, ohne unzulässige Daten offenzulegen.",
+        "Ein Einspruch gegen einen Score wird mit Begründung, Entscheidung und neuer Version dokumentiert.",
+        "Öffentliche Übersichten zeigen aggregierte Branchenwirkung ohne Personenbezug."
+      ],
+      "preferredUsage": "Als geprüfte, versionierte und rechtlich begrenzte Daten- und Zuordnungsstruktur der Wirkungsarchitektur verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "Wirkungsregister",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "wirkungsdatenraum",
         "woek-id",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "produktdaten",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "rechtsschutz",
+        "greenwashing",
+        "wirkungssimulation",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "internal_links": [
+        "wirkungsdatenraum",
+        "woek-id",
+        "datenqualitaet",
+        "scorecard",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "produktdaten",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "rechtsschutz",
+        "greenwashing",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Infrastrukturbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Infrastrukturbegriff",
       "theme": [
         "Datenbegriff"
       ],
@@ -298293,7 +299253,123 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "005",
+      "cluster": "Institutionelle Sicherung & Prüfarchitektur",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- Dateninfrastruktur der Wirkungsökonomie\n- bündelt WÖk-IDs, Indikatoren, Produktdaten, Scorecards, Benchmarks, Prüfstatus und Versionen\n- kein Personenregister und kein Social-Credit-System\n- sichert Datenhoheit, Datenschutz, Einsicht, Widerspruch und Zweckbindung\n- ermöglicht maschinenlesbare Rückkopplung in Preise, Steuern, Beschaffung, Kapitalzugang und Audits\n- macht Wirkung nachvollziehbar, aber nicht automatisch wahr\n- braucht Audit, Assurance und Governance"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Das Wirkungsregister ist die zentrale Daten- und Zuordnungsstruktur der Wirkungsökonomie. Es strukturiert Wirkungsdaten so, dass sie prüfbar, vergleichbar, versionierbar und für Entscheidungen nutzbar werden. Dazu gehören WÖk-IDs, Wirkungsindikatoren, SDG- und SDG+-Bezüge, Branchenzuordnungen, Produkt- und Aktivitätsdaten, Scorecards, Benchmarks, Archetypen, Datenquellen, Datenqualitätsklassen, Prüfstatus, Systemgrenzen, Endwerte, Wirkungsgrenzen, Audit-Trails, Gültigkeitszeiträume, Korrekturen und Einsprüche."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Ohne Wirkungsregister bleiben Daten in Berichten, Produktpässen, Lieferkettendatenbanken, Finanzberichten, Studien oder Behördenakten fragmentiert. Das Register macht Wirkungsdaten auffindbar, zuordenbar, überprüfbar und versionierbar und schafft einen gemeinsamen Datenraum für Unternehmen, Prüfstellen, Verwaltung, Wirkungsrat, Forschung, Beschaffung, Finanzsystem, Bürger:inneninformation und Rechtsschutz."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Das Wirkungsregister ist kein Überwachungsregister. Es darf nicht zur Bewertung von Menschen als Personen missbraucht werden. Schutzprinzipien sind Zweckbindung, Datenminimierung, Trennung personenbezogener Daten von Wirkungsscores, Einsichts- und Widerspruchsrechte, Korrekturverfahren, Audit-Trail, Verschlüsselung, Rollen- und Rechtemodelle sowie aggregierte öffentliche Übersichten statt Individualtransparenz."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Datenbank: speichert Daten; ein Wirkungsregister ordnet, prüft und versioniert.\n- Nachhaltigkeitsbericht: liefert Daten, macht sie aber nicht automatisch rückkopplungsfähig.\n- Digitaler Produktpass: transportiert Produktdaten; das Register ordnet und verbindet sie systemisch.\n- ESG-Datenplattform: kann Quelle sein, ersetzt aber nicht WÖk-IDs, Scorecards und Reverse Merit Order.\n- Steuerregister: kann angeschlossen sein, ist aber enger.\n- Personenregister oder Social Credit: ausgeschlossen."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein DPP liefert Material-, CO2-, Wasser-, Reparierbarkeits- und Lieferkettendaten; das Register ordnet sie WÖk-IDs und Scorecards zu.\n- CSRD-/ESRS-Daten werden mit Produktgruppen, Branchen, Benchmarks und Datenqualitätsklassen verbunden.\n- Öffentliche Beschaffung fragt geprüfte Score-Informationen ab, ohne unzulässige Daten offenzulegen.\n- Ein Einspruch gegen einen Score wird mit Begründung, Entscheidung und neuer Version dokumentiert.\n- Öffentliche Übersichten zeigen aggregierte Branchenwirkung ohne Personenbezug."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Kernmodule sind Produkt- und Tätigkeitsdaten, Kapital- und Finanzdaten, WÖk-ID-Register, Benchmark- und Archetypenregister, Scorecard-Register, DPP-Schnittstelle, Wirkungsdaten-Schnittstelle, Audit- und Assurance-Modul, Beschwerde- und Einspruchsmodul sowie Versionierung. Datenfelder können registry_id, object_type, wok_id, sdg_reference, sdgplus_reference, data_source, data_quality_class, verification_status, system_boundary, benchmark_reference, scorecard_reference, final_score, red_flags, audit_trail, assurance_status, valid_from, valid_until, correction_history, objection_status, access_rights und privacy_classification umfassen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungsdatenraum\n- WÖk-ID\n- Datenqualität\n- Scorecard\n- Wirkungsrat\n- wirkungsaudit\n- wirkungsassurance\n- Wirkungsgrenze\n- Digitaler Produktpass\n- Produktscorecard\n- Produktdaten\n- Wirkungsarchitektur\n- Wirkungsrückkopplung\n- Rechtsschutz\n- Greenwashing\n- wirkungssimulation\n- Wirkungsregister\n- Wirkungsbewertung\n- Wirkungslenkung\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Impact-Washing\n- SDG-Washing\n- Reverse Merit Order\n- Nichtkompensationsprinzip\n- Wirkungsindikator\n- Transparenz\n- versionierung\n- Benchmark\n- Archetyp\n- FinalScore\n- T-SROI\n- NWI\n- Wirkungssteuer\n- Wirkungshaushalt\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Produktwirkung\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Wirkungsrat-Konzept\n- Produktbesteuerung durch Wirkung\n- Technische Leitlinien WUStG\n- Working-Paper Wirkungssteuergesetz\n- Systemmodell der Wirkungsökonomie\n- WÖk-Master-Items\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- IAASB ISSA 5000\n- ISO 37301 / ISO 37302\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct\n- EU Green Claims / Directive (EU) 2024/825"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 005\n- Cluster: Institutionelle Sicherung & Prüfarchitektur\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "wirkungsrente",
@@ -314436,6 +315512,833 @@
             "Aktualisiert durch: codex",
             "Qualitätsniveau: deep_glossary_entry"
           ]
+        }
+      ]
+    },
+    {
+      "id": "wirkungsaudit",
+      "termId": "wirkungsaudit",
+      "label": "Wirkungsaudit",
+      "canonicalLabel": "Wirkungsaudit",
+      "slug": "wirkungsaudit",
+      "aliases": [
+        "Wirkungsaudit",
+        "Audit der Wirkung",
+        "Wirkungsprüfung",
+        "Impact Audit",
+        "Prüfung von Wirkungsdaten",
+        "Scorecard-Audit",
+        "WÖk-Audit",
+        "Audit der Wirkungsbewertung"
+      ],
+      "synonyms": [
+        "Audit der Wirkung",
+        "Wirkungsprüfung",
+        "Impact Audit",
+        "Prüfung von Wirkungsdaten",
+        "Scorecard-Audit",
+        "WÖk-Audit",
+        "Audit der Wirkungsbewertung"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungsaudit/",
+      "priority": 135,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungsaudit",
+      "shortDefinition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
+      "definition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
+      "hoverDefinition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
+      "longDefinition": "Ein Wirkungsaudit ist eine strukturierte Prüfung von Wirkungsdaten, Wirkungsbewertungen und Wirkungsnachweisen. Es prüft Datenquellen, Systemgrenzen, WÖk-ID-Zuordnung, Indikatoren, Benchmarks, Scorecards, Datenqualität, Berechnungslogik, Reverse Merit Order, Wirkungsgrenzen, Nachweise, Unsicherheiten, Versionen, Korrekturen und Claim-zu-Daten-Abgleich.",
+      "woekRelation": "Das Wirkungsaudit ist der konkrete Prüfprozess der Wirkungsökonomie. Es schützt vor Wirkungssimulation, Greenwashing, Impact-Washing, SDG-Washing und Scheingenauigkeit.",
+      "usageNote": "Audit nicht mit Assurance gleichsetzen: Das Audit ist der Prüfprozess, Assurance die unabhängige Absicherung oder Prüfbestätigung.",
+      "preferredUsage": "Als prüfender Prozess für Wirkungsdaten, Wirkungsbewertung, Scorecards, Claims und Registereinträge verwenden.",
+      "doNotConfuseWith": [
+        "Finanzprüfung: prüft finanzielle Ordnungsmäßigkeit; Wirkungsaudit prüft Wirkungsangaben und Bewertungslogik.",
+        "Nachhaltigkeitsbericht: ist Datenquelle oder Prüfgegenstand, nicht das Audit.",
+        "ESG-Rating: schätzt ein; Audit prüft Nachweise und Prozess.",
+        "Wirkungsassurance: ist die unabhängige Absicherung oder Prüfbestätigung; Audit ist der konkrete Prüfprozess.",
+        "Monitoring: beobachtet laufend; Audit prüft regelhaft und dokumentiert.",
+        "Greenwashing-Prüfung: ist ein Teilbereich."
+      ],
+      "examples": [
+        "Ein Claim wie klimapositiv wird gegen Emissionsdaten, Reduktionspfade, Kompensation, Systemgrenzen, DPP-Daten und Restemissionen geprüft.",
+        "Ein T-Shirt-Score wird gegen Lieferkettendaten zu Arbeit, Chemikalien, Wasser, Mikroplastik, Transport und Rücknahme geprüft.",
+        "Ein Kreislaufscore wird gegen Rücknahme, Wiederverwendung, Recyclingfähigkeit und reale Rücklaufquoten geprüft.",
+        "Ein T-SROI-Projekt wird darauf geprüft, ob Transformationswirkung belegt ist oder nur Wirkungspotenzial vorliegt.",
+        "Ein Wirkungshaushaltsprojekt wird auf Datenbasis, Annahmen, Unsicherheiten, Nebenwirkungen und Rückkopplung geprüft."
+      ],
+      "category": "Prüfung, Audit & Qualitätssicherung",
+      "categories": [
+        "Prüfung, Audit & Qualitätssicherung",
+        "Institutionelle Sicherung & Prüfarchitektur",
+        "Glossar-Pack 005"
+      ],
+      "type": "WÖk-Präzisierungsbegriff / Prüfbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Prüfbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 005",
+      "sourceDocument": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 005",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "005",
+      "cluster": "Institutionelle Sicherung & Prüfarchitektur",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "IAASB ISSA 5000",
+        "ISO 37301 / ISO 37302",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct",
+        "EU Green Claims / Directive (EU) 2024/825"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "relatedTerms": [
+        "wirkungsassurance",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "greenwashing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "digitaler-produktpass",
+        "produktdaten",
+        "rechtsschutz",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "related_terms": [
+        "wirkungsassurance",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "greenwashing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "digitaler-produktpass",
+        "produktdaten",
+        "rechtsschutz",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "internal_links": [
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "greenwashing",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "digitaler-produktpass",
+        "produktdaten",
+        "rechtsschutz",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- prüft Datenquellen, Systemgrenzen, Bewertungslogik, Nachweise und Rückkopplung\n- fragt, ob ein Wirkungswert nachvollziehbar zustande gekommen ist\n- schützt vor Greenwashing, Impact-Washing, SDG-Washing, KPI-Gaming und Wirkungssimulation\n- unterscheidet Wirkung, Wirkungspotenzial, Wirkungsrisiko und behauptete Wirkung\n- braucht Audit-Trail, Datenqualität, Versionierung, Prüfstatus und Rechtsschutz\n- Grundlage für Assurance, Register, Wirkungssteuer und Beschaffung\n- garantiert keine positive Wirkung"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Wirkungsaudit untersucht, ob angegebene Wirkungen eines Produkts, Unternehmens, Projekts, Kapitalflusses, Gesetzes, Medienformats oder Programms nachvollziehbar, plausibel, methodisch korrekt und regelkonform ermittelt wurden. Es kann bestätigen, begrenzen oder zurückweisen, dass eine Wirkungsbehauptung ausreichend belegt ist. Ein gutes Audit kann auch feststellen, dass eine Angabe nur Wirkungspotenzial beschreibt oder als Wirkungssimulation einzustufen ist."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wenn Wirkung steuerungsrelevant wird, braucht sie belastbare Prüfung. Steuerentlastung, Finanzierung, Beschaffung, Förderung, Versicherbarkeit oder Marketingclaims dürfen nicht auf ungeprüften Behauptungen beruhen. Ohne Wirkungsaudit drohen Kennzahlenoptimierung statt Zustandsveränderung, versteckte Datenlücken, überhöhte Scores und die Verrechnung schwerer negativer Wirkungen durch positive Nebenfelder."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Das Wirkungsaudit nutzt Prinzipien wie Nachvollziehbarkeit, Belegprüfung, Prüftiefe, Wesentlichkeit, Dokumentation, Unabhängigkeit und Prüfpfad, ist aber keine bloße Finanzprüfung. Es verbindet empirische Datenprüfung, methodische Prüfung von WÖk-IDs, Benchmarks und Scorecards sowie wirkungslogische Prüfung: Ist die behauptete Wirkung wirklich Wirkung oder nur Output, Absicht, Image, Potenzial oder Simulation?"
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Finanzprüfung: prüft finanzielle Ordnungsmäßigkeit; Wirkungsaudit prüft Wirkungsangaben und Bewertungslogik.\n- Nachhaltigkeitsbericht: ist Datenquelle oder Prüfgegenstand, nicht das Audit.\n- ESG-Rating: schätzt ein; Audit prüft Nachweise und Prozess.\n- Wirkungsassurance: ist die unabhängige Absicherung oder Prüfbestätigung; Audit ist der konkrete Prüfprozess.\n- Monitoring: beobachtet laufend; Audit prüft regelhaft und dokumentiert.\n- Greenwashing-Prüfung: ist ein Teilbereich."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Claim wie klimapositiv wird gegen Emissionsdaten, Reduktionspfade, Kompensation, Systemgrenzen, DPP-Daten und Restemissionen geprüft.\n- Ein T-Shirt-Score wird gegen Lieferkettendaten zu Arbeit, Chemikalien, Wasser, Mikroplastik, Transport und Rücknahme geprüft.\n- Ein Kreislaufscore wird gegen Rücknahme, Wiederverwendung, Recyclingfähigkeit und reale Rücklaufquoten geprüft.\n- Ein T-SROI-Projekt wird darauf geprüft, ob Transformationswirkung belegt ist oder nur Wirkungspotenzial vorliegt.\n- Ein Wirkungshaushaltsprojekt wird auf Datenbasis, Annahmen, Unsicherheiten, Nebenwirkungen und Rückkopplung geprüft."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Prüfgegenstände sind Wirkungsdaten, WÖk-ID-Zuordnung, Scorecard, Benchmark, Archetyp, Datenqualität, Systemgrenzen, Endwert, Reverse Merit Order, Wirkungsgrenzen, Claims, DPP-Daten, Registereintrag, Audit-Trail, Versionen, Unsicherheiten und Korrekturen. Methoden sind Dokumentenprüfung, Datenabgleich, Stichprobe, Plausibilitätsprüfung, Lieferkettenprüfung, Systemgrenzenprüfung, Rechenlogikprüfung, Modellprüfung, Vor-Ort-Prüfung, Registerprüfung, Claim-zu-Daten-Mapping, Red-Flag-Prüfung und Beschwerdeauswertung."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- wirkungsassurance\n- Wirkungsregister\n- Wirkungsrat\n- Wirkungsgrenze\n- Datenqualität\n- Greenwashing\n- wirkungssimulation\n- Produktscorecard\n- WÖk-ID\n- Reverse Merit Order\n- Wirkungswahrheit\n- Digitaler Produktpass\n- Produktdaten\n- Rechtsschutz\n- Wirkungsarchitektur\n- Wirkungsaudit\n- Wirkungsbewertung\n- Wirkungslenkung\n- Wirkungsrückkopplung\n- Wirkungsblindheit\n- Impact-Washing\n- SDG-Washing\n- Nichtkompensationsprinzip\n- Wirkungsdatenraum\n- Wirkungsindikator\n- Transparenz\n- versionierung\n- Benchmark\n- Archetyp\n- FinalScore\n- T-SROI\n- NWI\n- Wirkungssteuer\n- Wirkungshaushalt\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Produktwirkung\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Wirkungsrat-Konzept\n- Produktbesteuerung durch Wirkung\n- Technische Leitlinien WUStG\n- Working-Paper Wirkungssteuergesetz\n- Systemmodell der Wirkungsökonomie\n- WÖk-Master-Items\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- IAASB ISSA 5000\n- ISO 37301 / ISO 37302\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct\n- EU Green Claims / Directive (EU) 2024/825"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 005\n- Cluster: Institutionelle Sicherung & Prüfarchitektur\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
+    },
+    {
+      "id": "wirkungsassurance",
+      "termId": "wirkungsassurance",
+      "label": "Wirkungsassurance",
+      "canonicalLabel": "Wirkungsassurance",
+      "slug": "wirkungsassurance",
+      "aliases": [
+        "Wirkungsassurance",
+        "Assurance von Wirkung",
+        "unabhängige Wirkungsprüfung",
+        "Wirkungsbestätigung",
+        "Impact Assurance",
+        "Sustainability Assurance in der WÖk",
+        "Absicherung von Wirkungsdaten",
+        "Prüfungsurteil zur Wirkung"
+      ],
+      "synonyms": [
+        "Assurance von Wirkung",
+        "unabhängige Wirkungsprüfung",
+        "Wirkungsbestätigung",
+        "Impact Assurance",
+        "Sustainability Assurance in der WÖk",
+        "Absicherung von Wirkungsdaten",
+        "Prüfungsurteil zur Wirkung"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungsassurance/",
+      "priority": 135,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungsassurance",
+      "shortDefinition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
+      "definition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
+      "hoverDefinition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
+      "longDefinition": "Wirkungsassurance ist die unabhängige Absicherung von Wirkungsinformationen. Sie bestätigt, ob Wirkungsdaten, Scorecards, Berichte oder Claims nach definiertem Prüfstandard, mit nachvollziehbarer Methode und ausreichender Unabhängigkeit erstellt wurden.",
+      "woekRelation": "Wirkungsassurance ist der Vertrauensanker zwischen Wirkungsdaten, Öffentlichkeit, Markt, Staat und Kapital. Sie schafft Belastbarkeit, ohne positive Wirkung zu garantieren.",
+      "usageNote": "Assurance nie als Garantie positiver Wirkung formulieren. Sie beschreibt Prüfniveau, Umfang, Unabhängigkeit, Grenzen und Unsicherheit.",
+      "preferredUsage": "Als unabhängige Absicherung von Wirkungsdaten und Wirkungsbewertungen verwenden, insbesondere bei steuerungsrelevanten Claims, Scores, Berichten und Registereinträgen.",
+      "doNotConfuseWith": [
+        "Wirkungsaudit: Audit ist der Prüfprozess; Assurance ist die unabhängige Absicherung oder Prüfbestätigung.",
+        "Garantie: Assurance garantiert keine positive oder dauerhafte Wirkung.",
+        "Zertifikat: kann Ergebnis sein, ist ohne Prüfpfad aber zu schwach.",
+        "Rating: bewertet; Assurance prüft Belastbarkeit von Daten und Bewertung.",
+        "Nachhaltigkeitsbericht: ist Prüfgegenstand, nicht Ersatz.",
+        "Wirkungsrat: setzt und überwacht Methodenlogik; Assurance erfolgt durch unabhängige Prüfstellen oder geregelte Prozesse."
+      ],
+      "examples": [
+        "Eine Produktscorecard erhält den Status assured, weil Datenquellen, DPP, WÖk-ID-Zuordnung, Benchmarks und Reverse Merit Order unabhängig geprüft wurden.",
+        "Ein Unternehmen berichtet positive Netto-Wirkung; Assurance bestätigt Methodik und Datengrundlage, nicht die moralische Qualität des Unternehmens.",
+        "Ein T-SROI-Wert wird mit begrenzter Sicherheit bestätigt, weil Transformationsannahmen plausibel, aber nicht vollständig empirisch nachgewiesen sind.",
+        "Ein Green Claim wird nicht freigegeben, weil Daten nur geschätzt und nicht belastbar genug sind.",
+        "Ein Registereintrag wird nach neuen Daten korrigiert und die Assurance versioniert."
+      ],
+      "category": "Prüfung, Assurance & Vertrauen",
+      "categories": [
+        "Prüfung, Assurance & Vertrauen",
+        "Institutionelle Sicherung & Prüfarchitektur",
+        "Glossar-Pack 005"
+      ],
+      "type": "Anschlussbegriff / WÖk-Präzisierung",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 005",
+      "sourceDocument": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 005",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "005",
+      "cluster": "Institutionelle Sicherung & Prüfarchitektur",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "IAASB ISSA 5000",
+        "ISO 37301 / ISO 37302",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct",
+        "EU Green Claims / Directive (EU) 2024/825"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "IAASB ISSA 5000",
+          "url": "https://www.iaasb.org/publications/international-standard-sustainability-assurance-5000-general-requirements-sustainability-assurance"
+        },
+        {
+          "label": "IAASB ISSA 5000 Fact Sheet",
+          "url": "https://www.iaasb.org/publications/issa-5000-fact-sheet"
+        },
+        {
+          "label": "ISO 37301",
+          "url": "https://www.iso.org/standard/75080.html"
+        },
+        {
+          "label": "ISO 37302",
+          "url": "https://www.iso.org/standard/37302"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        },
+        {
+          "label": "OECD Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "European Commission: ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "European Commission: Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "relatedTerms": [
+        "wirkungsaudit",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "assurance",
+        "csrd",
+        "esrs",
+        "gri",
+        "rechtsschutz",
+        "versionierung",
+        "responsible-marketing",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "fuenftes-p-planet"
+      ],
+      "related_terms": [
+        "wirkungsaudit",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "assurance",
+        "csrd",
+        "esrs",
+        "gri",
+        "rechtsschutz",
+        "versionierung",
+        "responsible-marketing",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "fuenftes-p-planet"
+      ],
+      "internal_links": [
+        "wirkungsaudit",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "assurance",
+        "csrd",
+        "esrs",
+        "gri",
+        "rechtsschutz",
+        "responsible-marketing",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "fuenftes-p-planet"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- schafft Vertrauen in Wirkungsdaten, Scorecards, Bewertungen und Berichte\n- garantiert nicht, dass eine Wirkung positiv ist\n- benennt Prüfungsniveau, Umfang und Sicherheit\n- baut auf Audit, Datenqualität, Audit-Trail, Methodenprüfung und Unabhängigkeit auf\n- wichtig für CSRD-/ESRS-Anschlussfähigkeit, Register, Steuer und Kapitalwirkung\n- schützt vor Wirkungssimulation, Scheingenauigkeit und unbelegten Claims\n- muss Unsicherheit offenlegen"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungsassurance prüft und bestätigt die Belastbarkeit von Wirkungsinformationen mit einem definierten Sicherheitsniveau. Sie kann sich auf Wirkungsdaten, WÖk-ID-Zuordnungen, Scorecards, Benchmarks, Endwerte, Reverse Merit Order, Wirkungsgrenzen, DPP-Daten, Registereinträge, T-SROI-Bewertungen, Wirkungsberichte, Marketingclaims und Wirkungshaushalte beziehen. Assurance bedeutet nicht, dass jede berichtete Wirkung positiv oder endgültig wahr ist, sondern dass ein qualifizierter Prüfprozess stattgefunden hat."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Je stärker Wirkungsdaten Preise, Steuern, Kapitalzugang, Beschaffung, Förderung, Versicherbarkeit, Reputation und politische Entscheidungen beeinflussen, desto wichtiger wird Vertrauen. Wirkungsassurance begrenzt Vertrauensrisiken, Manipulationsrisiken und Scheingenauigkeit, indem sie offenlegt, was geprüft wurde, nach welchem Standard, mit welcher Tiefe, mit welchen Unsicherheiten und mit welchem Ergebnis."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk braucht Assurance, darf sie aber nicht überhöhen. Assurance ersetzt nicht Wirklichkeit und ist kein Wahrheitsmonopol. Sie muss unabhängig, methodenklar, unsicherheitsklar und korrigierbar sein. Frühere Bestätigungen müssen versionierbar bleiben, wenn Daten, Benchmarks oder Methoden sich ändern."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Wirkungsaudit: Audit ist der Prüfprozess; Assurance ist die unabhängige Absicherung oder Prüfbestätigung.\n- Garantie: Assurance garantiert keine positive oder dauerhafte Wirkung.\n- Zertifikat: kann Ergebnis sein, ist ohne Prüfpfad aber zu schwach.\n- Rating: bewertet; Assurance prüft Belastbarkeit von Daten und Bewertung.\n- Nachhaltigkeitsbericht: ist Prüfgegenstand, nicht Ersatz.\n- Wirkungsrat: setzt und überwacht Methodenlogik; Assurance erfolgt durch unabhängige Prüfstellen oder geregelte Prozesse."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Eine Produktscorecard erhält den Status assured, weil Datenquellen, DPP, WÖk-ID-Zuordnung, Benchmarks und Reverse Merit Order unabhängig geprüft wurden.\n- Ein Unternehmen berichtet positive Netto-Wirkung; Assurance bestätigt Methodik und Datengrundlage, nicht die moralische Qualität des Unternehmens.\n- Ein T-SROI-Wert wird mit begrenzter Sicherheit bestätigt, weil Transformationsannahmen plausibel, aber nicht vollständig empirisch nachgewiesen sind.\n- Ein Green Claim wird nicht freigegeben, weil Daten nur geschätzt und nicht belastbar genug sind.\n- Ein Registereintrag wird nach neuen Daten korrigiert und die Assurance versioniert."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Assurance-Elemente sind Prüfstandard, Prüfumfang, Prüfniveau, Unabhängigkeit, Datenquellenprüfung, Methodenprüfung, Scorecard-Prüfung, Systemgrenzenprüfung, Wesentlichkeit, Unsicherheit, Red-Flag-Prüfung, Claim-Prüfung, Audit-Trail, Assurance-Statement, Gültigkeitsdauer und Versionierung. Datenfelder können assurance_id, assured_object, assurance_provider, independence_status, assurance_standard, assurance_level, scope, criteria, registry_reference, audit_reference, assurance_opinion, limitations, uncertainty_disclosure, correction_requirements, valid_from, valid_until und public_statement_url umfassen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungsaudit\n- Wirkungsregister\n- Wirkungsrat\n- Wirkungsgrenze\n- Datenqualität\n- Wirkungswahrheit\n- wirkungssimulation\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- Produktscorecard\n- Digitaler Produktpass\n- WÖk-ID\n- Assurance\n- CSRD\n- ESRS\n- GRI\n- Rechtsschutz\n- versionierung\n- Responsible Marketing\n- Wirkungsassurance\n- Wirkungsarchitektur\n- Wirkungsbewertung\n- Wirkungslenkung\n- Wirkungsrückkopplung\n- Wirkungsblindheit\n- Reverse Merit Order\n- Nichtkompensationsprinzip\n- Wirkungsdatenraum\n- Wirkungsindikator\n- Transparenz\n- Benchmark\n- Archetyp\n- FinalScore\n- T-SROI\n- NWI\n- Wirkungssteuer\n- Wirkungshaushalt\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Produktwirkung\n- Produktdaten\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Wirkungsrat-Konzept\n- Produktbesteuerung durch Wirkung\n- Technische Leitlinien WUStG\n- Working-Paper Wirkungssteuergesetz\n- Systemmodell der Wirkungsökonomie\n- WÖk-Master-Items\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- IAASB ISSA 5000\n- ISO 37301 / ISO 37302\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct\n- EU Green Claims / Directive (EU) 2024/825"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 005\n- Cluster: Institutionelle Sicherung & Prüfarchitektur\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
         }
       ]
     }
