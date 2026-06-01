@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T20:43:45.481Z",
+  "generatedAt": "2026-06-01T20:56:00.763Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -100585,11 +100585,11 @@
       "blind_spot": ""
     },
     {
-      "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
-      "sourceDocument": "Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente",
-      "sourceSection": "Automatisierung, Maschinenleistung, Sozialfinanzierung und Wirkungseinkommen",
+      "source": "Glossar-Pack 010",
+      "sourceDocument": "Glossar-Pack 010: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "sourceSection": "Einkommen, Grundsicherheit & Teilhabe",
       "version": "1.1",
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-06-01",
       "publicationStatus": "published",
@@ -100597,7 +100597,9 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "categories": [
-        "automatisierung-einkommen-sozialfinanzierung"
+        "automatisierung-einkommen-sozialfinanzierung",
+        "Einkommen, Grundsicherheit & Teilhabe",
+        "Arbeit, Einkommen & soziale Sicherung nach Wirkung"
       ],
       "theme": [
         "Automatisierung / Maschinenleistung / Sozialfinanzierung / Wirkungseinkommen / Wirkungsrente"
@@ -100631,7 +100633,9 @@
       "relatedDocuments": [
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
-        "wp-rente"
+        "wp-rente",
+        "die-neue-ordnung-des-wohlstands",
+        "wirkungssteuergesetz"
       ],
       "relatedImpactFields": [
         "arbeit-einkommen",
@@ -100649,28 +100653,165 @@
       ],
       "sourceLinks": [
         {
-          "source_type": "internal_woek",
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
           "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
           "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
-          "status": "linked"
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
         },
         {
-          "source_type": "internal_woek",
-          "title": "Online-Buch Kapitel 56",
-          "url": "https://wirkungsoekonomie.de/referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
-          "status": "linked"
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
         },
         {
-          "source_type": "internal_woek",
-          "title": "Online-Buch Kapitel 57",
-          "url": "https://wirkungsoekonomie.de/referenz/kapitel-057-wirkungseinkommen/",
-          "status": "linked"
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
         },
         {
-          "source_type": "internal_woek",
-          "title": "Online-Buch Kapitel 58",
-          "url": "https://wirkungsoekonomie.de/referenz/kapitel-058-wirkungsrente/",
-          "status": "linked"
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
         }
       ],
       "id": "grunddividende",
@@ -100686,7 +100827,14 @@
         "universeller Sockel",
         "BGE",
         "Grundeinkommen",
-        "bedingungsloses Grundeinkommen"
+        "bedingungsloses Grundeinkommen",
+        "Wirkungsgrunddividende",
+        "gesellschaftliche Grunddividende",
+        "Systemdividende",
+        "Grundsicherung nach Wirkung",
+        "Universal Impact Dividend",
+        "Dividende aus gemeinsamer Wirkung",
+        "Basis des Wirkungseinkommens"
       ],
       "synonyms": [
         "Grunddividende",
@@ -100696,45 +100844,184 @@
         "universeller Sockel",
         "BGE",
         "Grundeinkommen",
-        "bedingungsloses Grundeinkommen"
+        "bedingungsloses Grundeinkommen",
+        "Wirkungsgrunddividende",
+        "gesellschaftliche Grunddividende",
+        "Systemdividende",
+        "Grundsicherung nach Wirkung",
+        "Universal Impact Dividend",
+        "Dividende aus gemeinsamer Wirkung",
+        "Basis des Wirkungseinkommens"
       ],
       "pageUrl": "/begriffe/grunddividende/",
       "status": "führender-begriff",
-      "category": "Praxisbegriff",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "category": "Einkommen, Grundsicherheit & Teilhabe",
+      "type": "WÖk-Prägungsbegriff / Sicherheits- und Teilhabebegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Sicherheits- und Teilhabebegriff",
       "conceptStatus": "modellhafte Arbeitsgrundlage",
       "concept_status": "modellhafte Arbeitsgrundlage",
       "priority": 176,
-      "shortDefinition": "Die Grunddividende ist der universelle Sockel des Wirkungseinkommens. Sie steht jedem Menschen als Anteil an gemeinsamer gesellschaftlicher Produktivität zu und schützt Würde, Sicherheit und Zugehörigkeit.",
-      "short_definition": "Die Grunddividende ist der universelle Sockel des Wirkungseinkommens. Sie steht jedem Menschen als Anteil an gemeinsamer gesellschaftlicher Produktivität zu und schützt Würde, Sicherheit und Zugehörigkeit.",
-      "hoverDefinition": "Grunddividende ist der universelle Sockel im Wirkungseinkommen: Sicherheit und Teilhabe ohne Personenbewertung.",
-      "definition": "Die Grunddividende ist universell, personenbezogen und nicht bedürftigkeitsgeprüft. Sie wird nicht mit Markteinkommen verwechselt. Sie unterscheidet sich vom klassischen BGE dadurch, dass sie Teil einer größeren Wirkungsarchitektur ist: Wirkungseinkommen = Grunddividende + Markteinkommen + Wirkungsbonus.",
-      "longDefinition": "Die Grunddividende ist universell, personenbezogen und nicht bedürftigkeitsgeprüft. Sie wird nicht mit Markteinkommen verwechselt. Sie unterscheidet sich vom klassischen BGE dadurch, dass sie Teil einer größeren Wirkungsarchitektur ist: Wirkungseinkommen = Grunddividende + Markteinkommen + Wirkungsbonus.",
-      "long_definition": "Die Grunddividende ist universell, personenbezogen und nicht bedürftigkeitsgeprüft. Sie wird nicht mit Markteinkommen verwechselt. Sie unterscheidet sich vom klassischen BGE dadurch, dass sie Teil einer größeren Wirkungsarchitektur ist: Wirkungseinkommen = Grunddividende + Markteinkommen + Wirkungsbonus.",
-      "woekRelation": "Sie ist kein Almosen, sondern ein Anteil an Produktivität, die durch Gesellschaft, Infrastruktur, Wissen, Technologie, Naturgrundlagen und demokratische Ordnung gemeinsam ermöglicht wird.",
-      "woek_einordnung": "Sie ist kein Almosen, sondern ein Anteil an Produktivität, die durch Gesellschaft, Infrastruktur, Wissen, Technologie, Naturgrundlagen und demokratische Ordnung gemeinsam ermöglicht wird.",
-      "usageNote": "Modelllogik / Arbeitspapier / Diskussionsgrundlage: keine amtliche Bewertung, keine Rechts-, Steuer- oder Sozialberatung, keine Personenbewertung und kein Social Credit.",
+      "shortDefinition": "Die Grunddividende ist die Basiskomponente des Wirkungseinkommens: eine verlässliche Grundsicherheit als Anteil an der gemeinsamen Systemwirkung einer Gesellschaft.",
+      "short_definition": "Die Grunddividende ist die Basiskomponente des Wirkungseinkommens: eine verlässliche Grundsicherheit als Anteil an der gemeinsamen Systemwirkung einer Gesellschaft.",
+      "hoverDefinition": "Die Grunddividende ist die Basiskomponente des Wirkungseinkommens: eine verlässliche Grundsicherheit als Anteil an der gemeinsamen Systemwirkung einer Gesellschaft.",
+      "definition": "Die Grunddividende bezeichnet die verlässliche Basiskomponente des Wirkungseinkommens. Sie soll Existenz, Würde und Teilhabe sichern und ist als Anteil an gemeinsamer Systemleistung gedacht, nicht als Almosen, Stilllegungsprämie oder Konsumgutschein. Sie wird nicht an Konsumprofile, politische Meinung, Gehorsam, Wohlverhalten oder Personenbewertung gekoppelt.",
+      "longDefinition": "Die Grunddividende bezeichnet die verlässliche Basiskomponente des Wirkungseinkommens. Sie soll Existenz, Würde und Teilhabe sichern und ist als Anteil an gemeinsamer Systemleistung gedacht, nicht als Almosen, Stilllegungsprämie oder Konsumgutschein. Sie wird nicht an Konsumprofile, politische Meinung, Gehorsam, Wohlverhalten oder Personenbewertung gekoppelt.",
+      "long_definition": "Die Grunddividende bezeichnet die verlässliche Basiskomponente des Wirkungseinkommens. Sie soll Existenz, Würde und Teilhabe sichern und ist als Anteil an gemeinsamer Systemleistung gedacht, nicht als Almosen, Stilllegungsprämie oder Konsumgutschein. Sie wird nicht an Konsumprofile, politische Meinung, Gehorsam, Wohlverhalten oder Personenbewertung gekoppelt.",
+      "woekRelation": "Die Grunddividende ist die Basisschicht der Wirkungsarchitektur: Sicherheit. Markteinkommen bleibt für Arbeit und Austausch erhalten, Wirkungsbonus erkennt besondere Wirkleistung an.",
+      "woek_einordnung": "Die Grunddividende ist die Basisschicht der Wirkungsarchitektur: Sicherheit. Markteinkommen bleibt für Arbeit und Austausch erhalten, Wirkungsbonus erkennt besondere Wirkleistung an.",
+      "usageNote": "Der Begriff wird genutzt, wenn Grundsicherheit als Voraussetzung für Wirkung, Freiheit, Care, Weiterbildung, Gründung, Transformation und demokratische Teilhabe beschrieben wird.",
       "statusNote": "Modellhafte WÖk-Begriffslogik; nicht amtlich und keine Beratung.",
       "doNotConfuseWith": [
-        "BGE als Gesamtmodell",
+        "Bedingungsloses Grundeinkommen",
+        "Bürgergeld",
         "Sozialhilfe",
-        "Wirkungsbonus",
-        "Personenbewertung"
+        "Lohnersatz",
+        "Stilllegungsprämie",
+        "Konsumgutschein",
+        "Personenbewertung",
+        "Roboterdividende im engen Sinn"
       ],
       "relatedTerms": [
         "wirkungseinkommen",
         "wirkungsbonus",
-        "automatisierungsdividende",
-        "wirkungsfonds",
-        "bedingungsloses-grundeinkommen"
+        "wirkungsrente",
+        "wirkungspunkte",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "automatisierung",
+        "maschinenleistung",
+        "teilhabe",
+        "teilgabe",
+        "selbstwirksamkeit",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "care-arbeit",
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungsgutschrift",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsbudget",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "related_terms": [
         "wirkungseinkommen",
         "wirkungsbonus",
-        "automatisierungsdividende",
-        "wirkungsfonds",
-        "bedingungsloses-grundeinkommen"
+        "wirkungsrente",
+        "wirkungspunkte",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "automatisierung",
+        "maschinenleistung",
+        "teilhabe",
+        "teilgabe",
+        "selbstwirksamkeit",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "care-arbeit",
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungsgutschrift",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsbudget",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "relatedMethods": [
         "scorecard",
@@ -100744,10 +101031,274 @@
         "wirkungsdatenraeume"
       ],
       "relatedTools": [],
-      "examples": [],
-      "preferredUsage": "Als WÖk-Modellbegriff mit Schutzlinien verwenden.",
+      "examples": [
+        "Ein junger Mensch kann Weiterbildung oder Gründung riskieren, ohne existenziell abzustürzen.",
+        "Eine durch Automatisierung betroffene Person kann sich neu orientieren.",
+        "Ein Haushalt mit geringem Einkommen wird beim Umstieg auf wirkungsstärkere Produkte nicht bestraft."
+      ],
+      "preferredUsage": "Der Begriff wird genutzt, wenn Grundsicherheit als Voraussetzung für Wirkung, Freiheit, Care, Weiterbildung, Gründung, Transformation und demokratische Teilhabe beschrieben wird.",
       "deprecatedUsage": [],
       "glossaryOrderKey": "grunddividende",
+      "source_links": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
+      "glossary_pack": "010",
+      "cluster": "Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Die Grunddividende ist die Basiskomponente des Wirkungseinkommens: eine verlässliche Grundsicherheit als Anteil an der gemeinsamen Systemwirkung einer Gesellschaft."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Sie sichert Existenz, Würde und Teilhabe.",
+            "Sie ist keine Armenverwaltung und keine Stilllegungsprämie.",
+            "Sie ersetzt Markteinkommen und Wirkungsbonus nicht.",
+            "Sie darf nicht an Konsumprofile, politische Meinung oder Wohlverhalten gekoppelt werden.",
+            "Sie braucht Finanzierung, soziale Abfederung und demokratische Legitimation."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Die Grunddividende ist der Sockel des Wirkungseinkommens. Der Begriff Dividende verweist darauf, dass gesellschaftliche Systemleistung durch Infrastruktur, Wissen, Pflege, Bildung, Demokratie, Naturgrundlagen, Technologie, Kultur und Kooperation entsteht. In einer automatisierten Wirtschaft kann Einkommen nicht dauerhaft allein an Erwerbsarbeit gebunden bleiben."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Ohne Grundsicherheit können Menschen schlechter lernen, pflegen, gründen, demokratisch teilnehmen, ungesunde Arbeit verlassen oder Transformation mittragen. Die Grunddividende schafft die Sicherheitsbasis, damit positive Netto-Wirkung wahrscheinlicher wird."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die vollständige Architektur lautet: Grunddividende als Sicherheit, Markteinkommen als Freiheit und Austausch, Wirkungsbonus als Anerkennung besonderer Wirkleistung, Wirkungsrente als Lebenswirkung im Alter und Wirkungssteuer als Rückkopplung."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "BGE: verwandt, aber in WÖk in Wirkungseinkommen, Wirkungssteuer und Wirkungsbonus eingebettet.",
+            "Sozialhilfe: keine Armenverwaltung.",
+            "Stilllegungsprämie: soll Menschen nicht passivieren.",
+            "Konsumgutschein: nicht nur Kaufkraftinstrument.",
+            "Personenbewertung: Anspruch darf nicht von Lebensstil oder Sozialscore abhängen."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Weiterbildung nach Arbeitsplatzverlust wird möglich.",
+            "Care-Zeit wird tragbarer, wenn Grunddividende und Wirkungsbonus zusammenwirken.",
+            "Kinder und Jugendliche können als eigene Anspruchsträger modelliert werden, falls demokratisch beschlossen."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Die Grunddividende braucht weniger individuelle Wirkungsdaten als der Wirkungsbonus. Felder können entitlement_status, payment_amount, payment_period, funding_source_summary, privacy_classification, no_behavioral_scoring, no_consumer_profile_use, objection_status, correction_history und version sein. Datenschutz, Datenminimierung, Zweckbindung und Rechtsschutz sind zentrale Schutzregeln."
+        },
+        {
+          "title": "Schutzregeln",
+          "body": "Keine Personenbewertung: Anspruch und Auszahlung dürfen nicht von Konsumprofilen, politischer Meinung, Wohlverhalten, Lebensstil oder Sozialscore abhängen. Einspruch, Korrekturpfade, Datenminimierung, Zweckbindung, Anonymisierung oder Aggregation und transparente Versionierung sichern die Grunddividende gegen Kontrolle."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkungseinkommen",
+            "Wirkungsbonus",
+            "Wirkungsrente",
+            "Wirkungspunkte",
+            "Wirkungsdividende",
+            "Wirkungshaushalt",
+            "soziale Abfederung",
+            "Kaufkraftschutz",
+            "Automatisierung",
+            "Maschinenleistung",
+            "Teilhabe"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Die neue Ordnung des Wohlstands; Wenn Maschinen arbeiten; Arbeitspapier Wirkungseinkommensteuer; Arbeitspapier Rentensystem; Führender Begriffsleitfaden.",
+            "Externe Quellen: ILO Social Protection; World Bank Social Protection and Jobs; OECD Future of Work; OECD Measuring Well-being and Progress; UN SDGs / Agenda 2030."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+            "pack: 010"
+          ]
+        }
+      ],
       "dataStandardsGroup": "",
       "officialSources": []
     },
@@ -308907,11 +309458,11 @@
       "dataStandardsGroup": ""
     },
     {
-      "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
-      "sourceDocument": "Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente",
-      "sourceSection": "Automatisierung, Maschinenleistung, Sozialfinanzierung und Wirkungseinkommen",
+      "source": "Glossar-Pack 010",
+      "sourceDocument": "Glossar-Pack 010: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "sourceSection": "Bonuslogik, Wirkleistung & Rückkopplung",
       "version": "1.1",
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "firstApprovedIn": "2026.1",
       "lastUpdated": "2026-06-01",
       "publicationStatus": "published",
@@ -308919,7 +309470,9 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "categories": [
-        "automatisierung-einkommen-sozialfinanzierung"
+        "automatisierung-einkommen-sozialfinanzierung",
+        "Bonuslogik, Wirkleistung & Rückkopplung",
+        "Arbeit, Einkommen & soziale Sicherung nach Wirkung"
       ],
       "theme": [
         "Automatisierung / Maschinenleistung / Sozialfinanzierung / Wirkungseinkommen / Wirkungsrente"
@@ -308953,7 +309506,9 @@
       "relatedDocuments": [
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
-        "wp-rente"
+        "wp-rente",
+        "die-neue-ordnung-des-wohlstands",
+        "wirkungssteuergesetz"
       ],
       "relatedImpactFields": [
         "arbeit-einkommen",
@@ -308971,28 +309526,165 @@
       ],
       "sourceLinks": [
         {
-          "source_type": "internal_woek",
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
           "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
           "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
-          "status": "linked"
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
         },
         {
-          "source_type": "internal_woek",
-          "title": "Online-Buch Kapitel 56",
-          "url": "https://wirkungsoekonomie.de/referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
-          "status": "linked"
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
         },
         {
-          "source_type": "internal_woek",
-          "title": "Online-Buch Kapitel 57",
-          "url": "https://wirkungsoekonomie.de/referenz/kapitel-057-wirkungseinkommen/",
-          "status": "linked"
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
         },
         {
-          "source_type": "internal_woek",
-          "title": "Online-Buch Kapitel 58",
-          "url": "https://wirkungsoekonomie.de/referenz/kapitel-058-wirkungsrente/",
-          "status": "linked"
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
         }
       ],
       "id": "wirkungsbonus",
@@ -309004,55 +309696,190 @@
         "Wirkungsbonus",
         "Wirkbonus",
         "Bonus für Wirkleistung",
-        "Wirkleistungsbonus"
+        "Wirkleistungsbonus",
+        "Bonus nach Wirkung",
+        "Wirkungsgutschrift",
+        "Wirkungsdividende",
+        "Wirkungsprämie",
+        "Impact Bonus",
+        "positiver Wirkungsbonus",
+        "Anerkennung positiver Wirkung"
       ],
       "synonyms": [
         "Wirkungsbonus",
         "Wirkbonus",
         "Bonus für Wirkleistung",
-        "Wirkleistungsbonus"
+        "Wirkleistungsbonus",
+        "Bonus nach Wirkung",
+        "Wirkungsgutschrift",
+        "Wirkungsdividende",
+        "Wirkungsprämie",
+        "Impact Bonus",
+        "positiver Wirkungsbonus",
+        "Anerkennung positiver Wirkung"
       ],
       "pageUrl": "/begriffe/wirkungsbonus/",
       "status": "führender-begriff",
-      "category": "Praxisbegriff",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "category": "Bonuslogik, Wirkleistung & Rückkopplung",
+      "type": "WÖk-Prägungsbegriff / Anerkennungs- und Steuerungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Anerkennungs- und Steuerungsbegriff",
       "conceptStatus": "modellhafte Arbeitsgrundlage",
       "concept_status": "modellhafte Arbeitsgrundlage",
       "priority": 175,
-      "shortDefinition": "Der Wirkungsbonus ist der variable Teil des Wirkungseinkommens, der reale gesellschaftliche Wirkleistung sichtbar und materiell anerkennbar macht.",
-      "short_definition": "Der Wirkungsbonus ist der variable Teil des Wirkungseinkommens, der reale gesellschaftliche Wirkleistung sichtbar und materiell anerkennbar macht.",
-      "hoverDefinition": "Wirkungsbonus erkennt gesellschaftliche Wirkleistung an, ohne den Wert einer Person zu bewerten.",
-      "definition": "Der Wirkungsbonus erkennt Beiträge an, die im alten Erwerbsarbeits- und Einkommenssystem häufig unterbewertet werden: Care, Pflege, Bildung, Prävention, Gemeinwesen, Ehrenamt, Demokratiearbeit, ökologische Regeneration, Forschung, Kultur und Transformation.",
-      "longDefinition": "Der Wirkungsbonus erkennt Beiträge an, die im alten Erwerbsarbeits- und Einkommenssystem häufig unterbewertet werden: Care, Pflege, Bildung, Prävention, Gemeinwesen, Ehrenamt, Demokratiearbeit, ökologische Regeneration, Forschung, Kultur und Transformation.",
-      "long_definition": "Der Wirkungsbonus erkennt Beiträge an, die im alten Erwerbsarbeits- und Einkommenssystem häufig unterbewertet werden: Care, Pflege, Bildung, Prävention, Gemeinwesen, Ehrenamt, Demokratiearbeit, ökologische Regeneration, Forschung, Kultur und Transformation.",
-      "woekRelation": "Der Wirkungsbonus darf keine moralische Bewertung von Menschen werden. Er muss kontextsensibel, rechtsstaatlich, überprüfbar und lernfähig sein. Er bewertet Beiträge und Wirkungszusammenhänge, nicht den Wert einer Person.",
-      "woek_einordnung": "Der Wirkungsbonus darf keine moralische Bewertung von Menschen werden. Er muss kontextsensibel, rechtsstaatlich, überprüfbar und lernfähig sein. Er bewertet Beiträge und Wirkungszusammenhänge, nicht den Wert einer Person.",
-      "usageNote": "Modelllogik / Arbeitspapier / Diskussionsgrundlage: keine amtliche Bewertung, keine Rechts-, Steuer- oder Sozialberatung, keine Personenbewertung und kein Social Credit.",
+      "shortDefinition": "Ein Wirkungsbonus ist eine zusätzliche Entlastung, Gutschrift oder Anerkennung für geprüfte positive Netto-Wirkung oder besondere Wirkleistung.",
+      "short_definition": "Ein Wirkungsbonus ist eine zusätzliche Entlastung, Gutschrift oder Anerkennung für geprüfte positive Netto-Wirkung oder besondere Wirkleistung.",
+      "hoverDefinition": "Ein Wirkungsbonus ist eine zusätzliche Entlastung, Gutschrift oder Anerkennung für geprüfte positive Netto-Wirkung oder besondere Wirkleistung.",
+      "definition": "Der Wirkungsbonus ist die variable Anerkennungskomponente der Wirkungsökonomie. Er kann als Steuerbonus, Gutschrift, Förderbonus, Lieferantenbonus, Wirkungsrentenbonus, Wirkungseinkommensbonus oder Beschaffungsbonus auftreten. Er belohnt nicht den moralischen Wert einer Person, sondern knüpft an geprüfte Tätigkeiten, Produkte, Organisationen, Transaktionen oder Wirkungsdaten an.",
+      "longDefinition": "Der Wirkungsbonus ist die variable Anerkennungskomponente der Wirkungsökonomie. Er kann als Steuerbonus, Gutschrift, Förderbonus, Lieferantenbonus, Wirkungsrentenbonus, Wirkungseinkommensbonus oder Beschaffungsbonus auftreten. Er belohnt nicht den moralischen Wert einer Person, sondern knüpft an geprüfte Tätigkeiten, Produkte, Organisationen, Transaktionen oder Wirkungsdaten an.",
+      "long_definition": "Der Wirkungsbonus ist die variable Anerkennungskomponente der Wirkungsökonomie. Er kann als Steuerbonus, Gutschrift, Förderbonus, Lieferantenbonus, Wirkungsrentenbonus, Wirkungseinkommensbonus oder Beschaffungsbonus auftreten. Er belohnt nicht den moralischen Wert einer Person, sondern knüpft an geprüfte Tätigkeiten, Produkte, Organisationen, Transaktionen oder Wirkungsdaten an.",
+      "woekRelation": "Der Wirkungsbonus macht Wirkleistung materiell sichtbar. Er ist an FinalScore, Datenqualität, Wirkungsgrenzen, Reverse Merit Order, Registerbezug und gegebenenfalls Audit oder Assurance gebunden.",
+      "woek_einordnung": "Der Wirkungsbonus macht Wirkleistung materiell sichtbar. Er ist an FinalScore, Datenqualität, Wirkungsgrenzen, Reverse Merit Order, Registerbezug und gegebenenfalls Audit oder Assurance gebunden.",
+      "usageNote": "Der Begriff wird genutzt, wenn nachweisbare positive Netto-Wirkung rückgekoppelt werden soll, ohne schwere Schäden zu kompensieren oder Menschen zu bewerten.",
       "statusNote": "Modellhafte WÖk-Begriffslogik; nicht amtlich und keine Beratung.",
       "doNotConfuseWith": [
-        "Personenbewertung",
+        "Moralbelohnung",
+        "Rabatt",
+        "Kundenbindungsprogramm",
         "Social Credit",
-        "Arbeitszwang",
-        "moralische Rangliste"
+        "Kompensation schwerer Schäden",
+        "bloßer Claim",
+        "Personenranking"
       ],
       "relatedTerms": [
-        "wirkleistung",
-        "wirkungsbiografie",
         "wirkungseinkommen",
-        "grunddividende",
         "wirkungsrente",
+        "grunddividende",
+        "wirkungspunkte",
+        "wirkungsgutschrift",
+        "positive-netto-wirkung",
+        "wirkleistung",
+        "wirkungssteuer",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "datenqualitaet",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
         "care-arbeit",
-        "ehrenamt"
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "automatisierung",
+        "maschinenleistung",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "wirkungsassurance",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "related_terms": [
-        "wirkleistung",
-        "wirkungsbiografie",
         "wirkungseinkommen",
-        "grunddividende",
         "wirkungsrente",
+        "grunddividende",
+        "wirkungspunkte",
+        "wirkungsgutschrift",
+        "positive-netto-wirkung",
+        "wirkleistung",
+        "wirkungssteuer",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "datenqualitaet",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
         "care-arbeit",
-        "ehrenamt"
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "automatisierung",
+        "maschinenleistung",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "wirkungsassurance",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "relatedMethods": [
         "scorecard",
@@ -309062,10 +309889,273 @@
         "wirkungsdatenraeume"
       ],
       "relatedTools": [],
-      "examples": [],
-      "preferredUsage": "Als WÖk-Modellbegriff mit Schutzlinien verwenden.",
+      "examples": [
+        "Ein Lieferant erhält einen Beschaffungsbonus für nachweislich bessere Produktwirkung.",
+        "Ein Haushalt bekommt eine datensparsame Wirkungsgutschrift für ein Produkt mit positiver Netto-Wirkung.",
+        "Ein Bonus wird zurückgefordert, wenn Daten manipuliert oder nachträglich korrigiert werden."
+      ],
+      "preferredUsage": "Der Begriff wird genutzt, wenn nachweisbare positive Netto-Wirkung rückgekoppelt werden soll, ohne schwere Schäden zu kompensieren oder Menschen zu bewerten.",
       "deprecatedUsage": [],
       "glossaryOrderKey": "wirkungsbonus",
+      "source_links": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
+      "glossary_pack": "010",
+      "cluster": "Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungsbonus ist eine zusätzliche Entlastung, Gutschrift oder Anerkennung für geprüfte positive Netto-Wirkung oder besondere Wirkleistung."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Er ist variable Anerkennung, nicht Grundsicherung.",
+            "Er setzt positive Netto-Wirkung, Datenqualität und geprüfte Wirkungsgrenzen voraus.",
+            "Er bewertet keine Menschen als gute oder schlechte Personen.",
+            "Er darf keine verletzten Wirkungsgrenzen kompensieren.",
+            "Höhere Boni brauchen höhere Prüfqualität."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Wirkungsbonus ist ein Rückkopplungsinstrument für geprüfte positive Netto-Wirkung. Er kann finanziell, steuerlich, beschaffungsbezogen, rentenbezogen oder als Gutschrift ausgestaltet sein. Maßgeblich sind Wirkungsgegenstand, Datenqualität, Systemgrenzen, FinalScore, Reverse Merit Order, Audit-Trail und Rechtsschutz."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Der Wirkungsbonus macht sichtbar, was im alten System häufig unterbewertet wird: Care, Pflege, Bildung, Prävention, Gemeinwesen, Ehrenamt, Demokratiearbeit, ökologische Regeneration, Forschung, Kultur und Transformation."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Der Bonus ist kein moralisches Lob für Menschen. Die WÖk bewertet reale Zustandsveränderungen und deren Datenlage. Eine Person kann in einem Kontext Wirkleistung erbringen und in einem anderen Kontext negative Wirkung verursachen; daraus entsteht kein Gesamturteil über die Person."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Rabatt: Rabatt kann beliebig sein; Wirkungsbonus braucht geprüfte Wirkung.",
+            "Moralprämie: keine Bewertung guter Menschen.",
+            "Kompensation: rote Linien bleiben wirksam.",
+            "Wirkungspunkte: Punkte können Alltagsschnittstelle sein; der Bonus ist die breitere Rückkopplungslogik."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Steuerbonus für geprüfte Transformationswirkung.",
+            "Wirkungsgutschrift im Produktpreis.",
+            "Kommunaler Bonus für Reparatur, Wiederverwendung oder Prävention.",
+            "Kein Bonus bei verletzten Wirkungsgrenzen, auch wenn andere Felder positiv sind."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Voraussetzungen sind definierter Wirkungsgegenstand, positive Netto-Wirkung, ausreichende Datenqualität, kein Verstoß gegen Wirkungsgrenzen, Reverse Merit Order, Registerbezug, Audit oder Assurance, Gültigkeit, Korrektur- und Rückforderungsregel, Datenschutz und keine Personenbewertung."
+        },
+        {
+          "title": "Schutzregeln",
+          "body": "Keine Personenbewertung: Ein Wirkungsbonus bewertet nicht gute Menschen. Schwere negative Wirkungen und verletzte Wirkungsgrenzen lassen sich nicht kompensieren; Reverse Merit Order und Nichtkompensation bleiben wirksam. Rechtsschutz, Einspruch, Korrekturpfade, Datenminimierung, Zweckbindung, Anonymisierung oder Aggregation und transparente Versionierung sind Pflicht."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkungseinkommen",
+            "Wirkungsrente",
+            "Grunddividende",
+            "Wirkungspunkte",
+            "Wirkungsgutschrift",
+            "FinalScore",
+            "Reverse Merit Order",
+            "Wirkungsgrenze",
+            "Wirkungsregister",
+            "Wirkungsaudit"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Die neue Ordnung des Wohlstands; Arbeitspapier Wirkungseinkommensteuer; Wirkungsoekonomie in der Lieferkette; Produktbesteuerung durch Wirkung; Working-Paper Wirkungssteuergesetz.",
+            "Externe Quellen: UN SDGs / Agenda 2030; ILO Decent Work; CSRD / ESRS; GRI Standards; Directive (EU) 2024/825."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+            "pack: 010"
+          ]
+        }
+      ],
       "dataStandardsGroup": "",
       "officialSources": []
     },
@@ -310004,82 +311094,389 @@
         "Wirkungsdividende",
         "Erwerbsarbeitslogik",
         "Wirkungseinkommensteuer",
-        "WEstG"
+        "WEstG",
+        "Einkommen nach Wirkung",
+        "Einkommen aus Wirkung",
+        "wirkungsorientiertes Einkommen",
+        "Wirkungseinkommensmodell",
+        "Impact Income",
+        "Einkommen jenseits Erwerbsarbeit",
+        "Einkommensarchitektur nach Wirkung",
+        "BGE",
+        "bedingungsloses Grundeinkommen"
       ],
       "synonyms": [
         "Wirkungseinkommen",
         "Wirkungsdividende",
         "Erwerbsarbeitslogik",
         "Wirkungseinkommensteuer",
-        "WEstG"
+        "WEstG",
+        "Einkommen nach Wirkung",
+        "Einkommen aus Wirkung",
+        "wirkungsorientiertes Einkommen",
+        "Wirkungseinkommensmodell",
+        "Impact Income",
+        "Einkommen jenseits Erwerbsarbeit",
+        "Einkommensarchitektur nach Wirkung",
+        "BGE",
+        "bedingungsloses Grundeinkommen"
       ],
-      "shortDefinition": "Wirkungseinkommen beschreibt Einkommenslogiken, die gesellschaftlich relevante positive Wirkung berücksichtigen.",
-      "definition": "Das Konzept fragt, wie Sorgearbeit, Bildung, Prävention, demokratische Arbeit und andere wirksame Tätigkeiten besser sichtbar und abgesichert werden können.",
-      "longDefinition": "Das Konzept fragt, wie Sorgearbeit, Bildung, Prävention, demokratische Arbeit und andere wirksame Tätigkeiten besser sichtbar und abgesichert werden können.",
-      "woekRelation": "Nicht als bloßes Grundeinkommen gleichsetzen.",
+      "shortDefinition": "Wirkungseinkommen bezeichnet eine Einkommensarchitektur, in der Grundsicherheit, Markteinkommen und Wirkungsbonus so verbunden werden, dass reale positive Wirkung materiell anerkannt wird.",
+      "definition": "Wirkungseinkommen ist in der Wirkungsökonomie kein bloßes bedingungsloses Grundeinkommen und keine Abkehr von Arbeit, Leistung oder Unternehmertum. Es beschreibt eine Einkommensarchitektur aus Grunddividende, Markteinkommen und Wirkungsbonus. Die Grunddividende sichert Würde und Teilhabe, Markteinkommen bleibt für Arbeit, Austausch und Unternehmertum erhalten, und der Wirkungsbonus erkennt geprüfte positive Netto-Wirkung an. Wirkung bleibt dabei neutral und relational; positiv wird sie erst im Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie.",
+      "longDefinition": "Wirkungseinkommen ist in der Wirkungsökonomie kein bloßes bedingungsloses Grundeinkommen und keine Abkehr von Arbeit, Leistung oder Unternehmertum. Es beschreibt eine Einkommensarchitektur aus Grunddividende, Markteinkommen und Wirkungsbonus. Die Grunddividende sichert Würde und Teilhabe, Markteinkommen bleibt für Arbeit, Austausch und Unternehmertum erhalten, und der Wirkungsbonus erkennt geprüfte positive Netto-Wirkung an. Wirkung bleibt dabei neutral und relational; positiv wird sie erst im Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie.",
+      "woekRelation": "Wirkungseinkommen verbindet soziale Sicherheit mit Wirkungsrückkopplung. Es trennt Menschenwürde, Markteinkommen und Wirkungsertrag, damit keine Personenbewertung und kein Social Credit entstehen.",
       "statusNote": "Nicht als bloßes Grundeinkommen gleichsetzen.",
-      "usageNote": "Nicht als bloßes Grundeinkommen gleichsetzen.",
+      "usageNote": "Der Begriff wird genutzt, wenn Einkommen nicht mehr allein aus Erwerbsarbeitszeit, Kapitalertrag oder Status abgeleitet werden soll, sondern reale Wirkleistung, Care, Bildung, Prävention, Demokratiepflege und ökologische Regeneration sichtbar werden.",
       "categories": [
-        "messbegriff"
+        "messbegriff",
+        "Einkommen, Arbeit & Wirkungsarchitektur",
+        "Arbeit, Einkommen & soziale Sicherung nach Wirkung"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "relatedTerms": [
-        "positive-netto-wirkung",
-        "wirkungslenkung",
-        "just-transition-mechanism",
-        "wirkungsfonds",
+        "grunddividende",
+        "wirkungsbonus",
         "wirkungsrente",
-        "amartya-sen",
-        "care-oekonomie",
-        "feministische-oekonomie",
-        "unbezahlte-arbeit",
-        "feminisierung-von-armut"
+        "wirkungspunkte",
+        "wirkungseinkommensteuer",
+        "westg",
+        "wirkleistung",
+        "automatisierung",
+        "maschinenleistung",
+        "positive-netto-wirkung",
+        "wirkungssteuer",
+        "wirkungsrueckkopplung",
+        "care-arbeit",
+        "bildung",
+        "pflege",
+        "wirkungseinkommenssteuer",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungsgutschrift",
+        "wirkungssteuergesetz",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungseinkommen/",
       "priority": 135,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung.",
+      "version": "1.1",
+      "category": "Einkommen, Arbeit & Wirkungsarchitektur",
+      "source": "Glossar-Pack 010",
+      "sourceDocument": "Glossar-Pack 010: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "sourceSection": "Einkommen, Arbeit & Wirkungsarchitektur",
+      "hoverDefinition": "Wirkungseinkommen bezeichnet eine Einkommensarchitektur, in der Grundsicherheit, Markteinkommen und Wirkungsbonus so verbunden werden, dass reale positive Wirkung materiell anerkannt wird.",
       "doNotConfuseWith": [
-        "Grundeinkommen",
-        "Lohn"
+        "Bedingungsloses Grundeinkommen",
+        "Sozialhilfe",
+        "Lohnersatz",
+        "Personenbewertung",
+        "Social Credit",
+        "moralische Rangliste",
+        "reine Robotersteuer"
       ],
       "relatedDocuments": [
-        "wp-einkommen"
+        "wp-einkommen",
+        "die-neue-ordnung-des-wohlstands",
+        "wenn-maschinen-arbeiten",
+        "wp-rente",
+        "wirkungssteuergesetz"
       ],
-      "examples": [],
-      "preferredUsage": "Als Instrument und Diskussionsmodell kennzeichnen.",
+      "examples": [
+        "Eine pflegende Angehörige kann durch Grunddividende und Wirkungsbonus abgesichert werden, ohne dass ihr Wert als Person bewertet wird.",
+        "Ein Unternehmen mit geprüfter Transformationswirkung kann über Wirkungsgutschriften oder Fonds an Rückkopplung beteiligt werden.",
+        "Automatisierungsgewinne fließen nicht gegen Maschinen, sondern in Weiterbildung, Grunddividende, Wirkungsfonds und Wirkungsrente zurück."
+      ],
+      "preferredUsage": "Der Begriff wird genutzt, wenn Einkommen nicht mehr allein aus Erwerbsarbeitszeit, Kapitalertrag oder Status abgeleitet werden soll, sondern reale Wirkleistung, Care, Bildung, Prävention, Demokratiepflege und ökologische Regeneration sichtbar werden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungseinkommen",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
-        "positive-netto-wirkung",
-        "wirkungslenkung",
-        "just-transition-mechanism",
-        "wirkungsfonds",
+        "grunddividende",
+        "wirkungsbonus",
         "wirkungsrente",
-        "amartya-sen",
-        "care-oekonomie",
-        "feministische-oekonomie",
-        "unbezahlte-arbeit",
-        "feminisierung-von-armut"
+        "wirkungspunkte",
+        "wirkungseinkommensteuer",
+        "westg",
+        "wirkleistung",
+        "automatisierung",
+        "maschinenleistung",
+        "positive-netto-wirkung",
+        "wirkungssteuer",
+        "wirkungsrueckkopplung",
+        "care-arbeit",
+        "bildung",
+        "pflege",
+        "wirkungseinkommenssteuer",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungsgutschrift",
+        "wirkungssteuergesetz",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
       "internal_links": [],
       "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Prägungsbegriff / Architekturbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Architekturbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -310111,6 +311508,274 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
+      "short_definition": "Wirkungseinkommen bezeichnet eine Einkommensarchitektur, in der Grundsicherheit, Markteinkommen und Wirkungsbonus so verbunden werden, dass reale positive Wirkung materiell anerkannt wird.",
+      "long_definition": "Wirkungseinkommen ist in der Wirkungsökonomie kein bloßes bedingungsloses Grundeinkommen und keine Abkehr von Arbeit, Leistung oder Unternehmertum. Es beschreibt eine Einkommensarchitektur aus Grunddividende, Markteinkommen und Wirkungsbonus. Die Grunddividende sichert Würde und Teilhabe, Markteinkommen bleibt für Arbeit, Austausch und Unternehmertum erhalten, und der Wirkungsbonus erkennt geprüfte positive Netto-Wirkung an. Wirkung bleibt dabei neutral und relational; positiv wird sie erst im Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie.",
+      "woek_einordnung": "Wirkungseinkommen verbindet soziale Sicherheit mit Wirkungsrückkopplung. Es trennt Menschenwürde, Markteinkommen und Wirkungsertrag, damit keine Personenbewertung und kein Social Credit entstehen.",
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
+      "relatedChapters": [
+        "Kapitel 56: Arbeit, Automatisierung und Maschinenleistung",
+        "Kapitel 57: Wirkungseinkommen",
+        "Kapitel 58: Wirkungsrente"
+      ],
+      "glossary_pack": "010",
+      "cluster": "Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "packStatus": "professionalisiert",
+      "conceptStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkungseinkommen bezeichnet eine Einkommensarchitektur, in der Grundsicherheit, Markteinkommen und Wirkungsbonus so verbunden werden, dass reale positive Wirkung materiell anerkannt wird."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Es besteht aus Grunddividende, Markteinkommen und Wirkungsbonus.",
+            "Es ersetzt Markteinkommen nicht, sondern ergänzt es um Wirkungsanerkennung.",
+            "Es beantwortet Automatisierung nicht mit Maschinenfeindschaft, sondern mit Rückkopplung von Produktivitätsgewinnen.",
+            "Es ist kein Personenranking und kein Social Credit.",
+            "Positive Netto-Wirkung für Mensch, Planet und Demokratie ist Zielgröße."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungseinkommen bezeichnet eine Einkommensordnung, in der Existenzsicherung, Erwerb, Unternehmertum und gesellschaftliche Wirkleistung voneinander unterschieden und neu verbunden werden. Der Begriff macht sichtbar, dass Sorgearbeit, Bildung, Prävention, Gemeinwesen, demokratische Stabilisierung, ökologische Regeneration und Transformation reale Zustände verändern können, auch wenn sie im klassischen Arbeitsmarkt oft schwach bezahlt werden."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Das Konzept ist zentral, weil die alte Kopplung Arbeit -> Einkommen -> Steuern und Sozialabgaben -> Staat, Rente und Sozialsysteme durch Automatisierung, KI und Plattformarbeit brüchig wird. Die WÖk will Maschinenleistung und Produktivitätsgewinne nicht bekämpfen, sondern in Grunddividende, Wirkungsfonds, Weiterbildung, Transformationsschutz und Wirkungsrente zurückführen."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Wirkungseinkommen ist eine Architektur, kein einzelner Transfer. Es trennt Grundsicherheit von Markteinkommen und Wirkungsbonus. Bewertet werden Tätigkeiten, Produkte, Organisationen, Transaktionen oder Wirkungsdaten, nicht der moralische Wert eines Menschen."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "BGE: verwandt in der Sicherheitsfrage, aber Wirkungseinkommen enthält Markteinkommen und Wirkungsbonus.",
+            "Sozialhilfe: Wirkungseinkommen ist keine Armenverwaltung.",
+            "Social Credit: keine Personenbewertung, kein Sozialscore, keine moralische Rangliste.",
+            "Kompensation: schwere negative Wirkungen dürfen nicht durch Boni neutralisiert werden."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Care-Arbeit kann über geprüfte Wirkleistung sichtbar werden.",
+            "Weiterbildung nach Automatisierung wird als Transformationsschutz abgesichert.",
+            "Ein wirkungspositives Produkt erzeugt keine Bewertung der Käuferin, sondern eine mögliche Produkt- oder Transaktionsgutschrift."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Relevante Felder sind impact_income_id, base_dividend_component, market_income_component, impact_bonus_component, assessed_activity, relevant_wok_ids, final_score, positive_net_impact_status, data_quality_class, audit_status, privacy_classification, objection_status, correction_history und version. Datenschutz, Datenminimierung, Zweckbindung, Anonymisierung oder Aggregation, Einspruch und Korrekturpfade sind Pflicht."
+        },
+        {
+          "title": "Schutzregeln",
+          "body": "Keine Personenbewertung: Bewertet werden Tätigkeiten, Produkte, Organisationen, Transaktionen oder Wirkungsdaten, nicht Menschen, Lebensstil, Charakter oder Würde. Rechtsschutz, Einspruch, Korrekturpfade, Datenminimierung, Zweckbindung, Anonymisierung oder Aggregation und transparente Versionierung sind verbindliche Schutzregeln."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Grunddividende",
+            "Wirkungsbonus",
+            "Wirkungsrente",
+            "Wirkungspunkte",
+            "Wirkungseinkommensteuer",
+            "WEstG",
+            "Wirkleistung",
+            "Automatisierung",
+            "Maschinenleistung",
+            "Positive Netto-Wirkung",
+            "Wirkungsrückkopplung"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Die neue Ordnung des Wohlstands; Arbeitspapier Wirkungseinkommensteuer; Wenn Maschinen arbeiten; Working-Paper Wirkungssteuergesetz; Führender Begriffsleitfaden.",
+            "Externe Quellen: UN SDGs / Agenda 2030; ILO Decent Work; OECD Future of Work; CSRD / ESRS; GRI Standards."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+            "pack: 010"
+          ]
+        }
+      ],
       "dataStandardsGroup": ""
     },
     {
@@ -315795,66 +317460,403 @@
       "aliases": [
         "Wirkungspunkte",
         "Wirkungsbonus",
-        "Bonusmodell"
+        "Bonusmodell",
+        "Impact Points",
+        "Wirkungspunktesystem",
+        "Punkte nach Wirkung",
+        "Verbraucher-Wirkungspunkte",
+        "Konsumwirkungspunkte",
+        "Wirkungskonto",
+        "Wirkungsguthaben",
+        "wirkungsbezogene Bonuspunkte"
       ],
       "synonyms": [
         "Wirkungspunkte",
         "Wirkungsbonus",
-        "Bonusmodell"
+        "Bonusmodell",
+        "Impact Points",
+        "Wirkungspunktesystem",
+        "Punkte nach Wirkung",
+        "Verbraucher-Wirkungspunkte",
+        "Konsumwirkungspunkte",
+        "Wirkungskonto",
+        "Wirkungsguthaben",
+        "wirkungsbezogene Bonuspunkte"
       ],
-      "shortDefinition": "Wirkungspunkte sind eine mögliche produktbezogene Informations- oder Bonuslogik, keine Personenbewertung.",
-      "definition": "Wirkungspunkte dürfen nur als freiwillige, datensparsame und transparente Produkt- oder Bonusinformation gedacht werden. Sie dürfen keine Bürger:innen bewerten, keine Kaufprofile erzwingen und keine Nachteile bei Nichtteilnahme erzeugen.",
-      "longDefinition": "Wirkungspunkte dürfen nur als freiwillige, datensparsame und transparente Produkt- oder Bonusinformation gedacht werden. Sie dürfen keine Bürger:innen bewerten, keine Kaufprofile erzwingen und keine Nachteile bei Nichtteilnahme erzeugen.",
-      "woekRelation": "Nur mit Social-Credit-Abgrenzung verwenden.",
+      "shortDefinition": "Wirkungspunkte sind freiwillige, datensparsame Orientierungs- oder Entlastungsinstrumente, die die Wirkung von Produkten oder Transaktionen sichtbar machen, ohne Menschen als Personen zu bewerten.",
+      "definition": "Wirkungspunkte sind ein mögliches Alltagsinstrument, mit dem die Wirkung von Produkten, Dienstleistungen oder Transaktionen sichtbar und gegebenenfalls entlastend gemacht wird. Sie können als Bonus, Guthaben, Rückerstattung, steuerliche Gutschrift, Lerninstrument oder Orientierungshilfe genutzt werden. Sie bewerten nicht Charakter, Lebensstil, politische Haltung oder moralischen Wert einer Person.",
+      "longDefinition": "Wirkungspunkte sind ein mögliches Alltagsinstrument, mit dem die Wirkung von Produkten, Dienstleistungen oder Transaktionen sichtbar und gegebenenfalls entlastend gemacht wird. Sie können als Bonus, Guthaben, Rückerstattung, steuerliche Gutschrift, Lerninstrument oder Orientierungshilfe genutzt werden. Sie bewerten nicht Charakter, Lebensstil, politische Haltung oder moralischen Wert einer Person.",
+      "woekRelation": "Wirkungspunkte sind nur legitim, wenn sie Freiheit stärken: freiwillig, datensparsam, zweckgebunden, anonymisiert oder aggregiert, transparent, korrigierbar und ohne Zweckentfremdung für Werbung, Bonität, Versicherung, Arbeit oder Zugang zu Grundrechten.",
       "statusNote": "Nur mit Social-Credit-Abgrenzung verwenden.",
-      "usageNote": "Nur mit Social-Credit-Abgrenzung verwenden.",
+      "usageNote": "Der Begriff wird genutzt, wenn Produktwirkung, Transaktionswirkung oder Verbraucherinformation alltagstauglich dargestellt werden soll, ohne Social Credit, Konsumprofilierung oder Personenbewertung zu erzeugen.",
       "categories": [
-        "praxisbegriff"
+        "praxisbegriff",
+        "Verbraucherinformation, Bonuslogik & Alltag",
+        "Arbeit, Einkommen & soziale Sicherung nach Wirkung"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "relatedTerms": [
-        "social-credit",
-        "positive-netto-wirkung"
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "grunddividende",
+        "wirkungsrente",
+        "wirkungsgutschrift",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "responsible-marketing",
+        "greenwashing",
+        "datenschutz",
+        "datenminimierung",
+        "sozialkredit",
+        "personenbewertung",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "care-arbeit",
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "automatisierung",
+        "maschinenleistung",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungspunkte/",
       "priority": 148,
       "status": "schutzbegriff",
       "version": "1.1",
-      "category": "Praxisbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Schutzbegriffe",
-      "hoverDefinition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
+      "category": "Verbraucherinformation, Bonuslogik & Alltag",
+      "source": "Glossar-Pack 010",
+      "sourceDocument": "Glossar-Pack 010: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "sourceSection": "Verbraucherinformation, Bonuslogik & Alltag",
+      "hoverDefinition": "Wirkungspunkte sind freiwillige, datensparsame Orientierungs- oder Entlastungsinstrumente, die die Wirkung von Produkten oder Transaktionen sichtbar machen, ohne Menschen als Personen zu bewerten.",
       "doNotConfuseWith": [
         "Social Credit",
-        "Personenscore"
+        "Personenbewertung",
+        "Kundenbindungsprogramm",
+        "Moralpunktesystem",
+        "CO2-Punkte",
+        "Wirkungsbonus",
+        "Überwachung",
+        "Konsum-Moralprofil"
       ],
       "relatedDocuments": [
-        "schutzrahmen-personenbewertung"
+        "schutzrahmen-personenbewertung",
+        "die-neue-ordnung-des-wohlstands",
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente",
+        "wirkungssteuergesetz"
       ],
-      "examples": [],
-      "preferredUsage": "Produktbezogen und freiwillig, nie als Personenrating.",
+      "examples": [
+        "Ein Supermarkt zeigt die Wirkungsklasse eines Produkts und vergibt freiwillig Wirkungspunkte.",
+        "Ein Kassenzettel zeigt aggregiert Produktwirkungen, ohne ein Personenprofil zu bilden.",
+        "Ein Produkt mit Kinderarbeit erzeugt keine Wirkungspunkte, auch wenn es in einem anderen Feld gut abschneidet."
+      ],
+      "preferredUsage": "Der Begriff wird genutzt, wenn Produktwirkung, Transaktionswirkung oder Verbraucherinformation alltagstauglich dargestellt werden soll, ohne Social Credit, Konsumprofilierung oder Personenbewertung zu erzeugen.",
       "deprecatedUsage": [
         "Bürger:innen sammeln Wirkungspunkte"
       ],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungspunkte",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
-        "social-credit",
-        "positive-netto-wirkung"
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "grunddividende",
+        "wirkungsrente",
+        "wirkungsgutschrift",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "responsible-marketing",
+        "greenwashing",
+        "datenschutz",
+        "datenminimierung",
+        "sozialkredit",
+        "personenbewertung",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "care-arbeit",
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "ehrenamt",
+        "demokratiepflege",
+        "praevention",
+        "oekologische-regeneration",
+        "automatisierung",
+        "maschinenleistung",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
       "internal_links": [],
       "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Prägungsbegriff / Verbraucher- und Schutzbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Verbraucher- und Schutzbegriff",
       "theme": [
         "Praxisbegriff"
       ],
@@ -315886,6 +317888,277 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
+      "short_definition": "Wirkungspunkte sind freiwillige, datensparsame Orientierungs- oder Entlastungsinstrumente, die die Wirkung von Produkten oder Transaktionen sichtbar machen, ohne Menschen als Personen zu bewerten.",
+      "long_definition": "Wirkungspunkte sind ein mögliches Alltagsinstrument, mit dem die Wirkung von Produkten, Dienstleistungen oder Transaktionen sichtbar und gegebenenfalls entlastend gemacht wird. Sie können als Bonus, Guthaben, Rückerstattung, steuerliche Gutschrift, Lerninstrument oder Orientierungshilfe genutzt werden. Sie bewerten nicht Charakter, Lebensstil, politische Haltung oder moralischen Wert einer Person.",
+      "woek_einordnung": "Wirkungspunkte sind nur legitim, wenn sie Freiheit stärken: freiwillig, datensparsam, zweckgebunden, anonymisiert oder aggregiert, transparent, korrigierbar und ohne Zweckentfremdung für Werbung, Bonität, Versicherung, Arbeit oder Zugang zu Grundrechten.",
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
+      "relatedChapters": [
+        "Kapitel 56: Arbeit, Automatisierung und Maschinenleistung",
+        "Kapitel 57: Wirkungseinkommen",
+        "Kapitel 58: Wirkungsrente"
+      ],
+      "glossary_pack": "010",
+      "cluster": "Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "packStatus": "professionalisiert",
+      "conceptStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkungspunkte sind freiwillige, datensparsame Orientierungs- oder Entlastungsinstrumente, die die Wirkung von Produkten oder Transaktionen sichtbar machen, ohne Menschen als Personen zu bewerten."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Sie sind produkt- oder transaktionsbezogen, nicht personenbezogen im Sinne eines Moralwerts.",
+            "Sie dürfen keine Sozialkreditlogik, Konsumprofilierung oder Personenbewertung erzeugen.",
+            "Sie können Kaufkraftschutz unterstützen.",
+            "Sie brauchen Datenminimierung, Zweckbindung, Freiwilligkeit, Anonymisierung oder Aggregation.",
+            "Sie dürfen nicht für Werbung, Bonität, Scoring, Versicherungen oder Verhaltenskontrolle zweckentfremdet werden."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungspunkte machen Produktwirkung, Dienstleistungswirkung oder Transaktionswirkung sichtbar. Sie können Orientierung, Entlastung oder Guthaben ermöglichen. Entscheidend ist die Grenze: Bewertet werden Produktwirkung, Transaktionswirkung oder geprüfte Wirkungskategorien, nicht Würde, Charakter oder Gesamtwert eines Menschen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wirkungspunkte sind relevant, weil Wirkung im Alltag verständlich werden muss, ohne dass Verbraucher:innen Lieferkettenberichte, CO2-Bilanzen oder Produktpässe selbst auswerten müssen. Sie können Nachfrage in Richtung positiver Netto-Wirkung lenken und Greenwashing erschweren."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Legitime Wirkungspunkte sind verständlich, freiwillig, datensparsam, zweckgebunden, anonymisiert oder aggregiert, transparent, korrigierbar und schützen einkommensschwache Haushalte. Unzulässig sind Personenrankings, moralische Konsumprofile, Bonitätsnutzung, Versicherungsnutzung, Arbeitsplatznutzung oder Zugriffsbeschränkungen."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Social Credit: Wirkungspunkte dürfen keine Sozialkreditlogik erzeugen.",
+            "Kundenbindung: klassische Programme binden Verhalten; Wirkungspunkte müssen transparent und entlastend sein.",
+            "Moralpunktesystem: keine Bewertung des Charakters.",
+            "CO2-Punkte: CO2 kann Teil sein, aber WÖk umfasst Mensch, Planet und Demokratie."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein Haushalt erhält freiwillig Entlastung beim Kauf gesunder, fairer und ressourcenschonender Grundprodukte.",
+            "Ein Online-Shop filtert nach Wirkungsklasse, zeigt aber keine personenbezogene Bewertung.",
+            "Ein kommunales Programm unterstützt Reparatur und Wiederverwendung ohne Datenweitergabe an Dritte."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestlogik: Produkt oder Transaktion bewerten, FinalScore oder Wirkungsklasse prüfen, Datenqualität ausweisen, Wirkungsgrenzen prüfen, Bonusfähigkeit bestimmen, Datenminimierung, Freiwilligkeit, Zweckbindung, Anonymisierung oder Aggregation, Korrektur- und Löschrechte und Missbrauchsschutz sichern."
+        },
+        {
+          "title": "Schutzregeln",
+          "body": "Keine Personenbewertung: Wirkungspunkte bewerten nicht Menschen, Lebensstil, Charakter, politische Haltung oder Konsumidentität. Keine Punkte bei verletzten Wirkungsgrenzen; schwere negative Wirkungen lassen sich nicht kompensieren. Rechtsschutz, Einspruch, Korrekturpfade, Datenminimierung, Zweckbindung, Anonymisierung oder Aggregation und transparente Versionierung sind verbindlich."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkungseinkommen",
+            "Wirkungsbonus",
+            "Grunddividende",
+            "Wirkungsrente",
+            "Wirkungsgutschrift",
+            "Wirkung im Preisschild",
+            "Ehrliche Preise",
+            "Produktwirkung",
+            "Produktscorecard",
+            "Digitaler Produktpass",
+            "FinalScore",
+            "Datenqualität",
+            "Responsible Marketing",
+            "Greenwashing"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Die neue Ordnung des Wohlstands; Wirkungsoekonomie in der Lieferkette; Produktbesteuerung durch Wirkung; Technische Leitlinien WUStG; Führender Begriffsleitfaden.",
+            "Externe Quellen: Directive (EU) 2024/825; EU Green Claims; Digital Product Passport / ESPR; UN SDGs / Agenda 2030; CSRD / ESRS; GRI Standards."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+            "pack: 010"
+          ]
+        }
+      ],
       "dataStandardsGroup": ""
     },
     {
@@ -317076,75 +319349,391 @@
         "Wirkungsrente",
         "wirkungsbasierte Rente",
         "Rentenfinanzierung",
-        "Transformationsrente"
+        "Transformationsrente",
+        "Rente nach Wirkung",
+        "wirkungsorientierte Rente",
+        "Lebenswirkungsrente",
+        "Wirkungsbiografie",
+        "Rente nach Lebenswirkung",
+        "Impact Pension",
+        "Wirkungsdividende im Alter",
+        "generationenübergreifender Wirkungsvertrag"
       ],
       "synonyms": [
         "Wirkungsrente",
         "wirkungsbasierte Rente",
         "Rentenfinanzierung",
-        "Transformationsrente"
+        "Transformationsrente",
+        "Rente nach Wirkung",
+        "wirkungsorientierte Rente",
+        "Lebenswirkungsrente",
+        "Wirkungsbiografie",
+        "Rente nach Lebenswirkung",
+        "Impact Pension",
+        "Wirkungsdividende im Alter",
+        "generationenübergreifender Wirkungsvertrag"
       ],
-      "shortDefinition": "Wirkungsrente beschreibt eine rentenpolitische Perspektive, die Lebensleistung und gesellschaftliche Wirkung sichtbarer macht.",
-      "definition": "Das Konzept öffnet eine Wirkungslogik für Rente, Care-Arbeit, Prävention, Bildung und gesellschaftliche Stabilität.",
-      "longDefinition": "Das Konzept öffnet eine Wirkungslogik für Rente, Care-Arbeit, Prävention, Bildung und gesellschaftliche Stabilität.",
-      "woekRelation": "Nicht als fertiges Gesetz ohne Quelle darstellen.",
+      "shortDefinition": "Die Wirkungsrente erweitert die Rentenlogik von Erwerbsbiografie und Beitragsjahren auf Lebenswirkung, Care, Pflege, Bildung, Gemeinwesen, Prävention und demokratisches Engagement.",
+      "definition": "Wirkungsrente bezeichnet eine rentenpolitische Erweiterung, die Erwerbsbiografie und Beitragsjahre nicht abschafft, aber um Lebenswirkung ergänzt. Sie erkennt an, dass Pflege, Kindererziehung, Bildung, Prävention, Ehrenamt, Gemeinwesenarbeit, Demokratiepflege und ökologische Regeneration Zustände tatsächlich verändern können. Sie ist keine Bestrafung hoher Einkommen und kein moralisches Punktesystem über Menschen.",
+      "longDefinition": "Wirkungsrente bezeichnet eine rentenpolitische Erweiterung, die Erwerbsbiografie und Beitragsjahre nicht abschafft, aber um Lebenswirkung ergänzt. Sie erkennt an, dass Pflege, Kindererziehung, Bildung, Prävention, Ehrenamt, Gemeinwesenarbeit, Demokratiepflege und ökologische Regeneration Zustände tatsächlich verändern können. Sie ist keine Bestrafung hoher Einkommen und kein moralisches Punktesystem über Menschen.",
+      "woekRelation": "Die Wirkungsrente übersetzt Wirkungseinkommen in die Lebenslauf- und Alterslogik: Die Wirkenden sichern die Zukunft der Wirkenden, ohne Erwerbsarbeit pauschal abzuwerten.",
       "statusNote": "Nicht als fertiges Gesetz ohne Quelle darstellen.",
-      "usageNote": "Nicht als fertiges Gesetz ohne Quelle darstellen.",
+      "usageNote": "Der Begriff wird genutzt, wenn Altersabsicherung nicht allein an Erwerbsjahre gekoppelt werden soll, sondern auch gesellschaftliche Wirkleistung, gebrochene Erwerbsbiografien und Transformationszeiten berücksichtigt.",
       "categories": [
-        "messbegriff"
+        "messbegriff",
+        "Rente, Lebenswirkung & soziale Sicherung",
+        "Arbeit, Einkommen & soziale Sicherung nach Wirkung"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "relatedTerms": [
         "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "wirkleistung",
+        "care-arbeit",
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "praevention",
+        "wirkungsfonds",
+        "kapitalwirkung",
+        "generationenverantwortung",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "ehrenamt",
+        "demokratiepflege",
+        "oekologische-regeneration",
+        "automatisierung",
+        "maschinenleistung",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungsgutschrift",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
         "positive-netto-wirkung",
-        "care-oekonomie",
-        "feministische-oekonomie",
-        "gender-pay-gap",
-        "gender-pension-gap",
-        "feminisierung-von-armut"
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungsrente/",
       "priority": 153,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
+      "version": "1.1",
+      "category": "Rente, Lebenswirkung & soziale Sicherung",
+      "source": "Glossar-Pack 010",
+      "sourceDocument": "Glossar-Pack 010: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "sourceSection": "Rente, Lebenswirkung & soziale Sicherung",
+      "hoverDefinition": "Die Wirkungsrente erweitert die Rentenlogik von Erwerbsbiografie und Beitragsjahren auf Lebenswirkung, Care, Pflege, Bildung, Gemeinwesen, Prävention und demokratisches Engagement.",
       "doNotConfuseWith": [
-        "gesetzliche Rente",
-        "Privatrente"
+        "klassische Beitragsrente",
+        "Bestrafung erfolgreicher Erwerbsbiografien",
+        "Moralpunktesystem",
+        "Social Credit",
+        "Almosen im Alter",
+        "Kompensation verletzter Wirkungsgrenzen"
       ],
       "relatedDocuments": [
-        "wp-rente"
+        "wp-rente",
+        "die-neue-ordnung-des-wohlstands",
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wirkungssteuergesetz"
       ],
-      "examples": [],
-      "preferredUsage": "Als Instrumenten- und Reformidee kennzeichnen.",
+      "examples": [
+        "Pflegezeiten werden als Lebenswirkung sichtbar.",
+        "Bildungs- und Präventionsarbeit kann in eine Wirkungsbiografie eingehen.",
+        "Eine hohe Erwerbsbiografie bleibt anerkannt; sie wird durch Lebenswirkung ergänzt, nicht entwertet."
+      ],
+      "preferredUsage": "Der Begriff wird genutzt, wenn Altersabsicherung nicht allein an Erwerbsjahre gekoppelt werden soll, sondern auch gesellschaftliche Wirkleistung, gebrochene Erwerbsbiografien und Transformationszeiten berücksichtigt.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungsrente",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsbiografie",
+        "lebenswirkung",
+        "lebensleistung",
+        "wirkleistung",
+        "care-arbeit",
+        "pflege",
+        "bildung",
+        "gemeinwesen",
+        "praevention",
+        "wirkungsfonds",
+        "kapitalwirkung",
+        "generationenverantwortung",
+        "wirkungseinkommensteuer",
+        "wirkungseinkommenssteuer",
+        "westg",
+        "wirkungsdividende",
+        "wirkungsjahre",
+        "ehrenamt",
+        "demokratiepflege",
+        "oekologische-regeneration",
+        "automatisierung",
+        "maschinenleistung",
+        "markteinkommen",
+        "erwerbsarbeit",
+        "arbeit",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "nwi",
+        "wirkungs-bip",
+        "wirkungsgutschrift",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
         "positive-netto-wirkung",
-        "care-oekonomie",
-        "feministische-oekonomie",
-        "gender-pay-gap",
-        "gender-pension-gap",
-        "feminisierung-von-armut"
+        "netto-wirkung",
+        "transformationswirkung",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "soziale-abfederung",
+        "kaufkraftschutz",
+        "datenschutz",
+        "datenminimierung",
+        "zweckbindung",
+        "freiwilligkeit",
+        "anonymisierung",
+        "sozialkredit",
+        "personenbewertung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
       "internal_links": [],
       "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Prägungsbegriff / Renten- und Lebenswirkungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Renten- und Lebenswirkungsbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -317176,6 +319765,274 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
+      "short_definition": "Die Wirkungsrente erweitert die Rentenlogik von Erwerbsbiografie und Beitragsjahren auf Lebenswirkung, Care, Pflege, Bildung, Gemeinwesen, Prävention und demokratisches Engagement.",
+      "long_definition": "Wirkungsrente bezeichnet eine rentenpolitische Erweiterung, die Erwerbsbiografie und Beitragsjahre nicht abschafft, aber um Lebenswirkung ergänzt. Sie erkennt an, dass Pflege, Kindererziehung, Bildung, Prävention, Ehrenamt, Gemeinwesenarbeit, Demokratiepflege und ökologische Regeneration Zustände tatsächlich verändern können. Sie ist keine Bestrafung hoher Einkommen und kein moralisches Punktesystem über Menschen.",
+      "woek_einordnung": "Die Wirkungsrente übersetzt Wirkungseinkommen in die Lebenslauf- und Alterslogik: Die Wirkenden sichern die Zukunft der Wirkenden, ohne Erwerbsarbeit pauschal abzuwerten.",
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wenn Maschinen arbeiten",
+          "label": "Wenn Maschinen arbeiten",
+          "url": "https://wirkungsoekonomie.de/dokumente/wenn-maschinen-arbeiten/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Wirkungseinkommensteuer",
+          "label": "Arbeitspapier Wirkungseinkommensteuer",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-einkommen/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Arbeitspapier Rentensystem",
+          "label": "Arbeitspapier Rentensystem",
+          "url": "https://wirkungsoekonomie.de/dokumente/wp-rente/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Working-Paper Wirkungssteuergesetz",
+          "label": "Working-Paper Wirkungssteuergesetz",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungssteuergesetz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Wirkungsoekonomie in der Lieferkette",
+          "label": "Wirkungsoekonomie in der Lieferkette",
+          "url": "https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/dokumente/produktbesteuerung-durch-wirkung/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Decent Work",
+          "label": "ILO Decent Work",
+          "url": "https://www.ilo.org/topics/decent-work",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "ILO Social Protection",
+          "label": "ILO Social Protection",
+          "url": "https://www.ilo.org/topics/social-protection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Future of Work",
+          "label": "OECD Future of Work",
+          "url": "https://www.oecd.org/employment/future-of-work/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Pensions at a Glance",
+          "label": "OECD Pensions at a Glance",
+          "url": "https://www.oecd.org/pensions/pensions-at-a-glance/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD Measuring Well-being and Progress",
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Employment, Social Affairs and Inclusion",
+          "label": "European Commission Employment, Social Affairs and Inclusion",
+          "url": "https://ec.europa.eu/social/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission Corporate Sustainability Reporting",
+          "label": "European Commission Corporate Sustainability Reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "GRI Standards",
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Directive (EU) 2024/825",
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "label": "Ecodesign for Sustainable Products Regulation / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "World Bank Social Protection and Jobs",
+          "label": "World Bank Social Protection and Jobs",
+          "url": "https://www.worldbank.org/en/topic/socialprotection",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        }
+      ],
+      "relatedChapters": [
+        "Kapitel 56: Arbeit, Automatisierung und Maschinenleistung",
+        "Kapitel 57: Wirkungseinkommen",
+        "Kapitel 58: Wirkungsrente"
+      ],
+      "glossary_pack": "010",
+      "cluster": "Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+      "packStatus": "professionalisiert",
+      "conceptStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Die Wirkungsrente erweitert die Rentenlogik von Erwerbsbiografie und Beitragsjahren auf Lebenswirkung, Care, Pflege, Bildung, Gemeinwesen, Prävention und demokratisches Engagement."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Sie ergänzt Beitragsjahre um Lebenswirkung.",
+            "Sie bewertet nicht Menschen, sondern nachweisbare Wirkungsbeiträge und Schutzkontexte.",
+            "Sie ist keine Strafe für Markterfolg.",
+            "Sie braucht Datenschutz, Einspruch, Korrekturpfade und Datenqualität.",
+            "Positive Netto-Wirkung bleibt Zielgröße."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungsrente bezeichnet eine Ergänzung der Altersabsicherung um geprüfte Lebenswirkung. Relevant sind Tätigkeiten und Beiträge, die reale Zustandsveränderungen in Gesundheit, Bildung, Pflege, Gemeinwesen, Demokratie, Prävention oder ökologischer Regeneration auslösen. Wirkungspotenzial darf dabei nicht als eingetretene Wirkung dargestellt werden."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Die Wirkungsrente schließt Lücken der klassischen Erwerbsarbeitslogik. Wer pflegt, erzieht, bildet, stabilisiert oder Transformation trägt, erzeugt oft Wirkung, ohne durch Beitragsjahre ausreichend sichtbar zu werden. Gleichzeitig bleibt Erwerbsarbeit wichtig; sie wird ergänzt, nicht pauschal abgewertet."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die Wirkungsrente ist Teil der Architektur aus Grunddividende, Wirkungseinkommen, Wirkungsbonus, Wirkungsfonds und sozialer Abfederung. Sie dient Generationenverantwortung und Kaufkraftschutz im Alter."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Beitragsrente: bleibt relevant, wird aber ergänzt.",
+            "Sozialkredit: keine Bürger:innenwertung und keine Zugriffskontrolle.",
+            "Moralprämie: keine Belohnung für gute Menschen.",
+            "Rentenstrafe: hohe Einkommen oder Unternehmertum werden nicht bestraft."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Eine Angehörigenpflegephase wird als geprüfter Wirkungsbeitrag dokumentiert.",
+            "Präventionsarbeit in einer Kommune kann spätere Gesundheits- und Sozialkosten senken.",
+            "Demokratiepflege wird nicht als politische Gesinnung, sondern als institutionell nachvollziehbarer Beitrag gefasst."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mögliche Felder sind impact_pension_id, impact_biography_reference, care_periods, education_periods, prevention_contribution, civic_contribution, data_quality_class, audit_trail, privacy_classification, objection_status, correction_history und version. Daten müssen sparsam, zweckgebunden, überprüfbar und korrigierbar sein."
+        },
+        {
+          "title": "Schutzregeln",
+          "body": "Keine Personenbewertung: Eine Wirkungsrente darf nicht Lebensstile, Charakter, politische Haltung oder Menschenwürde bewerten. Rechtsschutz, Einspruch, Korrekturpfade, Datenminimierung, Zweckbindung, Anonymisierung oder Aggregation und transparente Versionierung sichern gegen Missbrauch."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkungseinkommen",
+            "Grunddividende",
+            "Wirkungsbonus",
+            "Wirkungspunkte",
+            "Wirkungsbiografie",
+            "Lebenswirkung",
+            "Care-Arbeit",
+            "Pflege",
+            "Bildung",
+            "Prävention",
+            "Wirkungsfonds"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Die neue Ordnung des Wohlstands; Arbeitspapier Rentensystem; Arbeitspapier Wirkungseinkommensteuer; Führender Begriffsleitfaden.",
+            "Externe Quellen: ILO Social Protection; OECD Pensions at a Glance; OECD Future of Work; World Bank Social Protection and Jobs."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Arbeit, Einkommen & soziale Sicherung nach Wirkung",
+            "pack: 010"
+          ]
+        }
+      ],
       "dataStandardsGroup": ""
     },
     {
