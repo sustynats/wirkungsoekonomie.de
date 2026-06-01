@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T21:35:29.601Z",
+  "generatedAt": "2026-06-01T21:44:39.367Z",
   "sourceNote": "Manuell gepflegte zentrale Term-Registry. Build-Skripte erzeugen daraus klassisches Glossar, Spezialbereiche, Begriffseiten, Hover-Begriffe und Suchindex.",
   "terms": [
     {
@@ -114064,18 +114064,36 @@
       "canonicalLabel": "Impact-Washing",
       "slug": "impact-washing",
       "aliases": [
-        "Impact-Washing"
+        "Impact-Washing",
+        "Impact Washing",
+        "Wirkungs-Washing",
+        "Wirkungssimulation",
+        "Impact-Simulation",
+        "behauptete Wirkung ohne Nachweis",
+        "Wirkungsbehauptung ohne Rückkopplung",
+        "Impact-Claim ohne Evidenz",
+        "Scheinwirkung"
       ],
       "synonyms": [
-        "Impact-Washing"
+        "Impact-Washing",
+        "Impact Washing",
+        "Wirkungs-Washing",
+        "Wirkungssimulation",
+        "Impact-Simulation",
+        "behauptete Wirkung ohne Nachweis",
+        "Wirkungsbehauptung ohne Rückkopplung",
+        "Impact-Claim ohne Evidenz",
+        "Scheinwirkung"
       ],
-      "shortDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
-      "definition": "Die WÖk begrenzt Impact-Washing durch Wirkungspfad, Datenqualität, Nicht-Kompensation, Unsicherheit und überprüfbare Rückkopplung.",
-      "longDefinition": "Die WÖk begrenzt Impact-Washing durch Wirkungspfad, Datenqualität, Nicht-Kompensation, Unsicherheit und überprüfbare Rückkopplung.",
-      "woekRelation": "Nicht jede gute Absicht als Wirkung ausgeben.",
+      "shortDefinition": "Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.",
+      "definition": "Impact-Washing bezeichnet die irreführende Darstellung, Vermarktung oder Nutzung behaupteter positiver Wirkung. Es liegt vor, wenn ein Produkt, Unternehmen, Fonds, Projekt, Programm, Gesetz, Start-up, Investment oder Kommunikationsformat als wirkungsvoll dargestellt wird, ohne dass die behauptete Wirkung belastbar nachgewiesen, methodisch eingeordnet und in Entscheidungen rückgekoppelt ist.",
+      "longDefinition": "Impact-Washing bezeichnet die irreführende Darstellung, Vermarktung oder Nutzung behaupteter positiver Wirkung. Es liegt vor, wenn ein Produkt, Unternehmen, Fonds, Projekt, Programm, Gesetz, Start-up, Investment oder Kommunikationsformat als wirkungsvoll dargestellt wird, ohne dass die behauptete Wirkung belastbar nachgewiesen, methodisch eingeordnet und in Entscheidungen rückgekoppelt ist.",
+      "woekRelation": "Impact-Washing ist zentral, weil Wirkung in der WÖk steuerungsrelevant wird. Sobald Wirkung Kapitalzugang, Steuern, Preise, Beschaffung, Reputation, Fördermittel oder Kaufentscheidungen beeinflusst, entsteht ein starker Anreiz, Wirkung zu behaupten. Ohne Missbrauchsschutz wird nicht Kapital gefälscht, sondern Wirkung.",
       "statusNote": "Nicht jede gute Absicht als Wirkung ausgeben.",
-      "usageNote": "Nicht jede gute Absicht als Wirkung ausgeben.",
+      "usageNote": "Die WÖk unterscheidet Wirkungspotenzial, Output, Outcome, Wirkung, Netto-Wirkung und Transformationswirkung. Impact-Washing entsteht, wenn diese Ebenen vermischt werden. Schutz entsteht durch Belegketten, Datenqualität, WÖk-IDs, Scorecards, NWI, T-SROI, Reverse Merit Order, Wirkungsgrenzen, Audit, Assurance, Quellenklarheit und Korrekturmöglichkeiten.",
       "categories": [
+        "Wirkung, Kommunikation & Missbrauchsschutz",
+        "Marketing-, Kommunikations- & Vertrauenslogik",
         "daten-standards-regularien",
         "kommunikation-claims-greenwashing"
       ],
@@ -114090,7 +114108,61 @@
         "datenqualitaet",
         "folgencheck",
         "green-claims-directive",
-        "responsible-marketing"
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "officialSources": [
         "EU-Kommission Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en"
@@ -114098,21 +114170,37 @@
       "pageUrl": "/begriffe/impact-washing/",
       "priority": 90,
       "status": "anschlussbegriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
-      "source": "Daten, Standards und Regularien",
-      "sourceDocument": "Glossar-Datenstandards",
-      "sourceSection": "Daten, Standards und Regularien · Kommunikation, Claims und Greenwashing",
-      "hoverDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "version": "1.1",
+      "category": "Wirkung, Kommunikation & Missbrauchsschutz",
+      "source": "Glossar-Pack 015",
+      "sourceDocument": "Glossar-Pack 015: Marketing-, Kommunikations- & Vertrauenslogik",
+      "sourceSection": "Wirkung, Kommunikation & Missbrauchsschutz",
+      "hoverDefinition": "Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.",
+      "doNotConfuseWith": [
+        "Greenwashing ist ökologische Irreführung; Impact-Washing ist breiter.",
+        "SDG-Washing kann eine spezielle Form von Impact-Washing sein.",
+        "Purpose-Washing kann Impact-Washing erzeugen.",
+        "Wirkungspotenzial ist legitim, wenn klar als Potenzial gekennzeichnet.",
+        "Geringe Wirkung ist nicht automatisch Washing; problematisch ist überhöhte Darstellung."
+      ],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands",
+        "nachhaltiges-marketing-mix",
+        "produktbesteuerung-durch-wirkung",
+        "systemmodell-der-wirkungsoekonomie",
+        "wirkungsrat-konzept"
+      ],
+      "examples": [
+        "Ein Fonds bewirbt Impact, investiert aber nur in Unternehmen mit guten ESG-Ratings, ohne reale Kapitalwirkung oder Transformationswirkung zu prüfen.",
+        "Ein Start-up behauptet, Bildung zu transformieren, zählt aber nur App-Downloads und keine Lernwirkung.",
+        "Ein Projekt meldet erreichte Menschen als Wirkung, ohne Zustandsveränderung zu prüfen."
+      ],
+      "preferredUsage": "Die WÖk unterscheidet Wirkungspotenzial, Output, Outcome, Wirkung, Netto-Wirkung und Transformationswirkung. Impact-Washing entsteht, wenn diese Ebenen vermischt werden. Schutz entsteht durch Belegketten, Datenqualität, WÖk-IDs, Scorecards, NWI, T-SROI, Reverse Merit Order, Wirkungsgrenzen, Audit, Assurance, Quellenklarheit und Korrekturmöglichkeiten.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "Impact-Washing",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "greenwashing",
         "sdg-washing",
@@ -114120,16 +114208,176 @@
         "datenqualitaet",
         "folgencheck",
         "green-claims-directive",
-        "responsible-marketing"
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
       "internal_links": [],
       "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff",
       "theme": [
         "Datenbegriff"
       ],
@@ -114160,7 +114408,259 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "conceptStatus": "professionalisiert",
+      "updatedAt": "2026-06-01",
+      "short_definition": "Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.",
+      "long_definition": "Impact-Washing bezeichnet die irreführende Darstellung, Vermarktung oder Nutzung behaupteter positiver Wirkung. Es liegt vor, wenn ein Produkt, Unternehmen, Fonds, Projekt, Programm, Gesetz, Start-up, Investment oder Kommunikationsformat als wirkungsvoll dargestellt wird, ohne dass die behauptete Wirkung belastbar nachgewiesen, methodisch eingeordnet und in Entscheidungen rückgekoppelt ist.",
+      "woek_einordnung": "Impact-Washing ist zentral, weil Wirkung in der WÖk steuerungsrelevant wird. Sobald Wirkung Kapitalzugang, Steuern, Preise, Beschaffung, Reputation, Fördermittel oder Kaufentscheidungen beeinflusst, entsteht ein starker Anreiz, Wirkung zu behaupten. Ohne Missbrauchsschutz wird nicht Kapital gefälscht, sondern Wirkung.",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
+      "glossary_pack": "015",
+      "cluster": "Marketing-, Kommunikations- & Vertrauenslogik",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Impact-Washing ist die Vermarktung guter Wirkung ohne ausreichenden Wirkungsnachweis.",
+            "Es ist breiter als Greenwashing und betrifft soziale, ökologische, gesundheitliche, demokratische oder transformative Wirkung.",
+            "Es verwechselt oft Output, Absicht, Wirkungspotenzial, Reichweite oder Einzelfälle mit Wirkung.",
+            "Es entsteht auch, wenn negative Wirkungen ausgeblendet oder durch positive Beispiele überdeckt werden.",
+            "Impact-Washing ist eine Form von Scheinleistung."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Impact-Washing bezeichnet die irreführende Darstellung, Vermarktung oder Nutzung behaupteter positiver Wirkung. Es liegt vor, wenn ein Produkt, Unternehmen, Fonds, Projekt, Programm, Gesetz, Start-up, Investment oder Kommunikationsformat als wirkungsvoll dargestellt wird, ohne dass die behauptete Wirkung belastbar nachgewiesen, methodisch eingeordnet und in Entscheidungen rückgekoppelt ist."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Impact-Washing ist zentral, weil Wirkung in der WÖk steuerungsrelevant wird. Sobald Wirkung Kapitalzugang, Steuern, Preise, Beschaffung, Reputation, Fördermittel oder Kaufentscheidungen beeinflusst, entsteht ein starker Anreiz, Wirkung zu behaupten. Ohne Missbrauchsschutz wird nicht Kapital gefälscht, sondern Wirkung."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet Wirkungspotenzial, Output, Outcome, Wirkung, Netto-Wirkung und Transformationswirkung. Impact-Washing entsteht, wenn diese Ebenen vermischt werden. Schutz entsteht durch Belegketten, Datenqualität, WÖk-IDs, Scorecards, NWI, T-SROI, Reverse Merit Order, Wirkungsgrenzen, Audit, Assurance, Quellenklarheit und Korrekturmöglichkeiten."
+        },
+        {
+          "title": "Referenzrahmen SDGs / Agenda 2030 / SDG+",
+          "body": "Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Greenwashing ist ökologische Irreführung; Impact-Washing ist breiter.",
+            "SDG-Washing kann eine spezielle Form von Impact-Washing sein.",
+            "Purpose-Washing kann Impact-Washing erzeugen.",
+            "Wirkungspotenzial ist legitim, wenn klar als Potenzial gekennzeichnet.",
+            "Geringe Wirkung ist nicht automatisch Washing; problematisch ist überhöhte Darstellung."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein Fonds bewirbt Impact, investiert aber nur in Unternehmen mit guten ESG-Ratings, ohne reale Kapitalwirkung oder Transformationswirkung zu prüfen.",
+            "Ein Start-up behauptet, Bildung zu transformieren, zählt aber nur App-Downloads und keine Lernwirkung.",
+            "Ein Projekt meldet erreichte Menschen als Wirkung, ohne Zustandsveränderung zu prüfen."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Impact-Washing-Risiken werden über Claimebene, Wirkungsstatus, Output-Outcome-Impact-Unterscheidung, Datenqualität, Systemgrenzen, negative Wirkungen, Wirkungsgrenzen, NWI, T-SROI, Transformationsnachweis, Auditstatus, Assurance-Status, Korrekturhistorie, Kapital- oder Steuerwirkung und Verbraucherwirkung geprüft. Datenqualität, Claim-Belege, Quellenklarheit, Systemgrenzen, Unsicherheit, Audit-Trail, Versionierung, Prüfbarkeit, Verbraucherinformation, Freigabeprozess, Korrekturpflicht, Datenschutz, Datenhoheit, Einsicht, Widerspruch, Rechtsschutz, Governance und Korrekturpfade sind zu sichern. Keine Personenbewertung und kein Social-Credit-Framing. Schwere Schäden dürfen nicht durch Purpose, SDG-Icons, Claims, Labels, Kampagnen, Storytelling oder positive Einzelbeispiele kompensiert werden."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "responsible-marketing",
+            "wirkungskommunikation",
+            "purpose-washing",
+            "impact-washing",
+            "sdg-washing",
+            "greenwashing",
+            "wirkungssimulation",
+            "kpi-gaming",
+            "wirkung",
+            "wirkungspotenzial",
+            "positive-netto-wirkung",
+            "netto-wirkung",
+            "transformationswirkung",
+            "wirkungsbewertung",
+            "wirkungslenkung",
+            "wirkungsrueckkopplung",
+            "wirkungsarchitektur",
+            "wirkungswahrheit",
+            "wirkungsblindheit",
+            "wirkungsgrenze",
+            "wirkungsrat",
+            "wirkungsregister",
+            "wirkungsaudit",
+            "wirkungsassurance",
+            "wirkungsindikator",
+            "woek-id",
+            "datenqualitaet",
+            "benchmark",
+            "finalscore",
+            "reverse-merit-order",
+            "produktwirkung",
+            "produktscorecard",
+            "produktdaten",
+            "digitaler-produktpass",
+            "wirkung-im-preisschild",
+            "ehrliche-preise",
+            "wirkungsgutschrift",
+            "wirkungspunkte",
+            "unternehmen-als-wirkungssystem",
+            "wirkungsorientierte-unternehmensfuehrung",
+            "wirkungscontrolling",
+            "kii",
+            "wirkungskompetenz",
+            "lieferkettenwirkung",
+            "beschaffung-als-wirkungshebel",
+            "lieferantenbewertung",
+            "cradle-to-cradle",
+            "wirkungsrisiko",
+            "wirkungsresilienz",
+            "geschaeftsmodellpruefung",
+            "transformationspfad",
+            "enterprise-risk-management-nach-wirkung",
+            "framing",
+            "vertrauen",
+            "mensch-planet-demokratie",
+            "sdgs",
+            "agenda-2030",
+            "sdg-plus"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Führender Begriffsleitfaden der Wirkungsökonomie; Die neue Ordnung des Wohlstands; Nachhaltiges Marketing-Mix; Produktbesteuerung durch Wirkung; Technische Leitlinien WUStG; Systemmodell der Wirkungsökonomie; Wirkungsrat-Konzept.",
+            "Externe Quellen: UN SDGs / Agenda 2030; EU Green Claims; Directive (EU) 2024/825; Unfair Commercial Practices Directive; CSRD / ESRS; GRI; Digital Product Passport / ESPR; OECD Guidelines; UN Global Compact; ICC Advertising and Marketing Communications Code; ISO 14020/14021/14024/14025; ISO 26000."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Marketing-, Kommunikations- & Vertrauenslogik",
+            "pack: 015"
+          ]
+        }
+      ]
     },
     {
       "id": "industrielle-dekonstruktion",
@@ -216599,6 +217099,561 @@
       "glossaryOrderKey": "Pumpspeicher"
     },
     {
+      "id": "purpose-washing",
+      "termId": "purpose-washing",
+      "label": "Purpose-Washing",
+      "canonicalLabel": "Purpose-Washing",
+      "slug": "purpose-washing",
+      "pageUrl": "/begriffe/purpose-washing/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "firstApprovedIn": "2026.1",
+      "aliases": [
+        "Purpose-Washing",
+        "Zweck-Washing",
+        "Purpose Washing",
+        "Purpose-Simulation",
+        "Sinn-Washing",
+        "Unternehmenszweck-Washing",
+        "Purpose ohne Wirkung",
+        "Purpose-Kommunikation ohne Geschäftsmodellwirkung",
+        "Mission-Washing"
+      ],
+      "synonyms": [
+        "Purpose-Washing",
+        "Zweck-Washing",
+        "Purpose Washing",
+        "Purpose-Simulation",
+        "Sinn-Washing",
+        "Unternehmenszweck-Washing",
+        "Purpose ohne Wirkung",
+        "Purpose-Kommunikation ohne Geschäftsmodellwirkung",
+        "Mission-Washing"
+      ],
+      "category": "Marketing, Unternehmenszweck & Missbrauchsschutz",
+      "categories": [
+        "Marketing, Unternehmenszweck & Missbrauchsschutz",
+        "Marketing-, Kommunikations- & Vertrauenslogik"
+      ],
+      "type": "WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff",
+      "status": "woek-praegungsbegriff",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "version": "1.1",
+      "source": "Glossar-Pack 015",
+      "sourceDocument": "Glossar-Pack 015: Marketing-, Kommunikations- & Vertrauenslogik",
+      "sourceSection": "Marketing, Unternehmenszweck & Missbrauchsschutz",
+      "reviewStatus": "redaktionell zu prüfen",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "shortDefinition": "Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt.",
+      "short_definition": "Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt.",
+      "hoverDefinition": "Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt.",
+      "definition": "Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines Unternehmenszwecks. Es liegt vor, wenn ein Unternehmen behauptet, für Gesellschaft, Nachhaltigkeit, Menschen, Planet, Demokratie, Zukunft, Teilhabe, Gesundheit oder Transformation einzustehen, diese Behauptung aber nicht im Kern des Unternehmens wirksam wird.",
+      "longDefinition": "Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines Unternehmenszwecks. Es liegt vor, wenn ein Unternehmen behauptet, für Gesellschaft, Nachhaltigkeit, Menschen, Planet, Demokratie, Zukunft, Teilhabe, Gesundheit oder Transformation einzustehen, diese Behauptung aber nicht im Kern des Unternehmens wirksam wird.",
+      "long_definition": "Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines Unternehmenszwecks. Es liegt vor, wenn ein Unternehmen behauptet, für Gesellschaft, Nachhaltigkeit, Menschen, Planet, Demokratie, Zukunft, Teilhabe, Gesundheit oder Transformation einzustehen, diese Behauptung aber nicht im Kern des Unternehmens wirksam wird.",
+      "woekRelation": "Purpose-Washing ist relevant, weil Sinn- und Verantwortungsversprechen Kund:innen, Mitarbeitende, Investor:innen und Öffentlichkeit binden können. Wenn Purpose die Transformation ersetzt, entstehen Scheinleistung, Vertrauensverlust und unfaire Reputationsvorteile gegenüber Unternehmen mit echter Wirkung.",
+      "woek_einordnung": "Purpose-Washing ist relevant, weil Sinn- und Verantwortungsversprechen Kund:innen, Mitarbeitende, Investor:innen und Öffentlichkeit binden können. Wenn Purpose die Transformation ersetzt, entstehen Scheinleistung, Vertrauensverlust und unfaire Reputationsvorteile gegenüber Unternehmen mit echter Wirkung.",
+      "usageNote": "Die WÖk prüft Purpose nicht an schönen Worten, sondern an Rückkopplung. Ein glaubwürdiger Purpose muss Wirkungsempfänger, Wirkungsraum, Produkte, WÖk-IDs, KII, Scorecards, rote Linien, Investitionen, Fortschrittsprüfung und Korrekturfolgen benennen. Purpose ist eine Wirkungsthese und muss operationalisiert werden.",
+      "preferredUsage": "Die WÖk prüft Purpose nicht an schönen Worten, sondern an Rückkopplung. Ein glaubwürdiger Purpose muss Wirkungsempfänger, Wirkungsraum, Produkte, WÖk-IDs, KII, Scorecards, rote Linien, Investitionen, Fortschrittsprüfung und Korrekturfolgen benennen. Purpose ist eine Wirkungsthese und muss operationalisiert werden.",
+      "doNotConfuseWith": [
+        "Purpose ist legitim, wenn er wirksam verankert ist.",
+        "Greenwashing betrifft ökologische Irreführung; Purpose-Washing betrifft Sinn- und Zweckbehauptung.",
+        "Impact-Washing behauptet Wirkung ohne Beleg; Purpose-Washing behauptet Sinn ohne Geschäftsmodellrückkopplung.",
+        "Fehlerhafte Transformation ist nicht automatisch Washing, wenn Daten, Korrektur und Pfad ehrlich sind.",
+        "Vision ist Zukunftsbild; Purpose muss in Gegenwartsentscheidungen wirken."
+      ],
+      "examples": [
+        "Ein fossiler Konzern kommuniziert nachhaltige Zukunft, investiert aber den Großteil seines CapEx weiter in fossile Expansion.",
+        "Ein Modeunternehmen spricht von Empowerment, während Lieferkettenlöhne, Arbeitszeiten, Wasser und Chemie kritisch bleiben.",
+        "Ein Unternehmen nennt sich purpose-driven, hat aber keine KII, kein Wirkungscontrolling und keine wirksame Board-Verantwortung."
+      ],
+      "relatedTerms": [
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "sdg-washing",
+        "greenwashing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "related_terms": [
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "sdg-washing",
+        "greenwashing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands",
+        "nachhaltiges-marketing-mix",
+        "produktbesteuerung-durch-wirkung",
+        "systemmodell-der-wirkungsoekonomie",
+        "wirkungsrat-konzept"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
+      "source_links": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
+      "glossary_pack": "015",
+      "cluster": "Marketing-, Kommunikations- & Vertrauenslogik",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Purpose-Washing ist die Entkopplung von Zweckbehauptung und tatsächlicher Unternehmenswirkung.",
+            "Es entsteht, wenn Purpose als Markenversprechen genutzt wird, ohne Geschäftsmodell, Produkte oder Anreizsysteme zu verändern.",
+            "Purpose-Washing ist breiter als Greenwashing und betrifft Sinn, Verantwortung, Gemeinwohl, Transformation, Teilhabe oder Demokratie.",
+            "Purpose kann keine Wirkungsgrenzen kompensieren.",
+            "Purpose-Washing gefährdet Vertrauen und macht echte Wirkung unglaubwürdig."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines Unternehmenszwecks. Es liegt vor, wenn ein Unternehmen behauptet, für Gesellschaft, Nachhaltigkeit, Menschen, Planet, Demokratie, Zukunft, Teilhabe, Gesundheit oder Transformation einzustehen, diese Behauptung aber nicht im Kern des Unternehmens wirksam wird."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Purpose-Washing ist relevant, weil Sinn- und Verantwortungsversprechen Kund:innen, Mitarbeitende, Investor:innen und Öffentlichkeit binden können. Wenn Purpose die Transformation ersetzt, entstehen Scheinleistung, Vertrauensverlust und unfaire Reputationsvorteile gegenüber Unternehmen mit echter Wirkung."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk prüft Purpose nicht an schönen Worten, sondern an Rückkopplung. Ein glaubwürdiger Purpose muss Wirkungsempfänger, Wirkungsraum, Produkte, WÖk-IDs, KII, Scorecards, rote Linien, Investitionen, Fortschrittsprüfung und Korrekturfolgen benennen. Purpose ist eine Wirkungsthese und muss operationalisiert werden."
+        },
+        {
+          "title": "Referenzrahmen SDGs / Agenda 2030 / SDG+",
+          "body": "Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Purpose ist legitim, wenn er wirksam verankert ist.",
+            "Greenwashing betrifft ökologische Irreführung; Purpose-Washing betrifft Sinn- und Zweckbehauptung.",
+            "Impact-Washing behauptet Wirkung ohne Beleg; Purpose-Washing behauptet Sinn ohne Geschäftsmodellrückkopplung.",
+            "Fehlerhafte Transformation ist nicht automatisch Washing, wenn Daten, Korrektur und Pfad ehrlich sind.",
+            "Vision ist Zukunftsbild; Purpose muss in Gegenwartsentscheidungen wirken."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein fossiler Konzern kommuniziert nachhaltige Zukunft, investiert aber den Großteil seines CapEx weiter in fossile Expansion.",
+            "Ein Modeunternehmen spricht von Empowerment, während Lieferkettenlöhne, Arbeitszeiten, Wasser und Chemie kritisch bleiben.",
+            "Ein Unternehmen nennt sich purpose-driven, hat aber keine KII, kein Wirkungscontrolling und keine wirksame Board-Verantwortung."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Purpose-Washing wird über Purpose-Statement, Wirkungsthese, Geschäftsmodellprüfung, Produktportfolio, Lieferkettenwirkung, CapEx, OpEx, Vergütungssystem, Marketingclaims, KII/KPI-Abgleich, NWI, T-SROI, rote Linien, Datenqualität, Auditstatus und Transformationspfad geprüft. Datenqualität, Claim-Belege, Quellenklarheit, Systemgrenzen, Unsicherheit, Audit-Trail, Versionierung, Prüfbarkeit, Verbraucherinformation, Freigabeprozess, Korrekturpflicht, Datenschutz, Datenhoheit, Einsicht, Widerspruch, Rechtsschutz, Governance und Korrekturpfade sind zu sichern. Keine Personenbewertung und kein Social-Credit-Framing. Schwere Schäden dürfen nicht durch Purpose, SDG-Icons, Claims, Labels, Kampagnen, Storytelling oder positive Einzelbeispiele kompensiert werden."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "responsible-marketing",
+            "wirkungskommunikation",
+            "purpose-washing",
+            "impact-washing",
+            "sdg-washing",
+            "greenwashing",
+            "wirkungssimulation",
+            "kpi-gaming",
+            "wirkung",
+            "wirkungspotenzial",
+            "positive-netto-wirkung",
+            "netto-wirkung",
+            "transformationswirkung",
+            "wirkungsbewertung",
+            "wirkungslenkung",
+            "wirkungsrueckkopplung",
+            "wirkungsarchitektur",
+            "wirkungswahrheit",
+            "wirkungsblindheit",
+            "wirkungsgrenze",
+            "wirkungsrat",
+            "wirkungsregister",
+            "wirkungsaudit",
+            "wirkungsassurance",
+            "wirkungsindikator",
+            "woek-id",
+            "datenqualitaet",
+            "benchmark",
+            "finalscore",
+            "reverse-merit-order",
+            "produktwirkung",
+            "produktscorecard",
+            "produktdaten",
+            "digitaler-produktpass",
+            "wirkung-im-preisschild",
+            "ehrliche-preise",
+            "wirkungsgutschrift",
+            "wirkungspunkte",
+            "unternehmen-als-wirkungssystem",
+            "wirkungsorientierte-unternehmensfuehrung",
+            "wirkungscontrolling",
+            "kii",
+            "wirkungskompetenz",
+            "lieferkettenwirkung",
+            "beschaffung-als-wirkungshebel",
+            "lieferantenbewertung",
+            "cradle-to-cradle",
+            "wirkungsrisiko",
+            "wirkungsresilienz",
+            "geschaeftsmodellpruefung",
+            "transformationspfad",
+            "enterprise-risk-management-nach-wirkung",
+            "framing",
+            "vertrauen",
+            "mensch-planet-demokratie",
+            "sdgs",
+            "agenda-2030",
+            "sdg-plus"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Führender Begriffsleitfaden der Wirkungsökonomie; Die neue Ordnung des Wohlstands; Nachhaltiges Marketing-Mix; Produktbesteuerung durch Wirkung; Technische Leitlinien WUStG; Systemmodell der Wirkungsökonomie; Wirkungsrat-Konzept.",
+            "Externe Quellen: UN SDGs / Agenda 2030; EU Green Claims; Directive (EU) 2024/825; Unfair Commercial Practices Directive; CSRD / ESRS; GRI; Digital Product Passport / ESPR; OECD Guidelines; UN Global Compact; ICC Advertising and Marketing Communications Code; ISO 14020/14021/14024/14025; ISO 26000."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Marketing-, Kommunikations- & Vertrauenslogik",
+            "pack: 015"
+          ]
+        }
+      ]
+    },
+    {
       "id": "pyrometallurgie",
       "termId": "pyrometallurgie",
       "label": "Pyrometallurgie",
@@ -236777,22 +237832,33 @@
         "Responsible Marketing",
         "verantwortliches Marketing",
         "wirkungsorientiertes Marketing",
-        "responsible advertising",
-        "verantwortliche Produktkommunikation",
-        "Marketingverantwortung"
+        "Marketing nach Wirkung",
+        "Impact Marketing",
+        "verantwortliche Wirkungskommunikation",
+        "WÖk-Marketing",
+        "Marketing mit Wirkungswahrheit",
+        "Responsible Impact Marketing"
       ],
       "synonyms": [
         "Responsible Marketing",
         "verantwortliches Marketing",
-        "wirkungsorientiertes Marketing"
+        "wirkungsorientiertes Marketing",
+        "Marketing nach Wirkung",
+        "Impact Marketing",
+        "verantwortliche Wirkungskommunikation",
+        "WÖk-Marketing",
+        "Marketing mit Wirkungswahrheit",
+        "Responsible Impact Marketing"
       ],
-      "shortDefinition": "Responsible Marketing ist Marketing, das Reichweite, Claims, Zielgruppen, Daten und Produktversprechen an überprüfbare Wirkung und faire Information bindet.",
-      "definition": "Responsible Marketing bedeutet, dass Marketing nicht nur Aufmerksamkeit erzeugt, sondern Aussagen belegt, Zielgruppen schützt und soziale, ökologische und demokratische Wirkungen mitdenkt.",
-      "longDefinition": "Responsible Marketing bezeichnet eine Marketingpraxis, die Absatz, Aufmerksamkeit und Markenführung mit Verantwortung für tatsächliche Produkt- und Kommunikationswirkungen verbindet. Es prüft, ob Versprechen belegbar sind, ob Zielgruppen fair adressiert werden, ob Greenwashing vermieden wird und ob Produktdaten eine belastbare Grundlage für Claims bilden.",
-      "woekRelation": "In der Wirkungsökonomie ist Responsible Marketing ein Praxisfeld der Wirkungslenkung: Kommunikation soll keine Scheinwirkung erzeugen, sondern real prüfbare Wirkung verständlich machen.",
+      "shortDefinition": "Responsible Marketing ist Marketing, das Produkte, Marken und Wirkungsclaims wahrheitsfähig, prüfbar und verantwortungsvoll kommuniziert und Nachfrage in Richtung positiver Netto-Wirkung unterstützt.",
+      "definition": "Responsible Marketing bezeichnet eine Marketinglogik, die Kommunikation, Produktgestaltung, Preis, Vertrieb, Kundennutzen und Wirkung zusammenführt. Es fragt nicht nur, wie ein Produkt verkauft wird, sondern welche Wirkungen durch das Marketing selbst entstehen: auf Kaufentscheidungen, Vertrauen, Konsumverhalten, Produktwahrnehmung, Nachfrage, soziale Normen, Markttransformation und demokratische Öffentlichkeit.",
+      "longDefinition": "Responsible Marketing bezeichnet eine Marketinglogik, die Kommunikation, Produktgestaltung, Preis, Vertrieb, Kundennutzen und Wirkung zusammenführt. Es fragt nicht nur, wie ein Produkt verkauft wird, sondern welche Wirkungen durch das Marketing selbst entstehen: auf Kaufentscheidungen, Vertrauen, Konsumverhalten, Produktwahrnehmung, Nachfrage, soziale Normen, Markttransformation und demokratische Öffentlichkeit.",
+      "woekRelation": "Responsible Marketing ist zentral, weil Marketing Nachfrage formt. Märkte entstehen auch durch Bilder, Versprechen, Sprache, Framing, Platzierung, Preispsychologie, Claims und Storytelling. Wenn Marketing Wirkung falsch darstellt, wird der Markt wirkungsblind und Entscheidungen folgen Image statt Wirklichkeit.",
       "statusNote": "",
-      "usageNote": "Responsible Marketing ist keine moralische Selbstauszeichnung. Es braucht belegbare Daten, klare Grenzen für Claims und Korrekturmechanismen.",
+      "usageNote": "Aus WÖk-Sicht ist Responsible Marketing eine Form der Wirkungslenkung. Es soll nicht moralisch erziehen, sondern bessere Informationen und bessere Anreize schaffen. Es arbeitet mit Produktdaten statt Produktimage, DPP, Produktscorecard, Claim-zu-Daten-Mapping, Verständlichkeit, Quellenklarheit, Korrekturpflicht, Auditierbarkeit und Wirkung im Preisschild.",
       "categories": [
+        "Marketing, Kommunikation & Verbraucherinformation",
+        "Marketing-, Kommunikations- & Vertrauenslogik",
         "glossar",
         "daten-standards-regularien",
         "kommunikation-claims-greenwashing"
@@ -236822,7 +237888,53 @@
         "sdg-14",
         "sdg-15",
         "mensch-planet-demokratie",
-        "empowering-consumers-green-transition"
+        "empowering-consumers-green-transition",
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "officialSources": [
         "EU Green Claims|https://environment.ec.europa.eu/topics/circular-economy/green-claims_en",
@@ -236839,15 +237951,17 @@
       "priority": 170,
       "status": "anschlussbegriff",
       "version": "1.1",
-      "category": "Datenbegriff",
-      "source": "Kommunikation und Greenwashing",
-      "sourceDocument": "Glossar-Pack 001: Marketing & Produktwirkung",
-      "sourceSection": "Professionalisiertes Glossar-Pack 001",
-      "hoverDefinition": "Responsible Marketing bedeutet, Produkte und Angebote so zu kommunizieren, dass Claims belegbar, Zielgruppen nicht manipulativ ausgenutzt und Wirkungen transparent gemacht werden.",
+      "category": "Marketing, Kommunikation & Verbraucherinformation",
+      "source": "Glossar-Pack 015",
+      "sourceDocument": "Glossar-Pack 015: Marketing-, Kommunikations- & Vertrauenslogik",
+      "sourceSection": "Marketing, Kommunikation & Verbraucherinformation",
+      "hoverDefinition": "Responsible Marketing ist Marketing, das Produkte, Marken und Wirkungsclaims wahrheitsfähig, prüfbar und verantwortungsvoll kommuniziert und Nachfrage in Richtung positiver Netto-Wirkung unterstützt.",
       "doNotConfuseWith": [
-        "Nicht gleichsetzen mit Imagepflege oder Purpose-Kommunikation.",
-        "Nicht auf ökologische Claims beschränken; soziale und demokratische Wirkungen zählen mit.",
-        "Nicht als Bewertung einzelner Konsument:innen verstehen."
+        "Nachhaltigkeitswerbung kann Teil sein, reicht aber ohne Daten und Rückkopplung nicht aus.",
+        "Green Marketing ist oft ökologisch fokussiert; Responsible Marketing umfasst Mensch, Planet und Demokratie.",
+        "Purpose-Kommunikation kann Orientierung geben, muss aber am Geschäftsmodell geprüft werden.",
+        "Wirkungskommunikation ist die konkrete Kommunikation über Wirkung; Responsible Marketing ist die umfassendere Marketinglogik.",
+        "Verbraucherbelehrung: Responsible Marketing soll befähigen, nicht beschämen."
       ],
       "relatedDocuments": [
         {
@@ -236861,12 +237975,21 @@
         {
           "label": "Referenz / Online-Buch",
           "href": "../../referenz/"
-        }
+        },
+        "die-neue-ordnung-des-wohlstands",
+        "nachhaltiges-marketing-mix",
+        "produktbesteuerung-durch-wirkung",
+        "systemmodell-der-wirkungsoekonomie",
+        "wirkungsrat-konzept"
       ],
-      "examples": [],
-      "preferredUsage": "Der Begriff wird als Anschlussbegriff genutzt, um Marketing an Wirkungswahrheit, Produktdaten, Verbraucher:innenschutz und positive Netto-Wirkung zu binden.",
+      "examples": [
+        "Ein Lebensmittelhändler zeigt Produktscore, Datenqualität, schwächstes Wirkungsfeld und Produktpass statt nur ein Nachhaltigkeitslabel.",
+        "Ein Modeunternehmen bewirbt kein conscious Label, wenn Lieferkettenarbeit, Wasser und Chemie nur teilweise belegt sind.",
+        "Ein Unternehmen nutzt SDGs nur dort, wo konkrete Wirkungsdaten, Ziele, Maßnahmen, Fortschritt und Rückkopplung vorliegen."
+      ],
+      "preferredUsage": "Aus WÖk-Sicht ist Responsible Marketing eine Form der Wirkungslenkung. Es soll nicht moralisch erziehen, sondern bessere Informationen und bessere Anreize schaffen. Es arbeitet mit Produktdaten statt Produktimage, DPP, Produktscorecard, Claim-zu-Daten-Mapping, Verständlichkeit, Quellenklarheit, Korrekturpflicht, Auditierbarkeit und Wirkung im Preisschild.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "responsible marketing",
       "firstApprovedIn": "2026.2",
       "lastUpdated": "2026-06-01",
@@ -236874,16 +237997,185 @@
         "greenwashing",
         "impact-washing",
         "green-claims-directive",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "empowering-consumers-green-transition",
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
       "internal_links": [],
       "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "Anschlussbegriff / WÖk-Präzisierung",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
       "theme": [
         "Datenbegriff"
       ],
@@ -236916,8 +238208,8 @@
       "blindSpot": "",
       "blind_spot": "",
       "glossaryPack": "001",
-      "glossary_pack": "001",
-      "cluster": "Marketing & Produktwirkung",
+      "glossary_pack": "015",
+      "cluster": "Marketing-, Kommunikations- & Vertrauenslogik",
       "packStatus": "professionalisiert",
       "review_status": "redaktionell zu prüfen",
       "language": "de",
@@ -236927,70 +238219,109 @@
       "quality_level": "deep_glossary_entry",
       "sourceLinks": [
         {
-          "title": "Wirkungsökonomie Glossar",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "sourceType": "interne Quelle",
-          "status": "Begriffsbestand"
-        },
-        {
-          "title": "Wirkungsökonomie Begriffsleitfaden",
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
           "url": "https://wirkungsoekonomie.de/referenz/",
           "sourceType": "interne Quelle",
-          "status": "Leitlinie"
+          "status": "Projektquelle"
         },
         {
-          "title": "Wirkungsfelder Produkte und Konsum",
-          "url": "https://wirkungsoekonomie.de/wirkungsfelder/produkte-konsum/",
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
           "sourceType": "interne Quelle",
-          "status": "Anwendungskontext"
+          "status": "Projektquelle"
         },
         {
-          "title": "UN Sustainable Development Goals",
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
           "url": "https://sdgs.un.org/goals",
           "sourceType": "externe Quelle",
-          "status": "Referenzrahmen"
+          "status": "Referenz"
         },
         {
-          "title": "European Commission: Corporate sustainability reporting",
-          "url": "https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
           "sourceType": "externe Quelle",
-          "status": "Regulatorischer Kontext"
+          "status": "Referenz"
         },
         {
-          "title": "EFRAG: ESRS",
-          "url": "https://www.efrag.org/lab6",
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
           "sourceType": "externe Quelle",
-          "status": "Standardkontext"
+          "status": "Referenz"
         },
         {
-          "title": "GRI Standards",
-          "url": "https://www.globalreporting.org/standards/",
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
           "sourceType": "externe Quelle",
-          "status": "Standardkontext"
+          "status": "Referenz"
         },
         {
-          "title": "European Commission: Ecodesign for Sustainable Products Regulation",
-          "url": "https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en",
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
           "sourceType": "externe Quelle",
-          "status": "Produktdaten/DPP"
+          "status": "Referenz"
         },
         {
-          "title": "European Commission: Green Claims",
-          "url": "https://environment.ec.europa.eu/topics/circular-economy/green-claims_en",
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
           "sourceType": "externe Quelle",
-          "status": "Claims-Kontext"
+          "status": "Referenz"
         },
         {
-          "title": "Directive (EU) 2024/825 on empowering consumers for the green transition",
-          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj",
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
           "sourceType": "externe Quelle",
-          "status": "Rechtsrahmen"
+          "status": "Referenz"
         },
         {
-          "title": "ESMA: Progress Report on Greenwashing",
-          "url": "https://www.esma.europa.eu/document/progress-report-greenwashing",
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
           "sourceType": "externe Quelle",
-          "status": "Finanzmarkt-Kontext"
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
         }
       ],
       "relatedImpactFields": [
@@ -237012,81 +238343,141 @@
       "deepGlossarySections": [
         {
           "title": "Kurzdefinition / Hover",
-          "body": "Responsible Marketing verbindet Marketing mit belegbarer Wirkung, fairer Kommunikation und verantwortlicher Produktinformation."
+          "body": "Responsible Marketing ist Marketing, das Produkte, Marken und Wirkungsclaims wahrheitsfähig, prüfbar und verantwortungsvoll kommuniziert und Nachfrage in Richtung positiver Netto-Wirkung unterstützt."
         },
         {
           "title": "Auf einen Blick",
           "items": [
-            "Claims müssen überprüfbar und verständlich sein.",
-            "Produktdaten bilden die Grundlage für Wirkungsaussagen.",
-            "Ziel ist informierte Entscheidung statt manipulativer Wirkung.",
-            "Der Begriff umfasst ökologische, soziale und demokratische Folgen."
+            "Responsible Marketing ist mehr als nachhaltige Werbung.",
+            "Es bewirbt nicht Image, sondern belegbare Produkt-, Lieferketten- und Organisationswirkung.",
+            "Es schützt Verbraucher:innen vor Greenwashing, Impact-Washing, Purpose-Washing und SDG-Washing.",
+            "Es überfordert Verbraucher:innen nicht moralisch, sondern macht Wirkung verständlich.",
+            "Marketing ist ein Wirkungshebel: Es kann Nachfrage, Normen, Konsummuster, Vertrauen und Märkte verändern."
           ]
         },
         {
           "title": "Hauptdefinition",
-          "body": "Responsible Marketing ist eine Marketing- und Kommunikationspraxis, die nicht nur Absatz und Aufmerksamkeit optimiert, sondern die Wirkungen von Botschaften, Daten, Zielgruppenansprache und Produktversprechen berücksichtigt. Es fragt, ob Aussagen belegbar sind, ob Unsicherheit sichtbar bleibt, ob vulnerable Gruppen geschützt werden und ob Produktkommunikation zu positiver Netto-Wirkung beiträgt."
+          "body": "Responsible Marketing bezeichnet eine Marketinglogik, die Kommunikation, Produktgestaltung, Preis, Vertrieb, Kundennutzen und Wirkung zusammenführt. Es fragt nicht nur, wie ein Produkt verkauft wird, sondern welche Wirkungen durch das Marketing selbst entstehen: auf Kaufentscheidungen, Vertrauen, Konsumverhalten, Produktwahrnehmung, Nachfrage, soziale Normen, Markttransformation und demokratische Öffentlichkeit."
         },
         {
           "title": "Wirkungsökonomische Relevanz",
-          "body": "Marketing kann nachhaltige Nachfrage stärken, aber auch Scheinwirkung, Überkonsum, Desinformation oder Greenwashing erzeugen. Responsible Marketing macht diese Wirkungsebene steuerbar und verbindet Kommunikation mit Produktdaten, Verbraucher:innenschutz und demokratischer Öffentlichkeit."
+          "body": "Responsible Marketing ist zentral, weil Marketing Nachfrage formt. Märkte entstehen auch durch Bilder, Versprechen, Sprache, Framing, Platzierung, Preispsychologie, Claims und Storytelling. Wenn Marketing Wirkung falsch darstellt, wird der Markt wirkungsblind und Entscheidungen folgen Image statt Wirklichkeit."
         },
         {
           "title": "Wirkungsökonomische Sicht & Einordnung",
-          "body": "WÖk betrachtet Marketing als Wirkungsraum. Wirkung ist neutral und relational; entscheidend sind tatsächliche Zustandsveränderungen. Responsible Marketing ist daher kein gutes Gefühl, sondern ein System aus Daten, Claims, Grenzen, Korrekturen und Rückkopplungen."
+          "body": "Aus WÖk-Sicht ist Responsible Marketing eine Form der Wirkungslenkung. Es soll nicht moralisch erziehen, sondern bessere Informationen und bessere Anreize schaffen. Es arbeitet mit Produktdaten statt Produktimage, DPP, Produktscorecard, Claim-zu-Daten-Mapping, Verständlichkeit, Quellenklarheit, Korrekturpflicht, Auditierbarkeit und Wirkung im Preisschild."
         },
         {
-          "title": "Abgrenzung",
+          "title": "Referenzrahmen SDGs / Agenda 2030 / SDG+",
+          "body": "Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
           "items": [
-            "Greenwashing beschreibt die Irreführung; Responsible Marketing beschreibt die präventive Gegenpraxis.",
-            "Das fünfte P = Planet erweitert den Marketing-Mix; Responsible Marketing beschreibt die verantwortliche Kommunikations- und Steuerungspraxis.",
-            "Wirkungswahrheit verlangt Stimmigkeit zwischen Claim, Daten und tatsächlicher Veränderung."
+            "Nachhaltigkeitswerbung kann Teil sein, reicht aber ohne Daten und Rückkopplung nicht aus.",
+            "Green Marketing ist oft ökologisch fokussiert; Responsible Marketing umfasst Mensch, Planet und Demokratie.",
+            "Purpose-Kommunikation kann Orientierung geben, muss aber am Geschäftsmodell geprüft werden.",
+            "Wirkungskommunikation ist die konkrete Kommunikation über Wirkung; Responsible Marketing ist die umfassendere Marketinglogik.",
+            "Verbraucherbelehrung: Responsible Marketing soll befähigen, nicht beschämen."
           ]
         },
         {
           "title": "Beispiele",
           "items": [
-            "Ein Unternehmen nennt für einen Klimaclaim Scope, Zeitraum, Methode und Restemissionen.",
-            "Eine Kampagne vermeidet künstliche Verknappung, wenn sie vulnerable Gruppen zu riskanten Käufen drängt.",
-            "Produktkommunikation verweist auf reparierbare Komponenten und reale Lebensdauer statt nur auf grüne Bilder."
+            "Ein Lebensmittelhändler zeigt Produktscore, Datenqualität, schwächstes Wirkungsfeld und Produktpass statt nur ein Nachhaltigkeitslabel.",
+            "Ein Modeunternehmen bewirbt kein conscious Label, wenn Lieferkettenarbeit, Wasser und Chemie nur teilweise belegt sind.",
+            "Ein Unternehmen nutzt SDGs nur dort, wo konkrete Wirkungsdaten, Ziele, Maßnahmen, Fortschritt und Rückkopplung vorliegen."
           ]
         },
         {
           "title": "Mess- und Steuerungsbezug",
-          "body": "Messbezug entsteht über Claim-Prüfung, Produktdaten, Beschwerde- und Korrekturprozesse, Zielgruppen-Risikoanalyse, Medienwirkungscheck, Green-Claims-Konformität und Produktscorecards."
+          "body": "Responsible Marketing braucht Claim-Governance, Claim-zu-Daten-Mapping, Produktdaten, Produktscorecard, DPP-Verknüpfung, FinalScore, Datenqualitätsklasse, Wirkungsregisterbezug, Wirkungsaudit oder Assurance bei relevanten Claims, Freigabeprozess, Korrekturprozess, Kund:innenverständlichkeit, Barrierefreiheit und Risikoanalysen zu Greenwashing, Impact-Washing, Purpose-Washing und SDG-Washing. Datenqualität, Claim-Belege, Quellenklarheit, Systemgrenzen, Unsicherheit, Audit-Trail, Versionierung, Prüfbarkeit, Verbraucherinformation, Freigabeprozess, Korrekturpflicht, Datenschutz, Datenhoheit, Einsicht, Widerspruch, Rechtsschutz, Governance und Korrekturpfade sind zu sichern. Keine Personenbewertung und kein Social-Credit-Framing. Schwere Schäden dürfen nicht durch Purpose, SDG-Icons, Claims, Labels, Kampagnen, Storytelling oder positive Einzelbeispiele kompensiert werden."
         },
         {
-          "title": "Querverweise",
+          "title": "Querverweise im Glossar",
           "items": [
-            "5. P = Planet",
-            "Greenwashing",
-            "Produktdaten",
-            "Wirkungswahrheit",
-            "Produktwirkung",
-            "Green Claims Directive",
-            "Positive Netto-Wirkung"
+            "responsible-marketing",
+            "wirkungskommunikation",
+            "purpose-washing",
+            "impact-washing",
+            "sdg-washing",
+            "greenwashing",
+            "wirkungssimulation",
+            "kpi-gaming",
+            "wirkung",
+            "wirkungspotenzial",
+            "positive-netto-wirkung",
+            "netto-wirkung",
+            "transformationswirkung",
+            "wirkungsbewertung",
+            "wirkungslenkung",
+            "wirkungsrueckkopplung",
+            "wirkungsarchitektur",
+            "wirkungswahrheit",
+            "wirkungsblindheit",
+            "wirkungsgrenze",
+            "wirkungsrat",
+            "wirkungsregister",
+            "wirkungsaudit",
+            "wirkungsassurance",
+            "wirkungsindikator",
+            "woek-id",
+            "datenqualitaet",
+            "benchmark",
+            "finalscore",
+            "reverse-merit-order",
+            "produktwirkung",
+            "produktscorecard",
+            "produktdaten",
+            "digitaler-produktpass",
+            "wirkung-im-preisschild",
+            "ehrliche-preise",
+            "wirkungsgutschrift",
+            "wirkungspunkte",
+            "unternehmen-als-wirkungssystem",
+            "wirkungsorientierte-unternehmensfuehrung",
+            "wirkungscontrolling",
+            "kii",
+            "wirkungskompetenz",
+            "lieferkettenwirkung",
+            "beschaffung-als-wirkungshebel",
+            "lieferantenbewertung",
+            "cradle-to-cradle",
+            "wirkungsrisiko",
+            "wirkungsresilienz",
+            "geschaeftsmodellpruefung",
+            "transformationspfad",
+            "enterprise-risk-management-nach-wirkung",
+            "framing",
+            "vertrauen",
+            "mensch-planet-demokratie",
+            "sdgs",
+            "agenda-2030",
+            "sdg-plus"
           ]
         },
         {
           "title": "Quellenbasis",
-          "body": "Interne Quellen: Glossar, Begriffsleitfaden, Produkte & Konsum. Externe Quellen: EU Green Claims, Directive (EU) 2024/825, ESMA Greenwashing, GRI, ESRS und UN SDGs."
+          "items": [
+            "Interne Quellen: Führender Begriffsleitfaden der Wirkungsökonomie; Die neue Ordnung des Wohlstands; Nachhaltiges Marketing-Mix; Produktbesteuerung durch Wirkung; Technische Leitlinien WUStG; Systemmodell der Wirkungsökonomie; Wirkungsrat-Konzept.",
+            "Externe Quellen: UN SDGs / Agenda 2030; EU Green Claims; Directive (EU) 2024/825; Unfair Commercial Practices Directive; CSRD / ESRS; GRI; Digital Product Passport / ESPR; OECD Guidelines; UN Global Compact; ICC Advertising and Marketing Communications Code; ISO 14020/14021/14024/14025; ISO 26000."
+          ]
         },
         {
           "title": "Redaktionelle Metadaten",
           "items": [
-            "Glossar-Pack: 001",
-            "Cluster: Marketing & Produktwirkung",
-            "Version: 1.1",
-            "Status: professionalisiert",
-            "Review-Status: redaktionell zu prüfen",
-            "Sprache: de",
-            "Primäre Begriffseite: ja",
-            "No-Delete: ja",
-            "Aktualisiert durch: codex",
-            "Qualitätsniveau: deep_glossary_entry"
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Marketing-, Kommunikations- & Vertrauenslogik",
+            "pack: 015"
           ]
         }
-      ]
+      ],
+      "conceptStatus": "professionalisiert",
+      "updatedAt": "2026-06-01",
+      "short_definition": "Responsible Marketing ist Marketing, das Produkte, Marken und Wirkungsclaims wahrheitsfähig, prüfbar und verantwortungsvoll kommuniziert und Nachfrage in Richtung positiver Netto-Wirkung unterstützt.",
+      "long_definition": "Responsible Marketing bezeichnet eine Marketinglogik, die Kommunikation, Produktgestaltung, Preis, Vertrieb, Kundennutzen und Wirkung zusammenführt. Es fragt nicht nur, wie ein Produkt verkauft wird, sondern welche Wirkungen durch das Marketing selbst entstehen: auf Kaufentscheidungen, Vertrauen, Konsumverhalten, Produktwahrnehmung, Nachfrage, soziale Normen, Markttransformation und demokratische Öffentlichkeit.",
+      "woek_einordnung": "Responsible Marketing ist zentral, weil Marketing Nachfrage formt. Märkte entstehen auch durch Bilder, Versprechen, Sprache, Framing, Platzierung, Preispsychologie, Claims und Storytelling. Wenn Marketing Wirkung falsch darstellt, wird der Markt wirkungsblind und Entscheidungen folgen Image statt Wirklichkeit."
     },
     {
       "id": "responsivitaet",
@@ -248083,18 +249474,36 @@
       "canonicalLabel": "SDG-Washing",
       "slug": "sdg-washing",
       "aliases": [
-        "SDG-Washing"
+        "SDG-Washing",
+        "SDG Washing",
+        "SDG-Symbolik ohne Wirkung",
+        "SDG-Logo-Washing",
+        "Zielsymbolik ohne Rückkopplung",
+        "SDG-Claim ohne Daten",
+        "SDG-Icon-Washing",
+        "SDG-Kommunikation ohne Wirkungsnachweis",
+        "Agenda-2030-Washing"
       ],
       "synonyms": [
-        "SDG-Washing"
+        "SDG-Washing",
+        "SDG Washing",
+        "SDG-Symbolik ohne Wirkung",
+        "SDG-Logo-Washing",
+        "Zielsymbolik ohne Rückkopplung",
+        "SDG-Claim ohne Daten",
+        "SDG-Icon-Washing",
+        "SDG-Kommunikation ohne Wirkungsnachweis",
+        "Agenda-2030-Washing"
       ],
-      "shortDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
-      "definition": "Die WÖk nutzt SDGs nicht als Logo-Sammlung, sondern als Referenzrahmen für Wirkung, Nebenwirkungen und Rückkopplung.",
-      "longDefinition": "Die WÖk nutzt SDGs nicht als Logo-Sammlung, sondern als Referenzrahmen für Wirkung, Nebenwirkungen und Rückkopplung.",
-      "woekRelation": "SDG-Bezug immer mit Wirkungspfad und Daten belegen.",
+      "shortDefinition": "SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.",
+      "definition": "SDG-Washing bezeichnet die irreführende oder substanzarme Verwendung der Sustainable Development Goals. Es liegt vor, wenn Organisationen, Produkte, Projekte, Fonds, Kampagnen, politische Programme oder Berichte SDGs, SDG-Icons, Agenda-2030-Sprache oder globale Zielsymbolik nutzen, ohne belegbar zu zeigen, wie sie zu konkreten Unterzielen, Indikatoren und Wirkungen beitragen.",
+      "longDefinition": "SDG-Washing bezeichnet die irreführende oder substanzarme Verwendung der Sustainable Development Goals. Es liegt vor, wenn Organisationen, Produkte, Projekte, Fonds, Kampagnen, politische Programme oder Berichte SDGs, SDG-Icons, Agenda-2030-Sprache oder globale Zielsymbolik nutzen, ohne belegbar zu zeigen, wie sie zu konkreten Unterzielen, Indikatoren und Wirkungen beitragen.",
+      "woekRelation": "SDG-Washing ist relevant, weil die WÖk die SDGs als global anschlussfähigen Referenzrahmen nutzt. Wenn SDGs inflationär oder dekorativ verwendet werden, verlieren sie Steuerungskraft. Aus einem Zielrahmen wird dann Markenästhetik.",
       "statusNote": "SDG-Bezug immer mit Wirkungspfad und Daten belegen.",
-      "usageNote": "SDG-Bezug immer mit Wirkungspfad und Daten belegen.",
+      "usageNote": "Aus WÖk-Sicht ist SDG-Kommunikation nur belastbar, wenn sie von Symbolik zu Steuerung übergeht: SDG wählen, Target benennen, Indikator oder WÖk-ID zuordnen, Wirkungsgegenstand definieren, Baseline, Messwert, Benchmark und Datenqualität zeigen, negative Wirkungen prüfen und Ergebnis in Entscheidungen rückkoppeln. SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie.",
       "categories": [
+        "SDGs, Kommunikation & Missbrauchsschutz",
+        "Marketing-, Kommunikations- & Vertrauenslogik",
         "daten-standards-regularien",
         "kommunikation-claims-greenwashing"
       ],
@@ -248106,7 +249515,61 @@
         "sdgs",
         "sdg-plus",
         "greenwashing",
-        "impact-washing"
+        "impact-washing",
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "agenda-2030"
       ],
       "officialSources": [
         "United Nations SDGs|https://sdgs.un.org/goals"
@@ -248114,35 +249577,211 @@
       "pageUrl": "/begriffe/sdg-washing/",
       "priority": 91,
       "status": "anschlussbegriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
-      "source": "Daten, Standards und Regularien",
-      "sourceDocument": "Glossar-Datenstandards",
-      "sourceSection": "Daten, Standards und Regularien · Kommunikation, Claims und Greenwashing",
-      "hoverDefinition": "SDG-Washing bezeichnet die dekorative Nutzung von SDGs, ohne nachweisbare Wirkung oder Zielkonflikte offenzulegen.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "version": "1.1",
+      "category": "SDGs, Kommunikation & Missbrauchsschutz",
+      "source": "Glossar-Pack 015",
+      "sourceDocument": "Glossar-Pack 015: Marketing-, Kommunikations- & Vertrauenslogik",
+      "sourceSection": "SDGs, Kommunikation & Missbrauchsschutz",
+      "hoverDefinition": "SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.",
+      "doNotConfuseWith": [
+        "SDG-Kommunikation ist legitim, wenn sie konkret und belegt ist.",
+        "SDG-Mapping ist noch kein Wirkungsnachweis.",
+        "Impact-Washing ist breiter; SDG-Washing ist eine spezielle Form mit Zielsymbolik.",
+        "SDG-Bezug ist thematische Nähe; Wirkung braucht Daten.",
+        "SDG+ ist legitim, wenn es als WÖk-Erweiterung benannt und nicht als UN-Standard ausgegeben wird."
+      ],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands",
+        "nachhaltiges-marketing-mix",
+        "produktbesteuerung-durch-wirkung",
+        "systemmodell-der-wirkungsoekonomie",
+        "wirkungsrat-konzept"
+      ],
+      "examples": [
+        "Ein Unternehmen klebt alle 17 SDG-Icons auf seinen Bericht, ohne Targets, Indikatoren oder Fortschritt auszuweisen.",
+        "Ein Fonds bewirbt SDG 13, investiert aber in Unternehmen ohne belegte Emissionsreduktion oder Transformationspfad.",
+        "Eine Kommune ordnet Haushaltspositionen SDGs zu, prüft aber keine Zustandsveränderung und keinen Wirkungshaushalt."
+      ],
+      "preferredUsage": "Aus WÖk-Sicht ist SDG-Kommunikation nur belastbar, wenn sie von Symbolik zu Steuerung übergeht: SDG wählen, Target benennen, Indikator oder WÖk-ID zuordnen, Wirkungsgegenstand definieren, Baseline, Messwert, Benchmark und Datenqualität zeigen, negative Wirkungen prüfen und Ergebnis in Entscheidungen rückkoppeln. SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "SDG-Washing",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "sdgs",
         "sdg-plus",
         "greenwashing",
-        "impact-washing"
+        "impact-washing",
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "agenda-2030"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
       "internal_links": [],
       "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff",
       "theme": [
         "Datenbegriff"
       ],
@@ -248173,7 +249812,259 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "conceptStatus": "professionalisiert",
+      "updatedAt": "2026-06-01",
+      "short_definition": "SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.",
+      "long_definition": "SDG-Washing bezeichnet die irreführende oder substanzarme Verwendung der Sustainable Development Goals. Es liegt vor, wenn Organisationen, Produkte, Projekte, Fonds, Kampagnen, politische Programme oder Berichte SDGs, SDG-Icons, Agenda-2030-Sprache oder globale Zielsymbolik nutzen, ohne belegbar zu zeigen, wie sie zu konkreten Unterzielen, Indikatoren und Wirkungen beitragen.",
+      "woek_einordnung": "SDG-Washing ist relevant, weil die WÖk die SDGs als global anschlussfähigen Referenzrahmen nutzt. Wenn SDGs inflationär oder dekorativ verwendet werden, verlieren sie Steuerungskraft. Aus einem Zielrahmen wird dann Markenästhetik.",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
+      "glossary_pack": "015",
+      "cluster": "Marketing-, Kommunikations- & Vertrauenslogik",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "SDG-Washing ist mehr als die falsche Nutzung bunter SDG-Logos.",
+            "Es liegt vor, wenn SDGs als Symbolik, Legitimation oder Dekoration ohne Ziel-, Indikator- und Wirkungsbeziehung verwendet werden.",
+            "Ein SDG-Bezug braucht Target, Indikator, Datenquelle, Wirkungspfad, Datenqualität und Rückkopplung.",
+            "Es verwechselt oft Themenbezug mit Wirkung.",
+            "SDG-Washing beschädigt die Glaubwürdigkeit der Agenda 2030."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "SDG-Washing bezeichnet die irreführende oder substanzarme Verwendung der Sustainable Development Goals. Es liegt vor, wenn Organisationen, Produkte, Projekte, Fonds, Kampagnen, politische Programme oder Berichte SDGs, SDG-Icons, Agenda-2030-Sprache oder globale Zielsymbolik nutzen, ohne belegbar zu zeigen, wie sie zu konkreten Unterzielen, Indikatoren und Wirkungen beitragen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "SDG-Washing ist relevant, weil die WÖk die SDGs als global anschlussfähigen Referenzrahmen nutzt. Wenn SDGs inflationär oder dekorativ verwendet werden, verlieren sie Steuerungskraft. Aus einem Zielrahmen wird dann Markenästhetik."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist SDG-Kommunikation nur belastbar, wenn sie von Symbolik zu Steuerung übergeht: SDG wählen, Target benennen, Indikator oder WÖk-ID zuordnen, Wirkungsgegenstand definieren, Baseline, Messwert, Benchmark und Datenqualität zeigen, negative Wirkungen prüfen und Ergebnis in Entscheidungen rückkoppeln. SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie."
+        },
+        {
+          "title": "Referenzrahmen SDGs / Agenda 2030 / SDG+",
+          "body": "Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "SDG-Kommunikation ist legitim, wenn sie konkret und belegt ist.",
+            "SDG-Mapping ist noch kein Wirkungsnachweis.",
+            "Impact-Washing ist breiter; SDG-Washing ist eine spezielle Form mit Zielsymbolik.",
+            "SDG-Bezug ist thematische Nähe; Wirkung braucht Daten.",
+            "SDG+ ist legitim, wenn es als WÖk-Erweiterung benannt und nicht als UN-Standard ausgegeben wird."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein Unternehmen klebt alle 17 SDG-Icons auf seinen Bericht, ohne Targets, Indikatoren oder Fortschritt auszuweisen.",
+            "Ein Fonds bewirbt SDG 13, investiert aber in Unternehmen ohne belegte Emissionsreduktion oder Transformationspfad.",
+            "Eine Kommune ordnet Haushaltspositionen SDGs zu, prüft aber keine Zustandsveränderung und keinen Wirkungshaushalt."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "SDG-Washing-Prüfung braucht SDG-Claim-Erfassung, Target-Mapping, WÖk-ID-Mapping, Indikatorbezug, Baseline, Messwert, Datenquelle, Datenqualität, Systemgrenze, Scorecard, negative Wirkungen, Nichtkompensation, Rückkopplungsnachweis sowie Audit oder Assurance bei steuerungsrelevanten Claims. Datenqualität, Claim-Belege, Quellenklarheit, Systemgrenzen, Unsicherheit, Audit-Trail, Versionierung, Prüfbarkeit, Verbraucherinformation, Freigabeprozess, Korrekturpflicht, Datenschutz, Datenhoheit, Einsicht, Widerspruch, Rechtsschutz, Governance und Korrekturpfade sind zu sichern. Keine Personenbewertung und kein Social-Credit-Framing. Schwere Schäden dürfen nicht durch Purpose, SDG-Icons, Claims, Labels, Kampagnen, Storytelling oder positive Einzelbeispiele kompensiert werden."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "responsible-marketing",
+            "wirkungskommunikation",
+            "purpose-washing",
+            "impact-washing",
+            "sdg-washing",
+            "greenwashing",
+            "wirkungssimulation",
+            "kpi-gaming",
+            "wirkung",
+            "wirkungspotenzial",
+            "positive-netto-wirkung",
+            "netto-wirkung",
+            "transformationswirkung",
+            "wirkungsbewertung",
+            "wirkungslenkung",
+            "wirkungsrueckkopplung",
+            "wirkungsarchitektur",
+            "wirkungswahrheit",
+            "wirkungsblindheit",
+            "wirkungsgrenze",
+            "wirkungsrat",
+            "wirkungsregister",
+            "wirkungsaudit",
+            "wirkungsassurance",
+            "wirkungsindikator",
+            "woek-id",
+            "datenqualitaet",
+            "benchmark",
+            "finalscore",
+            "reverse-merit-order",
+            "produktwirkung",
+            "produktscorecard",
+            "produktdaten",
+            "digitaler-produktpass",
+            "wirkung-im-preisschild",
+            "ehrliche-preise",
+            "wirkungsgutschrift",
+            "wirkungspunkte",
+            "unternehmen-als-wirkungssystem",
+            "wirkungsorientierte-unternehmensfuehrung",
+            "wirkungscontrolling",
+            "kii",
+            "wirkungskompetenz",
+            "lieferkettenwirkung",
+            "beschaffung-als-wirkungshebel",
+            "lieferantenbewertung",
+            "cradle-to-cradle",
+            "wirkungsrisiko",
+            "wirkungsresilienz",
+            "geschaeftsmodellpruefung",
+            "transformationspfad",
+            "enterprise-risk-management-nach-wirkung",
+            "framing",
+            "vertrauen",
+            "mensch-planet-demokratie",
+            "sdgs",
+            "agenda-2030",
+            "sdg-plus"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Führender Begriffsleitfaden der Wirkungsökonomie; Die neue Ordnung des Wohlstands; Nachhaltiges Marketing-Mix; Produktbesteuerung durch Wirkung; Technische Leitlinien WUStG; Systemmodell der Wirkungsökonomie; Wirkungsrat-Konzept.",
+            "Externe Quellen: UN SDGs / Agenda 2030; EU Green Claims; Directive (EU) 2024/825; Unfair Commercial Practices Directive; CSRD / ESRS; GRI; Digital Product Passport / ESPR; OECD Guidelines; UN Global Compact; ICC Advertising and Marketing Communications Code; ISO 14020/14021/14024/14025; ISO 26000."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Marketing-, Kommunikations- & Vertrauenslogik",
+            "pack: 015"
+          ]
+        }
+      ]
     },
     {
       "id": "sdgs",
@@ -322124,6 +324015,561 @@
       "woek_klaerung": "",
       "blindSpot": "Kapital kann als Wirkungskapital bezeichnet werden, ohne dass seine tatsächliche positive Netto-Wirkung geprüft wird.",
       "blind_spot": "Kapital kann als Wirkungskapital bezeichnet werden, ohne dass seine tatsächliche positive Netto-Wirkung geprüft wird."
+    },
+    {
+      "id": "wirkungskommunikation",
+      "termId": "wirkungskommunikation",
+      "label": "Wirkungskommunikation",
+      "canonicalLabel": "Wirkungskommunikation",
+      "slug": "wirkungskommunikation",
+      "pageUrl": "/begriffe/wirkungskommunikation/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "firstApprovedIn": "2026.1",
+      "aliases": [
+        "Wirkungskommunikation",
+        "Kommunikation über Wirkung",
+        "Impact Communication",
+        "Wirkungsclaim-Kommunikation",
+        "wirkungsbasierte Kommunikation",
+        "Kommunikation mit Wirkungsdaten",
+        "Wirkungsberichtskommunikation",
+        "verantwortliche Wirkungsdarstellung",
+        "Kommunikation nach Wirkung"
+      ],
+      "synonyms": [
+        "Wirkungskommunikation",
+        "Kommunikation über Wirkung",
+        "Impact Communication",
+        "Wirkungsclaim-Kommunikation",
+        "wirkungsbasierte Kommunikation",
+        "Kommunikation mit Wirkungsdaten",
+        "Wirkungsberichtskommunikation",
+        "verantwortliche Wirkungsdarstellung",
+        "Kommunikation nach Wirkung"
+      ],
+      "category": "Kommunikation, Wirkung & Vertrauen",
+      "categories": [
+        "Kommunikation, Wirkung & Vertrauen",
+        "Marketing-, Kommunikations- & Vertrauenslogik"
+      ],
+      "type": "WÖk-Präzisierungsbegriff / Kommunikationsbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kommunikationsbegriff",
+      "status": "woek-praegungsbegriff",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "version": "1.1",
+      "source": "Glossar-Pack 015",
+      "sourceDocument": "Glossar-Pack 015: Marketing-, Kommunikations- & Vertrauenslogik",
+      "sourceSection": "Kommunikation, Wirkung & Vertrauen",
+      "reviewStatus": "redaktionell zu prüfen",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "shortDefinition": "Wirkungskommunikation ist die transparente, belegbare und verständliche Kommunikation über positive, negative, neutrale oder unklare Wirkungen eines Produkts, Unternehmens, Projekts oder Programms.",
+      "short_definition": "Wirkungskommunikation ist die transparente, belegbare und verständliche Kommunikation über positive, negative, neutrale oder unklare Wirkungen eines Produkts, Unternehmens, Projekts oder Programms.",
+      "hoverDefinition": "Wirkungskommunikation ist die transparente, belegbare und verständliche Kommunikation über positive, negative, neutrale oder unklare Wirkungen eines Produkts, Unternehmens, Projekts oder Programms.",
+      "definition": "Wirkungskommunikation bezeichnet die Kommunikation über Wirkung. Sie stellt dar, welche Wirkungen durch ein Produkt, eine Dienstleistung, ein Unternehmen, eine Investition, ein Programm, ein Gesetz, eine Kampagne, ein Projekt oder eine Organisation entstehen, erwartet werden oder behauptet werden.",
+      "longDefinition": "Wirkungskommunikation bezeichnet die Kommunikation über Wirkung. Sie stellt dar, welche Wirkungen durch ein Produkt, eine Dienstleistung, ein Unternehmen, eine Investition, ein Programm, ein Gesetz, eine Kampagne, ein Projekt oder eine Organisation entstehen, erwartet werden oder behauptet werden.",
+      "long_definition": "Wirkungskommunikation bezeichnet die Kommunikation über Wirkung. Sie stellt dar, welche Wirkungen durch ein Produkt, eine Dienstleistung, ein Unternehmen, eine Investition, ein Programm, ein Gesetz, eine Kampagne, ein Projekt oder eine Organisation entstehen, erwartet werden oder behauptet werden.",
+      "woekRelation": "Wirkungskommunikation ist relevant, weil Wirkung ohne verständliche Kommunikation nicht steuerungsfähig wird. Daten allein verändern keine Entscheidungen. Zugleich ist Kommunikation manipulationsanfällig, weil Wirkungsclaims Vertrauen, Preise, Kapital, Reputation und regulatorische Aufmerksamkeit beeinflussen können.",
+      "woek_einordnung": "Wirkungskommunikation ist relevant, weil Wirkung ohne verständliche Kommunikation nicht steuerungsfähig wird. Daten allein verändern keine Entscheidungen. Zugleich ist Kommunikation manipulationsanfällig, weil Wirkungsclaims Vertrauen, Preise, Kapital, Reputation und regulatorische Aufmerksamkeit beeinflussen können.",
+      "usageNote": "Aus WÖk-Sicht braucht Wirkungskommunikation eine Belegkette: Wirkungsgegenstand, Wirkungsraum, Daten, Bewertung, Systemgrenzen, Datenqualität, Rückkopplung und verständliche Darstellung. Wirkungskommunikation ist nicht freie Wirkungserzählung, sondern die letzte Stufe einer Wirkungsarchitektur.",
+      "preferredUsage": "Aus WÖk-Sicht braucht Wirkungskommunikation eine Belegkette: Wirkungsgegenstand, Wirkungsraum, Daten, Bewertung, Systemgrenzen, Datenqualität, Rückkopplung und verständliche Darstellung. Wirkungskommunikation ist nicht freie Wirkungserzählung, sondern die letzte Stufe einer Wirkungsarchitektur.",
+      "doNotConfuseWith": [
+        "Werbung will überzeugen; Wirkungskommunikation muss belegen und einordnen.",
+        "Claim ist Aussage; Wirkungskommunikation ist der transparente Kontext.",
+        "Storytelling kann helfen, ersetzt aber keine Belege.",
+        "Reporting dokumentiert; Wirkungskommunikation übersetzt und erklärt.",
+        "Wirkungsmessung erzeugt Daten; Kommunikation vermittelt sie nachvollziehbar."
+      ],
+      "examples": [
+        "Ein Unternehmen kommuniziert nicht nur klimaneutral, sondern Emissionen pro funktionaler Einheit, Datenprüfung, geschätzte Felder und begrenzende Wirkungsfelder.",
+        "Ein Wirkungsbericht zeigt nicht nur Erfolge, sondern Datenlücken, Zielverfehlungen und Korrekturmaßnahmen.",
+        "Ein Transformationsziel wird als Ziel kommuniziert, nicht als bereits eingetretene Wirkung."
+      ],
+      "relatedTerms": [
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "sdg-washing",
+        "greenwashing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "related_terms": [
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "sdg-washing",
+        "greenwashing",
+        "wirkungssimulation",
+        "kpi-gaming",
+        "wirkung",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkung-im-preisschild",
+        "ehrliche-preise",
+        "wirkungsgutschrift",
+        "wirkungspunkte",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "wirkungscontrolling",
+        "kii",
+        "wirkungskompetenz",
+        "lieferkettenwirkung",
+        "beschaffung-als-wirkungshebel",
+        "lieferantenbewertung",
+        "cradle-to-cradle",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "geschaeftsmodellpruefung",
+        "transformationspfad",
+        "enterprise-risk-management-nach-wirkung",
+        "framing",
+        "vertrauen",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands",
+        "nachhaltiges-marketing-mix",
+        "produktbesteuerung-durch-wirkung",
+        "systemmodell-der-wirkungsoekonomie",
+        "wirkungsrat-konzept"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
+      "source_links": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "label": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "label": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Nachhaltiges Marketing-Mix",
+          "label": "Nachhaltiges Marketing-Mix",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Produktbesteuerung durch Wirkung",
+          "label": "Produktbesteuerung durch Wirkung",
+          "url": "https://wirkungsoekonomie.de/bibliothek/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "Systemmodell der Wirkungsökonomie",
+          "label": "Systemmodell der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "sourceType": "interne Quelle",
+          "status": "Projektquelle"
+        },
+        {
+          "title": "UN Sustainable Development Goals / Agenda 2030",
+          "label": "UN Sustainable Development Goals / Agenda 2030",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "European Commission - Green Claims",
+          "label": "European Commission - Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "label": "Directive (EU) 2024/825 - Empowering consumers for the green transition",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Unfair Commercial Practices Directive",
+          "label": "Unfair Commercial Practices Directive",
+          "url": "https://commission.europa.eu/law/law-topic/consumer-protection-law/unfair-commercial-practices-law_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "CSRD / ESRS",
+          "label": "CSRD / ESRS",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "Digital Product Passport / ESPR",
+          "label": "Digital Product Passport / ESPR",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "OECD Guidelines for Multinational Enterprises",
+          "label": "OECD Guidelines for Multinational Enterprises",
+          "url": "https://www.oecd.org/corporate/mne/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "UN Global Compact",
+          "label": "UN Global Compact",
+          "url": "https://unglobalcompact.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ICC Advertising and Marketing Communications Code",
+          "label": "ICC Advertising and Marketing Communications Code",
+          "url": "https://iccwbo.org/",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        },
+        {
+          "title": "ISO 26000 Social Responsibility",
+          "label": "ISO 26000 Social Responsibility",
+          "url": "https://www.iso.org/iso-26000-social-responsibility.html",
+          "sourceType": "externe Quelle",
+          "status": "Referenz"
+        }
+      ],
+      "glossary_pack": "015",
+      "cluster": "Marketing-, Kommunikations- & Vertrauenslogik",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkungskommunikation ist die transparente, belegbare und verständliche Kommunikation über positive, negative, neutrale oder unklare Wirkungen eines Produkts, Unternehmens, Projekts oder Programms."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Wirkungskommunikation ist nicht freie Wirkungserzählung.",
+            "Sie muss Wirkung, Wirkungspotenzial, Output, Absicht, Maßnahme und Claim sauber unterscheiden.",
+            "Gute Wirkungskommunikation zeigt auch Grenzen, Datenqualität, Unsicherheit und negative Wirkungen.",
+            "Sie darf positive Wirkung nicht behaupten, wenn nur Absichten oder Potenziale vorliegen.",
+            "Sie schützt vor Greenwashing, Impact-Washing, Purpose-Washing und SDG-Washing."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungskommunikation bezeichnet die Kommunikation über Wirkung. Sie stellt dar, welche Wirkungen durch ein Produkt, eine Dienstleistung, ein Unternehmen, eine Investition, ein Programm, ein Gesetz, eine Kampagne, ein Projekt oder eine Organisation entstehen, erwartet werden oder behauptet werden."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wirkungskommunikation ist relevant, weil Wirkung ohne verständliche Kommunikation nicht steuerungsfähig wird. Daten allein verändern keine Entscheidungen. Zugleich ist Kommunikation manipulationsanfällig, weil Wirkungsclaims Vertrauen, Preise, Kapital, Reputation und regulatorische Aufmerksamkeit beeinflussen können."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht braucht Wirkungskommunikation eine Belegkette: Wirkungsgegenstand, Wirkungsraum, Daten, Bewertung, Systemgrenzen, Datenqualität, Rückkopplung und verständliche Darstellung. Wirkungskommunikation ist nicht freie Wirkungserzählung, sondern die letzte Stufe einer Wirkungsarchitektur."
+        },
+        {
+          "title": "Referenzrahmen SDGs / Agenda 2030 / SDG+",
+          "body": "Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet. SDG+ ist eine Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Werbung will überzeugen; Wirkungskommunikation muss belegen und einordnen.",
+            "Claim ist Aussage; Wirkungskommunikation ist der transparente Kontext.",
+            "Storytelling kann helfen, ersetzt aber keine Belege.",
+            "Reporting dokumentiert; Wirkungskommunikation übersetzt und erklärt.",
+            "Wirkungsmessung erzeugt Daten; Kommunikation vermittelt sie nachvollziehbar."
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein Unternehmen kommuniziert nicht nur klimaneutral, sondern Emissionen pro funktionaler Einheit, Datenprüfung, geschätzte Felder und begrenzende Wirkungsfelder.",
+            "Ein Wirkungsbericht zeigt nicht nur Erfolge, sondern Datenlücken, Zielverfehlungen und Korrekturmaßnahmen.",
+            "Ein Transformationsziel wird als Ziel kommuniziert, nicht als bereits eingetretene Wirkung."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Wirkungskommunikation braucht Kommunikationsgegenstand, Wirkungsclaim, Claim-Kategorie, Belegquellen, Scorecard, Datenqualitätsangabe, Systemgrenze, Wirkungsstatus, Unsicherheit, Korrekturmechanismus, Freigabeprozess, verantwortliche Rolle sowie Audit- oder Assurance-Status. Bei Verbraucherkommunikation sollten Kurzsignal und vertiefender DPP, Scorecard oder Registereintrag kombiniert werden. Datenqualität, Claim-Belege, Quellenklarheit, Systemgrenzen, Unsicherheit, Audit-Trail, Versionierung, Prüfbarkeit, Verbraucherinformation, Freigabeprozess, Korrekturpflicht, Datenschutz, Datenhoheit, Einsicht, Widerspruch, Rechtsschutz, Governance und Korrekturpfade sind zu sichern. Keine Personenbewertung und kein Social-Credit-Framing. Schwere Schäden dürfen nicht durch Purpose, SDG-Icons, Claims, Labels, Kampagnen, Storytelling oder positive Einzelbeispiele kompensiert werden."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "responsible-marketing",
+            "wirkungskommunikation",
+            "purpose-washing",
+            "impact-washing",
+            "sdg-washing",
+            "greenwashing",
+            "wirkungssimulation",
+            "kpi-gaming",
+            "wirkung",
+            "wirkungspotenzial",
+            "positive-netto-wirkung",
+            "netto-wirkung",
+            "transformationswirkung",
+            "wirkungsbewertung",
+            "wirkungslenkung",
+            "wirkungsrueckkopplung",
+            "wirkungsarchitektur",
+            "wirkungswahrheit",
+            "wirkungsblindheit",
+            "wirkungsgrenze",
+            "wirkungsrat",
+            "wirkungsregister",
+            "wirkungsaudit",
+            "wirkungsassurance",
+            "wirkungsindikator",
+            "woek-id",
+            "datenqualitaet",
+            "benchmark",
+            "finalscore",
+            "reverse-merit-order",
+            "produktwirkung",
+            "produktscorecard",
+            "produktdaten",
+            "digitaler-produktpass",
+            "wirkung-im-preisschild",
+            "ehrliche-preise",
+            "wirkungsgutschrift",
+            "wirkungspunkte",
+            "unternehmen-als-wirkungssystem",
+            "wirkungsorientierte-unternehmensfuehrung",
+            "wirkungscontrolling",
+            "kii",
+            "wirkungskompetenz",
+            "lieferkettenwirkung",
+            "beschaffung-als-wirkungshebel",
+            "lieferantenbewertung",
+            "cradle-to-cradle",
+            "wirkungsrisiko",
+            "wirkungsresilienz",
+            "geschaeftsmodellpruefung",
+            "transformationspfad",
+            "enterprise-risk-management-nach-wirkung",
+            "framing",
+            "vertrauen",
+            "mensch-planet-demokratie",
+            "sdgs",
+            "agenda-2030",
+            "sdg-plus"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "items": [
+            "Interne Quellen: Führender Begriffsleitfaden der Wirkungsökonomie; Die neue Ordnung des Wohlstands; Nachhaltiges Marketing-Mix; Produktbesteuerung durch Wirkung; Technische Leitlinien WUStG; Systemmodell der Wirkungsökonomie; Wirkungsrat-Konzept.",
+            "Externe Quellen: UN SDGs / Agenda 2030; EU Green Claims; Directive (EU) 2024/825; Unfair Commercial Practices Directive; CSRD / ESRS; GRI; Digital Product Passport / ESPR; OECD Guidelines; UN Global Compact; ICC Advertising and Marketing Communications Code; ISO 14020/14021/14024/14025; ISO 26000."
+          ]
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "status: professionalisiert",
+            "review_status: redaktionell zu prüfen",
+            "cluster: Marketing-, Kommunikations- & Vertrauenslogik",
+            "pack: 015"
+          ]
+        }
+      ]
     },
     {
       "id": "wirkungskompetenz",
