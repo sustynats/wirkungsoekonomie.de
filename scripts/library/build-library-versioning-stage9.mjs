@@ -49,6 +49,7 @@ const ONLINE_ROOTS = [
 ];
 
 const TYPE_LABELS = [
+  "Buch",
   "Grundlagenwerk",
   "Whitepaper",
   "Arbeitspapier",
@@ -197,6 +198,54 @@ const LEADING_OVERRIDES = new Map([
   ["assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf", {
     title: "SDG-/SDG+-Referenzrahmen (Lesefassung)",
     shortDescription: "Führende Dokumentfassung des Referenzrahmens für SDGs, Agenda 2030 und SDG+."
+  }],
+  ["assets/pdf/imported/nachhaltiges-marketing-mix.pdf", {
+    title: "Nachhaltiges Marketing-Mix",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können."
+  }],
+  ["bibliothek/nachhaltiges-marketing-mix/index.html", {
+    title: "Nachhaltiges Marketing-Mix",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Online lesbare Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können."
+  }],
+  ["assets/pdf/imported/nachhaltiger-einzelhandel.pdf", {
+    title: "Nachhaltiger Einzelhandel",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Frühe Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann."
+  }],
+  ["bibliothek/nachhaltiger-einzelhandel/index.html", {
+    title: "Nachhaltiger Einzelhandel",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Online lesbare Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann."
+  }],
+  ["assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf", {
+    title: "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen."
+  }],
+  ["bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/index.html", {
+    title: "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Online lesbare Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen."
+  }],
+  ["assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf", {
+    title: "Nachhaltigkeitstransformation im Handwerk",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung."
+  }],
+  ["bibliothek/nachhaltigkeitstransformation-im-handwerk/index.html", {
+    title: "Nachhaltigkeitstransformation im Handwerk",
+    type: "Buch",
+    status: "aktuell",
+    shortDescription: "Online lesbare Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung."
   }]
 ]);
 
@@ -488,7 +537,7 @@ function documentFor(relativePath, source) {
     title: overrides.title || contentTitle || title,
     shortDescription: overrides.shortDescription || insight.shortDescription || summaryFor(type, status, topics),
     type: overrides.type || type,
-    status,
+    status: overrides.status || status,
     dateOrStand: standFor(relativePath),
     topics,
     relatedMethods: methods,
@@ -528,7 +577,11 @@ function buildRegistry() {
   const requiredReferences = [
     "buch.html",
     "glossar.html",
-    "begriffe/index.html"
+    "begriffe/index.html",
+    "bibliothek/nachhaltiges-marketing-mix/index.html",
+    "bibliothek/nachhaltiger-einzelhandel/index.html",
+    "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/index.html",
+    "bibliothek/nachhaltigkeitstransformation-im-handwerk/index.html"
   ].filter(exists).map((file) => documentFor(file, "leading-reference"));
   const documents = mergeDocuments([...requiredReferences, ...fileDocuments, ...onlineDocuments]);
   const counts = documents.reduce((acc, doc) => {

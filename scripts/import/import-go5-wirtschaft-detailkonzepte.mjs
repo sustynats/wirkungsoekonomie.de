@@ -140,6 +140,12 @@ const docs = [
       ["Responsible-Sales-Check", "", "Konzept", "Vertriebslogiken auf Druck, Fehlanreize, Fairness und langfristige Wirkung prüfen."],
       ["Produktkommunikations-Scorecard", "/werkzeuge/scorecards/", "Werkzeugseite vorhanden", "Produktkommunikation in eine Scorecard- und WÖk-ID-Logik einordnen."],
     ],
+    publications: [
+      ["Nachhaltiges Marketing-Mix", "/bibliothek/nachhaltiges-marketing-mix/", "Buch / Praxisleitfaden", "Frühe Buchfassung zu Agenda 2030, SDGs und dem fünften P Planet im Marketing-Mix."],
+      ["Nachhaltiger Einzelhandel", "/bibliothek/nachhaltiger-einzelhandel/", "Buch / Praxisleitfaden", "Anwendungsperspektive für Handel, Kreislaufwirtschaft und Kund:innenbeziehung."],
+      ["Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen", "/bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/", "Buch / Praxisleitfaden", "Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in Beratungsunternehmen."],
+      ["Nachhaltigkeitstransformation im Handwerk", "/bibliothek/nachhaltigkeitstransformation-im-handwerk/", "Buch / Praxisleitfaden", "Leitfaden für kleine Betriebe mit Fokus auf Vorgaben, Kund:innen, Lieferanten und Umsetzung."],
+    ],
   },
   {
     number: "13",
@@ -446,6 +452,29 @@ function renderLinkCards(items) {
     .join("\n");
 }
 
+function renderPublicationCards(items = []) {
+  const cards = items
+    .filter(([, href]) => sitePathExists(href))
+    .map(
+      ([title, href, type, text]) => `<article class="card">
+        <p class="card-kicker">${htmlEscape(type)}</p>
+        <h3 class="card-title">${htmlEscape(title)}</h3>
+        <p class="card-text">${htmlEscape(text)}</p>
+        <div class="portal-card-actions"><a class="text-link" href="${href}">Onlinefassung und PDF öffnen</a></div>
+      </article>`
+    )
+    .join("\n");
+  if (!cards) return "";
+  return `<section class="section" aria-labelledby="publikationen">
+        <div class="section-header">
+          <p class="hero-kicker">Bücher & Praxisleitfäden</p>
+          <h2 id="publikationen">Vertiefende Publikationen <a class="cite-anchor no-print" href="#publikationen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+          <p>Diese öffentlichen Fassungen sind online lesbar und ergänzend als PDF verfügbar.</p>
+        </div>
+        <div class="card-grid two">${cards}</div>
+      </section>`;
+}
+
 function renderSdgRefs() {
   let index = 1;
   const sdgHtml = sdgs
@@ -603,6 +632,7 @@ function renderPage(doc, body, toc) {
           <p>Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. SDG+ ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.</p>
         </div>
       </section>
+      ${renderPublicationCards(doc.publications)}
       <section class="section" aria-labelledby="buchanker">
         <div class="section-header">
           <p class="hero-kicker">Online-Buch</p>

@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-06-01T06:57:53.438Z",
+  "generatedAt": "2026-06-01T07:29:41.016Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
+      "Buch",
       "Grundlagenwerk",
       "Whitepaper",
       "Arbeitspapier",
@@ -203,10 +204,10 @@
     }
   ],
   "counts": {
-    "total": 1465,
+    "total": 1473,
     "byStatus": {
       "führend": 5,
-      "aktuell": 931,
+      "aktuell": 939,
       "Arbeitsfassung": 273,
       "ältere Fassung": 256
     },
@@ -218,14 +219,15 @@
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Whitepaper": 7,
-      "Leitbild": 7
+      "Leitbild": 7,
+      "Buch": 8
     },
     "bySource": {
-      "leading-reference": 3,
-      "download-or-document": 705,
+      "leading-reference": 7,
+      "download-or-document": 709,
       "online-version": 757
     },
-    "downloadFiles": 705,
+    "downloadFiles": 709,
     "onlineVersions": 757
   },
   "documents": [
@@ -12692,6 +12694,190 @@
         "sourcePath": "portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltiger-einzelhandel-index-html",
+      "title": "Nachhaltiger Einzelhandel",
+      "shortDescription": "Online lesbare Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltiger-einzelhandel/",
+        "sourcePath": "bibliothek/nachhaltiger-einzelhandel/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltiger-einzelhandel-pdf",
+      "title": "Nachhaltiger Einzelhandel",
+      "shortDescription": "Frühe Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltiger-einzelhandel.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltiger-einzelhandel.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltiges-marketing-mix-index-html",
+      "title": "Nachhaltiges Marketing-Mix",
+      "shortDescription": "Online lesbare Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltiges-marketing-mix/",
+        "sourcePath": "bibliothek/nachhaltiges-marketing-mix/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltiges-marketing-mix-pdf",
+      "title": "Nachhaltiges Marketing-Mix",
+      "shortDescription": "Frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltiges-marketing-mix.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltiges-marketing-mix.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen-ind",
+      "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+      "shortDescription": "Online lesbare Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/",
+        "sourcePath": "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltigkeitsstrategie-mittelstaendische-beratungsunt",
+      "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+      "shortDescription": "Frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltigkeitstransformation-im-handwerk-index-html",
+      "title": "Nachhaltigkeitstransformation im Handwerk",
+      "shortDescription": "Online lesbare Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltigkeitstransformation-im-handwerk/",
+        "sourcePath": "bibliothek/nachhaltigkeitstransformation-im-handwerk/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltigkeitstransformation-im-handwerk-pdf",
+      "title": "Nachhaltigkeitstransformation im Handwerk",
+      "shortDescription": "Frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {

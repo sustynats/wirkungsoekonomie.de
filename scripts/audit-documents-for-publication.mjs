@@ -91,6 +91,13 @@ const REQUIRED_FIELDS = [
   "previewAllowed"
 ];
 
+const RESTORED_PUBLIC_BOOK_IDS = new Set([
+  "nachhaltiges-marketing-mix",
+  "nachhaltiger-einzelhandel",
+  "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+  "nachhaltigkeitstransformation-im-handwerk"
+]);
+
 const DOCUMENTS = [
   {
     id: "minifest-wirkungsoekonomie",
@@ -225,6 +232,122 @@ const DOCUMENTS = [
     onlinePath: "referenz/",
     section: "Empfohlener Einstieg",
     order: 5
+  },
+  {
+    id: "nachhaltiges-marketing-mix",
+    slug: "nachhaltiges-marketing-mix",
+    title: "Nachhaltiges Marketing-Mix",
+    subtitle: "Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel",
+    fileName: "nachhaltiges-marketing-mix.pdf",
+    filePath: "assets/pdf/imported/nachhaltiges-marketing-mix.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltiges-marketing-mix.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Unternehmen", "Marketing", "Handel", "Industrie"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+    whatToExpect: "Online lesbarer Praxisleitfaden zu Produktentwicklung, Preisgestaltung, Platzierung, Promotion und dem fünften P Planet.",
+    keyQuestions: ["Wie erweitert Planet den klassischen Marketing-Mix?", "Wie werden SDGs in Produkt-, Preis-, Vertriebs- und Kommunikationsentscheidungen übersetzt?"],
+    topics: ["Marketing", "Nachhaltigkeit", "SDGs & SDG+", "5. P Planet", "Kreislaufwirtschaft"],
+    methods: ["Scorecards", "Wirkungsrückkopplung", "SDGs & SDG+"],
+    impactFields: ["Wirtschaft & Kapital", "Planet & Resilienz", "Öffentlichkeit & Wissen"],
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "grundlagenpapier-wirkungsoekonomie", "wirkungsoekonomie-lieferkette"],
+    version: "frühe Buchfassung",
+    date: "2024",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 55
+  },
+  {
+    id: "nachhaltiger-einzelhandel",
+    slug: "nachhaltiger-einzelhandel",
+    title: "Nachhaltiger Einzelhandel",
+    subtitle: "Nachhaltigkeit, Verantwortung und Kreislaufwirtschaft im Handel",
+    fileName: "nachhaltiger-einzelhandel.pdf",
+    filePath: "assets/pdf/imported/nachhaltiger-einzelhandel.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltiger-einzelhandel.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Handel", "Unternehmen", "Mittelstand"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Ausarbeitung dazu, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+    whatToExpect: "Online lesbarer Praxisleitfaden mit Schwerpunkt Handel, Kund:innenbeziehung, Kreislaufwirtschaft und Umsetzung.",
+    keyQuestions: ["Wie kann Einzelhandel Nachhaltigkeit praktisch verankern?", "Welche Rolle spielen Sortiment, Lieferketten, Rücknahme und Kommunikation?"],
+    topics: ["Einzelhandel", "Nachhaltigkeit", "Kreislaufwirtschaft", "Produkte & Konsum"],
+    methods: ["Scorecards", "Wirkungsrückkopplung", "Produktwirkung"],
+    impactFields: ["Wirtschaft & Kapital", "Produkte & Konsum", "Planet & Resilienz"],
+    relatedDocuments: ["nachhaltiges-marketing-mix", "wirkungsoekonomie-lieferkette", "standardwerk-neue-ordnung-wohlstands-2026"],
+    version: "frühe Buchfassung",
+    date: "2023",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 56
+  },
+  {
+    id: "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+    slug: "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+    title: "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+    subtitle: "Agenda 2030, SDGs und ESG-Anforderungen in Beratungsunternehmen",
+    fileName: "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+    filePath: "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Beratungsunternehmen", "Mittelstand", "Unternehmen"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+    whatToExpect: "Online lesbarer Praxisleitfaden zu Strategie, Organisation, Kund:innenanforderungen, Lieferanten, Berichtswesen und Umsetzung.",
+    keyQuestions: ["Wie wird Nachhaltigkeit in Beratungsunternehmen organisatorisch verankert?", "Wie lassen sich SDGs und ESG-Anforderungen praktisch strukturieren?"],
+    topics: ["Beratungsunternehmen", "Mittelstand", "SDGs & SDG+", "ESG", "Unternehmensstrategie"],
+    methods: ["SDGs & SDG+", "Wirkungscontrolling", "Wirkungsrückkopplung"],
+    impactFields: ["Wirtschaft & Kapital", "Öffentlichkeit & Wissen", "Planet & Resilienz"],
+    relatedDocuments: ["nachhaltiges-marketing-mix", "grundlagenpapier-wirkungsoekonomie", "systemmodell-wirkungsoekonomie"],
+    version: "frühe Buchfassung",
+    date: "2023",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 57
+  },
+  {
+    id: "nachhaltigkeitstransformation-im-handwerk",
+    slug: "nachhaltigkeitstransformation-im-handwerk",
+    title: "Nachhaltigkeitstransformation im Handwerk",
+    subtitle: "Ein Leitfaden für kleine Betriebe",
+    fileName: "nachhaltigkeitstransformation-im-handwerk.pdf",
+    filePath: "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltigkeitstransformation-im-handwerk.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Handwerk", "Mittelstand", "Kleine Betriebe"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+    whatToExpect: "Online lesbarer Praxisleitfaden für Holz-, Elektro-, Bau- und Sanitärhandwerk mit Umsetzungs- und Checklistenlogik.",
+    keyQuestions: ["Welche Nachhaltigkeitsanforderungen betreffen kleine Handwerksbetriebe?", "Wie können Betrieb, Kund:innenbeziehung und Lieferanten praktisch umgestellt werden?"],
+    topics: ["Handwerk", "Mittelstand", "SDGs & SDG+", "Nachhaltigkeit", "Kleine Betriebe"],
+    methods: ["SDGs & SDG+", "Wirkungsrückkopplung", "Datenqualität & Assurance"],
+    impactFields: ["Wirtschaft & Kapital", "Alltag & Grundbedürfnisse", "Planet & Resilienz"],
+    relatedDocuments: ["nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen", "nachhaltiges-marketing-mix", "leitbild-mensch-planet-demokratie"],
+    version: "frühe Buchfassung",
+    date: "2023",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 58
   },
   {
     id: "whitepaper-t-sroi",
@@ -895,7 +1018,7 @@ function mkdir(fileOrDir) {
 
 function write(file, content) {
   mkdir(path.dirname(file));
-  fs.writeFileSync(file, content);
+  fs.writeFileSync(file, content.replace(/[ \t]+$/gm, ""));
 }
 
 function read(file) {
@@ -1170,6 +1293,13 @@ function applyAuditGate(curatedDocs, findings) {
       next.onlinePath = next.onlinePath || "referenz/";
       return next;
     }
+    if (RESTORED_PUBLIC_BOOK_IDS.has(next.id)) {
+      next.status = next.status || "aktuell";
+      next.visibility = "public";
+      next.downloadAllowed = true;
+      next.previewAllowed = true;
+      return next;
+    }
     if (affected.has(next.id) && next.visibility !== "archive") {
       next.status = "review-erforderlich";
       next.visibility = "review_required";
@@ -1201,6 +1331,7 @@ function downloadHref(doc, prefix = "") {
 }
 
 function onlineHref(doc, prefix = "") {
+  if (doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))) return "#onlinefassung";
   if (doc.onlinePath) return `${prefix}${doc.onlinePath}`;
   const candidate = path.join(ROOT, "dokumente", doc.slug || "", "index.html");
   if (fs.existsSync(candidate)) return `${prefix}dokumente/${doc.slug}/`;
@@ -1383,6 +1514,9 @@ function detailPage(doc, prefix = "../../") {
   const href = downloadHref(doc, prefix);
   const online = onlineHref(doc, prefix);
   const related = (doc.relatedDocuments || []).map((id) => model.find((item) => item.id === id)).filter(Boolean);
+  const onlineContent = doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))
+    ? read(path.join(ROOT, doc.contentHtmlPath))
+    : "";
   const statusNotice = ["diskussionsfassung", "arbeitsfassung"].includes(doc.status)
     ? `<div class="callout"><strong>Statushinweis:</strong> Dieses Dokument ist eine Arbeits- bzw. Diskussionsfassung und kann sich ändern.</div>`
     : "";
@@ -1423,6 +1557,7 @@ function detailPage(doc, prefix = "../../") {
           <p>Dieses Dokument ist keine Personenbewertung, keine automatische Entscheidung und keine Rechts-, Steuer-, Kredit-, Förder-, Versicherungs- oder Anlageberatung. Modellhafte Aussagen sind nicht amtlich.</p>
           <h2>Inhaltsüberblick</h2>
           <p>${escapeHtml((doc.topics || []).join(", ") || "Inhaltsüberblick in Vorbereitung.")}</p>
+          ${onlineContent ? `<section id="onlinefassung" class="document-online-section"><h2>Onlinefassung</h2><div class="readable-prose document-online-text">${onlineContent}</div></section>` : ""}
           <h2>Verwandte Inhalte</h2>
           <ul>${related.map((item) => `<li><a href="../${item.slug}/">${escapeHtml(item.title)}</a></li>`).join("") || "<li>Keine verwandten Dokumente hinterlegt.</li>"}</ul>
         </article>
@@ -1558,7 +1693,7 @@ function writeModel(gatedDocs) {
   write(DOC_MODEL, `${JSON.stringify({
     schemaVersion: "2026-05-document-library-redesign",
     allowedValues: {
-      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "whitepaper", "working-paper", "konzept", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
+      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "buch", "whitepaper", "working-paper", "konzept", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
       status: ["fuehrend", "aktuell", "fachoeffentlich", "diskussionsfassung", "arbeitsfassung", "in-pruefung", "archiv", "ersetzt", "intern", "review-erforderlich"],
       visibility: ["public", "expert_public", "archive", "review_required", "internal", "hidden"]
     },
