@@ -894,7 +894,9 @@ function sexarbeitDetailBody(term) {
       </article>`;
 }
 
-function glossaryTermAliasPage(aliasLabel, targetSlug) {
+function glossaryTermAliasPage(aliasLabel, targetSlug, targetLabel, note) {
+  const label = targetLabel || targetSlug.replace(/-/g, " ");
+  const explanation = note || `Dieser ältere oder alternative Begriff verweist auf die Glossar-Detailseite <a href="../${esc(targetSlug)}/">${esc(label)}</a>. Die Weiterleitung ist ein Alias und ersetzt keine eigene Bewertung.`;
   return `<!doctype html>
 <html lang="de">
   <head>
@@ -903,22 +905,22 @@ function glossaryTermAliasPage(aliasLabel, targetSlug) {
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/${esc(targetSlug)}/">
     <meta http-equiv="refresh" content="0; url=../${esc(targetSlug)}/">
-    <title>${esc(aliasLabel)} - Weiterleitung zum Glossarbegriff Sexarbeit</title>
+    <title>${esc(aliasLabel)} - Weiterleitung zum Glossarbegriff ${esc(label)}</title>
   </head>
   <body>
     <main>
       <h1>${esc(aliasLabel)}</h1>
-      <p>Dieser ältere oder alternative Begriff verweist auf die sensible Glossar-Detailseite <a href="../${esc(targetSlug)}/">Sexarbeit</a>. Die Weiterleitung ist ein Alias, keine Gleichsetzung mit Menschenhandel, Zwangsprostitution, sexueller Ausbeutung oder sexualisierter Gewalt.</p>
+      <p>${explanation}</p>
     </main>
   </body>
 </html>
 `;
 }
 
-function writeGlossaryTermAlias(aliasSlug, aliasLabel, targetSlug) {
+function writeGlossaryTermAlias(aliasSlug, aliasLabel, targetSlug, targetLabel, note) {
   const dir = path.join(outDir, aliasSlug);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), glossaryTermAliasPage(aliasLabel, targetSlug));
+  fs.writeFileSync(path.join(dir, "index.html"), glossaryTermAliasPage(aliasLabel, targetSlug, targetLabel, note));
 }
 
 function sozialeInfrastrukturDetailBody(term) {
@@ -1150,14 +1152,16 @@ ${statusParagraph}          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt:
 }
 
 if (data.terms.some((term) => term.slug === "sexarbeit")) {
-  writeGlossaryTermAlias("prostitution", "Prostitution", "sexarbeit");
-  writeGlossaryTermAlias("sex-work", "Sex Work", "sexarbeit");
+  const sexarbeitAliasNote = `Dieser ältere oder alternative Begriff verweist auf die sensible Glossar-Detailseite <a href="../sexarbeit/">Sexarbeit</a>. Die Weiterleitung ist ein Alias, keine Gleichsetzung mit Menschenhandel, Zwangsprostitution, sexueller Ausbeutung oder sexualisierter Gewalt.`;
+  writeGlossaryTermAlias("prostitution", "Prostitution", "sexarbeit", "Sexarbeit", sexarbeitAliasNote);
+  writeGlossaryTermAlias("sex-work", "Sex Work", "sexarbeit", "Sexarbeit", sexarbeitAliasNote);
 }
 
 if (data.terms.some((term) => term.slug === "soziale-infrastruktur")) {
-  writeGlossaryTermAlias("sozialer-infrastruktur", "Sozialer Infrastruktur", "soziale-infrastruktur");
-  writeGlossaryTermAlias("gesellschaftliche-infrastruktur", "Gesellschaftliche Infrastruktur", "soziale-infrastruktur");
-  writeGlossaryTermAlias("zivilgesellschaftliche-infrastruktur", "Zivilgesellschaftliche Infrastruktur", "soziale-infrastruktur");
+  const sozialeInfrastrukturAliasNote = `Dieser ältere oder alternative Begriff verweist auf die Glossar-Detailseite <a href="../soziale-infrastruktur/">Soziale Infrastruktur</a>. Die Weiterleitung ist ein Alias für den Architekturbegriff und keine Reduktion auf eine einzelne Organisation, Leistung oder Institution.`;
+  writeGlossaryTermAlias("sozialer-infrastruktur", "Sozialer Infrastruktur", "soziale-infrastruktur", "Soziale Infrastruktur", sozialeInfrastrukturAliasNote);
+  writeGlossaryTermAlias("gesellschaftliche-infrastruktur", "Gesellschaftliche Infrastruktur", "soziale-infrastruktur", "Soziale Infrastruktur", sozialeInfrastrukturAliasNote);
+  writeGlossaryTermAlias("zivilgesellschaftliche-infrastruktur", "Zivilgesellschaftliche Infrastruktur", "soziale-infrastruktur", "Soziale Infrastruktur", sozialeInfrastrukturAliasNote);
 }
 
 console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and preserved ${legacyDetailTerms.length} legacy detail pages.`);
