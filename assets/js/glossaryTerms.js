@@ -2107,9 +2107,17 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "blindleistung",
     "label": "Blindleistung",
     "aliases": [
-      "Blindleistung"
+      "Blindleistung",
+      "systemische Blindleistung",
+      "volkswirtschaftliche Blindleistung",
+      "Aufwand ohne Zustandsverbesserung",
+      "Reparaturbürokratie",
+      "Verwaltungsblindleistung",
+      "blinder Aufwand",
+      "Compliance ohne Rückkopplung",
+      "Blind Performance"
     ],
-    "definition": "Blindleistung pendelt im System, belastet es, verrichtet aber keine nutzbare Arbeit.",
+    "definition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
     "url": "/begriffe/blindleistung/",
     "priority": 101,
     "autoLinkAllowed": true,
@@ -13449,9 +13457,15 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "NWI",
       "Netto-Wirkungs-Index",
-      "Netto-Wirkungs-Index / NWI"
+      "Netto-Wirkungs-Index / NWI",
+      "Netto Wirkungs Index",
+      "Net Impact Index",
+      "operative Netto-Wirkungskennzahl",
+      "Wirkungsindex",
+      "WÖk-NWI",
+      "Netto-Wirkungskennzahl"
     ],
-    "definition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
+    "definition": "Der NWI ist die operative Kennzahl der Wirkungsökonomie für Netto-Wirkung: Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order zu einer prüfbaren Gesamtbewertung.",
     "url": "/begriffe/nwi/",
     "priority": 639,
     "autoLinkAllowed": true,
@@ -18662,9 +18676,16 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "scheinleistung",
     "label": "Scheinleistung",
     "aliases": [
-      "Scheinleistung"
+      "Scheinleistung",
+      "scheinbare Leistung",
+      "Aktivität ohne Wirkungsnachweis",
+      "Leistungsillusion",
+      "Output ohne Wirkung",
+      "Scheinerfolg",
+      "Pseudo-Leistung",
+      "Performance ohne Zustandsverbesserung"
     ],
-    "definition": "Scheinleistung ist in der Elektrotechnik die scheinbar vorhandene Gesamtleistung im System.",
+    "definition": "Scheinleistung ist Aktivität, die nach Leistung aussieht, aber keine belastbare positive Zustandsveränderung nachweist.",
     "url": "/begriffe/scheinleistung/",
     "priority": 885,
     "autoLinkAllowed": true,
@@ -23580,9 +23601,17 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "wirkleistung",
     "label": "Wirkleistung",
     "aliases": [
-      "Wirkleistung"
+      "Wirkleistung",
+      "echte Leistung",
+      "wirkliche Leistung",
+      "positive Systemleistung",
+      "reale Zustandsverbesserung",
+      "Leistung mit Wirkung",
+      "nutzbare gesellschaftliche Leistung",
+      "Impact Performance",
+      "Wirk-Leistung"
     ],
-    "definition": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet.",
+    "definition": "Wirkleistung ist echte Leistung im Sinne der Wirkungsökonomie: Aktivität, die positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert.",
     "url": "/begriffe/wirkleistung/",
     "priority": 1121,
     "autoLinkAllowed": true,
@@ -23773,6 +23802,34 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "wirkungs-bip",
+    "label": "Wirkungs-BIP",
+    "aliases": [
+      "Wirkungs-BIP",
+      "Wirkungsbruttoinlandsprodukt",
+      "BIP nach Wirkung",
+      "Impact GDP",
+      "Wirkungs-GDP",
+      "BIP mit Wirkungsbilanz",
+      "volkswirtschaftliche Wirkungsbilanz",
+      "neue Wohlstandsmessung",
+      "Wirkungsgrad der Volkswirtschaft"
+    ],
+    "definition": "Das Wirkungs-BIP ergänzt das klassische BIP um die Frage, ob wirtschaftliche Aktivität echte Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt.",
+    "url": "/begriffe/wirkungs-bip/",
+    "priority": 1130,
+    "autoLinkAllowed": true,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "wirkungsarchitektur",
     "label": "Wirkungsarchitektur",
     "aliases": [
@@ -23787,7 +23844,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.",
     "url": "/begriffe/wirkungsarchitektur/",
-    "priority": 1130,
+    "priority": 1131,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23814,7 +23871,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
     "url": "/begriffe/wirkungsassurance/",
-    "priority": 1131,
+    "priority": 1132,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23841,7 +23898,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
     "url": "/begriffe/wirkungsaudit/",
-    "priority": 1132,
+    "priority": 1133,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23867,7 +23924,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
     "url": "/begriffe/wirkungsbewertung/",
-    "priority": 1133,
+    "priority": 1134,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23891,7 +23948,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbiografie erweitert Erwerbsbiografie um Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
     "url": "/begriffe/wirkungsbiografie/",
-    "priority": 1134,
+    "priority": 1135,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23919,7 +23976,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
     "url": "/begriffe/wirkungsblindheit/",
-    "priority": 1135,
+    "priority": 1136,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23942,7 +23999,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbonus erkennt gesellschaftliche Wirkleistung an, ohne den Wert einer Person zu bewerten.",
     "url": "/begriffe/wirkungsbonus/",
-    "priority": 1136,
+    "priority": 1137,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23970,7 +24027,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsbudget ist ein Teilbudget, das nicht nur einem Ressort oder Ausgabentitel zugeordnet ist, sondern einem definierten Wirkungsziel mit Indikatoren, Prüfpfad und Rückkopplung.",
     "url": "/begriffe/wirkungsbudget/",
-    "priority": 1137,
+    "priority": 1138,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24000,7 +24057,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen.",
     "url": "/begriffe/wirkungsdaten/",
-    "priority": 1138,
+    "priority": 1139,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24021,7 +24078,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann.",
     "url": "/begriffe/wirkungsdatenraum/",
-    "priority": 1139,
+    "priority": 1140,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24041,7 +24098,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsdatenräume machen Wirkungsdaten interoperabel, prüfbar und zweckgebunden nutzbar.",
     "url": "/begriffe/wirkungsdatenraeume/",
-    "priority": 1140,
+    "priority": 1141,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24066,7 +24123,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung.",
     "url": "/begriffe/wirkungseinkommen/",
-    "priority": 1141,
+    "priority": 1142,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24090,7 +24147,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungseinkommensteuer ist ein Modellbegriff: Einkommen einordnen, nicht Menschen bewerten.",
     "url": "/begriffe/wirkungseinkommensteuer/",
-    "priority": 1142,
+    "priority": 1143,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24111,7 +24168,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsempfänger sind diejenigen, bei denen eine Zustandsveränderung ankommt.",
     "url": "/begriffe/wirkungsempfaenger/",
-    "priority": 1143,
+    "priority": 1144,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24131,7 +24188,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsethik bewertet Handlungen nach ihren tatsächlichen Folgen für Mensch, Planet und Demokratie, unter Beachtung nicht kompensierbarer Grenzen.",
     "url": "/begriffe/wirkungsethik/",
-    "priority": 1144,
+    "priority": 1145,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24155,7 +24212,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsfonds ist ein transparenter Fondsmechanismus für Rückflüsse aus Wertschöpfung, Beiträgen oder Wirkungssteuerlogik.",
     "url": "/begriffe/wirkungsfonds/",
-    "priority": 1145,
+    "priority": 1146,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24175,7 +24232,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsfreiheit beschreibt Freiheit, die ihre eigenen Folgen mitdenkt und nicht auf Kosten unsichtbarer Schäden anderer beruht.",
     "url": "/begriffe/wirkungsfreiheit/",
-    "priority": 1146,
+    "priority": 1147,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24195,7 +24252,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wirkungsgrad beschreibt das Verhältnis von nutzbarer Leistung oder Wirkung zum eingesetzten Aufwand.",
     "url": "/begriffe/wirkungsgrad/",
-    "priority": 1147,
+    "priority": 1148,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24223,7 +24280,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
     "url": "/begriffe/wirkungsgrenze/",
-    "priority": 1148,
+    "priority": 1149,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24251,7 +24308,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
     "url": "/begriffe/wirkungsgutschrift/",
-    "priority": 1149,
+    "priority": 1150,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24287,7 +24344,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Mittel nicht nur nach Ressorts und Titeln ordnet, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie prüft, priorisiert und rückkoppelt.",
     "url": "/begriffe/wirkungshaushalt/",
-    "priority": 1150,
+    "priority": 1151,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24314,7 +24371,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
     "url": "/begriffe/wirkungsindikator/",
-    "priority": 1151,
+    "priority": 1152,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24334,7 +24391,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsinnovation ist eine Innovation, die reale Zustände verbessert, Verlustleistung senkt, Resilienz erhöht und Mensch, Planet oder Demokratie stärkt.",
     "url": "/begriffe/wirkungsinnovation/",
-    "priority": 1152,
+    "priority": 1153,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24354,7 +24411,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Aufnahme neuer Informationen oder Veränderungen, sodass Orientierung und Handlungsfähigkeit entstehen.",
     "url": "/begriffe/wirkungsintegration/",
-    "priority": 1153,
+    "priority": 1154,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24376,7 +24433,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskapital ist Kapital, das gezielt positive Netto-Wirkung finanziert.",
     "url": "/begriffe/wirkungskapital/",
-    "priority": 1154,
+    "priority": 1155,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24403,7 +24460,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskompetenz heißt, Folgen von Entscheidungen, Daten, Medien, Produkten, Regeln und Projekten zu erkennen, zu bewerten und lernfähig zu verändern.",
     "url": "/begriffe/wirkungskompetenz/",
-    "priority": 1155,
+    "priority": 1156,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24429,7 +24486,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.",
     "url": "/begriffe/wirkungslenkung/",
-    "priority": 1156,
+    "priority": 1157,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24455,7 +24512,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
     "url": "/begriffe/wirkungsnetz/",
-    "priority": 1157,
+    "priority": 1158,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24478,7 +24535,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet.",
     "url": "/begriffe/wirkungsorientiertes-hosting/",
-    "priority": 1158,
+    "priority": 1159,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24499,7 +24556,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben.",
     "url": "/begriffe/wirkungspaedagogik/",
-    "priority": 1159,
+    "priority": 1160,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24520,7 +24577,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
     "url": "/begriffe/wirkungspfad/",
-    "priority": 1160,
+    "priority": 1161,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24541,7 +24598,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
     "url": "/begriffe/wirkungspflicht-des-eigentums/",
-    "priority": 1161,
+    "priority": 1162,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24568,7 +24625,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspotenzial beschreibt mögliche künftige Zustandsveränderung. Es ist noch keine eingetretene Wirkung und muss mit Unsicherheit, Kontext und Wirkmechanismus beschrieben werden.",
     "url": "/begriffe/wirkungspotenzial/",
-    "priority": 1162,
+    "priority": 1163,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24597,7 +24654,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsprüfung ist die systematische Prüfung, welche positiven, negativen, neutralen oder unklaren Wirkungen eine Maßnahme, ein Gesetz, ein Budget oder ein Programm auf Mensch, Planet und Demokratie hat.",
     "url": "/begriffe/wirkungspruefung/",
-    "priority": 1163,
+    "priority": 1164,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24619,7 +24676,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspunkte können produktbezogene Wirkung sichtbar machen, dürfen aber keine Personenbewertung oder Konsumüberwachung erzeugen.",
     "url": "/begriffe/wirkungspunkte/",
-    "priority": 1164,
+    "priority": 1165,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24639,7 +24696,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
     "url": "/begriffe/wirkungsradar/",
-    "priority": 1165,
+    "priority": 1166,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24675,7 +24732,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
     "url": "/begriffe/wirkungsrat/",
-    "priority": 1166,
+    "priority": 1167,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24695,7 +24752,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
     "url": "/begriffe/wirkungsraum/",
-    "priority": 1167,
+    "priority": 1168,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24723,7 +24780,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
     "url": "/begriffe/wirkungsregister/",
-    "priority": 1168,
+    "priority": 1169,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24746,7 +24803,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
     "url": "/begriffe/wirkungsrente/",
-    "priority": 1169,
+    "priority": 1170,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24774,7 +24831,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungsresilienz/",
-    "priority": 1170,
+    "priority": 1171,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24794,7 +24851,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrisiko bezeichnet die Möglichkeit, dass eine Handlung, Struktur oder Entscheidung negative oder destabilisierende Wirkung entfaltet.",
     "url": "/begriffe/wirkungsrisiko/",
-    "priority": 1171,
+    "priority": 1172,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24820,7 +24877,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrückkopplung bedeutet: erkannte Wirkung bleibt nicht Bericht, sondern verändert Steuerung - etwa Preise, Fonds, Regeln, Investitionen, Sortimente oder Einkommenslogiken.",
     "url": "/begriffe/wirkungsrueckkopplung/",
-    "priority": 1172,
+    "priority": 1173,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24842,7 +24899,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet.",
     "url": "/begriffe/wirkungsschule/",
-    "priority": 1173,
+    "priority": 1174,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24877,7 +24934,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungssteuer/",
-    "priority": 1174,
+    "priority": 1175,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24905,7 +24962,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
     "url": "/begriffe/wirkungssteuergesetz/",
-    "priority": 1175,
+    "priority": 1176,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24925,7 +24982,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
     "url": "/begriffe/wirkungstraeger/",
-    "priority": 1176,
+    "priority": 1177,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24953,7 +25010,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.",
     "url": "/begriffe/wirkungstransparenzbericht/",
-    "priority": 1177,
+    "priority": 1178,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24975,7 +25032,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
     "url": "/begriffe/wirkungsumsatzsteuer/",
-    "priority": 1178,
+    "priority": 1179,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24995,7 +25052,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsverantwortung bezeichnet die Verantwortung für direkte, indirekte, zeitversetzte und systemische Folgen des eigenen Handelns oder Unterlassens.",
     "url": "/begriffe/wirkungsverantwortung/",
-    "priority": 1179,
+    "priority": 1180,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25016,7 +25073,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
     "url": "/begriffe/wirkungsvermietung/",
-    "priority": 1180,
+    "priority": 1181,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25044,7 +25101,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.",
     "url": "/begriffe/wirkungswahrheit/",
-    "priority": 1181,
+    "priority": 1182,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25065,7 +25122,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswert beschreibt den Wert einer Handlung, eines Produkts, einer Organisation oder Entscheidung gemessen an ihrer tatsächlichen Wirkung auf Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungswert/",
-    "priority": 1182,
+    "priority": 1183,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25085,7 +25142,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswertschöpfung entsteht, wenn wirtschaftliche Aktivität reale positive Zustandsveränderungen für Mensch, Planet und Demokratie erzeugt.",
     "url": "/begriffe/wirkungswertschoepfung/",
-    "priority": 1183,
+    "priority": 1184,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25107,7 +25164,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungszurechnung fragt, wer oder was zu einer Zustandsveränderung beigetragen hat; Wirkungsbewertung fragt, wie diese Veränderung einzuordnen ist.",
     "url": "/begriffe/wirkungszurechnung/",
-    "priority": 1184,
+    "priority": 1185,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25127,7 +25184,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirtschaftsliberalismus betont wirtschaftliche Freiheit, Privateigentum, Vertragsfreiheit, Wettbewerb und begrenzte staatliche Eingriffe.",
     "url": "/begriffe/wirtschaftsliberalismus/",
-    "priority": 1185,
+    "priority": 1186,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25149,7 +25206,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
     "url": "/begriffe/wix-vi/",
-    "priority": 1186,
+    "priority": 1187,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25169,7 +25226,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohlfahrtsökonomie untersucht, wie wirtschaftliche Zustände und Allokationen gesellschaftliche Wohlfahrt beeinflussen.",
     "url": "/begriffe/wohlfahrtsoekonomie/",
-    "priority": 1187,
+    "priority": 1188,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25189,7 +25246,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wohlfahrtsstaat sichert soziale Risiken durch öffentliche Leistungen, Transfers und Infrastruktur ab.",
     "url": "/begriffe/wohlfahrtsstaat/",
-    "priority": 1188,
+    "priority": 1189,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25222,7 +25279,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
     "url": "/begriffe/wohnwirkung/",
-    "priority": 1189,
+    "priority": 1190,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25250,7 +25307,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖk-ID identifiziert einen Wirkungsindikator eindeutig. Sie ist kein Score, sondern der Code für das, was gemessen und bewertet wird.",
     "url": "/begriffe/woek-id/",
-    "priority": 1190,
+    "priority": 1191,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25271,7 +25328,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
     "url": "/begriffe/wstg/",
-    "priority": 1191,
+    "priority": 1192,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25292,7 +25349,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wu Wei bezeichnet ein Handeln ohne gewaltsames Erzwingen: Mitgehen mit Systemlogiken statt Kontrolle gegen sie.",
     "url": "/begriffe/wu-wei/",
-    "priority": 1192,
+    "priority": 1193,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25313,7 +25370,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
-    "priority": 1193,
+    "priority": 1194,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25334,7 +25391,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
     "url": "/begriffe/xbrl/",
-    "priority": 1194,
+    "priority": 1195,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25354,7 +25411,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Xenophobie bezeichnet Fremdenfeindlichkeit oder Abwertung von Menschen, die als fremd markiert werden.",
     "url": "/begriffe/xenophobie/",
-    "priority": 1195,
+    "priority": 1196,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25379,7 +25436,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
     "url": "/begriffe/youth-jugendbeteiligung/",
-    "priority": 1196,
+    "priority": 1197,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25404,7 +25461,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
     "url": "/begriffe/zeitwirkung/",
-    "priority": 1197,
+    "priority": 1198,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25424,7 +25481,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff oder Rohstoffersatz in der Zementindustrie.",
     "url": "/begriffe/zementverwertung-rotorblaetter/",
-    "priority": 1198,
+    "priority": 1199,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25444,7 +25501,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zentralverwaltungswirtschaft ist eine Form der Planwirtschaft, in der zentrale Behörden wirtschaftliche Entscheidungen administrativ vorgeben.",
     "url": "/begriffe/zentralverwaltungswirtschaft/",
-    "priority": 1199,
+    "priority": 1200,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25469,7 +25526,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
     "url": "/begriffe/zielkonflikt/",
-    "priority": 1200,
+    "priority": 1201,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25489,7 +25546,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein zirkuläres Geschäftsmodell schafft Wert, indem Produkte, Materialien oder Funktionen möglichst lange im Kreislauf bleiben.",
     "url": "/begriffe/zirkulaeres-geschaeftsmodell/",
-    "priority": 1201,
+    "priority": 1202,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25519,7 +25576,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
     "url": "/begriffe/zirkularitaet/",
-    "priority": 1202,
+    "priority": 1203,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25539,7 +25596,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zivilgesellschaft umfasst freiwillige, nichtstaatliche Formen gesellschaftlicher Organisation und Beteiligung, etwa Vereine, Initiativen, NGOs, Bewegungen, Stiftungen und Bürgergruppen.",
     "url": "/begriffe/zivilgesellschaft/",
-    "priority": 1203,
+    "priority": 1204,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25559,7 +25616,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zivilgesellschaftsrepression beschreibt Druck, Verbote oder Einschüchterung gegenüber NGOs, Initiativen, Medien oder Bewegungen.",
     "url": "/begriffe/zivilgesellschaftsrepression/",
-    "priority": 1204,
+    "priority": 1205,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25583,7 +25640,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
     "url": "/begriffe/zugangsgerechtigkeit/",
-    "priority": 1205,
+    "priority": 1206,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25603,7 +25660,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zukunftsbild ist eine orientierende Vorstellung davon, wohin sich ein System, eine Gesellschaft oder ein Handlungsfeld entwickeln kann.",
     "url": "/begriffe/zukunftsbild/",
-    "priority": 1206,
+    "priority": 1207,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25627,7 +25684,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
     "url": "/begriffe/zukunftsfaehigkeit/",
-    "priority": 1207,
+    "priority": 1208,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25649,7 +25706,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zurechnung ohne Scheingenauigkeit macht Unsicherheit sichtbar und unterscheidet direkte Zurechnung, plausible Mitwirkung, systemische Mitverantwortung und unklare Datenlage.",
     "url": "/begriffe/zurechnung-ohne-scheingenauigkeit/",
-    "priority": 1208,
+    "priority": 1209,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25669,7 +25726,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.",
     "url": "/begriffe/zyklenfestigkeit/",
-    "priority": 1209,
+    "priority": 1210,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",

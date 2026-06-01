@@ -26816,105 +26816,393 @@
       "canonicalLabel": "Blindleistung",
       "slug": "blindleistung",
       "aliases": [
-        "Blindleistung"
+        "Blindleistung",
+        "systemische Blindleistung",
+        "volkswirtschaftliche Blindleistung",
+        "Aufwand ohne Zustandsverbesserung",
+        "Reparaturbürokratie",
+        "Verwaltungsblindleistung",
+        "blinder Aufwand",
+        "Compliance ohne Rückkopplung",
+        "Blind Performance"
       ],
       "synonyms": [
-        "Blindleistung"
+        "Blindleistung",
+        "systemische Blindleistung",
+        "volkswirtschaftliche Blindleistung",
+        "Aufwand ohne Zustandsverbesserung",
+        "Reparaturbürokratie",
+        "Verwaltungsblindleistung",
+        "blinder Aufwand",
+        "Compliance ohne Rückkopplung",
+        "Blind Performance"
       ],
-      "shortDefinition": "Blindleistung pendelt im System, belastet es, verrichtet aber keine nutzbare Arbeit.",
+      "shortDefinition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
       "short_definition": "Blindleistung pendelt im System, belastet es, verrichtet aber keine nutzbare Arbeit.",
-      "definition": "In der Elektrotechnik ist Blindleistung für bestimmte Systeme relevant, erzeugt aber keine nutzbare Arbeit.",
-      "longDefinition": "In der Elektrotechnik ist Blindleistung für bestimmte Systeme relevant, erzeugt aber keine nutzbare Arbeit.",
+      "definition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
+      "longDefinition": "Blindleistung bezeichnet systemischen Aufwand ohne ausreichenden Netto-Fortschritt, oft als Folge fehlender Wirkungsrückkopplung, falscher Preise, Doppelabfragen oder Reparaturlogiken.",
       "long_definition": "In der Elektrotechnik ist Blindleistung für bestimmte Systeme relevant, erzeugt aber keine nutzbare Arbeit.",
-      "woekRelation": "Als Metapher: bürokratische, ökonomische oder mediale Aktivität, die Systeme belastet, aber keine positive Netto-Wirkung erzeugt.",
+      "woekRelation": "Sie erklärt, warum Systeme trotz hoher Aktivität überlastet wirken und warum bessere Wirkungsarchitektur Bürokratie reduzieren kann.",
       "woek_einordnung": "Als Metapher: bürokratische, ökonomische oder mediale Aktivität, die Systeme belastet, aber keine positive Netto-Wirkung erzeugt.",
-      "examples": [],
+      "examples": [
+        "Unternehmen liefern ähnliche Nachhaltigkeitsdaten mehrfach, ohne dass diese in Preise, Steuern, Beschaffung oder Kapitalzugang zurückwirken.",
+        "Eine Kommune verwaltet Förderprogramme gegen Energiearmut, während falsche Energiepreise und schlechte Gebäudewirkung Ursachen stabilisieren.",
+        "Ein Staat finanziert hohe Krisenreparatur, statt vorher Resilienz und Prävention zu stärken.",
+        "Ein digitales Portal ersetzt Papierformulare, übernimmt aber unnötige Datenabfragen."
+      ],
       "relatedTerms": [
         "scheinleistung",
         "wirkleistung",
         "verlustleistung",
-        "leistungsfaktor"
+        "leistungsfaktor",
+        "wirkungs-bip",
+        "nwi",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "buerokratie-als-reparaturmaschine",
+        "reparaturbuerokratie",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "wirkungspruefung",
+        "wirkungstransparenzbericht",
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "datenqualitaet",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "praevention",
+        "resilienz",
+        "verwaltung",
+        "rechtsschutz",
+        "netto-wirkungs-index",
+        "blindleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "t-sroi",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "kapitalwirkung",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "oeffentliche-beschaffung"
       ],
       "related_terms": [
         "scheinleistung",
         "wirkleistung",
         "verlustleistung",
-        "leistungsfaktor"
+        "leistungsfaktor",
+        "wirkungs-bip",
+        "nwi",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "buerokratie-als-reparaturmaschine",
+        "reparaturbuerokratie",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "wirkungspruefung",
+        "wirkungstransparenzbericht",
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "datenqualitaet",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "praevention",
+        "resilienz",
+        "verwaltung",
+        "rechtsschutz",
+        "netto-wirkungs-index",
+        "blindleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "t-sroi",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "kapitalwirkung",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "oeffentliche-beschaffung"
       ],
       "officialSources": [
-        "WÖk Glossar und Referenz|https://wirkungsoekonomie.de/glossar.html",
-        "Stafford Beer: Brain of the Firm",
-        "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-        "Heinz von Foerster: Understanding Understanding",
-        "Donella Meadows: Leverage Points|https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        "OECD Public Governance",
+        "OECD Recommendation on Budgetary Governance",
+        "PEFA Framework",
+        "World Bank Public Financial Management",
+        "UN SDGs / Agenda 2030",
+        "Stiglitz-Sen-Fitoussi Commission",
+        "OECD Measuring Well-being and Progress"
       ],
       "sourceLinks": [
         {
-          "source_type": "internal_woek",
-          "title": "WÖk Glossar und Referenz",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "status": "linked"
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
         },
         {
-          "source_type": "primary",
-          "title": "Stafford Beer: Brain of the Firm",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
         },
         {
-          "source_type": "primary",
-          "title": "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
         },
         {
-          "source_type": "primary",
-          "title": "Heinz von Foerster: Understanding Understanding",
-          "url": "",
-          "status": "bibliographic"
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
         },
         {
-          "source_type": "primary",
-          "title": "Donella Meadows: Leverage Points",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
-          "status": "linked"
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
         }
       ],
       "source_links": [
         {
-          "source_type": "internal_woek",
-          "title": "WÖk Glossar und Referenz",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "status": "linked"
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
         },
         {
-          "source_type": "primary",
-          "title": "Stafford Beer: Brain of the Firm",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
         },
         {
-          "source_type": "primary",
-          "title": "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
         },
         {
-          "source_type": "primary",
-          "title": "Heinz von Foerster: Understanding Understanding",
-          "url": "",
-          "status": "bibliographic"
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
         },
         {
-          "source_type": "primary",
-          "title": "Donella Meadows: Leverage Points",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
-          "status": "linked"
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
         }
       ],
       "internalLinks": [],
-      "internal_links": [],
+      "internal_links": [
+        {
+          "term": "wirkleistung",
+          "label": "Wirkleistung",
+          "url": "/begriffe/wirkleistung/"
+        },
+        {
+          "term": "scheinleistung",
+          "label": "Scheinleistung",
+          "url": "/begriffe/scheinleistung/"
+        },
+        {
+          "term": "verlustleistung",
+          "label": "Verlustleistung",
+          "url": "/begriffe/verlustleistung/"
+        },
+        {
+          "term": "wirkungs-bip",
+          "label": "Wirkungs-BIP",
+          "url": "/begriffe/wirkungs-bip/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "wirkungsblindheit",
+          "label": "Wirkungsblindheit",
+          "url": "/begriffe/wirkungsblindheit/"
+        },
+        {
+          "term": "wirkungswahrheit",
+          "label": "Wirkungswahrheit",
+          "url": "/begriffe/wirkungswahrheit/"
+        },
+        {
+          "term": "wirkungsrueckkopplung",
+          "label": "Wirkungsrückkopplung",
+          "url": "/begriffe/wirkungsrueckkopplung/"
+        },
+        {
+          "term": "wirkungslenkung",
+          "label": "Wirkungslenkung",
+          "url": "/begriffe/wirkungslenkung/"
+        },
+        {
+          "term": "wirkungsarchitektur",
+          "label": "Wirkungsarchitektur",
+          "url": "/begriffe/wirkungsarchitektur/"
+        },
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungsbudget",
+          "label": "Wirkungsbudget",
+          "url": "/begriffe/wirkungsbudget/"
+        },
+        {
+          "term": "wirkungspruefung",
+          "label": "Wirkungsprüfung",
+          "url": "/begriffe/wirkungspruefung/"
+        },
+        {
+          "term": "wirkungstransparenzbericht",
+          "label": "Wirkungstransparenzbericht",
+          "url": "/begriffe/wirkungstransparenzbericht/"
+        },
+        {
+          "term": "ehrliche-preise",
+          "label": "Ehrliche Preise",
+          "url": "/begriffe/ehrliche-preise/"
+        },
+        {
+          "term": "wirkungssteuer",
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "digitaler-produktpass",
+          "label": "Digitaler Produktpass",
+          "url": "/begriffe/digitaler-produktpass/"
+        },
+        {
+          "term": "wirkungsregister",
+          "label": "Wirkungsregister",
+          "url": "/begriffe/wirkungsregister/"
+        },
+        {
+          "term": "praevention",
+          "label": "Prävention",
+          "url": "/begriffe/praevention/"
+        },
+        {
+          "term": "resilienz",
+          "label": "Resilienz",
+          "url": "/begriffe/resilienz/"
+        },
+        {
+          "term": "verwaltung",
+          "label": "Verwaltung",
+          "url": "/begriffe/verwaltung/"
+        },
+        {
+          "term": "rechtsschutz",
+          "label": "Rechtsschutz",
+          "url": "/begriffe/rechtsschutz/"
+        }
+      ],
       "categories": [
+        "Leistung, Bürokratie & Systemsteuerung",
+        "Volkswirtschaft & neue Wohlstandsmessung",
+        "Glossar-Pack 009",
         "physik-energie-und-wirkungsmetaphern"
       ],
       "tags": [
@@ -26924,37 +27212,58 @@
         "Wirkungsanalyse",
         "Wirkungssteuerung"
       ],
-      "category": "Physik, Energie und Wirkungsmetaphern",
-      "conceptStatus": "WÖk-Präzisierungsbegriff",
-      "concept_status": "WÖk-Präzisierungsbegriff",
+      "category": "Leistung, Bürokratie & Systemsteuerung",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
       "publicationStatus": "published",
       "publication_status": "published",
       "status": "woek-praezisierungsbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
-      "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "version": "1.1",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Physik, Energie und Wirkungsmetaphern",
-      "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Physik, Energie und Wirkungsmetaphern",
-      "hoverDefinition": "Blindleistung pendelt im System, belastet es, verrichtet aber keine nutzbare Arbeit.",
+      "reviewStatus": "redaktionell zu prüfen",
+      "source": "Glossar-Pack 009",
+      "sourceDocument": "Glossar-Pack 009: Volkswirtschaft & neue Wohlstandsmessung",
+      "sourceSection": "Professionalisiertes Glossar-Pack 009",
+      "hoverDefinition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
       "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "usageNote": "Nicht als individuelle Faulheit oder Personenurteil formulieren. Blindleistung ist ein Systemeffekt falscher Steuerung.",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "pageUrl": "/begriffe/blindleistung/",
       "metaTitle": "Blindleistung | Glossar der Wirkungsökonomie",
       "metaDescription": "Blindleistung pendelt im System, belastet es, verrichtet aber keine nutzbare Arbeit. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "preferredUsage": "",
+      "doNotConfuseWith": [
+        "Scheinleistung: betont Leistungsillusion; Blindleistung betont systembelastenden Aufwand.",
+        "Verlustleistung: erzeugt negative Wirkung; Blindleistung erzeugt Aufwand ohne Netto-Fortschritt.",
+        "Bürokratie generell: Rechtsstaat, Schutz, Prüfverfahren und Rechenschaft sind notwendig.",
+        "Ineffizienz: zu hoher Aufwand für ein Ziel; Blindleistung entsteht, wenn Ziel oder Rückkopplung falsch gesetzt ist.",
+        "Faulheit: Blindleistung ist kein Personenurteil.",
+        "Digitalisierung: kann Blindleistung reduzieren oder digitale Blindleistung erzeugen.",
+        "Compliance: kann Schutz erzeugen; wird blind, wenn sie keine Wirkung rückkoppelt.",
+        "Reparatur: notwendig, aber problematisch, wenn sie Prävention dauerhaft verdrängt."
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Maßstabskrise",
+        "Die neue Ordnung des Wohlstands: Leistung neu definieren",
+        "Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+        "Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung",
+        "Grundlagenpapier Wirkungsökonomie",
+        "Leitbild für Mensch, Planet und Demokratie",
+        "T-SROI-Whitepaper",
+        "Systemmodell der Wirkungsökonomie",
+        "Wenn Maschinen arbeiten",
+        "Arbeitspapier Wirkungseinkommensteuer"
+      ],
+      "preferredUsage": "Als Diagnose für Aufwand ohne ausreichende Zustandsverbesserung verwenden, nicht als pauschale Abwertung von Verwaltung, Arbeit oder Compliance.",
       "deprecatedUsage": [],
       "glossaryOrderKey": "Blindleistung",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Prägungsbegriff / Diagnosebegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Diagnosebegriff",
       "theme": [
         "Physik, Energie und Wirkungsmetaphern"
       ],
@@ -26985,7 +27294,71 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "priority": 145,
+      "review_status": "redaktionell zu prüfen",
+      "glossary_pack": "009",
+      "cluster": "Volkswirtschaft & neue Wohlstandsmessung",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "relation_types": [
+        "same_cluster",
+        "performance_logic",
+        "anti_blindness",
+        "public_finance",
+        "steering_logic",
+        "system_state"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- Aufwand ohne ausreichenden Netto-Fortschritt\n- entsteht oft durch falsche Steuerung, Reparatur-, Kompensations- oder Verwaltungslogik\n- Beispiele sind doppelte Datenabfragen, Förderprogramme gegen falsche Preise oder Nachweischaos\n- kein individuelles Versagen\n- klassisches BIP kann Blindleistung zählen\n- soll in Wirkleistung überführt werden\n- gute Verwaltung bleibt notwendig"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Blindleistung ist an die physikalische Unterscheidung von Wirkleistung, Scheinleistung und Blindleistung angelehnt, wird aber gesellschaftlich übertragen. Sie entsteht, wenn viel gearbeitet, dokumentiert, geprüft, repariert, beantragt oder verwaltet wird, ohne dass die Ursache eines Problems verbessert wird. Viele Menschen leisten in blindleistungsintensiven Systemen harte und notwendige Arbeit; das Problem liegt in der Architektur, weil an anderer Stelle falsch gemessen oder gelenkt wird."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Blindleistung erklärt, warum Verwaltung, Unternehmen, Bürger:innen, Kommunen und Zivilgesellschaft viel Zeit mit Nachweisen, Anträgen, Korrekturen, Reparaturen, Förderlogik, Krisenverwaltung und Compliance verbringen. Ein Teil ist notwendig; ein anderer entsteht durch fehlende Wirkungsrückkopplung. Sie zeigt, warum Bürokratie oft Folge falscher Preise ist, warum Berichtspflichten ohne Datenweiterverwendung überlasten und warum Prävention volkswirtschaftlich höher zu bewerten ist als Reparatur."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk grenzt gute Verwaltung von Blindleistung ab. Gute Verwaltung schafft Schutz, Rechtssicherheit, Transparenz, öffentliche Güter und demokratische Kontrolle. Blindleistung entsteht, wenn Grundmechanismus, Datenflüsse oder Rückkopplung falsch gesetzt sind. Reduziert wird sie durch wirkungsnähere Preise, maschinenlesbare Produktdaten, DPP, Wirkungsregister, Scorecards, Beschaffung nach Wirkung, Wirkungshaushalt, Prävention und einmal erhobene, mehrfach genutzte Daten mit Datenschutz und Rechtsschutz."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Scheinleistung: betont Leistungsillusion; Blindleistung betont systembelastenden Aufwand.\n- Verlustleistung: erzeugt negative Wirkung; Blindleistung erzeugt Aufwand ohne Netto-Fortschritt.\n- Bürokratie generell: Rechtsstaat, Schutz, Prüfverfahren und Rechenschaft sind notwendig.\n- Ineffizienz: zu hoher Aufwand für ein Ziel; Blindleistung entsteht, wenn Ziel oder Rückkopplung falsch gesetzt ist.\n- Faulheit: Blindleistung ist kein Personenurteil.\n- Digitalisierung: kann Blindleistung reduzieren oder digitale Blindleistung erzeugen.\n- Compliance: kann Schutz erzeugen; wird blind, wenn sie keine Wirkung rückkoppelt.\n- Reparatur: notwendig, aber problematisch, wenn sie Prävention dauerhaft verdrängt."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Unternehmen liefern ähnliche Nachhaltigkeitsdaten mehrfach, ohne dass diese in Preise, Steuern, Beschaffung oder Kapitalzugang zurückwirken.\n- Eine Kommune verwaltet Förderprogramme gegen Energiearmut, während falsche Energiepreise und schlechte Gebäudewirkung Ursachen stabilisieren.\n- Ein Staat finanziert hohe Krisenreparatur, statt vorher Resilienz und Prävention zu stärken.\n- Ein digitales Portal ersetzt Papierformulare, übernimmt aber unnötige Datenabfragen."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Diagnosefragen: Welcher Aufwand entsteht? Welche Zustandsverbesserung entsteht? Ist der Aufwand Folge falscher Preise, fehlender Dateninteroperabilität oder fehlender Prävention? Werden Ursachen oder Symptome bearbeitet? Gibt es Rückkopplung in Preis, Steuer, Budget, Beschaffung oder Entscheidung? Datenfelder: blind_performance_id, system_area, process_name, administrative_cost, time_cost, root_cause, missing_feedback, duplicate_data_requests, prevention_gap, repair_costs, impact_improvement_observed, data_reuse_possible, impact_architecture_solution und expected_wirkleistung_conversion."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "Wirkleistung, Scheinleistung, Verlustleistung, wirkungs-bip, NWI, Wirkungsblindheit, Wirkungswahrheit, buerokratie-als-reparaturmaschine, reparaturbuerokratie, Wirkungsrückkopplung, Wirkungslenkung, Wirkungsarchitektur, Wirkungshaushalt, Wirkungsbudget, Wirkungsprüfung, Wirkungstransparenzbericht, Ehrliche Preise, Wirkungssteuer, Datenqualität, Digitaler Produktpass, Wirkungsregister, Prävention, Resilienz, Verwaltung, Rechtsschutz"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Maßstabskrise\n- Die neue Ordnung des Wohlstands: Leistung neu definieren\n- Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung\n- Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung\n- Grundlagenpapier Wirkungsökonomie\n- Leitbild für Mensch, Planet und Demokratie\n- T-SROI-Whitepaper\n- Systemmodell der Wirkungsökonomie\n- Wenn Maschinen arbeiten\n- Arbeitspapier Wirkungseinkommensteuer\n\nExterne Quellen:\n- OECD Public Governance\n- OECD Recommendation on Budgetary Governance\n- PEFA Framework\n- World Bank Public Financial Management\n- UN SDGs / Agenda 2030\n- Stiglitz-Sen-Fitoussi Commission\n- OECD Measuring Well-being and Progress"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Volkswirtschaft & neue Wohlstandsmessung\npack: 009\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: WÖk-Begriffe sind konzeptionelle Arbeitslogik, keine Personenbewertung und kein Social-Credit-System."
+        }
+      ]
     },
     {
       "id": "bundesregierung",
@@ -165140,20 +165513,35 @@
       "aliases": [
         "NWI",
         "Netto-Wirkungs-Index",
-        "Netto-Wirkungs-Index / NWI"
+        "Netto-Wirkungs-Index / NWI",
+        "Netto Wirkungs Index",
+        "Net Impact Index",
+        "operative Netto-Wirkungskennzahl",
+        "Wirkungsindex",
+        "WÖk-NWI",
+        "Netto-Wirkungskennzahl"
       ],
       "synonyms": [
         "NWI",
         "Netto-Wirkungs-Index",
-        "Netto-Wirkungs-Index / NWI"
+        "Netto-Wirkungs-Index / NWI",
+        "Netto Wirkungs Index",
+        "Net Impact Index",
+        "operative Netto-Wirkungskennzahl",
+        "Wirkungsindex",
+        "WÖk-NWI",
+        "Netto-Wirkungskennzahl"
       ],
-      "shortDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung.",
-      "definition": "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet.",
-      "longDefinition": "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet.",
-      "woekRelation": "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung.",
+      "shortDefinition": "Der NWI ist die operative Kennzahl der Wirkungsökonomie für Netto-Wirkung: Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order zu einer prüfbaren Gesamtbewertung.",
+      "definition": "Der NWI ist die operative Kennzahl der Wirkungsökonomie für Netto-Wirkung: Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order zu einer prüfbaren Gesamtbewertung.",
+      "longDefinition": "Der NWI bewertet Netto-Wirkung in einem definierten Wirkungsraum und verbindet positive, negative, neutrale, unsichere und begrenzende Wirkungen mit Scorecards, Datenqualität und Nichtkompensation.",
+      "woekRelation": "Der NWI macht Netto-Wirkung steuerungsfähig, ohne das zugrunde liegende Wirkungsprofil zu verdecken.",
       "statusNote": "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung.",
-      "usageNote": "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung.",
+      "usageNote": "Nicht als Supernote, Durchschnittswert oder Transformationskennzahl formulieren; T-SROI bleibt die nachgelagerte Transformationsprüfung.",
       "categories": [
+        "Volkswirtschaft, Messung & Wirkungsmethodik",
+        "Volkswirtschaft & neue Wohlstandsmessung",
+        "Glossar-Pack 009",
         "messbegriff"
       ],
       "classicGlossary": true,
@@ -165164,51 +165552,318 @@
         "t-sroi",
         "reverse-merit-order",
         "wirkungsdaten",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "wirkungs-bip",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "positive-netto-wirkung",
+        "scorecard",
+        "wirkungsgrenze",
+        "wirkungshaushalt",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "datenqualitaet",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nwi",
+        "netto-wirkungs-index",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "resilienz",
+        "praevention",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkungspruefung"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN SDGs / Agenda 2030",
+        "UN SDG Indicators",
+        "OECD Measuring Well-being and Progress",
+        "Stiglitz-Sen-Fitoussi Commission",
+        "GRI Standards",
+        "CSRD / ESRS",
+        "EU-Taxonomie"
+      ],
       "pageUrl": "/begriffe/nwi/",
-      "priority": 72,
+      "priority": 145,
       "status": "führender-begriff",
       "version": "1.1",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation.",
+      "category": "Volkswirtschaft, Messung & Wirkungsmethodik",
+      "source": "Glossar-Pack 009",
+      "sourceDocument": "Glossar-Pack 009: Volkswirtschaft & neue Wohlstandsmessung",
+      "sourceSection": "Professionalisiertes Glossar-Pack 009",
+      "hoverDefinition": "Der NWI ist die operative Kennzahl der Wirkungsökonomie für Netto-Wirkung: Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order zu einer prüfbaren Gesamtbewertung.",
       "doNotConfuseWith": [
-        "T-SROI",
-        "FinalScore",
-        "SROI"
+        "Durchschnittsnote: Der NWI ist keine einfache Mittelung.",
+        "FinalScore: FinalScore ist eine Scorecard-Gesamtbewertung; NWI ist breiter als Netto-Wirkungskennzahl.",
+        "T-SROI: T-SROI bewertet Transformationswirkung; NWI bewertet Netto-Wirkung.",
+        "ESG-Rating: kann Risiko- und Berichtsperspektiven abbilden; NWI bewertet Zustandswirkung im WÖk-Rahmen.",
+        "SROI: monetarisiert soziale Wirkung; NWI muss nicht monetär sein und berücksichtigt Nichtkompensation.",
+        "BIP: misst Aktivität; NWI bewertet Wirkung.",
+        "Wirkungs-BIP: volkswirtschaftliche Leselogik; NWI ist operative Kennzahl.",
+        "moralisches Urteil: methodisch dokumentierte Bewertung, keine private Moralnote."
       ],
       "relatedDocuments": [
         "technische-leitlinien-wustg",
-        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Maßstabskrise",
+        "Die neue Ordnung des Wohlstands: Leistung neu definieren",
+        "Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+        "Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung",
+        "Grundlagenpapier Wirkungsökonomie",
+        "Leitbild für Mensch, Planet und Demokratie",
+        "T-SROI-Whitepaper",
+        "Systemmodell der Wirkungsökonomie",
+        "Wenn Maschinen arbeiten",
+        "Arbeitspapier Wirkungseinkommensteuer"
       ],
-      "examples": [],
-      "preferredUsage": "NWI als operative Netto-Wirkungskennzahl.",
+      "examples": [
+        "Ein Produkt erhält hohen NWI, wenn Klima, Ressourcen, Arbeit, Gesundheit und Demokratie belastbar positiv wirken und keine Wirkungsgrenze verletzt wird.",
+        "Ein Lieferant erhält niedrigen NWI, wenn CO2-Werte gut sind, aber Living Wage, Arbeitsrechte oder Datenqualität kritisch bleiben.",
+        "Ein öffentliches Programm kann mittleren NWI haben, wenn es kurzfristig entlastet, aber langfristig Abhängigkeiten stabilisiert.",
+        "Ein Wohnprojekt kann hohen NWI haben, wenn Bezahlbarkeit, Energie, Gesundheit, soziale Mischung, Bodenwirkung und Teilhabe positiv wirken."
+      ],
+      "preferredUsage": "Als operative Netto-Wirkungskennzahl für Produkte, Programme, Kapitalflüsse, Beschaffung, Haushalte und Projekte verwenden.",
       "deprecatedUsage": [
         "T-SROI als Netto-Wirkungskennzahl"
       ],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "netto wirkungs index",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "netto-wirkung",
         "finalscore",
         "t-sroi",
         "reverse-merit-order",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "wirkungscontrolling",
+        "wirkungs-bip",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "positive-netto-wirkung",
+        "scorecard",
+        "wirkungsgrenze",
+        "wirkungshaushalt",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "datenqualitaet",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nwi",
+        "netto-wirkungs-index",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "resilienz",
+        "praevention",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkungspruefung"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
+        },
+        {
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
+        },
+        {
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        }
+      ],
+      "internal_links": [
+        {
+          "term": "wirkleistung",
+          "label": "Wirkleistung",
+          "url": "/begriffe/wirkleistung/"
+        },
+        {
+          "term": "scheinleistung",
+          "label": "Scheinleistung",
+          "url": "/begriffe/scheinleistung/"
+        },
+        {
+          "term": "blindleistung",
+          "label": "Blindleistung",
+          "url": "/begriffe/blindleistung/"
+        },
+        {
+          "term": "verlustleistung",
+          "label": "Verlustleistung",
+          "url": "/begriffe/verlustleistung/"
+        },
+        {
+          "term": "netto-wirkung",
+          "label": "Netto-Wirkung",
+          "url": "/begriffe/netto-wirkung/"
+        },
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "scorecard",
+          "label": "Scorecard",
+          "url": "/begriffe/scorecard/"
+        },
+        {
+          "term": "finalscore",
+          "label": "FinalScore",
+          "url": "/begriffe/finalscore/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "reverse-merit-order",
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        },
+        {
+          "term": "wirkungsgrenze",
+          "label": "Wirkungsgrenze",
+          "url": "/begriffe/wirkungsgrenze/"
+        },
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "oeffentliche-beschaffung",
+          "label": "Öffentliche Beschaffung",
+          "url": "/begriffe/oeffentliche-beschaffung/"
+        },
+        {
+          "term": "kapitalwirkung",
+          "label": "Kapitalwirkung",
+          "url": "/begriffe/kapitalwirkung/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "wirkungsaudit",
+          "label": "Wirkungsaudit",
+          "url": "/begriffe/wirkungsaudit/"
+        },
+        {
+          "term": "wirkungsassurance",
+          "label": "Wirkungsassurance",
+          "url": "/begriffe/wirkungsassurance/"
+        }
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Kennzahlenbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Kennzahlenbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -165239,7 +165894,118 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "009",
+      "cluster": "Volkswirtschaft & neue Wohlstandsmessung",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
+        },
+        {
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
+        },
+        {
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "impact_metric",
+        "welfare_measurement",
+        "steering_logic",
+        "accounting_logic"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Der NWI ist die operative Kennzahl der Wirkungsökonomie für Netto-Wirkung: Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order zu einer prüfbaren Gesamtbewertung."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- steht für Netto-Wirkungs-Index\n- bewertet Netto-Wirkung in einem definierten Wirkungsraum\n- keine Supernote, kein Durchschnitt und keine Transformationskennzahl\n- baut auf Scorecards, WÖk-IDs, Benchmarks, Datenqualität, Mindestbedingungen und Reverse Merit Order auf\n- macht Wirkung steuerungsfähig, ohne das Wirkungsprofil zu verdecken\n- nur belastbar mit sichtbaren Systemgrenzen, Unsicherheiten und Wirkungsgrenzen"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Der Netto-Wirkungs-Index führt die Wirkungen eines Bewertungsgegenstands in einem definierten Wirkungsraum zusammen: Produkt, Dienstleistung, Unternehmen, Investition, Gesetz, Haushaltsprogramm, Beschaffung, Kapitalfluss, Tätigkeit oder Infrastruktur. Er ist keine einfache Durchschnittsnote. Schwere negative Wirkungen dürfen nicht durch positive Einzelwerte verdeckt werden; deshalb berücksichtigt der NWI Wirkungsfelder, WÖk-IDs, Benchmarks, Scorecards, Datenqualität, Unsicherheit, Systemgrenzen, Zeitwirkung, Mindestbedingungen, Ausschlussindikatoren, Wirkungsgrenzen und Reverse Merit Order."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Ein einzelner CO2-, Wasser-, Arbeitsrechts- oder Governance-Wert sagt noch nicht, welche Gesamtwirkung ein Produkt oder Programm erzeugt. Gleichzeitig wäre eine beliebige Durchschnittsnote fachlich falsch. Der NWI schließt diese Lücke: Er macht Wirkungsbewertung operativ nutzbar und bleibt mit Datenherkunft, Scorecard, Prüfstatus und Korrekturgeschichte verbunden."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet Indikator, WÖk-ID, Scorecard, FinalScore, NWI und T-SROI. Der FinalScore ist eine steuerungsfähige Gesamtbewertung innerhalb einer Scorecard. Der NWI führt Netto-Wirkung eines Bewertungsgegenstands operativ zusammen. T-SROI prüft Transformationswirkung und systemische Hebelwirkung auf Basis geprüfter Netto-Wirkung. Ein guter NWI ist also nicht automatisch transformativ; ein transformativer Pfad braucht zusätzliche Bewertung."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Durchschnittsnote: Der NWI ist keine einfache Mittelung.\n- FinalScore: FinalScore ist eine Scorecard-Gesamtbewertung; NWI ist breiter als Netto-Wirkungskennzahl.\n- T-SROI: T-SROI bewertet Transformationswirkung; NWI bewertet Netto-Wirkung.\n- ESG-Rating: kann Risiko- und Berichtsperspektiven abbilden; NWI bewertet Zustandswirkung im WÖk-Rahmen.\n- SROI: monetarisiert soziale Wirkung; NWI muss nicht monetär sein und berücksichtigt Nichtkompensation.\n- BIP: misst Aktivität; NWI bewertet Wirkung.\n- Wirkungs-BIP: volkswirtschaftliche Leselogik; NWI ist operative Kennzahl.\n- moralisches Urteil: methodisch dokumentierte Bewertung, keine private Moralnote."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Produkt erhält hohen NWI, wenn Klima, Ressourcen, Arbeit, Gesundheit und Demokratie belastbar positiv wirken und keine Wirkungsgrenze verletzt wird.\n- Ein Lieferant erhält niedrigen NWI, wenn CO2-Werte gut sind, aber Living Wage, Arbeitsrechte oder Datenqualität kritisch bleiben.\n- Ein öffentliches Programm kann mittleren NWI haben, wenn es kurzfristig entlastet, aber langfristig Abhängigkeiten stabilisiert.\n- Ein Wohnprojekt kann hohen NWI haben, wenn Bezahlbarkeit, Energie, Gesundheit, soziale Mischung, Bodenwirkung und Teilhabe positiv wirken."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder: nwi_id, assessed_object, object_type, assessment_scope, impact_space, relevant_wok_ids, scorecard_reference, field_scores, positive_effects, negative_effects, neutral_effects, uncertain_effects, data_quality_summary, system_boundaries, time_horizon, minimum_conditions, exclusion_indicators, red_flags, impact_boundaries, reverse_merit_order_result, non_compensation_result, nwi_value, nwi_class, confidence_level, audit_status, assurance_status, version, explanation, steering_recommendation und correction_history. NWI-Klassen reichen von +3 sehr hoher positiver Netto-Wirkung bis -3 hoch schädlich oder nicht akzeptabel."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "wirkungs-bip, Wirkleistung, Scheinleistung, Blindleistung, Verlustleistung, Netto-Wirkung, positive Netto-Wirkung, Scorecard, FinalScore, T-SROI, Reverse Merit Order, Wirkungsgrenze, Wirkungshaushalt, Öffentliche Beschaffung, Kapitalwirkung, Datenqualität, Wirkungsaudit, Wirkungsassurance"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Maßstabskrise\n- Die neue Ordnung des Wohlstands: Leistung neu definieren\n- Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung\n- Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung\n- Grundlagenpapier Wirkungsökonomie\n- Leitbild für Mensch, Planet und Demokratie\n- T-SROI-Whitepaper\n- Systemmodell der Wirkungsökonomie\n- Wenn Maschinen arbeiten\n- Arbeitspapier Wirkungseinkommensteuer\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- UN SDG Indicators\n- OECD Measuring Well-being and Progress\n- Stiglitz-Sen-Fitoussi Commission\n- GRI Standards\n- CSRD / ESRS\n- EU-Taxonomie"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Volkswirtschaft & neue Wohlstandsmessung\npack: 009\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: WÖk-Begriffe sind konzeptionelle Arbeitslogik, keine Personenbewertung und kein Social-Credit-System."
+        }
+      ]
     },
     {
       "id": "netzanschluss",
@@ -231062,105 +231828,359 @@
       "canonicalLabel": "Scheinleistung",
       "slug": "scheinleistung",
       "aliases": [
-        "Scheinleistung"
+        "Scheinleistung",
+        "scheinbare Leistung",
+        "Aktivität ohne Wirkungsnachweis",
+        "Leistungsillusion",
+        "Output ohne Wirkung",
+        "Scheinerfolg",
+        "Pseudo-Leistung",
+        "Performance ohne Zustandsverbesserung"
       ],
       "synonyms": [
-        "Scheinleistung"
+        "Scheinleistung",
+        "scheinbare Leistung",
+        "Aktivität ohne Wirkungsnachweis",
+        "Leistungsillusion",
+        "Output ohne Wirkung",
+        "Scheinerfolg",
+        "Pseudo-Leistung",
+        "Performance ohne Zustandsverbesserung"
       ],
-      "shortDefinition": "Scheinleistung ist in der Elektrotechnik die scheinbar vorhandene Gesamtleistung im System.",
+      "shortDefinition": "Scheinleistung ist Aktivität, die nach Leistung aussieht, aber keine belastbare positive Zustandsveränderung nachweist.",
       "short_definition": "Scheinleistung ist in der Elektrotechnik die scheinbar vorhandene Gesamtleistung im System.",
-      "definition": "Als technischer Begriff verbindet sie Wirk- und Blindanteile.",
-      "longDefinition": "Als technischer Begriff verbindet sie Wirk- und Blindanteile.",
+      "definition": "Scheinleistung ist Aktivität, die nach Leistung aussieht, aber keine belastbare positive Zustandsveränderung nachweist.",
+      "longDefinition": "Scheinleistung bezeichnet Aktivität, die sichtbar, teuer, arbeitsintensiv oder öffentlichkeitswirksam sein kann, ohne positive Wirkung ausreichend zu belegen.",
       "long_definition": "Als technischer Begriff verbindet sie Wirk- und Blindanteile.",
-      "woekRelation": "Als WÖk-Metapher: Aktivität, Umsatz, Reichweite oder Aufwand, der nach Leistung aussieht, aber keine positive Wirkung erzeugen muss.",
+      "woekRelation": "Sie benennt die Leistungsillusion, wenn Systeme Output, Reichweite, Mittelabfluss oder Berichte mit Wirkung verwechseln.",
       "woek_einordnung": "Als WÖk-Metapher: Aktivität, Umsatz, Reichweite oder Aufwand, der nach Leistung aussieht, aber keine positive Wirkung erzeugen muss.",
-      "examples": [],
+      "examples": [
+        "Ein Nachhaltigkeitsbericht listet Maßnahmen, aber Preise, Produkte, Lieferketten und Investitionen ändern sich nicht.",
+        "Ein Förderprogramm gibt Millionen aus, ohne Zielzustände messbar zu verbessern.",
+        "Eine Plattformkampagne erreicht Millionen, steigert aber nur Aufmerksamkeit, nicht Orientierung.",
+        "Ein politisches Programm hat große Ziele, aber keine Wirkungsprüfung, Datenqualität oder Ex-post-Evaluation."
+      ],
       "relatedTerms": [
         "wirkleistung",
         "blindleistung",
         "verlustleistung",
-        "wirkungsblindheit"
+        "wirkungsblindheit",
+        "wirkungs-bip",
+        "nwi",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungspruefung",
+        "wirkungsaudit",
+        "wirkungstransparenzbericht",
+        "wirkungshaushalt",
+        "responsible-marketing",
+        "netto-wirkungs-index",
+        "scheinleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbudget",
+        "t-sroi",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "datenqualitaet",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "kapitalwirkung",
+        "resilienz",
+        "praevention",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "oeffentliche-beschaffung"
       ],
       "related_terms": [
         "wirkleistung",
         "blindleistung",
         "verlustleistung",
-        "wirkungsblindheit"
+        "wirkungsblindheit",
+        "wirkungs-bip",
+        "nwi",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungspruefung",
+        "wirkungsaudit",
+        "wirkungstransparenzbericht",
+        "wirkungshaushalt",
+        "responsible-marketing",
+        "netto-wirkungs-index",
+        "scheinleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbudget",
+        "t-sroi",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "datenqualitaet",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "kapitalwirkung",
+        "resilienz",
+        "praevention",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "oeffentliche-beschaffung"
       ],
       "officialSources": [
-        "WÖk Glossar und Referenz|https://wirkungsoekonomie.de/glossar.html",
-        "Stafford Beer: Brain of the Firm",
-        "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-        "Heinz von Foerster: Understanding Understanding",
-        "Donella Meadows: Leverage Points|https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        "UN SDGs / Agenda 2030",
+        "OECD Measuring Well-being and Progress",
+        "Stiglitz-Sen-Fitoussi Commission",
+        "GRI Standards",
+        "CSRD / ESRS"
       ],
       "sourceLinks": [
         {
-          "source_type": "internal_woek",
-          "title": "WÖk Glossar und Referenz",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "status": "linked"
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
         },
         {
-          "source_type": "primary",
-          "title": "Stafford Beer: Brain of the Firm",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
         },
         {
-          "source_type": "primary",
-          "title": "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
         },
         {
-          "source_type": "primary",
-          "title": "Heinz von Foerster: Understanding Understanding",
-          "url": "",
-          "status": "bibliographic"
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
         },
         {
-          "source_type": "primary",
-          "title": "Donella Meadows: Leverage Points",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
-          "status": "linked"
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
         }
       ],
       "source_links": [
         {
-          "source_type": "internal_woek",
-          "title": "WÖk Glossar und Referenz",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "status": "linked"
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
         },
         {
-          "source_type": "primary",
-          "title": "Stafford Beer: Brain of the Firm",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
         },
         {
-          "source_type": "primary",
-          "title": "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
         },
         {
-          "source_type": "primary",
-          "title": "Heinz von Foerster: Understanding Understanding",
-          "url": "",
-          "status": "bibliographic"
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
         },
         {
-          "source_type": "primary",
-          "title": "Donella Meadows: Leverage Points",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
-          "status": "linked"
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
         }
       ],
       "internalLinks": [],
-      "internal_links": [],
+      "internal_links": [
+        {
+          "term": "wirkleistung",
+          "label": "Wirkleistung",
+          "url": "/begriffe/wirkleistung/"
+        },
+        {
+          "term": "blindleistung",
+          "label": "Blindleistung",
+          "url": "/begriffe/blindleistung/"
+        },
+        {
+          "term": "verlustleistung",
+          "label": "Verlustleistung",
+          "url": "/begriffe/verlustleistung/"
+        },
+        {
+          "term": "wirkungs-bip",
+          "label": "Wirkungs-BIP",
+          "url": "/begriffe/wirkungs-bip/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "wirkungsblindheit",
+          "label": "Wirkungsblindheit",
+          "url": "/begriffe/wirkungsblindheit/"
+        },
+        {
+          "term": "wirkungswahrheit",
+          "label": "Wirkungswahrheit",
+          "url": "/begriffe/wirkungswahrheit/"
+        },
+        {
+          "term": "greenwashing",
+          "label": "Greenwashing",
+          "url": "/begriffe/greenwashing/"
+        },
+        {
+          "term": "impact-washing",
+          "label": "Impact-Washing",
+          "url": "/begriffe/impact-washing/"
+        },
+        {
+          "term": "sdg-washing",
+          "label": "SDG-Washing",
+          "url": "/begriffe/sdg-washing/"
+        },
+        {
+          "term": "wirkung",
+          "label": "Wirkung",
+          "url": "/begriffe/wirkung/"
+        },
+        {
+          "term": "wirkungspotenzial",
+          "label": "Wirkungspotenzial",
+          "url": "/begriffe/wirkungspotenzial/"
+        },
+        {
+          "term": "wirkungspruefung",
+          "label": "Wirkungsprüfung",
+          "url": "/begriffe/wirkungspruefung/"
+        },
+        {
+          "term": "wirkungsaudit",
+          "label": "Wirkungsaudit",
+          "url": "/begriffe/wirkungsaudit/"
+        },
+        {
+          "term": "wirkungstransparenzbericht",
+          "label": "Wirkungstransparenzbericht",
+          "url": "/begriffe/wirkungstransparenzbericht/"
+        },
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "responsible-marketing",
+          "label": "Responsible Marketing",
+          "url": "/begriffe/responsible-marketing/"
+        }
+      ],
       "categories": [
+        "Leistung, Wohlstandsmessung & Systemkritik",
+        "Volkswirtschaft & neue Wohlstandsmessung",
+        "Glossar-Pack 009",
         "physik-energie-und-wirkungsmetaphern"
       ],
       "tags": [
@@ -231170,37 +232190,57 @@
         "Wirkungsanalyse",
         "Wirkungssteuerung"
       ],
-      "category": "Physik, Energie und Wirkungsmetaphern",
-      "conceptStatus": "WÖk-Präzisierungsbegriff",
-      "concept_status": "WÖk-Präzisierungsbegriff",
+      "category": "Leistung, Wohlstandsmessung & Systemkritik",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
       "publicationStatus": "published",
       "publication_status": "published",
       "status": "woek-praezisierungsbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
-      "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "version": "1.1",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Physik, Energie und Wirkungsmetaphern",
-      "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Physik, Energie und Wirkungsmetaphern",
-      "hoverDefinition": "Scheinleistung ist in der Elektrotechnik die scheinbar vorhandene Gesamtleistung im System.",
+      "reviewStatus": "redaktionell zu prüfen",
+      "source": "Glossar-Pack 009",
+      "sourceDocument": "Glossar-Pack 009: Volkswirtschaft & neue Wohlstandsmessung",
+      "sourceSection": "Professionalisiertes Glossar-Pack 009",
+      "hoverDefinition": "Scheinleistung ist Aktivität, die nach Leistung aussieht, aber keine belastbare positive Zustandsveränderung nachweist.",
       "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "usageNote": "Nicht automatisch mit Betrug gleichsetzen; Scheinleistung kann bewusst, systemisch oder unbeabsichtigt entstehen.",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "pageUrl": "/begriffe/scheinleistung/",
       "metaTitle": "Scheinleistung | Glossar der Wirkungsökonomie",
       "metaDescription": "Scheinleistung ist in der Elektrotechnik die scheinbar vorhandene Gesamtleistung im System. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "preferredUsage": "",
+      "doNotConfuseWith": [
+        "Betrug: Scheinleistung kann täuschen, muss es aber nicht.",
+        "Blindleistung: betont systembelastenden Aufwand; Scheinleistung betont Leistungsillusion.",
+        "Verlustleistung: erzeugt negative Wirkung; Scheinleistung kann wirkungslos oder unbewiesen sein.",
+        "Wirkungspotenzial: kann später wirken; Scheinleistung suggeriert Leistung ohne Nachweis.",
+        "Output: wird zur Scheinleistung, wenn er als Wirkung verkauft wird.",
+        "Greenwashing: absichtliche oder irreführende Darstellung; Scheinleistung ist breiter.",
+        "geringe Wirkung: nicht jede geringe Wirkung ist Scheinleistung."
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Maßstabskrise",
+        "Die neue Ordnung des Wohlstands: Leistung neu definieren",
+        "Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+        "Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung",
+        "Grundlagenpapier Wirkungsökonomie",
+        "Leitbild für Mensch, Planet und Demokratie",
+        "T-SROI-Whitepaper",
+        "Systemmodell der Wirkungsökonomie",
+        "Wenn Maschinen arbeiten",
+        "Arbeitspapier Wirkungseinkommensteuer"
+      ],
+      "preferredUsage": "Als Diagnose für Aktivität ohne belastbaren Wirkungsnachweis verwenden.",
       "deprecatedUsage": [],
       "glossaryOrderKey": "Scheinleistung",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Prägungsbegriff / Diagnosebegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Diagnosebegriff",
       "theme": [
         "Physik, Energie und Wirkungsmetaphern"
       ],
@@ -231231,7 +232271,70 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "priority": 145,
+      "review_status": "redaktionell zu prüfen",
+      "glossary_pack": "009",
+      "cluster": "Volkswirtschaft & neue Wohlstandsmessung",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "relation_types": [
+        "same_cluster",
+        "performance_logic",
+        "risk",
+        "anti_blindness",
+        "activity_decomposition"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Scheinleistung ist Aktivität, die nach Leistung aussieht, aber keine belastbare positive Zustandsveränderung nachweist."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- sieht nach Erfolg aus, erzeugt aber keine belegte positive Wirkung\n- kann in Umsatz, Beschäftigung, Reichweite, Projektzahlen, Berichten oder Symbolpolitik erscheinen\n- nicht automatisch Betrug; häufig Folge falscher Kennzahlen und Anreize\n- klassisches BIP kann Scheinleistung zählen\n- Wirkungs-BIP fragt, ob daraus Wirkleistung entsteht\n- wird durch Datenqualität, NWI, Audit und Rückkopplung reduziert"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Scheinleistung entsteht, wenn Systeme Output mit Wirkung verwechseln. Ein Projekt wurde gestartet, ein Bericht veröffentlicht, eine Kampagne erreichte viele Menschen, ein Programm gab viel Geld aus. All das kann Leistung sein. Aber erst wenn eine positive Zustandsveränderung nachweisbar oder plausibel belegt ist, wird daraus Wirkleistung. Scheinleistung kann bewusst durch Greenwashing oder Symbolpolitik entstehen, aber auch unbeabsichtigt in falschen Kennzahlensystemen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Scheinleistung täuscht Fortschritt vor und bindet Aufmerksamkeit, Geld, Arbeit, Vertrauen und politische Energie. Unternehmen können Wirkungskommunikation ohne Wirkung betreiben, Politik kann Programme mit Problemlösung verwechseln, Medien können Reichweite mit Orientierung verwechseln und Verwaltung kann Prozessabschluss mit Zustandsverbesserung verwechseln. Sie ist eine Form der Wirkungsblindheit: Bewegung wird sichtbar, Richtung nicht."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk behandelt Scheinleistung nicht zuerst als persönliches Versagen. Sie entsteht häufig in einem falschen Kompasssystem: Mittelabruf, Reichweite, Reporting oder Projektanzahl werden belohnt, obwohl keine Wirkung zurückgekoppelt wird. Überwunden wird sie durch klare Wirkungsziele, Output-Outcome-Wirkung-Unterscheidung, Datenqualität, Ex-post-Prüfung, NWI, Wirkungsaudit, Wirkungsassurance, Wirkungstransparenzberichte und bessere Anreizsysteme."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Betrug: Scheinleistung kann täuschen, muss es aber nicht.\n- Blindleistung: betont systembelastenden Aufwand; Scheinleistung betont Leistungsillusion.\n- Verlustleistung: erzeugt negative Wirkung; Scheinleistung kann wirkungslos oder unbewiesen sein.\n- Wirkungspotenzial: kann später wirken; Scheinleistung suggeriert Leistung ohne Nachweis.\n- Output: wird zur Scheinleistung, wenn er als Wirkung verkauft wird.\n- Greenwashing: absichtliche oder irreführende Darstellung; Scheinleistung ist breiter.\n- geringe Wirkung: nicht jede geringe Wirkung ist Scheinleistung."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Nachhaltigkeitsbericht listet Maßnahmen, aber Preise, Produkte, Lieferketten und Investitionen ändern sich nicht.\n- Ein Förderprogramm gibt Millionen aus, ohne Zielzustände messbar zu verbessern.\n- Eine Plattformkampagne erreicht Millionen, steigert aber nur Aufmerksamkeit, nicht Orientierung.\n- Ein politisches Programm hat große Ziele, aber keine Wirkungsprüfung, Datenqualität oder Ex-post-Evaluation."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Diagnosefragen: Was wird als Leistung behauptet? Welcher Zustand soll sich verändern? Gibt es Indikatoren, Baseline, Datenqualität und Ex-post-Prüfung? Wird Output, Mittelabfluss, Reichweite oder Wirkungspotenzial als Wirkung verkauft? Gibt es Rückkopplung in Preis, Budget, Produkt, Kapital oder Entscheidung? Datenfelder: pseudo_performance_id, claimed_performance, output_metrics, missing_outcome_metrics, missing_impact_metrics, baseline_available, data_quality_class, evidence_level, impact_claim_risk, greenwashing_risk, symbolic_policy_risk und correction_required."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "Wirkleistung, Blindleistung, Verlustleistung, wirkungs-bip, NWI, Wirkungsblindheit, Wirkungswahrheit, wirkungssimulation, Greenwashing, Impact-Washing, SDG-Washing, output, outcome, Wirkung, Wirkungspotenzial, Wirkungsprüfung, Wirkungsaudit, Wirkungstransparenzbericht, Wirkungshaushalt, Responsible Marketing"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Maßstabskrise\n- Die neue Ordnung des Wohlstands: Leistung neu definieren\n- Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung\n- Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung\n- Grundlagenpapier Wirkungsökonomie\n- Leitbild für Mensch, Planet und Demokratie\n- T-SROI-Whitepaper\n- Systemmodell der Wirkungsökonomie\n- Wenn Maschinen arbeiten\n- Arbeitspapier Wirkungseinkommensteuer\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- OECD Measuring Well-being and Progress\n- Stiglitz-Sen-Fitoussi Commission\n- GRI Standards\n- CSRD / ESRS"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Volkswirtschaft & neue Wohlstandsmessung\npack: 009\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: WÖk-Begriffe sind konzeptionelle Arbeitslogik, keine Personenbewertung und kein Social-Credit-System."
+        }
+      ]
     },
     {
       "id": "scheinwahrheit",
@@ -292449,107 +293552,352 @@
       "canonicalLabel": "Wirkleistung",
       "slug": "wirkleistung",
       "aliases": [
-        "Wirkleistung"
+        "Wirkleistung",
+        "echte Leistung",
+        "wirkliche Leistung",
+        "positive Systemleistung",
+        "reale Zustandsverbesserung",
+        "Leistung mit Wirkung",
+        "nutzbare gesellschaftliche Leistung",
+        "Impact Performance",
+        "Wirk-Leistung"
       ],
       "synonyms": [
-        "Wirkleistung"
+        "Wirkleistung",
+        "echte Leistung",
+        "wirkliche Leistung",
+        "positive Systemleistung",
+        "reale Zustandsverbesserung",
+        "Leistung mit Wirkung",
+        "nutzbare gesellschaftliche Leistung",
+        "Impact Performance",
+        "Wirk-Leistung"
       ],
-      "shortDefinition": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet.",
+      "shortDefinition": "Wirkleistung ist echte Leistung im Sinne der Wirkungsökonomie: Aktivität, die positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert.",
       "short_definition": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet.",
-      "definition": "Als technischer Begriff bezeichnet sie den Anteil der Leistung, der reale Arbeit leistet.",
-      "longDefinition": "Als technischer Begriff bezeichnet sie den Anteil der Leistung, der reale Arbeit leistet.",
+      "definition": "Wirkleistung ist echte Leistung im Sinne der Wirkungsökonomie: Aktivität, die positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert.",
+      "longDefinition": "Wirkleistung bezeichnet Aktivität, die reale positive Zustandsveränderung erzeugt oder eine drohende negative Zustandsveränderung verhindert.",
       "long_definition": "Als technischer Begriff bezeichnet sie den Anteil der Leistung, der reale Arbeit leistet.",
-      "woekRelation": "Als Metapher: gesellschaftliche Leistung, die reale positive Zustandsveränderung erzeugt oder negative verhindert.",
+      "woekRelation": "Sie ordnet den Leistungsbegriff neu: Nicht Arbeitszeit, Einkommen, Umsatz oder Reichweite entscheiden, sondern tatsächliche Wirkung.",
       "woek_einordnung": "Als Metapher: gesellschaftliche Leistung, die reale positive Zustandsveränderung erzeugt oder negative verhindert.",
-      "examples": [],
+      "examples": [
+        "Eine Pflegekraft erzeugt Wirkleistung, wenn Gesundheit, Würde, Sicherheit und Familienentlastung steigen.",
+        "Eine Lehrkraft erzeugt Wirkleistung, wenn Selbstwirksamkeit, Zukunftskompetenz und demokratische Mündigkeit wachsen.",
+        "Ein Präventionsprogramm erzeugt Wirkleistung, wenn spätere Krankheit oder soziale Folgekosten sinken.",
+        "Ein Unternehmen erzeugt Wirkleistung, wenn sein Produkt reale Probleme löst, Ressourcen schont und faire Arbeit ermöglicht."
+      ],
       "relatedTerms": [
         "scheinleistung",
         "blindleistung",
         "verlustleistung",
         "wirkung",
-        "wirkungsgrad"
+        "wirkungsgrad",
+        "wirkungs-bip",
+        "nwi",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "t-sroi",
+        "praevention",
+        "care-arbeit",
+        "bildung",
+        "pflege",
+        "demokratiepflege",
+        "kapitalwirkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "netto-wirkungs-index",
+        "wirkleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungstransparenzbericht",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "datenqualitaet",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "resilienz",
+        "gesundheit",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "oeffentliche-beschaffung",
+        "wirkungspruefung"
       ],
       "related_terms": [
         "scheinleistung",
         "blindleistung",
         "verlustleistung",
         "wirkung",
-        "wirkungsgrad"
+        "wirkungsgrad",
+        "wirkungs-bip",
+        "nwi",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "t-sroi",
+        "praevention",
+        "care-arbeit",
+        "bildung",
+        "pflege",
+        "demokratiepflege",
+        "kapitalwirkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "netto-wirkungs-index",
+        "wirkleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "wohlstand-als-systemzustand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "mensch-planet-demokratie",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungstransparenzbericht",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "datenqualitaet",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "resilienz",
+        "gesundheit",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "oeffentliche-beschaffung",
+        "wirkungspruefung"
       ],
       "officialSources": [
-        "WÖk Glossar und Referenz|https://wirkungsoekonomie.de/glossar.html",
-        "Stafford Beer: Brain of the Firm",
-        "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-        "Heinz von Foerster: Understanding Understanding",
-        "Donella Meadows: Leverage Points|https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        "UN SDGs / Agenda 2030",
+        "OECD Measuring Well-being and Progress",
+        "Stiglitz-Sen-Fitoussi Commission",
+        "UNDP Human Development Index",
+        "ILO Decent Work Agenda"
       ],
       "sourceLinks": [
         {
-          "source_type": "internal_woek",
-          "title": "WÖk Glossar und Referenz",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "status": "linked"
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
         },
         {
-          "source_type": "primary",
-          "title": "Stafford Beer: Brain of the Firm",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
         },
         {
-          "source_type": "primary",
-          "title": "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
         },
         {
-          "source_type": "primary",
-          "title": "Heinz von Foerster: Understanding Understanding",
-          "url": "",
-          "status": "bibliographic"
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
         },
         {
-          "source_type": "primary",
-          "title": "Donella Meadows: Leverage Points",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
-          "status": "linked"
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
         }
       ],
       "source_links": [
         {
-          "source_type": "internal_woek",
-          "title": "WÖk Glossar und Referenz",
-          "url": "https://wirkungsoekonomie.de/glossar.html",
-          "status": "linked"
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
         },
         {
-          "source_type": "primary",
-          "title": "Stafford Beer: Brain of the Firm",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
         },
         {
-          "source_type": "primary",
-          "title": "Humberto Maturana / Francisco Varela: Autopoiesis and Cognition",
-          "url": "",
-          "status": "bibliographic"
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
         },
         {
-          "source_type": "primary",
-          "title": "Heinz von Foerster: Understanding Understanding",
-          "url": "",
-          "status": "bibliographic"
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
         },
         {
-          "source_type": "primary",
-          "title": "Donella Meadows: Leverage Points",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
-          "status": "linked"
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
         }
       ],
       "internalLinks": [],
-      "internal_links": [],
+      "internal_links": [
+        {
+          "term": "wirkungs-bip",
+          "label": "Wirkungs-BIP",
+          "url": "/begriffe/wirkungs-bip/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "scheinleistung",
+          "label": "Scheinleistung",
+          "url": "/begriffe/scheinleistung/"
+        },
+        {
+          "term": "blindleistung",
+          "label": "Blindleistung",
+          "url": "/begriffe/blindleistung/"
+        },
+        {
+          "term": "verlustleistung",
+          "label": "Verlustleistung",
+          "url": "/begriffe/verlustleistung/"
+        },
+        {
+          "term": "wirkung",
+          "label": "Wirkung",
+          "url": "/begriffe/wirkung/"
+        },
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "netto-wirkung",
+          "label": "Netto-Wirkung",
+          "url": "/begriffe/netto-wirkung/"
+        },
+        {
+          "term": "transformationswirkung",
+          "label": "Transformationswirkung",
+          "url": "/begriffe/transformationswirkung/"
+        },
+        {
+          "term": "wirkungseinkommen",
+          "label": "Wirkungseinkommen",
+          "url": "/begriffe/wirkungseinkommen/"
+        },
+        {
+          "term": "wirkungsrente",
+          "label": "Wirkungsrente",
+          "url": "/begriffe/wirkungsrente/"
+        },
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungsbudget",
+          "label": "Wirkungsbudget",
+          "url": "/begriffe/wirkungsbudget/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "praevention",
+          "label": "Prävention",
+          "url": "/begriffe/praevention/"
+        },
+        {
+          "term": "kapitalwirkung",
+          "label": "Kapitalwirkung",
+          "url": "/begriffe/kapitalwirkung/"
+        },
+        {
+          "term": "wirkungswahrheit",
+          "label": "Wirkungswahrheit",
+          "url": "/begriffe/wirkungswahrheit/"
+        },
+        {
+          "term": "wirkungsblindheit",
+          "label": "Wirkungsblindheit",
+          "url": "/begriffe/wirkungsblindheit/"
+        }
+      ],
       "categories": [
+        "Leistung, Arbeit & Wohlstandsmessung",
+        "Volkswirtschaft & neue Wohlstandsmessung",
+        "Glossar-Pack 009",
         "physik-energie-und-wirkungsmetaphern"
       ],
       "tags": [
@@ -292559,37 +293907,59 @@
         "Wirkungsanalyse",
         "Wirkungssteuerung"
       ],
-      "category": "Physik, Energie und Wirkungsmetaphern",
-      "conceptStatus": "WÖk-Präzisierungsbegriff",
-      "concept_status": "WÖk-Präzisierungsbegriff",
+      "category": "Leistung, Arbeit & Wohlstandsmessung",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
       "publicationStatus": "published",
       "publication_status": "published",
       "status": "woek-praezisierungsbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
-      "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "version": "1.1",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
-      "source": "Physik, Energie und Wirkungsmetaphern",
-      "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Physik, Energie und Wirkungsmetaphern",
-      "hoverDefinition": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet.",
+      "reviewStatus": "redaktionell zu prüfen",
+      "source": "Glossar-Pack 009",
+      "sourceDocument": "Glossar-Pack 009: Volkswirtschaft & neue Wohlstandsmessung",
+      "sourceSection": "Professionalisiertes Glossar-Pack 009",
+      "hoverDefinition": "Wirkleistung ist echte Leistung im Sinne der Wirkungsökonomie: Aktivität, die positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert.",
       "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "usageNote": "Nicht mit Beschäftigung, Arbeitszeit, Gewinn, Umsatz oder Produktivität verwechseln.",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "pageUrl": "/begriffe/wirkleistung/",
       "metaTitle": "Wirkleistung | Glossar der Wirkungsökonomie",
       "metaDescription": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [],
-      "preferredUsage": "",
+      "doNotConfuseWith": [
+        "Arbeit: Arbeit ist Tätigkeit; Wirkleistung ist positive Zustandsveränderung.",
+        "Beschäftigung: kann Wirkleistung erzeugen, beweist sie aber nicht.",
+        "Einkommen: zeigt Marktvergütung, nicht Wirkung.",
+        "Gewinn: zeigt ökonomische Tragfähigkeit, nicht automatisch positive Wirkung.",
+        "Produktivität: kann negative Wirkung beschleunigen.",
+        "Output: ist Ergebnis; Wirkleistung ist Zustandsverbesserung.",
+        "Scheinleistung: sieht nach Leistung aus, weist aber keine Wirkung nach.",
+        "Blindleistung: Aufwand ohne ausreichende Zustandsverbesserung.",
+        "Verlustleistung: erzeugt negative Wirkung."
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Maßstabskrise",
+        "Die neue Ordnung des Wohlstands: Leistung neu definieren",
+        "Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+        "Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung",
+        "Grundlagenpapier Wirkungsökonomie",
+        "Leitbild für Mensch, Planet und Demokratie",
+        "T-SROI-Whitepaper",
+        "Systemmodell der Wirkungsökonomie",
+        "Wenn Maschinen arbeiten",
+        "Arbeitspapier Wirkungseinkommensteuer"
+      ],
+      "preferredUsage": "Als Leistungsform verwenden, die positive Netto-Wirkung, Prävention, Resilienz und Systemzustand sichtbar macht.",
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirkleistung",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "type": "WÖk-Prägungsbegriff / Leistungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Leistungsbegriff",
       "theme": [
         "Physik, Energie und Wirkungsmetaphern"
       ],
@@ -292620,7 +293990,69 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "priority": 145,
+      "review_status": "redaktionell zu prüfen",
+      "glossary_pack": "009",
+      "cluster": "Volkswirtschaft & neue Wohlstandsmessung",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "relation_types": [
+        "same_cluster",
+        "performance_logic",
+        "activity_decomposition",
+        "system_state"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkleistung ist echte Leistung im Sinne der Wirkungsökonomie: Aktivität, die positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- nicht identisch mit Arbeitszeit, Einkommen, Umsatz, Gewinn, Produktivität oder Reichweite\n- entsteht durch reale positive Zustandsveränderung\n- kann negative Wirkung verhindern\n- Pflege, Bildung, Prävention, Care, ökologische Regeneration und Demokratiepflege können hohe Wirkleistung erzeugen\n- kann marktlich bezahlt sein, muss es aber nicht\n- Grundlage für Wirkungs-BIP, Wirkungseinkommen, Wirkungsrente, Wirkungshaushalt und Wirkungscontrolling"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkleistung ist die Antwort auf die Maßstabskrise klassischer Systeme. Diese nennen oft Aufwand, Einkommen, Beschäftigung, Umsatz, Wachstum, Reichweite oder Aktivität Leistung. Die WÖk fragt dagegen, ob ein Zustand im Referenzrahmen Mensch, Planet und Demokratie besser wird oder ob ein drohender Schaden verhindert wird. Wirkleistung kann unmittelbar, indirekt, präventiv oder systemisch wirken."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wirkleistung macht sichtbar, was Gesellschaft tatsächlich trägt: Pflege, Bildung, Prävention, Gesundheit, soziale Stabilisierung, ökologische Regeneration, Kreislaufwirtschaft, demokratische Diskursqualität, Konfliktvermittlung, Rechtsstaatlichkeit, Infrastrukturresilienz, Wissenschaft, offene Wahrheit, Nachbarschaft und Care-Arbeit. Diese Leistungen erscheinen klassisch oft als Kosten oder unbezahlte Arbeit."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung. Diese Unterscheidung ist keine moralische Beschämung einzelner Menschen, sondern Systemanalyse. Schein-, Blind- oder Verlustleistung entsteht häufig, weil Anreize falsch gesetzt sind. Wirkleistung braucht Rückkopplung: Sie muss sichtbar, messbar, anerkannt, finanziert und institutionell gestärkt werden."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Arbeit: Arbeit ist Tätigkeit; Wirkleistung ist positive Zustandsveränderung.\n- Beschäftigung: kann Wirkleistung erzeugen, beweist sie aber nicht.\n- Einkommen: zeigt Marktvergütung, nicht Wirkung.\n- Gewinn: zeigt ökonomische Tragfähigkeit, nicht automatisch positive Wirkung.\n- Produktivität: kann negative Wirkung beschleunigen.\n- Output: ist Ergebnis; Wirkleistung ist Zustandsverbesserung.\n- Scheinleistung: sieht nach Leistung aus, weist aber keine Wirkung nach.\n- Blindleistung: Aufwand ohne ausreichende Zustandsverbesserung.\n- Verlustleistung: erzeugt negative Wirkung."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Eine Pflegekraft erzeugt Wirkleistung, wenn Gesundheit, Würde, Sicherheit und Familienentlastung steigen.\n- Eine Lehrkraft erzeugt Wirkleistung, wenn Selbstwirksamkeit, Zukunftskompetenz und demokratische Mündigkeit wachsen.\n- Ein Präventionsprogramm erzeugt Wirkleistung, wenn spätere Krankheit oder soziale Folgekosten sinken.\n- Ein Unternehmen erzeugt Wirkleistung, wenn sein Produkt reale Probleme löst, Ressourcen schont und faire Arbeit ermöglicht."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Bewertungsfragen: Welche Zustandsveränderung entsteht? Für wen? In welchem Wirkungsraum? Wird negative Wirkung verhindert? Wie dauerhaft ist die Wirkung? Welche Datenqualität liegt vor? Gibt es Nebenwirkungen, rote Linien und Rückkopplung? Datenfelder: performance_id, activity_type, actor_type, affected_groups, impact_space, positive_state_change, prevented_negative_change, sdg_reference, sdgplus_reference, evidence_level, data_quality_class, time_horizon, resilience_contribution, prevention_effect, net_impact_reference, nwi_reference, t_sroi_relevance, recognition_channel und steering_recommendation."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "wirkungs-bip, NWI, Scheinleistung, Blindleistung, Verlustleistung, Wirkung, positive Netto-Wirkung, Netto-Wirkung, Transformationswirkung, Wirkungseinkommen, Wirkungsrente, Wirkungshaushalt, Wirkungsbudget, T-SROI, Prävention, care-arbeit, bildung, pflege, demokratiepflege, Kapitalwirkung, Wirkungswahrheit, Wirkungsblindheit"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Maßstabskrise\n- Die neue Ordnung des Wohlstands: Leistung neu definieren\n- Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung\n- Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung\n- Grundlagenpapier Wirkungsökonomie\n- Leitbild für Mensch, Planet und Demokratie\n- T-SROI-Whitepaper\n- Systemmodell der Wirkungsökonomie\n- Wenn Maschinen arbeiten\n- Arbeitspapier Wirkungseinkommensteuer\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- OECD Measuring Well-being and Progress\n- Stiglitz-Sen-Fitoussi Commission\n- UNDP Human Development Index\n- ILO Decent Work Agenda"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Volkswirtschaft & neue Wohlstandsmessung\npack: 009\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: WÖk-Begriffe sind konzeptionelle Arbeitslogik, keine Personenbewertung und kein Social-Credit-System."
+        }
+      ]
     },
     {
       "id": "wirklichkeitsbindung",
@@ -322654,6 +324086,459 @@
         {
           "title": "Redaktionelle Metadaten",
           "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Öffentliche Mittel & Wirkungshaushalt\npack: 008\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: Modellhafte WÖk-Inhalte bleiben als Konzept, Entwurf oder Arbeitslogik gekennzeichnet; sie ersetzen keine geltende Rechtslage."
+        }
+      ]
+    },
+    {
+      "id": "wirkungs-bip",
+      "termId": "wirkungs-bip",
+      "label": "Wirkungs-BIP",
+      "canonicalLabel": "Wirkungs-BIP",
+      "slug": "wirkungs-bip",
+      "aliases": [
+        "Wirkungs-BIP",
+        "Wirkungsbruttoinlandsprodukt",
+        "BIP nach Wirkung",
+        "Impact GDP",
+        "Wirkungs-GDP",
+        "BIP mit Wirkungsbilanz",
+        "volkswirtschaftliche Wirkungsbilanz",
+        "neue Wohlstandsmessung",
+        "Wirkungsgrad der Volkswirtschaft"
+      ],
+      "synonyms": [
+        "Wirkungsbruttoinlandsprodukt",
+        "BIP nach Wirkung",
+        "Impact GDP",
+        "Wirkungs-GDP",
+        "BIP mit Wirkungsbilanz",
+        "volkswirtschaftliche Wirkungsbilanz",
+        "neue Wohlstandsmessung",
+        "Wirkungsgrad der Volkswirtschaft"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungs-bip/",
+      "priority": 145,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungs-bip",
+      "shortDefinition": "Das Wirkungs-BIP ergänzt das klassische BIP um die Frage, ob wirtschaftliche Aktivität echte Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt.",
+      "definition": "Das Wirkungs-BIP ergänzt das klassische BIP um die Frage, ob wirtschaftliche Aktivität echte Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt.",
+      "hoverDefinition": "Das Wirkungs-BIP ergänzt das klassische BIP um die Frage, ob wirtschaftliche Aktivität echte Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt.",
+      "longDefinition": "Das Wirkungs-BIP ist eine volkswirtschaftliche Leselogik, die klassische Aktivitätsrechnung mit Wirkungsbilanz und MPD-Dashboard verbindet.",
+      "woekRelation": "Es macht sichtbar, ob eine Volkswirtschaft nur mehr Bewegung zählt oder tatsächlich Wohlstand als Systemzustand stärkt.",
+      "usageNote": "Nicht als Abschaffung des BIP formulieren. Das klassische BIP bleibt Aktivitätsmaß; das Wirkungs-BIP ergänzt Richtung, Qualität und Zustand.",
+      "preferredUsage": "Als Ergänzung zur volkswirtschaftlichen Gesamtrechnung verwenden, die Aktivität in Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung zerlegt.",
+      "doNotConfuseWith": [
+        "BIP: misst Aktivität; Wirkungs-BIP ergänzt Wirkung.",
+        "Wohlstandsindex: Wirkungs-BIP ist Aktivitätszerlegung plus Zustandsdashboard.",
+        "NWI: operative Netto-Wirkungskennzahl; Wirkungs-BIP ist volkswirtschaftliche Leselogik.",
+        "T-SROI: misst Transformationswirkung einer Investition oder Maßnahme; Wirkungs-BIP ordnet Aktivität.",
+        "HDI: misst menschliche Entwicklung; Wirkungs-BIP betrachtet Aktivitätsqualität in Mensch, Planet und Demokratie.",
+        "Genuine Progress Indicator: verwandt, aber WÖk-spezifisch durch Wirkleistung, Scheinleistung, Blindleistung, Verlustleistung, NWI, MPD und Rückkopplung.",
+        "Planwirtschaftliche Zielzahl: ersetzt keine dezentrale Entscheidung, sondern verbessert Wirkungswahrheit."
+      ],
+      "examples": [
+        "Gesundheitsausgaben steigen, weil mehr Menschen krank werden; Wirkungs-BIP fragt, ob Gesundheit erzeugt oder Krankheit verwaltet wird.",
+        "Wiederaufbau nach Flut erhöht BIP; Wirkungs-BIP trennt Reparaturaktivität von Wohlstandsgewinn.",
+        "Fast Fashion erzeugt Umsatz und Beschäftigung; Wirkungs-BIP prüft Wasser, Chemie, Arbeit, Mikroplastik und Entsorgung.",
+        "Prävention verursacht Kosten; Wirkungs-BIP erkennt Wirkleistung, wenn spätere Krankheit oder Folgekosten sinken."
+      ],
+      "category": "Volkswirtschaft, Wohlstand & Systemzustand",
+      "categories": [
+        "Volkswirtschaft, Wohlstand & Systemzustand",
+        "Volkswirtschaft & neue Wohlstandsmessung",
+        "Glossar-Pack 009"
+      ],
+      "type": "WÖk-Prägungsbegriff / volkswirtschaftlicher Ordnungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / volkswirtschaftlicher Ordnungsbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 009",
+      "sourceDocument": "Glossar-Pack 009: Volkswirtschaft & neue Wohlstandsmessung",
+      "sourceSection": "Professionalisiertes Glossar-Pack 009",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "009",
+      "cluster": "Volkswirtschaft & neue Wohlstandsmessung",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN SDGs / Agenda 2030",
+        "UN SDG Indicators",
+        "System of National Accounts",
+        "OECD Measuring Well-being and Progress",
+        "Stiglitz-Sen-Fitoussi Commission",
+        "UNDP Human Development Index",
+        "World Bank Changing Wealth of Nations"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
+        },
+        {
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
+        },
+        {
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "UN SDG Indicators",
+          "url": "https://unstats.un.org/sdgs/indicators/indicators-list/"
+        },
+        {
+          "label": "System of National Accounts",
+          "url": "https://unstats.un.org/unsd/nationalaccount/sna.asp"
+        },
+        {
+          "label": "OECD Better Life Index",
+          "url": "https://www.oecdbetterlifeindex.org/"
+        },
+        {
+          "label": "OECD Measuring Well-being and Progress",
+          "url": "https://www.oecd.org/wise/measuring-well-being-and-progress.htm"
+        },
+        {
+          "label": "Stiglitz-Sen-Fitoussi Commission",
+          "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report"
+        },
+        {
+          "label": "Eurostat Quality of Life Indicators",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Quality_of_life_indicators"
+        },
+        {
+          "label": "World Bank Changing Wealth of Nations",
+          "url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations"
+        },
+        {
+          "label": "UNDP Human Development Index",
+          "url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "label": "Donella Meadows: Leverage Points",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Maßstabskrise",
+        "Die neue Ordnung des Wohlstands: Leistung neu definieren",
+        "Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+        "Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung",
+        "Grundlagenpapier Wirkungsökonomie",
+        "Leitbild für Mensch, Planet und Demokratie",
+        "T-SROI-Whitepaper",
+        "Systemmodell der Wirkungsökonomie",
+        "Wenn Maschinen arbeiten",
+        "Arbeitspapier Wirkungseinkommensteuer"
+      ],
+      "relatedTerms": [
+        "nwi",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "t-sroi",
+        "positive-netto-wirkung",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "resilienz",
+        "praevention",
+        "kapitalwirkung",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "netto-wirkungs-index",
+        "wirkungs-bip",
+        "wohlstand-als-systemzustand",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "datenqualitaet",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "oeffentliche-beschaffung",
+        "wirkungspruefung"
+      ],
+      "related_terms": [
+        "nwi",
+        "wirkleistung",
+        "scheinleistung",
+        "blindleistung",
+        "verlustleistung",
+        "wirkungsgrad-der-volkswirtschaft",
+        "wirkungswohlstand",
+        "bip",
+        "bruttoinlandsprodukt",
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "t-sroi",
+        "positive-netto-wirkung",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "resilienz",
+        "praevention",
+        "kapitalwirkung",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "netto-wirkungs-index",
+        "wirkungs-bip",
+        "wohlstand-als-systemzustand",
+        "wohlstandsmessung",
+        "aktivitaetsmass",
+        "wirkungsbilanz",
+        "mpd-dashboard",
+        "wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "scorecard",
+        "produktscorecard",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "datenqualitaet",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "care-arbeit",
+        "bildung",
+        "gesundheit",
+        "demokratiepflege",
+        "kreislaufwirtschaft",
+        "sdgs",
+        "agenda-2030",
+        "oeffentliche-beschaffung",
+        "wirkungspruefung"
+      ],
+      "internal_links": [
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "wirkleistung",
+          "label": "Wirkleistung",
+          "url": "/begriffe/wirkleistung/"
+        },
+        {
+          "term": "scheinleistung",
+          "label": "Scheinleistung",
+          "url": "/begriffe/scheinleistung/"
+        },
+        {
+          "term": "blindleistung",
+          "label": "Blindleistung",
+          "url": "/begriffe/blindleistung/"
+        },
+        {
+          "term": "verlustleistung",
+          "label": "Verlustleistung",
+          "url": "/begriffe/verlustleistung/"
+        },
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungsbudget",
+          "label": "Wirkungsbudget",
+          "url": "/begriffe/wirkungsbudget/"
+        },
+        {
+          "term": "wirkungstransparenzbericht",
+          "label": "Wirkungstransparenzbericht",
+          "url": "/begriffe/wirkungstransparenzbericht/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "mensch-planet-demokratie",
+          "label": "Mensch, Planet und Demokratie",
+          "url": "/begriffe/mensch-planet-demokratie/"
+        },
+        {
+          "term": "sdg-plus",
+          "label": "SDG+",
+          "url": "/begriffe/sdg-plus/"
+        },
+        {
+          "term": "resilienz",
+          "label": "Resilienz",
+          "url": "/begriffe/resilienz/"
+        },
+        {
+          "term": "praevention",
+          "label": "Prävention",
+          "url": "/begriffe/praevention/"
+        },
+        {
+          "term": "kapitalwirkung",
+          "label": "Kapitalwirkung",
+          "url": "/begriffe/kapitalwirkung/"
+        },
+        {
+          "term": "wirkungseinkommen",
+          "label": "Wirkungseinkommen",
+          "url": "/begriffe/wirkungseinkommen/"
+        },
+        {
+          "term": "wirkungsrente",
+          "label": "Wirkungsrente",
+          "url": "/begriffe/wirkungsrente/"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "macroeconomics",
+        "welfare_measurement",
+        "activity_decomposition",
+        "system_state"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Das Wirkungs-BIP ergänzt das klassische BIP um die Frage, ob wirtschaftliche Aktivität echte Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- schafft das klassische BIP nicht ab\n- ergänzt das BIP um Richtung, Qualität und Zustand\n- unterscheidet Aktivität nach Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung\n- zeigt, ob eine Volkswirtschaft reicher wird oder nur Reparatur-, Krisen- und Schadensaktivität zählt\n- verbindet Aktivitätsrechnung, Wirkungsbilanz und MPD-Dashboard\n- kein einzelner Ersatzindikator, sondern neue Leselogik für Wohlstand"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Das Wirkungs-BIP ergänzt das Bruttoinlandsprodukt um eine Wirkungslogik. Während das BIP Produktion, Dienstleistungen, Investitionen, Konsum und staatliche Leistungen als Aktivität misst, fragt das Wirkungs-BIP nach Zustandsveränderungen. Es kombiniert drei Ebenen: klassisches BIP als Aktivitätsmaß, Wirkungsbilanz als Zerlegung in A_wirk, A_schein, A_blind und A_verlust sowie ein MPD-Dashboard für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Das klassische BIP kann steigen, wenn Schäden repariert, Krankheiten behandelt, Naturzerstörung verwaltet, Krisen bearbeitet oder destruktive Produkte verkauft werden. All das ist Aktivität, aber nicht automatisch Wirkleistung. Das Wirkungs-BIP ist die Brücke zwischen volkswirtschaftlicher Gesamtrechnung und Wirkungsökonomie: Es fragt, welche Aktivität Zustände verbessert, welche nur nach Leistung aussieht, welche Symptome verwaltet und welche Schäden erzeugt."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Wirkungswohlstand ist ein Systemzustand: Menschen können gesund, sicher, gebildet und handlungsfähig leben; planetare Lebensgrundlagen bleiben regenerationsfähig; Demokratie bleibt wahrheitsfähig, rechtsstaatlich, streitfähig und korrigierbar. Die Orientierungsformel lautet: BIP_Aktivität = A_wirk + A_schein + A_blind + A_verlust. Ein volkswirtschaftlicher Wirkungsgrad kann als η_VWL = A_wirk / (A_wirk + A_schein + A_blind + A_verlust) gelesen werden. Das reduziert die Volkswirtschaft nicht auf eine Zahl, sondern macht Aktivitätsqualität sichtbar."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- BIP: misst Aktivität; Wirkungs-BIP ergänzt Wirkung.\n- Wohlstandsindex: Wirkungs-BIP ist Aktivitätszerlegung plus Zustandsdashboard.\n- NWI: operative Netto-Wirkungskennzahl; Wirkungs-BIP ist volkswirtschaftliche Leselogik.\n- T-SROI: misst Transformationswirkung einer Investition oder Maßnahme; Wirkungs-BIP ordnet Aktivität.\n- HDI: misst menschliche Entwicklung; Wirkungs-BIP betrachtet Aktivitätsqualität in Mensch, Planet und Demokratie.\n- Genuine Progress Indicator: verwandt, aber WÖk-spezifisch durch Wirkleistung, Scheinleistung, Blindleistung, Verlustleistung, NWI, MPD und Rückkopplung.\n- Planwirtschaftliche Zielzahl: ersetzt keine dezentrale Entscheidung, sondern verbessert Wirkungswahrheit."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Gesundheitsausgaben steigen, weil mehr Menschen krank werden; Wirkungs-BIP fragt, ob Gesundheit erzeugt oder Krankheit verwaltet wird.\n- Wiederaufbau nach Flut erhöht BIP; Wirkungs-BIP trennt Reparaturaktivität von Wohlstandsgewinn.\n- Fast Fashion erzeugt Umsatz und Beschäftigung; Wirkungs-BIP prüft Wasser, Chemie, Arbeit, Mikroplastik und Entsorgung.\n- Prävention verursacht Kosten; Wirkungs-BIP erkennt Wirkleistung, wenn spätere Krankheit oder Folgekosten sinken."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Bausteine sind klassische Aktivitätsrechnung, Wirkungsbilanz und MPD-Dashboard. Datenfelder: macro_assessment_id, reporting_period, country_or_region, gdp_value, gdp_growth, a_wirk, a_schein, a_blind, a_verlust, impact_efficiency_ratio, mpd_dashboard_reference, human_dimension_indicators, planet_dimension_indicators, democracy_dimension_indicators, prevention_effects, repair_costs, crisis_costs, externalized_costs, resilience_contribution, data_quality_summary, uncertainty_level und method_version."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "NWI, Wirkleistung, Scheinleistung, Blindleistung, Verlustleistung, wirkungsgrad-der-volkswirtschaft, wirkungswohlstand, bip, bruttoinlandsprodukt, Wirkungshaushalt, Wirkungsbudget, Wirkungstransparenzbericht, T-SROI, positive Netto-Wirkung, Mensch, Planet und Demokratie, SDG+, Resilienz, Prävention, Kapitalwirkung, Wirkungseinkommen, Wirkungsrente"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Maßstabskrise\n- Die neue Ordnung des Wohlstands: Leistung neu definieren\n- Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung\n- Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung\n- Grundlagenpapier Wirkungsökonomie\n- Leitbild für Mensch, Planet und Demokratie\n- T-SROI-Whitepaper\n- Systemmodell der Wirkungsökonomie\n- Wenn Maschinen arbeiten\n- Arbeitspapier Wirkungseinkommensteuer\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- UN SDG Indicators\n- System of National Accounts\n- OECD Measuring Well-being and Progress\n- Stiglitz-Sen-Fitoussi Commission\n- UNDP Human Development Index\n- World Bank Changing Wealth of Nations"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Volkswirtschaft & neue Wohlstandsmessung\npack: 009\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: WÖk-Begriffe sind konzeptionelle Arbeitslogik, keine Personenbewertung und kein Social-Credit-System."
         }
       ]
     }
