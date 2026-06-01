@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T22:22:23.583Z",
+  "generatedAt": "2026-06-01T22:38:25.464Z",
   "entries": {
     "/begriffe/fuenftes-p-planet/": {
       "documentType": "begriff",
@@ -341,7 +341,7 @@
     "/begriffe/algorithmische-fairness/": {
       "documentType": "begriff",
       "status": "führender-begriff",
-      "version": "1.0",
+      "version": "1.1",
       "sectionId": "begriff-algorithmische-fairness",
       "documentId": "algorithmische-fairness",
       "relatedTerms": [
@@ -349,10 +349,32 @@
         "kuenstliche-intelligenz",
         "diskriminierungsverbot",
         "datenqualitaet",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "wirkungsdatenraeume",
+        "cyberresilienz",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance"
       ],
-      "relatedDocuments": [],
-      "sourceFile": "Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden",
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "sourceFile": "Glossar-Pack 018: Digitalisierungs-, KI- & Wirkungsdatenraumlogik",
       "searchBoost": 140
     },
     "/begriffe/allgemeines-gleichgewicht/": {
@@ -2869,6 +2891,44 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "searchBoost": 110
     },
+    "/begriffe/cyberresilienz/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.1",
+      "sectionId": "begriff-cyberresilienz",
+      "documentId": "cyberresilienz",
+      "relatedTerms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "algorithmische-fairness",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "datenqualitaet",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+        "supply-chain-resilienz"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "sourceFile": "Glossar-Pack 018: Digitalisierungs-, KI- & Wirkungsdatenraumlogik",
+      "searchBoost": 140
+    },
     "/begriffe/dao/": {
       "documentType": "begriff",
       "status": "bezugsbegriff",
@@ -3742,6 +3802,45 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden",
+      "searchBoost": 140
+    },
+    "/begriffe/digitalisierung-als-infrastruktur-der-wirkungsoekonomie/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "1.1",
+      "sectionId": "begriff-digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+      "documentId": "digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+      "relatedTerms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "algorithmische-fairness",
+        "cyberresilienz",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "datenqualitaet",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "sourceFile": "Glossar-Pack 018: Digitalisierungs-, KI- & Wirkungsdatenraumlogik",
       "searchBoost": 140
     },
     "/begriffe/diktatur/": {
@@ -9657,7 +9756,7 @@
     "/begriffe/ki-governance/": {
       "documentType": "begriff",
       "status": "führender-begriff",
-      "version": "1.0",
+      "version": "1.1",
       "sectionId": "begriff-ki-governance",
       "documentId": "ki-governance",
       "relatedTerms": [
@@ -9665,10 +9764,31 @@
         "algorithmische-fairness",
         "datenqualitaet",
         "digitale-selbstbestimmung",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "wirkungsdatenraeume",
+        "cyberresilienz",
+        "digitalisierung",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
       ],
-      "relatedDocuments": [],
-      "sourceFile": "Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden",
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "sourceFile": "Glossar-Pack 018: Digitalisierungs-, KI- & Wirkungsdatenraumlogik",
       "searchBoost": 140
     },
     "/begriffe/kii/": {
@@ -23921,7 +24041,7 @@
     "/begriffe/wirkungsdatenraeume/": {
       "documentType": "begriff",
       "status": "führender-begriff",
-      "version": "1.0",
+      "version": "1.1",
       "sectionId": "begriff-wirkungsdatenraeume",
       "documentId": "wirkungsdatenraeume",
       "relatedTerms": [
@@ -23929,10 +24049,31 @@
         "woek-id",
         "datenqualitaet",
         "digitalisierung",
-        "digitale-selbstbestimmung"
+        "digitale-selbstbestimmung",
+        "ki-governance",
+        "algorithmische-fairness",
+        "cyberresilienz",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
       ],
-      "relatedDocuments": [],
-      "sourceFile": "Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden",
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "sourceFile": "Glossar-Pack 018: Digitalisierungs-, KI- & Wirkungsdatenraumlogik",
       "searchBoost": 140
     },
     "/begriffe/wirkungseinkommen/": {
@@ -26897,7 +27038,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/index.html",
-      "contentHash": "bf17850ca1659160",
+      "contentHash": "fac2040f3e4f2cae",
       "sectionId": "woek-page-9463d2bebdf63e63"
     },
     "/referenz/kapitel/": {
@@ -26905,7 +27046,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel/index.html",
-      "contentHash": "4622b205e3ae2c24",
+      "contentHash": "42ccbc471595bf43",
       "sectionId": "woek-page-585e23d21629bafc"
     },
     "/referenz/kapitel-001-meine-reise-zur-wirkung/": {
@@ -34625,7 +34766,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-page-81b331540ee74f62"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080": {
@@ -34633,7 +34774,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s001": {
@@ -34641,7 +34782,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080-s001"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s002": {
@@ -34649,7 +34790,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080-s002"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s003": {
@@ -34657,7 +34798,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080-s003"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s004": {
@@ -34665,7 +34806,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080-s004"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s005": {
@@ -34673,7 +34814,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080-s005"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s006": {
@@ -34681,7 +34822,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "woek-main-2026-k080-s006"
     },
     "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80": {
@@ -34689,7 +34830,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html",
-      "contentHash": "2907d376e703e4c2",
+      "contentHash": "bad10988bd1cda9e",
       "sectionId": "chapter-glossary-80"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/": {
@@ -34697,7 +34838,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-page-bf45cb685ec88440"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081": {
@@ -34705,7 +34846,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s001": {
@@ -34713,7 +34854,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081-s001"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s002": {
@@ -34721,7 +34862,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081-s002"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s003": {
@@ -34729,7 +34870,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081-s003"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s004": {
@@ -34737,7 +34878,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081-s004"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s005": {
@@ -34745,7 +34886,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081-s005"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s006": {
@@ -34753,7 +34894,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "woek-main-2026-k081-s006"
     },
     "/referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81": {
@@ -34761,7 +34902,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-081-wirkungsdatenraeume/index.html",
-      "contentHash": "5d1c7d4e764463cd",
+      "contentHash": "2c93a1ccec0ef0d0",
       "sectionId": "chapter-glossary-81"
     },
     "/referenz/kapitel-082-ki-governance/": {
@@ -34769,7 +34910,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-page-cc0eb8be69d31d12"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082": {
@@ -34777,7 +34918,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s001": {
@@ -34785,7 +34926,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s001"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s002": {
@@ -34793,7 +34934,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s002"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s003": {
@@ -34801,7 +34942,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s003"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s004": {
@@ -34809,7 +34950,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s004"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s005": {
@@ -34817,7 +34958,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s005"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s006": {
@@ -34825,7 +34966,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s006"
     },
     "/referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s007": {
@@ -34833,7 +34974,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "woek-main-2026-k082-s007"
     },
     "/referenz/kapitel-082-ki-governance/#chapter-glossary-82": {
@@ -34841,7 +34982,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-082-ki-governance/index.html",
-      "contentHash": "4ce946b9fe245b95",
+      "contentHash": "2640c1c1bbd81a50",
       "sectionId": "chapter-glossary-82"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/": {
@@ -34849,7 +34990,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-page-8d83107074b65e6a"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083": {
@@ -34857,7 +34998,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s001": {
@@ -34865,7 +35006,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083-s001"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s002": {
@@ -34873,7 +35014,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083-s002"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s003": {
@@ -34881,7 +35022,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083-s003"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s004": {
@@ -34889,7 +35030,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083-s004"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s005": {
@@ -34897,7 +35038,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083-s005"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s006": {
@@ -34905,7 +35046,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "woek-main-2026-k083-s006"
     },
     "/referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83": {
@@ -34913,7 +35054,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/index.html",
-      "contentHash": "b8063785a81ae90d",
+      "contentHash": "fcc630be51607f3b",
       "sectionId": "chapter-glossary-83"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/": {
@@ -34921,7 +35062,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-page-ac61b679c9aa8dad"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084": {
@@ -34929,7 +35070,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s001": {
@@ -34937,7 +35078,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s001"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s002": {
@@ -34945,7 +35086,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s002"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s003": {
@@ -34953,7 +35094,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s003"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s004": {
@@ -34961,7 +35102,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s004"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s005": {
@@ -34969,7 +35110,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s005"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s006": {
@@ -34977,7 +35118,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s006"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#woek-main-2026-k084-s007": {
@@ -34985,7 +35126,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "woek-main-2026-k084-s007"
     },
     "/referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#chapter-glossary-84": {
@@ -34993,7 +35134,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html",
-      "contentHash": "d8e7db01062a73dc",
+      "contentHash": "2fca3d00a4a37f9b",
       "sectionId": "chapter-glossary-84"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/": {
@@ -35001,7 +35142,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-page-ba5c3b0ce010179e"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085": {
@@ -35009,7 +35150,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s001": {
@@ -35017,7 +35158,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s001"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s002": {
@@ -35025,7 +35166,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s002"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s003": {
@@ -35033,7 +35174,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s003"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s004": {
@@ -35041,7 +35182,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s004"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s005": {
@@ -35049,7 +35190,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s005"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s006": {
@@ -35057,7 +35198,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s006"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s007": {
@@ -35065,7 +35206,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "woek-main-2026-k085-s007"
     },
     "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#chapter-glossary-85": {
@@ -35073,7 +35214,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
-      "contentHash": "7e927f8d846feb13",
+      "contentHash": "1acd3f02fd480ad2",
       "sectionId": "chapter-glossary-85"
     },
     "/referenz/kapitel-086-wissenschaft-als-wirkungsinfrastruktur/": {
@@ -37265,7 +37406,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/teil-13-digitalisierung-ki-und-wirkungsdatenraeume/index.html",
-      "contentHash": "d1d395ef47955d69",
+      "contentHash": "c69976f0c5c58284",
       "sectionId": "woek-page-7db037c02d4e8faa"
     },
     "/referenz/teil-14-wissen-wissenschaft-forschung-und-rechtsprechung/": {
@@ -37457,7 +37598,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "63368f689f324411",
+      "contentHash": "4dfa3f7cfacdbce9",
       "sectionId": "woek-page-e6bdb60cf0627b03"
     },
     "/bibliothek/landwirtschaft-wirkungsoekonomie/": {
@@ -45689,7 +45830,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/architektur/index.html",
-      "contentHash": "04968c7277ae6d3f",
+      "contentHash": "a785c16d4c56d0f7",
       "sectionId": "woek-page-d583fdad6eb2f0a2"
     },
     "/werkstatt/arbeitsbibliothek/architektur/#bibliothek-register": {
@@ -45697,7 +45838,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/architektur/index.html",
-      "contentHash": "04968c7277ae6d3f",
+      "contentHash": "a785c16d4c56d0f7",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/architektur/#export-title": {
@@ -45705,7 +45846,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/architektur/index.html",
-      "contentHash": "04968c7277ae6d3f",
+      "contentHash": "a785c16d4c56d0f7",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/gesetze/": {
@@ -45713,31 +45854,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/gesetze/index.html",
-      "contentHash": "56ef2421f92a4440",
+      "contentHash": "55d30c6497fa14a7",
       "sectionId": "woek-page-d36737722eb1ef53"
     },
-    "/werkstatt/arbeitsbibliothek/gesetze/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/gesetze/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/gesetze/index.html",
-      "contentHash": "56ef2421f92a4440",
-      "sectionId": "bibliothek-register"
-    },
-    "/werkstatt/arbeitsbibliothek/gesetze/#export-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "werkstatt/arbeitsbibliothek/gesetze/index.html",
-      "contentHash": "56ef2421f92a4440",
-      "sectionId": "export-title"
+      "contentHash": "55d30c6497fa14a7",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/historische-dokumente/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/historische-dokumente/index.html",
-      "contentHash": "37cd890aa8f44e03",
+      "contentHash": "c7ae197bafa2ada4",
       "sectionId": "woek-page-a035e8e7ad85b763"
     },
     "/werkstatt/arbeitsbibliothek/historische-dokumente/#bibliothek-register": {
@@ -45745,7 +45878,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/historische-dokumente/index.html",
-      "contentHash": "37cd890aa8f44e03",
+      "contentHash": "c7ae197bafa2ada4",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/historische-dokumente/#export-title": {
@@ -45753,7 +45886,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/historische-dokumente/index.html",
-      "contentHash": "37cd890aa8f44e03",
+      "contentHash": "c7ae197bafa2ada4",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/": {
@@ -45761,7 +45894,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/index.html",
-      "contentHash": "c6e82787a592ce5d",
+      "contentHash": "c1a0463615bc5761",
       "sectionId": "woek-page-63153d9b72898208"
     },
     "/werkstatt/arbeitsbibliothek/#bibliothek-register": {
@@ -45769,7 +45902,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/index.html",
-      "contentHash": "c6e82787a592ce5d",
+      "contentHash": "c1a0463615bc5761",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/#export-title": {
@@ -45777,7 +45910,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/index.html",
-      "contentHash": "c6e82787a592ce5d",
+      "contentHash": "c1a0463615bc5761",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/impact-controlling/": {
@@ -45785,31 +45918,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/impact-controlling/index.html",
-      "contentHash": "ddcd043995f04464",
+      "contentHash": "d8a529695e285316",
       "sectionId": "woek-page-c1fee9a80015522f"
     },
-    "/werkstatt/arbeitsbibliothek/instrumente/impact-controlling/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/instrumente/impact-controlling/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/impact-controlling/index.html",
-      "contentHash": "ddcd043995f04464",
-      "sectionId": "bibliothek-register"
-    },
-    "/werkstatt/arbeitsbibliothek/instrumente/impact-controlling/#export-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/impact-controlling/index.html",
-      "contentHash": "ddcd043995f04464",
-      "sectionId": "export-title"
+      "contentHash": "d8a529695e285316",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/index.html",
-      "contentHash": "60e8001f4d2805f6",
+      "contentHash": "069e97c14a86d246",
       "sectionId": "woek-page-293b900b2b8abb6a"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/#bibliothek-register": {
@@ -45817,7 +45942,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/index.html",
-      "contentHash": "60e8001f4d2805f6",
+      "contentHash": "069e97c14a86d246",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/#export-title": {
@@ -45825,7 +45950,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/index.html",
-      "contentHash": "60e8001f4d2805f6",
+      "contentHash": "069e97c14a86d246",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/scorecards/": {
@@ -45833,7 +45958,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/scorecards/index.html",
-      "contentHash": "02a0cc401b2965ae",
+      "contentHash": "308df75ec4493d31",
       "sectionId": "woek-page-6f25c761af4beb57"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/scorecards/#bibliothek-register": {
@@ -45841,7 +45966,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/scorecards/index.html",
-      "contentHash": "02a0cc401b2965ae",
+      "contentHash": "308df75ec4493d31",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/scorecards/#export-title": {
@@ -45849,7 +45974,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/scorecards/index.html",
-      "contentHash": "02a0cc401b2965ae",
+      "contentHash": "308df75ec4493d31",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/t-sroi/": {
@@ -45857,7 +45982,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/t-sroi/index.html",
-      "contentHash": "92bbde52a4f15abb",
+      "contentHash": "e2736cde26b6706b",
       "sectionId": "woek-page-1e220516821476bb"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/t-sroi/#bibliothek-register": {
@@ -45865,7 +45990,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/t-sroi/index.html",
-      "contentHash": "92bbde52a4f15abb",
+      "contentHash": "e2736cde26b6706b",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/t-sroi/#export-title": {
@@ -45873,7 +45998,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/t-sroi/index.html",
-      "contentHash": "92bbde52a4f15abb",
+      "contentHash": "e2736cde26b6706b",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/wirkungsrat/": {
@@ -45881,7 +46006,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/wirkungsrat/index.html",
-      "contentHash": "565920c7b6dbd28c",
+      "contentHash": "a359ccdf123103ed",
       "sectionId": "woek-page-46e0ae0c7eda3bbd"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/wirkungsrat/#bibliothek-register": {
@@ -45889,7 +46014,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/wirkungsrat/index.html",
-      "contentHash": "565920c7b6dbd28c",
+      "contentHash": "a359ccdf123103ed",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/wirkungsrat/#export-title": {
@@ -45897,7 +46022,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/wirkungsrat/index.html",
-      "contentHash": "565920c7b6dbd28c",
+      "contentHash": "a359ccdf123103ed",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/wirkungssteuergesetz/": {
@@ -45905,7 +46030,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/wirkungssteuergesetz/index.html",
-      "contentHash": "f6f246adff85db3e",
+      "contentHash": "23dd4935c43641bd",
       "sectionId": "woek-page-35cb061b0b2f5627"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/wirkungssteuergesetz/#bibliothek-register": {
@@ -45913,7 +46038,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/wirkungssteuergesetz/index.html",
-      "contentHash": "f6f246adff85db3e",
+      "contentHash": "23dd4935c43641bd",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/wirkungssteuergesetz/#export-title": {
@@ -45921,7 +46046,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/wirkungssteuergesetz/index.html",
-      "contentHash": "f6f246adff85db3e",
+      "contentHash": "23dd4935c43641bd",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/woek-ids/": {
@@ -45929,7 +46054,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/woek-ids/index.html",
-      "contentHash": "9409d3ddd8d5b36c",
+      "contentHash": "6d283e01028a3022",
       "sectionId": "woek-page-3cbb371fb2e985b8"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/woek-ids/#bibliothek-register": {
@@ -45937,7 +46062,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/woek-ids/index.html",
-      "contentHash": "9409d3ddd8d5b36c",
+      "contentHash": "6d283e01028a3022",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/instrumente/woek-ids/#export-title": {
@@ -45945,7 +46070,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/instrumente/woek-ids/index.html",
-      "contentHash": "9409d3ddd8d5b36c",
+      "contentHash": "6d283e01028a3022",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/konzepte-dossiers/": {
@@ -45953,31 +46078,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/konzepte-dossiers/index.html",
-      "contentHash": "d70624ddc4279b6c",
+      "contentHash": "a9c1355b7f4d4726",
       "sectionId": "woek-page-05d76151bf6999ba"
     },
-    "/werkstatt/arbeitsbibliothek/konzepte-dossiers/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/konzepte-dossiers/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/konzepte-dossiers/index.html",
-      "contentHash": "d70624ddc4279b6c",
-      "sectionId": "bibliothek-register"
-    },
-    "/werkstatt/arbeitsbibliothek/konzepte-dossiers/#export-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "werkstatt/arbeitsbibliothek/konzepte-dossiers/index.html",
-      "contentHash": "d70624ddc4279b6c",
-      "sectionId": "export-title"
+      "contentHash": "a9c1355b7f4d4726",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/methodik/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/methodik/index.html",
-      "contentHash": "982b455934bb2754",
+      "contentHash": "8f7af708f12745c0",
       "sectionId": "woek-page-b6c88731687453e0"
     },
     "/werkstatt/arbeitsbibliothek/methodik/#bibliothek-register": {
@@ -45985,7 +46102,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/methodik/index.html",
-      "contentHash": "982b455934bb2754",
+      "contentHash": "8f7af708f12745c0",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/methodik/#export-title": {
@@ -45993,7 +46110,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/methodik/index.html",
-      "contentHash": "982b455934bb2754",
+      "contentHash": "8f7af708f12745c0",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/praxis/": {
@@ -46001,7 +46118,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/praxis/index.html",
-      "contentHash": "653bbc0abd5714e9",
+      "contentHash": "35234fffbfca789d",
       "sectionId": "woek-page-331afe289a36f558"
     },
     "/werkstatt/arbeitsbibliothek/praxis/#bibliothek-register": {
@@ -46009,7 +46126,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/praxis/index.html",
-      "contentHash": "653bbc0abd5714e9",
+      "contentHash": "35234fffbfca789d",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/praxis/#export-title": {
@@ -46017,7 +46134,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/praxis/index.html",
-      "contentHash": "653bbc0abd5714e9",
+      "contentHash": "35234fffbfca789d",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/recht/": {
@@ -46025,7 +46142,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/recht/index.html",
-      "contentHash": "c63b6bd674bf50e9",
+      "contentHash": "3d9e240ceb66b6d2",
       "sectionId": "woek-page-3dfb0deb58259340"
     },
     "/werkstatt/arbeitsbibliothek/recht/#bibliothek-register": {
@@ -46033,7 +46150,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/recht/index.html",
-      "contentHash": "c63b6bd674bf50e9",
+      "contentHash": "3d9e240ceb66b6d2",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/recht/#export-title": {
@@ -46041,7 +46158,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/recht/index.html",
-      "contentHash": "c63b6bd674bf50e9",
+      "contentHash": "3d9e240ceb66b6d2",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/soziales/": {
@@ -46049,7 +46166,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/soziales/index.html",
-      "contentHash": "0d2278528ecebf18",
+      "contentHash": "229509e2be5fcbae",
       "sectionId": "woek-page-e2373bee958b7b15"
     },
     "/werkstatt/arbeitsbibliothek/soziales/#bibliothek-register": {
@@ -46057,7 +46174,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/soziales/index.html",
-      "contentHash": "0d2278528ecebf18",
+      "contentHash": "229509e2be5fcbae",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/soziales/#export-title": {
@@ -46065,7 +46182,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/soziales/index.html",
-      "contentHash": "0d2278528ecebf18",
+      "contentHash": "229509e2be5fcbae",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/": {
@@ -46121,7 +46238,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/whitepaper/index.html",
-      "contentHash": "732c4c0a983288b9",
+      "contentHash": "0b044a61781a83cc",
       "sectionId": "woek-page-120f12f7692453f7"
     },
     "/werkstatt/arbeitsbibliothek/whitepaper/#bibliothek-register": {
@@ -46129,7 +46246,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/whitepaper/index.html",
-      "contentHash": "732c4c0a983288b9",
+      "contentHash": "0b044a61781a83cc",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/whitepaper/#export-title": {
@@ -46137,7 +46254,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/whitepaper/index.html",
-      "contentHash": "732c4c0a983288b9",
+      "contentHash": "0b044a61781a83cc",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/": {
@@ -46145,104 +46262,144 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/index.html",
-      "contentHash": "4910047530284305",
+      "contentHash": "66475fa32c76080d",
       "sectionId": "woek-page-6b290556e842e30e"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/#publikationszugang-title": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/index.html",
-      "contentHash": "4910047530284305",
-      "sectionId": "bibliothek-register"
+      "contentHash": "66475fa32c76080d",
+      "sectionId": "publikationszugang-title"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/#docs": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/index.html",
-      "contentHash": "4910047530284305",
-      "sectionId": "export-title"
+      "contentHash": "66475fa32c76080d",
+      "sectionId": "docs"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/#downloads": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/index.html",
+      "contentHash": "66475fa32c76080d",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
-      "contentHash": "6aa0500447af62f4",
+      "contentHash": "1f19bb7fab84ba02",
       "sectionId": "woek-page-1e5f2a37d9b4cbbe"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#vertiefung-arbeitsmaterial-title": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
-      "contentHash": "6aa0500447af62f4",
-      "sectionId": "bibliothek-register"
+      "contentHash": "1f19bb7fab84ba02",
+      "sectionId": "vertiefung-arbeitsmaterial-title"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#unterbereiche": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
-      "contentHash": "6aa0500447af62f4",
-      "sectionId": "export-title"
+      "contentHash": "1f19bb7fab84ba02",
+      "sectionId": "unterbereiche"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#tools": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
+      "contentHash": "1f19bb7fab84ba02",
+      "sectionId": "tools"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#sdg-ref": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
+      "contentHash": "1f19bb7fab84ba02",
+      "sectionId": "sdg-ref"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#buch": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
+      "contentHash": "1f19bb7fab84ba02",
+      "sectionId": "buch"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/#downloads": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/index.html",
+      "contentHash": "1f19bb7fab84ba02",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
+      "contentHash": "47d4581e46d16cf0",
       "sectionId": "woek-page-94197e505d447ad3"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#toc-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#zugang": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
-      "sectionId": "toc-title"
+      "contentHash": "47d4581e46d16cf0",
+      "sectionId": "zugang"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#online-volltext": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#vertiefung-arbeitsmaterial-title": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
-      "sectionId": "online-volltext"
+      "contentHash": "47d4581e46d16cf0",
+      "sectionId": "vertiefung-arbeitsmaterial-title"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#sdg-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#tools": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
-      "sectionId": "sdg-title"
+      "contentHash": "47d4581e46d16cf0",
+      "sectionId": "tools"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#book-anchors": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#sdg-ref": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
-      "sectionId": "book-anchors"
+      "contentHash": "47d4581e46d16cf0",
+      "sectionId": "sdg-ref"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#download-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#buch": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
-      "sectionId": "download-title"
+      "contentHash": "47d4581e46d16cf0",
+      "sectionId": "buch"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/index.html",
-      "contentHash": "ef6aa6e56eb5f17e",
-      "sectionId": "export-title"
+      "contentHash": "47d4581e46d16cf0",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule-wirkungspaedagogik-wirkungskompetenz/": {
       "documentType": "Referenz",
@@ -46337,55 +46494,119 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
-      "contentHash": "c75e7fa0b1e1628b",
+      "contentHash": "a147860648fcf95e",
       "sectionId": "woek-page-c66793841b1fa4e5"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#publikationszugang-title": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
-      "contentHash": "c75e7fa0b1e1628b",
-      "sectionId": "bibliothek-register"
+      "contentHash": "a147860648fcf95e",
+      "sectionId": "publikationszugang-title"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#unterbereiche": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
-      "contentHash": "c75e7fa0b1e1628b",
-      "sectionId": "export-title"
+      "contentHash": "a147860648fcf95e",
+      "sectionId": "unterbereiche"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#tools": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
+      "contentHash": "a147860648fcf95e",
+      "sectionId": "tools"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#sdg-ref": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
+      "contentHash": "a147860648fcf95e",
+      "sectionId": "sdg-ref"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#buch": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
+      "contentHash": "a147860648fcf95e",
+      "sectionId": "buch"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#downloads": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/index.html",
+      "contentHash": "a147860648fcf95e",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
-      "contentHash": "d2de12554ab6dab6",
+      "contentHash": "8edf4c9bcdba3269",
       "sectionId": "woek-page-38a8bdb5aeeb7387"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#publikationszugang-title": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
-      "contentHash": "d2de12554ab6dab6",
-      "sectionId": "bibliothek-register"
+      "contentHash": "8edf4c9bcdba3269",
+      "sectionId": "publikationszugang-title"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#unterbereiche": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
-      "contentHash": "d2de12554ab6dab6",
-      "sectionId": "export-title"
+      "contentHash": "8edf4c9bcdba3269",
+      "sectionId": "unterbereiche"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#tools": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
+      "contentHash": "8edf4c9bcdba3269",
+      "sectionId": "tools"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#sdg-ref": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
+      "contentHash": "8edf4c9bcdba3269",
+      "sectionId": "sdg-ref"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#buch": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
+      "contentHash": "8edf4c9bcdba3269",
+      "sectionId": "buch"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/#downloads": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
+      "contentHash": "8edf4c9bcdba3269",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/index.html",
-      "contentHash": "a1789789ebdb11d4",
+      "contentHash": "912c4638d6dafa77",
       "sectionId": "woek-page-c99770159f8a931a"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/#bibliothek-register": {
@@ -46393,7 +46614,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/index.html",
-      "contentHash": "a1789789ebdb11d4",
+      "contentHash": "912c4638d6dafa77",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/#export-title": {
@@ -46401,7 +46622,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/index.html",
-      "contentHash": "a1789789ebdb11d4",
+      "contentHash": "912c4638d6dafa77",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/klima-energie-ressourcen/": {
@@ -46409,7 +46630,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/klima-energie-ressourcen/index.html",
-      "contentHash": "8a377b3b8da40f59",
+      "contentHash": "ad76d160c91aa66a",
       "sectionId": "woek-page-67e502beb9a39fa0"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/klima-energie-ressourcen/#bibliothek-register": {
@@ -46417,7 +46638,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/klima-energie-ressourcen/index.html",
-      "contentHash": "8a377b3b8da40f59",
+      "contentHash": "ad76d160c91aa66a",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/klima-energie-ressourcen/#export-title": {
@@ -46425,7 +46646,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/klima-energie-ressourcen/index.html",
-      "contentHash": "8a377b3b8da40f59",
+      "contentHash": "ad76d160c91aa66a",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/kultur-identitaet-resonanz/": {
@@ -46433,7 +46654,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/kultur-identitaet-resonanz/index.html",
-      "contentHash": "075fcb722394e1d4",
+      "contentHash": "896f9ed845ca411c",
       "sectionId": "woek-page-0fec57d246564e1a"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/kultur-identitaet-resonanz/#bibliothek-register": {
@@ -46441,7 +46662,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/kultur-identitaet-resonanz/index.html",
-      "contentHash": "075fcb722394e1d4",
+      "contentHash": "896f9ed845ca411c",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/kultur-identitaet-resonanz/#export-title": {
@@ -46449,7 +46670,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/kultur-identitaet-resonanz/index.html",
-      "contentHash": "075fcb722394e1d4",
+      "contentHash": "896f9ed845ca411c",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/": {
@@ -46457,7 +46678,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/index.html",
-      "contentHash": "6e2ed2d6dccc27bb",
+      "contentHash": "6ce04c79c5563324",
       "sectionId": "woek-page-9b2e201a880334a9"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/#bibliothek-register": {
@@ -46465,7 +46686,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/index.html",
-      "contentHash": "6e2ed2d6dccc27bb",
+      "contentHash": "6ce04c79c5563324",
       "sectionId": "bibliothek-register"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/#export-title": {
@@ -46473,7 +46694,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/medien-oeffentlichkeit/index.html",
-      "contentHash": "6e2ed2d6dccc27bb",
+      "contentHash": "6ce04c79c5563324",
       "sectionId": "export-title"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/": {
@@ -46481,144 +46702,152 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/index.html",
-      "contentHash": "aa5ea6c7c75723e0",
+      "contentHash": "7a0925cff3ee3117",
       "sectionId": "woek-page-83b8935302fbbe3a"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/index.html",
-      "contentHash": "aa5ea6c7c75723e0",
-      "sectionId": "bibliothek-register"
-    },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/#export-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/produkte-konsum/index.html",
-      "contentHash": "aa5ea6c7c75723e0",
-      "sectionId": "export-title"
+      "contentHash": "7a0925cff3ee3117",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/index.html",
-      "contentHash": "7fefc22f6a0b4f73",
+      "contentHash": "dd59ec6531734472",
       "sectionId": "woek-page-1d31efb520865367"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/#online": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/index.html",
-      "contentHash": "7fefc22f6a0b4f73",
-      "sectionId": "bibliothek-register"
+      "contentHash": "dd59ec6531734472",
+      "sectionId": "online"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/rente-soziale-sicherung/index.html",
-      "contentHash": "7fefc22f6a0b4f73",
-      "sectionId": "export-title"
+      "contentHash": "dd59ec6531734472",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/index.html",
-      "contentHash": "bc1dd487957621a4",
+      "contentHash": "f6d719b523bd56d1",
       "sectionId": "woek-page-c34ffa3ffde7f951"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/#library": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/index.html",
-      "contentHash": "bc1dd487957621a4",
-      "sectionId": "bibliothek-register"
+      "contentHash": "f6d719b523bd56d1",
+      "sectionId": "library"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/staat-recht-demokratie/index.html",
-      "contentHash": "bc1dd487957621a4",
-      "sectionId": "export-title"
+      "contentHash": "f6d719b523bd56d1",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/index.html",
-      "contentHash": "b4230ba6a811148d",
+      "contentHash": "ffb8e09e04daf4dd",
       "sectionId": "woek-page-91dd0bebd0580a47"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/index.html",
-      "contentHash": "b4230ba6a811148d",
-      "sectionId": "bibliothek-register"
-    },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/#export-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/index.html",
-      "contentHash": "b4230ba6a811148d",
-      "sectionId": "export-title"
+      "contentHash": "ffb8e09e04daf4dd",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
-      "contentHash": "602812e942d3914e",
+      "contentHash": "143b992f0fce3499",
       "sectionId": "woek-page-41c13bdf7654073f"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#publikationszugang-title": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
-      "contentHash": "602812e942d3914e",
-      "sectionId": "bibliothek-register"
+      "contentHash": "143b992f0fce3499",
+      "sectionId": "publikationszugang-title"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#export-title": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#unterbereiche": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
-      "contentHash": "602812e942d3914e",
-      "sectionId": "export-title"
+      "contentHash": "143b992f0fce3499",
+      "sectionId": "unterbereiche"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#tools": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
+      "contentHash": "143b992f0fce3499",
+      "sectionId": "tools"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#sdg-ref": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
+      "contentHash": "143b992f0fce3499",
+      "sectionId": "sdg-ref"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#buch": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
+      "contentHash": "143b992f0fce3499",
+      "sectionId": "buch"
+    },
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#downloads": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
+      "contentHash": "143b992f0fce3499",
+      "sectionId": "downloads"
     },
     "/werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/index.html",
-      "contentHash": "683edbc5043b1552",
+      "contentHash": "790438aa88d5a159",
       "sectionId": "woek-page-93b1676b82ba535c"
     },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/#bibliothek-register": {
+    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/#downloads": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/index.html",
-      "contentHash": "683edbc5043b1552",
-      "sectionId": "bibliothek-register"
-    },
-    "/werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/#export-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "werkstatt/arbeitsbibliothek/wirkungsfelder/wohnen-stadt/index.html",
-      "contentHash": "683edbc5043b1552",
-      "sectionId": "export-title"
+      "contentHash": "790438aa88d5a159",
+      "sectionId": "downloads"
     },
     "/werkstatt/dossiers/bildung/": {
       "documentType": "Referenz",
@@ -50601,7 +50830,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/index.html",
-      "contentHash": "7c75f3d204002611",
+      "contentHash": "57409edadb139267",
       "sectionId": "woek-page-c460aeadc71a585a"
     },
     "/werkstatt/#werkstatt-register": {
@@ -50609,7 +50838,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/index.html",
-      "contentHash": "7c75f3d204002611",
+      "contentHash": "57409edadb139267",
       "sectionId": "werkstatt-register"
     },
     "/werkstatt/#sdg-title": {
@@ -50617,7 +50846,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/index.html",
-      "contentHash": "7c75f3d204002611",
+      "contentHash": "57409edadb139267",
       "sectionId": "sdg-title"
     },
     "/werkstatt/#book-anchors": {
@@ -50625,7 +50854,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/index.html",
-      "contentHash": "7c75f3d204002611",
+      "contentHash": "57409edadb139267",
       "sectionId": "book-anchors"
     },
     "/werkstatt/#export-title": {
@@ -50633,7 +50862,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkstatt/index.html",
-      "contentHash": "7c75f3d204002611",
+      "contentHash": "57409edadb139267",
       "sectionId": "export-title"
     },
     "/werkstatt/leitlinien/wustg/": {

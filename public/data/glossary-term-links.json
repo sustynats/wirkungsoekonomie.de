@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T22:08:40.520Z",
+  "generatedAt": "2026-06-01T22:37:56.472Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -469,29 +469,62 @@
       "relatedObjections": []
     },
     "algorithmische-fairness": {
-      "label": "Algorithmische Fairness",
+      "label": "Algorithmische Fairness und digitale Rechte",
       "slug": "algorithmische-fairness",
       "url": "/begriffe/algorithmische-fairness/",
-      "hoverDefinition": "Algorithmische Fairness prüft, ob algorithmische Systeme Benachteiligung erzeugen oder verstärken.",
-      "shortDefinition": "Algorithmische Fairness fragt, ob algorithmische Systeme Gruppen systematisch benachteiligen oder Schutzrechte verletzen.",
+      "hoverDefinition": "Algorithmische Fairness und digitale Rechte schützen vor Benachteiligung, Intransparenz und fehlender Korrektur.",
+      "shortDefinition": "Algorithmische Fairness und digitale Rechte beschreiben Schutzlinien gegen diskriminierende, intransparente oder nicht korrigierbare digitale Entscheidungen.",
       "category": "Daten, Digitalisierung und KI",
       "synonyms": [
-        "Algorithmische Fairness"
+        "Algorithmische Fairness und digitale Rechte",
+        "Algorithmische Fairness",
+        "algorithmic fairness",
+        "digitale Rechte",
+        "Digital Rights",
+        "Fairness by Design",
+        "Privacy by Design",
+        "Recht auf Erklärung",
+        "Recht auf Widerspruch",
+        "Recht auf Korrektur"
       ],
       "relatedTerms": [
         "ki-governance",
         "kuenstliche-intelligenz",
         "diskriminierungsverbot",
         "datenqualitaet",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "wirkungsdatenraeume",
+        "cyberresilienz",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        "datenqualitaet-assurance"
+      ],
       "relatedImpactFields": [
         "wissenschaft-innovation-digitalisierung",
         "staat-recht-demokratie"
       ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
       "relatedObjections": []
     },
     "allgemeines-gleichgewicht": {
@@ -3998,6 +4031,57 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "cyberresilienz": {
+      "label": "Cyberresilienz",
+      "slug": "cyberresilienz",
+      "url": "/begriffe/cyberresilienz/",
+      "hoverDefinition": "Cyberresilienz sichert digitale Systeme gegen Störung, Manipulation und Vertrauensverlust.",
+      "shortDefinition": "Cyberresilienz beschreibt die Fähigkeit digitaler Systeme, Angriffe, Störungen und Datenmanipulation zu verhindern, zu überstehen, zu begrenzen und daraus zu lernen.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Cyberresilienz",
+        "Cyber Resilience",
+        "operative digitale Resilienz",
+        "Wirkungs-Sicherheit",
+        "Daten-Sabotage-Schutz",
+        "digitale Wiederherstellbarkeit"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "algorithmische-fairness",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "datenqualitaet",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+        "supply-chain-resilienz"
+      ],
+      "relatedMethods": [
+        "datenqualitaet-assurance"
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "relatedObjections": []
+    },
     "dao": {
       "label": "Dao / Tao",
       "slug": "dao",
@@ -5141,6 +5225,58 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "digitalisierung-als-infrastruktur-der-wirkungsoekonomie": {
+      "label": "Digitalisierung als Infrastruktur der Wirkungsökonomie",
+      "slug": "digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+      "url": "/begriffe/digitalisierung-als-infrastruktur-der-wirkungsoekonomie/",
+      "hoverDefinition": "Digitalisierung ist in der WÖk Infrastruktur für Sichtbarkeit, Prüfung, Rückkopplung und Lernen.",
+      "shortDefinition": "Digitalisierung als Infrastruktur der Wirkungsökonomie beschreibt digitale Systeme, Datenflüsse und Schnittstellen als Rückkopplungsbedingung für Wirkung, nicht als Selbstzweck.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Digitalisierung als Infrastruktur der Wirkungsökonomie",
+        "Digitalisierung als Infrastruktur",
+        "Digitales Nervensystem der Wirkungsökonomie",
+        "digitale Wirkungsinfrastruktur",
+        "Daten als Rückkopplung",
+        "Digitalisierung als WÖk-Infrastruktur"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "algorithmische-fairness",
+        "cyberresilienz",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "datenqualitaet",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "datenqualitaet-assurance"
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
       "relatedObjections": []
     },
     "diktatur": {
@@ -13387,26 +13523,55 @@
       "label": "KI-Governance",
       "slug": "ki-governance",
       "url": "/begriffe/ki-governance/",
-      "hoverDefinition": "KI-Governance regelt Verantwortung, Prüfung und Schutz beim Einsatz von KI-Systemen.",
-      "shortDefinition": "KI-Governance beschreibt Regeln, Rollen, Prüfpfade und Verantwortung für Entwicklung und Einsatz von KI-Systemen.",
+      "hoverDefinition": "KI-Governance regelt Verantwortung, Prüfung, Aufsicht und Korrektur beim Einsatz von KI.",
+      "shortDefinition": "KI-Governance beschreibt Regeln, Rollen, Prüfpfade und Verantwortung, damit KI-Systeme Wirkung nicht unsichtbar, diskriminierend oder unkontrolliert verstärken.",
       "category": "Daten, Digitalisierung und KI",
       "synonyms": [
-        "KI-Governance"
+        "KI-Governance",
+        "AI Governance",
+        "KI-Risikomanagement",
+        "KI-Audit",
+        "KI-Assurance",
+        "Human Oversight",
+        "KI-Verantwortung"
       ],
       "relatedTerms": [
         "kuenstliche-intelligenz",
         "algorithmische-fairness",
         "datenqualitaet",
         "digitale-selbstbestimmung",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "wirkungsdatenraeume",
+        "cyberresilienz",
+        "digitalisierung",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        "datenqualitaet-assurance"
+      ],
       "relatedImpactFields": [
         "wissenschaft-innovation-digitalisierung",
         "staat-recht-demokratie"
       ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
       "relatedObjections": []
     },
     "kii": {
@@ -32973,18 +33138,40 @@
       "label": "Wirkungsdatenräume",
       "slug": "wirkungsdatenraeume",
       "url": "/begriffe/wirkungsdatenraeume/",
-      "hoverDefinition": "Wirkungsdatenräume machen Wirkungsdaten interoperabel, prüfbar und zweckgebunden nutzbar.",
-      "shortDefinition": "Wirkungsdatenräume sind geschützte Datenräume, in denen Wirkungsdaten interoperabel, prüfbar und zweckgebunden genutzt werden.",
+      "hoverDefinition": "Wirkungsdatenräume verbinden Wirkungsdaten prüfbar, zweckgebunden und rechtebasiert.",
+      "shortDefinition": "Wirkungsdatenräume sind geschützte, zweckgebundene Datenräume, in denen Wirkungsdaten interoperabel, prüfbar und mit klaren Rollenrechten genutzt werden.",
       "category": "Daten, Digitalisierung und KI",
       "synonyms": [
-        "Wirkungsdatenräume"
+        "Wirkungsdatenräume",
+        "Wirkungsdatenraum",
+        "Impact Data Spaces",
+        "WÖk-Datenräume",
+        "Wirkungsdateninfrastruktur",
+        "europäische Wirkungsdatenräume"
       ],
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
         "datenqualitaet",
         "digitalisierung",
-        "digitale-selbstbestimmung"
+        "digitale-selbstbestimmung",
+        "ki-governance",
+        "algorithmische-fairness",
+        "cyberresilienz",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitale-produktpaesse",
+        "datenqualitaet-assurance",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
       ],
       "relatedMethods": [
         "datenqualitaet-assurance"
@@ -32994,7 +33181,11 @@
         "produkte-konsum"
       ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
       "relatedObjections": []
     },
     "wirkungseinkommen": {
