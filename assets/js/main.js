@@ -939,6 +939,7 @@ function initGlossarySystem(terms) {
     "[data-no-glossary]",
   ].join(",");
   const sectionTerms = new WeakMap();
+  const termCounts = new Map();
   let globalCount = 0;
 
   function escapeRegex(value) {
@@ -950,6 +951,10 @@ function initGlossarySystem(terms) {
 
     let best = null;
     eligibleTerms.forEach((term) => {
+      if (Number.isFinite(term.maxAutoLinksPerPage) && (termCounts.get(term.key) || 0) >= term.maxAutoLinksPerPage) {
+        return;
+      }
+
       if (alreadyInSection.has(term.key)) {
         return;
       }
@@ -1039,6 +1044,7 @@ function initGlossarySystem(terms) {
     const usedTerms = sectionTerms.get(section) || new Set();
     usedTerms.add(match.term.key);
     sectionTerms.set(section, usedTerms);
+    termCounts.set(match.term.key, (termCounts.get(match.term.key) || 0) + 1);
     block.dataset.glossaryMarked = String(Number(block.dataset.glossaryMarked || "0") + 1);
     globalCount += 1;
     return true;

@@ -1,10 +1,10 @@
 # Glossary Coverage Report
 
-Stand: 2026-06-01T07:54:14.278Z
+Stand: 2026-06-01T08:16:35.980Z
 
-- HTML-Seiten gescannt: 3271
-- Seiten mit /begriffe/-Links: 2503
-- Seiten mit Glossar-/Term-Markup: 1598
+- HTML-Seiten gescannt: 3275
+- Seiten mit /begriffe/-Links: 2507
+- Seiten mit Glossar-/Term-Markup: 1599
 - Tote Glossarlinks: 0
 
 ## Seiten mit den meisten Glossarlinks
@@ -25,6 +25,7 @@ Stand: 2026-06-01T07:54:14.278Z
 - referenz/teil-11-gesellschaftliche-grundsysteme/index.html: 29
 - begriffe/demokratische-erosion/index.html: 28
 - begriffe/sechster-kondratieff/index.html: 28
+- begriffe/soziale-infrastruktur/index.html: 28
 - begriffe/wirkungsresilienz/index.html: 28
 - begriffe/kapitalwirkung/index.html: 27
 - begriffe/rueckkopplung/index.html: 27
@@ -68,6 +69,7 @@ Stand: 2026-06-01T07:54:14.278Z
 - begriffe/grundgesetz/index.html: 18
 - begriffe/rechtsstaatlichkeit/index.html: 18
 - begriffe/salienz/index.html: 18
+- begriffe/sexarbeit/index.html: 18
 - begriffe/woek-id/index.html: 18
 - begriffe/alarm-frame/index.html: 17
 - begriffe/machtkonzentration/index.html: 17
@@ -75,7 +77,6 @@ Stand: 2026-06-01T07:54:14.278Z
 - begriffe/ngo/index.html: 17
 - begriffe/patriarchat/index.html: 17
 - begriffe/reframing/index.html: 17
-- begriffe/sexarbeit/index.html: 17
 - begriffe/sustainable-finance/index.html: 17
 - begriffe/trickle-down-oekonomie/index.html: 17
 - referenz/kapitel-011-wirkungspotenzial/index.html: 17
@@ -107,7 +108,6 @@ Stand: 2026-06-01T07:54:14.278Z
 - begriffe/rassismus/index.html: 15
 - begriffe/systemgrenze/index.html: 15
 - begriffe/thinktank/index.html: 15
-- begriffe/wirkstoff/index.html: 15
 
 ## Tote Glossarlinks
 Keine.

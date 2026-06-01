@@ -148,7 +148,7 @@ const hoverTerms = terms
   .map((term, index) => ({
     key: term.termId,
     label: term.canonicalLabel,
-    aliases: term.synonyms || [],
+    aliases: term.autoLinkAliases || term.synonyms || [],
     definition: term.hoverDefinition || term.shortDefinition,
     url: term.pageUrl || `/begriffe/${term.slug}/`,
     priority: index + 1,

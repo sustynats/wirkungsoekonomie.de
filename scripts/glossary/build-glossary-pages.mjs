@@ -921,6 +921,140 @@ function writeGlossaryTermAlias(aliasSlug, aliasLabel, targetSlug) {
   fs.writeFileSync(path.join(dir, "index.html"), glossaryTermAliasPage(aliasLabel, targetSlug));
 }
 
+function sozialeInfrastrukturDetailBody(term) {
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">WÖk-Präzisierungsbegriff / Architekturbegriff</p>
+          <h1>${esc(term.canonicalLabel)}</h1>
+          <p class="lead">Soziale Infrastruktur bezeichnet in der Wirkungsökonomie die Räume, Beziehungen, Dienste, Rechte, Institutionen und Schutzstrukturen, die Menschen Sicherheit, Gesundheit, Teilhabe, Selbstwirksamkeit, Zugehörigkeit und demokratische Handlungsfähigkeit ermöglichen.</p>
+          <div class="term-meta-row" aria-label="Begriffsinformation">
+            <span>Gesellschaft, Soziales &amp; Wirkungsarchitektur</span>
+            <span>Keine Personenbewertung</span>
+            <span>Exaktes Auto-Linking</span>
+          </div>
+          <div class="term-action-row">${detailLinks(term)}</div>
+        </header>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Leitformel</p>
+          <h2>Tragendes Netz gesellschaftlicher Handlungsfähigkeit</h2>
+          <p>Soziale Infrastruktur ist das tragende Netz aus Räumen, Beziehungen, Diensten, Rechten, Institutionen und Schutzstrukturen, das Menschen ermöglicht, gesund, sicher, handlungsfähig, zugehörig und demokratisch wirksam zu leben.</p>
+          <p>Eine Gesellschaft wird nicht nur durch Straßen, Stromnetze und Gebäude getragen, sondern durch Beziehungs-, Schutz-, Bildungs-, Gesundheits-, Beratungs-, Kultur-, Wohn-, Rechts- und Teilhabeinfrastrukturen. Wenn diese soziale Infrastruktur ausfällt, entstehen Ohnmacht, Einsamkeit, Ausschluss, Krankheit, Gewalt, Radikalisierung, Vertrauensverlust und demokratische Instabilität.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Wirkungsökonomie</p>
+          <h2>Einordnung</h2>
+          <p>Soziale Infrastruktur ist kein Randthema der Sozialpolitik. Sie ist eine Grundbedingung für positive Wirkung im Alltag, verbindet Mensch und Demokratie und wirkt über Beziehungen, Zugänge, Orte, Rechte, Dienste und Institutionen. Sie macht Menschen handlungsfähig, statt sie nur zu versorgen.</p>
+          <p>Sie ist messbar, aber nicht auf eine einzelne Zahl reduzierbar. In der Wirkungsökonomie ist sie Voraussetzung für positive Netto-Wirkung in Bildung, Gesundheit, Pflege, Wohnen, Migration, Arbeit, Kultur, Medien und Demokratie.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Kernthese</p>
+          <h2>Wirkungsnetz einer Gesellschaft</h2>
+          <p>Die Wirkungsökonomie betrachtet soziale Infrastruktur als tragendes Wirkungsnetz einer Gesellschaft. Wo soziale Infrastruktur stark ist, entstehen Sicherheit, Zugehörigkeit, Gesundheit, Bildung, Pflege, Teilhabe, Vertrauen und Selbstwirksamkeit. Wo sie schwach ist, entstehen Ausschluss, Einsamkeit, Krankheit, Gewalt, Radikalisierung, Ohnmacht und Vertrauensverlust.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Warum wichtig?</p>
+          <h2>Unsichtbare Systemleistung sichtbar machen</h2>
+          <p>Viele gesellschaftliche Leistungen bleiben im alten Kapitalmaßstab unsichtbar. Pflege, Erziehung, Nachbarschaft, Beratung, Kultur, Begegnung, Schutzräume, Prävention, Konfliktvermittlung und demokratische Alltagsarbeit erzeugen hohe Wirkleistung. Im alten System erscheinen sie oft als Kostenstelle oder private Aufgabe. In der WÖk werden sie als Systemleistung sichtbar: Prävention, Resilienz und Demokratiepflege statt spätere Reparaturkosten.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Abgrenzung</p>
+          <h2>Nicht verwechseln mit</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Nicht nur Sozialstaat</h3><p>Soziale Infrastruktur umfasst mehr als staatliche Leistungen. Sie enthält auch Beziehungen, öffentliche Räume, zivilgesellschaftliche Strukturen, Kultur, Beratung, Selbsthilfe, digitale Zugänge und lokale Netzwerke.</p></section>
+            <section class="term-section-card"><h3>Nicht nur Daseinsvorsorge</h3><p>Daseinsvorsorge meint oft Versorgung mit Grunddiensten. Soziale Infrastruktur ist breiter: Sie umfasst auch Zugehörigkeit, Schutz, Resonanz, Teilhabe, Beziehung und demokratische Handlungsfähigkeit.</p></section>
+            <section class="term-section-card"><h3>Nicht nur physische Infrastruktur</h3><p>Straßen, Gebäude und Netze sind wichtig, aber soziale Infrastruktur umfasst auch Vertrauen, Rechte, Beratung, Pflege, Kultur, Bildung, Zugehörigkeit, digitale Teilhabe und Schutz vor Ausschluss.</p></section>
+            <section class="term-section-card"><h3>Nicht Sozialromantik</h3><p>Ihr Ausfall erzeugt harte Kosten: Krankheit, Pflegekollaps, Bildungsdefizite, Gewalt, Obdachlosigkeit, Radikalisierung, Vertrauensverlust und demokratische Instabilität.</p></section>
+            <section class="term-section-card"><h3>Nicht Personenbewertung</h3><p>Die WÖk bewertet nicht Menschen nach ihrem sozialen Verhalten. Sie prüft Strukturen, Zugänge, Schutzmechanismen und Zustandsveränderungen.</p></section>
+          </div>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Bestandteile</p>
+          <h2>Woraus soziale Infrastruktur besteht</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Räume</h3>${listItems(["Wohnungen", "Nachbarschaften", "Schulen und Kitas", "Pflegeeinrichtungen und Gesundheitszentren", "Jugend- und Familienzentren", "Frauenhäuser und Schutzräume", "Kulturzentren, Bibliotheken, Sportvereine und Stadtteilzentren", "öffentliche Plätze und digitale öffentliche Räume"])}</section>
+            <section class="term-section-card"><h3>Dienste</h3>${listItems(["Gesundheitsversorgung", "Pflege", "Beratung und Sozialarbeit", "Bildung und Kinderbetreuung", "Schuldnerberatung und Rechtshilfe", "Integrationsangebote", "psychologische Unterstützung", "Prävention, Konfliktvermittlung, Obdachlosenhilfe, Suchthilfe und Ausstiegsangebote", "Antidiskriminierungsstellen"])}</section>
+            <section class="term-section-card"><h3>Beziehungen</h3>${listItems(["Familie und Freundschaft", "Nachbarschaft", "Care-Beziehungen", "zivilgesellschaftliche Netzwerke", "Ehrenamt, Vereine und Selbsthilfe", "Gemeinwesenarbeit", "demokratische Beteiligung", "Resonanzräume"])}</section>
+            <section class="term-section-card"><h3>Rechte und Zugänge</h3>${listItems(["Zugang zu Bildung, Gesundheit, Wohnen und Rechtsschutz", "digitale Teilhabe", "Barrierefreiheit", "Diskriminierungsschutz", "Datenschutz", "Schutz vor Gewalt", "Beteiligungsrechte und Minderheitenschutz"])}</section>
+            <section class="term-section-card"><h3>Institutionen</h3>${listItems(["Kommunen und Verwaltung", "Gerichte", "Schulen", "Gesundheitsämter", "Pflegekassen und Sozialträger", "Medien", "Kulturinstitutionen", "Zivilgesellschaft und Wissenschaft", "öffentliche Daten- und Beratungsinfrastruktur"])}</section>
+          </div>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Wirkung</p>
+          <h2>Was soziale Infrastruktur bewirkt</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Mensch</h3>${listItems(["Sicherheit, Gesundheit und Würde", "Pflege, Bildung und Wohnsicherheit", "Teilhabe, Selbstwirksamkeit und Zugehörigkeit", "psychische Stabilität", "Schutz vor Gewalt, Armut und Ausschluss"])}</section>
+            <section class="term-section-card"><h3>Demokratie</h3>${listItems(["Vertrauen und Rechtszugang", "Beteiligung und Diskursfähigkeit", "gesellschaftlicher Zusammenhalt", "Minderheitenschutz", "Resilienz gegen Radikalisierung", "Schutz vor Desinformation durch stabile Resonanzräume", "institutionelle Glaubwürdigkeit"])}</section>
+            <section class="term-section-card"><h3>Planet</h3><p>Indirekt wirkt soziale Infrastruktur über gesunde Wohnräume, Mobilität, Hitzeresilienz, grüne Räume, lokale Versorgung, Energiezugang, Klimaanpassung und ökologische Quartiersgestaltung.</p></section>
+          </div>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Ausfallrisiken</p>
+          <h2>Negative Wirkung bei schwacher sozialer Infrastruktur</h2>
+          ${listItems(["Einsamkeit", "Ohnmacht", "Gewalt", "Verwahrlosung", "Bildungsabbrüche", "psychische Belastung", "Pflegeüberlastung", "Obdachlosigkeit und Wohnungsunsicherheit", "Radikalisierung", "Vertrauensverlust", "Diskriminierung", "institutionelle Distanz", "Gesundheitskosten", "soziale Spaltung", "demokratische Destabilisierung"])}
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">WÖk-Formulierung</p>
+          <h2>Unsichtbare Tragestruktur</h2>
+          <p>Soziale Infrastruktur ist in der Wirkungsökonomie die unsichtbare Tragestruktur gesellschaftlicher Stabilität. Sie umfasst nicht nur Gebäude oder staatliche Leistungen, sondern auch Beziehungen, Schutzräume, Beratung, Pflege, Bildung, Kultur, Rechtsschutz, digitale Teilhabe und lokale Netzwerke. Sie entscheidet darüber, ob Menschen nicht nur versorgt, sondern wirklich handlungsfähig, sicher, zugehörig und wirksam werden.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Wirkungsräume</p>
+          <h2>Wo Alltag entsteht</h2>
+          <p>Soziale Infrastruktur wirkt dort, wo Alltag entsteht: in Wohnungen, Schulen, Pflege, Gesundheit, Nachbarschaften, Kultur, Beratungsstellen, digitalen Räumen, Vereinen, Kommunen und öffentlichen Institutionen. Sie ist deshalb keine Zusatzleistung, sondern die Grundbedingung dafür, dass positive Netto-Wirkung für Mensch und Demokratie entstehen kann.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Prüfstein</p>
+          <h2>Sexarbeit als Prüfstein sozialer Infrastruktur</h2>
+          <p><a class="text-link" href="../../begriffe/sexarbeit/">Sexarbeit</a> ist kein Synonym für soziale Infrastruktur. Sie kann aber ein Prüfstein dafür sein, ob soziale Infrastruktur auch dort schützt, wo Stigma, Armut, Gewalt- und Ausbeutungsrisiken, gesundheitliche Verwundbarkeit, Wohnungsunsicherheit, digitale Kontrolle oder fehlender Rechtsschutz besonders relevant sind. Wirkungsökonomisch wird nicht die Person bewertet, sondern ob Schutzräume, Beratung, Gesundheit, Rechtsschutz, Ausstiegsmöglichkeiten, Wohnsicherheit, Datenschutz und institutionelle Verantwortung funktionieren.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">SDGs und SDG+</p>
+          <h2>Referenzrahmen</h2>
+          <p>Relevante SDGs sind SDG 1, SDG 3, SDG 4, SDG 5, SDG 8, SDG 10, SDG 11 und SDG 16. SDG+ ergänzt Demokratiequalität, Rechtsstaatlichkeit, Medienqualität, digitale Selbstbestimmung, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und Diskursfähigkeit.</p>
+          <p>SDG+ ist eine transparente Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Messlogik</p>
+          <h2>Wie soziale Infrastruktur messbar wird</h2>
+          <p>Soziale Infrastruktur darf nicht auf eine einzige Zahl reduziert werden. Sie kann aber über Wirkungsindikatoren, Sozialraumprofile, Teilhabeindikatoren, Gesundheitsindikatoren, Bildungsindikatoren, Wohnsicherheitsindikatoren, Schutzraumindikatoren, Kulturteilhabe, Pflegewirkung, digitale Teilhabe und Vertrauensindikatoren sichtbar gemacht werden.</p>
+          ${listItems(["Zugang zu Gesundheitsversorgung und Pflege", "Kita- und Bildungszugang", "Wohnsicherheit, Mietbelastung und Obdachlosenhilfe", "Schutzräume und Beratungsstellen", "Barrierefreiheit und digitale Teilhabe", "Kulturzugang, Vereins- und Ehrenamtsdichte", "psychische Gesundheit und Einsamkeitsindikatoren", "soziale Mischung und Antidiskriminierungszugang", "Rechtsschutz und Vertrauen in Institutionen", "Beteiligung, Jugendperspektiven, Integrationsangebote, Care-Entlastung und Präventionswirkung"])}
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Rote Linien</p>
+          <h2>Nicht kompensierbare Grenzen</h2>
+          ${listItems(["fehlender Zugang zu Schutz vor Gewalt", "Obdachlosigkeit ohne Hilfestruktur", "institutionelle Diskriminierung", "systematische Ausgrenzung vulnerabler Gruppen", "fehlender Zugang zu lebensnotwendiger Gesundheitsversorgung", "fehlender Zugang zu Rechtsschutz", "Schutzräume ohne Erreichbarkeit oder Sicherheit", "digitale Ausschlüsse bei existenziellen Leistungen", "Kindeswohlgefährdung und Pflegegefährdung", "Menschenhandel, Zwang oder Ausbeutung im Schutzkontext", "Überwachung oder Scoring von Menschen unter dem Deckmantel sozialer Infrastruktur"])}
+          <p>Diese roten Linien dürfen nicht durch positive Werte in anderen Bereichen kompensiert werden.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Schutzbox</p>
+          <h2>Keine Personenbewertung, keine Social-Credit-Logik</h2>
+          <p>Soziale Infrastruktur darf nicht zur Kontrolle, Bevormundung, Personenbewertung oder Social-Credit-Logik werden. Die Wirkungsökonomie bewertet nicht Menschen, Lebensstile, Familienformen, Nachbarschaften oder private Beziehungen. Bewertet werden strukturelle Bedingungen: Zugang, Schutz, Qualität, Erreichbarkeit, Datenqualität, Wirkung, Ausfallrisiken und institutionelle Verantwortung.</p>
+          <p>Soziale Infrastruktur darf nicht zu einer Scoring-Logik über Menschen werden. Sie soll Unterstützung, Teilhabe und Schutz ermöglichen - nicht Überwachung, Sanktionierung oder moralische Kontrolle.</p>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Daten</p>
+          <h2>Soziale Infrastruktur braucht Daten, aber keine Überwachung</h2>
+          <p>Daten dürfen nur strukturelle Versorgung, Zugänge, Risiken und Wirkungen sichtbar machen. Keine individuellen Sozialprofile, keine Personenklassifikation, keine automatisierten Entscheidungen über einzelne Menschen und keine Zweckentfremdung sensibler Daten. Datenqualität und Datenschutz sind Teil der sozialen Infrastruktur.</p>
+        </section>
+        <section class="term-link-section" aria-labelledby="related-terms-title">
+          <div>
+            <p class="section-eyebrow">Verknüpfungen</p>
+            <h2 id="related-terms-title">Verwandte Begriffe</h2>
+          </div>
+          <div class="term-chip-row">
+            ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
+          </div>
+        </section>${relatedContentBlock(term)}
+        <section class="meta-box">
+          <h2>Version und Quellen</h2>
+          <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
+          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+          ${sourceList(term)}
+        </section>
+      </article>`;
+}
+
 for (const term of data.terms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -935,6 +1069,8 @@ for (const term of data.terms) {
     : "";
   const body = term.slug === "sexarbeit"
     ? sexarbeitDetailBody(term)
+    : term.slug === "soziale-infrastruktur"
+    ? sozialeInfrastrukturDetailBody(term)
     : `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
         <header class="term-detail-hero">
@@ -1016,6 +1152,12 @@ ${statusParagraph}          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt:
 if (data.terms.some((term) => term.slug === "sexarbeit")) {
   writeGlossaryTermAlias("prostitution", "Prostitution", "sexarbeit");
   writeGlossaryTermAlias("sex-work", "Sex Work", "sexarbeit");
+}
+
+if (data.terms.some((term) => term.slug === "soziale-infrastruktur")) {
+  writeGlossaryTermAlias("sozialer-infrastruktur", "Sozialer Infrastruktur", "soziale-infrastruktur");
+  writeGlossaryTermAlias("gesellschaftliche-infrastruktur", "Gesellschaftliche Infrastruktur", "soziale-infrastruktur");
+  writeGlossaryTermAlias("zivilgesellschaftliche-infrastruktur", "Zivilgesellschaftliche Infrastruktur", "soziale-infrastruktur");
 }
 
 console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and preserved ${legacyDetailTerms.length} legacy detail pages.`);
