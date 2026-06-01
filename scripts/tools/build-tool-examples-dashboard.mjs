@@ -249,6 +249,49 @@ ${markerEnd}`;
   write(file, html);
 }
 
+function titleFromHtml(html) {
+  return html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]?.replace(/<[^>]+>/g, "").trim() || "Werkzeug";
+}
+
+function renderPreparedExample(title, prefix) {
+  return `${markerStart}
+      <section class="section tool-example-block" id="interaktives-beispiel" aria-labelledby="tool-example-title">
+        <div class="section-header">
+          <p class="hero-kicker">Modellhaft ausprobieren</p>
+          <h2 id="tool-example-title">Interaktives Beispiel wird vorbereitet: ${escapeHtml(title)}</h2>
+          <p>Dieses Werkzeug ist an das zentrale Beispielsystem angeschlossen. Ein spezifischer Rechner oder Check wird vorbereitet; bis dahin zeigt das Dashboard verwandte Modellbeispiele und Schutzlinien.</p>
+        </div>
+        <aside class="protection-notice" role="note">
+          <p class="card-kicker">DemoDisclaimer</p>
+          <h3 class="card-title">In Vorbereitung, nicht amtlich</h3>
+          <p class="card-text">Diese vorbereitete Demo ersetzt keine amtliche Bewertung, keine Prüfung und keine Beratung. Bewertet werden Strukturen, Projekte, Datenqualität und Wirkungslogiken, nicht Personen.</p>
+        </aside>
+        <div class="card-grid three">
+          <article class="card"><p class="card-kicker">Was du hier siehst</p><h3 class="card-title">Methodenanschluss</h3><p class="card-text">Die Seite bleibt vollständig erhalten und wird um eine künftige modellhafte Beispieloberfläche ergänzt.</p></article>
+          <article class="card"><p class="card-kicker">Warum das schwächste Feld zählt</p><h3 class="card-title">Nichtkompensation</h3><p class="card-text">Rote Linien, Datenlücken und kritische negative Wirkung dürfen nicht durch positive Einzelwerte verdeckt werden.</p></article>
+          <article class="card"><p class="card-kicker">Nächster sinnvoller Schritt</p><h3 class="card-title">Dashboard öffnen</h3><p class="card-text">Vergleiche verwandte Beispiele im zentralen Werkzeug-Dashboard.</p><div class="portal-card-actions"><a class="text-link" href="${prefix}werkzeuge/dashboard/">Werkzeug-Dashboard öffnen</a></div></article>
+        </div>
+      </section>
+${markerEnd}`;
+}
+
+function injectPreparedIntoRemainingToolPages() {
+  const covered = new Set(examples.map((example) => path.join(root, example.methodPage.replace(/^\//, ""), "index.html")));
+  const toolDir = path.join(root, "werkzeuge");
+  for (const entry of fs.readdirSync(toolDir, { withFileTypes: true })) {
+    if (!entry.isDirectory() || entry.name === "dashboard") continue;
+    const file = path.join(toolDir, entry.name, "index.html");
+    if (!fs.existsSync(file) || covered.has(file)) continue;
+    let html = read(file);
+    if (html.includes(markerStart)) continue;
+    const rel = path.relative(path.dirname(file), root).replaceAll(path.sep, "/") || ".";
+    const prefix = `${rel}/`.replace(/^\.$/, "./");
+    html = replaceMarked(html, renderPreparedExample(titleFromHtml(html), prefix));
+    html = ensureScripts(html, prefix);
+    write(file, html);
+  }
+}
+
 write(path.join(root, "werkzeuge/dashboard/index.html"), renderDashboardPage());
 injectWerkzeugeIndex();
 
@@ -256,5 +299,6 @@ for (const example of examples) {
   const file = path.join(root, example.methodPage.replace(/^\//, ""), "index.html");
   if (fs.existsSync(file)) injectIntoToolPage(file, example);
 }
+injectPreparedIntoRemainingToolPages();
 
 console.log(`Tool examples dashboard built: ${examples.length} examples.`);
