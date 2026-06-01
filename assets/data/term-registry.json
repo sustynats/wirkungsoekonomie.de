@@ -163321,18 +163321,28 @@
       "slug": "netto-wirkung",
       "aliases": [
         "Netto-Wirkung",
-        "Nettowirkung"
+        "Nettowirkung",
+        "Netto-Impact",
+        "Gesamtwirkung unter Abzug negativer Wirkungen",
+        "saldierte Wirkung",
+        "bereinigte Wirkung",
+        "Net Impact"
       ],
       "synonyms": [
         "Netto-Wirkung",
-        "Nettowirkung"
+        "Nettowirkung",
+        "Netto-Impact",
+        "Gesamtwirkung unter Abzug negativer Wirkungen",
+        "saldierte Wirkung",
+        "bereinigte Wirkung",
+        "Net Impact"
       ],
-      "shortDefinition": "Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen.",
-      "definition": "Netto-Wirkung ordnet Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Rote Linien, Wirkungsgrenzen und Nicht-Kompensation begrenzen die Verrechnung.",
-      "longDefinition": "Netto-Wirkung ordnet Wirkungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein. Rote Linien, Wirkungsgrenzen und Nicht-Kompensation begrenzen die Verrechnung.",
-      "woekRelation": "Netto-Wirkung ist keine einfache Addition. Rote Linien, Nichtkompensation und Datenqualität begrenzen jede Zusammenfassung.",
+      "shortDefinition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung positiver und negativer Wirkungen unter Berücksichtigung von Wirkungsgrenzen, Datenqualität und Nichtkompensation.",
+      "definition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung der positiven, negativen, neutralen und unsicheren Wirkungen eines Auslösers. In der WÖk ist sie keine einfache Rechenoperation und nicht positive Punkte minus negative Punkte. Systemgrenzen, Wirkungsräume, Datenqualität, zeitliche Wirkung, Nebenwirkungen, Rückkopplungen und nicht kompensierbare rote Linien müssen berücksichtigt werden.",
+      "longDefinition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung der positiven, negativen, neutralen und unsicheren Wirkungen eines Auslösers. In der WÖk ist sie keine einfache Rechenoperation und nicht positive Punkte minus negative Punkte. Systemgrenzen, Wirkungsräume, Datenqualität, zeitliche Wirkung, Nebenwirkungen, Rückkopplungen und nicht kompensierbare rote Linien müssen berücksichtigt werden.",
+      "woekRelation": "Netto-Wirkung verhindert, dass einzelne positive Wirkungen schwere Schäden verdecken. Ohne Netto-Wirkung entstehen Greenwashing, SDG-Washing, Impact-Washing und Einzelfeld-Optimierung. Sie macht komplexe Wirkung entscheidungsfähig und bildet die Grundlage für positive Netto-Wirkung.",
       "statusNote": "Nicht als simple Summe formulieren.",
-      "usageNote": "Nicht als simple Summe formulieren.",
+      "usageNote": "Netto-Wirkung ist mehrdimensionale Bewertung auf empirischer, systemischer, normativer, datenbezogener und grenzbezogener Ebene. Reverse Merit Order schützt davor, dass ein schlechtes Kernfeld durch gute Werte in anderen Feldern verdeckt wird.",
       "categories": [
         "bewertungsbegriff"
       ],
@@ -163349,30 +163359,94 @@
         "negative-wirkung",
         "nwi",
         "rebound-effekt",
-        "t-sroi"
+        "t-sroi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+        "Social Value International / SROI|https://www.socialvalueint.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
       "pageUrl": "/begriffe/netto-wirkung/",
       "priority": 71,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Bewertungsbegriff",
+      "version": "1.1",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
+      "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 003",
+      "hoverDefinition": "Netto-Wirkung führt positive, negative, neutrale und unsichere Wirkungen zusammen, ohne schwere Schäden beliebig zu kompensieren.",
       "doNotConfuseWith": [
         "positive Netto-Wirkung",
-        "FinalScore"
+        "FinalScore",
+        "Positive Wirkung",
+        "Durchschnittsscore",
+        "Kompensation",
+        "SROI",
+        "ESG-Rating",
+        "T-SROI"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Netto-Wirkung immer mit Schutzlogik verwenden.",
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
+      ],
+      "examples": [
+        "Bio-Baumwolle macht ein T-Shirt nicht positiv, wenn Kinderarbeit und toxische Färbung bestehen.",
+        "Ein Solarprojekt braucht differenzierte Bewertung, wenn Biodiversität oder Landrechte betroffen sind.",
+        "Ein Medikament kann gesundheitswirksam sein und zugleich problematische Zugänge oder Lieferketten haben.",
+        "Spenden machen ein zerstörerisches Kerngeschäft nicht automatisch positiv."
+      ],
+      "preferredUsage": "Netto-Wirkung ist mehrdimensionale Bewertung auf empirischer, systemischer, normativer, datenbezogener und grenzbezogener Ebene. Reverse Merit Order schützt davor, dass ein schlechtes Kernfeld durch gute Werte in anderen Feldern verdeckt wird.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "netto wirkung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-29",
+      "lastUpdated": "2026-06-01",
       "conceptStatus": "WÖk-Kernbegriff",
       "concept_status": "WÖk-Kernbegriff",
       "publicationStatus": "published",
@@ -163391,12 +163465,43 @@
         "negative-wirkung",
         "nwi",
         "rebound-effekt",
-        "t-sroi"
+        "t-sroi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "source_links": [],
       "internal_links": [],
       "type": "WÖk-Kernbegriff",
-      "begriffstyp": "WÖk-Kernbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Bewertungsbegriff",
       "theme": [
         "Bewertungsbegriff"
       ],
@@ -163427,7 +163532,202 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "003",
+      "glossary_pack": "003",
+      "cluster": "Wirkungssprache & Kernlogik",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Präzisierungsbegriff / Bewertungsbegriff",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Leitlinie"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Grundlagenpapier Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/grundlagenpapier-wirkungsoekonomie-woek/",
+          "sourceType": "interne Quelle",
+          "status": "Grundlage"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD DAC Criteria: Impact",
+          "url": "https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+          "sourceType": "externe Quelle",
+          "status": "Evaluationskontext"
+        },
+        {
+          "title": "Social Value International / SROI",
+          "url": "https://www.socialvalueint.org/",
+          "sourceType": "externe Quelle",
+          "status": "SROI-Kontext"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Netto-Wirkung führt positive, negative, neutrale und unsichere Wirkungen zusammen, ohne schwere Schäden beliebig zu kompensieren."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Keine einfache Addition positiver und negativer Wirkungen.",
+            "Schwere negative Wirkungen dürfen nicht beliebig ausgeglichen werden.",
+            "Netto-Wirkung braucht Grenzen, Datenqualität und rote Linien.",
+            "Reverse Merit Order schützt vor Schönrechnung.",
+            "Positive Netto-Wirkung ist die Zielgröße der WÖk."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung der positiven, negativen, neutralen und unsicheren Wirkungen eines Auslösers. In der WÖk ist sie keine einfache Rechenoperation und nicht positive Punkte minus negative Punkte. Systemgrenzen, Wirkungsräume, Datenqualität, zeitliche Wirkung, Nebenwirkungen, Rückkopplungen und nicht kompensierbare rote Linien müssen berücksichtigt werden."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Netto-Wirkung verhindert, dass einzelne positive Wirkungen schwere Schäden verdecken. Ohne Netto-Wirkung entstehen Greenwashing, SDG-Washing, Impact-Washing und Einzelfeld-Optimierung. Sie macht komplexe Wirkung entscheidungsfähig und bildet die Grundlage für positive Netto-Wirkung."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Netto-Wirkung ist mehrdimensionale Bewertung auf empirischer, systemischer, normativer, datenbezogener und grenzbezogener Ebene. Reverse Merit Order schützt davor, dass ein schlechtes Kernfeld durch gute Werte in anderen Feldern verdeckt wird."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Positive Wirkung",
+            "Durchschnittsscore",
+            "Kompensation",
+            "SROI",
+            "ESG-Rating",
+            "T-SROI"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Bio-Baumwolle macht ein T-Shirt nicht positiv, wenn Kinderarbeit und toxische Färbung bestehen.",
+            "Ein Solarprojekt braucht differenzierte Bewertung, wenn Biodiversität oder Landrechte betroffen sind.",
+            "Ein Medikament kann gesundheitswirksam sein und zugleich problematische Zugänge oder Lieferketten haben.",
+            "Spenden machen ein zerstörerisches Kerngeschäft nicht automatisch positiv."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Logik: Wirkungsfelder bestimmen, Indikatoren zuordnen, Wirkungen erfassen, Systemgrenzen setzen, Datenqualität ausweisen, SDGs/Agenda 2030/SDG+ anwenden, rote Linien prüfen, Reverse Merit Order anwenden, Netto-Wirkung dokumentieren und Rückkopplung auslösen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkung",
+            "Positive Netto-Wirkung",
+            "Transformationswirkung",
+            "Wirkungsbewertung",
+            "Reverse Merit Order",
+            "Nichtkompensationsprinzip",
+            "Wirkungsgrenze",
+            "Wirkungswahrheit",
+            "Greenwashing",
+            "Impact-Washing",
+            "Produktscorecard",
+            "FinalScore",
+            "NWI",
+            "T-SROI",
+            "Wirkungsrückkopplung",
+            "Wirkungslenkung"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Begriffsleitfaden, Kapitel Begriffssystem, Benchmarks/Scorecards, Reverse Merit Order, T-SROI-Whitepaper, WUStG-Leitlinien und Produktbesteuerung durch Wirkung. Externe Quellen: UN SDGs/Agenda 2030, OECD DAC Impact, Social Value International/SROI, GRI und CSRD/ESRS."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 003",
+            "Cluster: Wirkungssprache & Kernlogik",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "nwi",
@@ -194703,25 +195003,37 @@
       "canonicalLabel": "positive Netto-Wirkung",
       "slug": "positive-netto-wirkung",
       "aliases": [
+        "Positive Netto-Wirkung",
         "positive Netto-Wirkung",
         "positive Nettowirkung",
         "positive netto Wirkung",
         "Lebensqualität",
-        "Lebensqualitaet"
+        "Lebensqualitaet",
+        "positive Net Impact",
+        "positive Gesamtwirkung",
+        "systemisch positive Wirkung",
+        "tragfähige Wirkung",
+        "Wirkung mit positivem Gesamtergebnis"
       ],
       "synonyms": [
+        "Positive Netto-Wirkung",
         "positive Netto-Wirkung",
         "positive Nettowirkung",
         "positive netto Wirkung",
         "Lebensqualität",
-        "Lebensqualitaet"
+        "Lebensqualitaet",
+        "positive Net Impact",
+        "positive Gesamtwirkung",
+        "systemisch positive Wirkung",
+        "tragfähige Wirkung",
+        "Wirkung mit positivem Gesamtergebnis"
       ],
-      "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie.",
-      "definition": "Positive Netto-Wirkung verbindet tatsächliche Zustandsveränderungen, Bewertungsrahmen, Nicht-Kompensation und Rückkopplung in Entscheidungen.",
-      "longDefinition": "Positive Netto-Wirkung verbindet tatsächliche Zustandsveränderungen, Bewertungsrahmen, Nicht-Kompensation und Rückkopplung in Entscheidungen.",
-      "woekRelation": "Als Zielgröße verwenden, nicht bloß Wirkung.",
+      "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie: eine nach Bewertung der positiven und negativen Folgen tragfähige Wirkung für Mensch, Planet und Demokratie.",
+      "definition": "Positive Netto-Wirkung bezeichnet eine Wirkung, die nach Zusammenführung positiver und negativer Wirkungen im Ergebnis tragfähig positiv bewertet wird. Sie liegt vor, wenn ein Produkt, eine Handlung, ein Unternehmen, eine Investition, ein Gesetz, eine Technologie oder ein Kapitalfluss Mensch, Planet und Demokratie stärkt, ohne schwere nicht kompensierbare Schäden zu erzeugen.",
+      "longDefinition": "Positive Netto-Wirkung bezeichnet eine Wirkung, die nach Zusammenführung positiver und negativer Wirkungen im Ergebnis tragfähig positiv bewertet wird. Sie liegt vor, wenn ein Produkt, eine Handlung, ein Unternehmen, eine Investition, ein Gesetz, eine Technologie oder ein Kapitalfluss Mensch, Planet und Demokratie stärkt, ohne schwere nicht kompensierbare Schäden zu erzeugen.",
+      "woekRelation": "Positive Netto-Wirkung ist der normative Zielpunkt der WÖk. Sie ersetzt nicht Gewinn, Wachstum, Effizienz oder Reichweite als operative Größen, setzt ihnen aber den gesellschaftlichen Maßstab. Sie verhindert Wirkungsblindheit und Wirkungssimulation.",
       "statusNote": "Als Zielgröße verwenden, nicht bloß Wirkung.",
-      "usageNote": "Als Zielgröße verwenden, nicht bloß Wirkung.",
+      "usageNote": "Positive Netto-Wirkung entsteht durch Prüfung positiver Behauptungen, negativer Nebenwirkungen, Wirkungsräume, Wirkungsempfänger, Datenqualität, rote Linien, Rückkopplungsfähigkeit und Greenwashing-Risiko. Sie bedeutet nicht Perfektion, sondern tragfähige Gesamtwirkung im relevanten Wirkungsraum.",
       "categories": [
         "bewertungsbegriff"
       ],
@@ -194773,32 +195085,92 @@
         "trickle-down-oekonomie",
         "kreislaufblindheit",
         "kreislaufwirkung",
-        "effizienz"
+        "effizienz",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+        "Social Value International / SROI|https://www.socialvalueint.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
       "pageUrl": "/begriffe/positive-netto-wirkung/",
       "priority": 84,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Bewertungsbegriff",
+      "version": "1.1",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
+      "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 003",
+      "hoverDefinition": "Positive Netto-Wirkung ist das geprüfte positive Gesamtergebnis für Mensch, Planet und Demokratie, nicht bloß ein einzelner positiver Effekt.",
       "doNotConfuseWith": [
         "positive Wirkung",
-        "Netto-Wirkung"
+        "Netto-Wirkung",
+        "Positive Wirkung",
+        "Nachhaltigkeitsclaim",
+        "Gemeinwohl",
+        "Impact",
+        "CSR",
+        "ESG-Performance",
+        "Kompensation"
       ],
       "relatedDocuments": [
-        "sdg-sdgplus-referenzrahmen"
+        "sdg-sdgplus-referenzrahmen",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
       ],
-      "examples": [],
-      "preferredUsage": "Zielgröße der WÖk ist positive Netto-Wirkung.",
+      "examples": [
+        "Ein regionaler Bio-Apfel kann positive Netto-Wirkung haben, wenn Klima, Wasser, Boden, Arbeit, Gesundheit, Verpackung und Transport tragfähig bewertet werden.",
+        "Ein langlebiges reparierbares Kleidungsstück kann positive Netto-Wirkung erzeugen.",
+        "Ein Bildungsprogramm kann positive Netto-Wirkung erzeugen, wenn Teilhabe, Kompetenzen und demokratische Mündigkeit steigen.",
+        "Ein Wohnprojekt kann positiv wirken, wenn es bezahlbaren, gesunden und energieeffizienten Wohnraum schafft."
+      ],
+      "preferredUsage": "Positive Netto-Wirkung entsteht durch Prüfung positiver Behauptungen, negativer Nebenwirkungen, Wirkungsräume, Wirkungsempfänger, Datenqualität, rote Linien, Rückkopplungsfähigkeit und Greenwashing-Risiko. Sie bedeutet nicht Perfektion, sondern tragfähige Gesamtwirkung im relevanten Wirkungsraum.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "positive netto wirkung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "updatedAt": "2026-05-27",
       "related_terms": [
         "wirkung",
@@ -194846,7 +195218,34 @@
         "trickle-down-oekonomie",
         "kreislaufblindheit",
         "kreislaufwirkung",
-        "effizienz"
+        "effizienz",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -194855,7 +195254,7 @@
       "internal_links": [],
       "last_reviewed": "2026-05-29",
       "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Zielbegriff",
       "theme": [
         "Bewertungsbegriff"
       ],
@@ -194886,7 +195285,204 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "003",
+      "glossary_pack": "003",
+      "cluster": "Wirkungssprache & Kernlogik",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Prägungsbegriff / Zielbegriff",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Leitlinie"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Grundlagenpapier Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/grundlagenpapier-wirkungsoekonomie-woek/",
+          "sourceType": "interne Quelle",
+          "status": "Grundlage"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD DAC Criteria: Impact",
+          "url": "https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+          "sourceType": "externe Quelle",
+          "status": "Evaluationskontext"
+        },
+        {
+          "title": "Social Value International / SROI",
+          "url": "https://www.socialvalueint.org/",
+          "sourceType": "externe Quelle",
+          "status": "SROI-Kontext"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Positive Netto-Wirkung ist das geprüfte positive Gesamtergebnis für Mensch, Planet und Demokratie, nicht bloß ein einzelner positiver Effekt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Nicht dasselbe wie ein positiver Einzeleffekt.",
+            "Entsteht erst nach Prüfung negativer Wirkungen, Grenzen, Datenqualität und Systemzusammenhängen.",
+            "Zahlt auf SDGs, Agenda 2030 und SDG+ ein.",
+            "Stärkt Mensch, Planet und Demokratie.",
+            "Darf nicht durch Kompensation schwerer Schäden simuliert werden."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Positive Netto-Wirkung bezeichnet eine Wirkung, die nach Zusammenführung positiver und negativer Wirkungen im Ergebnis tragfähig positiv bewertet wird. Sie liegt vor, wenn ein Produkt, eine Handlung, ein Unternehmen, eine Investition, ein Gesetz, eine Technologie oder ein Kapitalfluss Mensch, Planet und Demokratie stärkt, ohne schwere nicht kompensierbare Schäden zu erzeugen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Positive Netto-Wirkung ist der normative Zielpunkt der WÖk. Sie ersetzt nicht Gewinn, Wachstum, Effizienz oder Reichweite als operative Größen, setzt ihnen aber den gesellschaftlichen Maßstab. Sie verhindert Wirkungsblindheit und Wirkungssimulation."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Positive Netto-Wirkung entsteht durch Prüfung positiver Behauptungen, negativer Nebenwirkungen, Wirkungsräume, Wirkungsempfänger, Datenqualität, rote Linien, Rückkopplungsfähigkeit und Greenwashing-Risiko. Sie bedeutet nicht Perfektion, sondern tragfähige Gesamtwirkung im relevanten Wirkungsraum."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Positive Wirkung",
+            "Nachhaltigkeitsclaim",
+            "Gemeinwohl",
+            "Impact",
+            "CSR",
+            "ESG-Performance",
+            "Kompensation"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein regionaler Bio-Apfel kann positive Netto-Wirkung haben, wenn Klima, Wasser, Boden, Arbeit, Gesundheit, Verpackung und Transport tragfähig bewertet werden.",
+            "Ein langlebiges reparierbares Kleidungsstück kann positive Netto-Wirkung erzeugen.",
+            "Ein Bildungsprogramm kann positive Netto-Wirkung erzeugen, wenn Teilhabe, Kompetenzen und demokratische Mündigkeit steigen.",
+            "Ein Wohnprojekt kann positiv wirken, wenn es bezahlbaren, gesunden und energieeffizienten Wohnraum schafft."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestanforderungen: Wirkungsfelder bestimmen, positive und negative Wirkungen erfassen, Datenqualität ausweisen, Systemgrenzen dokumentieren, rote Linien prüfen, Reverse Merit Order berücksichtigen, Ergebnis an SDGs/Agenda 2030/SDG+ bewerten und Rückkopplungskanal definieren."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkung",
+            "Netto-Wirkung",
+            "Transformationswirkung",
+            "Wirkungsbewertung",
+            "Reverse Merit Order",
+            "Nichtkompensationsprinzip",
+            "Wirkungsgrenze",
+            "SDGs",
+            "SDG+",
+            "Mensch, Planet und Demokratie",
+            "Wirkungssteuer",
+            "Wirkungshaushalt",
+            "T-SROI",
+            "Wirkungsfonds",
+            "Wirkungslenkung",
+            "Wirkungsarchitektur",
+            "Wirkungswahrheit"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Begriffsleitfaden, Kapitel Wirkung, Begriffssystem, Wirkungslenkung, Grundlagenpapier, Leitbild, WUStG-Leitlinien und T-SROI-Whitepaper. Externe Quellen: UN SDGs/Agenda 2030, OECD DAC Impact, GRI, CSRD/ESRS und Social Value International/SROI."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 003",
+            "Cluster: Wirkungssprache & Kernlogik",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "positive-wirkung",
@@ -265647,17 +266243,29 @@
       "canonicalLabel": "Transformationswirkung",
       "slug": "transformationswirkung",
       "aliases": [
-        "Transformationswirkung"
+        "Transformationswirkung",
+        "transformative Wirkung",
+        "Systemwirkung",
+        "Transformational Impact",
+        "systemische Veränderungswirkung",
+        "Strukturwirkung",
+        "Pfadveränderung"
       ],
       "synonyms": [
-        "Transformationswirkung"
+        "Transformationswirkung",
+        "transformative Wirkung",
+        "Systemwirkung",
+        "Transformational Impact",
+        "systemische Veränderungswirkung",
+        "Strukturwirkung",
+        "Pfadveränderung"
       ],
-      "shortDefinition": "Transformationswirkung verändert Systemlogiken, Standards, Anreize oder Handlungspfade.",
-      "definition": "Transformationswirkung beschreibt, ob eine Maßnahme Strukturen, Märkte, Regeln, Technologien oder kulturelle Muster so verändert, dass positive Netto-Wirkung wahrscheinlicher wird.",
-      "longDefinition": "Transformationswirkung beschreibt, ob eine Maßnahme Strukturen, Märkte, Regeln, Technologien oder kulturelle Muster so verändert, dass positive Netto-Wirkung wahrscheinlicher wird.",
-      "woekRelation": "Transformationswirkung ist nicht identisch mit Netto-Wirkung. Sie verändert Systemlogiken, Standards, Anreize oder Handlungspfade.",
+      "shortDefinition": "Transformationswirkung liegt vor, wenn Wirkung nicht nur einzelne Zustände verbessert, sondern Systemlogiken, Standards, Anreize, Märkte, Institutionen oder Handlungspfade dauerhaft verändert.",
+      "definition": "Transformationswirkung bezeichnet eine Wirkung, die über eine einzelne Zustandsveränderung hinausgeht und die Struktur eines Systems verändert. Sie liegt vor, wenn sich Bedingungen verändern, unter denen künftige Entscheidungen, Märkte, Preise, Institutionen, Technologien, Standards, Verhaltensweisen oder Kapitalflüsse entstehen.",
+      "longDefinition": "Transformationswirkung bezeichnet eine Wirkung, die über eine einzelne Zustandsveränderung hinausgeht und die Struktur eines Systems verändert. Sie liegt vor, wenn sich Bedingungen verändern, unter denen künftige Entscheidungen, Märkte, Preise, Institutionen, Technologien, Standards, Verhaltensweisen oder Kapitalflüsse entstehen.",
+      "woekRelation": "Systemische Krisen lassen sich nicht allein durch Einzelmaßnahmen lösen. Die WÖk will nicht nur Symptome reparieren, sondern Steuerungslogiken verändern. Transformationswirkung zeigt, ob eine Maßnahme nur kompensiert oder tatsächlich Pfade verändert.",
       "statusNote": "Von Netto-Wirkung unterscheiden.",
-      "usageNote": "Von Netto-Wirkung unterscheiden.",
+      "usageNote": "Die WÖk unterscheidet direkte Wirkung, Netto-Wirkung und Transformationswirkung. Nicht jede positive Wirkung ist Transformationswirkung. Eine Maßnahme mit begrenzter direkter Wirkung kann transformativ sein, wenn sie Standards, Regeln oder Anreize verschiebt. T-SROI bewertet genau diese systemische Dimension.",
       "categories": [
         "grundbegriff"
       ],
@@ -265671,30 +266279,99 @@
         "hebelpunkt",
         "pfadabhaengigkeit",
         "t-sroi",
-        "verlustaversion"
+        "verlustaversion",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+        "Social Value International / SROI|https://www.socialvalueint.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
       "pageUrl": "/begriffe/transformationswirkung/",
       "priority": 116,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Grundbegriff",
+      "version": "1.1",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen.",
+      "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 003",
+      "hoverDefinition": "Transformationswirkung verändert nicht nur einzelne Zustände, sondern die Bedingungen künftiger Entscheidungen: Regeln, Standards, Anreize, Märkte oder Pfade.",
       "doNotConfuseWith": [
         "Netto-Wirkung",
-        "Wirkungspotenzial"
+        "Wirkungspotenzial",
+        "Wirkung",
+        "Positive Netto-Wirkung",
+        "Skalierung",
+        "Innovation",
+        "Reform",
+        "Disruption",
+        "T-SROI als Instrument"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Bei Systemveränderungen verwenden.",
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
+      ],
+      "examples": [
+        "Ein Reparaturbonus wird transformativ, wenn Hersteller Design ändern und Reparierbarkeit systematisch nachgefragt wird.",
+        "Eine Wirkungssteuer wirkt transformativ, wenn Produktdaten, Preise, Lieferketten und Innovationen dauerhaft umgebaut werden.",
+        "Ein Digitaler Produktpass wirkt transformativ, wenn er Beschaffung, Recycling, Reparatur und Steuerlogik verändert.",
+        "Ein Bildungsfach Zukunft wirkt transformativ, wenn Wirkungskompetenz langfristig verankert wird."
+      ],
+      "preferredUsage": "Die WÖk unterscheidet direkte Wirkung, Netto-Wirkung und Transformationswirkung. Nicht jede positive Wirkung ist Transformationswirkung. Eine Maßnahme mit begrenzter direkter Wirkung kann transformativ sein, wenn sie Standards, Regeln oder Anreize verschiebt. T-SROI bewertet genau diese systemische Dimension.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "transformationswirkung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-29",
+      "lastUpdated": "2026-06-01",
       "conceptStatus": "WÖk-Kernbegriff",
       "concept_status": "WÖk-Kernbegriff",
       "publicationStatus": "published",
@@ -265710,12 +266387,47 @@
         "hebelpunkt",
         "pfadabhaengigkeit",
         "t-sroi",
-        "verlustaversion"
+        "verlustaversion",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "source_links": [],
       "internal_links": [],
       "type": "WÖk-Kernbegriff",
-      "begriffstyp": "WÖk-Kernbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Transformationsbegriff",
       "theme": [
         "Grundbegriff"
       ],
@@ -265746,7 +266458,205 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "003",
+      "glossary_pack": "003",
+      "cluster": "Wirkungssprache & Kernlogik",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Präzisierungsbegriff / Transformationsbegriff",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Leitlinie"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Grundlagenpapier Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/grundlagenpapier-wirkungsoekonomie-woek/",
+          "sourceType": "interne Quelle",
+          "status": "Grundlage"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD DAC Criteria: Impact",
+          "url": "https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+          "sourceType": "externe Quelle",
+          "status": "Evaluationskontext"
+        },
+        {
+          "title": "Social Value International / SROI",
+          "url": "https://www.socialvalueint.org/",
+          "sourceType": "externe Quelle",
+          "status": "SROI-Kontext"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Transformationswirkung verändert nicht nur einzelne Zustände, sondern die Bedingungen künftiger Entscheidungen: Regeln, Standards, Anreize, Märkte oder Pfade."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Geht über Einzelwirkung hinaus.",
+            "Verändert Regeln, Standards, Infrastrukturen, Anreize, Märkte oder Verhalten.",
+            "Kann positiv oder negativ sein.",
+            "T-SROI bewertet diese Transformationsdimension.",
+            "Nicht jede positive Netto-Wirkung ist automatisch Transformationswirkung."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Transformationswirkung bezeichnet eine Wirkung, die über eine einzelne Zustandsveränderung hinausgeht und die Struktur eines Systems verändert. Sie liegt vor, wenn sich Bedingungen verändern, unter denen künftige Entscheidungen, Märkte, Preise, Institutionen, Technologien, Standards, Verhaltensweisen oder Kapitalflüsse entstehen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Systemische Krisen lassen sich nicht allein durch Einzelmaßnahmen lösen. Die WÖk will nicht nur Symptome reparieren, sondern Steuerungslogiken verändern. Transformationswirkung zeigt, ob eine Maßnahme nur kompensiert oder tatsächlich Pfade verändert."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet direkte Wirkung, Netto-Wirkung und Transformationswirkung. Nicht jede positive Wirkung ist Transformationswirkung. Eine Maßnahme mit begrenzter direkter Wirkung kann transformativ sein, wenn sie Standards, Regeln oder Anreize verschiebt. T-SROI bewertet genau diese systemische Dimension."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Wirkung",
+            "Positive Netto-Wirkung",
+            "Skalierung",
+            "Innovation",
+            "Reform",
+            "Disruption",
+            "T-SROI als Instrument"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein Reparaturbonus wird transformativ, wenn Hersteller Design ändern und Reparierbarkeit systematisch nachgefragt wird.",
+            "Eine Wirkungssteuer wirkt transformativ, wenn Produktdaten, Preise, Lieferketten und Innovationen dauerhaft umgebaut werden.",
+            "Ein Digitaler Produktpass wirkt transformativ, wenn er Beschaffung, Recycling, Reparatur und Steuerlogik verändert.",
+            "Ein Bildungsfach Zukunft wirkt transformativ, wenn Wirkungskompetenz langfristig verankert wird."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Kriterien: veränderte Anreize, Preise, Steuerlogik, Standards, Marktstrukturen, Infrastruktur, Verhalten, Kapitalflüsse, Institutionen, Informationsflüsse, Machtstrukturen, Diffusion, Skalierbarkeit, Dauerhaftigkeit, Lock-in-Risiko, Resilienzbeitrag und Beitrag zu SDGs/SDG+."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkung",
+            "Wirkungspotenzial",
+            "Netto-Wirkung",
+            "Positive Netto-Wirkung",
+            "T-SROI",
+            "Wirkungslenkung",
+            "Wirkungsrückkopplung",
+            "Wirkungsarchitektur",
+            "Wirkungsrat",
+            "Wirkungsfonds",
+            "Wirkungssteuer",
+            "Wirkungshaushalt",
+            "Markttransformation",
+            "Produktwirkung",
+            "Digitaler Produktpass",
+            "WÖk-ID",
+            "Reverse Merit Order",
+            "Systemmodell der Wirkungsökonomie"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Begriffsleitfaden, Kapitel Transformationswirkung, Wirkungslenkung, T-SROI und systemische Transformationsmessung, T-SROI-Whitepaper, Systemmodell, Grundlagenpapier und Manifest. Externe Quellen: UN SDGs/Agenda 2030, OECD DAC Impact, Social Value International/SROI, CSRD/ESRS, GRI und EU-Taxonomie."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 003",
+            "Cluster: Wirkungssprache & Kernlogik",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "transformator",
@@ -291466,19 +292376,27 @@
       "aliases": [
         "Wirkung",
         "Impact",
-        "Zustandsveränderung"
+        "Zustandsveränderung",
+        "tatsächliche Zustandsveränderung",
+        "Wirkungsbegriff",
+        "reale Folge",
+        "Systemfolge"
       ],
       "synonyms": [
         "Wirkung",
         "Impact",
-        "Zustandsveränderung"
+        "Zustandsveränderung",
+        "tatsächliche Zustandsveränderung",
+        "Wirkungsbegriff",
+        "reale Folge",
+        "Systemfolge"
       ],
-      "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen.",
-      "definition": "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+.",
-      "longDefinition": "Wirkung ist neutral und relational. Bewertet wird sie am Referenzrahmen der SDGs, Agenda 2030 und SDG+.",
-      "woekRelation": "Wirkung ist neutral und relational: tatsächliche Veränderung von Zuständen. Positive, negative und neutrale Wirkung müssen am Referenzrahmen Mensch, Planet und Demokratie bewertet werden.",
+      "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer einen Bezugspunkt.",
+      "definition": "Wirkung bezeichnet in der Wirkungsökonomie die tatsächliche Veränderung eines Zustands. Ein Zustand kann sich auf Menschen, soziale Gruppen, Gesundheit, Sicherheit, Bildung, Arbeit, Klima, Wasser, Boden, Biodiversität, Ressourcen, Institutionen, Medienqualität, Rechtsstaatlichkeit, Vertrauen, Märkte oder zukünftige Generationen beziehen. Wirkung ist neutral und relational: Der Begriff sagt zunächst nicht, ob eine Veränderung gut oder schlecht ist, und Wirkung muss mit Wirkungsträger, Wirkungsempfänger und Wirkungsraum beschrieben werden.",
+      "longDefinition": "Wirkung bezeichnet in der Wirkungsökonomie die tatsächliche Veränderung eines Zustands. Ein Zustand kann sich auf Menschen, soziale Gruppen, Gesundheit, Sicherheit, Bildung, Arbeit, Klima, Wasser, Boden, Biodiversität, Ressourcen, Institutionen, Medienqualität, Rechtsstaatlichkeit, Vertrauen, Märkte oder zukünftige Generationen beziehen. Wirkung ist neutral und relational: Der Begriff sagt zunächst nicht, ob eine Veränderung gut oder schlecht ist, und Wirkung muss mit Wirkungsträger, Wirkungsempfänger und Wirkungsraum beschrieben werden.",
+      "woekRelation": "Wirkung ist der Grundbegriff der Wirkungsökonomie. Während klassische Systeme Erfolg an Kapital, Wachstum, Gewinn, Umsatz, Beschäftigung oder Reichweite messen, fragt die WÖk, was sich tatsächlich verändert. Erst wenn Wirkung sichtbar, bewertbar und rückkopplungsfähig wird, können Preise, Steuern, Kapital, Beschaffung, Förderung, Management und Politik auf Zukunftsfähigkeit ausgerichtet werden.",
       "statusNote": "Wirkung nicht automatisch positiv verwenden. Wenn die Zielgröße gemeint ist, meist positive Netto-Wirkung verwenden.",
-      "usageNote": "Wirkung nicht automatisch positiv verwenden. Wenn die Zielgröße gemeint ist, meist positive Netto-Wirkung verwenden.",
+      "usageNote": "Die WÖk unterscheidet Wirkung von Absicht, Output, Image, Reporting und Moral. Eine gute Absicht beweist keine gute Wirkung; ein Bericht behauptet oder dokumentiert Wirkung, verändert aber nicht automatisch Zustände. Positive oder negative Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet; SDG+ ist die WÖk-Erweiterung für demokratische Voraussetzungen nachhaltiger Entwicklung.",
       "categories": [
         "grundbegriff"
       ],
@@ -291506,34 +292424,96 @@
         "wirksamkeit",
         "wirkungsbewertung",
         "wirkungsdaten",
-        "wirkungsempfaenger"
+        "wirkungsempfaenger",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+        "Social Value International / SROI|https://www.socialvalueint.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
       "pageUrl": "/begriffe/wirkung/",
       "priority": 129,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Grundbegriff",
+      "version": "1.1",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
+      "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 003",
+      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv.",
       "doNotConfuseWith": [
         "Wirkungspotenzial",
         "Absicht",
         "Output",
-        "Image"
+        "Image",
+        "Outcome",
+        "Impact als unscharfer Anschlussbegriff",
+        "Maßnahme",
+        "Bericht",
+        "Positive Wirkung"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Wirkung als tatsächliche Zustandsveränderung verwenden.",
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
+      ],
+      "examples": [
+        "Ein Klimabericht ist nicht die Wirkung; Wirkung liegt in tatsächlicher Emissionsreduktion.",
+        "Ein Gesetz wirkt erst, wenn Wohnkosten, Verfügbarkeit oder soziale Stabilität verändert werden.",
+        "Reichweite ist nicht Wirkung; ein Medienbeitrag wirkt, wenn Wissen, Vertrauen oder Polarisierung verändert werden.",
+        "Ein günstiges Produkt kann negative Wirkung durch Kinderarbeit, Emissionen oder Gesundheitsrisiken tragen."
+      ],
+      "preferredUsage": "Die WÖk unterscheidet Wirkung von Absicht, Output, Image, Reporting und Moral. Eine gute Absicht beweist keine gute Wirkung; ein Bericht behauptet oder dokumentiert Wirkung, verändert aber nicht automatisch Zustände. Positive oder negative Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet; SDG+ ist die WÖk-Erweiterung für demokratische Voraussetzungen nachhaltiger Entwicklung.",
       "deprecatedUsage": [
         "Wirkung als automatisch positiver Effekt"
       ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-29",
+      "lastUpdated": "2026-06-01",
       "conceptStatus": "WÖk-Kernbegriff",
       "concept_status": "WÖk-Kernbegriff",
       "publicationStatus": "published",
@@ -291563,12 +292543,42 @@
         "wirksamkeit",
         "wirkungsbewertung",
         "wirkungsdaten",
-        "wirkungsempfaenger"
+        "wirkungsempfaenger",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "source_links": [],
       "internal_links": [],
       "type": "WÖk-Kernbegriff",
-      "begriffstyp": "WÖk-Kernbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kernbegriff",
       "theme": [
         "Grundbegriff"
       ],
@@ -291599,7 +292609,208 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "003",
+      "glossary_pack": "003",
+      "cluster": "Wirkungssprache & Kernlogik",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Präzisierungsbegriff / Kernbegriff",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Leitlinie"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Grundlagenpapier Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/grundlagenpapier-wirkungsoekonomie-woek/",
+          "sourceType": "interne Quelle",
+          "status": "Grundlage"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD DAC Criteria: Impact",
+          "url": "https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+          "sourceType": "externe Quelle",
+          "status": "Evaluationskontext"
+        },
+        {
+          "title": "Social Value International / SROI",
+          "url": "https://www.socialvalueint.org/",
+          "sourceType": "externe Quelle",
+          "status": "SROI-Kontext"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Wirkung ist nicht automatisch gut.",
+            "Wirkung beschreibt reale Zustandsveränderung, nicht Absicht, Image, Output, Bericht oder Haltung.",
+            "Wirkung wirkt immer auf jemanden oder etwas.",
+            "Positive oder negative Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet.",
+            "Ziel der WÖk ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+            "Wirkung kann direkt, indirekt, verzögert, kumulativ, systemisch oder ambivalent sein."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkung bezeichnet in der Wirkungsökonomie die tatsächliche Veränderung eines Zustands. Ein Zustand kann sich auf Menschen, soziale Gruppen, Gesundheit, Sicherheit, Bildung, Arbeit, Klima, Wasser, Boden, Biodiversität, Ressourcen, Institutionen, Medienqualität, Rechtsstaatlichkeit, Vertrauen, Märkte oder zukünftige Generationen beziehen. Wirkung ist neutral und relational: Der Begriff sagt zunächst nicht, ob eine Veränderung gut oder schlecht ist, und Wirkung muss mit Wirkungsträger, Wirkungsempfänger und Wirkungsraum beschrieben werden."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wirkung ist der Grundbegriff der Wirkungsökonomie. Während klassische Systeme Erfolg an Kapital, Wachstum, Gewinn, Umsatz, Beschäftigung oder Reichweite messen, fragt die WÖk, was sich tatsächlich verändert. Erst wenn Wirkung sichtbar, bewertbar und rückkopplungsfähig wird, können Preise, Steuern, Kapital, Beschaffung, Förderung, Management und Politik auf Zukunftsfähigkeit ausgerichtet werden."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet Wirkung von Absicht, Output, Image, Reporting und Moral. Eine gute Absicht beweist keine gute Wirkung; ein Bericht behauptet oder dokumentiert Wirkung, verändert aber nicht automatisch Zustände. Positive oder negative Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet; SDG+ ist die WÖk-Erweiterung für demokratische Voraussetzungen nachhaltiger Entwicklung."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Absicht",
+            "Output",
+            "Outcome",
+            "Impact als unscharfer Anschlussbegriff",
+            "Image",
+            "Maßnahme",
+            "Bericht",
+            "Positive Wirkung"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Ein Klimabericht ist nicht die Wirkung; Wirkung liegt in tatsächlicher Emissionsreduktion.",
+            "Ein Gesetz wirkt erst, wenn Wohnkosten, Verfügbarkeit oder soziale Stabilität verändert werden.",
+            "Reichweite ist nicht Wirkung; ein Medienbeitrag wirkt, wenn Wissen, Vertrauen oder Polarisierung verändert werden.",
+            "Ein günstiges Produkt kann negative Wirkung durch Kinderarbeit, Emissionen oder Gesundheitsrisiken tragen."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Operationalisiert wird Wirkung über Wirkungsträger, Wirkungsempfänger, Wirkungsraum, Wirkungsindikator, Bewertungsrahmen, Datenqualität und Rückkopplung. Rückkopplung bedeutet, dass Bewertung in Preise, Steuern, Kapital, Beschaffung, Förderung, Management oder Regulierung zurückgeführt wird."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkungspotenzial",
+            "Wirkungsrisiko",
+            "Wirkmechanismus",
+            "Wirkungsträger",
+            "Wirkungsempfänger",
+            "Wirkungsraum",
+            "Wirkungsbewertung",
+            "Netto-Wirkung",
+            "Positive Netto-Wirkung",
+            "Transformationswirkung",
+            "Wirkungsrückkopplung",
+            "Wirkungslenkung",
+            "Wirkungsarchitektur",
+            "Wirkungswahrheit",
+            "Wirkungsblindheit",
+            "Mensch, Planet und Demokratie",
+            "SDGs",
+            "SDG+",
+            "WÖk-ID"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Führender Begriffsleitfaden, Die neue Ordnung des Wohlstands, Grundlagenpapier und Leitbild Mensch, Planet und Demokratie. Externe Quellen: UN SDGs/Agenda 2030, OECD DAC Impact, GRI und CSRD/ESRS."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 003",
+            "Cluster: Wirkungssprache & Kernlogik",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "wirkungsarchitektur",
@@ -295021,18 +296232,30 @@
       "slug": "wirkungspotenzial",
       "aliases": [
         "Wirkungspotenzial",
-        "Wirkpotenzial"
+        "Wirkpotenzial",
+        "Potenzial zur Wirkung",
+        "Wirkchance",
+        "mögliche Wirkung",
+        "Impact Potential",
+        "Wirkungswahrscheinlichkeit",
+        "Wirkungsanlage"
       ],
       "synonyms": [
         "Wirkungspotenzial",
-        "Wirkpotenzial"
+        "Wirkpotenzial",
+        "Potenzial zur Wirkung",
+        "Wirkchance",
+        "mögliche Wirkung",
+        "Impact Potential",
+        "Wirkungswahrscheinlichkeit",
+        "Wirkungsanlage"
       ],
-      "shortDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann.",
-      "definition": "Wirkungspotenzial beschreibt die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung und kein Wirkungsnachweis. Ob Potenzial zu Wirkung wird, hängt von Kontext, Dosis, Resonanzraum, Anschlussfähigkeit, Datenqualität, Rückkopplung und Wirkpfad ab.",
-      "longDefinition": "Bei Sprache, Produkten, Preisen, Medien, Märkten und politischen Narrativen ist Wirkungspotenzial besonders wichtig: Ein Impuls kann Wahrnehmung, Vertrauen, Entscheidungen oder Verhalten verändern, muss es aber nicht. Die Wirkungsökonomie trennt deshalb Möglichkeit, Risiko, Mechanismus und tatsächliche Zustandsveränderung.",
-      "woekRelation": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist keine eingetretene Wirkung und kein Beweis.",
+      "shortDefinition": "Wirkungspotenzial bezeichnet die Möglichkeit, dass eine Handlung, ein Produkt, ein Narrativ, eine Technologie oder ein Kapitalfluss künftig Wirkung erzeugt. Es ist noch keine eingetretene Wirkung.",
+      "definition": "Wirkungspotenzial bezeichnet die Fähigkeit oder Möglichkeit eines Auslösers, künftig Wirkung zu erzeugen. Es liegt vor der tatsächlichen Wirkung und beschreibt Wahrscheinlichkeit, Richtung und Bedingungen möglicher Zustandsveränderung. Ein Produkt, Gesetz, Narrativ, Bild, Geschäftsmodell oder Kapitalfluss kann Wirkungspotenzial tragen, ohne dass Wirkung bereits eingetreten ist.",
+      "longDefinition": "Wirkungspotenzial bezeichnet die Fähigkeit oder Möglichkeit eines Auslösers, künftig Wirkung zu erzeugen. Es liegt vor der tatsächlichen Wirkung und beschreibt Wahrscheinlichkeit, Richtung und Bedingungen möglicher Zustandsveränderung. Ein Produkt, Gesetz, Narrativ, Bild, Geschäftsmodell oder Kapitalfluss kann Wirkungspotenzial tragen, ohne dass Wirkung bereits eingetreten ist.",
+      "woekRelation": "Viele Entscheidungen müssen getroffen werden, bevor Wirkung vollständig eingetreten ist: Investitionen, Gesetze, Innovationen, Bildung, Prävention, Medienregulierung und Infrastrukturentscheidungen. Wirkungspotenzial ermöglicht Frühbewertung, Prävention, Risikomanagement, Wirkungssimulation mit Unsicherheit und Schutz vor Greenwashing oder Impact-Washing.",
       "statusNote": "Nicht mit eingetretener Wirkung verwechseln.",
-      "usageNote": "Nicht mit eingetretener Wirkung verwechseln.",
+      "usageNote": "Die WÖk behandelt Wirkungspotenzial als Zwischenstufe: Auslöser -> Wirkungspotenzial -> Wirkmechanismus -> mögliche Zustandsveränderung -> Wirkung -> Wirkungsbewertung -> Netto-Wirkung -> Rückkopplung. In nichttrivialen Systemen muss Wirkungspotenzial kontextsensibel beschrieben werden.",
       "categories": [
         "grundbegriff"
       ],
@@ -295062,33 +296285,98 @@
         "wirkungsdaten",
         "wirkungspaedagogik",
         "wirkungspfad",
-        "wirkungstraeger"
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+        "Social Value International / SROI|https://www.socialvalueint.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+      ],
       "pageUrl": "/begriffe/wirkungspotenzial/",
       "priority": 147,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Grundbegriff",
+      "version": "1.1",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
+      "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 003",
+      "hoverDefinition": "Wirkungspotenzial beschreibt mögliche künftige Zustandsveränderung. Es ist noch keine eingetretene Wirkung und muss mit Unsicherheit, Kontext und Wirkmechanismus beschrieben werden.",
       "doNotConfuseWith": [
         "Wirkung",
         "Wirkungsnachweis",
-        "Absicht"
+        "Absicht",
+        "Wirkungsversprechen",
+        "Prognose",
+        "Risiko als negatives Wirkungspotenzial",
+        "Chance als positives Wirkungspotenzial",
+        "Output",
+        "Innovation"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Bei erwarteter, möglicher oder wahrscheinlicher Wirkung verwenden.",
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
+      ],
+      "examples": [
+        "Eine Recyclingtechnologie hat Wirkungspotenzial; Wirkung liegt erst vor, wenn Ressourcenverbrauch sinkt.",
+        "Ein Bildungsprogramm hat Potenzial; Wirkung liegt erst vor, wenn Kompetenzen oder Teilhabe messbar steigen.",
+        "Ein politisches Narrativ kann Vertrauen oder Misstrauen beeinflussen, zunächst als Potenzial oder Risiko.",
+        "Reparierbares Design hat Potenzial, Wirkung entsteht erst bei tatsächlicher Reparaturnutzung."
+      ],
+      "preferredUsage": "Die WÖk behandelt Wirkungspotenzial als Zwischenstufe: Auslöser -> Wirkungspotenzial -> Wirkmechanismus -> mögliche Zustandsveränderung -> Wirkung -> Wirkungsbewertung -> Netto-Wirkung -> Rückkopplung. In nichttrivialen Systemen muss Wirkungspotenzial kontextsensibel beschrieben werden.",
       "deprecatedUsage": [
         "Potenzial als Wirkung"
       ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungspotenzial",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-29",
+      "lastUpdated": "2026-06-01",
       "tags": [
         "Wirkungspotenzial",
         "Resonanz",
@@ -295128,12 +296416,44 @@
         "wirkungsdaten",
         "wirkungspaedagogik",
         "wirkungspfad",
-        "wirkungstraeger"
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "source_links": [],
       "internal_links": [],
       "type": "WÖk-Kernbegriff",
-      "begriffstyp": "WÖk-Kernbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kernbegriff",
       "theme": [
         "Grundbegriff"
       ],
@@ -295164,7 +296484,202 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "003",
+      "glossary_pack": "003",
+      "cluster": "Wirkungssprache & Kernlogik",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Präzisierungsbegriff / Kernbegriff",
+      "sourceLinks": [
+        {
+          "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Leitlinie"
+        },
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Grundlagenpapier Wirkungsökonomie",
+          "url": "https://wirkungsoekonomie.de/dokumente/grundlagenpapier-wirkungsoekonomie-woek/",
+          "sourceType": "interne Quelle",
+          "status": "Grundlage"
+        },
+        {
+          "title": "Leitbild Mensch, Planet und Demokratie",
+          "url": "https://wirkungsoekonomie.de/dokumente/leitbild-mensch-planet-demokratie/",
+          "sourceType": "interne Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "OECD DAC Criteria: Impact",
+          "url": "https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm",
+          "sourceType": "externe Quelle",
+          "status": "Evaluationskontext"
+        },
+        {
+          "title": "Social Value International / SROI",
+          "url": "https://www.socialvalueint.org/",
+          "sourceType": "externe Quelle",
+          "status": "SROI-Kontext"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkungspotenzial beschreibt mögliche künftige Zustandsveränderung. Es ist noch keine eingetretene Wirkung und muss mit Unsicherheit, Kontext und Wirkmechanismus beschrieben werden."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Wirkungspotenzial liegt vor der tatsächlichen Wirkung.",
+            "Es beschreibt Möglichkeit, Wahrscheinlichkeit oder Anlage zur Zustandsveränderung.",
+            "Es kann positiv, negativ oder ambivalent sein.",
+            "Es darf nicht als eingetretene Wirkung verkauft werden.",
+            "Greenwashing entsteht oft, wenn Potenziale als Wirkung dargestellt werden."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungspotenzial bezeichnet die Fähigkeit oder Möglichkeit eines Auslösers, künftig Wirkung zu erzeugen. Es liegt vor der tatsächlichen Wirkung und beschreibt Wahrscheinlichkeit, Richtung und Bedingungen möglicher Zustandsveränderung. Ein Produkt, Gesetz, Narrativ, Bild, Geschäftsmodell oder Kapitalfluss kann Wirkungspotenzial tragen, ohne dass Wirkung bereits eingetreten ist."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Viele Entscheidungen müssen getroffen werden, bevor Wirkung vollständig eingetreten ist: Investitionen, Gesetze, Innovationen, Bildung, Prävention, Medienregulierung und Infrastrukturentscheidungen. Wirkungspotenzial ermöglicht Frühbewertung, Prävention, Risikomanagement, Wirkungssimulation mit Unsicherheit und Schutz vor Greenwashing oder Impact-Washing."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk behandelt Wirkungspotenzial als Zwischenstufe: Auslöser -> Wirkungspotenzial -> Wirkmechanismus -> mögliche Zustandsveränderung -> Wirkung -> Wirkungsbewertung -> Netto-Wirkung -> Rückkopplung. In nichttrivialen Systemen muss Wirkungspotenzial kontextsensibel beschrieben werden."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Wirkung",
+            "Wirkungsversprechen",
+            "Prognose",
+            "Risiko als negatives Wirkungspotenzial",
+            "Chance als positives Wirkungspotenzial",
+            "Output",
+            "Innovation"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Eine Recyclingtechnologie hat Wirkungspotenzial; Wirkung liegt erst vor, wenn Ressourcenverbrauch sinkt.",
+            "Ein Bildungsprogramm hat Potenzial; Wirkung liegt erst vor, wenn Kompetenzen oder Teilhabe messbar steigen.",
+            "Ein politisches Narrativ kann Vertrauen oder Misstrauen beeinflussen, zunächst als Potenzial oder Risiko.",
+            "Reparierbares Design hat Potenzial, Wirkung entsteht erst bei tatsächlicher Reparaturnutzung."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Strukturfragen: Auslöser, mögliche Zustandsveränderung, Betroffene, Wirkungsraum, Wirkmechanismus, Evidenz, Unsicherheit, Nebenwirkungen, Bedingungen, Monitoring und Review. Datenfelder können trigger_type, expected_change, effect_direction, likelihood, timeframe, assumptions, evidence_level, uncertainty_level und monitoring_plan sein."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Wirkung",
+            "Wirkungsrisiko",
+            "Wirkmechanismus",
+            "Wirkungspfad",
+            "Wirkungsradar",
+            "Wirkungsbewertung",
+            "Netto-Wirkung",
+            "Transformationswirkung",
+            "T-SROI",
+            "Responsible Marketing",
+            "Greenwashing",
+            "Wirkungssimulation",
+            "Resonanzraum",
+            "Wirkungsrückkopplung",
+            "Wirkungsarchitektur"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Begriffsleitfaden, Kapitel Wirkungspotenzial, Handlung/Unterlassen/Rückkopplung, T-SROI-Whitepaper und Grundlagenpapier. Externe Quellen: UN SDGs/Agenda 2030, OECD DAC Impact und Social Value International/SROI."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 003",
+            "Cluster: Wirkungssprache & Kernlogik",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "wirkungspunkte",
