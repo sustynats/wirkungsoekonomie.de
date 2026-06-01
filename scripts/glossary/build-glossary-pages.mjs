@@ -315,6 +315,8 @@ const relatedContentTargets = new Map([
   ["woek-id-register", ["WÖk-ID Register", "../../woek-id-register/"]],
   ["wirkungsrueckkopplung", ["Wirkungsrückkopplung", "../../begriffe/wirkungsrueckkopplung/"]],
   ["scorecards-nwi-reverse-merit-order", ["Scorecards, NWI & Reverse Merit Order", "../../akademie.html"]],
+  ["wirkungscontrolling-detailkonzept-dossier-v1-0", ["Wirkungscontrolling / Impact Controlling", "../../werkzeuge/impact-controlling/dossiers/wirkungscontrolling/"]],
+  ["wirkungscontrolling-detailkonzept-dossier", ["Wirkungscontrolling / Impact Controlling", "../../werkzeuge/impact-controlling/dossiers/wirkungscontrolling/"]],
 ]);
 
 function termLink(slug) {

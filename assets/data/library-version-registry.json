@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T09:12:03.851Z",
+  "generatedAt": "2026-06-01T00:00:00.000Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,17 +204,17 @@
     }
   ],
   "counts": {
-    "total": 1473,
+    "total": 1474,
     "byStatus": {
       "führend": 5,
-      "aktuell": 939,
+      "aktuell": 940,
       "Arbeitsfassung": 273,
       "ältere Fassung": 256
     },
     "byType": {
       "Grundlagenwerk": 63,
       "Glossar": 40,
-      "Methodik": 109,
+      "Methodik": 110,
       "Arbeitspapier": 1189,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
@@ -225,10 +225,10 @@
     "bySource": {
       "leading-reference": 7,
       "download-or-document": 709,
-      "online-version": 757
+      "online-version": 758
     },
     "downloadFiles": 709,
-    "onlineVersions": 757
+    "onlineVersions": 758
   },
   "documents": [
     {
@@ -35463,6 +35463,46 @@
       "urls": {
         "primary": "portale/migration-vielfalt/zugehoerigkeit-und-teilgabe/",
         "sourcePath": "portale/migration-vielfalt/zugehoerigkeit-und-teilgabe/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "wirkungscontrolling-detailkonzept-dossier-v1-0",
+      "title": "Wirkungscontrolling / Impact Controlling",
+      "shortDescription": "Umfassendes zitierfähiges Detailkonzept-Dossier zu Wirkungscontrolling als Entscheidungsarchitektur mit KII, Scorecards, NWI, T-SROI, WÖk-IDs, Datenqualität und Assurance.",
+      "type": "Methodik",
+      "status": "aktuell",
+      "dateOrStand": "01.06.2026",
+      "topics": [
+        "Wirkungscontrolling",
+        "Impact Controlling",
+        "KII",
+        "Scorecards",
+        "NWI",
+        "T-SROI",
+        "WÖk-IDs",
+        "Assurance"
+      ],
+      "relatedMethods": [
+        "Wirkungscontrolling",
+        "Scorecards",
+        "Netto-Wirkungs-Index",
+        "T-SROI",
+        "Reverse Merit Order"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen",
+        "Finanzsystem & Kapital",
+        "Wissenschaft, Innovation & Digitalisierung"
+      ],
+      "formats": [
+        "HTML",
+        "PDF"
+      ],
+      "urls": {
+        "online": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+        "pdf": "/assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf"
       },
       "source": "online-version",
       "isLeadingReference": false
