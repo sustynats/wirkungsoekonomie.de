@@ -839,10 +839,11 @@ function sexarbeitDetailBody(term) {
         <header class="term-detail-hero">
           <p class="hero-kicker">Sensibler Glossarbegriff</p>
           <h1>${esc(term.canonicalLabel)}</h1>
-          <p class="lead">Sexarbeit bezeichnet einvernehmliche sexuelle Dienstleistungen gegen Entgelt. In der Wirkungsökonomie wird nicht die Sexualität, Identität oder Lebensführung von Personen bewertet, sondern der Wirkungsraum: Selbstbestimmung, Schutz vor Gewalt und Ausbeutung, Gesundheit, Rechtsschutz, soziale Infrastruktur, Datenrisiken und demokratische Teilhabe.</p>
+          <p class="lead">Sexarbeit bezeichnet einvernehmliche sexuelle Dienstleistungen gegen Entgelt. In der Wirkungsökonomie ist Sexarbeit kein moralischer Bewertungsbegriff, sondern ein sensibler Wirkungsraum an der Schnittstelle von Arbeit, Körper, Gesundheit, Selbstbestimmung, sozialer Infrastruktur, Rechtsschutz und Ausbeutungsrisiken.</p>
           <div class="term-meta-row" aria-label="Begriffsinformation">
             <span>Sensibler Begriff</span>
             <span>Keine Personenbewertung</span>
+            <span>Keine Gleichsetzung mit Menschenhandel</span>
             <span>Auto-Linking deaktiviert</span>
           </div>
           <div class="term-action-row">${detailLinks(term)}</div>
@@ -850,19 +851,38 @@ function sexarbeitDetailBody(term) {
         <section class="term-summary-card" aria-labelledby="sexarbeit-status-title">
           <p class="section-eyebrow">Schutzstatus</p>
           <h2 id="sexarbeit-status-title">Sensible Verwendung</h2>
-          <p>Dieser Begriff ist sensibel. Er darf nicht zur Personenbewertung, nicht zur moralischen Bewertung von Sexualität, Identität oder Lebensführung und nicht als Rechts-, Sozial- oder Gesundheitsberatung verwendet werden. Sexarbeit wird nicht mit Menschenhandel gleichgesetzt. Das Glossar zeigt eine Hoverdefinition zur Orientierung; automatische Inline-Verlinkung ist für diesen Begriff deaktiviert.</p>
+          <p>Diese Seite bewertet keine Personen, keine Sexualität, keine Identität und keine Lebensstile. Sie betrachtet Sexarbeit als sensiblen Wirkungsraum und fragt nach Bedingungen, Schutzmechanismen, Risiken, Selbstbestimmung, sozialer Funktion und institutioneller Verantwortung.</p>
+          <p>Sie ist keine Rechtsberatung, keine Sozialberatung und keine medizinische Beratung. Rechtliche Regelungen zu Sexarbeit unterscheiden sich je nach Rechtsordnung und ändern sich. Der Deutschland-Kontext des Prostituiertenschutzgesetzes wird hier nur begrifflich eingeordnet.</p>
         </section>
         <section class="term-summary-card" aria-labelledby="sexarbeit-definition-title">
           <p class="section-eyebrow">Definition</p>
           <h2 id="sexarbeit-definition-title">Kurzdefinition und Kernthese</h2>
           <p>Sexarbeit bezeichnet einvernehmliche sexuelle Dienstleistungen gegen Entgelt, soweit volljährige Personen selbstbestimmt handeln und keine Gewalt, Nötigung, Ausbeutung, Minderjährigkeit oder Zwangslage vorliegt.</p>
-          <p>Sexarbeit ist in der Wirkungsökonomie kein moralischer Prüfstein für Personen, sondern ein Wirkungsraum, in dem Selbstbestimmung, körperliche Unversehrtheit, Gesundheit, Schutz vor Gewalt und Ausbeutung, soziale Sicherung, Wohnen, Rechtsschutz, Datenrisiken und demokratische Teilhabe sichtbar gemacht werden müssen.</p>
+          <p>Sexarbeit kann unter bestimmten Bedingungen eine soziale Kontakt-, Nähe- und Versorgungsfunktion erfüllen. Wirkungsökonomisch wird nicht moralisch bewertet, ob Sexarbeit abstrakt gut oder schlecht ist, sondern welche Zustände, Bedürfnisse, Risiken, Schutzmechanismen und Wirkungen unter realen Bedingungen entstehen.</p>
         </section>
         <section class="term-summary-card" aria-labelledby="sexarbeit-infrastruktur-title">
           <p class="section-eyebrow">Wirkungsökonomische Auslegung</p>
-          <h2 id="sexarbeit-infrastruktur-title">Sexarbeit als Prüfstein sozialer Infrastruktur</h2>
-          <p>Als soziale Infrastruktur betrachtet die Wirkungsökonomie nicht die Sexarbeit selbst als positiv oder negativ, sondern die Bedingungen, unter denen Menschen handeln: Zugang zu Gesundheit, Schutzräumen, Beratung, Rechtsschutz, sicheren Arbeits- und Wohnbedingungen, Daten- und Plattformschutz, Ausstiegs- und Wechselmöglichkeiten sowie Schutz vor Gewalt, Ausbeutung und Stigmatisierung.</p>
-          <p>Bewertet werden Bedingungen, Risiken und institutionelle Schutzmechanismen. Nicht bewertet werden Personen, Sexualität, Identität, Lebensstil oder moralische Vorstellungen über Sexualität.</p>
+          <h2 id="sexarbeit-infrastruktur-title">Sexarbeit als ambivalente soziale Infrastruktur</h2>
+          <p>Sexarbeit ist nicht automatisch soziale Infrastruktur. Sie kann aber in bestimmten Kontexten eine soziale Infrastruktur- oder Versorgungsfunktion übernehmen, wenn sie Bedürfnisse nach Nähe, Intimität, Kontakt, Anerkennung oder zwischenmenschlicher Zuwendung adressiert, die durch bestehende soziale Strukturen nicht gedeckt werden.</p>
+          <p>Diese Funktion darf nicht idealisiert werden: Sexarbeit bleibt ein ambivalenter Wirkungsraum, in dem Selbstbestimmung, Prekarität, Machtasymmetrien, Gewalt-, Zwangs- und Ausbeutungsrisiken zugleich betrachtet werden müssen.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-functional-title">
+          <p class="section-eyebrow">Analyseperspektive</p>
+          <h2 id="sexarbeit-functional-title">Funktionale Perspektive statt moralischer Verkürzung</h2>
+          <p>Die Wirkungsökonomie fragt nicht zuerst, ob Sexarbeit abstrakt gut oder schlecht ist. Sie fragt, welche Funktion sie unter realen gesellschaftlichen Bedingungen erfüllt, welche Bedürfnisse sichtbar werden, welche Schutzlücken bestehen und welche Wirkungen Regulierung, Kriminalisierung, Tabuisierung, Stigma oder Entkriminalisierung erzeugen.</p>
+          <p>Die Debatte ist oft polarisiert: Sexarbeit als Ausbeutung oder Sexarbeit als selbstbestimmte Erwerbsarbeit. Beide Perspektiven können reale Aspekte enthalten. Eine reine Entweder-oder-Logik greift zu kurz; nötig ist eine Zustands- und Wirkungsanalyse.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-why-infra-title">
+          <p class="section-eyebrow">Soziale Infrastruktur</p>
+          <h2 id="sexarbeit-why-infra-title">Warum soziale Infrastruktur?</h2>
+          <p>Soziale Infrastruktur umfasst nicht nur formelle Einrichtungen wie Gesundheitssystem, Pflege, Beratungsstellen oder Schutzräume. Sie umfasst auch Beziehungs-, Kontakt-, Nähe-, Beratungs-, Unterstützungs- und Resonanzräume, die Menschen Sicherheit, Zugehörigkeit, Selbstwirksamkeit und Stabilität ermöglichen.</p>
+          <p>Sexarbeit kann in bestimmten Kontexten an einer Lücke dieser Infrastruktur sichtbar werden: dort, wo Einsamkeit, Isolation, Krankheit, Alter, Behinderung, soziale Ausgrenzung, biografische Brüche oder fehlende Beziehungsräume Bedürfnisse nach Nähe und Kontakt erzeugen, die anderweitig nicht aufgefangen werden.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-functions-title">
+          <p class="section-eyebrow">Mögliche soziale Funktionen</p>
+          <h2 id="sexarbeit-functions-title">Kontextabhängig, nicht automatisch positiv</h2>
+          ${listItems(["Kontakt und zwischenmenschliche Begegnung", "körperliche Nähe und Intimität", "Anerkennung und gesehen werden", "Entlastung bei Einsamkeit oder sozialer Isolation", "Zugang zu Intimität bei Krankheit, Alter, Behinderung oder biografischen Brüchen", "Stabilisierung einzelner Personen in belasteten Lebenssituationen", "punktueller Ausgleich von Bedürfnissen, die durch bestehende soziale Strukturen nicht gedeckt werden", "Sichtbarmachung gesellschaftlicher Defizite in Nähe-, Beziehungs- und Versorgungsstrukturen"])}
+          <p>Diese möglichen Funktionen sind kontextabhängig und nicht automatisch positiv. Sie müssen immer zusammen mit Bedingungen, Freiwilligkeit, Sicherheit, Machtverhältnissen und Schutz betrachtet werden.</p>
         </section>
         <div class="term-section-grid">
           <section class="term-section-card">
@@ -873,39 +893,76 @@ function sexarbeitDetailBody(term) {
           <section class="term-section-card">
             <p class="section-eyebrow">WÖk prüft</p>
             <h2>Was sichtbar werden muss</h2>
-            ${listItems(["Selbstbestimmung und Einwilligung", "Schutz vor Gewalt, Nötigung und Ausbeutung", "Gesundheit, Beratung und soziale Sicherung", "Wohnsicherheit, sichere Räume und Rechtsschutz", "Datenqualität, Plattformrisiken und digitale Selbstbestimmung", "Ausstiegs-, Wechsel- und Unterstützungsoptionen"])}
+            ${listItems(["Selbstbestimmung und Freiwilligkeit", "reale Handlungsfreiheit", "Schutz vor Gewalt, Zwang, Menschenhandel und Ausbeutung", "Gesundheitsversorgung, Prävention, Beratung und Behandlung", "Rechtsschutz, Beschwerde- und Korrekturwege", "Wohnsicherheit, sichere Räume und Ausstiegsangebote", "Schutz vor Stigma, Diskriminierung und digitaler Erpressung", "Plattform- und Vermittlungstransparenz", "Wirkung von Regulierung, Kriminalisierung, Tabuisierung und Verdrängung", "Wirkung auf Einsamkeit, Isolation, Kontakt- und Nähebedürfnisse"])}
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">WÖk prüft nicht</p>
             <h2>Keine moralische oder personenbezogene Bewertung</h2>
-            ${listItems(["keine Bewertung einzelner Personen", "keine Bewertung von Sexualität, Identität oder Lebensführung", "keine automatische Entscheidung", "keine Rechts-, Sozial- oder Gesundheitsberatung", "keine Gleichsetzung mit Menschenhandel oder Zwangsprostitution"])}
+            ${listItems(["keine Bewertung einzelner Personen", "keine Bewertung von Sexualität, Identität, Körpern oder Lebensführung", "keine Bewertung individueller Entscheidungen", "keine automatische Entscheidung", "keine Rechts-, Sozial- oder Gesundheitsberatung", "keine Gleichsetzung mit Menschenhandel oder Zwangsprostitution"])}
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">Rote Linien</p>
             <h2>Nicht kompensierbar</h2>
-            ${listItems(["Minderjährigkeit", "Menschenhandel", "Zwang, Nötigung oder Gewalt", "sexuelle Ausbeutung", "sexualisierte Gewalt", "Entzug von Papieren, Wohnraum, Einkommen oder Bewegungsfreiheit", "Datenmissbrauch, Erpressung oder Outing-Risiken"])}
+            ${listItems(["Minderjährigkeit", "Zwang, Nötigung oder Gewalt", "Menschenhandel", "Freiheitsentzug", "systematische oder sexuelle Ausbeutung", "sexualisierte Gewalt", "Entzug von Ausweisdokumenten", "Schuld- oder Abhängigkeitsverhältnisse", "fehlender Zugang zu Hilfe", "digitale Überwachung, Erpressung oder Outing-Risiken", "organisierte Einschüchterung", "rassistische, sexistische, queerfeindliche oder transfeindliche Gewalt", "gesundheitsgefährdende Bedingungen ohne Schutzmöglichkeit", "institutionelle Schutzverweigerung"])}
           </section>
         </div>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-ambivalence-title">
+          <p class="section-eyebrow">Ambivalenz</p>
+          <h2 id="sexarbeit-ambivalence-title">Stabilisierend und riskant zugleich</h2>
+          <p>Sexarbeit kann stabilisierende Funktionen erfüllen und zugleich von Prekarität, Stigma, Gewalt, ökonomischer Abhängigkeit, Aufenthaltsunsicherheit, Plattformmacht, Machtasymmetrien oder Ausbeutung geprägt sein. Diese Ambivalenz ist kein Randproblem, sondern der Kern einer realistischen Wirkungsanalyse.</p>
+          <p>Die WÖk romantisiert Sexarbeit nicht, kriminalisiert sie nicht pauschal, liest nicht jede Sexarbeit als freie Entscheidung und nicht jede Sexarbeit als Zwang. Entscheidend sind die konkreten Bedingungen.</p>
+        </section>
         <section class="term-summary-card" aria-labelledby="sexarbeit-abgrenzung-title">
           <p class="section-eyebrow">Abgrenzung</p>
           <h2 id="sexarbeit-abgrenzung-title">Nicht automatisch gleichsetzen</h2>
           <div class="term-section-grid">
-            <section class="term-section-card"><h3>Nicht automatisch Menschenhandel</h3><p>Menschenhandel ist eine schwere Verletzung von Selbstbestimmung und Menschenwürde und muss getrennt, konsequent und nicht kompensierbar behandelt werden.</p></section>
-            <section class="term-section-card"><h3>Nicht automatisch Zwangsprostitution</h3><p>Zwangsprostitution liegt bei Zwang, Nötigung oder ausgenutzter Zwangslage vor und ist nicht mit selbstbestimmter Sexarbeit gleichzusetzen.</p></section>
-            <section class="term-section-card"><h3>Nicht sexuelle Ausbeutung</h3><p>Ausbeutung beschreibt Macht-, Abhängigkeits- und Vorteilsverhältnisse. Sie ist als Risiko und rote Linie sichtbar zu machen.</p></section>
-            <section class="term-section-card"><h3>Nicht sexualisierte Gewalt</h3><p>Sexualisierte Gewalt ist Gewalt. Sie darf nie als normale Arbeitsbedingung oder kompensierbarer Nachteil behandelt werden.</p></section>
+            <section class="term-section-card"><h3>Sexarbeit ist nicht automatisch Menschenhandel</h3><p>Menschenhandel ist eine schwere Menschenrechtsverletzung und Strafrechtsfrage. Er darf nicht als Synonym verwendet werden.</p></section>
+            <section class="term-section-card"><h3>Sexarbeit ist nicht automatisch Zwangsprostitution</h3><p>Zwang, Gewalt, Drohung, Abhängigkeit oder Freiheitsentzug verändern den Wirkungsraum grundlegend.</p></section>
+            <section class="term-section-card"><h3>Sexarbeit ist nicht sexuelle Ausbeutung</h3><p>Sexuelle Ausbeutung ist eine rote Linie und darf nicht unter Arbeits- oder Dienstleistungslogik normalisiert werden.</p></section>
+            <section class="term-section-card"><h3>Sexarbeit ist nicht sexualisierte Gewalt</h3><p>Sexualisierte Gewalt ist keine Form von Arbeit, sondern Gewalt.</p></section>
             <section class="term-section-card"><h3>Minderjährige als rote Linie</h3><p>Bei Minderjährigkeit endet jede arbeits- oder dienstleistungsbezogene Einordnung. Schutz, Strafverfolgung und Hilfe haben Vorrang.</p></section>
+            <section class="term-section-card"><h3>Soziale Funktion ist keine automatische Legitimation</h3><p>Dass eine Praxis eine gesellschaftliche Funktion erfüllt, bedeutet nicht, dass alle Bedingungen akzeptabel sind. Funktionale Analyse ersetzt nicht Schutz, Recht und Menschenwürde.</p></section>
           </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-regulation-title">
+          <p class="section-eyebrow">Regulierung</p>
+          <h2 id="sexarbeit-regulation-title">Schutz und Selbstbestimmung zugleich</h2>
+          <p>Eine wirkungsökonomische Regulierung muss Schutz vor Ausbeutung und Selbstbestimmung zusammen denken. Reine Kriminalisierung kann Sexarbeit in weniger transparente und unsicherere Strukturen verdrängen. Reine Marktlogik kann Machtasymmetrien, Prekarität, Zwang und Gewalt verharmlosen.</p>
+          ${listItems(["Sicherheit durch transparente und regulierte Strukturen", "Rechte statt pauschaler Defizitzuschreibungen", "differenzierte Regulierung statt pauschaler Kriminalisierung", "gesellschaftliche Ursachen wie Einsamkeit, Isolation und ökonomische Ungleichheit mitbehandeln", "wissensbasierte Politik und Forschung"])}
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-data-title">
+          <p class="section-eyebrow">Daten und Forschung</p>
+          <h2 id="sexarbeit-data-title">Wissensbasierte Politik statt Vorannahmen</h2>
+          <p>Die empirische Grundlage zu Sexarbeit ist in vielen Bereichen begrenzt, uneinheitlich oder politisch umstritten. Eine wirkungsökonomische Betrachtung braucht Forschung, die Risiken und mögliche stabilisierende Funktionen gleichermaßen untersucht, ohne Betroffene zu gefährden oder zu stigmatisieren.</p>
+          ${listItems(["keine individuellen Profile", "keine Personenklassifikation", "keine Überwachung privater Lebensführung", "keine sensiblen personenbezogenen Detaildaten", "keine automatisierte Entscheidung über Menschen", "strukturelle, aggregierte, freiwillige und schutzorientierte Daten bevorzugen"])}
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-social-credit-title">
+          <p class="section-eyebrow">Schutzlinie</p>
+          <h2 id="sexarbeit-social-credit-title">Keine Personenbewertung und keine Social-Credit-Logik</h2>
+          <p>Diese Seite darf nicht als Grundlage für die Bewertung einzelner Personen genutzt werden. Die Wirkungsökonomie bewertet keine Sexarbeiter:innen, keine Kund:innen, keine Körper, keine Identitäten und keine Lebensstile. Sie prüft Strukturen, Bedingungen, Bedürfnisse, Risiken, Schutzmechanismen und gesellschaftliche Wirkungen.</p>
+          <p>Eine wirkungsökonomische Betrachtung von Sexarbeit darf niemals zur Überwachung, Registrierung, Scoring-Logik, Risikoklassifikation oder automatisierten Entscheidung über Menschen führen. Sensible Daten dürfen nicht zweckentfremdet werden.</p>
         </section>
         <section class="term-summary-card" aria-labelledby="sexarbeit-mpd-title">
           <p class="section-eyebrow">Referenzrahmen</p>
           <h2 id="sexarbeit-mpd-title">Mensch, Planet, Demokratie und SDG+</h2>
-          <p>Der Begriff berührt vor allem Mensch und Demokratie: körperliche Selbstbestimmung, Gesundheit, Sicherheit, Rechtszugang, Antidiskriminierung, digitale Selbstbestimmung und institutionelles Vertrauen. SDG-Bezüge liegen insbesondere bei Gesundheit, Geschlechtergerechtigkeit, menschenwürdiger Arbeit, Ungleichheiten, Frieden/Rechtsschutz und starken Institutionen. SDG+ ergänzt transparent demokratische Schutzlinien wie Rechtsstaatlichkeit, Datenrechte, Diskursfähigkeit und institutionelle Verantwortlichkeit; SDG+ ist keine offizielle UN-Kategorie.</p>
+          <p>Der Begriff berührt vor allem Mensch und Demokratie: Würde, Gesundheit, Sicherheit, Nähe, Kontakt, Selbstbestimmung, Schutz vor Gewalt, soziale Sicherung, Wohnsicherheit, psychische Stabilität, Beratung, Rechtsschutz, institutionelles Vertrauen, digitale Selbstbestimmung und Schutz vor Stigma. Planet ist meist keine primäre Dimension, kann aber indirekt bei Infrastruktur, Mobilität, Energie, Gebäuden, Plattformökonomie oder Lieferketten relevant werden.</p>
+          <p>SDG-Bezüge liegen insbesondere bei SDG 1, SDG 3, SDG 5, SDG 8, SDG 10 und SDG 16. SDG+ ergänzt transparent Menschenwürde, Rechtsstaatlichkeit, digitale Selbstbestimmung, Medienqualität, gesellschaftlichen Zusammenhalt und institutionelles Vertrauen; SDG+ ist eine transparente WÖk-Erweiterung, keine offizielle UN-Kategorie.</p>
         </section>
         <section class="term-summary-card" aria-labelledby="sexarbeit-example-title">
           <p class="section-eyebrow">Abstraktes Beispiel</p>
-          <h2 id="sexarbeit-example-title">Wirkungsanalyse ohne Personenbezug</h2>
-          <p>Eine Kommune prüft nicht einzelne Personen, sondern ob Beratungsstellen erreichbar sind, ob Schutzräume existieren, ob Gesundheitszugänge anonym und diskriminierungsarm funktionieren, ob digitale Plattformen Datenrisiken erzeugen und ob Rechtsschutz bei Gewalt oder Ausbeutung praktisch zugänglich ist.</p>
+          <h2 id="sexarbeit-example-title">Bedingungen unterscheiden</h2>
+          <p>Zwei Situationen können äußerlich ähnlich erscheinen, aber völlig unterschiedliche Wirkungen haben. In der einen Situation handelt eine volljährige Person selbstbestimmt, hat Zugang zu Gesundheitsversorgung, Beratung, Rechtsschutz, sicheren Räumen und Ausstiegsmöglichkeiten. Eine andere Person sucht über Sexarbeit Nähe oder Kontakt, weil soziale Isolation, Krankheit, Alter oder biografische Brüche andere Beziehungsräume verschlossen haben. In einer dritten Situation bestehen Zwang, Gewalt, Schuldenabhängigkeit, Aufenthaltsunsicherheit, fehlender Gesundheitsschutz oder digitale Kontrolle. Die WÖk darf diese Situationen nicht gleichsetzen. Sie muss Bedingungen, Bedürfnisse, Risiken und Schutzmechanismen unterscheiden.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-core-title">
+          <p class="section-eyebrow">WÖk-Kernsatz</p>
+          <h2 id="sexarbeit-core-title">Ambivalenter Wirkungsraum</h2>
+          <p>Sexarbeit ist in der Wirkungsökonomie kein moralischer Prüfstein für Personen, sondern ein ambivalenter Wirkungsraum. Sie kann unter bestimmten Bedingungen eine soziale Kontakt-, Nähe- und Versorgungsfunktion erfüllen. Entscheidend ist aber, ob die Bedingungen Selbstbestimmung, Gesundheit, Schutz vor Gewalt, Schutz vor Ausbeutung, Rechtssicherheit, soziale Teilhabe, Wohnsicherheit, digitale Selbstbestimmung und Ausstiegsmöglichkeiten stärken oder ob sie Zwang, Abhängigkeit, Stigma, Menschenhandel, digitale Kontrolle und institutionelle Schutzlücken verstärken.</p>
+          <p>Als soziale Infrastruktur betrachtet die Wirkungsökonomie nicht nur formelle Institutionen, sondern auch die Bedingungen, unter denen Nähe, Kontakt, Zugehörigkeit, Schutz, Beratung, Gesundheit, Rechtsschutz und reale Handlungsfreiheit entstehen. Sexarbeit kann in bestimmten Kontexten Teil dieser sozialen Versorgungsstruktur sein, aber nur, wenn Schutz, Freiwilligkeit, Rechte und Würde gesichert sind.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-social-infra-link-title">
+          <p class="section-eyebrow">Verbindung</p>
+          <h2 id="sexarbeit-social-infra-link-title">Bezug zu Sozialer Infrastruktur</h2>
+          <p>Der Begriff <a class="text-link" href="../../begriffe/soziale-infrastruktur/">Soziale Infrastruktur</a> hilft, Sexarbeit nicht isoliert zu betrachten. Wenn soziale Infrastruktur Nähe, Zugehörigkeit, Gesundheit, Beratung, Schutzräume, Wohnsicherheit, Rechtsschutz und Teilhabe umfasst, dann zeigt Sexarbeit eine besonders sensible Grenzstelle dieser Infrastruktur: Sie kann Bedürfnisse sichtbar machen, die bestehende Strukturen nicht auffangen, und zugleich Risiken, die ohne Schutzarchitektur gefährlich werden.</p>
         </section>
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>

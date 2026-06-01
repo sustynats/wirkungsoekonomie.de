@@ -5,7 +5,7 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 ## Ergebnis
 
 - HTML-Dateien geprüft: 3294
-- HTML-Dateien geändert: 451
+- HTML-Dateien geändert: 452
 - blockierte Rohformat-Links gefunden: 1394
 - auf vorhandene PDF-Fassung umgelegt: 1394
 - ohne PDF-Fassung als "PDF-Fassung in Produktion" markiert: 0
@@ -56,6 +56,7 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 - `begriffe/sdg-plus/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/sdg-sdgplus-referenzrahmen/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/sdgs/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
+- `begriffe/sexarbeit/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/social-credit/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/spekulationslogik/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/stranded-assets/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)

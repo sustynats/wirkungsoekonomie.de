@@ -31,6 +31,35 @@ Diese Liste dokumentiert Begriffe, die im Kontext der neuen sensiblen Detailseit
 
 Diese Begriffe sollten nur mit eigener Definition, Schutzlinien, Quellenstatus und Reviewentscheidung ergänzt werden. Sie dürfen nicht automatisch mit `Sexarbeit` synonymisiert werden.
 
+## Sexarbeit als soziale Infrastruktur - weitere offene Begriffe
+
+Stand: 2026-06-01
+
+Im Zuge der Erweiterung von `Sexarbeit` um die funktionale Perspektive sozialer Infrastruktur wurden folgende Begriffe erneut geprüft. Sie sind fachlich relevant, wurden aber nicht automatisch als Links gesetzt, solange keine eigene geprüfte Detailseite existiert:
+
+- soziale Versorgungsstruktur
+- Einsamkeit
+- soziale Isolation
+- Nähe
+- Intimität
+- Beziehung als Infrastruktur
+- psychische Gesundheit
+- Arbeit
+- menschenwürdige Arbeit
+- Selbstbestimmung
+- Ausbeutung
+- Menschenhandel
+- Zwangsprostitution
+- sexuelle Ausbeutung
+- sexualisierte Gewalt
+- Stigma
+- Datenschutz
+- Plattformlogik
+- Wohnsicherheit
+- Schutzräume
+- Ausstiegsmöglichkeiten
+- Personenbewertung
+
 ## Soziale Infrastruktur - offene verwandte Begriffe
 
 Stand: 2026-06-01

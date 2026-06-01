@@ -44,3 +44,21 @@ Stand: 2026-06-01
 - Crosslinks: `sexarbeit` verweist über `relatedTerms` zurück auf `soziale-infrastruktur`.
 - Auditergebnis: nach Build und Glossar-Audits zu prüfen.
 - Offene Begriffe: siehe `docs/missing-glossary-terms.md`.
+
+## Erweiterung Sexarbeit: soziale Infrastruktur
+
+- Begriff: Sexarbeit
+- Status: erweitert
+- Kategorie: Soziale Infrastruktur, Arbeit, Körper & Selbstbestimmung
+- Detailroute: `/begriffe/sexarbeit/`
+- Alias-Routen: `/begriffe/prostitution/`, `/begriffe/sex-work/`
+- Aliase: Prostitution, Sex Work
+- Auto-Linking: deaktiviert
+- Sensibler Begriff: ja
+- Neue Erweiterung: Sexarbeit wird nicht nur als sensibler Arbeits- und Schutzraum beschrieben, sondern auch als ambivalente soziale Infrastruktur beziehungsweise soziale Versorgungsstruktur, die unter bestimmten Bedingungen Bedürfnisse nach Nähe, Intimität und zwischenmenschlichem Kontakt adressieren kann.
+- Warum erweitert: Das Dokument `Sexarbeit als soziale Infrastruktur` argumentiert für eine funktionale, realitätsnahe Betrachtung jenseits moralischer Verkürzungen und fordert Regulierung, die Schutz vor Ausbeutung und Selbstbestimmung zugleich ermöglicht.
+- Verwandte Begriffe: Soziale Infrastruktur, körperliche Selbstbestimmung, Menschenwürde, Wirkungsrisiko, Wirkungspotenzial, Wirkungsraum, Gesundheit, digitale Selbstbestimmung, Rechtsschutz, Social Credit, Nichtkompensationsprinzip, Reverse Merit Order, SDG+.
+- Verwandte Wirkungsfelder: Arbeit, Gesundheit, Recht & Demokratie, digitale Plattformen, Medien & Öffentlichkeit, Migration & Zugehörigkeit, Wohnen & Wohnsicherheit, soziale Infrastruktur.
+- Verwandte Dokumente: `Sexarbeit als soziale Infrastruktur.docx` als reviewpflichtige interne Konzeptquelle; Führender Begriffsleitfaden; Die neue Ordnung des Wohlstands; Systemmodell der Wirkungsökonomie.
+- Auditergebnis: nach Build und Glossar-Audits zu prüfen.
+- Offene Begriffe: soziale Versorgungsstruktur, Einsamkeit, soziale Isolation, Nähe, Intimität, Beziehung als Infrastruktur, Schutzräume, Ausstiegsmöglichkeiten, Menschenhandel, Zwangsprostitution, sexuelle Ausbeutung, sexualisierte Gewalt.

@@ -1,6 +1,6 @@
 # Glossary Coverage Report
 
-Stand: 2026-06-01T08:54:10.805Z
+Stand: 2026-06-01T09:12:17.463Z
 
 - HTML-Seiten gescannt: 3275
 - Seiten mit /begriffe/-Links: 2507
@@ -54,6 +54,7 @@ Stand: 2026-06-01T08:54:10.805Z
 - begriffe/wirkungsrat/index.html: 22
 - begriffe/greenwashing/index.html: 21
 - begriffe/pigou-steuer/index.html: 21
+- begriffe/sexarbeit/index.html: 21
 - begriffe/datenqualitaet/index.html: 20
 - begriffe/kognitive-dissonanz/index.html: 20
 - begriffe/wirkungsbewertung/index.html: 20
@@ -69,7 +70,6 @@ Stand: 2026-06-01T08:54:10.805Z
 - begriffe/grundgesetz/index.html: 18
 - begriffe/rechtsstaatlichkeit/index.html: 18
 - begriffe/salienz/index.html: 18
-- begriffe/sexarbeit/index.html: 18
 - begriffe/woek-id/index.html: 18
 - begriffe/alarm-frame/index.html: 17
 - begriffe/machtkonzentration/index.html: 17
