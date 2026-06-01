@@ -1,23 +1,53 @@
 {
-  "generatedAt": "2026-06-01T09:12:14.118Z",
+  "generatedAt": "2026-06-01T20:15:29.766Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
         "responsible-marketing",
         "greenwashing",
         "produktdaten",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "marketing-mix"
       ],
       "documents": [
         "nachhaltiges-marketing-mix",
         "nachhaltiger-einzelhandel",
         "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
-        "nachhaltigkeitstransformation-im-handwerk"
+        "nachhaltigkeitstransformation-im-handwerk",
+        "[object Object]"
       ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -597,9 +627,66 @@
         "scorecard",
         "woek-id",
         "nace",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "finalscore",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "messwert",
+        "datenquelle",
+        "systemgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "archetyp",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -629,9 +716,12 @@
         "reasonable-assurance",
         "datenqualitaet",
         "csrd",
-        "qualitaetssicherung"
+        "qualitaetssicherung",
+        "wirkungscontrolling"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -807,7 +897,13 @@
         "kuenstliche-intelligenz",
         "automatisierungsdividende",
         "wirkungseinkommen",
-        "maschinenwertschoepfungsbeitrag"
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "ki-und-arbeit",
+        "autonome-systeme",
+        "plattformarbeit",
+        "erwerbsarbeitslogik"
       ],
       "documents": [],
       "methods": [],
@@ -834,6 +930,72 @@
       "demos": [],
       "impactFields": [
         "arbeit-einkommen",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "automatisierungsrendite": {
+      "terms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungseinkommensteuer",
+        "produktivitaetsgewinne",
+        "kapitalrendite"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "autonome-systeme": {
+      "terms": [
+        "automatisierung",
+        "robotik",
+        "maschinenleistung",
+        "wirkungsrisiko",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
         "finanzsystem-kapital"
       ],
       "academyModules": [],
@@ -1206,6 +1368,39 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "bedingungsloses-grundeinkommen": {
+      "terms": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "sozialfinanzierung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "bedrohungsverarbeitung": {
       "terms": [
         "reaktanz",
@@ -1248,6 +1443,76 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "beitragsbasis": {
+      "terms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsluecke",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "beitragsluecke": {
+      "terms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "belohnungslernen": {
       "terms": [
         "verstaerkungslernen",
@@ -1268,9 +1533,67 @@
         "woek-id",
         "archetyp",
         "datenqualitaet",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nace",
+        "systemgrenze",
+        "messwert",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "benchmark",
+        "wirkungsbewertung",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -2288,9 +2611,12 @@
       "terms": [
         "datenqualitaet",
         "konservative-annahme",
-        "scorecard"
+        "scorecard",
+        "wirkungscontrolling"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -2317,9 +2643,67 @@
         "emissionsfaktor",
         "lebenszyklusinventar",
         "scope-3-datenqualitaet",
-        "gender-data-gap"
+        "gender-data-gap",
+        "wirkungscontrolling",
+        "archetyp",
+        "finalscore",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "versionierung",
+        "rechtsschutz",
+        "datenqualitaet",
+        "produktscorecard",
+        "scorecard",
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "sdg-washing",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -2878,13 +3262,62 @@
         "batteriepass",
         "anlagenpass",
         "vollstaendige-information",
-        "informationsasymmetrie"
+        "informationsasymmetrie",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsscanner"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -3236,6 +3669,82 @@
         "xbrl"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "ehrliche-preise": {
+      "terms": [
+        "wirkungssteuer",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "externalitaeten",
+        "produktwirkung",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "wirkungswahrheit",
+        "greenwashing",
+        "markttransformation",
+        "responsible-marketing",
+        "wirkungssteuergesetz",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "ehrliche-preise",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "impact-washing",
+        "sdg-washing",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -3987,6 +4496,73 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "erwerbsarbeitslogik": {
+      "terms": [
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "wirkungsbiografie",
+        "maschinenleistung",
+        "sozialfinanzierung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "erwerbsbiografie": {
+      "terms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "lebenswirkung",
+        "sozialabgaben",
+        "beitragsbasis"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "esap": {
       "terms": [
         "csrd",
@@ -4672,9 +5248,68 @@
         "reverse-merit-order",
         "netto-wirkung",
         "benchmark",
-        "nwi"
+        "nwi",
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "archetyp",
+        "produktscorecard",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "positive-netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungssimulation",
+        "t-sroi",
+        "finalscore",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -5893,13 +6528,44 @@
         "residual-emissions",
         "responsible-marketing",
         "scope-3",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -5975,6 +6641,39 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "grunddividende": {
+      "terms": [
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "bedingungsloses-grundeinkommen"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -7664,6 +8363,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "ki-und-arbeit": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "plattformarbeit",
+        "transformationsbonus",
+        "wirkungseinkommen",
+        "erwerbsarbeitslogik"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "ki-governance": {
       "terms": [
         "kuenstliche-intelligenz",
@@ -8690,6 +9423,39 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "lebenswirkung": {
+      "terms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "wirkungsbonus",
+        "wirkleistung",
+        "erwerbsbiografie"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "lebenszyklusanalyse": {
       "terms": [
         "lebenszyklusinventar",
@@ -9433,6 +10199,78 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "maschinenleistung": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkleistung",
+        "sozialabgaben"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "maschinenleistungsrueckkopplung": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "transformationsbonus",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -10449,11 +11287,61 @@
         "negative-wirkung",
         "nwi",
         "rebound-effekt",
-        "t-sroi"
+        "t-sroi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
       "demos": [],
       "impactFields": [],
       "academyModules": [],
@@ -10465,10 +11353,12 @@
         "finalscore",
         "t-sroi",
         "reverse-merit-order",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "wirkungscontrolling"
       ],
       "documents": [
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
       ],
       "methods": [],
       "tools": [],
@@ -12009,6 +12899,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "plattformarbeit": {
+      "terms": [
+        "ki-und-arbeit",
+        "erwerbsarbeitslogik",
+        "sozialabgaben",
+        "beitragsbasis",
+        "wirkungseinkommen",
+        "wirkungsbonus"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "plattformkapitalismus": {
       "terms": [
         "aufmerksamkeitsoekonomie",
@@ -12313,13 +13237,58 @@
         "trickle-down-oekonomie",
         "kreislaufblindheit",
         "kreislaufwirkung",
-        "effizienz"
+        "effizienz",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "documents": [
-        "sdg-sdgplus-referenzrahmen"
+        "sdg-sdgplus-referenzrahmen",
+        "[object Object]"
       ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
       "demos": [],
       "impactFields": [],
       "academyModules": [],
@@ -12657,13 +13626,237 @@
         "nachhaltigkeitslabel",
         "pcr-product-category-rules",
         "reparierbarkeit-recht-auf-reparatur",
-        "wasserstress"
+        "wasserstress",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktivitaetsgewinne": {
+      "terms": [
+        "automatisierung",
+        "automatisierungsdividende",
+        "maschinenleistungsrueckkopplung",
+        "produktivitaetssteuer",
+        "transformationsbonus"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktivitaetssteuer": {
+      "terms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistungsrueckkopplung",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktscorecard": {
+      "terms": [
+        "produktwirkung",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "finalscore",
+        "datenqualitaet"
+      ],
+      "documents": [
+        "[object Object]"
+      ],
+      "methods": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "demos": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktwirkung": {
+      "terms": [
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "ehrliche-preise",
+        "kreislaufwirtschaft"
+      ],
+      "documents": [
+        "[object Object]"
+      ],
+      "methods": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "demos": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -13680,6 +14873,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "rentenfinanzierung": {
+      "terms": [
+        "wirkungsrente",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "beitragsluecke",
+        "automatisierungsdividende",
+        "lebenswirkung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "reparatur": {
       "terms": [
         "recht-auf-reparatur",
@@ -13993,13 +15220,46 @@
         "greenwashing",
         "impact-washing",
         "green-claims-directive",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "empowering-consumers-green-transition"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -14088,16 +15348,64 @@
         "schwellenwert",
         "scope-3",
         "kreislaufwirtschaft",
-        "materialgesundheit"
+        "materialgesundheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "wirkungsrat"
       ],
       "documents": [
         "technische-leitlinien-wustg",
-        "beispiel-apfel-wirkungssteuer"
+        "beispiel-apfel-wirkungssteuer",
+        "[object Object]"
       ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -14161,12 +15469,87 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "roboteroekonomie": {
+      "terms": [
+        "robotik",
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "robotersteuer": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "sozialabgaben",
+        "bedingungsloses-grundeinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "robotik": {
       "terms": [
         "automatisierung",
         "kuenstliche-intelligenz",
         "automatisierungsdividende",
-        "wirkungseinkommen"
+        "wirkungseinkommen",
+        "maschinenleistung",
+        "autonome-systeme",
+        "robotersteuer",
+        "maschinenleistungsrueckkopplung"
       ],
       "documents": [],
       "methods": [],
@@ -14682,6 +16065,7 @@
         "woek-id",
         "benchmark",
         "finalscore",
+        "wirkungscontrolling",
         "wirkungsindikator",
         "reverse-merit-order",
         "archetyp",
@@ -14716,7 +16100,9 @@
         "vollstaendige-information",
         "informationsasymmetrie"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -15233,6 +16619,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "sozialabgaben": {
+      "terms": [
+        "beitragsluecke",
+        "beitragsbasis",
+        "sozialfinanzierung",
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "soziale-bewaehrtheit": {
       "terms": [
         "normalisierung",
@@ -15352,6 +16773,42 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "sozialfinanzierung": {
+      "terms": [
+        "sozialabgaben",
+        "beitragsluecke",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -16388,10 +17845,12 @@
         "impact-value",
         "systemgrenze",
         "sechster-kondratieff",
-        "wirkungswert"
+        "wirkungswert",
+        "wirkungscontrolling"
       ],
       "documents": [
-        "whitepaper-t-sroi"
+        "whitepaper-t-sroi",
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
       ],
       "methods": [],
       "tools": [],
@@ -16814,6 +18273,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "transformationsbonus": {
+      "terms": [
+        "uebergangsschutz",
+        "weiterbildung",
+        "automatisierung",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "transformationsrente",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "transformationswelle": {
       "terms": [
         "transformationswirkung",
@@ -16842,11 +18336,65 @@
         "hebelpunkt",
         "pfadabhaengigkeit",
         "t-sroi",
-        "verlustaversion"
+        "verlustaversion",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
       "demos": [],
       "impactFields": [],
       "academyModules": [],
@@ -18529,9 +20077,134 @@
         "wirksamkeit",
         "wirkungsbewertung",
         "wirkungsdaten",
-        "wirkungsempfaenger"
+        "wirkungsempfaenger",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
+      "methods": [],
+      "tools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkung-im-preisschild": {
+      "terms": [
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "wirkungsgutschrift",
+        "produktwirkung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "finalscore",
+        "datenqualitaet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "konsumwirkung",
+        "wirkungsrueckkopplung",
+        "fuenftes-p-planet",
+        "markttransformation",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18541,10 +20214,43 @@
     },
     "wirkungsarchitektur": {
       "terms": [
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "datenqualitaet",
+        "greenwashing",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "reverse-merit-order",
+        "impact-washing",
+        "sdg-washing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "rueckkopplung",
         "kybernetik",
         "viable-system-model",
-        "wirkungsrat",
         "scorecard",
         "sechster-kondratieff",
         "donella-meadows",
@@ -18562,14 +20268,153 @@
         "verfassungsmaessige-wirkungsarchitektur",
         "verwaltung",
         "wirkungskompetenz",
-        "wirkungslenkung",
-        "wirkungsnetz",
         "wirkungsraum",
         "wirkungsresilienz",
-        "wirkungsrueckkopplung",
         "demokratische-wirkungsarchitektur"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsassurance": {
+      "terms": [
+        "wirkungsaudit",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "assurance",
+        "csrd",
+        "esrs",
+        "gri",
+        "rechtsschutz",
+        "versionierung",
+        "responsible-marketing",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "fuenftes-p-planet"
+      ],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsaudit": {
+      "terms": [
+        "wirkungsassurance",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "greenwashing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "digitaler-produktpass",
+        "produktdaten",
+        "rechtsschutz",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18580,7 +20425,38 @@
     "wirkungsbewertung": {
       "terms": [
         "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
         "positive-netto-wirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "datenqualitaet",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "scorecard",
         "doppelte-wesentlichkeit",
         "handlung",
@@ -18588,9 +20464,7 @@
         "health-impact-assessment",
         "hotspot-analyse",
         "human-rights-impact-assessment",
-        "mensch-planet-demokratie",
         "qualitaetssicherung",
-        "sdg-plus",
         "wirkungskompetenz",
         "wirkungsradar",
         "zielkonflikt",
@@ -18598,7 +20472,13 @@
         "genossenschaftsblindheit",
         "gemeineigentum"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18606,21 +20486,96 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungsbiografie": {
+      "terms": [
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsbonus",
+        "wirkleistung",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungsblindheit": {
       "terms": [
         "wirkungswahrheit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "externalitaeten",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "greenwashing",
+        "impact-washing",
+        "wirkungssimulation",
+        "buerokratie-als-reparaturmaschine",
+        "kapital-als-falscher-kompass",
+        "reichweite",
+        "output",
+        "bip",
+        "scheinleistung",
+        "blindleistung",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "sdg-washing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "wirkungsdatenraum",
         "wirklichkeitskonstruktion",
         "salienz",
         "bestaetigungsfehler",
-        "wirkungsdaten",
         "rueckkopplung",
         "faktenargumentation",
-        "wirkungsrisiko",
         "folgewirkung",
         "resonanzraum",
         "gewinn-als-test",
-        "scheinleistung",
         "scope-3",
         "scope-3-datenqualitaet",
         "externalisierung",
@@ -18629,11 +20584,52 @@
         "modellblindheit",
         "gedankenlosigkeit"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsbonus": {
+      "terms": [
+        "wirkleistung",
+        "wirkungsbiografie",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsrente",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -18749,6 +20745,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungseinkommensteuer": {
+      "terms": [
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungssteuer",
+        "wstg"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungsempfaenger": {
       "terms": [
         "wirkung",
@@ -18849,9 +20879,139 @@
         "immanuel-kant",
         "wertekonflikt",
         "wirkungsethik",
-        "materialgesundheit"
+        "materialgesundheit",
+        "wirkungsbewertung",
+        "positive-netto-wirkung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "datenqualitaet",
+        "menschenwuerde",
+        "biodiversitaetsrisiko",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "wirkungsgrenze",
+        "wirkungsarchitektur",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "rechtsschutz",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsgutschrift": {
+      "terms": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "oeffentliche-beschaffung",
+        "wirkungshaushalt",
+        "datenqualitaet",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktdaten",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "fuenftes-p-planet",
+        "rechtsschutz"
+      ],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18897,9 +21057,68 @@
         "wirkungsdaten",
         "wirkungspfad",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungscontrolling",
+        "woek-id",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "messwert",
+        "systemgrenze",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "wirkungsdatenraum",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungsrat"
       ],
-      "documents": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -19015,17 +21234,52 @@
     },
     "wirkungslenkung": {
       "terms": [
-        "hebelpunkt",
-        "rueckkopplung",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
         "wirkungsarchitektur",
         "positive-netto-wirkung",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "datenqualitaet",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "hebelpunkt",
+        "rueckkopplung",
         "donella-meadows",
         "pfadabhaengigkeit",
-        "wirkungseinkommen",
-        "wirkungshaushalt",
-        "wirkungsrueckkopplung"
+        "wirkungseinkommen"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -19162,11 +21416,62 @@
         "wirkungsdaten",
         "wirkungspaedagogik",
         "wirkungspfad",
-        "wirkungstraeger"
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "WÖk-IDs",
+          "href": "../../werkzeuge/woek-ids/"
+        },
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "T-SROI",
+          "href": "../../werkzeuge/impact-controlling/t-sroi/"
+        }
+      ],
       "demos": [],
       "impactFields": [],
       "academyModules": [],
@@ -19222,10 +21527,60 @@
         "epistemische-gemeinschaft",
         "demokratieprinzip",
         "urteilskraft",
-        "demokratische-wirkungsarchitektur"
+        "demokratische-wirkungsarchitektur",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungssimulation",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "rechtsschutz",
+        "transparenz",
+        "wirkungsrat",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "versionierung",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "documents": [
-        "wirkungsrat-konzept"
+        "wirkungsrat-konzept",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
       ],
       "methods": [],
       "tools": [],
@@ -19263,9 +21618,61 @@
         "wirkungsdatenraum",
         "woek-id",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "produktdaten",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "rechtsschutz",
+        "greenwashing",
+        "wirkungssimulation",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -19400,13 +21807,46 @@
         "wirkungsfonds",
         "wirkungshaushalt",
         "wirkungssteuer",
-        "zentralverwaltungswirtschaft"
+        "zentralverwaltungswirtschaft",
+        "responsible-marketing",
+        "greenwashing",
+        "produktdaten",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "wirkungseinkommen"
       ],
-      "documents": [],
+      "documents": [
+        "[object Object]"
+      ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -19451,11 +21891,70 @@
         "externalitaet",
         "pigou-steuer",
         "regulierungsversagen",
-        "verhaeltnismaessigkeit"
+        "verhaeltnismaessigkeit",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "wirkungslenkung",
+        "finalscore",
+        "reverse-merit-order",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "woek-id",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungssteuer",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
       ],
       "documents": [
         "wstg-oktober-2025",
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
       ],
       "methods": [],
       "tools": [],
@@ -19468,10 +21967,73 @@
       "terms": [
         "wirkungssteuer",
         "wstg",
-        "wustg"
+        "wustg",
+        "wirkungsumsatzsteuer",
+        "wirkungseinkommensteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "rechtsschutz",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuergesetz",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "documents": [
-        "wstg-oktober-2025"
+        "wstg-oktober-2025",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
       ],
       "methods": [],
       "tools": [],
@@ -19553,12 +22115,50 @@
     },
     "wirkungswahrheit": {
       "terms": [
+        "wirkungsblindheit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "responsible-marketing",
+        "ehrliche-preise",
+        "produktdaten",
+        "datenqualitaet",
+        "medienqualitaet",
+        "demokratie-als-wirkungsraum",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "wahrheit",
         "wahrhaftigkeit",
         "scheinwahrheit",
         "externalisierung",
         "folgencheck",
-        "wirkungsblindheit",
         "adam-smith",
         "bedeutung-als-gebrauch",
         "faktenargumentation",
@@ -19568,10 +22168,15 @@
         "ordoliberalismus",
         "social-credit",
         "wirklichkeitsbindung",
-        "wirkungsdatenraum",
-        "wirkungsrat"
+        "wirkungsdatenraum"
       ],
-      "documents": [],
+      "documents": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -19764,15 +22369,64 @@
         "scope-1",
         "scope-3",
         "thg-emissions-scopes",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "wirkungscontrolling",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungssteuer",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsindikator"
       ],
       "documents": [
-        "woek-master-items-register"
+        "woek-master-items-register",
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "[object Object]"
       ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },

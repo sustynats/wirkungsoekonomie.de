@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-01T09:11:51.514Z",
+  "generatedAt": "2026-06-01T20:15:05.554Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
       "slug": "fuenftes-p-planet",
       "url": "/begriffe/fuenftes-p-planet/",
-      "hoverDefinition": "5. P = Planet ergänzt den Marketing-Mix um die Frage nach realer Produkt- und Kommunikationswirkung.",
-      "shortDefinition": "5. P = Planet erweitert den klassischen Marketing-Mix um die Wirkungen eines Angebots auf ökologische und gesellschaftliche Grundlagen.",
+      "hoverDefinition": "Planet als fünftes P bedeutet: Marketing wird nicht nur über Produkt, Preis, Platzierung und Promotion gesteuert, sondern über tatsächliche ökologische und gesellschaftliche Wirkung.",
+      "shortDefinition": "Das fünfte P erweitert Produkt, Preis, Platzierung und Promotion um die reale Planet- und Produktwirkung von Angeboten.",
       "category": "WÖk-Begriff",
       "synonyms": [
         "5. P = Planet",
@@ -14,22 +14,47 @@
         "fünftes P Planet",
         "fuenftes P Planet",
         "Marketing nach Wirkung",
-        "Planet im Marketing-Mix"
+        "Planet im Marketing-Mix",
+        "fünftes P",
+        "fuenftes P",
+        "fünftes P im Marketing",
+        "Produktwirkung im Marketing"
       ],
       "relatedTerms": [
         "responsible-marketing",
         "greenwashing",
         "produktdaten",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "marketing-mix"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
       "relatedDocuments": [
         "nachhaltiges-marketing-mix",
         "nachhaltiger-einzelhandel",
         "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
-        "nachhaltigkeitstransformation-im-handwerk"
+        "nachhaltigkeitstransformation-im-handwerk",
+        "[object Object]"
       ],
       "relatedObjections": []
     },
@@ -868,23 +893,89 @@
       "label": "Archetyp",
       "slug": "archetyp",
       "url": "/begriffe/archetyp/",
-      "hoverDefinition": "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten.",
-      "shortDefinition": "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht.",
-      "category": "Messbegriff",
+      "hoverDefinition": "Ein Archetyp ist eine standardisierte Bewertungsfunktion, die einen Messwert anhand definierter Schwellen, Polarität und Benchmarks in einen Wirkungsscore übersetzt.",
+      "shortDefinition": "Ein Archetyp ist eine standardisierte Bewertungsfunktion, die einen Messwert anhand definierter Schwellen, Polarität und Benchmarks in einen Wirkungsscore übersetzt.",
+      "category": "Messung, Bewertung & Scorecards",
       "synonyms": [
-        "Archetyp"
+        "Archetyp",
+        "Bewertungsarchetyp",
+        "Bewertungsfunktion",
+        "Score-Ableitungsfunktion",
+        "Scoring-Archetyp",
+        "Wirkungsarchetyp",
+        "archetype",
+        "lower_is_better",
+        "higher_is_better",
+        "near_zero_better"
       ],
       "relatedTerms": [
         "benchmark",
         "scorecard",
         "woek-id",
         "nace",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "finalscore",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "messwert",
+        "datenquelle",
+        "systemgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "archetyp",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "relatedObjections": []
     },
     "art-20a-gg": {
@@ -928,12 +1019,15 @@
         "reasonable-assurance",
         "datenqualitaet",
         "csrd",
-        "qualitaetssicherung"
+        "qualitaetssicherung",
+        "wirkungscontrolling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "relatedObjections": []
     },
     "astroturfing": {
@@ -1167,14 +1261,25 @@
       "shortDefinition": "Automatisierung beschreibt die Übertragung von Aufgaben, Abläufen oder Entscheidungen auf technische Systeme.",
       "category": "Daten, Digitalisierung und KI",
       "synonyms": [
-        "Automatisierung"
+        "Automatisierung",
+        "Automation",
+        "Automatisierung von Arbeit",
+        "digitale Automatisierung",
+        "KI-Automatisierung",
+        "Maschinenleistung"
       ],
       "relatedTerms": [
         "robotik",
         "kuenstliche-intelligenz",
         "automatisierungsdividende",
         "wirkungseinkommen",
-        "maschinenwertschoepfungsbeitrag"
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "ki-und-arbeit",
+        "autonome-systeme",
+        "plattformarbeit",
+        "erwerbsarbeitslogik"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [
@@ -1193,7 +1298,11 @@
       "shortDefinition": "Automatisierungsdividende bezeichnet den Anteil automatisierter Produktivitätsgewinne, der in Teilhabe, Sicherung, Bildung oder Wirkung zurückgeführt wird.",
       "category": "Arbeit, Kapital und Transformation",
       "synonyms": [
-        "Automatisierungsdividende"
+        "Automatisierungsdividende",
+        "Kapitalerträge aus Automatisierung",
+        "Automatisierungsrendite",
+        "Produktivitätsgewinne",
+        "Wirkungsdividende"
       ],
       "relatedTerms": [
         "automatisierung",
@@ -1209,6 +1318,95 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "automatisierungsrendite": {
+      "label": "Automatisierungsrendite",
+      "slug": "automatisierungsrendite",
+      "url": "/begriffe/automatisierungsrendite/",
+      "hoverDefinition": "Automatisierungsrendite fragt, wem Produktivitätsgewinne aus KI, Robotik und Automatisierung zufallen.",
+      "shortDefinition": "Automatisierungsrendite bezeichnet Kapital- oder Gewinnanteile, die aus automatisierter Produktivität entstehen.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Automatisierungsrendite",
+        "Kapitalerträge aus Automatisierung",
+        "Automatisierungsertrag",
+        "KI-Rendite",
+        "Roboter-Rendite",
+        "Produktivitätsrendite"
+      ],
+      "relatedTerms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungseinkommensteuer",
+        "produktivitaetsgewinne",
+        "kapitalrendite"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "autonome-systeme": {
+      "label": "Autonome Systeme",
+      "slug": "autonome-systeme",
+      "url": "/begriffe/autonome-systeme/",
+      "hoverDefinition": "Autonome Systeme erhöhen Maschinenleistung und Verantwortungslücken; WÖk fragt nach Wirkung, Schutz und Rückkopplung.",
+      "shortDefinition": "Autonome Systeme treffen oder steuern Entscheidungen teilweise selbstständig und können dadurch Maschinenleistung, Risiken und Verantwortungsfragen verändern.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Autonome Systeme",
+        "autonome Maschinen",
+        "selbststeuernde Systeme",
+        "autonome Roboter",
+        "autonome KI-Systeme"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "robotik",
+        "maschinenleistung",
+        "wirkungsrisiko",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "autopoiesis": {
@@ -1734,6 +1932,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "bedingungsloses-grundeinkommen": {
+      "label": "Bedingungsloses Grundeinkommen",
+      "slug": "bedingungsloses-grundeinkommen",
+      "url": "/begriffe/bedingungsloses-grundeinkommen/",
+      "hoverDefinition": "BGE ist ein universeller Transfer; Wirkungseinkommen ist die WÖk-Architektur aus Grunddividende, Markteinkommen und Wirkungsbonus.",
+      "shortDefinition": "Das bedingungslose Grundeinkommen ist ein universeller Geldtransfer unabhängig von Arbeit, Bedürftigkeit oder Wirkung. Die WÖk grenzt Wirkungseinkommen davon ab: Es enthält eine Grunddividende, verbindet sie aber mit Markteinkommen, Wirkungsbonus und Rückkopplung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Bedingungsloses Grundeinkommen",
+        "BGE",
+        "Grundeinkommen",
+        "Universal Basic Income",
+        "UBI",
+        "Grundsicherung"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "sozialfinanzierung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "bedrohungsverarbeitung": {
       "label": "Bedrohungsverarbeitung",
       "slug": "bedrohungsverarbeitung",
@@ -1797,6 +2040,98 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "beitragsbasis": {
+      "label": "Beitragsbasis",
+      "slug": "beitragsbasis",
+      "url": "/begriffe/beitragsbasis/",
+      "hoverDefinition": "Beitragsbasis beschreibt, worauf soziale Sicherung finanziell aufsetzt: heute stark auf Löhnen, künftig auch auf rückgekoppelter Wertschöpfung.",
+      "shortDefinition": "Die Beitragsbasis ist die Grundlage, aus der Beiträge zur sozialen Sicherung entstehen. In der WÖk wird geprüft, ob sie bei Automatisierung über Lohnarbeit hinaus erweitert werden muss.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Beitragsbasis",
+        "Finanzierungsbasis",
+        "Sozialbeitragsbasis",
+        "Rentenbasis",
+        "Lohnsummenbasis"
+      ],
+      "relatedTerms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsluecke",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "beitragsluecke": {
+      "label": "Beitragslücke",
+      "slug": "beitragsluecke",
+      "url": "/begriffe/beitragsluecke/",
+      "hoverDefinition": "Beitragslücke heißt: Wertschöpfung bleibt oder steigt, aber Lohnsumme und Sozialbeiträge tragen weniger.",
+      "shortDefinition": "Die Beitragslücke entsteht, wenn durch Automatisierung Lohnsumme und Sozialbeiträge sinken, obwohl Wertschöpfung und Produktivität weiter bestehen oder steigen.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Beitragslücke",
+        "Beitragsloch",
+        "Sozialbeitragslücke",
+        "Rentenbeitragslücke",
+        "Lohnsummenlücke"
+      ],
+      "relatedTerms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "belohnungslernen": {
       "label": "Belohnungslernen",
       "slug": "belohnungslernen",
@@ -1821,13 +2156,19 @@
       "label": "Benchmark",
       "slug": "benchmark",
       "url": "/begriffe/benchmark/",
-      "hoverDefinition": "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität.",
-      "shortDefinition": "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden.",
-      "category": "Messbegriff",
+      "hoverDefinition": "Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann.",
+      "shortDefinition": "Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann.",
+      "category": "Messung, Bewertung & Scorecards",
       "synonyms": [
         "Benchmark",
         "Vergleichswert",
-        "Schwellenwert"
+        "Schwellenwert",
+        "Referenzwert",
+        "Zielwert",
+        "Branchenbenchmark",
+        "sektoraler Benchmark",
+        "Benchmark_by_NACE",
+        "Wirkungsbenchmark"
       ],
       "relatedTerms": [
         "scorecard",
@@ -1835,12 +2176,70 @@
         "woek-id",
         "archetyp",
         "datenqualitaet",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nace",
+        "systemgrenze",
+        "messwert",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "benchmark",
+        "wirkungsbewertung",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "relatedObjections": []
     },
     "beobachterabhaengigkeit": {
@@ -3360,23 +3759,33 @@
       "relatedTerms": [
         "datenqualitaet",
         "konservative-annahme",
-        "scorecard"
+        "scorecard",
+        "wirkungscontrolling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "relatedObjections": []
     },
     "datenqualitaet": {
       "label": "Datenqualität",
       "slug": "datenqualitaet",
       "url": "/begriffe/datenqualitaet/",
-      "hoverDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
-      "shortDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind.",
+      "shortDefinition": "Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind.",
+      "category": "Daten, Prüfung & Wirkungsarchitektur",
       "synonyms": [
-        "Datenqualität"
+        "Datenqualität",
+        "Qualität von Wirkungsdaten",
+        "Datenqualitätsklasse",
+        "Data Quality",
+        "Verlässlichkeit von Daten",
+        "Prüfstatus von Daten",
+        "Wirkungsdatenqualität",
+        "Evidenzqualität"
       ],
       "relatedTerms": [
         "datenluecke",
@@ -3396,12 +3805,70 @@
         "emissionsfaktor",
         "lebenszyklusinventar",
         "scope-3-datenqualitaet",
-        "gender-data-gap"
+        "gender-data-gap",
+        "wirkungscontrolling",
+        "archetyp",
+        "finalscore",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "versionierung",
+        "rechtsschutz",
+        "datenqualitaet",
+        "produktscorecard",
+        "scorecard",
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "sdg-washing",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "relatedObjections": []
     },
     "dc-laden": {
@@ -4135,16 +4602,18 @@
       "label": "Digitaler Produktpass",
       "slug": "digitaler-produktpass",
       "url": "/begriffe/digitaler-produktpass/",
-      "hoverDefinition": "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus.",
-      "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Der Digitale Produktpass macht Produktdaten über Herkunft, Materialien, Nutzung, Reparatur, Rücknahme und Wirkung maschinenlesbar verfügbar.",
+      "shortDefinition": "Der Digitale Produktpass ist ein strukturierter Datenträger, der zentrale Informationen zu Herkunft, Materialien, Herstellung, Nutzung, Reparatur, Rücknahme und Wirkung eines Produkts maschinenlesbar verfügbar macht.",
+      "category": "Daten, Standards & Produktwirkung",
       "synonyms": [
         "Digitaler Produktpass",
         "DPP",
         "Digital Product Passport",
         "Produktpass",
         "Herkunftsdaten im Produktpass",
-        "Produktpass Herkunft"
+        "Produktpass Herkunft",
+        "digitaler Wirkungsproduktpass",
+        "Produktdatenträger"
       ],
       "relatedTerms": [
         "wirkungsdatenraum",
@@ -4174,12 +4643,48 @@
         "batteriepass",
         "anlagenpass",
         "vollstaendige-information",
-        "informationsasymmetrie"
+        "informationsasymmetrie",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsscanner"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "digitalisierung": {
@@ -4700,6 +5205,97 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "ehrliche-preise": {
+      "label": "Ehrliche Preise",
+      "slug": "ehrliche-preise",
+      "url": "/begriffe/ehrliche-preise/",
+      "hoverDefinition": "Ehrliche Preise sind Preise, die die Wirkung eines Produkts oder einer Tätigkeit auf Mensch, Planet und Demokratie besser sichtbar machen, statt Folgekosten zu verstecken.",
+      "shortDefinition": "Ehrliche Preise sind Preise, die die Wirkung eines Produkts oder einer Tätigkeit auf Mensch, Planet und Demokratie besser sichtbar machen, statt Folgekosten zu verstecken.",
+      "category": "Preise, Märkte & Wirkungswahrheit",
+      "synonyms": [
+        "Ehrliche Preise",
+        "ehrlicher Preis",
+        "wirkungsnahe Preise",
+        "Wirkungspreise",
+        "Preiswahrheit",
+        "True Cost Pricing",
+        "echte Preise",
+        "Preis als Wirklichkeitssignal",
+        "wirkungsbasierte Preisbildung"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "externalitaeten",
+        "produktwirkung",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "wirkungswahrheit",
+        "greenwashing",
+        "markttransformation",
+        "responsible-marketing",
+        "wirkungssteuergesetz",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "ehrliche-preise",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "impact-washing",
+        "sdg-washing",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
       "relatedObjections": []
     },
     "eichrecht-ladeinfrastruktur": {
@@ -5808,6 +6404,95 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "erwerbsarbeitslogik": {
+      "label": "Erwerbsarbeitslogik",
+      "slug": "erwerbsarbeitslogik",
+      "url": "/begriffe/erwerbsarbeitslogik/",
+      "hoverDefinition": "Erwerbsarbeitslogik ist die alte Kette Arbeit -> Einkommen -> Sozialabgaben -> Sozialstaat; Automatisierung macht sie brüchig.",
+      "shortDefinition": "Erwerbsarbeitslogik bezeichnet die alte Kopplung von Arbeit, Einkommen, Steuern, Sozialabgaben und sozialer Anerkennung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Erwerbsarbeitslogik",
+        "Erwerbsarbeitszentrierung",
+        "Arbeitsgesellschaft",
+        "Lohnarbeitslogik",
+        "Arbeit-Einkommen-Kopplung"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "wirkungsbiografie",
+        "maschinenleistung",
+        "sozialfinanzierung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "erwerbsbiografie": {
+      "label": "Erwerbsbiografie",
+      "slug": "erwerbsbiografie",
+      "url": "/begriffe/erwerbsbiografie/",
+      "hoverDefinition": "Erwerbsbiografie erfasst Arbeit, Einkommen und Beitragszeiten; Wirkungsbiografie macht zusätzlich gesellschaftliche Wirkleistung sichtbar.",
+      "shortDefinition": "Die Erwerbsbiografie beschreibt den Lebensverlauf über Beschäftigung, Einkommen und Beitragszeiten. In der WÖk wird sie durch die Wirkungsbiografie ergänzt, nicht ersetzt.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Erwerbsbiografie",
+        "Erwerbsbiographie",
+        "Arbeitsbiografie",
+        "Beschäftigungsbiografie",
+        "Beitragsbiografie"
+      ],
+      "relatedTerms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "lebenswirkung",
+        "sozialabgaben",
+        "beitragsbasis"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "esap": {
       "label": "ESAP / European Single Access Point",
       "slug": "esap",
@@ -6779,23 +7464,89 @@
       "label": "FinalScore",
       "slug": "finalscore",
       "url": "/begriffe/finalscore/",
-      "hoverDefinition": "Der FinalScore ist die steuerungsrelevante Verdichtung von Einzelscores unter Berücksichtigung von Datenqualität, Reverse Merit Order und Nichtkompensation.",
-      "shortDefinition": "Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung.",
-      "category": "Messbegriff",
+      "hoverDefinition": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt.",
+      "shortDefinition": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt.",
+      "category": "Messung, Bewertung & Scorecards",
       "synonyms": [
-        "FinalScore"
+        "FinalScore",
+        "Final Score",
+        "Gesamt-Score",
+        "Endscore",
+        "Wirkungsgesamtbewertung",
+        "steuerungsfähige Gesamtbewertung",
+        "Scorecard-Finalwert",
+        "WÖk-FinalScore"
       ],
       "relatedTerms": [
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung",
         "benchmark",
-        "nwi"
+        "nwi",
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "archetyp",
+        "produktscorecard",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "positive-netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungssimulation",
+        "t-sroi",
+        "finalscore",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "relatedObjections": []
     },
     "finanzmarktkapitalismus": {
@@ -8513,11 +9264,16 @@
       "label": "Greenwashing",
       "slug": "greenwashing",
       "url": "/begriffe/greenwashing/",
-      "hoverDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
-      "shortDefinition": "Greenwashing bezeichnet irreführende Nachhaltigkeitskommunikation, bei der Produkte, Unternehmen oder Aktivitäten ökologischer oder nachhaltiger dargestellt werden, als sie tatsächlich wirken.",
+      "hoverDefinition": "Greenwashing liegt vor, wenn grüne Claims, Bilder oder Labels eine positive Wirkung nahelegen, die durch Produktdaten, Methode oder reale Zustandsveränderung nicht gedeckt ist.",
+      "shortDefinition": "Greenwashing bezeichnet Nachhaltigkeits- oder Umweltversprechen, die stärker wirken als die belegbare tatsächliche Verbesserung.",
       "category": "Datenbegriff",
       "synonyms": [
-        "Greenwashing"
+        "Greenwashing",
+        "Grünfärberei",
+        "grüne Irreführung",
+        "Green Claims",
+        "irreführende Nachhaltigkeitswerbung",
+        "ökologische Scheinwirkung"
       ],
       "relatedTerms": [
         "impact-washing",
@@ -8538,12 +9294,34 @@
         "residual-emissions",
         "responsible-marketing",
         "scope-3",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "gregory-bateson": {
@@ -8655,6 +9433,53 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "grunddividende": {
+      "label": "Grunddividende",
+      "slug": "grunddividende",
+      "url": "/begriffe/grunddividende/",
+      "hoverDefinition": "Grunddividende ist der universelle Sockel im Wirkungseinkommen: Sicherheit und Teilhabe ohne Personenbewertung.",
+      "shortDefinition": "Die Grunddividende ist der universelle Sockel des Wirkungseinkommens. Sie steht jedem Menschen als Anteil an gemeinsamer gesellschaftlicher Produktivität zu und schützt Würde, Sicherheit und Zugehörigkeit.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Grunddividende",
+        "Basisdividende",
+        "Wirkungsdividende",
+        "Sockelbetrag",
+        "universeller Sockel",
+        "BGE",
+        "Grundeinkommen",
+        "bedingungsloses Grundeinkommen"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "bedingungsloses-grundeinkommen"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "grundgesetz": {
@@ -11278,6 +12103,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ki-und-arbeit": {
+      "label": "KI und Arbeit",
+      "slug": "ki-und-arbeit",
+      "url": "/begriffe/ki-und-arbeit/",
+      "hoverDefinition": "KI und Arbeit fragt nicht nur nach Jobverlust, sondern nach Entlastung, Qualifizierung, Macht und Rückkopplung von Produktivität.",
+      "shortDefinition": "KI und Arbeit bezeichnet die Veränderung von Tätigkeiten, Qualifikationen, Machtverhältnissen und Einkommenslogiken durch künstliche Intelligenz.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "KI und Arbeit",
+        "AI und Arbeit",
+        "Künstliche Intelligenz und Arbeit",
+        "KI-Arbeit",
+        "KI am Arbeitsplatz"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "plattformarbeit",
+        "transformationsbonus",
+        "wirkungseinkommen",
+        "erwerbsarbeitslogik"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "ki-governance": {
       "label": "KI-Governance",
       "slug": "ki-governance",
@@ -12775,6 +13645,49 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "lebenswirkung": {
+      "label": "Lebenswirkung",
+      "slug": "lebenswirkung",
+      "url": "/begriffe/lebenswirkung/",
+      "hoverDefinition": "Lebenswirkung macht Beiträge über den Lebensverlauf sichtbar, ohne Menschen zu ranken.",
+      "shortDefinition": "Lebenswirkung bezeichnet die über den Lebensverlauf ermöglichte, unterstützte oder stabilisierte positive Zustandsveränderung, ohne daraus eine moralische Bewertung einer Person abzuleiten.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Lebenswirkung",
+        "Lebensleistung im WÖk-Sinn",
+        "Wirkung über den Lebensverlauf",
+        "Lebenswirkleistung"
+      ],
+      "relatedTerms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "wirkungsbonus",
+        "wirkleistung",
+        "erwerbsbiografie"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "lebenszyklusanalyse": {
       "label": "Lebenszyklusanalyse / LCA",
       "slug": "lebenszyklusanalyse",
@@ -13864,6 +14777,107 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "maschinenleistung": {
+      "label": "Maschinenleistung",
+      "slug": "maschinenleistung",
+      "url": "/begriffe/maschinenleistung/",
+      "hoverDefinition": "Maschinenleistung macht sichtbar, wo Produktivität entsteht, ohne dass im gleichen Umfang Löhne und Sozialbeiträge entstehen.",
+      "shortDefinition": "Maschinenleistung bezeichnet produktive Leistung, die durch Maschinen, KI, Robotik oder autonome Systeme erbracht wird und nicht mehr direkt als menschliche Erwerbsarbeit erscheint.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Maschinenleistung",
+        "Maschinenarbeit",
+        "automatisierte Leistung",
+        "Leistung von Maschinen",
+        "KI-Leistung",
+        "Roboterleistung"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkleistung",
+        "sozialabgaben"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "maschinenleistungsrueckkopplung": {
+      "label": "Maschinenleistungsrückkopplung",
+      "slug": "maschinenleistungsrueckkopplung",
+      "url": "/begriffe/maschinenleistungsrueckkopplung/",
+      "hoverDefinition": "Maschinenleistungsrückkopplung ist die WÖk-Alternative zur Robotersteuer: nicht Maschinenstrafe, sondern Rückführung automatisierter Produktivität.",
+      "shortDefinition": "Maschinenleistungsrückkopplung beschreibt das Prinzip, Produktivität aus KI, Robotik, Digitalisierung und autonomen Systemen so in Gesellschaft, Sozialfinanzierung, Wirkungseinkommen, Weiterbildung und Wirkungsfonds zurückzuführen, dass Automatisierung stabilisiert statt spaltet.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Maschinenleistungsrückkopplung",
+        "Maschinenleistung rückkoppeln",
+        "Rückkopplung von Maschinenleistung",
+        "Produktivitätsrückführung",
+        "Maschinenleistungs-Rückkopplung",
+        "Automatisierung",
+        "Maschinenleistung",
+        "Roboterökonomie",
+        "Roboteroekonomie",
+        "KI und Arbeit",
+        "autonome Systeme"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "transformationsbonus",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "maschinenwertschoepfungsbeitrag": {
       "label": "Maschinenwertschöpfungsbeitrag",
       "slug": "maschinenwertschoepfungsbeitrag",
@@ -13872,7 +14886,10 @@
       "shortDefinition": "Der Maschinenwertschöpfungsbeitrag beschreibt eine mögliche Rückkopplung automatisierter Wertschöpfung in soziale Sicherung, Bildung oder Wirkungsfonds.",
       "category": "Arbeit, Kapital und Transformation",
       "synonyms": [
-        "Maschinenwertschöpfungsbeitrag"
+        "Maschinenwertschöpfungsbeitrag",
+        "Kapitalerträge aus Automatisierung",
+        "Automatisierungsrendite",
+        "Produktivitätsgewinne"
       ],
       "relatedTerms": [
         "automatisierung",
@@ -15327,12 +16344,17 @@
       "label": "Netto-Wirkung",
       "slug": "netto-wirkung",
       "url": "/begriffe/netto-wirkung/",
-      "hoverDefinition": "Netto-Wirkung führt positive und negative Wirkungen zusammen, aber nicht als beliebige Addition. Rote Linien bleiben wirksam.",
-      "shortDefinition": "Netto-Wirkung beschreibt die bewertete Gesamtwirkung unter Berücksichtigung positiver, negativer und neutraler Wirkungen.",
-      "category": "Bewertungsbegriff",
+      "hoverDefinition": "Netto-Wirkung führt positive, negative, neutrale und unsichere Wirkungen zusammen, ohne schwere Schäden beliebig zu kompensieren.",
+      "shortDefinition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung positiver und negativer Wirkungen unter Berücksichtigung von Wirkungsgrenzen, Datenqualität und Nichtkompensation.",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "synonyms": [
         "Netto-Wirkung",
-        "Nettowirkung"
+        "Nettowirkung",
+        "Netto-Impact",
+        "Gesamtwirkung unter Abzug negativer Wirkungen",
+        "saldierte Wirkung",
+        "bereinigte Wirkung",
+        "Net Impact"
       ],
       "relatedTerms": [
         "positive-netto-wirkung",
@@ -15345,12 +16367,45 @@
         "negative-wirkung",
         "nwi",
         "rebound-effekt",
-        "t-sroi"
+        "t-sroi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "nwi": {
@@ -15370,13 +16425,15 @@
         "finalscore",
         "t-sroi",
         "reverse-merit-order",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "wirkungscontrolling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
       ],
       "relatedObjections": []
     },
@@ -17607,6 +18664,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "plattformarbeit": {
+      "label": "Plattformarbeit",
+      "slug": "plattformarbeit",
+      "url": "/begriffe/plattformarbeit/",
+      "hoverDefinition": "Plattformarbeit zeigt, wie Arbeit, Daten, Kontrolle, Einkommen und Sozialbeiträge auseinanderfallen können.",
+      "shortDefinition": "Plattformarbeit beschreibt Arbeit, die über digitale Plattformen vermittelt, gesteuert oder bewertet wird und oft neue Abhängigkeits- und Beitragsfragen erzeugt.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Plattformarbeit",
+        "Gig Work",
+        "Gig Economy",
+        "Plattformökonomie Arbeit",
+        "digitale Plattformarbeit"
+      ],
+      "relatedTerms": [
+        "ki-und-arbeit",
+        "erwerbsarbeitslogik",
+        "sozialabgaben",
+        "beitragsbasis",
+        "wirkungseinkommen",
+        "wirkungsbonus"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "plattformkapitalismus": {
       "label": "Plattformkapitalismus",
       "slug": "plattformkapitalismus",
@@ -17981,15 +19083,21 @@
       "label": "positive Netto-Wirkung",
       "slug": "positive-netto-wirkung",
       "url": "/begriffe/positive-netto-wirkung/",
-      "hoverDefinition": "Positive Netto-Wirkung stärkt Mensch, Planet und Demokratie, ohne kritische Schäden durch gute Einzelwerte zu verdecken.",
-      "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie für Mensch, Planet und Demokratie.",
-      "category": "Bewertungsbegriff",
+      "hoverDefinition": "Positive Netto-Wirkung ist das geprüfte positive Gesamtergebnis für Mensch, Planet und Demokratie, nicht bloß ein einzelner positiver Effekt.",
+      "shortDefinition": "Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie: eine nach Bewertung der positiven und negativen Folgen tragfähige Wirkung für Mensch, Planet und Demokratie.",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "synonyms": [
         "positive Netto-Wirkung",
+        "Positive Netto-Wirkung",
         "positive Nettowirkung",
         "positive netto Wirkung",
         "Lebensqualität",
-        "Lebensqualitaet"
+        "Lebensqualitaet",
+        "positive Net Impact",
+        "positive Gesamtwirkung",
+        "systemisch positive Wirkung",
+        "tragfähige Wirkung",
+        "Wirkung mit positivem Gesamtergebnis"
       ],
       "relatedTerms": [
         "wirkung",
@@ -18037,13 +19145,41 @@
         "trickle-down-oekonomie",
         "kreislaufblindheit",
         "kreislaufwirkung",
-        "effizienz"
+        "effizienz",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "sdg-sdgplus-referenzrahmen"
+        "sdg-sdgplus-referenzrahmen",
+        "[object Object]"
       ],
       "relatedObjections": []
     },
@@ -18503,8 +19639,8 @@
       "label": "Produktdaten",
       "slug": "produktdaten",
       "url": "/begriffe/produktdaten/",
-      "hoverDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
-      "shortDefinition": "Produktdaten beschreiben Eigenschaften, Herkunft, Materialien, Herstellung, Nutzung, Reparierbarkeit und Umweltinformationen eines Produkts.",
+      "hoverDefinition": "Produktdaten machen Produkte prüfbar: Herkunft, Materialien, Emissionen, Kreislauffähigkeit, Reparierbarkeit, Lieferkette und Wirkungsindikatoren werden nachvollziehbar dokumentiert.",
+      "shortDefinition": "Produktdaten sind strukturierte Informationen über Herkunft, Materialien, Nutzung, Emissionen, Reparierbarkeit, Risiken und Wirkungen eines Produkts.",
       "category": "Datenbegriff",
       "synonyms": [
         "Produktdaten",
@@ -18521,7 +19657,13 @@
         "Rueckverfolgbarkeit",
         "Chain of Custody",
         "Mass Balance",
-        "Book-and-Claim"
+        "Book-and-Claim",
+        "Produktwirkungsdaten",
+        "Digital Product Passport Daten",
+        "Produktpassdaten",
+        "Materialdaten",
+        "Lieferkettendaten",
+        "Lebenszyklusdaten"
       ],
       "relatedTerms": [
         "digitaler-produktpass",
@@ -18543,12 +19685,248 @@
         "nachhaltigkeitslabel",
         "pcr-product-category-rules",
         "reparierbarkeit-recht-auf-reparatur",
-        "wasserstress"
+        "wasserstress",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
+      "relatedObjections": []
+    },
+    "produktivitaetsgewinne": {
+      "label": "Produktivitätsgewinne",
+      "slug": "produktivitaetsgewinne",
+      "url": "/begriffe/produktivitaetsgewinne/",
+      "hoverDefinition": "Produktivitätsgewinne sind in der WÖk erwünscht, brauchen aber faire und wirkungsorientierte Rückkopplung.",
+      "shortDefinition": "Produktivitätsgewinne sind Mehrerträge oder Effizienzgewinne durch bessere Technik, Organisation, Wissen oder Automatisierung.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Produktivitätsgewinne",
+        "Produktivitätsgewinn",
+        "Produktivitätszuwachs",
+        "Produktivitätssteigerung",
+        "Produktivitätsfortschritt"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "automatisierungsdividende",
+        "maschinenleistungsrueckkopplung",
+        "produktivitaetssteuer",
+        "transformationsbonus"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "produktivitaetssteuer": {
+      "label": "Produktivitätssteuer",
+      "slug": "produktivitaetssteuer",
+      "url": "/begriffe/produktivitaetssteuer/",
+      "hoverDefinition": "Produktivitätssteuer ist ein Suchbegriff; WÖk-präziser ist die wirkungsorientierte Rückkopplung automatisierter Wertschöpfung.",
+      "shortDefinition": "Produktivitätssteuer bezeichnet allgemein die Idee, Produktivitätsgewinne steuerlich abzuschöpfen. In der WÖk ist der Begriff unscharf; präziser sind Automatisierungsdividende, Maschinenwertschöpfungsbeitrag und Maschinenleistungsrückkopplung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Produktivitätssteuer",
+        "Produktivitätsabgabe",
+        "Produktivitätsbeitrag",
+        "Produktivitätsdividende",
+        "Produktivitätsrückführung",
+        "Automatisierungsabgabe"
+      ],
+      "relatedTerms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistungsrueckkopplung",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "produktscorecard": {
+      "label": "Produktscorecard",
+      "slug": "produktscorecard",
+      "url": "/begriffe/produktscorecard/",
+      "hoverDefinition": "Die Produktscorecard übersetzt Produktdaten, WÖk-IDs, Benchmarks und Datenqualität in nachvollziehbare Scores für Produktwirkung.",
+      "shortDefinition": "Die Produktscorecard ist das Bewertungsinstrument der Wirkungsökonomie, das Produktdaten in überprüfbare Wirkungsscores für zentrale Wirkungsfelder übersetzt.",
+      "category": "Messung, Daten & Produktwirkung",
+      "synonyms": [
+        "Produktscorecard",
+        "Produkt-Scorecard",
+        "Wirkungs-Scorecard für Produkte",
+        "Product Scorecard",
+        "Produktwirkungs-Scorecard",
+        "Scorecard für Produktwirkung"
+      ],
+      "relatedTerms": [
+        "produktwirkung",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "finalscore",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
+      "relatedObjections": []
+    },
+    "produktwirkung": {
+      "label": "Produktwirkung",
+      "slug": "produktwirkung",
+      "url": "/begriffe/produktwirkung/",
+      "hoverDefinition": "Produktwirkung beschreibt, welche Zustände ein Produkt entlang seines Lebenszyklus tatsächlich verändert: positiv, negativ, neutral oder ambivalent.",
+      "shortDefinition": "Produktwirkung bezeichnet die tatsächlichen positiven, negativen oder neutralen Zustandsveränderungen, die ein Produkt entlang seines Lebenszyklus auf Mensch, Planet und Demokratie auslöst.",
+      "category": "Produkte, Märkte & Preise",
+      "synonyms": [
+        "Produktwirkung",
+        "Wirkung eines Produkts",
+        "Produkt-Impact",
+        "Produkt als Wirkungsträger",
+        "Lebenszykluswirkung",
+        "Wirkung über den Produktlebenszyklus"
+      ],
+      "relatedTerms": [
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "ehrliche-preise",
+        "kreislaufwirtschaft"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "progressiv": {
@@ -20048,6 +21426,50 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "rentenfinanzierung": {
+      "label": "Rentenfinanzierung",
+      "slug": "rentenfinanzierung",
+      "url": "/begriffe/rentenfinanzierung/",
+      "hoverDefinition": "Rentenfinanzierung wird brüchig, wenn Produktivität wächst, aber Lohnsumme und Beitragsbasis nicht mitwachsen.",
+      "shortDefinition": "Rentenfinanzierung beschreibt, wie Alterssicherung getragen wird. In der WÖk wird geprüft, wie Automatisierung die lohnbezogene Beitragsbasis verändert.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Rentenfinanzierung",
+        "Finanzierung der Rente",
+        "Rentenbeiträge",
+        "Alterssicherungsfinanzierung"
+      ],
+      "relatedTerms": [
+        "wirkungsrente",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "beitragsluecke",
+        "automatisierungsdividende",
+        "lebenswirkung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "reparatur": {
       "label": "Reparatur",
       "slug": "reparatur",
@@ -20552,24 +21974,51 @@
       "label": "Responsible Marketing",
       "slug": "responsible-marketing",
       "url": "/begriffe/responsible-marketing/",
-      "hoverDefinition": "Responsible Marketing verbindet belegbare Claims, Transparenz und Verantwortung für Kommunikationswirkung.",
-      "shortDefinition": "Responsible Marketing richtet Kommunikation, Claims und Absatzlogik an belegbarer Wirkung, Transparenz und Schutz vor Irreführung aus.",
+      "hoverDefinition": "Responsible Marketing bedeutet, Produkte und Angebote so zu kommunizieren, dass Claims belegbar, Zielgruppen nicht manipulativ ausgenutzt und Wirkungen transparent gemacht werden.",
+      "shortDefinition": "Responsible Marketing ist Marketing, das Reichweite, Claims, Zielgruppen, Daten und Produktversprechen an überprüfbare Wirkung und faire Information bindet.",
       "category": "Datenbegriff",
       "synonyms": [
         "Responsible Marketing",
         "verantwortliches Marketing",
-        "wirkungsorientiertes Marketing"
+        "wirkungsorientiertes Marketing",
+        "responsible advertising",
+        "verantwortliche Produktkommunikation",
+        "Marketingverantwortung"
       ],
       "relatedTerms": [
         "greenwashing",
         "impact-washing",
         "green-claims-directive",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "nachhaltigkeit",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "empowering-consumers-green-transition"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "responsivitaet": {
@@ -20668,14 +22117,17 @@
       "label": "Reverse Merit Order",
       "slug": "reverse-merit-order",
       "url": "/begriffe/reverse-merit-order/",
-      "hoverDefinition": "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
-      "shortDefinition": "Reverse Merit Order stellt sicher, dass das schwächste kritische Wirkungsfeld die Bewertung begrenzt.",
-      "category": "Bewertungsbegriff",
+      "hoverDefinition": "Reverse Merit Order bedeutet: Das kritischste relevante Wirkungsfeld begrenzt die Gesamtbewertung; schwere Schäden dürfen nicht schöngerechnet werden.",
+      "shortDefinition": "Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen.",
+      "category": "Messung, Bewertung & Steuerung",
       "synonyms": [
         "Reverse Merit Order",
         "Nichtkompensationsprinzip",
         "Minimum-Operator",
-        "Engpasslogik"
+        "Engpasslogik",
+        "Schwächstes-Feld-Prinzip",
+        "Keine Aufrechnung",
+        "Rote-Linien-Logik"
       ],
       "relatedTerms": [
         "nichtkompensationsprinzip",
@@ -20700,14 +22152,49 @@
         "schwellenwert",
         "scope-3",
         "kreislaufwirtschaft",
-        "materialgesundheit"
+        "materialgesundheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "wirkungsrat"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "relatedDemos": [],
       "relatedDocuments": [
         "technische-leitlinien-wustg",
-        "beispiel-apfel-wirkungssteuer"
+        "beispiel-apfel-wirkungssteuer",
+        "[object Object]"
       ],
       "relatedObjections": []
     },
@@ -20800,6 +22287,101 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "roboteroekonomie": {
+      "label": "Roboterökonomie",
+      "slug": "roboteroekonomie",
+      "url": "/begriffe/roboteroekonomie/",
+      "hoverDefinition": "Roboterökonomie führt in der WÖk zum präziseren Cluster Maschinenleistung, Automatisierungsdividende und Wirkungseinkommen.",
+      "shortDefinition": "Roboterökonomie ist ein Such- und Kontextbegriff für Wirtschaftsfragen rund um Robotik, Automatisierung und Maschinenleistung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Roboterökonomie",
+        "Roboteroekonomie",
+        "Roboter-Ökonomie",
+        "Roboterökonomik",
+        "Robot Economy"
+      ],
+      "relatedTerms": [
+        "robotik",
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "robotersteuer": {
+      "label": "Robotersteuer",
+      "slug": "robotersteuer",
+      "url": "/begriffe/robotersteuer/",
+      "hoverDefinition": "Robotersteuer ist in der WÖk ein Kritikbegriff: präziser ist Maschinenleistungsrückkopplung statt Maschinenstrafe.",
+      "shortDefinition": "Robotersteuer bezeichnet die Idee, Maschinen oder Roboter steuerlich zu belasten, wenn sie menschliche Arbeit ersetzen. In der WÖk ist sie ein Abgrenzungsbegriff, weil sie Automatisierung zu schnell als Maschinenstrafe rahmt.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Robotersteuer",
+        "Robotertax",
+        "Maschinensteuer",
+        "KI-Steuer",
+        "Steuer auf Roboter",
+        "Steuer auf Automatisierung",
+        "Automation Tax"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "sozialabgaben",
+        "bedingungsloses-grundeinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "robotik": {
       "label": "Robotik",
       "slug": "robotik",
@@ -20808,13 +22390,21 @@
       "shortDefinition": "Robotik verbindet mechanische Systeme, Sensorik, Steuerung und Automatisierung zu physisch wirksamen technischen Systemen.",
       "category": "Daten, Digitalisierung und KI",
       "synonyms": [
-        "Robotik"
+        "Robotik",
+        "Robotics",
+        "Robotertechnik",
+        "Industrierobotik",
+        "Servicerobotik"
       ],
       "relatedTerms": [
         "automatisierung",
         "kuenstliche-intelligenz",
         "automatisierungsdividende",
-        "wirkungseinkommen"
+        "wirkungseinkommen",
+        "maschinenleistung",
+        "autonome-systeme",
+        "robotersteuer",
+        "maschinenleistungsrueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [
@@ -21556,6 +23146,7 @@
         "woek-id",
         "benchmark",
         "finalscore",
+        "wirkungscontrolling",
         "wirkungsindikator",
         "reverse-merit-order",
         "archetyp",
@@ -21593,7 +23184,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "relatedObjections": []
     },
     "sdg-plus": {
@@ -22346,6 +23939,52 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "sozialabgaben": {
+      "label": "Sozialabgaben",
+      "slug": "sozialabgaben",
+      "url": "/begriffe/sozialabgaben/",
+      "hoverDefinition": "Sozialabgaben hängen stark an Erwerbsarbeit; Automatisierung kann diese Beitragsbasis schwächen.",
+      "shortDefinition": "Sozialabgaben sind Beiträge aus Erwerbsarbeit zur Finanzierung von Rente, Gesundheit, Pflege und Arbeitslosenversicherung. In der WÖk werden sie wichtig, weil Automatisierung diese arbeitsbezogene Finanzierungsbasis schwächen kann.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Sozialabgaben",
+        "Sozialbeiträge",
+        "Rentenbeiträge",
+        "Beiträge zur Sozialversicherung",
+        "Sozialversicherungsbeiträge"
+      ],
+      "relatedTerms": [
+        "beitragsluecke",
+        "beitragsbasis",
+        "sozialfinanzierung",
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "soziale-bewaehrtheit": {
       "label": "Soziale Bewährtheit / Social Proof",
       "slug": "soziale-bewaehrtheit",
@@ -22492,6 +24131,55 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "sozialfinanzierung": {
+      "label": "Sozialfinanzierung",
+      "slug": "sozialfinanzierung",
+      "url": "/begriffe/sozialfinanzierung/",
+      "hoverDefinition": "Sozialfinanzierung wird in der WÖk breiter gedacht: nicht nur Lohnbeiträge, sondern Rückkopplung von Wertschöpfung und Wirkung.",
+      "shortDefinition": "Sozialfinanzierung beschreibt, wie Rente, Gesundheit, Pflege, Arbeitslosenversicherung, Weiterbildung und Übergangsschutz finanziert werden. Die WÖk erweitert die Perspektive von Lohnbeiträgen auf Wertschöpfung und Wirkung.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Sozialfinanzierung",
+        "Finanzierung der sozialen Sicherung",
+        "Finanzierung von Rente und Pflege",
+        "Sozialsystem-Finanzierung",
+        "Rentenfinanzierung",
+        "Rentenbeiträge",
+        "Sozialbeiträge"
+      ],
+      "relatedTerms": [
+        "sozialabgaben",
+        "beitragsluecke",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "sozialisation": {
@@ -24017,13 +25705,15 @@
         "impact-value",
         "systemgrenze",
         "sechster-kondratieff",
-        "wirkungswert"
+        "wirkungswert",
+        "wirkungscontrolling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "whitepaper-t-sroi"
+        "whitepaper-t-sroi",
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
       ],
       "relatedObjections": []
     },
@@ -24643,6 +26333,52 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "transformationsbonus": {
+      "label": "Transformationsbonus",
+      "slug": "transformationsbonus",
+      "url": "/begriffe/transformationsbonus/",
+      "hoverDefinition": "Transformationsbonus macht Übergänge möglich: Qualifizierung, Schutz und neue Wirkleistung statt Absturz durch Strukturwandel.",
+      "shortDefinition": "Der Transformationsbonus beschreibt eine Entlastung oder Unterstützung für Menschen, Unternehmen oder Regionen, die durch Automatisierung, Dekarbonisierung oder Strukturwandel in Richtung positiver Wirkung wechseln.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Transformationsbonus",
+        "Übergangsbonus",
+        "Transformationsschutz",
+        "Übergangsschutz",
+        "Weiterbildungsbonus"
+      ],
+      "relatedTerms": [
+        "uebergangsschutz",
+        "weiterbildung",
+        "automatisierung",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "transformationsrente",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "transformationswelle": {
       "label": "Transformationswelle",
       "slug": "transformationswelle",
@@ -24673,11 +26409,17 @@
       "label": "Transformationswirkung",
       "slug": "transformationswirkung",
       "url": "/begriffe/transformationswirkung/",
-      "hoverDefinition": "Transformationswirkung verändert nicht nur Zustände, sondern die Bedingungen künftiger Entscheidungen.",
-      "shortDefinition": "Transformationswirkung verändert Systemlogiken, Standards, Anreize oder Handlungspfade.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Transformationswirkung verändert nicht nur einzelne Zustände, sondern die Bedingungen künftiger Entscheidungen: Regeln, Standards, Anreize, Märkte oder Pfade.",
+      "shortDefinition": "Transformationswirkung liegt vor, wenn Wirkung nicht nur einzelne Zustände verbessert, sondern Systemlogiken, Standards, Anreize, Märkte, Institutionen oder Handlungspfade dauerhaft verändert.",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "synonyms": [
-        "Transformationswirkung"
+        "Transformationswirkung",
+        "transformative Wirkung",
+        "Systemwirkung",
+        "Transformational Impact",
+        "systemische Veränderungswirkung",
+        "Strukturwirkung",
+        "Pfadveränderung"
       ],
       "relatedTerms": [
         "wirkungsinnovation",
@@ -24687,12 +26429,49 @@
         "hebelpunkt",
         "pfadabhaengigkeit",
         "t-sroi",
-        "verlustaversion"
+        "verlustaversion",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "transformator": {
@@ -27107,13 +28886,17 @@
       "label": "Wirkung",
       "slug": "wirkung",
       "url": "/begriffe/wirkung/",
-      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
-      "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv.",
+      "shortDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer einen Bezugspunkt.",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "synonyms": [
         "Wirkung",
         "Impact",
-        "Zustandsveränderung"
+        "Zustandsveränderung",
+        "tatsächliche Zustandsveränderung",
+        "Wirkungsbegriff",
+        "reale Folge",
+        "Systemfolge"
       ],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -27137,29 +28920,192 @@
         "wirksamkeit",
         "wirkungsbewertung",
         "wirkungsdaten",
-        "wirkungsempfaenger"
+        "wirkungsempfaenger",
+        "wirkmechanismus",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
+      "relatedObjections": []
+    },
+    "wirkung-im-preisschild": {
+      "label": "Wirkung im Preisschild",
+      "slug": "wirkung-im-preisschild",
+      "url": "/begriffe/wirkung-im-preisschild/",
+      "hoverDefinition": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden.",
+      "shortDefinition": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden.",
+      "category": "Verbraucherinformation, Preise & Produktwirkung",
+      "synonyms": [
+        "Wirkung im Preisschild",
+        "Wirkungskennzeichnung am Preisschild",
+        "Wirkungsetikett",
+        "Wirkungslabel",
+        "Wirkung am Regal",
+        "Wirkungspreisschild",
+        "Impact Price Label",
+        "Preisschild mit Wirkung",
+        "Wirkungsinformation für Verbraucher:innen"
+      ],
+      "relatedTerms": [
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "wirkungsgutschrift",
+        "produktwirkung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "finalscore",
+        "datenqualitaet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "konsumwirkung",
+        "wirkungsrueckkopplung",
+        "fuenftes-p-planet",
+        "markttransformation",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
       "relatedObjections": []
     },
     "wirkungsarchitektur": {
       "label": "Wirkungsarchitektur",
       "slug": "wirkungsarchitektur",
       "url": "/begriffe/wirkungsarchitektur/",
-      "hoverDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Kontrolle und lernender Rückkopplung.",
-      "shortDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen.",
-      "category": "Architekturbegriff",
+      "hoverDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.",
+      "shortDefinition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.",
+      "category": "Systemmodell & Steuerungsarchitektur",
       "synonyms": [
-        "Wirkungsarchitektur"
+        "Wirkungsarchitektur",
+        "Architektur der Wirkung",
+        "Wirkungssystem",
+        "Wirkungsordnung",
+        "Rückkopplungsarchitektur",
+        "Steuerungsarchitektur der Wirkungsökonomie",
+        "Impact Architecture",
+        "lernende Wirkungsarchitektur"
       ],
       "relatedTerms": [
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "datenqualitaet",
+        "greenwashing",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "reverse-merit-order",
+        "impact-washing",
+        "sdg-washing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "rueckkopplung",
         "kybernetik",
         "viable-system-model",
-        "wirkungsrat",
         "scorecard",
         "sechster-kondratieff",
         "donella-meadows",
@@ -27177,33 +29123,236 @@
         "verfassungsmaessige-wirkungsarchitektur",
         "verwaltung",
         "wirkungskompetenz",
-        "wirkungslenkung",
-        "wirkungsnetz",
         "wirkungsraum",
         "wirkungsresilienz",
-        "wirkungsrueckkopplung",
         "demokratische-wirkungsarchitektur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsassurance": {
+      "label": "Wirkungsassurance",
+      "slug": "wirkungsassurance",
+      "url": "/begriffe/wirkungsassurance/",
+      "hoverDefinition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
+      "shortDefinition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
+      "category": "Prüfung, Assurance & Vertrauen",
+      "synonyms": [
+        "Wirkungsassurance",
+        "Assurance von Wirkung",
+        "unabhängige Wirkungsprüfung",
+        "Wirkungsbestätigung",
+        "Impact Assurance",
+        "Sustainability Assurance in der WÖk",
+        "Absicherung von Wirkungsdaten",
+        "Prüfungsurteil zur Wirkung"
+      ],
+      "relatedTerms": [
+        "wirkungsaudit",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "assurance",
+        "csrd",
+        "esrs",
+        "gri",
+        "rechtsschutz",
+        "versionierung",
+        "responsible-marketing",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "fuenftes-p-planet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsaudit": {
+      "label": "Wirkungsaudit",
+      "slug": "wirkungsaudit",
+      "url": "/begriffe/wirkungsaudit/",
+      "hoverDefinition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
+      "shortDefinition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
+      "category": "Prüfung, Audit & Qualitätssicherung",
+      "synonyms": [
+        "Wirkungsaudit",
+        "Audit der Wirkung",
+        "Wirkungsprüfung",
+        "Impact Audit",
+        "Prüfung von Wirkungsdaten",
+        "Scorecard-Audit",
+        "WÖk-Audit",
+        "Audit der Wirkungsbewertung"
+      ],
+      "relatedTerms": [
+        "wirkungsassurance",
+        "wirkungsregister",
+        "wirkungsrat",
+        "wirkungsgrenze",
+        "datenqualitaet",
+        "greenwashing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "digitaler-produktpass",
+        "produktdaten",
+        "rechtsschutz",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
       "relatedObjections": []
     },
     "wirkungsbewertung": {
       "label": "Wirkungsbewertung",
       "slug": "wirkungsbewertung",
       "url": "/begriffe/wirkungsbewertung/",
-      "hoverDefinition": "Wirkungsbewertung ordnet Wirkung am Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
-      "shortDefinition": "Wirkungsbewertung ordnet tatsächliche Zustandsveränderungen im Referenzrahmen von SDGs, Agenda 2030 und SDG+ ein.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
+      "shortDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
+      "category": "Bewertungs- und Steuerungslogik",
       "synonyms": [
         "Wirkungsbewertung",
-        "Impact Assessment"
+        "Impact Assessment",
+        "Impact-Bewertung",
+        "Wirkungsprüfung",
+        "Wirkungsanalyse",
+        "Bewertung von Wirkung",
+        "Wirkungs-Scoring"
       ],
       "relatedTerms": [
         "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
         "positive-netto-wirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "reverse-merit-order",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "datenqualitaet",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "scorecard",
         "doppelte-wesentlichkeit",
         "handlung",
@@ -27211,9 +29360,7 @@
         "health-impact-assessment",
         "hotspot-analyse",
         "human-rights-impact-assessment",
-        "mensch-planet-demokratie",
         "qualitaetssicherung",
-        "sdg-plus",
         "wirkungskompetenz",
         "wirkungsradar",
         "zielkonflikt",
@@ -27224,34 +29371,133 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsbiografie": {
+      "label": "Wirkungsbiografie",
+      "slug": "wirkungsbiografie",
+      "url": "/begriffe/wirkungsbiografie/",
+      "hoverDefinition": "Wirkungsbiografie erweitert Erwerbsbiografie um Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "shortDefinition": "Die Wirkungsbiografie beschreibt den Lebensverlauf nicht nur als Erwerbsbiografie, sondern als Summe gesellschaftlicher Wirkleistungen: Arbeit, Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Wirkungsbiografie",
+        "Wirkungsbiographie",
+        "Lebenswirkung",
+        "Wirkungslebenslauf",
+        "Lebensleistungsbiografie"
+      ],
+      "relatedTerms": [
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsbonus",
+        "wirkleistung",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "wirkungsblindheit": {
       "label": "Wirkungsblindheit",
       "slug": "wirkungsblindheit",
       "url": "/begriffe/wirkungsblindheit/",
-      "hoverDefinition": "Wirkungsblindheit heißt: Folgen werden erzeugt, aber nicht gesehen, bewertet oder zurückgekoppelt.",
-      "shortDefinition": "Wirkungsblindheit entsteht, wenn Entscheidungen ihre tatsächlichen Folgen nicht sehen oder nicht berücksichtigen.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
+      "shortDefinition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
+      "category": "Wirkungssprache & Systemkritik",
       "synonyms": [
         "Wirkungsblindheit",
-        "wirkungsblind"
+        "wirkungsblind",
+        "Blindheit für Wirkung",
+        "wirkungsblinde Steuerung",
+        "Maßstabsblindheit",
+        "Steuerungsblindheit",
+        "Impact Blindness",
+        "falscher Kompass",
+        "Aktivitätsblindheit"
       ],
       "relatedTerms": [
         "wirkungswahrheit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "externalitaeten",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "greenwashing",
+        "impact-washing",
+        "wirkungssimulation",
+        "buerokratie-als-reparaturmaschine",
+        "kapital-als-falscher-kompass",
+        "reichweite",
+        "output",
+        "bip",
+        "scheinleistung",
+        "blindleistung",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "sdg-washing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "wirkungsdatenraum",
         "wirklichkeitskonstruktion",
         "salienz",
         "bestaetigungsfehler",
-        "wirkungsdaten",
         "rueckkopplung",
         "faktenargumentation",
-        "wirkungsrisiko",
         "folgewirkung",
         "resonanzraum",
         "gewinn-als-test",
-        "scheinleistung",
         "scope-3",
         "scope-3-datenqualitaet",
         "externalisierung",
@@ -27263,7 +29509,58 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsbonus": {
+      "label": "Wirkungsbonus",
+      "slug": "wirkungsbonus",
+      "url": "/begriffe/wirkungsbonus/",
+      "hoverDefinition": "Wirkungsbonus erkennt gesellschaftliche Wirkleistung an, ohne den Wert einer Person zu bewerten.",
+      "shortDefinition": "Der Wirkungsbonus ist der variable Teil des Wirkungseinkommens, der reale gesellschaftliche Wirkleistung sichtbar und materiell anerkennbar macht.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Wirkungsbonus",
+        "Wirkbonus",
+        "Bonus für Wirkleistung",
+        "Wirkleistungsbonus"
+      ],
+      "relatedTerms": [
+        "wirkleistung",
+        "wirkungsbiografie",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsrente",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "wirkungsdaten": {
@@ -27394,7 +29691,10 @@
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungseinkommen",
-        "Wirkungsdividende"
+        "Wirkungsdividende",
+        "Erwerbsarbeitslogik",
+        "Wirkungseinkommensteuer",
+        "WEstG"
       ],
       "relatedTerms": [
         "positive-netto-wirkung",
@@ -27413,6 +29713,51 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "wp-einkommen"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungseinkommensteuer": {
+      "label": "Wirkungseinkommensteuer",
+      "slug": "wirkungseinkommensteuer",
+      "url": "/begriffe/wirkungseinkommensteuer/",
+      "hoverDefinition": "Wirkungseinkommensteuer ist ein Modellbegriff: Einkommen einordnen, nicht Menschen bewerten.",
+      "shortDefinition": "Die Wirkungseinkommensteuer ist ein modellhafter Steuerbaustein, der Einkommen nach Höhe, Entstehungskontext und Wirkung einordnet, ohne Personen zu bewerten.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Wirkungseinkommensteuer",
+        "WEstG",
+        "Wirkungseinkommensteuergesetz",
+        "Wirkungseinkommenssteuer",
+        "Wirkungs-Einkommensteuer"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungssteuer",
+        "wstg"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
       ],
       "relatedObjections": []
     },
@@ -27479,7 +29824,9 @@
       "synonyms": [
         "Wirkungsfonds",
         "Transformationsfonds",
-        "Rückkopplungsfonds"
+        "Rückkopplungsfonds",
+        "Bürger:innenfonds",
+        "Buergerinnenfonds"
       ],
       "relatedTerms": [
         "wirkungsrueckkopplung",
@@ -27543,13 +29890,19 @@
       "label": "Wirkungsgrenze",
       "slug": "wirkungsgrenze",
       "url": "/begriffe/wirkungsgrenze/",
-      "hoverDefinition": "Eine Wirkungsgrenze ist eine rote Linie, etwa Menschenwürde, Kinderrechte, Biodiversität, Rechtsstaatlichkeit oder demokratische Stabilität.",
-      "shortDefinition": "Eine Wirkungsgrenze markiert Schäden, die nicht beliebig kompensiert oder schöngerechnet werden dürfen.",
-      "category": "Bewertungsbegriff",
+      "hoverDefinition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
+      "shortDefinition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
+      "category": "Bewertung, Grenzen & Missbrauchsschutz",
       "synonyms": [
         "Wirkungsgrenze",
         "rote Linie",
-        "Red Line"
+        "Red Line",
+        "rote Linie der Wirkung",
+        "nicht kompensierbare Grenze",
+        "Wirkungsrote Linie",
+        "Grenze der Kompensation",
+        "Schutzgrenze der Wirkung",
+        "Non-Compensable Boundary"
       ],
       "relatedTerms": [
         "nichtkompensationsprinzip",
@@ -27565,12 +29918,157 @@
         "immanuel-kant",
         "wertekonflikt",
         "wirkungsethik",
-        "materialgesundheit"
+        "materialgesundheit",
+        "wirkungsbewertung",
+        "positive-netto-wirkung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "produktscorecard",
+        "woek-id",
+        "datenqualitaet",
+        "menschenwuerde",
+        "biodiversitaetsrisiko",
+        "mensch-planet-demokratie",
+        "sdg-plus",
+        "wirkungsgrenze",
+        "wirkungsarchitektur",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "rechtsschutz",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsgutschrift": {
+      "label": "Wirkungsgutschrift",
+      "slug": "wirkungsgutschrift",
+      "url": "/begriffe/wirkungsgutschrift/",
+      "hoverDefinition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
+      "shortDefinition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
+      "category": "Bonuslogik, Steuern & Verbraucher:innenwirkung",
+      "synonyms": [
+        "Wirkungsgutschrift",
+        "Wirkungsbonus",
+        "Wirkungspunkte",
+        "Wirkungscredit",
+        "Wirkungsvergütung",
+        "Bonus nach Wirkung",
+        "Impact Credit",
+        "Wirkungsguthaben",
+        "positive Wirkungsgutschrift"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "oeffentliche-beschaffung",
+        "wirkungshaushalt",
+        "datenqualitaet",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktdaten",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "fuenftes-p-planet",
+        "rechtsschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
       "relatedObjections": []
     },
     "wirkungshaushalt": {
@@ -27626,22 +30124,88 @@
       "label": "Wirkungsindikator",
       "slug": "wirkungsindikator",
       "url": "/begriffe/wirkungsindikator/",
-      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
-      "shortDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
+      "shortDefinition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
+      "category": "Daten, Messung & Indikatoren",
       "synonyms": [
-        "Wirkungsindikator"
+        "Wirkungsindikator",
+        "Impact Indicator",
+        "Wirkungskennzahl",
+        "Indikator der Wirkung",
+        "WÖk-Indikator",
+        "Wirkungsdatenpunkt",
+        "Wirkungs-Messgröße",
+        "Indikatorfamilie"
       ],
       "relatedTerms": [
         "wirkungsdaten",
         "wirkungspfad",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungscontrolling",
+        "woek-id",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "messwert",
+        "systemgrenze",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "wirkungsdatenraum",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungsrat"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
       "relatedObjections": []
     },
     "wirkungsinnovation": {
@@ -27791,27 +30355,68 @@
       "label": "Wirkungslenkung",
       "slug": "wirkungslenkung",
       "url": "/begriffe/wirkungslenkung/",
-      "hoverDefinition": "Wirkungslenkung führt Wirkungsbewertungen in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
-      "shortDefinition": "Wirkungslenkung ist die bewusste Ausrichtung von Anreizen, Regeln und Entscheidungen auf positive Netto-Wirkung.",
+      "hoverDefinition": "Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.",
+      "shortDefinition": "Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.",
       "category": "Steuerungsbegriff",
       "synonyms": [
-        "Wirkungslenkung"
+        "Wirkungslenkung",
+        "Lenkung durch Wirkung",
+        "wirkungsorientierte Steuerung",
+        "Wirkungssteuerung",
+        "Impact Steering",
+        "Rückkopplung von Wirkung",
+        "Steuerung nach Wirkung"
       ],
       "relatedTerms": [
-        "hebelpunkt",
-        "rueckkopplung",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
         "wirkungsarchitektur",
         "positive-netto-wirkung",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "reverse-merit-order",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "datenqualitaet",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "hebelpunkt",
+        "rueckkopplung",
         "donella-meadows",
         "pfadabhaengigkeit",
-        "wirkungseinkommen",
-        "wirkungshaushalt",
-        "wirkungsrueckkopplung"
+        "wirkungseinkommen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
       "relatedObjections": []
     },
     "wirkungsnetz": {
@@ -27969,12 +30574,18 @@
       "label": "Wirkungspotenzial",
       "slug": "wirkungspotenzial",
       "url": "/begriffe/wirkungspotenzial/",
-      "hoverDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.",
-      "shortDefinition": "Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Wirkungspotenzial beschreibt mögliche künftige Zustandsveränderung. Es ist noch keine eingetretene Wirkung und muss mit Unsicherheit, Kontext und Wirkmechanismus beschrieben werden.",
+      "shortDefinition": "Wirkungspotenzial bezeichnet die Möglichkeit, dass eine Handlung, ein Produkt, ein Narrativ, eine Technologie oder ein Kapitalfluss künftig Wirkung erzeugt. Es ist noch keine eingetretene Wirkung.",
+      "category": "Grundbegriffe der Wirkungsökonomie",
       "synonyms": [
         "Wirkungspotenzial",
-        "Wirkpotenzial"
+        "Wirkpotenzial",
+        "Potenzial zur Wirkung",
+        "Wirkchance",
+        "mögliche Wirkung",
+        "Impact Potential",
+        "Wirkungswahrscheinlichkeit",
+        "Wirkungsanlage"
       ],
       "relatedTerms": [
         "wirkung",
@@ -28000,12 +30611,46 @@
         "wirkungsdaten",
         "wirkungspaedagogik",
         "wirkungspfad",
-        "wirkungstraeger"
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsgrenze",
+        "wirkungsoekonomie",
+        "wirkung-statt-kapital",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "t-sroi",
+        "nwi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "wirkungsrat",
+        "produktwirkung",
+        "digitaler-produktpass",
+        "produktdaten",
+        "responsible-marketing",
+        "greenwashing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "wirkungspunkte": {
@@ -28057,9 +30702,9 @@
       "label": "Wirkungsrat",
       "slug": "wirkungsrat",
       "url": "/begriffe/wirkungsrat/",
-      "hoverDefinition": "Der Wirkungsrat ist das unabhängige Gremium für WÖk-IDs, Benchmarks, Evaluation, Transparenz und Missbrauchsschutz.",
-      "shortDefinition": "Der Wirkungsrat ist eine Governance-Idee zur Prüfung, Weiterentwicklung und demokratischen Kontrolle von Wirkungsmaßstäben.",
-      "category": "Schutzbegriff",
+      "hoverDefinition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
+      "shortDefinition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
+      "category": "Institutionen, Governance & Wirkungsarchitektur",
       "synonyms": [
         "Wirkungsrat",
         "Rechtsschutz",
@@ -28070,7 +30715,14 @@
         "Buergerrat",
         "Co-Governance",
         "Rechenschaftspflicht",
-        "Accountability"
+        "Accountability",
+        "Rat der Wirkungsökonomie",
+        "Wächter der Wirkung",
+        "unabhängige Wirkungsinstitution",
+        "Wirkungsgremium",
+        "institutionelle Sicherung der Wirkungslogik",
+        "Impact Council",
+        "WÖk-Rat"
       ],
       "relatedTerms": [
         "wirkungsarchitektur",
@@ -28092,13 +30744,63 @@
         "epistemische-gemeinschaft",
         "demokratieprinzip",
         "urteilskraft",
-        "demokratische-wirkungsarchitektur"
+        "demokratische-wirkungsarchitektur",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungssimulation",
+        "woek-id",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "rechtsschutz",
+        "transparenz",
+        "wirkungsrat",
+        "wirkungsrueckkopplung",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "nichtkompensationsprinzip",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "versionierung",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "produktdaten",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "wirkungsrat-konzept"
+        "wirkungsrat-konzept",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
       ],
       "relatedObjections": []
     },
@@ -28137,22 +30839,82 @@
       "label": "Wirkungsregister",
       "slug": "wirkungsregister",
       "url": "/begriffe/wirkungsregister/",
-      "hoverDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
-      "shortDefinition": "Ein Wirkungsregister wäre ein geordnetes Verzeichnis von Wirkungsdaten, Annahmen, Bewertungen, Versionen und Quellen.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
+      "shortDefinition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
+      "category": "Daten, Register & Wirkungsarchitektur",
       "synonyms": [
-        "Wirkungsregister"
+        "Wirkungsregister",
+        "Register der Wirkung",
+        "WÖk-Register",
+        "Wirkungsdatenregister",
+        "Wirkungsindikatorenregister",
+        "Wirkungsdatenbank",
+        "Impact Registry",
+        "Register der WÖk-IDs",
+        "Wirkungsdaten-Infrastruktur"
       ],
       "relatedTerms": [
         "wirkungsdatenraum",
         "woek-id",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "produktdaten",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "rechtsschutz",
+        "greenwashing",
+        "wirkungssimulation",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsindikator",
+        "transparenz",
+        "versionierung",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "t-sroi",
+        "nwi",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung",
+        "Technische Leitlinien WUStG",
+        "Working-Paper Wirkungssteuergesetz",
+        "Systemmodell der Wirkungsökonomie",
+        "WÖk-Master-Items"
+      ],
       "relatedObjections": []
     },
     "wirkungsrente": {
@@ -28164,7 +30926,9 @@
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungsrente",
-        "wirkungsbasierte Rente"
+        "wirkungsbasierte Rente",
+        "Rentenfinanzierung",
+        "Transformationsrente"
       ],
       "relatedTerms": [
         "wirkungseinkommen",
@@ -28297,12 +31061,17 @@
       "label": "Wirkungsrückkopplung",
       "slug": "wirkungsrueckkopplung",
       "url": "/begriffe/wirkungsrueckkopplung/",
-      "hoverDefinition": "Wirkungsrückkopplung sorgt dafür, dass bewertete Wirkung Entscheidungen tatsächlich verändert.",
-      "shortDefinition": "Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapital, Förderung, Beschaffung oder Entscheidungen zurück.",
+      "hoverDefinition": "Wirkungsrückkopplung bedeutet: erkannte Wirkung bleibt nicht Bericht, sondern verändert Steuerung - etwa Preise, Fonds, Regeln, Investitionen, Sortimente oder Einkommenslogiken.",
+      "shortDefinition": "Wirkungsrückkopplung führt gemessene oder geprüfte Wirkung in Preise, Budgets, Regeln, Kapital, Produktgestaltung oder Einkommen zurück.",
       "category": "Grundbegriff",
       "synonyms": [
         "Wirkungsrückkopplung",
-        "Rückkopplung"
+        "Rückkopplung",
+        "Wirkungsrueckkopplung",
+        "Rueckkopplung",
+        "Impact Feedback",
+        "Feedback in Wirkung",
+        "wirkungsbezogene Rückführung"
       ],
       "relatedTerms": [
         "rueckkopplung",
@@ -28322,12 +31091,36 @@
         "wirkungsfonds",
         "wirkungshaushalt",
         "wirkungssteuer",
-        "zentralverwaltungswirtschaft"
+        "zentralverwaltungswirtschaft",
+        "responsible-marketing",
+        "greenwashing",
+        "produktdaten",
+        "wirkungswahrheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "kreislaufwirtschaft",
+        "sdg-12",
+        "sdg-13",
+        "sdg-14",
+        "sdg-15",
+        "mensch-planet-demokratie",
+        "wirkungseinkommen"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "[object Object]"
+      ],
       "relatedObjections": []
     },
     "wirkungsschule": {
@@ -28360,9 +31153,9 @@
       "label": "Wirkungssteuer",
       "slug": "wirkungssteuer",
       "url": "/begriffe/wirkungssteuer/",
-      "hoverDefinition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
-      "shortDefinition": "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück.",
-      "category": "Messbegriff",
+      "hoverDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
+      "shortDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
+      "category": "Steuern, Preise & Rückkopplung",
       "synonyms": [
         "Wirkungssteuer",
         "Steuer nach Wirkung",
@@ -28372,7 +31165,14 @@
         "schädliche Subventionen",
         "Kaufkraftschutz",
         "Risikointernalisierung",
-        "Folgekostenrisiko"
+        "Folgekostenrisiko",
+        "wirkungsbasierte Steuer",
+        "Wirkungsabgabe",
+        "Produktwirkungssteuer",
+        "Wirkungsumsatzsteuer",
+        "Impact Tax",
+        "Steuerung nach Wirkung",
+        "Bonus-Malus-Steuerlogik"
       ],
       "relatedTerms": [
         "wstg",
@@ -28397,14 +31197,73 @@
         "externalitaet",
         "pigou-steuer",
         "regulierungsversagen",
-        "verhaeltnismaessigkeit"
+        "verhaeltnismaessigkeit",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "wirkungslenkung",
+        "finalscore",
+        "reverse-merit-order",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "woek-id",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungssteuer",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
         "wstg-oktober-2025",
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
       ],
       "relatedObjections": []
     },
@@ -28412,24 +31271,93 @@
       "label": "Wirkungssteuergesetz",
       "slug": "wirkungssteuergesetz",
       "url": "/begriffe/wirkungssteuergesetz/",
-      "hoverDefinition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
-      "shortDefinition": "Das Wirkungssteuergesetz ist ein Rahmengesetz-Konzept für steuerliche Wirkungsrückkopplung.",
-      "category": "Messbegriff",
+      "hoverDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
+      "shortDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
+      "category": "Recht, Steuern & Wirkungsarchitektur",
       "synonyms": [
         "Wirkungssteuergesetz",
         "WStG",
-        "Wirkungssteuer-Rahmengesetz"
+        "Wirkungssteuer-Rahmengesetz",
+        "Wirkungssteuer-Gesetz",
+        "Rahmengesetz der Wirkungssteuer",
+        "Steuerrahmen nach Wirkung",
+        "Gesetz zur Steuerung nach Wirkung",
+        "Impact Tax Act",
+        "Wirkungssteuerrahmen"
       ],
       "relatedTerms": [
         "wirkungssteuer",
         "wstg",
-        "wustg"
+        "wustg",
+        "wirkungsumsatzsteuer",
+        "wirkungseinkommensteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "rechtsschutz",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuergesetz",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "wstg-oktober-2025"
+        "wstg-oktober-2025",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
       ],
       "relatedObjections": []
     },
@@ -28539,20 +31467,65 @@
       "label": "Wirkungswahrheit",
       "slug": "wirkungswahrheit",
       "url": "/begriffe/wirkungswahrheit/",
-      "hoverDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - kein Wahrheitsmonopol.",
-      "shortDefinition": "Wirkungswahrheit meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen.",
-      "category": "Schutzbegriff",
+      "hoverDefinition": "Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.",
+      "shortDefinition": "Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.",
+      "category": "Wirkungssprache & Missbrauchsschutz",
       "synonyms": [
         "Wirkungswahrheit",
-        "wirkungsnah"
+        "wirkungsnah",
+        "Wahrheit der Wirkung",
+        "wirkungsnahe Wahrheit",
+        "Wirkungsnähe",
+        "Transparenz über Folgen",
+        "Wirklichkeitsbindung von Preisen",
+        "ehrliche Wirkungssignale",
+        "Impact Truthfulness"
       ],
       "relatedTerms": [
+        "wirkungsblindheit",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "responsible-marketing",
+        "ehrliche-preise",
+        "produktdaten",
+        "datenqualitaet",
+        "medienqualitaet",
+        "demokratie-als-wirkungsraum",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsgrenze",
+        "wirkungsrad",
+        "wirkungspfad",
+        "wirkungsnetz",
+        "wirkungsdaten",
+        "woek-id",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
         "wahrheit",
         "wahrhaftigkeit",
         "scheinwahrheit",
         "externalisierung",
         "folgencheck",
-        "wirkungsblindheit",
         "adam-smith",
         "bedeutung-als-gebrauch",
         "faktenargumentation",
@@ -28562,13 +31535,18 @@
         "ordoliberalismus",
         "social-credit",
         "wirklichkeitsbindung",
-        "wirkungsdatenraum",
-        "wirkungsrat"
+        "wirkungsdatenraum"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Produktbesteuerung durch Wirkung"
+      ],
       "relatedObjections": []
     },
     "wirkungswert": {
@@ -28812,14 +31790,19 @@
       "label": "WÖk-ID",
       "slug": "woek-id",
       "url": "/begriffe/woek-id/",
-      "hoverDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
-      "shortDefinition": "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Eine WÖk-ID identifiziert einen Wirkungsindikator eindeutig. Sie ist kein Score, sondern der Code für das, was gemessen und bewertet wird.",
+      "shortDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird.",
+      "category": "Messung, Daten & Standards",
       "synonyms": [
         "WÖk-ID",
         "WOK-ID",
         "Wok ID",
-        "WÖK ID"
+        "WÖK ID",
+        "Wirkungsökonomie-ID",
+        "Wirkungsindikator-ID",
+        "WÖK-ID",
+        "Wirkungs-ID",
+        "Indikator-ID der Wirkungsökonomie"
       ],
       "relatedTerms": [
         "scorecard",
@@ -28837,13 +31820,49 @@
         "scope-1",
         "scope-3",
         "thg-emissions-scopes",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "wirkungscontrolling",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungssteuer",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsindikator"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "woek-master-items-register"
+        "woek-master-items-register",
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "[object Object]"
       ],
       "relatedObjections": []
     },
