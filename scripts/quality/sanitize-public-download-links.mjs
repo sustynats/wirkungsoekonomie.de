@@ -70,7 +70,23 @@ function fileExistsCaseInsensitive(absPath) {
 function pdfExists(htmlFile, href) {
   const candidateHref = sameStemPdfHref(href);
   const candidateAbs = hrefToAbs(htmlFile, candidateHref);
-  return candidateAbs && fileExistsCaseInsensitive(candidateAbs) ? candidateHref : "";
+  if (candidateAbs && fileExistsCaseInsensitive(candidateAbs)) return candidateHref;
+
+  if (/\.zip(?:[?#]|$)/i.test(href)) {
+    const zipAbs = hrefToAbs(htmlFile, href);
+    const dir = zipAbs ? path.dirname(zipAbs) : "";
+    if (dir && fs.existsSync(dir)) {
+      const fallback = fs.readdirSync(dir)
+        .find((name) => /Gesamtpaket.*\.pdf$/i.test(name));
+      if (fallback) {
+        const clean = cleanHref(href);
+        const pdfFileName = encodeURI(fallback).replace(/#/g, "%23");
+        return clean.replace(/[^/]+\.zip$/i, pdfFileName);
+      }
+    }
+  }
+
+  return "";
 }
 
 function stripTags(value) {
@@ -111,6 +127,12 @@ function rewriteAnchor(htmlFile, stats, fileStats) {
 
     fileStats.pending += 1;
     stats.pending += 1;
+    stats.pendingLinks.push({
+      file: path.relative(ROOT, htmlFile),
+      href,
+      extension: extname(href),
+      label: pendingLabel(href, inner),
+    });
     return `<span class="text-note is-download-pending">${pendingLabel(href, inner)}</span>`;
   };
 }
@@ -158,6 +180,7 @@ const stats = {
   converted: 0,
   pending: 0,
   affected: [],
+  pendingLinks: [],
 };
 
 for (const file of walk(ROOT)) {
@@ -203,6 +226,12 @@ const report = [
   "## Geänderte Dateien",
   "",
   ...stats.affected.map((item) => `- \`${item.file}\`: ${item.blocked} Rohformat-Link(s), ${item.converted} PDF-Umlage(n), ${item.pending} Produktion-Hinweis(e)`),
+  "",
+  "## Offene Produktion-Hinweise",
+  "",
+  ...(stats.pendingLinks.length
+    ? stats.pendingLinks.map((item) => `- \`${item.file}\`: ${item.label} für \`${item.href}\``)
+    : ["- keine"]),
   "",
 ];
 
