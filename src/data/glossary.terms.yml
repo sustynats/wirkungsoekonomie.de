@@ -36,7 +36,7 @@ terms:
     usageNote: "Benchmarks sind Hilfsmittel, keine automatische Zielerreichung."
     doNotConfuseWith: ["Scorecard", "FinalScore"]
     synonyms: ["Vergleichswert", "Schwellenwert"]
-    relatedTerms: ["scorecard", "finalscore", "woek-id"]
+    relatedTerms: ["scorecard", "finalscore", "woek-id", "wirkungscontrolling"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Benchmark als prüfbaren Vergleichspunkt verwenden."
@@ -197,7 +197,7 @@ terms:
     usageNote: "Nicht als beliebigen Durchschnitt darstellen."
     doNotConfuseWith: ["Netto-Wirkung", "Scorecard"]
     synonyms: []
-    relatedTerms: ["scorecard", "reverse-merit-order", "netto-wirkung"]
+    relatedTerms: ["scorecard", "reverse-merit-order", "netto-wirkung", "wirkungscontrolling"]
     relatedDocuments: []
     examples: []
     preferredUsage: "FinalScore als Ergebnis mit Schutzlogik verwenden."
@@ -381,7 +381,7 @@ terms:
     usageNote: "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung."
     doNotConfuseWith: ["T-SROI", "FinalScore", "SROI"]
     synonyms: ["Netto-Wirkungs-Index", "Netto-Wirkungs-Index / NWI"]
-    relatedTerms: ["netto-wirkung", "finalscore", "t-sroi", "reverse-merit-order"]
+    relatedTerms: ["netto-wirkung", "finalscore", "t-sroi", "reverse-merit-order", "wirkungscontrolling"]
     relatedDocuments: ["technische-leitlinien-wustg", "wirkungscontrolling-detailkonzept-dossier-v1-0"]
     examples: []
     preferredUsage: "NWI als operative Netto-Wirkungskennzahl."
@@ -588,7 +588,7 @@ terms:
     usageNote: "Nicht als bloße Checkliste ohne Bewertungslogik verwenden."
     doNotConfuseWith: ["Dashboard", "Reporting"]
     synonyms: []
-    relatedTerms: ["woek-id", "benchmark", "finalscore"]
+    relatedTerms: ["woek-id", "benchmark", "finalscore", "wirkungscontrolling"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Scorecard als methodisches Bewertungsinstrument."
@@ -1796,7 +1796,7 @@ terms:
     usageNote: "Schreibweise WÖk-ID verwenden, sofern Kontext eindeutig."
     doNotConfuseWith: ["NACE", "Produkt-ID"]
     synonyms: ["WOK-ID", "Wok ID", "WÖK ID"]
-    relatedTerms: ["scorecard", "benchmark", "wirkungsdatenraum"]
+    relatedTerms: ["scorecard", "benchmark", "wirkungsdatenraum", "wirkungscontrolling"]
     relatedDocuments: ["woek-master-items-register"]
     examples: []
     preferredUsage: "WÖk-ID als Registerkennung verwenden."
