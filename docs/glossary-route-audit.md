@@ -1,8 +1,8 @@
 # Glossary Route Audit
 
-Stand: 2026-06-01T00:30:55.424Z
+Stand: 2026-06-01T07:54:13.286Z
 
-- Begriffe im Modell: 1163
+- Begriffe im Modell: 1164
 - Fehlende Detailseiten: 0
 - Hub-/Anker-Ziele statt Detailroute: 0
 

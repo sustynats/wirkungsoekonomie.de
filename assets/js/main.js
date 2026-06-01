@@ -874,7 +874,7 @@ function initGlossarySystem(terms) {
 
   const context = getGlossaryContext();
   const eligibleTerms = terms
-    .filter((term) => term.url && term.definition && term.allowedContexts?.includes(context))
+    .filter((term) => term.url && term.definition && term.autoLinkAllowed !== false && term.allowedContexts?.includes(context))
     .map((term) => ({
       ...term,
       variants: Array.from(new Set([term.label, ...(term.aliases || [])])).sort((a, b) => b.length - a.length),

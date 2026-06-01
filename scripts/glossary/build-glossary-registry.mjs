@@ -152,6 +152,8 @@ const hoverTerms = terms
     definition: term.hoverDefinition || term.shortDefinition,
     url: term.pageUrl || `/begriffe/${term.slug}/`,
     priority: index + 1,
+    autoLinkAllowed: term.autoLinkAllowed !== false,
+    maxAutoLinksPerPage: Number.isFinite(term.maxAutoLinksPerPage) ? term.maxAutoLinksPerPage : undefined,
     allowedContexts,
   }));
 

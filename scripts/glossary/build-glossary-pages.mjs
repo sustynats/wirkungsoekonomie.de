@@ -801,6 +801,126 @@ fs.writeFileSync("glossar.html", glossaryLegacyAlias(""));
 fs.mkdirSync("glossar", { recursive: true });
 fs.writeFileSync(path.join("glossar", "index.html"), glossaryLegacyAlias("../"));
 
+function sexarbeitDetailBody(term) {
+  return `      <article class="article-shell glossary-detail glossary-detail-sensitive">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">Sensibler Glossarbegriff</p>
+          <h1>${esc(term.canonicalLabel)}</h1>
+          <p class="lead">Sexarbeit bezeichnet einvernehmliche sexuelle Dienstleistungen gegen Entgelt. In der Wirkungsökonomie wird nicht die Sexualität, Identität oder Lebensführung von Personen bewertet, sondern der Wirkungsraum: Selbstbestimmung, Schutz vor Gewalt und Ausbeutung, Gesundheit, Rechtsschutz, soziale Infrastruktur, Datenrisiken und demokratische Teilhabe.</p>
+          <div class="term-meta-row" aria-label="Begriffsinformation">
+            <span>Sensibler Begriff</span>
+            <span>Keine Personenbewertung</span>
+            <span>Auto-Linking deaktiviert</span>
+          </div>
+          <div class="term-action-row">${detailLinks(term)}</div>
+        </header>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-status-title">
+          <p class="section-eyebrow">Schutzstatus</p>
+          <h2 id="sexarbeit-status-title">Sensible Verwendung</h2>
+          <p>Dieser Begriff ist sensibel. Er darf nicht zur Personenbewertung, nicht zur moralischen Bewertung von Sexualität, Identität oder Lebensführung und nicht als Rechts-, Sozial- oder Gesundheitsberatung verwendet werden. Sexarbeit wird nicht mit Menschenhandel gleichgesetzt. Das Glossar zeigt eine Hoverdefinition zur Orientierung; automatische Inline-Verlinkung ist für diesen Begriff deaktiviert.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-definition-title">
+          <p class="section-eyebrow">Definition</p>
+          <h2 id="sexarbeit-definition-title">Kurzdefinition und Kernthese</h2>
+          <p>Sexarbeit bezeichnet einvernehmliche sexuelle Dienstleistungen gegen Entgelt, soweit volljährige Personen selbstbestimmt handeln und keine Gewalt, Nötigung, Ausbeutung, Minderjährigkeit oder Zwangslage vorliegt.</p>
+          <p>Sexarbeit ist in der Wirkungsökonomie kein moralischer Prüfstein für Personen, sondern ein Wirkungsraum, in dem Selbstbestimmung, körperliche Unversehrtheit, Gesundheit, Schutz vor Gewalt und Ausbeutung, soziale Sicherung, Wohnen, Rechtsschutz, Datenrisiken und demokratische Teilhabe sichtbar gemacht werden müssen.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-infrastruktur-title">
+          <p class="section-eyebrow">Wirkungsökonomische Auslegung</p>
+          <h2 id="sexarbeit-infrastruktur-title">Sexarbeit als Prüfstein sozialer Infrastruktur</h2>
+          <p>Als soziale Infrastruktur betrachtet die Wirkungsökonomie nicht die Sexarbeit selbst als positiv oder negativ, sondern die Bedingungen, unter denen Menschen handeln: Zugang zu Gesundheit, Schutzräumen, Beratung, Rechtsschutz, sicheren Arbeits- und Wohnbedingungen, Daten- und Plattformschutz, Ausstiegs- und Wechselmöglichkeiten sowie Schutz vor Gewalt, Ausbeutung und Stigmatisierung.</p>
+          <p>Bewertet werden Bedingungen, Risiken und institutionelle Schutzmechanismen. Nicht bewertet werden Personen, Sexualität, Identität, Lebensstil oder moralische Vorstellungen über Sexualität.</p>
+        </section>
+        <div class="term-section-grid">
+          <section class="term-section-card">
+            <p class="section-eyebrow">Warum sensibel?</p>
+            <h2>Sprache mit Schutzfunktion</h2>
+            <p>Der Begriff berührt Würde, Körper, Selbstbestimmung, Gewalt, Armut, Migration, Plattformlogik, Datenschutz, Gesundheit und Rechtsschutz. Unpräzise Sprache kann Stigma verstärken, Schutzbedarfe verdecken oder Ausbeutung verharmlosen.</p>
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">WÖk prüft</p>
+            <h2>Was sichtbar werden muss</h2>
+            ${listItems(["Selbstbestimmung und Einwilligung", "Schutz vor Gewalt, Nötigung und Ausbeutung", "Gesundheit, Beratung und soziale Sicherung", "Wohnsicherheit, sichere Räume und Rechtsschutz", "Datenqualität, Plattformrisiken und digitale Selbstbestimmung", "Ausstiegs-, Wechsel- und Unterstützungsoptionen"])}
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">WÖk prüft nicht</p>
+            <h2>Keine moralische oder personenbezogene Bewertung</h2>
+            ${listItems(["keine Bewertung einzelner Personen", "keine Bewertung von Sexualität, Identität oder Lebensführung", "keine automatische Entscheidung", "keine Rechts-, Sozial- oder Gesundheitsberatung", "keine Gleichsetzung mit Menschenhandel oder Zwangsprostitution"])}
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">Rote Linien</p>
+            <h2>Nicht kompensierbar</h2>
+            ${listItems(["Minderjährigkeit", "Menschenhandel", "Zwang, Nötigung oder Gewalt", "sexuelle Ausbeutung", "sexualisierte Gewalt", "Entzug von Papieren, Wohnraum, Einkommen oder Bewegungsfreiheit", "Datenmissbrauch, Erpressung oder Outing-Risiken"])}
+          </section>
+        </div>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-abgrenzung-title">
+          <p class="section-eyebrow">Abgrenzung</p>
+          <h2 id="sexarbeit-abgrenzung-title">Nicht automatisch gleichsetzen</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Nicht automatisch Menschenhandel</h3><p>Menschenhandel ist eine schwere Verletzung von Selbstbestimmung und Menschenwürde und muss getrennt, konsequent und nicht kompensierbar behandelt werden.</p></section>
+            <section class="term-section-card"><h3>Nicht automatisch Zwangsprostitution</h3><p>Zwangsprostitution liegt bei Zwang, Nötigung oder ausgenutzter Zwangslage vor und ist nicht mit selbstbestimmter Sexarbeit gleichzusetzen.</p></section>
+            <section class="term-section-card"><h3>Nicht sexuelle Ausbeutung</h3><p>Ausbeutung beschreibt Macht-, Abhängigkeits- und Vorteilsverhältnisse. Sie ist als Risiko und rote Linie sichtbar zu machen.</p></section>
+            <section class="term-section-card"><h3>Nicht sexualisierte Gewalt</h3><p>Sexualisierte Gewalt ist Gewalt. Sie darf nie als normale Arbeitsbedingung oder kompensierbarer Nachteil behandelt werden.</p></section>
+            <section class="term-section-card"><h3>Minderjährige als rote Linie</h3><p>Bei Minderjährigkeit endet jede arbeits- oder dienstleistungsbezogene Einordnung. Schutz, Strafverfolgung und Hilfe haben Vorrang.</p></section>
+          </div>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-mpd-title">
+          <p class="section-eyebrow">Referenzrahmen</p>
+          <h2 id="sexarbeit-mpd-title">Mensch, Planet, Demokratie und SDG+</h2>
+          <p>Der Begriff berührt vor allem Mensch und Demokratie: körperliche Selbstbestimmung, Gesundheit, Sicherheit, Rechtszugang, Antidiskriminierung, digitale Selbstbestimmung und institutionelles Vertrauen. SDG-Bezüge liegen insbesondere bei Gesundheit, Geschlechtergerechtigkeit, menschenwürdiger Arbeit, Ungleichheiten, Frieden/Rechtsschutz und starken Institutionen. SDG+ ergänzt transparent demokratische Schutzlinien wie Rechtsstaatlichkeit, Datenrechte, Diskursfähigkeit und institutionelle Verantwortlichkeit; SDG+ ist keine offizielle UN-Kategorie.</p>
+        </section>
+        <section class="term-summary-card" aria-labelledby="sexarbeit-example-title">
+          <p class="section-eyebrow">Abstraktes Beispiel</p>
+          <h2 id="sexarbeit-example-title">Wirkungsanalyse ohne Personenbezug</h2>
+          <p>Eine Kommune prüft nicht einzelne Personen, sondern ob Beratungsstellen erreichbar sind, ob Schutzräume existieren, ob Gesundheitszugänge anonym und diskriminierungsarm funktionieren, ob digitale Plattformen Datenrisiken erzeugen und ob Rechtsschutz bei Gewalt oder Ausbeutung praktisch zugänglich ist.</p>
+        </section>
+        <section class="term-link-section" aria-labelledby="related-terms-title">
+          <div>
+            <p class="section-eyebrow">Verknüpfungen</p>
+            <h2 id="related-terms-title">Verwandte Begriffe</h2>
+          </div>
+          <div class="term-chip-row">
+            ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
+          </div>
+        </section>${relatedContentBlock(term)}
+        <section class="meta-box">
+          <h2>Quellen, Status und Nutzung</h2>
+          <p>Kategorie: ${esc(term.category || "Sensibler Begriff")} · Version: ${esc(term.version)}</p>
+          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+          <p>Rechtlicher Hinweis: Diese Seite ist eine begriffliche und wirkungsökonomische Einordnung. Sie ist keine Rechts-, Sozial-, Gesundheits-, Steuer-, Kredit-, Versicherungs-, Förder- oder Anlageberatung.</p>
+          ${sourceList(term)}
+        </section>
+      </article>`;
+}
+
+function glossaryTermAliasPage(aliasLabel, targetSlug) {
+  return `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/${esc(targetSlug)}/">
+    <meta http-equiv="refresh" content="0; url=../${esc(targetSlug)}/">
+    <title>${esc(aliasLabel)} - Weiterleitung zum Glossarbegriff Sexarbeit</title>
+  </head>
+  <body>
+    <main>
+      <h1>${esc(aliasLabel)}</h1>
+      <p>Dieser ältere oder alternative Begriff verweist auf die sensible Glossar-Detailseite <a href="../${esc(targetSlug)}/">Sexarbeit</a>. Die Weiterleitung ist ein Alias, keine Gleichsetzung mit Menschenhandel, Zwangsprostitution, sexueller Ausbeutung oder sexualisierter Gewalt.</p>
+    </main>
+  </body>
+</html>
+`;
+}
+
+function writeGlossaryTermAlias(aliasSlug, aliasLabel, targetSlug) {
+  const dir = path.join(outDir, aliasSlug);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, "index.html"), glossaryTermAliasPage(aliasLabel, targetSlug));
+}
+
 for (const term of data.terms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -813,7 +933,9 @@ for (const term of data.terms) {
     ? `          <p>Begriffstatus: ${esc(term.conceptStatus || term.concept_status || "nicht klassifiziert")} · Publikationsstatus: ${esc(term.publicationStatus || term.publication_status || "published")}</p>
 `
     : "";
-  const body = `      <article class="article-shell glossary-detail">
+  const body = term.slug === "sexarbeit"
+    ? sexarbeitDetailBody(term)
+    : `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
         <header class="term-detail-hero">
           <p class="hero-kicker">${esc(term.category || "Begriff")}</p>
@@ -889,6 +1011,11 @@ ${statusParagraph}          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt:
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
   if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
+}
+
+if (data.terms.some((term) => term.slug === "sexarbeit")) {
+  writeGlossaryTermAlias("prostitution", "Prostitution", "sexarbeit");
+  writeGlossaryTermAlias("sex-work", "Sex Work", "sexarbeit");
 }
 
 console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and preserved ${legacyDetailTerms.length} legacy detail pages.`);

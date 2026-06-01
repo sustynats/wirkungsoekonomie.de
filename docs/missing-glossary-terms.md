@@ -1,22 +1,32 @@
-# Fehlende oder rekonstruierte Detailseiten
+# Missing Glossary Terms
 
-Stand: 2026-05-31. Diese Liste verhindert tote Links auf der Methodenlandkarte. Karten ohne vorhandene Detailseite werden als `In Vorbereitung` oder `Begriffsseite in Rekonstruktion` angezeigt und nicht hart verlinkt.
+Stand: 2026-06-01
 
-- `begriffe/wirkungsgrenzen/`
-- `werkzeuge/nace-mapping/`
-- `werkzeuge/sdgplus-register/`
-- `werkzeuge/datenquellen/`
-- `werkzeuge/quellenkatalog/`
-- `werkzeuge/finalscore/`
-- `werkzeuge/wirkungsfoerderung/`
-- `werkzeuge/wirkungspunkte-bonuslogik/`
-- `werkzeuge/wirkungslenkung/`
-- `werkzeuge/wirkungsrueckkopplung/`
-- `werkzeuge/wirkungskredit/`
-- `werkzeuge/stranded-asset-check/`
-- `werkzeuge/wirkungsportfolio-kapital/`
-- `werkzeuge/review-versionierungslogik/`
-- `werkzeuge/missbrauchsschutz/`
-- `werkzeuge/anti-greenwashing/`
-- `werkzeuge/anti-impact-washing/`
-- `werkzeuge/beschwerde-korrekturpfade/`
+Diese Liste dokumentiert Begriffe, die im Kontext der neuen sensiblen Detailseite `Sexarbeit` fachlich relevant sind, aber nicht als bestehende Glossar-Detailseiten gefunden wurden. Sie wurden bewusst nicht automatisch als verwandte Begriffe verlinkt.
+
+## Sensible Grenz- und Schutzbegriffe
+
+- Menschenhandel
+- Zwangsprostitution
+- sexuelle Ausbeutung
+- sexualisierte Gewalt
+- Minderjährigkeit
+- Stigma
+- Diskriminierung
+- Personenbewertung
+- Ausbeutung
+
+## Infrastruktur- und Schutzbegriffe
+
+- soziale Infrastruktur
+- Selbstbestimmung
+- Datenschutz
+- Plattformlogik
+- Wohnsicherheit
+- Schutzräume
+- Ausstiegsmoeglichkeiten
+- menschenwürdige Arbeit
+
+## Hinweis
+
+Diese Begriffe sollten nur mit eigener Definition, Schutzlinien, Quellenstatus und Reviewentscheidung ergänzt werden. Sie dürfen nicht automatisch mit `Sexarbeit` synonymisiert werden.

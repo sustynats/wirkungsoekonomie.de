@@ -1,10 +1,10 @@
 # Glossary Coverage Report
 
-Stand: 2026-06-01T00:30:56.641Z
+Stand: 2026-06-01T07:54:14.278Z
 
-- HTML-Seiten gescannt: 3261
-- Seiten mit /begriffe/-Links: 2500
-- Seiten mit Glossar-/Term-Markup: 1597
+- HTML-Seiten gescannt: 3271
+- Seiten mit /begriffe/-Links: 2503
+- Seiten mit Glossar-/Term-Markup: 1598
 - Tote Glossarlinks: 0
 
 ## Seiten mit den meisten Glossarlinks
@@ -75,6 +75,7 @@ Stand: 2026-06-01T00:30:56.641Z
 - begriffe/ngo/index.html: 17
 - begriffe/patriarchat/index.html: 17
 - begriffe/reframing/index.html: 17
+- begriffe/sexarbeit/index.html: 17
 - begriffe/sustainable-finance/index.html: 17
 - begriffe/trickle-down-oekonomie/index.html: 17
 - referenz/kapitel-011-wirkungspotenzial/index.html: 17
@@ -107,7 +108,6 @@ Stand: 2026-06-01T00:30:56.641Z
 - begriffe/systemgrenze/index.html: 15
 - begriffe/thinktank/index.html: 15
 - begriffe/wirkstoff/index.html: 15
-- begriffe/wirkungsinnovation/index.html: 15
 
 ## Tote Glossarlinks
 Keine.
