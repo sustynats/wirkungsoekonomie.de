@@ -5613,6 +5613,9 @@ textarea {
 
 .table-wrap {
   overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
   margin: 1.25rem 0;
   border: 1px solid rgba(11, 16, 32, 0.14);
   border-radius: 0.5rem;
@@ -5620,6 +5623,7 @@ textarea {
 
 .data-table {
   width: 100%;
+  min-width: 760px;
   border-collapse: collapse;
   font-size: 0.92rem;
 }
@@ -9423,22 +9427,22 @@ textarea {
 }
 
 .fulltext-reader table {
-  display: block;
   width: 100%;
   max-width: 100%;
-  overflow-x: auto;
 }
 
 .fulltext-reader .table-wrap {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fulltext-reader .table-wrap table,
 .fulltext-reader .data-table {
   display: table;
-  min-width: 0;
+  min-width: max(760px, 100%);
   table-layout: auto;
 }
 
@@ -9913,21 +9917,19 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
   .table-wrap table,
   .data-table {
-    min-width: 0;
+    min-width: 760px;
     width: 100%;
     table-layout: auto;
   }
 
-  .table-wrap,
+  .table-wrap {
+    overflow-x: auto;
+  }
+
   .scorecard-data-box {
     overflow-x: hidden;
   }
 
-  .table-wrap .data-table,
-  .table-wrap .data-table tbody,
-  .table-wrap .data-table tr,
-  .table-wrap .data-table th,
-  .table-wrap .data-table td,
   .scorecard-data-box table,
   .scorecard-data-box thead,
   .scorecard-data-box tbody,
@@ -9942,13 +9944,10 @@ body[data-reader-mode="updates"] .discussion-placeholder {
     display: none;
   }
 
-  .table-wrap .data-table tr,
   .scorecard-data-box tr {
     border-bottom: 1px solid rgba(11, 16, 32, 0.12);
   }
 
-  .table-wrap .data-table th,
-  .table-wrap .data-table td,
   .scorecard-data-box th,
   .scorecard-data-box td {
     position: static;
@@ -10168,39 +10167,33 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
 @media (max-width: 640px) {
   .fulltext-reader .table-wrap {
-    overflow-x: visible;
-    border: 0;
-    background: transparent;
+    overflow-x: auto;
+    border: 1px solid rgba(11, 16, 32, 0.14);
+    background: rgba(255, 255, 255, 0.72);
   }
 
   .fulltext-reader .table-wrap table,
-  .fulltext-reader .data-table,
-  .fulltext-reader .data-table tbody,
-  .fulltext-reader .data-table tr,
-  .fulltext-reader .data-table th,
-  .fulltext-reader .data-table td {
-    display: block;
+  .fulltext-reader .data-table {
+    display: table;
     width: 100%;
-    min-width: 0;
+    min-width: max(680px, 100%);
   }
 
   .fulltext-reader .data-table tr {
-    margin: 0 0 0.9rem;
-    border: 1px solid rgba(11, 16, 32, 0.12);
-    border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.82);
-    overflow: hidden;
+    display: table-row;
   }
 
   .fulltext-reader .data-table th,
   .fulltext-reader .data-table td {
-    border-right: 0;
+    display: table-cell;
+    width: auto;
+    border-right: 1px solid rgba(11, 16, 32, 0.07);
   }
 
   .fulltext-reader .data-table th:first-child,
   .fulltext-reader .data-table td:first-child {
-    width: 100%;
-    min-width: 0;
+    width: clamp(8rem, 18%, 12rem);
+    min-width: clamp(8rem, 18%, 12rem);
   }
 }
 

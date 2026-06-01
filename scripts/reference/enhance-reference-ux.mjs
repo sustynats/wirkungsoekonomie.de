@@ -7,7 +7,7 @@ const IMPORT_VERSION = "2026.1-import";
 const SOURCE_VERSION = "2026.0";
 const TERM_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const TERM_BASE_DATE = "2026-05-21";
-const referenceReaderAssetVersion = "20260531-mobile-reference-reader";
+const referenceReaderAssetVersion = "20260601-table-scroll";
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
@@ -254,7 +254,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${referenceReaderAssetVersion}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260601-table-scroll">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}

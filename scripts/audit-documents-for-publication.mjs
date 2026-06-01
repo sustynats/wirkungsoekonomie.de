@@ -1231,7 +1231,7 @@ function layout({ title, description, body, prefix = "" }) {
     <meta name="search_description" content="${escapeHtml(description)}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260525-tool-explainer-final2">
+    <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260601-table-scroll">
   </head>
   <body>
     <header class="site-header" data-search-exclude>

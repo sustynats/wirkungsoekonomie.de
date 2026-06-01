@@ -125,7 +125,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
     <meta property="og:title" content="${esc(title.replace(/\s+\|.*$/, ""))}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${b}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${b}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${b}assets/css/style.css?v=20260601-table-scroll">
   </head>
   <body>
     <header class="site-header">

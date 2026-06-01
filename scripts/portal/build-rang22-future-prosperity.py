@@ -722,7 +722,7 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
     <meta property="og:image" content="{SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="{href(prefix, 'assets/img/brand/favicon.svg')}" type="image/svg+xml">
-    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260525-rang20')}">
+    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260601-table-scroll')}">
     {extra_head}
   </head>
   <body>

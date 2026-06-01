@@ -8,8 +8,8 @@ Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dok
 
 ## Inventar
 
-- Inventarisierte Einträge gesamt: 1196
-- Öffentliche Download-/Dokumentdateien: 436
+- Inventarisierte Einträge gesamt: 1465
+- Öffentliche Download-/Dokumentdateien: 705
 - Onlinefassungen: 757
 - Maschinenlesbares Register: `assets/data/library-version-registry.json`
 - Sichtbare Kuratierung: `downloads.html#lesepfade`
@@ -19,9 +19,9 @@ Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dok
 | Status | Anzahl |
 | --- | ---: |
 | führend | 5 |
-| aktuell | 921 |
-| Arbeitsfassung | 176 |
-| ältere Fassung | 94 |
+| aktuell | 931 |
+| Arbeitsfassung | 273 |
+| ältere Fassung | 256 |
 | ersetzt | 0 |
 | in Überarbeitung | 0 |
 
@@ -29,14 +29,14 @@ Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dok
 
 | Typ | Anzahl |
 | --- | ---: |
-| Grundlagenwerk | 45 |
+| Grundlagenwerk | 63 |
 | Whitepaper | 7 |
-| Arbeitspapier | 985 |
-| Gesetzesentwurf | 31 |
-| Beispiel | 11 |
-| Methodik | 80 |
+| Arbeitspapier | 1189 |
+| Gesetzesentwurf | 37 |
+| Beispiel | 13 |
+| Methodik | 109 |
 | Leitbild | 7 |
-| Glossar | 30 |
+| Glossar | 40 |
 | Präsentation | 0 |
 
 ## Maßgebliche Sprachreferenz

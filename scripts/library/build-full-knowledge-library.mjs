@@ -279,7 +279,7 @@ const html = `<!DOCTYPE html>
     <meta name="search_description" content="Vollständige geführte Wissensbibliothek der Wirkungsökonomie mit Dokumentart, Status, Kurzbeschreibung, Umfang, Lesepfaden und Vollregister.">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260531-full-knowledge-library">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260601-table-scroll">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
