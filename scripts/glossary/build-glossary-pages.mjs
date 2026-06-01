@@ -260,6 +260,8 @@ const relatedContentTargets = new Map([
   ["technische-leitlinien-wustg", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["technische-leitlinien-wustg-v2", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["beispiel-apfel-wirkungssteuer-bonusregel", ["Apfelbeispiel Wirkungssteuer", "../../dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"]],
+  ["woek-master-items", ["WÖk Master Items final v1.2", "../../dokumente/woek-master-items-final-v1-2/"]],
+  ["woek-master-items-register", ["WÖk Master Items final v1.2", "../../dokumente/woek-master-items-final-v1-2/"]],
   ["von-der-pigou-steuer-zur-wirkungsoekonomie", ["Von der Pigou-Steuer zur Wirkungsökonomie", "../../blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html"]],
   ["scorecard", ["Scorecards", "../../werkzeuge/scorecards/"]],
   ["scorecards", ["Scorecards", "../../werkzeuge/scorecards/"]],
