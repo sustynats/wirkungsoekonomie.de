@@ -10331,20 +10331,41 @@
       "canonicalLabel": "Archetyp",
       "slug": "archetyp",
       "aliases": [
-        "Archetyp"
+        "Archetyp",
+        "Bewertungsarchetyp",
+        "Bewertungsfunktion",
+        "Score-Ableitungsfunktion",
+        "Scoring-Archetyp",
+        "Wirkungsarchetyp",
+        "archetype",
+        "lower_is_better",
+        "higher_is_better",
+        "near_zero_better"
       ],
       "synonyms": [
-        "Archetyp"
+        "Archetyp",
+        "Bewertungsarchetyp",
+        "Bewertungsfunktion",
+        "Score-Ableitungsfunktion",
+        "Scoring-Archetyp",
+        "Wirkungsarchetyp",
+        "archetype",
+        "lower_is_better",
+        "higher_is_better",
+        "near_zero_better"
       ],
-      "shortDefinition": "Ein Archetyp beschreibt ein typisches Wirkungsprofil, das Bewertungen und Vergleiche strukturierbar macht.",
-      "definition": "In der Wirkungsökonomie ordnen Archetypen wiederkehrende Muster von Wirkung, Risiko, Datenlage und Steuerungsbedarf.",
-      "longDefinition": "In der Wirkungsökonomie ordnen Archetypen wiederkehrende Muster von Wirkung, Risiko, Datenlage und Steuerungsbedarf.",
-      "woekRelation": "Nicht mit Stereotyp oder Zielgruppe gleichsetzen.",
+      "shortDefinition": "Ein Archetyp ist eine standardisierte Bewertungsfunktion, die einen Messwert anhand definierter Schwellen, Polarität und Benchmarks in einen Wirkungsscore übersetzt.",
+      "definition": "Ein Archetyp ist eine standardisierte Bewertungsfunktion, die einen Messwert anhand definierter Schwellen, Polarität und Benchmarks in einen Wirkungsscore übersetzt.",
+      "longDefinition": "Ein Archetyp beschreibt die Bewertungslogik, mit der ein Messwert eines Wirkungsindikators in einen Einzel-Score übersetzt wird. Er ist keine Produktgruppe, sondern eine technische Bewertungsfunktion.",
+      "woekRelation": "Archetypen reduzieren Willkür, ermöglichen Automatisierung und machen Score-Ableitung auditierbar.",
       "statusNote": "Nicht als starre Schublade verwenden.",
-      "usageNote": "Nicht mit Stereotyp oder Zielgruppe gleichsetzen.",
+      "usageNote": "Nicht als Produktgruppe verwenden. In Pack 006 meint Archetyp ausdrücklich die Bewertungsfunktion.",
       "categories": [
         "daten-standards-regularien",
-        "woek-uebersetzung"
+        "woek-uebersetzung",
+        "Messung, Bewertung & Scorecards",
+        "Daten, Indikatoren & technische Bewertungslogik",
+        "Glossar-Pack 006"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
@@ -10355,47 +10376,271 @@
         "scorecard",
         "woek-id",
         "nace",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "finalscore",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "messwert",
+        "datenquelle",
+        "systemgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "archetyp",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "officialSources": [
-        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar",
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "Digital Product Passport / ESPR",
+        "Product Environmental Footprint",
+        "ISO 14040 / ISO 14044",
+        "ISO 14064 / ISO 14067",
+        "GHG Protocol",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
       ],
       "pageUrl": "/begriffe/archetyp/",
       "priority": 102,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Ein Archetyp ist ein typisches Wirkungsprofil, das hilft, Fälle vergleichbar zu bewerten.",
+      "version": "1.1",
+      "category": "Messung, Bewertung & Scorecards",
+      "source": "Glossar-Pack 006",
+      "sourceDocument": "Glossar-Pack 006: Daten, Indikatoren & technische Bewertungslogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 006",
+      "hoverDefinition": "Ein Archetyp ist eine standardisierte Bewertungsfunktion, die einen Messwert anhand definierter Schwellen, Polarität und Benchmarks in einen Wirkungsscore übersetzt.",
       "doNotConfuseWith": [
         "Benchmark",
-        "Scorecard"
+        "Scorecard",
+        "Produktarchetyp: Produktmuster; hier ist Archetyp eine Bewertungsfunktion.",
+        "Benchmark: Vergleichswert; Archetyp ist Funktion.",
+        "WÖk-ID: identifiziert Indikator; Archetyp bewertet Messwert.",
+        "Score: Ergebnis der Archetyp-Anwendung.",
+        "Scorecard: bündelt viele Indikatoren, Messwerte, Benchmarks und Scores.",
+        "Reverse Merit Order: begrenzt Gesamtbewertung; Archetyp erzeugt Einzelbewertung.",
+        "FinalScore: Gesamtbewertung; Archetyp ist ein Schritt dahin."
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Archetyp als methodische Musterkategorie verwenden.",
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
+      "examples": [
+        "CO2-Indikator nutzt lower_is_better_abs: je niedriger kg CO2e pro funktionaler Einheit, desto besser.",
+        "Recyclingindikator nutzt higher_is_better_pct.",
+        "Arbeitsunfälle nutzen near_zero_better.",
+        "Chemikalienindikator nutzt reg_limit oder absolute_cap.",
+        "Lieferketten-Compliance nutzt compliance_index.",
+        "Klimapfad-Indikator nutzt improvement_rate."
+      ],
+      "preferredUsage": "Als standardisierte Score-Ableitungsfunktion im Zusammenspiel mit Messwert, Benchmark, Datenqualität und Systemgrenze verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "archetyp",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "benchmark",
         "scorecard",
         "woek-id",
         "nace",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "finalscore",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "messwert",
+        "datenquelle",
+        "systemgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "archetyp",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "internal_links": [
+        "benchmark",
+        "scorecard",
+        "woek-id",
+        "nace",
+        "wirkungsrat",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "finalscore",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "systemgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "archetyp",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Präzisierungsbegriff / technischer Methodenbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / technischer Methodenbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -10426,7 +10671,115 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "006",
+      "cluster": "Daten, Indikatoren & technische Bewertungslogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Archetyp ist eine standardisierte Bewertungsfunktion, die einen Messwert anhand definierter Schwellen, Polarität und Benchmarks in einen Wirkungsscore übersetzt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- keine Produktgruppe, sondern Bewertungsfunktion\n- legt fest, wie ein Messwert in einen Score übersetzt wird\n- typische Logiken sind higher_is_better, lower_is_better, near_zero_better, reg_limit oder absolute_cap\n- verhindert Willkür und erleichtert Automatisierung\n- braucht Schwellenwerte, Einheit, Polarität, Datenqualität und Systemgrenze\n- erzeugt allein keinen FinalScore\n- muss versioniert, prüfbar und fortschreibbar sein"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Archetyp legt fest, welche Bewertungslogik für einen Wirkungsindikator gilt. Bei manchen Indikatoren ist ein höherer Wert besser, etwa Recyclingquote oder Living-Wage-Abdeckung; bei anderen ist ein niedrigerer Wert besser, etwa CO2-Emissionen, Wasserverbrauch oder Unfallrate. Wieder andere haben optimale Bereiche, Grenzwerte, Compliance-Stufen oder harte Obergrenzen. Der Archetyp übersetzt eine definierte Messlogik in einen Einzel-Score."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Ohne Archetypen müsste jeder Indikator individuell und uneinheitlich bewertet werden. Das wäre schwer prüfbar und anfällig für Lobbyeinfluss. Archetypen ermöglichen reproduzierbare Score-Ableitung, Automatisierung, Vergleichbarkeit, Auditierbarkeit, maschinenlesbare Scorecards, Wirkungsregister, Wirkungssteuer und Greenwashing-Schutz."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Archetypen sind Bewertungsbausteine, keine normative Gesamtentscheidung. Typische Funktionen sind higher_is_better_pct, lower_is_better_abs, near_zero_better, reg_limit, compliance_index, improvement_rate, absolute_cap und balanced_range. Erst mit Benchmark, Datenqualität, Systemgrenze, Scorecard und Reverse Merit Order entsteht eine steuerungsfähige Bewertung."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Produktarchetyp: Produktmuster; hier ist Archetyp eine Bewertungsfunktion.\n- Benchmark: Vergleichswert; Archetyp ist Funktion.\n- WÖk-ID: identifiziert Indikator; Archetyp bewertet Messwert.\n- Score: Ergebnis der Archetyp-Anwendung.\n- Scorecard: bündelt viele Indikatoren, Messwerte, Benchmarks und Scores.\n- Reverse Merit Order: begrenzt Gesamtbewertung; Archetyp erzeugt Einzelbewertung.\n- FinalScore: Gesamtbewertung; Archetyp ist ein Schritt dahin."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- CO2-Indikator nutzt lower_is_better_abs: je niedriger kg CO2e pro funktionaler Einheit, desto besser.\n- Recyclingindikator nutzt higher_is_better_pct.\n- Arbeitsunfälle nutzen near_zero_better.\n- Chemikalienindikator nutzt reg_limit oder absolute_cap.\n- Lieferketten-Compliance nutzt compliance_index.\n- Klimapfad-Indikator nutzt improvement_rate."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind archetype_id, name, description, applicable_indicator_types, polarity, unit_type, threshold_logic, interpolation_method, red_flag_logic, default_handling, missing_data_handling, benchmark_integration, data_quality_requirements, allowed_score_range, valid_from, valid_until, version und governance_owner. Score-Ableitung: Messwert erfassen, Datenqualität und Systemgrenze prüfen, Benchmark wählen, Archetyp anwenden, Einzel-Score dokumentieren und Reverse Merit Order für den FinalScore berücksichtigen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Benchmark\n- Scorecard\n- WÖk-ID\n- NACE\n- Wirkungsrat\n- Wirkungsindikator\n- Datenqualität\n- FinalScore\n- Produktscorecard\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- Reverse Merit Order\n- Wirkungsgrenze\n- Nichtkompensationsprinzip\n- messwert\n- datenquelle\n- Systemgrenze\n- Wirkungssteuer\n- T-SROI\n- NWI\n- Archetyp\n- Wirkungsbewertung\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- wirkungssimulation\n- Digitaler Produktpass\n- Produktdaten\n- Wirkungsdatenraum\n- CSRD\n- ESRS\n- GRI\n- EU-Taxonomie\n- SDGs\n- SDG+\n- Mensch, Planet und Demokratie\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsrückkopplung\n- Produktwirkung\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Technische Leitlinien WUStG\n- WÖk-Master-Items\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- BASF Polyamid Beispiel von der CSRD zur Produktscorecard\n- Wirkungsoekonomie in der Lieferkette\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- Digital Product Passport / ESPR\n- Product Environmental Footprint\n- ISO 14040 / ISO 14044\n- ISO 14064 / ISO 14067\n- GHG Protocol\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 006\n- Cluster: Daten, Indikatoren & technische Bewertungslogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "art-20a-gg",
@@ -21950,22 +22303,37 @@
       "aliases": [
         "Benchmark",
         "Vergleichswert",
-        "Schwellenwert"
+        "Schwellenwert",
+        "Referenzwert",
+        "Zielwert",
+        "Branchenbenchmark",
+        "sektoraler Benchmark",
+        "Benchmark_by_NACE",
+        "Wirkungsbenchmark"
       ],
       "synonyms": [
         "Benchmark",
         "Vergleichswert",
-        "Schwellenwert"
+        "Schwellenwert",
+        "Referenzwert",
+        "Zielwert",
+        "Branchenbenchmark",
+        "sektoraler Benchmark",
+        "Benchmark_by_NACE",
+        "Wirkungsbenchmark"
       ],
-      "shortDefinition": "Ein Benchmark ist ein Vergleichs- oder Schwellenwert, an dem Wirkung, Datenqualität oder Risiken eingeordnet werden.",
-      "definition": "Benchmarks übersetzen abstrakte Wirkungsziele in prüfbare Vergleichswerte, ohne selbst die Gesamtbewertung zu ersetzen.",
-      "longDefinition": "Benchmarks übersetzen abstrakte Wirkungsziele in prüfbare Vergleichswerte, ohne selbst die Gesamtbewertung zu ersetzen.",
-      "woekRelation": "Benchmarks sind Hilfsmittel, keine automatische Zielerreichung.",
+      "shortDefinition": "Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann.",
+      "definition": "Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann.",
+      "longDefinition": "Ein Benchmark ist ein fachlich begründeter Vergleichs-, Ziel- oder Schwellenwert, mit dem ein Messwert bewertet wird. Er schafft Kontext für Branche, Region, Produktgruppe, Technologie, Lebenszyklus und Systemgrenze.",
+      "woekRelation": "Benchmarks verbinden Wirkungsindikatoren mit Scorecards. Sie machen Messwerte bewertbar, ohne alle Branchen und Technologien gleichzusetzen.",
       "statusNote": "Benchmark nicht als politisches Ziel verwechseln.",
-      "usageNote": "Benchmarks sind Hilfsmittel, keine automatische Zielerreichung.",
+      "usageNote": "Nicht als beliebigen politischen Wunschwert verwenden. Benchmarks müssen quellenklar, fachlich begründet, versioniert, überprüfbar und governancefähig sein.",
       "categories": [
         "daten-standards-regularien",
-        "woek-uebersetzung"
+        "woek-uebersetzung",
+        "Messung, Bewertung & Scorecards",
+        "Daten, Indikatoren & technische Bewertungslogik",
+        "Glossar-Pack 006"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
@@ -21978,50 +22346,270 @@
         "archetyp",
         "datenqualitaet",
         "wirkungsrat",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nace",
+        "systemgrenze",
+        "messwert",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "benchmark",
+        "wirkungsbewertung",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "officialSources": [
-        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar",
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "Digital Product Passport / ESPR",
+        "Product Environmental Footprint",
+        "ISO 14040 / ISO 14044",
+        "ISO 14064 / ISO 14067",
+        "GHG Protocol",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
       ],
       "pageUrl": "/begriffe/benchmark/",
       "priority": 101,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Ein Benchmark ist ein Vergleichsmaßstab für Wirkung, Risiken oder Datenqualität.",
+      "version": "1.1",
+      "category": "Messung, Bewertung & Scorecards",
+      "source": "Glossar-Pack 006",
+      "sourceDocument": "Glossar-Pack 006: Daten, Indikatoren & technische Bewertungslogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 006",
+      "hoverDefinition": "Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann.",
       "doNotConfuseWith": [
         "Scorecard",
-        "FinalScore"
+        "FinalScore",
+        "Ziel: beschreibt Richtung; Benchmark macht Vergleich bewertbar.",
+        "Messwert: beobachtete Größe; Benchmark ist Vergleichswert.",
+        "Archetyp: Bewertungsfunktion; Benchmark ist Referenzwert innerhalb dieser Funktion.",
+        "Score: Ergebnis der Bewertung.",
+        "Gesetzlicher Grenzwert: kann Benchmark sein, aber nicht jeder Benchmark ist Gesetz.",
+        "Branchendurchschnitt: kann Referenz sein, ist nicht automatisch guter Benchmark."
       ],
       "relatedDocuments": [
-        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
       ],
-      "examples": [],
-      "preferredUsage": "Benchmark als prüfbaren Vergleichspunkt verwenden.",
+      "examples": [
+        "Produkt-CO2 wird in kg CO2e pro funktionaler Einheit benchmarkfähig.",
+        "Wasserbenchmarks berücksichtigen Verbrauch und regionalen Wasserstress.",
+        "Living-Wage-Benchmark kann 100 Prozent existenzsichernde Bezahlung sein.",
+        "Reparierbarkeit kann Ersatzteilverfügbarkeit über Nutzungsdauer benchmarken.",
+        "Medienqualität kann Quellenklarheit, Korrekturpraxis, Faktenprüfung und Pluralität benchmarken."
+      ],
+      "preferredUsage": "Als Vergleichs- oder Schwellenwert im Zusammenspiel mit Indikator, Datenqualität, Archetyp und Scorecard verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "benchmark",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "scorecard",
         "finalscore",
         "woek-id",
         "archetyp",
         "datenqualitaet",
-        "wirkungsrat"
+        "wirkungsrat",
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nace",
+        "systemgrenze",
+        "messwert",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "benchmark",
+        "wirkungsbewertung",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "internal_links": [
+        "scorecard",
+        "finalscore",
+        "woek-id",
+        "archetyp",
+        "datenqualitaet",
+        "wirkungsrat",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "nace",
+        "systemgrenze",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "t-sroi",
+        "nwi",
+        "benchmark",
+        "wirkungsbewertung",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "Anschlussbegriff / WÖk-Präzisierung",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
       "theme": [
         "Messbegriff"
       ],
@@ -22052,7 +22640,115 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "006",
+      "cluster": "Daten, Indikatoren & technische Bewertungslogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- geben Messwerten Bedeutung\n- ohne Vergleichsmaßstab sind CO2-, Wasser-, Lohn- oder Reparaturwerte kaum bewertbar\n- müssen zu Branche, Produktgruppe, Region, Technologie, Lebenszyklus und Systemgrenze passen\n- verbinden Wirkungsindikatoren mit Scorecards\n- sind begründete Referenzwerte, keine beliebigen Wunschwerte\n- müssen versioniert, quellenklar und überprüfbar sein\n- schlechte Benchmarks erzeugen falsche Steuerung"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Benchmark beantwortet, ob ein Messwert im jeweiligen Kontext gut, neutral, kritisch oder schädlich ist. Ein Wasserverbrauch kann je nach Region und Wasserstress unterschiedlich zu bewerten sein; ein CO2-Wert kann für eine Branche gut und für eine andere schlecht sein. Benchmarks können sektoral, regional, technologisch, wissenschaftlich, rechtlich oder normativ begründet sein und werden mit WÖk-IDs, NACE-Codes, Produktgruppen, Archetypen, Scorecards und Datenqualitätsanforderungen verbunden."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Die WÖk braucht Vergleichbarkeit ohne Gleichmacherei. Benchmarks ermöglichen faire Einordnung, Kontextvergleich, Score-Ableitung, Produktscorecards, Wirkungssteuer, Register, Audit, Assurance, T-SROI, NWI, Beschaffung sowie Kapital- und Versicherungsentscheidungen."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Benchmarks sind lernende Referenzwerte, keine ewigen Wahrheiten. Sie können Mindestbenchmark, Neutralbenchmark, Transformationsbenchmark, rote Linie, Branchenbenchmark, Best-Available-Technology-Benchmark oder wissenschaftlicher Zielbenchmark sein. Änderungen müssen dokumentiert und überprüfbar sein."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Ziel: beschreibt Richtung; Benchmark macht Vergleich bewertbar.\n- Messwert: beobachtete Größe; Benchmark ist Vergleichswert.\n- Archetyp: Bewertungsfunktion; Benchmark ist Referenzwert innerhalb dieser Funktion.\n- Score: Ergebnis der Bewertung.\n- Gesetzlicher Grenzwert: kann Benchmark sein, aber nicht jeder Benchmark ist Gesetz.\n- Branchendurchschnitt: kann Referenz sein, ist nicht automatisch guter Benchmark."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Produkt-CO2 wird in kg CO2e pro funktionaler Einheit benchmarkfähig.\n- Wasserbenchmarks berücksichtigen Verbrauch und regionalen Wasserstress.\n- Living-Wage-Benchmark kann 100 Prozent existenzsichernde Bezahlung sein.\n- Reparierbarkeit kann Ersatzteilverfügbarkeit über Nutzungsdauer benchmarken.\n- Medienqualität kann Quellenklarheit, Korrekturpraxis, Faktenprüfung und Pluralität benchmarken."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind benchmark_id, related_wok_id, indicator_family, dimension, sdg_reference, sdgplus_reference, nace_code, product_group, region, technology_class, lifecycle_stage, unit, polarity, benchmark_type, baseline_value, neutral_threshold, positive_threshold, transformative_threshold, red_flag_threshold, source_reference, legal_reference, scientific_reference, data_quality_requirement, valid_from, valid_until, version, review_cycle und governance_owner. BenchmarkScore bezeichnet die Bewertung eines Messwerts im Vergleich zum Benchmark und darf nicht isoliert verwendet werden."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Scorecard\n- FinalScore\n- WÖk-ID\n- Archetyp\n- Datenqualität\n- Wirkungsrat\n- wirkungscontrolling\n- Wirkungsindikator\n- Produktscorecard\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- NACE\n- Systemgrenze\n- messwert\n- datenquelle\n- Reverse Merit Order\n- Wirkungsgrenze\n- Wirkungssteuer\n- T-SROI\n- NWI\n- Benchmark\n- Wirkungsbewertung\n- Nichtkompensationsprinzip\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- wirkungssimulation\n- Digitaler Produktpass\n- Produktdaten\n- Wirkungsdatenraum\n- CSRD\n- ESRS\n- GRI\n- EU-Taxonomie\n- SDGs\n- SDG+\n- Mensch, Planet und Demokratie\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsrückkopplung\n- Produktwirkung\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Technische Leitlinien WUStG\n- WÖk-Master-Items\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- BASF Polyamid Beispiel von der CSRD zur Produktscorecard\n- Wirkungsoekonomie in der Lieferkette\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- Digital Product Passport / ESPR\n- Product Environmental Footprint\n- ISO 14040 / ISO 14044\n- ISO 14064 / ISO 14067\n- GHG Protocol\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 006\n- Cluster: Daten, Indikatoren & technische Bewertungslogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "beobachterabhaengigkeit",
@@ -37452,20 +38148,37 @@
       "canonicalLabel": "Datenqualität",
       "slug": "datenqualitaet",
       "aliases": [
-        "Datenqualität"
+        "Datenqualität",
+        "Qualität von Wirkungsdaten",
+        "Datenqualitätsklasse",
+        "Data Quality",
+        "Verlässlichkeit von Daten",
+        "Prüfstatus von Daten",
+        "Wirkungsdatenqualität",
+        "Evidenzqualität"
       ],
       "synonyms": [
-        "Datenqualität"
+        "Datenqualität",
+        "Qualität von Wirkungsdaten",
+        "Datenqualitätsklasse",
+        "Data Quality",
+        "Verlässlichkeit von Daten",
+        "Prüfstatus von Daten",
+        "Wirkungsdatenqualität",
+        "Evidenzqualität"
       ],
-      "shortDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
-      "definition": "Die WÖk macht Datenqualität sichtbar, damit unsichere Daten nicht wie Gewissheit wirken.",
-      "longDefinition": "Die WÖk macht Datenqualität sichtbar, damit unsichere Daten nicht wie Gewissheit wirken.",
-      "woekRelation": "Immer mit Datenquelle, Annahmen und Unsicherheit verbinden.",
+      "shortDefinition": "Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind.",
+      "definition": "Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind.",
+      "longDefinition": "Datenqualität bezeichnet die Verlässlichkeit und Eignung von Daten, die zur Messung, Bewertung und Rückkopplung von Wirkung verwendet werden. Sie kennzeichnet Herkunft, Methode, Systemgrenze, Aktualität, Vollständigkeit, Prüfbarkeit, Unsicherheit, Version und Prüfstatus.",
+      "woekRelation": "Datenqualität schützt Wirkungswahrheit, Register, Scorecards, FinalScore, Audit, Assurance, Responsible Marketing und Rechtsschutz vor Scheingenauigkeit und Datenkosmetik.",
       "statusNote": "Immer mit Datenquelle, Annahmen und Unsicherheit verbinden.",
-      "usageNote": "Immer mit Datenquelle, Annahmen und Unsicherheit verbinden.",
+      "usageNote": "Nicht mit Datenmenge verwechseln. Viele Daten bedeuten nicht gute Daten; entscheidend sind Herkunft, Eignung, Prüfbarkeit und Kennzeichnung von Unsicherheit.",
       "categories": [
         "daten-standards-regularien",
-        "woek-uebersetzung"
+        "woek-uebersetzung",
+        "Daten, Prüfung & Wirkungsarchitektur",
+        "Daten, Indikatoren & technische Bewertungslogik",
+        "Glossar-Pack 006"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
@@ -37490,31 +38203,110 @@
         "lebenszyklusinventar",
         "scope-3-datenqualitaet",
         "gender-data-gap",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "archetyp",
+        "finalscore",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "versionierung",
+        "rechtsschutz",
+        "datenqualitaet",
+        "produktscorecard",
+        "scorecard",
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "sdg-washing",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "officialSources": [
-        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting",
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "Digital Product Passport / ESPR",
+        "Product Environmental Footprint",
+        "ISO 14040 / ISO 14044",
+        "ISO 14064 / ISO 14067",
+        "GHG Protocol",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
       ],
       "pageUrl": "/begriffe/datenqualitaet/",
       "priority": 103,
       "status": "anschlussbegriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
-      "source": "Daten, Standards und Regularien",
-      "sourceDocument": "Glossar-Datenstandards",
-      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Datenqualität beschreibt, wie belastbar, aktuell, vollständig, vergleichbar und überprüfbar Daten sind.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [
-        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      "version": "1.1",
+      "category": "Daten, Prüfung & Wirkungsarchitektur",
+      "source": "Glossar-Pack 006",
+      "sourceDocument": "Glossar-Pack 006: Daten, Indikatoren & technische Bewertungslogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 006",
+      "hoverDefinition": "Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind.",
+      "doNotConfuseWith": [
+        "Datenmenge: viele Daten bedeuten nicht gute Daten.",
+        "Transparenz: zeigt Daten; Datenqualität bewertet ihre Verlässlichkeit.",
+        "Prüfstatus: ist Teil der Datenqualität, aber nicht das Ganze.",
+        "Assurance: bestätigt bestimmte Informationen mit definierter Prüftiefe; Datenqualität ist breiter.",
+        "Datenintegrität: betrifft Herkunft und Manipulationsschutz; Datenqualität umfasst auch Eignung und Aktualität.",
+        "Score: ist Bewertung; Datenqualität beschreibt Belastbarkeit der Datenbasis."
       ],
-      "examples": [],
-      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
+      "examples": [
+        "Ein CO2-Wert aus geprüfter LCA hat höhere Datenqualität als ein grober Branchenwert.",
+        "Ein Wasserwert ohne Region ist für Wasserstressbewertung nur begrenzt geeignet.",
+        "Living-Wage-Angaben ohne Lohnbänder, Auditnachweise oder Standortdaten haben niedrige Datenqualität.",
+        "Ein DPP ohne Version oder Chargenbezug ist nutzbar, aber nicht ausreichend auditierbar.",
+        "Veraltete Benchmarks senken die Datenqualität der Bewertung, auch wenn Rohdaten korrekt sind."
+      ],
+      "preferredUsage": "Als Belastbarkeitsangabe für Wirkungsdaten und Scores verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "Datenqualität",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "datenluecke",
         "konservative-annahme",
@@ -37533,16 +38325,169 @@
         "emissionsfaktor",
         "lebenszyklusinventar",
         "scope-3-datenqualitaet",
-        "gender-data-gap"
+        "gender-data-gap",
+        "wirkungscontrolling",
+        "archetyp",
+        "finalscore",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungswahrheit",
+        "wirkungssimulation",
+        "greenwashing",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "versionierung",
+        "rechtsschutz",
+        "datenqualitaet",
+        "produktscorecard",
+        "scorecard",
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "sdg-washing",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "internal_links": [
+        "datenluecke",
+        "konservative-annahme",
+        "assurance",
+        "wirkungsdaten",
+        "benchmark",
+        "impact-washing",
+        "limited-assurance",
+        "qualitaetssicherung",
+        "quellenklarheit",
+        "reasonable-assurance",
+        "vsme",
+        "wirkungsindikator",
+        "wirkungsregister",
+        "woek-id",
+        "emissionsfaktor",
+        "lebenszyklusinventar",
+        "scope-3-datenqualitaet",
+        "gender-data-gap",
+        "archetyp",
+        "finalscore",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungswahrheit",
+        "greenwashing",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungsdatenraum",
+        "systemgrenze",
+        "rechtsschutz",
+        "datenqualitaet",
+        "produktscorecard",
+        "scorecard",
+        "wirkungsbewertung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "sdg-washing",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Präzisierungsbegriff / technischer Schutzbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / technischer Schutzbegriff",
       "theme": [
         "Datenbegriff"
       ],
@@ -37573,7 +38518,115 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "006",
+      "cluster": "Daten, Indikatoren & technische Bewertungslogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- entscheidet, wie belastbar ein Wirkungswert ist\n- betrifft Herkunft, Methode, Systemgrenze, Aktualität, Vollständigkeit, Prüfbarkeit und Unsicherheit\n- bedeutet nicht perfekte Daten, sondern klare Kennzeichnung\n- schlechte oder unklare Daten dürfen keine positive Wirkung vortäuschen\n- schützt vor Greenwashing, Wirkungssimulation und Scheingenauigkeit\n- zentral für Register, Audit, Assurance, FinalScore und Rechtsschutz\n- jeder Score braucht einen Prüfpfad"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Datenqualität beschreibt, ob ein Wert gemessen, berechnet, geschätzt, plausibilisiert, standardisiert, geprüft, veraltet, unvollständig oder unsicher ist. Ein identischer Messwert kann unterschiedlich belastbar sein, je nachdem ob er aus Primärmessung, Audit, EPD, LCA, CSRD-/ESRS-Bericht, GRI-Report, amtlicher Statistik, Branchenwert, Modellschätzung oder unklarer Selbstauskunft stammt. Ein Score darf nie exakter erscheinen, als die Datenlage erlaubt."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wenn Wirkungsdaten Preise, Steuern, Kapitalzugang, Versicherung, Beschaffung, Marketingclaims oder Förderungen beeinflussen, entstehen Anreize zur Datenkosmetik. Datenqualität macht sichtbar, ob ein Wert belastbar, unsicher, vorläufig oder für Steuerung ungeeignet ist."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Datenqualität ist Teil der Wirkungsarchitektur und entscheidet, wie viel Vertrauen eine Bewertung verdient. Mögliche Klassen reichen von ungeprüft oder unzulässig über geschätzt, plausibilisiert, berichtet und geprüft bis zu auditierbar und registerfähig. Schlechte Daten können genutzt werden, wenn sie klar gekennzeichnet und konservativ behandelt werden."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Datenmenge: viele Daten bedeuten nicht gute Daten.\n- Transparenz: zeigt Daten; Datenqualität bewertet ihre Verlässlichkeit.\n- Prüfstatus: ist Teil der Datenqualität, aber nicht das Ganze.\n- Assurance: bestätigt bestimmte Informationen mit definierter Prüftiefe; Datenqualität ist breiter.\n- Datenintegrität: betrifft Herkunft und Manipulationsschutz; Datenqualität umfasst auch Eignung und Aktualität.\n- Score: ist Bewertung; Datenqualität beschreibt Belastbarkeit der Datenbasis."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein CO2-Wert aus geprüfter LCA hat höhere Datenqualität als ein grober Branchenwert.\n- Ein Wasserwert ohne Region ist für Wasserstressbewertung nur begrenzt geeignet.\n- Living-Wage-Angaben ohne Lohnbänder, Auditnachweise oder Standortdaten haben niedrige Datenqualität.\n- Ein DPP ohne Version oder Chargenbezug ist nutzbar, aber nicht ausreichend auditierbar.\n- Veraltete Benchmarks senken die Datenqualität der Bewertung, auch wenn Rohdaten korrekt sind."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind data_quality_class, source_type, source_reference, measurement_method, calculation_method, system_boundary, geographic_scope, temporal_scope, lifecycle_stage, collection_date, reporting_period, verification_status, assurance_status, auditor_reference, uncertainty_level, completeness_level, update_frequency, version, signature_status, audit_trail_reference, correction_history und objection_status. Fehlende Daten dürfen nicht positiv wirken; bei Lücken sind konservative Default-Werte zulässig. Positive Claims und steuerungsrelevante Scores benötigen höhere Datenqualität."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Datenlücke\n- Konservative Annahme\n- Assurance\n- Wirkungsdaten\n- Benchmark\n- Impact-Washing\n- Limited Assurance\n- Qualitätssicherung\n- Quellenklarheit\n- Reasonable Assurance\n- VSME\n- Wirkungsindikator\n- Wirkungsregister\n- WÖk-ID\n- Emissionsfaktor\n- Lebenszyklusinventar / LCI\n- Scope-3-Datenqualität\n- Gender Data Gap\n- wirkungscontrolling\n- Archetyp\n- FinalScore\n- Wirkungsaudit\n- Wirkungsassurance\n- Wirkungsrat\n- Wirkungswahrheit\n- wirkungssimulation\n- Greenwashing\n- Produktdaten\n- Digitaler Produktpass\n- Wirkungsdatenraum\n- datenquelle\n- Systemgrenze\n- messwert\n- versionierung\n- Rechtsschutz\n- Datenqualität\n- Produktscorecard\n- Scorecard\n- Wirkungsbewertung\n- Reverse Merit Order\n- Wirkungsgrenze\n- Nichtkompensationsprinzip\n- Wirkungsblindheit\n- SDG-Washing\n- NACE\n- CSRD\n- ESRS\n- GRI\n- EU-Taxonomie\n- SDGs\n- SDG+\n- Mensch, Planet und Demokratie\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsrückkopplung\n- Produktwirkung\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Technische Leitlinien WUStG\n- WÖk-Master-Items\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- BASF Polyamid Beispiel von der CSRD zur Produktscorecard\n- Wirkungsoekonomie in der Lieferkette\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- Digital Product Passport / ESPR\n- Product Environmental Footprint\n- ISO 14040 / ISO 14044\n- ISO 14064 / ISO 14067\n- GHG Protocol\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 006\n- Cluster: Daten, Indikatoren & technische Bewertungslogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "dc-laden",
@@ -74616,19 +75669,36 @@
       "canonicalLabel": "FinalScore",
       "slug": "finalscore",
       "aliases": [
-        "FinalScore"
+        "FinalScore",
+        "Final Score",
+        "Gesamt-Score",
+        "Endscore",
+        "Wirkungsgesamtbewertung",
+        "steuerungsfähige Gesamtbewertung",
+        "Scorecard-Finalwert",
+        "WÖk-FinalScore"
       ],
       "synonyms": [
-        "FinalScore"
+        "FinalScore",
+        "Final Score",
+        "Gesamt-Score",
+        "Endscore",
+        "Wirkungsgesamtbewertung",
+        "steuerungsfähige Gesamtbewertung",
+        "Scorecard-Finalwert",
+        "WÖk-FinalScore"
       ],
-      "shortDefinition": "Der FinalScore ist ein methodisch verdichtetes Ergebnis einer Wirkungsbewertung.",
-      "definition": "Der FinalScore verdichtet Einzelscores, Datenqualität, rote Linien und Reverse Merit Order. Er darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden.",
-      "longDefinition": "Der FinalScore verdichtet Einzelscores, Datenqualität, rote Linien und Reverse Merit Order. Er darf nicht als bloße Summe positiver und negativer Wirkungen missverstanden werden.",
-      "woekRelation": "Nicht als beliebigen Durchschnitt darstellen.",
+      "shortDefinition": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt.",
+      "definition": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt.",
+      "longDefinition": "Der FinalScore ist die zusammengeführte, steuerungsfähige Gesamtbewertung einer Scorecard. Er ist keine Durchschnittsnote und keine endgültige Wahrheit, sondern eine dokumentierte, versionierte und prüfbare Bewertung nach festgelegter Wirkungslogik.",
+      "woekRelation": "Der FinalScore macht komplexe Wirkungsdaten entscheidungsfähig, ohne kritische Schäden zu verdecken. Reverse Merit Order und Wirkungsgrenzen begrenzen ihn.",
       "statusNote": "Nicht als beliebigen Durchschnitt darstellen.",
-      "usageNote": "Nicht als beliebigen Durchschnitt darstellen.",
+      "usageNote": "Nicht als Durchschnittsnote, Label oder endgültige Wahrheit verwenden. Datenqualität, Prüfstatus, Systemgrenzen, Unsicherheit und Version müssen sichtbar bleiben.",
       "categories": [
-        "messbegriff"
+        "messbegriff",
+        "Messung, Bewertung & Scorecards",
+        "Daten, Indikatoren & technische Bewertungslogik",
+        "Glossar-Pack 006"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -74638,47 +75708,271 @@
         "netto-wirkung",
         "benchmark",
         "nwi",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "archetyp",
+        "produktscorecard",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "positive-netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungssimulation",
+        "t-sroi",
+        "finalscore",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "Digital Product Passport / ESPR",
+        "Product Environmental Footprint",
+        "ISO 14040 / ISO 14044",
+        "ISO 14064 / ISO 14067",
+        "GHG Protocol",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
+      ],
       "pageUrl": "/begriffe/finalscore/",
       "priority": 36,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Der FinalScore ist die steuerungsrelevante Verdichtung von Einzelscores unter Berücksichtigung von Datenqualität, Reverse Merit Order und Nichtkompensation.",
+      "version": "1.1",
+      "category": "Messung, Bewertung & Scorecards",
+      "source": "Glossar-Pack 006",
+      "sourceDocument": "Glossar-Pack 006: Daten, Indikatoren & technische Bewertungslogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 006",
+      "hoverDefinition": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt.",
       "doNotConfuseWith": [
         "Netto-Wirkung",
-        "Scorecard"
+        "Scorecard",
+        "Durchschnittsscore: FinalScore ist keine arithmetische Durchschnittsnote.",
+        "Einzelscore: bewertet ein Feld; FinalScore verdichtet relevante Felder.",
+        "AutoScore: entsteht aus Archetyp und Schwellen; FinalScore ist Gesamtbewertung.",
+        "BenchmarkScore: entsteht aus Referenzvergleich; FinalScore führt Bewertungslogik zusammen.",
+        "WÖk-ID: identifiziert Indikator; FinalScore bewertet Objekt.",
+        "Label oder Zertifikat: kann Darstellung oder Prüfstatus sein, ersetzt aber nicht Bewertungslogik.",
+        "Positive Netto-Wirkung: Zielgröße; FinalScore ist technischer Bewertungsindikator, keine vollständige Wirkungsanalyse."
       ],
       "relatedDocuments": [
-        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
       ],
-      "examples": [],
-      "preferredUsage": "FinalScore als Ergebnis mit Schutzlogik verwenden.",
+      "examples": [
+        "Ein Produkt mit Klima +2, Ressourcen +1, Arbeit -2 und Gesundheit +1 wird nicht neutralisiert; Arbeit begrenzt den FinalScore.",
+        "Ein Smartphone mit guter Energieeffizienz, aber kritischer Reparierbarkeit und Rohstoffdaten darf Probleme nicht durch Nutzungsvorteile verdecken.",
+        "Ein Lebensmittel mit guter regionaler Lieferkette, aber hohen Pestizidrückständen wird begrenzt.",
+        "Eine öffentliche Investition mit Klimavorteil, aber starker Verdrängung muss die soziale Grenze berücksichtigen.",
+        "Ein Marketingclaim darf nur verwendet werden, wenn FinalScore und Daten den Claim tragen."
+      ],
+      "preferredUsage": "Als steuerungsfähige Gesamtbewertung für Scorecards, Preise, Steuern, Beschaffung, Kapitalzugang und Claims verwenden.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "finalscore",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "scorecard",
         "reverse-merit-order",
         "netto-wirkung",
         "benchmark",
-        "nwi"
+        "nwi",
+        "wirkungscontrolling",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "archetyp",
+        "produktscorecard",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "positive-netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungssimulation",
+        "t-sroi",
+        "finalscore",
+        "datenquelle",
+        "systemgrenze",
+        "messwert",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "internal_links": [
+        "scorecard",
+        "reverse-merit-order",
+        "netto-wirkung",
+        "benchmark",
+        "nwi",
+        "wirkungsindikator",
+        "woek-id",
+        "datenqualitaet",
+        "archetyp",
+        "produktscorecard",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "positive-netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "t-sroi",
+        "finalscore",
+        "systemgrenze",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "impact-washing",
+        "sdg-washing",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsdatenraum",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / technischer Bewertungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / technischer Bewertungsbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -74709,7 +76003,115 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "006",
+      "cluster": "Daten, Indikatoren & technische Bewertungslogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Der FinalScore ist die steuerungsfähige Gesamtbewertung einer Scorecard, die Einzelscores, Datenqualität, rote Linien und Reverse Merit Order zusammenführt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- keine Durchschnittsnote\n- fasst relevante Einzelbewertungen nach festgelegter Wirkungslogik zusammen\n- kritische negative Felder dürfen nicht durch positive Felder verdeckt werden\n- Reverse Merit Order und Wirkungsgrenzen begrenzen ihn\n- Datenqualität, Prüfstatus und Systemgrenzen bleiben sichtbar\n- kann Steuerklasse, Preiswirkung, Beschaffung, Kapitalzugang, Marketingfreigabe oder Auditpflicht auslösen\n- steuerungsfähige Bewertung, keine endgültige Wahrheit"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Der FinalScore entsteht aus den relevanten Einzelbewertungen eines Produkts, einer Tätigkeit, eines Unternehmens, einer Investition, eines Projekts, einer Immobilie, eines Medienformats oder öffentlichen Programms. Er berücksichtigt Datenqualität, Systemgrenzen, Benchmarks, Archetypen, Ausschlussindikatoren, Wirkungsgrenzen und Reverse Merit Order. Ein schwer negatives Wirkungsfeld kann die Gesamtbewertung begrenzen, auch wenn andere Felder positiv sind."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Märkte, Steuern, Beschaffung, Kapital, Versicherungen und Verbraucherinformation brauchen entscheidungsfähige Bewertungen. Der FinalScore ermöglicht Wirkungssteuerklassen, Wirkung im Preisschild, Beschaffung nach Wirkung, Responsible Marketing, Greenwashing-Prüfung, Kapitalzugang, Versicherbarkeit, Register, Audit, Assurance, T-SROI, NWI, Managemententscheidungen und Lieferantensteuerung."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk behandelt den FinalScore als Ergebnis einer Schutzlogik. Er schafft Vergleichbarkeit, ohne Schönrechnung zuzulassen. Die Grundlogik: Wirkungsfelder bestimmen, WÖk-IDs zuordnen, Messwerte erfassen, Datenqualität prüfen, Benchmarks und Archetypen anwenden, Einzel-Scores berechnen, rote Linien prüfen, Reverse Merit Order anwenden, FinalScore bestimmen, Prüfstatus und Version dokumentieren, Rückkopplungskanal auslösen."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Durchschnittsscore: FinalScore ist keine arithmetische Durchschnittsnote.\n- Einzelscore: bewertet ein Feld; FinalScore verdichtet relevante Felder.\n- AutoScore: entsteht aus Archetyp und Schwellen; FinalScore ist Gesamtbewertung.\n- BenchmarkScore: entsteht aus Referenzvergleich; FinalScore führt Bewertungslogik zusammen.\n- WÖk-ID: identifiziert Indikator; FinalScore bewertet Objekt.\n- Label oder Zertifikat: kann Darstellung oder Prüfstatus sein, ersetzt aber nicht Bewertungslogik.\n- Positive Netto-Wirkung: Zielgröße; FinalScore ist technischer Bewertungsindikator, keine vollständige Wirkungsanalyse."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Produkt mit Klima +2, Ressourcen +1, Arbeit -2 und Gesundheit +1 wird nicht neutralisiert; Arbeit begrenzt den FinalScore.\n- Ein Smartphone mit guter Energieeffizienz, aber kritischer Reparierbarkeit und Rohstoffdaten darf Probleme nicht durch Nutzungsvorteile verdecken.\n- Ein Lebensmittel mit guter regionaler Lieferkette, aber hohen Pestizidrückständen wird begrenzt.\n- Eine öffentliche Investition mit Klimavorteil, aber starker Verdrängung muss die soziale Grenze berücksichtigen.\n- Ein Marketingclaim darf nur verwendet werden, wenn FinalScore und Daten den Claim tragen."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind final_score_id, assessed_object, object_type, scorecard_reference, relevant_wok_ids, field_scores, auto_scores, benchmark_scores, data_quality_summary, weakest_field, reverse_merit_order_applied, red_flags, impact_boundaries, non_compensation_result, final_score_value, final_score_class, confidence_level, assurance_status, audit_status, valid_from, valid_until, version, explanation, steering_channel, correction_history und objection_status. Klassen reichen von -3 hoch schädlich bis +3 transformativ."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Scorecard\n- Reverse Merit Order\n- Netto-Wirkung\n- Benchmark\n- NWI\n- wirkungscontrolling\n- Wirkungsindikator\n- WÖk-ID\n- Datenqualität\n- Archetyp\n- Produktscorecard\n- Wirkungsgrenze\n- Nichtkompensationsprinzip\n- positive Netto-Wirkung\n- Wirkungsbewertung\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- Wirkungsrat\n- Wirkungssteuer\n- Responsible Marketing\n- Greenwashing\n- wirkungssimulation\n- T-SROI\n- FinalScore\n- datenquelle\n- Systemgrenze\n- messwert\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Impact-Washing\n- SDG-Washing\n- Digitaler Produktpass\n- Produktdaten\n- Wirkungsdatenraum\n- NACE\n- CSRD\n- ESRS\n- GRI\n- EU-Taxonomie\n- SDGs\n- SDG+\n- Mensch, Planet und Demokratie\n- Wirkung\n- Wirkungspotenzial\n- Transformationswirkung\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsrückkopplung\n- Produktwirkung\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Technische Leitlinien WUStG\n- WÖk-Master-Items\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- BASF Polyamid Beispiel von der CSRD zur Produktscorecard\n- Wirkungsoekonomie in der Lieferkette\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- Digital Product Passport / ESPR\n- Product Environmental Footprint\n- ISO 14040 / ISO 14044\n- ISO 14064 / ISO 14067\n- GHG Protocol\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 006\n- Cluster: Daten, Indikatoren & technische Bewertungslogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "finanzmarktkapitalismus",
@@ -296118,20 +297520,37 @@
       "canonicalLabel": "Wirkungsindikator",
       "slug": "wirkungsindikator",
       "aliases": [
-        "Wirkungsindikator"
+        "Wirkungsindikator",
+        "Impact Indicator",
+        "Wirkungskennzahl",
+        "Indikator der Wirkung",
+        "WÖk-Indikator",
+        "Wirkungsdatenpunkt",
+        "Wirkungs-Messgröße",
+        "Indikatorfamilie"
       ],
       "synonyms": [
-        "Wirkungsindikator"
+        "Wirkungsindikator",
+        "Impact Indicator",
+        "Wirkungskennzahl",
+        "Indikator der Wirkung",
+        "WÖk-Indikator",
+        "Wirkungsdatenpunkt",
+        "Wirkungs-Messgröße",
+        "Indikatorfamilie"
       ],
-      "shortDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
-      "definition": "Die WÖk nutzt Indikatoren aus Standards, Datenquellen und Kontextwissen, ordnet sie aber nach Wirkungspfad, Datenqualität und Schutzgrenzen ein.",
-      "longDefinition": "Die WÖk nutzt Indikatoren aus Standards, Datenquellen und Kontextwissen, ordnet sie aber nach Wirkungspfad, Datenqualität und Schutzgrenzen ein.",
-      "woekRelation": "Nicht mit Wirkung selbst verwechseln.",
+      "shortDefinition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
+      "definition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
+      "longDefinition": "Ein Wirkungsindikator ist eine definierte Mess-, Beobachtungs- oder Bewertungsgröße, mit der ein bestimmter Wirkungsaspekt sichtbar gemacht wird. Er ist nicht selbst Wirkung, sondern ein strukturierter Zugang zu tatsächlichen Zustandsveränderungen.",
+      "woekRelation": "Wirkungsindikatoren machen Wirkung prüfbar, vergleichbar und anschlussfähig. Über WÖk-IDs werden sie technisch adressierbar und können in Scorecards, Register, Audits und Rückkopplungssysteme einfließen.",
       "statusNote": "Nicht mit Wirkung selbst verwechseln.",
-      "usageNote": "Nicht mit Wirkung selbst verwechseln.",
+      "usageNote": "Nicht mit WÖk-ID verwechseln: Die WÖk-ID ist die Kennung, der Wirkungsindikator ist das inhaltliche Messobjekt.",
       "categories": [
         "daten-standards-regularien",
-        "woek-uebersetzung"
+        "woek-uebersetzung",
+        "Daten, Messung & Indikatoren",
+        "Daten, Indikatoren & technische Bewertungslogik",
+        "Glossar-Pack 006"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
@@ -296142,45 +297561,267 @@
         "wirkungspfad",
         "datenqualitaet",
         "scorecard",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "woek-id",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "messwert",
+        "systemgrenze",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "wirkungsdatenraum",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungsrat"
       ],
       "officialSources": [
-        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar"
+        "WÖk Glossar|https://wirkungsoekonomie.de/glossar.html#daten-standards-glossar",
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "Digital Product Passport / ESPR",
+        "Product Environmental Footprint",
+        "ISO 14040 / ISO 14044",
+        "ISO 14064 / ISO 14067",
+        "GHG Protocol",
+        "OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
       ],
       "pageUrl": "/begriffe/wirkungsindikator/",
       "priority": 99,
       "status": "anschlussbegriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
-      "source": "Daten, Standards und Regularien",
-      "sourceDocument": "Glossar-Datenstandards",
-      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare oder beschreibbare Größe, die Hinweise auf Wirkung, Wirkungspotenzial oder Wirkungsrisiko gibt.",
-      "doNotConfuseWith": [],
-      "relatedDocuments": [
-        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      "version": "1.1",
+      "category": "Daten, Messung & Indikatoren",
+      "source": "Glossar-Pack 006",
+      "sourceDocument": "Glossar-Pack 006: Daten, Indikatoren & technische Bewertungslogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 006",
+      "hoverDefinition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
+      "doNotConfuseWith": [
+        "WÖk-ID: technische Kennung; Wirkungsindikator: gemessener Wirkungsaspekt.",
+        "KPI: kann jede Leistungskennzahl sein; Wirkungsindikator bezieht sich auf Zustandsveränderung für Mensch, Planet und Demokratie.",
+        "Messwert: konkreter erhobener Wert; Indikator definiert, was gemessen wird.",
+        "Score: Bewertungsergebnis; Indikator ist Bewertungsgegenstand.",
+        "Benchmark: Vergleichsmaßstab; Indikator ist die gemessene Größe.",
+        "Nachhaltigkeitsclaim: behauptet; Indikator belegt oder widerlegt."
       ],
-      "examples": [],
-      "preferredUsage": "Als Anschlussbegriff verwenden und von WÖk-Bewertung unterscheiden.",
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Die neue Ordnung des Wohlstands",
+        "Technische Leitlinien WUStG",
+        "WÖk-Master-Items",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "BASF Polyamid Beispiel von der CSRD zur Produktscorecard",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper"
+      ],
+      "examples": [
+        "Ein Produkt-CO2-Indikator misst Treibhausgasemissionen pro funktionaler Einheit.",
+        "Ein Wasserstress-Indikator verbindet Wasserverbrauch mit regionaler Knappheit.",
+        "Ein Living-Wage-Indikator misst existenzsichernde Bezahlung in relevanten Lieferkettenstufen.",
+        "Ein Reparierbarkeitsindikator misst Ersatzteilverfügbarkeit, Demontierbarkeit und Support.",
+        "Ein Medienqualitätsindikator beschreibt Quellenklarheit, Korrekturpraxis und Pluralität."
+      ],
+      "preferredUsage": "Als Mess- oder Beobachtungspunkt für einen Wirkungsaspekt verwenden, nie als vollständiges Wirkungsurteil.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "Wirkungsindikator",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "wirkungsdaten",
         "wirkungspfad",
         "datenqualitaet",
-        "scorecard"
+        "scorecard",
+        "wirkungscontrolling",
+        "woek-id",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "messwert",
+        "systemgrenze",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenquelle",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungssimulation",
+        "wirkungsdatenraum",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungsrat"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "internal_links": [
+        "wirkungsdaten",
+        "wirkungspfad",
+        "datenqualitaet",
+        "scorecard",
+        "woek-id",
+        "benchmark",
+        "archetyp",
+        "finalscore",
+        "wirkungsregister",
+        "wirkungsbewertung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "systemgrenze",
+        "wirkungsindikator",
+        "produktscorecard",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "wirkungsdatenraum",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "produktwirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungsrat"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Präzisierungsbegriff / technischer Grundbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / technischer Grundbegriff",
       "theme": [
         "Datenbegriff"
       ],
@@ -296211,7 +297852,115 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "006",
+      "cluster": "Daten, Indikatoren & technische Bewertungslogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        },
+        {
+          "label": "GHG Protocol",
+          "url": "https://ghgprotocol.org/"
+        },
+        {
+          "label": "ILO",
+          "url": "https://www.ilo.org/"
+        },
+        {
+          "label": "OECD Responsible Business Conduct",
+          "url": "https://www.oecd.org/corporate/mne/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- macht einen Wirkungsaspekt messbar oder strukturiert bewertbar\n- ist nicht selbst Wirkung, sondern Beobachtungspunkt für Wirkung\n- kann ökologisch, sozial, gesundheitlich, demokratisch, ökonomisch oder systemisch sein\n- wird in der WÖk über eine WÖk-ID eindeutig adressierbar\n- braucht Einheit, Datenquelle, Systemgrenze, Datenqualität, Bewertungsrichtung und Version\n- erst Messwert, Benchmark, Archetyp und Bewertungslogik erzeugen einen Score\n- schützt vor vagen Claims, bleibt aber abhängig von Datenqualität und Einordnung"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Wirkungsindikator beschreibt, was gemessen oder bewertet werden soll: etwa CO2-Emissionen pro Produkteinheit, Wasserverbrauch in einer Stressregion, existenzsichernde Löhne in der Lieferkette, Reparierbarkeit, Arbeitsunfallrate, Chemikaliensicherheit, Datenschutzqualität, Medienpluralität oder Barrierefreiheit. Wirkung ist die tatsächliche Zustandsveränderung; der Indikator ist ein prüfbarer Zugang zu einem Ausschnitt dieser Veränderung."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Ohne Wirkungsindikatoren wäre die Wirkungsökonomie nicht steuerungsfähig. Sie ermöglichen WÖk-IDs, Produkt- und Unternehmensscorecards, Wirkungsregister, Datenqualitätsprüfung, Benchmarks, Archetypen, FinalScore, Wirkungsaudit, Assurance, Wirkungssteuer, Wirkungshaushalt, T-SROI, NWI, Responsible Marketing und Greenwashing-Prüfung."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet Wirkung, Wirkungsindikator, WÖk-ID, Messwert, Benchmark, Archetyp, Score und FinalScore. Der Indikator ist ein Baustein, kein Urteil. Er gewinnt Bedeutung erst im Bewertungszusammenhang mit Systemgrenze, Datenqualität, Benchmark, Archetyp und Schutzlogik."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- WÖk-ID: technische Kennung; Wirkungsindikator: gemessener Wirkungsaspekt.\n- KPI: kann jede Leistungskennzahl sein; Wirkungsindikator bezieht sich auf Zustandsveränderung für Mensch, Planet und Demokratie.\n- Messwert: konkreter erhobener Wert; Indikator definiert, was gemessen wird.\n- Score: Bewertungsergebnis; Indikator ist Bewertungsgegenstand.\n- Benchmark: Vergleichsmaßstab; Indikator ist die gemessene Größe.\n- Nachhaltigkeitsclaim: behauptet; Indikator belegt oder widerlegt."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Produkt-CO2-Indikator misst Treibhausgasemissionen pro funktionaler Einheit.\n- Ein Wasserstress-Indikator verbindet Wasserverbrauch mit regionaler Knappheit.\n- Ein Living-Wage-Indikator misst existenzsichernde Bezahlung in relevanten Lieferkettenstufen.\n- Ein Reparierbarkeitsindikator misst Ersatzteilverfügbarkeit, Demontierbarkeit und Support.\n- Ein Medienqualitätsindikator beschreibt Quellenklarheit, Korrekturpraxis und Pluralität."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind indicator_id, wok_id, title, dimension, sdg_reference, sdgplus_reference, indicator_family, unit, polarity, data_type, source_reference, calculation_logic, system_boundary, lifecycle_stage, relevant_nace_codes, benchmark_reference, archetype_reference, data_quality_requirement, verification_requirement, valid_from, valid_until, version und governance_owner. Steuerungsbezüge sind WÖk-ID, Scorecard, Register, Benchmark, Archetyp, FinalScore, Steuer, Haushalt, T-SROI, NWI, Audit und Assurance."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungsdaten\n- Wirkungspfad\n- Datenqualität\n- Scorecard\n- wirkungscontrolling\n- WÖk-ID\n- Benchmark\n- Archetyp\n- FinalScore\n- Wirkungsregister\n- Wirkungsbewertung\n- Produktdaten\n- Digitaler Produktpass\n- CSRD\n- ESRS\n- GRI\n- NACE\n- messwert\n- Systemgrenze\n- Wirkungsindikator\n- Produktscorecard\n- Wirkungsaudit\n- Wirkungsassurance\n- datenquelle\n- Reverse Merit Order\n- Wirkungsgrenze\n- Nichtkompensationsprinzip\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- wirkungssimulation\n- Wirkungsdatenraum\n- EU-Taxonomie\n- SDGs\n- SDG+\n- Mensch, Planet und Demokratie\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsrückkopplung\n- Produktwirkung\n- Responsible Marketing\n- 5. P = Planet\n- Wirkungsrat"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Die neue Ordnung des Wohlstands\n- Technische Leitlinien WUStG\n- WÖk-Master-Items\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- BASF Polyamid Beispiel von der CSRD zur Produktscorecard\n- Wirkungsoekonomie in der Lieferkette\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- Digital Product Passport / ESPR\n- Product Environmental Footprint\n- ISO 14040 / ISO 14044\n- ISO 14064 / ISO 14067\n- GHG Protocol\n- OECD Guidelines for Multinational Enterprises on Responsible Business Conduct"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 006\n- Cluster: Daten, Indikatoren & technische Bewertungslogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "wirkungsinnovation",
