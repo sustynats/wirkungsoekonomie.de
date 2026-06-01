@@ -302068,7 +302068,14 @@
         "schädliche Subventionen",
         "Kaufkraftschutz",
         "Risikointernalisierung",
-        "Folgekostenrisiko"
+        "Folgekostenrisiko",
+        "wirkungsbasierte Steuer",
+        "Wirkungsabgabe",
+        "Produktwirkungssteuer",
+        "Wirkungsumsatzsteuer",
+        "Impact Tax",
+        "Steuerung nach Wirkung",
+        "Bonus-Malus-Steuerlogik"
       ],
       "synonyms": [
         "Wirkungssteuer",
@@ -302079,16 +302086,26 @@
         "schädliche Subventionen",
         "Kaufkraftschutz",
         "Risikointernalisierung",
-        "Folgekostenrisiko"
+        "Folgekostenrisiko",
+        "wirkungsbasierte Steuer",
+        "Wirkungsabgabe",
+        "Produktwirkungssteuer",
+        "Wirkungsumsatzsteuer",
+        "Impact Tax",
+        "Steuerung nach Wirkung",
+        "Bonus-Malus-Steuerlogik"
       ],
-      "shortDefinition": "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück.",
-      "definition": "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen.",
-      "longDefinition": "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen.",
-      "woekRelation": "Nicht als Strafsteuer verkürzen.",
+      "shortDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
+      "definition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
+      "longDefinition": "Die Wirkungssteuer bezeichnet die steuerliche Rückkopplung gemessener und bewerteter Wirkung. Sie verknüpft Steuerlast, Entlastung oder Bonuslogik mit der Wirkung eines Produkts, einer Tätigkeit, eines Einkommens, eines Kapitalflusses oder einer öffentlichen Ausgabe.",
+      "woekRelation": "Sie übersetzt Wirkungsbewertung in reale Markt- und Steueranreize: positive Netto-Wirkung wird entlastet, negative Wirkung wird belastet, rote Linien bleiben nicht kompensierbar.",
       "statusNote": "Nicht als Strafsteuer verkürzen.",
-      "usageNote": "Nicht als Strafsteuer verkürzen.",
+      "usageNote": "Nicht als Strafsteuer formulieren. Die Wirkungssteuer ist Rückkopplungs- und Lenkungslogik mit sozialer Abfederung, Rechtsschutz und Übergangsregeln.",
       "categories": [
-        "messbegriff"
+        "messbegriff",
+        "Steuern, Preise & Rückkopplung",
+        "Steuer- und Preislogik",
+        "Glossar-Pack 007"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -302115,34 +302132,117 @@
         "externalitaet",
         "pigou-steuer",
         "regulierungsversagen",
-        "verhaeltnismaessigkeit"
+        "verhaeltnismaessigkeit",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "wirkungslenkung",
+        "finalscore",
+        "reverse-merit-order",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "woek-id",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungssteuer",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "EU VAT Directive",
+        "Digital Product Passport / ESPR",
+        "EU Green Claims / Directive (EU) 2024/825",
+        "CBAM",
+        "Product Environmental Footprint"
+      ],
       "pageUrl": "/begriffe/wirkungssteuer/",
       "priority": 158,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt.",
+      "version": "1.1",
+      "category": "Steuern, Preise & Rückkopplung",
+      "source": "Glossar-Pack 007",
+      "sourceDocument": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 007",
+      "hoverDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
       "doNotConfuseWith": [
         "CO2-Steuer",
-        "Pigou-Steuer"
+        "Pigou-Steuer",
+        "CO2-Steuer: betrifft ein Feld; Wirkungssteuer ist mehrdimensional.",
+        "Umweltsteuer: ökologisch fokussiert; Wirkungssteuer umfasst Mensch, Planet und Demokratie.",
+        "Strafsteuer: Ziel ist Rückkopplung, nicht Bestrafung.",
+        "Mehrwertsteuer nach Kategorie: Wirkungssteuer orientiert sich an Wirkung, nicht nur Produktgruppe.",
+        "ESG-Rating: bewertet Risiko oder Performance; Wirkungssteuer koppelt in Steuerlast zurück.",
+        "Planwirtschaft: schreibt nicht vor, was produziert wird.",
+        "Kompensation: rote Linien können nicht durch Gutschriften neutralisiert werden."
       ],
       "relatedDocuments": [
         "wstg-oktober-2025",
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
       ],
-      "examples": [],
-      "preferredUsage": "Als Rückkopplungsinstrument der WÖk verwenden.",
+      "examples": [
+        "Ein regionaler Bio-Apfel kann niedriger belastet werden als ein Apfel aus wasserarmer Region mit langem Transportweg und schlechter Datenlage.",
+        "Ein T-Shirt mit Kinderarbeit bleibt hoch belastet, auch wenn es Bio-Baumwolle enthält.",
+        "Erneuerbarer Strom wird gegenüber fossilem Strom entlastet, wenn Daten und Score dies tragen.",
+        "Ein Produkt mit gutem CO2-Wert, aber toxischen Stoffen wird durch Gesundheitswirkung begrenzt.",
+        "Ein Zulieferer mit hohem FinalScore wird für Abnehmer attraktiver, weil Vorleistungen bonusfähig werden."
+      ],
+      "preferredUsage": "Als steuerliches Rückkopplungsinstrument verwenden, das Daten, Scorecards, FinalScore, Register, Audit und Steuerklassen verbindet.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungssteuer",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
-      "updatedAt": "2026-05-27",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
       "related_terms": [
         "wstg",
         "wustg",
@@ -302166,16 +302266,187 @@
         "externalitaet",
         "pigou-steuer",
         "regulierungsversagen",
-        "verhaeltnismaessigkeit"
+        "verhaeltnismaessigkeit",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "wirkungslenkung",
+        "finalscore",
+        "reverse-merit-order",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "woek-id",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungssteuer",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "internal_links": [
+        "wstg",
+        "wustg",
+        "wirkungsrueckkopplung",
+        "haushaltsneutralitaet",
+        "energiearmut",
+        "mobilitaetsarmut",
+        "klimagerechtigkeit",
+        "cbam",
+        "hebelpunkt",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "karl-polanyi",
+        "john-maynard-keynes",
+        "marktwirtschaft",
+        "gruener-kapitalismus",
+        "zentralverwaltungswirtschaft",
+        "trickle-down-oekonomie",
+        "steuerkritik",
+        "ressourcenallokation",
+        "externalitaet",
+        "pigou-steuer",
+        "regulierungsversagen",
+        "verhaeltnismaessigkeit",
+        "wirkungslenkung",
+        "finalscore",
+        "reverse-merit-order",
+        "produktscorecard",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "woek-id",
+        "produktdaten",
+        "digitaler-produktpass",
+        "wirkungssteuer",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "kapitalwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Steuerungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Steuerungsbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -302206,7 +302477,122 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "007",
+      "cluster": "Steuer- und Preislogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- übersetzt Wirkungsbewertung in steuerliche Anreize\n- positive Netto-Wirkung wird entlastet, negative Wirkung belastet\n- kein Strafsystem, sondern Rückkopplungslogik\n- Grundlage sind WÖk-IDs, Scorecards, Datenqualität, FinalScore und Reverse Merit Order\n- kann Produkte, Dienstleistungen, Einkommen, Kapitalflüsse oder öffentliche Mittel betreffen\n- macht Nachhaltigkeitsdaten steuerungsrelevant\n- schützt vor Greenwashing durch schwächstes relevantes Wirkungsfeld\n- soll haushaltsneutral und sozial abgefedert eingeführt werden"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Die Wirkungssteuer ergänzt klassische Geldgrößen wie Umsatz, Einkommen, Gewinn, Verbrauch oder Transaktionswert um die Frage, welche realen Folgen eine wirtschaftliche Aktivität erzeugt. Ziel ist nicht willkürliche Steuererhöhung, sondern wirkungsnähere Preise und Anreize. Schädliche Wirkungen sollen nicht länger billiger Wettbewerbsvorteil sein; positive Netto-Wirkung soll nicht wirtschaftlich benachteiligt bleiben. Die Logik nutzt WÖk-IDs, Wirkungsindikatoren, Produktdaten, DPP, Scorecards, Benchmarks, Archetypen, Datenqualität, FinalScore, Reverse Merit Order, Wirkungsgrenzen, Register, Audit und Assurance."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Die Wirkungssteuer macht Wirkung zu einer Entscheidungsgröße. Solange Wirkung nur berichtet wird, bleibt sie oft folgenlos. Erst Rückkopplung in Preise, Steuern, Vorsteuer, Kapitalzugang, Beschaffung oder Förderung verändert Marktverhalten und korrigiert Externalisierung von Umwelt-, Gesundheits-, Lieferketten- oder Demokratieschäden."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist die Wirkungssteuer keine klassische Umweltsteuer, keine moralische Strafabgabe und keine Planwirtschaft. Sie verbindet Informationslogik, Bewertungslogik und Lenkungslogik. Wettbewerb bleibt dezentral, aber die Signale werden wirkungsnäher. Sozialer Kaufkraftschutz, Übergänge, Einspruch, Korrekturpfade und Wirkungsgutschriften gehören zur Architektur."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- CO2-Steuer: betrifft ein Feld; Wirkungssteuer ist mehrdimensional.\n- Umweltsteuer: ökologisch fokussiert; Wirkungssteuer umfasst Mensch, Planet und Demokratie.\n- Strafsteuer: Ziel ist Rückkopplung, nicht Bestrafung.\n- Mehrwertsteuer nach Kategorie: Wirkungssteuer orientiert sich an Wirkung, nicht nur Produktgruppe.\n- ESG-Rating: bewertet Risiko oder Performance; Wirkungssteuer koppelt in Steuerlast zurück.\n- Planwirtschaft: schreibt nicht vor, was produziert wird.\n- Kompensation: rote Linien können nicht durch Gutschriften neutralisiert werden."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein regionaler Bio-Apfel kann niedriger belastet werden als ein Apfel aus wasserarmer Region mit langem Transportweg und schlechter Datenlage.\n- Ein T-Shirt mit Kinderarbeit bleibt hoch belastet, auch wenn es Bio-Baumwolle enthält.\n- Erneuerbarer Strom wird gegenüber fossilem Strom entlastet, wenn Daten und Score dies tragen.\n- Ein Produkt mit gutem CO2-Wert, aber toxischen Stoffen wird durch Gesundheitswirkung begrenzt.\n- Ein Zulieferer mit hohem FinalScore wird für Abnehmer attraktiver, weil Vorleistungen bonusfähig werden."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Logik: Bewertungsobjekt bestimmen, Aktivität klassifizieren, Wirkungsfelder bestimmen, WÖk-IDs zuordnen, Daten erfassen, Scorecard erstellen, FinalScore unter Datenqualität, Reverse Merit Order und Wirkungsgrenzen bestimmen, Steuerklasse ableiten, Vorsteuer- und Bonuslogik prüfen, Transparenz und Rechtsschutz sichern. Datenfelder können tax_case_id, assessed_object, nace_code, relevant_wok_ids, scorecard_reference, final_score, weakest_field, tax_class, tax_rate, input_tax_status, bonus_credit_status, registry_reference, audit_reference, objection_status, correction_history und version umfassen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- WStG\n- WUStG\n- Wirkungsrückkopplung\n- Haushaltsneutralität\n- Energiearmut\n- Mobilitätsarmut\n- Klimagerechtigkeit\n- CBAM / Carbon Border Adjustment Mechanism\n- Hebelpunkt\n- Wirkungssteuergesetz\n- Wirkungsumsatzsteuer\n- Karl Polanyi\n- John Maynard Keynes\n- Marktwirtschaft\n- Grüner Kapitalismus\n- Zentralverwaltungswirtschaft\n- Trickle-down-Ökonomie\n- Steuerkritik\n- Ressourcenallokation\n- Externalität\n- Pigou-Steuer\n- Regulierungsversagen\n- Verhältnismäßigkeit\n- ehrliche-preise\n- wirkung-im-preisschild\n- wirkungsgutschrift\n- Wirkungslenkung\n- FinalScore\n- Reverse Merit Order\n- Produktscorecard\n- Wirkungsregister\n- Wirkungsgrenze\n- WÖk-ID\n- Produktdaten\n- Digitaler Produktpass\n- Wirkungssteuer\n- Wirkungsbonus\n- Wirkungspunkte\n- Wirkungsarchitektur\n- Wirkungsbewertung\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Produktwirkung\n- Wirkungsindikator\n- Benchmark\n- Archetyp\n- Nichtkompensationsprinzip\n- Wirkungsaudit\n- Wirkungsassurance\n- Datenqualität\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- externalitaeten\n- markttransformation\n- oeffentliche-beschaffung\n- Kapitalwirkung\n- lieferkettenwirkung\n- konsumwirkung\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Responsible Marketing\n- 5. P = Planet\n- Wirkungshaushalt\n- Rechtsschutz"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- Wirkungsoekonomie in der Lieferkette\n- Die neue Ordnung des Wohlstands\n- WÖk-Master-Items\n- Wirkungsrat-Konzept\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- EU VAT Directive\n- Digital Product Passport / ESPR\n- EU Green Claims / Directive (EU) 2024/825\n- CBAM\n- Product Environmental Footprint"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 007\n- Cluster: Steuer- und Preislogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- WStG/WUStG als Konzept, Entwurf oder Rahmenlogik kennzeichnen\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "wirkungssteuergesetz",
@@ -302217,66 +302603,328 @@
       "aliases": [
         "Wirkungssteuergesetz",
         "WStG",
-        "Wirkungssteuer-Rahmengesetz"
+        "Wirkungssteuer-Rahmengesetz",
+        "Wirkungssteuer-Gesetz",
+        "Rahmengesetz der Wirkungssteuer",
+        "Steuerrahmen nach Wirkung",
+        "Gesetz zur Steuerung nach Wirkung",
+        "Impact Tax Act",
+        "Wirkungssteuerrahmen"
       ],
       "synonyms": [
         "Wirkungssteuergesetz",
         "WStG",
-        "Wirkungssteuer-Rahmengesetz"
+        "Wirkungssteuer-Rahmengesetz",
+        "Wirkungssteuer-Gesetz",
+        "Rahmengesetz der Wirkungssteuer",
+        "Steuerrahmen nach Wirkung",
+        "Gesetz zur Steuerung nach Wirkung",
+        "Impact Tax Act",
+        "Wirkungssteuerrahmen"
       ],
-      "shortDefinition": "Das Wirkungssteuergesetz ist ein Rahmengesetz-Konzept für steuerliche Wirkungsrückkopplung.",
-      "definition": "Das WStG bildet den Rahmen, in dem Wirkungsklassen, Daten, Governance und Steuerungslogiken rechtlich strukturiert werden können.",
-      "longDefinition": "Das WStG bildet den Rahmen, in dem Wirkungsklassen, Daten, Governance und Steuerungslogiken rechtlich strukturiert werden können.",
-      "woekRelation": "Als Entwurf oder Konzept kennzeichnen, solange nicht geltendes Recht.",
+      "shortDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
+      "definition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
+      "longDefinition": "Das Wirkungssteuergesetz bezeichnet den konzeptionellen Rahmenentwurf der Wirkungsökonomie, mit dem Wirkung als steuerliche Bemessungs- und Steuerungsgröße eingeführt werden soll. Es ist als Entwurf und Rahmenlogik zu kennzeichnen, nicht als geltendes Recht.",
+      "woekRelation": "Das WStG bildet die rechtliche Klammer für Wirkungssteuer, WUStG, Wirkungseinkommensteuer, Wirkungshaushalt, Kapitalwirkung, Register, Audit, Wirkungsrat und Rechtsschutz.",
       "statusNote": "Als Entwurf oder Konzept kennzeichnen, solange nicht geltendes Recht.",
-      "usageNote": "Als Entwurf oder Konzept kennzeichnen, solange nicht geltendes Recht.",
+      "usageNote": "Sofern nicht ausdrücklich anders gekennzeichnet, nicht als geltendes Recht darstellen. Es ist WÖk-Konzept, Entwurf oder Rahmenlogik.",
       "categories": [
-        "messbegriff"
+        "messbegriff",
+        "Recht, Steuern & Wirkungsarchitektur",
+        "Steuer- und Preislogik",
+        "Glossar-Pack 007"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "relatedTerms": [
         "wirkungssteuer",
         "wstg",
-        "wustg"
+        "wustg",
+        "wirkungsumsatzsteuer",
+        "wirkungseinkommensteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "rechtsschutz",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuergesetz",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "EU VAT Directive",
+        "Digital Product Passport / ESPR",
+        "EU Green Claims / Directive (EU) 2024/825",
+        "CBAM",
+        "Product Environmental Footprint"
+      ],
       "pageUrl": "/begriffe/wirkungssteuergesetz/",
       "priority": 159,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung.",
+      "version": "1.1",
+      "category": "Recht, Steuern & Wirkungsarchitektur",
+      "source": "Glossar-Pack 007",
+      "sourceDocument": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 007",
+      "hoverDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
       "doNotConfuseWith": [
         "WUStG",
-        "geltendes Steuerrecht"
+        "geltendes Steuerrecht",
+        "Wirkungssteuer: Steuerlogik; WStG: rechtlicher Rahmen.",
+        "WUStG: Produkt- und Umsatzsteuerlogik; WStG ist breiter.",
+        "Steuerreform: ändert Sätze; WStG ändert Bemessungsmaßstab.",
+        "CO2-Gesetz: WStG ist mehrdimensional.",
+        "ESG-Regulierung: berichtet oder reguliert Risiko; WStG koppelt Wirkung in Steuerlast zurück.",
+        "Planwirtschaft: ersetzt keine dezentralen Entscheidungen.",
+        "Social Credit: bewertet wirtschaftliche Wirkung, nicht Menschen.",
+        "geltendes Recht: WStG ist hier Konzept oder Entwurf."
       ],
       "relatedDocuments": [
-        "wstg-oktober-2025"
+        "wstg-oktober-2025",
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
       ],
-      "examples": [],
-      "preferredUsage": "Als Gesetzesentwurf/Konzept bezeichnen.",
+      "examples": [
+        "Ein Produkt wird über das WUStG nach FinalScore besteuert; das WStG liefert Rahmen, Register, Verfahren und Rechtsschutz.",
+        "Eine Wirkungseinkommensteuer könnte Tätigkeiten mit hoher positiver Wirkung entlasten.",
+        "Ein Wirkungshaushalt priorisiert Mittel nach Netto-Wirkung.",
+        "Ein Unternehmen legt Einspruch gegen einen Produkt-FinalScore ein.",
+        "Der Wirkungsrat überprüft regelmäßig Benchmarks, WÖk-IDs und Archetypen."
+      ],
+      "preferredUsage": "Als Rahmengesetz-Entwurf der Wirkungsökonomie verwenden, der bestehende Steuerarten mit Wirkungslogik ergänzt.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungssteuergesetz",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "wirkungssteuer",
         "wstg",
-        "wustg"
+        "wustg",
+        "wirkungsumsatzsteuer",
+        "wirkungseinkommensteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "rechtsschutz",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuergesetz",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "internal_links": [
+        "wirkungssteuer",
+        "wstg",
+        "wustg",
+        "wirkungsumsatzsteuer",
+        "wirkungseinkommensteuer",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsgrenze",
+        "wirkungslenkung",
+        "rechtsschutz",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuergesetz",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "datenqualitaet",
+        "greenwashing",
+        "impact-washing",
+        "sdg-washing",
+        "kapitalwirkung",
+        "sdgs",
+        "agenda-2030",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "responsible-marketing",
+        "fuenftes-p-planet"
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Rechts- und Steuerungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Rechts- und Steuerungsbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -302307,7 +302955,123 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "007",
+      "cluster": "Steuer- und Preislogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- Rahmengesetz der Wirkungsökonomie\n- ersetzt nicht jede Steuerart, sondern überlagert bestehende Steuern mit Wirkungslogik\n- verknüpft Steuerbemessung mit Wirkung auf Mensch, Planet und Demokratie\n- Klammer für Produktwirkungssteuer, Wirkungseinkommensteuer, Wirkungshaushalt und Kapitalwirkung\n- Grundlage sind WÖk-IDs, Scorecards, Register, Audits, Wirkungsrat und Rechtsschutz\n- haushaltsneutral, verhältnismäßig, lernfähig und demokratisch kontrolliert gedacht\n- kein Instrument zur Personenbewertung\n- Konzept und Entwurf, nicht automatisch geltendes Recht"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Das WStG schafft die Oberlogik, nach der wirtschaftliche Aktivitäten, Produkte, Dienstleistungen, Einkommen, Kapitalflüsse und öffentliche Mittel nicht nur nach Geldgrößen, sondern nach Wirkung bewertet werden. Es legt fest, wie bestehende Steuerarten durch Wirkungsindikatoren, WÖk-IDs, Scorecards, Register, FinalScore, Nichtkompensation, Steuerklassen, Prüf- und Einspruchsverfahren sowie Übergangsregeln ergänzt werden können."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Das WStG führt Wirkung vom freiwilligen Bericht in eine staatliche Rückkopplungslogik. Es macht Nachhaltigkeitsdaten systemisch wirksam und bildet die rechtliche Klammer für Wirkungssteuer, WUStG, Wirkungseinkommensteuer, wirkungsbasierte Kapitalbesteuerung, Wirkungshaushalt, Beschaffung, Register, Wirkungsrat, Audit und Assurance."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist das WStG keine planwirtschaftliche Steuerungsfantasie. Es soll Signale korrigieren, unter denen Entscheidungen entstehen. Rechtsstaatliche Begrenzungen sind zentral: keine Personenbewertung, keine Lebensstilpolizei, keine Black-Box-Bewertung, Recht auf Einsicht, Korrektur, Widerspruch, transparente Benchmarks, versionierte Methoden, öffentliche Konsultation, unabhängiger Wirkungsrat und gerichtlicher Rechtsschutz."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Wirkungssteuer: Steuerlogik; WStG: rechtlicher Rahmen.\n- WUStG: Produkt- und Umsatzsteuerlogik; WStG ist breiter.\n- Steuerreform: ändert Sätze; WStG ändert Bemessungsmaßstab.\n- CO2-Gesetz: WStG ist mehrdimensional.\n- ESG-Regulierung: berichtet oder reguliert Risiko; WStG koppelt Wirkung in Steuerlast zurück.\n- Planwirtschaft: ersetzt keine dezentralen Entscheidungen.\n- Social Credit: bewertet wirtschaftliche Wirkung, nicht Menschen.\n- geltendes Recht: WStG ist hier Konzept oder Entwurf."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Produkt wird über das WUStG nach FinalScore besteuert; das WStG liefert Rahmen, Register, Verfahren und Rechtsschutz.\n- Eine Wirkungseinkommensteuer könnte Tätigkeiten mit hoher positiver Wirkung entlasten.\n- Ein Wirkungshaushalt priorisiert Mittel nach Netto-Wirkung.\n- Ein Unternehmen legt Einspruch gegen einen Produkt-FinalScore ein.\n- Der Wirkungsrat überprüft regelmäßig Benchmarks, WÖk-IDs und Archetypen."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Bausteine sind Zweck, Geltungsbereich, Definitionen, Mensch/Planet/Demokratie, WÖk-ID-Register, SDG/SDG+-Mapping, NACE/ESRS/GRI/EU-Taxonomie, Scorecards, Benchmarks, Archetypen, FinalScore, Datenqualität, Reverse Merit Order, Wirkungsgrenzen, Steuerklassen, Register, Meldung, Prüfung, Audit, Assurance, Einspruch, Korrektur, Wirkungsrat, Konsultation, Versionierung, Pilotierung, Kleinstunternehmen, internationale Kompatibilität, soziale Abfederung und Missbrauchsschutz."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungssteuer\n- WStG\n- WUStG\n- Wirkungsumsatzsteuer\n- Wirkungseinkommensteuer\n- Wirkungshaushalt\n- Wirkungsrat\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- Wirkungsgrenze\n- Wirkungslenkung\n- Rechtsschutz\n- SDG+\n- Mensch, Planet und Demokratie\n- ehrliche-preise\n- wirkung-im-preisschild\n- wirkungsgutschrift\n- FinalScore\n- Reverse Merit Order\n- Wirkungssteuergesetz\n- Wirkungsbonus\n- Wirkungspunkte\n- Wirkungsrückkopplung\n- Wirkungsarchitektur\n- Wirkungsbewertung\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Produktwirkung\n- Produktscorecard\n- Produktdaten\n- Digitaler Produktpass\n- WÖk-ID\n- Wirkungsindikator\n- Benchmark\n- Archetyp\n- Nichtkompensationsprinzip\n- Datenqualität\n- Greenwashing\n- Impact-Washing\n- SDG-Washing\n- externalitaeten\n- markttransformation\n- oeffentliche-beschaffung\n- Kapitalwirkung\n- lieferkettenwirkung\n- konsumwirkung\n- SDGs\n- Agenda 2030\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Responsible Marketing\n- 5. P = Planet"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- Wirkungsoekonomie in der Lieferkette\n- Die neue Ordnung des Wohlstands\n- WÖk-Master-Items\n- Wirkungsrat-Konzept\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- EU VAT Directive\n- Digital Product Passport / ESPR\n- EU Green Claims / Directive (EU) 2024/825\n- CBAM\n- Product Environmental Footprint"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 007\n- Cluster: Steuer- und Preislogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- WStG/WUStG als Konzept, Entwurf oder Rahmenlogik kennzeichnen\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
     },
     {
       "id": "wirkungstraeger",
@@ -318088,6 +318852,1315 @@
         {
           "title": "Redaktionelle Metadaten",
           "body": "- Glossar-Pack: 005\n- Cluster: Institutionelle Sicherung & Prüfarchitektur\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
+    },
+    {
+      "id": "ehrliche-preise",
+      "termId": "ehrliche-preise",
+      "label": "Ehrliche Preise",
+      "canonicalLabel": "Ehrliche Preise",
+      "slug": "ehrliche-preise",
+      "aliases": [
+        "Ehrliche Preise",
+        "ehrlicher Preis",
+        "wirkungsnahe Preise",
+        "Wirkungspreise",
+        "Preiswahrheit",
+        "True Cost Pricing",
+        "echte Preise",
+        "Preis als Wirklichkeitssignal",
+        "wirkungsbasierte Preisbildung"
+      ],
+      "synonyms": [
+        "ehrlicher Preis",
+        "wirkungsnahe Preise",
+        "Wirkungspreise",
+        "Preiswahrheit",
+        "True Cost Pricing",
+        "echte Preise",
+        "Preis als Wirklichkeitssignal",
+        "wirkungsbasierte Preisbildung"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/ehrliche-preise/",
+      "priority": 132,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "ehrliche-preise",
+      "shortDefinition": "Ehrliche Preise sind Preise, die die Wirkung eines Produkts oder einer Tätigkeit auf Mensch, Planet und Demokratie besser sichtbar machen, statt Folgekosten zu verstecken.",
+      "definition": "Ehrliche Preise sind Preise, die die Wirkung eines Produkts oder einer Tätigkeit auf Mensch, Planet und Demokratie besser sichtbar machen, statt Folgekosten zu verstecken.",
+      "hoverDefinition": "Ehrliche Preise sind Preise, die die Wirkung eines Produkts oder einer Tätigkeit auf Mensch, Planet und Demokratie besser sichtbar machen, statt Folgekosten zu verstecken.",
+      "longDefinition": "Ehrliche Preise sind wirkungsnähere Preise. Sie bilden ökologische, soziale, gesundheitliche, demokratische und generationenbezogene Folgen besser ab, ohne vollständige absolute Wahrheit zu behaupten.",
+      "woekRelation": "Ehrliche Preise verbinden Wirkungswahrheit, Wirkungssteuer, Produktdaten, FinalScore, Preisschild und Marktfreiheit.",
+      "usageNote": "Nicht als perfekte Preiswahrheit formulieren. Es geht um bessere, lernfähige und versionierte Wirkungssignale.",
+      "preferredUsage": "Als Ziel wirkungsnäherer Marktpreise verwenden, die Externalitäten und positive Netto-Wirkung sichtbar machen.",
+      "doNotConfuseWith": [
+        "True Cost Pricing: verwandt, aber oft monetär fokussiert; WÖk umfasst Mensch, Planet, Demokratie und Nichtkompensation.",
+        "Marktpreis: kann verzerrt sein.",
+        "moralischer Preis: ehrliche Preise beruhen auf Daten und Scorecards.",
+        "Ökolabel: informiert; ehrlicher Preis verändert Kostenstruktur.",
+        "CO2-Preis: wichtiges Feld, aber nicht gesamte Wirkung.",
+        "Subvention: ergänzt; ehrliche Preise verändern Basissignal.",
+        "perfekter Preis: ehrliche Preise sind lernfähig und versioniert."
+      ],
+      "examples": [
+        "Fast Fashion wird teurer, wenn Wasser, Chemikalien, Mikroplastik, Transport, Arbeit und Entsorgung eingepreist werden.",
+        "Ein regionaler Bio-Apfel und ein Importapfel erhalten unterschiedliche Preiswirkung bei unterschiedlichen Wirkungen.",
+        "Erneuerbarer Strom kann günstiger als fossiler Strom werden.",
+        "Ein reparierbares Elektrogerät wird günstiger als ein Wegwerfprodukt.",
+        "Ein Produkt mit gutem Klima-Score bleibt teuer, wenn Gesundheitswirkung rote Linien verletzt."
+      ],
+      "category": "Preise, Märkte & Wirkungswahrheit",
+      "categories": [
+        "Preise, Märkte & Wirkungswahrheit",
+        "Steuer- und Preislogik",
+        "Glossar-Pack 007"
+      ],
+      "type": "WÖk-Prägungsbegriff / Preisbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Preisbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 007",
+      "sourceDocument": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 007",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "007",
+      "cluster": "Steuer- und Preislogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "EU VAT Directive",
+        "Digital Product Passport / ESPR",
+        "EU Green Claims / Directive (EU) 2024/825",
+        "CBAM",
+        "Product Environmental Footprint"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "externalitaeten",
+        "produktwirkung",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "wirkungswahrheit",
+        "greenwashing",
+        "markttransformation",
+        "responsible-marketing",
+        "wirkungssteuergesetz",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "ehrliche-preise",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "impact-washing",
+        "sdg-washing",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "related_terms": [
+        "wirkungssteuer",
+        "wirkung-im-preisschild",
+        "wirkungsgutschrift",
+        "externalitaeten",
+        "produktwirkung",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "wirkungswahrheit",
+        "greenwashing",
+        "markttransformation",
+        "responsible-marketing",
+        "wirkungssteuergesetz",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "ehrliche-preise",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "impact-washing",
+        "sdg-washing",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "internal_links": [
+        "wirkungssteuer",
+        "produktwirkung",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "finalscore",
+        "wirkungswahrheit",
+        "greenwashing",
+        "responsible-marketing",
+        "wirkungssteuergesetz",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "ehrliche-preise",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "datenqualitaet",
+        "impact-washing",
+        "sdg-washing",
+        "kapitalwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "fuenftes-p-planet",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ehrliche Preise sind Preise, die die Wirkung eines Produkts oder einer Tätigkeit auf Mensch, Planet und Demokratie besser sichtbar machen, statt Folgekosten zu verstecken."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- zeigen mehr Wirklichkeit als heutige Marktpreise\n- machen externalisierte Kosten und positive Wirkung sichtbar\n- entstehen nicht nur durch Information, sondern durch steuerliche Rückkopplung\n- schädliche Produkte werden teurer, positive günstiger\n- keine absolute Wahrheit, sondern wirkungsnähere Signale\n- Grundlage sind Produktdaten, Scorecards, FinalScore, Wirkungssteuer und Preisschild\n- reduzieren Greenwashing und Reparaturpolitik\n- stärken Freiheit durch bessere Informationen"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ehrliche Preise machen sichtbar, ob ein Preis nur Kapitalaufwand, Angebot und Nachfrage widerspiegelt oder auch Folgen wie Wasserstress, CO2, Kinderarbeit, Gesundheitsrisiken, Biodiversitätsverlust, Mikroplastik, Arbeitsbedingungen oder demokratische Schäden berücksichtigt. Diese Folgekosten verschwinden nicht, sondern werden sonst von Beschäftigten, Konsument:innen, Steuerzahler:innen, Ökosystemen, künftigen Generationen oder Institutionen getragen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Märkte können gute Suchprozesse sein, wenn ihre Signale nicht systematisch falsch sind. Ehrliche Preise korrigieren die Verzerrung, dass schädliche Produkte billig und positive Produkte teuer erscheinen. Sie machen positive Netto-Wirkung wirtschaftlich sichtbar, stärken Innovation, entlasten Verbraucher:innen von Recherchelast und reduzieren bürokratisches Flickwerk."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Der Preis ist ein gesellschaftliches Signal. Unehrlich wird er, wenn Folgekosten externalisiert, Daten unterschlagen, Schäden nicht eingepreist, positive Wirkungen nicht entlastet oder Greenwashing als Preiswahrheit verkauft wird. Ehrlich wird er, wenn Produktdaten, Bewertung, FinalScore, Steuerklasse, Vorsteuerlogik, Wirkung im Preisschild, Nichtkompensation und Kaufkraftschutz zusammenwirken."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- True Cost Pricing: verwandt, aber oft monetär fokussiert; WÖk umfasst Mensch, Planet, Demokratie und Nichtkompensation.\n- Marktpreis: kann verzerrt sein.\n- moralischer Preis: ehrliche Preise beruhen auf Daten und Scorecards.\n- Ökolabel: informiert; ehrlicher Preis verändert Kostenstruktur.\n- CO2-Preis: wichtiges Feld, aber nicht gesamte Wirkung.\n- Subvention: ergänzt; ehrliche Preise verändern Basissignal.\n- perfekter Preis: ehrliche Preise sind lernfähig und versioniert."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Fast Fashion wird teurer, wenn Wasser, Chemikalien, Mikroplastik, Transport, Arbeit und Entsorgung eingepreist werden.\n- Ein regionaler Bio-Apfel und ein Importapfel erhalten unterschiedliche Preiswirkung bei unterschiedlichen Wirkungen.\n- Erneuerbarer Strom kann günstiger als fossiler Strom werden.\n- Ein reparierbares Elektrogerät wird günstiger als ein Wegwerfprodukt.\n- Ein Produkt mit gutem Klima-Score bleibt teuer, wenn Gesundheitswirkung rote Linien verletzt."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Bausteine sind Produktdaten, DPP, WÖk-ID-Mapping, Produktscorecard, FinalScore, Steuerklasse, Vorsteuerlogik, Wirkungsgutschrift, Wirkung im Preisschild, Register, Audit, Assurance, Verbraucherinformation und Kaufkraftschutz. Regeln: keine vollständige Wahrheit behaupten, Datenqualität sichtbar halten, rote Linien nicht per Bonus reduzieren, fehlende Daten nicht positiv bewerten, Preiswirkung sozial abfedern und Einspruch/Korrektur ermöglichen."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungssteuer\n- wirkung-im-preisschild\n- wirkungsgutschrift\n- externalitaeten\n- Produktwirkung\n- Produktdaten\n- Produktscorecard\n- Digitaler Produktpass\n- FinalScore\n- Wirkungswahrheit\n- Greenwashing\n- markttransformation\n- Responsible Marketing\n- Wirkungssteuergesetz\n- Wirkungsblindheit\n- Wirkungsrückkopplung\n- Wirkungsumsatzsteuer\n- WUStG\n- WStG\n- Ehrliche Preise\n- Wirkungsbonus\n- Wirkungspunkte\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsbewertung\n- WÖk-ID\n- Wirkungsindikator\n- Benchmark\n- Archetyp\n- Reverse Merit Order\n- Wirkungsgrenze\n- Nichtkompensationsprinzip\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- Datenqualität\n- Impact-Washing\n- SDG-Washing\n- oeffentliche-beschaffung\n- Kapitalwirkung\n- lieferkettenwirkung\n- konsumwirkung\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- 5. P = Planet\n- Wirkungshaushalt\n- Rechtsschutz"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- Wirkungsoekonomie in der Lieferkette\n- Die neue Ordnung des Wohlstands\n- WÖk-Master-Items\n- Wirkungsrat-Konzept\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- EU VAT Directive\n- Digital Product Passport / ESPR\n- EU Green Claims / Directive (EU) 2024/825\n- CBAM\n- Product Environmental Footprint"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 007\n- Cluster: Steuer- und Preislogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- WStG/WUStG als Konzept, Entwurf oder Rahmenlogik kennzeichnen\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
+    },
+    {
+      "id": "wirkung-im-preisschild",
+      "termId": "wirkung-im-preisschild",
+      "label": "Wirkung im Preisschild",
+      "canonicalLabel": "Wirkung im Preisschild",
+      "slug": "wirkung-im-preisschild",
+      "aliases": [
+        "Wirkung im Preisschild",
+        "Wirkungskennzeichnung am Preisschild",
+        "Wirkungsetikett",
+        "Wirkungslabel",
+        "Wirkung am Regal",
+        "Wirkungspreisschild",
+        "Impact Price Label",
+        "Preisschild mit Wirkung",
+        "Wirkungsinformation für Verbraucher:innen"
+      ],
+      "synonyms": [
+        "Wirkungskennzeichnung am Preisschild",
+        "Wirkungsetikett",
+        "Wirkungslabel",
+        "Wirkung am Regal",
+        "Wirkungspreisschild",
+        "Impact Price Label",
+        "Preisschild mit Wirkung",
+        "Wirkungsinformation für Verbraucher:innen"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkung-im-preisschild/",
+      "priority": 132,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkung-im-preisschild",
+      "shortDefinition": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden.",
+      "definition": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden.",
+      "hoverDefinition": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden.",
+      "longDefinition": "Wirkung im Preisschild ist die sichtbare Darstellung zentraler Wirkungsinformationen am Produkt, Regal, Online-Shop, Angebot, Kassenzettel oder in der Rechnung. Sie ist die Verbraucheroberfläche der Wirkungsarchitektur.",
+      "woekRelation": "Sie übersetzt Produktscorecard, DPP, Register, Datenqualität, FinalScore und Wirkungssteuer in ein verständliches Wirkungssignal am Kaufpunkt.",
+      "usageNote": "Nicht als bloßes Marketinglabel oder moralischen Pranger formulieren. Es ist datenbasierte Verbraucherinformation mit vertiefbarer Nachvollziehbarkeit.",
+      "preferredUsage": "Als Preissignal und Informationsschnittstelle für Verbraucher:innen verwenden.",
+      "doNotConfuseWith": [
+        "Ökolabel: kann Orientierung geben; Preisschild ist mit Scorecard, Steuerklasse und Register verknüpft.",
+        "Ampelkennzeichnung: kann Teil sein, reicht allein nicht.",
+        "Werbung: Wirkung im Preisschild ist datenbasierte Information.",
+        "Green Claim: muss begründet werden; Preisschild zeigt Bewertungslogik.",
+        "Preisangabe: zeigt Geld, nicht Wirkung.",
+        "DPP: enthält Daten; Preisschild verdichtet verständlich.",
+        "FinalScore: Bewertung; Preisschild ist Darstellung.",
+        "moralisches Urteil: bewertet Produktwirkung, nicht Käufer:innen."
+      ],
+      "examples": [
+        "Ein Apfel zeigt Wirkung +2, Steuer 0 Prozent, schwächstes Feld Verpackung 0, Datenqualität geprüft und QR-Code zum Produktpass.",
+        "Ein T-Shirt zeigt Wirkung -2, Steuer 20 Prozent, schwächstes Feld Arbeit und kritische Lieferkettendaten.",
+        "Ein Elektrogerät zeigt Reparierbarkeit als Stärke und Rohstoffdaten als Schwäche.",
+        "Ein Online-Shop filtert nach Preis, Lieferzeit und Wirkungsklasse.",
+        "Ein Kassenzettel zeigt Wirkungspunkte und ausgelöste Wirkungssteuer."
+      ],
+      "category": "Verbraucherinformation, Preise & Produktwirkung",
+      "categories": [
+        "Verbraucherinformation, Preise & Produktwirkung",
+        "Steuer- und Preislogik",
+        "Glossar-Pack 007"
+      ],
+      "type": "WÖk-Prägungsbegriff / Verbraucher- und Transparenzbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Verbraucher- und Transparenzbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 007",
+      "sourceDocument": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 007",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "007",
+      "cluster": "Steuer- und Preislogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "EU VAT Directive",
+        "Digital Product Passport / ESPR",
+        "EU Green Claims / Directive (EU) 2024/825",
+        "CBAM",
+        "Product Environmental Footprint"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "wirkungsgutschrift",
+        "produktwirkung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "finalscore",
+        "datenqualitaet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "konsumwirkung",
+        "wirkungsrueckkopplung",
+        "fuenftes-p-planet",
+        "markttransformation",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "related_terms": [
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "wirkungsgutschrift",
+        "produktwirkung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "finalscore",
+        "datenqualitaet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "konsumwirkung",
+        "wirkungsrueckkopplung",
+        "fuenftes-p-planet",
+        "markttransformation",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "oeffentliche-beschaffung",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "internal_links": [
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "produktwirkung",
+        "produktdaten",
+        "digitaler-produktpass",
+        "produktscorecard",
+        "finalscore",
+        "datenqualitaet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungswahrheit",
+        "wirkungsrueckkopplung",
+        "fuenftes-p-planet",
+        "wirkungssteuergesetz",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "kapitalwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungshaushalt",
+        "rechtsschutz"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- macht Produktwirkung alltagstauglich sichtbar\n- zeigt Preis, FinalScore, Steuerklasse, Risiko oder schwächstes Wirkungsfeld\n- soll verständlich sein, ohne moralisch zu überfordern\n- Grundlage sind Scorecard, DPP, Register, Datenqualität und Auditstatus\n- sichtbare Oberfläche einer Daten- und Steuerlogik\n- unterstützt Responsible Marketing und schützt vor Greenwashing\n- barrierefrei, verständlich, prüfbar und digital vertiefbar\n- keine toten Links, unklare Claims oder Scheingenauigkeit"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Im klassischen Preisschild sieht man vor allem Geld. In der Wirkungsökonomie sollen zusätzlich FinalScore, Wirkungssteuerklasse, Steuersatz, schwächstes relevantes Wirkungsfeld, Datenqualität, Prüfstatus, Produktpasszugang, zentrale Wirkungsfelder, Wirkungsgutschrift oder rote Linien sichtbar werden. Das Preisschild erklärt nicht alles, sondern eröffnet einen verständlichen Zugang zur Wirkungsinformation."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wirkung wird marktsteuernd, wenn sie im Alltag sichtbar wird. CSRD-Daten, ESRS-Indikatoren, Produktpässe und Scorecards nützen wenig, wenn sie am Kaufpunkt unverständlich bleiben. Wirkung im Preisschild orientiert Verbraucher:innen, erhöht Verbesserungsdruck, schützt vor Greenwashing, macht ehrliche Preise sichtbar und koppelt Nachfrage in Markttransformation zurück."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Wirkung im Preisschild ist kein moralischer Pranger und kein Lifestyle-Label. Es verbindet Einfachheit, Nachvollziehbarkeit und Redlichkeit: schnelle Orientierung, vertiefbare Details über QR/DPP/Register und erkennbare Datenqualität, Unsicherheit und Prüfstatus."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Ökolabel: kann Orientierung geben; Preisschild ist mit Scorecard, Steuerklasse und Register verknüpft.\n- Ampelkennzeichnung: kann Teil sein, reicht allein nicht.\n- Werbung: Wirkung im Preisschild ist datenbasierte Information.\n- Green Claim: muss begründet werden; Preisschild zeigt Bewertungslogik.\n- Preisangabe: zeigt Geld, nicht Wirkung.\n- DPP: enthält Daten; Preisschild verdichtet verständlich.\n- FinalScore: Bewertung; Preisschild ist Darstellung.\n- moralisches Urteil: bewertet Produktwirkung, nicht Käufer:innen."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Apfel zeigt Wirkung +2, Steuer 0 Prozent, schwächstes Feld Verpackung 0, Datenqualität geprüft und QR-Code zum Produktpass.\n- Ein T-Shirt zeigt Wirkung -2, Steuer 20 Prozent, schwächstes Feld Arbeit und kritische Lieferkettendaten.\n- Ein Elektrogerät zeigt Reparierbarkeit als Stärke und Rohstoffdaten als Schwäche.\n- Ein Online-Shop filtert nach Preis, Lieferzeit und Wirkungsklasse.\n- Ein Kassenzettel zeigt Wirkungspunkte und ausgelöste Wirkungssteuer."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestinformationen sind product_name, price, impact_tax_rate, final_score, tax_class, impact_category_text, weakest_field, data_quality_class, assurance_status, dpp_link, scorecard_link, registry_reference, valid_until, optional_bonus_credit und consumer_plain_language_summary. Anforderungen: barrierefrei, mobil lesbar, klare Sprache, Legende, Datenqualität, QR/NFC/DPP, aktueller Prüfstatus, keine toten Links und keine pauschalen Nachhaltigkeitsclaims."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Ehrliche Preise\n- Wirkungssteuer\n- wirkungsgutschrift\n- Produktwirkung\n- Produktdaten\n- Digitaler Produktpass\n- Produktscorecard\n- FinalScore\n- Datenqualität\n- Responsible Marketing\n- Greenwashing\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- Wirkungswahrheit\n- konsumwirkung\n- Wirkungsrückkopplung\n- 5. P = Planet\n- markttransformation\n- Wirkungssteuergesetz\n- Wirkungsumsatzsteuer\n- WUStG\n- WStG\n- Wirkung im Preisschild\n- Wirkungsbonus\n- Wirkungspunkte\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsbewertung\n- Wirkungsblindheit\n- WÖk-ID\n- Wirkungsindikator\n- Benchmark\n- Archetyp\n- Reverse Merit Order\n- Wirkungsgrenze\n- Nichtkompensationsprinzip\n- Impact-Washing\n- SDG-Washing\n- externalitaeten\n- oeffentliche-beschaffung\n- Kapitalwirkung\n- lieferkettenwirkung\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- positive Netto-Wirkung\n- Transformationswirkung\n- Wirkungshaushalt\n- Rechtsschutz"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- Wirkungsoekonomie in der Lieferkette\n- Die neue Ordnung des Wohlstands\n- WÖk-Master-Items\n- Wirkungsrat-Konzept\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- EU VAT Directive\n- Digital Product Passport / ESPR\n- EU Green Claims / Directive (EU) 2024/825\n- CBAM\n- Product Environmental Footprint"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 007\n- Cluster: Steuer- und Preislogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- WStG/WUStG als Konzept, Entwurf oder Rahmenlogik kennzeichnen\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
+    },
+    {
+      "id": "wirkungsgutschrift",
+      "termId": "wirkungsgutschrift",
+      "label": "Wirkungsgutschrift",
+      "canonicalLabel": "Wirkungsgutschrift",
+      "slug": "wirkungsgutschrift",
+      "aliases": [
+        "Wirkungsgutschrift",
+        "Wirkungsbonus",
+        "Wirkungspunkte",
+        "Wirkungscredit",
+        "Wirkungsvergütung",
+        "Bonus nach Wirkung",
+        "Impact Credit",
+        "Wirkungsguthaben",
+        "positive Wirkungsgutschrift"
+      ],
+      "synonyms": [
+        "Wirkungsbonus",
+        "Wirkungspunkte",
+        "Wirkungscredit",
+        "Wirkungsvergütung",
+        "Bonus nach Wirkung",
+        "Impact Credit",
+        "Wirkungsguthaben",
+        "positive Wirkungsgutschrift"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungsgutschrift/",
+      "priority": 132,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungsgutschrift",
+      "shortDefinition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
+      "definition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
+      "hoverDefinition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
+      "longDefinition": "Die Wirkungsgutschrift bezeichnet eine Gutschrift, Entlastung, Rückerstattung, Bonuslogik oder Punktelogik für nachgewiesene positive Wirkung. Sie setzt voraus, dass relevante Wirkungsgrenzen eingehalten sind.",
+      "woekRelation": "Sie ist die Bonusseite der Bonus-Malus-Architektur der Wirkungsökonomie: positive Netto-Wirkung wird ökonomisch erfahrbar, rote Linien bleiben nicht kompensierbar.",
+      "usageNote": "Nicht als Kompensation schwerer Schäden oder Ablasshandel formulieren. Keine Gutschrift bei verletzten Wirkungsgrenzen oder unzureichender Datenqualität.",
+      "preferredUsage": "Als geprüfte Rückkopplung positiver Wirkung in Steuer, Preis, Beschaffung, Lieferkette oder Verbraucherbonus verwenden.",
+      "doNotConfuseWith": [
+        "Kompensation: Gutschrift belohnt positive Wirkung, kompensiert keine schweren Schäden.",
+        "CO2-Offset: enger und oft kritisch; Wirkungsgutschrift ist breiter und an Nichtkompensation gebunden.",
+        "Rabatt: beliebig; Wirkungsgutschrift ist geprüft und wirkungsbasiert.",
+        "Subvention: politisch vergeben; Wirkungsgutschrift folgt Score- und Registerlogik.",
+        "Bonusprogramm: kann Form sein, aber nicht der ganze Begriff.",
+        "Green Claim: Kommunikation; Wirkungsgutschrift ist Rückkopplung.",
+        "Ablasshandel: wird durch Reverse Merit Order und Wirkungsgrenzen verhindert."
+      ],
+      "examples": [
+        "Ein Lieferant mit FinalScore +2 erhält Bonusvergütung oder wird in der Vorsteuerlogik günstiger behandelt.",
+        "Verbraucher:innen sammeln beim Kauf positiver Produkte Wirkungspunkte.",
+        "Ein Unternehmen verbessert Vorsteuerfähigkeit durch geprüfte positive Lieferanten.",
+        "Eine Kommune erhält zusätzliche Mittel für ein Projekt mit positiver Netto-Wirkung.",
+        "Ein Produkt mit FinalScore +3 erhält Gutschrift, wenn es schädliche Alternativen ersetzt."
+      ],
+      "category": "Bonuslogik, Steuern & Verbraucher:innenwirkung",
+      "categories": [
+        "Bonuslogik, Steuern & Verbraucher:innenwirkung",
+        "Steuer- und Preislogik",
+        "Glossar-Pack 007"
+      ],
+      "type": "WÖk-Prägungsbegriff / Bonus- und Rückkopplungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Bonus- und Rückkopplungsbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 007",
+      "sourceDocument": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceSection": "Professionalisiertes Glossar-Pack 007",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "007",
+      "cluster": "Steuer- und Preislogik",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "Codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN Sustainable Development Goals / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "Eurostat NACE",
+        "EU-Taxonomie",
+        "EU VAT Directive",
+        "Digital Product Passport / ESPR",
+        "EU Green Claims / Directive (EU) 2024/825",
+        "CBAM",
+        "Product Environmental Footprint"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "EFRAG",
+          "url": "https://www.efrag.org/"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "Eurostat NACE",
+          "url": "https://ec.europa.eu/eurostat/web/nace"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "EU VAT rules",
+          "url": "https://taxation-customs.ec.europa.eu/taxation/vat_en"
+        },
+        {
+          "label": "Council Directive 2006/112/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0112"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        },
+        {
+          "label": "EU Green Claims",
+          "url": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+        },
+        {
+          "label": "Directive (EU) 2024/825",
+          "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"
+        },
+        {
+          "label": "CBAM",
+          "url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        },
+        {
+          "label": "Product Environmental Footprint",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Produktbesteuerung durch Wirkung",
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+        "Wirkungsoekonomie in der Lieferkette",
+        "Die neue Ordnung des Wohlstands",
+        "WÖk-Master-Items",
+        "Wirkungsrat-Konzept",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "oeffentliche-beschaffung",
+        "wirkungshaushalt",
+        "datenqualitaet",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktdaten",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "fuenftes-p-planet",
+        "rechtsschutz"
+      ],
+      "related_terms": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "oeffentliche-beschaffung",
+        "wirkungshaushalt",
+        "datenqualitaet",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktdaten",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "externalitaeten",
+        "markttransformation",
+        "kapitalwirkung",
+        "lieferkettenwirkung",
+        "konsumwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "fuenftes-p-planet",
+        "rechtsschutz"
+      ],
+      "internal_links": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungsbonus",
+        "wirkungspunkte",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungshaushalt",
+        "datenqualitaet",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsumsatzsteuer",
+        "wustg",
+        "wstg",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "produktdaten",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "archetyp",
+        "nichtkompensationsprinzip",
+        "impact-washing",
+        "sdg-washing",
+        "kapitalwirkung",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "wirkung",
+        "wirkungspotenzial",
+        "netto-wirkung",
+        "fuenftes-p-planet",
+        "rechtsschutz"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- belohnt geprüfte positive Wirkung\n- kann Verbraucher:innen, Unternehmen, Lieferanten, Kommunen oder Projekten zugutekommen\n- Teil der Bonus-Malus-Logik\n- darf keine roten Linien, Kinderarbeit, schwere Umweltschäden oder demokratische Schäden kompensieren\n- Grundlage sind FinalScore, Datenqualität, Register, Audit und Reverse Merit Order\n- kann Steuerentlastung, Rückerstattung, Bonus, Wirkungspunkt oder Beschaffungsvorteil sein\n- macht positive Netto-Wirkung ökonomisch erfahrbar\n- transparent, begrenzt, prüfbar und sozial gerecht auszugestalten"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungsgutschriften können beim Kauf positiver Produkte, bei Lieferanten mit hoher Wirkung, Unternehmen mit geprüfter Lieferkettenwirkung, Verbraucher:innen über Wirkungspunkte, Kommunen über Förderlogik, öffentlichen Beschaffungen oder Investitionen mit Transformationswirkung entstehen. Sie dienen nicht dazu, Kinderarbeit, Zwangsarbeit, toxische Schäden, massive Emissionen, Biodiversitätszerstörung oder demokratische Destabilisierung schönzurechnen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Steuerung soll nicht nur belasten. Wer Wirkung verbessert, soll profitieren. Wirkungsgutschriften machen positive Wirkung im Alltag erfahrbar: Produkte werden günstiger oder bonusfähig, bessere Lieferanten werden attraktiver, Kommunen erhalten bessere Förderchancen und Kapital erkennt geringere Risiken."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die Wirkungsgutschrift ist das Gegenstück zur Wirkungsbelastung. Negative Wirkung trägt Kosten, neutrale Wirkung bleibt neutral, positive Netto-Wirkung erhält Entlastung, transformative Wirkung kann zusätzliche Bonuslogik auslösen und rote Linien bleiben nicht kompensierbar. Sie braucht FinalScore, Datenqualität, Audit-Trail, Registerlogik, soziale Fairness und Rückforderungsregeln."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Kompensation: Gutschrift belohnt positive Wirkung, kompensiert keine schweren Schäden.\n- CO2-Offset: enger und oft kritisch; Wirkungsgutschrift ist breiter und an Nichtkompensation gebunden.\n- Rabatt: beliebig; Wirkungsgutschrift ist geprüft und wirkungsbasiert.\n- Subvention: politisch vergeben; Wirkungsgutschrift folgt Score- und Registerlogik.\n- Bonusprogramm: kann Form sein, aber nicht der ganze Begriff.\n- Green Claim: Kommunikation; Wirkungsgutschrift ist Rückkopplung.\n- Ablasshandel: wird durch Reverse Merit Order und Wirkungsgrenzen verhindert."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Lieferant mit FinalScore +2 erhält Bonusvergütung oder wird in der Vorsteuerlogik günstiger behandelt.\n- Verbraucher:innen sammeln beim Kauf positiver Produkte Wirkungspunkte.\n- Ein Unternehmen verbessert Vorsteuerfähigkeit durch geprüfte positive Lieferanten.\n- Eine Kommune erhält zusätzliche Mittel für ein Projekt mit positiver Netto-Wirkung.\n- Ein Produkt mit FinalScore +3 erhält Gutschrift, wenn es schädliche Alternativen ersetzt."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Voraussetzungen sind geprüfter FinalScore, keine verletzte Wirkungsgrenze, ausreichende Datenqualität, DPP-/Registerbezug, Audit oder Assurance je nach Höhe, eindeutige Zuordnung, zeitliche Gültigkeit, Korrekturpfad, Missbrauchsschutz und soziale Abfederung. Datenfelder: credit_id, beneficiary_type, assessed_object, final_score, positive_net_impact_status, transformative_status, red_flags_absent, data_quality_class, assurance_status, registry_reference, credit_type, credit_amount, tax_effect, bonus_effect, consumer_points, valid_from, valid_until, correction_history, clawback_rule, objection_status und version."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "- Wirkungssteuer\n- Wirkungssteuergesetz\n- Ehrliche Preise\n- Wirkung im Preisschild\n- Wirkungsbonus\n- Wirkungspunkte\n- positive Netto-Wirkung\n- Transformationswirkung\n- FinalScore\n- Reverse Merit Order\n- Wirkungsgrenze\n- Wirkungsregister\n- Wirkungsaudit\n- Wirkungsassurance\n- oeffentliche-beschaffung\n- Wirkungshaushalt\n- Datenqualität\n- Produktscorecard\n- Digitaler Produktpass\n- Responsible Marketing\n- Greenwashing\n- Wirkungsumsatzsteuer\n- WUStG\n- WStG\n- Wirkungsgutschrift\n- Wirkungsrückkopplung\n- Wirkungslenkung\n- Wirkungsarchitektur\n- Wirkungsbewertung\n- Wirkungswahrheit\n- Wirkungsblindheit\n- Produktwirkung\n- Produktdaten\n- WÖk-ID\n- Wirkungsindikator\n- Benchmark\n- Archetyp\n- Nichtkompensationsprinzip\n- Impact-Washing\n- SDG-Washing\n- externalitaeten\n- markttransformation\n- Kapitalwirkung\n- lieferkettenwirkung\n- konsumwirkung\n- Mensch, Planet und Demokratie\n- SDGs\n- Agenda 2030\n- SDG+\n- Wirkung\n- Wirkungspotenzial\n- Netto-Wirkung\n- 5. P = Planet\n- Rechtsschutz"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Produktbesteuerung durch Wirkung\n- Beispiel_Apfel_Wirkungssteuer_Bonusregel\n- Wirkungsoekonomie in der Lieferkette\n- Die neue Ordnung des Wohlstands\n- WÖk-Master-Items\n- Wirkungsrat-Konzept\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN Sustainable Development Goals / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- Eurostat NACE\n- EU-Taxonomie\n- EU VAT Directive\n- Digital Product Passport / ESPR\n- EU Green Claims / Directive (EU) 2024/825\n- CBAM\n- Product Environmental Footprint"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "- Glossar-Pack: 007\n- Cluster: Steuer- und Preislogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- WStG/WUStG als Konzept, Entwurf oder Rahmenlogik kennzeichnen\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
         }
       ]
     }
