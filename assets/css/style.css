@@ -12204,6 +12204,10 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   gap: 0.75rem;
 }
 
+.knowledge-library-card[hidden] {
+  display: none !important;
+}
+
 .knowledge-library-card .btn {
   margin-top: auto;
   align-self: flex-start;

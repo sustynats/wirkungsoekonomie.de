@@ -1,6 +1,6 @@
 # Local Link Check
 
-Stand: 2026-06-01T07:30:03.923Z
+Stand: 2026-06-01T07:37:07.028Z
 
 - Geprüfte HTML-Dateien: 2045
 - Geprüfte lokale Links: 217159
