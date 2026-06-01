@@ -1,6 +1,6 @@
 # Glossary Coverage Report
 
-Stand: 2026-06-01T08:44:25.687Z
+Stand: 2026-06-01T08:54:10.805Z
 
 - HTML-Seiten gescannt: 3275
 - Seiten mit /begriffe/-Links: 2507

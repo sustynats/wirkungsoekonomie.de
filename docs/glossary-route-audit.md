@@ -1,6 +1,6 @@
 # Glossary Route Audit
 
-Stand: 2026-06-01T08:44:24.608Z
+Stand: 2026-06-01T08:54:09.558Z
 
 - Begriffe im Modell: 1165
 - Fehlende Detailseiten: 0

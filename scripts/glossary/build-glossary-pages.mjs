@@ -81,6 +81,13 @@ function normalizedLabel(value) {
     .trim();
 }
 
+function normalizedHubConcept(value) {
+  return normalizedLabel(value)
+    .replace(/\s*\((kurzverweis|leseschluessel|leseschlüssel|bestand|alias)\)\s*$/i, "")
+    .replace(/cards$/i, "card")
+    .trim();
+}
+
 function firstMatch(html, pattern) {
   const match = html.match(pattern);
   return match ? textFromHtml(match[1]) : "";
@@ -88,7 +95,11 @@ function firstMatch(html, pattern) {
 
 function loadLegacyDetailTerms() {
   const sourceSlugs = new Set(data.terms.map((term) => term.slug));
-  const sourceLabels = new Set(data.terms.map((term) => normalizedLabel(term.canonicalLabel || term.label || term.canonicalTitle)).filter(Boolean));
+  const sourceLabels = new Set(data.terms.flatMap((term) => [
+    term.canonicalLabel || term.label || term.canonicalTitle,
+    ...(term.aliases || []),
+    ...(term.synonyms || []),
+  ]).map((label) => normalizedHubConcept(label)).filter(Boolean));
   const seenLegacyLabels = new Set();
   return fs.readdirSync(outDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && !sourceSlugs.has(entry.name))
@@ -108,7 +119,7 @@ function loadLegacyDetailTerms() {
         || firstMatch(html, /<meta\s+content=["']([^"']+)["']\s+name=["']description["'][^>]*>/i);
       const lead = firstMatch(html, /<p[^>]*class=["'][^"']*\blead\b[^"']*["'][^>]*>([\s\S]*?)<\/p>/i);
       const label = h1 || title || entry.name.replace(/-/g, " ");
-      const labelKey = normalizedLabel(label);
+      const labelKey = normalizedHubConcept(label);
       if (sourceLabels.has(labelKey) || seenLegacyLabels.has(labelKey)) return null;
       seenLegacyLabels.add(labelKey);
       const summary = meta || lead || "Bestehende Glossar-Detailseite aus dem Bestand.";

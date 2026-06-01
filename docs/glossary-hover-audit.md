@@ -1,6 +1,6 @@
 # Glossary Hover Audit
 
-Stand: 2026-06-01T08:44:24.699Z
+Stand: 2026-06-01T08:54:09.630Z
 
 - Hover-Einträge: 1174
 - Ohne Definition: 0
