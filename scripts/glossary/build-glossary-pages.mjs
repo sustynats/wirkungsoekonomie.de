@@ -337,6 +337,16 @@ function filterButtons(name, label, values) {
         </fieldset>`;
 }
 
+function curatedFilterButtons(name, label, options) {
+  if (!options.length) return "";
+  return `<fieldset class="glossary-filter-group curated" data-filter-group="${esc(name)}">
+          <legend>${esc(label)}</legend>
+          <div class="filter-chip-row">
+            ${options.map(([optionLabel, value]) => `<button type="button" data-filter-name="${esc(name)}" data-filter-value="${esc(value)}" aria-pressed="false">${esc(optionLabel)}</button>`).join("")}
+          </div>
+        </fieldset>`;
+}
+
 function termFilterData(term) {
   return {
     type: filterToken(term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category),
@@ -602,26 +612,45 @@ function detailLinks(term) {
 
 const quickFilters = [
   ["Wirkung verstehen", { theme: "wirkung-und-wirkungslogik" }],
-  ["Gesundheit & Leben", { theme: "gesundheit-und-leben" }],
+  ["Gesundheit & Leben", { theme: "gesundheit-leben" }],
   ["Wirtschaftssysteme vergleichen", { theme: "wirtschaftssysteme-und-gesellschaftsmodelle" }],
   ["Medienwirkung & Folgencheck", { theme: "demokratie-medien-und-oeffentlichkeit" }],
   ["Klima & Produktwirkung", { theme: "klima-energie-und-lebenszyklus" }],
-  ["Management & Innovation", { theme: "management-organisation-und-wirksamkeit" }],
+  ["Management & Innovation", { theme: "management-wirksamkeit-und-organisation" }],
   ["Psychologische Wirkmechanismen", { theme: "psychologie-und-resonanz" }],
   ["Philosophie & Werte", { theme: "philosophie-ethik-und-werte" }],
+];
+
+const curatedTypeFilters = [
+  ["WÖk-Kernbegriffe", "woek-kernbegriff"],
+  ["WÖk-Begriffe", "woek-begriff"],
+  ["Methoden", "methodenbegriff"],
+  ["Anschlussbegriffe", "anschlussbegriff"],
+  ["Bestand", "bestand"],
+];
+
+const curatedThemeFilters = [
+  ["Wirkung", "wirkung-und-wirkungslogik"],
+  ["Produkte & Lieferketten", "produkte-lieferketten-und-scorecards"],
+  ["Daten & KI", "daten-digitalisierung-und-ki"],
+  ["Klima & Energie", "klima-energie-und-lebenszyklus"],
+  ["Wirtschaft & Kapital", "kapital-markt-und-macht"],
+  ["Demokratie & Medien", "demokratie-medien-und-oeffentlichkeit"],
+  ["Psychologie", "psychologie-und-resonanz"],
+  ["Philosophie & Werte", "philosophie-ethik-und-werte"],
 ];
 
 const indexBody = `      <section class="hero compact-hero">
         <p class="hero-kicker">WÖk-Referenzsystem</p>
         <h1>Begriffe der Wirkungsökonomie</h1>
-        <p class="hero-subtitle">Alphabetisch, thematisch und wirkungslogisch erschließbar: Suche nach Begriffen, Aliassen, Themenwelten, WÖk-Dimensionen, Anwendungsfeldern und Quellenfeldern.</p>
-        <p class="notice">Die Filter sind kombinierbar und über URL-Parameter verlinkbar, zum Beispiel <code>?theme=wirtschaftssysteme-und-gesellschaftsmodelle</code>, <code>?type=methodenbegriff</code> oder <code>?q=kapital</code>.</p>
+        <p class="hero-subtitle">Der Glossar-Hub ist der Einstieg in die Begriffe. Detailseiten, Hover, Suche und Querverweise bleiben die eigentliche semantische Infrastruktur.</p>
+        <p class="notice">Am schnellsten: Begriff suchen oder einen der kuratierten Einstiege wählen. Präzise Fachfilter bleiben darunter einklappbar erhalten.</p>
       </section>
       <section class="content-band glossary-filter-panel" aria-labelledby="glossary-filter-title">
         <div class="section-header compact">
           <p class="hero-kicker">Filter</p>
           <h2 id="glossary-filter-title">Glossar gezielt erschließen</h2>
-          <p>Mehrfachfilter eingrenzen die Ergebnisliste; innerhalb der Treffer bleibt die alphabetische Ordnung erhalten.</p>
+          <p>Die wichtigsten Einstiege sind sichtbar. Die langen Fachfilter sind nur bei Bedarf geöffnet.</p>
         </div>
         <label class="glossary-search-field">
           <span>Freitextsuche</span>
@@ -631,13 +660,20 @@ const indexBody = `      <section class="hero compact-hero">
           ${quickFilters.map(([label, params]) => `<button type="button" data-quick-filter="${esc(new URLSearchParams(params).toString())}">${esc(label)}</button>`).join("")}
         </div>
         <div class="glossary-filter-grid">
-          ${filterButtons("type", "Begriffstyp", filterValues("type").concat(filterValues("begriffstyp"), filterValues("conceptStatus")).filter(Boolean).filter((value, index, all) => all.indexOf(value) === index))}
-          ${filterButtons("theme", "Themenwelt", filterValues("theme"))}
-          ${filterButtons("dimension", "WÖk-Dimension", filterValues("dimensions"))}
-          ${filterButtons("wirklogik", "Wirklogik", filterValues("wirklogik"))}
-          ${filterButtons("field", "Anwendungsfeld", filterValues("applicationFields"))}
-          ${filterButtons("source", "Quellenfeld", filterValues("sourceField"))}
+          ${curatedFilterButtons("type", "Begriffstyp", curatedTypeFilters)}
+          ${curatedFilterButtons("theme", "Begriffswelt", curatedThemeFilters)}
         </div>
+        <details class="glossary-advanced-filters">
+          <summary>Erweiterte Fachfilter anzeigen</summary>
+          <div class="glossary-filter-grid advanced">
+            ${filterButtons("type", "Alle Begriffstypen", filterValues("type").concat(filterValues("begriffstyp"), filterValues("conceptStatus")).filter(Boolean).filter((value, index, all) => all.indexOf(value) === index))}
+            ${filterButtons("theme", "Alle Themenwelten", filterValues("theme"))}
+            ${filterButtons("dimension", "WÖk-Dimension", filterValues("dimensions"))}
+            ${filterButtons("wirklogik", "Wirklogik", filterValues("wirklogik"))}
+            ${filterButtons("field", "Anwendungsfeld", filterValues("applicationFields"))}
+            ${filterButtons("source", "Quellenfeld", filterValues("sourceField"))}
+          </div>
+        </details>
         <div class="glossary-filter-actions">
           <button type="button" class="btn btn-secondary" data-glossary-reset>Filter zurücksetzen</button>
           <p class="reference-filter-status" data-glossary-filter-status role="status" aria-live="polite"></p>

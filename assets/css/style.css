@@ -129,6 +129,35 @@ a {
   gap: 0.9rem;
 }
 
+.glossary-advanced-filters {
+  border-top: 1px solid rgba(11, 16, 32, 0.1);
+  padding-top: 0.85rem;
+}
+
+.glossary-advanced-filters summary {
+  width: fit-content;
+  min-height: 2.35rem;
+  padding: 0.56rem 0.85rem;
+  border: 1px solid rgba(11, 16, 32, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--navy);
+  cursor: pointer;
+  font-weight: 820;
+  line-height: 1.15;
+}
+
+.glossary-advanced-filters summary:hover,
+.glossary-advanced-filters summary:focus-visible {
+  border-color: rgba(47, 125, 92, 0.58);
+  background: rgba(47, 125, 92, 0.08);
+  outline: none;
+}
+
+.glossary-filter-grid.advanced {
+  margin-top: 0.85rem;
+}
+
 .glossary-filter-group {
   display: grid;
   gap: 0.55rem;
