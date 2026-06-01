@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T23:38:10.685Z",
+  "generatedAt": "2026-06-01T00:30:30.271Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -664,6 +664,39 @@
       "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
+    },
+    "attributionsforschung": {
+      "terms": [
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "methods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wirtschaft-unternehmen",
+        "staat-recht-demokratie",
+        "oeffentlichkeit-wissen"
+      ],
+      "academyModules": [
+        "wirkung-wirkungspotenzial-wirkungsrisiko",
+        "scorecards-nwi-reverse-merit-order"
+      ],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
     },
     "aufmerksamkeit": {
       "terms": [
@@ -19467,6 +19500,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungszurechnung": {
+      "terms": [
+        "zurechnung-ohne-scheingenauigkeit",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung",
+        "datenqualitaet",
+        "wirkungsrat"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "methods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wirtschaft-unternehmen",
+        "staat-recht-demokratie",
+        "oeffentlichkeit-wissen"
+      ],
+      "academyModules": [
+        "wirkung-wirkungspotenzial-wirkungsrisiko",
+        "scorecards-nwi-reverse-merit-order"
+      ],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
+    },
     "wirtschaftsliberalismus": {
       "terms": [
         "liberalismus",
@@ -19840,6 +19907,40 @@
       "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
+    },
+    "zurechnung-ohne-scheingenauigkeit": {
+      "terms": [
+        "wirkungszurechnung",
+        "attributionsforschung",
+        "datenqualitaet",
+        "wirkungstraeger",
+        "wirkungsempfaenger",
+        "wirkungsraum",
+        "wirkungsbewertung"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands"
+      ],
+      "methods": [
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "wirtschaft-unternehmen",
+        "staat-recht-demokratie",
+        "oeffentlichkeit-wissen"
+      ],
+      "academyModules": [
+        "wirkung-wirkungspotenzial-wirkungsrisiko",
+        "scorecards-nwi-reverse-merit-order"
+      ],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
     },
     "zyklenfestigkeit": {
       "terms": [

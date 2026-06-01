@@ -1,8 +1,8 @@
 # Glossar-Detailseiten: Qualitätsaudit
 
-Stand: 2026-05-31
+Stand: 2026-06-01
 
-Dieses Audit prüft die 1446 vorhandenen Begriffsdetailseiten nicht auf Schönheit, sondern auf Wissens- und Quellenabdeckung. Es löscht nichts und ersetzt keine Detailseiten durch Hub-Einträge.
+Dieses Audit prüft die 1474 vorhandenen Begriffsdetailseiten nicht auf Schönheit, sondern auf Wissens- und Quellenabdeckung. Es löscht nichts und ersetzt keine Detailseiten durch Hub-Einträge.
 
 ## Pflichtbausteine pro Begriff
 
@@ -25,36 +25,36 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 
 | Kriterium | Seiten |
 | --- | ---: |
-| Detailseiten gesamt | 1446 |
-| Source-backed im Glossar-Register | 1145 |
-| Erhaltene Bestandsseiten außerhalb Register | 301 |
-| Definition-Abschnitt vorhanden | 1446 |
-| Definition mit Text vorhanden | 1444 |
-| WÖk-Bedeutung/Relevanz-Abschnitt vorhanden | 1446 |
-| WÖk-Bedeutung nicht nur generischer Standardsatz | 1146 |
-| Explizite wirkungsökonomische Einordnung/Auslegung | 1145 |
-| Verwendungs-/Nutzungsabschnitt vorhanden | 1446 |
-| Abgrenzung vorhanden | 1446 |
-| Beispiel/Lernblock vorhanden | 354 |
-| Verwandte Begriffe nicht leer | 1291 |
-| Zusätzlicher Block Verwandte Inhalte | 84 |
-| Version-/Quellenblock vorhanden | 1306 |
-| Mindestens ein externer Link | 971 |
+| Detailseiten gesamt | 1474 |
+| Source-backed im Glossar-Register | 1172 |
+| Erhaltene Bestandsseiten außerhalb Register | 302 |
+| Definition-Abschnitt vorhanden | 1474 |
+| Definition mit Text vorhanden | 1472 |
+| WÖk-Bedeutung/Relevanz-Abschnitt vorhanden | 1474 |
+| WÖk-Bedeutung nicht nur generischer Standardsatz | 1174 |
+| Explizite wirkungsökonomische Einordnung/Auslegung | 1172 |
+| Verwendungs-/Nutzungsabschnitt vorhanden | 1474 |
+| Abgrenzung vorhanden | 1474 |
+| Beispiel/Lernblock vorhanden | 362 |
+| Verwandte Begriffe nicht leer | 1319 |
+| Zusätzlicher Block Verwandte Inhalte | 116 |
+| Version-/Quellenblock vorhanden | 1334 |
+| Mindestens ein externer Link | 973 |
 | Mindestens ein Buchkapitel-Link | 80 |
 | Mindestens ein Dokument-/Bibliothekslink | 37 |
-| Mindestens ein Methoden-/Werkzeuglink | 30 |
+| Mindestens ein Methoden-/Werkzeuglink | 42 |
 | Mindestens ein Demo-/Anwendungslink | 26 |
 
 ## Wichtigste Lücken
 
 - 300 Seiten enthalten noch den generischen Satz „Der Eintrag dient als begriffliche Einordnung innerhalb der Wirkungsökonomie.“ Diese Seiten brauchen eine echte wirkungsökonomische Relevanzbeschreibung.
-- 301 Seiten haben noch keine explizite wirkungsökonomische Auslegung oder Einordnung.
-- 1362 Seiten zeigen noch keinen strukturierten Block „Verwandte Inhalte“ mit Methoden, Demos, Dokumenten, Wirkungsfeldern, Akademie oder Datenregistern.
-- 475 Seiten haben noch keinen externen Quellenlink.
-- 1366 Seiten haben noch keinen direkten Link in ein konkretes Buchkapitel.
-- 1409 Seiten haben noch keinen Dokument- oder Bibliothekslink.
-- 608 source-backed Registerbegriffe haben noch kurze Definition = Langdefinition und brauchen fachliche Vertiefung.
-- 301 Bestandsseiten sind erhalten und im Hub sichtbar, liegen aber noch nicht vollständig im strukturierten Glossar-Register.
+- 302 Seiten haben noch keine explizite wirkungsökonomische Auslegung oder Einordnung.
+- 1358 Seiten zeigen noch keinen strukturierten Block „Verwandte Inhalte“ mit Methoden, Demos, Dokumenten, Wirkungsfeldern, Akademie oder Datenregistern.
+- 501 Seiten haben noch keinen externen Quellenlink.
+- 1394 Seiten haben noch keinen direkten Link in ein konkretes Buchkapitel.
+- 1437 Seiten haben noch keinen Dokument- oder Bibliothekslink.
+- 606 source-backed Registerbegriffe haben noch kurze Definition = Langdefinition und brauchen fachliche Vertiefung.
+- 302 Bestandsseiten sind erhalten und im Hub sichtbar, liegen aber noch nicht vollständig im strukturierten Glossar-Register.
 
 ## Beispiele für Nachholbedarf
 
@@ -239,6 +239,7 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | ai-act | AI Act / KI-VO | Bestand |
 | akkumulation | Akkumulation | Register |
 | alan-watts-daoismus | Alan Watts / Daoismus | Register |
+| algorithmische-fairness | Algorithmische Fairness | Register |
 | allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
 | allmendeproblem | Allmendeproblem | Register |
 | allokation | Allokation | Register |
@@ -246,10 +247,13 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | anwendungskontext | Anwendungskontext | Bestand |
 | anwendungskontext-2 | Anwendungskontext (Kurzverweis) | Bestand |
 | archetypen | Archetypen | Bestand |
+| attributionsforschung | Attributionsforschung | Register |
 | audit | Audit | Bestand |
 | aufmerksamkeit | Aufmerksamkeit | Register |
 | aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
 | austeritaet | Austerität | Register |
+| automatisierung | Automatisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
 | bedeutung-als-gebrauch | Bedeutung als Gebrauch | Register |
 | bedrohungsverarbeitung | Bedrohungsverarbeitung | Register |
 | begrenzte-rationalitaet | Begrenzte Rationalität | Register |
@@ -281,6 +285,8 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | deregulierung | Deregulierung | Register |
 | desinformation | Desinformation | Bestand |
 | digital-ki-plattform-standards | Digital-, KI- und Plattformstandards | Bestand |
+| digitale-selbstbestimmung | Digitale Selbstbestimmung | Register |
+| digitalisierung | Digitalisierung | Register |
 | diskursfaehigkeit-2 | Diskursfähigkeit (Kurzverweis) | Bestand |
 | diskurskultur | Diskurskultur | Bestand |
 | donut-oekonomie | Donut-Ökonomie / Doughnut Economics Action Lab | Bestand |
@@ -300,18 +306,12 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | eigentumsverantwortung | Eigentumsverantwortung | Register |
 | eiopa | EIOPA | Bestand |
 | energetische-sanierung | Energetische Sanierung | Bestand |
+| energiegenossenschaft | Energiegenossenschaft | Register |
+| energy-sharing | Energy Sharing | Register |
 | engpasslogik | Engpasslogik | Bestand |
 | entfremdung | Entfremdung | Register |
 | epbd | EPBD / Energy Performance of Buildings Directive | Bestand |
 | erm | ERM | Bestand |
-| ernst-von-glasersfeld | Ernst von Glasersfeld | Register |
-| erwuenschte-wirkung | Erwünschte Wirkung | Bestand |
-| erwuenschte-wirkung-2 | Erwünschte Wirkung (Kurzverweis) | Bestand |
-| esg-2 | ESG | Bestand |
-| esg-beratung | ESG-Beratung / Nachhaltigkeitsberatung | Bestand |
-| esg-rating | ESG-Rating | Bestand |
-| esma | ESMA | Bestand |
-| ets | ETS | Bestand |
 
 ### Keine Buchkapitel-Links
 
@@ -334,6 +334,7 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | akkumulator | Akkumulator / Akku | Register |
 | alan-watts-daoismus | Alan Watts / Daoismus | Register |
 | alarm-frame | Alarm-Frame | Register |
+| algorithmische-fairness | Algorithmische Fairness | Register |
 | allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
 | allmendeproblem | Allmendeproblem | Register |
 | allokation | Allokation | Register |
@@ -359,11 +360,14 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | assurance | Assurance | Register |
 | astroturfing | Astroturfing | Register |
 | atlas-network | Atlas Network | Register |
+| attributionsforschung | Attributionsforschung | Register |
 | aufmerksamkeit | Aufmerksamkeit | Register |
 | aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
 | austeritaet | Austerität | Register |
 | autokratie | Autokratie | Register |
 | autokratisierung | Autokratisierung | Register |
+| automatisierung | Automatisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
 | autopoiesis | Autopoiesis | Register |
 | autoritaeres-wirkungspotenzial | Autoritäres Wirkungspotenzial | Register |
 | autoritarismus | Autoritarismus | Register |
@@ -393,10 +397,6 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | benchmark | Benchmark | Register |
 | beobachterabhaengigkeit | Beobachterabhängigkeit | Register |
 | beobachtung-zweiter-ordnung | Beobachtung zweiter Ordnung | Register |
-| berichtsdaten | Berichtsdaten | Register |
-| beschwerdemechanismus-access-to-remedy | Beschwerdemechanismus / Access to Remedy | Register |
-| bestaetigungsfehler | Bestätigungsfehler | Register |
-| bestandsimmobilie | Bestandsimmobilie | Bestand |
 
 ### Keine Dokument-/Bibliothekslinks
 
@@ -420,6 +420,7 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | akkumulator | Akkumulator / Akku | Register |
 | alan-watts-daoismus | Alan Watts / Daoismus | Register |
 | alarm-frame | Alarm-Frame | Register |
+| algorithmische-fairness | Algorithmische Fairness | Register |
 | allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
 | allmendeproblem | Allmendeproblem | Register |
 | allokation | Allokation | Register |
@@ -445,12 +446,15 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | assurance | Assurance | Register |
 | astroturfing | Astroturfing | Register |
 | atlas-network | Atlas Network | Register |
+| attributionsforschung | Attributionsforschung | Register |
 | audit | Audit | Bestand |
 | aufmerksamkeit | Aufmerksamkeit | Register |
 | aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
 | austeritaet | Austerität | Register |
 | autokratie | Autokratie | Register |
 | autokratisierung | Autokratisierung | Register |
+| automatisierung | Automatisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
 | autopoiesis | Autopoiesis | Register |
 | autoritaeres-wirkungspotenzial | Autoritäres Wirkungspotenzial | Register |
 | autoritarismus | Autoritarismus | Register |
@@ -478,10 +482,6 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | behoerde | Behörde | Register |
 | belohnungslernen | Belohnungslernen | Register |
 | benchmark | Benchmark | Register |
-| benchmarks | Benchmarks | Bestand |
-| beobachterabhaengigkeit | Beobachterabhängigkeit | Register |
-| beobachtung-zweiter-ordnung | Beobachtung zweiter Ordnung | Register |
-| berichtsdaten | Berichtsdaten | Register |
 
 ## Nicht automatisch ergänzen
 
