@@ -297377,7 +297377,14 @@
         "Wirkungsbudget",
         "Transformationskosten",
         "Transformationsdividende",
-        "Resilienzdividende"
+        "Resilienzdividende",
+        "Haushalt nach Wirkung",
+        "wirkungsorientierte Haushaltsführung",
+        "Wirkung im Staatshaushalt",
+        "öffentlicher Wirkungshaushalt",
+        "Impact Budgeting",
+        "Outcome Budgeting nach WÖk",
+        "öffentliche Mittel nach Wirkung"
       ],
       "synonyms": [
         "Wirkungshaushalt",
@@ -297389,15 +297396,25 @@
         "Wirkungsbudget",
         "Transformationskosten",
         "Transformationsdividende",
-        "Resilienzdividende"
+        "Resilienzdividende",
+        "Haushalt nach Wirkung",
+        "wirkungsorientierte Haushaltsführung",
+        "Wirkung im Staatshaushalt",
+        "öffentlicher Wirkungshaushalt",
+        "Impact Budgeting",
+        "Outcome Budgeting nach WÖk",
+        "öffentliche Mittel nach Wirkung"
       ],
-      "shortDefinition": "Ein Wirkungshaushalt macht öffentliche Mittel nach erwarteter und geprüfter Wirkung steuerbar.",
-      "definition": "Der Wirkungshaushalt fragt, welche Zustände öffentliche Mittel verändern, welche Risiken entstehen und welche positive Netto-Wirkung erzeugt wird.",
-      "longDefinition": "Der Wirkungshaushalt fragt, welche Zustände öffentliche Mittel verändern, welche Risiken entstehen und welche positive Netto-Wirkung erzeugt wird.",
-      "woekRelation": "Nicht als reines Budgetlabel verwenden.",
+      "shortDefinition": "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Mittel nicht nur nach Ressorts und Titeln ordnet, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie prüft, priorisiert und rückkoppelt.",
+      "definition": "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Mittel nicht nur nach Ressorts und Titeln ordnet, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie prüft, priorisiert und rückkoppelt.",
+      "longDefinition": "Der Wirkungshaushalt bezeichnet eine öffentliche Haushaltsführung, in der staatliche Mittel systematisch nach tatsächlichen und plausiblen Zustandsveränderungen gelesen, geprüft, priorisiert und nachgesteuert werden.",
+      "woekRelation": "Der Wirkungshaushalt übersetzt die Wirkungsökonomie in öffentliche Finanzarchitektur: Jeder Euro ist ein Eingriff in einen Wirkungsraum und muss lernfähig rückgekoppelt werden.",
       "statusNote": "Nicht als reines Budgetlabel verwenden.",
-      "usageNote": "Nicht als reines Budgetlabel verwenden.",
+      "usageNote": "Nicht als Ersatz parlamentarischer Demokratie formulieren. Parlamente und Regierungen entscheiden weiter politisch, aber wirkungsinformiert, begründungspflichtig und öffentlich nachvollziehbar.",
       "categories": [
+        "Staat, Haushalt & öffentliche Mittel",
+        "Öffentliche Mittel & Wirkungshaushalt",
+        "Glossar-Pack 008",
         "messbegriff"
       ],
       "classicGlossary": true,
@@ -297424,31 +297441,120 @@
         "feministische-wirtschaftspolitik",
         "gender-budgeting",
         "austeritaet",
-        "schuldenbremse"
+        "schuldenbremse",
+        "wirkungspruefung",
+        "oeffentliche-beschaffung",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "oeffentliche-mittel",
+        "netto-wirkung",
+        "transformationswirkung",
+        "t-sroi",
+        "nwi",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "staatliche-blindleistung",
+        "wirkungssteuergesetz",
+        "datenqualitaet",
+        "wirkungsgrenze",
+        "wirkungshaushalt",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "kaufkraftschutz",
+        "resilienz",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "demokratie-als-wirkungsraum",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
-      "officialSources": [],
+      "officialSources": [
+        "UN SDGs / Agenda 2030",
+        "OECD Recommendation on Budgetary Governance",
+        "PEFA Framework",
+        "International Budget Partnership / Open Budget Survey",
+        "World Bank Public Financial Management",
+        "UNDP SDG Budgeting / INFF",
+        "OECD Public Governance"
+      ],
       "pageUrl": "/begriffe/wirkungshaushalt/",
-      "priority": 139,
+      "priority": 144,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Messbegriff",
-      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Instrumente",
-      "hoverDefinition": "Ein Wirkungshaushalt verbindet öffentliche Ausgaben mit Wirkung, Wirkungspotenzial und Rückkopplung.",
+      "version": "1.1",
+      "category": "Staat, Haushalt & öffentliche Mittel",
+      "source": "Glossar-Pack 008",
+      "sourceDocument": "Glossar-Pack 008: Öffentliche Mittel & Wirkungshaushalt",
+      "sourceSection": "Professionalisiertes Glossar-Pack 008",
+      "hoverDefinition": "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Mittel nicht nur nach Ressorts und Titeln ordnet, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie prüft, priorisiert und rückkoppelt.",
       "doNotConfuseWith": [
-        "Haushaltsplan",
-        "Outputbudget"
+        "Klassischer Haushalt: ordnet Einnahmen und Ausgaben; Wirkungshaushalt ordnet zusätzlich Zustandsveränderungen und Rückkopplungen.",
+        "Performance Budgeting: misst häufig Output oder Effizienz; Wirkungshaushalt fragt nach Netto-Wirkung für Mensch, Planet und Demokratie.",
+        "SDG-Haushalt: kann SDGs budgetär markieren; Wirkungshaushalt ergänzt SDG+, Nichtkompensation, Datenqualität und Rückkopplung.",
+        "Förderprogramm: einzelnes Instrument; Wirkungshaushalt ist Gesamtarchitektur.",
+        "Haushaltskonsolidierung: spart Mittel; Wirkungshaushalt fragt nach Wirkleistung und Folgekosten.",
+        "Technokratie: ersetzt politische Entscheidung nicht, sondern verbessert Wirkungsinformation.",
+        "Controlling: prüft Zielerreichung; Wirkungshaushalt verbindet Ziel, Daten, Mittel, Priorisierung, Evaluation und Rechenschaft.",
+        "Wirkungssteuer: steuert Einnahmen und Marktanreize; Wirkungshaushalt steuert Ausgaben und öffentliche Mittel."
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Steuerungsinstrument öffentlicher Mittel verwenden.",
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel",
+        "Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip",
+        "Die neue Ordnung des Wohlstands: Wirkungsrat",
+        "Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "examples": [
+        "Ein Bildungsprogramm wird daran geprüft, ob Kompetenzen, Teilhabe, digitale Mündigkeit und demokratische Resilienz steigen.",
+        "Eine Straßeninvestition wird zusätzlich nach Klima, Gesundheit, Lärm, Flächenverbrauch, Sicherheit, Teilhabe und Folgekosten bewertet.",
+        "Eine Energiesubvention wird darauf geprüft, ob sie Kaufkraft schützt und fossile Abhängigkeit nicht verlängert.",
+        "Ein Pflegeprogramm wird nach Entlastung, Versorgungsqualität, Würde, Prävention und Familienwirkung bewertet.",
+        "Ein Wohnungsprogramm wird nach Bezahlbarkeit, Energie, Gesundheit, Quartiersstabilität und Bodenspekulationswirkung bewertet."
+      ],
+      "preferredUsage": "Als Rückkopplungsarchitektur öffentlicher Mittel verwenden, die Wirkung, Wirkungspotenzial, Wirkungsrisiko, Netto-Wirkung und Transformationswirkung sauber trennt.",
       "deprecatedUsage": [],
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungshaushalt",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
-      "updatedAt": "2026-05-27",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
       "related_terms": [
         "wirkungslenkung",
         "wirkungsrueckkopplung",
@@ -297471,16 +297577,199 @@
         "feministische-wirtschaftspolitik",
         "gender-budgeting",
         "austeritaet",
-        "schuldenbremse"
+        "schuldenbremse",
+        "wirkungspruefung",
+        "oeffentliche-beschaffung",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "oeffentliche-mittel",
+        "netto-wirkung",
+        "transformationswirkung",
+        "t-sroi",
+        "nwi",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "staatliche-blindleistung",
+        "wirkungssteuergesetz",
+        "datenqualitaet",
+        "wirkungsgrenze",
+        "wirkungshaushalt",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "kaufkraftschutz",
+        "resilienz",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "demokratie-als-wirkungsraum",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "concept_status": "professionalisiert",
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "internal_links": [
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "netto-wirkung",
+          "label": "Netto-Wirkung",
+          "url": "/begriffe/netto-wirkung/"
+        },
+        {
+          "term": "transformationswirkung",
+          "label": "Transformationswirkung",
+          "url": "/begriffe/transformationswirkung/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "wirkungsrat",
+          "label": "Wirkungsrat",
+          "url": "/begriffe/wirkungsrat/"
+        },
+        {
+          "term": "wirkungsregister",
+          "label": "Wirkungsregister",
+          "url": "/begriffe/wirkungsregister/"
+        },
+        {
+          "term": "wirkungswahrheit",
+          "label": "Wirkungswahrheit",
+          "url": "/begriffe/wirkungswahrheit/"
+        },
+        {
+          "term": "wirkungsblindheit",
+          "label": "Wirkungsblindheit",
+          "url": "/begriffe/wirkungsblindheit/"
+        },
+        {
+          "term": "wirkungssteuergesetz",
+          "label": "Wirkungssteuergesetz",
+          "url": "/begriffe/wirkungssteuergesetz/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "wirkungsgrenze",
+          "label": "Wirkungsgrenze",
+          "url": "/begriffe/wirkungsgrenze/"
+        }
+      ],
+      "last_reviewed": "2026-06-01",
+      "type": "WÖk-Prägungsbegriff / Haushalts- und Steuerungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Haushalts- und Steuerungsbegriff",
       "theme": [
         "Messbegriff"
       ],
@@ -297511,7 +297800,138 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "review_status": "redaktionell zu prüfen",
+      "conceptStatus": "professionalisiert",
+      "glossary_pack": "008",
+      "cluster": "Öffentliche Mittel & Wirkungshaushalt",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "lastReviewed": "2026-06-01",
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "public_finance",
+        "budget_logic",
+        "steering_logic",
+        "accountability",
+        "democratic_safeguard"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Mittel nicht nur nach Ressorts und Titeln ordnet, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie prüft, priorisiert und rückkoppelt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- überträgt die Wirkungsökonomie auf staatliche Ausgaben\n- öffentliche Mittel gelten nicht als neutral\n- Mittelabfluss, Programmstart oder Output sind noch keine Wirkung\n- bewertet positive Netto-Wirkung, Resilienz, Teilhabe, Zukunftsfähigkeit und demokratisches Vertrauen\n- ersetzt nicht Parlament, Regierung oder politische Debatte\n- verbindet Wirkungsprüfung, Wirkungsbudget, öffentliche Beschaffung und Wirkungstransparenzbericht\n- vermeidet staatliche Blindleistung"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Der Wirkungshaushalt ergänzt die klassische Haushaltslogik aus Ressort, Titel, Ausgabeart, Zuständigkeit und Haushaltsjahr um eine Wirkungslogik. Er fragt nicht nur, ob Geld rechtmäßig bewilligt und ausgegeben wurde, sondern welche Zustände sich verändert haben: Gesundheit, Bildung, Wohnraum, Klima, Vertrauen, Prävention, Resilienz und demokratische Teilhabe. Er ist keine technokratische Ersatzentscheidung, sondern eine Rückkopplungsarchitektur. Politische Entscheidungen bleiben politisch, müssen aber Wirkungsannahmen, Datenqualität, Zielkonflikte, Nebenwirkungen und Korrekturpfade sichtbar machen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Der Staat ist selbst ein großer Wirkungsträger: über Steuern, Ausgaben, Förderungen, Subventionen, Investitionen, Personal, Beschaffung, Infrastruktur, Bildung, Gesundheit, Sicherheit, Verwaltung und Recht. Wenn nur Unternehmen und Produkte nach Wirkung betrachtet werden, öffentliche Mittel aber wirkungsblind verteilt bleiben, bleibt die Wirkungsökonomie unvollständig. Der Wirkungshaushalt zeigt, welche Ausgaben Prävention ermöglichen, welche nur Reparatur finanzieren, welche Subventionen negative Wirkung stabilisieren und welche Programme positive Netto-Wirkung oder Transformationswirkung erzeugen."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist der öffentliche Haushalt nicht nur Finanzplan, sondern Wirkungsplan. Jeder Euro kann Strukturen erhalten, Abhängigkeiten verlängern, Krisen reparieren, Prävention stärken, Transformation öffnen oder Vertrauen schaffen. Die Haushaltslogik ergänzt daher Zulässigkeit, Finanzierung und ordnungsgemäße Verwendung um Zielzustand, Wirkungspotenziale, Wirkungsrisiken, Netto-Wirkung, Alternativen, Datenqualität, Rückkopplung, Bürger:inneninformation und Rechtsschutz. SDG+ wird dabei als WÖk-Erweiterung genutzt, nicht als offizielle UN-Kategorie."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Klassischer Haushalt: ordnet Einnahmen und Ausgaben; Wirkungshaushalt ordnet zusätzlich Zustandsveränderungen und Rückkopplungen.\n- Performance Budgeting: misst häufig Output oder Effizienz; Wirkungshaushalt fragt nach Netto-Wirkung für Mensch, Planet und Demokratie.\n- SDG-Haushalt: kann SDGs budgetär markieren; Wirkungshaushalt ergänzt SDG+, Nichtkompensation, Datenqualität und Rückkopplung.\n- Förderprogramm: einzelnes Instrument; Wirkungshaushalt ist Gesamtarchitektur.\n- Haushaltskonsolidierung: spart Mittel; Wirkungshaushalt fragt nach Wirkleistung und Folgekosten.\n- Technokratie: ersetzt politische Entscheidung nicht, sondern verbessert Wirkungsinformation.\n- Controlling: prüft Zielerreichung; Wirkungshaushalt verbindet Ziel, Daten, Mittel, Priorisierung, Evaluation und Rechenschaft.\n- Wirkungssteuer: steuert Einnahmen und Marktanreize; Wirkungshaushalt steuert Ausgaben und öffentliche Mittel."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Bildungsprogramm wird daran geprüft, ob Kompetenzen, Teilhabe, digitale Mündigkeit und demokratische Resilienz steigen.\n- Eine Straßeninvestition wird zusätzlich nach Klima, Gesundheit, Lärm, Flächenverbrauch, Sicherheit, Teilhabe und Folgekosten bewertet.\n- Eine Energiesubvention wird darauf geprüft, ob sie Kaufkraft schützt und fossile Abhängigkeit nicht verlängert.\n- Ein Pflegeprogramm wird nach Entlastung, Versorgungsqualität, Würde, Prävention und Familienwirkung bewertet.\n- Ein Wohnungsprogramm wird nach Bezahlbarkeit, Energie, Gesundheit, Quartiersstabilität und Bodenspekulationswirkung bewertet."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestbestandteile sind Wirkungsziele je Haushaltsbereich, Zuordnung zu SDGs, SDG+ und Mensch, Planet und Demokratie, Ex-ante-Wirkungsprüfung, Wirkungsbudget, Wirkungsindikatoren, WÖk-IDs, Datenqualität, Alternativenprüfung, Netto-Wirkungs-Bewertung, Resilienz- und Kaufkraftschutzprüfung, Wirkungsrisikoanalyse, Ex-post-Evaluation, öffentlicher Wirkungstransparenzbericht, parlamentarische Begründung bei Abweichungen und Lernschleife für Folgehaushalte. Mittelabfluss ist kein Wirkungsnachweis; fehlende Daten dürfen keine positive Wirkung simulieren; Wirkungsgrenzen und Nichtkompensation gelten auch für staatliche Programme."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "wirkungspruefung, oeffentliche-beschaffung, wirkungsbudget, wirkungstransparenzbericht, oeffentliche-mittel, positive Netto-Wirkung, Netto-Wirkung, Transformationswirkung, T-SROI, NWI, Wirkungsrat, Wirkungsregister, Wirkungswahrheit, Wirkungsblindheit, staatliche-blindleistung, Wirkungssteuergesetz, Datenqualität, Wirkungsgrenze"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel\n- Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip\n- Die neue Ordnung des Wohlstands: Wirkungsrat\n- Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- OECD Recommendation on Budgetary Governance\n- PEFA Framework\n- International Budget Partnership / Open Budget Survey\n- World Bank Public Financial Management\n- UNDP SDG Budgeting / INFF\n- OECD Public Governance"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Öffentliche Mittel & Wirkungshaushalt\npack: 008\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: Modellhafte WÖk-Inhalte bleiben als Konzept, Entwurf oder Arbeitslogik gekennzeichnet; sie ersetzen keine geltende Rechtslage."
+        }
+      ]
     },
     {
       "id": "wirkungsindikator",
@@ -320161,6 +320581,2079 @@
         {
           "title": "Redaktionelle Metadaten",
           "body": "- Glossar-Pack: 007\n- Cluster: Steuer- und Preislogik\n- Version: 1.1\n- Review-Status: redaktionell zu prüfen\n- Qualitätsniveau: deep_glossary_entry\n- Status im Pack: professionalisiert\n- WStG/WUStG als Konzept, Entwurf oder Rahmenlogik kennzeichnen\n- Keine Personenbewertung, kein Social Credit\n- SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie"
+        }
+      ]
+    },
+    {
+      "id": "wirkungspruefung",
+      "termId": "wirkungspruefung",
+      "label": "Wirkungsprüfung",
+      "canonicalLabel": "Wirkungsprüfung",
+      "slug": "wirkungspruefung",
+      "aliases": [
+        "Wirkungsprüfung",
+        "Wirkung-Folgenabschätzung",
+        "Wirkungs-Folgenabschätzung",
+        "politische Wirkungsprüfung",
+        "Gesetzesfolgenabschätzung nach Wirkung",
+        "Programmwirkungsprüfung",
+        "Haushaltswirkungsprüfung",
+        "Impact Assessment",
+        "Ex-ante-Wirkungsprüfung",
+        "Ex-post-Wirkungsevaluation"
+      ],
+      "synonyms": [
+        "Wirkung-Folgenabschätzung",
+        "Wirkungs-Folgenabschätzung",
+        "politische Wirkungsprüfung",
+        "Gesetzesfolgenabschätzung nach Wirkung",
+        "Programmwirkungsprüfung",
+        "Haushaltswirkungsprüfung",
+        "Impact Assessment",
+        "Ex-ante-Wirkungsprüfung",
+        "Ex-post-Wirkungsevaluation"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungspruefung/",
+      "priority": 144,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungspruefung",
+      "shortDefinition": "Wirkungsprüfung ist die systematische Prüfung, welche positiven, negativen, neutralen oder unklaren Wirkungen eine Maßnahme, ein Gesetz, ein Budget oder ein Programm auf Mensch, Planet und Demokratie hat.",
+      "definition": "Wirkungsprüfung ist die systematische Prüfung, welche positiven, negativen, neutralen oder unklaren Wirkungen eine Maßnahme, ein Gesetz, ein Budget oder ein Programm auf Mensch, Planet und Demokratie hat.",
+      "hoverDefinition": "Wirkungsprüfung ist die systematische Prüfung, welche positiven, negativen, neutralen oder unklaren Wirkungen eine Maßnahme, ein Gesetz, ein Budget oder ein Programm auf Mensch, Planet und Demokratie hat.",
+      "longDefinition": "Wirkungsprüfung bezeichnet ein Verfahren, mit dem politische Maßnahmen, Gesetze, Förderprogramme, Haushaltspositionen, Beschaffungsentscheidungen oder Verwaltungsprozesse auf tatsächliche und plausible Zustandsveränderungen geprüft werden.",
+      "woekRelation": "Sie ist das methodische Bindeglied zwischen Wirkungshaushalt, Wirkungsbudget, öffentlicher Beschaffung und Wirkungstransparenzbericht.",
+      "usageNote": "Nicht mit Wirkungsaudit verwechseln: Audit prüft Nachweise und Prozessbelastbarkeit; Wirkungsprüfung bewertet Wirkpfade, Folgen, Alternativen und Rückkopplung.",
+      "preferredUsage": "Als Ex-ante- und Ex-post-Verfahren politischer Wirkungssteuerung verwenden, das Wirkungspotenzial, Wirkungsrisiko, Output und Mittelabfluss trennt.",
+      "doNotConfuseWith": [
+        "Wirkungsaudit: prüft Daten, Nachweise und Prozessbelastbarkeit; Wirkungsprüfung bewertet Wirkpfade, Folgen und Alternativen.",
+        "Wirkungsbewertung: ordnet Wirkung ein; Wirkungsprüfung ist das Verfahren in Politik, Haushalt oder Verwaltung.",
+        "Klassische Gesetzesfolgenabschätzung: kann Kosten und Bürokratie prüfen; WÖk-Wirkungsprüfung prüft Mensch, Planet, Demokratie, Resilienz und Netto-Wirkung.",
+        "Controlling: prüft Zielerreichung; Wirkungsprüfung fragt nach tatsächlicher Zustandsveränderung.",
+        "Monitoring: beobachtet; Wirkungsprüfung bewertet und löst Rückkopplung aus.",
+        "Evaluation: verwandt, aber WÖk-Wirkungsprüfung ist an Wirkungsarchitektur, SDG+, Nichtkompensation und Haushaltsrückkopplung gebunden.",
+        "politischer Appell: Wirkungsprüfung ist methodisch, nicht rhetorisch."
+      ],
+      "examples": [
+        "Ein Bürokratieabbaugesetz wird darauf geprüft, ob es entlastet, ohne Umwelt-, Arbeits-, Verbraucher- oder Rechtsschutz zu schwächen.",
+        "Eine Energiepreissubvention wird geprüft, ob sie Kaufkraft schützt und fossile Lock-ins verhindert.",
+        "Ein Schulprogramm wird geprüft, ob Kompetenzen, Teilhabe, Medienmündigkeit und Zukunftsfähigkeit steigen.",
+        "Ein kommunales Bauprojekt wird auf bezahlbaren Wohnraum, Klimaresilienz, soziale Mischung und Mobilität geprüft.",
+        "Eine Sicherheitsmaßnahme wird geprüft, ob sie Sicherheit erhöht, ohne Grundrechte und Vertrauen unverhältnismäßig zu beeinträchtigen."
+      ],
+      "category": "Staat, Prüfung & politische Steuerung",
+      "categories": [
+        "Staat, Prüfung & politische Steuerung",
+        "Öffentliche Mittel & Wirkungshaushalt",
+        "Glossar-Pack 008"
+      ],
+      "type": "WÖk-Präzisierungsbegriff / Methodenbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Methodenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 008",
+      "sourceDocument": "Glossar-Pack 008: Öffentliche Mittel & Wirkungshaushalt",
+      "sourceSection": "Professionalisiertes Glossar-Pack 008",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "008",
+      "cluster": "Öffentliche Mittel & Wirkungshaushalt",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN SDGs / Agenda 2030",
+        "OECD Recommendation on Budgetary Governance",
+        "OECD Public Governance",
+        "PEFA Framework",
+        "World Bank Public Financial Management",
+        "UNDP SDG Budgeting / INFF"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel",
+        "Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip",
+        "Die neue Ordnung des Wohlstands: Wirkungsrat",
+        "Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "oeffentliche-beschaffung",
+        "wirkungstransparenzbericht",
+        "wirkungsbewertung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "t-sroi",
+        "nwi",
+        "datenqualitaet",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "staatliche-blindleistung",
+        "demokratie-als-wirkungsraum",
+        "wirkungspruefung",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-mittel",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "kaufkraftschutz",
+        "resilienz",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "related_terms": [
+        "wirkungshaushalt",
+        "wirkungsbudget",
+        "oeffentliche-beschaffung",
+        "wirkungstransparenzbericht",
+        "wirkungsbewertung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "t-sroi",
+        "nwi",
+        "datenqualitaet",
+        "wirkungsrat",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsregister",
+        "wirkungsgrenze",
+        "staatliche-blindleistung",
+        "demokratie-als-wirkungsraum",
+        "wirkungspruefung",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-mittel",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "kaufkraftschutz",
+        "resilienz",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "internal_links": [
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungsbewertung",
+          "label": "Wirkungsbewertung",
+          "url": "/begriffe/wirkungsbewertung/"
+        },
+        {
+          "term": "wirkungspotenzial",
+          "label": "Wirkungspotenzial",
+          "url": "/begriffe/wirkungspotenzial/"
+        },
+        {
+          "term": "wirkungsrisiko",
+          "label": "Wirkungsrisiko",
+          "url": "/begriffe/wirkungsrisiko/"
+        },
+        {
+          "term": "netto-wirkung",
+          "label": "Netto-Wirkung",
+          "url": "/begriffe/netto-wirkung/"
+        },
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "transformationswirkung",
+          "label": "Transformationswirkung",
+          "url": "/begriffe/transformationswirkung/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "wirkungsrat",
+          "label": "Wirkungsrat",
+          "url": "/begriffe/wirkungsrat/"
+        },
+        {
+          "term": "wirkungsaudit",
+          "label": "Wirkungsaudit",
+          "url": "/begriffe/wirkungsaudit/"
+        },
+        {
+          "term": "wirkungsassurance",
+          "label": "Wirkungsassurance",
+          "url": "/begriffe/wirkungsassurance/"
+        },
+        {
+          "term": "wirkungsregister",
+          "label": "Wirkungsregister",
+          "url": "/begriffe/wirkungsregister/"
+        },
+        {
+          "term": "wirkungsgrenze",
+          "label": "Wirkungsgrenze",
+          "url": "/begriffe/wirkungsgrenze/"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "ex_ante_assessment",
+        "ex_post_evaluation",
+        "method",
+        "steering_logic",
+        "democratic_safeguard"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Wirkungsprüfung ist die systematische Prüfung, welche positiven, negativen, neutralen oder unklaren Wirkungen eine Maßnahme, ein Gesetz, ein Budget oder ein Programm auf Mensch, Planet und Demokratie hat."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- macht politische, finanzielle und administrative Maßnahmen wirkungsfähig\n- unterscheidet Wirkung, Wirkungspotenzial, Wirkungsrisiko, Output und Mittelabfluss\n- prüft Ex-ante-Annahmen und Ex-post-Wirkungen\n- bewertet am Referenzrahmen SDGs, Agenda 2030 und SDG+ als WÖk-Erweiterung\n- ist Grundlage für Wirkungshaushalt, Wirkungsbudget, Beschaffung und Transparenzbericht\n- legt Zielkonflikte, Datenqualität, Unsicherheit und Nebenwirkungen offen\n- verhindert staatliche Blindleistung und symbolische Politik"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Wirkungsprüfung fragt nicht nur, ob eine Maßnahme rechtlich zulässig, finanziert oder politisch gewollt ist. Sie fragt, welche Zustände durch sie verändert werden: bei Menschen, Ökosystemen, Märkten, Institutionen, Infrastruktur, Demokratie, zukünftigen Generationen und öffentlichen Haushalten. Als Ex-ante-Wirkungsprüfung macht sie Annahmen, Wirkpfade und Risiken sichtbar; als Ex-post-Wirkungsevaluation prüft sie, was tatsächlich eingetreten ist. In beiden Fällen geht es um mehr als Zählung von Leistungen oder Ausgaben."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Staatliches Handeln beginnt oft mit guten Absichten, erzeugt aber nicht automatisch gute Wirkung. Eine Subvention kann Kaufkraft schützen und fossile Lock-ins verlängern; ein Digitalisierungsprojekt kann Verwaltung erleichtern oder Bürokratie nur digital reproduzieren. Wirkungsprüfung macht solche Folgen sichtbar und sorgt dafür, dass Haushalt, Recht, Programme und Beschaffung lernfähig werden."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk unterscheidet Ex-ante-Prüfung, begleitende Prüfung und Ex-post-Prüfung. Ex-ante werden erwartete Wirkung, Annahmen, Daten und Risiken offengelegt; begleitend zeigen Frühindikatoren Nebenwirkungen; ex post wird geprüft, welche Zustände sich tatsächlich verändert haben. Wirkungsprüfung ist daher kein einmaliger Genehmigungsstempel, sondern Teil einer Rückkopplungsschleife mit öffentlicher Nachvollziehbarkeit, Datenschutz, Einsicht, Widerspruch, Rechtsschutz und Korrekturpfaden."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Wirkungsaudit: prüft Daten, Nachweise und Prozessbelastbarkeit; Wirkungsprüfung bewertet Wirkpfade, Folgen und Alternativen.\n- Wirkungsbewertung: ordnet Wirkung ein; Wirkungsprüfung ist das Verfahren in Politik, Haushalt oder Verwaltung.\n- Klassische Gesetzesfolgenabschätzung: kann Kosten und Bürokratie prüfen; WÖk-Wirkungsprüfung prüft Mensch, Planet, Demokratie, Resilienz und Netto-Wirkung.\n- Controlling: prüft Zielerreichung; Wirkungsprüfung fragt nach tatsächlicher Zustandsveränderung.\n- Monitoring: beobachtet; Wirkungsprüfung bewertet und löst Rückkopplung aus.\n- Evaluation: verwandt, aber WÖk-Wirkungsprüfung ist an Wirkungsarchitektur, SDG+, Nichtkompensation und Haushaltsrückkopplung gebunden.\n- politischer Appell: Wirkungsprüfung ist methodisch, nicht rhetorisch."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Bürokratieabbaugesetz wird darauf geprüft, ob es entlastet, ohne Umwelt-, Arbeits-, Verbraucher- oder Rechtsschutz zu schwächen.\n- Eine Energiepreissubvention wird geprüft, ob sie Kaufkraft schützt und fossile Lock-ins verhindert.\n- Ein Schulprogramm wird geprüft, ob Kompetenzen, Teilhabe, Medienmündigkeit und Zukunftsfähigkeit steigen.\n- Ein kommunales Bauprojekt wird auf bezahlbaren Wohnraum, Klimaresilienz, soziale Mischung und Mobilität geprüft.\n- Eine Sicherheitsmaßnahme wird geprüft, ob sie Sicherheit erhöht, ohne Grundrechte und Vertrauen unverhältnismäßig zu beeinträchtigen."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Eine Wirkungsprüfung enthält Maßnahme, Problemdefinition, Wirkungsträger, Wirkungsempfänger, Wirkungsraum, erwartete Wirkungspotenziale, Wirkungsrisiken, relevante SDGs und SDG+, Datenbasis, Datenqualität, Alternativenprüfung, Netto-Wirkungsabschätzung, Resilienzprüfung, Kaufkraftschutz, Nebenwirkungen, Wirkungsgrenzen, Beteiligung, Ex-post-Prüfdatum und Rückkopplung in Haushalt, Beschaffung, Recht oder Verwaltung. Wirkungspotenzial darf nicht als eingetretene Wirkung berichtet werden."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "Wirkungshaushalt, wirkungsbudget, oeffentliche-beschaffung, wirkungstransparenzbericht, Wirkungsbewertung, Wirkungspotenzial, Wirkungsrisiko, Netto-Wirkung, positive Netto-Wirkung, Transformationswirkung, T-SROI, NWI, Datenqualität, Wirkungsrat, Wirkungsaudit, Wirkungsassurance, Wirkungsregister, Wirkungsgrenze, staatliche-blindleistung, demokratie-als-wirkungsraum"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel\n- Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip\n- Die neue Ordnung des Wohlstands: Wirkungsrat\n- Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- OECD Recommendation on Budgetary Governance\n- OECD Public Governance\n- PEFA Framework\n- World Bank Public Financial Management\n- UNDP SDG Budgeting / INFF"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Öffentliche Mittel & Wirkungshaushalt\npack: 008\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: Modellhafte WÖk-Inhalte bleiben als Konzept, Entwurf oder Arbeitslogik gekennzeichnet; sie ersetzen keine geltende Rechtslage."
+        }
+      ]
+    },
+    {
+      "id": "oeffentliche-beschaffung",
+      "termId": "oeffentliche-beschaffung",
+      "label": "Öffentliche Beschaffung",
+      "canonicalLabel": "Öffentliche Beschaffung",
+      "slug": "oeffentliche-beschaffung",
+      "aliases": [
+        "Öffentliche Beschaffung",
+        "Beschaffung nach Wirkung",
+        "wirkungsorientierte öffentliche Beschaffung",
+        "nachhaltige öffentliche Beschaffung",
+        "Public Procurement nach Wirkung",
+        "öffentliche Vergabe nach Wirkung",
+        "Wirkungsbeschaffung",
+        "Impact Procurement",
+        "Green Public Procurement nach WÖk"
+      ],
+      "synonyms": [
+        "Beschaffung nach Wirkung",
+        "wirkungsorientierte öffentliche Beschaffung",
+        "nachhaltige öffentliche Beschaffung",
+        "Public Procurement nach Wirkung",
+        "öffentliche Vergabe nach Wirkung",
+        "Wirkungsbeschaffung",
+        "Impact Procurement",
+        "Green Public Procurement nach WÖk"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/oeffentliche-beschaffung/",
+      "priority": 144,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "oeffentliche-beschaffung",
+      "shortDefinition": "Öffentliche Beschaffung nach Wirkung bedeutet, dass der Staat beim Einkauf nicht nur Preis und Eignung prüft, sondern die Netto-Wirkung von Produkten, Dienstleistungen und Lieferketten berücksichtigt.",
+      "definition": "Öffentliche Beschaffung nach Wirkung bedeutet, dass der Staat beim Einkauf nicht nur Preis und Eignung prüft, sondern die Netto-Wirkung von Produkten, Dienstleistungen und Lieferketten berücksichtigt.",
+      "hoverDefinition": "Öffentliche Beschaffung nach Wirkung bedeutet, dass der Staat beim Einkauf nicht nur Preis und Eignung prüft, sondern die Netto-Wirkung von Produkten, Dienstleistungen und Lieferketten berücksichtigt.",
+      "longDefinition": "Öffentliche Beschaffung wird in der Wirkungsökonomie als Hebel verstanden, mit dem öffentliche Nachfrage Produkte, Dienstleistungen, Lieferketten, Standards und Markttransformation beeinflusst.",
+      "woekRelation": "Sie verbindet Wirkungshaushalt, Wirkungsprüfung, Produktscorecards, Digitale Produktpässe und Wirkungssteuer zu öffentlicher Kaufkraft nach Wirkung.",
+      "usageNote": "Nicht auf den niedrigsten Anschaffungspreis reduzieren. Wirkungskriterien müssen transparent, diskriminierungsfrei, verhältnismäßig, prüfbar und rechtsschutzfähig sein.",
+      "preferredUsage": "Als öffentliche Nachfrage nach positiver Netto-Wirkung und robusten Produkt-, Lieferketten- und Dienstleistungsdaten verwenden.",
+      "doNotConfuseWith": [
+        "Grüne Beschaffung: kann ökologisch fokussiert sein; WÖk-Beschaffung umfasst Mensch, Planet und Demokratie.",
+        "soziale Beschaffung: wichtiger Teilbereich; WÖk verbindet soziale, ökologische, gesundheitliche und demokratische Wirkung.",
+        "niedrigster Preis: kann hohe Folgekosten verdecken.",
+        "Lebenszykluskostenrechnung: verwandt, aber WÖk-Beschaffung geht über monetäre Kosten hinaus.",
+        "Labelpflicht: Labels können helfen, ersetzen aber keine Scorecard, Datenqualität oder Prüfung.",
+        "Förderung: Beschaffung ist Nachfrage; Förderung ist Mittelgewährung.",
+        "Wirkungssteuer: Steuern verändern Preissignale; Beschaffung nutzt öffentliche Kaufkraft.",
+        "PR-Beschaffung: Wirkung muss nachweisbar sein, nicht nur behauptet werden."
+      ],
+      "examples": [
+        "Eine Kommune beschafft Schulessen nach Gesundheit, Regionalität, Wasser, Klima, Arbeitsbedingungen, Verpackung und Lebensmittelverschwendung.",
+        "Ein Krankenhaus kauft Textilien nach Lieferkettenwirkung, Chemikaliensicherheit, Haltbarkeit, Waschzyklen und Arbeitsrechten.",
+        "Eine Verwaltung beschafft IT nach Energieeffizienz, Datenschutz, Barrierefreiheit, Cyberresilienz, Interoperabilität und Anbieterabhängigkeit.",
+        "Ein Bauprojekt wird nach Materialien, Energie, Gesundheit, Flächenverbrauch, Reparierbarkeit und Quartierswirkung bewertet.",
+        "Ein Fuhrpark wird nach Emissionen, Rohstoffen, Reparierbarkeit, Ladeinfrastruktur, Sicherheit und Kreislauffähigkeit bewertet."
+      ],
+      "category": "Staat, Beschaffung & Markttransformation",
+      "categories": [
+        "Staat, Beschaffung & Markttransformation",
+        "Öffentliche Mittel & Wirkungshaushalt",
+        "Glossar-Pack 008"
+      ],
+      "type": "Anschlussbegriff / WÖk-Präzisierung",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 008",
+      "sourceDocument": "Glossar-Pack 008: Öffentliche Mittel & Wirkungshaushalt",
+      "sourceSection": "Professionalisiertes Glossar-Pack 008",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "008",
+      "cluster": "Öffentliche Mittel & Wirkungshaushalt",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "European Commission Public Procurement",
+        "European Commission Green Public Procurement",
+        "Directive 2014/24/EU on public procurement",
+        "OECD Recommendation on Public Procurement",
+        "UN SDGs / Agenda 2030",
+        "CSRD / ESRS",
+        "GRI Standards",
+        "EU Taxonomy",
+        "Digital Product Passport / ESPR"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel",
+        "Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip",
+        "Die neue Ordnung des Wohlstands: Wirkungsrat",
+        "Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungspruefung",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "markttransformation",
+        "lieferkettenwirkung",
+        "t-sroi",
+        "nwi",
+        "oeffentliche-beschaffung",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-mittel",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "kaufkraftschutz",
+        "resilienz",
+        "staatliche-blindleistung",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsrat",
+        "wirkungsindikator",
+        "benchmark",
+        "wirkungssteuergesetz",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "demokratie-als-wirkungsraum",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "related_terms": [
+        "wirkungshaushalt",
+        "wirkungspruefung",
+        "wirkungsbudget",
+        "wirkungstransparenzbericht",
+        "produktwirkung",
+        "produktscorecard",
+        "produktdaten",
+        "digitaler-produktpass",
+        "woek-id",
+        "finalscore",
+        "datenqualitaet",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "ehrliche-preise",
+        "wirkungssteuer",
+        "responsible-marketing",
+        "greenwashing",
+        "markttransformation",
+        "lieferkettenwirkung",
+        "t-sroi",
+        "nwi",
+        "oeffentliche-beschaffung",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-mittel",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "kaufkraftschutz",
+        "resilienz",
+        "staatliche-blindleistung",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsrat",
+        "wirkungsindikator",
+        "benchmark",
+        "wirkungssteuergesetz",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "demokratie-als-wirkungsraum",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "internal_links": [
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungspruefung",
+          "label": "Wirkungsprüfung",
+          "url": "/begriffe/wirkungspruefung/"
+        },
+        {
+          "term": "produktwirkung",
+          "label": "Produktwirkung",
+          "url": "/begriffe/produktwirkung/"
+        },
+        {
+          "term": "produktscorecard",
+          "label": "Produktscorecard",
+          "url": "/begriffe/produktscorecard/"
+        },
+        {
+          "term": "produktdaten",
+          "label": "Produktdaten",
+          "url": "/begriffe/produktdaten/"
+        },
+        {
+          "term": "digitaler-produktpass",
+          "label": "Digitaler Produktpass",
+          "url": "/begriffe/digitaler-produktpass/"
+        },
+        {
+          "term": "woek-id",
+          "label": "WÖk-ID",
+          "url": "/begriffe/woek-id/"
+        },
+        {
+          "term": "finalscore",
+          "label": "FinalScore",
+          "url": "/begriffe/finalscore/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "wirkungsregister",
+          "label": "Wirkungsregister",
+          "url": "/begriffe/wirkungsregister/"
+        },
+        {
+          "term": "wirkungsaudit",
+          "label": "Wirkungsaudit",
+          "url": "/begriffe/wirkungsaudit/"
+        },
+        {
+          "term": "wirkungsassurance",
+          "label": "Wirkungsassurance",
+          "url": "/begriffe/wirkungsassurance/"
+        },
+        {
+          "term": "reverse-merit-order",
+          "label": "Reverse Merit Order",
+          "url": "/begriffe/reverse-merit-order/"
+        },
+        {
+          "term": "wirkungsgrenze",
+          "label": "Wirkungsgrenze",
+          "url": "/begriffe/wirkungsgrenze/"
+        },
+        {
+          "term": "ehrliche-preise",
+          "label": "Ehrliche Preise",
+          "url": "/begriffe/ehrliche-preise/"
+        },
+        {
+          "term": "wirkungssteuer",
+          "label": "Wirkungssteuer",
+          "url": "/begriffe/wirkungssteuer/"
+        },
+        {
+          "term": "responsible-marketing",
+          "label": "Responsible Marketing",
+          "url": "/begriffe/responsible-marketing/"
+        },
+        {
+          "term": "greenwashing",
+          "label": "Greenwashing",
+          "url": "/begriffe/greenwashing/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "procurement",
+        "implementation",
+        "steering_logic",
+        "accountability",
+        "democratic_safeguard"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Öffentliche Beschaffung nach Wirkung bedeutet, dass der Staat beim Einkauf nicht nur Preis und Eignung prüft, sondern die Netto-Wirkung von Produkten, Dienstleistungen und Lieferketten berücksichtigt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- einer der stärksten Hebel staatlicher Wirkungslenkung\n- jeder Auftrag stärkt bestimmte Märkte, Lieferketten und Technologien\n- bewertet Lebenszykluswirkung, Produktdaten, Lieferketten, FinalScore, Datenqualität und Wirkungsgrenzen\n- niedrigster Anschaffungspreis ist nicht automatisch der wirtschaftlichste Preis\n- schützt vor Greenwashing und scheinbar billigen, aber schädlichen Angeboten\n- verbindet Wirkungshaushalt, Produktscorecards, Digitalen Produktpass und Wirkungsprüfung\n- muss transparent, diskriminierungsfrei, verhältnismäßig und prüfbar sein"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Öffentliche Beschaffung bezeichnet den Einkauf von Waren, Dienstleistungen, Bauleistungen, Infrastruktur, Energie, IT, Mobilität, Lebensmitteln, medizinischen Produkten oder Beratung durch staatliche Stellen. In der WÖk entscheidet der Staat mit seiner Nachfrage, welche Geschäftsmodelle, Produkte, Lieferketten und Standards gestärkt werden. Bewertet wird daher nicht nur der Anschaffungspreis, sondern die Wirkung entlang des Lebenszyklus: Klima, Ressourcen, Energie, Wasser, Arbeit, Gesundheit, Sicherheit, Datenschutz, Reparierbarkeit, Kreislauffähigkeit, Lieferkettenintegrität, Teilhabe, demokratische Transparenz und Folgekosten."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Der Staat ist ein großer Nachfrager. Schulen, Krankenhäuser, Verwaltungen, Kommunen, Infrastruktur, Pflege, IT und Energieversorgung erzeugen erhebliche Marktsignale. Wirkungsblinde Beschaffung stabilisiert billige Produkte mit schlechten Lieferketten, fossil abhängige Infrastruktur, toxische Materialien oder datenunsichere Plattformen. Beschaffung nach Wirkung macht bessere Produkte wettbewerbsfähiger, verbessert Datenqualität, nutzt DPP- und Scorecard-Strukturen, senkt Greenwashing-Risiken und erhöht positive Netto-Wirkung öffentlicher Mittel."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die klassische Beschaffung fragt nach formaler Eignung, Wirtschaftlichkeit, Preis und Mindestanforderungen. Die WÖk ergänzt Netto-Wirkung, Lebenszykluskosten, Lieferkettenwirkung, rote Linien, Datenqualität, Reparierbarkeit, Kreislauffähigkeit, Resilienz, soziale Tragfähigkeit und Markttransformation. Beschaffung nach Wirkung ist keine willkürliche Bevorzugung. Sie braucht objektive Kriterien, transparente Gewichtung, Nachweise, Datenqualität, Einspruchs- und Korrekturprozesse sowie verhältnismäßige Anforderungen, die KMU nicht durch überzogene Nachweise verdrängen."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Grüne Beschaffung: kann ökologisch fokussiert sein; WÖk-Beschaffung umfasst Mensch, Planet und Demokratie.\n- soziale Beschaffung: wichtiger Teilbereich; WÖk verbindet soziale, ökologische, gesundheitliche und demokratische Wirkung.\n- niedrigster Preis: kann hohe Folgekosten verdecken.\n- Lebenszykluskostenrechnung: verwandt, aber WÖk-Beschaffung geht über monetäre Kosten hinaus.\n- Labelpflicht: Labels können helfen, ersetzen aber keine Scorecard, Datenqualität oder Prüfung.\n- Förderung: Beschaffung ist Nachfrage; Förderung ist Mittelgewährung.\n- Wirkungssteuer: Steuern verändern Preissignale; Beschaffung nutzt öffentliche Kaufkraft.\n- PR-Beschaffung: Wirkung muss nachweisbar sein, nicht nur behauptet werden."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Eine Kommune beschafft Schulessen nach Gesundheit, Regionalität, Wasser, Klima, Arbeitsbedingungen, Verpackung und Lebensmittelverschwendung.\n- Ein Krankenhaus kauft Textilien nach Lieferkettenwirkung, Chemikaliensicherheit, Haltbarkeit, Waschzyklen und Arbeitsrechten.\n- Eine Verwaltung beschafft IT nach Energieeffizienz, Datenschutz, Barrierefreiheit, Cyberresilienz, Interoperabilität und Anbieterabhängigkeit.\n- Ein Bauprojekt wird nach Materialien, Energie, Gesundheit, Flächenverbrauch, Reparierbarkeit und Quartierswirkung bewertet.\n- Ein Fuhrpark wird nach Emissionen, Rohstoffen, Reparierbarkeit, Ladeinfrastruktur, Sicherheit und Kreislauffähigkeit bewertet."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Beschaffung nach Wirkung braucht Bedarfsprüfung, Wirkungsprüfung vor Ausschreibung, Wirkungsanforderungen im Leistungsverzeichnis, Mindestanforderungen und Wirkungsgrenzen, Bewertungskriterien mit Gewichtung, DPP-/Produktdatenbezug, WÖk-ID-Mapping, Scorecards, Datenqualitätsanforderungen, Nachweis- und Auditpflichten, Lebenszykluskosten, Lieferkettenwirkung, Monitoring nach Zuschlag, Vertragsklauseln für Korrektur, Transparenzbericht und Widerspruchsprozess. Fehlende Daten dürfen keine positive Wirkung simulieren."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "Wirkungshaushalt, wirkungspruefung, wirkungsbudget, wirkungstransparenzbericht, Produktwirkung, Produktscorecard, Produktdaten, Digitaler Produktpass, WÖk-ID, FinalScore, Datenqualität, Wirkungsregister, Wirkungsaudit, Wirkungsassurance, Reverse Merit Order, Wirkungsgrenze, Ehrliche Preise, Wirkungssteuer, Responsible Marketing, Greenwashing, markttransformation, lieferkettenwirkung, T-SROI, NWI"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel\n- Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip\n- Die neue Ordnung des Wohlstands: Wirkungsrat\n- Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- European Commission Public Procurement\n- European Commission Green Public Procurement\n- Directive 2014/24/EU on public procurement\n- OECD Recommendation on Public Procurement\n- UN SDGs / Agenda 2030\n- CSRD / ESRS\n- GRI Standards\n- EU Taxonomy\n- Digital Product Passport / ESPR"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Öffentliche Mittel & Wirkungshaushalt\npack: 008\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: Modellhafte WÖk-Inhalte bleiben als Konzept, Entwurf oder Arbeitslogik gekennzeichnet; sie ersetzen keine geltende Rechtslage."
+        }
+      ]
+    },
+    {
+      "id": "wirkungsbudget",
+      "termId": "wirkungsbudget",
+      "label": "Wirkungsbudget",
+      "canonicalLabel": "Wirkungsbudget",
+      "slug": "wirkungsbudget",
+      "aliases": [
+        "Wirkungsbudget",
+        "Budget nach Wirkung",
+        "Impact Budget",
+        "wirkungsorientiertes Budget",
+        "Budget für positive Netto-Wirkung",
+        "Transformationsbudget",
+        "Resilienzbudget",
+        "SDG-Budget",
+        "Wirkungsrahmen im Haushalt"
+      ],
+      "synonyms": [
+        "Budget nach Wirkung",
+        "Impact Budget",
+        "wirkungsorientiertes Budget",
+        "Budget für positive Netto-Wirkung",
+        "Transformationsbudget",
+        "Resilienzbudget",
+        "SDG-Budget",
+        "Wirkungsrahmen im Haushalt"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungsbudget/",
+      "priority": 144,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungsbudget",
+      "shortDefinition": "Ein Wirkungsbudget ist ein Teilbudget, das nicht nur einem Ressort oder Ausgabentitel zugeordnet ist, sondern einem definierten Wirkungsziel mit Indikatoren, Prüfpfad und Rückkopplung.",
+      "definition": "Ein Wirkungsbudget ist ein Teilbudget, das nicht nur einem Ressort oder Ausgabentitel zugeordnet ist, sondern einem definierten Wirkungsziel mit Indikatoren, Prüfpfad und Rückkopplung.",
+      "hoverDefinition": "Ein Wirkungsbudget ist ein Teilbudget, das nicht nur einem Ressort oder Ausgabentitel zugeordnet ist, sondern einem definierten Wirkungsziel mit Indikatoren, Prüfpfad und Rückkopplung.",
+      "longDefinition": "Ein Wirkungsbudget ist eine operative Einheit im Wirkungshaushalt, die öffentliche Mittel mit Zielzustand, Indikatoren, Datenqualität, Evaluation und Korrekturpfad verbindet.",
+      "woekRelation": "Es übersetzt die Architektur des Wirkungshaushalts in steuerbare Budgets für konkrete Wirkungsräume und ressortübergreifende Zielzustände.",
+      "usageNote": "Nicht als bloßen Sondertopf ohne Kontrolle formulieren. Wirkungsbudgets sind stärker geprüfte Mittelsteuerung, nicht weniger Kontrolle.",
+      "preferredUsage": "Als budgetäre Einheit für positive Netto-Wirkung, Resilienz, Prävention und Transformation verwenden.",
+      "doNotConfuseWith": [
+        "Ressortbudget: organisatorisch; Wirkungsbudget ist wirkungszielbezogen.",
+        "Projektbudget: finanziert einzelne Projekte; Wirkungsbudget kann mehrere Projekte bündeln.",
+        "Fördertopf: vergibt Mittel; Wirkungsbudget prüft Zustandsveränderung und Rückkopplung.",
+        "Notfallbudget: kann erforderlich sein; Wirkungsbudget fragt zusätzlich nach langfristiger Wirkung.",
+        "SDG-Budget: kann SDG-Zuordnung enthalten; Wirkungsbudget ergänzt SDG+, Netto-Wirkung und Nichtkompensation.",
+        "T-SROI: bewertet Transformationswirkung; Wirkungsbudget ist die Mittelstruktur, auf die T-SROI angewendet werden kann.",
+        "Wirkungsgutschrift: belohnt Wirkung; Wirkungsbudget finanziert Wirkung.",
+        "Haushaltsneutralität: Wirkungsbudgets können innerhalb haushaltsneutraler Umschichtung entstehen."
+      ],
+      "examples": [
+        "Ein Hitzeschutz-Wirkungsbudget finanziert Entsiegelung, Stadtgrün, Trinkwasserbrunnen, Pflegeheime, Schulen und Gesundheitskommunikation gemeinsam.",
+        "Ein Bildungswirkungsbudget verbindet Lehrkräftefortbildung, digitale Mündigkeit, Demokratiebildung und Schulsozialarbeit.",
+        "Ein Wohnwirkungsbudget bündelt bezahlbaren Wohnraum, energetische Sanierung, Quartiersgesundheit und soziale Mischung.",
+        "Ein Pflegewirkungsbudget finanziert Prävention, Angehörigenentlastung, Fachkräftebindung und Quartierspflege.",
+        "Ein Demokratie-Resilienzbudget finanziert Medienkompetenz, Diskursräume, Desinformationsprävention, Bürgerbeteiligung und Begegnungsorte."
+      ],
+      "category": "Haushalt, Programme & Mittelsteuerung",
+      "categories": [
+        "Haushalt, Programme & Mittelsteuerung",
+        "Öffentliche Mittel & Wirkungshaushalt",
+        "Glossar-Pack 008"
+      ],
+      "type": "WÖk-Prägungsbegriff / Budgetbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Budgetbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 008",
+      "sourceDocument": "Glossar-Pack 008: Öffentliche Mittel & Wirkungshaushalt",
+      "sourceSection": "Professionalisiertes Glossar-Pack 008",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "008",
+      "cluster": "Öffentliche Mittel & Wirkungshaushalt",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN SDGs / Agenda 2030",
+        "OECD Recommendation on Budgetary Governance",
+        "PEFA Framework",
+        "International Budget Partnership / Open Budget Survey",
+        "World Bank Public Financial Management",
+        "UNDP SDG Budgeting / INFF",
+        "OECD Public Governance"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel",
+        "Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip",
+        "Die neue Ordnung des Wohlstands: Wirkungsrat",
+        "Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungspruefung",
+        "oeffentliche-beschaffung",
+        "wirkungstransparenzbericht",
+        "oeffentliche-mittel",
+        "foerdermittel",
+        "subvention",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "resilienz",
+        "kaufkraftschutz",
+        "t-sroi",
+        "nwi",
+        "datenqualitaet",
+        "wirkungsrueckkopplung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "staatliche-blindleistung",
+        "wirkungsbudget",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-investition",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsrat",
+        "wirkungsregister",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "demokratie-als-wirkungsraum",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "related_terms": [
+        "wirkungshaushalt",
+        "wirkungspruefung",
+        "oeffentliche-beschaffung",
+        "wirkungstransparenzbericht",
+        "oeffentliche-mittel",
+        "foerdermittel",
+        "subvention",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "resilienz",
+        "kaufkraftschutz",
+        "t-sroi",
+        "nwi",
+        "datenqualitaet",
+        "wirkungsrueckkopplung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "staatliche-blindleistung",
+        "wirkungsbudget",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-investition",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsrat",
+        "wirkungsregister",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "rechtsschutz",
+        "demokratie-als-wirkungsraum",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "internal_links": [
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungspruefung",
+          "label": "Wirkungsprüfung",
+          "url": "/begriffe/wirkungspruefung/"
+        },
+        {
+          "term": "oeffentliche-beschaffung",
+          "label": "Öffentliche Beschaffung",
+          "url": "/begriffe/oeffentliche-beschaffung/"
+        },
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "transformationswirkung",
+          "label": "Transformationswirkung",
+          "url": "/begriffe/transformationswirkung/"
+        },
+        {
+          "term": "resilienz",
+          "label": "Resilienz",
+          "url": "/begriffe/resilienz/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "wirkungsrueckkopplung",
+          "label": "Wirkungsrückkopplung",
+          "url": "/begriffe/wirkungsrueckkopplung/"
+        },
+        {
+          "term": "wirkungsbewertung",
+          "label": "Wirkungsbewertung",
+          "url": "/begriffe/wirkungsbewertung/"
+        },
+        {
+          "term": "wirkungslenkung",
+          "label": "Wirkungslenkung",
+          "url": "/begriffe/wirkungslenkung/"
+        },
+        {
+          "term": "wirkungsaudit",
+          "label": "Wirkungsaudit",
+          "url": "/begriffe/wirkungsaudit/"
+        },
+        {
+          "term": "wirkungsassurance",
+          "label": "Wirkungsassurance",
+          "url": "/begriffe/wirkungsassurance/"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "budget_logic",
+        "public_finance",
+        "steering_logic",
+        "accountability",
+        "democratic_safeguard"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungsbudget ist ein Teilbudget, das nicht nur einem Ressort oder Ausgabentitel zugeordnet ist, sondern einem definierten Wirkungsziel mit Indikatoren, Prüfpfad und Rückkopplung."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- operative Einheit im Wirkungshaushalt\n- verbindet Geld mit Zielzustand, Wirkungsindikatoren, Datenqualität und Evaluation\n- fragt nach der angestrebten Zustandsveränderung\n- kann ressortübergreifend sein, weil Wirkung nicht an Ressortgrenzen haltmacht\n- geeignet für Klima, Bildung, Pflege, Wohnen, Gesundheit, Demokratie, Digitalisierung und Kultur\n- verhindert rein historische Fortschreibung von Programmen\n- trennt Wirkungspotenzial, Wirkungsrisiko, Netto-Wirkung und Transformationswirkung"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Wirkungsbudget ist ein im öffentlichen Haushalt ausgewiesenes Budget, das einem definierten Wirkungsziel zugeordnet ist. Es wird nicht primär über Zuständigkeit, Titel oder Ausgabenkategorie verstanden, sondern über die Zustandsveränderung, die erreicht werden soll. Wirkungsbudgets können Bildungswirkung, gesundes Wohnen, Hitzeschutz, Pflegeentlastung, demokratische Resilienz, kommunale Teilhabe, Kreislaufwirtschaft oder Cyberresilienz bündeln. Häufig sind sie ressortübergreifend, weil Gesundheit, Bildung, Wohnen, Mobilität, Umwelt und Demokratie sich gegenseitig beeinflussen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Viele öffentliche Probleme lassen sich nicht in einem Ressort lösen. Klimaanpassung betrifft Umwelt, Bau, Gesundheit, Innenpolitik, Kommunen und Finanzen. Bildung betrifft Schulen, Familien, Digitalisierung, Kultur, Integration und Demokratie. Klassische Budgets verdecken diese Interdependenzen. Wirkungsbudgets machen sie sichtbar und ermöglichen Priorisierung nach positiver Netto-Wirkung, Vermeidung von Doppelstrukturen, Bürgerbeteiligung, Resilienzorientierung, Transformationssteuerung und Lernschleifen."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist ein Wirkungsbudget ein Vertrag zwischen öffentlichem Geld und öffentlicher Wirkung: Diese Mittel werden eingesetzt, um einen bestimmten Zustand zu verändern. Wenn Wirkung nicht eintritt, wird gelernt und angepasst. Es enthält Wirkungsziel, Ausgangszustand, Zielgruppe, Wirkungsraum, Indikatoren, Datenbasis, Zwischenziele, Risiken, Alternativen, Evaluation und Rückkopplung. Es kann Präventionsbudget, Transformationsbudget, Resilienzbudget, Teilhabebudget, Reparaturbudget oder Innovationsbudget sein."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Ressortbudget: organisatorisch; Wirkungsbudget ist wirkungszielbezogen.\n- Projektbudget: finanziert einzelne Projekte; Wirkungsbudget kann mehrere Projekte bündeln.\n- Fördertopf: vergibt Mittel; Wirkungsbudget prüft Zustandsveränderung und Rückkopplung.\n- Notfallbudget: kann erforderlich sein; Wirkungsbudget fragt zusätzlich nach langfristiger Wirkung.\n- SDG-Budget: kann SDG-Zuordnung enthalten; Wirkungsbudget ergänzt SDG+, Netto-Wirkung und Nichtkompensation.\n- T-SROI: bewertet Transformationswirkung; Wirkungsbudget ist die Mittelstruktur, auf die T-SROI angewendet werden kann.\n- Wirkungsgutschrift: belohnt Wirkung; Wirkungsbudget finanziert Wirkung.\n- Haushaltsneutralität: Wirkungsbudgets können innerhalb haushaltsneutraler Umschichtung entstehen."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Hitzeschutz-Wirkungsbudget finanziert Entsiegelung, Stadtgrün, Trinkwasserbrunnen, Pflegeheime, Schulen und Gesundheitskommunikation gemeinsam.\n- Ein Bildungswirkungsbudget verbindet Lehrkräftefortbildung, digitale Mündigkeit, Demokratiebildung und Schulsozialarbeit.\n- Ein Wohnwirkungsbudget bündelt bezahlbaren Wohnraum, energetische Sanierung, Quartiersgesundheit und soziale Mischung.\n- Ein Pflegewirkungsbudget finanziert Prävention, Angehörigenentlastung, Fachkräftebindung und Quartierspflege.\n- Ein Demokratie-Resilienzbudget finanziert Medienkompetenz, Diskursräume, Desinformationsprävention, Bürgerbeteiligung und Begegnungsorte."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind impact_budget_id, fiscal_year, public_body, responsible_units, impact_goal, baseline_state, target_state, affected_groups, impact_space, SDG-/SDG+-Bezug, allocated_amount, spent_amount, intervention_portfolio, expected_net_impact, expected_transformational_effect, WÖk-IDs, indicators, data_quality_class, milestones, risk_register, resilience_effect, social_buffering_effect, procurement_links, audit_requirement, evaluation_date, public_report_reference und correction_logic. Abrufquote ist kein Wirkungsnachweis."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "Wirkungshaushalt, wirkungspruefung, oeffentliche-beschaffung, wirkungstransparenzbericht, oeffentliche-mittel, foerdermittel, subvention, positive Netto-Wirkung, Transformationswirkung, Resilienz, kaufkraftschutz, T-SROI, NWI, Datenqualität, Wirkungsrückkopplung, Wirkungsbewertung, Wirkungslenkung, Wirkungsaudit, Wirkungsassurance, staatliche-blindleistung"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel\n- Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip\n- Die neue Ordnung des Wohlstands: Wirkungsrat\n- Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- OECD Recommendation on Budgetary Governance\n- PEFA Framework\n- International Budget Partnership / Open Budget Survey\n- World Bank Public Financial Management\n- UNDP SDG Budgeting / INFF\n- OECD Public Governance"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Öffentliche Mittel & Wirkungshaushalt\npack: 008\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: Modellhafte WÖk-Inhalte bleiben als Konzept, Entwurf oder Arbeitslogik gekennzeichnet; sie ersetzen keine geltende Rechtslage."
+        }
+      ]
+    },
+    {
+      "id": "wirkungstransparenzbericht",
+      "termId": "wirkungstransparenzbericht",
+      "label": "Wirkungstransparenzbericht",
+      "canonicalLabel": "Wirkungstransparenzbericht",
+      "slug": "wirkungstransparenzbericht",
+      "aliases": [
+        "Wirkungstransparenzbericht",
+        "Wirkungsbericht",
+        "öffentlicher Wirkungsbericht",
+        "Wirkungshaushaltsbericht",
+        "Wirkungsbarometer",
+        "Rechenschaftsbericht nach Wirkung",
+        "Public Impact Report",
+        "Transparenzbericht Wirkung",
+        "Bericht zur Wirkung öffentlicher Mittel"
+      ],
+      "synonyms": [
+        "Wirkungsbericht",
+        "öffentlicher Wirkungsbericht",
+        "Wirkungshaushaltsbericht",
+        "Wirkungsbarometer",
+        "Rechenschaftsbericht nach Wirkung",
+        "Public Impact Report",
+        "Transparenzbericht Wirkung",
+        "Bericht zur Wirkung öffentlicher Mittel"
+      ],
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "pageUrl": "/begriffe/wirkungstransparenzbericht/",
+      "priority": 144,
+      "firstApprovedIn": "2026.1",
+      "glossaryOrderKey": "wirkungstransparenzbericht",
+      "shortDefinition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.",
+      "definition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.",
+      "hoverDefinition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.",
+      "longDefinition": "Der Wirkungstransparenzbericht ist die öffentliche Rechenschaftsschicht des Wirkungshaushalts: Er zeigt Zustandsveränderungen, Unsicherheiten, Nebenwirkungen, Datenqualität und Lernentscheidungen.",
+      "woekRelation": "Er ist die demokratische Oberfläche der staatlichen Wirkungsarchitektur und macht Wirkungsinformation für Öffentlichkeit, Parlament, Verwaltung, Forschung und Wirkungsrat nachvollziehbar.",
+      "usageNote": "Nicht als PR-Bericht oder Erfolgskatalog formulieren. Zielverfehlungen, Datenlücken, Wirkungsrisiken und Korrekturpfade müssen sichtbar sein.",
+      "preferredUsage": "Als öffentliche Wirkungsrechenschaft verwenden, die Wirkung, Wirkungspotenzial, Output, Outcome, Netto-Wirkung und Transformationswirkung trennt.",
+      "doNotConfuseWith": [
+        "Haushaltsabschluss: zeigt Finanzdaten; Wirkungstransparenzbericht zeigt Zustandsveränderungen.",
+        "Nachhaltigkeitsbericht des Staates: kann Teilaspekte enthalten; Wirkungstransparenzbericht ist stärker an Wirkungshaushalt und Rückkopplung gebunden.",
+        "PR-Bericht: muss auch Misserfolge, Unsicherheiten und Korrekturen zeigen.",
+        "Wirkungsbarometer: kann Kurzformat oder Dashboard sein; Wirkungstransparenzbericht ist umfassender.",
+        "Wirkungsaudit: prüft Daten und Nachweise; Bericht veröffentlicht Ergebnisse und Lernentscheidungen.",
+        "Statistikbericht: liefert Daten; Wirkungstransparenzbericht ordnet sie in Wirkungslogik und öffentliche Mittel ein.",
+        "Open Data Portal: Datenportal ist Infrastruktur; Wirkungstransparenzbericht erklärt Wirkungslogik verständlich."
+      ],
+      "examples": [
+        "Ein Wohnprogramm fördert viele Wohnungen, verbessert Bezahlbarkeit in Ballungsräumen aber kaum; der Bericht löst Haushaltskorrektur aus.",
+        "Ein Bildungsbudget zeigt gute Leistungszahlen, aber geringe Wirkung bei digitaler Mündigkeit; Indikatoren und Mittelverteilung werden angepasst.",
+        "Ein Klimaanpassungsbudget zeigt hohe Wirkung bei Entsiegelung, aber geringe Wirkung reiner Kommunikationsförderung.",
+        "Ein IT-Beschaffungsbericht zeigt niedrige Kosten, aber Datenschutz-, Abhängigkeits- und Cyberresilienzrisiken.",
+        "Ein Pflegeprogramm zeigt hohe Wirkung bei Angehörigenentlastung, aber Datenlücken bei psychischer Gesundheit."
+      ],
+      "category": "Transparenz, Rechenschaft & öffentliche Wirkung",
+      "categories": [
+        "Transparenz, Rechenschaft & öffentliche Wirkung",
+        "Öffentliche Mittel & Wirkungshaushalt",
+        "Glossar-Pack 008"
+      ],
+      "type": "WÖk-Prägungsbegriff / Transparenz- und Rechenschaftsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Transparenz- und Rechenschaftsbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "source": "Glossar-Pack 008",
+      "sourceDocument": "Glossar-Pack 008: Öffentliche Mittel & Wirkungshaushalt",
+      "sourceSection": "Professionalisiertes Glossar-Pack 008",
+      "reviewStatus": "redaktionell zu prüfen",
+      "review_status": "redaktionell zu prüfen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "conceptStatus": "professionalisiert",
+      "concept_status": "professionalisiert",
+      "glossary_pack": "008",
+      "cluster": "Öffentliche Mittel & Wirkungshaushalt",
+      "packStatus": "professionalisiert",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "lastUpdated": "2026-06-01",
+      "updatedAt": "2026-06-01",
+      "lastReviewed": "2026-06-01",
+      "last_reviewed": "2026-06-01",
+      "officialSources": [
+        "UN SDGs / Agenda 2030",
+        "OECD Recommendation on Budgetary Governance",
+        "International Budget Partnership / Open Budget Survey",
+        "PEFA Framework",
+        "World Bank Public Financial Management",
+        "UNDP SDG Budgeting / INFF",
+        "OECD Public Governance",
+        "GRI Standards"
+      ],
+      "sourceLinks": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "UN SDGs",
+          "url": "https://sdgs.un.org/goals"
+        },
+        {
+          "label": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda"
+        },
+        {
+          "label": "OECD Recommendation on Budgetary Governance",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0410"
+        },
+        {
+          "label": "OECD Recommendation on Public Procurement",
+          "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0411"
+        },
+        {
+          "label": "OECD Public Governance",
+          "url": "https://www.oecd.org/governance/"
+        },
+        {
+          "label": "PEFA Framework",
+          "url": "https://www.pefa.org/"
+        },
+        {
+          "label": "International Budget Partnership: Open Budget Survey",
+          "url": "https://internationalbudget.org/open-budget-survey/"
+        },
+        {
+          "label": "World Bank: Public Financial Management",
+          "url": "https://www.worldbank.org/en/topic/governance/brief/public-financial-management"
+        },
+        {
+          "label": "UNDP SDG Finance",
+          "url": "https://sdgfinance.undp.org/"
+        },
+        {
+          "label": "European Commission: Public Procurement",
+          "url": "https://single-market-economy.ec.europa.eu/single-market/public-procurement_en"
+        },
+        {
+          "label": "European Commission: Green Public Procurement",
+          "url": "https://green-business.ec.europa.eu/green-public-procurement_en"
+        },
+        {
+          "label": "Directive 2014/24/EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0024"
+        },
+        {
+          "label": "European Commission: CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"
+        },
+        {
+          "label": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/"
+        },
+        {
+          "label": "EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en"
+        },
+        {
+          "label": "ESPR / Digital Product Passport",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en"
+        }
+      ],
+      "relatedDocuments": [
+        "Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0",
+        "Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel",
+        "Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip",
+        "Die neue Ordnung des Wohlstands: Wirkungsrat",
+        "Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik",
+        "Working-Paper Wirkungssteuergesetz",
+        "Technische Leitlinien WUStG",
+        "Wirkungsrat-Konzept",
+        "Systemmodell der Wirkungsökonomie",
+        "T-SROI-Whitepaper",
+        "Leitbild für Mensch, Planet und Demokratie"
+      ],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "wirkungspruefung",
+        "oeffentliche-beschaffung",
+        "wirkungsbudget",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "staatliche-blindleistung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungsregister",
+        "datenqualitaet",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "t-sroi",
+        "nwi",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "demokratie-als-wirkungsraum",
+        "open-data",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkungstransparenzbericht",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-mittel",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "kaufkraftschutz",
+        "resilienz",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungsarchitektur",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "rechtsschutz",
+        "sdgs",
+        "agenda-2030"
+      ],
+      "related_terms": [
+        "wirkungshaushalt",
+        "wirkungspruefung",
+        "oeffentliche-beschaffung",
+        "wirkungsbudget",
+        "wirkungsbericht",
+        "wirkungsbarometer",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "staatliche-blindleistung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungsregister",
+        "datenqualitaet",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "t-sroi",
+        "nwi",
+        "oeffentliche-rechenschaft",
+        "buergerbeteiligung",
+        "demokratie-als-wirkungsraum",
+        "open-data",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkungstransparenzbericht",
+        "wirkungs-folgenabschaetzung",
+        "gesetzesfolgenabschaetzung-nach-wirkung",
+        "wirkungsbudgetierung",
+        "sdg-haushalt",
+        "public-value",
+        "oeffentliche-mittel",
+        "oeffentliche-investition",
+        "foerdermittel",
+        "subvention",
+        "zuschuss",
+        "haushaltsneutralitaet",
+        "kaufkraftschutz",
+        "resilienz",
+        "mittelabfluss",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkungsarchitektur",
+        "woek-id",
+        "wirkungsindikator",
+        "benchmark",
+        "finalscore",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "ehrliche-preise",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "rechtsschutz",
+        "sdgs",
+        "agenda-2030"
+      ],
+      "internal_links": [
+        {
+          "term": "wirkungshaushalt",
+          "label": "Wirkungshaushalt",
+          "url": "/begriffe/wirkungshaushalt/"
+        },
+        {
+          "term": "wirkungspruefung",
+          "label": "Wirkungsprüfung",
+          "url": "/begriffe/wirkungspruefung/"
+        },
+        {
+          "term": "oeffentliche-beschaffung",
+          "label": "Öffentliche Beschaffung",
+          "url": "/begriffe/oeffentliche-beschaffung/"
+        },
+        {
+          "term": "wirkungsbudget",
+          "label": "Wirkungsbudget",
+          "url": "/begriffe/wirkungsbudget/"
+        },
+        {
+          "term": "wirkungswahrheit",
+          "label": "Wirkungswahrheit",
+          "url": "/begriffe/wirkungswahrheit/"
+        },
+        {
+          "term": "wirkungsblindheit",
+          "label": "Wirkungsblindheit",
+          "url": "/begriffe/wirkungsblindheit/"
+        },
+        {
+          "term": "wirkungsaudit",
+          "label": "Wirkungsaudit",
+          "url": "/begriffe/wirkungsaudit/"
+        },
+        {
+          "term": "wirkungsassurance",
+          "label": "Wirkungsassurance",
+          "url": "/begriffe/wirkungsassurance/"
+        },
+        {
+          "term": "wirkungsrat",
+          "label": "Wirkungsrat",
+          "url": "/begriffe/wirkungsrat/"
+        },
+        {
+          "term": "wirkungsregister",
+          "label": "Wirkungsregister",
+          "url": "/begriffe/wirkungsregister/"
+        },
+        {
+          "term": "datenqualitaet",
+          "label": "Datenqualität",
+          "url": "/begriffe/datenqualitaet/"
+        },
+        {
+          "term": "wirkungsbewertung",
+          "label": "Wirkungsbewertung",
+          "url": "/begriffe/wirkungsbewertung/"
+        },
+        {
+          "term": "wirkungslenkung",
+          "label": "Wirkungslenkung",
+          "url": "/begriffe/wirkungslenkung/"
+        },
+        {
+          "term": "wirkungsrueckkopplung",
+          "label": "Wirkungsrückkopplung",
+          "url": "/begriffe/wirkungsrueckkopplung/"
+        },
+        {
+          "term": "positive-netto-wirkung",
+          "label": "positive Netto-Wirkung",
+          "url": "/begriffe/positive-netto-wirkung/"
+        },
+        {
+          "term": "netto-wirkung",
+          "label": "Netto-Wirkung",
+          "url": "/begriffe/netto-wirkung/"
+        },
+        {
+          "term": "transformationswirkung",
+          "label": "Transformationswirkung",
+          "url": "/begriffe/transformationswirkung/"
+        },
+        {
+          "term": "t-sroi",
+          "label": "T-SROI",
+          "url": "/begriffe/t-sroi/"
+        },
+        {
+          "term": "nwi",
+          "label": "NWI",
+          "url": "/begriffe/nwi/"
+        },
+        {
+          "term": "buergerbeteiligung",
+          "label": "Bürgerbeteiligung",
+          "url": "/begriffe/buergerbeteiligung/"
+        },
+        {
+          "term": "sdg-plus",
+          "label": "SDG+",
+          "url": "/begriffe/sdg-plus/"
+        },
+        {
+          "term": "mensch-planet-demokratie",
+          "label": "Mensch, Planet und Demokratie",
+          "url": "/begriffe/mensch-planet-demokratie/"
+        }
+      ],
+      "relation_types": [
+        "same_cluster",
+        "transparency",
+        "accountability",
+        "governance",
+        "audit",
+        "democratic_safeguard"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben."
+        },
+        {
+          "title": "Auf einen Blick",
+          "body": "- öffentliche Rechenschaftsschicht des Wirkungshaushalts\n- berichtet nicht nur Ausgaben, sondern Zustandsveränderungen, Unsicherheiten, Nebenwirkungen und Lernentscheidungen\n- unterscheidet Mittelabfluss, Output, Outcome, Wirkung, Netto-Wirkung und Transformationswirkung\n- gibt Bürger:innen, Parlament, Verwaltung, Medien, Forschung und Wirkungsrat Orientierung\n- kein PR-Bericht und kein Erfolgskatalog\n- legt Zielverfehlungen, Datenlücken, Wirkungsrisiken und Korrekturen offen\n- verbindet Transparenz mit Demokratie, Rechtsschutz und Lernfähigkeit"
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Der Wirkungstransparenzbericht stellt öffentlich dar, welche Wirkung staatliche Mittel, Programme, Gesetze, Förderungen, Beschaffungsvorgänge und Haushaltsentscheidungen erzeugt haben. Ein klassischer Haushaltsbericht zeigt Einnahmen, Ausgaben, Defizite und Mittelabfluss. Der Wirkungstransparenzbericht ergänzt: Welche Zustände haben sich verändert? Welche Ziele wurden erreicht oder verfehlt? Welche Mittel waren wirksam? Wo entstanden Nebenwirkungen? Wo fehlten Daten? Wo wurde korrigiert? Er macht sichtbar, wie öffentliche Mittel wirken oder nicht wirken."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Wirkung darf nicht nur intern gemessen werden. Wenn der Staat Wirkung als Steuerungsgröße nutzt, muss die Öffentlichkeit nachvollziehen können, wie diese Bewertung zustande kommt. Der Bericht stärkt demokratische Kontrolle, parlamentarische Beratung, Bürger:innenbeteiligung, Medienberichterstattung, wissenschaftliche Auswertung, Wirkungsrat, Verwaltungslernen, Vertrauen in öffentliche Mittelverwendung und Schutz vor Symbolpolitik. Wirkung muss öffentlich verständlich bleiben."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Transparenz ist in der WÖk kein Selbstzweck. Sie muss wirkungsrelevant, verständlich und prüfbar sein. Ein unlesbarer Tabellenbericht schafft keine Wirkungswahrheit; ein Hochglanzbericht ohne Zielverfehlungen auch nicht. Deshalb verbindet der Wirkungstransparenzbericht fachliche Tiefe mit demokratischer Verständlichkeit: Daten, Indikatoren, Methoden, Unsicherheiten, Systemgrenzen, Benchmarks und Prüfstatus müssen nachvollziehbar sein; Bürger:innen müssen erkennen können, was öffentliche Mittel bewirkt haben, wo Probleme bestehen und was daraus folgt."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "body": "- Haushaltsabschluss: zeigt Finanzdaten; Wirkungstransparenzbericht zeigt Zustandsveränderungen.\n- Nachhaltigkeitsbericht des Staates: kann Teilaspekte enthalten; Wirkungstransparenzbericht ist stärker an Wirkungshaushalt und Rückkopplung gebunden.\n- PR-Bericht: muss auch Misserfolge, Unsicherheiten und Korrekturen zeigen.\n- Wirkungsbarometer: kann Kurzformat oder Dashboard sein; Wirkungstransparenzbericht ist umfassender.\n- Wirkungsaudit: prüft Daten und Nachweise; Bericht veröffentlicht Ergebnisse und Lernentscheidungen.\n- Statistikbericht: liefert Daten; Wirkungstransparenzbericht ordnet sie in Wirkungslogik und öffentliche Mittel ein.\n- Open Data Portal: Datenportal ist Infrastruktur; Wirkungstransparenzbericht erklärt Wirkungslogik verständlich."
+        },
+        {
+          "title": "Beispiele",
+          "body": "- Ein Wohnprogramm fördert viele Wohnungen, verbessert Bezahlbarkeit in Ballungsräumen aber kaum; der Bericht löst Haushaltskorrektur aus.\n- Ein Bildungsbudget zeigt gute Leistungszahlen, aber geringe Wirkung bei digitaler Mündigkeit; Indikatoren und Mittelverteilung werden angepasst.\n- Ein Klimaanpassungsbudget zeigt hohe Wirkung bei Entsiegelung, aber geringe Wirkung reiner Kommunikationsförderung.\n- Ein IT-Beschaffungsbericht zeigt niedrige Kosten, aber Datenschutz-, Abhängigkeits- und Cyberresilienzrisiken.\n- Ein Pflegeprogramm zeigt hohe Wirkung bei Angehörigenentlastung, aber Datenlücken bei psychischer Gesundheit."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Ein Bericht enthält Wirkungsziele, Mittelverwendung nach Wirkungsfeldern, Ex-ante-Annahmen, Ex-post-Ergebnisse, Trennung von Output, Outcome und Wirkung, Netto-Wirkungsbewertung, Transformationswirkung, Wirkungsrisiken, Zielverfehlungen, Datenqualität, Wirkungsgrenzen, Beschaffung nach Wirkung, Verteilungseffekte, Kaufkraftschutz, Resilienzbeitrag, Beteiligung, Audit- und Assurance-Status, Korrekturentscheidungen und nächste Haushaltsanpassungen. Er braucht verständliche Kurzfassung, maschinenlesbare Daten, Methodenkapitel, Barrierefreiheit, Unsicherheitskennzeichnung, Datenschutz, Einsicht, Widerspruch, Rechtsschutz und Korrekturpfade."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "body": "Wirkungshaushalt, wirkungspruefung, oeffentliche-beschaffung, wirkungsbudget, wirkungsbericht, wirkungsbarometer, Wirkungswahrheit, Wirkungsblindheit, staatliche-blindleistung, Wirkungsaudit, Wirkungsassurance, Wirkungsrat, Wirkungsregister, Datenqualität, Wirkungsbewertung, Wirkungslenkung, Wirkungsrückkopplung, positive Netto-Wirkung, Netto-Wirkung, Transformationswirkung, T-SROI, NWI, oeffentliche-rechenschaft, Bürgerbeteiligung, demokratie-als-wirkungsraum, open-data, SDG+, Mensch, Planet und Demokratie"
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen:\n- Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0\n- Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel\n- Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip\n- Die neue Ordnung des Wohlstands: Wirkungsrat\n- Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik\n- Working-Paper Wirkungssteuergesetz\n- Technische Leitlinien WUStG\n- Wirkungsrat-Konzept\n- Systemmodell der Wirkungsökonomie\n- T-SROI-Whitepaper\n- Leitbild für Mensch, Planet und Demokratie\n\nExterne Quellen:\n- UN SDGs / Agenda 2030\n- OECD Recommendation on Budgetary Governance\n- International Budget Partnership / Open Budget Survey\n- PEFA Framework\n- World Bank Public Financial Management\n- UNDP SDG Budgeting / INFF\n- OECD Public Governance\n- GRI Standards"
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "body": "status: professionalisiert\nreview_status: redaktionell zu prüfen\ncluster: Öffentliche Mittel & Wirkungshaushalt\npack: 008\nversion: 1.1\nno_delete: true\nupdated_by: codex\nHinweis: Modellhafte WÖk-Inhalte bleiben als Konzept, Entwurf oder Arbeitslogik gekennzeichnet; sie ersetzen keine geltende Rechtslage."
         }
       ]
     }
