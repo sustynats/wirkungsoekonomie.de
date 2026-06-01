@@ -84,6 +84,12 @@ function loadLegacyDetailTerms() {
       const indexFile = path.join(outDir, entry.name, "index.html");
       if (!fs.existsSync(indexFile)) return null;
       const html = fs.readFileSync(indexFile, "utf8");
+      const canonical = firstMatch(html, /<link\s+rel=["']canonical["']\s+href=["']([^"']+)["'][^>]*>/i)
+        || firstMatch(html, /<link\s+href=["']([^"']+)["']\s+rel=["']canonical["'][^>]*>/i);
+      const isAliasRoute = canonical.includes("/begriffe/")
+        && !canonical.endsWith(`/begriffe/${entry.name}/`)
+        && /<meta\s+name=["']robots["']\s+content=["'][^"']*\bnoindex\b/i.test(html);
+      if (isAliasRoute) return null;
       const h1 = firstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i);
       const title = firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i).replace(/\s*[|-]\s*Glossar.*$/i, "");
       const meta = firstMatch(html, /<meta\s+name=["']description["']\s+content=["']([^"']+)["'][^>]*>/i)
