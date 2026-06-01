@@ -355,6 +355,15 @@ function listItems(values, fallback = "Keine Einträge") {
   return `<ul class="clean-list">${values.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
 }
 
+function paragraphs(value) {
+  return String(value || "")
+    .split(/\n{2,}/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .map((part) => `<p>${esc(part)}</p>`)
+    .join("");
+}
+
 function asList(value) {
   if (Array.isArray(value)) return value.filter(Boolean);
   if (!value) return [];
@@ -546,6 +555,25 @@ function relatedContentBlock(term) {
           <h2 id="related-content-title">Verwandte Inhalte</h2>
           <div class="term-section-grid">
             ${groups.join("")}
+          </div>
+        </section>
+`;
+}
+
+function deepGlossarySectionsBlock(term) {
+  const sections = asList(term.deepGlossarySections);
+  if (!sections.length) return "";
+  const packLabel = term.glossaryPack || term.glossary_pack || "Glossar";
+  return `
+        <section class="term-summary-card" aria-labelledby="deep-glossary-${esc(term.slug)}">
+          <p class="section-eyebrow">Glossar-Pack ${esc(packLabel)}</p>
+          <h2 id="deep-glossary-${esc(term.slug)}">Vertiefte Begriffsstruktur</h2>
+          <div class="term-section-grid">
+            ${sections.map((section) => `<section class="term-section-card">
+              <h3>${esc(section.title || "Abschnitt")}</h3>
+              ${paragraphs(section.body)}
+              ${listItems(section.items || [])}
+            </section>`).join("")}
           </div>
         </section>
 `;
@@ -1229,6 +1257,7 @@ for (const term of data.terms) {
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}
+${deepGlossarySectionsBlock(term)}
         <section class="term-link-section" aria-labelledby="related-terms-title">
           <div>
             <p class="section-eyebrow">Verknüpfungen</p>
