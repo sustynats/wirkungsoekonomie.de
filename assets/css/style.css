@@ -347,22 +347,65 @@ a {
 
 .term-summary-card,
 .term-link-section,
-.term-section-card {
+.term-section-card,
+.term-resource-section {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.72);
 }
 
-.term-summary-card {
+.term-summary-card,
+.term-resource-section {
   margin-block: clamp(1.1rem, 3vw, 1.7rem);
   padding: clamp(1.15rem, 2.4vw, 1.55rem);
 }
 
 .term-summary-card h2,
 .term-section-card h2,
-.term-link-section h2 {
+.term-link-section h2,
+.term-resource-section h2 {
   margin: 0 0 0.65rem;
   font-size: clamp(1.22rem, 1.7vw, 1.7rem);
+}
+
+.term-resource-heading {
+  margin-bottom: clamp(0.85rem, 2vw, 1.1rem);
+}
+
+.term-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+.term-resource-card {
+  min-width: 0;
+  padding: clamp(1rem, 2.2vw, 1.35rem);
+  border: 1px solid rgba(11, 16, 32, 0.1);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.term-resource-card h3 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1.05rem, 1.45vw, 1.35rem);
+}
+
+.term-resource-card p,
+.term-resource-empty {
+  margin: 0;
+}
+
+.term-resource-card p + p {
+  margin-top: 0.75rem;
+}
+
+.term-resource-empty {
+  padding: 1rem;
+  border: 1px dashed rgba(11, 16, 32, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.52);
+  color: var(--muted);
 }
 
 .term-section-grid {
@@ -11634,7 +11677,8 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   hyphens: auto;
 }
 
-.related-question-grid {
+.related-question-grid,
+.related-questions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   gap: 0.75rem;
