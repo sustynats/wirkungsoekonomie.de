@@ -53,7 +53,8 @@ Dieses Inventar ist die nicht-destruktive Grundlage fuer das Dashboard-System de
 | /werkzeuge/benchmarks-archetypen/ | Benchmarks &amp; Archetypen | Kommunikation & Demokratie | nein | nein | ja |
 | /werkzeuge/bildungswirkungsindex-bwk/ | Bildungswirkungsindex / BWK | Kommunikation & Demokratie | ja | ja | ja |
 | /werkzeuge/cyberresilienz-check/ | Cyberresilienz-Check | Kommunikation & Demokratie | nein | ja | ja |
-| /werkzeuge/datenqualitaet-assurance/ | Datenqualität &amp; Assurance | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/dashboard/ | Werkzeug-Dashboard der Wirkungsökonomie | Kommunikation & Demokratie | ja | ja | ja |
+| /werkzeuge/datenqualitaet-assurance/ | Datenqualität &amp; Assurance | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/datenraum-reifegradcheck/ | Datenraum-Reifegradcheck | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/desinformations-risikocheck/ | Desinformations-Risikocheck | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/digital-souveraenitaetscheck/ | Digital-Souveränitätscheck | Kommunikation & Demokratie | nein | ja | ja |
@@ -104,7 +105,7 @@ Dieses Inventar ist die nicht-destruktive Grundlage fuer das Dashboard-System de
 | /werkzeuge/kritische-infrastruktur-monitor/ | Kritische-Infrastruktur-Monitor | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/maschinenwertschoepfungsbeitrag/ | Maschinenwertschöpfungsbeitrag | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/medienwirkungscheck/ | Medienwirkungscheck | Kommunikation & Demokratie | nein | ja | ja |
-| /werkzeuge/netto-wirkungs-index/ | Netto-Wirkungs-Index | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/netto-wirkungs-index/ | Netto-Wirkungs-Index | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/oeffentliche-beschaffung/ | Öffentliche Beschaffung | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/open-science-und-replikationscheck/ | Open-Science- und Replikationscheck | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/plattform-wirkungscheck/ | Plattform-Wirkungscheck | Kommunikation & Demokratie | nein | ja | ja |
@@ -112,18 +113,18 @@ Dieses Inventar ist die nicht-destruktive Grundlage fuer das Dashboard-System de
 | /werkzeuge/portfolio-wirkungsrating/ | Portfolio-Wirkungsrating | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/produktscorecards/ | Produktscorecards | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/resilienz-radar-kommune/ | Resilienz-Radar Kommune | Kommunikation & Demokratie | nein | ja | ja |
-| /werkzeuge/reverse-merit-order/ | Reverse Merit Order | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/reverse-merit-order/ | Reverse Merit Order | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/schulraum-wirkungscheck/ | Schulraum-Wirkungscheck | Kommunikation & Demokratie | ja | ja | ja |
-| /werkzeuge/scorecards/ | Scorecards | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/scorecards/ | Scorecards | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/sozialraum-resilienzprofil/ | Sozialraum-Resilienzprofil | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/sozialraumprofil-migration-vielfalt/ | Sozialraumprofil Migration und Vielfalt | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/sprach-und-framing-analyse/ | Sprach- und Framing-Analyse | Kommunikation & Demokratie | nein | ja | ja |
-| /werkzeuge/t-sroi/ | T-SROI | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/t-sroi/ | T-SROI | Kommunikation & Demokratie | ja | ja | ja |
 | /werkzeuge/unternehmens-wirkungscheck/ | Unternehmens-Wirkungscheck | Kommunikation & Demokratie | nein | nein | ja |
 | /werkzeuge/versicherbarkeits-resilienzcheck/ | Versicherbarkeits-/Resilienzcheck | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/wirkungsaudit/ | Wirkungsaudit | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/wirkungsdatenraeume/ | Wirkungsdatenräume | Kommunikation & Demokratie | nein | ja | ja |
-| /werkzeuge/wirkungseinkommensteuer/ | Wirkungseinkommensteuer | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/wirkungseinkommensteuer/ | Wirkungseinkommensteuer | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/wirkungsfonds-simulator/ | Wirkungsfonds-Simulator | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/wirkungsfonds/ | Wirkungsfonds | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/wirkungshaushalt/ | Wirkungshaushalt | Kommunikation & Demokratie | nein | ja | ja |
@@ -136,7 +137,7 @@ Dieses Inventar ist die nicht-destruktive Grundlage fuer das Dashboard-System de
 | /werkzeuge/wirkungsumsatzsteuer/ | Wirkungsumsatzsteuer | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/wissensrat-integritaetsregister/ | Wissensrat-/Integritätsregister | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/woek-id-register/ | WÖk-ID Register | Daten & Infrastruktur | nein | nein | nein |
-| /werkzeuge/woek-ids/ | WÖk-IDs | Kommunikation & Demokratie | nein | nein | ja |
+| /werkzeuge/woek-ids/ | WÖk-IDs | Kommunikation & Demokratie | nein | ja | ja |
 | /werkzeuge/zugehoerigkeits-und-teilgabeindex/ | Zugehörigkeits- und Teilgabeindex | Kommunikation & Demokratie | nein | ja | ja |
 | /workflow.html | Von Daten zum Steuersatz | Kommunikation & Demokratie | nein | nein | ja |
 
