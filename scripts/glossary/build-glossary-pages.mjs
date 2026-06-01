@@ -71,6 +71,16 @@ function textFromHtml(value) {
   return decodeHtmlEntities(String(value || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
 }
 
+function normalizedLabel(value) {
+  return textFromHtml(value)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[–—-]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function firstMatch(html, pattern) {
   const match = html.match(pattern);
   return match ? textFromHtml(match[1]) : "";
@@ -78,6 +88,8 @@ function firstMatch(html, pattern) {
 
 function loadLegacyDetailTerms() {
   const sourceSlugs = new Set(data.terms.map((term) => term.slug));
+  const sourceLabels = new Set(data.terms.map((term) => normalizedLabel(term.canonicalLabel || term.label || term.canonicalTitle)).filter(Boolean));
+  const seenLegacyLabels = new Set();
   return fs.readdirSync(outDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && !sourceSlugs.has(entry.name))
     .map((entry) => {
@@ -96,6 +108,9 @@ function loadLegacyDetailTerms() {
         || firstMatch(html, /<meta\s+content=["']([^"']+)["']\s+name=["']description["'][^>]*>/i);
       const lead = firstMatch(html, /<p[^>]*class=["'][^"']*\blead\b[^"']*["'][^>]*>([\s\S]*?)<\/p>/i);
       const label = h1 || title || entry.name.replace(/-/g, " ");
+      const labelKey = normalizedLabel(label);
+      if (sourceLabels.has(labelKey) || seenLegacyLabels.has(labelKey)) return null;
+      seenLegacyLabels.add(labelKey);
       const summary = meta || lead || "Bestehende Glossar-Detailseite aus dem Bestand.";
       return {
         id: entry.name,
