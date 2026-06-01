@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T22:20:01.964Z",
+  "generatedAt": "2026-06-01T23:09:26.199Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,30 +204,30 @@
     }
   ],
   "counts": {
-    "total": 1474,
+    "total": 1475,
     "byStatus": {
       "führend": 5,
       "aktuell": 940,
-      "Arbeitsfassung": 273,
+      "Arbeitsfassung": 274,
       "ältere Fassung": 256
     },
     "byType": {
       "Grundlagenwerk": 63,
-      "Glossar": 40,
-      "Methodik": 109,
+      "Glossar": 41,
+      "Methodik": 110,
       "Arbeitspapier": 1190,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
-      "Whitepaper": 7,
       "Leitbild": 7,
-      "Buch": 8
+      "Buch": 8,
+      "Whitepaper": 6
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 710,
+      "download-or-document": 711,
       "online-version": 757
     },
-    "downloadFiles": 710,
+    "downloadFiles": 711,
     "onlineVersions": 757
   },
   "documents": [
@@ -5874,9 +5874,9 @@
     },
     {
       "id": "online-version-werkstatt-arbeitsbibliothek-whitepaper-faktencheck-folgencheck-index-html",
-      "title": "Faktencheck folgencheck",
-      "shortDescription": "Whitepaper im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
-      "type": "Whitepaper",
+      "title": "Faktencheck und Folgencheck - Methodenseite",
+      "shortDescription": "Methodischer Kurzüberblick. Die führende vollständige Arbeitsfassung steht unter Folgencheck statt Faktencheck in der Bibliothek.",
+      "type": "Methodik",
       "status": "aktuell",
       "dateOrStand": "",
       "topics": [
@@ -27978,6 +27978,33 @@
       "urls": {
         "primary": "assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_rente_soziale_sicherung_einzeldossier_set_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-arbeitspapier-folgencheck-wirkungspolitische-sprache-v0-1-",
+      "title": "Folgencheck statt Faktencheck: Wirkungsoekonomische Analyse politischer Spracheam Beispiel des AfD-Regierungsprogramms Sachsen-Anhalt",
+      "shortDescription": "Auf Basis der Ausarbeitungen zur Wirkungsökonomie und der online veröffentlichten sprachwissenschaftlichen Arbeit von Justin Kraft (2020) auf dem Publikationsserver der Universität.",
+      "type": "Glossar",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [
+        "Faktencheck & Folgencheck",
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf",
+        "sourcePath": "assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false

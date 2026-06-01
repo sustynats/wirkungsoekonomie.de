@@ -973,6 +973,7 @@ const DOCUMENTS = [
     relatedDocuments: ["faktencheck-folgencheck-v1-1", "grundlagenpapier-wirkungsoekonomie", "leitbild-mensch-planet-demokratie"],
     version: "v0.1",
     date: "2026-06-01",
+    isLeadingReference: true,
     legalNotice: "Keine Wahlempfehlung, kein Rechtsgutachten, keine psychologische Diagnose und keine Bewertung einzelner Wähler:innen, Parteimitglieder oder Personen.",
     editorialNote: "Arbeitsfassung; Wirkungspotenziale politischer Sprache werden modellhaft und vorsorgend geprüft.",
     downloadAllowed: true,
@@ -1588,6 +1589,9 @@ function detailPage(doc, prefix = "../../") {
   const legalNotice = doc.legalNotice
     ? `<div class="callout warning"><strong>Schutzlinie:</strong> ${escapeHtml(doc.legalNotice)}</div>`
     : "";
+  const leadingNotice = doc.id === "folgencheck-wirkungspolitische-sprache"
+    ? `<div class="callout"><strong>Führende Dokumentseite:</strong> Diese Bibliotheksseite ist die vollständige Arbeitsfassung zum Folgencheck politischer Sprache. Die ältere Seite <a class="text-link" href="../../werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/">Faktencheck und Folgencheck - Methodenseite</a> dient als methodischer Kurzüberblick und verweist hierher.</div>`
+    : "";
   const actionLinks = [
     online ? `<a class="btn btn-secondary" href="${online}">Onlinefassung lesen</a>` : "",
     href ? `<a class="btn btn-primary" href="${href}">PDF öffnen</a>` : ""
@@ -1597,7 +1601,7 @@ function detailPage(doc, prefix = "../../") {
     : `<p class="document-restricted">Kein öffentlicher Download: Dieses Dokument ist ${escapeHtml(doc.status)} und wird nicht direkt verlinkt.</p>`;
   const body = `
       <section class="hero compact-hero document-detail-hero">
-        <p class="hero-kicker">${escapeHtml(doc.documentType)} · ${escapeHtml(doc.status)}</p>
+        <p class="hero-kicker">${doc.isLeadingReference ? "führende dokumentseite · " : ""}${escapeHtml(doc.documentType)} · ${escapeHtml(doc.status)}</p>
         <h1>${escapeHtml(doc.title)}</h1>
         <p class="hero-subtitle">${escapeHtml(doc.subtitle)}</p>
         <div class="document-card-badges">${badge(doc.documentType)}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
@@ -1606,6 +1610,7 @@ function detailPage(doc, prefix = "../../") {
         <article class="document-detail-main">
           ${statusNotice}
           ${expertNotice}
+          ${leadingNotice}
           ${legalNotice}
           <h2>Kurz gesagt</h2>
           <p>${escapeHtml(doc.summaryShort)}</p>

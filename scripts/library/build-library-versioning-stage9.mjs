@@ -246,6 +246,12 @@ const LEADING_OVERRIDES = new Map([
     type: "Buch",
     status: "aktuell",
     shortDescription: "Online lesbare Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung."
+  }],
+  ["werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/index.html", {
+    title: "Faktencheck und Folgencheck - Methodenseite",
+    type: "Methodik",
+    status: "aktuell",
+    shortDescription: "Methodischer Kurzüberblick. Die führende vollständige Arbeitsfassung steht unter Folgencheck statt Faktencheck in der Bibliothek."
   }]
 ]);
 
