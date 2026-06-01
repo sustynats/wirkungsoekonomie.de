@@ -3,6 +3,10 @@ import path from "node:path";
 
 const data = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
+const documentRegistryPath = "assets/data/document-registry.json";
+const documentRegistry = fs.existsSync(documentRegistryPath)
+  ? JSON.parse(fs.readFileSync(documentRegistryPath, "utf8"))
+  : [];
 const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const outDir = "begriffe";
@@ -313,6 +317,8 @@ const termTargetLinks = new Map([
 ]);
 
 const relatedContentTargets = new Map([
+  ["faktencheck-folgencheck-v1-1", ["Faktencheck und Folgencheck - Methodenseite", "../../werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/"]],
+  ["folgencheck-wirkungspolitische-sprache-v0-1", ["Folgencheck statt Faktencheck", "../../bibliothek/folgencheck-wirkungspolitische-sprache/"]],
   ["wstg-oktober-2025", ["Wirkungssteuergesetz WStG", "../../dokumente/wstg-oktober-2025/"]],
   ["technische-leitlinien-wustg", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["technische-leitlinien-wustg-v2", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
@@ -508,6 +514,14 @@ function linkedChips(items, fallback = "Keine Einträge") {
   return `<div class="term-chip-row">${items.map(([label, href]) => `<a class="term-chip" href="${esc(href)}">${esc(label)}</a>`).join("")}</div>`;
 }
 
+const documentsById = new Map(documentRegistry.map((document) => [document.id, document]));
+
+function relativeFromGlossary(url) {
+  if (!url) return "";
+  if (/^https?:\/\//i.test(url)) return url;
+  return `../..${String(url).startsWith("/") ? url : `/${url}`}`;
+}
+
 function relationChip(value) {
   const raw = typeof value === "object" && value
     ? {
@@ -539,6 +553,37 @@ function relationGroup(title, values) {
           </section>`;
 }
 
+function documentCard(value) {
+  const key = typeof value === "object" && value ? value.id || value.key || value.slug || value.label || value.title : value;
+  const normalized = filterToken(key);
+  const document = documentsById.get(key) || documentsById.get(normalized);
+  if (!document) return relationChip(value);
+  const actions = [
+    document.onlineUrl ? `<a class="term-chip" href="${esc(relativeFromGlossary(document.onlineUrl))}">Online lesen</a>` : "",
+    document.pdfUrl ? `<a class="term-chip" href="${esc(relativeFromGlossary(document.pdfUrl))}" download>PDF herunterladen</a>` : "",
+    document.docxUrl ? `<a class="term-chip" href="${esc(relativeFromGlossary(document.docxUrl))}" download>DOCX herunterladen</a>` : "",
+  ].filter(Boolean);
+  return `<article class="related-document-card">
+              <p class="section-eyebrow">${esc(document.type || "Dokument")}${document.stand ? ` · ${esc(document.stand)}` : ""}</p>
+              <h4>${esc(document.title || key)}</h4>
+              ${document.summary ? `<p>${esc(document.summary)}</p>` : ""}
+              <div class="term-chip-row">${actions.length ? actions.join("") : `<span class="term-chip muted">Keine öffentliche Datei hinterlegt</span>`}</div>
+            </article>`;
+}
+
+function documentGroup(values) {
+  const cards = [];
+  for (const value of asList(values)) {
+    const card = documentCard(value);
+    if (!cards.includes(card)) cards.push(card);
+  }
+  if (!cards.length) return "";
+  return `<section class="term-section-card related-documents-card">
+            <h3>Dokumente</h3>
+            <div class="related-document-list">${cards.join("")}</div>
+          </section>`;
+}
+
 function relatedContentBlock(term) {
   const groups = [
     ["Methoden & Werkzeuge", [...asList(term.relatedMethods), ...asList(term.relatedTools)]],
@@ -547,7 +592,7 @@ function relatedContentBlock(term) {
     ["Dokumente", term.relatedDocuments],
     ["Akademie", term.relatedAcademyModules],
     ["Datenregister", term.relatedDataRegisters],
-  ].map(([title, values]) => relationGroup(title, values)).filter(Boolean);
+  ].map(([title, values]) => title === "Dokumente" ? documentGroup(values) : relationGroup(title, values)).filter(Boolean);
   if (!groups.length) return "";
   return `
         <section class="term-summary-card" aria-labelledby="related-content-title">
