@@ -46913,7 +46913,9 @@
         "Digital Product Passport",
         "Produktpass",
         "Herkunftsdaten im Produktpass",
-        "Produktpass Herkunft"
+        "Produktpass Herkunft",
+        "digitaler Wirkungsproduktpass",
+        "Produktdatenträger"
       ],
       "synonyms": [
         "Digitaler Produktpass",
@@ -46921,14 +46923,16 @@
         "Digital Product Passport",
         "Produktpass",
         "Herkunftsdaten im Produktpass",
-        "Produktpass Herkunft"
+        "Produktpass Herkunft",
+        "digitaler Wirkungsproduktpass",
+        "Produktdatenträger"
       ],
-      "shortDefinition": "Der Digitale Produktpass macht produktbezogene Daten entlang von Wertschöpfung und Nutzung maschinenlesbar verfügbar.",
-      "definition": "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung.",
-      "longDefinition": "In der WÖk ist der Digitale Produktpass eine mögliche Dateninfrastruktur für Produktwirkung, Lieferketten, Kreislauffähigkeit und Rückkopplung in Preise oder Beschaffung.",
-      "woekRelation": "Nicht als vollständige Wirkungsbewertung verstehen.",
+      "shortDefinition": "Der Digitale Produktpass ist ein strukturierter Datenträger, der zentrale Informationen zu Herkunft, Materialien, Herstellung, Nutzung, Reparatur, Rücknahme und Wirkung eines Produkts maschinenlesbar verfügbar macht.",
+      "definition": "Der Digitale Produktpass ist eine digitale, strukturierte und möglichst interoperable Datensammlung zu einem Produkt. Er enthält Informationen über Materialien, Komponenten, Herkunft, Produktionsprozesse, Energie, Emissionen, Wasser, Chemikalien, Reparierbarkeit, Ersatzteile, Lebensdauer, Rücknahme, Wiederverwendung, Recycling, Entsorgung, Lieferkette, Zertifikate, Prüfstatus und Datenqualität.",
+      "longDefinition": "Der Digitale Produktpass ist eine digitale, strukturierte und möglichst interoperable Datensammlung zu einem Produkt. Er enthält Informationen über Materialien, Komponenten, Herkunft, Produktionsprozesse, Energie, Emissionen, Wasser, Chemikalien, Reparierbarkeit, Ersatzteile, Lebensdauer, Rücknahme, Wiederverwendung, Recycling, Entsorgung, Lieferkette, Zertifikate, Prüfstatus und Datenqualität.",
+      "woekRelation": "In der WÖk ist der Digitale Produktpass das Produktgedächtnis und die Datenbasis für Produktscorecards, Reparatur, Rücknahme, Greenwashing-Prüfung und Wirkung im Preisschild.",
       "statusNote": "Nicht als vollständigen Wirkungsscore darstellen.",
-      "usageNote": "Nicht als vollständige Wirkungsbewertung verstehen.",
+      "usageNote": "Der DPP macht Produktwirkung nicht automatisch positiv. Er speichert Daten; Bewertung entsteht erst durch Produktscorecard, WÖk-IDs, Benchmarks und Rückkopplung.",
       "categories": [
         "daten-standards-regularien",
         "produkt-und-lebenszyklusdaten"
@@ -46965,32 +46969,91 @@
         "batteriepass",
         "anlagenpass",
         "vollstaendige-information",
-        "informationsasymmetrie"
+        "informationsasymmetrie",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsscanner"
       ],
       "officialSources": [
-        "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en"
+        "EU-Kommission ESPR|https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en",
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Ecodesign for Sustainable Products Regulation|https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "Eurostat: NACE Rev. 2|https://ec.europa.eu/eurostat/web/nace",
+        "ISO 14040 / ISO 14044 Life Cycle Assessment|https://www.iso.org/",
+        "Product Environmental Footprint methods|https://green-business.ec.europa.eu/environmental-footprint-methods_en"
       ],
       "pageUrl": "/begriffe/digitaler-produktpass/",
       "priority": 51,
       "status": "anschlussbegriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
+      "version": "1.1",
+      "category": "Daten, Standards & Produktwirkung",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten, Standards und Regularien · Produkt- und Lebenszyklusdaten",
-      "hoverDefinition": "Digitale Produktpässe bündeln Produkt-, Lieferketten-, Wirkungs- und Prüfdaten über den Lebenszyklus.",
+      "sourceDocument": "Glossar-Pack 002: Produktwirkung & Bewertungsarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 002",
+      "hoverDefinition": "Der Digitale Produktpass macht Produktdaten über Herkunft, Materialien, Nutzung, Reparatur, Rücknahme und Wirkung maschinenlesbar verfügbar.",
       "doNotConfuseWith": [
         "WÖk-ID",
-        "Scorecard"
+        "Scorecard",
+        "QR-Code kann Zugang sein, ist aber nicht der Produktpass.",
+        "Label verdichtet Information; der DPP enthält strukturierte Daten.",
+        "Produktscorecard bewertet Daten; der DPP speichert Daten.",
+        "Nachhaltigkeitsbericht berichtet organisationsbezogen; der DPP ist produktbezogen.",
+        "Datenblatt enthält technische Eigenschaften; der DPP enthält Lebenszyklus- und Wirkungsdaten.",
+        "Garantie- oder Reparaturpass kann Teilfunktionen abdecken."
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "DPP als Datenanschluss verwenden.",
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
+      "examples": [
+        "Ein Akku-DPP enthält Zellchemie, Rohstoffherkunft, Recyclingfähigkeit, CO2-Fußabdruck, Sicherheit, Lebensdauer und Rücknahme.",
+        "Ein Textil-DPP enthält Faser, Herkunft, Färbechemikalien, Arbeitsbedingungen, Pflege, Mikroplastikrisiko und Rücknahme.",
+        "Ein Möbel-DPP enthält Holzherkunft, Klebstoffe, Reparatur, Ersatzteile und Innenraumemissionen.",
+        "Ein Lebensmittel-DPP kann Herkunft, Anbauweise, Wasserstress, Pestizide, Transport, Verpackung und Kühlkette abbilden."
+      ],
+      "preferredUsage": "Als Dateninfrastruktur verwenden: Der Digitale Produktpass speichert Produktdaten, die Produktscorecard bewertet sie, Wirkungsrückkopplung führt sie in Entscheidungen zurück.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "digitaler produktpass",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "wirkungsdatenraum",
         "woek-id",
@@ -47019,7 +47082,32 @@
         "batteriepass",
         "anlagenpass",
         "vollstaendige-information",
-        "informationsasymmetrie"
+        "informationsasymmetrie",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsscanner"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -47028,7 +47116,7 @@
       "internal_links": [],
       "last_reviewed": "2026-05-29",
       "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierung",
       "theme": [
         "Datenbegriff"
       ],
@@ -47059,7 +47147,220 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "002",
+      "glossary_pack": "002",
+      "cluster": "Produktwirkung & Bewertungsarchitektur",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "Anschlussbegriff / WÖk-Präzisierung",
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Wirkungsökonomie Glossar",
+          "url": "https://wirkungsoekonomie.de/glossar.html",
+          "sourceType": "interne Quelle",
+          "status": "Begriffsbestand"
+        },
+        {
+          "title": "Technische Leitlinien WUStG",
+          "url": "https://wirkungsoekonomie.de/dokumente/technische-leitlinien-wustg-v2/",
+          "sourceType": "interne Quelle",
+          "status": "Methodenkontext"
+        },
+        {
+          "title": "Wirkungsfeld Produkte & Konsum",
+          "url": "https://wirkungsoekonomie.de/wirkungsfelder/produkte-konsum/",
+          "sourceType": "interne Quelle",
+          "status": "Anwendungskontext"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Ecodesign for Sustainable Products Regulation",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "DPP/ESPR"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        },
+        {
+          "title": "Eurostat: NACE Rev. 2",
+          "url": "https://ec.europa.eu/eurostat/web/nace",
+          "sourceType": "externe Quelle",
+          "status": "Klassifikation"
+        },
+        {
+          "title": "ISO 14040 / ISO 14044 Life Cycle Assessment",
+          "url": "https://www.iso.org/",
+          "sourceType": "externe Quelle",
+          "status": "LCA"
+        },
+        {
+          "title": "Product Environmental Footprint methods",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en",
+          "sourceType": "externe Quelle",
+          "status": "PEF"
+        }
+      ],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Der Digitale Produktpass ist ein strukturierter Datenträger, der zentrale Informationen zu Herkunft, Materialien, Herstellung, Nutzung, Reparatur, Rücknahme und Wirkung eines Produkts maschinenlesbar verfügbar macht."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Speichert Produktdaten über den Lebenszyklus.",
+            "Ist Datenbasis für Scorecards, Wirkungsscanner, Reparatur, Rücknahme und Kreislaufwirtschaft.",
+            "Macht Produktwirkung nicht automatisch positiv, sondern bewertbar.",
+            "Wird in der WÖk vom Berichtsdokument zum Rückkopplungsinstrument.",
+            "Verbindet Produktidentität, Lieferkette, Datenqualität, Prüfstatus und Scorecard."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Der Digitale Produktpass ist eine digitale, strukturierte und interoperable Datensammlung zu einem Produkt. Er enthält Informationen über Materialien, Komponenten, Herkunft, Prozesse, Energie, Emissionen, Wasser, Chemikalien, Reparierbarkeit, Ersatzteile, Lebensdauer, Rücknahme, Wiederverwendung, Recycling, Entsorgung, Lieferkette, Zertifikate, Prüfstatus und Datenqualität."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Produktwirkung lässt sich ohne maschinenlesbare, prüfbare und versionierte Produktdaten nicht skalieren. Der DPP schafft die technische Voraussetzung dafür, dass Wirkung nicht nur in Berichten steht, sondern in Marktprozesse, Beschaffung, Reparatur, Preisschilder, Greenwashing-Prüfung und Steuerlogik eingeht."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Aus WÖk-Sicht ist der DPP kein Selbstzweck. Er braucht Datenklarheit, Interoperabilität, Versionierung und Rückkopplungsfähigkeit. Nur wenn Daten in Scorecards, Preise, Steuern, Beschaffung und Kommunikation zurückfließen, wird der Produktpass wirkungsrelevant."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "QR-Code",
+            "Label",
+            "Produktscorecard",
+            "Nachhaltigkeitsbericht",
+            "Datenblatt",
+            "Garantie- oder Reparaturpass"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Akku-DPP mit Zellchemie, Rohstoffherkunft und Rücknahme.",
+            "Textil-DPP mit Faser, Chemikalien, Arbeitsbedingungen und Recyclingfähigkeit.",
+            "Möbel-DPP mit Holzherkunft, Reparatur und Emissionen.",
+            "Lebensmittel-DPP mit Herkunft, Wasserstress und Kühlkette."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestdatenfelder sind product_identity, manufacturer, product_group, gtin_or_internal_id, batch_or_version, nace_code, material_composition, component_list, origin_data, supplier_data, production_site, energy_data, emissions_data, water_data, chemical_data, labor_data, safety_data, repairability_data, spare_parts_data, lifetime_data, takeback_data, reuse_refurbish_recycling_data, disposal_data, certificates, data_source, verification_status, data_quality_class, scorecard_reference, wok_id_mapping, valid_from, valid_until und audit_trail."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Produktdaten",
+            "Produktscorecard",
+            "Produktwirkung",
+            "WÖk-ID",
+            "Reverse Merit Order",
+            "Wirkungsdatenraum",
+            "Wirkungsscanner",
+            "Kreislaufwirtschaft",
+            "5. P = Planet",
+            "Wirkungsrückkopplung",
+            "Greenwashing",
+            "Wirkungswahrheit",
+            "Datenqualität",
+            "CSRD",
+            "ESRS",
+            "GRI"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Die neue Ordnung des Wohlstands, Produktbesteuerung durch Wirkung, Technische Leitlinien WUStG, Nachhaltiges Marketing-Mix und Begriffsleitfaden. Externe Quellen: ESPR/DPP, CSRD/ESRS, GRI, EU-Taxonomie, ISO 14040/14044 und PEF."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 002",
+            "Cluster: Produktwirkung & Bewertungsarchitektur",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "diktatur",
@@ -223692,20 +223993,26 @@
         "Reverse Merit Order",
         "Nichtkompensationsprinzip",
         "Minimum-Operator",
-        "Engpasslogik"
+        "Engpasslogik",
+        "Schwächstes-Feld-Prinzip",
+        "Keine Aufrechnung",
+        "Rote-Linien-Logik"
       ],
       "synonyms": [
         "Reverse Merit Order",
         "Nichtkompensationsprinzip",
         "Minimum-Operator",
-        "Engpasslogik"
+        "Engpasslogik",
+        "Schwächstes-Feld-Prinzip",
+        "Keine Aufrechnung",
+        "Rote-Linien-Logik"
       ],
-      "shortDefinition": "Reverse Merit Order stellt sicher, dass das schwächste kritische Wirkungsfeld die Bewertung begrenzt.",
-      "definition": "Die Reverse Merit Order ist eine Schutzlogik gegen Schönrechnung. Sie macht kritische Schäden entscheidungsrelevant und verbindet Netto-Wirkung mit Nicht-Kompensation.",
-      "longDefinition": "Die Reverse Merit Order ist eine Schutzlogik gegen Schönrechnung. Sie macht kritische Schäden entscheidungsrelevant und verbindet Netto-Wirkung mit Nicht-Kompensation.",
-      "woekRelation": "Nicht als bloße Rechenregel ohne Schutzlogik verwenden.",
+      "shortDefinition": "Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen.",
+      "definition": "Reverse Merit Order bezeichnet in der Wirkungsökonomie ein Bewertungsprinzip, bei dem die Gesamtbewertung eines Produkts, einer Tätigkeit, eines Unternehmens oder einer Maßnahme durch das schwächste relevante Wirkungsfeld begrenzt wird. Ein schwerer negativer Effekt darf nicht durch positive Effekte in anderen Bereichen neutralisiert oder überdeckt werden.",
+      "longDefinition": "Reverse Merit Order bezeichnet in der Wirkungsökonomie ein Bewertungsprinzip, bei dem die Gesamtbewertung eines Produkts, einer Tätigkeit, eines Unternehmens oder einer Maßnahme durch das schwächste relevante Wirkungsfeld begrenzt wird. Ein schwerer negativer Effekt darf nicht durch positive Effekte in anderen Bereichen neutralisiert oder überdeckt werden.",
+      "woekRelation": "Die Reverse Merit Order schützt Wirkungswahrheit und verhindert, dass positive Teilwirkungen schwere negative Kernwirkungen verdecken.",
       "statusNote": "Nicht als bloße Rechenregel ohne Schutzlogik verwenden.",
-      "usageNote": "Nicht als bloße Rechenregel ohne Schutzlogik verwenden.",
+      "usageNote": "Reverse Merit Order ist keine pauschale Straflogik. Sie zeigt, welches Wirkungsfeld den Fortschritt begrenzt und wo Transformation ansetzen muss.",
       "categories": [
         "bewertungsbegriff",
         "daten-standards-regularien",
@@ -223737,38 +224044,95 @@
         "schwellenwert",
         "scope-3",
         "kreislaufwirtschaft",
-        "materialgesundheit"
+        "materialgesundheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "wirkungsrat"
       ],
       "officialSources": [
-        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html"
+        "Wirkungsökonomie Glossar|https://wirkungsoekonomie.de/glossar.html",
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Ecodesign for Sustainable Products Regulation|https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "Eurostat: NACE Rev. 2|https://ec.europa.eu/eurostat/web/nace",
+        "ISO 14040 / ISO 14044 Life Cycle Assessment|https://www.iso.org/",
+        "Product Environmental Footprint methods|https://green-business.ec.europa.eu/environmental-footprint-methods_en"
       ],
       "pageUrl": "/begriffe/reverse-merit-order/",
       "priority": 90,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Bewertungsbegriff",
+      "version": "1.1",
+      "category": "Messung, Bewertung & Steuerung",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Führende Mini-Definitionen",
-      "hoverDefinition": "Die Reverse Merit Order bedeutet: Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
+      "sourceDocument": "Glossar-Pack 002: Produktwirkung & Bewertungsarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 002",
+      "hoverDefinition": "Reverse Merit Order bedeutet: Das kritischste relevante Wirkungsfeld begrenzt die Gesamtbewertung; schwere Schäden dürfen nicht schöngerechnet werden.",
       "doNotConfuseWith": [
         "Merit Order",
-        "Durchschnittsscore"
+        "Durchschnittsscore",
+        "Merit Order im Energiemarkt beschreibt Einsatzreihenfolge nach Grenzkosten.",
+        "Durchschnittsscore ist gerade nicht Reverse Merit Order.",
+        "Kompensation verrechnet negative mit positiven Wirkungen.",
+        "Straflogik ist nicht Ziel; Ziel ist Lenkung und Transformation.",
+        "Ausschlussliste ist enger als Reverse Merit Order.",
+        "ESG-Rating erlaubt oft faktische Kompensation; WÖk begrenzt diese."
       ],
       "relatedDocuments": [
         "technische-leitlinien-wustg",
-        "beispiel-apfel-wirkungssteuer"
+        "beispiel-apfel-wirkungssteuer",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "examples": [
         "Apfelbeispiel",
-        "Lieferkettenbewertung"
+        "Lieferkettenbewertung",
+        "Ein T-Shirt mit Bio-Baumwolle bleibt problematisch, wenn Kinderarbeit vorkommt.",
+        "Ein Produkt mit guter CO2-Bilanz kann nicht positiv gelten, wenn es toxische Stoffe freisetzt.",
+        "Ein Akku mit guter Recyclingfähigkeit wird durch Rohstoffe aus Zwangsarbeit begrenzt.",
+        "Ein digitales Tool kann Effizienz erhöhen und dennoch Datenschutz oder demokratische Informationsqualität verletzen."
       ],
-      "preferredUsage": "Reverse Merit Order als Nichtkompensationslogik einsetzen.",
+      "preferredUsage": "Als Bewertungsprinzip verwenden, wenn FinalScores, Produktscorecards, Wirkungssteuer oder Greenwashing-Prüfung rote Linien und Nichtkompensation berücksichtigen müssen.",
       "deprecatedUsage": [],
       "reviewStatus": "approved",
       "glossaryOrderKey": "reverse merit order",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "updatedAt": "2026-05-27",
       "related_terms": [
         "nichtkompensationsprinzip",
@@ -223793,7 +224157,32 @@
         "schwellenwert",
         "scope-3",
         "kreislaufwirtschaft",
-        "materialgesundheit"
+        "materialgesundheit",
+        "produktwirkung",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "wirkungsrat"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -223802,7 +224191,7 @@
       "internal_links": [],
       "last_reviewed": "2026-05-29",
       "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / Bewertungsprinzip",
       "theme": [
         "Bewertungsbegriff"
       ],
@@ -223833,7 +224222,221 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "002",
+      "glossary_pack": "002",
+      "cluster": "Produktwirkung & Bewertungsarchitektur",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Prägungsbegriff / Bewertungsprinzip",
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Wirkungsökonomie Glossar",
+          "url": "https://wirkungsoekonomie.de/glossar.html",
+          "sourceType": "interne Quelle",
+          "status": "Begriffsbestand"
+        },
+        {
+          "title": "Technische Leitlinien WUStG",
+          "url": "https://wirkungsoekonomie.de/dokumente/technische-leitlinien-wustg-v2/",
+          "sourceType": "interne Quelle",
+          "status": "Methodenkontext"
+        },
+        {
+          "title": "Wirkungsfeld Produkte & Konsum",
+          "url": "https://wirkungsoekonomie.de/wirkungsfelder/produkte-konsum/",
+          "sourceType": "interne Quelle",
+          "status": "Anwendungskontext"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Ecodesign for Sustainable Products Regulation",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "DPP/ESPR"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        },
+        {
+          "title": "Eurostat: NACE Rev. 2",
+          "url": "https://ec.europa.eu/eurostat/web/nace",
+          "sourceType": "externe Quelle",
+          "status": "Klassifikation"
+        },
+        {
+          "title": "ISO 14040 / ISO 14044 Life Cycle Assessment",
+          "url": "https://www.iso.org/",
+          "sourceType": "externe Quelle",
+          "status": "LCA"
+        },
+        {
+          "title": "Product Environmental Footprint methods",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en",
+          "sourceType": "externe Quelle",
+          "status": "PEF"
+        }
+      ],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Verhindert Schönrechnung und Greenwashing.",
+            "Nicht der Durchschnitt entscheidet, sondern das kritischste relevante Wirkungsfeld.",
+            "Schwere negative Wirkung kann nicht durch gute Werte anderswo kompensiert werden.",
+            "Schützt rote Linien wie Menschenwürde, Kinderrechte, Gesundheit, ökologische Lebensgrundlagen und Demokratie.",
+            "Zentral für Produktscorecards, Wirkungssteuer, Lieferkettenbewertung und Wirkungswahrheit.",
+            "Ähnelt einem Minimum-Operator, wird aber normativ durch rote Linien und Systemgrenzen ergänzt."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Reverse Merit Order ist eine Gegenlogik zu Durchschnittsrating, Punktesumme oder Kompensationslogik. Sie fragt nicht, wie gut der Durchschnitt aller Felder ist, sondern ob ein zentrales Wirkungsfeld so schwach oder schädlich ist, dass es die Gesamtwirkung begrenzt."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Sobald Wirkung steuer-, preis-, kapital- oder reputationsrelevant wird, entstehen Anreize, Wirkung zu optimieren, zu frisieren oder zu simulieren. Reverse Merit Order begrenzt dieses Risiko und schützt Wirkungswahrheit, Menschenwürde, Kinderrechte, Gesundheit, ökologische Lebensgrundlagen, Biodiversität, demokratische Stabilität, Rechtsstaatlichkeit, Datenintegrität und faire Märkte."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die Wirkungsökonomie versteht Netto-Wirkung nicht als einfache Addition. Positive und negative Wirkungen müssen zusammengeführt werden, aber nicht beliebig verrechnet. Reverse Merit Order operationalisiert rote Linien als Bewertungslogik. Fair angewandt braucht sie branchenspezifische Relevanz, ausgewiesene Datenqualität, Übergangslogik, transparente rote Linien und sichtbare Transformationspfade."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Merit Order im Energiemarkt",
+            "Durchschnittsscore",
+            "Kompensation",
+            "Straflogik",
+            "Ausschlussliste",
+            "ESG-Rating"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Klima +2, Ressourcen +1, Arbeit -2, Gesundheit +1: Das Feld Arbeit begrenzt die Gesamtbewertung.",
+            "Gute regionale Lieferketten werden durch erhebliche Pestizidrückstände begrenzt.",
+            "Gute Recyclingfähigkeit wird durch Zwangsarbeit in Rohstoffen begrenzt.",
+            "Effizienzgewinn wird durch Datenschutzverletzung und demokratische Risiken begrenzt."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mathematische Grundlogik: FinalScore = min(relevante Kernfeldscores). Praktisch müssen rote Linien, Datenqualität und Kontext berücksichtigt werden. Mindestlogik: Wirkungsfelder per Produktgruppe, NACE, SDG/SDG+ und WÖk-ID bestimmen, Einzelscores berechnen, rote Linien und Unsicherheit prüfen, schwächstes relevantes Feld bestimmen, FinalScore nach Engpasslogik setzen und Transformationspfad dokumentieren."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Produktscorecard",
+            "Produktwirkung",
+            "WÖk-ID",
+            "Produktdaten",
+            "Digitaler Produktpass",
+            "FinalScore",
+            "Nichtkompensationsprinzip",
+            "Positive Netto-Wirkung",
+            "Netto-Wirkung",
+            "Wirkungsgrenze",
+            "Wirkungswahrheit",
+            "Greenwashing",
+            "Wirkungssteuer",
+            "Wirkungsrückkopplung",
+            "Wirkungslenkung",
+            "Wirkungsrat"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Begriffsleitfaden, Technische Leitlinien WUStG, Produktbesteuerung durch Wirkung, Beispiel Apfel Wirkungssteuer, Wirkungsoekonomie in der Lieferkette, Die neue Ordnung des Wohlstands und WÖk-Master-Items. Externe Quellen: UN SDGs/Agenda 2030, CSRD/ESRS, GRI, EU-Taxonomie, OECD-Leitlinien und ILO-Kernarbeitsnormen bei arbeitsbezogenen roten Linien."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 002",
+            "Cluster: Produktwirkung & Bewertungsarchitektur",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "rezyklatanteil",
@@ -298765,20 +299368,30 @@
         "WÖk-ID",
         "WOK-ID",
         "Wok ID",
-        "WÖK ID"
+        "WÖK ID",
+        "Wirkungsökonomie-ID",
+        "Wirkungsindikator-ID",
+        "WÖK-ID",
+        "Wirkungs-ID",
+        "Indikator-ID der Wirkungsökonomie"
       ],
       "synonyms": [
         "WÖk-ID",
         "WOK-ID",
         "Wok ID",
-        "WÖK ID"
+        "WÖK ID",
+        "Wirkungsökonomie-ID",
+        "Wirkungsindikator-ID",
+        "WÖK-ID",
+        "Wirkungs-ID",
+        "Indikator-ID der Wirkungsökonomie"
       ],
-      "shortDefinition": "Eine WÖk-ID ist eine strukturierte Kennung für Wirkungsindikatoren, Wirkungsfelder oder Bewertungsitems.",
-      "definition": "WÖk-IDs verbinden SDGs, SDG+, Targets, Indikatorfamilien, Datenquellen und Bewertungslogik in einem Register.",
-      "longDefinition": "WÖk-IDs verbinden SDGs, SDG+, Targets, Indikatorfamilien, Datenquellen und Bewertungslogik in einem Register.",
-      "woekRelation": "Schreibweise WÖk-ID verwenden, sofern Kontext eindeutig.",
+      "shortDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird.",
+      "definition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden.",
+      "longDefinition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden.",
+      "woekRelation": "WÖk-IDs sind die technische Sprache der Wirkungsökonomie und ermöglichen Vergleichbarkeit, Mapping, Prüf- und Steuerlogik sowie Greenwashing-Schutz.",
       "statusNote": "Als Modellbegriff verwenden, nicht als amtliche ID darstellen.",
-      "usageNote": "Schreibweise WÖk-ID verwenden, sofern Kontext eindeutig.",
+      "usageNote": "Eine WÖk-ID ist kein moralisches Urteil und kein Score. Bewertung entsteht erst durch Messwert, Datenquelle, Benchmark, Kontext, Datenqualität und Scorecard-Logik.",
       "categories": [
         "daten-standards-regularien",
         "woek-uebersetzung"
@@ -298804,37 +299417,95 @@
         "scope-3",
         "thg-emissions-scopes",
         "scope-3-datenqualitaet",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungssteuer",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsindikator"
       ],
       "officialSources": [
-        "WÖk-ID Werkzeug|https://wirkungsoekonomie.de/werkzeuge/woek-ids/"
+        "WÖk-ID Werkzeug|https://wirkungsoekonomie.de/werkzeuge/woek-ids/",
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Ecodesign for Sustainable Products Regulation|https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "Eurostat: NACE Rev. 2|https://ec.europa.eu/eurostat/web/nace",
+        "ISO 14040 / ISO 14044 Life Cycle Assessment|https://www.iso.org/",
+        "Product Environmental Footprint methods|https://green-business.ec.europa.eu/environmental-footprint-methods_en"
       ],
       "pageUrl": "/begriffe/woek-id/",
       "priority": 98,
       "status": "führender-begriff",
-      "version": "1.0",
-      "category": "Datenbegriff",
+      "version": "1.1",
+      "category": "Messung, Daten & Standards",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator innerhalb der Wirkungsökonomie.",
+      "sourceDocument": "Glossar-Pack 002: Produktwirkung & Bewertungsarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 002",
+      "hoverDefinition": "Eine WÖk-ID identifiziert einen Wirkungsindikator eindeutig. Sie ist kein Score, sondern der Code für das, was gemessen und bewertet wird.",
       "doNotConfuseWith": [
         "NACE",
-        "Produkt-ID"
+        "Produkt-ID",
+        "Score ist Bewertungsergebnis; WÖk-ID ist Indikatorcode.",
+        "Produkt-ID identifiziert Produkt; WÖk-ID identifiziert Wirkungsindikator.",
+        "SDG ist Ziel; WÖk-ID operationalisiert einen messbaren Aspekt.",
+        "ESRS-Datenpunkt kann Quelle oder Mappingpartner sein.",
+        "NACE klassifiziert wirtschaftliche Aktivität; WÖk-IDs messen relevante Wirkung.",
+        "KPI kann beliebig sein; WÖk-ID ist wirkungsökonomisch normiert."
       ],
       "relatedDocuments": [
         "woek-master-items-register",
-        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+        "wirkungscontrolling-detailkonzept-dossier-v1-0",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
-      "examples": [],
-      "preferredUsage": "WÖk-ID als Registerkennung verwenden.",
+      "examples": [
+        "WÖk-ID für produktbezogene Treibhausgasintensität.",
+        "WÖk-ID für Wasserstress in Relation zur Region.",
+        "WÖk-ID für Reparierbarkeit über Ersatzteile, Zugänglichkeit und Dokumentation.",
+        "WÖk-ID für Living-Wage-Abdeckung in Lieferketten.",
+        "WÖk-ID für Chemikaliensicherheit, Grenzwerte und Exposition."
+      ],
+      "preferredUsage": "Als technischer Ordnungsanker verwenden, wenn Wirkungsindikatoren systematisch mit SDGs, SDG+, NACE, ESRS, GRI, EU-Taxonomie und Scorecards verbunden werden.",
       "deprecatedUsage": [
         "WOK-ID"
       ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "wök id",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-01",
       "related_terms": [
         "scorecard",
         "benchmark",
@@ -298851,7 +299522,31 @@
         "scope-1",
         "scope-3",
         "thg-emissions-scopes",
-        "scope-3-datenqualitaet"
+        "scope-3-datenqualitaet",
+        "produktwirkung",
+        "produktscorecard",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungssteuer",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "wirkungsindikator"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -298860,7 +299555,7 @@
       "internal_links": [],
       "last_reviewed": "2026-05-29",
       "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "begriffstyp": "WÖk-Prägungsbegriff / technischer Kernbegriff",
       "theme": [
         "Datenbegriff"
       ],
@@ -298891,7 +299586,224 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "glossaryPack": "002",
+      "glossary_pack": "002",
+      "cluster": "Produktwirkung & Bewertungsarchitektur",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "termType": "WÖk-Prägungsbegriff / technischer Kernbegriff",
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Wirkungsökonomie Glossar",
+          "url": "https://wirkungsoekonomie.de/glossar.html",
+          "sourceType": "interne Quelle",
+          "status": "Begriffsbestand"
+        },
+        {
+          "title": "Technische Leitlinien WUStG",
+          "url": "https://wirkungsoekonomie.de/dokumente/technische-leitlinien-wustg-v2/",
+          "sourceType": "interne Quelle",
+          "status": "Methodenkontext"
+        },
+        {
+          "title": "Wirkungsfeld Produkte & Konsum",
+          "url": "https://wirkungsoekonomie.de/wirkungsfelder/produkte-konsum/",
+          "sourceType": "interne Quelle",
+          "status": "Anwendungskontext"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Ecodesign for Sustainable Products Regulation",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "DPP/ESPR"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        },
+        {
+          "title": "Eurostat: NACE Rev. 2",
+          "url": "https://ec.europa.eu/eurostat/web/nace",
+          "sourceType": "externe Quelle",
+          "status": "Klassifikation"
+        },
+        {
+          "title": "ISO 14040 / ISO 14044 Life Cycle Assessment",
+          "url": "https://www.iso.org/",
+          "sourceType": "externe Quelle",
+          "status": "LCA"
+        },
+        {
+          "title": "Product Environmental Footprint methods",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en",
+          "sourceType": "externe Quelle",
+          "status": "PEF"
+        }
+      ],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Ordnet Wirkungsindikatoren eindeutig zu.",
+            "Verbindet SDGs, SDG+, NACE, ESRS, GRI, EU-Taxonomie und WÖk-Scorecards.",
+            "Macht Wirkung maschinenlesbar, auditierbar und vergleichbar.",
+            "Ist kein Score, sondern ein Indikatorcode.",
+            "Grundlage für Produktscorecards, Unternehmensscorecards, Wirkungsregister und Wirkungssteuer.",
+            "Ohne WÖk-IDs bleibt Wirkung schwer aggregierbar und schwer automatisierbar."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie beschreibt nicht selbst, ob ein Produkt oder eine Tätigkeit gut oder schlecht wirkt. Sie benennt, welcher Wirkungsaspekt gemessen wird. Erst durch Messwert, Benchmark, Kontext, Datenqualität und Bewertungslogik entsteht daraus ein Score."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "WÖk-IDs verhindern, dass Wirkung nur als vage Erzählung, moralischer Anspruch oder Marketingaussage verwendet wird. Sie ermöglichen eindeutige Indikatorzuordnung, Vergleichbarkeit über Branchen und Produkte, Mapping auf SDGs und SDG+, Anschluss an CSRD, ESRS, GRI, EU-Taxonomie und NACE, Scorecards, Register, Produktpässe und automatisierte Steuerlogik."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die WÖk-ID schafft eine konsistente Indikatorenarchitektur. Sie ist ein technischer Ordnungsanker, kein Urteil. Bewertung entsteht erst im Zusammenspiel mit Messwert, Datenquelle, Benchmark, Branche, Region, Technologie, Systemgrenze, Archetyp, Datenqualitätsklasse, Scorecard-Logik und Reverse Merit Order."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Score",
+            "Produkt-ID",
+            "SDG",
+            "ESRS-Datenpunkt",
+            "NACE-Code",
+            "KPI"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Produkt-CO2 entlang eines definierten Lebenszyklusabschnitts.",
+            "Wasserstress in Relation zu regionaler Knappheit.",
+            "Reparierbarkeit und Ersatzteilverfügbarkeit.",
+            "Living Wage in relevanten Lieferstufen.",
+            "Chemikaliensicherheit und Exposition."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Empfohlene Datenfelder sind wok_id, title, short_description, dimension, sdg_reference, sdgplus_reference, target_reference, indicator_family, nace_relevance, esrs_mapping, gri_mapping, taxonomy_mapping, data_type, unit, polarity, archetype, benchmark_source, data_quality_requirements, verification_requirements, lifecycle_relevance, scorecard_fields, red_flag_possible, valid_from, version und governance_owner. Typische Felder sind E, S, G, P, SC, SYS, POL, RE und D."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Produktscorecard",
+            "Produktwirkung",
+            "Digitaler Produktpass",
+            "Produktdaten",
+            "Wirkungsindikator",
+            "Wirkungsdaten",
+            "Wirkungsregister",
+            "Datenqualität",
+            "NACE",
+            "SDGs",
+            "SDG+",
+            "CSRD",
+            "ESRS",
+            "GRI",
+            "Reverse Merit Order",
+            "FinalScore",
+            "Wirkungsbewertung",
+            "Wirkungsarchitektur"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Technische Leitlinien WUStG, WÖk-Master-Items, Die neue Ordnung des Wohlstands, Produktbesteuerung durch Wirkung, Begriffsleitfaden und Wirkungsrat-Konzept. Externe Quellen: UN SDGs/Agenda 2030, CSRD/ESRS, GRI, EU-Taxonomie, NACE Rev. 2 und ISO-Standards je Indikatorbereich."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 002",
+            "Cluster: Produktwirkung & Bewertungsarchitektur",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     },
     {
       "id": "wstg",
@@ -309964,6 +310876,727 @@
       "preferredUsage": "Als WÖk-Modellbegriff mit Schutzlinien verwenden.",
       "deprecatedUsage": [],
       "glossaryOrderKey": "transformationsbonus"
+    },
+    {
+      "termId": "produktwirkung",
+      "canonicalLabel": "Produktwirkung",
+      "slug": "produktwirkung",
+      "aliases": [
+        "Produktwirkung",
+        "Wirkung eines Produkts",
+        "Produkt-Impact",
+        "Produkt als Wirkungsträger",
+        "Lebenszykluswirkung",
+        "Wirkung über den Produktlebenszyklus"
+      ],
+      "synonyms": [
+        "Produktwirkung",
+        "Wirkung eines Produkts",
+        "Produkt-Impact",
+        "Produkt als Wirkungsträger",
+        "Lebenszykluswirkung",
+        "Wirkung über den Produktlebenszyklus"
+      ],
+      "shortDefinition": "Produktwirkung bezeichnet die tatsächlichen positiven, negativen oder neutralen Zustandsveränderungen, die ein Produkt entlang seines Lebenszyklus auf Mensch, Planet und Demokratie auslöst.",
+      "definition": "Produktwirkung bezeichnet die tatsächliche Wirkung eines Produkts auf relevante Zustände entlang seines gesamten Lebenszyklus. Dazu gehören ökologische Zustände wie Klima, Wasser, Boden, Biodiversität, Ressourcen und Abfall; soziale Zustände wie Arbeitsbedingungen, Gesundheit, Sicherheit, Teilhabe, Erschwinglichkeit und faire Lieferketten; sowie demokratische Zustände wie Transparenz, Datenklarheit, Verbraucherinformation, Manipulationsschutz und Vertrauen.",
+      "longDefinition": "Produktwirkung bezeichnet die tatsächliche Wirkung eines Produkts auf relevante Zustände entlang seines gesamten Lebenszyklus. Dazu gehören ökologische Zustände wie Klima, Wasser, Boden, Biodiversität, Ressourcen und Abfall; soziale Zustände wie Arbeitsbedingungen, Gesundheit, Sicherheit, Teilhabe, Erschwinglichkeit und faire Lieferketten; sowie demokratische Zustände wie Transparenz, Datenklarheit, Verbraucherinformation, Manipulationsschutz und Vertrauen.",
+      "woekRelation": "Produktwirkung ist die Brücke zwischen Produktdaten, Produktscorecard, Digitalem Produktpass, Wirkungssteuer, ehrlichen Preisen, Responsible Marketing und Greenwashing-Schutz.",
+      "statusNote": "",
+      "usageNote": "Produktwirkung ist nicht Produktimage. Entscheidend sind Daten, Systemgrenzen, Benchmarks, Scorecards, Nachweise und Rückkopplung.",
+      "categories": [
+        "glossar",
+        "produktwirkung-bewertungsarchitektur"
+      ],
+      "relatedTerms": [
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "ehrliche-preise",
+        "kreislaufwirtschaft"
+      ],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Ecodesign for Sustainable Products Regulation|https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "Eurostat: NACE Rev. 2|https://ec.europa.eu/eurostat/web/nace",
+        "ISO 14040 / ISO 14044 Life Cycle Assessment|https://www.iso.org/",
+        "Product Environmental Footprint methods|https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+      ],
+      "pageUrl": "/begriffe/produktwirkung/",
+      "priority": 168,
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "category": "Produkte, Märkte & Preise",
+      "source": "Glossar-Pack 002",
+      "sourceDocument": "Glossar-Pack 002: Produktwirkung & Bewertungsarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 002",
+      "hoverDefinition": "Produktwirkung beschreibt, welche Zustände ein Produkt entlang seines Lebenszyklus tatsächlich verändert: positiv, negativ, neutral oder ambivalent.",
+      "doNotConfuseWith": [
+        "Produktnutzen beschreibt Nutzen für einzelne Kund:innen; Produktwirkung umfasst Systemfolgen.",
+        "Produktqualität beschreibt Eigenschaften; Produktwirkung beschreibt Zustandsveränderungen.",
+        "Nachhaltigkeitsclaim kann Wirkung behaupten; Produktwirkung muss nachvollziehbar sein.",
+        "CO2-Fußabdruck ist ein Teilbereich, nicht die gesamte Produktwirkung.",
+        "ESG-Unternehmensdaten sind oft organisationsbezogen; Produktwirkung ist produkt- und lebenszyklusbezogen.",
+        "Produktimage ist Wahrnehmung; Produktwirkung ist tatsächliche Veränderung."
+      ],
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
+      "examples": [
+        "Ein regionaler Bio-Apfel kann anders wirken als ein importierter Apfel aus einer Wasserstressregion.",
+        "Ein Fast-Fashion-T-Shirt kann billig erscheinen, aber Chemikalien-, Wasser-, Arbeits- und Lebensdauerrisiken tragen.",
+        "Ein Smartphone kann digitale Teilhabe stärken und zugleich Rohstoff-, Reparatur- und E-Waste-Probleme erzeugen.",
+        "Ein reparierbares Möbelstück mit Rücknahmesystem kann Ressourcenverbrauch senken und Kreislaufführung stärken."
+      ],
+      "preferredUsage": "Den Begriff verwenden, wenn ein Produkt als Wirkungsträger über Rohstoffe, Design, Herstellung, Nutzung, Reparatur, Rücknahme und Entsorgung betrachtet wird.",
+      "deprecatedUsage": [],
+      "reviewStatus": "redaktionell zu prüfen",
+      "glossaryOrderKey": "produktwirkung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-01",
+      "termType": "WÖk-Präzisierungsbegriff",
+      "glossaryPack": "002",
+      "glossary_pack": "002",
+      "cluster": "Produktwirkung & Bewertungsarchitektur",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "related_terms": [
+        "produktscorecard",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "ehrliche-preise",
+        "kreislaufwirtschaft"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Wirkungsökonomie Glossar",
+          "url": "https://wirkungsoekonomie.de/glossar.html",
+          "sourceType": "interne Quelle",
+          "status": "Begriffsbestand"
+        },
+        {
+          "title": "Technische Leitlinien WUStG",
+          "url": "https://wirkungsoekonomie.de/dokumente/technische-leitlinien-wustg-v2/",
+          "sourceType": "interne Quelle",
+          "status": "Methodenkontext"
+        },
+        {
+          "title": "Wirkungsfeld Produkte & Konsum",
+          "url": "https://wirkungsoekonomie.de/wirkungsfelder/produkte-konsum/",
+          "sourceType": "interne Quelle",
+          "status": "Anwendungskontext"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Ecodesign for Sustainable Products Regulation",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "DPP/ESPR"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        },
+        {
+          "title": "Eurostat: NACE Rev. 2",
+          "url": "https://ec.europa.eu/eurostat/web/nace",
+          "sourceType": "externe Quelle",
+          "status": "Klassifikation"
+        },
+        {
+          "title": "ISO 14040 / ISO 14044 Life Cycle Assessment",
+          "url": "https://www.iso.org/",
+          "sourceType": "externe Quelle",
+          "status": "LCA"
+        },
+        {
+          "title": "Product Environmental Footprint methods",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en",
+          "sourceType": "externe Quelle",
+          "status": "PEF"
+        }
+      ],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Produktwirkung bezeichnet die tatsächlichen positiven, negativen oder neutralen Zustandsveränderungen, die ein Produkt entlang seines Lebenszyklus auf Mensch, Planet und Demokratie auslöst."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Produktwirkung beginnt bei Rohstoffen, Design, Lieferkette und Herstellung.",
+            "Sie umfasst Nutzung, Reparatur, Rücknahme, Wiederverwendung, Recycling und Entsorgung.",
+            "Ein Produkt ist in der Wirkungsökonomie ein Wirkungsträger, nicht nur eine Ware.",
+            "Produktwirkung kann positiv, negativ, neutral oder ambivalent sein.",
+            "Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+; SDG+ ist eine WÖk-Erweiterung.",
+            "Produktwirkung ist Grundlage für Produktscorecards, Digitalen Produktpass, Wirkungssteuer und ehrliche Preise."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Produktwirkung bezeichnet die tatsächliche Wirkung eines Produkts auf relevante Zustände entlang seines gesamten Lebenszyklus. Ein Produkt ist nicht nur ein Gegenstand, eine Dienstleistung oder eine marktfähige Einheit, sondern verdichtete Wirkung aus Rohstoffen, Energie, Arbeit, Transport, Designentscheidungen, Lieferketten, Nutzungsmustern, Reparierbarkeit, Kommunikationsversprechen und Nachwirkungen nach dem Gebrauch. Die Leitfrage lautet nicht, ob ein Produkt nachhaltig beworben ist, sondern welche Zustände es tatsächlich verändert und für wen."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Produktwirkung ist ein zentraler Hebel der Wirkungsökonomie, weil Märkte jeden Tag über Produkte, Preise, Regale, Werbung, Beschaffung und Konsum gesteuert werden. Wenn Produktwirkung unsichtbar bleibt, konkurrieren Produkte vor allem über Preis, Marke, Verfügbarkeit und Image; externalisierte Schäden erscheinen dann oft günstiger. Die WÖk macht Produktwirkung sichtbar, messbar, vergleichbar und rückkopplungsfähig."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Klassische Produktlogik fragt nach Funktion, Qualität, Preis, Marke und Kundennutzen. Wirkungsökonomische Produktlogik ergänzt die Systemfrage: Welche Wirkungen entstehen vor, während und nach der Nutzung? Produktwirkung wird nicht eindimensional bewertet. Ein klimafreundliches Produkt kann soziale Schäden verursachen; ein sozial gutes Produkt kann ökologisch problematisch sein. Deshalb braucht Produktwirkung mehrdimensionale Bewertung, rote Linien und Reverse Merit Order."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Produktnutzen",
+            "Produktqualität",
+            "Nachhaltigkeitsclaim",
+            "CO2-Fußabdruck",
+            "ESG-Unternehmensdaten",
+            "Produktimage"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Bio-Apfel versus Import aus Wasserstressregion.",
+            "Fast-Fashion-T-Shirt mit kurzer Lebensdauer und Lieferkettenrisiken.",
+            "Smartphone mit Teilhabeeffekt und Rohstoff-/E-Waste-Risiken.",
+            "Reparierbares Möbel mit langlebigen Materialien und Rücknahmesystem."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Operationalisiert wird Produktwirkung über Produktdaten, WÖk-IDs, Produktscorecards und Digitale Produktpässe. Relevante Messfelder sind Klima, Ressourcen, Wasser, Biodiversität, Chemikalien, Gesundheit, Arbeit, Lieferkettentransparenz, Reparierbarkeit, Rücknahme, Datenqualität und Wirkungswahrheit. Gesteuert wird über Produktscorecard, FinalScore, Reverse Merit Order, Wirkungssteuer, Preisschild, Beschaffung, Responsible Marketing, Sortimentssteuerung sowie Kapital- und Versicherungsrisiken."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Produktscorecard",
+            "Produktdaten",
+            "Digitaler Produktpass",
+            "WÖk-ID",
+            "Reverse Merit Order",
+            "Wirkungssteuer",
+            "Ehrliche Preise",
+            "5. P = Planet",
+            "Responsible Marketing",
+            "Greenwashing",
+            "Wirkungsrückkopplung",
+            "Positive Netto-Wirkung",
+            "Wirkung",
+            "Netto-Wirkung",
+            "Kreislaufwirtschaft"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Die neue Ordnung des Wohlstands, Produktbesteuerung durch Wirkung, Technische Leitlinien WUStG, Führender Begriffsleitfaden, Beispiel Apfel Wirkungssteuer, Nachhaltiges Marketing-Mix. Externe Quellen: UN SDGs/Agenda 2030, CSRD/ESRS, GRI, ESPR/DPP, ISO 14040/14044 und Product Environmental Footprint."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 002",
+            "Cluster: Produktwirkung & Bewertungsarchitektur",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
+    },
+    {
+      "termId": "produktscorecard",
+      "canonicalLabel": "Produktscorecard",
+      "slug": "produktscorecard",
+      "aliases": [
+        "Produktscorecard",
+        "Produkt-Scorecard",
+        "Wirkungs-Scorecard für Produkte",
+        "Product Scorecard",
+        "Produktwirkungs-Scorecard",
+        "Scorecard für Produktwirkung"
+      ],
+      "synonyms": [
+        "Produktscorecard",
+        "Produkt-Scorecard",
+        "Wirkungs-Scorecard für Produkte",
+        "Product Scorecard",
+        "Produktwirkungs-Scorecard",
+        "Scorecard für Produktwirkung"
+      ],
+      "shortDefinition": "Die Produktscorecard ist das Bewertungsinstrument der Wirkungsökonomie, das Produktdaten in überprüfbare Wirkungsscores für zentrale Wirkungsfelder übersetzt.",
+      "definition": "Die Produktscorecard ist ein strukturiertes Bewertungsinstrument, mit dem die Wirkung eines Produkts entlang relevanter Wirkungsfelder erfasst, bewertet und in einen nachvollziehbaren Score überführt wird. Sie macht Produktwirkung operationalisierbar und verbindet Produktidentität, Produktgruppe oder NACE-Zuordnung, SDG-/SDG+-Bezüge, WÖk-IDs, Messwerte, Datenquellen, Benchmarks, Datenqualität, Einzel-Scores, FinalScore, Prüfstatus, Gültigkeit und Version.",
+      "longDefinition": "Die Produktscorecard ist ein strukturiertes Bewertungsinstrument, mit dem die Wirkung eines Produkts entlang relevanter Wirkungsfelder erfasst, bewertet und in einen nachvollziehbaren Score überführt wird. Sie macht Produktwirkung operationalisierbar und verbindet Produktidentität, Produktgruppe oder NACE-Zuordnung, SDG-/SDG+-Bezüge, WÖk-IDs, Messwerte, Datenquellen, Benchmarks, Datenqualität, Einzel-Scores, FinalScore, Prüfstatus, Gültigkeit und Version.",
+      "woekRelation": "Die Produktscorecard ist ein Kerninstrument, weil Wirkung ohne Bewertungslogik nicht steuerungsfähig wird. Sie verbindet Daten mit Referenzwerten, Schwellen, Benchmarks und Reverse Merit Order.",
+      "statusNote": "",
+      "usageNote": "Die Produktscorecard ersetzt nicht den Digitalen Produktpass. Der Produktpass stellt Daten bereit; die Scorecard bewertet sie.",
+      "categories": [
+        "glossar",
+        "produktwirkung-bewertungsarchitektur"
+      ],
+      "relatedTerms": [
+        "produktwirkung",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "finalscore",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "UN Sustainable Development Goals|https://sdgs.un.org/goals",
+        "UN Agenda 2030|https://sdgs.un.org/2030agenda",
+        "European Commission: Corporate sustainability reporting|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: European Sustainability Reporting Standards|https://www.efrag.org/",
+        "GRI Standards|https://www.globalreporting.org/standards/",
+        "European Commission: Ecodesign for Sustainable Products Regulation|https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+        "European Commission: EU Taxonomy|https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+        "Eurostat: NACE Rev. 2|https://ec.europa.eu/eurostat/web/nace",
+        "ISO 14040 / ISO 14044 Life Cycle Assessment|https://www.iso.org/",
+        "Product Environmental Footprint methods|https://green-business.ec.europa.eu/environmental-footprint-methods_en"
+      ],
+      "pageUrl": "/begriffe/produktscorecard/",
+      "priority": 168,
+      "status": "anschlussbegriff",
+      "version": "1.1",
+      "category": "Messung, Daten & Produktwirkung",
+      "source": "Glossar-Pack 002",
+      "sourceDocument": "Glossar-Pack 002: Produktwirkung & Bewertungsarchitektur",
+      "sourceSection": "Professionalisiertes Glossar-Pack 002",
+      "hoverDefinition": "Die Produktscorecard übersetzt Produktdaten, WÖk-IDs, Benchmarks und Datenqualität in nachvollziehbare Scores für Produktwirkung.",
+      "doNotConfuseWith": [
+        "Nachhaltigkeitsbericht berichtet meist auf Unternehmensniveau; die Produktscorecard bewertet produktbezogen.",
+        "ESG-Rating bewertet oft Organisationen oder Kapitalmarktrisiken; die Produktscorecard bewertet Produktwirkung.",
+        "Label sind grober; Scorecards sind daten- und feldbezogen.",
+        "Digitaler Produktpass speichert Produktdaten; die Produktscorecard bewertet sie.",
+        "CO2-Bilanz ist ein Teilbereich, nicht die ganze Scorecard.",
+        "Life Cycle Assessment ist Grundlage für Umweltwirkung, aber nicht automatisch WÖk-Scorecard."
+      ],
+      "relatedDocuments": [
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
+      "examples": [
+        "Eine Apfel-Scorecard enthält Daten zu CO2, Wasserstress, Pestiziden, Biodiversität, Arbeit, Verpackung, Transport und Food Loss.",
+        "Eine T-Shirt-Scorecard enthält Faser, Wasser, Chemikalien, Arbeitsrechte, Mikroplastik, Lebensdauer, Rücknahme und Recyclingfähigkeit.",
+        "Eine Polyamid-Scorecard kann CSRD-/ESRS-Daten, Standortdaten, EPDs und Benchmarks nutzen.",
+        "Eine Smartphone-Scorecard bezieht Reparierbarkeit, Software-Support, Rohstoffherkunft, Datenschutz, Rücknahme und Recycling ein."
+      ],
+      "preferredUsage": "Als Methodenbegriff verwenden, wenn Produktdaten in steuerungsfähige Bewertung für Preise, Steuer, Beschaffung, Marketing oder Produktentwicklung übersetzt werden.",
+      "deprecatedUsage": [],
+      "reviewStatus": "redaktionell zu prüfen",
+      "glossaryOrderKey": "produktscorecard",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-01",
+      "termType": "WÖk-Prägungsbegriff / Methodenbegriff",
+      "glossaryPack": "002",
+      "glossary_pack": "002",
+      "cluster": "Produktwirkung & Bewertungsarchitektur",
+      "packStatus": "professionalisiert",
+      "review_status": "redaktionell zu prüfen",
+      "language": "de",
+      "canonical": true,
+      "no_delete": true,
+      "updated_by": "codex",
+      "quality_level": "deep_glossary_entry",
+      "begriffstyp": "WÖk-Prägungsbegriff / Methodenbegriff",
+      "related_terms": [
+        "produktwirkung",
+        "digitaler-produktpass",
+        "woek-id",
+        "reverse-merit-order",
+        "produktdaten",
+        "wirkungsrueckkopplung",
+        "wirkungswahrheit",
+        "positive-netto-wirkung",
+        "wirkung",
+        "netto-wirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wustg",
+        "wirkungssteuer",
+        "nace",
+        "csrd",
+        "esrs",
+        "gri",
+        "eu-taxonomie",
+        "sdgs",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "fuenftes-p-planet",
+        "responsible-marketing",
+        "greenwashing",
+        "finalscore",
+        "datenqualitaet"
+      ],
+      "sourceLinks": [
+        {
+          "title": "Die neue Ordnung des Wohlstands",
+          "url": "https://wirkungsoekonomie.de/referenz/",
+          "sourceType": "interne Quelle",
+          "status": "Online-Buch"
+        },
+        {
+          "title": "Wirkungsökonomie Glossar",
+          "url": "https://wirkungsoekonomie.de/glossar.html",
+          "sourceType": "interne Quelle",
+          "status": "Begriffsbestand"
+        },
+        {
+          "title": "Technische Leitlinien WUStG",
+          "url": "https://wirkungsoekonomie.de/dokumente/technische-leitlinien-wustg-v2/",
+          "sourceType": "interne Quelle",
+          "status": "Methodenkontext"
+        },
+        {
+          "title": "Wirkungsfeld Produkte & Konsum",
+          "url": "https://wirkungsoekonomie.de/wirkungsfelder/produkte-konsum/",
+          "sourceType": "interne Quelle",
+          "status": "Anwendungskontext"
+        },
+        {
+          "title": "UN Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "UN Agenda 2030",
+          "url": "https://sdgs.un.org/2030agenda",
+          "sourceType": "externe Quelle",
+          "status": "Referenzrahmen"
+        },
+        {
+          "title": "European Commission: Corporate sustainability reporting",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "sourceType": "externe Quelle",
+          "status": "CSRD/ESRS"
+        },
+        {
+          "title": "EFRAG: European Sustainability Reporting Standards",
+          "url": "https://www.efrag.org/",
+          "sourceType": "externe Quelle",
+          "status": "ESRS"
+        },
+        {
+          "title": "GRI Standards",
+          "url": "https://www.globalreporting.org/standards/",
+          "sourceType": "externe Quelle",
+          "status": "Standardkontext"
+        },
+        {
+          "title": "European Commission: Ecodesign for Sustainable Products Regulation",
+          "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+          "sourceType": "externe Quelle",
+          "status": "DPP/ESPR"
+        },
+        {
+          "title": "European Commission: EU Taxonomy",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+          "sourceType": "externe Quelle",
+          "status": "Taxonomie"
+        },
+        {
+          "title": "Eurostat: NACE Rev. 2",
+          "url": "https://ec.europa.eu/eurostat/web/nace",
+          "sourceType": "externe Quelle",
+          "status": "Klassifikation"
+        },
+        {
+          "title": "ISO 14040 / ISO 14044 Life Cycle Assessment",
+          "url": "https://www.iso.org/",
+          "sourceType": "externe Quelle",
+          "status": "LCA"
+        },
+        {
+          "title": "Product Environmental Footprint methods",
+          "url": "https://green-business.ec.europa.eu/environmental-footprint-methods_en",
+          "sourceType": "externe Quelle",
+          "status": "PEF"
+        }
+      ],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Wirtschaft & Unternehmen",
+          "href": "../../wirkungsfelder/wirtschaft-unternehmen/"
+        }
+      ],
+      "relatedTools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        },
+        {
+          "label": "Digitale Produktpässe",
+          "href": "../../werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Kurzdefinition / Hover",
+          "body": "Die Produktscorecard ist das Bewertungsinstrument der Wirkungsökonomie, das Produktdaten in überprüfbare Wirkungsscores für zentrale Wirkungsfelder übersetzt."
+        },
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Macht Produktwirkung messbar und vergleichbar.",
+            "Verbindet Produktdaten mit WÖk-IDs, Benchmarks, NACE-Zuordnung und Datenqualität.",
+            "Bewertet Klima, Ressourcen, Arbeit, Gesundheit, Sicherheit und Kreislauf.",
+            "Der FinalScore berücksichtigt Reverse Merit Order und Nichtkompensation.",
+            "Sie ist Grundlage für Wirkungssteuer, ehrliche Preise, Responsible Marketing und Beschaffung nach Wirkung."
+          ]
+        },
+        {
+          "title": "Hauptdefinition",
+          "body": "Die Produktscorecard ist ein strukturiertes Bewertungsinstrument, mit dem Produktwirkung entlang relevanter Wirkungsfelder erfasst, bewertet und in nachvollziehbare Scores überführt wird. Typische Felder sind Produktidentität, Produktgruppe oder NACE, SDG- und SDG+-Bezüge, WÖk-IDs, Messwerte, Quellen, Benchmarks, Archetypen, Datenqualitätsklassen, Einzel-Scores, FinalScore, Prüfstatus, Gültigkeit und Version."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Produktdaten allein sagen noch nicht, ob ein Produkt im Vergleich zu Branche, Region, Technologie und Systemgrenze gut, neutral oder schädlich wirkt. Die Produktscorecard verbindet Daten mit Bewertungslogik und macht Wirkung für Wirkungssteuer, Preisschild, Beschaffung, Greenwashing-Prüfung, Produktentwicklung, Kapitalrisiken und Transformationspfade nutzbar."
+        },
+        {
+          "title": "Wirkungsökonomische Sicht & Einordnung",
+          "body": "Die Produktscorecard ist kein reines Reporting-Instrument, sondern ein Rückkopplungsinstrument. Besonders wichtig ist Nichtkompensation: Schwere negative Wirkung, etwa Kinderarbeit, toxische Stoffe oder massiver Wasserstress, darf nicht durch gute Werte in anderen Feldern verdeckt werden."
+        },
+        {
+          "title": "Abgrenzung: Nicht verwechseln mit",
+          "items": [
+            "Nachhaltigkeitsbericht",
+            "ESG-Rating",
+            "Label",
+            "Digitaler Produktpass",
+            "CO2-Bilanz",
+            "Life Cycle Assessment"
+          ]
+        },
+        {
+          "title": "Beispiele",
+          "items": [
+            "Apfel-Scorecard mit CO2, Wasserstress, Pestiziden und Transport.",
+            "T-Shirt-Scorecard mit Faser, Chemikalien, Arbeitsrechten und Rücknahme.",
+            "Polyamid-Scorecard mit CSRD-/ESRS-Daten, EPDs und Benchmarks.",
+            "Smartphone-Scorecard mit Reparierbarkeit, Datenschutz und Rohstoffherkunft."
+          ]
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Mindestfelder sind product_id, product_name, product_group, nace_code, sdg_relevance, sdgplus_relevance, wok_ids, lifecycle_stage, indicator_name, metric_value, metric_unit, benchmark, archetype, data_source, data_quality_class, verification_status, auto_score, benchmark_score, field_score, final_score, reverse_merit_order_trigger, red_flag, valid_from, valid_until, version und audit_trail. Die Skala reicht modellhaft von -3 stark negativer Wirkung bis +3 transformativer Wirkung; der FinalScore darf rote Linien nicht durch Durchschnittsbildung überdecken."
+        },
+        {
+          "title": "Querverweise im Glossar",
+          "items": [
+            "Produktwirkung",
+            "Produktdaten",
+            "Digitaler Produktpass",
+            "WÖk-ID",
+            "Reverse Merit Order",
+            "FinalScore",
+            "Wirkungssteuer",
+            "Wirkungsbewertung",
+            "Wirkungsrückkopplung",
+            "Greenwashing",
+            "Wirkungswahrheit",
+            "Ehrliche Preise",
+            "NACE",
+            "CSRD",
+            "ESRS",
+            "GRI",
+            "Datenqualität"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Interne Quellen: Technische Leitlinien WUStG, Produktbesteuerung durch Wirkung, Die neue Ordnung des Wohlstands, BASF-Polyamid-Beispiel, WÖk-Master-Items und Begriffsleitfaden. Externe Quellen: CSRD/ESRS, GRI, EU-Taxonomie, NACE Rev. 2, ISO 14040/14044 und Product Environmental Footprint."
+        },
+        {
+          "title": "Redaktionelle Metadaten",
+          "items": [
+            "Glossar-Pack: 002",
+            "Cluster: Produktwirkung & Bewertungsarchitektur",
+            "Version: 1.1",
+            "Status: professionalisiert",
+            "Review-Status: redaktionell zu prüfen",
+            "Sprache: de",
+            "Primäre Begriffseite: ja",
+            "No-Delete: ja",
+            "Aktualisiert durch: codex",
+            "Qualitätsniveau: deep_glossary_entry"
+          ]
+        }
+      ]
     }
   ]
 }
