@@ -1936,7 +1936,11 @@ function build() {
     hero: "Das Apfelbeispiel zeigt didaktisch, dass regional, bio oder importiert nicht automatisch positiv oder negativ ist. Kontext, Datenqualität und rote Linien entscheiden.",
     contextIntro: (base) => `Das Beispiel nutzt NACE 01.24, WÖk-IDs, Scorecard, FinalScore, ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste Wirkungsfeld entscheidet.")} und modellhafte Wirkungsumsatzsteuer. Es ist keine amtliche Einstufung.`,
     sdgText: "Das Apfelbeispiel berührt Ernährung, Wasser, Biodiversität, Arbeit, Gesundheit, Transport, Verpackung und Konsumtransparenz.",
-    downloads: [{ label: "Alte Webfassung öffnen", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" }, { label: "Scorecard-Demo öffnen", href: "scorecard-dashboard.html" }],
+    downloads: [
+      { label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossiers/apfelbeispiel/" },
+      { label: "Konzept-Onlinefassung öffnen", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" },
+      { label: "Scorecard-Demo öffnen", href: "scorecard-dashboard.html" },
+    ],
   });
   fulltextPage({
     rel: "wirkungsfelder/produkte-konsum/lieferketten/index.html",

@@ -1,6 +1,6 @@
 # Logic-Consistency-Report
 
-Stand: 2026-05-31
+Stand: 2026-06-01
 
 Prüft zentrale Logikfelder: Wirkung, Wirkungspotenzial, T-SROI/NWI, WStG/WUStG/WEstG und Wirkungseinkommen.
 

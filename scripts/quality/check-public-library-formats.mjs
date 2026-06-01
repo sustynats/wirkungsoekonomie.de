@@ -2,13 +2,28 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const BLOCKED_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
+const BLOCKED_EXTENSIONS = new Set([".doc", ".docx", ".md", ".zip"]);
 const REGISTRY_PATH = path.join(ROOT, "assets/data/library-version-registry.json");
 const DOCUMENT_LIBRARY_PATH = path.join(ROOT, "assets/data/document-library.json");
-const HTML_PATHS = [
-  path.join(ROOT, "bibliothek/index.html"),
-  path.join(ROOT, "downloads.html")
+const SKIP_PARTS = [
+  `${path.sep}.git${path.sep}`,
+  `${path.sep}node_modules${path.sep}`,
+  `${path.sep}outputs${path.sep}`,
+  `${path.sep}.codex-backup${path.sep}`,
+  `${path.sep}woek-akademie-app${path.sep}node_modules${path.sep}`,
+  `${path.sep}woek-akademie-app${path.sep}.next${path.sep}`,
 ];
+
+function walkHtml(dir, out = []) {
+  if (!fs.existsSync(dir)) return out;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (SKIP_PARTS.some((part) => full.includes(part))) continue;
+    if (entry.isDirectory()) walkHtml(full, out);
+    else if (entry.isFile() && entry.name.endsWith(".html")) out.push(full);
+  }
+  return out;
+}
 
 function readJson(file) {
   return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : {};
@@ -49,9 +64,9 @@ function collectRegistryFindings() {
 
 function collectHtmlFindings() {
   const findings = [];
-  const hrefPattern = /href=["']([^"']+\.(?:docx|md|zip)(?:[?#][^"']*)?)["']/gi;
+  const hrefPattern = /href=["']([^"']+\.(?:docx?|md|zip)(?:[?#][^"']*)?)["']/gi;
   const visibleFormatPattern = /(?:Umfang<\/dt><dd>[^<]*(?:DOCX|MD|ZIP)|\b(?:DOCX|MD|ZIP)\b)/g;
-  for (const file of HTML_PATHS) {
+  for (const file of walkHtml(ROOT)) {
     if (!fs.existsSync(file)) continue;
     const html = fs.readFileSync(file, "utf8");
     for (const match of html.matchAll(hrefPattern)) {
