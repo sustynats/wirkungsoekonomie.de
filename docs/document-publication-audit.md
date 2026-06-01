@@ -4,11 +4,11 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 33
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 15
+- Kuratierte Metadatenkarten: 34
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 16
 - Archivdokumente nur im Archiv: 2
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 16
-- Red-Flag-Treffer: 34
+- Red-Flag-Treffer: 36
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -45,6 +45,8 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Systemmodell der Wirkungsökonomie | public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Systemmodell der Wirkungsökonomie | public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WStG Oktober 2025 | public/downloads/originals/WStG_Oktober2025.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die neue Ordnung des Wohlstands 2 | content/internal-documents/originals/Die neue Ordnung des Wohlstands_2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die neue Ordnung des Wohlstands 2 | content/internal-documents/originals/Die neue Ordnung des Wohlstands_2.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Whitepaper20 | content/internal-documents/originals/Whitepaper20.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
