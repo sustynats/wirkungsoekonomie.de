@@ -5001,6 +5001,179 @@ textarea {
   text-transform: uppercase;
 }
 
+.so-woek-page .hero {
+  align-items: stretch;
+}
+
+.so-woek-hero {
+  gap: clamp(1.4rem, 4vw, 3rem);
+}
+
+.hero-fact-panel {
+  display: grid;
+  align-content: center;
+  gap: 0.85rem;
+  min-width: min(100%, 18rem);
+  max-width: 24rem;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.hero-fact-panel p {
+  margin: 0;
+}
+
+.impact-process,
+.example-cards,
+.definition-card-grid,
+.myth-reality-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.impact-process {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+}
+
+.impact-process__step,
+.example-card,
+.definition-card,
+.myth-reality-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.impact-process__step,
+.example-card,
+.definition-card {
+  padding: clamp(1rem, 3vw, 1.45rem);
+}
+
+.impact-process__step {
+  display: grid;
+  align-content: start;
+  gap: 0.6rem;
+}
+
+.impact-process__index {
+  display: inline-flex;
+  width: 2.1rem;
+  height: 2.1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.12);
+  color: var(--green);
+  font-weight: 900;
+}
+
+.impact-process__step h3,
+.example-card h3,
+.definition-card h3,
+.myth-reality-card p {
+  margin: 0;
+}
+
+.impact-process__step p,
+.example-card p,
+.definition-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.example-cards,
+.definition-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+}
+
+.example-card {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+}
+
+.myth-reality-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+.myth-reality-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.myth-reality-card > div {
+  display: grid;
+  gap: 0.55rem;
+  padding: clamp(1rem, 3vw, 1.35rem);
+}
+
+.myth-reality-card > div:first-child {
+  background: rgba(11, 16, 32, 0.04);
+}
+
+.feedback-loop {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.feedback-loop li {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.32fr) 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: clamp(0.95rem, 3vw, 1.25rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.feedback-loop span {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.feedback-loop p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.principle-callout {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+  border: 1px solid rgba(47, 125, 92, 0.24);
+  border-radius: 8px;
+  background: rgba(47, 125, 92, 0.08);
+}
+
+.principle-callout h3,
+.principle-callout p {
+  margin: 0;
+}
+
+.principle-callout p {
+  color: var(--muted);
+}
+
+.so-woek-table-wrap {
+  width: min(100%, var(--container));
+}
+
+@media (max-width: 720px) {
+  .feedback-loop li {
+    grid-template-columns: 1fr;
+  }
+}
+
 .impact-path {
   width: min(1120px, calc(100% - 32px));
   margin: 1.4rem auto 0;
