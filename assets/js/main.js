@@ -458,7 +458,7 @@ document.querySelectorAll("[data-analytics-event='academy_app_cta']").forEach((l
   });
 });
 
-const blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
+let blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
 const blogTypeLinks = Array.from(document.querySelectorAll("[data-blog-type-filter]"));
@@ -466,7 +466,7 @@ const blogFilterStatus = document.querySelector(".blog-filter-status");
 const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
 const blogSearchInput = document.querySelector("[data-blog-search]");
 const blogResetButton = document.querySelector("[data-blog-reset]");
-const blogInitialLimit = 12;
+const blogInitialLimit = Number.POSITIVE_INFINITY;
 const blogLoadStep = 12;
 const blogFilterState = {
   category: "all",
@@ -523,6 +523,8 @@ function getBlogFilterSummary(matchedCount, visibleCount) {
 }
 
 function applyBlogFilter({ scroll = false, hash = "" } = {}) {
+  blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
+
   if (!blogCards.length) {
     return;
   }
@@ -625,6 +627,31 @@ blogTypeLinks.forEach((link) => {
   });
 });
 
+document.addEventListener("click", (event) => {
+  if (event.defaultPrevented) {
+    return;
+  }
+
+  const link = event.target instanceof Element ? event.target.closest("[data-blog-filter], [data-blog-tag]") : null;
+  if (!link || !link.closest("[data-journal-list]")) {
+    return;
+  }
+
+  event.preventDefault();
+
+  if (link.dataset.blogFilter) {
+    blogFilterState.category = link.dataset.blogFilter || "all";
+    blogFilterState.limit = blogInitialLimit;
+    applyBlogFilter({ scroll: true, hash: blogFilterState.category === "all" ? "#beitraege" : `#thema-${blogFilterState.category}` });
+    return;
+  }
+
+  const value = link.dataset.blogTag;
+  blogFilterState.tag = blogFilterState.tag === value ? "all" : value || "all";
+  blogFilterState.limit = blogInitialLimit;
+  applyBlogFilter({ scroll: true, hash: blogFilterState.tag === "all" ? "#beitraege" : `#tag-${value}` });
+});
+
 if (blogLoadMoreButton) {
   blogLoadMoreButton.addEventListener("click", () => {
     blogFilterState.limit += blogLoadStep;
@@ -663,6 +690,10 @@ if (blogCards.length) {
 
   applyBlogFilter();
 }
+
+document.addEventListener("journal:rendered", () => {
+  applyBlogFilter();
+});
 
 const downloadCards = Array.from(document.querySelectorAll("[data-download-card]"));
 const downloadFilterButtons = Array.from(document.querySelectorAll("[data-download-filter]"));
@@ -1277,7 +1308,7 @@ function loadBlogJournal() {
   window.__wirkungBlogJournalScriptLoaded = true;
   const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
   const script = document.createElement("script");
-  script.src = new URL("blog-journal.js?v=20260522-journal-hotfix", baseUrl).href;
+  script.src = new URL("blog-journal.js?v=20260602-journal-index", baseUrl).href;
   script.defer = true;
   document.body.append(script);
 }

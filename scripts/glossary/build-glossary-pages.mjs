@@ -661,7 +661,7 @@ function labelForContentType(type, url = "") {
   const raw = String(type || "").toLocaleLowerCase("de");
   const pathName = String(url || "").toLocaleLowerCase("de");
   if (raw.includes("glossar") || pathName.startsWith("/begriffe/")) return "Glossarbegriff";
-  if (raw.includes("blog")) return "Blogartikel";
+  if (raw.includes("blog")) return "Journalartikel";
   if (raw.includes("journal")) return "Journalartikel";
   if (raw.includes("whitepaper")) return "Whitepaper";
   if (raw.includes("working")) return "Working Paper";

@@ -10,7 +10,7 @@ Diese Datei bereitet ein sicheres Konsolidierungsverfahren vor. Sie ist keine L�
 - Dubletten werden nicht gelöscht, sondern entweder als Archiv behalten oder nach Prüfung per 301 auf den besseren Hauptbeitrag weitergeleitet.
 - Sehr kurze Beiträge mit eigenständigem Gedanken bleiben im Archiv.
 - Politisch oder zeitbezogen veraltete Beiträge bleiben als Zeitdiagnose erhalten.
-- Platzhalter in Vorbereitung werden nicht als normale Blogartikel behandelt.
+- Platzhalter in Vorbereitung werden nicht als normale Journalartikel behandelt.
 - Für Platzhalter ohne veröffentlichte URL wird kein Redirect eingerichtet; sie bleiben unveröffentlicht beziehungsweise noindex, falls später eine Platzhalterseite entsteht.
 
 ## Status-Legende
@@ -138,7 +138,7 @@ Begründung: Zeitgebundener oder kontextueller LinkedIn-Import; historisch wertv
 
 ## Platzhalter / Kommende Analysen
 
-Diese Einträge haben aktuell keine veröffentlichte Artikelseite. Sie sollen nicht als normale Blogartikel erscheinen. Falls später echte Platzhalterseiten angelegt werden, noindex setzen oder direkt den ausgearbeiteten Zielbeitrag veröffentlichen.
+Diese Einträge haben aktuell keine veröffentlichte Artikelseite. Sie sollen nicht als normale Journalartikel erscheinen. Falls später echte Platzhalterseiten angelegt werden, noindex setzen oder direkt den ausgearbeiteten Zielbeitrag veröffentlichen.
 
 [kein veröffentlichter Artikel] Was Preise heute verschweigen -> https://wirkungsoekonomie.de/blog/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.html
 Status: noindex

@@ -27,7 +27,7 @@
 ### Wirkungspotenzial (wirkungspotenzial)
 
 - 784 · defined · Kapitel 11 - Wirkungspotenzial - Wirkungsökonomie Online · /referenz/kapitel-011-wirkungspotenzial/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 7, 98 occurrences, book-chapter +80
-- 649 · defined · Wirkungspotenzial: Warum Fakten allein nicht wirken - Blog der Wirkungsökonomie · /blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 3, 10 occurrences, blog +25
+- 649 · defined · Wirkungspotenzial: Warum Fakten allein nicht wirken - Journal der Wirkungsökonomie · /blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 3, 10 occurrences, blog +25
 - 494 · defined · Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online · /referenz/volltext/ · h2 match, h3 match, definition pattern, related proximity 8, 410 occurrences, book +70
 - 434 · defined · Kapitel 12 - Handlung, Unterlassen und Rückkopplung - Wirkungsökonomie Online · /referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/ · h3 match, definition pattern, related proximity 6, 14 occurrences, book-chapter +80
 - 434 · defined · Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume - Wirkungsökonomie Online · /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/ · h3 match, definition pattern, related proximity 6, 10 occurrences, book-chapter +80
@@ -53,7 +53,7 @@
 - 724 · defined · Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie · /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 6, 50 occurrences, page +20
 - 679 · defined · Soziale Resilienz gegen Verhetzung - Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit · /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 22 occurrences, blog +25
 - 619 · defined · Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule · /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 6, 54 occurrences, field +35
-- 619 · defined · Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht - Blog der Wirkungsökonomie · /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 26 occurrences, blog +25
+- 619 · defined · Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht - Journal der Wirkungsökonomie · /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 26 occurrences, blog +25
 - 619 · defined · Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 8, 36 occurrences, field +35
 - 589 · defined · Gesamtdossier Staat, Recht & Demokratie · /werkstatt/dossiers/staat-recht-demokratie/ · title match, h1 match, h2 match, lead match, related proximity 8, 30 occurrences, whitepaper +55
 

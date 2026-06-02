@@ -2,7 +2,7 @@
 
 Der Blog ist ein statischer Bereich der Website. Neue Beiträge werden als eigene HTML-Dateien im Ordner `blog/` angelegt und anschließend auf `blog.html` als Blogkarte ergänzt.
 
-## Neuen Blogartikel anlegen
+## Neuen Journalartikel anlegen
 
 1. Natalie liefert die Angaben aus dem Template unten.
 2. Codex erstellt eine neue Artikelseite unter `blog/<slug>.html`.
@@ -67,7 +67,7 @@ Wichtig: Veröffentlichte Blogseiten werden nicht gelöscht. Wenn ein Beitrag re
 
 ## Blog-Löschregel
 
-Veröffentlichte Blogartikel werden nicht gelöscht.
+Veröffentlichte Journalartikel werden nicht gelöscht.
 
 Stattdessen gilt:
 
@@ -116,7 +116,7 @@ Dieser Schritt ruft den Suchindex-Build automatisch mit auf. Wer nur die Suche n
 python3 tools/build_search_index.py
 ```
 
-Ausgenommen bleiben Weiterleitungsseiten mit `noindex` und sehr kurze technische Seiten. Neue Blogartikel, Dossiers, Methodikseiten, SDG+-Seiten und normale statische Inhaltsseiten sind danach ohne manuelle Pflege im Suchindex auffindbar.
+Ausgenommen bleiben Weiterleitungsseiten mit `noindex` und sehr kurze technische Seiten. Neue Journalartikel, Dossiers, Methodikseiten, SDG+-Seiten und normale statische Inhaltsseiten sind danach ohne manuelle Pflege im Suchindex auffindbar.
 
 ## SEO-Daten pflegen
 
@@ -130,7 +130,7 @@ Jede Artikelseite braucht:
 
 ## Template
 
-Neuer Blogartikel:
+Neuer Journalartikel:
 
 - Titel:
 - Slug:

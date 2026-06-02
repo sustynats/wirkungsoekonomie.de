@@ -153,7 +153,7 @@ def infer_section(rel):
 def infer_format(rel, section):
     rel_posix = rel.as_posix()
     if rel_posix.startswith("blog/") and rel.name != "index.html":
-        return "Blogartikel"
+        return "Journalartikel"
     if section == "Glossar":
         return "Glossarbegriff" if "#" in rel_posix else "Seite"
     if section == "Downloads":

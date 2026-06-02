@@ -262,7 +262,7 @@ def write_proposed_deletions() -> None:
         "",
         "Für diesen Sprint werden keine Löschungen vorgeschlagen.",
         "",
-        "Die Ergänzungsanweisung verlangt Bestandsschutz: Dateien, Audio, Grafiken, Downloads, Tools, Blogartikel, persönliche Inhalte über Natalie Weber und bestehende Bausteine werden nicht ungeprüft entfernt.",
+        "Die Ergänzungsanweisung verlangt Bestandsschutz: Dateien, Audio, Grafiken, Downloads, Tools, Journalartikel, persönliche Inhalte über Natalie Weber und bestehende Bausteine werden nicht ungeprüft entfernt.",
         "",
         "## Beobachtungen",
         "",

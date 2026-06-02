@@ -52,6 +52,16 @@ function stripTags(value) {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function normalizeType(value) {
+  if (!value || value === "Journalartikel" || value === "Journal") return "Journalartikel";
+  return value;
+}
+
+function normalizeAssetUrl(value) {
+  if (!value) return "";
+  return value.replace(/^https?:\/\/wirkungsoekonomie\.de\//, "/");
+}
+
 function cleanTitle(value) {
   return String(value || "")
     .replace(/\s+-\s+Journal der Wirkungsökonomie$/, "")
@@ -94,6 +104,17 @@ function entryFromHtml(file, existing) {
     heroKicker.split("·")[0]?.trim() ||
     "Journal";
   const tags = previous.tags?.length ? previous.tags : allMatches(html, /<meta\s+property=["']article:tag["']\s+content=["']([^"']+)["']/gi);
+  const image =
+    previous.image ||
+    normalizeAssetUrl(
+      firstMatch(html, [
+        /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i,
+        /<img[^>]+src=["']([^"']+)["'][^>]*>/i
+      ])
+    );
+  const imageAlt =
+    previous.imageAlt ||
+    firstMatch(html, [/<img[^>]+alt=["']([^"']+)["'][^>]*>/i]);
 
   return {
     title,
@@ -103,7 +124,9 @@ function entryFromHtml(file, existing) {
     readingTime,
     excerpt,
     tags,
-    type: previous.type || "Blogartikel",
+    type: normalizeType(previous.type),
+    image,
+    imageAlt,
     featured: Boolean(previous.featured),
     status: previous.status || "published",
     relatedPages: previous.relatedPages || [],
