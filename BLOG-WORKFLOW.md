@@ -1,16 +1,18 @@
-# Blog-Workflow
+# Journal-Workflow
 
-Der Blog ist ein statischer Bereich der Website. Neue Beiträge werden als eigene HTML-Dateien im Ordner `blog/` angelegt und anschließend auf `blog.html` als Blogkarte ergänzt.
+Das Journal ist ein statischer Inhaltsbereich mit automatischer Übersichtsseite. Neue Beiträge werden als eigene HTML-Dateien im Ordner `blog/` angelegt. Die Übersichtsseite `blog.html` wird nicht mehr manuell mit Karten nachgepflegt, sondern rendert alle veröffentlichten Beiträge automatisch aus `assets/data/blog-index.json`.
 
 ## Neuen Journalartikel anlegen
 
 1. Natalie liefert die Angaben aus dem Template unten.
 2. Codex erstellt eine neue Artikelseite unter `blog/<slug>.html`.
-3. Codex ergänzt den Beitrag auf `blog.html` mit Kategorie, Herkunft (`data-origin`), Titel, Kurzthese, Datum, Lesedauer und Link.
+3. Codex pflegt in der Artikelseite Veröffentlichungsdatum, Kategorie, Titel, Kurzthese, Lesedauer, Tags und optional Bild-Metadaten.
 4. Falls ein Beitragsbild genutzt wird, legt Codex es unter `assets/img/blog/` ab.
 5. Codex pflegt Meta Title und Meta Description in der Artikelseite.
-6. Codex führt `python3 tools/sync_layout.py` aus. Dabei werden Header/Footer synchronisiert und der Suchindex automatisch neu aus allen veröffentlichen HTML-Seiten aufgebaut.
-7. Codex prüft lokal, ob die Blogübersicht, der neue Beitrag, Navigation, Footer, Suche und mobile Ansicht funktionieren.
+6. Codex führt `node scripts/blog/build-blog-index.mjs` aus. Der neue Beitrag wird dadurch automatisch in `assets/data/blog-index.json` aufgenommen.
+7. Codex führt `npm run check:journal` aus. Der Check stellt sicher, dass alle veröffentlichten Journalartikel im Index stehen und neueste Beiträge vorne erscheinen.
+8. Codex führt `python3 tools/sync_layout.py` oder `npm run build:search` aus, damit Header/Footer und Suche aktualisiert werden.
+9. Codex prüft lokal, ob die Journalübersicht, der neue Beitrag, Navigation, Footer, Suche und mobile Ansicht funktionieren.
 
 ## Was Natalie liefern muss
 
@@ -27,7 +29,7 @@ Der Blog ist ein statischer Bereich der Website. Neue Beiträge werden als eigen
 ## Welche Dateien Codex aktualisiert
 
 - `blog/<slug>.html`
-- `blog.html`
+- `assets/data/blog-index.json` wird automatisch neu erzeugt
 - `assets/search/search-index.json` wird automatisch neu erzeugt
 - optional `assets/img/blog/<dateiname>`
 - optional weitere interne Seiten, wenn ein Beitrag dort verlinkt werden soll
@@ -47,23 +49,20 @@ YYYY-MM-DD-slug.jpg
 YYYY-MM-DD-slug.png
 ```
 
-Der Blog soll ruhig und hochwertig bleiben. Keine Stockfotos mit Businessmenschen, keine Blätterklischees, keine Hände mit Erde. Geeignet sind reduzierte Systemgrafiken, Kartenlogiken, abstrakte Architektur, ruhige Diagramme oder präzise editorial Bildmotive.
+Das Journal soll ruhig und hochwertig bleiben. Keine Stockfotos mit Businessmenschen, keine Blätterklischees, keine Hände mit Erde. Geeignet sind reduzierte Systemgrafiken, Kartenlogiken, abstrakte Architektur, ruhige Diagramme oder präzise editorial Bildmotive.
 
-## blog.html aktualisieren
+## Automatische Journalübersicht
 
-Für jeden neuen Beitrag wird eine neue Blogkarte ergänzt mit:
+`blog.html` besitzt den Container `data-journal-list`. `assets/js/blog-journal.js` lädt `assets/data/blog-index.json`, sortiert veröffentlichte Beiträge nach Datum absteigend und rendert daraus die Karten. Neue Beiträge stehen dadurch automatisch oben, sobald der Index neu gebaut und live gestellt wurde.
 
-- Kategorie
-- Titel
-- Kurzthese
-- Datum
-- Lesedauer
-- Link zur Artikelseite
-- optional Beitragsbild
+Wichtig:
 
-Neue Beiträge stehen oben. Ältere Beiträge wandern nach unten oder später in ein Archiv.
+- Keine neuen Journal-Karten manuell in `blog.html` einfügen.
+- Keine manuelle Sortierung der Übersichtsseite.
+- Für jeden neuen Artikel `node scripts/blog/build-blog-index.mjs` und `npm run check:journal` ausführen.
+- Der Check muss grün sein, bevor live gestellt wird.
 
-Wichtig: Veröffentlichte Blogseiten werden nicht gelöscht. Wenn ein Beitrag redaktionell konsolidiert wird, bleibt die URL erhalten oder erhält ein dokumentiertes Redirect-Mapping.
+Veröffentlichte Journalseiten werden nicht gelöscht. Wenn ein Beitrag redaktionell konsolidiert wird, bleibt die URL erhalten oder erhält ein dokumentiertes Redirect-Mapping.
 
 ## Blog-Löschregel
 
