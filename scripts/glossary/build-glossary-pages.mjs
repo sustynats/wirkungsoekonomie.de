@@ -11,11 +11,18 @@ const glossaryReferenceIndexPath = "public/data/glossary-reference-index.json";
 const glossaryReferenceIndex = fs.existsSync(glossaryReferenceIndexPath)
   ? JSON.parse(fs.readFileSync(glossaryReferenceIndexPath, "utf8"))
   : { terms: {} };
+const searchIndexPath = "assets/search/search-index.json";
+const searchIndex = fs.existsSync(searchIndexPath)
+  ? JSON.parse(fs.readFileSync(searchIndexPath, "utf8"))
+  : [];
 const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const outDir = "begriffe";
 fs.mkdirSync(outDir, { recursive: true });
+fs.mkdirSync("reports", { recursive: true });
 const collator = new Intl.Collator("de", { sensitivity: "base" });
+const contentReferenceWarnings = [];
+const contentReferenceRecords = [];
 const categoryOrder = [
   "Grundbegriff",
   "Bewertungsbegriff",
@@ -65,6 +72,10 @@ function unique(values) {
   return Array.from(new Set((values || []).filter(Boolean)));
 }
 
+function warnContentReference(type, target, detail = "") {
+  contentReferenceWarnings.push({ type, target: String(target || ""), detail });
+}
+
 function decodeHtmlEntities(value) {
   return String(value || "")
     .replace(/&nbsp;/g, " ")
@@ -94,6 +105,72 @@ function normalizedHubConcept(value) {
     .replace(/\s*\((kurzverweis|leseschluessel|leseschlüssel|bestand|alias)\)\s*$/i, "")
     .replace(/cards$/i, "card")
     .trim();
+}
+
+function normalizeReferenceUrl(value) {
+  const raw = String(value || "").trim();
+  if (!raw || /^\[object Object\]$/i.test(raw)) return "";
+  if (/^https?:\/\//i.test(raw)) {
+    try {
+      const url = new URL(raw);
+      return url.hostname.includes("wirkungsoekonomie.de") ? normalizeReferenceUrl(`${url.pathname}${url.hash || ""}`) : raw;
+    } catch {
+      return raw;
+    }
+  }
+  const local = raw.replace(/^(\.\.\/)+/, "/").replace(/^\.\//, "/");
+  const withSlash = local.startsWith("/") ? local : `/${local}`;
+  return withSlash
+    .replace(/\/index\.html(?=#|$)/, "/")
+    .replace(/\.html(?=#|$)/, ".html")
+    .replace(/\/{2,}/g, "/");
+}
+
+function slugFromReference(value) {
+  const raw = String(value || "").trim();
+  if (!raw || /^\[object Object\]$/i.test(raw)) return "";
+  const withoutHash = raw.split("#")[0].replace(/\/$/, "");
+  const file = withoutHash.split("/").filter(Boolean).pop() || raw;
+  return filterToken(file.replace(/\.html$/i, ""));
+}
+
+function isSlugLike(value) {
+  return /^[a-z0-9]+(-[a-z0-9]+){2,}$/.test(String(value || "").trim());
+}
+
+function humanizeSlug(value) {
+  const cleaned = slugFromReference(value);
+  if (!cleaned) return "";
+  warnContentReference("missing-title-slug-fallback", value, "Titel aus Slug erzeugt");
+  return cleaned
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.length <= 3 ? part.toUpperCase() : `${part.charAt(0).toLocaleUpperCase("de")}${part.slice(1)}`)
+    .join(" ");
+}
+
+function cleanReferenceTitle(value) {
+  const title = textFromHtml(value);
+  const chapter = title.match(/^Kapitel\s+(\d+)\s*[-–]\s*(.*?)\s*[-–]\s*Wirkungsökonomie\s+Online$/i);
+  if (chapter) return `Kapitel ${Number(chapter[1])}: ${chapter[2].trim()}`;
+  return title.replace(/\s+-\s+/g, " – ");
+}
+
+function trimDescription(value, limit = 240) {
+  const text = textFromHtml(value)
+    .replace(/\s+/g, " ")
+    .replace(/^\s*(in diesem artikel|auf dieser seite)\s*[:.-]\s*/i, "")
+    .trim();
+  if (!text) return "";
+  if (text.length <= limit) return text;
+  const shortened = text.slice(0, limit - 1);
+  return `${shortened.slice(0, Math.max(shortened.lastIndexOf(" "), 120)).trim()}…`;
+}
+
+function readingTimeFromBody(value) {
+  const words = textFromHtml(value).split(/\s+/).filter(Boolean).length;
+  if (!words || words < 180) return "";
+  return `ca. ${Math.max(1, Math.ceil(words / 220))} Min. Lesezeit`;
 }
 
 function firstMatch(html, pattern) {
@@ -254,6 +331,60 @@ for (const items of groups.values()) {
 const nav = Array.from(groups.keys()).sort(collator.compare);
 const categories = categoryOrder.filter((category) => indexedTerms.some((term) => term.category === category));
 const termsBySlug = new Map(indexedTerms.map((term) => [term.slug, term]));
+const contentByUrl = new Map();
+const contentBySlug = new Map();
+const contentByTitle = new Map();
+
+for (const entry of searchIndex) {
+  const canonicalUrl = normalizeReferenceUrl(entry.url);
+  if (!canonicalUrl) continue;
+  if (!contentByUrl.has(canonicalUrl)) contentByUrl.set(canonicalUrl, entry);
+  const withoutHash = canonicalUrl.split("#")[0];
+  if (!contentByUrl.has(withoutHash)) contentByUrl.set(withoutHash, entry);
+  const slug = slugFromReference(canonicalUrl);
+  if (slug && !contentBySlug.has(slug)) contentBySlug.set(slug, entry);
+  const titleKey = normalizedHubConcept(entry.title);
+  if (titleKey && !contentByTitle.has(titleKey)) contentByTitle.set(titleKey, entry);
+}
+
+for (const term of indexedTerms) {
+  const url = `/begriffe/${term.slug}/`;
+  const entry = {
+    title: term.canonicalLabel || term.label || term.slug,
+    description: term.shortDefinition || term.hoverDefinition || term.longDefinition,
+    url,
+    type: "Glossarbegriff",
+    format: "Glossarbegriff",
+    section: "Glossar",
+    body: [term.longDefinition, term.woekDefinition, term.classification].filter(Boolean).join(" "),
+  };
+  contentByUrl.set(url, entry);
+  contentBySlug.set(term.slug, entry);
+  contentByTitle.set(normalizedHubConcept(entry.title), entry);
+}
+
+for (const document of documentRegistry) {
+  const urls = [document.onlineUrl, document.pdfUrl, document.docxUrl].filter(Boolean).map(normalizeReferenceUrl);
+  const primaryUrl = urls[0] || "";
+  const entry = {
+    title: document.title,
+    description: document.summary,
+    url: primaryUrl,
+    type: document.type || "Dokument",
+    format: document.pdfUrl ? "PDF / Dokument" : "Dokument",
+    section: document.category || "Bibliothek",
+    body: document.summary || "",
+    stand: document.stand,
+    fileSize: document.fileSize,
+  };
+  if (document.id) contentBySlug.set(filterToken(document.id), entry);
+  for (const url of urls) {
+    if (url && !contentByUrl.has(url)) contentByUrl.set(url, entry);
+  }
+  const titleKey = normalizedHubConcept(document.title);
+  if (titleKey && !contentByTitle.has(titleKey)) contentByTitle.set(titleKey, entry);
+}
+
 const termTargetLinks = new Map([
   ["agenda-2030", "../../verstehen/sdgs-sdgplus/geschichte/"],
   ["sdg-sdgplus-referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
@@ -526,6 +657,165 @@ function relativeFromGlossary(url) {
   return `../..${String(url).startsWith("/") ? url : `/${url}`}`;
 }
 
+function labelForContentType(type, url = "") {
+  const raw = String(type || "").toLocaleLowerCase("de");
+  const pathName = String(url || "").toLocaleLowerCase("de");
+  if (raw.includes("glossar") || pathName.startsWith("/begriffe/")) return "Glossarbegriff";
+  if (raw.includes("blog")) return "Blogartikel";
+  if (raw.includes("journal")) return "Journalartikel";
+  if (raw.includes("whitepaper")) return "Whitepaper";
+  if (raw.includes("working")) return "Working Paper";
+  if (raw.includes("manifest")) return "Manifest";
+  if (raw.includes("leitbild")) return "Leitbild";
+  if (raw.includes("gesetz")) return "Gesetzesentwurf";
+  if (raw.includes("methode")) return "Methode";
+  if (raw.includes("referenz") || raw.includes("book") || pathName.startsWith("/referenz/kapitel-")) return "Online-Buch-Kapitel";
+  if (raw.includes("pdf") || pathName.endsWith(".pdf")) return "PDF";
+  if (raw.includes("dokument") || pathName.startsWith("/dokumente/") || pathName.startsWith("/bibliothek/")) return "Dokument";
+  if (pathName.startsWith("/werkzeuge/")) return "Methode";
+  if (pathName.startsWith("/akademie")) return "Akademie";
+  if (pathName.startsWith("/wirkungsfelder/")) return "Wirkungsfeld";
+  if (raw === "page") return "Website";
+  return type || "Website";
+}
+
+function chapterMetaFromUrl(url) {
+  const match = String(url || "").match(/\/referenz\/kapitel-(\d+)-([^/#]+)\//i);
+  if (!match) return {};
+  return {
+    chapterNumber: String(Number(match[1])),
+    extentLabel: `Kapitel ${Number(match[1])}`,
+  };
+}
+
+function scopeLabelFor(entry, url) {
+  const section = textFromHtml(entry.section || entry.sourceSection || "");
+  const chapter = chapterMetaFromUrl(url);
+  if (chapter.chapterNumber) return "Grundlagenkapitel";
+  if (section && !/^(blog|referenz|glossar)$/i.test(section)) return section;
+  if (entry.stand) return `Stand ${entry.stand}`;
+  return "";
+}
+
+function extentLabelFor(entry, url) {
+  const chapter = chapterMetaFromUrl(url);
+  if (chapter.extentLabel) return chapter.extentLabel;
+  if (entry.fileSize && String(url).match(/\.(pdf|docx)$/i)) return `Datei · ${entry.fileSize}`;
+  if (String(url).endsWith(".pdf")) return "PDF";
+  return readingTimeFromBody(entry.body);
+}
+
+function resolveContentReference(input, options = {}) {
+  const raw = typeof input === "object" && input
+    ? input.url || input.href || input.pageUrl || input.onlineUrl || input.id || input.slug || input.title || input.label || ""
+    : input;
+  const rawText = String(raw || "").trim();
+  if (!rawText || /^\[object Object\]$/i.test(rawText)) {
+    warnContentReference("unresolved-reference", rawText || "[empty]", "Leerer oder technischer Verweis");
+    return null;
+  }
+  const canonicalUrl = normalizeReferenceUrl(rawText);
+  const slug = slugFromReference(rawText);
+  const titleKey = normalizedHubConcept(rawText);
+  const entry = contentByUrl.get(canonicalUrl)
+    || contentByUrl.get(canonicalUrl.split("#")[0])
+    || contentBySlug.get(slug)
+    || contentByTitle.get(titleKey);
+  if (!entry && relatedContentTargets.has(slug)) {
+    const [title, href] = relatedContentTargets.get(slug);
+    return resolveContentReference(href, { ...options, fallbackTitle: title });
+  }
+  if (!entry) {
+    if (options.allowTextFallback) {
+      return {
+        url: "",
+        canonicalUrl: rawText,
+        title: cleanReferenceTitle(options.fallbackTitle || rawText),
+        description: options.description || "Redaktionelle Glossarquelle oder interne Arbeitsgrundlage dieses Begriffs.",
+        contentTypeLabel: options.contentTypeLabel || "Quelle",
+        scopeLabel: options.scopeLabel || "",
+        extentLabel: options.extentLabel || "",
+        relevanceReason: options.relevanceReason || "",
+        isFallback: true,
+      };
+    }
+    const fallbackTitle = options.fallbackTitle || humanizeSlug(rawText);
+    warnContentReference("unresolved-reference", rawText, fallbackTitle ? "Fallback-Karte aus Eingabe erzeugt" : "Kein Titel gefunden");
+    if (!fallbackTitle) return null;
+    const description = "Interner Inhaltsverweis ohne gepflegte Metadaten. Bitte Titel, Art und Kurzbeschreibung im Content-Register ergänzen.";
+    return {
+      url: canonicalUrl || rawText,
+      canonicalUrl: canonicalUrl || rawText,
+      title: fallbackTitle,
+      description,
+      contentTypeLabel: "Website",
+      scopeLabel: "",
+      extentLabel: "",
+      relevanceReason: options.relevanceReason || "",
+      isFallback: true,
+    };
+  }
+
+  const url = normalizeReferenceUrl(entry.url || canonicalUrl || rawText);
+  const title = cleanReferenceTitle(options.title || entry.title || entry.headline || entry.documentTitle || entry.sourceTitle || options.fallbackTitle) || humanizeSlug(rawText);
+  if (isSlugLike(title)) warnContentReference("visible-slug-title", rawText, title);
+  const description = trimDescription(entry.description || entry.summary || entry.excerpt || options.description || entry.body, 240);
+  if (!description) warnContentReference("missing-description", url || rawText, title);
+  const contentTypeLabel = options.contentTypeLabel || labelForContentType(entry.contentType || entry.type || entry.format, url);
+  const scopeLabel = options.scopeLabel || scopeLabelFor(entry, url);
+  const extentLabel = options.extentLabel || extentLabelFor(entry, url);
+  const reference = {
+    url: options.href ? relativeFromGlossary(normalizeReferenceUrl(options.href)) : relativeFromGlossary(url || rawText),
+    canonicalUrl: url || canonicalUrl || rawText,
+    title,
+    description: description || "Kurzbeschreibung fehlt noch im Content-Register.",
+    contentTypeLabel,
+    scopeLabel,
+    extentLabel,
+    date: options.date || entry.date || "",
+    relevanceReason: options.relevanceReason || "",
+  };
+  contentReferenceRecords.push({
+    target: rawText,
+    url: reference.canonicalUrl,
+    title: reference.title,
+    contentType: reference.contentTypeLabel,
+    hasDescription: Boolean(description),
+    warnings: contentReferenceWarnings.filter((warning) => warning.target === rawText || warning.target === reference.canonicalUrl).map((warning) => warning.type),
+  });
+  return reference;
+}
+
+function contentReferenceCard(reference, options = {}) {
+  if (!reference) return "";
+  const meta = unique([
+    reference.contentTypeLabel,
+    reference.scopeLabel,
+    reference.extentLabel,
+    reference.date,
+  ]).join(" · ");
+  const badge = options.badge ? `<span class="content-reference-card__badge">${esc(options.badge)}</span>` : "";
+  const titleHtml = reference.url
+    ? `<a class="content-reference-card__title" href="${esc(reference.url)}">${esc(reference.title)}</a>`
+    : `<span class="content-reference-card__title">${esc(reference.title)}</span>`;
+  return `<article class="content-reference-card">
+              ${badge}
+              <h4 class="content-reference-card__heading">${titleHtml}</h4>
+              ${meta ? `<div class="content-reference-card__meta">${esc(meta)}</div>` : ""}
+              <p class="content-reference-card__description">${esc(reference.description)}</p>
+              ${reference.relevanceReason ? `<p class="content-reference-card__reason">${esc(reference.relevanceReason)}</p>` : ""}
+            </article>`;
+}
+
+function contentReferenceGroup(title, references, options = {}) {
+  const cards = asList(references).map((reference) => contentReferenceCard(reference, options)).filter(Boolean);
+  if (!cards.length) return "";
+  return `<section class="term-section-card related-documents-card">
+            <h3>${esc(title)}</h3>
+            <div class="related-document-list content-reference-list">${cards.join("")}</div>
+          </section>`;
+}
+
 function relationChip(value) {
   const raw = typeof value === "object" && value
     ? {
@@ -541,7 +831,8 @@ function relationChip(value) {
   if (raw.href) return `<a class="term-chip" href="${esc(raw.href)}">${esc(raw.label)}</a>`;
   const term = termsBySlug.get(key) || termsBySlug.get(normalized);
   if (term) return `<a class="term-chip" href="../../begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a>`;
-  return `<span class="term-chip muted">${esc(raw.label || key)}</span>`;
+  const label = isSlugLike(raw.label || key) ? humanizeSlug(raw.label || key) : raw.label || key;
+  return label ? `<span class="term-chip muted">${esc(label)}</span>` : "";
 }
 
 function relationGroup(title, values) {
@@ -561,18 +852,16 @@ function documentCard(value) {
   const key = typeof value === "object" && value ? value.id || value.key || value.slug || value.label || value.title : value;
   const normalized = filterToken(key);
   const document = documentsById.get(key) || documentsById.get(normalized);
-  if (!document) return relationChip(value);
-  const actions = [
-    document.onlineUrl ? `<a class="term-chip" href="${esc(relativeFromGlossary(document.onlineUrl))}">Online lesen</a>` : "",
-    document.pdfUrl ? `<a class="term-chip" href="${esc(relativeFromGlossary(document.pdfUrl))}" download>PDF herunterladen</a>` : "",
-    document.docxUrl ? `<a class="term-chip" href="${esc(relativeFromGlossary(document.docxUrl))}" download>DOCX herunterladen</a>` : "",
-  ].filter(Boolean);
-  return `<article class="related-document-card">
-              <p class="section-eyebrow">${esc(document.type || "Dokument")}${document.stand ? ` · ${esc(document.stand)}` : ""}</p>
-              <h4>${esc(document.title || key)}</h4>
-              ${document.summary ? `<p>${esc(document.summary)}</p>` : ""}
-              <div class="term-chip-row">${actions.length ? actions.join("") : `<span class="term-chip muted">Keine öffentliche Datei hinterlegt</span>`}</div>
-            </article>`;
+  const reference = document
+    ? resolveContentReference(document.onlineUrl || document.pdfUrl || document.docxUrl || document.id, {
+        fallbackTitle: document.title,
+        description: document.summary,
+        contentTypeLabel: labelForContentType(document.type || "Dokument", document.onlineUrl || document.pdfUrl || ""),
+        scopeLabel: document.category,
+        extentLabel: document.fileSize && document.pdfUrl ? `PDF · ${document.fileSize}` : document.stand ? `Stand ${document.stand}` : "",
+      })
+    : resolveContentReference(value);
+  return contentReferenceCard(reference);
 }
 
 function documentGroup(values) {
@@ -583,24 +872,9 @@ function documentGroup(values) {
   }
   if (!cards.length) return "";
   return `<section class="term-section-card related-documents-card">
-            <h3>Dokumente</h3>
+            <h3>Quellen und Dokumente</h3>
             <div class="related-document-list">${cards.join("")}</div>
           </section>`;
-}
-
-function contentTypeLabel(type) {
-  return {
-    "book-chapter": "Online-Buch",
-    book: "Online-Buch",
-    blog: "Journal",
-    journal: "Journal",
-    method: "Methode",
-    whitepaper: "Whitepaper",
-    "working-paper": "Working Paper",
-    field: "Wirkungsfeld",
-    academy: "Akademie",
-    page: "Website",
-  }[type] || "Website";
 }
 
 function referenceHref(ref) {
@@ -609,23 +883,23 @@ function referenceHref(ref) {
 }
 
 function referenceCard(ref) {
-  const date = ref.date ? ` · ${esc(ref.date)}` : "";
-  const reason = Array.isArray(ref.reasons) && ref.reasons.length ? ` · ${esc(ref.matchType || "Treffer")}` : "";
   const snippet = Array.isArray(ref.snippets) && ref.snippets[0] ? ref.snippets[0] : "";
-  return `<li>
-              <article>
-                <p class="section-eyebrow">${esc(contentTypeLabel(ref.contentType))}${date}${reason}</p>
-                <h4><a class="text-link" href="${esc(referenceHref(ref))}">${esc(ref.pageTitle)}</a></h4>
-                ${snippet ? `<p>${esc(snippet)}</p>` : ""}
-              </article>
-            </li>`;
+  const reference = resolveContentReference(ref.pageUrl, {
+    title: ref.pageTitle,
+    description: snippet,
+    href: referenceHref(ref),
+    contentTypeLabel: labelForContentType(ref.contentType, ref.pageUrl),
+    date: ref.date,
+    relevanceReason: ref.overrideLabel || (ref.matchType ? `Bezug: ${ref.matchType}` : ""),
+  });
+  return contentReferenceCard(reference);
 }
 
 function referenceList(title, refs) {
   if (!Array.isArray(refs) || !refs.length) return "";
   return `<section class="term-section-card related-documents-card">
             <h3>${esc(title)}</h3>
-            <ul class="clean-list glossary-reference-list">${refs.map(referenceCard).join("")}</ul>
+            <div class="related-document-list content-reference-list">${refs.map(referenceCard).filter(Boolean).join("")}</div>
           </section>`;
 }
 
@@ -634,8 +908,66 @@ function automaticReferenceGroups(term) {
   if (!references) return [];
   return [
     referenceList("Begriff bestimmend", references.determining),
-    referenceList("Weitere relevante Vorkommen", references.related),
+    referenceList("Weitere relevante Inhalte", references.related),
   ].filter(Boolean);
+}
+
+function chapterReferencesForTerm(term) {
+  const manual = asList(term.relatedChapters)
+    .map((chapter) => resolveContentReference(chapter, {
+      contentTypeLabel: "Online-Buch-Kapitel",
+      relevanceReason: "Bezug: manuell zugeordneter Kapitelverweis.",
+    }))
+    .filter(Boolean);
+  const automatic = [
+    ...(glossaryReferenceIndex.terms?.[term.slug]?.determining || []),
+    ...(glossaryReferenceIndex.terms?.[term.slug]?.related || []),
+  ]
+    .filter((ref) => ref.contentType === "book-chapter" || String(ref.pageUrl || "").includes("/referenz/kapitel-"))
+    .slice(0, 5)
+    .map((ref) => resolveContentReference(ref.pageUrl, {
+      title: ref.pageTitle,
+      description: Array.isArray(ref.snippets) ? ref.snippets[0] : "",
+      href: referenceHref(ref),
+      contentTypeLabel: "Online-Buch-Kapitel",
+      relevanceReason: ref.overrideLabel || "Bezug: Der Begriff wird in diesem Kapitel systematisch verwendet oder definiert.",
+    }))
+    .filter(Boolean);
+  const seen = new Set();
+  return [...manual, ...automatic].filter((reference) => {
+    const key = reference.canonicalUrl || reference.url;
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 5);
+}
+
+function chapterBlock(term) {
+  const references = chapterReferencesForTerm(term);
+  return `<section class="term-summary-card" aria-labelledby="chapters-title">
+          <p class="section-eyebrow">Online-Buch</p>
+          <h2 id="chapters-title">Relevante Kapitel im Online-Buch</h2>
+          ${references.length
+            ? `<div class="related-document-list content-reference-list">${references.map((reference) => contentReferenceCard(reference, { badge: "Kapitel" })).join("")}</div>`
+            : `<p>Für diesen Begriff ist noch kein konkretes Kapitel zugeordnet.</p>`}
+          <div class="term-chip-row chapter-navigator-link">
+            <a class="term-chip" href="../../referenz/">Alle Kapitel im Kapitel-Navigator öffnen</a>
+          </div>
+        </section>`;
+}
+
+function sourceReferenceBlock(term) {
+  const source = term.sourceDocument || term.source_document || "";
+  const sourceSection = term.sourceSection || term.source_section || "";
+  const reference = resolveContentReference(source, {
+    scopeLabel: sourceSection,
+    allowTextFallback: true,
+    relevanceReason: "Bezug: Primärquelle oder redaktionelle Grundlage dieses Glossarbegriffs.",
+  });
+  if (!reference) return "";
+  return `<div class="source-reference-block">
+            ${contentReferenceCard(reference, { badge: "Quelle" })}
+          </div>`;
 }
 
 function relatedContentBlock(term) {
@@ -653,7 +985,7 @@ function relatedContentBlock(term) {
   return `
         <section class="term-summary-card" aria-labelledby="related-content-title">
           <p class="section-eyebrow">Querverweise</p>
-          <h2 id="related-content-title">Verwandte Inhalte</h2>
+          <h2 id="related-content-title">Quellen und Vertiefungen</h2>
           <div class="term-section-grid">
             ${groups.join("")}
           </div>
@@ -1132,7 +1464,7 @@ function sexarbeitDetailBody(term) {
         <section class="meta-box">
           <h2>Quellen, Status und Nutzung</h2>
           <p>Kategorie: ${esc(term.category || "Sensibler Begriff")} · Version: ${esc(term.version)}</p>
-          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+          ${sourceReferenceBlock(term)}
           <p>Rechtlicher Hinweis: Diese Seite ist eine begriffliche und wirkungsökonomische Einordnung. Sie ist keine Rechts-, Sozial-, Gesundheits-, Steuer-, Kredit-, Versicherungs-, Förder- oder Anlageberatung.</p>
           ${sourceList(term)}
         </section>
@@ -1296,7 +1628,7 @@ function sozialeInfrastrukturDetailBody(term) {
         <section class="meta-box">
           <h2>Version und Quellen</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
-          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+          ${sourceReferenceBlock(term)}
           ${sourceList(term)}
         </section>
       </article>`;
@@ -1368,21 +1700,11 @@ ${deepGlossarySectionsBlock(term)}
             ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
           </div>
         </section>${relatedContentBlock(term)}
-        <section class="term-link-section" aria-labelledby="chapters-title">
-          <div>
-            <p class="section-eyebrow">Online-Buch</p>
-            <h2 id="chapters-title">Relevante Kapitel</h2>
-          </div>
-          <div class="term-chip-row">
-            ${(term.relatedChapters || []).length
-              ? term.relatedChapters.map((chapter) => `<span class="term-chip muted">${esc(chapter)}</span>`).join("")
-              : `<a class="term-chip" href="../../referenz/">Kapitel-Navigator öffnen</a>`}
-          </div>
-        </section>
+${chapterBlock(term)}
         <section class="meta-box">
           <h2>Version und Quellen</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
-${statusParagraph}          <p>Quelle: ${esc(term.sourceDocument)} · Abschnitt: ${esc(term.sourceSection)}</p>
+${statusParagraph}          ${sourceReferenceBlock(term)}
           ${sourceList(term)}
         </section>
       </article>`;
@@ -1410,4 +1732,28 @@ if (data.terms.some((term) => term.slug === "soziale-infrastruktur")) {
   writeGlossaryTermAlias("zivilgesellschaftliche-infrastruktur", "Zivilgesellschaftliche Infrastruktur", "soziale-infrastruktur", "Soziale Infrastruktur", sozialeInfrastrukturAliasNote);
 }
 
+const reportLines = [
+  "# Content-Reference-Report",
+  "",
+  `Erzeugt: ${new Date().toISOString()}`,
+  `Resolved references: ${contentReferenceRecords.length}`,
+  `Warnings: ${contentReferenceWarnings.length}`,
+  "",
+  "## Warnungen",
+  "",
+  ...(contentReferenceWarnings.length
+    ? contentReferenceWarnings.slice(0, 500).map((warning) => `- [${warning.type}] ${warning.target}${warning.detail ? ` - ${warning.detail}` : ""}`)
+    : ["Keine Warnungen."]),
+  "",
+  "## Aufgelöste Verweise",
+  "",
+  ...contentReferenceRecords.slice(0, 1000).map((record) => `- ${record.url || record.target} -> ${record.title} (${record.contentType}, Beschreibung: ${record.hasDescription ? "ja" : "nein"})`),
+  "",
+];
+fs.writeFileSync("reports/content-reference-report.md", reportLines.join("\n"));
+
+if (contentReferenceWarnings.length) {
+  console.warn(`[content-reference] WARN ${contentReferenceWarnings.length} Hinweise, siehe reports/content-reference-report.md`);
+}
+console.log(`[content-reference] OK ${contentReferenceRecords.length} references resolved`);
 console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and preserved ${legacyDetailTerms.length} legacy detail pages.`);
