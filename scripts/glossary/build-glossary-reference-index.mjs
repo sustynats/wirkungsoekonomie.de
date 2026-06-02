@@ -215,10 +215,14 @@ function snippetFor(page, aliases) {
       matched = alias;
     }
   }
-  if (index < 0) return text.slice(0, 210);
+  const sanitizeSnippet = (value) => String(value || "")
+    .replace(/\bv0\.(\d+)\b/gi, "Modellfassung")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (index < 0) return sanitizeSnippet(text.slice(0, 210));
   const start = Math.max(0, index - 90);
   const end = Math.min(text.length, index + matched.length + 160);
-  return `${start > 0 ? "..." : ""}${text.slice(start, end)}${end < text.length ? "..." : ""}`.replace(/\s+/g, " ").trim();
+  return sanitizeSnippet(`${start > 0 ? "..." : ""}${text.slice(start, end)}${end < text.length ? "..." : ""}`);
 }
 
 function loadPages() {
