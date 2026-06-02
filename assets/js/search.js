@@ -14,7 +14,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260527-sprint-3-search";
+  const searchDataVersion = "20260602-semantic-ranking";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 700;
   const MAX_VISIBLE_RESULTS = 24;
@@ -311,6 +311,17 @@
     ].join(" ")).slice(0, MAX_HAYSTACK_CHARS);
   }
 
+  function getEntrySemanticHaystack(entry) {
+    return normalize([
+      ...asArray(entry.semanticTerms),
+      entry.semanticText,
+      ...asArray(entry.tags),
+      ...asArray(entry.aliases),
+      ...asArray(entry.standards),
+      ...asArray(entry.instruments),
+    ].join(" ")).slice(0, MAX_HAYSTACK_CHARS);
+  }
+
   function classifyEntry(entry) {
     const url = normalize(entry.url);
     const title = normalize(entry.title);
@@ -465,6 +476,47 @@
     return QUESTION_QUERY_TERMS.some((term) => query.includes(term) || tokens.includes(term));
   }
 
+  function semanticConceptsForQuery(rawQuery, tokens) {
+    const query = normalize(rawQuery);
+    const concepts = new Set([query, ...tokens].filter((item) => item.length > 2));
+
+    Object.entries(state.associations || {}).forEach(([key, values]) => {
+      const normalizedKey = normalize(key);
+      if (query.includes(normalizedKey) || tokens.includes(normalizedKey)) {
+        asArray(values).map(normalize).filter((item) => item.length > 2).forEach((item) => concepts.add(item));
+      }
+    });
+
+    state.dictionary.terms.forEach((term) => {
+      const aliases = [term.label, term.key, ...asArray(term.aliases)].map(normalize).filter(Boolean);
+      if (aliases.some((alias) => query.includes(alias) || alias.includes(query) || tokens.includes(alias))) {
+        aliases.forEach((alias) => concepts.add(alias));
+        asArray(term.related).map(normalize).filter((item) => item.length > 2).forEach((item) => concepts.add(item));
+      }
+    });
+
+    return Array.from(concepts).slice(0, 32);
+  }
+
+  function semanticEntryMatches(entry, rawQuery, tokens, concepts = semanticConceptsForQuery(rawQuery, tokens)) {
+    const semanticHaystack = entry._semanticHaystack || getEntrySemanticHaystack(entry);
+    if (!semanticHaystack) return false;
+    return concepts.some((concept) => concept.length > 3 && containsQuery(semanticHaystack, concept));
+  }
+
+  function semanticScoreEntry(entry, rawQuery, tokens, concepts = semanticConceptsForQuery(rawQuery, tokens)) {
+    const semanticHaystack = entry._semanticHaystack || getEntrySemanticHaystack(entry);
+    if (!semanticHaystack) return 0;
+    let score = 0;
+    concepts.forEach((concept) => {
+      if (concept.length < 4) return;
+      if (containsQuery(semanticHaystack, concept)) score += concept.includes(" ") ? 22 : 14;
+      else if (fuzzyTokenMatch(concept, semanticHaystack)) score += 5;
+    });
+    if (score > 0 && containsQuery(getEntryKeywordHaystack(entry), normalize(rawQuery))) score += 18;
+    return Math.min(score, 130);
+  }
+
   function expandQuery(rawQuery) {
     const normalizedQuery = normalize(rawQuery);
     const baseTokens = normalizedQuery.split(" ").filter((token) => token.length > 1);
@@ -533,7 +585,7 @@
     });
   }
 
-  function entryMatchesQuery(entry, rawQuery) {
+  function entryMatchesQuery(entry, rawQuery, semanticConcepts = null) {
     const query = normalize(rawQuery);
     const queryTokens = getQueryTokens(rawQuery);
     const haystack = entry._haystack || getEntryHaystack(entry);
@@ -541,6 +593,7 @@
 
     if (!query) return true;
     if (containsQuery(haystack, query)) return true;
+    if (semanticEntryMatches(entry, rawQuery, queryTokens, semanticConcepts || semanticConceptsForQuery(rawQuery, queryTokens))) return true;
     if (queryTokens.length >= 3 && queryTokens.some((token) => /\d/.test(token))) {
       return false;
     }
@@ -551,8 +604,8 @@
     return queryTokens.every((token) => containsToken(haystack, token) || fuzzyTokenMatch(token, keywordHaystack));
   }
 
-  function scoreEntry(entry, rawQuery, tokens) {
-    if (!entryMatchesQuery(entry, rawQuery)) {
+  function scoreEntry(entry, rawQuery, tokens, semanticConcepts = null) {
+    if (!entryMatchesQuery(entry, rawQuery, semanticConcepts)) {
       return 0;
     }
 
@@ -590,6 +643,8 @@
       if (containsToken(haystack, token)) score += 4;
       else if (fuzzyTokenMatch(token, keywordHaystack)) score += 3;
     });
+
+    score += semanticScoreEntry(entry, rawQuery, tokens, semanticConcepts || semanticConceptsForQuery(rawQuery, tokens));
 
     return score;
   }
@@ -896,6 +951,7 @@
     const rawQuery = input.value.trim();
     const tokens = expandQuery(rawQuery);
     const queryLength = normalize(rawQuery).length;
+    const semanticConcepts = queryLength >= 2 ? semanticConceptsForQuery(rawQuery, tokens) : [];
     const filtersActive = filterControls.some((control) => control instanceof HTMLSelectElement && control.value);
 
     if (!state.ready) {
@@ -952,7 +1008,7 @@
       const end = Math.min(cursor + MAX_SEARCH_SCAN, filtered.length);
       for (; cursor < end; cursor += 1) {
         const entry = filtered[cursor];
-        const score = queryLength >= 2 ? scoreEntry(entry, rawQuery, tokens) : Number(entry.priority || 0);
+        const score = queryLength >= 2 ? scoreEntry(entry, rawQuery, tokens, semanticConcepts) : Number(entry.priority || 0);
         if (score > 0) scored.push({ entry, score });
       }
       if (cursor < filtered.length) {
@@ -1069,6 +1125,7 @@
         _group: classifyEntry(entry),
         _haystack: getEntryHaystack(entry),
         _keywordHaystack: getEntryKeywordHaystack(entry),
+        _semanticHaystack: getEntrySemanticHaystack(entry),
       }));
       state.dictionary = dictionary;
       state.associations = associations;
