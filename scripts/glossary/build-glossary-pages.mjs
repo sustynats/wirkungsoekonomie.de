@@ -7,6 +7,10 @@ const documentRegistryPath = "assets/data/document-registry.json";
 const documentRegistry = fs.existsSync(documentRegistryPath)
   ? JSON.parse(fs.readFileSync(documentRegistryPath, "utf8"))
   : [];
+const glossaryReferenceIndexPath = "public/data/glossary-reference-index.json";
+const glossaryReferenceIndex = fs.existsSync(glossaryReferenceIndexPath)
+  ? JSON.parse(fs.readFileSync(glossaryReferenceIndexPath, "utf8"))
+  : { terms: {} };
 const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const outDir = "begriffe";
@@ -202,7 +206,7 @@ ${renderFooter(depth)}
     <script src="${depth}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
   </body>
 </html>
-`;
+`.replace(/[ \t]+$/gm, "");
 }
 
 function glossaryLegacyAlias(depth = "") {
@@ -584,8 +588,59 @@ function documentGroup(values) {
           </section>`;
 }
 
+function contentTypeLabel(type) {
+  return {
+    "book-chapter": "Online-Buch",
+    book: "Online-Buch",
+    blog: "Journal",
+    journal: "Journal",
+    method: "Methode",
+    whitepaper: "Whitepaper",
+    "working-paper": "Working Paper",
+    field: "Wirkungsfeld",
+    academy: "Akademie",
+    page: "Website",
+  }[type] || "Website";
+}
+
+function referenceHref(ref) {
+  const url = ref.anchor && !String(ref.pageUrl || "").includes("#") ? `${ref.pageUrl}#${ref.anchor}` : ref.pageUrl;
+  return relativeFromGlossary(url);
+}
+
+function referenceCard(ref) {
+  const date = ref.date ? ` · ${esc(ref.date)}` : "";
+  const reason = Array.isArray(ref.reasons) && ref.reasons.length ? ` · ${esc(ref.matchType || "Treffer")}` : "";
+  const snippet = Array.isArray(ref.snippets) && ref.snippets[0] ? ref.snippets[0] : "";
+  return `<li>
+              <article>
+                <p class="section-eyebrow">${esc(contentTypeLabel(ref.contentType))}${date}${reason}</p>
+                <h4><a class="text-link" href="${esc(referenceHref(ref))}">${esc(ref.pageTitle)}</a></h4>
+                ${snippet ? `<p>${esc(snippet)}</p>` : ""}
+              </article>
+            </li>`;
+}
+
+function referenceList(title, refs) {
+  if (!Array.isArray(refs) || !refs.length) return "";
+  return `<section class="term-section-card related-documents-card">
+            <h3>${esc(title)}</h3>
+            <ul class="clean-list glossary-reference-list">${refs.map(referenceCard).join("")}</ul>
+          </section>`;
+}
+
+function automaticReferenceGroups(term) {
+  const references = glossaryReferenceIndex.terms?.[term.slug];
+  if (!references) return [];
+  return [
+    referenceList("Begriff bestimmend", references.determining),
+    referenceList("Weitere relevante Vorkommen", references.related),
+  ].filter(Boolean);
+}
+
 function relatedContentBlock(term) {
-  const groups = [
+  const automaticGroups = automaticReferenceGroups(term);
+  const manualGroups = [
     ["Methoden & Werkzeuge", [...asList(term.relatedMethods), ...asList(term.relatedTools)]],
     ["Demos", term.relatedDemos],
     ["Wirkungsfelder", term.relatedImpactFields],
@@ -593,6 +648,7 @@ function relatedContentBlock(term) {
     ["Akademie", term.relatedAcademyModules],
     ["Datenregister", term.relatedDataRegisters],
   ].map(([title, values]) => title === "Dokumente" ? documentGroup(values) : relationGroup(title, values)).filter(Boolean);
+  const groups = [...automaticGroups, ...manualGroups];
   if (!groups.length) return "";
   return `
         <section class="term-summary-card" aria-labelledby="related-content-title">
