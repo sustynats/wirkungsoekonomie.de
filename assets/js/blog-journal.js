@@ -1,9 +1,7 @@
 (function () {
   const scriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="blog-journal.js"]')?.src || "";
-  const dataUrl = scriptUrl
-    ? new URL("../data/blog-index.json", scriptUrl).href
-    : "/assets/data/blog-index.json";
+  const dataUrl = getVersionedDataUrl(scriptUrl);
 
   const relatedPaths = new Set([
     "/verstehen.html",
@@ -86,6 +84,20 @@
     }
 
     return pathname;
+  }
+
+  function getVersionedDataUrl(url) {
+    if (!url) {
+      return "/assets/data/blog-index.json";
+    }
+
+    const sourceUrl = new URL(url);
+    const data = new URL("../data/blog-index.json", sourceUrl);
+    const version = sourceUrl.searchParams.get("v");
+    if (version) {
+      data.searchParams.set("v", version);
+    }
+    return data.href;
   }
 
   function renderHomeJournal(target, posts) {

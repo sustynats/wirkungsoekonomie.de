@@ -1308,7 +1308,7 @@ function loadBlogJournal() {
   window.__wirkungBlogJournalScriptLoaded = true;
   const baseUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
   const script = document.createElement("script");
-  script.src = new URL("blog-journal.js?v=20260602-journal-index", baseUrl).href;
+  script.src = new URL("blog-journal.js?v=20260602-journal-index-v2", baseUrl).href;
   script.defer = true;
   document.body.append(script);
 }
