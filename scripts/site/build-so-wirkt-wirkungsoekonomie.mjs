@@ -398,7 +398,7 @@ const body = `
     </section>
   </main>
   ${renderFooter()}
-  <script src="${BASE}assets/js/navigation.js" defer></script>
+  <script src="${BASE}assets/js/main.js?v=20260525-cta-cleanup" defer></script>
   <script src="${BASE}assets/js/search.js" defer></script>
 `;
 
