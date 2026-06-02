@@ -450,7 +450,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260601-table-scroll">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260602-responsive-tables">
   </head>
   <body>
     <header class="site-header">

@@ -351,7 +351,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
     <meta property="og:description" content="{html.escape(subtitle[:190])}">
     <meta property="og:url" content="{canonical}">
     <link rel="icon" href="{href(prefix, 'assets/img/brand/favicon.svg')}" type="image/svg+xml">
-    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260601-table-scroll')}">
+    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260602-responsive-tables')}">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
