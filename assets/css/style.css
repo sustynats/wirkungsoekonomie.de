@@ -14262,16 +14262,27 @@ a.principle-card:hover,
 }
 
 .radar-detail-layout {
-  display: grid;
+  display: block;
   gap: clamp(1.5rem, 4vw, 3rem);
   width: min(100% - (2 * var(--space-gutter)), var(--container));
   margin-inline: auto;
-  align-items: start;
+}
+
+.radar-detail-layout .article-toc {
+  max-width: none;
+  margin: 0 0 clamp(2rem, 5vw, 3.5rem);
+}
+
+.radar-detail-layout .article-body {
+  max-width: none;
+  margin-inline: 0;
 }
 
 .radar-side-panel {
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: clamp(2rem, 5vw, 3.5rem);
 }
 
 .radar-mini-flow {
@@ -14287,11 +14298,10 @@ a.principle-card:hover,
 
 @media (min-width: 980px) {
   .radar-detail-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.36fr);
+    max-width: min(100% - (2 * var(--space-gutter)), 1120px);
   }
 
   .radar-side-panel {
-    position: sticky;
-    top: 6rem;
+    position: static;
   }
 }
