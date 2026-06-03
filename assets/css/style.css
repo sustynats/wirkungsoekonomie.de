@@ -14137,3 +14137,81 @@ a.principle-card:hover,
     padding-top: 0;
   }
 }
+
+.radar-hero-visual {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.radar-hero-visual img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.text-link-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-link-card .card-title {
+  color: var(--navy);
+}
+
+.text-link-card:hover .card-title,
+.text-link-card:focus-visible .card-title {
+  color: var(--green);
+}
+
+.radar-flow p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.radar-live-card {
+  border-left: 4px solid rgba(47, 125, 92, 0.55);
+}
+
+.radar-method-body {
+  max-width: 82ch;
+}
+
+.radar-detail-layout {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: min(100% - (2 * var(--space-gutter)), var(--container));
+  margin-inline: auto;
+  align-items: start;
+}
+
+.radar-side-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.radar-mini-flow {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.radar-mini-flow li {
+  padding-left: 0.15rem;
+}
+
+@media (min-width: 980px) {
+  .radar-detail-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.36fr);
+  }
+
+  .radar-side-panel {
+    position: sticky;
+    top: 6rem;
+  }
+}

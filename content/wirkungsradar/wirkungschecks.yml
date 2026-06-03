@@ -1,0 +1,188 @@
+version: "0.1"
+last_updated: "2026-06-03"
+system:
+  title: "Wirkungsradar"
+  claim: "Fakten, Narrative und Wirkungspfade im Check."
+  path:
+    - "Aussage"
+    - "gesellschaftlicher Wirkstoff"
+    - "Wirkungspotenzial"
+    - "Wirkungsrisiko"
+    - "Wirkmechanismus"
+    - "Narrativ / Frame"
+    - "Resonanzraum"
+    - "Faktenpruefung"
+    - "Folgenanalyse"
+    - "Wirkung erster, zweiter und dritter Ordnung"
+    - "Bewertung nach Mensch, Planet und Demokratie"
+    - "SDG-/SDG+-Bezug"
+    - "wirkungsokonomische Loesung"
+    - "faktenbasierte Antwort"
+checks:
+  - title: "Man darf ja nichts mehr sagen"
+    slug: "man-darf-ja-nichts-mehr-sagen"
+    status: "published"
+    type: "live-card"
+    claim:
+      original: "Man darf ja nichts mehr sagen."
+      claim_type:
+        - "Sagbarkeitsnarrativ"
+        - "Opferumkehr"
+        - "Diskursverschiebung"
+    classification:
+      short_judgement: "Nicht grundsaetzlich falsch als Gefuehl, aber haeufig irrefuehrend als politischer Frame."
+      narrative_family:
+        - "Opferumkehr"
+        - "Sagbarkeitsnarrativ"
+      resonance_profile:
+        - "Kraenkung"
+        - "Trotz"
+        - "Unsicherheit"
+      manipulation_patterns:
+        - "Widerspruch als Zensur umdeuten"
+        - "Framewechsel"
+    wirkung:
+      wirkstoff: "Sagbarkeitsbehauptung als Opferimpuls"
+      wirkungspotenzial:
+        - "Kritik wirkt illegitim"
+        - "Moderation wird als Unterdrueckung gerahmt"
+      wirkungsrisiko:
+        level: "hoch"
+        description: "Wenn Faktenkorrektur, Minderheitenschutz und Moderation delegitimiert werden."
+      mechanism: "Widerspruch wird mit staatlicher Zensur verwechselt."
+      wirkungspfad:
+        - "Aussage"
+        - "Opfergefuehl"
+        - "Kritikabwehr"
+        - "Normalisierung harter Abwertung"
+        - "Verschiebung demokratischer Diskursregeln"
+    mpd:
+      mensch: "mehr Einschuechterung und weniger Schutz vor Abwertung"
+      planet: "indirekt betroffen, wenn Sachdebatten blockiert werden"
+      demokratie: "Diskursfaehigkeit, Faktenkorrektur und Moderation werden geschwaecht"
+    sdg:
+      sdg_plus:
+        - "Diskursfaehigkeit"
+        - "Medienqualitaet"
+        - "Minderheitenschutz"
+        - "Schutz vor Manipulation"
+    answers:
+      ten_seconds: "Du darfst das sagen. Und andere duerfen widersprechen. Meinungsfreiheit heisst nicht Widerspruchsfreiheit."
+      thirty_seconds: "Der wahre Kern ist: Debatten koennen ueberhitzt sein. Aber Kritik ist keine Zensur. Wenn jemand etwas sagt, duerfen andere widersprechen, einordnen oder moderieren."
+      two_minutes: "Der Satz verschiebt den Frame: Ploetzlich geht es nicht mehr um die urspruengliche Aussage, sondern darum, ob die Person angeblich unterdrueckt wird. Meinungsfreiheit schuetzt vor staatlicher Unterdrueckung, nicht vor Widerspruch."
+    links:
+      page: "/wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/"
+  - title: "Deutschland ist nur fuer 2 % verantwortlich"
+    slug: "deutschland-nur-zwei-prozent"
+    status: "published"
+    type: "live-card"
+    claim:
+      original: "Deutschland ist nur fuer 2 % der weltweiten Emissionen verantwortlich. Also bringt Klimaschutz hier nichts."
+      claim_type:
+        - "Halbwahrheit"
+        - "falsche Schlussfolgerung"
+        - "Verzoegerungsnarrativ"
+    classification:
+      short_judgement: "Wahrer Kern, falsche Schlussfolgerung."
+      narrative_family:
+        - "Ohnmachtsnarrativ"
+        - "Verzoegerungsnarrativ"
+      resonance_profile:
+        - "Kontrollverlust"
+        - "Kostenangst"
+        - "Veraenderungsmuedigkeit"
+      manipulation_patterns:
+        - "falsche Folgerung"
+        - "Skalenverwechslung"
+        - "Whataboutism"
+    wirkung:
+      wirkstoff: "Zahlenargument als Ohnmachtsimpuls"
+      wirkungspotenzial:
+        - "Handlungsfaehigkeit sinkt"
+        - "politische Verzoegerung wird legitimiert"
+      wirkungsrisiko:
+        level: "hoch"
+        description: "Wenn aus dem Zahlenargument Nicht-Handeln abgeleitet wird."
+      mechanism: "Anteil wird mit Wirkungslosigkeit verwechselt."
+      wirkungspfad:
+        - "Aussage"
+        - "Ohnmachtsgefuehl"
+        - "geringere Unterstuetzung"
+        - "politische Verzoegerung"
+        - "hoehere Folgekosten"
+    mpd:
+      mensch: "hoehere Zukunftskosten und soziale Konflikte"
+      planet: "verzoegerte Emissionsminderung"
+      demokratie: "Ohnmacht, Misstrauen und Blockade"
+    sdg:
+      sdgs:
+        - "SDG 7"
+        - "SDG 9"
+        - "SDG 12"
+        - "SDG 13"
+      sdg_plus:
+        - "Diskursfaehigkeit"
+        - "institutionelles Vertrauen"
+        - "Schutz vor Manipulation"
+    answers:
+      ten_seconds: "Das ist ein Ohnmachtsnarrativ. Der Zahlenkern kann stimmen, aber die Schlussfolgerung ist falsch: Wirkung entsteht nicht nur durch Groesse, sondern durch Hebel."
+      thirty_seconds: "Ja, Deutschland ist nicht der groesste Emittent. Aber daraus folgt nicht, dass Handeln wirkungslos ist. Wir wirken ueber Technologie, Maerkte, Standards, Lieferketten, EU-Politik und Investitionen."
+      two_minutes: "Der Satz vermischt einen Zahlenkern mit einer falschen politischen Folgerung. Klimawirkung entsteht nicht nur proportional zum nationalen Anteil, sondern auch ueber Hebelwirkung."
+    links:
+      page: "/wirkungsradar/live/deutschland-nur-zwei-prozent/"
+  - title: "SDGs / Agenda 2030 sind Weltregierung"
+    slug: "sdgs-sind-weltregierung"
+    status: "published"
+    type: "detail"
+    claim:
+      original: "Die SDGs und die Agenda 2030 sind eine Weltregierung."
+      claim_type:
+        - "Verschwoerungsframe"
+        - "falsche Schlussfolgerung"
+        - "Kooperationsdelegitimierung"
+    classification:
+      short_judgement: "Falsche Schlussfolgerung aus einem realen internationalen Kooperationsrahmen."
+      narrative_family:
+        - "Herrschaftsnarrativ"
+        - "Verschwoerungsframe"
+      resonance_profile:
+        - "Kontrollverlust"
+        - "Misstrauen gegen Institutionen"
+        - "Souveraenitaetsangst"
+      manipulation_patterns:
+        - "Kooperation als Zwang deuten"
+        - "Zielrahmen mit Regierungsmacht verwechseln"
+        - "selektive Evidenz"
+    wirkung:
+      wirkstoff: "Kooperationsrahmen als Bedrohungsimpuls"
+      wirkungspotenzial:
+        - "Misstrauen gegen demokratische und internationale Prozesse steigt"
+        - "Nachhaltigkeitsdaten werden als Kontrollinstrument gerahmt"
+      wirkungsrisiko:
+        level: "hoch"
+        description: "Wenn legitime Kritik durch pauschale Institutionenfeindlichkeit ersetzt wird."
+      mechanism: "Aus gemeinsamen Zielen wird eine angebliche geheime Herrschaft abgeleitet."
+      wirkungspfad:
+        - "Aussage"
+        - "Bedrohungsgefuehl"
+        - "Institutionenmisstrauen"
+        - "Ablehnung von Kooperation"
+        - "geschwaechte Problemloesung"
+    mpd:
+      mensch: "weniger Vertrauen in Gesundheits-, Bildungs- und Armutsziele"
+      planet: "Klimaschutz, Biodiversitaet und Ressourcenschutz werden diskursiv blockiert"
+      demokratie: "Institutionenvertrauen und faktenbasierte Deliberation sinken"
+    sdg:
+      sdgs:
+        - "SDG 16"
+        - "SDG 17"
+      sdg_plus:
+        - "Diskursfaehigkeit"
+        - "institutionelles Vertrauen"
+        - "Schutz vor Manipulation"
+    answers:
+      ten_seconds: "Die SDGs sind keine Weltregierung. Sie sind ein Zielrahmen, den Staaten politisch vereinbart haben. Entscheiden muessen weiterhin demokratische Institutionen."
+      thirty_seconds: "Der wahre Kern ist: Es gibt internationale Zusammenarbeit. Der Denkfehler ist: Zusammenarbeit ist nicht automatisch Herrschaft. Die Agenda 2030 setzt Ziele, ersetzt aber keine Parlamente."
+      two_minutes: "Die SDGs sind ein globaler Referenzrahmen fuer Entwicklung, Umwelt und Institutionen. Man kann einzelne Ziele politisch kritisieren. Aber aus Kooperation eine geheime Weltregierung zu machen, verschiebt die Debatte weg von Wirkung, Evidenz und demokratischer Entscheidung."
+    links:
+      page: "/wirkungsradar/detail/sdgs-sind-weltregierung/"
