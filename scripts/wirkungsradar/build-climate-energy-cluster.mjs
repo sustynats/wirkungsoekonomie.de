@@ -486,14 +486,14 @@ const claims = [
       problem: "Die Aussage verwechselt territoriale Bilanz mit Gesamtverantwortung.",
       narrative: "Ohnmachtsnarrativ / Verantwortungsverkürzung / Verzögerungsframe.",
       risk: "Konsum, Lieferketten, Produktnutzung, Historie und Transformationshebel werden unsichtbar.",
-      host_answer: "Der enge Territorialanteil misst höchstens einen Inlandsausschnitt. Verantwortung misst er nicht.",
+      host_answer: "Die 2-%-Zahl misst höchstens einen engen Inlandsausschnitt. Verantwortung misst sie nicht.",
     },
     answers: {
-      ten_seconds: "Der enge Territorialanteil misst höchstens Inlandsemissionen. Verantwortung misst er nicht. Konsum, Lieferketten, exportierte Produkte, Scope 3 und historische Emissionen fehlen.",
+      ten_seconds: "Die 2-%-Zahl misst höchstens Inlandsemissionen. Verantwortung misst sie nicht. Konsum, Lieferketten, exportierte Produkte, Scope 3 und historische Emissionen fehlen.",
       thirty_seconds:
-        "Der Denkfehler ist: Territoriale Emissionen werden mit Gesamtverantwortung verwechselt. Der enge Territorialanteil zeigt, was innerhalb Deutschlands ausgestoßen wird, aber nicht, welche Emissionen deutsche Nachfrage, importierte Vorprodukte, Lieferketten, exportierte Fahrzeuge und Maschinen, Scope-3-Nutzung, historische Emissionen und Standards auslösen. Deshalb ist die 2-%-Behauptung kein Entlastungsbeweis. Die bessere Frage lautet: Welche Wirkung erzeugen unsere Produkte, Märkte, Regeln und Investitionen weltweit - und wie koppeln wir diese Wirkung in bessere Entscheidungen zurück?",
+        "Der Denkfehler ist: Territoriale Emissionen werden mit Verantwortung verwechselt. Deutschland hat nicht nur Emissionen innerhalb seiner Grenzen, sondern auch Konsumemissionen, importierte Produktionswirkung, exportierte Fahrzeuge und Maschinen, Scope-3-Wirkung, historische Verantwortung und starke Technologie- und Standardhebel. Die bessere Frage lautet: Welche Wirkung lösen wir aus - und wie verändern wir sie?",
       two_minutes:
-        "Ich würde zuerst die Bilanzgrenze klären. Die 2-%-Behauptung kann nur in einer engen territorialen Jahresbilanz halbwegs sinnvoll sein: gezählt wird, was innerhalb deutscher Grenzen ausgestoßen wird. Diese Bilanz ist wichtig für nationale Klimaziele, aber sie ist nicht dasselbe wie Gesamtverantwortung. Wenn Deutschland Produkte konsumiert, deren Vorprodukte oder Produktion im Ausland liegen, verschwindet die Klimawirkung nicht. Wenn deutsche Unternehmen Autos, Maschinen, Anlagen oder Chemie exportieren, wirken diese Produkte über Jahre in anderen Ländern weiter. Genau dafür gibt es Scope-3-Logik, besonders die Nutzung verkaufter Produkte. Dazu kommt die historische Ebene: CO₂ wirkt über lange Zeiträume, deshalb beantwortet ein aktueller Jahresanteil nicht die Frage kumulativer Verantwortung. Und es gibt die transformative Ebene: Deutschland setzt über EU-Regeln, Industrienormen, Kapital, Beschaffung und Technologiepfade Standards, die weit über den Inlandsausstoß hinausreichen. Wirkungsökonomisch ist deshalb nicht die kleine Zahl entscheidend, sondern der Wirkungspfad. Welche Nachfrage lösen wir aus? Welche Lieferketten stabilisieren wir? Welche Produktnutzung exportieren wir? Welche Investitionen verlängern fossile Pfade, und welche machen saubere Alternativen billiger und glaubwürdiger? Dabei geht es nicht darum, Deutschland allein für das Weltklima verantwortlich zu machen. Es geht darum, die realen Hebel nicht kleinzurechnen: Industriepfade, Einkaufsentscheidungen, Produktstandards, öffentliche Beschaffung, Finanzierungen und EU-Regeln verändern, was andere Märkte übernehmen können. Die bessere Antwort ist also nicht moralische Selbstanklage und auch nicht Entlastung. Die bessere Antwort ist Wirkungswahrheit: territoriale Emissionen senken, Konsum- und Lieferkettenwirkung sichtbar machen, Scope 3 ernst nehmen und diese Wirkung in Preise, Standards, Beschaffung, Produktdesign und Kapitalentscheidungen zurückkoppeln.",
+        "Ich ordne das sauber ein. Die 2-%-Behauptung kann nur dann halbwegs stimmen, wenn man sehr eng auf territoriale Jahresemissionen schaut. Aber Verantwortung ist mehr als das. Wenn wir Produkte importieren, deren Emissionen im Ausland entstehen, verschwindet diese Wirkung nicht. Wenn deutsche Unternehmen Verbrenner, Maschinen oder Technologien exportieren, die weltweit über Jahre Emissionen verursachen, ist das Teil der Produkt- und Scope-3-Verantwortung. Wenn wir historisch über Jahrzehnte emittiert haben, ist das nicht durch den Blick auf ein einzelnes Jahr erledigt. Wirkungsökonomisch zählen Wirkungsketten: Rohstoffe, Produktion, Transport, Nutzung, Entsorgung, Kapital, Standards und politische Hebel. Deshalb ist die richtige Frage nicht: Sind wir nur 2 %? Sondern: Wo erzeugen wir Wirkung - und wie drehen wir sie Richtung Mensch, Planet und Demokratie?",
     },
     answersFinal: true,
     effectPath: [
@@ -509,7 +509,7 @@ const claims = [
     ],
     frameKey: "ohnmacht",
     redirectQuestion: "Welche Bilanzgrenze meinst du: territorial, konsumbezogen, Scope 3, historisch oder transformativ?",
-    dontDo: ["Nicht über eine einzelne Prozentzahl diskutieren, bevor die Bilanzgrenze geklärt ist.", "Nicht den Frame übernehmen, territorialer Anteil sei Gesamtverantwortung.", "Nicht Verantwortung moralisieren: Es geht um Wirkung, Rückkopplung und bessere Anreize."],
+    dontDo: ["Nicht in eine endlose Prozentdiskussion gehen.", "Nicht „2 % Verantwortung“ wiederholen.", "Nicht so tun, als könne Deutschland allein das Klima retten.", "Nicht Verantwortung moralisieren.", "Nicht unterschiedliche Bilanzgrenzen addieren."],
     facts: [
       "Die territoriale Bilanz misst Emissionen innerhalb deutscher Grenzen, nicht Konsum, Produktnutzung oder historische Wirkung.",
       "Konsumemissionen zeigen, welche Emissionen deutsche Nachfrage auch im Ausland auslöst.",
@@ -2169,7 +2169,7 @@ function renderGermanyTwoPercentDossier(claim) {
       kicker: "2.3 Lieferkette",
       title: "Ausgelagerte Produktion ist keine ausgelagerte Wirkung.",
       text:
-        "Wenn Produktion ins Ausland verlagert wird, sinkt möglicherweise die deutsche Inlandsbilanz. Die Wirkung bleibt real: Energie, Rohstoffe, Wasser, Arbeitsbedingungen, Transport und Emissionen entstehen weiter - nur an einem anderen Ort.",
+        "Wenn Produktion ins Ausland verlagert wird, sinkt möglicherweise die deutsche Inlandsbilanz. Die Wirkung bleibt real: Energie, Rohstoffe, Wasser, Arbeitsbedingungen, Transport und Emissionen entstehen weiter - nur an einem anderen Ort. Wirkungsökonomischer Satz: Ausgelagerte Produktion ist keine ausgelagerte Verantwortung.",
     },
     {
       kicker: "2.4 Scope 3",
@@ -2181,7 +2181,7 @@ function renderGermanyTwoPercentDossier(claim) {
       kicker: "2.5 Historisch",
       title: "Jahresanteil ist nicht kumulative Klimawirkung.",
       text:
-        "Die 2-%-Behauptung betrachtet meist ein einzelnes Jahr. Klimawirkung entsteht aber kumulativ, weil CO₂ lange in der Atmosphäre bleibt. Die historische Perspektive beantwortet deshalb eine andere Verantwortungsfrage als der aktuelle Jahresanteil.",
+        "Die 2-%-Behauptung betrachtet meist ein einzelnes Jahr. Klimawirkung entsteht aber kumulativ, weil CO₂ lange in der Atmosphäre bleibt. Die historische Perspektive beantwortet deshalb eine andere Verantwortungsfrage als der aktuelle Jahresanteil. Wirkungsökonomischer Satz: Jahresanteil ist nicht kumulative Klimawirkung.",
     },
     {
       kicker: "2.6 Transformativ",
@@ -2261,6 +2261,7 @@ function renderGermanyTwoPercentDossier(claim) {
             <h3 class="card-title">Verantwortungsverkürzung erkennen.</h3>
             <p class="card-text">${escapeHtml(dossier.thesis)}</p>
             <p class="card-text"><a class="text-link" href="../../../begriffe/verantwortungsverkuerzung/" data-glossary-key="verantwortungsverkuerzung"><strong>Verantwortungsverkürzung</strong></a>: Eine enge Bilanzgrenze wird benutzt, um größere Wirkungszusammenhänge unsichtbar zu machen.</p>
+            <p class="card-text">Verantwortungsverkürzung liegt vor, wenn eine enge Bilanzgrenze benutzt wird, um größere Wirkungszusammenhänge unsichtbar zu machen.</p>
             <p class="card-text">Wirkungsökonomisch entsteht Verantwortung dort, wo Entscheidungen, Produkte, Lieferketten, Kapital, Regeln oder Technologien Zustände verändern - direkt, indirekt, verzögert oder systemisch. Die WÖk unterscheidet dafür Wirkung, Netto-Wirkung und Transformationswirkung.</p>
           </article>
           <div class="card-grid two">
@@ -2305,6 +2306,12 @@ function renderGermanyTwoPercentDossier(claim) {
             <article class="card"><p class="card-kicker">Faktenlage</p><h3 class="card-title">Was prüfbar ist.</h3><ul class="clean-list">${claim.facts.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
             <article class="card"><p class="card-kicker">Wirkstoffanalyse</p><h3 class="card-title">Territoriale Zahl als Verantwortungsverkürzer.</h3><p class="card-text">Eine enge territoriale Kennzahl wird als scheinbar vollständiger Verantwortungsbeweis benutzt. Die Aussage verschiebt Aufmerksamkeit von Wirkungsketten auf Landesgrenzen.</p><ul class="clean-list"><li>Konsumemissionen</li><li>ausgelagerte Produktion</li><li>importierte Vorprodukte</li><li>Scope 3 / Use of Sold Products</li><li>exportierte Produktnutzung</li><li>historische Emissionen</li><li>Technologie-, Kapital- und Beschaffungshebel</li></ul></article>
           </div>
+          <article class="card dossier-thesis-card">
+            <p class="card-kicker">Narrativanalyse</p>
+            <h3 class="card-title">Ohnmachtsnarrativ / Verantwortungsverkürzung / Verzögerungsframe.</h3>
+            <p class="card-text">Typische Botschaft: Wir sind zu klein, also müssen wir nicht handeln. Die emotionale Funktion ist Entlastung, Veränderungsvermeidung und Kostenabwehr; politisch wirkt die Transformation dadurch überzogen, nutzlos oder unfair.</p>
+            <p class="card-text">Nebenmuster sind Whataboutism und Territorialframe: Der Blick wird auf Landesgrenzen verengt, während Konsum, Lieferketten, Scope 3, historische Wirkung sowie Technologie- und Kapitalhebel aus der Debatte verschwinden.</p>
+          </article>
           <section class="section section-soft dossier-false-action" aria-labelledby="false-action">
             <div>
               <div class="section-header"><p class="hero-kicker">Folgen falschen Handelns</p><h2 id="false-action">Was wahrscheinlicher wird.</h2></div>
