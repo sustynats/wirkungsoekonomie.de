@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { renderRadarTopicMapPage } from "./topic-map-template.mjs";
 
 const UPDATED_AT = "2026-06-03";
 
@@ -513,7 +514,7 @@ function writeFile(filePath, content) {
   fs.writeFileSync(filePath, content, "utf8");
 }
 
-function pageShell({ title, description, canonical, base, main }) {
+function pageShell({ title, description, canonical, base, main, searchType = "Demokratie & Öffentlichkeit", assetVersion = "20260603-democracy-public" }) {
   return `<!doctype html>
 <html lang="de">
   <head>
@@ -522,10 +523,10 @@ function pageShell({ title, description, canonical, base, main }) {
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="search_section" content="Wirkungsradar">
-    <meta name="search_type" content="Demokratie & Öffentlichkeit">
+    <meta name="search_type" content="${escapeHtml(searchType)}">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260603-democracy-public">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${escapeHtml(assetVersion)}">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -562,7 +563,7 @@ ${main}
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=20260603-democracy-public"></script>
+    <script src="${base}assets/js/main.js?v=${escapeHtml(assetVersion)}"></script>
   </body>
 </html>
 `;
@@ -895,13 +896,7 @@ function renderDetailPage(claim) {
 }
 
 function renderThemesIndex() {
-  const main = `    <main id="inhalt" data-pagefind-body>
-      <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Themen</nav><p class="hero-kicker">Themencluster</p><h1 class="hero-title">Von einzelnen Stöckchen zu Wirkungsfeldern.</h1><p class="hero-subtitle">Die Themenübersicht bündelt Aussagen nach Demokratie, Medien, Klima, Energie, Wirtschaft und gesellschaftlichem Zusammenhalt.</p><p class="radar-abstract"><strong>Abstract:</strong> Die Themenübersicht verbindet einzelne Aussagen mit größeren Wirkungsfeldern. Dadurch wird sichtbar, ob ein Stöckchen isoliert ist oder Teil eines wiederkehrenden Musters.</p><p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Vertrauensniveau: hoch</span></p></div></section>
-      ${summaryGrid([["Demokratie", "Sagbarkeits-, Institutionen-, Medien- und Wissenschaftsframes.", "critical"], ["Klima & Energie", "Ohnmacht, Verzögerung, Scheiternsframes und Freiheitsangst.", "critical"], ["Wissenschaft", "Delegitimierung, Scheinkausalität und selektive Evidenz.", "warning"], ["Kooperation", "Agenda, SDGs, Souveränität und Herrschaftsnarrative.", "warning"], ["Technik", "Rohstoffangst, Technikwunder und Zeitpfad-Fragen.", "neutral"], ["Antwort", "Vom Einzelframe zur besseren Handlungsfrage.", "positive"]], "Themen Summary")}
-      ${topicSubnav("Themen", "")}
-      <section class="section"><div><div class="section-header"><p class="hero-kicker">Cluster</p><h2>Erste Ordnung der Kartensammlung.</h2></div><div class="card-grid"><a class="card text-link-card" href="demokratie-oeffentlichkeit/"><p class="card-kicker">Demokratie &amp; Öffentlichkeit</p><h3 class="card-title">Medien, Wissenschaft, Meinungsfreiheit, SDG+ und Desinformation</h3><p class="card-text">Schutzcluster gegen Zensur-, Social-Credit-, Planwirtschafts- und Quellenzerstörungsframes.</p></a><a class="card text-link-card" href="klima-energie/"><p class="card-kicker">Klima &amp; Energie</p><h3 class="card-title">Mythen, Narrative, Fakten und Wirkungspfade</h3><p class="card-text">Klimawandel, Energiewende, Mobilität, Batterien, Kernenergie, Fusion und Industrie.</p></a><article class="card"><p class="card-kicker">Internationale Kooperation</p><h3 class="card-title">Agenda, SDGs und Souveränität</h3><p class="card-text">Kooperationsrahmen werden als Herrschaftsnarrative gedeutet.</p></article></div></div></section>
-    </main>`;
-  return pageShell({ title: "Wirkungsradar Themen | Wirkungsökonomie", description: "Thematische Einstiege in den Wirkungsradar: Demokratie, Medien, Klima, Energie, Wirtschaft und internationale Kooperation.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/themen/", base: "../../", main });
+  return renderRadarTopicMapPage(pageShell);
 }
 
 const climateLiveSlugs = [

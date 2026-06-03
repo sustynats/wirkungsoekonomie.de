@@ -260,6 +260,7 @@ function glossaryPage([termSlug, label, definition, hover]) {
 function injectBeforeMainEnd(file, marker, section) {
   if (!fs.existsSync(file)) return;
   const html = fs.readFileSync(file, "utf8");
+  if (html.includes(marker)) return;
   const withoutOld = html.replace(new RegExp(`\\n?<section class="section(?: section-soft)?" id="${marker}"[\\s\\S]*?<\\/section>\\n?`, "g"), "\n");
   fs.writeFileSync(file, withoutOld.replace(/\s*<\/main>/, `\n${section}\n    </main>`));
 }
