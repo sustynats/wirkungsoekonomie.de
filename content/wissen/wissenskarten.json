@@ -1,7 +1,7 @@
 {
   "metadata": {
     "status": "published",
-    "last_updated": "2026-05-22",
+    "last_updated": "2026-06-01",
     "purpose": "Kuratierte Wissenskarten für Kompass, Suche, Glossar, Anwendungen und Zielgruppen. kuratierter Stand, keine finale Bewertung."
   },
   "cards": [
@@ -185,6 +185,45 @@
       "terms": ["Wirkungsbiografie", "Wirkungsdividende", "Wirkungsfonds"],
       "related_pages": ["fuer/rente.html", "fuer/wirkungseinkommen.html", "kompass.html"],
       "sources": ["WP_Rente", "Arbeitspapier Wirkungseinkommensteuer", "Buchkapitel Wirkungsrente"],
+      "status": "published"
+    },
+    {
+      "id": "maschinenleistungsrueckkopplung",
+      "title": "Maschinenleistungsrückkopplung",
+      "short_answer": "Maschinenleistungsrückkopplung ist die WÖk-Alternative zur Robotersteuer: Maschinenleistung wird nicht bestraft, sondern Produktivitätsgewinne werden wirkungsorientiert in Sozialfinanzierung, Wirkungseinkommen, Weiterbildung und Wirkungsfonds zurückgeführt.",
+      "one_sentence": "Nicht Maschinenstrafe, sondern Rückkopplung automatisierter Produktivität.",
+      "why_important": "Automatisierung kann Einkommen, Lohnsumme und Sozialbeiträge entkoppeln. Ohne Rückkopplung steigen Produktivität und Kapitalgewinne, während Beitragsbasis und Teilhabe schwächer werden.",
+      "impact_path": ["KI / Robotik / Automatisierung", "Maschinenleistung", "Produktivitätsgewinn", "Beitragslücke", "Maschinenwertschöpfungsbeitrag", "Wirkungsfonds", "Wirkungseinkommen"],
+      "example": "Ein Unternehmen automatisiert Produktion und nutzt Teile der Produktivitätsgewinne für Qualifizierung, Arbeitszeitverkürzung und einen Wirkungsfonds.",
+      "terms": ["Maschinenwertschöpfungsbeitrag", "Automatisierungsdividende", "Wirkungseinkommen"],
+      "related_pages": ["begriffe/maschinenleistungsrueckkopplung/", "wirkungsfelder/arbeit-einkommen/", "erleben/automatisierungs-wirkungseinkommensrechner/"],
+      "sources": ["Wenn Maschinen arbeiten", "Online-Buch Kapitel 56", "Online-Buch Kapitel 57"],
+      "status": "published"
+    },
+    {
+      "id": "robotersteuer-abgrenzung",
+      "title": "Robotersteuer richtig einordnen",
+      "short_answer": "Robotersteuer ist in der WÖk kein Zielbegriff, sondern ein Kritik- und Suchbegriff. Präziser sind Maschinenleistungsrückkopplung, Maschinenwertschöpfungsbeitrag und Automatisierungsdividende.",
+      "one_sentence": "Robotersteuer beschreibt die alte Debatte; WÖk spricht von Rückkopplung statt Maschinenstrafe.",
+      "why_important": "Der Begriff Robotersteuer kann Automatisierung als Gegner rahmen. Die WÖk ist innovationsfreundlich und adressiert die alte Finanzierungslogik Arbeit → Einkommen → Sozialbeiträge.",
+      "impact_path": ["Robotersteuer-Debatte", "Ersatzarbeitslogik", "Abgrenzung", "Maschinenleistungsrückkopplung", "Automatisierungsdividende"],
+      "example": "Eine Suche nach Robotersteuer führt zur Abgrenzungsseite und verweist auf Maschinenleistungsrückkopplung.",
+      "terms": ["Robotersteuer", "Produktivitätssteuer", "Maschinenleistungsrückkopplung"],
+      "related_pages": ["begriffe/robotersteuer/", "begriffe/maschinenleistungsrueckkopplung/", "begriffe/automatisierungsdividende/"],
+      "sources": ["Automatisierungsseite", "Wenn Maschinen arbeiten"],
+      "status": "published"
+    },
+    {
+      "id": "wirkungsbiografie",
+      "title": "Wirkungsbiografie",
+      "short_answer": "Die Wirkungsbiografie erweitert die Erwerbsbiografie um gesellschaftliche Wirkleistung: Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "one_sentence": "Alterssicherung wird nicht nur über Erwerbsjahre, sondern über Lebenswirkung denkbar.",
+      "why_important": "Viele systemtragende Beiträge sind im alten Rentenmaßstab unterbewertet. Die WÖk macht sie sichtbar, ohne Personen moralisch zu bewerten.",
+      "impact_path": ["Erwerbsbiografie", "unterbewertete Beiträge", "Wirkungsbiografie", "Wirkungspunkte", "Wirkungsrente"],
+      "example": "Pflege, Bildungsarbeit und Prävention können in einer Modellrechnung als Wirkleistung sichtbar werden.",
+      "terms": ["Wirkungsrente", "Lebenswirkung", "Wirkleistungsbonus"],
+      "related_pages": ["begriffe/wirkungsbiografie/", "begriffe/wirkungsrente/", "erleben/wirkungsrenten-rechner/"],
+      "sources": ["Online-Buch Kapitel 58", "WP_Rente"],
       "status": "published"
     },
     {
