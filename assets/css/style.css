@@ -13869,21 +13869,18 @@ a.principle-card:hover,
 /* Library document reader -------------------------------------------------- */
 .workpaper-reader.reference-reader {
   display: block;
-  width: min(100% - (var(--space-gutter) * 2), 1120px);
-  max-width: 1120px;
+  width: min(100% - (var(--space-gutter) * 2), 1080px);
+  max-width: 1080px;
   margin-inline: auto;
   padding-block: clamp(1.4rem, 3.2vw, 2.8rem) clamp(3rem, 6vw, 5rem);
 }
 
 .workpaper-reader.reference-reader .article-shell {
-  display: grid;
-  grid-template-columns: minmax(12rem, 17rem) minmax(0, 48rem);
-  gap: clamp(1.2rem, 3vw, 2.4rem);
-  align-items: start;
+  display: block;
   width: 100%;
   max-width: 100%;
   margin-inline: auto;
-  padding: clamp(1.1rem, 2.6vw, 1.65rem);
+  padding: clamp(1.15rem, 2.8vw, 2rem);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   background: rgba(255, 252, 245, 0.78);
@@ -13892,26 +13889,26 @@ a.principle-card:hover,
 }
 
 .workpaper-reader .article-shell > .document-mini-map {
-  grid-column: 1;
-  grid-row: 1 / span 200;
-  position: sticky;
-  top: 5.6rem;
-  max-height: calc(100vh - 7rem);
-  margin: 0;
-  padding: 1rem;
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.8rem, 1fr));
+  gap: 0.35rem 0.75rem;
+  max-height: none;
+  margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+  padding: 0.95rem 1rem;
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--green);
+  border-top: 3px solid var(--green);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.82);
   box-shadow: none;
 }
 
 .workpaper-reader .article-shell > :not(.document-mini-map) {
-  grid-column: 2;
   min-width: 0;
 }
 
 .workpaper-reader .document-mini-map h2 {
+  grid-column: 1 / -1;
   font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 860;
@@ -13920,7 +13917,7 @@ a.principle-card:hover,
 }
 
 .workpaper-reader .document-mini-map a {
-  padding: 0.18rem 0;
+  padding: 0.22rem 0;
   color: var(--green-dark);
   font-size: 0.9rem;
   line-height: 1.35;
@@ -13935,7 +13932,7 @@ a.principle-card:hover,
 }
 
 .workpaper-reader .article-shell h1 {
-  max-width: 21ch;
+  max-width: 24ch;
   margin: 0;
   font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.04;
@@ -13960,7 +13957,7 @@ a.principle-card:hover,
 
 .workpaper-reader .article-shell p,
 .workpaper-reader .article-shell li {
-  max-width: 70ch;
+  max-width: 82ch;
   color: var(--text);
   font-size: clamp(1rem, 0.32vw + 0.96rem, 1.08rem);
   line-height: 1.72;
@@ -13969,7 +13966,7 @@ a.principle-card:hover,
 }
 
 .workpaper-reader .article-shell h2 {
-  max-width: 34ch;
+  max-width: 42ch;
   margin-top: clamp(1.8rem, 4vw, 3rem);
   font-size: clamp(1.35rem, 2vw, 1.9rem);
   line-height: 1.14;
@@ -13990,34 +13987,76 @@ a.principle-card:hover,
 }
 
 .workpaper-reader .article-shell h3 {
-  max-width: 38ch;
+  max-width: 52ch;
   font-size: clamp(1.18rem, 1.45vw, 1.45rem);
   line-height: 1.18;
 }
 
 .workpaper-reader.reference-reader > .section {
-  display: grid;
-  grid-template-columns: minmax(12rem, 17rem) minmax(0, 48rem);
-  gap: clamp(1.2rem, 3vw, 2.4rem);
+  display: block;
   width: 100%;
   max-width: 100%;
   margin: clamp(1rem, 2vw, 1.4rem) auto 0;
-  padding: 0 clamp(1.1rem, 2.6vw, 1.65rem);
+  padding: 0;
 }
 
 .workpaper-reader.reference-reader > .section > .card {
-  grid-column: 2;
   width: 100%;
   max-width: 100%;
-  padding: clamp(1rem, 2.4vw, 1.55rem);
+  padding: clamp(1.15rem, 2.8vw, 2rem);
   box-shadow: 0 14px 36px rgba(11, 16, 32, 0.045);
   overflow: hidden;
 }
 
 .workpaper-reader.reference-reader > .section h2 {
-  max-width: 24ch;
+  max-width: 42ch;
   font-size: clamp(1.45rem, 2.35vw, 2.2rem);
   line-height: 1.12;
+}
+
+.workpaper-reader .meta-box,
+.workpaper-reader .callout,
+.workpaper-reader .live-reference-notice {
+  max-width: none;
+  margin: clamp(1.1rem, 2.8vw, 1.8rem) 0;
+}
+
+.workpaper-reader .meta-box dl {
+  display: grid;
+  grid-template-columns: minmax(11rem, 0.3fr) minmax(0, 1fr);
+  gap: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.workpaper-reader .meta-box dt,
+.workpaper-reader .meta-box dd {
+  margin: 0;
+  padding: 0.72rem 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1.45;
+}
+
+.workpaper-reader .meta-box dt {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 860;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.workpaper-reader .meta-box dd {
+  min-width: 0;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.workpaper-reader .meta-box dt:last-of-type,
+.workpaper-reader .meta-box dd:last-of-type {
+  border-bottom: 0;
 }
 
 .workpaper-reader.reference-reader .table-wrap {
@@ -14083,5 +14122,18 @@ a.principle-card:hover,
   .workpaper-reader .document-reader-tools,
   .workpaper-reader .document-reader-tools .btn {
     width: 100%;
+  }
+
+  .workpaper-reader .meta-box dl {
+    grid-template-columns: 1fr;
+  }
+
+  .workpaper-reader .meta-box dt {
+    padding-bottom: 0.18rem;
+    border-bottom: 0;
+  }
+
+  .workpaper-reader .meta-box dd {
+    padding-top: 0;
   }
 }
