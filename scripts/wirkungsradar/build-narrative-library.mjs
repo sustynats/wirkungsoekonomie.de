@@ -1069,6 +1069,27 @@ function attrList(values) {
   return escapeHtml((values || []).join(" "));
 }
 
+const psychologyNotice =
+  "Psychologische Effekte sind keine Diagnose einzelner Personen. Sie beschreiben allgemeine menschliche Wahrnehmungs- und Kommunikationsmuster. Der Wirkungsradar nutzt sie, um Frames, Resonanzräume und Wirkungsrisiken sichtbar zu machen - nicht um Menschen abzuwerten.";
+
+const hostControlSteps = [
+  "Stoppen: nicht sofort in den Köder springen.",
+  "Frame markieren: Ich beantworte das, aber ich übernehme nicht den Frame.",
+  "Wahren Kern anerkennen.",
+  "Denkfehler oder psychologisches Muster benennen.",
+  "Zur Wirkungsfrage zurückführen.",
+  "Konkrete Lösung verlangen.",
+];
+
+function renderHostControlCard() {
+  return `<article class="card">
+                <p class="card-kicker">Kommunikative Kontrolle</p>
+                <h3 class="card-title">Gefühl anerkennen. Frame halten. Wirkungsfrage stellen.</h3>
+                <ul class="clean-list">${hostControlSteps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>
+                <p class="card-text"><strong>Standardsatz:</strong> Ich sehe den emotionalen Punkt. Aber ich trenne Gefühl, Fakt und Folgerung.</p>
+              </article>`;
+}
+
 function pageShell({ title, description, canonical, base, main }) {
   return `<!doctype html>
 <html lang="de">
@@ -1331,6 +1352,7 @@ function languageWirkstoffSection() {
 function renderIndex() {
   const cards = narratives
     .map((item) => {
+      const profile = psychologyProfile(item);
       const search = [
         item.title,
         item.shortName,
@@ -1340,9 +1362,11 @@ function renderIndex() {
         item.table.kurzform,
         item.table.hauptwirkung,
         item.table.live_prinzip,
+        ...profile.effects.map(([label]) => label),
+        ...profile.games,
         ...item.phrases,
       ].join(" ");
-      return `<a class="card text-link-card narrative-library-card" href="${item.slug}/" data-theme="${attrList(item.themes)}" data-resonance="${attrList(item.resonance)}" data-risk="${escapeHtml(item.riskLevel)}" data-search="${escapeHtml(search.toLowerCase())}">
+      return `<a class="card text-link-card narrative-library-card" href="${item.slug}/" data-theme="${attrList(item.themes)}" data-resonance="${attrList(item.resonance)}" data-risk="${escapeHtml(item.riskLevel)}" data-psychology="${escapeHtml(profile.effects.map(([label]) => label).join(" ").toLowerCase())}" data-pattern="${escapeHtml(profile.games.join(" ").toLowerCase())}" data-search="${escapeHtml(search.toLowerCase())}">
               <p class="card-kicker">${escapeHtml(item.shortName)}</p>
               <h3 class="card-title">${escapeHtml(item.subtitle)}</h3>
               <p class="card-text">${escapeHtml(item.summary.definition)}</p>
@@ -1392,8 +1416,10 @@ function renderIndex() {
         <div>
           <div class="section-header">
             <p class="hero-kicker">Psychologischer Wirkungscheck</p>
-            <h2 id="psychologische-effekte-title">Welche Effekte Narrative wirksam machen.</h2>
-            <p>Narrative wirken selten nur über eine einzelne Behauptung. Sie aktivieren psychologische Abkürzungen: Angst vor Verlust, Schutz des eigenen Weltbilds, Misstrauen gegenüber Korrekturen oder das Gefühl, ohnehin nichts ändern zu können. Wer diese Effekte erkennt, gewinnt Abstand zum Trigger und kann die Debatte zurück auf Wirkung, Evidenz und Verantwortung führen.</p>
+            <h2 id="psychologische-effekte-title">Psychologie ist keine Schwäche - sie ist Teil des Wirkungsraums.</h2>
+            <p>Menschen reagieren nicht nur auf Fakten. Sie reagieren auf Sicherheit, Zugehörigkeit, Status, Vertrauen, Angst, Kontrolle, Kränkung, Hoffnung und Sinn. Narrative wirken deshalb nicht nur über ihren Wahrheitsgehalt, sondern über psychologische Anschlussfähigkeit. Der Wirkungsradar analysiert diese Effekte nicht, um Menschen abzuwerten, sondern um Wirkmechanismen sichtbar zu machen. Wer sie erkennt, springt nicht mehr in jedes Stöckchen, übernimmt nicht jeden Frame und kann zur besseren Wirkungsfrage zurückführen.</p>
+            <p><strong>Kernsatz:</strong> Nicht manipulieren. Mechanismus erkennen. Frame halten. Wirkung zurückführen.</p>
+            <p class="formula-note">${psychologyNotice}</p>
           </div>
           <div class="card-grid four radar-psychology-grid">
             <a class="card text-link-card radar-psychology-card" href="../psychologie/">
@@ -1477,6 +1503,20 @@ function renderIndex() {
                 <option value="sehr hoch">sehr hoch</option>
               </select>
             </label>
+            <label>
+              <span class="sr-only">Nach psychologischem Effekt filtern</span>
+              <select name="psychology" data-narrative-psychology>
+                <option value="">Psychologie: alle</option>
+                ${["Kognitive Dissonanz", "Bestätigungsfehler", "Reaktanz", "Verlustaversion", "Verfügbarkeitsheuristik", "Identitätsschutz", "Ingroup-Outgroup-Bias", "Kontrollillusion", "Status-quo-Bias", "Optimismusbias"].map((value) => `<option value="${escapeHtml(value.toLowerCase())}">${escapeHtml(value)}</option>`).join("")}
+              </select>
+            </label>
+            <label>
+              <span class="sr-only">Nach Gesprächsmuster filtern</span>
+              <select name="pattern" data-narrative-pattern>
+                <option value="">Spielchen: alle</option>
+                ${["wahrer kern", "verteidigungsrolle", "verantwortung", "feindbild", "verschoben", "zensur", "herrschaft", "beweise", "kosten"].map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("")}
+              </select>
+            </label>
           </form>
           <p class="narrative-library-count" data-narrative-count>${narratives.length} Narrative</p>
           <div class="card-grid narrative-library-grid" data-narrative-grid>
@@ -1504,6 +1544,8 @@ function renderIndex() {
           const theme = document.querySelector("[data-narrative-theme]");
           const resonance = document.querySelector("[data-narrative-resonance]");
           const risk = document.querySelector("[data-narrative-risk]");
+          const psychology = document.querySelector("[data-narrative-psychology]");
+          const pattern = document.querySelector("[data-narrative-pattern]");
           const count = document.querySelector("[data-narrative-count]");
           const empty = document.querySelector("[data-narrative-empty]");
           const normalize = (value) => String(value || "").trim().toLowerCase();
@@ -1513,20 +1555,24 @@ function renderIndex() {
             const selectedTheme = normalize(theme?.value);
             const selectedResonance = normalize(resonance?.value);
             const selectedRisk = normalize(risk?.value);
+            const selectedPsychology = normalize(psychology?.value);
+            const selectedPattern = normalize(pattern?.value);
             let visible = 0;
             cards.forEach((card) => {
               const match =
                 (!q || card.dataset.search.includes(q)) &&
                 includesToken(card.dataset.theme, selectedTheme) &&
                 includesToken(card.dataset.resonance, selectedResonance) &&
-                (!selectedRisk || normalize(card.dataset.risk) === selectedRisk);
+                (!selectedRisk || normalize(card.dataset.risk) === selectedRisk) &&
+                (!selectedPsychology || normalize(card.dataset.psychology).includes(selectedPsychology)) &&
+                (!selectedPattern || normalize(card.dataset.pattern).includes(selectedPattern));
               card.hidden = !match;
               if (match) visible += 1;
             });
             if (count) count.textContent = visible === 1 ? "1 Narrativ" : visible + " Narrative";
             if (empty) empty.hidden = visible !== 0;
           };
-          [search, theme, resonance, risk].forEach((control) => control?.addEventListener("input", update));
+          [search, theme, resonance, risk, psychology, pattern].forEach((control) => control?.addEventListener("input", update));
           update();
         })();
       </script>
@@ -1981,8 +2027,9 @@ function psychologyProfile(item) {
 
 function renderPsychologySection(item) {
   const profile = psychologyProfile(item);
-  return `<h2 id="psychologie">Psychologische Effekte und Gegenstrategie</h2>
-            <p>Dieses Narrativ wirkt nicht nur über Fakten, sondern über psychologische Abkürzungen. Entscheidend ist, den Mechanismus sichtbar zu machen, ohne ihn unnötig zu verstärken.</p>
+  return `<h2 id="psychologie">Psychologischer Wirkungscheck</h2>
+            <p>Dieses Narrativ wirkt nicht nur über Fakten, sondern über psychologische Abkürzungen, emotionale Trigger und Gesprächsmuster. Entscheidend ist, den Mechanismus sichtbar zu machen, ohne ihn unnötig zu verstärken.</p>
+            <p class="formula-note">${psychologyNotice}</p>
             <div class="card-grid radar-psychology-grid">
               ${profile.effects
                 .map(
@@ -2001,11 +2048,12 @@ function renderPsychologySection(item) {
                 <ul class="clean-list">${profile.games.map((game) => `<li>${escapeHtml(game)}</li>`).join("")}</ul>
               </article>
               <article class="card">
-                <p class="card-kicker">Oberhand gewinnen</p>
+                <p class="card-kicker">Frame-Kontrolle</p>
                 <h3 class="card-title">So umgehst du den Trigger</h3>
                 <p class="card-text">${escapeHtml(profile.counter)}</p>
                 <p class="card-text"><strong>Merksatz:</strong> Nicht spiegeln, nicht beschämen, nicht ausweichen. Mechanismus markieren, wahren Kern retten, Wirkungspfad zurückholen.</p>
               </article>
+              ${renderHostControlCard()}
             </div>`;
 }
 
@@ -2054,7 +2102,7 @@ function renderDetail(item) {
               <li><a href="#definition">Definition</a></li>
               <li><a href="#typische-saetze">Typische Sätze</a></li>
               <li><a href="#wirkungspfad">Wirkungspfad</a></li>
-              <li><a href="#psychologie">Psychologische Effekte</a></li>
+              <li><a href="#psychologie">Psychologischer Wirkungscheck</a></li>
               <li><a href="#mpd">Mensch, Planet, Demokratie</a></li>
               <li><a href="#host-antworten">Host-Antworten</a></li>
               <li><a href="#stoeckchen">Nicht ins Stöckchen springen</a></li>

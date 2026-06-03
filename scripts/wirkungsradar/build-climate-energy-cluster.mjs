@@ -1846,6 +1846,92 @@ function htmlList(items) {
   return `<ul class="clean-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
 }
 
+const psychologyNotice =
+  "Psychologische Effekte sind keine Diagnose einzelner Personen. Sie beschreiben allgemeine menschliche Wahrnehmungs- und Kommunikationsmuster. Der Wirkungsradar nutzt sie, um Frames, Resonanzräume und Wirkungsrisiken sichtbar zu machen - nicht um Menschen abzuwerten.";
+
+const hostControlSteps = [
+  "Stoppen: nicht sofort auf den Köder reagieren.",
+  "Frame markieren: Ich beantworte das, aber ich übernehme nicht den Frame.",
+  "Wahren Kern anerkennen.",
+  "Denkfehler oder psychologisches Muster benennen.",
+  "Zur Wirkungsfrage zurückführen.",
+  "Konkrete Lösung verlangen.",
+];
+
+const psychologyBySlug = {
+  "deutschland-nur-zwei-prozent": {
+    effects: ["Verantwortungsdiffusion", "Erlernte Hilflosigkeit", "Motiviertes Denken"],
+    triggers: ["Entlastung", "Ohnmacht", "Kostenabwehr"],
+    patterns: ["Whataboutism", "Territorialframe", "Verantwortungsverkürzung"],
+    why: "Der kleine Prozentwert fühlt sich wie ein Freispruch an. Aus einer Teilzahl wird ein psychologischer Entlastungsanker.",
+  },
+  "co2-preis-oder-fossile-systemkosten": {
+    effects: ["Verlustaversion", "Reaktanz", "Salienz-Bias"],
+    triggers: ["sichtbare Rechnung", "Fairnessgefühl", "Abzocke-Frame"],
+    patterns: ["nur neue Kosten zeigen", "ausgelagerte Schäden ausblenden", "Rückverteilung verschweigen"],
+    why: "Sichtbare Kosten wirken stärker als vermiedene Schäden, obwohl die fossilen Systemkosten real weiterlaufen.",
+  },
+  "e-autos-schlimmer-als-verbrenner": {
+    effects: ["Verfügbarkeitsheuristik", "Negativitätsbias", "falscher Lebenszyklusvergleich"],
+    triggers: ["Rohstoffangst", "Technikmisstrauen", "Gerechtigkeitsgefühl"],
+    patterns: ["Akku-Fokus ohne Betrieb", "Strommix statisch setzen", "Verbrennerfolgen unsichtbar machen"],
+    why: "Ein emotional auffälliger Akku wirkt greifbarer als Millionen Liter verbrannter Kraftstoff und laufende Abgase.",
+  },
+  "batterien-sind-nicht-recyclebar": {
+    effects: ["Verfügbarkeitsheuristik", "Negativitätsbias", "Verlustaversion"],
+    triggers: ["Giftmüllbild", "Brandangst", "Rohstoffsorge"],
+    patterns: ["Altdaten verallgemeinern", "Recyclingfortschritt ausblenden", "Benzin/Diesel als verschwindenden Rohstoff vergessen"],
+    why: "Der Akku bleibt sichtbar. Der verbrannte Kraftstoff ist weg. Dadurch wirkt der Akku als Problemträger, obwohl er industriell wiedergewonnen werden kann.",
+  },
+  "kernenergie-einfache-loesung": {
+    effects: ["Kontrollbedürfnis", "Nostalgie-Bias", "Komplexitätsreduktion"],
+    triggers: ["Versorgungssicherheit", "Industrieangst", "Technikvertrauen"],
+    patterns: ["Zeitpfad ausblenden", "Kosten externalisieren", "Systemintegration verkürzen"],
+    why: "Ein großes Kraftwerk fühlt sich kontrollierbarer an als ein verteiltes Energiesystem mit Netzen, Speichern und Flexibilität.",
+  },
+  "fusion-loest-das-problem": {
+    effects: ["Optimismusbias", "Gegenwartsbias", "Technikwunder-Aufschub"],
+    triggers: ["Hoffnung", "Aufschubentlastung", "Erlösungsversprechen"],
+    patterns: ["Potenzial mit Wirkung verwechseln", "Zeitpfad verschieben", "heutige Lösungen entwerten"],
+    why: "Eine mögliche Zukunftstechnologie nimmt Druck aus heutigen Entscheidungen, obwohl heutige Emissionen weiter wirken.",
+  },
+};
+
+function psychologyForClaim(claim) {
+  return psychologyBySlug[claim.slug] || {
+    effects: ["Kognitive Dissonanz", "Bestätigungsfehler", "Reaktanz"],
+    triggers: [claim.narrativeFamilies?.[0] || "Narrativdruck", claim.summary?.problem || "Denkfehler", "Handlungsabwehr"],
+    patterns: ["wahren Kern überdehnen", "Folgekosten ausblenden", "Wirkungsfrage verschieben"],
+    why: "Der Frame bietet schnelle emotionale Entlastung und macht eine komplexe Wirkungsfrage scheinbar einfacher.",
+  };
+}
+
+function renderPsychologyModule(claim) {
+  const profile = psychologyForClaim(claim);
+  return `<section class="section section-soft deep-dive-section" id="psychologischer-wirkungscheck">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum der Frame hängen bleibt.</h2><p>${escapeHtml(psychologyNotice)}</p></div>
+          <div class="card-grid three">
+            <article class="card"><p class="card-kicker">Kognitive Effekte</p>${htmlList(profile.effects)}</article>
+            <article class="card"><p class="card-kicker">Emotionale Trigger</p>${htmlList(profile.triggers)}</article>
+            <article class="card"><p class="card-kicker">Gesprächsmuster</p>${htmlList(profile.patterns)}</article>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Warum es wirkt</p><p class="card-text">${escapeHtml(profile.why)}</p></article>
+            <article class="card"><p class="card-kicker">Kommunikative Kontrolle zurückgewinnen</p><h3 class="card-title">Gefühl anerkennen. Frame halten. Wirkungsfrage stellen.</h3>${htmlList(hostControlSteps)}<p class="card-text"><strong>Standardsatz:</strong> Ich sehe den emotionalen Punkt. Aber ich trenne Gefühl, Fakt und Folgerung.</p></article>
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderHostControlModule() {
+  return `<section class="section section-soft" id="kommunikative-kontrolle"><div><div class="section-header"><p class="hero-kicker">Live-Kompetenz</p><h2>Kommunikative Kontrolle zurückgewinnen.</h2><p>Oberhand bedeutet hier nicht Dominanz, sondern Frame-Kontrolle: ruhig bleiben, Mechanismus sichtbar machen und zur prüfbaren Wirkung zurückführen.</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Ablauf</p>${htmlList(hostControlSteps)}</article><article class="card"><p class="card-kicker">Formel</p><h3 class="card-title">Gefühl anerkennen. Frame halten. Wirkungsfrage stellen.</h3><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame.</p><p class="card-text">Ich sehe den emotionalen Punkt. Aber ich trenne Gefühl, Fakt und Folgerung.</p></article></div></div></section>`;
+}
+
+function renderPsychologicalStoeckchenChecklist() {
+  return `<section class="section" id="psychologische-stoeckchen"><div><div class="section-header"><p class="hero-kicker">Checkliste</p><h2>Woran erkenne ich psychologische Stöckchen?</h2></div>${summaryGrid([["Emotion vor Klärung", "Wut, Angst oder Kränkung soll schneller sein als Prüfung.", "warning"], ["Falsche Voraussetzung", "Die Frage enthält bereits den Frame.", "critical"], ["Beweislastumkehr", "Du sollst endlos widerlegen, statt der Claim belegt wird.", "warning"], ["Themenverschiebung", "Nach jeder Klärung kommt der nächste Vorwurf.", "warning"], ["Identitätsfalle", "Widerspruch soll wie Angriff auf Zugehörigkeit wirken.", "critical"], ["Host-Satz", "Ich reagiere nicht auf den Köder, sondern auf den Mechanismus.", "positive"]], "Psychologische Stöckchen", "stoeckchen-warning-grid")}</div></section>`;
+}
+
 function deepDiveLiveLink(claim) {
   if (!deepDiveDetailFor(claim)) return "";
   return `<section class="section section-soft deep-dive-live-link" aria-labelledby="deep-dive-link-${escapeHtml(claim.slug)}">
@@ -2267,6 +2353,7 @@ function renderDeepDiveDetail(claim) {
               <li><a href="#faktenlage">Faktenlage</a></li>
               <li><a href="#wirkstoff">Gesellschaftlicher Wirkstoff</a></li>
               <li><a href="#wirkungspfad">Wirkmechanismus</a></li>
+              <li><a href="#psychologischer-wirkungscheck">Psychologischer Wirkungscheck</a></li>
               <li><a href="#wirkungsordnung">Wirkungsordnung</a></li>
               ${detail.batteryAudit ? '<li><a href="#akku-faktencheck">Akku-Faktencheck</a></li>' : ""}
               <li><a href="#folgenanalyse">Folgenanalyse</a></li>
@@ -2303,6 +2390,7 @@ function renderDeepDiveDetail(claim) {
                 ${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("\n                ")}
               </ol>
             </section>
+            ${renderPsychologyModule(claim)}
             ${renderWirkungOrders(detail)}
             ${renderBatteryAudit(detail)}
             ${renderFalseActionAnalysis(detail)}
@@ -2515,6 +2603,8 @@ function renderClusterPage() {
       ${summaryGrid(clusterSummary, "Klima & Energie Summary")}
       ${methodBox()}
       ${topicSubnav("Themen", "../")}
+      ${renderHostControlModule()}
+      ${renderPsychologicalStoeckchenChecklist()}
       ${debateMap()}
       ${claimIndex()}
       ${evidenceStack()}
@@ -2546,6 +2636,7 @@ function renderSubtopic(topic) {
       ${summaryGrid(topic.summary, `${topic.title} Summary`)}
       ${methodBox()}
       ${topicSubnav("Themen", "../../")}
+      ${renderHostControlModule()}
       <section class="section" aria-labelledby="topic-claims">
         <div>
           <div class="section-header"><p class="hero-kicker">Live-Karten</p><h2 id="topic-claims">Aussagen in diesem Thema.</h2></div>
@@ -2735,6 +2826,7 @@ function renderGermanyTwoPercentDossier(claim) {
           </ol>
         </div>
       </section>
+      ${renderPsychologyModule(claim)}
       <section class="section dossier-tab-panel" id="deep-dive-quellen">
         <div>
           <div class="section-header"><p class="hero-kicker">Deep Dive &amp; Quellen</p><h2>Datenlogik, Folgen und Rückkopplung.</h2></div>
@@ -2944,6 +3036,7 @@ function renderCo2SystemCostsDossier(claim, mode = "live") {
           <ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol>
         </div>
       </section>
+      ${renderPsychologyModule(claim)}
       ${woekSolutionMatrix([
         "CO₂-Preis als Rückkopplung, nicht als Strafzahlung: fossile Wirkung sichtbar machen und Investitionsentscheidungen verändern.",
         "Einnahmen sozial und transformativ verwenden: Klimageld, Gebäudesanierung, ÖPNV, Erneuerbare, Industrieumbau und direkte Entlastung.",
@@ -3049,6 +3142,7 @@ function renderLiveCard(claim) {
           </ol>
         </div>
       </section>
+      ${renderPsychologyModule(claim)}
       <section class="section">
         <div class="card-grid two">
           <article class="card"><p class="card-kicker">Faktenlage</p><h2 class="card-title">Was prüfbar ist.</h2><ul class="clean-list">${claim.facts.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>

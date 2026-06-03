@@ -584,6 +584,86 @@ function cleanList(items) {
   return `<ul class="clean-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
 }
 
+const psychologyNotice =
+  "Psychologische Effekte sind keine Diagnose einzelner Personen. Sie beschreiben allgemeine menschliche Wahrnehmungs- und Kommunikationsmuster. Der Wirkungsradar nutzt sie, um Frames, Resonanzräume und Wirkungsrisiken sichtbar zu machen - nicht um Menschen abzuwerten.";
+
+const hostControlSteps = [
+  "Stoppen: nicht sofort auf den Köder reagieren.",
+  "Frame markieren: Ich beantworte das, aber ich übernehme nicht den Frame.",
+  "Wahren Kern anerkennen.",
+  "Denkfehler oder psychologisches Muster benennen.",
+  "Zur Wirkungsfrage zurückführen.",
+  "Konkrete Lösung verlangen.",
+];
+
+const democracyPsychologyBySlug = {
+  "man-darf-ja-nichts-mehr-sagen": {
+    effects: ["Reaktanz", "Kognitive Dissonanz", "Identitätsschutz-Kognition"],
+    triggers: ["Kränkung", "Trotz", "Opfergefühl"],
+    patterns: ["Opferumkehr", "Widerspruch als Zensur rahmen", "Beweislastumkehr"],
+    why: "Der Satz verwandelt Kritik in Unterdrückung. Dadurch muss nicht mehr über Wirkung, Verantwortung oder konkrete Aussage gesprochen werden.",
+  },
+  "mainstreammedien-luegen": {
+    effects: ["Hostile-Media-Effekt", "Bestätigungsfehler", "Illusory Truth Effect"],
+    triggers: ["Misstrauen", "Zugehörigkeit", "Kontrollbedürfnis"],
+    patterns: ["Quellenzerstörung", "Pauschaldelegitimierung", "Echokammer-Immunisierung"],
+    why: "Wenn alle unbequemen Quellen als Lüge gelten, bleibt nur noch das eigene Lager als Wahrheitsfilter übrig.",
+  },
+  "die-wissenschaft-irrt-staendig": {
+    effects: ["Motivated Reasoning", "Bestätigungsfehler", "Unsicherheitsaversion"],
+    triggers: ["Statusschutz", "Komplexitätsstress", "Autoritätsabwehr"],
+    patterns: ["Einzelfehler verallgemeinern", "Unsicherheit als Betrug rahmen", "Rosinenpickerei"],
+    why: "Wissenschaftliche Korrektur wird als Schwäche gelesen, obwohl sie der eigentliche Qualitätsmechanismus ist.",
+  },
+  "sdgs-sind-weltregierung": {
+    effects: ["Reaktanz", "Kontrollbedürfnis", "Proportionality Bias"],
+    triggers: ["Souveränitätsangst", "Kontrollverlust", "Elitenverdacht"],
+    patterns: ["Kooperation als Herrschaft umdeuten", "Zuständigkeiten verwischen", "Verschwörungslogik"],
+    why: "Globale Koordination wirkt bedrohlich, wenn demokratische Entscheidungswege und Zuständigkeiten ausgeblendet werden.",
+  },
+  "wirkungsokonomie-ist-social-credit": {
+    effects: ["Reaktanz", "Verlustaversion", "Kontrollbedürfnis"],
+    triggers: ["Überwachungsangst", "Freiheitsalarm", "Statusbedrohung"],
+    patterns: ["Bewertung mit Bestrafung verwechseln", "Transparenz als Kontrolle rahmen", "Dammbruchlogik"],
+    why: "Der Social-Credit-Frame aktiviert Freiheitsabwehr, bevor geklärt ist, was gemessen, entschieden und demokratisch kontrolliert wird.",
+  },
+};
+
+function psychologyForClaim(claim) {
+  return democracyPsychologyBySlug[claim.slug] || {
+    effects: ["Kognitive Dissonanz", "Bestätigungsfehler", "Ingroup-Outgroup-Bias"],
+    triggers: [claim.narrativeFamilies?.[0] || "Narrativdruck", "Kränkung", "Zugehörigkeit"],
+    patterns: ["Frame-Übernahme erzwingen", "falsche Voraussetzung setzen", "Themenverschiebung"],
+    why: "Der Frame schafft emotionale Orientierung und Lagerbindung, bevor der konkrete Sachverhalt geprüft wird.",
+  };
+}
+
+function renderPsychologyModule(claim) {
+  const profile = psychologyForClaim(claim);
+  return `<section class="section section-soft deep-dive-section" id="psychologischer-wirkungscheck">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum der Frame hängen bleibt.</h2><p>${escapeHtml(psychologyNotice)}</p></div>
+          <div class="card-grid three">
+            <article class="card"><p class="card-kicker">Kognitive Effekte</p>${cleanList(profile.effects)}</article>
+            <article class="card"><p class="card-kicker">Emotionale Trigger</p>${cleanList(profile.triggers)}</article>
+            <article class="card"><p class="card-kicker">Gesprächsmuster</p>${cleanList(profile.patterns)}</article>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Warum es wirkt</p><p class="card-text">${escapeHtml(profile.why)}</p></article>
+            <article class="card"><p class="card-kicker">Kommunikative Kontrolle zurückgewinnen</p><h3 class="card-title">Gefühl anerkennen. Frame halten. Wirkungsfrage stellen.</h3>${cleanList(hostControlSteps)}<p class="card-text"><strong>Standardsatz:</strong> Ich sehe den emotionalen Punkt. Aber ich trenne Gefühl, Fakt und Folgerung.</p></article>
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderHostControlModule() {
+  return `<section class="section section-soft" id="kommunikative-kontrolle"><div><div class="section-header"><p class="hero-kicker">Live-Kompetenz</p><h2>Kommunikative Kontrolle zurückgewinnen.</h2><p>Oberhand bedeutet hier nicht Dominanz, sondern Frame-Kontrolle: ruhig bleiben, Mechanismus sichtbar machen und zur prüfbaren Wirkung zurückführen.</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Ablauf</p>${cleanList(hostControlSteps)}</article><article class="card"><p class="card-kicker">Formel</p><h3 class="card-title">Gefühl anerkennen. Frame halten. Wirkungsfrage stellen.</h3><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame.</p><p class="card-text">Ich sehe den emotionalen Punkt. Aber ich trenne Gefühl, Fakt und Folgerung.</p></article></div></div></section>`;
+}
+
+function renderPsychologicalStoeckchenChecklist() {
+  return `<section class="section" id="psychologische-stoeckchen"><div><div class="section-header"><p class="hero-kicker">Checkliste</p><h2>Woran erkenne ich psychologische Stöckchen?</h2></div>${summaryGrid([["Emotion vor Klärung", "Wut, Angst oder Kränkung soll schneller sein als Prüfung.", "warning"], ["Falsche Voraussetzung", "Die Frage enthält bereits den Frame.", "critical"], ["Beweislastumkehr", "Du sollst endlos widerlegen, statt der Claim belegt wird.", "warning"], ["Themenverschiebung", "Nach jeder Klärung kommt der nächste Vorwurf.", "warning"], ["Identitätsfalle", "Widerspruch soll wie Angriff auf Zugehörigkeit wirken.", "critical"], ["Host-Satz", "Ich reagiere nicht auf den Köder, sondern auf den Mechanismus.", "positive"]], "Psychologische Stöckchen", "stoeckchen-warning-grid")}</div></section>`;
+}
+
 function standardBoxes(includeFreedom = true) {
   const freedomMarkup = includeFreedom
     ? `\n          <article class="card freedom-box"><p class="card-kicker">Freiheit schützen</p><h3 class="card-title">${escapeHtml(freedomBox.title)}</h3><p class="card-text">${escapeHtml(freedomBox.text)}</p>${cleanList(freedomBox.bullets)}</article>`
@@ -653,6 +733,8 @@ function renderClusterPage() {
       </section>
       ${summaryGrid(clusterSummary, "Demokratie & Öffentlichkeit Summary")}
       ${topicSubnav("Themen", "../")}
+      ${renderHostControlModule()}
+      ${renderPsychologicalStoeckchenChecklist()}
       <section class="section"><div><div class="section-header"><p class="hero-kicker">Einordnung</p><h2>Öffentliche Aussagen sind gesellschaftliche Wirkstoffe.</h2></div><p class="radar-abstract">Öffentliche Aussagen sind nicht nur Meinungen. Sie können Vertrauen stärken oder zerstören, handlungsfähig machen oder ohnmächtig, Kritik ermöglichen oder Feindbilder erzeugen. Die Wirkungsökonomie betrachtet Demokratie als Wirkungsraum: Wahrheit, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit und institutionelles Vertrauen sind Voraussetzungen dafür, dass Mensch und Planet geschützt werden können.</p></div></section>
       ${standardBoxes()}
       ${claimIndex()}
@@ -708,6 +790,7 @@ function renderSubtopic(topic) {
       </section>
       ${summaryGrid([["Kernfrage", topic.subtitle, "neutral"], ["Claims", `${topicClaims.length} Live-Karten`, "positive"], ["SDG+", "Diskursfähigkeit, Quellenklarheit, institutionelles Vertrauen", "positive"], ["Leitlinie", "Legitime Kritik anerkennen, Zersetzung sichtbar machen.", "warning"]], `${topic.title} Summary`)}
       ${topicSubnav("Themen", "../../")}
+      ${renderHostControlModule()}
       ${standardBoxes()}
       <section class="section"><div><div class="section-header"><p class="hero-kicker">Live-Karten</p><h2>Aussagen in diesem Thema.</h2></div><div class="card-grid">${topicClaims.map((claim) => `<a class="card text-link-card" href="../../../live/${claim.slug}/"><p class="card-kicker">${escapeHtml(claim.shortJudgement)}</p><h3 class="card-title">${escapeHtml(claim.title)}</h3><p class="card-text">${escapeHtml(claim.summary.host_answer)}</p></a>`).join("")}</div></div></section>
       ${responseMatrix()}
@@ -741,6 +824,7 @@ function renderLiveCard(claim) {
       <section class="section" id="host-antworten"><div><div class="section-header"><p class="hero-kicker">Host-Antworten</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2></div>${hostAnswers(claim)}</div></section>
       <section class="section section-soft"><div class="card-grid three"><article class="card"><p class="card-kicker">Frame sichtbar machen</p><h2 class="card-title">Nicht übernehmen.</h2><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame. Ich prüfe konkret: Welche Aussage, welche Quelle, welche Wirkung?</p></article><article class="card"><p class="card-kicker">Gute Rückfrage</p><h2 class="card-title">Zur Prüfung zurück.</h2><p class="card-text">${escapeHtml(claim.redirectQuestion)}</p></article><article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><h2 class="card-title">Ruhig bleiben.</h2><p class="card-text">Wahren Kern anerkennen, Denkfehler benennen, Narrativ sichtbar machen und zur demokratischen Wirkungsfrage zurückführen.</p></article></div></section>
       <section class="section"><div><div class="section-header"><p class="hero-kicker">Wirkungspfad</p><h2>Wie der Satz wirken kann.</h2></div>${effectPath()}</div></section>
+      ${renderPsychologyModule(claim)}
       ${summaryGrid([["Mensch", "Menschen verlieren Orientierung, Vertrauen oder Schutzräume.", "warning"], ["Planet", "Ökologische Fakten und Klimapolitik können leichter delegitimiert werden.", "warning"], ["Demokratie", claim.summary.risk, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
       ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, claim.riskLevel === "sehr hoch" ? "critical" : "warning"]], `${claim.title} SDG`, "climate-sdg-panel")}
       ${standardBoxes(claim.woekCritical)}
@@ -777,7 +861,7 @@ function renderDetailPage(claim) {
       ${topicSubnav("Detail", "../")}
       <section class="section">
         <div class="radar-detail-layout">
-          <nav class="article-toc" aria-label="Inhaltsverzeichnis" data-search-exclude><p>Inhaltsverzeichnis</p><ol><li><a href="#aussage">Aussage</a></li><li><a href="#kurzurteil">Kurzurteil</a></li><li><a href="#was-stimmt">Was stimmt daran?</a></li><li><a href="#was-fehlt">Was fehlt?</a></li><li><a href="#begriff">Begriffliche Klärung</a></li><li><a href="#faktenlage">Fakten- und Rechtslage</a></li><li><a href="#wirkungspfad">Wirkungspfad</a></li><li><a href="#antwort">WÖk-Antwort</a></li><li><a href="#creator-export">Creator Export</a></li><li><a href="#quellen">Quellen</a></li></ol></nav>
+          <nav class="article-toc" aria-label="Inhaltsverzeichnis" data-search-exclude><p>Inhaltsverzeichnis</p><ol><li><a href="#aussage">Aussage</a></li><li><a href="#kurzurteil">Kurzurteil</a></li><li><a href="#was-stimmt">Was stimmt daran?</a></li><li><a href="#was-fehlt">Was fehlt?</a></li><li><a href="#begriff">Begriffliche Klärung</a></li><li><a href="#faktenlage">Fakten- und Rechtslage</a></li><li><a href="#wirkungspfad">Wirkungspfad</a></li><li><a href="#psychologischer-wirkungscheck">Psychologischer Wirkungscheck</a></li><li><a href="#antwort">WÖk-Antwort</a></li><li><a href="#creator-export">Creator Export</a></li><li><a href="#quellen">Quellen</a></li></ol></nav>
           <article class="article-body deep-dive-body">
             <section class="section deep-dive-section" id="aussage"><div class="section-header"><p class="hero-kicker">ClaimAnatomy</p><h2>Aussage zerlegen.</h2></div><div class="deep-dive-definition-grid"><article class="card"><p class="card-kicker">Originalaussage</p><h3 class="card-title">${escapeHtml(claim.title)}</h3></article><article class="card"><p class="card-kicker">Narrativ</p><h3 class="card-title">${escapeHtml(claim.narrativeFamilies.join(" / "))}</h3></article><article class="card"><p class="card-kicker">Wahrer Kern</p><p class="card-text">${escapeHtml(claim.summary.true_core)}</p></article><article class="card"><p class="card-kicker">Denkfehler</p><p class="card-text">${escapeHtml(claim.summary.problem)}</p></article></div></section>
             <section class="section deep-dive-section deep-dive-text-section" id="kurzurteil"><h2>Kurzurteil</h2><p>${escapeHtml(claim.summary.judgement)}</p></section>
@@ -787,6 +871,7 @@ function renderDetailPage(claim) {
             <section class="section deep-dive-section" id="faktenlage"><div class="section-header"><p class="hero-kicker">Fakten- und Rechtslage / wissenschaftliche Einordnung</p><h2>Prüfstand und Quellen.</h2></div>${sourceCards(claim.sources)}</section>
             ${criticalStandards}
             <section class="section deep-dive-section" id="wirkungspfad"><div class="section-header"><p class="hero-kicker">Wirkstoffanalyse und Wirkungspfad</p><h2>Von Aussage zu demokratischem Risiko.</h2></div>${effectPath()}</section>
+            ${renderPsychologyModule(claim)}
             <section class="section deep-dive-section"><div class="section-header"><p class="hero-kicker">Wirkungen 1., 2. und 3. Ordnung</p><h2>Wie sich der Frame fortsetzt.</h2></div><div class="card-grid three"><article class="card"><p class="card-kicker">1. Ordnung</p><p class="card-text">Menschen übernehmen einen emotionalen Frame.</p></article><article class="card"><p class="card-kicker">2. Ordnung</p><p class="card-text">Diskussionen und Communities verschieben sich.</p></article><article class="card"><p class="card-kicker">3. Ordnung</p><p class="card-text">Gemeinsame Faktenbasis und Korrekturmechanismen werden geschwächt.</p></article></div></section>
             <section class="section section-soft deep-dive-section"><div><div class="section-header"><p class="hero-kicker">Folgen falschen Handelns</p><h2>Was wahrscheinlicher wird.</h2></div>${cleanList(["Pauschales Misstrauen ersetzt konkrete Prüfung.", "Desinformation wird anschlussfähiger.", "Demokratische Korrektur wird schwieriger.", "Legitime Kritik verliert Schärfe, weil sie in Feindbildern aufgeht."])}</div></section>
             ${summaryGrid([["Mensch", "Orientierung und Schutzräume werden geschwächt.", "warning"], ["Planet", "Wissenschafts- und Klimafakten werden leichter delegitimiert.", "warning"], ["Demokratie", claim.summary.risk, "critical"]], `${claim.title} MPD`, "mpd-impact-panel deep-dive-inline-summary")}
@@ -883,6 +968,8 @@ function renderLiveIndex() {
       <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Live</nav><p class="hero-kicker">Für TikTok, Panels, Kommentarspalten und Moderation</p><h1 class="hero-title">Wirkungsradar Live</h1><p class="hero-subtitle">Kurze Antworten für Momente, in denen nicht die längste Analyse gewinnt, sondern der ruhigste Rahmen.</p><p class="radar-abstract"><strong>Abstract:</strong> Die Live-Karten übersetzen Wirkungschecks in kurze, sprechbare Antworten. Sie benennen wahren Kern, Denkfehler, Narrativ, Rückfrage und Wirkungspfad.</p><p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Vertrauensniveau: hoch</span></p></div></section>
       ${summaryGrid([["Live-Karten", `${totalCards} Karten aus Klima, Energie, Demokratie und Öffentlichkeit.`, "positive"], ["Format", "10 Sekunden, 30 Sekunden und 2 Minuten.", "neutral"], ["Start", "Erst wahren Kern nennen, dann Denkfehler zeigen.", "positive"], ["Frame", "Narrativ benennen, ohne es zu übernehmen.", "warning"], ["Risiko", "Wirkungsrisiko zeigen, wenn man danach handelt.", "critical"], ["Antwort", "Zur demokratisch prüfbaren Frage zurückführen.", "positive"]], "Live Summary")}
       <section class="section section-soft stoeckchen-module" id="stoeckchen-erkennung"><div><div class="section-header"><p class="hero-kicker">Stöckchen-Erkennung</p><h2>Woran erkenne ich ein demokratiebezogenes Stöckchen?</h2></div>${summaryGrid([["Pauschale Delegitimierung", "Alle Medien, Wissenschaftler:innen, Politiker:innen oder Institutionen werden als korrupt dargestellt.", "warning"], ["Falsche Opferrolle", "Kritik, Moderation oder Faktencheck wird als Unterdrückung geframt.", "warning"], ["Verschwörungslogik", "Komplexe Prozesse werden als geheimer Plan gedeutet.", "critical"], ["Frame-Frage", "Die Frage enthält bereits eine unbelegte Behauptung.", "critical"], ["Endlos-Ausweichen", "Sobald ein Punkt geklärt ist, wird zum nächsten Vorwurf gewechselt.", "warning"], ["Host-Satz", "Ich beantworte das, aber ich übernehme nicht den Frame.", "positive"]], "Stöckchen-Erkennung", "stoeckchen-warning-grid")}</div></section>
+      ${renderHostControlModule()}
+      ${renderPsychologicalStoeckchenChecklist()}
       ${topicSubnav("Live", "")}
       <section class="section" id="startliste"><div><div class="section-header"><p class="hero-kicker">Alle Live-Karten</p><h2>${totalCards} kurze Antworten im Wirkungsradar.</h2></div></div></section>
       <section class="section section-soft" id="klima-energie-live"><div><div class="section-header"><p class="hero-kicker">Klima &amp; Energie</p><h2>${climateCards.length} Live-Karten.</h2></div>${liveCardGrid(climateCards)}</div></section>
