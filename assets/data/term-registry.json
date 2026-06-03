@@ -269728,12 +269728,14 @@
       "aliases": [
         "Stranded Assets",
         "Stranded Asset",
-        "gestrandete Vermögenswerte"
+        "gestrandete Vermögenswerte",
+        "wirkungsbedingte Stranded Assets"
       ],
       "synonyms": [
         "Stranded Assets",
         "Stranded Asset",
-        "gestrandete Vermögenswerte"
+        "gestrandete Vermögenswerte",
+        "wirkungsbedingte Stranded Assets"
       ],
       "shortDefinition": "Stranded Assets sind Vermögenswerte, die durch veränderte Risiken, Regeln, Märkte, Technologien oder ökologische Bedingungen an Wert verlieren.",
       "definition": "In der WÖk zeigen Stranded Assets, dass negative oder verdrängte Wirkungen irgendwann in Kapitalwert, Versicherbarkeit, Finanzierung, Betriebskosten oder Nutzbarkeit zurückkehren können.",
@@ -269758,7 +269760,12 @@
         "lock-in-pfadabhaengigkeit",
         "spekulationslogik",
         "uebergangstaetigkeit",
-        "wix-vi"
+        "wix-vi",
+        "wirkungsbedingte-stranded-assets",
+        "strandinggefaehrdeter-kredit",
+        "gestrandeter-kredit",
+        "scheinkapital",
+        "wirkungsbelasteter-kredit"
       ],
       "officialSources": [
         "TCFD Recommendations|https://www.fsb-tcfd.org/recommendations/"
@@ -269803,7 +269810,12 @@
         "lock-in-pfadabhaengigkeit",
         "spekulationslogik",
         "uebergangstaetigkeit",
-        "wix-vi"
+        "wix-vi",
+        "wirkungsbedingte-stranded-assets",
+        "strandinggefaehrdeter-kredit",
+        "gestrandeter-kredit",
+        "scheinkapital",
+        "wirkungsbelasteter-kredit"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -269844,6 +269856,1358 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": ""
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Wirkungsbelasteter Kredit",
+      "slug": "wirkungsbelasteter-kredit",
+      "status": "arbeitsbegriff",
+      "statusNote": "Nicht automatisch als Kreditausfall, Zahlungsschwierigkeit oder moralische Personenbewertung verstehen.",
+      "shortDefinition": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung oder relevantes Wirkungsrisiko enthält.",
+      "hoverDefinition": "Wirkungsbelastete Kredite sind nicht automatisch notleidend; sie enthalten negative Wirkung oder Wirkungsrisiken, die später finanziell relevant werden können.",
+      "longDefinition": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung auf Mensch, Planet oder Demokratie erzeugt oder relevante Wirkungsrisiken enthält. Dazu zählen etwa Kredite an Unternehmen mit ausbeuterischen Lieferketten, hoher CO2-Abhängigkeit, Wasserstress, Gesundheitsrisiken, Datenintransparenz oder demokratiegefährdenden Geschäftsmodellen. Der Kredit kann heute vollständig bedient werden und dennoch ein hohes Zukunftsrisiko enthalten.",
+      "usageNote": "Als Oberbegriff für wirkungsbezogene Kreditrisiken verwenden; nicht automatisch als Ausfall, Zahlungsschwierigkeit oder moralische Schuldformel darstellen.",
+      "doNotConfuseWith": [
+        "Notleidender Kredit",
+        "schlechtes ESG-Rating",
+        "Stranded Asset"
+      ],
+      "aliases": [
+        "Wirkungsbelasteter Kredit",
+        "wirkungsbelastete Kredite",
+        "wirkungsbelastete Finanzierung",
+        "Kredit mit schlechter Wirkung",
+        "Kredit mit negativer Wirkung",
+        "belasteter Kredit",
+        "impact-burdened loan",
+        "brown loan",
+        "brauner Kredit"
+      ],
+      "relatedTerms": [
+        "lieferkettenbelasteter-kredit",
+        "wirkungsrisiko",
+        "wirkungsrisikoposition",
+        "strandinggefaehrdeter-kredit",
+        "wirkungskredit",
+        "scorecard",
+        "woek-id",
+        "kapitalwirkung"
+      ],
+      "relatedDocuments": [
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "examples": [
+        "Kredit an ein Unternehmen mit ausbeuterischer Lieferkette",
+        "Finanzierung eines Geschäftsmodells mit hoher CO2-Abhängigkeit",
+        "Kredit mit Sicherheiten, deren Nutzbarkeit durch Wirkungsrisiken sinkt"
+      ],
+      "preferredUsage": "Wirkungsbelasteter Kredit als breiten WÖk-Oberbegriff nutzen.",
+      "deprecatedUsage": [
+        "brauner Kredit als WÖk-Hauptbegriff",
+        "Kredit automatisch notleidend nennen"
+      ],
+      "glossaryOrderKey": "wirkungsbelasteter kredit",
+      "id": "wirkungsbelasteter-kredit",
+      "termId": "wirkungsbelasteter-kredit",
+      "label": "Wirkungsbelasteter Kredit",
+      "synonyms": [
+        "Wirkungsbelasteter Kredit",
+        "wirkungsbelastete Kredite",
+        "wirkungsbelastete Finanzierung",
+        "Kredit mit schlechter Wirkung",
+        "Kredit mit negativer Wirkung",
+        "belasteter Kredit",
+        "impact-burdened loan",
+        "brown loan",
+        "brauner Kredit"
+      ],
+      "short_definition": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung oder relevantes Wirkungsrisiko enthält.",
+      "definition": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung auf Mensch, Planet oder Demokratie erzeugt oder relevante Wirkungsrisiken enthält. Dazu zählen etwa Kredite an Unternehmen mit ausbeuterischen Lieferketten, hoher CO2-Abhängigkeit, Wasserstress, Gesundheitsrisiken, Datenintransparenz oder demokratiegefährdenden Geschäftsmodellen. Der Kredit kann heute vollständig bedient werden und dennoch ein hohes Zukunftsrisiko enthalten.",
+      "long_definition": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung auf Mensch, Planet oder Demokratie erzeugt oder relevante Wirkungsrisiken enthält. Dazu zählen etwa Kredite an Unternehmen mit ausbeuterischen Lieferketten, hoher CO2-Abhängigkeit, Wasserstress, Gesundheitsrisiken, Datenintransparenz oder demokratiegefährdenden Geschäftsmodellen. Der Kredit kann heute vollständig bedient werden und dennoch ein hohes Zukunftsrisiko enthalten.",
+      "woekRelation": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung auf Mensch, Planet oder Demokratie erzeugt oder relevante Wirkungsrisiken enthält. Dazu zählen etwa Kredite an Unternehmen mit ausbeuterischen Lieferketten, hoher CO2-Abhängigkeit, Wasserstress, Gesundheitsrisiken, Datenintransparenz oder demokratiegefährdenden Geschäftsmodellen. Der Kredit kann heute vollständig bedient werden und dennoch ein hohes Zukunftsrisiko enthalten.",
+      "woek_einordnung": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung auf Mensch, Planet oder Demokratie erzeugt oder relevante Wirkungsrisiken enthält. Dazu zählen etwa Kredite an Unternehmen mit ausbeuterischen Lieferketten, hoher CO2-Abhängigkeit, Wasserstress, Gesundheitsrisiken, Datenintransparenz oder demokratiegefährdenden Geschäftsmodellen. Der Kredit kann heute vollständig bedient werden und dennoch ein hohes Zukunftsrisiko enthalten.",
+      "related_terms": [
+        "lieferkettenbelasteter-kredit",
+        "wirkungsrisiko",
+        "wirkungsrisikoposition",
+        "strandinggefaehrdeter-kredit",
+        "wirkungskredit",
+        "scorecard",
+        "woek-id",
+        "kapitalwirkung"
+      ],
+      "pageUrl": "/begriffe/wirkungsbelasteter-kredit/",
+      "metaTitle": "Wirkungsbelasteter Kredit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung oder relevantes Wirkungsrisiko enthält. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Lieferkettenbelasteter Kredit",
+      "slug": "lieferkettenbelasteter-kredit",
+      "status": "arbeitsbegriff",
+      "statusNote": "Spezifische Unterform des wirkungsbelasteten Kredits; die Belastung liegt vor allem in Vorleistungen und Lieferketten.",
+      "shortDefinition": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in Vorleistungen oder Lieferketten entsteht.",
+      "hoverDefinition": "Lieferkettenbelastete Kredite finanzieren Geschäftsmodelle, deren Risiken aus Kinderarbeit, Wasserstress, Chemikalien, Entwaldung, CO2-Intensität oder fehlender Datenqualität entstehen können.",
+      "longDefinition": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in der Lieferkette entsteht. Beispiele sind Kredite an Unternehmen, deren Produkte auf Kinderarbeit, Niedriglöhnen, gefährlichen Chemikalien, Entwaldung, Wasserstress, hoher CO2-Intensität oder fehlender Datenqualität beruhen. In der WÖk werden solche Risiken über Scorecards, WÖk-IDs, Produktpässe, Vorsteuerlogik und Kapitalbewertung sichtbar.",
+      "usageNote": "Als spezifische Unterform des wirkungsbelasteten Kredits verwenden, wenn die Belastung aus Vorleistungen, Lieferketten oder importierten Wirkungen stammt.",
+      "doNotConfuseWith": [
+        "Wirkungsbelasteter Kredit",
+        "Lieferkettenbericht",
+        "notleidender Kredit"
+      ],
+      "aliases": [
+        "Lieferkettenbelasteter Kredit",
+        "lieferkettenbelastete Kredite",
+        "lieferkettenbelastete Finanzierung",
+        "supply-chain-burdened loan",
+        "Kredit mit schlechter Lieferkette",
+        "Kredite mit schlechter Lieferkette",
+        "Lieferkettenrisiko Kredit",
+        "Kinderarbeit Kredit",
+        "Entwaldung Kredit",
+        "Wasserstress Lieferkette"
+      ],
+      "relatedTerms": [
+        "wirkungsbelasteter-kredit",
+        "digitaler-produktpass",
+        "scorecard",
+        "woek-id",
+        "wirkungstraeger",
+        "wirkungsdaten",
+        "wirkungsrisiko",
+        "lieferkettenwirkung",
+        "lieferantenbewertung",
+        "supply-chain-resilienz"
+      ],
+      "relatedDocuments": [
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "examples": [
+        "Kredit an ein Unternehmen mit entwaldungsnahen Vorprodukten",
+        "Finanzierung einer Lieferkette mit Wasserstress und Niedriglöhnen"
+      ],
+      "preferredUsage": "Für Kreditrisiken verwenden, deren negative Wirkung konkret aus Lieferketten stammt.",
+      "deprecatedUsage": [
+        "jede Lieferkette pauschal als negativ behandeln"
+      ],
+      "glossaryOrderKey": "lieferkettenbelasteter kredit",
+      "id": "lieferkettenbelasteter-kredit",
+      "termId": "lieferkettenbelasteter-kredit",
+      "label": "Lieferkettenbelasteter Kredit",
+      "synonyms": [
+        "Lieferkettenbelasteter Kredit",
+        "lieferkettenbelastete Kredite",
+        "lieferkettenbelastete Finanzierung",
+        "supply-chain-burdened loan",
+        "Kredit mit schlechter Lieferkette",
+        "Kredite mit schlechter Lieferkette",
+        "Lieferkettenrisiko Kredit",
+        "Kinderarbeit Kredit",
+        "Entwaldung Kredit",
+        "Wasserstress Lieferkette"
+      ],
+      "short_definition": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in Vorleistungen oder Lieferketten entsteht.",
+      "definition": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in der Lieferkette entsteht. Beispiele sind Kredite an Unternehmen, deren Produkte auf Kinderarbeit, Niedriglöhnen, gefährlichen Chemikalien, Entwaldung, Wasserstress, hoher CO2-Intensität oder fehlender Datenqualität beruhen. In der WÖk werden solche Risiken über Scorecards, WÖk-IDs, Produktpässe, Vorsteuerlogik und Kapitalbewertung sichtbar.",
+      "long_definition": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in der Lieferkette entsteht. Beispiele sind Kredite an Unternehmen, deren Produkte auf Kinderarbeit, Niedriglöhnen, gefährlichen Chemikalien, Entwaldung, Wasserstress, hoher CO2-Intensität oder fehlender Datenqualität beruhen. In der WÖk werden solche Risiken über Scorecards, WÖk-IDs, Produktpässe, Vorsteuerlogik und Kapitalbewertung sichtbar.",
+      "woekRelation": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in der Lieferkette entsteht. Beispiele sind Kredite an Unternehmen, deren Produkte auf Kinderarbeit, Niedriglöhnen, gefährlichen Chemikalien, Entwaldung, Wasserstress, hoher CO2-Intensität oder fehlender Datenqualität beruhen. In der WÖk werden solche Risiken über Scorecards, WÖk-IDs, Produktpässe, Vorsteuerlogik und Kapitalbewertung sichtbar.",
+      "woek_einordnung": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in der Lieferkette entsteht. Beispiele sind Kredite an Unternehmen, deren Produkte auf Kinderarbeit, Niedriglöhnen, gefährlichen Chemikalien, Entwaldung, Wasserstress, hoher CO2-Intensität oder fehlender Datenqualität beruhen. In der WÖk werden solche Risiken über Scorecards, WÖk-IDs, Produktpässe, Vorsteuerlogik und Kapitalbewertung sichtbar.",
+      "related_terms": [
+        "wirkungsbelasteter-kredit",
+        "digitaler-produktpass",
+        "scorecard",
+        "woek-id",
+        "wirkungstraeger",
+        "wirkungsdaten",
+        "wirkungsrisiko",
+        "lieferkettenwirkung",
+        "lieferantenbewertung",
+        "supply-chain-resilienz"
+      ],
+      "pageUrl": "/begriffe/lieferkettenbelasteter-kredit/",
+      "metaTitle": "Lieferkettenbelasteter Kredit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in Vorleistungen oder Lieferketten entsteht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Wirkungsrisikoposition",
+      "slug": "wirkungsrisikoposition",
+      "status": "arbeitsbegriff",
+      "statusNote": "Portfolio- und Risikobegriff; nicht als Bewertung von Personen verwenden.",
+      "shortDefinition": "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist.",
+      "hoverDefinition": "Wirkungsrisikoposition ist die Finanzsicht auf negative Wirkungsexposure: Risiken können über Regulierung, Märkte, Versicherbarkeit oder Reputation zurückkehren.",
+      "longDefinition": "Eine Wirkungsrisikoposition ist eine Risikoposition in Kreditbüchern, Portfolios, Fonds oder Versicherungsbeständen, die negativen Wirkungen oder relevanten Wirkungsrisiken ausgesetzt ist. Sie beschreibt nicht die moralische Qualität einer Person, sondern die Risikolage einer finanzierten Tätigkeit, eines Geschäftsmodells, einer Sicherheit oder Lieferkette.",
+      "usageNote": "Für Banken, Fonds und Versicherungen verwenden; Exposure, Risiko und eingetretenen Schaden getrennt halten.",
+      "doNotConfuseWith": [
+        "Wirkung",
+        "notleidender Kredit",
+        "Personenbewertung"
+      ],
+      "aliases": [
+        "Wirkungsrisikoposition",
+        "negative Wirkungsexposure",
+        "Wirkungsexposure",
+        "Impact Exposure",
+        "Wirkungsrisiko-Position",
+        "Risikoposition Wirkung"
+      ],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungsbelasteter-kredit",
+        "strandinggefaehrdeter-kredit",
+        "stranded-assets",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "kapitalwirkung"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "examples": [
+        "Portfolioanteil mit hoher Lieferkettenbelastung",
+        "Versicherungsbestand mit steigenden Klimarisiken",
+        "Kreditbuch mit nicht geprüfter Datenqualität"
+      ],
+      "preferredUsage": "Als Portfolio- und Risikobegriff verwenden.",
+      "deprecatedUsage": [
+        "Menschen nach Wirkungsexposure bewerten"
+      ],
+      "glossaryOrderKey": "wirkungsrisikoposition",
+      "id": "wirkungsrisikoposition",
+      "termId": "wirkungsrisikoposition",
+      "label": "Wirkungsrisikoposition",
+      "synonyms": [
+        "Wirkungsrisikoposition",
+        "negative Wirkungsexposure",
+        "Wirkungsexposure",
+        "Impact Exposure",
+        "Wirkungsrisiko-Position",
+        "Risikoposition Wirkung"
+      ],
+      "short_definition": "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist.",
+      "definition": "Eine Wirkungsrisikoposition ist eine Risikoposition in Kreditbüchern, Portfolios, Fonds oder Versicherungsbeständen, die negativen Wirkungen oder relevanten Wirkungsrisiken ausgesetzt ist. Sie beschreibt nicht die moralische Qualität einer Person, sondern die Risikolage einer finanzierten Tätigkeit, eines Geschäftsmodells, einer Sicherheit oder Lieferkette.",
+      "long_definition": "Eine Wirkungsrisikoposition ist eine Risikoposition in Kreditbüchern, Portfolios, Fonds oder Versicherungsbeständen, die negativen Wirkungen oder relevanten Wirkungsrisiken ausgesetzt ist. Sie beschreibt nicht die moralische Qualität einer Person, sondern die Risikolage einer finanzierten Tätigkeit, eines Geschäftsmodells, einer Sicherheit oder Lieferkette.",
+      "woekRelation": "Eine Wirkungsrisikoposition ist eine Risikoposition in Kreditbüchern, Portfolios, Fonds oder Versicherungsbeständen, die negativen Wirkungen oder relevanten Wirkungsrisiken ausgesetzt ist. Sie beschreibt nicht die moralische Qualität einer Person, sondern die Risikolage einer finanzierten Tätigkeit, eines Geschäftsmodells, einer Sicherheit oder Lieferkette.",
+      "woek_einordnung": "Eine Wirkungsrisikoposition ist eine Risikoposition in Kreditbüchern, Portfolios, Fonds oder Versicherungsbeständen, die negativen Wirkungen oder relevanten Wirkungsrisiken ausgesetzt ist. Sie beschreibt nicht die moralische Qualität einer Person, sondern die Risikolage einer finanzierten Tätigkeit, eines Geschäftsmodells, einer Sicherheit oder Lieferkette.",
+      "related_terms": [
+        "wirkungsrisiko",
+        "wirkungsbelasteter-kredit",
+        "strandinggefaehrdeter-kredit",
+        "stranded-assets",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "kapitalwirkung"
+      ],
+      "pageUrl": "/begriffe/wirkungsrisikoposition/",
+      "metaTitle": "Wirkungsrisikoposition | Glossar der Wirkungsökonomie",
+      "metaDescription": "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Strandinggefährdeter Kredit",
+      "slug": "strandinggefaehrdeter-kredit",
+      "status": "arbeitsbegriff",
+      "statusNote": "Zwischen wirkungsbelastet, strandinggefährdet und tatsächlich gestrandet unterscheiden.",
+      "shortDefinition": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheit oder Geschäftsgrundlage durch Wirkungs-, Regulierungs-, Markt- oder Versicherungsrisiken gefährdet werden kann.",
+      "hoverDefinition": "Strandinggefährdet heißt: noch kein Ausfall, aber Wirkung, Regulierung, Markt, Versicherung oder Reputation können den Kredit finanziell unter Druck setzen.",
+      "longDefinition": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheiten oder wirtschaftliche Grundlage gefährdet sind, weil der zugrunde liegende Vermögenswert oder das Geschäftsmodell unter einer wirkungsorientierten Ordnung an Tragfähigkeit verliert. Das kann durch Klima-, Sozial-, Lieferketten-, Digital-, Demokratie-, Versicherungs- oder Reputationsrisiken entstehen.",
+      "usageNote": "Nur verwenden, wenn aus Wirkungsrisiken ein plausibles Finanzrisiko für Rückzahlung, Sicherheiten, Kapitalzugang oder Geschäftsmodell entstehen kann.",
+      "doNotConfuseWith": [
+        "Wirkungsbelasteter Kredit",
+        "notleidender Kredit",
+        "gestrandeter Kredit"
+      ],
+      "aliases": [
+        "Strandinggefährdeter Kredit",
+        "strandinggefährdete Finanzierung",
+        "strandinggefährdetes Kreditengagement",
+        "strandinggefaehrdeter Kredit",
+        "Kredit mit Stranded-Asset-Risiko",
+        "at-risk impact loan"
+      ],
+      "relatedTerms": [
+        "wirkungsbelasteter-kredit",
+        "gestrandeter-kredit",
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "wirkungsrisikoposition",
+        "wirkungsrisiko",
+        "versicherbarkeit"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "examples": [
+        "Kredit an ein Geschäftsmodell mit künftig nicht versicherbarer Lieferkette",
+        "Immobilienkredit mit stark sinkender Nutzbarkeit durch Wirkungsrisiken"
+      ],
+      "preferredUsage": "Zwischen wirkungsbelastet und tatsächlich gestrandet sauber unterscheiden.",
+      "deprecatedUsage": [
+        "jeden negativen Kredit sofort gestrandet nennen"
+      ],
+      "glossaryOrderKey": "strandinggefährdeter kredit",
+      "id": "strandinggefaehrdeter-kredit",
+      "termId": "strandinggefaehrdeter-kredit",
+      "label": "Strandinggefährdeter Kredit",
+      "synonyms": [
+        "Strandinggefährdeter Kredit",
+        "strandinggefährdete Finanzierung",
+        "strandinggefährdetes Kreditengagement",
+        "strandinggefaehrdeter Kredit",
+        "Kredit mit Stranded-Asset-Risiko",
+        "at-risk impact loan"
+      ],
+      "short_definition": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheit oder Geschäftsgrundlage durch Wirkungs-, Regulierungs-, Markt- oder Versicherungsrisiken gefährdet werden kann.",
+      "definition": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheiten oder wirtschaftliche Grundlage gefährdet sind, weil der zugrunde liegende Vermögenswert oder das Geschäftsmodell unter einer wirkungsorientierten Ordnung an Tragfähigkeit verliert. Das kann durch Klima-, Sozial-, Lieferketten-, Digital-, Demokratie-, Versicherungs- oder Reputationsrisiken entstehen.",
+      "long_definition": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheiten oder wirtschaftliche Grundlage gefährdet sind, weil der zugrunde liegende Vermögenswert oder das Geschäftsmodell unter einer wirkungsorientierten Ordnung an Tragfähigkeit verliert. Das kann durch Klima-, Sozial-, Lieferketten-, Digital-, Demokratie-, Versicherungs- oder Reputationsrisiken entstehen.",
+      "woekRelation": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheiten oder wirtschaftliche Grundlage gefährdet sind, weil der zugrunde liegende Vermögenswert oder das Geschäftsmodell unter einer wirkungsorientierten Ordnung an Tragfähigkeit verliert. Das kann durch Klima-, Sozial-, Lieferketten-, Digital-, Demokratie-, Versicherungs- oder Reputationsrisiken entstehen.",
+      "woek_einordnung": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheiten oder wirtschaftliche Grundlage gefährdet sind, weil der zugrunde liegende Vermögenswert oder das Geschäftsmodell unter einer wirkungsorientierten Ordnung an Tragfähigkeit verliert. Das kann durch Klima-, Sozial-, Lieferketten-, Digital-, Demokratie-, Versicherungs- oder Reputationsrisiken entstehen.",
+      "related_terms": [
+        "wirkungsbelasteter-kredit",
+        "gestrandeter-kredit",
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "wirkungsrisikoposition",
+        "wirkungsrisiko",
+        "versicherbarkeit"
+      ],
+      "pageUrl": "/begriffe/strandinggefaehrdeter-kredit/",
+      "metaTitle": "Strandinggefährdeter Kredit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheit oder Geschäftsgrundlage durch Wirkungs-, Regulierungs-, Markt- oder Versicherungsrisiken gefährdet werden kann. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "Anschlussbegriff",
+      "concept_status": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Gestrandeter Kredit / Stranded Loan",
+      "slug": "gestrandeter-kredit",
+      "status": "anschlussbegriff",
+      "statusNote": "Eingetretener oder konkret absehbarer Finanzwertverlust; nicht als Sammelbegriff für alle belasteten Kredite verwenden.",
+      "shortDefinition": "Ein gestrandeter Kredit ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich kippt, weil das finanzierte Geschäftsmodell oder der Vermögenswert an Tragfähigkeit verliert.",
+      "hoverDefinition": "Stranded Loan beschreibt den eingetretenen Fall: Der Kredit wird selbst zum problematischen Finanzwert, weil Cashflows, Sicherheiten oder Geschäftsmodell wegbrechen.",
+      "longDefinition": "Ein gestrandeter Kredit oder Stranded Loan ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich beeinträchtigt wird, weil der zugrunde liegende Vermögenswert, die Lieferkette oder das Geschäftsmodell unter Wirkungs-, Regulierungs-, Versicherungs-, Reputations- oder Marktdruck an Tragfähigkeit verliert.",
+      "usageNote": "Als eingetretenen oder konkret absehbaren Finanzwertverlust verwenden; nicht für jedes Wirkungsrisiko nutzen.",
+      "doNotConfuseWith": [
+        "strandinggefährdeter Kredit",
+        "wirkungsbelasteter Kredit",
+        "schlechtes ESG-Rating"
+      ],
+      "aliases": [
+        "Gestrandeter Kredit / Stranded Loan",
+        "Gestrandeter Kredit",
+        "Stranded Loan",
+        "gestrandete Finanzierung",
+        "stranded credit",
+        "gestrandete Kredite"
+      ],
+      "relatedTerms": [
+        "strandinggefaehrdeter-kredit",
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "scheinkapital",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "examples": [
+        "Kredit, dessen Sicherheiten durch nicht mehr tragfähige Nutzung massiv entwertet werden"
+      ],
+      "preferredUsage": "Als präzisen Anschlussbegriff erklären, wenn ein Kredit tatsächlich zum problematischen Finanzwert geworden ist.",
+      "deprecatedUsage": [
+        "als Synonym für alle schlechten Kredite"
+      ],
+      "glossaryOrderKey": "gestrandeter kredit",
+      "id": "gestrandeter-kredit",
+      "termId": "gestrandeter-kredit",
+      "label": "Gestrandeter Kredit / Stranded Loan",
+      "synonyms": [
+        "Gestrandeter Kredit / Stranded Loan",
+        "Gestrandeter Kredit",
+        "Stranded Loan",
+        "gestrandete Finanzierung",
+        "stranded credit",
+        "gestrandete Kredite"
+      ],
+      "short_definition": "Ein gestrandeter Kredit ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich kippt, weil das finanzierte Geschäftsmodell oder der Vermögenswert an Tragfähigkeit verliert.",
+      "definition": "Ein gestrandeter Kredit oder Stranded Loan ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich beeinträchtigt wird, weil der zugrunde liegende Vermögenswert, die Lieferkette oder das Geschäftsmodell unter Wirkungs-, Regulierungs-, Versicherungs-, Reputations- oder Marktdruck an Tragfähigkeit verliert.",
+      "long_definition": "Ein gestrandeter Kredit oder Stranded Loan ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich beeinträchtigt wird, weil der zugrunde liegende Vermögenswert, die Lieferkette oder das Geschäftsmodell unter Wirkungs-, Regulierungs-, Versicherungs-, Reputations- oder Marktdruck an Tragfähigkeit verliert.",
+      "woekRelation": "Ein gestrandeter Kredit oder Stranded Loan ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich beeinträchtigt wird, weil der zugrunde liegende Vermögenswert, die Lieferkette oder das Geschäftsmodell unter Wirkungs-, Regulierungs-, Versicherungs-, Reputations- oder Marktdruck an Tragfähigkeit verliert.",
+      "woek_einordnung": "Ein gestrandeter Kredit oder Stranded Loan ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich beeinträchtigt wird, weil der zugrunde liegende Vermögenswert, die Lieferkette oder das Geschäftsmodell unter Wirkungs-, Regulierungs-, Versicherungs-, Reputations- oder Marktdruck an Tragfähigkeit verliert.",
+      "related_terms": [
+        "strandinggefaehrdeter-kredit",
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "scheinkapital",
+        "wirkungsrisiko"
+      ],
+      "pageUrl": "/begriffe/gestrandeter-kredit/",
+      "metaTitle": "Gestrandeter Kredit / Stranded Loan | Glossar der Wirkungsökonomie",
+      "metaDescription": "Ein gestrandeter Kredit ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich kippt, weil das finanzierte Geschäftsmodell oder der Vermögenswert an Tragfähigkeit verliert. Wirkungsökonomisch eingeordnet als Anschlussbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Wirkungsbedingte Stranded Assets",
+      "slug": "wirkungsbedingte-stranded-assets",
+      "status": "arbeitsbegriff",
+      "statusNote": "WÖk-Erweiterung des klassischen Stranded-Asset-Begriffs; nicht nur fossil oder klimabezogen verstehen.",
+      "shortDefinition": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht.",
+      "hoverDefinition": "Nicht nur fossile Anlagen können stranden; auch soziale, digitale, demokratische, gesundheitliche oder lieferkettenbezogene Wirkung kann Kapitalwerte kippen lassen.",
+      "longDefinition": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Die WÖk erweitert damit den klassischen Stranded-Asset-Begriff: Nicht nur fossile Anlagen können stranden, sondern auch Geschäftsmodelle mit Ausbeutung, Datenintransparenz, Vertrauenszerstörung, Gesundheitsbelastung, Wasserstress oder demokratischer Destabilisierung.",
+      "usageNote": "Als WÖk-Erweiterung des klassischen Stranded-Asset-Begriffs verwenden; Wirkungskategorie und Entwertungsmechanismus sichtbar machen.",
+      "doNotConfuseWith": [
+        "Stranded Assets",
+        "schlechtes ESG-Rating",
+        "allgemeine Wertschwankung"
+      ],
+      "aliases": [
+        "Wirkungsbedingte Stranded Assets",
+        "wirkungsbedingtes Stranded Asset",
+        "impact-driven stranded asset",
+        "wirkungsbedingte Vermögensentwertung",
+        "lieferkettenbezogenes Stranded Asset",
+        "soziale Stranded Assets"
+      ],
+      "relatedTerms": [
+        "stranded-assets",
+        "scheinkapital",
+        "strandinggefaehrdeter-kredit",
+        "gestrandeter-kredit",
+        "wirkungsrisiko",
+        "negative-wirkung"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "examples": [
+        "Wertverlust durch nicht akzeptierte Lieferkettenwirkung",
+        "Entwertung durch nicht mehr versicherbare Standorte",
+        "Geschäftsmodell mit demokratischer Destabilisierung als Kapitalrisiko"
+      ],
+      "preferredUsage": "Als Wirkungsökonomie-spezifische Präzisierung von Stranded Assets verwenden.",
+      "deprecatedUsage": [
+        "Stranded Asset nur fossil verstehen"
+      ],
+      "glossaryOrderKey": "wirkungsbedingte stranded assets",
+      "id": "wirkungsbedingte-stranded-assets",
+      "termId": "wirkungsbedingte-stranded-assets",
+      "label": "Wirkungsbedingte Stranded Assets",
+      "synonyms": [
+        "Wirkungsbedingte Stranded Assets",
+        "wirkungsbedingtes Stranded Asset",
+        "impact-driven stranded asset",
+        "wirkungsbedingte Vermögensentwertung",
+        "lieferkettenbezogenes Stranded Asset",
+        "soziale Stranded Assets"
+      ],
+      "short_definition": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht.",
+      "definition": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Die WÖk erweitert damit den klassischen Stranded-Asset-Begriff: Nicht nur fossile Anlagen können stranden, sondern auch Geschäftsmodelle mit Ausbeutung, Datenintransparenz, Vertrauenszerstörung, Gesundheitsbelastung, Wasserstress oder demokratischer Destabilisierung.",
+      "long_definition": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Die WÖk erweitert damit den klassischen Stranded-Asset-Begriff: Nicht nur fossile Anlagen können stranden, sondern auch Geschäftsmodelle mit Ausbeutung, Datenintransparenz, Vertrauenszerstörung, Gesundheitsbelastung, Wasserstress oder demokratischer Destabilisierung.",
+      "woekRelation": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Die WÖk erweitert damit den klassischen Stranded-Asset-Begriff: Nicht nur fossile Anlagen können stranden, sondern auch Geschäftsmodelle mit Ausbeutung, Datenintransparenz, Vertrauenszerstörung, Gesundheitsbelastung, Wasserstress oder demokratischer Destabilisierung.",
+      "woek_einordnung": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Die WÖk erweitert damit den klassischen Stranded-Asset-Begriff: Nicht nur fossile Anlagen können stranden, sondern auch Geschäftsmodelle mit Ausbeutung, Datenintransparenz, Vertrauenszerstörung, Gesundheitsbelastung, Wasserstress oder demokratischer Destabilisierung.",
+      "related_terms": [
+        "stranded-assets",
+        "scheinkapital",
+        "strandinggefaehrdeter-kredit",
+        "gestrandeter-kredit",
+        "wirkungsrisiko",
+        "negative-wirkung"
+      ],
+      "pageUrl": "/begriffe/wirkungsbedingte-stranded-assets/",
+      "metaTitle": "Wirkungsbedingte Stranded Assets | Glossar der Wirkungsökonomie",
+      "metaDescription": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Scheinkapital",
+      "slug": "scheinkapital",
+      "status": "arbeitsbegriff",
+      "statusNote": "Kritischer WÖk-Kapitalbegriff; nicht als Bilanz- oder Rechtsbegriff verwenden.",
+      "shortDefinition": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht.",
+      "hoverDefinition": "Scheinkapital wirkt stabil, solange Schäden ausgelagert bleiben; kehrt Wirkung in Preise, Steuern, Kapitalzugang oder Versicherbarkeit zurück, kann der Wert kippen.",
+      "longDefinition": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Sobald Wirkung in Preise, Steuern, Kapitalzugang und Versicherbarkeit zurückkehrt, können solche Werte zu Stranded Assets, Kreditausfällen oder Versicherungsrisiken werden.",
+      "usageNote": "Als kritischen Kapitalbegriff verwenden; nicht mit legalem Eigenkapital, Bilanzkapital oder Scheingewinn gleichsetzen.",
+      "doNotConfuseWith": [
+        "Eigenkapital",
+        "Finanzkapital",
+        "Stranded Assets"
+      ],
+      "aliases": [
+        "Scheinkapital",
+        "scheinbar stabiles Kapital",
+        "wirkungsloses Scheinkapital",
+        "unbepreistes Risikokapital",
+        "Kapital mit verdrängter Wirkung",
+        "Scheinwert Kapital"
+      ],
+      "relatedTerms": [
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "wirkungsrisiko",
+        "wirkungsfonds",
+        "wirkungsrueckkopplung",
+        "kapitalwirkung"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "examples": [
+        "Vermögenswert, dessen Wert auf ausgelagerten Schäden beruht",
+        "Portfolio, das künftige Versicherungs- oder Regulierungsrisiken nicht einpreist"
+      ],
+      "preferredUsage": "Scheinkapital für scheinbar stabile Werte mit verdrängten Wirkungsrisiken verwenden.",
+      "deprecatedUsage": [
+        "als Bilanz- oder Rechtsbegriff verwenden"
+      ],
+      "glossaryOrderKey": "scheinkapital",
+      "id": "scheinkapital",
+      "termId": "scheinkapital",
+      "label": "Scheinkapital",
+      "synonyms": [
+        "Scheinkapital",
+        "scheinbar stabiles Kapital",
+        "wirkungsloses Scheinkapital",
+        "unbepreistes Risikokapital",
+        "Kapital mit verdrängter Wirkung",
+        "Scheinwert Kapital"
+      ],
+      "short_definition": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht.",
+      "definition": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Sobald Wirkung in Preise, Steuern, Kapitalzugang und Versicherbarkeit zurückkehrt, können solche Werte zu Stranded Assets, Kreditausfällen oder Versicherungsrisiken werden.",
+      "long_definition": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Sobald Wirkung in Preise, Steuern, Kapitalzugang und Versicherbarkeit zurückkehrt, können solche Werte zu Stranded Assets, Kreditausfällen oder Versicherungsrisiken werden.",
+      "woekRelation": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Sobald Wirkung in Preise, Steuern, Kapitalzugang und Versicherbarkeit zurückkehrt, können solche Werte zu Stranded Assets, Kreditausfällen oder Versicherungsrisiken werden.",
+      "woek_einordnung": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Sobald Wirkung in Preise, Steuern, Kapitalzugang und Versicherbarkeit zurückkehrt, können solche Werte zu Stranded Assets, Kreditausfällen oder Versicherungsrisiken werden.",
+      "related_terms": [
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "wirkungsrisiko",
+        "wirkungsfonds",
+        "wirkungsrueckkopplung",
+        "kapitalwirkung"
+      ],
+      "pageUrl": "/begriffe/scheinkapital/",
+      "metaTitle": "Scheinkapital | Glossar der Wirkungsökonomie",
+      "metaDescription": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Wirkungskonversionskredit",
+      "slug": "wirkungskonversionskredit",
+      "status": "arbeitsbegriff",
+      "statusNote": "Nur verwenden, wenn der Kredit an überprüfbare Transformations- und Wirkungsziele gekoppelt ist.",
+      "shortDefinition": "Ein Wirkungskonversionskredit finanziert den Umbau belasteter Geschäftsmodelle, Lieferketten oder Vermögenswerte in resilientere und wirkungsärmere oder positive Wirkungspfade.",
+      "hoverDefinition": "Wirkungskonversionskredite schreiben negative Wirkung nicht fort, sondern finanzieren den Übergang zu faireren, resilienteren und positiveren Lieferketten oder Geschäftsmodellen.",
+      "longDefinition": "Ein Wirkungskonversionskredit ist ein Kredit, der nicht negative Wirkung fortschreibt, sondern den Umbau zu fairen, resilienten, datenfähigen und positiven Lieferketten, Produkten, Standorten oder Geschäftsmodellen finanziert. Er kann Teil einer Transformationsfinanzierung sein und braucht klare Wirkungspfade, Datenqualität, Schutzlinien und Korrekturmechanismen.",
+      "usageNote": "Nur verwenden, wenn der Kredit an überprüfbare Transformations- und Wirkungsziele gekoppelt ist; nicht als Marketingetikett für normale Refinanzierung nutzen.",
+      "doNotConfuseWith": [
+        "Wirkungskredit",
+        "Green Loan",
+        "Umschuldung ohne Wirkungsumbau"
+      ],
+      "aliases": [
+        "Wirkungskonversionskredit",
+        "Transformationskredit nach Wirkung",
+        "Wirkungsumbaukredit",
+        "impact conversion loan",
+        "Lieferkettenumbau Kredit"
+      ],
+      "relatedTerms": [
+        "wirkungskredit",
+        "wirkungsbelasteter-kredit",
+        "lieferkettenbelasteter-kredit",
+        "transformationswirkung",
+        "scorecard",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "examples": [
+        "Kredit zur Umstellung auf faire Lieferketten",
+        "Finanzierung zur Reduktion wasser- und chemikalienbelasteter Vorprodukte"
+      ],
+      "preferredUsage": "Für Kredite verwenden, die belastete Wirkungspfade tatsächlich umbauen.",
+      "deprecatedUsage": [
+        "Konversion ohne messbaren Wirkungspfad behaupten"
+      ],
+      "glossaryOrderKey": "wirkungskonversionskredit",
+      "id": "wirkungskonversionskredit",
+      "termId": "wirkungskonversionskredit",
+      "label": "Wirkungskonversionskredit",
+      "synonyms": [
+        "Wirkungskonversionskredit",
+        "Transformationskredit nach Wirkung",
+        "Wirkungsumbaukredit",
+        "impact conversion loan",
+        "Lieferkettenumbau Kredit"
+      ],
+      "short_definition": "Ein Wirkungskonversionskredit finanziert den Umbau belasteter Geschäftsmodelle, Lieferketten oder Vermögenswerte in resilientere und wirkungsärmere oder positive Wirkungspfade.",
+      "definition": "Ein Wirkungskonversionskredit ist ein Kredit, der nicht negative Wirkung fortschreibt, sondern den Umbau zu fairen, resilienten, datenfähigen und positiven Lieferketten, Produkten, Standorten oder Geschäftsmodellen finanziert. Er kann Teil einer Transformationsfinanzierung sein und braucht klare Wirkungspfade, Datenqualität, Schutzlinien und Korrekturmechanismen.",
+      "long_definition": "Ein Wirkungskonversionskredit ist ein Kredit, der nicht negative Wirkung fortschreibt, sondern den Umbau zu fairen, resilienten, datenfähigen und positiven Lieferketten, Produkten, Standorten oder Geschäftsmodellen finanziert. Er kann Teil einer Transformationsfinanzierung sein und braucht klare Wirkungspfade, Datenqualität, Schutzlinien und Korrekturmechanismen.",
+      "woekRelation": "Ein Wirkungskonversionskredit ist ein Kredit, der nicht negative Wirkung fortschreibt, sondern den Umbau zu fairen, resilienten, datenfähigen und positiven Lieferketten, Produkten, Standorten oder Geschäftsmodellen finanziert. Er kann Teil einer Transformationsfinanzierung sein und braucht klare Wirkungspfade, Datenqualität, Schutzlinien und Korrekturmechanismen.",
+      "woek_einordnung": "Ein Wirkungskonversionskredit ist ein Kredit, der nicht negative Wirkung fortschreibt, sondern den Umbau zu fairen, resilienten, datenfähigen und positiven Lieferketten, Produkten, Standorten oder Geschäftsmodellen finanziert. Er kann Teil einer Transformationsfinanzierung sein und braucht klare Wirkungspfade, Datenqualität, Schutzlinien und Korrekturmechanismen.",
+      "related_terms": [
+        "wirkungskredit",
+        "wirkungsbelasteter-kredit",
+        "lieferkettenbelasteter-kredit",
+        "transformationswirkung",
+        "scorecard",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung"
+      ],
+      "pageUrl": "/begriffe/wirkungskonversionskredit/",
+      "metaTitle": "Wirkungskonversionskredit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Ein Wirkungskonversionskredit finanziert den Umbau belasteter Geschäftsmodelle, Lieferketten oder Vermögenswerte in resilientere und wirkungsärmere oder positive Wirkungspfade. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
+    },
+    {
+      "version": "1.0",
+      "source": "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceDocument": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "sourceSection": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
+      "categories": [
+        "finanzsystem-kapital-und-lieferkettenrisiken",
+        "kapital-markt-und-eigentum",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "concept_status": "WÖk-Arbeitsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "type": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Kapitalbegriff",
+      "theme": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "themes": [
+        "Kapital, Markt und Eigentum",
+        "Produkte, Lieferketten und Scorecards"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrisiko",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "application_fields": [
+        "Kapitalmärkte",
+        "Unternehmen",
+        "Lieferkette",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff",
+        "Finanzsystem",
+        "Lieferkettensteuerung"
+      ],
+      "mythos": "",
+      "woekKlaerung": "",
+      "woek_klaerung": "",
+      "blindSpot": "",
+      "blind_spot": "",
+      "internalLinks": [],
+      "internal_links": [],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "canonicalLabel": "Wirkungskredit / W-Kredit",
+      "slug": "wirkungskredit",
+      "status": "arbeitsbegriff",
+      "statusNote": "Modellhafter Oberbegriff; keine Rechts-, Förder- oder Kreditberatung daraus ableiten.",
+      "shortDefinition": "Ein Wirkungskredit ist ein Kredit, dessen Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden.",
+      "hoverDefinition": "Wirkungskredite verknüpfen Finanzierung mit Wirkung: positive Netto-Wirkung kann Kapitalzugang verbessern, negative Wirkung kann Finanzierung verteuern oder Umbau verlangen.",
+      "longDefinition": "Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Im WÖk-Systemmodell können Wirkungskredite niedrigere Finanzierungskosten für positive Wirkung, höhere Risikokosten für negative Wirkung oder gezielte Konversionspfade für belastete Geschäftsmodelle abbilden. Sie ersetzen keine Kreditprüfung, sondern erweitern sie um Wirkungsdaten und Rückkopplungslogik.",
+      "usageNote": "Als modellhaften Oberbegriff verwenden; keine Rechts-, Förder- oder Kreditberatung daraus ableiten.",
+      "doNotConfuseWith": [
+        "Wirkungskonversionskredit",
+        "Subvention",
+        "ESG-Kredit"
+      ],
+      "aliases": [
+        "Wirkungskredit / W-Kredit",
+        "Wirkungskredit",
+        "Wirkungskredite",
+        "W-Kredit",
+        "W-Kredite",
+        "Wirkungsfinanzierung",
+        "impact-linked loan",
+        "wirkungsgestützter Kredit",
+        "Kredit nach Wirkung"
+      ],
+      "relatedTerms": [
+        "wirkungskonversionskredit",
+        "wirkungsbelasteter-kredit",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "scorecard",
+        "kapitalwirkung"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "examples": [
+        "Kredit mit wirkungsdifferenzierten Konditionen",
+        "Finanzierung mit Scorecard- und Datenqualitätsprüfung"
+      ],
+      "preferredUsage": "Als Oberbegriff für wirkungsdifferenzierte Kreditlogik verwenden.",
+      "deprecatedUsage": [
+        "als Förderzusage darstellen",
+        "als amtliche Kreditkategorie darstellen"
+      ],
+      "glossaryOrderKey": "wirkungskredit",
+      "id": "wirkungskredit",
+      "termId": "wirkungskredit",
+      "label": "Wirkungskredit / W-Kredit",
+      "synonyms": [
+        "Wirkungskredit / W-Kredit",
+        "Wirkungskredit",
+        "Wirkungskredite",
+        "W-Kredit",
+        "W-Kredite",
+        "Wirkungsfinanzierung",
+        "impact-linked loan",
+        "wirkungsgestützter Kredit",
+        "Kredit nach Wirkung"
+      ],
+      "short_definition": "Ein Wirkungskredit ist ein Kredit, dessen Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden.",
+      "definition": "Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Im WÖk-Systemmodell können Wirkungskredite niedrigere Finanzierungskosten für positive Wirkung, höhere Risikokosten für negative Wirkung oder gezielte Konversionspfade für belastete Geschäftsmodelle abbilden. Sie ersetzen keine Kreditprüfung, sondern erweitern sie um Wirkungsdaten und Rückkopplungslogik.",
+      "long_definition": "Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Im WÖk-Systemmodell können Wirkungskredite niedrigere Finanzierungskosten für positive Wirkung, höhere Risikokosten für negative Wirkung oder gezielte Konversionspfade für belastete Geschäftsmodelle abbilden. Sie ersetzen keine Kreditprüfung, sondern erweitern sie um Wirkungsdaten und Rückkopplungslogik.",
+      "woekRelation": "Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Im WÖk-Systemmodell können Wirkungskredite niedrigere Finanzierungskosten für positive Wirkung, höhere Risikokosten für negative Wirkung oder gezielte Konversionspfade für belastete Geschäftsmodelle abbilden. Sie ersetzen keine Kreditprüfung, sondern erweitern sie um Wirkungsdaten und Rückkopplungslogik.",
+      "woek_einordnung": "Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Im WÖk-Systemmodell können Wirkungskredite niedrigere Finanzierungskosten für positive Wirkung, höhere Risikokosten für negative Wirkung oder gezielte Konversionspfade für belastete Geschäftsmodelle abbilden. Sie ersetzen keine Kreditprüfung, sondern erweitern sie um Wirkungsdaten und Rückkopplungslogik.",
+      "related_terms": [
+        "wirkungskonversionskredit",
+        "wirkungsbelasteter-kredit",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "scorecard",
+        "kapitalwirkung"
+      ],
+      "pageUrl": "/begriffe/wirkungskredit/",
+      "metaTitle": "Wirkungskredit / W-Kredit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Ein Wirkungskredit ist ein Kredit, dessen Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff."
     },
     {
       "id": "strategische-reserve",

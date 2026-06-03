@@ -47,6 +47,7 @@ const categoryOrder = [
   "Vordenker:innen und Bezugslinien",
   "Werte, Normativität und Bewertung",
   "Kapital, Markt und Eigentum",
+  "Finanzsystem, Kapital & Lieferkettenrisiken",
   "Sprache, Wirklichkeit und Kommunikation",
   "Ethik, Würde und Verantwortung",
   "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
