@@ -14513,6 +14513,30 @@ a.principle-card:hover,
   font-weight: 720;
 }
 
+.global-radar-bridge {
+  background: linear-gradient(180deg, rgba(47, 125, 92, 0.08), rgba(255, 252, 245, 0));
+}
+
+.global-radar-bridge > div {
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.78);
+}
+
+.global-radar-bridge .hero-actions {
+  margin: 0 0 clamp(1rem, 2vw, 1.35rem);
+}
+
+.global-radar-card-grid {
+  margin-top: 0;
+}
+
+.global-radar-card {
+  border-top: 4px solid rgba(47, 125, 92, 0.45);
+}
+
 .text-link-card {
   color: inherit;
   text-decoration: none;

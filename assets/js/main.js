@@ -32,9 +32,10 @@ if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
+    ["Wirkungsradar", "wirkungsradar/", "wirkungsradar/"],
+    ["So wirkt WÖk", "so-wirkt-wirkungsoekonomie/", "so-wirkt-wirkungsoekonomie/|so-wirkt-wirkungsoekonomie.html"],
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/"],
     ["Methoden & Werkzeuge", "werkzeuge/", "werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html"],
-    ["Wirkungsradar", "wirkungsradar/", "wirkungsradar/"],
     ["Erleben", "erleben/", "erleben.html|erleben/|ausprobieren/"],
     ["Akademie", "akademie.html", "akademie.html|akademie/"],
     ["Bibliothek", "bibliothek/", "bibliothek/|werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
@@ -459,6 +460,18 @@ document.querySelectorAll("[data-analytics-event='academy_app_cta']").forEach((l
   });
 });
 
+document.addEventListener("click", (event) => {
+  const target = event.target instanceof Element ? event.target.closest("[data-analytics-event]") : null;
+  if (!(target instanceof HTMLAnchorElement) || target.dataset.analyticsEvent === "academy_app_cta") {
+    return;
+  }
+
+  sendSiteAnalyticsEvent(target.dataset.analyticsEvent || "site_interaction", {
+    href: target.href,
+    title: target.textContent?.trim().slice(0, 140) || "",
+  });
+});
+
 let blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"));
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
@@ -866,6 +879,207 @@ function initRadarSearch() {
 }
 
 initRadarSearch();
+
+function initGlobalWirkungsradarBridge() {
+  if (!mainElement) {
+    return;
+  }
+
+  const path = window.location.pathname;
+  const normalizedPath = path.endsWith("/") ? path : `${path}/`;
+  const isRadarPage = normalizedPath.includes("/wirkungsradar/");
+
+  const footerNav = document.querySelector(".footer-nav");
+  if (footerNav && !footerNav.querySelector("[data-footer-radar-group]")) {
+    const group = document.createElement("div");
+    group.className = "footer-nav-group";
+    group.dataset.footerRadarGroup = "true";
+    group.innerHTML = `
+      <h3>Wirkungsradar</h3>
+      <div class="footer-nav-links">
+        <a href="${relativeSiteUrl("wirkungsradar/")}">Überblick</a>
+        <a href="${relativeSiteUrl("wirkungsradar/live/")}">Live-Antworten</a>
+        <a href="${relativeSiteUrl("wirkungsradar/narrative/")}">Narrative</a>
+        <a href="${relativeSiteUrl("wirkungsradar/themen/")}">Themen</a>
+        <a href="${relativeSiteUrl("wirkungsradar/methode/")}">Methode</a>
+      </div>
+    `;
+    footerNav.prepend(group);
+  }
+
+  if (isRadarPage || document.querySelector("[data-global-radar-bridge]")) {
+    return;
+  }
+
+  const configs = [
+    {
+      test: () => path === "/" || /\/index\.html$/.test(path),
+      kicker: "Wirkungsradar",
+      title: "Öffentliche Aussagen im Folgencheck",
+      text:
+        "Nicht jede Debatte scheitert an fehlenden Fakten. Viele scheitern an Narrativen, Frames, psychologischen Triggern und falschen Schlussfolgerungen. Der Wirkungsradar zeigt, was stimmt, was fehlt, welches Narrativ wirkt und welche Antwort Mensch, Planet und Demokratie stärkt.",
+      ctas: [
+        ["Wirkungsradar öffnen", "wirkungsradar/"],
+        ["Live-Antworten ansehen", "wirkungsradar/live/"],
+        ["Narrative verstehen", "wirkungsradar/narrative/"],
+      ],
+      cards: [
+        ["Deutschland nur 2 %?", "Verantwortung ohne Zahlenverkürzung verstehen.", "wirkungsradar/live/deutschland-nur-zwei-prozent/"],
+        ["CO₂-Preis oder fossile Systemkosten?", "Kosten sichtbar machen, statt Ursachen zu verdecken.", "wirkungsradar/live/co2-preis-oder-fossile-systemkosten/"],
+        ["Man darf ja nichts mehr sagen", "Meinungsfreiheit, Widerspruch und Opferumkehr trennen.", "wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/"],
+      ],
+    },
+    {
+      test: () => /\/(verstehen|wirkungsoekonomie|modell|ordnung|kompass|begriffe|glossar)/.test(normalizedPath),
+      kicker: "Vom Begriff zur Debatte",
+      title: "Wie diese Logik in öffentlichen Debatten wirkt.",
+      text:
+        "Die Wirkungsökonomie erklärt, wie Wirkung entsteht und bewertet wird. Der Wirkungsradar zeigt diese Logik praktisch: bei Mythen, Narrativen, Stöckchen, Desinformation und falschen Schlussfolgerungen.",
+      ctas: [["Zum Wirkungsradar", "wirkungsradar/"], ["Methode ansehen", "wirkungsradar/methode/"]],
+      cards: [
+        ["Wirkungspfad anwenden", "Vom Satz zum möglichen gesellschaftlichen Wirkungspfad.", "wirkungsradar/methode/"],
+        ["Narrative erkennen", "Ohnmacht, Verzögerung, Opferumkehr und Feindbilder einordnen.", "wirkungsradar/narrative/"],
+        ["Live-Karten nutzen", "Kurze Antworten für Debatten, Hosts und Kommentarspalten.", "wirkungsradar/live/"],
+      ],
+    },
+    {
+      test: () => /\/wirkungsfelder\//.test(normalizedPath),
+      kicker: "Typische Narrative in diesem Wirkungsfeld",
+      title: "Sachfragen und Debattenframes gemeinsam prüfen.",
+      text:
+        "In Wirkungsfeldern entstehen nicht nur Sachfragen, sondern wiederkehrende Narrative. Der Wirkungsradar prüft, welche Aussagen Fakten verkürzen, welche psychologischen Hebel sie nutzen und welche Wirkung sie auf Mensch, Planet und Demokratie haben.",
+      ctas: [["Alle Narrative ansehen", "wirkungsradar/narrative/"], ["Themencluster öffnen", "wirkungsradar/themen/"]],
+      cards: [
+        ["Klima & Energie", "2-Prozent-Argument, Windräder, CO₂-Preis und Transformationsframes.", "wirkungsradar/themen/klima-energie/"],
+        ["Demokratie & Öffentlichkeit", "Meinungsfreiheit, Medienvertrauen, SDGs und Desinformation.", "wirkungsradar/themen/demokratie-oeffentlichkeit/"],
+        ["Wirkungsrisiken", "Welche Folgen entstehen, wenn Frames politische Handlung blockieren?", "wirkungsradar/methode/"],
+      ],
+    },
+    {
+      test: () => /\/(werkzeuge|tools|methodik|scanner)/.test(normalizedPath),
+      kicker: "Methoden & Werkzeuge",
+      title: "Der Wirkungsradar ist Wirkungslogik für öffentliche Kommunikation.",
+      text:
+        "Als Werkzeug verbindet der Wirkungsradar Faktenlage, Narrativanalyse, psychologischen Wirkungscheck, Wirkungspfad, Folgenanalyse und wirkungsökonomische Antwort.",
+      ctas: [["Wirkungsradar öffnen", "wirkungsradar/"], ["Live-Antworten öffnen", "wirkungsradar/live/"]],
+      cards: [
+        ["Folgencheck", "Nicht nur prüfen, ob etwas stimmt, sondern was daraus folgt.", "wirkungsradar/methode/"],
+        ["SDG+ in Debatten", "Mensch, Planet und Demokratie als Maßstab für öffentliche Aussagen.", "wirkungsradar/themen/"],
+        ["Quellenstand", "Dossiers mit Faktenlage, Quellen und Datenstand verbinden.", "wirkungsradar/detail/"],
+      ],
+    },
+    {
+      test: () => /\/erleben\//.test(normalizedPath),
+      kicker: "Interaktive Anwendung",
+      title: "Wirkungsradar-Demo ausprobieren.",
+      text:
+        "Gib eine Aussage ein und übe, wahren Kern, Denkfehler, Narrativ, psychologische Trigger, Wirkungspfad und bessere Antwort zu trennen. Die Demo ersetzt keine redaktionelle Prüfung.",
+      ctas: [["Demo öffnen", "erleben/wirkungsradar-demo/"], ["Methode verstehen", "wirkungsradar/methode/"]],
+      cards: [
+        ["Claim eingeben", "Aussage, Thema und vermutetes Narrativ sammeln.", "erleben/wirkungsradar-demo/"],
+        ["Antwort üben", "10-Sekunden-, 30-Sekunden- und 2-Minuten-Antworten vorbereiten.", "wirkungsradar/live/"],
+        ["Medienwirkung prüfen", "Mit dem Medienwirkungscheck verbinden.", "erleben/medienwirkungscheck/"],
+      ],
+    },
+    {
+      test: () => /\/akademie/.test(normalizedPath),
+      kicker: "Wirkungsradar lernen",
+      title: "Fakten prüfen, Narrative erkennen, souverän antworten.",
+      text:
+        "Der Lernpfad verbindet Faktencheck, Folgencheck, Narrativanalyse, psychologische Trigger, Stöckchen-Erkennung und Live-Antworten für Bürger:innen, Hosts, Creator:innen, Journalismus und politische Bildung.",
+      ctas: [["Lernpfad öffnen", "akademie/wirkungsradar/"], ["Dossier öffnen", "wirkungsradar/detail/"]],
+      cards: [
+        ["Faktencheck vs. Folgencheck", "Wahrheit und Wirkung gemeinsam lesen.", "akademie/wirkungsradar/"],
+        ["Narrative und Frames", "Wiederkehrende Muster öffentlicher Aussagen erkennen.", "wirkungsradar/narrative/"],
+        ["Live-Antworten", "Ruhig antworten, ohne ins Stöckchen zu springen.", "wirkungsradar/live/"],
+      ],
+    },
+    {
+      test: () => /\/(bibliothek|downloads|dokumente|referenz|werkstatt|fachbibliothek|buch)/.test(normalizedPath),
+      kicker: "Wirkungsradar-Dossiers",
+      title: "Dossiers zu Mythen, Narrativen und öffentlichen Aussagen.",
+      text:
+        "Die Bibliothek bündelt Wirkungsradar-Dossiers mit Faktenlage, psychologischem Wirkungscheck, Wirkungspfad, Folgenanalyse, Quellenstand und wirkungsökonomischer Antwort.",
+      ctas: [["Dossier-Index öffnen", "bibliothek/wirkungsradar-dossiers/"], ["Detailanalysen ansehen", "wirkungsradar/detail/"]],
+      cards: [
+        ["Sprache als Wirkstoff", "Wie öffentliche Sprache Resonanzräume öffnet.", "wirkungsradar/narrative/sprachmuster-und-emotionalisierung/"],
+        ["CO₂-Systemkosten", "Vom Preisframe zur Folgekostenanalyse.", "wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/"],
+        ["Demokratie & Öffentlichkeit", "Medien, Wissenschaft, Meinungsfreiheit und Vertrauen.", "wirkungsradar/themen/demokratie-oeffentlichkeit/"],
+      ],
+    },
+    {
+      test: () => /\/(fuer|mitmachen)/.test(normalizedPath),
+      kicker: "Wirkungsradar für Zielgruppen",
+      title: "Mythen, Narrative und Stöckchen ruhig einordnen.",
+      text:
+        "Der Wirkungsradar hilft Bürger:innen, Politik, Unternehmen, Kommunen, Medien, Bildung und Hosts, öffentliche Aussagen faktenbasiert und lösungsorientiert zu beantworten.",
+      ctas: [["Wirkungsradar öffnen", "wirkungsradar/"], ["Live-Antworten nutzen", "wirkungsradar/live/"]],
+      cards: [
+        ["Für Bürger:innen", "Mythen erkennen und ruhig reagieren.", "wirkungsradar/live/"],
+        ["Für Journalismus", "Frames, Trigger und Quellenlage sichtbar machen.", "wirkungsradar/methode/"],
+        ["Für Hosts", "Kurze Antworten für Panels und Kommentarspalten.", "wirkungsradar/live/"],
+      ],
+    },
+    {
+      test: () => /\/(blog|journal|w-est-g-journal)/.test(normalizedPath),
+      kicker: "Im Wirkungsradar vertiefen",
+      title: "Schnelle Antwort und vertiefende Wirkungsanalyse.",
+      text:
+        "Der Wirkungsradar ergänzt Journal-Beiträge um Faktenlage, Narrativanalyse, psychologischen Wirkungscheck, Wirkungspfad und Live-Antworten.",
+      ctas: [["Wirkungsradar öffnen", "wirkungsradar/"], ["Narrative verstehen", "wirkungsradar/narrative/"]],
+      cards: [
+        ["Sprache & Narrative", "Warum Fakten allein oft nicht wirken.", "wirkungsradar/narrative/"],
+        ["Social Credit?", "Ein typisches Missverständnis im Folgencheck.", "wirkungsradar/live/wirkungsoekonomie-social-credit/"],
+        ["Klimamythen", "Debatten zu Klima, Energie und Transformation prüfen.", "wirkungsradar/themen/klima-energie/"],
+      ],
+    },
+  ];
+
+  const config = configs.find((item) => item.test());
+  if (!config) {
+    return;
+  }
+
+  const bridge = document.createElement("section");
+  bridge.className = "section global-radar-bridge";
+  bridge.dataset.globalRadarBridge = "true";
+  bridge.dataset.searchExclude = "true";
+  bridge.innerHTML = `
+    <div>
+      <div class="section-header">
+        <p class="hero-kicker">${config.kicker}</p>
+        <h2>${config.title}</h2>
+        <p>${config.text}</p>
+      </div>
+      <div class="hero-actions">
+        ${config.ctas
+          .map(([label, href], index) => `<a class="btn ${index === 0 ? "btn-primary" : "btn-secondary"}" href="${relativeSiteUrl(href)}" data-analytics-event="wirkungsradar_open">${label}</a>`)
+          .join("")}
+      </div>
+      <div class="card-grid three global-radar-card-grid">
+        ${config.cards
+          .map(
+            ([title, text, href]) => `<a class="card text-link-card global-radar-card" href="${relativeSiteUrl(href)}" data-analytics-event="related_dossier_click">
+              <p class="card-kicker">Wirkungsradar</p>
+              <h3 class="card-title">${title}</h3>
+              <p class="card-text">${text}</p>
+            </a>`,
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+
+  const hero = mainElement.querySelector(".hero");
+  if (hero?.nextElementSibling) {
+    hero.after(bridge);
+    return;
+  }
+
+  mainElement.prepend(bridge);
+}
+
+initGlobalWirkungsradarBridge();
 
 function slugifyHeading(text) {
   return text
