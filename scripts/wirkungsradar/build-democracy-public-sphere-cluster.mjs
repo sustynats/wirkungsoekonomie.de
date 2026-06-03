@@ -53,16 +53,16 @@ const sourcePack = {
     reporters_without_borders: {
       label: "Reporter ohne Grenzen - Rangliste der Pressefreiheit",
       publisher: "Reporter ohne Grenzen",
-      url: "https://www.reporter-ohne-grenzen.de/",
+      url: "https://www.reporter-ohne-grenzen.de/rangliste/detail",
       type: "ngo",
       relevance: ["Pressefreiheit", "Medienfreiheit"],
     },
     wissenschaftsrat_open_science: {
-      label: "Wissenschaftsrat / Open Science / wissenschaftliche Integritaet",
+      label: "Wissenschaftsrat - Wissenschaftskommunikation",
       publisher: "Wissenschaftsrat",
-      url: "https://www.wissenschaftsrat.de/",
+      url: "https://www.wissenschaftsrat.de/download/2021/9367-21.html",
       type: "wissenschaftspolitik",
-      relevance: ["Wissenschaftliche Qualitaet", "Forschung", "Integritaet"],
+      relevance: ["Wissenschaftliche Qualitaet", "Forschung", "Wissenschaftskommunikation"],
     },
   },
 };

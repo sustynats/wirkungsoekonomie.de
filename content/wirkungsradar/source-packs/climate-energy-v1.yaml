@@ -115,7 +115,7 @@ primary_sources:
       - "Modellwerte"
   - label: "Fraunhofer ISE / Energy-Charts"
     publisher: "Fraunhofer ISE"
-    url: "https://www.energy-charts.info/"
+    url: "https://www.energy-charts.info/charts/energy/chart.htm?l=de&c=DE"
     type: "datenbank"
     use_for:
       - "Strommix Deutschland"
@@ -335,7 +335,7 @@ primary_sources:
       - "Ladeleistung"
   - label: "Deutschlandnetz - HPC-Schnellladepunkte"
     publisher: "Deutschlandnetz"
-    url: "https://www.deutschlandnetz.de/"
+    url: "https://www.deutschlandnetz.de/standorte"
     type: "infrastruktur"
     use_for:
       - "HPC-Schnellladen"

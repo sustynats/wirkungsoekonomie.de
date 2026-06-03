@@ -28,7 +28,7 @@ sources:
       - "Sektortrends"
   fraunhofer_ise_energy_charts:
     label: "Fraunhofer ISE / Energy-Charts"
-    url: "https://www.energy-charts.info/"
+    url: "https://www.energy-charts.info/charts/energy/chart.htm?l=de&c=DE"
     type: "datenbank"
     relevance:
       - "Strommix"
@@ -122,7 +122,7 @@ sources:
       - "Datenstand 01.04.2026"
   deutschlandnetz_hpc:
     label: "Deutschlandnetz - HPC-Schnellladepunkte"
-    url: "https://www.deutschlandnetz.de/"
+    url: "https://www.deutschlandnetz.de/standorte"
     type: "infrastruktur"
     relevance:
       - "HPC-Schnellladepunkte"

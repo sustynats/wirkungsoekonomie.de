@@ -103,7 +103,7 @@ const sourcePack = {
     {
       label: "Fraunhofer ISE / Energy-Charts",
       publisher: "Fraunhofer ISE",
-      url: "https://www.energy-charts.info/",
+      url: "https://www.energy-charts.info/charts/energy/chart.htm?l=de&c=DE",
       type: "datenbank",
       use_for: ["Strommix Deutschland", "Erneuerbare Stromerzeugung", "Energiewende Fakten"],
     },
@@ -285,7 +285,7 @@ const sourcePack = {
     {
       label: "Deutschlandnetz - HPC-Schnellladepunkte",
       publisher: "Deutschlandnetz",
-      url: "https://www.deutschlandnetz.de/",
+      url: "https://www.deutschlandnetz.de/standorte",
       type: "infrastruktur",
       use_for: ["HPC-Schnellladen", "Autobahn-Ladeparks", "Flächenabdeckung"],
     },
@@ -450,7 +450,7 @@ const deepDiveSourcePack = {
     },
     fraunhofer_ise_energy_charts: {
       label: "Fraunhofer ISE / Energy-Charts",
-      url: "https://www.energy-charts.info/",
+      url: "https://www.energy-charts.info/charts/energy/chart.htm?l=de&c=DE",
       type: "datenbank",
       relevance: ["Strommix", "erneuerbare Energien", "Energiewende"],
     },
@@ -516,7 +516,7 @@ const deepDiveSourcePack = {
     },
     deutschlandnetz_hpc: {
       label: "Deutschlandnetz - HPC-Schnellladepunkte",
-      url: "https://www.deutschlandnetz.de/",
+      url: "https://www.deutschlandnetz.de/standorte",
       type: "infrastruktur",
       relevance: ["HPC-Schnellladepunkte", "Autobahn-Ladeparks", "Alltags- und Langstreckenladen"],
     },
@@ -2809,7 +2809,7 @@ const evChargingSubclaims = [
 
 const evInfrastructureSources = [
   ["Bundesnetzagentur - öffentliche Ladeinfrastruktur Deutschland", "Zum 1. April 2026 waren 149.002 Normalladepunkte und 51.253 Schnellladepunkte im Ladesäulenregister enthalten; insgesamt standen 8,50 GW Ladeleistung bereit.", "Aktueller Faktenblock zum Ladeinfrastrukturausbau in Deutschland.", "Registerdaten enthalten auch Meldungen aus noch nicht abgeschlossenen Anzeigeverfahren.", "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html"],
-  ["Deutschlandnetz - HPC-Schnellladepunkte", "Rund 9.000 zusätzliche HPC-Schnellladepunkte an mehr als 1.000 Standorten.", "Autobahn- und Flächenabdeckung für Pkw und Transporter.", "Deutschlandnetz ergänzt private und andere öffentliche Ladepunkte.", "https://www.deutschlandnetz.de/"],
+  ["Deutschlandnetz - HPC-Schnellladepunkte", "Rund 9.000 zusätzliche HPC-Schnellladepunkte an mehr als 1.000 Standorten.", "Autobahn- und Flächenabdeckung für Pkw und Transporter.", "Deutschlandnetz ergänzt private und andere öffentliche Ladepunkte.", "https://www.deutschlandnetz.de/standorte"],
   ["BMV - Deutschlandnetz", "Das Deutschlandnetz soll Schnellladeinfrastruktur in Regionen und an Autobahnen ergänzen.", "Politische Einordnung des Ladeinfrastruktur-Ausbaus.", "Tatsächliche Standortqualität, Verfügbarkeit und Preisgestaltung separat prüfen.", "https://bmdv.bund.de/SharedDocs/DE/Artikel/G/deutschlandnetz.html"],
   ["IEA - EV charging infrastructure", "Die IEA beschreibt den schnellen Ausbau öffentlicher und schneller Ladeinfrastruktur als zentralen Teil wachsender Elektromobilität.", "Internationaler Kontext für Ladepunkte, Schnellladen und Infrastrukturbedarf.", "Internationale Trends ersetzen keine lokale Standortprüfung.", "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-charging"],
   ["EU AFIR - Alternative Fuels Infrastructure Regulation", "Mindestziele für Ladeinfrastruktur im TEN-T-Netz und Vorgaben zu Nutzerfreundlichkeit, Zahlung und Preistransparenz.", "Einordnung, dass Ladeinfrastruktur regulatorisch geplant wird.", "Nationale Umsetzung und tatsächliche Standortqualität separat prüfen.", "https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en"],
