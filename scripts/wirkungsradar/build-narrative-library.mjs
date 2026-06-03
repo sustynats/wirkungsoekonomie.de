@@ -1349,6 +1349,41 @@ function languageWirkstoffSection() {
       </section>`;
 }
 
+function narrativePsychologyBridgeSection() {
+  const rows = [
+    ["Ohnmacht", "gelernte Ohnmacht, Verantwortungsdiffusion", "Hebel sichtbar machen"],
+    ["Verzögerung", "Status-quo-Bias, Unsicherheitsaversion", "Kosten des Wartens zeigen"],
+    ["Sündenbock", "Ingroup/Outgroup, Nullsummendenken", "Problem anerkennen, Gruppenschuld trennen"],
+    ["Kontrollverlust", "Reaktanz, Kontrollbedürfnis", "Transparenz und Verfahren prüfen"],
+    ["Verbotsnarrativ", "Reaktanz, Verlustaversion", "Regel, Preis, Schutz und Verbot unterscheiden"],
+    ["Elitenverschwörung", "Mustererkennung, Intentionalitätsbias", "konkrete Belege verlangen"],
+    ["Wissenschaftsdelegitimierung", "Bestätigungsfehler, motiviertes Denken", "Methode und Korrektursystem erklären"],
+    ["Medienfeindbild", "Hostile-Media-Effekt, Wahrheitsillusion", "konkrete Quelle prüfen"],
+    ["Opferumkehr", "Reaktanz, Identitätsschutz", "Meinungsfreiheit von Widerspruch trennen"],
+    ["Whataboutism", "Aufmerksamkeitsverschiebung", "zurück zur Ausgangsfrage"],
+    ["Scheiternsframe", "Negativity Bias, Verfügbarkeitsheuristik", "Engpass statt Totalurteil"],
+    ["Technikwunder-Aufschub", "Optimismusbias, moral licensing", "Forschung ja, Aufschub nein"],
+    ["Normalisierung", "Wahrheitsillusion, Desensibilisierung", "erlaubt, wahr und wirkungsarm trennen"],
+    ["Zersetzung", "Zynismusspirale, gelernte Ohnmacht", "Reformkritik von Delegitimierung trennen"],
+  ];
+  return `<section class="section section-soft" id="psychologische-hebel" aria-labelledby="psychologische-hebel-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Psychologie-Bibliothek</p>
+            <h2 id="psychologische-hebel-title">Psychologische Hebel hinter Narrativen</h2>
+            <p>Narrative wirken, weil sie nicht nur Informationen liefern. Sie aktivieren psychologische Bedürfnisse: Sicherheit, Kontrolle, Zugehörigkeit, Status, Entlastung und Sinn. Ein Ohnmachtsnarrativ nutzt gelernte Hilflosigkeit. Ein Verbotsnarrativ nutzt Reaktanz. Ein Sündenbocknarrativ nutzt Ingroup/Outgroup und Nullsummendenken. Ein Medienfeindbild nutzt Bestätigungsfehler und Quellenzerstörung. Wer diese Hebel erkennt, kann ruhiger reagieren und die Debatte zur Wirkungsfrage zurückführen.</p>
+          </div>
+          <div class="democracy-response-table-wrap">
+            <table class="democracy-response-table">
+              <thead><tr><th>Narrativ</th><th>psychologische Haupthebel</th><th>Antwortprinzip</th></tr></thead>
+              <tbody>${rows.map(([narrative, levers, response]) => `<tr><th scope="row">${escapeHtml(narrative)}</th><td>${escapeHtml(levers)}</td><td>${escapeHtml(response)}</td></tr>`).join("")}</tbody>
+            </table>
+          </div>
+          <p><a class="btn btn-primary" href="../psychologie/">Psychologie-Bibliothek öffnen</a></p>
+        </div>
+      </section>`;
+}
+
 function renderIndex() {
   const cards = narratives
     .map((item) => {
@@ -1525,6 +1560,8 @@ function renderIndex() {
           <p class="narrative-library-empty" data-narrative-empty hidden>Keine Narrative für diese Filter.</p>
         </div>
       </section>
+
+      ${narrativePsychologyBridgeSection()}
 
       ${languageWirkstoffSection()}
 
