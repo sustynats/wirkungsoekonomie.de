@@ -869,11 +869,51 @@ function initRadarSearch() {
   const cleanTitle = (value) =>
     String(value || "")
       .replace(/\s+[-–]\s+Wirkungsradar\s+Live\s*$/i, "")
+      .replace(/\s+\|\s+Wirkungsradar\s+Live\s*$/i, "")
+      .replace(/\s+[-–]\s+Wirkungsradar\s+Detail\s*$/i, "")
+      .replace(/\s+\|\s+Wirkungsradar\s+Detail\s*$/i, "")
       .replace(/\s+[-–]\s+Wirkungsradar\s*$/i, "")
       .replace(/\s+\|\s+Psychologie\s+im\s+Wirkungsradar\s*$/i, "")
       .replace(/^Psychologie\s+im\s+Wirkungsradar\s+[-–]\s+/i, "")
       .replace(/^Wirkungsradar$/i, "Folgencheck für öffentliche Aussagen")
       .trim();
+
+  const radarPathInfo = (entry) => {
+    const url = String(entry?.url || "");
+    const match = url.match(/^\/wirkungsradar\/([^/]+)\/([^/]+)\//);
+    if (!match) {
+      return { group: url, kind: "other", rank: 6 };
+    }
+    const [, section, slug] = match;
+    const ranks = {
+      live: 1,
+      detail: 2,
+      themen: 3,
+      narrative: 4,
+      psychologie: 5,
+    };
+    if (section === "live" || section === "detail") {
+      return { group: `claim:${slug}`, kind: section, rank: ranks[section] };
+    }
+    return { group: `${section}:${slug}`, kind: section, rank: ranks[section] || 6 };
+  };
+
+  const canonicalizeRadarEntries = (entries) => {
+    const byGroup = new Map();
+    entries.forEach((entry) => {
+      const info = radarPathInfo(entry);
+      const next = { ...entry, radarKind: info.kind, radarRank: info.rank };
+      const existing = byGroup.get(info.group);
+      if (
+        !existing ||
+        next.radarRank < existing.radarRank ||
+        (next.radarRank === existing.radarRank && (next.priority || 9999) < (existing.priority || 9999))
+      ) {
+        byGroup.set(info.group, next);
+      }
+    });
+    return [...byGroup.values()];
+  };
 
   const normalizeTag = (value) =>
     normalize(value)
@@ -904,7 +944,9 @@ function initRadarSearch() {
 
     resultsNode.innerHTML = visibleItems
       .map((entry) => {
-        const tags = [entry.type, entry.section === "Wirkungsradar" ? "" : entry.section, ...(entry.tags || [])]
+        const actionLabel =
+          entry.radarKind === "live" ? "Antwort öffnen" : entry.radarKind === "detail" ? "Analyse öffnen" : "Seite öffnen";
+        const tags = [entry.radarKind === "live" ? "Live" : "", entry.section === "Wirkungsradar" ? "" : entry.section, ...(entry.tags || [])]
           .map(displayTag)
           .filter(Boolean)
           .filter((tag, index, list) => list.findIndex((item) => normalize(item) === normalize(tag)) === index)
@@ -915,7 +957,7 @@ function initRadarSearch() {
           <span class="radar-search-result-meta">${tags}</span>
           <strong>${escapeHtml(cleanTitle(entry.title))}</strong>
           <em>${escapeHtml(entry.description || "Wirkungsradar-Inhalt öffnen.")}</em>
-          <span class="radar-search-result-actions"><span>Mehr anzeigen</span><span>Antwort öffnen</span></span>
+          <span class="radar-search-result-actions"><span>${escapeHtml(actionLabel)}</span></span>
         </a>`;
       })
       .join("");
@@ -924,8 +966,9 @@ function initRadarSearch() {
   fetch(relativeSiteUrl("assets/search/search-index.json"))
     .then((response) => (response.ok ? response.json() : Promise.reject(new Error("search-index"))))
     .then((entries) => {
-      const radarEntries = (Array.isArray(entries) ? entries : [])
-        .filter((entry) => entry?.url?.startsWith("/wirkungsradar/"))
+      const radarEntries = canonicalizeRadarEntries(
+        (Array.isArray(entries) ? entries : []).filter((entry) => entry?.url?.startsWith("/wirkungsradar/")),
+      )
         .map((entry) => ({ ...entry, searchText: searchableText(entry) }))
         .sort((a, b) => (a.priority || 9999) - (b.priority || 9999) || a.title.localeCompare(b.title, "de"));
 
