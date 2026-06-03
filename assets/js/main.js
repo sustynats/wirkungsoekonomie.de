@@ -32,7 +32,6 @@ if (siteNav) {
   const navItems = [
     ["Start", "index.html", "index.html"],
     ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
-    ["Wirkungsradar", "wirkungsradar/", "wirkungsradar/"],
     ["So wirkt WÖk", "so-wirkt-wirkungsoekonomie/", "so-wirkt-wirkungsoekonomie/|so-wirkt-wirkungsoekonomie.html"],
     ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/"],
     ["Methoden & Werkzeuge", "werkzeuge/", "werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html"],
@@ -956,25 +955,6 @@ function initGlobalWirkungsradarBridge() {
   const path = window.location.pathname;
   const normalizedPath = path.endsWith("/") ? path : `${path}/`;
   const isRadarPage = normalizedPath.includes("/wirkungsradar/");
-
-  const footerNav = document.querySelector(".footer-nav");
-  if (footerNav && !footerNav.querySelector("[data-footer-radar-group]")) {
-    const group = document.createElement("div");
-    group.className = "footer-nav-group";
-    group.dataset.footerRadarGroup = "true";
-    group.innerHTML = `
-      <h3>Wirkungsradar</h3>
-      <div class="footer-nav-links">
-        <a href="${relativeSiteUrl("wirkungsradar/")}">Überblick</a>
-        <a href="${relativeSiteUrl("wirkungsradar/live/")}">Live-Antworten</a>
-        <a href="${relativeSiteUrl("wirkungsradar/narrative/")}">Narrative</a>
-        <a href="${relativeSiteUrl("wirkungsradar/psychologie/")}">Psychologie</a>
-        <a href="${relativeSiteUrl("wirkungsradar/themen/")}">Themen</a>
-        <a href="${relativeSiteUrl("wirkungsradar/methode/")}">Methode</a>
-      </div>
-    `;
-    footerNav.prepend(group);
-  }
 
   if (isRadarPage || document.querySelector("[data-global-radar-bridge]")) {
     return;
