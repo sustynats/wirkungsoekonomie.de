@@ -35596,6 +35596,519 @@
       "glossaryOrderKey": "CO2-Preis"
     },
     {
+      "id": "fossile-systemkosten",
+      "termId": "fossile-systemkosten",
+      "label": "Fossile Systemkosten",
+      "canonicalLabel": "Fossile Systemkosten",
+      "slug": "fossile-systemkosten",
+      "aliases": [
+        "Fossile Systemkosten",
+        "fossile Folgekosten",
+        "fossile externe Kosten"
+      ],
+      "synonyms": [
+        "fossile Folgekosten",
+        "fossile externe Kosten"
+      ],
+      "shortDefinition": "Fossile Systemkosten sind gesellschaftliche Folgekosten fossiler Energie.",
+      "short_definition": "Fossile Systemkosten sind gesellschaftliche Folgekosten fossiler Energie.",
+      "definition": "Fossile Systemkosten sind gesellschaftliche Folgekosten fossiler Energie, etwa Klimaschäden, Gesundheitskosten durch Luftschadstoffe, Importabhängigkeit, Preisschocks, Sicherheitsrisiken und geopolitische Verwundbarkeit.",
+      "longDefinition": "Fossile Systemkosten umfassen gesellschaftliche Folgekosten fossiler Energie. Dazu zählen nicht nur direkt bezahlte Brennstoffpreise, sondern auch ausgelagerte Klima-, Gesundheits-, Infrastruktur-, Sicherheits- und Krisenkosten. Der Begriff bündelt unterschiedliche Kostenarten und ist keine einzelne amtliche Gesamtzahl.",
+      "long_definition": "Fossile Systemkosten umfassen gesellschaftliche Folgekosten fossiler Energie. Dazu zählen nicht nur direkt bezahlte Brennstoffpreise, sondern auch ausgelagerte Klima-, Gesundheits-, Infrastruktur-, Sicherheits- und Krisenkosten. Der Begriff bündelt unterschiedliche Kostenarten und ist keine einzelne amtliche Gesamtzahl.",
+      "hoverDefinition": "Fossile Systemkosten stehen oft nicht auf der Rechnung, entstehen aber real: durch Schäden, Krankheit, Abhängigkeit und Krisen.",
+      "woekRelation": "In der WÖk machen fossile Systemkosten sichtbar, dass scheinbar billige Energie negative Wirkung in andere Haushalte, Zeiträume und Institutionen verschiebt.",
+      "woek_einordnung": "In der WÖk machen fossile Systemkosten sichtbar, dass scheinbar billige Energie negative Wirkung in andere Haushalte, Zeiträume und Institutionen verschiebt.",
+      "examples": [
+        "Klimaschäden",
+        "Luftschadstoffkosten",
+        "fossile Importabhängigkeit"
+      ],
+      "relatedTerms": [
+        "co2-preis",
+        "unsichtbare-rechnung",
+        "rueckkopplungspreis",
+        "wirkungsrisiko"
+      ],
+      "related_terms": [
+        "co2-preis",
+        "unsichtbare-rechnung",
+        "rueckkopplungspreis",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "Umweltbundesamt: Gesellschaftliche Kosten von Umweltbelastungen|https://www.umweltbundesamt.de/daten/umwelt-wirtschaft/gesellschaftliche-kosten-von-umweltbelastungen",
+        "Umweltbundesamt: Methodenkonvention Umweltkosten 4.0|https://www.umweltbundesamt.de/publikationen/methodenkonvention-umweltkosten"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "institutional",
+          "title": "Umweltbundesamt: Gesellschaftliche Kosten von Umweltbelastungen",
+          "url": "https://www.umweltbundesamt.de/daten/umwelt-wirtschaft/gesellschaftliche-kosten-von-umweltbelastungen",
+          "status": "linked"
+        },
+        {
+          "source_type": "institutional",
+          "title": "Umweltbundesamt: Methodenkonvention Umweltkosten 4.0",
+          "url": "https://www.umweltbundesamt.de/publikationen/methodenkonvention-umweltkosten",
+          "status": "linked"
+        }
+      ],
+      "source_links": [
+        {
+          "source_type": "institutional",
+          "title": "Umweltbundesamt: Gesellschaftliche Kosten von Umweltbelastungen",
+          "url": "https://www.umweltbundesamt.de/daten/umwelt-wirtschaft/gesellschaftliche-kosten-von-umweltbelastungen",
+          "status": "linked"
+        },
+        {
+          "source_type": "institutional",
+          "title": "Umweltbundesamt: Methodenkonvention Umweltkosten 4.0",
+          "url": "https://www.umweltbundesamt.de/publikationen/methodenkonvention-umweltkosten",
+          "status": "linked"
+        }
+      ],
+      "internalLinks": [],
+      "internal_links": [],
+      "categories": [
+        "energie-strommarkt-und-systemkosten"
+      ],
+      "tags": [
+        "Klima",
+        "Energie",
+        "Systemkosten",
+        "Externalitäten"
+      ],
+      "category": "Energie, Strommarkt und Systemkosten",
+      "conceptStatus": "Anschlussbegriff",
+      "concept_status": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "theme": [
+        "Klima und Lebenszyklus",
+        "Energie und Strommarkt",
+        "Systemkosten und Gestehungskosten"
+      ],
+      "themes": [
+        "Klima und Lebenszyklus",
+        "Energie und Strommarkt",
+        "Systemkosten und Gestehungskosten"
+      ],
+      "dimensions": [
+        "Planet",
+        "Mensch",
+        "Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsrückkopplung"
+      ],
+      "applicationFields": [
+        "Energie",
+        "Klima",
+        "Staat und Verwaltung",
+        "Unternehmen"
+      ],
+      "application_fields": [
+        "Energie",
+        "Klima",
+        "Staat und Verwaltung",
+        "Unternehmen"
+      ],
+      "sourceField": [
+        "Klimawissenschaft",
+        "Ökonomie"
+      ],
+      "source_field": [
+        "Klimawissenschaft",
+        "Ökonomie"
+      ],
+      "version": "1.0",
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "reviewStatus": "approved",
+      "source": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceDocument": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceSection": "CO2-Preis und fossile Systemkosten",
+      "usageNote": "Als Sammelbegriff für unterschiedliche Kostenarten verwenden und nicht als exakte amtliche Gesamtzahl ausgeben.",
+      "statusNote": "Nicht mit einer einzelnen Haushaltsrechnung oder einer amtlichen Prognose verwechseln.",
+      "doNotConfuseWith": [
+        "CO2-Preis",
+        "Haushaltsrechnung",
+        "amtliche Prognose"
+      ],
+      "relatedDocuments": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "preferredUsage": "Als Systemkosten sichtbar machen, aber Bilanzgrenzen offenlegen.",
+      "deprecatedUsage": [
+        "Fossile Systemkosten als einzelne harte Haushaltsrechnung darstellen"
+      ],
+      "glossaryOrderKey": "fossile systemkosten"
+    },
+    {
+      "id": "sichtbare-rechnung",
+      "termId": "sichtbare-rechnung",
+      "label": "Sichtbare Rechnung",
+      "canonicalLabel": "Sichtbare Rechnung",
+      "slug": "sichtbare-rechnung",
+      "aliases": [
+        "Sichtbare Rechnung",
+        "direkte Rechnung",
+        "sichtbare Kosten"
+      ],
+      "synonyms": [
+        "direkte Rechnung",
+        "sichtbare Kosten"
+      ],
+      "shortDefinition": "Eine sichtbare Rechnung umfasst Kosten, die direkt als Preis, Abgabe oder Steuer sichtbar werden.",
+      "short_definition": "Eine sichtbare Rechnung umfasst Kosten, die direkt als Preis, Abgabe oder Steuer sichtbar werden.",
+      "definition": "Sichtbare Rechnung bezeichnet Kosten, die unmittelbar als Preis, Abgabe, Steuer oder Zahlung auftreten.",
+      "longDefinition": "Sichtbare Rechnung bezeichnet Kosten, die unmittelbar als Preis, Abgabe, Steuer oder Zahlung auftreten. In Klimadebatten wird oft die sichtbare Rechnung des CO2-Preises mit einer scheinbaren Nullrechnung fossiler Folgekosten verwechselt.",
+      "long_definition": "Sichtbare Rechnung bezeichnet Kosten, die unmittelbar als Preis, Abgabe, Steuer oder Zahlung auftreten. In Klimadebatten wird oft die sichtbare Rechnung des CO2-Preises mit einer scheinbaren Nullrechnung fossiler Folgekosten verwechselt.",
+      "hoverDefinition": "Der CO2-Preis ist sichtbar. Fossile Folgekosten sind oft unsichtbar, aber real.",
+      "woekRelation": "Die WÖk unterscheidet sichtbare und unsichtbare Rechnungen, damit Preisdebatten nicht nur den sofort bezahlten Betrag betrachten.",
+      "woek_einordnung": "Die WÖk unterscheidet sichtbare und unsichtbare Rechnungen, damit Preisdebatten nicht nur den sofort bezahlten Betrag betrachten.",
+      "examples": [
+        "Tankrechnung",
+        "Heizrechnung",
+        "CO2-Abgabe"
+      ],
+      "relatedTerms": [
+        "unsichtbare-rechnung",
+        "co2-preis",
+        "fossile-systemkosten"
+      ],
+      "related_terms": [
+        "unsichtbare-rechnung",
+        "co2-preis",
+        "fossile-systemkosten"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "internalLinks": [],
+      "internal_links": [],
+      "categories": [
+        "energie-strommarkt-und-systemkosten"
+      ],
+      "tags": [
+        "Klima",
+        "Kosten",
+        "Framing"
+      ],
+      "category": "Energie, Strommarkt und Systemkosten",
+      "conceptStatus": "Anschlussbegriff",
+      "concept_status": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "theme": [
+        "Klima und Lebenszyklus",
+        "Energie und Strommarkt",
+        "Framing"
+      ],
+      "themes": [
+        "Klima und Lebenszyklus",
+        "Energie und Strommarkt",
+        "Framing"
+      ],
+      "dimensions": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungskommunikation",
+        "Wirkungsbewertung"
+      ],
+      "applicationFields": [
+        "Klima",
+        "Energie",
+        "Politik"
+      ],
+      "application_fields": [
+        "Klima",
+        "Energie",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff"
+      ],
+      "version": "1.0",
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "reviewStatus": "approved",
+      "source": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceDocument": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceSection": "CO2-Preis und fossile Systemkosten",
+      "usageNote": "Immer mit der unsichtbaren Rechnung vergleichen, nicht mit null Kosten.",
+      "doNotConfuseWith": [
+        "Gesamtkosten",
+        "unsichtbare Rechnung"
+      ],
+      "relatedDocuments": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "preferredUsage": "Als Debattenframe für direkt wahrnehmbare Kosten verwenden.",
+      "deprecatedUsage": [],
+      "glossaryOrderKey": "sichtbare rechnung"
+    },
+    {
+      "id": "unsichtbare-rechnung",
+      "termId": "unsichtbare-rechnung",
+      "label": "Unsichtbare Rechnung",
+      "canonicalLabel": "Unsichtbare Rechnung",
+      "slug": "unsichtbare-rechnung",
+      "aliases": [
+        "Unsichtbare Rechnung",
+        "verdeckte Rechnung",
+        "ausgelagerte Kosten"
+      ],
+      "synonyms": [
+        "verdeckte Rechnung",
+        "ausgelagerte Kosten"
+      ],
+      "shortDefinition": "Eine unsichtbare Rechnung umfasst Folgekosten, die nicht unmittelbar bezahlt werden, aber später auftreten.",
+      "short_definition": "Eine unsichtbare Rechnung umfasst Folgekosten, die nicht unmittelbar bezahlt werden, aber später auftreten.",
+      "definition": "Unsichtbare Rechnung bezeichnet Folgekosten, die nicht direkt auf einer Rechnung erscheinen, aber später als Schäden, Gesundheitskosten, Reparaturbedarf, Krisenlasten oder Versicherungsrisiken auftreten.",
+      "longDefinition": "Unsichtbare Rechnung bezeichnet Folgekosten, die nicht direkt auf einer Rechnung erscheinen, aber später als Schäden, Gesundheitskosten, Reparaturbedarf, Krisenlasten oder Versicherungsrisiken auftreten. Der Begriff macht ausgelagerte Wirkung sichtbar, ohne daraus eine einzelne exakte Summe abzuleiten.",
+      "long_definition": "Unsichtbare Rechnung bezeichnet Folgekosten, die nicht direkt auf einer Rechnung erscheinen, aber später als Schäden, Gesundheitskosten, Reparaturbedarf, Krisenlasten oder Versicherungsrisiken auftreten. Der Begriff macht ausgelagerte Wirkung sichtbar, ohne daraus eine einzelne exakte Summe abzuleiten.",
+      "hoverDefinition": "Unsichtbare Kosten verschwinden nicht. Sie tauchen nur später, indirekter und oft ungerechter auf.",
+      "woekRelation": "Die WÖk nutzt die unsichtbare Rechnung als Gegenframe zur scheinbaren Kostenfreiheit negativer Wirkung.",
+      "woek_einordnung": "Die WÖk nutzt die unsichtbare Rechnung als Gegenframe zur scheinbaren Kostenfreiheit negativer Wirkung.",
+      "examples": [
+        "Klimaschäden",
+        "Gesundheitskosten durch Luftschadstoffe",
+        "Krisenhilfen"
+      ],
+      "relatedTerms": [
+        "sichtbare-rechnung",
+        "fossile-systemkosten",
+        "wirkungsblindheit"
+      ],
+      "related_terms": [
+        "sichtbare-rechnung",
+        "fossile-systemkosten",
+        "wirkungsblindheit"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "internalLinks": [],
+      "internal_links": [],
+      "categories": [
+        "energie-strommarkt-und-systemkosten"
+      ],
+      "tags": [
+        "Klima",
+        "Kosten",
+        "Externalitäten"
+      ],
+      "category": "Energie, Strommarkt und Systemkosten",
+      "conceptStatus": "Anschlussbegriff",
+      "concept_status": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "theme": [
+        "Klima und Lebenszyklus",
+        "Energie und Strommarkt",
+        "Framing"
+      ],
+      "themes": [
+        "Klima und Lebenszyklus",
+        "Energie und Strommarkt",
+        "Framing"
+      ],
+      "dimensions": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungskommunikation",
+        "Wirkungsbewertung"
+      ],
+      "applicationFields": [
+        "Klima",
+        "Energie",
+        "Politik"
+      ],
+      "application_fields": [
+        "Klima",
+        "Energie",
+        "Politik"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff"
+      ],
+      "version": "1.0",
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "reviewStatus": "approved",
+      "source": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceDocument": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceSection": "CO2-Preis und fossile Systemkosten",
+      "usageNote": "Nicht als exakte Summe ausgeben, sondern als Hinweis auf ausgelagerte Wirkung.",
+      "doNotConfuseWith": [
+        "kostenfrei",
+        "nicht nachweisbar",
+        "sichtbare Rechnung"
+      ],
+      "relatedDocuments": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "preferredUsage": "Als Gegenframe zu scheinbar billiger fossiler Nutzung verwenden.",
+      "deprecatedUsage": [],
+      "glossaryOrderKey": "unsichtbare rechnung"
+    },
+    {
+      "id": "rueckkopplungspreis",
+      "termId": "rueckkopplungspreis",
+      "label": "Rückkopplungspreis",
+      "canonicalLabel": "Rückkopplungspreis",
+      "slug": "rueckkopplungspreis",
+      "aliases": [
+        "Rückkopplungspreis",
+        "Wirkungsrückkopplungspreis",
+        "Lenkungspreis"
+      ],
+      "synonyms": [
+        "Wirkungsrückkopplungspreis",
+        "Lenkungspreis"
+      ],
+      "shortDefinition": "Ein Rückkopplungspreis führt bislang unsichtbare Wirkung in wirtschaftliche Entscheidungen zurück.",
+      "short_definition": "Ein Rückkopplungspreis führt bislang unsichtbare Wirkung in wirtschaftliche Entscheidungen zurück.",
+      "definition": "Ein Rückkopplungspreis ist ein Preis, der eine bislang unsichtbare Wirkung in wirtschaftliche Entscheidungen zurückführt.",
+      "longDefinition": "Ein Rückkopplungspreis ist ein Preis, der eine bislang unsichtbare Wirkung in wirtschaftliche Entscheidungen zurückführt. Er soll nicht nur Einnahmen erzeugen, sondern Verhalten, Investitionen und Alternativen in Richtung positiver Netto-Wirkung lenken.",
+      "long_definition": "Ein Rückkopplungspreis ist ein Preis, der eine bislang unsichtbare Wirkung in wirtschaftliche Entscheidungen zurückführt. Er soll nicht nur Einnahmen erzeugen, sondern Verhalten, Investitionen und Alternativen in Richtung positiver Netto-Wirkung lenken.",
+      "hoverDefinition": "Ein Rückkopplungspreis macht Wirkung entscheidungsrelevant, statt sie als externen Schaden auszulagern.",
+      "woekRelation": "In der WÖk ist der Rückkopplungspreis ein Brückenbegriff zwischen CO2-Preis, Wirkungssteuer und Preislogiken, die negative Wirkung entscheidungsrelevant machen.",
+      "woek_einordnung": "In der WÖk ist der Rückkopplungspreis ein Brückenbegriff zwischen CO2-Preis, Wirkungssteuer und Preislogiken, die negative Wirkung entscheidungsrelevant machen.",
+      "examples": [
+        "CO2-Preis mit Klimageld",
+        "Wirkungssteuer auf negative Produktwirkung"
+      ],
+      "relatedTerms": [
+        "co2-preis",
+        "wirkungslenkung",
+        "wirkungssteuer",
+        "positive-netto-wirkung"
+      ],
+      "related_terms": [
+        "co2-preis",
+        "wirkungslenkung",
+        "wirkungssteuer",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "source_links": [],
+      "internalLinks": [],
+      "internal_links": [],
+      "categories": [
+        "energie-strommarkt-und-systemkosten"
+      ],
+      "tags": [
+        "Wirkungsökonomie",
+        "Preis",
+        "Rückkopplung",
+        "Klima"
+      ],
+      "category": "Energie, Strommarkt und Systemkosten",
+      "conceptStatus": "führender-begriff",
+      "concept_status": "führender-begriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "führender-begriff",
+      "type": "Führender Begriff",
+      "begriffstyp": "Führender Begriff",
+      "theme": [
+        "Wirkungsökonomie",
+        "Klima und Lebenszyklus",
+        "Systemkosten und Gestehungskosten"
+      ],
+      "themes": [
+        "Wirkungsökonomie",
+        "Klima und Lebenszyklus",
+        "Systemkosten und Gestehungskosten"
+      ],
+      "dimensions": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsrückkopplung",
+        "Wirkungssteuerung",
+        "Wirkungsbewertung"
+      ],
+      "applicationFields": [
+        "Klima",
+        "Energie",
+        "Staat und Verwaltung",
+        "Unternehmen"
+      ],
+      "application_fields": [
+        "Klima",
+        "Energie",
+        "Staat und Verwaltung",
+        "Unternehmen"
+      ],
+      "sourceField": [
+        "WÖk-eigener Begriff"
+      ],
+      "source_field": [
+        "WÖk-eigener Begriff"
+      ],
+      "version": "1.0",
+      "lastReviewed": "2026-06-03",
+      "last_reviewed": "2026-06-03",
+      "lastUpdated": "2026-06-03",
+      "updatedAt": "2026-06-03",
+      "firstApprovedIn": "2026.1",
+      "reviewStatus": "approved",
+      "source": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceDocument": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "sourceSection": "CO2-Preis und fossile Systemkosten",
+      "usageNote": "Als WÖk-Brückenbegriff für CO2-Preis, Wirkungssteuer und andere Lenkungspreise verwenden.",
+      "doNotConfuseWith": [
+        "Strafzahlung",
+        "Gebühr ohne Wirkungsbezug",
+        "reine Einnahmenlogik"
+      ],
+      "relatedDocuments": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "preferredUsage": "Als Preislogik verwenden, die Wirkung sichtbar und entscheidungsrelevant macht.",
+      "deprecatedUsage": [
+        "Rückkopplungspreis als bloße Strafsteuer darstellen"
+      ],
+      "glossaryOrderKey": "rueckkopplungspreis"
+    },
+    {
       "id": "co2e",
       "termId": "co2e",
       "label": "CO2e / CO2-Äquivalent",

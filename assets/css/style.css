@@ -15074,6 +15074,59 @@ a.principle-card:hover,
   line-height: 1.42;
 }
 
+.co2-system-graphic .card {
+  overflow: hidden;
+}
+
+.co2-system-bars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+
+.co2-system-bars div {
+  display: grid;
+  gap: 0.55rem;
+  align-content: start;
+  min-height: 12rem;
+  padding: clamp(1rem, 2.5vw, 1.4rem);
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.78);
+}
+
+.co2-system-bars div:first-child {
+  border-color: rgba(199, 91, 74, 0.28);
+  background: rgba(199, 91, 74, 0.08);
+}
+
+.co2-system-bars span,
+.co2-system-bars em {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.co2-system-bars strong {
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 0.95;
+}
+
+.co2-system-bars > p {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius);
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green-dark);
+  font-weight: 820;
+}
+
 .deep-dive-order-grid .card {
   border-left: 4px solid rgba(47, 125, 92, 0.4);
 }
@@ -15179,6 +15232,10 @@ a.principle-card:hover,
 
   .deep-dive-definition-grid,
   .deep-dive-consequence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .co2-system-bars {
     grid-template-columns: 1fr;
   }
 

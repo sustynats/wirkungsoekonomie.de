@@ -899,6 +899,80 @@ const narratives = [
     claims: [{ title: "Das wird man ja wohl noch sagen dürfen" }, { title: "Ich sage nur, was viele denken" }, { title: "Man darf ja nichts mehr sagen", url: "../../live/man-darf-ja-nichts-mehr-sagen/" }],
   },
   {
+    slug: "co2-preis-abzocke",
+    id: "co2-preis-abzocke",
+    title: "CO₂-Preis-Abzocke",
+    shortName: "CO₂-Preis",
+    subtitle: "Wenn ein Lenkungsinstrument als reine Belastung geframt wird",
+    riskLevel: "hoch",
+    themes: ["klima", "energie", "wirtschaft", "demokratie"],
+    resonance: ["kostenangst", "misstrauen", "kontrollverlust"],
+    riskDimensions: ["mensch", "planet", "demokratie", "institutionelles_vertrauen"],
+    abstract:
+      "Das CO₂-Preis-Abzocke-Narrativ stellt CO₂-Bepreisung als willkürliche Belastung der Bürger:innen dar. Der wahre Kern ist: Fossile Energie wird durch CO₂-Bepreisung zunächst sichtbar teurer und kann Haushalte belasten, wenn soziale Rückverteilung und Alternativen fehlen. Irreführend wird das Narrativ, wenn es die unsichtbaren fossilen Systemkosten ausblendet: Klimaschäden, Gesundheitskosten durch Luftschadstoffe, Importabhängigkeit, Preisschocks und geopolitische Risiken. Wirkungsökonomisch ist entscheidend: Nicht der Preis allein ist das Problem, sondern ob die Einnahmen gerecht rückverteilt, wirksam investiert und fossile Abhängigkeiten tatsächlich reduziert werden.",
+    summary: {
+      definition: "Ein Narrativ, das CO₂-Bepreisung als reine Abzocke rahmt und fossile Folgekosten ausblendet.",
+      typical_message: "Der CO₂-Preis ist nur Abzocke.",
+      emotional_hook: "Kostenangst, Misstrauen gegen Staat, Kontrollverlust.",
+      risk: "Akzeptanz für wirksame Rückkopplung und Transformation sinkt.",
+      host_principle: "Belastung anerkennen, fossile Systemkosten sichtbar machen.",
+    },
+    table: {
+      kurzform: "„Abzocke“",
+      hauptwirkung: "Akzeptanz sinkt",
+      live_prinzip: "sichtbare und unsichtbare Rechnung vergleichen",
+    },
+    definition:
+      "Das CO₂-Preis-Abzocke-Narrativ macht aus einem Lenkungs- und Finanzierungsinstrument eine reine Belastungserzählung. Es erkennt sichtbare Kosten, blendet aber fossile Systemkosten aus.",
+    phrases: [
+      "Der CO₂-Preis ist nur Abzocke.",
+      "Klimaschutz macht alles unbezahlbar.",
+      "Der Staat will nur kassieren.",
+      "Die Bürger zahlen für Ideologie.",
+      "CO₂-Steuer bringt dem Klima nichts.",
+      "Ohne CO₂-Preis wäre Energie billig.",
+    ],
+    wirkstoff:
+      "Sichtbarer Preis wird als Zusatzbelastung gerahmt, während unsichtbare fossile Folgekosten ausgeblendet werden.",
+    resonanceText: "Kostenangst, Misstrauen gegen Staat, Kontrollverlust und Entlastungswunsch.",
+    effectSteps: [
+      ["Aussage", "Der CO₂-Preis ist Abzocke."],
+      ["Wirkstoff", "Sichtbarer Preis als Empörungsimpuls."],
+      ["Ausblendung", "Klimaschäden, Luftschadstoffe, Importabhängigkeit, Krisenkosten und fossile Preisrisiken verschwinden."],
+      ["Resonanz", "Kostenangst, Misstrauen gegen Staat, Kontrollverlust."],
+      ["Narrativ", "Klimapolitik nimmt uns Geld weg."],
+      ["Wirkungspotenzial", "Unterstützung für CO₂-Bepreisung, Klimaschutz und Transformation sinkt."],
+      ["Wirkungsrisiko", "Fossile Abhängigkeit bleibt länger bestehen und spätere Systemkosten steigen."],
+      ["Wirkung dritter Ordnung", "Der Markt bleibt wirkungsblind: Fossile Nutzung wirkt billig, obwohl ihre Folgekosten real sind."],
+    ],
+    mpd: {
+      mensch: "Soziale Härten können real sein; ohne Steuerung steigen aber Gesundheits-, Schadens- und Krisenkosten.",
+      planet: "Fossile Nutzung bleibt länger attraktiv, wenn ihre Folgekosten unsichtbar bleiben.",
+      demokratie: "Misstrauen wächst, wenn Rückverteilung, Einnahmen und Wirkung nicht transparent sind.",
+    },
+    answers: {
+      ten_seconds:
+        "Der CO₂-Preis ist sichtbar. Die fossilen Folgekosten sind oft unsichtbar - Klimaschäden, Krankheit, Importe und Krisen zahlen wir trotzdem.",
+      thirty_seconds:
+        "Der wahre Kern ist: CO₂-Bepreisung kann Haushalte belasten. Der Denkfehler ist: Daraus wird reine Abzocke, während fossile Systemkosten verschwinden. Wirkungsökonomisch fragen wir: Wird sozial zurückverteilt, wirksam investiert und fossile Abhängigkeit wirklich reduziert?",
+      two_minutes:
+        "Ich ordne das sauber ein. Ein CO₂-Preis kann eine Belastung sein, vor allem wenn Menschen keine Alternativen haben oder Rückverteilung fehlt. Das darf man nicht kleinreden. Aber daraus folgt nicht, dass fossile Energie ohne CO₂-Preis billig wäre. Die Kosten entstehen trotzdem: Klimaschäden, Luftschadstoffe, Gesundheitskosten, fossile Importabhängigkeit, Preisschocks und Sicherheitsrisiken. Der CO₂-Preis macht einen Teil dieser Wirkung sichtbar und kann Einnahmen schaffen, die für Entlastung, Infrastruktur und Transformation genutzt werden. Die entscheidende Frage ist also nicht: Preis oder keine Kosten? Sondern: Wie gestalten wir die Rückkopplung fair, wirksam und transparent?",
+    },
+    dontDo: [
+      "Nicht sagen: CO₂-Preis ist keine Belastung.",
+      "Nicht soziale Härten kleinreden.",
+      "Nicht CO₂-Preis und Klimaschäden als identische Kostenart behandeln.",
+    ],
+    redirectQuestion:
+      "Vergleichst du den sichtbaren CO₂-Preis mit null Kosten - oder mit den realen fossilen Folgekosten?",
+    related: ["verbotsnarrativ", "kontrollverlust", "ohnmacht", "verzoegerung", "scheiternsframe"],
+    claims: [
+      { title: "CO₂-Preis oder fossile Systemkosten?", url: "../../live/co2-preis-oder-fossile-systemkosten/" },
+      { title: "Deutschland ist nur für 2 % verantwortlich", url: "../../live/deutschland-nur-zwei-prozent/" },
+      { title: "Klimaschutz ist Ökodiktatur" },
+    ],
+  },
+  {
     slug: "zersetzung",
     id: "zersetzungsnarrativ",
     title: "Zersetzungsnarrativ",

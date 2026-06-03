@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const UPDATED_AT = "2026-06-03";
+const ASSET_VERSION = "20260603-co2-systemkosten";
 
 const sourcePack = {
   id: "climate-energy-v1",
@@ -49,6 +50,48 @@ const sourcePack = {
       url: "https://www.umweltbundesamt.de/themen/klima-energie/klimaschutz-energiepolitik-in-deutschland/szenarien-projektionen/treibhausgas-projektionen/aktuelle-treibhausgas-projektionen",
       type: "amtlich",
       use_for: ["Zielpfade", "Klimaneutralität 2045", "Sektorale Lücken"],
+    },
+    {
+      label: "Umweltbundesamt - Gesellschaftliche Kosten von Umweltbelastungen",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/daten/umwelt-wirtschaft/gesellschaftliche-kosten-von-umweltbelastungen",
+      type: "amtlich",
+      use_for: ["gesellschaftliche Umweltkosten", "Klimaschäden", "Gesundheitskosten", "Material- und Ernteschäden"],
+    },
+    {
+      label: "Umweltbundesamt - Umweltkosten von Energie und Straßenverkehr",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-umweltkosten-von-energie-strassenverkehr",
+      type: "amtlich",
+      use_for: ["Umweltkosten 2022", "Straßenverkehr", "Strom- und Wärmeerzeugung", "Luftschadstoffe"],
+    },
+    {
+      label: "Umweltbundesamt - nEHS-Versteigerungen 2026",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/presse/pressemitteilungen/erstmals-versteigerungen-im-nationalen",
+      type: "amtlich",
+      use_for: ["nationaler Emissionshandel", "CO₂-Preis 2025", "Preiskorridor 2026"],
+    },
+    {
+      label: "Umweltbundesamt - Emissionshandel 21 Milliarden Euro",
+      publisher: "Umweltbundesamt / DEHSt",
+      url: "https://www.umweltbundesamt.de/presse/pressemitteilungen/emissionshandel-21-milliarden-euro-fliessen-in-den",
+      type: "amtlich",
+      use_for: ["Emissionshandelserlöse", "Klima- und Transformationsfonds", "nEHS-Einnahmen 2025"],
+    },
+    {
+      label: "GWS - Volkswirtschaftliche Folgekosten durch Klimawandel",
+      publisher: "GWS",
+      url: "https://www.gws-os.com/de/publikationen/alle-publikationen/detail/volkswirtschaftliche-folgekosten-durch-klimawandel-szenarioanalyse-bis-2050",
+      type: "wissenschaft",
+      use_for: ["Klimafolgekosten", "Szenarioanalyse", "Anpassungskosten"],
+    },
+    {
+      label: "Umweltbundesamt - Methodenkonvention Umweltkosten 4.0",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/system/files/medien/479/publikationen/2026-02/UBA_Handbuch%20Umweltkosten_Methodenkonvention%204.0.pdf",
+      type: "methodik",
+      use_for: ["Kostensätze", "Treibhausgase", "Luftschadstoffe", "Modellwerte"],
     },
     {
       label: "Fraunhofer ISE / Energy-Charts",
@@ -329,7 +372,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Investitionssicherheit und Akzeptanz sinken, wenn Engpässe als Totalversagen gerahmt werden.", "critical"],
       ["WÖk-Lösung", "Von Lagerkampf zu Engpasslogik, Wirkungshaushalten und T-SROI für Infrastruktur.", "positive"],
     ],
-    claims: ["energiewende-gescheitert", "windraeder-zerstoeren-natur", "klimaschutz-ist-oekodiktatur"],
+    claims: ["energiewende-gescheitert", "windraeder-zerstoeren-natur", "klimaschutz-ist-oekodiktatur", "co2-preis-oder-fossile-systemkosten"],
   },
   {
     slug: "mobilitaet-batterien",
@@ -606,6 +649,84 @@ const claims = [
       "GHG Protocol - Corporate Value Chain Scope 3 Standard",
       "Destatis - 3.4 million new cars exported from Germany in 2024",
       "Our World in Data - Share of global cumulative CO2 emissions",
+    ],
+  },
+  {
+    title: "CO₂-Preis oder fossile Systemkosten? Warum wir so oder so zahlen",
+    slug: "co2-preis-oder-fossile-systemkosten",
+    claimPhrase: "„Der CO₂-Preis macht alles teurer.“",
+    shortJudgement: "Wahrer Kostenkern, falscher Belastungsframe.",
+    narrativeFamilies: ["CO₂-Preis-Abzocke", "Kontrollverlust", "Ohnmacht", "Verzögerung"],
+    riskLevel: "hoch",
+    themes: ["Energiewende", "Politik", "Wirtschaft"],
+    sdgs: ["SDG 7", "SDG 9", "SDG 11", "SDG 13"],
+    sdgPlus: ["Wirkungswahrheit", "soziale Fairness", "Handlungsfähigkeit"],
+    subtitle: "Wahrer Kostenkern, falscher Belastungsframe.",
+    abstract:
+      "Die Aussage „Der CO₂-Preis macht alles teurer“ enthält einen wahren Kern: Fossile Energie wird durch CO₂-Bepreisung sichtbar teurer. Irreführend wird sie, wenn der CO₂-Preis als reine Zusatzbelastung dargestellt wird, während fossile Systemkosten ausgeblendet bleiben. Klimaschäden, Luftschadstoffe, Gesundheitskosten, fossile Importabhängigkeit, Preis- und Versorgungsschocks sowie geopolitische Verwundbarkeit entstehen auch ohne CO₂-Preis. Ohne wirksame Steuerung zahlen wir später, unsichtbarer, ungerechter und oft teurer.",
+    summary: {
+      judgement: "Wahrer Kostenkern, falscher Belastungsframe.",
+      true_core: "CO₂-Bepreisung macht fossile Nutzung sichtbar teurer.",
+      problem: "Der Frame vergleicht sichtbare CO₂-Kosten mit null Kosten und blendet fossile Folgekosten aus.",
+      narrative: "CO₂-Preis-Abzocke / Kontrollverlust / Ohnmacht.",
+      risk: "Akzeptanz für Lenkung, Entlastung und Transformation sinkt.",
+      host_answer: "Wir zahlen so oder so - die Frage ist, ob wir Wirkung steuern oder Schäden reparieren.",
+    },
+    answers: {
+      ten_seconds:
+        "Der CO₂-Preis ist nicht die eigentliche Rechnung. Die eigentliche Rechnung sind Klimaschäden, Krankheitskosten, fossile Importe und Krisenrisiken.",
+      thirty_seconds:
+        "Ja, der CO₂-Preis macht fossile Energie sichtbar teurer. Aber ohne CO₂-Preis zahlen wir trotzdem: über Klimaschäden, Luftverschmutzung, Krankheit, fossile Importrechnungen und Preisschocks. Der Unterschied ist: Der CO₂-Preis kann lenken und zurückverteilt werden. Fossile Schäden sind echte Verluste.",
+      two_minutes:
+        "Ich ordne das sauber ein. Der CO₂-Preis ist nicht einfach eine zusätzliche Rechnung, die vorher nicht existierte. Fossile Energie verursacht bereits Kosten: Klimaschäden, zerstörte Infrastruktur, Ernteausfälle, Luftschadstoffe, Gesundheitskosten, fossile Importabhängigkeit und geopolitische Risiken. Diese Kosten tauchen nur nicht vollständig im Preis auf. Der CO₂-Preis ist der Versuch, einen Teil dieser Wirkung sichtbar zu machen und in Entscheidungen zurückzuführen. Wichtig ist: Dieses Geld ist nicht automatisch verloren. Es kann für Klimageld, Gebäudesanierung, erneuerbare Energien, ÖPNV, Industrieumbau und soziale Entlastung genutzt werden. Wirkungsökonomisch ist die Frage deshalb nicht: CO₂-Preis ja oder nein? Sondern: Wie gestalten wir ihn so, dass er Emissionen senkt, Menschen entlastet und fossile Systemkosten reduziert?",
+    },
+    effectPath: [
+      ["Aussage", "Der CO₂-Preis macht alles teurer."],
+      ["Wirkstoff", "Sichtbarer Preis als Empörungsimpuls."],
+      ["Ausblendung", "Unsichtbare fossile Systemkosten werden nicht mitgerechnet."],
+      ["Resonanz", "Kostenangst, Misstrauen, Kontrollverlust."],
+      ["Narrativ", "Klimapolitik ist Abzocke."],
+      ["Wirkungspotenzial", "Akzeptanz für CO₂-Bepreisung und Klimaschutz sinkt."],
+      ["Wirkungsrisiko", "Fossile Abhängigkeit, Gesundheitskosten und Klimaschäden bleiben höher."],
+      ["Wirkung dritter Ordnung", "Die Gesellschaft bleibt wirkungsblind: Fossile Energie wirkt billig, obwohl ihre Folgekosten real sind."],
+    ],
+    frameKey: "verzoegerung",
+    redirectQuestion:
+      "Vergleichst du gerade den sichtbaren CO₂-Preis mit null Kosten - oder mit den realen fossilen Folgekosten, die wir sonst trotzdem zahlen?",
+    dontDo: [
+      "Nicht behaupten: CO₂-Preis löst die Klimakrise allein.",
+      "Nicht sagen: CO₂-Preis ist keine Belastung.",
+      "Nicht soziale Härten kleinreden.",
+      "Nicht Klimaschäden und CO₂-Preis als identische Kostenart behandeln.",
+      "Nicht auf Scheingenauigkeit bestehen, wenn Modellzahlen genutzt werden.",
+    ],
+    facts: [
+      "2025 lag der nationale CO₂-Preis bei 55 Euro je Tonne; 2026 folgt ein Preiskorridor von 55 bis 65 Euro.",
+      "UBA beziffert Umweltkosten aus Straßenverkehr, Strom- und Wärmeerzeugung für 2022 auf rund 301,1 Milliarden Euro.",
+      "Emissionshandelserlöse sind öffentliche Mittel und können entlasten oder transformativ investiert werden.",
+    ],
+    consequences: [
+      "Fossile Systemkosten bleiben unsichtbar.",
+      "Soziale Belastungen werden gegen Klimaschutz ausgespielt.",
+      "Fossile Importabhängigkeit, Gesundheitskosten und Klimaschäden bleiben länger hoch.",
+    ],
+    woekSolution: [
+      "CO₂-Preis als Rückkopplung, nicht als Strafzahlung gestalten.",
+      "Einnahmen sozial und transformativ verwenden.",
+      "Fossile Systemkosten vollständig sichtbar machen.",
+      "Nicht nur Preis erhöhen, sondern echte Alternativen schaffen.",
+      "Wirkungshaushalt statt bloßer Einnahmenlogik.",
+    ],
+    mpd: {
+      mensch: "Ohne Entlastung kann CO₂-Bepreisung Haushalte belasten; ohne Steuerung steigen Gesundheits-, Schadens- und Krisenkosten.",
+      planet: "Fossile Nutzung bleibt länger attraktiv, wenn Klimaschäden nicht in Entscheidungen zurückgeführt werden.",
+      demokratie: "Kostenangst und Misstrauen wachsen, wenn Einnahmen, Entlastung und Wirkung nicht transparent sind.",
+    },
+    sources: [
+      "Umweltbundesamt - Gesellschaftliche Kosten von Umweltbelastungen",
+      "Umweltbundesamt - Umweltkosten von Energie und Straßenverkehr",
+      "Umweltbundesamt - nEHS-Versteigerungen 2026",
+      "Umweltbundesamt - Emissionshandel 21 Milliarden Euro",
     ],
   },
   {
@@ -1548,7 +1669,7 @@ function pageShell({ title, description, canonical, base, main }) {
     <meta name="search_type" content="Klima & Energie">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260603-climate-energy">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${ASSET_VERSION}">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -1585,7 +1706,7 @@ ${main}
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=20260603-climate-energy"></script>
+    <script src="${base}assets/js/main.js?v=${ASSET_VERSION}"></script>
   </body>
 </html>
 `;
@@ -2429,8 +2550,175 @@ function renderGermanyTwoPercentDossier(claim) {
   });
 }
 
+const co2SystemKeyPoints = [
+  ["Der CO₂-Preis ist sichtbar", "Er verteuert fossile Nutzung unmittelbar und löst deshalb politischen Widerstand aus.", "warning"],
+  ["Fossile Systemkosten sind oft unsichtbar", "Klimaschäden, Luftschadstoffe, Krankheit, Importabhängigkeit und Krisenrisiken erscheinen nicht direkt auf der Tank- oder Heizrechnung.", "critical"],
+  ["CO₂-Preis ist nicht automatisch verlorenes Geld", "Die Einnahmen können für Entlastung, Klimaschutz, Infrastruktur, Gebäudesanierung und Transformation genutzt werden.", "positive"],
+  ["Die Rechnung hängt von der Rückverteilung ab", "Ein CO₂-Preis ohne soziale Abfederung kann ungerecht wirken. Mit Klimageld, Infrastruktur und Alternativen kann er entlasten.", "neutral"],
+  ["Der Preis pro Tonne ist nicht die Gesamtrechnung", "Entscheidend ist: CO₂-Preis mal verbleibende Emissionen. Wenn Emissionen sinken, kann die Gesamtrechnung trotz höherem Tonnenpreis sinken.", "neutral"],
+  ["Wirkungsökonomisch geht es um Rückkopplung", "Fossile Folgekosten werden in Entscheidungen zurückgeführt, statt später als Schäden, Krankheit oder Krisenkosten aufzutauchen.", "positive"],
+];
+
+const co2SystemMatrix = [
+  ["Klimaschäden", "Extremwetter, Ernteausfälle, Infrastruktur, Produktivität", "geringere Schäden durch Emissionsminderung und Anpassung"],
+  ["Luftverschmutzung", "NO₂/NOx, Feinstaub, Ozon, Atemwegs- und Herz-Kreislauf-Erkrankungen", "sauberere Luft, weniger Krankheit, weniger Todesfälle"],
+  ["Fossile Importe", "Geldabfluss für Öl, Gas, Kohle", "weniger Importabhängigkeit, mehr Wertschöpfung im Inland"],
+  ["Preisschocks", "Abhängigkeit von Weltmarkt, Krisen, Kriegen", "stabilere Kosten durch erneuerbare Energien und Effizienz"],
+  ["Staatshaushalt", "Reparatur, Krisenhilfen, Katastrophenschutz", "Investition in Vorbeugung, Infrastruktur, Resilienz"],
+  ["Demokratie", "Kostenangst, Misstrauen, Populismus", "transparente Rückverteilung und sichtbare Wirkung"],
+];
+
+const co2ExternalSources = [
+  ["UBA - Gesellschaftliche Kosten von Umweltbelastungen", "Umweltkosten aus Straßenverkehr, Strom- und Wärmeerzeugung 2022: mindestens 301 Mrd. Euro.", "Begründung, dass Luftschadstoffe, Treibhausgase und Energie-/Verkehrsfolgen reale gesellschaftliche Kosten erzeugen.", "Nicht vollständig identisch mit der erweiterten Systemrechnung der Grafik.", "https://www.umweltbundesamt.de/daten/umwelt-wirtschaft/gesellschaftliche-kosten-von-umweltbelastungen"],
+  ["UBA - Umweltkosten von Energie und Straßenverkehr", "Treibhausgase und Luftschadstoffe aus Strom, Wärme und Straßenverkehr verursachen hohe Kosten durch Gesundheit, Ökosysteme, Gebäude und Extremwetter.", "Gesundheits- und Umweltkostenblock.", "Sektorale Abgrenzung beachten.", "https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-umweltkosten-von-energie-strassenverkehr"],
+  ["DEHSt / UBA - Emissionshandelserlöse 2025", "2025 wurden insgesamt rund 21 Mrd. Euro aus dem Emissionshandel erlöst; der nEHS lag bei über 15,2 Mrd. Euro.", "Einordnung: CO₂-Preis-Einnahmen sind öffentliche Mittel, keine verschwundenen Verluste.", "Bruttoeinnahmen sind nicht gleich Netto-Belastung pro Haushalt.", "https://www.umweltbundesamt.de/presse/pressemitteilungen/emissionshandel-21-milliarden-euro-fliessen-in-den"],
+  ["UBA - nEHS-Preis 2025/2026", "2025 Festpreis 55 Euro/t; 2026 Versteigerung im Preiskorridor 55-65 Euro/t.", "Faktenblock zum CO₂-Preis.", "Ab 2027 wird die Preisbildung stärker vom Emissionshandel geprägt.", "https://www.umweltbundesamt.de/presse/pressemitteilungen/erstmals-versteigerungen-im-nationalen"],
+  ["GWS - Volkswirtschaftliche Folgekosten durch Klimawandel", "Szenarioanalysen zu Klimawandelkosten in Deutschland bis 2050.", "Klimaschadensblock und Anpassungslogik.", "Szenarien, keine exakte Vorhersage.", "https://www.gws-os.com/de/publikationen/alle-publikationen/detail/volkswirtschaftliche-folgekosten-durch-klimawandel-szenarioanalyse-bis-2050"],
+  ["UBA - Methodenkonvention / Handbuch Umweltkosten 4.0", "Kostensätze für Treibhausgase und Luftschadstoffe, inklusive NOx und PM2,5.", "Kostenbewertung von Luftschadstoffen.", "Kostensätze sind Modellwerte und kontextabhängig.", "https://www.umweltbundesamt.de/system/files/medien/479/publikationen/2026-02/UBA_Handbuch%20Umweltkosten_Methodenkonvention%204.0.pdf"],
+];
+
+const co2InternalSources = [
+  ["Produkte als Wirkungsträger", "Produktpreise zeigen heute nur einen Bruchteil der Wahrheit, wenn Klima-, Gesundheits- und Ressourcenfolgen unsichtbar bleiben.", "../../../referenz/kapitel-048-produkte-als-wirkungstraeger/"],
+  ["Wirkungssteuer", "Steuern sollen nicht nur Einnahmen erzeugen, sondern Wirkung in Entscheidungen zurückführen.", "../../../referenz/kapitel-037-das-wirkungssteuergesetz-wstg/"],
+  ["Wirkungslenkung", "Sichtbarkeit reicht nicht: Wirkung muss in Preise, Steuern, Kapital, Beschaffung und Infrastrukturentscheidungen zurückfließen.", "../../../begriffe/wirkungslenkung/"],
+  ["Wirkungshaushalt", "Öffentliche Mittel werden nach Entlastung, Emissionsminderung, Resilienz und Gesundheit gefragt.", "../../../begriffe/wirkungshaushalt/"],
+];
+
+function sourceCards(cards) {
+  return `<div class="card-grid deep-dive-source-grid">
+            ${cards
+              .map(
+                ([title, shows, useFor, warning, url]) => `<article class="card">
+                  <p class="card-kicker">Quelle</p>
+                  <h3 class="card-title">${escapeHtml(title)}</h3>
+                  <p class="card-text"><strong>Zeigt:</strong> ${escapeHtml(shows)}</p>
+                  <p class="card-text"><strong>Verwendet für:</strong> ${escapeHtml(useFor)}</p>
+                  <p class="card-text"><strong>Hinweis:</strong> ${escapeHtml(warning)}</p>
+                  <p><a class="text-link" href="${escapeHtml(url)}">Quelle öffnen</a></p>
+                </article>`
+              )
+              .join("\n            ")}
+          </div>`;
+}
+
+function renderCo2SystemCostsDossier(claim, mode = "live") {
+  const answers = expandedAnswers(claim);
+  const base = mode === "detail" ? "../../../" : "../../../";
+  const sectionLabel = mode === "detail" ? "Detail" : "Live";
+  const canonicalPath = mode === "detail" ? "detail" : "live";
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero dossier-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / CO₂-Preis</nav>
+          <p class="hero-kicker">Wirkungsradar Dossier</p>
+          <h1 class="hero-title">CO₂-Preis oder fossile Systemkosten?<br>Warum wir so oder so zahlen</h1>
+          <p class="hero-subtitle">Der CO₂-Preis ist nicht die eigentliche Rechnung. Die eigentliche Rechnung sind Klimaschäden, Krankheitskosten, Importabhängigkeit und geopolitische Risiken.</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)} Wirkungsökonomisch ist der CO₂-Preis kein verlorenes Geld, sondern ein Rückkopplungsinstrument: Er macht fossile Folgekosten sichtbar, verändert Investitionen und kann Einnahmen für Entlastung, Infrastruktur und Transformation bereitstellen.</p>
+          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: modellierte Systemrechnung</span></p>
+        </div>
+      </section>
+      ${summaryGrid(co2SystemKeyPoints, "Das Wichtigste in 6 Punkten")}
+      <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
+        <a href="#live-antworten">Live antworten</a>
+        <a href="#systemkosten-verstehen">Systemkosten verstehen</a>
+        <a href="#rechenweg-quellen">Rechenweg &amp; Quellen</a>
+      </nav>
+      <section class="section dossier-tab-panel" id="live-antworten">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Den Belastungsframe sichtbar machen.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame. Der Frame lautet: Der CO₂-Preis sei die Belastung. Wirkungsökonomisch ist die Belastung die fossile Wirkung - der CO₂-Preis macht sie sichtbar und steuerbar.</p></article>
+          </div>
+          <div class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
+        </div>
+      </section>
+      <section class="section section-soft dossier-tab-panel" id="systemkosten-verstehen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Systemkosten verstehen</p><h2>Wir zahlen so oder so.</h2><p>Die Debatte über den CO₂-Preis wirkt oft so, als gäbe es zwei Optionen: zahlen oder nicht zahlen. Tatsächlich gibt es diese Wahl nicht. Wir zahlen für Reparatur, Krankheit, fossile Abhängigkeit und Krisen - oder für Vermeidung, saubere Alternativen, Anpassung und Transformation.</p></div>
+          <div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>Systemkosten-Matrix</caption>
+              <thead><tr><th>Kostenblock</th><th>Ohne wirksame Steuerung</th><th>Mit wirksamer Steuerung</th></tr></thead>
+              <tbody>${co2SystemMatrix.map(([block, without, withControl]) => `<tr><th scope="row">${escapeHtml(block)}</th><td>${escapeHtml(without)}</td><td>${escapeHtml(withControl)}</td></tr>`).join("")}</tbody>
+            </table>
+          </div>
+          <p class="formula-note">Das UBA beziffert die Umweltkosten aus Straßenverkehr, Strom- und Wärmeerzeugung für 2022 auf mindestens 301 Milliarden Euro. Eine ambitionierte Umweltpolitik senkt diese Kosten und entlastet die Gesellschaft.</p>
+        </div>
+      </section>
+      <section class="section dossier-tab-panel" id="rechenweg-quellen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Rechenweg &amp; Quellen</p><h2>Rechnung verstehen, ohne Scheingenauigkeit.</h2></div>
+          <div class="card-grid two co2-formula-grid">
+            <article class="formula-box"><p class="card-kicker">Formel 1</p><h3>CO₂-Preisbelastung</h3><p><strong>Preis pro Tonne × verbleibende Emissionen</strong></p><p>50 Euro/t × 10 t = 500 Euro<br>100 Euro/t × 3 t = 300 Euro</p><p>Der Preis pro Tonne kann steigen, während die Gesamtrechnung sinkt, wenn Emissionen stark genug fallen.</p></article>
+            <article class="formula-box"><p class="card-kicker">Formel 2</p><h3>Pro-Kopf-Wert</h3><p><strong>Gesamtkosten ÷ Bevölkerung</strong></p><p>Pro-Kopf-Werte helfen einzuordnen, ersetzen aber keine Verteilungsanalyse nach Einkommen, Wohnform, Region und Alternativen.</p></article>
+          </div>
+          <article class="formula-box co2-net-formula"><p class="card-kicker">Erweiterte Netto-Systemrechnung</p><h3>Netto-Systembelastung</h3><p><strong>verbleibende Klimaschäden + verbleibende Gesundheits- und Umweltkosten + Umbaukosten - vermiedene Klimaschäden - vermiedene Luftschadstoffkosten - eingesparte fossile Importe - vermiedene Krisen- und Versorgungsschocks - zurückgeführte CO₂-Preis-Einnahmen</strong></p><p>Diese Formel nimmt die berechtigte Kritik auf, dass CO₂-Preis-Einnahmen nicht einfach weg sind.</p></article>
+          ${sourceCards(co2ExternalSources)}
+        </div>
+      </section>
+      <section class="section">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Wirkungspfad</p><h2>Vom sichtbaren Preis zur Systemblindheit.</h2></div>
+          <ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol>
+        </div>
+      </section>
+      ${woekSolutionMatrix([
+        "CO₂-Preis als Rückkopplung, nicht als Strafzahlung: fossile Wirkung sichtbar machen und Investitionsentscheidungen verändern.",
+        "Einnahmen sozial und transformativ verwenden: Klimageld, Gebäudesanierung, ÖPNV, Erneuerbare, Industrieumbau und direkte Entlastung.",
+        "Fossile Systemkosten vollständig sichtbar machen: CO₂, NOx, Feinstaub, Ozon, Gesundheitskosten, Importabhängigkeit und Krisenrisiken.",
+        "Nicht nur Preis erhöhen, sondern Alternativen schaffen: ÖPNV, Wärmepumpen, Sanierung, günstiger sauberer Strom.",
+        "Wirkungshaushalt statt Einnahmenlogik: Jeder Euro muss Entlastung, Emissionsminderung, Resilienz oder Gesundheit sichtbar machen.",
+      ])}
+      <section class="section section-soft co2-system-graphic" aria-labelledby="co2-system-graphic-title">
+        <div class="card">
+          <p class="card-kicker">Grafikmodul</p>
+          <h2 class="card-title" id="co2-system-graphic-title">CO₂-Preis oder fossile Systemkosten?</h2>
+          <div class="co2-system-bars" aria-label="Illustrative Systemrechnung">
+            <div><span>Ohne wirksame Klimasteuerung</span><strong>3.485 Mrd. Euro</strong><em>Klimaschäden, Luftverschmutzung, fossile Importkosten und geopolitische Verwundbarkeit bleiben hoch.</em></div>
+            <div><span>Mit CO₂-Preis und wirksamer Steuerung</span><strong>1.290 Mrd. Euro</strong><em>CO₂-Preis, Klimaschutz, saubere Luft und sinkende Importabhängigkeit reduzieren die modellierte Belastung.</em></div>
+            <p><strong>Ersparnis bis 2050:</strong> rund 2,2 Billionen Euro in dieser erweiterten Systemschätzung.</p>
+          </div>
+          <p class="card-text"><strong>Hinweis zur Grafik:</strong> Modellierte Schätzung, illustrative Systemrechnung und Szenariovergleich. Diese Grafik zeigt keine amtliche Prognose und keine exakte Haushaltsrechnung. Unterschiedliche Kostenarten werden nicht gleichgesetzt, sondern als Systemkosten sichtbar gemacht.</p>
+          <p class="card-text">Geopolitische Verwundbarkeit umfasst Krisenhilfen, Versorgungsschocks, Sicherheitsrisiken und politische Folgekosten - modellierter Zusatzblock, nicht vollständig zurechenbar.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Glossar &amp; verwandte Seiten</p><h2>Begriffe und Anschlussstellen.</h2></div>
+          <div class="radar-link-cluster">
+            <a href="../../../begriffe/co2-preis/">CO₂-Preis</a>
+            <a href="../../../begriffe/fossile-systemkosten/">Fossile Systemkosten</a>
+            <a href="../../../begriffe/sichtbare-rechnung/">Sichtbare Rechnung</a>
+            <a href="../../../begriffe/unsichtbare-rechnung/">Unsichtbare Rechnung</a>
+            <a href="../../../begriffe/rueckkopplungspreis/">Rückkopplungspreis</a>
+            <a href="../../../wirkungsradar/narrative/co2-preis-abzocke/">CO₂-Preis-Abzocke</a>
+            <a href="../../../wirkungsradar/narrative/verbotsnarrativ/">Verbotsnarrativ</a>
+            <a href="../../../wirkungsradar/narrative/kontrollverlust/">Kontrollverlust</a>
+            <a href="../../../wirkungsradar/narrative/ohnmacht/">Ohnmacht</a>
+            <a href="../../../wirkungsradar/narrative/verzoegerung/">Verzögerung</a>
+          </div>
+          <div class="card-grid deep-dive-source-grid">${co2InternalSources.map(([title, text, link]) => `<article class="card"><p class="card-kicker">WÖk-Quelle</p><h3 class="card-title">${escapeHtml(title)}</h3><p class="card-text">${escapeHtml(text)}</p><p><a class="text-link" href="${escapeHtml(link)}">Mehr erfahren</a></p></article>`).join("")}</div>
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: `CO₂-Preis oder fossile Systemkosten? - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
+    base,
+    main,
+  });
+}
+
 function renderLiveCard(claim) {
   if (claim.slug === "deutschland-nur-zwei-prozent") return renderGermanyTwoPercentDossier(claim);
+  if (claim.slug === "co2-preis-oder-fossile-systemkosten") return renderCo2SystemCostsDossier(claim, "live");
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
   const detailLink = deepDiveLiveLink(claim);
@@ -2550,6 +2838,10 @@ for (const claim of claims) {
 for (const slug of deepDiveSlugs) {
   const claim = claims.find((item) => item.slug === slug);
   if (claim) writeFile(`wirkungsradar/detail/${claim.slug}/index.html`, renderDeepDiveDetail(claim));
+}
+const co2SystemCostsClaim = claims.find((item) => item.slug === "co2-preis-oder-fossile-systemkosten");
+if (co2SystemCostsClaim) {
+  writeFile(`wirkungsradar/detail/${co2SystemCostsClaim.slug}/index.html`, renderCo2SystemCostsDossier(co2SystemCostsClaim, "detail"));
 }
 
 console.log(`Built climate-energy cluster: ${subtopics.length} subtopics, ${claims.length} live cards, ${deepDiveSlugs.length} deep dives.`);

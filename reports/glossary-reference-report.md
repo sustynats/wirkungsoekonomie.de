@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-02T07:20:38.863Z
-- Content pages scanned: 1001
-- Glossary terms indexed: 1277
-- Warnings: 534
+- Generated: 2026-06-03T14:04:06.691Z
+- Content pages scanned: 1002
+- Glossary terms indexed: 1291
+- Warnings: 544
 
 ## Stichproben
 
@@ -20,8 +20,8 @@
 - 754 · defined · Kapitel 1 - Meine Reise zur Wirkung - Wirkungsökonomie Online · /referenz/kapitel-001-meine-reise-zur-wirkung/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 138 occurrences, book-chapter +80
 - 709 · defined · Wirkung statt Weltbild - eine wirkungsökonomische Analyse des AfD-Regierungsprogramms · /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 95 occurrences, blog +25
 - 679 · defined · Journalismus: Wirkung statt Klicks | Medien & Öffentlichkeit · /wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 32 occurrences, field +35
-- 674 · defined · Kapitel 30 - Von Wirkung zu Messung - Wirkungsökonomie Online · /referenz/kapitel-030-von-wirkung-zu-messung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 89 occurrences, book-chapter +80
-- 674 · defined · Kapitel 92 - Handel, Lieferketten und globale Wirkung - Wirkungsökonomie Online · /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 104 occurrences, book-chapter +80
+- 674 · defined · Kapitel 30 - Von Wirkung zu Messung - Wirkungsökonomie Online · /referenz/kapitel-030-von-wirkung-zu-messung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 93 occurrences, book-chapter +80
+- 674 · defined · Kapitel 92 - Handel, Lieferketten und globale Wirkung - Wirkungsökonomie Online · /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 106 occurrences, book-chapter +80
 - 659 · defined · Resiliente Wertschöpfungsketten und Einkauf nach Wirkung · /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 3, 69 occurrences, field +35
 
 ### Wirkungspotenzial (wirkungspotenzial)
@@ -190,6 +190,7 @@
 - term has no content references: finanzmarktkapitalismus
 - term has no content references: fit-for-55
 - term has no content references: flexibilitaetsmarkt
+- term has no content references: fossile-systemkosten
 - term has no content references: fossiles-kraftwerk
 - term has no content references: frequenzhaltung
 - term has no content references: friedlicher-machtwechsel
@@ -204,6 +205,7 @@
 - term has no content references: gender-mainstreaming
 - term has no content references: genossenschaftsblindheit
 - term has no content references: geschlossene-autokratie
+- term has no content references: gestrandeter-kredit
 - term has no content references: gesundheitskasse
 - term has no content references: gewaltenteilungsabbau
 - term has no content references: gewerbespeicher
@@ -289,9 +291,9 @@
 - term has no content references: lernebenen
 - term has no content references: lernender-unternehmer
 - term has no content references: lfp-batterie
-- term has no content references: liberale-demokratie
 - term has no content references: liberalismus
 - term has no content references: libertarismus
+- term has no content references: lieferkettenbelasteter-kredit
 - term has no content references: limited-assurance
 - term has no content references: lineare-wirtschaft
 - term has no content references: linker-faschismus
@@ -357,6 +359,4 @@
 - term has no content references: ngo-wirkungspruefung
 - term has no content references: nicht-dualitaet
 - term has no content references: niederspannung
-- term has no content references: niederspannungshauptverteilung
-- term has no content references: nmc-batterie
-- ... 234 weitere Warnungen
+- ... 244 weitere Warnungen
