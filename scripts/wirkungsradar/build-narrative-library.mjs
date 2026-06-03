@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const UPDATED_AT = "2026-06-03";
+const ASSET_VERSION = "20260603-narrative-template";
 
 const tags = {
   themes: [
@@ -996,7 +997,7 @@ function pageShell({ title, description, canonical, base, main }) {
     <meta name="search_type" content="Narrativbibliothek">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260603-narrative">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${ASSET_VERSION}">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -1033,7 +1034,7 @@ ${main}
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=20260603-narrative"></script>
+    <script src="${base}assets/js/main.js?v=${ASSET_VERSION}"></script>
   </body>
 </html>
 `;
@@ -1324,9 +1325,9 @@ function renderDetail(item) {
             <p>Als <a href="../../../begriffe/wirkstoff/" data-glossary-key="wirkstoff">gesellschaftlicher Wirkstoff</a> wirkt hier: ${escapeHtml(item.wirkstoff)} Der typische <a href="../../../begriffe/resonanzraum/" data-glossary-key="resonanzraum">Resonanzraum</a> ist: ${escapeHtml(item.resonanceText)}</p>
 
             <h2 id="typische-saetze">Typische Sätze</h2>
-            <div class="typical-phrases narrative-phrase-grid">
-              ${item.phrases.map((phrase) => `<blockquote class="narrative-phrase"><p>„${escapeHtml(stripQuotes(phrase))}“</p></blockquote>`).join("\n              ")}
-            </div>
+            <ul class="typical-phrases narrative-phrase-grid" aria-label="Typische Sätze für ${escapeHtml(item.title)}">
+              ${item.phrases.map((phrase) => `<li class="narrative-phrase"><p>„${escapeHtml(stripQuotes(phrase))}“</p></li>`).join("\n              ")}
+            </ul>
 
             <h2 id="wirkungspfad">Wirkungspfad</h2>
             <ol class="timeline radar-flow effect-chain narrative-effect-chain">
