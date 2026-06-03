@@ -108,6 +108,76 @@ const sourcePack = {
       use_for: ["Strommix Deutschland", "Erneuerbare Stromerzeugung", "Energiewende Fakten"],
     },
     {
+      label: "Fraunhofer ISE - Stromgestehungskosten 2024",
+      publisher: "Fraunhofer ISE",
+      url: "https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html",
+      type: "wissenschaft",
+      use_for: ["CAPEX/OPEX", "Stromgestehungskosten", "PV/Wind vs fossil/nuklear", "Industrie-Stromkostenlogik"],
+    },
+    {
+      label: "Volkswagen/PowerCo - Salzgitter Gigafactory",
+      publisher: "Volkswagen Group / PowerCo",
+      url: "https://www.volkswagen-group.com/en/press-releases/start-of-european-battery-cell-production-powerco-commissions-salzgitter-gigafactory-20045",
+      type: "industrie_primärquelle",
+      use_for: ["Batteriezellfertigung Deutschland", "technologische Souveränität", "Industriecluster"],
+    },
+    {
+      label: "TSMC - ESMC Dresden",
+      publisher: "TSMC",
+      url: "https://pr.tsmc.com/english/news/3049",
+      type: "industrie_primärquelle",
+      use_for: ["Halbleiter Deutschland", "Dresden", "Automotive / Industrie / IoT", "40.000 Wafer pro Monat", "Produktionsziel Ende 2027"],
+    },
+    {
+      label: "Infineon - Smart Power Fab Dresden",
+      publisher: "Infineon",
+      url: "https://www.infineon.com/press-release/2025/INFXX202505-100",
+      type: "industrie_primärquelle",
+      use_for: ["Leistungshalbleiter", "Erneuerbare", "effiziente Rechenzentren", "Elektromobilität"],
+    },
+    {
+      label: "Bosch - Wafer Fab Dresden",
+      publisher: "Bosch",
+      url: "https://www.bosch-semiconductors.com/about-us/where-we-produce/dresden/",
+      type: "industrie_primärquelle",
+      use_for: ["bestehendes Halbleitercluster", "Automotive", "Industrieanwendungen"],
+    },
+    {
+      label: "GTAI - Data Center Germany",
+      publisher: "Germany Trade & Invest",
+      url: "https://www.gtai.de/en/invest/industries/digital-economy/data-center",
+      type: "standortdaten",
+      use_for: ["Rechenzentren Deutschland", "digitale Infrastruktur", "Nachhaltigkeit", "Fachkräfte"],
+    },
+    {
+      label: "Reuters - Tesla Batteriezellproduktion Grünheide",
+      publisher: "Reuters",
+      url: "https://www.reuters.com/business/autos-transportation/tesla-launches-battery-cell-output-germany-gruenheide-site-manager-says-2025-12-16/",
+      type: "nachricht",
+      use_for: ["Tesla Grünheide", "Batteriezellproduktion", "Projektstatus"],
+    },
+    {
+      label: "electrive - CATL production in Germany",
+      publisher: "electrive",
+      url: "https://www.electrive.com/2023/01/26/catl-starts-production-in-germany/",
+      type: "branchenquelle",
+      use_for: ["CATL Thüringen", "Batteriezellfertigung", "Produktionsstart"],
+    },
+    {
+      label: "electrive - Heide / Northvolt / Lyten",
+      publisher: "electrive",
+      url: "https://www.electrive.com/2025/11/07/what-lyten-is-planning-in-heide-and-how-the-battery-cell-factory-can-be-saved/",
+      type: "branchenquelle",
+      use_for: ["Heide", "Batteriezellprojekt", "Projektänderung"],
+    },
+    {
+      label: "Reuters - ACC drops German and Italian gigafactory plans",
+      publisher: "Reuters",
+      url: "https://www.reuters.com/business/autos-transportation/acc-drops-plans-german-italian-ev-battery-gigafactories-2025-06-04/",
+      type: "nachricht",
+      use_for: ["ACC Kaiserslautern", "Projektunsicherheit", "Batteriemarkt"],
+    },
+    {
       label: "IEA - Renewables",
       publisher: "International Energy Agency",
       url: "https://www.iea.org/energy-system/renewables",
@@ -1562,50 +1632,62 @@ const claims = [
   {
     title: "„Klimaschutz deindustrialisiert Deutschland“",
     slug: "klimaschutz-deindustrialisiert-deutschland",
-    shortJudgement: "Einseitiger Verlustframe.",
-    narrativeFamilies: ["Angstframe", "Scheiternsframe", "Statusverlust"],
+    shortJudgement: "Wahrer Transformationsstress, falsches Niedergangsnarrativ.",
+    narrativeFamilies: ["Deindustrialisierungsnarrativ", "Niedergangsframe", "falsche Standortrechnung"],
     riskLevel: "hoch",
-    themes: ["Industrie", "Wettbewerbsfähigkeit"],
+    themes: ["Industrie", "Wettbewerbsfähigkeit", "Transformation"],
     sdgs: ["SDG 8", "SDG 9", "SDG 13"],
-    sdgPlus: ["soziale Stabilität"],
-    subtitle: "Verlustframe statt Transformationsanalyse",
+    sdgPlus: ["soziale Stabilität", "Standortwirkung", "Wirkungsinfrastruktur"],
+    subtitle: "Warum Transformation kein Niedergang ist, sondern Standortpolitik.",
     abstract:
-      "Die Aussage enthält einen berechtigten Kern: Klimapolitik kann Branchen, Kostenstrukturen, Standortentscheidungen und Beschäftigung verändern. Irreführend wird sie, wenn Klimaschutz pauschal als Ursache von Deindustrialisierung dargestellt wird und fossile Abhängigkeit, Energiepreisschocks, alte Geschäftsmodelle, globale Konkurrenz, Investitionsstau und Innovationschancen ausgeblendet werden.",
+      "Die Aussage „Klimaschutz deindustrialisiert Deutschland“ enthält einen wahren Kern: Energieintensive Industrien stehen unter Druck durch hohe Strom- und Gaspreise, globale Konkurrenz, Investitionsrisiken, Genehmigungsstau, Netzausbau, Fachkräftemangel und Transformationskosten. Irreführend wird die Aussage, wenn daraus folgt, Klimaschutz sei der eigentliche Grund für industriellen Niedergang. Wirkungsökonomisch ist das eine falsche Systemgrenze: Sie betrachtet sichtbare Umbaukosten, blendet aber fossile Importabhängigkeit, Preisschocks, CO₂-Kosten, Klimaschäden, technologische Pfadabhängigkeit und neue Wertschöpfung aus.",
     summary: {
-      judgement: "Einseitiger Verlustframe.",
-      true_core: "Transformation verändert Industrie, Kosten und Arbeitsmärkte.",
-      problem: "Klimaschutz wird pauschal als Wohlstandsfeind gerahmt.",
-      narrative: "Statusverlust / Angstframe / Verzögerung.",
-      risk: "Zukunftsinvestitionen werden blockiert, alte Abhängigkeiten bleiben bestehen.",
-      host_answer: "Die Frage ist nicht Industrie oder Klimaschutz. Die Frage ist: Welche Industrie ist in einer klimaneutralen Welt zukunftsfähig?",
+      judgement: "Wahrer Transformationsstress, falsches Niedergangsnarrativ.",
+      true_core: "Industrie steht unter realem Druck: Energiepreise, Netze, Genehmigungen, Fachkräfte, Kapital und internationale Konkurrenz.",
+      problem: "Sichtbare Umbaukosten werden als Beweis genutzt, dass Klimaschutz Industrie zerstöre.",
+      narrative: "Deindustrialisierung / Klimaschutz gegen Wirtschaft / fossile Nostalgie.",
+      risk: "Deutschland schützt alte Pfade und verpasst neue Wertschöpfung in Batterien, Halbleitern, Netzen, Speichern, E-Lkw, Elektrolyse und digitalen Infrastrukturen.",
+      host_answer: "Nicht Klimaschutz zerstört Industrie. Fossile Abhängigkeit, teure Brennstoffe und verschleppte Infrastruktur gefährden sie. Transformation ist Standortpolitik.",
     },
     answers: {
-      ten_seconds: "Die Frage ist nicht Industrie oder Klimaschutz. Die Frage ist: Welche Industrie ist in einer klimaneutralen Welt zukunftsfähig?",
+      ten_seconds: "Nicht Klimaschutz zerstört Industrie. Fossile Abhängigkeit, teure Brennstoffe und verschleppte Infrastruktur gefährden sie. Transformation ist Standortpolitik.",
       thirty_seconds:
-        "Der wahre Kern ist: Transformation verändert Arbeitsplätze und Kosten. Der Denkfehler ist, Klimaschutz pauschal als Deindustrialisierung zu framen. Fossile Abhängigkeit ist selbst ein Standort- und Kostenrisiko. Wirkungsökonomisch brauchen wir Industriepolitik nach Zukunftswirkung.",
+        "Der wahre Kern ist: Industrie steht unter Druck. Der Denkfehler ist: diesen Druck allein Klimaschutz zuzuschreiben. Erneuerbare Energien, Batterien, Halbleiter, E-Lkw, Ladeinfrastruktur, Rechenzentren, Speicher und Elektrolyse sind neue industrielle Wertschöpfung. Die Frage ist nicht Klimaschutz oder Industrie, sondern: Wie bekommt Deutschland günstigen sauberen Strom, Netze, Flächen, Fachkräfte und Investitionssicherheit?",
       two_minutes:
-        "Ich ordne das ein. Natürlich kann schlecht gemachte Transformation Industrie belasten. Aber Nicht-Transformation ist auch keine neutrale Option: fossile Abhängigkeit, CO₂-Kosten, Importabhängigkeit, alte Anlagen und verpasste Innovation können ebenfalls deindustrialisieren. Die WÖk-Frage lautet: Welche Investitionen erhalten Wertschöpfung, gute Arbeit, Versorgungssicherheit und Klimastabilität zugleich? Dazu gehören Netze, günstiger sauberer Strom, Kreislaufwirtschaft, grüne Grundstoffe, Qualifizierung und faire Übergänge.",
+        "Ich ordne das sauber ein. Ja, viele Industrien stehen unter Druck: Energiepreise, internationale Konkurrenz, Bürokratie, Fachkräfte, Netze, Kapital und unsichere Nachfrage sind reale Probleme. Aber daraus zu machen, Klimaschutz sei Deindustrialisierung, ist eine falsche Schlussfolgerung. Industrie hat sich immer transformiert. Heute geht es um die nächste industrielle Basis: erneuerbarer Strom, Elektrifizierung, Batteriezellen, Halbleiter, Leistungselektronik, Ladeinfrastruktur, E-Lkw, Wärmepumpen, Elektrolyse, Speicher und Rechenzentren. Fossile Energie ist nicht billig, wenn man Brennstoffimporte, CO₂-Kosten, Preisschocks, geopolitische Risiken und Klimaschäden mitrechnet. Erneuerbare haben eine andere Kostenstruktur: viel Anfangsinvestition, wenig variable Kosten, kein Brennstoff. Wirkungsökonomisch ist die richtige Frage deshalb: Wie bauen wir ein Energiesystem, das Industrie mit sauberem, verlässlichem und günstigem Strom versorgt - und wie lenken wir Kapital in die Wertschöpfung der nächsten Industriephase?",
     },
+    answersFinal: true,
     effectPath: [
       ["Aussage", "Klimaschutz deindustrialisiert Deutschland."],
-      ["Wirkstoff", "Verlustframe gegen Transformation."],
-      ["Resonanz", "Statusangst, Arbeitsplatzsorge, Standortunsicherheit."],
-      ["Wirkungspotenzial", "Klimaschutz erscheint als Wohlstandsfeind."],
-      ["Wirkungsrisiko", "Zukunftsinvestitionen werden blockiert."],
-      ["Folge falschen Handelns", "Alte Abhängigkeiten und Innovationslücken wachsen."],
+      ["Wirkstoff", "Transformationskosten als Niedergangsbeweis."],
+      ["Verkürzung", "Kurzfristige Belastungen werden mit langfristigem Standortverlust gleichgesetzt."],
+      ["Ausblendung", "Fossile Importkosten, CO₂-Kosten, Klimaschäden, neue Industriecluster, Erneuerbaren-LCOE, Speicher, Netze und Transformationsinvestitionen verschwinden."],
+      ["Resonanz", "Arbeitsplatzangst, Wohlstandsverlust, Statusbedrohung und Nostalgie."],
+      ["Wirkungspotenzial", "Akzeptanz für Erneuerbare, Netze, Speicher, E-Mobilität, Industrieumbau und Klimapolitik sinkt."],
+      ["Wirkungsrisiko", "Deutschland verpasst die nächste industrielle Wertschöpfungswelle."],
+      ["Wirkung dritter Ordnung", "Kapital, Politik und Öffentlichkeit verharren im Schutz alter Pfade, statt neue Standortarchitektur aufzubauen."],
     ],
     frameKey: "scheitern",
-    redirectQuestion: "Welche Industrie ist in einer klimaneutralen Welt zukunftsfähig?",
-    dontDo: ["Industriesorgen nicht abtun.", "Nicht Klimaschutz und Industrie als Entweder-oder übernehmen."],
-    facts: ["Transformation verändert Kosten, Arbeit und Geschäftsmodelle.", "Fossile Abhängigkeit ist selbst ein Standort- und Kostenrisiko."],
-    consequences: ["Investitionen werden verzögert.", "Alte Geschäftsmodelle bleiben länger abhängig.", "Beschäftigte verlieren Planbarkeit."],
-    woekSolution: ["Industriepolitik nach Zukunftswirkung.", "Günstiger sauberer Strom, Netze, Kreislaufwirtschaft, grüne Grundstoffe und Qualifizierung.", "Faire Übergänge und regionale Strukturentwicklung als Wirkungsfelder."],
+    redirectQuestion: "Reden wir über echten Transformationsdruck - oder über das Narrativ, dass Klimaschutz grundsätzlich Industrie zerstört?",
+    dontDo: ["Nicht behaupten, Transformation sei schmerzfrei.", "Nicht Strompreisprobleme kleinreden.", "Nicht jedes Industrieproblem auf Klimaschutz zurückführen.", "Nicht so tun, als kämen alle neuen Industrien automatisch nach Deutschland.", "Nicht Kernkraft, Fossile oder Erneuerbare isoliert betrachten.", "Nicht Erzeugungskosten mit Endkundenpreisen verwechseln.", "Nicht CAPEX, OPEX, Netze, Speicher und Systemkosten vermischen."],
+    facts: ["Energieintensive Branchen stehen unter realem Kostendruck.", "Gaspreisschocks haben gezeigt, wie verletzlich fossile Abhängigkeit ist.", "Industriestrompreise hängen nicht nur von Erzeugungskosten ab, sondern auch von Netzentgelten, Steuern, Abgaben, Absicherung, Netzanschlüssen und Versorgungssicherheit.", "Netzausbau, Genehmigungen, Flächen, Fachkräfte und Kapital sind echte Engpässe.", "Nicht jedes Transformationsprojekt gelingt; einige Batterieprojekte wurden verschoben, verkleinert oder gestrichen.", "Viele Zukunftsindustrien brauchen sauberen Strom: Batterien, Halbleiter, Rechenzentren, Elektrolyse, E-Lkw, Ladeparks, Wärmepumpen, Speicher und Leistungselektronik.", "Erzeugungskosten sind nicht Industriestrompreise; Infrastruktur, Finanzierung, Flexibilität und Systemdesign entscheiden mit."],
+    consequences: ["Investitionen in Batterien, Halbleiter, Leistungselektronik, Speicher, Elektrolyse, E-Lkw und Rechenzentren werden verzögert.", "Fossile Importabhängigkeit bleibt bestehen und Preisschocks bleiben ein Standortproblem.", "Kapital fließt in alte Pfade statt in Transformationsinfrastruktur.", "Neue Qualifikationen, Fachkräfteprogramme und regionale Transformationscluster entstehen zu spät.", "Wohlstandsangst wird gegen Klimapolitik mobilisiert.", "Emissionen sinken langsamer und Klimaschäden erhöhen künftige Kosten."],
+    woekSolution: [
+      { title: "Erneuerbaren Industriestrom systemisch denken", text: "Günstiger sauberer Strom entsteht durch Erzeugung, Netze, Speicher, PPAs, Lastmanagement, Standortnähe und Planungssicherheit." },
+      { title: "Transformationscluster aufbauen", text: "Batterien, Halbleiter, Rechenzentren, E-Lkw, Ladeparks, Elektrolyse, Speicher und Wärmetechnik werden regional mit Strom, Wärme, Wasser, Daten und Fachkräften gekoppelt." },
+      { title: "T-SROI für Industriepolitik nutzen", text: "Investitionen werden nicht nur nach Rendite, sondern nach finanzieller, sozialer, ökologischer und systemischer Transformationswirkung bewertet." },
+      { title: "Fossile Systemkosten sichtbar machen", text: "Brennstoffimporte, CO₂-Kosten, Preisschocks, Gesundheitskosten und Klimaschäden gehören in die Standortrechnung." },
+      { title: "Öffentliche Beschaffung als Nachfrageanker", text: "Staat, Kommunen und öffentliche Unternehmen schaffen Nachfrage für emissionsarme Industrieprodukte, Ladeinfrastruktur, Speicher, E-Busse, E-Lkw und Gebäudetechnik." },
+      { title: "Fachkräfte und Bildung als Industriepolitik", text: "Transformation braucht Qualifizierung in Elektrohandwerk, Netztechnik, Halbleitern, Software, KI, Batterien, Recycling, Maschinenbau und Dateninfrastruktur." },
+      { title: "Regionale Wertschöpfung und Beteiligung", text: "Kommunen und Regionen profitieren stärker, wenn Erzeugung, Verbrauch, Speicher und Industrie vor Ort gekoppelt und Bürger:innen beteiligt werden." },
+      { title: "Reverse Merit Order anwenden", text: "Niedrige CO₂-Werte dürfen schlechte Arbeitsbedingungen, Wasserstress, Biodiversitätsrisiken oder demokratische Schäden nicht verdecken." },
+    ],
     mpd: {
-      mensch: "Gute Arbeit, Qualifizierung und regionale Stabilität müssen gesichert werden.",
-      planet: "Industriepfade müssen emissionsarm und ressourceneffizient werden.",
-      demokratie: "Soziale Stabilität schützt Akzeptanz und Vertrauen.",
+      mensch: "Wenn Transformation schlecht gestaltet wird, entstehen Arbeitsplatzverluste, regionale Brüche und soziale Unsicherheit. Lösung: Qualifizierung, regionale Industriecluster, Beteiligung, bezahlbarer Strom, gute Arbeit und soziale Abfederung.",
+      planet: "Fossile Industriepfade verlängern Emissionen, Importabhängigkeit und Ressourcenverbrauch. Lösung: Erneuerbare, Effizienz, Elektrifizierung, Kreislaufwirtschaft, Speicher und gezielter grüner Wasserstoff.",
+      demokratie: "Das Niedergangsframe kann Vertrauen zerstören und Transformationspolitik als Angriff auf Wohlstand rahmen. Lösung: transparente Standortstrategie, Quellenklarheit, Wirkungshaushalt, regionale Beteiligung und sichtbare Verbesserungen.",
     },
-    sources: ["Umweltbundesamt - Treibhausgas-Projektionen", "IEA - Renewables"],
+    sources: ["Fraunhofer ISE - Stromgestehungskosten 2024", "Volkswagen/PowerCo - Salzgitter Gigafactory", "TSMC - ESMC Dresden", "Infineon - Smart Power Fab Dresden", "GTAI - Data Center Germany"],
   },
 ];
 
@@ -1683,6 +1765,7 @@ const deepDiveSlugs = [
   "energiewende-gescheitert",
   "e-autos-schlimmer-als-verbrenner",
   "batterien-sind-nicht-recyclebar",
+  "klimaschutz-deindustrialisiert-deutschland",
   "kernenergie-einfache-loesung",
   "fusion-loest-das-problem",
 ];
@@ -1744,6 +1827,44 @@ const deepDiveDetails = {
     solutionLead: "Die wirkungsökonomische Antwort lautet nicht: Deutschland rettet allein das Klima. Sie lautet: Wirkung entsteht über Hebel.",
     clipHook: "Stimmt der 2-Prozent-Satz? Vielleicht. Aber die Schlussfolgerung ist trotzdem falsch.",
     caption: "Wahrer Kern, falsche Folgerung: Klimawirkung entsteht über Hebel, nicht nur über Prozentanteile.",
+  },
+  "klimaschutz-deindustrialisiert-deutschland": {
+    title: "„Klimaschutz deindustrialisiert Deutschland“",
+    subtitle: "Wahrer Transformationsstress, falsches Niedergangsnarrativ",
+    confidence: "mittel bis hoch",
+    readingTime: "18 Minuten",
+    leadQuestion: "Welche Standortbedingungen sichern Industrie in einer klimaneutralen Wirtschaft?",
+    claimAnatomy: {
+      original: "Klimaschutz deindustrialisiert Deutschland.",
+      extended: "Klimaschutz zerstört die industrielle Basis; deshalb müssen wir den Umbau stoppen oder zurückdrehen.",
+      trueCore: "Industrie steht unter realem Druck durch Energiepreise, globale Konkurrenz, Netze, Genehmigungen, Fachkräfte, Kapital und Transformationskosten.",
+      missingContext: "Fossile Abhängigkeit, Brennstoffimporte, CO₂-Kosten, Preisschocks, Klimaschäden und neue Wertschöpfung werden ausgeblendet.",
+      falseConclusion: "Aus Transformationsstress folgt nicht, dass Klimaschutz die Ursache von Deindustrialisierung ist.",
+    },
+    trueText: "Schlecht gestaltete Transformation kann Industrie belasten. Nicht-Transformation ist aber ebenfalls ein Standort- und Kostenrisiko.",
+    missingItems: ["CAPEX/OPEX-Unterschiede", "fossile Systemkosten", "neue Transformationscluster", "Netze, Speicher und Standortnähe", "Batterien, Halbleiter, Rechenzentren, E-Lkw und Ladeinfrastruktur"],
+    evidence: {
+      status: "checked_candidate",
+      level: "mittel bis hoch",
+      uncertainty: "Projektstatus, Industriepreise, Förderungen, Netzausbau und Investitionsentscheidungen müssen laufend aktualisiert werden.",
+      sourceKeys: ["industry_transformation_v1"],
+    },
+    wirkstoff: {
+      label: "Transformationskosten als Niedergangsbeweis",
+      description: "Sichtbare Belastungen werden genutzt, um Klimaschutz pauschal als wirtschaftsfeindlich zu rahmen.",
+      mechanism: "Kurzfristige Kosten und einzelne Krisenfälle werden mit langfristiger Standortwirkung verwechselt.",
+      resonance: ["Arbeitsplatzangst", "Wohlstandsverlust", "Statusbedrohung", "fossile Nostalgie"],
+    },
+    narrative: {
+      message: "Klimaschutz zerstört Wohlstand.",
+      emotional: "Verlustangst und Schutz alter Identität.",
+      political: "Transformation, Netze, Erneuerbare und Elektrifizierung verlieren Legitimität.",
+    },
+    orders: [],
+    falseActions: [],
+    solutionLead: "Die WÖk-Lösung ist Reindustrialisierung nach Wirkung: sauberer Strom, Netze, Speicher, Transformationscluster und ehrliche Systemkostenrechnung.",
+    clipHook: "Nicht Klimaschutz zerstört Industrie. Die falsche Standortrechnung tut es.",
+    caption: "Industrie sichern heißt Transformation gestalten, nicht fossile Verwundbarkeit verlängern.",
   },
   "energiewende-gescheitert": {
     title: "„Die Energiewende ist gescheitert“",
@@ -2738,6 +2859,18 @@ function renderEvChargingInfrastructure(detail) {
       </section>`;
 }
 
+function renderEvIndustryPolicyLink(claim) {
+  if (claim.slug !== "e-autos-schlimmer-als-verbrenner") return "";
+  return `<section class="section section-soft" id="industriepolitik">
+        <div class="card">
+          <p class="card-kicker">Vom Fahrzeug zur Industriepolitik</p>
+          <h2 class="card-title">E-Mobilität ist ein Standortthema.</h2>
+          <p class="card-text">Die Frage ist nicht nur, ob ein einzelnes Auto besser ist. Entscheidend ist die ganze Wertschöpfungskette: Batteriezellen, Leistungselektronik, Ladeinfrastruktur, E-Lkw, Software, Recycling, Netze, Speicher und sauberer Industriestrom. Genau dort entscheidet sich, ob Deutschland neue Industriewertschöpfung aufbaut oder alte Abhängigkeiten verlängert.</p>
+          <p><a class="btn btn-primary" href="/wirkungsradar/live/klimaschutz-deindustrialisiert-deutschland/">Zum Dossier: Klimaschutz deindustrialisiert Deutschland?</a></p>
+        </div>
+      </section>`;
+}
+
 function renderFalseActionAnalysis(detail) {
   return `<section class="section section-soft deep-dive-section" id="folgenanalyse">
         <div>
@@ -2806,7 +2939,149 @@ function renderStandardBox(id, title, text) {
       </section>`;
 }
 
+const industryKeyPoints = [
+  ["Transformation gab es immer", "Industriegeschichte ist Strukturwandel: Kohle, Stahl, Chemie, Auto, Maschinenbau, Software, Halbleiter, KI. Die Frage ist nicht Wandel oder kein Wandel, sondern ob Deutschland ihn gestaltet.", "neutral"],
+  ["Fossile Energie ist kein billiger Dauerzustand", "Gas, Kohle und Öl verursachen Brennstoffkosten, Importabhängigkeit, CO₂-Kosten, Preisschocks, geopolitische Risiken und Klimaschäden.", "warning"],
+  ["Erneuerbare haben eine andere Kostenlogik", "Wind und Sonne brauchen hohe Anfangsinvestitionen, aber keine Brennstoffe. Die Kosten liegen vor allem in Infrastruktur, Finanzierung, Netzen, Speichern und Systemintegration.", "positive"],
+  ["Neue Industrie entsteht um sauberen Strom", "Batteriezellen, Leistungselektronik, Halbleiter, Rechenzentren, Elektrolyse, E-Lkw, Ladeinfrastruktur, Wärmepumpen und Speicher brauchen günstigen, sauberen und verlässlichen Strom.", "positive"],
+  ["Billige Erzeugung ist nicht automatisch billiger Endpreis", "Industriestrom hängt auch von Netzentgelten, Steuern, Abgaben, PPAs, Netzausbau, Speichern, Flexibilität, Standortnähe und Planungssicherheit ab.", "warning"],
+  ["WÖk-Ziel ist Reindustrialisierung nach Wirkung", "Investitionen werden nach Netto-Wirkung, T-SROI, Systemresilienz, Standortqualität, Lieferketten, Energieeffizienz und Zukunftsfähigkeit bewertet.", "positive"],
+];
+
+const industryCostMatrix = [
+  ["Photovoltaik", "hoch am Anfang", "sehr niedrig, kein Brennstoff", "gut dezentral, Dach/Freifläche, Speicher nötig"],
+  ["Wind onshore", "hoch am Anfang", "niedrig, kein Brennstoff", "standortabhängig, Netze/Akzeptanz/Artenschutz wichtig"],
+  ["Wind offshore", "sehr hoch", "niedriger Brennstoffanteil, höhere Wartung", "hohe Volllaststunden, Netzanbindung teuer"],
+  ["Batteriespeicher", "CAPEX", "niedrige variable Kosten, Alterung", "verschiebt Strom, senkt Spitzen, erhöht Flexibilität"],
+  ["Gas-Kraftwerk", "mittlerer CAPEX", "hohe variable Brennstoff- und CO₂-Kosten", "flexibel, aber import- und preisabhängig"],
+  ["Kohlekraft", "hoher CAPEX / Bestand", "Brennstoff, CO₂, Umwelt- und Folgekosten", "geringe Flexibilität, hohe Emissionen"],
+  ["Kernkraft neu", "sehr hoher CAPEX", "Betrieb, Personal, Sicherheit, Brennstoff, Rückbau, Entsorgung", "lange Bauzeit, hohes Finanzierungsrisiko, Grundlastlogik"],
+  ["Erneuerbarer Industriepark", "CAPEX für Erzeugung, Speicher, Netze", "niedrige variable Energiekosten", "lokaler Standortvorteil durch Kopplung von Erzeugung und Verbrauch"],
+];
+
+const industryClusters = [
+  ["Batteriezellen und Batteriematerialien", "Zellfertigung, Modul- und Packproduktion, Recycling, Second Life, Batteriepass, Kathoden-/Anodenmaterialien, Maschinenbau und Automatisierung."],
+  ["Halbleiter und Leistungselektronik", "Chips für E-Mobilität, Industrie, Energieumwandlung, effiziente Rechenzentren, Netze, Wechselrichter, Sensorik und Automatisierung."],
+  ["Ladeinfrastruktur und E-Lkw", "HPC-Ladeparks, Megawattladen, Depotladen, Netzanschluss, Speicher, Software, Bezahlung, Wartung und Standortbetrieb."],
+  ["Erneuerbare Energie und Speicher", "PV, Wind, Wechselrichter, Batteriespeicher, Netztechnik, Transformatoren, Systemdienstleistungen und Flexibilität."],
+  ["KI-Rechenzentren und digitale Infrastruktur", "Rechenzentren brauchen sauberen, verlässlichen Strom, Abwärmenutzung, Effizienz, Wasserstrategie, Netzanschluss und Datenhoheit."],
+  ["Wasserstoff und Elektrolyse", "Grüner Wasserstoff für Stahl, Chemie, Raffinerien, Schwerindustrie, Langzeitspeicher und Prozesswärme - gezielt, nicht als Allzwecklösung."],
+  ["Wärmepumpen und Gebäudetechnik", "Elektrifizierung von Wärme schafft Industrie für Komponenten, Steuerung, Installation, Wartung, Speicher und Netzintegration."],
+  ["Kreislaufwirtschaft und Recycling", "Batterierecycling, Metallrückgewinnung, Kunststoffkreisläufe, Produktpässe, Rücknahme- und Reparatursysteme."],
+  ["Maschinenbau für Transformationsindustrien", "Anlagen für Batterien, Chips, Elektrolyse, Recycling, Automatisierung, Robotik und Energieeffizienz."],
+  ["Software, KI und Energiemanagement", "Lastmanagement, virtuelle Kraftwerke, Netzoptimierung, Predictive Maintenance, Energiedatenräume und Wirkungsdaten."],
+];
+
+const industryProjectCards = [
+  ["PowerCo Salzgitter", "In Betrieb / Hochlauf", "Volkswagen/PowerCo hat im Dezember 2025 in Salzgitter die erste Unified-Cell-Produktion „made in Europe“ gestartet. Das stärkt europäische Batterietechnologie und industrielle Souveränität.", "Hochlauf, Nachfrage und Zellchemie weiter prüfen.", "Volkswagen/PowerCo - Salzgitter Gigafactory"],
+  ["Tesla Grünheide", "Batteriezellproduktion angekündigt / prüfen", "Grünheide steht nicht nur für Fahrzeugmontage, sondern auch für die Frage, ob Batterietechnik, Zellfertigung und Zulieferketten in Deutschland industriell skaliert werden.", "Produktionsumfang, Zellchemie und Dauerhaftigkeit regelmäßig prüfen.", "Reuters - Tesla Batteriezellproduktion Grünheide"],
+  ["CATL Arnstadt / Erfurter Kreuz", "Produktion seit 2023", "CATL betreibt in Thüringen eine Batteriezellfertigung und beliefert europäische Kunden. Das zeigt: Batterien sind nicht automatisch Importabhängigkeit, sondern können Teil europäischer Wertschöpfung sein.", "Aktuelle Kapazität und Auslastung regelmäßig prüfen.", "electrive - CATL production in Germany"],
+  ["Heide / Northvolt / Lyten", "Projekt verändert", "Der Standort Heide zeigt Chance und Risiko europäischer Batteriezellfertigung: Erneuerbare Standortvorteile waren zentral, aber Finanzierung, Markt und Unternehmensrisiken entscheiden.", "Nicht als gesicherte ursprüngliche Northvolt-Gigafactory darstellen.", "electrive - Heide / Northvolt / Lyten"],
+  ["ACC Kaiserslautern", "Pläne auf Eis / unsicher", "ACC zeigt, dass nicht jedes Transformationsprojekt gelingt. Genau deshalb braucht das Dossier eine nüchterne Standort- und Risikologik.", "Als Gegenbeispiel nutzen: Transformation ist real, aber kein Selbstläufer.", "Reuters - ACC drops German and Italian gigafactory plans"],
+  ["ESMC Dresden", "Im Bau / Produktionsziel Ende 2027", "TSMC, Bosch, Infineon und NXP bauen über ESMC eine Halbleiterfabrik in Dresden. Geplant sind 40.000 300-mm-Wafer pro Monat und rund 2.000 direkte High-Tech-Jobs.", "Halbleiter brauchen nicht nur Strom, sondern Wasser, Fachkräfte, Zulieferer und Versorgungssicherheit.", "TSMC - ESMC Dresden"],
+  ["Infineon Smart Power Fab Dresden", "Förderung genehmigt / Ausbau", "Infineon investiert in Dresden in eine Smart Power Fab und nennt Nachfrage aus Erneuerbaren, effizienten Rechenzentren und Elektromobilität als Treiber.", "Power-Halbleiter sind ein Schlüssel für Elektrifizierung und effiziente Energieumwandlung.", "Infineon - Smart Power Fab Dresden"],
+  ["Bosch Dresden / Reutlingen", "Bestand und Ausbau", "Bosch betreibt in Dresden eine moderne 300-mm-Waferfabrik für Automotive- und Industrieanwendungen und erweitert weitere Halbleiterkapazitäten.", "Bestandsindustrie plus Transformation, nicht nur neue Gigaprojekte.", "Bosch - Wafer Fab Dresden"],
+];
+
+const dataCenterMatrix = [
+  ["Sauberer Strom", "KI-Rechenzentren haben hohen Strombedarf.", "CO₂-Intensität, PPA, Grünstromqualität"],
+  ["Netzanschluss", "Große Anschlussleistung nötig.", "Netzwirkung, Engpass, Flexibilität"],
+  ["Abwärme", "Rechenzentren erzeugen Wärme.", "Nutzung für Quartiere, Gewerbe, Wärmenetze"],
+  ["Wasser", "Kühlung kann Wasserbedarf erzeugen.", "Wasserstress, Kreislauf, Kühltechnik"],
+  ["Effizienz", "PUE und Auslastung entscheiden.", "Energie pro Rechenleistung"],
+  ["Digitale Souveränität", "Daten- und KI-Infrastruktur ist strategisch.", "SDG+, Datenschutz, Resilienz"],
+  ["Regionale Wirkung", "Jobs, Gewerbesteuer, Wärme, Infrastruktur.", "T-SROI und Wirkungshaushalt"],
+];
+
+function industrySourceByLabel(label) {
+  return sourcePack.primary_sources.find((source) => source.label === label) || slugSource(label);
+}
+
+function renderIndustryTable(caption, headers, rows) {
+  return `<div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>${escapeHtml(caption)}</caption>
+              <thead><tr>${headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}</tr></thead>
+              <tbody>${rows.map((row) => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+            </table>
+          </div>`;
+}
+
+function renderIndustryProjectStatus() {
+  return `<section class="section dossier-tab-panel" id="projektstatus">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Projektstatus</p><h2>Batterie-, Halbleiter- und Infrastrukturprojekte nüchtern lesen.</h2><p>Status regelmäßig prüfen. Diese Karten sind keine sichere Erfolgsliste, sondern Beispiele für Chancen, Risiken und Standortbedingungen.</p></div>
+          <div class="card-grid">${industryProjectCards.map(([title, status, text, note, sourceLabel]) => {
+            const source = industrySourceByLabel(sourceLabel);
+            return `<article class="card"><p class="card-kicker">${escapeHtml(status)}</p><h3 class="card-title">${escapeHtml(title)}</h3><p class="card-text">${escapeHtml(text)}</p><p class="card-text"><strong>Hinweis:</strong> ${escapeHtml(note)}</p><p><a class="text-link" href="${escapeHtml(source.url)}">Quelle öffnen</a></p></article>`;
+          }).join("\n")}</div>
+        </div>
+      </section>`;
+}
+
+function renderIndustryUnderstandingSections() {
+  return `<section class="section section-soft dossier-tab-panel" id="standort-energie-verstehen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Standort &amp; Energie verstehen</p><h2>Transformation ist Standortumbau.</h2><p>Das Deindustrialisierungsnarrativ wirkt stark, weil es reale Ängste aufgreift: Jobs, Wettbewerbsfähigkeit, Energiepreise, Standortverlust. Aber es setzt eine zu enge Systemgrenze. Es betrachtet Umbaukosten und Belastungen, blendet aber neue Wertschöpfung, vermiedene fossile Kosten, technologische Pfade, Versorgungssicherheit und Standortvorteile sauberer Energie aus.</p></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Kernsatz</p><h3 class="card-title">Der Industriestandort der Zukunft entsteht dort, wo Energie sauber, günstig, planbar, lokal verfügbar und systemisch integriert ist.</h3></article>
+            <article class="card"><p class="card-kicker">Zweiter Kernsatz</p><h3 class="card-title">Erneuerbare Energie ist nicht nur Stromproduktion. Sie ist Standortinfrastruktur.</h3></article>
+          </div>
+        </div>
+      </section>
+      <section class="section dossier-tab-panel" id="was-stimmt"><div><div class="section-header"><p class="hero-kicker">Was stimmt?</p><h2>Der Transformationsdruck ist real.</h2></div>${htmlList(["Energieintensive Branchen stehen unter realem Kostendruck.", "Gaspreisschocks haben gezeigt, wie verletzlich fossile Abhängigkeit ist.", "Industriestrompreise hängen nicht nur von Erzeugungskosten ab, sondern auch von Netzentgelten, Steuern, Abgaben, Absicherung, Netzanschlüssen und Versorgungssicherheit.", "Netzausbau, Genehmigungen, Flächen, Fachkräfte und Kapital sind echte Engpässe.", "Nicht jedes Transformationsprojekt gelingt; einige Batterieprojekte wurden verschoben, verkleinert oder gestrichen.", "Internationale Konkurrenz durch China, USA, Frankreich, Skandinavien und Osteuropa ist real.", "Unternehmen brauchen Planungssicherheit, nicht nur Zielbilder."])}</div></section>
+      <section class="section section-soft dossier-tab-panel" id="was-fehlt"><div><div class="section-header"><p class="hero-kicker">Was fehlt?</p><h2>Die fossile und industrielle Systemgrenze.</h2></div>${htmlList(["Fossile Energie hat hohe OPEX: Brennstoffförderung, Transport, Import, Preisrisiko, CO₂-Zertifikate, geopolitische Verwundbarkeit.", "Erneuerbare haben keine Brennstoffkosten und sehr niedrige variable Kosten.", "Viele Zukunftsindustrien brauchen explizit sauberen Strom: Batterien, Halbleiter, Rechenzentren, Elektrolyse, E-Lkw, Ladeparks, Wärmepumpen, Speicher, Leistungselektronik.", "Standortnähe kann Netz-, Transport- und Systemkosten senken, wenn Erzeugung, Verbrauch, Speicher, Wärme und Flexibilität gekoppelt werden.", "Industrie wird nicht nur durch Energiekosten bestimmt, sondern durch Ökosysteme: Fachkräfte, Zulieferer, Forschung, Genehmigungen, Infrastruktur, Kapital, Kunden, Rechtsstaatlichkeit, Daten- und Versorgungssicherheit.", "Klimaschutz ist nicht Zusatz, sondern Teil der neuen Wettbewerbsfähigkeit."])}<p class="formula-note"><strong>Kernsatz:</strong> Die falsche Frage lautet: Wie halten wir die alte Industrie billig? Die richtige Frage lautet: Wie machen wir Deutschland zum Standort der nächsten Industrie?</p></div></section>
+      <section class="section dossier-tab-panel" id="capex-opex"><div><div class="section-header"><p class="hero-kicker">CAPEX / OPEX</p><h2>Warum Erneuerbare anders rechnen.</h2><p>CAPEX sind Investitionskosten: Bau, Anlagen, Netzanschluss, Planung, Finanzierung. OPEX sind Betriebskosten: Brennstoffe, Wartung, Personal, CO₂-Kosten, Transport, Entsorgung, Versicherungen, Sicherheits- und Systemkosten.</p></div>${renderIndustryTable("Kostenlogik-Matrix", ["Technologie / System", "CAPEX", "OPEX / variable Kosten", "Systemische Besonderheit"], industryCostMatrix)}<p class="formula-note"><strong>Kernsatz:</strong> Fossile Energie muss ständig gefördert, transportiert, gekauft und verbrannt werden. Wind und Sonne müssen gebaut, finanziert und integriert werden - aber sie stellen keine Brennstoffrechnung.</p></div></section>
+      <section class="section section-soft dossier-tab-panel" id="standortnaehe"><div><div class="section-header"><p class="hero-kicker">Dezentralität und Standortnähe</p><h2>Strom dort erzeugen, wo Wirkung entsteht.</h2><p>Industrieparks, Gewerbegebiete, Supermärkte, Rechenzentren, Logistikhubs, Ladeparks, Wärmenetze, Kläranlagen, Speicher und kommunale Infrastruktur können zu Energie- und Wirkungsclustern werden. Dezentral heißt nicht netzlos: Auch ein dezentrales erneuerbares System braucht Netze, Speicher, Marktregeln, Flexibilität, Daten und Planung.</p></div>${htmlList(["PV auf Industrie- und Handelsdächern.", "Wind- und Solarparks in Nähe energieintensiver Verbraucher.", "Batteriespeicher an Netzengpässen, Ladeparks und Industrieparks.", "Abwärmenutzung von Rechenzentren für Quartiere und Gewerbe.", "Elektrolyse dort, wo erneuerbarer Überschuss und industrielle Nachfrage zusammentreffen.", "Ladeinfrastruktur an Supermärkten, Baumärkten, Autobahnen und Logistikhubs.", "Power Purchase Agreements für Industrie.", "Kommunale Beteiligung und lokale Wertschöpfung."])}</div></section>
+      <section class="section dossier-tab-panel" id="industriecluster"><div><div class="section-header"><p class="hero-kicker">Neue Industriecluster</p><h2>Welche Industrien durch Transformation wachsen können.</h2></div><div class="card-grid">${industryClusters.map(([title, text]) => `<article class="card"><p class="card-kicker">Transformationscluster</p><h3 class="card-title">${escapeHtml(title)}</h3><p class="card-text">${escapeHtml(text)}</p></article>`).join("\n")}</div></div></section>
+      ${renderIndustryProjectStatus()}
+      <section class="section section-soft dossier-tab-panel" id="ki-rechenzentren"><div><div class="section-header"><p class="hero-kicker">KI-Rechenzentren</p><h2>Energie wird digitaler Standortfaktor.</h2><p>KI, Cloud und Dateninfrastruktur erhöhen den Strombedarf. Deshalb werden Rechenzentren zu einem Testfall für wirkungsökonomische Standortpolitik: Sie brauchen günstigen, zuverlässigen und zunehmend erneuerbaren Strom, hohe Effizienz, Abwärmenutzung, Netzanschlüsse, Wasserstrategie, Sicherheit, Datenschutz und digitale Souveränität.</p></div>${renderIndustryTable("WÖk-Matrix für KI-Rechenzentren", ["Standortfaktor", "Warum wichtig?", "WÖk-Bewertung"], dataCenterMatrix)}<p class="formula-note">KI-Rechenzentren sind nicht automatisch gut oder schlecht. Sie sind Wirkungsträger. Entscheidend ist, ob sie mit sauberem Strom, Effizienz, Abwärmenutzung, Datenschutz und regionaler Rückkopplung betrieben werden.</p></div></section>
+      <section class="section dossier-tab-panel" id="erneuerbare-industriestrom"><div><div class="section-header"><p class="hero-kicker">Erneuerbare als Industriestrom</p><h2>Warum Erneuerbare langfristig Standortvorteile schaffen können.</h2><p>Bei Wind und Sonne fallen die Kosten hauptsächlich beim Bau, bei Finanzierung, Netzanschluss, Wartung, Speicher und Systemintegration an. Der Energieträger selbst kostet nichts. Bei fossilen Kraftwerken entstehen dauerhaft variable Kosten für Brennstoff, Förderung, Transport, CO₂-Zertifikate, Importabhängigkeit und geopolitische Risiken. Bei neuer Kernkraft kommen sehr hohe Kapitalbindung, lange Bauzeiten, Sicherheits-, Rückbau- und Entsorgungsfragen hinzu.</p></div><article class="card"><p class="card-kicker">Fraunhofer ISE - Stromgestehungskosten 2024</p><h3 class="card-title">Erzeugungskosten sind nicht Industriestrompreise.</h3><p class="card-text">Fraunhofer ISE weist für Deutschland niedrige Stromgestehungskosten für PV und Wind aus; neue Kernkraft wird mit einer sehr breiten Spanne geführt. Diese Zahlen sind ein CAPEX/OPEX- und Standortargument, aber kein Endkundenpreis.</p><p class="card-text"><strong>Vorsicht:</strong> Netze, Speicher, Abgaben, Systemkosten und Beschaffung zählen mit.</p><p><a class="text-link" href="${escapeHtml(industrySourceByLabel("Fraunhofer ISE - Stromgestehungskosten 2024").url)}">Quelle öffnen</a></p></article></div></section>`;
+}
+
+function renderIndustryTransformationDossier(claim, sectionLabel = "live") {
+  const base = sectionLabel === "detail" ? "../../../" : "../../../";
+  const canonicalPath = sectionLabel === "detail" ? "detail" : "live";
+  const answers = expandedAnswers(claim);
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero industry-transformation-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel === "detail" ? "Detail" : "Live"}</a> / ${escapeHtml(claim.title)}</nav>
+          <p class="hero-kicker">Leuchtturm · Bilanzgrenze Wirtschaft / Standort / Transformation</p>
+          <h1 class="hero-title">Klimaschutz deindustrialisiert Deutschland?</h1>
+          <p class="hero-subtitle">${escapeHtml(claim.subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)} Die bessere Frage lautet nicht: Klimaschutz oder Industrie? Sondern: Welche Industrie bleibt in Deutschland wettbewerbsfähig, wenn Energie, Mobilität, Halbleiter, Rechenzentren, Batterien, Wärme, Logistik und Produktion klimaneutral, resilient und bezahlbar werden müssen?</p>
+          <p class="radar-status-line"><span>Status: checked_candidate</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: Strukturwandel ist real, aber Niedergangsframe ist verkürzt</span></p>
+        </div>
+      </section>
+      ${summaryGrid([["Kurzurteil", claim.summary.judgement, "warning"], ["Leitsatz", "Industrie bleibt nicht, indem man alte Kostenstrukturen konserviert. Industrie bleibt, wenn der Standort die nächste Technologie- und Energiephase gewinnt.", "positive"], ["Kernthese", "Nicht Klimaschutz deindustrialisiert Deutschland. Fossile Abhängigkeit, verschleppte Infrastruktur, hohe Systemkosten und fehlende Transformationsfähigkeit gefährden Industrie.", "critical"], ["Kurzformel", "Transformation ist nicht Deindustrialisierung. Transformation ist Standortumbau.", "positive"], ["Noch kürzer", "Nicht Industrie bewahren, wie sie war. Industrie erneuern, damit sie bleibt.", "positive"], ["Risiko", claim.summary.risk, "critical"]], `${claim.title} Summary`, "deep-dive-summary-grid")}
+      <section class="section radar-summary-section" id="sechs-punkte"><div class="radar-section-intro"><p class="hero-kicker">Das Wichtigste</p><h2>Sechs Punkte zur Standortrechnung.</h2></div>${summaryGrid(industryKeyPoints, "Industrie Transformation Summary")}</section>
+      ${topicSubnav(sectionLabel === "detail" ? "Detail" : "Live", "../")}
+      <section class="section" id="live-antworten"><div><div class="section-header"><p class="hero-kicker">Tab 1</p><h2>Live antworten.</h2></div><div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge"><details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details></div><div class="card-grid two"><article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article><article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Niedergangsframe. Die bessere Wirkungsfrage ist: Welche Standortbedingungen machen Industrie in der klimaneutralen Wirtschaft wettbewerbsfähig?</p></article></div></div></section>
+      <section class="section section-soft"><div class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><h2 class="card-title">Was man nicht tun sollte.</h2>${htmlList(claim.dontDo)}</div></section>
+      ${renderIndustryUnderstandingSections()}
+      <section class="section dossier-tab-panel" id="wirkstoffanalyse"><div><div class="section-header"><p class="hero-kicker">Wirkstoffanalyse</p><h2>Transformationskosten als Niedergangsbeweis.</h2><p>Der Frame verschiebt Aufmerksamkeit von fossilen Systemkosten, neuen Wertschöpfungsfeldern und Standorthebeln auf kurzfristige Belastungen.</p></div>${htmlList(["fossile Brennstoffkosten", "Importabhängigkeit", "CO₂-Kosten", "Klimaschäden", "neue Industriecluster", "LCOE erneuerbarer Energien", "CAPEX/OPEX-Unterschiede", "Netz- und Speicherinfrastruktur", "Power Purchase Agreements", "Batteriezellfertigung", "Halbleiter und Leistungselektronik", "KI-Rechenzentren", "Ladeinfrastruktur und E-Lkw", "T-SROI von Infrastrukturinvestitionen"])}</div></section>
+      <section class="section section-soft dossier-tab-panel" id="narrativanalyse"><div><div class="section-header"><p class="hero-kicker">Narrativanalyse</p><h2>Deindustrialisierungsnarrativ.</h2><p>Das Narrativ funktioniert, weil es reale Transformationsschmerzen aufgreift. Die Entlarvung darf diese Schmerzen nicht leugnen. Sie muss zeigen: Der Schluss „also zurück zu fossil“ ist wirkungsökonomisch falsch.</p></div>${summaryGrid([["Primär", "Deindustrialisierungsnarrativ", "warning"], ["Sekundär", "Niedergangsframe / Klimaschutz gegen Wirtschaft / Scheiternsframe / fossile Entlastung", "warning"], ["Emotion", "Verlustangst, Statusbedrohung, Nostalgie und Abwehr von Veränderung", "critical"], ["Politische Funktion", "Transformation, Erneuerbare, Elektrifizierung, Netze und Klimapolitik werden als wirtschaftsfeindlich gerahmt.", "critical"]], "Narrativanalyse Industrie")}</div></section>
+      ${renderPsychologyModule(claim)}
+      <section class="section dossier-tab-panel" id="wirkungspfad"><div><div class="section-header"><p class="hero-kicker">Wirkungspfad</p><h2>Vom Satz zur Standortwirkung.</h2></div><ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol></div></section>
+      <section class="section section-soft dossier-tab-panel" id="folgen-falschen-handelns"><div><div class="section-header"><p class="hero-kicker">Folgen falschen Handelns</p><h2>Was wahrscheinlicher wird.</h2></div><div class="deep-dive-consequence-grid">${claim.consequences.map((item) => `<article class="card"><p class="card-kicker">Folge</p><p class="card-text">${escapeHtml(item)}</p></article>`).join("")}</div></div></section>
+      ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
+      ${woekSolutionMatrix(claim.woekSolution)}
+      <section class="section section-soft" id="verknuepfung-emobilitaet"><div class="card"><p class="card-kicker">Verwandtes Dossier</p><h2 class="card-title">Vom Standort zur Mobilität.</h2><p class="card-text">Elektromobilität ist nicht nur ein Fahrzeugthema. Sie ist Industriepolitik: Batteriezellen, Leistungselektronik, Ladeinfrastruktur, E-Lkw, Software, Recycling, Stromsystem, Netze und Speicher bilden neue Wertschöpfungsketten.</p><p><a class="btn btn-primary" href="/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/">Zum Dossier: E-Autos schlimmer als Verbrenner?</a></p></div></section>
+      <section class="section dossier-tab-panel" id="deep-dive-quellen"><div><div class="section-header"><p class="hero-kicker">Tab 3</p><h2>Deep Dive &amp; Quellen.</h2><p>Quellen dienen als Prüfstand. Projektstatus, Kosten, Förderungen und Produktionsziele müssen regelmäßig aktualisiert werden.</p></div>${evidenceStack(claim.sources)}</div></section>
+      ${factStatusBadge()}
+    </main>`;
+  return pageShell({
+    title: `Klimaschutz deindustrialisiert Deutschland? - Wirkungsradar ${sectionLabel === "detail" ? "Detail" : "Live"} | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
+    base,
+    main,
+  });
+}
+
 function renderDeepDiveDetail(claim) {
+  if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "detail");
   const detail = deepDiveDetailFor(claim);
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero theme-hero deep-dive-hero">
@@ -2882,6 +3157,7 @@ function renderDeepDiveDetail(claim) {
             ${renderWirkungOrders(detail)}
             ${renderBatteryAudit(detail)}
             ${renderEvChargingInfrastructure(detail)}
+            ${renderEvIndustryPolicyLink(claim)}
             ${renderFalseActionAnalysis(detail)}
             <section class="section deep-dive-section" id="mpd">
               <div class="section-header"><p class="hero-kicker">Bewertung nach Mensch, Planet, Demokratie</p><h2>MPD-Wirkungsrisiko.</h2></div>
@@ -3816,6 +4092,7 @@ function renderLiveCard(claim) {
   if (claim.slug === "deutschland-nur-zwei-prozent") return renderGermanyTwoPercentDossier(claim);
   if (claim.slug === "co2-preis-oder-fossile-systemkosten") return renderCo2SystemCostsDossier(claim, "live");
   if (claim.slug === "windraeder-voegel-wald-beton-rueckbau") return renderWindEnergyNatureDossier(claim, "live");
+  if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "live");
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
   const detailLink = deepDiveLiveLink(claim);
@@ -3878,6 +4155,7 @@ function renderLiveCard(claim) {
         </div>
       </section>
       ${woekSolutionMatrix(claim.woekSolution)}
+      ${renderEvIndustryPolicyLink(claim)}
       ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
       ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, claim.riskLevel === "hoch" ? "critical" : "warning"]], `${claim.title} SDG`, "climate-sdg-panel")}
       ${internalLinks()}
@@ -3949,6 +4227,23 @@ const evGlossaryTerms = [
   ["tankstellenlogik", "Tankstellenlogik", "Denkmuster, das Elektromobilität so bewertet, als müsse Laden genauso funktionieren wie Tanken beim Verbrenner.", "Elektromobilität nutzt oft Standzeiten. Deshalb ist die Tankstellenlogik für viele Ladefälle die falsche Vergleichslogik."],
 ];
 
+const industryNarrativePages = [
+  ["deindustrialisierung", "Deindustrialisierung", "Wenn Transformationsstress als Beweis gegen Klimaschutz gelesen wird.", "hoch", "Das Deindustrialisierungsnarrativ greift reale Standortprobleme auf: Strompreise, Netze, Bürokratie, Fachkräfte, globale Konkurrenz und Investitionsrisiken. Der Denkfehler entsteht, wenn daraus folgt, Klimaschutz sei die Ursache industrieller Schwäche. Wirkungsökonomisch gefährden vor allem fossile Abhängigkeit, verschleppte Infrastruktur, hohe Systemkosten und fehlende Transformationsfähigkeit den Standort.", "Reale Probleme anerkennen, fossile Systemkosten mitbilanzieren, konkrete Standorthebel prüfen."],
+  ["fossile-nostalgie", "Fossile Nostalgie", "Wenn die alte Energieordnung als sichere Standortbasis verklärt wird.", "hoch", "Fossile Nostalgie macht frühere Kostenstrukturen emotional verfügbar und blendet Importabhängigkeit, CO₂-Kosten, Klimaschäden, geopolitische Risiken und Technologiewandel aus. Sie verspricht Stabilität, obwohl sie viele heutige Verwundbarkeiten erzeugt oder verstärkt.", "Nostalgie nicht lächerlich machen, aber die vollständige Rechnung öffnen: Brennstoff, CO₂, Krisenrisiko, Folgekosten und verpasste Zukunftsmärkte."],
+  ["falsche-standortrechnung", "Falsche Standortrechnung", "Wenn nur sichtbare Umbaukosten zählen und Systemvorteile verschwinden.", "hoch", "Die falsche Standortrechnung vergleicht Transformationsinvestitionen mit einem scheinbar kostenlosen Status quo. Dadurch werden Netze, Speicher, Erneuerbare, Effizienz, Industriecluster und vermiedene fossile Kosten zu Belastungen, während Brennstoffimporte, Klimafolgen und Abhängigkeiten unsichtbar bleiben.", "CAPEX und OPEX trennen, Bilanzgrenze erweitern und Standortwirkung statt Einzelpreis behaupten."],
+];
+
+const industryGlossaryTerms = [
+  ["deindustrialisierungsnarrativ", "Deindustrialisierungsnarrativ", "Erzählmuster, das realen Transformationsstress als Beweis deutet, Klimaschutz zerstöre Industrie.", "Der Begriff hilft, reale Standortprobleme ernst zu nehmen, ohne daraus eine falsche Rückkehr-zum-Fossilen-Logik zu machen."],
+  ["standortwirkung", "Standortwirkung", "Gesamte Wirkung politischer, infrastruktureller und wirtschaftlicher Bedingungen auf Wertschöpfung, Beschäftigung, Resilienz und demokratische Stabilität eines Standorts.", "Standortwirkung fragt nicht nur nach einem einzelnen Preis, sondern nach Investitionsfähigkeit, Infrastruktur, Lieferketten, Know-how und Zukunftsmärkten."],
+  ["capex", "CAPEX", "Investitionsausgaben für Bau, Anlagen, Infrastruktur, Maschinen, Netze, Speicher oder andere langfristige Vermögenswerte.", "CAPEX ist wichtig, weil Erneuerbare, Netze, Speicher und Industrieparks oft hohe Anfangsinvestitionen haben, aber später niedrige variable Kosten erzeugen können."],
+  ["opex", "OPEX", "Laufende Betriebsausgaben, zum Beispiel Brennstoff, Wartung, Personal, CO₂-Kosten, Transport, Beschaffung und Betriebsmittel.", "OPEX macht sichtbar, warum fossile Systeme dauerhaft von Brennstoffpreisen, Importen und CO₂-Kosten abhängig bleiben."],
+  ["stromgestehungskosten", "Stromgestehungskosten", "Kosten der Stromerzeugung über die Lebensdauer einer Anlage, meist je Kilowattstunde angegeben.", "Stromgestehungskosten sind kein Endkundenpreis, helfen aber, CAPEX/OPEX-Logik und Technologiekosten zu vergleichen."],
+  ["industriestrom", "Industriestrom", "Strom, der für industrielle Prozesse, Produktion, Rechenzentren, Wärme, Elektrolyse, Logistik oder Fertigung benötigt wird.", "Industriestrom ist Standortpolitik: Preis, Verfügbarkeit, CO₂-Intensität, Netzanschluss und Planbarkeit entscheiden zusammen."],
+  ["transformationscluster", "Transformationscluster", "Räumlich oder wirtschaftlich verbundene Wertschöpfungsketten für klimaneutrale Industrie, etwa Batterien, Halbleiter, Ladeinfrastruktur, Recycling, Speicher oder Wasserstoff.", "Transformationscluster zeigen, dass Klimaschutz nicht nur Verzicht, sondern neue industrielle Kopplung, Spezialisierung und Wertschöpfung bedeuten kann."],
+  ["fossile-systemkosten", "Fossile Systemkosten", "Direkte und indirekte Kosten fossiler Energie, darunter Brennstoffimporte, CO₂-Kosten, Luftschadstoffe, Klimaschäden, geopolitische Risiken und Infrastrukturabhängigkeiten.", "Fossile Systemkosten verhindern, dass der fossile Status quo als kostenlos oder neutral erscheint."],
+];
+
 function renderWindNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero narrative-hero">
@@ -3969,6 +4264,31 @@ function renderWindNarrativePage([slug, title, subtitle, riskLevel, abstract, re
           <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht beschwichtigen, nicht spiegeln, nicht entwerten. Sondern Zielkonflikt anerkennen und zur besseren Wirkungsfrage zurückführen.</p></article>
         </div>
         <p><a class="btn btn-primary" href="../../live/windraeder-voegel-wald-beton-rueckbau/">Windenergie-Dossier öffnen</a></p>
+      </section>
+    </main>`;
+  return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
+}
+
+function renderIndustryNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / ${escapeHtml(title)}</nav>
+          <p class="hero-kicker">Narrativbibliothek · Industrie &amp; Transformation</p>
+          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(abstract)}</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Wirkungsrisiko: ${escapeHtml(riskLevel)}</span></p>
+        </div>
+      </section>
+      ${topicSubnav("Narrative", "../")}
+      ${summaryGrid([["Risiko", riskLevel, riskLevel === "hoch" ? "critical" : "warning"], ["Typische Wirkung", "Transformationsstress wird zur Rückkehr-zum-Fossilen-Erzählung verkürzt.", "warning"], ["Gegenbewegung", response, "positive"], ["Leuchtturm-Dossier", "Klimaschutz deindustrialisiert Deutschland?", "positive"]], `${title} Summary`)}
+      <section class="section">
+        <div class="card-grid two">
+          <article class="card"><p class="card-kicker">Psychologischer Hebel</p><h2 class="card-title">Verlustangst schlägt Systemrechnung.</h2><p class="card-text">Verlustaversion, Status-quo-Bias, Nostalgie-Effekt, Identitätsabwehr und Verfügbarkeitsheuristik machen einzelne Werksschließungen oder Preisbilder besonders wirksam.</p></article>
+          <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht beschwichtigen, nicht triumphieren. Erst reale Standortprobleme anerkennen, dann Bilanzgrenze öffnen und konkrete Transformationshebel verlangen.</p></article>
+        </div>
+        <p><a class="btn btn-primary" href="../../live/klimaschutz-deindustrialisiert-deutschland/">Industrie-Dossier öffnen</a></p>
       </section>
     </main>`;
   return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
@@ -4016,6 +4336,61 @@ function renderEvGlossaryPage([slug, label, definition, hover]) {
   return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
 }
 
+function renderIndustryGlossaryPage([slug, label, definition, hover]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="term-hero">
+        <div class="term-hero__copy">
+          <nav class="breadcrumb"><a href="../">Begriffe</a> / ${escapeHtml(label)}</nav>
+          <p class="eyebrow">Glossar der Wirkungsökonomie</p>
+          <h1>${escapeHtml(label)}</h1>
+          <p class="lead">${escapeHtml(definition)}</p>
+          <p class="term-meta">Kategorie: Wirkungsradar · Industrie · Transformation · Datenstand: ${UPDATED_AT}</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsradar/live/klimaschutz-deindustrialisiert-deutschland/">Industrie-Dossier</a><a class="btn btn-secondary" href="../">Alle Begriffe</a></div>
+        </div>
+      </section>
+      <div class="term-page">
+        <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
+        <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
+        <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Standort- und Klimadebatten als vollständige Wirkungsrechnung zu führen: Mensch, Planet, Demokratie, Infrastruktur, Kosten, Abhängigkeiten und Zukunftsmärkte gehören gemeinsam in die Bilanz.</p></section>
+      </div>
+    </main>`;
+  return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
+}
+
+const industrySourceLabels = [
+  "Fraunhofer ISE - Stromgestehungskosten 2024",
+  "Volkswagen/PowerCo - Salzgitter Gigafactory",
+  "Reuters - Tesla Batteriezellproduktion Grünheide",
+  "electrive - CATL production in Germany",
+  "electrive - Heide / Northvolt / Lyten",
+  "Reuters - ACC drops German and Italian gigafactory plans",
+  "TSMC - ESMC Dresden",
+  "Infineon - Smart Power Fab Dresden",
+  "Bosch - Wafer Fab Dresden",
+  "GTAI - Data Center Germany",
+  "Umweltbundesamt - Gesellschaftliche Kosten von Umweltbelastungen",
+  "Fraunhofer ISE / Energy-Charts",
+];
+
+const industrySourcePack = {
+  id: "industry-transformation-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  dossier: "klimaschutz-deindustrialisiert-deutschland",
+  sources: Object.fromEntries(industrySourceLabels.map((label) => {
+    const source = sourcePack.primary_sources.find((item) => item.label === label);
+    if (!source) throw new Error(`Missing industry source: ${label}`);
+    const key = label.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+    return [key, {
+      label: source.label,
+      publisher: source.publisher,
+      url: source.url,
+      use_for: source.use_for,
+      type: source.type,
+    }];
+  })),
+};
+
 writeFile("content/wirkungsradar/source-packs/climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(sourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/deep-dive-climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(deepDiveSourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/wind-energy-nature-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
@@ -4027,6 +4402,7 @@ writeFile("content/wirkungsradar/source-packs/wind-energy-nature-v1.yaml", `# Ge
     { label: title, url, use_for: [use_for], warning, shows },
   ])),
 }).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/industry-transformation-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(industrySourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy-mapping.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(mapping).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy.yml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(dataModel()).trim()}\n`);
 writeFile("wirkungsradar/detail/index.html", renderDetailIndex());
@@ -4053,6 +4429,9 @@ if (windEnergyNatureClaim) {
 for (const narrative of windNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderWindNarrativePage(narrative));
 }
+for (const narrative of industryNarrativePages) {
+  writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderIndustryNarrativePage(narrative));
+}
 for (const term of windGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;
   if (!fs.existsSync(termPath)) writeFile(termPath, renderWindGlossaryPage(term));
@@ -4060,6 +4439,10 @@ for (const term of windGlossaryTerms) {
 for (const term of evGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;
   if (!fs.existsSync(termPath)) writeFile(termPath, renderEvGlossaryPage(term));
+}
+for (const term of industryGlossaryTerms) {
+  const termPath = `begriffe/${term[0]}/index.html`;
+  if (!fs.existsSync(termPath)) writeFile(termPath, renderIndustryGlossaryPage(term));
 }
 
 console.log(`Built climate-energy cluster: ${subtopics.length} subtopics, ${claims.length} live cards, ${deepDiveSlugs.length} deep dives.`);
