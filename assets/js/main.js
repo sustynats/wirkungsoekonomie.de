@@ -900,6 +900,7 @@ function initGlobalWirkungsradarBridge() {
         <a href="${relativeSiteUrl("wirkungsradar/")}">Überblick</a>
         <a href="${relativeSiteUrl("wirkungsradar/live/")}">Live-Antworten</a>
         <a href="${relativeSiteUrl("wirkungsradar/narrative/")}">Narrative</a>
+        <a href="${relativeSiteUrl("wirkungsradar/psychologie/")}">Psychologie</a>
         <a href="${relativeSiteUrl("wirkungsradar/themen/")}">Themen</a>
         <a href="${relativeSiteUrl("wirkungsradar/methode/")}">Methode</a>
       </div>
@@ -1080,6 +1081,111 @@ function initGlobalWirkungsradarBridge() {
 }
 
 initGlobalWirkungsradarBridge();
+
+function initRadarPsychologyPanel() {
+  if (!mainElement || document.querySelector("[data-radar-psychology-panel]")) {
+    return;
+  }
+
+  const path = window.location.pathname;
+  const isRadarPage = path.includes("/wirkungsradar/");
+  const isNarrativeDetail = path.includes("/wirkungsradar/narrative/") && !path.endsWith("/narrative/");
+  if (!isRadarPage || isNarrativeDetail) {
+    return;
+  }
+
+  const pageText = `${document.title} ${mainElement.textContent || ""}`.toLowerCase();
+  const profiles = [
+    {
+      match: ["ohnmacht", "bringt nichts", "2 %", "2 prozent", "china"],
+      effects: [["Erlernte Hilflosigkeit", "Handeln wirkt sinnlos."], ["Verantwortungsdiffusion", "Zuständigkeit wird nach außen verlagert."], ["Kognitive Entlastung", "Nichtstun fühlt sich kurzfristig leichter an."]],
+      game: "Aus begrenzter Wirkung wird Wirkungslosigkeit gemacht.",
+      counter: "Hebel sichtbar machen: Was können wir konkret beeinflussen, mit welcher Wirkung und welche Folgen hätte Unterlassen?",
+    },
+    {
+      match: ["zensur", "nichts mehr sagen", "social credit", "ökodiktatur", "oekodiktatur", "verbot"],
+      effects: [["Reaktanz", "Widerspruch oder Regeln fühlen sich wie Freiheitsverlust an."], ["Verlustaversion", "Möglicher Verlust wird stärker gewichtet als Schutzwirkung."], ["Identitätsschutz", "Sachfragen werden als Angriff auf Lebensweise oder Status erlebt."]],
+      game: "Kritik, Moderation oder Steuerung wird als Unterdrückung gerahmt.",
+      counter: "Freiheit und Widerspruch trennen: Was ist verboten, was wird nur kritisiert, und welche Wirkung soll eine Regel verhindern?",
+    },
+    {
+      match: ["weltregierung", "alles gesteuert", "eliten", "agenda 2030", "sdgs"],
+      effects: [["Kontrollillusion", "Ein geheimer Plan fühlt sich einfacher an als komplexe Kooperation."], ["Mustererkennung unter Unsicherheit", "Unverbundene Ereignisse werden zu Absicht verbunden."], ["Misstrauensspirale", "Gegenbelege gelten schnell als Teil des Plans."]],
+      game: "Kooperation wird als Herrschaft, Komplexität als geheime Steuerung gedeutet.",
+      counter: "Zuständigkeiten konkretisieren: Wer entscheidet demokratisch, wer kontrolliert, welche Rechtswirkung hat der Rahmen tatsächlich?",
+    },
+    {
+      match: ["wissenschaft", "gekauft", "studie", "experten", "mainstreammedien", "medien"],
+      effects: [["Bestätigungsfehler", "Quellen werden nach Weltbild statt Methode bewertet."], ["Hostile-Media-Effekt", "Widersprechende Berichte wirken automatisch parteiisch."], ["Motivated Reasoning", "Daten werden so gelesen, dass die gewünschte Schlussfolgerung bleibt."]],
+      game: "Einzelne Fehler werden zur pauschalen Delegitimierung von Wissenschaft oder Medien gemacht.",
+      counter: "Auf Verfahren zurückführen: Welche Quelle, welche Methode, welcher Fehler, welche Korrektur und welcher Interessenkonflikt sind konkret gemeint?",
+    },
+    {
+      match: ["co₂", "co2", "preis", "abzocke", "systemkosten", "teurer"],
+      effects: [["Verlustaversion", "Sichtbare Mehrkosten wirken stärker als vermiedene Schäden."], ["Salienz-Bias", "Der Preis auf der Rechnung ist sichtbarer als verteilte Folgekosten."], ["Fairness-Heuristik", "Belastung wirkt illegitim, wenn Rückverteilung fehlt."]],
+      game: "Nur neue Kosten werden gezeigt, alte ausgelagerte Kosten verschwinden.",
+      counter: "Kostenbild vervollständigen: Welche Kosten sind sichtbar, welche wurden bisher externalisiert, wer zahlt sie und wie wird sozial rückverteilt?",
+    },
+    {
+      match: ["technik", "fusion", "batterie", "batterien", "e-auto", "wind", "erneuerbare"],
+      effects: [["Optimismus- oder Negativitätsbias", "Technik wird entweder als Erlösung oder als Totalproblem erzählt."], ["Verfügbarkeitsheuristik", "Einzelbilder oder Einzelfälle ersetzen die Systembilanz."], ["Ambiguitätsaversion", "Unsicherheit wird genutzt, um den alten Pfad fortzusetzen."]],
+      game: "Potenzial, Einzelfall oder Risiko wird mit der Gesamtwirkung verwechselt.",
+      counter: "Pfad gegen Pfad vergleichen: Was wirkt bis wann, in welcher Größenordnung, mit welchen Kosten, Nebenwirkungen und Alternativen?",
+    },
+  ];
+
+  const selected = profiles.find((profile) => profile.match.some((token) => pageText.includes(token))) || {
+    effects: [["Kognitive Dissonanz", "Unbequeme Fakten werden abgewehrt, wenn sie Identität oder bisherige Entscheidungen bedrohen."], ["Bestätigungsfehler", "Passende Informationen werden bevorzugt, widersprechende abgewertet."], ["Verfügbarkeitsheuristik", "Einprägsame Beispiele wirken größer als die Datenlage."]],
+    game: "Ein wahrer Kern wird emotional verstärkt und in eine zu große Schlussfolgerung geschoben.",
+    counter: "Frame stoppen, wahren Kern anerkennen, Denkfehler benennen und zur konkreten Wirkungsfrage zurückkehren.",
+  };
+
+  const panel = document.createElement("section");
+  panel.className = "section radar-psychology-panel";
+  panel.dataset.radarPsychologyPanel = "true";
+  panel.innerHTML = `
+    <div>
+      <div class="section-header">
+        <p class="hero-kicker">Psychologischer Wirkungscheck</p>
+        <h2>Welche Effekte hier mitlaufen.</h2>
+        <p>Viele Wirkungsradar-Aussagen funktionieren nicht nur über Fakten, sondern über psychologische Abkürzungen. Wer sie erkennt, muss nicht in den Frame springen.</p>
+      </div>
+      <div class="card-grid radar-psychology-grid">
+        ${selected.effects
+          .map(
+            ([label, text]) => `<article class="card radar-psychology-card">
+          <p class="card-kicker">Effekt</p>
+          <h3 class="card-title">${label}</h3>
+          <p class="card-text">${text}</p>
+        </article>`,
+          )
+          .join("")}
+      </div>
+      <div class="card-grid two radar-psychology-practice">
+        <article class="card">
+          <p class="card-kicker">Psychologisches Spielchen</p>
+          <h3 class="card-title">So wird die Debatte verschoben</h3>
+          <p class="card-text">${selected.game}</p>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Oberhand gewinnen</p>
+          <h3 class="card-title">So umgehst du den Trigger</h3>
+          <p class="card-text">${selected.counter}</p>
+          <p class="card-text"><strong>Merksatz:</strong> Wahren Kern retten, Denkfehler trennen, Wirkungspfad zurückholen.</p>
+        </article>
+      </div>
+    </div>
+  `;
+
+  const anchor = mainElement.querySelector(".radar-summary-section, .topic-subnav, .section");
+  if (anchor?.nextElementSibling) {
+    anchor.after(panel);
+  } else {
+    mainElement.append(panel);
+  }
+}
+
+initRadarPsychologyPanel();
 
 function slugifyHeading(text) {
   return text

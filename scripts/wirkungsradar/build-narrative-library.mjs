@@ -1131,6 +1131,7 @@ function topicSubnav(current, baseToRadar) {
     ["Wissen", "../wissen/"],
     ["Live", "../live/"],
     ["Narrative", "../narrative/"],
+    ["Psychologie", "../psychologie/"],
     ["Themen", "../themen/"],
     ["Detail", "../detail/"],
   ];
@@ -1387,6 +1388,50 @@ function renderIndex() {
 
       ${topicSubnav("Narrative", "")}
 
+      <section class="section section-soft" id="psychologische-effekte" aria-labelledby="psychologische-effekte-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Psychologischer Wirkungscheck</p>
+            <h2 id="psychologische-effekte-title">Welche Effekte Narrative wirksam machen.</h2>
+            <p>Narrative wirken selten nur über eine einzelne Behauptung. Sie aktivieren psychologische Abkürzungen: Angst vor Verlust, Schutz des eigenen Weltbilds, Misstrauen gegenüber Korrekturen oder das Gefühl, ohnehin nichts ändern zu können. Wer diese Effekte erkennt, gewinnt Abstand zum Trigger und kann die Debatte zurück auf Wirkung, Evidenz und Verantwortung führen.</p>
+          </div>
+          <div class="card-grid four radar-psychology-grid">
+            <a class="card text-link-card radar-psychology-card" href="../psychologie/">
+              <p class="card-kicker">Dissonanz</p>
+              <h3 class="card-title">Kognitive Dissonanz</h3>
+              <p class="card-text">Unbequeme Fakten werden abgewehrt, wenn sie Identität, Status oder frühere Entscheidungen infrage stellen.</p>
+            </a>
+            <a class="card text-link-card radar-psychology-card" href="../psychologie/">
+              <p class="card-kicker">Freiheit</p>
+              <h3 class="card-title">Reaktanz</h3>
+              <p class="card-text">Ein Vorschlag wirkt wie Bevormundung. Dann wird nicht mehr die Maßnahme geprüft, sondern die gefühlte Kränkung verteidigt.</p>
+            </a>
+            <a class="card text-link-card radar-psychology-card" href="../psychologie/">
+              <p class="card-kicker">Kosten</p>
+              <h3 class="card-title">Verlustaversion</h3>
+              <p class="card-text">Sichtbare Kosten, Verbote oder Einschränkungen wirken stärker als vermiedene Schäden, langfristige Gewinne oder Systemrisiken.</p>
+            </a>
+            <a class="card text-link-card radar-psychology-card" href="../psychologie/">
+              <p class="card-kicker">Weltbild</p>
+              <h3 class="card-title">Bestätigungsfehler</h3>
+              <p class="card-text">Informationen werden bevorzugt, wenn sie das eigene Lager bestätigen, und abgewertet, wenn sie Korrektur verlangen.</p>
+            </a>
+          </div>
+          <div class="card-grid two radar-psychology-practice">
+            <article class="card">
+              <p class="card-kicker">Psychologisches Spielchen</p>
+              <h3 class="card-title">Der Trigger zieht die Debatte vom Mechanismus weg.</h3>
+              <p class="card-text">Typisch sind Kränkung, Feindbild, falscher Freiheitsalarm, selektive Beispiele, moralische Umkehr oder der Satz: Das bringt doch alles nichts. So wird nicht mehr gefragt, was wirkt, sondern wer schuld, naiv oder bevormundend ist.</p>
+            </article>
+            <article class="card">
+              <p class="card-kicker">Oberhand gewinnen</p>
+              <h3 class="card-title">Nicht spiegeln, sondern entwirren.</h3>
+              <p class="card-text">Wahren Kern retten, Denkfehler trennen, den psychologischen Trigger benennen und zur Wirkungsfrage zurückführen: Welche Maßnahme senkt realen Schaden, stärkt Handlungsfähigkeit und bleibt demokratisch verantwortbar?</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" aria-labelledby="narrative-intro">
         <div class="article-body radar-method-body">
           <h2 id="narrative-intro">Narrative als gesellschaftliche Wirkstoffe lesen.</h2>
@@ -1402,7 +1447,7 @@ function renderIndex() {
         <div>
           <div class="section-header">
             <p class="hero-kicker">Bibliothek v1</p>
-            <h2 id="narrativ-grid-title">14 Narrativfamilien im Überblick.</h2>
+            <h2 id="narrativ-grid-title">${narratives.length} Narrativfamilien im Überblick.</h2>
           </div>
           <form class="narrative-library-toolbar" data-search-exclude>
             <label>
@@ -1702,6 +1747,268 @@ function renderLanguageLongread() {
   });
 }
 
+const defaultPsychologyProfile = {
+  effects: [
+    ["Bestätigungsfehler", "Menschen nehmen vor allem Informationen auf, die zum bestehenden Weltbild passen."],
+    ["Verfügbarkeitsheuristik", "Einprägsame Beispiele wirken größer als die tatsächliche Datenlage."],
+    ["Kognitive Dissonanz", "Widersprechende Fakten werden abgewehrt, wenn sie Identität, Status oder bisherige Entscheidungen bedrohen."],
+  ],
+  games: [
+    "Aus einem wahren Kern wird eine zu große Schlussfolgerung gemacht.",
+    "Die Debatte wird vom überprüfbaren Sachverhalt auf Gefühl, Verdacht oder Gruppenloyalität verschoben.",
+    "Wer widerspricht, soll in eine Verteidigungsrolle geraten.",
+  ],
+  counter:
+    "Nicht den Frame nachsprechen. Erst den wahren Kern anerkennen, dann die falsche Folgerung trennen und mit einer konkreten Wirkungsfrage zur Sache zurückführen.",
+};
+
+const psychologyProfiles = {
+  ohnmacht: {
+    effects: [
+      ["Erlernte Hilflosigkeit", "Wiederholte Ohnmachtserzählungen senken Selbstwirksamkeit: Menschen glauben, Handeln bringe ohnehin nichts."],
+      ["Verantwortungsdiffusion", "Verantwortung wird an größere Akteure abgegeben, bis niemand mehr zuständig wirkt."],
+      ["Gegenwartsbias", "Kurzfristige Entlastung fühlt sich besser an als anstrengende, aber wirksame Veränderung."],
+    ],
+    games: [
+      "Begrenzte Einzelwirkung wird in völlige Wirkungslosigkeit verwandelt.",
+      "Wer handeln will, soll naiv wirken.",
+      "Unterlassen wird als realistisch, Handeln als moralischer Aktionismus gerahmt.",
+    ],
+    counter:
+      "Begrenztheit anerkennen und sofort auf Hebel wechseln: Wer kann was beeinflussen, bis wann, mit welcher Rückkopplung? So gewinnt man die Oberhand über die Ohnmacht.",
+  },
+  verzoegerung: {
+    effects: [
+      ["Status-quo-Bias", "Das Bestehende wirkt sicherer, auch wenn es weiter Schäden erzeugt."],
+      ["Verlustaversion", "Mögliche Kosten der Veränderung werden stärker gewichtet als sichere Kosten des Nichtstuns."],
+      ["Ambiguitätsaversion", "Unsicherheit über Lösungen wird genutzt, um bekannte Risiken zu verlängern."],
+    ],
+    games: [
+      "Zustimmung ohne Konsequenz: Das Problem wird anerkannt, aber Handlung verschoben.",
+      "Perfektion wird verlangt, damit ausreichende Lösungen blockiert werden.",
+      "Die Kosten des Wartens werden unsichtbar gemacht.",
+    ],
+    counter:
+      "Nicht über Idealzustände streiten. Nach den Kosten des Wartens fragen: Was passiert, wenn wir ein Jahr, fünf Jahre oder zehn Jahre nichts ändern?",
+  },
+  suendenbock: {
+    effects: [
+      ["Sündenbockmechanismus", "Komplexe Ursachen werden emotional auf eine Gruppe verengt."],
+      ["Ingroup-Outgroup-Bias", "Die eigene Gruppe wirkt moralisch sauber, die andere als Ursache des Problems."],
+      ["Fundamentaler Attributionsfehler", "Systemprobleme werden als Charakterfehler bestimmter Menschen erzählt."],
+    ],
+    games: [
+      "Reale Belastung wird aufgenommen und auf eine Zielgruppe umgeleitet.",
+      "Komplexität wird durch Schuld ersetzt.",
+      "Wer differenziert, soll als Verteidiger der angeblich Schuldigen erscheinen.",
+    ],
+    counter:
+      "Problem ernst nehmen, Zielgruppe entkoppeln, Ursachen sortieren: Welche konkrete Wirkung soll verbessert werden und welche Maßnahme wirkt nachweisbar?",
+  },
+  kontrollverlust: {
+    effects: [
+      ["Kontrollillusion", "Eine einfache Erklärung gibt Gefühl von Kontrolle, auch wenn sie falsch ist."],
+      ["Bedrohungsbias", "Unklare Koordination wird schneller als Gefahr wahrgenommen."],
+      ["Verschwörungsdenken", "Zufall, Komplexität und Interessen werden zu einem geheimen Plan verdichtet."],
+    ],
+    games: [
+      "Kooperation wird als Herrschaft umgedeutet.",
+      "Unklare Zuständigkeiten werden als Beweis für geheime Steuerung genutzt.",
+      "Gegenbelege gelten als Teil des Plans.",
+    ],
+    counter:
+      "Zuständigkeiten konkretisieren: Wer entscheidet rechtlich? Wer kontrolliert? Welche demokratische Korrektur ist möglich? Konkretion schlägt Kontrollpanik.",
+  },
+  verbotsnarrativ: {
+    effects: [
+      ["Reaktanz", "Menschen wehren sich stärker, wenn sie Freiheit bedroht sehen."],
+      ["Verlustaversion", "Der mögliche Verlust wirkt größer als der Nutzen der Regel."],
+      ["Identitätsschutz", "Alltagspraktiken werden als Angriff auf die eigene Lebensweise erlebt."],
+    ],
+    games: [
+      "Jede Steuerung wird als Verbot gerahmt.",
+      "Regeln werden emotional personalisiert: Die wollen dir etwas wegnehmen.",
+      "Verhältnismäßigkeit verschwindet aus der Debatte.",
+    ],
+    counter:
+      "Nicht das Wort Verbot spiegeln. Nach Freiheit, Schutz und Wirkung fragen: Welche Regel schützt wen, vor welchem Schaden, mit welcher mildesten wirksamen Maßnahme?",
+  },
+  elitenverschwoerung: {
+    effects: [
+      ["Mustererkennung unter Unsicherheit", "Komplexe Ereignisse werden zu absichtsvollen Mustern verbunden."],
+      ["Misstrauensspirale", "Jede Quelle wird nach Zugehörigkeit statt nach Belegqualität bewertet."],
+      ["Immunisierung gegen Gegenbeweise", "Widerspruch wird als Beweis für die Verschwörung gelesen."],
+    ],
+    games: [
+      "Reale Machtfragen werden in ein geschlossenes Weltbild überführt.",
+      "Belege werden durch Verdacht ersetzt.",
+      "Die Gegenseite soll endlos beweisen, dass es keinen geheimen Plan gibt.",
+    ],
+    counter:
+      "Machtkritik behalten, Verschwörungslogik stoppen: Welche konkrete Entscheidung, welches Dokument, welcher Geldfluss, welche Kontrolle?",
+  },
+  wissenschaftsdelegitimierung: {
+    effects: [
+      ["Motivated Reasoning", "Daten werden danach bewertet, ob sie zur gewünschten Schlussfolgerung passen."],
+      ["Bestätigungsfehler", "Einzelne Fehler werden als Beweis gegen das gesamte Verfahren gelesen."],
+      ["Dunning-Kruger-Effekt", "Komplexe Methoden werden unterschätzt, einfache Gegenbehauptungen überschätzt."],
+    ],
+    games: [
+      "Aus Fehlerfähigkeit wird Beliebigkeit gemacht.",
+      "Einzelne Studienkritik wird zur pauschalen Korruptionsbehauptung.",
+      "Unsicherheit wird als Nichtwissen oder Betrug gerahmt.",
+    ],
+    counter:
+      "Nicht Wissenschaft als Autorität verteidigen, sondern Verfahren erklären: Welche Studie, welche Methode, welche Daten, welche Replikation, welcher Interessenkonflikt?",
+  },
+  medienfeindbild: {
+    effects: [
+      ["Feindbildbindung", "Misstrauen wird an eine ganze Berufsgruppe geknüpft."],
+      ["Selektive Wahrnehmung", "Fehler bestätigen das Feindbild, Korrekturen werden ignoriert."],
+      ["Hostile-Media-Effekt", "Berichterstattung wirkt parteiisch, wenn sie der eigenen Haltung widerspricht."],
+    ],
+    games: [
+      "Medienkritik wird in Medienverachtung verwandelt.",
+      "Alle Quellen werden pauschal delegitimiert, außer die eigene Echokammer.",
+      "Korrekturverfahren werden als Tarnung abgewertet.",
+    ],
+    counter:
+      "Medienkritik konkret machen: Welcher Artikel, welche Quelle, welcher Fehler, welche Korrektur? Pauschalurteile verlassen, Quellenqualität prüfen.",
+  },
+  opferumkehr: {
+    effects: [
+      ["Reaktanz", "Widerspruch wird als Freiheitsbedrohung erlebt."],
+      ["Moral Licensing", "Die eigene Provokation wirkt legitim, weil man sich als Opfer sieht."],
+      ["Kränkungsabwehr", "Kritik wird nicht sachlich geprüft, sondern als Angriff auf die Person erlebt."],
+    ],
+    games: [
+      "Kritik wird zu Unterdrückung umgedeutet.",
+      "Die Wirkung der eigenen Aussage verschwindet hinter dem verletzten Selbstbild.",
+      "Andere sollen sich für Widerspruch rechtfertigen.",
+    ],
+    counter:
+      "Ruhig trennen: Du darfst das sagen, andere dürfen widersprechen. Meinungsfreiheit schützt vor staatlicher Unterdrückung, nicht vor Kritik.",
+  },
+  whataboutism: {
+    effects: [
+      ["Aufmerksamkeitsumlenkung", "Die konkrete Frage wird durch einen anderen Missstand verdrängt."],
+      ["Moralischer Ausgleich", "Eigene Verantwortung wirkt kleiner, weil andere ebenfalls Probleme haben."],
+      ["Kognitive Entlastung", "Ein unbequemer Handlungsdruck wird durch Vergleich reduziert."],
+    ],
+    games: [
+      "Vom konkreten Hebel wird auf ein anderes Problem ausgewichen.",
+      "Vergleich ersetzt Verantwortung.",
+      "Wer beim Thema bleibt, soll einseitig wirken.",
+    ],
+    counter:
+      "Vergleich anerkennen, Thema halten: Ja, auch dort gibt es Verantwortung. Welche Verantwortung liegt hier, heute, bei uns?",
+  },
+  scheiternsframe: {
+    effects: [
+      ["Negativitätsbias", "Fehler und Rückschläge werden stärker erinnert als Fortschritte."],
+      ["Selbsterfüllende Erwartung", "Wer Scheitern erwartet, investiert weniger in Lösung und Korrektur."],
+      ["Demoralisierung", "Komplexe Lernprozesse wirken wie endgültiges Versagen."],
+    ],
+    games: [
+      "Jeder Fehler wird zum Beweis für das Scheitern des ganzen Pfads.",
+      "Lernen, Nachsteuern und Korrektur werden ausgeblendet.",
+      "Die Alternative muss nicht denselben Prüfmaßstab erfüllen.",
+    ],
+    counter:
+      "Nicht Erfolg behaupten, sondern Lernstand prüfen: Was funktioniert, was nicht, was wird korrigiert, und was kostet der alte Pfad?",
+  },
+  "technikwunder-aufschub": {
+    effects: [
+      ["Optimismusbias", "Künftige Lösungen werden wahrscheinlicher und schneller angenommen, als sie sind."],
+      ["Present Bias", "Heute nichts ändern fühlt sich leichter an als verfügbare, aber unbequeme Maßnahmen."],
+      ["Magisches Denken", "Technologie wird als Erlösung erzählt, nicht als Pfad mit Zeit, Kosten und Nebenwirkungen."],
+    ],
+    games: [
+      "Zukunftstechnologie wird genutzt, um Gegenwartspflichten zu verschieben.",
+      "Potenzial wird mit realer Wirkung verwechselt.",
+      "Opportunitätskosten der Wartezeit verschwinden.",
+    ],
+    counter:
+      "Technik ernst nehmen, aber nach Pfad fragen: Was wirkt bis wann, in welcher Größenordnung, mit welchen Kosten und Nebenwirkungen?",
+  },
+  normalisierung: {
+    effects: [
+      ["Desensibilisierung", "Wiederholung senkt die Empfindlichkeit für Grenzverschiebungen."],
+      ["Normverschiebung", "Was gestern extrem war, wirkt morgen normaler."],
+      ["Pluralistische Ignoranz", "Menschen unterschätzen, wie viele andere die Grenzverschiebung ablehnen."],
+    ],
+    games: [
+      "Grenzüberschreitungen werden als bloße Meinung gerahmt.",
+      "Wiederholung macht die Aussage vertraut.",
+      "Kritik wirkt überempfindlich, weil die Grenze langsam verschoben wurde.",
+    ],
+    counter:
+      "Grenze ruhig benennen, ohne Drama zu inszenieren: Welche Norm wird verschoben, wen trifft das, und welche demokratische Regel schützt hier?",
+  },
+  "co2-preis-abzocke": {
+    effects: [
+      ["Verlustaversion", "Sichtbare Kosten wirken stärker als vermiedene Schäden."],
+      ["Salienz-Bias", "Der Preis an der Rechnung ist sichtbar, fossile Folgekosten sind verstreut."],
+      ["Fairness-Heuristik", "Belastung wird als ungerecht erlebt, wenn Rückverteilung und Systemkosten fehlen."],
+    ],
+    games: [
+      "Nur neue Kosten werden gezeigt, alte externe Kosten verschwinden.",
+      "Politik wird als Abzocker erzählt statt als Rückkopplung von Folgekosten.",
+      "Verteilungsfragen werden gegen Klimawirkung ausgespielt.",
+    ],
+    counter:
+      "Kostenbild vollständig machen: Welche Kosten sind sichtbar, welche wurden bisher ausgelagert, wer zahlt sie, und wie wird sozial rückverteilt?",
+  },
+  zersetzung: {
+    effects: [
+      ["Zynismusspirale", "Wenn alles als korrupt gilt, erscheint demokratische Korrektur sinnlos."],
+      ["Institutionelles Misstrauen", "Fehler werden nicht als korrigierbar, sondern als Systembeweis gelesen."],
+      ["Radikalisierungsbereitschaft", "Wenn Institutionen illegitim wirken, erscheinen härtere Mittel plausibler."],
+    ],
+    games: [
+      "Kritik wird nicht zur Verbesserung genutzt, sondern zur pauschalen Delegitimierung.",
+      "Institutionelle Verfahren werden als Fassade erzählt.",
+      "Kompromiss und Korrektur wirken wie Schwäche.",
+    ],
+    counter:
+      "Kritik konkretisieren und Korrekturwege zeigen: Welcher Fehler, welche Kontrolle, welche Reform, welches rechtsstaatliche Verfahren?",
+  },
+};
+
+function psychologyProfile(item) {
+  return psychologyProfiles[item.slug] || defaultPsychologyProfile;
+}
+
+function renderPsychologySection(item) {
+  const profile = psychologyProfile(item);
+  return `<h2 id="psychologie">Psychologische Effekte und Gegenstrategie</h2>
+            <p>Dieses Narrativ wirkt nicht nur über Fakten, sondern über psychologische Abkürzungen. Entscheidend ist, den Mechanismus sichtbar zu machen, ohne ihn unnötig zu verstärken.</p>
+            <div class="card-grid radar-psychology-grid">
+              ${profile.effects
+                .map(
+                  ([label, text]) => `<article class="card radar-psychology-card">
+                <p class="card-kicker">Psychologischer Effekt</p>
+                <h3 class="card-title">${escapeHtml(label)}</h3>
+                <p class="card-text">${escapeHtml(text)}</p>
+              </article>`
+                )
+                .join("\n              ")}
+            </div>
+            <div class="card-grid two radar-psychology-practice">
+              <article class="card">
+                <p class="card-kicker">Psychologisches Spielchen</p>
+                <h3 class="card-title">So wird die Debatte verschoben</h3>
+                <ul class="clean-list">${profile.games.map((game) => `<li>${escapeHtml(game)}</li>`).join("")}</ul>
+              </article>
+              <article class="card">
+                <p class="card-kicker">Oberhand gewinnen</p>
+                <h3 class="card-title">So umgehst du den Trigger</h3>
+                <p class="card-text">${escapeHtml(profile.counter)}</p>
+                <p class="card-text"><strong>Merksatz:</strong> Nicht spiegeln, nicht beschämen, nicht ausweichen. Mechanismus markieren, wahren Kern retten, Wirkungspfad zurückholen.</p>
+              </article>
+            </div>`;
+}
+
 function renderDetail(item) {
   const related = item.related
     .map((slug) => narratives.find((candidate) => candidate.slug === slug))
@@ -1747,6 +2054,7 @@ function renderDetail(item) {
               <li><a href="#definition">Definition</a></li>
               <li><a href="#typische-saetze">Typische Sätze</a></li>
               <li><a href="#wirkungspfad">Wirkungspfad</a></li>
+              <li><a href="#psychologie">Psychologische Effekte</a></li>
               <li><a href="#mpd">Mensch, Planet, Demokratie</a></li>
               <li><a href="#host-antworten">Host-Antworten</a></li>
               <li><a href="#stoeckchen">Nicht ins Stöckchen springen</a></li>
@@ -1771,6 +2079,8 @@ function renderDetail(item) {
                 .map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`)
                 .join("\n              ")}
             </ol>
+
+            ${renderPsychologySection(item)}
 
             <h2 id="mpd">Bewertung nach Mensch, Planet und Demokratie</h2>
             ${summaryGrid(
@@ -1956,6 +2266,7 @@ function dataModel() {
         dont_do: item.dontDo,
         redirect_question: item.redirectQuestion,
       },
+      psychology: psychologyProfile(item),
       links: {
         self: `/wirkungsradar/narrative/${item.slug}/`,
         related: item.related.map((slug) => `/wirkungsradar/narrative/${slug}/`),
