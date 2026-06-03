@@ -256,7 +256,49 @@ def sanitize_markdown(text: str) -> str:
         out.append(stripped)
     result = "\n".join(out)
     result = re.sub(r"\n{3,}", "\n\n", result)
-    return result.strip()
+    return strip_import_scaffold(result)
+
+
+def strip_import_scaffold(text: str) -> str:
+    """Remove document-cover scaffolding that is already rendered by the page template."""
+    lines = text.split("\n")
+    toc_index = None
+    for index, line in enumerate(lines):
+        stripped = line.strip().strip("# ").strip()
+        if stripped.lower() == "inhaltsverzeichnis":
+            toc_index = index
+            break
+    if toc_index is not None:
+        for index in range(toc_index + 1, len(lines)):
+            stripped = lines[index].strip()
+            if re.match(r"^#{1,4}\s+\d+[\.)]?\s+\S", stripped):
+                return "\n".join(lines[index:]).strip()
+    # Fallback for imports without numbered sections: remove cover/scaffold headings
+    # and their short explanatory blocks before rendering the public page body.
+    scaffold = re.compile(
+        r"^#{1,4}\s+(?:Wirkungsökonomie|WOeK\b.*|Inhaltsverzeichnis|Dokumentlogik|Kurzfassung|Detailkonzept\b.*|Konzeptpapier\b.*)\s*$",
+        re.I,
+    )
+    cleaned: list[str] = []
+    skip_until_heading = False
+    for line in lines:
+        stripped = line.strip()
+        if scaffold.match(stripped):
+            skip_until_heading = bool(re.search(r"Inhaltsverzeichnis|Dokumentlogik|Kurzfassung", stripped, re.I))
+            continue
+        if skip_until_heading:
+            if not stripped:
+                continue
+            if stripped.startswith("#"):
+                skip_until_heading = False
+            else:
+                continue
+        cleaned.append(line)
+    cleaned_lines = "\n".join(cleaned).split("\n")
+    for index, line in enumerate(cleaned_lines):
+        if re.match(r"^#{1,4}\s+\d+[\.)]?\s+\S", line.strip()):
+            return "\n".join(cleaned_lines[index:]).strip()
+    return "\n".join(cleaned_lines).strip()
 
 
 def slugify(value: str) -> str:
@@ -688,9 +730,9 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
       <p class="print-meta">Wirkungsökonomie · Rang 17 Digitalisierung, KI und Wirkungsdatenräume · {canonical} · Druckdatum: 2026-05-25</p>
       <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / <a href="{href(prefix, PORTAL_REL + '/')}">Digitalisierung, KI und Wirkungsdatenräume</a></nav><p class="hero-kicker">Wirkungsökonomie</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#onlinefassung">Online lesen</a>{pdf_button}{docx_button}</div></div><aside class="card"><p class="card-kicker">Dokument</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>{meta_bits}</dl><p class="card-text">Öffentliche Lesefassung. Downloads ergänzen den Onlinezugang.</p></aside></div></section>
       <section class="section"><div class="card"><p class="hero-kicker">Wirkungslogik</p><h2>Digitalisierung als Rückkopplungsinfrastruktur</h2><p>Wirkung ist neutral und relational: Sie beschreibt tatsächliche Zustandsveränderungen. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>Digitalisierung wird hier nicht als Technik-Utopie verstanden, sondern als Infrastruktur für Transparenz, Auditierbarkeit, demokratische Kontrolle, Datenschutz und resiliente Steuerung komplexer Systeme.</p><p><strong>Schutzlinie:</strong> Keine Verhaltensüberwachung, keine Personenbewertung, keine Social-Credit-Logik.</p></div></section>
-      <section class="section no-print"><div class="article-reader-stack"><details class="card toc-card reader-toc-card" open><summary>Inhaltsverzeichnis</summary>{toc_html(toc)}<div class="portal-side-links">{side_nav(entries, prefix)}</div></details><article class="card reader-download-card"><p class="hero-kicker">Download</p><h2>Online lesen und exportieren</h2><p>Der vollständige Text steht auf dieser Seite. PDF und DOCX öffnen in einem neuen Tab.</p>{pdf_button}{docx_button}</article></div></section>
+      <section class="section no-print"><div class="article-reader-stack"><details class="card toc-card reader-toc-card" open><summary>Inhaltsverzeichnis</summary>{toc_html(toc)}<div class="portal-side-links">{side_nav(entries, prefix)}</div></details><div class="reader-download-inline"><p><strong>Downloads:</strong> Downloads öffnen in einem neuen Tab.</p><div class="hero-actions">{pdf_button}{docx_button}</div></div></div></section>
       {portal_sections}
-      <section class="section" id="onlinefassung"><article class="prose-card">{body}</article></section>
+      <section class="section" id="onlinefassung"><article class="article-body prose-card portal-longform">{body}</article></section>
       {sdg_block(prefix)}
       {policy_block()}
       <section class="section" id="toolkarten-kontext"><div class="section-header"><p class="hero-kicker">Werkzeuge</p><h2>Kontextbezogene Toolkarten</h2></div>{tool_cards(prefix)}</section>

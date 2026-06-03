@@ -5505,8 +5505,7 @@ textarea {
   margin-inline: auto;
 }
 
-.article-reader-stack .toc-card,
-.article-reader-stack .reader-download-card {
+.article-reader-stack .toc-card {
   width: 100%;
 }
 
@@ -5522,8 +5521,53 @@ textarea {
   margin-top: 1rem;
 }
 
-.reader-download-card {
+.reader-download-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
   border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.reader-download-inline p {
+  margin: 0;
+}
+
+.reader-download-inline .hero-actions {
+  margin: 0;
+}
+
+.portal-longform {
+  max-width: 76ch;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.portal-longform h2:first-child,
+.portal-longform h3:first-child {
+  margin-top: 0;
+}
+
+.portal-longform h2,
+.portal-longform h3,
+.portal-longform h4 {
+  text-wrap: balance;
+}
+
+.portal-longform ol,
+.portal-longform ul {
+  padding-left: 1.35rem;
+}
+
+.portal-longform li + li {
+  margin-top: 0.35rem;
 }
 
 .article-body h2[id],
@@ -12347,15 +12391,7 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 
-/* Rang 15 Migration & Vielfalt */
-.reading-layout {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 0.65fr);
-  gap: 1rem;
-}
-.side-nav .model-strip {
-  margin-top: 1rem;
-}
+/* Portal reader */
 .toc-card {
   border: 1px solid rgba(12, 18, 34, 0.12);
   border-radius: 8px;
@@ -12403,9 +12439,6 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   color: var(--navy);
 }
 @media (max-width: 860px) {
-  .reading-layout {
-    grid-template-columns: 1fr;
-  }
   .toc-card:not([open]) {
     margin-bottom: 0;
   }
