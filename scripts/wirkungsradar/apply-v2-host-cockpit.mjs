@@ -98,17 +98,17 @@ const overrides = {
   "schulden-machen-oder-sparen": {
     short: "Wahrer Stabilitätskern, falsche Haushaltsanalogie.",
     say:
-      "Nicht jede Schuld ist schlecht und nicht jedes Sparen ist gut. Entscheidend ist: Erzeugt das Geld Zukunftswirkung - oder finanziert es Blindleistung?",
+      "Der Steuerzahler zahlt Staatsschulden nicht wie einen Privatkredit zurück. Der Staat refinanziert fällige Anleihen. Entscheidend ist, ob Schulden Zukunftswirkung erzeugen.",
     live:
-      "Der wahre Kern ist: Schulden können gefährlich werden, wenn sie Konsum, Haushaltslöcher oder Wahlgeschenke finanzieren. Der Denkfehler ist, Investitionen in Brücken, Schulen, Netze, Klima, Digitalisierung oder Pflege wie private Konsumschulden zu behandeln. Entscheidend ist: Was kostet Unterlassen, und welche Ausgabe erzeugt positive Netto-Wirkung?",
+      "Der wahre Kern ist: Zinsen und Tragfähigkeit sind wichtig. Der Denkfehler ist, Staatsschulden wie private Haushaltskredite zu erzählen. Der Staat rollt fällige Anleihen in der Regel über neue Anleihen weiter. Schädlich sind Schulden dann, wenn sie Blindleistung finanzieren. Wirtschaftsschädlich kann aber auch die Schwarze Null sein, wenn sie Investitionen verhindert.",
     panel:
-      "Staatsschulden sind nicht egal. Zinsen, Tragfähigkeit und Generationengerechtigkeit sind reale Fragen. Aber der Staat ist kein Privathaushalt. Wenn er Schulen saniert, Netze ausbaut, Brücken repariert, Klimaschäden verhindert oder Pflege stabilisiert, entsteht Zukunftswirkung. Wenn er das unterlässt, verschwindet die Rechnung nicht. Sie kommt später als kaputte Infrastruktur, schlechtere Bildung, höhere Klimaschäden, geringere Produktivität, soziale Spaltung und Vertrauensverlust zurück. Die bessere Frage lautet deshalb: Welche Ausgabe verbessert Zustände messbar, welche Folgekosten vermeidet sie, und welche Ausgaben sind Blindleistung?",
-    exampleTitle: "Brücke oder Wahlgeschenk",
+      "Bürger:innen zahlen Staatsschulden nicht wie einen Privatkredit zurück. Der Bund gibt Anleihen aus; wenn alte Anleihen fällig werden, werden sie häufig durch neue Anleihen refinanziert. Das heißt nicht, dass Schulden egal sind. Zinsen, Vertrauen, Bonität und Mittelverwendung sind real. Aber die Vorstellung, der Steuerzahler müsse irgendwann die ganze Staatsschuld wie eine private Rechnung begleichen, ist eine Nebelkerze. Entscheidend ist: Was macht der Staat mit dem Geld? Wenn Schulden Brücken, Schulen, Netze, Digitalisierung, Klimaanpassung und Produktivität finanzieren, können sie Zukunft ermöglichen. Wenn die Schwarze Null dagegen Investitionen verhindert, wird sie wirtschaftsfeindlich, weil sie Unterlassungsschulden erzeugt.",
+    exampleTitle: "Refinanzierung statt Familienkredit",
     example:
-      "Eine kaputte Brücke nicht zu reparieren sieht im Haushalt kurzfristig sparsam aus. Später kostet sie mehr: Sperrung, Umwege, Reparatur, Produktivitätsverlust und Vertrauensschaden.",
-    question: "Redest du von Schulden für Konsum und Haushaltslöcher - oder von Investitionen, die künftige Schäden und Kosten vermeiden?",
-    oldFrame: "Schulden machen oder sparen - und damit sei die Sache erledigt.",
-    better: "Nicht Schulden oder Sparen entscheidet, sondern Wirkung oder Blindleistung.",
+      "Eine fällige Bundesanleihe wird formal zurückgezahlt. Praktisch kann der Bund dafür neue Anleihen begeben. Belastend sind dann nicht eine private Gesamtrechnung, sondern Zinslast, Vertrauen, Tragfähigkeit und die Frage, ob das Geld Wirkung erzeugt hat.",
+    question: "Geht es dir um Zinsen und Tragfähigkeit - oder benutzt du gerade die Privatkredit-Analogie, die bei Staaten nicht passt?",
+    oldFrame: "Staatsschulden seien wie ein Familienkredit, den Bürger:innen später komplett tilgen müssten.",
+    better: "Staatsschulden anders erklären: Refinanzierung, Zinslast, Tragfähigkeit und Wirkung der Ausgaben.",
   },
   "windraeder-voegel-wald-beton-rueckbau": {
     claim: "Windräder zerstören Natur, sind Sondermüll und wegen SF₆ gar nicht klimafreundlich.",
