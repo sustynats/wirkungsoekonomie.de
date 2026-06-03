@@ -51,16 +51,7 @@ function sentence(value, max = 220) {
 }
 
 function hostLanguage(value) {
-  return stripHtml(value)
-    .replace(/\bwirkungsökonomisch\b/gi, "wenn man die Folgen mitdenkt")
-    .replace(/\bWirkungsökonomie\b/g, "diese Prüfung")
-    .replace(/\bWÖk\b/g, "die Prüfung")
-    .replace(/\bpositive Netto-Wirkung\b/gi, "am Ende wird es besser")
-    .replace(/\bWirkungspfad\b/gi, "Was passiert danach")
-    .replace(/\bWirkstoff\b/gi, "Trick im Satz")
-    .replace(/\bBilanzgrenze\b/gi, "was mitgezählt wird")
-    .replace(/\bSDG\+?\b/g, "Ziele")
-    .replace(/\bT-SROI\b/g, "Wirkungsrechnung");
+  return stripHtml(value);
 }
 
 const overrides = {
@@ -103,6 +94,21 @@ const overrides = {
   "klimaschutz-deindustrialisiert-deutschland": {
     short: "Echter Druck, falscher Niedergangsframe.",
     question: "Reden wir über Standortprobleme oder über die Geschichte, dass Klimaschutz Industrie zerstört?",
+  },
+  "schulden-machen-oder-sparen": {
+    short: "Wahrer Stabilitätskern, falsche Haushaltsanalogie.",
+    say:
+      "Nicht jede Schuld ist schlecht und nicht jedes Sparen ist gut. Entscheidend ist: Erzeugt das Geld Zukunftswirkung - oder finanziert es Blindleistung?",
+    live:
+      "Der wahre Kern ist: Schulden können gefährlich werden, wenn sie Konsum, Haushaltslöcher oder Wahlgeschenke finanzieren. Der Denkfehler ist, Investitionen in Brücken, Schulen, Netze, Klima, Digitalisierung oder Pflege wie private Konsumschulden zu behandeln. Entscheidend ist: Was kostet Unterlassen, und welche Ausgabe erzeugt positive Netto-Wirkung?",
+    panel:
+      "Staatsschulden sind nicht egal. Zinsen, Tragfähigkeit und Generationengerechtigkeit sind reale Fragen. Aber der Staat ist kein Privathaushalt. Wenn er Schulen saniert, Netze ausbaut, Brücken repariert, Klimaschäden verhindert oder Pflege stabilisiert, entsteht Zukunftswirkung. Wenn er das unterlässt, verschwindet die Rechnung nicht. Sie kommt später als kaputte Infrastruktur, schlechtere Bildung, höhere Klimaschäden, geringere Produktivität, soziale Spaltung und Vertrauensverlust zurück. Die bessere Frage lautet deshalb: Welche Ausgabe verbessert Zustände messbar, welche Folgekosten vermeidet sie, und welche Ausgaben sind Blindleistung?",
+    exampleTitle: "Brücke oder Wahlgeschenk",
+    example:
+      "Eine kaputte Brücke nicht zu reparieren sieht im Haushalt kurzfristig sparsam aus. Später kostet sie mehr: Sperrung, Umwege, Reparatur, Produktivitätsverlust und Vertrauensschaden.",
+    question: "Redest du von Schulden für Konsum und Haushaltslöcher - oder von Investitionen, die künftige Schäden und Kosten vermeiden?",
+    oldFrame: "Schulden machen oder sparen - und damit sei die Sache erledigt.",
+    better: "Nicht Schulden oder Sparen entscheidet, sondern Wirkung oder Blindleistung.",
   },
 };
 
@@ -289,8 +295,8 @@ function buildData(slug, html) {
     claim,
     short: override.short || shortText(judgement, 90),
     say: override.say || shortText(answer, 260),
-    live: shortText(thirty, 520),
-    panel: shortText(two, 900),
+    live: override.live || shortText(thirty, 520),
+    panel: override.panel || shortText(two, 900),
     exampleTitle: override.exampleTitle || "Das einfache Bild",
     example: override.example || sentence(firstMatch(html, /<p class="radar-abstract">([\s\S]*?)<\/p>/i) || answer, 520),
     question: override.question || shortText(firstMatch(html, /<p class="card-kicker">Gute Rückfrage<\/p>[\s\S]*?<p class="card-text">([\s\S]*?)<\/p>/i) || "Was wird hier mitgezählt, und was bleibt unsichtbar?", 180),
@@ -360,4 +366,3 @@ for (const file of walkLivePages()) {
 }
 
 console.log(`Applied Wirkungsradar v2 Host-Cockpit to ${changed} live pages.`);
-

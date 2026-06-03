@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T20:13:21.389Z",
+  "generatedAt": "2026-06-03T20:53:35.071Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -8949,6 +8949,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "finanzschuld": {
+      "label": "Finanzschuld",
+      "slug": "finanzschuld",
+      "url": "/begriffe/finanzschuld/",
+      "hoverDefinition": "Finanzschulden sind sichtbar und messbar, sagen aber allein noch nichts über die Wirkung der finanzierten Ausgaben.",
+      "shortDefinition": "Formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Finanzschuld",
+        "Staatsschuld",
+        "öffentliche Verschuldung",
+        "oeffentliche Verschuldung"
+      ],
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "wirkungshaushalt",
+        "generationenbilanz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "relatedObjections": []
+    },
     "fit-for-55": {
       "label": "Fit for 55",
       "slug": "fit-for-55",
@@ -10017,6 +10043,32 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "generationenbilanz": {
+      "label": "Generationenbilanz",
+      "slug": "generationenbilanz",
+      "url": "/begriffe/generationenbilanz/",
+      "hoverDefinition": "Generationengerechtigkeit ist mehr als Schuldenstand.",
+      "shortDefinition": "Gesamtbewertung dessen, was eine Generation hinterlässt: Finanzschulden, Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat und Demokratie.",
+      "category": "Bewertungsbegriff",
+      "synonyms": [
+        "Generationenbilanz",
+        "intergenerationelle Wirkungsbilanz",
+        "Zukunftsbilanz"
+      ],
+      "relatedTerms": [
+        "finanzschuld",
+        "unterlassungsschuld",
+        "investitionsschuld",
+        "intertemporale-freiheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "relatedObjections": []
     },
     "generationengerechtigkeit": {
@@ -11273,6 +11325,32 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "goldene-wirkungsregel": {
+      "label": "Goldene Wirkungsregel",
+      "slug": "goldene-wirkungsregel",
+      "url": "/begriffe/goldene-wirkungsregel/",
+      "hoverDefinition": "Nicht jede Investition ist gut. Aber jede kreditfinanzierte Ausgabe braucht eine Wirkungsprüfung.",
+      "shortDefinition": "Prinzip, nach dem Kreditfinanzierung nur für Ausgaben zulässig ist, die positive Netto-Wirkung, Resilienz oder Folgekostenvermeidung erzeugen.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Goldene Wirkungsregel",
+        "Wirkungsregel für Kreditfinanzierung",
+        "goldene Investitionsregel nach Wirkung"
+      ],
+      "relatedTerms": [
+        "t-sroi",
+        "positive-netto-wirkung",
+        "wirkungshaushalt",
+        "blindleistung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "relatedObjections": []
     },
     "gongo": {
@@ -13978,6 +14056,32 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "investitionsschuld": {
+      "label": "Investitionsschuld",
+      "slug": "investitionsschuld",
+      "url": "/begriffe/investitionsschuld/",
+      "hoverDefinition": "Investitionsschuld entsteht, wenn Substanzverzehr als Sparsamkeit erscheint.",
+      "shortDefinition": "Rückstand an notwendigen Investitionen in Infrastruktur, Bildung, Klima, Digitalisierung, Gesundheit oder Sicherheit.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Investitionsschuld",
+        "Investitionsrückstand",
+        "Investitionsrueckstand",
+        "Infrastrukturschuld"
+      ],
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "generationenbilanz",
+        "wirkungshaushalt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "relatedObjections": []
     },
     "ipbes": {
@@ -32265,6 +32369,33 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "relatedObjections": []
+    },
+    "unterlassungsschuld": {
+      "label": "Unterlassungsschuld",
+      "slug": "unterlassungsschuld",
+      "url": "/begriffe/unterlassungsschuld/",
+      "hoverDefinition": "Kaputte Brücken, Klimaschäden, Bildungsdefizite oder digitale Rückstände sind Formen von Unterlassungsschuld.",
+      "shortDefinition": "Verdeckte Zukunftslast, die entsteht, wenn notwendige Investitionen oder Prävention unterbleiben.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Unterlassungsschuld",
+        "Zukunftsschuld",
+        "verdeckte Schuld",
+        "Nicht-Handlungs-Schuld"
+      ],
+      "relatedTerms": [
+        "finanzschuld",
+        "investitionsschuld",
+        "wirkungsrisiko",
+        "generationenbilanz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
       ],
       "relatedObjections": []
     },

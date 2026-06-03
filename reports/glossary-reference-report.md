@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-03T20:14:38.128Z
+- Generated: 2026-06-03T20:55:01.560Z
 - Content pages scanned: 1005
-- Glossary terms indexed: 1306
-- Warnings: 551
+- Glossary terms indexed: 1311
+- Warnings: 555
 
 ## Stichproben
 
@@ -189,6 +189,7 @@
 - term has no content references: fernwirktechnik
 - term has no content references: feststoffbatterie
 - term has no content references: finanzmarktkapitalismus
+- term has no content references: finanzschuld
 - term has no content references: fit-for-55
 - term has no content references: flexibilitaetsmarkt
 - term has no content references: fossiles-kraftwerk
@@ -217,6 +218,7 @@
 - term has no content references: global-warming-potential
 - term has no content references: glossar-backlink-audit
 - term has no content references: glossar-publizierungsprozess
+- term has no content references: goldene-wirkungsregel
 - term has no content references: gongo
 - term has no content references: grassroots-bewegung
 - term has no content references: grauer-wasserstoff
@@ -250,6 +252,7 @@
 - term has no content references: institutionendelegitimierung
 - term has no content references: institutionenkritik
 - term has no content references: intertemporale-freiheit
+- term has no content references: investitionsschuld
 - term has no content references: jobs-to-be-done
 - term has no content references: kannibalisierungseffekt
 - term has no content references: kapazitaetsmarkt
@@ -356,7 +359,4 @@
 - term has no content references: netzwerkeffekt
 - term has no content references: neuigkeitsbias
 - term has no content references: neuroplastizitaet
-- term has no content references: neuropsychologische-wirkmechanismen
-- term has no content references: nfrd
-- term has no content references: ngo-capture
-- ... 251 weitere Warnungen
+- ... 255 weitere Warnungen

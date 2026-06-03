@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T20:14:38.955Z
-Resolved references: 6478
-Warnings: 812
+Erzeugt: 2026-06-03T20:55:02.597Z
+Resolved references: 6486
+Warnings: 817
 
 ## Warnungen
 
@@ -181,6 +181,7 @@ Warnings: 812
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
@@ -199,6 +200,7 @@ Warnings: 812
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wirkungsfonds-gesundheit-pflege - Titel aus Slug erzeugt
@@ -221,6 +223,7 @@ Warnings: 812
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
@@ -242,6 +245,7 @@ Warnings: 812
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
@@ -502,10 +506,6 @@ Warnings: 812
 - [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
 
 ## Aufgelöste Verweise
 

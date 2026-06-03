@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T20:13:21.214Z",
+  "generatedAt": "2026-06-03T20:53:34.864Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -87876,6 +87876,57 @@
       "priority": 289
     },
     {
+      "id": "finanzschuld",
+      "termId": "finanzschuld",
+      "label": "Finanzschuld",
+      "canonicalLabel": "Finanzschuld",
+      "slug": "finanzschuld",
+      "aliases": [
+        "Finanzschuld",
+        "Staatsschuld",
+        "öffentliche Verschuldung",
+        "oeffentliche Verschuldung"
+      ],
+      "shortDefinition": "Formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite.",
+      "definition": "Finanzschuld bezeichnet die formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite. Sie ist wichtig für Zinslast, Tragfähigkeit und Vertrauen, sagt allein aber noch nichts darüber aus, ob die finanzierten Ausgaben positive Netto-Wirkung erzeugen.",
+      "hoverDefinition": "Finanzschulden sind sichtbar und messbar, sagen aber allein noch nichts über die Wirkung der finanzierten Ausgaben.",
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
+      "category": "Steuerungsbegriff",
+      "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "wirkungshaushalt",
+        "generationenbilanz"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "usageNote": "Finanzschuld immer von Investitionsschuld und Unterlassungsschuld unterscheiden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "finanzschuld",
+      "lastUpdated": "2026-06-03",
+      "synonyms": [
+        "Finanzschuld",
+        "Staatsschuld",
+        "öffentliche Verschuldung",
+        "oeffentliche Verschuldung"
+      ],
+      "longDefinition": "Finanzschuld bezeichnet die formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite. Sie ist wichtig für Zinslast, Tragfähigkeit und Vertrauen, sagt allein aber noch nichts darüber aus, ob die finanzierten Ausgaben positive Netto-Wirkung erzeugen.",
+      "woekRelation": "Finanzschuld bezeichnet die formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite. Sie ist wichtig für Zinslast, Tragfähigkeit und Vertrauen, sagt allein aber noch nichts darüber aus, ob die finanzierten Ausgaben positive Netto-Wirkung erzeugen.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/finanzschuld/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1307,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "fit-for-55",
       "termId": "fit-for-55",
       "label": "Fit for 55",
@@ -98093,6 +98144,56 @@
       "glossaryOrderKey": "Gender Pension Gap",
       "dataStandardsGroup": "",
       "priority": 319
+    },
+    {
+      "id": "generationenbilanz",
+      "termId": "generationenbilanz",
+      "label": "Generationenbilanz",
+      "canonicalLabel": "Generationenbilanz",
+      "slug": "generationenbilanz",
+      "aliases": [
+        "Generationenbilanz",
+        "intergenerationelle Wirkungsbilanz",
+        "Zukunftsbilanz"
+      ],
+      "shortDefinition": "Gesamtbewertung dessen, was eine Generation hinterlässt: Finanzschulden, Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat und Demokratie.",
+      "definition": "Generationenbilanz bewertet nicht nur den Schuldenstand, sondern den Zustand der Systeme, die eine Generation hinterlässt: Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat, Sicherheit, Verwaltung, Vertrauen und Demokratie.",
+      "hoverDefinition": "Generationengerechtigkeit ist mehr als Schuldenstand.",
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
+      "category": "Bewertungsbegriff",
+      "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
+      "relatedTerms": [
+        "finanzschuld",
+        "unterlassungsschuld",
+        "investitionsschuld",
+        "intertemporale-freiheit"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "usageNote": "Generationengerechtigkeit breit lesen: Finanzschuld plus Systemzustand.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "generationenbilanz",
+      "lastUpdated": "2026-06-03",
+      "synonyms": [
+        "Generationenbilanz",
+        "intergenerationelle Wirkungsbilanz",
+        "Zukunftsbilanz"
+      ],
+      "longDefinition": "Generationenbilanz bewertet nicht nur den Schuldenstand, sondern den Zustand der Systeme, die eine Generation hinterlässt: Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat, Sicherheit, Verwaltung, Vertrauen und Demokratie.",
+      "woekRelation": "Generationenbilanz bewertet nicht nur den Schuldenstand, sondern den Zustand der Systeme, die eine Generation hinterlässt: Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat, Sicherheit, Verwaltung, Vertrauen und Demokratie.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/generationenbilanz/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1310,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "generationengerechtigkeit",
@@ -110753,6 +110854,56 @@
       "blind_spot": "",
       "dataStandardsGroup": "",
       "priority": 355
+    },
+    {
+      "id": "goldene-wirkungsregel",
+      "termId": "goldene-wirkungsregel",
+      "label": "Goldene Wirkungsregel",
+      "canonicalLabel": "Goldene Wirkungsregel",
+      "slug": "goldene-wirkungsregel",
+      "aliases": [
+        "Goldene Wirkungsregel",
+        "Wirkungsregel für Kreditfinanzierung",
+        "goldene Investitionsregel nach Wirkung"
+      ],
+      "shortDefinition": "Prinzip, nach dem Kreditfinanzierung nur für Ausgaben zulässig ist, die positive Netto-Wirkung, Resilienz oder Folgekostenvermeidung erzeugen.",
+      "definition": "Die Goldene Wirkungsregel ist ein wirkungsökonomisches Prinzip für öffentliche Kreditfinanzierung: Schulden sind nur dann gerechtfertigt, wenn die finanzierten Ausgaben positive Netto-Wirkung, Resilienzgewinn oder nachweisbare Folgekostenvermeidung erzeugen und demokratisch kontrolliert werden.",
+      "hoverDefinition": "Nicht jede Investition ist gut. Aber jede kreditfinanzierte Ausgabe braucht eine Wirkungsprüfung.",
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
+      "category": "Steuerungsbegriff",
+      "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
+      "relatedTerms": [
+        "t-sroi",
+        "positive-netto-wirkung",
+        "wirkungshaushalt",
+        "blindleistung"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "usageNote": "Als Gegenstück zu Schuldenromantik und Sparmoralismus verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "goldene wirkungsregel",
+      "lastUpdated": "2026-06-03",
+      "synonyms": [
+        "Goldene Wirkungsregel",
+        "Wirkungsregel für Kreditfinanzierung",
+        "goldene Investitionsregel nach Wirkung"
+      ],
+      "longDefinition": "Die Goldene Wirkungsregel ist ein wirkungsökonomisches Prinzip für öffentliche Kreditfinanzierung: Schulden sind nur dann gerechtfertigt, wenn die finanzierten Ausgaben positive Netto-Wirkung, Resilienzgewinn oder nachweisbare Folgekostenvermeidung erzeugen und demokratisch kontrolliert werden.",
+      "woekRelation": "Die Goldene Wirkungsregel ist ein wirkungsökonomisches Prinzip für öffentliche Kreditfinanzierung: Schulden sind nur dann gerechtfertigt, wenn die finanzierten Ausgaben positive Netto-Wirkung, Resilienzgewinn oder nachweisbare Folgekostenvermeidung erzeugen und demokratisch kontrolliert werden.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/goldene-wirkungsregel/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1309,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "gongo",
@@ -134291,6 +134442,57 @@
       "glossaryOrderKey": "Intertemporale Freiheit",
       "dataStandardsGroup": "",
       "priority": 444
+    },
+    {
+      "id": "investitionsschuld",
+      "termId": "investitionsschuld",
+      "label": "Investitionsschuld",
+      "canonicalLabel": "Investitionsschuld",
+      "slug": "investitionsschuld",
+      "aliases": [
+        "Investitionsschuld",
+        "Investitionsrückstand",
+        "Investitionsrueckstand",
+        "Infrastrukturschuld"
+      ],
+      "shortDefinition": "Rückstand an notwendigen Investitionen in Infrastruktur, Bildung, Klima, Digitalisierung, Gesundheit oder Sicherheit.",
+      "definition": "Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden.",
+      "hoverDefinition": "Investitionsschuld entsteht, wenn Substanzverzehr als Sparsamkeit erscheint.",
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
+      "category": "Steuerungsbegriff",
+      "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "generationenbilanz",
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "usageNote": "Von kreditfinanzierter Investition unterscheiden: Investitionsschuld ist der Rückstand, nicht das Darlehen.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "investitionsschuld",
+      "lastUpdated": "2026-06-03",
+      "synonyms": [
+        "Investitionsschuld",
+        "Investitionsrückstand",
+        "Investitionsrueckstand",
+        "Infrastrukturschuld"
+      ],
+      "longDefinition": "Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden.",
+      "woekRelation": "Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/investitionsschuld/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1311,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "ipbes",
@@ -316914,6 +317116,58 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "priority": 128
+    },
+    {
+      "id": "unterlassungsschuld",
+      "termId": "unterlassungsschuld",
+      "label": "Unterlassungsschuld",
+      "canonicalLabel": "Unterlassungsschuld",
+      "slug": "unterlassungsschuld",
+      "aliases": [
+        "Unterlassungsschuld",
+        "Zukunftsschuld",
+        "verdeckte Schuld",
+        "Nicht-Handlungs-Schuld"
+      ],
+      "shortDefinition": "Verdeckte Zukunftslast, die entsteht, wenn notwendige Investitionen oder Prävention unterbleiben.",
+      "definition": "Unterlassungsschuld beschreibt verdeckte Zukunftslasten, die entstehen, wenn notwendige Investitionen, Instandhaltung, Prävention oder Transformation unterbleiben. Sie erscheint oft nicht sofort im Haushalt, zeigt sich später aber als höhere Schäden, Reparaturkosten, Produktivitätsverluste oder Vertrauensverlust.",
+      "hoverDefinition": "Kaputte Brücken, Klimaschäden, Bildungsdefizite oder digitale Rückstände sind Formen von Unterlassungsschuld.",
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
+      "category": "Steuerungsbegriff",
+      "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
+      "relatedTerms": [
+        "finanzschuld",
+        "investitionsschuld",
+        "wirkungsrisiko",
+        "generationenbilanz"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "usageNote": "Bei Sparentscheidungen immer die Kosten des Nicht-Handelns bilanzieren.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "unterlassungsschuld",
+      "lastUpdated": "2026-06-03",
+      "synonyms": [
+        "Unterlassungsschuld",
+        "Zukunftsschuld",
+        "verdeckte Schuld",
+        "Nicht-Handlungs-Schuld"
+      ],
+      "longDefinition": "Unterlassungsschuld beschreibt verdeckte Zukunftslasten, die entstehen, wenn notwendige Investitionen, Instandhaltung, Prävention oder Transformation unterbleiben. Sie erscheint oft nicht sofort im Haushalt, zeigt sich später aber als höhere Schäden, Reparaturkosten, Produktivitätsverluste oder Vertrauensverlust.",
+      "woekRelation": "Unterlassungsschuld beschreibt verdeckte Zukunftslasten, die entstehen, wenn notwendige Investitionen, Instandhaltung, Prävention oder Transformation unterbleiben. Sie erscheint oft nicht sofort im Haushalt, zeigt sich später aber als höhere Schäden, Reparaturkosten, Produktivitätsverluste oder Vertrauensverlust.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/unterlassungsschuld/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1308,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "unternehmen-2035",
