@@ -1,0 +1,363 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const ROOT = process.cwd();
+const LIVE_DIR = path.join(ROOT, "wirkungsradar/live");
+const UPDATED_AT = "03.06.2026";
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function stripHtml(value) {
+  return String(value ?? "")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#039;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function cleanClaim(value) {
+  return stripHtml(value)
+    .replace(/[„“"]/g, "")
+    .replace(/\s+-\s+Wirkungsradar.*$/i, "")
+    .trim();
+}
+
+function firstMatch(html, regex) {
+  return regex.exec(html)?.[1] || "";
+}
+
+function shortText(value, max = 220) {
+  const text = stripHtml(value);
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  return `${cut.replace(/\s+\S*$/, "")}…`;
+}
+
+function sentence(value, max = 220) {
+  const text = stripHtml(value);
+  const first = text.match(/(.+?[.!?])\s/)?.[1] || text;
+  return shortText(first, max);
+}
+
+function hostLanguage(value) {
+  return stripHtml(value)
+    .replace(/\bwirkungsökonomisch\b/gi, "wenn man die Folgen mitdenkt")
+    .replace(/\bWirkungsökonomie\b/g, "diese Prüfung")
+    .replace(/\bWÖk\b/g, "die Prüfung")
+    .replace(/\bpositive Netto-Wirkung\b/gi, "am Ende wird es besser")
+    .replace(/\bWirkungspfad\b/gi, "Was passiert danach")
+    .replace(/\bWirkstoff\b/gi, "Trick im Satz")
+    .replace(/\bBilanzgrenze\b/gi, "was mitgezählt wird")
+    .replace(/\bSDG\+?\b/g, "Ziele")
+    .replace(/\bT-SROI\b/g, "Wirkungsrechnung");
+}
+
+const overrides = {
+  "klima-hat-sich-schon-immer-veraendert": {
+    short: "Richtig. Aber kein Entwarnungssatz.",
+    say:
+      "Ja, Klima hat sich immer verändert. Aber unsere Städte, Ernten, Wasserleitungen und Versicherungen sind für das heutige Klima gebaut.",
+    exampleTitle: "Eiszeit ist kein Stadtplan",
+    example:
+      "In Eiszeiten lagen große Teile Nordeuropas unter Eis. Der Planet kommt mit anderem Klima klar. Unsere Städte, Ernten, Kliniken und Bahnlinien nicht automatisch.",
+    question: "Für welches Klima sind unsere Städte, Ernten und Versicherungen gebaut?",
+    oldFrame: "Klima hat sich immer verändert, also ist es harmlos.",
+    better: "Doch, Klima änderte sich. Die Frage ist: Verkraften Menschen und Infrastruktur diese Geschwindigkeit?",
+    impacts: [
+      ["Ernährung", "Ernten hängen an Temperatur und Wasser.", "Supermarktpreise zeigen Klimastress schnell."],
+      ["Gesundheit", "Hitze belastet Körper und Kliniken.", "Besonders Alte, Kinder und Kranke sind betroffen."],
+      ["Infrastruktur", "Straßen und Schienen sind für alte Muster gebaut.", "Hitze verformt Gleise und Asphalt."],
+      ["Versicherung", "Schäden werden teurer.", "Manche Risiken werden schwer versicherbar."],
+      ["Wasser", "Zu viel oder zu wenig Wasser wird zum Standortproblem.", "Dürre und Starkregen treffen dieselbe Region."],
+      ["Demokratie", "Krisenstress macht Gesellschaften anfälliger.", "Wenn Schutz zu spät kommt, wächst Misstrauen."],
+    ],
+  },
+  "e-autos-schlimmer-als-verbrenner": {
+    short: "Nicht perfekt. Aber die Bilanz kippt klar.",
+    exampleTitle: "Der Auspuff ist nur das Ende",
+    example:
+      "Beim Verbrenner kommen vor dem Auspuff Ölquelle, Tanker, Raffinerie und Tankstelle. Danach kommen CO₂, NOx, Lärm und Gesundheitskosten.",
+    question: "Zählst du nur den Akku oder auch Ölimporte, Abgase, Lärm und Abhängigkeit?",
+    oldFrame: "Nur der Akku zählt.",
+    better: "Das E-Auto ist nicht perfekt. Aber es trennt Mobilität Schritt für Schritt vom dauernden Verbrennen.",
+    impacts: [
+      ["Klima", "Verbrennen setzt laufend CO₂ frei.", "Der Akku wird einmal gebaut, Benzin wird ständig verbrannt."],
+      ["Gesundheit", "NOx und Feinstaub belasten Lungen.", "Stadtluft ist auch eine Gesundheitsfrage."],
+      ["Geld", "Jeder Liter bezahlt fossile Lieferketten.", "Importe verlassen die regionale Wertschöpfung."],
+      ["Sicherheit", "Ölimporte schaffen Abhängigkeit.", "Preisschocks treffen Alltag und Industrie."],
+      ["Lärm", "Verkehrslärm stresst Menschen.", "Leisere Antriebe helfen vor allem in Städten."],
+      ["Industrie", "Batterien, Laden und Recycling schaffen neue Ketten.", "Mobilität wird Standortpolitik."],
+    ],
+  },
+  "klimaschutz-deindustrialisiert-deutschland": {
+    short: "Echter Druck, falscher Niedergangsframe.",
+    question: "Reden wir über Standortprobleme oder über die Geschichte, dass Klimaschutz Industrie zerstört?",
+  },
+};
+
+const defaultImpacts = [
+  ["Mensch", "Menschen spüren Folgen im Alltag.", "Preise, Gesundheit, Arbeit oder Sicherheit verändern sich."],
+  ["Geld", "Kosten verschwinden nicht, sie wechseln oft nur den Ort.", "Was heute billig wirkt, kann morgen teuer werden."],
+  ["Infrastruktur", "Entscheidungen bauen Wege, Netze und Gewohnheiten.", "Was gebaut ist, bleibt oft lange."],
+  ["Vertrauen", "Verkürzte Sätze machen Misstrauen größer.", "Dann wird jede Quelle zur Lagerfrage."],
+  ["Demokratie", "Schlechte Frames erschweren faire Entscheidungen.", "Streit wird härter, Lösungen werden langsamer."],
+  ["Zukunft", "Aufschub verengt spätere Optionen.", "Je später wir handeln, desto teurer wird Anpassung."],
+];
+
+function inferImpacts(slug, text) {
+  if (overrides[slug]?.impacts) return overrides[slug].impacts;
+  const lower = text.toLowerCase();
+  const items = [];
+  const add = (label, line, example) => {
+    if (!items.some((item) => item[0] === label)) items.push([label, line, example]);
+  };
+  if (/klima|co₂|co2|energie|wind|batter|e-auto|kern|fusion|industrie/.test(lower)) {
+    add("Klima", "Emissionen und Klimarisiken werden mitgezählt.", "Nicht nur ein Preis zählt, sondern auch spätere Schäden.");
+    add("Energie", "Versorgung, Netze und Preise hängen zusammen.", "Stromrechnung und Industriepreis gehören in dieselbe Debatte.");
+  }
+  if (/auto|mobil|verkehr|verbrenner|batter|laden|lkw/.test(lower)) {
+    add("Gesundheit", "Luftschadstoffe und Lärm wirken direkt.", "Ein Schulweg ist auch eine Gesundheitsfrage.");
+    add("Abhängigkeit", "Öl, Rohstoffe und Lieferketten schaffen Macht.", "Tanker, Pipeline und Raffinerie gehören zur Bilanz.");
+  }
+  if (/medien|zensur|wissenschaft|sdg|social|regierung|demokratie|meinung/.test(lower)) {
+    add("Vertrauen", "Der Satz verändert, wem Menschen glauben.", "Wenn jede Quelle verdächtig ist, wird Prüfung schwer.");
+    add("Demokratie", "Misstrauen kann Regeln und Institutionen schwächen.", "Dann wirkt Kontrolle schnell wie Unterdrückung.");
+  }
+  if (/kosten|preis|geld|steuer|bürgergeld|industrie/.test(lower)) {
+    add("Geld", "Sichtbare Preise verdecken oft Folgekosten.", "Die Rechnung steht nur an einer anderen Stelle.");
+  }
+  defaultImpacts.forEach(([label, line, example]) => add(label, line, example));
+  return items.slice(0, 7);
+}
+
+function extractListAfter(html, heading) {
+  const index = html.toLowerCase().indexOf(heading.toLowerCase());
+  if (index < 0) return [];
+  const part = html.slice(index, index + 2600);
+  return [...part.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/gi)].map((match) => stripHtml(match[1])).filter(Boolean).slice(0, 6);
+}
+
+function sourceCards(html) {
+  const sourcePart = html.slice(Math.max(0, html.toLowerCase().lastIndexOf("quelle")));
+  const links = [...sourcePart.matchAll(/<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)]
+    .map((match) => [match[1], stripHtml(match[2])])
+    .filter(([href, label]) => href && label && !href.startsWith("#"))
+    .slice(0, 4);
+  return links.length ? links : [["#deep-dive-quellen", "Quellen im Deep Dive"]];
+}
+
+function renderImpactFan(items) {
+  return `<section class="section v2-impact-fan" id="versteckte-wirkungen" data-v2-impact-fan>
+        <div>
+          <div class="section-header"><p class="hero-kicker">Versteckte Wirkungen</p><h2>Was der Satz ausblendet.</h2><p>Nicht nur ein Faktor. Gute Antworten öffnen die ganze Rechnung.</p></div>
+          <div class="v2-impact-grid">
+            ${items
+              .map(([label, line, example]) => `<article class="v2-impact-card"><p class="v2-badge">Folge</p><h3>${escapeHtml(label)}</h3><p>${escapeHtml(line)}</p><small>${escapeHtml(example)}</small></article>`)
+              .join("\n            ")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderCockpit(slug, data) {
+  const copy = (text) => escapeHtml(text).replace(/'/g, "&#039;");
+  return `<section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit>
+        <div class="v2-cockpit-shell">
+          <div class="v2-cockpit-head">
+            <p class="hero-kicker">Host-Cockpit · Einfach erklärt</p>
+            <h2>Was wurde gesagt?</h2>
+            <p class="v2-claim-line">Jemand sagt: <strong>${escapeHtml(data.claim)}</strong></p>
+          </div>
+          <div class="v2-cockpit-grid">
+            <article class="v2-cockpit-card v2-card-strong"><p class="v2-badge">Kurzurteil</p><h3>${escapeHtml(data.short)}</h3></article>
+            <article class="v2-cockpit-card"><p class="v2-badge">Sag das jetzt</p><p>${escapeHtml(data.say)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.say)}'>Kopieren</button></article>
+            <article class="v2-cockpit-card"><p class="v2-badge">Beispiel</p><h3>${escapeHtml(data.exampleTitle)}</h3><p>${escapeHtml(data.example)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.example)}'>Beispiel kopieren</button></article>
+            <article class="v2-cockpit-card"><p class="v2-badge">Gute Rückfrage</p><p>${escapeHtml(data.question)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.question)}'>Rückfrage kopieren</button></article>
+          </div>
+          <div class="v2-frame-card" id="frame-nicht-uebernehmen">
+            <p class="v2-badge">Frame nicht übernehmen</p>
+            <div><strong>Alter Frame:</strong> ${escapeHtml(data.oldFrame)}</div>
+            <div><strong>Nicht so:</strong> ${escapeHtml(data.notThis)}</div>
+            <div><strong>Besser:</strong> ${escapeHtml(data.better)}</div>
+            <div><strong>Warum:</strong> Die Antwort streitet nicht im alten Rahmen. Sie zeigt, was mitgezählt werden muss.</div>
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderPsychology(slug, data) {
+  const hooks = data.psychology;
+  return `<section class="section v2-psychology-lite" id="warum-der-satz-zieht">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Warum der Satz zieht</p><h2>Psychologie, ohne Fachwortwand.</h2></div>
+          <div class="card-grid three">
+            ${hooks
+              .map(([simple, badge, effect, move]) => `<article class="card"><p class="v2-badge">${escapeHtml(badge)}</p><h3 class="card-title">${escapeHtml(simple)}</h3><p class="card-text">${escapeHtml(effect)}</p><p class="card-text"><strong>Umgehen:</strong> ${escapeHtml(move)}</p></article>`)
+              .join("\n            ")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderConsequences(data) {
+  return `<section class="section section-soft v2-consequence-stack" id="was-passiert-danach">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Folgenkarte</p><h2>Was passiert, wenn man danach handelt?</h2></div>
+          <div class="card-grid three">
+            <article class="card"><p class="v2-badge">Sofort</p><p class="card-text">${escapeHtml(data.consequences[0])}</p></article>
+            <article class="card"><p class="v2-badge">Danach</p><p class="card-text">${escapeHtml(data.consequences[1])}</p></article>
+            <article class="card"><p class="v2-badge">Auf Dauer</p><p class="card-text">${escapeHtml(data.consequences[2])}</p></article>
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderTrustBlock(data) {
+  return `<section class="section v2-trust-block" id="warum-vertrauen">
+        <div class="card">
+          <p class="hero-kicker">Warum du dieser Einordnung vertrauen kannst</p>
+          <div class="v2-trust-grid">
+            <div><strong>Datenstand</strong><span>${escapeHtml(data.date)}</span></div>
+            <div><strong>Sicher</strong><span>${escapeHtml(data.sure)}</span></div>
+            <div><strong>Unsicher</strong><span>${escapeHtml(data.unsure)}</span></div>
+            <div><strong>Was wird mitgezählt?</strong><span>${escapeHtml(data.boundary)}</span></div>
+          </div>
+          <details class="v2-source-drawer"><summary>Quellen und Grenzen anzeigen</summary>
+            <div class="v2-source-grid">
+              ${data.sources
+                .map(([href, label]) => `<a href="${escapeHtml(href)}"><strong>${escapeHtml(label)}</strong><span>Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.</span></a>`)
+                .join("\n              ")}
+            </div>
+          </details>
+        </div>
+      </section>`;
+}
+
+function renderAnswerTabs(data) {
+  return `<section class="section v2-answer-tabs" id="antwortformate-v2">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Antwortformate</p><h2>Kurz sagen. Dann vertiefen.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">Kommentar</span><span class="radar-answer-label">bis 280 Zeichen</span></summary><p>${escapeHtml(shortText(data.say, 280))}</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">Live</span><span class="radar-answer-label">20–35 Sekunden</span></summary><p>${escapeHtml(data.live)}</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">Beispiel</span><span class="radar-answer-label">anschaulich</span></summary><p>${escapeHtml(data.example)}</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">Panel</span><span class="radar-answer-label">längere Antwort</span></summary><p>${escapeHtml(data.panel)}</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">Rückfrage</span><span class="radar-answer-label">Frame öffnen</span></summary><p>${escapeHtml(data.question)}</p></details>
+          </div>
+        </div>
+      </section>`;
+}
+
+function buildData(slug, html) {
+  const h1 = cleanClaim(firstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i));
+  const title = h1 || cleanClaim(firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i));
+  const pageText = stripHtml(html);
+  const answer = hostLanguage(
+    firstMatch(html, /<span class="radar-answer-time">10 Sekunden<\/span>[\s\S]*?<p>[„"]?([\s\S]*?)[“"]?<\/p>/i) ||
+      firstMatch(html, /<p class="radar-summary-label">Live-Antwort<\/p><p class="radar-summary-value">([\s\S]*?)<\/p>/i) ||
+      sentence(firstMatch(html, /<p class="radar-abstract">([\s\S]*?)<\/p>/i), 220),
+  );
+  const thirty = hostLanguage(
+    firstMatch(html, /<span class="radar-answer-time">30 Sekunden<\/span>[\s\S]*?<p>[„"]?([\s\S]*?)[“"]?<\/p>/i) ||
+      answer,
+  );
+  const two = hostLanguage(
+    firstMatch(html, /<span class="radar-answer-time">2 Minuten<\/span>[\s\S]*?<p>[„"]?([\s\S]*?)[“"]?<\/p>/i) ||
+      thirty,
+  );
+  const judgement = hostLanguage(
+    firstMatch(html, /<p class="radar-summary-label">Kurzurteil<\/p><p class="radar-summary-value">([\s\S]*?)<\/p>/i) ||
+      firstMatch(html, /<p class="card-kicker">([^<]+)<\/p>/i) ||
+      "Wahrer Kern, aber wichtige Folgen fehlen.",
+  );
+  const doNot = extractListAfter(html, "Nicht").slice(0, 5);
+  const consequences = extractListAfter(html, "Folgen").slice(0, 3);
+  const override = overrides[slug] || {};
+  const claim = override.claim || title;
+  return {
+    claim,
+    short: override.short || shortText(judgement, 90),
+    say: override.say || shortText(answer, 260),
+    live: shortText(thirty, 520),
+    panel: shortText(two, 900),
+    exampleTitle: override.exampleTitle || "Das einfache Bild",
+    example: override.example || sentence(firstMatch(html, /<p class="radar-abstract">([\s\S]*?)<\/p>/i) || answer, 520),
+    question: override.question || shortText(firstMatch(html, /<p class="card-kicker">Gute Rückfrage<\/p>[\s\S]*?<p class="card-text">([\s\S]*?)<\/p>/i) || "Was wird hier mitgezählt, und was bleibt unsichtbar?", 180),
+    oldFrame: override.oldFrame || `${claim} - und damit sei die Sache erledigt.`,
+    notThis: doNot[0] || "Das ist einfach falsch.",
+    better: override.better || shortText(answer, 260),
+    impacts: inferImpacts(slug, `${title} ${pageText}`),
+    psychology: [
+      ["Er macht die Sache einfacher.", "Vereinfachung", "Ein komplexes Problem wirkt wie ein einzelner Punkt.", "Beispiel nennen und die Rechnung öffnen."],
+      ["Er gibt ein Gefühl von Kontrolle.", "Kontrollgefühl", "Der Satz sortiert Unsicherheit schnell.", "Wahren Kern anerkennen, dann die fehlenden Folgen zeigen."],
+      ["Er schützt die alte Sicht.", "Status-quo-Bias", "Veränderung wirkt wie Verlust.", "Nicht beschämen. Bessere Sicherheit zeigen."],
+    ],
+    consequences: [
+      consequences[0] || "Das Problem wirkt kleiner, als es ist.",
+      consequences[1] || "Wichtige Folgen verschwinden aus der Debatte.",
+      consequences[2] || "Alte Regeln, Kosten oder Abhängigkeiten verfestigen sich.",
+    ],
+    date: firstMatch(html, /Datenstand:\s*([^<]+)</i) || UPDATED_AT,
+    sure: "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+    unsure: "Zahlen, Preise, Technikpfade und politische Folgen müssen regelmäßig geprüft werden.",
+    boundary: "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+    sources: sourceCards(html),
+  };
+}
+
+function insertAfterHero(html, block) {
+  if (html.includes("data-v2-host-cockpit")) return html;
+  const heroStart = html.indexOf("<section class=\"hero");
+  if (heroStart < 0) return html;
+  const after = html.indexOf("</section>", heroStart);
+  if (after < 0) return html;
+  const insertAt = after + "</section>".length;
+  return `${html.slice(0, insertAt)}\n      ${block}\n${html.slice(insertAt)}`;
+}
+
+function transformLivePage(file) {
+  const slug = path.basename(path.dirname(file));
+  if (slug === "live") return false;
+  let html = fs.readFileSync(file, "utf8");
+  const data = buildData(slug, html);
+  const v2 = [
+    renderCockpit(slug, data),
+    renderImpactFan(data.impacts),
+    renderAnswerTabs(data),
+    renderPsychology(slug, data),
+    renderConsequences(data),
+    renderTrustBlock(data),
+  ].join("\n      ");
+  const next = insertAfterHero(html, v2);
+  if (next === html) return false;
+  fs.writeFileSync(file, next);
+  return true;
+}
+
+function walkLivePages() {
+  if (!fs.existsSync(LIVE_DIR)) return [];
+  return fs
+    .readdirSync(LIVE_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => path.join(LIVE_DIR, entry.name, "index.html"))
+    .filter((file) => fs.existsSync(file));
+}
+
+let changed = 0;
+for (const file of walkLivePages()) {
+  if (transformLivePage(file)) changed += 1;
+}
+
+console.log(`Applied Wirkungsradar v2 Host-Cockpit to ${changed} live pages.`);
+

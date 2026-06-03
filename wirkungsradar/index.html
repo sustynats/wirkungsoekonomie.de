@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wirkungsradar – Fakten, Narrative und Wirkungspfade im Check | Wirkungsökonomie</title>
-    <meta name="description" content="Der Wirkungsradar prüft öffentliche Aussagen nach Faktenlage, Narrativ, Wirkungspfad, Folgenanalyse und wirkungsökonomischer Antwort für Mensch, Planet und Demokratie.">
+    <title>Wirkungsradar – Aussagen suchen, Frames erkennen, besser antworten | Wirkungsökonomie</title>
+    <meta name="description" content="Der Wirkungsradar hilft, öffentliche Aussagen verständlich zu prüfen: Fakten, Folgen, Frames, psychologische Wirkung, Quellen und bessere Antworten.">
     <meta name="search_title" content="Wirkungsradar">
     <meta name="search_description" content="Fakten, Narrative und Wirkungspfade im Check.">
     <meta name="search_section" content="Wirkungsradar">
@@ -52,13 +52,29 @@
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Wirkungsradar</nav>
             <p class="hero-kicker">Wirkungsradar</p>
             <h1 class="hero-title">Wirkungsradar</h1>
-            <p class="hero-subtitle">Mythen, Narrative und öffentliche Aussagen im Folgencheck.</p>
-            <p class="radar-abstract"><strong>Fakten prüfen. Narrative erkennen. Wirkung verstehen. Besser antworten.</strong></p>
-            <p class="radar-abstract"><strong>Abstract:</strong> Der Wirkungsradar prüft nicht nur, ob Aussagen stimmen. Er zeigt, welche Wirkung sie entfalten: welche Narrative sie aktivieren, welche psychologischen Hebel sie nutzen, welche Folgen falsches Handeln hätte und welche Antwort Mensch, Planet und Demokratie stärkt.</p>
-            <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: 03.06.2026</span><span>Vertrauensniveau: hoch</span></p>
+            <p class="hero-subtitle">Mythen, Narrative und öffentliche Aussagen verständlich prüfen — mit Fakten, Folgen, Frames und besseren Antworten.</p>
+            <p class="radar-abstract"><strong>Was wurde gesagt? Was sagst du jetzt?</strong></p>
+            <p class="radar-abstract">Der Wirkungsradar prüft nicht nur wahr oder falsch. Er zeigt, welche Geschichte ein Satz erzählt, was er ausblendet, welche Folgen falsches Handeln hätte und welche Lösung das Problem kleiner macht.</p>
+            <p class="radar-status-line"><span>Einfach erklärt</span><span>Fachlich vertiefen</span><span>Datenstand: 03.06.2026</span></p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="live/">Schnelle Antwort finden</a>
-              <a class="btn btn-secondary" href="live/">Live-Antworten öffnen</a>
+              <a class="btn btn-primary" href="#radar-suche">Aussage suchen</a>
+              <a class="btn btn-secondary" href="live/">Live-Karten</a>
+              <a class="btn btn-secondary" href="themen/">Thema auswählen</a>
+            </div>
+            <div class="v2-home-search" id="radar-suche" data-radar-search>
+              <label class="radar-search-field">
+                <span class="sr-only">Was wurde gesagt?</span>
+                <input type="search" placeholder="Was wurde gesagt? Z. B. Deutschland nur 2 %, E-Autos brennen, Klimadiktatur..." autocomplete="off" data-radar-search-input>
+              </label>
+              <div class="v2-home-chip-row" aria-label="Schnelle Beispiele">
+                <a href="live/deutschland-nur-zwei-prozent/">Deutschland nur 2 %</a>
+                <a href="live/e-autos-schlimmer-als-verbrenner/">E-Autos schlimmer?</a>
+                <a href="live/klimaschutz-ist-oekodiktatur/">Klimadiktatur</a>
+                <a href="live/windraeder-voegel-wald-beton-rueckbau/">Windräder & Natur</a>
+                <a href="live/man-darf-ja-nichts-mehr-sagen/">Nichts mehr sagen</a>
+              </div>
+              <p class="radar-search-status" data-radar-search-status>Radar-Inhalte werden geladen.</p>
+              <div class="radar-search-results" data-radar-search-results></div>
             </div>
           </div>
           <figure class="radar-hero-visual">
@@ -70,15 +86,15 @@
       <section class="section radar-summary-section" aria-labelledby="schnellueberblick">
         <div class="radar-section-intro">
           <p class="hero-kicker">Schnellüberblick</p>
-          <h2 id="schnellueberblick">Was der Wirkungsradar in 10 Sekunden klärt.</h2>
+            <h2 id="schnellueberblick">Der neue Aufbau jeder Karte.</h2>
         </div>
         <div class="radar-summary-grid" aria-label="Wirkungsradar Schnellüberblick">
-          <article class="radar-summary-item" data-tone="neutral"><p class="radar-summary-label">Was wird geprüft?</p><p class="radar-summary-value">Aussagen, Mythen, Narrative, Frames und Stöckchen.</p></article>
-          <article class="radar-summary-item" data-tone="neutral"><p class="radar-summary-label">Was ist der Unterschied?</p><p class="radar-summary-value">Nicht nur Wahrheit, sondern <a href="../begriffe/wirkung/" data-glossary-key="wirkung">Wirkung</a> wird analysiert.</p></article>
-          <article class="radar-summary-item" data-tone="positive"><p class="radar-summary-label">Ziel</p><p class="radar-summary-value">Handlungsfähigkeit, Faktenklarheit und demokratische Resilienz stärken.</p></article>
-          <article class="radar-summary-item" data-tone="warning"><p class="radar-summary-label">Methode</p><p class="radar-summary-value">Aussage → <a href="../begriffe/wirkstoff/" data-glossary-key="wirkstoff">Wirkstoff</a> → Wirkungspfad → Folgenanalyse → Antwort.</p></article>
-          <article class="radar-summary-item" data-tone="positive"><p class="radar-summary-label">Maßstab</p><p class="radar-summary-value">Mensch, Planet und Demokratie.</p></article>
-          <article class="radar-summary-item" data-tone="neutral"><p class="radar-summary-label">Für wen?</p><p class="radar-summary-value">Bürger:innen, Hosts, Creator:innen, Medien, Bildung und Politik.</p></article>
+          <article class="radar-summary-item" data-tone="neutral"><p class="radar-summary-label">1. Host-Cockpit</p><p class="radar-summary-value">Sag das jetzt, Beispiel, Rückfrage und Frame-Schutz.</p></article>
+          <article class="radar-summary-item" data-tone="neutral"><p class="radar-summary-label">2. Schnell verstehen</p><p class="radar-summary-value">Was stimmt? Was fehlt? Was wird nicht mitgezählt?</p></article>
+          <article class="radar-summary-item" data-tone="warning"><p class="radar-summary-label">3. Frame erkennen</p><p class="radar-summary-value">Welche Geschichte steckt im Satz?</p></article>
+          <article class="radar-summary-item" data-tone="warning"><p class="radar-summary-label">4. Warum es zieht</p><p class="radar-summary-value">Psychologie klar erklären, ohne Fachwortwand.</p></article>
+          <article class="radar-summary-item" data-tone="critical"><p class="radar-summary-label">5. Folgen sehen</p><p class="radar-summary-value">Sofort, danach und auf Dauer.</p></article>
+          <article class="radar-summary-item" data-tone="positive"><p class="radar-summary-label">6. Vertrauen</p><p class="radar-summary-value">Datenstand, Quellen, Unsicherheit und Deep Dive.</p></article>
         </div>
       </section>
 
@@ -155,35 +171,6 @@
             <a class="card text-link-card" href="psychologie/"><p class="card-kicker">Psychologischer Wirkungscheck</p><h3 class="card-title">Keine Diagnose, keine Abwertung.</h3><p class="card-text">Psychologische Effekte beschreiben allgemeine Wahrnehmungs- und Kommunikationsmuster.</p></a>
             <a class="card text-link-card" href="was-der-wirkungsradar-nicht-ist/"><p class="card-kicker">Vertrauensseite</p><h3 class="card-title">Klare Abgrenzung gegen Zensur- und Social-Credit-Frames.</h3><p class="card-text">Was der Wirkungsradar ist, was er nicht ist und warum demokratischer Streit bleibt.</p></a>
           </div>
-        </div>
-      </section>
-
-      <section class="section radar-search-section" id="radar-suche" data-radar-search>
-        <div class="radar-search-panel">
-          <div class="section-header">
-            <p class="hero-kicker">Radar-Suche</p>
-            <h2>Aussage, Narrativ oder Thema direkt finden.</h2>
-            <p>Die Suche zeigt nur Inhalte aus dem Wirkungsradar: Live-Antworten, Detailanalysen, Narrative, Themencluster und Methodenseiten.</p>
-          </div>
-          <label class="radar-search-field">
-            <span class="sr-only">Wirkungsradar durchsuchen</span>
-            <input type="search" placeholder="z. B. Weltregierung, 2 Prozent, Ohnmacht, Wissenschaft, Windräder" autocomplete="off" data-radar-search-input>
-          </label>
-          <div class="radar-depth-tags" aria-label="Schlagwörter für direkte Vertiefungen">
-            <a href="detail/sdgs-sind-weltregierung/">SDGs / Weltregierung</a>
-            <a href="live/deutschland-nur-zwei-prozent/#verantwortung-verstehen">2-Prozent-Argument</a>
-            <a href="live/klimaschutz-ist-oekodiktatur/">Klimaschutz / Ökodiktatur</a>
-            <a href="detail/co2-preis-oder-fossile-systemkosten/">CO₂-Preis / Systemkosten</a>
-            <a href="live/man-darf-ja-nichts-mehr-sagen/">Meinungsfreiheit</a>
-            <a href="narrative/ohnmacht/">Ohnmacht</a>
-            <a href="narrative/verzoegerung/">Verzögerung</a>
-            <a href="psychologie/">Psychologische Effekte</a>
-            <a href="live/die-wissenschaft-ist-gekauft/">Wissenschaft ist gekauft</a>
-            <a href="live/windraeder-voegel-wald-beton-rueckbau/">Windräder und Natur</a>
-            <a href="narrative/sprachmuster-und-emotionalisierung/">Sprachmuster</a>
-          </div>
-          <p class="radar-search-status" data-radar-search-status>Radar-Inhalte werden geladen.</p>
-          <div class="radar-search-results" data-radar-search-results></div>
         </div>
       </section>
 

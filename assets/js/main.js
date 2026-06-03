@@ -915,6 +915,7 @@ function initRadarSearch() {
           <span class="radar-search-result-meta">${tags}</span>
           <strong>${escapeHtml(cleanTitle(entry.title))}</strong>
           <em>${escapeHtml(entry.description || "Wirkungsradar-Inhalt öffnen.")}</em>
+          <span class="radar-search-result-actions"><span>Mehr anzeigen</span><span>Antwort öffnen</span></span>
         </a>`;
       })
       .join("");
@@ -946,6 +947,27 @@ function initRadarSearch() {
 }
 
 initRadarSearch();
+
+function initCopyChips() {
+  document.querySelectorAll("[data-copy-text]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const text = button.getAttribute("data-copy-text") || "";
+      if (!text) return;
+      try {
+        await navigator.clipboard.writeText(text);
+        const old = button.textContent;
+        button.textContent = "Kopiert";
+        window.setTimeout(() => {
+          button.textContent = old;
+        }, 1600);
+      } catch {
+        button.textContent = "Text markieren";
+      }
+    });
+  });
+}
+
+initCopyChips();
 
 function initGlobalWirkungsradarBridge() {
   if (!mainElement) {
