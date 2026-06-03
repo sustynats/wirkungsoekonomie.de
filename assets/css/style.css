@@ -9642,14 +9642,16 @@ textarea {
 
 .reference-work.reference-reader {
   display: grid;
-  grid-template-columns: minmax(11rem, 17rem) minmax(0, 48rem) minmax(14rem, 23rem);
+  grid-template-columns: minmax(0, 1fr);
+  width: min(100%, var(--container));
   gap: clamp(1rem, 2vw, 2rem);
   align-items: start;
 }
 
 .reference-reader .article-shell {
+  width: 100%;
   max-width: none;
-  padding: clamp(1rem, 2vw, 2rem);
+  padding: clamp(1.25rem, 3vw, 3rem);
   border: 1px solid rgba(11, 16, 32, 0.12);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.68);
@@ -9855,6 +9857,15 @@ textarea {
   top: 6rem;
 }
 
+.reference-work.reference-reader > .chapter-mini-map,
+.reference-work.reference-reader > .reference-context-rail {
+  position: static;
+  top: auto;
+  width: 100%;
+  max-height: none;
+  overflow: visible;
+}
+
 .chapter-mini-map,
 .document-mini-map,
 .reference-context-rail {
@@ -9870,6 +9881,36 @@ textarea {
 .document-mini-map {
   border-left: 3px solid var(--green);
   background: rgba(255, 255, 255, 0.42);
+}
+
+.reference-work.reference-reader > .chapter-mini-map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  border-left: 0;
+  border-top: 3px solid var(--green);
+}
+
+.reference-work.reference-reader > .chapter-mini-map h2 {
+  flex: 1 0 100%;
+}
+
+.reference-work.reference-reader > .chapter-mini-map a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(47, 125, 92, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.reference-work.reference-reader > .chapter-mini-map a:hover,
+.reference-work.reference-reader > .chapter-mini-map a:focus-visible {
+  border-color: rgba(47, 125, 92, 0.38);
+  background: rgba(47, 125, 92, 0.08);
 }
 
 .chapter-mini-map h2,
@@ -10179,7 +10220,7 @@ textarea {
 }
 
 .workpaper-reader {
-  grid-template-columns: minmax(11rem, 16rem) minmax(0, 54rem) minmax(14rem, 22rem);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .workpaper-reader .document-mini-map {
@@ -10191,8 +10232,8 @@ body[data-reader-mode="lesen"] .reference-context-rail {
 }
 
 body[data-reader-mode="lesen"] .reference-work.reference-reader {
-  grid-template-columns: minmax(0, 15rem) minmax(0, 48rem);
-  max-width: 72rem;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: var(--container);
 }
 
 body[data-reader-mode="lesen"] .article-shell {

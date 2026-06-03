@@ -7,7 +7,7 @@ const IMPORT_VERSION = "2026.1-import";
 const SOURCE_VERSION = "2026.0";
 const TERM_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const TERM_BASE_DATE = "2026-05-21";
-const referenceReaderAssetVersion = "20260603-library-reader-wide";
+const referenceReaderAssetVersion = "20260603-reference-reader-stack";
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
