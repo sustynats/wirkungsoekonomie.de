@@ -1155,6 +1155,7 @@ function topicSubnav(current, baseToRadar) {
     ["Psychologie", "../psychologie/"],
     ["Themen", "../themen/"],
     ["Detail", "../detail/"],
+    ["Was er nicht ist", "../was-der-wirkungsradar-nicht-ist/"],
   ];
   return `<nav class="topic-subnav" aria-label="Wirkungsradar Navigation" data-search-exclude>
 ${links
@@ -1446,6 +1447,22 @@ function renderIndex() {
       </section>
 
       ${topicSubnav("Narrative", "")}
+
+      <section class="section section-soft" id="narrativ-modi" aria-labelledby="narrativ-modi-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Arbeitsmodus</p>
+            <h2 id="narrativ-modi-title">Narrative erkennen. Hebel verstehen. Souverän reagieren.</h2>
+            <p><strong>Nicht beschwichtigen. Nicht spiegeln. Nicht entwerten. Sondern entwirren.</strong></p>
+            <p><strong>Gefühl anerkennen. Frame halten. Wirkungsfrage stellen.</strong></p>
+          </div>
+          <div class="card-grid three">
+            <article class="card"><p class="card-kicker">1. Narrative erkennen</p><h3 class="card-title">Welches Muster sortiert die Aussage?</h3><p class="card-text">Ohnmacht, Sündenbock, Kontrollverlust, Verzögerung, Opferumkehr oder Quellenzerstörung werden als wiederkehrende Wirkstoffe sichtbar.</p></article>
+            <article class="card"><p class="card-kicker">2. Psychologische Hebel verstehen</p><h3 class="card-title">Warum bleibt der Satz hängen?</h3><p class="card-text">Reaktanz, Verlustaversion, Bestätigungsfehler, Wahrheitsillusion oder Ingroup/Outgroup erklären Anschlussfähigkeit ohne Diagnosesprache.</p></article>
+            <article class="card"><p class="card-kicker">3. Souverän reagieren</p><h3 class="card-title">Wie kommt die Debatte zurück zur Wirkung?</h3><p class="card-text">Frame markieren, wahren Kern anerkennen, Denkfehler zeigen und die bessere Wirkungsfrage stellen.</p></article>
+          </div>
+        </div>
+      </section>
 
       <section class="section section-soft" id="psychologische-effekte" aria-labelledby="psychologische-effekte-title">
         <div>

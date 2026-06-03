@@ -2057,8 +2057,10 @@ function topicSubnav(current, baseToRadar = "../") {
     ["Wissen", "../wissen/"],
     ["Live", "../live/"],
     ["Narrative", "../narrative/"],
+    ["Psychologie", "../psychologie/"],
     ["Themen", "../themen/"],
     ["Detail", "../detail/"],
+    ["Was er nicht ist", "../was-der-wirkungsradar-nicht-ist/"],
   ];
   return `<nav class="topic-subnav" aria-label="Wirkungsradar Navigation" data-search-exclude>
 ${links

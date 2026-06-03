@@ -404,7 +404,7 @@ ${links.map(([label, href]) => `        <a href="${base}${href}"${label === curr
 
 function radarSubnav() {
   return `<nav class="topic-subnav" aria-label="Wirkungsradar Navigation" data-search-exclude>
-        <a href="../">Überblick</a><a href="../methode/">Methode</a><a href="../wissen/">Wissen</a><a href="../live/">Live</a><a href="../narrative/">Narrative</a><a href="./" aria-current="page">Psychologie</a><a href="../themen/">Themen</a><a href="../detail/">Detail</a>
+        <a href="../">Überblick</a><a href="../methode/">Methode</a><a href="../wissen/">Wissen</a><a href="../live/">Live</a><a href="../narrative/">Narrative</a><a href="./" aria-current="page">Psychologie</a><a href="../themen/">Themen</a><a href="../detail/">Detail</a><a href="../was-der-wirkungsradar-nicht-ist/">Was er nicht ist</a>
       </nav>`;
 }
 

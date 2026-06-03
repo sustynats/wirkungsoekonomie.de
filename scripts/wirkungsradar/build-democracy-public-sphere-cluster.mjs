@@ -568,7 +568,7 @@ ${main}
 }
 
 function topicSubnav(current, baseToRadar = "../") {
-  const links = [["Überblick", "../"], ["Methode", "../methode/"], ["Wissen", "../wissen/"], ["Live", "../live/"], ["Narrative", "../narrative/"], ["Themen", "../themen/"], ["Detail", "../detail/"]];
+  const links = [["Überblick", "../"], ["Methode", "../methode/"], ["Wissen", "../wissen/"], ["Live", "../live/"], ["Narrative", "../narrative/"], ["Psychologie", "../psychologie/"], ["Themen", "../themen/"], ["Detail", "../detail/"], ["Was er nicht ist", "../was-der-wirkungsradar-nicht-ist/"]];
   return `<nav class="topic-subnav" aria-label="Wirkungsradar Navigation" data-search-exclude>
 ${links.map(([label, href]) => `        <a href="${baseToRadar}${href}"${label === current ? ' aria-current="page"' : ""}>${label}</a>`).join("\n")}
       </nav>`;
@@ -907,6 +907,7 @@ const climateLiveSlugs = [
   "klima-hat-sich-schon-immer-veraendert",
   "co2-ist-nur-ein-spurengas",
   "deutschland-nur-zwei-prozent",
+  "co2-preis-oder-fossile-systemkosten",
   "klimaschutz-ist-oekodiktatur",
   "energiewende-gescheitert",
   "windraeder-zerstoeren-natur",
@@ -955,6 +956,16 @@ function liveCardGrid(items) {
   return `<div class="card-grid">${items.map((item) => `<a class="card text-link-card radar-live-card" href="${escapeHtml(item.slug)}/"><p class="card-kicker">${escapeHtml(item.kicker)}</p><h3 class="card-title">${escapeHtml(item.title)}</h3><p class="card-text"><strong>10 Sekunden:</strong> ${escapeHtml(item.tenSeconds)}</p></a>`).join("")}</div>`;
 }
 
+const lighthouseLiveSlugs = [
+  "deutschland-nur-zwei-prozent",
+  "co2-preis-oder-fossile-systemkosten",
+  "e-autos-schlimmer-als-verbrenner",
+  "windraeder-zerstoeren-natur",
+  "man-darf-ja-nichts-mehr-sagen",
+  "mainstreammedien-luegen-alle",
+  "wirkungsoekonomie-social-credit",
+];
+
 function renderLiveIndex() {
   const climateCards = climateLiveCards();
   const democracyCards = claims.map((claim) => ({
@@ -963,10 +974,13 @@ function renderLiveIndex() {
     kicker: claim.narrativeFamilies.join(" / "),
     tenSeconds: claim.answers.ten_seconds,
   }));
+  const allCards = [...climateCards, ...democracyCards];
+  const lighthouseCards = lighthouseLiveSlugs.map((slug) => allCards.find((card) => card.slug === slug)).filter(Boolean);
   const totalCards = climateCards.length + democracyCards.length;
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Live</nav><p class="hero-kicker">Für TikTok, Panels, Kommentarspalten und Moderation</p><h1 class="hero-title">Wirkungsradar Live</h1><p class="hero-subtitle">Kurze Antworten für Momente, in denen nicht die längste Analyse gewinnt, sondern der ruhigste Rahmen.</p><p class="radar-abstract"><strong>Abstract:</strong> Die Live-Karten übersetzen Wirkungschecks in kurze, sprechbare Antworten. Sie benennen wahren Kern, Denkfehler, Narrativ, Rückfrage und Wirkungspfad.</p><p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Vertrauensniveau: hoch</span></p></div></section>
       ${summaryGrid([["Live-Karten", `${totalCards} Karten aus Klima, Energie, Demokratie und Öffentlichkeit.`, "positive"], ["Format", "10 Sekunden, 30 Sekunden und 2 Minuten.", "neutral"], ["Start", "Erst wahren Kern nennen, dann Denkfehler zeigen.", "positive"], ["Frame", "Narrativ benennen, ohne es zu übernehmen.", "warning"], ["Risiko", "Wirkungsrisiko zeigen, wenn man danach handelt.", "critical"], ["Antwort", "Zur demokratisch prüfbaren Frage zurückführen.", "positive"]], "Live Summary")}
+      <section class="section section-soft" id="leuchtturm-dossiers"><div><div class="section-header"><p class="hero-kicker">Launch-MVP · checked</p><h2>7 Leuchtturm-Dossiers zuerst.</h2><p>Diese Karten sind die öffentlichen Musterseiten: Faktenkern, Denkfehler, Psychologie, Wirkungspfad, WÖk-Antwort und Quellenlogik.</p></div>${liveCardGrid(lighthouseCards)}</div></section>
       <section class="section section-soft stoeckchen-module" id="stoeckchen-erkennung"><div><div class="section-header"><p class="hero-kicker">Stöckchen-Erkennung</p><h2>Woran erkenne ich ein demokratiebezogenes Stöckchen?</h2></div>${summaryGrid([["Pauschale Delegitimierung", "Alle Medien, Wissenschaftler:innen, Politiker:innen oder Institutionen werden als korrupt dargestellt.", "warning"], ["Falsche Opferrolle", "Kritik, Moderation oder Faktencheck wird als Unterdrückung geframt.", "warning"], ["Verschwörungslogik", "Komplexe Prozesse werden als geheimer Plan gedeutet.", "critical"], ["Frame-Frage", "Die Frage enthält bereits eine unbelegte Behauptung.", "critical"], ["Endlos-Ausweichen", "Sobald ein Punkt geklärt ist, wird zum nächsten Vorwurf gewechselt.", "warning"], ["Host-Satz", "Ich beantworte das, aber ich übernehme nicht den Frame.", "positive"]], "Stöckchen-Erkennung", "stoeckchen-warning-grid")}</div></section>
       ${renderHostControlModule()}
       ${renderPsychologicalStoeckchenChecklist()}
