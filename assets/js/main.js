@@ -3177,6 +3177,41 @@ const MethodToolFilterLayer = (() => {
   return { init };
 })();
 
+const CopyAnswerLayer = (() => {
+  function init() {
+    document.addEventListener("click", async (event) => {
+      const button = event.target instanceof HTMLElement ? event.target.closest("[data-copy-text]") : null;
+      if (!(button instanceof HTMLButtonElement)) return;
+
+      const text = button.dataset.copyText || "";
+      if (!text) return;
+
+      const originalLabel = button.textContent || "Kopieren";
+      try {
+        await navigator.clipboard.writeText(text);
+        button.textContent = "Kopiert";
+      } catch {
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.inset = "-1000px auto auto -1000px";
+        document.body.append(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+        button.textContent = "Kopiert";
+      }
+
+      window.setTimeout(() => {
+        button.textContent = originalLabel;
+      }, 1600);
+    });
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
@@ -3185,4 +3220,5 @@ document.addEventListener("DOMContentLoaded", () => {
   ResultInterpretationLayer.init();
   ToolTermInlineLayer.init();
   MethodToolFilterLayer.init();
+  CopyAnswerLayer.init();
 });
