@@ -143,6 +143,62 @@ const sourcePack = {
       use_for: ["Lebenszyklusvergleich E-Auto Verbrenner", "EU-Fahrzeugemissionen"],
     },
     {
+      label: "IEA - Global EV Outlook 2024",
+      publisher: "International Energy Agency",
+      url: "https://www.iea.org/reports/global-ev-outlook-2024/executive-summary",
+      type: "wissenschaft_daten",
+      use_for: ["Batteriemarkt", "LFP-Anteil", "Batteriekosten", "Elektromobilität"],
+    },
+    {
+      label: "Fraunhofer ISI - Batterien für Elektroautos Faktencheck 2025",
+      publisher: "Fraunhofer ISI",
+      url: "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/policy-briefs/2025-05_policy_brief_batterien_elektroautos_update_faktencheck_handlungsbedarf.pdf",
+      type: "wissenschaft",
+      use_for: ["Batteriechemien", "Rohstoffe", "Recycling", "Lebensdauer", "Handlungsbedarf"],
+    },
+    {
+      label: "EU - Regulation 2023/1542 on batteries and waste batteries",
+      publisher: "European Union",
+      url: "https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng",
+      type: "gesetz",
+      use_for: ["Batteriepass", "CO₂-Fußabdruck", "Sorgfaltspflichten", "Recyclingziele", "Rezyklatanteile"],
+    },
+    {
+      label: "Fraunhofer ILT - Recycling von LFP-Batterien",
+      publisher: "Fraunhofer ILT",
+      url: "https://www.ilt.fraunhofer.de/de/presse/pressemitteilungen/2022/11-3-nachhaltiges-recycling-von-lfp-batterien.html",
+      type: "wissenschaft_technik",
+      use_for: ["LFP ohne Kobalt und Nickel", "LFP-Recycling", "Kreislaufwirtschaft"],
+    },
+    {
+      label: "BGR - Lithium aus Tiefenwässern in Deutschland",
+      publisher: "Bundesanstalt für Geowissenschaften und Rohstoffe",
+      url: "https://www.bgr.bund.de/DE/Gemeinsames/Oeffentlichkeitsarbeit/Pressemitteilungen/BGR/bgr-2024-04-25_lithium_aus_tiefenwaessern.html",
+      type: "amtlich_wissenschaft",
+      use_for: ["Lithium aus Tiefenwässern", "Norddeutsches Becken", "Oberrheingraben", "deutsche Rohstoffpotenziale"],
+    },
+    {
+      label: "Fraunhofer ISE - Lithium aus geothermalen Solen im Oberrheingraben",
+      publisher: "Fraunhofer ISE",
+      url: "https://www.ise.fraunhofer.de/de/presse-und-medien/news/2024/Lithium-aus-geothermalen-Solen-im-Oberrheingraben-Fraunhofer-ISE-entwickelt-mit-Partnern-neues-Verfahren-zur-direkten-Lithiumgewinnung.html",
+      type: "wissenschaft_technik",
+      use_for: ["direkte Lithiumgewinnung", "geothermale Solen", "Oberrheingraben", "Filter-/Extraktionsverfahren"],
+    },
+    {
+      label: "BMV - Förderrichtlinie öffentlich zugängliche Ladeinfrastruktur",
+      publisher: "Bundesministerium für Verkehr",
+      url: "https://www.bmv.de/SharedDocs/DE/Anlage/G/foerderrichtlinie-oeffentlich-zugaengliche-ladeinfrastruktur.pdf?__blob=publicationFile",
+      type: "foerderrecht",
+      use_for: ["geförderte Ladeinfrastruktur", "Strom aus erneuerbaren Energien", "öffentliche Ladepunkte"],
+    },
+    {
+      label: "NIST - Understanding the Risk of Lithium-Ion Battery Fires",
+      publisher: "National Institute of Standards and Technology",
+      url: "https://www.nist.gov/publications/understanding-risk-lithium-ion-battery-fires-multi-source-data-analysis",
+      type: "wissenschaft",
+      use_for: ["Batteriebrandrisiko", "Elektrofahrzeugbrände", "Sicherheitsbewertung"],
+    },
+    {
       label: "Umweltbundesamt - Windenergie an Land",
       publisher: "Umweltbundesamt",
       url: "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/windenergie-an-land",
@@ -207,6 +263,54 @@ const deepDiveSourcePack = {
       url: "https://theicct.org/publication/electric-cars-life-cycle-analysis-emissions-europe-jul25/",
       type: "wissenschaft",
       relevance: ["E-Auto Lebenszyklus", "Verbrennervergleich", "Batterie und Strommix"],
+    },
+    iea_global_ev_2024: {
+      label: "IEA - Global EV Outlook 2024",
+      url: "https://www.iea.org/reports/global-ev-outlook-2024/executive-summary",
+      type: "wissenschaft_daten",
+      relevance: ["Elektromobilität", "Batteriechemien", "LFP-Anteil", "Batteriemarkt"],
+    },
+    fraunhofer_isi_battery_facts_2025: {
+      label: "Fraunhofer ISI - Batterien für Elektroautos Faktencheck 2025",
+      url: "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/policy-briefs/2025-05_policy_brief_batterien_elektroautos_update_faktencheck_handlungsbedarf.pdf",
+      type: "wissenschaft",
+      relevance: ["Batterierohstoffe", "Recycling", "Lebensdauer", "Batterieproduktion"],
+    },
+    eu_battery_regulation_2023: {
+      label: "EU - Regulation 2023/1542 on batteries and waste batteries",
+      url: "https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng",
+      type: "gesetz",
+      relevance: ["Batteriepass", "CO₂-Fußabdruck", "Recyclingziele", "Sorgfaltspflichten"],
+    },
+    fraunhofer_ilt_lfp_recycling: {
+      label: "Fraunhofer ILT - Recycling von LFP-Batterien",
+      url: "https://www.ilt.fraunhofer.de/de/presse/pressemitteilungen/2022/11-3-nachhaltiges-recycling-von-lfp-batterien.html",
+      type: "wissenschaft_technik",
+      relevance: ["LFP ohne Kobalt und Nickel", "LFP-Recycling", "Kreislaufwirtschaft"],
+    },
+    bgr_lithium_tiefenwaesser: {
+      label: "BGR - Lithium aus Tiefenwässern in Deutschland",
+      url: "https://www.bgr.bund.de/DE/Gemeinsames/Oeffentlichkeitsarbeit/Pressemitteilungen/BGR/bgr-2024-04-25_lithium_aus_tiefenwaessern.html",
+      type: "amtlich_wissenschaft",
+      relevance: ["Lithium aus Tiefenwässern", "Norddeutsches Becken", "Oberrheingraben", "deutsche Rohstoffpotenziale"],
+    },
+    fraunhofer_ise_geothermal_lithium: {
+      label: "Fraunhofer ISE - Lithium aus geothermalen Solen im Oberrheingraben",
+      url: "https://www.ise.fraunhofer.de/de/presse-und-medien/news/2024/Lithium-aus-geothermalen-Solen-im-Oberrheingraben-Fraunhofer-ISE-entwickelt-mit-Partnern-neues-Verfahren-zur-direkten-Lithiumgewinnung.html",
+      type: "wissenschaft_technik",
+      relevance: ["direkte Lithiumgewinnung", "geothermale Solen", "Oberrheingraben", "Filter-/Extraktionsverfahren"],
+    },
+    bmv_ladeinfrastruktur_foerderung: {
+      label: "BMV - Förderrichtlinie öffentlich zugängliche Ladeinfrastruktur",
+      url: "https://www.bmv.de/SharedDocs/DE/Anlage/G/foerderrichtlinie-oeffentlich-zugaengliche-ladeinfrastruktur.pdf?__blob=publicationFile",
+      type: "foerderrecht",
+      relevance: ["geförderte Ladeinfrastruktur", "erneuerbarer Strom", "öffentliche Ladepunkte"],
+    },
+    nist_battery_fire_risk: {
+      label: "NIST - Understanding the Risk of Lithium-Ion Battery Fires",
+      url: "https://www.nist.gov/publications/understanding-risk-lithium-ion-battery-fires-multi-source-data-analysis",
+      type: "wissenschaft",
+      relevance: ["Batteriebrandrisiko", "Elektrofahrzeugbrände", "Sicherheitsbewertung"],
     },
     base_endlager: {
       label: "BASE - Endlagersuche",
@@ -379,12 +483,12 @@ const subtopics = [
     title: "Mobilität & Batterien",
     subtitle: "Lebenszyklus, Rohstoffe, Recycling und Mobilitätswirkung",
     abstract:
-      "Mobilitätsdebatten kippen schnell in Lagerlogik. Der Wirkungsradar prüft deshalb Produktlebenszyklus, Strommix, Fahrzeuggröße, Nutzung, Rohstoffe, Arbeitsbedingungen, Recycling und Alternativen. Nicht das Symbol E-Auto entscheidet, sondern die positive Netto-Wirkung der Mobilitätslösung.",
+      "Mobilitätsdebatten kippen schnell in Lagerlogik. Der Wirkungsradar prüft deshalb Produktlebenszyklus, realen Lade- und Produktionsstrom, Fahrzeuggröße, Nutzung, Batteriechemie, Rohstoffe, Arbeitsbedingungen, Brandrisiko, Lebensdauer, Recycling, Second Life und Alternativen. Nicht das Symbol E-Auto entscheidet, sondern die positive Netto-Wirkung der Mobilitätslösung.",
     summary: [
-      ["Kernfrage", "Welche Mobilitätslösung erzeugt über den Lebenszyklus die bessere Netto-Wirkung?", "neutral"],
+      ["Kernfrage", "Welche Mobilitätslösung erzeugt über den Lebenszyklus die bessere Netto-Wirkung - inklusive Batteriechemie, Stromquelle, Lebensdauer und Recycling?", "neutral"],
       ["Narrative", "Rohstoffangst, Verzögerung, falscher Lebenszyklusvergleich.", "warning"],
       ["Wirkungsrisiko", "Fossile Mobilität bleibt länger bestehen, wenn Herstellung isoliert betrachtet wird.", "critical"],
-      ["WÖk-Lösung", "Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Recycling und Energiequelle.", "positive"],
+      ["WÖk-Lösung", "Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Batteriechemie, Ladequelle, Lebensdauer, Brandrisiko und Recycling.", "positive"],
     ],
     claims: ["e-autos-schlimmer-als-verbrenner", "batterien-sind-nicht-recyclebar"],
   },
@@ -884,21 +988,21 @@ const claims = [
     sdgPlus: ["Lieferkettentransparenz"],
     subtitle: "Rohstoffangst und falscher Lebenszyklusvergleich",
     abstract:
-      "Die Aussage enthält einen wahren Kern: Batterien verursachen Rohstoff-, Energie-, Lieferketten- und Recyclingwirkungen. Irreführend wird sie, wenn nur die Herstellung betrachtet wird und die dauerhaften Emissionen von Verbrennern ausgeblendet werden. Wirkungsökonomisch ist das ein Lebenszyklus-Fehler: Ein Wirkungsfeld wird isoliert, statt Produktlebenszyklus, Strommix, Fahrzeuggröße, Nutzung, Rohstoffe, Arbeitsbedingungen und Recycling zusammen zu bewerten.",
+      "Die Aussage enthält einen wahren Kern: Batterien verursachen Rohstoff-, Energie-, Lieferketten- und Recyclingwirkungen. Irreführend wird sie, wenn nur die Herstellung betrachtet wird und die dauerhaften Emissionen von Verbrennern ausgeblendet werden. Wirkungsökonomisch ist das ein Lebenszyklus-Fehler: Ein Wirkungsfeld wird isoliert, statt Produktlebenszyklus, realen Lade- und Produktionsstrom, Batteriechemie, Fahrzeuggröße, Nutzung, Rohstoffe, Arbeitsbedingungen, Lebensdauer, Brandrisiko und Recycling zusammen zu bewerten.",
     summary: {
       judgement: "Meist irreführend.",
       true_core: "Batterien haben relevante Rohstoff- und Herstellungswirkungen.",
-      problem: "Herstellung wird isoliert, Nutzungsemissionen des Verbrenners werden ausgeblendet.",
+      problem: "Herstellung wird isoliert, Nutzungsemissionen des Verbrenners und Fortschritte bei Batteriechemie, Laden, Produktion und Recycling werden ausgeblendet.",
       narrative: "Rohstoffangst / Verzögerung / falscher Lebenszyklusvergleich.",
       risk: "Fossile Mobilität bleibt länger bestehen.",
-      host_answer: "Batterien haben Wirkung - aber der Vergleich muss über den gesamten Lebenszyklus gehen.",
+      host_answer: "Batterien haben Wirkung - aber der Vergleich muss über den gesamten Lebenszyklus und die reale Batterieentwicklung gehen.",
     },
     answers: {
-      ten_seconds: "Batterien haben Wirkung. Aber der Vergleich muss über den gesamten Lebenszyklus gehen - nicht nur über die Herstellung.",
+      ten_seconds: "Batterien haben Wirkung. Aber fair ist nur der Lebenszyklusvergleich: Herstellung, Strom, Nutzung, Recycling - und fossiler Kraftstoff.",
       thirty_seconds:
-        "Der wahre Kern ist: Batterieproduktion ist ressourcenintensiv. Der Denkfehler ist: Verbrenneremissionen während der Nutzung auszublenden. Wirkungsökonomisch zählen Produktion, Energiequelle, Nutzung, Recycling, Fahrzeuggröße und Lieferkette zusammen.",
+        "Der wahre Kern ist: Batterieproduktion braucht Energie und Rohstoffe. Der Denkfehler ist: alte Durchschnittsdaten, falsche Stromannahmen und sichtbare Akkuprobleme gegen unsichtbar gemachte fossile Nutzungsemissionen zu stellen. Wirkungsökonomisch zählen Batteriechemie, Produktionsstrom, Ladequelle, Lebensdauer, Recycling, Fahrzeuggröße, Lieferkette und der verbrannte Kraftstoff des Verbrenners zusammen.",
       two_minutes:
-        "Ich ordne das kurz ein. Ein E-Auto ist nicht automatisch perfekt. Batterie, Rohstoffe, Arbeitsbedingungen und Recycling müssen bewertet werden. Aber ein Verbrenner emittiert während seiner gesamten Nutzung fossiles CO₂ und Luftschadstoffe. Deshalb braucht es einen Lebenszyklusvergleich. Die WÖk-Lösung wäre eine Produktscorecard: CO₂, Ressourcen, Arbeit, Gesundheit, Recycling und Energiequelle. Dann gewinnt nicht das ideologische Lager, sondern die Mobilitätslösung mit der besten Netto-Wirkung.",
+        "Ich ordne das kurz ein. Ein E-Auto ist nicht automatisch perfekt. Batterie, Rohstoffe, Arbeitsbedingungen, Produktionsenergie, Sicherheit und Recycling müssen bewertet werden. Aber ein Verbrenner emittiert während seiner gesamten Nutzung fossiles CO₂ und Luftschadstoffe, und Benzin oder Diesel ist nach dem Verbrennen weg. Eine Batterie bleibt dagegen ein Materiallager: Sie kann länger genutzt, in Second-Life-Anwendungen überführt und recycelt werden. Außerdem verändert sich die Batterie selbst: LFP-Chemien kommen ohne Kobalt und Nickel in der Kathode aus, viele neue Zellwerke arbeiten mit deutlich saubererem Strom als alte Studien annehmen, und geförderte öffentliche Ladeinfrastruktur ist in Deutschland an erneuerbaren Strom gebunden. Deshalb braucht es einen aktuellen Lebenszyklusvergleich statt eines alten Akku-Schreckbilds.",
     },
     effectPath: [
       ["Aussage", "E-Autos seien schlimmer als Verbrenner."],
@@ -909,17 +1013,36 @@ const claims = [
       ["Folge falschen Handelns", "CO₂-, Luftschadstoff- und Lieferkettenwirkung werden nicht optimiert."],
     ],
     frameKey: "verzoegerung",
-    redirectQuestion: "Vergleichen wir Herstellung oder den gesamten Lebenszyklus?",
+    redirectQuestion: "Vergleichen wir Herstellung oder den gesamten Lebenszyklus - mit aktueller Batteriechemie, realem Lade- und Produktionsstrom und Recycling?",
     dontDo: ["Batterieprobleme nicht wegwischen.", "Nicht nur CO₂ betrachten und Arbeitsbedingungen vergessen."],
-    facts: ["Batterieproduktion hat relevante Wirkungen.", "Ein fairer Vergleich braucht Produktion, Nutzung, Energiequelle, Recycling und Lieferkette."],
-    consequences: ["Fossile Nutzungsemissionen werden unsichtbar.", "Rohstofffragen werden nicht gelöst, sondern als Aufschub genutzt.", "Mobilitätswende wird polarisiert."],
-    woekSolution: ["Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Recycling und Energiequelle.", "Lieferkettentransparenz und Batteriepass stärken.", "Fahrzeuggröße und Mobilitätsbedarf in die Bewertung einbeziehen."],
+    facts: [
+      "Batterieproduktion hat relevante Wirkungen, aber sie ist nur ein Teil des Lebenszyklus.",
+      "LFP-Batterien verwenden Lithium-Eisenphosphat und kommen in der Kathode ohne Kobalt und Nickel aus; sie lösen nicht jede Rohstofffrage, verändern aber den Kobalt-Frame deutlich.",
+      "Der CO₂-Fußabdruck von Batterien hängt stark vom Produktionsstrom ab; alte Studien mit fossilem Durchschnittsstrom überschätzen heutige und künftige Werke, wenn reale Energieverträge und erneuerbare Versorgung ignoriert werden.",
+      "Bei geförderter öffentlich zugänglicher Ladeinfrastruktur in Deutschland verlangen Förderbedingungen Strom aus erneuerbaren Energien. Das ist präziser als die pauschale Behauptung, jede Ladesäule sei rechtlich immer Ökostrom.",
+      "Recycling und Second Life machen Batterien zu einem Materialkreislauf; fossile Kraftstoffe werden einmal verbrannt und sind danach als Energie- und Kohlenstoffträger weg.",
+      "Brandrisiken sind real, aber der Satz vom grundsätzlich unlöschbaren Akku ist ein Angstframe. Elektrofahrzeugbrände brauchen angepasste Taktik, sind aber kein Beweis gegen E-Mobilität insgesamt.",
+      "Batteriegarantien sind modellabhängig; 8 Jahre und etwa 160.000 bis 250.000 km sind im Pkw-Markt verbreitet. Extrem hohe Laufleistungsangaben einzelner Hersteller oder Nutzfahrzeuganwendungen dürfen nicht als Standardgarantie für alle E-Autos verkauft werden.",
+    ],
+    consequences: ["Fossile Nutzungsemissionen werden unsichtbar.", "Rohstofffragen werden nicht gelöst, sondern als Aufschub genutzt.", "Batterieproduktion, Recycling und Ladeinfrastruktur werden schlechter gesteuert.", "Mobilitätswende wird polarisiert."],
+    woekSolution: ["Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Brandrisiko, Recycling und Energiequelle.", "Lieferkettentransparenz, Batteriepass und Batteriechemie sichtbar machen.", "Realen Produktionsstrom und Ladequelle statt alter Durchschnittsannahmen ausweisen.", "Fahrzeuggröße, Lebensdauer und Mobilitätsbedarf in die Bewertung einbeziehen.", "Recyclingfähigkeit, Rückgewinnungsquoten, Second Life und Reparierbarkeit als eigene Wirkungsfelder bewerten."],
     mpd: {
       mensch: "Gesundheit, Arbeitsbedingungen und bezahlbare Mobilität müssen zusammen bewertet werden.",
       planet: "CO₂, Ressourcen und Recycling entscheiden gemeinsam über Netto-Wirkung.",
       demokratie: "Lieferkettentransparenz und Quellenklarheit stärken Vertrauen.",
     },
-    sources: ["Umweltbundesamt - Klimavorteil für E-Autos bestätigt", "ICCT - Life-cycle greenhouse gas emissions from passenger cars in Europe"],
+    sources: [
+      "Umweltbundesamt - Klimavorteil für E-Autos bestätigt",
+      "ICCT - Life-cycle greenhouse gas emissions from passenger cars in Europe",
+      "IEA - Global EV Outlook 2024",
+      "Fraunhofer ISI - Batterien für Elektroautos Faktencheck 2025",
+      "EU - Regulation 2023/1542 on batteries and waste batteries",
+      "Fraunhofer ILT - Recycling von LFP-Batterien",
+      "BGR - Lithium aus Tiefenwässern in Deutschland",
+      "Fraunhofer ISE - Lithium aus geothermalen Solen im Oberrheingraben",
+      "BMV - Förderrichtlinie öffentlich zugängliche Ladeinfrastruktur",
+      "NIST - Understanding the Risk of Lithium-Ion Battery Fires",
+    ],
   },
   {
     title: "„Batterien sind nicht recyclebar“",
@@ -932,21 +1055,21 @@ const claims = [
     sdgPlus: ["Lieferkettentransparenz"],
     subtitle: "Rohstoffangst statt Kreislaufanalyse",
     abstract:
-      "Die Aussage enthält einen wahren Kern: Batterierecycling ist technisch, ökonomisch und organisatorisch anspruchsvoll. Irreführend wird sie, wenn daraus folgt, Batterien seien grundsätzlich nicht recyclebar oder Kreislaufwirtschaft sei sinnlos. Wirkungsökonomisch zählt nicht ein pauschales Ja oder Nein, sondern welche Materialien, Prozesse, Rücknahmesysteme, Standards und Skalierungen welche Netto-Wirkung erzeugen.",
+      "Die Aussage enthält einen wahren Kern: Batterierecycling ist technisch, ökonomisch und organisatorisch anspruchsvoll. Irreführend wird sie, wenn daraus folgt, Batterien seien grundsätzlich nicht recyclebar oder Kreislaufwirtschaft sei sinnlos. Heute geht es nicht mehr um Ja oder Nein, sondern um Batteriechemie, Design, Rücknahme, Second Life, Prozessqualität, Rückgewinnungsquoten, Energiequelle und Regulierung. Wirkungsökonomisch zählt, welche Materialien tatsächlich im Kreislauf bleiben - und welche Rohstoff-, Arbeits- und Klimawirkung dadurch sinkt.",
     summary: {
       judgement: "Falsch oder veraltet, je nach Batterie- und Recyclingtyp.",
       true_core: "Batterierecycling ist anspruchsvoll und braucht Standards.",
       problem: "Aus Herausforderungen wird grundsätzliche Unmöglichkeit gemacht.",
       narrative: "Technikskepsis / Rohstoffangst.",
       risk: "Kreislaufwirtschaft und bessere Batteriepolitik werden verzögert.",
-      host_answer: "Recycling ist eine Entwicklungs- und Skalierungsfrage, kein pauschales Unmöglichkeitsargument.",
+      host_answer: "Recycling ist eine Industrie-, Design- und Skalierungsfrage, kein pauschales Unmöglichkeitsargument.",
     },
     answers: {
-      ten_seconds: "Batterierecycling ist anspruchsvoll, aber nicht unmöglich. Die Frage ist: Welche Materialien und Prozesse werden zurückgewonnen?",
+      ten_seconds: "Batterien sind nicht „nicht recyclebar“. Entscheidend sind Chemie, Rücknahme, Verfahren, Rückgewinnungsquote und sauberer Prozessstrom.",
       thirty_seconds:
-        "Der wahre Kern ist: Recycling braucht Standards, Rücknahme und Skalierung. Der Denkfehler ist, daraus Nicht-Recyclebarkeit zu machen. Wirkungsökonomisch zählen Rohstoffe, Rückgewinnung, Arbeitsbedingungen, Design und Zweitnutzung zusammen.",
+        "Der wahre Kern ist: Recycling braucht Standards, Rücknahme und Skalierung. Der Denkfehler ist, daraus Nicht-Recyclebarkeit zu machen. EU-Batterierecht, Batteriepass, Rezyklatvorgaben und industrielle Recyclingkapazitäten verschieben die Frage: Welche Chemie, welches Design, welches Verfahren, welche Rückgewinnungsquote und welche Nutzung vor dem Recycling sind gemeint?",
       two_minutes:
-        "Ich ordne das ein. Batterien sind kein wirkungsfreies Produkt: Rohstoffe, Herstellung, Nutzung, Sicherheit und Recycling müssen geprüft werden. Aber der Satz „nicht recyclebar“ ist zu pauschal. Entscheidend ist, welche Batteriechemie, welche Rücknahme, welches Verfahren und welcher Markt gemeint ist. Die WÖk würde Batterien über den Lebenszyklus bewerten: weniger Material, besseres Design, längere Nutzung, Second Life, Rückgewinnung und transparente Lieferketten. So wird aus Rohstoffangst eine Kreislaufstrategie.",
+        "Ich ordne das ein. Batterien sind kein wirkungsfreies Produkt: Rohstoffe, Herstellung, Nutzung, Sicherheit und Recycling müssen geprüft werden. Aber der Satz „nicht recyclebar“ ist zu pauschal und oft veraltet. Moderne Recyclingverfahren gewinnen wertvolle Metalle zurück; EU-Regeln setzen Mindestziele für Rückgewinnung, Rezyklatanteile, CO₂-Fußabdruck, Sorgfaltspflichten und Batteriepass. LFP-Batterien verändern außerdem die Rohstoffdebatte, weil sie in der Kathode ohne Kobalt und Nickel auskommen, auch wenn Lithium, Graphit, Energie und gute Lieferketten weiter relevant bleiben. Wirkungsökonomisch lautet die richtige Frage nicht: Akku gut oder böse? Sondern: Welche Batterie wird wie gebaut, wie lange genutzt, wie geladen, wie sicher betrieben, wie demontiert, wie hochwertig recycelt und wie transparent dokumentiert?",
     },
     effectPath: [
       ["Aussage", "Batterien seien nicht recyclebar."],
@@ -959,15 +1082,31 @@ const claims = [
     frameKey: "verzoegerung",
     redirectQuestion: "Welche Batteriechemie und welches Recyclingverfahren meinst du konkret?",
     dontDo: ["Nicht behaupten, Recycling löse alle Rohstofffragen allein.", "Nicht Batterieprobleme als Argument gegen jede Elektrifizierung verallgemeinern."],
-    facts: ["Batterierecycling braucht Standards, Rücknahme und Skalierung.", "Die Bewertung hängt von Chemie, Verfahren, Design und Nutzung ab."],
-    consequences: ["Kreislaufwirtschaft wird delegitimiert.", "Rohstoffpolitik bleibt reaktiv.", "Technikvertrauen sinkt."],
-    woekSolution: ["Batteriepass, Rücknahmesysteme und Materialscorecards stärken.", "Design for Recycling und Second-Life-Nutzung bewerten.", "Rohstoff-, Arbeits- und Recyclingwirkung in Produktentscheidungen rückkoppeln."],
+    facts: [
+      "Batterierecycling braucht Standards, Rücknahme, Demontage, Prozessenergie und industrielle Skalierung.",
+      "Die Bewertung hängt von Chemie, Verfahren, Design, Nutzung, Restkapazität und Rückgewinnungsquote ab.",
+      "EU-Batterierecht schreibt unter anderem CO₂-Fußabdruck, Sorgfaltspflichten, Batteriepass, Recyclingeffizienz, Materialrückgewinnung und Rezyklatanteile vor.",
+      "Für Kobalt, Kupfer, Blei und Nickel gelten hohe Rückgewinnungsziele; für Lithium steigen die Zielwerte stufenweise. Deshalb ist „gar nicht recyclebar“ als Pauschalbehauptung falsch.",
+      "Industrielle Verfahren können hohe Materialrückgewinnung erreichen; das ersetzt aber nicht gutes Design, Rücknahme und ehrliche Datenqualität.",
+      "LFP-Akkus enthalten in der Kathode kein Kobalt und Nickel. Dadurch verschiebt sich die Rohstoffkritik, sie verschwindet aber nicht vollständig.",
+      "Second Life kann die Nutzungsdauer verlängern, bevor Recycling sinnvoll wird.",
+    ],
+    consequences: ["Kreislaufwirtschaft wird delegitimiert.", "Rohstoffpolitik bleibt reaktiv.", "Batteriedesign, Rücknahme und europäische Recyclingkompetenz werden verzögert.", "Technikvertrauen sinkt."],
+    woekSolution: ["Batteriepass, Rücknahmesysteme und Materialscorecards stärken.", "Design for Recycling, Demontagefähigkeit und Second-Life-Nutzung bewerten.", "Rohstoff-, Arbeits- und Recyclingwirkung in Produktentscheidungen rückkoppeln.", "Rückgewinnungsquoten, Rezyklatanteile und Prozessstrom transparent ausweisen.", "Recycling nicht als moralische Beruhigung nutzen, sondern als überprüfbaren industriellen Kreislauf."],
     mpd: {
       mensch: "Arbeitsbedingungen und regionale Wertschöpfung müssen sichtbar werden.",
       planet: "Ressourcen, Recycling und Energiequelle entscheiden über Netto-Wirkung.",
       demokratie: "Transparente Produktdaten stärken Vertrauen und Kontrolle.",
     },
-    sources: ["Umweltbundesamt - Klimavorteil für E-Autos bestätigt", "ICCT - Life-cycle greenhouse gas emissions from passenger cars in Europe"],
+    sources: [
+      "Fraunhofer ISI - Batterien für Elektroautos Faktencheck 2025",
+      "EU - Regulation 2023/1542 on batteries and waste batteries",
+      "Fraunhofer ILT - Recycling von LFP-Batterien",
+      "BGR - Lithium aus Tiefenwässern in Deutschland",
+      "Fraunhofer ISE - Lithium aus geothermalen Solen im Oberrheingraben",
+      "IEA - Global EV Outlook 2024",
+      "NIST - Understanding the Risk of Lithium-Ion Battery Fires",
+    ],
   },
   {
     title: "„Kernenergie wäre die einfache Lösung“",
@@ -1154,15 +1293,15 @@ const answerExpansions = {
   },
   "e-autos-schlimmer-als-verbrenner": {
     thirty_seconds:
-      "Fair wird der Vergleich erst, wenn beide Seiten vollständig gerechnet werden: Herstellung, Batterie, Strommix, Nutzung, Wartung, Lebensdauer, Recycling, Fahrzeuggröße und die fossilen Emissionen des Verbrenners. Sonst vergleicht man einen sichtbaren Batterieeffekt mit unsichtbar gemachten Auspuffemissionen.",
+      "Dazu kommt: Der Akku ist kein einmal verbrannter Energieträger. Er altert, kann oft lange genutzt, teilweise zweitgenutzt und anschließend recycelt werden. Benzin und Diesel dagegen werden verbrannt und sind weg. Wer nur den Akku-Rucksack zeigt, aber die fortlaufende fossile Verbrennung ausblendet, macht keinen fairen Vergleich.",
     two_minutes:
-      "Der Satz funktioniert, weil er ein reales Problem anspricht: Batterien brauchen Rohstoffe, Energie und gute Lieferkettenkontrolle. Das muss in jede seriöse Bewertung hinein. Irreführend wird es, wenn nur dieser Teil gezeigt wird und der Verbrenner so behandelt wird, als sei nach der Herstellung kaum noch Wirkung vorhanden. Tatsächlich entstehen beim Verbrenner über die Nutzung fortlaufend fossile CO₂-Emissionen und Luftschadstoffe. Beim E-Auto verlagert sich ein größerer Teil der Wirkung in Herstellung, Batterie und Stromerzeugung - und genau deshalb verbessern Strommix, Batteriedesign, Recycling, Fahrzeuggröße und Nutzungsdauer die Bilanz. Wirkungsökonomisch ist die Lösung keine Werbung für jedes einzelne E-Auto. Ein schweres Fahrzeug mit schlechter Nutzung bleibt problematisch. Die Lösung ist eine Mobilitätsscorecard: CO₂, Ressourcen, Gesundheit, Arbeit, Lieferketten, Recycling und tatsächlicher Mobilitätsbedarf. Dann gewinnt nicht das Lager, sondern die bessere Netto-Wirkung.",
+      "Der Satz funktioniert, weil er ein reales Problem anspricht: Batterien brauchen Rohstoffe, Energie und gute Lieferkettenkontrolle. Das muss in jede seriöse Bewertung hinein. Irreführend wird es, wenn nur dieser Teil gezeigt wird und der Verbrenner so behandelt wird, als sei nach der Herstellung kaum noch Wirkung vorhanden. Tatsächlich entstehen beim Verbrenner über die Nutzung fortlaufend fossile CO₂-Emissionen und Luftschadstoffe. Beim E-Auto verlagert sich ein größerer Teil der Wirkung in Herstellung, Batterie und Stromerzeugung - und genau deshalb verbessern erneuerbarer Strom, bessere Zellchemien, LFP ohne Kobalt und Nickel, Recycling, Fahrzeuggröße und Nutzungsdauer die Bilanz. Auch Brand- und Haltbarkeitsfragen gehören in die Prüfung, aber als Datenfrage, nicht als Angstbild. Wirkungsökonomisch ist die Lösung keine Werbung für jedes einzelne E-Auto. Ein schweres Fahrzeug mit schlechter Nutzung bleibt problematisch. Die Lösung ist eine Mobilitätsscorecard: CO₂, Ressourcen, Gesundheit, Arbeit, Lieferketten, Brandrisiko, Recycling und tatsächlicher Mobilitätsbedarf. Dann gewinnt nicht das Lager, sondern die bessere Netto-Wirkung.",
   },
   "batterien-sind-nicht-recyclebar": {
     thirty_seconds:
-      "Die sinnvolle Frage lautet also nicht ja oder nein, sondern: Welche Batteriechemie, welches Sammelsystem, welches Verfahren, welche Rückgewinnungsquote und welche Designstandards sind gemeint? Aus einer schwierigen Skalierung folgt keine grundsätzliche Unmöglichkeit.",
+      "Die sinnvolle Frage lautet also nicht ja oder nein, sondern: Welche Batteriechemie, welches Sammelsystem, welches Verfahren, welche Rückgewinnungsquote, welcher Rezyklatanteil und welche Designstandards sind gemeint? Aus einer schwierigen Skalierung folgt keine grundsätzliche Unmöglichkeit.",
     two_minutes:
-      "Der Satz klingt endgültig, aber Batterierecycling ist kein statischer Zustand. Es hängt von Chemie, Bauform, Rücknahme, Sortierung, Prozess, Energiequelle, Regulierung und Marktgröße ab. Es gibt Materialien, die technisch leichter zurückgewonnen werden, andere sind schwieriger oder wirtschaftlich weniger attraktiv. Daraus folgt aber nicht, dass Batterien grundsätzlich nicht recyclebar sind. Wirkungsökonomisch wäre die falsche Reaktion, Rohstoffprobleme als Totschlagargument gegen jede Elektrifizierung zu nutzen. Die richtige Reaktion ist eine Kreislaufstrategie: kleinere und langlebigere Batterien, besseres Design, Reparierbarkeit, Second-Life-Nutzung, verpflichtende Rücknahme, transparente Materialdaten, hohe Recyclingstandards und saubere Energie im Prozess. Gleichzeitig bleiben soziale und ökologische Lieferkettenfragen relevant. Nichtkompensation heißt: Gute Klimawerte dürfen schlechte Arbeitsbedingungen oder Rohstoffschäden nicht verdecken. Genau darum braucht es Produktdaten statt Pauschalsätze.",
+      "Der Satz klingt endgültig, aber Batterierecycling ist kein statischer Zustand. Es hängt von Chemie, Bauform, Rücknahme, Sortierung, Prozess, Energiequelle, Regulierung und Marktgröße ab. Es gibt Materialien, die technisch leichter zurückgewonnen werden, andere sind schwieriger oder wirtschaftlich weniger attraktiv. Daraus folgt aber nicht, dass Batterien grundsätzlich nicht recyclebar sind. Wirkungsökonomisch wäre die falsche Reaktion, Rohstoffprobleme als Totschlagargument gegen jede Elektrifizierung zu nutzen. Die richtige Reaktion ist eine Kreislaufstrategie: kleinere und langlebigere Batterien, besseres Design, Reparierbarkeit, Second-Life-Nutzung, verpflichtende Rücknahme, transparente Materialdaten, hohe Recyclingstandards, Lithiumrückgewinnung, LFP-spezifische Verfahren und saubere Energie im Prozess. Gleichzeitig bleiben soziale und ökologische Lieferkettenfragen relevant. Nichtkompensation heißt: Gute Klimawerte dürfen schlechte Arbeitsbedingungen oder Rohstoffschäden nicht verdecken. Genau darum braucht es Produktdaten statt Pauschalsätze.",
   },
   "kernenergie-einfache-loesung": {
     thirty_seconds:
@@ -1188,6 +1327,7 @@ const deepDiveSlugs = [
   "deutschland-nur-zwei-prozent",
   "energiewende-gescheitert",
   "e-autos-schlimmer-als-verbrenner",
+  "batterien-sind-nicht-recyclebar",
   "kernenergie-einfache-loesung",
   "fusion-loest-das-problem",
 ];
@@ -1318,19 +1458,22 @@ const deepDiveDetails = {
       falseConclusion: "Aus Batterieproblemen folgt nicht automatisch, dass Verbrenner besser sind.",
     },
     trueText:
-      "Batterieproduktion benötigt Energie und Rohstoffe. Lieferketten können Wasser-, Biodiversitäts-, Arbeitsrechts- und Governance-Probleme enthalten.",
+      "Batterieproduktion benötigt Energie und Rohstoffe. Lieferketten können Wasser-, Biodiversitäts-, Arbeitsrechts- und Governance-Probleme enthalten. Genau deshalb muss man Batterien ernst prüfen - aber aktuell, chemiespezifisch und über den Lebenszyklus, nicht mit einem pauschalen Akku-Angstbild.",
     missingItems: [
       "Verbrenner emittieren während der gesamten Nutzung fossiles CO₂.",
       "Verbrenner verursachen Luftschadstoffe und fossile Importabhängigkeit.",
-      "Der Strommix kann über die Lebensdauer erneuerbarer werden.",
-      "Batterien können recycelt, weitergenutzt und technologisch verbessert werden.",
+      "Der Strommix kann über die Lebensdauer erneuerbarer werden; geförderte öffentliche Ladeinfrastruktur ist in Deutschland an erneuerbaren Strom gebunden.",
+      "Der CO₂-Fußabdruck der Batterie hängt stark vom realen Produktionsstrom ab. Alte Durchschnittsannahmen sind angreifbar, wenn Zellwerke mit erneuerbaren Energien oder spezifischen Stromverträgen produzieren.",
+      "Batteriechemien unterscheiden sich: LFP kommt in der Kathode ohne Kobalt und Nickel aus; NMC/NCA haben andere Energie- und Rohstoffprofile.",
+      "Batterien können recycelt, weitergenutzt und technologisch verbessert werden. Fossile Kraftstoffe werden dagegen einmal verbrannt und sind danach weg.",
+      "Brandrisiken, Garantie und Lebensdauer sind Datenfragen: Sie gehören in die Bewertung, aber nicht als Pauschalnarrativ gegen alle Akkus.",
       "Die beste Mobilitätswirkung entsteht nicht automatisch durch Autoersatz, sondern durch bessere Mobilitätssysteme.",
     ],
     evidence: {
       status: "datenbasiert",
       level: "hoch",
       uncertainty: "Mittel bei künftigen Batteriechemien, Recyclingquoten, Strommix, Fahrzeuggröße und Lieferkettenqualität.",
-      sourceKeys: ["icct_lca_ev_2025", "uba_emissions_germany"],
+      sourceKeys: ["icct_lca_ev_2025", "fraunhofer_isi_battery_facts_2025", "eu_battery_regulation_2023", "iea_global_ev_2024", "bmv_ladeinfrastruktur_foerderung", "bgr_lithium_tiefenwaesser", "fraunhofer_ise_geothermal_lithium", "nist_battery_fire_risk"],
     },
     wirkstoff: {
       label: "Rohstoffangst als Verzögerungsimpuls",
@@ -1355,9 +1498,118 @@ const deepDiveDetails = {
       ["Gesundheit", "Luftschadstoffbelastungen sinken langsamer."],
       ["Lieferketten", "Echte Rohstoffprobleme werden nicht gelöst, sondern als Abbruchargument missbraucht."],
     ],
+    batteryAudit: [
+      [
+        "Batteriechemie",
+        "LFP ohne Kobalt und Nickel in der Kathode verändert das Rohstoffargument; NMC/NCA bleiben anders zu bewerten.",
+        "Nicht alle Akkus über einen Rohstoffkamm scheren. Chemie, Zellformat, Fahrzeugklasse und Anwendung ausweisen.",
+      ],
+      [
+        "Lithium",
+        "Lithium bleibt relevant, kann aber auch in Europa und perspektivisch aus geothermischen Solen in Deutschland gewonnen werden. Das ist kein Freifahrtschein, aber es schwächt die Behauptung vollständiger Import- und Lieferkettenausweglosigkeit.",
+        "Herkunft, Wasserwirkung, Energieeinsatz, Genehmigung und lokale Beteiligung als eigene Wirkungsfelder prüfen.",
+      ],
+      [
+        "Produktionsstrom",
+        "Der CO₂-Fußabdruck der Batterie hängt stark vom Strom der Zellproduktion ab. Studien, die pauschal fossile Durchschnittsmixe ansetzen, können heutige oder künftige Werke falsch abbilden.",
+        "Mit werksspezifischem Strom, Datenqualitätsklasse und zeitlichem Datenstand rechnen.",
+      ],
+      [
+        "Ladestrom",
+        "Der Fahrstrom entscheidet über Nutzungsemissionen. Bei geförderter öffentlich zugänglicher Ladeinfrastruktur in Deutschland verlangen Förderbedingungen erneuerbaren Strom; private und ungeförderte Ladefälle müssen separat betrachtet werden.",
+        "Nicht pauschal „Netzmix“ oder pauschal „Ökostrom“ behaupten, sondern Ladefall und Nachweis trennen.",
+      ],
+      [
+        "Recycling",
+        "EU-Batterierecht und industrielle Verfahren machen Recycling zu einer realen Skalierungsfrage. Hohe Rückgewinnung ist möglich, aber nur mit Rücknahme, Design, Demontage, Prozessqualität und sauberer Energie.",
+        "Rückgewinnungsquote, Rezyklatanteil, Lithiumrückgewinnung, Second Life und Prozessstrom sichtbar machen.",
+      ],
+      [
+        "Brandrisiko",
+        "Akkubrände sind real, aber das Narrativ vom unlöschbaren Akku ist zu grob. Moderne Batterie- und Feuerwehrpraxis arbeitet mit Überwachung, Kühlung, Eindämmung und angepassten Verfahren; LFP ist thermisch stabiler als viele nickelreiche Chemien.",
+        "Risiko nach Fahrzeugtyp, Batteriechemie, Unfallbild, Ladezustand und Einsatzkonzept bewerten.",
+      ],
+      [
+        "Lebensdauer",
+        "Viele Pkw-Hersteller geben lange Batteriegarantien, häufig um 8 Jahre und etwa 160.000 bis 250.000 km. Extrem hohe Laufleistungszusagen einzelner Hersteller oder Nutzfahrzeuganwendungen sind nicht der Standard für jedes E-Auto.",
+        "Garantie, reale Degradation, Restkapazität, Reparaturfähigkeit und Second-Life-Nutzung modellbezogen prüfen.",
+      ],
+      [
+        "Fossiler Vergleich",
+        "Benzin und Diesel werden importiert, raffiniert, transportiert und verbrannt. Danach ist der Energieträger weg und die Emission bleibt im System. Eine Batterie ist dagegen ein langlebiges Produkt und Materiallager.",
+        "Nicht Akku-Rucksack gegen leeren Verbrenner vergleichen, sondern beide Pfade vollständig bilanzieren.",
+      ],
+    ],
     solutionLead: "Die WÖk bewertet nicht Technologie-Lager, sondern Mobilitätswirkung über den Lebenszyklus.",
     clipHook: "E-Autos sind nicht perfekt. Aber der Verbrenner-Vergleich muss ehrlich sein.",
     caption: "Lebenszyklus statt Lagerkampf: Mobilität wirkungsökonomisch prüfen.",
+  },
+  "batterien-sind-nicht-recyclebar": {
+    title: "„Batterien sind nicht recyclebar“",
+    subtitle: "Rohstoffangst statt Kreislaufanalyse",
+    confidence: "hoch",
+    readingTime: "13 Minuten",
+    leadQuestion: "Welche Batterie wird wie lange genutzt, wie zurückgenommen und mit welcher Quote hochwertig recycelt?",
+    claimAnatomy: {
+      original: "Batterien sind nicht recyclebar.",
+      extended: "Akkus sind Sondermüll, brennen, brauchen Kobalt und Lithium und sind deshalb keine ökologische Lösung.",
+      trueCore: "Batterien haben reale Rohstoff-, Sicherheits-, Produktions- und Recyclingwirkungen.",
+      missingContext: "Recyclingfähigkeit hängt von Batteriechemie, Design, Rücknahme, Verfahren, Energiequelle, Regulierung und industrieller Skalierung ab.",
+      falseConclusion: "Aus anspruchsvollem Recycling folgt nicht, dass Batterien grundsätzlich nicht recyclebar oder E-Mobilität wirkungslos sind.",
+    },
+    trueText:
+      "Batterien sind anspruchsvolle Produkte. Sie enthalten Rohstoffe, brauchen Energie in der Herstellung und müssen am Ende der Nutzung sicher zurückgenommen und recycelt werden. Das ist ein echtes Wirkungsfeld, aber kein Beweis für Nicht-Recyclebarkeit.",
+    missingItems: [
+      "Batteriechemien unterscheiden sich: LFP kommt ohne Kobalt und Nickel in der Kathode aus, NMC/NCA haben andere Rohstoffprofile.",
+      "EU-Batterierecht setzt Vorgaben zu CO₂-Fußabdruck, Sorgfaltspflichten, Batteriepass, Recyclingeffizienz, Materialrückgewinnung und Rezyklatanteilen.",
+      "Lithium kann perspektivisch auch aus deutschen Tiefenwässern und geothermalen Solen gewonnen werden; das ist ein Potenzial- und Genehmigungspfad, keine automatische Entlastung.",
+      "Second Life kann die Nutzungsdauer verlängern, bevor Recycling ansteht.",
+      "Industrielles Recycling kann hohe Materialrückgewinnung erreichen, braucht aber Rücknahme, Demontage, Design und saubere Prozessenergie.",
+      "Akkubrände brauchen angepasste Brandbekämpfung, sind aber kein Argument für das Pauschalbild „unlöschbar“.",
+      "Fossile Kraftstoffe werden nicht recycelt: Benzin und Diesel werden verbrannt, der Kohlenstoff gelangt in die Atmosphäre.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty:
+        "Mittel bei künftigen Recyclingkapazitäten, Rücklaufmengen, Lithiumrückgewinnung, Wirtschaftlichkeit einzelner Verfahren, LFP-Recycling und realer Datenqualität aus Lieferketten.",
+      sourceKeys: ["fraunhofer_isi_battery_facts_2025", "eu_battery_regulation_2023", "fraunhofer_ilt_lfp_recycling", "iea_global_ev_2024", "bgr_lithium_tiefenwaesser", "fraunhofer_ise_geothermal_lithium", "nist_battery_fire_risk"],
+    },
+    wirkstoff: {
+      label: "Rohstoffangst als Endpunkt-Erzählung",
+      description: "Ein reales Rohstoff- und Recyclingthema wird so gerahmt, als sei jeder Akku automatisch ökologischer Stillstand.",
+      mechanism: "Aus technischer und industrieller Komplexität wird Unmöglichkeit gemacht.",
+      resonance: ["Sorge um Rohstoffe", "Misstrauen gegen neue Technik", "Brandangst", "Abwehr gegen Mobilitätswandel"],
+    },
+    narrative: {
+      message: "Die neue Lösung ist in Wahrheit Sondermüll.",
+      emotional: "Rohstoffangst und Sicherheitsangst entlasten vom Vergleich mit fossilen Pfaden.",
+      political: "Rücknahme, Recycling, Ladeinfrastruktur und Batteriewertschöpfung werden langsamer aufgebaut.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen übernehmen ein statisches Bild: Akku gleich Sondermüll."],
+      ["Wirkung 2. Ordnung", "Investitionen in Rücknahme, Recycling, Design und europäische Batteriewertschöpfung verlieren Akzeptanz."],
+      ["Wirkung 3. Ordnung", "Fossile Kraftstoffe werden indirekt geschont, obwohl sie nicht recycelbar sind, sondern verbrannt werden."],
+    ],
+    falseActions: [
+      ["Recycling", "Rücknahme- und Recyclinginfrastruktur wird zu langsam aufgebaut."],
+      ["Design", "Batterien werden weniger konsequent auf Demontage, Reparatur und Materialrückgewinnung optimiert."],
+      ["Rohstoffe", "Kritische Lieferketten werden nicht verbessert, sondern als Abbruchargument benutzt."],
+      ["Industrie", "Europäische Kreislauf- und Batteriekompetenz wird verzögert."],
+      ["Klima", "Fossile Nutzungspfade bleiben länger im System."],
+    ],
+    batteryAudit: [
+      ["Chemie", "LFP ohne Kobalt und Nickel in der Kathode schwächt das Kobalt-Narrativ, ersetzt aber keine Lithium-, Graphit-, Energie- und Lieferkettenprüfung.", "Batteriechemie immer nennen: LFP, NMC, NCA oder andere."],
+      ["Recycling", "EU-Regeln und industrielle Verfahren machen Recycling real. Entscheidend sind Rücklauf, Demontage, Sortierung, Prozessenergie und Rückgewinnungsquote.", "Rückgewinnungsquote, Recyclingeffizienz, Rezyklatanteil und Datenqualität getrennt ausweisen."],
+      ["Lithium", "Deutschland hat Potenzialpfade für Lithium aus Tiefenwässern und geothermalen Solen. Das ist kein Sofortargument, aber es widerlegt die völlige Ausweglosigkeit.", "Herkunft, Wasserwirkung, Genehmigung, lokale Akzeptanz und Energieeinsatz prüfen."],
+      ["Lade- und Produktionsstrom", "Ökostrompflichten in Förderprogrammen und erneuerbarer Produktionsstrom verändern die Bilanz gegenüber alten Durchschnittsstrom-Annahmen.", "Nicht pauschalisieren: Ladefall, Förderstatus, Stromvertrag und Produktionsstandort prüfen."],
+      ["Brand", "Lithium-Ionen-Brände sind anders zu bekämpfen, aber nicht automatisch unbeherrschbar. LFP ist thermisch stabiler als viele nickelreiche Zellchemien.", "Sicherheitsdaten, Chemie, Unfallbild, Feuerwehrkonzept und Nachkontrolle nennen."],
+      ["Lebensdauer", "Garantien sind modellabhängig; lange Garantien und hohe Laufleistungen sind ein Gegenargument gegen das Wegwerf-Bild, aber keine Pauschalgarantie für jedes Fahrzeug.", "Garantiebedingungen, Degradation, Restkapazität und Second Life modellbezogen prüfen."],
+      ["Fossiler Vergleich", "Akkus bleiben Materiallager. Benzin und Diesel werden verbrannt und können nicht zurückgewonnen werden.", "Batteriepfad nie gegen einen scheinbar wirkungsfreien Verbrenner vergleichen."],
+    ],
+    solutionLead: "Die WÖk macht aus Akku-Angst eine prüfbare Kreislauf- und Produktdatenstrategie.",
+    clipHook: "Akkus sind kein Zauberprodukt. Aber „nicht recyclebar“ ist als Pauschalsatz veraltet.",
+    caption: "Batterien prüfen: Chemie, Strom, Nutzung, Brandrisiko, Rücknahme, Recycling und Lieferkette.",
   },
   "kernenergie-einfache-loesung": {
     title: "„Kernenergie wäre die einfache Lösung“",
@@ -1891,6 +2143,28 @@ function renderWirkungOrders(detail) {
       </section>`;
 }
 
+function renderBatteryAudit(detail) {
+  if (!detail.batteryAudit) return "";
+  return `<section class="section section-soft deep-dive-section" id="akku-faktencheck">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Akku-Faktencheck</p>
+            <h2>Batterieargumente nicht wegwischen, sondern sauber bilanzieren.</h2>
+            <p>Der Akku-Frame wirkt stark, weil er reale Probleme benennt. Die Gegenstrategie ist nicht Beschwichtigung, sondern Präzision: Welche Batterie, welcher Strom, welche Nutzung, welches Recycling und welcher Vergleichspfad?</p>
+          </div>
+          <div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>Akku- und E-Auto-Prüfmatrix</caption>
+              <thead><tr><th>Prüffeld</th><th>Was heute dazugehört</th><th>Wirkungsökonomische Prüfung</th></tr></thead>
+              <tbody>
+                ${detail.batteryAudit.map(([field, context, check]) => `<tr><th scope="row">${escapeHtml(field)}</th><td>${escapeHtml(context)}</td><td>${escapeHtml(check)}</td></tr>`).join("\n                ")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>`;
+}
+
 function renderFalseActionAnalysis(detail) {
   return `<section class="section section-soft deep-dive-section" id="folgenanalyse">
         <div>
@@ -1994,6 +2268,7 @@ function renderDeepDiveDetail(claim) {
               <li><a href="#wirkstoff">Gesellschaftlicher Wirkstoff</a></li>
               <li><a href="#wirkungspfad">Wirkmechanismus</a></li>
               <li><a href="#wirkungsordnung">Wirkungsordnung</a></li>
+              ${detail.batteryAudit ? '<li><a href="#akku-faktencheck">Akku-Faktencheck</a></li>' : ""}
               <li><a href="#folgenanalyse">Folgenanalyse</a></li>
               <li><a href="#mpd">Mensch, Planet, Demokratie</a></li>
               <li><a href="#sdg">SDG-/SDG+-Bezug</a></li>
@@ -2029,6 +2304,7 @@ function renderDeepDiveDetail(claim) {
               </ol>
             </section>
             ${renderWirkungOrders(detail)}
+            ${renderBatteryAudit(detail)}
             ${renderFalseActionAnalysis(detail)}
             <section class="section deep-dive-section" id="mpd">
               <div class="section-header"><p class="hero-kicker">Bewertung nach Mensch, Planet, Demokratie</p><h2>MPD-Wirkungsrisiko.</h2></div>
