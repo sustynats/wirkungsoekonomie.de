@@ -206,6 +206,69 @@ const sourcePack = {
       use_for: ["Windkraft", "Artenschutz", "Planung und Genehmigung"],
     },
     {
+      label: "Umweltbundesamt - Ausbau Windenergie an Land 2-Prozent-Ziel",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/themen/ausbau-der-windenergie-an-land-2-prozent-ziel",
+      type: "amtlich",
+      use_for: ["2-Prozent-Flächenziel", "Ausbauziele Windenergie an Land", "Flächenbedarf"],
+    },
+    {
+      label: "Windenergieflächenbedarfsgesetz",
+      publisher: "Bundesministerium der Justiz / Gesetze im Internet",
+      url: "https://www.gesetze-im-internet.de/windbg/BJNR135310022.html",
+      type: "gesetz",
+      use_for: ["rechtlicher Rahmen", "Flächenbeitragswerte", "Windenergie an Land"],
+    },
+    {
+      label: "BfN - Windenergie im Wald",
+      publisher: "Bundesamt für Naturschutz",
+      url: "https://www.bfn.de/windenergie-im-wald",
+      type: "amtlich_fachlich",
+      use_for: ["Waldstandorte", "Arten- und Naturschutz", "sorgfältige Standortprüfung"],
+    },
+    {
+      label: "BfN - Windenergie an Land",
+      publisher: "Bundesamt für Naturschutz",
+      url: "https://www.bfn.de/windenergie-land",
+      type: "amtlich_fachlich",
+      use_for: ["Windenergie an Land", "Naturschutzkonflikte", "Genehmigungsfragen"],
+    },
+    {
+      label: "BfN - Vögel, Windenergie und Signifikanz",
+      publisher: "Bundesamt für Naturschutz",
+      url: "https://www.bfn.de/voegel-windenergie-und-signifikanz",
+      type: "amtlich_fachlich",
+      use_for: ["Vogelschutz", "Antikollisionssysteme", "Abschaltungen", "Minderungsmaßnahmen"],
+    },
+    {
+      label: "Umweltbundesamt - Windenergieanlagen Rückbau Recycling Repowering",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen-rueckbau-recycling-repowering",
+      type: "amtlich",
+      use_for: ["Rückbau", "Fundamente", "Beton und Stahl", "Recycling", "Repowering"],
+    },
+    {
+      label: "Umweltbundesamt - Infraschall von Windenergieanlagen",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/system/files/medien/4031/publikationen/umid_01-2021-infraschall.pdf",
+      type: "amtlich_wissenschaft",
+      use_for: ["Infraschall", "Gesundheitswirkung", "wissenschaftlicher Stand"],
+    },
+    {
+      label: "Fraunhofer ISE - Stromgestehungskosten 2024",
+      publisher: "Fraunhofer ISE",
+      url: "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/studie-stromgestehungskosten-erneuerbare-energien.html",
+      type: "wissenschaft",
+      use_for: ["Kostenvergleich", "Onshore-Wind", "Offshore-Wind", "Erneuerbare und konventionelle Erzeugung"],
+    },
+    {
+      label: "Umweltbundesamt - Emissionsbilanz erneuerbarer Energieträger",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/03_2025_cc_emissionsbilanz_erneuerbarer_energien_2023.pdf",
+      type: "amtlich",
+      use_for: ["vermiedene Emissionen", "Erneuerbare Energien", "Systemnutzen"],
+    },
+    {
       label: "BASE - Endlagersuche",
       publisher: "Bundesamt für die Sicherheit der nuklearen Entsorgung",
       url: "https://www.base.bund.de/de/endlager/endlagersuche/endlagersuche_inhalt.html",
@@ -476,7 +539,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Investitionssicherheit und Akzeptanz sinken, wenn Engpässe als Totalversagen gerahmt werden.", "critical"],
       ["WÖk-Lösung", "Von Lagerkampf zu Engpasslogik, Wirkungshaushalten und T-SROI für Infrastruktur.", "positive"],
     ],
-    claims: ["energiewende-gescheitert", "windraeder-zerstoeren-natur", "klimaschutz-ist-oekodiktatur", "co2-preis-oder-fossile-systemkosten"],
+    claims: ["energiewende-gescheitert", "windraeder-zerstoeren-natur", "windraeder-voegel-wald-beton-rueckbau", "klimaschutz-ist-oekodiktatur", "co2-preis-oder-fossile-systemkosten"],
   },
   {
     slug: "mobilitaet-batterien",
@@ -976,6 +1039,99 @@ const claims = [
       demokratie: "Akzeptanz wächst durch transparente Planung und Beteiligung.",
     },
     sources: ["Umweltbundesamt - Windenergie an Land"],
+  },
+  {
+    title: "Windräder zerstören Natur?",
+    slug: "windraeder-voegel-wald-beton-rueckbau",
+    claimPhrase: "„Windräder töten Vögel, zerstören Wald, machen krank und hinterlassen Beton.“",
+    shortJudgement: "Reale Zielkonflikte, aber falsches Blockadenarrativ.",
+    narrativeFamilies: ["Naturschutz gegen Klimaschutz", "Teilkonflikt als Blockade", "fossile Alternative unsichtbar", "Scheiternsframe"],
+    riskLevel: "hoch",
+    themes: ["Windkraft", "Artenschutz", "Wald", "Rückbau", "Gesundheit"],
+    sdgs: ["SDG 3", "SDG 7", "SDG 9", "SDG 11", "SDG 12", "SDG 13", "SDG 15", "SDG 16"],
+    sdgPlus: ["Diskursfähigkeit", "institutionelles Vertrauen", "kommunale Beteiligung", "Quellenklarheit", "Schutz vor Manipulation"],
+    subtitle: "Vögel, Fledermäuse, Wald, Beton, Infraschall und Rückbau im Folgencheck.",
+    abstract:
+      "Die Aussage „Windräder zerstören Natur“ enthält einen wahren Kern: Windenergieanlagen können Vögel und Fledermäuse gefährden, Waldstandorte verändern, Flächen beanspruchen, Betonfundamente benötigen, Landschaftsbilder prägen, Anwohner:innen belasten und beim Rückbau Recyclingfragen aufwerfen. Irreführend wird die Aussage, wenn daraus folgt, Windenergie sei grundsätzlich naturfeindlich oder fossile Energie sei die bessere Naturschutzoption. Wirkungsökonomisch liegt ein Zielkonflikt vor, kein Totalurteil. Ein fairer Vergleich betrachtet Standort, Artenschutz, Abschaltalgorithmen, Repowering, Rückbau, Materialkreislauf, Netzwirkung, fossile Alternativen, Klimaschäden, Luftschadstoffe und langfristige Biodiversitätsrisiken zusammen.",
+    summary: {
+      judgement: "Reale Zielkonflikte, aber falsches Blockadenarrativ.",
+      true_core: "Windenergie kann Vögel, Fledermäuse, Waldstandorte, Landschaft, Schall, Schatten, Fundamente und Rückbau betreffen.",
+      problem: "Einzelkonflikte werden als Gesamtbeweis gegen Windenergie genutzt, während fossile Alternativen unsichtbar bleiben.",
+      narrative: "Naturschutz gegen Klimaschutz / Teilkonflikt als Blockade / fossile Alternative unsichtbar.",
+      risk: "Legitime Standortkritik kippt in pauschale Blockade; fossile Stromerzeugung bleibt länger im System.",
+      host_answer: "Artenschutz ist real. Blockade ist keine Lösung. Standortscorecard statt Lagerkampf.",
+    },
+    answers: {
+      ten_seconds:
+        "Ja, Windräder haben Artenschutzkonflikte. Aber fossile Energie zerstört Natur systemisch. Die Lösung ist Standortscorecard, Abschaltung, Monitoring und Rückbau - nicht fossile Dauerabhängigkeit.",
+      thirty_seconds:
+        "Der wahre Kern ist: Windräder können Vögel, Fledermäuse, Waldstandorte und Landschaft beeinträchtigen. Der Denkfehler ist: daraus ein pauschales Nein zu Windenergie zu machen. Fossile Alternativen verursachen Klima-, Luft-, Wasser- und Biodiversitätsschäden. Die bessere Frage lautet: Welcher Standort, welche Schutzmaßnahmen und welche Energiealternative haben die beste Netto-Wirkung?",
+      two_minutes:
+        "Ich ordne das sauber ein. Windenergie ist nicht wirkungsfrei. Es gibt reale Konflikte mit Vögeln, Fledermäusen, Waldstandorten, Landschaft, Beton, Rückbau und Akzeptanz. Das muss man ernst nehmen. Aber daraus folgt nicht, dass fossile Energie die bessere Naturschutzoption ist. Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Bergbaufolgen, Wasserbelastungen, fossile Importabhängigkeit und massive Biodiversitätsrisiken. Wirkungsökonomisch vergleichen wir deshalb nicht Windrad gegen ideale Natur, sondern Windenergie am konkreten Standort gegen die realen Alternativen im Energiesystem. Die Lösung heißt: sensible Gebiete vermeiden, Artenschutzdaten nutzen, Fledermausabschaltungen, Antikollisionssysteme, Repowering, Rückbaupflichten, Recycling, Bürgerbeteiligung und eine Standortscorecard. Dann wird aus dem Kulturkampf ein echter Folgencheck.",
+    },
+    effectPath: [
+      ["Aussage", "„Windräder töten Vögel, zerstören Wald, machen krank und hinterlassen Beton.“"],
+      ["Wirkstoff", "Einzelkonflikt als Totalblockade."],
+      ["Verkürzung", "Lokale Zielkonflikte werden mit Gesamtwirkung verwechselt."],
+      ["Ausblendung", "Fossile Klimaschäden, Luftschadstoffe, Bergbau, Wasserbelastungen, Biodiversitätsrisiko durch Erderwärmung und Schutzmaßnahmen verschwinden."],
+      ["Resonanz", "Schutzimpuls, Heimatverlust, Angst vor Krankheit, Misstrauen gegen Planung."],
+      ["Narrativ", "„Grüne Energie zerstört Natur und Menschen.“"],
+      ["Wirkung erster Ordnung", "Ablehnung konkreter Projekte, Konflikte in Kommunen, Verunsicherung."],
+      ["Wirkung zweiter Ordnung", "Ausbau, Repowering, Netze und lokale Energiewertschöpfung verzögern sich."],
+      ["Wirkung dritter Ordnung", "Fossile Energie bleibt länger im System; Klimaschäden für Natur und Gesellschaft steigen."],
+    ],
+    frameKey: "verzoegerung",
+    redirectQuestion: "Vergleichst du Windräder gerade mit unberührter Natur - oder mit den realen Folgen von Kohle, Öl und Gas?",
+    dontDo: [
+      "Nicht sagen: Windräder töten keine Vögel.",
+      "Nicht Artenschutz gegen Klimaschutz ausspielen.",
+      "Nicht mit „Katzen töten mehr Vögel“ als Hauptargument reagieren.",
+      "Nicht Waldkonflikte kleinreden.",
+      "Nicht Infraschall-Sorgen verspotten.",
+      "Nicht Beton, Rückbau und Rotorblatt-Recycling ignorieren.",
+      "Nicht fossile Alternativen als neutral behandeln.",
+      "Nicht jede Kritik als Desinformation abtun.",
+      "Nicht Windenergie als immer und überall richtig darstellen.",
+    ],
+    facts: [
+      "Windenergie kann für bestimmte Vogel- und Fledermausarten reale Risiken erzeugen.",
+      "Wind im Wald erfordert besonders sorgfältige Standortprüfung und Naturschutzmaßnahmen.",
+      "Fundamente, Wege, Kabel, Stahl und Rotorblätter brauchen Rückbau-, Recycling- und Sicherungsstandards.",
+      "Nach aktuellem Forschungsstand stützt die Evidenz keine pauschale Gesundheitsbehauptung durch Windenergie-Infraschall unterhalb der Wahrnehmungsschwelle.",
+      "Fossile Alternativen verursachen Klima-, Luft-, Wasser-, Bergbau- und Biodiversitätsschäden.",
+    ],
+    consequences: [
+      "Aus legitimer Standortkritik wird pauschale Blockade.",
+      "Erneuerbarer Ausbau verzögert sich, fossile Emissionen bleiben länger hoch.",
+      "Kommunale Konflikte verhärten sich, statt bessere Schutzmaßnahmen zu erzwingen.",
+      "Klimawandel setzt Wälder, Arten, Böden und Gesundheit stärker unter Druck.",
+    ],
+    woekSolution: [
+      { title: "Standortscorecard für Windenergie", text: "Jeder Standort wird nach Arten, Wald, Boden, Wasser, Landschaft, Schall, Schatten, Netznutzen, Rückbau, Bürgerbeteiligung und fossilem Alternativenvergleich bewertet." },
+      { title: "Artenschutzdaten systematisch nutzen", text: "Brutplätze, Flugrouten, Nahrungshabitate, Fledermausaktivität und saisonale Risiken werden in Planung und Betrieb integriert." },
+      { title: "Abschaltregeln und Antikollisionssysteme", text: "Temporäre Abschaltungen bei Fledermausaktivität, Brutzeiten oder kritischen Flugereignissen senken Risiken." },
+      { title: "Wald differenziert bewerten", text: "Alte, naturnahe, artenreiche oder geschützte Wälder anders bewerten als vorbelastete, monotone oder bereits geschädigte Flächen." },
+      { title: "Repowering priorisieren", text: "Alte Anlagen werden ersetzt, wenn dadurch mehr Strom mit weniger Anlagen und besserem Artenschutz möglich wird." },
+      { title: "Rückbau und Recycling verpflichtend machen", text: "Fundamente, Wege, Betriebsmittel, Stahl, Beton und Rotorblätter brauchen Rückstellungen, Rückbaupflichten, Recyclingpfade und Nachweis." },
+      { title: "Kommunale Beteiligung und lokale Wertschöpfung", text: "Kommunen, Bürger:innen und Anwohner:innen müssen finanziell, planerisch und kommunikativ beteiligt werden." },
+      { title: "Fossile Alternativen mitbilanzieren", text: "Jede Ablehnung muss zeigen, welche Stromquelle stattdessen genutzt wird und welche Klima-, Gesundheits- und Naturwirkung daraus entsteht." },
+    ],
+    mpd: {
+      mensch: "Schlechte Standortplanung, mangelnde Beteiligung, Schall- und Schattenbelastung oder Vertrauensverlust können Menschen real belasten.",
+      planet: "Einzelne Windstandorte können Arten, Wald und Boden schädigen; fossile Verzögerung verschärft Klima- und Biodiversitätsrisiken.",
+      demokratie: "Zielkonflikte werden emotionalisiert und polarisieren Kommunen; legitime Sorgen können in Desinformation kippen.",
+    },
+    sources: [
+      "Umweltbundesamt - Ausbau Windenergie an Land 2-Prozent-Ziel",
+      "Windenergieflächenbedarfsgesetz",
+      "BfN - Windenergie im Wald",
+      "BfN - Windenergie an Land",
+      "BfN - Vögel, Windenergie und Signifikanz",
+      "Umweltbundesamt - Windenergieanlagen Rückbau Recycling Repowering",
+      "Umweltbundesamt - Infraschall von Windenergieanlagen",
+      "Fraunhofer ISE - Stromgestehungskosten 2024",
+      "Umweltbundesamt - Emissionsbilanz erneuerbarer Energieträger",
+    ],
   },
   {
     title: "„E-Autos sind schlimmer als Verbrenner“",
@@ -2971,6 +3127,179 @@ function sourceCards(cards) {
           </div>`;
 }
 
+const windKeyPoints = [
+  ["Vögel und Fledermäuse sind reale Schutzgüter", "Windenergie kann Kollisionen, Störungen und Habitatkonflikte verursachen. Das muss über Standortwahl, Monitoring und Schutzmaßnahmen ernsthaft minimiert werden.", "warning"],
+  ["Fossile Alternativen sind nicht naturneutral", "Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Wasserbelastungen, Bergbaufolgen, Flächenverbrauch und Biodiversitätsverluste.", "critical"],
+  ["Waldstandorte sind besonders sensibel", "Wind im Wald kann möglich sein, erfordert aber strenge Standortprüfung, Ausschluss ökologisch wertvoller Flächen und wirksame Schutzmaßnahmen.", "warning"],
+  ["Beton und Rückbau müssen geregelt sein", "Fundamente, Wege, Kabel, Stahl, Rotorblätter und Betriebsmittel brauchen Rückbau-, Recycling- und Sicherungsstandards.", "neutral"],
+  ["Infraschall darf nicht als Panikframe dienen", "Sorgen müssen ernst genommen werden. Pauschale Gesundheitsbehauptungen brauchen aber belastbare Evidenz.", "warning"],
+  ["WÖk-Lösung: Standortscorecard", "Jeder Standort wird nach Klima, Arten, Wald, Boden, Landschaft, Gesundheit, Akzeptanz, Rückbau, Netznutzen und Alternativenvergleich bewertet.", "positive"],
+];
+
+const windBoundaryMatrix = [
+  ["Einzelanlage", "Welche Wirkung hat dieses Windrad?", "Standort, Arten, Schall, Schatten, Fundament", "Energiesystem und fossile Alternativen"],
+  ["Artenschutz", "Welche Arten sind betroffen?", "Vögel, Fledermäuse, Habitate, Zugrouten", "Klimarisiko für Arten und Lebensräume"],
+  ["Waldstandort", "Welche Waldwirkung entsteht?", "Rodung, Wege, Quartiere, Boden", "Standortunterschiede und Alternativen"],
+  ["Material", "Welche Rohstoffe und Baustoffe werden genutzt?", "Beton, Stahl, Verbundstoffe, Seltene Erden je nach Technik", "vermiedene fossile Brennstoffe"],
+  ["Rückbau", "Was passiert nach Betriebsende?", "Fundament, Rotorblätter, Recycling, Boden", "Lebenszyklusnutzen der Stromerzeugung"],
+  ["Energiesystem", "Was ersetzt Windstrom?", "CO₂-Minderung, Versorgung, Preis, Speicherbedarf", "lokale Konflikte"],
+  ["Gesundheit", "Welche Belastungen entstehen?", "Schall, Schatten, Stress, Akzeptanz", "Klimagesundheit und Luftschadstoffe fossiler Alternativen"],
+  ["Demokratie", "Wie wird entschieden?", "Beteiligung, Vertrauen, Transparenz, Konfliktkultur", "technische Detailfragen"],
+];
+
+const windSubclaims = [
+  ["„Windräder töten Vögel“", "Realer Artenschutzkonflikt, aber kein pauschales Blockadeargument.", "Ja, Windenergieanlagen können für bestimmte Vogelarten gefährlich sein. Besonders relevant sind kollisionsgefährdete Arten und Standorte mit Brutplätzen, Nahrungshabitaten oder Flugkorridoren. Der Denkfehler beginnt, wenn aus diesem realen Konflikt ein pauschales Nein zu Windenergie abgeleitet wird. Wirkungsökonomisch zählt der Standort: Welche Arten sind betroffen? Welche Daten liegen vor? Welche Abstände, Abschaltungen, Antikollisionssysteme oder Ausgleichsmaßnahmen sind möglich? Und welche fossilen Klima- und Biodiversitätsschäden werden durch Windenergie vermieden?", "Welche Kombination aus Standortwahl, Artenschutzdaten, Abschaltregeln und Alternativenvergleich schützt Arten und Klima am besten?"],
+  ["„Windräder töten Fledermäuse“", "Reales Risiko; Abschaltalgorithmen, Standortwahl und Monitoring sind zentrale Gegenmaßnahmen.", "Fledermäuse können durch Kollision oder Druckunterschiede gefährdet werden. Das ist ein ernstes Betriebs- und Standortthema. Wirksame Antworten sind Fledermausaktivitätsdaten, saisonale Abschaltungen, Monitoring, sensible Standortwahl und lernender Betrieb.", "Welche Abschaltregeln und Standortdaten senken Fledermausrisiken ohne fossile Schäden zu verlängern?"],
+  ["„Windräder zerstören den Wald“", "Wahrer Waldschutzkern, falsches Pauschalurteil.", "Windenergie im Wald ist besonders sensibel. Alte Wälder, naturnahe Wälder, Schutzgebiete, Fledermausquartiere, Brutplätze, Feuchtgebiete und ökologisch wertvolle Lebensräume dürfen nicht leichtfertig überplant werden. Aber nicht jeder Waldstandort ist gleich. Monotone Wirtschaftswälder, vorbelastete Flächen, Kalamitätsflächen oder Standorte mit geringer ökologischer Konfliktlage müssen anders bewertet werden als alte naturnahe Wälder.", "Wo kann Windenergie mit geringster Wald- und Artenwirkung den größten fossilen Schaden ersetzen?"],
+  ["Beton, Fundamente und Rückbau", "Reales Material- und Rückbauthema, aber kein Gesamtargument gegen Windenergie.", "Windenergieanlagen benötigen Fundamente, Zuwegungen, Stahl, Beton, Kabel, Transformatoren und Rotorblätter. Das ist Wirkung. Deshalb braucht Windenergie klare Rückbau- und Recyclingregeln. Flachgründungen sollten nach UBA-Empfehlung vollständig zurückgebaut werden; Beton und Stahl können getrennt und materialspezifisch verwertet werden. Schwieriger sind Rotorblätter aus faserverstärkten Kunststoffen.", "Welche Rückbau-, Recycling- und Materialstandards machen Windenergie über den Lebenszyklus am wirkungsvollsten?"],
+  ["„Rotorblätter sind Sondermüll“", "Recycling ist anspruchsvoll, aber lösbar und regulierungsbedürftig.", "Rotorblätter aus faserverstärkten Kunststoffen sind schwieriger zu verwerten als Stahl oder Beton. Das ist kein Wegwischpunkt. Es braucht Produktverantwortung, Design for Recycling, Recyclingkapazitäten, Nachweisregeln und Rückstellungen.", "Welche Kreislaufpfade brauchen Rotorblätter, damit das Materialproblem nicht verdrängt wird?"],
+  ["Infraschall und Gesundheit", "Sorgen ernst nehmen, Panikframe vermeiden.", "Windenergieanlagen erzeugen Schall, darunter auch tieffrequenten Schall und Infraschall. Anwohner:innen können sich durch hörbaren Schall, Schattenwurf, Befeuerung oder visuelle Dominanz belastet fühlen. Diese Belastungen sind ernst zu nehmen. Nach aktuellem Forschungsstand gibt es jedoch keine belastbare Evidenz dafür, dass Infraschall von Windenergieanlagen unterhalb der Wahrnehmungsschwelle gesundheitliche Schäden verursacht.", "Welche Standort-, Schall-, Schatten- und Beteiligungsregeln minimieren reale Belastung und Angst?"],
+  ["„Windräder verschandeln die Landschaft“", "Landschaftswirkung ist real, aber kein objektiver Beweis gegen Windenergie.", "Landschaft, Heimatgefühl und Sichtbarkeit sind echte Akzeptanzfaktoren. Sie ersetzen aber nicht den Alternativenvergleich. Wirkungsökonomisch müssen Beteiligung, lokale Wertschöpfung, Sichtachsen, Schutzräume, Netznutzen und fossile Folgekosten zusammen geprüft werden.", "Wie wird Landschaftswirkung fair abgewogen, ohne fossile Schäden unsichtbar zu machen?"],
+  ["„Ohne Wind gibt es keinen Strom“", "Systemfrage: Wind braucht Netze, Speicher, Flexibilität, europäische Kopplung und andere Erneuerbare.", "Windenergie ist kein Allein-System. Versorgungssicherheit entsteht aus Portfolio, Netzen, Speichern, Lastmanagement, Reserve, europäischer Kopplung, Solar, Biomasse, Wasserkraft und Verbrauchsflexibilität. Das ist ein Systemdesign-Problem, kein Beweis gegen Windenergie.", "Welche Systemarchitektur macht Windstrom verlässlich, bezahlbar und netzdienlich?"],
+];
+
+const windManipulationPatterns = [
+  ["Teilfakt als Totalurteil", "Ein echter Konflikt wird als Gesamtbeweis gegen Windenergie genutzt.", "Teilaspekt anerkennen und Systemgrenze öffnen."],
+  ["Fossile Alternative unsichtbar", "Wind wird mit idealer Natur verglichen, nicht mit realen fossilen Schäden.", "Alternativenvergleich erzwingen."],
+  ["Einzelfall als Systembeweis", "Ein schlecht geplanter Standort wird als Beweis gegen alle Windenergie genutzt.", "Standortqualität, Daten und Schutzmaßnahmen prüfen."],
+  ["Angstanker", "Maximalbilder wie Betonwüste, Vogelsterben oder Krankheit bleiben emotional hängen.", "Angst anerkennen, Daten und konkrete Schutzregeln zeigen."],
+  ["Falsches Dilemma", "Es wird so getan, als müsse man zwischen Natur und Klimaschutz wählen.", "Gemeinsames Ziel setzen: Natur und Klima gegen fossile Schäden."],
+  ["Beweislastumkehr", "Unbelegte Gesundheitsbehauptungen müssen angeblich widerlegt werden.", "Welche konkrete Evidenz, welcher Schallpegel, welche Quelle?"],
+];
+
+const windExternalSources = [
+  ["UBA - Ausbau Windenergie an Land: 2-Prozent-Ziel", "Das 2-Prozent-Flächenziel bis 2032 und die Einordnung des Flächenbedarfs.", "Flächenziel, Ausbauziele und Systembedarf.", "Flächenziel ist nicht gleich konkrete Genehmigung; Standortqualität bleibt entscheidend.", "https://www.umweltbundesamt.de/themen/ausbau-der-windenergie-an-land-2-prozent-ziel"],
+  ["Windenergieflächenbedarfsgesetz", "Rechtlicher Rahmen und Flächenbeitragswerte.", "Rechtsrahmen für Windenergieflächen.", "Rechtsstand regelmäßig prüfen.", "https://www.gesetze-im-internet.de/windbg/BJNR135310022.html"],
+  ["BfN - Windenergie im Wald", "Waldstandorte brauchen besonders sorgfältige Untersuchung von Arten und Lebensstätten.", "Wald, Arten- und Naturschutz, Standortprüfung.", "Differenziert lesen; nicht als pauschales Ja oder Nein.", "https://www.bfn.de/windenergie-im-wald"],
+  ["BfN - Vögel, Windenergie und Signifikanz", "Minderungsmaßnahmen wie Antikollisionssysteme und Abschaltungen werden fachlich eingeordnet.", "Vogelschutz und Minderungsmaßnahmen.", "Wirksamkeit und Eignung bleiben standortabhängig.", "https://www.bfn.de/voegel-windenergie-und-signifikanz"],
+  ["UBA - Rückbau, Recycling, Repowering", "Rückbau, Recycling und Repowering von Windenergieanlagen.", "Fundamente, Beton, Stahl, Rotorblätter und Produktverantwortung.", "Rotorblätter und Verbundstoffe bleiben besondere Herausforderung.", "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen-rueckbau-recycling-repowering"],
+  ["UBA - Infraschall von Windenergieanlagen", "Einordnung tieffrequenten Schalls und Infraschalls.", "Gesundheitsframe und Bürgerkommunikation.", "Keine pauschale Einzelfallprüfung; Langzeitfragen weiter beobachten.", "https://www.umweltbundesamt.de/system/files/medien/4031/publikationen/umid_01-2021-infraschall.pdf"],
+  ["Fraunhofer ISE - Stromgestehungskosten 2024", "Kostenvergleich verschiedener Stromerzeugungstechnologien.", "Kosten- und Alternativenvergleich.", "Stromgestehungskosten sind nicht Endkundenpreis; Systemkosten ergänzen.", "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/studie-stromgestehungskosten-erneuerbare-energien.html"],
+  ["UBA - Emissionsbilanz erneuerbarer Energieträger", "Vermiedene Emissionen durch erneuerbare Energien.", "Systemnutzen und fossile Verdrängung.", "Jahresbezogene Bilanz; Standortwirkung separat prüfen.", "https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/03_2025_cc_emissionsbilanz_erneuerbarer_energien_2023.pdf"],
+];
+
+function renderWindEnergyNatureDossier(claim, mode = "live") {
+  const answers = expandedAnswers(claim);
+  const sectionLabel = mode === "detail" ? "Detail" : "Live";
+  const canonicalPath = mode === "detail" ? "detail" : "live";
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero dossier-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / Windenergie</nav>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <h1 class="hero-title">Windräder zerstören Natur?</h1>
+          <p class="hero-subtitle">${escapeHtml(claim.subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
+          <p class="radar-abstract"><strong>Kurzformel:</strong> Artenschutz ist real. Blockade ist keine Lösung. Standortscorecard statt Lagerkampf.</p>
+          <p class="formula-note"><strong>Hero-Hinweis:</strong> Dieses Dossier verharmlost keine Artenschutzkonflikte. Es prüft, wann Windenergie schädlich, vertretbar oder besonders wirksam ist.</p>
+          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Status: checked_candidate</span></p>
+        </div>
+      </section>
+      ${summaryGrid(windKeyPoints, "Windenergie Dossier - Das Wichtigste in 6 Punkten")}
+      <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
+        <a href="#live-antworten">Live antworten</a>
+        <a href="#zielkonflikt-verstehen">Zielkonflikt verstehen</a>
+        <a href="#deep-dive-quellen">Deep Dive &amp; Quellen</a>
+      </nav>
+      <section class="section dossier-tab-panel" id="live-antworten">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Artenschutz anerkennen, Blockadenarrativ trennen.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame „Wind gegen Natur“. Die bessere Wirkungsfrage lautet: Welche Energieform schützt Klima, Arten, Gesundheit und Versorgung am besten im Gesamtsystem?</p></article>
+          </div>
+          <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+        </div>
+      </section>
+      <section class="section section-soft dossier-tab-panel" id="zielkonflikt-verstehen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Zielkonflikt verstehen</p><h2>Nicht Natur gegen Klima. Natur und Klima gegen fossile Folgekosten.</h2><p>Die Windenergie-Debatte ist ein Musterfall für Zielkonflikte. Sie berührt Klima, Arten, Landschaft, Wald, Gesundheit, Anwohner:innen, Energiepreise, Versorgungssicherheit, Industrie, Kommunen und Demokratie. Der Fehler vieler Narrative liegt darin, nur einen Ausschnitt sichtbar zu machen: den toten Vogel, den gefällten Baum, das Betonfundament oder die Angst vor Infraschall. Diese Punkte können real sein. Aber sie sind kein vollständiger Wirkungsvergleich.</p></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list">${claim.facts.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+            <article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list"><li>Fossile Energie zerstört Natur ebenfalls: durch Klimaschäden, Luftschadstoffe, Bergbau, Wasserbelastung, Infrastruktur, Transport und Extremwetter.</li><li>Klimawandel ist selbst ein massives Risiko für Arten, Wälder, Böden und Ökosysteme.</li><li>Nicht jeder Standort ist gleich: sensible Brutgebiete, Zugrouten, alte Wälder und Fledermaus-Hotspots müssen anders bewertet werden als vorbelastete Flächen.</li><li>Moderne Schutzmaßnahmen können Risiken senken: Abschaltzeiten, Monitoring, Antikollisionssysteme, Mindestabstände, Standortdaten und Repowering.</li><li>Der Denkfehler ist nicht, Artenschutz zu fordern. Der Denkfehler ist, Artenschutz als fossiles Verzögerungsargument zu benutzen.</li></ul></article>
+          </div>
+          <div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>Welche Systemgrenze wird gesetzt?</caption>
+              <thead><tr><th>Bilanzgrenze</th><th>Leitfrage</th><th>Was sie zeigt</th><th>Was sie ausblenden kann</th></tr></thead>
+              <tbody>${windBoundaryMatrix.map(([boundary, question, shows, hides]) => `<tr><th scope="row">${escapeHtml(boundary)}</th><td>${escapeHtml(question)}</td><td>${escapeHtml(shows)}</td><td>${escapeHtml(hides)}</td></tr>`).join("")}</tbody>
+            </table>
+          </div>
+          <p class="formula-note">Keine Bilanzgrenze allein reicht. Windenergie muss standortspezifisch und systemisch bewertet werden.</p>
+        </div>
+      </section>
+      <section class="section dossier-tab-panel" id="unterclaims">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Unterclaims</p><h2>Einzelkonflikte sauber aufklappen.</h2></div>
+          <div class="radar-answer-accordion">${windSubclaims.map(([title, judgement, text, question]) => `<details class="radar-answer-item"><summary><span class="radar-answer-time">${escapeHtml(title)}</span> <span class="radar-answer-label">${escapeHtml(judgement)}</span></summary><p>${escapeHtml(text)}</p><p><strong>Bessere Wirkungsfrage:</strong> ${escapeHtml(question)}</p></details>`).join("\n            ")}</div>
+        </div>
+      </section>
+      <section class="section section-soft" id="psychologischer-wirkungscheck">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum Tier-, Wald- und Heimatbilder so stark wirken.</h2><p>Bilder von toten Vögeln, gerodetem Wald oder riesigen Betonfundamenten sind konkret und emotional. Fossile Klimaschäden sind dagegen verteilt, zeitverzögert und weniger sichtbar. Dadurch wirkt der lokale Windkonflikt oft größer als die systemischen Schäden der fossilen Alternative.</p></div>
+          ${summaryGrid([["Primäre Effekte", "Verfügbarkeitsheuristik, Negativity Bias, Scope Neglect, Verlustaversion, Status-quo-Bias", "warning"], ["Emotionale Trigger", "Schutzimpuls für Tiere, Angst um Wald, Heimatverlust, Angst vor Krankheit, Kontrollverlust", "warning"], ["Identität", "Heimat und Landschaft, ländlicher Raum gegen Stadtpolitik, Bürger:innen gegen Investoren", "warning"], ["Oberhand gewinnen", "Zielkonflikt anerkennen, Standort statt Pauschalurteil prüfen, fossile Alternativen sichtbar machen, zur Standortscorecard zurückführen.", "positive"]], "Wind Psychologie", "deep-dive-inline-summary")}
+        </div>
+      </section>
+      <section class="section" id="deep-dive-quellen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Deep Dive &amp; Quellen</p><h2>Wirkstoff, Manipulationsmuster, Wirkungspfad und Quellen.</h2></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Wirkstoff</p><h3 class="card-title">Einzelkonflikt als Totalblockade</h3><p class="card-text">Ein realer lokaler Zielkonflikt - Vogel, Fledermaus, Wald, Beton, Landschaft oder Infraschall - wird als Gesamtbeweis gegen Windenergie benutzt. Die Aussage verschiebt Aufmerksamkeit von Systemvergleich und fossilen Alternativen auf emotional starke Einzelbilder.</p></article>
+            <article class="card"><p class="card-kicker">Narrativanalyse</p><h3 class="card-title">Naturschutz gegen Klimaschutz</h3><p class="card-text">Naturschutzkritik ist legitim. Problematisch wird sie, wenn sie nicht zu besserer Standortplanung führt, sondern fossile Pfade verlängert.</p></article>
+          </div>
+          <div class="card-grid deep-dive-source-grid">${windManipulationPatterns.map(([label, description, counter]) => `<article class="card"><p class="card-kicker">Manipulationsmuster</p><h3 class="card-title">${escapeHtml(label)}</h3><p class="card-text">${escapeHtml(description)}</p><p class="card-text"><strong>Gegenbewegung:</strong> ${escapeHtml(counter)}</p></article>`).join("")}</div>
+          <ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Folgen falschen Handelns</p><ul class="clean-list">${claim.consequences.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+            <article class="card"><p class="card-kicker">Leitsatz</p><h3 class="card-title">Ein realer Zielkonflikt ist kein Freibrief für fossile Dauerabhängigkeit.</h3><p class="card-text">Der faire Vergleich lautet nicht: Windrad gegen perfekte Natur. Der faire Vergleich lautet: Windenergie mit Schutzmaßnahmen gegen fossile Energie mit ihren realen Folgekosten.</p></article>
+          </div>
+          ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], "Wind MPD", "mpd-impact-panel")}
+          ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], "Wind SDG", "climate-sdg-panel")}
+          ${woekSolutionMatrix(claim.woekSolution)}
+          <section class="section section-soft" aria-labelledby="wind-internal-links">
+            <div class="card">
+              <p class="card-kicker">Interne Links</p>
+              <h2 class="card-title" id="wind-internal-links">Narrative, Begriffe und verwandte Dossiers.</h2>
+              <div class="radar-link-cluster">
+                <a href="/wirkungsradar/narrative/naturschutz-gegen-klimaschutz/">Naturschutz gegen Klimaschutz</a>
+                <a href="/wirkungsradar/narrative/teilkonflikt-als-blockade/">Teilkonflikt als Blockade</a>
+                <a href="/wirkungsradar/narrative/infraschall-angst/">Infraschall-Angst</a>
+                <a href="/wirkungsradar/narrative/windkraft-zerstoert-heimat/">Windkraft zerstört Heimat</a>
+                <a href="/wirkungsradar/narrative/fossile-alternative-unsichtbar/">Fossile Alternative unsichtbar</a>
+                <a href="/begriffe/standortscorecard/">Standortscorecard</a>
+                <a href="/begriffe/zielkonflikt/">Zielkonflikt</a>
+                <a href="/begriffe/repowering/">Repowering</a>
+                <a href="/begriffe/fossile-alternative/">Fossile Alternative</a>
+                <a href="/begriffe/infraschall/">Infraschall</a>
+                <a href="/begriffe/rueckbaupflicht/">Rückbaupflicht</a>
+                <a href="/begriffe/antikollisionssystem/">Antikollisionssystem</a>
+                <a href="/begriffe/fledermausabschaltung/">Fledermausabschaltung</a>
+                <a href="/wirkungsradar/live/deutschland-nur-zwei-prozent/">Deutschland nur 2 %?</a>
+                <a href="/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/">CO₂-Preis oder fossile Systemkosten?</a>
+                <a href="/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/">E-Autos und Lebenszyklus</a>
+              </div>
+            </div>
+          </section>
+          ${sourceCards(windExternalSources)}
+          ${internalLinks()}
+          ${factStatusBadge()}
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: `Windräder, Vögel, Wald, Beton und Rückbau - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
+    base: "../../../",
+    main,
+  });
+}
+
 function renderCo2SystemCostsDossier(claim, mode = "live") {
   const answers = expandedAnswers(claim);
   const base = mode === "detail" ? "../../../" : "../../../";
@@ -3090,6 +3419,7 @@ function renderCo2SystemCostsDossier(claim, mode = "live") {
 function renderLiveCard(claim) {
   if (claim.slug === "deutschland-nur-zwei-prozent") return renderGermanyTwoPercentDossier(claim);
   if (claim.slug === "co2-preis-oder-fossile-systemkosten") return renderCo2SystemCostsDossier(claim, "live");
+  if (claim.slug === "windraeder-voegel-wald-beton-rueckbau") return renderWindEnergyNatureDossier(claim, "live");
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
   const detailLink = deepDiveLiveLink(claim);
@@ -3194,8 +3524,82 @@ function dataModel() {
   };
 }
 
+const windNarrativePages = [
+  ["naturschutz-gegen-klimaschutz", "Naturschutz gegen Klimaschutz", "Wenn ein realer Zielkonflikt zum falschen Entweder-oder wird.", "hoch", "Das Narrativ stellt Klima- und Naturschutz als Gegensätze dar. Der wahre Kern ist: Windenergie kann lokale Arten-, Wald- und Landschaftskonflikte erzeugen. Der Denkfehler ist, daraus ein Entweder-oder zu machen. Ohne Klimaschutz verliert Naturschutz langfristig seine Lebensgrundlage.", "Zielkonflikt anerkennen, fossile Alternative sichtbar machen, Standortscorecard verlangen."],
+  ["teilkonflikt-als-blockade", "Teilkonflikt als Blockade", "Wenn ein echter Einzelkonflikt als Gesamtargument gegen Transformation genutzt wird.", "hoch", "Ein echter Konflikt - Vogel, Fledermaus, Wald, Beton, Landschaft oder Schall - wird als Totalbeweis gegen Windenergie verwendet. So verschwindet die Frage nach Standortqualität, Minderungsmaßnahmen und Alternativenvergleich.", "Teilfakt anerkennen, Systemgrenze öffnen, konkrete Lösung statt Pauschalurteil verlangen."],
+  ["infraschall-angst", "Infraschall-Angst", "Wenn schwer wahrnehmbare Risiken zu einem Kontrollverlustframe werden.", "mittel", "Der Frame wirkt, weil unsichtbare oder schwer wahrnehmbare Risiken Kontrollverlust auslösen können. Reale Belastung durch hörbaren Schall, Schattenwurf und Stress muss ernst genommen werden. Pauschale Gesundheitsbehauptungen zu Infraschall brauchen aber belastbare Evidenz.", "Sorge anerkennen, messbare Immissionen, Abstände, Schallgutachten und Beteiligung prüfen."],
+  ["windkraft-zerstoert-heimat", "Windkraft zerstört Heimat", "Wenn Landschaftsveränderung als Identitätsverlust gerahmt wird.", "hoch", "Landschaft ist nicht nur Fläche, sondern Zugehörigkeit, Erinnerung und Heimatgefühl. Problematisch wird der Frame, wenn Landschaftsverlust absolut gesetzt und fossile Alternativen, lokale Wertschöpfung oder Beteiligung unsichtbar werden.", "Heimatgefühl anerkennen, Beteiligung stärken, Landschaftswirkung und fossile Folgekosten gemeinsam bilanzieren."],
+  ["fossile-alternative-unsichtbar", "Fossile Alternative unsichtbar", "Wenn erneuerbare Technologien mit idealer Natur statt realen Alternativen verglichen werden.", "hoch", "Windenergie wird mit unberührter Natur verglichen, nicht mit Kohle, Öl und Gas samt Klimaschäden, Bergbau, Luftschadstoffen, Wasserbelastung und Importabhängigkeit. Dadurch wirkt der Status quo neutral, obwohl er ebenfalls Wirkung erzeugt.", "Immer fragen: Welche Energie ersetzt das Windrad, und welche Wirkung hat diese Alternative?"],
+];
+
+const windGlossaryTerms = [
+  ["standortscorecard", "Standortscorecard", "Wirkungsökonomische Bewertung eines konkreten Standorts nach Klima-, Arten-, Boden-, Gesundheits-, Akzeptanz-, Infrastruktur- und Alternativenwirkung.", "Eine Standortscorecard ersetzt Pauschalurteile durch konkrete Wirkungsprüfung."],
+  ["zielkonflikt", "Zielkonflikt", "Situation, in der mehrere legitime Ziele gleichzeitig betroffen sind, etwa Klimaschutz und Artenschutz.", "Ein Zielkonflikt ist kein Totalargument. Er verlangt Abwägung, Daten und bessere Gestaltung."],
+  ["repowering", "Repowering", "Ersatz älterer Energieanlagen durch leistungsfähigere neue Anlagen, oft mit höherem Ertrag und besserer Steuerbarkeit.", "Repowering kann mehr Strom mit weniger oder besser platzierten Anlagen ermöglichen."],
+  ["fossile-alternative", "Fossile Alternative", "Reale Energieerzeugung aus Kohle, Öl oder Gas, die als Vergleich mit erneuerbaren Energien mitbilanziert werden muss.", "Wer Wind ablehnt, muss zeigen, welche Alternative die Energie liefert und welche Wirkung sie hat."],
+  ["infraschall", "Infraschall", "Schall unterhalb des üblichen Hörbereichs des Menschen, der natürlich und technisch entstehen kann.", "Bei Windenergieanlagen ist die pauschale Behauptung gesundheitlicher Schäden durch Infraschall nach aktueller Evidenz nicht belegt."],
+  ["rueckbaupflicht", "Rückbaupflicht", "Pflicht, Anlagen nach Betriebsende sachgerecht zurückzubauen und Materialien zu entsorgen oder zu recyceln.", "Rückbaupflichten schützen Boden, Eigentümer:innen und Kommunen vor späteren Kosten."],
+  ["antikollisionssystem", "Antikollisionssystem", "Technisches System, das kollisionsgefährdete Vögel erkennt und Windenergieanlagen bei Risiko temporär abschalten kann.", "Antikollisionssysteme können Artenschutzrisiken senken, ersetzen aber keine gute Standortwahl."],
+  ["fledermausabschaltung", "Fledermausabschaltung", "Betriebsregel, bei der Windenergieanlagen zu Zeiten hoher Fledermausaktivität temporär abgeschaltet werden.", "Fledermausabschaltungen sind ein zentraler Baustein zur Risikominderung."],
+];
+
+function renderWindNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / ${escapeHtml(title)}</nav>
+          <p class="hero-kicker">Narrativbibliothek · Windenergie</p>
+          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(abstract)}</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Wirkungsrisiko: ${escapeHtml(riskLevel)}</span></p>
+        </div>
+      </section>
+      ${topicSubnav("Narrative", "../")}
+      ${summaryGrid([["Risiko", riskLevel, riskLevel === "hoch" ? "critical" : "warning"], ["Typische Wirkung", "Zielkonflikt wird emotional verkürzt.", "warning"], ["Gegenbewegung", response, "positive"], ["Leuchtturm-Dossier", "Windräder, Vögel, Wald, Beton und Rückbau", "positive"]], `${title} Summary`)}
+      <section class="section">
+        <div class="card-grid two">
+          <article class="card"><p class="card-kicker">Psychologischer Hebel</p><h2 class="card-title">Konkrete Bilder schlagen abstrakte Systemfolgen.</h2><p class="card-text">Verfügbarkeitsheuristik, Verlustaversion, Heimatbindung und Negativity Bias machen lokale Konfliktbilder besonders anschlussfähig.</p></article>
+          <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht beschwichtigen, nicht spiegeln, nicht entwerten. Sondern Zielkonflikt anerkennen und zur besseren Wirkungsfrage zurückführen.</p></article>
+        </div>
+        <p><a class="btn btn-primary" href="../../live/windraeder-voegel-wald-beton-rueckbau/">Windenergie-Dossier öffnen</a></p>
+      </section>
+    </main>`;
+  return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
+}
+
+function renderWindGlossaryPage([slug, label, definition, hover]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="term-hero">
+        <div class="term-hero__copy">
+          <nav class="breadcrumb"><a href="../">Begriffe</a> / ${escapeHtml(label)}</nav>
+          <p class="eyebrow">Glossar der Wirkungsökonomie</p>
+          <h1>${escapeHtml(label)}</h1>
+          <p class="lead">${escapeHtml(definition)}</p>
+          <p class="term-meta">Kategorie: Wirkungsradar · Windenergie · Datenstand: ${UPDATED_AT}</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/">Windenergie-Dossier</a><a class="btn btn-secondary" href="../">Alle Begriffe</a></div>
+        </div>
+      </section>
+      <div class="term-page">
+        <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
+        <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
+        <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Windenergie nicht als Lagerfrage, sondern als konkrete Wirkungsprüfung nach Mensch, Planet und Demokratie zu behandeln.</p></section>
+      </div>
+    </main>`;
+  return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
+}
+
 writeFile("content/wirkungsradar/source-packs/climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(sourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/deep-dive-climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(deepDiveSourcePack).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/wind-energy-nature-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
+  id: "wind-energy-nature-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  sources: Object.fromEntries(windExternalSources.map(([title, shows, use_for, warning, url]) => [
+    title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, ""),
+    { label: title, url, use_for: [use_for], warning, shows },
+  ])),
+}).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy-mapping.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(mapping).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy.yml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(dataModel()).trim()}\n`);
 writeFile("wirkungsradar/detail/index.html", renderDetailIndex());
@@ -3214,6 +3618,17 @@ for (const slug of deepDiveSlugs) {
 const co2SystemCostsClaim = claims.find((item) => item.slug === "co2-preis-oder-fossile-systemkosten");
 if (co2SystemCostsClaim) {
   writeFile(`wirkungsradar/detail/${co2SystemCostsClaim.slug}/index.html`, renderCo2SystemCostsDossier(co2SystemCostsClaim, "detail"));
+}
+const windEnergyNatureClaim = claims.find((item) => item.slug === "windraeder-voegel-wald-beton-rueckbau");
+if (windEnergyNatureClaim) {
+  writeFile(`wirkungsradar/detail/${windEnergyNatureClaim.slug}/index.html`, renderWindEnergyNatureDossier(windEnergyNatureClaim, "detail"));
+}
+for (const narrative of windNarrativePages) {
+  writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderWindNarrativePage(narrative));
+}
+for (const term of windGlossaryTerms) {
+  const termPath = `begriffe/${term[0]}/index.html`;
+  if (!fs.existsSync(termPath)) writeFile(termPath, renderWindGlossaryPage(term));
 }
 
 console.log(`Built climate-energy cluster: ${subtopics.length} subtopics, ${claims.length} live cards, ${deepDiveSlugs.length} deep dives.`);
