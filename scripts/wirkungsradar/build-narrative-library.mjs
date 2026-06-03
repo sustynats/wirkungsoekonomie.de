@@ -83,6 +83,31 @@ const externalSources = [
   },
 ];
 
+const claimUrlByTitle = new Map(
+  [
+    ["CO₂-Preis oder fossile Systemkosten?", "../../live/co2-preis-oder-fossile-systemkosten/"],
+    ["Das ist Zensur", "../../live/das-ist-zensur/"],
+    ["Das ist alles gesteuert", "../../live/das-ist-alles-gesteuert/"],
+    ["Deutschland ist nur für 2 % verantwortlich", "../../live/deutschland-nur-zwei-prozent/"],
+    ["Die da oben", "../../live/die-da-oben/"],
+    ["Die Medien spalten das Land", "../../live/mainstreammedien-luegen-alle/"],
+    ["Die Wissenschaft ist gekauft", "../../live/die-wissenschaft-ist-gekauft/"],
+    ["E-Autos sind schlimmer als Verbrenner", "../../live/e-autos-schlimmer-als-verbrenner/"],
+    ["Energiewende gescheitert", "../../live/energiewende-gescheitert/"],
+    ["Fusion löst das später", "../../live/fusion-loest-das-problem/"],
+    ["Fusion löst das Problem", "../../live/fusion-loest-das-problem/"],
+    ["Kernenergie wäre die einfache Lösung", "../../live/kernenergie-einfache-loesung/"],
+    ["Klimaschutz bringt nichts, solange China nicht handelt", "../../live/deutschland-nur-zwei-prozent/"],
+    ["Klimaschutz ist Ökodiktatur", "../../live/klimaschutz-ist-oekodiktatur/"],
+    ["Mainstreammedien lügen alle", "../../live/mainstreammedien-luegen-alle/"],
+    ["Man darf ja nichts mehr sagen", "../../live/man-darf-ja-nichts-mehr-sagen/"],
+    ["Nur alternative Medien sagen die Wahrheit", "../../live/mainstreammedien-luegen-alle/"],
+    ["SDGs sind Weltregierung", "../../detail/sdgs-sind-weltregierung/"],
+    ["Wirkungsökonomie ist Planwirtschaft", "../../live/wirkungsoekonomie-planwirtschaft/"],
+    ["Wirkungsökonomie ist Social Credit", "../../live/wirkungsoekonomie-social-credit/"],
+  ].map(([title, url]) => [title.toLowerCase(), url])
+);
+
 const glossary = [
   ["wirkung", "Wirkung"],
   ["wirkungspotenzial", "Wirkungspotenzial"],
@@ -1648,7 +1673,14 @@ function detailHref(slug) {
 
 function narrativeLink(label, slug) {
   const exists = narratives.some((item) => item.slug === slug);
-  return exists ? `<a href="../${escapeHtml(slug)}/">${escapeHtml(label)}</a>` : `<span class="narrative-static-link">${escapeHtml(label)}</span>`;
+  return exists ? `<a href="../${escapeHtml(slug)}/">${escapeHtml(label)}</a>` : `<span class="narrative-static-link" aria-disabled="true">${escapeHtml(label)}</span>`;
+}
+
+function claimLink(claim) {
+  const url = claim.url || claimUrlByTitle.get(claim.title.toLowerCase());
+  return url
+    ? `<a href="${escapeHtml(url)}">${escapeHtml(claim.title)}</a>`
+    : `<span class="narrative-static-link" aria-disabled="true">${escapeHtml(claim.title)}</span>`;
 }
 
 function renderLanguagePatternsPage() {
@@ -2240,7 +2272,7 @@ function renderDetail(item) {
                 <p class="card-kicker">Verwandte Wirkungschecks</p>
                 <div class="radar-link-cluster">
                   ${item.claims
-                    .map((claim) => (claim.url ? `<a href="${escapeHtml(claim.url)}">${escapeHtml(claim.title)}</a>` : `<span class="narrative-static-link">${escapeHtml(claim.title)}</span>`))
+                    .map((claim) => claimLink(claim))
                     .join("\n                  ")}
                 </div>
               </div>
