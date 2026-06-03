@@ -199,6 +199,62 @@ const sourcePack = {
       use_for: ["Batteriebrandrisiko", "Elektrofahrzeugbrände", "Sicherheitsbewertung"],
     },
     {
+      label: "Bundesnetzagentur - öffentliche Ladeinfrastruktur Deutschland",
+      publisher: "Bundesnetzagentur",
+      url: "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html",
+      type: "amtlich",
+      use_for: ["Ladeinfrastruktur Deutschland", "Normalladepunkte", "Schnellladepunkte", "Ladeleistung"],
+    },
+    {
+      label: "Deutschlandnetz - HPC-Schnellladepunkte",
+      publisher: "Deutschlandnetz",
+      url: "https://www.deutschlandnetz.de/",
+      type: "infrastruktur",
+      use_for: ["HPC-Schnellladen", "Autobahn-Ladeparks", "Flächenabdeckung"],
+    },
+    {
+      label: "BMV - Deutschlandnetz",
+      publisher: "Bundesministerium für Verkehr",
+      url: "https://bmdv.bund.de/SharedDocs/DE/Artikel/G/deutschlandnetz.html",
+      type: "infrastrukturpolitik",
+      use_for: ["Deutschlandnetz", "Schnellladeinfrastruktur", "Autobahn- und Regionallose"],
+    },
+    {
+      label: "IEA - EV charging infrastructure",
+      publisher: "International Energy Agency",
+      url: "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-charging",
+      type: "internationaler_marktbericht",
+      use_for: ["EV-Ladeinfrastruktur", "öffentliche Ladepunkte", "Schnellladen", "Ladeausbau"],
+    },
+    {
+      label: "EU AFIR - Alternative Fuels Infrastructure Regulation",
+      publisher: "Europäische Kommission",
+      url: "https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en",
+      type: "regulierung",
+      use_for: ["TEN-T Ladeziele", "schwere Fahrzeuge", "Zahlung", "Preistransparenz", "Nutzerfreundlichkeit"],
+    },
+    {
+      label: "CharIN - Megawatt Charging System",
+      publisher: "CharIN",
+      url: "https://www.charin.global/technology/mcs/",
+      type: "standard_technik",
+      use_for: ["Megawattladen", "E-Lkw", "Busse", "Schwerlastverkehr"],
+    },
+    {
+      label: "HoLa - Hochleistungsladen Lkw",
+      publisher: "HoLa Projekt",
+      url: "https://hochleistungsladen-lkw.de/hola-en/results/megawatt_charging_networks.php",
+      type: "projekt_wissenschaft",
+      use_for: ["E-Lkw Ladefenster", "MCS", "400 kWh Beispiel", "Pausenlogik"],
+    },
+    {
+      label: "EU - Lenk- und Ruhezeiten Straßentransport",
+      publisher: "Europäische Union",
+      url: "https://europa.eu/youreurope/business/human-resources/transport-sector-workers/road-transportation-workers/index_en.htm",
+      type: "regulierung",
+      use_for: ["4,5 Stunden Fahrzeit", "45 Minuten Pause", "Lkw-Ladefenster"],
+    },
+    {
       label: "Umweltbundesamt - Windenergie an Land",
       publisher: "Umweltbundesamt",
       url: "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/windenergie-an-land",
@@ -374,6 +430,54 @@ const deepDiveSourcePack = {
       url: "https://www.nist.gov/publications/understanding-risk-lithium-ion-battery-fires-multi-source-data-analysis",
       type: "wissenschaft",
       relevance: ["Batteriebrandrisiko", "Elektrofahrzeugbrände", "Sicherheitsbewertung"],
+    },
+    bnetza_ladeinfrastruktur_2026: {
+      label: "Bundesnetzagentur - öffentliche Ladeinfrastruktur Deutschland",
+      url: "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html",
+      type: "amtlich",
+      relevance: ["149.002 Normalladepunkte", "51.253 Schnellladepunkte", "8,50 GW Ladeleistung", "Datenstand 01.04.2026"],
+    },
+    deutschlandnetz_hpc: {
+      label: "Deutschlandnetz - HPC-Schnellladepunkte",
+      url: "https://www.deutschlandnetz.de/",
+      type: "infrastruktur",
+      relevance: ["HPC-Schnellladepunkte", "Autobahn-Ladeparks", "Alltags- und Langstreckenladen"],
+    },
+    bmv_deutschlandnetz: {
+      label: "BMV - Deutschlandnetz",
+      url: "https://bmdv.bund.de/SharedDocs/DE/Artikel/G/deutschlandnetz.html",
+      type: "infrastrukturpolitik",
+      relevance: ["Deutschlandnetz", "Schnellladeinfrastruktur", "Autobahn- und Regionallose"],
+    },
+    iea_ev_charging_infrastructure: {
+      label: "IEA - EV charging infrastructure",
+      url: "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-charging",
+      type: "internationaler_marktbericht",
+      relevance: ["EV-Ladeinfrastruktur", "öffentliche Ladepunkte", "Schnellladen", "Ladeausbau"],
+    },
+    eu_afir: {
+      label: "EU AFIR - Alternative Fuels Infrastructure Regulation",
+      url: "https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en",
+      type: "regulierung",
+      relevance: ["TEN-T Ladeziele", "leichte und schwere Fahrzeuge", "Nutzerfreundlichkeit", "Zahlung", "Preistransparenz"],
+    },
+    charin_mcs: {
+      label: "CharIN - Megawatt Charging System",
+      url: "https://www.charin.global/technology/mcs/",
+      type: "standard_technik",
+      relevance: ["Megawattladen", "E-Lkw", "Busse", "Schwerlastverkehr"],
+    },
+    hola_lkw_mcs: {
+      label: "HoLa - Hochleistungsladen Lkw",
+      url: "https://hochleistungsladen-lkw.de/hola-en/results/megawatt_charging_networks.php",
+      type: "projekt_wissenschaft",
+      relevance: ["E-Lkw Ladefenster", "400 kWh Beispiel", "MCS bis 3,75 MW", "Pausenlogik"],
+    },
+    eu_road_transport_rest: {
+      label: "EU - Lenk- und Ruhezeiten Straßentransport",
+      url: "https://europa.eu/youreurope/business/human-resources/transport-sector-workers/road-transportation-workers/index_en.htm",
+      type: "regulierung",
+      relevance: ["4,5 Stunden Fahrzeit", "45 Minuten Pause", "Lkw-Ladefenster"],
     },
     base_endlager: {
       label: "BASE - Endlagersuche",
@@ -1144,33 +1248,37 @@ const claims = [
     sdgPlus: ["Lieferkettentransparenz"],
     subtitle: "Rohstoffangst und falscher Lebenszyklusvergleich",
     abstract:
-      "Die Aussage enthält einen wahren Kern: Batterien verursachen Rohstoff-, Energie-, Lieferketten- und Recyclingwirkungen. Irreführend wird sie, wenn nur die Herstellung betrachtet wird und die dauerhaften Emissionen von Verbrennern ausgeblendet werden. Wirkungsökonomisch ist das ein Lebenszyklus-Fehler: Ein Wirkungsfeld wird isoliert, statt Produktlebenszyklus, realen Lade- und Produktionsstrom, Batteriechemie, Fahrzeuggröße, Nutzung, Rohstoffe, Arbeitsbedingungen, Lebensdauer, Brandrisiko und Recycling zusammen zu bewerten.",
+      "Die Aussage enthält einen wahren Kern: Batterien verursachen Rohstoff-, Energie-, Lieferketten- und Recyclingwirkungen. Irreführend wird sie, wenn nur die Herstellung betrachtet wird und die dauerhaften Emissionen von Verbrennern ausgeblendet werden. Zusätzlich wird die Debatte verzerrt, wenn Elektromobilität nur als „Pkw mit Akku“ verstanden wird. Tatsächlich entscheidet die Systemwirkung auch an Ladeinfrastruktur, Alltagseinbettung, E-Transportern, E-Lkw, Depotladen, Schnellladeparks, Megawattladen, Netzanschlüssen, Lastmanagement und Logistikplanung. Wirkungsökonomisch ist das ein Lebenszyklus- und Infrastrukturvergleich: Fahrzeug, Batterie, Strom, Ladeort, Netz, Flotte, Alltag und Alternativen müssen zusammen bewertet werden.",
     summary: {
       judgement: "Meist irreführend.",
       true_core: "Batterien haben relevante Rohstoff- und Herstellungswirkungen.",
-      problem: "Herstellung wird isoliert, Nutzungsemissionen des Verbrenners und Fortschritte bei Batteriechemie, Laden, Produktion und Recycling werden ausgeblendet.",
-      narrative: "Rohstoffangst / Verzögerung / falscher Lebenszyklusvergleich.",
+      problem: "Herstellung und einzelne Ladeprobleme werden isoliert; Nutzungsemissionen des Verbrenners, Ladeinfrastruktur, E-Lkw, Depotladen, Megawattladen und Fortschritte bei Batteriechemie, Produktion und Recycling werden ausgeblendet.",
+      narrative: "Rohstoffangst / Ladeangst / Verzögerung / falscher Lebenszyklus- und Infrastrukturvergleich.",
       risk: "Fossile Mobilität bleibt länger bestehen.",
-      host_answer: "Batterien haben Wirkung - aber der Vergleich muss über den gesamten Lebenszyklus und die reale Batterieentwicklung gehen.",
+      host_answer: "Batterien und Laden haben Wirkung - aber der Vergleich muss über Lebenszyklus, Ladeinfrastruktur, Alltag und Logistik gehen.",
     },
     answers: {
       ten_seconds: "Batterien haben Wirkung. Aber fair ist nur der Lebenszyklusvergleich: Herstellung, Strom, Nutzung, Recycling - und fossiler Kraftstoff.",
       thirty_seconds:
         "Der wahre Kern ist: Batterieproduktion braucht Energie und Rohstoffe. Der Denkfehler ist: alte Durchschnittsdaten, falsche Stromannahmen und sichtbare Akkuprobleme gegen unsichtbar gemachte fossile Nutzungsemissionen zu stellen. Wirkungsökonomisch zählen Batteriechemie, Produktionsstrom, Ladequelle, Lebensdauer, Recycling, Fahrzeuggröße, Lieferkette und der verbrannte Kraftstoff des Verbrenners zusammen.",
       two_minutes:
-        "Ich ordne das kurz ein. Ein E-Auto ist nicht automatisch perfekt. Batterie, Rohstoffe, Arbeitsbedingungen, Produktionsenergie, Sicherheit und Recycling müssen bewertet werden. Aber ein Verbrenner emittiert während seiner gesamten Nutzung fossiles CO₂ und Luftschadstoffe, und Benzin oder Diesel ist nach dem Verbrennen weg. Eine Batterie bleibt dagegen ein Materiallager: Sie kann länger genutzt, in Second-Life-Anwendungen überführt und recycelt werden. Außerdem verändert sich die Batterie selbst: LFP-Chemien kommen ohne Kobalt und Nickel in der Kathode aus, viele neue Zellwerke arbeiten mit deutlich saubererem Strom als alte Studien annehmen, und geförderte öffentliche Ladeinfrastruktur ist in Deutschland an erneuerbaren Strom gebunden. Deshalb braucht es einen aktuellen Lebenszyklusvergleich statt eines alten Akku-Schreckbilds.",
+        "Ein E-Auto ist nicht automatisch perfekt. Batterie, Rohstoffe, Arbeitsbedingungen, Strommix, Fahrzeuggröße und Recycling müssen bewertet werden. Aber ein Verbrenner emittiert während seiner gesamten Nutzung fossiles CO₂ und Luftschadstoffe. Deshalb reicht der Blick auf die Herstellung nicht. Ein fairer Vergleich betrachtet den gesamten Lebenszyklus: Rohstoffe, Produktion, Transport, Energiequelle, Nutzung, Wartung, Reparatur, Recycling und Entsorgung. Und Elektromobilität ist mehr als Pkw: Transporter, Busse und Lkw werden über Depotladen, Schnellladeparks und künftig Megawattladen eingebunden. Gute Ladeinfrastruktur entsteht dort, wo Fahrzeuge ohnehin stehen: zuhause, bei der Arbeit, am Supermarkt, am Baumarkt, im Parkhaus, im Logistikdepot und an Autobahnen. Wirkungsökonomisch ist die Lösung keine Technologie-Religion, sondern eine Produktscorecard plus Infrastruktur-Scorecard: CO₂-Lebenszyklus, Rohstoffe, Arbeit, Gesundheit, Ladeverfügbarkeit, Strommix, Reparierbarkeit, Recycling und Nutzungskontext. Dann gewinnt nicht das ideologische Lager, sondern die Mobilitätslösung mit der besten Netto-Wirkung.",
     },
+    answersFinal: true,
     effectPath: [
-      ["Aussage", "E-Autos seien schlimmer als Verbrenner."],
-      ["Wirkstoff", "Herstellungswirkung wird isoliert."],
-      ["Resonanz", "Rohstoffangst und Technikmisstrauen."],
-      ["Wirkungspotenzial", "Lebenszyklusvergleich wird verzerrt."],
-      ["Wirkungsrisiko", "Fossile Mobilität bleibt länger bestehen."],
-      ["Folge falschen Handelns", "CO₂-, Luftschadstoff- und Lieferkettenwirkung werden nicht optimiert."],
+      ["Aussage", "„E-Autos sind schlimmer / unpraktisch / Laden dauert zu lange / Lkw gehen elektrisch nicht.“"],
+      ["Wirkstoff", "Batterieproblem und Ladeangst als Totalargument."],
+      ["Verkürzung", "Batterieherstellung oder einzelne Ladeprobleme werden mit Gesamtwirkung und Alltagstauglichkeit verwechselt."],
+      ["Ausblendung", "Lebenszyklus, Nutzungsemissionen des Verbrenners, Depotladen, Alltagsladen, Schnellladeparks, Megawattladen, Lastmanagement und Mobilitätsalternativen verschwinden."],
+      ["Resonanz", "Rohstoffangst, Ladeangst, Kontrollverlust, Technikskepsis, Veränderungsabwehr."],
+      ["Narrativ", "„Die grüne Lösung funktioniert in der Realität sowieso nicht.“"],
+      ["Wirkungspotenzial", "Akzeptanz für E-Mobilität, Ladeinfrastruktur, E-Lkw-Korridore und Flottenumstellung sinkt."],
+      ["Wirkungsrisiko", "Fossile Pkw, Transporter und Lkw bleiben länger im System."],
+      ["Wirkung dritter Ordnung", "Das Verkehrssystem bleibt an Tankstellenlogik, fossile Lieferketten und Verbrenner-Infrastruktur gebunden."],
     ],
     frameKey: "verzoegerung",
-    redirectQuestion: "Vergleichen wir Herstellung oder den gesamten Lebenszyklus - mit aktueller Batteriechemie, realem Lade- und Produktionsstrom und Recycling?",
-    dontDo: ["Batterieprobleme nicht wegwischen.", "Nicht nur CO₂ betrachten und Arbeitsbedingungen vergessen."],
+    redirectQuestion: "Reden wir über Alltag, Langstrecke oder Lkw-Logistik - und welche Ladeinfrastruktur gehört zu diesem Fall?",
+    dontDo: ["Batterieprobleme nicht wegwischen.", "Nicht nur CO₂ betrachten und Arbeitsbedingungen vergessen.", "Nicht behaupten, Ladeinfrastruktur sei überall perfekt.", "Nicht nur Ladepunktzahl nennen; Ladeleistung, Standort, Verfügbarkeit und Nutzerfreundlichkeit mitbewerten.", "E-Lkw nicht wie Pkw behandeln.", "Ladezeit nicht als absolute Zahl verkaufen; Ladefenster und durchschnittliche Ladeleistung nennen."],
     facts: [
       "Batterieproduktion hat relevante Wirkungen, aber sie ist nur ein Teil des Lebenszyklus.",
       "LFP-Batterien verwenden Lithium-Eisenphosphat und kommen in der Kathode ohne Kobalt und Nickel aus; sie lösen nicht jede Rohstofffrage, verändern aber den Kobalt-Frame deutlich.",
@@ -1179,9 +1287,12 @@ const claims = [
       "Recycling und Second Life machen Batterien zu einem Materialkreislauf; fossile Kraftstoffe werden einmal verbrannt und sind danach als Energie- und Kohlenstoffträger weg.",
       "Brandrisiken sind real, aber der Satz vom grundsätzlich unlöschbaren Akku ist ein Angstframe. Elektrofahrzeugbrände brauchen angepasste Taktik, sind aber kein Beweis gegen E-Mobilität insgesamt.",
       "Batteriegarantien sind modellabhängig; 8 Jahre und etwa 160.000 bis 250.000 km sind im Pkw-Markt verbreitet. Extrem hohe Laufleistungsangaben einzelner Hersteller oder Nutzfahrzeuganwendungen dürfen nicht als Standardgarantie für alle E-Autos verkauft werden.",
+      "Laden ist nicht Tanken: Ein großer Teil des Ladens kann dort passieren, wo Fahrzeuge ohnehin stehen - zuhause, bei der Arbeit, beim Einkaufen, im Parkhaus, am Depot, an Hubs oder entlang der Autobahn.",
+      "Für E-Transporter, Busse und viele regionale Lkw ist Depotladen zentral; für Fernverkehr braucht es zusätzlich HPC- und Megawattladeinfrastruktur entlang logistischer Korridore.",
+      "Ladeinfrastruktur muss nach Ladeleistung, Verfügbarkeit, Wartung, Preisfairness, Bezahlung, Standortqualität und Alltagseinbettung bewertet werden - nicht nur nach Anzahl der Ladepunkte.",
     ],
-    consequences: ["Fossile Nutzungsemissionen werden unsichtbar.", "Rohstofffragen werden nicht gelöst, sondern als Aufschub genutzt.", "Batterieproduktion, Recycling und Ladeinfrastruktur werden schlechter gesteuert.", "Mobilitätswende wird polarisiert."],
-    woekSolution: ["Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Brandrisiko, Recycling und Energiequelle.", "Lieferkettentransparenz, Batteriepass und Batteriechemie sichtbar machen.", "Realen Produktionsstrom und Ladequelle statt alter Durchschnittsannahmen ausweisen.", "Fahrzeuggröße, Lebensdauer und Mobilitätsbedarf in die Bewertung einbeziehen.", "Recyclingfähigkeit, Rückgewinnungsquoten, Second Life und Reparierbarkeit als eigene Wirkungsfelder bewerten."],
+    consequences: ["Fossile Nutzungsemissionen werden unsichtbar.", "Rohstofffragen werden nicht gelöst, sondern als Aufschub genutzt.", "Batterieproduktion, Recycling und Ladeinfrastruktur werden schlechter gesteuert.", "E-Transporter-, Bus- und E-Lkw-Korridore werden verzögert.", "Mobilitätswende wird polarisiert."],
+    woekSolution: ["Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Brandrisiko, Recycling und Energiequelle.", "Lieferkettentransparenz, Batteriepass und Batteriechemie sichtbar machen.", "Realen Produktionsstrom und Ladequelle statt alter Durchschnittsannahmen ausweisen.", "Fahrzeuggröße, Lebensdauer und Mobilitätsbedarf in die Bewertung einbeziehen.", "Recyclingfähigkeit, Rückgewinnungsquoten, Second Life und Reparierbarkeit als eigene Wirkungsfelder bewerten.", "Ladeinfrastruktur als Wirkungsinfrastruktur bewerten: Ladeleistung, Verfügbarkeit, Standortnutzen, Preisfairness, Barrierefreiheit, Wartung, Netzanschluss und Alltagseinbettung.", "Alltagsladen an Supermärkten, Baumärkten, Parkhäusern, Arbeitsplätzen, Hotels und kommunalen Orten ausbauen.", "E-Lkw-Korridore, Depotladen, Logistikhubs und Megawattladen entlang relevanter Routen aufbauen.", "Ladezeit als Standzeit planen: Einkauf, Arbeit, Parken, Depot, Pause, Be- und Entladung sowie Schichtwechsel.", "Netzanschluss, Lastmanagement, Speicher, PV-Dächer und faire Netzentgelte mitbewerten."],
     mpd: {
       mensch: "Gesundheit, Arbeitsbedingungen und bezahlbare Mobilität müssen zusammen bewertet werden.",
       planet: "CO₂, Ressourcen und Recycling entscheiden gemeinsam über Netto-Wirkung.",
@@ -1198,6 +1309,14 @@ const claims = [
       "Fraunhofer ISE - Lithium aus geothermalen Solen im Oberrheingraben",
       "BMV - Förderrichtlinie öffentlich zugängliche Ladeinfrastruktur",
       "NIST - Understanding the Risk of Lithium-Ion Battery Fires",
+      "Bundesnetzagentur - öffentliche Ladeinfrastruktur Deutschland",
+      "Deutschlandnetz - HPC-Schnellladepunkte",
+      "BMV - Deutschlandnetz",
+      "IEA - EV charging infrastructure",
+      "EU AFIR - Alternative Fuels Infrastructure Regulation",
+      "CharIN - Megawatt Charging System",
+      "HoLa - Hochleistungsladen Lkw",
+      "EU - Lenk- und Ruhezeiten Straßentransport",
     ],
   },
   {
@@ -1605,13 +1724,13 @@ const deepDiveDetails = {
     subtitle: "Rohstoffangst und falscher Lebenszyklusvergleich",
     confidence: "hoch",
     readingTime: "15 Minuten",
-    leadQuestion: "Welche Mobilitätslösung erzeugt über den gesamten Lebenszyklus die beste Netto-Wirkung?",
+    leadQuestion: "Welche Kombination aus Fahrzeug, Batterie, Strom, Ladeinfrastruktur, Flotte, Alltag und Alternativen erzeugt die beste Netto-Wirkung?",
     claimAnatomy: {
       original: "E-Autos sind schlimmer als Verbrenner.",
-      extended: "E-Autos sind wegen Batterie, Rohstoffen und Strommix klimaschädlicher als Verbrenner.",
+      extended: "E-Autos sind wegen Batterie, Rohstoffen, Strommix und Ladeinfrastruktur unpraktischer oder klimaschädlicher als Verbrenner.",
       trueCore: "Batterieproduktion und Rohstoffabbau verursachen relevante ökologische und soziale Wirkungen.",
-      missingContext: "Entscheidend ist der gesamte Lebenszyklus, nicht nur die Herstellung.",
-      falseConclusion: "Aus Batterieproblemen folgt nicht automatisch, dass Verbrenner besser sind.",
+      missingContext: "Entscheidend sind der gesamte Lebenszyklus und die Infrastruktur: Ladeort, Ladeleistung, Ladefenster, Depot, Netzanschluss, Stromquelle, Logistik und Nutzungskontext.",
+      falseConclusion: "Aus Batterie- oder Ladeproblemen folgt nicht automatisch, dass Verbrenner besser sind.",
     },
     trueText:
       "Batterieproduktion benötigt Energie und Rohstoffe. Lieferketten können Wasser-, Biodiversitäts-, Arbeitsrechts- und Governance-Probleme enthalten. Genau deshalb muss man Batterien ernst prüfen - aber aktuell, chemiespezifisch und über den Lebenszyklus, nicht mit einem pauschalen Akku-Angstbild.",
@@ -1624,23 +1743,26 @@ const deepDiveDetails = {
       "Batterien können recycelt, weitergenutzt und technologisch verbessert werden. Fossile Kraftstoffe werden dagegen einmal verbrannt und sind danach weg.",
       "Brandrisiken, Garantie und Lebensdauer sind Datenfragen: Sie gehören in die Bewertung, aber nicht als Pauschalnarrativ gegen alle Akkus.",
       "Die beste Mobilitätswirkung entsteht nicht automatisch durch Autoersatz, sondern durch bessere Mobilitätssysteme.",
+      "Elektromobilität ist nicht nur Pkw: E-Transporter, Busse und E-Lkw brauchen Depotladen, Schnellladeparks, Megawattladen, Netzanschlüsse, Lastmanagement und Routenplanung.",
+      "Laden ist nicht Tanken: Viele Ladefälle funktionieren über Standzeiten im Alltag, bei Arbeit, Handel, Parken, Hotel, Depot, Hub, Pause oder Autobahn-Ladepark.",
+      "Ladepunktzahl ist nicht Ladequalität: Leistung, Verfügbarkeit, Wartung, Preisfairness, Bezahlung, Barrierefreiheit und Aufenthaltsqualität entscheiden mit.",
     ],
     evidence: {
       status: "datenbasiert",
       level: "hoch",
       uncertainty: "Mittel bei künftigen Batteriechemien, Recyclingquoten, Strommix, Fahrzeuggröße und Lieferkettenqualität.",
-      sourceKeys: ["icct_lca_ev_2025", "fraunhofer_isi_battery_facts_2025", "eu_battery_regulation_2023", "iea_global_ev_2024", "bmv_ladeinfrastruktur_foerderung", "bgr_lithium_tiefenwaesser", "fraunhofer_ise_geothermal_lithium", "nist_battery_fire_risk"],
+      sourceKeys: ["icct_lca_ev_2025", "fraunhofer_isi_battery_facts_2025", "eu_battery_regulation_2023", "iea_global_ev_2024", "bmv_ladeinfrastruktur_foerderung", "bgr_lithium_tiefenwaesser", "fraunhofer_ise_geothermal_lithium", "nist_battery_fire_risk", "bnetza_ladeinfrastruktur_2026", "deutschlandnetz_hpc", "bmv_deutschlandnetz", "iea_ev_charging_infrastructure", "eu_afir", "charin_mcs", "hola_lkw_mcs", "eu_road_transport_rest"],
     },
     wirkstoff: {
-      label: "Rohstoffangst als Verzögerungsimpuls",
-      description: "Ein reales Problemfeld wird genutzt, um den gesamten Technologiewechsel zu diskreditieren.",
-      mechanism: "Ein Teil der Lebenszykluswirkung wird zum Gesamturteil gemacht.",
-      resonance: ["Misstrauen gegen neue Technologien", "Angst vor Ausbeutung", "Sorge um Natur und Ressourcen", "Abwehr gegen Mobilitätswandel"],
+      label: "Batterieproblem und Ladeangst als Totalargument",
+      description: "Reale Fragen zu Batterie, Rohstoffen und Ladeinfrastruktur werden isoliert und als Gesamtbeweis gegen Elektromobilität genutzt.",
+      mechanism: "Die Aussage verschiebt Aufmerksamkeit von Lebenszyklus, Infrastrukturentwicklung und Nutzungskontext auf einzelne Reibungspunkte: Ladezeit, Ladesäulen, Rohstoffe oder Netzangst.",
+      resonance: ["Misstrauen gegen neue Technologien", "Rohstoffangst", "Ladeangst", "Angst liegenzubleiben", "Kontrollverlust", "Sorge um Alltagstauglichkeit", "Abwehr gegen Mobilitätswandel"],
     },
     narrative: {
-      message: "Die angeblich grüne Lösung ist in Wahrheit schlimmer.",
-      emotional: "Moralische Entlastung für fossile Weiterführung.",
-      political: "Verzögerung von Ladeinfrastruktur, Flottenumstellung und Mobilitätswende.",
+      message: "Die angeblich grüne Lösung ist in Wahrheit schlimmer und funktioniert im Alltag oder in der Logistik sowieso nicht.",
+      emotional: "Moralische Entlastung für fossile Weiterführung, Reichweitenangst, Kontrollverlust, Komfortverlust und Technikmisstrauen.",
+      political: "Ladeinfrastrukturausbau, E-Lkw-Korridore, Elektrifizierung von Flotten und Netzplanung verlieren Akzeptanz.",
     },
     orders: [
       ["Wirkung 1. Ordnung", "Menschen zweifeln an der Klimawirkung von E-Mobilität."],
@@ -1695,7 +1817,28 @@ const deepDiveDetails = {
         "Benzin und Diesel werden importiert, raffiniert, transportiert und verbrannt. Danach ist der Energieträger weg und die Emission bleibt im System. Eine Batterie ist dagegen ein langlebiges Produkt und Materiallager.",
         "Nicht Akku-Rucksack gegen leeren Verbrenner vergleichen, sondern beide Pfade vollständig bilanzieren.",
       ],
+      [
+        "Ladeinfrastruktur",
+        "Die Bundesnetzagentur meldete zum 1. April 2026 rund 149.002 Normalladepunkte, 51.253 Schnellladepunkte und 8,50 GW gleichzeitig verfügbare Ladeleistung. Aussagekräftig sind neben Anzahl auch Leistung, Verfügbarkeit, Wartung, Standort und Preisfairness.",
+        "Ladepunktzahl nie allein bewerten. Standortqualität, Ladeleistung, Nutzerfreundlichkeit und Datenstand mitführen.",
+      ],
+      [
+        "Alltagsladen",
+        "Laden passiert nicht nur an klassischen Tankstellenorten. Zuhause, Arbeitsplatz, Supermarkt, Baumarkt, Einkaufszentrum, Parkhaus, Hotel und Gastronomie können Standzeit in Ladezeit verwandeln.",
+        "Tankstellenlogik nicht auf jeden Ladefall übertragen. Alltagsladen, Langstreckenladen und Logistikladen trennen.",
+      ],
+      [
+        "E-Lkw und Depotladen",
+        "E-Transporter, Busse und viele regionale Lkw können planbar im Depot laden. Fernverkehr braucht zusätzlich HPC- und MCS-Ladepunkte an Hubs, Rastanlagen und Korridoren.",
+        "E-Lkw nicht wie Pkw behandeln. Route, Depot, Pause, Nutzlast, Ladefenster, Strompreis und Netzanschluss prüfen.",
+      ],
+      [
+        "Ladezeit",
+        "Ladezeit hängt von benötigter Energiemenge, durchschnittlicher Ladeleistung, Fahrzeug, Ladekurve, Temperatur, Auslastung, Netzanschluss und Ladezustand ab.",
+        "Nicht Maximalleistung versprechen. Relevante Frage: durchschnittliche Ladeleistung im passenden Ladefenster.",
+      ],
     ],
+    evInfrastructure: true,
     solutionLead: "Die WÖk bewertet nicht Technologie-Lager, sondern Mobilitätswirkung über den Lebenszyklus.",
     clipHook: "E-Autos sind nicht perfekt. Aber der Verbrenner-Vergleich muss ehrlich sein.",
     caption: "Lebenszyklus statt Lagerkampf: Mobilität wirkungsökonomisch prüfen.",
@@ -2388,7 +2531,7 @@ function renderWirkungOrders(detail) {
 }
 
 function renderBatteryAudit(detail) {
-  if (!detail.batteryAudit) return "";
+  if (!detail.batteryAudit) return "<!-- no battery audit -->";
   return `<section class="section section-soft deep-dive-section" id="akku-faktencheck">
         <div>
           <div class="section-header">
@@ -2405,6 +2548,87 @@ function renderBatteryAudit(detail) {
               </tbody>
             </table>
           </div>
+        </div>
+      </section>`;
+}
+
+const evEverydayChargingMatrix = [
+  ["Zuhause", "über Nacht laden", "entlastet öffentliche Infrastruktur, niedrige Standzeitkosten"],
+  ["Arbeitsplatz", "während der Arbeitszeit laden", "Pendelverkehr wird planbar elektrifiziert"],
+  ["Supermarkt", "15-30 Minuten während Einkauf", "Laden wird in Alltagszeit integriert"],
+  ["Baumarkt / Möbelhaus", "längere Einkaufsdauer", "gute Standzeit für Schnellladen"],
+  ["Einkaufszentrum / Innenstadt", "Parkdauer 30-120 Minuten", "Laden wird Teil von Aufenthaltszeit"],
+  ["Parkhaus", "längere Standzeit", "ideal für AC- und moderate DC-Ladepunkte"],
+  ["Hotel / Gastronomie", "Aufenthalt / Übernachtung", "Reise- und Tourismusmobilität wird einfacher"],
+  ["Autobahn-Ladepark", "Langstrecke", "hohe Ladeleistung, kurze Pausen, Fernverkehr"],
+  ["Logistikdepot", "Nacht / Schichtwechsel", "E-Transporter und E-Lkw planbar laden"],
+  ["Rast- und Ruheplätze für Lkw", "gesetzliche Pausen", "Megawattladen kann Pausenzeit nutzen"],
+];
+
+const evInfrastructureBoundaries = [
+  ["Ladeinfrastruktur", "Wo und wie wird geladen?", "Alltagstauglichkeit, Langstrecke, Verfügbarkeit", "Strommix, Netzanschluss, Fahrzeuggröße"],
+  ["Ladeleistung", "Wie schnell kann im passenden Zeitfenster Energie nachgeladen werden?", "Langstrecken- und Logistikfähigkeit", "reale Ladekurve, Standortauslastung"],
+  ["Depotlogik", "Können Flotten planbar im Stand laden?", "E-Transporter, Busse, regionale Lkw", "öffentliche Ladeinfrastruktur"],
+  ["Alltagsintegration", "Kann Laden nebenbei passieren?", "Supermarkt, Baumarkt, Arbeit, Parkhaus", "Fernverkehr und Logistik"],
+  ["Netz- und Standortwirkung", "Welche Netzanschlüsse, Speicher und Laststeuerung braucht es?", "Systemkosten, Resilienz, Standortplanung", "Fahrzeugvergleich allein"],
+  ["Logistikarchitektur", "Passen Ladefenster zu Touren, Pausen und Hubs?", "E-Lkw-Wirkung", "Pkw-Perspektive"],
+];
+
+const evChargingSubclaims = [
+  ["„Laden dauert viel zu lange“", "Kommt auf Ladeort, Ladefenster und Ladeleistung an.", "Langsames Laden kann unpraktisch sein, wenn Standort, Leistung und Fahrzeug nicht passen. Was fehlt: Viele Fahrzeuge stehen lange genug, sodass Laden nebenbei passiert. Langstrecke braucht Schnellladen, Logistik braucht Depot- und Megawattladen.", "Laden ist nicht immer Tanken. Im Alltag lädt man oft, während das Auto ohnehin steht. Auf Langstrecke zählt Schnellladen, beim Lkw zählt das passende Ladefenster."],
+  ["„Es gibt nicht genug Ladepunkte“", "Regional unterschiedlich; Ausbau, Leistung, Verfügbarkeit und Standortqualität zählen.", "Lücken, defekte Säulen, Preischaos und regionale Unterschiede sind reale Akzeptanzprobleme. Entscheidend sind nicht nur Anzahl, sondern Leistung, Zuverlässigkeit, Standort, Bezahlung und Alltagseinbettung.", "Die richtige Frage ist nicht nur: Wie viele Ladepunkte gibt es? Sondern: Wo stehen sie, wie schnell sind sie, funktionieren sie, und passen sie zum Alltag?"],
+  ["„E-Lkw funktionieren nicht“", "Pauschal falsch. Es kommt auf Route, Nutzlast, Ladefenster, Depot, Strompreis und Megawatt-Infrastruktur an.", "Fernverkehr mit schweren Lkw braucht hohe Ladeleistung und gute Planung. Viele Flotten laden im Depot. Für Langstrecke entstehen MCS- und HPC-Korridore. Fahrerpausen und Ladefenster können zusammenfallen.", "E-Lkw sind kein Pkw mit größerem Akku. Sie brauchen eine andere Infrastruktur: Depotladen, Logistikhubs, Megawattladen und Routenplanung."],
+  ["„Das Netz bricht zusammen“", "Falscher Totalframe. Netzanschlüsse, Lastmanagement, Speicher, variable Tarife und Standortplanung entscheiden.", "Viele Schnellladepunkte brauchen lokale Netzleistung und Planung. Was fehlt: Laden ist steuerbar. Fahrzeuge stehen lange. Lastmanagement, Speicher, PV-Dächer, Netzausbau und zeitvariable Tarife können Lasten verschieben.", "Das Netz muss geplant werden. Aber Laden ist steuerbar - anders als viele andere Verbraucher. Entscheidend sind Lastmanagement, Speicher und gute Standortplanung."],
+];
+
+const evInfrastructureSources = [
+  ["Bundesnetzagentur - öffentliche Ladeinfrastruktur Deutschland", "Zum 1. April 2026 waren 149.002 Normalladepunkte und 51.253 Schnellladepunkte im Ladesäulenregister enthalten; insgesamt standen 8,50 GW Ladeleistung bereit.", "Aktueller Faktenblock zum Ladeinfrastrukturausbau in Deutschland.", "Registerdaten enthalten auch Meldungen aus noch nicht abgeschlossenen Anzeigeverfahren.", "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html"],
+  ["Deutschlandnetz - HPC-Schnellladepunkte", "Rund 9.000 zusätzliche HPC-Schnellladepunkte an mehr als 1.000 Standorten.", "Autobahn- und Flächenabdeckung für Pkw und Transporter.", "Deutschlandnetz ergänzt private und andere öffentliche Ladepunkte.", "https://www.deutschlandnetz.de/"],
+  ["BMV - Deutschlandnetz", "Das Deutschlandnetz soll Schnellladeinfrastruktur in Regionen und an Autobahnen ergänzen.", "Politische Einordnung des Ladeinfrastruktur-Ausbaus.", "Tatsächliche Standortqualität, Verfügbarkeit und Preisgestaltung separat prüfen.", "https://bmdv.bund.de/SharedDocs/DE/Artikel/G/deutschlandnetz.html"],
+  ["IEA - EV charging infrastructure", "Die IEA beschreibt den schnellen Ausbau öffentlicher und schneller Ladeinfrastruktur als zentralen Teil wachsender Elektromobilität.", "Internationaler Kontext für Ladepunkte, Schnellladen und Infrastrukturbedarf.", "Internationale Trends ersetzen keine lokale Standortprüfung.", "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-charging"],
+  ["EU AFIR - Alternative Fuels Infrastructure Regulation", "Mindestziele für Ladeinfrastruktur im TEN-T-Netz und Vorgaben zu Nutzerfreundlichkeit, Zahlung und Preistransparenz.", "Einordnung, dass Ladeinfrastruktur regulatorisch geplant wird.", "Nationale Umsetzung und tatsächliche Standortqualität separat prüfen.", "https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en"],
+  ["CharIN - Megawatt Charging System", "MCS wurde für schnelles Hochleistungsladen schwerer Elektrofahrzeuge wie Lkw und Busse entwickelt.", "E-Lkw, Busse, Schwerlastverkehr, Ladezeit.", "Technologie und Standardisierung weiter beobachten.", "https://www.charin.global/technology/mcs/"],
+  ["HoLa - Hochleistungsladen Lkw", "Für bis zu 360 km in 4,5 Stunden werden etwa 400 kWh genannt; MCS erlaubt bis zu 3,75 MW, erste Stationen eher bis 1 MW.", "Rechenbeispiele zu E-Lkw, Ladezeit und Pausenlogik.", "Projekt- und Annahmenkontext beachten.", "https://hochleistungsladen-lkw.de/hola-en/results/megawatt_charging_networks.php"],
+  ["EU - Lenk- und Ruhezeiten", "Nach 4,5 Stunden Fahrzeit ist grundsätzlich eine Pause von mindestens 45 Minuten vorgeschrieben.", "Warum E-Lkw-Laden in gesetzliche Pausenfenster integriert werden kann.", "Konkrete Transportplanung hängt von Tour, Beladung, Betrieb und Rechtsrahmen ab.", "https://europa.eu/youreurope/business/human-resources/transport-sector-workers/road-transportation-workers/index_en.htm"],
+];
+
+function renderEvChargingInfrastructure(detail) {
+  if (!detail.evInfrastructure) return "<!-- no EV infrastructure module -->";
+  return `<section class="section section-soft deep-dive-section" id="ladeinfrastruktur">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Ladeinfrastruktur</p>
+            <h2>Laden ist nicht Tanken: Warum die alte Tankstellenlogik täuscht.</h2>
+            <p>Viele Einwände gegen Elektromobilität übernehmen unbewusst die Logik des Verbrenners: Man fährt leer, sucht eine Tankstelle, füllt in wenigen Minuten nach und fährt weiter. Elektromobilität funktioniert anders. Ein großer Teil des Ladens passiert dort, wo Fahrzeuge ohnehin stehen.</p>
+            <p><strong>Kernsatz:</strong> Die beste Ladeinfrastruktur ist nicht nur dort, wo man extra hinfährt, sondern dort, wo Menschen und Fahrzeuge ohnehin Zeit verbringen.</p>
+          </div>
+          <div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>Alltagslade-Matrix</caption>
+              <thead><tr><th>Ladeort</th><th>Typische Nutzung</th><th>Wirkung</th></tr></thead>
+              <tbody>${evEverydayChargingMatrix.map(([place, use, effect]) => `<tr><th scope="row">${escapeHtml(place)}</th><td>${escapeHtml(use)}</td><td>${escapeHtml(effect)}</td></tr>`).join("")}</tbody>
+            </table>
+          </div>
+          <section class="section deep-dive-section" id="alltagsladen"><div class="section-header"><p class="hero-kicker">Alltagsladen</p><h2>Schnellladen dort, wo Alltag passiert.</h2><p>Supermärkte, Baumärkte, Einkaufszentren, Parkhäuser und Freizeitstandorte können Ladeangst senken, weil Laden als Nebenbei-Vorgang statt Zusatztermin erlebt wird. Entscheidend sind Sichtbarkeit, einfache Nutzung, Barrierearmut, Zuverlässigkeit, Preisfairness, verfügbare Ladeleistung und Aufenthaltsqualität.</p></div></section>
+          <section class="section deep-dive-section" id="e-lkw-megawattladen"><div class="section-header"><p class="hero-kicker">E-Lkw &amp; Megawattladen</p><h2>Warum Megawattladen die Logistik verändert.</h2><p>Elektromobilität endet nicht beim Pkw. Lieferverkehr, Busse, Transporter und schwere Lkw brauchen andere Ladearchitektur: Depotladen, Logistikhubs, Hafenstandorte, Rastanlagen, Ladeparks, größere Rangierflächen, Buchbarkeit, Netzanschlüsse und Sicherheit. Beim E-Lkw entscheidet nicht nur die Batteriegröße. Es entscheidet die Logistikarchitektur: Depot, Route, Pause, Ladeleistung, Netzanschluss und Planung.</p></div></section>
+          <div class="card-grid two">
+            <article class="formula-box"><p class="card-kicker">Ladezeit verstehen</p><h3>kW, kWh und Ladefenster</h3><p><strong>kWh</strong> ist die Energiemenge. <strong>kW</strong> ist die Ladeleistung.</p><p><strong>Ladezeit grob = benötigte Energiemenge ÷ durchschnittliche Ladeleistung</strong></p><p>40 kWh bei 150 kW ≈ 16 Minuten<br>60 kWh bei 200 kW ≈ 18 Minuten<br>400 kWh bei 1 MW ≈ 24 Minuten<br>400 kWh bei 700 kW ≈ 34 Minuten</p><p>Vereinfachte Faustwerte; reale Ladezeiten hängen von Ladekurve, Fahrzeug, Temperatur, Auslastung und Ladezustand ab.</p></article>
+            <article class="formula-box"><p class="card-kicker">Systemgrenze</p><h3>Fahrzeug + Infrastruktur</h3><p>Die relevante Frage ist nicht nur maximale Ladeleistung, sondern durchschnittliche Ladeleistung im passenden Ladefenster. Hohe Leistung ist vor allem für Langstrecke und Logistik relevant; im Alltag reicht oft längere Standzeit.</p></article>
+          </div>
+          <div class="term-link-grid" aria-label="Glossar zur Ladeinfrastruktur">
+            ${evGlossaryTerms.map(([slug, label]) => `<a href="/begriffe/${slug}/">${escapeHtml(label)}</a>`).join("")}
+          </div>
+          <div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>Zusätzliche Bilanzgrenzen: Fahrzeug plus Infrastruktur</caption>
+              <thead><tr><th>Bilanzgrenze</th><th>Frage</th><th>Was sie zeigt</th><th>Was sie ausblenden kann</th></tr></thead>
+              <tbody>${evInfrastructureBoundaries.map(([boundary, question, shows, hides]) => `<tr><th scope="row">${escapeHtml(boundary)}</th><td>${escapeHtml(question)}</td><td>${escapeHtml(shows)}</td><td>${escapeHtml(hides)}</td></tr>`).join("")}</tbody>
+            </table>
+          </div>
+          <section class="section deep-dive-section" id="lade-unterclaims"><div class="section-header"><p class="hero-kicker">Häufige Zusatzbehauptungen</p><h2>Ladeinfrastruktur als Akkordeon.</h2></div><div class="radar-answer-accordion">${evChargingSubclaims.map(([title, judgement, context, answer]) => `<details class="radar-answer-item"><summary><span class="radar-answer-time">${escapeHtml(title)}</span> <span class="radar-answer-label">${escapeHtml(judgement)}</span></summary><p>${escapeHtml(context)}</p><p><strong>Live-Antwort:</strong> ${escapeHtml(answer)}</p></details>`).join("\n            ")}</div></section>
+          ${summaryGrid([["Ladeleistung und Ladeverfügbarkeit", "Infrastruktur muss nutzbar, leistungsfähig und verfügbar sein.", "positive"], ["Netzanschluss- und Standortqualität", "Ladeparks brauchen skalierbare, resiliente Netzplanung.", "positive"], ["Megawattladen für Schwerlastverkehr", "MCS-Korridore, Hubs und Depots werden Teil der Logistikwirkung.", "positive"], ["Transparente Ladeinformationen", "Preis-, Verfügbarkeits- und Leistungsinformationen senken Ladeangst.", "positive"]], "E-Mobilität Infrastrukturindikatoren", "deep-dive-inline-summary")}
+          ${sourceCards(evInfrastructureSources)}
+          <article class="card dossier-conclusion-card"><p class="card-kicker">Abschluss</p><h3 class="card-title">Laden scheitert nicht daran, dass es anders ist als Tanken.</h3><p class="card-text">Elektromobilität gelingt, wenn Laden anders geplant wird: als Teil von Alltag, Arbeit, Logistik und Reise. Der Wirkungsradar bewertet deshalb nicht nur das Fahrzeug, sondern das ganze Mobilitätssystem.</p></article>
         </div>
       </section>`;
 }
@@ -2513,7 +2737,8 @@ function renderDeepDiveDetail(claim) {
               <li><a href="#wirkungspfad">Wirkmechanismus</a></li>
               <li><a href="#psychologischer-wirkungscheck">Psychologischer Wirkungscheck</a></li>
               <li><a href="#wirkungsordnung">Wirkungsordnung</a></li>
-              ${detail.batteryAudit ? '<li><a href="#akku-faktencheck">Akku-Faktencheck</a></li>' : ""}
+              ${detail.batteryAudit ? '<li><a href="#akku-faktencheck">Akku-Faktencheck</a></li>' : "<!-- no battery audit toc -->"}
+              ${detail.evInfrastructure ? '<li><a href="#ladeinfrastruktur">Ladeinfrastruktur</a></li>' : "<!-- no EV infrastructure toc -->"}
               <li><a href="#folgenanalyse">Folgenanalyse</a></li>
               <li><a href="#mpd">Mensch, Planet, Demokratie</a></li>
               <li><a href="#sdg">SDG-/SDG+-Bezug</a></li>
@@ -2551,6 +2776,7 @@ function renderDeepDiveDetail(claim) {
             ${renderPsychologyModule(claim)}
             ${renderWirkungOrders(detail)}
             ${renderBatteryAudit(detail)}
+            ${renderEvChargingInfrastructure(detail)}
             ${renderFalseActionAnalysis(detail)}
             <section class="section deep-dive-section" id="mpd">
               <div class="section-header"><p class="hero-kicker">Bewertung nach Mensch, Planet, Demokratie</p><h2>MPD-Wirkungsrisiko.</h2></div>
@@ -3543,6 +3769,16 @@ const windGlossaryTerms = [
   ["fledermausabschaltung", "Fledermausabschaltung", "Betriebsregel, bei der Windenergieanlagen zu Zeiten hoher Fledermausaktivität temporär abgeschaltet werden.", "Fledermausabschaltungen sind ein zentraler Baustein zur Risikominderung."],
 ];
 
+const evGlossaryTerms = [
+  ["ladeangst", "Ladeangst", "Sorge, ein Elektrofahrzeug nicht rechtzeitig, nicht zuverlässig oder nicht schnell genug laden zu können.", "Ladeangst entsteht oft aus realen Einzelfällen, fehlender Erfahrung oder schlechter Infrastruktur. Gegenmittel sind Verfügbarkeit, Schnellladen, Alltagsladen und transparente Informationen."],
+  ["alltagsladen", "Alltagsladen", "Laden an Orten, an denen Fahrzeuge ohnehin stehen, etwa zuhause, am Arbeitsplatz, beim Einkauf, im Parkhaus oder am Hotel.", "Alltagsladen reduziert Ladezeit als Zusatzaufwand, weil Standzeit zu Ladezeit wird."],
+  ["schnellladepark", "Schnellladepark", "Standort mit mehreren Schnellladepunkten, hoher Ladeleistung, guter Erreichbarkeit und idealerweise Aufenthaltsqualität.", "Schnellladeparks sind besonders wichtig für Langstrecke und Menschen ohne private Lademöglichkeit."],
+  ["megawattladen", "Megawattladen", "Hochleistungsladen im Leistungsbereich von rund einem Megawatt oder mehr, vor allem für schwere Nutzfahrzeuge wie E-Lkw.", "Megawattladen soll große Batterien in Pausen- oder Logistikfenstern schnell nachladen."],
+  ["depotladen", "Depotladen", "Laden von Flottenfahrzeugen am Betriebshof oder Logistikdepot, meist während längerer Standzeiten.", "Depotladen ist zentral für Busse, Transporter und viele E-Lkw, weil es planbar, netzdienlich und betrieblich integrierbar ist."],
+  ["ladefenster", "Ladefenster", "Zeitfenster, in dem ein Fahrzeug ohnehin steht und sinnvoll geladen werden kann.", "Bei E-Lkw sind Ladefenster etwa Pausen, Be- und Entladung, Schichtwechsel oder Nachtstand."],
+  ["tankstellenlogik", "Tankstellenlogik", "Denkmuster, das Elektromobilität so bewertet, als müsse Laden genauso funktionieren wie Tanken beim Verbrenner.", "Elektromobilität nutzt oft Standzeiten. Deshalb ist die Tankstellenlogik für viele Ladefälle die falsche Vergleichslogik."],
+];
+
 function renderWindNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero narrative-hero">
@@ -3589,6 +3825,27 @@ function renderWindGlossaryPage([slug, label, definition, hover]) {
   return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
 }
 
+function renderEvGlossaryPage([slug, label, definition, hover]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="term-hero">
+        <div class="term-hero__copy">
+          <nav class="breadcrumb"><a href="../">Begriffe</a> / ${escapeHtml(label)}</nav>
+          <p class="eyebrow">Glossar der Wirkungsökonomie</p>
+          <h1>${escapeHtml(label)}</h1>
+          <p class="lead">${escapeHtml(definition)}</p>
+          <p class="term-meta">Kategorie: Wirkungsradar · Elektromobilität · Ladeinfrastruktur · Datenstand: ${UPDATED_AT}</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsradar/live/e-autos-schlimmer-als-verbrenner/">E-Mobilität-Dossier</a><a class="btn btn-secondary" href="../">Alle Begriffe</a></div>
+        </div>
+      </section>
+      <div class="term-page">
+        <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
+        <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
+        <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Elektromobilität nicht nur als Fahrzeug- oder Akku-Frage zu bewerten, sondern als Zusammenspiel aus Produkt, Ladeinfrastruktur, Netz, Alltag, Logistik und Netto-Wirkung.</p></section>
+      </div>
+    </main>`;
+  return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
+}
+
 writeFile("content/wirkungsradar/source-packs/climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(sourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/deep-dive-climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(deepDiveSourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/wind-energy-nature-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
@@ -3629,6 +3886,10 @@ for (const narrative of windNarrativePages) {
 for (const term of windGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;
   if (!fs.existsSync(termPath)) writeFile(termPath, renderWindGlossaryPage(term));
+}
+for (const term of evGlossaryTerms) {
+  const termPath = `begriffe/${term[0]}/index.html`;
+  if (!fs.existsSync(termPath)) writeFile(termPath, renderEvGlossaryPage(term));
 }
 
 console.log(`Built climate-energy cluster: ${subtopics.length} subtopics, ${claims.length} live cards, ${deepDiveSlugs.length} deep dives.`);

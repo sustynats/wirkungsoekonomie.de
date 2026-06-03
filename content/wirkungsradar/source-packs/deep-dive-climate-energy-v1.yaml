@@ -111,6 +111,76 @@ sources:
       - "Batteriebrandrisiko"
       - "Elektrofahrzeugbrände"
       - "Sicherheitsbewertung"
+  bnetza_ladeinfrastruktur_2026:
+    label: "Bundesnetzagentur - öffentliche Ladeinfrastruktur Deutschland"
+    url: "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/start.html"
+    type: "amtlich"
+    relevance:
+      - "149.002 Normalladepunkte"
+      - "51.253 Schnellladepunkte"
+      - "8,50 GW Ladeleistung"
+      - "Datenstand 01.04.2026"
+  deutschlandnetz_hpc:
+    label: "Deutschlandnetz - HPC-Schnellladepunkte"
+    url: "https://www.deutschlandnetz.de/"
+    type: "infrastruktur"
+    relevance:
+      - "HPC-Schnellladepunkte"
+      - "Autobahn-Ladeparks"
+      - "Alltags- und Langstreckenladen"
+  bmv_deutschlandnetz:
+    label: "BMV - Deutschlandnetz"
+    url: "https://bmdv.bund.de/SharedDocs/DE/Artikel/G/deutschlandnetz.html"
+    type: "infrastrukturpolitik"
+    relevance:
+      - "Deutschlandnetz"
+      - "Schnellladeinfrastruktur"
+      - "Autobahn- und Regionallose"
+  iea_ev_charging_infrastructure:
+    label: "IEA - EV charging infrastructure"
+    url: "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-charging"
+    type: "internationaler_marktbericht"
+    relevance:
+      - "EV-Ladeinfrastruktur"
+      - "öffentliche Ladepunkte"
+      - "Schnellladen"
+      - "Ladeausbau"
+  eu_afir:
+    label: "EU AFIR - Alternative Fuels Infrastructure Regulation"
+    url: "https://transport.ec.europa.eu/transport-themes/clean-transport/alternative-fuels-sustainable-mobility-europe/alternative-fuels-infrastructure_en"
+    type: "regulierung"
+    relevance:
+      - "TEN-T Ladeziele"
+      - "leichte und schwere Fahrzeuge"
+      - "Nutzerfreundlichkeit"
+      - "Zahlung"
+      - "Preistransparenz"
+  charin_mcs:
+    label: "CharIN - Megawatt Charging System"
+    url: "https://www.charin.global/technology/mcs/"
+    type: "standard_technik"
+    relevance:
+      - "Megawattladen"
+      - "E-Lkw"
+      - "Busse"
+      - "Schwerlastverkehr"
+  hola_lkw_mcs:
+    label: "HoLa - Hochleistungsladen Lkw"
+    url: "https://hochleistungsladen-lkw.de/hola-en/results/megawatt_charging_networks.php"
+    type: "projekt_wissenschaft"
+    relevance:
+      - "E-Lkw Ladefenster"
+      - "400 kWh Beispiel"
+      - "MCS bis 3,75 MW"
+      - "Pausenlogik"
+  eu_road_transport_rest:
+    label: "EU - Lenk- und Ruhezeiten Straßentransport"
+    url: "https://europa.eu/youreurope/business/human-resources/transport-sector-workers/road-transportation-workers/index_en.htm"
+    type: "regulierung"
+    relevance:
+      - "4,5 Stunden Fahrzeit"
+      - "45 Minuten Pause"
+      - "Lkw-Ladefenster"
   base_endlager:
     label: "BASE - Endlagersuche"
     url: "https://www.base.bund.de/de/endlager/endlagersuche/endlagersuche_inhalt.html"
