@@ -14262,7 +14262,8 @@ a.principle-card:hover,
   gap: 0.8rem;
 }
 
-.radar-link-cluster a {
+.radar-link-cluster a,
+.radar-link-cluster span {
   display: block;
   padding: 0.8rem 0.9rem;
   border: 1px solid rgba(47, 125, 92, 0.18);
@@ -14270,6 +14271,9 @@ a.principle-card:hover,
   background: rgba(255, 252, 245, 0.72);
   color: var(--green-dark);
   font-weight: 820;
+}
+
+.radar-link-cluster a {
   text-decoration: none;
 }
 

@@ -23,6 +23,13 @@ const sourcePack = {
       use_for: ["Deutschland Emissionen", "Sektoren", "Trends", "Datenstand Deutschland"],
     },
     {
+      label: "EDGAR/JRC - globale Treibhausgasemissionen 2025 Report",
+      publisher: "European Commission JRC / EDGAR",
+      url: "https://edgar.jrc.ec.europa.eu/report_2025",
+      type: "datenbank",
+      use_for: ["globale Treibhausgasemissionen", "Vergleichsgröße", "territoriale Anteile"],
+    },
+    {
       label: "Umweltbundesamt - Treibhausgasemissionen pro Person",
       publisher: "Umweltbundesamt",
       url: "https://www.umweltbundesamt.de/service/uba-fragen/wie-hoch-sind-die-treibhausgasemissionen-pro-person",
@@ -479,10 +486,10 @@ const claims = [
       problem: "Die Aussage verwechselt territoriale Bilanz mit Gesamtverantwortung.",
       narrative: "Ohnmachtsnarrativ / Verantwortungsverkürzung / Verzögerungsframe.",
       risk: "Konsum, Lieferketten, Produktnutzung, Historie und Transformationshebel werden unsichtbar.",
-      host_answer: "Die 2-%-Zahl misst höchstens einen engen Inlandsausschnitt. Verantwortung misst sie nicht.",
+      host_answer: "Der enge Territorialanteil misst höchstens einen Inlandsausschnitt. Verantwortung misst er nicht.",
     },
     answers: {
-      ten_seconds: "Die 2-%-Zahl misst höchstens Inlandsemissionen. Verantwortung misst sie nicht. Konsum, Lieferketten, exportierte Produkte, Scope 3 und historische Emissionen fehlen.",
+      ten_seconds: "Der enge Territorialanteil misst höchstens Inlandsemissionen. Verantwortung misst er nicht. Konsum, Lieferketten, exportierte Produkte, Scope 3 und historische Emissionen fehlen.",
       thirty_seconds:
         "Der Denkfehler ist: Territoriale Emissionen werden mit Gesamtverantwortung verwechselt. Der enge Territorialanteil zeigt, was innerhalb Deutschlands ausgestoßen wird, aber nicht, welche Emissionen deutsche Nachfrage, importierte Vorprodukte, Lieferketten, exportierte Fahrzeuge und Maschinen, Scope-3-Nutzung, historische Emissionen und Standards auslösen. Deshalb ist die 2-%-Behauptung kein Entlastungsbeweis. Die bessere Frage lautet: Welche Wirkung erzeugen unsere Produkte, Märkte, Regeln und Investitionen weltweit - und wie koppeln wir diese Wirkung in bessere Entscheidungen zurück?",
       two_minutes:
@@ -550,7 +557,8 @@ const claims = [
         ["Transformativ", "Welche Hebel setzen wir?", "EU-Standards, Technologie, Kapital, Beschaffung, Normung.", "Systemische Steuerungsmacht deutscher Industrie und Politik."],
       ],
       dataFacts: [
-        ["Territorial", "Deutschland meldete für 2024 rund 649 Mio. t CO₂-Äquivalente. Diese Zahl ist wichtig für nationale Klimaziele, misst aber nur Inlandsemissionen."],
+        ["Territorial", "Deutschland meldete für 2024 rund 649 Mio. t CO₂-Äquivalente; BMUKN/UBA-Vorabdaten beziffern 2025 auf 648,9 Mio. t CO₂e. Diese Werte sind wichtig für nationale Klimaziele, messen aber nur Inlandsemissionen."],
+        ["Global", "EDGAR/JRC weist für 2024 globale Treibhausgasemissionen von rund 53,2 Gt CO₂e ohne LULUCF aus. Das ist die Vergleichsgröße für enge territoriale Anteile."],
         ["Konsum", "Das UBA beziffert deutsche Pro-Kopf-Treibhausgasemissionen bei Berücksichtigung von Import und Export von Gütern mit 10,3 t CO₂e pro Jahr."],
         ["Fußabdruck", "Eurostat weist für 2023 einen deutschen Treibhausgas-Fußabdruck des Konsums von 903 Mio. t CO₂e beziehungsweise 10,8 t pro Kopf aus."],
         ["Scope 3", "Das GHG Protocol führt die Nutzung verkaufter Produkte als Scope-3-Kategorie 11. Für Automobil-, Maschinen- und Energieprodukte ist diese Bilanzgrenze zentral."],
@@ -562,6 +570,7 @@ const claims = [
     },
     sources: [
       "Umweltbundesamt - Treibhausgas-Emissionen in Deutschland",
+      "EDGAR/JRC - globale Treibhausgasemissionen 2025 Report",
       "Umweltbundesamt - Treibhausgasemissionen pro Person",
       "Eurostat - Greenhouse gas emission footprints",
       "GHG Protocol - Corporate Value Chain Scope 3 Standard",
@@ -1321,6 +1330,83 @@ function slugSource(label) {
   return sourcePack.primary_sources.find((source) => source.label === label) || sourcePack.primary_sources[0];
 }
 
+const germanyTwoPercentSourceMeta = new Map([
+  [
+    "Umweltbundesamt - Treibhausgas-Emissionen in Deutschland",
+    {
+      title: "UBA - territoriale Treibhausgasemissionen",
+      shows: "Deutschland emittierte 2024 territorial rund 649 Mio. t CO₂e; BMUKN/UBA-Vorabdaten für 2025 nennen 648,9 Mio. t CO₂e.",
+      use_for: "Einordnung der engen territorialen Bilanz.",
+      warning: "Territoriale Emissionen sind nicht Gesamtverantwortung.",
+    },
+  ],
+  [
+    "EDGAR/JRC - globale Treibhausgasemissionen 2025 Report",
+    {
+      title: "EDGAR/JRC - globale Treibhausgasemissionen",
+      shows: "Globale Treibhausgasemissionen erreichten 2024 rund 53,2 Gt CO₂e ohne LULUCF.",
+      use_for: "Vergleichsgröße für territoriale Anteile.",
+      warning: "Globaler Anteil sagt nichts über Konsum-, Produkt-, Scope-3- oder historische Verantwortung.",
+    },
+  ],
+  [
+    "Umweltbundesamt - Treibhausgasemissionen pro Person",
+    {
+      title: "UBA - Pro-Kopf-Emissionen mit Import-/Exportberücksichtigung",
+      shows: "10,3 t CO₂e pro Person und Jahr, Stand 2021; mehr als 60 Prozent über dem Weltdurchschnitt.",
+      use_for: "Konsum- und Nachfrageverantwortung.",
+      warning: "Pro-Kopf-Fußabdruck ist eine andere Bilanzlogik als Territorialemissionen.",
+    },
+  ],
+  [
+    "Eurostat - Greenhouse gas emission footprints",
+    {
+      title: "Eurostat - Greenhouse gas emission footprints",
+      shows: "Deutschlands Konsum war 2023 mit 903 Mio. t CO₂e verbunden; pro Kopf lag der Fußabdruck bei 10,8 t.",
+      use_for: "Konsumemissionen und ausgelagerte Produktionswirkung.",
+      warning: "Nicht mit Territorialwerten addieren; Bilanzgrenzen erklären.",
+    },
+  ],
+  [
+    "GHG Protocol - Corporate Value Chain Scope 3 Standard",
+    {
+      title: "GHG Protocol - Use of Sold Products",
+      shows: "Die Nutzung verkaufter Produkte ist Scope-3-Kategorie 11; Beispiele sind Automobile, Motoren, Kraftwerke, Gebäude und Geräte.",
+      use_for: "Produktnutzung und exportierte Emissionsverantwortung.",
+      warning: "Scope 3 ist Unternehmensbilanz, nicht nationale Territorialbilanz.",
+    },
+  ],
+  [
+    "Destatis - 3.4 million new cars exported from Germany in 2024",
+    {
+      title: "Destatis - Pkw-Exporte",
+      shows: "Deutschland exportierte 2024 rund 3,4 Mio. neue Pkw; 25,9 Prozent waren reine Elektroautos.",
+      use_for: "Beispiel für exportierte Produktnutzung und Scope-3-Relevanz.",
+      warning: "Die Exportzahl allein ist keine Emissionsbilanz; sie zeigt den Wirkungsraum.",
+    },
+  ],
+  [
+    "Our World in Data - Share of global cumulative CO2 emissions",
+    {
+      title: "Our World in Data - kumulative CO₂-Emissionen",
+      shows: "Kumulative CO₂-Emissionen werden als laufende Summe jährlicher Emissionen seit 1750 ausgewiesen.",
+      use_for: "Historische Verantwortung als eigene Bilanzfrage.",
+      warning: "Jahresanteil ist nicht kumulative Klimawirkung.",
+    },
+  ],
+]);
+
+function germanyTwoPercentSourceCard(label) {
+  const source = slugSource(label);
+  const meta = germanyTwoPercentSourceMeta.get(label) || {
+    title: source.label,
+    shows: source.use_for.join(" / "),
+    use_for: "Faktenprüfung und Kontext.",
+    warning: "Bilanzgrenze offenlegen.",
+  };
+  return { ...source, ...meta };
+}
+
 function sentence(value) {
   const text = String(value ?? "");
   return text.length > 155 ? `${text.slice(0, 152)}...` : text;
@@ -1552,12 +1638,15 @@ function woekSolutionMatrix(items) {
           <div class="section-header"><p class="hero-kicker">WÖk-Lösung</p><h2 id="woek-solution">Von Sichtbarkeit zu Rückkopplung.</h2></div>
           <div class="card-grid">
             ${items
-              .map(
-                (item) => `<article class="card">
+              .map((item) => {
+                const title = typeof item === "string" ? item : item.title;
+                const text = typeof item === "string" ? "" : item.text;
+                const textHtml = text ? `\n              <p class="card-text">${escapeHtml(text)}</p>` : "";
+                return `<article class="card">
               <p class="card-kicker">Wirkungsökonomische Lösung</p>
-              <h3 class="card-title">${escapeHtml(item)}</h3>
-            </article>`
-              )
+              <h3 class="card-title">${escapeHtml(title)}</h3>${textHtml}
+            </article>`;
+              })
               .join("\n            ")}
           </div>
         </div>
@@ -1578,6 +1667,12 @@ function internalLinks() {
             <a href="../../narrative/kontrollverlust/">Kontrollverlust</a>
             <a href="../../narrative/wissenschaftsdelegitimierung/">Wissenschaftsdelegitimierung</a>
             <a href="../../narrative/whataboutism/">Whataboutism</a>
+            <a href="../../../werkzeuge/woek-ids/">WÖk-IDs</a>
+            <a href="../../../werkzeuge/reverse-merit-order/">Reverse Merit Order</a>
+            <a href="../../../werkzeuge/wirkungssteuergesetz/">Wirkungssteuer</a>
+            <a href="../../../werkzeuge/wirkungsrat/">Wirkungsrat</a>
+            <a href="../../../werkzeuge/t-sroi/">T-SROI</a>
+            <a href="../../../begriffe/digitaler-produktpass/">Digitaler Produktpass</a>
           </div>
           <p class="card-text"><strong>Nichtkompensation:</strong> Das kritischste Wirkungsfeld begrenzt die Gesamtbewertung; gute Klimawerte verdecken keine sozialen, ökologischen oder demokratischen Schäden.</p>
         </div>
@@ -2056,7 +2151,71 @@ function renderGermanyTwoPercentDossier(claim) {
     ["Narrativ", claim.summary.narrative, "warning"],
     ["Live-Antwort", claim.summary.host_answer, "positive"],
   ];
-  const sourceCards = claim.sources.map((label) => slugSource(label));
+  const sourceCards = claim.sources.map((label) => germanyTwoPercentSourceCard(label));
+  const understandingSections = [
+    {
+      kicker: "2.1 Territorial",
+      title: "Territorial ist nicht falsch - aber eng.",
+      text:
+        "Territoriale Emissionen messen, was innerhalb der Landesgrenzen entsteht. Diese Bilanz ist wichtig für nationale Klimaziele, aber sie ist nicht identisch mit Verantwortung. Der enge Territorialanteil zeigt einen Ausschnitt, nicht die globale Wirkung deutscher Nachfrage, Produkte, Lieferketten, Kapitalflüsse oder Standards.",
+    },
+    {
+      kicker: "2.2 Konsum",
+      title: "Was wir nachfragen, wirkt auch im Ausland.",
+      text:
+        "Wenn Deutschland Produkte importiert, entstehen Teile der Emissionen im Ausland. Territorial werden sie dort gezählt. Wirkungsökonomisch gehören sie zugleich zur Nachfrage- und Konsumverantwortung Deutschlands: Emissionen verschwinden nicht, wenn sie aus der Territorialbilanz fallen.",
+    },
+    {
+      kicker: "2.3 Lieferkette",
+      title: "Ausgelagerte Produktion ist keine ausgelagerte Wirkung.",
+      text:
+        "Wenn Produktion ins Ausland verlagert wird, sinkt möglicherweise die deutsche Inlandsbilanz. Die Wirkung bleibt real: Energie, Rohstoffe, Wasser, Arbeitsbedingungen, Transport und Emissionen entstehen weiter - nur an einem anderen Ort.",
+    },
+    {
+      kicker: "2.4 Scope 3",
+      title: "Die Wirkung endet nicht am Werkstor.",
+      text:
+        "Scope 3 ist keine nationale Klimabilanz, sondern eine Unternehmens- und Wertschöpfungskettenbilanz. Genau deshalb ist sie wirkungsökonomisch wichtig: Exportierte Fahrzeuge, Maschinen, Anlagen und energieverbrauchende Produkte können über Jahre Nutzungsemissionen außerhalb Deutschlands verursachen.",
+    },
+    {
+      kicker: "2.5 Historisch",
+      title: "Jahresanteil ist nicht kumulative Klimawirkung.",
+      text:
+        "Die 2-%-Behauptung betrachtet meist ein einzelnes Jahr. Klimawirkung entsteht aber kumulativ, weil CO₂ lange in der Atmosphäre bleibt. Die historische Perspektive beantwortet deshalb eine andere Verantwortungsfrage als der aktuelle Jahresanteil.",
+    },
+    {
+      kicker: "2.6 Transformativ",
+      title: "Deutschland ist nicht nur Emittent, sondern Pfadsetzer.",
+      text:
+        "Deutschland wirkt als Industrieland, Exportland, EU-Mitglied, Normsetzer, Maschinenbau-, Chemie- und Automobilland, Kapitalstandort, Beschaffungsmarkt und Technologieanbieter. Produktstandards, Exporttechnologien, Investitionen, öffentliche Beschaffung und EU-Regeln beeinflussen globale Pfade.",
+    },
+  ];
+  const differentiatedBalanceItems = [
+    ["Territorial", "Was entsteht im Inland?"],
+    ["Konsum", "Was verursacht unsere Nachfrage?"],
+    ["Lieferkette", "Was steckt in Vorprodukten?"],
+    ["Scope 3", "Was bewirken verkaufte Produkte?"],
+    ["Historisch", "Was wurde kumulativ verursacht?"],
+    ["Transformativ", "Welche Pfade und Standards setzen wir?"],
+  ];
+  const falseActionItems = [
+    ["Politik", "Klimapolitik wird als symbolisch oder nutzlos gerahmt."],
+    ["Industrie", "Produktdesign, Lieferketten, Antriebswende und Maschinenwirkung werden zu langsam umgestellt."],
+    ["Konsum", "Importierte Produktionswirkung bleibt unsichtbar."],
+    ["Kapital", "Investitionen fließen weiter in Geschäftsmodelle mit ausgelagerter Wirkung."],
+    ["Demokratie", "Ohnmacht und Zynismus wachsen: Wir können sowieso nichts ändern."],
+    ["Planet", "Emissionen sinken langsamer, weil Verantwortung an Bilanzgrenzen verschwindet."],
+  ];
+  const woekDossierSolutions = [
+    { title: "Territoriale Emissionen senken", text: "Deutschland muss seine Inlandsemissionen weiter senken: Energie, Gebäude, Verkehr, Industrie und Landwirtschaft." },
+    { title: "Konsumemissionen sichtbar machen", text: "Konsum- und Importfußabdrücke müssen neben der Territorialbilanz öffentlich sichtbar werden." },
+    { title: "Lieferkettenwirkung erfassen", text: "Rohstoffe, Vorprodukte, Energie, Wasser, Arbeit, Transport und Datenqualität werden über Scorecards und WÖk-IDs abgebildet." },
+    { title: "Scope-3-Produktnutzung einbeziehen", text: "Fahrzeuge, Maschinen, Anlagen, Chemieprodukte und energieverbrauchende Geräte werden nach Nutzungsemissionen über den Lebenszyklus bewertet." },
+    { title: "Digitale Produktpässe nutzen", text: "Der digitale Produktpass wird zum Produktgedächtnis: Herkunft, Materialien, Lieferketten, Nutzung, Reparierbarkeit, Recycling und Wirkungsdaten werden maschinenlesbar." },
+    { title: "Reverse Merit Order anwenden", text: "Gute Werte in einem Feld dürfen schwere negative Wirkungen in anderen Feldern nicht verdecken." },
+    { title: "Wirkungssteuer und Beschaffung koppeln", text: "Produkte mit negativer Netto-Wirkung werden teurer, Produkte mit positiver Netto-Wirkung günstiger; öffentliche Beschaffung folgt Wirkung." },
+    { title: "Verantwortung operationalisieren", text: "Nicht Schuld moralisch verteilen, sondern Wirkung sichtbar machen und in Preise, Steuern, Kapital, Standards und Produktdesign zurückführen." },
+  ];
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero theme-hero dossier-hero">
         <div class="radar-hero-copy">
@@ -2084,8 +2243,8 @@ function renderGermanyTwoPercentDossier(claim) {
             <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
           </div>
           <div class="card-grid two dossier-live-support">
-            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><h3 class="card-title">Erst die Bilanzgrenze klären.</h3><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame. Der Frame lautet: Ein enger Territorialanteil sei Gesamtverantwortung. Die bessere Frage ist: Welche Wirkung lösen deutsche Entscheidungen, Produkte, Lieferketten und Investitionen tatsächlich aus?</p></article>
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">Zur Wirkungsfrage zurück.</h3><p class="card-text">${escapeHtml(claim.redirectQuestion)}</p></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><h3 class="card-title">Erst die Bilanzgrenze klären.</h3><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame. Der Frame lautet: Ein enger Territorialanteil sei gleichbedeutend mit geringer Verantwortung. Genau diese Gleichsetzung ist falsch.</p></article>
+            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">Zur Wirkungsfrage zurück.</h3><p class="card-text">Meinst du territoriale Jahresemissionen - oder meinst du Verantwortung über Konsum, Lieferketten, Produkte, Exporte und historische Wirkung?</p></article>
           </div>
           <div class="card dossier-dont-card">
             <p class="card-kicker">Nicht ins Stöckchen springen</p>
@@ -2102,6 +2261,7 @@ function renderGermanyTwoPercentDossier(claim) {
             <h3 class="card-title">Verantwortungsverkürzung erkennen.</h3>
             <p class="card-text">${escapeHtml(dossier.thesis)}</p>
             <p class="card-text"><a class="text-link" href="../../../begriffe/verantwortungsverkuerzung/" data-glossary-key="verantwortungsverkuerzung"><strong>Verantwortungsverkürzung</strong></a>: Eine enge Bilanzgrenze wird benutzt, um größere Wirkungszusammenhänge unsichtbar zu machen.</p>
+            <p class="card-text">Wirkungsökonomisch entsteht Verantwortung dort, wo Entscheidungen, Produkte, Lieferketten, Kapital, Regeln oder Technologien Zustände verändern - direkt, indirekt, verzögert oder systemisch. Die WÖk unterscheidet dafür Wirkung, Netto-Wirkung und Transformationswirkung.</p>
           </article>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Aussagenvarianten</p><h3 class="card-title">So taucht der Frame auf.</h3><ul class="clean-list">${dossier.variants.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
@@ -2116,6 +2276,19 @@ function renderGermanyTwoPercentDossier(claim) {
               </tbody>
             </table>
           </div>
+          <div class="card-grid two dossier-understanding-grid">
+            ${understandingSections.map((section) => `<article class="card">
+              <p class="card-kicker">${escapeHtml(section.kicker)}</p>
+              <h3 class="card-title">${escapeHtml(section.title)}</h3>
+              <p class="card-text">${escapeHtml(section.text)}</p>
+            </article>`).join("\n            ")}
+          </div>
+          <article class="card dossier-boundary-card">
+            <p class="card-kicker">Nicht addieren, sondern differenzieren</p>
+            <h3 class="card-title">Unterschiedliche Verantwortungsbilanzen dürfen nicht einfach addiert werden.</h3>
+            <p class="card-text">Territoriale Emissionen, Konsumemissionen, Unternehmens-Scope-3-Emissionen und historische Emissionen sind verschiedene Bilanzierungslogiken. Man darf sie nicht zu einer einzigen Zahl zusammenwerfen. Aber man muss sie nebeneinander sichtbar machen, weil sie unterschiedliche Verantwortungsfragen beantworten.</p>
+            <div class="radar-link-cluster">${differentiatedBalanceItems.map(([label, text]) => `<span><strong>${escapeHtml(label)}:</strong> ${escapeHtml(text)}</span>`).join("\n              ")}</div>
+          </article>
           <div class="section-header dossier-subheader"><p class="hero-kicker">Wirkungslogik</p><h2>Von der Zahl zur Wirkungsblindheit.</h2></div>
           <ol class="timeline radar-flow radar-effect-path dossier-effect-path">
             ${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("\n            ")}
@@ -2130,9 +2303,20 @@ function renderGermanyTwoPercentDossier(claim) {
           </div>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Faktenlage</p><h3 class="card-title">Was prüfbar ist.</h3><ul class="clean-list">${claim.facts.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
-            <article class="card"><p class="card-kicker">Folgen falschen Handelns</p><h3 class="card-title">Was wahrscheinlicher wird.</h3><ul class="clean-list">${claim.consequences.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+            <article class="card"><p class="card-kicker">Wirkstoffanalyse</p><h3 class="card-title">Territoriale Zahl als Verantwortungsverkürzer.</h3><p class="card-text">Eine enge territoriale Kennzahl wird als scheinbar vollständiger Verantwortungsbeweis benutzt. Die Aussage verschiebt Aufmerksamkeit von Wirkungsketten auf Landesgrenzen.</p><ul class="clean-list"><li>Konsumemissionen</li><li>ausgelagerte Produktion</li><li>importierte Vorprodukte</li><li>Scope 3 / Use of Sold Products</li><li>exportierte Produktnutzung</li><li>historische Emissionen</li><li>Technologie-, Kapital- und Beschaffungshebel</li></ul></article>
           </div>
-          ${woekSolutionMatrix(claim.woekSolution)}
+          <section class="section section-soft dossier-false-action" aria-labelledby="false-action">
+            <div>
+              <div class="section-header"><p class="hero-kicker">Folgen falschen Handelns</p><h2 id="false-action">Was wahrscheinlicher wird.</h2></div>
+              <div class="card-grid">${falseActionItems.map(([dimension, consequence]) => `<article class="card"><p class="card-kicker">${escapeHtml(dimension)}</p><h3 class="card-title">${escapeHtml(consequence)}</h3></article>`).join("\n                ")}</div>
+            </div>
+          </section>
+          <article class="card dossier-thesis-card">
+            <p class="card-kicker">Wirkungsökonomische Antwort</p>
+            <h3 class="card-title">Aus der 2-%-Behauptung folgt nicht Rückzug, sondern präzisere Bilanzierung und bessere Rückkopplung.</h3>
+            <p class="card-text">Die Reverse Merit Order schützt vor Schönrechnen: Negative Wirkung in einem kritischen Feld kann nicht durch positive Werte an anderer Stelle verdeckt werden. Sie wirkt als Firewall gegen Greenwashing, Wirkungsverwässerung und Machtverzerrung.</p>
+          </article>
+          ${woekSolutionMatrix(woekDossierSolutions)}
           ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
           ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], `${claim.title} SDG`, "climate-sdg-panel")}
           <section class="dossier-source-section" aria-labelledby="dossier-sources">
@@ -2140,8 +2324,10 @@ function renderGermanyTwoPercentDossier(claim) {
             <div class="card-grid">
               ${sourceCards.map((source) => `<article class="card">
                 <p class="card-kicker">${escapeHtml(source.type)} · ${escapeHtml(source.publisher)}</p>
-                <h3 class="card-title">${escapeHtml(source.label)}</h3>
-                <p class="card-text">${escapeHtml(source.use_for.join(" / "))}</p>
+                <h3 class="card-title">${escapeHtml(source.title)}</h3>
+                <p class="card-text"><strong>Zeigt:</strong> ${escapeHtml(source.shows)}</p>
+                <p class="card-text"><strong>Nutzen:</strong> ${escapeHtml(source.use_for)}</p>
+                <p class="card-text"><strong>Warnung:</strong> ${escapeHtml(source.warning)}</p>
                 <p><a class="text-link" href="${escapeHtml(source.url)}">Quelle öffnen</a></p>
               </article>`).join("\n              ")}
               <article class="card">
