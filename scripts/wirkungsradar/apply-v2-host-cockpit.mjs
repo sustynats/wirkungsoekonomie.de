@@ -110,6 +110,37 @@ const overrides = {
     oldFrame: "Staatsschulden seien wie ein Familienkredit, den Bürger:innen später komplett tilgen müssten.",
     better: "Staatsschulden anders erklären: Refinanzierung, Zinslast, Tragfähigkeit und Wirkung der Ausgaben.",
   },
+  "heizgesetz-heizhammer-narrativ": {
+    claim: "Heizgesetz oder Heizhammer?",
+    short: "Wahrer Belastungskern, massiver Verzerrungsframe.",
+    say:
+      "Der Heizhammer-Frame war stärker als das Gesetz. Es ging nicht darum, funktionierende Heizungen pauschal rauszureißen, sondern neue Heizungen schrittweise auf erneuerbare Wärme umzustellen.",
+    live:
+      "Der wahre Kern ist: Wärmewende kostet Geld und muss sozial abgefedert werden. Der Denkfehler ist, daraus Enteignung oder Zwangsheizung zu machen. Das Gesetz betraf vor allem neue Heizungen, Übergangsfristen und Wärmeplanung.",
+    panel:
+      "Beim Heizgesetz gab es reale Probleme: schlechte Kommunikation, Planungsunsicherheit, Kostenangst, komplizierte Förderung, Mieterschutzfragen und echte Belastung für Eigentümer:innen. Aber der Begriff Heizhammer hat aus dieser komplexen Wärmewende-Frage ein Bedrohungsbild gemacht. Viele Menschen hatten plötzlich das Gefühl, der Staat komme in den Keller und reiße die Heizung raus. Sachlich ging es um neue Heizungen, 65 Prozent erneuerbare Wärme, Übergangsfristen und die Kopplung an kommunale Wärmeplanung. Wirkungsökonomisch muss man trennen: Der reale Punkt ist bezahlbare, soziale und planbare Wärmewende. Der schädliche Frame ist Enteignung, Zwang und Panik.",
+    exampleTitle: "Wärmewende statt Heizhammer",
+    example:
+      "Eine funktionierende Heizung ist nicht dasselbe wie eine neue Heizung im Rahmen künftiger Regeln. Bestand, Reparatur, Austausch, Wärmeplanung und Förderung müssen getrennt werden.",
+    question: "Redest du über echte Kosten und Planungssicherheit - oder über den Frame, dass der Staat funktionierende Heizungen pauschal verbietet?",
+    oldFrame: "Aus Wärmewende wird Heizhammer, aus Planung wird Zwang, aus Zukunftsschutz wird Verlustangst.",
+    notThis: "Es gab gar kein Problem, und wer Kostenangst hat, hat es nicht verstanden.",
+    better: "Kosten ernst nehmen, Bestand und neue Heizung trennen, lokale Wärmeoption und Lebenszykluskosten prüfen.",
+    impacts: [
+      ["Gebäude", "Heizung, Dämmung und Wärmebedarf entscheiden gemeinsam.", "Nicht jede Lösung passt zu jedem Haus."],
+      ["Haushalt", "Anschaffungskosten, Förderung und Betriebskosten müssen zusammen gerechnet werden.", "Maximalkosten sind nicht automatisch Normalfall."],
+      ["Miete", "Modernisierung kann belasten, wenn Mieterschutz und Förderung nicht greifen.", "Soziale Abfederung ist Teil der Wirkung."],
+      ["Kommune", "Wärmeplanung soll zeigen, wo Fernwärme, Quartierslösung oder dezentrale Wärme plausibel ist.", "Planung verhindert Blindinvestitionen."],
+      ["Klima", "Fossile Wärme bindet Emissionen bis weit in die Zukunft.", "2045 ist für Heizungszyklen nicht weit weg."],
+      ["Abhängigkeit", "Gaspreise, CO2-Preis und Netzumbau können fossile Heizungen riskanter machen.", "Vertraut heißt nicht automatisch sicher."],
+      ["Demokratie", "Verlorene Deutungshoheit schwächt Vertrauen in Transformationspolitik.", "Sprache entscheidet, ob Menschen Wirkung oder Bedrohung sehen."],
+    ],
+    psychology: [
+      ["Das Zuhause wird verteidigt.", "Eigentumsangst", "Haus und Heizung stehen für Sicherheit, Lebensleistung und Alterssicherung.", "Erst die Sorge anerkennen, dann Bestand, Fristen und Optionen trennen."],
+      ["Zwang löst Gegendruck aus.", "Reaktanz", "Der Frame macht aus Planung Bevormundung.", "Nicht Gehorsam verlangen, sondern Wahlräume und lokale Wärmeplanung zeigen."],
+      ["Eine Maximalzahl wird Normalfall.", "Ankereffekt", "100.000 Euro bleibt hängen, auch wenn Förderung, Gebäudezustand und Fälle variieren.", "Standardfall, Härtefall und Extremfall sauber auseinanderhalten."],
+    ],
+  },
   "windraeder-voegel-wald-beton-rueckbau": {
     claim: "Windräder zerstören Natur, sind Sondermüll und wegen SF₆ gar nicht klimafreundlich.",
     short: "Echte Prüfpflicht. Falsches Gesamturteil.",
