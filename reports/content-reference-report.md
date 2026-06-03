@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T14:04:07.726Z
-Resolved references: 6430
-Warnings: 789
+Erzeugt: 2026-06-03T14:23:52.056Z
+Resolved references: 6472
+Warnings: 813
 
 ## Warnungen
 
@@ -112,6 +112,10 @@ Warnings: 789
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Titel aus Slug erzeugt
+- [unresolved-reference] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
@@ -160,6 +164,8 @@ Warnings: 789
 - [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Titel aus Slug erzeugt
+- [unresolved-reference] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] folgencheck-statt-faktencheck-democracy-intelligence - Titel aus Slug erzeugt
@@ -170,14 +176,20 @@ Warnings: 789
 - [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Titel aus Slug erzeugt
+- [unresolved-reference] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
@@ -185,6 +197,8 @@ Warnings: 789
 - [unresolved-reference] fuehrender-begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] working-paper-wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
@@ -346,6 +360,8 @@ Warnings: 789
 - [missing-title-slug-fallback] referenz-kapitel-068-gesundheit - Titel aus Slug erzeugt
 - [unresolved-reference] referenz-kapitel-068-gesundheit - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
@@ -365,6 +381,8 @@ Warnings: 789
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
@@ -488,24 +506,6 @@ Warnings: 789
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] woek_wohnen_investoren_vermieter_detailkonzept_v0_3 - Titel aus Slug erzeugt
-- [unresolved-reference] woek_wohnen_investoren_vermieter_detailkonzept_v0_3 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] manifest-der-wirkungsoekonomie - Titel aus Slug erzeugt
-- [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 
 ## Aufgelöste Verweise
 

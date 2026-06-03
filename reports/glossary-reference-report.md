@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-03T14:04:06.691Z
-- Content pages scanned: 1002
-- Glossary terms indexed: 1291
-- Warnings: 544
+- Generated: 2026-06-03T14:23:51.165Z
+- Content pages scanned: 1003
+- Glossary terms indexed: 1299
+- Warnings: 545
 
 ## Stichproben
 
@@ -359,4 +359,4 @@
 - term has no content references: ngo-wirkungspruefung
 - term has no content references: nicht-dualitaet
 - term has no content references: niederspannung
-- ... 244 weitere Warnungen
+- ... 245 weitere Warnungen

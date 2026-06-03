@@ -96,6 +96,16 @@ const glossary = [
   ["wirkungslenkung", "Wirkungslenkung"],
   ["wirkungsblindheit", "Wirkungsblindheit"],
   ["wirkungswahrheit", "Wirkungswahrheit"],
+  ["frame", "Frame"],
+  ["narrativ", "Narrativ"],
+  ["sprachlicher-trigger", "Sprachlicher Trigger"],
+  ["feindbild", "Feindbild"],
+  ["polarisierung", "Polarisierung"],
+  ["opferumkehr", "Opferumkehr"],
+  ["demokratie-umdeutung", "Demokratie-Umdeutung"],
+  ["gegenframe", "Gegenframe"],
+  ["folgencheck", "Folgencheck"],
+  ["wirkungsanalyse-von-sprache", "Wirkungsanalyse von Sprache"],
 ];
 
 const hostSchema = [
@@ -1169,6 +1179,154 @@ function stoeckchenModule() {
       </section>`;
 }
 
+const languageMechanismCards = [
+  ["Frame", "Ein Frame ist ein Deutungsrahmen, der entscheidet, wie ein Thema wahrgenommen wird."],
+  ["Trigger", "Bestimmte Wörter aktivieren Angst, Wut, Kränkung, Trotz, Kontrollverlust oder Zugehörigkeit."],
+  ["Wirkung", "Sprache kann Vertrauen stärken oder untergraben, Feindbilder erzeugen oder abbauen, Handlungsfähigkeit öffnen oder blockieren."],
+  ["Gegenstrategie", "Nicht spiegeln, nicht beschämen, nicht eskalieren - sondern entwirren, einordnen und in Richtung Lösung zurückführen."],
+];
+
+const languagePatterns = [
+  {
+    name: "Bedrohungsnarrativ",
+    definition: "Ein Sprachmuster, das gesellschaftliche Veränderungen als existenzielle Gefahr rahmt.",
+    triggers: "Überfremdung, Masseneinwanderung, Bevölkerungsaustausch, Remigration, Identitätsverlust, kulturelle Verdrängung, unkontrollierte Migration, Asylmissbrauch, Parallelgesellschaften",
+    emotion: "Angst, Abwehr, Schutzbedürfnis",
+    risk: "Migration erscheint nicht mehr als politische Gestaltungsaufgabe, sondern als Bedrohungserzählung.",
+    families: [["Sündenbock", "suendenbock"], ["Kontrollverlust", "kontrollverlust"], ["Zersetzung", "zersetzung"]],
+    answer: "Probleme benennen, aber Feindbildlogik trennen. Migration als Steuerungs-, Integrations- und Rechtsstaatsfrage erklären statt als Untergangserzählung.",
+  },
+  {
+    name: "Opfer-Narrativ",
+    definition: "Ein Sprachmuster, das die eigene Gruppe als mutige, unterdrückte Wahrheitssprecherin inszeniert.",
+    triggers: "Altparteien, Kartellparteien, Meinungsdiktatur, Gesinnungskontrolle, politische Korrektheit, Unterdrückung abweichender Meinungen",
+    emotion: "Kränkung, Selbstaufwertung, Trotz",
+    risk: "Kritik erscheint als Zensur, Widerspruch als Verfolgung.",
+    families: [["Opferumkehr", "opferumkehr"], ["Medienfeindbild", "medienfeindbild"], ["Zersetzung", "zersetzung"]],
+    answer: "Meinungsfreiheit von Widerspruchsfreiheit trennen. Kritik ist keine Zensur.",
+  },
+  {
+    name: "Wir-gegen-die-Narrativ",
+    definition: "Ein Sprachmuster, das die Gesellschaft in ein gutes, echtes Wir und ein bedrohliches oder korrumpiertes Sie aufteilt.",
+    triggers: "Volk, Eliten, Establishment, Patrioten, Ideologen, deutsche Interessen, deutsche Leitkultur, kulturelle Identität",
+    emotion: "Gruppenbindung, Abgrenzung, Feindbildbildung",
+    risk: "Pluralismus wird zum Lagerkampf, Kompromiss erscheint als Verrat.",
+    families: [["Sündenbock", "suendenbock"], ["Elitenverschwörung", "elitenverschwoerung"], ["Normalisierung", "normalisierung"]],
+    answer: "Demokratie als Raum legitimer Unterschiede und fairer Konkurrenz erklären, nicht als Kampf zwischen echten und falschen Bürgern.",
+  },
+  {
+    name: "Niedergangs-Narrativ",
+    definition: "Ein Sprachmuster, das Gegenwart als Verfall und Vergangenheit als verlorene Ordnung erzählt.",
+    triggers: "Verfall, Niedergang, Krise der Identität, Selbsthass, Identitätsstörung, kulturelle Dekadenz",
+    emotion: "Verlustangst, Nostalgie, Radikalisierungsbereitschaft",
+    risk: "Radikale Gegenmaßnahmen erscheinen plausibel.",
+    families: [["Scheiternsframe", "scheiternsframe"], ["Zersetzung", "zersetzung"], ["Ohnmacht", "ohnmacht"]],
+    answer: "Probleme konkret machen, aber Totalurteile vermeiden. Engpässe, Ursachen und Verbesserungen benennen statt Untergang zu verstärken.",
+  },
+  {
+    name: "Kulturkampf-Narrativ",
+    definition: "Ein Sprachmuster, das gesellschaftliche Vielfalt als ideologischen Angriff auf Normalität, Familie oder Kinder deutet.",
+    triggers: "Gender-Ideologie, Frühsexualisierung, woke, linke Ideologie, Umerziehung",
+    emotion: "Empörung, Ekel, Schutzinstinkt",
+    risk: "Pluralismus wird als Feindbild gerahmt, Minderheiten werden symbolisch unter Druck gesetzt.",
+    families: [["Normalisierung", "normalisierung"], ["Medienfeindbild", "medienfeindbild"], ["Wissenschaftsdelegitimierung", "wissenschaftsdelegitimierung"]],
+    answer: "Nicht jede Provokation spiegeln. Sachlich erklären, welche realen Fragen verhandelt werden, und Angstbilder von tatsächlichem Kinderschutz oder Bildungsfragen trennen.",
+  },
+  {
+    name: "Sicherheits-Narrativ",
+    definition: "Ein Sprachmuster, das Unsicherheit emotional stark mit Migration, Ordnung und hartem Durchgreifen verknüpft.",
+    triggers: "Task Force Abschiebungen, Null-Toleranz, starker Staat, Law and Order, Grenzschutz",
+    emotion: "Kontrollsehnsucht, Härtebereitschaft",
+    risk: "Rechtsstaatliche Verfahren erscheinen als Hindernis, nicht als Schutz.",
+    families: [["Kontrollverlust", "kontrollverlust"], ["Verbotsnarrativ", "verbotsnarrativ"], ["Zersetzung", "zersetzung"]],
+    answer: "Sicherheit ernst nehmen, aber Ursachen differenzieren. Rechtsstaat und Wirksamkeit zusammendenken statt autoritäre Vereinfachung zu übernehmen.",
+  },
+  {
+    name: "Demokratie-Umdeutungs-Narrativ",
+    definition: "Ein Sprachmuster, das Demokratie fast nur noch als unmittelbaren Mehrheitswillen darstellt und Sicherungen als Störung markiert.",
+    triggers: "Volkswille als einzige Legitimation, Mehrheit gegen Eliten, Medien und Gerichte als Blockierer",
+    emotion: "Wut auf Institutionen, Vereinfachungssehnsucht",
+    risk: "Liberale Demokratie wird auf Mehrheitsdurchsetzung reduziert.",
+    families: [["Zersetzung", "zersetzung"], ["Elitenverschwörung", "elitenverschwoerung"], ["Medienfeindbild", "medienfeindbild"]],
+    answer: "Demokratie nicht nur als Mehrheit, sondern als Zusammenspiel von Rechten, Kontrolle, Opposition, Gewaltenteilung und Schutz vor Machtmissbrauch erklären.",
+  },
+];
+
+const triggerRows = [
+  ["Altparteien", "alle anderen als Block", "Misstrauen, Wut", "demokratische Konkurrenz wirkt illegitim", "Welche konkrete Entscheidung kritisieren wir - und welche Kontrolle gibt es?"],
+  ["Remigration", "Rückführung als Ordnungserzählung", "Härtebereitschaft", "Menschenrechte und Verfahren werden ausgeblendet", "Welche rechtsstaatliche Maßnahme ist gemeint und wen betrifft sie?"],
+  ["Identitätsverlust", "Kultur als bedrohtes Eigentum", "Verlustangst", "Pluralismus wirkt wie Gefahr", "Welche konkrete Praxis soll geschützt werden - ohne andere abzuwerten?"],
+  ["Überfremdung", "Fremde als Bedrohung", "Angst, Abwehr", "Gruppen werden pauschal problematisiert", "Welche konkrete Aufgabe liegt vor: Wohnen, Schule, Verwaltung, Integration?"],
+  ["Meinungsdiktatur", "Widerspruch als Unterdrückung", "Kränkung, Trotz", "Kritik wird mit Zensur verwechselt", "Was darf nicht gesagt werden - oder wird nur widersprochen?"],
+  ["Gender-Ideologie", "Vielfalt als Umerziehung", "Empörung, Schutzinstinkt", "Minderheiten werden zum Symbolfeind", "Welche reale Bildungs- oder Schutzfrage wird verhandelt?"],
+  ["politische Korrektheit", "Rücksicht als Sprachkontrolle", "Trotz, Abwehr", "Respekt wird als Zwang gerahmt", "Geht es um Verbot oder um Verantwortung für Wirkung?"],
+  ["Bevölkerungsaustausch", "Verschwörung statt Migration", "Angst, Feindbildbindung", "demokratische Debatte kippt in Entmenschlichung", "Welche belegbare Entwicklung wird behauptet?"],
+  ["Leitkultur", "Zugehörigkeit über Norm", "Stolz, Abgrenzung", "Gleichheit vor dem Recht wird kulturell verengt", "Welche gemeinsamen Regeln gelten für alle?"],
+  ["patriotische Kulturpolitik", "Kultur als Besitzstand", "Zugehörigkeit, Statusschutz", "Kunst und Bildung werden politisch sortiert", "Wie bleibt Kultur frei, vielfältig und zugänglich?"],
+  ["man wird ja wohl noch sagen dürfen", "Tabubruch als Mut", "Kränkung, Selbstaufwertung", "Widerspruch erscheint als Verfolgung", "Ja - und welche Folgen hat diese Formulierung?"],
+  ["wir dürfen nichts mehr sagen", "Schweigen trotz Öffentlichkeit", "Opfergefühl", "Diskursregeln werden delegitimiert", "Wer hindert wen konkret - und was ist nur Widerspruch?"],
+];
+
+const emotionRows = [
+  ["Angst", "Kontrollverlust, Masseneinwanderung, letzte Chance", "Schutzbedürfnis, Härtebereitschaft"],
+  ["Wut", "Altparteien, verraten, bevormundet", "Feindbildbindung, Kompromissverlust"],
+  ["Kränkung", "man darf nichts mehr sagen, Meinungsdiktatur", "Opferidentität, Immunisierung gegen Kritik"],
+  ["Ekel / Abwertung", "pervers, kulturfremd, entartet, versifft", "Distanz, Entmenschlichungstendenz"],
+  ["Stolz / Zugehörigkeit", "Volk, Heimat, unsere Kultur, normale Bürger", "Gruppenbindung, moralische Selbstaufwertung"],
+];
+
+const democraticPrinciples = [
+  ["Nicht jeden Trigger amplifizieren", "Rechte Kommunikation lebt von Provokation, Empörung und Wiederholung. Nicht jeder Begriff gehört in Überschrift, Caption oder Aufmacher."],
+  ["Nicht den Frame verneinen, sondern ersetzen", "Nicht: Wir leben nicht in einer Diktatur. Besser: Demokratische Verfahren sind langsam, kontrollierbar und verbesserbar - genau das unterscheidet sie von autoritärer Macht."],
+  ["Nicht Wähler beschämen, sondern Mechanismen offenlegen", "Pauschale Abwertung stärkt den Opferframe. Besser: Diese Sprache nimmt reale Sorgen auf, lenkt sie aber auf Sündenböcke statt auf Lösungen."],
+  ["Reale Probleme nicht leugnen", "Wohnungsnot, Schulprobleme, Bürokratie, Überforderung, Sicherheitsfragen und Abstiegsangst müssen ernst genommen werden."],
+  ["Von Alarm zu Handlungsfähigkeit wechseln", "Nicht beschwichtigen. Sondern zeigen: Was verbessert sich konkret? Für wen? Bis wann? Woran messbar?"],
+  ["Grenzen klar ziehen, aber ohne Gegenverachtung", "Menschenwürde, Rechtsstaat und Gewaltfreiheit sind nicht verhandelbar. Aber Gegenkommunikation darf selbst nicht entmenschlichen."],
+  ["Zwischen Strategie, Kadern und Publikum unterscheiden", "Nicht alle Menschen, die auf rechte Sprache reagieren, sind ideologische Kader. Unterschiedliche Zielgruppen brauchen unterschiedliche Ansprache."],
+  ["Vom Feindbild zur Wirkungsfrage wechseln", "Nicht: Wer ist schuld? Sondern: Welche Maßnahme verbessert den Zustand messbar - ohne Menschen gegeneinanderzustellen?"],
+];
+
+const avoidCounterCommunication = [
+  "Frame endlos wiederholen",
+  "nur empört reagieren",
+  "reale Probleme wegreden",
+  "Menschen pauschal beschämen",
+  "alle in einen Topf werfen",
+  "nur moralisch, aber nicht lösungsorientiert argumentieren",
+  "Provokationen mit Reichweite belohnen",
+  "rechte Kampfbegriffe prominent übernehmen",
+];
+
+const counterFrames = [
+  ["Gegen Altparteien", "Demokratie besteht aus Konkurrenz, Kontrolle und Abwahl - nicht aus der Erzählung, alle anderen seien ein Block."],
+  ["Gegen man darf nichts mehr sagen", "Man darf sehr viel sagen. Aber andere dürfen widersprechen. Widerspruch ist keine Zensur."],
+  ["Gegen Migration ist die Ursache aller Probleme", "Migration erzeugt Aufgaben. Aber Wohnungsnot, Schulprobleme, Fachkräftemangel und Verwaltungsversagen haben mehrere Ursachen. Wer alles einer Gruppe zuschiebt, verhindert Lösungen."],
+  ["Gegen Klimadiktatur", "Klimapolitik muss sozial gerecht und demokratisch kontrolliert sein. Aber Risiken verschwinden nicht, wenn man sie Kulturkampf nennt."],
+  ["Gegen Gender-Ideologie", "Kinder brauchen Schutz, Bildung und stabile Beziehungen. Dafür brauchen wir Sachlichkeit statt Angstbilder."],
+  ["Gegen nur wir vertreten das Volk", "Kein Teil der Demokratie besitzt das Volk. Demokratie heißt, dass verschiedene Bürger verschiedene Parteien wählen dürfen."],
+];
+
+function languageWirkstoffSection() {
+  return `<section class="section section-soft narrative-language-section" id="sprache-als-wirkstoff" aria-labelledby="sprache-als-wirkstoff-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Sprachmuster und emotionale Trigger</p>
+            <h2 id="sprache-als-wirkstoff-title">Sprache als politischer Wirkstoff</h2>
+            <p>Politische Sprache beschreibt nicht nur Wirklichkeit. Sie sortiert Wirklichkeit. Sie entscheidet mit darüber, was als Problem erscheint, wer als Ursache gilt, wer als Opfer wahrgenommen wird und welche Lösungen plausibel wirken. Deshalb reicht ein reiner Faktencheck oft nicht aus. Ein Folgencheck fragt zusätzlich: Welche Wirkung hat diese Sprache auf Angst, Vertrauen, Zugehörigkeit, demokratische Gesprächsfähigkeit und gesellschaftlichen Zusammenhalt?</p>
+          </div>
+          <div class="card-grid four narrative-language-grid">
+            ${languageMechanismCards.map(([title, text]) => `<article class="card"><p class="card-kicker">Mechanismus</p><h3 class="card-title">${escapeHtml(title)}</h3><p class="card-text">${escapeHtml(text)}</p></article>`).join("\n            ")}
+          </div>
+          <div class="card narrative-rule-card">
+            <p class="card-kicker">Kernsatz</p>
+            <h3 class="card-title">Nicht beschwichtigen. Nicht spiegeln. Nicht entwerten. Sondern entwirren.</h3>
+            <p class="card-text">Rechte Emotionalisierung macht aus Problemen Gegner. Demokratische Kommunikation macht aus Problemen gemeinsame Aufgaben.</p>
+            <p><a class="btn btn-primary" href="sprachmuster-und-emotionalisierung/">Sprachmuster vertiefen</a></p>
+          </div>
+        </div>
+      </section>`;
+}
+
 function renderIndex() {
   const cards = narratives
     .map((item) => {
@@ -1218,7 +1376,8 @@ function renderIndex() {
             { label: "Was ist ein Narrativ?", value: "Ein Deutungsmuster, das Fakten, Emotionen und Handlungsvorschläge verbindet." },
             { label: "Warum wichtig?", value: "Narrative prägen, was Menschen für möglich, wahr, bedrohlich oder sinnlos halten.", tone: "warning" },
             { label: "WÖk-Fokus", value: "Nicht nur Wahrheit, sondern Wirkungspotenzial und Wirkungsrisiko werden analysiert.", tone: "positive" },
-            { label: "Für wen?", value: "Hosts, Creator:innen, Medien, Bildung, Politik und interessierte Bürger:innen." },
+            { label: "Sprache und Trigger", value: "Narrative wirken nicht nur über Aussagen, sondern über wiederkehrende Begriffe, Feindbilder, Kränkungsangebote und Bedrohungsframes.", tone: "warning" },
+            { label: "Für wen?", value: "Hosts, Creator:innen, Medien, Bildung, Politik, Moderation, Debattenformate und interessierte Bürger:innen." },
             { label: "Maßstab", value: "Mensch, Planet und Demokratie.", tone: "positive" },
             { label: "Ziel", value: "Nicht eskalieren, sondern einordnen, zurückführen und handlungsfähig bleiben.", tone: "positive" },
           ],
@@ -1282,6 +1441,8 @@ function renderIndex() {
         </div>
       </section>
 
+      ${languageWirkstoffSection()}
+
       <section class="section section-soft" aria-labelledby="redaktionsregel">
         <div class="card narrative-rule-card">
           <p class="card-kicker">Redaktionelle Leitlinie</p>
@@ -1338,6 +1499,207 @@ function renderIndex() {
 
 function detailHref(slug) {
   return `../${slug}/`;
+}
+
+function narrativeLink(label, slug) {
+  const exists = narratives.some((item) => item.slug === slug);
+  return exists ? `<a href="../${escapeHtml(slug)}/">${escapeHtml(label)}</a>` : `<span class="narrative-static-link">${escapeHtml(label)}</span>`;
+}
+
+function renderLanguagePatternsPage() {
+  const patternAccordions = languagePatterns
+    .map(
+      (pattern, index) => `<details class="radar-answer-item narrative-pattern-item"${index === 0 ? " open" : ""}>
+                <summary><span class="radar-answer-time">${escapeHtml(pattern.name)}</span> <span class="radar-answer-label">${escapeHtml(pattern.emotion)}</span></summary>
+                <div class="narrative-pattern-body">
+                  <p><strong>Kurzdefinition:</strong> ${escapeHtml(pattern.definition)}</p>
+                  <p><strong>Typische Wörter / Trigger:</strong> ${escapeHtml(pattern.triggers)}</p>
+                  <p><strong>Emotionale Hauptwirkung:</strong> ${escapeHtml(pattern.emotion)}</p>
+                  <p><strong>Demokratisches Risiko:</strong> ${escapeHtml(pattern.risk)}</p>
+                  <p><strong>Demokratische Antwort:</strong> ${escapeHtml(pattern.answer)}</p>
+                  <div class="radar-link-cluster">${pattern.families.map(([label, slug]) => narrativeLink(label, slug)).join("\n                    ")}</div>
+                </div>
+              </details>`
+    )
+    .join("\n              ");
+
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / Sprachmuster</nav>
+          <p class="hero-kicker">Narrativbibliothek</p>
+          <h1 class="hero-title">Sprachmuster und emotionale Trigger</h1>
+          <p class="hero-subtitle">Wie politische Sprache Angst, Feindbilder und Handlungsimpulse erzeugt</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> Diese Seite zeigt, wie Sprache als politischer Wirkstoff funktioniert. Sie untersucht nicht nur, ob Aussagen wahr oder falsch sind, sondern welche emotionale, soziale und demokratische Wirkung sie entfalten. Im Zentrum stehen wiederkehrende Muster wie Bedrohung, Opferinszenierung, Wir-gegen-die, Niedergang, Kulturkampf, Kontrollversprechen und Demokratie-Umdeutung. Ziel ist nicht moralische Empörung, sondern Wirkungskompetenz.</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Fokus: Folgencheck politischer Sprache</span></p>
+        </div>
+      </section>
+
+      ${topicSubnav("Narrative", "../")}
+
+      <section class="section">
+        <div class="radar-detail-layout narrative-detail-layout">
+          <aside class="article-toc" data-search-exclude>
+            <p class="hero-kicker">Inhaltsverzeichnis</p>
+            <ol>
+              <li><a href="#warum-sprache">Warum Sprache mehr ist als Information</a></li>
+              <li><a href="#sieben-muster">Sieben zentrale Sprachmuster</a></li>
+              <li><a href="#triggerwoerter">Triggerwörter und Wirkung</a></li>
+              <li><a href="#emotionen">Emotionen und Resonanzräume</a></li>
+              <li><a href="#strategie">Demokratische Wirkungsstrategie</a></li>
+              <li><a href="#vermeiden">Was Gegenkommunikation vermeiden muss</a></li>
+              <li><a href="#gegenframes">Praktische Gegenframes</a></li>
+              <li><a href="#verknuepfung">Verknüpfung zur Narrativbibliothek</a></li>
+              <li><a href="#glossar">Glossar und weiterführende Inhalte</a></li>
+            </ol>
+          </aside>
+
+          <article class="article-body">
+            <h2 id="warum-sprache">Warum Sprache mehr ist als Information</h2>
+            <p>Nicht jedes starke Wort ist problematisch. Problematisch wird Sprache, wenn sie Komplexität in Feindbilder verwandelt, Angst organisiert oder demokratische Institutionen pauschal delegitimiert. Worte wirken nicht isoliert, sondern in Frames, Resonanzräumen und Gegensätzen. Dieselben Grundmechanismen können in unterschiedlichen politischen Lagern auftreten.</p>
+            <p><strong>Nicht beschwichtigen. Nicht spiegeln. Nicht entwerten. Sondern entwirren.</strong> Rechte Emotionalisierung macht aus Problemen Gegner. Demokratische Kommunikation macht aus Problemen gemeinsame Aufgaben.</p>
+
+            <div class="card narrative-rule-card">
+              <p class="card-kicker">Warum dieses Beispiel?</p>
+              <h3 class="card-title">Pilotkorpus statt Parteibashing</h3>
+              <p class="card-text">Das AfD-Regierungsprogramm Sachsen-Anhalt eignet sich als Pilotkorpus, weil dort viele typische Muster emotionalisierter, polarisierender und delegitimierender Sprache verdichtet vorkommen. Entscheidend ist nicht die Parteibezeichnung, sondern die Wirkungsanalyse der Sprache.</p>
+            </div>
+
+            <h2 id="sieben-muster">Sieben zentrale Sprachmuster</h2>
+            <p>Die folgenden Muster werden als Analyseinstrumente gelesen. Die Triggerwörter werden hier nicht inszeniert, sondern eingeordnet: Welche Emotion wird aktiviert, welches demokratische Risiko entsteht, und welche Antwort führt zurück in Wirkung, Lösung und Rechtsstaat?</p>
+            <div class="radar-answer-accordion narrative-pattern-accordion" aria-label="Sieben zentrale Sprachmuster">
+              ${patternAccordions}
+            </div>
+
+            <h2 id="triggerwoerter">Typische Triggerwörter und ihre Wirkung</h2>
+            <div class="table-scroll">
+              <table class="dossier-matrix narrative-trigger-table">
+                <thead><tr><th>Wort / Trigger</th><th>Typischer Frame</th><th>Emotionale Wirkung</th><th>Demokratisches Risiko</th><th>Bessere Rückfrage / Einordnung</th></tr></thead>
+                <tbody>
+                  ${triggerRows.map((row) => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("\n                  ")}
+                </tbody>
+              </table>
+            </div>
+
+            <h2 id="emotionen">Welche Gefühle werden typischerweise aktiviert?</h2>
+            <div class="table-scroll">
+              <table class="dossier-matrix narrative-emotion-table">
+                <thead><tr><th>Gefühl</th><th>Sprachlicher Trigger</th><th>Wirkung</th></tr></thead>
+                <tbody>
+                  ${emotionRows.map((row) => `<tr><th scope="row">${escapeHtml(row[0])}</th><td>${escapeHtml(row[1])}</td><td>${escapeHtml(row[2])}</td></tr>`).join("\n                  ")}
+                </tbody>
+              </table>
+            </div>
+            <p>Emotionalisierung ist nicht an sich schlecht. Demokratie braucht Mitgefühl, Empörung über Unrecht, Hoffnung und Zugehörigkeit. Problematisch wird Emotionalisierung, wenn sie Angst, Verachtung, Kränkung und Feindbildlogik verstärkt, ohne lösungsfähig zu machen.</p>
+
+            <h2 id="strategie">Demokratische Wirkungsstrategie</h2>
+            <p>Wie man rechte Wirkung nicht unfreiwillig verstärkt.</p>
+            <ol class="timeline radar-flow narrative-effect-chain">
+              ${democraticPrinciples.map(([title, text], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(title)}</strong><p>${escapeHtml(text)}</p></div></li>`).join("\n              ")}
+            </ol>
+
+            <h2 id="vermeiden">Was rechte Wirkung oft ungewollt verstärkt</h2>
+            <div class="card">
+              <p class="card-kicker">Negativ-Checkliste</p>
+              <ul class="clean-list">${avoidCounterCommunication.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+              <p class="card-text"><strong>Host-Satz:</strong> Ich markiere den Mechanismus, aber ich übernehme nicht den Frame.</p>
+            </div>
+
+            <h2 id="gegenframes">Praktische Gegenframes</h2>
+            <div class="card-grid two">
+              ${counterFrames.map(([title, text]) => `<article class="card"><p class="card-kicker">Gegenframe</p><h3 class="card-title">${escapeHtml(title)}</h3><p class="card-text">${escapeHtml(text)}</p></article>`).join("\n              ")}
+            </div>
+
+            <h2 id="verknuepfung">Verknüpfung zur Narrativbibliothek</h2>
+            <div class="card-grid two">
+              ${languagePatterns.map((pattern) => `<article class="card"><p class="card-kicker">${escapeHtml(pattern.name)}</p><h3 class="card-title">Verwandte Narrativfamilien</h3><div class="radar-link-cluster">${pattern.families.map(([label, slug]) => narrativeLink(label, slug)).join("\n                ")}</div></article>`).join("\n              ")}
+            </div>
+
+            <h2 id="glossar">Glossar und weiterführende Inhalte</h2>
+            <div class="radar-link-cluster narrative-glossary-links">
+              ${[
+                ["frame", "Frame"],
+                ["narrativ", "Narrativ"],
+                ["resonanzraum", "Resonanzraum"],
+                ["wirkstoff", "Wirkstoff"],
+                ["sprachlicher-trigger", "Sprachlicher Trigger"],
+                ["feindbild", "Feindbild"],
+                ["polarisierung", "Polarisierung"],
+                ["opferumkehr", "Opferumkehr"],
+                ["demokratie-umdeutung", "Demokratie-Umdeutung"],
+                ["gegenframe", "Gegenframe"],
+                ["folgencheck", "Folgencheck"],
+                ["wirkungsanalyse-von-sprache", "Wirkungsanalyse von Sprache"],
+              ].map(([slug, label]) => `<a href="../../../begriffe/${slug}/">${escapeHtml(label)}</a>`).join("\n              ")}
+            </div>
+            <div class="card-grid two">
+              <article class="card"><p class="card-kicker">Vertiefung</p><h3 class="card-title">Sprache als politischer Wirkstoff</h3><p class="card-text">Wer tiefer einsteigen will, findet hier eine ausführliche Analyse zu Sprache, Triggern, Emotionalisierung, Gegenstrategien und demokratischer Kommunikation.</p><p><a class="text-link" href="../../../blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/">Longread öffnen</a></p></article>
+              <article class="card"><p class="card-kicker">Arbeitspapier</p><h3 class="card-title">Folgencheck statt Faktencheck</h3><p class="card-text">Sprache, Narrative und demokratische Gegenkommunikation als vorbereitendes Dossier.</p></article>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>`;
+
+  return pageShell({
+    title: "Sprachmuster und emotionale Trigger – Wirkungsradar",
+    description:
+      "Wie politische Sprache Angst, Feindbilder und Handlungsimpulse erzeugt - und wie demokratische Kommunikation darauf reagiert, ohne problematische Frames zu verstärken.",
+    canonical: "https://wirkungsoekonomie.de/wirkungsradar/narrative/sprachmuster-und-emotionalisierung/",
+    base: "../../../",
+    main,
+  });
+}
+
+function renderLanguageLongread() {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Blog</a> / Sprache als Wirkstoff</nav>
+          <p class="hero-kicker">Longread</p>
+          <h1 class="hero-title">Sprache als politischer Wirkstoff</h1>
+          <p class="hero-subtitle">Wie rechte Narrative emotionalisieren - und wie demokratische Kommunikation damit umgehen sollte</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> Politische Sprache erzeugt nicht nur Aussagen, sondern Wirkung. Sie kann Probleme klären, Vertrauen stärken und Handlungsfähigkeit öffnen. Sie kann aber auch Angst organisieren, Feindbilder stabilisieren, demokratische Institutionen delegitimieren und reale Probleme in Gegner verwandeln. Dieser Longread ordnet die zentralen Mechanismen ein und zeigt, wie demokratische Kommunikation antworten kann, ohne problematische Frames zu verstärken.</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Format: Longread</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <article class="article-body">
+          <h2>Folgencheck statt nur Faktencheck</h2>
+          <p>Ein Faktencheck fragt, ob eine Aussage stimmt. Ein Folgencheck fragt zusätzlich, welche Wirkung die Aussage entfaltet: Welche Gefühle werden aktiviert? Welche Gruppen werden markiert? Welche Institutionen werden delegitimiert? Welche Handlung erscheint plausibel, unmöglich oder zwingend?</p>
+          <p>Gerade emotionalisierte rechte Kommunikation arbeitet häufig nicht nur mit falschen Einzelaussagen, sondern mit wiederkehrenden Deutungsmustern: Bedrohung, Opferinszenierung, Wir-gegen-die, Niedergang, Kulturkampf, Kontrollversprechen und Demokratie-Umdeutung.</p>
+
+          <h2>Die demokratische Aufgabe</h2>
+          <p>Demokratische Gegenkommunikation muss reale Probleme ernst nehmen, ohne die Feindbildlogik zu übernehmen. Sie muss Sicherheit, Wohnen, Schule, Bürokratie, Abstiegsangst und Zugehörigkeit besprechbar machen, aber Ursachen differenzieren und Lösungen messbar halten.</p>
+          <div class="card narrative-rule-card">
+            <p class="card-kicker">Kernsatz</p>
+            <h3 class="card-title">Nicht beschwichtigen. Nicht spiegeln. Nicht entwerten. Sondern entwirren.</h3>
+            <p class="card-text">Rechte Emotionalisierung macht aus Problemen Gegner. Demokratische Kommunikation macht aus Problemen gemeinsame Aufgaben.</p>
+          </div>
+
+          <h2>Praktische Leitlinie</h2>
+          <ul class="clean-list">
+            <li>Trigger nicht unnötig wiederholen.</li>
+            <li>Den problematischen Frame nicht nur verneinen, sondern ersetzen.</li>
+            <li>Menschen nicht pauschal beschämen, sondern Mechanismen offenlegen.</li>
+            <li>Reale Probleme nicht wegreden.</li>
+            <li>Von Alarm zu Handlungsfähigkeit wechseln.</li>
+            <li>Grenzen klar ziehen, aber ohne Gegenverachtung.</li>
+          </ul>
+          <p><a class="btn btn-primary" href="../../wirkungsradar/narrative/sprachmuster-und-emotionalisierung/">Zur Analyse der Sprachmuster</a></p>
+        </article>
+      </section>
+    </main>`;
+
+  return pageShell({
+    title: "Sprache als politischer Wirkstoff – Wirkungsökonomie",
+    description:
+      "Longread zu Sprache, Triggern, Emotionalisierung, Gegenstrategien und demokratischer Kommunikation.",
+    canonical: "https://wirkungsoekonomie.de/blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/",
+    base: "../../",
+    main,
+  });
 }
 
 function renderDetail(item) {
@@ -1610,6 +1972,8 @@ function dataModel() {
 
 writeFile("content/wirkungsradar/narratives.yml", `# Generated by scripts/wirkungsradar/build-narrative-library.mjs\n${toYaml(dataModel()).trim()}\n`);
 writeFile("wirkungsradar/narrative/index.html", renderIndex());
+writeFile("wirkungsradar/narrative/sprachmuster-und-emotionalisierung/index.html", renderLanguagePatternsPage());
+writeFile("blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/index.html", renderLanguageLongread());
 for (const item of narratives) {
   writeFile(`wirkungsradar/narrative/${item.slug}/index.html`, renderDetail(item));
 }
