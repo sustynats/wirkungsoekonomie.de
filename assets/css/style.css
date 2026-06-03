@@ -14376,6 +14376,143 @@ a.principle-card:hover,
   color: var(--green);
 }
 
+.radar-search-section {
+  padding-top: clamp(1rem, 2.6vw, 2rem);
+}
+
+.radar-search-panel {
+  display: grid;
+  gap: 1rem;
+  width: min(100% - (2 * var(--space-gutter)), var(--container));
+  margin-inline: auto;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid rgba(47, 125, 92, 0.2);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.82);
+  box-shadow: var(--shadow-card);
+}
+
+.radar-search-field {
+  display: block;
+}
+
+.radar-search-field input {
+  width: 100%;
+  min-height: 3.35rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(11, 16, 32, 0.18);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 720;
+}
+
+.radar-search-field input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(47, 125, 92, 0.16);
+  outline: none;
+}
+
+.radar-depth-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.radar-depth-tags a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.78rem;
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--green-dark);
+  font-weight: 820;
+  line-height: 1.15;
+  text-decoration: none;
+}
+
+.radar-depth-tags a:hover,
+.radar-depth-tags a:focus-visible {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--white);
+  outline: none;
+}
+
+.radar-search-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 720;
+}
+
+.radar-search-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.radar-search-result {
+  display: grid;
+  gap: 0.45rem;
+  min-height: 8.75rem;
+  padding: 0.95rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid rgba(47, 125, 92, 0.52);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: inherit;
+  text-decoration: none;
+}
+
+.radar-search-result:hover,
+.radar-search-result:focus-visible {
+  border-color: rgba(47, 125, 92, 0.5);
+  box-shadow: 0 14px 30px rgba(11, 16, 32, 0.08);
+  outline: none;
+}
+
+.radar-search-result strong {
+  color: var(--navy);
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.12;
+}
+
+.radar-search-result em {
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.radar-search-result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.radar-search-result-meta span {
+  padding: 0.22rem 0.45rem;
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: 999px;
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.radar-search-empty {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--muted);
+  font-weight: 720;
+}
+
 .text-link-card {
   color: inherit;
   text-decoration: none;
@@ -14469,6 +14606,10 @@ a.principle-card:hover,
 
 @media (max-width: 560px) {
   .radar-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-search-results {
     grid-template-columns: 1fr;
   }
 

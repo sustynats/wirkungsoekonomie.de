@@ -771,6 +771,102 @@ if (downloadSearchInput) {
 
 applyDownloadFilter();
 
+function initRadarSearch() {
+  const root = document.querySelector("[data-radar-search]");
+  if (!root) {
+    return;
+  }
+
+  const input = root.querySelector("[data-radar-search-input]");
+  const resultsNode = root.querySelector("[data-radar-search-results]");
+  const statusNode = root.querySelector("[data-radar-search-status]");
+  if (!input || !resultsNode || !statusNode) {
+    return;
+  }
+
+  const normalize = (value) =>
+    String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ß/g, "ss");
+
+  const searchableText = (entry) =>
+    normalize(
+      [
+        entry.title,
+        entry.description,
+        entry.section,
+        entry.type,
+        entry.format,
+        ...(entry.tags || []),
+        ...(entry.aliases || []),
+        ...(entry.semanticTerms || []),
+      ].join(" "),
+    );
+
+  const escapeHtml = (value) =>
+    String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+
+  const render = (items, query = "") => {
+    const trimmed = query.trim();
+    const visibleItems = items.slice(0, 10);
+    statusNode.textContent = trimmed
+      ? `${items.length} Treffer im Wirkungsradar`
+      : `${items.length} Radar-Seiten bereit`;
+
+    if (!visibleItems.length) {
+      resultsNode.innerHTML = '<p class="radar-search-empty">Keine passenden Radar-Inhalte gefunden.</p>';
+      return;
+    }
+
+    resultsNode.innerHTML = visibleItems
+      .map((entry) => {
+        const tags = [entry.type, entry.section, ...(entry.tags || [])]
+          .filter(Boolean)
+          .slice(0, 3)
+          .map((tag) => `<span>${escapeHtml(tag)}</span>`)
+          .join("");
+        return `<a class="radar-search-result" href="${escapeHtml(entry.url)}">
+          <span class="radar-search-result-meta">${tags}</span>
+          <strong>${escapeHtml(entry.title)}</strong>
+          <em>${escapeHtml(entry.description || "Wirkungsradar-Inhalt öffnen.")}</em>
+        </a>`;
+      })
+      .join("");
+  };
+
+  fetch(relativeSiteUrl("assets/search/search-index.json"))
+    .then((response) => (response.ok ? response.json() : Promise.reject(new Error("search-index"))))
+    .then((entries) => {
+      const radarEntries = (Array.isArray(entries) ? entries : [])
+        .filter((entry) => entry?.url?.startsWith("/wirkungsradar/"))
+        .map((entry) => ({ ...entry, searchText: searchableText(entry) }))
+        .sort((a, b) => (a.priority || 9999) - (b.priority || 9999) || a.title.localeCompare(b.title, "de"));
+
+      const update = () => {
+        const tokens = normalize(input.value).split(/\s+/).filter(Boolean);
+        const matches = tokens.length
+          ? radarEntries.filter((entry) => tokens.every((token) => entry.searchText.includes(token)))
+          : radarEntries;
+        render(matches, input.value);
+      };
+
+      input.addEventListener("input", update);
+      render(radarEntries);
+    })
+    .catch(() => {
+      statusNode.textContent = "Radar-Suche konnte nicht geladen werden.";
+      resultsNode.innerHTML = '<p class="radar-search-empty">Bitte nutze die Schlagwörter oder die Hauptsuche.</p>';
+    });
+}
+
+initRadarSearch();
+
 function slugifyHeading(text) {
   return text
     .trim()
