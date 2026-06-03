@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T14:39:03.963Z
-Resolved references: 6476
-Warnings: 805
+Erzeugt: 2026-06-03T20:14:38.955Z
+Resolved references: 6478
+Warnings: 812
 
 ## Warnungen
 
@@ -112,6 +112,7 @@ Warnings: 805
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
@@ -186,6 +187,7 @@ Warnings: 805
 - [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] fuehrender-begriffsleitfaden - Titel aus Slug erzeugt
 - [unresolved-reference] fuehrender-begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
@@ -197,6 +199,7 @@ Warnings: 805
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wirkungsfonds-gesundheit-pflege - Titel aus Slug erzeugt
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
@@ -259,6 +262,7 @@ Warnings: 805
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
@@ -405,6 +409,8 @@ Warnings: 805
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
@@ -500,12 +506,6 @@ Warnings: 805
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 
 ## Aufgelöste Verweise
 
@@ -569,10 +569,10 @@ Warnings: 805
 - /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s001 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/ -> Detailkonzept: Algorithmische Fairness und digitale Rechte (Website, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/ -> Konzeptpapier Rang 17 (Website, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier Rang 17 (Whitepaper, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/ -> Detailkonzept: Algorithmische Fairness und digitale Rechte (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/ -> Konzeptpapier (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /referenz/ -> Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel/ -> Kapitel 1 bis 108 (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s001 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
@@ -598,7 +598,7 @@ Warnings: 805
 - /portale/zukunftsbilder-wirkungswohlstand/ -> Portalstartseite Zukunftsbilder Wirkungswohlstand (Website, Beschreibung: ja)
 - /portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/ -> Gesamtdossier Zukunftsbilder Wirkungswohlstand (Whitepaper, Beschreibung: ja)
 - /bibliothek/ -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
-- /portale/zukunftsbilder-wirkungswohlstand/downloads/ -> Downloads Rang 22 (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/downloads/ -> Downloads (Website, Beschreibung: ja)
 - /portale/zukunftsbilder-wirkungswohlstand/konzeptpapier/ -> Konzeptpapier Zukunftsbilder Wirkungswohlstand (Website, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -616,9 +616,9 @@ Warnings: 805
 - /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
 - /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/ -> Politische Anschlussfaehigkeit (Website, Beschreibung: ja)
 - /portale/migration-vielfalt/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
-- /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit Rang 23 (Website, Beschreibung: ja)
+- /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit Rang 19 (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-072-kultur-und-teilhabe/#woek-main-2026-k072-s001 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
@@ -670,10 +670,10 @@ Warnings: 805
 - /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#woek-main-2026-k037-s001 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/datenqualitaet-assurance/ -> Datenqualität & Assurance (Methode, Beschreibung: ja)
 - /werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ -> Detailkonzept Datenqualität und Assurance (Methode, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ -> Detailkonzept: Audit, Assurance und Datenqualität (Website, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ -> Einzeldossier Datenqualität und Assurance (Whitepaper, Beschreibung: ja)
 - /wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/ -> Wirkungscontrolling im Unternehmen (Wirkungsfeld, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ -> Detailkonzept: Audit, Assurance und Datenqualität (Website, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s001 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
@@ -983,12 +983,12 @@ Warnings: 805
 - /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#woek-main-2026-k096-s001 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#woek-main-2026-k092-s001 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Rang 19: Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-091-europa-als-wirkungsraum/#woek-main-2026-k091-s001 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/ -> Portalstartseite Rang 19: Internationale Ordnung, Globalisierung und Geopolitik (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/ -> Portalstartseite Internationale Ordnung, Globalisierung und Geopolitik (Website, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/toolkarten/ -> Toolkarten Rang 19 (Website, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/buchanker-querverlinkungen/ -> Buchanker und Querverlinkungen Rang 19 (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/toolkarten/ -> Toolkarten (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/buchanker-querverlinkungen/ -> Buchanker und Querverlinkungen (Website, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1124,9 +1124,9 @@ Warnings: 805
 - /referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/#woek-main-2026-k095-s001 -> Kapitel 95: Globale Resilienz, Sicherheit und Kooperation (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/ -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/ -> Portalstartseite Rang 19: Internationale Ordnung, Globalisierung und Geopolitik (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/ -> Portalstartseite Internationale Ordnung, Globalisierung und Geopolitik (Website, Beschreibung: ja)
 - /portale/sicherheit-resilienz/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Rang 19: Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ -> Detailkonzept: CBAM, Grenzausgleich und externe Kosten (Website, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1150,13 +1150,13 @@ Warnings: 805
 - /referenz/kapitel-033-reverse-merit-order/#woek-main-2026-k033-s001 -> Kapitel 33: Reverse Merit Order (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-041-verwaltung-rechtsschutz-und-koerperschaftslogik/#woek-main-2026-k041-s001 -> Kapitel 41: Verwaltung, Rechtsschutz und Körperschaftslogik (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/datenqualitaet-assurance/ -> Datenqualität & Assurance (Methode, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ -> Detailkonzept: Audit, Assurance und Datenqualität (Website, Beschreibung: ja)
 - /werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ -> Detailkonzept Datenqualität und Assurance (Methode, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ -> Einzeldossier Datenqualität und Assurance (Whitepaper, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ -> Detailkonzept: Audit, Assurance und Datenqualität (Website, Beschreibung: ja)
 - /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#woek-main-2026-k023-s001 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#woek-main-2026-k090-s001 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier Rang 20 (Whitepaper, Beschreibung: ja)
+- /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1179,8 +1179,8 @@ Warnings: 805
 - /referenz/kapitel-079-diskurskultur/#woek-main-2026-k079-s001 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-028-demokratie-als-wirkungsraum/#woek-main-2026-k028-s001 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/ -> Demokratie, Rechtsstaat und SDG+ als Wirkungsraum | Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ -> Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie (Website, Beschreibung: ja)
 - /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html -> Soziale Resilienz gegen Verhetzung – Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit (Journalartikel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ -> Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie (Website, Beschreibung: ja)
 - /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ -> Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule (Wirkungsfeld, Beschreibung: ja)
 - /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html -> Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /wirkungsfelder/staat-recht-demokratie/ -> Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
@@ -1204,10 +1204,10 @@ Warnings: 805
 - /werkzeuge/cyberresilienz-check/ -> Cyberresilienz-Check (Methode, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Rang 19: Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
-- /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier Rang 20 (Whitepaper, Beschreibung: ja)
+- /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
-- /portale/migration-vielfalt/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html -> Vom Nachhaltigkeitsbewusstsein zur Wirkungsökonomie (Journalartikel, Beschreibung: ja)
@@ -1338,7 +1338,7 @@ Warnings: 805
 - /wirkungsfelder/wissenschaft-innovation-digitalisierung/detailkonzepte/ -> Detailkonzepte Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/wissenschaft-innovation-digitalisierung/konzept/ -> Konzeptpapier Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
 - /werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#buch -> Arbeitsbibliothek Wissenschaft, Innovation & Digitalisierung (Website, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/ -> Rang 17: Digitalisierung, KI und Wirkungsdatenräume (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/ -> Digitalisierung, KI und Wirkungsdatenräume (Website, Beschreibung: ja)
 - /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s001 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#woek-main-2026-k080-s001 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1347,7 +1347,7 @@ Warnings: 805
 - /referenz/kapitel/ -> Kapitel 1 bis 108 (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/wissenschaft-innovation-digitalisierung/ -> Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s001 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/ -> Rang 17: Digitalisierung, KI und Wirkungsdatenräume (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/ -> Digitalisierung, KI und Wirkungsdatenräume (Website, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1404,7 +1404,7 @@ Warnings: 805
 - /verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-executive-summary -> SDGs als Risikomanagement und Finanzmarkt-Anschluss (Website, Beschreibung: ja)
 - /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/#woek-main-2026-k073-s001 -> Kapitel 73: Migration und gesellschaftliche Zugehörigkeit (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Rang 19: Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/ -> Gesamtdossier Zukunftsbilder Wirkungswohlstand (Whitepaper, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ -> Detailkonzept: CBAM, Grenzausgleich und externe Kosten (Website, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/entwicklungspartnerschaften-wirkungsfonds/ -> Detailkonzept: Entwicklungspartnerschaften und Wirkungsfonds (Website, Beschreibung: ja)

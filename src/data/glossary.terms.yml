@@ -2219,3 +2219,164 @@ terms:
     glossaryOrderKey: "lokale energie als wirkungsinfrastruktur"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-06-01"
+  - termId: sozialstaats-suendenbock
+    canonicalLabel: "Sozialstaats-Sündenbock"
+    slug: "sozialstaats-suendenbock"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Narrativ, das reale Sozialausgaben oder Missbrauchsfälle nutzt, um eine ganze Gruppe als Belastung oder Gefahr für den Sozialstaat darzustellen."
+    hoverDefinition: "Der wahre Kern sind reale Kosten. Der Denkfehler ist Gruppenschuld."
+    longDefinition: "Sozialstaats-Sündenbock beschreibt ein Narrativ, das reale Sozialausgaben, kommunale Belastungen oder Missbrauchsfälle nutzt, um eine ganze Gruppe als Belastung oder Gefahr für den Sozialstaat darzustellen."
+    usageNote: "Nur als analysierten Frame verwenden, nicht als Pauschalbezeichnung für Menschen."
+    doNotConfuseWith: ["Sozialstaatsanalyse", "Sozialleistungsmissbrauch", "kommunale Integrationskapazität"]
+    synonyms: ["Sozialstaats-Suendenbock", "Sündenbocklogik Sozialstaat"]
+    relatedTerms: ["sündenbocknarrativ", "integration-als-infrastruktur", "entmenschlichender-kampfbegriff"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Reale Kosten anerkennen und Gruppenschuld trennen."
+    deprecatedUsage: ["Menschen als Kostenstelle framen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "sozialstaats suendenbock"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: nie-eingezahlt-narrativ
+    canonicalLabel: "Nie-eingezahlt-Narrativ"
+    slug: "nie-eingezahlt-narrativ"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Frame, der Sozialleistungen nur an vorherige individuelle Einzahlung bindet und den Sozialstaat als gemeinsame Risikoinfrastruktur verkürzt."
+    hoverDefinition: "Einzahlung ist wichtig. Aber der Sozialstaat ist mehr als ein Sparkonto."
+    longDefinition: "Das Nie-eingezahlt-Narrativ verkürzt Sozialstaat auf eine individuelle Sparkonto-Logik und blendet aus, dass Sozialstaat auch Schutz-, Integrations-, Familien-, Gesundheits- und Stabilitätsinfrastruktur ist."
+    usageNote: "Beitragslogik fair anerkennen, aber Menschen nicht auf bisherige Einzahlung reduzieren."
+    doNotConfuseWith: ["Beitragsfinanzierung", "Versicherungsprinzip", "Steuerfinanzierung"]
+    synonyms: ["Nie eingezahlt", "Sozialstaat als Sparkonto"]
+    relatedTerms: ["sozialstaats-suendenbock", "integration-als-infrastruktur"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Als verkürzten Sozialstaatsframe analysieren."
+    deprecatedUsage: ["Einzahlung als Menschenwert behandeln"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "nie eingezahlt narrativ"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: integration-als-infrastruktur
+    canonicalLabel: "Integration als Infrastruktur"
+    slug: "integration-als-infrastruktur"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Wirkungsökonomische Sicht auf Integration als Zusammenspiel von Sprache, Bildung, Arbeit, Wohnen, Gesundheit, Rechten, Schutz, Anerkennung und Zugehörigkeit."
+    hoverDefinition: "Integration gelingt nicht durch Appelle, sondern durch funktionierende Wirkungsräume."
+    longDefinition: "Integration als Infrastruktur beschreibt Integration als System aus Sprache, Bildung, Arbeit, Wohnen, Gesundheit, Rechten, Schutz, Anerkennung, Kinderbetreuung, Verwaltung und Zugehörigkeit."
+    usageNote: "Bei Migration nicht nur individuelle Anpassung, sondern Infrastruktur, Rechte und Wirkungsräume betrachten."
+    doNotConfuseWith: ["Assimilation", "Einzelmotivation", "Integrationsappell"]
+    synonyms: ["Integrationsinfrastruktur", "Integration als Wirkungsarchitektur"]
+    relatedTerms: ["kommunale-integrationskapazitaet", "qualifikationsverlust", "sozialstaats-suendenbock"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: ["Sprache plus Arbeit", "Anerkennung plus Brückenqualifikation", "Wohnen plus Schule plus Verwaltung"]
+    preferredUsage: "Integration als planbare Wirkungsarchitektur beschreiben."
+    deprecatedUsage: ["Integration nur als individuelles Verhalten darstellen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "integration als infrastruktur"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: sozialtourismus-frame
+    canonicalLabel: "Sozialtourismus-Frame"
+    slug: "sozialtourismus-frame"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Politischer Kampfbegriff, der Migration pauschal als Einwanderung in Sozialleistungen deutet."
+    hoverDefinition: "Nur als analysierter Frame verwenden, nicht als neutrale Beschreibung."
+    longDefinition: "Der Sozialtourismus-Frame deutet Mobilität oder Migration pauschal als Missbrauch von Sozialleistungen und vermischt dabei häufig Rechtsstatus, Freizügigkeit, Arbeitsmarkt, Familienlage und Einzelfälle."
+    usageNote: "Kampfbegriff markieren und dann Rechtsstatus, Daten und Ursachen trennen."
+    doNotConfuseWith: ["EU-Freizügigkeit", "Sozialleistungsmissbrauch", "Arbeitsmigration"]
+    synonyms: ["Sozialtourismus", "Einwanderung in Sozialsysteme"]
+    relatedTerms: ["sozialstaats-suendenbock", "nie-eingezahlt-narrativ", "entmenschlichender-kampfbegriff"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Als Frame analysieren, nicht als neutrale Kategorie."
+    deprecatedUsage: ["Sozialtourismus als sachliche Gruppenbeschreibung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "sozialtourismus frame"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: entmenschlichender-kampfbegriff
+    canonicalLabel: "Entmenschlichender Kampfbegriff"
+    slug: "entmenschlichender-kampfbegriff"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Begriff, der Menschen nicht als Personen mit Rechten und Würde beschreibt, sondern als Schädlinge, Masse, Last oder Bedrohung."
+    hoverDefinition: "Solche Begriffe ersetzen Analyse durch Abwertung."
+    longDefinition: "Entmenschlichende Kampfbegriffe ersetzen Analyse durch Abwertung. Sie reduzieren Menschen auf Last, Masse, Gefahr oder Schädlichkeit und senken dadurch die Bereitschaft zu rechtsstaatlicher, menschenwürdiger Problemlösung."
+    usageNote: "Nicht amplifizieren; nur markieren, einordnen und zum Lösungspfad zurückführen."
+    doNotConfuseWith: ["harte Kritik", "konkrete Missbrauchsanalyse", "Rechtsdurchsetzung"]
+    synonyms: ["Abwertungsbegriff", "dehumanisierender Frame"]
+    relatedTerms: ["sozialstaats-suendenbock", "sprachlicher-trigger", "feindbild"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Begriff als Mechanismus benennen und nicht als Kategorie übernehmen."
+    deprecatedUsage: ["Kampfbegriff als Überschrift verwenden"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "entmenschlichender kampfbegriff"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: kommunale-integrationskapazitaet
+    canonicalLabel: "Kommunale Integrationskapazität"
+    slug: "kommunale-integrationskapazitaet"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Fähigkeit einer Kommune, Unterbringung, Sprache, Bildung, Gesundheit, Wohnen, Arbeit, Verwaltung und Begegnung wirksam zu organisieren."
+    hoverDefinition: "Kommunale Überlastung ist ein Infrastrukturproblem, kein Beweis für Gruppenschuld."
+    longDefinition: "Kommunale Integrationskapazität beschreibt die Fähigkeit einer Kommune, Aufnahme, Unterbringung, Sprache, Bildung, Gesundheit, Wohnen, Arbeit, Verwaltung und Begegnung so zu organisieren, dass Teilhabe und Zusammenhalt entstehen."
+    usageNote: "Kommunale Belastungen als Wirkungsraum analysieren, nicht ethnisieren."
+    doNotConfuseWith: ["kommunale Überforderung", "Migrationsquote", "Sozialkosten"]
+    synonyms: ["Integrationskapazität Kommune", "kommunale Aufnahmekapazität"]
+    relatedTerms: ["integration-als-infrastruktur", "wirkungshaushalt", "soziale-infrastruktur"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: ["Kitas, Schulen, Wohnraum, Verwaltung, Sprachkurse, Gesundheitsversorgung"]
+    preferredUsage: "Als Infrastruktur- und Finanzierungsfrage kommunaler Wirkung verwenden."
+    deprecatedUsage: ["Kommunale Belastung als Gruppenschuld darstellen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "kommunale integrationskapazitaet"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: qualifikationsverlust
+    canonicalLabel: "Qualifikationsverlust"
+    slug: "qualifikationsverlust"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Wirkungsverlust, wenn Menschen unterhalb ihrer Fähigkeiten arbeiten, weil Abschlüsse nicht anerkannt, Sprache nicht gefördert oder Verfahren blockiert sind."
+    hoverDefinition: "Ein Ingenieur als Hilfskraft ist keine erfolgreiche Integration, sondern ungenutzte Wirkleistung."
+    longDefinition: "Qualifikationsverlust entsteht, wenn vorhandene Bildung, Berufserfahrung oder Fähigkeiten nicht genutzt werden, weil Anerkennung, Sprache, Verfahren, Kinderbetreuung, Gesundheit oder Diskriminierung den Zugang zu passender Arbeit verhindern."
+    usageNote: "Bei Arbeitsmarktintegration immer prüfen, ob Qualifikation genutzt oder entwertet wird."
+    doNotConfuseWith: ["Arbeitslosigkeit", "Unterbeschäftigung", "fehlende Qualifikation"]
+    synonyms: ["Dequalifizierung", "Skill Loss", "ungenutzte Qualifikation"]
+    relatedTerms: ["integration-als-infrastruktur", "wirkungsverlust", "fachkraeftemangel"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: ["Ärztin ohne Anerkennung", "Ingenieur in Hilfsarbeit", "Pflegeerfahrung ohne Brückenqualifikation"]
+    preferredUsage: "Als Wirkungsverlust durch blockierte Anerkennung und Teilhabe verwenden."
+    deprecatedUsage: ["Qualifikation ignorieren, wenn sie nicht formal anerkannt ist"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "qualifikationsverlust"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"

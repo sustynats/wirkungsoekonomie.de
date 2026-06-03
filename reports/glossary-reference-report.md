@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-03T14:39:03.164Z
-- Content pages scanned: 1003
-- Glossary terms indexed: 1299
-- Warnings: 545
+- Generated: 2026-06-03T20:14:38.128Z
+- Content pages scanned: 1005
+- Glossary terms indexed: 1306
+- Warnings: 551
 
 ## Stichproben
 
@@ -50,8 +50,8 @@
 
 - 784 · defined · Kapitel 28 - Demokratie als Wirkungsraum - Wirkungsökonomie Online · /referenz/kapitel-028-demokratie-als-wirkungsraum/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 9, 130 occurrences, book-chapter +80
 - 739 · defined · Demokratie, Rechtsstaat und SDG+ als Wirkungsraum | Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 8, 68 occurrences, field +35
-- 724 · defined · Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie · /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 6, 50 occurrences, page +20
 - 679 · defined · Soziale Resilienz gegen Verhetzung - Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit · /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 22 occurrences, blog +25
+- 654 · defined · Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie · /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ · title match, h1 match, h3 match, lead match, definition pattern, related proximity 6, 48 occurrences, page +20
 - 619 · defined · Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule · /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 6, 54 occurrences, field +35
 - 619 · defined · Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht - Journal der Wirkungsökonomie · /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 26 occurrences, blog +25
 - 619 · defined · Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 8, 36 occurrences, field +35
@@ -136,6 +136,7 @@
 - term has no content references: dao
 - term has no content references: dark-money
 - term has no content references: dc-laden
+- term has no content references: debiasing
 - term has no content references: degradation-batterie
 - term has no content references: demand-response
 - term has no content references: demokratiefeindlichkeit
@@ -190,8 +191,8 @@
 - term has no content references: finanzmarktkapitalismus
 - term has no content references: fit-for-55
 - term has no content references: flexibilitaetsmarkt
-- term has no content references: fossile-systemkosten
 - term has no content references: fossiles-kraftwerk
+- term has no content references: framekontrolle
 - term has no content references: frequenzhaltung
 - term has no content references: friedlicher-machtwechsel
 - term has no content references: fuehrerkult
@@ -205,6 +206,7 @@
 - term has no content references: gender-mainstreaming
 - term has no content references: genossenschaftsblindheit
 - term has no content references: geschlossene-autokratie
+- term has no content references: gesichtswahrende-korrektur
 - term has no content references: gestrandeter-kredit
 - term has no content references: gesundheitskasse
 - term has no content references: gewaltenteilungsabbau
@@ -257,6 +259,7 @@
 - term has no content references: klassischer-liberalismus
 - term has no content references: kleptokratie
 - term has no content references: kognitive-belastung
+- term has no content references: kommunikative-souveraenitaet
 - term has no content references: kommunistischer-staat
 - term has no content references: komplexitaetsmanagement
 - term has no content references: komponentenrueckgewinnung
@@ -356,7 +359,4 @@
 - term has no content references: neuropsychologische-wirkmechanismen
 - term has no content references: nfrd
 - term has no content references: ngo-capture
-- term has no content references: ngo-wirkungspruefung
-- term has no content references: nicht-dualitaet
-- term has no content references: niederspannung
-- ... 245 weitere Warnungen
+- ... 251 weitere Warnungen
