@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Natalie Weber | Wirkung wird Kompass</title>
+    <meta name="description" content="Direkter Einstieg zu Natalie Weber: Physikerin, Autorin, Musikerin und Begründerin der Wirkungsökonomie.">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/sustynats/">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="Natalie Weber | Wirkung wird Kompass">
+    <meta property="og:description" content="Physikerin, Autorin, Musikerin und Begründerin der Wirkungsökonomie.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/sustynats/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/people/natalie-weber-sustynats.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Natalie Weber | Wirkung wird Kompass">
+    <meta name="twitter:description" content="Physikerin, Autorin, Musikerin und Begründerin der Wirkungsökonomie.">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/people/natalie-weber-sustynats.jpeg">
+    <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <style>
+      :root {
+        --navy: #0b1020;
+        --ivory: #f6f1e8;
+        --paper: #fffcf5;
+        --green: #2f7d5c;
+        --green-dark: #174f38;
+        --gold: #c89a3c;
+        --coral: #c85a4a;
+        --text: #222c2c;
+        --muted: #5d6460;
+        --line: rgba(11, 16, 32, 0.13);
+        --white: #ffffff;
+        --font-heading: Georgia, "Times New Roman", serif;
+        --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --radius: 8px;
+        --shadow: 0 20px 70px rgba(11, 16, 32, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+        min-width: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 8% 0%, rgba(200, 154, 60, 0.12), transparent 24rem),
+          linear-gradient(180deg, var(--ivory) 0%, #fffaf1 48%, #f2f7f0 100%);
+        color: var(--text);
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.58;
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        width: min(100%, 780px);
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.65rem;
+        min-height: 3.25rem;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        min-width: 0;
+        color: var(--navy);
+        font-weight: 780;
+        text-decoration: none;
+      }
+
+      .brand img {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+
+      .brand span {
+        font-family: var(--font-heading);
+        font-size: clamp(0.86rem, 4.5vw, 1.08rem);
+        letter-spacing: 0.03em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .quiet-link {
+        flex: 0 0 auto;
+        color: var(--green-dark);
+        font-size: 0.83rem;
+        font-weight: 800;
+        text-decoration-color: rgba(47, 125, 92, 0.38);
+        text-underline-offset: 0.22em;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1.15rem;
+        padding: clamp(1.1rem, 4vw, 2rem) 0 1.4rem;
+      }
+
+      .portrait-wrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        background: var(--navy);
+        box-shadow: var(--shadow);
+        aspect-ratio: 1 / 1;
+      }
+
+      .portrait-wrap picture,
+      .portrait-wrap img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .portrait-wrap img {
+        object-fit: cover;
+        object-position: 52% 22%;
+      }
+
+      .portrait-wrap::after {
+        position: absolute;
+        inset: auto 0 0;
+        height: 42%;
+        background: linear-gradient(180deg, transparent, rgba(11, 16, 32, 0.52));
+        content: "";
+      }
+
+      .hero-copy {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .kicker {
+        margin: 0;
+        color: var(--green-dark);
+        font-size: 0.74rem;
+        font-weight: 850;
+        letter-spacing: 0.13em;
+        line-height: 1.25;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--navy);
+        font-family: var(--font-heading);
+        font-weight: 500;
+        line-height: 1.06;
+      }
+
+      h1 {
+        max-width: 12ch;
+        font-size: clamp(3rem, 17vw, 6rem);
+      }
+
+      .lead {
+        color: var(--navy);
+        font-family: var(--font-heading);
+        font-size: clamp(1.25rem, 5.8vw, 2.2rem);
+        line-height: 1.12;
+      }
+
+      .intro {
+        order: 4;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .signal-row {
+        order: 5;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.55rem;
+        margin-top: 0.15rem;
+      }
+
+      .signal {
+        min-height: 4.2rem;
+        padding: 0.68rem 0.6rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.66);
+        color: var(--navy);
+        font-size: 0.78rem;
+        font-weight: 820;
+        line-height: 1.18;
+        text-align: center;
+      }
+
+      .actions {
+        order: 3;
+        display: grid;
+        gap: 0.72rem;
+        margin-top: 0.25rem;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem;
+        min-height: 3.35rem;
+        padding: 0.86rem 1rem;
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        font-weight: 860;
+        line-height: 1.2;
+        text-decoration: none;
+      }
+
+      .btn svg {
+        flex: 0 0 auto;
+        width: 1.15rem;
+        height: 1.15rem;
+      }
+
+      .btn-primary {
+        background: var(--navy);
+        color: var(--white);
+        box-shadow: 0 16px 38px rgba(11, 16, 32, 0.18);
+      }
+
+      .btn-secondary {
+        border-color: rgba(47, 125, 92, 0.26);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--green-dark);
+      }
+
+      .btn-accent {
+        background: var(--green);
+        color: var(--white);
+      }
+
+      .section {
+        display: grid;
+        gap: 1rem;
+        padding: 1.35rem 0;
+      }
+
+      .section-header {
+        display: grid;
+        gap: 0.42rem;
+      }
+
+      .section-header h2 {
+        font-size: clamp(1.72rem, 9vw, 3rem);
+      }
+
+      .section-header p {
+        color: var(--muted);
+      }
+
+      .link-stack {
+        display: grid;
+        gap: 0.72rem;
+      }
+
+      .link-card {
+        display: grid;
+        gap: 0.42rem;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--green);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.74);
+        text-decoration: none;
+        box-shadow: 0 10px 28px rgba(11, 16, 32, 0.05);
+      }
+
+      .link-card:nth-child(2n) {
+        border-left-color: var(--gold);
+      }
+
+      .link-card:nth-child(3n) {
+        border-left-color: var(--coral);
+      }
+
+      .link-card strong {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        color: var(--navy);
+        font-size: 1.02rem;
+        line-height: 1.22;
+      }
+
+      .link-card span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .link-card svg {
+        flex: 0 0 auto;
+        width: 1rem;
+        height: 1rem;
+        color: var(--green-dark);
+      }
+
+      .quote-band {
+        display: grid;
+        gap: 0.9rem;
+        margin: 0.4rem -1rem;
+        padding: 1.35rem 1rem;
+        background: var(--navy);
+        color: var(--white);
+      }
+
+      .quote-band p {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .quote-band strong {
+        color: var(--white);
+        font-family: var(--font-heading);
+        font-size: clamp(1.8rem, 9vw, 3.4rem);
+        font-weight: 500;
+        line-height: 1.08;
+      }
+
+      .identity-grid {
+        display: grid;
+        gap: 0.72rem;
+      }
+
+      .identity-card {
+        display: grid;
+        gap: 0.35rem;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 252, 245, 0.78);
+      }
+
+      .identity-card h3 {
+        font-size: 1.28rem;
+      }
+
+      .identity-card p {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .legal {
+        display: grid;
+        gap: 0.8rem;
+        padding: 1.2rem 0 2.2rem;
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+
+      .legal details {
+        border-top: 1px solid var(--line);
+        padding-top: 0.8rem;
+      }
+
+      .legal summary {
+        color: var(--navy);
+        cursor: pointer;
+        font-weight: 820;
+      }
+
+      .legal address {
+        margin-top: 0.7rem;
+        font-style: normal;
+      }
+
+      @media (min-width: 760px) {
+        .page {
+          width: min(100%, 1120px);
+          padding: 1.25rem clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .hero {
+          grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+          align-items: center;
+          min-height: calc(100svh - 5rem);
+          gap: clamp(2rem, 6vw, 4.8rem);
+          padding-top: 1.8rem;
+        }
+
+        .brand {
+          gap: 0.65rem;
+        }
+
+        .brand img {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .portrait-wrap {
+          aspect-ratio: 5 / 6;
+          order: 2;
+        }
+
+        .hero-copy {
+          order: 1;
+        }
+
+        h1 {
+          font-size: clamp(5rem, 9vw, 8rem);
+        }
+
+        .intro {
+          max-width: 40rem;
+          font-size: 1.08rem;
+        }
+
+        .actions {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .actions .btn:first-child {
+          grid-column: 1 / -1;
+        }
+
+        .section {
+          grid-template-columns: 0.78fr 1.22fr;
+          align-items: start;
+          gap: clamp(1.5rem, 5vw, 4rem);
+          padding: 2.4rem 0;
+        }
+
+        .section-header {
+          position: sticky;
+          top: 1rem;
+        }
+
+        .quote-band {
+          margin-inline: calc((100vw - min(100vw, 1120px)) / -2);
+          padding-inline: max(2.5rem, calc((100vw - 1120px) / 2 + 2.5rem));
+          grid-template-columns: 0.9fr 1.1fr;
+          align-items: end;
+        }
+
+        .identity-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .btn,
+        .link-card,
+        .quiet-link {
+          transition:
+            transform 180ms ease,
+            box-shadow 180ms ease,
+            border-color 180ms ease,
+            background 180ms ease;
+        }
+
+        .btn:hover,
+        .link-card:hover {
+          transform: translateY(-2px);
+        }
+
+        .btn-secondary:hover,
+        .link-card:hover {
+          border-color: rgba(47, 125, 92, 0.5);
+          box-shadow: 0 16px 34px rgba(11, 16, 32, 0.09);
+        }
+      }
+    </style>
+  </head>
+  <body data-search-exclude>
+    <div class="page">
+      <header class="topbar">
+        <a class="brand" href="../" aria-label="Wirkungsökonomie Startseite">
+          <img src="../assets/img/brand/signet.svg" alt="">
+          <span>Wirkungsökonomie</span>
+        </a>
+        <a class="quiet-link" href="mailto:impact@wirkungsoekonomie.org">Kontakt</a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="natalie-title">
+          <div class="portrait-wrap">
+            <picture>
+              <source srcset="../assets/img/people/natalie-weber-sustynats.webp" type="image/webp">
+              <img src="../assets/img/people/natalie-weber-sustynats.jpeg" alt="Natalie Weber" width="662" height="1186" loading="eager">
+            </picture>
+          </div>
+          <div class="hero-copy">
+            <p class="kicker">Natalie Weber</p>
+            <h1 id="natalie-title">Wirkung wird Kompass.</h1>
+            <p class="lead">Physikerin, Autorin, Musikerin und Begründerin der Wirkungsökonomie.</p>
+            <p class="intro">Ich verbinde Systemdenken, Nachhaltigkeit und demokratische Verantwortung zu einer einfachen Frage: Welche Wirkung erzeugen unsere Entscheidungen wirklich?</p>
+            <div class="signal-row" aria-label="Kern der Wirkungsökonomie">
+              <div class="signal">Mensch stärken</div>
+              <div class="signal">Planet achten</div>
+              <div class="signal">Demokratie schützen</div>
+            </div>
+            <div class="actions" aria-label="Wichtige Links">
+              <a class="btn btn-primary" href="../wirkungsoekonomie.html">
+                Wirkungsökonomie verstehen
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn-accent" href="../akademie/">
+                Akademie
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn-secondary" href="https://www.tiktok.com/@sustynats?_t=8klusgI6XQW&_r=1" target="_blank" rel="noopener noreferrer nofollow">
+                TikTok
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="start-title">
+          <div class="section-header">
+            <p class="kicker">Direkter Einstieg</p>
+            <h2 id="start-title">Wenn du von TikTok kommst.</h2>
+            <p>Hier findest du die wichtigsten Wege weiter: kurz, sortiert und ohne Umweg über eine fremde Linkseite.</p>
+          </div>
+          <div class="link-stack">
+            <a class="link-card" href="../modell/">
+              <strong>Das Modell ansehen <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Wirkung als Steuerungslogik für Wirtschaft, Politik und Kapital.</span>
+            </a>
+            <a class="link-card" href="../buch.html">
+              <strong>Das Buch lesen <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Die neue Ordnung des Wohlstands: Grundlagen, Begriffe und Architektur.</span>
+            </a>
+            <a class="link-card" href="../fragen/">
+              <strong>Einwände prüfen <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Planwirtschaft, Messbarkeit, Bürokratie und Freiheit sachlich beantwortet.</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="quote-band" aria-label="Leitsatz">
+          <p class="kicker">Der Kompass</p>
+          <strong>Kapital bleibt Werkzeug. Wirkung wird Kompass.</strong>
+          <p>Die Wirkungsökonomie fragt nicht zuerst, ob etwas profitabel ist. Sie fragt, ob es Mensch, Planet und Demokratie stärkt oder beschädigt.</p>
+        </section>
+
+        <section class="section" aria-labelledby="profile-title">
+          <div class="section-header">
+            <p class="kicker">Profil</p>
+            <h2 id="profile-title">Mehr als ein Kanal.</h2>
+            <p>Ich arbeite zwischen Wissenschaft, politischer Kommunikation, Bildung und Musik. Der gemeinsame Nenner ist Wirkung.</p>
+          </div>
+          <div class="identity-grid">
+            <article class="identity-card">
+              <h3>Wissenschaftlich</h3>
+              <p>Physik, Systemdenken und Daten helfen, komplexe Zusammenhänge verständlich zu machen.</p>
+            </article>
+            <article class="identity-card">
+              <h3>Demokratisch</h3>
+              <p>Fakten brauchen Anschlussfähigkeit, sonst gewinnen Schlagworte über Wirklichkeit.</p>
+            </article>
+            <article class="identity-card">
+              <h3>Feministisch</h3>
+              <p>Care, Teilhabe, Körper und Zukunft gehören in die Mitte wirtschaftlicher Entscheidungen.</p>
+            </article>
+            <article class="identity-card">
+              <h3>Künstlerisch</h3>
+              <p>Musik erreicht Stellen, an denen Argumente allein manchmal nicht mehr hinkommen.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="media-title">
+          <div class="section-header">
+            <p class="kicker">Kanäle</p>
+            <h2 id="media-title">Lesen, hören, folgen.</h2>
+            <p>Alle externen Plattformen öffnen außerhalb der Website.</p>
+          </div>
+          <div class="link-stack">
+            <a class="link-card" href="https://open.spotify.com/show/7gfvcutQoqS8sfWCN5ZS22?si=dd8277dfc3ff4c42" target="_blank" rel="noopener noreferrer nofollow">
+              <strong>Podcast auf Spotify <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>NATS: Nachhaltig. Anders. Tief. Subversiv.</span>
+            </a>
+            <a class="link-card" href="https://music.apple.com/de/artist/sustynats/1733095804" target="_blank" rel="noopener noreferrer nofollow">
+              <strong>Apple Music <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Musik von Sustynats.</span>
+            </a>
+            <a class="link-card" href="https://music.amazon.de/artists/B0CWK13RR3/sustynats?marketplaceId=A1PA6795UKMFR9&amp;musicTerritory=DE&amp;ref=dm_sh_A7joKVz8WZjOzJSsVY7fVIl88" target="_blank" rel="noopener noreferrer nofollow">
+              <strong>Amazon Music <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Sustynats auf Amazon Music.</span>
+            </a>
+            <a class="link-card" href="https://music.youtube.com/channel/UCOpEj__GRuno-7yJbzXz2Ow?si=M6eAuIJSbEf1zJki" target="_blank" rel="noopener noreferrer nofollow">
+              <strong>YouTube Music <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Musik und Releases.</span>
+            </a>
+            <a class="link-card" href="https://www.amazon.com/stores/Natalie-Weber/author/B0BSQSRYHV?language=de&amp;ref=ap_rdr&amp;isDramIntegrated=true&amp;shoppingPortalEnabled=true" target="_blank" rel="noopener noreferrer nofollow">
+              <strong>Autorinnenprofil <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></strong>
+              <span>Fachbücher und Veröffentlichungen bei Amazon.</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="legal">
+        <p>© 2026 Natalie Weber · Wirkungsökonomie</p>
+        <details>
+          <summary>Impressum</summary>
+          <address>
+            Natalie Weber<br>
+            c/o IP-Management #6537<br>
+            Ludwig-Erhard-Straße 18<br>
+            20459 Hamburg<br>
+            E-Mail: <a href="mailto:impact@wirkungsoekonomie.org">impact@wirkungsoekonomie.org</a>
+          </address>
+        </details>
+        <p>Datenschutz und rechtliche Hinweise der Hauptwebsite gelten unter <a class="quiet-link" href="../datenschutz.html">Datenschutz</a> und <a class="quiet-link" href="../impressum/">Impressum</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
