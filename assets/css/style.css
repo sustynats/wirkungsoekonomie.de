@@ -5570,6 +5570,61 @@ textarea {
   margin-top: 0.35rem;
 }
 
+.detail-concept-toc-section {
+  padding-bottom: 0;
+}
+
+.detail-concept-page .reader-toc-card,
+.detail-concept-toc-section .reader-toc-card {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  margin-inline: auto;
+  box-shadow: 0 18px 48px rgba(11, 16, 32, 0.06);
+}
+
+.detail-concept-page .reader-toc-card summary,
+.detail-concept-page .reader-toc-card .card-title,
+.detail-concept-toc-section .reader-toc-card summary,
+.detail-concept-toc-section .reader-toc-card .card-title {
+  color: var(--green-dark);
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.detail-concept-page .reader-toc-card ol,
+.detail-concept-page .reader-toc-card .toc-links,
+.detail-concept-toc-section .reader-toc-card ol,
+.detail-concept-toc-section .reader-toc-card .toc-links {
+  columns: 1;
+  gap: 0.35rem;
+}
+
+.detail-concept-reader {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  max-width: 980px;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.detail-concept-reader p,
+.detail-concept-reader li {
+  max-width: 78ch;
+}
+
+.detail-concept-reader h2 {
+  max-width: 24ch;
+  margin-top: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(1.75rem, 3.2vw, 2.7rem);
+  line-height: 1.08;
+}
+
+.detail-concept-reader h3 {
+  max-width: 34ch;
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+}
+
 .article-body h2[id],
 .article-body h3[id] {
   scroll-margin-top: 110px;

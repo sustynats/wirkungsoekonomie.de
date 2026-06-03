@@ -250,7 +250,7 @@ function mdToHtml(markdown) {
 }
 
 function tocBlock(toc) {
-  return `<nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol>${toc.slice(0, 22).map((x) => `<li class="toc-level-${x.level}"><a href="#${x.id}">${escapeHtml(x.text)}</a></li>`).join("")}</ol></nav>`;
+  return `<nav class="toc-card no-print reader-toc-card" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol>${toc.slice(0, 22).map((x) => `<li class="toc-level-${x.level}"><a href="#${x.id}">${escapeHtml(x.text)}</a></li>`).join("")}</ol></nav>`;
 }
 function citationNotice(route) {
   return `<aside class="citation-note" role="note"><p class="card-kicker">Onlinefassung</p><h2>Du liest die Onlinefassung.</h2><p>Abschnittsanker können direkt zitiert werden. Ergänzende Downloadfassungen stehen am Ende der Seite.</p></aside>`;
@@ -308,8 +308,8 @@ function fulltextPage({ rel, title, subtitle, mdRel, status, downloads = [], car
     body: (base, route) => `${hero(base, { kicker: status.replace(/\/\s*Online-Volltext/g, ""), title, subtitle, text: subtitle, action: `<a class="btn btn-primary" href="${href(base, backHref)}">Zur Übersicht</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta(status)}</section>
-    <section class="section narrow">${tocBlock(rendered.toc)}</section>
-    <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("online-volltext", "Onlinefassung")}${rendered.html}</article></section>
+    <section class="section no-print detail-concept-toc-section">${tocBlock(rendered.toc)}</section>
+    <section class="section article-section"><article class="article-body fulltext-reader detail-concept-reader">${sectionTitle("online-volltext", "Onlinefassung")}${rendered.html}</article></section>
     ${cards.length ? `<section class="section" aria-labelledby="related">${sectionTitle("related", "Verwandte Online-Bereiche")}${cardGrid(base, cards)}</section>` : ""}
     ${toolGrid(base)}
     ${politicalBlock()}

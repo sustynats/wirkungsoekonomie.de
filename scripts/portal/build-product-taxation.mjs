@@ -775,8 +775,8 @@ function printActions(extra = "") {
 function tocBlock(base, toc, label = "Inhaltsverzeichnis") {
   const filtered = toc.filter((item) => item.level <= 3 && !isImportedTocHeading(item.text));
   if (!filtered.length) return "";
-  return `<nav class="toc-card" aria-label="${label}">
-      <h2>${label}</h2>
+  return `<nav class="toc-card no-print reader-toc-card" aria-label="${label}">
+      <h2 class="card-title">${label}</h2>
       <ol>${filtered.map((item) => `<li class="toc-level-${item.level}"><a href="#${item.id}">${escapeHtml(item.text)}</a></li>`).join("")}</ol>
     </nav>`;
 }
@@ -995,9 +995,9 @@ function fulltextPage(config) {
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
     <section class="section narrow">${productStatus(config.status || "Lesefassung")}</section>
-    <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, cleanToc)}</section>
+    <section class="section no-print detail-concept-toc-section">${sourceNotice(config.source)}${tocBlock(base, cleanToc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
-      <article class="article-body fulltext-reader">
+      <article class="article-body fulltext-reader detail-concept-reader">
         ${sectionTitle("online-volltext", "Konzept lesen")}
         ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
         ${cleanHtml}
