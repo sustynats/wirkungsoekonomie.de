@@ -54220,36 +54220,63 @@
       "aliases": [
         "Doppelte Wesentlichkeit",
         "Double Materiality",
-        "doppelte Materialität"
+        "doppelte Materialität",
+        "doppelte Materialitaet",
+        "Outside-In",
+        "Inside-Out",
+        "Impact Materiality",
+        "Financial Materiality",
+        "Wesentlichkeitsanalyse",
+        "Wesentlichkeitsbewertung"
       ],
       "synonyms": [
         "Doppelte Wesentlichkeit",
         "Double Materiality",
-        "doppelte Materialität"
+        "doppelte Materialität",
+        "doppelte Materialitaet",
+        "Outside-In",
+        "Inside-Out",
+        "Impact Materiality",
+        "Financial Materiality",
+        "Wesentlichkeitsanalyse",
+        "Wesentlichkeitsbewertung"
       ],
-      "shortDefinition": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
-      "definition": "Für die WÖk ist doppelte Wesentlichkeit ein wichtiger Anschluss, weil sie Wirkungsperspektive und Risikoperspektive zusammenführt. Die WÖk geht weiter, indem sie bewertete Wirkung in Steuerung und Rückkopplung übersetzt.",
-      "longDefinition": "Für die WÖk ist doppelte Wesentlichkeit ein wichtiger Anschluss, weil sie Wirkungsperspektive und Risikoperspektive zusammenführt. Die WÖk geht weiter, indem sie bewertete Wirkung in Steuerung und Rückkopplung übersetzt.",
-      "woekRelation": "Nicht als vollständige Wirkungsbewertung darstellen.",
-      "statusNote": "Nicht als vollständige Wirkungsbewertung darstellen.",
-      "usageNote": "Nicht als vollständige Wirkungsbewertung darstellen.",
+      "shortDefinition": "Doppelte Wesentlichkeit bedeutet, dass ein Unternehmen Nachhaltigkeit aus zwei Richtungen bewertet: Welche Wirkung hat das Unternehmen auf Menschen, Umwelt und Gesellschaft - und wie wirken ökologische, soziale, politische oder wirtschaftliche Entwicklungen auf das Unternehmen zurück?",
+      "definition": "Doppelte Wesentlichkeit beschreibt die Bewertung von Nachhaltigkeit aus zwei Perspektiven gleichzeitig: Inside-Out beziehungsweise Impact Materiality und Outside-In beziehungsweise Financial Materiality. Sie verbindet Verantwortung nach außen mit finanzieller, strategischer und resilienter Unternehmensrelevanz.",
+      "longDefinition": "Doppelte Wesentlichkeit fragt: Was bewirkt ein Unternehmen in der Welt - und was bewirkt die Welt im Unternehmen? Die Inside-Out-Perspektive betrachtet tatsächliche oder mögliche Auswirkungen des Unternehmens auf Menschen, Umwelt, Gesellschaft und Demokratie. Die Outside-In-Perspektive betrachtet, welche Nachhaltigkeitsthemen auf Geschäftsmodell, Kosten, Umsatz, Finanzierung, Lieferfähigkeit, Reputation, Regulierung, Risiken, Chancen und langfristige Resilienz zurückwirken.",
+      "woekRelation": "Für die Wirkungsökonomie ist doppelte Wesentlichkeit ein wichtiger Zwischenschritt zwischen Nachhaltigkeitsberichterstattung und Wirkungssteuerung. Sie identifiziert wesentliche Themen. Die Wirkungsökonomie geht weiter: Sie fragt, wie Wirkung gemessen, bewertet und in Preise, Steuern, Kapital, Beschaffung, Förderung, Strategie und Entscheidungen rückgekoppelt wird.",
+      "statusNote": "Analyse- und Reportingprinzip, nicht vollständige Wirkungsbewertung und nicht automatisch Wirkungssteuerung.",
+      "usageNote": "Als Brücke zwischen CSRD/ESRS-Berichterstattung, Impact Controlling, Risikomanagement, Resilienz und Wirkungssteuerung verwenden. Wirkung dabei neutral verstehen: Wirkung kann positiv, negativ oder ambivalent sein.",
       "categories": [
         "daten-standards-regularien",
-        "reporting-und-pruefung"
+        "reporting-und-pruefung",
+        "nachhaltigkeit-wirkung-unternehmenssteuerung"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
       "dataStandardsGroup": "Reporting und Prüfung",
       "dataStandardsOrder": 36,
       "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
       "officialSources": [
-        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+        "Europäische Kommission: Corporate sustainability reporting / CSRD|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: Materiality Assessment Implementation Guidance|https://www.efrag.org/sites/default/files/sites/webpublishing/SiteAssets/IG%201%20Materiality%20Assessment_final.pdf"
       ],
       "pageUrl": "/begriffe/doppelte-wesentlichkeit/",
       "priority": 37,
@@ -54259,65 +54286,248 @@
       "source": "Reporting und Prüfung",
       "sourceDocument": "CSRD und ESRS",
       "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
-      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
+      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-Out-Wirkung und Outside-In-Finanzrelevanz.",
       "doNotConfuseWith": [
         "einfache Finanzwesentlichkeit",
-        "Wirkungsbewertung"
+        "Wirkungsbewertung",
+        "reine Compliance-Prüfung",
+        "ESG-Marketing",
+        "fertige Wirkungssteuerung"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Brücke zwischen Berichtswesen und Wirkungsperspektive nutzen.",
-      "deprecatedUsage": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
+      "examples": [
+        "Ein Unternehmen verursacht hohe CO2-Emissionen: Inside-Out betrifft Klima, Gesundheit, Ökosysteme und kommende Generationen; Outside-In betrifft CO2-Preise, Regulierung, Nachfrage, Investorenanforderungen und Reputation.",
+        "Ein Textilunternehmen prüft Wasserverbrauch, Arbeitsbedingungen und Chemikalien in der Lieferkette sowie gleichzeitig Wasserknappheit, Lieferausfälle, Regulierung und Nachfrageveränderungen als Geschäftsrisiken."
+      ],
+      "preferredUsage": "Doppelte Wesentlichkeit als CSRD/ESRS-nahes Analyseprinzip erklären und zugleich zeigen, dass Wirkungsökonomie über Reporting hinaus in Steuerung, Kapital, Risiko, Resilienz und Entscheidungen rückkoppelt.",
+      "deprecatedUsage": [
+        "nur finanziell relevante Nachhaltigkeitsthemen zählen lassen",
+        "Impact-Perspektive mit Image oder Absicht verwechseln",
+        "doppelte Wesentlichkeit als vollständige Wirkungsmessung darstellen"
+      ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "doppelte wesentlichkeit",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-03",
       "related_terms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
       "concept_status": "",
-      "source_links": [],
+      "source_links": [
+        {
+          "source_type": "official",
+          "title": "Europäische Kommission: Corporate sustainability reporting / CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "status": "linked"
+        },
+        {
+          "source_type": "official-guidance",
+          "title": "EFRAG: Materiality Assessment Implementation Guidance",
+          "url": "https://www.efrag.org/sites/default/files/sites/webpublishing/SiteAssets/IG%201%20Materiality%20Assessment_final.pdf",
+          "status": "linked"
+        }
+      ],
       "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "last_reviewed": "2026-06-03",
+      "type": "CSRD-/ESRS-Anschlussbegriff",
+      "begriffstyp": "CSRD-/ESRS-Anschlussbegriff",
       "theme": [
-        "Datenbegriff"
+        "Nachhaltigkeit",
+        "Wirkung",
+        "Unternehmenssteuerung"
       ],
       "themes": [
-        "Datenbegriff"
+        "Nachhaltigkeit",
+        "Wirkung",
+        "Unternehmenssteuerung"
       ],
       "dimensions": [
         "Mensch + Planet + Demokratie"
       ],
       "wirklogik": [
-        "Wirkungsbewertung"
+        "Wirkungsbewertung",
+        "Risikomanagement",
+        "Wirkungsrückkopplung"
       ],
       "applicationFields": [
-        "Politik",
-        "Unternehmen"
+        "Unternehmen",
+        "Berichterstattung",
+        "Risikomanagement",
+        "Strategie"
       ],
       "application_fields": [
-        "Politik",
-        "Unternehmen"
+        "Unternehmen",
+        "Berichterstattung",
+        "Risikomanagement",
+        "Strategie"
       ],
       "sourceField": [
+        "CSRD/ESRS",
         "WÖk-eigener Begriff"
       ],
       "source_field": [
+        "CSRD/ESRS",
         "WÖk-eigener Begriff"
       ],
       "mythos": "",
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "metaTitle": "Doppelte Wesentlichkeit einfach erklärt | Glossar Wirkungsökonomie",
+      "metaDescription": "Doppelte Wesentlichkeit erklärt: Inside-Out, Outside-In, Impact Materiality, Financial Materiality und ihre Bedeutung für Impact Controlling, Risikomanagement, Resilienz und Wirkungsökonomie.",
+      "sourceLinks": [
+        {
+          "source_type": "official",
+          "title": "Europäische Kommission: Corporate sustainability reporting / CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "status": "linked"
+        },
+        {
+          "source_type": "official-guidance",
+          "title": "EFRAG: Materiality Assessment Implementation Guidance",
+          "url": "https://www.efrag.org/sites/default/files/sites/webpublishing/SiteAssets/IG%201%20Materiality%20Assessment_final.pdf",
+          "status": "linked"
+        }
+      ],
+      "relatedMethods": [
+        {
+          "label": "Wirkungscontrolling / Impact Controlling",
+          "url": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/"
+        },
+        {
+          "label": "T-SROI",
+          "url": "/werkzeuge/impact-controlling/t-sroi/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/"
+        }
+      ],
+      "updatedAt": "2026-06-03",
+      "lastReviewed": "2026-06-03",
+      "deepGlossarySections": [
+        {
+          "title": "Die zwei Perspektiven",
+          "body": "Doppelte Wesentlichkeit bewertet Nachhaltigkeit aus zwei Richtungen. Inside-Out oder Impact Materiality fragt nach den tatsächlichen und möglichen Auswirkungen eines Unternehmens auf Menschen, Umwelt, Gesellschaft und Demokratie. Outside-In oder Financial Materiality fragt nach den Auswirkungen von Nachhaltigkeitsthemen auf Geschäftsmodell, Kosten, Umsatz, Finanzierung, Lieferfähigkeit, Reputation, Regulierung, Risiken, Chancen und Resilienz.",
+          "items": [
+            "Inside-Out: Welche Wirkungen erzeugen Produkte, Dienstleistungen, Lieferketten, Standorte, Investitionen und Geschäftsmodelle?",
+            "Outside-In: Welche ökologischen, sozialen, politischen oder wirtschaftlichen Entwicklungen wirken auf das Unternehmen zurück?",
+            "Kurzformel: Was bewirkt das Unternehmen in der Welt - und was bewirkt die Welt im Unternehmen?"
+          ]
+        },
+        {
+          "title": "Inside-Out: Wirkung des Unternehmens auf die Welt",
+          "body": "Bei der Inside-Out-Perspektive geht es um tatsächliche oder mögliche Auswirkungen des Unternehmens. Aus Sicht der Wirkungsökonomie ist Wirkung dabei nicht bloß Absicht, Image oder Bericht, sondern eine tatsächliche Zustandsveränderung. Entscheidend ist nicht, was ein Unternehmen behauptet, sondern was sich durch sein Handeln real verändert.",
+          "items": [
+            "Treibhausgasemissionen, Wasserverbrauch, Bodenqualität und Biodiversität prüfen.",
+            "Menschenrechte, Arbeitsbedingungen, Gesundheit, Sicherheit, Gleichstellung und Teilhabe prüfen.",
+            "Produktwirkungen in Herstellung, Nutzung und Entsorgung einbeziehen.",
+            "Positive, negative und ambivalente Wirkungen für kommende Generationen sichtbar machen."
+          ]
+        },
+        {
+          "title": "Outside-In: Wirkung der Welt auf das Unternehmen",
+          "body": "Bei der Outside-In-Perspektive geht es um Risiken und Chancen für das Unternehmen selbst. Nachhaltigkeit ist damit nicht nur Verantwortung nach außen, sondern auch strategische Überlebensfrage. Ein Unternehmen, das seine Abhängigkeiten, Risiken und Rückwirkungen nicht erkennt, steuert blind.",
+          "items": [
+            "Klimarisiken, Extremwetter, Wasserknappheit, Energiepreise und CO2-Preise berücksichtigen.",
+            "Regulierung, Versicherbarkeit, Kapitalmarktzugang, Kundenerwartungen und Reputation prüfen.",
+            "Abhängigkeiten von fossilen Energien, kritischen Rohstoffen und instabilen Lieferketten sichtbar machen.",
+            "Krisen, geopolitische Spannungen, Fachkräftemangel und soziale Konflikte in die Resilienzbewertung einbeziehen."
+          ]
+        },
+        {
+          "title": "Warum sie wichtig ist",
+          "body": "Doppelte Wesentlichkeit verhindert, dass Nachhaltigkeit nur als Image-, Compliance- oder Investorenthema behandelt wird. Ein Thema kann wesentlich sein, weil es Menschen, Umwelt oder Gesellschaft stark betrifft. Es kann auch wesentlich sein, weil es das Unternehmen finanziell oder strategisch betrifft. Häufig hängen beide Seiten zusammen.",
+          "items": [
+            "Verantwortung und Geschäftsrelevanz werden miteinander verbunden.",
+            "Impact Materiality verhindert, dass nur Finanzrisiken zählen.",
+            "Financial Materiality verhindert, dass Nachhaltigkeit von Strategie und Risikomanagement getrennt bleibt."
+          ]
+        },
+        {
+          "title": "Verbindung zu Impact Controlling",
+          "body": "Doppelte Wesentlichkeit ist der Ausgangspunkt für gutes Impact Controlling. Die Wesentlichkeitsanalyse identifiziert relevante Themen. Impact Controlling übersetzt diese Themen anschließend in Ziele, Kennzahlen, Datenquellen, Maßnahmen, Risiken, Nebenwirkungen und Rückkopplungen in Strategie, Einkauf, Produktentwicklung, Investitionen und Managemententscheidungen.",
+          "items": [
+            "Welche Wirkungsziele werden gesetzt?",
+            "Welche Kennzahlen und Datenquellen messen Fortschritt?",
+            "Welche Risiken und Nebenwirkungen müssen überwacht werden?",
+            "Welche Maßnahmen verbessern die Wirkung tatsächlich?",
+            "Wie werden Ergebnisse in Entscheidungen zurückgeführt?"
+          ]
+        },
+        {
+          "title": "Verbindung zu Risikomanagement",
+          "body": "Doppelte Wesentlichkeit gehört ins Risikomanagement. Outside-In-Themen zeigen externe Entwicklungen, die ein Unternehmen gefährden können. Inside-Out-Themen zeigen negative Wirkungen, die das Unternehmen selbst erzeugt und aus denen wiederum Rechtsrisiken, Reputationsverlust, Finanzierungskosten, Absatzprobleme oder regulatorischer Druck entstehen können.",
+          "items": [
+            "Nachhaltigkeitsmanagement fragt: Welche Wirkung erzeugen wir?",
+            "Risikomanagement fragt: Welche Risiken bedrohen uns?",
+            "Wirkungsökonomie fragt zusätzlich: Wie hängen Wirkungen, Risiken und Anreize systemisch zusammen?"
+          ]
+        },
+        {
+          "title": "Verbindung zu Resilienz",
+          "body": "Resilienz bedeutet Widerstandsfähigkeit und Anpassungsfähigkeit gegenüber Krisen, Schocks und langfristigen Veränderungen. Doppelte Wesentlichkeit stärkt Resilienz, weil sie Abhängigkeiten sichtbar macht: Wasser, Energie, Rohstoffe, Lieferketten, Mitarbeitende, Vertrauen, demokratische und rechtsstaatliche Rahmenbedingungen, Märkte, Infrastruktur und öffentliche Akzeptanz.",
+          "items": [
+            "Kurzfristige Profitabilität reicht nicht, wenn das Geschäftsmodell seine eigenen Grundlagen beschädigt.",
+            "Resilienz entsteht, wenn Geschäftsmodelle Mensch, Planet und Demokratie nicht ausnutzen, sondern stabilisieren."
+          ]
+        },
+        {
+          "title": "Bedeutung für die Wirkungsökonomie",
+          "body": "Für die Wirkungsökonomie ist doppelte Wesentlichkeit ein wichtiger Zwischenschritt, aber nicht das Ziel. Sie macht sichtbar, welche Nachhaltigkeitsthemen relevant sind. Die Wirkungsökonomie fragt weiter: Wie wird Wirkung gemessen, bewertet und in Preise, Steuern, Kapital, Beschaffung, Förderung, Strategie und Entscheidungen rückgekoppelt?",
+          "items": [
+            "Von: Was müssen Unternehmen berichten?",
+            "Hin zu: Wie verändern wir die Anreizstruktur so, dass positive Netto-Wirkung für Mensch, Planet und Demokratie entsteht?",
+            "Doppelte Wesentlichkeit zeigt Relevanz. Wirkungsökonomie baut daraus ein lernendes Steuerungssystem."
+          ]
+        },
+        {
+          "title": "Beispiel Textilunternehmen",
+          "body": "Ein Textilunternehmen lässt Baumwolle in wasserarmen Regionen anbauen und produziert Kleidung in globalen Lieferketten. Inside-Out fragt nach Wasserverbrauch, Böden, Flüssen, Ökosystemen, Löhnen, Arbeitsbedingungen, Chemikalien, Ressourcenverbrauch und Abfall. Outside-In fragt nach Wasserknappheit, Extremwetter, politischen Instabilitäten, Reputationsschäden, neuen Gesetzen und veränderter Nachfrage.",
+          "items": [
+            "WÖk-Perspektive: Die Antworten dürfen nicht nur dokumentiert werden.",
+            "Sie müssen in Produktdesign, Lieferantenauswahl, Preise, Investitionen und Managementziele zurückwirken."
+          ]
+        },
+        {
+          "title": "Häufige Missverständnisse",
+          "body": "Doppelte Wesentlichkeit ist keine juristische Einzelfallberatung und kein Ersatz für Wirkungsmessung. Sie identifiziert wesentliche Themen. Die eigentliche Wirkungsbewertung, Steuerung und Verbesserung braucht zusätzliche Instrumente wie Impact Controlling, Scorecards, Wirkungsdaten, Netto-Wirkungsbewertung und Transformationsmessung.",
+          "items": [
+            "Nicht jedes Nachhaltigkeitsthema ist automatisch gleich wichtig.",
+            "Nicht nur finanziell relevante Themen zählen.",
+            "Impact-Perspektive ist nicht Image, Absicht oder Bericht.",
+            "Reporting wird erst durch Rückkopplung zur Steuerung."
+          ]
+        },
+        {
+          "title": "Formel und Abgrenzung",
+          "body": "Doppelte Wesentlichkeit = Inside-Out + Outside-In. Oder ausführlicher: Welche Wirkung hat unser Handeln auf Mensch, Planet und Demokratie - und welche Auswirkungen haben ökologische, soziale, politische und wirtschaftliche Veränderungen auf unser Geschäftsmodell, unsere Risiken und unsere Resilienz?",
+          "items": [
+            "Doppelte Wesentlichkeit fragt: Was ist wesentlich?",
+            "Wirkungsökonomie fragt: Wie wird das Wesentliche so gemessen, bewertet und rückgekoppelt, dass bessere Entscheidungen entstehen?"
+          ]
+        }
+      ]
     },
     {
       "id": "downcycling",
@@ -375438,8 +375648,15 @@
       "label": "Frame",
       "canonicalLabel": "Frame",
       "slug": "frame",
-      "aliases": ["Frame", "Deutungsrahmen", "Framing"],
-      "synonyms": ["Deutungsrahmen", "Framing"],
+      "aliases": [
+        "Frame",
+        "Deutungsrahmen",
+        "Framing"
+      ],
+      "synonyms": [
+        "Deutungsrahmen",
+        "Framing"
+      ],
       "shortDefinition": "Ein Frame ist ein Deutungsrahmen, der bestimmt, wie ein Thema wahrgenommen und bewertet wird.",
       "short_definition": "Ein Frame ist ein Deutungsrahmen, der bestimmt, wie ein Thema wahrgenommen und bewertet wird.",
       "definition": "Ein Frame ist ein Deutungsrahmen, der bestimmt, wie ein Thema wahrgenommen und bewertet wird.",
@@ -375448,10 +375665,26 @@
       "hoverDefinition": "Ein Frame sortiert Wirklichkeit und legt nahe, was als Problem, Ursache, Opfer oder Lösung erscheint.",
       "woekRelation": "Frames sind in der WÖk sprachliche Wirkstoffe, weil sie Resonanzräume, Vertrauen und Handlungsfähigkeit beeinflussen.",
       "woek_einordnung": "Frames sind in der WÖk sprachliche Wirkstoffe, weil sie Resonanzräume, Vertrauen und Handlungsfähigkeit beeinflussen.",
-      "relatedTerms": ["narrativ", "sprachlicher-trigger", "gegenframe", "resonanzraum"],
-      "related_terms": ["narrativ", "sprachlicher-trigger", "gegenframe", "resonanzraum"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "narrativ",
+        "sprachlicher-trigger",
+        "gegenframe",
+        "resonanzraum"
+      ],
+      "related_terms": [
+        "narrativ",
+        "sprachlicher-trigger",
+        "gegenframe",
+        "resonanzraum"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375459,11 +375692,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Als Analysebegriff für Deutungsrahmen politischer Sprache verwenden.",
-      "deprecatedUsage": ["Frame als bloßes Schlagwort ohne Wirkungsanalyse"],
+      "deprecatedUsage": [
+        "Frame als bloßes Schlagwort ohne Wirkungsanalyse"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "sprachlicher-trigger",
@@ -375471,8 +375709,15 @@
       "label": "Sprachlicher Trigger",
       "canonicalLabel": "Sprachlicher Trigger",
       "slug": "sprachlicher-trigger",
-      "aliases": ["Sprachlicher Trigger", "Triggerwort", "Triggerbegriff"],
-      "synonyms": ["Triggerwort", "Triggerbegriff"],
+      "aliases": [
+        "Sprachlicher Trigger",
+        "Triggerwort",
+        "Triggerbegriff"
+      ],
+      "synonyms": [
+        "Triggerwort",
+        "Triggerbegriff"
+      ],
       "shortDefinition": "Ein sprachlicher Trigger ist ein Wort oder Ausdruck, der Gefühle wie Angst, Wut, Kränkung oder Zugehörigkeit aktiviert.",
       "short_definition": "Ein sprachlicher Trigger ist ein Wort oder Ausdruck, der Gefühle wie Angst, Wut, Kränkung oder Zugehörigkeit aktiviert.",
       "definition": "Ein sprachlicher Trigger ist ein Wort oder Ausdruck, der Gefühle wie Angst, Wut, Kränkung oder Zugehörigkeit aktiviert.",
@@ -375481,10 +375726,26 @@
       "hoverDefinition": "Ein Wort oder Ausdruck, der nicht nur Information transportiert, sondern gezielt Gefühle wie Angst, Wut, Kränkung oder Zugehörigkeit aktiviert.",
       "woekRelation": "Sprachliche Trigger helfen, politische Sprache nach Wirkung auf Resonanz, Vertrauen und Konfliktdynamik zu prüfen.",
       "woek_einordnung": "Sprachliche Trigger helfen, politische Sprache nach Wirkung auf Resonanz, Vertrauen und Konfliktdynamik zu prüfen.",
-      "relatedTerms": ["frame", "resonanzraum", "wirkstoff", "polarisierung"],
-      "related_terms": ["frame", "resonanzraum", "wirkstoff", "polarisierung"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "frame",
+        "resonanzraum",
+        "wirkstoff",
+        "polarisierung"
+      ],
+      "related_terms": [
+        "frame",
+        "resonanzraum",
+        "wirkstoff",
+        "polarisierung"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375492,11 +375753,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Analytisch verwenden, nicht zur Verstärkung problematischer Begriffe.",
-      "deprecatedUsage": ["Triggerwort als plakativer Aufmacher"],
+      "deprecatedUsage": [
+        "Triggerwort als plakativer Aufmacher"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "feindbild",
@@ -375504,8 +375770,13 @@
       "label": "Feindbild",
       "canonicalLabel": "Feindbild",
       "slug": "feindbild",
-      "aliases": ["Feindbild", "Feindbildlogik"],
-      "synonyms": ["Feindbildlogik"],
+      "aliases": [
+        "Feindbild",
+        "Feindbildlogik"
+      ],
+      "synonyms": [
+        "Feindbildlogik"
+      ],
       "shortDefinition": "Ein Feindbild rahmt Menschen oder Gruppen als Bedrohung, Ursache oder moralisch minderwertige Gegenseite.",
       "short_definition": "Ein Feindbild rahmt Menschen oder Gruppen als Bedrohung, Ursache oder moralisch minderwertige Gegenseite.",
       "definition": "Ein Feindbild rahmt Menschen oder Gruppen als Bedrohung, Ursache oder moralisch minderwertige Gegenseite.",
@@ -375514,10 +375785,24 @@
       "hoverDefinition": "Ein Feindbild macht aus Menschen oder Gruppen eine abgewertete Ursache, Bedrohung oder Gegenseite.",
       "woekRelation": "Feindbilder sind hohe Wirkungsrisiken für Mensch, Demokratie, Vertrauen und gesellschaftlichen Zusammenhalt.",
       "woek_einordnung": "Feindbilder sind hohe Wirkungsrisiken für Mensch, Demokratie, Vertrauen und gesellschaftlichen Zusammenhalt.",
-      "relatedTerms": ["suendenbockmechanismus", "polarisierung", "demokratiefeindlichkeit"],
-      "related_terms": ["suendenbockmechanismus", "polarisierung", "demokratiefeindlichkeit"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "suendenbockmechanismus",
+        "polarisierung",
+        "demokratiefeindlichkeit"
+      ],
+      "related_terms": [
+        "suendenbockmechanismus",
+        "polarisierung",
+        "demokratiefeindlichkeit"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375525,11 +375810,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Als Analysebegriff für abwertende Deutungsmuster verwenden.",
-      "deprecatedUsage": ["Feindbild als pauschale Personenbeschreibung"],
+      "deprecatedUsage": [
+        "Feindbild als pauschale Personenbeschreibung"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "polarisierung",
@@ -375537,8 +375827,13 @@
       "label": "Polarisierung",
       "canonicalLabel": "Polarisierung",
       "slug": "polarisierung",
-      "aliases": ["Polarisierung", "Lagerbildung"],
-      "synonyms": ["Lagerbildung"],
+      "aliases": [
+        "Polarisierung",
+        "Lagerbildung"
+      ],
+      "synonyms": [
+        "Lagerbildung"
+      ],
       "shortDefinition": "Polarisierung beschreibt die Zuspitzung gesellschaftlicher Gegensätze zu verhärteten Lagern.",
       "short_definition": "Polarisierung beschreibt die Zuspitzung gesellschaftlicher Gegensätze zu verhärteten Lagern.",
       "definition": "Polarisierung beschreibt die Zuspitzung gesellschaftlicher Gegensätze zu verhärteten Lagern.",
@@ -375547,10 +375842,24 @@
       "hoverDefinition": "Polarisierung verhärtet Gegensätze und kann Kompromissfähigkeit, Vertrauen und Diskursfähigkeit schwächen.",
       "woekRelation": "Polarisierung wird in der WÖk nach Wirkung auf Handlungsfähigkeit, Institutionenvertrauen und Konfliktdynamik geprüft.",
       "woek_einordnung": "Polarisierung wird in der WÖk nach Wirkung auf Handlungsfähigkeit, Institutionenvertrauen und Konfliktdynamik geprüft.",
-      "relatedTerms": ["feindbild", "diskursfaehigkeit", "resonanzraum"],
-      "related_terms": ["feindbild", "diskursfaehigkeit", "resonanzraum"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "feindbild",
+        "diskursfaehigkeit",
+        "resonanzraum"
+      ],
+      "related_terms": [
+        "feindbild",
+        "diskursfaehigkeit",
+        "resonanzraum"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375558,11 +375867,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Als Wirkungsdiagnose für verhärtete Konfliktdynamiken verwenden.",
-      "deprecatedUsage": ["Polarisierung als Ersatz für legitimen Streit"],
+      "deprecatedUsage": [
+        "Polarisierung als Ersatz für legitimen Streit"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "opferumkehr",
@@ -375570,8 +375884,13 @@
       "label": "Opferumkehr",
       "canonicalLabel": "Opferumkehr",
       "slug": "opferumkehr",
-      "aliases": ["Opferumkehr", "Täter-Opfer-Umkehr"],
-      "synonyms": ["Täter-Opfer-Umkehr"],
+      "aliases": [
+        "Opferumkehr",
+        "Täter-Opfer-Umkehr"
+      ],
+      "synonyms": [
+        "Täter-Opfer-Umkehr"
+      ],
       "shortDefinition": "Opferumkehr verschiebt Verantwortung so, dass Kritik oder Schutzansprüche als Angriff der angeblich Mächtigen erscheinen.",
       "short_definition": "Opferumkehr verschiebt Verantwortung so, dass Kritik oder Schutzansprüche als Angriff der angeblich Mächtigen erscheinen.",
       "definition": "Opferumkehr verschiebt Verantwortung so, dass Kritik oder Schutzansprüche als Angriff der angeblich Mächtigen erscheinen.",
@@ -375580,10 +375899,24 @@
       "hoverDefinition": "Opferumkehr inszeniert Kritik oder Schutzansprüche als Angriff auf die angeblich unterdrückte eigene Gruppe.",
       "woekRelation": "Opferumkehr wirkt auf Resonanzräume, weil sie Widerspruch als Verfolgung rahmt und Lernfähigkeit blockieren kann.",
       "woek_einordnung": "Opferumkehr wirkt auf Resonanzräume, weil sie Widerspruch als Verfolgung rahmt und Lernfähigkeit blockieren kann.",
-      "relatedTerms": ["narrativ", "feindbild", "medienfeindbild"],
-      "related_terms": ["narrativ", "feindbild", "medienfeindbild"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "narrativ",
+        "feindbild",
+        "medienfeindbild"
+      ],
+      "related_terms": [
+        "narrativ",
+        "feindbild",
+        "medienfeindbild"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375591,11 +375924,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Als Mechanismusbeschreibung verwenden, nicht als Diagnose einzelner Personen.",
-      "deprecatedUsage": ["Opferumkehr als pauschaler Vorwurf ohne Kontext"],
+      "deprecatedUsage": [
+        "Opferumkehr als pauschaler Vorwurf ohne Kontext"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "demokratie-umdeutung",
@@ -375603,8 +375941,13 @@
       "label": "Demokratie-Umdeutung",
       "canonicalLabel": "Demokratie-Umdeutung",
       "slug": "demokratie-umdeutung",
-      "aliases": ["Demokratie-Umdeutung", "Demokratieverkürzung"],
-      "synonyms": ["Demokratieverkürzung"],
+      "aliases": [
+        "Demokratie-Umdeutung",
+        "Demokratieverkürzung"
+      ],
+      "synonyms": [
+        "Demokratieverkürzung"
+      ],
       "shortDefinition": "Demokratie-Umdeutung reduziert Demokratie auf unmittelbaren Mehrheitswillen und blendet Rechte, Kontrolle und Minderheitenschutz aus.",
       "short_definition": "Demokratie-Umdeutung reduziert Demokratie auf unmittelbaren Mehrheitswillen und blendet Rechte, Kontrolle und Minderheitenschutz aus.",
       "definition": "Demokratie-Umdeutung reduziert Demokratie auf unmittelbaren Mehrheitswillen und blendet Rechte, Kontrolle und Minderheitenschutz aus.",
@@ -375613,10 +375956,24 @@
       "hoverDefinition": "Demokratie-Umdeutung verkürzt Demokratie auf Mehrheitsdurchsetzung und blendet Rechte, Kontrolle und Minderheitenschutz aus.",
       "woekRelation": "Demokratie-Umdeutung ist ein Risiko für Rechtsstaat, Gewaltenteilung, Medienfreiheit und demokratische Korrekturfähigkeit.",
       "woek_einordnung": "Demokratie-Umdeutung ist ein Risiko für Rechtsstaat, Gewaltenteilung, Medienfreiheit und demokratische Korrekturfähigkeit.",
-      "relatedTerms": ["demokratie", "gewaltenteilung", "rechtsstaatsprinzip"],
-      "related_terms": ["demokratie", "gewaltenteilung", "rechtsstaatsprinzip"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "demokratie",
+        "gewaltenteilung",
+        "rechtsstaatsprinzip"
+      ],
+      "related_terms": [
+        "demokratie",
+        "gewaltenteilung",
+        "rechtsstaatsprinzip"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375624,11 +375981,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Verwenden, wenn Demokratie auf Mehrheitswillen ohne Schutz- und Kontrollarchitektur verkürzt wird.",
-      "deprecatedUsage": ["Demokratiekritik pauschal als Demokratie-Umdeutung bezeichnen"],
+      "deprecatedUsage": [
+        "Demokratiekritik pauschal als Demokratie-Umdeutung bezeichnen"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "gegenframe",
@@ -375636,8 +375998,13 @@
       "label": "Gegenframe",
       "canonicalLabel": "Gegenframe",
       "slug": "gegenframe",
-      "aliases": ["Gegenframe", "Reframing"],
-      "synonyms": ["Reframing"],
+      "aliases": [
+        "Gegenframe",
+        "Reframing"
+      ],
+      "synonyms": [
+        "Reframing"
+      ],
       "shortDefinition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
       "short_definition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
       "definition": "Ein Gegenframe ersetzt einen problematischen Deutungsrahmen durch eine präzisere und lösungsfähigere Einordnung.",
@@ -375646,10 +376013,24 @@
       "hoverDefinition": "Eine alternative Deutung, die den problematischen Frame nicht nur verneint, sondern durch einen besseren, wahreren und lösungsfähigeren Rahmen ersetzt.",
       "woekRelation": "Gegenframes stärken Handlungsfähigkeit, wenn sie reale Probleme anerkennen und in lösungsfähige Wirkungssprache übersetzen.",
       "woek_einordnung": "Gegenframes stärken Handlungsfähigkeit, wenn sie reale Probleme anerkennen und in lösungsfähige Wirkungssprache übersetzen.",
-      "relatedTerms": ["frame", "reframing", "wirkungskommunikation"],
-      "related_terms": ["frame", "reframing", "wirkungskommunikation"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "frame",
+        "reframing",
+        "wirkungskommunikation"
+      ],
+      "related_terms": [
+        "frame",
+        "reframing",
+        "wirkungskommunikation"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375657,11 +376038,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Als Alternative zu bloßer Frame-Verneinung verwenden.",
-      "deprecatedUsage": ["Gegenframe als PR-Formel ohne Wahrheitsbindung"],
+      "deprecatedUsage": [
+        "Gegenframe als PR-Formel ohne Wahrheitsbindung"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "wirkungsanalyse-von-sprache",
@@ -375669,8 +376055,13 @@
       "label": "Wirkungsanalyse von Sprache",
       "canonicalLabel": "Wirkungsanalyse von Sprache",
       "slug": "wirkungsanalyse-von-sprache",
-      "aliases": ["Wirkungsanalyse von Sprache", "sprachliche Wirkungsanalyse"],
-      "synonyms": ["sprachliche Wirkungsanalyse"],
+      "aliases": [
+        "Wirkungsanalyse von Sprache",
+        "sprachliche Wirkungsanalyse"
+      ],
+      "synonyms": [
+        "sprachliche Wirkungsanalyse"
+      ],
       "shortDefinition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
       "short_definition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
       "definition": "Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.",
@@ -375679,10 +376070,26 @@
       "hoverDefinition": "Wirkungsanalyse von Sprache prüft Frames, Trigger, Resonanzräume und Handlungsimpulse politischer Sprache.",
       "woekRelation": "Die Wirkungsanalyse von Sprache verbindet Faktencheck, Folgencheck und demokratische Gegenkommunikation.",
       "woek_einordnung": "Die Wirkungsanalyse von Sprache verbindet Faktencheck, Folgencheck und demokratische Gegenkommunikation.",
-      "relatedTerms": ["folgencheck", "frame", "sprachlicher-trigger", "resonanzraum"],
-      "related_terms": ["folgencheck", "frame", "sprachlicher-trigger", "resonanzraum"],
-      "categories": ["sprache-wirklichkeit-und-kommunikation"],
-      "tags": ["Sprache", "Narrative", "Demokratie"],
+      "relatedTerms": [
+        "folgencheck",
+        "frame",
+        "sprachlicher-trigger",
+        "resonanzraum"
+      ],
+      "related_terms": [
+        "folgencheck",
+        "frame",
+        "sprachlicher-trigger",
+        "resonanzraum"
+      ],
+      "categories": [
+        "sprache-wirklichkeit-und-kommunikation"
+      ],
+      "tags": [
+        "Sprache",
+        "Narrative",
+        "Demokratie"
+      ],
       "status": "anschlussbegriff",
       "type": "Anschlussbegriff",
       "begriffstyp": "Anschlussbegriff",
@@ -375690,11 +376097,16 @@
       "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "sourceSection": "Sprache als politischer Wirkstoff",
-      "relatedDocuments": ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"],
+      "relatedDocuments": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "preferredUsage": "Als Verfahren für Folgencheck politischer Sprache verwenden.",
-      "deprecatedUsage": ["Wirkungsanalyse als Gesinnungsprüfung missverstehen"],
+      "deprecatedUsage": [
+        "Wirkungsanalyse als Gesinnungsprüfung missverstehen"
+      ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "version": "1.0"
     },
     {
       "id": "psychologischer-wirkungscheck",
@@ -375702,15 +376114,22 @@
       "label": "Psychologischer Wirkungscheck",
       "canonicalLabel": "Psychologischer Wirkungscheck",
       "slug": "psychologischer-wirkungscheck",
-      "aliases": ["Psychologischer Wirkungscheck"],
+      "aliases": [
+        "Psychologischer Wirkungscheck"
+      ],
       "shortDefinition": "Analyse, welche kognitiven Effekte, emotionalen Trigger und Gesprächsmuster eine Aussage aktiviert.",
       "definition": "Analyse, welche kognitiven Effekte, emotionalen Trigger und Gesprächsmuster eine Aussage aktiviert.",
       "hoverDefinition": "Der psychologische Wirkungscheck fragt: Warum bleibt diese Aussage hängen, welche Reaktion soll sie auslösen, und wie führt man zur Wirkungsfrage zurück?",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "kommunikative-souveraenitaet",
@@ -375718,15 +376137,22 @@
       "label": "Kommunikative Souveränität",
       "canonicalLabel": "Kommunikative Souveränität",
       "slug": "kommunikative-souveraenitaet",
-      "aliases": ["Kommunikative Souveränität"],
+      "aliases": [
+        "Kommunikative Souveränität"
+      ],
       "shortDefinition": "Fähigkeit, in einer Debatte ruhig zu bleiben, den Frame zu erkennen, den Mechanismus sichtbar zu machen und zur Wirkungsfrage zurückzuführen.",
       "definition": "Fähigkeit, in einer Debatte ruhig zu bleiben, den Frame zu erkennen, den Mechanismus sichtbar zu machen und zur Wirkungsfrage zurückzuführen.",
       "hoverDefinition": "Souveränität heißt nicht Dominanz. Sie heißt: Frame halten, Mechanismus erkennen, Wirkung klären.",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "framekontrolle",
@@ -375734,15 +376160,22 @@
       "label": "Framekontrolle",
       "canonicalLabel": "Framekontrolle",
       "slug": "framekontrolle",
-      "aliases": ["Framekontrolle"],
+      "aliases": [
+        "Framekontrolle"
+      ],
       "shortDefinition": "Bewusstes Verhindern, dass der problematische Deutungsrahmen einer Aussage unkritisch übernommen wird.",
       "definition": "Bewusstes Verhindern, dass der problematische Deutungsrahmen einer Aussage unkritisch übernommen wird.",
       "hoverDefinition": "Framekontrolle bedeutet: Ich beantworte die Frage, aber ich übernehme nicht die falsche Voraussetzung.",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "debiasing",
@@ -375750,15 +376183,22 @@
       "label": "Debiasing",
       "canonicalLabel": "Debiasing",
       "slug": "debiasing",
-      "aliases": ["Debiasing"],
+      "aliases": [
+        "Debiasing"
+      ],
       "shortDefinition": "Strategien, um kognitive Verzerrungen und emotionale Fehlreaktionen zu entschärfen.",
       "definition": "Strategien, um kognitive Verzerrungen und emotionale Fehlreaktionen zu entschärfen.",
       "hoverDefinition": "Debiasing heißt nicht Manipulation, sondern bessere Bedingungen für Klärung schaffen.",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "psychologisches-stoeckchen",
@@ -375766,15 +376206,22 @@
       "label": "Psychologisches Stöckchen",
       "canonicalLabel": "Psychologisches Stöckchen",
       "slug": "psychologisches-stoeckchen",
-      "aliases": ["Psychologisches Stöckchen"],
+      "aliases": [
+        "Psychologisches Stöckchen"
+      ],
       "shortDefinition": "Aussage oder Frage, die weniger klären soll, sondern eine emotionale oder defensive Reaktion auslösen will.",
       "definition": "Aussage oder Frage, die weniger klären soll, sondern eine emotionale oder defensive Reaktion auslösen will.",
       "hoverDefinition": "Ein psychologisches Stöckchen setzt oft einen Frame, verdreht die Beweislast oder springt von Thema zu Thema.",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "gesichtswahrende-korrektur",
@@ -375782,15 +376229,22 @@
       "label": "Gesichtswahrende Korrektur",
       "canonicalLabel": "Gesichtswahrende Korrektur",
       "slug": "gesichtswahrende-korrektur",
-      "aliases": ["Gesichtswahrende Korrektur"],
+      "aliases": [
+        "Gesichtswahrende Korrektur"
+      ],
       "shortDefinition": "Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.",
       "definition": "Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.",
       "hoverDefinition": "Hilfreich bei kognitiver Dissonanz: Person respektieren, Aussage prüfen.",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "wertebruecke",
@@ -375798,15 +376252,22 @@
       "label": "Wertebrücke",
       "canonicalLabel": "Wertebrücke",
       "slug": "wertebruecke",
-      "aliases": ["Wertebrücke"],
+      "aliases": [
+        "Wertebrücke"
+      ],
       "shortDefinition": "Verbindung über einen gemeinsamen Wert, bevor ein Denkfehler oder eine falsche Schlussfolgerung erklärt wird.",
       "definition": "Verbindung über einen gemeinsamen Wert, bevor ein Denkfehler oder eine falsche Schlussfolgerung erklärt wird.",
       "hoverDefinition": "Beispiel: Freiheit anerkennen, dann zeigen, wie faire Regeln Freiheit schützen.",
-      "categories": ["psychologie-und-resonanz"],
+      "categories": [
+        "psychologie-und-resonanz"
+      ],
       "category": "Psychologie und Resonanz",
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie"
     },
     {
       "id": "finanzschuld",
@@ -375814,19 +376275,36 @@
       "label": "Finanzschuld",
       "canonicalLabel": "Finanzschuld",
       "slug": "finanzschuld",
-      "aliases": ["Finanzschuld", "Staatsschuld", "öffentliche Verschuldung", "oeffentliche Verschuldung"],
+      "aliases": [
+        "Finanzschuld",
+        "Staatsschuld",
+        "öffentliche Verschuldung",
+        "oeffentliche Verschuldung"
+      ],
       "shortDefinition": "Formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite.",
       "definition": "Finanzschuld bezeichnet die formale Verschuldung eines Staates oder Haushalts durch aufgenommene Kredite. Sie ist wichtig für Zinslast, Tragfähigkeit und Vertrauen, sagt allein aber noch nichts darüber aus, ob die finanzierten Ausgaben positive Netto-Wirkung erzeugen.",
       "hoverDefinition": "Finanzschulden sind sichtbar und messbar, sagen aber allein noch nichts über die Wirkung der finanzierten Ausgaben.",
-      "categories": ["wirkungsradar", "haushalt-und-transformation"],
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
       "category": "Steuerungsbegriff",
       "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
-      "relatedTerms": ["unterlassungsschuld", "wirkungshaushalt", "generationenbilanz"],
-      "relatedDocuments": ["schulden-machen-oder-sparen"],
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "wirkungshaushalt",
+        "generationenbilanz"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "usageNote": "Finanzschuld immer von Investitionsschuld und Unterlassungsschuld unterscheiden.",
       "reviewStatus": "approved",
       "glossaryOrderKey": "finanzschuld",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen"
     },
     {
       "id": "unterlassungsschuld",
@@ -375834,19 +376312,37 @@
       "label": "Unterlassungsschuld",
       "canonicalLabel": "Unterlassungsschuld",
       "slug": "unterlassungsschuld",
-      "aliases": ["Unterlassungsschuld", "Zukunftsschuld", "verdeckte Schuld", "Nicht-Handlungs-Schuld"],
+      "aliases": [
+        "Unterlassungsschuld",
+        "Zukunftsschuld",
+        "verdeckte Schuld",
+        "Nicht-Handlungs-Schuld"
+      ],
       "shortDefinition": "Verdeckte Zukunftslast, die entsteht, wenn notwendige Investitionen oder Prävention unterbleiben.",
       "definition": "Unterlassungsschuld beschreibt verdeckte Zukunftslasten, die entstehen, wenn notwendige Investitionen, Instandhaltung, Prävention oder Transformation unterbleiben. Sie erscheint oft nicht sofort im Haushalt, zeigt sich später aber als höhere Schäden, Reparaturkosten, Produktivitätsverluste oder Vertrauensverlust.",
       "hoverDefinition": "Kaputte Brücken, Klimaschäden, Bildungsdefizite oder digitale Rückstände sind Formen von Unterlassungsschuld.",
-      "categories": ["wirkungsradar", "haushalt-und-transformation"],
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
       "category": "Steuerungsbegriff",
       "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
-      "relatedTerms": ["finanzschuld", "investitionsschuld", "wirkungsrisiko", "generationenbilanz"],
-      "relatedDocuments": ["schulden-machen-oder-sparen"],
+      "relatedTerms": [
+        "finanzschuld",
+        "investitionsschuld",
+        "wirkungsrisiko",
+        "generationenbilanz"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "usageNote": "Bei Sparentscheidungen immer die Kosten des Nicht-Handelns bilanzieren.",
       "reviewStatus": "approved",
       "glossaryOrderKey": "unterlassungsschuld",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen"
     },
     {
       "id": "goldene-wirkungsregel",
@@ -375854,19 +376350,36 @@
       "label": "Goldene Wirkungsregel",
       "canonicalLabel": "Goldene Wirkungsregel",
       "slug": "goldene-wirkungsregel",
-      "aliases": ["Goldene Wirkungsregel", "Wirkungsregel für Kreditfinanzierung", "goldene Investitionsregel nach Wirkung"],
+      "aliases": [
+        "Goldene Wirkungsregel",
+        "Wirkungsregel für Kreditfinanzierung",
+        "goldene Investitionsregel nach Wirkung"
+      ],
       "shortDefinition": "Prinzip, nach dem Kreditfinanzierung nur für Ausgaben zulässig ist, die positive Netto-Wirkung, Resilienz oder Folgekostenvermeidung erzeugen.",
       "definition": "Die Goldene Wirkungsregel ist ein wirkungsökonomisches Prinzip für öffentliche Kreditfinanzierung: Schulden sind nur dann gerechtfertigt, wenn die finanzierten Ausgaben positive Netto-Wirkung, Resilienzgewinn oder nachweisbare Folgekostenvermeidung erzeugen und demokratisch kontrolliert werden.",
       "hoverDefinition": "Nicht jede Investition ist gut. Aber jede kreditfinanzierte Ausgabe braucht eine Wirkungsprüfung.",
-      "categories": ["wirkungsradar", "haushalt-und-transformation"],
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
       "category": "Steuerungsbegriff",
       "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
-      "relatedTerms": ["t-sroi", "positive-netto-wirkung", "wirkungshaushalt", "blindleistung"],
-      "relatedDocuments": ["schulden-machen-oder-sparen"],
+      "relatedTerms": [
+        "t-sroi",
+        "positive-netto-wirkung",
+        "wirkungshaushalt",
+        "blindleistung"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "usageNote": "Als Gegenstück zu Schuldenromantik und Sparmoralismus verwenden.",
       "reviewStatus": "approved",
       "glossaryOrderKey": "goldene wirkungsregel",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen"
     },
     {
       "id": "generationenbilanz",
@@ -375874,19 +376387,36 @@
       "label": "Generationenbilanz",
       "canonicalLabel": "Generationenbilanz",
       "slug": "generationenbilanz",
-      "aliases": ["Generationenbilanz", "intergenerationelle Wirkungsbilanz", "Zukunftsbilanz"],
+      "aliases": [
+        "Generationenbilanz",
+        "intergenerationelle Wirkungsbilanz",
+        "Zukunftsbilanz"
+      ],
       "shortDefinition": "Gesamtbewertung dessen, was eine Generation hinterlässt: Finanzschulden, Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat und Demokratie.",
       "definition": "Generationenbilanz bewertet nicht nur den Schuldenstand, sondern den Zustand der Systeme, die eine Generation hinterlässt: Infrastruktur, Klima, Bildung, Gesundheit, Sozialstaat, Sicherheit, Verwaltung, Vertrauen und Demokratie.",
       "hoverDefinition": "Generationengerechtigkeit ist mehr als Schuldenstand.",
-      "categories": ["wirkungsradar", "haushalt-und-transformation"],
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
       "category": "Bewertungsbegriff",
       "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
-      "relatedTerms": ["finanzschuld", "unterlassungsschuld", "investitionsschuld", "intertemporale-freiheit"],
-      "relatedDocuments": ["schulden-machen-oder-sparen"],
+      "relatedTerms": [
+        "finanzschuld",
+        "unterlassungsschuld",
+        "investitionsschuld",
+        "intertemporale-freiheit"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "usageNote": "Generationengerechtigkeit breit lesen: Finanzschuld plus Systemzustand.",
       "reviewStatus": "approved",
       "glossaryOrderKey": "generationenbilanz",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen"
     },
     {
       "id": "investitionsschuld",
@@ -375894,19 +376424,36 @@
       "label": "Investitionsschuld",
       "canonicalLabel": "Investitionsschuld",
       "slug": "investitionsschuld",
-      "aliases": ["Investitionsschuld", "Investitionsrückstand", "Investitionsrueckstand", "Infrastrukturschuld"],
+      "aliases": [
+        "Investitionsschuld",
+        "Investitionsrückstand",
+        "Investitionsrueckstand",
+        "Infrastrukturschuld"
+      ],
       "shortDefinition": "Rückstand an notwendigen Investitionen in Infrastruktur, Bildung, Klima, Digitalisierung, Gesundheit oder Sicherheit.",
       "definition": "Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden.",
       "hoverDefinition": "Investitionsschuld entsteht, wenn Substanzverzehr als Sparsamkeit erscheint.",
-      "categories": ["wirkungsradar", "haushalt-und-transformation"],
+      "categories": [
+        "wirkungsradar",
+        "haushalt-und-transformation"
+      ],
       "category": "Steuerungsbegriff",
       "sourceSection": "Wirkungsradar Schulden und Zukunftsinvestitionen",
-      "relatedTerms": ["unterlassungsschuld", "generationenbilanz", "wirkungshaushalt"],
-      "relatedDocuments": ["schulden-machen-oder-sparen"],
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "generationenbilanz",
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "usageNote": "Von kreditfinanzierter Investition unterscheiden: Investitionsschuld ist der Rückstand, nicht das Darlehen.",
       "reviewStatus": "approved",
       "glossaryOrderKey": "investitionsschuld",
-      "lastUpdated": "2026-06-03"
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen"
     }
   ]
 }

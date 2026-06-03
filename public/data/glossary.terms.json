@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T20:53:34.864Z",
+  "generatedAt": "2026-06-03T21:10:29.829Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -44901,6 +44901,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Debiasing"
       ],
@@ -46769,6 +46772,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/demokratie-umdeutung/",
@@ -59031,36 +59035,63 @@
       "aliases": [
         "Doppelte Wesentlichkeit",
         "Double Materiality",
-        "doppelte Materialität"
+        "doppelte Materialität",
+        "doppelte Materialitaet",
+        "Outside-In",
+        "Inside-Out",
+        "Impact Materiality",
+        "Financial Materiality",
+        "Wesentlichkeitsanalyse",
+        "Wesentlichkeitsbewertung"
       ],
       "synonyms": [
         "Doppelte Wesentlichkeit",
         "Double Materiality",
-        "doppelte Materialität"
+        "doppelte Materialität",
+        "doppelte Materialitaet",
+        "Outside-In",
+        "Inside-Out",
+        "Impact Materiality",
+        "Financial Materiality",
+        "Wesentlichkeitsanalyse",
+        "Wesentlichkeitsbewertung"
       ],
-      "shortDefinition": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
-      "definition": "Für die WÖk ist doppelte Wesentlichkeit ein wichtiger Anschluss, weil sie Wirkungsperspektive und Risikoperspektive zusammenführt. Die WÖk geht weiter, indem sie bewertete Wirkung in Steuerung und Rückkopplung übersetzt.",
-      "longDefinition": "Für die WÖk ist doppelte Wesentlichkeit ein wichtiger Anschluss, weil sie Wirkungsperspektive und Risikoperspektive zusammenführt. Die WÖk geht weiter, indem sie bewertete Wirkung in Steuerung und Rückkopplung übersetzt.",
-      "woekRelation": "Nicht als vollständige Wirkungsbewertung darstellen.",
-      "statusNote": "Nicht als vollständige Wirkungsbewertung darstellen.",
-      "usageNote": "Nicht als vollständige Wirkungsbewertung darstellen.",
+      "shortDefinition": "Doppelte Wesentlichkeit bedeutet, dass ein Unternehmen Nachhaltigkeit aus zwei Richtungen bewertet: Welche Wirkung hat das Unternehmen auf Menschen, Umwelt und Gesellschaft - und wie wirken ökologische, soziale, politische oder wirtschaftliche Entwicklungen auf das Unternehmen zurück?",
+      "definition": "Doppelte Wesentlichkeit beschreibt die Bewertung von Nachhaltigkeit aus zwei Perspektiven gleichzeitig: Inside-Out beziehungsweise Impact Materiality und Outside-In beziehungsweise Financial Materiality. Sie verbindet Verantwortung nach außen mit finanzieller, strategischer und resilienter Unternehmensrelevanz.",
+      "longDefinition": "Doppelte Wesentlichkeit fragt: Was bewirkt ein Unternehmen in der Welt - und was bewirkt die Welt im Unternehmen? Die Inside-Out-Perspektive betrachtet tatsächliche oder mögliche Auswirkungen des Unternehmens auf Menschen, Umwelt, Gesellschaft und Demokratie. Die Outside-In-Perspektive betrachtet, welche Nachhaltigkeitsthemen auf Geschäftsmodell, Kosten, Umsatz, Finanzierung, Lieferfähigkeit, Reputation, Regulierung, Risiken, Chancen und langfristige Resilienz zurückwirken.",
+      "woekRelation": "Für die Wirkungsökonomie ist doppelte Wesentlichkeit ein wichtiger Zwischenschritt zwischen Nachhaltigkeitsberichterstattung und Wirkungssteuerung. Sie identifiziert wesentliche Themen. Die Wirkungsökonomie geht weiter: Sie fragt, wie Wirkung gemessen, bewertet und in Preise, Steuern, Kapital, Beschaffung, Förderung, Strategie und Entscheidungen rückgekoppelt wird.",
+      "statusNote": "Analyse- und Reportingprinzip, nicht vollständige Wirkungsbewertung und nicht automatisch Wirkungssteuerung.",
+      "usageNote": "Als Brücke zwischen CSRD/ESRS-Berichterstattung, Impact Controlling, Risikomanagement, Resilienz und Wirkungssteuerung verwenden. Wirkung dabei neutral verstehen: Wirkung kann positiv, negativ oder ambivalent sein.",
       "categories": [
         "daten-standards-regularien",
-        "reporting-und-pruefung"
+        "reporting-und-pruefung",
+        "nachhaltigkeit-wirkung-unternehmenssteuerung"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
       "dataStandardsGroup": "Reporting und Prüfung",
       "dataStandardsOrder": 36,
       "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
       "officialSources": [
-        "EFRAG ESRS|https://www.efrag.org/en/sustainability-reporting"
+        "Europäische Kommission: Corporate sustainability reporting / CSRD|https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+        "EFRAG: Materiality Assessment Implementation Guidance|https://www.efrag.org/sites/default/files/sites/webpublishing/SiteAssets/IG%201%20Materiality%20Assessment_final.pdf"
       ],
       "pageUrl": "/begriffe/doppelte-wesentlichkeit/",
       "priority": 37,
@@ -59070,65 +59101,248 @@
       "source": "Reporting und Prüfung",
       "sourceDocument": "CSRD und ESRS",
       "sourceSection": "Daten, Standards und Regularien · Reporting und Prüfung",
-      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
+      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-Out-Wirkung und Outside-In-Finanzrelevanz.",
       "doNotConfuseWith": [
         "einfache Finanzwesentlichkeit",
-        "Wirkungsbewertung"
+        "Wirkungsbewertung",
+        "reine Compliance-Prüfung",
+        "ESG-Marketing",
+        "fertige Wirkungssteuerung"
       ],
-      "relatedDocuments": [],
-      "examples": [],
-      "preferredUsage": "Als Brücke zwischen Berichtswesen und Wirkungsperspektive nutzen.",
-      "deprecatedUsage": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
+      "examples": [
+        "Ein Unternehmen verursacht hohe CO2-Emissionen: Inside-Out betrifft Klima, Gesundheit, Ökosysteme und kommende Generationen; Outside-In betrifft CO2-Preise, Regulierung, Nachfrage, Investorenanforderungen und Reputation.",
+        "Ein Textilunternehmen prüft Wasserverbrauch, Arbeitsbedingungen und Chemikalien in der Lieferkette sowie gleichzeitig Wasserknappheit, Lieferausfälle, Regulierung und Nachfrageveränderungen als Geschäftsrisiken."
+      ],
+      "preferredUsage": "Doppelte Wesentlichkeit als CSRD/ESRS-nahes Analyseprinzip erklären und zugleich zeigen, dass Wirkungsökonomie über Reporting hinaus in Steuerung, Kapital, Risiko, Resilienz und Entscheidungen rückkoppelt.",
+      "deprecatedUsage": [
+        "nur finanziell relevante Nachhaltigkeitsthemen zählen lassen",
+        "Impact-Perspektive mit Image oder Absicht verwechseln",
+        "doppelte Wesentlichkeit als vollständige Wirkungsmessung darstellen"
+      ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "doppelte wesentlichkeit",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-03",
       "related_terms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
       "concept_status": "",
-      "source_links": [],
+      "source_links": [
+        {
+          "source_type": "official",
+          "title": "Europäische Kommission: Corporate sustainability reporting / CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "status": "linked"
+        },
+        {
+          "source_type": "official-guidance",
+          "title": "EFRAG: Materiality Assessment Implementation Guidance",
+          "url": "https://www.efrag.org/sites/default/files/sites/webpublishing/SiteAssets/IG%201%20Materiality%20Assessment_final.pdf",
+          "status": "linked"
+        }
+      ],
       "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "last_reviewed": "2026-06-03",
+      "type": "CSRD-/ESRS-Anschlussbegriff",
+      "begriffstyp": "CSRD-/ESRS-Anschlussbegriff",
       "theme": [
-        "Datenbegriff"
+        "Nachhaltigkeit",
+        "Wirkung",
+        "Unternehmenssteuerung"
       ],
       "themes": [
-        "Datenbegriff"
+        "Nachhaltigkeit",
+        "Wirkung",
+        "Unternehmenssteuerung"
       ],
       "dimensions": [
         "Mensch + Planet + Demokratie"
       ],
       "wirklogik": [
-        "Wirkungsbewertung"
+        "Wirkungsbewertung",
+        "Risikomanagement",
+        "Wirkungsrückkopplung"
       ],
       "applicationFields": [
-        "Politik",
-        "Unternehmen"
+        "Unternehmen",
+        "Berichterstattung",
+        "Risikomanagement",
+        "Strategie"
       ],
       "application_fields": [
-        "Politik",
-        "Unternehmen"
+        "Unternehmen",
+        "Berichterstattung",
+        "Risikomanagement",
+        "Strategie"
       ],
       "sourceField": [
+        "CSRD/ESRS",
         "WÖk-eigener Begriff"
       ],
       "source_field": [
+        "CSRD/ESRS",
         "WÖk-eigener Begriff"
       ],
       "mythos": "",
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "metaTitle": "Doppelte Wesentlichkeit einfach erklärt | Glossar Wirkungsökonomie",
+      "metaDescription": "Doppelte Wesentlichkeit erklärt: Inside-Out, Outside-In, Impact Materiality, Financial Materiality und ihre Bedeutung für Impact Controlling, Risikomanagement, Resilienz und Wirkungsökonomie.",
+      "sourceLinks": [
+        {
+          "source_type": "official",
+          "title": "Europäische Kommission: Corporate sustainability reporting / CSRD",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+          "status": "linked"
+        },
+        {
+          "source_type": "official-guidance",
+          "title": "EFRAG: Materiality Assessment Implementation Guidance",
+          "url": "https://www.efrag.org/sites/default/files/sites/webpublishing/SiteAssets/IG%201%20Materiality%20Assessment_final.pdf",
+          "status": "linked"
+        }
+      ],
+      "relatedMethods": [
+        {
+          "label": "Wirkungscontrolling / Impact Controlling",
+          "url": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/"
+        },
+        {
+          "label": "T-SROI",
+          "url": "/werkzeuge/impact-controlling/t-sroi/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/"
+        }
+      ],
+      "updatedAt": "2026-06-03",
+      "lastReviewed": "2026-06-03",
+      "deepGlossarySections": [
+        {
+          "title": "Die zwei Perspektiven",
+          "body": "Doppelte Wesentlichkeit bewertet Nachhaltigkeit aus zwei Richtungen. Inside-Out oder Impact Materiality fragt nach den tatsächlichen und möglichen Auswirkungen eines Unternehmens auf Menschen, Umwelt, Gesellschaft und Demokratie. Outside-In oder Financial Materiality fragt nach den Auswirkungen von Nachhaltigkeitsthemen auf Geschäftsmodell, Kosten, Umsatz, Finanzierung, Lieferfähigkeit, Reputation, Regulierung, Risiken, Chancen und Resilienz.",
+          "items": [
+            "Inside-Out: Welche Wirkungen erzeugen Produkte, Dienstleistungen, Lieferketten, Standorte, Investitionen und Geschäftsmodelle?",
+            "Outside-In: Welche ökologischen, sozialen, politischen oder wirtschaftlichen Entwicklungen wirken auf das Unternehmen zurück?",
+            "Kurzformel: Was bewirkt das Unternehmen in der Welt - und was bewirkt die Welt im Unternehmen?"
+          ]
+        },
+        {
+          "title": "Inside-Out: Wirkung des Unternehmens auf die Welt",
+          "body": "Bei der Inside-Out-Perspektive geht es um tatsächliche oder mögliche Auswirkungen des Unternehmens. Aus Sicht der Wirkungsökonomie ist Wirkung dabei nicht bloß Absicht, Image oder Bericht, sondern eine tatsächliche Zustandsveränderung. Entscheidend ist nicht, was ein Unternehmen behauptet, sondern was sich durch sein Handeln real verändert.",
+          "items": [
+            "Treibhausgasemissionen, Wasserverbrauch, Bodenqualität und Biodiversität prüfen.",
+            "Menschenrechte, Arbeitsbedingungen, Gesundheit, Sicherheit, Gleichstellung und Teilhabe prüfen.",
+            "Produktwirkungen in Herstellung, Nutzung und Entsorgung einbeziehen.",
+            "Positive, negative und ambivalente Wirkungen für kommende Generationen sichtbar machen."
+          ]
+        },
+        {
+          "title": "Outside-In: Wirkung der Welt auf das Unternehmen",
+          "body": "Bei der Outside-In-Perspektive geht es um Risiken und Chancen für das Unternehmen selbst. Nachhaltigkeit ist damit nicht nur Verantwortung nach außen, sondern auch strategische Überlebensfrage. Ein Unternehmen, das seine Abhängigkeiten, Risiken und Rückwirkungen nicht erkennt, steuert blind.",
+          "items": [
+            "Klimarisiken, Extremwetter, Wasserknappheit, Energiepreise und CO2-Preise berücksichtigen.",
+            "Regulierung, Versicherbarkeit, Kapitalmarktzugang, Kundenerwartungen und Reputation prüfen.",
+            "Abhängigkeiten von fossilen Energien, kritischen Rohstoffen und instabilen Lieferketten sichtbar machen.",
+            "Krisen, geopolitische Spannungen, Fachkräftemangel und soziale Konflikte in die Resilienzbewertung einbeziehen."
+          ]
+        },
+        {
+          "title": "Warum sie wichtig ist",
+          "body": "Doppelte Wesentlichkeit verhindert, dass Nachhaltigkeit nur als Image-, Compliance- oder Investorenthema behandelt wird. Ein Thema kann wesentlich sein, weil es Menschen, Umwelt oder Gesellschaft stark betrifft. Es kann auch wesentlich sein, weil es das Unternehmen finanziell oder strategisch betrifft. Häufig hängen beide Seiten zusammen.",
+          "items": [
+            "Verantwortung und Geschäftsrelevanz werden miteinander verbunden.",
+            "Impact Materiality verhindert, dass nur Finanzrisiken zählen.",
+            "Financial Materiality verhindert, dass Nachhaltigkeit von Strategie und Risikomanagement getrennt bleibt."
+          ]
+        },
+        {
+          "title": "Verbindung zu Impact Controlling",
+          "body": "Doppelte Wesentlichkeit ist der Ausgangspunkt für gutes Impact Controlling. Die Wesentlichkeitsanalyse identifiziert relevante Themen. Impact Controlling übersetzt diese Themen anschließend in Ziele, Kennzahlen, Datenquellen, Maßnahmen, Risiken, Nebenwirkungen und Rückkopplungen in Strategie, Einkauf, Produktentwicklung, Investitionen und Managemententscheidungen.",
+          "items": [
+            "Welche Wirkungsziele werden gesetzt?",
+            "Welche Kennzahlen und Datenquellen messen Fortschritt?",
+            "Welche Risiken und Nebenwirkungen müssen überwacht werden?",
+            "Welche Maßnahmen verbessern die Wirkung tatsächlich?",
+            "Wie werden Ergebnisse in Entscheidungen zurückgeführt?"
+          ]
+        },
+        {
+          "title": "Verbindung zu Risikomanagement",
+          "body": "Doppelte Wesentlichkeit gehört ins Risikomanagement. Outside-In-Themen zeigen externe Entwicklungen, die ein Unternehmen gefährden können. Inside-Out-Themen zeigen negative Wirkungen, die das Unternehmen selbst erzeugt und aus denen wiederum Rechtsrisiken, Reputationsverlust, Finanzierungskosten, Absatzprobleme oder regulatorischer Druck entstehen können.",
+          "items": [
+            "Nachhaltigkeitsmanagement fragt: Welche Wirkung erzeugen wir?",
+            "Risikomanagement fragt: Welche Risiken bedrohen uns?",
+            "Wirkungsökonomie fragt zusätzlich: Wie hängen Wirkungen, Risiken und Anreize systemisch zusammen?"
+          ]
+        },
+        {
+          "title": "Verbindung zu Resilienz",
+          "body": "Resilienz bedeutet Widerstandsfähigkeit und Anpassungsfähigkeit gegenüber Krisen, Schocks und langfristigen Veränderungen. Doppelte Wesentlichkeit stärkt Resilienz, weil sie Abhängigkeiten sichtbar macht: Wasser, Energie, Rohstoffe, Lieferketten, Mitarbeitende, Vertrauen, demokratische und rechtsstaatliche Rahmenbedingungen, Märkte, Infrastruktur und öffentliche Akzeptanz.",
+          "items": [
+            "Kurzfristige Profitabilität reicht nicht, wenn das Geschäftsmodell seine eigenen Grundlagen beschädigt.",
+            "Resilienz entsteht, wenn Geschäftsmodelle Mensch, Planet und Demokratie nicht ausnutzen, sondern stabilisieren."
+          ]
+        },
+        {
+          "title": "Bedeutung für die Wirkungsökonomie",
+          "body": "Für die Wirkungsökonomie ist doppelte Wesentlichkeit ein wichtiger Zwischenschritt, aber nicht das Ziel. Sie macht sichtbar, welche Nachhaltigkeitsthemen relevant sind. Die Wirkungsökonomie fragt weiter: Wie wird Wirkung gemessen, bewertet und in Preise, Steuern, Kapital, Beschaffung, Förderung, Strategie und Entscheidungen rückgekoppelt?",
+          "items": [
+            "Von: Was müssen Unternehmen berichten?",
+            "Hin zu: Wie verändern wir die Anreizstruktur so, dass positive Netto-Wirkung für Mensch, Planet und Demokratie entsteht?",
+            "Doppelte Wesentlichkeit zeigt Relevanz. Wirkungsökonomie baut daraus ein lernendes Steuerungssystem."
+          ]
+        },
+        {
+          "title": "Beispiel Textilunternehmen",
+          "body": "Ein Textilunternehmen lässt Baumwolle in wasserarmen Regionen anbauen und produziert Kleidung in globalen Lieferketten. Inside-Out fragt nach Wasserverbrauch, Böden, Flüssen, Ökosystemen, Löhnen, Arbeitsbedingungen, Chemikalien, Ressourcenverbrauch und Abfall. Outside-In fragt nach Wasserknappheit, Extremwetter, politischen Instabilitäten, Reputationsschäden, neuen Gesetzen und veränderter Nachfrage.",
+          "items": [
+            "WÖk-Perspektive: Die Antworten dürfen nicht nur dokumentiert werden.",
+            "Sie müssen in Produktdesign, Lieferantenauswahl, Preise, Investitionen und Managementziele zurückwirken."
+          ]
+        },
+        {
+          "title": "Häufige Missverständnisse",
+          "body": "Doppelte Wesentlichkeit ist keine juristische Einzelfallberatung und kein Ersatz für Wirkungsmessung. Sie identifiziert wesentliche Themen. Die eigentliche Wirkungsbewertung, Steuerung und Verbesserung braucht zusätzliche Instrumente wie Impact Controlling, Scorecards, Wirkungsdaten, Netto-Wirkungsbewertung und Transformationsmessung.",
+          "items": [
+            "Nicht jedes Nachhaltigkeitsthema ist automatisch gleich wichtig.",
+            "Nicht nur finanziell relevante Themen zählen.",
+            "Impact-Perspektive ist nicht Image, Absicht oder Bericht.",
+            "Reporting wird erst durch Rückkopplung zur Steuerung."
+          ]
+        },
+        {
+          "title": "Formel und Abgrenzung",
+          "body": "Doppelte Wesentlichkeit = Inside-Out + Outside-In. Oder ausführlicher: Welche Wirkung hat unser Handeln auf Mensch, Planet und Demokratie - und welche Auswirkungen haben ökologische, soziale, politische und wirtschaftliche Veränderungen auf unser Geschäftsmodell, unsere Risiken und unsere Resilienz?",
+          "items": [
+            "Doppelte Wesentlichkeit fragt: Was ist wesentlich?",
+            "Wirkungsökonomie fragt: Wie wird das Wesentliche so gemessen, bewertet und rückgekoppelt, dass bessere Entscheidungen entstehen?"
+          ]
+        }
+      ]
     },
     {
       "id": "downcycling",
@@ -83942,6 +84156,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/feindbild/",
@@ -87908,6 +88123,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "finanzschuld",
       "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen",
       "synonyms": [
         "Finanzschuld",
         "Staatsschuld",
@@ -89572,6 +89790,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/frame/",
@@ -89763,6 +89982,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Framekontrolle"
       ],
@@ -94729,6 +94951,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/gegenframe/",
@@ -98178,6 +98401,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "generationenbilanz",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen",
       "synonyms": [
         "Generationenbilanz",
         "intergenerationelle Wirkungsbilanz",
@@ -101490,6 +101716,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Gesichtswahrende Korrektur"
       ],
@@ -110888,6 +111117,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "goldene wirkungsregel",
       "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen",
       "synonyms": [
         "Goldene Wirkungsregel",
         "Wirkungsregel für Kreditfinanzierung",
@@ -134476,6 +134708,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "investitionsschuld",
       "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen",
       "synonyms": [
         "Investitionsschuld",
         "Investitionsrückstand",
@@ -144924,6 +145159,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Kommunikative Souveränität"
       ],
@@ -212075,6 +212313,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/opferumkehr/",
@@ -224465,6 +224704,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/polarisierung/",
@@ -238361,6 +238601,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Psychologischer Wirkungscheck"
       ],
@@ -238399,6 +238642,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Psychologisches Stöckchen"
       ],
@@ -284761,6 +285007,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/sprachlicher-trigger/",
@@ -317151,6 +317398,9 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "unterlassungsschuld",
       "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Schulden und Zukunftsinvestitionen",
       "synonyms": [
         "Unterlassungsschuld",
         "Zukunftsschuld",
@@ -337025,6 +337275,9 @@
       "sourceSection": "Wirkungsradar Psychologie",
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Psychologie",
       "synonyms": [
         "Wertebrücke"
       ],
@@ -344151,6 +344404,7 @@
       ],
       "reviewStatus": "approved",
       "lastUpdated": "2026-06-03",
+      "version": "1.0",
       "statusNote": "",
       "usageNote": "",
       "pageUrl": "/begriffe/wirkungsanalyse-von-sprache/",

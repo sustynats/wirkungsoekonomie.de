@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T20:53:35.071Z",
+  "generatedAt": "2026-06-03T21:10:30.051Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -5905,25 +5905,58 @@
       "label": "Doppelte Wesentlichkeit",
       "slug": "doppelte-wesentlichkeit",
       "url": "/begriffe/doppelte-wesentlichkeit/",
-      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
-      "shortDefinition": "Doppelte Wesentlichkeit betrachtet sowohl Wirkung des Unternehmens auf Umwelt und Menschen als auch finanzielle Risiken und Chancen für das Unternehmen.",
+      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-Out-Wirkung und Outside-In-Finanzrelevanz.",
+      "shortDefinition": "Doppelte Wesentlichkeit bedeutet, dass ein Unternehmen Nachhaltigkeit aus zwei Richtungen bewertet: Welche Wirkung hat das Unternehmen auf Menschen, Umwelt und Gesellschaft - und wie wirken ökologische, soziale, politische oder wirtschaftliche Entwicklungen auf das Unternehmen zurück?",
       "category": "Datenbegriff",
       "synonyms": [
         "Doppelte Wesentlichkeit",
         "Double Materiality",
-        "doppelte Materialität"
+        "doppelte Materialität",
+        "doppelte Materialitaet",
+        "Outside-In",
+        "Inside-Out",
+        "Impact Materiality",
+        "Financial Materiality",
+        "Wesentlichkeitsanalyse",
+        "Wesentlichkeitsbewertung"
       ],
       "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        {
+          "label": "Wirkungscontrolling / Impact Controlling",
+          "url": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/"
+        },
+        {
+          "label": "T-SROI",
+          "url": "/werkzeuge/impact-controlling/t-sroi/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/"
+        }
+      ],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "relatedObjections": []
     },
     "downcycling": {

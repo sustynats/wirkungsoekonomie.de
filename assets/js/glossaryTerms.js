@@ -4238,9 +4238,16 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Doppelte Wesentlichkeit",
       "Double Materiality",
-      "doppelte Materialität"
+      "doppelte Materialität",
+      "doppelte Materialitaet",
+      "Outside-In",
+      "Inside-Out",
+      "Impact Materiality",
+      "Financial Materiality",
+      "Wesentlichkeitsanalyse",
+      "Wesentlichkeitsbewertung"
     ],
-    "definition": "Doppelte Wesentlichkeit verbindet Inside-out-Wirkung und Outside-in-Finanzrisiken.",
+    "definition": "Doppelte Wesentlichkeit verbindet Inside-Out-Wirkung und Outside-In-Finanzrelevanz.",
     "url": "/begriffe/doppelte-wesentlichkeit/",
     "priority": 199,
     "autoLinkAllowed": true,

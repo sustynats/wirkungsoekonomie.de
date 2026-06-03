@@ -1,7 +1,7 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T20:55:02.597Z
-Resolved references: 6486
+Erzeugt: 2026-06-03T21:12:00.214Z
+Resolved references: 6487
 Warnings: 817
 
 ## Warnungen
@@ -1428,15 +1428,16 @@ Warnings: 817
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
-- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 817
 - /wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation/ -> Bilanz, Finanzierung und Finanzkommunikation nach Wirkung (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/investoren-vermieter/ -> Investor:innen & Vermieter:innen | Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/konzept/ -> Konzeptpapier Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
-- /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#woek-main-2026-k004-s001 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
