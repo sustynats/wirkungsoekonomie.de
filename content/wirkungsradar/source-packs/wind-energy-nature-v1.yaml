@@ -24,13 +24,27 @@ sources:
       - "Wald, Arten- und Naturschutz, Standortprüfung."
     warning: "Differenziert lesen; nicht als pauschales Ja oder Nein."
     shows: "Waldstandorte brauchen besonders sorgfältige Untersuchung von Arten und Lebensstätten."
-  bfn_v_gel_windenergie_und_signifikanz:
-    label: "BfN - Vögel, Windenergie und Signifikanz"
-    url: "https://www.bfn.de/voegel-windenergie-und-signifikanz"
+  bfn_schriften_742_schutz_von_flederm_usen_beim_ausbau_der_windenergie:
+    label: "BfN-Schriften 742 - Schutz von Fledermäusen beim Ausbau der Windenergie"
+    url: "https://www.natur-und-erneuerbare.de/fileadmin/Daten/Download_Dokumente/01_Skripte/BfN-Schriften-742-Schutz-Fledermaeuse-Ausbau-Windenergie-2025.pdf"
     use_for:
-      - "Vogelschutz und Minderungsmaßnahmen."
-    warning: "Wirksamkeit und Eignung bleiben standortabhängig."
-    shows: "Minderungsmaßnahmen wie Antikollisionssysteme und Abschaltungen werden fachlich eingeordnet."
+      - "Fledermausrisiken, Abschaltungen, Monitoring und Standortprüfung."
+    warning: "PDF; konkrete Länderregelungen und Standortdaten zusätzlich prüfen."
+    shows: "Fachliche Einordnung von Fledermausschutz, Konfliktrisiken und Schutzmaßnahmen beim Windenergieausbau."
+  kne_studien_zu_windenergie_biodiversit_t_v_geln_und_flederm_usen:
+    label: "KNE - Studien zu Windenergie, Biodiversität, Vögeln und Fledermäusen"
+    url: "https://www.naturschutz-energiewende.de/fragenundantworten/277-deutsche-studien-windenergie-biodiversitaet-voegel-fledermaeuse/"
+    use_for:
+      - "Artenschutz, Studienlage und Konflikteinordnung."
+    warning: "Studienüberblick; einzelne Arten und Standorte separat prüfen."
+    shows: "Überblick über deutsche Studien zu Windenergie, Biodiversität, Vögeln und Fledermäusen."
+  fachagentur_wind_solar_natur_und_artenschutz:
+    label: "Fachagentur Wind & Solar - Natur- und Artenschutz"
+    url: "https://www.fachagentur-wind-solar.de/wind/natur-und-artenschutz"
+    use_for:
+      - "Planung, Genehmigung, Artenschutz und Kommunikation."
+    warning: "Praxisportal; Rechtsstand und Landesvorgaben prüfen."
+    shows: "Praxisnahe Übersicht zu Natur- und Artenschutz bei Windenergieprojekten."
   uba_r_ckbau_recycling_repowering:
     label: "UBA - Rückbau, Recycling, Repowering"
     url: "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen-rueckbau-recycling-repowering"
@@ -38,76 +52,27 @@ sources:
       - "Fundamente, Beton, Stahl, Rotorblätter und Produktverantwortung."
     warning: "Rotorblätter und Verbundstoffe bleiben besondere Herausforderung."
     shows: "Rückbau, Recycling und Repowering von Windenergieanlagen."
-  uba_rotorblattaufbereitung_und_recycling:
-    label: "UBA - Rotorblattaufbereitung und Recycling"
-    url: "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen/rotorblattaufbereitung-recycling-von"
+  uba_gute_praxis_r_ckbau_und_recycling_von_windenergieanlagen:
+    label: "UBA - Gute Praxis Rückbau und Recycling von Windenergieanlagen"
+    url: "https://www.umweltbundesamt.de/system/files/medien/479/publikationen/texte_48-2023_entwicklung_eines_konzepts_und_massnahmen_zur_sicherung_einer_guten_praxis_bei_rueckbau_und_recycling_von_windenergieanlagen.pdf"
     use_for:
-      - "Rotorblatt-Recycling, Verbundmaterialien und Verwertungspfade."
-    warning: "Nicht auf die gesamte Anlage übertragen; Stahl, Beton und Metalle separat bilanzieren."
-    shows: "Rotorblätter aus faserverstärkten Kunststoffen sind eine besondere Recyclingfraktion."
-  fachagentur_wind_solar_r_ckbau_und_recycling:
-    label: "Fachagentur Wind & Solar - Rückbau und Recycling"
-    url: "https://www.fachagentur-wind-solar.de/wind/rueckbau-und-recycling"
-    use_for:
-      - "Rückbaupflicht, Recyclingpraxis und Repowering-Kommunikation."
-    warning: "Projekt- und Rechtsstand prüfen."
-    shows: "Praxisnahe Übersicht zu Rückbau, Recycling und Weiterbetrieb."
-  eu_kommission_fluorinated_greenhouse_gases:
-    label: "EU-Kommission - Fluorinated greenhouse gases"
-    url: "https://climate.ec.europa.eu/eu-action/fluorinated-greenhouse-gases/about-f-gases_en"
-    use_for:
-      - "SF₆/F-Gase, Klimawirkung und Regulierungsrahmen."
-    warning: "Allgemeine F-Gas-Quelle; konkrete Schaltanlagen separat prüfen."
-    shows: "SF₆ gehört zu den fluorierten Treibhausgasen und unterliegt europäischer Regulierung."
-  uba_verbot_des_klimasch_dlichen_sf:
-    label: "UBA - Verbot des klimaschädlichen SF₆"
-    url: "https://www.umweltbundesamt.de/themen/verbot-des-klimaschaedlichen-sf6-in"
-    use_for:
-      - "SF₆ in Schaltanlagen, Alternativen und Regulierung."
-    warning: "Nicht als Rotorblatt- oder Gesamt-Windkraftargument verwenden."
-    shows: "Einordnung des SF₆-Problems bei Mittelspannungsschaltanlagen."
-  eu_verordnung_2024_573:
-    label: "EU-Verordnung 2024/573"
-    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202400573"
-    use_for:
-      - "Regulatorischer Pfad für F-Gase und SF₆."
-    warning: "PDF; Rechtsänderungen und Anwendungstermine prüfen."
-    shows: "Aktueller EU-Rechtsrahmen zu fluorierten Treibhausgasen."
-  windeurope_circularity:
-    label: "WindEurope - Circularity"
-    url: "https://windeurope.org/about-wind/circularity/"
-    use_for:
-      - "Circularity, Recycling und Designpfade."
-    warning: "Branchenquelle; mit öffentlichen Quellen gegenlesen."
-    shows: "Branchenüberblick zur Kreislaufführung von Windenergieanlagen."
-  windeurope_decommissioned_blades:
-    label: "WindEurope - Decommissioned blades"
-    url: "https://windeurope.org/news/where-do-wind-turbine-blades-go-when-they-are-decommissioned/"
-    use_for:
-      - "Rotorblatt-End-of-Life und Verwertungswege."
-    warning: "Branchenquelle; nationale Entsorgungsregeln separat prüfen."
-    shows: "Einordnung, wohin Rotorblätter nach Betriebsende gehen können."
-  siemens_gamesa_recyclableblade:
-    label: "Siemens Gamesa - RecyclableBlade"
-    url: "https://www.siemensgamesa.com/global/en/home/explore/journal/recyclable-blade.html"
-    use_for:
-      - "Technologische Entwicklung bei Rotorblättern."
-    warning: "Herstellerquelle; kein Beleg für alle Anlagen."
-    shows: "Beispiel für recyclebare Rotorblatt-Designs."
-  vestas_turn_wind_recyclable:
-    label: "Vestas - Turn wind recyclable"
-    url: "https://www.vestas.com/en/energy-solutions/development/turnwindrecyclable"
-    use_for:
-      - "Recyclingverfahren und Produktentwicklung."
-    warning: "Herstellerquelle; Umsetzung und Skalierung prüfen."
-    shows: "Industrieprogramm zur Kreislaufführung von Rotorblättern."
+      - "Rückbaupflicht, Fundamentrückbau, Beton/Stahl-Trennung und Recyclingstandards."
+    warning: "PDF; projektspezifische Genehmigungsauflagen bleiben entscheidend."
+    shows: "Konzept und Maßnahmen zur Sicherung guter Praxis bei Rückbau und Recycling von Windenergieanlagen."
   uba_infraschall_von_windenergieanlagen:
     label: "UBA - Infraschall von Windenergieanlagen"
-    url: "https://www.umweltbundesamt.de/system/files/medien/4031/publikationen/umid_01-2021-infraschall.pdf"
+    url: "https://www.umweltbundesamt.de/system/files/medien/2380/dokumente/umid_01-2021-infraschall1.pdf"
     use_for:
-      - "Gesundheitsframe und Bürgerkommunikation."
-    warning: "Keine pauschale Einzelfallprüfung; Langzeitfragen weiter beobachten."
-    shows: "Einordnung tieffrequenten Schalls und Infraschalls."
+      - "Gesundheitsframe, Evidenzlage und Bürgerkommunikation."
+    warning: "Beschwerden ernst nehmen; hörbaren Schall, Schatten, Stress und Nocebo sauber trennen."
+    shows: "Einordnung tieffrequenten Schalls und Infraschalls bei Windenergieanlagen."
+  uba_infraschall_einfach_erkl_rt:
+    label: "UBA - Infraschall einfach erklärt"
+    url: "https://www.umweltbundesamt.de/publikationen/infraschall-einfach-erklaert"
+    use_for:
+      - "Einordnung von Sorgen, Messbarkeit und Kommunikation."
+    warning: "Grundlagenquelle; konkrete Immissionswerte standortbezogen prüfen."
+    shows: "Allgemein verständliche Erklärung zu Infraschall, Quellen und Einordnung."
   fraunhofer_ise_stromgestehungskosten_2024:
     label: "Fraunhofer ISE - Stromgestehungskosten 2024"
     url: "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/studie-stromgestehungskosten-erneuerbare-energien.html"
@@ -117,7 +82,7 @@ sources:
     shows: "Kostenvergleich verschiedener Stromerzeugungstechnologien."
   uba_emissionsbilanz_erneuerbarer_energietr_ger:
     label: "UBA - Emissionsbilanz erneuerbarer Energieträger"
-    url: "https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/03_2025_cc_emissionsbilanz_erneuerbarer_energien_2023.pdf"
+    url: "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/03_2025_cc_emissionsbilanz_erneuerbarer_energien_2023.pdf"
     use_for:
       - "Systemnutzen und fossile Verdrängung."
     warning: "Jahresbezogene Bilanz; Standortwirkung separat prüfen."
