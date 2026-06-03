@@ -817,13 +817,75 @@ function renderThemesIndex() {
   return pageShell({ title: "Wirkungsradar Themen | Wirkungsökonomie", description: "Thematische Einstiege in den Wirkungsradar: Demokratie, Medien, Klima, Energie, Wirtschaft und internationale Kooperation.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/themen/", base: "../../", main });
 }
 
+const climateLiveSlugs = [
+  "klima-hat-sich-schon-immer-veraendert",
+  "co2-ist-nur-ein-spurengas",
+  "deutschland-nur-zwei-prozent",
+  "klimaschutz-ist-oekodiktatur",
+  "energiewende-gescheitert",
+  "windraeder-zerstoeren-natur",
+  "e-autos-schlimmer-als-verbrenner",
+  "batterien-sind-nicht-recyclebar",
+  "kernenergie-einfache-loesung",
+  "fusion-loest-das-problem",
+  "klimaschutz-deindustrialisiert-deutschland",
+];
+
+function textFromHtml(html) {
+  return String(html || "")
+    .replace(/<script[\s\S]*?<\/script>/g, " ")
+    .replace(/<style[\s\S]*?<\/style>/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractFirst(html, pattern, fallback = "") {
+  const match = String(html || "").match(pattern);
+  return match ? textFromHtml(match[1]) : fallback;
+}
+
+function climateLiveCards() {
+  return climateLiveSlugs
+    .map((slug) => {
+      const file = path.join("wirkungsradar", "live", slug, "index.html");
+      if (!fs.existsSync(file)) return null;
+      const html = fs.readFileSync(file, "utf8");
+      return {
+        slug,
+        title: extractFirst(html, /<h1[^>]*class="hero-title"[^>]*>([\s\S]*?)<\/h1>/, slug),
+        kicker: extractFirst(html, /<article class="radar-summary-item"[^>]*>\s*<p class="radar-summary-label">Kurzurteil<\/p>\s*<p class="radar-summary-value">([\s\S]*?)<\/p>/, "Klima & Energie"),
+        tenSeconds: extractFirst(html, /<span class="radar-answer-time">10 Sekunden<\/span>[\s\S]*?<p>„([\s\S]*?)“<\/p>/, ""),
+      };
+    })
+    .filter(Boolean);
+}
+
+function liveCardGrid(items) {
+  return `<div class="card-grid">${items.map((item) => `<a class="card text-link-card radar-live-card" href="${escapeHtml(item.slug)}/"><p class="card-kicker">${escapeHtml(item.kicker)}</p><h3 class="card-title">${escapeHtml(item.title)}</h3><p class="card-text"><strong>10 Sekunden:</strong> ${escapeHtml(item.tenSeconds)}</p></a>`).join("")}</div>`;
+}
+
 function renderLiveIndex() {
+  const climateCards = climateLiveCards();
+  const democracyCards = claims.map((claim) => ({
+    slug: claim.slug,
+    title: claim.title,
+    kicker: claim.narrativeFamilies.join(" / "),
+    tenSeconds: claim.answers.ten_seconds,
+  }));
+  const totalCards = climateCards.length + democracyCards.length;
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Live</nav><p class="hero-kicker">Für TikTok, Panels, Kommentarspalten und Moderation</p><h1 class="hero-title">Wirkungsradar Live</h1><p class="hero-subtitle">Kurze Antworten für Momente, in denen nicht die längste Analyse gewinnt, sondern der ruhigste Rahmen.</p><p class="radar-abstract"><strong>Abstract:</strong> Die Live-Karten übersetzen Wirkungschecks in kurze, sprechbare Antworten. Sie benennen wahren Kern, Denkfehler, Narrativ, Rückfrage und Wirkungspfad.</p><p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Vertrauensniveau: hoch</span></p></div></section>
-      ${summaryGrid([["Format", "10 Sekunden, 30 Sekunden und 2 Minuten.", "neutral"], ["Start", "Erst wahren Kern nennen, dann Denkfehler zeigen.", "positive"], ["Frame", "Narrativ benennen, ohne es zu übernehmen.", "warning"], ["Risiko", "Wirkungsrisiko zeigen, wenn man danach handelt.", "critical"], ["Antwort", "Zur demokratisch prüfbaren Frage zurückführen.", "positive"], ["Schema", "Ich ordne das kurz ein.", "neutral"]], "Live Summary")}
+      ${summaryGrid([["Live-Karten", `${totalCards} Karten aus Klima, Energie, Demokratie und Öffentlichkeit.`, "positive"], ["Format", "10 Sekunden, 30 Sekunden und 2 Minuten.", "neutral"], ["Start", "Erst wahren Kern nennen, dann Denkfehler zeigen.", "positive"], ["Frame", "Narrativ benennen, ohne es zu übernehmen.", "warning"], ["Risiko", "Wirkungsrisiko zeigen, wenn man danach handelt.", "critical"], ["Antwort", "Zur demokratisch prüfbaren Frage zurückführen.", "positive"]], "Live Summary")}
       <section class="section section-soft stoeckchen-module" id="stoeckchen-erkennung"><div><div class="section-header"><p class="hero-kicker">Stöckchen-Erkennung</p><h2>Woran erkenne ich ein demokratiebezogenes Stöckchen?</h2></div>${summaryGrid([["Pauschale Delegitimierung", "Alle Medien, Wissenschaftler:innen, Politiker:innen oder Institutionen werden als korrupt dargestellt.", "warning"], ["Falsche Opferrolle", "Kritik, Moderation oder Faktencheck wird als Unterdrückung geframt.", "warning"], ["Verschwörungslogik", "Komplexe Prozesse werden als geheimer Plan gedeutet.", "critical"], ["Frame-Frage", "Die Frage enthält bereits eine unbelegte Behauptung.", "critical"], ["Endlos-Ausweichen", "Sobald ein Punkt geklärt ist, wird zum nächsten Vorwurf gewechselt.", "warning"], ["Host-Satz", "Ich beantworte das, aber ich übernehme nicht den Frame.", "positive"]], "Stöckchen-Erkennung", "stoeckchen-warning-grid")}</div></section>
       ${topicSubnav("Live", "")}
-      <section class="section" id="startliste"><div><div class="section-header"><p class="hero-kicker">Demokratie &amp; Öffentlichkeit</p><h2>Die zehn neuen Live-Karten.</h2></div><div class="card-grid">${claims.map((claim) => `<a class="card text-link-card radar-live-card" href="${claim.slug}/"><p class="card-kicker">${escapeHtml(claim.narrativeFamilies.join(" / "))}</p><h3 class="card-title">${escapeHtml(claim.title)}</h3><p class="card-text"><strong>10 Sekunden:</strong> ${escapeHtml(claim.answers.ten_seconds)}</p></a>`).join("")}</div></div></section>
+      <section class="section" id="startliste"><div><div class="section-header"><p class="hero-kicker">Alle Live-Karten</p><h2>${totalCards} kurze Antworten im Wirkungsradar.</h2></div></div></section>
+      <section class="section section-soft" id="klima-energie-live"><div><div class="section-header"><p class="hero-kicker">Klima &amp; Energie</p><h2>${climateCards.length} Live-Karten.</h2></div>${liveCardGrid(climateCards)}</div></section>
+      <section class="section" id="demokratie-oeffentlichkeit-live"><div><div class="section-header"><p class="hero-kicker">Demokratie &amp; Öffentlichkeit</p><h2>${democracyCards.length} Live-Karten.</h2></div>${liveCardGrid(democracyCards)}</div></section>
       ${responseMatrix()}
     </main>`;
   return pageShell({ title: "Wirkungsradar Live - Antworten für Hosts und Creator:innen | Wirkungsökonomie", description: "Live-Antworten des Wirkungsradars: 10 Sekunden, 30 Sekunden, 2 Minuten, Rückfragen und Deeskalation für öffentliche Debatten.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/live/", base: "../../", main });
