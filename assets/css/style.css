@@ -14177,6 +14177,86 @@ a.principle-card:hover,
   border-left: 4px solid rgba(47, 125, 92, 0.55);
 }
 
+.radar-answer-accordion {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.radar-answer-item {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.radar-answer-item summary {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.85rem 1rem;
+  color: var(--navy);
+  cursor: pointer;
+  list-style: none;
+}
+
+.radar-answer-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.radar-answer-item summary::after {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border: 1px solid rgba(47, 125, 92, 0.35);
+  border-radius: 50%;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.radar-answer-item[open] summary::after {
+  content: "-";
+}
+
+.radar-answer-item summary:focus-visible {
+  outline: 3px solid rgba(47, 125, 92, 0.35);
+  outline-offset: -3px;
+}
+
+.radar-answer-time {
+  font-weight: 800;
+}
+
+.radar-answer-label {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.radar-answer-item p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+}
+
+@media (max-width: 560px) {
+  .radar-answer-item summary {
+    grid-template-columns: 1fr auto;
+    gap: 0.3rem 0.75rem;
+  }
+
+  .radar-answer-label {
+    grid-column: 1;
+  }
+
+  .radar-answer-item summary::after {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+}
+
 .radar-method-body {
   max-width: 82ch;
 }
