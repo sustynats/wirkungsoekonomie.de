@@ -14609,6 +14609,84 @@ a.principle-card:hover,
   cursor: default;
 }
 
+.radar-priority-grid,
+.radar-rule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.radar-topic-map-grid {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.radar-topic-card {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 2.4vw, 1.35rem);
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-left: 4px solid rgba(47, 125, 92, 0.7);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.radar-topic-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+  line-height: 1.05;
+}
+
+.radar-topic-card p {
+  margin: 0;
+}
+
+.radar-topic-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.radar-topic-columns > div {
+  padding: 0.85rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.62);
+}
+
+.radar-topic-columns h4 {
+  margin: 0 0 0.55rem;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.radar-topic-columns ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.radar-topic-columns li {
+  margin: 0.25rem 0;
+  line-height: 1.42;
+}
+
+.btn.is-disabled,
+.btn.is-disabled:hover,
+.btn.is-disabled:focus-visible {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(15, 23, 42, 0.04);
+  color: var(--muted);
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
 .radar-search-section {
   padding-top: clamp(1rem, 2.6vw, 2rem);
 }
@@ -14959,6 +15037,12 @@ a.principle-card:hover,
     grid-template-columns: 1fr;
   }
 
+  .radar-priority-grid,
+  .radar-rule-grid,
+  .radar-topic-columns {
+    grid-template-columns: 1fr;
+  }
+
   .radar-search-results {
     grid-template-columns: 1fr;
   }
@@ -14985,6 +15069,11 @@ a.principle-card:hover,
 @media (min-width: 561px) and (max-width: 940px) {
   .radar-summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .radar-priority-grid,
+  .radar-rule-grid {
+    grid-template-columns: 1fr;
   }
 }
 
