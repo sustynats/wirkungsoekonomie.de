@@ -14148,10 +14148,11 @@ a.principle-card:hover,
 }
 
 .radar-hero-visual img {
+  display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: 1659 / 948;
+  object-fit: contain;
 }
 
 .radar-page-hero .hero-grid {
