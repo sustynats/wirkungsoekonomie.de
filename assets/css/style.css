@@ -14859,6 +14859,114 @@ a.principle-card:hover,
   line-height: 1.42;
 }
 
+.deep-dive-hero .hero-title {
+  max-width: 14ch;
+}
+
+.deep-dive-summary-grid .radar-summary-item {
+  min-height: 10.75rem;
+}
+
+.deep-dive-live-link .card {
+  width: min(100% - (2 * var(--space-gutter)), var(--container));
+  margin-inline: auto;
+  border-left: 4px solid var(--green);
+}
+
+.deep-dive-body {
+  display: block;
+}
+
+.deep-dive-body .section {
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom-color: rgba(11, 16, 32, 0.07);
+}
+
+.deep-dive-body .section > * {
+  width: 100%;
+}
+
+.deep-dive-section {
+  scroll-margin-top: 6rem;
+}
+
+.deep-dive-text-section {
+  max-width: 82ch;
+}
+
+.deep-dive-text-section h2 {
+  margin-top: 0;
+}
+
+.deep-dive-text-section p,
+.deep-dive-text-section li {
+  font-size: 1.05rem;
+  line-height: 1.68;
+}
+
+.deep-dive-definition-grid,
+.deep-dive-consequence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.deep-dive-definition-grid .card,
+.deep-dive-consequence-grid .card,
+.deep-dive-source-mini-grid .card,
+.deep-dive-source-grid .card,
+.deep-dive-export-grid .card,
+.deep-dive-order-grid .card {
+  display: grid;
+  align-content: start;
+}
+
+.deep-dive-definition-grid .card[data-tone="positive"] {
+  border-top: 4px solid var(--green);
+}
+
+.deep-dive-definition-grid .card[data-tone="warning"] {
+  border-top: 4px solid var(--gold);
+}
+
+.deep-dive-definition-grid .card[data-tone="critical"] {
+  border-top: 4px solid var(--coral);
+}
+
+.deep-dive-wide-card {
+  grid-column: 1 / -1;
+}
+
+.deep-dive-inline-summary {
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
+.deep-dive-source-mini-grid,
+.deep-dive-source-grid {
+  margin-top: 1rem;
+}
+
+.deep-dive-source-mini-grid .card-title,
+.deep-dive-source-grid .card-title {
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.42;
+}
+
+.deep-dive-order-grid .card {
+  border-left: 4px solid rgba(47, 125, 92, 0.4);
+}
+
+.deep-dive-consequence-grid .card {
+  border-top: 4px solid rgba(199, 91, 74, 0.38);
+}
+
+.deep-dive-standard-box .card {
+  border-left: 4px solid var(--gold);
+  background: rgba(255, 252, 245, 0.9);
+}
+
 .stoeckchen-module .section-header {
   margin-bottom: 1rem;
 }
@@ -14888,6 +14996,11 @@ a.principle-card:hover,
   .climate-debate-center {
     grid-row: auto;
     min-height: 6rem;
+  }
+
+  .deep-dive-definition-grid,
+  .deep-dive-consequence-grid {
+    grid-template-columns: 1fr;
   }
 
   .fact-status-badge .clean-list {

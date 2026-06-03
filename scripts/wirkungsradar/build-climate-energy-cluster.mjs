@@ -123,6 +123,68 @@ const sourcePack = {
   ],
 };
 
+const deepDiveSourcePack = {
+  id: "deep-dive-climate-energy-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  sources: {
+    ipcc_ar6_headline: {
+      label: "IPCC AR6 Synthesis Report - Headline Statements",
+      url: "https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/",
+      type: "wissenschaft",
+      relevance: ["Klimawissenschaft", "Risiken je Erwärmungsgrad", "menschliche Ursache"],
+    },
+    ipcc_wg1_headline: {
+      label: "IPCC AR6 WGI - Headline Statements",
+      url: "https://www.ipcc.ch/report/ar6/wg1/resources/spm-headline-statements/",
+      type: "wissenschaft",
+      relevance: ["menschlicher Einfluss", "Atmosphäre, Ozean, Land"],
+    },
+    uba_emissions_germany: {
+      label: "Umweltbundesamt - Treibhausgasemissionen Deutschland",
+      url: "https://www.umweltbundesamt.de/daten/umweltzustand-trends/klima/treibhausgas-emissionen-in-deutschland",
+      type: "amtlich",
+      relevance: ["Deutschland Emissionen", "Klimaziele", "Sektortrends"],
+    },
+    fraunhofer_ise_energy_charts: {
+      label: "Fraunhofer ISE / Energy-Charts",
+      url: "https://www.energy-charts.info/",
+      type: "datenbank",
+      relevance: ["Strommix", "erneuerbare Energien", "Energiewende"],
+    },
+    icct_lca_ev_2025: {
+      label: "ICCT - Life-cycle greenhouse gas emissions from passenger cars in Europe, 2025",
+      url: "https://theicct.org/publication/electric-cars-life-cycle-analysis-emissions-europe-jul25/",
+      type: "wissenschaft",
+      relevance: ["E-Auto Lebenszyklus", "Verbrennervergleich", "Batterie und Strommix"],
+    },
+    base_endlager: {
+      label: "BASE - Endlagersuche",
+      url: "https://www.base.bund.de/de/endlager/endlagersuche/endlagersuche_inhalt.html",
+      type: "amtlich",
+      relevance: ["Kernenergie", "Endlagerung", "radioaktive Abfälle"],
+    },
+    iea_nuclear: {
+      label: "IEA - The Path to a New Era for Nuclear Energy",
+      url: "https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/executive-summary",
+      type: "wissenschaft_daten",
+      relevance: ["Kernenergie", "Kosten", "Bauzeiten", "Energiesicherheit"],
+    },
+    iter: {
+      label: "ITER - In a Few Lines",
+      url: "https://www.iter.org/few-lines",
+      type: "wissenschaft_technik",
+      relevance: ["Fusion", "Fusionsleistung", "Forschungsstatus"],
+    },
+    eurofusion_demo: {
+      label: "EUROfusion - DEMO",
+      url: "https://euro-fusion.org/programme/demo/",
+      type: "wissenschaft_technik",
+      relevance: ["Fusionskraftwerke", "Demonstrationskraftwerk", "Technologiereife"],
+    },
+  },
+};
+
 const mapping = {
   id: "climate-energy-mapping-v1",
   last_updated: UPDATED_AT,
@@ -962,6 +1024,291 @@ const answerExpansions = {
   },
 };
 
+const deepDiveSlugs = [
+  "deutschland-nur-zwei-prozent",
+  "energiewende-gescheitert",
+  "e-autos-schlimmer-als-verbrenner",
+  "kernenergie-einfache-loesung",
+  "fusion-loest-das-problem",
+];
+
+const deepDiveDetails = {
+  "deutschland-nur-zwei-prozent": {
+    title: "„Deutschland ist nur für 2 % verantwortlich“",
+    subtitle: "Wahrer Kern, falsche Schlussfolgerung",
+    confidence: "hoch",
+    readingTime: "12 Minuten",
+    leadQuestion: "Welche Hebelwirkung können wir trotz begrenztem Anteil erzeugen?",
+    claimAnatomy: {
+      original: "Deutschland ist nur für 2 % verantwortlich.",
+      extended: "Deutschland ist nur für 2 % verantwortlich, also bringt Klimaschutz hier nichts.",
+      trueCore: "Deutschland hat nur einen begrenzten Anteil an den aktuellen globalen Jahresemissionen.",
+      missingContext:
+        "Aktueller Anteil ist nicht gleich historische Verantwortung, Pro-Kopf-Verantwortung, technologische Hebelwirkung oder politische Systemwirkung.",
+      falseConclusion: "Aus einem kleineren Anteil folgt nicht, dass Handeln wirkungslos ist.",
+    },
+    trueText:
+      "Deutschland löst die Klimakrise nicht allein. Klimaschutz ist ein globales Kooperationsproblem, und ohne große Emittenten wie China, USA, Indien, EU und weitere Staaten kann das Ziel nicht erreicht werden.",
+    missingItems: [
+      "Historische Verantwortung: Industrieländer haben über lange Zeiträume zur CO₂-Konzentration beigetragen.",
+      "Pro-Kopf-Perspektive: Ein Land kann bei Gesamtmenge kleiner wirken, aber pro Kopf überdurchschnittlich emittieren.",
+      "Technologie- und Markthebel: Standards, Maschinenbau, Netze, Speicher, Verfahren und Regulierung wirken über Grenzen hinaus.",
+      "EU-Hebel: Deutschland wirkt als Teil eines großen Binnenmarkts, der internationale Standards prägen kann.",
+      "Unterlassungswirkung: Nicht-Handeln verzögert Innovation, Infrastruktur, Planungssicherheit und Glaubwürdigkeit.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty:
+        "Nationale Anteile variieren je nach Datenquelle, Jahr, Emissionsart und Bilanzgrenze. Die Schlussfolgerung der Wirkungslosigkeit folgt daraus aber logisch nicht.",
+      sourceKeys: ["uba_emissions_germany", "ipcc_ar6_headline"],
+    },
+    wirkstoff: {
+      label: "Zahlenargument als Ohnmachtsimpuls",
+      description: "Ein scheinbar nüchterner Prozentwert wird genutzt, um Handlungsfähigkeit zu senken.",
+      mechanism: "Der Anteil eines Landes wird mit Wirkungslosigkeit verwechselt.",
+      resonance: ["Kostenangst", "Veränderungsmüdigkeit", "Entlastungsbedürfnis", "Misstrauen gegen Klimapolitik"],
+    },
+    narrative: {
+      message: "Wir können sowieso nichts ändern.",
+      emotional: "Entlastung und Abwehr von Veränderungsdruck.",
+      political: "Klimapolitik erscheint nutzlos oder überzogen.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen halten Klimaschutz für nutzlos."],
+      ["Wirkung 2. Ordnung", "Politische Unterstützung für Energiewende, Infrastruktur und Industrieumbau sinkt."],
+      ["Wirkung 3. Ordnung", "Fossile Pfadabhängigkeiten, alte Geschäftsmodelle und Verzögerungslogiken bleiben länger bestehen."],
+    ],
+    falseActions: [
+      ["Politik", "Maßnahmen werden verschoben, abgeschwächt oder symbolisch."],
+      ["Wirtschaft", "Investitionssicherheit für klimafreundliche Technologien sinkt."],
+      ["Infrastruktur", "Netze, Speicher, Ladepunkte, Gebäudesanierung und Industrieumbau kommen langsamer voran."],
+      ["Demokratie", "Ohnmacht und Zynismus wachsen; kollektive Problemlösung wirkt sinnlos."],
+      ["Planet", "Emissionen sinken langsamer, Klimafolgekosten steigen."],
+    ],
+    solutionLead: "Die wirkungsökonomische Antwort lautet nicht: Deutschland rettet allein das Klima. Sie lautet: Wirkung entsteht über Hebel.",
+    clipHook: "Stimmt der 2-Prozent-Satz? Vielleicht. Aber die Schlussfolgerung ist trotzdem falsch.",
+    caption: "Wahrer Kern, falsche Folgerung: Klimawirkung entsteht über Hebel, nicht nur über Prozentanteile.",
+  },
+  "energiewende-gescheitert": {
+    title: "„Die Energiewende ist gescheitert“",
+    subtitle: "Scheiternsframe statt Engpassanalyse",
+    confidence: "hoch",
+    readingTime: "14 Minuten",
+    leadQuestion: "Welcher Engpass begrenzt die nächste positive Netto-Wirkung?",
+    claimAnatomy: {
+      original: "Die Energiewende ist gescheitert.",
+      extended: "Die Energiewende ist gescheitert, deshalb sollten wir den Kurs stoppen oder zurückdrehen.",
+      trueCore: "Es gibt reale Probleme bei Tempo, Kosten, Infrastruktur, Netzen, Speichern, Wärme, Verkehr und Industrie.",
+      missingContext: "Ein Systemumbau kann Engpässe haben, ohne gescheitert zu sein.",
+      falseConclusion: "Aus Problemen folgt nicht automatisch, dass der gesamte Transformationspfad falsch ist.",
+    },
+    trueText:
+      "Netzausbau, Speicher, Flexibilität, Genehmigungen, Wärmewende, Verkehr, Preise, Industriepolitik und Akzeptanz sind reale Engpässe.",
+    missingItems: [
+      "Der Stromsektor hat bereits deutliche Transformation erlebt.",
+      "Engpässe sind Steuerungsinformationen, kein Beweis des Totalversagens.",
+      "Fossile Alternativen haben Kosten, Importabhängigkeiten, Gesundheitsrisiken und Folgeschäden.",
+      "Die relevante Frage ist nicht Energiewende ja oder nein, sondern welche Engpässe zuerst gelöst werden.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty: "Mittel bei zukünftigen Strompreisen, Speicherpfaden, Industrieeffekten und Importabhängigkeiten.",
+      sourceKeys: ["fraunhofer_ise_energy_charts", "uba_emissions_germany"],
+    },
+    wirkstoff: {
+      label: "Scheiternsframe",
+      description: "Sichtbare Engpässe werden in ein Totalurteil über einen komplexen Systemumbau verwandelt.",
+      mechanism: "Komplexität wird auf gelungen oder gescheitert reduziert.",
+      resonance: ["Frust über Kosten", "Misstrauen gegen Politik", "Infrastrukturmüdigkeit", "Angst vor Kontrollverlust"],
+    },
+    narrative: {
+      message: "Der ganze Kurs ist falsch.",
+      emotional: "Frust wird in Abbruchlogik übersetzt.",
+      political: "Investitionen und Transformation verlieren Legitimität.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen übernehmen den Eindruck, der Umbau sei grundsätzlich gescheitert."],
+      ["Wirkung 2. Ordnung", "Politischer Druck gegen Netze, Speicher, Wind, Solar, Wärmepumpen oder Ladeinfrastruktur steigt."],
+      ["Wirkung 3. Ordnung", "Die Entscheidungsstruktur kippt von lernender Transformation zurück in fossile Reparaturlogik."],
+    ],
+    falseActions: [
+      ["Stromsystem", "Netz-, Speicher- und Flexibilitätsausbau werden verlangsamt."],
+      ["Wirtschaft", "Unternehmen erhalten unsichere Signale und verschieben Investitionen."],
+      ["Haushalte", "Kosten bleiben höher, wenn alte fossile Abhängigkeiten fortbestehen."],
+      ["Demokratie", "Politik erscheint handlungsunfähig; Populismus erhält Resonanz."],
+      ["Planet", "Emissionen sinken langsamer."],
+    ],
+    solutionLead: "Die wirkungsökonomische Antwort verschiebt die Debatte von der Lagerfrage zur Engpasslogik.",
+    clipHook: "Die Energiewende ist nicht gescheitert - sie zeigt Engpässe. Und genau die müssen wir lösen.",
+    caption: "Nicht Totalurteil, sondern Engpassanalyse: So denkt der Wirkungsradar.",
+  },
+  "e-autos-schlimmer-als-verbrenner": {
+    title: "„E-Autos sind schlimmer als Verbrenner“",
+    subtitle: "Rohstoffangst und falscher Lebenszyklusvergleich",
+    confidence: "hoch",
+    readingTime: "15 Minuten",
+    leadQuestion: "Welche Mobilitätslösung erzeugt über den gesamten Lebenszyklus die beste Netto-Wirkung?",
+    claimAnatomy: {
+      original: "E-Autos sind schlimmer als Verbrenner.",
+      extended: "E-Autos sind wegen Batterie, Rohstoffen und Strommix klimaschädlicher als Verbrenner.",
+      trueCore: "Batterieproduktion und Rohstoffabbau verursachen relevante ökologische und soziale Wirkungen.",
+      missingContext: "Entscheidend ist der gesamte Lebenszyklus, nicht nur die Herstellung.",
+      falseConclusion: "Aus Batterieproblemen folgt nicht automatisch, dass Verbrenner besser sind.",
+    },
+    trueText:
+      "Batterieproduktion benötigt Energie und Rohstoffe. Lieferketten können Wasser-, Biodiversitäts-, Arbeitsrechts- und Governance-Probleme enthalten.",
+    missingItems: [
+      "Verbrenner emittieren während der gesamten Nutzung fossiles CO₂.",
+      "Verbrenner verursachen Luftschadstoffe und fossile Importabhängigkeit.",
+      "Der Strommix kann über die Lebensdauer erneuerbarer werden.",
+      "Batterien können recycelt, weitergenutzt und technologisch verbessert werden.",
+      "Die beste Mobilitätswirkung entsteht nicht automatisch durch Autoersatz, sondern durch bessere Mobilitätssysteme.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty: "Mittel bei künftigen Batteriechemien, Recyclingquoten, Strommix, Fahrzeuggröße und Lieferkettenqualität.",
+      sourceKeys: ["icct_lca_ev_2025", "uba_emissions_germany"],
+    },
+    wirkstoff: {
+      label: "Rohstoffangst als Verzögerungsimpuls",
+      description: "Ein reales Problemfeld wird genutzt, um den gesamten Technologiewechsel zu diskreditieren.",
+      mechanism: "Ein Teil der Lebenszykluswirkung wird zum Gesamturteil gemacht.",
+      resonance: ["Misstrauen gegen neue Technologien", "Angst vor Ausbeutung", "Sorge um Natur und Ressourcen", "Abwehr gegen Mobilitätswandel"],
+    },
+    narrative: {
+      message: "Die angeblich grüne Lösung ist in Wahrheit schlimmer.",
+      emotional: "Moralische Entlastung für fossile Weiterführung.",
+      political: "Verzögerung von Ladeinfrastruktur, Flottenumstellung und Mobilitätswende.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen zweifeln an der Klimawirkung von E-Mobilität."],
+      ["Wirkung 2. Ordnung", "Investitionen in Ladeinfrastruktur, Batterierecycling und Flottenumstellung sinken."],
+      ["Wirkung 3. Ordnung", "Der Mobilitätsmarkt bleibt länger an fossile Pfade und alte Industrieinteressen gebunden."],
+    ],
+    falseActions: [
+      ["Mobilität", "Verbrenner bleiben länger im System."],
+      ["Industrie", "Batterie-, Recycling- und Lieferkettenkompetenz wandert ab."],
+      ["Klima", "Nutzungsemissionen bleiben höher."],
+      ["Gesundheit", "Luftschadstoffbelastungen sinken langsamer."],
+      ["Lieferketten", "Echte Rohstoffprobleme werden nicht gelöst, sondern als Abbruchargument missbraucht."],
+    ],
+    solutionLead: "Die WÖk bewertet nicht Technologie-Lager, sondern Mobilitätswirkung über den Lebenszyklus.",
+    clipHook: "E-Autos sind nicht perfekt. Aber der Verbrenner-Vergleich muss ehrlich sein.",
+    caption: "Lebenszyklus statt Lagerkampf: Mobilität wirkungsökonomisch prüfen.",
+  },
+  "kernenergie-einfache-loesung": {
+    title: "„Kernenergie wäre die einfache Lösung“",
+    subtitle: "Strategiebehauptung mit Zeit-, Kosten- und Risikooffenheiten",
+    confidence: "mittel",
+    readingTime: "16 Minuten",
+    leadQuestion: "Welche Energieinvestition wirkt rechtzeitig, bezahlbar und mit geringster Netto-Negativwirkung?",
+    claimAnatomy: {
+      original: "Kernenergie wäre die einfache Lösung.",
+      extended: "Deutschland hätte mit Kernenergie keine Energieprobleme und könnte Klimaschutz einfacher erreichen.",
+      trueCore: "Kernkraftwerke emittieren im Betrieb wenig CO₂ und können steuerbare Leistung bereitstellen.",
+      missingContext: "Neue Kernenergie braucht lange Planung, hohe Investitionen, Sicherheits- und Entsorgungsstrukturen sowie Akzeptanz.",
+      falseConclusion: "Aus niedrigen Betriebsemissionen folgt nicht automatisch, dass Kernenergie im deutschen Zeitfenster die beste Lösung ist.",
+    },
+    trueText:
+      "Kernenergie ist im Betrieb CO₂-arm und steuerbar. In Ländern mit bestehender Kernenergieflotte kann die Laufzeitfrage anders bewertet werden als in Deutschland.",
+    missingItems: [
+      "Deutschland hat die Kernenergie politisch, rechtlich, personell und infrastrukturell beendet.",
+      "Neue Reaktoren hätten lange Vorlaufzeiten.",
+      "Kapitalbindung und Opportunitätskosten sind zentral.",
+      "Endlagerung, Sicherheit, Haftung, Rückbau und Kühlwasserfragen gehören zur Netto-Wirkung.",
+      "Die relevante Frage lautet: Was wirkt in Deutschland rechtzeitig und am besten?",
+    ],
+    evidence: {
+      status: "teilweise umstritten",
+      level: "mittel",
+      uncertainty: "Hoch bei Neubaukosten, Bauzeiten, Finanzierung, regulatorischen Pfaden und politischer Akzeptanz in Deutschland.",
+      sourceKeys: ["iea_nuclear", "base_endlager"],
+    },
+    wirkstoff: {
+      label: "Falsche Einfachheit",
+      description: "Eine komplexe Strategieoption wird als unkomplizierte Lösung dargestellt.",
+      mechanism: "Ein positiver Technologieaspekt wird vom Systemkontext getrennt.",
+      resonance: ["Sehnsucht nach einfacher Lösung", "Frust über Energiewende", "Misstrauen gegen Erneuerbare", "Kontrollbedürfnis"],
+    },
+    narrative: {
+      message: "Man hätte nur bei Atomkraft bleiben müssen.",
+      emotional: "Rückkehr zu scheinbarer Kontrolle.",
+      political: "Erneuerbare, Netze, Speicher und Effizienz werden als zweitbeste Lösungen gerahmt.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen unterschätzen Zeit-, Kosten- und Entsorgungsfragen."],
+      ["Wirkung 2. Ordnung", "Politischer Druck entsteht, verfügbare Lösungen als unzureichend darzustellen."],
+      ["Wirkung 3. Ordnung", "Die Transformationsarchitektur verschiebt sich von lernender Dezentralität zu Großprojekt- und Kontrolllogik."],
+    ],
+    falseActions: [
+      ["Zeit", "Emissionseinsparungen im laufenden Jahrzehnt werden nicht durch Neubauten erreicht."],
+      ["Kapital", "Investitionen könnten von Netzen, Speichern, Effizienz, Gebäuden und Industrieumstellung abgezogen werden."],
+      ["Entsorgung", "Langfristige Abfall- und Governance-Verantwortung steigt."],
+      ["Demokratie", "Konflikte um Standorte, Risiken und Kosten können Akzeptanz belasten."],
+      ["System", "Komplexitätsreduktion ersetzt echte Netto-Wirkungsanalyse."],
+    ],
+    solutionLead: "Die WÖk vergleicht Technologien nach Netto-Wirkung im konkreten Zeitfenster.",
+    clipHook: "Atomkraft ist nicht die Frage. Die Frage ist: Welche Option wirkt rechtzeitig?",
+    caption: "Technologievergleich nach Wirkung: Zeit, Kosten, Risiko, Alternativen.",
+  },
+  "fusion-loest-das-problem": {
+    title: "„Fusion löst das Problem“",
+    subtitle: "Forschung ja, Aufschub nein",
+    confidence: "hoch",
+    readingTime: "13 Minuten",
+    leadQuestion: "Welche Lösung wirkt jetzt - und welche Forschung schafft langfristige Optionen?",
+    claimAnatomy: {
+      original: "Fusion löst das Problem.",
+      extended: "Wir müssen nicht so stark auf heutige Klimaschutzmaßnahmen setzen, weil Fusion das Energieproblem später lösen wird.",
+      trueCore: "Fusion ist wissenschaftlich relevant und kann langfristig eine wichtige Energieoption werden.",
+      missingContext: "Kommerzielle, skalierte Fusionsstromerzeugung ist nicht kurzfristig verfügbar.",
+      falseConclusion: "Aus langfristiger Forschung folgt nicht, dass heutige Emissionsminderung verzichtbar ist.",
+    },
+    trueText:
+      "Fusion ist ein bedeutendes Forschungsfeld. Bei erfolgreicher Entwicklung könnte sie langfristig neue Energieoptionen eröffnen.",
+    missingItems: [
+      "Klimaschutz hat ein akutes Zeitfenster.",
+      "Fusion ist noch keine verfügbare, skalierte Stromquelle.",
+      "Netze, Erneuerbare, Speicher, Effizienz, Wärmewende und Industrieumbau wirken jetzt.",
+      "Forschung darf nicht gegen Implementierung ausgespielt werden.",
+    ],
+    evidence: {
+      status: "prognose unsicher",
+      level: "hoch beim Technologiestatus, offen bei Kommerzialisierung",
+      uncertainty: "Hoch bei Zeitpunkt, Kosten, Skalierbarkeit, Materialfragen und Systemintegration künftiger Fusionskraftwerke.",
+      sourceKeys: ["iter", "eurofusion_demo"],
+    },
+    wirkstoff: {
+      label: "Zukunftstechnologie als Aufschubimpuls",
+      description: "Eine mögliche spätere Lösung wird als Grund genutzt, heutige Lösungen zu verlangsamen.",
+      mechanism: "Hoffnung wird von Handlungsenergie in Wartelogik umgewandelt.",
+      resonance: ["Technikoptimismus", "Veränderungsvermeidung", "Sehnsucht nach problemloser Lösung", "Misstrauen gegen heutige Transformation"],
+    },
+    narrative: {
+      message: "Wir müssen nur warten, bis die perfekte Lösung kommt.",
+      emotional: "Entlastung von unbequemen heutigen Entscheidungen.",
+      political: "Heute verfügbare Maßnahmen verlieren Dringlichkeit.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen glauben, heutige Maßnahmen seien weniger dringend."],
+      ["Wirkung 2. Ordnung", "Politische Unterstützung für kurzfristig wirksame Infrastruktur sinkt."],
+      ["Wirkung 3. Ordnung", "Das System stabilisiert eine Wartelogik statt eine Lern- und Umsetzungskultur."],
+    ],
+    falseActions: [
+      ["Klima", "Emissionen bleiben länger hoch."],
+      ["Industrie", "Heute verfügbare Technologien skalieren langsamer."],
+      ["Forschung", "Fusion wird politisch überfrachtet und als Heilsversprechen statt Forschungsprogramm kommuniziert."],
+      ["Demokratie", "Enttäuschung kann wachsen, wenn versprochene Durchbrüche nicht rechtzeitig eintreten."],
+    ],
+    solutionLead: "Die WÖk trennt Forschung und Umsetzung, finanziert aber beide wirkungsorientiert.",
+    clipHook: "Fusion ist Hoffnung - aber kein Ersatz für Handeln.",
+    caption: "Forschung ja. Aufschub nein.",
+  },
+};
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -996,6 +1343,30 @@ function expandedAnswers(claim) {
     thirty_seconds: answerText(claim, "thirty_seconds"),
     two_minutes: answerText(claim, "two_minutes"),
   };
+}
+
+function deepDiveDetailFor(claim) {
+  return deepDiveDetails[claim?.slug];
+}
+
+function deepDiveSources(detail) {
+  return (detail?.evidence?.sourceKeys || []).map((key) => deepDiveSourcePack.sources[key]).filter(Boolean);
+}
+
+function htmlList(items) {
+  return `<ul class="clean-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+}
+
+function deepDiveLiveLink(claim) {
+  if (!deepDiveDetailFor(claim)) return "";
+  return `<section class="section section-soft deep-dive-live-link" aria-labelledby="deep-dive-link-${escapeHtml(claim.slug)}">
+        <div class="card">
+          <p class="card-kicker">Deep Dive</p>
+          <h2 class="card-title" id="deep-dive-link-${escapeHtml(claim.slug)}">Ausführliche Wirkungsanalyse.</h2>
+          <p class="card-text">Die Detailseite trennt Faktenkern, Ausblendungen, Evidenz, Wirkstoff, Wirkungspfad und wirkungsökonomische Lösung.</p>
+          <p><a class="btn btn-primary" href="../../detail/${escapeHtml(claim.slug)}/">Detailanalyse öffnen</a></p>
+        </div>
+      </section>`;
 }
 
 function isComplexYaml(value) {
@@ -1213,6 +1584,288 @@ function internalLinks() {
       </section>`;
 }
 
+function renderClaimAnatomy(detail) {
+  const anatomy = detail.claimAnatomy;
+  return `<section class="section deep-dive-section" id="aussage">
+        <div>
+          <div class="section-header"><p class="hero-kicker">ClaimAnatomy</p><h2>Aussage zerlegen.</h2></div>
+          <div class="deep-dive-definition-grid">
+            <article class="card" data-tone="neutral"><p class="card-kicker">Originalaussage</p><h3 class="card-title">${escapeHtml(anatomy.original)}</h3></article>
+            <article class="card" data-tone="warning"><p class="card-kicker">Erweiterter Frame</p><h3 class="card-title">${escapeHtml(anatomy.extended)}</h3></article>
+            <article class="card" data-tone="positive"><p class="card-kicker">Wahrer Kern</p><p class="card-text">${escapeHtml(anatomy.trueCore)}</p></article>
+            <article class="card" data-tone="critical"><p class="card-kicker">Was fehlt?</p><p class="card-text">${escapeHtml(anatomy.missingContext)}</p></article>
+            <article class="card deep-dive-wide-card" data-tone="critical"><p class="card-kicker">Falsche Schlussfolgerung</p><h3 class="card-title">${escapeHtml(anatomy.falseConclusion)}</h3></article>
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderEvidenceAssessment(detail) {
+  const sources = deepDiveSources(detail);
+  return `<section class="section section-soft deep-dive-section" id="faktenlage">
+        <div>
+          <div class="section-header"><p class="hero-kicker">EvidenceAssessment</p><h2>Faktenlage und Unsicherheit.</h2></div>
+          ${summaryGrid([
+            ["Evidenzstatus", detail.evidence.status, "positive"],
+            ["Vertrauensniveau", detail.evidence.level, detail.confidence === "hoch" ? "positive" : "warning"],
+            ["Unsicherheit", detail.evidence.uncertainty, "warning"],
+          ], "Evidence Assessment", "deep-dive-inline-summary")}
+          <div class="card-grid deep-dive-source-mini-grid">
+            ${sources
+              .map(
+                (source) => `<article class="card">
+              <p class="card-kicker">${escapeHtml(source.type)}</p>
+              <h3 class="card-title">${escapeHtml(source.label)}</h3>
+              <p class="card-text">${escapeHtml(source.relevance.join(" / "))}</p>
+              <p><a class="text-link" href="${escapeHtml(source.url)}">Quelle öffnen</a></p>
+            </article>`
+              )
+              .join("\n            ")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderWirkungOrders(detail) {
+  return `<section class="section deep-dive-section" id="wirkungsordnung">
+        <div>
+          <div class="section-header"><p class="hero-kicker">WirkungOrders</p><h2>Wirkung erster, zweiter und dritter Ordnung.</h2></div>
+          <div class="card-grid three deep-dive-order-grid">
+            ${detail.orders
+              .map(
+                ([label, text], index) => `<article class="card">
+              <p class="card-kicker">${String(index + 1).padStart(2, "0")}</p>
+              <h3 class="card-title">${escapeHtml(label)}</h3>
+              <p class="card-text">${escapeHtml(text)}</p>
+            </article>`
+              )
+              .join("\n            ")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderFalseActionAnalysis(detail) {
+  return `<section class="section section-soft deep-dive-section" id="folgenanalyse">
+        <div>
+          <div class="section-header"><p class="hero-kicker">FalseActionAnalysis</p><h2>Folgen, wenn man der Aussage folgt.</h2></div>
+          <div class="deep-dive-consequence-grid">
+            ${detail.falseActions
+              .map(
+                ([label, text]) => `<article class="card">
+              <p class="card-kicker">${escapeHtml(label)}</p>
+              <p class="card-text">${escapeHtml(text)}</p>
+            </article>`
+              )
+              .join("\n            ")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderCreatorExport(claim, detail) {
+  const answers = expandedAnswers(claim);
+  return `<section class="section deep-dive-section" id="creator-export">
+        <div>
+          <div class="section-header"><p class="hero-kicker">CreatorExportBox</p><h2>Antworten und Social Hooks.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
+          </div>
+          <div class="card-grid two deep-dive-export-grid">
+            <article class="card"><p class="card-kicker">Clip Hook</p><h3 class="card-title">${escapeHtml(detail.clipHook)}</h3></article>
+            <article class="card"><p class="card-kicker">Caption</p><p class="card-text">${escapeHtml(detail.caption)}</p></article>
+          </div>
+        </div>
+      </section>`;
+}
+
+function renderSourceReliability(detail) {
+  const sources = deepDiveSources(detail);
+  return `<section class="section section-soft deep-dive-section" id="quellen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">SourceReliabilityBox</p><h2>Quellen, Reliabilität und Datenstand.</h2></div>
+          <div class="card-grid deep-dive-source-grid">
+            ${sources
+              .map(
+                (source) => `<article class="card">
+              <p class="card-kicker">${escapeHtml(source.type)}</p>
+              <h3 class="card-title">${escapeHtml(source.label)}</h3>
+              <p class="card-text"><strong>Geeignet für:</strong> ${escapeHtml(source.relevance.join(" / "))}</p>
+              <p><a class="text-link" href="${escapeHtml(source.url)}">Originalquelle öffnen</a></p>
+            </article>`
+              )
+              .join("\n            ")}
+          </div>
+          ${factStatusBadge()}
+        </div>
+      </section>`;
+}
+
+function renderStandardBox(id, title, text) {
+  return `<section class="section section-soft deep-dive-standard-box" id="${escapeHtml(id)}">
+        <div class="card">
+          <p class="card-kicker">Standardbox</p>
+          <h2 class="card-title">${escapeHtml(title)}</h2>
+          <p class="card-text">${escapeHtml(text)}</p>
+        </div>
+      </section>`;
+}
+
+function renderDeepDiveDetail(claim) {
+  const detail = deepDiveDetailFor(claim);
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero deep-dive-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Detail</a> / ${escapeHtml(detail.title)}</nav>
+          <p class="hero-kicker">Deep-Dive-Detailseite</p>
+          <h1 class="hero-title">${escapeHtml(detail.title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(detail.subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
+          <p class="radar-status-line"><span>Status: Detailanalyse</span><span>Datenstand: ${UPDATED_AT}</span><span>Vertrauen: ${escapeHtml(detail.confidence)}</span><span>Lesezeit: ${escapeHtml(detail.readingTime)}</span></p>
+        </div>
+      </section>
+      ${summaryGrid([
+        ["Kurzurteil", claim.summary.judgement, "warning"],
+        ["Wahrer Kern", claim.summary.true_core, "neutral"],
+        ["Was fehlt?", detail.claimAnatomy.missingContext, "critical"],
+        ["Narrativtyp", claim.summary.narrative, "warning"],
+        ["Wirkungsrisiko", claim.summary.risk, "critical"],
+        ["Leitfrage", detail.leadQuestion, "positive"],
+      ], `${claim.title} Detail Summary`, "deep-dive-summary-grid")}
+      ${topicSubnav("Detail", "../")}
+      <section class="section">
+        <div class="radar-detail-layout">
+          <nav class="article-toc" aria-label="Inhaltsverzeichnis" data-search-exclude>
+            <p>Inhaltsverzeichnis</p>
+            <ol>
+              <li><a href="#aussage">Aussage</a></li>
+              <li><a href="#kurzurteil">Kurzurteil</a></li>
+              <li><a href="#was-stimmt">Was stimmt daran?</a></li>
+              <li><a href="#was-fehlt">Was fehlt?</a></li>
+              <li><a href="#faktenlage">Faktenlage</a></li>
+              <li><a href="#wirkstoff">Gesellschaftlicher Wirkstoff</a></li>
+              <li><a href="#wirkungspfad">Wirkmechanismus</a></li>
+              <li><a href="#wirkungsordnung">Wirkungsordnung</a></li>
+              <li><a href="#folgenanalyse">Folgenanalyse</a></li>
+              <li><a href="#mpd">Mensch, Planet, Demokratie</a></li>
+              <li><a href="#sdg">SDG-/SDG+-Bezug</a></li>
+              <li><a href="#woek-loesung">WÖk-Lösung</a></li>
+              <li><a href="#creator-export">Creator Export</a></li>
+              <li><a href="#quellen">Quellen</a></li>
+            </ol>
+          </nav>
+          <article class="article-body deep-dive-body">
+            ${renderClaimAnatomy(detail)}
+            <section class="section deep-dive-section deep-dive-text-section" id="kurzurteil"><h2>Kurzurteil</h2><p>${escapeHtml(claim.summary.judgement)} ${escapeHtml(claim.summary.problem)}</p></section>
+            <section class="section deep-dive-section deep-dive-text-section" id="was-stimmt"><h2>Was stimmt daran?</h2><p>${escapeHtml(detail.trueText)}</p></section>
+            <section class="section deep-dive-section deep-dive-text-section" id="was-fehlt"><h2>Was fehlt?</h2>${htmlList(detail.missingItems)}</section>
+            ${renderEvidenceAssessment(detail)}
+            ${renderStandardBox("fakten-allein", "Warum Fakten allein nicht reichen", "Die Aussage wirkt nicht nur über ihren Faktenkern, sondern über emotionale Entlastung, Ohnmacht, Scheiternsgefühl oder Technikhoffnung. Deshalb reicht eine Zahl allein nicht: Entscheidend ist, welchen Handlungspfad sie im Publikum aktiviert.")}
+            <section class="section deep-dive-section" id="wirkstoff">
+              <div class="section-header"><p class="hero-kicker">Gesellschaftlicher Wirkstoff</p><h2>${escapeHtml(detail.wirkstoff.label)}</h2></div>
+              <div class="card-grid two">
+                <article class="card"><p class="card-kicker">Mechanismus</p><h3 class="card-title">${escapeHtml(detail.wirkstoff.mechanism)}</h3><p class="card-text">${escapeHtml(detail.wirkstoff.description)}</p></article>
+                <article class="card"><p class="card-kicker">Resonanzraum</p>${htmlList(detail.wirkstoff.resonance)}</article>
+              </div>
+            </section>
+            <section class="section section-soft deep-dive-section" id="narrativtyp">
+              <div>
+                <div class="section-header"><p class="hero-kicker">Narrativtyp</p><h2>${escapeHtml(claim.narrativeFamilies.join(" / "))}</h2></div>
+                ${summaryGrid([["Botschaft", detail.narrative.message, "warning"], ["Emotion", detail.narrative.emotional, "warning"], ["Politischer Effekt", detail.narrative.political, "critical"]], "Narrativanalyse", "deep-dive-inline-summary")}
+              </div>
+            </section>
+            <section class="section deep-dive-section" id="wirkungspfad">
+              <div class="section-header"><p class="hero-kicker">Wirkmechanismus</p><h2>Vom Satz zur Wirkung.</h2></div>
+              <ol class="timeline radar-flow radar-effect-path">
+                ${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("\n                ")}
+              </ol>
+            </section>
+            ${renderWirkungOrders(detail)}
+            ${renderFalseActionAnalysis(detail)}
+            <section class="section deep-dive-section" id="mpd">
+              <div class="section-header"><p class="hero-kicker">Bewertung nach Mensch, Planet, Demokratie</p><h2>MPD-Wirkungsrisiko.</h2></div>
+              ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel deep-dive-inline-summary")}
+            </section>
+            <section class="section section-soft deep-dive-section" id="sdg">
+              <div>
+                <div class="section-header"><p class="hero-kicker">SDG-/SDG+-Bezug</p><h2>Ziele und demokratische Wirkungsqualität.</h2></div>
+                ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Nichtkompensation", mapping.wok_mapping.rule, "warning"]], `${claim.title} SDG`, "climate-sdg-panel deep-dive-inline-summary")}
+              </div>
+            </section>
+            <section class="section deep-dive-section" id="woek-loesung">
+              <div class="section-header"><p class="hero-kicker">WÖk-Lösung</p><h2>${escapeHtml(detail.solutionLead)}</h2></div>
+              ${htmlList(claim.woekSolution)}
+            </section>
+            ${renderCreatorExport(claim, detail)}
+            ${renderStandardBox("nicht-ins-stoeckchen", "Nicht ins Stöckchen springen", claim.dontDo.join(" "))}
+            ${renderStandardBox("leitfrage", "Wirkungsökonomische Leitfrage", detail.leadQuestion)}
+            ${internalLinks()}
+            ${renderSourceReliability(detail)}
+          </article>
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: `${detail.title.replace(/[„“]/g, "")} | Wirkungsradar Detail | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/detail/${claim.slug}/`,
+    base: "../../../",
+    main,
+  });
+}
+
+function renderDetailIndex() {
+  const deepDiveClaims = deepDiveSlugs.map((slug) => claims.find((claim) => claim.slug === slug)).filter(Boolean);
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Detail</nav>
+          <p class="hero-kicker">Wirkungsradar Detail</p>
+          <h1 class="hero-title">Detailanalysen für Aussagen mit hoher Wirkung.</h1>
+          <p class="hero-subtitle">Deep Dives mit Faktenkern, Narrativanalyse, Wirkmechanismus, MPD-Bewertung und WÖk-Lösung.</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> Die Detailseiten sind die Langform zu Wirkungsradar-Livekarten. Sie ordnen nicht nur Fakten, sondern zeigen, welche gesellschaftliche Wirkung eine Aussage auslöst und welche bessere Handlungsfrage daraus folgt.</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Format: Deep Dive</span></p>
+        </div>
+      </section>
+      ${summaryGrid([
+        ["Bestehender Deep Dive", "SDGs sind Weltregierung", "neutral"],
+        ["Klima & Energie", `${deepDiveClaims.length} neue Detailanalysen`, "positive"],
+        ["Methode", "Faktencheck plus Wirkungscheck", "positive"],
+        ["Bausteine", "ClaimAnatomy, EvidenceAssessment, WirkungOrders, WÖk-Antwort", "neutral"],
+        ["Ziel", "Handlungsfähigkeit statt Stöckchen-Reaktion", "positive"],
+        ["Datenstand", UPDATED_AT, "neutral"],
+      ], "Detail Index Summary")}
+      ${topicSubnav("Detail", "")}
+      <section class="section" aria-labelledby="detail-list">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Detailseiten</p><h2 id="detail-list">Verfügbare Analysen.</h2></div>
+          <div class="card-grid">
+            <a class="card text-link-card" href="sdgs-sind-weltregierung/"><p class="card-kicker">Internationale Kooperation</p><h3 class="card-title">„Die SDGs sind Weltregierung“</h3><p class="card-text">Kooperationsrahmen, Herrschaftsframe und demokratische Entscheidung.</p></a>
+            ${deepDiveClaims
+              .map((claim) => {
+                const detail = deepDiveDetailFor(claim);
+                return `<a class="card text-link-card" href="${escapeHtml(claim.slug)}/">
+              <p class="card-kicker">${escapeHtml(detail.subtitle)}</p>
+              <h3 class="card-title">${escapeHtml(detail.title)}</h3>
+              <p class="card-text">${escapeHtml(detail.leadQuestion)}</p>
+            </a>`;
+              })
+              .join("\n            ")}
+          </div>
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: "Wirkungsradar Detailanalysen | Wirkungsökonomie",
+    description: "Detailanalysen im Wirkungsradar mit Faktenkern, Narrativanalyse, Wirkmechanismus, MPD-Bewertung und wirkungsökonomischer Lösung.",
+    canonical: "https://wirkungsoekonomie.de/wirkungsradar/detail/",
+    base: "../../",
+    main,
+  });
+}
+
 function claimIndex() {
   return `<section class="section" id="claim-index" aria-labelledby="claim-index-title">
         <div>
@@ -1416,6 +2069,7 @@ function renderGermanyTwoPercentDossier(claim) {
         </div>
       </section>
       ${summaryGrid(summaryItems, `${claim.title} Summary`, "dossier-summary-grid")}
+      ${deepDiveLiveLink(claim)}
       <nav class="dossier-tab-nav" aria-label="Dossierbereiche" data-search-exclude>
         <a href="#host-antworten">Live antworten</a>
         <a href="#verantwortung-verstehen">Verantwortung verstehen</a>
@@ -1516,6 +2170,7 @@ function renderLiveCard(claim) {
   if (claim.slug === "deutschland-nur-zwei-prozent") return renderGermanyTwoPercentDossier(claim);
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
+  const detailLink = deepDiveLiveLink(claim);
   const summaryItems = [
     ["Kurzurteil", claim.summary.judgement, claim.riskLevel === "hoch" ? "warning" : "neutral"],
     ["Wahrer Kern", claim.summary.true_core, "neutral"],
@@ -1535,7 +2190,7 @@ function renderLiveCard(claim) {
           <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Faktenstatus: datenbasiert</span></p>
         </div>
       </section>
-      ${summaryGrid(summaryItems, `${claim.title} Summary`)}
+      ${summaryGrid(summaryItems, `${claim.title} Summary`)}${detailLink ? `\n      ${detailLink}` : ""}
       <section class="section" id="host-antworten">
         <div>
           <div class="section-header"><p class="hero-kicker">Host-Antworten</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2></div>
@@ -1617,8 +2272,10 @@ function dataModel() {
 }
 
 writeFile("content/wirkungsradar/source-packs/climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(sourcePack).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/deep-dive-climate-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(deepDiveSourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy-mapping.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(mapping).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy.yml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(dataModel()).trim()}\n`);
+writeFile("wirkungsradar/detail/index.html", renderDetailIndex());
 writeFile("wirkungsradar/themen/index.html", renderThemesIndex());
 writeFile("wirkungsradar/themen/klima-energie/index.html", renderClusterPage());
 for (const topic of subtopics) {
@@ -1627,5 +2284,9 @@ for (const topic of subtopics) {
 for (const claim of claims) {
   writeFile(`wirkungsradar/live/${claim.slug}/index.html`, renderLiveCard(claim));
 }
+for (const slug of deepDiveSlugs) {
+  const claim = claims.find((item) => item.slug === slug);
+  if (claim) writeFile(`wirkungsradar/detail/${claim.slug}/index.html`, renderDeepDiveDetail(claim));
+}
 
-console.log(`Built climate-energy cluster: ${subtopics.length} subtopics, ${claims.length} live cards.`);
+console.log(`Built climate-energy cluster: ${subtopics.length} subtopics, ${claims.length} live cards, ${deepDiveSlugs.length} deep dives.`);
