@@ -517,10 +517,8 @@
           provider.textContent = data.provider || "Hosted API";
           model.textContent = data.model || "OpenAI-kompatibel";
           sourceCount.textContent = String(data.sources?.length || 0);
-          if (data.warning) {
-            warning.hidden = false;
-            warning.textContent = `Modellhinweis: ${data.warning}`;
-          }
+          warning.hidden = true;
+          warning.textContent = "";
           renderSources(data.sources || []);
         } catch (error) {
           placeholder.hidden = false;
