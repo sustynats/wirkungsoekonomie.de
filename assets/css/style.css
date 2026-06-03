@@ -5625,6 +5625,52 @@ textarea {
   font-size: clamp(1.2rem, 2vw, 1.75rem);
 }
 
+.reader-toc-section {
+  padding-bottom: 0;
+}
+
+.reader-page .reader-toc-card,
+.reader-toc-section .reader-toc-card {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  margin-inline: auto;
+}
+
+.reader-page .reader-toc-card summary,
+.reader-page .reader-toc-card .card-title,
+.reader-toc-section .reader-toc-card summary,
+.reader-toc-section .reader-toc-card .card-title {
+  color: var(--green-dark);
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.robust-reader {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  max-width: 980px;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.robust-reader p,
+.robust-reader li {
+  max-width: 78ch;
+}
+
+.robust-reader h2 {
+  max-width: 26ch;
+  margin-top: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(1.75rem, 3.2vw, 2.7rem);
+  line-height: 1.08;
+}
+
+.robust-reader h3 {
+  max-width: 36ch;
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+}
+
 .article-body h2[id],
 .article-body h3[id] {
   scroll-margin-top: 110px;
