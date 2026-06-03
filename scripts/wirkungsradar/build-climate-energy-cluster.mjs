@@ -409,6 +409,55 @@ const sourcePack = {
       use_for: ["Kernenergie", "Atommüll", "Endlagerung"],
     },
     {
+      label: "BASE - Ausstieg aus der Atomkraft",
+      publisher: "Bundesamt für die Sicherheit der nuklearen Entsorgung",
+      url: "https://www.base.bund.de/de/nukleare-sicherheit/atomausstieg/ausstieg-atomkraft/ausstieg-atomkraft_inhalt.html",
+      type: "amtlich",
+      use_for: ["Abschaltung letzte drei AKW 15. April 2023", "Atomausstieg Deutschland"],
+    },
+    {
+      label: "BMUV - Atomkraftwerke in Deutschland",
+      publisher: "Bundesministerium für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+      url: "https://www.bundesumweltministerium.de/themen/nukleare-sicherheit/aufsicht-ueber-atomkraftwerke/atomkraftwerke-in-deutschland",
+      type: "amtlich",
+      use_for: ["Berechtigungen zum Leistungsbetrieb erloschen", "Emsland, Isar 2, Neckarwestheim 2"],
+    },
+    {
+      label: "BGE - Endlagersuche für hochradioaktive Abfälle",
+      publisher: "Bundesgesellschaft für Endlagerung",
+      url: "https://www.bge.de/de/endlagersuche/",
+      type: "amtlich",
+      use_for: ["hochradioaktiver Abfall", "5 Prozent Menge und 99 Prozent Radioaktivität", "Standortauswahl"],
+    },
+    {
+      label: "BASE - Zeitperspektive Endlagersuche",
+      publisher: "Bundesamt für die Sicherheit der nuklearen Entsorgung",
+      url: "https://www.base.bund.de/de/endlager/endlager-sicherheit/zeitperspektive/zeitbedarf-endlagersuche_inhalt.html",
+      type: "amtlich",
+      use_for: ["Zeitbedarf Endlagersuche", "Standortauswahlgesetz"],
+    },
+    {
+      label: "BASE - Transmutation hochradioaktiver Abfälle",
+      publisher: "Bundesamt für die Sicherheit der nuklearen Entsorgung",
+      url: "https://www.base.bund.de/de/nukleare-sicherheit/kerntechnik/partitionierung-transmutation/partitionierung-transmutation.html",
+      type: "amtlich",
+      use_for: ["Transmutation", "Endlager bleibt erforderlich", "hochradioaktive Abfälle"],
+    },
+    {
+      label: "OECD NEA - Financing nuclear new build",
+      publisher: "OECD Nuclear Energy Agency",
+      url: "https://www.oecd-nea.org/upload/docs/application/pdf/2024-09/nea_publication_2_2024-09-18_16-50-13_471.pdf",
+      type: "fachbericht",
+      use_for: ["Finanzierung neuer Kernkraft", "Kosten- und Verzögerungsrisiken", "staatliche Risikoübernahme"],
+    },
+    {
+      label: "IAEA - SMR Platform Annual Report",
+      publisher: "International Atomic Energy Agency",
+      url: "https://nucleus.iaea.org/sites/smr/Shared%20Documents/IAEA%20SMR%20Platform%20Annual%20Report%202025.pdf",
+      type: "fachbericht",
+      use_for: ["SMR-Forschung", "Sicherheits-, Rechts- und Infrastrukturfragen"],
+    },
+    {
       label: "ITER - In a Few Lines",
       publisher: "ITER Organization",
       url: "https://www.iter.org/few-lines",
@@ -561,6 +610,48 @@ const deepDiveSourcePack = {
       url: "https://www.base.bund.de/de/endlager/endlagersuche/endlagersuche_inhalt.html",
       type: "amtlich",
       relevance: ["Kernenergie", "Endlagerung", "radioaktive Abfälle"],
+    },
+    base_atomausstieg: {
+      label: "BASE - Ausstieg aus der Atomkraft",
+      url: "https://www.base.bund.de/de/nukleare-sicherheit/atomausstieg/ausstieg-atomkraft/ausstieg-atomkraft_inhalt.html",
+      type: "amtlich",
+      relevance: ["Abschaltung letzte drei AKW", "Atomausstieg Deutschland", "15. April 2023"],
+    },
+    bmuv_atomkraftwerke_deutschland: {
+      label: "BMUV - Atomkraftwerke in Deutschland",
+      url: "https://www.bundesumweltministerium.de/themen/nukleare-sicherheit/aufsicht-ueber-atomkraftwerke/atomkraftwerke-in-deutschland",
+      type: "amtlich",
+      relevance: ["Berechtigungen zum Leistungsbetrieb erloschen", "Emsland", "Isar 2", "Neckarwestheim 2"],
+    },
+    fraunhofer_lcoe_2024: {
+      label: "Fraunhofer ISE - Stromgestehungskosten 2024",
+      url: "https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html",
+      type: "wissenschaft",
+      relevance: ["Stromgestehungskosten", "Kostenvergleich", "PV", "Wind", "Kernkraft"],
+    },
+    bge_endlagersuche: {
+      label: "BGE - Endlagersuche für hochradioaktive Abfälle",
+      url: "https://www.bge.de/de/endlagersuche/",
+      type: "amtlich",
+      relevance: ["hochradioaktiver Abfall", "Menge und Radioaktivität", "Standortauswahl"],
+    },
+    base_transmutation: {
+      label: "BASE - Transmutation hochradioaktiver Abfälle",
+      url: "https://www.base.bund.de/de/nukleare-sicherheit/kerntechnik/partitionierung-transmutation/partitionierung-transmutation.html",
+      type: "amtlich",
+      relevance: ["Transmutation", "Endlager bleibt erforderlich", "hochradioaktive Abfälle"],
+    },
+    oecd_nea_financing_new_nuclear: {
+      label: "OECD NEA - Financing nuclear new build",
+      url: "https://www.oecd-nea.org/upload/docs/application/pdf/2024-09/nea_publication_2_2024-09-18_16-50-13_471.pdf",
+      type: "fachbericht",
+      relevance: ["Finanzierung neuer Kernkraft", "Kostenrisiko", "Verzögerungsrisiko"],
+    },
+    iaea_smr_platform: {
+      label: "IAEA - SMR Platform Annual Report",
+      url: "https://nucleus.iaea.org/sites/smr/Shared%20Documents/IAEA%20SMR%20Platform%20Annual%20Report%202025.pdf",
+      type: "fachbericht",
+      relevance: ["SMR", "Forschung", "Sicherheits-, Rechts- und Infrastrukturfragen"],
     },
     iea_nuclear: {
       label: "IEA - The Path to a New Era for Nuclear Energy",
@@ -748,7 +839,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Schnellere Lösungen werden verzögert, wenn Zukunftstechnik heutige Wirkung ersetzt.", "critical"],
       ["WÖk-Lösung", "Technologien nach Zeithorizont, Kosten, Risiken, Alternativen und Systemwirkung bewerten.", "positive"],
     ],
-    claims: ["kernenergie-einfache-loesung", "fusion-loest-das-problem"],
+    claims: ["kernenergie-wieder-in-deutschland", "kernenergie-einfache-loesung", "fusion-loest-das-problem"],
   },
   {
     slug: "industrie-wirtschaft",
@@ -1534,6 +1625,90 @@ const claims = [
     ],
   },
   {
+    title: "„Kernkraft zurück?“",
+    slug: "kernenergie-wieder-in-deutschland",
+    shortJudgement: "Wahrer CO₂-Kern, falsches Abkürzungsnarrativ.",
+    narrativeFamilies: ["Kernkraft als Rettung", "Grundlastnarrativ", "Rationalität gegen Ideologie", "Zeitfensterblindheit"],
+    riskLevel: "hoch",
+    themes: ["Kernenergie", "Stromsystem", "Deutschland"],
+    sdgs: ["SDG 7", "SDG 9", "SDG 12", "SDG 13", "SDG 16"],
+    sdgPlus: ["intergenerationelle Verantwortung", "Quellenklarheit", "demokratische Risikolegitimation"],
+    subtitle: "CO₂-arm heißt nicht automatisch sinnvoll für Deutschland.",
+    abstract:
+      "Die Aussage „Deutschland sollte zur Kernkraft zurück“ enthält einen wahren Kern: Kernkraftwerke erzeugen im Betrieb sehr wenig CO₂, liefern wetterunabhängig Strom und werden in mehreren Ländern als Teil der Klimastrategie betrachtet. Irreführend wird das Narrativ, wenn Kernenergie als schnelle, billige und einfache Lösung für Deutschlands Energieprobleme dargestellt wird. Für Deutschland geht es nicht nur um Physik, sondern um Systemwirkung: Die letzten Kraftwerke sind abgeschaltet, Rückbauprozesse laufen, Fachkräfte und Lieferketten müssten neu aufgebaut werden, neue Anlagen hätten lange Planungs- und Bauzeiten, hohe Finanzierungskosten, Sicherheitsanforderungen, Rückbau- und Endlagerverpflichtungen. Auch Transmutation ersetzt kein Endlager.",
+    summary: {
+      judgement: "Wahrer CO₂-Kern, falsches Abkürzungsnarrativ.",
+      true_core: "Kernenergie ist im Betrieb CO₂-arm, energiedicht und wetterunabhängig.",
+      problem: "Bauzeit, Kosten, Finanzierung, Endlager, Rückbau, Sicherheit, Kühlwasser, Fachkräfte, Flexibilität und Opportunitätskosten werden oft ausgeblendet.",
+      narrative: "Kernkraft als Rettung / Rationalität gegen Ideologie / Grundlastnarrativ.",
+      risk: "Politische Aufmerksamkeit und Kapital können von schneller wirksamen Maßnahmen abgezogen werden.",
+      host_answer: "CO₂-arm im Betrieb stimmt. Aber für Deutschland zählt die vollständige Wirkungsbilanz: Zeit, Kosten, Risiko, Endlager und Alternativen.",
+    },
+    answers: {
+      ten_seconds:
+        "Kernkraft ist CO₂-arm im Betrieb. Aber für Deutschland wäre sie nicht schnell, nicht billig und nicht ohne Langzeitrisiken. Entscheidend sind Bauzeit, Kosten, Endlager und Alternativen.",
+      thirty_seconds:
+        "Der wahre Kern ist: Atomstrom ist im Betrieb CO₂-arm und wetterunabhängig. Der Denkfehler ist: daraus eine schnelle Lösung für Deutschland zu machen. Unsere AKW sind abgeschaltet, neue Anlagen dauern lange, kosten viel, brauchen Fachkräfte, Sicherheitsarchitektur, Endlager und Finanzierung. Die bessere Frage lautet: Welche Investition senkt bis 2030 und 2035 am meisten Emissionen und Systemkosten?",
+      two_minutes:
+        "Ich ordne das sauber ein. Kernkraft ist nicht einfach „dumm“ oder „böse“. Im Betrieb ist sie CO₂-arm und liefert verlässlich Strom. Deshalb setzen einige Länder weiter darauf. Aber für Deutschland ist die Lage anders: Die letzten Kraftwerke wurden 2023 abgeschaltet, Rückbau und Entsorgung laufen, Personal und Lieferketten müssten neu aufgebaut werden. Neue Kernkraftwerke brauchen lange Planungs-, Genehmigungs- und Bauzeiten, hohe Finanzierung, staatliche Garantien, Sicherheitsprüfungen, Kühlwasser, Rückbau und Endlager. Transmutation löst das Endlagerproblem nicht. Wirkungsökonomisch ist deshalb die Frage nicht: Wer ist für oder gegen Atomkraft? Sondern: Welche Maßnahme bringt pro Euro, pro Jahr und pro Risiko die meiste positive Netto-Wirkung? Wenn Erneuerbare, Netze, Speicher, Effizienz, Lastmanagement und flexible Kraftwerke schneller und günstiger wirken, dann ist Atomkraft für Deutschland kein Klimaschutzhebel, sondern ein Opportunitätskostenrisiko.",
+    },
+    effectPath: [
+      ["Aussage", "Deutschland muss zur Kernkraft zurück."],
+      ["Wirkstoff", "CO₂-arme Technik als Abkürzungsversprechen."],
+      ["Verkürzung", "Betriebs-CO₂ wird mit Gesamtwirkung verwechselt."],
+      ["Ausblendung", "Bauzeit, Kosten, Endlager, Rückbau, Sicherheit, Finanzierung, Fachkräfte, Kühlwasser, Flexibilität und Opportunitätskosten verschwinden."],
+      ["Resonanz", "Sicherheitswunsch, Technikvertrauen, Dunkelflaute-Angst und Anti-Ideologie-Frame."],
+      ["Wirkungsrisiko", "Investitionen in Netze, Speicher, Effizienz, Flexibilität und Erneuerbare werden politisch relativiert."],
+      ["Wirkung dritter Ordnung", "Die Gesellschaft sucht wieder eine zentrale Großlösung statt eine lernende, resiliente Wirkungsarchitektur aufzubauen."],
+    ],
+    frameKey: "technikwunder",
+    redirectQuestion:
+      "Redest du über bestehende Kernkraftwerke in anderen Ländern - oder über einen realistischen Neustart und Neubau in Deutschland mit Zeit, Kosten, Personal, Endlager und Finanzierung?",
+    dontDo: [
+      "Nicht Kernkraft-Befürworter:innen als dumm darstellen.",
+      "Nicht den niedrigen CO₂-Ausstoß im Betrieb leugnen.",
+      "Nicht nur mit Tschernobyl oder Fukushima argumentieren.",
+      "Nicht Frankreich, Finnland, UK, Polen oder China pauschal auf Deutschland übertragen.",
+      "Nicht Stromgestehungskosten mit Endkundenpreisen verwechseln.",
+      "Nicht Transmutation als erledigt oder als Wunderlösung darstellen.",
+      "Nicht Grundlast mit Versorgungssicherheit verwechseln.",
+    ],
+    facts: [
+      "Deutschland hat die letzten drei Atomkraftwerke am 15. April 2023 abgeschaltet.",
+      "Neue Kernkraft wird in der Fraunhofer-ISE-Stromgestehungskostenstudie 2024 mit einer breiten Kostenspanne geführt; LCOE ist aber nicht Endkundenpreis.",
+      "Hochradioaktive Abfälle enthalten den Großteil der Radioaktivität und brauchen eine belastbare Endlagerstrategie.",
+      "Transmutation kann Forschung sein, ersetzt nach heutiger Bewertung aber kein Endlager.",
+      "Ein Stromsystem mit viel Wind und Sonne braucht gesicherte Leistung, Flexibilität, Speicher, Netze und Systemdienste.",
+    ],
+    consequences: [
+      "Zu späte Wirkung kann Emissionsminderungen im entscheidenden Jahrzehnt verfehlen.",
+      "Hohe Kapitalbindung und staatliche Garantien können Mittel für schnellere Maßnahmen verdrängen.",
+      "Endlager-, Rückbau-, Zwischenlager- und Sicherheitsverantwortung bleibt über sehr lange Zeiträume bestehen.",
+      "Energiepolitik kippt wieder in Lagerkampf statt Wirkungsvergleich.",
+    ],
+    woekSolution: [
+      { title: "Technologie-Wirkungsgate einführen", text: "Energieoptionen nach CO₂-Minderung, Zeit bis Wirkung, Kosten, Systemnutzen, Sicherheit, Rückbau, Ressourcen, Flexibilität und Akzeptanz bewerten." },
+      { title: "Zeitfenster verpflichtend machen", text: "Jede Maßnahme muss getrennt für 2030, 2035 und 2045 zeigen, welche Emissions- und Versorgungssicherheitswirkung sie erzeugt." },
+      { title: "Opportunitätskosten sichtbar machen", text: "Kapital, Fachkräfte, Genehmigungskapazität und politische Aufmerksamkeit werden als knappe Ressourcen bilanziert." },
+      { title: "Endlager und Rückbau nicht ausklammern", text: "Zwischenlagerung, Endlagersuche, Rückbaukosten, Sicherheitsanforderungen und Langzeitverantwortung gehören in jede Kernkraftbilanz." },
+      { title: "Erneuerbare Systemarchitektur beschleunigen", text: "Wind, Solar, Netze, Speicher, Lastmanagement, Effizienz, flexible Kraftwerke und europäische Kopplung als Systempaket bewerten." },
+    ],
+    mpd: {
+      mensch: "Hohe Kosten, Sicherheitsrisiken, Endlagerkonflikte und verzögerte Strompreisentlastung können Menschen belasten. Energieinvestitionen müssen nach Zeit, Kosten, Versorgung, Gesundheit, sozialer Fairness und Sicherheit bewertet werden.",
+      planet: "Kernkraft ist CO₂-arm im Betrieb, aber langsame Umsetzung kann fossile Emissionen länger im System halten; Atommüll bleibt Langzeitrisiko.",
+      demokratie: "Großtechnologische Lagerkämpfe können Vertrauen und Akzeptanz für pragmatische Systemlösungen schwächen. Transparente Wirkungsgates, Kostenoffenheit und Risikolegitimation stärken demokratische Kontrolle.",
+    },
+    sources: [
+      "BASE - Ausstieg aus der Atomkraft",
+      "BMUV - Atomkraftwerke in Deutschland",
+      "Fraunhofer ISE - Stromgestehungskosten 2024",
+      "BGE - Endlagersuche für hochradioaktive Abfälle",
+      "BASE - Transmutation hochradioaktiver Abfälle",
+      "OECD NEA - Financing nuclear new build",
+      "IAEA - SMR Platform Annual Report",
+    ],
+  },
+  {
     title: "„Kernenergie wäre die einfache Lösung“",
     slug: "kernenergie-einfache-loesung",
     shortJudgement: "Strategiebehauptung mit hohen Zeit-, Kosten- und Risikooffenheiten.",
@@ -1766,11 +1941,81 @@ const deepDiveSlugs = [
   "e-autos-schlimmer-als-verbrenner",
   "batterien-sind-nicht-recyclebar",
   "klimaschutz-deindustrialisiert-deutschland",
+  "kernenergie-wieder-in-deutschland",
   "kernenergie-einfache-loesung",
   "fusion-loest-das-problem",
 ];
 
 const deepDiveDetails = {
+  "kernenergie-wieder-in-deutschland": {
+    title: "„Kernkraft zurück?“",
+    subtitle: "CO₂-arm heißt nicht automatisch sinnvoll für Deutschland",
+    confidence: "hoch",
+    readingTime: "18 Minuten",
+    leadQuestion: "Welche Energieoption senkt Emissionen am schnellsten, zuverlässigsten, sichersten und günstigsten - mit den geringsten Langzeitrisiken?",
+    claimAnatomy: {
+      original: "Kernkraft zurück?",
+      extended: "Deutschland sollte zur Kernkraft zurück, weil Atomstrom CO₂-arm, rational und versorgungssicher sei.",
+      trueCore: "Kernkraftwerke erzeugen im Betrieb sehr wenig CO₂, liefern wetterunabhängig Strom und haben eine hohe Energiedichte.",
+      missingContext:
+        "Für Deutschland zählen Bauzeit, Kosten, Finanzierung, Endlager, Rückbau, Sicherheit, Kühlwasser, Fachkräfte, Lieferketten, Systemflexibilität und Opportunitätskosten.",
+      falseConclusion: "Aus CO₂-arm im Betrieb folgt nicht automatisch schnell, günstig, risikoarm oder systemisch optimal.",
+    },
+    trueText:
+      "Kernenergie ist im Betrieb CO₂-arm und kann in Ländern mit bestehender Flotte anders bewertet werden als in Deutschland. Forschung zu SMR, Gen IV oder Transmutation ist legitim. Aber eine deutsche Rückkehr ist keine moralische Abkürzung, sondern eine hochkomplexe Infrastruktur-, Finanzierungs-, Sicherheits- und Entsorgungsentscheidung.",
+    missingItems: [
+      "Die letzten deutschen AKW sind seit dem 15. April 2023 abgeschaltet.",
+      "Neustart wäre kein Umlegen eines Schalters, sondern eine Genehmigungs-, Sicherheits-, Brennstoff-, Personal- und Betreiberfrage.",
+      "Neubau dauert lange und konkurriert mit Maßnahmen, die sofort oder deutlich früher wirken können.",
+      "Stromgestehungskosten sind nicht Endkundenpreise; Finanzierung, Risikoübernahme, Rückbau, Endlager und Systemintegration müssen separat betrachtet werden.",
+      "Endlagerung hochradioaktiver Abfälle ist in Deutschland noch nicht gelöst.",
+      "Transmutation ersetzt nach heutigem Stand kein Endlager.",
+      "Gesicherte Leistung ist nicht dasselbe wie starre Grundlast.",
+      "Kühlwasser, Hitzeperioden, Sicherheitsarchitektur, Sabotageschutz und Uran-/Brennstoffketten gehören zur Bilanz.",
+      "Jede Milliarde und jede Fachkraft kann nur einmal eingesetzt werden.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty: "Mittel bis hoch bei Neubaukosten, Genehmigungspfaden, Finanzierung, Betreiberbereitschaft, SMR-Reife und politischer Akzeptanz in Deutschland.",
+      sourceKeys: [
+        "base_atomausstieg",
+        "bmuv_atomkraftwerke_deutschland",
+        "fraunhofer_lcoe_2024",
+        "bge_endlagersuche",
+        "base_transmutation",
+        "oecd_nea_financing_new_nuclear",
+        "iaea_smr_platform",
+      ],
+    },
+    wirkstoff: {
+      label: "CO₂-arme Technik als Abkürzungsversprechen",
+      description: "Ein realer Vorteil der Kernenergie wird zum Gesamtargument für eine Rückkehr zur Kernkraft erweitert.",
+      mechanism: "Die Aussage verschiebt Aufmerksamkeit von Zeit, Kosten, Endlager, Rückbau, Sicherheit und Alternativen auf einen starken Klimaindikator.",
+      resonance: ["Angst vor Stromausfall", "Dunkelflaute", "Industrieverlust", "Kontrollverlust", "Technikvertrauen", "Rationalität gegen Ideologie"],
+    },
+    narrative: {
+      message: "Kernkraft ist die einzige rationale Lösung, alles andere ist Ideologie.",
+      emotional: "Sicherheitsgefühl, Kontrollillusion, Technikvertrauen und Abwertung politischer Gegner.",
+      political: "Investitionen in erneuerbare Systemarchitektur werden delegitimiert oder verzögert.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Menschen verwechseln CO₂-arm im Betrieb mit vollständiger Systembilanz."],
+      ["Wirkung 2. Ordnung", "Netze, Speicher, Effizienz, Lastmanagement und flexible Kraftwerke wirken weniger dringlich."],
+      ["Wirkung 3. Ordnung", "Kapital, Planungskapazität und Öffentlichkeit binden sich an eine späte Großprojektlogik."],
+    ],
+    falseActions: [
+      ["Klima", "Zu späte Wirkung kann Emissionsminderungen im entscheidenden Jahrzehnt verfehlen."],
+      ["Haushalt", "Hohe Kapitalbindung und staatliche Garantien verdrängen schnellere Maßnahmen."],
+      ["Energie", "Systemflexibilität, Speicher, Netze und Lastmanagement werden unterschätzt."],
+      ["Endlager", "Langzeitverantwortung wird politisch in die Zukunft verschoben."],
+      ["Demokratie", "Energiepolitik wird Lagerkampf statt transparenter Wirkungsvergleich."],
+      ["Sicherheit", "Sicherheits-, Sabotage-, Zwischenlager- und Entsorgungsrisiken müssen über Jahrzehnte getragen werden."],
+    ],
+    solutionLead: "Die WÖk macht aus der Lagerfrage ein Technologie-Wirkungsgate mit Zeit, Kosten, Risiko, Endlager und Alternativen.",
+    clipHook: "Kernkraft ist CO₂-arm im Betrieb. Aber die Klimakrise wartet nicht auf Großprojekte, die vielleicht in 15 bis 25 Jahren wirken.",
+    caption: "Kernenergie prüfen: CO₂, Zeit, Kosten, Endlager, Rückbau, Sicherheit, Flexibilität und Opportunitätskosten.",
+  },
   "deutschland-nur-zwei-prozent": {
     title: "„Deutschland ist nur für 2 % verantwortlich“",
     subtitle: "Wahrer Kern, falsche Schlussfolgerung",
@@ -2413,6 +2658,12 @@ const psychologyBySlug = {
     triggers: ["Versorgungssicherheit", "Industrieangst", "Technikvertrauen"],
     patterns: ["Zeitpfad ausblenden", "Kosten externalisieren", "Systemintegration verkürzen"],
     why: "Ein großes Kraftwerk fühlt sich kontrollierbarer an als ein verteiltes Energiesystem mit Netzen, Speichern und Flexibilität.",
+  },
+  "kernenergie-wieder-in-deutschland": {
+    effects: ["Solutionism", "Authority Bias", "Status-quo-Bias", "Technological Fix Bias", "Komplexitätsreduktion"],
+    triggers: ["Angst vor Stromausfall", "Dunkelflaute", "Industrieverlust", "Kontrollverlust", "Technikstolz"],
+    patterns: ["Einzelindikator als Gesamturteil", "Zeitfenster ausblenden", "Kosten ausblenden", "Transmutation-Joker", "Opportunitätskosten unsichtbar machen"],
+    why: "Kernkraft bietet psychologisch ein starkes Versprechen: viel Energie, wenig CO₂, große Technik und scheinbare Kontrolle. Dadurch erscheint sie einfacher, obwohl sie institutionell, finanziell und sicherheitlich hochkomplex ist.",
   },
   "fusion-loest-das-problem": {
     effects: ["Optimismusbias", "Gegenwartsbias", "Technikwunder-Aufschub"],
@@ -4233,6 +4484,15 @@ const industryNarrativePages = [
   ["falsche-standortrechnung", "Falsche Standortrechnung", "Wenn nur sichtbare Umbaukosten zählen und Systemvorteile verschwinden.", "hoch", "Die falsche Standortrechnung vergleicht Transformationsinvestitionen mit einem scheinbar kostenlosen Status quo. Dadurch werden Netze, Speicher, Erneuerbare, Effizienz, Industriecluster und vermiedene fossile Kosten zu Belastungen, während Brennstoffimporte, Klimafolgen und Abhängigkeiten unsichtbar bleiben.", "CAPEX und OPEX trennen, Bilanzgrenze erweitern und Standortwirkung statt Einzelpreis behaupten."],
 ];
 
+const nuclearNarrativePages = [
+  ["kernkraft-als-rettung", "Kernkraft als Rettung", "Wenn CO₂-armer Betrieb als Gesamtbeweis für eine Energielösung genutzt wird.", "hoch", "Das Narrativ macht aus einem realen Vorteil der Kernenergie ein Abkürzungsversprechen. Der wahre Kern ist: Kernkraft ist im Betrieb CO₂-arm und wetterunabhängig. Der Denkfehler entsteht, wenn daraus für Deutschland automatisch schnell, günstig, risikoarm und systemisch optimal wird.", "CO₂-Vorteil anerkennen, dann Zeit, Kosten, Endlager, Rückbau, Sicherheit, Flexibilität und Alternativen öffnen."],
+  ["grundlastnarrativ", "Grundlastnarrativ", "Wenn Versorgungssicherheit mit starrer Dauerproduktion verwechselt wird.", "hoch", "Das Grundlastnarrativ greift ein echtes Bedürfnis nach Versorgungssicherheit auf. Irreführend wird es, wenn ein erneuerbares Stromsystem so behandelt wird, als brauche es vor allem alte Grundlastlogik statt gesicherter Leistung, Flexibilität, Netzen, Speichern, Lastmanagement und Systemdiensten.", "Nicht Grundlast versprechen, sondern gesicherte Leistung und Systemflexibilität nachweisen lassen."],
+  ["transmutation-joker", "Transmutation-Joker", "Wenn ein Forschungsansatz die Endlagerfrage rhetorisch verschwinden lässt.", "hoch", "Transmutation kann bestimmte radioaktive Nuklide theoretisch verändern. Problematisch wird der Frame, wenn Forschung als Beleg genutzt wird, dass Atommüll politisch erledigt sei. Nach heutigem Stand bleibt ein Endlager Teil der Wirkungsbilanz.", "Forschung nicht lächerlich machen, aber Endlagerbedarf und reale Abfallströme sichtbar halten."],
+  ["smr-technikwunder", "SMR-Technikwunder", "Wenn zukünftige Reaktorkonzepte heutige Entscheidungen vertagen sollen.", "mittel", "Small Modular Reactors können Forschung und spätere Technologieentwicklung sein. Zum Technikwunder-Frame werden sie, wenn unbewiesene Serienkosten, Genehmigungspfade, Lieferketten und Entsorgung als kurzfristige Lösung für Deutschlands 2030- und 2035-Ziele verkauft werden.", "SMR als Forschung einordnen und fragen: Welche Leistung steht wann, zu welchen Kosten und mit welcher Entsorgung real bereit?"],
+  ["rationalitaet-gegen-ideologie", "Rationalität gegen Ideologie", "Wenn eine Technologiepräferenz als alleinige Vernunft gerahmt wird.", "hoch", "Der Frame wirkt stark, weil er nüchtern klingt. Er setzt Kernkraft als rationale Technik und Erneuerbare als Ideologie. Wirkungsökonomisch ist aber nicht das Lager rational, sondern der transparente Vergleich nach Zeit, Kosten, Risiko, Systemnutzen und Alternativenwirkung.", "Rationalität nicht als Selbstetikett akzeptieren, sondern Wirkungskriterien verlangen."],
+  ["zeitfensterblindheit", "Zeitfensterblindheit", "Wenn eine Lösung bewertet wird, ohne zu fragen, wann sie wirkt.", "hoch", "Zeitfensterblindheit macht aus einer möglichen späteren Option eine heutige Antwort. In der Klimakrise zählt aber, welche Maßnahme bis 2030, 2035 und 2045 real Emissionen, Kosten und Risiken senkt.", "Jede Technologie mit Jahreszahl, Baupfad, Genehmigung, Finanzierung und Alternativenkosten prüfen."],
+];
+
 const industryGlossaryTerms = [
   ["deindustrialisierungsnarrativ", "Deindustrialisierungsnarrativ", "Erzählmuster, das realen Transformationsstress als Beweis deutet, Klimaschutz zerstöre Industrie.", "Der Begriff hilft, reale Standortprobleme ernst zu nehmen, ohne daraus eine falsche Rückkehr-zum-Fossilen-Logik zu machen."],
   ["standortwirkung", "Standortwirkung", "Gesamte Wirkung politischer, infrastruktureller und wirtschaftlicher Bedingungen auf Wertschöpfung, Beschäftigung, Resilienz und demokratische Stabilität eines Standorts.", "Standortwirkung fragt nicht nur nach einem einzelnen Preis, sondern nach Investitionsfähigkeit, Infrastruktur, Lieferketten, Know-how und Zukunftsmärkten."],
@@ -4289,6 +4549,31 @@ function renderIndustryNarrativePage([slug, title, subtitle, riskLevel, abstract
           <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht beschwichtigen, nicht triumphieren. Erst reale Standortprobleme anerkennen, dann Bilanzgrenze öffnen und konkrete Transformationshebel verlangen.</p></article>
         </div>
         <p><a class="btn btn-primary" href="../../live/klimaschutz-deindustrialisiert-deutschland/">Industrie-Dossier öffnen</a></p>
+      </section>
+    </main>`;
+  return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
+}
+
+function renderNuclearNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / ${escapeHtml(title)}</nav>
+          <p class="hero-kicker">Narrativbibliothek · Kernenergie</p>
+          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(abstract)}</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Wirkungsrisiko: ${escapeHtml(riskLevel)}</span></p>
+        </div>
+      </section>
+      ${topicSubnav("Narrative", "../")}
+      ${summaryGrid([["Risiko", riskLevel, riskLevel === "hoch" ? "critical" : "warning"], ["Typische Wirkung", "Ein realer Technikvorteil wird zum Gesamturteil erweitert.", "warning"], ["Gegenbewegung", response, "positive"], ["Leuchtturm-Dossier", "Kernkraft zurück?", "positive"]], `${title} Summary`)}
+      <section class="section">
+        <div class="card-grid two">
+          <article class="card"><p class="card-kicker">Psychologischer Hebel</p><h2 class="card-title">Kontrolle wirkt einfacher als Systemarchitektur.</h2><p class="card-text">Solutionism, Authority Bias, technologische Fixierung, Nostalgie und Komplexitätsreduktion machen die Rückkehrerzählung anschlussfähig.</p></article>
+          <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Erst den CO₂-Kern anerkennen. Dann Zeitfenster, Finanzierung, Endlager, Rückbau, Sicherheit und Opportunitätskosten in die Debatte holen.</p></article>
+        </div>
+        <p><a class="btn btn-primary" href="../../live/kernenergie-wieder-in-deutschland/">Kernenergie-Dossier öffnen</a></p>
       </section>
     </main>`;
   return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
@@ -4403,6 +4688,62 @@ writeFile("content/wirkungsradar/source-packs/wind-energy-nature-v1.yaml", `# Ge
   ])),
 }).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/industry-transformation-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(industrySourcePack).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/nuclear-germany-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
+  id: "nuclear-germany-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  dossier: "kernenergie-wieder-in-deutschland",
+  sources: {
+    base_atomausstieg: {
+      label: "BASE - Ausstieg aus der Atomkraft",
+      url: "https://www.base.bund.de/de/nukleare-sicherheit/atomausstieg/ausstieg-atomkraft/ausstieg-atomkraft_inhalt.html",
+      use_for: ["Abschaltung letzte drei AKW 15. April 2023", "Atomausstieg Deutschland"],
+      warning: "Offizielle Quelle; politische Neubewertungen regelmäßig prüfen.",
+    },
+    bmuv_atomkraftwerke_deutschland: {
+      label: "BMUV - Atomkraftwerke in Deutschland",
+      url: "https://www.bundesumweltministerium.de/themen/nukleare-sicherheit/aufsicht-ueber-atomkraftwerke/atomkraftwerke-in-deutschland",
+      use_for: ["Berechtigungen zum Leistungsbetrieb erloschen", "Emsland, Isar 2, Neckarwestheim 2"],
+      warning: "Rechts- und Genehmigungsstand regelmäßig prüfen.",
+    },
+    fraunhofer_lcoe_2024: {
+      label: "Fraunhofer ISE - Stromgestehungskosten erneuerbare Energien 2024",
+      url: "https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html",
+      use_for: ["Kostenvergleich neuer Anlagen in Deutschland", "PV, Wind, Kernkraft und fossile Kraftwerke"],
+      warning: "LCOE ist nicht Endkundenpreis; Entsorgung, Versicherung und Systemkosten separat prüfen.",
+    },
+    bge_endlagersuche: {
+      label: "BGE - Endlagersuche für hochradioaktive Abfälle",
+      url: "https://www.bge.de/de/endlagersuche/",
+      use_for: ["hochradioaktiver Abfall", "Standortauswahl", "Menge und Radioaktivität"],
+      warning: "Stand der Endlagersuche regelmäßig aktualisieren.",
+    },
+    base_zeitperspektive_endlager: {
+      label: "BASE - Zeitperspektive Endlagersuche",
+      url: "https://www.base.bund.de/de/endlager/endlager-sicherheit/zeitperspektive/zeitbedarf-endlagersuche_inhalt.html",
+      use_for: ["Zeitbedarf Endlagersuche", "Standortauswahlgesetz"],
+      warning: "Zeitpläne können sich politisch und verfahrenstechnisch ändern.",
+    },
+    base_transmutation: {
+      label: "BASE - Transmutation hochradioaktiver Abfälle",
+      url: "https://www.base.bund.de/de/nukleare-sicherheit/kerntechnik/partitionierung-transmutation/partitionierung-transmutation.html",
+      use_for: ["Transmutation", "Endlager bleibt erforderlich", "hochradioaktive Abfälle"],
+      warning: "Forschungsthema; nicht als kurzfristige Entsorgungslösung darstellen.",
+    },
+    oecd_nea_financing_new_nuclear: {
+      label: "OECD NEA - Financing nuclear new build",
+      url: "https://www.oecd-nea.org/upload/docs/application/pdf/2024-09/nea_publication_2_2024-09-18_16-50-13_471.pdf",
+      use_for: ["Finanzierung neuer Kernkraft", "Kosten- und Verzögerungsrisiken"],
+      warning: "OECD NEA ist nuklearfachliche Institution; für Finanzierungsrisiken dennoch relevant.",
+    },
+    iaea_smr_platform: {
+      label: "IAEA - SMR Platform Annual Report",
+      url: "https://nucleus.iaea.org/sites/smr/Shared%20Documents/IAEA%20SMR%20Platform%20Annual%20Report%202025.pdf",
+      use_for: ["SMR-Forschung", "Sicherheits-, Rechts- und Infrastrukturfragen"],
+      warning: "SMR-Entwicklung nicht mit kommerzieller Massenverfügbarkeit verwechseln.",
+    },
+  },
+}).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy-mapping.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(mapping).trim()}\n`);
 writeFile("content/wirkungsradar/climate-energy.yml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(dataModel()).trim()}\n`);
 writeFile("wirkungsradar/detail/index.html", renderDetailIndex());
@@ -4431,6 +4772,9 @@ for (const narrative of windNarrativePages) {
 }
 for (const narrative of industryNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderIndustryNarrativePage(narrative));
+}
+for (const narrative of nuclearNarrativePages) {
+  writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderNuclearNarrativePage(narrative));
 }
 for (const term of windGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;

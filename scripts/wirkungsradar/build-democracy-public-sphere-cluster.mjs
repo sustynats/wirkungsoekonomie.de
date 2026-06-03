@@ -443,6 +443,7 @@ const existingClimateDetails = [
   ["energiewende-gescheitert/", "Klima & Energie", "„Die Energiewende ist gescheitert“", "Scheiternsframe statt Engpassanalyse."],
   ["e-autos-schlimmer-als-verbrenner/", "Klima & Energie", "„E-Autos sind schlimmer als Verbrenner“", "Rohstoffangst und Lebenszyklusvergleich."],
   ["batterien-sind-nicht-recyclebar/", "Klima & Energie", "„Batterien sind nicht recyclebar“", "Akku-Faktencheck, Batteriechemie, Recycling und Kreislaufanalyse."],
+  ["kernenergie-wieder-in-deutschland/", "Klima & Energie", "„Kernkraft zurück?“", "CO₂-armer Betrieb, Zeitfenster, Kosten, Endlager und Alternativen."],
   ["kernenergie-einfache-loesung/", "Klima & Energie", "„Kernenergie wäre die einfache Lösung“", "Zeit-, Kosten- und Risikooffenheiten."],
   ["fusion-loest-das-problem/", "Klima & Energie", "„Fusion löst das Problem“", "Forschung ja, Aufschub nein."],
 ];
@@ -914,6 +915,7 @@ const climateLiveSlugs = [
   "windraeder-voegel-wald-beton-rueckbau",
   "e-autos-schlimmer-als-verbrenner",
   "batterien-sind-nicht-recyclebar",
+  "kernenergie-wieder-in-deutschland",
   "kernenergie-einfache-loesung",
   "fusion-loest-das-problem",
   "klimaschutz-deindustrialisiert-deutschland",
@@ -961,6 +963,7 @@ const lighthouseLiveSlugs = [
   "deutschland-nur-zwei-prozent",
   "co2-preis-oder-fossile-systemkosten",
   "e-autos-schlimmer-als-verbrenner",
+  "kernenergie-wieder-in-deutschland",
   "windraeder-voegel-wald-beton-rueckbau",
   "man-darf-ja-nichts-mehr-sagen",
   "mainstreammedien-luegen-alle",
@@ -981,7 +984,7 @@ function renderLiveIndex() {
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Live</nav><p class="hero-kicker">Für TikTok, Panels, Kommentarspalten und Moderation</p><h1 class="hero-title">Wirkungsradar Live</h1><p class="hero-subtitle">Kurze Antworten für Momente, in denen nicht die längste Analyse gewinnt, sondern der ruhigste Rahmen.</p><p class="radar-abstract"><strong>Abstract:</strong> Die Live-Karten übersetzen Wirkungschecks in kurze, sprechbare Antworten. Sie benennen wahren Kern, Denkfehler, Narrativ, Rückfrage und Wirkungspfad.</p><p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Vertrauensniveau: hoch</span></p></div></section>
       ${summaryGrid([["Live-Karten", `${totalCards} Karten aus Klima, Energie, Demokratie und Öffentlichkeit.`, "positive"], ["Format", "10 Sekunden, 30 Sekunden und 2 Minuten.", "neutral"], ["Start", "Erst wahren Kern nennen, dann Denkfehler zeigen.", "positive"], ["Frame", "Narrativ benennen, ohne es zu übernehmen.", "warning"], ["Risiko", "Wirkungsrisiko zeigen, wenn man danach handelt.", "critical"], ["Antwort", "Zur demokratisch prüfbaren Frage zurückführen.", "positive"]], "Live Summary")}
-      <section class="section section-soft" id="leuchtturm-dossiers"><div><div class="section-header"><p class="hero-kicker">Launch-MVP · checked</p><h2>7 Leuchtturm-Dossiers zuerst.</h2><p>Diese Karten sind die öffentlichen Musterseiten: Faktenkern, Denkfehler, Psychologie, Wirkungspfad, WÖk-Antwort und Quellenlogik.</p></div>${liveCardGrid(lighthouseCards)}</div></section>
+      <section class="section section-soft" id="leuchtturm-dossiers"><div><div class="section-header"><p class="hero-kicker">Launch-MVP · checked</p><h2>${lighthouseCards.length} Leuchtturm-Dossiers zuerst.</h2><p>Diese Karten sind die öffentlichen Musterseiten: Faktenkern, Denkfehler, Psychologie, Wirkungspfad, WÖk-Antwort und Quellenlogik.</p></div>${liveCardGrid(lighthouseCards)}</div></section>
       <section class="section section-soft stoeckchen-module" id="stoeckchen-erkennung"><div><div class="section-header"><p class="hero-kicker">Stöckchen-Erkennung</p><h2>Woran erkenne ich ein demokratiebezogenes Stöckchen?</h2></div>${summaryGrid([["Pauschale Delegitimierung", "Alle Medien, Wissenschaftler:innen, Politiker:innen oder Institutionen werden als korrupt dargestellt.", "warning"], ["Falsche Opferrolle", "Kritik, Moderation oder Faktencheck wird als Unterdrückung geframt.", "warning"], ["Verschwörungslogik", "Komplexe Prozesse werden als geheimer Plan gedeutet.", "critical"], ["Frame-Frage", "Die Frage enthält bereits eine unbelegte Behauptung.", "critical"], ["Endlos-Ausweichen", "Sobald ein Punkt geklärt ist, wird zum nächsten Vorwurf gewechselt.", "warning"], ["Host-Satz", "Ich beantworte das, aber ich übernehme nicht den Frame.", "positive"]], "Stöckchen-Erkennung", "stoeckchen-warning-grid")}</div></section>
       ${renderHostControlModule()}
       ${renderPsychologicalStoeckchenChecklist()}

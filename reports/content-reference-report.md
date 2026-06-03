@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T21:12:00.214Z
+Erzeugt: 2026-06-03T21:29:09.735Z
 Resolved references: 6487
-Warnings: 817
+Warnings: 835
 
 ## Warnungen
 
@@ -84,6 +84,9 @@ Warnings: 817
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
+- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
@@ -136,6 +139,9 @@ Warnings: 817
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
+- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
@@ -248,6 +254,9 @@ Warnings: 817
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
+- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
@@ -281,6 +290,9 @@ Warnings: 817
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
+- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
@@ -494,18 +506,6 @@ Warnings: 817
 - [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] schutzrahmen-personenbewertung - Titel aus Slug erzeugt
-- [unresolved-reference] schutzrahmen-personenbewertung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 
 ## Aufgelöste Verweise
 

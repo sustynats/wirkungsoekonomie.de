@@ -189,6 +189,65 @@ sources:
       - "Kernenergie"
       - "Endlagerung"
       - "radioaktive Abfälle"
+  base_atomausstieg:
+    label: "BASE - Ausstieg aus der Atomkraft"
+    url: "https://www.base.bund.de/de/nukleare-sicherheit/atomausstieg/ausstieg-atomkraft/ausstieg-atomkraft_inhalt.html"
+    type: "amtlich"
+    relevance:
+      - "Abschaltung letzte drei AKW"
+      - "Atomausstieg Deutschland"
+      - "15. April 2023"
+  bmuv_atomkraftwerke_deutschland:
+    label: "BMUV - Atomkraftwerke in Deutschland"
+    url: "https://www.bundesumweltministerium.de/themen/nukleare-sicherheit/aufsicht-ueber-atomkraftwerke/atomkraftwerke-in-deutschland"
+    type: "amtlich"
+    relevance:
+      - "Berechtigungen zum Leistungsbetrieb erloschen"
+      - "Emsland"
+      - "Isar 2"
+      - "Neckarwestheim 2"
+  fraunhofer_lcoe_2024:
+    label: "Fraunhofer ISE - Stromgestehungskosten 2024"
+    url: "https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html"
+    type: "wissenschaft"
+    relevance:
+      - "Stromgestehungskosten"
+      - "Kostenvergleich"
+      - "PV"
+      - "Wind"
+      - "Kernkraft"
+  bge_endlagersuche:
+    label: "BGE - Endlagersuche für hochradioaktive Abfälle"
+    url: "https://www.bge.de/de/endlagersuche/"
+    type: "amtlich"
+    relevance:
+      - "hochradioaktiver Abfall"
+      - "Menge und Radioaktivität"
+      - "Standortauswahl"
+  base_transmutation:
+    label: "BASE - Transmutation hochradioaktiver Abfälle"
+    url: "https://www.base.bund.de/de/nukleare-sicherheit/kerntechnik/partitionierung-transmutation/partitionierung-transmutation.html"
+    type: "amtlich"
+    relevance:
+      - "Transmutation"
+      - "Endlager bleibt erforderlich"
+      - "hochradioaktive Abfälle"
+  oecd_nea_financing_new_nuclear:
+    label: "OECD NEA - Financing nuclear new build"
+    url: "https://www.oecd-nea.org/upload/docs/application/pdf/2024-09/nea_publication_2_2024-09-18_16-50-13_471.pdf"
+    type: "fachbericht"
+    relevance:
+      - "Finanzierung neuer Kernkraft"
+      - "Kostenrisiko"
+      - "Verzögerungsrisiko"
+  iaea_smr_platform:
+    label: "IAEA - SMR Platform Annual Report"
+    url: "https://nucleus.iaea.org/sites/smr/Shared%20Documents/IAEA%20SMR%20Platform%20Annual%20Report%202025.pdf"
+    type: "fachbericht"
+    relevance:
+      - "SMR"
+      - "Forschung"
+      - "Sicherheits-, Rechts- und Infrastrukturfragen"
   iea_nuclear:
     label: "IEA - The Path to a New Era for Nuclear Energy"
     url: "https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/executive-summary"

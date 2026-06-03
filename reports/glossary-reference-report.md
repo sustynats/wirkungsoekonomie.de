@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-03T21:11:58.949Z
+- Generated: 2026-06-03T21:29:08.782Z
 - Content pages scanned: 1005
-- Glossary terms indexed: 1311
-- Warnings: 555
+- Glossary terms indexed: 1317
+- Warnings: 561
 
 ## Stichproben
 
@@ -105,6 +105,7 @@
 - term has no content references: bedrohungsverarbeitung
 - term has no content references: belohnungslernen
 - term has no content references: bestaetigungsfehler
+- term has no content references: betriebsemissionen
 - term has no content references: bewegungs-ngo
 - term has no content references: bidirektionales-laden
 - term has no content references: bilanzraum
@@ -163,6 +164,7 @@
 - term has no content references: einspeiseverguetung
 - term has no content references: elektorale-autokratie
 - term has no content references: elektromobilitaetsdienstleister
+- term has no content references: endlager
 - term has no content references: energiedichte
 - term has no content references: energiemanagementsystem
 - term has no content references: energiesicherheit
@@ -259,6 +261,7 @@
 - term has no content references: kapazitaetsreserve
 - term has no content references: kaskadennutzung
 - term has no content references: kernenergie
+- term has no content references: kernkraft-neubau
 - term has no content references: klassischer-liberalismus
 - term has no content references: kleptokratie
 - term has no content references: kognitive-belastung
@@ -287,6 +290,7 @@
 - term has no content references: ladesaeule
 - term has no content references: laffer-kurve
 - term has no content references: lastgang
+- term has no content references: lebenszyklus-emissionen
 - term has no content references: lebenszyklusinventar
 - term has no content references: lebenszykluswirkungsabschaetzung
 - term has no content references: legislative-footprint
@@ -355,8 +359,4 @@
 - term has no content references: netzreserve
 - term has no content references: netzspeicher
 - term has no content references: netzverlust
-- term has no content references: netzvertraeglichkeitspruefung
-- term has no content references: netzwerkeffekt
-- term has no content references: neuigkeitsbias
-- term has no content references: neuroplastizitaet
-- ... 255 weitere Warnungen
+- ... 261 weitere Warnungen

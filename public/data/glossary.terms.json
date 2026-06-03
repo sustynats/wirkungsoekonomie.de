@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T21:10:29.829Z",
+  "generatedAt": "2026-06-03T21:27:53.656Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -26203,6 +26203,55 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": ""
+    },
+    {
+      "id": "betriebsemissionen",
+      "termId": "betriebsemissionen",
+      "label": "Betriebsemissionen",
+      "canonicalLabel": "Betriebsemissionen",
+      "slug": "betriebsemissionen",
+      "aliases": [
+        "Betriebsemissionen"
+      ],
+      "shortDefinition": "Emissionen, die während des Betriebs einer Anlage entstehen.",
+      "definition": "Emissionen, die während des Betriebs einer Anlage entstehen.",
+      "hoverDefinition": "Betriebsemissionen sind nur eine Bilanzgrenze. Bau, Brennstoff, Rückbau und Entsorgung können zusätzliche Wirkung erzeugen.",
+      "categories": [
+        "wirkungsradar",
+        "klima-und-energie",
+        "kernenergie"
+      ],
+      "category": "Wirkungsradar-Begriff",
+      "sourceSection": "Wirkungsradar Kernenergie",
+      "relatedTerms": [
+        "lebenszyklus-emissionen",
+        "kernkraft-neubau",
+        "stromgestehungskosten"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "usageNote": "Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "betriebsemissionen",
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Kernenergie Deutschland",
+      "synonyms": [
+        "Betriebsemissionen"
+      ],
+      "longDefinition": "Emissionen, die während des Betriebs einer Anlage entstehen.",
+      "woekRelation": "Emissionen, die während des Betriebs einer Anlage entstehen.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/betriebsemissionen/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1312,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "bewegungs-ngo",
@@ -68132,6 +68181,55 @@
       "glossaryOrderKey": "Endenergie",
       "dataStandardsGroup": "",
       "priority": 220
+    },
+    {
+      "id": "endlager",
+      "termId": "endlager",
+      "label": "Endlager",
+      "canonicalLabel": "Endlager",
+      "slug": "endlager",
+      "aliases": [
+        "Endlager"
+      ],
+      "shortDefinition": "Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.",
+      "definition": "Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.",
+      "hoverDefinition": "Die Endlagerfrage gehört zur Kernkraftbilanz, auch wenn der Strom längst erzeugt wurde.",
+      "categories": [
+        "wirkungsradar",
+        "klima-und-energie",
+        "kernenergie"
+      ],
+      "category": "Wirkungsradar-Begriff",
+      "sourceSection": "Wirkungsradar Kernenergie",
+      "relatedTerms": [
+        "transmutation",
+        "intergenerationelle-verantwortung",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "usageNote": "Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "endlager",
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Kernenergie Deutschland",
+      "synonyms": [
+        "Endlager"
+      ],
+      "longDefinition": "Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.",
+      "woekRelation": "Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/endlager/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1316,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "energie",
@@ -139866,6 +139964,56 @@
       "priority": 468
     },
     {
+      "id": "kernkraft-neubau",
+      "termId": "kernkraft-neubau",
+      "label": "Kernkraft-Neubau",
+      "canonicalLabel": "Kernkraft-Neubau",
+      "slug": "kernkraft-neubau",
+      "aliases": [
+        "Kernkraft-Neubau"
+      ],
+      "shortDefinition": "Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.",
+      "definition": "Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.",
+      "hoverDefinition": "Für Klimaschutz zählt nicht nur, ob eine Anlage CO₂-arm wäre, sondern wann sie real Strom liefert.",
+      "categories": [
+        "wirkungsradar",
+        "klima-und-energie",
+        "kernenergie"
+      ],
+      "category": "Wirkungsradar-Begriff",
+      "sourceSection": "Wirkungsradar Kernenergie",
+      "relatedTerms": [
+        "betriebsemissionen",
+        "lebenszyklus-emissionen",
+        "opportunitaetskosten",
+        "endlager"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "usageNote": "Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "kernkraft-neubau",
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Kernenergie Deutschland",
+      "synonyms": [
+        "Kernkraft-Neubau"
+      ],
+      "longDefinition": "Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.",
+      "woekRelation": "Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/kernkraft-neubau/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1317,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
       "sourceDocument": "Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente",
       "sourceSection": "Automatisierung, Maschinenleistung, Sozialfinanzierung und Wirkungseinkommen",
@@ -158619,6 +158767,55 @@
       "glossaryOrderKey": "lebenswirkung",
       "dataStandardsGroup": "",
       "officialSources": []
+    },
+    {
+      "id": "lebenszyklus-emissionen",
+      "termId": "lebenszyklus-emissionen",
+      "label": "Lebenszyklus-Emissionen",
+      "canonicalLabel": "Lebenszyklus-Emissionen",
+      "slug": "lebenszyklus-emissionen",
+      "aliases": [
+        "Lebenszyklus-Emissionen"
+      ],
+      "shortDefinition": "Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.",
+      "definition": "Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.",
+      "hoverDefinition": "Ein fairer Vergleich braucht den Lebenszyklus, nicht nur den Betrieb.",
+      "categories": [
+        "wirkungsradar",
+        "klima-und-energie",
+        "kernenergie"
+      ],
+      "category": "Wirkungsradar-Begriff",
+      "sourceSection": "Wirkungsradar Kernenergie",
+      "relatedTerms": [
+        "betriebsemissionen",
+        "produktlebenszyklus",
+        "systemgrenze"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "usageNote": "Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "lebenszyklus-emissionen",
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Kernenergie Deutschland",
+      "synonyms": [
+        "Lebenszyklus-Emissionen"
+      ],
+      "longDefinition": "Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.",
+      "woekRelation": "Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/lebenszyklus-emissionen/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1313,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "lebenszyklusanalyse",
@@ -278685,6 +278882,55 @@
       "priority": 929
     },
     {
+      "id": "small-modular-reactor",
+      "termId": "small-modular-reactor",
+      "label": "Small Modular Reactor",
+      "canonicalLabel": "Small Modular Reactor",
+      "slug": "small-modular-reactor",
+      "aliases": [
+        "Small Modular Reactor"
+      ],
+      "shortDefinition": "Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden soll.",
+      "definition": "Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden soll.",
+      "hoverDefinition": "SMR sind eine mögliche Zukunftstechnologie, aber keine heute verfügbare Massenlösung für Deutschlands 2030-Ziele.",
+      "categories": [
+        "wirkungsradar",
+        "klima-und-energie",
+        "kernenergie"
+      ],
+      "category": "Wirkungsradar-Begriff",
+      "sourceSection": "Wirkungsradar Kernenergie",
+      "relatedTerms": [
+        "kernkraft-neubau",
+        "zeitwirkung",
+        "technikwunder"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "usageNote": "Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "small-modular-reactor",
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Kernenergie Deutschland",
+      "synonyms": [
+        "Small Modular Reactor"
+      ],
+      "longDefinition": "Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden soll.",
+      "woekRelation": "Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden soll.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/small-modular-reactor/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1315,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "smart-charging",
       "termId": "smart-charging",
       "label": "Smart Charging",
@@ -311682,6 +311928,55 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": ""
+    },
+    {
+      "id": "transmutation",
+      "termId": "transmutation",
+      "label": "Transmutation",
+      "canonicalLabel": "Transmutation",
+      "slug": "transmutation",
+      "aliases": [
+        "Transmutation"
+      ],
+      "shortDefinition": "Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften radioaktiver Abfälle zu verändern.",
+      "definition": "Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften radioaktiver Abfälle zu verändern.",
+      "hoverDefinition": "Transmutation ersetzt nach heutigem Stand kein Endlager.",
+      "categories": [
+        "wirkungsradar",
+        "klima-und-energie",
+        "kernenergie"
+      ],
+      "category": "Wirkungsradar-Begriff",
+      "sourceSection": "Wirkungsradar Kernenergie",
+      "relatedTerms": [
+        "endlager",
+        "kernkraft-neubau",
+        "intergenerationelle-verantwortung"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "usageNote": "Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.",
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "transmutation",
+      "lastUpdated": "2026-06-03",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "source": "Wirkungsradar Kernenergie Deutschland",
+      "synonyms": [
+        "Transmutation"
+      ],
+      "longDefinition": "Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften radioaktiver Abfälle zu verändern.",
+      "woekRelation": "Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften radioaktiver Abfälle zu verändern.",
+      "statusNote": "",
+      "pageUrl": "/begriffe/transmutation/",
+      "classicGlossary": true,
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1314,
+      "officialSources": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": []
     },
     {
       "id": "transparenz",

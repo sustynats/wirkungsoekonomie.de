@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T21:10:30.051Z",
+  "generatedAt": "2026-06-03T21:27:53.832Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -2560,6 +2560,29 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      ],
+      "relatedObjections": []
+    },
+    "betriebsemissionen": {
+      "label": "Betriebsemissionen",
+      "slug": "betriebsemissionen",
+      "url": "/begriffe/betriebsemissionen/",
+      "hoverDefinition": "Betriebsemissionen sind nur eine Bilanzgrenze. Bau, Brennstoff, Rückbau und Entsorgung können zusätzliche Wirkung erzeugen.",
+      "shortDefinition": "Emissionen, die während des Betriebs einer Anlage entstehen.",
+      "category": "Wirkungsradar-Begriff",
+      "synonyms": [
+        "Betriebsemissionen"
+      ],
+      "relatedTerms": [
+        "lebenszyklus-emissionen",
+        "kernkraft-neubau",
+        "stromgestehungskosten"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
       ],
       "relatedObjections": []
     },
@@ -6710,6 +6733,29 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "endlager": {
+      "label": "Endlager",
+      "slug": "endlager",
+      "url": "/begriffe/endlager/",
+      "hoverDefinition": "Die Endlagerfrage gehört zur Kernkraftbilanz, auch wenn der Strom längst erzeugt wurde.",
+      "shortDefinition": "Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.",
+      "category": "Wirkungsradar-Begriff",
+      "synonyms": [
+        "Endlager"
+      ],
+      "relatedTerms": [
+        "transmutation",
+        "intergenerationelle-verantwortung",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
       "relatedObjections": []
     },
     "energie": {
@@ -14769,6 +14815,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "kernkraft-neubau": {
+      "label": "Kernkraft-Neubau",
+      "slug": "kernkraft-neubau",
+      "url": "/begriffe/kernkraft-neubau/",
+      "hoverDefinition": "Für Klimaschutz zählt nicht nur, ob eine Anlage CO₂-arm wäre, sondern wann sie real Strom liefert.",
+      "shortDefinition": "Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.",
+      "category": "Wirkungsradar-Begriff",
+      "synonyms": [
+        "Kernkraft-Neubau"
+      ],
+      "relatedTerms": [
+        "betriebsemissionen",
+        "lebenszyklus-emissionen",
+        "opportunitaetskosten",
+        "endlager"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "relatedObjections": []
+    },
     "ki-und-arbeit": {
       "label": "KI und Arbeit",
       "slug": "ki-und-arbeit",
@@ -16689,6 +16759,29 @@
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
         "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "lebenszyklus-emissionen": {
+      "label": "Lebenszyklus-Emissionen",
+      "slug": "lebenszyklus-emissionen",
+      "url": "/begriffe/lebenszyklus-emissionen/",
+      "hoverDefinition": "Ein fairer Vergleich braucht den Lebenszyklus, nicht nur den Betrieb.",
+      "shortDefinition": "Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.",
+      "category": "Wirkungsradar-Begriff",
+      "synonyms": [
+        "Lebenszyklus-Emissionen"
+      ],
+      "relatedTerms": [
+        "betriebsemissionen",
+        "produktlebenszyklus",
+        "systemgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
       ],
       "relatedObjections": []
     },
@@ -28650,6 +28743,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "small-modular-reactor": {
+      "label": "Small Modular Reactor",
+      "slug": "small-modular-reactor",
+      "url": "/begriffe/small-modular-reactor/",
+      "hoverDefinition": "SMR sind eine mögliche Zukunftstechnologie, aber keine heute verfügbare Massenlösung für Deutschlands 2030-Ziele.",
+      "shortDefinition": "Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden soll.",
+      "category": "Wirkungsradar-Begriff",
+      "synonyms": [
+        "Small Modular Reactor"
+      ],
+      "relatedTerms": [
+        "kernkraft-neubau",
+        "zeitwirkung",
+        "technikwunder"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "relatedObjections": []
+    },
     "smart-charging": {
       "label": "Smart Charging",
       "slug": "smart-charging",
@@ -31865,6 +31981,29 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "transmutation": {
+      "label": "Transmutation",
+      "slug": "transmutation",
+      "url": "/begriffe/transmutation/",
+      "hoverDefinition": "Transmutation ersetzt nach heutigem Stand kein Endlager.",
+      "shortDefinition": "Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften radioaktiver Abfälle zu verändern.",
+      "category": "Wirkungsradar-Begriff",
+      "synonyms": [
+        "Transmutation"
+      ],
+      "relatedTerms": [
+        "endlager",
+        "kernkraft-neubau",
+        "intergenerationelle-verantwortung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
       "relatedObjections": []
     },
     "transparenz": {
