@@ -1,30 +1,152 @@
-version: "0.1"
+version: "0.2"
 last_updated: "2026-06-03"
 system:
   title: "Wirkungsradar"
   claim: "Fakten, Narrative und Wirkungspfade im Check."
+  purpose: "Oeffentliche Aussagen nach Faktenlage, Narrativ, Wirkungspfad, Folgenanalyse und wirkungsoekonomischer Antwort pruefen."
   path:
-    - "Aussage"
-    - "gesellschaftlicher Wirkstoff"
-    - "Wirkungspotenzial"
-    - "Wirkungsrisiko"
-    - "Wirkmechanismus"
-    - "Narrativ / Frame"
-    - "Resonanzraum"
+    - "Eyebrow / Kategorie"
+    - "Titel"
+    - "Kurzuntertitel"
+    - "Abstract"
+    - "Summary-Box / Schnellueberblick"
+    - "Host-Antworten"
+    - "Wirkstoff -> Wirkungspfad"
     - "Faktenpruefung"
+    - "Narrativanalyse"
     - "Folgenanalyse"
-    - "Wirkung erster, zweiter und dritter Ordnung"
     - "Bewertung nach Mensch, Planet und Demokratie"
     - "SDG-/SDG+-Bezug"
-    - "wirkungsokonomische Loesung"
-    - "faktenbasierte Antwort"
+    - "wirkungsoekonomische Antwort"
+    - "interne Links"
+    - "externe Quellen"
+    - "Aenderungs- und Quellenstand"
+glossary_hover:
+  wirkung:
+    label: "Wirkung"
+    hover: "Tatsaechliche Veraenderung von Zustaenden. Wirkung kann positiv, negativ oder neutral sein."
+  wirkungspotenzial:
+    label: "Wirkungspotenzial"
+    hover: "Moeglichkeit, dass Wirkung eintreten kann. Noch keine eingetretene Wirkung."
+  wirkstoff:
+    label: "Wirkstoff"
+    hover: "Didaktische Analogie fuer einen Ausloeser mit Wirkungspotenzial, etwa Aussage, Narrativ, Gesetz, Preis, Produkt oder Algorithmus."
+  wirkungsrisiko:
+    label: "Wirkungsrisiko"
+    hover: "Moeglichkeit negativer oder destabilisierender Wirkung. Noch kein eingetretener Schaden."
+  wirkmechanismus:
+    label: "Wirkmechanismus"
+    hover: "Erklaerung, wie eine Wirkung entstehen kann."
+  wirkungspfad:
+    label: "Wirkungspfad"
+    hover: "Plausibler Weg von Ausloeser ueber Mechanismus zu moeglicher oder tatsaechlicher Wirkung."
+  resonanzraum:
+    label: "Resonanzraum"
+    hover: "Sozialer, medialer oder emotionaler Raum, in dem Sprache, Bilder, Narrative oder Ereignisse Anschluss finden."
+  sdg_plus:
+    label: "SDG+"
+    hover: "WOek-Erweiterung der SDGs um Demokratie, Medienqualitaet, Rechtsstaatlichkeit, Diskursfaehigkeit, institutionelles Vertrauen und digitale Selbstbestimmung."
+  positive_netto_wirkung:
+    label: "Positive Netto-Wirkung"
+    hover: "Zielgroesse der WOek: systemisch tragfaehige Wirkung fuer Mensch, Planet und Demokratie unter Beruecksichtigung negativer Wirkungen und roter Linien."
+  reverse_merit_order:
+    label: "Reverse Merit Order"
+    hover: "Das schwaechste zentrale Wirkungsfeld begrenzt die Gesamtbewertung. Schwere negative Wirkung darf nicht durch positive Werte an anderer Stelle verdeckt werden."
+  wirkungslenkung:
+    label: "Wirkungslenkung"
+    hover: "Rueckfuehrung bewerteter Wirkung in Anreize, Preise, Steuern, Kapital, Foerderung, Beschaffung oder Entscheidungen."
+  wirkungsblindheit:
+    label: "Wirkungsblindheit"
+    hover: "Zustand, in dem Folgen sichtbar oder plausibel sind, aber nicht in Entscheidungen zurueckgekoppelt werden."
+pages:
+  index:
+    path: "/wirkungsradar/"
+    type: "overview"
+    status: "published"
+    version: "0.2"
+    last_updated: "2026-06-03"
+    seo:
+      title: "Wirkungsradar - Fakten, Narrative und Wirkungspfade im Check"
+      description: "Der Wirkungsradar prueft oeffentliche Aussagen nach Faktenlage, Narrativ, Wirkungspfad, Folgenanalyse und wirkungsoekonomischer Antwort fuer Mensch, Planet und Demokratie."
+    hero:
+      eyebrow: "Wirkungsradar"
+      title: "Fakten, Narrative und Wirkungspfade im Check"
+      subtitle: "Vom gesellschaftlichen Wirkstoff bis zur faktenbasierten Antwort."
+      abstract: "Der Wirkungsradar analysiert oeffentliche Aussagen, Mythen, Halbwahrheiten und demokratiegefaehrdende Narrative. Er fragt nicht nur, ob eine Aussage stimmt, sondern welche Wirkung sie entfalten kann: Welche Emotionen aktiviert sie, welche Handlungen macht sie wahrscheinlicher, welche Folgen haette es, wenn Politik, Medien oder Menschen danach handeln? Jede Analyse verbindet Faktenpruefung, Narrativanalyse, Wirkungspfad, SDG-/SDG+-Bezug und wirkungsoekonomische Loesung. So wird sichtbar, wie Sprache, Daten, Deutung und Entscheidung auf Mensch, Planet und Demokratie wirken."
+      confidence: "hoch"
+    summary:
+      - label: "Was wird geprueft?"
+        value: "Aussagen, Mythen, Narrative, Frames und Stoeckchen."
+      - label: "Was ist der Unterschied?"
+        value: "Nicht nur Wahrheit, sondern Wirkung wird analysiert."
+      - label: "Ziel"
+        value: "Handlungsfaehigkeit, Faktenklarheit und demokratische Resilienz staerken."
+      - label: "Methode"
+        value: "Aussage -> Wirkstoff -> Wirkungspfad -> Folgenanalyse -> Antwort."
+      - label: "Massstab"
+        value: "Mensch, Planet und Demokratie."
+      - label: "Fuer wen?"
+        value: "Buerger:innen, Hosts, Creator:innen, Medien, Bildung und Politik."
+  methode:
+    path: "/wirkungsradar/methode/"
+    type: "method"
+    status: "published"
+    version: "0.2"
+    last_updated: "2026-06-03"
+    seo:
+      title: "Wie der Wirkungsradar Aussagen prueft"
+      description: "Die Methode des Wirkungsradars: Aussage erkennen, Wirkstoff einordnen, Narrativ analysieren, Wirkungspfad pruefen, Folgen bewerten und wirkungsoekonomisch antworten."
+    hero:
+      eyebrow: "Methode"
+      title: "Wie der Wirkungsradar Aussagen prueft"
+      subtitle: "Aussage erkennen. Wirkung verstehen. Antwort finden."
+      abstract: "Der Wirkungsradar prueft oeffentliche Aussagen in mehreren Schritten. Zuerst wird geklaert, was genau behauptet wird und was daran stimmt. Danach wird geprueft, was fehlt, welche Schlussfolgerung nicht traegt und welches Narrativ aktiviert wird. Anschliessend analysiert der Wirkungsradar den moeglichen Wirkungspfad: Welche Emotionen, Entscheidungen oder Handlungen werden wahrscheinlicher? Am Ende steht keine blosse Widerlegung, sondern eine wirkungsoekonomische Antwort, die Faktenklarheit, Handlungsfaehigkeit und positive Netto-Wirkung fuer Mensch, Planet und Demokratie staerkt."
+      confidence: "hoch"
+    summary:
+      - label: "Startpunkt"
+        value: "Eine konkrete Aussage oder ein wiederkehrendes Narrativ."
+      - label: "Erster Schritt"
+        value: "Wahren Kern fair benennen."
+      - label: "Zweiter Schritt"
+        value: "Auslassung, Denkfehler oder falsche Folgerung zeigen."
+      - label: "Dritter Schritt"
+        value: "Wirkstoff, Resonanzraum und Narrativtyp analysieren."
+      - label: "Vierter Schritt"
+        value: "Folgen falschen Handelns sichtbar machen."
+      - label: "Ergebnis"
+        value: "Faktenbasierte, wirkungsoekonomische Antwort."
 checks:
-  - title: "Man darf ja nichts mehr sagen"
+  - id: "man-darf-ja-nichts-mehr-sagen"
+    title: "Man darf ja nichts mehr sagen"
     slug: "man-darf-ja-nichts-mehr-sagen"
     status: "published"
     type: "live-card"
+    version: "0.2"
+    last_updated: "2026-06-03"
+    seo:
+      title: "Man darf ja nichts mehr sagen - Wirkungsradar Live"
+      description: "Was man antworten kann, wenn 'Man darf ja nichts mehr sagen' als Stoeckchen genutzt wird: Kurzantwort, Narrativanalyse, Wirkungspfad und demokratische Einordnung."
+      keywords:
+        - "Meinungsfreiheit"
+        - "Widerspruch"
+        - "Sagbarkeitsnarrativ"
+        - "Wirkungsradar"
+    hero:
+      eyebrow: "Wirkungsradar Live"
+      title: "'Man darf ja nichts mehr sagen'"
+      subtitle: "Opferumkehr, Sagbarkeitsnarrativ und Diskursverschiebung"
+      abstract: "Die Aussage 'Man darf ja nichts mehr sagen' beschreibt manchmal ein echtes Gefuehl von Unsicherheit in ueberhitzten Debatten. Irrefuehrend wird sie, wenn Kritik, Widerspruch, Moderation oder Faktencheck als Zensur umgedeutet werden. Als gesellschaftlicher Wirkstoff kann der Satz ein Opfergefuehl aktivieren und demokratische Gespraechsregeln verschieben. Die wirkungsoekonomische Antwort lautet: Meinungsfreiheit schuetzt vor staatlicher Unterdrueckung, aber nicht vor Widerspruch."
+      confidence: "hoch"
+    summary:
+      judgement: "Nicht grundsaetzlich falsch als Gefuehl, aber haeufig irrefuehrend als politischer Frame."
+      true_core: "Debatten koennen ueberhitzt sein, und Menschen erleben manchmal sozialen Druck."
+      problem: "Widerspruch, Kritik oder Moderation werden als Zensur umgedeutet."
+      narrative: "Opferumkehr / Sagbarkeitsnarrativ / Normalisierung."
+      risk: "Faktencheck, Moderation und Minderheitenschutz werden delegitimiert."
+      host_answer: "Du darfst das sagen. Und andere duerfen widersprechen. Meinungsfreiheit heisst nicht Widerspruchsfreiheit."
     claim:
       original: "Man darf ja nichts mehr sagen."
+      extended: "Man darf ja nichts mehr sagen, also ist Widerspruch oder Moderation Zensur."
       claim_type:
         - "Sagbarkeitsnarrativ"
         - "Opferumkehr"
@@ -50,12 +172,12 @@ checks:
         level: "hoch"
         description: "Wenn Faktenkorrektur, Minderheitenschutz und Moderation delegitimiert werden."
       mechanism: "Widerspruch wird mit staatlicher Zensur verwechselt."
-      wirkungspfad:
+      path:
         - "Aussage"
-        - "Opfergefuehl"
-        - "Kritikabwehr"
-        - "Normalisierung harter Abwertung"
-        - "Verschiebung demokratischer Diskursregeln"
+        - "Kraenkung, Trotz, Opfergefuehl"
+        - "Widerspruch wird als Unterdrueckung gerahmt"
+        - "Kritik und Faktencheck wirken illegitim"
+        - "Demokratische Diskursregeln verschieben sich"
     mpd:
       mensch: "mehr Einschuechterung und weniger Schutz vor Abwertung"
       planet: "indirekt betroffen, wenn Sachdebatten blockiert werden"
@@ -68,16 +190,42 @@ checks:
         - "Schutz vor Manipulation"
     answers:
       ten_seconds: "Du darfst das sagen. Und andere duerfen widersprechen. Meinungsfreiheit heisst nicht Widerspruchsfreiheit."
-      thirty_seconds: "Der wahre Kern ist: Debatten koennen ueberhitzt sein. Aber Kritik ist keine Zensur. Wenn jemand etwas sagt, duerfen andere widersprechen, einordnen oder moderieren."
-      two_minutes: "Der Satz verschiebt den Frame: Ploetzlich geht es nicht mehr um die urspruengliche Aussage, sondern darum, ob die Person angeblich unterdrueckt wird. Meinungsfreiheit schuetzt vor staatlicher Unterdrueckung, nicht vor Widerspruch."
+      thirty_seconds: "Der wahre Kern ist: Debatten koennen ueberhitzt sein. Aber Kritik ist keine Zensur. Wenn jemand etwas sagt, duerfen andere widersprechen, einordnen oder moderieren. Die wirkungsoekonomische Frage ist: Staerkt diese Aussage den Diskurs - oder schwaecht sie Vertrauen, Respekt und demokratische Gespraechsfaehigkeit?"
+      two_minutes: "Ich nehme den Punkt ernst: Viele Menschen sind unsicher, was sie noch sagen koennen. Aber der Satz wird oft als Stoeckchen benutzt. Er verschiebt den Frame: Ploetzlich geht es nicht mehr um die urspruengliche Aussage, sondern darum, ob die Person angeblich unterdrueckt wird. Dabei gilt: Meinungsfreiheit schuetzt vor staatlicher Unterdrueckung, nicht vor Widerspruch, Kritik oder Moderation."
     links:
       page: "/wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/"
-  - title: "Deutschland ist nur fuer 2 % verantwortlich"
+  - id: "deutschland-nur-zwei-prozent"
+    title: "Deutschland ist nur fuer 2 % verantwortlich"
     slug: "deutschland-nur-zwei-prozent"
     status: "published"
     type: "live-card"
+    version: "0.2"
+    last_updated: "2026-06-03"
+    seo:
+      title: "Deutschland ist nur fuer 2 % verantwortlich - Wirkungsradar Live"
+      description: "Warum der Zahlenkern stimmen kann, die Schlussfolgerung aber wirkungsoekonomisch falsch ist."
+      keywords:
+        - "Klimawandel"
+        - "Deutschland 2 Prozent"
+        - "Klimaschutz"
+        - "Wirkungsoekonomie"
+        - "Verzoegerungsnarrativ"
+    hero:
+      eyebrow: "Wirkungsradar Live"
+      title: "'Deutschland ist nur fuer 2 % verantwortlich'"
+      subtitle: "Wahrer Kern, falsche Schlussfolgerung"
+      abstract: "Die Aussage enthaelt einen wahren Kern: Deutschland ist nicht der groesste aktuelle Emittent der Welt, und Klimaschutz braucht internationale Kooperation. Irrefuehrend wird sie, wenn daraus folgt, deutsches Handeln sei wirkungslos. Wirkungsoekonomisch verwechselt die Aussage Anteil mit Hebelwirkung. Ein Land wirkt nicht nur ueber direkte Emissionen, sondern auch ueber Technologie, Industrie, Standards, Lieferketten, Kapitalfluesse, EU-Politik und internationale Glaubwuerdigkeit. Wenn viele Staaten mit 'wir sind zu klein' argumentieren, entsteht kollektive Verzoegerung."
+      confidence: "hoch"
+    summary:
+      judgement: "Wahrer Kern, falsche Schlussfolgerung."
+      true_core: "Deutschland ist nicht der groesste aktuelle Emittent."
+      problem: "Aus kleinerem Anteil wird Wirkungslosigkeit abgeleitet."
+      narrative: "Ohnmachts- und Verzoegerungsnarrativ."
+      risk: "Klimaschutz erscheint nutzlos, Investitionen und Infrastruktur werden verzoegert."
+      host_answer: "Der Zahlenkern kann stimmen, aber die Schlussfolgerung ist falsch: Wirkung entsteht nicht nur durch Groesse, sondern durch Hebel."
     claim:
-      original: "Deutschland ist nur fuer 2 % der weltweiten Emissionen verantwortlich. Also bringt Klimaschutz hier nichts."
+      original: "Deutschland ist nur fuer 2 % verantwortlich."
+      extended: "Deutschland ist nur fuer 2 % verantwortlich, also bringt Klimaschutz hier nichts."
       claim_type:
         - "Halbwahrheit"
         - "falsche Schlussfolgerung"
@@ -104,7 +252,7 @@ checks:
         level: "hoch"
         description: "Wenn aus dem Zahlenargument Nicht-Handeln abgeleitet wird."
       mechanism: "Anteil wird mit Wirkungslosigkeit verwechselt."
-      wirkungspfad:
+      path:
         - "Aussage"
         - "Ohnmachtsgefuehl"
         - "geringere Unterstuetzung"
@@ -126,52 +274,78 @@ checks:
         - "Schutz vor Manipulation"
     answers:
       ten_seconds: "Das ist ein Ohnmachtsnarrativ. Der Zahlenkern kann stimmen, aber die Schlussfolgerung ist falsch: Wirkung entsteht nicht nur durch Groesse, sondern durch Hebel."
-      thirty_seconds: "Ja, Deutschland ist nicht der groesste Emittent. Aber daraus folgt nicht, dass Handeln wirkungslos ist. Wir wirken ueber Technologie, Maerkte, Standards, Lieferketten, EU-Politik und Investitionen."
-      two_minutes: "Der Satz vermischt einen Zahlenkern mit einer falschen politischen Folgerung. Klimawirkung entsteht nicht nur proportional zum nationalen Anteil, sondern auch ueber Hebelwirkung."
+      thirty_seconds: "Ja, Deutschland ist nicht der groesste Emittent. Aber daraus folgt nicht, dass Handeln wirkungslos ist. Wir wirken ueber Technologie, Maerkte, Standards, Lieferketten, EU-Politik und Investitionen. Wenn jedes Land sagt, es sei zu klein, handelt am Ende niemand."
+      two_minutes: "Der Satz vermischt einen Zahlenkern mit einer falschen politischen Folgerung. Klimawirkung entsteht nicht nur proportional zum nationalen Anteil. Ein Industrieland wirkt ueber Technologieentwicklung, Regulierung, Maerkte, Standards, Kapital, Lieferketten und internationale Glaubwuerdigkeit."
     links:
       page: "/wirkungsradar/live/deutschland-nur-zwei-prozent/"
-  - title: "SDGs / Agenda 2030 sind Weltregierung"
-    slug: "sdgs-sind-weltregierung"
+  - id: "sdgs-weltregierung"
+    title: "SDGs / Agenda 2030 sind Weltregierung"
+    slug: "sdgs-weltregierung"
     status: "published"
-    type: "detail"
+    type: "live-card"
+    version: "0.2"
+    last_updated: "2026-06-03"
+    seo:
+      title: "SDGs / Agenda 2030 sind Weltregierung - Wirkungsradar Live"
+      description: "Warum SDGs und Agenda 2030 ein globaler Zielrahmen sind, aber keine Weltregierung."
+      keywords:
+        - "SDGs"
+        - "Agenda 2030"
+        - "Weltregierung"
+        - "Verschwoerungsframe"
+        - "SDG+"
+    hero:
+      eyebrow: "Wirkungsradar Live"
+      title: "'SDGs / Agenda 2030 sind Weltregierung'"
+      subtitle: "Verschwoerungsframe gegen globale Kooperation"
+      abstract: "Die Aussage 'SDGs oder Agenda 2030 sind Weltregierung' deutet einen globalen Zielrahmen in ein Herrschaftsnarrativ um. Der wahre Kern ist: Die SDGs sind international vereinbarte Ziele, und globale Kooperation kann berechtigte Fragen nach demokratischer Kontrolle, Transparenz und nationaler Umsetzung ausloesen. Irrefuehrend wird die Aussage, wenn Kooperation mit Fremdherrschaft gleichgesetzt wird. Die wirkungsoekonomische Antwort lautet: Globale Ziele sind keine Weltregierung. Entscheidend ist demokratische, transparente und ueberpruefbare Umsetzung."
+      confidence: "hoch"
+    summary:
+      judgement: "Irrefuehrend / Verschwoerungsframe."
+      true_core: "Die SDGs sind ein internationaler Zielrahmen und brauchen demokratische Umsetzung."
+      problem: "Kooperation wird als Herrschaft umgedeutet."
+      narrative: "Kontrollverlust / Elitenverschwoerung / Anti-Kooperationsframe."
+      risk: "Misstrauen gegen globale Problemloesung und demokratische Institutionen steigt."
+      host_answer: "Globale Ziele sind keine Weltregierung. Die Frage ist demokratische Umsetzung, nicht Fantasie von Fremdherrschaft."
     claim:
       original: "Die SDGs und die Agenda 2030 sind eine Weltregierung."
+      extended: "SDGs und Agenda 2030 sind Weltregierung, also soll nationale Demokratie durch globale Steuerung ersetzt werden."
       claim_type:
         - "Verschwoerungsframe"
         - "falsche Schlussfolgerung"
         - "Kooperationsdelegitimierung"
     classification:
-      short_judgement: "Falsche Schlussfolgerung aus einem realen internationalen Kooperationsrahmen."
+      short_judgement: "Irrefuehrend / Verschwoerungsframe."
       narrative_family:
-        - "Herrschaftsnarrativ"
-        - "Verschwoerungsframe"
-      resonance_profile:
         - "Kontrollverlust"
-        - "Misstrauen gegen Institutionen"
-        - "Souveraenitaetsangst"
+        - "Elitenverschwoerung"
+        - "Anti-Kooperationsframe"
+      resonance_profile:
+        - "Misstrauen"
+        - "Angst vor Fremdbestimmung"
+        - "Abwehr gegen globale Loesungen"
       manipulation_patterns:
-        - "Kooperation als Zwang deuten"
+        - "Kooperation als Herrschaft umdeuten"
         - "Zielrahmen mit Regierungsmacht verwechseln"
-        - "selektive Evidenz"
     wirkung:
-      wirkstoff: "Kooperationsrahmen als Bedrohungsimpuls"
+      wirkstoff: "Kooperationsrahmen wird in Kontrollverlust umgedeutet."
       wirkungspotenzial:
-        - "Misstrauen gegen demokratische und internationale Prozesse steigt"
-        - "Nachhaltigkeitsdaten werden als Kontrollinstrument gerahmt"
+        - "Menschen verlieren Vertrauen in internationale Vereinbarungen"
+        - "Globale Problemloesung wird blockiert"
       wirkungsrisiko:
         level: "hoch"
-        description: "Wenn legitime Kritik durch pauschale Institutionenfeindlichkeit ersetzt wird."
-      mechanism: "Aus gemeinsamen Zielen wird eine angebliche geheime Herrschaft abgeleitet."
-      wirkungspfad:
+        description: "Wenn Kooperation pauschal als geheime Kontrolle gerahmt wird."
+      mechanism: "Aus gemeinsamen Zielen wird eine angebliche Herrschaftsstruktur konstruiert."
+      path:
         - "Aussage"
-        - "Bedrohungsgefuehl"
-        - "Institutionenmisstrauen"
-        - "Ablehnung von Kooperation"
-        - "geschwaechte Problemloesung"
+        - "Misstrauen und Angst vor Fremdbestimmung"
+        - "Anti-Kooperationsframe"
+        - "Vertrauen in internationale Vereinbarungen sinkt"
+        - "Kooperationsfaehigkeit sinkt"
     mpd:
-      mensch: "weniger Vertrauen in Gesundheits-, Bildungs- und Armutsziele"
-      planet: "Klimaschutz, Biodiversitaet und Ressourcenschutz werden diskursiv blockiert"
-      demokratie: "Institutionenvertrauen und faktenbasierte Deliberation sinken"
+      mensch: "globale Gesundheits-, Bildungs- und Armutsziele werden delegitimiert"
+      planet: "Klima-, Biodiversitaets- und Ressourcenschutz werden blockiert"
+      demokratie: "institutionelles Vertrauen, Diskursfaehigkeit und Rechtsstaatlichkeit werden geschwaecht"
     sdg:
       sdgs:
         - "SDG 16"
@@ -179,10 +353,12 @@ checks:
       sdg_plus:
         - "Diskursfaehigkeit"
         - "institutionelles Vertrauen"
+        - "Medienqualitaet"
         - "Schutz vor Manipulation"
     answers:
-      ten_seconds: "Die SDGs sind keine Weltregierung. Sie sind ein Zielrahmen, den Staaten politisch vereinbart haben. Entscheiden muessen weiterhin demokratische Institutionen."
-      thirty_seconds: "Der wahre Kern ist: Es gibt internationale Zusammenarbeit. Der Denkfehler ist: Zusammenarbeit ist nicht automatisch Herrschaft. Die Agenda 2030 setzt Ziele, ersetzt aber keine Parlamente."
-      two_minutes: "Die SDGs sind ein globaler Referenzrahmen fuer Entwicklung, Umwelt und Institutionen. Man kann einzelne Ziele politisch kritisieren. Aber aus Kooperation eine geheime Weltregierung zu machen, verschiebt die Debatte weg von Wirkung, Evidenz und demokratischer Entscheidung."
+      ten_seconds: "Globale Ziele sind keine Weltregierung. Die SDGs sind ein Zielrahmen - entscheidend ist, wie demokratisch, transparent und ueberpruefbar sie umgesetzt werden."
+      thirty_seconds: "Der wahre Kern ist: Globale Ziele brauchen demokratische Kontrolle. Aber daraus folgt keine Weltregierung. Die SDGs sind gemeinsame Ziele gegen Armut, Hunger, Klimaschaeden und Ungleichheit."
+      two_minutes: "Ich nehme die Sorge vor Fremdbestimmung ernst. Aber die Aussage 'SDGs sind Weltregierung' ist ein Verschwoerungsframe. Sie macht aus globaler Kooperation eine angebliche Herrschaftsstruktur. Die richtige Kritik lautet nicht 'alles ist Weltregierung', sondern: Wie werden Ziele demokratisch beschlossen, transparent kontrolliert und lokal gerecht umgesetzt?"
     links:
-      page: "/wirkungsradar/detail/sdgs-sind-weltregierung/"
+      page: "/wirkungsradar/live/sdgs-weltregierung/"
+      detail: "/wirkungsradar/detail/sdgs-sind-weltregierung/"

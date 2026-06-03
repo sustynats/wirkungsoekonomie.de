@@ -847,6 +847,9 @@ function getGlossaryContext() {
   const path = window.location.pathname;
   const filename = path.split("/").filter(Boolean).pop() || "index.html";
 
+  if (path.includes("/wirkungsradar/") || path.endsWith("/wirkungsradar")) {
+    return "method";
+  }
   if (path === "/" || filename === "index.html") {
     return "home";
   }
