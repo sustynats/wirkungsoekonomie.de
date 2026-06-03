@@ -9884,18 +9884,39 @@ textarea {
 }
 
 .reference-work.reference-reader > .chapter-mini-map {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
+  display: grid;
+  gap: 0.8rem;
+  padding: clamp(1rem, 2.4vw, 1.45rem);
   border-left: 0;
-  border-top: 3px solid var(--green);
+  border-top: 4px solid var(--green);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.64);
+  box-shadow: 0 14px 36px rgba(11, 16, 32, 0.045);
+}
+
+.chapter-mini-map-kicker {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .reference-work.reference-reader > .chapter-mini-map h2 {
-  flex: 1 0 100%;
+  margin: 0;
 }
 
-.reference-work.reference-reader > .chapter-mini-map a {
+.chapter-mini-map-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.08);
+}
+
+.chapter-mini-map-actions a {
   display: inline-flex;
   align-items: center;
   min-height: 2.25rem;
@@ -9907,10 +9928,39 @@ textarea {
   text-decoration: none;
 }
 
-.reference-work.reference-reader > .chapter-mini-map a:hover,
-.reference-work.reference-reader > .chapter-mini-map a:focus-visible {
+.chapter-mini-map-actions a:hover,
+.chapter-mini-map-actions a:focus-visible {
   border-color: rgba(47, 125, 92, 0.38);
   background: rgba(47, 125, 92, 0.08);
+}
+
+.chapter-mini-map-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+.chapter-mini-map-list a {
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.07);
+  color: var(--green-dark);
+  font-weight: 820;
+  line-height: 1.35;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.chapter-mini-map-list a:last-child {
+  border-bottom: 0;
+}
+
+.chapter-mini-map-list a:hover,
+.chapter-mini-map-list a:focus-visible {
+  color: var(--green);
+  text-decoration-color: currentColor;
 }
 
 .chapter-mini-map h2,
