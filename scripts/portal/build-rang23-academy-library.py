@@ -223,6 +223,9 @@ def href(prefix: str, rel: str) -> str:
 def clean_text(value: str) -> str:
     value = value.replace("\ufeff", "")
     value = re.sub(r"\s+", " ", value).strip()
+    value = re.sub(r"\s*[–-]\s*Rang\s+\d+\b", "", value, flags=re.I)
+    value = re.sub(r"\s+Rang\s+\d+\b", "", value, flags=re.I)
+    value = re.sub(r"^Rang\s+\d+\s*[–:-]\s*", "", value, flags=re.I)
     replacements = {
         "CodeX": "redaktionelle",
         "Repository": "Projekt",
@@ -617,12 +620,12 @@ def download_rows(entries: list[Entry], prefix: str, current_page: bool = False)
     rows = []
     zip_href = href(prefix, ASSET_REL + "/WOeK_Rang23_Wirkungsakademie-Fachbibliothek_Gesamtpaket_v1.0.zip")
     rows.append(
-        f"""<tr><th scope="row">Rang-23-Gesamtpaket</th><td>ZIP</td><td>Bereinigtes öffentliches Gesamtpaket mit Onlinefassungen und Downloads.</td><td>1.0</td><td>Mai 2026</td><td>Öffentliche Lesefassung</td><td>ZIP</td><td><a href="{zip_href}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/')}">online lesen</a></td></tr>"""
+        f"""<tr><th scope="row">Gesamtpaket</th><td>ZIP</td><td>Bereinigtes öffentliches Gesamtpaket mit Onlinefassungen und Downloads.</td><td>1.0</td><td>Mai 2026</td><td>Öffentliche Lesefassung</td><td>ZIP</td><td><a href="{zip_href}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/')}">online lesen</a></td></tr>"""
     )
     for fmt in ("pdf", "docx"):
         combined = href(prefix, ASSET_REL + f"/WOeK_Rang23_Gesamtpaket_Alle_Inhalte_v1.0.{fmt}")
         rows.append(
-            f"""<tr><th scope="row">Gesamtpaket Rang 23</th><td>{fmt.upper()}</td><td>Gebündelte öffentliche Lesefassung der Rang-23-Inhalte.</td><td>1.0</td><td>Mai 2026</td><td>Öffentliche Lesefassung</td><td>{fmt.upper()}</td><td><a href="{combined}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/downloads/')}">online lesen</a></td></tr>"""
+            f"""<tr><th scope="row">Gesamtpaket</th><td>{fmt.upper()}</td><td>Gebündelte öffentliche Lesefassung der Inhalte.</td><td>1.0</td><td>Mai 2026</td><td>Öffentliche Lesefassung</td><td>{fmt.upper()}</td><td><a href="{combined}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/downloads/')}">online lesen</a></td></tr>"""
         )
     for entry in entries:
         if entry.page_slug == "":
@@ -634,7 +637,7 @@ def download_rows(entries: list[Entry], prefix: str, current_page: bool = False)
             asset = href(prefix, ASSET_REL + f"/{entry.download_base}.{fmt}")
             links.append(f'<a href="{asset}" target="_blank" rel="noopener noreferrer">{fmt.upper()}</a>')
         rows.append(
-            f"""<tr><th scope="row">{html.escape(entry.title)}</th><td>{html.escape(entry.doc_type)}</td><td>Online lesbare öffentliche Fassung für Rang 23.</td><td>{html.escape(entry.version)}</td><td>{html.escape(entry.stand)}</td><td>Öffentliche Lesefassung</td><td>PDF/DOCX</td><td>{' · '.join(links)}</td><td><a href="{href(prefix, online_rel)}">online lesen</a></td></tr>"""
+            f"""<tr><th scope="row">{html.escape(entry.title)}</th><td>{html.escape(entry.doc_type)}</td><td>Online lesbare öffentliche Fassung.</td><td>{html.escape(entry.version)}</td><td>{html.escape(entry.stand)}</td><td>Öffentliche Lesefassung</td><td>PDF/DOCX</td><td>{' · '.join(links)}</td><td><a href="{href(prefix, online_rel)}">online lesen</a></td></tr>"""
         )
     return "".join(rows)
 
@@ -712,9 +715,9 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
     </header>
     <main data-pagefind-body>
       <p class="print-meta">Wirkungsökonomie · Rang 23 Wirkungsakademie, Fachbibliothek und Wirkungskompetenz · {canonical} · Druckdatum: 2026-05-25</p>
-      <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / <a href="{href(prefix, PORTAL_REL + '/')}">Wirkungsakademie und Fachbibliothek</a></nav><p class="hero-kicker">Rang 23 · Wirkungsökonomie</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#onlinefassung">Online lesen</a>{pdf_button}{docx_button}</div></div><aside class="card"><p class="card-kicker">Dokument</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>{meta_bits}</dl><p class="card-text">Öffentliche Lesefassung. Downloads ergänzen den Onlinezugang.</p></aside></div></section>
+      <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / <a href="{href(prefix, PORTAL_REL + '/')}">Wirkungsakademie und Fachbibliothek</a></nav><p class="hero-kicker">Wirkungsökonomie</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#onlinefassung">Online lesen</a>{pdf_button}{docx_button}</div></div><aside class="card"><p class="card-kicker">Dokument</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>{meta_bits}</dl><p class="card-text">Öffentliche Lesefassung. Downloads ergänzen den Onlinezugang.</p></aside></div></section>
       <section class="section"><div class="card"><p class="hero-kicker">Wirkungslogik</p><h2>Lern-, Wissens- und Bibliotheksarchitektur</h2><p>Wirkung ist neutral und relational: Sie beschreibt tatsächliche Zustandsveränderungen. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>Rang 23 ist die Lern-, Wissens-, Bibliotheks- und Redaktionsarchitektur der Wirkungsökonomie. Er macht Begriffe, Quellen, Online-Volltexte, Downloads, Lernpfade, Toolkarten und Wirkungskompetenz auffindbar, zitierbar, prüfbar und lernbar.</p><p><strong>Abgrenzung:</strong> Kein fertiger Lehrplan, keine zentralistische Wissensverwaltung, keine Personenbewertung und kein Ersatz für Fachkritik.</p></div></section>
-      <section class="section no-print"><div class="reading-layout"><aside class="card side-nav"><p class="card-kicker">Seitennavigation</p><details class="toc-card" open><summary>Inhaltsverzeichnis</summary>{toc_html(toc)}</details>{side_nav(entries, prefix)}</aside><div class="card"><p class="hero-kicker">Download</p><h2>Online lesen und exportieren</h2><p>Der vollständige Text steht auf dieser Seite. PDF und DOCX öffnen in einem neuen Tab.</p>{pdf_button}{docx_button}</div></div></section>
+      <section class="section no-print"><div class="article-reader-stack"><details class="card toc-card reader-toc-card" open><summary>Inhaltsverzeichnis</summary>{toc_html(toc)}<div class="portal-side-links">{side_nav(entries, prefix)}</div></details><article class="card reader-download-card"><p class="hero-kicker">Download</p><h2>Online lesen und exportieren</h2><p>Der vollständige Text steht auf dieser Seite. PDF und DOCX öffnen in einem neuen Tab.</p>{pdf_button}{docx_button}</article></div></section>
       {portal_sections}
       <section class="section" id="onlinefassung"><article class="prose-card">{body}</article></section>
       {sdg_block(prefix)}
@@ -722,9 +725,9 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
       <section class="section" id="toolkarten-kontext"><div class="section-header"><p class="hero-kicker">Werkzeuge</p><h2>Kontextbezogene Toolkarten</h2></div>{tool_cards(prefix)}</section>
       <section class="section" id="buchanker"><div class="section-header"><p class="hero-kicker">Online-Buch</p><h2>Buchanker</h2></div>{links_strip(prefix, BOOK)}</section>
       <section class="section" id="querverweise"><div class="section-header"><p class="hero-kicker">Vernetzung</p><h2>Querverlinkungen</h2></div>{links_strip(prefix, RELATED)}</section>
-      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Downloadbereich Rang 23</h2></div>{download_table(entries, prefix)}</section>
+      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Downloadbereich</h2></div>{download_table(entries, prefix)}</section>
     </main>
-    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Rang 23</h2><div><a href="{href(prefix, PORTAL_REL + '/')}">Wirkungsakademie</a><a href="{href(prefix, PORTAL_REL + '/downloads/')}">Downloads</a><a href="{href(prefix, PORTAL_REL + '/toolkarten/')}">Toolkarten</a></div></div><div class="footer-nav-group"><h2>Referenz</h2><div><a href="{href(prefix, 'verstehen/sdgs-sdgplus/')}">SDG-/SDG+-Referenzrahmen</a><a href="{href(prefix, 'glossar.html')}">Glossar</a><a href="{href(prefix, 'referenz/')}">Online-Buch</a></div></div></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Portal</h2><div><a href="{href(prefix, PORTAL_REL + '/')}">Wirkungsakademie</a><a href="{href(prefix, PORTAL_REL + '/downloads/')}">Downloads</a><a href="{href(prefix, PORTAL_REL + '/toolkarten/')}">Toolkarten</a></div></div><div class="footer-nav-group"><h2>Referenz</h2><div><a href="{href(prefix, 'verstehen/sdgs-sdgplus/')}">SDG-/SDG+-Referenzrahmen</a><a href="{href(prefix, 'glossar.html')}">Glossar</a><a href="{href(prefix, 'referenz/')}">Online-Buch</a></div></div></div></footer>
     <script src="{href(prefix, 'assets/js/main.js?v=20260525-ux-finish')}"></script>
   </body>
 </html>"""
@@ -733,8 +736,8 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
 
 def build_download_page(entries: list[Entry], path: Path, title: str) -> None:
     prefix = rel_prefix(path)
-    body = f"""<h2 id="downloadbereich">Downloadbereich</h2><p>Dieser Bereich bündelt die öffentlichen Onlinefassungen, PDF- und DOCX-Downloads sowie das bereinigte ZIP-Gesamtpaket für Rang 23.</p>{download_table(entries, prefix)}"""
-    write_page(path, title, "Downloadstruktur für Rang 23 mit ZIP, PDF, DOCX und Onlinefassungen.", body, [(2, "Downloadbereich", "downloadbereich")], entries)
+    body = f"""<h2 id="downloadbereich">Downloadbereich</h2><p>Dieser Bereich bündelt die öffentlichen Onlinefassungen, PDF- und DOCX-Downloads sowie das bereinigte ZIP-Gesamtpaket.</p>{download_table(entries, prefix)}"""
+    write_page(path, title, "Downloadstruktur mit ZIP, PDF, DOCX und Onlinefassungen.", body, [(2, "Downloadbereich", "downloadbereich")], entries)
 
 
 def update_sitemap(entries: list[Entry]) -> None:
@@ -769,8 +772,8 @@ def main() -> None:
         if entry.page_slug == "":
             subtitle = "Rang 23 macht Wirkungskompetenz lernbar, Quellen auffindbar, Begriffe versionierbar und Online-Volltexte mit Downloads konsistent zugänglich."
         write_page(page_dir, entry.title, subtitle, body, toc, entries, entry)
-    build_download_page(entries, PORTAL_DIR / "downloads", "Downloads Rang 23")
-    build_download_page(entries, DOWNLOAD_DIR, "Rang 23 Downloads: Wirkungsakademie und Fachbibliothek")
+    build_download_page(entries, PORTAL_DIR / "downloads", "Downloads")
+    build_download_page(entries, DOWNLOAD_DIR, "Downloads: Wirkungsakademie und Fachbibliothek")
     update_sitemap(entries)
     print(f"Built {len(entries)} public Rang 23 entries")
 

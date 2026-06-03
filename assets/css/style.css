@@ -5498,6 +5498,34 @@ textarea {
   color: var(--green);
 }
 
+.article-reader-stack {
+  display: grid;
+  gap: 1rem;
+  width: min(100% - (2 * var(--space-gutter)), var(--container));
+  margin-inline: auto;
+}
+
+.article-reader-stack .toc-card,
+.article-reader-stack .reader-download-card {
+  width: 100%;
+}
+
+.article-reader-stack .toc-card {
+  margin: 0;
+}
+
+.article-reader-stack .toc-card ol {
+  columns: 1;
+}
+
+.article-reader-stack .portal-side-links {
+  margin-top: 1rem;
+}
+
+.reader-download-card {
+  border-left: 4px solid var(--green);
+}
+
 .article-body h2[id],
 .article-body h3[id] {
   scroll-margin-top: 110px;
