@@ -10,6 +10,48 @@ SEARCH_INDEX = ROOT / "assets/search/search-index.json"
 KNOWLEDGE_CARDS = ROOT / "content/wissen/wissenskarten.json"
 BODY_LIMIT = 3500
 
+TAG_STOPWORDS = {
+    "aber",
+    "alle",
+    "alles",
+    "als",
+    "auch",
+    "auf",
+    "aus",
+    "bei",
+    "das",
+    "da",
+    "der",
+    "die",
+    "ein",
+    "eine",
+    "einer",
+    "eines",
+    "einem",
+    "fuer",
+    "für",
+    "hat",
+    "immer",
+    "index",
+    "ist",
+    "live",
+    "mit",
+    "nicht",
+    "nur",
+    "oder",
+    "oben",
+    "schon",
+    "sich",
+    "sind",
+    "themen",
+    "und",
+    "von",
+    "was",
+    "werden",
+    "wird",
+    "wirkungsradar",
+}
+
 EXCLUDED_DIRS = {
     ".git",
     ".codex-backup",
@@ -132,7 +174,26 @@ def title_from_source(source, fallback):
     if not match:
         return fallback
     title = clean_text(strip_html(match.group(1)))
-    return re.sub(r"\s+[-|]\s+Wirkungsökonomie.*$", "", title).strip() or fallback
+    return clean_search_title(title) or fallback
+
+
+def clean_search_title(title):
+    title = clean_text(title)
+    exact_titles = {
+        "Wirkungsradar": "Folgencheck für öffentliche Aussagen",
+    }
+    if title in exact_titles:
+        return exact_titles[title]
+    replacements = [
+        r"\s+[-–]\s+Wirkungsradar\s+Live\s*$",
+        r"\s+[-–]\s+Wirkungsradar\s*$",
+        r"\s+\|\s+Psychologie\s+im\s+Wirkungsradar\s*$",
+        r"^Psychologie\s+im\s+Wirkungsradar\s+[-–]\s+",
+        r"\s+[-|]\s+Wirkungsökonomie.*$",
+    ]
+    for pattern in replacements:
+        title = re.sub(pattern, "", title, flags=re.IGNORECASE).strip()
+    return title
 
 
 def main_text(source):
@@ -173,7 +234,24 @@ def tags_from_path(rel, source):
     search_tags = meta_content(source, "search_tags")
     if search_tags:
         tags.update(clean_text(item) for item in search_tags.split(","))
-    return sorted(tag for tag in tags if tag)
+    return sorted(clean_tag(tag) for tag in tags if clean_tag(tag))
+
+
+def clean_tag(tag):
+    tag = clean_text(tag)
+    if not tag:
+        return ""
+    normalized = (
+        tag.lower()
+        .replace("ö", "oe")
+        .replace("ä", "ae")
+        .replace("ü", "ue")
+        .replace("ß", "ss")
+    )
+    normalized = re.sub(r"[^a-z0-9+]+", " ", normalized).strip()
+    if normalized in TAG_STOPWORDS or len(normalized) < 3:
+        return ""
+    return tag
 
 
 def generated_entry(path):
@@ -186,7 +264,7 @@ def generated_entry(path):
     if len(text) < 80:
         return None
 
-    title = meta_content(source, "search_title") or title_from_source(source, rel.stem.replace("-", " ").title())
+    title = clean_search_title(meta_content(source, "search_title") or title_from_source(source, rel.stem.replace("-", " ").title()))
     description = meta_content(source, "search_description") or meta_content(source, "description") or text[:240]
     section = meta_content(source, "search_section") or infer_section(rel)
     format_name = meta_content(source, "search_type") or infer_format(rel, section)

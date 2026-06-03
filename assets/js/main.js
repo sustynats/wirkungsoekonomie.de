@@ -825,6 +825,72 @@ function initRadarSearch() {
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
+  const tagStopwords = new Set([
+    "aber",
+    "alle",
+    "alles",
+    "als",
+    "auch",
+    "auf",
+    "aus",
+    "bei",
+    "das",
+    "da",
+    "der",
+    "die",
+    "ein",
+    "eine",
+    "einer",
+    "eines",
+    "einem",
+    "für",
+    "fuer",
+    "hat",
+    "immer",
+    "index",
+    "ist",
+    "live",
+    "mit",
+    "nicht",
+    "nur",
+    "oder",
+    "oben",
+    "schon",
+    "sich",
+    "sind",
+    "themen",
+    "und",
+    "von",
+    "was",
+    "werden",
+    "wird",
+    "wirkungsradar",
+  ]);
+
+  const cleanTitle = (value) =>
+    String(value || "")
+      .replace(/\s+[-–]\s+Wirkungsradar\s+Live\s*$/i, "")
+      .replace(/\s+[-–]\s+Wirkungsradar\s*$/i, "")
+      .replace(/\s+\|\s+Psychologie\s+im\s+Wirkungsradar\s*$/i, "")
+      .replace(/^Psychologie\s+im\s+Wirkungsradar\s+[-–]\s+/i, "")
+      .replace(/^Wirkungsradar$/i, "Folgencheck für öffentliche Aussagen")
+      .trim();
+
+  const normalizeTag = (value) =>
+    normalize(value)
+      .replace(/[^a-z0-9+]+/g, " ")
+      .trim();
+
+  const displayTag = (value) => {
+    const tag = String(value || "").trim();
+    const normalized = normalizeTag(tag);
+    if (!tag || normalized.length < 3 || tagStopwords.has(normalized)) return "";
+    if (normalized === "co2") return "CO₂";
+    if (normalized === "sdg" || normalized === "sdg+") return tag.toUpperCase();
+    if (normalized === "lkw") return "Lkw";
+    return tag.replace(/\b\w/g, (letter) => letter.toUpperCase());
+  };
+
   const render = (items, query = "") => {
     const trimmed = query.trim();
     const visibleItems = items.slice(0, 10);
@@ -839,14 +905,16 @@ function initRadarSearch() {
 
     resultsNode.innerHTML = visibleItems
       .map((entry) => {
-        const tags = [entry.type, entry.section, ...(entry.tags || [])]
+        const tags = [entry.type, entry.section === "Wirkungsradar" ? "" : entry.section, ...(entry.tags || [])]
+          .map(displayTag)
           .filter(Boolean)
+          .filter((tag, index, list) => list.findIndex((item) => normalize(item) === normalize(tag)) === index)
           .slice(0, 3)
           .map((tag) => `<span>${escapeHtml(tag)}</span>`)
           .join("");
         return `<a class="radar-search-result" href="${escapeHtml(entry.url)}">
           <span class="radar-search-result-meta">${tags}</span>
-          <strong>${escapeHtml(entry.title)}</strong>
+          <strong>${escapeHtml(cleanTitle(entry.title))}</strong>
           <em>${escapeHtml(entry.description || "Wirkungsradar-Inhalt öffnen.")}</em>
         </a>`;
       })
