@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T14:23:52.056Z
-Resolved references: 6472
-Warnings: 813
+Erzeugt: 2026-06-03T14:39:03.963Z
+Resolved references: 6476
+Warnings: 805
 
 ## Warnungen
 
@@ -112,8 +112,6 @@ Warnings: 813
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Titel aus Slug erzeugt
-- [unresolved-reference] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
@@ -164,8 +162,6 @@ Warnings: 813
 - [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Titel aus Slug erzeugt
-- [unresolved-reference] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] folgencheck-statt-faktencheck-democracy-intelligence - Titel aus Slug erzeugt
@@ -184,8 +180,6 @@ Warnings: 813
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Titel aus Slug erzeugt
-- [unresolved-reference] /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
@@ -506,6 +500,12 @@ Warnings: 813
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 
 ## Aufgelöste Verweise
 
@@ -1186,6 +1186,7 @@ Warnings: 813
 - /wirkungsfelder/staat-recht-demokratie/ -> Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
 - /werkstatt/dossiers/staat-recht-demokratie/#book-anchors -> Gesamtdossier Staat, Recht & Demokratie (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-028-demokratie-als-wirkungsraum/#woek-main-2026-k028-s001 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ -> Sprache als politischer Wirkstoff – Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-067-bildung/#woek-main-2026-k067-s001 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 813
 - /wirkungsfelder/wohnen-stadt/investoren-vermieter/ -> Investor:innen & Vermieter:innen | Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/konzept/ -> Konzeptpapier Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#woek-main-2026-k004-s001 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-070-wohnen/#woek-main-2026-k070-s001 -> Kapitel 70: Wohnen (Online-Buch-Kapitel, Beschreibung: ja)

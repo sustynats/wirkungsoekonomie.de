@@ -10972,7 +10972,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Klimawandel"
     ],
-    "definition": "Klimawandel beschreibt langfristige Veränderungen des Klimasystems, insbesondere durch den menschengemachten Anstieg von Treibhausgasen.",
+    "definition": "Klimawandel heißt: Das Klima verändert sich langfristig. Heute geht es vor allem um die schnelle Erwärmung durch zusätzliche Treibhausgase aus menschlicher Aktivität.",
     "url": "/begriffe/klimawandel/",
     "priority": 507,
     "autoLinkAllowed": true,
