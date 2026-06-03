@@ -38,6 +38,69 @@ sources:
       - "Fundamente, Beton, Stahl, Rotorblätter und Produktverantwortung."
     warning: "Rotorblätter und Verbundstoffe bleiben besondere Herausforderung."
     shows: "Rückbau, Recycling und Repowering von Windenergieanlagen."
+  uba_rotorblattaufbereitung_und_recycling:
+    label: "UBA - Rotorblattaufbereitung und Recycling"
+    url: "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen/rotorblattaufbereitung-recycling-von"
+    use_for:
+      - "Rotorblatt-Recycling, Verbundmaterialien und Verwertungspfade."
+    warning: "Nicht auf die gesamte Anlage übertragen; Stahl, Beton und Metalle separat bilanzieren."
+    shows: "Rotorblätter aus faserverstärkten Kunststoffen sind eine besondere Recyclingfraktion."
+  fachagentur_wind_solar_r_ckbau_und_recycling:
+    label: "Fachagentur Wind & Solar - Rückbau und Recycling"
+    url: "https://www.fachagentur-wind-solar.de/wind/rueckbau-und-recycling"
+    use_for:
+      - "Rückbaupflicht, Recyclingpraxis und Repowering-Kommunikation."
+    warning: "Projekt- und Rechtsstand prüfen."
+    shows: "Praxisnahe Übersicht zu Rückbau, Recycling und Weiterbetrieb."
+  eu_kommission_fluorinated_greenhouse_gases:
+    label: "EU-Kommission - Fluorinated greenhouse gases"
+    url: "https://climate.ec.europa.eu/eu-action/fluorinated-greenhouse-gases/about-f-gases_en"
+    use_for:
+      - "SF₆/F-Gase, Klimawirkung und Regulierungsrahmen."
+    warning: "Allgemeine F-Gas-Quelle; konkrete Schaltanlagen separat prüfen."
+    shows: "SF₆ gehört zu den fluorierten Treibhausgasen und unterliegt europäischer Regulierung."
+  uba_verbot_des_klimasch_dlichen_sf:
+    label: "UBA - Verbot des klimaschädlichen SF₆"
+    url: "https://www.umweltbundesamt.de/themen/verbot-des-klimaschaedlichen-sf6-in"
+    use_for:
+      - "SF₆ in Schaltanlagen, Alternativen und Regulierung."
+    warning: "Nicht als Rotorblatt- oder Gesamt-Windkraftargument verwenden."
+    shows: "Einordnung des SF₆-Problems bei Mittelspannungsschaltanlagen."
+  eu_verordnung_2024_573:
+    label: "EU-Verordnung 2024/573"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202400573"
+    use_for:
+      - "Regulatorischer Pfad für F-Gase und SF₆."
+    warning: "PDF; Rechtsänderungen und Anwendungstermine prüfen."
+    shows: "Aktueller EU-Rechtsrahmen zu fluorierten Treibhausgasen."
+  windeurope_circularity:
+    label: "WindEurope - Circularity"
+    url: "https://windeurope.org/about-wind/circularity/"
+    use_for:
+      - "Circularity, Recycling und Designpfade."
+    warning: "Branchenquelle; mit öffentlichen Quellen gegenlesen."
+    shows: "Branchenüberblick zur Kreislaufführung von Windenergieanlagen."
+  windeurope_decommissioned_blades:
+    label: "WindEurope - Decommissioned blades"
+    url: "https://windeurope.org/news/where-do-wind-turbine-blades-go-when-they-are-decommissioned/"
+    use_for:
+      - "Rotorblatt-End-of-Life und Verwertungswege."
+    warning: "Branchenquelle; nationale Entsorgungsregeln separat prüfen."
+    shows: "Einordnung, wohin Rotorblätter nach Betriebsende gehen können."
+  siemens_gamesa_recyclableblade:
+    label: "Siemens Gamesa - RecyclableBlade"
+    url: "https://www.siemensgamesa.com/global/en/home/explore/journal/recyclable-blade.html"
+    use_for:
+      - "Technologische Entwicklung bei Rotorblättern."
+    warning: "Herstellerquelle; kein Beleg für alle Anlagen."
+    shows: "Beispiel für recyclebare Rotorblatt-Designs."
+  vestas_turn_wind_recyclable:
+    label: "Vestas - Turn wind recyclable"
+    url: "https://www.vestas.com/en/energy-solutions/development/turnwindrecyclable"
+    use_for:
+      - "Recyclingverfahren und Produktentwicklung."
+    warning: "Herstellerquelle; Umsetzung und Skalierung prüfen."
+    shows: "Industrieprogramm zur Kreislaufführung von Rotorblättern."
   uba_infraschall_von_windenergieanlagen:
     label: "UBA - Infraschall von Windenergieanlagen"
     url: "https://www.umweltbundesamt.de/system/files/medien/4031/publikationen/umid_01-2021-infraschall.pdf"

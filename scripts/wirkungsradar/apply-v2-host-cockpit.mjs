@@ -110,6 +110,39 @@ const overrides = {
     oldFrame: "Schulden machen oder sparen - und damit sei die Sache erledigt.",
     better: "Nicht Schulden oder Sparen entscheidet, sondern Wirkung oder Blindleistung.",
   },
+  "windraeder-voegel-wald-beton-rueckbau": {
+    claim: "Windräder zerstören Natur, sind Sondermüll und wegen SF₆ gar nicht klimafreundlich.",
+    short: "Echte Prüfpflicht. Falsches Gesamturteil.",
+    say:
+      "Windenergie ist nicht wirkungsfrei. Aber Kohle, Gas und Öl sind es auch nicht. Prüfaufgaben lösen - nicht fossile Schäden verlängern.",
+    live:
+      "SF₆ ist ein echtes Schaltanlagen-Thema, aber kein Windkraft-Killerargument. Und beim Recycling gilt: Die Anlage ist größtenteils gut recycelbar; die Rotorblätter waren die schwierige Fraktion - genau dort entstehen jetzt neue Verfahren und recyclebare Designs.",
+    panel:
+      "Windenergie hat echte Prüfaufgaben: Artenschutz, Waldstandorte, Fundamente, Rückbau, Rotorblätter und SF₆ in bestimmten Schaltanlagen. Diese Punkte müssen geplant, überwacht und verbessert werden. Aber sie sind kein Beweis dafür, dass Kohle, Gas und Öl die bessere Natur- oder Klimaschutzoption wären. Fossile Energie verursacht Klimaschäden, Luftschadstoffe, Bergbau, Wasserbelastung, Importabhängigkeit und Gesundheitskosten. Die faire Antwort lautet deshalb: Prüfaufgaben lösen, Rückbau sichern, Recycling ausbauen, SF₆-freie Schalttechnik nutzen und fossile Schäden nicht unsichtbar machen.",
+    exampleTitle: "Schaltanlage statt Rotorblatt",
+    example:
+      "Wenn jemand SF₆ sagt, geht es um bestimmte elektrische Schaltanlagen. Das ist ernst und regulierbar. Es ist aber kein Rotorblatt-Thema und kein Beleg dafür, dass Windenergie insgesamt klimaschädlicher als fossile Energie wäre.",
+    question: "Vergleichst du Windkraft gerade mit perfekter Natur - oder mit den realen Folgen von Kohle, Gas und Öl?",
+    oldFrame: "Windrad gegen Natur, Windräder sind Sondermüll, SF₆ macht Windkraft klimaschädlich.",
+    notThis: "Windräder sind harmlos und alle Kritik ist Quatsch.",
+    better: "Windenergie ist nicht wirkungsfrei. Die bessere Frage ist, welche Prüfaufgaben lösbar sind und welche fossilen Schäden sonst bleiben.",
+    impacts: [
+      ["Artenschutz", "Vögel, Fledermäuse und Habitate brauchen Standortdaten, Monitoring und Schutzmaßnahmen.", "Nicht wegreden, konkret prüfen."],
+      ["Recycling", "Stahl, Beton und Metalle sind gut verwertbar; Rotorblätter brauchen eigene Kreislaufpfade.", "Die schwierige Fraktion benennen."],
+      ["Rotorblätter", "Verbundmaterialien sind anspruchsvoll, aber neue Verfahren und Designs entstehen.", "Altproblem nicht als ewigen Standard erzählen."],
+      ["SF₆", "Schwefelhexafluorid betrifft Schaltanlagen und muss ersetzt, kontrolliert und zurückgewonnen werden.", "Kein Rotorblatt-Argument."],
+      ["Rückbau", "Fundamente, Wege und Anlagen brauchen Rückstellungen, Pflichten und Nachweise.", "Nachweis statt Bauchgefühl."],
+      ["Fossile Alternative", "Kohle, Öl und Gas verursachen Klima-, Luft-, Wasser- und Gesundheitsschäden.", "Status quo ist nicht neutral."],
+      ["Gesundheit", "Schall, Schatten und Stress sind zu prüfen; fossile Luftschadstoffe gehören ebenfalls in die Bilanz.", "Beide Seiten mitzählen."],
+      ["Abhängigkeit", "Fossile Energie bindet Import-, Preis- und Krisenrisiken.", "Energiemix als Sicherheitsfrage lesen."],
+      ["Demokratie", "Gute Planung braucht Beteiligung statt Kulturkampf.", "Zielkonflikt öffentlich lösbar machen."],
+    ],
+    psychology: [
+      ["Das sichtbare Bild gewinnt.", "Verfügbarkeitsheuristik", "Vogel, Wald und Beton sind konkreter als verteilte fossile Schäden.", "Bild anerkennen und die Systemrechnung öffnen."],
+      ["Schutzgefühl wird moralisch absolut.", "Schutzimpuls", "Tier- und Waldschutz sind berechtigt, können aber als Pauschalstopp genutzt werden.", "Schutz konkret machen: Standort, Art, Maßnahme."],
+      ["Ein starkes Wort bleibt hängen.", "Angstanker", "SF₆, Sondermüll oder Infraschall überdecken schnell die lösbare Prüfaufgabe.", "Das Wort präzisieren und zur Lösung zurückführen."],
+    ],
+  },
 };
 
 const defaultImpacts = [
