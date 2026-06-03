@@ -250,14 +250,19 @@ const factStatus = {
 };
 
 const glossaryLinks = [
+  ["verantwortungsverkuerzung", "Verantwortungsverkürzung"],
   ["wirkung", "Wirkung"],
   ["wirkungspotenzial", "Wirkungspotenzial"],
   ["wirkungsrisiko", "Wirkungsrisiko"],
   ["wirkungspfad", "Wirkungspfad"],
+  ["scope-3", "Scope 3"],
+  ["lieferkettenwirkung", "Lieferkettenwirkung"],
+  ["produktwirkung", "Produktwirkung"],
   ["resonanzraum", "Resonanzraum"],
   ["wirkungslenkung", "Wirkungslenkung"],
   ["positive-netto-wirkung", "Positive Netto-Wirkung"],
   ["reverse-merit-order", "Reverse Merit Order"],
+  ["digitaler-produktpass", "Digitaler Produktpass"],
   ["sdg-plus", "SDG+"],
   ["t-sroi", "T-SROI"],
   ["woek-id", "WÖk-ID"],
@@ -497,7 +502,7 @@ const claims = [
     },
     answersFinal: true,
     effectPath: [
-      ["Aussage", "Die 2-%-Behauptung wird als Entlastungsargument gesetzt."],
+      ["Aussage", "„Deutschland ist nur für 2 % verantwortlich.“"],
       ["Wirkstoff", "Territoriale Zahl als Verantwortungsverkürzer."],
       ["Verkürzung", "Inlandsemissionen werden mit Gesamtverantwortung gleichgesetzt."],
       ["Ausblendung", "Konsumemissionen, ausgelagerte Produktion, Scope 3, exportierte Produktnutzung, historische Emissionen sowie Standard- und Kapitalhebel verschwinden."],
@@ -505,11 +510,11 @@ const claims = [
       ["Narrativ", "Wir sind zu klein, also müssen wir nicht handeln."],
       ["Wirkungspotenzial", "Handlungsfähigkeit sinkt, Verantwortung wird externalisiert."],
       ["Wirkungsrisiko", "Lieferketten, Produktdesign, Industriepfade und fossile Geschäftsmodelle werden langsamer transformiert."],
-      ["Wirkung 3. Ordnung", "Wirkungsblindheit bleibt stabil: Produkte, Preise und Investitionen zeigen nicht, welche globale Wirkung sie auslösen."],
+      ["Wirkung dritter Ordnung", "Wirkungsblindheit wird stabilisiert: Produkte, Preise und Investitionen zeigen nicht, welche globale Wirkung sie auslösen."],
     ],
     frameKey: "ohnmacht",
     redirectQuestion: "Welche Bilanzgrenze meinst du: territorial, konsumbezogen, Scope 3, historisch oder transformativ?",
-    dontDo: ["Nicht in eine endlose Prozentdiskussion gehen.", "Nicht „2 % Verantwortung“ wiederholen.", "Nicht so tun, als könne Deutschland allein das Klima retten.", "Nicht Verantwortung moralisieren.", "Nicht unterschiedliche Bilanzgrenzen addieren."],
+    dontDo: ["Nicht in eine endlose Prozentdiskussion gehen.", "Nicht Verantwortung als Prozentzahl formulieren.", "Nicht nationale Alleinwirkung behaupten.", "Nicht Verantwortung moralisieren.", "Nicht unterschiedliche Bilanzgrenzen addieren."],
     facts: [
       "Die territoriale Bilanz misst Emissionen innerhalb deutscher Grenzen, nicht Konsum, Produktnutzung oder historische Wirkung.",
       "Konsumemissionen zeigen, welche Emissionen deutsche Nachfrage auch im Ausland auslöst.",
@@ -539,9 +544,19 @@ const claims = [
       demokratie: "Wirkungsblindheit schwächt Quellenklarheit, Verantwortungsfähigkeit und demokratische Entscheidung.",
     },
     dossier: {
+      editorialRule:
+        "Nicht moralisieren. Keine Schuldzuschreibung. Präzise sagen: Deutschland hat mehrere Wirkungsräume.",
       thesis:
         "Die 2-%-Behauptung ist kein Klimafakt, sondern ein Verantwortungsverkürzer. Sie reduziert Verantwortung auf territoriale Jahresemissionen und blendet Konsum, Importe, Lieferketten, exportierte Produktnutzung, historische Emissionen und Transformationshebel aus. Wirkungsökonomisch gilt: Verantwortung endet nicht an der Landesgrenze und nicht am Fabriktor.",
       missingLayers: "Konsum, Importe, Lieferketten, Scope 3, exportierte Produktnutzung, historische Emissionen, Standardsetzung.",
+      keyPoints: [
+        ["Die 2-%-Zahl ist eine enge Bilanz", "Sie bezieht sich höchstens auf territoriale Jahresemissionen, nicht auf Gesamtverantwortung."],
+        ["Deutschland wirkt über Konsum", "Importierte Produkte tragen Emissionen, die im Ausland entstehen, aber durch deutsche Nachfrage ausgelöst werden."],
+        ["Deutschland wirkt über Lieferketten", "Rohstoffe, Vorprodukte, Energie, Wasser, Arbeit und Transport liegen oft außerhalb Deutschlands, gehören aber zur Produktwirkung."],
+        ["Deutschland wirkt über exportierte Produkte", "Verbrenner, Maschinen, Anlagen und energieverbrauchende Produkte erzeugen über Jahre Nutzungsemissionen im Ausland."],
+        ["Deutschland wirkt historisch und transformativ", "Klimawirkung ist kumulativ; zusätzlich setzen deutsche Industrie, EU-Regeln, Standards und Kapital globale Pfade."],
+        ["Die WÖk-Antwort ist nicht Schuld, sondern Rückkopplung", "Wirkung sichtbar machen, in Preise, Steuern, Beschaffung, Kapital und Produktdesign zurückführen."],
+      ],
       variants: [
         "Deutschland ist doch nur für rund 2 % der Emissionen zuständig.",
         "Solange China und die USA mehr ausstoßen, bringt deutsches Handeln nichts.",
@@ -549,12 +564,25 @@ const claims = [
         "Deutsche Klimapolitik ist Symbolpolitik, weil der globale Effekt zu klein sei.",
       ],
       responsibilityMatrix: [
-        ["Territorial", "Was wird innerhalb Deutschlands emittiert?", "Kraftwerke, Verkehr, Industrie im Inland.", "Konsum, Importe, Exporte und historische Wirkung."],
-        ["Konsum", "Was verursacht deutsche Nachfrage?", "Importierte Kleidung, Elektronik, Lebensmittel, Vorprodukte.", "Produktion im Ausland und ausgelagerte Produktionswirkung."],
-        ["Lieferkette", "Was steckt in Vorprodukten?", "Rohstoffe, Energie, Transport, Arbeit, Chemie, Wasser.", "Ausgelagerte ökologische und soziale Schäden."],
-        ["Scope 3 / Produktnutzung", "Was bewirken verkaufte Produkte weltweit?", "Exportierte Verbrenner, Maschinen, Anlagen, Chemie, Geräte.", "Nutzungsemissionen außerhalb Deutschlands."],
-        ["Historisch", "Was wurde kumulativ verursacht?", "Industrialisierung, lange CO₂-Wirkung, Pfadabhängigkeiten.", "Jahresanteil ist nicht kumulative Klimawirkung."],
-        ["Transformativ", "Welche Hebel setzen wir?", "EU-Standards, Technologie, Kapital, Beschaffung, Normung.", "Systemische Steuerungsmacht deutscher Industrie und Politik."],
+        ["1. Territorial", "Was wird innerhalb Deutschlands ausgestoßen?", "Kraftwerke, Verkehr, Industrie im Inland.", "Nur Inlandsbilanz, kein Konsum, keine Exporte, keine Historie."],
+        ["2. Konsum", "Welche Emissionen verursacht deutsche Nachfrage?", "Importierte Kleidung, Elektronik, Lebensmittel, Vorprodukte.", "Importierte Produkte, ausgelagerte Produktion, globale Vorleistungen."],
+        ["3. Lieferkette", "Welche Wirkung steckt in Rohstoffen, Vorprodukten, Arbeit, Energie und Transport?", "Rohstoffe, Energie, Transport, Arbeit, Chemie, Wasser.", "Emissionen und Schäden in vorgelagerten Produktionsstufen."],
+        ["4. Scope 3 / Produktnutzung", "Welche Emissionen entstehen durch verkaufte Produkte über ihre Lebensdauer?", "Exportierte Verbrenner, Maschinen, Anlagen, Chemie, Geräte.", "Exportierte Verbrenner, Maschinen, Anlagen, Geräte, Chemieprodukte."],
+        ["5. Historisch", "Wie hoch ist die kumulative Wirkung seit Industrialisierung?", "Industrialisierung, lange CO₂-Wirkung, Pfadabhängigkeiten.", "CO₂-Langlebigkeit und industrielle Vergangenheit."],
+        ["6. Transformativ", "Welche Standards, Technologien, Kapitalflüsse und EU-Regeln beeinflussen globale Pfade?", "EU-Standards, Technologie, Kapital, Beschaffung, Normung.", "Gestaltungsmacht deutscher Industrie, Politik und Beschaffung."],
+      ],
+      internalSourceCards: [
+        ["WÖk - Lieferketten als Wirkungsketten", "Globale Lieferketten sind keine neutralen Beschaffungswege, sondern Wirkungsräume.", "Ausgelagerte Produktion, Vorprodukte, Rohstoffe, Arbeit, Wasser, Energie."],
+        ["WÖk - Produkte als Wirkungsträger", "Produkte wirken über Rohstoffe, Herstellung, Nutzung, Reparatur, Entsorgung und Kreislauffähigkeit.", "Exportierte Fahrzeuge, Maschinen, Anlagen, Chemieprodukte und Produktlebenszyklus."],
+        ["WÖk - WÖk-IDs, Scorecards und Reverse Merit Order", "Wirkung wird über Indikatoren, Benchmarks, Scorecards und Nichtkompensation operationalisiert.", "Konkrete Lösung gegen Verantwortungsverkürzung."],
+      ],
+      relevantWoekIds: [
+        ["WOK-E-179", "SDG 13 - Klima", "THG-Emissionen Scope 1/2/Intensität", "Territoriale und unternehmensnahe Emissionsdaten."],
+        ["WOK-SC-128", "SDG 13 - Klima", "Scope-3 Datenqualität", "Qualität der Lieferketten- und Produktnutzungsdaten."],
+        ["WOK-P-125", "SDG 13 - Klima", "Produktlebenszyklus CO₂", "Bewertung exportierter Produkte über Rohstoff, Herstellung, Nutzung und Lebensende."],
+        ["WOK-SC-125", "SDG 12 - Konsum/Produktion", "Lieferkette - Zirkularität", "Ressourcen- und Kreislaufwirkung in Vorstufen."],
+        ["WOK-P-122", "SDG 12 - Konsum/Produktion", "PCF / Reparierbarkeit / Rücknahme", "Produktfußabdruck, Nutzungsdauer und Rücknahmesysteme."],
+        ["WOK-SC-119", "SDG 9 - Industrie/Innovation", "Lieferkette - Digitalisierung / Transparenz", "Datenfähigkeit globaler Lieferketten."],
       ],
       dataFacts: [
         ["Territorial", "Deutschland meldete für 2024 rund 649 Mio. t CO₂-Äquivalente; BMUKN/UBA-Vorabdaten beziffern 2025 auf 648,9 Mio. t CO₂e. Diese Werte sind wichtig für nationale Klimaziele, messen aber nur Inlandsemissionen."],
@@ -567,6 +595,8 @@ const claims = [
       ],
       boundaryNote:
         "Territoriale Emissionen, Konsumemissionen, Unternehmens-Scope-3 und historische Emissionen dürfen nicht zu einer einzigen Zahl addiert werden. Sie müssen nebeneinander sichtbar werden, weil sie unterschiedliche Verantwortungsfragen beantworten.",
+      conclusion:
+        "Die 2-%-Behauptung wirkt stark, weil sie einfach ist. Aber sie ist zu einfach. Sie misst höchstens einen engen territorialen Ausschnitt und macht daraus eine Aussage über Verantwortung. Genau dort liegt die Verzerrung.\n\nWirkungsökonomisch reicht es nicht, auf Landesgrenzen zu schauen. Entscheidend ist, welche Wirkung durch Nachfrage, Produkte, Lieferketten, Technologien, Kapital und politische Standards entsteht. Diese Wirkung darf nicht in Bilanzen verschwinden. Sie muss sichtbar, prüfbar und rückgekoppelt werden.\n\nDie bessere Antwort auf die 2-%-Behauptung lautet daher nicht: Deutschland rettet allein das Klima. Sie lautet: Deutschland muss die Wirkungsräume, die es beeinflusst, ehrlich bilanzieren und so steuern, dass Produkte, Märkte, Investitionen und Regeln positive Netto-Wirkung für Mensch, Planet und Demokratie erzeugen.",
     },
     sources: [
       "Umweltbundesamt - Treibhausgas-Emissionen in Deutschland",
@@ -2229,6 +2259,18 @@ function renderGermanyTwoPercentDossier(claim) {
       </section>
       ${summaryGrid(summaryItems, `${claim.title} Summary`, "dossier-summary-grid")}
       ${deepDiveLiveLink(claim)}
+      <section class="section dossier-keypoints" aria-labelledby="dossier-keypoints">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Das Wichtigste</p><h2 id="dossier-keypoints">In 6 Punkten.</h2></div>
+          <div class="card-grid three">
+            ${dossier.keyPoints.map(([title, text], index) => `<article class="card dossier-key-card">
+              <p class="card-kicker">${String(index + 1).padStart(2, "0")}</p>
+              <h3 class="card-title">${escapeHtml(title)}</h3>
+              <p class="card-text">${escapeHtml(text)}</p>
+            </article>`).join("\n            ")}
+          </div>
+        </div>
+      </section>
       <nav class="dossier-tab-nav" aria-label="Dossierbereiche" data-search-exclude>
         <a href="#host-antworten">Live antworten</a>
         <a href="#verantwortung-verstehen">Verantwortung verstehen</a>
@@ -2261,8 +2303,8 @@ function renderGermanyTwoPercentDossier(claim) {
             <h3 class="card-title">Verantwortungsverkürzung erkennen.</h3>
             <p class="card-text">${escapeHtml(dossier.thesis)}</p>
             <p class="card-text"><a class="text-link" href="../../../begriffe/verantwortungsverkuerzung/" data-glossary-key="verantwortungsverkuerzung"><strong>Verantwortungsverkürzung</strong></a>: Eine enge Bilanzgrenze wird benutzt, um größere Wirkungszusammenhänge unsichtbar zu machen.</p>
-            <p class="card-text">Verantwortungsverkürzung liegt vor, wenn eine enge Bilanzgrenze benutzt wird, um größere Wirkungszusammenhänge unsichtbar zu machen.</p>
-            <p class="card-text">Wirkungsökonomisch entsteht Verantwortung dort, wo Entscheidungen, Produkte, Lieferketten, Kapital, Regeln oder Technologien Zustände verändern - direkt, indirekt, verzögert oder systemisch. Die WÖk unterscheidet dafür Wirkung, Netto-Wirkung und Transformationswirkung.</p>
+            <p class="card-text">Wirkungsökonomisch entsteht Verantwortung dort, wo Entscheidungen, Produkte, Lieferketten, Kapital, Regeln oder Technologien Zustände verändern - direkt, indirekt, verzögert oder systemisch. Die WÖk unterscheidet dafür <a class="text-link" href="../../../begriffe/wirkung/" data-glossary-key="wirkung">Wirkung</a>, Netto-Wirkung und Transformationswirkung.</p>
+            <p class="card-text"><strong>Redaktionelle Regel:</strong> ${escapeHtml(dossier.editorialRule)}</p>
           </article>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Aussagenvarianten</p><h3 class="card-title">So taucht der Frame auf.</h3><ul class="clean-list">${dossier.variants.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
@@ -2324,6 +2366,29 @@ function renderGermanyTwoPercentDossier(claim) {
             <p class="card-text">Die Reverse Merit Order schützt vor Schönrechnen: Negative Wirkung in einem kritischen Feld kann nicht durch positive Werte an anderer Stelle verdeckt werden. Sie wirkt als Firewall gegen Greenwashing, Wirkungsverwässerung und Machtverzerrung.</p>
           </article>
           ${woekSolutionMatrix(woekDossierSolutions)}
+          <section class="dossier-source-section" aria-labelledby="woek-source-cards">
+            <div class="section-header"><p class="hero-kicker">WÖk-Quellenkarten</p><h2 id="woek-source-cards">Welche interne Logik hier trägt.</h2></div>
+            <div class="card-grid three">
+              ${dossier.internalSourceCards.map(([title, shows, useFor]) => `<article class="card">
+                <p class="card-kicker">WÖk intern</p>
+                <h3 class="card-title">${escapeHtml(title)}</h3>
+                <p class="card-text"><strong>Zeigt:</strong> ${escapeHtml(shows)}</p>
+                <p class="card-text"><strong>Nutzen:</strong> ${escapeHtml(useFor)}</p>
+              </article>`).join("\n              ")}
+            </div>
+          </section>
+          <section class="dossier-source-section" aria-labelledby="woek-id-module">
+            <div class="section-header"><p class="hero-kicker">WÖk-Indikatoren</p><h2 id="woek-id-module">Welche WÖk-IDs relevant wären.</h2></div>
+            <div class="dossier-matrix-wrap">
+              <table class="dossier-matrix dossier-id-matrix">
+                <caption>Relevante WÖk-ID-Familien für diese Verantwortungsfrage</caption>
+                <thead><tr><th>ID</th><th>Feld</th><th>Indikator</th><th>Relevanz</th></tr></thead>
+                <tbody>
+                  ${dossier.relevantWoekIds.map(([id, field, label, relevance]) => `<tr><th scope="row">${escapeHtml(id)}</th><td>${escapeHtml(field)}</td><td>${escapeHtml(label)}</td><td>${escapeHtml(relevance)}</td></tr>`).join("\n                  ")}
+                </tbody>
+              </table>
+            </div>
+          </section>
           ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
           ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], `${claim.title} SDG`, "climate-sdg-panel")}
           <section class="dossier-source-section" aria-labelledby="dossier-sources">
@@ -2345,6 +2410,11 @@ function renderGermanyTwoPercentDossier(claim) {
               </article>
             </div>
           </section>
+          <article class="card dossier-conclusion-card">
+            <p class="card-kicker">Schluss</p>
+            <h3 class="card-title">Die bessere Antwort ist Rückkopplung.</h3>
+            ${dossier.conclusion.split("\n\n").map((paragraph) => `<p class="card-text">${escapeHtml(paragraph)}</p>`).join("\n            ")}
+          </article>
           ${internalLinks()}
           ${factStatusBadge()}
         </div>

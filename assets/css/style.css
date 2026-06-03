@@ -14750,6 +14750,19 @@ a.principle-card:hover,
   min-height: 10.5rem;
 }
 
+.dossier-keypoints {
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.dossier-key-card {
+  border-top: 4px solid rgba(47, 125, 92, 0.34);
+}
+
+.dossier-key-card .card-title {
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  line-height: 1.28;
+}
+
 .dossier-tab-nav {
   position: sticky;
   top: 0;
@@ -14794,12 +14807,17 @@ a.principle-card:hover,
 .dossier-dont-card,
 .dossier-thesis-card,
 .dossier-matrix-wrap,
-.dossier-source-section {
+.dossier-source-section,
+.dossier-conclusion-card {
   margin-top: 1rem;
 }
 
 .dossier-thesis-card {
   border-left: 4px solid var(--green);
+}
+
+.dossier-conclusion-card {
+  border-left: 4px solid var(--navy);
 }
 
 .dossier-matrix-wrap {
