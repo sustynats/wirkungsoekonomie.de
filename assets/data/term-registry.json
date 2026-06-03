@@ -374802,6 +374802,86 @@
         "conclusion_logic",
         "steering_logic"
       ]
+    },
+    {
+      "id": "verantwortungsverkuerzung",
+      "termId": "verantwortungsverkuerzung",
+      "label": "Verantwortungsverkürzung",
+      "canonicalLabel": "Verantwortungsverkürzung",
+      "slug": "verantwortungsverkuerzung",
+      "aliases": [
+        "Verantwortungsverkürzung",
+        "verkürzte Verantwortung",
+        "Bilanzgrenzenverkürzung",
+        "Verantwortungsframe"
+      ],
+      "synonyms": [
+        "Verantwortungsverkürzung",
+        "verkürzte Verantwortung",
+        "Bilanzgrenzenverkürzung",
+        "Verantwortungsframe"
+      ],
+      "shortDefinition": "Verantwortungsverkürzung liegt vor, wenn eine enge Bilanzgrenze benutzt wird, um größere Wirkungszusammenhänge unsichtbar zu machen.",
+      "short_definition": "Verantwortungsverkürzung liegt vor, wenn eine enge Bilanzgrenze benutzt wird, um größere Wirkungszusammenhänge unsichtbar zu machen.",
+      "definition": "Verantwortungsverkürzung liegt vor, wenn eine enge Bilanzgrenze benutzt wird, um größere Wirkungszusammenhänge unsichtbar zu machen.",
+      "longDefinition": "Verantwortungsverkürzung entsteht, wenn Verantwortung auf eine enge Bilanzgrenze reduziert wird, zum Beispiel auf territoriale Jahresemissionen. Dadurch werden Konsum, Lieferketten, Scope 3, historische Wirkung oder Systemhebel aus der Debatte gedrängt.",
+      "long_definition": "Verantwortungsverkürzung entsteht, wenn Verantwortung auf eine enge Bilanzgrenze reduziert wird, zum Beispiel auf territoriale Jahresemissionen. Dadurch werden Konsum, Lieferketten, Scope 3, historische Wirkung oder Systemhebel aus der Debatte gedrängt.",
+      "hoverDefinition": "Verantwortungsverkürzung: Eine Aussage reduziert Verantwortung auf einen engen Ausschnitt, zum Beispiel territoriale Emissionen, und blendet Konsum, Lieferketten, Scope 3, historische Wirkung oder Systemhebel aus.",
+      "woekRelation": "In der WÖk ist Verantwortungsverkürzung ein Wirkstoff, weil sie Wirkungspfad, Wirkungspotenzial und Rückkopplung unsichtbar macht.",
+      "woek_einordnung": "In der WÖk ist Verantwortungsverkürzung ein Wirkstoff, weil sie Wirkungspfad, Wirkungspotenzial und Rückkopplung unsichtbar macht.",
+      "usageNote": "Nicht als Schuldbegriff verwenden; es geht um Bilanzgrenzen, Wirkung und Rückkopplung.",
+      "categories": [
+        "glossar",
+        "wirkungsradar",
+        "klima-energie"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "lieferkettenwirkung",
+        "scope-3",
+        "reverse-merit-order",
+        "woek-id",
+        "wirkungssteuer"
+      ],
+      "related_terms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "lieferkettenwirkung",
+        "scope-3",
+        "reverse-merit-order",
+        "woek-id",
+        "wirkungssteuer"
+      ],
+      "officialSources": [
+        "GHG Protocol Scope 3 Standard|https://ghgprotocol.org/corporate-value-chain-scope-3-standard",
+        "Eurostat greenhouse gas emission footprints|https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Greenhouse_gas_emission_footprints"
+      ],
+      "pageUrl": "/begriffe/verantwortungsverkuerzung/",
+      "priority": 20260603,
+      "status": "fuehrender-begriff",
+      "version": "1.0",
+      "category": "Wirkungsradar und Bilanzgrenzen",
+      "source": "Wirkungsradar 2.0 Qualitätsrefactor",
+      "sourceDocument": "CodeX Anlage 47f97fb0 Klima-Verantwortungsdossier",
+      "sourceSection": "Wirkungsradar Dossierstandard",
+      "examples": [
+        "Die 2-%-Behauptung reduziert Klimaverantwortung auf territoriale Jahresemissionen."
+      ],
+      "preferredUsage": "Verantwortungsverkürzung verwenden, wenn eine Aussage Verantwortung auf eine enge Bilanzgrenze reduziert.",
+      "deprecatedUsage": [
+        "enger Territorialanteil als Entlastungsbeweis"
+      ],
+      "reviewStatus": "redaktionell zu prüfen",
+      "lastUpdated": "2026-06-03"
     }
   ]
 }

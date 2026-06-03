@@ -14737,6 +14737,128 @@ a.principle-card:hover,
   min-height: 7rem;
 }
 
+.dossier-hero .hero-title {
+  max-width: 12ch;
+}
+
+.dossier-summary-grid .radar-summary-item {
+  min-height: 10.5rem;
+}
+
+.dossier-tab-nav {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: min(100% - (2 * var(--space-gutter)), var(--container));
+  margin: clamp(1rem, 3vw, 1.75rem) auto 0;
+  padding: 0.65rem;
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.94);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(8px);
+}
+
+.dossier-tab-nav a {
+  display: grid;
+  place-items: center;
+  min-height: 2.8rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: calc(var(--radius) - 2px);
+  color: var(--green-dark);
+  font-weight: 860;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dossier-tab-nav a:hover,
+.dossier-tab-nav a:focus-visible {
+  border-color: rgba(47, 125, 92, 0.32);
+  background: rgba(47, 125, 92, 0.08);
+}
+
+.dossier-tab-panel {
+  scroll-margin-top: 6rem;
+}
+
+.dossier-live-support,
+.dossier-dont-card,
+.dossier-thesis-card,
+.dossier-matrix-wrap,
+.dossier-source-section {
+  margin-top: 1rem;
+}
+
+.dossier-thesis-card {
+  border-left: 4px solid var(--green);
+}
+
+.dossier-matrix-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.dossier-matrix {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+}
+
+.dossier-matrix caption {
+  padding: 1rem 1rem 0.5rem;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.dossier-matrix th,
+.dossier-matrix td {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.08);
+  color: var(--text);
+  line-height: 1.45;
+  text-align: left;
+  vertical-align: top;
+}
+
+.dossier-matrix thead th {
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.dossier-matrix tbody th {
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.dossier-subheader {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.dossier-effect-path {
+  margin-bottom: 0;
+}
+
+.dossier-fact-grid .card {
+  border-top: 4px solid rgba(47, 125, 92, 0.34);
+}
+
+.dossier-fact-grid .card-title {
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.42;
+}
+
 .stoeckchen-module .section-header {
   margin-bottom: 1rem;
 }
@@ -14770,5 +14892,14 @@ a.principle-card:hover,
 
   .fact-status-badge .clean-list {
     columns: 1;
+  }
+
+  .dossier-tab-nav {
+    grid-template-columns: 1fr;
+    position: static;
+  }
+
+  .dossier-hero .hero-title {
+    max-width: 100%;
   }
 }
