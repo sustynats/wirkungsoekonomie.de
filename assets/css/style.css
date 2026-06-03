@@ -14967,6 +14967,65 @@ a.principle-card:hover,
   background: rgba(255, 252, 245, 0.9);
 }
 
+.democracy-hero .hero-title {
+  max-width: 14ch;
+}
+
+.democracy-standard-boxes .card {
+  display: grid;
+  align-content: start;
+}
+
+.democracy-standard-boxes .freedom-box {
+  margin-top: 1rem;
+  border-left: 4px solid var(--green);
+}
+
+.democracy-response-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.democracy-response-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.democracy-response-table th,
+.democracy-response-table td {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.08);
+  color: var(--text);
+  line-height: 1.45;
+  text-align: left;
+  vertical-align: top;
+}
+
+.democracy-response-table thead th {
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.democracy-response-table tbody th {
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.democracy-source-grid .card {
+  display: grid;
+  align-content: start;
+}
+
+.democracy-source-grid .card-title {
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.42;
+}
+
 .stoeckchen-module .section-header {
   margin-bottom: 1rem;
 }
