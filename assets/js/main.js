@@ -964,14 +964,33 @@ function initRadarSearch() {
   Promise.all([
     fetch(relativeSiteUrl("assets/search/search-index.json")).then((response) => (response.ok ? response.json() : Promise.reject(new Error("search-index")))),
     fetch(relativeSiteUrl("assets/data/wirkungsradar-synonyms.json")).then((response) => (response.ok ? response.json() : {})).catch(() => ({})),
+    fetch(relativeSiteUrl("assets/data/wirkungsradar-canonical-map.json")).then((response) => (response.ok ? response.json() : {})).catch(() => ({})),
   ])
-    .then(([entries, synonymMap]) => {
+    .then(([entries, synonymMap, canonicalMap]) => {
+      const canonicalUrl = (url) => {
+        const value = String(url || "");
+        const aliases = canonicalMap?.aliases || {};
+        if (aliases[value]) return aliases[value];
+        const detail = value.match(/^\/wirkungsradar\/detail\/([^/]+)\//)?.[1];
+        if (detail) return `/wirkungsradar/live/${detail}/`;
+        return value;
+      };
+
+      const canonicalSlug = (entry) =>
+        canonicalUrl(entry?.url).match(/^\/wirkungsradar\/live\/([^/]+)\//)?.[1] ||
+        String(entry?.url || "").match(/^\/wirkungsradar\/(?:live|detail)\/([^/]+)\//)?.[1] ||
+        "";
+
       const synonymsFor = (entry) => {
-        const slug = String(entry?.url || "").match(/^\/wirkungsradar\/(?:live|detail)\/([^/]+)\//)?.[1] || "";
-        return Array.isArray(synonymMap?.[slug]) ? synonymMap[slug] : [];
+        const slug = canonicalSlug(entry);
+        const legacy = Array.isArray(synonymMap?.[slug]) ? synonymMap[slug] : [];
+        const canonical = Array.isArray(canonicalMap?.synonyms?.[slug]) ? canonicalMap.synonyms[slug] : [];
+        return [...legacy, ...canonical];
       };
       const radarEntries = canonicalizeRadarEntries(
-        (Array.isArray(entries) ? entries : []).filter((entry) => entry?.url?.startsWith("/wirkungsradar/")),
+        (Array.isArray(entries) ? entries : [])
+          .filter((entry) => entry?.url?.startsWith("/wirkungsradar/"))
+          .map((entry) => ({ ...entry, url: canonicalUrl(entry.url) })),
       )
         .map((entry) => ({ ...entry, aliases: [...(entry.aliases || []), ...synonymsFor(entry)], searchText: searchableText({ ...entry, aliases: [...(entry.aliases || []), ...synonymsFor(entry)] }) }))
         .sort((a, b) => (a.priority || 9999) - (b.priority || 9999) || a.title.localeCompare(b.title, "de"));
