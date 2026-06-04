@@ -1,8 +1,28 @@
 [
   {
     "slug": "migration-kostet-nur",
+    "p0Rank": 1,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Menschen als Last oder Kostenstelle",
+    "mustAvoidFirstViewport": [
+      "Kosten",
+      "Belastung",
+      "Sozialleistungen",
+      "Unterbringung",
+      "Verwaltungslast",
+      "Kriminalitaet",
+      "Masse"
+    ],
+    "requiredPositiveImage": "Der Sprachkurs, der zur Pflegekraft fuehrt",
+    "requiredBetterQuestion": "Welche Integration macht aus Ankommen Teilhabe?",
+    "requiredTrustSources": [
+      "BA/IAB zu Arbeitsmarkt und Migration",
+      "Destatis/BAMF zu Integration und Arbeitsmarkt",
+      "OECD/IAB falls vorhanden",
+      "kommunale Daten, wenn genutzt"
+    ],
+    "finalReviewerNote": "Wenn im ersten Screen Menschen als Kosten erscheinen, Seite zurueckstufen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
@@ -11,28 +31,81 @@
   },
   {
     "slug": "deutschland-nur-zwei-prozent",
+    "p0Rank": 2,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "kleine Zahl als Freispruch",
+    "mustAvoidFirstViewport": [
+      "China-Schuldschiebung",
+      "Deutschland allein schuld",
+      "moralische Anklage",
+      "nur Territorialzahl"
+    ],
+    "requiredPositiveImage": "Der Produktpass im Laden",
+    "requiredBetterQuestion": "Zaehlst du nur den Schornstein hier - oder auch Konsum, Lieferketten, Produkte und Standards?",
+    "requiredTrustSources": [
+      "Umweltbundesamt Konsumbasierte Emissionen",
+      "Our World in Data / Global Carbon Project",
+      "GHG Protocol Scope 1/2/3",
+      "Destatis / Umweltökonomische Gesamtrechnung"
+    ],
+    "finalReviewerNote": "Territorial-, Konsum-, historische und Produktverantwortung sauber trennen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "windraeder-voegel-wald-beton-rueckbau",
+    "p0Rank": 3,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Wind gegen Natur / Sondermuell / SF6-Panik",
+    "mustAvoidFirstViewport": [
+      "Vogelsterben",
+      "Naturzerstoerung",
+      "Sondermuell",
+      "Betonwueste",
+      "SF6 als Panikbild"
+    ],
+    "requiredPositiveImage": "Der gut geplante Buergerwindpark",
+    "requiredBetterQuestion": "Welche Energieform schuetzt Natur, Klima, Gesundheit und Versorgung insgesamt am besten?",
+    "requiredTrustSources": [
+      "UBA Rueckbau/Recycling",
+      "Fachagentur Wind & Solar",
+      "EU F-Gas-Verordnung",
+      "WindEurope Circularity",
+      "BfN / NABU / Fachquellen zu Artenschutz, wenn genutzt"
+    ],
+    "finalReviewerNote": "SF6 sachlich als Schaltanlagen-Thema erklaeren, nicht verharmlosen und nicht als Windkiller stehen lassen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport; better question not visible early",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "fusion-loest-das-energieproblem",
+    "p0Rank": 4,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Technikwunder als Aufschub / Fusionsstrom als Energieplan",
+    "mustAvoidFirstViewport": [
+      "kleine Sonne",
+      "unbegrenzte Energie",
+      "saubere Zukunftsenergie",
+      "Durchbruch loest alles"
+    ],
+    "requiredPositiveImage": "Das direkte Stromquartier",
+    "requiredBetterQuestion": "Reden wir ueber Forschungsertrag - oder ueber ein sinnvolles Stromsystem?",
+    "requiredTrustSources": [
+      "ITER zu Waerme-zu-Strom-Pfad",
+      "ITER: erzeugt keinen Strom",
+      "EUROfusion DEMO",
+      "IEA/Fraunhofer/IRENA zu Erneuerbaren-Kosten"
+    ],
+    "finalReviewerNote": "Fusion als Forschung anerkennen, aber als thermischen Strompfad kritisch einordnen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
@@ -41,38 +114,104 @@
   },
   {
     "slug": "schulden-machen-oder-sparen",
+    "p0Rank": 5,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Staat wie Privathaushalt / Steuerzahler zahlt alles zurueck",
+    "mustAvoidFirstViewport": [
+      "Schuldenpanik",
+      "Kinder zahlen alles",
+      "Staat pleite",
+      "private Kreditrate"
+    ],
+    "requiredPositiveImage": "Die Schule mit neuem Dach",
+    "requiredBetterQuestion": "Reden wir ueber schlechte Schulden - oder ueber Investitionen, die spaetere Kosten senken?",
+    "requiredTrustSources": [
+      "BMF Kreditaufnahme",
+      "Deutsche Finanzagentur Refinanzierung",
+      "Bundesbank / Destatis Schuldenquote",
+      "Sachverstaendigenrat / IMF/OECD fuer Tragfaehigkeit"
+    ],
+    "finalReviewerNote": "Faellige Anleihen werden meist refinanziert; relevant sind Zinsen, Vertrauen und Wirkung.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "e-autos-schlimmer-als-verbrenner",
+    "p0Rank": 6,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Batterie als Dreckbild / E-Auto nur CO2",
+    "mustAvoidFirstViewport": [
+      "Kinderarbeit als erstes Bild",
+      "brennende Akkus",
+      "Sondermuell",
+      "nur CO2"
+    ],
+    "requiredPositiveImage": "Der Supermarkt-Lader",
+    "requiredBetterQuestion": "Vergleichen wir nur die Batterie - oder den ganzen Lebensweg von Oel, Strom, Luft und Wartung?",
+    "requiredTrustSources": [
+      "UBA / ICCT / Fraunhofer zu Lebenszyklus",
+      "IEA Global EV Outlook",
+      "UBA Luftschadstoffe",
+      "Batterierecycling-Quellen"
+    ],
+    "finalReviewerNote": "Verbrenner nicht nur Klima: Oelimporte, NOx, Feinstaub, Laerm, Wartung, Geopolitik, Stadtluft.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "e-fuels-retten-den-verbrenner",
+    "p0Rank": 7,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Technologieoffenheit als Verbrenner-Rettung",
+    "mustAvoidFirstViewport": [
+      "Verbrenner-Bashing",
+      "Verschwendung als erstes Bild",
+      "E-Fuels komplett Unsinn"
+    ],
+    "requiredPositiveImage": "Direkt laden, Molekuele sparen",
+    "requiredBetterQuestion": "Fuer welchen Einsatz meinst du E-Fuels: Flugzeug, Schiff, Spezialfall - oder Alltagsauto?",
+    "requiredTrustSources": [
+      "Fraunhofer ISI / UBA zu Wirkungsgrad",
+      "EU CO2-Standards",
+      "IEA / ICCT",
+      "eFuel Alliance als Gegenposition"
+    ],
+    "finalReviewerNote": "E-Fuels fair: wichtig fuer Luftfahrt/Schifffahrt/Spezialfaelle, nicht Pkw-Massenpfad.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "wasserstoff-fuer-alles",
+    "p0Rank": 8,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Wasserstoff als Allheilmittel",
+    "mustAvoidFirstViewport": [
+      "Wasserstoff ist Quatsch",
+      "H2-Heizung als erstes Feindbild",
+      "nur Ineffizienz"
+    ],
+    "requiredPositiveImage": "Der gruene Stahl",
+    "requiredBetterQuestion": "Wo brauchen wir Wasserstoff wirklich - und wo geht Strom direkter?",
+    "requiredTrustSources": [
+      "Nationale Wasserstoffstrategie",
+      "UBA/Fraunhofer zu Wasserstoff im Verkehr/Waerme",
+      "IEA Hydrogen",
+      "Agora/Fraunhofer zu Industriepfaden"
+    ],
+    "finalReviewerNote": "H2-Hierarchie: Stahl, Chemie, Schifffahrt, Luftfahrt, Langzeitspeicher zuerst.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
@@ -81,38 +220,104 @@
   },
   {
     "slug": "arbeit-lohnt-sich-nicht-mehr",
+    "p0Rank": 9,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Menschen als faul / Sozialneid gegen unten",
+    "mustAvoidFirstViewport": [
+      "faul",
+      "Totalverweigerer",
+      "Sozialschmarotzer",
+      "Buergergeld als Haengematte"
+    ],
+    "requiredPositiveImage": "Mehr Stunden, mehr Sicherheit",
+    "requiredBetterQuestion": "Was muss sich aendern, damit Arbeit wirklich mehr Sicherheit und Teilhabe schafft?",
+    "requiredTrustSources": [
+      "BA Grundsicherung",
+      "IAB Buergergeld / Sanktionen",
+      "BMAS Regelsaetze",
+      "WSI/IW zu Lohnabstand, differenziert"
+    ],
+    "finalReviewerNote": "Frust anerkennen, aber Schuldigen wechseln: von Menschen zu Lohn, Miete, Betreuung, Qualifikation, Uebergaengen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "co2-preis-oder-fossile-systemkosten",
+    "p0Rank": 10,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "CO2-Preis als reine Zusatzbelastung",
+    "mustAvoidFirstViewport": [
+      "Strafsteuer",
+      "Klimakostenpanik",
+      "Buerger zahlen immer mehr"
+    ],
+    "requiredPositiveImage": "Das Geld, das zurueckarbeitet",
+    "requiredBetterQuestion": "Zahlen wir fossile Kosten unsichtbar als Schaden - oder sichtbar und lenkend als Umbau?",
+    "requiredTrustSources": [
+      "UBA CO2-Preis / Klimafolgekosten",
+      "MCC / Ariadne / Kopernikus falls genutzt",
+      "Bundesregierung BEHG",
+      "KfW/Fraunhofer/IEA fuer Systemkosten"
+    ],
+    "finalReviewerNote": "CO2-Preis als sichtbare Steuerung, nicht als Ziel. Rueckverteilung und Entlastung sichtbar machen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "kernenergie-wieder-in-deutschland",
+    "p0Rank": 11,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Kernkraft als einfache Rettung / Grundlast-Nostalgie",
+    "mustAvoidFirstViewport": [
+      "Atomangst als erstes Bild",
+      "Tschernobyl/Fukushima zuerst",
+      "nur Endlager"
+    ],
+    "requiredPositiveImage": "Der schnelle Wirkungs-Euro",
+    "requiredBetterQuestion": "Was liefert vor 2030 und 2035 sicher, guenstig und flexibel Strom?",
+    "requiredTrustSources": [
+      "Fraunhofer ISE LCOE",
+      "IEA / OECD-NEA falls genutzt",
+      "BNetzA Versorgungssicherheit",
+      "BGE/Endlagerquellen",
+      "World Nuclear Industry Status Report als Gegenanalyse"
+    ],
+    "finalReviewerNote": "Kernkraft als thermischer Pfad erklaeren: Spaltung -> Waerme -> Dampf -> Turbine -> Strom.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
-    "firstViewportRisk": "abstract in first viewport",
-    "recommendedFix": "Ersten Sichtbereich mit Host-Cockpit v2 ersetzen."
+    "firstViewportRisk": "ok",
+    "recommendedFix": "P0-v2-Struktur halten und Quellen fachlich weiter pflegen."
   },
   {
     "slug": "radwege-in-peru",
+    "p0Rank": 12,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Spottbild / Steuergeld ins Ausland",
+    "mustAvoidFirstViewport": [
+      "Geld weg",
+      "Luxusprojekt",
+      "Entwicklungshilfe als Verschwendung"
+    ],
+    "requiredPositiveImage": "Der sichere Weg zur Metro",
+    "requiredBetterQuestion": "Was bewirkt das Projekt konkret - und wird es transparent, kontrolliert und wirksam umgesetzt?",
+    "requiredTrustSources": [
+      "BMZ Lima nachhaltige Mobilitaet",
+      "KfW Projekt / Transparenzportal",
+      "KfW Entwicklungsfinanzierung",
+      "Projekt-Evaluierung"
+    ],
+    "finalReviewerNote": "Zuschuss, Kredit, Metro, Bus, Radweg, Rueckzahlung sauber trennen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],
@@ -121,8 +326,26 @@
   },
   {
     "slug": "ukraine-unterstuetzung-steuergeld",
+    "p0Rank": 13,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
+    "frameRisk": "Geld weg / Fass ohne Boden / Zahlmeister",
+    "mustAvoidFirstViewport": [
+      "Milliardenangst",
+      "Korruption als erstes Bild",
+      "Kriegstreiber-Frame",
+      "Waffenpanik"
+    ],
+    "requiredPositiveImage": "Das Krankenhaus, in dem das Licht anbleibt",
+    "requiredBetterQuestion": "Was bewirkt die Unterstuetzung konkret - und welche Kosten wuerden entstehen, wenn wir nicht helfen?",
+    "requiredTrustSources": [
+      "Auswaertiges Amt Ukraine-Hilfe",
+      "Bundesregierung Detailuebersicht",
+      "Kiel Ukraine Support Tracker",
+      "EU Ukraine Facility",
+      "UNHCR / World Bank Wiederaufbau falls genutzt"
+    ],
+    "finalReviewerNote": "Zivil, militaerisch, Kredit, Garantie, Sachleistung, Ausbildung und Gefluechtetenhilfe trennen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],

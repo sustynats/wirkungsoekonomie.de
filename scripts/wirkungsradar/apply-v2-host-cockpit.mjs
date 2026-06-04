@@ -1,9 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
+import { p0DossiersV2 } from "../../lib/wirkungsradar/p0-dossiers-v2.mjs";
+import { renderDossierV2Sections } from "../../components/wirkungsradar/v2/renderers.mjs";
 
 const ROOT = process.cwd();
 const LIVE_DIR = path.join(ROOT, "wirkungsradar/live");
 const UPDATED_AT = "03.06.2026";
+const p0DossiersBySlug = new Map(p0DossiersV2.map((dossier) => [dossier.slug, dossier]));
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -651,18 +654,31 @@ function stripGeneratedV2(html) {
     /\n\s*<section class="section(?: section-soft)? v2-(?:host-cockpit|impact-fan|answer-tabs|psychology-lite|consequence-stack|trust-block)"[\s\S]*?<\/section>\s*/g,
     "\n"
   ).replace(
-    /\n?\s*<section\b(?=[^>]*(?:data-v2-host-cockpit|data-v2-impact-fan|id="antwortformate-v2"|id="warum-der-satz-zieht"|id="folgenkarte-v2"|id="warum-vertrauen"))[\s\S]*?<\/section>\s*/g,
+    /\n?\s*<section\b(?=[^>]*(?:data-v2-host-cockpit|data-v2-impact-fan|id="antwortformate-v2"|id="warum-der-satz-zieht"|id="folgenkarte-v2"|id="was-passiert-danach"|id="warum-vertrauen"|id="warum-belastbar"|id="verstehen"|id="was-macht-es-besser"|id="linkhub"))[\s\S]*?<\/section>\s*/g,
     "\n"
   );
+}
+
+function stripP0HeroProblemCopy(html) {
+  const heroStart = html.indexOf("<section class=\"hero");
+  if (heroStart < 0) return html;
+  const heroEnd = html.indexOf("</section>", heroStart);
+  if (heroEnd < 0) return html;
+  const hero = html.slice(heroStart, heroEnd + "</section>".length)
+    .replace(/\s*<p class="radar-abstract">[\s\S]*?<\/p>/g, "")
+    .replace(/\s*<p class="radar-status-line">[\s\S]*?<\/p>/g, "")
+    .replace(/\s*<div class="radar-summary-grid[\s\S]*?<\/div>/g, "");
+  return `${html.slice(0, heroStart)}${hero}${html.slice(heroEnd + "</section>".length)}`;
 }
 
 function transformLivePage(file) {
   const slug = path.basename(path.dirname(file));
   if (slug === "live") return false;
   const html = fs.readFileSync(file, "utf8");
-  const baseHtml = stripGeneratedV2(html);
-  const data = buildData(slug, baseHtml);
-  const v2 = [
+  const baseHtml = p0DossiersBySlug.has(slug) ? stripP0HeroProblemCopy(stripGeneratedV2(html)) : stripGeneratedV2(html);
+  const p0Dossier = p0DossiersBySlug.get(slug);
+  const data = p0Dossier ? null : buildData(slug, baseHtml);
+  const v2 = p0Dossier ? renderDossierV2Sections(p0Dossier) : [
     renderCockpit(slug, data),
     renderImpactFan(data.impacts),
     renderAnswerTabs(data),

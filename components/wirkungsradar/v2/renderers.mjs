@@ -47,8 +47,28 @@ export function ConsequenceStack({ consequenceStack }) {
   return `<section class="section section-soft v2-consequence-stack" id="was-passiert-danach"><div><div class="section-header"><p class="hero-kicker">Was passiert, wenn man danach handelt?</p><h2>Folgen in drei Stufen.</h2></div><div class="card-grid three">${items.map((item) => `<article class="card"><p class="v2-badge">${esc(item.label)}</p><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
 }
 
+export function UnderstandSection({ explain }) {
+  const trueItems = explain.whatIsTrue || [];
+  const missingItems = explain.whatIsMissing || [];
+  return `<section class="section" id="verstehen"><div><div class="section-header"><p class="hero-kicker">Verstehen</p><h2>Was stimmt - und was fehlt?</h2><p>${esc(explain.simpleMechanism)}</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list">${trueItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list">${missingItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></div></section>`;
+}
+
 export function SolutionCard({ solution }) {
   return `<section class="section" id="was-macht-es-besser"><div><div class="section-header"><p class="hero-kicker">Was macht es besser?</p><h2>${esc(solution.plainLanguage)}</h2></div><div class="card-grid">${solution.measures.map((item) => `<article class="card"><h3 class="card-title">${esc(item.title)}</h3><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
+}
+
+export function ResponseFormats({ dossier }) {
+  const comment = dossier.responses?.comment?.text || dossier.cockpit.sayThisNow;
+  const live = dossier.responses?.live?.text || `${dossier.cockpit.sayThisNow} ${dossier.cockpit.positiveExample.hostLine}`;
+  const panel = dossier.responses?.panel?.text || `${dossier.cockpit.sayThisNow} ${dossier.cockpit.frameShift.betterAnswer} ${dossier.cockpit.positiveExample.hostLine}`;
+  const calmCounter = dossier.responses?.calmCounter?.text || `${dossier.cockpit.frameShift.betterAnswer} ${dossier.cockpit.betterQuestion}`;
+  const items = [
+    ["Kommentar", "Kommentarspalten", comment, "Antwort kopieren"],
+    ["Live", "Stream / Host-Reaktion", live, "Antwort kopieren"],
+    ["Panel", "Diskussion / Interview", panel, "Panel-Antwort kopieren"],
+    ["Ruhig kontern", "Gespräch ohne Streit", calmCounter, "Antwort kopieren"],
+  ];
+  return `<section class="section v2-answer-tabs" id="antwortformate-v2"><div><div class="section-header"><p class="hero-kicker">Antwortformate</p><h2>Kurz sagen. Dann vertiefen.</h2></div><div class="radar-answer-accordion host-answer-tabs">${items.map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SourceDrawer({ sources }) {
@@ -77,6 +97,8 @@ export function HostCockpitV2({ dossier }) {
 export function renderDossierV2Sections(dossier) {
   return [
     HostCockpitV2({ dossier }),
+    ResponseFormats({ dossier }),
+    UnderstandSection({ explain: dossier.explain }),
     ImpactFan({ impactFan: dossier.impactFan }),
     PsychologyLiteCard({ psychologyLite: dossier.psychologyLite }),
     ConsequenceStack({ consequenceStack: dossier.consequenceStack }),

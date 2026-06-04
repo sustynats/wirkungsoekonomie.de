@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { p0DossiersV2 } from "../lib/wirkungsradar/p0-dossiers-v2.mjs";
+import { p0EditorialGates } from "../lib/wirkungsradar/p0-editorial-gates.mjs";
 import { validateDossierV2 } from "../lib/wirkungsradar/validateDossierV2.mjs";
 
 const ROOT = process.cwd();
@@ -48,10 +49,18 @@ fs.mkdirSync(REPORT_DIR, { recursive: true });
 const report = p0DossiersV2.map((dossier) => {
   const validation = validateDossierV2(dossier);
   const missing = missingFields(dossier);
+  const editorial = p0EditorialGates[dossier.slug] || {};
   return {
     slug: dossier.slug,
+    p0Rank: editorial.p0Rank || null,
     oldStatus: dossier.status || "unknown",
     newStatus: validation.status,
+    frameRisk: editorial.frameRisk || "",
+    mustAvoidFirstViewport: editorial.mustAvoidFirstViewport || [],
+    requiredPositiveImage: editorial.requiredPositiveImage || dossier.cockpit?.positiveExample?.title || "",
+    requiredBetterQuestion: editorial.requiredBetterQuestion || dossier.cockpit?.betterQuestion || "",
+    requiredTrustSources: editorial.requiredTrustSources || [],
+    finalReviewerNote: editorial.finalReviewerNote || "",
     errors: validation.errors,
     warnings: validation.warnings,
     missingFields: missing,
@@ -67,7 +76,7 @@ const rows = [
   "",
   "| Seite | alter Status | neuer Status | Hauptproblem | nächster Fix |",
   "|---|---:|---:|---|---|",
-  ...report.map((item) => `| ${item.slug} | ${item.oldStatus} | ${item.newStatus} | ${item.errors[0] || item.firstViewportRisk || "ok"} | ${item.recommendedFix} |`),
+  ...report.map((item) => `| ${item.p0Rank || ""}. ${item.slug} | ${item.oldStatus} | ${item.newStatus} | ${item.errors[0] || item.firstViewportRisk || "ok"} | ${item.recommendedFix} |`),
   "",
 ];
 fs.writeFileSync(mdPath, rows.join("\n"));
